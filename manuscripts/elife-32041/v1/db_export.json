@@ -1,0 +1,1839 @@
+{
+  "submission": {
+    "id": "2fd3a182-842d-43e9-ba2a-0ef8e595a744",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:46:27.585308Z",
+    "updated_at": "2025-12-01T22:46:27.585308Z"
+  },
+  "content": [
+    {
+      "id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "submission_id": "2fd3a182-842d-43e9-ba2a-0ef8e595a744",
+      "content_type": "manuscript",
+      "content_text": "# Cell-type heterogeneity in the early zebrafish olfactory epithelium is generated from progenitors within preplacodal ectoderm\n\n## Authors\n\n- Rapha\u00ebl Aguillon<sup>1</sup>\n- Julie Batut<sup>1</sup> ([ORCID: 0000-0002-1984-2094](https://orcid.org/0000-0002-1984-2094))\n- Arul Subramanian<sup>2</sup> ([ORCID: 0000-0001-8455-6804](https://orcid.org/0000-0001-8455-6804))\n- Romain Madelaine<sup>1</sup>\n- Pascale Dufourcq<sup>1</sup>\n- Thomas F Schilling<sup>2</sup> ([ORCID: 0000-0003-1798-8695](https://orcid.org/0000-0003-1798-8695))\n- Patrick Blader<sup>1</sup> ([ORCID: 0000-0003-3299-6108](https://orcid.org/0000-0003-3299-6108)) \u2020\n\n### Affiliations\n\n1. Centre de Biologie du D\u00e9veloppement (CBD, UMR5547), Centre de Biologie Int\u00e9grative (CBI, FR3743) Universit\u00e9 de Toulouse Toulouse France\n2. Department of Developmental and Cell Biology University of California Irvine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe zebrafish olfactory epithelium comprises a variety of neuronal populations, which are thought to have distinct embryonic origins. For instance, while ciliated sensory neurons arise from preplacodal ectoderm (PPE), previous lineage tracing studies suggest that both Gonadotropin releasing hormone 3 (Gnrh3) and microvillous sensory neurons derive from cranial neural crest (CNC). We find that the expression of Islet1/2 is restricted to Gnrh3 neurons associated with the olfactory epithelium. Unexpectedly, however, we find no change in Islet1/2+ cell numbers in sox10 mutant embryos, calling into question their CNC origin. Lineage reconstruction based on backtracking in time-lapse confocal datasets, and confirmed by photoconversion experiments, reveals that Gnrh3 neurons derive from the anterior PPE. Similarly, all of the microvillous sensory neurons we have traced arise from preplacodal progenitors. Our results suggest that rather than originating from separate ectodermal populations, cell-type heterogeneity is generated from overlapping pools of progenitors within the preplacodal ectoderm.\n\n## Introduction\n\nA fundamental question in developmental neurobiology is how different neuronal subtypes arise from fields of pluripotent progenitors. At the end of gastrulation, the anterior neural plate border of the zebrafish embryo gives rise to two specialized regions of ectoderm: the preplacodal ectoderm (PPE) that will ultimately produce the cranial placodes, and the cranial neural crest (CNC). Specification of the PPE is achieved through the action of so-called preplacodal competence factors such as tfap2a, tfap2c, foxi1 and gata3 (Kwon et al., 2010). During a similar time-window, key neural crest specifier genes, such as foxd3 (Lister et al., 2006; Montero-Balaguer et al., 2006; Stewart et al., 2006), tfap2a (Barrallo-Gimeno et al., 2004) and sox10 (Dutton et al., 2001b) establish the CNC fate. Cranial placodes subsequently arise via the condensation of specific regions within the PPE along the anteroposterior axis, with the adenohypophyseal and olfactory placodes forming anteriorly, the lens and trigeminal placodes forming at an intermediate position and the otic, lateral line and epibranchial placodes forming posteriorly (for review see [Aguillon et al., 2016]). Concomitantly, CNC cells delaminate and migrate throughout the head, where they have been reported to contribute to a large number of cell types, including sensory and neurosecretory cells associated with the olfactory system (Whitlock et al., 2003; Saxena et al., 2013). This dual embryonic (PPE/CNC) origin for olfactory neurons in zebrafish may have critical developmental and functional consequences.\n\nIn zebrafish embryos, olfactory neurons are generated in two waves, early olfactory neurons (EON) and olfactory sensory neurons (OSN), under the redundant control of the bHLH proneural transcriptions factors Neurog1 and Neurod4 (Madelaine et al., 2011). EONs act as pioneers for the establishment of projections from the olfactory epithelium to the olfactory bulb. Once OSN projections are established, a subset of EONs dies by apoptosis (Whitlock and Westerfield, 1998). This suggests the existence of distinct subtypes of neurons within the EON population, but specific markers for these different subtypes have yet to be described. Neural subtype heterogeneity is also detected early within the OSN population; in zebrafish the predominant subtypes are ciliated sensory neurons that have long dendrites and express olfactory marker protein (OMP) and microvillous sensory neurons, which have short dendrites and express the Transient receptor potential cation channel, subfamily C, member 2b (Trpc2b)(Hansen and Zeiske, 1998; Sato et al., 2005). A third neural subtype associated with the early olfactory epithelium in zebrafish expresses gonadotropin releasing hormone 3 (gnrh3). Rather than projecting exclusively to the olfactory bulb, Gnrh3 neurons send their axons caudally to various brain regions, including the hypothalamus (Abraham et al., 2008). Like GnRH1 neurons in amniotes, zebrafish Gnrh3 neurons leave the proximity of the olfactory epithelium and can be found along a migratory tract from the terminal nerve to the ventral telencephalon at late larval stages. While laser-ablating Gnrh3+\u00a0cells leads to sterility, animals homozygous for TALEN-induced mutations of gnrh3 are fertile, pointing to the need for identifying other genes expressed in these cells that might underlie the differences between these phenotypes (Abraham et al., 2010; Spicer et al., 2016).\n\nAlthough the major neural cell types associated with the olfactory epithelium appear to be conserved across vertebrates, there is no coherent vision as to their lineage origin between species. For instance, while Gnrh cells associated with the developing olfactory epithelium are reported to be of preplacodal origin in chick, in the zebrafish they have been shown to derive from the neural crest (Whitlock et al., 2003; Sabado et al., 2012); in mouse, Cre/lox experiments suggest that Gnrh cells are of mixed lineage origin, coming from both the ectoderm and CNC (Forni et al., 2011). To identify additional markers of cell-type heterogeneity in the developing zebrafish olfactory epithelium we screened expression of molecules known to label discrete sets of neurons in other regions of the nervous system. We found that an antibody that recognizes the Islet family (Islet1/2) of LIM-homeoproteins labels Gnrh3 neurons in the olfactory epithelium (Ericson et al., 1992). We find no change in the numbers of Islet1/2+\u00a0cells in the olfactory epithelium in sox10 mutant embryos, which are deficient in many CNC lineages. This is in contrast with previous studies and calls into question the proposed CNC origin of Gnrh+\u00a0cells. Consistent with these findings, lineage reconstructions of time-lapse confocal movies show that most if not all Gnrh3+\u00a0neurons, as well as microvillous sensory neurons, derive from the PPE. Thus, cell-type heterogeneity within the olfactory epithelium is likely established entirely from progenitors within the PPE.\n\n## Results\n\n### Islet1/2 expression in Gnrh3 neurons in the olfactory epithelium is unaffected in sox10 mutants\n\nHeterogeneity in neuronal subtypes is apparent in the zebrafish olfactory epithelium from early developmental stages (Whitlock and Westerfield, 1998, 2000; Whitlock et al., 2003; Sato et al., 2005; Madelaine et al., 2011; Saxena et al., 2013). While searching for novel markers of this heterogeneity, we found that at 48 hr post-fertilization (hpf) immunoreactivity to the Islet1/2 monoclonal antibody 39.4D5 is restricted to a small group of cells in the olfactory epithelium at the interface with the telencephalon (Figure 1A). The number and position of these Islet1/2+\u00a0cells resembles expression of gonadotropin releasing hormone 3 (gnrh3) (Gopinath et al., 2004). To determine if they are the same cells, we examined expression of Islet1/2 in a transgenic line expressing enhanced GFP (eGFP) under the control of the gnrh3 promoter, which recapitulates the endogenous expression of gnrh3 associated with the olfactory epithelium (Abraham et al., 2008). Our results reveal a complete overlap between eGFP expression from the Tg(gnrh3:eGFP) transgene and Islet1/2 (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig1-v1.jpg)\n\n**Figure 1.:** (A) Single confocal sections of olfactory epithelia from Tg(gnrh3:eGFP) embryos at 48 hpf, in either wildtype or sox10t3/t3 mutants, labelled for the expression of Islet1/2 (magenta) and eGFP (green); nuclei are labelled with DAPI (grey). Embryos are viewed dorsally and the inset in the first panel shows a schematic representation of a 48 hpf embryonic head indicating the region analysed. Dotted lines highlight the olfactory epithelia and scalebars represent 15 \u03bcm. (B) Counts of cells expressing Islet1/2 in either wildtype or sox10t3/t3 mutant epithelia (6.8\u00a0\u00b1\u00a00.3 versus 6.9\u00a0\u00b1\u00a00.4 cells per epithelium, n\u00a0=\u00a016 epithelia). (C) Counts of cells expressing eGFP from the Tg(gnrh3:eGFP) transgene in either wildtype or sox10t3/t3 mutant placodes (7.2\u00a0\u00b1\u00a00.3 versus 7.1\u00a0\u00b1\u00a00.4 cells per epithelium, n\u00a0=\u00a016 epithelia). (B\u2013C) Mean\u00a0\u00b1s.e.m. P values are calculated using a two-tailed Student's t-test, n.s. not significant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative bright-field images of in situ hybridisation against endogenous gnrh3 transcripts in wildtype or sox10t3/t3 mutant olfactory epithelia showing high and low numbers of expressing cells. The number of epithelia binned for each category over the total number of epithelia analysed is indicated. Dotted lines highlight the olfactory epithelia and scalebars represent 20 \u03bcm.\n\nIt has been reported that zebrafish Gnrh3+\u00a0neurons associated with the olfactory epithelium derive from cranial neural crest (CNC), and that impairing CNC specification through morpholino knock-down of the HMG transcription factor sox10 dramatically reduces their number (Whitlock et al., 2003, 2005). Unexpectedly, we found no difference in Islet1/2+\u00a0cell numbers in embryos homozygous for a strong sox10 mutant allele (sox10t3/t3) relative to wildtype siblings (6.9\u00a0\u00b1\u00a00.4 versus 6.8\u00a0\u00b1\u00a00.3 cells per epithelium, n\u00a0=\u00a016 epithelia from 9 wildtype and 16 epithelia from 8 mutant embryos; Figure 1A and B; [Dutton et al., 2001b]). Similarly, eGFP expression in embryos carrying the Tg(gnrh3:eGFP) transgene was unaffected in a sox10t3/t3 mutant background (7.1\u00a0\u00b1\u00a00.4 versus 7.2\u00a0\u00b1\u00a00.3 cells per epithelium, n\u00a0=\u00a016 epithelia from 9 wildtype and 16 epithelia from 8 mutant embryos; Figure 1A,C); endogenous gnrh3 expression was also unaffected in sox10 mutant embryos, ruling out a transgene-specific effect (Figure 1\u2014figure supplement 1). Our results indicate that Islet1/2 is a novel marker of Gnrh3 neurons associated with the zebrafish olfactory epithelium, and that these cells do not require Sox10 for specification.\n\nA previous study assessed the origin of zebrafish Gnrh3 neurons by DiI labelling of premigratory CNC followed by immunostaining for GnRH (Whitlock et al., 2003). To revisit the proposed CNC origin of these neurons, we chose a Cre/lox-based approach coupled with analysis of Islet1/2 expression. Double-heterozygous embryos carrying both a Tg(\u221228.5Sox10:Cre) and Tg(ef1a:loxP-DsRed-loxP-eGFP) transgene display a permanent shift from DsRed to eGFP expression in CNC lineages (Kague et al., 2012). Despite widespread expression of eGFP throughout the heads of 48 hpf double-heterozygous Tg(\u221228.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-egfp) embryos, including in cells surrounding the olfactory epithelium, we did not detect eGFP;Islet1/2 double-positive cells in the epithelia themselves (n\u00a0=\u00a020 epithelia from 10 embryos; Figure 2 and Figure 2\u2014figure supplement 1). While these are negative results, when combined with the lack of defects in Islet1/2+\u00a0cell numbers in sox10 mutant embryos they lend further support against a CNC origin for Gnrh3 neurons in the developing zebrafish olfactory system.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig2-v1.jpg)\n\n**Figure 2.:** Single confocal sections of an olfactory epithelium from a double-heterozygous Tg(\u221228.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-egfp) embryo at 48 hpf, labelled for the expression of Islet1/2 (magenta) and eGFP (green); nuclei are labelled with DAPI (grey). No eGFP;Islet1/2 double-positive cells are detected in the epithelia. Embryos are viewed dorsally and the inset in the first panel shows a schematic representation of a 48 hpf embryonic head indicating the orientation of the region analysed. The\u00a0dotted line highlights the olfactory epithelium and scalebars represent 15 \u03bcm in the low and 10 \u03bcm in the high magnifications, respectively; the region shown in the high magnification is indicated in the neighbouring panel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Low magnification images of the entire head of a double-heterozygous Tg(\u221228.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-egfp) embryo at 48 hpf labelled for eGFP (green); nuclei are labelled with DAPI (grey). The first panel shows a schematic representation of a 48 hpf embryonic head indicating the region seen in (B). eGFP is detected throughout the head. Scalebars represent 50 \u03bcm. (B) High magnification images of the embryo shown in (A). The first panel shows a schematic representation of three pharyngeal arches indicating the endodermal (End), mesodermal (Mes) and neural crest (NC) contributions. eGFP is detected specifically in the neural crest-derived contribution. Scalebars represent 20 \u03bcm.\n\n### Lineage reconstruction reveals an anterior preplacodal ectoderm origin for Gnrh3 neurons\n\nGnrh3+\u00a0neurons associate closely with the olfactory epithelium from early stages (Gopinath et al., 2004). However, a lack of Cre lines specific for progenitors of the olfactory epithelium precluded using a Cre/lox approach to address if Gnrh3 neurons derive from these cells. As an alternative, we developed an unbiased backtracking approach using time-lapse confocal movies. Briefly, synthetic mRNAs encoding Histone2B-RFP (H2B-RFP) were injected into Tg(gnrh3:eGFP) transgenic embryos, which were subsequently imaged from 12 to 36 hpf (Figure 3A); delamination and migration of CNC begins approximately 2 hr after the initiation of the time-lapse acquisition, and eGFP from the transgene is robustly expressed at 36 hpf (Schilling and Kimmel, 1994; Abraham et al., 2008). The lineage of various populations of cells was then manually retraced by backtracking H2B-RFP+\u00a0nuclei to their position at the beginning of the time-lapse series using Imaris software (Figure 3A\u2013E and Video 1). To test our approach relative to well-established fate maps already generated for zebrafish cranial placode derivatives, we first backtracked H2B-RFP+\u00a0nuclei of gnrh3:eGFP-negative cells in the olfactory epithelia as well as lens cells, which can be identified at the end of the time-lapse series by their distinct morphology (Figure 3C,D). Consistent with previous lineage studies (Whitlock and Westerfield, 2000), we found that gnrh3:eGFP-negative cells of the olfactory epithelia derived from progenitors in the preplacodal ectoderm (PPE) at the anterior/lateral neural plate border (n\u00a0=\u00a032 cells from 9 epithelia of 5 embryos; Figure 3C,F, Video 2 and Figure 3\u2014figure supplement 1). Also as expected from earlier studies (Dutta et al., 2005), the H2B-RFP+\u00a0nuclei of lens cells traced back to a PPE domain caudal and slightly lateral to that of progenitors of the olfactory epithelia (n\u00a0=\u00a010 cells from 2 lenses of 1 embryo; Figure 3D,F and Video 2). In contrast to previous reports, the nuclei of gnrh3:eGFP-positive cells traced back to the most anterior region of the PPE (n\u00a0=\u00a030 cells from 9 epithelia of 5 embryos; Figure 3B,E,F, Video 2 and Figure 3\u2014figure supplement 1), rather than from a region caudal to the lens progenitors as would be expected for CNC cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic representation of the backtracking strategy. Synthetic mRNAs encoding Histone2B-RFP (H2B-RFP) were injected into Tg(gnrh3:eGFP) transgenic embryos, which were subsequently imaged from 12 to 36 hpf. The lineages of various populations of cells were manually retraced by backtracking H2B-RFP+\u00a0nuclei to their position at the beginning of the time-lapse series. (B\u2013E) Confocal projections from a representative 4D dataset at 36, 28, 20 and 12 hpf showing the GFP channel alone (B), the position of the nuclei backtracked from 10 gnrh3:eGFP-negative (C, pink), 10 lens (D, yellow) and 7 gnrh3:eGFP-positive (E, blue) cells at each timepoint. The embryo is shown with anterior up; GFP expression detected caudally is ectopic and does not reflect endogenous gnrh3 expression. Scalebars represent 40 \u03bcm. (F) Schematic representation of an embryonic head at 36 hpf and the anterior neural plate (NP, dark grey) and adjacent preplacodal ectoderm (light grey) at 12 hpf. The 36 hpf head shows the colour code of the backtracked lineages, and the position of backtracked nuclei at 12 hpf is indicated in the preplacodal ectoderm. The 12 hpf representation shows the results obtained from 9 epithelia (5 embryos) for 30 gnrh3:eGFP-positive cells and 32 gnrh3:eGFP-negative cells; the 10 lens cells were backtracked from a pair of epithelia in a single 4D dataset only.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Confocal projections extracted from 4D datasets at 36 and 12 hpf for 4 embryos analysed and not shown in Figure 3 showing the GFP channel alone, and the position of the backtracked nuclei of gnrh3:eGFP-negative (pink) and gnrh3:eGFP-positive (blue) cells at both timepoints. Backtracked nuclei for the lens were only performed for Embryo 1 and are not shown. Embryos are shown with anterior up; whereas the GFP expression detected caudally is ectopic and does not reflect bona fide gnrh3 expression, the GFP+\u00a0axons seen in Embryo 3 extend from the trigeminal ganglia, which do expression gnrh3 endogenously. Scalebars represent 40 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-video1.mp4.jpg)\n\n**Video 1.:** Movie showing an acquisition series and backtracking of a Gnrh3 neuron in a Histone2B-RFP loaded Tg(gnrh3:eGFP) transgenic embryo. The movie is divided into 5 parts: an acquisition phase, a phase showing a z-stack of the olfactory epithelium at 36 hpf, an initial backtracking phase, the unique mitosis detected during the backtracking, and a final backtracking phase. During backtracking, the nucleus being followed is labelled with a blue dot. During the mitosis, the sister cell is labelled with a pink dot for three frames until the two sister nuclei fuse. The movie finishes with a schematic representation of the anterior neural plate and adjacent preplacodal ectoderm at 12 hpf showing the results obtained from backtracking 30 gnrh3:eGFP-positive cells. The cell backtracked in the movie is indicated (arrowhead).\n\n![Video 2.](https://cdn.elifesciences.org/articles/32041/elife-32041-video2.mp4.jpg)\n\n**Video 2.:** Movie showing an acquisition series and backtracking of gnrh3:eGFP-negative olfactory cells, lens cells and gnrh3:eGFP-positive olfactory cells in an Histone2B-RFP loaded Tg(gnrh3:eGFP) transgenic embryo. The movie is divided into 5 parts: an acquisition phase, a backtracking phase for each lineage with tracks and a final representation of the anterior neural plate and adjacent preplacodal ectoderm at 12 hpf showing the combined tracks obtained for the three lineages.\n\nTo confirm the anterior PPE origin of Gnrh3 neurons, we used photoconversion. We loaded Tg(gnrh3:eGFP) embryos with NLS-mEos2 by mRNA injection and at 12 hpf photoconverted either the left or right half of the domain predicted by backtracking to contain precursors of Gnrh3 neurons at this stage. Photoconverted embryos were then allowed to develop until 36 hpf, at which stage we determined if any gnrh3:eGFP+\u00a0cells had photoconverted nuclei (NLS-mEos2PC; Figure 4A\u2013D). Photoconversion caused no changes in the number of gnrh3:eGFP+\u00a0cells (5.4\u00a0\u00b1\u00a00.5 versus 5.2\u00a0\u00b1\u00a00.6 cells per epithelium, n\u00a0=\u00a09 control and 9 converted epithelia from 9 embryos; Figure 4E). However, while on average less than one NLS-mEos2PC;gnrh3:eGFP+\u00a0double labeled cell per epithelium was detected on the control side of the embryo (0.3\u00a0\u00b1\u00a00.2 cells per epithelium, n\u00a0=\u00a09 epithelia from 9 embryos), the entire gnrh3:eGFP+\u00a0population was double-labeled on the photoconverted side (4.6\u00a0\u00b1\u00a00.3 cells per epithelium, n\u00a0=\u00a09 epithelia from 9 embryos; Figure 4E). There was no statistical difference between the number of gnrh3:eGFP+\u00a0and eGFP/mEos2PC-double-positive cells on the photoconverted side suggesting that all Gnrh3 neurons associated with the olfactory epithelium are derived from the anterior PPE.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig4-v1.jpg)\n\n**Figure 4.:** (A,B) Confocal projections of NLS-mEos2 loaded, Tg(gnrh3:eGFP) embryos at 12 hpf before (A) and after photoconversion (B). The first panel in (A) shows a schematic representation of the anterior neural plate (NP, dark grey) and adjacent preplacodal ectoderm (light grey) at 12 hpf indicating the origin of backtracked gnrh3:eGFP-positive cells (blue dots) and the photoconverted area (magenta square), which is also indicated on the confocal projection shown in (B) after photoconversion. Scalebars represent 30 \u03bcm. (C,D) Single confocal sections of olfactory epithelia from Tg(gnrh3:eGFP) embryos at 36 hpf showing the expression of eGFP from the transgene (cytoplasmic green), unconverted NLS-mEos2 (mEos2; nuclear green) and converted NLS-mEos2 (mEos2PC; nuclear magenta). Insets in (C) and (D) shows a schematic representation of an embryonic head at 36 hpf indicating the region analysed (black rectangle). Scalebars represent 5 \u03bcm. (E) Counts of cells expressing eGFP from the Tg(gnrh3:eGFP) transgene or eGFP and photoconverted mEos2 (mEos2PC) on the control (Ctl) versus photoconverted (PC) sides of the embryo at 36 hpf. No difference in the number of eGFP-positive cells is apparent between the Ctl and PC conditions (5.2\u00a0\u00b1\u00a00.6 versus 5.4\u00a0\u00b1\u00a00.5 cells per epithelium, n\u00a0=\u00a09 epithelia). Conversely, while a number of cells equivalent to the entire gnrh3:eGFP+\u00a0population is also mEos2PC-positive on the photoconverted side, virtually no eGFP/mEos2PC-double positive cells are detected on the control side (4.6\u00a0\u00b1\u00a00.3 versus 0.3\u00a0\u00b1\u00a00.2 cells per epithelium, n\u00a0=\u00a09 epithelia). Mean\u00a0\u00b1s.e.m. P values are calculated using a two-tailed Student's t-test, n.s. not significant, ****p<0.0001.\n\n### Microvillous sensory neurons also derive from the preplacodal ectoderm\n\nZebrafish microvillous sensory neurons, like their counterparts in the rodent vomeronasal organ, express Transient receptor potential cation channel, subfamily C, member 2 (Trpc2) and VR-type olfactory receptors (Sato et al., 2005). The expression of a Tg(\u22124.5trpc2b:GAP-Venus) transgene is reduced in sox10 morphant embryos suggesting a CNC origin for microvillous sensory neurons in zebrafish (Saxena et al., 2013), as initially thought for Gnrh3+\u00a0neurons. Given our results with Gnrh3 neurons in sox10 mutant embryos (Figure 1A,B; [Whitlock et al., 2005]), we also revisited the microvillous lineage. Indeed, we found that the expression of endogenous trpc2b was unaffected in sox10 mutant embryos (Figure 5\u2014figure supplement 1). We then backtracked eGFP+\u00a0neurons in the Tg(\u22124.9sox10:eGFP) transgenic background (Video 3; [Wada et al., 2005]); expression from this transgene has been shown to overlap almost completely with that of Tg(\u22124.5trpc2b:GAP-Venus) (Saxena et al., 2013). As before, nuclei of randomly chosen eGFP-negative cells in the olfactory epithelium trace back to a position in the PPE at the anterior/lateral neural plate border (n\u00a0=\u00a044 cells from 7 epithelia of 4 embryos; Figure 5A,D, Video 4 and Figure 5\u2014figure supplement 2); backtracked lens cells also behaved as before (n\u00a0=\u00a010 cells from 2 lenses of 1 embryo; Figure 5B,D and Video 4). Unexpectedly, backtracking revealed a similar PPE origin for sox10:eGFP+\u00a0cells as their eGFP-negative neighbours (n\u00a0=\u00a041 cells from 7 epithelia of 4 embryos; Figure 5C,D, Video 4 and Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) Confocal projections from a representative 4D dataset at 36, 28, 20 and 12 hpf showing the position of the nuclei backtracked from 10 sox10:eGFP-negative (A, pink), 10 lens (B, yellow) and 10 sox10:eGFP-positive (C, blue) cells at each timepoint. The embryo is shown with anterior up. Scalebars represent 40 \u03bcm. (D) Schematic representation of an embryonic head at 36 hpf and the anterior neural plate (NP, dark grey) and adjacent preplacodal ectoderm (light grey) at 12 hpf; the cranial neural crest (CNC) at the earlier stage is indicated. While the 36 hpf head shows the colour code of the backtracked lineages, the position of backtracked nuclei at 12 hpf is indicated in the preplacodal ectoderm. The 12 hpf schema represents the results obtained from 7 epithelia (4 embryos) for 41 sox10:GFP-positive cells and 44 sox10:eGFP-negative cells; the 10 lens cells were backtracked from a pair of epithelia in a single 4D dataset only.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative bright-field images of in situ hybridisation against endogenous trpc2b transcripts in wildtype or sox10t3/t3 mutant epithelia showing high and low numbers of expressing cells or no expressing cells. The number of epithelia binned for each category over the total number of epithelia analysed is indicated. Dotted lines highlight the olfactory epithelia and scalebars represent 20 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Confocal projections extracted from 4D datasets at 36 and 12 hpf for 3 embryos analysed and not shown in Figure 5 showing the position of the backtracked nuclei of sox10:eGFP-negative (pink) and sox10:eGFP-positive (blue) cells at both timepoints. Backtracked nuclei for the lens were only performed for Embryo 1 and are not shown. Embryos are shown with anterior up. Scalebars represent 40 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/32041/elife-32041-video3.mp4.jpg)\n\n**Video 3.:** Movie showing an acquisition series and backtracking of a microvillous sensory neuron in a Histone2B-RFP loaded Tg(sox10:eGFP) transgenic embryo. The movie is divided into 5 parts: an acquisition phase, a phase showing a z-stack of the olfactory epithelia at 36 hpf, an initial backtracking phase, the unique mitosis detected during the backtracking, and a final backtracking phase. During backtracking, the nucleus being followed is labelled with a blue dot. During the mitosis, the sister cell is labelled with a pink dot for three frames until the two sister nuclei fuse. The movie finishes with a schematic representation of the anterior neural plate, the adjacent preplacodal ectoderm (light grey) and neural crest (CNC) at 12 hpf showing the results obtained from backtracking 41 sox10:eGFP-positive cells located within the olfactory epithelium at 36 hpf. The cell backtracked in the movie is indicated (arrowhead).\n\n![Video 4.](https://cdn.elifesciences.org/articles/32041/elife-32041-video4.mp4.jpg)\n\n**Video 4.:** Movie showing an acquisition series and backtracking of sox10:eGFP-negative olfactory cells, lens cells and sox10:eGFP-positive olfactory cells in an Histone2B-RFP loaded Tg(sox10:eGFP) transgenic embryo. The movie is divided into 5 parts: an acquisition phase, a backtracking phase for each lineage with tracks and a final representation of the anterior neural plate and adjacent preplacodal ectoderm at 12 hpf showing the combined tracks obtained for the three lineages.\n\nSimilar to the Gnrh3+\u00a0cells, we used photoconversion of NLS-mEos2 to confirm our backtracking results for the microvillous population. This time, however, photoconversion was focused on the left or right two-thirds of the anterior PPE of Tg(\u22124.9sox10:eGFP) embryos (Figure 6A,B). As before, the number of eGFP+\u00a0cells was unaffected by the photoconversion (8\u00a0\u00b1\u00a00.6 versus 9.8\u00a0\u00b1\u00a00.7 cells per epithelium, n\u00a0=\u00a09 converted and 6 non-converted epithelia from 9 embryos; Figure 6C\u2013E), and less than one NLS-mEos2PC;sox10:eGFP+\u00a0cell per epithelium was detected on the control side of the embryo (0.3\u00a0\u00b1\u00a00.3 cells per epithelium, n\u00a0=\u00a06 epithelia from 6 embryos; Figure 6E). On the photoconverted side, however, an average of just under 60% of the total sox10:eGFP+\u00a0population was also NLS-mEos2PC-positive (4.6\u00a0\u00b1\u00a00.6 cells per epithelium, n\u00a0=\u00a09 epithelia from 9 embryos; Figure 6D,E). This is consistent with the fact that we photoconverted approximately two-thirds of the cells in the PPE that gives rise to the olfactory epithelium.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32041/elife-32041-fig6-v1.jpg)\n\n**Figure 6.:** (A,B) Confocal projections of NLS-mEos2 loaded, Tg(\u22124.9sox10:eGFP) embryos at 12 hpf before (A) and after photoconversion (B). The first panel in (A) shows a schematic representation of the anterior neural plate (NP, dark grey), adjacent preplacodal ectoderm (light grey) and cranial neural crest (CNC) at 12 hpf indicating the origin of backtracked sox10:eGFP-positive cells and the photoconverted area (magenta square), which is also indicated on the projection shown in (B) after photoconversion. Scalebars represent 30 \u03bcm. (C,D) Single confocal sections of olfactory epithelia from Tg(\u22124.9sox10:eGFP) embryos at 36 hpf showing the expression of eGFP from the transgene (cytoplasmic green), unconverted NLS-mEos2 (mEos2; nuclear green) and converted NLS-mEos2 (mEos2PC; nuclear magenta). Insets in (C) and (D) shows a schematic representation of an embryonic head at 36 hpf, dorsal view, indicating the area analysed (black rectangle). Scalebars represent 5 \u03bcm. (E) Counts of cells expressing eGFP from the Tg(\u22124.9sox10:eGFP) transgene or eGFP and photoconverted mEos2 (mEos2PC) on the control (Ctl) versus photoconverted (PC) sides of the embryo at 36 hpf. No difference in the number of eGFP-positive cells is apparent between the Ctl and PC conditions (9.8\u00a0\u00b1\u00a00.7 versus 8\u00a0\u00b1\u00a00.6 cells per epithelium, n\u00a0=\u00a09 and 6, respectively). Conversely, while numerous sox10:eGFP+\u00a0cells are also mEos2PC-positive on the photoconverted side, virtually no eGFP/mEos2PC-double positive cells are detected on the control side (4.6\u00a0\u00b1\u00a00.6 versus 0.3\u00a0\u00b1\u00a00.3 cells per epithelium, n\u00a0=\u00a09 and 6, respectively). Shown are mean\u00a0\u00b1s.e.m. P values are calculated using a two-tailed Student's t-test, n.s. not significant, ***p=0.0001.\n\nTaken together, our results obtained using a combination of backtracking and photoconversion indicate that Gnrh3 and microvillous sensory neurons associated with the zebrafish olfactory epithelium derive from the anterior PPE.\n\n## Discussion\n\nAs part of our ongoing studies into the mechanisms underlying neurogenesis in the early zebrafish olfactory epithelium (Madelaine et al., 2011), here we have investigated how different subtypes of olfactory neurons arise. Using a novel marker for Gnrh3 neurons we have revisited this lineage and its origins within the epithelium. By combining Cre/lox, backtracking in 4D confocal datasets and photoconversion, we show that Gnrh3+\u00a0neurons derive from progenitors in the PPE; similar live imaging techniques also indicate a PPE origin for microvillous sensory neurons. These results support a common PPE origin for all of the neuronal populations within the olfactory epithelium and argue against any CNC contribution. More generally, they suggest a mechanism by which cellular heterogeneity arises progressively within a field of neuronal progenitors.\n\nIn zebrafish at least two Islet genes, islet1 and islet2b, are expressed in the olfactory Gnrh3+\u00a0cells (R. Aguillon and P. Blader, unpublished data). Whether or not Islet transcription factors regulate the development of Gnrh3 neurons, similar to Islet1 in pancreatic\u00a0\u03b2-cells, remains unknown (Ahlgren et al., 1997). If this is the case, the specification of endocrine lineages, like Gnrh3-expressing olfactory cells and Insulin-expressing \u03b2-cells, may be an ancestral role of Islet proteins, which were later co-opted into other lineages such as motor neurons in the spinal cord (Karlsson et al., 1990; Ericson et al., 1992; Appel et al., 1995). Our analysis also reassigns the Gnrh3 lineage to progenitors found in a domain of the PPE that, in addition to producing olfactory lineages, is known to give rise to neurons of the adenohypophysis (Dutta et al., 2005) and proposed to generate hypothalamic Gnrh2 neurons (Whitlock et al., 2003). Whether or not this region of the zebrafish PPE provides an environment that promotes the production of neuroendocrine lineages remains an open question.\n\nLineage reconstruction experiments in the tunicate, Ciona intestinalis, recently demonstrated the existence of a proto-placodal ectoderm, equivalent to the vertebrate PPE, which gives rise to both sensory neurons and Gnrh cells (Abitua et al., 2015). We propose that the development of a Gnrh population from the anterior PPE has been conserved during chordate evolution. Whether or not this conservation holds for other vertebrates, however, remains unclear. DiI labeling experiments in the chick suggest that GnRH cells derive from precursors of the olfactory epithelium separate from the adenohypophysis (Sabado et al., 2012), while our study and others show that in zebrafish these two populations overlap significantly in the PPE (reviewed in [Toro and Varga, 2007]). In mice Cre/lox lineage analysis suggests that GnRH cells associated with the olfactory epithelium are of mixed origin, being derived 70% from the ectoderm and 30% from CNC (Forni et al., 2011). This does not appear to be the case in chick, however, as grafted neural folds expressing GFP do not contribute to the olfactory epithelium (Sabado et al., 2012). Furthermore, similar to our results in zebrafish no change in GnRH cells numbers is detected in Sox10-null mutant mice (Pingault et al., 2013). As the original lineage assignment in mouse was established using one ectodermal (Crect; [Reid et al., 2011]) and one\u00a0neural crest (Wnt1Cre; [Danielian et al., 1998]) Cre line, our results suggest that revisiting the lineage assignment in the mouse with other genetic tools or other approaches is needed.\n\nThe origin of zebrafish microvillous sensory neurons is controversial (Saxena et al., 2013; Torres-Paz and Whitlock, 2014). Our results indicate that this lineage is derived from progenitors in the PPE. Furthermore, they imply that the expression of eGFP in the olfactory epithelium of Tg(sox10:eGFP) embryos does not reflect a CNC origin for these cells but rather an ectopic site of transgene expression. Why ectopic expression of the transgene in the olfactory epithelium appears restricted to microvillous sensory neurons is unclear but highlights the need to be cautious when using transgenic tools in lineage analyses. In this regard, the backtracking approach we have developed provides a powerful alternative for ascertaining lineage assignments during zebrafish embryogenesis. While in this study we used transgenic lines to identify cell types for backtracking, with the caveats that this obliges, we have also backtracked cells identified using antibody markers. For this, cells for backtracking can be chosen by comparing the 3D architecture of a tissue described by nuclear position at the end of a time-lapse series to that of the same embryo after fixation and antibody labeling.\n\nOur analysis also highlights unexpected difficulties with using morpholinos. It has been shown that morpholinos can produce phenotypes that are not seen in genetic mutants, either due to non-specific p53-dependent effects or mechanisms that compensate for mutations (Gerety and Wilkinson, 2011; Kok et al., 2015; Rossi et al., 2015). Previous studies have shown a very good correlation between sox10 mutant and morphant phenotypes in a variety of tissues, including neural crest derivatives like melanophores and dorsal root ganglia neurons and glia, as well as the ear (Dutton et al., 2001a, 2001b; Carney et al., 2006); embryos homozygous for the sox10t3 allele used in this study displayed the previously reported strong pigment and ear phenotypes. Taken together, this supports the idea that non-specific effects in sox10 morphants are limited to the olfactory system. Intriguingly, foxd3 morphants also display a reduction in the number of Gnrh3 neurons associated with the olfactory epithelium (Whitlock et al., 2005). We have shown that the Gnrh3 lineage is PPE-derived and, therefore, the effect of these morpholinos cannot be explained by genetic compensation in a subset of the neural crest. The decrease in Gnrh3 cell numbers in sox10 and foxd3 morphants might reflect a tissue-specific p53-dependent effect. Alternatively, the morphant phenotype might indicate that morpholino-induced developmental delays are more pronounced in the olfactory system than elsewhere. Whatever the cause, our finding suggests that extra care should be taken when using morpholinos to study olfactory development.\n\nIn conclusion, our results argue that cell-type heterogeneity in the zebrafish olfactory epithelium is generated from progenitors within the PPE, and begin to provide coherence for the lineage assignment of olfactory neural subtypes between vertebrate species. Identifying the mechanisms underlying the segregation of the various olfactory lineages from overlapping progenitor pools is an important avenue for future research.\n\n## Materials and methods\n\n### Fish husbandry and lines\n\nFish were maintained at the CBD (Toulouse) and UCI (Irvine) zebrafish facilities in accordance with the rules and protocols in place in the respective locations. The sox10t3, Tg(\u22122.4gnrh3:egfp)zf103 and Tg(\u22124.9sox10:eGFP)ba2Tg lines have previously been described (Dutton et al., 2001b; Wada et al., 2005; Abraham et al., 2008), as were the Tg(\u221228.5Sox10:Cre)zf384 and Tg(ef1a:loxP-DsRed-loxP-eGFP)zf284 lines used for Cre/loxP-based lineage analyses (Kague et al., 2012). Embryos were obtained through natural crosses and staged according to (Kimmel et al., 1995).\n\n### In situ hybridisation, immunostaining and microscopy\n\nIn situ hybridisation was performed as previously described (Oxtoby and Jowett, 1993). Antisense DIG-labelled probes for gnrh3 (Abraham et al., 2008) and trpc2b (Von Niederh\u00e4usern et al., 2013) were generated using standard procedures. In situ hybridisations were visualised using BCIP and NBT (Roche,\u00a0France) as substrates.\n\nEmbryos were immunostained as previously described (Madelaine et al., 2011); primary antibodies used were chicken anti-GFP (1:1000; ab13970, Abcam,\u00a0MA, USA), rabbit anti-GFP (1:1000; TP-401, Torrey Pines Biolabs,\u00a0CA, USA) and mouse anti-Islet1/2 (1:200; 39.4D5, Developmental Studies Hybridoma Bank,\u00a0IA, USA). Primary antibodies were detected using the following fluorescently conjugated secondary antibodies (1:1000): Alexa Fluor 680 conjugated donkey anti-mouse IgG (A10038, Molecular Probes,\u00a0OR, USA), Alexa Fluor 568 conjugated goat anti-mouse IgG (A-11004, Molecular Probes,\u00a0OR, USA), Alexa Fluor 488 conjugated goat anti-rabbit IgG (A-11034, Molecular Probes,\u00a0OR, USA) and Alexa Fluor 488 conjugated donkey anti-chicken IgY (703-486-155, Jackson ImmunoResearch,\u00a0PA, USA). Immunolabellings were counterstained with DAPI (1:1000; D1306, Life Technologies,CA, USA). Fluorescently labelled embryos were imaged using an inverted Nikon Eclipse Ti Confocal and brightfield images were taken on a Nikon Eclipse 80i microscope. Images were analysed using ImageJ and Imaris 8.3 (Bitplane, Switzerland) software.\n\n### Live confocal imaging and lineages reconstruction\n\nEmbryos from the Tg(gnrh3:egfp)zf103 or Tg(\u22124.9sox10:eGFP)ba2Tg transgenic lines were injected with synthetic mRNA encoding an H2B-RFP fusion protein. Resulting embryos were grown to 12 hpf, a stage preceding the delamination and anterior migration of cranial neural crest cells (Schilling and Kimmel, 1994). They were then dechorionated and embedded for imaging in 0.7% low-melting point agarose in embryos medium in 55 mm round petri dish (Gosselin,\u00a0France; BP-50). A time-lapse series of confocal stacks (1 \u03bcm slice/180\u00a0\u03bcm deep) was generated of the anterior neural plate and flanking non-neural ectoderm on an upright Leica SP8 Confocal microscope using a 25x HC FLUOTAR water-immersion objective (L25 \u00d7 0.95 W VISIR). Stacks were acquired each 8 min until 36 hpf, a stage when eGFP from either transgene is strongly expressed in the olfactory epithelium. The lineage of the various neuronal populations was subsequently reconstructed manually by backtracking H2B-RFP+ nuclei using Imaris 8.3 analysis software (Bitplane, Switzerland).\n\n### Photoconversion\n\nEmbryos from the Tg(gnrh3:egfp)zf103 and Tg(\u22124.9sox10:eGFP)ba2Tg transgenic lines were injected with synthetic mRNA encoding an NLS-mEos2 (mEOS2 fused to a nuclear localization sequence) fusion protein (Sap\u00e8de et al., 2012). Embryos were then grown to 12 hpf, dechorionated and embedded for photoconversion/imaging in 0.7% low-melting point agarose in embryos medium in 35 mm circular petri dish (Nunc; 153066) bearing a silicone sealed 22 mm circular cover slip (Thermo Scientific,\u00a0France; 174977). Mounted embryos were first imaged for NLS-mEos2 expression prior photoconversion at very low laser levels (confocal stack 2 \u03bcm slice/80\u00a0\u03bcm deep). Subsequently, a region of interest (ROI) was photoconverted using a 405 nm diode (100% laser, 41 s), after which embryos were imaged again to assess the extent of NLS-mEos2 conversion. Photoconversion and imaging was done on an inverted SP8 Leica confocal with an HC PL APO CS2 40x/1.3 oil objective. Full z-stacks were acquired for each photoconverted embryo 24 hr after the photoconversion (confocal stack 1 \u03bcm slice/80\u00a0\u03bcm deep) to determine the contribution of progenitors located in the ROI at the time of photoconversion to the Gnrh3 or microvillous lineages.\n\n### Statistical analysis\n\nAll statistical comparisons are indicated in figure legends including one sample and unpaired t-test performed using Prism (GraphPad.) The scatter dot plots were generated with Prism. Data are mean\u00a0\u00b1\u00a0s.e.m. Two-tailed t-test *p<0.05, **p<0.01, ***p<0.005, ****p<0.0001.\n",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "c521ee79-5697-41b5-84d7-0092ee197ddd",
+      "submission_id": "2fd3a182-842d-43e9-ba2a-0ef8e595a744",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tanya T Whitfield, University of Sheffield United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32041.023](https://doi.org/10.7554/eLife.32041.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell-type heterogeneity in the zebrafish olfactory placode is generated from progenitors within preplacodal ectoderm\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Tanya Whitfield as the Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Joachim Wittbrodt (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe developmental origin of GnRH neurons within the olfactory placode has been debated in the literature as it is often not clear whether the lines used for genetic lineage tracing of the neural crest are entirely specific. The manuscript entitled \"Cell-type heterogeneity in the zebrafish olfactory placode is generated from progenitors within preplacodal ectoderm\" by Aguillon and colleagues addresses the origin of different neuronal cell types with the olfactory placode and finds, in contrast to the literature, no evidence for contribution of the cranial neural crest to either GnRH or microvillous sensory neurons. Using classical approaches in a modern interpretation (live imaging and cell tracking), the authors establish a precise 4D fate map for the olfactory placode. This, in combination with cell type-specific markers, allows them to trace cells back to the preplacodal ectoderm. To address the contribution of the cranial neural crest they study strong Sox10 mutant alleles that fail to properly specify migrating cranial crest. The authors propose a model in which the cell type heterogeneity correlates with the initial position within the preplacodal ectoderm.\n\nThe study combines four different approaches \u2013 analysis of sox10 mutants; Cre/lox lineage-tracing of Sox10-expressing cells [using Tg(-28.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-eGFP) embryos]; manual lineage reconstruction from time-lapse confocal movies of Tg(gnrh3:eGFP) embryos, plus unilateral photoconversion of the Gnrh3 precursor domain (identified from the backtracking experiments) in Tg(gnrh3:eGFP) embryos \u2013 to show convincingly that GnRH neurons in zebrafish arise from preplacodal ectoderm, not the neural crest as previously proposed (from DiI-labeling the CNC and sox10 morphant experiments).\n\nThe authors similarly use sox10 mutant analysis, backtracking and photoconversion in Tg(-4.9sox10:eGFP) embryos \u2013 in which GFP expression was previously reported to overlap almost completely with the microvillous sensory neuron reporter Tg(-4.5trpc2b:GAP-Venus) \u2013 to show that microvillous sensory neurons arise from preplacodal ectoderm, not the neural crest.\n\nThe manuscript is well crafted and presents data of excellent quality. The analyses are carefully controlled and supported by extensive supplementary material.\n\nThe videos provided illustrate the process of the fate mapping approach and are clear and instructive as well. The data are convincing and well presented, with multiple lines of evidence supporting the conclusions drawn, which resolve a longstanding controversy. The findings are consistent with more recent studies in the chick and mouse and suggest an evolutionarily conserved lineage trajectory for these preplacodal progenitors across vertebrates. Appropriate consideration for previous studies is given and this study additionally acts as a caution for the interpretation of morphant phenotypes and the use of transgenics in lineage tracing studies. Overall, the authors present a clear and convincing case.\n\nEssential revisions:\n\n1) Given that the data contradict a model in the literature based on morpholino data, this should be discussed a bit more extensively. Does the mutant still exhibit its original phenotype?\n\n2) The second point is that even though the authors perform a 4D analysis, this is unfortunately not presented in the study where they provide starting and end point analyses. The audience would profit from a presentation of migratory tracks of the cell types followed.\n\n3) The GFP signal in Figure 2, Figure 3 and Figure 3\u2014figure supplement 1 (in the latter two Figures, at 36h) is somewhat obscured even by the DAPI: please show the GFP channel alone, as well, to allow direct comparison with the dual/triple-channel images.\n\n4) For Figure 2, given the importance of this result, it would be helpful to show higher-power views of the Islet-positive cells (as in e.g. Figure 4C, D), and additional image(s) of the same embryo showing the \"widespread expression of eGFP throughout the head\" reported in the text, i.e., GFP expression in expected (and labeled) neural crest derivatives.\n",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f4dc653c-29c9-4e4b-8b2d-9e608da6ae48",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C1",
+      "claim": "The zebrafish olfactory epithelium comprises a variety of neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish olfactory epithelium comprises a variety of neuronal populations, which are thought to have distinct embryonic origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the composition of the zebrafish olfactory epithelium, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "10fb0c5d-f203-4145-b7a5-7a648a5fd6c3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C2",
+      "claim": "Ciliated sensory neurons arise from preplacodal ectoderm (PPE).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while ciliated sensory neurons arise from preplacodal ectoderm (PPE), previous lineage tracing studies suggest that both Gonadotropin releasing hormone 3 (Gnrh3) and microvillous sensory neurons derive from cranial neural crest (CNC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as established knowledge in the field, contrasting with previous studies on other cell types.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "932655dc-8843-4767-aba7-0a2fff38f154",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C3",
+      "claim": "Previous lineage tracing studies suggest that both Gonadotropin releasing hormone 3 (Gnrh3) and microvillous sensory neurons derive from cranial neural crest (CNC).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while ciliated sensory neurons arise from preplacodal ectoderm (PPE), previous lineage tracing studies suggest that both Gonadotropin releasing hormone 3 (Gnrh3) and microvillous sensory neurons derive from cranial neural crest (CNC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous studies in the field, indicating it is supported by prior research citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f4c341ee-288f-45ce-9c00-e74c2232a5d6",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C4",
+      "claim": "The expression of Islet1/2 is restricted to Gnrh3 neurons associated with the olfactory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the expression of Islet1/2 is restricted to Gnrh3 neurons associated with the olfactory epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations presented in the manuscript, specifically immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f869873f-101a-4a88-9ece-1a8114ad8f17",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C5",
+      "claim": "There is no change in Islet1/2+ cell numbers in sox10 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, however, we find no change in Islet1/2+ cell numbers in sox10 mutant embryos, calling into question their CNC origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative data comparing wildtype and sox10 mutant embryos, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "18c262f5-0689-400b-a1aa-48c7d3081133",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C6",
+      "claim": "Gnrh3 neurons derive from the anterior PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage reconstruction based on backtracking in time-lapse confocal datasets, and confirmed by photoconversion experiments, reveals that Gnrh3 neurons derive from the anterior PPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from lineage tracing and photoconversion experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "0fcd9544-6489-486a-a80c-f465490e950a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C7",
+      "claim": "All of the microvillous sensory neurons traced arise from preplacodal progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, all of the microvillous sensory neurons we have traced arise from preplacodal progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by lineage tracing data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "8f4256dd-ff7b-40c8-8283-ee95431ba1c8",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C8",
+      "claim": "Cell-type heterogeneity is generated from overlapping pools of progenitors within the preplacodal ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that rather than originating from separate ectodermal populations, cell-type heterogeneity is generated from overlapping pools of progenitors within the preplacodal ectoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the lineage tracing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "b5ce99f7-85ab-4b7e-92c1-c124f7280d88",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C9",
+      "claim": "At the end of gastrulation, the anterior neural plate border of the zebrafish embryo gives rise to two specialized regions of ectoderm: the preplacodal ectoderm (PPE) and the cranial neural crest (CNC).",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of gastrulation, the anterior neural plate border of the zebrafish embryo gives rise to two specialized regions of ectoderm: the preplacodal ectoderm (PPE) that will ultimately produce the cranial placodes, and the cranial neural crest (CNC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "7bbd3d20-1ff8-47f8-ae5e-35ef976626d2",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C10",
+      "claim": "Specification of the PPE is achieved through the action of preplacodal competence factors such as tfap2a, tfap2c, foxi1 and gata3.",
+      "claim_type": "EXPLICIT",
+      "source": "Specification of the PPE is achieved through the action of so-called preplacodal competence factors such as tfap2a, tfap2c, foxi1 and gata3 (Kwon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kwon et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "b804be3d-c43d-4fb7-bb8c-6f9760f1f876",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C11",
+      "claim": "Key neural crest specifier genes, such as foxd3, tfap2a and sox10 establish the CNC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "During a similar time-window, key neural crest specifier genes, such as foxd3 (Lister et al., 2006; Montero-Balaguer et al., 2006; Stewart et al., 2006), tfap2a (Barrallo-Gimeno et al., 2004) and sox10 (Dutton et al., 2001b) establish the CNC fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "ae8e3859-192c-4610-99dc-37a2d5f3e28e",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C12",
+      "claim": "Cranial placodes arise via the condensation of specific regions within the PPE along the anteroposterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cranial placodes subsequently arise via the condensation of specific regions within the PPE along the anteroposterior axis, with the adenohypophyseal and olfactory placodes forming anteriorly, the lens and trigeminal placodes forming at an intermediate position and the otic, lateral line and epibranchial placodes forming posteriorly (for review see [Aguillon et al., 2016]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a review citation to Aguillon et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a25e7299-ce59-463e-a31f-51cc48797a55",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C13",
+      "claim": "CNC cells delaminate and migrate throughout the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, CNC cells delaminate and migrate throughout the head, where they have been reported to contribute to a large number of cell types, including sensory and neurosecretory cells associated with the olfactory system (Whitlock et al., 2003; Saxena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CNC cell behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "0644a5a9-252e-4f3a-8089-99209ccc3453",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C14",
+      "claim": "CNC cells have been reported to contribute to sensory and neurosecretory cells associated with the olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, CNC cells delaminate and migrate throughout the head, where they have been reported to contribute to a large number of cell types, including sensory and neurosecretory cells associated with the olfactory system (Whitlock et al., 2003; Saxena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitlock et al., 2003 and Saxena et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a194f5ee-507d-49ea-8079-eb69755bc844",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C15",
+      "claim": "Olfactory neurons are generated in two waves in zebrafish embryos: early olfactory neurons (EON) and olfactory sensory neurons (OSN).",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish embryos, olfactory neurons are generated in two waves, early olfactory neurons (EON) and olfactory sensory neurons (OSN), under the redundant control of the bHLH proneural transcriptions factors Neurog1 and Neurod4 (Madelaine et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Madelaine et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fd715d71-8059-46d0-867e-ec3dda136a8f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C16",
+      "claim": "EONs and OSNs are under the redundant control of the bHLH proneural transcription factors Neurog1 and Neurod4.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish embryos, olfactory neurons are generated in two waves, early olfactory neurons (EON) and olfactory sensory neurons (OSN), under the redundant control of the bHLH proneural transcriptions factors Neurog1 and Neurod4 (Madelaine et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Madelaine et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "9c60ef8a-e420-41cd-9f44-dd25a486c556",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C17",
+      "claim": "EONs act as pioneers for the establishment of projections from the olfactory epithelium to the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "EONs act as pioneers for the establishment of projections from the olfactory epithelium to the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EON function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "71f6be15-37d8-404b-8b89-81ced7cbf208",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C18",
+      "claim": "Once OSN projections are established, a subset of EONs dies by apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Once OSN projections are established, a subset of EONs dies by apoptosis (Whitlock and Westerfield, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Whitlock and Westerfield, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "af88790f-7ec8-447a-9a32-1618e7fd01c3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C19",
+      "claim": "Distinct subtypes of neurons exist within the EON population.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests the existence of distinct subtypes of neurons within the EON population, but specific markers for these different subtypes have yet to be described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that some EONs die while others persist.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fd1cf12d-2349-45f4-a666-8357677b244d",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C20",
+      "claim": "Specific markers for different EON subtypes have yet to be described.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the existence of distinct subtypes of neurons within the EON population, but specific markers for these different subtypes have yet to be described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "262c8721-ee50-4efc-8c2c-8e65152997d9",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C21",
+      "claim": "In zebrafish, the predominant OSN subtypes are ciliated sensory neurons and microvillous sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural subtype heterogeneity is also detected early within the OSN population; in zebrafish the predominant subtypes are ciliated sensory neurons that have long dendrites and express olfactory marker protein (OMP) and microvillous sensory neurons, which have short dendrites and express the Transient receptor potential cation channel, subfamily C, member 2b (Trpc2b)(Hansen and Zeiske, 1998; Sato et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hansen and Zeiske, 1998 and Sato et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1412592b-d8e3-46c6-997e-063cc3f4eb46",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C22",
+      "claim": "Ciliated sensory neurons have long dendrites and express olfactory marker protein (OMP).",
+      "claim_type": "EXPLICIT",
+      "source": "Neural subtype heterogeneity is also detected early within the OSN population; in zebrafish the predominant subtypes are ciliated sensory neurons that have long dendrites and express olfactory marker protein (OMP) and microvillous sensory neurons, which have short dendrites and express the Transient receptor potential cation channel, subfamily C, member 2b (Trpc2b)(Hansen and Zeiske, 1998; Sato et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hansen and Zeiske, 1998 and Sato et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fe8cab18-c897-4328-ae4d-1f0925c6337a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C23",
+      "claim": "Microvillous sensory neurons have short dendrites and express Trpc2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural subtype heterogeneity is also detected early within the OSN population; in zebrafish the predominant subtypes are ciliated sensory neurons that have long dendrites and express olfactory marker protein (OMP) and microvillous sensory neurons, which have short dendrites and express the Transient receptor potential cation channel, subfamily C, member 2b (Trpc2b)(Hansen and Zeiske, 1998; Sato et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hansen and Zeiske, 1998 and Sato et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "92aa8efd-8b36-40f3-9784-6dd0f349a1d3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C24",
+      "claim": "A third neural subtype associated with the early olfactory epithelium in zebrafish expresses gonadotropin releasing hormone 3 (gnrh3).",
+      "claim_type": "EXPLICIT",
+      "source": "A third neural subtype associated with the early olfactory epithelium in zebrafish expresses gonadotropin releasing hormone 3 (gnrh3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish olfactory neuron subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "2757f096-528c-49b6-8fc8-22bae92c16da",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C25",
+      "claim": "Gnrh3 neurons send their axons caudally to various brain regions, including the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than projecting exclusively to the olfactory bulb, Gnrh3 neurons send their axons caudally to various brain regions, including the hypothalamus (Abraham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Abraham et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "9e87d782-5524-49cd-b74d-b4a12ed8eae4",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C26",
+      "claim": "Zebrafish Gnrh3 neurons leave the proximity of the olfactory epithelium and can be found along a migratory tract from the terminal nerve to the ventral telencephalon at late larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Like GnRH1 neurons in amniotes, zebrafish Gnrh3 neurons leave the proximity of the olfactory epithelium and can be found along a migratory tract from the terminal nerve to the ventral telencephalon at late larval stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Gnrh3 neuron behavior, drawing a parallel to GnRH1 neurons in amniotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "b23599ff-c0d7-4081-925e-04a42edf0e37",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C27",
+      "claim": "Laser-ablating Gnrh3+ cells leads to sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "While laser-ablating Gnrh3+ cells leads to sterility, animals homozygous for TALEN-induced mutations of gnrh3 are fertile, pointing to the need for identifying other genes expressed in these cells that might underlie the differences between these phenotypes (Abraham et al., 2010; Spicer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Abraham et al., 2010 and Spicer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "8b90b31b-4daf-420f-9b99-ae03e0e20a42",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C28",
+      "claim": "Animals homozygous for TALEN-induced mutations of gnrh3 are fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "While laser-ablating Gnrh3+ cells leads to sterility, animals homozygous for TALEN-induced mutations of gnrh3 are fertile, pointing to the need for identifying other genes expressed in these cells that might underlie the differences between these phenotypes (Abraham et al., 2010; Spicer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Abraham et al., 2010 and Spicer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1170b3d4-78f3-48e7-883e-e8b19f675b44",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C29",
+      "claim": "The major neural cell types associated with the olfactory epithelium appear to be conserved across vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the major neural cell types associated with the olfactory epithelium appear to be conserved across vertebrates, there is no coherent vision as to their lineage origin between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about conservation across vertebrates based on comparative knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "19c32018-d819-4e9b-83df-4a78b15d2e79",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C30",
+      "claim": "There is no coherent vision as to the lineage origin of olfactory neural cell types between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the major neural cell types associated with the olfactory epithelium appear to be conserved across vertebrates, there is no coherent vision as to their lineage origin between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "2f9149e1-4f09-4015-a7c6-497b003daf62",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C31",
+      "claim": "Gnrh cells associated with the developing olfactory epithelium are reported to be of preplacodal origin in chick.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while Gnrh cells associated with the developing olfactory epithelium are reported to be of preplacodal origin in chick, in the zebrafish they have been shown to derive from the neural crest (Whitlock et al., 2003; Sabado et al., 2012); in mouse, Cre/lox experiments suggest that Gnrh cells are of mixed lineage origin, coming from both the ectoderm and CNC (Forni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitlock et al., 2003 and Sabado et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f658a940-a726-4680-9b7e-af8f02fb37fb",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C32",
+      "claim": "In zebrafish, Gnrh cells have been shown to derive from the neural crest.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while Gnrh cells associated with the developing olfactory epithelium are reported to be of preplacodal origin in chick, in the zebrafish they have been shown to derive from the neural crest (Whitlock et al., 2003; Sabado et al., 2012); in mouse, Cre/lox experiments suggest that Gnrh cells are of mixed lineage origin, coming from both the ectoderm and CNC (Forni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitlock et al., 2003 and Sabado et al., 2012, though the manuscript later challenges this conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "0f1ffbc3-9c8a-4215-b2d8-23949e7312b6",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C33",
+      "claim": "In mouse, Cre/lox experiments suggest that Gnrh cells are of mixed lineage origin, coming from both the ectoderm and CNC.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while Gnrh cells associated with the developing olfactory epithelium are reported to be of preplacodal origin in chick, in the zebrafish they have been shown to derive from the neural crest (Whitlock et al., 2003; Sabado et al., 2012); in mouse, Cre/lox experiments suggest that Gnrh cells are of mixed lineage origin, coming from both the ectoderm and CNC (Forni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Forni et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "62f129cf-e038-44ec-835e-8ea19d00ccc1",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C34",
+      "claim": "At 48 hpf, immunoreactivity to the Islet1/2 monoclonal antibody 39.4D5 is restricted to a small group of cells in the olfactory epithelium at the interface with the telencephalon.",
+      "claim_type": "EXPLICIT",
+      "source": "While searching for novel markers of this heterogeneity, we found that at 48 hr post-fertilization (hpf) immunoreactivity to the Islet1/2 monoclonal antibody 39.4D5 is restricted to a small group of cells in the olfactory epithelium at the interface with the telencephalon (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "9db094b5-9be1-4052-9a47-388c598b7702",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C35",
+      "claim": "The number and position of Islet1/2+ cells resembles expression of gonadotropin releasing hormone 3 (gnrh3).",
+      "claim_type": "EXPLICIT",
+      "source": "The number and position of these Islet1/2+ cells resembles expression of gonadotropin releasing hormone 3 (gnrh3) (Gopinath et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on comparison with known gnrh3 expression patterns, supported by a citation to Gopinath et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "3ddb833f-5749-4040-b24e-1c81311cfed9",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C36",
+      "claim": "The Tg(gnrh3:eGFP) transgene recapitulates the endogenous expression of gnrh3 associated with the olfactory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if they are the same cells, we examined expression of Islet1/2 in a transgenic line expressing enhanced GFP (eGFP) under the control of the gnrh3 promoter, which recapitulates the endogenous expression of gnrh3 associated with the olfactory epithelium (Abraham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Abraham et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "200d070e-3170-4011-95d6-4a7ed9bc11e4",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C37",
+      "claim": "There is a complete overlap between eGFP expression from the Tg(gnrh3:eGFP) transgene and Islet1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal a complete overlap between eGFP expression from the Tg(gnrh3:eGFP) transgene and Islet1/2 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "e6a0df2b-f065-40b4-8116-0a8181d7d5fc",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C38",
+      "claim": "Zebrafish Gnrh3+ neurons associated with the olfactory epithelium derive from cranial neural crest (CNC).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that zebrafish Gnrh3+ neurons associated with the olfactory epithelium derive from cranial neural crest (CNC), and that impairing CNC specification through morpholino knock-down of the HMG transcription factor sox10 dramatically reduces their number (Whitlock et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitlock et al., 2003, 2005, though the manuscript later challenges this conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f6c7fdcb-7c08-4c71-bc24-e7d5b11f34b3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C39",
+      "claim": "Impairing CNC specification through morpholino knock-down of sox10 dramatically reduces Gnrh3+ neuron number.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that zebrafish Gnrh3+ neurons associated with the olfactory epithelium derive from cranial neural crest (CNC), and that impairing CNC specification through morpholino knock-down of the HMG transcription factor sox10 dramatically reduces their number (Whitlock et al., 2003, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitlock et al., 2003, 2005, though the manuscript later challenges this conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "8a2845ae-3dfa-4321-be8f-e772d4ba4c0b",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C40",
+      "claim": "eGFP expression in embryos carrying the Tg(gnrh3:eGFP) transgene was unaffected in a sox10t3/t3 mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, eGFP expression in embryos carrying the Tg(gnrh3:eGFP) transgene was unaffected in a sox10t3/t3 mutant background (7.1 \u00b1 0.4 versus 7.2 \u00b1 0.3 cells per epithelium, n = 16 epithelia from 9 wildtype and 16 epithelia from 8 mutant embryos; Figure 1A,C); endogenous gnrh3 expression was also unaffected in sox10 mutant embryos, ruling out a transgene-specific effect (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1138f752-4903-4368-b6c8-557074ab8b11",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C41",
+      "claim": "Endogenous gnrh3 expression was unaffected in sox10 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, eGFP expression in embryos carrying the Tg(gnrh3:eGFP) transgene was unaffected in a sox10t3/t3 mutant background (7.1 \u00b1 0.4 versus 7.2 \u00b1 0.3 cells per epithelium, n = 16 epithelia from 9 wildtype and 16 epithelia from 8 mutant embryos; Figure 1A,C); endogenous gnrh3 expression was also unaffected in sox10 mutant embryos, ruling out a transgene-specific effect (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "4639d18f-466a-4afb-a39c-77b8d1a389f8",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C42",
+      "claim": "Islet1/2 is a novel marker of Gnrh3 neurons associated with the zebrafish olfactory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that Islet1/2 is a novel marker of Gnrh3 neurons associated with the zebrafish olfactory epithelium, and that these cells do not require Sox10 for specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the immunostaining data showing colocalization of Islet1/2 and gnrh3:eGFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "84dd0b2d-3aec-4826-88c7-9f8c88307fff",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C43",
+      "claim": "Gnrh3 neurons do not require Sox10 for specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that Islet1/2 is a novel marker of Gnrh3 neurons associated with the zebrafish olfactory epithelium, and that these cells do not require Sox10 for specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that Gnrh3 neuron numbers are unchanged in sox10 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "98d15320-ab8e-4c2f-a4b7-b252bfd47444",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C44",
+      "claim": "Double-heterozygous embryos carrying both a Tg(\u221228.5Sox10:Cre) and Tg(ef1a:loxP-DsRed-loxP-eGFP) transgene display a permanent shift from DsRed to eGFP expression in CNC lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Double-heterozygous embryos carrying both a Tg(\u221228.5Sox10:Cre) and Tg(ef1a:loxP-DsRed-loxP-eGFP) transgene display a permanent shift from DsRed to eGFP expression in CNC lineages (Kague et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kague et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "7ce9bef9-8b61-4b9d-ad12-cc1060f36433",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C45",
+      "claim": "No eGFP;Islet1/2 double-positive cells were detected in the olfactory epithelia of double-heterozygous Tg(\u221228.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-egfp) embryos at 48 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite widespread expression of eGFP throughout the heads of 48 hpf double-heterozygous Tg(\u221228.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-egfp) embryos, including in cells surrounding the olfactory epithelium, we did not detect eGFP;Islet1/2 double-positive cells in the epithelia themselves (n = 20 epithelia from 10 embryos; Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "201b7e1a-02cc-40ac-a96b-e6d3985f5c52",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C46",
+      "claim": "The lack of defects in Islet1/2+ cell numbers in sox10 mutant embryos lends support against a CNC origin for Gnrh3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While these are negative results, when combined with the lack of defects in Islet1/2+ cell numbers in sox10 mutant embryos they lend further support against a CNC origin for Gnrh3 neurons in the developing zebrafish olfactory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined negative results from the Cre/lox and sox10 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "7ab9abca-013a-4873-866f-9ff3a660433a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C47",
+      "claim": "Gnrh3+ neurons associate closely with the olfactory epithelium from early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnrh3+ neurons associate closely with the olfactory epithelium from early stages (Gopinath et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gopinath et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "13d66b8a-8ca6-4167-89ba-e9fab3587194",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C48",
+      "claim": "Delamination and migration of CNC begins approximately 2 hr after the initiation of the time-lapse acquisition (12 hpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, synthetic mRNAs encoding Histone2B-RFP (H2B-RFP) were injected into Tg(gnrh3:eGFP) transgenic embryos, which were subsequently imaged from 12 to 36 hpf (Figure 3A); delamination and migration of CNC begins approximately 2 hr after the initiation of the time-lapse acquisition, and eGFP from the transgene is robustly expressed at 36 hpf (Schilling and Kimmel, 1994; Abraham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schilling and Kimmel, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "ea05be31-4ac1-477f-b2dc-6e8424787b11",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C49",
+      "claim": "eGFP from the Tg(gnrh3:eGFP) transgene is robustly expressed at 36 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, synthetic mRNAs encoding Histone2B-RFP (H2B-RFP) were injected into Tg(gnrh3:eGFP) transgenic embryos, which were subsequently imaged from 12 to 36 hpf (Figure 3A); delamination and migration of CNC begins approximately 2 hr after the initiation of the time-lapse acquisition, and eGFP from the transgene is robustly expressed at 36 hpf (Schilling and Kimmel, 1994; Abraham et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Abraham et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a95c68e3-0b0c-415a-b5b6-afa5e141dfd1",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C50",
+      "claim": "gnrh3:eGFP-negative cells of the olfactory epithelia derived from progenitors in the preplacodal ectoderm (PPE) at the anterior/lateral neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous lineage studies (Whitlock and Westerfield, 2000), we found that gnrh3:eGFP-negative cells of the olfactory epithelia derived from progenitors in the preplacodal ectoderm (PPE) at the anterior/lateral neural plate border (n = 32 cells from 9 epithelia of 5 embryos; Figure 3C,F, Video 2 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 3C,F, Video 2 and Figure 3\u2014figure supplement 1, and is consistent with previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a1c57638-8299-41c3-a897-0bc88adc66a1",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C51",
+      "claim": "Lens cells traced back to a PPE domain caudal and slightly lateral to that of progenitors of the olfactory epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "Also as expected from earlier studies (Dutta et al., 2005), the H2B-RFP+ nuclei of lens cells traced back to a PPE domain caudal and slightly lateral to that of progenitors of the olfactory epithelia (n = 10 cells from 2 lenses of 1 embryo; Figure 3D,F and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 3D,F and Video 2, and is consistent with previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "dd57da77-0eaa-4718-9c07-7f3405cc964f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C52",
+      "claim": "The nuclei of gnrh3:eGFP-positive cells traced back to the most anterior region of the PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports, the nuclei of gnrh3:eGFP-positive cells traced back to the most anterior region of the PPE (n = 30 cells from 9 epithelia of 5 embryos; Figure 3B,E,F, Video 2 and Figure 3\u2014figure supplement 1), rather than from a region caudal to the lens progenitors as would be expected for CNC cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 3B,E,F, Video 2 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "c5ef4ad5-8a37-4584-9fe8-45d82a5091f9",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C53",
+      "claim": "Photoconversion caused no changes in the number of gnrh3:eGFP+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoconversion caused no changes in the number of gnrh3:eGFP+ cells (5.4 \u00b1 0.5 versus 5.2 \u00b1 0.6 cells per epithelium, n = 9 control and 9 converted epithelia from 9 embryos; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fc279016-92b0-4eb7-8a11-2ed6ed1a89e9",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C54",
+      "claim": "On average less than one NLS-mEos2PC;gnrh3:eGFP+ double labeled cell per epithelium was detected on the control side of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while on average less than one NLS-mEos2PC;gnrh3:eGFP+ double labeled cell per epithelium was detected on the control side of the embryo (0.3 \u00b1 0.2 cells per epithelium, n = 9 epithelia from 9 embryos), the entire gnrh3:eGFP+ population was double-labeled on the photoconverted side (4.6 \u00b1 0.3 cells per epithelium, n = 9 epithelia from 9 embryos; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "40bd4030-bdc8-4554-90c8-443ad7dbdd5f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C55",
+      "claim": "The entire gnrh3:eGFP+ population was double-labeled on the photoconverted side.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while on average less than one NLS-mEos2PC;gnrh3:eGFP+ double labeled cell per epithelium was detected on the control side of the embryo (0.3 \u00b1 0.2 cells per epithelium, n = 9 epithelia from 9 embryos), the entire gnrh3:eGFP+ population was double-labeled on the photoconverted side (4.6 \u00b1 0.3 cells per epithelium, n = 9 epithelia from 9 embryos; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "3ab0270d-160e-41c4-947c-cb3e9655c5c3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C56",
+      "claim": "There was no statistical difference between the number of gnrh3:eGFP+ and eGFP/mEos2PC-double-positive cells on the photoconverted side.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no statistical difference between the number of gnrh3:eGFP+ and eGFP/mEos2PC-double-positive cells on the photoconverted side suggesting that all Gnrh3 neurons associated with the olfactory epithelium are derived from the anterior PPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical inference based on the quantitative data in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "11b1ffda-1bf1-4b72-9ef4-b11fae9afb21",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C57",
+      "claim": "All Gnrh3 neurons associated with the olfactory epithelium are derived from the anterior PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no statistical difference between the number of gnrh3:eGFP+ and eGFP/mEos2PC-double-positive cells on the photoconverted side suggesting that all Gnrh3 neurons associated with the olfactory epithelium are derived from the anterior PPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the photoconversion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "396b9b53-95b5-4171-b5e5-83a5f8165aa8",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C58",
+      "claim": "Zebrafish microvillous sensory neurons express Transient receptor potential cation channel, subfamily C, member 2 (Trpc2) and VR-type olfactory receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish microvillous sensory neurons, like their counterparts in the rodent vomeronasal organ, express Transient receptor potential cation channel, subfamily C, member 2 (Trpc2) and VR-type olfactory receptors (Sato et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sato et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "b632a50c-f35f-47a4-bce7-94a31827b98a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C59",
+      "claim": "The expression of a Tg(\u22124.5trpc2b:GAP-Venus) transgene is reduced in sox10 morphant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of a Tg(\u22124.5trpc2b:GAP-Venus) transgene is reduced in sox10 morphant embryos suggesting a CNC origin for microvillous sensory neurons in zebrafish (Saxena et al., 2013), as initially thought for Gnrh3+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Saxena et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "12624f1d-ec22-43d5-ad32-b0617990e15f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C60",
+      "claim": "The expression of endogenous trpc2b was unaffected in sox10 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the expression of endogenous trpc2b was unaffected in sox10 mutant embryos (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "2bb0670f-4424-445f-b1f4-eb008631250f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C61",
+      "claim": "Expression from the Tg(\u22124.9sox10:eGFP) transgene has been shown to overlap almost completely with that of Tg(\u22124.5trpc2b:GAP-Venus).",
+      "claim_type": "EXPLICIT",
+      "source": "We then backtracked eGFP+ neurons in the Tg(\u22124.9sox10:eGFP) transgenic background (Video 3; [Wada et al., 2005]); expression from this transgene has been shown to overlap almost completely with that of Tg(\u22124.5trpc2b:GAP-Venus) (Saxena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Saxena et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "50e88989-20a1-4e24-9d2b-5288b4c49245",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C62",
+      "claim": "Nuclei of randomly chosen eGFP-negative cells in the olfactory epithelium trace back to a position in the PPE at the anterior/lateral neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, nuclei of randomly chosen eGFP-negative cells in the olfactory epithelium trace back to a position in the PPE at the anterior/lateral neural plate border (n = 44 cells from 7 epithelia of 4 embryos; Figure 5A,D, Video 4 and Figure 5\u2014figure supplement 2); backtracked lens cells also behaved as before (n = 10 cells from 2 lenses of 1 embryo; Figure 5B,D and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 5A,D, Video 4 and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a18cf11e-3b01-4bcf-bcae-b170df7f0c4e",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C63",
+      "claim": "Backtracking revealed a similar PPE origin for sox10:eGFP+ cells as their eGFP-negative neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, backtracking revealed a similar PPE origin for sox10:eGFP+ cells as their eGFP-negative neighbours (n = 41 cells from 7 epithelia of 4 embryos; Figure 5C,D, Video 4 and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by lineage tracing data shown in Figure 5C,D, Video 4 and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1bc35a6c-e52f-4107-837e-4b817ad05d9d",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C64",
+      "claim": "The number of eGFP+ cells was unaffected by photoconversion in Tg(\u22124.9sox10:eGFP) embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the number of eGFP+ cells was unaffected by the photoconversion (8 \u00b1 0.6 versus 9.8 \u00b1 0.7 cells per epithelium, n = 9 converted and 6 non-converted epithelia from 9 embryos; Figure 6C\u2013E), and less than one NLS-mEos2PC;sox10:eGFP+ cell per epithelium was detected on the control side of the embryo (0.3 \u00b1 0.3 cells per epithelium, n = 6 epithelia from 6 embryos; Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 6C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "4630253c-19e5-45d3-8c33-19f86aa618de",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C65",
+      "claim": "Less than one NLS-mEos2PC;sox10:eGFP+ cell per epithelium was detected on the control side of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the number of eGFP+ cells was unaffected by the photoconversion (8 \u00b1 0.6 versus 9.8 \u00b1 0.7 cells per epithelium, n = 9 converted and 6 non-converted epithelia from 9 embryos; Figure 6C\u2013E), and less than one NLS-mEos2PC;sox10:eGFP+ cell per epithelium was detected on the control side of the embryo (0.3 \u00b1 0.3 cells per epithelium, n = 6 epithelia from 6 embryos; Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "45d22f91-c741-4467-bc74-e0344450fd37",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C66",
+      "claim": "On the photoconverted side, an average of just under 60% of the total sox10:eGFP+ population was also NLS-mEos2PC-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "On the photoconverted side, however, an average of just under 60% of the total sox10:eGFP+ population was also NLS-mEos2PC-positive (4.6 \u00b1 0.6 cells per epithelium, n = 9 epithelia from 9 embryos; Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "d40eec73-64a0-45a3-b626-9d75a0e88a72",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C67",
+      "claim": "The 60% photoconversion efficiency is consistent with photoconverting approximately two-thirds of the cells in the PPE that gives rise to the olfactory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the fact that we photoconverted approximately two-thirds of the cells in the PPE that gives rise to the olfactory epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the photoconversion data and the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fb7a8447-7f2b-4428-887c-a281a2576e3b",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C68",
+      "claim": "Gnrh3 and microvillous sensory neurons associated with the zebrafish olfactory epithelium derive from the anterior PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results obtained using a combination of backtracking and photoconversion indicate that Gnrh3 and microvillous sensory neurons associated with the zebrafish olfactory epithelium derive from the anterior PPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the combined lineage tracing and photoconversion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "39083393-188c-44c8-b174-180c1b80fb3e",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C69",
+      "claim": "Cell-type heterogeneity in the zebrafish olfactory epithelium is generated from progenitors within the PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results argue that cell-type heterogeneity in the zebrafish olfactory epithelium is generated from progenitors within the PPE, and begin to provide coherence for the lineage assignment of olfactory neural subtypes between vertebrate species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript based on all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f1b9470d-5f9b-4f66-afc2-87eb2abaaa80",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C70",
+      "claim": "In zebrafish at least two Islet genes, islet1 and islet2b, are expressed in the olfactory Gnrh3+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish at least two Islet genes, islet1 and islet2b, are expressed in the olfactory Gnrh3+ cells (R. Aguillon and P. Blader, unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on unpublished data from the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1793024c-d01c-4df1-97bd-e0c36b7263f7",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C71",
+      "claim": "Islet1 regulates the development of pancreatic \u03b2-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether or not Islet transcription factors regulate the development of Gnrh3 neurons, similar to Islet1 in pancreatic \u03b2-cells, remains unknown (Ahlgren et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ahlgren et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "fbc5dd76-7023-4147-a55b-6439dd59c28a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C72",
+      "claim": "The specification of endocrine lineages may be an ancestral role of Islet proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is the case, the specification of endocrine lineages, like Gnrh3-expressing olfactory cells and Insulin-expressing \u03b2-cells, may be an ancestral role of Islet proteins, which were later co-opted into other lineages such as motor neurons in the spinal cord (Karlsson et al., 1990; Ericson et al., 1992; Appel et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary role of Islet proteins, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "4e46e4f5-410b-4c69-97a4-28a59a6e9673",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C73",
+      "claim": "The region of the zebrafish PPE that produces olfactory lineages is known to give rise to neurons of the adenohypophysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also reassigns the Gnrh3 lineage to progenitors found in a domain of the PPE that, in addition to producing olfactory lineages, is known to give rise to neurons of the adenohypophysis (Dutta et al., 2005) and proposed to generate hypothalamic Gnrh2 neurons (Whitlock et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dutta et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "f668ef55-43ac-4d58-9d0f-3dffefda3c27",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C74",
+      "claim": "The region of the zebrafish PPE that produces olfactory lineages is proposed to generate hypothalamic Gnrh2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also reassigns the Gnrh3 lineage to progenitors found in a domain of the PPE that, in addition to producing olfactory lineages, is known to give rise to neurons of the adenohypophysis (Dutta et al., 2005) and proposed to generate hypothalamic Gnrh2 neurons (Whitlock et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Whitlock et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "c6c76e1f-11ae-476f-8d47-83a819559ff5",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C75",
+      "claim": "Lineage reconstruction experiments in the tunicate, Ciona intestinalis, demonstrated the existence of a proto-placodal ectoderm, equivalent to the vertebrate PPE, which gives rise to both sensory neurons and Gnrh cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage reconstruction experiments in the tunicate, Ciona intestinalis, recently demonstrated the existence of a proto-placodal ectoderm, equivalent to the vertebrate PPE, which gives rise to both sensory neurons and Gnrh cells (Abitua et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Abitua et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a9d02d0d-b5f8-48f3-a6f1-28787eab2cd3",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C76",
+      "claim": "The development of a Gnrh population from the anterior PPE has been conserved during chordate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the development of a Gnrh population from the anterior PPE has been conserved during chordate evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the comparison with tunicate data and the authors' findings in zebrafish.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "ad83386c-c431-4f7b-81ef-b5db9bf6f7b7",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C77",
+      "claim": "DiI labeling experiments in the chick suggest that GnRH cells derive from precursors of the olfactory epithelium separate from the adenohypophysis.",
+      "claim_type": "EXPLICIT",
+      "source": "DiI labeling experiments in the chick suggest that GnRH cells derive from precursors of the olfactory epithelium separate from the adenohypophysis (Sabado et al., 2012), while our study and others show that in zebrafish these two populations overlap significantly in the PPE (reviewed in [Toro and Varga, 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sabado et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "8caeb4bf-5ace-432d-b7d3-c6e58883327f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C78",
+      "claim": "In zebrafish, olfactory and adenohypophysis populations overlap significantly in the PPE.",
+      "claim_type": "EXPLICIT",
+      "source": "DiI labeling experiments in the chick suggest that GnRH cells derive from precursors of the olfactory epithelium separate from the adenohypophysis (Sabado et al., 2012), while our study and others show that in zebrafish these two populations overlap significantly in the PPE (reviewed in [Toro and Varga, 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the current study and a review citation to Toro and Varga, 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "c89ece3a-fc1f-42d5-b302-c5d258e719bb",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C79",
+      "claim": "In mice, Cre/lox lineage analysis suggests that GnRH cells associated with the olfactory epithelium are derived 70% from the ectoderm and 30% from CNC.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice Cre/lox lineage analysis suggests that GnRH cells associated with the olfactory epithelium are of mixed origin, being derived 70% from the ectoderm and 30% from CNC (Forni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Forni et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "6e5a0cce-cac9-4558-aa33-1644f9f14e73",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C80",
+      "claim": "Grafted neural folds expressing GFP do not contribute to the olfactory epithelium in chick.",
+      "claim_type": "EXPLICIT",
+      "source": "This does not appear to be the case in chick, however, as grafted neural folds expressing GFP do not contribute to the olfactory epithelium (Sabado et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sabado et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "16aca46b-2501-494a-861d-d831c1e294e9",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C81",
+      "claim": "No change in GnRH cell numbers is detected in Sox10-null mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, similar to our results in zebrafish no change in GnRH cells numbers is detected in Sox10-null mutant mice (Pingault et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pingault et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "27e7e489-56e8-4899-9227-3daf4f9ff470",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C82",
+      "claim": "The original lineage assignment in mouse was established using one ectodermal (Crect) and one neural crest (Wnt1Cre) Cre line.",
+      "claim_type": "EXPLICIT",
+      "source": "As the original lineage assignment in mouse was established using one ectodermal (Crect; [Reid et al., 2011]) and one neural crest (Wnt1Cre; [Danielian et al., 1998]) Cre line, our results suggest that revisiting the lineage assignment in the mouse with other genetic tools or other approaches is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Reid et al., 2011 and Danielian et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "206a0143-180d-4301-8c0d-7aabda546e80",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C83",
+      "claim": "Revisiting the lineage assignment in the mouse with other genetic tools or other approaches is needed.",
+      "claim_type": "EXPLICIT",
+      "source": "As the original lineage assignment in mouse was established using one ectodermal (Crect; [Reid et al., 2011]) and one neural crest (Wnt1Cre; [Danielian et al., 1998]) Cre line, our results suggest that revisiting the lineage assignment in the mouse with other genetic tools or other approaches is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' findings in zebrafish and the discrepancies with mouse data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "850b3ce4-5573-449b-9b35-0051c46aef2a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C84",
+      "claim": "The origin of zebrafish microvillous sensory neurons is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "The origin of zebrafish microvillous sensory neurons is controversial (Saxena et al., 2013; Torres-Paz and Whitlock, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Saxena et al., 2013 and Torres-Paz and Whitlock, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "b0ffeb88-b9cf-4b33-9d52-4d9dfc3db262",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C85",
+      "claim": "The expression of eGFP in the olfactory epithelium of Tg(sox10:eGFP) embryos does not reflect a CNC origin for microvillous cells but rather an ectopic site of transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they imply that the expression of eGFP in the olfactory epithelium of Tg(sox10:eGFP) embryos does not reflect a CNC origin for these cells but rather an ectopic site of transgene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lineage tracing data showing PPE origin for sox10:eGFP+ cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a314e0b2-3110-49ae-9756-d8cb51f248fb",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C86",
+      "claim": "The backtracking approach provides a powerful alternative for ascertaining lineage assignments during zebrafish embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the backtracking approach we have developed provides a powerful alternative for ascertaining lineage assignments during zebrafish embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the method developed in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "3834712d-f95d-41c5-9004-30e0a4ab8d31",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C87",
+      "claim": "Morpholinos can produce phenotypes that are not seen in genetic mutants, either due to non-specific p53-dependent effects or mechanisms that compensate for mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that morpholinos can produce phenotypes that are not seen in genetic mutants, either due to non-specific p53-dependent effects or mechanisms that compensate for mutations (Gerety and Wilkinson, 2011; Kok et al., 2015; Rossi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gerety and Wilkinson, 2011; Kok et al., 2015; Rossi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "50d79956-dd79-4931-9cd3-fe85ce09724e",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C88",
+      "claim": "Previous studies have shown a very good correlation between sox10 mutant and morphant phenotypes in a variety of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown a very good correlation between sox10 mutant and morphant phenotypes in a variety of tissues, including neural crest derivatives like melanophores and dorsal root ganglia neurons and glia, as well as the ear (Dutton et al., 2001a, 2001b; Carney et al., 2006); embryos homozygous for the sox10t3 allele used in this study displayed the previously reported strong pigment and ear phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dutton et al., 2001a, 2001b and Carney et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "d908772f-616f-4504-a9f5-5618c47fcc8f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C89",
+      "claim": "Embryos homozygous for the sox10t3 allele displayed the previously reported strong pigment and ear phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown a very good correlation between sox10 mutant and morphant phenotypes in a variety of tissues, including neural crest derivatives like melanophores and dorsal root ganglia neurons and glia, as well as the ear (Dutton et al., 2001a, 2001b; Carney et al., 2006); embryos homozygous for the sox10t3 allele used in this study displayed the previously reported strong pigment and ear phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study confirming expected phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "6f058468-852e-421c-bdaf-09d6ea3c0874",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C90",
+      "claim": "Non-specific effects in sox10 morphants are limited to the olfactory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this supports the idea that non-specific effects in sox10 morphants are limited to the olfactory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that sox10 mutants show expected phenotypes in other tissues but not in the olfactory system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "bb8181eb-5093-43b1-a00a-770be7f34c0a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C91",
+      "claim": "foxd3 morphants display a reduction in the number of Gnrh3 neurons associated with the olfactory epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, foxd3 morphants also display a reduction in the number of Gnrh3 neurons associated with the olfactory epithelium (Whitlock et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Whitlock et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "4e4cc438-5303-4e3b-82d5-2b86cd03d903",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C92",
+      "claim": "The effect of sox10 and foxd3 morpholinos on Gnrh3 cell numbers cannot be explained by genetic compensation in a subset of the neural crest.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the Gnrh3 lineage is PPE-derived and, therefore, the effect of these morpholinos cannot be explained by genetic compensation in a subset of the neural crest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lineage tracing data showing PPE origin for Gnrh3 neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "621cfacb-adc2-4257-9333-da84565ece90",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C93",
+      "claim": "The decrease in Gnrh3 cell numbers in sox10 and foxd3 morphants might reflect a tissue-specific p53-dependent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in Gnrh3 cell numbers in sox10 and foxd3 morphants might reflect a tissue-specific p53-dependent effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy between morphant and mutant phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "cb547905-1740-45da-a54c-9c338cd8c3bd",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C94",
+      "claim": "The morphant phenotype might indicate that morpholino-induced developmental delays are more pronounced in the olfactory system than elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the morphant phenotype might indicate that morpholino-induced developmental delays are more pronounced in the olfactory system than elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy between morphant and mutant phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "c12cde3e-a071-498e-bbbb-8bd28c916eeb",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "claim_id": "C95",
+      "claim": "Extra care should be taken when using morpholinos to study olfactory development.",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the cause, our finding suggests that extra care should be taken when using morpholinos to study olfactory development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the discrepancies observed between morphant and mutant phenotypes in the olfactory system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "adc97989-e69f-4227-a236-526930bb9693",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Islet1/2 is a novel marker that specifically labels Gnrh3 neurons in the zebrafish olfactory epithelium. Immunostaining at 48 hpf shows Islet1/2 expression restricted to a small group of cells at the olfactory epithelium-telencephalon interface, which completely overlaps with gnrh3:eGFP transgene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34, C35, C36, C37, and C42 are well-supported by immunostaining data in Figure 1A showing complete colocalization of Islet1/2 antibody staining with gnrh3:eGFP expression. The spatial restriction and complete overlap provide strong evidence for Islet1/2 as a specific marker of Gnrh3 neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gnrh3 neuron numbers are unaffected in sox10 mutant embryos, challenging the previously reported cranial neural crest (CNC) origin of these cells. Both Islet1/2+ cell counts and gnrh3:eGFP+ cell counts show no significant difference between wildtype and sox10t3/t3 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40, C41, and C43 are supported by quantitative data in Figure 1B,C showing no significant difference in Gnrh3 neuron numbers between wildtype and sox10 mutants (6.8\u00b10.3 vs 6.9\u00b10.4 for Islet1/2; 7.2\u00b10.3 vs 7.1\u00b10.4 for gnrh3:eGFP). This contradicts prior morpholino-based studies (C38, C39) and provides evidence against CNC origin (C43, C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "0195382f-f64e-4109-a327-62cf035356ab",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cre/lox lineage tracing using Tg(-28.5Sox10:Cre);Tg(ef1a:loxP-DsRed-loxP-eGFP) embryos shows no eGFP;Islet1/2 double-positive cells in the olfactory epithelium at 48 hpf, despite widespread eGFP expression in CNC-derived cells throughout the head.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 are supported by immunostaining data in Figure 2 showing widespread eGFP expression in CNC lineages but no double-positive cells in the olfactory epithelium (n=20 epithelia from 10 embryos). While negative results require cautious interpretation, when combined with sox10 mutant data (C46), they provide converging evidence against CNC origin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lineage reconstruction by backtracking H2B-RFP+ nuclei in time-lapse confocal datasets reveals that Gnrh3 neurons derive from the most anterior region of the preplacodal ectoderm (PPE), not from cranial neural crest. Control lineages (gnrh3:eGFP-negative olfactory cells and lens cells) traced back to expected PPE domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, and C52 are supported by lineage tracing data in Figure 3 and supplementary figures showing that gnrh3:eGFP+ cells (n=30 from 9 epithelia of 5 embryos) trace to anterior PPE, while control populations trace to expected PPE domains. The methodology is validated by reproducing known lineage assignments for olfactory and lens cells, supporting the novel finding for Gnrh3 neurons (C6, C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Photoconversion experiments confirm the anterior PPE origin of Gnrh3 neurons. Photoconverting the predicted anterior PPE domain at 12 hpf resulted in labeling of the entire gnrh3:eGFP+ population at 36 hpf (4.6\u00b10.3 double-positive cells vs 5.4\u00b10.5 total gnrh3:eGFP+ cells), with minimal background labeling on control side (0.3\u00b10.2 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by quantitative photoconversion data in Figure 4E (n=9 embryos). The near-complete labeling of the gnrh3:eGFP+ population on the photoconverted side with no statistical difference from total cell counts provides strong independent confirmation of the backtracking results. The low background on control side validates specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "261d11ee-9e92-480d-bd3c-b24151e6035a",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Microvillous sensory neurons, marked by sox10:eGFP expression, also derive from the preplacodal ectoderm. Backtracking of sox10:eGFP+ cells (n=41 from 7 epithelia of 4 embryos) revealed a PPE origin similar to eGFP-negative neighbors, contradicting previous reports of CNC origin based on transgene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62, and C63 are supported by lineage tracing data in Figure 5 showing PPE origin for sox10:eGFP+ cells. Claim C60 is supported by in situ hybridization (Figure 5\u2014supplement 1) showing unaffected endogenous trpc2b expression in sox10 mutants, contradicting the morpholino-based conclusion (C59). The data support C7 and C63 that microvillous neurons derive from PPE.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "96f8cdb9-dd59-4cf7-b9da-3e37fd413542",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Photoconversion of approximately two-thirds of the anterior PPE at 12 hpf resulted in labeling of ~60% of sox10:eGFP+ cells at 36 hpf (4.6\u00b10.6 double-positive out of 8\u00b10.6 total cells), confirming PPE origin of microvillous sensory neurons with efficiency consistent with the photoconverted area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by quantitative photoconversion data in Figure 6C-E (n=9 converted and 6 non-converted epithelia). The ~60% labeling efficiency is consistent with photoconverting two-thirds of the PPE domain (C67), providing independent confirmation of the backtracking results. Low background on control side (0.3\u00b10.3 cells) validates specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a023396c-4fc2-4356-bde6-c5ebb247763f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell-type heterogeneity in the zebrafish olfactory epithelium is generated from overlapping pools of progenitors within the preplacodal ectoderm, rather than from separate ectodermal populations (PPE vs CNC). Both Gnrh3 and microvillous sensory neurons derive from the anterior PPE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C69, and C8 represent the main conclusion, supported by converging evidence from sox10 mutant analysis, Cre/lox lineage tracing, backtracking experiments, and photoconversion for both Gnrh3 and microvillous neurons. Multiple independent approaches consistently demonstrate PPE origin for both cell types, supporting the conclusion of common progenitor pools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "9e840454-8876-4a50-b37b-49b6de527e1f",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The expression of eGFP in the olfactory epithelium of Tg(sox10:eGFP) embryos represents ectopic transgene expression rather than reflecting CNC origin, and the backtracking approach provides a powerful alternative for lineage assignment in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by the lineage tracing data showing PPE origin for sox10:eGFP+ cells despite the transgene being driven by a CNC-specific promoter. Claim C86 is supported by successful validation of the backtracking method against known lineage assignments (lens, olfactory cells) and its ability to resolve conflicting prior reports. The method's utility is demonstrated throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Morpholino-based studies showing reduced Gnrh3 neuron numbers in sox10 and foxd3 morphants likely reflect off-target effects or developmental delays specific to the olfactory system, as sox10 mutants show expected phenotypes in other CNC-derived tissues but not in Gnrh3 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 are supported by the observation that sox10t3/t3 mutants display expected pigment and ear phenotypes (C89) but no olfactory defects, suggesting tissue-specific morpholino artifacts (C90). Claims C91-C92 note that foxd3 morphants also show Gnrh3 reduction, which cannot be explained by CNC compensation given the PPE origin demonstrated here. Claims C93-C95 offer speculative explanations and recommendations that are reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "1b409c48-9e84-4de2-89e4-88006873f222",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The development of Gnrh populations from anterior PPE may be conserved in chordate evolution, though lineage assignments vary across vertebrate species. The authors propose that mouse GnRH lineage assignments should be revisited with additional genetic tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is speculative, proposing evolutionary conservation based on tunicate data (C75) and the current zebrafish findings. Claims C77-C81 accurately cite prior work showing species differences, and C81 notes that mouse Sox10-null mutants also show no GnRH defects, consistent with the zebrafish findings. However, C82-C83 acknowledge that mouse lineage assignments were based on limited Cre lines and recommend further investigation, indicating uncertainty about cross-species conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "46bcf121-dbba-408c-a439-1e3c59900b24",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "At least two Islet genes (islet1 and islet2b) are expressed in zebrafish Gnrh3 cells, and the specification of endocrine lineages may represent an ancestral role of Islet proteins that was later co-opted into other lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is based on unpublished data from the authors, which cannot be independently evaluated. Claim C71 is supported by citation. Claim C72 is explicitly speculative ('may be'), proposing an evolutionary hypothesis about Islet protein function. While the speculation is reasonable given the endocrine nature of both Gnrh3 and \u03b2-cells, it lacks direct experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    },
+    {
+      "id": "a7b74e69-5517-401d-a200-6cfbd41e90de",
+      "content_id": "df6c21c5-185e-4c2f-b837-5e4e51df4350",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the known features of zebrafish olfactory development, PPE and CNC specification, neuronal subtypes, and prior lineage assignments across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C33, C47, C73-C75) represent established knowledge and prior work, supported by appropriate citations throughout. They provide necessary context for the current study but do not constitute novel findings. The claims accurately represent the state of the field and conflicting prior reports that motivated this investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:46:27.585308Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f4c341ee-288f-45ce-9c00-e74c2232a5d6",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "62f129cf-e038-44ec-835e-8ea19d00ccc1",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "9db094b5-9be1-4052-9a47-388c598b7702",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "3ddb833f-5749-4040-b24e-1c81311cfed9",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "200d070e-3170-4011-95d6-4a7ed9bc11e4",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "4639d18f-466a-4afb-a39c-77b8d1a389f8",
+      "result_id": "adc97989-e69f-4227-a236-526930bb9693"
+    },
+    {
+      "claim_id": "f869873f-101a-4a88-9ece-1a8114ad8f17",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "e6a0df2b-f065-40b4-8116-0a8181d7d5fc",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "f6c7fdcb-7c08-4c71-bc24-e7d5b11f34b3",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "8a2845ae-3dfa-4321-be8f-e772d4ba4c0b",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "1138f752-4903-4368-b6c8-557074ab8b11",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "84dd0b2d-3aec-4826-88c7-9f8c88307fff",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "201b7e1a-02cc-40ac-a96b-e6d3985f5c52",
+      "result_id": "2ba77a0e-9b37-497b-9bf8-8d91c67d1d14"
+    },
+    {
+      "claim_id": "98d15320-ab8e-4c2f-a4b7-b252bfd47444",
+      "result_id": "0195382f-f64e-4109-a327-62cf035356ab"
+    },
+    {
+      "claim_id": "7ce9bef9-8b61-4b9d-ad12-cc1060f36433",
+      "result_id": "0195382f-f64e-4109-a327-62cf035356ab"
+    },
+    {
+      "claim_id": "201b7e1a-02cc-40ac-a96b-e6d3985f5c52",
+      "result_id": "0195382f-f64e-4109-a327-62cf035356ab"
+    },
+    {
+      "claim_id": "13d66b8a-8ca6-4167-89ba-e9fab3587194",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "ea05be31-4ac1-477f-b2dc-6e8424787b11",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "a95c68e3-0b0c-415a-b5b6-afa5e141dfd1",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "a1c57638-8299-41c3-a897-0bc88adc66a1",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "dd57da77-0eaa-4718-9c07-7f3405cc964f",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "18c262f5-0689-400b-a1aa-48c7d3081133",
+      "result_id": "6d65f613-89f5-4d34-bcfb-9aeafb0c2492"
+    },
+    {
+      "claim_id": "c5ef4ad5-8a37-4584-9fe8-45d82a5091f9",
+      "result_id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2"
+    },
+    {
+      "claim_id": "fc279016-92b0-4eb7-8a11-2ed6ed1a89e9",
+      "result_id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2"
+    },
+    {
+      "claim_id": "40bd4030-bdc8-4554-90c8-443ad7dbdd5f",
+      "result_id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2"
+    },
+    {
+      "claim_id": "3ab0270d-160e-41c4-947c-cb3e9655c5c3",
+      "result_id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2"
+    },
+    {
+      "claim_id": "11b1ffda-1bf1-4b72-9ef4-b11fae9afb21",
+      "result_id": "d7538352-c994-48e4-9a3e-fea83b5ed1e2"
+    },
+    {
+      "claim_id": "b632a50c-f35f-47a4-bce7-94a31827b98a",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "12624f1d-ec22-43d5-ad32-b0617990e15f",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "2bb0670f-4424-445f-b1f4-eb008631250f",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "50e88989-20a1-4e24-9d2b-5288b4c49245",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "a18cf11e-3b01-4bcf-bcae-b170df7f0c4e",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "0fcd9544-6489-486a-a80c-f465490e950a",
+      "result_id": "261d11ee-9e92-480d-bd3c-b24151e6035a"
+    },
+    {
+      "claim_id": "1bc35a6c-e52f-4107-837e-4b817ad05d9d",
+      "result_id": "96f8cdb9-dd59-4cf7-b9da-3e37fd413542"
+    },
+    {
+      "claim_id": "4630253c-19e5-45d3-8c33-19f86aa618de",
+      "result_id": "96f8cdb9-dd59-4cf7-b9da-3e37fd413542"
+    },
+    {
+      "claim_id": "45d22f91-c741-4467-bc74-e0344450fd37",
+      "result_id": "96f8cdb9-dd59-4cf7-b9da-3e37fd413542"
+    },
+    {
+      "claim_id": "d40eec73-64a0-45a3-b626-9d75a0e88a72",
+      "result_id": "96f8cdb9-dd59-4cf7-b9da-3e37fd413542"
+    },
+    {
+      "claim_id": "fb7a8447-7f2b-4428-887c-a281a2576e3b",
+      "result_id": "a023396c-4fc2-4356-bde6-c5ebb247763f"
+    },
+    {
+      "claim_id": "39083393-188c-44c8-b174-180c1b80fb3e",
+      "result_id": "a023396c-4fc2-4356-bde6-c5ebb247763f"
+    },
+    {
+      "claim_id": "8f4256dd-ff7b-40c8-8283-ee95431ba1c8",
+      "result_id": "a023396c-4fc2-4356-bde6-c5ebb247763f"
+    },
+    {
+      "claim_id": "b0ffeb88-b9cf-4b33-9d52-4d9dfc3db262",
+      "result_id": "9e840454-8876-4a50-b37b-49b6de527e1f"
+    },
+    {
+      "claim_id": "a314e0b2-3110-49ae-9756-d8cb51f248fb",
+      "result_id": "9e840454-8876-4a50-b37b-49b6de527e1f"
+    },
+    {
+      "claim_id": "3834712d-f95d-41c5-9004-30e0a4ab8d31",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "50d79956-dd79-4931-9cd3-fe85ce09724e",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "d908772f-616f-4504-a9f5-5618c47fcc8f",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "6f058468-852e-421c-bdaf-09d6ea3c0874",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "bb8181eb-5093-43b1-a00a-770be7f34c0a",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "4e4cc438-5303-4e3b-82d5-2b86cd03d903",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "621cfacb-adc2-4257-9333-da84565ece90",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "cb547905-1740-45da-a54c-9c338cd8c3bd",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "c12cde3e-a071-498e-bbbb-8bd28c916eeb",
+      "result_id": "e8aec87c-fb98-4dce-9244-dd5a53d5afd4"
+    },
+    {
+      "claim_id": "a9d02d0d-b5f8-48f3-a6f1-28787eab2cd3",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "ad83386c-c431-4f7b-81ef-b5db9bf6f7b7",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "8caeb4bf-5ace-432d-b7d3-c6e58883327f",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "c89ece3a-fc1f-42d5-b302-c5d258e719bb",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "6e5a0cce-cac9-4558-aa33-1644f9f14e73",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "16aca46b-2501-494a-861d-d831c1e294e9",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "27e7e489-56e8-4899-9227-3daf4f9ff470",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "206a0143-180d-4301-8c0d-7aabda546e80",
+      "result_id": "1b409c48-9e84-4de2-89e4-88006873f222"
+    },
+    {
+      "claim_id": "f1b9470d-5f9b-4f66-afc2-87eb2abaaa80",
+      "result_id": "46bcf121-dbba-408c-a439-1e3c59900b24"
+    },
+    {
+      "claim_id": "1793024c-d01c-4df1-97bd-e0c36b7263f7",
+      "result_id": "46bcf121-dbba-408c-a439-1e3c59900b24"
+    },
+    {
+      "claim_id": "fbc5dd76-7023-4147-a55b-6439dd59c28a",
+      "result_id": "46bcf121-dbba-408c-a439-1e3c59900b24"
+    },
+    {
+      "claim_id": "f4dc653c-29c9-4e4b-8b2d-9e608da6ae48",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "10fb0c5d-f203-4145-b7a5-7a648a5fd6c3",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "b5ce99f7-85ab-4b7e-92c1-c124f7280d88",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "7bbd3d20-1ff8-47f8-ae5e-35ef976626d2",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "b804be3d-c43d-4fb7-bb8c-6f9760f1f876",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "ae8e3859-192c-4610-99dc-37a2d5f3e28e",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "a25e7299-ce59-463e-a31f-51cc48797a55",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "0644a5a9-252e-4f3a-8089-99209ccc3453",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "a194f5ee-507d-49ea-8079-eb69755bc844",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "fd715d71-8059-46d0-867e-ec3dda136a8f",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "9c60ef8a-e420-41cd-9f44-dd25a486c556",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "71f6be15-37d8-404b-8b89-81ced7cbf208",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "af88790f-7ec8-447a-9a32-1618e7fd01c3",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "fd1cf12d-2349-45f4-a666-8357677b244d",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "262c8721-ee50-4efc-8c2c-8e65152997d9",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "1412592b-d8e3-46c6-997e-063cc3f4eb46",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "fe8cab18-c897-4328-ae4d-1f0925c6337a",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "92aa8efd-8b36-40f3-9784-6dd0f349a1d3",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "2757f096-528c-49b6-8fc8-22bae92c16da",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "9e87d782-5524-49cd-b74d-b4a12ed8eae4",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "b23599ff-c0d7-4081-925e-04a42edf0e37",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "8b90b31b-4daf-420f-9b99-ae03e0e20a42",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "1170b3d4-78f3-48e7-883e-e8b19f675b44",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "19c32018-d819-4e9b-83df-4a78b15d2e79",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "2f9149e1-4f09-4015-a7c6-497b003daf62",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "f658a940-a726-4680-9b7e-af8f02fb37fb",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "0f1ffbc3-9c8a-4215-b2d8-23949e7312b6",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "7ab9abca-013a-4873-866f-9ff3a660433a",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "4e46e4f5-410b-4c69-97a4-28a59a6e9673",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "f668ef55-43ac-4d58-9d0f-3dffefda3c27",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    },
+    {
+      "claim_id": "c6c76e1f-11ae-476f-8d47-83a819559ff5",
+      "result_id": "a7b74e69-5517-401d-a200-6cfbd41e90de"
+    }
+  ],
+  "comparisons": []
+}

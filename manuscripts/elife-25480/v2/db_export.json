@@ -1,0 +1,1994 @@
+{
+  "submission": {
+    "id": "0e439d29-ebf7-4ad8-95ee-27c3377f1b07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:36:49.399142Z",
+    "updated_at": "2025-12-01T19:36:49.399142Z"
+  },
+  "content": [
+    {
+      "id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "submission_id": "0e439d29-ebf7-4ad8-95ee-27c3377f1b07",
+      "content_type": "manuscript",
+      "content_text": "# Chronic lithium treatment elicits its antimanic effects via BDNF-TrkB dependent synaptic downscaling\n\n## Authors\n\n- Erinn S Gideons<sup>1</sup> ([ORCID: 0000-0003-4778-3869](https://orcid.org/0000-0003-4778-3869))\n- Pei-Yi Lin<sup>1</sup> ([ORCID: 0000-0001-7447-3212](https://orcid.org/0000-0001-7447-3212))\n- Melissa Mahgoub<sup>1</sup> ([ORCID: 0000-0003-1491-4439](https://orcid.org/0000-0003-1491-4439))\n- Ege T Kavalali<sup>1</sup> ([ORCID: 0000-0003-1777-227X](https://orcid.org/0000-0003-1777-227X))\n- Lisa M Monteggia<sup>1</sup> ([ORCID: 0000-0003-0018-501X](https://orcid.org/0000-0003-0018-501X)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLithium is widely used as a treatment for Bipolar Disorder although the molecular mechanisms that underlie its therapeutic effects are under debate. In this study, we show brain-derived neurotrophic factor (BDNF) is required for the antimanic-like effects of lithium but not the antidepressant-like effects in mice. We performed whole cell patch clamp recordings of hippocampal neurons to determine the impact of lithium on synaptic transmission that may underlie the behavioral effects. Lithium produced a significant decrease in \u03b1-amino-3-hydroxyl-5-methyl-4-isoxazolepropionic acid receptor (AMPAR)-mediated miniature excitatory postsynaptic current (mEPSC) amplitudes due to postsynaptic homeostatic plasticity that was dependent on BDNF and its receptor tropomyosin receptor kinase B (TrkB). The decrease in AMPAR function was due to reduced surface expression of GluA1 subunits through dynamin-dependent endocytosis. Collectively, these findings demonstrate a requirement for BDNF in the antimanic action of lithium and identify enhanced dynamin-dependent endocytosis of AMPARs as a potential mechanism underlying the therapeutic effects of lithium.\n\n## Introduction\n\nLithium was initially reported for treatment as a mood stabilizer over 60 years ago (Cade, 1949) and is still widely used for the treatment of Bipolar Disorder (Mitchell, 2013; Poolsup et al., 2000; Vieta and Valent\u00ed, 2013). However, despite its extensive use for the treatment of bipolar disorder, the cellular and molecular mechanisms underlying its antimanic and antidepressant responses remain poorly understood (Can et al., 2014; Malhi and Outhred, 2016). Putative mechanisms for the therapeutic effects of lithium include inhibition of glycogen synthase kinase-3\u03b2 (GSK3\u03b2) (Klein and Melton, 1996), upregulation of neurotrophins, as well as their receptors, and downregulation of \u03b1-amino-3-hydroxyl-5-methyl-4-isoxazolepropionic acid receptor (AMPAR) expression (Ankolekar and Sikdar, 2015; Du et al., 2004, 2010; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010) among others. However, which \u2014if any\u2014 of these effects of lithium are the primary mechanism for treatment for bipolar disorder is currently unknown.\n\nEarlier studies suggested a potential link between the action of lithium as a mood stabilizer and neurotrophins, in particular brain-derived neurotrophic factor (BDNF). BDNF and aberrant signaling through its high affinity receptor tropomyosin receptor kinase B (TrkB) have been proposed to underlie both the pathophysiology and treatment of bipolar disorder (Autry and Monteggia, 2012; Malhi et al., 2013; Scola and Andreazza, 2015). Previous work has shown that patients with bipolar disorder have decreased peripheral BDNF mRNA in blood lymphocytes and monocytes in comparison to healthy controls (D'Addario et al., 2012). Moreover, both manic and depressive states in patients with bipolar disorder have been associated with significantly decreased BDNF blood serum levels compared to patients in euthymic states and healthy controls (Fernandes et al., 2015; Tunca et al., 2014). Post-mortem analysis of hippocampal tissue has also revealed reduced BDNF protein levels in patients with bipolar disorder (Knable et al., 2004). In rodents, experimental interventions that cause manic-like (Frey et al., 2006; Fries et al., 2015; Jornada et al., 2010) and depressive-like behaviors (Smith et al., 1995; Tsankova et al., 2006; Ueyama et al., 1997) have also been shown to result in decreased BDNF mRNA and protein levels in the hippocampus. In contrast, lithium treatment is associated with increased BDNF protein levels in the serum of patients with bipolar disorder (Cunha et al., 2006; de Sousa et al., 2011; Tramontina et al., 2009). In rodent models, chronic lithium treatment has been shown to increase BDNF mRNA and protein expression in hippocampus, cortex, and amygdala as well as cortical neurons in culture (Fukumoto et al., 2001; Jornada et al., 2010; Yasuda et al., 2009). Lithium treatment has also been shown to increase TrkB activity in neuronal cultures suggesting an increase in BDNF-TrkB signaling (Hashimoto et al., 2002).\n\nWhile previous work has demonstrated that BDNF is necessary for the antidepressant response of conventional antidepressants (Adachi et al., 2008; Ibarguen-Vargas et al., 2009; Monteggia et al., 2004, 2007), as well as the rapid antidepressant effects of ketamine (Autry et al., 2011; Lepack et al., 2014), it is currently unknown whether BDNF or the TrkB receptor are required for lithium\u2019s antidepressant or antimanic effects. In this study, we establish the necessity of BDNF-TrkB signaling in the antimanic-like but not antidepressant-like response to lithium. We also identify a direct effect of lithium treatment on AMPAR trafficking, where AMPA receptor surface expression is decreased due to a sustained increase in dynamin mediated AMPAR endocytosis. This process is dependent on BDNF-TrkB function and results in synaptic downscaling where unitary postsynaptic responses are decreased in a manner proportional to their relative strengths. Collectively, our findings reveal a requirement for neurotrophic signaling in the behavioral and cellular effects of lithium. These data provide novel mechanistic insight into the action of lithium which may underlie its therapeutic effect for the treatment of bipolar disorder.\n\n## Results\n\n### Chronic lithium treatment increases BDNF expression\n\nPrevious studies have used mice to examine the impact of lithium treatment on molecular signaling. However, typically the lithium serum concentration is not determined in mice following lithium treatment leaving it unclear whether reported changes occur within the therapeutic range. We established a lithium protocol in which C57BL/6 mice were given 0.2% lithium chloride (LiCl) chow for four days, followed by 0.4% LiCl chow for the remainder of the treatment and testing period, which lasted a total of 11\u201317 days depending on the experiment (Figure 1A). This protocol resulted in a lithium serum concentration in treated mice that was within the therapeutic range of 0.5\u20132 mM (Amdisen, 1980), with an average concentration of 1 mM (Figure 1B). Control (CTL) mice were given the same chow without lithium. Following 11 days of lithium treatment, mice were sacrificed and the hippocampus rapidly removed. To confirm our lithium protocol produced the expected molecular effects, we examined GSK3 inhibition (Klein and Melton, 1996; Stambolic et al., 1996), by measuring the phosphorylation of GSK3\u03b2 at serine nine with western blot analysis and found a significant increase relative to total GSK3\u03b2 (Figure 1C). We next examined whether the lithium treatment regulated the expression of BDNF in the hippocampus. Using Q-PCR targeted to the coding exon of Bdnf, we found lithium treated mice had a significant increase in Bdnf mRNA expression (Figure 1D). We also found a significant increase in BDNF protein expression (Figure 1E) in lithium treated mice relative to CTL mice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig1-v2.jpg)\n\n**Figure 1.:** (A) Timeline of chronic lithium chloride (LiCl) treatment and behavioral testing. (B) (Left) Example standard curve of lithium counts used to calculate lithium concentration in blood serum. (Right). Average lithium concentration in blood serum in control and treated mice (n=\u00a09\u201312 per group). (C) Chronic lithium treatment in mice produces a significant decrease in immobility in the FST compared to the control group (Student\u2019s unpaired t test *p<0.0001, n\u00a0=\u00a010 mice per group). (D) Chronic lithium treatment caused a significant increase in Bdnf mRNA expression in the hippocampus (Student\u2019s unpaired t test *p=0.04, n\u00a0=\u00a08\u20139 mice per group). (E) Chronic lithium treatment caused a significant increase in BDNF protein expression in the hippocampus (Student\u2019s unpaired t test *p=0.002, n\u00a0=\u00a010 mice per group).\n\n### BDNF is required for the antimanic-like effect of lithium\n\nSince lithium increases the expression of BDNF mRNA and protein levels, we investigated whether BDNF was necessary for lithium\u2019s behavioral action. Inducible Bdnf KO mice, in which Bdnf is deleted\u00a0~70\u201380% in broad forebrain regions (Monteggia et al., 2004), were given lithium treated chow following our protocol (Figure 1A). To determine whether this lithium treatment produced the expected behavioral effects, we tested mice in the forced swim test (FST), a test with predictive value for antidepressant responses (Porsolt et al., 1977). Littermate control (CTL) mice treated with lithium showed a significant reduction in immobility time that was suggestive of an antidepressant-like response compared to CTL mice that did not receive lithium (Figure 2A). In agreement with previous data we found that loss of Bdnf in the inducible Bdnf KO mice did not alter immobility in the FST compared to CTL mice (Monteggia et al., 2004). We also found that Bdnf KO mice administered lithium showed a significant reduction in immobility comparable to KO mice that did not receive lithium (Figure 2A) suggesting that BDNF is not necessary for the antidepressant-like effect of lithium in the FST.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig2-v2.jpg)\n\n**Figure 2.:** (A) Chronic lithium treatment caused a significant decrease in the immobility time in the FST in littermate CTL and inducible Bdnf KO mice in comparison to vehicle chow treated mice (ANOVA F3,90\u00a0=\u00a018.1 *p<0.0001, Dunnett\u2019s multiple comparisons Veh CTL vs LiCl CTL *p<0.0001, Veh Bdnf KO vs LiCl Bdnf KO *p<0.0001, n\u00a0=\u00a019\u201328 mice per group). (B) Acute amphetamine injection caused a significant increase in locomotor activity in control and Bdnf KO mice in comparison to the saline injected mice. Lithium treatment resulted in a nonsignificant increase in locomotor activity of CTL and Bdnf KO mice compared to vehicle treated mice. Chronic lithium treatment blunted the increased locomotor activity following acute amphetamine injection in the CTL littermate mice, but not in the Bdnf KO mice (ANOVA F7,98\u00a0=\u00a012.75 p<0.0001, Tukey\u2019s multiple comparisons CTL Veh-Sal vs CTL Veh-Amph *p<0.0001, CTL LiCl-Sal vs CTL LiCl-Amph p=0.97, CTL Veh-Sal vs CTL LiCl-Sal p=0.23, Bdnf KO Veh-Sal vs Bdnf KO Veh-Amph *p<0.0001, Bdnf KO LiCl-Sal vs Bdnf KO LiCl-Amph *p=0.01, Bdnf KO Veh-Sal vs Bdnf KO LiCl-Sal p=0.44, n\u00a0=\u00a011\u201315 mice per group). (C) Chronic lithium treatment resulted in a 20% reduction in the I/O curve in the CTL mice chronically treated with LiCl chow in comparison to Veh CTL mice, which is plotted as the slope of the fEPSP is plotted as a function of the presynaptic fiber volley. Linear fit slopes were calculated for Veh CTL(5.53\u00a0\u00b1\u00a00.2) vs CTL LiCl (4.656\u00a0\u00b1\u00a00.03825). There were no significant differences in the fEPSP slope between Veh Bdnf KO slices (5.85\u00a0\u00b1\u00a00.178) and LiCl treated Bdnf KO (5.899\u00a0\u00b1\u00a00.1703). (Two-way ANOVA Interaction F1,29\u00a0=\u00a03.24 p=0.08, Row (Genotype) F1,29\u00a0=\u00a05.09 *p=0.032, Column (Diet) F1,29\u00a0=\u00a012.61 *p=0.001. Sidak\u2019s multiple comparisons Veh CTL vs LiCl CTL *p=0.029, Veh Bdnf KO vs LiCl Bdnf KO p=0.999, Veh CTL vs Veh Bdnf KO p=0.739, LiCl CTL vs LiCl Bdnf KO *p=0.007 n\u00a0=\u00a06\u201310 recordings per group).\n\nTo investigate whether BDNF was required for lithium\u2019s antimanic-like effects, we used the amphetamine hyperlocomotor test in which lithium blunts the increased locomotor activity that occurs following acute amphetamine injection, a commonly used assay for the antimanic-like effects of lithium in mice (Flaisher-Grinberg and Einat, 2010; Gould et al., 2007). The amphetamine induced hyperlocomotor test was performed subsequent to the FST in the same cohorts of mice. Littermate CTL mice treated with acute amphetamine have the expected significant increase in the total number of horizontal beam breaks compared to vehicle treated mice (Figure 2B). CTL mice receiving lithium treatment showed a small non-significant increase in the total number of beam breaks compared to vehicle treated CTL mice, and were indistinguishable from chronic lithium treated mice receiving acute amphetamine, indicating that lithium treatment could prevent the hyperactivity induced by amphetamine (Figure 2B). In contrast, while inducible Bdnf KO mice receiving acute amphetamine showed a significant increase in the number of beam breaks compared to vehicle treated Bdnf KOs, and a slight increase with chronic lithium treatment, the chronic lithium treated Bdnf KO mice receiving acute amphetamine still had a significant increase in the number of beam breaks comparable to amphetamine treatment alone. These data demonstrate that lithium treatment does not block the hyperlocomotor effects of amphetamine in inducible Bdnf KO mice and thus suggests that BDNF is required for the antimanic-like effect of lithium.\n\nWe next assessed whether the loss of BDNF impacted lithium\u2019s effect on synaptic efficacy from hippocampal slices. Inducible Bdnf KO and littermate control mice were given lithium treated chow or untreated chow (Figure 1A). The slope of the input/output (I/O) curve, which was plotted as the presynaptic volley versus the fEPSC slope, was taken as a measure of synaptic efficacy associated with synaptic density or strength of individual synapse. We found that in CTL mice, chronic lithium treatment resulted in a significant reduction in the slope of the I/O curve in hippocampal slices in comparison to mice not treated with lithium (Figure 2C), indicating that chronic lithium treatment reduces hippocampal synaptic strength. Inducible Bdnf KO mice that did not receive lithium had a similar slope of the I/O curve compared to untreated littermate CTL mice (Figure 2C) showing that the loss of BDNF did not impact synaptic efficacy. We also found that the slope of the I/O curve in the hippocampal slices from the inducible Bdnf KO mice treated with lithium was also unchanged in comparison to the untreated CTL and Bdnf KO mice (Figure 2C), suggesting that BDNF expression is required for the lithium-mediated reduction of synaptic strength.\n\n### BDNF and TrkB are required for lithium-mediated decreases in AMPAR mEPSC amplitudes\n\nPrevious work has shown that lithium treatment produces a significant decrease in AMPAR miniature excitatory postsynaptic current (mEPSC) amplitudes in cultured neurons, which has been suggested to underlie the antimanic effects of lithium (Ankolekar and Sikdar, 2015; Du et al., 2008; Wei et al., 2010). We therefore incubated dissociated C57BL/6 hippocampal neurons with 1 mM LiCl or 1 mM NaCl, to control for changes in osmolarity, for 11\u201315 days and then recorded AMPAR mEPSCs (Figure 3A). Lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in comparison to NaCl treated or untreated CTL neurons (Figure 3B\u2013D). To examine whether lithium\u2019s effect on AMPAR mEPSC amplitudes was due to synaptic scaling, we plotted in rank order the amplitudes from each condition with a linear fit equation. We found that lithium treatment resulted in a 41% and 26% decrease in the slope compared to untreated and NaCl treatment, respectively (Figure 3E). These data show lithium produces a downward scaling of all AMPAR mEPSC amplitudes and impacts post-synaptic homeostatic plasticity. Notably, lithium did not produce generalized effects on synaptic measures as there were no changes in mEPSC frequency compared to untreated or NaCl treated neurons (Figure 3F). Since lithium\u2019s effects on AMPAR mEPSC amplitudes were due to synaptic scaling, which can be influenced by AMPAR trafficking, we examined the surface expression of the AMPAR subunit, GluA1. We performed surface biotinylation experiments and found lithium treatment results in a significant decrease in GluA1 surface expression relative to total GluA1 in comparison to untreated or NaCl treated neurons (Figure 3G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig3-v2.jpg)\n\n**Figure 3.:** (A) Timeline for treatment of dissociated hippocampal neurons with LiCl and NaCl. (B) Example traces of AMPAR mEPSCs from CTL untreated (top), 1 mM NaCl treated (middle) and 1 mM LiCl treated (bottom) dissociated hippocampal neurons. (C) Chronic LiCl treatment of cultured hippocampal neurons caused a trend towards decreased AMPA mEPSC average amplitudes in comparison to CTL neurons. Chronic NaCl treatment did not cause a change in average AMPA mEPSC amplitude in comparison to CTL neurons (ANOVA F2,39\u00a0=\u00a02.597 p=0.0873, Bonferroni\u2019s multiple comparisons CTL vs NaCl p>0.999, CTL vs LiCl p=0.091). (D) Cumulative probability histogram showing a significant leftward shift (decrease) in the amplitudes of AMPAR-mEPSCs from cells chronically treated with 1 mM LiCl in comparison to CTL untreated and 1 mM NaCl treated neurons (Kolmogorov-Smirnov test: CTL vs 1 mM >LiCl *p=1.75\u00d710\u221243, D\u00a0=\u00a00.234, 1 mM NaCl vs 1 mM LiCl *p=8.14\u00d710\u221227, D\u00a0=\u00a00.167, n=\u00a012\u201318 recordings per condition). (E) Rank order plot of CTL untreated AMPAR mEPSC amplitudes vs 1 mM LiCl AMPAR mEPSC amplitudes revealed a 41% decrease. Rank order plot of 1 mM NaCl AMPAR mEPSC amplitudes vs 1 mM LiCl AMPAR mEPSC amplitudes showed a 26% decrease. (CTL vs LiCl line of best fit y\u00a0=\u00a00.59x, CTL vs NaCl line of best fit y\u00a0=\u00a00.85x, Difference between NaCl and LiCl. 26, n=\u00a012\u201318 recordings per condition). (F) AMPAR-mEPSC frequency is indistinguishable between CTL untreated, NaCl treated, and LiCl treated neurons (ANOVA F4,57\u00a0=\u00a00.129 p=0.97, n\u00a0=\u00a012\u201318 recordings). (G) Surface biotinylation experiments revealed that chronic lithium treatment of hippocampal neurons results in a significant decrease in the surface/total GluA1 ratio (ANOVA F2,21\u00a0=\u00a02.911 p=0.0766, Dunnett\u2019s multiple comparisons CTL vs NaCl p=0.58, CTL vs LiCl *p=0.04, n=\u00a03 separate experiments).\n\nSince our data demonstrated that BDNF was required for lithium\u2019s antimanic-like effects in mice and lithium-mediated decrease in synaptic strength, we examined whether chronic lithium treatment\u2019s effects on synaptic function, which may ultimately trigger the behavioral effects, were dependent on BDNF and its high affinity receptor TrkB. BDNF is a secreted protein that has been shown to influence synaptic upscaling and downscaling, depending on the brain region examined (Leslie et al., 2001; Reimers et al., 2014; Rutherford et al., 1998). We therefore examined whether lithium\u2019s effects on AMPAR mEPSC amplitudes were dependent on BDNF. We cultured hippocampal neurons from Bdnf fl/fl mice and infected them with lentivirus expressing Cre recombinase (Cre) tagged with GFP to delete the gene of interest or GFP alone as a control. Previous studies from our laboratory have shown that this lentivirus construct expressing Cre tagged with GFP can efficiently knock out endogenous gene expression without triggering cell death (Akhtar et al., 2009; Nelson et al., 2006). As expected, GFP infected neurons treated with chronic lithium had a significant decrease in AMPAR mEPSC amplitudes in comparison to untreated or NaCl treated neurons (Figure 4A\u2013D). In BDNF deficient cultures, Bdnffl/fl neurons infected with Cre, there was no\u00a0difference in AMPAR mEPSC amplitudes compared to GFP infected neurons suggesting loss of BDNF does not impact this synaptic measure (Figure 4A\u2013D). In contrast to wild-type neurons, we found chronic lithium treatment of BDNF deficient cultures induced a small but nonsignificant decrease in AMPAR mEPSC amplitudes (Figure 4D) suggesting a requirement for BDNF. We also examined mEPSC frequency from these six treatment groups and did not find a significant change with any condition (data not shown). Taken together, these data suggest that chronic lithium\u2019s effect on AMPAR mEPSC amplitudes is dependent on BDNF.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example traces from GFP infected Bdnf fl/fl neurons with no treatment (CTL, top) or 11\u201317 day incubation with 1 mM NaCl (middle) or 1 mM LiCl (bottom). (B) Example traces from Cre infected Bdnf fl/fl neurons with no treatment (control, top) or 11\u201317 day incubation with 1 mM NaCl (middle) or 1 mM LiCl (bottom). (C) Cumulative probability histogram showing a significant leftward shift (decrease) in AMPAR mEPSC amplitudes between Bdnf fl/fl -GFP control untreated and Bdnf fl/fl -GFP LiCl conditions. There is also a significant leftward shift (decrease) between Bdnf fl/fl -GFP LiCl and Bdnf fl/fl -Cre LiCl conditions (Kolmogorov-Smirnov test: GFP Control vs GFP LiCl p<0.0001 D\u00a0=\u00a00.309, GFP LiCl vs Cre LiCl *p<0.0001 D\u00a0=\u00a00.19, n\u00a0=\u00a010\u201313 recordings per condition). (D) Lithium caused a significant decrease in AMPAR mEPSC amplitudes in Bdnf fl/fl -GFP neurons compared to control Bdnf fl/fl -GFP neurons. However, lithium did not impact AMPAR mEPSC amplitudes between Bdnf fl/fl -Cre neurons in comparison to untreated control Bdnf fl/fl -Cre neurons (ANOVA F5,59\u00a0=\u00a05.694 *p=0.0002, Tukey\u2019s multiple comparisons GFP Control vs GFP LiCl *p=0.003, Cre Control vs Cre LiCl p=0.197, n\u00a0=\u00a010\u201313 recordings per condition).\n\nTo further evaluate whether BDNF signaling is required for lithium\u2019s effects on AMPAR mediated synaptic transmission, we explored the requirement for the TrkB receptor. We cultured hippocampal neurons from Ntrk2 fl/fl mice and infected them with either lentivirus expressing Cre or GFP. Consistent with our previous results, GFP infected neurons treated with lithium had a significant decrease in AMPAR mEPSC amplitude compared to untreated or NaCl treated neurons (Figure 5A\u2013D). We found Ntrk2 fl/fl neurons infected with CreGFP, had indistinguishable AMPAR mEPSC amplitudes compared to GFP infected neurons demonstrating that loss of TrkB does not affect this synaptic measure (Figure 5D). In agreement with data from the Bdnf deficient neurons, we found lithium treatment of Ntrk2 deficient neurons did not affect AMPAR mEPSC amplitudes showing a requirement for TrkB in lithium\u2019s effect on AMPAR mEPSC responses (Figure 5D). We measured mEPSC frequency in the six treatment groups and did not observe any significant differences demonstrating a specific effect of lithium on mEPSC properties (data not shown).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example traces from GFP infected Ntrk2 fl/fl neurons, untreated Control (top), 1 mM NaCl treatment (middle), and 1 mM LiCl treatment (bottom). (B) Examples from Cre infected Ntrk2 fl/fl neurons, untreated Control (top), 1 mM NaCl treatment (middle) and 1 mM LiCl treatment (bottom). (C) Cumulative probability histogram showing a significant leftward shift (decrease) in AMPAR-mEPSC amplitudes from Ntrk2 fl/fl -GFP neurons treated with 1 mM LiCl. (Kolmogorov-Smirnov test: GFP control vs GFP LiCl *p<0.0001, D\u00a0=\u00a00.181, GFP LiCl vs Cre LiCl *p<0.0001, D\u00a0=\u00a00.153, n\u00a0=\u00a09\u201317 recordings per condition). (D) Lithium caused a significant decrease in AMPAR-mEPSC amplitudes in Ntrk2 fl/fl -GFP neurons compared to untreated control Ntrk2 fl/fl -GFP neurons. However, lithium was unable to cause any significant changes in AMPAR-mEPSCs in Ntrk2 fl/fl -Cre neurons compared to untreated Ntrk2 fl/fl -Cre control (ANOVA F5,76\u00a0=\u00a05.107 *p=0.0004, Bonferonni multiple comparison test: GFP control vs GFP LiCl *p=0.002, Cre Control vs Cre LiCl p>0.999, n\u00a0=\u00a09\u201317 recordings per condition).\n\n### Dynamin-dependent endocytosis is required for lithium-mediated decrease in AMPAR mEPSC amplitudes\n\nOur data so far shows that chronic lithium treatment of hippocampal neurons leads to a significant decrease in AMPAR mEPSC amplitudes that is dependent on BDNF-TrkB signaling. The decrease in AMPAR mEPSC amplitudes and the reduced GluA1 surface membrane expression suggests lithium is augmenting AMPAR endocytosis. Therefore, we examined whether inhibiting AMPAR endocytosis would rescue the synaptic phenotype observed with lithium treatment. AMPAR endocytosis is dependent on the GTPase dynamin (Lu et al., 2007), which is expressed by three related genes in mammals (Raimondi et al., 2011). Dynamin 1 and 3 (Dnm1 and Dnm3) are highly expressed in neurons and found in dendrites (Calabrese and Halpain, 2015; Noda et al., 1993). Previous work has shown that constitutive Dnm1\u2212/\u2212/ Dnm3\u2212/\u2212 double KO mice are not viable (Raimondi et al., 2011). Therefore, to examine the contribution of both dynamin1 and dynamin3 on lithium mediated synaptic effects, we crossed Dnm1 fl/fl mice with Dnm3\u2212/\u2212 mice as the constitutive deletion of Dnm3 does not impact synaptic function (Raimondi et al., 2011). We cultured Dnm1 fl/fl / Dnm3\u2212/\u2212 neurons and infected them with lentivirus expressing Cre to delete Dnm1 and thus generate the double KOs, or GFP as a control. The GFP infected neurons treated with lithium had a significant reduction in AMPAR mEPSC amplitudes compared to untreated neurons showing that the loss of Dnm3 does not impact the effect of lithium on synaptic function (Figure 6A\u2013C). In contrast, deletion of both Dnm1 and Dnm3 occluded the effect of chronic lithium treatment on AMPAR mEPSC amplitudes in comparison to untreated cultures demonstrating that lithium is potentiating dynamin dependent endocytosis of AMPAR (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25480/elife-25480-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example traces from GFP infected Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons, control (top), chronic NaCl treatment (1 mM, middle) and chronic LiCl treatment (1 mM, bottom). (B) Example traces from Cre infected Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons, control (top), chronic NaCl treatment (1 mM, middle), and chronic LiCl treatment (1 mM, bottom). (C) Chronic lithium treatment caused a significant decrease in AMPAR mEPSC amplitude in Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons infected with lenti-GFP virus compared to untreated Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons. However, there was no significant difference in AMPAR-mEPSC amplitudes between untreated and lithium treated Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons infected with lenti-CreGFP virus (ANOVA F5,68\u00a0=\u00a05.048 *p=0.0006, Bonferonni multiple comparison test: GFP control vs GFP LiCl *p=0.02, Cre Control vs Cre LiCl p=0.455, n\u00a0=\u00a08\u201312 recordings per condition). (D) Example traces from wildtype neurons recorded with DMSO-internal solution, control (top), chronic NaCl treatment (1 mM, middle), and chronic LiCl treatment (1 mM, bottom). (E) Example traces from wildtype neurons recorded with Dyngo-internal solution, control (top), chronic NaCl treatment (1 mM, middle), and chronic LiCl treatment (1 mM, bottom). (F) In comparison to control untreated neurons, chronic lithium treatment caused a significant decrease in AMPAR-mEPSC amplitudes. In contrast, lithium did not cause a significant change in AMPAR-mEPSC amplitudes in comparison to the untreated control when Dyngo is included in the internal pipette solution (ANOVA F5,69\u00a0=\u00a06.985, *p<0.0001, Bonferonni multiple comparison test: DMSO control vs DMSO LiCl *p<0.0001, Dyngo Control vs Dyngo LiCl p>0.999, n\u00a0=\u00a011\u201317 recordings per condition).\n\nTo control for possible compensatory effects due to the loss of Dnm1 and Dnm3, in our next experiments we cultured hippocampal neurons from C57BL/6 mice and acutely inhibited dynamin activity in the postsynaptic neuron. We chronically treated neurons with lithium and then added the pan-dynamin inhibitor Dyngo (McCluskey et al., 2013), or the vehicle 1% DMSO, to the internal pipette solution prior to our recordings. Consistent with previous data, chronic lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in neurons recorded with vehicle in the pipette solution (Figure 6D\u2013F). In contrast, the presence of Dyngo in the pipette solution rescued the decrease in AMPAR mEPSC amplitudes seen after lithium treatment (Figure 6F). Taken together, these experiments demonstrate that chronic lithium treatment enhances AMPAR endocytosis to alter synaptic function in a dynamin dependent manner and the loss of dynamin, specifically Dnm1 and Dnm3, can rescue the synaptic deficits.\n\n## Discussion\n\nIn the current study, we report that lithium requires BDNF-TrkB signaling to mediate its antimanic as well as synaptic effects. Chronic lithium treatment in vivo results in a sustained increase in BDNF mRNA and protein expression. However, while BDNF is required for the antimanic effects of lithium it is not required for the antidepressant effects. We determined that chronic lithium treatment in vivo caused a significant decrease in I/O curves from hippocampal slices that were dependent on BDNF expression. We investigated the effect of chronic lithium on synaptic function and found a significant synaptic downscaling of AMPAR mEPSC amplitudes that was dependent on BDNF as well as its high affinity receptor, TrkB. The decrease in AMPAR mEPSC amplitudes was due to a decrease in postsynaptic surface expression of GluA1 driven by dynamin-dependent AMPAR endocytosis, which could be acutely countered by administration of a dynamin inhibitor. Collectively, these data demonstrate that lithium can target AMPA receptor endocytosis to alter synaptic function.\n\nIn these experiments we used lithium treated chow to administer the drug to mice to more closely mimic the oral administration used by patients with bipolar disorder. In initial experiments, we established a chronic lithium regimen that resulted in clinically relevant lithium levels in serum. In each experiment we confirmed that an animal had a serum lithium level of 0.5\u20133.0 mM/L to ensure that the molecular and behavioral studies were performed under conditions similar to long-term treatment for Bipolar Disorder. We show that chronic lithium treatment in rodents causes a sustained increase in BDNF mRNA and protein in the hippocampus. However, BDNF was not required for the antidepressant action of lithium. Previous studies have shown that BDNF is required for the antidepressant effects of traditional antidepressants (Adachi et al., 2008; Monteggia et al., 2004), as well as rapid antidepressant effects of ketamine (Autry et al., 2011). While the current data showing lithium can exert an antidepressant effect in inducible Bdnf KOs is unexpected, the finding could be due to several possibilities. First, these data may suggest that mood stabilizers mediate an antidepressant response in a manner distinct from conventional antidepressants that target the monoamine system and independent of BDNF. Second, previous work with traditional antidepressants has largely focused on changes in Bdnf mRNA, with changes in BDNF protein not as fully explored leaving it unclear the time frame that conventional antidepressants increase BDNF protein (Duman and Monteggia, 2006). The rapid antidepressant action of ketamine requires BDNF and is protein translation dependent, with BDNF protein rapidly increased but then returning to baseline (Autry et al., 2011). In contrast, data from the current study shows that lithium treatment results in a sustained increase in Bdnf mRNA and protein expression. Taken together, these may data suggest acute manipulation of BDNF protein expression is involved in rapid antidepressant effects while a more chronic increase in BDNF expression is required for antimanic effects.\n\nLithium produces significant effects on synaptic transmission that may underlie its antimanic properties. Previous work has consistently shown that lithium application significantly decreases AMPAR mEPSC amplitudes in cultured neurons (Ankolekar and Sikdar, 2015; Du et al., 2004; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010). We replicated these data and showed chronic lithium treatment of hippocampal neurons results in a significant decrease in AMPA mEPSC amplitudes compared to control conditions. We also found that lithium treatment did not alter AMPA mEPSC frequency demonstrating specificity to the impact of the drug on synaptic transmission. Further analysis revealed that lithium produced a significant downward multiplicative synaptic scaling of all AMPAR-mEPSC amplitudes consistent with an impact on post-synaptic homeostatic plasticity. Previous in vivo and in vitro studies have shown that lithium decreases GluA1 and GluA2 surface expression in the hippocampus and in cultured cortical neurons (Du et al., 2003, 2008; Wei et al., 2010). In addition, we found that in vivo lithium treatment caused a significant decrease in I/O curves in hippocampal slices, which is reminiscent of the decreased AMPA/NMDA ratio previously seen in rats following chronic lithium treatment (Du et al., 2008). Lithium treatment has also been shown to decrease phosphorylation of Thr840 on GluA1, which is associated with decreased AMPAR signaling (Szabo et al., 2009). In the current study, we found that lithium treatment of hippocampal neurons elicits synaptic downscaling due to decreased GluA1 surface expression demonstrating a previously unknown effect of lithium on post-synaptic homeostatic plasticity.\n\nThe lithium triggered significant decrease on AMPAR mEPSC amplitudes and hippocampal I/O curves was occluded in neurons lacking Bdnf suggesting a requirement in lithium\u2019s action. To confirm these data, we examined neurons with a deletion of Ntrk2 and found that lithium\u2019s effect on AMPAR-mEPSC amplitudes was also occluded. While these data demonstrate that the effect of lithium on AMPA mEPSC amplitudes is dependent on BDNF and TrkB, the requirement for TrkB was more robust than BDNF per se. These findings may be due to low level expression of BDNF remaining after viral infection of Cre recombinase that acts on TrkB receptors or alternatively some minor effects of neurotrophin 3 (NT3) or neurotrophin 4 (NT4) activating the TrkB receptor to impact lithium\u2019s effects on synaptic transmission. Regardless, these results demonstrate a rather unexpected requirement for BDNF-TrkB signaling in lithium mediated effects on synaptic scaling as increased BDNF expression is typically associated with increased AMPAR surface expression (Jakawich et al., 2010; Nakata and Nakamura, 2007; Nosyreva et al., 2013). However, there is precedent for BDNF to induce downscaling of AMPAR surface expression. Specifically, acute increases in BDNF have been shown to increase GluA1 and GluA2 surface expression, whereas chronic increases in BDNF decrease surface expression of GluA1 and GluA2 (Reimers et al., 2014). Collectively, these data suggest that chronic lithium treatment through a sustained increase in BDNF expression leads to synaptic downscaling.\n\nThe BDNF-TrkB dependence of lithium-mediated effects on mEPSC amplitudes was due to decreased surface expression of GluA1, suggesting the removal of AMPARs by endocytosis. In neuronal synapses, dynamin has been shown to be a key mediator of endocytosis. To determine whether lithium promotes AMPAR endocytosis by a dynamin-dependent mechanism, we utilized a genetic approach with deletion of Dnm1 and Dnm3 and reversed the lithium-mediated decrease in AMPAR mEPSC amplitudes. To further establish that lithium triggers AMPAR endocytosis, we treated individual cells acutely with the dynamin inhibitor, Dyngo and demonstrated that lithium\u2019s impact on AMPAR endocytosis can be rapidly countered by dynamin inhibition. Previous work has shown that AMPAR internalization/endocytic membrane trafficking of the postsynaptic neuron can be regulated in a dynamin-dependent process to control strength (Lu et al., 2007). Taken together, our data show that lithium regulates dynamin-dependent endocytosis and rapidly removes AMPAR from the postsynaptic membrane altering synaptic efficacy.\n\nAltered glutamatergic signaling and hyperactivity have been implicated in the pathology of bipolar disorder. Mania in bipolar patients has been associated with elevated glutamate signaling (Lan et al., 2009; Ong\u00fcr et al., 2008). In post-mortem brain tissue of individuals with bipolar disorder an increase in expression of the vesicular glutamate transporter (VGlut1) mRNA and glutamate have been observed (Eastwood and Harrison, 2010; Hashimoto et al., 2007). Human induced pluripotent stem cell (IPSC) derived neurons from patients with bipolar disorder were shown to have lower action potential thresholds, increased evoked and spontaneous action potentials, and larger action potential amplitudes suggesting they are hyperactive in comparison to neurons derived from healthy controls (Mertens et al., 2015). Conversely, lithium treatment has been shown to reverse the glutamatergic hyperactivity from IPSC derived neurons from patients with bipolar disorder (Mertens et al., 2015). In addition, recent work has suggested that lithium may alter neuronal activity by regulating G-protein gated inward rectifier K+ (GIRK) channels (Farhy Tselnicker et al., 2014), which may modulate homeostatic scaling of AMPAR responses. Although, we cannot exclude lithium-mediated regulation of neuronal activity as a component of our observations, a parsimonious interpretation of our results suggests that direct biochemical effects of lithium mediated signaling is the key driver for the AMPAR downscaling we observed. Our findings showing that lithium triggers dynamin-dependent endocytosis of AMPARs may be a way in which to counteract the increased glutamatergic signaling associated with mania. Further work will be necessary to pursue this hypothesis and explore the role of lithium on dynamin-dependent endocytosis as a potential mechanism in antimanic action.\n\nFindings from the current study identify a critical role for BDNF in the antimanic and synaptic effects of lithium treatment. These results demonstrate that lithium specifically impacts excitatory neurotransmission by decreasing AMPAR-mEPSCs through dynamin-dependent endocytosis to reduce surface expression of AMPAR subunits. These data start to provide a framework to elucidate the mechanisms underlying lithium\u2019s effect on synaptic transmission which may offer insight into novel therapeutic targets for the treatment of bipolar disorder.\n\n## Materials and methods\n\n### Animals\n\nMale C57BL/6 mice aged 6\u20138 weeks were habituated to the animal facilities for at least 7 days prior to behavior testing. The mice were maintained on a 12 hr light/dark cycle with ad libitum access to food and water, unless otherwise noted for lithium treatment groups. The Bdnffl/fl and Ntrk2 fl/fl mice were generated as previously described and maintained as homozygous crosses (Luikart et al., 2005; Rios et al., 2001). The inducible Bdnf knockout (KO) mice were generated as previously described (Monteggia et al., 2004). The Dnm1 fl/fl and the Dnm3\u2212/\u2212 null KO mice were generated as previously described (Ferguson et al., 2007; Raimondi et al., 2011). All behavioral testing was done with age and weight matched male mice that were balanced by genotype. In these experiments we utilized only male mice as previous work from our laboratory has shown that loss of BDNF can impact depression-related behaviors in a sex-dependent manner (Autry et al., 2009). All electrophysiology and biochemistry experiments utilized male and female mice. All experiments were performed and data analyzed by an experimenter blind to drug condition and genotype. Animal protocols were approved by the Institutional Care and Use Committee at UT Southwestern Medical Center.\n\n### Lithium treatment in vivo\n\nThe lithium treatment consisted of mice given 0.2% lithium chloride (LiCl) chow (Harlan Teklad, East Millstone, NJ) for 4 days and then switched to 0.4% LiCl (Harlan Teklad) chow for the remainder of the study, which lasted from 11 to 17 days total. All mice received water as well as a bottle of 0.9% sodium chloride (NaCl) to control for ion imbalances known to occur with lithium administration. Control mice were kept on identical chow except it did not contain lithium.\n\n### Measurement of lithium in serum\n\nTrunk blood was collected from all animals after the completion of the lithium treatment and behavioral testing. Whole blood was kept on ice until it was spun at 3000 RPM at 4\u00b0C for 10 min to separate red blood cells and serum. Lithium ion counts were made using a flame photometer (Jenway PFP7) and concentration was calculated following the construction of a standard curve. Mice with serum lithium concentrations below 0.5 mM and above 3 mM were excluded from behavioral and biochemical analyses.\n\n### Behavior\n\n#### Forced swim test\n\nThe forced swim test (FST) was performed in accordance with published protocols (Gideons et al., 2014). In brief, mice were placed in a glass 4 L beaker with 3 L of 23\u00a0\u00b1\u00a02\u00b0C water for 6 min and test session were video-recorded. The last 5 min of each trial were scored by an observer blinded to drug condition and genotype to determine immobility time.\n\n#### Locomotor activity\n\nMice were habituated to the testing room for 1 hr and then given an intraperitoneal (i.p.) injection of amphetamine hydrochloride (Sigma, St. Louis, MO) at 2 mg/kg dissolved in saline or saline as a control. Mice were then immediately placed in standard home cages under red light and locomotor activity was measured for 2 hr by photocell beams linked to computer acquisition software (San Diego Instruments, San Diego, CA). The total beam counts for the 2 hr period were collected as a measurement of amphetamine induced hyperactivity (Yates et al., 2007).\n\n### Hippocampal slice preparation and field potential electrophysiology\n\nMice chronically treated with lithium (11\u201317 days) were anesthetized with isoflurane before decapitation. The brain was removed and immersed for 2\u20133 min in ice-cold dissection buffer containing the following (in mM): 2.6 KCl, 1.25 NaH2PO4, 26 NaHCO3, 0.5 CaCl2, 5 MgCl2, 212 sucrose and 10 glucose. The hippocampus was dissected out and cut with a vibratome into 400-\u03bcm-thick transverse sections in ice-cold dissection buffer continuously supplied with 95% O2 and 5% CO2. Area CA3 was surgically removed from each slice immediately after sectioning. The sections recovered in oxygenated ACSF containing the following (in mM): 124 NaCl, 5KCl, 1.25 NaH2PO4, 26 NaHCO3, 2 CaCl2, 2 MgCl2 and 10 glucose, pH 7.4 (continuously equilibrated with 95% O2 and 5% CO2) for 2\u20133 hr at 30\u00b0C. Hippocampal slices were transferred to the recording chamber and perfused with ACSF at a rate of 2\u20133 ml/min at 30\u00b0C. Field EPSPs (fEPSPs) were evoked by inserting a bipolar platinum-tungsten stimulating electrode (Frederick Haer, Bowdoin, ME) into Schaffer collateral/commissural afferents. The extracellular recording electrodes filled with ACSF (resistance, 1\u20132 M\u03a9) were placed into the CA1 just beneath the molecular layer. Baseline responses were collected every 30 s using an input stimulus intensity that induced 30\u201340% of the maximum response. After a 20 min stable baseline, an ascending series of stimulus input intensities (range, 5 to 200 \u03bcA) were applied and the input/output (I/O) curve was plotted by the slope of fEPSP versus afferent volley amplitude. Data are presented as mean \u00b1 SEM and analyzed using two-way ANOVA. Sidak\u2019s multiple comparisons test were conducted after significant interaction effects were found. A p value of\u00a0<0.05 was required for statistical significance.\n\n### Cell culture\n\nDissociated hippocampal cultures were prepared as previously described (Kavalali et al., 1999; Reese and Kavalali, 2015). Whole hippocampi were dissected from postnatal day 0\u20133 (P0-P3) mice. The hippocampi were trypsinized (~10 mg/mL trypsin; Invitrogen), dissociated mechanically, and plated on Matrigel (Corning Biosciences, Tewksbury, MA)-coated coverslips for electrophysiology or directly onto tissue culture treated plates for protein collection for western blot analysis. At 1 d in vitro (DIV), 4 \u00b5M cytosine arabinoside (ARAC; Sigma) was added. At 4 DIV, the ARAC concentration was decreased to 2 \u00b5M with a media change. Treatment with LiCl (1 mM) solution (Sigma) or NaCl (1 mM) solution (Sigma) was initiated at 4 DIV and lasted for 11\u201317 days. The Bdnffl/fl, Ntrk2 fl/fl, and Dnm1 fl/fl / Dnm3\u2212/\u2212 cultures were infected with lentivirus expressing Cre recombinase (Cre) tagged with GFP or lentivirus expressing GFP alone as a control at 4 DIV. Lentivirus constructs and virus preparation from HEK293T/17 cells were prepared as previously described (Akhtar et al., 2009). HEK293T/17 cell line was purchased from ATCC (Cat. Number: CRL-11268). All electrophysiology experiments and protein collected for western blot analysis were done on 15\u201321 DIV cultures.\n\n### Patch-clamp electrophysiology\n\nWhole-cell patch clamp recordings were performed on hippocampal pyramidal neurons as previously described (Gideons et al., 2014). The external Tyrode\u2019s solution contained (in mM): 150 NaCl, 4 KCl, 2 CaCl2, 1.25 MgCl2, 10 glucose, and 10 Hepes (ph 7.4) at\u00a0~300 mOsm. The pipette internal solution contained (in mM): 110 K-gluconate, 20 KCl, 10 NaCl, 10 Hepes, 0.6 EGTA, 4 Mg-ATP, 0.3 Na-GTP, and 10 lidocaine N-ethyl bromide (pH 7.3) at\u00a0~300 mOsm. Pipettes had a resistance between 3\u20137 M\u03a9. The junction potential between the internal and external solutions was\u00a0~12 mV and was subtracted from all recordings. AMPAR-mediated mEPSCs were recorded in the presence of 50 \u00b5M (2R)-amino-5-phosphonovaleric acid (AP5; Tocris, Bristol, UK), 1 \u00b5M tetrodotoxin (TTX; EMD Millipore, Billerica, MA), and 50 \u00b5M picrotoxin (PTX; Sigma). For the acute dynamin inhibitor studies, dynamin activity was inhibited in the postsynaptic neuron by adding 30 \u00b5M Dyngo-4A (Abcam, Cambridge, MA) to the internal pipette solution (McCluskey et al., 2013). DMSO was added to the internal pipette solution as a control for these experiments. Data were acquired using a MultiClamp 700B amplifier and Clampex 10.0 software (Molecular Devices, Sunnyvale, CA). Recordings were sampled at 100 \u00b5s, filtered at 2 kHz with a gain of 5. No more than three recordings were obtained per coverslip. AMPAR-mEPSCs were analyzed from a 3\u20135 min recording using MiniAnalysis software by an experimenter blind to drug condition and genotype.\n\n### Quantitative RT-PCR\n\nBriefly, fresh frozen hippocampi were dissected and total RNA was extracted using Trizol (Invitrogen) following the manufacturer\u2019s instruction. Conditions for cDNA synthesis, amplification, and primer sequences were previously described (Adachi et al., 2008).\n\n### Protein quantification\n\nAnterior hippocampal slices (~1 mm thick, 2\u20133 per mouse) were dissected and flash-frozen following 11 days of lithium treatment or immediately following the last behavioral test depending on the experiment. Hippocampal tissue was lysed in a radio immunoprecipitation assay (RIPA) buffer containing: 50 mM Tris pH 7.4, 1% Igepal, 0.1% SDS, 0.5% Na deoxycholate, 4 mM EDTA, 150 mM NaCl, phosphatase inhibitors (10 mM Na pyrophosphate, 50 mM NaF, 2 mM Na orthovanadate), and protease inhibitors (cOmplete Mini tablets, Roche, Basel, Switzerland). Protein concentration was quantified with the Quick-Start Bradford assay (Bio-Rad, Hercules, CA). Approximately 30 \u00b5g of protein was electrophoresed on SDS-PAGE gels and then transferred to nitrocellulose membranes. The membranes were incubated with primary antibodies overnight at the following dilutions: BDNF (Abcam, Cat. Number: ab108319; RRID: AB_10862052), 1:1000, GAPDH (Cell Signaling, Cat. Number: 2118S; RRID: AB_561053) 1:50,000, phosphorylated GSK3\u03b2 (Ser9, Cell Signaling, Cat. Number: 9323S) and total GSK3\u03b2 (Cell Signaling, Cat. Number: 9315S) 1:30,000. Primary antibodies for phospho-GSK3\u03b2 included 5% BSA. After washing, the membranes were incubated in anti-rabbit secondary antibodies: BDNF, 1:5000, GAPDH, 1:10,000, phospho-GSK3\u03b2 and total GSK3\u03b2, 1:10,000. Protein bands were detected using ECL then exposed to film. Following development of phospho-GSK3\u03b2, membranes were stripped using Restore PLUS Western Blot Stripping Buffer (ThermoScientific, Waltham, MA), put in block, and then in primary antibody for total GSK3\u03b2. BDNF expression was normalized to GAPDH while a ratio of phospho- GSK3\u03b2 intensity to total GSK3\u03b2 was examined. The phospho-GSK3\u03b2 and total GSK3\u03b2 antibodies are known to recognize doublet bands (Cell Signaling).\n\n### Cell surface AMPAR expression measurement\n\nMembrane biotinylation experiments were performed as previously described (Nosyreva et al., 2013). Dissociated hippocampal cultures from C57BL/6 mice were incubated in Tyrode\u2019s solution containing 1 mg/ml sulfo-NHS-LC-biotin (Pierce/Thermofisher) for 20 min on ice. The biotin reactions were quenched by incubating the cultures in Tris-buffered saline (TBS) with 15 mM ammonium chloride for 5 min on ice, and then washed twice with TBS for 5 min on ice. Following the second TBS wash, the cultures were lysed in RIPA buffer (as described above) for 10 min on ice and spun at 12,000 rpm for 5 min to remove non-solubilized material. Total protein concentration was quantified by Quik-Start Bradford assay (Bio-rad). 100 \u00b5g of protein from each sample was incubated with 100 \u00b5L of washed UltraLink NeutrAvidin (Pierce/Thermofisher) immobilized beads and rotated overnight at 4\u00b0C. Beads were washed with three times with RIPA buffer, followed by three washes with TBS at 4\u00b0C. Protein was eluted from the beads with SDS-PAGE sample buffer supplemented with \u03b2-mercaptaethanol (BME) for 10 min at 95\u00b0C. Eluted surface protein and 20 \u00b5g of total protein in SDS-PAGE-BME sample buffer were resolved by 10% SDS-PAGE gel, transferred to nitrocellulose, and probed with anti-GluA1 antibody (1:1000, Chemicon/EMD Millipore, Cat. Number: MAB2263) and anti-GAPDH antibody (1:50,000) overnight. Secondary anti-rabbit antibodies were at 1:2000 and 1:10,000 for GluA1 and GAPDH respectively. Surface GluA1 over total GluA1 ratio is reported.\n\n### Statistics\n\nData are reported as mean \u00b1 SEM. Statistical differences in the FST, locomotor tests, western blot, QPCR, mEPSC amplitude and frequency were assessed using unpaired two-tailed Student\u2019s t test or one-way ANOVA when appropriate. Tukey and Bonferroni post hoc tests were used when appropriate. Differences in the cumulative probability histograms were assessed with Kolmogorov-Smirnov test. Statistical significance was defined at p\u22640.05. Statistical outliers were identified with the Robust regression and Outlier removal (ROUT) method. All t-test, ANOVAs, associated post hoc tests, and ROUT method statistical tests were performed with Prism 6 (GraphPad, La Jolla, California). The Kolmogorov-Smirnov test was performed using Past 3.02 (http://folk.uio.no/ohammer/past/).\n",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "dfe788c2-4649-4e6b-9c60-a2f293f091a7",
+      "submission_id": "0e439d29-ebf7-4ad8-95ee-27c3377f1b07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Inna Slutsky, Tel Aviv University , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25480.009](https://doi.org/10.7554/eLife.25480.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chronic lithium treatment elicits its antimanic effects via BDNF-TrkB dependent synaptic downscaling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Lu Chen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nThis is a relatively straightforward but highly significant study demonstrating that chronic lithium administration to mice reduces amphetamine-induced locomotion (a model for anti-manic effects) through a mechanism that depends on BDNF-TrkB signaling, whereas lithium's ability to reduce immobility in the forced swim test (a model for anti-depressant effects) does not depend on BDNF. It is particularly compelling that both tests were conducted in the same cohort of mice. Furthermore, patch-clamp recordings showed that lithium reduced AMPAR-mediated mEPSC amplitude in cultured hippocampal neurons in a manner reminiscent of homeostatic downscaling, and that this effect also required BDNF-TrkB pathway. The decrease in AMPAR-mediated mEPSC amplitude in cultured hippocampal neurons was associated with reduced surface expression of GluA1 subunits. Two different strategies for inhibiting dynamin-dependent endocytosis rescued the lithium-induced decrease in mEPSC amplitude. These are novel findings that will be of broad interest. Experiments are well designed and the effects are convincing.\n\nHere are some suggestions for the authors to consider in order to strengthen their findings and clarify the conclusions:\n\nEssential revisions:\n\n1) It remains unclear what is the signal triggering mEPSC downscaling. Does lithium trigger an acute increase in spontaneous neuronal activity probably through inhibition of GIRK channels (Farhy Tselnicker et al., 2014)? If so, it would justify the 'homeostatic' nature of a negative feedback response through the proposed postsynaptic downscaling.\n\n2) The authors should provide further insight into the downstream signaling mechanisms that lead to down-regulation of mEPSC amplitude by lithium. In particular, it is important to better understand whether inhibition of GSK-3beta is involved in BDNF-induced synaptic downscaling by lithium. It can be tested by using specific inhibitors of GSK-3beta and examining if they occlude lithium-induced synaptic downscaling. As Akt can be activated by numerous growth factors, including BDNF, it may down-regulate synaptic AMPARs by inhibiting GSK3beta.\n\n3) All recordings are done in cultured neurons. Although others have apparently shown that in vivo lithium exposure reduces mEPSC amplitude (three studies are cited), were those recordings done in hippocampal neurons and under conditions similar to those studied here (e.g., lithium dosing? age of animal?). If not, it would be important to use slice physiology to confirm in the current mouse model that lithium reduces mEPSC amplitude and perhaps show that this is absent in slices from BDNF knockout mice.\n\n4) Is a reduction in amphetamine-induced locomotor activity an accepted model for lithium's anti-manic effects? Even if so, the authors should be a little more conservative in referring to lithium's action in this test as \"anti-manic\".\n",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88bbf9b4-e41e-47d5-9b70-0a693c8c905b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C1",
+      "claim": "Lithium was initially reported for treatment as a mood stabilizer over 60 years ago (Cade, 1949).",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium was initially reported for treatment as a mood stabilizer over 60 years ago (Cade, 1949)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cade, 1949, which is a reference to prior scholarly work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ac650aa2-3a79-4509-aad7-6d66b5b3b4b2",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C2",
+      "claim": "Lithium is still widely used for the treatment of Bipolar Disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium was initially reported for treatment as a mood stabilizer over 60 years ago (Cade, 1949) and is still widely used for the treatment of Bipolar Disorder (Mitchell, 2013; Poolsup et al., 2000; Vieta and Valent\u00ed, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mitchell, 2013; Poolsup et al., 2000; Vieta and Valent\u00ed, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d4d40e07-5781-4228-a2e6-ea63e9080cce",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C3",
+      "claim": "The cellular and molecular mechanisms underlying lithium's antimanic and antidepressant responses remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its extensive use for the treatment of bipolar disorder, the cellular and molecular mechanisms underlying its antimanic and antidepressant responses remain poorly understood (Can et al., 2014; Malhi and Outhred, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Can et al., 2014; Malhi and Outhred, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "29ff685e-c021-4a47-b535-2899fd524aa7",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C4",
+      "claim": "Putative mechanisms for the therapeutic effects of lithium include inhibition of glycogen synthase kinase-3\u03b2 (GSK3\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Putative mechanisms for the therapeutic effects of lithium include inhibition of glycogen synthase kinase-3\u03b2 (GSK3\u03b2) (Klein and Melton, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Klein and Melton, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "8e851568-f739-4940-ac7d-6caa878ad21b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C5",
+      "claim": "Putative mechanisms for the therapeutic effects of lithium include upregulation of neurotrophins and their receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative mechanisms for the therapeutic effects of lithium include inhibition of glycogen synthase kinase-3\u03b2 (GSK3\u03b2) (Klein and Melton, 1996), upregulation of neurotrophins, as well as their receptors, and downregulation of \u03b1-amino-3-hydroxyl-5-methyl-4-isoxazolepropionic acid receptor (AMPAR) expression (Ankolekar and Sikdar, 2015; Du et al., 2004, 2010; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010) among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "007f7207-36b5-4996-9364-b91b9658a39c",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C6",
+      "claim": "Putative mechanisms for the therapeutic effects of lithium include downregulation of AMPAR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative mechanisms for the therapeutic effects of lithium include inhibition of glycogen synthase kinase-3\u03b2 (GSK3\u03b2) (Klein and Melton, 1996), upregulation of neurotrophins, as well as their receptors, and downregulation of \u03b1-amino-3-hydroxyl-5-methyl-4-isoxazolepropionic acid receptor (AMPAR) expression (Ankolekar and Sikdar, 2015; Du et al., 2004, 2010; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010) among others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ankolekar and Sikdar, 2015; Du et al., 2004, 2010; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ae2e3579-98f7-4e8c-b021-c81f94aaf405",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C7",
+      "claim": "BDNF and aberrant signaling through TrkB have been proposed to underlie both the pathophysiology and treatment of bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "BDNF and aberrant signaling through its high affinity receptor tropomyosin receptor kinase B (TrkB) have been proposed to underlie both the pathophysiology and treatment of bipolar disorder (Autry and Monteggia, 2012; Malhi et al., 2013; Scola and Andreazza, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Autry and Monteggia, 2012; Malhi et al., 2013; Scola and Andreazza, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "265a6dd2-4cc6-4734-9623-cae0deef4b18",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C8",
+      "claim": "Patients with bipolar disorder have decreased peripheral BDNF mRNA in blood lymphocytes and monocytes in comparison to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that patients with bipolar disorder have decreased peripheral BDNF mRNA in blood lymphocytes and monocytes in comparison to healthy controls (D'Addario et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to D'Addario et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "dab89d13-dd45-481d-ab57-8853428312b2",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C9",
+      "claim": "Both manic and depressive states in patients with bipolar disorder have been associated with significantly decreased BDNF blood serum levels compared to patients in euthymic states and healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both manic and depressive states in patients with bipolar disorder have been associated with significantly decreased BDNF blood serum levels compared to patients in euthymic states and healthy controls (Fernandes et al., 2015; Tunca et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fernandes et al., 2015; Tunca et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a90a1b75-812b-48a7-b0c0-085aeaabc142",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C10",
+      "claim": "Post-mortem analysis of hippocampal tissue has revealed reduced BDNF protein levels in patients with bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-mortem analysis of hippocampal tissue has also revealed reduced BDNF protein levels in patients with bipolar disorder (Knable et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Knable et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "acb7ba6c-61f3-4c93-8492-f153430aa31f",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C11",
+      "claim": "Experimental interventions that cause manic-like behaviors in rodents have been shown to result in decreased BDNF mRNA and protein levels in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, experimental interventions that cause manic-like (Frey et al., 2006; Fries et al., 2015; Jornada et al., 2010) and depressive-like behaviors (Smith et al., 1995; Tsankova et al., 2006; Ueyama et al., 1997) have also been shown to result in decreased BDNF mRNA and protein levels in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Frey et al., 2006; Fries et al., 2015; Jornada et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9c59695e-d4c1-49a3-91f1-7886727f3943",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C12",
+      "claim": "Experimental interventions that cause depressive-like behaviors in rodents have been shown to result in decreased BDNF mRNA and protein levels in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, experimental interventions that cause manic-like (Frey et al., 2006; Fries et al., 2015; Jornada et al., 2010) and depressive-like behaviors (Smith et al., 1995; Tsankova et al., 2006; Ueyama et al., 1997) have also been shown to result in decreased BDNF mRNA and protein levels in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Smith et al., 1995; Tsankova et al., 2006; Ueyama et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "42c38231-657f-43d3-a5ed-9f6d9564aa33",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C13",
+      "claim": "Lithium treatment is associated with increased BDNF protein levels in the serum of patients with bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lithium treatment is associated with increased BDNF protein levels in the serum of patients with bipolar disorder (Cunha et al., 2006; de Sousa et al., 2011; Tramontina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cunha et al., 2006; de Sousa et al., 2011; Tramontina et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "2ceb27d3-2e1b-43ce-9f71-9894305a282b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C14",
+      "claim": "Chronic lithium treatment has been shown to increase BDNF mRNA and protein expression in hippocampus, cortex, and amygdala as well as cortical neurons in culture in rodent models.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodent models, chronic lithium treatment has been shown to increase BDNF mRNA and protein expression in hippocampus, cortex, and amygdala as well as cortical neurons in culture (Fukumoto et al., 2001; Jornada et al., 2010; Yasuda et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fukumoto et al., 2001; Jornada et al., 2010; Yasuda et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "05ba3355-e583-45b1-8527-a2c69ac1425e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C15",
+      "claim": "Lithium treatment has been shown to increase TrkB activity in neuronal cultures suggesting an increase in BDNF-TrkB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium treatment has also been shown to increase TrkB activity in neuronal cultures suggesting an increase in BDNF-TrkB signaling (Hashimoto et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hashimoto et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "b9988160-99a0-4180-8418-04f4773b8b50",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C16",
+      "claim": "BDNF is necessary for the antidepressant response of conventional antidepressants.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous work has demonstrated that BDNF is necessary for the antidepressant response of conventional antidepressants (Adachi et al., 2008; Ibarguen-Vargas et al., 2009; Monteggia et al., 2004, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Adachi et al., 2008; Ibarguen-Vargas et al., 2009; Monteggia et al., 2004, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6a1607f7-69de-4a24-a0f8-ea0443600d30",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C17",
+      "claim": "BDNF is necessary for the rapid antidepressant effects of ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous work has demonstrated that BDNF is necessary for the antidepressant response of conventional antidepressants (Adachi et al., 2008; Ibarguen-Vargas et al., 2009; Monteggia et al., 2004, 2007), as well as the rapid antidepressant effects of ketamine (Autry et al., 2011; Lepack et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Autry et al., 2011; Lepack et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "2e34390c-fa90-44da-9e4d-60bef554ab92",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C18",
+      "claim": "The lithium protocol resulted in a lithium serum concentration in treated mice that was within the therapeutic range of 0.5\u20132 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol resulted in a lithium serum concentration in treated mice that was within the therapeutic range of 0.5\u20132 mM (Amdisen, 1980), with an average concentration of 1 mM (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Amdisen, 1980 and data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "e69977f1-b605-4b4c-bcc1-114543e2cd3d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C19",
+      "claim": "The lithium protocol resulted in an average lithium serum concentration of 1 mM in treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol resulted in a lithium serum concentration in treated mice that was within the therapeutic range of 0.5\u20132 mM (Amdisen, 1980), with an average concentration of 1 mM (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "b031df23-c93f-47d5-b7d2-ef32d29a14f0",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C20",
+      "claim": "Following 11 days of lithium treatment, there was a significant increase in phosphorylation of GSK3\u03b2 at serine nine relative to total GSK3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm our lithium protocol produced the expected molecular effects, we examined GSK3 inhibition (Klein and Melton, 1996; Stambolic et al., 1996), by measuring the phosphorylation of GSK3\u03b2 at serine nine with western blot analysis and found a significant increase relative to total GSK3\u03b2 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 1C and citations to Klein and Melton, 1996; Stambolic et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "e8dcd590-1d68-4069-85d2-24ecb22636c4",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C21",
+      "claim": "Lithium treated mice had a significant increase in Bdnf mRNA expression in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Q-PCR targeted to the coding exon of Bdnf, we found lithium treated mice had a significant increase in Bdnf mRNA expression (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Q-PCR data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "0505f3ae-0f0b-43f8-8345-c5460d95adee",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C22",
+      "claim": "Lithium treated mice had a significant increase in BDNF protein expression in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a significant increase in BDNF protein expression (Figure 1E) in lithium treated mice relative to CTL mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d517ce9a-89bb-4858-9bc3-7f9b61890232",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C23",
+      "claim": "Littermate control mice treated with lithium showed a significant reduction in immobility time in the FST compared to control mice that did not receive lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "Littermate control (CTL) mice treated with lithium showed a significant reduction in immobility time that was suggestive of an antidepressant-like response compared to CTL mice that did not receive lithium (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "13008cf9-0ace-4197-ad90-67626d648606",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C24",
+      "claim": "Loss of Bdnf in the inducible Bdnf KO mice did not alter immobility in the FST compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous data we found that loss of Bdnf in the inducible Bdnf KO mice did not alter immobility in the FST compared to CTL mice (Monteggia et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by behavioral data and a citation to Monteggia et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "75aa1cc5-7246-400f-ad3a-b19fc5e9fc81",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C25",
+      "claim": "Bdnf KO mice administered lithium showed a significant reduction in immobility in the FST comparable to KO mice that did not receive lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Bdnf KO mice administered lithium showed a significant reduction in immobility comparable to KO mice that did not receive lithium (Figure 2A) suggesting that BDNF is not necessary for the antidepressant-like effect of lithium in the FST.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "afc6e18b-4f1e-4c1f-a7d6-966f13205c14",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C26",
+      "claim": "BDNF is not necessary for the antidepressant-like effect of lithium in the FST.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that Bdnf KO mice administered lithium showed a significant reduction in immobility comparable to KO mice that did not receive lithium (Figure 2A) suggesting that BDNF is not necessary for the antidepressant-like effect of lithium in the FST.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from behavioral data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "c88a25df-77f9-4b88-960d-82fee04caa04",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C27",
+      "claim": "Littermate control mice treated with acute amphetamine have a significant increase in the total number of horizontal beam breaks compared to vehicle treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Littermate CTL mice treated with acute amphetamine have the expected significant increase in the total number of horizontal beam breaks compared to vehicle treated mice (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "97e7e452-925d-4503-9264-300e0052fd77",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C28",
+      "claim": "Control mice receiving lithium treatment showed a small non-significant increase in the total number of beam breaks compared to vehicle treated control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CTL mice receiving lithium treatment showed a small non-significant increase in the total number of beam breaks compared to vehicle treated CTL mice, and were indistinguishable from chronic lithium treated mice receiving acute amphetamine, indicating that lithium treatment could prevent the hyperactivity induced by amphetamine (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "8bd27188-2379-49fa-903d-219b533d4785",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C29",
+      "claim": "Lithium treatment could prevent the hyperactivity induced by amphetamine in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CTL mice receiving lithium treatment showed a small non-significant increase in the total number of beam breaks compared to vehicle treated CTL mice, and were indistinguishable from chronic lithium treated mice receiving acute amphetamine, indicating that lithium treatment could prevent the hyperactivity induced by amphetamine (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "3500a109-cdc1-4798-a4f2-6341f982be0a",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C30",
+      "claim": "Inducible Bdnf KO mice receiving acute amphetamine showed a significant increase in the number of beam breaks compared to vehicle treated Bdnf KOs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while inducible Bdnf KO mice receiving acute amphetamine showed a significant increase in the number of beam breaks compared to vehicle treated Bdnf KOs, and a slight increase with chronic lithium treatment, the chronic lithium treated Bdnf KO mice receiving acute amphetamine still had a significant increase in the number of beam breaks comparable to amphetamine treatment alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "915580ca-ca34-4cf7-b03d-dcc3f887b471",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C31",
+      "claim": "Chronic lithium treated Bdnf KO mice receiving acute amphetamine still had a significant increase in the number of beam breaks comparable to amphetamine treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while inducible Bdnf KO mice receiving acute amphetamine showed a significant increase in the number of beam breaks compared to vehicle treated Bdnf KOs, and a slight increase with chronic lithium treatment, the chronic lithium treated Bdnf KO mice receiving acute amphetamine still had a significant increase in the number of beam breaks comparable to amphetamine treatment alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "90a90c91-ba3b-4514-9574-76f7d8011d64",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C32",
+      "claim": "Lithium treatment does not block the hyperlocomotor effects of amphetamine in inducible Bdnf KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that lithium treatment does not block the hyperlocomotor effects of amphetamine in inducible Bdnf KO mice and thus suggests that BDNF is required for the antimanic-like effect of lithium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9852513b-0782-4d8e-b3b4-16f0d56c1dbe",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C33",
+      "claim": "BDNF is required for the antimanic-like effect of lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that lithium treatment does not block the hyperlocomotor effects of amphetamine in inducible Bdnf KO mice and thus suggests that BDNF is required for the antimanic-like effect of lithium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "be155803-5550-4636-8786-2ac82e52a9b8",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C34",
+      "claim": "In control mice, chronic lithium treatment resulted in a significant reduction in the slope of the I/O curve in hippocampal slices in comparison to mice not treated with lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in CTL mice, chronic lithium treatment resulted in a significant reduction in the slope of the I/O curve in hippocampal slices in comparison to mice not treated with lithium (Figure 2C), indicating that chronic lithium treatment reduces hippocampal synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "246efa46-5cab-4a44-8feb-d1c941a7ad09",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C35",
+      "claim": "Chronic lithium treatment reduces hippocampal synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in CTL mice, chronic lithium treatment resulted in a significant reduction in the slope of the I/O curve in hippocampal slices in comparison to mice not treated with lithium (Figure 2C), indicating that chronic lithium treatment reduces hippocampal synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a2b09932-7b62-479a-a7a9-e979e7a17b36",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C36",
+      "claim": "Inducible Bdnf KO mice that did not receive lithium had a similar slope of the I/O curve compared to untreated littermate control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducible Bdnf KO mice that did not receive lithium had a similar slope of the I/O curve compared to untreated littermate CTL mice (Figure 2C) showing that the loss of BDNF did not impact synaptic efficacy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "43dfd649-0161-4778-a80d-0ef2d41d6d3b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C37",
+      "claim": "The loss of BDNF did not impact synaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducible Bdnf KO mice that did not receive lithium had a similar slope of the I/O curve compared to untreated littermate CTL mice (Figure 2C) showing that the loss of BDNF did not impact synaptic efficacy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "863cccfb-54da-4aad-b42e-9e00ff6dc71f",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C38",
+      "claim": "The slope of the I/O curve in the hippocampal slices from the inducible Bdnf KO mice treated with lithium was unchanged in comparison to the untreated control and Bdnf KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the slope of the I/O curve in the hippocampal slices from the inducible Bdnf KO mice treated with lithium was also unchanged in comparison to the untreated CTL and Bdnf KO mice (Figure 2C), suggesting that BDNF expression is required for the lithium-mediated reduction of synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "98928d00-c700-45e5-8521-35c4acf0fd4b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C39",
+      "claim": "BDNF expression is required for the lithium-mediated reduction of synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the slope of the I/O curve in the hippocampal slices from the inducible Bdnf KO mice treated with lithium was also unchanged in comparison to the untreated CTL and Bdnf KO mice (Figure 2C), suggesting that BDNF expression is required for the lithium-mediated reduction of synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "0eb38d0f-c683-4211-afad-67d619b94ab9",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C40",
+      "claim": "Lithium treatment produces a significant decrease in AMPAR miniature excitatory postsynaptic current (mEPSC) amplitudes in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that lithium treatment produces a significant decrease in AMPAR miniature excitatory postsynaptic current (mEPSC) amplitudes in cultured neurons, which has been suggested to underlie the antimanic effects of lithium (Ankolekar and Sikdar, 2015; Du et al., 2008; Wei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ankolekar and Sikdar, 2015; Du et al., 2008; Wei et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "929cd67b-8b58-410a-9c8f-8313c37fe1cf",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C41",
+      "claim": "Lithium treatment has been suggested to underlie the antimanic effects of lithium through decreased AMPAR mEPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that lithium treatment produces a significant decrease in AMPAR miniature excitatory postsynaptic current (mEPSC) amplitudes in cultured neurons, which has been suggested to underlie the antimanic effects of lithium (Ankolekar and Sikdar, 2015; Du et al., 2008; Wei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to Ankolekar and Sikdar, 2015; Du et al., 2008; Wei et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "635831ca-3c68-432f-91c7-8a38c7eb8c00",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C42",
+      "claim": "Lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in comparison to NaCl treated or untreated control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in comparison to NaCl treated or untreated CTL neurons (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "95948003-efce-4f75-a126-464ba75db663",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C43",
+      "claim": "Lithium treatment resulted in a 41% decrease in the slope of rank-ordered AMPAR mEPSC amplitudes compared to untreated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lithium treatment resulted in a 41% and 26% decrease in the slope compared to untreated and NaCl treatment, respectively (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "463d387e-6071-4d32-ab61-1b66b97edf77",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C44",
+      "claim": "Lithium treatment resulted in a 26% decrease in the slope of rank-ordered AMPAR mEPSC amplitudes compared to NaCl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lithium treatment resulted in a 41% and 26% decrease in the slope compared to untreated and NaCl treatment, respectively (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "f64e6ea8-eae2-4ba9-a590-bf619faaf06d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C45",
+      "claim": "Lithium produces a downward scaling of all AMPAR mEPSC amplitudes and impacts post-synaptic homeostatic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show lithium produces a downward scaling of all AMPAR mEPSC amplitudes and impacts post-synaptic homeostatic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rank-order analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "0f420098-76e0-413f-8b26-6f2e85bc514e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C46",
+      "claim": "Lithium did not produce changes in mEPSC frequency compared to untreated or NaCl treated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, lithium did not produce generalized effects on synaptic measures as there were no changes in mEPSC frequency compared to untreated or NaCl treated neurons (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "95d17ba2-6e67-4ec2-b274-76bdf876350a",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C47",
+      "claim": "Lithium treatment results in a significant decrease in GluA1 surface expression relative to total GluA1 in comparison to untreated or NaCl treated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed surface biotinylation experiments and found lithium treatment results in a significant decrease in GluA1 surface expression relative to total GluA1 in comparison to untreated or NaCl treated neurons (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by surface biotinylation data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "946e7bd8-5cd0-4ae1-82ad-a28c034c4733",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C48",
+      "claim": "GFP infected neurons treated with chronic lithium had a significant decrease in AMPAR mEPSC amplitudes in comparison to untreated or NaCl treated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GFP infected neurons treated with chronic lithium had a significant decrease in AMPAR mEPSC amplitudes in comparison to untreated or NaCl treated neurons (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "0373e65d-7d80-40c5-8fd1-5566dcc2122e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C49",
+      "claim": "In BDNF deficient cultures, there was no difference in AMPAR mEPSC amplitudes compared to GFP infected neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In BDNF deficient cultures, Bdnffl/fl neurons infected with Cre, there was no difference in AMPAR mEPSC amplitudes compared to GFP infected neurons suggesting loss of BDNF does not impact this synaptic measure (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d21ea678-6811-40d8-9552-19eff9cad318",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C50",
+      "claim": "Loss of BDNF does not impact AMPAR mEPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "In BDNF deficient cultures, Bdnffl/fl neurons infected with Cre, there was no difference in AMPAR mEPSC amplitudes compared to GFP infected neurons suggesting loss of BDNF does not impact this synaptic measure (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9ccf29bf-19f0-4254-87a4-77bf979e6ff5",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C51",
+      "claim": "Chronic lithium treatment of BDNF deficient cultures induced a small but nonsignificant decrease in AMPAR mEPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type neurons, we found chronic lithium treatment of BDNF deficient cultures induced a small but nonsignificant decrease in AMPAR mEPSC amplitudes (Figure 4D) suggesting a requirement for BDNF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "38bbaf01-f235-46d3-8a42-5c326f4c6a95",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C52",
+      "claim": "Chronic lithium's effect on AMPAR mEPSC amplitudes is dependent on BDNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that chronic lithium's effect on AMPAR mEPSC amplitudes is dependent on BDNF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from electrophysiology data comparing BDNF-deficient and control neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "36592a54-c99a-472f-a618-3d5a86bec086",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C53",
+      "claim": "GFP infected neurons treated with lithium had a significant decrease in AMPAR mEPSC amplitude compared to untreated or NaCl treated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous results, GFP infected neurons treated with lithium had a significant decrease in AMPAR mEPSC amplitude compared to untreated or NaCl treated neurons (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ed4f2c69-6420-482d-b960-58d8ed30dede",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C54",
+      "claim": "Ntrk2 fl/fl neurons infected with CreGFP had indistinguishable AMPAR mEPSC amplitudes compared to GFP infected neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found Ntrk2 fl/fl neurons infected with CreGFP, had indistinguishable AMPAR mEPSC amplitudes compared to GFP infected neurons demonstrating that loss of TrkB does not affect this synaptic measure (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "dbc567a6-b4ec-4570-9a7e-361af6381c5a",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C55",
+      "claim": "Loss of TrkB does not affect AMPAR mEPSC amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found Ntrk2 fl/fl neurons infected with CreGFP, had indistinguishable AMPAR mEPSC amplitudes compared to GFP infected neurons demonstrating that loss of TrkB does not affect this synaptic measure (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6f9182d2-7bb9-409d-8f3e-ddd3131a3f0c",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C56",
+      "claim": "Lithium treatment of Ntrk2 deficient neurons did not affect AMPAR mEPSC amplitudes showing a requirement for TrkB in lithium's effect on AMPAR mEPSC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with data from the Bdnf deficient neurons, we found lithium treatment of Ntrk2 deficient neurons did not affect AMPAR mEPSC amplitudes showing a requirement for TrkB in lithium's effect on AMPAR mEPSC responses (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a06e1cbc-30ad-405a-84b1-466bae7bf804",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C57",
+      "claim": "The GFP infected neurons treated with lithium had a significant reduction in AMPAR mEPSC amplitudes compared to untreated neurons showing that the loss of Dnm3 does not impact the effect of lithium on synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP infected neurons treated with lithium had a significant reduction in AMPAR mEPSC amplitudes compared to untreated neurons showing that the loss of Dnm3 does not impact the effect of lithium on synaptic function (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "494cdf7e-8778-4a8d-a2f2-c2b3b4a8a290",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C58",
+      "claim": "Deletion of both Dnm1 and Dnm3 occluded the effect of chronic lithium treatment on AMPAR mEPSC amplitudes in comparison to untreated cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of both Dnm1 and Dnm3 occluded the effect of chronic lithium treatment on AMPAR mEPSC amplitudes in comparison to untreated cultures demonstrating that lithium is potentiating dynamin dependent endocytosis of AMPAR (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "df1b0560-c8f7-439f-b3e3-678c41263c64",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C59",
+      "claim": "Lithium is potentiating dynamin dependent endocytosis of AMPAR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deletion of both Dnm1 and Dnm3 occluded the effect of chronic lithium treatment on AMPAR mEPSC amplitudes in comparison to untreated cultures demonstrating that lithium is potentiating dynamin dependent endocytosis of AMPAR (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from electrophysiology data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "f5f25218-58d7-44ab-8384-dbab04253edd",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C60",
+      "claim": "Chronic lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in neurons recorded with vehicle in the pipette solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous data, chronic lithium treatment resulted in a significant decrease in AMPAR mEPSC amplitudes in neurons recorded with vehicle in the pipette solution (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "97d7d058-a6ff-4c09-b5d9-4d51fed4a423",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C61",
+      "claim": "The presence of Dyngo in the pipette solution rescued the decrease in AMPAR mEPSC amplitudes seen after lithium treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of Dyngo in the pipette solution rescued the decrease in AMPAR mEPSC amplitudes seen after lithium treatment (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiology data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "31564d84-3205-4c7b-8762-b315758d4008",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C62",
+      "claim": "Chronic lithium treatment enhances AMPAR endocytosis to alter synaptic function in a dynamin dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments demonstrate that chronic lithium treatment enhances AMPAR endocytosis to alter synaptic function in a dynamin dependent manner and the loss of dynamin, specifically Dnm1 and Dnm3, can rescue the synaptic deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the dynamin deletion and inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "11536668-1958-401b-b156-9ca34f231b05",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C63",
+      "claim": "The loss of dynamin, specifically Dnm1 and Dnm3, can rescue the synaptic deficits caused by lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments demonstrate that chronic lithium treatment enhances AMPAR endocytosis to alter synaptic function in a dynamin dependent manner and the loss of dynamin, specifically Dnm1 and Dnm3, can rescue the synaptic deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the dynamin deletion and inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "22409f8c-870e-4716-bb91-b28045a53d6d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C64",
+      "claim": "Lithium requires BDNF-TrkB signaling to mediate its antimanic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we report that lithium requires BDNF-TrkB signaling to mediate its antimanic as well as synaptic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the behavioral and electrophysiology experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "02bde248-9bac-4137-abe1-95d465740739",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C65",
+      "claim": "Lithium requires BDNF-TrkB signaling to mediate its synaptic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we report that lithium requires BDNF-TrkB signaling to mediate its antimanic as well as synaptic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the electrophysiology experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a5c6c23e-3d2b-4d32-997b-f9d823446e69",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C66",
+      "claim": "Chronic lithium treatment in vivo results in a sustained increase in BDNF mRNA and protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic lithium treatment in vivo results in a sustained increase in BDNF mRNA and protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Q-PCR and western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "7faa1f86-30d4-4a6f-80b5-2a1c96f0a51b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C67",
+      "claim": "BDNF is required for the antimanic effects of lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while BDNF is required for the antimanic effects of lithium it is not required for the antidepressant effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "325f5e15-618c-4c18-97fe-b0c720187b76",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C68",
+      "claim": "BDNF is not required for the antidepressant effects of lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while BDNF is required for the antimanic effects of lithium it is not required for the antidepressant effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9e5c8fc1-8303-41e8-9411-78e4feb2e7ac",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C69",
+      "claim": "Chronic lithium treatment in vivo caused a significant decrease in I/O curves from hippocampal slices that were dependent on BDNF expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that chronic lithium treatment in vivo caused a significant decrease in I/O curves from hippocampal slices that were dependent on BDNF expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from hippocampal slices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d0dec241-c0d6-4b06-901d-a591622a8c99",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C70",
+      "claim": "Chronic lithium treatment results in a significant synaptic downscaling of AMPAR mEPSC amplitudes that was dependent on BDNF as well as its high affinity receptor, TrkB.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the effect of chronic lithium on synaptic function and found a significant synaptic downscaling of AMPAR mEPSC amplitudes that was dependent on BDNF as well as its high affinity receptor, TrkB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from cultured neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "8963b39b-c5db-43fe-b14a-f1a98cc8977f",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C71",
+      "claim": "The decrease in AMPAR mEPSC amplitudes was due to a decrease in postsynaptic surface expression of GluA1 driven by dynamin-dependent AMPAR endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in AMPAR mEPSC amplitudes was due to a decrease in postsynaptic surface expression of GluA1 driven by dynamin-dependent AMPAR endocytosis, which could be acutely countered by administration of a dynamin inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by surface biotinylation and electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a6f3b9b1-c776-44c0-99a4-b7582e1bf2b7",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C72",
+      "claim": "The decrease in AMPAR mEPSC amplitudes could be acutely countered by administration of a dynamin inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in AMPAR mEPSC amplitudes was due to a decrease in postsynaptic surface expression of GluA1 driven by dynamin-dependent AMPAR endocytosis, which could be acutely countered by administration of a dynamin inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data with Dyngo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "35f35a28-a980-44ca-8a70-bb5be50b204e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C73",
+      "claim": "Lithium can target AMPA receptor endocytosis to alter synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate that lithium can target AMPA receptor endocytosis to alter synaptic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined electrophysiology and biochemistry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "c16e704e-fec2-4516-ac52-028588a9621d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C74",
+      "claim": "Chronic lithium treatment in rodents causes a sustained increase in BDNF mRNA and protein in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that chronic lithium treatment in rodents causes a sustained increase in BDNF mRNA and protein in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Q-PCR and western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "073ab132-00f9-4d98-8d0f-f99a8f2f5b0a",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C75",
+      "claim": "BDNF is required for the antidepressant effects of traditional antidepressants.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that BDNF is required for the antidepressant effects of traditional antidepressants (Adachi et al., 2008; Monteggia et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Adachi et al., 2008; Monteggia et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "742ec1cf-bc97-4e8b-931d-ebfe699e86c7",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C76",
+      "claim": "BDNF is required for the rapid antidepressant effects of ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that BDNF is required for the antidepressant effects of traditional antidepressants (Adachi et al., 2008; Monteggia et al., 2004), as well as rapid antidepressant effects of ketamine (Autry et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Autry et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6776683d-a6fa-4152-981a-9112ad0229b3",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C77",
+      "claim": "The rapid antidepressant action of ketamine requires BDNF and is protein translation dependent, with BDNF protein rapidly increased but then returning to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid antidepressant action of ketamine requires BDNF and is protein translation dependent, with BDNF protein rapidly increased but then returning to baseline (Autry et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Autry et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "e5c0db66-7155-4e22-a51b-1faa48b3b25b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C78",
+      "claim": "Acute manipulation of BDNF protein expression is involved in rapid antidepressant effects while a more chronic increase in BDNF expression is required for antimanic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these may data suggest acute manipulation of BDNF protein expression is involved in rapid antidepressant effects while a more chronic increase in BDNF expression is required for antimanic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the comparison of lithium and ketamine effects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d638848d-7376-474b-8fec-c07b716c65e0",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C79",
+      "claim": "Lithium application significantly decreases AMPAR mEPSC amplitudes in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has consistently shown that lithium application significantly decreases AMPAR mEPSC amplitudes in cultured neurons (Ankolekar and Sikdar, 2015; Du et al., 2004; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ankolekar and Sikdar, 2015; Du et al., 2004; Gray et al., 2003; Seelan et al., 2008; Wei et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "03479778-cc1d-43b9-bd78-bad9993f531e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C80",
+      "claim": "Lithium treatment did not alter AMPA mEPSC frequency demonstrating specificity to the impact of the drug on synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that lithium treatment did not alter AMPA mEPSC frequency demonstrating specificity to the impact of the drug on synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "aeea8b80-47ef-4410-86e4-e1834cb0a311",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C81",
+      "claim": "Lithium produced a significant downward multiplicative synaptic scaling of all AMPAR-mEPSC amplitudes consistent with an impact on post-synaptic homeostatic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis revealed that lithium produced a significant downward multiplicative synaptic scaling of all AMPAR-mEPSC amplitudes consistent with an impact on post-synaptic homeostatic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the rank-order analysis of mEPSC amplitudes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a68245db-92d6-4d7a-ae28-2602560751a2",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C82",
+      "claim": "Lithium decreases GluA1 and GluA2 surface expression in the hippocampus and in cultured cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous in vivo and in vitro studies have shown that lithium decreases GluA1 and GluA2 surface expression in the hippocampus and in cultured cortical neurons (Du et al., 2003, 2008; Wei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Du et al., 2003, 2008; Wei et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "1401735c-2212-4a90-bce7-c6032e664c00",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C83",
+      "claim": "In vivo lithium treatment caused a significant decrease in I/O curves in hippocampal slices.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that in vivo lithium treatment caused a significant decrease in I/O curves in hippocampal slices, which is reminiscent of the decreased AMPA/NMDA ratio previously seen in rats following chronic lithium treatment (Du et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data and a citation to Du et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "47f7ebc8-879f-4e17-b920-f525a39c3d09",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C84",
+      "claim": "Chronic lithium treatment in rats causes a decreased AMPA/NMDA ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that in vivo lithium treatment caused a significant decrease in I/O curves in hippocampal slices, which is reminiscent of the decreased AMPA/NMDA ratio previously seen in rats following chronic lithium treatment (Du et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Du et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "c5b289a2-6623-400d-aa93-c01940f48348",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C85",
+      "claim": "Lithium treatment has been shown to decrease phosphorylation of Thr840 on GluA1, which is associated with decreased AMPAR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium treatment has also been shown to decrease phosphorylation of Thr840 on GluA1, which is associated with decreased AMPAR signaling (Szabo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Szabo et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "b7a295e5-e9c6-4cd3-9b72-f51cf3c28214",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C86",
+      "claim": "Lithium treatment of hippocampal neurons elicits synaptic downscaling due to decreased GluA1 surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we found that lithium treatment of hippocampal neurons elicits synaptic downscaling due to decreased GluA1 surface expression demonstrating a previously unknown effect of lithium on post-synaptic homeostatic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by surface biotinylation and electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9a271624-1575-4ba5-8510-0079336f395c",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C87",
+      "claim": "Lithium treatment demonstrates a previously unknown effect on post-synaptic homeostatic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we found that lithium treatment of hippocampal neurons elicits synaptic downscaling due to decreased GluA1 surface expression demonstrating a previously unknown effect of lithium on post-synaptic homeostatic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data showing synaptic downscaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "b72bae1f-6b1f-4a01-90ab-1fc0d0afbaca",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C88",
+      "claim": "The lithium triggered significant decrease on AMPAR mEPSC amplitudes was occluded in neurons lacking Bdnf.",
+      "claim_type": "EXPLICIT",
+      "source": "The lithium triggered significant decrease on AMPAR mEPSC amplitudes and hippocampal I/O curves was occluded in neurons lacking Bdnf suggesting a requirement in lithium's action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from Bdnf knockout neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ad3b4b5c-1097-45db-8b07-a53f91c57c1e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C89",
+      "claim": "The lithium triggered significant decrease on hippocampal I/O curves was occluded in neurons lacking Bdnf.",
+      "claim_type": "EXPLICIT",
+      "source": "The lithium triggered significant decrease on AMPAR mEPSC amplitudes and hippocampal I/O curves was occluded in neurons lacking Bdnf suggesting a requirement in lithium's action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from Bdnf knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "72c9280a-bf12-4e14-ae24-603f51ebe5ca",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C90",
+      "claim": "Lithium's effect on AMPAR-mEPSC amplitudes was occluded in neurons with a deletion of Ntrk2.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm these data, we examined neurons with a deletion of Ntrk2 and found that lithium's effect on AMPAR-mEPSC amplitudes was also occluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from Ntrk2 knockout neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "76e81144-ecc0-4a5c-95fc-1ebc9a6046c2",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C91",
+      "claim": "The effect of lithium on AMPA mEPSC amplitudes is dependent on BDNF and TrkB.",
+      "claim_type": "EXPLICIT",
+      "source": "While these data demonstrate that the effect of lithium on AMPA mEPSC amplitudes is dependent on BDNF and TrkB, the requirement for TrkB was more robust than BDNF per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of Bdnf and Ntrk2 knockout data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ebaf8fa8-7d0b-4a84-8970-4e9846163d9d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C92",
+      "claim": "The requirement for TrkB in lithium's effect on AMPA mEPSC amplitudes was more robust than BDNF per se.",
+      "claim_type": "EXPLICIT",
+      "source": "While these data demonstrate that the effect of lithium on AMPA mEPSC amplitudes is dependent on BDNF and TrkB, the requirement for TrkB was more robust than BDNF per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of Bdnf and Ntrk2 knockout data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "1f11e58b-e717-47fe-98d2-e8c945fbcc31",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C93",
+      "claim": "Acute increases in BDNF have been shown to increase GluA1 and GluA2 surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, acute increases in BDNF have been shown to increase GluA1 and GluA2 surface expression, whereas chronic increases in BDNF decrease surface expression of GluA1 and GluA2 (Reimers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Reimers et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "15772320-f0d8-4d0d-8f11-e9a7c3a0c7db",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C94",
+      "claim": "Chronic increases in BDNF decrease surface expression of GluA1 and GluA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, acute increases in BDNF have been shown to increase GluA1 and GluA2 surface expression, whereas chronic increases in BDNF decrease surface expression of GluA1 and GluA2 (Reimers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Reimers et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6f14b415-a58e-48da-8953-ca4a692772e1",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C95",
+      "claim": "Chronic lithium treatment through a sustained increase in BDNF expression leads to synaptic downscaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that chronic lithium treatment through a sustained increase in BDNF expression leads to synaptic downscaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data on BDNF expression and synaptic downscaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "5cf3af6f-1b92-4e88-9f07-1faa9e6c2121",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C96",
+      "claim": "Dynamin has been shown to be a key mediator of endocytosis in neuronal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuronal synapses, dynamin has been shown to be a key mediator of endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "e1ad8d08-cf8c-48a9-987f-982ec1e05863",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C97",
+      "claim": "AMPAR internalization/endocytic membrane trafficking of the postsynaptic neuron can be regulated in a dynamin-dependent process to control strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that AMPAR internalization/endocytic membrane trafficking of the postsynaptic neuron can be regulated in a dynamin-dependent process to control strength (Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "7a2b6f3b-aab8-4687-93b1-0800ee8a4609",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C98",
+      "claim": "Lithium regulates dynamin-dependent endocytosis and rapidly removes AMPAR from the postsynaptic membrane altering synaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data show that lithium regulates dynamin-dependent endocytosis and rapidly removes AMPAR from the postsynaptic membrane altering synaptic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the dynamin deletion and inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6703bd02-608e-41da-bf33-8f26b995342b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C99",
+      "claim": "Mania in bipolar patients has been associated with elevated glutamate signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mania in bipolar patients has been associated with elevated glutamate signaling (Lan et al., 2009; Ong\u00fcr et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lan et al., 2009; Ong\u00fcr et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "c62003a8-537b-4aca-a4d5-00068ca37b9c",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C100",
+      "claim": "In post-mortem brain tissue of individuals with bipolar disorder an increase in expression of the vesicular glutamate transporter (VGlut1) mRNA and glutamate have been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In post-mortem brain tissue of individuals with bipolar disorder an increase in expression of the vesicular glutamate transporter (VGlut1) mRNA and glutamate have been observed (Eastwood and Harrison, 2010; Hashimoto et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eastwood and Harrison, 2010; Hashimoto et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "a677fa35-adc6-4445-979f-9dde157cc7b2",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C101",
+      "claim": "Human induced pluripotent stem cell (IPSC) derived neurons from patients with bipolar disorder were shown to have lower action potential thresholds, increased evoked and spontaneous action potentials, and larger action potential amplitudes suggesting they are hyperactive in comparison to neurons derived from healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Human induced pluripotent stem cell (IPSC) derived neurons from patients with bipolar disorder were shown to have lower action potential thresholds, increased evoked and spontaneous action potentials, and larger action potential amplitudes suggesting they are hyperactive in comparison to neurons derived from healthy controls (Mertens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mertens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6a0f97d5-c7d6-433d-9dbd-80a138f8375e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C102",
+      "claim": "Lithium treatment has been shown to reverse the glutamatergic hyperactivity from IPSC derived neurons from patients with bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, lithium treatment has been shown to reverse the glutamatergic hyperactivity from IPSC derived neurons from patients with bipolar disorder (Mertens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mertens et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "c6296f7d-f6eb-4886-a4d0-925785c5deb5",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C103",
+      "claim": "Lithium may alter neuronal activity by regulating G-protein gated inward rectifier K+ (GIRK) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent work has suggested that lithium may alter neuronal activity by regulating G-protein gated inward rectifier K+ (GIRK) channels (Farhy Tselnicker et al., 2014), which may modulate homeostatic scaling of AMPAR responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Farhy Tselnicker et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "3eaf8b44-1a0a-4693-a935-e404f47b1071",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C104",
+      "claim": "GIRK channels may modulate homeostatic scaling of AMPAR responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent work has suggested that lithium may alter neuronal activity by regulating G-protein gated inward rectifier K+ (GIRK) channels (Farhy Tselnicker et al., 2014), which may modulate homeostatic scaling of AMPAR responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "af3f992b-9597-4fc7-870a-2bcff1a9dc40",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C105",
+      "claim": "Lithium triggers dynamin-dependent endocytosis of AMPARs which may be a way to counteract the increased glutamatergic signaling associated with mania.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings showing that lithium triggers dynamin-dependent endocytosis of AMPARs may be a way in which to counteract the increased glutamatergic signaling associated with mania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "9a58cc53-973e-4bbc-b06f-0e28b6fb23db",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C106",
+      "claim": "Lithium specifically impacts excitatory neurotransmission by decreasing AMPAR-mEPSCs through dynamin-dependent endocytosis to reduce surface expression of AMPAR subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that lithium specifically impacts excitatory neurotransmission by decreasing AMPAR-mEPSCs through dynamin-dependent endocytosis to reduce surface expression of AMPAR subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined electrophysiology and biochemistry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "95c2bc74-2124-4889-a14d-09ab6e6cadc0",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C107",
+      "claim": "BDNF is required for the antimanic effects via BDNF-TrkB dependent synaptic downscaling.",
+      "claim_type": "IMPLICIT",
+      "source": "In this study, we show brain-derived neurotrophic factor (BDNF) is required for the antimanic-like effects of lithium but not the antidepressant-like effects in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined behavioral and synaptic data showing BDNF-TrkB dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "1a164792-00c0-4328-81e7-c5c8ab2d76ff",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C108",
+      "claim": "Lithium produced a significant decrease in AMPAR-mediated mEPSC amplitudes due to postsynaptic homeostatic plasticity that was dependent on BDNF and TrkB.",
+      "claim_type": "EXPLICIT",
+      "source": "Lithium produced a significant decrease in \u03b1-amino-3-hydroxyl-5-methyl-4-isoxazolepropionic acid receptor (AMPAR)-mediated miniature excitatory postsynaptic current (mEPSC) amplitudes due to postsynaptic homeostatic plasticity that was dependent on BDNF and its receptor tropomyosin receptor kinase B (TrkB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by electrophysiology data from cultured neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "5abee3d1-98d0-4080-bbd6-1c282cdfad02",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C109",
+      "claim": "The decrease in AMPAR function was due to reduced surface expression of GluA1 subunits through dynamin-dependent endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in AMPAR function was due to reduced surface expression of GluA1 subunits through dynamin-dependent endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by surface biotinylation and electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ec4b6c7e-eacd-469a-a6b5-55c0f7df289b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "claim_id": "C110",
+      "claim": "Enhanced dynamin-dependent endocytosis of AMPARs is a potential mechanism underlying the therapeutic effects of lithium.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings demonstrate a requirement for BDNF in the antimanic action of lithium and identify enhanced dynamin-dependent endocytosis of AMPARs as a potential mechanism underlying the therapeutic effects of lithium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data and is speculative regarding therapeutic mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f03d517a-5426-427b-a6b7-c0e5b82d00fb",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The lithium treatment protocol achieved therapeutic serum concentrations (0.5\u20132 mM, average 1 mM) and produced expected molecular effects including increased phosphorylation of GSK3\u03b2 at serine 9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18\u2013C20 are well-supported by direct measurements (Figure 1B) showing lithium serum concentrations within the therapeutic range and western blot data (Figure 1C) confirming GSK3\u03b2 phosphorylation. The protocol validation is appropriately documented with both citation to therapeutic range (Amdisen, 1980) and experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "e3a10fe3-11ee-4263-b73a-bb22ef7adec6",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chronic lithium treatment (11 days) in mice causes a sustained increase in BDNF mRNA and protein expression in the hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, C66, and C74 are supported by Q-PCR data (Figure 1D) showing significant increase in Bdnf mRNA and western blot data (Figure 1E) showing significant increase in BDNF protein. The measurements are appropriately controlled and statistically significant (p=0.04 for mRNA, p=0.002 for protein).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BDNF is not required for the antidepressant-like effects of lithium in the forced swim test (FST), as both control and Bdnf KO mice show reduced immobility with lithium treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23\u2013C26 and C68 are supported by behavioral data (Figure 2A) showing lithium reduces immobility in both control and Bdnf KO mice. Statistical analysis confirms significant effects in both genotypes (p<0.0001 for both comparisons). This finding is unexpected given prior work with conventional antidepressants but is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d4d48162-9951-4c96-9226-5d6fb7c09fae",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BDNF is required for the antimanic-like effects of lithium, as lithium prevents amphetamine-induced hyperlocomotion in control mice but not in Bdnf KO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27\u2013C33 and C67 are supported by locomotor activity data (Figure 2B) showing lithium blocks amphetamine-induced hyperactivity in control mice but not in Bdnf KO mice. Statistical analysis confirms the genotype-dependent effect (significant interaction and post-hoc comparisons). This represents a key finding distinguishing antimanic from antidepressant mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chronic lithium treatment reduces hippocampal synaptic strength (measured by I/O curves) in control mice but not in Bdnf KO mice, indicating BDNF is required for this synaptic effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34\u2013C39, C69, C83, and C89 are supported by field potential recordings (Figure 2C) showing lithium reduces I/O curve slope by ~20% in control mice but not in Bdnf KO mice. Two-way ANOVA shows significant effects (p=0.032 for genotype, p=0.001 for diet) with appropriate post-hoc comparisons confirming the BDNF-dependent effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chronic lithium treatment produces synaptic downscaling of AMPAR mEPSC amplitudes (26\u201341% decrease) without affecting frequency, and reduces GluA1 surface expression, demonstrating a novel effect on postsynaptic homeostatic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42\u2013C47 and C79\u2013C81, C86\u2013C87 are well-supported by electrophysiology data (Figures 3B\u2013F) showing significant decreases in mEPSC amplitudes with rank-order analysis confirming multiplicative scaling, and surface biotinylation data (Figure 3G) showing reduced GluA1 surface expression. The specificity is confirmed by unchanged mEPSC frequency. Statistical tests are appropriate (Kolmogorov-Smirnov for distributions, ANOVA for means).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lithium's effect on AMPAR mEPSC amplitudes is dependent on BDNF, as the effect is occluded in BDNF-deficient cultured neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48\u2013C52 and C88 are supported by electrophysiology data from Bdnf fl/fl neurons infected with Cre or GFP (Figure 4). Lithium significantly reduces mEPSC amplitudes in GFP-infected neurons (p=0.003) but not in Cre-infected BDNF-deficient neurons (p=0.197). The lentiviral knockout approach is validated by prior publications from the laboratory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "38318a5e-755d-43fc-8acc-d71f40d31755",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lithium's effect on AMPAR mEPSC amplitudes requires TrkB, as the effect is occluded in TrkB-deficient neurons, with the TrkB requirement appearing more robust than BDNF itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53\u2013C56 and C90\u2013C92 are supported by electrophysiology data from Ntrk2 fl/fl neurons (Figure 5). Lithium reduces mEPSC amplitudes in GFP-infected neurons (p=0.002) but not in Cre-infected TrkB-deficient neurons (p>0.999). The observation that TrkB requirement is more robust than BDNF is appropriately noted as potentially due to residual BDNF expression or other TrkB ligands (NT3, NT4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "8e77b940-d532-48dd-b21d-ccea062ef6c5",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lithium's effect on AMPAR mEPSC amplitudes requires dynamin-dependent endocytosis, as deletion of both Dnm1 and Dnm3 occludes the lithium effect, demonstrating that lithium potentiates dynamin-dependent AMPAR endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57\u2013C59 and C62\u2013C63 are supported by electrophysiology data from Dnm1 fl/fl/Dnm3\u2212/\u2212 neurons (Figure 6A\u2013C). Lithium reduces mEPSC amplitudes in GFP-infected neurons (p=0.02) but not in Cre-infected double knockout neurons (p=0.455). The genetic approach is appropriate given that constitutive double knockouts are not viable, and the use of Dnm3\u2212/\u2212 background is justified by prior work showing Dnm3 deletion alone doesn't affect synaptic function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "45b325b7-a5e0-4262-8b6f-b9e402e3f6ff",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Acute pharmacological inhibition of dynamin with Dyngo-4A in the postsynaptic neuron rescues the lithium-induced decrease in AMPAR mEPSC amplitudes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60\u2013C61 and C72 are supported by electrophysiology data with Dyngo-4A in the pipette solution (Figure 6D\u2013F). Lithium reduces mEPSC amplitudes with DMSO vehicle (p<0.0001) but not with Dyngo (p>0.999). This acute rescue experiment complements the genetic deletion experiments and demonstrates the effect is rapidly reversible, supporting a direct role for dynamin-dependent endocytosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "ad1f7e70-529f-445a-b90b-e714734e3e7d",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lithium requires BDNF-TrkB signaling to mediate both its antimanic and synaptic effects, with the synaptic mechanism involving BDNF-TrkB-dependent synaptic downscaling through reduced GluA1 surface expression via dynamin-dependent AMPAR endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64\u2013C65, C70\u2013C71, C73, C98, C106\u2013C109 integrate the behavioral and synaptic findings. The requirement for BDNF-TrkB in antimanic effects is demonstrated by behavioral data (Figure 2B), and the synaptic mechanism is established through multiple converging lines of evidence: electrophysiology showing BDNF-TrkB dependence (Figures 4\u20135), surface biotinylation showing reduced GluA1 (Figure 3G), and dynamin dependence (Figure 6). The mechanistic link between synaptic and behavioral effects is appropriately presented as a coherent model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "545e1f8f-347c-41e8-a188-af84749f94b5",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The differential requirement for BDNF in antimanic versus antidepressant effects may relate to temporal dynamics of BDNF expression, with acute BDNF increases involved in rapid antidepressant effects (as with ketamine) while sustained BDNF increases are required for antimanic effects and synaptic downscaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78 and C93\u2013C95 present a speculative mechanistic framework. While C93\u2013C94 are supported by citation to Reimers et al., 2014 showing differential effects of acute versus chronic BDNF on AMPAR surface expression, C78 is explicitly speculative ('may data suggest'). The hypothesis is plausible given the sustained BDNF increase with lithium versus transient increase with ketamine, but direct experimental evidence comparing temporal dynamics is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    },
+    {
+      "id": "d75fb158-1c00-4b4f-be7d-129bb99438d7",
+      "content_id": "e3cabd83-cc4b-4487-9f55-85831cb033f7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Enhanced dynamin-dependent endocytosis of AMPARs by lithium may counteract elevated glutamatergic signaling associated with mania in bipolar disorder, representing a potential therapeutic mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99\u2013C105 and C110 present a translational hypothesis linking the mechanistic findings to bipolar disorder pathophysiology. While C99\u2013C102 are supported by citations to human studies showing elevated glutamate signaling in mania, C103\u2013C105 and C110 are explicitly speculative ('may be a way'). The hypothesis is reasonable given the demonstrated AMPAR downscaling effect, but direct evidence that this mechanism underlies therapeutic efficacy in bipolar disorder is not provided. This represents an important direction for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:36:49.399142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e34390c-fa90-44da-9e4d-60bef554ab92",
+      "result_id": "f03d517a-5426-427b-a6b7-c0e5b82d00fb"
+    },
+    {
+      "claim_id": "e69977f1-b605-4b4c-bcc1-114543e2cd3d",
+      "result_id": "f03d517a-5426-427b-a6b7-c0e5b82d00fb"
+    },
+    {
+      "claim_id": "b031df23-c93f-47d5-b7d2-ef32d29a14f0",
+      "result_id": "f03d517a-5426-427b-a6b7-c0e5b82d00fb"
+    },
+    {
+      "claim_id": "e8dcd590-1d68-4069-85d2-24ecb22636c4",
+      "result_id": "e3a10fe3-11ee-4263-b73a-bb22ef7adec6"
+    },
+    {
+      "claim_id": "0505f3ae-0f0b-43f8-8345-c5460d95adee",
+      "result_id": "e3a10fe3-11ee-4263-b73a-bb22ef7adec6"
+    },
+    {
+      "claim_id": "a5c6c23e-3d2b-4d32-997b-f9d823446e69",
+      "result_id": "e3a10fe3-11ee-4263-b73a-bb22ef7adec6"
+    },
+    {
+      "claim_id": "c16e704e-fec2-4516-ac52-028588a9621d",
+      "result_id": "e3a10fe3-11ee-4263-b73a-bb22ef7adec6"
+    },
+    {
+      "claim_id": "d517ce9a-89bb-4858-9bc3-7f9b61890232",
+      "result_id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b"
+    },
+    {
+      "claim_id": "13008cf9-0ace-4197-ad90-67626d648606",
+      "result_id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b"
+    },
+    {
+      "claim_id": "75aa1cc5-7246-400f-ad3a-b19fc5e9fc81",
+      "result_id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b"
+    },
+    {
+      "claim_id": "afc6e18b-4f1e-4c1f-a7d6-966f13205c14",
+      "result_id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b"
+    },
+    {
+      "claim_id": "325f5e15-618c-4c18-97fe-b0c720187b76",
+      "result_id": "ce3ee1ac-5cf9-4e63-b653-4f65f80dd23b"
+    },
+    {
+      "claim_id": "c88a25df-77f9-4b88-960d-82fee04caa04",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "97e7e452-925d-4503-9264-300e0052fd77",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "8bd27188-2379-49fa-903d-219b533d4785",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "3500a109-cdc1-4798-a4f2-6341f982be0a",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "915580ca-ca34-4cf7-b03d-dcc3f887b471",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "90a90c91-ba3b-4514-9574-76f7d8011d64",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "9852513b-0782-4d8e-b3b4-16f0d56c1dbe",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "7faa1f86-30d4-4a6f-80b5-2a1c96f0a51b",
+      "result_id": "d4d48162-9951-4c96-9226-5d6fb7c09fae"
+    },
+    {
+      "claim_id": "be155803-5550-4636-8786-2ac82e52a9b8",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "246efa46-5cab-4a44-8feb-d1c941a7ad09",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "a2b09932-7b62-479a-a7a9-e979e7a17b36",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "43dfd649-0161-4778-a80d-0ef2d41d6d3b",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "863cccfb-54da-4aad-b42e-9e00ff6dc71f",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "98928d00-c700-45e5-8521-35c4acf0fd4b",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "9e5c8fc1-8303-41e8-9411-78e4feb2e7ac",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "1401735c-2212-4a90-bce7-c6032e664c00",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "ad3b4b5c-1097-45db-8b07-a53f91c57c1e",
+      "result_id": "b9c3fe88-0e17-46a0-a399-06bf94fb68fb"
+    },
+    {
+      "claim_id": "635831ca-3c68-432f-91c7-8a38c7eb8c00",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "95948003-efce-4f75-a126-464ba75db663",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "463d387e-6071-4d32-ab61-1b66b97edf77",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "f64e6ea8-eae2-4ba9-a590-bf619faaf06d",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "0f420098-76e0-413f-8b26-6f2e85bc514e",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "95d17ba2-6e67-4ec2-b274-76bdf876350a",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "d638848d-7376-474b-8fec-c07b716c65e0",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "03479778-cc1d-43b9-bd78-bad9993f531e",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "aeea8b80-47ef-4410-86e4-e1834cb0a311",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "b7a295e5-e9c6-4cd3-9b72-f51cf3c28214",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "9a271624-1575-4ba5-8510-0079336f395c",
+      "result_id": "6f033ca9-3e4b-4b4f-b3a4-54536937a85e"
+    },
+    {
+      "claim_id": "946e7bd8-5cd0-4ae1-82ad-a28c034c4733",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "0373e65d-7d80-40c5-8fd1-5566dcc2122e",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "d21ea678-6811-40d8-9552-19eff9cad318",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "9ccf29bf-19f0-4254-87a4-77bf979e6ff5",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "38bbaf01-f235-46d3-8a42-5c326f4c6a95",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "b72bae1f-6b1f-4a01-90ab-1fc0d0afbaca",
+      "result_id": "3f053cb9-02ec-4e3e-b55a-2e5ee88ebb05"
+    },
+    {
+      "claim_id": "36592a54-c99a-472f-a618-3d5a86bec086",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "ed4f2c69-6420-482d-b960-58d8ed30dede",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "dbc567a6-b4ec-4570-9a7e-361af6381c5a",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "6f9182d2-7bb9-409d-8f3e-ddd3131a3f0c",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "72c9280a-bf12-4e14-ae24-603f51ebe5ca",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "76e81144-ecc0-4a5c-95fc-1ebc9a6046c2",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "ebaf8fa8-7d0b-4a84-8970-4e9846163d9d",
+      "result_id": "38318a5e-755d-43fc-8acc-d71f40d31755"
+    },
+    {
+      "claim_id": "a06e1cbc-30ad-405a-84b1-466bae7bf804",
+      "result_id": "8e77b940-d532-48dd-b21d-ccea062ef6c5"
+    },
+    {
+      "claim_id": "494cdf7e-8778-4a8d-a2f2-c2b3b4a8a290",
+      "result_id": "8e77b940-d532-48dd-b21d-ccea062ef6c5"
+    },
+    {
+      "claim_id": "df1b0560-c8f7-439f-b3e3-678c41263c64",
+      "result_id": "8e77b940-d532-48dd-b21d-ccea062ef6c5"
+    },
+    {
+      "claim_id": "31564d84-3205-4c7b-8762-b315758d4008",
+      "result_id": "8e77b940-d532-48dd-b21d-ccea062ef6c5"
+    },
+    {
+      "claim_id": "11536668-1958-401b-b156-9ca34f231b05",
+      "result_id": "8e77b940-d532-48dd-b21d-ccea062ef6c5"
+    },
+    {
+      "claim_id": "f5f25218-58d7-44ab-8384-dbab04253edd",
+      "result_id": "45b325b7-a5e0-4262-8b6f-b9e402e3f6ff"
+    },
+    {
+      "claim_id": "97d7d058-a6ff-4c09-b5d9-4d51fed4a423",
+      "result_id": "45b325b7-a5e0-4262-8b6f-b9e402e3f6ff"
+    },
+    {
+      "claim_id": "a6f3b9b1-c776-44c0-99a4-b7582e1bf2b7",
+      "result_id": "45b325b7-a5e0-4262-8b6f-b9e402e3f6ff"
+    },
+    {
+      "claim_id": "22409f8c-870e-4716-bb91-b28045a53d6d",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "02bde248-9bac-4137-abe1-95d465740739",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "d0dec241-c0d6-4b06-901d-a591622a8c99",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "8963b39b-c5db-43fe-b14a-f1a98cc8977f",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "35f35a28-a980-44ca-8a70-bb5be50b204e",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "7a2b6f3b-aab8-4687-93b1-0800ee8a4609",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "9a58cc53-973e-4bbc-b06f-0e28b6fb23db",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "95c2bc74-2124-4889-a14d-09ab6e6cadc0",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "1a164792-00c0-4328-81e7-c5c8ab2d76ff",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "5abee3d1-98d0-4080-bbd6-1c282cdfad02",
+      "result_id": "ad1f7e70-529f-445a-b90b-e714734e3e7d"
+    },
+    {
+      "claim_id": "e5c0db66-7155-4e22-a51b-1faa48b3b25b",
+      "result_id": "545e1f8f-347c-41e8-a188-af84749f94b5"
+    },
+    {
+      "claim_id": "1f11e58b-e717-47fe-98d2-e8c945fbcc31",
+      "result_id": "545e1f8f-347c-41e8-a188-af84749f94b5"
+    },
+    {
+      "claim_id": "15772320-f0d8-4d0d-8f11-e9a7c3a0c7db",
+      "result_id": "545e1f8f-347c-41e8-a188-af84749f94b5"
+    },
+    {
+      "claim_id": "6f14b415-a58e-48da-8953-ca4a692772e1",
+      "result_id": "545e1f8f-347c-41e8-a188-af84749f94b5"
+    },
+    {
+      "claim_id": "6703bd02-608e-41da-bf33-8f26b995342b",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "c62003a8-537b-4aca-a4d5-00068ca37b9c",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "a677fa35-adc6-4445-979f-9dde157cc7b2",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "6a0f97d5-c7d6-433d-9dbd-80a138f8375e",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "c6296f7d-f6eb-4886-a4d0-925785c5deb5",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "3eaf8b44-1a0a-4693-a935-e404f47b1071",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "af3f992b-9597-4fc7-870a-2bcff1a9dc40",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    },
+    {
+      "claim_id": "ec4b6c7e-eacd-469a-a6b5-55c0f7df289b",
+      "result_id": "d75fb158-1c00-4b4f-be7d-129bb99438d7"
+    }
+  ],
+  "comparisons": []
+}

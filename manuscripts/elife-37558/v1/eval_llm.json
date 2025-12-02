@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors successfully determined the cryo-EM structure of the Kv1.2-2.1 paddle chimera channel reconstituted into lipid nanodiscs at resolutions of ~3 \u00c5 for the cytosolic domain and ~4 \u00c5 for the transmembrane domain. This required optimization of nanodisc assembly conditions, protein purification protocols, and cryo-EM data collection strategies including the use of gold grids to reduce beam-induced movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims collectively describe a complete and internally consistent workflow from protein expression through structure determination. The reported resolutions are supported by FSC curves (C43, C47, C48), the optimization steps are documented with experimental data (C35, C36, C39, C114), and the functional validation of the purified protein is shown (C37). The methodological details are sufficiently described to support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The cryo-EM structure in lipid nanodiscs is highly similar to the previously determined X-ray crystal structure in detergent, with only subtle differences including a slight rotation of the cytosolic domain (likely due to absence of crystal packing contacts) and minimal changes in the transmembrane domain including the selectivity filter region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison is well-documented with multiple lines of evidence (C53, C59, C61-C63) showing minimal differences between the two structures. The interpretation that the X-ray structure represents a native conformation (C60, C64) is reasonable given the similarity. The observed differences in the cytosolic domain are appropriately attributed to crystal packing effects (C54, C55, C66) with supporting evidence from crystal structure analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C73"
+    ],
+    "result": "The structural similarity between the detergent-solubilized X-ray structure and the lipid nanodisc cryo-EM structure indicates that large conformational differences between these environments are unlikely, and any structural changes associated with C-type inactivation would be small (<2 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C9, C73) logically follows from the demonstrated structural similarity (C8, C53, C59). The inference that C-type inactivation involves small structural changes is reasonable given the lack of large differences observed, though it remains an inference rather than direct observation of the inactivated state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The high-resolution cytosolic domain map (~3 \u00c5 with local resolution up to ~2.5 \u00c5) allowed visualization of side chain densities, the NADP+ cofactor bound to the \u03b2 subunit, and water molecules in high-resolution regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations (C50-C52) are consistent with the reported resolution and are supported by figure references showing the density quality. The ability to resolve these features validates the quality of the structure determination and is appropriate for the reported resolution range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The cryo-EM structure shows weak sidechain density for D375 compared to nearby residues, raising the possibility that the critical hydrogen bond between D375 and W362 (known to stabilize the conducting state) may be broken, potentially representing a C-type inactivated state. However, the structure is also potentially consistent with the hydrogen bond being present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the weak density for D375 is an observation (C85), the interpretation that this indicates a broken hydrogen bond (C86) is speculative given the resolution limitations acknowledged by the authors. The extensive background on the functional importance of this hydrogen bond (C75-C81) is well-established, but the cryo-EM data at ~4 \u00c5 resolution in the transmembrane domain is insufficient to definitively determine hydrogen bonding states. The authors appropriately present this as uncertain (C74, C83, C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The cryo-EM maps show substoichiometric ion occupancy in the selectivity filter with variable occupancy patterns in different data subsets, and absence of density at the S2 position in the final map, contrasting with full occupancy observed in the X-ray structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of variable ion densities (C87-C89) is documented, but the authors acknowledge potential artifacts including resolution variability and possible artifactual densities along the symmetry axis. While the difference from the X-ray structure (C90) is clear, the interpretation that this represents perturbed ion interactions in the lipid environment (C91) versus technical artifacts cannot be definitively determined from the presented data. The variability across different processing subsets (C88) raises concerns about the reliability of these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C109"
+    ],
+    "result": "The Kv chimera functionally C-type inactivates at 0 mV when reconstituted into lipid membranes, suggesting that the membrane environment favors the C-type inactivated state without requiring mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional behavior is supported by both cited literature (C26) and the authors' own bilayer recordings. This provides important context for interpreting the structural findings, as it establishes that the channel should predominantly be in an inactivated state under the conditions used for structure determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Comparison with KcsA and other Kv channel structures suggests that multiple distinct structural mechanisms may underlie inactivation in different channels and mutants, and that the detailed structural mechanism may not be generalizable across K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis (C105-C107) is well-supported by the extensive comparison of structural and functional data from multiple studies (C92-C104). The authors appropriately acknowledge the complexity and variability in inactivation mechanisms across different channels and mutants, and avoid overgeneralizing from their findings. The observation that the critical hydrogen bond is preserved in KcsA structures but has different functional effects (C103, C104) supports the conclusion of mechanistic diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C110"
+    ],
+    "result": "Future work should aim to achieve higher resolution structures of the Kv chimera transmembrane domain in membranes and potentially capture other functional states including resting voltage sensors and closed pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable suggestions for future work (C108, C110) based on the current study's achievements and limitations. The authors appropriately identify the need for higher resolution to definitively resolve questions about C-type inactivation mechanisms, and recognize the broader potential of the nanodisc approach for studying other channel states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript provides extensive background on Kv channel function, inactivation mechanisms, and prior structural studies, establishing the context and motivation for determining a structure in a lipid bilayer environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge in the field, supported by appropriate citations. They provide essential context for understanding the significance of the current work, particularly the gap in knowledge regarding structures in native lipid environments (C4) and the controversy surrounding inactivation mechanisms (C20, C22, C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Prior to this study, X-ray structures of Kv channels appeared to capture an open state despite functional evidence suggesting a C-type inactivated state should predominate, and no structures of voltage-activated ion channels in lipid bilayers had been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3, C4) accurately describe the state of the field and the key knowledge gap that motivated this study. The apparent discrepancy between structural and functional states (C3) is well-documented in the literature and provides strong justification for the current work.",
+    "result_type": "MINOR"
+  }
+]

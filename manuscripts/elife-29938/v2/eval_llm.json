@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "DynaMO computational analysis identified 41 transcription factors specifically linked to the three phases of the yeast metabolic cycle (YMC), with functions consistent with each phase's transcriptional program. Validation experiments showed significantly higher frequency of disrupted YMC oscillation in candidate TFs compared to randomly selected controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C25, C26, and C27 provide converging computational and experimental evidence. The DynaMO algorithm identified phase-specific TFs based on H3K9ac ChIP-seq clustering, GO term analysis confirmed functional consistency, and experimental validation of mutants demonstrated significantly higher disruption rates in predicted TFs versus controls, supporting the computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Msn2 and Msn4 function as master transcriptional regulators controlling the transition from quiescence (RC phase) to growth (OX phase) in the YMC. Deletion of these factors causes a lengthened RC phase phenotype with progressively longer delays, while OX and RB phases remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, C28, C29, and C31 collectively demonstrate the regulatory role through multiple lines of evidence: the unusual lengthened RC phenotype in mutants (C28), dose-dependent severity in single vs double mutants supporting redundancy (C29), and normal timing of other phases (C31). The phenotype is specific and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C47",
+      "C48"
+    ],
+    "result": "Msn2/4 control the transition from RC to OX phase by regulating acetyl-CoA accumulation. Mutant cells show dramatic delays in acetyl-CoA accumulation during the RC phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C47, and C48 are supported by direct acetyl-CoA measurements showing delayed accumulation in msn2\u0394msn4\u0394 mutants (Figure 3C). The inference that Msn2/4 control the transition through acetyl-CoA regulation (C48) is reasonable given the correlation between delayed acetyl-CoA accumulation and lengthened RC phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Msn2 and Msn4 show increased genome-wide binding during the RC/quiescence phase, share significant overlap in binding sites and target genes, and their targets are enriched for RC phase genes and carbohydrate metabolism genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by ChIP-seq data across six time points (Figures 2C-F). The temporal binding patterns, overlap analysis, and GO term enrichment provide consistent evidence for RC phase-specific function and targeting of carbohydrate metabolism genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C58",
+      "C85"
+    ],
+    "result": "Msn2/4 directly bind and regulate glycolytic genes. DynaMO predicted 20 of 33 glycolytic genes as Msn2/4 targets, ChIP-seq confirmed 27 of 33 genes are bound, with statistically significant enrichment (p<1\u00d710\u207b\u2075 for predictions, p<1\u00d710\u207b\u2077 for motif overlap). These genes show dramatic reduction in expression in msn2\u0394msn4\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C56, C58, and C85 provide strong converging evidence from computational prediction, ChIP-seq validation, statistical analysis, and functional RNA-seq/RT-qPCR data. The statistical significance is robust, and the functional consequence (reduced expression in mutants) confirms regulatory activity. Multiple independent lines of evidence support direct regulation of glycolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C78",
+      "C79"
+    ],
+    "result": "Msn2/4 do not significantly regulate fatty acid oxidation. Only 2 of 11 fatty acid oxidation genes are bound by Msn2/4, and key genes FAA1 and POX1 show no significant expression changes in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C79 are supported by ChIP-seq showing minimal binding to fatty acid oxidation genes and RNA-seq showing no significant expression changes for FAA1 and POX1. This negative result helps establish specificity of Msn2/4 regulation for glycolysis rather than fatty acid oxidation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Acetate addition can efficiently stimulate the OX phase in msn2\u0394 and msn2\u0394msn4\u0394 mutants regardless of when during the RC phase it is added, suggesting Msn2/4 may be involved in nutrient signaling based on acetyl-CoA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by acetate addition experiments (Figure 3A) showing rescue of the lengthened RC phenotype. The inference about nutrient signaling (C46) is reasonable but speculative. The data clearly show acetate bypasses the Msn2/4 requirement, supporting acetyl-CoA as the limiting factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Msn2/4 control the RC to OX transition by regulating intracellular acetyl-CoA levels through glycolysis, potentially targeting the nucleo-cytosolic pool specifically. The pyruvate dehydrogenase complex (mitochondrial) is not targeted, while multiple cytosolic enzymes are.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 integrate multiple lines of evidence. C59 is a well-supported inference from the glycolysis regulation and acetyl-CoA phenotypes. C60-C61 are supported by ChIP-seq data. C62 is speculative but reasonable given the differential targeting of cytosolic vs mitochondrial enzymes. The lack of direct measurement of subcellular acetyl-CoA pools is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RNA-seq analysis identified 366 up-regulated and 426 down-regulated genes in msn2\u0394msn4\u0394 mutants. The majority (62.2%) of down-regulated genes are RC phase genes, with changes primarily observed in the RC phase. Down-regulated genes are enriched for carbohydrate metabolism and stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by comprehensive RNA-seq analysis with appropriate differential expression methods (DESeq, adjusted p<0.01). The phase distribution analysis and GO term enrichment are consistent with the proposed regulatory role. The data quality and analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Integration of ChIP-seq and RNA-seq identified 'core' Msn2/4 targets: 112 repressed genes and 136 activated genes (81 of which are RC phase genes). Core targets include carbohydrate metabolism genes and stress response genes (heat-shock proteins, oxidative stress response genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C86-C87 are supported by integrated analysis of ChIP-seq binding and RNA-seq differential expression. The temporal correlation between binding and activation (C83) strengthens the case for direct regulation. The dual role in metabolism and stress response is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "When stationary phase cells are inoculated into fresh medium, msn2\u0394msn4\u0394 mutants show delayed growth (more pronounced in galactose than glucose), lower saturation titer, but normal survival rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by growth curve data (Figure 3\u2014figure supplement 3A). The galactose-specific delay (C67) is explained by Msn2/4 regulation of galactose metabolism genes. These results extend the YMC findings to batch culture conditions, though the effect is less dramatic than in continuous culture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Msn2/4 exhibit a dual role in activating both carbohydrate metabolism genes and stress response genes, suggesting parallel mechanisms for responding to nutrient limitation: maintaining survival through stress responses while preparing for growth through metabolic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C91-C93 represent a synthesis of the ChIP-seq, RNA-seq, and functional data. The dual role is well-supported by the core target analysis showing both gene classes. The mechanistic interpretation (C91-C93) is reasonable inference from the data, though somewhat speculative about evolutionary/functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Comparison of YMC with nutrient starvation/limitation conditions shows that OX/growth and cell cycle genes are turned off under nutrient scarcity, while RC genes (including glycolytic genes) and mitochondrial genes are elevated, reflecting similarity between RC phase and other quiescent states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96, C99-C101 are supported by systematic comparison with published nutrient limitation datasets (Klosinska et al., 2011). The analysis appropriately identifies commonalities and differences between YMC RC phase and other quiescent states. The elevation of glycolytic genes under starvation supports their importance in quiescence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C104",
+      "C105",
+      "C110",
+      "C115"
+    ],
+    "result": "The study suggests that starvation-induced stress response factors prime quiescent cells to reenter growth through glycolysis when nutrients are limited, representing a secondary mechanism for stress response that remodels metabolism while maintaining survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C104, C105, C110, and C115 represent speculative interpretations and broader implications of the findings. While the underlying data are solid, these claims extend beyond what is directly demonstrated. The 'priming' mechanism is inferred but not directly tested. The claims are reasonable hypotheses but require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors speculate that Msn2/4-dependent glycolysis in yeast may parallel MYC-dependent glycolysis in mammalian cancers, suggesting TF-dependent activation of glycolysis under nutrient limitation could be a prevalent biological motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C118, and C119 are highly speculative cross-species comparisons. While MYC does regulate glycolysis (C65, C118 supported by citation), the functional equivalence to Msn2/4 is not demonstrated. The comparison is interesting but requires experimental validation. The speculation is clearly labeled as such in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C32",
+      "C35",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C63",
+      "C64",
+      "C65",
+      "C88",
+      "C89",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C113"
+    ],
+    "result": "Background knowledge claims about quiescence, YMC phases, acetyl-CoA function, Msn2/4 stress response roles, and TOR signaling are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19, C21, C32, C35, C40-C43, C63-C65, C88-C89, C102-C103, C106-C108, and C113 are background knowledge supported by appropriate citations to established literature. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C34",
+      "C69",
+      "C70"
+    ],
+    "result": "MSN4 mRNA is increased in RC phase while MSN2 is constant. Deletion of MSN2/MSN4 does not affect survival but decreases stationary cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C69, and C70 are supported by gene expression data (Figure 2B) and cell size/survival measurements (Figure 3\u2014figure supplement 3B-C). These are straightforward observational results with appropriate measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Msn2/4 binding extends into coding regions of some glycolytic genes. The coding regions of glycolytic genes are more conserved than coding regions of other genes and promoter regions of glycolytic genes in Saccharomyces strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by ChIP-seq data (Figure 3D, Figure 3\u2014figure supplement 1A) and conservation analysis (Figure 3\u2014figure supplement 1B). The coding region binding is unusual and noted as potentially suggesting unknown regulatory mechanisms. The conservation analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Msn2/4 may facilitate metabolism of trehalose and glycogen during exit from quiescence by activating NTH1, ATH1, GPH1, PGM1, and PGM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by ChIP-seq and RNA-seq data showing Msn2/4 binding and regulation of these genes. The functional interpretation is reasonable given established roles of these genes in storage carbohydrate metabolism (C89), though direct demonstration of facilitated metabolism is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C31"
+    ],
+    "result": "Yeast cells lacking Msn2/4 exhibit delayed reentry into growth from quiescence, with the RC/quiescence phase becoming progressively longer while OX/growth and RB/proliferation phases remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, and C31 are directly supported by YMC oscillation data (Figure 2A) showing the unusual lengthened RC phenotype. The specificity to RC phase while other phases remain normal is clearly demonstrated and is a key phenotypic observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C33"
+    ],
+    "result": "H3K9ac modification correlates with transcription activity. Three temporal binding patterns were captured in YMC consistent with the three metabolic phases. Msn2/Msn4 motif sites were enriched in predicted RC phase binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C33 are supported by H3K9ac ChIP-seq clustering analysis (Figure 1B) and motif enrichment analysis. C24 is established knowledge. The temporal patterns and motif enrichment provide the basis for focusing on Msn2/4 as RC phase regulators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Some genes are completely turned off in msn2\u0394 single mutant while others show reduced expression in single mutant and complete elimination in double mutant, consistent with previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by citation to Estruch, 2000 and is consistent with the observed partial redundancy between Msn2 and Msn4 (C29). This explains the dose-dependent phenotypes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The three clusters of gene expression patterns (OX, RB, RC) persist in msn2\u0394msn4\u0394 mutant cells, but many RC genes are down-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by RNA-seq analysis (Figure 4A). The persistence of phase structure indicates Msn2/4 are not required for the basic oscillation but specifically affect RC gene expression levels, consistent with their regulatory role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Genes encoding mitochondrial ribosome components are induced at the beginning of glucose starvation or phosphate limitation but not other conditions, while translation factor genes are modestly activated across all nutrient-scarce conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by gene expression analysis comparing YMC with various nutrient limitation conditions (Figure 4\u2014figure supplement 1B). This represents a detailed characterization of mitochondrial gene responses to different nutrient limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The regulatory mode of Msn2/4 is not obvious in rich medium (probably because acetyl-CoA is sufficient) but becomes important under nutrient limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are speculative inferences about why the Msn2/4 phenotype is more pronounced under nutrient limitation. While consistent with the data showing stronger effects in YMC and galactose medium, the mechanistic explanation about acetyl-CoA sufficiency is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Many stress response TFs (Gis1, Mig1/2/3, Msn2/4) that target metabolic enzymes were identified in the RC/quiescent phase by DynaMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by DynaMO analysis (Figure 1) identifying multiple stress response TFs in cluster 3 (RC phase). This suggests a broader pattern of stress TF involvement in metabolic regulation during quiescence, beyond just Msn2/4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "In budding yeast, Msn2 and Msn4 function as key transcription factors that activate genes encoding glycolytic enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is the central conclusion supported by the integrated ChIP-seq and RNA-seq data (C50-C52, C58, C85). This represents the primary novel finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Cancers are associated with robust glycolysis and survive under nutrient-limited conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is established knowledge supported by citation to Comerford et al., 2014. This provides context for the speculative comparison to yeast but is not a novel finding.",
+    "result_type": "MINOR"
+  }
+]

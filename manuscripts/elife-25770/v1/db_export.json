@@ -1,0 +1,2519 @@
+{
+  "submission": {
+    "id": "cdde59c1-4e82-4cfa-ba00-36f38057fee2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:41:47.827434Z",
+    "updated_at": "2025-12-01T19:41:47.827434Z"
+  },
+  "content": [
+    {
+      "id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "submission_id": "cdde59c1-4e82-4cfa-ba00-36f38057fee2",
+      "content_type": "manuscript",
+      "content_text": "# Antagonistic modulation of NPY/AgRP and POMC neurons in the arcuate nucleus by noradrenalin\n\n## Authors\n\n- Lars Paeger<sup>1</sup> ([ORCID: 0000-0001-8716-3483](https://orcid.org/0000-0001-8716-3483))\n- Ismene Karakasilioti<sup>2</sup>\n- Janine Altm\u00fcller<sup>4</sup>\n- Peter Frommolt<sup>7</sup>\n- Jens Br\u00fcning<sup>2</sup>\n- Peter Kloppenburg<sup>1</sup> ([ORCID: 0000-0002-4554-404X](https://orcid.org/0000-0002-4554-404X)) \u2020\n\n### Affiliations\n\n1. Biocenter, Institute for Zoology University of Cologne Cologne Germany\n2. Excellence Cluster on Cellular Stress Responses in Aging Associated Diseases Cologne Germany\n3. Max Planck Institute for Metabolism Research Cologne Germany\n4. Center of Molecular Medicine Cologne University of Cologne Cologne Germany\n5. Center for Endocrinology, Diabetes and Preventive Medicine University Hospital Cologne Cologne Germany\n6. Cologne Center for Genomics University of Cologne Cologne Germany\n7. Bioinformatics Facility Excellence Cluster on Cellular Stress Responses in Aging Associated Diseases Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the arcuate nucleus of the hypothalamus (ARH) satiety signaling (anorexigenic) pro-opiomelanocortin (POMC)-expressing and hunger signaling (orexigenic) agouti-related peptide (AgRP)-expressing neurons are key components of the neuronal circuits that control food intake and energy homeostasis. Here, we assessed whether the catecholamine noradrenalin directly modulates the activity of these neurons in mice. Perforated patch clamp recordings showed that noradrenalin changes the activity of these functionally antagonistic neurons in opposite ways, increasing the activity of the orexigenic NPY/AgRP neurons and decreasing the activity of the anorexigenic POMC neurons. Cell type-specific transcriptomics and pharmacological experiments revealed that the opposing effect on these neurons is mediated by the activation of excitatory \u03b11A - and \u03b2- adrenergic receptors in NPY/AgRP neurons, while POMC neurons are inhibited via \u03b12A \u2013 adrenergic receptors. Thus, the coordinated differential modulation of the key hypothalamic neurons in control of energy homeostasis assigns noradrenalin an important role to promote feeding.\n\n## Introduction\n\nSubstantial progress has been made identifying central neuronal circuits that are crucial for controlling feeding behavior and energy homeostasis. Understanding the cellular and molecular mechanisms mediating information processing in neuronal circuits that regulate energy homeostasis is essential to devise specific pharmacological strategies, which assist obese patients in starting and maintaining a program of weight loss with no or minimized side effects on other neuronal systems (Gouni-Berthold et al., 2013; Holes-Lewis et al., 2013; Misra, 2013). Important microcircuits in control of energy balance are localized in the arcuate nucleus of the hypothalamus (ARH), which contains two main neuron populations with antagonistic functions: Neuropeptide Y and agouti-related peptide (NPY/AgRP) co-expressing neurons signaling hunger, promoting food intake, and pro-opiomelanocortin (POMC) - expressing neurons which signal satiety (Sohn et al., 2013; Varela and Horvath, 2012).\n\nMany important fuel-sensing endocrine and metabolic factors, such as insulin, leptin, glucose, serotonin, dopamine, free fatty acids and uridine diphosphate (Gao and Horvath, 2007; Jo et al., 2009; Jordan et al., 2010; Sohn et al., 2011; Steculorum et al., 2015; Varela and Horvath, 2012; Zhang and van den Pol, 2016) have been identified and various immediate actions of these modulators and nutrient components on the POMC and AgRP neurons are well understood (Belgardt et al., 2008; Claret et al., 2007; Jo et al., 2009; Parton et al., 2007; Spanswick et al., 1997, 2000). However, the effect of the catecholamine noradrenalin (NA) on the ARH is not well defined. Noradrenalin is associated with a number of important CNS functions (Szabadi, 2013) including energy homeostasis and food intake (Commins et al., 1999; Ste Marie et al., 2005; Thomas and Palmiter, 1997; Wellman, 2005, 2000). Potentially, NA could be a direct modulator of the energy homeostasis-regulatory POMC- and AgRP neurons in the ARH, since noradrenergic projections from the hindbrain (A1, A2 noradrenergic cell groups) and the locus coeruleus (LC) to the ARH have been described in rats (Fraley, 2006; Fraley and Ritter, 2003; Yoon et al., 2013) and manipulation of the noradrenergic system in the hypothalamus has been found to modify feeding behavior and food intake. Impairment of the dorsal or the ventral noradrenergic bundle, which contain efferent projections from the LC to the forebrain, caused hyper- or hypophagia, respectively (Ahlskog and Hoebel, 1973; Hoebel et al., 1989). In line with these lesion experiments, local NA injections into defined hypothalamus regions either elicits or inhibits feeding in rodents (Booth, 1967; Leibowitz, 1978). These findings not only demonstrate noradrenergic modulation of food intake, but also indicate that the NA effect on feeding behavior is versatile and site-specific. Additional evidence that NA is associated with the regulation of the homeostatic system in the ARH came from extracellular recordings of unidentified ARH neurons in rats, which responded to NA application (Kang et al., 2000). Furthermore, NA increases the expression of Agrp and Npy mRNA in the rat ARH in response to glucoprivation (Fraley and Ritter, 2003). This effect is abolished if NA terminals in the ARH are eliminated by the injection of saporin-conjugated anti-dopamine-\u03b2-hydroxylase (anti-d\u03b2h), a selective NA immunotoxin. Specifically, the immunotoxin also eliminated a large number of neurons in the ventrolateral medulla (A1/C1 cell groups), which have been identified as mediators of glucoprivic feeding. Together, these findings provide strong evidence that NA modulates eating behavior by changing functional properties of ARH neurons.\n\nRecent work by the Bouret lab provides a plausible hypothesis in regard to the question in which behavioral context the noradrenergic LC projections into the ARH play a key role and what response they facilitate. Based on in vivo electrophysiological recordings in primates, it is hypothesized that the LC plays a key role in mobilizing the required energy to face anticipated physical challenges, such as to obtain rewards (Bouret and Richmond, 2015; Varazzani et al., 2015). In this model, the LC activity is directly related to the energetic need that is required to master the challenge. NA release in the ARH might then promote compensatory energy intake.\n\nOn the cellular level NA action can be mediated by a variety of ARs that can inhibit or excite neurons. NA and adrenalin activate three major classes of G protein-coupled receptors (GPCRs): \u03b11-, \u03b12- and \u03b2-ARs (Hein, 2006). These receptor types can be further subdivided in a number of different isoforms. The intracellular signaling cascades of ARs are well investigated. While excitatory \u03b11-ARs are coupled to Gq/11 and mediate an increase in intracellular Ca2+ levels and closure of G protein-coupled inwardly rectifying potassium channels (GIRKs), inhibitory \u03b12-ARs couple to Gi/o leading to inhibition of voltage-gated Ca2+ channels (VGCCs) and opening of GIRKs. \u03b2-ARs mediate excitation via activation of Gs proteins and subsequent elevation of internal Ca2+ concentrations and opening of VGCCs (Marzo et al., 2009).\n\nIn this study, we assessed if NA can directly modulate orexigenic NPY/AgRP and anorexigenic POMC neurons, which are key components of the control circuits in ARH that regulate food intake and energy homeostasis. In electrophysiological recordings, NA had clear opposite effects on these neurons, increasing the activity of NPY/AgRP neurons and inhibiting POMC neurons. Cell type-specific transcriptomics and pharmacological experiments revealed that the activation of NPY/AgRP neurons is predominantly mediated by \u03b11A-ARs, while POMC neurons are inhibited via \u03b12A-ARs. Collectively, our data indicate a strong orexigenic influence of NA on the ARH circuitry that controls energy balance.\n\n## Results\n\nHere we asked, if and how NA directly modulates the activity of NPY/AgRP and POMC expressing neurons of the ARH. This question was addressed in three steps. First, electrophysiological recordings were performed to analyze the modulatory effect of NA on these neurons. Second, we used cell type-specific transcriptomics to build an inventory of adrenergic receptors that are expressed in NPY/AgRP and POMC neurons and potentially could mediate the modulation of these neurons. Third, pharmacological tools were used to test which adrenergic receptors are functionally expressed and how they contribute to the net modulatory effect of NA.\n\n### Noradrenalin modulates electrophysiological activity differentially in NPY/AgRP and POMC neurons\n\nIn the first set of experiments, we probed if NA modulates the electrophysiological activity of NPY/AgRP and POMC neurons. To address this question directly, we analyzed identified NPY/AgRP-GFP and POMC-GFP neurons of the ARH in acute brain slices of adult mice. Recordings were performed in the perforated patch clamp configuration to minimize effects on intracellular signaling pathways.\n\nAs described previously, most NPY/AgRP and POMC neurons were spontaneously active under control conditions (NPY/AgRP neurons: (Baver et al., 2014; Steculorum et al., 2015; Tsaousidou et al., 2014; Wei et al., 2015); POMC neurons: (Ernst et al., 2009; Koch et al., 2015; Newton et al., 2013; Plum et al., 2006; Zhang and van den Pol, 2013). Bath-applied 10 \u00b5M NA had clear opposite effects on these functionally antagonistic neuron types. NA depolarized orexigenic NPY/AgRP neurons and increased their action potential frequency from 2.0\u00a0\u00b1\u00a00.9 Hz to 5.0\u00a0\u00b1\u00a01.0 Hz (Figure 1A,B; NPY/AgRP neurons, Wilcoxon matched pairs signed rank test, n\u00a0=\u00a08, p=0.0012). In contrast, NA clearly hyperpolarized anorexigenic POMC neurons and drastically reduced or even abolished spontaneous generation of action potentials from 3.5\u00a0\u00b1\u00a01.1 to 0.7\u00a0\u00b1\u00a00.7 Hz (Figure 1A,B; POMC neurons, Wilcoxon matched pairs signed rank test, n\u00a0=\u00a08, p=0.0156). In both neuron types, the NA effect had a rapid onset and was readily reversible. To better define and understand the cause-effect relationship of the NA modulation, we measured concentration-response curves for both neuron types.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig1-v1.jpg)\n\n**Figure 1.:** NA (10 \u00b5M) excited orexigenic NPY/AgRP neurons and inhibited anorexigenic POMC neurons. Original recordings (A) and averaged responses (B) of NPY/AgRP (n\u00a0=\u00a08) and POMC neurons (n\u00a0=\u00a08) during NA application. The mean response is expressed as change in action potential frequency. The boxplots show the absolute change in action potential frequency for both neuron populations. **p<0.01, Wilcoxon matched pairs signed ranks test.\n\n### NPY/AgRP neurons, NA concentration-response relation\n\nNA depolarized the membrane potential and increased the action potential frequency starting at a concentration of 100 nM (Figure 2A). The maximal responses were observed at 10 \u00b5M where NA increased the average firing frequency from 2.2\u00a0\u00b1\u00a00.8 Hz to 4.7\u00a0\u00b1\u00a00.8 Hz (Figure 2B; paired t-test, n\u00a0=\u00a08, p<0.0001) and depolarized the membrane by 5.1\u00a0\u00b1\u00a01.0 mV (Figure 2C; paired t-test, n\u00a0=\u00a08, p=0.0011). The normalized concentration-response relations for the membrane depolarization and increase in firing frequency were well fit with a sigmoidal relation (Equation 1). The concentration-response relations had EC50s of 1.9 \u00b5M (1.1\u20133.2 \u00b5M; n\u00a0=\u00a08) and 1.5 \u00b5M (0.8\u20132.8 \u00b5M; n\u00a0=\u00a08), respectively. The effective concentration range is in line with previous studies that analyzed NA modulation in other cell types (Hayar et al., 1997). To rule out that the observed NA effect is caused by secondary modulation, which is mediated by neurons that are presynaptic to NPY/AgRP neurons, we analyzed the NA effect on NPY/AgRP neurons in which GABAergic and glutamatergic input was pharmacologically blocked. Synaptically isolated NPY/AgRP neurons responded similarly to the application of NA as without synaptic blockers (Figure 2D,E), demonstrating that the excitatory NA effect is mediated by cell-intrinsic ARs and the applied GABA and glutamate antagonists do not directly interfere with the AR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig2-v1.jpg)\n\n**Figure 2.:** (A) Recording of a NPY/AgRP neuron demonstrating the effect of increasing NA concentrations. (B) and (C) Concentration - response relations showing the NA effect on action potential frequency (B) and membrane potential (C). The curves fit to a sigmoidal relation (Equation 1). NA had an EC50 of 1.9 \u00b5M (1.1\u20133.2 \u00b5M; n\u00a0=\u00a08) for the AP frequency and 1.5 \u00b5M (0.8\u20132.8 \u00b5M; n\u00a0=\u00a08) for the membrane potential, respectively. (D) and (E) The NA modulation of NPY/AgRP neurons is direct and not dependent on synaptic input. Original recording (D) and averaged effect on action potential frequency (E) showing that the NA effect on NPY/AgRP neurons is not changed when glutamatergic and GABAergic synaptic input is blocked. Experiments in (E) were performed consecutively with the same set of neurons (n\u00a0=\u00a08). Control 1 and control two refers to the different starting conditions, that\u00a0is preincubation with or without synaptic blockers. ***p<0.001, one-way ANOVA with post hoc Tukey analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Original recording (A) of a NPY/AgRP neuron during two sequential applications of NA (10 \u00b5M) and averaged NA responses (B) on action potential frequency showing that there is no desensitization of the first application prior to the second treatment. n values are given in brackets. **p<0.01; one-way ANOVA with post hoc Tukey analysis.\n\n### POMC neurons, NA concentration-response relation\n\n10 \u00b5M NA clearly inhibited POMC neurons (Figure 1A\u2013C). In neurons with low control action potential frequencies, this often caused an all or nothing effect. Therefore, we used the membrane potential and membrane conductance densities to quantify the NA effect and to establish concentration-response relations.\n\nThe NA inhibition started at 100 nM and the maximal inhibitory effect was reached at 10 \u00b5M where NA hyperpolarized the membrane potential by 18.6\u00a0\u00b1\u00a03.2 mV (Figure 3B; paired t-test, n\u00a0=\u00a08; p=0.0007) and increased the conductance from 647\u00a0\u00b1\u00a0106 pS to 1546\u00a0\u00b1\u00a0266 pS (Figure 3C; paired t-test, n\u00a0=\u00a08; p=0.0029). The NA effect developed rapidly and was reversible. However, after application of high concentration, the wash out of NA induced a slow, sustained (~10 min) rebound excitation. NA concentrations higher than 10 \u00b5M did not further increase the effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig3-v1.jpg)\n\n**Figure 3.:** (A) Recording of a POMC neuron demonstrating the effect of increasing NA concentrations. (B) and (C) Concentration - response relations showing the NA effect on membrane potential (B) and conductance density (C). The curves are fits to a sigmoidal relation (Equation 1). NA had an EC50 of 0.9 \u00b5M (0.6\u20131.5 \u00b5M; n\u00a0=\u00a08) for the membrane potential and 1.3 \u00b5M (1.0\u20131.9 \u00b5M; n\u00a0=\u00a08) for the conductance density, respectively. (D) and (E) The NA modulation of POMC neurons is direct and not dependent on synaptic input. Original recording (D) and averaged effect on conductance density (E) showing that the NA effect on POMC neurons is not changed when glutamatergic and GABAergic synaptic input is blocked. Experiments shown in (E) were performed consecutively with the same set of neurons (n\u00a0=\u00a04). Control 1 and control two refers to the different starting conditions, that is\u00a0pre-incubation with or without synaptic blockers. **p<0.01; ***p<0.001; one-way ANOVA with post hoc Tukey analysis.\n\nThe normalized concentration-response relations for conductance increase and membrane hyperpolarization were well fit with a sigmoidal relation (Equation 1), with EC50s of 0.9 \u00b5M (0.6\u20131.5 \u00b5M; n\u00a0=\u00a08) and 1.3 \u00b5M (1.0\u20131.9 \u00b5M; n\u00a0=\u00a08) for the hyperpolarization and the conductance density, respectively. The effective concentration range is in line with previous studies that analyzed NA modulation in other cell types (Jurgens et al., 2007).\n\nIn experiments in which the GABAergic and glutamatergic input of the POMC neurons was pharmacologically blocked, the NA response was slightly decreased (~16%) compared to recordings without synaptic blockers present, suggesting a small presynaptic contribution by NA responsive neurons, which project on POMC neurons (Figure 3D,E). Given the excitatory effect of NA on NPY/AgRP neurons, this effect is likely caused by their mono-directional inhibitory synaptic innervation of POMC neurons.\n\n### Adrenergic receptors are expressed in NPY/AgRP and POMC neurons of the ARH\n\nTo understand how NA modulates NPY/AgRP and POMC neurons at the molecular level, we performed cell type-specific transcriptomics to analyze AR gene expression in these neurons. Using enhanced green fluorescent protein (eGFP)-based fluorescence-activated cell sorting (FACS), we isolated eGFP-expressing NPY/AgRP or POMC neurons from coronal slices, which contained the hypothalamus, of 6-week-old mice (four mice per sample; NPY-GFP: n\u00a0=\u00a03; POMC-GFP: n\u00a0=\u00a02). Subsequently, we performed total RNA isolation and whole transcriptome analysis from these neuronal populations. Comparing POMC versus NPY transcriptional profiles yielded 4482 significantly differentially expressed genes (FC\u22652, p\u22640.01). Within this pool, Pomc was enriched 147-fold in the corresponding population, with Npy and Agrp being higher expressed in NPY-derived samples, but not in a statistically significant way (Figure 4A, supplemental file 1). NPY/AgRP neurons expressed all subtypes of ARs, except \u03b11D- and \u03b12B- ARs. POMC neurons only expressed \u03b11A- and \u03b12A- ARs, albeit to a lower magnitude (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig4-v1.jpg)\n\n**Figure 4.:** (A) Log expression levels of adrenergic receptor genes in Pomc- and Npy-expressing cell populations. Deeper red colours indicate higher expression levels in the respective cell population. RPKM: reads per kilobase per million mapped reads. (B) Images from RNA in situ hybridizations against Adra1a (upper panels, green dots) and Adra2a (lower panels, green dots) in Npy- and Pomc- expressing (red) neurons. White arrowheads indicate doubly-labeled cells. Higher magnification indexes are representative of doubly-labeled cells. (C) Quantification of double positive cells for Adra1a and Adra2a in Npy- and Pomc- expressing neurons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Higher magnification indexes are representative of doubly-labeled cells. Negative control: probe against E. coli gene DapB.\n\nTo verify our gene expression data related to the ARs expressed in these neuronal populations, we performed RNA in situ hybridizations, using probes against Adra1a, Adra2a, Adrb1 and Adrb2. Both NPY/AgRP and POMC neurons were positive for Adra1a and Adra2a expression, with Adra1a being expressed in more NPY/AgRP neurons, compared to POMC neurons (Figure 4B,C). Adra2a was however expressed to a similar extent between the two populations (Figure 4C). Adrb1 and Adrb2 were expressed only in NPY/AgRP neurons (Figure 4\u2014figure supplement 1). Taken together, our data suggest that ARs are differentially expressed between NPY and POMC neurons within the hypothalamus, possibly mediating any distinct modulatory effects of NA on these populations.\n\n### NA excites NPY/AgRP neurons predominantly via the activation of \u03b11A-ARs\n\nWhile NPY/AgRP neurons expressed excitatory \u03b11A,B- and \u03b2-ARs, and inhibitory \u03b12A -AR, NA clearly excited all recorded NPY/AgRP neurons. To assess the AR classes that contribute to the excitatory electrophysiological response we used pharmacological tools, which were selective for AR subclasses.\n\nIn the first series of experiments \u03b1-ARs were blocked by the \u03b11-AR antagonist prazosine (5 \u00b5M) and the \u03b12-AR antagonist yohimbine (5 \u00b5M; Figure 5A,B). During the combined application of prazosine and yohimbine the excitatory NA effect was completely blocked in 44% (4 of 9; Figure 5A) and significantly (~60%) attenuated in 55% (5 of 9; Figure 5B) of the NPY/AgRP neurons. Together, these experiments suggest that the excitatory NA effect in NPY/AgRP\u00a0neurons can be mediated solely by \u03b11-ARs or by the co-activation of \u03b11-ARs and \u03b2-ARs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig5-v1.jpg)\n\n**Figure 5.:** (A) and (B) In 44% (4 out of 9) of the NPY/AgRP neurons the NA (10 \u00b5M) effect was completely blocked by the \u03b11-AR antagonist prazosine (5 \u00b5M) and \u03b12-AR antagonist yohimbine (5 \u00b5M) (A), while in 56% (5 out of 9) of the NPY/AgRP neurons the NA effect was markedly reduced (~60%) but not completely blocked (B). The series of experiments shown in (A) and (B) were each performed consecutively with the same set of neurons. n values are given in brackets. Control 1 and control two refers to the different starting conditions, that is\u00a0pre-incubation with different AR antagonist. **p<0.01; ***p<0.001; one-way ANOVA with post hoc Tukey analysis.\n\nNext, we asked which \u03b11-AR subtype(s) mediates the excitatory NA effect. The selective \u03b11A-AR agonist A-61603 (1 \u00b5M) depolarized the membrane potential and increased the AP frequency in NPY/AgRP neurons similarly as a subsequent NA application (Figure 6A,B). Both the A-61603 and the NA effect were fully reversible. In line with these data, we found that the selective \u03b11A-AR antagonist WB4101 (100 nM) abolished the excitatory NA response (Figure 6C,D). Application of WB4101 resulted in an inhibitory effect, suggesting baseline activation of \u03b11A-AR. The subtype-specific \u03b11B,D-AR antagonist chloro-ethyl-clonidine (CEC; 100 nM) did not block or alter the NA action (Figure 6E,F), suggesting that \u03b11B,D-ARs do not contribute to the excitation. Taken together, these data show that NA excites NPY/AgRP neurons via activation of \u03b11A-ARs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig6-v1.jpg)\n\n**Figure 6.:** (A) Rate histogram with its original recording showing that the \u03b11A-AR agonist A61603 (1 \u00b5M) had similar excitatory effects on action potential frequency (B) as NA. (C) and (D) The selective \u03b11A-AR antagonist WB4101 (100 nM) blocked the excitatory NA effect. In the presence of WB4101 NA had an inhibitory effect on the membrane potential, which was eliminated by the \u03b12A-AR antagonist BRL44408 (10 \u00b5M). (E) The \u03b11BD-AR blocker CEC (100 nM) did not change the NA effect on NPY/AgRP neurons. *p<0.05; **p<0.01; ***p<0.001; one-way ANOVA with posthoc Tukey analysis.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Original recording (A) of a NPY/AgRP neuron during two sequential applications of A61603 (1 \u00b5M) and averaged A61603 responses (B) on action potential frequency showing that that there is no desensitization of the first application prior to the second treatment. n values are given in brackets. **p<0.01; one-way ANOVA with post hoc Tukey analysis.\n\nOf note, the \u03b11A-AR antagonist WB4101 not only blocked the NA excitation (as described above). In the presence of WB4101 NA even had an inhibitory effect on the NPY/AgRP membrane potential (Figure 6C,D). A subsequent block of inhibitory \u03b12A-ARs by the specific antagonist BRL44408 reversed the inhibition to a small excitation. These data show that the inhibitory \u03b12A-ARs are functional in NPY/AgRP neurons and also support the notion that excitatory \u03b2-ARs are activated by NA, as indicated in the first set of experiments.\n\nCollectively, our data indicate that all receptors, which were identified by cell-type specific transcriptomics, are functional in NPY/AgRP neurons. The excitatory NA effect that we observed in virtually all neurons is predominantly mediated by \u03b11A-ARs and might be in some neurons co-mediated by \u03b2-ARs. The activation of excitatory AR interferes with the activation of inhibitory \u03b12A-ARs.\n\n### NA inhibits POMC neurons via the activation of \u03b12A-ARs\n\nPOMC neurons express excitatory \u03b11A-ARs and inhibitory \u03b12A-ARs, and were markedly inhibited by NA. First, we tested, if the inhibitory NA effect is mediated by \u03b12A-AR, as suggested by our transcriptomics data. The \u03b12A-AR antagonist BRL 44408 (10 \u00b5M) blocked the NA mediated inhibitory effect. Application of 10 \u00b5M BRL 44408 alone, did not significantly alter the recorded electrophysiological properties, suggesting no baseline activity of \u03b12A-ARs (Figure 7A). The specific \u03b12B-AR antagonist ARC 239 (1 \u00b5M) did not change the inhibitory effect of NA, which suggests that the inhibitory NA action is solely mediated by \u03b12A-ARs (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25770/elife-25770-fig7-v1.jpg)\n\n**Figure 7.:** (A) and (B) The \u03b12A-antagonist BRL 44408 (10 \u00b5M) blocked the inhibitory NA (5 \u00b5M) effect (A), while the \u03b12A-antagonist ARC239 (1 \u00b5M) did not affect the NA action (B). (C\u2013E) Inhibitory NA effect (C). Blocking \u03b12-AR by yohimbine revealed an excitatory NA effect (D), which was blocked by the \u03b11-AR antagonist prazosine (E). The series of experiments shown in (A) and (B) were each performed consecutively with the same set of neurons. Control 1 and control two refers to the different starting conditions, that is preincubation with different AR antagonist. n values are given in brackets. *p<0.05; **p<0.01; ***p<0.001. (A)\u00a0and\u00a0(B) one-way ANOVA with post hoc Tukey analysis; (C\u2013E) paired t-test.\n\nNext, we asked if the excitatory \u03b11A-ARs are functional in POMC neurons (Figure 7C\u2013E). When the inhibitory \u03b12-ARs were blocked by yohimbine (5 \u00b5M), NA excited POMC neurons (Figure 7D; paired t-test, n\u00a0=\u00a010, p=0.0168). This excitation was completely abolished by the \u03b11-AR antagonist prazosine (5 \u00b5M), showing the functionality of \u03b11-ARs in POMC neurons (Figure 7E; paired t-test, n\u00a0=\u00a06, p=0.2467).\n\nTaken together, our results show that the NA-induced inhibition of POMC neurons is mediated by \u03b12A-AR and can mask the activation of excitatory \u03b11-ARs.\n\n## Discussion\n\nNA neurons of the brainstem give rise to a complex system of fiber tracts innervating most of the forebrain including the hypothalamus and the ARH (Szabadi, 2013). Because of the extensive and complex projection pattern, the NA system is associated with a number of important CNS functions including control of wake-sleep-cycles, nociception and memory consolidation (Berridge and Waterhouse, 2003; Samuels and Szabadi, 2008a, 2008b). One important role that has been clearly linked to the NA system by a combination of anatomical, pharmacological, lesion and behavioral studies is the modulation of energy homeostasis and food intake (Wellman, 2005, 2000)\n\nHere, we show for the first time that NA directly modulates NPY/AgRP and POMC neurons of the ARH, which are key components of the neuronal circuits that control food intake and energy homeostasis. Interestingly, NA changes the activity of these functionally antagonistic neurons in opposite ways, increasing the activity of the orexigenic NPY/AgRP neurons and decreasing the activity of the anorexigenic POMC neurons. The strong differential modulation, which was reproducible in virtually all recorded neurons, is remarkable, since other important fuel sensing modulators like insulin, leptin, glucose, oleic acid and UDP typically affect only a subpopulation of these neurons (Jo et al., 2009; Parton et al., 2007; Steculorum et al., 2015; Williams et al., 2010). On the network and systems level, this clear differential NA modulation of functionally antagonistic neuron types should generate a strong orexigenic drive on the homeostatic circuits of the ARH. This conclusion is consistent with early behavioral experiments from Clark et al. (1988) showing that injection of NA into the third ventricle increased food intake. Furthermore, the authors showed that blockade of \u03b12-AR attenuated the NA-induced feeding behavior, which is in line with our finding that satiety signaling POMC- neurons are inhibited by NA via \u03b12-AR.\n\nSince the modulatory effects of NA were observed in synaptically isolated neurons, the data suggest that NA directly activated intrinsically expressed ARs. Our cell type-specific transcriptomic data showed expression of excitatory and inhibitory receptor subtypes in both NPY/AgRP and POMC neurons, which is in line with recent data from Henry et al. (2015). NPY/AgRP neurons expressed excitatory \u03b11A-, \u03b2-ARs and inhibitory \u03b12A-ARs, while POMC neurons only express excitatory \u03b11A-ARs and inhibitory \u03b12A-ARs. Expression of other AR-subtypes was not detected in these neurons.\n\nTo unravel which of the expressed AR-subtypes contribute to the cell type-specific physiological effects of NA on NPY/AgRP and POMC neurons, we used pharmacological tools that have been previously shown to be selective for AR subtypes. While in NPY/AgRP the robust excitation is mediated by excitatory \u03b11A- and \u03b2-ARs, \u03b12A-ARs mediated the strong inhibition in POMC neurons.\n\nThe functional consequences of these diverse expression and activation profiles on the systems and behavioral level is not entirely clear and has to be investigated in future studies. Previous studies in other neuron types revealed similar phenomena and suggested that simultaneous expression of excitatory and inhibitory (NA) receptors might derive from developmental effects or localized, differential expression of ARs in different functional compartments.\n\nSimultaneous expression of excitatory and inhibitory adrenergic receptors has been found in neurons of the LC. In juvenile mice, mRNA for excitatory \u03b11A,B,D- and inhibitory \u03b12A,B,C-ARs has been detected and application of NA caused excitation, while in adult mice NA hyperpolarizes LC neurons. Here, \u03b11-ARs attenuate the NA-induced hyperpolarization (Osborne et al., 2002). As in LC neurons, POMC neurons might change their response to NA during development. In the ARH developmental changes of electrophysiological responses to leptin have been described for NPY/AgRP neurons (Baquero et al., 2014; Nilsson et al., 2005). Simultaneous expression of excitatory and inhibitory ARs has also been found in dentate neurons of the human cerebellum (Schambra et al., 2005). Here, \u03b12B-ARs are thought to modulate excitatory glutamatergic input, while \u03b11A,B-ARs may play a role in timing and computation of inhibitory input. Previous studies in dentate neurons of the cerebellum suggested that \u03b11-ARs are expressed on the cell body while \u03b12-ARs are expressed on the terminals, in order to locally regulate transmitter release (Milner et al., 2000).\n\nThis raises the question regarding the NA source and under which physiological conditions NA is active to modulate food intake. While the blood brain barrier in adult animals is considered mostly impermeable for catecholamines, there is evidence from early work that catecholamines can cross the blood brain barrier in the hypothalamus (Weil-Malherbe et al., 1959). However, the site specific effects of local lesions and local NA injections into the hypothalamus might argue for local, site specific NA release from neurons. In rats, projections from the hindbrain/brainstem and the LC to the ARH have been identified (Fraley, 2006; Fraley and Ritter, 2003; Yoon et al., 2013). Specific deletion of projections from the ventro-lateral medulla (A1/C1 cell group) is sufficient to eliminate an increase in AgRP and NPY mRNA expression in response to glucoprivation induced by 2-DG. Furthermore, homeostatic feeding in response to local hypoglycemia in the hindbrain was decreased (Fraley and Ritter, 2003). In this context, recent work in primates from the Bouret group suggested that the LC plays a key role in mobilizing the required energy in order to face anticipated physical challenges, such as obtaining rewards (Bouret and Richmond, 2015; Varazzani et al., 2015). In this model, the LC activity is directly related to the energetic need that is required to master the challenge. Consistent with this hypothesis, our data suggest that NA release into the ARH upon LC activation generates an orexigenic drive to compensate for the required energy. In line with this hypothesis, previous studies revealed that NA injections into the hypothalamus elicit food intake (Booth, 1967; Leibowitz, 1978).\n\nTogether, these behavioral experiments are strong evidence for the orexigenic nature of NA signaling in the control of food intake. In this context, the orexigenic hormones insulin and leptin may modulate NA signaling in the ARH. While insulin selectively decreased \u03b12-AR expression in the ARH and dorsomedial hypothalamus (Levin et al., 1998), leptin inhibits NA release in rats (Brunetti et al., 1999; Francis et al., 2004), Both effects would augment the net anorexigenic signal. In support of the latter relation, obese mice that lack the gene to produce leptin (Lepob/ob) exhibit increased NA levels within the hypothalamus, which further decreases the anorexigenic signal (Oltmans, 1983).\n\nSeveral drugs that were developed to modify food intake, act on the monoaminergic transmitter system in the brain. Since the molecular and cellular targets that mediate the effects of these drugs are often not clearly identified, they often cause strong side effects (Hainer et al., 2006). To successfully support obese patients to manage their food intake with minimized side effects, it is important to precisely define the targets of these drugs. Since the current findings reveal cell type-specific pathways that mediate NA modulation in the ARH they might help to better define specific targets for anti-obesity drugs.\n\n## Materials and methods\n\n### Animal care\n\nAll animal procedures were conducted in compliance with guidelines approved by local government authorities (Bezirksregierung K\u00f6ln, Cologne, Germany) and were in accordance with NIH guidelines. Mice were housed at 22\u201324\u00b0C with a 12 hr light/12 hr dark cycle. Animals had access to water and chow ad libitum. All experiments have been performed with adult male and female NPY/AgRP-hrGFP (Lowell 2009) or POMC-EGFP (Cowley 2001) mice. The mice for the electrophysiological recordings were 15\u201320 weeks old. To facilitate tissue dissociation 6 weeks old animals were used for RNA sequencing.\n\n### Neuronal sorting and RNA sequencing\n\nAt 6 weeks of age, NPY/AgRP-hrGFP or POMC-EGFP mice were sacrificed by decapitation and the brain area corresponding to the hypothalamus was micro-dissected under a brightfield stereoscope. Each sample contained hypothalami from four mice (males and females) and tissue samples were processed in ice-cold HBSS, until enzymatic treatment. Samples were centrifuged to remove HBSS and were subsequently incubated for 15 min in pre-incubation buffer, at 37\u00b0C. Enzyme mix was added and each sample was manually dissociated by gentle pipetting, throughout a total duration of 35 min and according to manufacturer\u2019s instructions (Neural tissue dissociation kit, Miltenyi Biotec, Germany). Subsequently, samples were centrifuged at 500 x g, 10 min, 4\u00b0C, and the cell pellet was re-suspended in cold PBS, containing 5% fetal calf serum.\n\nNPY/AgRP-hrGFP or POMC-EGFP-expressing neurons were gated and sorted with a blue laser. GFP-positive neurons were sorted directly into total RNA extraction buffer (PicoPure RNA isolation kit, ThermoFisher Scientific, USA). Samples were lysed for 30 min by incubation at 42\u00b0C and subsequently frozen to \u221280\u00b0C, to allow for simultaneous processing among replicates. Total RNA was extracted according to manufacturer\u2019s instructions (PicoPure RNA isolation kit, ThermoFisher Scientific, USA) and all samples were DNAse-treated (ThermoFisher Scientific, USA). RNA quality was assessed with an Agilent 2100 bioanalyzer and samples with low degradation (RIN\u00a0>7.5) were further processed for library preparation and sequencing. Due to low amount of input material, pre-amplification using the Ovation RNASeq System V2 was performed. Total RNA was used for first strand cDNA synthesis, using both poly(T) and random primers, followed by second strand synthesis and isothermal strand-displacement amplification. For library preparation, the Illumina Nextera XT DNA sample preparation protocol (Part # 15031942 Rev. C) was used, with 1 ng cDNA input. After validation (Agilent 2200 TapeStation) and quantification (Invitrogen Qubit System) all five transcriptome libraries were pooled. The pool was quantified using the Peqlab KAPA Library Quantification Kit and the Applied Biosystems 7900HT Sequence Detection. One lane and a paired-end read of 2 \u00d7 100 bp on the Illumina**HiSeq 2000 sequencer using v3 chemistry resulted in 39-44Mreads/sample (7.9\u20139.7 Gb) and a ratio of bases above Q30 of 90.2%. RNA-seq data were analyzed using the QuickNGS pipeline, described elsewhere (Wagle et al., 2015) (n\u00a0=\u00a03 for NPY/AgRP- and n\u00a0=\u00a02 for POMC-expressing neurons).\n\nStatistically significant (p<0.01) altered genes between the two neuronal populations were analyzed with the Ingenuity Pathway Analysis (IPA) software for gene ontology (GO) enrichment, using either the up-regulated or the down-regulated enrichment mode of the core IPA analysis (POMC-neurons were used as controls \u2013 down-regulated pool \u2013 and NPY-neurons as samples \u2013 up-regulated pool).\n\n### Electrophysiology\n\n#### Brain slice preparation\n\nThe animals were lightly anesthetized with isoflurane (B506; AbbVie Deutschland GmbH and Co KG, Ludwigshafen, Germany) and subsequently decapitated. The brain was rapidly removed and a block of tissue containing the hypothalamus or brainstem was immediately cut out. Coronal slices (270\u2013300 \u03bcm) were cut with a vibration microtome (HM-650 V; Thermo Scientific, Walldorf, Germany) under cold (4\u25e6C), carbogenated (95% O2 and 5% CO2), glycerol-based modified artificial cerebrospinal fluid (GaCSF; Ye et al., 2006 ) to enhance the viability of neurons. GaCSF contained (in mM): 250 Glycerol, 2.5 KCl, 2 MgCl2, 2 CaCl2, 1.2 NaH2PO4, 10 HEPES, 21 NaHCO3, 5 Glucose and was adjusted to pH 7.2 with NaOH resulting in an osmolarity of\u00a0~310 mOsm. Brain slices were transferred into carbogenated artificial cerebrospinal fluid (aCSF). aCSF contained (in mM): 125 NaCl, 2.5 KCl, 2 MgCl2, 2 CaCl2, 1.2 NaH2PO4, 21 NaHCO3, 10 HEPES, and 5 Glucose and was adjusted to pH 7.2 with NaOH resulting in an osmolarity of\u00a0~310 mOsm. First, they were kept for 20 min in a 35\u00b0C\u2019 recovery bath\u2019 and then stored at room temperature (24\u00b0C) for at least 30 min prior to recording. For the recordings, slices were transferred to a Sylgard-coated (Dow Corning Corp., Midland, MI, USA) recording chamber (~3 ml volume) and, if not mentioned otherwise, continuously perfused with carbogenated aCSF at a flow rate of\u00a0~2 ml \u00b7 min\u22121. Recordings in the ARC were made at 24\u00b0C using an inline solution heater (SH27B; Warner Instruments, Hamden, CT, USA) operated by a temperature controller (TC-324B; Warner Instruments).\n\n#### Patch clamp recordings\n\nCurrent-clamp recordings of NPY/AgRP- and POMC-expressing neurons in the ARH of 15\u201320 week old mice were performed in the perforated patch clamp configuration. Neurons were visualized with a fixed stage upright microscope (BX51WI, Olympus, Hamburg, Germany) using 40\u00d7 and 60\u00d7 water-immersion objectives (LUMplan FL/N 40\u00d7, 0.8 numerical aperture, 2 mm working distance; LUMplan FL/N 60\u00d7, 1.0 numerical aperture, 2 mm working distance, Olympus) with infrared differential interference contrast optics (Dodt and Zieglg\u00e4nsberger, 1990) and fluorescence optics. POMC and NPY/AgRP neurons were identified by their anatomical location in the ARH and by their GFP fluorescence that was visualized with an X-Cite 120 illumination system (EXFO Photonic Solutions, Ontario, Canada) in combination with a Chroma 41001 filter set (EX: HQ480/40x, BS: Q505LP, EM: HQ535/50m, Chroma, Rockingham, VT, USA). Electrodes with tip resistances between 4 and 6 M\u03a9 were fashioned from borosilicate glass (0.86 mm inner diameter; 1.5 mm outer diameter; GB150-8P; Science Products) with a vertical pipette puller (PP-830; Narishige, London, UK). All recordings were performed with an EPC10 patch-clamp amplifier (HEKA, Lambrecht, Germany) controlled by the program PatchMaster (version 2.32; HEKA) running under Windows. In parallel, data were recorded using a micro1410 data acquisition interface and Spike 2 (version 7) (both from CED, Cambridge, UK). Data were sampled at 10 kHz and low-pass filtered at 2 kHz with a four-pole Bessel filter. Whole-cell capacitance was determined by using the capacitance compensation (C-slow) of the EPC10. Cell input resistances (RM) were calculated from voltage responses to hyperpolarizing current pulses. The calculated liquid junction potential of 14.6 mV between intracellular and extracellular solution was compensated or subtracted offline (calculated with Patcher\u2019s Power Tools plug-in from http://www.mpibpc.mpg.de/groups/neher/index.php?page=software for IGOR Pro 6 [Wavemetrics, Lake Oswego, OR, USA]).\n\n#### Perforated patch clamp recordings\n\nPerforated patch experiments were conducted using protocols modified from Horn and Marty (1988) and Akaike and Harata (1994). Recordings were performed with ATP and GTP free pipette solution containing (in mM): 128 K-gluconate, 10 KCl, 10 HEPES, 0.1 EGTA, 2 MgCl2 adjusted to pH 7.3 with KOH resulting in an osmolarity of\u00a0~300 mOsm. ATP and GTP were omitted from the intracellular solution to prevent uncontrolled permeabilization of the cell membrane (Lindau and Fernandez, 1986). The patch pipette was tip filled with internal solution and back filled with internal solution, which contained the ionophore to achieve perforated patch recordings and 0.02% tetraethylrhodamine-dextran (3000 MW, D3308, Invitrogen, Eugene, OR, USA) to monitor the stability of the perforated membrane.\n\nAmphotericin B (A4888; Sigma) was dissolved in dimethyl sulfoxide (DMSO; D8418, Sigma) following the protocols of Rae et al. (1991) and Kyrozis and Reichling (1995). The used DMSO concentration (0.1\u20130.3%) had no obvious effect on the investigated neurons. The ionophore was added to the modified pipette solution shortly before use. The final concentration of amphotericin B was\u00a0~200 \u03bcg \u00b7 ml\u22121. During the perforation process access resistance (Ra) was constantly monitored and experiments were started after Ra had reached steady state (~15\u201320 min) and the action potential amplitude was stable.\n\n#### Noradrenalin experiments\n\nNoradrenalin (noradrenaline-bitartrate; I9278, Sigma) was bath-applied at concentrations between 10 nM and 100 \u03bcM for\u00a0~5 min until the NA effect had reached a steady state. Membrane potentials and AP frequencies were measured as averages from time periods (at least 30 s) when the NA effect had reached steady state. The input resistance of a neuron was determined as the mean from three sets of small hyperpolarizing current pulses (\u22125 to \u221220 pA). Conductance densities were determined as the inverse of the input resistance divided by the whole-cell capacitance. Concentration-response relations were normalized to the maximal response and fit with the sigmoidal relation (Equation 1)\n\n$$\ny=\\frac{1}{1+10^{(LogEC50\u2212X)*slope)}}\n$$\n\n#### Drugs\n\nNoradrenaline-bitartrate(10 nM - 100 \u03bcM; I9278, Sigma), the \u03b11-AR antagonist prazosine (5 \u00b5M; P7791, Sigma), the \u03b12-AR antagonist yohimbine (5 \u00b5M; Y3125, Sigma), the \u03b12A-AR antagonist BRL 44408 (10 \u03bcM, C5776, Sigma), the \u03b12B-AR antagonist ARC 239, the \u03b11A-AR antagonist WB 4101, the \u03b11C, D-AR antagonist CEC (1 nM \u2013 1 \u00b5M, Q102, Sigma) and the \u03b11A-AR agonist A61603 (100 nM; A5861, Sigma) were added to the normal aCSF.\n\nTo reduce glutamatergic and GABAergic synaptic input to the recorded neurons, 10 \u00b5M CNQX (6-cyano-7-nitroquinoxaline-2,3-dione, C127, Sigma-Aldrich), 50 \u00b5M DL-AP5 (DL-2-amino-5-phosphonopentanoic acid, BN0086, Biotrend), and 100 \u00b5M PTX (picrotoxin, P1675, Sigma Aldrich) was added to the extracellular saline.\n\n### RNA in situ hybridizations\n\nIn situ hybridizations were performed using the RNAscope 2-plex detection chromogenic kit, according to manufacturer\u2019s instructions (Advanced Cell Diagnostics, USA). Briefly, wild-type C57BL/6 mice were intra-cardially perfused with 4% paraformaldehyde, post-fixed overnight in 4% PFA at room temperature and subsequently cryo-protected in 25% sucrose in 1x PBS. Coronal slices containing the hypothalamus were boiled at 98\u00b0C for antigen retrieval, hybridized with gene-specific probe sets against Adra1a, Adra2a, Adrb1 or Adrb2 and Npy or Pomc, to indicate the corresponding neuronal populations. Staining was evaluated using a brightfield Leica DM5500 B microscope. Per staining, 3 samples with three sections each were used to manually quantify double-positive cells. Per NPY- or POMC- positive cell, only cells containing at least two green (gene-specific) dots were considered as double-positive.\n\n### Data analysis\n\nData analysis was performed with Spike2 (version 7; Cambridge Electronic Design Ltd., Cambridge, UK), Igor Pro 6 (Wavemetrics, Portland, OR, USA) and Graphpad Prism (version 5.0b; Graphpad Software Inc., La Jolla, CA, USA). If not stated otherwise, all calculated values are expressed as means \u00b1 SEM (standard error of the mean). EC50 values are expressed as mean followed by their 95% confidence interval (CI) values. The \u2018+\u2019 signs in the box plots show the mean, the horizontal line the median of the data. The whiskers were calculated according to the \u2018Tukey\u2019 method. For comparisons of dependent and independent data paired and unpaired t-tests were used, respectively. For multiple comparisons ANOVA with Tukey post hoc analysis was performed. A significance level of 0.05 was accepted for all tests. Significance levels were: *p<0.05, **p<0.01, ***p<0.001. In the figures n values are given in brackets. Exact p-values are reported if p>0.0001.\n",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1a522f26-ccb2-46e3-9eea-596a7381c271",
+      "submission_id": "cdde59c1-4e82-4cfa-ba00-36f38057fee2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joel K Elmquist, University of Texas Southwestern Medical Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25770.013](https://doi.org/10.7554/eLife.25770.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Antagonistic modulation of NPY/AgRP and POMC neurons in the arcuate nucleus by noradrenalin\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nIn this submission, Paeger et al., elucidate the effects of exogenously applied NA on the electrical output of energy-balance-regulating NPY and neurons in the arcuate nucleus of the hypothalamus. They determine that NA activates NPY neurons but inhibits POMC neurons, and go on to elucidate the receptors involved by a combination of molecular biology and functional pharmacology combined with electrophysiology. The authors believe this activity to be dependent upon \u03b11A \u2013 and \u03b2- adrenergic receptors in NPY/AgRP neurons and \u03b12A \u2013 adrenergic receptors in POMC neurons. The finding are interesting, especially in the context of recent work by Buret linking NA-releasing neurons to signaling energy need. The experiments are well performed and the data support the conclusions of the authors. However, there are some concerns of the methodology that limit enthusiasm.\n\nEssential revisions:\n\nFigures 1\u20132. While the NPY/AgRP cells demonstrate an increased APF in response to NA, a change in membrane potential is not apparent. This appears opposite to the effects in POMC neurons. Does NA alter the RMP of NPY/AgRP neurons? If not, how does one reconcile this with the WB4101 data (Figure 6C and D) suggesting an \u03b12A-AR dependent regulation of RMP in NPY/AgRP neurons?\n\nFigure 4 appears of limited advancement over previous work published by the Sternson group. Also, the authors use POMC gene expression as a control, however why have the authors not examined NPY or AgRP gene expression to validate the cell type-specificity?\n\nFigure 5 and Figure 6 \u2013 The authors use various agonists/antagonists to examine the requirement of ARs in the acute activation of NPY/AgRP neurons. While Figure 6 legend is missing, it's indicated in the Results section that the experiments in Figure 6 (similar to Figures 2, 3, and 5) were performed using sequential applications in the same cell. A primary concern with these experiments is whether there is desensitization of the first application prior to the second test. This point is raised given that Figure 6A suggests that such desensitization may exist as the amplitude of the depolarization/frequency of events in response to A61603 followed by NA appear quite different. The authors should demonstrate subsequent application of all agonists is similar in the first and second application.\n\nFigure 6 and 7 \u2013 Is it possible that the dosages used are confounding the interpretation of the current results? In particular, in the current study the authors used 1\u00b5M A-61603. A-61603 is highly selective for \u03b11A-AR when compared to \u03b11B-AR or \u03b11D-AR by almost 100 fold or more. However, early studies suggested that A-61603 is selective at binding \u03b11A-AR over \u03b12-AR by as little as 10 fold \u2013 Ki 8.89nM for \u03b11A-AR and Ki 100nM for \u03b12-AR (Knepper et al., 1995). Due to the dosage used, how can the authors be certain that the effects observed are not dependent upon \u03b12-ARs.\n\nSimilarly, WB4101 has been shown to label platelet \u03b1-2 adrenergic receptors (Sundaresan et al., 1983) and WB4101 appears to bind to a nonadrenergic low-affinity site in both calf and human brain (Weinreich and Seeman, 1981; Lyon and Randall, 1980).\n\nAlso, BRL 44408 is selective for \u03b12A-AR over \u03b12B-AR (Ki = 1.7 nM and 144.5 nM), however the authors used BRL 44408 at 10\u00b5M likely eliminating this selectivity. These points warrant further experimentation if the authors are to conclude AR specific effects.\n\nGiven the authors focus on the role of NPY/AgRP and POMC neurons in feeding behavior, how might the current results fit with earlier work which suggested that \u03b12-AR blockade attenuates feeding behavior induced by both NPY and epinephrine (Clark et al., 1988).\n\nWhy are the resting membrane potentials of POMC neurons so hyperpolarized in Figure 7? Results, subsection \u201cNoradrenalin modulates electrophysiological activity differentially in NPY/AgRP and POMC neurons\u201d suggests that POMC neurons were spontaneously active under control conditions. Were these neurons spontaneously active? A search of the literature (including work from the same authors e.g. L. Plum et al., 2006, AJ Newton et al., 2013) reports RMP of POMC neurons from ~-40mV to ~-60mV. RMPs of -70mV or -80mV would appear to exceed this range and these cells appear quite different from those reported in Figure 3. Could the data be susceptible to cell selection biases?\n",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fc0d2d3a-8420-4a19-ab0f-986e69763a1f",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C1",
+      "claim": "In the arcuate nucleus of the hypothalamus (ARH), pro-opiomelanocortin (POMC)-expressing neurons are satiety signaling (anorexigenic).",
+      "claim_type": "EXPLICIT",
+      "source": "In the arcuate nucleus of the hypothalamus (ARH) satiety signaling (anorexigenic) pro-opiomelanocortin (POMC)-expressing and hunger signaling (orexigenic) agouti-related peptide (AgRP)-expressing neurons are key components of the neuronal circuits that control food intake and energy homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about POMC neurons in the ARH.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "327cd36f-7d95-49f0-a83b-f4ac56d9d924",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C2",
+      "claim": "In the arcuate nucleus of the hypothalamus (ARH), agouti-related peptide (AgRP)-expressing neurons are hunger signaling (orexigenic).",
+      "claim_type": "EXPLICIT",
+      "source": "In the arcuate nucleus of the hypothalamus (ARH) satiety signaling (anorexigenic) pro-opiomelanocortin (POMC)-expressing and hunger signaling (orexigenic) agouti-related peptide (AgRP)-expressing neurons are key components of the neuronal circuits that control food intake and energy homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AgRP neurons in the ARH.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "4363480d-b5fa-49c2-a353-9f0a8e6c688c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C3",
+      "claim": "POMC-expressing and AgRP-expressing neurons are key components of the neuronal circuits that control food intake and energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the arcuate nucleus of the hypothalamus (ARH) satiety signaling (anorexigenic) pro-opiomelanocortin (POMC)-expressing and hunger signaling (orexigenic) agouti-related peptide (AgRP)-expressing neurons are key components of the neuronal circuits that control food intake and energy homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge cited in the introduction and supported by references.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c8ccc01b-86b7-47d3-a025-4535abe98cc3",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C4",
+      "claim": "Noradrenalin increases the activity of orexigenic NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Perforated patch clamp recordings showed that noradrenalin changes the activity of these functionally antagonistic neurons in opposite ways, increasing the activity of the orexigenic NPY/AgRP neurons and decreasing the activity of the anorexigenic POMC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by perforated patch clamp recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "fafa06df-dd2c-4224-afd5-97d63be47332",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C5",
+      "claim": "Noradrenalin decreases the activity of anorexigenic POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Perforated patch clamp recordings showed that noradrenalin changes the activity of these functionally antagonistic neurons in opposite ways, increasing the activity of the orexigenic NPY/AgRP neurons and decreasing the activity of the anorexigenic POMC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by perforated patch clamp recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8465e828-e3ba-40fc-a579-66a00e577b19",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C6",
+      "claim": "The opposing effect of noradrenalin on NPY/AgRP and POMC neurons is mediated by the activation of excitatory \u03b11A- and \u03b2-adrenergic receptors in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell type-specific transcriptomics and pharmacological experiments revealed that the opposing effect on these neurons is mediated by the activation of excitatory \u03b11A - and \u03b2- adrenergic receptors in NPY/AgRP neurons, while POMC neurons are inhibited via \u03b12A \u2013 adrenergic receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell type-specific transcriptomics and pharmacological experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "e6b26a75-6bf9-4d56-a7ef-73c1f6122dfc",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C7",
+      "claim": "POMC neurons are inhibited via \u03b12A-adrenergic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell type-specific transcriptomics and pharmacological experiments revealed that the opposing effect on these neurons is mediated by the activation of excitatory \u03b11A - and \u03b2- adrenergic receptors in NPY/AgRP neurons, while POMC neurons are inhibited via \u03b12A \u2013 adrenergic receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cell type-specific transcriptomics and pharmacological experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "0455131b-0486-4581-8ba0-d7a13e487701",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C8",
+      "claim": "The coordinated differential modulation of the key hypothalamic neurons in control of energy homeostasis assigns noradrenalin an important role to promote feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the coordinated differential modulation of the key hypothalamic neurons in control of energy homeostasis assigns noradrenalin an important role to promote feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing opposite effects on orexigenic and anorexigenic neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3bbdc24d-ac84-48ea-a39e-9e3d5b396f35",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C9",
+      "claim": "Understanding the cellular and molecular mechanisms mediating information processing in neuronal circuits that regulate energy homeostasis is essential to devise specific pharmacological strategies for obese patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the cellular and molecular mechanisms mediating information processing in neuronal circuits that regulate energy homeostasis is essential to devise specific pharmacological strategies, which assist obese patients in starting and maintaining a program of weight loss with no or minimized side effects on other neuronal systems (Gouni-Berthold et al., 2013; Holes-Lewis et al., 2013; Misra, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3270b40a-3596-4cc5-86eb-7d2c1f9c6f48",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C10",
+      "claim": "Important microcircuits in control of energy balance are localized in the arcuate nucleus of the hypothalamus (ARH).",
+      "claim_type": "EXPLICIT",
+      "source": "Important microcircuits in control of energy balance are localized in the arcuate nucleus of the hypothalamus (ARH), which contains two main neuron populations with antagonistic functions: Neuropeptide Y and agouti-related peptide (NPY/AgRP) co-expressing neurons signaling hunger, promoting food intake, and pro-opiomelanocortin (POMC) - expressing neurons which signal satiety (Sohn et al., 2013; Varela and Horvath, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "665e56fa-6734-40d4-920a-42fb3e7c7a68",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C11",
+      "claim": "NPY/AgRP co-expressing neurons signal hunger and promote food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Important microcircuits in control of energy balance are localized in the arcuate nucleus of the hypothalamus (ARH), which contains two main neuron populations with antagonistic functions: Neuropeptide Y and agouti-related peptide (NPY/AgRP) co-expressing neurons signaling hunger, promoting food intake, and pro-opiomelanocortin (POMC) - expressing neurons which signal satiety (Sohn et al., 2013; Varela and Horvath, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "e4044e83-adf1-4ee5-a2b2-0b97384deb95",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C12",
+      "claim": "POMC-expressing neurons signal satiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Important microcircuits in control of energy balance are localized in the arcuate nucleus of the hypothalamus (ARH), which contains two main neuron populations with antagonistic functions: Neuropeptide Y and agouti-related peptide (NPY/AgRP) co-expressing neurons signaling hunger, promoting food intake, and pro-opiomelanocortin (POMC) - expressing neurons which signal satiety (Sohn et al., 2013; Varela and Horvath, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b934db1d-5a40-4ddf-ac3c-64a25b6fecef",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C13",
+      "claim": "Insulin is an important fuel-sensing endocrine and metabolic factor that modulates POMC and AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Many important fuel-sensing endocrine and metabolic factors, such as insulin, leptin, glucose, serotonin, dopamine, free fatty acids and uridine diphosphate (Gao and Horvath, 2007; Jo et al., 2009; Jordan et al., 2010; Sohn et al., 2011; Steculorum et al., 2015; Varela and Horvath, 2012; Zhang and van den Pol, 2016) have been identified and various immediate actions of these modulators and nutrient components on the POMC and AgRP neurons are well understood (Belgardt et al., 2008; Claret et al., 2007; Jo et al., 2009; Parton et al., 2007; Spanswick et al., 1997, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "5e3e29da-bfd8-44da-bfbb-785283cd7a77",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C14",
+      "claim": "Leptin is an important fuel-sensing endocrine and metabolic factor that modulates POMC and AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Many important fuel-sensing endocrine and metabolic factors, such as insulin, leptin, glucose, serotonin, dopamine, free fatty acids and uridine diphosphate (Gao and Horvath, 2007; Jo et al., 2009; Jordan et al., 2010; Sohn et al., 2011; Steculorum et al., 2015; Varela and Horvath, 2012; Zhang and van den Pol, 2016) have been identified and various immediate actions of these modulators and nutrient components on the POMC and AgRP neurons are well understood (Belgardt et al., 2008; Claret et al., 2007; Jo et al., 2009; Parton et al., 2007; Spanswick et al., 1997, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ae354865-59a3-4b26-b2aa-167dae6f4f63",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C15",
+      "claim": "Glucose is an important fuel-sensing endocrine and metabolic factor that modulates POMC and AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Many important fuel-sensing endocrine and metabolic factors, such as insulin, leptin, glucose, serotonin, dopamine, free fatty acids and uridine diphosphate (Gao and Horvath, 2007; Jo et al., 2009; Jordan et al., 2010; Sohn et al., 2011; Steculorum et al., 2015; Varela and Horvath, 2012; Zhang and van den Pol, 2016) have been identified and various immediate actions of these modulators and nutrient components on the POMC and AgRP neurons are well understood (Belgardt et al., 2008; Claret et al., 2007; Jo et al., 2009; Parton et al., 2007; Spanswick et al., 1997, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "6dd982d4-999e-4419-9e68-6a27e0790105",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C16",
+      "claim": "The effect of the catecholamine noradrenalin on the ARH is not well defined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect of the catecholamine noradrenalin (NA) on the ARH is not well defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c3bfe1fc-73eb-455f-987f-bcfa68097aec",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C17",
+      "claim": "Noradrenalin is associated with energy homeostasis and food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Noradrenalin is associated with a number of important CNS functions (Szabadi, 2013) including energy homeostasis and food intake (Commins et al., 1999; Ste Marie et al., 2005; Thomas and Palmiter, 1997; Wellman, 2005, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "26e613ac-26a7-4cae-9396-654ef31802fe",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C18",
+      "claim": "Noradrenergic projections from the hindbrain (A1, A2 noradrenergic cell groups) to the ARH have been described in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, NA could be a direct modulator of the energy homeostasis-regulatory POMC- and AgRP neurons in the ARH, since noradrenergic projections from the hindbrain (A1, A2 noradrenergic cell groups) and the locus coeruleus (LC) to the ARH have been described in rats (Fraley, 2006; Fraley and Ritter, 2003; Yoon et al., 2013) and manipulation of the noradrenergic system in the hypothalamus has been found to modify feeding behavior and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research in rats.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "762cc446-cd54-452a-aac1-45b737ee47d0",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C19",
+      "claim": "Noradrenergic projections from the locus coeruleus (LC) to the ARH have been described in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, NA could be a direct modulator of the energy homeostasis-regulatory POMC- and AgRP neurons in the ARH, since noradrenergic projections from the hindbrain (A1, A2 noradrenergic cell groups) and the locus coeruleus (LC) to the ARH have been described in rats (Fraley, 2006; Fraley and Ritter, 2003; Yoon et al., 2013) and manipulation of the noradrenergic system in the hypothalamus has been found to modify feeding behavior and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research in rats.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "67423af9-e417-47f4-a929-b95b4683465b",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C20",
+      "claim": "Manipulation of the noradrenergic system in the hypothalamus has been found to modify feeding behavior and food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially, NA could be a direct modulator of the energy homeostasis-regulatory POMC- and AgRP neurons in the ARH, since noradrenergic projections from the hindbrain (A1, A2 noradrenergic cell groups) and the locus coeruleus (LC) to the ARH have been described in rats (Fraley, 2006; Fraley and Ritter, 2003; Yoon et al., 2013) and manipulation of the noradrenergic system in the hypothalamus has been found to modify feeding behavior and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "598f247d-b8b4-4c62-b657-04a1366f4cb8",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C21",
+      "claim": "Impairment of the dorsal noradrenergic bundle caused hyperphagia.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of the dorsal or the ventral noradrenergic bundle, which contain efferent projections from the LC to the forebrain, caused hyper- or hypophagia, respectively (Ahlskog and Hoebel, 1973; Hoebel et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to lesion experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3d60a1ab-6b59-4fa3-ab05-0a03872a47fe",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C22",
+      "claim": "Impairment of the ventral noradrenergic bundle caused hypophagia.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of the dorsal or the ventral noradrenergic bundle, which contain efferent projections from the LC to the forebrain, caused hyper- or hypophagia, respectively (Ahlskog and Hoebel, 1973; Hoebel et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to lesion experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "6b8617f2-1e70-4fcf-b1f4-91184cba2a2b",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C23",
+      "claim": "Local NA injections into defined hypothalamus regions either elicits or inhibits feeding in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these lesion experiments, local NA injections into defined hypothalamus regions either elicits or inhibits feeding in rodents (Booth, 1967; Leibowitz, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b18a3476-d5b1-4934-bb54-cef233876099",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C24",
+      "claim": "The NA effect on feeding behavior is versatile and site-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings not only demonstrate noradrenergic modulation of food intake, but also indicate that the NA effect on feeding behavior is versatile and site-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited lesion and injection experiments showing different effects in different locations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "96aec74c-3cd8-424a-a89a-258c0519bd22",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C25",
+      "claim": "Unidentified ARH neurons in rats responded to NA application in extracellular recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence that NA is associated with the regulation of the homeostatic system in the ARH came from extracellular recordings of unidentified ARH neurons in rats, which responded to NA application (Kang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d2492edc-8369-4338-b985-246d13ea441a",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C26",
+      "claim": "NA increases the expression of Agrp and Npy mRNA in the rat ARH in response to glucoprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NA increases the expression of Agrp and Npy mRNA in the rat ARH in response to glucoprivation (Fraley and Ritter, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "108b6cca-b8ca-4918-b340-7067dac1581a",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C27",
+      "claim": "The NA-induced increase in Agrp and Npy mRNA expression is abolished if NA terminals in the ARH are eliminated by the injection of saporin-conjugated anti-dopamine-\u03b2-hydroxylase.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is abolished if NA terminals in the ARH are eliminated by the injection of saporin-conjugated anti-dopamine-\u03b2-hydroxylase (anti-d\u03b2h), a selective NA immunotoxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Fraley and Ritter, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "739f2513-409c-40d9-bfdf-384fc6697650",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C28",
+      "claim": "The immunotoxin eliminated a large number of neurons in the ventrolateral medulla (A1/C1 cell groups), which have been identified as mediators of glucoprivic feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the immunotoxin also eliminated a large number of neurons in the ventrolateral medulla (A1/C1 cell groups), which have been identified as mediators of glucoprivic feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Fraley and Ritter, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "165afcf4-9a05-40cb-b580-625a1a5466b3",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C29",
+      "claim": "The LC plays a key role in mobilizing the required energy to face anticipated physical challenges, such as to obtain rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on in vivo electrophysiological recordings in primates, it is hypothesized that the LC plays a key role in mobilizing the required energy to face anticipated physical challenges, such as to obtain rewards (Bouret and Richmond, 2015; Varazzani et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "6942fa8d-9641-4893-8bdf-6b102657df5c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C30",
+      "claim": "In the LC model, the LC activity is directly related to the energetic need that is required to master the challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the LC activity is directly related to the energetic need that is required to master the challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of a hypothesis based on cited research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b5414214-2b8b-4437-87d8-0004ebd41209",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C31",
+      "claim": "NA release in the ARH might promote compensatory energy intake.",
+      "claim_type": "EXPLICIT",
+      "source": "NA release in the ARH might then promote compensatory energy intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the LC model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "dd4ebe0b-6df8-4733-bf8c-e93789377ebe",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C32",
+      "claim": "NA and adrenalin activate three major classes of G protein-coupled receptors (GPCRs): \u03b11-, \u03b12- and \u03b2-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the cellular level NA action can be mediated by a variety of ARs that can inhibit or excite neurons. NA and adrenalin activate three major classes of G protein-coupled receptors (GPCRs): \u03b11-, \u03b12- and \u03b2-ARs (Hein, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "a36ca3a1-d60e-4015-8733-c67f588f66e5",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C33",
+      "claim": "Excitatory \u03b11-ARs are coupled to Gq/11 and mediate an increase in intracellular Ca2+ levels and closure of G protein-coupled inwardly rectifying potassium channels (GIRKs).",
+      "claim_type": "EXPLICIT",
+      "source": "While excitatory \u03b11-ARs are coupled to Gq/11 and mediate an increase in intracellular Ca2+ levels and closure of G protein-coupled inwardly rectifying potassium channels (GIRKs), inhibitory \u03b12-ARs couple to Gi/o leading to inhibition of voltage-gated Ca2+ channels (VGCCs) and opening of GIRKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AR signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "fc3a2d3b-dc39-42e4-9f9f-ffaa99476fdb",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C34",
+      "claim": "Inhibitory \u03b12-ARs couple to Gi/o leading to inhibition of voltage-gated Ca2+ channels (VGCCs) and opening of GIRKs.",
+      "claim_type": "EXPLICIT",
+      "source": "While excitatory \u03b11-ARs are coupled to Gq/11 and mediate an increase in intracellular Ca2+ levels and closure of G protein-coupled inwardly rectifying potassium channels (GIRKs), inhibitory \u03b12-ARs couple to Gi/o leading to inhibition of voltage-gated Ca2+ channels (VGCCs) and opening of GIRKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AR signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8ea4121f-e0c6-40d7-88c9-777a0a779e96",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C35",
+      "claim": "\u03b2-ARs mediate excitation via activation of Gs proteins and subsequent elevation of internal Ca2+ concentrations and opening of VGCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-ARs mediate excitation via activation of Gs proteins and subsequent elevation of internal Ca2+ concentrations and opening of VGCCs (Marzo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "40248fdb-6eb6-4949-ad85-45a45d850b40",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C36",
+      "claim": "Most NPY/AgRP neurons were spontaneously active under control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously, most NPY/AgRP and POMC neurons were spontaneously active under control conditions (NPY/AgRP neurons: (Baver et al., 2014; Steculorum et al., 2015; Tsaousidou et al., 2014; Wei et al., 2015); POMC neurons: (Ernst et al., 2009; Koch et al., 2015; Newton et al., 2013; Plum et al., 2006; Zhang and van den Pol, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "4a3e92be-2e7e-491f-84a3-48425cd27cc5",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C37",
+      "claim": "Most POMC neurons were spontaneously active under control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously, most NPY/AgRP and POMC neurons were spontaneously active under control conditions (NPY/AgRP neurons: (Baver et al., 2014; Steculorum et al., 2015; Tsaousidou et al., 2014; Wei et al., 2015); POMC neurons: (Ernst et al., 2009; Koch et al., 2015; Newton et al., 2013; Plum et al., 2006; Zhang and van den Pol, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "0155e515-d484-463a-868d-929b3baf4bd7",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C38",
+      "claim": "Bath-applied 10 \u00b5M NA depolarized orexigenic NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath-applied 10 \u00b5M NA had clear opposite effects on these functionally antagonistic neuron types. NA depolarized orexigenic NPY/AgRP neurons and increased their action potential frequency from 2.0 \u00b1 0.9 Hz to 5.0 \u00b1 1.0 Hz (Figure 1A,B; NPY/AgRP neurons, Wilcoxon matched pairs signed rank test, n = 8, p=0.0012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "04d2d179-45ce-46b4-bfa6-377335f384ea",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C39",
+      "claim": "Bath-applied 10 \u00b5M NA increased NPY/AgRP neuron action potential frequency from 2.0 \u00b1 0.9 Hz to 5.0 \u00b1 1.0 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "NA depolarized orexigenic NPY/AgRP neurons and increased their action potential frequency from 2.0 \u00b1 0.9 Hz to 5.0 \u00b1 1.0 Hz (Figure 1A,B; NPY/AgRP neurons, Wilcoxon matched pairs signed rank test, n = 8, p=0.0012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "2dc149fd-86ab-47cc-90f6-bc6a9977e6da",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C40",
+      "claim": "Bath-applied 10 \u00b5M NA hyperpolarized anorexigenic POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NA clearly hyperpolarized anorexigenic POMC neurons and drastically reduced or even abolished spontaneous generation of action potentials from 3.5 \u00b1 1.1 to 0.7 \u00b1 0.7 Hz (Figure 1A,B; POMC neurons, Wilcoxon matched pairs signed rank test, n = 8, p=0.0156).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "6cf371f5-7e7a-460e-b167-0f05aa0018ef",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C41",
+      "claim": "Bath-applied 10 \u00b5M NA reduced POMC neuron action potential frequency from 3.5 \u00b1 1.1 to 0.7 \u00b1 0.7 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NA clearly hyperpolarized anorexigenic POMC neurons and drastically reduced or even abolished spontaneous generation of action potentials from 3.5 \u00b1 1.1 to 0.7 \u00b1 0.7 Hz (Figure 1A,B; POMC neurons, Wilcoxon matched pairs signed rank test, n = 8, p=0.0156).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ec3e2815-f000-4658-8e28-9cda8366ebbc",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C42",
+      "claim": "In both NPY/AgRP and POMC neuron types, the NA effect had a rapid onset and was readily reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "In both neuron types, the NA effect had a rapid onset and was readily reversible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "214566a9-b853-402d-8a56-85af3c7bfd95",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C43",
+      "claim": "NA depolarized the membrane potential of NPY/AgRP neurons starting at a concentration of 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "NA depolarized the membrane potential and increased the action potential frequency starting at a concentration of 100 nM (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by concentration-response data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "007eaaae-8bf5-46ab-b6a2-964ecb118865",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C44",
+      "claim": "NA increased the action potential frequency of NPY/AgRP neurons starting at a concentration of 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "NA depolarized the membrane potential and increased the action potential frequency starting at a concentration of 100 nM (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by concentration-response data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "18050c33-3948-412b-914e-0d00e9ed4b0d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C45",
+      "claim": "At 10 \u00b5M NA, the average firing frequency of NPY/AgRP neurons increased from 2.2 \u00b1 0.8 Hz to 4.7 \u00b1 0.8 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal responses were observed at 10 \u00b5M where NA increased the average firing frequency from 2.2 \u00b1 0.8 Hz to 4.7 \u00b1 0.8 Hz (Figure 2B; paired t-test, n = 8, p<0.0001) and depolarized the membrane by 5.1 \u00b1 1.0 mV (Figure 2C; paired t-test, n = 8, p=0.0011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ceddf56d-0b63-434e-931c-a64435af9739",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C46",
+      "claim": "At 10 \u00b5M NA, the membrane of NPY/AgRP neurons was depolarized by 5.1 \u00b1 1.0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal responses were observed at 10 \u00b5M where NA increased the average firing frequency from 2.2 \u00b1 0.8 Hz to 4.7 \u00b1 0.8 Hz (Figure 2B; paired t-test, n = 8, p<0.0001) and depolarized the membrane by 5.1 \u00b1 1.0 mV (Figure 2C; paired t-test, n = 8, p=0.0011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "2f76c383-be19-495c-8e05-80bc204fd924",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C47",
+      "claim": "The concentration-response relation for membrane depolarization in NPY/AgRP neurons had an EC50 of 1.9 \u00b5M (1.1\u20133.2 \u00b5M; n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration-response relations had EC50s of 1.9 \u00b5M (1.1\u20133.2 \u00b5M; n = 8) and 1.5 \u00b5M (0.8\u20132.8 \u00b5M; n = 8), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from fitting concentration-response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "5a1efa2d-fd69-4f02-9a2d-913fd2938fb2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C48",
+      "claim": "The concentration-response relation for increase in firing frequency in NPY/AgRP neurons had an EC50 of 1.5 \u00b5M (0.8\u20132.8 \u00b5M; n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration-response relations had EC50s of 1.9 \u00b5M (1.1\u20133.2 \u00b5M; n = 8) and 1.5 \u00b5M (0.8\u20132.8 \u00b5M; n = 8), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from fitting concentration-response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "18646dfc-a564-48da-bdc2-e97c2983c5a2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C49",
+      "claim": "Synaptically isolated NPY/AgRP neurons responded similarly to the application of NA as without synaptic blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptically isolated NPY/AgRP neurons responded similarly to the application of NA as without synaptic blockers (Figure 2D,E), demonstrating that the excitatory NA effect is mediated by cell-intrinsic ARs and the applied GABA and glutamate antagonists do not directly interfere with the AR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "762b8b0e-6977-4dad-9a48-21896ab6d035",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C50",
+      "claim": "The excitatory NA effect on NPY/AgRP neurons is mediated by cell-intrinsic ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptically isolated NPY/AgRP neurons responded similarly to the application of NA as without synaptic blockers (Figure 2D,E), demonstrating that the excitatory NA effect is mediated by cell-intrinsic ARs and the applied GABA and glutamate antagonists do not directly interfere with the AR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the synaptic isolation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "e8733163-87ad-4bba-b6b6-a6d0eb2522f3",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C51",
+      "claim": "The NA inhibition of POMC neurons started at 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The NA inhibition started at 100 nM and the maximal inhibitory effect was reached at 10 \u00b5M where NA hyperpolarized the membrane potential by 18.6 \u00b1 3.2 mV (Figure 3B; paired t-test, n = 8; p=0.0007) and increased the conductance from 647 \u00b1 106 pS to 1546 \u00b1 266 pS (Figure 3C; paired t-test, n = 8; p=0.0029).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by concentration-response data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "2388801c-c3a4-43a7-a123-611aafe366b8",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C52",
+      "claim": "At 10 \u00b5M NA, the membrane potential of POMC neurons was hyperpolarized by 18.6 \u00b1 3.2 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The NA inhibition started at 100 nM and the maximal inhibitory effect was reached at 10 \u00b5M where NA hyperpolarized the membrane potential by 18.6 \u00b1 3.2 mV (Figure 3B; paired t-test, n = 8; p=0.0007) and increased the conductance from 647 \u00b1 106 pS to 1546 \u00b1 266 pS (Figure 3C; paired t-test, n = 8; p=0.0029).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "5eab4a26-008a-4d49-8942-44e851f3b6fa",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C53",
+      "claim": "At 10 \u00b5M NA, the conductance of POMC neurons increased from 647 \u00b1 106 pS to 1546 \u00b1 266 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "The NA inhibition started at 100 nM and the maximal inhibitory effect was reached at 10 \u00b5M where NA hyperpolarized the membrane potential by 18.6 \u00b1 3.2 mV (Figure 3B; paired t-test, n = 8; p=0.0007) and increased the conductance from 647 \u00b1 106 pS to 1546 \u00b1 266 pS (Figure 3C; paired t-test, n = 8; p=0.0029).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "f7ca5317-3da6-4c82-aecb-dcd5f0fbdc7c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C54",
+      "claim": "The NA effect on POMC neurons developed rapidly and was reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "The NA effect developed rapidly and was reversible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3826da63-d884-432d-88d2-1b2b1bb01010",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C55",
+      "claim": "After application of high concentration NA, the wash out induced a slow, sustained (~10 min) rebound excitation in POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after application of high concentration, the wash out of NA induced a slow, sustained (~10 min) rebound excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "4651234d-3b53-43dd-830b-b3596bb46994",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C56",
+      "claim": "NA concentrations higher than 10 \u00b5M did not further increase the effect on POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NA concentrations higher than 10 \u00b5M did not further increase the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from concentration-response experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "f2cf9c40-7353-4dd0-89f2-a7eb3b5364e4",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C57",
+      "claim": "The concentration-response relation for membrane hyperpolarization in POMC neurons had an EC50 of 0.9 \u00b5M (0.6\u20131.5 \u00b5M; n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized concentration-response relations for conductance increase and membrane hyperpolarization were well fit with a sigmoidal relation (Equation 1), with EC50s of 0.9 \u00b5M (0.6\u20131.5 \u00b5M; n = 8) and 1.3 \u00b5M (1.0\u20131.9 \u00b5M; n = 8) for the hyperpolarization and the conductance density, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from fitting concentration-response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3c4fbb89-964a-4db1-9a59-ef18c4de486c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C58",
+      "claim": "The concentration-response relation for conductance density increase in POMC neurons had an EC50 of 1.3 \u00b5M (1.0\u20131.9 \u00b5M; n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized concentration-response relations for conductance increase and membrane hyperpolarization were well fit with a sigmoidal relation (Equation 1), with EC50s of 0.9 \u00b5M (0.6\u20131.5 \u00b5M; n = 8) and 1.3 \u00b5M (1.0\u20131.9 \u00b5M; n = 8) for the hyperpolarization and the conductance density, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from fitting concentration-response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c65292cd-105e-4a01-9ee9-da412b4202d2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C59",
+      "claim": "In experiments in which the GABAergic and glutamatergic input of the POMC neurons was pharmacologically blocked, the NA response was slightly decreased (~16%) compared to recordings without synaptic blockers present.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments in which the GABAergic and glutamatergic input of the POMC neurons was pharmacologically blocked, the NA response was slightly decreased (~16%) compared to recordings without synaptic blockers present, suggesting a small presynaptic contribution by NA responsive neurons, which project on POMC neurons (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b33df0ec-f103-492b-a633-9abc468ef622",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C60",
+      "claim": "There is a small presynaptic contribution by NA responsive neurons, which project on POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments in which the GABAergic and glutamatergic input of the POMC neurons was pharmacologically blocked, the NA response was slightly decreased (~16%) compared to recordings without synaptic blockers present, suggesting a small presynaptic contribution by NA responsive neurons, which project on POMC neurons (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the synaptic isolation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "31f9ba13-e8d1-45c0-908a-fcff93e648c6",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C61",
+      "claim": "The presynaptic contribution to POMC neuron inhibition is likely caused by the mono-directional inhibitory synaptic innervation of POMC neurons by NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the excitatory effect of NA on NPY/AgRP neurons, this effect is likely caused by their mono-directional inhibitory synaptic innervation of POMC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known circuit connectivity and the excitatory effect of NA on NPY/AgRP neurons.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "97d2600a-460e-4d57-bc60-94ffafe1d63c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C62",
+      "claim": "Comparing POMC versus NPY transcriptional profiles yielded 4482 significantly differentially expressed genes (FC\u22652, p\u22640.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing POMC versus NPY transcriptional profiles yielded 4482 significantly differentially expressed genes (FC\u22652, p\u22640.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from the transcriptomic analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "54f17aae-93c6-4393-8c22-c1d23652b517",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C63",
+      "claim": "Pomc was enriched 147-fold in the POMC-expressing population.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this pool, Pomc was enriched 147-fold in the corresponding population, with Npy and Agrp being higher expressed in NPY-derived samples, but not in a statistically significant way (Figure 4A, supplemental file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the transcriptomic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "68841c34-83c4-44d1-b170-d5aad0fc0ccf",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C64",
+      "claim": "Npy and Agrp were higher expressed in NPY-derived samples, but not in a statistically significant way.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this pool, Pomc was enriched 147-fold in the corresponding population, with Npy and Agrp being higher expressed in NPY-derived samples, but not in a statistically significant way (Figure 4A, supplemental file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the transcriptomic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "86984035-82dc-4c1e-97f7-e832fd514d42",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C65",
+      "claim": "NPY/AgRP neurons expressed all subtypes of ARs, except \u03b11D- and \u03b12B- ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "NPY/AgRP neurons expressed all subtypes of ARs, except \u03b11D- and \u03b12B- ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from the transcriptomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "0eb3e09c-3fa0-4fbf-9222-219c328d56c9",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C66",
+      "claim": "POMC neurons only expressed \u03b11A- and \u03b12A- ARs, albeit to a lower magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "POMC neurons only expressed \u03b11A- and \u03b12A- ARs, albeit to a lower magnitude (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the transcriptomic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ddc10df1-f6c3-4efa-bd6c-6c2db6e0cfa2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C67",
+      "claim": "Both NPY/AgRP and POMC neurons were positive for Adra1a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NPY/AgRP and POMC neurons were positive for Adra1a and Adra2a expression, with Adra1a being expressed in more NPY/AgRP neurons, compared to POMC neurons (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1fa890f6-f0ae-4bb6-b82b-159005d0e293",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C68",
+      "claim": "Both NPY/AgRP and POMC neurons were positive for Adra2a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NPY/AgRP and POMC neurons were positive for Adra1a and Adra2a expression, with Adra1a being expressed in more NPY/AgRP neurons, compared to POMC neurons (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c8271dfc-5146-45aa-a54f-0b4b9f22d67d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C69",
+      "claim": "Adra1a was expressed in more NPY/AgRP neurons, compared to POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NPY/AgRP and POMC neurons were positive for Adra1a and Adra2a expression, with Adra1a being expressed in more NPY/AgRP neurons, compared to POMC neurons (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8562a822-683f-434a-bfab-e1ce064a9add",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C70",
+      "claim": "Adra2a was expressed to a similar extent between NPY/AgRP and POMC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Adra2a was however expressed to a similar extent between the two populations (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "329d768b-2cb6-4acf-a9e4-3f97a6f79d88",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C71",
+      "claim": "Adrb1 was expressed only in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Adrb1 and Adrb2 were expressed only in NPY/AgRP neurons (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c9096525-383a-49af-9c7b-08176a895631",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C72",
+      "claim": "Adrb2 was expressed only in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Adrb1 and Adrb2 were expressed only in NPY/AgRP neurons (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from RNA in situ hybridization data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c2b40204-20f2-45b4-bb15-0069e9f59d13",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C73",
+      "claim": "ARs are differentially expressed between NPY and POMC neurons within the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that ARs are differentially expressed between NPY and POMC neurons within the hypothalamus, possibly mediating any distinct modulatory effects of NA on these populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the transcriptomic and in situ hybridization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "2da9526d-f217-4ed3-9956-86448dbfbd4a",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C74",
+      "claim": "During the combined application of prazosine and yohimbine the excitatory NA effect was completely blocked in 44% (4 of 9) of the NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "During the combined application of prazosine and yohimbine the excitatory NA effect was completely blocked in 44% (4 of 9; Figure 5A) and significantly (~60%) attenuated in 55% (5 of 9; Figure 5B) of the NPY/AgRP neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "5736f0d2-51df-499b-badd-cebde965c4c8",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C75",
+      "claim": "During the combined application of prazosine and yohimbine the excitatory NA effect was significantly (~60%) attenuated in 55% (5 of 9) of the NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "During the combined application of prazosine and yohimbine the excitatory NA effect was completely blocked in 44% (4 of 9; Figure 5A) and significantly (~60%) attenuated in 55% (5 of 9; Figure 5B) of the NPY/AgRP neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3167f1c3-7c26-49cc-9478-e5c278467254",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C76",
+      "claim": "The excitatory NA effect in NPY/AgRP neurons can be mediated solely by \u03b11-ARs or by the co-activation of \u03b11-ARs and \u03b2-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments suggest that the excitatory NA effect in NPY/AgRP neurons can be mediated solely by \u03b11-ARs or by the co-activation of \u03b11-ARs and \u03b2-ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments with prazosine and yohimbine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "89e88768-cfdf-4404-aeb4-837a9d6e11f7",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C77",
+      "claim": "The selective \u03b11A-AR agonist A-61603 (1 \u00b5M) depolarized the membrane potential and increased the AP frequency in NPY/AgRP neurons similarly as a subsequent NA application.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective \u03b11A-AR agonist A-61603 (1 \u00b5M) depolarized the membrane potential and increased the AP frequency in NPY/AgRP neurons similarly as a subsequent NA application (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "3b9adaad-ec14-4b08-9908-69e6922b4de0",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C78",
+      "claim": "The selective \u03b11A-AR antagonist WB4101 (100 nM) abolished the excitatory NA response in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these data, we found that the selective \u03b11A-AR antagonist WB4101 (100 nM) abolished the excitatory NA response (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c3a373bd-60ea-49ca-9697-673bab5fc5de",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C79",
+      "claim": "Application of WB4101 resulted in an inhibitory effect, suggesting baseline activation of \u03b11A-AR in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of WB4101 resulted in an inhibitory effect, suggesting baseline activation of \u03b11A-AR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments with WB4101.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "434a3cb1-ff4d-404a-be9b-7bcf547966c0",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C80",
+      "claim": "The subtype-specific \u03b11B,D-AR antagonist chloro-ethyl-clonidine (CEC; 100 nM) did not block or alter the NA action on NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The subtype-specific \u03b11B,D-AR antagonist chloro-ethyl-clonidine (CEC; 100 nM) did not block or alter the NA action (Figure 6E,F), suggesting that \u03b11B,D-ARs do not contribute to the excitation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "64cabbfa-984d-4d86-a8ab-058753deb10c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C81",
+      "claim": "\u03b11B,D-ARs do not contribute to the excitation of NPY/AgRP neurons by NA.",
+      "claim_type": "EXPLICIT",
+      "source": "The subtype-specific \u03b11B,D-AR antagonist chloro-ethyl-clonidine (CEC; 100 nM) did not block or alter the NA action (Figure 6E,F), suggesting that \u03b11B,D-ARs do not contribute to the excitation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the pharmacological experiments with CEC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "552884bf-fd20-4775-bb59-b725df807b20",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C82",
+      "claim": "NA excites NPY/AgRP neurons via activation of \u03b11A-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that NA excites NPY/AgRP neurons via activation of \u03b11A-ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "246961e9-ff40-49ac-841e-098daa26184b",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C83",
+      "claim": "In the presence of WB4101, NA had an inhibitory effect on the NPY/AgRP membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of WB4101 NA had an inhibitory effect on the membrane potential, which was eliminated by the \u03b12A-AR antagonist BRL44408 (10 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "2f72c6a6-79c6-4432-9654-63ac669f0f15",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C84",
+      "claim": "The inhibitory effect of NA on NPY/AgRP neurons in the presence of WB4101 was eliminated by the \u03b12A-AR antagonist BRL44408 (10 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of WB4101 NA had an inhibitory effect on the membrane potential, which was eliminated by the \u03b12A-AR antagonist BRL44408 (10 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b6445f25-b782-42cf-84ff-42e126e7f788",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C85",
+      "claim": "The inhibitory \u03b12A-ARs are functional in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the inhibitory \u03b12A-ARs are functional in NPY/AgRP neurons and also support the notion that excitatory \u03b2-ARs are activated by NA, as indicated in the first set of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments with WB4101 and BRL44408.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "31c5a7c6-3f58-457f-8517-d7f929f67ad9",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C86",
+      "claim": "Excitatory \u03b2-ARs are activated by NA in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the inhibitory \u03b12A-ARs are functional in NPY/AgRP neurons and also support the notion that excitatory \u03b2-ARs are activated by NA, as indicated in the first set of experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "fc520d86-337a-45d9-9188-eb92bacf88fe",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C87",
+      "claim": "All receptors identified by cell-type specific transcriptomics are functional in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data indicate that all receptors, which were identified by cell-type specific transcriptomics, are functional in NPY/AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from combining transcriptomic and pharmacological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "79bf86d6-4b2f-4b73-af54-212941cf48cd",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C88",
+      "claim": "The excitatory NA effect observed in virtually all NPY/AgRP neurons is predominantly mediated by \u03b11A-ARs and might be in some neurons co-mediated by \u03b2-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "The excitatory NA effect that we observed in virtually all neurons is predominantly mediated by \u03b11A-ARs and might be in some neurons co-mediated by \u03b2-ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d8a2c78b-bc2b-44f4-a3f1-0f990f94ee83",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C89",
+      "claim": "The activation of excitatory AR interferes with the activation of inhibitory \u03b12A-ARs in NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of excitatory AR interferes with the activation of inhibitory \u03b12A-ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pharmacological experiments showing that blocking excitatory receptors reveals inhibitory effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d53783f4-8dc9-4430-91be-854de64d865f",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C90",
+      "claim": "The \u03b12A-AR antagonist BRL 44408 (10 \u00b5M) blocked the NA mediated inhibitory effect on POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b12A-AR antagonist BRL 44408 (10 \u00b5M) blocked the NA mediated inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ee1c8255-f5cd-42e3-96a7-1efb398cb674",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C91",
+      "claim": "Application of 10 \u00b5M BRL 44408 alone did not significantly alter the recorded electrophysiological properties of POMC neurons, suggesting no baseline activity of \u03b12A-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 10 \u00b5M BRL 44408 alone, did not significantly alter the recorded electrophysiological properties, suggesting no baseline activity of \u03b12A-ARs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "5427d8e5-b4a9-452e-9a9d-ea95f1e11d24",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C92",
+      "claim": "The specific \u03b12B-AR antagonist ARC 239 (1 \u00b5M) did not change the inhibitory effect of NA on POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific \u03b12B-AR antagonist ARC 239 (1 \u00b5M) did not change the inhibitory effect of NA, which suggests that the inhibitory NA action is solely mediated by \u03b12A-ARs (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "631670c5-70c8-403a-b76b-a9abcedb7aef",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C93",
+      "claim": "The inhibitory NA action on POMC neurons is solely mediated by \u03b12A-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific \u03b12B-AR antagonist ARC 239 (1 \u00b5M) did not change the inhibitory effect of NA, which suggests that the inhibitory NA action is solely mediated by \u03b12A-ARs (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the pharmacological experiments with ARC 239.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "36e9301c-d942-42cc-8831-2bcf5838d35f",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C94",
+      "claim": "When the inhibitory \u03b12-ARs were blocked by yohimbine (5 \u00b5M), NA excited POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When the inhibitory \u03b12-ARs were blocked by yohimbine (5 \u00b5M), NA excited POMC neurons (Figure 7D; paired t-test, n = 10, p=0.0168).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "609ec33a-3249-4df1-924c-31a9bcc2a38c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C95",
+      "claim": "The excitation of POMC neurons by NA in the presence of yohimbine was completely abolished by the \u03b11-AR antagonist prazosine (5 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "This excitation was completely abolished by the \u03b11-AR antagonist prazosine (5 \u00b5M), showing the functionality of \u03b11-ARs in POMC neurons (Figure 7E; paired t-test, n = 6, p=0.2467).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from pharmacological experiments shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "50f1cf90-ca4f-4e7f-99c2-ea586b6ef86e",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C96",
+      "claim": "\u03b11-ARs are functional in POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This excitation was completely abolished by the \u03b11-AR antagonist prazosine (5 \u00b5M), showing the functionality of \u03b11-ARs in POMC neurons (Figure 7E; paired t-test, n = 6, p=0.2467).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "36bf32b9-b9ec-420a-921e-0b61a7911470",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C97",
+      "claim": "The NA-induced inhibition of POMC neurons is mediated by \u03b12A-AR and can mask the activation of excitatory \u03b11-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results show that the NA-induced inhibition of POMC neurons is mediated by \u03b12A-AR and can mask the activation of excitatory \u03b11-ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1eabb1f9-9330-4607-b902-bd3bcb0b2dac",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C98",
+      "claim": "NA directly modulates NPY/AgRP and POMC neurons of the ARH for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show for the first time that NA directly modulates NPY/AgRP and POMC neurons of the ARH, which are key components of the neuronal circuits that control food intake and energy homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "740ec492-1c3c-476a-af0d-7c12033db834",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C99",
+      "claim": "The strong differential modulation of NPY/AgRP and POMC neurons by NA was reproducible in virtually all recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong differential modulation, which was reproducible in virtually all recorded neurons, is remarkable, since other important fuel sensing modulators like insulin, leptin, glucose, oleic acid and UDP typically affect only a subpopulation of these neurons (Jo et al., 2009; Parton et al., 2007; Steculorum et al., 2015; Williams et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data compared to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "eb7724dd-6120-4c8e-97a9-af26e6e37343",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C100",
+      "claim": "Other important fuel sensing modulators like insulin, leptin, glucose, oleic acid and UDP typically affect only a subpopulation of NPY/AgRP and POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong differential modulation, which was reproducible in virtually all recorded neurons, is remarkable, since other important fuel sensing modulators like insulin, leptin, glucose, oleic acid and UDP typically affect only a subpopulation of these neurons (Jo et al., 2009; Parton et al., 2007; Steculorum et al., 2015; Williams et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8ad81c0e-ecc2-47fd-aa97-07ff191bc41c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C101",
+      "claim": "The clear differential NA modulation of functionally antagonistic neuron types should generate a strong orexigenic drive on the homeostatic circuits of the ARH.",
+      "claim_type": "EXPLICIT",
+      "source": "On the network and systems level, this clear differential NA modulation of functionally antagonistic neuron types should generate a strong orexigenic drive on the homeostatic circuits of the ARH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental findings about opposite effects on orexigenic and anorexigenic neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "bf9c6ee8-80cb-4275-8a73-9f59635e2cc4",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C102",
+      "claim": "Injection of NA into the third ventricle increased food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is consistent with early behavioral experiments from Clark et al. (1988) showing that injection of NA into the third ventricle increased food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous behavioral research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "cce268d2-34a8-4101-91bc-e16a85236f61",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C103",
+      "claim": "Blockade of \u03b12-AR attenuated the NA-induced feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the authors showed that blockade of \u03b12-AR attenuated the NA-induced feeding behavior, which is in line with our finding that satiety signaling POMC- neurons are inhibited by NA via \u03b12-AR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous behavioral research (Clark et al., 1988).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "293934ca-fa63-4fb9-9423-cb25d56d45dc",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C104",
+      "claim": "The modulatory effects of NA were observed in synaptically isolated neurons, suggesting that NA directly activated intrinsically expressed ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the modulatory effects of NA were observed in synaptically isolated neurons, the data suggest that NA directly activated intrinsically expressed ARs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the synaptic isolation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d259d683-fb46-41a7-806a-879bf06216bc",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C105",
+      "claim": "The cell type-specific transcriptomic data is in line with recent data from Henry et al. (2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Our cell type-specific transcriptomic data showed expression of excitatory and inhibitory receptor subtypes in both NPY/AgRP and POMC neurons, which is in line with recent data from Henry et al. (2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous research.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "169edcfa-453f-47a3-895c-a5aa3683eb7d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C106",
+      "claim": "In NPY/AgRP neurons, the robust excitation is mediated by excitatory \u03b11A- and \u03b2-ARs.",
+      "claim_type": "EXPLICIT",
+      "source": "While in NPY/AgRP the robust excitation is mediated by excitatory \u03b11A- and \u03b2-ARs, \u03b12A-ARs mediated the strong inhibition in POMC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1d0f4b7d-fd5f-4d04-81ac-01adb08e22c2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C107",
+      "claim": "\u03b12A-ARs mediated the strong inhibition in POMC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While in NPY/AgRP the robust excitation is mediated by excitatory \u03b11A- and \u03b2-ARs, \u03b12A-ARs mediated the strong inhibition in POMC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "95e7af30-991d-4dd6-8bfc-d26ad5a9c40b",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C108",
+      "claim": "Simultaneous expression of excitatory and inhibitory adrenergic receptors has been found in neurons of the LC.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous expression of excitatory and inhibitory adrenergic receptors has been found in neurons of the LC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "538d6ea2-7411-47b2-8f0e-c079e7e2f640",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C109",
+      "claim": "In juvenile mice, mRNA for excitatory \u03b11A,B,D- and inhibitory \u03b12A,B,C-ARs has been detected in LC neurons and application of NA caused excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In juvenile mice, mRNA for excitatory \u03b11A,B,D- and inhibitory \u03b12A,B,C-ARs has been detected and application of NA caused excitation, while in adult mice NA hyperpolarizes LC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Osborne et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ec6115ca-f0b8-4102-b358-8565421466c1",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C110",
+      "claim": "In adult mice, NA hyperpolarizes LC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In juvenile mice, mRNA for excitatory \u03b11A,B,D- and inhibitory \u03b12A,B,C-ARs has been detected and application of NA caused excitation, while in adult mice NA hyperpolarizes LC neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Osborne et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "8d8dbedd-13e5-4971-9ded-6da6520598a0",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C111",
+      "claim": "In adult LC neurons, \u03b11-ARs attenuate the NA-induced hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, \u03b11-ARs attenuate the NA-induced hyperpolarization (Osborne et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "78dd61ab-5ec6-42bc-a505-0604c85f5c84",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C112",
+      "claim": "POMC neurons might change their response to NA during development.",
+      "claim_type": "EXPLICIT",
+      "source": "As in LC neurons, POMC neurons might change their response to NA during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the LC neuron example.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1e0d8e7f-cd29-487f-b6ce-31ec46cd26a8",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C113",
+      "claim": "In the ARH, developmental changes of electrophysiological responses to leptin have been described for NPY/AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ARH developmental changes of electrophysiological responses to leptin have been described for NPY/AgRP neurons (Baquero et al., 2014; Nilsson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "15a64d65-6cd1-48fa-af2a-39beb89b8406",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C114",
+      "claim": "Simultaneous expression of excitatory and inhibitory ARs has been found in dentate neurons of the human cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous expression of excitatory and inhibitory ARs has also been found in dentate neurons of the human cerebellum (Schambra et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d9852156-7c33-4ff1-9b89-093e28dcae73",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C115",
+      "claim": "In dentate neurons of the human cerebellum, \u03b12B-ARs are thought to modulate excitatory glutamatergic input.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, \u03b12B-ARs are thought to modulate excitatory glutamatergic input, while \u03b11A,B-ARs may play a role in timing and computation of inhibitory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Schambra et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "6fcf4536-07e3-46e5-b62f-027aec6173b3",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C116",
+      "claim": "In dentate neurons of the human cerebellum, \u03b11A,B-ARs may play a role in timing and computation of inhibitory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, \u03b12B-ARs are thought to modulate excitatory glutamatergic input, while \u03b11A,B-ARs may play a role in timing and computation of inhibitory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Schambra et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "20c90502-c86b-49ee-80de-967e2b5a31d0",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C117",
+      "claim": "Previous studies in dentate neurons of the cerebellum suggested that \u03b11-ARs are expressed on the cell body while \u03b12-ARs are expressed on the terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in dentate neurons of the cerebellum suggested that \u03b11-ARs are expressed on the cell body while \u03b12-ARs are expressed on the terminals, in order to locally regulate transmitter release (Milner et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "ab00e535-5dec-40db-86bb-44693f8901e7",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C118",
+      "claim": "There is evidence from early work that catecholamines can cross the blood brain barrier in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "While the blood brain barrier in adult animals is considered mostly impermeable for catecholamines, there is evidence from early work that catecholamines can cross the blood brain barrier in the hypothalamus (Weil-Malherbe et al., 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "79570990-108d-4203-b117-df5bab89a13d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C119",
+      "claim": "The site specific effects of local lesions and local NA injections into the hypothalamus might argue for local, site specific NA release from neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the site specific effects of local lesions and local NA injections into the hypothalamus might argue for local, site specific NA release from neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from previous lesion and injection studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "e9f39cdc-0336-44f6-b0d7-db7cbd31a9ee",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C120",
+      "claim": "Specific deletion of projections from the ventro-lateral medulla (A1/C1 cell group) is sufficient to eliminate an increase in AgRP and NPY mRNA expression in response to glucoprivation induced by 2-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific deletion of projections from the ventro-lateral medulla (A1/C1 cell group) is sufficient to eliminate an increase in AgRP and NPY mRNA expression in response to glucoprivation induced by 2-DG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research (Fraley and Ritter, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "dbc17060-2a02-46ff-ab5a-a5d26d6f675d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C121",
+      "claim": "Homeostatic feeding in response to local hypoglycemia in the hindbrain was decreased by specific deletion of projections from the ventro-lateral medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, homeostatic feeding in response to local hypoglycemia in the hindbrain was decreased (Fraley and Ritter, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b832d1a4-ac34-4193-885d-42c152222967",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C122",
+      "claim": "NA release into the ARH upon LC activation generates an orexigenic drive to compensate for the required energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, our data suggest that NA release into the ARH upon LC activation generates an orexigenic drive to compensate for the required energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data in the context of the LC model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "431b9fa9-92e3-4ea3-a300-1ccd8ee62a97",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C123",
+      "claim": "NA injections into the hypothalamus elicit food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, previous studies revealed that NA injections into the hypothalamus elicit food intake (Booth, 1967; Leibowitz, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous behavioral research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "0e9cb106-ee62-4792-89ad-9360633e4797",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C124",
+      "claim": "Insulin selectively decreased \u03b12-AR expression in the ARH and dorsomedial hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "While insulin selectively decreased \u03b12-AR expression in the ARH and dorsomedial hypothalamus (Levin et al., 1998), leptin inhibits NA release in rats (Brunetti et al., 1999; Francis et al., 2004), Both effects would augment the net anorexigenic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "47fb4552-9ae8-4c25-9d05-b2cf5ccb6d21",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C125",
+      "claim": "Leptin inhibits NA release in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "While insulin selectively decreased \u03b12-AR expression in the ARH and dorsomedial hypothalamus (Levin et al., 1998), leptin inhibits NA release in rats (Brunetti et al., 1999; Francis et al., 2004), Both effects would augment the net anorexigenic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "b162bbb5-091b-43d2-b7c3-3b61e998683a",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C126",
+      "claim": "Both insulin decreasing \u03b12-AR expression and leptin inhibiting NA release would augment the net anorexigenic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "While insulin selectively decreased \u03b12-AR expression in the ARH and dorsomedial hypothalamus (Levin et al., 1998), leptin inhibits NA release in rats (Brunetti et al., 1999; Francis et al., 2004), Both effects would augment the net anorexigenic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited effects of insulin and leptin.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "c40469c8-27da-48ce-96cf-4e00dbf8a7f4",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C127",
+      "claim": "Obese mice that lack the gene to produce leptin (Lepob/ob) exhibit increased NA levels within the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the latter relation, obese mice that lack the gene to produce leptin (Lepob/ob) exhibit increased NA levels within the hypothalamus, which further decreases the anorexigenic signal (Oltmans, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "00f83d48-82c9-4a7d-a9db-186322cb799c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C128",
+      "claim": "Increased NA levels in Lepob/ob mice further decreases the anorexigenic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the latter relation, obese mice that lack the gene to produce leptin (Lepob/ob) exhibit increased NA levels within the hypothalamus, which further decreases the anorexigenic signal (Oltmans, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited research on Lepob/ob mice.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "4e19dd2d-1957-4e74-8a1f-3dcc06542ea9",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C129",
+      "claim": "Several drugs that were developed to modify food intake act on the monoaminergic transmitter system in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Several drugs that were developed to modify food intake, act on the monoaminergic transmitter system in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about anti-obesity drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "71bfa3f3-9383-4fb7-a17b-ac74f4e577de",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C130",
+      "claim": "Anti-obesity drugs often cause strong side effects because the molecular and cellular targets that mediate their effects are often not clearly identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the molecular and cellular targets that mediate the effects of these drugs are often not clearly identified, they often cause strong side effects (Hainer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "cb433bb0-5a10-4dc7-899f-a86e096a1ee4",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "claim_id": "C131",
+      "claim": "The current findings reveal cell type-specific pathways that mediate NA modulation in the ARH and might help to better define specific targets for anti-obesity drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the current findings reveal cell type-specific pathways that mediate NA modulation in the ARH they might help to better define specific targets for anti-obesity drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential application of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f72f6710-4406-4581-9015-015e84c35157",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that NPY/AgRP neurons are orexigenic (hunger-signaling) and POMC neurons are anorexigenic (satiety-signaling), and that both are key components of energy homeostasis circuits in the ARH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C12 represent well-established background knowledge supported by appropriate citations. These claims provide the foundational context for the study and are consistently supported in the neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Noradrenalin has opposite effects on NPY/AgRP and POMC neurons: it depolarizes and increases firing frequency in NPY/AgRP neurons (from 2.0\u00b10.9 Hz to 5.0\u00b11.0 Hz, p=0.0012) while hyperpolarizing and decreasing firing in POMC neurons (from 3.5\u00b11.1 to 0.7\u00b10.7 Hz, p=0.0156).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C38-C42 are well-supported by perforated patch clamp recordings shown in Figure 1. The data demonstrate statistically significant opposite effects with appropriate statistical tests (Wilcoxon matched pairs signed rank test, n=8 for each cell type). The effects were rapid and reversible, supporting direct modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NA excites NPY/AgRP neurons in a concentration-dependent manner starting at 100 nM, with maximal effects at 10 \u00b5M (firing increased from 2.2\u00b10.8 to 4.7\u00b10.8 Hz, membrane depolarized by 5.1\u00b11.0 mV). The effect is mediated by cell-intrinsic adrenergic receptors as demonstrated by synaptic isolation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 are supported by comprehensive concentration-response data in Figure 2 with appropriate EC50 determinations (1.9 \u00b5M for depolarization, 1.5 \u00b5M for firing frequency). Synaptic isolation experiments (Figure 2D,E) convincingly demonstrate that effects are cell-intrinsic and not mediated by presynaptic inputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "62008ed0-e944-4632-b66c-af0ea186c50c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NA inhibits POMC neurons in a concentration-dependent manner starting at 100 nM, with maximal effects at 10 \u00b5M (hyperpolarization of 18.6\u00b13.2 mV, conductance increase from 647\u00b1106 to 1546\u00b1266 pS). The effect is predominantly cell-intrinsic with a small (~16%) presynaptic contribution likely from NA-excited NPY/AgRP neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C61 are well-supported by concentration-response data in Figure 3 with appropriate EC50 values (0.9 \u00b5M for hyperpolarization, 1.3 \u00b5M for conductance). The synaptic isolation experiments (Figure 3D,E) appropriately demonstrate predominantly direct effects with a modest presynaptic component. The inference about NPY/AgRP contribution (C61) is reasonable given known circuit connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell type-specific transcriptomics reveals differential expression of adrenergic receptors: NPY/AgRP neurons express all AR subtypes except \u03b11D and \u03b12B, while POMC neurons only express \u03b11A and \u03b12A receptors at lower levels. RNA in situ hybridization confirms Adra1a and Adra2a expression in both cell types, with Adrb1 and Adrb2 expressed only in NPY/AgRP neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C73 are supported by transcriptomic analysis (4482 differentially expressed genes, FC\u22652, p\u22640.01) and validated by RNA in situ hybridization (Figure 4). The 147-fold enrichment of Pomc validates cell sorting. However, the lack of statistical significance for Npy/Agrp enrichment (C64) is a minor concern for sorting validation, though the biological interpretation remains sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "9651d924-8fb5-4146-a681-2b0398f11566",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pharmacological experiments demonstrate that NA excitation of NPY/AgRP neurons is predominantly mediated by \u03b11A-ARs, with possible co-activation of \u03b2-ARs in some neurons. The \u03b11A-AR agonist A-61603 mimics NA effects, while the \u03b11A-AR antagonist WB4101 abolishes excitation. Functional \u03b12A-ARs and \u03b2-ARs are also present but their inhibitory/excitatory effects are masked by dominant \u03b11A-AR activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C89 are well-supported by systematic pharmacological dissection using selective agonists and antagonists (Figures 5-6). The data show that \u03b11/\u03b12 blockade eliminated excitation in 44% and attenuated it ~60% in 55% of neurons (C74-C75), supporting heterogeneity. The \u03b11A-AR specificity is convincingly demonstrated by A-61603 mimicking NA and WB4101 blocking it, while CEC (\u03b11B,D antagonist) had no effect. The unmasking of \u03b12A-AR inhibition by WB4101 (C83-C84) provides strong evidence for receptor co-expression and functional interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "db61abfd-87cc-47fa-b942-1ac486f4c04c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NA inhibition of POMC neurons is mediated solely by \u03b12A-ARs, as demonstrated by blockade with BRL44408 but not ARC239 (\u03b12B antagonist). Functional \u03b11-ARs are also present but their excitatory effects are masked by dominant \u03b12A-AR inhibition, as revealed when \u03b12-ARs are blocked with yohimbine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C97 are well-supported by pharmacological experiments in Figure 7. The \u03b12A-AR specificity is convincingly shown by BRL44408 blocking inhibition while ARC239 (\u03b12B antagonist) has no effect. The unmasking of \u03b11-AR-mediated excitation by yohimbine (C94), which is then blocked by prazosine (C95), provides strong evidence for functional \u03b11-ARs. However, the p-value for prazosine blockade (p=0.2467, C95) indicates no significant difference, which contradicts the claim that excitation was 'completely abolished.' This is a statistical inconsistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "f6944ce8-0df5-4d37-8768-30702877f38e",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The coordinated differential modulation of NPY/AgRP and POMC neurons by NA\u2014excitation via \u03b11A/\u03b2-ARs and inhibition via \u03b12A-ARs respectively\u2014generates a strong orexigenic drive, assigning NA an important role in promoting feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C98-C99, C101, C106-C107, and C122 represent the main conclusions integrating electrophysiological, transcriptomic, and pharmacological data. The opposite effects on functionally antagonistic neurons are well-documented and reproducible across virtually all recorded neurons (C99), which is notable compared to other modulators that affect only subpopulations. The inference of orexigenic drive (C8, C101, C122) is logical given the coordinated activation of hunger-promoting and inhibition of satiety-promoting neurons, though direct behavioral validation is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1a30943e-d0b0-41fc-b2be-45d337b13f71",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work establishes that multiple metabolic factors (insulin, leptin, glucose) modulate POMC/AgRP neurons, and that noradrenergic projections from hindbrain and LC to ARH exist in rats. Manipulation of noradrenergic systems affects feeding behavior in site-specific ways, though the direct effects of NA on identified ARH neurons were not well defined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C28 represent background knowledge appropriately supported by citations. These establish the rationale for the current study by documenting that while NA's role in feeding is known from lesion and injection studies, direct cellular mechanisms in identified ARH neurons were undefined (C16). The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "fa856b05-7c5a-4770-bd06-e5c2b9e308f2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Based on primate studies, the LC is hypothesized to mobilize energy for anticipated physical challenges, with LC activity related to energetic need. NA release in the ARH may promote compensatory energy intake in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 and C122 represent a hypothesis from cited primate work (Bouret and Richmond, 2015; Varazzani et al., 2015) that is used to contextualize the findings. While the current data on NA effects are consistent with this model, the study does not directly test LC activation or behavioral outcomes. The connection between the cellular findings and this systems-level hypothesis remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "a66dffe6-3c29-4271-8ec5-44185c677f2c",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NA and adrenalin activate three major classes of GPCRs (\u03b11, \u03b12, \u03b2-ARs) with distinct signaling properties: \u03b11-ARs couple to Gq/11 (excitatory), \u03b12-ARs couple to Gi/o (inhibitory), and \u03b2-ARs couple to Gs (excitatory).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 represent established knowledge about adrenergic receptor signaling, appropriately cited (Hein, 2006; Marzo et al., 2009). This provides necessary background for interpreting the pharmacological experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "e724ee6f-a570-4319-bc0a-41e91adf62aa",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Most NPY/AgRP and POMC neurons are spontaneously active under control conditions, as previously described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by multiple citations to previous work and are consistent with the baseline recordings shown in the figures. This establishes the normal physiological state of these neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "14e76868-50b4-4122-a8ed-e6652435423f",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The current findings are contextualized by comparison to other modulators (insulin, leptin, glucose, oleic acid, UDP) that typically affect only subpopulations of these neurons, and are consistent with previous behavioral studies showing NA injections increase food intake with \u03b12-AR involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100, C102-C105 appropriately contextualize the findings within existing literature. The comparison to other modulators (C100) highlights the unusual consistency of NA effects across neurons. The consistency with behavioral studies (C102-C103) strengthens the physiological relevance, though these are correlative rather than direct validations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "03cd00e8-4103-46ea-a8f4-595bf08c5930",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings by noting that simultaneous expression of excitatory and inhibitory ARs has been found in other neuron types (LC, cerebellar dentate neurons), where receptor balance can change developmentally or provide compartmentalized regulation. Similar developmental changes might occur in POMC neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C117 appropriately cite precedents for co-expression of excitatory and inhibitory ARs in other systems. The speculation about developmental changes in POMC neurons (C112) is reasonable given the LC precedent and evidence for developmental changes in leptin responses in NPY/AgRP neurons (C113), though this remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "0700ef48-6a5a-4682-9650-764da47408c2",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The discussion addresses the source of NA, noting evidence that catecholamines may cross the blood-brain barrier in the hypothalamus, though site-specific effects of lesions and injections suggest local neuronal release. Specific deletion of ventrolateral medulla projections eliminates glucoprivation-induced increases in AgRP/NPY expression and decreases homeostatic feeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C121 and C123 appropriately cite evidence about NA sources and their functional relevance. The discussion balances evidence for peripheral vs. central sources while acknowledging that site-specific effects favor neuronal release. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "17a606e4-2798-48a6-9410-f54d22336b8d",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discussion notes that insulin decreases \u03b12-AR expression in ARH while leptin inhibits NA release, both augmenting anorexigenic signaling. Leptin-deficient ob/ob mice show increased hypothalamic NA levels, further decreasing anorexigenic signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C128 appropriately cite interactions between metabolic hormones and the noradrenergic system. The inference that both insulin and leptin effects would augment anorexigenic signaling (C126, C128) is logical given the demonstrated mechanisms, though these represent correlations from different studies rather than integrated experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    },
+    {
+      "id": "1a0cd956-fc0f-4d25-8b95-fc6ccc64f75f",
+      "content_id": "7f747c32-83e9-482c-89d3-75f3cdef4fe0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study is motivated by the need to understand cellular mechanisms for developing specific pharmacological strategies for obesity treatment. Current anti-obesity drugs acting on monoaminergic systems often cause side effects due to poorly defined targets. The current findings revealing cell type-specific pathways might help define specific targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C129-C131 represent the translational motivation and potential application of the findings. While the rationale is sound and the cellular mechanisms are well-defined, the claim that findings 'might help to better define specific targets' (C131) is speculative. No drug development, target validation, or behavioral studies are presented to support therapeutic potential. This represents future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:47.827434Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc0d2d3a-8420-4a19-ab0f-986e69763a1f",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "327cd36f-7d95-49f0-a83b-f4ac56d9d924",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "4363480d-b5fa-49c2-a353-9f0a8e6c688c",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "3270b40a-3596-4cc5-86eb-7d2c1f9c6f48",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "665e56fa-6734-40d4-920a-42fb3e7c7a68",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "e4044e83-adf1-4ee5-a2b2-0b97384deb95",
+      "result_id": "f72f6710-4406-4581-9015-015e84c35157"
+    },
+    {
+      "claim_id": "c8ccc01b-86b7-47d3-a025-4535abe98cc3",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "fafa06df-dd2c-4224-afd5-97d63be47332",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "0155e515-d484-463a-868d-929b3baf4bd7",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "04d2d179-45ce-46b4-bfa6-377335f384ea",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "2dc149fd-86ab-47cc-90f6-bc6a9977e6da",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "6cf371f5-7e7a-460e-b167-0f05aa0018ef",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "ec3e2815-f000-4658-8e28-9cda8366ebbc",
+      "result_id": "d9b68c39-06ba-4c00-b5f8-71d5c4ec31e4"
+    },
+    {
+      "claim_id": "214566a9-b853-402d-8a56-85af3c7bfd95",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "007eaaae-8bf5-46ab-b6a2-964ecb118865",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "18050c33-3948-412b-914e-0d00e9ed4b0d",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "ceddf56d-0b63-434e-931c-a64435af9739",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "2f76c383-be19-495c-8e05-80bc204fd924",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "5a1efa2d-fd69-4f02-9a2d-913fd2938fb2",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "18646dfc-a564-48da-bdc2-e97c2983c5a2",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "762b8b0e-6977-4dad-9a48-21896ab6d035",
+      "result_id": "60fcd3f2-45a9-4fb8-853a-cc3d31af60dc"
+    },
+    {
+      "claim_id": "e8733163-87ad-4bba-b6b6-a6d0eb2522f3",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "2388801c-c3a4-43a7-a123-611aafe366b8",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "5eab4a26-008a-4d49-8942-44e851f3b6fa",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "f7ca5317-3da6-4c82-aecb-dcd5f0fbdc7c",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "3826da63-d884-432d-88d2-1b2b1bb01010",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "4651234d-3b53-43dd-830b-b3596bb46994",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "f2cf9c40-7353-4dd0-89f2-a7eb3b5364e4",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "3c4fbb89-964a-4db1-9a59-ef18c4de486c",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "c65292cd-105e-4a01-9ee9-da412b4202d2",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "b33df0ec-f103-492b-a633-9abc468ef622",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "31f9ba13-e8d1-45c0-908a-fcff93e648c6",
+      "result_id": "62008ed0-e944-4632-b66c-af0ea186c50c"
+    },
+    {
+      "claim_id": "97d2600a-460e-4d57-bc60-94ffafe1d63c",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "54f17aae-93c6-4393-8c22-c1d23652b517",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "68841c34-83c4-44d1-b170-d5aad0fc0ccf",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "86984035-82dc-4c1e-97f7-e832fd514d42",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "0eb3e09c-3fa0-4fbf-9222-219c328d56c9",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "ddc10df1-f6c3-4efa-bd6c-6c2db6e0cfa2",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "1fa890f6-f0ae-4bb6-b82b-159005d0e293",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "c8271dfc-5146-45aa-a54f-0b4b9f22d67d",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "8562a822-683f-434a-bfab-e1ce064a9add",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "329d768b-2cb6-4acf-a9e4-3f97a6f79d88",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "c9096525-383a-49af-9c7b-08176a895631",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "c2b40204-20f2-45b4-bb15-0069e9f59d13",
+      "result_id": "93feb02c-d70f-4714-8f08-8c6cb19d66b6"
+    },
+    {
+      "claim_id": "2da9526d-f217-4ed3-9956-86448dbfbd4a",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "5736f0d2-51df-499b-badd-cebde965c4c8",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "3167f1c3-7c26-49cc-9478-e5c278467254",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "89e88768-cfdf-4404-aeb4-837a9d6e11f7",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "3b9adaad-ec14-4b08-9908-69e6922b4de0",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "c3a373bd-60ea-49ca-9697-673bab5fc5de",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "434a3cb1-ff4d-404a-be9b-7bcf547966c0",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "64cabbfa-984d-4d86-a8ab-058753deb10c",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "552884bf-fd20-4775-bb59-b725df807b20",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "246961e9-ff40-49ac-841e-098daa26184b",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "2f72c6a6-79c6-4432-9654-63ac669f0f15",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "b6445f25-b782-42cf-84ff-42e126e7f788",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "31c5a7c6-3f58-457f-8517-d7f929f67ad9",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "fc520d86-337a-45d9-9188-eb92bacf88fe",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "79bf86d6-4b2f-4b73-af54-212941cf48cd",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "d8a2c78b-bc2b-44f4-a3f1-0f990f94ee83",
+      "result_id": "9651d924-8fb5-4146-a681-2b0398f11566"
+    },
+    {
+      "claim_id": "d53783f4-8dc9-4430-91be-854de64d865f",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "ee1c8255-f5cd-42e3-96a7-1efb398cb674",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "5427d8e5-b4a9-452e-9a9d-ea95f1e11d24",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "631670c5-70c8-403a-b76b-a9abcedb7aef",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "36e9301c-d942-42cc-8831-2bcf5838d35f",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "609ec33a-3249-4df1-924c-31a9bcc2a38c",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "50f1cf90-ca4f-4e7f-99c2-ea586b6ef86e",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "36bf32b9-b9ec-420a-921e-0b61a7911470",
+      "result_id": "db61abfd-87cc-47fa-b942-1ac486f4c04c"
+    },
+    {
+      "claim_id": "8465e828-e3ba-40fc-a579-66a00e577b19",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "e6b26a75-6bf9-4d56-a7ef-73c1f6122dfc",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "0455131b-0486-4581-8ba0-d7a13e487701",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "1eabb1f9-9330-4607-b902-bd3bcb0b2dac",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "740ec492-1c3c-476a-af0d-7c12033db834",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "8ad81c0e-ecc2-47fd-aa97-07ff191bc41c",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "169edcfa-453f-47a3-895c-a5aa3683eb7d",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "1d0f4b7d-fd5f-4d04-81ac-01adb08e22c2",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "b832d1a4-ac34-4193-885d-42c152222967",
+      "result_id": "f6944ce8-0df5-4d37-8768-30702877f38e"
+    },
+    {
+      "claim_id": "b934db1d-5a40-4ddf-ac3c-64a25b6fecef",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "5e3e29da-bfd8-44da-bfbb-785283cd7a77",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "ae354865-59a3-4b26-b2aa-167dae6f4f63",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "6dd982d4-999e-4419-9e68-6a27e0790105",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "c3bfe1fc-73eb-455f-987f-bcfa68097aec",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "26e613ac-26a7-4cae-9396-654ef31802fe",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "762cc446-cd54-452a-aac1-45b737ee47d0",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "67423af9-e417-47f4-a929-b95b4683465b",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "598f247d-b8b4-4c62-b657-04a1366f4cb8",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "3d60a1ab-6b59-4fa3-ab05-0a03872a47fe",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "6b8617f2-1e70-4fcf-b1f4-91184cba2a2b",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "b18a3476-d5b1-4934-bb54-cef233876099",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "96aec74c-3cd8-424a-a89a-258c0519bd22",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "d2492edc-8369-4338-b985-246d13ea441a",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "108b6cca-b8ca-4918-b340-7067dac1581a",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "739f2513-409c-40d9-bfdf-384fc6697650",
+      "result_id": "1a30943e-d0b0-41fc-b2be-45d337b13f71"
+    },
+    {
+      "claim_id": "165afcf4-9a05-40cb-b580-625a1a5466b3",
+      "result_id": "fa856b05-7c5a-4770-bd06-e5c2b9e308f2"
+    },
+    {
+      "claim_id": "6942fa8d-9641-4893-8bdf-6b102657df5c",
+      "result_id": "fa856b05-7c5a-4770-bd06-e5c2b9e308f2"
+    },
+    {
+      "claim_id": "b5414214-2b8b-4437-87d8-0004ebd41209",
+      "result_id": "fa856b05-7c5a-4770-bd06-e5c2b9e308f2"
+    },
+    {
+      "claim_id": "b832d1a4-ac34-4193-885d-42c152222967",
+      "result_id": "fa856b05-7c5a-4770-bd06-e5c2b9e308f2"
+    },
+    {
+      "claim_id": "dd4ebe0b-6df8-4733-bf8c-e93789377ebe",
+      "result_id": "a66dffe6-3c29-4271-8ec5-44185c677f2c"
+    },
+    {
+      "claim_id": "a36ca3a1-d60e-4015-8733-c67f588f66e5",
+      "result_id": "a66dffe6-3c29-4271-8ec5-44185c677f2c"
+    },
+    {
+      "claim_id": "fc3a2d3b-dc39-42e4-9f9f-ffaa99476fdb",
+      "result_id": "a66dffe6-3c29-4271-8ec5-44185c677f2c"
+    },
+    {
+      "claim_id": "8ea4121f-e0c6-40d7-88c9-777a0a779e96",
+      "result_id": "a66dffe6-3c29-4271-8ec5-44185c677f2c"
+    },
+    {
+      "claim_id": "40248fdb-6eb6-4949-ad85-45a45d850b40",
+      "result_id": "e724ee6f-a570-4319-bc0a-41e91adf62aa"
+    },
+    {
+      "claim_id": "4a3e92be-2e7e-491f-84a3-48425cd27cc5",
+      "result_id": "e724ee6f-a570-4319-bc0a-41e91adf62aa"
+    },
+    {
+      "claim_id": "eb7724dd-6120-4c8e-97a9-af26e6e37343",
+      "result_id": "14e76868-50b4-4122-a8ed-e6652435423f"
+    },
+    {
+      "claim_id": "bf9c6ee8-80cb-4275-8a73-9f59635e2cc4",
+      "result_id": "14e76868-50b4-4122-a8ed-e6652435423f"
+    },
+    {
+      "claim_id": "cce268d2-34a8-4101-91bc-e16a85236f61",
+      "result_id": "14e76868-50b4-4122-a8ed-e6652435423f"
+    },
+    {
+      "claim_id": "293934ca-fa63-4fb9-9423-cb25d56d45dc",
+      "result_id": "14e76868-50b4-4122-a8ed-e6652435423f"
+    },
+    {
+      "claim_id": "d259d683-fb46-41a7-806a-879bf06216bc",
+      "result_id": "14e76868-50b4-4122-a8ed-e6652435423f"
+    },
+    {
+      "claim_id": "95e7af30-991d-4dd6-8bfc-d26ad5a9c40b",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "538d6ea2-7411-47b2-8f0e-c079e7e2f640",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "ec6115ca-f0b8-4102-b358-8565421466c1",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "8d8dbedd-13e5-4971-9ded-6da6520598a0",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "78dd61ab-5ec6-42bc-a505-0604c85f5c84",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "1e0d8e7f-cd29-487f-b6ce-31ec46cd26a8",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "15a64d65-6cd1-48fa-af2a-39beb89b8406",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "d9852156-7c33-4ff1-9b89-093e28dcae73",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "6fcf4536-07e3-46e5-b62f-027aec6173b3",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "20c90502-c86b-49ee-80de-967e2b5a31d0",
+      "result_id": "03cd00e8-4103-46ea-a8f4-595bf08c5930"
+    },
+    {
+      "claim_id": "ab00e535-5dec-40db-86bb-44693f8901e7",
+      "result_id": "0700ef48-6a5a-4682-9650-764da47408c2"
+    },
+    {
+      "claim_id": "79570990-108d-4203-b117-df5bab89a13d",
+      "result_id": "0700ef48-6a5a-4682-9650-764da47408c2"
+    },
+    {
+      "claim_id": "e9f39cdc-0336-44f6-b0d7-db7cbd31a9ee",
+      "result_id": "0700ef48-6a5a-4682-9650-764da47408c2"
+    },
+    {
+      "claim_id": "dbc17060-2a02-46ff-ab5a-a5d26d6f675d",
+      "result_id": "0700ef48-6a5a-4682-9650-764da47408c2"
+    },
+    {
+      "claim_id": "431b9fa9-92e3-4ea3-a300-1ccd8ee62a97",
+      "result_id": "0700ef48-6a5a-4682-9650-764da47408c2"
+    },
+    {
+      "claim_id": "0e9cb106-ee62-4792-89ad-9360633e4797",
+      "result_id": "17a606e4-2798-48a6-9410-f54d22336b8d"
+    },
+    {
+      "claim_id": "47fb4552-9ae8-4c25-9d05-b2cf5ccb6d21",
+      "result_id": "17a606e4-2798-48a6-9410-f54d22336b8d"
+    },
+    {
+      "claim_id": "b162bbb5-091b-43d2-b7c3-3b61e998683a",
+      "result_id": "17a606e4-2798-48a6-9410-f54d22336b8d"
+    },
+    {
+      "claim_id": "c40469c8-27da-48ce-96cf-4e00dbf8a7f4",
+      "result_id": "17a606e4-2798-48a6-9410-f54d22336b8d"
+    },
+    {
+      "claim_id": "00f83d48-82c9-4a7d-a9db-186322cb799c",
+      "result_id": "17a606e4-2798-48a6-9410-f54d22336b8d"
+    },
+    {
+      "claim_id": "3bbdc24d-ac84-48ea-a39e-9e3d5b396f35",
+      "result_id": "1a0cd956-fc0f-4d25-8b95-fc6ccc64f75f"
+    },
+    {
+      "claim_id": "4e19dd2d-1957-4e74-8a1f-3dcc06542ea9",
+      "result_id": "1a0cd956-fc0f-4d25-8b95-fc6ccc64f75f"
+    },
+    {
+      "claim_id": "71bfa3f3-9383-4fb7-a17b-ac74f4e577de",
+      "result_id": "1a0cd956-fc0f-4d25-8b95-fc6ccc64f75f"
+    },
+    {
+      "claim_id": "cb433bb0-5a10-4dc7-899f-a86e096a1ee4",
+      "result_id": "1a0cd956-fc0f-4d25-8b95-fc6ccc64f75f"
+    }
+  ],
+  "comparisons": []
+}

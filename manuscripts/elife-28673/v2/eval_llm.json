@@ -1,0 +1,467 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Children aged 1-3 years showed variable antibody seroprevalence across 38 P. vivax antigens, with >56% achieving >10% of adult antibody levels to Pv-fam-a/PVX_088820, while none reached this threshold for antigens like GAMA, PVX_081550, or P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are directly supported by Table 1 data showing measured seroprevalence across all 38 antigens. The specific percentages and comparisons to adult antibody levels are quantified with appropriate statistical measures (median, IQR). The data presentation is clear and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40"
+    ],
+    "result": "Antibody breadth (number of antigens recognized) increased moderately with age (p=0.049) and more strongly with lifetime P. vivax exposure (p=0.030-0.001), with currently infected children recognizing more antigens than uninfected children (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C39, and C40 are supported by Figure 1 and statistical analyses using negative binomial GEE models. The p-values are reported with appropriate statistical tests, and the breadth score methodology (tertile scoring system) is clearly described. The use of molFOB as a lifetime exposure metric is validated by prior citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Overall antibody levels increased moderately with age (r=0.15, p=0.019) for 22/38 antigens, but lifetime exposure was a substantially better predictor (r=0.24, p<0.001) with 29/38 antigens showing increased levels with exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by Figure 2 and appropriate correlation analyses (Pearson and Spearman tests). The comparison between age and lifetime exposure as predictors is statistically sound, with correlation coefficients and p-values properly reported. The finding that lifetime exposure is a better predictor than age alone is well-justified given the heterogeneity in exposure among young children.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "High antibody levels to 31/38 antigens (81.6%) were associated with reduced risk of vivax malaria (IRR 0.44-0.70, p<0.001-0.035) after adjusting for confounders, with novel/understudied proteins (EBP, PVX_081550, PVX_122805, CyRPA, RBP1a, RBP2b, P41) dominating the top-10 protective antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by Figure 3 and GEE models adjusted for age, season, village, and molFOB. The statistical approach is appropriate for longitudinal data with repeated measures. The IRR values and p-values are clearly reported. The identification of novel antigens as top protective candidates is a key finding properly supported by the ranking analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In unadjusted analysis, antibodies to several P. vivax antigens showed increased risk of falciparum malaria (IRR 1.24-1.50, p=0.001-0.045), but after adjustment, no P. vivax antigens were associated with reduced falciparum malaria risk, indicating species-specific protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate appropriate statistical reasoning. The unadjusted associations reflect confounding by co-exposure (properly cited to Mueller et al., 2012), while adjusted analyses control for this. The conclusion of species-specific protection is a valid inference from the lack of cross-protection after adjustment. This addresses an important potential confounding issue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Antibody responses to the 38 antigens were significantly correlated (rho=0.14-0.995, p<0.05), with strongest correlations among DBPII alleles (rho=0.76-0.995), moderate correlations between DBPII and EBP (rho=0.36-0.48) despite 50% sequence identity, and high correlations among RBPs and MSP3\u03b1 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by Figure 4 showing correlation heatmap and Spearman correlation analyses. The correlation patterns are clearly visualized and quantified. The observation that DBPII-EBP correlations are only moderate despite 50% sequence identity is an important finding suggesting limited cross-reactivity, though functional validation would strengthen this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Potential protective efficacy (PPE) increased from <75% for single antigens to >90% for 5-38 antigen combinations, with diminishing returns beyond 20 antigens. Optimal 5-antigen combinations consistently included EBP, PVX_081550, P41, DBPII-O, RBP1a, and CyRPA, with inclusion probability not obviously associated with immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are supported by Figure 5 and the simulated annealing algorithm analysis. The computational approach is appropriate for exploring the vast combination space (2^38 combinations). The finding that 5-antigen combinations achieve >90% PPE is a key result. However, the PPE metric is based on statistical associations rather than functional validation, which is a limitation acknowledged by the authors (C148). The lack of association between immunogenicity and inclusion probability (C66-C67) is an important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Dose-response modeling revealed different antigen-specific antibody thresholds for 50% protection, with MSP3\u03b1 C-term and MSP9 N-term requiring lowest levels, followed by CyRPA, EBP, RBP1a, RBP2b, and RBP2-P2, while some antigens (Pv-fam-a/PVX_088820, SERA, PVX_114330) required very high levels or showed no protective threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are supported by Figure 6 and Bayesian dose-response modeling. The model is mathematically appropriate and adjusted for exposure (molFOB). The finding that different antigens have different threshold levels is important for vaccine design. The validation that antigen concentration on beads did not influence results (C76) addresses a potential technical confounding factor. However, the model limitation (C103) that it only includes one antigen at a time is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "High correlations among DBPII alleles likely reflect cross-reactivity due to sequence similarity (e.g., AH and C differ at only one residue), while moderate DBPII-EBP correlations despite 50% identity suggest limited cross-reactivity. For RBPs, rabbit polyclonal antibodies showed no cross-reactivity, suggesting correlated responses reflect co-acquisition with potential synergistic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 present reasonable interpretations of correlation data. The inference about DBPII cross-reactivity is supported by sequence similarity data (C85). The RBP interpretation is supported by prior experimental data (C88, Fran\u00e7a et al., 2016b). However, C83 correctly notes that functional validation is needed to definitively distinguish co-acquisition from cross-reactivity. The speculation about synergistic effects (C89) is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "While strain-specific antibodies to DBPII were observed, strain-transcending antibodies targeting the binding pocket have been described, suggesting a DBPII vaccine targeting these epitopes may overcome genetic diversity. Antigen combination analyses indicate combining DBPII with other antigens like RBPs would be beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by appropriate citations (Cole-Tobian 2009, King 2008, Chen 2016, Wongkidakarn 2016) and the combination analysis results. The inference about vaccine design (C92) is reasonable given the existence of strain-transcending antibodies, though it remains speculative without functional validation. The recommendation to combine DBPII with RBPs (C93) is supported by the combination analysis showing improved PPE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101"
+    ],
+    "result": "Novel/understudied antigens (EBP, P41, CyRPA, RBP1a, RBP2b) showed similar or stronger protective associations than established vaccine candidates (MSP3\u03b1, AMA1, MSP1, CSP). Among highly immunogenic WGCF-expressed proteins, only PVX_122805 and PVX_088820 showed substantial protection, indicating immunogenicity is a poor predictor of protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C97, C100-C101 are supported by Figure 3 ranking and combination analyses. The finding that novel antigens outperform established candidates is important and well-supported by the data. The observation that immunogenicity poorly predicts protection (C100) is supported by comparing Figure 5d (PPE) and 5e (immunogenicity). This is a key insight for vaccine development, though functional validation is still needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Despite children actively acquiring clinical immunity (Lin et al., 2010) and having relatively low antibody levels (>10% of adult levels to only 22 proteins), high levels to 31/38 proteins were significantly associated with protection, indicating antibody levels have begun to exceed the threshold where they become biomarkers of protection rather than exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 integrate prior findings (C77 citing Lin 2010) with current results. The observation that low antibody levels can still be protective (C81-C82) is supported by the GEE analyses and dose-response modeling. The inference that antibodies have transitioned from exposure markers to protection markers (C82) is reasonable given the statistical associations, though cited support (Stanisic 2015) strengthens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "RBP2b binds exclusively to reticulocytes and may be involved in P. vivax reticulocyte-specificity. P41 forms a heterodimer with P12 on the merozoite surface; in P. falciparum, neither is essential for growth but both are immunogenic with antibodies associated with protection. PVX_081550's P. falciparum homolog is a parasitophorous vacuole lipid transfer protein, though whether antibodies interfere with function or simply mark immune status is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 are supported by appropriate citations (Fran\u00e7a 2016b, Hostetler 2015, Tonkin 2013, Richards 2013, Osier 2014a, van Ooij 2013, Fan 2013). These provide important biological context for the protective antigens identified. The speculation about RBP2b's role (C121) and uncertainty about PVX_081550 function (C127) are appropriately qualified. This contextual information strengthens the rationale for prioritizing these antigens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "In P. falciparum, CyRPA forms a complex with PfRh5/PfRipr involved in basigin binding. PfCyRPA is highly conserved with minimal polymorphism, and antibodies inhibit invasion, block complex formation, and show growth inhibitory activity (stronger with PfRh5). P. vivax CyRPA is highly reactogenic, suggesting functional or immune exposure differences between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135 are well-supported by multiple citations (Reddy 2015, Beeson 2016, Chen 2017, Favuzza 2017, Fran\u00e7a 2016a). The P. falciparum data provide strong rationale for investigating P. vivax CyRPA as a vaccine candidate. The observation that PvCyRPA is highly reactogenic (C134) contrasts with PfCyRPA's low polymorphism, and the speculation about functional differences (C135) is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "IgG1/IgG3 responses to P. vivax and P. falciparum antigens are associated with protection, while IgG2/IgG4 roles remain unclear. For RBPs in this cohort, IgG1/IgG3 predominate in children with IgG1 to RBP1a/RBP2b showing strongest protection. Adults show higher IgG3 (predominant for RBP1a) and substantial IgG2 for some antigens, with children showing early IgG3 switching for RBP1a/RBP2-P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C145 are supported by extensive citations and prior work (Fran\u00e7a 2016b). The IgG subclass data provide important mechanistic context, though the current study measured total IgG. The observation of IgG subclass maturation with age/exposure (C145) is important for understanding immunity development. However, the functional significance of different subclasses (C137-C141) remains incompletely understood as acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Large variation in antibody threshold levels for 50% protection was observed across antigens. While dose-response analysis cannot differentiate causal from statistical associations, antigens consistently associated with protection in combinations (PVX_081550, EBP, CyRPA) show low immunogenicity and low threshold levels, suggesting low antibody levels may suffice for protection. Critical antigens may be weakly immunogenic to evade immunity, making them promising vaccine candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C151 present important observations about threshold variation (C147, supported by Figure 6) and interesting hypotheses about low-immunogenicity antigens (C149-C151). However, C148 correctly acknowledges the analysis cannot distinguish causation from association. The speculation that critical antigens must be weakly immunogenic (C150) is interesting but highly speculative without functional validation. The recommendation that low-reactivity antigens are most promising (C151) requires experimental validation of functional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Study limitations include inability to determine if low-reactivity antibodies have better avidity/affinity, dose-response models only including one antigen at a time, and focus on 1-3 year-olds during critical immunity development. Further studies in older age groups and different transmission settings are needed to confirm findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 appropriately acknowledge study limitations. The inability to measure avidity/affinity (C102) is a technical limitation. The single-antigen dose-response model limitation (C103) is important given the highly correlated antibody responses. The age restriction (C104-C105) is justified by prior work (Longley 2016) but limits generalizability. These are honest assessments of study constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "This is the largest comprehensive P. vivax antigen panel in a cohort study and the first to investigate antigen combinations and threshold antibody levels. Results identify targets for functional studies and indicate examining multiple antigens simultaneously best correlates with protection, suggesting a multicomponent P. vivax vaccine may be more efficacious than single-component vaccines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 appropriately summarize the study's novelty and implications. The claim of being the largest panel (C106) and first combination analysis (C107) appears accurate based on cited literature. The conclusions about prioritizing antigens (C108), examining multiple antigens (C109), and multicomponent vaccine potential (C110) are reasonable inferences from the data, though they require functional validation as acknowledged in C111-C112.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Future research should focus on functional characterization of identified proteins, measuring antibody functionality (opsonic phagocytosis, invasion blocking). While mechanisms of protection remain unclear, P. falciparum studies suggest combinations of functional mechanisms are important, and functional antibodies might be better correlates of protection than total IgG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 appropriately outline future research directions. The call for functional studies (C111-C112) is essential given the correlative nature of current findings. The reference to P. falciparum studies (C113-C114, well-cited) provides rationale for investigating functional mechanisms. The speculation that functional antibodies may be better correlates (C115) is reasonable but requires experimental validation. These represent appropriate next steps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study investigated IgG associations with vivax malaria risk in 225 PNG children aged 1-3 years followed for 16 months with biweekly monitoring. All P. vivax infections were genotyped to calculate molecular force of blood-stage infections (molFOB). A novel simulated annealing algorithm was applied to explore antigen combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25, C116-C119 describe the study design and methods. The cohort is well-characterized with appropriate sample size (n=225), longitudinal follow-up (16 months), and active surveillance. The molFOB metric (C118) is validated by prior work (Koepfli 2013). The simulated annealing algorithm (C25) is appropriate for the combinatorial optimization problem. The study design is rigorous and well-suited to the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "A panel of 38 P. vivax antigens was selected including vaccine candidates (DBPII alleles, CSP, AMA1, MSP1), invasion-related proteins (MSP3\u03b1 constructs, MSP9, RBPs, EBP), and bioinformatically-identified novel proteins. Antigens were produced in HEK293E, E. coli, or WGCF systems, with protein folding validated by multiple approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 describe antigen selection and production. The panel includes both established candidates and novel proteins, providing comprehensive coverage. The use of multiple expression systems (C155) is appropriate for different protein types. The validation approaches (C156) - recognition by naturally-exposed plasma, vaccine-induced antibody recognition, functional interactions, crystal structures - are rigorous and well-cited. This represents sound experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The combinatorial space of 38 antigens (2^38 \u2248 2.7\u00d710^11 combinations) is computationally infeasible to exhaustively search. All combinations up to 5 antigens (\u2248500,000) can be investigated. A simulated annealing algorithm was used to efficiently explore larger combination spaces and identify optimal potential protective efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 describe the computational approach. The calculation of combinatorial space (C157) is correct. The statement about feasibility of exhaustive search up to 5 antigens (C158) is reasonable and cited (Osier 2014a). The simulated annealing algorithm (C159, Kirkpatrick 1983) is an appropriate optimization method for this problem. The computational methodology is sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "P. vivax is the predominant malaria species in Americas/Asia-Pacific, less susceptible to vector control, making vaccine development a high priority. Clinical immunity is acquired more rapidly than for P. falciparum, with disease virtually absent in >5 year-olds in endemic areas. Sub-microscopic infections are common, suggesting effective immunity controlling parasitemia. Humoral immunity is essential, with antibodies preventing high-density parasitemia and inhibiting replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide well-cited background on P. vivax epidemiology and immunity (WHO 2014, Mueller 2009, malERA 2011, Phimpraphi 2008, Lin 2010, Robinson 2015, Cheng 2015, Bousema 2014, Longley 2016, 2015, Wipasa 2010, Achtman 2005). These establish the rationale for vaccine development and the importance of studying naturally-acquired immunity. The claims are appropriately supported by authoritative sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "No highly-efficacious malaria vaccine exists for any Plasmodium species, with most vaccines based on single antigens. For P. falciparum, >15 antigens are in testing including RTS,S/AS01 (completed Phase 3). For P. vivax, only a handful of proteins studied (DBP, MSP1, Pvs25), with CSP becoming a main candidate after RTS,S success. Novel pre-erythrocytic candidates (CelTOS, TRAP) are being investigated in animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide well-cited background on malaria vaccine development (Halbroth & Draper 2015, Agnandji 2012, RTS,S Partnership 2014, Mueller 2015, Salman 2017, Bennett 2016, Alves 2017, Bauza 2014). These establish the limited P. vivax vaccine pipeline compared to P. falciparum and justify the need for identifying new candidates. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "P. falciparum serological screens identified protective antigens and support multicomponent vaccines offering higher protection than single-component vaccines. For P. vivax, genome/transcriptome availability enhanced understanding and facilitated antigen identification. Given lack of continuous culture or animal models, studying natural immunity in exposed populations is essential for prioritizing antigens. Antibodies to MSP3\u03b1, MSP9, DBP show strong protective associations, but screening studies remain scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 provide well-cited rationale for the study approach (Halbroth & Draper 2015, Richards 2013, Osier 2014a, Carlton 2008, Bozdech 2008, Chen 2010, Lu 2014, Finney 2014, Chia 2014, King 2008, Cole-Tobian 2009, Cutts 2014). The argument that natural immunity studies are essential for P. vivax given technical limitations (C20) is compelling and well-supported. This establishes strong justification for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The potential existence of synergistic or additive effects of combinations of antibody responses to a large panel of P. vivax antigens has never been explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 states the novelty of investigating antigen combinations. Based on the cited literature and the authors' statement \"to our knowledge,\" this appears to be accurate. This represents a genuine gap in the field that the study addresses, making it a significant contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "High antibody levels to multiple known and newly identified proteins were strongly associated with protection (IRR 0.44-0.74, p<0.001-0.041). Among five-antigen combinations with >90% protective effect, EBP, DBPII, RBP1a, CyRPA, and PVX_081550 were most frequently identified, with several requiring very low antibody levels for protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 summarize key findings presented in the abstract and supported by Figures 3, 5, and 6. The IRR values and p-values are consistent with the detailed results. The identification of specific antigens in optimal combinations (C27) is supported by the simulated annealing analysis. The observation about low antibody thresholds (C28) is supported by dose-response modeling. These represent the core findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Age alone is not the best proxy for lifetime malaria exposure in young children with heterogeneous exposure. The molFOB (molecular force of blood-stage infections) is a direct measure of individual exposure differences, correlates with exposure factors (seasonality, location, bed nets), and is the major predictor of clinical disease in this cohort. The product of molFOB and age represents a more precise estimation of lifetime P. vivax exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe and justify the molFOB metric. The validation of molFOB is supported by prior work (Lin 2010, Koepfli 2013, Mueller 2012). The argument that molFOB \u00d7 age better captures lifetime exposure (C38) is logical given individual variation in exposure intensity. This represents an important methodological strength, as it allows better control for confounding by exposure when assessing antibody-protection associations.",
+    "result_type": "MINOR"
+  }
+]

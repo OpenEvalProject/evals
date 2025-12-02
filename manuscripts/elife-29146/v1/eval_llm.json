@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C187",
+      "C188"
+    ],
+    "result": "CG3790 (BalaT) is a retina-enriched plasma membrane \u03b2-alanine transporter. Among ~600 putative transporters, CG3790 was identified through screening and exhibits \u03b2-alanine uptake activity in HEK293T and S2 cells (2.7-fold over controls), with activity similar to mouse GAT3. CG3790 localizes to the plasma membrane, does not transport histamine or GABA, shares 29-30% identity with mammalian OCT3, and is expressed predominantly in the fly compound eye.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C66 collectively demonstrate that CG3790 is a bona fide \u03b2-alanine transporter through multiple lines of evidence: functional screening (C49-C51), validation in two cell types (C53, C55), specificity testing (C56-C59), localization (C60), and expression pattern (C62-C64). The quantitative uptake data (C51), positive and negative controls (C54, C57, C59), and sequence homology (C52, C187-C188) provide converging support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of BalaT function disrupts visual synaptic transmission and phototaxis behavior. Two CRISPR-generated null alleles (balat1 and balat2) both lack ERG 'on' and 'off' transients, indicating defective synaptic transmission. The phenotype is rescued by GMR-balat transgene expression and is independent of the white mutation background. Mutant flies also exhibit impaired phototaxis that is fully restored by transgenic rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C82 provide strong genetic evidence through multiple independent alleles (C67-C68, C74), functional rescue (C76, C81), control for genetic background (C78), and behavioral validation (C80-C81). The convergence of electrophysiological (ERG) and behavioral (phototaxis) phenotypes with complete rescue demonstrates that BalaT is required for visual transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C12",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C130",
+      "C131",
+      "C155",
+      "C156"
+    ],
+    "result": "BalaT is expressed and functions specifically in retinal pigment cells. A balat-mcherry knock-in shows mCherry signal predominantly in retinal pigment cells (co-localizing with PDH marker). Tissue-specific rescue experiments demonstrate that pdh-balat (pigment cell expression) fully restores ERG transients and phototaxis, while ninaE-balat (photoreceptor expression) fails to rescue, indicating BalaT functions in pigment cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 and C130-C131, C155-C156 provide definitive localization through knock-in reporter (C86) and functional validation through tissue-specific rescue (C88-C90). The positive rescue with pdh-balat and negative result with ninaE-balat constitute a critical experiment demonstrating cell-type specificity. This is the first genetic evidence for pigment cell involvement in visual neurotransmission (C15, C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C46",
+      "C165",
+      "C166"
+    ],
+    "result": "Gap junction proteins Inx1 and Inx3 are required in the compound eye for visual transmission. Individual knockdown of Inx1, Inx2, or Inx3 does not affect ERG transients. Double knockdown of Inx1/Inx2 or Inx2/Inx3 also has no effect, but Inx1/Inx3 double knockdown largely reduces 'on' and 'off' transients, indicating functional redundancy between Inx1 and Inx3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 demonstrate a systematic RNAi screen with appropriate controls. The specific requirement for both Inx1 and Inx3 (C101) but not other combinations (C99-C100) suggests functional redundancy. However, the claim that these proteins are required \"in retinal pigment cells\" (C46, C166) is an inference not directly tested, as GMR-gal4 drives expression throughout the eye. Tissue-specific knockdown in pigment cells would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C43",
+      "C44"
+    ],
+    "result": "balat mutants exhibit reduced \u03b2-alanine and histamine levels with altered retinal distribution. LC-MS shows significantly reduced \u03b2-alanine and histamine in balat1 heads (similar to cart1 mutants). Immunofluorescence reveals that \u03b2-alanine levels are specifically reduced in the retina of balat1 mutants compared to wild-type, and this is restored by GMR-balat rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 provide complementary biochemical (LC-MS) and histological (immunofluorescence) evidence. The reduction in both \u03b2-alanine (C104) and histamine (C104, C105) with altered spatial distribution (C110) supports the model that BalaT transports \u03b2-alanine into pigment cells for storage. The rescue of \u03b2-alanine distribution by GMR-balat (C111) strengthens the causal link. Statistical significance is indicated for the LC-MS data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C170"
+    ],
+    "result": "Inx1/Inx3 double knockdown causes \u03b2-alanine accumulation in the retina. Immunofluorescence shows \u03b2-alanine primarily accumulates in the retinal layer of Inx1/Inx3 double knockdown flies compared to controls. LC-MS confirms significantly higher \u03b2-alanine levels in heads of Inx1/Inx3 knockdown flies, suggesting defective \u03b2-alanine trafficking from pigment cells to laminar glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 and C170 provide converging evidence from immunofluorescence (C117) and LC-MS (C118) that \u03b2-alanine accumulates when Inx1/Inx3 are knocked down. This accumulation pattern is consistent with a block in \u03b2-alanine transport from pigment cells to glia. However, the interpretation that Inx1/Inx3 \"functions to transport \u03b2-alanine\" (C119) is speculative, as gap junctions could have indirect effects on metabolism or other transport processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "\u03b2-alanine distribution pattern is maintained in pyd1;b1 double mutants despite reduced levels. In pyd1;b1 flies (lacking two \u03b2-alanine biosynthesis pathways), the spatial distribution of \u03b2-alanine remains similar to wild-type although overall intensity is reduced, suggesting that pigment cells serve as a reservoir for stored \u03b2-alanine through a BalaT-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 provide evidence that \u03b2-alanine distribution pattern is independent of de novo synthesis. The maintained distribution in pyd1;b1 mutants (C115) despite reduced levels (C114) supports the hypothesis that recycling maintains spatial distribution. However, the conclusion that \"pigment cells serve as a reservoir\" (C116) is somewhat speculative and would benefit from direct measurement of \u03b2-alanine levels specifically in pigment cells versus other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C143",
+      "C149",
+      "C150",
+      "C185",
+      "C186"
+    ],
+    "result": "A novel \u03b2-alanine recycling pathway involves uptake and storage in retinal pigment cells followed by delivery to laminar glia via gap junctions. The authors propose that \u03b2-alanine released from photoreceptors is taken up by BalaT in pigment cells, stored, and then transported to laminar glia through Inx1/Inx3 gap junctions for histamine inactivation. This recycling is essential for maintaining histamine homeostasis and visual transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C143, C149-C150, C185-C186 present an integrated model supported by multiple lines of evidence: BalaT localization and function in pigment cells, requirement for Inx1/Inx3, \u03b2-alanine accumulation patterns, and reduced histamine in balat mutants. However, the mechanism of \u03b2-alanine release from photoreceptors remains unknown (C184), and direct evidence for \u03b2-alanine transport through gap junctions is lacking. The model is well-supported but some steps remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on histamine recycling pathway in Drosophila visual system. Histamine recycling is essential for sustained synaptic transmission in Drosophila photoreceptors. The established pathway involves histamine uptake by laminar glia, conjugation to \u03b2-alanine by Ebony to form carcinine, transport of carcinine back to photoreceptors via CarT, and hydrolysis by Tan to regenerate histamine and \u03b2-alanine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 summarize well-established prior knowledge supported by multiple citations. These claims provide essential context for understanding the current study's contribution. The evidence is primarily from citations to prior work (Borycz et al., 2002; Richardt et al., 2002, 2003; Chaturvedi et al., 2016; Stenesen et al., 2015; Xu et al., 2015; True et al., 2005) and represents accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C26",
+      "C36",
+      "C37",
+      "C127"
+    ],
+    "result": "Knowledge gaps addressed by this study. Prior to this work, it was unclear how \u03b2-alanine is returned to laminar glial cells after being generated in photoreceptors, whether \u03b2-alanine recycling is required for visual transmission, and the fate of \u03b2-alanine generated by Tan hydrolase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C26, C36-C37, C127 accurately identify knowledge gaps that motivated the study. These gaps are legitimate based on the cited literature and the current study provides evidence addressing them. The identification of these gaps provides clear justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C148"
+    ],
+    "result": "\u03b2-alanine recycling can sustain visual transmission even without de novo synthesis. Although \u03b2-alanine levels are reduced in black mutants (lacking the major biosynthetic enzyme), these flies still exhibit ERG transients, suggesting that an efficient \u03b2-alanine recycling system compensates for reduced de novo synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141, C148 are supported by citations to prior work (Borycz et al., 2012; Ziegler et al., 2013). This provides important context for understanding why \u03b2-alanine recycling is physiologically significant. The inference that recycling can sustain transmission (C148) is reasonable given that black mutants maintain visual function despite reduced \u03b2-alanine synthesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "BalaT belongs to the SLC22 family of transporters. BalaT shares sequence homology with the mammalian SLC22 family, which mediates sodium-independent transport of neurotransmitters, amino acids, and energy metabolites. The functional and expression data support that BalaT functions specifically in pigment cells as a \u03b2-alanine transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C173 are supported by sequence alignment data (Figure 1\u2014figure supplement 1) showing 29-30% identity with mammalian OCT3 (C187-C188), and functional characterization. The classification as SLC22 family member is appropriate based on sequence homology. The conclusion that BalaT functions specifically in pigment cells (C173) is well-supported by the localization and rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "\u03b2-alanine is a rate-limiting constituent of carnosine and carcinine dipeptides with protective functions in the retina. \u03b2-alanine is rate-limiting for synthesis of carnosine and carcinine, which function as antioxidants in the retina. The presence of \u03b2-alanine transporters (including TauT) in mammalian retina suggests conserved function for \u03b2-alanine trafficking across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C179 provide broader context for the physiological importance of \u03b2-alanine transport. These are supported by citations to established literature (Marchette et al., 2012; Pfister et al., 2011; Liu et al., 1993). The inference of conserved function (C179) is reasonable but speculative, as functional conservation would require direct experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C157",
+      "C158"
+    ],
+    "result": "Retinal pigment cells in Drosophila are functionally equivalent to mammalian RPE in chromophore cycling. Prior work has shown that Drosophila retinal pigment cells are functionally equivalent to mammalian retinal pigment epithelium for chromophore cycling, and it has been suggested that \u03b2-alanine metabolism also involves pigment cells. This study provides genetic evidence for pigment cell involvement in histamine recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154, C157-C158 connect the current findings to prior work on pigment cell function. The functional equivalence for chromophore cycling is supported by citations (Travis et al., 2007; Wang et al., 2010, 2012). The current study extends this by providing the first genetic evidence for pigment cell involvement in neurotransmitter recycling (C157), which is a novel and significant contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Alternative explanation for Inx1/Inx3 requirement: potential role in synapse development. Gap junctions may play a role in synapse formation between retina and lamina. An alternative explanation for the Inx1/Inx3 requirement is that these proteins are needed for synapse development rather than \u03b2-alanine transport. However, electron microscopy has not revealed gap junctions between pigment cells and laminar glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C169 present an alternative hypothesis (C168) that is appropriately acknowledged by the authors. The lack of ultrastructural evidence for gap junctions (C169) is noted, but the \u03b2-alanine accumulation data (C117, C170) argues against a purely developmental role. This alternative explanation cannot be definitively ruled out without developmental time-course experiments or conditional knockdown in adult flies.",
+    "result_type": "MINOR"
+  }
+]

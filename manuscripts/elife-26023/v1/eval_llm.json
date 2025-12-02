@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a multidimensional topological phenotyping pipeline that captures complete, accurate organ-wide cellular interaction networks from 3D confocal imaging with cell-type annotation, enabling simultaneous analysis of local and global topological properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 describe a comprehensive methodological pipeline with appropriate technical controls (air space removal C30, interface size filtering C31, peripheral cell buffering C32) and validation (complete networks C33, biological triplicates C34). The methods are well-documented with citations and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors establish betweenness centrality (BC) as a biologically relevant measure of path length in plant cellular networks that captures higher-order global properties beyond local connectivity (degree).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are well-supported by established network theory (citations to Newman, Barab\u00e1si, Freeman) and appropriate for the biological context. The normalization approach (C42) enables valid cross-sample comparisons. The distinction between local (degree) and global (BC) measures is theoretically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Topological analysis of Arabidopsis Col hypocotyls identified a previously undescribed coherent conduit of reduced path length in atrichoblast epidermal cell files, with these cells lying on significantly shorter paths than trichoblasts despite having fewer neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 are supported by quantitative data in Figures 2B-E showing spatial distribution of degree and BC. The finding that atrichoblasts have shorter paths despite fewer connections (C49, C52-53) is a non-intuitive emergent property validated by statistical tests. The vascular system showing highest BC (C47) serves as an internal positive control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The higher-order topological properties of cells are determined by their global context within the organ rather than their number of local connections, representing a non-intuitive emergent property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by the observation that atrichoblasts have fewer neighbors (lower degree) but shorter path lengths (higher BC), demonstrating independence between local and global properties. This is further validated by mutual information analysis (C136-C143) showing weak association between degree and BC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Edge betweenness centrality analysis shows that atrichoblast-atrichoblast cellular junctions contribute most to creating short path lengths in the epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by edge BC data in Figure 2G and Video 2. This provides mechanistic insight into how the reduced path length emerges from specific cell-cell interactions, complementing the node-level analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Weighted network analysis incorporating cell interface size generates bias toward large cortical cells, suggesting limited role for interface size in mediating topological features in the unexpanded embryonic hypocotyl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by data in Figure 2\u2014figure supplement 3. The analysis appropriately tests whether geometric properties (interface size) explain topological patterns, finding that they do not in this context. This strengthens the conclusion that topology is independently regulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Comparison across Arabidopsis ecotypes (Col, Ler, Cvi) reveals natural variation in path length specifically within atrichoblasts, with Col and Ler showing shorter atrichoblast paths than trichoblasts, while Cvi shows no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are supported by comparative data in Figure 2D-E and supplements. Statistical tests show significant differences between ecotypes in BC but not degree distributions. The plasticity in global but not local properties suggests genetic modulation of higher-order organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C90"
+    ],
+    "result": "Fluorescein transport assays demonstrate that BC predicts bulk molecular movement at single-cell resolution, with significantly greater fluorescein accumulation in atrichoblasts than trichoblasts in Col and Ler but not Cvi, matching the BC predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C82, C90 are strongly supported by fluorescein imaging and quantification (Figure 3). The correlation between topological predictions (BC) and experimental measurements of molecular transport validates the functional significance of the identified topological patterns. The use of three ecotypes with different BC patterns provides internal replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that reduced atrichoblast path length may facilitate a functional division of labor where trichoblasts acquire nutrients and atrichoblasts transport them longitudinally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C89 are largely speculative (marked as SPECULATION in evidence_type). While the topological data and fluorescein transport support the capacity for preferential movement, the proposed functional model for nutrient acquisition and transport requires direct experimental validation with actual nutrients and measurement of transport rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Cross-species comparison (Arabidopsis, poppy, foxglove) reveals plasticity in epidermal path length, with progressive decrease from poppy to foxglove to Arabidopsis, and greatest contrast between epidermal cell types in Arabidopsis Col and Ler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C108 are supported by comparative data in Figures 4D-E showing degree and BC distributions across species. The conservation of local connectivity (degree) but variation in global properties (BC) across species suggests evolutionary plasticity in higher-order organization. Statistical tests confirm significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The authors speculate that reduced atrichoblast path length may represent a recent evolutionary innovation for transport optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is speculative and would require phylogenetic analysis across more species and functional fitness measurements to establish evolutionary trajectory and adaptive significance. The limited species sampling (3 species) is insufficient for robust evolutionary inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Analysis of the cdka1;1 mutant shows that CDKA1;1 is required for generating reduced path length in atrichoblast cell files and limiting short paths in the endodermis, without affecting local connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 are supported by mutant analysis data in Figure 5D showing loss of epidermal BC differential in cdka1;1 while degree remains unchanged. This demonstrates genetic control of global but not local topological properties, linking molecular mechanisms to higher-order organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Analysis of the monopteros (mp) mutant lacking vasculature shows that MP-mediated patterning generates longer paths in the epidermis but is not required for path length asymmetry between epidermal cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C130 are supported by data in Figure 5E showing increased BC in both epidermal cell types of mp mutants while maintaining their relative difference. The visualization of radial short-path routes (C130, Figure 5G) demonstrates compensatory network reorganization in the absence of vasculature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Analysis of the laterne mutant lacking cotyledons shows that this phenotype limits global path length in the epidermis while maintaining the relative path length relationship between epidermal cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C134 are supported by data in Figure 5F showing increased BC in both epidermal cell types while preserving their relative ordering. However, C135 regarding the mechanism (cotyledon signaling vs. local patterning) remains speculative and requires additional experiments to distinguish between these possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Mutual information analysis reveals that path length (BC) is largely independent of cell size (area, volume) and local connectivity (degree), representing an emergent property of global cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 are supported by mutual information analysis in Figure 6 showing minimal correlation between BC and geometric/local properties. This quantitatively validates that global topological properties emerge from network structure rather than individual cell characteristics. The consistent pattern across samples strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Coefficient of variation analysis shows that MONOPTEROS promotes robustness in path length generation, with the mp mutant showing greater variability than other genotypes, while path length is plastic between genetic backgrounds but not variable within individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 are supported by CV analysis in Figure 7A-B. The finding that mp has uniquely high variability while other genotypes show consistent path lengths within biological replicates demonstrates genetic control of developmental robustness. This distinguishes between inter-genotype plasticity and intra-genotype variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Comprehensive analysis across cell types reveals that epidermal cell types are topologically distinct from each other and from internal tissues, while outer cortex and endodermis share organizational similarities, and inner cortex is unique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C158 are supported by cell-type-specific analyses in Figure 2\u2014figure supplement 1 and Figure 4\u2014figure supplement 1, and scatterplot analysis in Figure 8A-E. The consistent patterns across multiple samples and statistical validation of differences support these organizational principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Hierarchical clustering analysis of degree and BC distributions reveals that epidermal cell types have distinct local connectivity, trichoblasts cluster together (except poppy) due to stringent path length regulation, atrichoblasts show greater plasticity, and internal cell types group by topological similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C170 are supported by clustering analyses in Figure 8F-I. The use of statistical test values as distance metrics is appropriate, and the clustering patterns are consistent with previous cell-type-specific analyses. The separation of cell types by topology validates the biological significance of these network measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors conclude that higher-order path length principles govern molecular movement and bridge structure-function relationships, enabling mathematical prediction of molecular flux and intercellular communication at single-cell resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C173 are supported by the integration of topological analysis with fluorescein transport data. However, C173's claim about enabling \"mathematical prediction\" is somewhat overstated\u2014the work demonstrates correlation and prediction in one experimental system (fluorescein) but would require validation with diverse molecules and transport mechanisms for full generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "The study identifies a previously undescribed optimized transportation route in atrichoblast epidermal cell files that is plastic across genetic backgrounds and functionally validated by fluorescein transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C199 summarize the main findings and are well-supported by the combined topological and functional data. The novelty claim (C193) is justified as prior work focused on local connectivity. The plasticity (C196) and functional validation (C197-C198) are experimentally demonstrated. C199's statement about non-obligatory function is appropriately cautious given the plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C200"
+    ],
+    "result": "The authors speculate that reduced epidermal path length may support rapid growth or represent a recent evolutionary innovation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C200 is speculative and would require growth rate measurements across genotypes/species and broader phylogenetic sampling to test these hypotheses. The correlation between path length and evolutionary position is suggestive but insufficient for causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Topological analysis of mutants quantitatively links gene activity to higher-order cellular organization, revealing that CDKA1;1 mediates atrichoblast path length reduction, MONOPTEROS limits epidermal path length and controls robustness, and laterne promotes path length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C207 are supported by mutant analyses in Figure 5 and Figure 7. The approach successfully bridges molecular and cellular scales (C204) and reveals novel roles for known patterning genes in controlling global topology and robustness (C205-C206). The distinction between plasticity and variability (C207) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C208",
+      "C209"
+    ],
+    "result": "The authors propose that structural networks are roadmaps for molecular events and that annotation with molecular information will create functional networks providing multidimensional insight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208-C209 are conceptual frameworks and future directions rather than demonstrated results. While C208 is supported by the fluorescein data showing that structure predicts function, C209 is speculative about future work and cannot be evaluated without the proposed molecular annotations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "The authors conclude that understanding multicellular design principles provides insight into evolutionary forces and establishes a framework for rational re-design of organ functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C210-C213 are broad conclusions about evolutionary and applied implications. While C210-C211 are reasonable interpretations supported by citations, C212's claims about evolutionary forces require more extensive phylogenetic analysis. C213's claim about rational re-design is aspirational and would require demonstration of successful manipulation of topology to alter function.",
+    "result_type": "MINOR"
+  }
+]

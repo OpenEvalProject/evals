@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors determined the extended structure of the LigB Ig-like domain region (LigB1-12) using SAXS with a sliding window approach of overlapping 5-domain constructs. The structure is only 16% shorter than a fully extended model, exhibits significant bending between the first three domains, a particularly straight stretch between LigB3-6, and a gentle spiral shape in the final five domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS methodology is well-described with appropriate quality controls (Guinier fits, Porod analysis, ambiguity assessment). The sliding window approach with 5-domain constructs is justified and provides redundancy for accurate positioning. The exclusion of LigB5-9 due to aggregation is appropriately documented. The structural features are supported by multiple analytical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Two monoclonal antibody libraries were generated against LigB1-7 (library C, 24 mAbs) and LigB7-12 (library V, 36 mAbs). Library C mAbs generally exhibited tighter binding (sub-micromolar KD for C5, C6, C7) than library V mAbs (only V10 sub-micromolar). Epitope mapping revealed immunoreactivity weighted towards LigB1-2 and LigB4-5 for library C, and LigB7-8 and LigB10-11 for library V, with only 3 of 10 double domains and 2 of 12 single domains lacking immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mAb generation and characterization is well-documented with appropriate controls and replicates. The threshold for binding efficiency (OD630 = 1.0) is justified by the distribution data. KD measurements are obtained from dose-dependent curves with proper statistical analysis. Epitope mapping using comprehensive domain constructs provides clear domain-level specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "All tested anti-LigB mAbs (7 from library C, 6 from library V) produced fluorescence signals over three-fold higher than PBS control and over two-fold higher than poorly binding mAb controls when tested for binding to live Leptospira cells by flow cytometry, supporting the presence of mAb-accessible Lig protein Ig-like domains on the bacterial surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flow cytometry experiments include appropriate negative controls (PBS, non-binding mAbs C22 and V33, and non-pathogenic L. biflexa). The consistent signal enhancement across multiple mAbs from both libraries provides strong evidence for surface accessibility. The methodology is clearly described with proper replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Anti-LigB mAbs demonstrated potent bactericidal activity against Leptospira in the presence of complement. mAbs C5 and V10 achieved 97-98% killing (only 2-3% survival) at 120 min, representing >20-fold improvement over polyclonal antibodies (p<0.05). All LigB-specific mAbs achieved >50% killing with LD50 values between 10-30 \u03bcg/ml, except C23 which showed reduced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bactericidal assays are well-controlled with PBS and polyclonal antibody comparisons. Two independent methods (dark-field microscopy and luminescence-based assay) provide convergent evidence. Statistical significance is properly assessed. The time-dependent and dose-dependent measurements provide comprehensive characterization of bactericidal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A correlation exists between mAb binding affinity (KD) and bactericidal activity (LD50), with R\u00b2=0.773 after removing two outliers. C12 showed enhanced bactericidal activity relative to its binding affinity, explained by its ability to bind multiple Ig-like domains across a large range. C23 showed reduced bactericidal activity, potentially due to binding the sharply bent LigB2-3 region where steric limitations may affect activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis is appropriately conducted with statistical outlier identification using Cook's distance. The mechanistic explanations for outliers are supported by epitope mapping data (C12 binding multiple domains) and structural analysis (C23 binding kinked region). However, the moderate R\u00b2 values (0.508 with all data, 0.773 without outliers for KD vs LD50; 0.312 and 0.466 for cell binding vs LD50) indicate other factors also influence bactericidal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Chimeric domain mapping experiments demonstrated that both \u03b2-strands A-C and \u03b2-strands C\u2032-F (or C\u2032-G\u2032) can provide distinct epitopes for mAb targeting. Five mAbs (V12, V34, V1, V10, V2) bound only to N-terminal \u03b2-strands A-C, two mAbs (C5, V3) bound to \u03b2-strands C\u2032-F, and two mAbs (V11, C6) required both \u03b2-strands C\u2032-F and terminal \u03b2-strands G-G\u2032.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chimera design is rational, based on the high-resolution NMR structure of LigB12. The systematic testing of all eight possible chimeric combinations for two domain pairs provides comprehensive epitope mapping. The binding patterns clearly demonstrate that different surfaces of the Ig-like domain fold can serve as distinct epitopes. The experiments are properly replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C79"
+    ],
+    "result": "The chimeric vaccine LigB10-B7-B7 (combining epitopes from LigB7 and LigB10) provided 100% survival in hamsters challenged with lethal Leptospira, significantly better than PBS control (17% survival), wild-type LigB7 (0% survival by day 10), or wild-type LigB10 (0% survival by day 10) (p<0.05). The chimera was selected because it binds highly bactericidal mAbs specific to each parent domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hamster challenge study is well-designed with appropriate group sizes (5-6 animals per group) and controls. The survival differences are statistically significant and dramatic (100% vs 0-17%). The rationale for chimera selection is clearly linked to the mAb characterization data. The chimera maintains proper folding as confirmed by circular dichroism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "LigB10-B7-B7 immunization provided superior protection with significant reduction in leptospiral burden in liver, kidney, and urinary bladder tissues compared to wild-type LigB7 or LigB10 immunization. All LigB10-B7-B7 immunized hamsters showed no visible macroscopic/microscopic lesions in livers, kidneys, or lungs, suggesting potentially sterilizing immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bacterial burden assessment by RT-qPCR targeting LipL32 provides quantitative evidence of protection. The histopathological examination by a board-certified veterinary pathologist provides independent confirmation of tissue protection. The convergence of survival, bacterial burden, and histopathology data strongly supports the conclusion of superior protection, though the claim of \"sterilizing immunity\" is appropriately qualified as \"potentially.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "LigB10-B7-B7 immunization led to increased post-booster secondary response for IgG but not IgM antibodies, implying generation of a typical immune memory response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The serological analysis appropriately distinguishes IgG and IgM responses at different time points (pre-immunization, post-immunization, post-booster). The differential increase in IgG but not IgM after boosting is consistent with class switching and memory B cell activation characteristic of adaptive immune responses. The experiments include proper replicates and controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The full LigB structure represents the first example of using a sliding window of medium-length 5-domain constructs to generate a much longer 12-domain structure by SAXS. The structure also provides a partial structure of LigA Ig-like domains since LigB1-6 is identical to LigA domains 1-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim is supported by citations to previous SAXS studies that used different approaches. The methodological advantage of the sliding window approach is clearly articulated. The inference about LigA structure is valid based on sequence identity, though it is appropriately limited to the first six domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "The SAXS-derived structure demonstrates that most individual Ig-like domains exhibit high exposed surface area due to the unexpected rigid, rod-like structure with well-defined kinks. The broad mAb accessibility of LigB Ig-like domains supports this extended organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural interpretation is consistent with the SAXS data showing near-maximal extension (only 16% shorter than fully extended). The mAb accessibility data from epitope mapping provides independent experimental validation of the extended structure prediction. The convergence of structural and immunological data strengthens both conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C81"
+    ],
+    "result": "The single-domain chimeric vaccine LigB10-B7-B7 provides better protection than longer constructs LigB7-12 (poor protection) and LigB1-7 (good protection). This may be because epitopes in single-domain antigens are not blocked by host factors (ECM or serum proteins) that might occlude them in multi-domain constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the superior performance of LigB10-B7-B7 is well-documented in the current study, the comparison to LigB7-12 and LigB1-7 relies on citations to previous studies with potentially different experimental conditions. The mechanistic explanation about host factor blocking is speculative (appropriately qualified with \"may\") and not directly tested. Additional experiments would be needed to confirm this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C56",
+      "C61",
+      "C62"
+    ],
+    "result": "Background claims establish that leptospirosis is a significant global health burden (>1 million cases, ~60,000 deaths annually), current vaccines are inadequate, LigB is found in all pathogenic Leptospira and plays important roles in virulence through binding host factors, and previous vaccine studies show inconsistent results. Ig-like domains readily fold and can serve as scaffolds for epitope presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are appropriately supported by citations to published literature. They provide necessary context for the study but represent prior knowledge rather than new findings. The claims about Ig-like domain properties and epitope surface areas are supported by structural analysis and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C89"
+    ],
+    "result": "The LigB proteins from L. interrogans serovars Manilae and Pomona share 96% identity, suggesting similar bactericidal properties. The relative lack of efficiency of hamster polyclonal antibodies compared to purified mAbs could be explained by multiple factors including antibody affinity heterogeneity, IgG subclass differences, or species-specific complement activation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence identity claim is verifiable and the inference about similar bactericidal properties is reasonable given the high identity. The explanations for polyclonal antibody inefficiency are appropriately speculative (\"could be explained by\") and represent plausible hypotheses based on immunological principles, though they are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The ability of anti-LigB mAbs to kill Leptospira in the presence of complement is consistent with their capability to bind LigB protein on pathogenic Leptospira.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretive claim is well-supported by the convergence of binding data (ELISA, flow cytometry) and functional data (bactericidal assays). The consistency between binding and killing provides mechanistic insight, though the correlation is not perfect as shown by outliers.",
+    "result_type": "MINOR"
+  }
+]

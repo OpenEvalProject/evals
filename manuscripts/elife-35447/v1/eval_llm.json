@@ -1,0 +1,696 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A reverse suppressor screen using the SMT3-Q56K mutation identified 13 mutations in genes encoding Pol III transcription machinery components (Rpc160, Rpc128, Brf1, Tfc1, Tfc6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by the screen design (Figure 1C), the screen results (Table 1), and validation experiments (Figure 1A-B). The screen successfully identified mutations that are rescued by compromised sumoylation, with the majority being in Pol III components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Deletion of the SUMO E3 ligase SIZ1 (but not SIZ2) fully rescued rpc160-M809I and partially rescued rpc128-A704T growth defects, and restored tRNA levels in rpc160 mutant cells to normal without affecting wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 are supported by tetrad analysis (Figures 2A-C), RNA gel analysis (Figure 2D), and RT-qPCR data (Figure 2E). The specificity for SIZ1 over SIZ2 and the selective effect on mutant versus wild-type cells are clearly demonstrated. The observation about 5S rRNA (C10-C13) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "5S rRNA levels remain unchanged in rpc160 mutants, likely because 5S rRNA is produced in excess and Pol III has higher affinity for TFIIIA-containing initiation complexes required for 5S rRNA but not tRNA transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by citation to Stettler et al., 1992, and the observation in Figure 2D. The explanation is mechanistically sound and consistent with known Pol III biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Most mutations identified by the screen occurred on residues close to the bound DNA template or growing RNA chain, suggesting they could impact Pol III enzyme activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by structural analysis based on the Cryo-EM structure (Hoffmann et al., 2015) shown in Figure 2\u2014figure supplement 1. While C15 is somewhat speculative, the structural location of mutations provides strong support for the inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previously characterized Pol III mutants (initiation-defective rpc31-236 and elongation mutants rpc160-112, rpc160-270) and reduced RPC160 expression were all rescued by siz1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by experimental data in Figure 2\u2014figure supplement 2A-B and citations to prior characterization of these mutants. This extends the findings beyond the screen-identified mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Testing of human disease-causing Pol III mutations introduced into yeast showed that siz1\u0394 rescued several single mutations in Rpc160 (Q608K, D384N/N789I, Q608K/G1308S but not E1329K), Rpc128 (L1027P), and Brf1 (two of three tested), while double mutations in rpc128 were lethal and not rescued.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are supported by experimental data in Figure 2\u2014figure supplement 2C-E and Figure 2\u2014figure supplement 3. The systematic testing of disease mutations provides important translational relevance, though the partial rescue pattern suggests complexity in the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "SUMO can repress Pol III, but the effect is most obvious when Pol III activity is greatly reduced through decreased expression or inactivating mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is an inference well-supported by the pattern of results across C4-C29, showing that siz1\u0394 effects are most pronounced in compromised Pol III contexts. This is a key mechanistic insight from the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "SUMO preferentially targets Pol III rather than Pol I or Pol II, as demonstrated by the selective rescue of a conserved trigger loop mutation (G to D) only in Pol III (rpc160-G1098D) but not in Pol I or Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by the comparative experiment in Figure 3A. The use of analogous mutations in conserved domains across the three polymerases provides strong evidence for Pol III specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SUMO-mediated Pol III repression is independent of known Pol III repressors Maf1, Mck1, and Kns1, as deletion of these factors did not rescue rpc160 mutants, and siz1\u0394 could rescue rpc160 even in the absence of Maf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by tetrad analysis (Figures 3B-F) showing lack of rescue by maf1\u0394, mck1\u0394, and kns1\u0394, and the ability of siz1\u0394 to rescue rpc160 in the absence of Maf1. This establishes a novel regulatory pathway distinct from known mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mass spectrometry identified four Pol III components (Rpc160, Rpc82, Rpc53, Rpc37) as sumoylated, with Rpc160 likely being a contaminant and Rpc82 not being the relevant target based on lack of rescue by rpc82-K406R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by the two-step IP and mass spectrometry data (Figures 4A-B). The inference about Rpc160 being a contaminant (C40) is reasonable based on molecular weight analysis. The conclusion about Rpc82 (C42-C43) relies on data not shown, which is a weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Rpc53 was extensively sumoylated in vivo in a Siz1-dependent (but not Siz2-dependent) manner, with more extensive sumoylation in rpc160 mutant cells, suggesting it may serve as a better SUMO substrate when Pol III is defective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by IP and immunoblot data (Figures 4C-D). The correlation with Siz1 specificity (C45) matches the genetic data. The speculation in C47 is reasonable given the increased sumoylation in mutant cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The major sumoylation sites in Rpc53 were mapped to K51, K115, and K236, as mutation of all three to arginine (rpc53-3KR) abolished the majority of sumoylation, and deletion of the N-terminal 274 amino acids eliminated detectable modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by mutagenesis analysis in Figure 4E. The site mapping is thorough and uses appropriate controls (3KR mutation and N-terminal deletion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "The rpc53-3KR mutation rescued rpc128-A704T growth defect, while SUMO fusion to Rpc53 (Su-rpc53-3KR) abolished the rescue effect, demonstrating that Rpc53 sumoylation can repress a defective Pol III machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C55 are supported by plasmid shuffle experiments (Figures 4F-G). The complementary approaches (preventing sumoylation with 3KR vs. mimicking it with SUMO fusion) provide strong evidence for the functional role of Rpc53 sumoylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The human homolog of Rpc53 (RPC4) was found to be extensively sumoylated in mammalian cells by multiple proteomic studies, suggesting this regulatory mechanism might be conserved from yeast to human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by citations to proteomic studies shown in Figure 4\u2014figure supplement 1. While C57 is speculative about conservation, the observation of RPC4 sumoylation in mammals provides reasonable support for this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sumoylation itself is not sufficient to inhibit Pol III and the effect appears indirect, as constitutive sumoylation of Rpc53 did not cause growth defects and the SUMO protease mutant ulp2-101 rescued rpc160-M809I without abolishing Rpc53 sumoylation, suggesting Rpc53 sumoylation triggers a downstream event such as STUbL-mediated ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by data in Figures 4G and 5\u2014figure supplement 1A-B. The logic is sound: if sumoylation were directly inhibitory, constitutive sumoylation should cause defects. The speculation about STUbL involvement (C62) is reasonable and sets up subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Full repression of Pol III requires ubiquitylation, as deletion of STUbL subunits (Slx5, Slx8) or the Ubc4 ubiquitin E2 enzyme all rescued growth defects caused by rpc160 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by tetrad analysis in Figures 5A-C. The involvement of multiple components of the ubiquitylation machinery provides strong evidence for this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A physical interaction between Slx5 and Rpc53 was detected by yeast two-hybrid assay, which required Rpc53 sumoylation, as the 3KR mutation or N-terminal deletion of Rpc53 abolished this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by yeast two-hybrid data in Figure 5D. The requirement for sumoylation sites provides mechanistic insight into how STUbL recognizes its substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The SUMO-interacting motifs (SIMs) in Slx5 are required for Pol III repression, as the slx5-sim mutant did not reverse the rescue of rpc160 mutations, suggesting ubiquitylation acts downstream of sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by plasmid shuffle experiments in Figure 5E. The requirement for SIMs is consistent with STUbL function and supports the sequential model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The cdc48-3 mutation rescued rpc160-M809I, but the SIMs in Cdc48 or its cofactor Ufd1 were not required, and ufd1-1 did not rescue, suggesting Cdc48 activation occurs through recognition of ubiquitylated proteins rather than direct recognition of sumoylated Pol III complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by tetrad analysis in Figures 5F and 5\u2014figure supplement 2A-C. The lack of requirement for SIMs distinguishes the mechanism from direct SUMO recognition and supports ubiquitin-mediated recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TMT mass spectrometry showed that mutant Rpc160-M809I had much weaker associations with 11 Pol III subunits compared to wild-type, and these associations were largely restored in cdc48-3 cells, suggesting Cdc48 may disassemble transcriptionally defective Pol III complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by TMT mass spectrometry data in Figure 5G. The restoration of complex integrity in cdc48-3 cells provides strong evidence for Cdc48's role in complex disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ChIP experiments showed that tRNA genes were significantly less occupied by mutant Rpc160-M809I compared to wild-type, but occupancy was restored in cdc48-3 cells, with no increase in wild-type Rpc160 occupancy in cdc48-3, suggesting only defective Pol III complexes are recognized and removed by Cdc48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by ChIP data in Figure 5H. The selective effect on mutant but not wild-type Rpc160 provides strong evidence for quality control specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Mutant Rpc160-M809I proteins are less stable than wild-type, and mutating three clustered ubiquitylation sites (K1240, K1242, K1249 to 3KR) stabilized the protein and partially rescued growth defects and tRNA levels in rpc160-M809I, with the rescue effect being more obvious on rpc160-G1297D and able to rescue defects in other Pol III components like rpc128-A704T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are supported by cycloheximide-chase experiments (Figure 6A), tetrad analysis (Figures 6B, D-E), and RNA analysis (Figure 6C). The identification of ubiquitylation sites is based on prior proteomic data (C89). The partial rescue suggests additional sites or proteins are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Rpc160-M809I proteins were stabilized in siz1\u0394, rpc53-3KR, ubc4\u0394, slx8\u0394, cdc48-3 cells, and by proteasome inhibitor MG132, suggesting Rpc53 sumoylation leads to Rpc160 ubiquitylation by Slx5-Slx8 STUbL, which triggers Pol III disassembly by Cdc48 segregase and eventual proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by cycloheximide-chase experiments in Figures 6F-G. The stabilization across multiple pathway components provides strong evidence for the sequential model, though direct detection of Rpc160 ubiquitylation is noted as missing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The partial rescue by 3KR suggests other ubiquitylation sites in Rpc160 and/or additional ubiquitylated proteins exist that play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is a reasonable inference from the partial nature of the rescue effects observed throughout the study. This acknowledges the complexity of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Chromatin association of SUMO at tRNA genes was previously reported in yeast and mammalian cells, suggesting sumoylation and ubiquitylation of Pol III subunits may both occur on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by citations to prior work. While C103 is speculative, it provides context for the subsequent chromatin experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Siz1 was enriched at tRNA genes, with more Siz1 associated in mutant rpc160-M809I cells than wild-type, and induction of mutant rpc160-M809I expression increased Siz1 at tRNA genes, suggesting Siz1 recruitment/association might be triggered/stabilized by defective Pol III complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by ChIP data in Figures 7A-B. The increased association with defective Pol III provides evidence for a quality control mechanism that responds to transcriptional defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Slx5 and Cdc48-3 were enriched at tRNA genes, especially in mutant rpc160-M809I cells, while wild-type Cdc48 could not be detected on chromatin, possibly because it continuously disassembles ubiquitylated Pol III complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by ChIP data in Figures 7C-D. Claims C112-C113 involve data not shown, with C113 being speculative but reasonable given Cdc48's segregase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Slx5 did not require its SIMs to associate with tRNA genes, indicating the role of SUMO is not to recruit STUbL to Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by ChIP data in Figure 7C. This surprising finding suggests SIMs have a different function than recruitment, which is explored in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The DNA-binding domain (SAP domain) of Siz1 was required for its tRNA gene association, for sumoylating Rpc53, and for inhibiting growth of rpc160 mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by ChIP data (Figure 7A), IP/immunoblot (Figure 7E), and plasmid shuffle experiments (Figure 7F). The requirement for DNA binding provides mechanistic insight into substrate recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The STUbL subunit Slx8 contains a DNA-binding activity mapped to the N-terminal 163 amino acids, which is required to inhibit growth of rpc160 mutant cells but not for chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by citation (C119), plasmid shuffle experiments (Figure 7G), and prior work (C121). The differential requirement for function versus chromatin association is important for understanding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The targeting of Pol III by SUMO and ubiquitin likely occurs on chromatin and requires physical interaction between DNA and the modifying enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are inferences well-supported by the chromatin association data (C104-C121) and the requirement for DNA-binding domains in both Siz1 and Slx8. This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The SUMO-ubiquitin-Cdc48 pathway preferentially targets defective Pol III, as siz1\u0394 only has obvious effects when Pol III is impaired, cdc48-3 only increases chromatin association of defective Rpc160, and Siz1 can be recruited in response to elevated defective Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 synthesize observations from multiple experiments (Figures 2D-E, 5H, 7B, 4D) to support the quality control model. The evidence is consistent across different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Defects in transcription initiation and elongation are likely recognized by the SUMO-ubiquitin-Cdc48 pathway, as mutations in initiation factors and both initiation-defective (rpc31-236) and elongation-defective mutants (rpc160-112, rpc160-270) were rescued by siz1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by the rescue of diverse mutant types shown in Figures 2\u2014figure supplement 2A and throughout the study. This demonstrates the pathway responds to multiple types of Pol III defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The whole Pol III complex rather than individual subunits appears to be targeted for repression, as sumoylated Rpc53 co-purifies with Rpc160, and when Rpc128 is mutated, SUMO and ubiquitin are conjugated to different subunits (Rpc53 and Rpc160) rather than Rpc128 itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by co-purification data (Figures 4A-B) and observations about modification patterns. C135 relies on data not shown, which is a weakness. The inference about complex-level targeting is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors propose that initiation or elongation defects trap Pol III on chromatin, and it would be more efficient to distinguish defective from normal Pol III by utilizing stable E3 ligase-DNA interactions rather than recognizing conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C138 are speculative mechanistic proposals. While the model is consistent with the data (chromatin association, DNA-binding requirements), direct evidence for Pol III trapping or the proposed recognition mechanism is not provided. This represents a hypothesis for future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Siz1, Slx5, and Cdc48 are all associated with tRNA genes, and both Siz1 and Slx8 contain DNA-binding domains that are required for them to repress Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by ChIP data (Figures 7A, C, D) and functional assays (Figures 7F, G). This provides strong evidence for chromatin-based regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The requirement for DNA-binding activities in Siz1 and Slx8 is surprising since no functional consequences were previously reported when disrupted in other contexts (PCNA sumoylation, DNA damage response), suggesting a role in processes other than DNA damage response or genome stability maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 are supported by citations to prior work showing these domains were dispensable in other contexts. The inference in C145 is reasonable and highlights the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The SIMs in Slx5 and DNA-binding domain in Slx8 may provide docking sites to position the enzyme correctly for substrate ubiquitylation, and STUbL might travel with sumoylated Pol III without ubiquitylating until Pol III is trapped on chromatin, such that Rpc53 sumoylation alone is insufficient to trigger ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C149 are speculative mechanistic proposals. While consistent with the data (SIMs not required for chromatin association but required for function), direct evidence for the proposed positioning mechanism or the traveling STUbL model is not provided. These are hypotheses for future testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SUMO-fused Rpc53 did not affect cellular growth even though it could functionally replace natural sumoylation, and SUMO-interacting activities of Cdc48 and Ufd1 were not required, suggesting sumoylation may not activate Cdc48 directly but rather indirectly through ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 are supported by data in Figures 4F-G and 5\u2014figure supplement 2A-B. The logic is sound and supports the sequential model where ubiquitylation, not sumoylation, recruits Cdc48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "Cdc48 may be able to disassemble defective Pol III complexes and remove them from chromatin, although how Cdc48 is activated and what cofactors are required remain to be answered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is supported by mass spectrometry (Figure 5G) and ChIP data (Figure 5H). Claim C155 appropriately acknowledges gaps in understanding, particularly regarding cofactors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "SUMO, ubiquitin, and Cdc48 act in a sequential manner with DNA-binding requirements to confer substrate specificity, restricting ubiquitylation, complex disassembly, and proteasomal degradation only toward transcriptionally defective Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 represent the central model synthesizing all major findings. The sequential model is well-supported by the genetic and biochemical data throughout the study, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "In vitro sumoylation, ubiquitylation, and Pol III transcription assays with purified proteins are required to further test the hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 appropriately identifies future experiments needed to test the model with reconstituted systems. This is a reasonable assessment of what is needed for mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Pol III, sumoylation, ubiquitylation, and Cdc48 are conserved from yeast to humans, and proteomic studies show Pol III is the major SUMO target among the three polymerases in mammalian cells, with RPC4 (human Rpc53 homolog) being the most prevalent sumoylated RNA polymerase subunit, suggesting the regulatory mechanism is likely conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 are supported by citations to proteomic studies (Figure 4\u2014figure supplement 1) and general knowledge about pathway conservation. While C160 is speculative about functional conservation, the extensive sumoylation of mammalian Pol III components provides reasonable support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Mutations in Pol III cause neurodegenerative disorders in humans, and a subset of these disease mutations when introduced into yeast were rescued by disrupting sumoylation, with patient fibroblasts showing reduced tRNA levels similar to yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 are supported by citations to disease studies and experimental data in Figure 2\u2014figure supplement 2-3. Claim C167 relies on data not shown, which is a weakness. The translational relevance is important but would benefit from more complete presentation of the patient cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "Sumoylation, ubiquitylation, and Cdc48 segregase can be potential therapeutic targets for neurodegenerative disease caused by Pol III mutations, and the yeast growth assay is a convenient tool to determine which disease mutations are likely to cause phenotypes for creating cell lines and mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C168 is highly speculative about therapeutic potential without supporting data in disease-relevant systems. Claim C169 is better supported by the successful use of yeast assays to test disease mutations, though this is more of a methodological observation than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "It is possible to differentiate iPSC lines into myelinating oligodendrocytes in vitro, and oligodendrocytes from Pol III patients are expected to display a myelination defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C170 is supported by citation, but C171 is speculative without experimental evidence. These represent proposed future experiments rather than results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The study demonstrates that in budding yeast, Pol III is negatively regulated by SUMO, ubiquitylation, and the Cdc48/p97 segregase acting in a sequential manner, eventually leading to proteasomal degradation of Pol III subunits, and suggests these pathways can be potential therapeutic targets for Pol III-related human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C177 represent the main conclusions of the study and are well-supported by the comprehensive genetic and biochemical data presented. Claim C178 about therapeutic potential is more speculative but reasonable given the conservation and disease relevance. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  }
+]

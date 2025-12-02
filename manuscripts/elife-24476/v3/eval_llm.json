@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A novel population of MR1-restricted T cells (MR1T cells) was identified in healthy individuals. These cells display diverse TCRs (not expressing the canonical TRAV1-2 gene), recognize MR1-expressing cells in the absence of microbial ligands, and are present at an estimated frequency of 1:2500 to 1:5000 of circulating T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C49 collectively demonstrate the existence of MR1T cells through multiple lines of evidence: initial identification of clone DGB129 (C35-C39), systematic cloning from multiple donors showing MR1-dependent recognition (C40-C43, C46-C47), frequency estimation by flow cytometry (C44-C45), and TCR diversity analysis (C42-C43, C48-C49). The use of anti-MR1 blocking antibodies consistently confirms MR1-dependence, and the lack of TRAV1-2 expression distinguishes these cells from MAIT cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MR1T cells do not recognize microbial antigens (E. coli lysate or synthetic MAIT cell agonists) but instead recognize MR1-bound cellular antigens. The stimulatory ligands do not require Schiff base formation with MR1 Lysine 43, distinguishing them from known MAIT cell ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 provide strong evidence through multiple complementary experiments: MR1T cells are not activated by E. coli lysate (C50-C52), are inhibited by 6-FP/Ac-6-FP competitors (C54), but this inhibition is lost with K43A mutant MR1 (C55), demonstrating competitive inhibition without direct recognition (C56-C58). The consistent use of appropriate controls (MAIT cells, TCR \u03b3\u03b4 cells) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MR1T cells recognize distinct cell-derived antigens present in cellular fractions. Two representative clones (DGB129 and DGB70) from the same donor recognized different hydrophilic fractions (N4 and N3, respectively) from cell lysates, demonstrating antigen specificity and diversity within the MR1T cell population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 demonstrate cellular origin of antigens through culture medium controls (C59-C60), fractionation experiments showing clone-specific recognition (C61-C62), and plastic-bound MR1 loading experiments confirming antigen requirement (C64-C65). The differential recognition by two clones from the same donor (C66) supports functional diversity. However, the chemical identity of the antigens remains unknown, which limits mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "MR1T cell clones DGB129 and DGB70 exhibit both shared and clone-specific transcriptional programs upon antigen stimulation. Both clones share regulation by transcription factors TBX21, FOXP3, FOS, RXRA, FOSL2, IRF4, BATF, and TRIB1, but DGB129 is uniquely regulated by MYC, HSP90AB1, and CREM, while DGB70 is regulated by EGR1, JUNB, and SREBF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by RNA-sequencing data and transcription factor network analysis using betweenness centrality and PageRank algorithms. The identification of both shared and clone-specific transcription factors is methodologically sound. However, the functional significance of these transcriptional differences is inferred rather than directly demonstrated, and the analysis is limited to two clones, which may not represent the full diversity of MR1T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C5",
+      "C6",
+      "C79",
+      "C80"
+    ],
+    "result": "MR1T cells display functional heterogeneity with diverse cytokine secretion profiles and chemokine receptor expression patterns. While all clones release IFN-\u03b3, they show variable expression of Th1, Th2, and Th17 cytokines, growth factors (VEGF, PDGF), and differential expression of CXCR3, CCR4, and CCR6, contrasting with the uniform Th1-biased response of MAIT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are well-supported by multiplex cytokine assays and flow cytometry data from multiple clones. The functional diversity is demonstrated through specific examples (C75-C77) and contrasted with MAIT cell controls (C78). The caveat that IFN-\u03b3 expression may result from in vitro expansion (C73) is appropriately acknowledged. The data convincingly demonstrate heterogeneity, though the physiological relevance of some atypical functions (e.g., VEGF/PDGF release) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C7"
+    ],
+    "result": "MR1T cells recognize and respond to cells expressing physiological levels of MR1, including monocyte-derived dendritic cells (Mo-DCs), and can induce DC maturation in an MR1-dependent manner, demonstrating T helper-like function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 demonstrate that MR1T cells can recognize cells with constitutive (low) MR1 expression, not just overexpressing cell lines. The DC maturation experiments (C83-C84) provide functional evidence with appropriate anti-MR1 blocking controls. This extends the findings beyond artificial systems to physiologically relevant conditions. The data support a potential immunoregulatory role for MR1T cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "MR1T cells can modulate intestinal epithelial cell function. The JMA clone induced MR1-dependent secretion of IL-8 and IL-13 and promoted increased MUC2 gene expression in LS 174T intestinal epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by ELISA and Q-PCR data with appropriate anti-MR1 blocking controls and positive controls (TNF-\u03b1). This demonstrates a potential role for MR1T cells in mucosal homeostasis. However, the functional significance is demonstrated for only one clone and one cell line, limiting generalizability. The physiological relevance of this interaction in vivo remains to be established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background knowledge about MR1, MAIT cells, and other unconventional T cells is accurately presented, including MR1's role in presenting riboflavin metabolites to MAIT cells, the properties of MAIT cells, and prior identification of 'atypical' MR1-restricted T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C34 represent background information supported by appropriate citations to prior work. These claims establish the context for the current study and are consistent with established knowledge in the field. The citations appear appropriate and the characterization of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The MR1 antigen-binding pocket is larger than known MR1 ligands, suggesting capacity to bind a wider repertoire of antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are based on structural knowledge of MR1 and represent a reasonable inference that motivates the search for alternative MR1 ligands. This is a well-established structural observation that provides conceptual support for the existence of MR1T cells recognizing non-microbial antigens. However, this is background/contextual information rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The frequency of MR1T cells is estimated at 1:2500 to 1:5000 of circulating T cells, though this may be an underestimate due to potential limitations in antigen presentation by the A375 cells used for frequency determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 presents frequency estimates based on two complementary approaches (flow cytometry after overnight stimulation and cloning efficiency), which is methodologically sound. However, C90 appropriately acknowledges that this could be an underestimate if A375 cells lack some MR1T cell antigens. The frequency estimation relies on several assumptions: (1) that the difference in CD69+CD137+ cells between MR1+ and MR1- stimulation represents only MR1T cells, (2) that all MR1T cells are equally activated by A375-MR1 cells, and (3) that the cloning efficiency is representative. These assumptions are not fully validated, introducing uncertainty into the precise frequency estimate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "MR1T cells are a normal part of the human T cell repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by the detection of MR1T cells in multiple healthy donors (5 donors for frequency estimation, 3 donors for detailed cloning studies) and their estimated frequency (1:2500-1:5000), which is comparable to antigen-experienced conventional T cells. The consistency across donors and the reproducibility of findings support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Speculative proposals about MR1T cell functions include potential roles in responding to metabolic changes, tissue remodeling (based on VEGF/PDGF release), and contributing to mucosal homeostasis through diverse effector functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are explicitly speculative (\"tempting to speculate,\" \"suggesting,\" \"might\") and represent hypotheses rather than demonstrated results. While these speculations are reasonable based on the observed functional diversity (C92 is partially supported by VEGF/PDGF data), they require future experimental validation. These represent discussion points and future directions rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A chimeric receptor matrix study using IL-1 receptor ECDs fused to cytokine receptor ICDs demonstrates that most non-natural cytokine receptor hetero-dimers can activate STAT signaling. The study shows that STAT1 and STAT6 are specifically activated by IFNAR2 and IL-4R\u03b1-containing pairs, while STAT3 and STAT5 are activated by many receptor combinations, revealing high plasticity of the cytokine receptor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C19 are well-supported by experimental data in Figure 2 showing STAT activation patterns across 100 receptor pair combinations. The binary heatmap analysis, Western blot data, and flow cytometry surface expression data provide converging evidence. The observation that some receptor pairs (IL-2R\u03b2 and IL-13R\u03b11 homodimers) do not signal despite surface expression adds nuance and credibility to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "JAK2/JAK3 receptor pairs do not naturally occur and fail to activate signaling in the chimeric receptor system. However, insertion of two alanines in the EpoR juxtamembrane domain fully recovers signaling, suggesting structural constraints between JAK2 and JAK3 can be overcome by altering receptor geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by experimental data in Figure 2C showing that specific alanine insertions (2A) recover signaling while others (1A, 3A) do not. The observation that JAK2/JAK3 pairing is not found in nature (C21) provides biological context. The inference about structural constraints (C23) is reasonable given the data, though the exact molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Some natural receptor pairs (IL-12R\u03b2-IL-23R, EpoR-EpoR) fail to signal in the chimeric IL-1 receptor system despite representing natural cytokine receptor dimers. The authors conclude this is likely due to unfavorable IL-1 receptor extracellular orientation rather than intrinsic inability of JAK/TYK/STAT combinations to function, though this remains experimentally untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C80 present a limitation of the experimental system. While the data in Figure 2 supplement 4 support that alanine insertions do not recover signaling for these pairs (C76), the interpretation (C78) is speculative and acknowledged as untested. The conclusion (C79) that most non-natural pairs can signal is reasonable but qualified by the technical limitations discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Synthekines composed of linked dominant-negative cytokine mutants (SY1 and SY2) activate distinct signaling profiles compared to parent cytokines. SY1 (IL-4DN-IFNDN) activates STAT5 and STAT6, with increased potency when using a longer linker. SY2 (IL-2DN-IL-4DN) preferentially activates STAT1. All synthekines show lower maximum responses than natural cytokines and do not produce additive effects of parent cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C24-C31 are well-supported by experimental data in Figure 3. The dominant-negative design is validated (C24-C25), and the distinct signaling profiles of synthekines are demonstrated by flow cytometry (C26-C29). The observation that synthekines are less potent than natural cytokines (C30) and do not produce additive effects (C31, Figure 3 supplement 1) strengthens the conclusion that these are truly novel signaling entities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "High-throughput phospho-flow cytometry analysis of 120 signaling molecules in Hut78 cells reveals that synthekines activate distinct signaling programs compared to natural cytokines. SY1 strongly activates STAT5, STAT6, and PI3K pathway, while SY2 shows weaker overall signaling with STAT1 preference. STAT activation ratios differ significantly between synthekines and parent cytokines, and PCA confirms synthekines activate distinct rather than subset signaling programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are strongly supported by comprehensive phospho-flow data in Figure 4. The bubble plots (4A), radar plots (4B), and STAT ratio analysis (4C) provide multiple lines of evidence. The PCA analysis (Figure 4 supplement 1) independently confirms that synthekines occupy distinct signaling space. The use of 120 different signaling molecules provides robust characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mass cytometry analysis of 31 immune cell populations from PBMCs shows that synthekines exhibit cell-type-specific signaling patterns distinct from natural cytokines. SY1 induces strong STAT5 activation in T cells but fails to activate signaling in NK, B cells, and monocytes. SY2 elicits weak signaling across all cell populations with slight STAT1 bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by mass cytometry data in Figure 5A. The cell-type-specific signaling patterns are clearly demonstrated, with natural cytokines showing expected profiles and synthekines showing distinct patterns. The observation that SY1 is T cell-specific (C43) while SY2 shows weak pan-cellular activation (C44) is well-documented. Two independent replicates strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Bead-based immunoassay analysis of 63 cytokines secreted by PBMCs shows that synthekines induce distinct cytokine secretion profiles. Super-2 increases secretion of LIF, IL-13, IFN\u03b3, IL-22, and CD40L. SY1 induces secretion of multiple cytokines including IL-17F, IL-27, IL-13, IL17A, IFN\u03b3, BDNF, IL-23, FGF\u03b2, PDGFBB, and ENA78. SY2 induces marginal secretion of Eotaxin, BDNF, and PDGFBB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by bead-based immunoassay data in Figure 5B. The cytokine secretion profiles are consistent with known biology for natural cytokines (C46-C49 with citations) and show distinct patterns for synthekines (C50-C51). The observation that SY1 induces broad cytokine secretion while SY2 shows minimal secretion aligns with the signaling data. Two independent replicates support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Chimeric receptors pairing cytokine receptor ICDs with EGFR show that IL-1 stimulation induces variable EGFR phosphorylation and weak STAT3/STAT5 activation, suggesting cytokine and tyrosine kinase receptors can trans-phosphorylate when in enforced proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by data in Figure 6B showing EGFR phosphorylation and weak STAT activation. However, the authors appropriately note that receptor overexpression can lead to artifactual phosphorylation, which is why they pursued synthekine validation. The conclusion (C54) is supported by citations to prior work showing natural cross-talk, but the chimeric receptor data alone should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Synthekines that heterodimerize cKit (RTK) and TpoR (JAK/STAT receptor) elicit measurable but weak signaling. SY5 induces modest cKit phosphorylation and weak JAK2 phosphorylation, with measurable Erk activation (50% Emax vs SCF) but weak STAT5 activation. JAK2 inhibition abolishes Erk activation, indicating JAK2 dependence. The signaling signature differs qualitatively from SCF, TPO, or their combination, demonstrating cross-talk between JAK/STAT and RTK receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C55-C61 are supported by data in Figures 6D-E and 7B-C. The Western blot data (6D) shows differential phosphorylation, flow cytometry (6E) quantifies signaling responses, and JAK2 inhibitor experiments (Figure 6 supplement 1B) demonstrate mechanism. The high-throughput phospho-flow data (Figure 7) shows qualitatively distinct signaling. However, the signaling is notably weak compared to natural ligands, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Synthekines activate distinct signaling programs with STAT activation ratios that differ significantly from parent cytokines. SY1 exhibits STAT6>STAT5>STAT1>STAT3 pattern (vs STAT6>STAT1>STAT3>STAT5 for IL-4+IFN), while SY2 shows STAT1>STAT6>STAT5>STAT3 pattern (vs STAT6>STAT5>STAT3>STAT1 for IL-4+IL-2). Changes in STAT activation ratios can alter cytokine-induced biological responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by data in Figure 4C showing distinct STAT activation ratios. The comparison to parent cytokine combinations (C64-C65) demonstrates that synthekines are not simply additive. The physiological relevance (C66) is supported by citations to prior work, though the authors acknowledge this remains to be fully understood. The data provide strong evidence for distinct signaling programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Synthekines may change the abundance of STAT heterodimers and possibly induce formation of novel STAT heterodimer pairings, which could result in completely novel gene expression programs and activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculative and acknowledged as such by the authors ('it is conceivable'). While the hypothesis is reasonable given that synthekines create non-natural receptor dimers, no direct experimental evidence for altered STAT heterodimer formation is provided. This represents a plausible mechanism but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Synthekines are relatively inefficient at activating signaling compared to natural cytokines, with at best 60% of the signaling amplitude for IL-2, IL-4, or IFN. cKit/TpoR synthekines show even weaker activation. The authors propose that suboptimal receptor binding topology may explain this inefficiency and suggest that altering synthekine construction could improve signaling strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by observations throughout the manuscript (Figures 3-7). The reduced potency is consistently observed across multiple assays. The explanation about receptor topology (C72) is supported by citation to prior work. However, the suggestion that signaling could be improved (C73) is speculative and represents future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Receptors with long ICDs typically pair with JAK1/JAK2 and drive strong signaling, while receptors with short ICDs pair with TYK2/JAK3 and contribute minimally to STAT activation. Many non-signaling receptor pairs in the chimeric receptor study comprised short ICD receptors, suggesting synthekines dimerizing two short ICD receptors would elicit weaker signaling than those dimerizing long ICD receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by established knowledge (C81-C82 with citations) and observations from the chimeric receptor data (C83). The inference about synthekine design (C84) is reasonable based on the data pattern, though it represents a prediction rather than direct experimental validation. This provides useful design principles for future synthekine engineering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Synthekines dimerize cytokine receptor pairs in a defined 1:1 stoichiometry, enabling clear attribution of signaling to specific receptor dimers. This contrasts with previous approaches that linked two functional cytokines, which could form multiple independently functioning or mixed receptor complexes. The defined stoichiometry is vital for characterizing signaling and phenotypic programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe a key design principle of the synthekine approach. The 1:1 stoichiometry is ensured by the dominant-negative design where each cytokine component binds only one receptor subunit. The contrast with prior 'fusokine' approaches (C87 with citation) is valid. This represents an important methodological advance for mechanistic studies, though the actual 1:1 stoichiometry is inferred from design rather than directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The dominant-negative cytokine mutants and synthekines were generated using specific mutations: IL-4DN (R121D/Y124D), IFNDN (F63A/R120E), IL-2DN (from prior work), and linked with Gly4Ser linkers to create SY1 (IL-4DN-IFNDN) and SY2 (IL-2DN-IL-4DN) synthekines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe the protein engineering methods. IL-4DN mutations (C89) are supported by citation. IFNDN mutations (C90) are described but without citation. IL-2DN (C91) references prior work. The synthekine construction (C92-C93) is clearly described. These are methodological details that are adequately documented, though independent validation of the dominant-negative phenotype is shown in Figure 3C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The IL-1 receptor system was chosen for the chimeric receptor study because IL-1 binds with very high affinity allowing signal activation at low receptor expression levels, and IL-1 does not signal via the canonical JAK/STAT pathway, eliminating background activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe the rationale for the experimental system design. These are established properties of the IL-1 system and represent sound experimental design choices. The high affinity (C74) addresses potential issues with low expression of transfected receptors, and the lack of JAK/STAT signaling (C75) provides a clean background for measuring chimeric receptor activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the biological context that cytokines signal through dimeric receptors via JAK/STAT pathways, with the human genome encoding ~40 cytokine receptors that could theoretically form ~1600 dimers, but only ~50 cytokine ligands exist, limiting natural receptor pairings. Prior work has shown that chimeric receptors with swapped ECDs and ICDs can activate signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish background knowledge and rationale for the study. These are well-established facts supported by multiple citations (C7, C9, C11-C13). The calculation of potential receptor pairs (C11) is straightforward combinatorics. This background appropriately motivates the synthekine approach by highlighting the gap between theoretical and actual receptor diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Few cytokines are clinically useful due to pleiotropy and off-target effects. Engineered cytokines are limited to exhibiting a subset of activities within the parental cytokine's bioactivity space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide clinical motivation for the synthekine approach. C68 is supported by citations to clinical literature. C69 is a logical inference about the limitations of modifying existing cytokines. These claims appropriately motivate the need for synthekines that can access novel bioactivity space rather than subsets of existing cytokine activities.",
+    "result_type": "MINOR"
+  }
+]

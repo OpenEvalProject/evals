@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Genetic factors account for 15-20% of variance in functional connectivity across modalities. Specifically, genes account for ~17% of fMRI connectivity variance, 19% of MEG beta-band variance, and 8% of MEG alpha-band variance, substantially exceeding shared environmental contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C40-C42 present consistent heritability estimates from variance component models with appropriate statistical testing (permutation-based inference, FDR correction). The findings are supported by data from 820 fMRI subjects and 89 MEG subjects using twin study design. Confidence intervals and p-values are reported in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C70"
+    ],
+    "result": "Genes have a dominant role over developmental environment in determining neuronal coupling and cognitive function. This conclusion extends to integrated cognitive function and cognitive capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C70 represent the primary conclusion of the study, directly supported by the differential heritability findings (h\u00b2-c\u00b2 estimates of 0.15[0.13,0.16] for fMRI and 0.13[0.04,0.22] for beta-band). The inference is logically derived from the variance decomposition results, though it relies on the equal-environment assumption for twins which the authors acknowledge may be violated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Network similarity increases with genetic relatedness, and the observed connectivity patterns in fMRI and MEG match established resting-state networks. fMRI shows bilateral, fronto-parietal, and cingulate connectivity; MEG alpha-band shows visual system connectivity; MEG beta-band shows sensorimotor connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by significant permutation tests (p<10\u207b\u00b3) showing progressive network similarity from unrelated subjects through siblings, dizygotic twins, to monozygotic twins (Figure 1B). Claims C29-C37 describe connectivity patterns consistent with prior literature and are supported by citations and visual evidence in Figure 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Genetic control of functional connectivity extends across multiple spatial scales. Using a 15-dimensional ICA parcellation, significant genetic influences were found in fMRI (h\u00b2=0.29[0.26,0.33], p=1\u00d710\u207b\u2074) but not in MEG, possibly due to unsuitability of static whole-network parcellations for MEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 provides specific statistical evidence for genetic effects at the inter-network level in fMRI. Claim C47's null finding for MEG is appropriately interpreted (C47) with reference to MEG's dynamic sub-network structure. Claim C48's inference about multi-scale genetic control is reasonable given significant effects at both focal ROI and inter-network levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C94"
+    ],
+    "result": "Signal power shows heritable components in fMRI but not MEG. The analysis controlled for node power effects by including geometric mean power as a regressor in connectivity analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 report findings from variance component models on signal power (Figure 1D), with appropriate statistical testing. Claim C94 describes the methodological control implemented to prevent confounding of connectivity heritability by power heritability. This represents sound experimental design addressing a known confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Cortical curvature exhibits modest heritability, with highest values around sensorimotor areas and insula, consistent with prior HCP analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by multiple citations to prior work. Claim C52 reports findings from the current analysis (Figure 1\u2014figure supplement 2) that replicate prior results from a different HCP sample, providing validation. The lack of correlation between curvature heritability and connectivity heritability (Supplementary file 5) supports that anatomical confounds don't drive the connectivity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "No significant genetic control was found in the theta frequency band, possibly due to technical limitations in MEG connectivity estimation outside alpha/beta bands or insufficient sample size (89 MEG subjects vs 820 fMRI subjects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 reports a null finding from the variance component analysis. Claims C58-C59 provide reasonable speculation about technical and statistical power limitations, supported by citation to Colclough et al., 2016 regarding MEG connectivity estimation challenges. The authors appropriately acknowledge this as a limitation rather than claiming absence of genetic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study improves upon prior electrophysiology heritability work by using source-localized MEG with symmetric orthogonalization to suppress volume conduction artifacts, which were confounds in previous EEG sensor-space analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 accurately characterize prior work and its limitations. Claims C56, C82-C84 describe the methodological improvements implemented, supported by appropriate citations. The symmetric orthogonalization method (Colclough et al., 2015) is well-established for addressing spatial leakage, though C84 appropriately notes it removes zero-lag connections of true neuronal origin as a trade-off.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior studies show structural connectivity is highly heritable (~25% in HCP) and functional connectivity heritability ranges from 20-60%, though previous fMRI studies generally failed to control for motion, node power, or brain size. Heritability estimates can change as network estimation methods improve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 accurately summarize prior literature with appropriate citations. The critical assessment in C63 is supported by review of cited methods. Claim C64 provides important conceptual insight about how measurement noise affects heritability estimates, which is theoretically sound and contextualizes why this study's estimates differ from some prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C71"
+    ],
+    "result": "The study analyzed HCP data from 820 subjects (103 MZ and 54 DZ twin pairs) for fMRI and 89 subjects (19 MZ and 13 DZ twin pairs) for MEG. All subjects were healthy young adults aged 22-35 years, with four 15-minute fMRI scans and three 6-minute MEG scans per subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23, C26-C27, and C71 accurately describe the study sample and data collection. These are straightforward descriptive claims about the dataset used, consistent with HCP documentation. The sample sizes are adequate for fMRI twin analyses but more limited for MEG, which the authors acknowledge affects statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Functional connectivity was estimated among 39 contiguous ROIs derived from 100-dimensional ICA decomposition of HCP fMRI data. This parcellation size is appropriate for MEG given technical limitations of ~60 measurable cortical sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe the primary parcellation used, which is well-documented and shown in Figure 2A. Claims C76-C78 provide sound justification for the parcellation dimensionality based on MEG's technical constraints, supported by citations to Taulu et al., 2005 and Farahibozorg et al., 2017. The choice represents appropriate methodological consideration of MEG limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Different connectivity metrics were used for fMRI (partial correlation) and MEG (full correlation of power envelopes) based on modality-specific reliability. Sensitivity analysis using full correlation for fMRI yielded qualitatively similar results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 justify the methodological choices with appropriate citations showing partial correlation is optimal for fMRI while full correlation is most repeatable for MEG (Colclough et al., 2016). Claim C88 reports a sensitivity analysis confirming robustness of findings to this methodological choice, strengthening confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C93",
+      "C97"
+    ],
+    "result": "Network similarity was measured using Riemannian geometry-based distance metrics. Statistical inference used APACE permutation methods with extensive confound regression (age, sex, brain volumes, motion, reconstruction software) and FDR correction for 21 tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C92 describe sophisticated and appropriate statistical methods with proper citations. Claim C93 details comprehensive confound control addressing known sources of bias. Claim C97 confirms appropriate multiple comparison correction. The statistical approach is rigorous and well-suited to the twin study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Functional connectivity relates to gene expression patterns, intelligence, and broad behavioral/lifestyle factors. While environmental factors can impact outcomes, the current findings suggest genetic factors dominate in determining connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 appropriately contextualize the findings within broader literature on genetics, cognition, and environment. All claims are supported by relevant citations. The authors appropriately acknowledge environmental effects (C69) while maintaining their conclusion about genetic dominance, providing balanced interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Functional connectivity exhibits established patterns of resting-state networks associated with behavior, cognition, and intelligence, changes across the lifespan, and is altered in neurological diseases. Intrinsic activity can predict task performance and regional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide background context about functional connectivity, all supported by appropriate citations to established literature. These are not novel findings from this study but rather well-accepted prior knowledge that motivates the research question. The characterization of the field is accurate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Monozygotic twins share 100% of genetic structure while dizygotic twins share 50%, both sharing common environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 state fundamental genetic facts about twin relationships that form the basis of twin study methodology. These are established knowledge correctly applied to justify the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C72",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "MEG connectivity patterns agree with prior literature. Data acquisition used standard HCP protocols: fMRI at 2mm/0.72s resolution and MEG on Magnes 3600 scanner with beamformer source reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 validates the MEG findings against prior work with extensive citations. Claims C72, C79-C81 describe standard data acquisition and preprocessing methods appropriate for the analyses. These methodological details are well-documented and follow established best practices.",
+    "result_type": "MINOR"
+  }
+]

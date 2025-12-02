@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Patients successfully learned the virtual navigation environment, as evidenced by significantly decreased driving times between goal stores throughout the task session (Kruskal-Wallis test, p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are well-supported by appropriate statistical analysis (Kruskal-Wallis test) of behavioral data showing learning over time. The inference that decreased driving time indicates successful learning and efficient path planning is reasonable and standard in navigation research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Single neurons in the MTL and frontal cortex encode navigational goals and planning through firing rate modulations. 53 goal-responsive cells (11% of 466 MTL neurons) showed main effects of goal, distributed across hippocampus, entorhinal cortex, orbitofrontal cortex, and premotor cortex. Neurons also showed task-period-specific firing during navigational planning and goal arrival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by appropriate two-way ANOVA analyses with statistical significance (p<0.05) and binomial tests confirming above-chance proportions. The findings replicate prior work (Ekstrom et al., 2003) and extend it to planning periods. Sample sizes appear adequate (466 neurons, 12 patients) and the statistical approach is appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The MODAL algorithm successfully identifies and tracks narrowband oscillations in human and rodent LFP data. MODAL detected slow theta oscillations (~3 Hz) in 93% of MTL electrodes, with this frequency being most prevalent. The algorithm was validated on rodent hippocampal CA1 and medial prefrontal cortex data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 and C87-C90 describe the MODAL algorithm and its validation. The method is well-characterized with clear advantages over prior approaches (adaptive band identification, exclusion of non-oscillatory periods). Cross-validation with rodent data (C38-C40) strengthens confidence in the method. However, more extensive benchmarking against established methods would strengthen the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "30% of MTL neurons (144/466) showed significant phase-locking to slow theta oscillations (Rayleigh test, p<0.005), with firing clustered near the trough of oscillations. Phase-locking was most prominent in the hippocampus and occurred primarily to oscillations below 5 Hz. Some neurons (13.6%) showed frequency-specific phase-locking to only one of multiple detected bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 are supported by appropriate circular statistics (Rayleigh tests) and binomial tests showing above-chance proportions. The p<0.005 threshold is appropriately conservative. Control analyses (C117-C118) using Watson-Williams tests rule out artifacts from non-sinusoidal oscillations. The frequency-specific phase-locking finding (C49) is particularly interesting but based on small numbers (6/44 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "10% of neurons (63/627) showed significant phase coding of navigational goals using spike-phase information, with enrichment in the hippocampus (\u03c7\u00b2(6)=50, p<0.0001). Critically, 80% of phase-coding cells (51/63) showed no firing rate effects, indicating phase coding can exist independent of rate coding. Phase-locking and phase coding are related but non-identical phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by rigorous cross-validated decoding analysis with appropriate shuffle corrections. The key finding that phase coding occurs independently of rate changes (C58-C59) is well-supported statistically. However, the decoding approach could be strengthened by reporting classification accuracy values and confusion matrices, not just significance. The 10% proportion is above chance but modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Phase coding in hippocampal neurons is specific to task periods and frequencies. 24 hippocampal neurons (12%) showed phase coding during planning, and 24 (12%) during arrival, with largely distinct populations (only 2 neurons significant for both). Phase coding was specific to low frequencies (1-10 Hz) and not observed above chance in alpha/beta bands (10-30 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by appropriate statistical analyses showing above-chance proportions (binomial tests, p<0.00001). The finding of distinct neuronal populations for planning vs. arrival (C63) is important but the overlap analysis could be more thoroughly described. The lack of phase coding in higher frequency bands (C64) is a negative result that appropriately uses chance-level comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Phase coding is not explained by confounding factors such as overall firing rates, oscillation prevalence, or oscillatory bandwidth. Phase-coding and non-phase-coding cells had similar firing rates (p=0.39), and phase coding was unrelated to oscillation prevalence (rho=-0.0049, p=0.9) or bandwidth (rho=0.008, p=0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 present important control analyses that rule out alternative explanations. The statistical tests (ranksum, correlation) are appropriate and show convincingly that phase coding is not an artifact of broader LFP or firing rate changes. These controls strengthen the main phase-coding findings substantially.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Single-neuron firing rate correlates with high-frequency activity (HFA) in 41% of neurons, and 14% of channels show HFA phase coding. However, spike-phase coding and HFA-phase coding were unrelated across channels (\u03c7\u00b2=0.01, p=0.9), suggesting functional heterogeneity in the MTL where adjacent cells may represent different information types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 and C119-C122 present an unexpected finding that spike and HFA phase coding occur on different channels despite their correlation. The speculation about functional heterogeneity (C121-C122) is reasonable but remains speculative. The lack of relationship between spike and HFA phase coding (C120) is surprising and may warrant further investigation to rule out methodological issues or understand the biological basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C93",
+      "C94"
+    ],
+    "result": "Phase-tuned neuronal firing encodes navigational goal information independent of firing rate changes, establishing phase coding as a component of the human neural code. This extends prior LFP-based findings to single-neuron recordings and provides evidence for SCERT and related theoretical models of oscillatory phase coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C67, C75-C79, C93-C94 represent the main conclusions of the study. These are well-supported by the convergent evidence from multiple analyses showing phase-locking, phase coding, task-specificity, and independence from rate coding. The claim of 'first evidence' (C93) for phase coding during human navigation is appropriately qualified. The support for SCERT (C79) is reasonable given the predictions and findings align.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Phase coding in humans occurs predominantly at slow theta frequencies below 5 Hz, slower than the canonical 8-Hz theta observed in rodents. These slow theta oscillations play a functional role in modulating neuronal spiking during human virtual navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by the frequency distribution data from MODAL and phase-locking analyses. The comparison to rodent theta is appropriate and the conclusion that human navigation-related theta is slower is consistent with prior literature (C20, C42, C97). The functional role claim (C98) is supported by the phase-locking and phase-coding findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Rate and phase coding are partially distinct phenomena implemented by largely non-overlapping neuronal populations. Similar numbers of neurons showed rate-modulation (n=53) versus phase-modulation (n=63), and phase coding appeared during either planning or arrival based on task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by the comparative analyses of rate-coding and phase-coding populations. The finding of similar proportions but distinct populations is important for understanding neural coding mechanisms. The replication of prior rate-coding findings (C80) and novel planning-related activity (C81) strengthen the results. The conclusion that phase coding is not an epiphenomenon (C86) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The slow theta oscillations observed in this epilepsy patient population likely generalize to healthy individuals, as similar ~3-Hz oscillations have been reported in non-epileptic patients and after removing seizure onset zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 address an important limitation regarding the epilepsy patient population. While the authors cite prior work showing ~3-Hz oscillations in non-epileptic contexts (C100-C101), the conclusion that results would generalize to healthy populations (C102) remains somewhat speculative without direct data from healthy controls. This is a reasonable inference but represents a limitation of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The findings align with theories of MTL spatial contextual representation and suggest that both firing rate and spike-phase timing are general coding mechanisms in the human MTL. The goal coding may reflect flexible encoding of spatial contextual information, and other types of contextual information may also be encoded using LFP phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 present broader interpretations and implications of the findings. C103-C104 are well-supported by consistency with prior literature. C105 is explicitly speculative. C106 is a reasonable generalization supported by the current data and prior studies. C107 is appropriately presented as a suggestion for future work rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study employed appropriate methods including IRB approval, informed consent, microwire recordings from MTL and frontal sites, spike sorting, and automated detection/exclusion of epileptogenic activity (~5% of data). Control analyses confirmed phase-locked activity was not an artifact of non-sinusoidal oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 describe methodological details and quality controls. The ethical procedures (C108-C109) are appropriate. Recording methods (C110-C112) are standard for this type of study. The epileptogenic activity exclusion (C114-C116) is important and appropriately implemented, with no bias toward phase-coding channels (C116). The non-sinusoidal oscillation control (C117-C118) is rigorous.",
+    "result_type": "MINOR"
+  }
+]

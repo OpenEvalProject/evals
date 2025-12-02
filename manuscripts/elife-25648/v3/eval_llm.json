@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "High-resolution template matching detects single apoferritin molecules in vitreous ice with high specificity and determines their orientation and location precisely. Detection yields high SNR values at specific orientations clustered at expected locations, with angular precision within three degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C36-C38 provide converging experimental evidence from apoferritin detection showing high SNR values, correct spatial clustering, and precise orientation determination. The sharp orientation dependence (C39) confirms specificity. The decoy protein control (C40) validates the method's selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C118",
+      "C119"
+    ],
+    "result": "Close-to-focus imaging combined with whitening filters is essential for optimal protein detection in crowded molecular environments. High spatial frequencies provide sensitivity and selectivity, while close-to-focus CTF and whitening suppress low-frequency noise from protein background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22-C23, C59-C68, C118-C119 form a coherent mechanistic explanation supported by both simulations and experiments. The CTF properties at different defocus values (C59-C61), noise analysis (C63-C64), and whitening restoration (C66-C67) provide strong convergent evidence for the proposed detection strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C99"
+    ],
+    "result": "The detection threshold for proteins in vitreous ice is approximately 150 kDa based on experimental validation with apoferritin fragments showing square-root dependence of SNR on molecular weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24, C44-C46, C48, C99 provide consistent experimental evidence. The molecular weight scaling follows the expected square-root relationship (C44-C45 with exponents ~0.51), and full searches for fragments down to 150 kDa (C48) validate the threshold prediction. The inference chain from SNR measurements to detection limits is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C57",
+      "C58",
+      "C78",
+      "C100"
+    ],
+    "result": "The detection threshold increases to approximately 300 kDa in 100 nm thick samples of dense biological material based on simulations showing ~30% SNR reduction with protein background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C25, C57-C58, C78, C100 are supported by systematic simulations with BSA background. The observed ~30% SNR reduction (C57: 14.4 vs 16.9) and failed detection at large defocus with background (C58) support the doubled molecular weight threshold. However, this remains a simulation-based prediction not directly validated experimentally in tissue sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C94",
+      "C95",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Constrained searches enable detection of VP1 RNA polymerase (115 kDa) inside rotavirus particles with 71% recall, demonstrating detection below the unconstrained limit when binding locations are known. The detection distribution is consistent with steric constraints preventing multiple VP1s per vertex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C94-C95, C102-C107 provide strong experimental validation of constrained detection. The search space reduction (C103), detection statistics (C104-C105), and non-random binding distribution (C106-C107) form a coherent result. The recall calculation (C105) appropriately accounts for false alarms using control templates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Detection-triggered reconstruction of VP1 reveals structural features not present in the template, including a putative \u03b1-helix possibly belonging to VP3 and nucleic acid features near the polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 describe reconstruction results showing template-independent features. The logical argument that features absent from templates cannot result from template bias (C112) is sound. However, the VP3 helix identification (C113) is speculative. The nucleic acid features (C114) provide additional validation through comparison to prior symmetric reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C41"
+    ],
+    "result": "SNR initially increases with electron exposure following the expected square-root relationship (exponent 0.508\u00b10.033) but plateaus around 1000 electrons/nm\u00b2 due to radiation damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide experimental validation of radiation damage effects. The measured exponent (C42) matches theoretical prediction (C41), and the saturation (C43) is consistent with known radiation damage mechanisms. The experimental design appropriately tests the theoretical expectation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Detection sensitivity shows 20% SNR reduction with 0.15 nm positional misalignment, 21 nm focus mismatch, 1.9% magnification error, or 0.95-1.92 degree orientation mismatch depending on rotation axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide systematic experimental characterization of parameter sensitivity. The measurements are internally consistent and the geometric explanation for axis-dependent orientation sensitivity (C54) is sound. These results inform practical implementation requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "For isolated proteins, detectability is relatively independent of defocus, but with protein background, optimal SNR occurs at 70 nm underfocus. Illumination coherence effects contribute substantially to SNR differences at large defocus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C69-C73 provide simulation evidence for defocus-dependent detection. The coherence effect quantification (C70-C71: 42% vs 8% improvement) and optimal defocus identification (C72) are well-supported. The distinction between isolated and crowded conditions is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C121"
+    ],
+    "result": "SNR increases with spatial frequency up to ~3 nm\u207b\u00b9 in experiments, plateauing thereafter, while simulations show continued increase to 5.2 nm\u207b\u00b9. Higher spatial frequencies improve detection sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C121 document the spatial frequency dependence of detection. The experiment-simulation discrepancy (C76-C77) is acknowledged with plausible explanations. The conclusion about high-frequency importance (C121) is supported, though the plateau in experiments suggests practical limitations not fully captured in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C32"
+    ],
+    "result": "The Hopf fibration method generates ~2.4\u00d710\u2076 orientations with 1.88 degree spacing, providing complete coverage with maximum 1.51 degree rotation needed to align any random orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe the orientation sampling strategy. The computational validation (C34) confirms adequate coverage. The linear computational cost consideration (C32) justifies the approach. This is a methodological result supporting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C122",
+      "C123"
+    ],
+    "result": "Higher-resolution reference structures may improve detectability, but also exacerbate differences between reference and in situ conformations, potentially requiring multiple conformational templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C122-C123 identify a trade-off in template resolution. The simulation evidence (C26) shows improved SNR with lower B-factors, while the VP1 reconstruction (C122) demonstrates the conformation problem. The suggestion for multiple templates (C123) is a logical inference, though not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Future implementations will require more precise estimation of magnification and focus, and denser orientation sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are logical inferences from the sensitivity analysis (C49-C53). These represent methodological recommendations rather than demonstrated results, but are well-justified by the parameter sensitivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Theoretical analysis suggests a detection limit of ~16 kDa under ideal conditions (perfect resolution, no background, all scattered electrons used), compared to the current practical limit of 150 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 provide theoretical analysis of detection limits. The calculations are based on electron scattering physics and are internally consistent. This establishes the gap between theoretical and practical performance, though the ideal conditions assumed are not achievable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work established that atomic-resolution cellular imaging is impossible due to radiation damage, but template matching in tomograms has enabled detection of megadalton complexes like ribosomes and proteasomes, though limited by ~4 nm resolution and crowding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 accurately summarize prior work with appropriate citations. These establish the context and limitations of existing methods that motivate the current study. The characterization of tomogram limitations (C12-C15) justifies the need for the high-resolution single-image approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The method is based on fundamental principles: projected 2D potentials are unique for each protein and orientation at sufficient resolution, electron counts can be calculated from atomic models, and cross-correlation extracts signal even when proteins overlap or pixels are noise-dominated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C28-C30 describe the theoretical foundation with appropriate citations. These principles are well-established in electron microscopy and signal processing. The weak-phase object approximation (C29) and motion correction requirements (C30) are standard assumptions properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Rotavirus DLPs provide a biologically relevant test system with 70 nm diameter, icosahedral symmetry, known structure (60 ASUs of 720 kDa), and projected macromolecular density (~20 kDa/nm\u00b2) similar to 100 nm tissue sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 accurately describe the rotavirus DLP system with appropriate citations. The density comparison to tissue (C92-C93) justifies using DLPs as a proxy for crowded cellular environments. This establishes the biological relevance of the experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C101"
+    ],
+    "result": "The number of false alarms increases with search space size while detection threshold decreases with molecular weight, limiting unconstrained detection. Prior knowledge of location/orientation reduces false alarms and enables detection of smaller proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C101 describe fundamental statistical limitations and the rationale for constrained searches. The logic is sound and follows from multiple testing considerations. This provides the theoretical justification for the constrained VP1 search strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Detection of proteins above 300 kDa in 100 nm-thick vitrified tissue sections should be testable with modern cryo-sectioning techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 is a speculation about future experiments. While the 300 kDa threshold is supported by simulations (C7, C25), actual validation in tissue sections has not been performed. The feasibility depends on cryo-sectioning quality and other factors not yet tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Correlation-based projection-matching correctly identifies proteins and determines their locations and orientations in simulated images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 states validation in simulations but notes 'data not shown.' While this is likely true given the subsequent experimental validations, the absence of presented data makes this claim uncertain. This represents a methodological validation step that should have been documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "VP1 detection shows lower SNR (2.28) than expected from molecular weight scaling (2.98), likely due to structural differences between X-ray and in situ conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 identify a discrepancy and provide a plausible explanation supported by the reconstruction showing structural differences (C111). However, the quantitative discrepancy is larger than expected from the reconstruction differences alone, suggesting additional factors may contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The VP1 detection demonstrates analysis of partially stochastic assemblies where ligands occupy only some available binding sites, with constrained searches enabling detection below the unconstrained limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 summarize the implications of the VP1 results for analyzing stochastic assemblies. This is well-supported by the experimental data (C104-C107) and represents an important application of the method to biologically relevant problems.",
+    "result_type": "MAJOR"
+  }
+]

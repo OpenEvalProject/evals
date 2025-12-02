@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C60"
+    ],
+    "result": "ESCRT-III proteins (CHMP4B, CHMP2A, CHMP2B) and VPS4A arrive after most membrane bending during HIV-1 assembly, linger for tens of seconds, and depart approximately 17-27 seconds before scission. Quantitative timing measurements show CHMP4B appears ~59s before scission and disappears ~22s before, CHMP2A appears ~77s and disappears ~23s before, CHMP2B appears ~63s and disappears ~27s before, and VPS4A appears ~42s and disappears ~17s before scission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C30-C39 provide consistent, quantitative timing data from live-cell imaging experiments with adequate sample sizes (N=23-30 per condition). The measurements are internally consistent, show clear temporal separation between ESCRT departure and scission, and are supported by multiple independent observations across different ESCRT-III variants. The methodology using pH-sensitive reporters and fluorescently tagged proteins is appropriate for these temporal measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Membrane bending from flat to spherical occurs during Gag assembly, prior to ESCRT-III recruitment, and does not require ESCRT-I/TSG101, ALIX, or ESCRT-III proteins. Polarization measurements show P/S ratio drops from ~2 to ~1.4 during Gag accumulation, with the halfway decrease in P/S occurring before the halfway increase in total Gag. Similar bending was observed with Gag-\u0394p6 lacking the p6 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 and C84-C86 present polarized TIRF microscopy data showing membrane curvature changes correlate with Gag assembly. The P/S ratio measurements are quantitative, reproducible across three different Gag-GFP constructs (\u00b10.1 variation), and supported by computational modeling (C49, Figure 4F). The Gag-\u0394p6 control experiment (C54-C55) appropriately demonstrates ESCRT independence. The temporal ordering is clearly established relative to ESCRT-III recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C44",
+      "C40",
+      "C41",
+      "C42",
+      "C75"
+    ],
+    "result": "Cytoplasmic acidification (pH ~6.5 at 10% pCO2 vs pH ~7.5 at 0% pCO2) increases scission probability approximately 3-fold. This effect is consistent with protonation of negatively charged phospholipids like PIP2 (pKa 6.5 and 7.7) reducing electrostatic repulsion between membranes at the neck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide quantitative data (N=45, ~3X increase) showing pH-dependent scission rates. The mechanistic interpretation linking pH to lipid charge (C40-C44, C75) is well-supported by cited literature on PIP2 chemistry and ESCRT-lipid interactions. The experimental design using pCO2 modulation and pHluorin is appropriate, though the authors acknowledge other pH-sensitive components might contribute (C46 discussion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C48",
+      "C76"
+    ],
+    "result": "Multiple rounds of ESCRT-III/VPS4 recruitment occur in ~20% of assembly events when initial scission attempts fail. Scission is only observed after the final wave of ESCRT-III/VPS4 recruitment, indicating that not every recruitment cycle leads to productive scission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C76 present clear observational data showing multiple recruitment waves in ~20% of traces, with scission occurring only after the final wave. This is consistent with prior work (Jouvenet et al., 2011) and provides important mechanistic insight. The data directly contradict models where VPS4 only recycles ESCRTs after scission (C17), as multiple cycles would not be needed in that scenario.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ESCRT-III recruitment requires both membrane curvature and Gag late domains, with additional factors potentially including ubiquitination/phosphorylation of Gag or early ESCRTs, high curvature in the neck, or specific lipid recruitment. Gag alone is not sufficient for ESCRT-III recruitment as ESCRTs arrive only after Gag accumulation is complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is well-supported by timing data showing ESCRT-III recruitment after Gag plateau. However, C6 and C62-C64 are largely speculative interpretations without direct experimental validation in this study. The proposed additional recruitment factors (ubiquitination, phosphorylation, curvature, lipids) are cited from other work but not tested here. The conclusion requires additional experiments to distinguish between these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The authors propose a model where ESCRT-IIIs constrict the membrane neck but must depart to allow spontaneous scission. ESCRT-IIIs may polymerize into spiral or ring structures, with VPS4 removing or remodeling them. After ESCRT departure, the narrow neck may be stabilized by Gag oligomerization or lipid modifications until spontaneous fission occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C65-C68, C70-C72, and C74 are primarily speculative mechanistic models based on the timing observations and cited literature. While the timing data (ESCRT departure before scission) is solid, the specific mechanisms of neck constriction, ESCRT removal, and neck stabilization are not directly tested. The model is plausible and consistent with observations, but lacks direct experimental validation of the proposed intermediate steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Scission never occurred before Gag accumulation reached steady-state at individual VLPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is a straightforward observational finding from the imaging experiments. This is consistent with the requirement for complete virion assembly before membrane scission and provides an important temporal constraint on the assembly pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C39"
+    ],
+    "result": "VPS4 recruitment is nearly contemporaneous with ESCRT-III recruitment, with CHMP4B appearing ~5 seconds before VPS4A in HEK293T cells (and ~10s in HeLa cells from prior work).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C69 provide quantitative timing data (N=41) showing the slight temporal offset between CHMP4B and VPS4A recruitment. This is consistent with prior work in HeLa cells (Bleck et al., 2014) and supports models where VPS4 actively remodels ESCRT-IIIs during assembly rather than only recycling them after scission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The detection limit of the imaging system allows detection of ESCRT-III/VPS4A recruitment down to ~20% of peak levels (signal-to-noise ~7:1). A subpopulation of <20% of peak ESCRT-III/VPS4 levels, representing potentially <10 molecules, could remain undetected after the observed departure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C81-C83 provide important technical details about detection limits and acknowledge the possibility of undetected low-level ESCRT persistence. The signal-to-noise analysis is appropriate and the authors correctly note this caveat. However, their extrapolation analysis suggests that even if departure is slower than measured, very few ESCRTs would remain by the time of scission (~20s later).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CO2 rapidly diffuses across membranes and is converted to carbonic acid by cytoplasmic carbonic anhydrase, altering cytoplasmic pH. Carbonic anhydrase is excluded from VLPs after scission, as evidenced by reduced pH sensitivity of Gag-pHluorin in budded VLPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the methodological basis for using pCO2 modulation to detect scission. The CO2 diffusion and carbonic anhydrase conversion are well-established (cited). The observation that carbonic anhydrase is excluded from VLPs (C79-C80) is supported by both the reduced pH sensitivity and mass spectrometry data (Ott, 2008). This validates the scission detection method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on ESCRT-III proteins, their role in membrane scission, structural properties, interaction with VPS4, and appropriation by HIV-1 for viral release. ESCRTs act in various cellular processes, have specific structural features, and HIV-1 requires specific ESCRT-III variants (CHMP2A/B, CHMP4B) for assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C28 provide background knowledge supported by appropriate citations to established literature. These claims accurately represent the current understanding of ESCRT biology and HIV-1 assembly based on prior work. No issues with citation accuracy or misrepresentation of prior findings are evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C58",
+      "C73"
+    ],
+    "result": "Supporting observations from cited literature: ESCRTs may bias lipid composition toward negatively charged lipids at the neck, Gag multimerization may encourage membrane bending, and cryo-EM shows potential gaps in the Gag lattice at the neck site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C58, and C73 cite relevant prior work to support interpretations of the current findings. These are appropriately presented as supporting evidence from other studies rather than primary findings of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ISL1 accelerates cardiomyocyte differentiation in hESCs rather than maintaining the cardiac precursor state. ISL1 knockout delays cardiac gene expression and beating initiation, while transient ISL1 induction rescues this phenotype and rapidly upregulates key cardiac regulators like MEF2C and NKX2.5. This acceleration occurs without affecting cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 provide converging evidence from multiple experimental approaches (CRISPR knockout, inducible rescue, time-course expression analysis, immunoblotting, cell counting, and FACS) demonstrating that ISL1 promotes rather than blocks differentiation. The immediate-early response of MEF2C and NKX2.5 to ISL1 induction (C33) and the lack of proliferation differences (C35) strongly support the mechanistic interpretation that ISL1 acts as a pro-differentiation factor through transcriptional activation rather than through effects on cell cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C87",
+      "C92"
+    ],
+    "result": "ISL1 does not stabilize or maintain the cardiac precursor cell state. Screening of signaling molecules failed to sustain ISL1 expression, continuous ISL1 overexpression did not prevent differentiation, and ISL1 activation did not affect independent precursor markers like PDGFRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide direct experimental evidence from signaling molecule screens and continuous overexpression experiments showing ISL1 cannot maintain the precursor state. This contradicts the prevailing view (C1, C85-C87) but is well-supported by the data. The authors appropriately acknowledge that ISL1 merely served as a marker in previous studies (C87), not necessarily indicating a functional role in self-renewal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ISL1 depletion respecifies nascent cardiomyocytes from ventricular to atrial identity. ISL1 KO cells express atrial markers (ANP, DHRS9, KCNA5, NR2F1) and exhibit atrial-specific functional properties including faster beating rates, shorter action potentials, and sensitivity to KCNA5 inhibition. This atrial phenotype is enhanced by combining ISL1 KO with RA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide comprehensive evidence spanning gene expression (microarray, RT-qPCR, immunoblotting), immunostaining, and functional assays (multielectrode arrays, patch clamp electrophysiology, pharmacological inhibition). The convergence of molecular markers with functional electrophysiological properties characteristic of atrial cardiomyocytes (C53-C55) provides strong support. The synergy between ISL1 KO and RA treatment (C52-C55) further validates the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C50",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C82",
+      "C83",
+      "C84",
+      "C104",
+      "C105"
+    ],
+    "result": "ISL1 has an anti-atrial function by suppressing the atrial specifier NR2F1. NR2F1 is rapidly induced in ISL1 KO cells and suppressed by ISL1 overexpression. ISL1 overexpression can counteract RA-induced atrial specification, demonstrating that ISL1 repression is functionally required for atrial induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 show immediate-early suppression of NR2F1 by ISL1 with time-course RT-qPCR and immunoblot data. The competition experiments (C82-C84, C104-C105) provide functional validation by showing ISL1 can block RA-induced atrial specification. The RA receptor antagonist experiments (C71, C73) demonstrate ISL1 acts through a RA-independent pathway. The convergence of loss-of-function, gain-of-function, and competition experiments strongly supports this novel anti-atrial role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C101",
+      "C102"
+    ],
+    "result": "RA signaling antagonizes ISL1 indirectly through MEIS2. RA immediately upregulates MEIS2, which then suppresses ISL1 with a ~1 day delay. MEIS2 overexpression phenocopies RA effects on ISL1 suppression and NR2F1 induction, while MEIS1/2 double knockout prevents RA-mediated ISL1 suppression and NR2F1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 provide strong evidence through time-course expression analysis showing delayed ISL1 repression by RA (C58), immediate MEIS2 induction (C59), gain-of-function experiments with inducible MEIS2 (C61-C63), and loss-of-function with MEIS1/2 DKO (C65). The dose-dependency (C63) and the failure of HAND1 overexpression to affect ISL1 (C60) strengthen the specificity of the MEIS2 mechanism. The temporal kinetics support an indirect mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "ISL1 ChIP-seq analysis identified ~200 binding sites, mostly distal to transcription start sites, enriched near cardiac regulatory genes. The binding motif resembles mouse neural ISL1 motifs. ChIP-qPCR validated several targets including NR2F1, though fold enrichments were modest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C78 present ChIP-seq data, but the authors acknowledge technical limitations (C74: 'technical reasons cannot be ruled out'). The limited number of peaks (~200) and low fold enrichments (C78) raise concerns about data quality or antibody specificity. While functional annotation shows enrichment for cardiac terms (C77) and the binding motif is consistent with known ISL1 motifs (C76), the modest enrichments and inability to validate direct NR2F1 regulation (C80) suggest either technical issues or that ISL1 acts primarily through indirect mechanisms. Additional ChIP-seq replicates or alternative validation methods would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Genomic deletion of a putative ISL1-controlled repressor element upstream of NR2F1 did not affect NR2F1 regulation by ISL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 reports a negative result from CRISPR-mediated genomic deletion validated by immunoblot. While this suggests the identified ChIP-seq peak near NR2F1 may not be functionally relevant, the experiment is appropriately controlled and the negative result is informative for understanding the mechanism of ISL1-mediated NR2F1 repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "FGF2 and VEGF stimulate endothelial differentiation from ISL1+ cardiac precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by RT-qPCR data showing upregulation of endothelial markers (Figure 2\u2014figure supplement 1A-C). This confirms the multipotent potential of ISL1+ cells and validates the experimental system, though it is not central to the main findings about ISL1 function in cardiac subtype specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C112",
+      "C113"
+    ],
+    "result": "ISL1 has stage-dependent effects: early ISL1 promotes differentiation and ventricular fate, while late ISL1 induction in mature cardiomyocytes suppresses ventricular markers. The authors argue the late effect is non-physiological.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by RT-qPCR and immunoblot data from late ISL1 induction experiments. The interpretation that early effects are physiologically relevant while late effects are artifacts (C113) is reasonable given the transient nature of endogenous ISL1 expression. This reconciles apparent discrepancies with published mouse studies (C111-C112) where constitutive overexpression was used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "A 2-day RA treatment (0.5 \u00b5M) on days 3-4 of differentiation optimally induces atrial specification while suppressing ventricular fate, but causes a differentiation delay similar to ISL1 KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 report optimization experiments supported by marker gene expression analysis and beating initiation timing (Figure 3\u2014figure supplement 1A-D, Figure 3A-B). These establish the experimental conditions for subsequent mechanistic studies and provide the key observation linking ISL1 KO and RA treatment phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "RA receptor antagonist AGN 193109 blocks RA-driven atrial induction but does not prevent NR2F1 induction in ISL1 KO cells. ISL1 overexpression does not downregulate MEIS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 provide pharmacological and genetic evidence that ISL1 suppresses NR2F1 through a RA-independent pathway. The dose-response with AGN (C70) validates the tool, while the failure to block NR2F1 in ISL1 KO cells (C71) and lack of ISL1 effect on MEIS2 (C72) support the model that RA\u2192MEIS2\u2192ISL1 and ISL1\u2192NR2F1 are parallel pathways converging on cardiac subtype specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "ISL1 KO cells show moderate reexpression of the pluripotency marker SOX2, and ISL1 can suppress SOX2 in undifferentiated hESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by RT-qPCR data and suggests ISL1 may help maintain mesodermal identity by suppressing pluripotency genes. However, the effect is modest and the functional significance is unclear. This observation is tangential to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The impairment of cardiac induction in ISL1 KO hESCs suggests these cells differentiate via a SHF-like pathway, supported by compromised expression of SHF-associated genes (FGF8, FGF10, HAND2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 present an interpretation about developmental pathway (FHF vs SHF) based on ISL1 KO phenotype and expression of SHF markers. However, the authors acknowledge uncertainty (C95: 'would best fit') and note the scarcity of definitive FHF/SHF markers. The microarray data (C96) provides some support but the interpretation remains speculative. The relevance of in vivo developmental paradigms to hESC differentiation protocols is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "ISL1 depletion and RA signaling synergize to produce enhanced atrial features. The antagonism between RA signaling and ISL1 converging on NR2F1 forms a regulatory module controlling cardiac subtype specification, with NR2F1 derepression mediating the atrial phenotype in ISL1 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 synthesize the major findings into a coherent model supported by the combined evidence from gene expression, functional assays, and competition experiments. The synergy between ISL1 KO and RA (C106) is demonstrated by enhanced NR2F1/KCNA5 expression and more pronounced atrial electrophysiological properties (C52-C55). The mechanistic interpretation (C108) is reasonable though the authors appropriately note speculation about autocrine RA signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C98",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background claims establishing prior knowledge about ISL1, heart field development, RA signaling, and NR2F1 function in cardiac specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C25, C85-C86, C88-C90, C93-C94, C98, C109-C111) represent established knowledge from the literature, appropriately cited. They provide necessary context for interpreting the novel findings. The authors critically evaluate prior interpretations (C87: ISL1 as marker vs. functional player) and reconcile their findings with previous studies (C88-C89, C110-C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C91",
+      "C97",
+      "C99",
+      "C100",
+      "C103"
+    ],
+    "result": "Various observations about differential gene responses, transient ISL1 expression, RA-ISL1 interactions in vivo, and potential mechanisms in other developmental contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent observations (C31, C99-C100) and interpretations (C91, C97, C103) that support or contextualize the main findings. C91 provides a mechanistic interpretation of why ISL1 expression is transient based on NKX2.5 feedback. C97 connects in vitro findings to in vivo observations. C103 notes a parallel RA-MEIS2 regulatory link in limb development, suggesting broader applicability.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1971 @@
+{
+  "submission": {
+    "id": "7c72b322-7b9d-47c7-9992-26af2547278f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:56:27.113748Z",
+    "updated_at": "2025-12-01T22:56:27.113748Z"
+  },
+  "content": [
+    {
+      "id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "submission_id": "7c72b322-7b9d-47c7-9992-26af2547278f",
+      "content_type": "manuscript",
+      "content_text": "# p53 orchestrates DNA replication restart homeostasis by suppressing mutagenic RAD52 and POL\u03b8 pathways\n\n## Authors\n\n- Sunetra Roy<sup>1</sup>\n- Karl-Heinz Tomaszowski<sup>1</sup>\n- Jessica W Luzwick<sup>1</sup>\n- Soyoung Park<sup>1</sup>\n- Jun Li<sup>2</sup>\n- Maureen Murphy<sup>3</sup> ([ORCID: 0000-0001-7644-7296](https://orcid.org/0000-0001-7644-7296))\n- Katharina Schlacher<sup>1</sup> ([ORCID: 0000-0001-7226-6391](https://orcid.org/0000-0001-7226-6391)) \u2020\n\n### Affiliations\n\n1. Department of Cancer Biology University of Texas MD Anderson Cancer Center Houston United States\n2. Department of Genomic Medicine University of Texas MD Anderson Cancer Center Houston United States\n3. Molecular and Cellular Oncogenesis Program The Wistar Institute Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nClassically, p53 tumor suppressor acts in transcription, apoptosis, and cell cycle arrest. Yet, replication-mediated genomic instability is integral to oncogenesis, and p53 mutations promote tumor progression and drug-resistance. By delineating human and murine separation-of-function p53 alleles, we find that p53 null and gain-of-function (GOF) mutations exhibit defects in restart of stalled or damaged DNA replication forks that drive genomic instability, which isgenetically separable from transcription activation. By assaying protein-DNA fork interactions in single cells, we unveil a p53-MLL3-enabled recruitment of MRE11 DNA replication restart nuclease. Importantly, p53 defects or depletion unexpectedly allow mutagenic RAD52 and POL\u03b8 pathways to hijack stalled forks, which we find reflected in p53 defective breast-cancer patient COSMIC mutational signatures. These data uncover p53 as a keystone regulator of replication homeostasis within a DNA restart network. Mechanistically, this has important implications for development of resistance in cancer therapy. Combined, these results define an unexpected role for p53-mediated suppression of replication genome instability.\n\n## Introduction\n\nOne of the most prominent hallmarks of cancer is genomic instability (Hanahan and Weinberg, 2011). As such, many DNA damage response or repair genes that restore genome stability are known tumor suppressors, including p53, the guardian of the genome (Kim et al., 2015). In breast cancers, p53 mutations are associated with more aggressive and triple negative breast cancers (Turner et al., 2013). Similar to high serous ovarian cancers, these aggressive cancers respond to chemotherapy including platinum drugs and PARP inhibitors initially, but develop resistance thereafter (Luvero et al., 2014; Wahba and El-Hadaad, 2015).\n\nFirst thought to be a proto-oncogene, the initial discovery of a gain-of-function (GOF) p53 mutant allele (Lane and Crawford, 1979; Levine and Oren, 2009; Linzer and Levine, 1979) masked the loss of wild-type (WT) p53 function. Despite early discrepancies, only a decade later p53 was recognized as a tumor suppressor (Baker et al., 1989). Loss of p53 function can occur either by deletion or by mutation. Mutations may also result in a GOF, typically enhancing transcription functions. To date, the most consistent defect for both null and GOF p53 mutants in cancers is the loss of p53 transcriptional responses to regulate apoptosis and cell cycle arrest.\n\nGenetic data of several separation-of-function p53 mutant mice suggest that there are additional p53 functions that contribute to tumor progression, which are transcription independent; Murine p53 R172P, corresponding to human R175P, retains much of its tumor suppression function despite loss of transcriptional induction and loss of apoptosis (Liu et al., 2004). Similarly, p53 mutations in the transactivation domain and p53 acetylation mutations severely inhibit p53 induction of apoptosis and senescence, yet exhibit a mild and delayed tumor onset (Li et al., 2012; Zhu et al., 2015). p53 also has seemingly disparate cellular functions including during metabolism and epigenetic control, that\u00a0is through its interaction with MLL3/4 histone methyltransferases (Pfister et al., 2015; Zhu et al., 2015), although the contribution of these functions to tumor suppression is not fully understood.\n\nFor cancer, a prominent p53 function is to maintain genomic stability upon DNA damage as part of a damage response. Since DNA damage traditionally is most prominently considered in the context of double-strand break (DSB) lesions, many studies focus on putative p53 functions in DSB repair. Next to error-free repair of DSBs by homologous recombination (HR) involving BRCA1/2 and RAD51, DSBs may also be repaired by non-homologous end joining (NHEJ), or through secondary and typically mutagenic pathways of single strand annealing (SSA) mediated by RAD52 and micro-homology mediated end joining (MMEJ) involving POL\u03b8\u00a0(Black et al., 2016; Branzei and Foiani, 2008; Moynahan and Jasin, 2010; Wood and Doubli\u00e9, 2016). In response to DNA damage, ATM mediates p53 phosphorylation as part of a DNA stress response (Saito et al., 2002), which is facilitated by PTIP (Jowsey et al., 2004), a BRCT domain containing protein that is part of the MLL3/4 complex.\n\nSimilar to its transcription function, discrepancies ensue in the molecular function of p53 during DNA repair. While indirect studies found p53 to inhibit error-free homologous recombination (HR) and spontaneous sister-chromatid exchange (SCE), which somewhat paradoxically was proposed to promote genomic stability (Bertrand et al., 2004; Gatz and Wiesm\u00fcller, 2006), loss of p53 does not change DSB repair rates by HR when measured in specific induced break assays (Willers et al., 2001). Thus, the mechanism by which p53 promotes genomic stability associated with tumorigenesis remains contradictory.\n\nAs previously hypothesized (Cox et al., 2000), recent findings formalized that 2/3 of all mutations found across cancers are caused by errors occurring during proliferation (Tomasetti et al., 2017), highlighting the critical importance of protective mechanisms during DNA replication. Intriguingly, early studies found p53 is activated at stalled replication forks (Gottifredi et al., 2001; Kumari et al., 2004), which are a source for genomic instability requiring distinct replication fork stability pathways (Branzei and Foiani, 2010). p53 interacts with BLM helicase at replication forks and represses HR in S-phase upon DNA damage, independent of its G1-S and transactivation activity (Bertrand et al., 2004; Janz and Wiesm\u00fcller, 2002; Saintigny and Lopez, 2002). Hinting at a direct p53 replication function, recently p53 was found to interact with DNA POL\u03b9 (Hampp et al., 2016). Moreover, p53 deletion in U2OS cells was reported to slow unperturbed replication (Klusmann et al., 2016), although this was suggested to require p53 transcription function, while p53 functions in DNA damage response are not.\n\nHere, we identify a critical role for p53 in balancing replication pathway homeostasis and show p53 suppresses replication genomic instability independent of transcription activation. We find p53 mutant alleles that separate transcription activation and replication restart functions and reveal a direct correlation between p53 replication and tumor progression functions. Importantly, we find p53 directly binds to ongoing and stalled DNA replication forks. Utilization of mutagenic RAD52/POL\u03b8 replication pathways increase for both GOF and p53 null alleles in a transcription independent manner, consistent with mutation signatures that we identify in p53 mutant breast cancers. Our results thus allow for an unexpected alternative hypothesis for acquisition of drug resistance in breast cancer cells due to p53 loss: mutant p53 boosts mutagenic RAD52/POL\u03b8 pathways, which increase deletion and point mutations that can lead to secondary resistance mutations.\n\n## Results\n\n### Transcription-independent p53 function for restart of stalled replication forks\n\np53 is an ATM phosphorylation target, is activated at stalled replication forks (Kumari et al., 2004) and interacts with BLM helicase. As BLM helicase is implicated in replication restart (Davies et al., 2007), as is ATM (Trenz et al., 2006), we tested the role of p53 in DNA replication reactions when stalled with dNTP depleting hydroxyurea (HU). Using single-molecule DNA fiber spreading (Figure 1A), we assessed the number of stalled replication forks after low-dose replication stalling (Figure 1A), as a test for defects in replication restart. We find a doubling of stalled forks in CRISPR/CAS9- engineered p53- null human HAP-1 cells compared to cells with wild-type (WT) p53 (Figure 1B; 35% stalled forks in p53 null 18% WT p53 HAP-1). This suggests a prominent role for p53 in the resumption of DNA replication after replication stress.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative image of DNA fibers. The number of stalled forks (# stalled/(# stalled +#restarted) or newly initiated origins ((# CldU/(# stalled +# restarted +#new) is obtained in the following panels.\u00a0(B) HAP-1 p53 null cells (C) primary MEF with GOF p53 R172P (apoptosis deficient, mildly tumor prone) and p53 R172H (apoptosis deficient, strongly tumor prone), (D, E) primary MEF with p53 S47 (apoptosis and greatly transcription proficient) and null for p53 (for better comparison WT p53 of (C) is re-plotted, shady blue), and (F) human H1299 cells with inducible p53 WT or S47. Error bars represent the SEM. Significance values are derived from student T-test analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) DNA fibers analysis of newly initiated forks of p53 null and WT HAP-1 cells with replication stalling (HU, 200 mM).\u00a0(B) DNA fibers analysis of newly initiated forks of primary MEF with WT, GOF p53 R172P and p53 R172H cells with replication stalling (HU, 300 mM). (C) Expression of p53 S47 and p53 WT suppress proliferation compared to primary MEF without p53 as measured by MTT proliferation assay, consistent with intact cell cycle checkpoint functions in the mutant. (D) Doxycycline induced expression of WT and mutant p53 S47 in H1299 cells.\n\nIncreased fork stalling is classically compensated for by increased new origin firing, as seen for CHK1 defects (Petermann and Helleday, 2010; Petermann et al., 2010). Unexpectedly, we find that increased fork stalling in p53 null cells is accompanied by a decrease, rather than an increase, in new origin firing compared to both WT p53 (Figure 1\u2014figure supplement 1A; 20% newly fired origins in HAP-1 cells, respectively, and 9% newly fired origins in HAP-1 p53 null cells). Taken together, the data suggests that p53 defects in HAP-1 cells exhibit distinct and unconventional replication restart defects resulting in both decreased replication restart and decreased new origin firing.\n\nIn tumors, p53 is deleted or mutated, the latter typically resulting in GOF (Freed-Pastor and Prives, 2012). To test whether p53 mutations alter replication restart, we investigated one of the most common GOF mutations in primary mouse embryonic fibroblasts (murine p53 R172H corresponding to human p53 R175H) (Liu et al., 2000). These cells show both an increase in stalled replication forks, and fewer newly fired forks compared to WT p53 MEFs (Figure 1C; 36% stalled forks in p53 R172H MEF and 15% in WT MEF and Figure 1\u2014figure supplement 1B). These data thus uncover conserved defective outcomes for both null and GOF p53 mutations at stalled replication forks.\n\nMurine p53 R172P corresponds to a rare human polymorphism R175P, which results in loss of transcriptional activation and apoptosis resembling p53 null (Liu et al., 2004). Yet, tumor development is markedly less severe in p53 R172P mice compared to p53 null mice, suggesting alternative mechanisms contribute to tumor progression besides transcriptional regulation of apoptosis with this mutation (Liu et al., 2004). We therefore tested p53 R172P MEFs and find that they only show a moderate increase in fork stalling compared to p53 R172H (Figure 1C). Thus, restart functions in p53 R172 mutant cells show an improved correlation with tumor suppression activity in vivo.\n\nTo further examine the possible link of failed p53-mediated replication restart and cancer, we tested p53 S47 (P47S), which is a breast-cancer pre-disposition polymorphism in African-descent populations (Jennis et al., 2016). It is largely transcriptionally active including for p21 (Felley-Bosco et al., 1993; Jennis et al., 2016); it remains proficient for apoptosis (Felley-Bosco et al., 1993; Jennis et al., 2016). Yet, p53 S47 mice are tumor prone, and p53 S47 contributes to breast cancer risk in African populations (Jennis et al., 2016; Murphy et al., 2017). We find that S47 slows cell growth similar to WT p53 (Figure 1\u2014figure supplement 1C) consistent with intact cell-cycle check-point functions. Furthermore, we find that p53 S47 primary MEFs exhibit a loss-of-function (LOF) for replication restart, as measured by an increase in stalled forks upon HU treatment compared to WT MEF cultures (Figure 1D; 31% stalled forks in p53 S47 MEF versus 15% in WT MEF). Moreover, p53 S47 MEFs resemble p53 null MEFs in their inability to restart forks (Figure 1D; 34% stalled forks in p53 null MEF). Similar to p53 null HAP-1 and GOF R172H MEF cells, both p53 null MEF and p53 S47 MEFs show defects in new fork initiation (Figure 1E; 21% newly fired origins in p53 WT MEF versus 9% and 8% in p53 S47 MEF and p53 null MEF).\n\nTo test whether p53 S47 restart defects are conserved in human cells, we expressed human p53 S47 under doxycycline control in H1299 non-small cell lung carcinoma cells (Figure 1\u2014figure supplement 1D) and examined stalled forks. We found an increase in stalled forks that resembles p53-null H1299 cells. Both p53 null and p53 S47 H1299 cells exhibit a substantial increase in stalled forks compared to WT p53-expressing H1299 cells (Figure 1F; 13% stalled forks in p53 WT, 38% in p53 S47, and 45% in null H1299 cells). Taken together, these results suggest that p53 promoted replication restart can be genetically separated from its transcription-activation function in cell cycle progression and apoptosis.\n\n### p53 restart defects promote replication-dependent genome instability and cellular sensitivity to replication stalling agents\n\nRestart defects cause cellular sensitivity to replication stalling agents, as seen for cells with BLM defects (Davies et al., 2004). We reasoned that in mutant p53 cells, this cellular phenotype so far may have been obscured by loss of apoptosis, which can override cellular sensitivity by inhibiting cell death. We therefore tested cellular sensitivity using the LOF mutant p53 S47, which remains largely apoptosis proficient. We find that p53 S47-expressing H1299 cells are sensitive to replication stalling agents HU (Figure 2A) and mitomycin C (MMC; Figure 2B). This cellular replication stress phenotype is masked when the p53 mutations additionally inactivate apoptosis and cell-cycle check-point functions, such as in p53 null H1299 cells (Figure 2A and B) or p53 null compared to WT mammary epithelial MCF10A cells (Figure 2\u2014figure supplement 1). Collectively, the data with apoptosis-proficient p53 S47 implies that p53 functions in replication restart suppresses cellular sensitivity to replication stress.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cellular sensitivity to replication stalling with hydroxyurea (HU) in H1299 cells. (B) Cellular sensitivity to replication stalling with mitomycin C (MMC) in H1299 cells. (C) Experimental scheme and representative image of micronuclei; Scored are EdU-positive cells with micronuclei only that were in S-phase during replication stalling with HU and that are blocked during cytokinesis immediately following the offending S-phase. (D) Micronuclei in primary p53 R172P and R172H MEF and (E) human H1299 p53 WT, S47 and null cells. Error bars represent the SEM. Significance values are derived from student T-test analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig2-figsupp1-v2.jpg)\n\nSeparation-of-function mutations p53 R172P and S47 reveal a feasible correlation between loss of p53 restart function and tumor progression. We therefore tested whether p53\u2019s replication restart function could contribute to genomic instability, which is a hallmark of cancer (Hanahan and Weinberg, 2011). Amongst others, unresolved stalled replication forks can result in DNA bridges, which convert to micronuclei, a mark of BLM-defective cells (Hoffelder et al., 2004). We assessed genome instability by scoring micronuclei in p53 R172P, R172H and WT MEFs after arrest in cytokinesis immediately following replication stalling (Figure 2C). By considering EdU-positive cells only and immediate cytokinesis arrest following HU, the experimental set up ensures that only micronuclei are scored that result from induced replication stalling during the preceding S-phase. This so greatly excludes contributions of canonical G1-related p53-function. Consistent with an intermediate phenotype for replication restart, primary MEF p53 R172P exhibited less micronuclei with replication stalling compared to p53 R172H (Figure 2D; average of 8% micronuclei in p53 R172P and 26% in p53 R172H) albeit considerably more than WT p53 MEFs (none detected in WT).\n\nWith replication stalling, human p53 S47-expressing cells showed a marked increase in cells containing micronuclei compared to WT p53-expressing H1299 cells (Figure 2E average of 20% in p53 S47% and 5% in p53 WT H1299 cells). Micronuclei instability in p53 null H1299 cells similarly is significantly higher than in WT p53 H1299 cells (Figure 2E; average of 12%). Taken together, the genomic instability data corresponds with restart defects rather than transcription functions found in the respective p53 mutants. The data suggest that p53 functions are required for resolving replication stress-dependent genome instability and by implication can contribute to tumor suppression.\n\n### p53 is localized to active and stalled replication forks\n\np53 has a prominent DNA-binding domain and RPA interaction sites (Romanova et al., 2004). We reasoned that p53 could have a direct protein function during DNA replication. We therefore sought to test if p53 is present at active DNA replication forks using iPOND, which is an immunoprecipitation method of nascent EdU-labeled DNA (Sirbu et al., 2012). We found that p53 associates with nascent-labeled DNA in HEK293 cells (Figure 3A, IP fraction, E, 3.8 normalized to chromatin protein ORC2). PCNA is associated with active replication forks and therefore found reduced in iPONDs with thymidine chase after the EdU pulse (Dungrawala et al., 2015), (Figure 3A). Similarly, we find that the p53 association with nascent DNA is reduced with a thymidine chase, suggesting p53 travels with the active replication fork (Figure 3A). Replication stalling by HU retains p53, but not PCNA at stalled forks (Figure 3A). Taken together, the data suggests a direct role for p53 at active and stalled DNA replication forks.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig3-v2.jpg)\n\n**Figure 3.:** (A) iPOND (immunoprecipitation of biotinylated EdU-DNA) assay of p53, PCNA and ORC2 in HEK293 cells. No click reaction omits biotin and serves as negative control. E, EdU pulse (10 \u03bcM, 10 min), E-Thy, EdU pulse followed by thymidine chase (10 \u03bcM), E-HU, EdU pulse followed by hydroxyurea (500 \u03bcM). Values are relative p53 band intensities normalized to ORC2 band intensities. (B) Schematic and representative image of SIRF (In Situ Interactions at Replication Forks) assay for interactions between protein and nascent DNA in single cells: nascent DNA is pulse-labeled with EdU a protein of interest is crosslinked to the DNA immediately following the EdU pulse. Alternatively, EdU is washed out and cells are incubated with HU (200\u2013400 \u03bcM HU) before crosslinking. Proximity ligation assay (PLA) amplification with antibodies against EdU and the protein of interest will result in a signal only if interactions between the nascent DNA and the protein of interest are in close proximity. No signal is produced if the cell has not incorporated EdU. (C) Quantitation of SIRF assay of epigenetic remodeler MLL3 at unchallenged replication forks and (D) at HU stalled replication forks (yellow x) in HAP-1 p53 null and WT cells. (E) Quantitation of SIRF assay of MRE11 at HU stalled replication forks in HAP-1 p53 null and WT cells. Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\n### p53 promotes MLL3-chromatin remodeler and MRE11 restart nuclease recruitment to forks\n\np53 interacts with chromatin remodeling complexes and is implicated in facilitating epigenetic alterations (Pfister et al., 2015; Zhu et al., 2015). We observed an atypical restart defect in p53 mutant and null cells with less newly initiated replication forks (Figure 1E and Figure 1\u2014figure supplement 1A and B). We hypothesized that replication restart and new replication fork firing may require local chromatin opening and epigenetic alterations mediated by p53, which could explain the unusual decrease in new fork firing with p53 mutations. To investigate local protein changes specific to replication forks, we developed the SIRF assay (in Situ Interactions at Replication Forks using PLA; Figure 3B). Specifically, we applied sensitive proximity ligation chemistry to detect interactions between nascent, EdU-labeled DNA and proteins within nanometer proximity. The signal is specific as elimination of EdU results in no signals (Figure 3B). MLL3 promotes H3K4 histone methylation to mark open chromatin (Ruthenburg et al., 2007). MLL3 association with replication forks in unperturbed cells is similar in p53 null and WT HAP-1 cells (Figure 3C; 11 MLL3-bound replication sites per cell in WT p53 and 12 sites in p53 null HAP-1 cells). Upon replication stalling with HU, we see a marked increase in MLL3-bound replication sites in WT, but not in p53 null human HAP-1 cells (Figure 3D; 17 MLL3-bound sites in WT and 13 in p53 null HAP-1 cells). These data suggest inefficient MLL3 recruitment to forks upon replication stalling in the absence of p53.\n\nMLL3-mediated chromatin opening is implicated in MRE11 nuclease recruitment to stalled replication forks (Ray Chaudhuri et al., 2016), a repair nuclease that is needed for efficient replication restart (Trenz et al., 2006). We therefore examined the functional implications of reduced MLL3 recruitment to forks with p53 defects. Consistently, we find increased MRE11-bound replication sites in WT, but not in p53 null HAP-1 cells when challenged with HU (Figure 3E and Figure 3\u2014figure supplement 1; 30 MRE11-bound replication sites/cell in WT and 18 in p53 null HAP-1 cells). Collectively, these data suggest a mechanism whereby p53 promotes local chromatin responses that aid MRE11 recruitment to stalled forks, as necessary for replication restart (Trenz et al., 2006).\n\n### p53 suppresses error prone RAD52 at forks\n\np53 is implicated in suppressing excessive repair by homologous recombination (HR) to balance genomic stability (Bertrand et al., 2004; Saintigny et al., 1999; Sengupta et al., 2004). To further probe the underlying mechanism for genomic instability induced by aberrant p53 S-phase functions, we performed SIRF assays for local RAD51 recruitment to stalled forks as a surrogate marker for HR processes. From previous reports, we expected more RAD51 recruitment to forks in the absence of p53 (Bertrand et al., 2004; Gatz and Wiesm\u00fcller, 2006). Instead, in p53 null HAP-1 cells, we find less RAD51 at local stalled replication forks (Figure 4A; 24 RAD51-bound replication sites/cell in WT p53 and 19 in p53 null HAP-1 cells). In contrast, HCT116 cells expressing GOF p53 R248W show increased RAD51 fork-localization compared to WT-expressing HCT116, as do LOF mutant p53 S47-expressing H1299 cells compared to cells with WT p53 (Figure 4\u2014figure supplement 1A and B). Due to these unexpected differences, we employed p53 null Saos-2 sarcoma cells in comparison to isogenic GOF mutant p53-expressing Saos-2 cells and U2OS cells, which are p53 WT sarcoma cells (Figure 4B). p53 null Saos-2 show an increase in RAD51 SIRF signals, which is repressed with expression of mutant p53 GOF R175H and R273H. Together, these results do not support a correlation between RAD51 recruitment to forks and fork instability in these cells, but instead suggest alternative causation for the observed genomic instability in p53 mutant cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig4-v2.jpg)\n\n**Figure 4.:** (A) Quantitation of SIRF assay of RAD51 at HU stalled replication forks in HAP-1 p53 null and WT cells and (B) p53 null, R175H and R273H complemented Saos-2 cells, and U2OS cells. (C) Quantitation of SIRF assay of RAD52 at HU stalled replication forks in HAP-1 p53 null and WT cells (MFI, mean fluorescence intensity) and (D) WT p53 or p53 R248W-expressing HCT116 cells. (E) Western blot of RAD52 with and without HU (200 \u03bcM) in p53 null and WT HAP-1 cells, and WT p53 or p53 R248W-expressing HCT116 cells. Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantitation of SIRF assay of RAD51 at HU stalled replication forks in p53 R248W and WT p53 HCT116 cells.\u00a0(B) Quantitation of SIRF assay of RAD51 at HU stalled replication forks in p53 S47 and WT p53 H1299 cells. (C) Representative images of SIRF assay of RAD52 in HAP-1 cells at low (0.2 mM) and high (4 mM) HU concentrations show preferential binding of RAD52 at stalled forks with low HU concentrations compared to high HU concentrations, which are more favorable for break formation. Images are representative images from Fig. 4C (D) Quantitation of SIRF assay of RAD52 at HU stalled replication forks in p53 R175H, p53 R273H and p53 null Saos-2 sarcoma cells, and WT p53 U2OS sarcoma cells. (E) Quantitation of SIRF assay of RAD52 at HU stalled replication forks in p53 S47 and WT p53 H1299 cells. Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\nDefects in p53 do not affect HR repair of induced double-strand breaks, however, they increase spontaneous sister-chromatid exchanges (SCEs) (Willers et al., 2001), which are thought to occur at sites of stalled replication. Reports increasingly suggest that spontaneous SCE is independent of RAD51 and BRCA2 (Bai and Symington, 1996; Cl\u00e9mence Claussin et al., 2017; Ray Chaudhuri et al., 2016), but instead involves the single-strand annealing (SSA) protein RAD52 (Thorpe et al., 2006). We therefore tested whether RAD52 recruitment is altered with p53 deletions. Using SIRF analysis, we find a marked increase of RAD52 bound to stalled forks in p53-null cells (Figure 4C). As the signals were too abundant to be individually counted, we used the mean fluorescence intensity (MFI) as a quantitative readout (Figure 4C, MFI of 494 in p53 null and 762 in p53 WT HAP-1 cells).\n\nNotably, we see stronger RAD52 recruitment at low compared to high concentration of HU (Figure 4\u2014figure supplement 1C). The former condition is less favorable for DSB formation, suggesting RAD52 recruitment to stalled forks is stronger than to bona fide DNA breaks. Strikingly, we find an increase in RAD52 recruitment in all p53-defective cell lines tested irrespective of the nature of the p53 defect. This includes HCT116 GOF p53 R248W (Figure 4D), Saos-2 p53 null, Saos-2 GOF p53 R175H, Saos-2 GOF p53 R273H, and H1299 LOF p53 S47 cells (Figure 4\u2014figure supplement 1D and E) compared to respective WT p53-expressing cells. These collective data unexpectedly uncover consistent replication fork pathway tipping toward mutagenic RAD52 processes in p53 defective cells. This pathway imbalance was not caused by transcriptional deregulations in p53-defective cells, as RAD52 protein levels remained unchanged with or without p53, further supporting a transcription-independent function of p53 at stalled forks (Figure 4E). Thus, the observed increased RAD52 recruitment to stalled forks is likely a consequence of defective replication restart.\n\n### p53 suppresses microhomology-mediated end-joining polymerase POL\u03b8\n\nIn p53-defective cells, we observed a stark RAD52 recruitment with low HU (Figure 4\u2014figure supplement 1C), which can lead to reversed replication forks (Neelsen and Lopes, 2015) that provide free ends as substrates for DSB repair pathways. We reasoned that p53 may orchestrate reversed fork outcomes and so protect against aberrant double-strand end recognition by mutagenic DNA end pathways which may include SSA and micro-homology mediated end-joining (MMEJ). POL\u03b8 is implicated in promoting error-prone MMEJ at replication-associated DNA ends (Roerink et al., 2014), which includes collapsed or reversed replication forks. We therefore tested if DNA POL\u03b8 contributes to mutagenic events at imbalanced stalled forks. We find an increase of mutant p53 S47 association with POL\u03b8 in unchallenged H1299 cells, which is further enhanced with replication stalling (Figure 5A, 24 associations per cell without and 38 with HU). Notably, WT p53-POL\u03b8 associations remain limited even with replication stalling (Figure 5A, average of 6 associations without and 15 with HU), suggesting pathway tipping toward mutagenic MMEJ in p53-defective cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig5-v2.jpg)\n\n**Figure 5.:** (A) Quantitation of WT p53 or p53 S47 interaction with POL\u03b8 by PLA in H1299 cells with or without HU (200 \u03bcM) and MRE11 inhibitor PFM39 (100 \u03bcM). (B) Quantitation of SIRF assay of POL\u03b8 at HU stalled replication forks in HAP-1 p53 null and WT cells. Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Bars represent the mean and the 95% confidence interval. Significance values are derived from student T-test analysis normalized to the respective EdU-PLA intensities (Supplementary file 1).\n\nTo test if MRE11-dependent restart is responsible for suppression of error-prone POL\u03b8 recruitment, we inactivated the nuclease by inhibition with the specific MRE11 nuclease inhibitor PFM39 (Shibata et al., 2014). Inhibition of MRE11 by PFM39 greatly increased WT p53-POL\u03b8 association with replication stalling (Figure 5A, an increase from 15 to 50/cell average with PFM39). This observation suggests that MRE11 inactivation can partially pheno-copy p53 deficiency at replication forks. In contrast, p53 S47-POL\u03b8 associations were only moderately increased with PFM39 (Figure 5A, increase from 38 to 53 with PFM39), where PFM39 likely blocks residual MRE11 activity in p53 S47-expressing cells. Of note, we find POL\u03b8 interactions with RAD52 increased in GOF p53 R248W HCT116 cells (Figure 5\u2014figure supplement 1A), giving rise to the possibility that POL\u03b8 may collaborate with RAD52 in p53-defective cells rather than acting in separate pathways.\n\nTo further test pathway imbalance specific to local stalled forks and dependent on p53 status, we performed SIRF against POL\u03b8 in HAP-1 cells (Figure 5B). Consistently, we find increased POL\u03b8 recruitment to stalled forks in p53-null HAP-1 cells (Figure 5B). Similarly, inactivation of MRE11 nuclease in WT HAP-1 cells causes a significantly increase in recruitment of POL\u03b8 to stalled forks. Together these data uncover p53-MRE11 repression of mutagenic RAD52 and POL\u03b8\u00a0processes at replication forks.\n\n### p53-defective breast cancers show increased mutation signatures typical for RAD52/POL\u03b8\n\nRAD52/SSA and POL\u03b8/MMEJ pathways allow the prediction of specific mutation signatures; SSA predominantly results in larger deletion mutations, while MMEJ is signified by microhomology at repair junctions along with deletions (Jasin and Rothstein, 2013; Wood and Doubli\u00e9, 2016). We therefore hypothesized that p53 replication-defective cancers may leave a telltale mutagenic pathway signature in vivo. We tested this by comparing COSMIC mutational signatures (Stratton et al., 2009) of p53 defective with p53 WT breast cancers reported in the TCGA database (Figure 6, Cosine similarity cutoff: 0.617; z-score\u00a0>1.96). Seven mutational signatures are increased in p53-defective breast cancers (Figure 6B). However, of these seven signatures, only signatures 3 and signature 5 are significantly increased in p53 defective compared to WT p53 breast cancers (Figure 6\u2014figure supplement 1B); COSMIC signature 3 is defined by larger deletion mutations (>3 bp) with microhomology at break junctions, consistent with expected RAD52 and POL\u03b8 mutation spectra. COSMIC signature 5 shows T\u00a0>\u00a0C transition mutations at ApTpN context with thus far unknown etiology. POL\u03b8 was reported to have a stark preference for T\u00a0>\u00a0C transition mutations (error-rate of 42 \u00d7 10\u22124, 4\u201340 fold higher than any other possible mutation rate) as seen within a known CATCC hotspot (Arana et al., 2008). Thus, our combined data uncovers the possibility of POL\u03b8 mediated origin of COSMIC signature 5. Collectively, we find COSMIC signatures are in agreement with increased RAD52 and POL\u03b8 pathway usage in p53 mutant breast cancers.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig6-v2.jpg)\n\n**Figure 6.:** (A) Hierarchical clustering of cosmic mutation signatures in p53-defective breast cancer from TCGA database. (B) Comparison of frequencies of cosmic signature found unregulated in p53-defective breast cancer with frequencies found in p53 proficient breast cancers. Cosmic signature in TCGA samples were analyzed by Cosine similarity; Similarity cutoff 0.617, z-score\u00a0>1.96.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Color key histogram showing the distribution of the similarity score.\u00a0(B) Hierarchical clustering of cosmic mutation signatures in p53 defective and proficient breast cancer from TCGA database.\n\n## Discussion\n\n### p53 suppresses genome instability by orchestrating replication fork homeostasis\n\nRather than single gene predisposition or select environmental exposure, the strongest drivers for cancer incidence are DNA replication errors. This has been long hypothesized and recently formalized by showing replication errors comprise 2/3 of all mutations in cancers (Tomasetti et al., 2017; Tomasetti and Vogelstein, 2015). This fundamental importance of replication fork maintenance is conserved in bacteria, where stress response and repair proteins primarily protect and stabilize DNA replication forks (Cox et al., 2000).\n\np53 is the \u2018the guardian of the genome\u2019 and the most frequently mutated tumor gene, but its functions in replication genome stability, which is the dominant source of tumor mutations, has been cryptic. The most studied p53 cellular function with regard to tumor-suppression has been its role in transcriptional activation of apoptosis and cell cycle checkpoint. Yet, p53 functions during the DNA damage response linked to genome integrity are transcription activation independent (Bertrand et al., 2004; Janz and Wiesm\u00fcller, 2002; Saintigny and Lopez, 2002). Moreover, these classical p53 transactivation activities to promote apoptosis and cell cycle arrest are insufficient to fully explain p53\u2019s role in tumor suppression. This is substantiated by reported p53 separation-of-function mutations, including tumor prone yet greatly transcription activation proficient p53 mutations, such as S47. Conversely, several p53 mutant mice including p53 R175P show that inactivation of apoptosis and senescence by p53 transcription deregulation are insufficient for full inactivation of p53 tumor-suppression functions (Brady et al., 2011; Li et al., 2012; Liu et al., 2004). Taken together, these observations point to p53 activities in addition to its transcription activation functions that critically contribute to its tumor suppressor function. Such additional functions may include metabolism and ferroptosis, a new cell death pathway (Li et al., 2012; Zhu et al., 2015).\n\nWe here identify a new p53 function in suppressing genome instability at replication forks by promoting MLL3/MRE11-mediated replication pathway homeostasis. Importantly, this activity, which we show is independent of p53 transcription activation roles, avoids mutagenic RAD52/POL\u03b8 pathways likely acting at reversed forks (Figure 7). As replication mutations are thought to be the strongest cancer mutation driver and genome instability is associated with tumorigenesis, we propose that the here identified role of p53 as a replication homeostasis keeper to avoid genome instability provides a feasible novel additional p53 tumor suppression function. Moreover, the resulting understanding of p53-mediated genomic stability reconciles previous reports on apoptosis and p53 transactivation-independent roles of p53 for tumor suppression (Phang et al., 2015). So far, the most consistent common defect to both GOF mutant p53 and p53 gene deletion is related to its transcription function in apoptosis and cell cycle arrest. These results revealing a p53 replication-restart function reconcile how GOF and null p53 have different cellular functions and phenotypes, yet can both cause genomic instability implicated for tumor etiology and progression. Supporting this concept, MRE11 impairment, which we show phenocopies p53 defects at stalled forks, promotes progression and invasiveness of mammary hyperplasia in mouse models similar to p53 inactivation (Gupta et al., 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31723/elife-31723-fig7-v2.jpg)\n\nSeparation-of-cellular p53 function studies have spanned from apoptosis, cell cycle arrest, epigenetics and stress response to metabolism. Yet, these seemingly separate functions may act together in the context of WT p53 to guard the genome, foremost from genotoxic replication stress. As such, the replication restart function identified here conceptually connects seemingly divergent p53 functions including stress response, genome stability and epigenetics.\n\nWe propose that upon activation by replication stress, p53 orchestrates balanced error-free replication restart and suppresses genome instability, which is caused by excessive usage of mutagenic replication pathways when p53 is defective. Importantly, this model implies p53 promotes a replication homeostasis balance at forks for successful proliferation rather than a strict pathway control. If replication stress exceeds a threshold for proper genome maintenance, p53 may dissociate and, as a keystone replication stress regulator, induce cell death, including but not exclusively through apoptosis, as an added safeguard to avoid cellular dysplasia.\n\n### p53 replication fork reactions and implied biological functions\n\nWe here find the African-descent tumor variant p53 P47S (S47) to be a separation of function mutation defective in replication restart. p53 is phosphorylated by ATM at S46, which is decreased in p53 S47 (Jennis et al., 2016). Intriguingly, at the adjacent residues D48/D49, p53 can directly interact with single-strand binding protein RPA (Romanova et al., 2004), which is implicated in replication fork remodeling (Neelsen and Lopes, 2015). Specifically, RPA interaction mutations deregulate recombination reactions without affecting transactivation reactions (Romanova et al., 2004). By proximity of these residues and phenotypical commonalities, we suggest that p53 P47S (S47) may also affect RPA interactions. By extension, we propose that ATM phosphorylation of WT p53 may regulate such p53-RPA interactions for the purpose of fork remodeling, as a controlled process for restart balancing. Notably, we find p53 S47 exhibits cellular sensitivity to the DNA cross-linking reagent mitomycin C, which most prominently activates the Fanconi Anemia tumor suppressor pathway. The latest identified Fanconi Anemia tumor suppressor is the RFWD3 ubiquitin ligase that regulates p53 (Feeney et al., 2017; Inano et al., 2017). Furthermore, a Fanconi Anemia phenotypes causing patient mutation in RFWD3 leads to deregulation of RPA reactions at the replication fork (Inano et al., 2017). We therefore propose that p53 could feasibly be a vital player in the Fanconi Anemia pathway through its replication function, and it will be exciting to decipher this relationship.\n\nWe establish here that at forks, p53 controls MRE11, a nuclease known to promote restart after replication stalling (Trenz et al., 2006). Other prominent p53 collaborating proteins including BLM helicase (Davies et al., 2007), ATM (Trenz et al., 2006), and PARP-1 (Bryant et al., 2009) all promote replication restart. Our results thus implicate p53 as a potential keystone regulator of a greater restart network at stalled forks involving fork-reversal regulation players (Figure 7). PARP, BLM helicase and RPA promote and repress replication fork reversal (Neelsen and Lopes, 2015). While it is unclear whether fork reversal is required for normal replication restart, it is readily observed in cancer cells at low concentrations of replication stalling agents (Zellweger et al., 2015). In the absence of fork reversal control and stabilization by p53 regulated players, our model suggests that RAD52/POL\u03b8 pathways hijack the free DNA end to invade replication ahead or behind the replication fork as an intramolecular reaction. This could in principle lead to deletion and insertion mutations with micro-homology and increased POL\u03b8 dependent point mutations. In support of this model, we find COSMIC cancer mutation signature three signified by larger deletion mutations with micro-homologies increased in cancers with p53 defects. Additionally, we found COSMIC signature five to be increased in p53-defective breast cancers, which shows T\u00a0>\u00a0C transition mutations at ApTpN context with so far unknown etiology. However, our analysis shows that this signature is consistent with POL\u03b8-mediated mutations: POL\u03b8 shows a striking preference for T\u00a0>\u00a0C transition mutations (error-rate of 42 \u00d7 10\u22124, 4\u201340 fold higher than any other possible mutation rate) as seen within a known CATCC hotspot (Arana et al., 2008). Based on our data, we therefore suggest that POL\u03b8-mediated mutagenesis may contribute to COSMIC signature 5 etiology.\n\n### Implications of p53 restart function in therapy resistance\n\nIn mammary tumor suppression, p53 cooperates with BRCA1/2 (Jonkers et al., 2001; Ludwig et al., 1997), which is often associated with more aggressive and resistant tumors, although the mechanism of this collaboration has been elusive. Therapy resistance in BRCA-defective cells can arise through secondary mutations. Specifically, gene internal deletion and/or point mutations within the BRCA2 gene can restore reading frames of BRCA2 mutated stop codons in CAPAN-1 pancreatic and POE ovarian cancer cells (Sakai et al., 2009; Sakai et al., 2008). Interestingly, while BRCA2 peptide expression is restored, some of these new BRCA2 peptides conferring resistance have extensive internal deletion mutations. Such deletion mutation etiology is consistent with both RAD52 and POL\u03b8 pathways providing a specific and testable mechanism for development of resistance.\n\nOur model of RAD52/POL\u03b8 pathway increase at stalled replication forks promoting secondary mutation driving resistance is further supported by our understanding of tumor resistance biology. Triple negative breast cancers as well as serous ovarian cancers, which almost exclusively harbor p53 mutations, are often initially sensitive to therapy such as cis-platin drugs (Luvero et al., 2014; Wahba and El-Hadaad, 2015), which cause replication stalling. After multiple treatments and opportunities for RAD52/POL\u03b8-mediated mutagenic events at stalled forks, secondary mutations can become fixed and in turn promote survival and resistance. In this scenario, mutation fixation is not necessary to promote a proliferative advantage per se. Rather it could arise from stochastic and opportunistic replication stalling events promoted by the therapeutic drug dependent on the replication program of the tissue type, consistent with both a neutral mutation evolution theory (Sottoriva et al., 2015) and replication errors driving tumor etiology (Tomasetti et al., 2017).\n\nWe here identified a new p53 role for suppressing genome instability by orchestrating balanced replication fork homeostasis. Importantly, this role is derailed in both p53 null and GOF p53 mutants, which is the only LOF ascribed to both aside from transcriptional deregulation of apoptosis and cell cycle checkpoint. Our observations and concepts reconcile prevailing paradoxes of divergent p53 functions. They, furthermore, imply specific changes in strategies for cancer patient care: our model suggests that inhibition of RAD52/POL\u03b8 pathways as adjuvant therapy concomitant with initial conventional therapy could offer an actionable strategy for ameliorating aggressive tumor evolution and secondary mutations leading to resistance in p53-defective tumors. The finding that p53 is a key-protein in error-free replication restart may explain why p53 mutations are a dominant cause of cancer genome instability.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HAP-1 parental</td>\n      <td>Horizon Discovery</td>\n      <td>RRID:CVCL_Y019</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HAP-1 p53 null</td>\n      <td>Horizon Discovery</td>\n      <td>HZGHC001068C007</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT116 parental</td>\n      <td>Invitrogen</td>\n      <td>HD PAR-007, RRID:CVCL_0291</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT116 R248W GOF</td>\n      <td>Invitrogen</td>\n      <td>HD 104\u2013003</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>H1299 p53 null</td>\n      <td>PMID: 27034505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>H1299 WT</td>\n      <td>PMID: 27034505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>H1299 S47</td>\n      <td>PMID: 27034505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>U2OS</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0042</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>SAOS-2</td>\n      <td>PMID: 25024203</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>SAOS-2 R175H</td>\n      <td>PMID: 25024203</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>SAOS-2 R273H</td>\n      <td>PMID: 25024203</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF p53 null</td>\n      <td>PMID:14702042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF WT</td>\n      <td>PMID:14702042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF R172H</td>\n      <td>PMID:15607981</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF R172P</td>\n      <td>PMID:14702042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF p53 null</td>\n      <td>PMID: 27034505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>MEF S47</td>\n      <td>PMID: 27034505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MCF10a</td>\n      <td>Invitrogen</td>\n      <td>HD PAR-024, RRID:CVCL_0598</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MCF10a p53 null</td>\n      <td>Invitrogen</td>\n      <td>HD 101\u2013005</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IdU</td>\n      <td>BD Biosciences</td>\n      <td>347580, RRID:AB_400326</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CldU</td>\n      <td>Novus Biologicals</td>\n      <td>NB500-169, RRID:AB_10002608</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse Biotin</td>\n      <td>Sigma</td>\n      <td>B7653, RRID:AB_258625</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit Biotin</td>\n      <td>Cell signaling</td>\n      <td>5597S, RRID:AB_10828011</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>MLL3</td>\n      <td>Abcam</td>\n      <td>ab32581, RRID:AB_881525</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>MRE11</td>\n      <td>Abcam</td>\n      <td>ab214, RRID:AB_302859</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RAD51</td>\n      <td>Abcam</td>\n      <td>ab213, RRID:AB_302856</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>RAD52</td>\n      <td>Santa Cruz</td>\n      <td>sc-365341, RRID:AB_10851346</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GAPDH</td>\n      <td>Santa Cruz</td>\n      <td>sc-47724, RRID:AB_627678</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Pol Theta</td>\n      <td>Abcam</td>\n      <td>ab80906, RRID:AB_1658691</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PCNA</td>\n      <td>Santa Cruz</td>\n      <td>sc-56, RRID:AB_628110</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ORC2</td>\n      <td>Abcam</td>\n      <td>ab31930, RRID:AB_776911</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>p53</td>\n      <td>Santa Cruz</td>\n      <td>sc-126, RRID:AB_628082</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Ku70</td>\n      <td>Cell Signaling</td>\n      <td>4104S, RRID:AB_1904185</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Mouse plus PLA probe</td>\n      <td>Duolink Sigma</td>\n      <td>DUO92001-100RXN</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Rabbit minus PLA probe</td>\n      <td>Duolink Sigma</td>\n      <td>DUO92005-100RXN</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PLA detection reagent red</td>\n      <td>Duolink Sigma</td>\n      <td>DUO92008-100RXN</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EdU</td>\n      <td>Invitrogen</td>\n      <td>A10044</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hydroxyurea (HU)</td>\n      <td>Sigma</td>\n      <td>H8627</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Thymidine</td>\n      <td>Sigma</td>\n      <td>T1895</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IdU</td>\n      <td>Sigma</td>\n      <td>I7125</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CldU</td>\n      <td>Sigma</td>\n      <td>C6891</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dynabeads MyOne streptavidin T1</td>\n      <td>Invittrogen</td>\n      <td>65601</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alexa Fluor 488 Azide</td>\n      <td>Invitrogen</td>\n      <td>A10266</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cytochalasin B</td>\n      <td>Sigma</td>\n      <td>C2743</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Formaldehyde solution</td>\n      <td>Sigma</td>\n      <td>252549</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paraformaldehyde 32% solution, EM grade</td>\n      <td>EMS</td>\n      <td>15714</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Goat Serum</td>\n      <td>Sigma</td>\n      <td>G9023</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin Azide</td>\n      <td>Invitrogen</td>\n      <td>B10184</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Life Technologies</td>\n      <td>62248</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Prolong Gold Antifade reagent</td>\n      <td>Invitrogen</td>\n      <td>P36934</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MTS</td>\n      <td>Promega</td>\n      <td>G3580</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mitomycin C</td>\n      <td>Sigma</td>\n      <td>M0503</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NIS elements</td>\n      <td>Nikon</td>\n      <td>RRID:SCR_014329</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Duolink Analysis tool</td>\n      <td>SigmaDuolink</td>\n      <td>RRID:SCR_015574</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 6</td>\n      <td>GraphPad (La Jolla, California)</td>\n      <td>RRID:SCR_002798</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image J</td>\n      <td></td>\n      <td>RRID:SCR_003070</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and reagents\n\nHAP-1 parental and HAP-1 TP53 null (Horizon Discovery) cells were grown in Iscove\u2019s modified Dulbecco\u2019s medium (Life Technologies) supplemented with 10% fetal bovine serum (Gemini Bio products) and 100\u00a0units/ml Pen-Strep (Life Technologies). H1299 small lung cell carcinoma cells expressing doxycycline inducible human WT and S47 mutant p53 constructs were previously described (Jennis et al., 2016). H1299 and HEK293 cells were grown in Dulbecco\u2019s modified Eagle medium supplemented with 10% fetal bovine serum and 100 units/ml Pen-Strep. P53 protein expression was induced by 0.5 \u03bcg/ml Doxycycline (Sigma-Aldrich). MCF10A p53 null cells were obtained from Thermo Fisher Scientific and grown in DMEM/F12 medium supplemented with 5% horse serum (Gibco), 20 ng/ml EGF (Thermo Fisher Scientific), 0.5 \u03bcg/ml hydrochortisone (Sigma-Aldrich), 100 ng/ml Cholera toxin (Sigma-Aldrich), 10 \u03bcg/ml Insulin (Sigma-Aldrich), 5 mM Hepes (Gibco), 100 units/ml Pen-Strep. MEF harboring p53 mutations R172P, R172H were previously described (Liu et al., 2004), and MEF harboring p53 mutations S47 and WT p53 and p53 null MEF were previously described (Jennis et al., 2016), and obtained from the Guillermina Lozano lab and the Maureen Murphy lab, respectively. MEFs were grown in Dulbecco\u2019s modified Eagle medium supplemented with 10% fetal bovine serum and 100 units/ml Pen-Strep and 2 mM glutamine. MEFs were generated from C57BL/6J mice with mixed sex background. HCT116 parental and CRISPR engineered mutant cells (R248W/-) were obtained from Thermo Fisher Scientific and grown in McCoy\u2019s 5a media (Lonza) with 10% fetal bovine serum and 100 units/ml Pen-Strep. Saos-2 cells complemented with GOF p53 mutants were previously described (Xiong et al., 2014), provided by Dr. Guillermina Lozano\u2019s lab and maintained in DMEM (Life Technologies) with 10% fetal bovine serum and 100 units/ml Pen-Strep. Cell lines have been authenticated by short tandem repeat (STR) profile analysis and genotyping, and have been tested for Mycoplasm (PCR). All cells were grown at 37\u00b0C and 5% CO2.\n\n### DNA fiber assay\n\nDNA fiber spreading experiments were performed as previously described (Schlacher et al., 2011). Briefly, cells were pulsed with EdU (5\u2013125 \u03bcM), CldU (50 \u03bcM) or IdU (50 \u03bcM), washed with PBS, and then incubated with hydroxyurea (200\u2013400 \u03bcM) and CldU (50 \u03bcM) for 4\u20135 hr as indicated. The cells were harvested, resuspended in PBS and lysed on a microscope slide with lysis buffer (20 mM Tris-Cl, 50 mM SDS, 100 mM EDTA). DNA was allowed to attach for 5.5 min before spreading by gravity. Slides were fixed in methanol/acetic acid (3:1), before DNA denaturation with 2.5 N HCl and neutralization with PBS (pH 8, and subsequent pH 7.5 washes). Slides were blocked with 10% goat serum and 0.1% Triton X in PBS. IdU/CldU fibers were stained using standard immunostaining with antibodies against IdU (BrdU, Beckton Dickinson, 1:100) and CldU (BrdU, Novus Biological, 1:200) was performed before mounting slides with Prolong Gold (Invitrogen,\u00a0USA). IdU/CldU Fibers were imaged using a Nikon Eclipse Ti-U inverted microscope and analyzed using ImageJ software. Between 90\u00a0and\u00a0320 fibers were scored per experiment and number of stalled forks was calculated as the number of IdU tracts (green only) divided by the number of IdU tracts plus the number of IdU-CldU tracts (green followed by red). The number of newly initiated forks was calculated as the number of CldU tracts (red only) divided by the number of IdU tracts plus the number of IdU-CldU tracts (green followed by red) plus the number of CldU tracts (red only).\n\n### SIRF assay\n\nCells were pulse treated with EdU, washed two times with PBS and subsequently treated with HU (0.2 \u03bcM) for 4 hr. Cells were fixed, permeabilized with 0.25% TritonX, and a click-iT reaction was performed using biotin azide (Life Technologies) according to manufacturer\u2019s instructions. After incubation with primary antibodies, a Duolink proximity ligation assay (Sigma-Aldrich) was performed with mouse/rabbit detection red reagents according to the manufacturer's instructions. Slides were stained with DAPI and mounted with Prolong Gold before imaging using Nikon Eclipse Ti-U inverted microscope. Signals were analyzed using Duolink software, ImageJ and Nikon NIS elements, in addition to hand-counting of PLA signals. Data of repeated experiments were combined, and statistical analysis was performed using Prism6 software.\n\n### Proximity ligation assays\n\nH1299 cells were treated with 0.5 \u00b5g/ml doxycycline (Sigma-Aldrich) for 48 hr to induce expression of WT and mutant p53 and subsequently treated with 100 \u03bcM PFM39 (synthesized by the MD Anderson Cancer Center pharmaceutical chemistry core facility according to [Shibata et al., 2014]) for 30 min, followed by 0.2 mM HU for 4 hr, as indicated. Cells were fixed, permeabilized and blocked as described above and incubated with antibodies against p53 and POL\u03b8 as indicated. Finally, a Duolink PLA (Sigma-Aldrich) was performed according to manufacturer's instructions. Slides were stained with DAPI and mounted with Prolong Gold before imaging using Nikon Eclipse Ti-U inverted microscope. Signals were analyzed using Duolink software, ImageJ and hand-counted. Data of repeated experiments were combined, and statistical analysis was performed using Prism6 software.\n\n#### iPOND assay\n\niPOND assays were performed as described (Dungrawala et al., 2015). Briefly, HEK293 cells were treated with the following conditions- 10 \u03bcM EdU for 10 min, 10 \u03bcM EdU followed by 10 \u03bcM Thymidine for 1 hr and 10 \u03bcM EdU followed by 0.5 mM HU for 1 hr. Cells were subsequently fixed in 1% formaldehyde solution, quenched with glycine, permeabilized with 0.25% Triton X-100 and clicked with biotin azide as per the published protocol. Cell pellets were lysed using 1% SDS in 50 mM Tris-HCl (pH 8) and pull down was performed for 2 hr in 4\u00b0C using 50 \u03bcl/sample Dynabeads MyOne Streptavidin T1 (Invitrogen). Beads were subsequently washed once with 1 ml lysis buffer (5 min), 1 ml low-salt buffer (1% Triton X-100, 20 mM Tris [pH 8.0], 2 mM EDTA, 150 mM NaCl; 5 min), 1 ml high-salt buffer (1% Triton X-100, 20 mM Tris [pH 8.0], 2 mM EDTA, 500 mM NaCl; minutes) and finally twice with 1 ml lysis buffer (5 min). Washed beads were resuspended in 30 \u03bcl of 2X Laemmli buffer (BioRad), heated at 95\u00b0C for 25 min and proceeded for immunoblotting.\n\n### Immunoblotting and antibodies\n\nFor western blots, cells were treated with 0.3 mM HU for 4 hr, harvested and directly lysed in Laemmli buffer (Bio-Rad), boiled for 5 min and loaded on SDS-PAGE gels.\n\nAntibodies used for immunoblots in SIRF, PLA and iPOND are as follows: MLL3 (Abcam 1:100), MRE11 (Abcam 12D7 1:200), RAD52 (Santa Cruz F7 1:50), POL \u03b8 (Abcam 1:100), RAD51 (Abcam 14B4 1:200), mouse biotin (Sigma-Aldrich BN-34 1:100), rabbit biotin (Cell Signaling D5A7 1:200), p53 (Santa Cruz DO1, 1:1000), ORC2 (Abcam, SB46, 1:1000) and PCNA (Santa Cruz, PC10, 1:1000).\n\n### Genomic instability assay\n\nCells were incubated with 50 \u03bcM EdU for 1\u00a0hr and subsequently with 0.2 mM HU and 2 \u03bcg/ml cytochalasin B (Sigma-Aldrich) for 5 hr. Cells were then collected, washed and treated with cytochalasin B for 20 hr to further capture arrested cells after division that previously were EdU labeled. Post incubation, cells were harvested and spun onto slides using a cytospin for 3 min at low acceleration setting. Cells were then fixed, permeabilized and click-iT reaction was performed with Alexa fluor 488 azide according to manufacturer\u2019s instructions. Slides stained with DAPI and mounted with Prolong Gold before imaging using Nikon Eclipse Ti-U inverted microscope. EdU-positive cells and micronuclei were scored manually and using ImageJ software. Prism was used for statistical analysis of combined repeat experiments.\n\n### Cell survival assays\n\nCell viability was determined using the colorimetric MTS assay. Cells (1\u20132 \u00d7 103 cells) were seeded into 96-well plates for 24 hr and then exposed to varying concentrations of HU or MMC (Sigma-Aldrich) as indicated. After untreated control cells obtained\u00a0~80% confluence, the MTS assay was performed according to manufacturer\u2019s instructions (CellTiter 96 AQueous One Solution Cell Proliferation Assay, Promega). Experiments were performed in quadruplicate and repeated independently. Data was analyzed using Prism6 software and represents the mean\u00a0\u00b1\u00a0standard error of the mean (SEM).\n\n### TCGA computational analysis\n\nThe mutation annotation file (MAF) for 992 samples was downloaded from BROAD TCGA GDAC website (http://firebrowse.org/?cohort=BRCA&download_dialog=true, https://cancergenome.nih.gov). The mutation spectrum of each sample was estimated by calculating the fraction of 96 possible mutation substitutions defined in (Alexandrov et al., 2013) The cosine similarity score is computed for all pair-wise combinations of mutation spectrum of samples and 31 cosmic mutation signatures (http://cancer.sanger.ac.uk/cosmic/signatures). Z-score is calculated based on the distribution of all cosine similarity score ($z_score=\\frac{cos_score\u2212mean(cos_score)}{sd(cos_score)}$). A z score greater than 1.96 indicates the sample could contain the corresponding cosmic signature.\n\n### Statistical analysis\n\nFor SIRF assays, PLA signals were analyzed using Duolink Image Tool software and Nikon NIS elements software. A total of 50\u2013300 nuclei were counted for each experimental condition. Data represents pooled experiments of two\u00a0to\u00a0four experiments. Signals were normalized to independent EdU-PLAs of the same condition (Supplementary file 1) and a T-test to determine the Z-score and p-value for significance was performed using the following equation: z = [mean (EdU-SIRF1)- mean (EdU-SIRF2)] - [mean (SIRF1)- mean (SIRF2)]/ \u221a[Variance (EdU-SIRF1)/n\u00a0+\u00a0Variance (EdU-SIRF2)/n\u00a0+\u00a0Variance (SIRF1)/n\u00a0+\u00a0Variance (SIRF2)/n], whereby n is the number of measurements. The resultant p-values are indicated in the respective figures and figure legends. For DNA fiber assays, between 90\u00a0and\u00a0300 fibers were analyzed using ImageJ software. Unpaired Student t-test was performed using GraphPad Prism version six as indicated in the figures and figure legends. For genomic instability were analyzed using NIS elements software. Unpaired Student t-test was performed using GraphPad Prism version six to determine p value results as indicated in the figures and figure legends. For TCGA Computational Analaysis, Fisher Exact Test was calculated using GraphPad Prism software.\n",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "808b2b48-cf14-4c5e-aa8c-73a079c2aab3",
+      "submission_id": "7c72b322-7b9d-47c7-9992-26af2547278f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Simon Powell, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31723.021](https://doi.org/10.7554/eLife.31723.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"p53 suppresses mutagenic RAD52 and POL\u03b8 pathways by orchestrating DNA replication restart homeostasis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Simon Powell (Reviewer #1); Thomas Helleday (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers thought your paper was interesting and provocative in relation to the function of p53 in DNA replication. The paper suggests that p53 regulates replication fork stalling and restart by a mechanism that is reportedly dependent on p53's presence at or near the replication fork and the effects of p53 are transactivation independent. P53 is reported to influence the recruitment of MLL3/MRE11 and also RAD52 and Pol-theta. The mechanism of how p53 influences the recruitment of DNA repair proteins to the replication fork is presumably due to direct protein interactions of p53 at or near the fork. Overall, the paper has interest, but is not acceptable in its present form.\n\nEssential revisions:\n\nAll reviewers now agree that a second level of evidence to put p53 at the replication fork would make the observations significantly more convincing, above and beyond the data from the SIRF assay, which is PCR-dependent. Although the SIRF assay has a link between EdU and the DNA repair protein, the location of p53 is unknown. The data raise the question about how p53 is influencing the recruitment of DNA repair proteins at the replication fork, if it is transactivation independent. Reviewers felt that i-POND could be considered, although the sensitivity to detect p53 by this method is unknown. Alternative methods to support the mechanism of how p53 influences replication fork events could be considered.\n",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d790b521-41dd-4b2e-b882-5cd3d00cb4a8",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C1",
+      "claim": "p53 null HAP-1 cells exhibit a doubling of stalled replication forks compared to wild-type p53 HAP-1 cells (35% vs 18%).",
+      "claim_type": "EXPLICIT",
+      "source": "We find a doubling of stalled forks in CRISPR/CAS9- engineered p53- null human HAP-1 cells compared to cells with wild-type (WT) p53 (Figure 1B; 35% stalled forks in p53 null 18% WT p53 HAP-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by experimental data from DNA fiber spreading assays shown in Figure 1B, with specific percentages provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "ab1c4b14-2d95-41e9-ac8b-84497460d0eb",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C2",
+      "claim": "p53 deficiency results in decreased new origin firing during replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we find that increased fork stalling in p53 null cells is accompanied by a decrease, rather than an increase, in new origin firing compared to both WT p53 (Figure 1\u2014figure supplement 1A; 20% newly fired origins in HAP-1 cells, respectively, and 9% newly fired origins in HAP-1 p53 null cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays presented in Figure 1\u2014figure supplement 1A, showing quantitative measurements of new origin firing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "ee330c05-49ff-4176-b214-60a1768d711d",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C3",
+      "claim": "GOF p53 R172H mutant MEFs show increased stalled replication forks (36%) compared to WT p53 MEFs (15%).",
+      "claim_type": "EXPLICIT",
+      "source": "These cells show both an increase in stalled replication forks, and fewer newly fired forks compared to WT p53 MEFs (Figure 1C; 36% stalled forks in p53 R172H MEF and 15% in WT MEF and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber spreading assays in primary MEFs, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "5a648d0b-e3cb-4f72-9f58-3b9c457c086d",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C4",
+      "claim": "p53 R172P mutant mice exhibit less severe tumor development compared to p53 null mice despite loss of transcriptional activation and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Murine p53 R172P corresponds to a rare human polymorphism R175P, which results in loss of transcriptional activation and apoptosis resembling p53 null (Liu et al., 2004). Yet, tumor development is markedly less severe in p53 R172P mice compared to p53 null mice, suggesting alternative mechanisms contribute to tumor progression besides transcriptional regulation of apoptosis with this mutation (Liu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2004, which provides evidence from mouse models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "c13e653c-2121-4256-82bc-4a154ab7c7cc",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C5",
+      "claim": "p53 R172P MEFs show only moderate increase in fork stalling compared to p53 R172H.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested p53 R172P MEFs and find that they only show a moderate increase in fork stalling compared to p53 R172H (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "0157f1aa-1e40-4418-854e-cb4029805b4a",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C6",
+      "claim": "p53 S47 is a breast-cancer predisposition polymorphism in African-descent populations.",
+      "claim_type": "EXPLICIT",
+      "source": "To further examine the possible link of failed p53-mediated replication restart and cancer, we tested p53 S47 (P47S), which is a breast-cancer pre-disposition polymorphism in African-descent populations (Jennis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jennis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "b3682a51-a903-4355-8fcf-86b93fb46a66",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C7",
+      "claim": "p53 S47 is largely transcriptionally active including for p21 and remains proficient for apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is largely transcriptionally active including for p21 (Felley-Bosco et al., 1993; Jennis et al., 2016); it remains proficient for apoptosis (Felley-Bosco et al., 1993; Jennis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Felley-Bosco et al., 1993 and Jennis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e2c21af7-2c5f-4def-b3aa-914e2d3c9eb7",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C8",
+      "claim": "p53 S47 mice are tumor prone.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, p53 S47 mice are tumor prone, and p53 S47 contributes to breast cancer risk in African populations (Jennis et al., 2016; Murphy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jennis et al., 2016 and Murphy et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6f9900cd-a9e4-4935-b9d7-3ee69ec91383",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C9",
+      "claim": "p53 S47 slows cell growth similar to WT p53, consistent with intact cell-cycle checkpoint functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that S47 slows cell growth similar to WT p53 (Figure 1\u2014figure supplement 1C) consistent with intact cell-cycle check-point functions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from MTT proliferation assays shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4a54afcc-14cf-4f2f-921f-9e98a7313ee6",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C10",
+      "claim": "p53 S47 primary MEFs exhibit loss-of-function for replication restart with 31% stalled forks versus 15% in WT MEF.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that p53 S47 primary MEFs exhibit a loss-of-function (LOF) for replication restart, as measured by an increase in stalled forks upon HU treatment compared to WT MEF cultures (Figure 1D; 31% stalled forks in p53 S47 MEF versus 15% in WT MEF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "aec5b7c4-6349-405d-8c30-5affe729cc79",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C11",
+      "claim": "p53 S47 MEFs resemble p53 null MEFs in their inability to restart forks (31% vs 34% stalled forks).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p53 S47 MEFs resemble p53 null MEFs in their inability to restart forks (Figure 1D; 34% stalled forks in p53 null MEF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "dd6be802-7735-4443-a81b-ccb2b1a8c697",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C12",
+      "claim": "Both p53 null MEF and p53 S47 MEFs show defects in new fork initiation (9% and 8% vs 21% in WT).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to p53 null HAP-1 and GOF R172H MEF cells, both p53 null MEF and p53 S47 MEFs show defects in new fork initiation (Figure 1E; 21% newly fired origins in p53 WT MEF versus 9% and 8% in p53 S47 MEF and p53 null MEF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "84ca9197-e674-4437-b286-abf97d57adde",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C13",
+      "claim": "Human p53 S47-expressing H1299 cells show increased stalled forks (38%) compared to WT p53-expressing H1299 cells (13%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increase in stalled forks that resembles p53-null H1299 cells. Both p53 null and p53 S47 H1299 cells exhibit a substantial increase in stalled forks compared to WT p53-expressing H1299 cells (Figure 1F; 13% stalled forks in p53 WT, 38% in p53 S47, and 45% in null H1299 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from DNA fiber assays in H1299 cells shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "64531f25-f002-4e6c-b2cf-0abd851dfda2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C14",
+      "claim": "p53 promoted replication restart can be genetically separated from its transcription-activation function in cell cycle progression and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that p53 promoted replication restart can be genetically separated from its transcription-activation function in cell cycle progression and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing p53 S47 retains transcription and apoptosis functions but loses replication restart function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6392fd0c-007b-4802-b313-be1bf926537b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C15",
+      "claim": "Restart defects cause cellular sensitivity to replication stalling agents, as seen for cells with BLM defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Restart defects cause cellular sensitivity to replication stalling agents, as seen for cells with BLM defects (Davies et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Davies et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "3be74320-4b39-4eba-aa63-683f936163e2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C16",
+      "claim": "p53 S47-expressing H1299 cells are sensitive to replication stalling agents HU and mitomycin C.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that p53 S47-expressing H1299 cells are sensitive to replication stalling agents HU (Figure 2A) and mitomycin C (MMC; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from cell survival assays shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "30e4acba-ccfc-434a-9348-396a68fe50d0",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C17",
+      "claim": "The cellular replication stress phenotype is masked when p53 mutations additionally inactivate apoptosis and cell-cycle checkpoint functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This cellular replication stress phenotype is masked when the p53 mutations additionally inactivate apoptosis and cell-cycle check-point functions, such as in p53 null H1299 cells (Figure 2A and B) or p53 null compared to WT mammary epithelial MCF10A cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from cell survival assays shown in Figures 2A, 2B, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "34ee5d21-8a68-4dfd-bfde-40eb97f55f2f",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C18",
+      "claim": "p53 functions in replication restart suppress cellular sensitivity to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the data with apoptosis-proficient p53 S47 implies that p53 functions in replication restart suppresses cellular sensitivity to replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing p53 S47 cells are sensitive to replication stress despite intact apoptosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "81de9e4f-b6a9-4906-aa43-5055d92de421",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C19",
+      "claim": "Primary MEF p53 R172P exhibited less micronuclei with replication stalling (8%) compared to p53 R172H (26%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with an intermediate phenotype for replication restart, primary MEF p53 R172P exhibited less micronuclei with replication stalling compared to p53 R172H (Figure 2D; average of 8% micronuclei in p53 R172P and 26% in p53 R172H) albeit considerably more than WT p53 MEFs (none detected in WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from micronuclei assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "53504316-b96a-4e80-8b04-65b401848a8e",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C20",
+      "claim": "Human p53 S47-expressing cells showed a marked increase in cells containing micronuclei (20%) compared to WT p53-expressing H1299 cells (5%).",
+      "claim_type": "EXPLICIT",
+      "source": "With replication stalling, human p53 S47-expressing cells showed a marked increase in cells containing micronuclei compared to WT p53-expressing H1299 cells (Figure 2E average of 20% in p53 S47% and 5% in p53 WT H1299 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from micronuclei assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "d9541459-0753-48a8-9f6f-7ee6a7533141",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C21",
+      "claim": "Micronuclei instability in p53 null H1299 cells is significantly higher (12%) than in WT p53 H1299 cells (5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Micronuclei instability in p53 null H1299 cells similarly is significantly higher than in WT p53 H1299 cells (Figure 2E; average of 12%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from micronuclei assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "2392a291-899c-49f2-9a43-632ce639fa16",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C22",
+      "claim": "The genomic instability data corresponds with restart defects rather than transcription functions found in the respective p53 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the genomic instability data corresponds with restart defects rather than transcription functions found in the respective p53 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from comparing genomic instability phenotypes across different p53 mutants with varying transcription and restart functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e410ee4e-6cdc-4c2a-857c-009f6f00fd05",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C23",
+      "claim": "p53 functions are required for resolving replication stress-dependent genome instability and can contribute to tumor suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The data suggest that p53 functions are required for resolving replication stress-dependent genome instability and by implication can contribute to tumor suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing p53 defects lead to genomic instability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4b4efe57-7d18-451a-aad6-2685f4430e83",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C24",
+      "claim": "p53 associates with nascent-labeled DNA in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that p53 associates with nascent-labeled DNA in HEK293 cells (Figure 3A, IP fraction, E, 3.8 normalized to chromatin protein ORC2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from iPOND assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "0dc2f3d6-1174-432f-ab52-b226c7e8e3bd",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C25",
+      "claim": "p53 association with nascent DNA is reduced with a thymidine chase, suggesting p53 travels with the active replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we find that the p53 association with nascent DNA is reduced with a thymidine chase, suggesting p53 travels with the active replication fork (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from iPOND assays shown in Figure 3A and inference about p53 behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "5bf0142e-75c5-4030-8996-02d539de96cf",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C26",
+      "claim": "Replication stalling by HU retains p53, but not PCNA at stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication stalling by HU retains p53, but not PCNA at stalled forks (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from iPOND assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "45ba6091-f13e-4c99-867a-16e0fc1fe5c5",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C27",
+      "claim": "p53 has a direct role at active and stalled DNA replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data suggests a direct role for p53 at active and stalled DNA replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the iPOND experimental data showing p53 association with replication forks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "393b9ae0-cd90-4e71-ab65-ea9dc9ede2d1",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C28",
+      "claim": "MLL3 association with replication forks in unperturbed cells is similar in p53 null (12 sites/cell) and WT HAP-1 cells (11 sites/cell).",
+      "claim_type": "EXPLICIT",
+      "source": "MLL3 association with replication forks in unperturbed cells is similar in p53 null and WT HAP-1 cells (Figure 3C; 11 MLL3-bound replication sites per cell in WT p53 and 12 sites in p53 null HAP-1 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "a19f4d8e-5f7c-4e5b-9ffb-078e235c8f11",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C29",
+      "claim": "Upon replication stalling with HU, there is a marked increase in MLL3-bound replication sites in WT (17 sites) but not in p53 null HAP-1 cells (13 sites).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon replication stalling with HU, we see a marked increase in MLL3-bound replication sites in WT, but not in p53 null human HAP-1 cells (Figure 3D; 17 MLL3-bound sites in WT and 13 in p53 null HAP-1 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "bbed016c-504f-4bde-ba79-dae74bd7d00f",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C30",
+      "claim": "The data suggest inefficient MLL3 recruitment to forks upon replication stalling in the absence of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest inefficient MLL3 recruitment to forks upon replication stalling in the absence of p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the SIRF experimental data showing reduced MLL3 recruitment in p53 null cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "bd975f15-23c5-4399-b92c-5ffac58af133",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C31",
+      "claim": "MLL3-mediated chromatin opening is implicated in MRE11 nuclease recruitment to stalled replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "MLL3-mediated chromatin opening is implicated in MRE11 nuclease recruitment to stalled replication forks (Ray Chaudhuri et al., 2016), a repair nuclease that is needed for efficient replication restart (Trenz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ray Chaudhuri et al., 2016 and Trenz et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6ae9a9e6-25e9-465f-8683-19bbc8fdf532",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C32",
+      "claim": "There is increased MRE11-bound replication sites in WT (30 sites) but not in p53 null HAP-1 cells (18 sites) when challenged with HU.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we find increased MRE11-bound replication sites in WT, but not in p53 null HAP-1 cells when challenged with HU (Figure 3E and Figure 3\u2014figure supplement 1; 30 MRE11-bound replication sites/cell in WT and 18 in p53 null HAP-1 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 3E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4259be7e-1211-40d4-a4b3-641d2c2838d2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C33",
+      "claim": "p53 promotes local chromatin responses that aid MRE11 recruitment to stalled forks, as necessary for replication restart.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest a mechanism whereby p53 promotes local chromatin responses that aid MRE11 recruitment to stalled forks, as necessary for replication restart (Trenz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data and citation to Trenz et al., 2006.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "aaf5991f-9a3a-4a47-b35b-2f9d7188853e",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C34",
+      "claim": "p53 is implicated in suppressing excessive repair by homologous recombination (HR) to balance genomic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 is implicated in suppressing excessive repair by homologous recombination (HR) to balance genomic stability (Bertrand et al., 2004; Saintigny et al., 1999; Sengupta et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bertrand et al., 2004, Saintigny et al., 1999, and Sengupta et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "46106521-f6df-4c7d-99df-2e5b2830b426",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C35",
+      "claim": "In p53 null HAP-1 cells, there is less RAD51 at local stalled replication forks (19 sites) compared to WT p53 (24 sites).",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, in p53 null HAP-1 cells, we find less RAD51 at local stalled replication forks (Figure 4A; 24 RAD51-bound replication sites/cell in WT p53 and 19 in p53 null HAP-1 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "86591b2b-7958-4726-8191-ff634fcffc2c",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C36",
+      "claim": "HCT116 cells expressing GOF p53 R248W show increased RAD51 fork-localization compared to WT-expressing HCT116.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HCT116 cells expressing GOF p53 R248W show increased RAD51 fork-localization compared to WT-expressing HCT116, as do LOF mutant p53 S47-expressing H1299 cells compared to cells with WT p53 (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "ec8ad983-a167-4f5e-b4ac-d498f6a768e5",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C37",
+      "claim": "p53 null Saos-2 show an increase in RAD51 SIRF signals, which is repressed with expression of mutant p53 GOF R175H and R273H.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 null Saos-2 show an increase in RAD51 SIRF signals, which is repressed with expression of mutant p53 GOF R175H and R273H.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays in Saos-2 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "7ef03dd4-ed4b-4f04-aa92-5abc6cf1041d",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C38",
+      "claim": "The results do not support a correlation between RAD51 recruitment to forks and fork instability in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results do not support a correlation between RAD51 recruitment to forks and fork instability in these cells, but instead suggest alternative causation for the observed genomic instability in p53 mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing variable RAD51 recruitment patterns across different p53 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "39d5552c-d787-476c-8a0e-763a1ef47bd4",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C39",
+      "claim": "Spontaneous SCE is independent of RAD51 and BRCA2 but involves the single-strand annealing (SSA) protein RAD52.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports increasingly suggest that spontaneous SCE is independent of RAD51 and BRCA2 (Bai and Symington, 1996; Cl\u00e9mence Claussin et al., 2017; Ray Chaudhuri et al., 2016), but instead involves the single-strand annealing (SSA) protein RAD52 (Thorpe et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies: Bai and Symington, 1996; Cl\u00e9mence Claussin et al., 2017; Ray Chaudhuri et al., 2016; and Thorpe et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "24e2b915-c1db-4ad8-825a-678ee03922d1",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C40",
+      "claim": "There is a marked increase of RAD52 bound to stalled forks in p53-null cells (MFI of 762) compared to WT (MFI of 494).",
+      "claim_type": "EXPLICIT",
+      "source": "Using SIRF analysis, we find a marked increase of RAD52 bound to stalled forks in p53-null cells (Figure 4C). As the signals were too abundant to be individually counted, we used the mean fluorescence intensity (MFI) as a quantitative readout (Figure 4C, MFI of 494 in p53 null and 762 in p53 WT HAP-1 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 4C using mean fluorescence intensity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e292b1fa-7444-4df4-9f92-186ea803656d",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C41",
+      "claim": "RAD52 recruitment is stronger at low compared to high concentration of HU.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we see stronger RAD52 recruitment at low compared to high concentration of HU (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "eda492df-253f-44d2-af65-ac65e80effab",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C42",
+      "claim": "RAD52 recruitment to stalled forks is stronger than to bona fide DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The former condition is less favorable for DSB formation, suggesting RAD52 recruitment to stalled forks is stronger than to bona fide DNA breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental observation that RAD52 recruitment is higher at low HU concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "a8b25059-97a3-4d86-aae0-0725b303ebf9",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C43",
+      "claim": "There is an increase in RAD52 recruitment in all p53-defective cell lines tested irrespective of the nature of the p53 defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we find an increase in RAD52 recruitment in all p53-defective cell lines tested irrespective of the nature of the p53 defect. This includes HCT116 GOF p53 R248W (Figure 4D), Saos-2 p53 null, Saos-2 GOF p53 R175H, Saos-2 GOF p53 R273H, and H1299 LOF p53 S47 cells (Figure 4\u2014figure supplement 1D and E) compared to respective WT p53-expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays across multiple cell lines shown in Figure 4D and Figure 4\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e65693e5-ad24-4ad0-a141-2d38fc303b73",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C44",
+      "claim": "The increased RAD52 recruitment to stalled forks was not caused by transcriptional deregulations in p53-defective cells, as RAD52 protein levels remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway imbalance was not caused by transcriptional deregulations in p53-defective cells, as RAD52 protein levels remained unchanged with or without p53, further supporting a transcription-independent function of p53 at stalled forks (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from Western blots shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "04038c23-cbd9-46e2-ae05-fd447280e70a",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C45",
+      "claim": "The observed increased RAD52 recruitment to stalled forks is likely a consequence of defective replication restart.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the observed increased RAD52 recruitment to stalled forks is likely a consequence of defective replication restart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing RAD52 recruitment increases in p53-defective cells with restart defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "c15b7bd1-a3c2-43b3-a2f3-e2c82f0b0529",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C46",
+      "claim": "POL\u03b8 is implicated in promoting error-prone MMEJ at replication-associated DNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "POL\u03b8 is implicated in promoting error-prone MMEJ at replication-associated DNA ends (Roerink et al., 2014), which includes collapsed or reversed replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Roerink et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4844db5e-396e-43fe-81f6-dc030f7f1512",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C47",
+      "claim": "There is an increase of mutant p53 S47 association with POL\u03b8 in unchallenged H1299 cells (24 associations/cell), which is further enhanced with replication stalling (38 associations/cell).",
+      "claim_type": "EXPLICIT",
+      "source": "We find an increase of mutant p53 S47 association with POL\u03b8 in unchallenged H1299 cells, which is further enhanced with replication stalling (Figure 5A, 24 associations per cell without and 38 with HU).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PLA assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4a6d25c1-3a63-4afb-9c06-dec45d95dc6c",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C48",
+      "claim": "WT p53-POL\u03b8 associations remain limited even with replication stalling (6 associations without HU and 15 with HU).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, WT p53-POL\u03b8 associations remain limited even with replication stalling (Figure 5A, average of 6 associations without and 15 with HU), suggesting pathway tipping toward mutagenic MMEJ in p53-defective cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PLA assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "465d3b82-a4ea-4302-8aeb-9732abf348be",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C49",
+      "claim": "Inhibition of MRE11 by PFM39 greatly increased WT p53-POL\u03b8 association with replication stalling (from 15 to 50/cell average).",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of MRE11 by PFM39 greatly increased WT p53-POL\u03b8 association with replication stalling (Figure 5A, an increase from 15 to 50/cell average with PFM39).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PLA assays with MRE11 inhibitor shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "aa6321c2-3c7c-48ac-a96a-c5d8d1b4b3e3",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C50",
+      "claim": "MRE11 inactivation can partially pheno-copy p53 deficiency at replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that MRE11 inactivation can partially pheno-copy p53 deficiency at replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing MRE11 inhibition increases POL\u03b8 association similar to p53 defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "2ecc2464-0d93-4362-9cd1-b28fa2e94b2b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C51",
+      "claim": "POL\u03b8 interactions with RAD52 increased in GOF p53 R248W HCT116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we find POL\u03b8 interactions with RAD52 increased in GOF p53 R248W HCT116 cells (Figure 5\u2014figure supplement 1A), giving rise to the possibility that POL\u03b8 may collaborate with RAD52 in p53-defective cells rather than acting in separate pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from PLA assays shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "eb6ba49e-4bcd-48cc-a428-225f4d9743b5",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C52",
+      "claim": "There is increased POL\u03b8 recruitment to stalled forks in p53-null HAP-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we find increased POL\u03b8 recruitment to stalled forks in p53-null HAP-1 cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4df87a62-0659-4c4b-af3d-3f92dc14793b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C53",
+      "claim": "Inactivation of MRE11 nuclease in WT HAP-1 cells causes a significantly increase in recruitment of POL\u03b8 to stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, inactivation of MRE11 nuclease in WT HAP-1 cells causes a significantly increase in recruitment of POL\u03b8 to stalled forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays with MRE11 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "0dcb5cb6-e88b-41ea-b0e8-b12d698024d2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C54",
+      "claim": "The data uncover p53-MRE11 repression of mutagenic RAD52 and POL\u03b8 processes at replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data uncover p53-MRE11 repression of mutagenic RAD52 and POL\u03b8 processes at replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing increased RAD52 and POL\u03b8 activity when p53 or MRE11 are defective.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "b24da2e2-ce23-4c6b-b55c-cb362356d214",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C55",
+      "claim": "SSA predominantly results in larger deletion mutations, while MMEJ is signified by microhomology at repair junctions along with deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "RAD52/SSA and POL\u03b8/MMEJ pathways allow the prediction of specific mutation signatures; SSA predominantly results in larger deletion mutations, while MMEJ is signified by microhomology at repair junctions along with deletions (Jasin and Rothstein, 2013; Wood and Doubli\u00e9, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jasin and Rothstein, 2013 and Wood and Doubli\u00e9, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "24a5f30e-279c-41a5-a41a-7a587d8afc4b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C56",
+      "claim": "Seven mutational signatures are increased in p53-defective breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven mutational signatures are increased in p53-defective breast cancers (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational analysis of TCGA data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6bca8169-189c-451f-a2ca-2108d574f9f8",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C57",
+      "claim": "Of the seven signatures, only signatures 3 and signature 5 are significantly increased in p53 defective compared to WT p53 breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of these seven signatures, only signatures 3 and signature 5 are significantly increased in p53 defective compared to WT p53 breast cancers (Figure 6\u2014figure supplement 1B);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational analysis of TCGA data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "04cf5600-fbb6-4c84-a1e4-74ded2251eb3",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C58",
+      "claim": "COSMIC signature 3 is defined by larger deletion mutations (>3 bp) with microhomology at break junctions, consistent with expected RAD52 and POL\u03b8 mutation spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "COSMIC signature 3 is defined by larger deletion mutations (>3 bp) with microhomology at break junctions, consistent with expected RAD52 and POL\u03b8 mutation spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of COSMIC signature definitions and inference connecting it to RAD52/POL\u03b8 pathways.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6270fe3d-d6e9-48d1-bb0f-46b11070ec7a",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C59",
+      "claim": "COSMIC signature 5 shows T > C transition mutations at ApTpN context with thus far unknown etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "COSMIC signature 5 shows T > C transition mutations at ApTpN context with thus far unknown etiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of COSMIC signature definitions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "680f231e-2b3b-4026-970d-4a0203b2eec8",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C60",
+      "claim": "POL\u03b8 has a stark preference for T > C transition mutations (error-rate of 42 \u00d7 10\u22124, 4\u201340 fold higher than any other possible mutation rate) as seen within a known CATCC hotspot.",
+      "claim_type": "EXPLICIT",
+      "source": "POL\u03b8 was reported to have a stark preference for T > C transition mutations (error-rate of 42 \u00d7 10\u22124, 4\u201340 fold higher than any other possible mutation rate) as seen within a known CATCC hotspot (Arana et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Arana et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "499a762c-a99c-4035-8caf-30aa2e6d0f9c",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C61",
+      "claim": "POL\u03b8 may contribute to COSMIC signature 5 etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our combined data uncovers the possibility of POL\u03b8 mediated origin of COSMIC signature 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference connecting POL\u03b8 mutation preferences with COSMIC signature 5 characteristics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "0abe489c-9d69-487f-92f8-9e7ddadab8f3",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C62",
+      "claim": "COSMIC signatures are in agreement with increased RAD52 and POL\u03b8 pathway usage in p53 mutant breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we find COSMIC signatures are in agreement with increased RAD52 and POL\u03b8 pathway usage in p53 mutant breast cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational analysis of TCGA data and experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "82c23125-06b0-4f88-9082-f82580fec485",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C63",
+      "claim": "2/3 of all mutations found across cancers are caused by errors occurring during proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously hypothesized (Cox et al., 2000), recent findings formalized that 2/3 of all mutations found across cancers are caused by errors occurring during proliferation (Tomasetti et al., 2017), highlighting the critical importance of protective mechanisms during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cox et al., 2000 and Tomasetti et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "52db91bc-306e-44c4-ba28-bbb9d951558d",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C64",
+      "claim": "Early studies found p53 is activated at stalled replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, early studies found p53 is activated at stalled replication forks (Gottifredi et al., 2001; Kumari et al., 2004), which are a source for genomic instability requiring distinct replication fork stability pathways (Branzei and Foiani, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gottifredi et al., 2001 and Kumari et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "72e38ecd-0c0f-4d22-a6fc-05f90cb418cf",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C65",
+      "claim": "p53 interacts with BLM helicase at replication forks and represses HR in S-phase upon DNA damage, independent of its G1-S and transactivation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 interacts with BLM helicase at replication forks and represses HR in S-phase upon DNA damage, independent of its G1-S and transactivation activity (Bertrand et al., 2004; Janz and Wiesm\u00fcller, 2002; Saintigny and Lopez, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bertrand et al., 2004, Janz and Wiesm\u00fcller, 2002, and Saintigny and Lopez, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "f15bafb8-276e-4450-a04d-3a6bdeda58f4",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C66",
+      "claim": "p53 was found to interact with DNA POL\u03b9.",
+      "claim_type": "EXPLICIT",
+      "source": "Hinting at a direct p53 replication function, recently p53 was found to interact with DNA POL\u03b9 (Hampp et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hampp et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "c83f764c-0b30-4a3e-860d-3db2a20b54b8",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C67",
+      "claim": "p53 deletion in U2OS cells was reported to slow unperturbed replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p53 deletion in U2OS cells was reported to slow unperturbed replication (Klusmann et al., 2016), although this was suggested to require p53 transcription function, while p53 functions in DNA damage response are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Klusmann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e1be5324-ec88-4f40-ab0d-07ba74193e4e",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C68",
+      "claim": "p53 suppresses replication genomic instability independent of transcription activation.",
+      "claim_type": "EXPLICIT",
+      "source": "By delineating human and murine separation-of-function p53 alleles, we find that p53 null and gain-of-function (GOF) mutations exhibit defects in restart of stalled or damaged DNA replication forks that drive genomic instability, which isgenetically separable from transcription activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from separation-of-function p53 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "14134455-c00a-4922-b1e8-89932dcc4eed",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C69",
+      "claim": "p53 defects or depletion unexpectedly allow mutagenic RAD52 and POL\u03b8 pathways to hijack stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, p53 defects or depletion unexpectedly allow mutagenic RAD52 and POL\u03b8 pathways to hijack stalled forks, which we find reflected in p53 defective breast-cancer patient COSMIC mutational signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from SIRF assays and computational analysis of TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "232d39ec-3da9-4e6c-8cea-45a397992170",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C70",
+      "claim": "p53 is a keystone regulator of replication homeostasis within a DNA restart network.",
+      "claim_type": "EXPLICIT",
+      "source": "These data uncover p53 as a keystone regulator of replication homeostasis within a DNA restart network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing p53's role in coordinating multiple restart pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "b3e94e8d-e6d8-46f7-9667-f8d678ed1878",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C71",
+      "claim": "In breast cancers, p53 mutations are associated with more aggressive and triple negative breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In breast cancers, p53 mutations are associated with more aggressive and triple negative breast cancers (Turner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Turner et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "67414c14-82b5-4a97-b9a7-18e39a41c9fc",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C72",
+      "claim": "Aggressive breast cancers respond to chemotherapy including platinum drugs and PARP inhibitors initially, but develop resistance thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to high serous ovarian cancers, these aggressive cancers respond to chemotherapy including platinum drugs and PARP inhibitors initially, but develop resistance thereafter (Luvero et al., 2014; Wahba and El-Hadaad, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Luvero et al., 2014 and Wahba and El-Hadaad, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "65929376-663e-4e55-937b-5d1e8fe4c9f1",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C73",
+      "claim": "The most consistent defect for both null and GOF p53 mutants in cancers is the loss of p53 transcriptional responses to regulate apoptosis and cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the most consistent defect for both null and GOF p53 mutants in cancers is the loss of p53 transcriptional responses to regulate apoptosis and cell cycle arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about p53 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "74c99e51-11a0-4add-aebb-eabfbc377fbb",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C74",
+      "claim": "Murine p53 R172P retains much of its tumor suppression function despite loss of transcriptional induction and loss of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Murine p53 R172P, corresponding to human R175P, retains much of its tumor suppression function despite loss of transcriptional induction and loss of apoptosis (Liu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Liu et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "71ba2454-d82c-4785-9cfb-19b15dcf7eec",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C75",
+      "claim": "p53 mutations in the transactivation domain and p53 acetylation mutations severely inhibit p53 induction of apoptosis and senescence, yet exhibit a mild and delayed tumor onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, p53 mutations in the transactivation domain and p53 acetylation mutations severely inhibit p53 induction of apoptosis and senescence, yet exhibit a mild and delayed tumor onset (Li et al., 2012; Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Li et al., 2012 and Zhu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "92a01200-c7d4-4fa8-a137-54f4c5b22ea5",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C76",
+      "claim": "p53 interacts with MLL3/4 histone methyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 also has seemingly disparate cellular functions including during metabolism and epigenetic control, that is through its interaction with MLL3/4 histone methyltransferases (Pfister et al., 2015; Zhu et al., 2015), although the contribution of these functions to tumor suppression is not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pfister et al., 2015 and Zhu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "7fa76c9e-b0ff-4c79-ae70-2b49439db3d8",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C77",
+      "claim": "ATM mediates p53 phosphorylation as part of a DNA stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to DNA damage, ATM mediates p53 phosphorylation as part of a DNA stress response (Saito et al., 2002), which is facilitated by PTIP (Jowsey et al., 2004), a BRCT domain containing protein that is part of the MLL3/4 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Saito et al., 2002 and Jowsey et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "27c442b2-9832-41fc-89e4-531873149540",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C78",
+      "claim": "Loss of p53 does not change DSB repair rates by HR when measured in specific induced break assays.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of p53 does not change DSB repair rates by HR when measured in specific induced break assays (Willers et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Willers et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "3b63d098-f0b8-4bed-a963-5ee0b71fe824",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C79",
+      "claim": "p53 has a prominent DNA-binding domain and RPA interaction sites.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 has a prominent DNA-binding domain and RPA interaction sites (Romanova et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Romanova et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "bae79285-7e20-42ce-b046-a5c34b5ba38f",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C80",
+      "claim": "MLL3 promotes H3K4 histone methylation to mark open chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "MLL3 promotes H3K4 histone methylation to mark open chromatin (Ruthenburg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ruthenburg et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "5f446cc1-b14c-40db-9fd6-591a78e3ae25",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C81",
+      "claim": "MRE11 impairment promotes progression and invasiveness of mammary hyperplasia in mouse models similar to p53 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this concept, MRE11 impairment, which we show phenocopies p53 defects at stalled forks, promotes progression and invasiveness of mammary hyperplasia in mouse models similar to p53 inactivation (Gupta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gupta et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "48f41ca2-e274-47d1-9fd6-1125ee1efdbd",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C82",
+      "claim": "p53 is phosphorylated by ATM at S46, which is decreased in p53 S47.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 is phosphorylated by ATM at S46, which is decreased in p53 S47 (Jennis et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jennis et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "870f302c-f5f9-4461-8197-c9c545f57b5b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C83",
+      "claim": "At residues D48/D49, p53 can directly interact with single-strand binding protein RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, at the adjacent residues D48/D49, p53 can directly interact with single-strand binding protein RPA (Romanova et al., 2004), which is implicated in replication fork remodeling (Neelsen and Lopes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Romanova et al., 2004 and Neelsen and Lopes, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "5a5d5611-1e54-4f62-86ac-51a09cd8a926",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C84",
+      "claim": "RPA interaction mutations deregulate recombination reactions without affecting transactivation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RPA interaction mutations deregulate recombination reactions without affecting transactivation reactions (Romanova et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Romanova et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "dd4723a5-2de5-4bc5-b834-45e5961b8110",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C85",
+      "claim": "The latest identified Fanconi Anemia tumor suppressor is the RFWD3 ubiquitin ligase that regulates p53.",
+      "claim_type": "EXPLICIT",
+      "source": "The latest identified Fanconi Anemia tumor suppressor is the RFWD3 ubiquitin ligase that regulates p53 (Feeney et al., 2017; Inano et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Feeney et al., 2017 and Inano et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6ca1309f-06cb-4bff-8797-a58a97cf11fc",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C86",
+      "claim": "A Fanconi Anemia phenotypes causing patient mutation in RFWD3 leads to deregulation of RPA reactions at the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a Fanconi Anemia phenotypes causing patient mutation in RFWD3 leads to deregulation of RPA reactions at the replication fork (Inano et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Inano et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e16a10ab-1d8c-48bf-b0d3-5feecf87b921",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C87",
+      "claim": "p53 could feasibly be a vital player in the Fanconi Anemia pathway through its replication function.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that p53 could feasibly be a vital player in the Fanconi Anemia pathway through its replication function, and it will be exciting to decipher this relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the connections between p53, RFWD3, and RPA.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "47c1daf8-7004-40ce-8cd4-f0f20ade3e49",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C88",
+      "claim": "MRE11 is a nuclease known to promote restart after replication stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish here that at forks, p53 controls MRE11, a nuclease known to promote restart after replication stalling (Trenz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Trenz et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "a3469063-53d6-4fc8-8a53-159b80a220b4",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C89",
+      "claim": "Other prominent p53 collaborating proteins including BLM helicase, ATM, and PARP-1 all promote replication restart.",
+      "claim_type": "EXPLICIT",
+      "source": "Other prominent p53 collaborating proteins including BLM helicase (Davies et al., 2007), ATM (Trenz et al., 2006), and PARP-1 (Bryant et al., 2009) all promote replication restart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Davies et al., 2007, Trenz et al., 2006, and Bryant et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "8786aea4-242c-44aa-927c-5d0ce952b23e",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C90",
+      "claim": "PARP, BLM helicase and RPA promote and repress replication fork reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP, BLM helicase and RPA promote and repress replication fork reversal (Neelsen and Lopes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Neelsen and Lopes, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "d47cd87a-1d9e-43b4-b461-be5bd4991aa2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C91",
+      "claim": "Fork reversal is readily observed in cancer cells at low concentrations of replication stalling agents.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is unclear whether fork reversal is required for normal replication restart, it is readily observed in cancer cells at low concentrations of replication stalling agents (Zellweger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zellweger et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "ec7f8ece-f994-45f8-a140-749823a5daa0",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C92",
+      "claim": "In the absence of fork reversal control and stabilization by p53 regulated players, RAD52/POL\u03b8 pathways hijack the free DNA end to invade replication ahead or behind the replication fork as an intramolecular reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of fork reversal control and stabilization by p53 regulated players, our model suggests that RAD52/POL\u03b8 pathways hijack the free DNA end to invade replication ahead or behind the replication fork as an intramolecular reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the experimental data and proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4ede1d22-6cfe-490c-9ac3-2ca5eaa79704",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C93",
+      "claim": "In mammary tumor suppression, p53 cooperates with BRCA1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammary tumor suppression, p53 cooperates with BRCA1/2 (Jonkers et al., 2001; Ludwig et al., 1997), which is often associated with more aggressive and resistant tumors, although the mechanism of this collaboration has been elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jonkers et al., 2001 and Ludwig et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "f76283a8-35fb-4fd5-a858-3a6c1064576b",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C94",
+      "claim": "Gene internal deletion and/or point mutations within the BRCA2 gene can restore reading frames of BRCA2 mutated stop codons in CAPAN-1 pancreatic and POE ovarian cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, gene internal deletion and/or point mutations within the BRCA2 gene can restore reading frames of BRCA2 mutated stop codons in CAPAN-1 pancreatic and POE ovarian cancer cells (Sakai et al., 2009; Sakai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sakai et al., 2009 and Sakai et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "122faa10-7268-4a50-9131-31e4c0dc23f9",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C95",
+      "claim": "Some of the new BRCA2 peptides conferring resistance have extensive internal deletion mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while BRCA2 peptide expression is restored, some of these new BRCA2 peptides conferring resistance have extensive internal deletion mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the cited studies about BRCA2 restoration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "e2144cb1-6258-4459-ae41-59a3d5a1c3d6",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C96",
+      "claim": "Triple negative breast cancers and serous ovarian cancers, which almost exclusively harbor p53 mutations, are often initially sensitive to therapy such as cis-platin drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple negative breast cancers as well as serous ovarian cancers, which almost exclusively harbor p53 mutations, are often initially sensitive to therapy such as cis-platin drugs (Luvero et al., 2014; Wahba and El-Hadaad, 2015), which cause replication stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Luvero et al., 2014 and Wahba and El-Hadaad, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "b22b6af1-aa2d-48b4-9a89-dfb81a7317eb",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C97",
+      "claim": "Inhibition of RAD52/POL\u03b8 pathways as adjuvant therapy concomitant with initial conventional therapy could offer an actionable strategy for ameliorating aggressive tumor evolution and secondary mutations leading to resistance in p53-defective tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "our model suggests that inhibition of RAD52/POL\u03b8 pathways as adjuvant therapy concomitant with initial conventional therapy could offer an actionable strategy for ameliorating aggressive tumor evolution and secondary mutations leading to resistance in p53-defective tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the experimental findings and proposed therapeutic implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4983f5da-74ad-4ffb-ab61-74b02aaa9e3e",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C98",
+      "claim": "p53 is a key-protein in error-free replication restart.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that p53 is a key-protein in error-free replication restart may explain why p53 mutations are a dominant cause of cancer genome instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing p53's role in replication restart.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "17c1340c-2971-4e25-81a4-39707e16e3ac",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "claim_id": "C99",
+      "claim": "p53 mutations are a dominant cause of cancer genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that p53 is a key-protein in error-free replication restart may explain why p53 mutations are a dominant cause of cancer genome instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge and inference from the experimental findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "p53 deficiency (null, GOF, and LOF mutants) results in increased stalled replication forks and decreased new origin firing across multiple cell types (HAP-1, MEFs, H1299), demonstrating a conserved role for p53 in replication restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C13 provide consistent experimental evidence from DNA fiber assays across multiple cell lines (human HAP-1, primary MEFs, H1299) and different p53 mutations (null, GOF R172H, LOF S47), all showing increased fork stalling and decreased origin firing. The data are quantitative with specific percentages and supported by figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "p53 S47 and R172P are separation-of-function mutants that retain transcriptional activity and apoptosis but lose replication restart function, demonstrating genetic separation of p53's replication and transcription functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 establish that p53 S47 and R172P mutants retain transcription/apoptosis functions (supported by citations and MTT assays) but exhibit replication restart defects (C5, C10-C11). Claim C14 synthesizes this into the key conclusion. The separation-of-function is well-documented through both experimental data and cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "3cc9c933-cc41-42b7-9c7a-8e11ad8cc1dc",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "p53 S47 cells show cellular sensitivity to replication stalling agents (HU and MMC), which is masked in p53 null cells due to loss of apoptosis, demonstrating that p53's replication restart function suppresses cellular sensitivity to replication stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 provide experimental evidence from cell survival assays showing p53 S47 sensitivity to HU and MMC, while p53 null cells do not show this phenotype. The interpretation (C18) that this demonstrates p53's replication function is logically supported by the separation-of-function data showing S47 retains apoptosis but loses restart function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "p53 defects cause replication stress-dependent genomic instability as measured by micronuclei formation, with the severity correlating with replication restart defects rather than transcription functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 provide quantitative micronuclei data from multiple cell types showing increased genomic instability with p53 defects. The correlation with restart defects (C22) is supported by the intermediate phenotype of R172P (moderate restart defect, moderate micronuclei) compared to R172H (severe restart defect, high micronuclei). The experimental design controlling for S-phase events strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "ed19aaa0-c1df-41ce-9c5b-a8890df4f069",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "p53 directly associates with active and stalled DNA replication forks, as demonstrated by iPOND assays showing p53 enrichment at nascent DNA that is retained at stalled forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide iPOND experimental data showing p53 association with EdU-labeled nascent DNA, reduction with thymidine chase (consistent with fork progression), and retention at HU-stalled forks. The data are quantified and normalized to chromatin controls (ORC2). This provides direct biochemical evidence for p53 at replication forks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "a976b41b-702d-44fe-be26-4e1da5e623ea",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "p53 promotes MLL3 chromatin remodeler and MRE11 nuclease recruitment to stalled replication forks, establishing a mechanism for p53-mediated replication restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 provide SIRF assay data showing p53-dependent recruitment of MLL3 (17 vs 13 sites) and MRE11 (30 vs 18 sites) to stalled forks. The mechanistic connection between MLL3 chromatin opening and MRE11 recruitment is supported by citation (C31). The data are quantitative and statistically significant, establishing a clear mechanistic pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "6a0a968c-f927-4aef-a48f-104700a3c684",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RAD51 recruitment to stalled forks varies inconsistently across different p53 mutants and does not correlate with fork instability, suggesting RAD51-mediated HR is not the primary cause of genomic instability in p53-defective cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 provide SIRF data showing variable RAD51 recruitment patterns: decreased in p53 null HAP-1, increased in GOF R248W and LOF S47, and increased in p53 null Saos-2 but decreased by GOF expression. This inconsistency across different p53 mutations with similar restart defects supports the conclusion (C38) that RAD51/HR is not the primary mechanism of instability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "f7141a62-9066-41e0-a05e-45bbd5cad564",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "p53 defects lead to increased recruitment of mutagenic RAD52 to stalled replication forks across all p53-defective cell lines tested, independent of transcriptional changes, likely as a consequence of defective replication restart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 provide consistent SIRF data showing increased RAD52 recruitment across multiple cell lines (HAP-1, HCT116, Saos-2, H1299) with different p53 defects (null, GOF, LOF). The transcription-independence is demonstrated by Western blots (C44) showing unchanged RAD52 protein levels. The preferential recruitment at low HU (C41-C42) suggests fork-specific rather than DSB-specific recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "p53 defects and MRE11 inactivation lead to increased recruitment of mutagenic POL\u03b8 to stalled forks, revealing p53-MRE11 axis repression of error-prone MMEJ pathways at replication forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 show increased p53 S47-POL\u03b8 associations (38 vs 15 with HU) by PLA. Critically, MRE11 inhibition phenocopies p53 defects (C49: 15 to 50 associations), establishing the p53-MRE11 mechanistic connection. SIRF data (C52-C53) confirm increased POL\u03b8 at forks in p53 null and MRE11-inhibited cells. The potential RAD52-POL\u03b8 collaboration (C51) adds mechanistic depth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "p53-defective breast cancers show increased COSMIC mutational signatures 3 and 5, which are consistent with RAD52/SSA and POL\u03b8/MMEJ pathway usage, with POL\u03b8 potentially contributing to the previously unexplained signature 5 etiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 provide computational analysis of TCGA data showing signatures 3 and 5 are significantly increased in p53-defective breast cancers. The connection to RAD52/POL\u03b8 pathways is supported by signature characteristics (C58: deletions with microhomology for signature 3) and POL\u03b8 mutation preferences (C60: T>C transitions matching signature 5). While the POL\u03b8-signature 5 connection is somewhat speculative (C61), it is well-reasoned based on mutation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "f622ee5c-7f87-49c8-821e-b3e06c51a639",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "p53 functions as a keystone regulator of replication homeostasis, suppressing genomic instability independent of transcription activation by preventing mutagenic RAD52/POL\u03b8 pathway hijacking of stalled forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central synthesis claim supported by all major experimental findings: separation-of-function mutants (C68), direct fork localization (C24-C27), MLL3/MRE11 recruitment (C28-C33), RAD52/POL\u03b8 suppression (C40-C54), and COSMIC signatures (C56-C62). The claim integrates multiple lines of evidence into a coherent model of p53's transcription-independent role in replication homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work establishes that p53 mutations are associated with aggressive breast cancers, that transcription-independent p53 functions exist, and that p53 interacts with MLL3/4 and is phosphorylated by ATM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C71-C77) are all supported by appropriate citations to prior literature and provide necessary background context for the current work. They establish the clinical relevance (C71-C72), the precedent for transcription-independent functions (C73-C75), and relevant molecular interactions (C76-C77).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "cd6f78ae-6272-4842-86f6-97871bc708c6",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work shows p53 does not affect DSB repair by HR in induced break assays, p53 has DNA-binding and RPA interaction domains, MLL3 marks open chromatin, and MRE11 impairment phenocopies p53 defects in mammary hyperplasia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C78-C81) are supported by appropriate citations and provide important context: C78 explains why HR is not the primary mechanism, C79 supports p53's ability to interact at forks, C80 explains MLL3 function, and C81 provides in vivo support for the p53-MRE11 connection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "86fc6532-d79b-4230-a422-a184600d69fd",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "p53 S47 affects ATM phosphorylation at S46 and is adjacent to RPA interaction sites (D48/D49), suggesting potential mechanisms for p53's replication function and possible connection to the Fanconi Anemia pathway through RFWD3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 are supported by citations establishing the molecular details of p53 S47. However, the proposed connection to Fanconi Anemia (C85-C87) is speculative (C87 explicitly states this). While the connections are plausible and well-reasoned, they represent hypotheses for future work rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "p53 collaborating proteins (MRE11, BLM, ATM, PARP-1, RPA) all promote replication restart and regulate fork reversal, and in their absence, RAD52/POL\u03b8 pathways may hijack reversed fork structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 are well-supported by citations establishing the roles of these proteins in replication restart and fork reversal. However, the mechanistic model of RAD52/POL\u03b8 hijacking reversed forks (C92) is speculative and represents a proposed model rather than directly demonstrated mechanism. The model is reasonable given the data but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "p53 cooperates with BRCA1/2 in tumor suppression, and therapy resistance in BRCA-defective cancers can arise through deletion mutations restoring BRCA2 reading frames, suggesting RAD52/POL\u03b8 inhibition as a therapeutic strategy for p53-defective tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C96 are supported by appropriate citations establishing p53-BRCA cooperation, resistance mechanisms, and clinical sensitivity patterns. However, the therapeutic proposal (C97) is speculative and represents a hypothesis for future work rather than tested intervention. While the logic is sound based on the mechanistic findings, it requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    },
+    {
+      "id": "4c91559e-4f4b-4bec-b71a-ec35b3fb61aa",
+      "content_id": "12c868f8-4586-402c-a091-7b1071d5ffc4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "p53 is a key protein in error-free replication restart, which may explain why p53 mutations are a dominant cause of cancer genome instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C98-C99) are well-supported by the totality of experimental evidence presented in the manuscript, including the separation-of-function mutants, direct fork localization, mechanistic pathway data, and COSMIC signature analysis. They represent appropriate synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:56:27.113748Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d790b521-41dd-4b2e-b882-5cd3d00cb4a8",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "ab1c4b14-2d95-41e9-ac8b-84497460d0eb",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "ee330c05-49ff-4176-b214-60a1768d711d",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "4a54afcc-14cf-4f2f-921f-9e98a7313ee6",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "aec5b7c4-6349-405d-8c30-5affe729cc79",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "dd6be802-7735-4443-a81b-ccb2b1a8c697",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "84ca9197-e674-4437-b286-abf97d57adde",
+      "result_id": "f25c88f7-2dfe-4f70-9c6d-ee473ab50865"
+    },
+    {
+      "claim_id": "5a648d0b-e3cb-4f72-9f58-3b9c457c086d",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "c13e653c-2121-4256-82bc-4a154ab7c7cc",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "0157f1aa-1e40-4418-854e-cb4029805b4a",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "b3682a51-a903-4355-8fcf-86b93fb46a66",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "e2c21af7-2c5f-4def-b3aa-914e2d3c9eb7",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "6f9900cd-a9e4-4935-b9d7-3ee69ec91383",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "64531f25-f002-4e6c-b2cf-0abd851dfda2",
+      "result_id": "9afd324a-f7d8-4886-a4d7-a579d43e6ce2"
+    },
+    {
+      "claim_id": "6392fd0c-007b-4802-b313-be1bf926537b",
+      "result_id": "3cc9c933-cc41-42b7-9c7a-8e11ad8cc1dc"
+    },
+    {
+      "claim_id": "3be74320-4b39-4eba-aa63-683f936163e2",
+      "result_id": "3cc9c933-cc41-42b7-9c7a-8e11ad8cc1dc"
+    },
+    {
+      "claim_id": "30e4acba-ccfc-434a-9348-396a68fe50d0",
+      "result_id": "3cc9c933-cc41-42b7-9c7a-8e11ad8cc1dc"
+    },
+    {
+      "claim_id": "34ee5d21-8a68-4dfd-bfde-40eb97f55f2f",
+      "result_id": "3cc9c933-cc41-42b7-9c7a-8e11ad8cc1dc"
+    },
+    {
+      "claim_id": "81de9e4f-b6a9-4906-aa43-5055d92de421",
+      "result_id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583"
+    },
+    {
+      "claim_id": "53504316-b96a-4e80-8b04-65b401848a8e",
+      "result_id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583"
+    },
+    {
+      "claim_id": "d9541459-0753-48a8-9f6f-7ee6a7533141",
+      "result_id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583"
+    },
+    {
+      "claim_id": "2392a291-899c-49f2-9a43-632ce639fa16",
+      "result_id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583"
+    },
+    {
+      "claim_id": "e410ee4e-6cdc-4c2a-857c-009f6f00fd05",
+      "result_id": "a02b1109-3fba-4a82-baaf-cc92f4d6a583"
+    },
+    {
+      "claim_id": "4b4efe57-7d18-451a-aad6-2685f4430e83",
+      "result_id": "ed19aaa0-c1df-41ce-9c5b-a8890df4f069"
+    },
+    {
+      "claim_id": "0dc2f3d6-1174-432f-ab52-b226c7e8e3bd",
+      "result_id": "ed19aaa0-c1df-41ce-9c5b-a8890df4f069"
+    },
+    {
+      "claim_id": "5bf0142e-75c5-4030-8996-02d539de96cf",
+      "result_id": "ed19aaa0-c1df-41ce-9c5b-a8890df4f069"
+    },
+    {
+      "claim_id": "45ba6091-f13e-4c99-867a-16e0fc1fe5c5",
+      "result_id": "ed19aaa0-c1df-41ce-9c5b-a8890df4f069"
+    },
+    {
+      "claim_id": "393b9ae0-cd90-4e71-ab65-ea9dc9ede2d1",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "a19f4d8e-5f7c-4e5b-9ffb-078e235c8f11",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "bbed016c-504f-4bde-ba79-dae74bd7d00f",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "bd975f15-23c5-4399-b92c-5ffac58af133",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "6ae9a9e6-25e9-465f-8683-19bbc8fdf532",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "4259be7e-1211-40d4-a4b3-641d2c2838d2",
+      "result_id": "a976b41b-702d-44fe-be26-4e1da5e623ea"
+    },
+    {
+      "claim_id": "aaf5991f-9a3a-4a47-b35b-2f9d7188853e",
+      "result_id": "6a0a968c-f927-4aef-a48f-104700a3c684"
+    },
+    {
+      "claim_id": "46106521-f6df-4c7d-99df-2e5b2830b426",
+      "result_id": "6a0a968c-f927-4aef-a48f-104700a3c684"
+    },
+    {
+      "claim_id": "86591b2b-7958-4726-8191-ff634fcffc2c",
+      "result_id": "6a0a968c-f927-4aef-a48f-104700a3c684"
+    },
+    {
+      "claim_id": "ec8ad983-a167-4f5e-b4ac-d498f6a768e5",
+      "result_id": "6a0a968c-f927-4aef-a48f-104700a3c684"
+    },
+    {
+      "claim_id": "7ef03dd4-ed4b-4f04-aa92-5abc6cf1041d",
+      "result_id": "6a0a968c-f927-4aef-a48f-104700a3c684"
+    },
+    {
+      "claim_id": "39d5552c-d787-476c-8a0e-763a1ef47bd4",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "24e2b915-c1db-4ad8-825a-678ee03922d1",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "e292b1fa-7444-4df4-9f92-186ea803656d",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "eda492df-253f-44d2-af65-ac65e80effab",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "a8b25059-97a3-4d86-aae0-0725b303ebf9",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "e65693e5-ad24-4ad0-a141-2d38fc303b73",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "04038c23-cbd9-46e2-ae05-fd447280e70a",
+      "result_id": "f7141a62-9066-41e0-a05e-45bbd5cad564"
+    },
+    {
+      "claim_id": "c15b7bd1-a3c2-43b3-a2f3-e2c82f0b0529",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "4844db5e-396e-43fe-81f6-dc030f7f1512",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "4a6d25c1-3a63-4afb-9c06-dec45d95dc6c",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "465d3b82-a4ea-4302-8aeb-9732abf348be",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "aa6321c2-3c7c-48ac-a96a-c5d8d1b4b3e3",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "2ecc2464-0d93-4362-9cd1-b28fa2e94b2b",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "eb6ba49e-4bcd-48cc-a428-225f4d9743b5",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "4df87a62-0659-4c4b-af3d-3f92dc14793b",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "0dcb5cb6-e88b-41ea-b0e8-b12d698024d2",
+      "result_id": "0a7efb1a-6d80-4377-99ee-6fa4c259f992"
+    },
+    {
+      "claim_id": "b24da2e2-ce23-4c6b-b55c-cb362356d214",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "24a5f30e-279c-41a5-a41a-7a587d8afc4b",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "6bca8169-189c-451f-a2ca-2108d574f9f8",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "04cf5600-fbb6-4c84-a1e4-74ded2251eb3",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "6270fe3d-d6e9-48d1-bb0f-46b11070ec7a",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "680f231e-2b3b-4026-970d-4a0203b2eec8",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "499a762c-a99c-4035-8caf-30aa2e6d0f9c",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "0abe489c-9d69-487f-92f8-9e7ddadab8f3",
+      "result_id": "69fabc40-61ee-4d94-bb88-c6b94d8c232f"
+    },
+    {
+      "claim_id": "82c23125-06b0-4f88-9082-f82580fec485",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "52db91bc-306e-44c4-ba28-bbb9d951558d",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "72e38ecd-0c0f-4d22-a6fc-05f90cb418cf",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "f15bafb8-276e-4450-a04d-3a6bdeda58f4",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "c83f764c-0b30-4a3e-860d-3db2a20b54b8",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "e1be5324-ec88-4f40-ab0d-07ba74193e4e",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "14134455-c00a-4922-b1e8-89932dcc4eed",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "232d39ec-3da9-4e6c-8cea-45a397992170",
+      "result_id": "f622ee5c-7f87-49c8-821e-b3e06c51a639"
+    },
+    {
+      "claim_id": "b3e94e8d-e6d8-46f7-9667-f8d678ed1878",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "67414c14-82b5-4a97-b9a7-18e39a41c9fc",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "65929376-663e-4e55-937b-5d1e8fe4c9f1",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "74c99e51-11a0-4add-aebb-eabfbc377fbb",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "71ba2454-d82c-4785-9cfb-19b15dcf7eec",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "92a01200-c7d4-4fa8-a137-54f4c5b22ea5",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "7fa76c9e-b0ff-4c79-ae70-2b49439db3d8",
+      "result_id": "198c506f-e813-4c2d-9cb2-6fe47a4b08fb"
+    },
+    {
+      "claim_id": "27c442b2-9832-41fc-89e4-531873149540",
+      "result_id": "cd6f78ae-6272-4842-86f6-97871bc708c6"
+    },
+    {
+      "claim_id": "3b63d098-f0b8-4bed-a963-5ee0b71fe824",
+      "result_id": "cd6f78ae-6272-4842-86f6-97871bc708c6"
+    },
+    {
+      "claim_id": "bae79285-7e20-42ce-b046-a5c34b5ba38f",
+      "result_id": "cd6f78ae-6272-4842-86f6-97871bc708c6"
+    },
+    {
+      "claim_id": "5f446cc1-b14c-40db-9fd6-591a78e3ae25",
+      "result_id": "cd6f78ae-6272-4842-86f6-97871bc708c6"
+    },
+    {
+      "claim_id": "48f41ca2-e274-47d1-9fd6-1125ee1efdbd",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "870f302c-f5f9-4461-8197-c9c545f57b5b",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "5a5d5611-1e54-4f62-86ac-51a09cd8a926",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "dd4723a5-2de5-4bc5-b834-45e5961b8110",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "6ca1309f-06cb-4bff-8797-a58a97cf11fc",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "e16a10ab-1d8c-48bf-b0d3-5feecf87b921",
+      "result_id": "86fc6532-d79b-4230-a422-a184600d69fd"
+    },
+    {
+      "claim_id": "47c1daf8-7004-40ce-8cd4-f0f20ade3e49",
+      "result_id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9"
+    },
+    {
+      "claim_id": "a3469063-53d6-4fc8-8a53-159b80a220b4",
+      "result_id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9"
+    },
+    {
+      "claim_id": "8786aea4-242c-44aa-927c-5d0ce952b23e",
+      "result_id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9"
+    },
+    {
+      "claim_id": "d47cd87a-1d9e-43b4-b461-be5bd4991aa2",
+      "result_id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9"
+    },
+    {
+      "claim_id": "ec7f8ece-f994-45f8-a140-749823a5daa0",
+      "result_id": "2c740d8e-b55f-4b9a-a346-52c8239bc9e9"
+    },
+    {
+      "claim_id": "4ede1d22-6cfe-490c-9ac3-2ca5eaa79704",
+      "result_id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18"
+    },
+    {
+      "claim_id": "f76283a8-35fb-4fd5-a858-3a6c1064576b",
+      "result_id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18"
+    },
+    {
+      "claim_id": "122faa10-7268-4a50-9131-31e4c0dc23f9",
+      "result_id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18"
+    },
+    {
+      "claim_id": "e2144cb1-6258-4459-ae41-59a3d5a1c3d6",
+      "result_id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18"
+    },
+    {
+      "claim_id": "b22b6af1-aa2d-48b4-9a89-dfb81a7317eb",
+      "result_id": "62537bd9-15b8-4fbf-9c4d-274fbbdc2b18"
+    },
+    {
+      "claim_id": "4983f5da-74ad-4ffb-ab61-74b02aaa9e3e",
+      "result_id": "4c91559e-4f4b-4bec-b71a-ec35b3fb61aa"
+    },
+    {
+      "claim_id": "17c1340c-2971-4e25-81a4-39707e16e3ac",
+      "result_id": "4c91559e-4f4b-4bec-b71a-ec35b3fb61aa"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "25f2d7e1-90a0-4c19-b3be-5000b28b8428",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:55:50.981445Z",
+    "updated_at": "2025-12-01T22:55:50.981445Z"
+  },
+  "content": [
+    {
+      "id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "submission_id": "25f2d7e1-90a0-4c19-b3be-5000b28b8428",
+      "content_type": "manuscript",
+      "content_text": "# Differential requirements of androgen receptor in luminal progenitors during prostate regeneration and tumor initiation\n\n## Authors\n\n- Chee Wai Chua<sup>1</sup> ([ORCID: 0000-0002-9634-7265](https://orcid.org/0000-0002-9634-7265))\n- Nusrat J Epsi<sup>6</sup> ([ORCID: 0000-0001-5363-075X](https://orcid.org/0000-0001-5363-075X))\n- Eva Y Leung<sup>1</sup> ([ORCID: 0000-0003-1291-6625](https://orcid.org/0000-0003-1291-6625))\n- Shouhong Xuan<sup>1</sup> ([ORCID: 0000-0003-0571-7855](https://orcid.org/0000-0003-0571-7855))\n- Ming Lei<sup>1</sup>\n- Bo I Li<sup>1</sup> ([ORCID: 0000-0002-4104-4179](https://orcid.org/0000-0002-4104-4179))\n- Sarah K Bergren<sup>1</sup>\n- Hanina Hibshoosh<sup>5</sup>\n- Antonina Mitrofanova<sup>6</sup> ([ORCID: 0000-0003-0671-6512](https://orcid.org/0000-0003-0671-6512))\n- Michael M Shen<sup>1</sup> ([ORCID: 0000-0002-4042-1657](https://orcid.org/0000-0002-4042-1657)) \u2020\n\n### Affiliations\n\n1. Department of Medicine Columbia University Medical Center New York United States\n2. Department of Genetics and Development Columbia University Medical Center New York United States\n3. Department of Urology Columbia University Medical Center New York United States\n4. Department of Systems Biology Columbia University Medical Center New York United States\n5. Herbert Irving Comprehensive Cancer Center Columbia University Medical Center New York United States\n6. Department of Health Informatics, Rutgers School of Health Professions Rutgers, The State University of New Jersey Newark United States\n7. Rutgers Biomedical and Health Sciences Rutgers, The State University of New Jersey Newark United States\n8. Department of Pathology and Cell Biology Columbia University Medical Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaster regulatory genes of tissue specification play key roles in stem/progenitor cells and are often important in cancer. In the prostate, androgen receptor (AR) is a master regulator essential for development and tumorigenesis, but its specific functions in prostate stem/progenitor cells have not been elucidated. We have investigated AR function in CARNs (CAstration-Resistant Nkx3.1-expressing cells), a luminal stem/progenitor cell that functions in prostate regeneration. Using genetically--engineered mouse models and novel prostate epithelial cell lines, we find that progenitor properties of CARNs are largely unaffected by AR deletion, apart from decreased proliferation in vivo. Furthermore, AR loss suppresses tumor formation after deletion of the Pten tumor suppressor in CARNs; however, combined Pten deletion and activation of oncogenic Kras in AR-deleted CARNs result in tumors with focal neuroendocrine differentiation. Our findings show that AR modulates specific progenitor properties of CARNs, including their ability to serve as a cell of origin for prostate cancer.\n\n## Introduction\n\nElucidating the cell type(s) of origin of cancer and the molecular drivers of tumor initiation is of fundamental importance in understanding the basis of distinct tumor subtypes as well as differences in treatment response and patient outcomes (Blanpain, 2013; Rycaj and Tang, 2015; Shibata and Shen, 2013; Visvader, 2011). Furthermore, since cancer often originates from stem cells and/or lineage-restricted progenitor cells, the identification of stem/progenitor cells is of considerable significance. In the case of the prostate, however, both the specific identity of stem/progenitor cells as well as cell types of origin for cancer have remained unclear (Lee and Shen, 2015; Wang and Shen, 2011; Xin, 2013).\n\nIn the normal prostate epithelium, there are three primary cell types, corresponding to secretory luminal cells, an underlying layer of basal cells, and rare neuroendocrine cells (Shen and Abate-Shen, 2010; Toivanen and Shen, 2017). Lineage-tracing studies have shown that both luminal and basal cells are mostly lineage-restricted (unipotent) in the normal adult mouse prostate as well as during androgen-mediated prostate regeneration (Choi et al., 2012; Liu et al., 2011; Lu et al., 2013; Wang et al., 2013). In addition, cells within the basal compartment possess stem/progenitor properties in a range of ex vivo assays as well as during inflammation and wound repair (Goldstein et al., 2008; H\u00f6fner et al., 2015; Kwon et al., 2014; Lawson et al., 2007; Toivanen et al., 2016; Wang et al., 2013). However, recent studies have shown that luminal cells can also display stem/progenitor properties in specific in vivo and ex vivo contexts (Chua et al., 2014; Karthaus et al., 2014; Kwon et al., 2016; Wang et al., 2009). Furthermore, there is now considerable evidence supporting a luminal origin for prostate cancer, both in mouse models (Wang et al., 2009; Wang et al., 2014) as well as in human tissues (Gurel et al., 2008; Meeker et al., 2002).\n\nAndrogen receptor (AR) plays a central role in many aspects of normal prostate development as well as prostate cancer progression (Cunha et al., 2004; Toivanen and Shen, 2017; Watson et al., 2015). In the prostate epithelium of adult hormonally\u00a0intact mice, AR is primarily expressed by luminal cells, but is also found in a subset of basal cells (Lee et al., 2012; Mirosevich et al., 1999; Xie et al., 2017). Several studies have shown that conditional deletion of AR in the adult prostate epithelium results in a short-term increase in proliferation of luminal cells (Wu et al., 2007; Xie et al., 2017; Zhang et al., 2016a), indicating a role for AR in normal prostate homeostasis. Importantly, AR can act as a master regulator of prostate epithelial specification in a fibroblast reprogramming assay (Talos et al., 2017).\n\nIn the context of prostate cancer, tumor recurrence after androgen-deprivation therapy is due to the emergence of castration-resistant prostate cancer (CRPC), which is associated with increased AR activity that can be targeted by second-generation anti-androgen therapies (Watson et al., 2015). However, treatment failure following such anti-androgen therapies is frequently associated with the appearance of AR-negative tumor cells, which are typically associated with highly aggressive lethal disease (Beltran et al., 2014; Vlachostergios et al., 2017; Watson et al., 2015). In some cases, this AR-negative CRPC contain large regions displaying a neuroendocrine phenotype (CRPC-NE) (Beltran et al., 2016, 2014; Ku et al., 2017; Mu et al., 2017; Zou et al., 2017).\n\nPrevious work from our laboratory has identified CARNs as a luminal stem/progenitor cell within the androgen-deprived normal mouse prostate epithelium that is also a cell of origin for prostate cancer (Wang et al., 2009). Following androgen administration to induce prostate regeneration, CARNs can generate both luminal and basal progeny in vivo, as well as in renal grafting and organoid assays (Chua et al., 2014; Wang et al., 2009). Although CARNs express AR (Wang et al., 2009), it has been unclear whether AR is required for any or all the progenitor properties of CARNs, and whether the intrinsic castration-resistance of untransformed CARNs might resemble the castration-resistance of tumor cells in CRPC. Below, we show that the progenitor properties of CARNs are largely unaffected by loss of AR, whereas their ability to serve as cells of origin for prostate cancer are altered by AR deletion in a context-dependent manner. Notably, cell lines derived from AR-deleted CARNs have molecular profiles that resemble those for CRPC, and AR-deleted CARNs can serve as a cell of origin for focal neuroendocrine differentiation in a novel mouse model of AR-negative prostate cancer.\n\n## Results\n\nTo investigate whether the stem/progenitor properties of CARNs are dependent upon AR function, we have used an inducible targeting approach in genetically\u00a0engineered mice. For this purpose, we used mice carrying a conditional allele of Ar (De Gendt et al., 2004) together with the inducible Nkx3.1CreERT2 driver (Wang et al., 2009) and the R26R-YFP reporter to visualize cells and their progeny in which Cre-mediated recombination has taken place (Srinivas et al., 2001); as Ar is an X-linked gene, deletion of a single allele in males is sufficient to confer a hemizygous null phenotype. Since CARNs are Nkx3.1-expressing cells found under androgen-deprived conditions, we castrated adult male mice carrying the Cre driver and reporter alleles, followed by tamoxifen induction to induce Cre-mediated activity specifically in CARNs (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig1-v3.jpg)\n\n**Figure 1.:** (A) Time course for lineage-marking of CARNs and inducible AR deletion using castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. (B) FACS analyses of lineage-marked YFP+ cells in total EpCAM+ epithelial cells. (C) Percentage of YFP+ cells among total epithelial cells in castrated and tamoxifen-induced Nkx3.1CreERT2/+; R26R-YFP/+ controls and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. Error bars represent one standard deviation; the difference between groups is not significant (p=0.51, independent t-test). (D) Expression of AR, luminal markers (CK8 and CK18), and basal markers (CK5 and p63) in lineage-marked CARNs (top) and AR-deleted CARNs (bottom). Note that all lineage-marked cells express luminal but not basal markers (arrows). Scale bars in D) correspond to 50 \u03bcm.\n\nUsing this strategy, we compared the properties of CARNs in Nkx3.1CreERT2/+; R26R-YFP/+ mice, which we denote as \u2018control\u2019 mice, with those in Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice, which we denote as \u2018AR-deleted\u2019 mice. We found that the percentage of lineage-marked YFP-positive cells, corresponding to CARNs, was not significantly different (p=0.51) between the control (0.36 \u00b1 0.17%, n\u00a0=\u00a05 mice) and AR-deleted mice (0.31 \u00b1 0.06%, n\u00a0=\u00a05 mice) (Figure 1B,C). Notably, we found that 87.1% of the YFP-positive cells in Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice (n\u00a0=\u00a0344/395 cells in four mice) were AR-negative, indicating that AR deletion occurred with high efficiency. Furthermore, these YFP-positive cells expressed the luminal markers cytokeratins 8 and 18 (CK8 and CK18), but not cytokeratin 5 (CK5) and p63, indicating that AR deletion does not alter the luminal phenotype of CARNs (Figure 1D). These findings indicate that AR deletion does not affect the frequency or luminal properties of CARNs.\n\nTo investigate the progenitor properties of AR-deleted CARNs, we examined their ability to generate progeny during androgen-mediated regeneration. We implanted subcutaneous mini-osmotic pumps containing testosterone into control Nkx3.1CreERT2/+; R26R-YFP/+ mice as well as Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice, followed by tissue harvest at 4, 7, 14, and 28 days later; the final 28-day time point corresponds to a fully\u00a0regenerated prostate (Figure 2A). We found that the YFP-marked cells and cell clusters were similar in the control and AR-deleted prostates at 4 and 7 days after testosterone administration (Figure 2B,C). However, at 14 and 28 days, the control prostates contained many YFP-expressing cell clusters with more than 4 cells, whereas the prostates with AR-deleted CARNs mostly contained YFP-expressing single cells or doublets (Figure 2B,C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig2-v3.jpg)\n\n**Figure 2.:** (A) Time course for lineage-marking and androgen-mediated regeneration. (B) Percentage of single YFP+ cells or YFP+ clusters of 2 cells, 3\u20134 cells, and\u00a0>4 cells at 4, 7, 14, and 28 days of androgen-mediated regeneration. This analysis does not include YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 2\u2014source data 1. (C) YFP+ cells (arrows) in prostates of mice with lineage-marked CARNs (top) and AR-deleted CARNs (bottom) at days 4, 7, 14 and 28 days during androgen-mediated regeneration. (D) Identification of basal YFP+ cells (arrows) as progeny of CARNs (top) or AR-deleted CARNs (bottom). Scale bars in C) and D) correspond to 50 \u03bcm.\n\nTo compare the proliferative ability of control and AR-deleted CARNs and their progeny, we pursued BrdU pulse-chase experiments during prostate regeneration. We performed castration and tamoxifen administration on control and AR-deleted mice, followed by androgen-mediated regeneration for 28 days, with administration of daily doses of BrdU either from days 1 through 4 of regeneration or from days 11 through 14 (Figure 3A,B). When BrdU was administered from days 1 through 4 of regeneration, we could readily detect BrdU+YFP+ cells in the control prostates (50.9 \u00b1 11.8%, n\u00a0=\u00a03 mice) as well as AR-deleted prostates (62.9 \u00b1 14.9%, n\u00a0=\u00a03 mice) (Figure 3C,E). In contrast, when BrdU was administered from days 11 through 14, we could only detect BrdU+YFP+ cells in the control prostates (11.1 \u00b1 6.2%, n\u00a0=\u00a03 mice), but not in the AR-deleted prostates (0%, n\u00a0=\u00a03 mice) (Figure 3D,F). This difference suggests that AR-deleted CARNs and/or their progeny have a defect in proliferation during later stages of regeneration, consistent with the analysis of YFP+ cluster size (Figure 2B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig3-v3.jpg)\n\n**Figure 3.:** (A,B) Time course of BrdU incorporation during androgen-mediated regeneration of castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. BrdU injections were performed during either days 1 through 4 (A) or days 11 through 14 (B), followed by analysis at 28 days. (C) Identification of BrdU+YFP+ cells (arrows) in control (top) and AR-deleted (bottom) prostate tissue after administration of BrdU during early stages of regeneration. (D) YFP-positive cells in control prostate tumors (top) can incorporate BrdU (arrow) but not in AR-deleted prostate tumors (bottom), after administration of BrdU during later stages of regeneration. (E,F) Percentage of BrdU+ and BrdU\u2013 cells among total YFP+ cells after injection of BrdU from days 1 through 4 (E) or days 11 through 14 (F) of regeneration. Error bars represent one standard deviation; the difference in (E) is not statistically significant (p=0.34, independent t-test), but is significant in (F) (p=0.027, independent t-test). This analysis excludes YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 3\u2014source data 1. (G) Schematic depiction of tissue recombination of lineage-marked CARNs with rat urogenital mesenchyme followed by renal grafting. (H) Analysis of grafts generated from lineage-marked CARNs (top) and AR-deleted CARNs (bottom); arrows in bottom panels indicate AR-expressing stromal cells surrounding the AR-negative prostate duct. Scale bars in C), D) and H) correspond to 50 \u03bcm.\n\nNotably, although YFP-expressing basal cells could be readily identified in both control and AR-deleted prostates, there was an increase in the percentage of basal cells within the YFP+ population in the AR-deleted mice (Figure 2D). This difference was evident using either the basal marker CK5 (2.1% CK5+AR+YFP+ versus 19.2% CK5+AR\u2013YFP+) or p63 (3.5% p63+AR+YFP+ versus 14.6% p63+AR\u2013YFP+) (Figure 2D). These findings indicate that AR-deleted CARNs favor generation of basal progeny and/or that there is decreased proliferation or survival of luminal progeny during regeneration.\n\nAs a further test of the progenitor properties of AR-deleted CARNs, we examined their ability to generate prostate ducts in a tissue recombination/renal grafting assay. Previously, we had shown that single CARNs were capable of generating ducts in this assay (Wang et al., 2009). We isolated YFP-positive cells from control and AR-deleted mice that had undergone castration and tamoxifen induction, and recombined 10 YFP-positive cells together with 2.5 \u00d7 105 rat embryonic urogenital mesenchyme cells, followed by renal grafting (Figure 3G). We found that both control and AR-deleted CARNs could generate prostate ducts (Figure 3H), but that the AR-deleted CARN-s were significantly less efficient (12.5% graft efficiency, n\u00a0=\u00a016) compared to the control CARNs (p=0.003; 68.8% graft efficiency, n\u00a0=\u00a016), consistent with a proliferation defect in the AR-deleted CARNs.\n\nBased on these findings, we further investigated the properties of CARNs and AR-deleted CARNs by establishing adherent cell lines. Using a novel method based on conditions that we previously established for culture of prostate organoids (Chua et al., 2014), we successfully generated adherent cell lines from single YFP+ cells isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. Genotyping of the resulting lines led to identification of Ar-positive (non-recombined allele) and Ar-negative (recombined allele) lines, which we term APCA and ADCA (Ar-Positive CArn-derived and Ar-Deleted CArn-derived) lines. These cell lines could be propagated as adherent cells in the presence of Matrigel and DHT. Under these conditions, we found that the APCA (n\u00a0=\u00a02) and ADCA (n\u00a0=\u00a02) lines were morphologically indistinguishable (Figure 4A). These cell lines were comprised of a mixture of cells expressing basal (CK5) or luminal (CK8) markers or both, as well as Foxa1, an epithelial marker that encodes a transcriptional partner of AR (Gao et al., 2003; He et al., 2010) (Figure 4A). Furthermore, both the APCA and ADCA lines showed robust proliferation at similar levels, as demonstrated by Ki67 immunostaining, CellTiter-Glo assays, and colony formation in the presence or absence of DHT (Figure 4A\u2013C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig4-v3.jpg)\n\n**Figure 4.:** (A) Morphology and marker expression of cell lines derived from single YFP+ cells from castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. The APCA lines (top) and ADCA lines (bottom) show similar bright-field morphology, expression of YFP, Foxa1, and Ki67, as well as co-expression of CK8 and CK5, but differ in expression of AR. (B) APCA and ADCA cell lines display similar cell growth at days 1, 2, 4, and 6 after plating in the absence or presence of DHT, as assessed by CellTiter-Glo assay. Results shown are from a single experiment with five technical replicates and are representative of two biological replicates after normalization with day 0 luminescent signal. (C) Colony formation by APCA and ADCA cell lines in the absence or presence of DHT. Results are from a single experiment with three technical replicates and are representative of two biological replicates. (D) Renal grafts generated from tissue recombinants of 100,000 APCA or ADCA cells with rat urogenital mesenchyme, and analyzed at 12 weeks. Bottom row shows APCA grafts treated with tamoxifen for 4 days at 7 weeks of growth to induce Ar deletion (bottom); arrows indicate cells that did not undergo Ar deletion after tamoxifen treatment. Scale bars in A) and D) correspond to 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Flow-sorting strategy to eliminate EpCAM\u2013E-cadherin\u2013 cells from dissociated benign human prostate epithelial cells obtained from radical prostatectomies. (B) Bright-field images of a human prostate epithelial cell line at passages 3 and 6. (C) HPE cells broadly express AR and both luminal (CK8) and basal (CK5) markers, and have more limited expression of PSA and Ki67. Scale bars in B) correspond to 100 \u03bcm, and in C) to 50 \u03bcm.\n\nTo determine the relative efficiency of forming APCA and ADCA lines from AR+ and AR\u2013 CARNs, respectively, we sorted 60 single YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice into individual wells of a 96-well plate. We found that six YFP+ cells gave rise to adherent lines, with four of these corresponding to AR+ lines that had failed to undergo Cre-mediated recombination of the conditional Ar allele, and two lines corresponding to AR\u2013 lines. After correcting for the 87.1% efficiency of recombination of the AR-floxed allele in vivo, these data indicate that the relative plating efficiency for the AR\u2013 CARNs compared to AR+ CARNs is 7.4%, consistent with the decreased grafting efficiency of AR\u2013 CARNs.\n\nNotably, we were also able to use this methodology to establish 14 primary human prostate epithelial cell lines from benign prostatectomy specimens at high efficiency. Similar to the mouse APCA cell lines, these HPE (Human Prostate Epithelial) cell lines are propagated as adherent cells in the presence of Matrigel and DHT. All these lines display similar marker phenotypes, expressing basal and luminal markers as well as AR and PSA, and are highly proliferative (Figure 4\u2014figure supplement 1).\n\nTo assess the ability of the APCA and ADCA cell lines to reconstitute prostate ducts, we performed tissue recombination assays by combining 1 \u00d7 105 cells with rat urogenital mesenchyme followed by renal grafting. We found that the APCA lines could generate prostate ducts (n\u00a0=\u00a010 grafts with two lines; 100% efficiency), some with evidence of secretions, whereas the ADCA lines (n\u00a0=\u00a06 grafts with one line; 67% efficiency) generated ducts that lacked prostate secretions (Figure 4D). Next, we tested the role of AR in this tissue reconstitution assay by treating the mice grafted with APCA cells (n\u00a0=\u00a012 grafts with two lines) with tamoxifen at 7 weeks after grafting in order to induce Ar deletion. We found that tamoxifen treatment resulted in grafts containing prostate ducts composed of a mixture of AR-positive and negative cells, but with a decreased efficiency of graft formation relative to the same APCA lines in the absence of tamoxifen (42% versus 100% efficiency) (Figure 4D). Taken together, these results show that AR deletion decreases the efficiency of prostate duct formation by CARN-derived cells, consistent with the results obtained using AR-deleted CARNs (Figure 3H). Notably, since ADCA cells do not display a growth disadvantage relative to APCA cells in culture, this difference in duct formation is likely to be due to a non-cell-autonomous effect mediated by the urogenital mesenchyme in grafts.\n\nTo examine the molecular basis for differences between the ADCA and APCA lines (n\u00a0=\u00a02 lines each), we performed RNA-sequencing followed by bioinformatic analyses. Based on the RNA expression profiling data, we constructed a differential expression signature comparing ADCA cells to APCA cells. Using the resulting ADCA signature to examine pathway enrichment by Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005), we found up-regulation of gene sets involved in DNA replication and repair pathways, as well as cell cycle and apoptosis (Figure 5A), suggesting that cellular proliferation and survival are affected by AR deletion. We also compared the ADCA signature with a signature defined between expression profiles of AR-null and AR-positive mouse prostate luminal cells (Xie et al., 2017) and found enrichment for up-regulated genes (Figure 5B). Next, we performed a cross-species comparison of the ADCA signature with a signature defined between profiles of human prostate luminal and basal epithelial cells (Zhang et al., 2016b) and found that there was no significant enrichment in either tail (Figure 5C), indicating that AR deletion does not drive APCA cells towards a specific lineage. Furthermore, we performed GSEA comparisons of the ADCA signature with several signatures obtained from analyses of human prostate cancer progression. In particular, we observed enrichment for up-regulated genes when compared to a signature of CRPC from Best and colleagues (Best et al., 2005), as well as to a signature of metastatic CRPC from Stanbrough and colleagues (Stanbrough et al., 2006) (Figure 5D,E). Moreover, we observed a strong enrichment when compared to a signature from Beltran and colleagues (Beltran et al., 2016) defined between CRPC with neuroendocrine differentiation (CRPC-NE) and non-neuroendocrine CRPC (Figure 5F), consistent with our observation of pathway enrichment for gene sets corresponding to axon guidance and small-cell lung cancer (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig5-v3.jpg)\n\n**Figure 5.:** (A) Selected biological pathways that are enriched in the ADCA versus APCA signature. (B) GSEA plot showing enrichment in the positive tail for a signature of AR-null mouse prostate epithelial cells. (C) Cross-species GSEA showing lack of enrichment with a signature based on isolated human prostate basal and luminal epithelial populations. (D\u2013F) Cross-species GSEA comparing the ADCA expression signature with three independent expression signatures based on tumor samples from human patients. NES: normalized enrichment score; p-value is calculated using 1000 gene permutations.\n\nFinally, we tested the ability of AR-deleted CARNs to serve as a cell of origin for prostate cancer, based on the previous finding that prostate cancer can initiate from CARNs after specific deletion of Pten and androgen-mediated regeneration (Wang et al., 2009). We used Nkx3.1CreERT2/+; Ptenflox/flox; R26R-YFP/+ controls (which we term NP-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+ mice (NPA-CARN) in an experimental paradigm involving castration, tamoxifen-treatment, and androgen-mediated regeneration for one month. We found that AR deletion resulted in a significant difference between the NP-CARN and NPA-CARN phenotypes, as the NP-CARN controls displayed high-grade prostatic intraepithelial neoplasia (PIN), whereas the NPA-CARN prostates showed a weak phenotype corresponding to diffuse hyperplasia with mild inflammation and increased apoptosis, (Figure 6A). The NPA-CARN prostates contained YFP-positive cells that also expressed phospho-Akt (pAkt), indicating successful deletion of Pten, but these cells were only found as solitary or as small clusters, unlike the large clusters of YFP+pAkt+ cells observed in the control NP prostates (Figure 6A). Furthermore, the NPA-CARN prostates displayed a decreased proliferative index relative to NP-CARN (2.7%, n\u00a0=\u00a03 vs. 9.2%, n\u00a0=\u00a03), as well as increased apoptosis (2.6%, n\u00a0=\u00a03 vs. 0.7%, n\u00a0=\u00a03) (Figure 6B). Taken together, findings indicate that AR is required for tumor initiation following Pten deletion in CARNs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig6-v3.jpg)\n\n**Figure 6.:** (A) Prostate histology and marker expression in Nkx3.1CreERT2/+; Ptenflox/flox; R26R-YFP/+ (NP-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+ (NPA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Shown are representative images for hematoxylin-eosin staining (H and E) and immunofluorescence for YFP, AR, phospho-Akt (pAkt), E-cadherin (Ecad), Ki67, and cleaved caspase-3 (CC3). Arrows indicate occurrence of cell death (YFP/AR in NPA-CARN), proliferation (Ecad/Ki67), and apoptosis (Ecad/CC3). (B) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NP-CARN and NPA-CARN prostates. Error bars represent one standard deviation; differences between groups are statistically significant as determined by independent t-test. (C) Prostate tumor histology and marker expression in Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; R26R-YFP/+ (NPK-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ (NPKA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Arrows indicate cells undergoing proliferation (Ecad/Ki67) and apoptosis (Ecad/CC3). (D) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NPK-CARN and NPKA-CARN prostates. Differences between groups are not statistically significant as determined by independent t-test (Ki67, p=0.724; CC3, p=0.507). (E) Focal neuroendocrine differentiation in NPKA-CARN tumors. Shown are H and E and immunohistochemical staining (IHC) of serial sections for Synaptophysin (Syn) and Aurora kinase A (Aurka), IHC for Foxa2 and Chromogranin A (ChrA), as well as immunofluorescence for YFP and Syn shown as an overlay and as individual channels; arrows indicate positive cells. (F) Quantitation of Syn+ cells in total epithelial cells in NPK-CARN and NPKA-CARN tumors. Scale bars for H and E and IHC in A, C,) and E) correspond to 100 \u03bcm, and in other panels to 50 \u03bcm.\n\nIn contrast, AR deletion did not affect tumor initiation following combined deletion of Pten and activation of the oncogenic KrasG12D allele. Using a similar protocol for castration, tamoxifen-treatment, and androgen-mediated regeneration, we compared the phenotypes of Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; R26R-YFP/+ controls (NPK-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ mice (NPKA-CARN). In both genotypes, deletion of Pten and activation of oncogenic Kras resulted in formation of tumors with large clusters of YFP+ cells that express pAkt and Ras (Figure 6C). Furthermore, both NPK-CARN and NPKA-CARN tumors displayed high proliferative indices (20%, n\u00a0=\u00a03 vs. 19%, n\u00a0=\u00a03) and low frequencies of apoptosis (0.9%, n\u00a0=\u00a03 vs. 0.8%, n\u00a0=\u00a03) (Figure 6D). Notably, we observed an important difference between the NPK-CARN and NPKA-CARN tumors, as all the NPKA-CARN tumors contained a low but variable percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n\u00a0=\u00a03), which were never observed in the NPK-CARN controls (0%, n\u00a0=\u00a03) (Figure 6E,F). We also observed rare cells in all three NPKA-CARN tumors that expressed other neuroendocrine markers such as Chromogranin A, Foxa2, and Aurora kinase A (Figure 6E). Since the synaptophysin-postive cells co-expressed YFP (Figure 6E), we conclude that transformed AR-negative CARNs can give rise to neuroendocrine cells.\n\n## Discussion\n\nTaken together, our analyses have defined specific roles for AR in regulating the progenitor properties of CARNs, and indicate that the intrinsic castration-resistance of CARNs is independent of AR function. We find that targeted deletion of AR does not affect the percentage of CARNs, their luminal marker expression, or their ability to generate basal cells during androgen-mediated regeneration. However, there are fewer luminal progeny from AR-deleted CARNs during regeneration in vivo, and there is a decreased efficiency of prostate duct formation by both AR-deleted CARNs and ADCA cells in renal grafts. Thus, AR deletion in CARNs may primarily affect the proliferation and/or survival of their luminal progeny in vivo, although an effect on CARNs themselves cannot be excluded.\n\nInterestingly, our results suggest potential roles of the stroma in modulating the proliferation of CARNs and/or their luminal progeny. Notably, BrdU incorporation assays reveal a proliferation defect of AR-deleted CARNs during later stages of regeneration but not during early regeneration. One possible explanation is that AR activity may cell-autonomously regulate the proliferation of luminal progeny of CARNs; alternatively, however, stromal remodeling during later stages of regeneration may alter non-cell autonomous signals that regulate luminal proliferation. Furthermore, since ADCA cells do not display a growth defect in culture, their decreased efficiency of prostate duct formation in grafts is likely due to a non-cell-autonomous inhibitory effect from the stroma.\n\nOur study has also yielded interesting insights into differences between CARNs and other luminal epithelial cells. While this manuscript was in preparation, another study also investigated the requirements of AR in CARNs, and reported that AR-deleted CARNs completely failed to generate progeny during regeneration (Xie et al., 2017). This apparent discrepancy may be partially explained by our observation that AR-deleted CARNs can still generate basal progeny, and by the failure of progeny from AR-deleted CARNs to proliferate at later stages of androgen-mediated regeneration. However, we concur that CARNs require AR function to generate viable luminal progeny, which is not the case for most luminal cells during homeostasis or regeneration (Xie et al., 2017; Zhang et al., 2016a). Furthermore, the decreased proliferation of AR-deleted CARNs during regeneration contrasts with the transient increase in luminal proliferation observed after inducible AR deletion in the adult prostate epithelium, which is also a non-cell-autonomous effect mediated by the stroma (Zhang et al., 2016a). Together with our previous finding that CARNs display increased organoid formation efficiency relative to other luminal cells (Chua et al., 2014), these findings support the identification of CARNs as a distinct luminal population with stem/progenitor properties, and highlight the complexity of AR functions in the epithelial and stromal compartments.\n\nIn addition, we note that Xie and colleagues reported that Pten deletion in CARNs resulted in tumor formation after regeneration (Xie et al., 2017), unlike the absence of tumors that we observe in NPA-CARN mice. At present, the basis for this discrepancy remains unclear. Our finding that AR deletion results in failure of tumor formation following Pten inactivation could be due to differences between CARNs and bulk luminal cells and/or to differences due to Pten loss in the regressed versus hormonally\u00a0intact prostate epithelium. In principle, these possibilities could potentially be distinguished using inducible Cre-drivers to delete Pten in bulk luminal cells in regressed versus hormonally\u00a0intact mice.\n\nOur findings on CARNs in mouse models may be of potential relevance for human prostate biology and cancer. Although CARNs are defined in the regressed prostate epithelium, and our in vivo studies involve manipulations performed after castration in mice, there is evidence that CARN-like cells exist in the human prostate from tissue-slice culture experiments (Zhao et al., 2010), as well as from analyses of prostate tumors after androgen-deprivation (Germann et al., 2012). However, it is less clear whether multipotent luminal progenitors can be identified in the context of the hormonally\u00a0intact human prostate. Previous lineage-reconstruction studies using patterns of mitochondrial DNA mutations have indicated the existence of multipotent epithelial progenitors (Blackwood et al., 2011; Gaisa et al., 2011), and recent work has provided evidence for multipotent basal progenitors localized to the most proximal region of the prostate as well as more distally located unipotent luminal progenitors (Moad et al., 2017). Notably, ex vivo studies of human prostate organoids have demonstrated the existence of bipotential luminal progenitors (Karthaus et al., 2014). Thus, we believe that current data favor a general similarity of epithelial lineage relationships in the two species, suggesting that findings deduced from analyses of mice may be translatable to the human prostate.\n\nThe ability of CARNs to retain progenitor properties even in the absence of AR raises the possibility that CARNs represent a cell of origin for prostate cancers that are particularly susceptible to develop castration-resistance. Notably, under conditions of AR down-regulation, such as those that may occur during aging or inflammation, CARNs that lack tumor suppressors such as PTEN may represent a latent target for subsequent oncogenic events that can confer tumor growth, such as those activating the ERK MAP kinase pathway. Interestingly, our bioinformatic analyses of the ADCA cell line signature shows enrichment with castration-resistance signatures based on expression data from human prostate cancer patients (Best and Stanbrough signatures), consistent with increasing evidence supporting AR-independent mechanisms of castration-resistance (Beltran et al., 2014; Vlachostergios et al., 2017; Watson et al., 2015). In addition, the observed enrichment with the Beltran CRPC-NE signature suggests a similarity in gene expression programs with advanced cancers that lack AR activity, as neuroendocrine differentiation in prostate tumors is associated with loss of AR expression (Beltran et al., 2011). Notably, consistent with a role for AR loss in the emergence of neuroendocrine phenotypes, tumors in NPKA-CARN mice can display focal neuroendocrine differentiation, which has also been recently described in other mouse models of advanced prostate cancer (Ku et al., 2017; Zou et al., 2017).\n\nIn this regard, we note that the NP-CARN and NPK-CARN mice develop tumor phenotypes similar to those in NP and NPK mice, which have the same genotypes but whose tumors are induced by the Nkx3.1CreERT2 driver in hormonally\u00a0intact adult prostate (Aytes et al., 2013; Floc'h et al., 2012). Interestingly, NP tumors are initially castration-sensitive (Floc'h et al., 2012), consistent with the inability of NPA-CARN mice to develop tumors, whereas NPK tumors are castration-resistant (Aytes et al., 2013), consistent with the phenotype of NPKA-CARN tumors. The molecular basis for this switch is currently unclear, but it is conceivable that it involves ETS family transcription factors, which are known to interact with AR to positively and negatively modulate its activity (Baena et al., 2013; Bose et al., 2017; Chen et al., 2013); interestingly, ETV4 is up-regulated in NPK tumors and may be involved in this switch (Aytes et al., 2013). However, the focal neuroendocrine differentiation observed in NPKA-CARN tumors suggests that oncogenic transformation of AR-deleted CARNs can also facilitate transdifferentiation of luminal cells to neuroendocrine fates, as we have demonstrated for a Pten and Trp53 mutant mouse model (NPp53) after anti-androgen treatment (Zou et al., 2017).\n\nFinally, since tumors initiated from CARNs following combined Pten deletion and Kras activation are at least partially independent of AR from their outset, it is conceivable that such tumors are intrinsically more resistant to second-generation anti-androgen therapies. Interestingly, recent studies have also identified distinct castration-resistant progenitors that express Bmi1 (CARBs) that are cells of origin for prostate cancer (Yoo et al., 2016). The development of targeted therapies directed at molecular features of CARNs and/or other castration-resistant luminal cells may therefore be relevant for successful combination with anti-androgen therapies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>NOG</td>\n      <td>PMID: 15879151</td>\n      <td>NOD.Cg-Prkdcscid Il2rgtm1Sug/JicTac</td>\n      <td>Taconic\u00a0(Hudson,\u00a0NY)</td>\n    </tr>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>Nkx3.1CreERT2</td>\n      <td>PMID: 19741607</td>\n      <td>Nkx3-1tm4(CreERT2)Mms</td>\n      <td>established by Shen lab</td>\n    </tr>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>Ptenflox</td>\n      <td>PMID: 11691952</td>\n      <td>C;129S4-Ptentm1Hwu/J</td>\n      <td>JAX #004597\u00a0(Bar\u00a0Harbor,\u00a0ME)</td>\n    </tr>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>KrasLSL-G12D</td>\n      <td>PMID: 11751630</td>\n      <td>B6.129-Krastm4Tyj/Nci</td>\n      <td>MMHCC #01XJ6</td>\n    </tr>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>ARflox</td>\n      <td>PMID: 14745012</td>\n      <td>B6N.129-Artm1Verh/Cnrm</td>\n      <td>EMMA #02579</td>\n    </tr>\n    <tr>\n      <td>Strain (M. musculus)</td>\n      <td>R26R-YFP</td>\n      <td>PMID: 11299042</td>\n      <td>B6.129 \u00d7 1-Gt(ROSA) 26Sortm1(EYFP)Cos/J</td>\n      <td>JAX #006148</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HPE-1</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 23 tissue, sorted for EpCAM+Ecad+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-2</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 23 tissue, sorted for EpCAM+Ecad+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-3</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 24 tissue, sorted for EpCAM+Ecad+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-4</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 25 tissue</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-5</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-6</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+Ngfr+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-7</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-8</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 26 tissue</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-9</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-10</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-11</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+Agr2+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-12</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 27 tissue</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-13</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 27 tissue; sorted for EpCAM+Ecad+cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HPE-14</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from radical prostatectomy 27 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>ADCA-1</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with deletedAr (recombined) allele</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>ADCA-2</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with deletedAr (recombined) allele</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>APCA-1</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with intact Ar (non-recombined) allele</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>APCA-2</td>\n      <td>this work</td>\n      <td></td>\n      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with intact Ar (non-recombined) allele</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Androgen receptor (AR)</td>\n      <td>Sigma\u00a0(St.\u00a0Louis,\u00a0MO)</td>\n      <td>A9853</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cytokeratin 8 (CK8)</td>\n      <td>Developmental Studies\u00a0Hybridoma Bank (Iowa City, IA)</td>\n      <td>TROMA-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cytokeratin 18 (CK18)</td>\n      <td>Abcam (Cambridge,\u00a0MA)</td>\n      <td>ab668</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cytokeratin 5 (CK5)</td>\n      <td>Covance (San\u00a0Diego,\u00a0CA)</td>\n      <td>SIG3475</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cytokeratin 5 (CK5)</td>\n      <td>Covance</td>\n      <td>PRB-160P</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>p63</td>\n      <td>Santa Cruz (Dallas,\u00a0TX)</td>\n      <td>sc-8431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP</td>\n      <td>Abcam</td>\n      <td>ab13970</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP</td>\n      <td>Roche (St.\u00a0Louis,\u00a0MO)</td>\n      <td>11814460001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>BrdU</td>\n      <td>AbD Serotec MCA (Hercules,\u00a0CA)</td>\n      <td>2060</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Foxa1</td>\n      <td>Abcam</td>\n      <td>ab55178</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Ki67</td>\n      <td>eBiosciences (San\u00a0Diego,\u00a0CA)</td>\n      <td>14\u20135698, clone SolA15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cleaved-caspase-3 (CC3)</td>\n      <td>BD Pharmingen (San\u00a0Jose,\u00a0CA)</td>\n      <td>559565</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Prostate specific antigen (PSA)</td>\n      <td>Dako (Santa\u00a0Clara,\u00a0CA)</td>\n      <td>M0750, clone ER-PR8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Kras</td>\n      <td>Abcam</td>\n      <td>ab84573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Synaptophysin (Syn)</td>\n      <td>BD Transduction Laboratories (San\u00a0Jose,\u00a0CA)</td>\n      <td>611880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Aurora A (Aurka)</td>\n      <td>Abcam</td>\n      <td>ab13824</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chromogranin A (ChrA)</td>\n      <td>Abcam</td>\n      <td>ab15160</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Foxa2</td>\n      <td>Abnova\u00a0(Taiwan)</td>\n      <td>H00003170-M12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>AMACR</td>\n      <td>Zeta Corp (Arcadia,\u00a0CA)</td>\n      <td>Z2001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>EpCAM</td>\n      <td>BioLegend</td>\n      <td>118214</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>E-cadherin</td>\n      <td>eBiosciences</td>\n      <td>46-3249-82</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Nerve growth factor receptor (Ngfr)</td>\n      <td>BioLegend</td>\n      <td>345108</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cd24</td>\n      <td>BioLegend</td>\n      <td>311008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anterior gradient 2 (Agr2)</td>\n      <td>Abcam</td>\n      <td>ab1139894</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>EpCAM</td>\n      <td>BioLegend</td>\n      <td>324208</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nkx3.1 wild-type primers</td>\n      <td>PMID: 19741607</td>\n      <td>DOI 10.1038/nature08361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nkx3.1CreERT2 primers</td>\n      <td>PMID: 19741607</td>\n      <td>DOI 10.1038/nature08361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CreERT2 primers</td>\n      <td>PMID: 19741607</td>\n      <td>DOI 10.1038/nature08361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R262R-YFP primers</td>\n      <td>PMID: 11299042</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ptenflox primers</td>\n      <td>PMID: 11691952</td>\n      <td>DOI: 10.1126/science.1065518</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pten wild-type primers</td>\n      <td>PMID: 11691952</td>\n      <td>DOI: 10.1126/science.1065518</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>KrasLSL-G12D primers</td>\n      <td>PMID: 11751630</td>\n      <td>DOI:10.1101/gad.943001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Kras wild-type primers</td>\n      <td>PMID: 11751630</td>\n      <td>DOI:10.1101/gad.943001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Arflox primers</td>\n      <td>PMID: 14676301</td>\n      <td>DOI: 10.1084/jem.20031233</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ar wild-type primers</td>\n      <td>PMID: 14676301</td>\n      <td>DOI: 10.1084/jem.20031233</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Arflox (recombined) primers</td>\n      <td>PMID: 14676301</td>\n      <td>DOI: 10.1084/jem.20031233</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Arflox (not recombined) primers</td>\n      <td>PMID: 14676301</td>\n      <td>DOI: 10.1084/jem.20031233</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Tyramide amplification</td>\n      <td>ThermoFisher Scientific (Waltham,\u00a0MA)</td>\n      <td>T20922</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Ccommercial assay or kit</td>\n      <td>Tyramide amplification</td>\n      <td>ThermoFisher Scientific</td>\n      <td>T30953</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Tyramide amplification</td>\n      <td>ThermoFisher Scientific</td>\n      <td>T30954</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Tyramide amplification</td>\n      <td>ThermoFisher Scientific</td>\n      <td>T20926</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Tyramide amplification</td>\n      <td>ThermoFisher Scientific</td>\n      <td>T20912</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ABC Elite</td>\n      <td>Vector Labs (Burlingame,\u00a0CA)</td>\n      <td>pk6101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Citrate-based antigen unmasking solution</td>\n      <td>Vector Labs</td>\n      <td>H3300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Tris-based antigen unmasking solution</td>\n      <td>Vector Labs</td>\n      <td>H3301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NovaRED</td>\n      <td>Vector Labs</td>\n      <td>SK3800</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellTiter-Glo 3D</td>\n      <td>Promega (Madison,\u00a0Wi)</td>\n      <td>G9681</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MagMAX\u221296forMicroarrays Total RNA Isolation Kit</td>\n      <td>Ambion (Waltham,\u00a0MA)</td>\n      <td>Am1839</td>\n      <td>Used the \u2018no spin\u2019 protocol for RNA purification</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq Stranded mRNA library prep kit</td>\n      <td>Illumina (San\u00a0Diego,\u00a0CA)</td>\n      <td>20020595</td>\n      <td>Library preparation was performed by the Columbia Genome Center using Illumina kits</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tissue Tek OCT compound</td>\n      <td>VWR Scientific (Radnor,\u00a0PA)</td>\n      <td>25608\u2013930</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glutamax</td>\n      <td>Invitrogen (Waltham,\u00a0MA)</td>\n      <td>35050061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen; TM</td>\n      <td>Sigma</td>\n      <td>T5648-5G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Gentamicin</td>\n      <td>Invitrogen</td>\n      <td>15750\u2013060</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Collagenase/hyaluronidase</td>\n      <td>STEMCELL Technologies (Cambridge,\u00a0MA)</td>\n      <td>07912</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Modified Hank's Balanced Salt Solution; HBSS</td>\n      <td>STEMCELL Technologies</td>\n      <td>37150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dnase I</td>\n      <td>STEMCELL Technologies</td>\n      <td>07900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Y-27632 ROCK inhibitor</td>\n      <td>STEMCELL Technologies</td>\n      <td>72307</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>10x Earle's Balanced Salt Solution</td>\n      <td>ThermoFisher Scientific</td>\n      <td>14155063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hepatocyte medium supplemented withepidermal\u00a0growth factor (EGF)</td>\n      <td>Corning (Corning,\u00a0NY)</td>\n      <td>355056</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Matrigel</td>\n      <td>ThermoFisher Scientific</td>\n      <td>354234</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>0.25% trypsin-EDTA</td>\n      <td>STEMCELL Technologies</td>\n      <td>07901</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FBS</td>\n      <td>ThermoFisher Scientific</td>\n      <td>12676029</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM/F12</td>\n      <td>ThermoFisher Scientific</td>\n      <td>11320033</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BrdU</td>\n      <td>Sigma</td>\n      <td>B5002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dispase</td>\n      <td>STEMCELL Technologies</td>\n      <td>07913</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dihydrotestosterone; DHT</td>\n      <td>Sigma</td>\n      <td>A8380</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Real time analysis; RTA</td>\n      <td>Illumina</td>\n      <td>https://support.illumina.com/sequencing/sequencing_software/real-time_analysis_rta.html</td>\n      <td>Base calling using this software was performed by the Columbia Genome Center</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>bcl2fastq2</td>\n      <td>Illumina</td>\n      <td>Ilumina: version 2.17</td>\n      <td>The sequencing data was trimmed and converted to fastq format by the Columbia Genome Center</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spliced Transcripts Alignment to a Reference (STAR)</td>\n      <td>PMID: 23104886</td>\n      <td>Github: version 2.5.2b</td>\n      <td>Sequencing reads mapping to mouse genome (USCS/mm10) was performed by the Columbia Genome Center</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FeatureCounts</td>\n      <td>PMID: 24227677</td>\n      <td>subread.sourceforge.net version: v1.5.0-p3</td>\n      <td>Sequencing reads mapping to mouse genome (USCS/mm10) was performed by the Columbia Genome Center</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R-studio 0.99.902, R v3.3.0</td>\n      <td>The R Foundation for Statistical Computing, ISBN 3-900051-07-0</td>\n      <td>v3.3.0</td>\n      <td>R language for statistical computing was used for data analysis and visualization</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>homoloGene</td>\n      <td>NCBI</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gene Set Enrichment Analysis</td>\n      <td>PMID: 16199517</td>\n      <td>DOI 10.1073/pnas.0506580102</td>\n      <td>GSEA was used to compares differential gene expression signatures</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Statistical Package for the Social Sciences; SPSS, Kolmogorov-Smirnov test, Arcsine transformation, Welch t-test, Fisher's Exact Test</td>\n      <td>IBM SPSS Statistics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Histological grading of mouse prostate phenotypes</td>\n      <td>PMID: 12163397</td>\n      <td>DOI 10.1016/S0002-9440 (10)64228-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Mini-osmotic pump</td>\n      <td>Alzet\u00a0(Cupertino,\u00a0CA)</td>\n      <td>0000298</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>40 \u00b5m cell strainer</td>\n      <td>Falcon\u00a0(Corning,\u00a0NY)</td>\n      <td>Fisher Scientific 352340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>96-well Primaria plate</td>\n      <td>Corning</td>\n      <td>Fisher Scientific 353872</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>6-well Primaria plate</td>\n      <td>Corning</td>\n      <td>Fisher Scientific 353846</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>96-well CELLSTAR plate</td>\n      <td>Greiner\u00a0Bio-One (Monroe,\u00a0NC)</td>\n      <td>655090</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lab-Tek Chamber Slide</td>\n      <td>Thermo\u00a0Fisher Scientific</td>\n      <td>154534</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse strains and genotyping\n\nThe Nkx3.1CreERT2 driver (Nkx3-1tm4(cre/ERT2)Mms) has been previously described (Wang et al., 2009). Mice carrying the R26R-YFP (B6.129 \u00d7 1-Gt(ROSA)26Sortm1(EYFP)Cos/J) reporter (Srinivas et al., 2001) were obtained from the Jackson Laboratory Induced Mutant Resource. Mice carrying the conditional Ptenflox (B6.129S4-Ptentm1Hwu/J) allele (Lesche et al., 2002) and the inducible Kraslsl-G12D (B6.129-Krastm4Tyj/Nci) allele (Jackson et al., 2001) were obtained from the National Cancer Institute Mouse Models of Human Cancer Consortium Repository. Mice with the conditional Arflox (B6N.129-Artm1Verh/Cnrm) allele (De Gendt et al., 2004) was obtained from the European Mouse Mutant Archive. Animals were maintained on a congenic C57BL/6N background. Genotyping was performed using the primers listed in Supplementary file 1A. Primer sequences used for genotyping of Ar alleles were previously described (Yeh et al., 2003).\n\n### Mouse procedures\n\nFor lineage-marking and simultaneous deletion of AR in CARNs, Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ males were castrated at 8 weeks of age and allowed to regress for 4 weeks, followed by administration of tamoxifen (Sigma; 9 mg/40 g body weight in corn oil) by daily oral gavage for four consecutive days, and a chase period of 4 weeks. Administration of testosterone for prostate regeneration (Sigma; 25 mg/ml in 100% ethanol and diluted in PEG-400 to a final concentration of 7.5 mg/ml) was performed by subcutaneous implantation of mini-osmotic pumps (Alzet) that release testosterone solution at a rate of 1.875 \u03bcg/hr, which yields physiological levels of serum testosterone (Banach-Petrosky et al., 2007). For BrdU incorporation experiments, BrdU (Sigma; 100 mg/kg) was administered by intraperitoneal injection twice daily for 4 consecutive days, either from days 1 through 4 or from days 11 through 14 during androgen-mediated regeneration.\n\nFor cell of origin experiments, Nkx3.1CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+ and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ mice as well as corresponding controls were castrated at 8 to 12 weeks of age. One month later, mice were administered tamoxifen, with a chase period of 3 months, followed by androgen-mediated regeneration for 1 month; mice were then euthanized for analysis. All animal experiments were performed according to protocols approved by the Institutional Animal Care and Use Committee at Columbia University Medical Center.\n\n### Benign human prostate specimens\n\nRadical prostatectomy samples were obtained from consented patients under the auspices of an Institutional Review Board approved protocol at Columbia University Medical Center. Tissue from benign prostate regions was dissected and transported to the laboratory in DMEM/F12 (Gibco) supplemented with 5% FBS. Benign pathology was first determined by H and E-staining of snap-frozen sections, and subsequently confirmed by immunostaining of paraffin sections for p63 and AMACR.\n\n### Tissue acquisition, dissociation and isolation of prostate epithelial cells\n\nTissue dissociation and isolation were performed as previously described (Chua et al., 2014). In brief, mouse prostate tissue from all lobes was dissected in cold phosphate buffered saline (PBS) and minced with scissors. For human prostate specimens, tissue was cut into small pieces with scalpels, washed with PBS with 4 mg/ml Gentamicin (Gibco), and then minced with scissors. Both mouse and human prostate tissues were then incubated in DMEM/F12 (Gibco) supplemented with 5% FBS and 1:10 dilution of collagenase/hyaluronidase (STEMCELL Technologies) at 37\u00b0C for 3 hr. Dissociated tissues were spun at 350 g for 5 min, and resuspended in ice-cold 0.25% trypsin-EDTA (STEMCELL Technologies), followed by incubation at 4\u00b0C for 1 hr. Trypsinization was stopped by addition of Modified Hank\u2019s Balanced Salt Solution (HBSS) (STEMCELL Technologies) supplemented with 2% FBS. After centrifugation at 350 g, pelleted cells were resuspended with pre-warmed 5 mg/ml dispase (STEMCELL Technologies) supplemented with 1:10 dilution of 1 mg/ml DNase I (STEMCELL Technologies), triturated vigorously for 1 to 2 min, and diluted by addition of HBSS/2% FBS. Finally, the cell suspension was passed through a 40 \u03bcm cell strainer (Falcon).\n\n### Flow cytometry\n\nFor flow sorting of mouse prostate epithelial cells, cell suspensions were stained on ice for 25 min with fluorescent-tagged EpCAM (BioLegend #118214) antibody. For isolation of human prostate epithelial cells, we used fluorescent-tagged EpCAM (BioLegend #324208, specific for human) and E-cadherin (eBioscience #46-3249-82) antibodies. The stained cells were spun, and cell pellets washed with HBSS/2% FBS, followed by resuspension in HBSS/2% FBS with 10 \u00b5M Y-27632 (ROCK inhibitor; STEMCELL Technologies) and a 1:1000 dilution of 0.5 mg/ml DAPI to exclude dead cells. Both side-scatter pulse width (SSC-W) vs. area (SSC-A) and forward side-scatter pulse area (FSC-A) vs. heights (FSC-H) were used to isolate single dissociated cells.\n\n### Adherent culture for mouse and human prostate epithelial cells\n\nTo establish cell lines from lineage-marked CARNs as well as benign prostate epithelial cells, we performed adherent culture in our prostate organoid medium (Chua et al., 2014), consisting of hepatocyte medium supplemented with 10 ng/ml epidermal growth factor (EGF) (Corning), 10 \u03bcM Y-27632 (STEMCELL Technologies), 1x glutamax (Gibco), 5% Matrigel (Corning), 5% charcoal-stripped FBS (Gibco) heat-inactivated at 55\u00b0C for 1 hr, and supplemented with either 100 nM or 1 nM DHT (Sigma) for mouse and human cells, respectively. To derive APCA and ADCA lines, single YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice were flow-sorted directly into 96-well Primaria plates (Corning), and were monitored daily to assess colony formation. Successful colonies were expanded and genotyped to assess the status of the Arflox allele. For derivation of lines from benign human prostate epithelium, cells expressing either EpCAM and/or E-cadherin were plated into six-well Primaria plates at a density of 100,000 cells/well.\n\nPassaging of adherent cultures was performed by removal of accumulated Matrigel on surface of the cells by gentle washing. The cells were washed with cold PBS, treated with 0.25% trypsin for 5 min at 37\u00b0C, and mechanically dissociated. Medium was changed every 4 days. Adherent cells were frozen in media consisting of 80% FBS, 10% complete medium, and 10% DMSO. Each APCA and ADCA line has been propagated continuously for at least eight passages.\n\n### Cell culture assays\n\nTo assess cell viability, APCA and ADCA lines were plated in 96-well Primaria plates at a density of 1000 cells/well in the presence or absence of DHT. Cell viability was assayed at days 1, 2, 4 and 6 after plating using CellTiter-Glo 3D (Promega), with five technical replicates for each time point. In brief, CellTiter-Glo 3D reagent was thawed at 4\u00b0C and brought to room temperature prior to use. 100 \u03bcl of the reagent was added into each well containing 100 \u03bcl of medium. After shaking for 5\u201310 min, the mixture was then transferred to a 96-well CELLSTAR plate (Greiner), followed by incubation at room temperature for 10 min prior to measurement using a luminometer plate reader.\n\nTo assess colony formation, APCA and ADCA lines were plated in six-well Primaria plates at a density of 500 cells/well and grown for 9 days. three technical replicates were performed for each line in the presence or absence of DHT. At day 10 after plating, wells were washed with PBS and fixed with 100% methanol for 5 min. The wells were then washed with PBS for three times before staining with filtered 0.1% crystal violet solution. After drying the plates, colonies were counted, with a colony defined as a cell cluster containing at least 50 cells.\n\n### Tissue recombination and renal grafting\n\nFor tissue recombination, 10 YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice or control Nkx3.1CreERT2/+; R26R-YFP/+ mice were combined with 250,000 dissociated rat urogenital mesenchyme cells from embryonic day 18.5 embryos, and resuspended in 15 \u03bcl of 9:1 collagen:setting buffer solution (10x Earle\u2019s Balanced Salt Solution (Life Technologies), 0.2 M NaHCO3, and 50 mM NaOH). The recombinants were cultured overnight in DMEM with 10% FBS and 100 nM DHT, followed by grafting under the kidney capsules of male NOD.Cg-Prkdcscid Il2rgtm1Sug/JicTac (NOG) mice (Taconic). Renal grafts were harvested for analysis at 7\u201312 weeks after grafting. For the experiment involving APCA and ADCA lines, 100,000 cells were recombined with 250,000 rat urogenital mesenchyme cells, followed by grafting. At 6 weeks after grafting, some mice implanted with APCA cells were treated with tamoxifen to induce Ar deletion.\n\nGrafts were harvested for analysis after 12 weeks of growth and analyzed in paraffin sections for the presence of ducts expressing YFP. (Note that ducts can also be formed by YFP\u2013cells that are derived from contaminating rat urogenital epithelium due to incomplete separation from the urogenital mesenchyme.) Graft efficiency was calculated on the basis of the presence of YFP+ ducts in the grafts using control CARNs and on the presence of YFP+AR\u2013 ducts in the grafts using AR-deleted CARNs.\n\n### Histology and immunostaining\n\nFor cryosections, tissues were fixed in 4% paraformaldehyde in PBS at 4\u00b0C overnight, placed in 30% sucrose in PBS overnight, and transferred to 1:1 30% sucrose in PBS and OCT (Tissue-Tek) solution for at least 4 hr prior to embedding in OCT. For paraffin sections, tissues were fixed in 10% formalin for 1 to 2 days, depending on size of tissue, prior to processing and embedding. Hematoxylin-eosin staining was performed using standard protocols. For immunostaining, sections underwent antigen-retrieval by heating in citrate acid-based or tris-based antigen unmasking solution (Vector Labs) for 45 min. Primary antibodies were applied to sections and incubated at 4\u00b0C overnight in a humidified chamber. Alexa Fluors (Life Technologies) were used as secondary antibodies. In some cases, tyramide amplification (Life Technologies) or ABC Elite (Vector Labs) kits together with HRP-conjugated or biotinylated secondary antibodies and NovaRed kit were used for signal detection. For immunofluorescent staining of cells, 5000 adherent cells/well were seeded on a eight-well Lab-Tek Chamber Slide (Nunc), grown for 4\u20138 days, and fixed with 4% paraformaldehyde for 10 min. After washing the slides with 3 changes of PBS, immunostaining was performed as above without antigen retrieval. Details of antibodies used are provided in Supplementary file 1B.\n\nHistological grading of mouse prostate phenotypes was performed according to (Park et al., 2002). For lineage-tracing experiments, quantitation of marker staining was performed by manual counting of cells from confocal images taken with a 40x objective.\n\n### RNA sequencing and bioinformatic analysis\n\nFor RNA preparation, APCA and ADCA cell lines at passage 5 or 6 were grown to approximately 70\u201380% confluency in Primaria 6-well plates in the presence of DHT, and lysed in Trizol. Total RNA extraction was performed using the \u2018No Spin\u2019 method of the MagMAX-96 for Microarrays kit (Ambion). Library preparation and RNA sequencing was performed by the Columbia Genome Center using their standard pipeline. In brief, mRNA was enriched by poly-A pull-down, and library preparation was performed using an Illumina TruSeq RNA prep kit. Libraries were pooled and sequenced using an Illumina HiSeq2500 instrument, yielding approximately 30 million single-ended 100 bp reads per sample. RTA (Illumina) was used for base calling and bcl2fastq2 (version 2.17) for conversion of BCL to fastq format, coupled with adaptor trimming. Reads were mapped to the mouse genome (UCSC/mm10) using STAR (2.5.2b) and FeatureCounts (v1.5.0-p3).\n\nRNA-seq data raw counts were normalized and the variance was stabilized using DESeq2 package (Bioconductor) in R-studio 0.99.902, R v3.3.0 (The R Foundation for Statistical Computing, ISBN 3-900051-07-0). Differential gene expression signatures were defined as a list of genes ranked by their differential expression between any two phenotypes of interest (e.g. APCA versus ADCA lines; CRPC-NE versus CRPC, etc.), estimated using a two-sample two-tailed Welch t-test (for n\u00a0\u2265\u00a03) or fold-change (for n\u00a0<\u00a03). For comparison of a mouse gene signature with a human gene signature, mouse genes were mapped to their corresponding human orthologs based on the homoloGene database (NCBI). Signatures were compared using Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005), with the significance of enrichment estimated using 1000 gene permutations. Pathway enrichment analysis was performed using the C2 database, which includes pathways from REACTOME (Fabregat et al., 2016), KEGG (Ogata et al., 1999), and BioCarta (http://www.biocarta.com/genes/allpathways.asp). Expression data are deposited in the Gene Expression Omnibus database under GSE99233.\n\n### Statistical analyses\n\nStatistical analysis was performed using the Statistical Package for the Social Sciences (SPSS). Data distribution was assessed by the Kolmogorov-Smirnov test. Arcsine transformation was performed on data with non-normal distribution. Two-sample two-tail Welch t-test or Fisher\u2019s Exact Test was performed for comparison between two independent groups as appropriate. No statistical methods were used to pre-determine sample size, and experiments were not randomized; investigators were not blinded to allocation during experiments and outcome assessment.\n",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "84eef670-16b1-4f6e-bb85-929bd13a94df",
+      "submission_id": "25f2d7e1-90a0-4c19-b3be-5000b28b8428",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sean J Morrison, Howard Hughes Medical Institute, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28768.030](https://doi.org/10.7554/eLife.28768.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Differential requirements of androgen receptor in luminal progenitors during prostate regeneration and tumor initiation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Sean Morrison as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAndrogen receptor is a major regulator essential for prostate development and prostate cancer progression, but its specific roles in prostate stem/progenitor cells are not fully clarified. By using a previous established CARNs mouse model, the current study investigated AR functions in luminal prostate progenitor cells. Although deletion of AR did not affect the progenitor properties of CARNs, loss of AR suppressed tumor formation from PTEN-deleted CARNs. Paradoxically, however, loss of AR promoted tumor aggressiveness in a PTEN-/-Kras+/+ model. Overall, the studies are very well designed and the data are solid. Together, the findings imply that AR may modulate luminal progenitor cells properties including their ability to serve as a cell of origin of prostate cancer.\n\n1) One major limitation in the study of CARN's is that they can only be defined in the castrated mouse. One cannot label the luminal cell that will survive castration and become the CARN without castration. Thus, all labeling as well as activation of tumorigenic events is done in the castrated state. This is caveat should be explicitly noted in the paper.\n\n2) Comparing this work with other recent work, one important question is whether and how CARN's are different from bulk luminal cells. AR deletion in bulk luminal cells, whether using Pb-Cre4 or Nkx3-1-CreERT2 in the non-castrated state does not decrease the ability to regress and regenerate or decrease Pten-loss mediated tumorigenesis (Xie, 2017). However, AR deletion in CARN's seems to be a detriment to regeneration and to Pten-loss mediated tumorigenesis. As noted above though, is the difference due to a different luminal cell (CARN vs. bulk) or Pten deletion in the castrated vs. intact state? This question could be answered using a luminal CreERT2 (CK8 or CK18) in castrated or intact mice during tamoxifen injection to delete Pten. If the authors have these mice it would be very helpful to address this. If not, they should discuss this issue.\n\n3) What is the relative efficiency between AR+ and AR- CARN's in establishing 2D cultures? The authors used AR-floxed mice and compared clones that per chance were AR-deleted vs. intact.\n\n4) The data demonstrating that AR depletion in PTEN/KRAS results in aggressive NE tumors is not convincing. The data describing \"the important difference between the NPK-CARN and NPKA-CARN tumors\" is weak and based on \"NPKA-CARN tumors contained a low percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n=3), which was not observed in the NPK-CARN controls (0%, n=3) (Figure 6E, F). Since these neuroendocrine cells express YFP (Figure 6E), we conclude that transformed AR-negative CARNs can give rise to neuroendocrine cells\".\n\nThe authors need to do more than this to show focal NE lesions. At least 3 NE markers should be used and the incidence presented more frankly. Being as low as 0.7%, these cells were difficult to detect\u2026did all 3 mice have focal NE lesions? The error bars in Figure 6 are large and suggest that maybe not all mice showed detectable lesions. This is important to know. If this is to be heralded as a new model, a more thorough presentation of the pathology is required/essential. There is no data in the paper that show these tumors were more aggressive and the authors should tone down the claim \"that AR down-regulation primes CARNs to serve as a cell of origin for aggressive CRPC with focal neuroendocrine differentiation\". The differentiation of NE cells in prostate tumors is a very hot topic and very confusing right now. It would not be helpful to add to the confusion.\n\n5) The Introduction focuses entirely on murine prostate stem and progenitor cells with no discussion of the similarities and, importantly, the differences relative to human prostate stem and progenitors. This is problematic in that the authors switch over to the relevance of the issues raised in the present experiments to human prostate cancer, CRPC, and lineage switching to the neuroendocrine phenotype. While unipotent progenitors have been shown in the murine models for basal and luminal progenitors, lineage tracing in human prostate identifies a common precursor for basal, luminal and neuroendocrine cells (e.g. Blackwood, 2011, Gaisa, 2011). In contrast, there is some, but rather limited evidence for CARNs in human prostate. As such, the authors need to expand on these aspects in the present paper and discuss the possibility that the results in the paper may not be directly translated to the human system.\n",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "831ce0f9-780b-4fff-aba9-8bc66334fe74",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C1",
+      "claim": "Androgen receptor (AR) is a master regulator essential for prostate development and tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the prostate, androgen receptor (AR) is a master regulator essential for development and tumorigenesis, but its specific functions in prostate stem/progenitor cells have not been elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background knowledge about AR's role in prostate biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "d17a536a-1694-4880-9b5e-3c745a2439af",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C2",
+      "claim": "CARNs (CAstration-Resistant Nkx3.1-expressing cells) are a luminal stem/progenitor cell that functions in prostate regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We have investigated AR function in CARNs (CAstration-Resistant Nkx3.1-expressing cells), a luminal stem/progenitor cell that functions in prostate regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information about CARNs, supported by prior work from the authors' laboratory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3fc2b7a6-160e-44c0-8135-97ed0c4e5914",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C3",
+      "claim": "Progenitor properties of CARNs are largely unaffected by AR deletion, apart from decreased proliferation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetically--engineered mouse models and novel prostate epithelial cell lines, we find that progenitor properties of CARNs are largely unaffected by AR deletion, apart from decreased proliferation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on experiments with genetically-engineered mice and cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "1ce06028-fe29-43b7-9a0c-615a7a2d9112",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C4",
+      "claim": "AR loss suppresses tumor formation after deletion of the Pten tumor suppressor in CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AR loss suppresses tumor formation after deletion of the Pten tumor suppressor in CARNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on experiments with genetically-engineered mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "4584343c-477a-4d08-8a9a-cdfad540fe65",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C5",
+      "claim": "Combined Pten deletion and activation of oncogenic Kras in AR-deleted CARNs result in tumors with focal neuroendocrine differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "however, combined Pten deletion and activation of oncogenic Kras in AR-deleted CARNs result in tumors with focal neuroendocrine differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on experiments with genetically-engineered mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "ed348bde-668b-47e0-bb73-1221c14fbc97",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C6",
+      "claim": "AR modulates specific progenitor properties of CARNs, including their ability to serve as a cell of origin for prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that AR modulates specific progenitor properties of CARNs, including their ability to serve as a cell of origin for prostate cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3cf3135d-0370-46ca-adfc-467c9bc4bbf2",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C7",
+      "claim": "Both luminal and basal cells are mostly lineage-restricted (unipotent) in the normal adult mouse prostate.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage-tracing studies have shown that both luminal and basal cells are mostly lineage-restricted (unipotent) in the normal adult mouse prostate as well as during androgen-mediated prostate regeneration (Choi et al., 2012; Liu et al., 2011; Lu et al., 2013; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "74d2193a-ac74-4b79-b08c-fbbe5ed827ab",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C8",
+      "claim": "Cells within the basal compartment possess stem/progenitor properties in a range of ex vivo assays as well as during inflammation and wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cells within the basal compartment possess stem/progenitor properties in a range of ex vivo assays as well as during inflammation and wound repair (Goldstein et al., 2008; H\u00f6fner et al., 2015; Kwon et al., 2014; Lawson et al., 2007; Toivanen et al., 2016; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "eecdcde7-5ae4-410f-80a0-3c3477229725",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C9",
+      "claim": "Luminal cells can display stem/progenitor properties in specific in vivo and ex vivo contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies have shown that luminal cells can also display stem/progenitor properties in specific in vivo and ex vivo contexts (Chua et al., 2014; Karthaus et al., 2014; Kwon et al., 2016; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "84929c93-b7c1-4a66-a20b-288a6cf8710c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C10",
+      "claim": "There is considerable evidence supporting a luminal origin for prostate cancer in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is now considerable evidence supporting a luminal origin for prostate cancer, both in mouse models (Wang et al., 2009; Wang et al., 2014) as well as in human tissues (Gurel et al., 2008; Meeker et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "302c5547-7bc8-479c-b1bc-146ee63ef7d4",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C11",
+      "claim": "There is considerable evidence supporting a luminal origin for prostate cancer in human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is now considerable evidence supporting a luminal origin for prostate cancer, both in mouse models (Wang et al., 2009; Wang et al., 2014) as well as in human tissues (Gurel et al., 2008; Meeker et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "2c4cc30f-7220-4360-8338-570e0d5d582b",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C12",
+      "claim": "AR is primarily expressed by luminal cells in the prostate epithelium of adult hormonally intact mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the prostate epithelium of adult hormonally intact mice, AR is primarily expressed by luminal cells, but is also found in a subset of basal cells (Lee et al., 2012; Mirosevich et al., 1999; Xie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "321d5782-4280-434e-a333-ef1739c7c786",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C13",
+      "claim": "AR is found in a subset of basal cells in the prostate epithelium of adult hormonally intact mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the prostate epithelium of adult hormonally intact mice, AR is primarily expressed by luminal cells, but is also found in a subset of basal cells (Lee et al., 2012; Mirosevich et al., 1999; Xie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a893a7ed-d48e-4eba-82fc-d2b37451a1c4",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C14",
+      "claim": "Conditional deletion of AR in the adult prostate epithelium results in a short-term increase in proliferation of luminal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that conditional deletion of AR in the adult prostate epithelium results in a short-term increase in proliferation of luminal cells (Wu et al., 2007; Xie et al., 2017; Zhang et al., 2016a), indicating a role for AR in normal prostate homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "b4d0e85b-76cc-442f-9f7e-ec55fca77078",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C15",
+      "claim": "AR can act as a master regulator of prostate epithelial specification in a fibroblast reprogramming assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, AR can act as a master regulator of prostate epithelial specification in a fibroblast reprogramming assay (Talos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "ded678f0-66ac-45cc-ba70-3fbaca8208b1",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C16",
+      "claim": "Treatment failure following anti-androgen therapies is frequently associated with the appearance of AR-negative tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment failure following such anti-androgen therapies is frequently associated with the appearance of AR-negative tumor cells, which are typically associated with highly aggressive lethal disease (Beltran et al., 2014; Vlachostergios et al., 2017; Watson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "59e54938-2aa3-410c-9b1b-1daf463618e6",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C17",
+      "claim": "AR-negative CRPC can contain large regions displaying a neuroendocrine phenotype (CRPC-NE).",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, this AR-negative CRPC contain large regions displaying a neuroendocrine phenotype (CRPC-NE) (Beltran et al., 2016, 2014; Ku et al., 2017; Mu et al., 2017; Zou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "1bcc9ef2-6ccd-4a83-861a-87dfbd265351",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C18",
+      "claim": "CARNs can generate both luminal and basal progeny in vivo following androgen administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Following androgen administration to induce prostate regeneration, CARNs can generate both luminal and basal progeny in vivo, as well as in renal grafting and organoid assays (Chua et al., 2014; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "495699d1-0b29-408a-ab35-a2e55850eafb",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C19",
+      "claim": "CARNs express AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CARNs express AR (Wang et al., 2009), it has been unclear whether AR is required for any or all the progenitor properties of CARNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3b95e2c8-92a4-48e8-9096-ce726cd91476",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C20",
+      "claim": "The percentage of lineage-marked YFP-positive cells (CARNs) was not significantly different between control and AR-deleted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the percentage of lineage-marked YFP-positive cells, corresponding to CARNs, was not significantly different (p=0.51) between the control (0.36 \u00b1 0.17%, n = 5 mice) and AR-deleted mice (0.31 \u00b1 0.06%, n = 5 mice) (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on FACS analysis of mouse prostate tissue, with statistical analysis showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "30f4882c-0e7e-4327-a2a4-93c3502da4b2",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C21",
+      "claim": "87.1% of YFP-positive cells in AR-deleted mice were AR-negative, indicating high efficiency of AR deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that 87.1% of the YFP-positive cells in Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice (n = 344/395 cells in four mice) were AR-negative, indicating that AR deletion occurred with high efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "820784f7-e67d-4890-aac2-27a7fa3a8f1e",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C22",
+      "claim": "YFP-positive cells in AR-deleted mice expressed luminal markers cytokeratins 8 and 18 (CK8 and CK18).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these YFP-positive cells expressed the luminal markers cytokeratins 8 and 18 (CK8 and CK18), but not cytokeratin 5 (CK5) and p63, indicating that AR deletion does not alter the luminal phenotype of CARNs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "48a2e750-95c3-4867-9558-15f1aa0829c4",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C23",
+      "claim": "YFP-positive cells in AR-deleted mice did not express basal markers cytokeratin 5 (CK5) and p63.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these YFP-positive cells expressed the luminal markers cytokeratins 8 and 18 (CK8 and CK18), but not cytokeratin 5 (CK5) and p63, indicating that AR deletion does not alter the luminal phenotype of CARNs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "1ec121a7-b3d5-435e-883f-19037d23aed9",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C24",
+      "claim": "AR deletion does not alter the luminal phenotype of CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these YFP-positive cells expressed the luminal markers cytokeratins 8 and 18 (CK8 and CK18), but not cytokeratin 5 (CK5) and p63, indicating that AR deletion does not alter the luminal phenotype of CARNs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the marker expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "69fc9c9d-f128-496d-8321-a6c4cfb9ff67",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C25",
+      "claim": "At 14 and 28 days after testosterone administration, control prostates contained many YFP-expressing cell clusters with more than 4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at 14 and 28 days, the control prostates contained many YFP-expressing cell clusters with more than 4 cells, whereas the prostates with AR-deleted CARNs mostly contained YFP-expressing single cells or doublets (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on analysis of YFP+ cell clusters during regeneration, shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "c394d0ff-3d1c-463c-8244-f9d6965b2447",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C26",
+      "claim": "At 14 and 28 days after testosterone administration, prostates with AR-deleted CARNs mostly contained YFP-expressing single cells or doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at 14 and 28 days, the control prostates contained many YFP-expressing cell clusters with more than 4 cells, whereas the prostates with AR-deleted CARNs mostly contained YFP-expressing single cells or doublets (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on analysis of YFP+ cell clusters during regeneration, shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "bbee0631-276c-40a1-b28f-29088e906b4a",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C27",
+      "claim": "When BrdU was administered from days 1 through 4 of regeneration, BrdU+YFP+ cells were detected in control prostates (50.9 \u00b1 11.8%, n = 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "When BrdU was administered from days 1 through 4 of regeneration, we could readily detect BrdU+YFP+ cells in the control prostates (50.9 \u00b1 11.8%, n = 3 mice) as well as AR-deleted prostates (62.9 \u00b1 14.9%, n = 3 mice) (Figure 3C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on BrdU incorporation experiments, shown in Figure 3C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "f043228b-a7e1-4dc7-8a2f-63804e873321",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C28",
+      "claim": "When BrdU was administered from days 1 through 4 of regeneration, BrdU+YFP+ cells were detected in AR-deleted prostates (62.9 \u00b1 14.9%, n = 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "When BrdU was administered from days 1 through 4 of regeneration, we could readily detect BrdU+YFP+ cells in the control prostates (50.9 \u00b1 11.8%, n = 3 mice) as well as AR-deleted prostates (62.9 \u00b1 14.9%, n = 3 mice) (Figure 3C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on BrdU incorporation experiments, shown in Figure 3C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "442fd222-a220-42ed-ada7-874d79b7fb5c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C29",
+      "claim": "When BrdU was administered from days 11 through 14, BrdU+YFP+ cells were detected in control prostates (11.1 \u00b1 6.2%, n = 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when BrdU was administered from days 11 through 14, we could only detect BrdU+YFP+ cells in the control prostates (11.1 \u00b1 6.2%, n = 3 mice), but not in the AR-deleted prostates (0%, n = 3 mice) (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on BrdU incorporation experiments, shown in Figure 3D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "7ea6cce8-db3d-4dba-862c-8fbfea15cfcc",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C30",
+      "claim": "When BrdU was administered from days 11 through 14, BrdU+YFP+ cells were not detected in AR-deleted prostates (0%, n = 3 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when BrdU was administered from days 11 through 14, we could only detect BrdU+YFP+ cells in the control prostates (11.1 \u00b1 6.2%, n = 3 mice), but not in the AR-deleted prostates (0%, n = 3 mice) (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on BrdU incorporation experiments, shown in Figure 3D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "ec0e91bf-5b88-481d-bec8-b639ff2397c5",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C31",
+      "claim": "AR-deleted CARNs and/or their progeny have a defect in proliferation during later stages of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference suggests that AR-deleted CARNs and/or their progeny have a defect in proliferation during later stages of regeneration, consistent with the analysis of YFP+ cluster size (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the BrdU incorporation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "1f226b74-c136-4b06-b3e3-11efe28eba1a",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C32",
+      "claim": "There was an increase in the percentage of basal cells within the YFP+ population in AR-deleted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, although YFP-expressing basal cells could be readily identified in both control and AR-deleted prostates, there was an increase in the percentage of basal cells within the YFP+ population in the AR-deleted mice (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a582a957-be26-4df3-9ec0-d6ef4bb77b3c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C33",
+      "claim": "Using the basal marker CK5, 2.1% of YFP+ cells in control mice were CK5+AR+YFP+ versus 19.2% CK5+AR\u2013YFP+ in AR-deleted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was evident using either the basal marker CK5 (2.1% CK5+AR+YFP+ versus 19.2% CK5+AR\u2013YFP+) or p63 (3.5% p63+AR+YFP+ versus 14.6% p63+AR\u2013YFP+) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cb7de9fc-5553-4c4d-b934-07addd0922fa",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C34",
+      "claim": "Using the basal marker p63, 3.5% of YFP+ cells in control mice were p63+AR+YFP+ versus 14.6% p63+AR\u2013YFP+ in AR-deleted mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was evident using either the basal marker CK5 (2.1% CK5+AR+YFP+ versus 19.2% CK5+AR\u2013YFP+) or p63 (3.5% p63+AR+YFP+ versus 14.6% p63+AR\u2013YFP+) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "802ac4ce-05bb-4669-b8e2-a942cb5b725e",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C35",
+      "claim": "AR-deleted CARNs favor generation of basal progeny and/or there is decreased proliferation or survival of luminal progeny during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that AR-deleted CARNs favor generation of basal progeny and/or that there is decreased proliferation or survival of luminal progeny during regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data on basal cell percentages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3f05456f-fb85-45d3-ae1d-675dbd898e25",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C36",
+      "claim": "Both control and AR-deleted CARNs could generate prostate ducts in renal grafting assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both control and AR-deleted CARNs could generate prostate ducts (Figure 3H), but that the AR-deleted CARN-s were significantly less efficient (12.5% graft efficiency, n = 16) compared to the control CARNs (p=0.003; 68.8% graft efficiency, n = 16), consistent with a proliferation defect in the AR-deleted CARNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on renal grafting experiments shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e1a19fbd-67ac-4dbf-8101-9cfa7c092fa0",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C37",
+      "claim": "AR-deleted CARNs were significantly less efficient at generating prostate ducts (12.5% graft efficiency, n = 16) compared to control CARNs (68.8% graft efficiency, n = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both control and AR-deleted CARNs could generate prostate ducts (Figure 3H), but that the AR-deleted CARN-s were significantly less efficient (12.5% graft efficiency, n = 16) compared to the control CARNs (p=0.003; 68.8% graft efficiency, n = 16), consistent with a proliferation defect in the AR-deleted CARNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on renal grafting experiments shown in Figure 3H, with statistical significance (p=0.003).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a4d90d73-30c1-4a6d-a90f-e3f0fa74261c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C38",
+      "claim": "APCA and ADCA cell lines were morphologically indistinguishable under culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we found that the APCA (n = 2) and ADCA (n = 2) lines were morphologically indistinguishable (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on microscopic observation of cell lines shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "d4dd8815-8c4f-458c-8c3a-14274968d965",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C39",
+      "claim": "APCA and ADCA cell lines were comprised of a mixture of cells expressing basal (CK5) or luminal (CK8) markers or both, as well as Foxa1.",
+      "claim_type": "EXPLICIT",
+      "source": "These cell lines were comprised of a mixture of cells expressing basal (CK5) or luminal (CK8) markers or both, as well as Foxa1, an epithelial marker that encodes a transcriptional partner of AR (Gao et al., 2003; He et al., 2010) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunostaining analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3ff3b46e-2f5c-4d01-9ef6-642551f841f2",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C40",
+      "claim": "Both APCA and ADCA lines showed robust proliferation at similar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both the APCA and ADCA lines showed robust proliferation at similar levels, as demonstrated by Ki67 immunostaining, CellTiter-Glo assays, and colony formation in the presence or absence of DHT (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on multiple proliferation assays shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cc590568-648f-4aff-811b-bbf3f3dbf833",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C41",
+      "claim": "The relative plating efficiency for AR\u2013 CARNs compared to AR+ CARNs is 7.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "After correcting for the 87.1% efficiency of recombination of the AR-floxed allele in vivo, these data indicate that the relative plating efficiency for the AR\u2013 CARNs compared to AR+ CARNs is 7.4%, consistent with the decreased grafting efficiency of AR\u2013 CARNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated result based on single-cell sorting experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "99d5d510-7898-439c-9692-0f2e01456c3a",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C42",
+      "claim": "APCA lines could generate prostate ducts in tissue recombination assays (100% efficiency, n = 10 grafts with two lines).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the APCA lines could generate prostate ducts (n = 10 grafts with two lines; 100% efficiency), some with evidence of secretions, whereas the ADCA lines (n = 6 grafts with one line; 67% efficiency) generated ducts that lacked prostate secretions (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on tissue recombination/renal grafting experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "63fe2161-2096-4bcb-b029-bc4c1cf87627",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C43",
+      "claim": "ADCA lines generated prostate ducts in tissue recombination assays (67% efficiency, n = 6 grafts with one line) that lacked prostate secretions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the APCA lines could generate prostate ducts (n = 10 grafts with two lines; 100% efficiency), some with evidence of secretions, whereas the ADCA lines (n = 6 grafts with one line; 67% efficiency) generated ducts that lacked prostate secretions (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on tissue recombination/renal grafting experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e6a96f25-13db-454d-bac8-03ad716d30b4",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C44",
+      "claim": "Tamoxifen treatment of APCA cell grafts resulted in decreased efficiency of graft formation (42% versus 100% efficiency).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tamoxifen treatment resulted in grafts containing prostate ducts composed of a mixture of AR-positive and negative cells, but with a decreased efficiency of graft formation relative to the same APCA lines in the absence of tamoxifen (42% versus 100% efficiency) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on tissue recombination/renal grafting experiments with tamoxifen-induced AR deletion shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "6ebb8f8e-1ed8-4577-89bb-85d83893aafe",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C45",
+      "claim": "AR deletion decreases the efficiency of prostate duct formation by CARN-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our previous finding that CARNs display increased organoid formation efficiency relative to other luminal cells (Chua et al., 2014), these findings support the identification of CARNs as a distinct luminal population with stem/progenitor properties, and highlight the complexity of AR functions in the epithelial and stromal compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the grafting experiments with APCA and ADCA cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "7d7586db-0270-4e5f-b3fb-c5cb0780b9c1",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C46",
+      "claim": "The difference in duct formation efficiency between ADCA and APCA cells is likely due to a non-cell-autonomous effect mediated by the urogenital mesenchyme in grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, since ADCA cells do not display a growth disadvantage relative to APCA cells in culture, this difference in duct formation is likely to be due to a non-cell-autonomous effect mediated by the urogenital mesenchyme in grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation that ADCA cells grow normally in culture but show reduced duct formation in grafts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e55744c6-1a88-4870-bec7-f52e22041df8",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C47",
+      "claim": "ADCA signature shows up-regulation of gene sets involved in DNA replication and repair pathways, as well as cell cycle and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the resulting ADCA signature to examine pathway enrichment by Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005), we found up-regulation of gene sets involved in DNA replication and repair pathways, as well as cell cycle and apoptosis (Figure 5A), suggesting that cellular proliferation and survival are affected by AR deletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on RNA-seq and GSEA analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "89167386-b33d-4f17-ac14-639d0f1287cb",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C48",
+      "claim": "The ADCA signature shows enrichment for up-regulated genes when compared with a signature of AR-null mouse prostate luminal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared the ADCA signature with a signature defined between expression profiles of AR-null and AR-positive mouse prostate luminal cells (Xie et al., 2017) and found enrichment for up-regulated genes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cross-species GSEA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "869fdc11-42d3-4885-a460-6099db5e8082",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C49",
+      "claim": "The ADCA signature shows no significant enrichment when compared with a signature of human prostate luminal versus basal epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we performed a cross-species comparison of the ADCA signature with a signature defined between profiles of human prostate luminal and basal epithelial cells (Zhang et al., 2016b) and found that there was no significant enrichment in either tail (Figure 5C), indicating that AR deletion does not drive APCA cells towards a specific lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cross-species GSEA analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cdd5b6e2-7df7-475b-b37a-e483bc4b1952",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C50",
+      "claim": "AR deletion does not drive APCA cells towards a specific lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we performed a cross-species comparison of the ADCA signature with a signature defined between profiles of human prostate luminal and basal epithelial cells (Zhang et al., 2016b) and found that there was no significant enrichment in either tail (Figure 5C), indicating that AR deletion does not drive APCA cells towards a specific lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the GSEA analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a5ee7494-215e-4305-b8da-eee69bada09c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C51",
+      "claim": "The ADCA signature shows enrichment for up-regulated genes when compared to a signature of CRPC from Best and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed enrichment for up-regulated genes when compared to a signature of CRPC from Best and colleagues (Best et al., 2005), as well as to a signature of metastatic CRPC from Stanbrough and colleagues (Stanbrough et al., 2006) (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cross-species GSEA analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "7fe9cdfc-8338-4fb3-bd91-6035ab43d663",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C52",
+      "claim": "The ADCA signature shows enrichment for up-regulated genes when compared to a signature of metastatic CRPC from Stanbrough and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed enrichment for up-regulated genes when compared to a signature of CRPC from Best and colleagues (Best et al., 2005), as well as to a signature of metastatic CRPC from Stanbrough and colleagues (Stanbrough et al., 2006) (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cross-species GSEA analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "0b777c72-0658-4ac2-8b5b-4fb1e7b2ed02",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C53",
+      "claim": "The ADCA signature shows strong enrichment when compared to a signature of CRPC-NE versus non-neuroendocrine CRPC from Beltran and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed a strong enrichment when compared to a signature from Beltran and colleagues (Beltran et al., 2016) defined between CRPC with neuroendocrine differentiation (CRPC-NE) and non-neuroendocrine CRPC (Figure 5F), consistent with our observation of pathway enrichment for gene sets corresponding to axon guidance and small-cell lung cancer (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cross-species GSEA analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "6d26a36c-c9e9-4e86-aaac-1c2eab3151d9",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C54",
+      "claim": "NP-CARN controls displayed high-grade prostatic intraepithelial neoplasia (PIN).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AR deletion resulted in a significant difference between the NP-CARN and NPA-CARN phenotypes, as the NP-CARN controls displayed high-grade prostatic intraepithelial neoplasia (PIN), whereas the NPA-CARN prostates showed a weak phenotype corresponding to diffuse hyperplasia with mild inflammation and increased apoptosis, (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on histological analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "b617eb4f-2b66-4f47-83df-e8bfb3210830",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C55",
+      "claim": "NPA-CARN prostates showed a weak phenotype corresponding to diffuse hyperplasia with mild inflammation and increased apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AR deletion resulted in a significant difference between the NP-CARN and NPA-CARN phenotypes, as the NP-CARN controls displayed high-grade prostatic intraepithelial neoplasia (PIN), whereas the NPA-CARN prostates showed a weak phenotype corresponding to diffuse hyperplasia with mild inflammation and increased apoptosis, (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on histological analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "055dac1f-f39b-4ef4-8c3d-1913573faeca",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C56",
+      "claim": "NPA-CARN prostates displayed a decreased proliferative index (2.7%, n = 3) relative to NP-CARN (9.2%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the NPA-CARN prostates displayed a decreased proliferative index relative to NP-CARN (2.7%, n = 3 vs. 9.2%, n = 3), as well as increased apoptosis (2.6%, n = 3 vs. 0.7%, n = 3) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on Ki67 staining analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "d3e980ba-e94a-46a6-b831-1d2843974d14",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C57",
+      "claim": "NPA-CARN prostates displayed increased apoptosis (2.6%, n = 3) relative to NP-CARN (0.7%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the NPA-CARN prostates displayed a decreased proliferative index relative to NP-CARN (2.7%, n = 3 vs. 9.2%, n = 3), as well as increased apoptosis (2.6%, n = 3 vs. 0.7%, n = 3) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cleaved caspase-3 staining analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "6c3b9d41-5199-49c7-aa3d-112dfa13e645",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C58",
+      "claim": "AR is required for tumor initiation following Pten deletion in CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, findings indicate that AR is required for tumor initiation following Pten deletion in CARNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the NP-CARN and NPA-CARN experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "53ac0cf0-a444-4bfc-b552-1897abb0b83f",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C59",
+      "claim": "AR deletion did not affect tumor initiation following combined deletion of Pten and activation of oncogenic KrasG12D.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AR deletion did not affect tumor initiation following combined deletion of Pten and activation of the oncogenic KrasG12D allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on comparison of NPK-CARN and NPKA-CARN mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "b0fe7387-154d-4613-9b0a-b03b7b42631d",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C60",
+      "claim": "Both NPK-CARN and NPKA-CARN tumors displayed high proliferative indices (20%, n = 3 vs. 19%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both NPK-CARN and NPKA-CARN tumors displayed high proliferative indices (20%, n = 3 vs. 19%, n = 3) and low frequencies of apoptosis (0.9%, n = 3 vs. 0.8%, n = 3) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on Ki67 staining analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "78581518-8a79-4cd9-b145-582a79a53529",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C61",
+      "claim": "Both NPK-CARN and NPKA-CARN tumors displayed low frequencies of apoptosis (0.9%, n = 3 vs. 0.8%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, both NPK-CARN and NPKA-CARN tumors displayed high proliferative indices (20%, n = 3 vs. 19%, n = 3) and low frequencies of apoptosis (0.9%, n = 3 vs. 0.8%, n = 3) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on cleaved caspase-3 staining analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cca2e251-0cae-4064-9af8-1ce64a64e024",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C62",
+      "claim": "All NPKA-CARN tumors contained a low but variable percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed an important difference between the NPK-CARN and NPKA-CARN tumors, as all the NPKA-CARN tumors contained a low but variable percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n = 3), which were never observed in the NPK-CARN controls (0%, n = 3) (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on synaptophysin staining analysis shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "2b0ee922-b984-4580-bd33-3bd8029d9e11",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C63",
+      "claim": "Synaptophysin-positive neuroendocrine cells were never observed in NPK-CARN controls (0%, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed an important difference between the NPK-CARN and NPKA-CARN tumors, as all the NPKA-CARN tumors contained a low but variable percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n = 3), which were never observed in the NPK-CARN controls (0%, n = 3) (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on synaptophysin staining analysis shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e9cb225d-f80e-43cb-8f78-1d38a84f1039",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C64",
+      "claim": "Synaptophysin-positive cells in NPKA-CARN tumors co-expressed YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the synaptophysin-postive cells co-expressed YFP (Figure 6E), we conclude that transformed AR-negative CARNs can give rise to neuroendocrine cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study based on immunofluorescence analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "474a60c9-6f2d-4577-b198-b7b5a03c3c91",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C65",
+      "claim": "Transformed AR-negative CARNs can give rise to neuroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the synaptophysin-postive cells co-expressed YFP (Figure 6E), we conclude that transformed AR-negative CARNs can give rise to neuroendocrine cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the observation that synaptophysin-positive cells co-express YFP in NPKA-CARN tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "4201a14a-a63e-45ae-b82a-138f34fe2c6a",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C66",
+      "claim": "The intrinsic castration-resistance of CARNs is independent of AR function.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our analyses have defined specific roles for AR in regulating the progenitor properties of CARNs, and indicate that the intrinsic castration-resistance of CARNs is independent of AR function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on the overall findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "b5a1b9fb-b1ad-4eb1-84fc-657de76fad9f",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C67",
+      "claim": "Targeted deletion of AR does not affect the percentage of CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that targeted deletion of AR does not affect the percentage of CARNs, their luminal marker expression, or their ability to generate basal cells during androgen-mediated regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "01d53cd8-89ff-4bbe-ad35-e9bbbab4bf4d",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C68",
+      "claim": "Targeted deletion of AR does not affect luminal marker expression of CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that targeted deletion of AR does not affect the percentage of CARNs, their luminal marker expression, or their ability to generate basal cells during androgen-mediated regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "20dcf8f0-36b8-4750-9e38-a47ed7b7e84b",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C69",
+      "claim": "Targeted deletion of AR does not affect the ability of CARNs to generate basal cells during androgen-mediated regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that targeted deletion of AR does not affect the percentage of CARNs, their luminal marker expression, or their ability to generate basal cells during androgen-mediated regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cc57e214-bebc-4933-8f38-a2614c88e2a3",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C70",
+      "claim": "There are fewer luminal progeny from AR-deleted CARNs during regeneration in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are fewer luminal progeny from AR-deleted CARNs during regeneration in vivo, and there is a decreased efficiency of prostate duct formation by both AR-deleted CARNs and ADCA cells in renal grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e359f06b-d3c3-40d3-b938-26d5f2932694",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C71",
+      "claim": "There is a decreased efficiency of prostate duct formation by AR-deleted CARNs in renal grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are fewer luminal progeny from AR-deleted CARNs during regeneration in vivo, and there is a decreased efficiency of prostate duct formation by both AR-deleted CARNs and ADCA cells in renal grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "04b84fc0-650c-4dea-a246-853e4c62deb3",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C72",
+      "claim": "There is a decreased efficiency of prostate duct formation by ADCA cells in renal grafts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are fewer luminal progeny from AR-deleted CARNs during regeneration in vivo, and there is a decreased efficiency of prostate duct formation by both AR-deleted CARNs and ADCA cells in renal grafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "30820125-a7fa-4d98-a9f3-943dc6d40c15",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C73",
+      "claim": "AR deletion in CARNs may primarily affect the proliferation and/or survival of their luminal progeny in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AR deletion in CARNs may primarily affect the proliferation and/or survival of their luminal progeny in vivo, although an effect on CARNs themselves cannot be excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "77b1adb9-5931-4a71-9b83-6a43dba51bba",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C74",
+      "claim": "AR activity may cell-autonomously regulate the proliferation of luminal progeny of CARNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that AR activity may cell-autonomously regulate the proliferation of luminal progeny of CARNs; alternatively, however, stromal remodeling during later stages of regeneration may alter non-cell autonomous signals that regulate luminal proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed proliferation defect.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "c81de44a-46df-46ab-99a9-714558a67282",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C75",
+      "claim": "Stromal remodeling during later stages of regeneration may alter non-cell autonomous signals that regulate luminal proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that AR activity may cell-autonomously regulate the proliferation of luminal progeny of CARNs; alternatively, however, stromal remodeling during later stages of regeneration may alter non-cell autonomous signals that regulate luminal proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for the observed proliferation defect.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "c1399158-4a3d-4783-8374-f256d21f8438",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C76",
+      "claim": "CARNs require AR function to generate viable luminal progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we concur that CARNs require AR function to generate viable luminal progeny, which is not the case for most luminal cells during homeostasis or regeneration (Xie et al., 2017; Zhang et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings and comparison with other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "cb7f1f06-2743-4e81-81b5-7484f368b3ea",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C77",
+      "claim": "Most luminal cells do not require AR function to generate viable luminal progeny during homeostasis or regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we concur that CARNs require AR function to generate viable luminal progeny, which is not the case for most luminal cells during homeostasis or regeneration (Xie et al., 2017; Zhang et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "45e3de61-dc99-4a29-9f63-f09d8d5f5e83",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C78",
+      "claim": "CARNs display increased organoid formation efficiency relative to other luminal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our previous finding that CARNs display increased organoid formation efficiency relative to other luminal cells (Chua et al., 2014), these findings support the identification of CARNs as a distinct luminal population with stem/progenitor properties, and highlight the complexity of AR functions in the epithelial and stromal compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous finding from the authors' work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "0847719b-89b3-45ff-88ca-1220bccd3ced",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C79",
+      "claim": "CARNs are a distinct luminal population with stem/progenitor properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our previous finding that CARNs display increased organoid formation efficiency relative to other luminal cells (Chua et al., 2014), these findings support the identification of CARNs as a distinct luminal population with stem/progenitor properties, and highlight the complexity of AR functions in the epithelial and stromal compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "f4faf38b-b148-408c-a132-e1baf6f76dd2",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C81",
+      "claim": "The observed enrichment with the Beltran CRPC-NE signature suggests a similarity in gene expression programs with advanced cancers that lack AR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the observed enrichment with the Beltran CRPC-NE signature suggests a similarity in gene expression programs with advanced cancers that lack AR activity, as neuroendocrine differentiation in prostate tumors is associated with loss of AR expression (Beltran et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the bioinformatic findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "3e07430e-c080-4406-aa90-91d3c0181ab0",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C82",
+      "claim": "Neuroendocrine differentiation in prostate tumors is associated with loss of AR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the observed enrichment with the Beltran CRPC-NE signature suggests a similarity in gene expression programs with advanced cancers that lack AR activity, as neuroendocrine differentiation in prostate tumors is associated with loss of AR expression (Beltran et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "200e502c-646e-4b03-8c19-8f18e104cfa3",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C83",
+      "claim": "NP-CARN and NPK-CARN mice develop tumor phenotypes similar to those in NP and NPK mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we note that the NP-CARN and NPK-CARN mice develop tumor phenotypes similar to those in NP and NPK mice, which have the same genotypes but whose tumors are induced by the Nkx3.1CreERT2 driver in hormonally intact adult prostate (Aytes et al., 2013; Floc'h et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of tumor phenotypes between different mouse models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "ac96a0ed-00da-4e96-bbf9-fb0927004f56",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C84",
+      "claim": "NP tumors are initially castration-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NP tumors are initially castration-sensitive (Floc'h et al., 2012), consistent with the inability of NPA-CARN mice to develop tumors, whereas NPK tumors are castration-resistant (Aytes et al., 2013), consistent with the phenotype of NPKA-CARN tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "96284abd-de06-4423-b50a-857c5e7eb5dc",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C85",
+      "claim": "NPK tumors are castration-resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NP tumors are initially castration-sensitive (Floc'h et al., 2012), consistent with the inability of NPA-CARN mice to develop tumors, whereas NPK tumors are castration-resistant (Aytes et al., 2013), consistent with the phenotype of NPKA-CARN tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e129d4c8-1f3f-4dd7-b690-81993db2b9d5",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C86",
+      "claim": "Oncogenic transformation of AR-deleted CARNs can facilitate transdifferentiation of luminal cells to neuroendocrine fates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the focal neuroendocrine differentiation observed in NPKA-CARN tumors suggests that oncogenic transformation of AR-deleted CARNs can also facilitate transdifferentiation of luminal cells to neuroendocrine fates, as we have demonstrated for a Pten and Trp53 mutant mouse model (NPp53) after anti-androgen treatment (Zou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings on neuroendocrine differentiation in NPKA-CARN tumors.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "862c0960-a33b-4859-9f66-0678e7d24d49",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C87",
+      "claim": "Tumors initiated from CARNs following combined Pten deletion and Kras activation are at least partially independent of AR from their outset.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, since tumors initiated from CARNs following combined Pten deletion and Kras activation are at least partially independent of AR from their outset, it is conceivable that such tumors are intrinsically more resistant to second-generation anti-androgen therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings on NPKA-CARN tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "74de6125-68c5-4172-9293-ec5c9cd9dbe1",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C88",
+      "claim": "Tumors initiated from CARNs following combined Pten deletion and Kras activation may be intrinsically more resistant to second-generation anti-androgen therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, since tumors initiated from CARNs following combined Pten deletion and Kras activation are at least partially independent of AR from their outset, it is conceivable that such tumors are intrinsically more resistant to second-generation anti-androgen therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "60948e87-a104-4e5b-b0e6-7c44c349153d",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "claim_id": "C89",
+      "claim": "CARBs (Bmi1-expressing castration-resistant progenitors) are cells of origin for prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent studies have also identified distinct castration-resistant progenitors that express Bmi1 (CARBs) that are cells of origin for prostate cancer (Yoo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7be0c9e-d364-404b-b083-4e0c81156a2d",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AR deletion does not affect the frequency, luminal phenotype, or marker expression of CARNs. The percentage of YFP+ CARNs was similar between control (0.36\u00b10.17%) and AR-deleted mice (0.31\u00b10.06%, p=0.51), with 87.1% deletion efficiency. AR-deleted CARNs maintained luminal markers (CK8, CK18) and lacked basal markers (CK5, p63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 and C67-C68 provide converging evidence from FACS analysis and immunostaining that AR deletion does not alter CARN frequency or luminal identity. The statistical analysis (p=0.51) and high deletion efficiency (87.1%) support the conclusion. The data are internally consistent across multiple markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AR-deleted CARNs show decreased proliferation during later stages of prostate regeneration. While early proliferation (days 1-4) was similar between control and AR-deleted CARNs (50.9% vs 62.9% BrdU+), late proliferation (days 11-14) was absent in AR-deleted CARNs (11.1% vs 0%, p=0.027). This resulted in fewer large cell clusters (>4 cells) at days 14 and 28.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C70 demonstrate a temporal proliferation defect with statistical significance (p=0.027 for late BrdU incorporation). The cluster size analysis and BrdU incorporation data are consistent and support the conclusion. Sample sizes are modest (n=3) but the effect is clear and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AR-deleted CARNs generate increased proportions of basal progeny during regeneration. The percentage of basal cells (CK5+ or p63+) within the YFP+ population increased from 2.1-3.5% in controls to 14.6-19.2% in AR-deleted mice, though both genotypes retained the ability to generate basal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C69 show consistent increases in basal cell percentages using two independent markers (CK5 and p63). The data support altered lineage proportions, though the interpretation that this reflects either increased basal generation or decreased luminal survival (C35) remains uncertain. The ability to generate basal cells is preserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "4c1df572-1f80-43de-9731-714e1b086b4e",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AR-deleted CARNs show significantly reduced efficiency in generating prostate ducts in renal grafting assays. While both control and AR-deleted CARNs could form ducts, AR-deleted CARNs had only 12.5% graft efficiency compared to 68.8% for controls (p=0.003, n=16 each).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C71 provide statistically significant evidence (p=0.003) with adequate sample size (n=16) demonstrating reduced grafting efficiency. The result is consistent with the proliferation defect observed in vivo. The conclusion is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "e4002c54-2e88-4e23-b73e-afa6e20fb056",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "APCA and ADCA cell lines derived from AR-positive and AR-deleted CARNs are morphologically similar and proliferate at comparable rates in culture. Both lines express mixed basal (CK5) and luminal (CK8) markers plus Foxa1, and show similar growth in Ki67, CellTiter-Glo, and colony formation assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 demonstrate that AR deletion does not affect proliferation in culture conditions, contrasting with the in vivo defect. Multiple independent assays (Ki67, CellTiter-Glo, colony formation) support this conclusion. This is important for interpreting the non-cell-autonomous effects observed in grafts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "29e33e79-4625-41fd-8cd2-742d5749f4a4",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relative plating efficiency of AR-deleted CARNs compared to AR-positive CARNs is 7.4% after correcting for 87.1% recombination efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 presents a calculated value based on single-cell sorting experiments and the known recombination efficiency. The calculation appears sound and is consistent with the decreased grafting efficiency. However, the raw data (6 lines from 60 cells) are not fully detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "6540b571-33da-4eeb-8e65-c25cdd257aa3",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AR deletion decreases prostate duct formation efficiency in tissue recombination assays, likely through non-cell-autonomous mechanisms. APCA lines showed 100% graft efficiency (n=10) while ADCA lines showed 67% (n=6). Tamoxifen-induced AR deletion in APCA grafts reduced efficiency from 100% to 42%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 and C72 demonstrate reduced duct formation efficiency with AR deletion. The interpretation of non-cell-autonomous effects (C46) is well-reasoned given normal proliferation in culture. However, sample sizes are modest (n=6-12) and only one ADCA line was tested in grafts, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "eedf951b-05bc-4ae4-9932-6fcfb6b59427",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ADCA cells show transcriptional upregulation of DNA replication, repair, cell cycle, and apoptosis pathways, with enrichment matching AR-null mouse luminal cell signatures. GSEA analysis revealed significant pathway enrichment and concordance with published AR-null signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by RNA-seq and GSEA analysis. The pathway enrichment is consistent with the observed proliferation and survival phenotypes. Cross-species validation with published signatures strengthens the findings. However, only n=2 lines per genotype were analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "ddf8acb5-f7fb-4d78-9fbe-f976dca05727",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AR deletion in APCA cells does not drive lineage specification toward basal or luminal fates. GSEA comparison with human luminal vs basal signatures showed no significant enrichment in either direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 demonstrate lack of lineage-specific transcriptional changes using cross-species GSEA. This is consistent with the mixed marker expression observed in both APCA and ADCA lines. The analysis is appropriate and the conclusion is supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "eb4b6155-debc-4e2a-81a1-89d62be0aff6",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ADCA transcriptional signatures show enrichment with human CRPC and CRPC-NE signatures. GSEA revealed significant enrichment with Best CRPC, Stanbrough metastatic CRPC, and Beltran CRPC-NE signatures, suggesting similarity to advanced AR-independent cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C81 demonstrate clinically relevant transcriptional similarities between AR-deleted CARNs and human CRPC. The cross-species GSEA analyses are appropriate and show consistent enrichment. This provides translational relevance, though the mechanistic connection requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AR is required for tumor initiation following Pten deletion in CARNs. NP-CARN controls developed high-grade PIN, while NPA-CARN mice showed only diffuse hyperplasia with decreased proliferation (2.7% vs 9.2%) and increased apoptosis (2.6% vs 0.7%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 demonstrate that AR deletion suppresses Pten-driven tumorigenesis in CARNs. The histological, proliferation, and apoptosis data are consistent and support the conclusion. Sample size is modest (n=3) but the phenotypic difference is clear. Statistical significance is reported for proliferation and apoptosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "026ddcee-2708-42b6-ae1a-445f1dd09470",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AR deletion does not prevent tumor initiation when Pten deletion is combined with oncogenic Kras activation. Both NPK-CARN and NPKA-CARN mice developed tumors with similar proliferation (20% vs 19%) and apoptosis (0.9% vs 0.8%) rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 show that oncogenic Kras bypasses the AR requirement for tumor initiation. The proliferation and apoptosis data are nearly identical between genotypes, supporting AR-independent tumor growth. This demonstrates context-dependent AR requirements in tumorigenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "412eb104-2805-4e42-8296-e960efb13d47",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "AR-deleted CARNs with Pten deletion and Kras activation give rise to focal neuroendocrine differentiation. All NPKA-CARN tumors (n=3) contained synaptophysin-positive cells (0.7% of epithelial cells) that co-expressed YFP, while NPK-CARN controls had none (0%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 demonstrate lineage tracing of neuroendocrine cells from AR-deleted CARNs. The YFP co-expression (C64) provides strong evidence for cell-of-origin. The penetrance (3/3 mice) is notable despite low frequency. This represents a novel model of AR-negative neuroendocrine prostate cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "64ae3de5-369f-4cb8-9300-a66659ebf8f0",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The intrinsic castration-resistance of CARNs is independent of AR function, though AR modulates specific progenitor properties. CARNs persist after castration regardless of AR status, but AR deletion primarily affects proliferation/survival of luminal progeny and their ability to serve as cells of origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C73, C76, and C79 synthesize the major findings into a coherent model. The conclusion that castration-resistance is AR-independent is supported by CARN persistence after AR deletion. The interpretation that effects are primarily on progeny (C73) is reasonable given the data, though some speculation remains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "aa498040-64eb-4bdb-849e-4c526f15ab0f",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Two potential mechanisms are proposed for the proliferation defect: cell-autonomous AR regulation of luminal progeny proliferation, or non-cell-autonomous effects from stromal remodeling during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 present speculative mechanistic explanations for the observed proliferation defect. While both are plausible, neither is directly tested. The temporal nature of the defect (late but not early) and normal proliferation in culture support a role for stromal interactions, but definitive evidence is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "a96fc18e-9218-4825-8a7e-30232b8a6ac7",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Oncogenic transformation of AR-deleted CARNs can facilitate transdifferentiation to neuroendocrine fates, and such tumors may be intrinsically resistant to anti-androgen therapies due to AR-independence from their outset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 present interpretations and speculations about clinical implications. While the neuroendocrine differentiation is demonstrated (C86), the speculation about therapy resistance (C88) is not tested. The connection to prior work (NPp53 model) supports plausibility but does not constitute direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "755734b3-53d8-4417-8eca-50d9695a30cb",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context for the study, including AR's role in prostate biology, CARN properties, lineage relationships in prostate epithelium, and clinical features of CRPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C7-C19, C77-C78, C82, C84-C85, C89) represent established knowledge from prior literature, appropriately cited. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the background is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    },
+    {
+      "id": "d8d635fe-1657-4fd4-8496-9362cb7af12c",
+      "content_id": "90c1d949-87c5-4425-890a-d340a6216c1a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "NP-CARN and NPK-CARN mice develop tumor phenotypes similar to NP and NPK mice with the same genotypes but induced in hormonally intact prostate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 provides comparative context for interpreting the tumor models. The comparison is supported by citations to prior work and helps validate the experimental approach. This is a useful validation but not a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:50.981445Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b95e2c8-92a4-48e8-9096-ce726cd91476",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "30f4882c-0e7e-4327-a2a4-93c3502da4b2",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "820784f7-e67d-4890-aac2-27a7fa3a8f1e",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "48a2e750-95c3-4867-9558-15f1aa0829c4",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "1ec121a7-b3d5-435e-883f-19037d23aed9",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "b5a1b9fb-b1ad-4eb1-84fc-657de76fad9f",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "01d53cd8-89ff-4bbe-ad35-e9bbbab4bf4d",
+      "result_id": "a7be0c9e-d364-404b-b083-4e0c81156a2d"
+    },
+    {
+      "claim_id": "69fc9c9d-f128-496d-8321-a6c4cfb9ff67",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "c394d0ff-3d1c-463c-8244-f9d6965b2447",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "bbee0631-276c-40a1-b28f-29088e906b4a",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "f043228b-a7e1-4dc7-8a2f-63804e873321",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "442fd222-a220-42ed-ada7-874d79b7fb5c",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "7ea6cce8-db3d-4dba-862c-8fbfea15cfcc",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "ec0e91bf-5b88-481d-bec8-b639ff2397c5",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "cc57e214-bebc-4933-8f38-a2614c88e2a3",
+      "result_id": "a15d2b14-43f7-49bc-bc8a-393c448e5d40"
+    },
+    {
+      "claim_id": "1f226b74-c136-4b06-b3e3-11efe28eba1a",
+      "result_id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7"
+    },
+    {
+      "claim_id": "a582a957-be26-4df3-9ec0-d6ef4bb77b3c",
+      "result_id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7"
+    },
+    {
+      "claim_id": "cb7de9fc-5553-4c4d-b934-07addd0922fa",
+      "result_id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7"
+    },
+    {
+      "claim_id": "802ac4ce-05bb-4669-b8e2-a942cb5b725e",
+      "result_id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7"
+    },
+    {
+      "claim_id": "20dcf8f0-36b8-4750-9e38-a47ed7b7e84b",
+      "result_id": "4fffbe11-c7c0-4994-a3d4-faab6db12db7"
+    },
+    {
+      "claim_id": "3f05456f-fb85-45d3-ae1d-675dbd898e25",
+      "result_id": "4c1df572-1f80-43de-9731-714e1b086b4e"
+    },
+    {
+      "claim_id": "e1a19fbd-67ac-4dbf-8101-9cfa7c092fa0",
+      "result_id": "4c1df572-1f80-43de-9731-714e1b086b4e"
+    },
+    {
+      "claim_id": "e359f06b-d3c3-40d3-b938-26d5f2932694",
+      "result_id": "4c1df572-1f80-43de-9731-714e1b086b4e"
+    },
+    {
+      "claim_id": "a4d90d73-30c1-4a6d-a90f-e3f0fa74261c",
+      "result_id": "e4002c54-2e88-4e23-b73e-afa6e20fb056"
+    },
+    {
+      "claim_id": "d4dd8815-8c4f-458c-8c3a-14274968d965",
+      "result_id": "e4002c54-2e88-4e23-b73e-afa6e20fb056"
+    },
+    {
+      "claim_id": "3ff3b46e-2f5c-4d01-9ef6-642551f841f2",
+      "result_id": "e4002c54-2e88-4e23-b73e-afa6e20fb056"
+    },
+    {
+      "claim_id": "cc590568-648f-4aff-811b-bbf3f3dbf833",
+      "result_id": "29e33e79-4625-41fd-8cd2-742d5749f4a4"
+    },
+    {
+      "claim_id": "99d5d510-7898-439c-9692-0f2e01456c3a",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "63fe2161-2096-4bcb-b029-bc4c1cf87627",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "e6a96f25-13db-454d-bac8-03ad716d30b4",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "6ebb8f8e-1ed8-4577-89bb-85d83893aafe",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "7d7586db-0270-4e5f-b3fb-c5cb0780b9c1",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "04b84fc0-650c-4dea-a246-853e4c62deb3",
+      "result_id": "6540b571-33da-4eeb-8e65-c25cdd257aa3"
+    },
+    {
+      "claim_id": "e55744c6-1a88-4870-bec7-f52e22041df8",
+      "result_id": "eedf951b-05bc-4ae4-9932-6fcfb6b59427"
+    },
+    {
+      "claim_id": "89167386-b33d-4f17-ac14-639d0f1287cb",
+      "result_id": "eedf951b-05bc-4ae4-9932-6fcfb6b59427"
+    },
+    {
+      "claim_id": "869fdc11-42d3-4885-a460-6099db5e8082",
+      "result_id": "ddf8acb5-f7fb-4d78-9fbe-f976dca05727"
+    },
+    {
+      "claim_id": "cdd5b6e2-7df7-475b-b37a-e483bc4b1952",
+      "result_id": "ddf8acb5-f7fb-4d78-9fbe-f976dca05727"
+    },
+    {
+      "claim_id": "a5ee7494-215e-4305-b8da-eee69bada09c",
+      "result_id": "eb4b6155-debc-4e2a-81a1-89d62be0aff6"
+    },
+    {
+      "claim_id": "7fe9cdfc-8338-4fb3-bd91-6035ab43d663",
+      "result_id": "eb4b6155-debc-4e2a-81a1-89d62be0aff6"
+    },
+    {
+      "claim_id": "0b777c72-0658-4ac2-8b5b-4fb1e7b2ed02",
+      "result_id": "eb4b6155-debc-4e2a-81a1-89d62be0aff6"
+    },
+    {
+      "claim_id": "f4faf38b-b148-408c-a132-e1baf6f76dd2",
+      "result_id": "eb4b6155-debc-4e2a-81a1-89d62be0aff6"
+    },
+    {
+      "claim_id": "6d26a36c-c9e9-4e86-aaac-1c2eab3151d9",
+      "result_id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f"
+    },
+    {
+      "claim_id": "b617eb4f-2b66-4f47-83df-e8bfb3210830",
+      "result_id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f"
+    },
+    {
+      "claim_id": "055dac1f-f39b-4ef4-8c3d-1913573faeca",
+      "result_id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f"
+    },
+    {
+      "claim_id": "d3e980ba-e94a-46a6-b831-1d2843974d14",
+      "result_id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f"
+    },
+    {
+      "claim_id": "6c3b9d41-5199-49c7-aa3d-112dfa13e645",
+      "result_id": "a9b6ea14-66a4-4209-9c5a-177c7cd5455f"
+    },
+    {
+      "claim_id": "53ac0cf0-a444-4bfc-b552-1897abb0b83f",
+      "result_id": "026ddcee-2708-42b6-ae1a-445f1dd09470"
+    },
+    {
+      "claim_id": "b0fe7387-154d-4613-9b0a-b03b7b42631d",
+      "result_id": "026ddcee-2708-42b6-ae1a-445f1dd09470"
+    },
+    {
+      "claim_id": "78581518-8a79-4cd9-b145-582a79a53529",
+      "result_id": "026ddcee-2708-42b6-ae1a-445f1dd09470"
+    },
+    {
+      "claim_id": "cca2e251-0cae-4064-9af8-1ce64a64e024",
+      "result_id": "412eb104-2805-4e42-8296-e960efb13d47"
+    },
+    {
+      "claim_id": "2b0ee922-b984-4580-bd33-3bd8029d9e11",
+      "result_id": "412eb104-2805-4e42-8296-e960efb13d47"
+    },
+    {
+      "claim_id": "e9cb225d-f80e-43cb-8f78-1d38a84f1039",
+      "result_id": "412eb104-2805-4e42-8296-e960efb13d47"
+    },
+    {
+      "claim_id": "474a60c9-6f2d-4577-b198-b7b5a03c3c91",
+      "result_id": "412eb104-2805-4e42-8296-e960efb13d47"
+    },
+    {
+      "claim_id": "4201a14a-a63e-45ae-b82a-138f34fe2c6a",
+      "result_id": "64ae3de5-369f-4cb8-9300-a66659ebf8f0"
+    },
+    {
+      "claim_id": "30820125-a7fa-4d98-a9f3-943dc6d40c15",
+      "result_id": "64ae3de5-369f-4cb8-9300-a66659ebf8f0"
+    },
+    {
+      "claim_id": "c1399158-4a3d-4783-8374-f256d21f8438",
+      "result_id": "64ae3de5-369f-4cb8-9300-a66659ebf8f0"
+    },
+    {
+      "claim_id": "0847719b-89b3-45ff-88ca-1220bccd3ced",
+      "result_id": "64ae3de5-369f-4cb8-9300-a66659ebf8f0"
+    },
+    {
+      "claim_id": "77b1adb9-5931-4a71-9b83-6a43dba51bba",
+      "result_id": "aa498040-64eb-4bdb-849e-4c526f15ab0f"
+    },
+    {
+      "claim_id": "c81de44a-46df-46ab-99a9-714558a67282",
+      "result_id": "aa498040-64eb-4bdb-849e-4c526f15ab0f"
+    },
+    {
+      "claim_id": "e129d4c8-1f3f-4dd7-b690-81993db2b9d5",
+      "result_id": "a96fc18e-9218-4825-8a7e-30232b8a6ac7"
+    },
+    {
+      "claim_id": "862c0960-a33b-4859-9f66-0678e7d24d49",
+      "result_id": "a96fc18e-9218-4825-8a7e-30232b8a6ac7"
+    },
+    {
+      "claim_id": "74de6125-68c5-4172-9293-ec5c9cd9dbe1",
+      "result_id": "a96fc18e-9218-4825-8a7e-30232b8a6ac7"
+    },
+    {
+      "claim_id": "831ce0f9-780b-4fff-aba9-8bc66334fe74",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "d17a536a-1694-4880-9b5e-3c745a2439af",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "3cf3135d-0370-46ca-adfc-467c9bc4bbf2",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "74d2193a-ac74-4b79-b08c-fbbe5ed827ab",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "eecdcde7-5ae4-410f-80a0-3c3477229725",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "84929c93-b7c1-4a66-a20b-288a6cf8710c",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "302c5547-7bc8-479c-b1bc-146ee63ef7d4",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "2c4cc30f-7220-4360-8338-570e0d5d582b",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "321d5782-4280-434e-a333-ef1739c7c786",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "a893a7ed-d48e-4eba-82fc-d2b37451a1c4",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "b4d0e85b-76cc-442f-9f7e-ec55fca77078",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "ded678f0-66ac-45cc-ba70-3fbaca8208b1",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "59e54938-2aa3-410c-9b1b-1daf463618e6",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "1bcc9ef2-6ccd-4a83-861a-87dfbd265351",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "495699d1-0b29-408a-ab35-a2e55850eafb",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "cb7f1f06-2743-4e81-81b5-7484f368b3ea",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "45e3de61-dc99-4a29-9f63-f09d8d5f5e83",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "3e07430e-c080-4406-aa90-91d3c0181ab0",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "ac96a0ed-00da-4e96-bbf9-fb0927004f56",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "96284abd-de06-4423-b50a-857c5e7eb5dc",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "60948e87-a104-4e5b-b0e6-7c44c349153d",
+      "result_id": "755734b3-53d8-4417-8eca-50d9695a30cb"
+    },
+    {
+      "claim_id": "200e502c-646e-4b03-8c19-8f18e104cfa3",
+      "result_id": "d8d635fe-1657-4fd4-8496-9362cb7af12c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2261 @@
+{
+  "submission": {
+    "id": "da474c0c-ad5d-4da6-a020-4c5f5379eb76",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:36:49.373070Z",
+    "updated_at": "2025-12-01T22:36:49.373070Z"
+  },
+  "content": [
+    {
+      "id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "submission_id": "da474c0c-ad5d-4da6-a020-4c5f5379eb76",
+      "content_type": "manuscript",
+      "content_text": "# Quiescence unveils a novel mutational force in fission yeast\n\n## Authors\n\n- Serge Gangloff<sup>1</sup> ([ORCID: 0000-0003-1333-6091](https://orcid.org/0000-0003-1333-6091))\n- Guillaume Achaz<sup>3</sup>\n- Stefania Francesconi<sup>1</sup>\n- Adrien Villain<sup>1</sup>\n- Samia Miled<sup>1</sup>\n- Claire Denis<sup>1</sup>\n- Benoit Arcangioli<sup>1</sup> ([ORCID: 0000-0002-1371-1405](https://orcid.org/0000-0002-1371-1405)) \u2020\n\n### Affiliations\n\n1. Genomes and Genetics Institut Pasteur Paris France\n2. UMR 3525 CNRS-Institut Pasteur Paris France\n3. ISYEB UMR7505 CNRS MNHN UPMC EPHE CIRB UMR 7241 CNRS Coll\u00e8ge de France INSERM UPMC Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo maintain life across a fluctuating environment, cells alternate between phases of cell division and quiescence. During cell division, the spontaneous mutation rate is expressed as the probability of mutations per generation (Luria and Delbr\u00fcck, 1943; Lea and Coulson, 1949), whereas during quiescence it will be expressed per unit of time. In this study, we report that during quiescence, the unicellular haploid fission yeast accumulates mutations as a linear function of time. The novel mutational landscape of quiescence is characterized by insertion/deletion (indels) accumulating as fast as single nucleotide variants (SNVs), and elevated amounts of deletions. When we extended the study to 3 months of quiescence, we confirmed the replication-independent mutational spectrum at the whole-genome level of a clonally aged population and uncovered phenotypic variations that subject the cells to natural selection. Thus, our results support the idea that genomes continuously evolve under two alternating phases that will impact on their size and composition.\n\n## Introduction\n\nThe causes and consequences of spontaneous mutations have been extensively explored. The major sources include errors of DNA replication and DNA repair and the foremost consequences are genetic variations within a cell population that can lead to heritable diseases and drive evolution. The knowledge of the rate and spectrum of spontaneous mutations is also very informative and of fundamental importance to understand their origin. During cell division, fluctuation assay (Luria and Delbr\u00fcck, 1943; Lea and Coulson, 1949) and more direct measurements using next generation sequencing, including mutation accumulation (MA) (Halligan and Keightley, 2009) and de novo mutations (Conrad et al., 2011) improved the mutation rate estimations expressed as the number of spontaneous mutations per cell division and led to the definition of their spectrum in many species (Behringer and Hall, 2015; Farlow et al., 2015; Zhu et al., 2014). During growth, most of the mutations are due to DNA replication errors. When the mutation is neutral or beneficial, it can be fixed in the population during subsequent generations. Conversely, when the mutation is disadvantageous it most often rapidly counter selected. The replication-dependent mutations define a spectrum quite similar among species, with the domination of Single Nucleotide Variants (SNVs) over Insertions/Deletions (Indels) and Structural Variants (SVs). For instance, preference for insertions at the expense of deletions along with a universal substitution bias toward AT has been frequently reported during cell division (Hershberg and Petrov, 2010; Lynch, 2010). At the evolutionary timescale, the mutations accumulate as a linear function of time (Zuckerkandl and Pauling, 1962). However, the mutation rate is not constant and depends on the generation time, the efficiency of the DNA damage protection, the accuracy of DNA repair and the selective environment. In the past decades, it has become increasingly evident that mutations also arise during cell cycle arrest, slow growth or under stress. Many genetic studies on E. coli and budding yeast used the term \u2018adaptive mutation\u2019 (Drake, 1991; Foster, 1999) as they used non-lethal selective conditions for an essential amino acid, nucleotide or antibiotic. An important notion related to adaptive mutation is that stress conditions may increase mutations and trigger accelerated evolution (Yaakov et al., 2017; Long et al., 2016; Rosenberg, 1997; Hicks et al., 2010; Holbeck and Strathern, 1997). A more recent notion is that a bacterial subpopulation of phenotypic variants called \u2018persisters\u2019 are more resistant to stress conditions suggesting that they precede adaptive mutations (for review (Harms et al., 2016)), a notion that was also found in budding yeast (Yaakov et al., 2017). The survival of \u2018persisters\u2019 to a large range of stress conditions can be explained by a reduced growth rate and metabolism. In addition, life alternates between periods of cell division and quiescence. During quiescence, the main replication-dependent source of mutations is not applicable but others remain, such as DNA repair errors, that may potentially improve the chance of survival. In other words, the respective fitness of cell division and quiescence might alternatively subject organisms to natural selection. In this regard, the extent of the impact of replication-independent mutations on the overall mutation load and evolution is mostly unknown (Gao et al., 2016). Hence, because of its mechanistic difference, a replication-independent mutational spectrum is expected to exhibit a different signature.\n\nQuiescence is a common cell state on earth (Lewis and Gattie, 1991). In metazoan, stem cells alternate between variable periods of growth and quiescence depending on the period of development and the type of tissues. For the unicellular fission yeast, Schizosaccharomyces pombe, removing nitrogen triggers mating of opposite mating-types followed by meiosis. However, when the population is composed of only one mating-type they arrest in the G1-phase and rapidly enter into quiescence with a 1C content (Nurse and Bissett, 1981). In these conditions, the cells remain viable for months given the medium is refreshed every other week. They are metabolically active, exhibit stress-responsive signaling and are highly efficient in DNA damage repair (Mochida and Yanagida, 2006; Yanagida, 2009; Ben Hassine and Arcangioli, 2009; Marguerat et al., 2012; Gangloff and Arcangioli, 2017). Thus, quiescence in fission yeast is defined under a simple nutritional change so that studies can be reproduced and interpreted rigorously.\n\nHere, we report the accumulation and spectrum of spontaneous mutations that arise in the quiescent phase of fission yeast. The growth and quiescence mutational spectra exhibit quantitative and qualitative differences that further explore the genetic potential of the genome. We named the new quiescence mutational spectrum \u2018Chronos\u2019 the personification of time in Greek mythology.\n\n## Results\n\nIn all our experiments, a prototrophic progenitor fission yeast strain is grown in minimal medium (MM) (Mitchison, 1970) prior to transfer into MM lacking nitrogen at a cell density of 106 cells per milliliter. After two divisions, a majority of the cells arrests in the G1 phase and enters into the G0 quiescent state. To determine the homogeneity of the cell population during quiescence, we analyzed the size and the proportion of cells exhibiting a septum during 15 days (Table 1). The cell-size (7\u201314 \u03bcm) and proportion of cells with a septum (~10%) observed during vegetative growth abruptly decrease after 1 day of quiescence, with more than 99,9% of septum free cells measuring 4 \u03bcm. During the following days of quiescence, the proportion of cells containing a septum dropped below 1 in 20,000 cells. This result indicates that the proportion of cells dividing or replicating during quiescence is very low. The efficiency and accuracy of the repair of DNA lesions in quiescence remain unknown, and lesions can be converted into mutations either during quiescence or when cells re-enter the vegetative cycle. We determined the mutation frequencies by plating samples of quiescent cultures after 1, 4, 8, 11 or 15 days in MM lacking nitrogen onto rich medium containing 5-fluoroorotic acid (5-FOA) that allows the recovery of ura4- and ura5- loss-of-function mutants (Grimm et al., 1988). We ascertained that the ura4\u2206 mutants remain viable for two weeks of quiescence, indicating that colonies resistant to 5-FOA (FOAR) emerging early are not biased by selection (Figure 1) and that our phenotypic accumulation assay is unbiased during the course of the experiment. FOAR colonies were scored and their DNA isolated for mutational spectrum analysis by Sanger sequencing. At day 1, a large fraction of FOAR colonies derive from replicative mutations that have appeared during the last rounds of DNA replication prior or during entry into quiescence and are capable of surviving two to three generations on media lacking uracil. Because of the fluctuation caused by the timing of mutation appearance in lineages (Luria and Delbr\u00fcck, 1943), a mutation can be found multiple times in a population. To assess the mutational spectra in growth and quiescence, mutations found more than once in a clonal population were discarded (Supplementary files 1). The frequency of non-redundant FOAR mutations at day 1 ranges from 1 to 3 \u00d7 10\u22127 across the various independent experiments (Figure 2A). We next analyzed their spectrum at day one by Sanger sequencing the respective ura4- or ura5- mutated gene. If every substitution occurs with an equal probability, we should observe one transition per two transversions. We found a 1:2.18 ratio, with a mutational bias towards the enrichment of A/T (3.71, Table 2) due to the high frequency of C:G to T:A transitions and G:C to T:A transversions (Figure 2B and Figure 2\u2014figure supplement 1). Interestingly, as previously observed (Behringer and Hall, 2015; Farlow et al., 2015; Zhu et al., 2014) the CpG dinucleotides are found among the top mutated dinucleotides in ura4 and ura5 (Figure 2\u2014figure supplement 2) a feature difficult to understand in the absence of cytosine methyl transferase in fission yeast. Among the ura4- and ura5- FOAR mutations, 72% are caused by Single Nucleotide Variants (SNVs) and 28% by insertions/deletions (indels) (Figure 2C). A slight bias for insertions is observed with a net gain of 269 bp for 24 events and loss of 334 bp for 16 events (Table 2), including two deletions of 165 and 95 base-pairs (Supplementary files 1). Overall, the mutation profile at day one is similar to published results in cycling cells for URA3 in budding yeast (Lang and Murray, 2008) and for ura4+ and ura5+ in fission yeast (Fraser et al., 2003).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig1-v1.jpg)\n\n**Figure 1.:** Wild-Type, ura4D18 cells and a 50% mixture of both cultures were put into quiescence and their survival was followed for two weeks. ura4D18 has no advantage compared to wild-type strain or mixed populations and the proportion of uracil auxotrophs is maintained constant for the two weeks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig2-v1.jpg)\n\n**Figure 2.:** (A) slopes of FOAR accumulation as a function of time in quiescence from two independent experiments, determined by the least squares regression (R2\u00a0=\u00a00.99 for all mutations, R2\u00a0=\u00a00.96 for SNVs and R2\u00a0=\u00a00.80 for indels). (B) mutation spectrum established on 105 SNVs found in the ura4+ and ura5+ genes at day 1 and 146 at days 8\u00a0+\u00a015. (C) distribution among indels and SNVs of the mutations that result in FOAR for ura4+ and ura5+ genes over time. (D) distribution of the various sizes of indels over time in quiescence. The numbers directly above the histograms indicate the number of events, while those on the top of the figure are the sum of all the events for each class. The numbers at the bottom indicate the size range of the indels.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mutation spectrum established on 105 SNVs found in the ura4+ and ura5+ genes at day 1 and 146 at days 8\u00a0+\u00a015 (from Fig. Figure 2B). (B) Same as in A, but normalized to the total number of relevant scorable base pairs. (C) Counts of all possible STOP and nonsense mutations for each substitution in ura4 and ura5..\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The percentage of every dinucleotide mutated at day one is compared to the frequency of occurrence of the same dinucleotide in the respective open reading frame.\n\n**Table 1.**\n Proportion of septa observed among cycling and quiescent cells.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Days</th>\n      <th>Number of cells</th>\n      <th>Number of Septa</th>\n      <th>Percentage</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0</td>\n      <td>1 400</td>\n      <td>136</td>\n      <td>9.71%</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>3 500</td>\n      <td>5</td>\n      <td>0.14%</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>10 500</td>\n      <td>0</td>\n      <td>0.00%</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>16 000</td>\n      <td>2</td>\n      <td>0.01%</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>14 000</td>\n      <td>0</td>\n      <td>0.00%</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>26 000</td>\n      <td>0</td>\n      <td>0.00%</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>26 250</td>\n      <td>0</td>\n      <td>0.00%</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Type of mutation and AT bias found in ura4 and ura5 mutants at various time points of quiescence.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>day 1</th>\n      <th>day 8</th>\n      <th>day 15</th>\n      <th>day 8+15</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td># of SNVs</td>\n      <td>105</td>\n      <td>107</td>\n      <td>37</td>\n      <td>144</td>\n    </tr>\n    <tr>\n      <td>Ts</td>\n      <td>33</td>\n      <td>26</td>\n      <td>5</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Tv</td>\n      <td>72</td>\n      <td>81</td>\n      <td>34</td>\n      <td>116</td>\n    </tr>\n    <tr>\n      <td>Ts:Tv</td>\n      <td>1:2.18</td>\n      <td>1:3.12</td>\n      <td>1:6.67</td>\n      <td>1:3.70</td>\n    </tr>\n    <tr>\n      <td>To A or to T</td>\n      <td>63</td>\n      <td>45</td>\n      <td>15</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>To C or to G</td>\n      <td>17</td>\n      <td>30</td>\n      <td>8</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>AT bias</td>\n      <td>3.71</td>\n      <td>1.50</td>\n      <td>1.88</td>\n      <td>1.58</td>\n    </tr>\n    <tr>\n      <td># of indels</td>\n      <td>40</td>\n      <td>139</td>\n      <td>86</td>\n      <td>220</td>\n    </tr>\n    <tr>\n      <td># of deletions</td>\n      <td>16</td>\n      <td>99</td>\n      <td>71</td>\n      <td>170</td>\n    </tr>\n    <tr>\n      <td>lost bases</td>\n      <td>334</td>\n      <td>864</td>\n      <td>907</td>\n      <td>1771</td>\n    </tr>\n    <tr>\n      <td># of insertions</td>\n      <td>24</td>\n      <td>35</td>\n      <td>15</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>gained bases</td>\n      <td>269</td>\n      <td>401</td>\n      <td>99</td>\n      <td>500</td>\n    </tr>\n    <tr>\n      <td>net loss</td>\n      <td>65</td>\n      <td>463</td>\n      <td>808</td>\n      <td>1271</td>\n    </tr>\n    <tr>\n      <td># of deletions / # of insertions</td>\n      <td>0.7</td>\n      <td>2.8</td>\n      <td>4.7</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>average loss per event</td>\n      <td>21</td>\n      <td>9</td>\n      <td>13</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>average gain per event</td>\n      <td>11</td>\n      <td>11</td>\n      <td>7</td>\n      <td>10</td>\n    </tr>\n  </tbody>\n</table>\n\n_Ts: transitions; Tv: transversionsAT bias: (GC\u2192AT\u00a0+\u00a0GC\u2192TA) to (AT\u2192GC\u00a0+\u00a0AT\u2192CG) mutations_\n\nDuring quiescence, the total number of mutations (including redundant ones) resulting in FOAR colonies increases linearly as a function of time. From multiple experiments, we used least squares regression to determine that the slope is 0.55 \u00d7 10\u22127 FOAR mutants per day spent in quiescence (Figure 2A). Importantly, we observed that the number of redundant mutations dramatically fades over time, indicating that novel mutations arise in quiescence (Supplementary files 1). Days 8 and 15 are not statistically different for the Ts:Tv and AT bias (chi2 test) and were therefore combined. Day 1 is statistically different from days 8\u00a0+\u00a015 (Ts/Tv: p<0.05; AT bias: p<0.05 by chi2 tests). The ratio of transition-to-transversion observed at days 8\u00a0+\u00a015 of quiescence was reduced from 1:2.18 to 1:3.7 and the mutational bias toward A/T decreased (3.71 vs 1.58, Table 1). This is mainly due to a relative decrease of the G:C to A:T transitions that is balanced by an increase of the A:T to C:G and G:C to C:G transversions (Figure 2B and Figure 2\u2014figure supplement 1). During two weeks of quiescence, the proportion of de novo indels increases from 28% at day 1 to 57% and 69% after 8 and 15 days, respectively (Figure 2C) to outnumber the SNVs (Figure 2C and D) (day 1 vs days 8\u00a0+\u00a015: p<10\u221210, chi2 test). Altogether, we found more deletions than insertions (in days 8\u00a0+\u00a015: p<10\u22125, chi2 test) with a net loss of 1771 bp in 170 mutants and a gain of 500 bp in 50 mutants (Figure 2D, Table 2). The main class of indels is\u00a0\u00b11 bp and accounts for roughly half the events (Figure 2D). More than one half of the indels occur within homonucleotide runs and several mutations are complex (Supplementary files 1). Collectively, we found a phenotypic mutation rate of 0.55 \u00d7 10\u22127 FOAR colonies per day of quiescence with 0.14 \u00d7 10\u22127 FOAR colonies per day due to SNVs and 0.41 \u00d7 10\u22127 FOAR colonies per day due to indels (Figure 3A,B). Thus, the mutational spectra of growth and quiescence exhibit striking quantitative and qualitative differences. First, elevated levels of indels are generated. Second, two recent MA studies (Behringer and Hall, 2015; Farlow et al., 2015) with fission yeast have shown that in cycling cells insertions outnumber deletions, whereas we observe the reverse in quiescence (Figure 2D). Thus, growth and quiescence apply opposite pressures on the S. pombe genome size. Third, during cell divisions, SNVs elevate the genomic A/T composition (Hershberg and Petrov, 2010; Lynch, 2010). This bias is reduced during quiescence and counteracts the universal A/T enrichment observed during cell division. This suggests that, in addition to the previously recognized meiotic recombination, gene conversion, nucleotide modifications or transposition, the equilibrium of size and composition of the S. pombe genome also depends on the relative strength of the opposing forces applied during growth and quiescence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig3-v1.jpg)\n\n**Figure 3.:** (A) slope of FOAR (as determined in Figure 2A). (B) slopes of FOAR SNVs and indels accumulation. (C) corrected counts determined on all experimental points using least squares regression (D) corrected slopes for SNVs and indels formation in the ura4+ and ura5+ genes.\n\nA possible caveat of our study is that FOA is known to perturb the metabolism of uracil and thymidine and might thus impact differently the mutational spectra of growing and quiescent cells. To evaluate this issue, a yeast cell population was maintained during 6 days in quiescence, and one half of the culture (1.2 108 cells) was directly plated onto FOA plates while the other half was allowed to divide once in rich medium prior to plating. Note that we plated and sequenced all the FOAR mutants present in the culture, allowing to identify all the mutations. The experiment was performed after six days of quiescence when the proportion of quiescent mutations is elevated and the exit of quiescence is still synchronous. We obtained (i) 27 FOAR, including 8 SNVs and 19 Indels when quiescent cells are directly plated on FOA (ii) 56 FOAR when cells are allowed to divide once (iii) 40 mutations appeared as pairs of mutations, including 2 \u00d7 9 SNVs and 2 \u00d7 11 Indels and 16 unique mutations, including 7 SNVs and 9 Indels (iv) All mutations exhibit the quiescence mutational profile, indicating that the FOA drug does not significantly impact on the mutation spectrum of quiescent or dividing cells (Table 3). The 16 unique mutations suggest a frequent heterozygosity of the mutations that can be revealed only after cell division.\n\n**Table 3.**\n Sequencing analysis of all the FOAR colonies recovered after 6 days of quiescence.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>SNVs</th>\n      <th>Indels</th>\n      <th>Insertions</th>\n      <th>Deletions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No division</td>\n      <td>Singles</td>\n      <td>8</td>\n      <td>19</td>\n      <td>2</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Pairs</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>One division</td>\n      <td>Singles</td>\n      <td>7</td>\n      <td>9</td>\n      <td>3</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Pairs</td>\n      <td>9</td>\n      <td>11</td>\n      <td>2</td>\n      <td>9</td>\n    </tr>\n  </tbody>\n</table>\n\n_NA: Not Applicable. All the FOAR isolated from the culture have been sequenced.For the first half of the cultures, the mutations found more than once in the clonal population were discarded.Similarly, identical mutations found in \u2018no division\u2019 and in \u2018with one division\u2019 were discarded._\n\nWe have developed two new methods based on a likelihood framework to infer the total mutation count from the measured 5-FOAR phenotypic mutation rate (methods 1 and 2). We have also computed the total mutation count from a previously proposed method (here method 3)(Drake, 1991; Lang and Murray, 2008), (Materials and methods). For the sake of clarity, we report the corrections obtained using method 1, but provide in parenthesis inferences from the two other methods. When applied to the ura4+/5+ genes together, we found that the corrected number of mutations per day is 0.93 \u00d7 10\u22127 taking into account the mutations that do not result in a 5-FOAR phenotype (1.86 or 1.24 10\u22127 from methods 2 or 3). When applied to SNVs and indels, we found very similar slopes of 0.46 \u00d7 10\u22127 and 0.47 \u00d7 10\u22127, respectively (Figure 3D, Table 4) (1.27:0.59 and 0.50:0.74 10\u22127 using methods 2 and 3). Next, we used this method to extrapolate the number of mutations in the quiescent genome. We expected to find 0.93 \u00d7 10\u22127/1400 (nucleotides of ura4\u00a0+ura5) x 14 \u00d7 106 (nucleotides in the S. pombe genome)=0.93\u00d710\u22123 mutations per genome per day (1.86 and 1.24 10\u22123 using methods 2 and 3).\n\n**Table 4.**\n Estimation of the fraction of non-synonymous SNVs that lead to a phenotype.Table 4\u2014source data 1.Estimation of the fraction of SNVs and Indels that leads to a phenotype.Table 4\u2014source data 2.Estimated mutation rates.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\"></td>\n      <td>ura4</td>\n      <td>ura5</td>\n      <td>Total</td>\n    </tr>\n    <tr>\n      <td>(265 Aa)</td>\n      <td>(216 Aa)</td>\n      <td>(481 Aa)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Potential SNVs</td>\n      <td>Synonymous</td>\n      <td>530 (0.22)</td>\n      <td>443 (0.23)</td>\n      <td>973 (0.22)</td>\n    </tr>\n    <tr>\n      <td>Non-synonymous</td>\n      <td>1739 (0.73)</td>\n      <td>1405 (0.72)</td>\n      <td>3144 (0.73)</td>\n    </tr>\n    <tr>\n      <td>STOPs</td>\n      <td>116 (0.05)</td>\n      <td>96 (0.05)</td>\n      <td>212 (0.05)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Observed SNVs</td>\n      <td>Synonymous</td>\n      <td>3 (0.03)</td>\n      <td>2 (0.03)</td>\n      <td>5 (0.03)</td>\n    </tr>\n    <tr>\n      <td>Non-synonymous</td>\n      <td>74 (0.69)</td>\n      <td>58 (0.73)</td>\n      <td>132 (0.71)</td>\n    </tr>\n    <tr>\n      <td>STOPs</td>\n      <td>29 (0.27)</td>\n      <td>19 (0.24)</td>\n      <td>48 (0.26)</td>\n    </tr>\n    <tr>\n      <td>Non-coding</td>\n      <td>1 (0.01)</td>\n      <td>0 (0.00)</td>\n      <td>1 (0.00)</td>\n    </tr>\n    <tr>\n      <td>Different mutations per Aa</td>\n      <td>(41,13,3)</td>\n      <td>(23,7,5,0,0,1)</td>\n      <td>(64,20,8,0,0,1)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Independent identical mutations per non-syn SNV</td>\n      <td>(64,9,1)</td>\n      <td>(41,11,2,1,1,0,1, 0,1)</td>\n      <td>(105,20,3,1,1,0,1, 0,1)</td>\n    </tr>\n    <tr>\n      <td>Method 1</td>\n      <td>Essential Aa (ML)</td>\n      <td>124</td>\n      <td>54</td>\n      <td>170</td>\n    </tr>\n    <tr>\n      <td>(Essential Aa)</td>\n      <td>[CI 95%]</td>\n      <td>[93,202]</td>\n      <td>[43,81]</td>\n      <td>[140,228]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>f</td>\n      <td>0.47</td>\n      <td>0.25</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>[CI 95%]</td>\n      <td>[0.35,0.76]</td>\n      <td>[0.20,0.38]</td>\n      <td>[0.29,0.47]</td>\n    </tr>\n    <tr>\n      <td>Method 2</td>\n      <td>Essential NS (ML)</td>\n      <td>296</td>\n      <td>88</td>\n      <td>276</td>\n    </tr>\n    <tr>\n      <td>(Non-Syn)</td>\n      <td>[CI 95%]</td>\n      <td>[195,394]</td>\n      <td>[73,118]</td>\n      <td>[228,362]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>f</td>\n      <td>0.17</td>\n      <td>0.06</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>[CI 95%]</td>\n      <td>[0.11,0.23]</td>\n      <td>[0.05,0.08]</td>\n      <td>[0.07,0.12]</td>\n    </tr>\n    <tr>\n      <td>Method 3</td>\n      <td># STOPs among all potentials STOPs</td>\n      <td>0.25</td>\n      <td>0.20</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td>(LM08)</td>\n      <td>f</td>\n      <td>0.17</td>\n      <td>0.21</td>\n      <td>0.19</td>\n    </tr>\n  </tbody>\n</table>\n\nTo extend our observations made on FOAR mutations to the whole genome, we analyzed the mutation spectrum in cells that survived for 3 months of quiescence. For long-term experiments, we changed the medium every other week to maintain oligo elements and glucose as well as to prevent the survivors to feed on the nitrogen released by dead cells. In these conditions, the viability at 3 months is about 0.05% (Figure 4). From several experiments, we observed a biphasic viability curve, with a cell death acceleration after three weeks of quiescence (Figure 4). DNA from 243 colonies was purified. Illumina libraries were constructed and paired-end sequenced with an average coverage above 50x to maintain high quality sequences and a low false discovery rate (FDR) that was experimentally validated (see Material and methods). SNVs and short indels were determined using Genome Analysis Toolkit (GATK) (McKenna et al., 2010; DePristo et al., 2011; Van der Auwera et al., 2013), and we combined the output of several tools including SOAPindel, Prism and Pindel (Li et al., 2013; Jiang et al., 2012; Ye et al., 2009) to increase the sensitivity of indels detection. We performed a stringent calling procedure for both SNVs and indels and we only considered variants that are present in at least 40% of the reads with a local coverage above 10x. Sanger sequencing was used to validate the de novo variants and to estimate the FDR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig4-v1.jpg)\n\n**Figure 4.:** The medium is being replaced every other week starting at day 15, while an aliquot is plated out to monitor the viability. The standard error of the experiments is indicated.\n\nWe report 149 unique mutations, including 72 SNVs and 77 indels from the 243 sequenced genomes (Table 5 and Supplementary files 2). Although low, 0.61 mutations per genome after three months, is 3.5\u20137 times higher than anticipated by our projection (0.084 to 0.17 mutations/genome/three months, depending on the correction method), indicating that this process may not be linear for extended periods of time, as suggested by the viability curve (Figure 4). Among the 59 SNVs involved in the AT bias, we found an AT/GC ratio bias of 1.27, a value intermediates between 1.84 at day 1 or 1.1 at days 8\u00a0+\u00a015. This value is higher than those observed in our targeted experiments, but lower than in cycling cells. Among the 77 indels, all the events detected with GATK were found as well with either Pindel, SOAPindel or Prism (Li et al., 2013; Jiang et al., 2012; Ye et al., 2009). Among these indels, 26 are deletions (25/77\u201335%), a value two times greater than reported in MA lines of cycling cells (14%\u201317%) (Behringer and Hall, 2015; Farlow et al., 2015). Consistent with what was observed in the FOAR study, over 62% (48/77) of the insertions and deletions are\u00a0\u00b11 nucleotide. With respect to genome size, the 77 indels led to the net loss of 215 (511-296) nucleotides. We also analyzed the distribution of the number of mutations (143) per genome (237) that fits perfectly a Poisson distribution. We removed from the calculation the six mutated strains that were screened for phenotypic analysis, see below (Figure 5). This result shows that a unique mutational force, equally affecting all genomes, is at work during quiescence. The long-term quiescence experiment results support (i) the comparable amounts of indels and SNVs predicted in our estimation (Figure 6) (ii) that the proportion of deletions among indels is higher than in MA lines of cycling cells, with more nucleotides lost than gained (iii) over 62% of the deletions/insertions are\u00a0\u00b11 events. Altogether, quiescence in fission yeast reveals Chronos as a new genetic force generating similar proportion of SNV and Indels, together with an enrichment of deletions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig5-v1.jpg)\n\n**Figure 5.:** The six strains exhibiting a phenotype were excluded from the analysis. The fit between the observed and theoretical Poisson distribution indicates that Chronos acts homogeneously on genomes over time. The goodness of fit is excellent (Pchi2\u00a0=\u00a00.56).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig6-v1.jpg)\n\n**Figure 6.:** In blue, we report the percentage of Indels expected from the FOA experiments, that is the ratio of the estimated slopes of accumulation of INDELS and SNVs (using method 1). In red, the observed fraction of INDELS after 3 months of quiescence. In green, the observed fraction of INDELs in the MA lines from (Farlow et al., 2015) P-values are computed using homogeneity chi2 tests.\n\n**Table 5.**\n Type of mutation in whole genomes after 3 months in quiescence.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variants</th>\n      <th>#</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td># of SNVs</td>\n      <td>72</td>\n    </tr>\n    <tr>\n      <td>Ts</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Tv</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <td>Ts:Tv</td>\n      <td>1:21.77</td>\n    </tr>\n    <tr>\n      <td>to A or T</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>to C or G</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>AT bias</td>\n      <td>1.27</td>\n    </tr>\n    <tr>\n      <td># of indels</td>\n      <td>77</td>\n    </tr>\n    <tr>\n      <td># of deletions</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>lost bases</td>\n      <td>511</td>\n    </tr>\n    <tr>\n      <td># of insertions</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>gained of bases</td>\n      <td>296</td>\n    </tr>\n    <tr>\n      <td>net loss</td>\n      <td>215</td>\n    </tr>\n    <tr>\n      <td># of deletions / # of insertions</td>\n      <td>0.54</td>\n    </tr>\n    <tr>\n      <td>average loss per event</td>\n      <td>19.6</td>\n    </tr>\n    <tr>\n      <td>average gain per event</td>\n      <td>5.92</td>\n    </tr>\n  </tbody>\n</table>\n\nThe level of mutations that we have observed after three months in quiescence is likely to cause some heritable phenotypic diversity. Therefore, we conducted a phenotypic survey in conditions that affect a broad range of cellular functions. We did not observe any phenotype upon examination of 384 colonies after 1 day or 1 month of quiescence. However, after 2 and 3 months, we observed 4/376 (1.1%) and 6/334 (1.8%) colonies displaying phenotypes (Table 6), respectively. Genetic crosses confirmed that the phenotype observed in the 10 colonies derives from a single mutated locus. We sequenced the genomes of the six strains isolated after three months and found mutations mapping to alg5, alg8, aur1, ccc2, gdi1 and oca8 genes. These genes encode for cell wall and vacuole/membrane trafficking functions that might improve viability during quiescence. Taken together, we conclude that cellular quiescence allows for genetic variation.\n\n**Table 6.**\n Phenotypic alterations as a function of time spent in quiescence\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Time</th>\n      <th rowspan=\"2\"># of colonies w/phenotype</th>\n      <th rowspan=\"2\">18\u00b0C</th>\n      <th rowspan=\"2\">37\u00b0C</th>\n      <th rowspan=\"2\">KCl 1M</th>\n      <th rowspan=\"2\">Ca(NO3)2 0.15M</th>\n      <th rowspan=\"2\">CaCl20.3M</th>\n      <th rowspan=\"2\">TBZ 15 \u03bcg/ml</th>\n      <th rowspan=\"2\">HU 4 mM</th>\n      <th rowspan=\"2\">SDS 0.01%</th>\n    </tr>\n    <tr>\n      <th>in G0</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1 day</td>\n      <td>0/384</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>1 month</td>\n      <td>0/384</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>2 months</td>\n      <td>4/376</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>1</td>\n      <td>4</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>3 months</td>\n      <td>6/334</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>3</td>\n      <td>3</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n_(-) indicates the absence of a selected phenotype (all the cells form colonies) The numbers in the columns indicate the number of colonies exhibiting a sensitivity to a given treatment (some mutants display a sensitivity to multiple treatments).Serial dilutions were spotted on rich medium plates containing (or not) the drugs at the indicated concentrations. (TBZ): Thiabendazole; (HU): Hydroxyurea; (SDS): Sodium Dodecyl Sulfate_\n\n## Discussion\n\nExtensive work has shown that quiescence is a well-controlled and conserved process (Yanagida, 2009; Lee et al., 1988; Petersen and Hagan, 2005). Two recent studies on RNA interference and telomere stability have highlighted the importance of quiescence for chromosome biology (Maestroni et al., 2017; Roche et al., 2016). Our experimental conditions generate a homogenous quiescent cell population that remains stable during the mutation accumulation experiments. However, we cannot exclude that a very low proportion (<10\u22124) of cells are able to divide during quiescence. For instance, it is possible that persister cells, as observed during vegetative growth in budding yeast (Yaakov et al., 2017), will not arrest in nitrogen starvation conditions and attempt to replicate and divide later on during quiescence. If these replicating cells were generating the FOAR mutants observed during quiescence, we will have to conclude that they generate 1000 times more mutations per replication. Double-strand break (DSB) repair is a process that could generate this level of mutations (Hicks et al., 2010; Holbeck and Strathern, 1997). Nevertheless, these rare replicating cells will have to divide at a constant rate during time in quiescence. Additionally, the number and the distribution of mutations per genome observed in the three months aged cells is hardly compatible with this hypothesis. Therefore, we favor the Chronos model where DNA lesions (not excluding DSBs) that are arising during quiescence (Mochida and Yanagida, 2006; Ben Hassine and Arcangioli, 2009) are repaired with errors that generate mutations with time.\n\nIf the mutations are not generated by errors during DNA replication, what are the mechanism(s) underlying Chronos? As a first attempt, we investigated the involvement of the translesion DNA synthesis (TLS) pathway. We found that the Pcn1-K164R mutant (Coulon et al., 2010) that cannot switch from replicative to TLS mode accumulates only slightly more of FOAR mutants than wt and displays the Chronos profile\u00a0(Figure 7).\u00a0Thus,\u00a0the participation of the TLS pathway in the mutational signature of quiescence is modest. Further investigations of the DNA repair pathways at work during quiescence are needed not only to provide information on the importance of each DNA repair pathway but also valuable insights into physiological source of the spontaneous DNA lesions in quiescence.\n\nInitially, Luria and Delbruck (Luria and Delbr\u00fcck, 1943) expressed the mutation rate per unit time, that was transformed to per generation later by Lea and Coulson (Lea and Coulson, 1949). Now, the common assumption is that the overall mutation rate and spectrum accompanying cell division is combining errors occurring during DNA replicating and/or repair. It was recently proposed that inefficiently repaired lesions increase according to absolute time (Gao et al., 2016). Our work proposes that quiescence is a genetic active state that participates to the mutation fraction that is expressed in unit of time. Thus, S. pombe genome fluctuates between two mutational spectra, which alternatively expose the genome to natural selection that progressively shapes its composition, size and ability. During growth, the universal substitution bias toward AT preference along with the domination of insertions over deletion have been reported in numerous studies (Hershberg and Petrov, 2010; Lynch, 2010). The fact that the replication-driven mutational bias has not yet reached an equilibrium strongly suggests the existence of forces capable of counterbalancing it. Here we propose that Chronos is this novel mutational force that impact on the genetic material. Separate and alternate modes of mutagenesis and selection allow compensatory mutations to arise in one phase of the life cycle and fuel the phenotypic evolution simultaneously into the subsequent phase, a notion that might impact on germ cells genetics. On the contrary, the super-housekeeping genes (Yanagida, 2009) constrain evolution with a strong vector of conservation, since they are required for proliferation, quiescence and the transitions from one to the other (Williams and Williams, 1957).\n\nThe genetics of quiescence underscores the importance of a time-dependent process (Goldmann et al., 2016; Hazen et al., 2016; Kumar and Subramanian, 2002; S\u00e9gurel et al., 2014) to the overall mutation spectrum. This time-dependent process should also help to fine-tune the accuracy of the \u2018molecular clock\u2019 that measures, in units of time (dos Reis et al., 2016), the evolutionary distance of two closely related species with their common ancestor. Such hypotheses are accessible to experimental and modeling approaches and are of great interest for evolutionary, developmental and human-health perspectives.\n\n## Materials and methods\n\n### Strain and sanger sequencing of ura4 and ura5 mutants\n\nThe stable prototrophic M-smt0 PB1623 strain was used in all our experiments. We identified the FOAR mutant strains as ura4- and ura5- mutants by genetic crosses with a known ura4\u2206 strain, purified their DNA, PCR amplified the gene of interest, analyzed the PCR fragment by agarose gel electrophoresis and subjected it to Sanger sequencing.\n\n### Library construction and sequencing\n\nLibrary construction and sequencing was performed by Illumina HiSeq 2500 following the manufacturer's instruction. Base calling was performed using CASAVA 1.9. For each strain, one insert size (ranging from 400 to 800 bp) library was constructed and sequenced. After initial quality control assessment with FastQC version 0.10.1 (Chen et al., 2012) fqCleaner (l\u00a0=\u00a080; q\u00a0=\u00a030) was used to trim the tails of the reads if the Phred quality dropped below 30.\n\n### Alignment-based assembly\n\nWe sequenced 12 strains per lane on an Illumina HiSeq 2500, aligned the resulting reads to the Schizosaccharomyces_ pombe.ASM294v2.23 DNA reference genome with BWA-MEM; version 0.7.5a. (Li and Durbin, 2009). SAMtools version 0.1.19 and Picard version 1.96 (http://picard. sourceforge.net) were used to process the alignment files and to mark duplicate reads. The coverage in our experiments ranges from 60 to 120, with an average of 80. SNVs and small indels were called using GATK version 2.7\u20132 (McKenna et al., 2010). We applied quality score recalibration, indel realignment, duplicate removal, and performed SNV and INDEL discovery and genotyping using standard filtering parameters or variant quality score recalibration according to GATK Best Practices recommendations (DePristo et al., 2011; Van der Auwera et al., 2013). In addition to the GATK analysis, we combined three programs, Pindel (Ye et al., 2009), Prism (Jiang et al., 2012), and SOAPindel (Li et al., 2013) dedicated to the detection of INDELs to search for additional variants not detected by GATK. Only variants detected at least 10-times in a sample and not found in any other strain sequenced from the same G0 pool were considered.\n\n### Filtering\n\nFor GATK, Pindel, Prism and SOAPindel analyses, only variants detected at least 10-times in a sample and not found in any other strain sequenced from the same G0 pool were considered. For GATK and indels detection, we have determined the FDR by Sanger sequencing on a larger set of previously sequenced strains. 20 random SNVs whose quality scores ranged from 21 to 1700 were analyzed. Only the lowest score (21; one occurrence) turned out to be a false positive, yielding an FDR of 0.05. Concerning the indels, all the variants detected by at least two approaches, including GATK, turned out to be true by Sanger sequencing. For the variants only detected by Prism, we sequenced 13 occurrences and found that only the two lowest scores (DP10) were false positives (FDR\u00a0=\u00a00.15). Pindel yielded the poorest yield of variants that were systematically true and called by at least one other program. SOAPindel called a large number of variants that were dispatched into five classes according to their type of output in the VCF file. We kept only the relevant calls labeled as HP\u00a0=\u00a0A_B or HP\u00a0=\u00a0X_N in the vcf file for which the FDR determined on 14 variants was 0.2143 (in the three other classes, 54 occurrences, only five were true and were not taken into account).\n\n### Miscellaneous\n\nTemplate DNA fragments were hybridized to the surface of paired-end (PE) flow cells (HiSeq 2500 sequencing instruments) and amplified to form clusters using the Illumina cBotTM. Paired-end libraries were sequenced using 2 \u00d7 120 cycles of incorporation and imaging with Illumina SBS kits. For the HiSeq 2500, 2 \u00d7 101 cycles with SBS kits v3 were employed. Each library was initially run, assessing optimal cluster densities, insert size, duplication rates and comparison to chip genotyping data. Following validation, the desired sequencing depth (>60X) was then obtained. Real-time analysis involved conversion of image data to base-calling in real-time.\n\n### Estimation of the total mutation rate\n\nThe experimental assay based on 5-FOA resistance can be used to estimate the fraction of mutations that give rise to a phenotype. All the mutations that we have observed are single mutation events that invalidate either the ura4+ or ura5+ genes, hence resulting in the FOAR phenotype. We now want to infer the total mutation rate, both for SNVs and indels independently. We hypothesize that most indels will be deleterious to the genes and that therefore the total indel rate is close the observed indel rate that results in FOAR (for genes - 50% of the genome). On the contrary, many SNVs are likely to exhibit no phenotype and, therefore, we observe only a fraction of the total number of SNVs.\n\n### The gene model\n\nAs we only observe mutations among SNVs that lead to a phenotype, we have estimated the fraction f of non-synonymous SNVs that lead to a phenotype using three alternative methods. All three methods exploit different observations and lead to different estimators. As none seems obviously better than the two others, we report the three results in Table 4. In all three methods, the underlying gene model is the same and is indicated in Figure 8.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig7-v1.jpg)\n\n**Figure 7.:** (A) Survival curves in G0 of 3 independent prototrophic pcn1-K164R clones as a function of time. The standard error is indicated. (B) Frequency with standard error and slope of FOAR accumulation in G0 of 3 independent pcn1-K164R clones. The R square value is indicated. (C) Table and (D) graphical representation of the distribution among SNVs and indels of the ura4 and ura5 mutations accumulating over time in pcn1-K164R quiescent cells. The total number of the non-redundant events analyzed is indicated in the table.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/27469/elife-27469-fig8-v1.jpg)\n\n**Figure 8.:** In all three methods, the gene model is the same. We observe only a subset of all possible SNVs (the back areas) among all SNVs that lead to a phenotype (the black and grey areas). All synonymous SNVs do not exhibit a phenotype. The methods aim at estimating the unknown proportion f of the non-synonymous SNVs that leads to a phenotype.\n\n### Method 1 \u2013 From the Aa saturation\n\nThe first method assumes that the non-synonymous SNVs that lead to a phenotype are evenly distributed among an unknown number \u2018essential\u2019 amino-acid (Aa). Whenever an essential Aa is mutated, there is a FOAR phenotype. We thus simply compute the observed distribution of the number of different mutations per Aa (from Table 4 -raw), from which we estimate the total number of essential Aa using maximum likelihood (see below). It thus assumes no mutational bias and uses the distribution of different mutations per Aa.\n\n### Method 2 \u2013 From the nucleotide saturation\n\nThe second method assumes that non-synonymous SNVs that lead to a phenotype can be targeted several times by independent mutations. Whenever one of them is mutated, there is a phenotype. We thus build the distribution of the number of independent recurrent mutations for each non-synonymous SNVs (from Table 4 -filtered), which is then used to estimate the total number of non-synonymous SNVs that lead to a phenotype using maximum likelihood (see below). It thus assumes no mutational bias and uses the distribution of independent identical mutations per non-synonymous SNV.\n\n### Method 3 \u2013 Lang and Murray (2008)\n\nThe last method, proposed by Lang and Murray (2008), equates the level of saturation of STOPs and non-synonymous mutations that lead to a phenotype. The level of saturation of STOPs is estimated by the fraction of STOPs that are reported (over the total number of possible STOPs). It thus assumes no mutational bias and uses the observed number of STOPs and non-synonymous SNVs.\n\n### Estimating the total number of targets from k-distribution by maximum likelihood\n\nThe model assumes that a set of k targets give rise to a phenotype once mutated (targets are either essential Aa \u2013method 1-- or non-synonymous mutations with a phenotype \u2013method 2--). All m mutations are uniformly distributed among the targets. Once all mutations are assigned, a target can have 0, 1 or more mutations. Only the number of non-mutated targets (0 hits) is unknown and therefore to be estimated. We estimated it by maximum likelihood using the distribution of mutations per target, hereafter the k-distribution.\n\nWe observe a total of m mutations uniformly distributed among the k targets, where target i has mi mutations:\n\n$$\nm=\\sumi=2km_{i}\n$$\n\nAs each mutation has a probability 1/k to occur at a particular target, the set of mi is given by the multinomial probability distribution:\n\n$$\n\\frac{m!}{\\prodi=1km_{i}!}\\times\\frac{1}{k^{m}}\n$$\n\nWe consider in our model that all targets are exchangeable. Defining kj, as the number of targets that have j substitutions, the number of exchangeable configurations is given by:\n\n$$\n\\frac{k!}{\\prodi=0maxk_{i}!}\n$$\n\n, where max is the highest observed number of mutation for a target. Therefore, the product of the two previous terms once rearranged, is the likelihood of the overall observed distribution of (k1, k2, \u2026 kmax) given k:\n\n$$\nP(k_{1},k_{2},...,k_{max}|k)=\\frac{m!k!}{\\prodi=0maxk_{i}!(i!)^{k_{i}}}\\times\\frac{1}{k^{m}}\n$$\n\nwith\n\n$$\nm=\\sumi=1maxik_{i}\n$$\n\nand\n\n$$\nk_{0}=k\u2212\\sumi=1maxk_{i}\n$$\n\nWe thus computed numerically the maximum likelihood estimate of k as well as its associated 95% credibility interval (Table S3).\n\n### How many SNVs can lead to a phenotype?\n\nAs we observe only SNVs that disrupt the function of the genes, we assumed that all synonymous substitutions have no phenotype, that all STOP substitutions do, as well as a fraction f of the non-synonymous SNVs. Mathematically, it is expressed as [PSTOP\u00a0+\u00a0f PNS], where PSTOP PNS are the proportions of STOP and Non-Synonymous mutations among all possible mutations.\n\n### How many indels can lead to a phenotype?\n\nWe further assumed that most insertions or deletions have phenotypes, except when the reading frame is kept intact. For these in-frame indels (which size is a multiple of 3), there is a phenotype only when an essential Aa (estimated by f) is deleted or disrupted by an insertion.\n\nWe retrieve the size distribution of indels and inflated the 3 bp indels (0.053 for URA4 and 0.019 for URA5) by a factor of 1/f and the 6bp indels (0.019 for URA4 and 0.0 for URA5) by a factor of 1/(1-(1 f)2). Larger insertions/deletions are all assumed to have a phenotype. Mathematically, it is expressed as 1/ [1 + P3nt / f + P6nt / (1-(1 f)2)], where P3nt P6nt are the proportions of indels of size 3nt or 6nt among all observed indels (Table 4\u2014source data 1), in which the values for f were the ones estimated from Table 4 for each category. The estimated mutation rates are reported in Table 4\u2014source data 2.\n",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "90267cff-1f64-4aee-93ee-9457e29913f2",
+      "submission_id": "da474c0c-ad5d-4da6-a020-4c5f5379eb76",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27469.026](https://doi.org/10.7554/eLife.27469.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Quiescence unveils a novel mutational force in fission yeast\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Nick Rhind (Reviewer #1) and Primo Sch\u00e4r (Reviewer #3).\n\nSummary:\n\nThe study shows that starved fission yeast cells still mutate their genome at high rate, and define the associated mutation spectrum. All three reviewers found this result interesting, but raised substantial concerns that will need to be addressed using more experiments and analysis.\n\nEssential revisions:\n\nThere are four main issues that the reviewers are only partially convinced on and that needs to be clarified:\n\n1) Lack of cell replication: please validate quiescence by providing quantitative data on the population homogeneity with regard to cell cycle and proliferation.\n\n2) The mechanism generating the mutations: Please test the hypothesis/rule out the possibility that the translesion polymerases as the basis of the new spectrum.\n\n3) Please also examine the possibility that nucleotide imbalance (caused by FOA or metabolic shift) triggers repair-mediated mutational events. An insight into this question may be gained by comparing mutation spectra arising under FOA (ur4/5 sequences) and those occurring spontaneously (genome sequencing) in a quantitative manner.\n\n4) Please extend the analysis of sequencing data as proposed by the reviewers.\n\nReviewer #1:\n\nGangloff et al. present a simple but convincing demonstration of the difference between the mutation spectrum of log phase fission yeast and those in a quiescent population. The fact that the quiescent mutation rate is so high is surprising \u2013 my intuition was that it should be low in a metabolically less active state presumably designed for durability \u2013 and the contrast between the two spectra raise interesting issues of mutational homeostasis. Nonetheless, it seems to me that this observation is more intriguing than informative. To have a significant impact in the field, I would think that one would want to provide some insight into the mechanisms by which these mutations accumulate or a more rigorous formal treatment of how the two spectra balance and what that says about the amount of time fission yeast spend growing versus quiescent.\n\nIn addition, attention to the following issues would strengthen the paper.\n\nIt is not clear how useful it was to name the quiescence mutational spectrum \"Chronos\", especially since Chronos does not appear again in the paper.\n\nAlthough it is clear that the populations analyzed are quiescent, it is harder to say much specific about the cell leading to the selected mutations. In particular, calling these mutations replication independent is probably too strong. It would be useful to include a more explicit discussion of whether they may be rare replicating cells and, if so, what the different mutation spectrum might say about replication in quiescent populations.\n\nThe speculation about the mutational spectra in mammalian gametes is far removed from the results presented in the paper and does not add much insight to either the fission yeast or the mammalian biology. It should be saved for an opinion piece rather than a research paper.\n\nSpeculation, or preferably data, that would be more useful would address the mechanism of the mutations in quiescent populations.\n\nReviewer #2:\n\nThis is an interesting paper that studies changes in the spectrum of mutations in S. pombe as cells are held in starvation medium, lacking nitrogen. The frequency of mutations increases linearly with time over two weeks but apparently increases at 3 months. The spectrum of mutation changes, with somewhat more deletions than insertions (though this is not evident in the whole genome survey of 123 strains after 3 months).\n\nThere are a number of statements that require clarifications.\n\n1) Introduction, second paragraph. According to Marguerat et al. 2012, \"These cells remain metabolically active by recycling nitrogen, become highly resistant to multiple stresses, and survive for months (Yanagida, 2009).\" This raises the fundamental question whether quiescent cells are really devoid of DNA replication.\n\nWould the authors know if 0.1% were able to replicate their DNA, with a different mutational profile? Could they show whether EdU or BrdU are incorporated, and if so, are these incorporations over long segments or only in repair-sized patches?\n\nIf additional experiments are suggested, they need to be justified by the reviewer. I am not convinced that metabolically active cells, able to recycle nutrients, are truly non-replicating. It seems equally likely that a subset of cells (\"persisters\") might indeed fully replicate their genomes. A more direct way of showing the extent of new DNA synthesis is highly desirable, but other reviewers may disagree.\n\n2) Results, second paragraph. It is curious that a 50-50 mixture of ura4 and WT cells survives better than either population alone. This appears to be statistically significant. Is it? In any case the issue is not whether ura4 survives less, but whether it survives better (which would suggest some possibility of selection). When the 50-50 mixture survives, is there a change in the proportion of ura4 cells?\n\n3) Results, sixth paragraph. What happens to mutations when the medium is not changed every two weeks? And what does it mean that the medium is changed to \"maintain oligo elements\" (are these nucleotides?).\n\n4) \"Mutations found more than once in clonal population\" \u2013 do the authors mean \"more than once in different clonal populations\"?\n\n5) Figure 1. Most mutations are apparently +/-1 indels. Do they arise in homonucleotide runs? I am not sure what \"low complexity\" sequences means.\n\n6) Results, fourth paragraph. I find statements about evolutionary pressures overstated, based on this small survey of two genes whose nucleotide sequence may \u2013 or may not \u2013 reflect the entire genome. The small changes in + and \u2013 indels are insufficient for such a claim, especially because the 3-month data don't support the claim.\n\nIn this regard, is this whole genome or exome sequencing? If whole genome, were there no changes in copy number or other changes in the repeated sequences around centromeres, rDNA and elsewhere? These changes would support the idea that nutritional restriction would favor deletion to make a smaller, easier-to-replicate genome, even if under supposedly nonreplicating conditions.\n\n7) Figure 2. I am unable to evaluate the corrections to mutation frequencies based on the author's new method of estimating \"essential\" amino acids. I do not see how they evaluated the better predictive fit of this method relative to Lang and Murray's, which seems to be a straightforward calculation based on the idea that STOP codons become over-represented because many nonsynonymous changes are still functional. Unless the GC content is 50%in coding regions, and given that some SNVs are much more frequent than others, the statement that each mutation has a probability of 1/k may not be correct. In any case please provide the criteria by which the new method outperforms Lang and Murray and better explain the corrected frequencies.\n\n8)Results, seventh paragraph. What was the estimated mutation frequency for 3 months?\n\n9) Table 3. Is there a way to show which of the 4 or 6 mutations has which of the 8 phenotypes? And, since there was only about 0.7 mutations per genome, if I read correctly, it should be evident \u2013 or highly suggestive \u2013 what mutation in what gene caused these phenotypes. Do these mutations make sense in terms of their phenotypes?\n\n10) The biggest question surrounding this approach is why these changes in mutation occur. In bacteria, SLAM reflects the increased use of mutagenic DNA polymerase DinB, leading to a change in mutational spectrum. How do bacterial mutation rates change with time? In budding yeast, DNA repair has an 1000-times increase in mutation rate compared to replication, with evidence of the use of a different DNA polymerase in some instances. None of these studies is cited, although Foster's early work on adaptive mutation is. Rosenberg's extensive later work deserves attention. Ditto Strathern's and Haber's yeast work.\n\nSo, if starving (quiescent) cells are subject to the use of a different polymerase or an altered mechanism of DNA repair, there well could be a change in mutation rate. These possibilities should be explored, perhaps instead of rather unconnected musings on the differences between sperm and ovum.\n\nReviewer #3:\n\nThe manuscript by Serge Gangloff and co-workers presents data on mutagenesis in quiescent S. pombe cells. The authors combined conventional and next generation sequencing to identify genetic alterations that occur in S. pombe cells held in a non-replicating state by nitrogen starvation for up to 3 months. In a first approach they analyse in a time course of 15 days single nucleotide changes and insertion/deletion mutations in the ura4 and ura5 genes in 5-FOA resistant cells. This dataset shows that, following entry into the quiescent state, mutations accumulate in a time-dependent manner, showing a characteristic spectrum that is distinct from replication-associate mutagenesis. A second approach identifies genomic mutations in cell populations following 3 months of nitrogen starvation and essentially corroborates the replication-independent mutational features. The authors conclude that replication- and quiescence-associated mutagenesis represent two alternative mutation drivers, facilitating a balanced evolution of genomes.\n\nThis work addresses a long-recognized but difficult to study, yet important gap of knowledge in mutagenesis, the highly complex question of the stability of genomes in non-replicating cells. The authors approach is based on the well-defined fission yeast model, where nitrogen-starvation can induce a \"physiological\" quiescent state, as well as of state of the art targeted and genome-wide analyses. The experimental setup has generated highly interesting data that one would like to explore further, both conceptually and mechanistically. While I greatly appreciate the authors efforts to advance this area of research and see the potential importance of the work, my impression is that the state of the current manuscript is somewhat immature; the data is purely descriptive at this point and, rather than using them to develop (and test?) hypotheses regarding the molecular mechanisms promoting mutagenesis in quiescence, the authors focus on genome evolutionary interpretations that seem to stretch the evidence presented considerably. These are definitely interesting considerations but the experimental support is not compelling. In my opinion the manuscript would benefit greatly by the addition of some controls (G0-phase validation), more rigorous analyses and discussion of the actual data, and a more thorough consideration/discussion (perhaps testing) of the potential mechanisms involved in quiescence mutagenesis. Addressing the following questions might help.\n\n1) Mutational baseline: I have a number of questions relating to the discrimination of replicating from quiescent cells, i.e. the definition of baseline, which is critical here. (i) It is assumed that a majority of cells enter G0 under nitrogen-starved conditions. While this it probably correct, was the cell cycle status validated in these experiments and where proportions of G0 cells assessed? (i) Vice versa, what would be the proportion of quiescent cells in proliferating populations of S. pombe cells? (iii) How are pre-existing persisters dealt with and excluded? (iv) Why isn't there more fluctuation in mutation frequencies at end of replication, early quiescence? How many cultures were tested?\n\n2) FOA mutation assay and time of occurrence of mutations: The mutation assay described bases on the selection of 5-FOA resistant survivors. FOA itself perturbs the uracil metabolism and, thereby also the dNTP balance. This in itself can generate a shift in mutational spectra. In the experimental setup used, mutations may emerge only after re-plating of cells on FOA media, possibly by repair of replication of DNA damage that was induced during quiescence. Nucleotide imbalance may then affect the type of mutation generated. Was this considered? What is the authors\u2019 take on this? I think, this should be addressed briefly in the Discussion.\n\n3) The FOA-based mutation assay is not fully unbiased as it scores functional changes related to uracil mechanism only. This limitation should be phrased in the description of the assay. To what extent could the spectra shift be explained by the FOA effect on nucleotide metabolisms (changes involving T?).\n\n4) Mutation spectra: I suggest displaying the frequencies of individual single-nucleotide changes (e.g. Figure 1B, respective data in Tables 1 and 2) as normalized to the total number of relevant scorable base pairs. This would provide mora accurate information about true mutation preferences.\n\n5) CpG mutagenesis: It is interesting, very interesting indeed, that CpG dinucleotides are preferential sites of mutation. Again, it would be interesting to see if and to what extent the normalized frequency (normalized to total number of such sites in the scorable sequences) is higher than predictable (statistics against all dinucleotides). This is likely, given the coding importance of these nucleotides and the fact that they not only preferentially mutate by C (or 5mC) deamination but also by alkylation of G (6-methylguanine), for instance.\n\n6) Statistics in general: Are the differences in spectra between day 1 and day 8+15 statistically significant (Figures 1 and 2)?\n\n7) Normalizations: I would be interested to have the analysis performed in Figure 2 extended for individual SNVs (again normalized to the total number of scorable bases in each category).\n\n8) Genome-scale mutation assessment: This precious dataset should, in my opinion, be explored further, for instance to validate the CpG bias, or sequence context biases, or the FOA bias. I could imagine there is quite some potential there. Also, it seem important to me to compare this dataset to one of exponentially growing cells (same number of cell after similar time of continuous cultivation). In my opinion, this experiment is a real strength of the paper.\n\n9) Discussion: The Discussion is interesting and stimulating but rather far reaching. Given that some caveats exist (FOA, persisters\u2026) and the datasets are not exhaustively explored and also entirely descriptive, I would prefer to have some discussion of the actual data, their strengths and weaknesses, and the mechanisms of mutagenesis implicated. What could be the molecular reason for the spectrum shift?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Quiescence unveils a novel mutational force in fission yeast\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai as the Senior and Reviewing Editor and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nPlease acknowledge that repair processes could indeed give 1000x increases that you see.\n\nReviewer #1:\n\nI raised two main points about the Gangloff manuscript: the question of whether a minority of cells may be replicating during quiescence and the opinion that, without some mechanistic insight into the cause of the mutations during quiescence or a more rigorous formal treatment of the evolutionary implications of the observation, the work was more intriguing than informative.\n\nThe authors addressed my first point, although somewhat indirectly. Instead of measuring the number of cells replicating, they measure the number of cells dividing and conclude that since very few cell divide, very few could be replicating. The other possibility is that cell occasionally replicate, but then arrest in a G2 G0, which has been reported in fission yeast. Nonetheless, I am persuaded by their data that there is unlikely to be a significant fraction of replicating cells and that their mutations are therefore most likely replication independent.\n\nThe authors\u2019 response to the second point is less satisfying. They show that TLS is not a significant contributor to the mutation spectrum they observe, but offer no mechanistic insight beyond that and still speculate about the evolutionary significance of their result in only vague and qualitative terms. So, while I agree that this intriguing observation will cause people to think differently about DNA stability in quiescence, it does not provide much guidance as to what the new way of thinking about it should be.\n\nReviewer #2:\n\nThe authors have generally made a very good effort to address the reviewers' concerns. Showing that a PCNA mutation did not alter significantly the mutation rate was important (though it remains then a question what is the source of the elevated mutations, if they are not replicating or subject to the use of translesion polymerases to deal with damage in nondividing cells).\n\nI am still stuck on one point, which I would ask the authors to address directly, based on their own statement in the rebuttal: \"If these replicating cells were generating the FOAR mutants observed during quiescence, we will have to conclude that they generate 1,000 times more mutations per replication.\" That was my point originally \u2013 the papers now cited by Dr. Arcangioli from yeast DNA damage studies make exactly that argument: repair DNA synthesis is 1000x more mutagenic than normal replicative errors. So they should acknowledge that \u2013 although they believe their data make this unlikely \u2013 the very high rate of errors in DSB repair could indeed give the numbers that their CHRONOS study reveals.\n",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4015a89-56b0-4012-b855-3122a65b6c41",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C1",
+      "claim": "During cell division, the spontaneous mutation rate is expressed as the probability of mutations per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "During cell division, the spontaneous mutation rate is expressed as the probability of mutations per generation (Luria and Delbr\u00fcck, 1943; Lea and Coulson, 1949)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to foundational work by Luria and Delbr\u00fcck (1943) and Lea and Coulson (1949)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "9c57b8aa-a1b1-42e3-8f79-862944a48545",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C2",
+      "claim": "During quiescence, the spontaneous mutation rate is expressed per unit of time.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas during quiescence it will be expressed per unit of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a contrast to the replication-dependent mutation rate, based on logical inference about non-dividing cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a37ed1a9-bc19-4959-a3ca-bf42661e62e7",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C3",
+      "claim": "During quiescence, the unicellular haploid fission yeast accumulates mutations as a linear function of time.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report that during quiescence, the unicellular haploid fission yeast accumulates mutations as a linear function of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a finding of this study, supported by experimental data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "d07309b6-e1e6-46fa-8bd8-749ab2384659",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C4",
+      "claim": "The mutational landscape of quiescence is characterized by insertion/deletion (indels) accumulating as fast as single nucleotide variants (SNVs).",
+      "claim_type": "EXPLICIT",
+      "source": "The novel mutational landscape of quiescence is characterized by insertion/deletion (indels) accumulating as fast as single nucleotide variants (SNVs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a finding, supported by data in Figure 2 and Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f3b2fb62-da5e-4157-a8e8-6cd7fe5adf62",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C5",
+      "claim": "The mutational landscape of quiescence is characterized by elevated amounts of deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel mutational landscape of quiescence is characterized by insertion/deletion (indels) accumulating as fast as single nucleotide variants (SNVs), and elevated amounts of deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a finding, supported by data in Table 2 showing more deletions than insertions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e76c3875-2b26-452f-abb9-53eff8566691",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C6",
+      "claim": "The replication-independent mutational spectrum at the whole-genome level was confirmed in a clonally aged population after 3 months of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "When we extended the study to 3 months of quiescence, we confirmed the replication-independent mutational spectrum at the whole-genome level of a clonally aged population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from extended experiments, supported by whole-genome sequencing data in Table 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "ab7efae2-9452-4d85-83d5-e5cb8c8ffcc8",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C7",
+      "claim": "Quiescence uncovers phenotypic variations that subject the cells to natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "When we extended the study to 3 months of quiescence, we confirmed the replication-independent mutational spectrum at the whole-genome level of a clonally aged population and uncovered phenotypic variations that subject the cells to natural selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding, supported by phenotypic survey data in Table 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "628ef15c-b7f6-4711-94e8-b66a6aa0b36a",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C8",
+      "claim": "Genomes continuously evolve under two alternating phases (growth and quiescence) that impact their size and composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results support the idea that genomes continuously evolve under two alternating phases that will impact on their size and composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion supported by the contrasting mutational spectra observed in growth versus quiescence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2b43fb2e-d58b-4659-beca-5c04f0b82992",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C9",
+      "claim": "During growth, most mutations are due to DNA replication errors.",
+      "claim_type": "EXPLICIT",
+      "source": "During growth, most of the mutations are due to DNA replication errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "0bb25500-4a99-4bec-b5a4-154f56be6bd0",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C10",
+      "claim": "The replication-dependent mutations define a spectrum quite similar among species, with the domination of Single Nucleotide Variants (SNVs) over Insertions/Deletions (Indels) and Structural Variants (SVs).",
+      "claim_type": "EXPLICIT",
+      "source": "The replication-dependent mutations define a spectrum quite similar among species, with the domination of Single Nucleotide Variants (SNVs) over Insertions/Deletions (Indels) and Structural Variants (SVs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge, supported by citations to multiple studies",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e2135cae-847c-4af3-8c67-31ea0aa66ee6",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C11",
+      "claim": "During cell division, there is a preference for insertions at the expense of deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, preference for insertions at the expense of deletions along with a universal substitution bias toward AT has been frequently reported during cell division (Hershberg and Petrov, 2010; Lynch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hershberg and Petrov (2010) and Lynch (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "803fbc19-5e8d-4bd2-b734-c015c2d8855b",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C12",
+      "claim": "During cell division, there is a universal substitution bias toward AT.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, preference for insertions at the expense of deletions along with a universal substitution bias toward AT has been frequently reported during cell division (Hershberg and Petrov, 2010; Lynch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hershberg and Petrov (2010) and Lynch (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "65b0d372-509b-4a92-a78e-7e3b077bd597",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C13",
+      "claim": "At the evolutionary timescale, mutations accumulate as a linear function of time.",
+      "claim_type": "EXPLICIT",
+      "source": "At the evolutionary timescale, the mutations accumulate as a linear function of time (Zuckerkandl and Pauling, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zuckerkandl and Pauling (1962)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "ce38ba0d-3aa9-40c6-9ae4-6a93716de18c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C14",
+      "claim": "Mutations arise during cell cycle arrest, slow growth or under stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past decades, it has become increasingly evident that mutations also arise during cell cycle arrest, slow growth or under stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as increasingly evident knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "74f02675-3dbc-461d-96bc-4804dc8a2c27",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C15",
+      "claim": "Stress conditions may increase mutations and trigger accelerated evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "An important notion related to adaptive mutation is that stress conditions may increase mutations and trigger accelerated evolution (Yaakov et al., 2017; Long et al., 2016; Rosenberg, 1997; Hicks et al., 2010; Holbeck and Strathern, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on adaptive mutation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "edf4decf-2707-4d38-99f4-152a87d80e1a",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C16",
+      "claim": "A bacterial subpopulation of phenotypic variants called 'persisters' are more resistant to stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent notion is that a bacterial subpopulation of phenotypic variants called 'persisters' are more resistant to stress conditions suggesting that they precede adaptive mutations (for review (Harms et al., 2016))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review by Harms et al. (2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a1bc6178-7463-4541-a7a8-32ee7e8325e1",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C17",
+      "claim": "Persisters precede adaptive mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent notion is that a bacterial subpopulation of phenotypic variants called 'persisters' are more resistant to stress conditions suggesting that they precede adaptive mutations (for review (Harms et al., 2016))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Suggested by the review cited (Harms et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "946dd57a-8d5f-44a1-b742-68aa792f34a4",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C18",
+      "claim": "The persister phenomenon was also found in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "a notion that was also found in budding yeast (Yaakov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yaakov et al. (2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "67caefec-b880-4781-be76-0b167f2cfc33",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C19",
+      "claim": "Quiescence is a common cell state on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Quiescence is a common cell state on earth (Lewis and Gattie, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lewis and Gattie (1991)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "b212f007-a0b8-438c-be73-d102fa0cb853",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C20",
+      "claim": "In metazoan, stem cells alternate between variable periods of growth and quiescence depending on the period of development and the type of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoan, stem cells alternate between variable periods of growth and quiescence depending on the period of development and the type of tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about stem cell biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "acdd6e51-d66b-42f1-be79-1bd5090cac6f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C21",
+      "claim": "For Schizosaccharomyces pombe, removing nitrogen triggers mating of opposite mating-types followed by meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unicellular fission yeast, Schizosaccharomyces pombe, removing nitrogen triggers mating of opposite mating-types followed by meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about fission yeast biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "80bb063b-6869-4730-a06e-78f54a4c4163",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C22",
+      "claim": "When the fission yeast population is composed of only one mating-type, cells arrest in the G1-phase and rapidly enter into quiescence with a 1C content.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the population is composed of only one mating-type they arrest in the G1-phase and rapidly enter into quiescence with a 1C content (Nurse and Bissett, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nurse and Bissett (1981)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "21b2e54d-218c-4259-8f50-a1585c115984",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C23",
+      "claim": "Quiescent fission yeast cells remain viable for months given the medium is refreshed every other week.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, the cells remain viable for months given the medium is refreshed every other week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation about the experimental system",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e405746e-2259-4f0e-be71-116fe6e00cd6",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C24",
+      "claim": "Quiescent fission yeast cells are metabolically active.",
+      "claim_type": "EXPLICIT",
+      "source": "They are metabolically active, exhibit stress-responsive signaling and are highly efficient in DNA damage repair (Mochida and Yanagida, 2006; Yanagida, 2009; Ben Hassine and Arcangioli, 2009; Marguerat et al., 2012; Gangloff and Arcangioli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on quiescent fission yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e7a30707-4be5-46fd-9283-e7cef93f8a40",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C25",
+      "claim": "Quiescent fission yeast cells exhibit stress-responsive signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "They are metabolically active, exhibit stress-responsive signaling and are highly efficient in DNA damage repair (Mochida and Yanagida, 2006; Yanagida, 2009; Ben Hassine and Arcangioli, 2009; Marguerat et al., 2012; Gangloff and Arcangioli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on quiescent fission yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7856fbe3-da02-4ce3-bc50-1c45f19e77d7",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C26",
+      "claim": "Quiescent fission yeast cells are highly efficient in DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "They are metabolically active, exhibit stress-responsive signaling and are highly efficient in DNA damage repair (Mochida and Yanagida, 2006; Yanagida, 2009; Ben Hassine and Arcangioli, 2009; Marguerat et al., 2012; Gangloff and Arcangioli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on quiescent fission yeast",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a67ab943-6842-4b73-8921-2026d287b763",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C27",
+      "claim": "After two divisions in nitrogen-free medium, a majority of fission yeast cells arrests in the G1 phase and enters into the G0 quiescent state.",
+      "claim_type": "EXPLICIT",
+      "source": "After two divisions, a majority of the cells arrests in the G1 phase and enters into the G0 quiescent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2f59c163-c264-4a45-b67c-59c4202d098f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C28",
+      "claim": "During vegetative growth, fission yeast cell size ranges from 7\u201314 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell-size (7\u201314 \u03bcm) and proportion of cells with a septum (~10%) observed during vegetative growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f206414f-f42d-4988-846b-0316aa31e3ca",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C29",
+      "claim": "During vegetative growth, approximately 10% of fission yeast cells exhibit a septum.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell-size (7\u201314 \u03bcm) and proportion of cells with a septum (~10%) observed during vegetative growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2aa3a380-8a52-4c62-94c2-4a6d3c2a7f30",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C30",
+      "claim": "After 1 day of quiescence, more than 99.9% of fission yeast cells are septum-free and measure 4 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "abruptly decrease after 1 day of quiescence, with more than 99,9% of septum free cells measuring 4 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e3ad994a-9c4a-490d-92a4-2680ba961b15",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C31",
+      "claim": "During the following days of quiescence, the proportion of cells containing a septum dropped below 1 in 20,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During the following days of quiescence, the proportion of cells containing a septum dropped below 1 in 20,000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "3993e326-57ca-4cc3-bc13-87c792edc3ac",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C32",
+      "claim": "The proportion of cells dividing or replicating during quiescence is very low.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the proportion of cells dividing or replicating during quiescence is very low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the septum data in Table 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "c642b5eb-ab44-4583-b038-0b03215f985f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C33",
+      "claim": "The ura4\u2206 mutants remain viable for two weeks of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We ascertained that the ura4\u2206 mutants remain viable for two weeks of quiescence, indicating that colonies resistant to 5-FOA (FOAR) emerging early are not biased by selection (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "1ec35c0c-c8f5-470c-9b07-61936aea910b",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C34",
+      "claim": "Colonies resistant to 5-FOA emerging early are not biased by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We ascertained that the ura4\u2206 mutants remain viable for two weeks of quiescence, indicating that colonies resistant to 5-FOA (FOAR) emerging early are not biased by selection (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the viability data shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "fd89c398-b308-47d8-9d9e-8bebf9a32e35",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C35",
+      "claim": "The phenotypic accumulation assay is unbiased during the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "and that our phenotypic accumulation assay is unbiased during the course of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the viability data shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "c8035219-9d69-4aa2-be09-f56f49ebef90",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C36",
+      "claim": "At day 1, a large fraction of FOAR colonies derive from replicative mutations that appeared during the last rounds of DNA replication prior or during entry into quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 1, a large fraction of FOAR colonies derive from replicative mutations that have appeared during the last rounds of DNA replication prior or during entry into quiescence and are capable of surviving two to three generations on media lacking uracil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the timing of mutation appearance and the fluctuation assay principle",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "b94feff8-b923-4a5d-bc2c-c2eb5bbce377",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C37",
+      "claim": "The frequency of non-redundant FOAR mutations at day 1 ranges from 1 to 3 \u00d7 10\u22127 across various independent experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of non-redundant FOAR mutations at day 1 ranges from 1 to 3 \u00d7 10\u22127 across the various independent experiments (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e36e6ba6-8ac5-4c8c-9b9f-5dac008472ee",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C38",
+      "claim": "At day one, the transition to transversion ratio is 1:2.18.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a 1:2.18 ratio",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from sequencing data, shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "eefbfdad-ef02-462f-a361-a46651e02fb8",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C39",
+      "claim": "At day one, there is a mutational bias towards the enrichment of A/T with a ratio of 3.71.",
+      "claim_type": "EXPLICIT",
+      "source": "with a mutational bias towards the enrichment of A/T (3.71, Table 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from sequencing data, shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "86e2d381-823e-4800-9869-e9e8b975662f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C40",
+      "claim": "The A/T enrichment at day one is due to the high frequency of C:G to T:A transitions and G:C to T:A transversions.",
+      "claim_type": "EXPLICIT",
+      "source": "with a mutational bias towards the enrichment of A/T (3.71, Table 2) due to the high frequency of C:G to T:A transitions and G:C to T:A transversions (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2B and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "182d84dd-2040-47be-a52b-91ac0a888d75",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C41",
+      "claim": "CpG dinucleotides are among the top mutated dinucleotides in ura4 and ura5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as previously observed (Behringer and Hall, 2015; Farlow et al., 2015; Zhu et al., 2014) the CpG dinucleotides are found among the top mutated dinucleotides in ura4 and ura5 (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2\u2014figure supplement 2 and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "8efee39b-e9ad-408e-a71c-5ffd749d397c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C42",
+      "claim": "Among the ura4- and ura5- FOAR mutations at day one, 72% are caused by Single Nucleotide Variants (SNVs) and 28% by insertions/deletions (indels).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the ura4- and ura5- FOAR mutations, 72% are caused by Single Nucleotide Variants (SNVs) and 28% by insertions/deletions (indels) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a10d8942-9a07-423a-9e34-a2b2f5133c2d",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C43",
+      "claim": "At day one, there is a slight bias for insertions with a net gain of 269 bp for 24 events and loss of 334 bp for 16 events.",
+      "claim_type": "EXPLICIT",
+      "source": "A slight bias for insertions is observed with a net gain of 269 bp for 24 events and loss of 334 bp for 16 events (Table 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "6f3e528e-70d9-444c-8bb6-b9904c336687",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C44",
+      "claim": "The mutation profile at day one is similar to published results in cycling cells for URA3 in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the mutation profile at day one is similar to published results in cycling cells for URA3 in budding yeast (Lang and Murray, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison, supported by citation to Lang and Murray (2008)",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "87a4fc35-92c7-496f-a775-4768f348e317",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C45",
+      "claim": "The mutation profile at day one is similar to published results in cycling cells for ura4+ and ura5+ in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the mutation profile at day one is similar to published results in cycling cells for URA3 in budding yeast (Lang and Murray, 2008) and for ura4+ and ura5+ in fission yeast (Fraser et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison, supported by citation to Fraser et al. (2003)",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "55323c5c-7e6e-4f8d-82fd-073ca4bbb284",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C46",
+      "claim": "During quiescence, the total number of mutations resulting in FOAR colonies increases linearly as a function of time.",
+      "claim_type": "EXPLICIT",
+      "source": "During quiescence, the total number of mutations (including redundant ones) resulting in FOAR colonies increases linearly as a function of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "abfa2264-3fc5-4d0d-94ec-95be9dae1adf",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C47",
+      "claim": "The slope of FOAR mutant accumulation is 0.55 \u00d7 10\u22127 per day spent in quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "From multiple experiments, we used least squares regression to determine that the slope is 0.55 \u00d7 10\u22127 FOAR mutants per day spent in quiescence (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a calculated result from experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "dbe0e756-7784-461f-9f5f-344350d953a6",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C48",
+      "claim": "The number of redundant mutations dramatically fades over time, indicating that novel mutations arise in quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that the number of redundant mutations dramatically fades over time, indicating that novel mutations arise in quiescence (Supplementary files 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation with inference about the origin of mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2c28d541-c019-4671-8919-f8bcdcf673c6",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C49",
+      "claim": "Days 8 and 15 are not statistically different for the Ts:Tv and AT bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Days 8 and 15 are not statistically different for the Ts:Tv and AT bias (chi2 test) and were therefore combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of statistical testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "cac7566b-51ef-449e-b6cb-4d3263905398",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C50",
+      "claim": "Day 1 is statistically different from days 8 + 15 for Ts/Tv and AT bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Day 1 is statistically different from days 8 + 15 (Ts/Tv: p<0.05; AT bias: p<0.05 by chi2 tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of statistical testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "3ed5e5e6-23e8-4e6e-aa9f-85cb66c2a074",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C51",
+      "claim": "The ratio of transition-to-transversion observed at days 8 + 15 of quiescence was reduced from 1:2.18 to 1:3.7.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of transition-to-transversion observed at days 8 + 15 of quiescence was reduced from 1:2.18 to 1:3.7",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from sequencing data, shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "05c2cc94-85cd-4e99-92e3-b6969e5f100e",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C52",
+      "claim": "The mutational bias toward A/T decreased from 3.71 to 1.58 between day 1 and days 8+15.",
+      "claim_type": "EXPLICIT",
+      "source": "and the mutational bias toward A/T decreased (3.71 vs 1.58, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from sequencing data, shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "0ea479d8-d205-441a-805b-aa9b60d82aef",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C53",
+      "claim": "The decrease in A/T bias is mainly due to a relative decrease of the G:C to A:T transitions balanced by an increase of the A:T to C:G and G:C to C:G transversions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is mainly due to a relative decrease of the G:C to A:T transitions that is balanced by an increase of the A:T to C:G and G:C to C:G transversions (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2B and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "dc5c6775-9076-4442-a229-b0b829a7bb93",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C54",
+      "claim": "During two weeks of quiescence, the proportion of de novo indels increases from 28% at day 1 to 57% and 69% after 8 and 15 days, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "During two weeks of quiescence, the proportion of de novo indels increases from 28% at day 1 to 57% and 69% after 8 and 15 days, respectively (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "5ed9729a-1de5-4369-a7b1-12fe590d8c7c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C55",
+      "claim": "Indels outnumber SNVs during quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "to outnumber the SNVs (Figure 2C and D) (day 1 vs days 8 + 15: p<10\u221210, chi2 test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation with statistical support, shown in Figure 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "87d29edb-7b43-4447-a201-8f96e16b4487",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C56",
+      "claim": "More deletions than insertions were found in days 8 + 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we found more deletions than insertions (in days 8 + 15: p<10\u22125, chi2 test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "860656a8-c21f-4bd3-ad1c-e2fc459c79c9",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C57",
+      "claim": "In days 8 + 15, there was a net loss of 1771 bp in 170 mutants and a gain of 500 bp in 50 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "with a net loss of 1771 bp in 170 mutants and a gain of 500 bp in 50 mutants (Figure 2D, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2D and Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "625f69a9-e01b-485b-9b2f-fdd646716dc9",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C58",
+      "claim": "The main class of indels is \u00b11 bp and accounts for roughly half the events.",
+      "claim_type": "EXPLICIT",
+      "source": "The main class of indels is \u00b11 bp and accounts for roughly half the events (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "9034ce8a-3261-440b-a43d-d9f9e3703b36",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C59",
+      "claim": "More than one half of the indels occur within homonucleotide runs.",
+      "claim_type": "EXPLICIT",
+      "source": "More than one half of the indels occur within homonucleotide runs and several mutations are complex (Supplementary files 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2cd3e77a-f027-4473-bf6f-e6959feb9492",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C60",
+      "claim": "The phenotypic mutation rate is 0.55 \u00d7 10\u22127 FOAR colonies per day of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we found a phenotypic mutation rate of 0.55 \u00d7 10\u22127 FOAR colonies per day of quiescence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated result from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7f1e6429-6de4-4276-afb5-82a10651dd1f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C61",
+      "claim": "The mutation rate due to SNVs is 0.14 \u00d7 10\u22127 FOAR colonies per day.",
+      "claim_type": "EXPLICIT",
+      "source": "with 0.14 \u00d7 10\u22127 FOAR colonies per day due to SNVs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated result from experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "111968a9-1d96-4987-9ba7-29715d89f505",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C62",
+      "claim": "The mutation rate due to indels is 0.41 \u00d7 10\u22127 FOAR colonies per day.",
+      "claim_type": "EXPLICIT",
+      "source": "and 0.41 \u00d7 10\u22127 FOAR colonies per day due to indels (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a calculated result from experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2b404e82-28ce-40b1-a5c9-1f3a2177a504",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C63",
+      "claim": "The mutational spectra of growth and quiescence exhibit striking quantitative and qualitative differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mutational spectra of growth and quiescence exhibit striking quantitative and qualitative differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the comparative data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "186ab5e9-b3b4-4d3e-a871-eeec10143e32",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C64",
+      "claim": "Elevated levels of indels are generated during quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "First, elevated levels of indels are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the data showing increased indel proportions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "d9fd92d1-e9ad-4299-b974-4796a79eca58",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C65",
+      "claim": "In cycling cells, insertions outnumber deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, two recent MA studies (Behringer and Hall, 2015; Farlow et al., 2015) with fission yeast have shown that in cycling cells insertions outnumber deletions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Behringer and Hall (2015) and Farlow et al. (2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "82c22914-0f25-4120-89e8-0c310abaf0cc",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C66",
+      "claim": "In quiescence, deletions outnumber insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas we observe the reverse in quiescence (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "5e603cfd-53a1-47c3-a959-4c6e7c346924",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C67",
+      "claim": "Growth and quiescence apply opposite pressures on the S. pombe genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, growth and quiescence apply opposite pressures on the S. pombe genome size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the opposite insertion/deletion biases in growth versus quiescence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a27e1817-9aee-4af3-baaa-732d22ba9490",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C68",
+      "claim": "During cell divisions, SNVs elevate the genomic A/T composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, during cell divisions, SNVs elevate the genomic A/T composition (Hershberg and Petrov, 2010; Lynch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hershberg and Petrov (2010) and Lynch (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "37ce0a0e-2751-4ed4-a9ea-e466d887f24a",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C69",
+      "claim": "The A/T bias is reduced during quiescence and counteracts the universal A/T enrichment observed during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias is reduced during quiescence and counteracts the universal A/T enrichment observed during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the comparative data on AT bias",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2da265fb-2fb8-4a85-a022-8eba0c2ebd2a",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C70",
+      "claim": "The equilibrium of size and composition of the S. pombe genome depends on the relative strength of the opposing forces applied during growth and quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, in addition to the previously recognized meiotic recombination, gene conversion, nucleotide modifications or transposition, the equilibrium of size and composition of the S. pombe genome also depends on the relative strength of the opposing forces applied during growth and quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion inferred from the contrasting mutational spectra",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "71753219-4df2-42a3-aa16-3fb4584cd584",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C71",
+      "claim": "FOA does not significantly impact the mutation spectrum of quiescent or dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) All mutations exhibit the quiescence mutational profile, indicating that the FOA drug does not significantly impact on the mutation spectrum of quiescent or dividing cells (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the experiment comparing direct plating versus one division before plating",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "285de33e-444f-4609-beb8-df907d912110",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C72",
+      "claim": "The 16 unique mutations suggest a frequent heterozygosity of the mutations that can be revealed only after cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The 16 unique mutations suggest a frequent heterozygosity of the mutations that can be revealed only after cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of unique mutations appearing after one division",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "bec8ee44-582b-46eb-9521-fe0d06b9e1ed",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C73",
+      "claim": "The corrected number of mutations per day is 0.93 \u00d7 10\u22127 taking into account the mutations that do not result in a 5-FOAR phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to the ura4+/5+ genes together, we found that the corrected number of mutations per day is 0.93 \u00d7 10\u22127 taking into account the mutations that do not result in a 5-FOAR phenotype (1.86 or 1.24 10\u22127 from methods 2 or 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated result using correction methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "10d88d5a-612c-459a-9ef8-9ae089ebeb09",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C74",
+      "claim": "The corrected slopes for SNVs and indels are very similar at 0.46 \u00d7 10\u22127 and 0.47 \u00d7 10\u22127, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to SNVs and indels, we found very similar slopes of 0.46 \u00d7 10\u22127 and 0.47 \u00d7 10\u22127, respectively (Figure 3D, Table 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a calculated result, supported by data in Figure 3D and Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "347b1d19-daeb-4494-9693-d379b5ec097b",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C75",
+      "claim": "The extrapolated mutation rate is 0.93\u00d710\u22123 mutations per genome per day.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected to find 0.93 \u00d7 10\u22127/1400 (nucleotides of ura4 +ura5) x 14 \u00d7 106 (nucleotides in the S. pombe genome)=0.93\u00d710\u22123 mutations per genome per day (1.86 and 1.24 10\u22123 using methods 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated extrapolation from the ura4/5 data to the whole genome",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "5f12266c-4109-43a4-bbdc-6f4b2529442c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C76",
+      "claim": "149 unique mutations were found from 243 sequenced genomes after 3 months of quiescence, including 72 SNVs and 77 indels.",
+      "claim_type": "EXPLICIT",
+      "source": "We report 149 unique mutations, including 72 SNVs and 77 indels from the 243 sequenced genomes (Table 5 and Supplementary files 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from whole-genome sequencing, shown in Table 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "45ee5fc2-22bd-4fdf-b005-e3660a5fd749",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C77",
+      "claim": "The mutation rate of 0.61 mutations per genome after three months is 3.5\u20137 times higher than anticipated by projection.",
+      "claim_type": "EXPLICIT",
+      "source": "Although low, 0.61 mutations per genome after three months, is 3.5\u20137 times higher than anticipated by our projection (0.084 to 0.17 mutations/genome/three months, depending on the correction method)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between observed and expected values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f8b07e00-a691-43cb-819a-464a6417f783",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C78",
+      "claim": "The mutational process may not be linear for extended periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that this process may not be linear for extended periods of time, as suggested by the viability curve (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the discrepancy between observed and expected mutation rates and the viability curve",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "51d1103e-ab68-45b6-8de6-b117731b1c8e",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C79",
+      "claim": "Among the 59 SNVs involved in the AT bias after 3 months, the AT/GC ratio bias is 1.27.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 59 SNVs involved in the AT bias, we found an AT/GC ratio bias of 1.27, a value intermediates between 1.84 at day 1 or 1.1 at days 8 + 15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "ac129988-1e00-4934-bda3-87a38cf90880",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C80",
+      "claim": "Among the 77 indels after 3 months, 26 are deletions (35%), a value two times greater than reported in MA lines of cycling cells (14%\u201317%).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 77 indels, all the events detected with GATK were found as well with either Pindel, SOAPindel or Prism (Li et al., 2013; Jiang et al., 2012; Ye et al., 2009). Among these indels, 26 are deletions (25/77\u201335%), a value two times greater than reported in MA lines of cycling cells (14%\u201317%) (Behringer and Hall, 2015; Farlow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation with comparison to published data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "eea20c06-93b3-4492-943b-828fda5d5882",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C81",
+      "claim": "Over 62% (48/77) of the insertions and deletions after 3 months are \u00b11 nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with what was observed in the FOAR study, over 62% (48/77) of the insertions and deletions are \u00b11 nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "8b69bdc6-48e4-4e3c-b750-9fa17777e94f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C82",
+      "claim": "The 77 indels after 3 months led to the net loss of 215 (511-296) nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to genome size, the 77 indels led to the net loss of 215 (511-296) nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated result from the indel data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "c51f3c75-9c5e-4b84-a3e0-a488e8b393d2",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C83",
+      "claim": "The distribution of the number of mutations per genome fits perfectly a Poisson distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the distribution of the number of mutations (143) per genome (237) that fits perfectly a Poisson distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from statistical analysis, shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "24005ecf-5e8b-469d-a5d2-111498564892",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C84",
+      "claim": "A unique mutational force, equally affecting all genomes, is at work during quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that a unique mutational force, equally affecting all genomes, is at work during quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Poisson distribution of mutations per genome",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "80ba831d-cafa-4b20-bcbe-ccad1065fe36",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C85",
+      "claim": "The proportion of deletions among indels is higher in quiescence than in MA lines of cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) that the proportion of deletions among indels is higher than in MA lines of cycling cells, with more nucleotides lost than gained",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from comparison with published MA data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "8b36c3ce-57d8-4fec-ba1f-bae5febf21d7",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C86",
+      "claim": "Over 62% of the deletions/insertions are \u00b11 events.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) over 62% of the deletions/insertions are \u00b11 events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "9ef6500f-67b3-4300-a54a-b753bd6a4e84",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C87",
+      "claim": "Quiescence in fission yeast reveals Chronos as a new genetic force generating similar proportion of SNV and Indels, together with an enrichment of deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, quiescence in fission yeast reveals Chronos as a new genetic force generating similar proportion of SNV and Indels, together with an enrichment of deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion summarizing the main findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "efbd7011-4823-429f-9b79-61259fafcd4d",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C88",
+      "claim": "Quiescence is a well-controlled and conserved process.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive work has shown that quiescence is a well-controlled and conserved process (Yanagida, 2009; Lee et al., 1988; Petersen and Hagan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "9d9d1cef-9b4b-4cd1-b9f9-35c8cc5c1c17",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C89",
+      "claim": "The experimental conditions generate a homogenous quiescent cell population that remains stable during the mutation accumulation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental conditions generate a homogenous quiescent cell population that remains stable during the mutation accumulation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the septum and cell size data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2295f5b3-4884-4c69-bd92-d24e0cd4948c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C90",
+      "claim": "A very low proportion (<10\u22124) of cells may be able to divide during quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot exclude that a very low proportion (<10\u22124) of cells are able to divide during quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a caveat based on the septum data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "ffa61793-6a4e-494c-b519-c30243e1884c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C91",
+      "claim": "DNA lesions arising during quiescence are repaired with errors that generate mutations with time.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we favor the Chronos model where DNA lesions (not excluding DSBs) that are arising during quiescence (Mochida and Yanagida, 2006; Ben Hassine and Arcangioli, 2009) are repaired with errors that generate mutations with time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a favored model based on the data and cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "84e92153-dd36-40ea-8c56-8e362b59aa0c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C92",
+      "claim": "The Pcn1-K164R mutant accumulates only slightly more FOAR mutants than wild-type and displays the Chronos profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Pcn1-K164R mutant (Coulon et al., 2010) that cannot switch from replicative to TLS mode accumulates only slightly more of FOAR mutants than wt and displays the Chronos profile (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from experiments with the Pcn1-K164R mutant, shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "01492e8f-1ae7-462a-a651-2cb102c43d6f",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C93",
+      "claim": "The participation of the TLS pathway in the mutational signature of quiescence is modest.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the participation of the TLS pathway in the mutational signature of quiescence is modest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Pcn1-K164R mutant data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "6739ccd0-7afd-496f-8d26-f76e2c6e3b08",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C94",
+      "claim": "Luria and Delbruck initially expressed the mutation rate per unit time.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, Luria and Delbruck (Luria and Delbr\u00fcck, 1943) expressed the mutation rate per unit time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Luria and Delbr\u00fcck (1943)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "01622d44-83d3-4089-a69b-72796ee9f26c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C95",
+      "claim": "The mutation rate was transformed to per generation by Lea and Coulson.",
+      "claim_type": "EXPLICIT",
+      "source": "that was transformed to per generation later by Lea and Coulson (Lea and Coulson, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lea and Coulson (1949)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "da286c26-1756-4d16-9089-eb4b3c61ac15",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C96",
+      "claim": "The overall mutation rate and spectrum accompanying cell division combines errors occurring during DNA replicating and/or repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, the common assumption is that the overall mutation rate and spectrum accompanying cell division is combining errors occurring during DNA replicating and/or repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as common knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "8ec4ac6d-5acf-496e-b2fb-1858f37a3761",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C97",
+      "claim": "Inefficiently repaired lesions increase according to absolute time.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently proposed that inefficiently repaired lesions increase according to absolute time (Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gao et al. (2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e3ac2777-6bdb-4dd9-9efd-a76af875a5ca",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C98",
+      "claim": "Quiescence is a genetic active state that participates to the mutation fraction that is expressed in unit of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work proposes that quiescence is a genetic active state that participates to the mutation fraction that is expressed in unit of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a proposal based on the findings of this study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a6555013-ea3e-4113-926c-202533be6225",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C99",
+      "claim": "S. pombe genome fluctuates between two mutational spectra, which alternatively expose the genome to natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, S. pombe genome fluctuates between two mutational spectra, which alternatively expose the genome to natural selection that progressively shapes its composition, size and ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the contrasting mutational spectra in growth versus quiescence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "3da5199a-505d-470a-9ac4-bb675117a9a6",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C100",
+      "claim": "The replication-driven mutational bias has not yet reached an equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the replication-driven mutational bias has not yet reached an equilibrium strongly suggests the existence of forces capable of counterbalancing it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of opposing mutational biases",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "47c21e12-d3f6-4667-aea2-73c428c6cfcc",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C101",
+      "claim": "Chronos is a novel mutational force that impacts on the genetic material.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we propose that Chronos is this novel mutational force that impact on the genetic material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a proposal based on the findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "5963b214-712a-4fab-be34-f2a9252ab5c7",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C102",
+      "claim": "Separate and alternate modes of mutagenesis and selection allow compensatory mutations to arise in one phase of the life cycle and fuel the phenotypic evolution simultaneously into the subsequent phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate and alternate modes of mutagenesis and selection allow compensatory mutations to arise in one phase of the life cycle and fuel the phenotypic evolution simultaneously into the subsequent phase, a notion that might impact on germ cells genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion with speculation about broader implications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "fbb10643-5cf2-4f47-a85d-0afd18c9b45d",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C103",
+      "claim": "Super-housekeeping genes constrain evolution with a strong vector of conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, the super-housekeeping genes (Yanagida, 2009) constrain evolution with a strong vector of conservation, since they are required for proliferation, quiescence and the transitions from one to the other (Williams and Williams, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "81e496e4-d003-4fe2-aa27-fc499e0863da",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C104",
+      "claim": "The genetics of quiescence underscores the importance of a time-dependent process to the overall mutation spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetics of quiescence underscores the importance of a time-dependent process (Goldmann et al., 2016; Hazen et al., 2016; Kumar and Subramanian, 2002; S\u00e9gurel et al., 2014) to the overall mutation spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion supported by multiple citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f2b005cf-9505-46cc-8a7d-2a4567ed8f1d",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C105",
+      "claim": "The time-dependent process should help to fine-tune the accuracy of the 'molecular clock' that measures the evolutionary distance of two closely related species with their common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "This time-dependent process should also help to fine-tune the accuracy of the 'molecular clock' that measures, in units of time (dos Reis et al., 2016), the evolutionary distance of two closely related species with their common ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation about implications for molecular clock accuracy",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "875f6d5f-1855-4e0c-945a-b53ec1ea5fdf",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C106",
+      "claim": "The viability at 3 months of quiescence is about 0.05%.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, the viability at 3 months is about 0.05% (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "49a9af1a-605b-4524-a9cf-d14f61643ceb",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C107",
+      "claim": "A biphasic viability curve was observed, with a cell death acceleration after three weeks of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "From several experiments, we observed a biphasic viability curve, with a cell death acceleration after three weeks of quiescence (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation, supported by data in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "28cda8de-8a14-4df8-9d21-0716b601f30b",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C108",
+      "claim": "No phenotypes were observed upon examination of 384 colonies after 1 day or 1 month of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any phenotype upon examination of 384 colonies after 1 day or 1 month of quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from phenotypic survey, shown in Table 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "ef82263f-308b-4c4a-aae4-004ad5a42f63",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C109",
+      "claim": "After 2 and 3 months of quiescence, 4/376 (1.1%) and 6/334 (1.8%) colonies displayed phenotypes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 2 and 3 months, we observed 4/376 (1.1%) and 6/334 (1.8%) colonies displaying phenotypes (Table 6), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from phenotypic survey, shown in Table 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f9e821f7-62f2-4483-bb34-fe1094b6a757",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C110",
+      "claim": "Genetic crosses confirmed that the phenotype observed in the 10 colonies derives from a single mutated locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic crosses confirmed that the phenotype observed in the 10 colonies derives from a single mutated locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from genetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "b1cc7e2b-066a-4f64-8164-5d5493e19b05",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C111",
+      "claim": "Mutations were found mapping to alg5, alg8, aur1, ccc2, gdi1 and oca8 genes in six strains isolated after three months.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced the genomes of the six strains isolated after three months and found mutations mapping to alg5, alg8, aur1, ccc2, gdi1 and oca8 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from whole-genome sequencing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "b75d1d26-ce47-4e80-93f9-7ccd9015e8bc",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C112",
+      "claim": "The genes alg5, alg8, aur1, ccc2, gdi1 and oca8 encode for cell wall and vacuole/membrane trafficking functions that might improve viability during quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes encode for cell wall and vacuole/membrane trafficking functions that might improve viability during quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference about gene function with speculation about adaptive value",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7bc5dea1-8492-4ef9-b7ef-2e1a68918d7c",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "claim_id": "C113",
+      "claim": "Cellular quiescence allows for genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we conclude that cellular quiescence allows for genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the phenotypic and genomic data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "96b1a808-b6c1-4420-9b55-73aba3791c10",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The experimental system establishes a homogeneous quiescent cell population in fission yeast. After nitrogen removal, cells arrest in G1 phase with >99.9% septum-free cells by day 1, and septum frequency drops below 1 in 20,000 cells thereafter, indicating minimal cell division during quiescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 and C89 are well-supported by direct observations in Table 1 showing cell size and septum frequency data. The data demonstrate a rapid and sustained transition to quiescence with minimal cell division, validating the experimental system for studying replication-independent mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During quiescence, fission yeast accumulates mutations linearly with time at a rate of 0.55 \u00d7 10\u207b\u2077 FOAR mutations per day (0.14 \u00d7 10\u207b\u2077 SNVs and 0.41 \u00d7 10\u207b\u2077 indels per day). The dramatic decrease in redundant mutations over time indicates novel mutations arise during quiescence rather than from pre-existing replication errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C46-C48, and C60-C62 are strongly supported by the linear regression analysis in Figure 2A (R\u00b2 = 0.99) and the observation that redundant mutations fade over time. This provides compelling evidence for time-dependent mutation accumulation during quiescence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "54331a83-e8b4-4773-bd57-a47ba5d50e58",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mutational spectrum shifts dramatically during quiescence, with indels increasing from 28% at day 1 to 57-69% at days 8-15, eventually accumulating at similar rates to SNVs (corrected slopes: 0.46 \u00d7 10\u207b\u2077 for SNVs vs 0.47 \u00d7 10\u207b\u2077 for indels).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C54-C55, C64, and C74 are well-supported by data in Figures 2C-D and Figure 3D, with statistical significance (p<10\u207b\u00b9\u2070). The shift from SNV-dominated to indel-dominated spectrum is a key finding distinguishing quiescence from replicative mutagenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During quiescence, deletions outnumber insertions (170 deletions vs 50 insertions in days 8+15, p<10\u207b\u2075), resulting in net genome contraction. This contrasts with cycling cells where insertions predominate, suggesting growth and quiescence apply opposite pressures on genome size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56-C57, C66-C67 are supported by data in Table 2 and Figure 2D, with statistical significance and comparison to published MA studies (C65). The reversal of insertion/deletion bias is a novel and well-documented finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7b94ae07-3903-4e13-8663-de6ab949b1dd",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The mutational bias toward A/T enrichment decreases during quiescence (from 3.71 at day 1 to 1.58 at days 8+15, p<0.05), primarily due to decreased G:C to A:T transitions and increased A:T to C:G and G:C to C:G transversions. This counteracts the universal A/T enrichment observed during cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C51-C53, and C69 are supported by sequencing data in Table 2 and Figures 2B and 2\u2014figure supplement 1, with statistical significance. The shift in nucleotide bias represents a key qualitative difference between replicative and quiescence-associated mutagenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "3394af18-7fd2-4720-b73d-cd1b06ade49e",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing of 243 colonies after 3 months of quiescence revealed 149 unique mutations (72 SNVs, 77 indels), confirming the quiescence mutational spectrum. The mutation rate (0.61 mutations/genome) was 3.5-7\u00d7 higher than projected, suggesting non-linearity over extended periods. Mutations fit a Poisson distribution, indicating a uniform mutational force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C84 are supported by whole-genome sequencing data in Table 5 and statistical analysis in Figure 5. The Poisson fit (P_chi2 = 0.56) strongly supports uniform mutagenesis. However, the higher-than-expected mutation rate (C77-C78) and biphasic viability curve (C107) suggest complexity in long-term quiescence that warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a06da081-e138-4d50-a839-0445c5e1738a",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using three correction methods to account for mutations not resulting in FOAR phenotype, the authors estimate a corrected mutation rate of 0.93 \u00d7 10\u207b\u2077 mutations per day in ura4/5 genes, with similar rates for SNVs (0.46 \u00d7 10\u207b\u2077) and indels (0.47 \u00d7 10\u207b\u2077). Extrapolation yields 0.93 \u00d7 10\u207b\u00b3 mutations per genome per day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75 rely on complex statistical modeling (Methods 1-3) to correct for unobserved mutations. While the methods are described, the wide range of estimates from different methods (0.93 to 1.86 \u00d7 10\u207b\u2077) and the reliance on assumptions about essential amino acids and phenotypic penetrance introduce uncertainty. The whole-genome data (C77) showing 3.5-7\u00d7 higher rates than projected raises questions about the accuracy of these extrapolations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "154122c9-6876-4b63-8ad3-5a702b8f7ebb",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An experiment comparing direct FOA plating versus plating after one division showed that FOA does not significantly impact the mutation spectrum, and revealed frequent heterozygosity of mutations that can only be detected after cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by data in Table 3 showing similar mutational profiles regardless of plating method. The observation of 16 unique mutations appearing only after division provides evidence for heterozygosity. This control experiment strengthens confidence that the observed spectrum reflects quiescence biology rather than drug artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "dc44f5b9-c01a-432d-9e37-249e1ba11674",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Pcn1-K164R mutant, which cannot switch to translesion synthesis (TLS) mode, accumulates only slightly more FOAR mutants than wild-type and displays the Chronos mutational profile, indicating modest participation of the TLS pathway in quiescence mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 are supported by data in Figure 7 showing similar mutation rates and spectra in the Pcn1-K164R mutant. This provides mechanistic insight, though the conclusion is somewhat limited as it only rules out a major role for one specific pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7a185c01-a8dd-4496-b8ae-d759c4c973d4",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Long-term quiescence experiments show viability drops to ~0.05% at 3 months, with a biphasic curve showing accelerated cell death after three weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 are supported by data in Figure 4. This observation is important for interpreting the 3-month whole-genome sequencing results and suggests that mutation accumulation may not remain linear over extended periods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "f433922e-5003-46be-b433-cba12467f8a3",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Phenotypic survey revealed no phenotypes at 1 day or 1 month, but 1.1% and 1.8% of colonies displayed phenotypes after 2 and 3 months, respectively. Six sequenced strains had mutations in genes (alg5, alg8, aur1, ccc2, gdi1, oca8) encoding cell wall and membrane trafficking functions that might improve viability during quiescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C113 are supported by phenotypic data in Table 6 and whole-genome sequencing. The emergence of phenotypes correlates with extended quiescence duration. However, the speculation that these mutations improve viability (C112) is not directly tested and remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "07c85ffd-b40b-43fd-b158-a545b67e18aa",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Control experiments showed that ura4\u0394 mutants remain viable for two weeks of quiescence, indicating that FOAR colonies emerging early are not biased by selection and the phenotypic accumulation assay is unbiased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by viability data in Figure 1. This control validates the experimental approach by demonstrating that the assay does not introduce selection bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "a48176cf-dce0-419d-af8f-c182a33859d2",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "At day 1 of quiescence, FOAR mutation frequency ranges from 1-3 \u00d7 10\u207b\u2077, with 72% SNVs and 28% indels, showing a slight insertion bias. This profile is similar to published results for cycling cells in budding and fission yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C42-C45 are supported by data in Figure 2A and Table 2, with appropriate citations. The similarity to cycling cells at day 1 is expected since these mutations likely arose during the last rounds of replication before quiescence entry (C36).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "310a9d59-56e6-4c12-b42c-90b411c9bc13",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The main class of indels is \u00b11 bp, accounting for roughly half the events, with more than half occurring within homonucleotide runs. This pattern is consistent across both the ura4/5 targeted study and whole-genome sequencing (>62% \u00b11 bp).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C86 are supported by data in Figure 2D and sequence analysis. The predominance of \u00b11 bp indels in homonucleotide runs suggests a specific mutational mechanism, possibly related to polymerase slippage during repair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "e196f878-795a-4f9d-aa86-89f7aef8fdb9",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CpG dinucleotides are among the top mutated dinucleotides in ura4 and ura5, consistent with previous observations in other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by data in Figure 2\u2014figure supplement 2 and citations to previous studies. However, the authors note this is difficult to understand given the absence of cytosine methyltransferase in fission yeast, suggesting an unexplained mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "2004a9a1-c094-40ab-8613-684f22c44774",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Statistical testing showed days 8 and 15 are not significantly different for Ts:Tv and AT bias, so they were combined for analysis. Day 1 is statistically different from days 8+15 (p<0.05 for both metrics).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by chi-square tests. This statistical approach is appropriate for justifying the grouping of time points and demonstrates the temporal shift in mutational spectrum.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "97429e2f-bac1-424d-8f4c-48aa61dcc028",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that genomes evolve under two alternating mutational spectra (growth and quiescence) with opposing effects on genome size and composition. They name the quiescence mutational force 'Chronos' and propose it represents a novel genetic force expressed per unit time rather than per generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C63, C70, C87, C98-C99, and C101 represent the main conceptual framework and conclusions of the paper. These are well-supported by the collective data showing distinct mutational spectra in growth versus quiescence. The proposal of 'Chronos' as a time-dependent mutational force is a reasonable interpretation of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "1bf16309-766e-4be4-9470-e3bc35a6b41e",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors acknowledge they cannot exclude that <10\u207b\u2074 of cells divide during quiescence, but favor the 'Chronos model' where DNA lesions arising during quiescence are repaired with errors that generate mutations over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 appropriately acknowledge limitations while proposing a mechanistic model. The caveat about rare dividing cells (C90) is honest given the septum data. The Chronos model (C91) is a reasonable interpretation supported by the data, though direct mechanistic evidence is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about mutation rates, mutational spectra during growth, adaptive mutations, persisters, and quiescence biology in various organisms including fission yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C26, C65, C68, C88, C94-C97 represent background knowledge supported by appropriate citations to the literature. These claims provide context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "43fc390b-23e7-4a66-b66e-03b7404db3db",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors speculate that the replication-driven mutational bias has not reached equilibrium, suggesting counterbalancing forces exist. They propose that alternating mutagenesis modes allow compensatory mutations and may impact germ cell genetics, molecular clock accuracy, and evolutionary theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100, C102-C105 represent speculative extensions of the findings. While C100 is a reasonable inference from the data, claims C102-C105 are largely speculative and not directly tested. These represent interesting hypotheses for future work but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    },
+    {
+      "id": "7df3478b-c5ed-4e84-a237-7de8710e4c52",
+      "content_id": "13beea66-a5af-4909-bfd3-fca98ca3da34",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Summary statement that the proportion of deletions among indels is higher in quiescence than in MA lines of cycling cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is a summary statement supported by the data in C80 and comparisons to published MA studies. This is redundant with other results already grouped.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:36:49.373070Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a67ab943-6842-4b73-8921-2026d287b763",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "2f59c163-c264-4a45-b67c-59c4202d098f",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "f206414f-f42d-4988-846b-0316aa31e3ca",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "2aa3a380-8a52-4c62-94c2-4a6d3c2a7f30",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "e3ad994a-9c4a-490d-92a4-2680ba961b15",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "3993e326-57ca-4cc3-bc13-87c792edc3ac",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "9d9d1cef-9b4b-4cd1-b9f9-35c8cc5c1c17",
+      "result_id": "96b1a808-b6c1-4420-9b55-73aba3791c10"
+    },
+    {
+      "claim_id": "a37ed1a9-bc19-4959-a3ca-bf42661e62e7",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "55323c5c-7e6e-4f8d-82fd-073ca4bbb284",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "abfa2264-3fc5-4d0d-94ec-95be9dae1adf",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "dbe0e756-7784-461f-9f5f-344350d953a6",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "2cd3e77a-f027-4473-bf6f-e6959feb9492",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "7f1e6429-6de4-4276-afb5-82a10651dd1f",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "111968a9-1d96-4987-9ba7-29715d89f505",
+      "result_id": "6264a646-11a2-4fad-a2f3-a9d8df655ac4"
+    },
+    {
+      "claim_id": "d07309b6-e1e6-46fa-8bd8-749ab2384659",
+      "result_id": "54331a83-e8b4-4773-bd57-a47ba5d50e58"
+    },
+    {
+      "claim_id": "dc5c6775-9076-4442-a229-b0b829a7bb93",
+      "result_id": "54331a83-e8b4-4773-bd57-a47ba5d50e58"
+    },
+    {
+      "claim_id": "5ed9729a-1de5-4369-a7b1-12fe590d8c7c",
+      "result_id": "54331a83-e8b4-4773-bd57-a47ba5d50e58"
+    },
+    {
+      "claim_id": "186ab5e9-b3b4-4d3e-a871-eeec10143e32",
+      "result_id": "54331a83-e8b4-4773-bd57-a47ba5d50e58"
+    },
+    {
+      "claim_id": "10d88d5a-612c-459a-9ef8-9ae089ebeb09",
+      "result_id": "54331a83-e8b4-4773-bd57-a47ba5d50e58"
+    },
+    {
+      "claim_id": "f3b2fb62-da5e-4157-a8e8-6cd7fe5adf62",
+      "result_id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3"
+    },
+    {
+      "claim_id": "87d29edb-7b43-4447-a201-8f96e16b4487",
+      "result_id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3"
+    },
+    {
+      "claim_id": "860656a8-c21f-4bd3-ad1c-e2fc459c79c9",
+      "result_id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3"
+    },
+    {
+      "claim_id": "82c22914-0f25-4120-89e8-0c310abaf0cc",
+      "result_id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3"
+    },
+    {
+      "claim_id": "5e603cfd-53a1-47c3-a959-4c6e7c346924",
+      "result_id": "cf0aab0c-67f4-4cf1-b7bf-92d2251632f3"
+    },
+    {
+      "claim_id": "e36e6ba6-8ac5-4c8c-9b9f-5dac008472ee",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "eefbfdad-ef02-462f-a361-a46651e02fb8",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "86e2d381-823e-4800-9869-e9e8b975662f",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "3ed5e5e6-23e8-4e6e-aa9f-85cb66c2a074",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "05c2cc94-85cd-4e99-92e3-b6969e5f100e",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "0ea479d8-d205-441a-805b-aa9b60d82aef",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "37ce0a0e-2751-4ed4-a9ea-e466d887f24a",
+      "result_id": "7b94ae07-3903-4e13-8663-de6ab949b1dd"
+    },
+    {
+      "claim_id": "5f12266c-4109-43a4-bbdc-6f4b2529442c",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "45ee5fc2-22bd-4fdf-b005-e3660a5fd749",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "f8b07e00-a691-43cb-819a-464a6417f783",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "51d1103e-ab68-45b6-8de6-b117731b1c8e",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "ac129988-1e00-4934-bda3-87a38cf90880",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "eea20c06-93b3-4492-943b-828fda5d5882",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "8b69bdc6-48e4-4e3c-b750-9fa17777e94f",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "c51f3c75-9c5e-4b84-a3e0-a488e8b393d2",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "24005ecf-5e8b-469d-a5d2-111498564892",
+      "result_id": "3394af18-7fd2-4720-b73d-cd1b06ade49e"
+    },
+    {
+      "claim_id": "bec8ee44-582b-46eb-9521-fe0d06b9e1ed",
+      "result_id": "a06da081-e138-4d50-a839-0445c5e1738a"
+    },
+    {
+      "claim_id": "10d88d5a-612c-459a-9ef8-9ae089ebeb09",
+      "result_id": "a06da081-e138-4d50-a839-0445c5e1738a"
+    },
+    {
+      "claim_id": "347b1d19-daeb-4494-9693-d379b5ec097b",
+      "result_id": "a06da081-e138-4d50-a839-0445c5e1738a"
+    },
+    {
+      "claim_id": "71753219-4df2-42a3-aa16-3fb4584cd584",
+      "result_id": "154122c9-6876-4b63-8ad3-5a702b8f7ebb"
+    },
+    {
+      "claim_id": "285de33e-444f-4609-beb8-df907d912110",
+      "result_id": "154122c9-6876-4b63-8ad3-5a702b8f7ebb"
+    },
+    {
+      "claim_id": "84e92153-dd36-40ea-8c56-8e362b59aa0c",
+      "result_id": "dc44f5b9-c01a-432d-9e37-249e1ba11674"
+    },
+    {
+      "claim_id": "01492e8f-1ae7-462a-a651-2cb102c43d6f",
+      "result_id": "dc44f5b9-c01a-432d-9e37-249e1ba11674"
+    },
+    {
+      "claim_id": "875f6d5f-1855-4e0c-945a-b53ec1ea5fdf",
+      "result_id": "7a185c01-a8dd-4496-b8ae-d759c4c973d4"
+    },
+    {
+      "claim_id": "49a9af1a-605b-4524-a9cf-d14f61643ceb",
+      "result_id": "7a185c01-a8dd-4496-b8ae-d759c4c973d4"
+    },
+    {
+      "claim_id": "28cda8de-8a14-4df8-9d21-0716b601f30b",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "ef82263f-308b-4c4a-aae4-004ad5a42f63",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "f9e821f7-62f2-4483-bb34-fe1094b6a757",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "b1cc7e2b-066a-4f64-8164-5d5493e19b05",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "b75d1d26-ce47-4e80-93f9-7ccd9015e8bc",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "7bc5dea1-8492-4ef9-b7ef-2e1a68918d7c",
+      "result_id": "f433922e-5003-46be-b433-cba12467f8a3"
+    },
+    {
+      "claim_id": "c642b5eb-ab44-4583-b038-0b03215f985f",
+      "result_id": "07c85ffd-b40b-43fd-b158-a545b67e18aa"
+    },
+    {
+      "claim_id": "1ec35c0c-c8f5-470c-9b07-61936aea910b",
+      "result_id": "07c85ffd-b40b-43fd-b158-a545b67e18aa"
+    },
+    {
+      "claim_id": "fd89c398-b308-47d8-9d9e-8bebf9a32e35",
+      "result_id": "07c85ffd-b40b-43fd-b158-a545b67e18aa"
+    },
+    {
+      "claim_id": "c8035219-9d69-4aa2-be09-f56f49ebef90",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "b94feff8-b923-4a5d-bc2c-c2eb5bbce377",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "8efee39b-e9ad-408e-a71c-5ffd749d397c",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "a10d8942-9a07-423a-9e34-a2b2f5133c2d",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "6f3e528e-70d9-444c-8bb6-b9904c336687",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "87a4fc35-92c7-496f-a775-4768f348e317",
+      "result_id": "a48176cf-dce0-419d-af8f-c182a33859d2"
+    },
+    {
+      "claim_id": "625f69a9-e01b-485b-9b2f-fdd646716dc9",
+      "result_id": "310a9d59-56e6-4c12-b42c-90b411c9bc13"
+    },
+    {
+      "claim_id": "9034ce8a-3261-440b-a43d-d9f9e3703b36",
+      "result_id": "310a9d59-56e6-4c12-b42c-90b411c9bc13"
+    },
+    {
+      "claim_id": "8b36c3ce-57d8-4fec-ba1f-bae5febf21d7",
+      "result_id": "310a9d59-56e6-4c12-b42c-90b411c9bc13"
+    },
+    {
+      "claim_id": "182d84dd-2040-47be-a52b-91ac0a888d75",
+      "result_id": "e196f878-795a-4f9d-aa86-89f7aef8fdb9"
+    },
+    {
+      "claim_id": "2c28d541-c019-4671-8919-f8bcdcf673c6",
+      "result_id": "2004a9a1-c094-40ab-8613-684f22c44774"
+    },
+    {
+      "claim_id": "cac7566b-51ef-449e-b6cb-4d3263905398",
+      "result_id": "2004a9a1-c094-40ab-8613-684f22c44774"
+    },
+    {
+      "claim_id": "628ef15c-b7f6-4711-94e8-b66a6aa0b36a",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "2b404e82-28ce-40b1-a5c9-1f3a2177a504",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "2da265fb-2fb8-4a85-a022-8eba0c2ebd2a",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "9ef6500f-67b3-4300-a54a-b753bd6a4e84",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "e3ac2777-6bdb-4dd9-9efd-a76af875a5ca",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "a6555013-ea3e-4113-926c-202533be6225",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "47c21e12-d3f6-4667-aea2-73c428c6cfcc",
+      "result_id": "97429e2f-bac1-424d-8f4c-48aa61dcc028"
+    },
+    {
+      "claim_id": "2295f5b3-4884-4c69-bd92-d24e0cd4948c",
+      "result_id": "1bf16309-766e-4be4-9470-e3bc35a6b41e"
+    },
+    {
+      "claim_id": "ffa61793-6a4e-494c-b519-c30243e1884c",
+      "result_id": "1bf16309-766e-4be4-9470-e3bc35a6b41e"
+    },
+    {
+      "claim_id": "a4015a89-56b0-4012-b855-3122a65b6c41",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "9c57b8aa-a1b1-42e3-8f79-862944a48545",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "2b43fb2e-d58b-4659-beca-5c04f0b82992",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "0bb25500-4a99-4bec-b5a4-154f56be6bd0",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "e2135cae-847c-4af3-8c67-31ea0aa66ee6",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "803fbc19-5e8d-4bd2-b734-c015c2d8855b",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "65b0d372-509b-4a92-a78e-7e3b077bd597",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "ce38ba0d-3aa9-40c6-9ae4-6a93716de18c",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "74f02675-3dbc-461d-96bc-4804dc8a2c27",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "edf4decf-2707-4d38-99f4-152a87d80e1a",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "a1bc6178-7463-4541-a7a8-32ee7e8325e1",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "946dd57a-8d5f-44a1-b742-68aa792f34a4",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "67caefec-b880-4781-be76-0b167f2cfc33",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "b212f007-a0b8-438c-be73-d102fa0cb853",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "acdd6e51-d66b-42f1-be79-1bd5090cac6f",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "80bb063b-6869-4730-a06e-78f54a4c4163",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "21b2e54d-218c-4259-8f50-a1585c115984",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "e405746e-2259-4f0e-be71-116fe6e00cd6",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "e7a30707-4be5-46fd-9283-e7cef93f8a40",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "7856fbe3-da02-4ce3-bc50-1c45f19e77d7",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "d9fd92d1-e9ad-4299-b974-4796a79eca58",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "a27e1817-9aee-4af3-baaa-732d22ba9490",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "efbd7011-4823-429f-9b79-61259fafcd4d",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "6739ccd0-7afd-496f-8d26-f76e2c6e3b08",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "01622d44-83d3-4089-a69b-72796ee9f26c",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "da286c26-1756-4d16-9089-eb4b3c61ac15",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "8ec4ac6d-5acf-496e-b2fb-1858f37a3761",
+      "result_id": "eaccdc97-5291-45e6-830b-9acc6d3f4ed3"
+    },
+    {
+      "claim_id": "3da5199a-505d-470a-9ac4-bb675117a9a6",
+      "result_id": "43fc390b-23e7-4a66-b66e-03b7404db3db"
+    },
+    {
+      "claim_id": "5963b214-712a-4fab-be34-f2a9252ab5c7",
+      "result_id": "43fc390b-23e7-4a66-b66e-03b7404db3db"
+    },
+    {
+      "claim_id": "fbb10643-5cf2-4f47-a85d-0afd18c9b45d",
+      "result_id": "43fc390b-23e7-4a66-b66e-03b7404db3db"
+    },
+    {
+      "claim_id": "81e496e4-d003-4fe2-aa27-fc499e0863da",
+      "result_id": "43fc390b-23e7-4a66-b66e-03b7404db3db"
+    },
+    {
+      "claim_id": "f2b005cf-9505-46cc-8a7d-2a4567ed8f1d",
+      "result_id": "43fc390b-23e7-4a66-b66e-03b7404db3db"
+    },
+    {
+      "claim_id": "80ba831d-cafa-4b20-bcbe-ccad1065fe36",
+      "result_id": "7df3478b-c5ed-4e84-a237-7de8710e4c52"
+    }
+  ],
+  "comparisons": []
+}

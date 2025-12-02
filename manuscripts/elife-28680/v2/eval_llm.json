@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Structural models of \u03b32 and \u03b38 TARPs were generated based on claudin15 crystal structures, revealing that Loop 1 (L1) is flexible and unresolved in cryo-EM structures, while Loop 2 (L2) can engage in four-fold symmetry with the receptor pore and L1 reaches the two-fold symmetry of the LBD layer with at least two distinct modes of interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe the structural modeling approach and key findings about TARP loop positioning. The models were validated using MolProbity (C28) showing acceptable stereochemistry. The structural predictions about L1 and L2 positioning (C29-C32) are based on sound modeling approaches combining claudin structures with cryo-EM data, though these remain computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C41"
+    ],
+    "result": "Peptide mapping arrays showed that the majority of L1 from both \u03b32 and \u03b38 directly interacts with the GluA2 LBD, but no interaction was detected between the negative patch or L2 peptides and the GluA2 LBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38, and C41 are supported by experimental peptide mapping array data shown in Figure 1C. The assay was performed in duplicate with comparable results. However, the peptide array approach has limitations as it tests interactions outside the normal steric constraints of the intact complex, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C94"
+    ],
+    "result": "Neutralizing three acidic residues in the negative patch (D88G, E90S, D92G) of \u03b32 doubled steady-state current and superactivation, indicating that the negative patch inhibits rather than promotes \u03b32 modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C94 are supported by experimental data in Figure 1\u2014figure supplement 2 showing enhanced modulation upon neutralization of the negative patch. This contradicts predictions from cryo-EM structures about the functional importance of this region. The data are clear, though sample sizes are modest (n=5-10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Swapping L1 between \u03b32 and \u03b38 produced asymmetric effects: L1 from \u03b38 in \u03b32 doubled steady-state current (50\u00b15%) and halved desensitization rate (35\u00b15 s\u207b\u00b9), while L1 from \u03b32 in \u03b38 maintained \u03b38-like desensitization. Deletion of L1 from both TARPs halved steady-state current to ~15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are well-supported by electrophysiology data in Figure 2 and Table 1 with adequate sample sizes (n=11-30 patches). The asymmetric effects of L1 swaps are clearly demonstrated and statistically significant. The data support the conclusion that L1 influences desensitization but functions in concert with other elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "L1 can influence desensitization of AMPAR-TARP complexes but functions in concert with other modulatory elements, as evidenced by the asymmetric effects of L1 swaps between \u03b32 and \u03b38.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 represent reasonable inferences from the experimental data showing that L1 swaps do not produce simple reciprocal exchanges of desensitization properties. The conclusion is supported by comparison with recent work on GSG1L (C48 cites Twomey et al., 2017a) and by the observation that L1 deletion does not eliminate all modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Replacing L2 with a flexible Gly-Ser linker had differential effects: in \u03b32 it reduced steady-state current to wild-type levels (5\u00b11%) while maintaining slower desensitization, whereas in \u03b38 it had minimal effect. The chimera with \u03b38 L1 and \u03b32 L2_GS massively slowed desensitization (10\u00b10.5 s\u207b\u00b9), while the inverse chimera nullified \u03b38 modulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by electrophysiology data in Figure 3 and Table 1 with adequate sample sizes (n=6-30). The dramatic effects of L2 manipulation, particularly the 10-fold slowing of desensitization by the L1 \u03b38 in \u03b32 L2_GS chimera, are clearly demonstrated. The data strongly implicate L2 as a critical modulatory element.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "All TARP mutants showed strong relief of polyamine block indicating normal complex assembly, with each chimera following the rectification pattern of its parent TARP backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by G-V measurements in Figure 2\u2014figure supplement 1. This is a critical control demonstrating that the functional effects observed are due to altered modulation rather than disrupted assembly. The rectification index data provide strong evidence for maintained TARP-AMPAR association across all mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "L1 from \u03b38 transferred strong superactivation to \u03b32 (27\u00b16%), but L1 from \u03b32 could not reduce \u03b38 superactivation to \u03b32 levels (16\u00b11%). Residual superactivation (6\u00b12% for \u03b32, 16\u00b13% for \u03b38) remained after L1 deletion, indicating L1 is not the sole determinant of superactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by experimental data in Figure 4 and Table 1. The asymmetric effects of L1 swaps on superactivation and the persistence of residual superactivation after L1 deletion are clearly demonstrated with adequate sample sizes (n=6-16). This establishes that multiple TARP elements contribute to superactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neutralizing L2 substantially reduced superactivation in both \u03b32 (1.3\u00b10.6%) and \u03b38 (12\u00b12%). The L1 \u03b32 in \u03b38 L2_GS chimera showed negligible superactivation (~1%), representing a kinetic null of \u03b38 with fast desensitization and minimal steady-state current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by electrophysiology data in Figure 5 and Table 1. The dramatic reduction in superactivation upon L2 neutralization, particularly the ~15-fold reduction in the L1 \u03b32 in \u03b38 L2_GS mutant, clearly demonstrates L2's critical role. The classification of this mutant as a 'kinetic null' is justified by its wild-type-like properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The \u03b32 \u0394L1 L2_GS double mutant assembled normally but was highly deficient in modulating GluA2 gating, with no superactivation (0%) and minimal steady-state current (2\u00b11%), representing a kinetic null of \u03b32. The \u03b38 \u0394L1 L2_GS mutant retained slightly more activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by data in Figure 6 and Table 1. The \u03b32 \u0394L1 L2_GS mutant represents a successful generation of a 'null' TARP that assembles but does not modulate, a key achievement of the study. Normal assembly is confirmed by polyamine block relief, while the absence of functional modulation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Structural models and sequence analysis indicate that L2 is positioned to interact with the S1-M1 and S2-M4 linkers of GluA2, which are known to be important for glutamate receptor gating. L2 contains an alternating charge motif mirrored in GluA2 linker sequences 508QKS510 and 781KEK783.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by structural modeling (Figure 1\u2014figure supplement 1), sequence analysis (Figure 1\u2014figure supplement 3), and citations to prior work on linker importance (C69). The identification of complementary charge motifs provides a mechanistic hypothesis that is subsequently tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutations in GluA2 linkers phenocopied TARP L2 mutations: 508GAG510 abolished superactivation and reduced steady-state current with \u03b32, while 781GSG783 showed similar effects. The double mutant GAG/GSG completely abolished \u03b32 modulation (0% superactivation, 5\u00b11% steady-state current) while maintaining normal gating and TARP assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are strongly supported by experimental data in Figure 7 and Table 1. The convergence of effects between TARP L2 mutations and receptor linker mutations provides compelling evidence for direct interaction at this site. The GAG/GSG double mutant represents a receptor-side 'null' that mirrors the TARP-side null, strengthening the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The long L1 loop of \u03b38 can still modulate the GAG/GSG linker mutant, indicating the linkers do not primarily transduce distant TARP modulation. Rather, the LBD-TMD linkers are the primary modulatory site for both \u03b38 and \u03b32, with \u03b32 requiring L2 interaction and \u03b38 combining L1 and L2 sites for compound modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 represent well-supported inferences from the experimental data showing that \u03b38 (but not \u03b32) retains modulatory activity with the GAG/GSG mutant. This differential behavior, combined with the L1 and L2 swap data, supports the model that \u03b32 depends primarily on L2-linker interactions while \u03b38 uses both L1 and L2 mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Thermodynamic cycle analysis detected weak coupling (~1.5 kJ/mol) for steady-state current but stronger coupling (~4.5 kJ/mol) for superactivation between TARP L2 and receptor linker mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 is based on thermodynamic cycle analysis shown in Figure 7\u2014figure supplement 2. However, the authors acknowledge significant limitations: they can only measure currents down to ~1% of peak, limiting resolution. The weak coupling detected for steady-state current may reflect these measurement limitations rather than true weak interaction. The superactivation coupling is more robust but still has caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Extracellular sites account for all AMPA receptor gating modulation by TARPs but do not determine complex assembly. Instead, transmembrane segments and intracellular regions control assembly and polyamine block modulation, with this division of roles potentially arising from different timescales of state-dependent gating versus assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are well-supported by the comprehensive data showing that extracellular loop mutations eliminate modulation while maintaining assembly (assessed by polyamine block). Claim C84 is explicitly labeled as speculation by the authors and represents a reasonable mechanistic hypothesis, though it lacks direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The LBD-TMD linkers are key sites for AMPA receptor modulation by TARPs, with identified sites highly conserved among AMPA receptor subunits but absent in NMDA and kainate receptors. These interactions are more proximal to the channel gate than previously suggested ATD and LBD interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by the convergent evidence from TARP and receptor mutations, sequence conservation analysis, and comparison with prior work (C87 cites Cais et al., 2014). The identification of the linkers as primary modulatory sites represents a major advance over previous models emphasizing more distal interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The L2-linker interactions are primary and should occur readily for each TARP subunit with minimal conformational change, allowing maximal 4:4 stoichiometry for \u03b32. For \u03b38, stoichiometry would vary with TARP number but not be limited by position. These interactions are more favorable than the large conformational changes (13-25 \u00c5) required for negative patch interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 represent inferences from structural modeling and experimental data. The proximity of L2 to the linkers versus the distance to the negative patch (C90) is based on structural measurements. The stoichiometry predictions (C92-C93) are reasonable inferences from the structural models, though they lack direct experimental validation of stoichiometry in the mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A model emerges where superactivation requires combined L1 and L2 action, while basal steady-state current increase arises from L2 alone. Multiple conformational states are required, with L1 exploring greater conformational space related to slow superactivation transitions, and L2 engaging in state-dependent interactions with linkers upon receptor opening. L1 adopts multiple conformations to stabilize separate functional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 represent a synthesis of the experimental findings into a mechanistic model. The core conclusions about L1 and L2 contributions (C95-C96) are well-supported by the data. The inferences about conformational states (C97, C101) and state-dependent interactions (C99-C100) are reasonable extrapolations, with C98 explicitly acknowledging speculation about slow transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "This work produced mutant TARPs and AMPA receptors that both lack modulatory properties and have enhanced modulation, providing useful tools for investigating TARP action in synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is clearly supported by the data showing null mutants (\u03b32 \u0394L1 L2_GS, L1 \u03b32 in \u03b38 L2_GS, GluA2 GAG/GSG) and enhanced modulators (\u03b32 NP_GSG, L1 \u03b38 in \u03b32). Claim C104 is speculation about future applications with citations to relevant work, representing reasonable predictions about the utility of these tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "A subsequently released open AMPAR structure in complex with \u03b32 does not resolve the loops analyzed in this study but places L2 in close apposition with AMPAR linker regions, consistent with the model of state-dependent L2 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by citation to Twomey et al., 2017b and comparison with the findings of this study. The consistency between the new structure and the authors' model provides independent validation of their predictions about L2 positioning, though the loops remain unresolved even in the open state structure.",
+    "result_type": "MINOR"
+  }
+]

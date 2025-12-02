@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In the closed KcsA channel (1K4C), PMF calculations reveal high K+ binding affinity with deep free energy wells (\u22656-7 kcal/mol) and high barriers to ion permeation, suggesting the selectivity filter is non-conductive in this state regardless of initial ion configuration or water molecule positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are consistently supported by PMF calculations shown in Figure 1A and Figure 1\u2014figure supplement 1. The data demonstrate high free energy barriers and deep binding wells in the closed state, with results independent of initial ion configuration. The computational methods are appropriately described and the conclusions are directly supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "In the open KcsA conformation (3F5W), the selectivity filter widens by up to 1 \u00c5 and exhibits low free energy barriers (2-3 kcal/mol), enabling ion permeation through both knock-on and vacancy-diffusion pathways, representing a dramatic increase in conductance compared to the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are well-supported by PMF calculations (Figure 1B) and structural analysis (Figure 2A). The data show quantitative differences in free energy barriers and filter dimensions between open and closed states. The identification of multiple permeation pathways is supported by the PMF data, though the relative contributions of each pathway are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The widening of the selectivity filter upon activation is mechanistically linked to outward movement of the lower pore helix, which is in direct van der Waals contact with TM1 at residue L40. The TM1 helices move outward by ~1 \u00c5 at L40 upon gate opening, providing space for the pore helix and selectivity filter to expand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by distance analysis from MD simulations (Figures 2B, 2C, 3). The structural observations are quantitative and consistent. However, C39 represents an inference about causality that, while reasonable, is not directly demonstrated\u2014the correlation between TM1 movement and filter expansion is shown, but the causal relationship is inferred rather than proven through perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The proposed mechanism predicts that the L40A mutation would reduce steric constraints on the selectivity filter, facilitating channel opening by reducing coupling between intracellular gate activation and selectivity filter opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 represent predictions that are subsequently tested experimentally (C43-C46). The prediction is logical based on the structural mechanism proposed in C34-C39. The experimental validation of these predictions (discussed in subsequent results) provides retrospective support for these predictive claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The L40A mutant is fully activated by protons with similar pH0.5 to control but displays a shallower dose-response (Hill coefficient ~2 vs ~4.5), opens at lower proton concentrations, and exhibits gating behavior identical to the H25R mutant, indicating reduced coupling between proton binding and channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are well-supported by electrophysiology data in Figure 4B-C and Table 1. The quantitative measurements of Po vs pH, Hill coefficients, and comparison to H25R are clearly presented. The data quality appears good with error estimates provided. The conclusion that L40A reduces coupling between proton binding and opening is supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The effects of the L40A mutation result from partial uncoupling of the bottom of the pore helix from the TM1 helix and from the protonation state of H25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the integration of structural data (C34-C39) and functional data (C43-C46). The mechanistic interpretation is consistent with both the structural model and the observed gating phenotype. However, this remains an inference\u2014direct demonstration of the uncoupling would require additional structural or biophysical measurements of the L40A mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PMF calculations show that in the closed control channel, the 3-ion state is overstabilized (~11 kcal/mol) with high barriers (6-10 kcal/mol), while the L40A mutation stabilizes 2-ion states by ~6 kcal/mol and reduces barriers to 4-5 kcal/mol (closed) or 2-3 kcal/mol (partially open), facilitating ion permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by PMF calculations shown in Figure 5 and supplements. The quantitative free energy differences are clearly presented. The comparison between control and L40A mutant in both closed and partially open states provides strong computational support for the proposed mechanism. Statistical errors are addressed in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Time-series analysis of the E71A/L40A mutant shows permeation events involving at most three ions with water molecules, consistent with PMF calculations and supporting that L40A facilitates activation by reducing the conformational change required to reach maximal open probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by simulation data (Figure 5\u2014figure supplement 3) and are consistent with the PMF calculations. The observation of 3-ion permeation with water molecules agrees with prior models and the current PMF data. C59 represents a reasonable inference integrating computational and experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The selectivity filter exists in at least three functional states (restrictive closed, dynamic open, pinched inactivated) controlled by transmembrane domain movements that provide allosteric coupling to regulatory sites. The selectivity filter is proposed as the universal gate in K+ channels, with the intracellular bundle-crossing serving as a secondary gate in some channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C70-C73 represent the main conclusions integrating all findings. The three-state model (C70) is supported by the PMF data showing distinct energetic profiles for different conformations. The proposal of the selectivity filter as the universal gate (C72) is supported by the current data on KcsA and citations to prior work on other channels. However, the universality claim extends beyond the direct evidence and represents a broader hypothesis requiring validation across channel families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C75",
+      "C76"
+    ],
+    "result": "Previous simulations using CHARMM22 showed ion permeation in closed KcsA due to overestimated backbone flexibility, while CHARMM36 with improved backbone dihedral corrections produces more limited fluctuations insufficient for permeation in the closed state, better reflecting the actual gating mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C75-C76 are supported by comparison of force field effects and citations to prior work and force field development papers. The explanation for discrepancies with prior simulations is reasonable and well-documented. Figure 2A shows quantitative comparison of fluctuations between force fields. This represents important methodological context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The current findings differ from K\u00f6pfer et al. (2014) who proposed a 4-ion hard knock-on mechanism, with the difference attributed to K\u00f6pfer et al. not applying NBFIX corrections, leading to stronger K+-carbonyl interactions (~8 kcal/mol difference in solvation free energy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 appropriately acknowledge and explain differences with prior work. The explanation based on force field parameters is technically sound and supported by quantitative comparison of solvation free energies. This represents important context for understanding discrepancies in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "A residue equivalent to KcsA L40 was previously found to control permeation and open probability in KCa3.1, a Ca2+-activated K+ channel that gates at the selectivity filter, suggesting a common mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by citation to prior work (Garneau et al., 2014). This provides independent validation of the importance of this structural position across different K+ channel families, strengthening the proposed mechanism's generality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The conducting state of the KcsA selectivity filter displays larger fluctuations than non-conducting states, consistent with EPR experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by citation to EPR experiments (Raghuraman et al., 2014) and is consistent with the MD simulation results showing increased fluctuations in the open state. This provides experimental validation of a key prediction from the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Changes in selectivity filter structural dynamics through activation could explain sub-conductance levels with altered selectivity in Shaker and demonstrate that fluctuations directly impact conductance and gating properties, potentially affected by temperature and membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is speculative, extending the findings to explain phenomena in Shaker channels without direct evidence. Claim C64 is partially supported by the current work but the extension to other signaling factors (temperature, tension) is speculative and based only on citations. These represent reasonable hypotheses for future work but are not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The central role of TM1 in KcsA activation potentially explains why H25 at the intracellular end of TM1 was identified as the strongest pH sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 represents a reasonable inference connecting the structural mechanism to prior functional data. The location of H25 on TM1 and its role as the strongest pH sensor (supported by citation) is consistent with the proposed mechanism where TM1 movement is critical for activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In voltage-dependent channels, the voltage sensor may regulate selectivity filter conductance through S5 interactions with the pore helix without necessarily engaging S6 via the S4-S5 linker, supported by evidence that voltage activation can occur without an S4-S5 linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is speculative, extending the KcsA mechanism to voltage-gated channels. Claim C67 provides some support through citations but the connection to the current work remains indirect. This represents a plausible hypothesis but requires direct experimental validation in voltage-gated channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The inner TM helices may form a second steric barrier at the intracellular end in KcsA and other channels, and the proposed model fits Ca2+-activated K+ channels that open and close at the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a reasonable speculation acknowledging that the intracellular gate may still play a role. Claim C69 is supported by citation to prior work on Ca2+-activated channels, providing some validation of the model's broader applicability beyond KcsA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context establishing that K+ channels are opened by ligands/voltage, with traditional models proposing intracellular bundle-crossing as the activation gate and selectivity filter as inactivation gate, though some channels lack intracellular gates, implicating the selectivity filter in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C20 represent established knowledge and prior work, appropriately cited. These provide necessary context for understanding the significance of the current findings. The citations appear appropriate and the characterization of prior models is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The main findings that ligand-induced conformational changes in KcsA remove steric restraints at the selectivity filter, resulting in structural fluctuations, reduced K+ affinity, and increased ion permeation, with selectivity filter activation potentially being a universal gating mechanism and intracellular gate occlusion being secondary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 represent the core findings supported by both MD simulations and electrophysiology (as detailed in other result groups). Claims C8-C9 represent broader conclusions that are reasonable inferences from the data but extend beyond what is directly demonstrated. The universality claim (C8) requires validation across more channel types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The vacancy-diffusion pathway involves ions in the selectivity filter moving first, leaving a vacant site filled by an incoming ion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 describes an established permeation mechanism supported by citations. This provides context for interpreting the PMF calculations showing multiple permeation pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Simulation setup used standard protonation states at pH 7 except for protonated Glu71.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 describes a methodological detail that is clearly stated and appropriate for the simulation conditions. This is important for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

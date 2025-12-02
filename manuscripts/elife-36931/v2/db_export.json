@@ -1,0 +1,2650 @@
+{
+  "submission": {
+    "id": "32fd1f0a-ae87-412c-8869-864f431c39a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:29:43.130185Z",
+    "updated_at": "2025-12-02T01:29:43.130185Z"
+  },
+  "content": [
+    {
+      "id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "submission_id": "32fd1f0a-ae87-412c-8869-864f431c39a1",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the polycystin 2-l1 ion channel\n\n## Authors\n\n- Raymond E Hulse<sup>1</sup> ([ORCID: 0000-0002-0110-3752](https://orcid.org/0000-0002-0110-3752))\n- Zongli Li<sup>3</sup>\n- Rick K Huang<sup>1</sup>\n- Jin Zhang<sup>1</sup>\n- David E Clapham<sup>1</sup> ([ORCID: 0000-0002-4459-9428](https://orcid.org/0000-0002-4459-9428)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n2. Department of Cardiology Howard Hughes Medical Institute, Boston Children\u2019s Hospital Boston United States\n3. Department of Biological Chemistry and Molecular Pharmacology Howard Hughes Medical Institute, Harvard Medical School Boston United States\n4. School of Basic Medical Sciences Nanchang University Nanchang China\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe report the near atomic resolution (3.3 \u00c5) of the human polycystic kidney disease 2-like 1 (polycystin 2-l1) ion channel. Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes. The related primary cilium-specific polycystin-2 protein, encoded by PKD2, shares a high degree of sequence similarity, yet has distinct permeability characteristics. Here we show that these differences are reflected in the architecture of polycystin 2-l1.\n\n## Introduction\n\nRevolutionary improvements in resolving protein and cellular structures, and genetic identification of ciliopathies, have created renewed interest in primary cilia. These small protuberances (5\u201310 \u03bcm in length) are found in nearly every cell type. Primary cilia house key downstream elements of the sonic hedgehog pathway, which regulates embryonic development and some cancers. Recently, new tools have enabled measurements of other signaling elements within cilia. Primary cilia have elevated resting internal Ca2+ concentrations ([Ca2+]=300\u2013700 nM [Delling et al., 2013]), and possess at least two TRP channels, polycystin-2 and polycystin 2-l1. These ion channels are encoded by the PKD2 and PKD2L1 genes of the TRPP subfamily. Electrophysiological measurements demonstrate that polycystin 2-l1 and polycystin-2 both underlie ionic currents in primary cilia (DeCaen et al., 2013, 2016; Kleene and Kleene, 2017). This suggests that voltage gradients and Ca2+, in addition to cAMP, are relevant signals within primary cilia.\n\nPKD2 and PKD2L1 share high degrees of sequence identity (52%) and similarity (71%). Mutations in PKD2 account for\u00a0~15% of cases of individuals afflicted with Autosomal Dominant Polycystic Kidney Disease (ADPKD). In contrast, there are no diseases currently linked to PKD2L1. Deletion of PKD2 is lethal in mice (Wu et al., 1998), but deletion of PKD2L1 results in occasional gut malrotation, a relatively mild situs inversus phenotype (Delling et al., 2013). Finally, while the functional characterization of polycystin 2-l1 protein has been enabled by its plasma membrane expression (DeCaen et al., 2013, 2016), polycystin-2 protein function has been hampered by its restriction to surface expression in primary cilia. Recent approaches have been successful, however, in establishing the key biophysical properties of polycystin-2. These approaches include a gain-of-function mutation that enables expression to the plasma membrane in Xenopus oocytes (Arif Pavel et al., 2016) and direct patch clamp recording of polycystin-2 in primary cilia (Kleene and Kleene, 2017; Liu et al., 2018). These studies establish polycystin-2 as a monovalent-selective cation channel with little or no calcium permeation. In contrast, polycystin 2-l1 shows significant and relevant Ca2+ permeability (PCa/PNa\u00a0~6) (DeCaen et al., 2013, 2016). Despite this knowledge, the physiological stimulus for activation and gating is unclear for both channels.\n\nIn a similar fashion, structural information about membrane proteins has undergone a profound advance. This is largely due to the explosion of structures from single particle electron cryo-microscopy (cryo-EM) in recent years. Accordingly, multiple structures have been solved for the TRP ion channel family, including the TRPP family to which polycystin-2 and polycystin 2-l1 belong.\n\nHere we present a structure of the full-length human polycystin 2-l1 protein at 3.3 \u00c5 resolution in cryo-EM. The overall architecture conforms to that of other TRP channels, and in particular to the TRPP polycystin-2 structures. We establish the core structure and point out differences in regions and residues that may account for polycystin-2 and polycystin 2-l1\u2019s distinct permeation and gating.\n\n## Results\n\nWe first expressed and purified full-length recombinant polycystin 2-l1 protein tagged with maltose binding protein (MBP) (Figure 1\u2014figure supplement 1) using HEK293 GnT I- cells and the BacMam system (Goehring et al., 2014). To determine whether the MBP-tagged protein was functional, we measured single channel activity in reconstituted liposomes under voltage clamp. The channel\u2019s conductance in the same buffer used for purification (HKN, see Materials\u00a0and\u00a0methods) was 105 pS, consistent with previous single-channel studies from cells expressing polycystin 2-l1 (DeCaen et al., 2013) (Figure 1\u2014figure supplement 1d).\n\n### General architecture of polycystin 2-l1\n\nPolycystin 2-l1\u2019s structure exhibits many of the hallmarks of TRP channels: it forms a homotetramer with a domain-swapped Voltage Sensing-Like Domain (VSLD, the S1-S4 transmembrane domains) (Figure 1a) and shares remarkable architectural similarity to polycystin-2 (Figure 1\u2014figure supplement 2) (RMSD of 1.5 \u00c5 measured with polycystin-2 model pdb 5T4D). As characteristic of group 2 TRP channels (TRPPs and TRPMLs), polycystin 2-l1 has a long S1-S2 extracellular loop, termed the polycystin mucolipin domain (PMD). This domain, a series of 3 \u03b1-helices, 4 \u03b2-sheets, and a glycosylated three loop region (see below, TLC or three-leaf clover), forms a cover, or lid, above the channel (Figure 1b). In contrast to the 3 or 4 observed glycans in polycystin-2's polycystin mucolipin domain (PMD) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017), polycystin 2-l1\u2019s PMD has one clear glycan density located at residue N207. An additional density, at N241, could possibly support an additional glycan. Notably, the PMD interacts with underlying elements of the pore, the voltage sensing-like domains, and adjacent PMDs. The role of glycosylation of the PMD in TRPPs is unknown. Two possibilities include serving as a folding/quality control mechanism or as a site for intermolecular interactions (e.g., ligand involved in gating).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-v2.jpg)\n\n**Figure 1.:** (a) Side view parallel to the membrane and from the top (extracellular) surface. Distinct subunits in the tetramer are color-coded. (b) 2D topological representation of the polycystin 2-l1 monomer; voltage sensor-like domain (VSLD, teal), polycystin mucolipin domain (PMD, orange), and pore domain (PD, violet). (c) Monomer color-coded and matched to Figure 1b: N terminus/VSLD (teal), PMD (orange), C terminus/PD (violet).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) SDS-PAGE of amylose purification for supernatant, flow, wash and elution (left). Size exclusion chromatography (Superose 6 Increase) after affinity chromatography and exchange from detergent to amphipol PMAL-C8 (right). (b) Representative sample of negative-stained polycystin 2-l1 in PMALC8 (scale bar, 200 nm). (c) 8 representative 2D class averages used in data processing. (d) Sample trace of voltage-clamped, liposome-reconstituted recombinant polycystin 2-l1 (top). Amplitude histogram of open and closed events (bottom left) and mean current of open (Level 1) and closed (Level 0) events. Average current\u00a0=\u00a013.2 pA (\u00b12.8 S.D.) at\u00a0+125 mV, 1.6 s duration.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) The C\u03b1-RMSD between polycystin 2-l1 and polycystin-2 (5T4D) mapped onto the polycystin 2-l1 monomer. The average RMSD is 1.5 \u00c5 with a range of 0.14 \u00c5 (blue) to 9.8 \u00c5 (red). (b) Overlay of the polycystin 2-l1 monomer (green) on the polycystin 2 (gray) monomer; cartoon representation. (c) Polycystin 2-l1 S2 segment (green) and polycystin 2 S2 (gray), showing the relative angle and lateral shift (arrow). S6 relative angle shown at right. (d) Calculation of pore radius (\u00c5) along the pore axis for polycystin-2 (red) and polycystin 2-l1 (black). Residues G522 and L521 in the selectivity filter, and I560 are labeled and are the three narrowest distances.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** 842,139 particles were automatically selected to generate a 2D class average. Eight classes were selected; a reference from a previous dataset that generated a 3.6 \u00c5 map was used to derive four initial classes. The four classes were generated from automatic refinement; one class was selected to generate an additional round of four classes. The subsequent particle was then selected to generate two more classes (two more rounds with a mask to omit contributions from the amphipol). The final, highest resolution structure was selected and then sharpened.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Angular distribution plot, inner black dashed ring (\u03b8\u00a0=\u00a030\u00b0) and outer white dashed ring (\u03b8\u00a0=\u00a060). (b) Corresponding 2D FSC of polycystin 2-l1 in PMAL C8 (horizontal dashed 0.143 criterion; solid vertical black line is the minimum refinement limit of 8 \u00c5. (c) 3D FSC and preferred orientation analysis of the same dataset with the red line representing the estimated global FSC of 3.2 \u00c5\u00a0\u00b1\u00a01 SD (green dashed lines). Dashed line 0.143 criterion are at left and the correlated resolution estimations and orientations from the preferred orientation analysis are at the right. Red lines represent global estimated FSC, black lines FSC for the z-axis of the orientation indicated above. Color code (red (poorer) to blue (better) resolution) represents in-plane resolution (x/y axes) and resolution value Z (including graph below) refers to the z-axis directional resolution and corresponding FSC plot. For instance, the side view shows an increased z-axis resolution but a decreased x/y resolution (red) which is consistent with the angular distribution plot. (d) Local resolution map (calculated by ResMAP with a value of box 20 and cutoff 0.5) of the same dataset with top, side, and bottom orientations.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) EM density maps are shown for the polycystin 2-l1 monomer in the Voltage Sensor Like Domain for helices S1-S4. (b) The PMD with all secondary structural elements and a general scheme of the three loops that comprise the Three Leaf Clover (TLC) region (left and below). (c) The Pore Domain for helices S5, S6 and the selectivity filter with pore-helices 1 and 2 (PH1 and PH2).\n\nThe intracellular face of polycystin 2-l1 is too poorly resolved to model the N terminus and the S4-S5 linker densities. Also, despite expression of full-length protein (Figure 1\u2014figure supplement 1) the C terminus of polycystin 2-l1 was not resolved. We conclude that these elements are either unstructured or connected with flexible regions, which, along with the lack of cytoplasmic elements in 2D classification in polycystin-2 (Shen et al., 2016), prevents model building of these regions.\n\n### The voltage sensing-like domain\n\nThe VSLD is comprised of four transmembrane helical spanning elements that, while similar in structure to the voltage-sensing domains of voltage-gated ion channels, do not convert the energy of the transmembrane electric field into pore gating. Indeed, none of the group II TRP channels have significant voltage dependence. Comparison of the VSLD of polycystin 2-l1 and polycystin-2 reveals that the polycystin 2-l1 S2 helix is tilted an additional 4.5\u00b0 away from the core, is laterally shifted away from the rest of the VSLD, and shows the greatest local RMSD difference (Figure 1\u2014figure supplement 2a, b and c). Polycystin 2-l1\u2019s S3 is a near-continuous helix extending from the membrane-spanning region into a pocket created by the PMD (Figures 1c and 3b). This S3 helix exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al. (Shen et al., 2016), but is similar to that of the multiple- and single-ion models of Wilkes et al., (Wilkes et al., 2017). The S3 extended helix abuts the PMD of the same monomer but does not display the same cation-\u03c0 interactions as polycystin-2\u2019s F545 and R320 residues. The S3-S4 linker and the top portion of the S4 helix also fit into the same cleft of the PMD as in polycystin-2. In polycystin-2, the S4 adopts a 310-helix configuration (I571 \u2013 F579). The density of the S4 helix of polycystin 2-l1 is incomplete at this region so a 310 configuration is not observed. Similarly, the equivalent residues of polycystin-2 that are thought to form a salt\u00a0bridge between the S3 and S4 helix (K572, K575) (Shen et al., 2016), do not have sufficient side chain density to model accurately. The equivalent residue for polycystin-2\u2019s acidic D511 residue is D390 in polycystin 2-l1, which does not form a salt-bridge with neighboring residues.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig2-v2.jpg)\n\n**Figure 2.:** (a) Path of permeation depicted with HOLE (left). At right is a close-up view of the selectivity filter (two monomers removed for clarity) with three conserved residues L521, G522, and D523. Pore radius (HOLE) measured along the pore axis (left). (b) Electron density map superimposed on the polycystin 2-l1 model; contour level 5.0. (c) TRPP family multiple sequence alignment of conservation projected in color onto the polycystin 2-l1 pore domain. Two of four monomers have been removed to increased clarity.\n\n### The polycystin mucolipin domain\n\nThe polycystin mucolipin domain (PMD) rests on top of the VSLD of the same monomer and the adjacent pore domain (Figure 3b and c), with a series of three \u03b1-helices facing inward towards the funnel/turret of the pore (Figure 3c). A series of \u03b2-sheets is sandwiched between these \u03b1-helices with several loops that interface with the extracellular space and adjacent PMD (Figures 1b and 3c). Finally, a disulfide bond is present between residues C210-C223 in the PMD, similar to several polycystin-2 structures (Figure 3d). This element is proposed to stabilize a loop in polycystin-2 (Shen et al., 2016; Wilkes et al., 2017) and seems likely to play the same role in polycystin 2-l1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig3-v2.jpg)\n\n**Figure 3.:** (a) sequence conservation projected in color onto the PMD domain for polycystin 2-l1 homologs; Three-leaf clover (TLC) domains labeled. (b) The S3 (green), S3-S4 linker (green, rotated 50\u00b0), and TLC1 from the adjacent PMD (red) interact with the PMD of the same domain (gray). (c) Interactions of the PMD (gray) with the pore domain (PD) and PMD of the adjacent monomer (yellow). PMD secondary structural elements helices 1\u20133, and \u03b2-sheets 1 to 4 labeled, along with the PD and Pore Helix (PH1). (d) Disulfide C210-C223 (yellow) in the TLC1 loop (3.4 \u00c5) of the PMD.\n\n#### Three leaf clovers (TLCs) of the polycystin mucolipin domain (PMD)\n\nGrieben et al., (Grieben et al., 2017) described the three-lobed area of polycystin-2\u2019s PMD, naming it the \u2018three-leafed clover\u2019. The same area is found in polycystin 2-l1, but with several differences. Polycystin 2-l1 lacks the small \u03b1-helix in TLC1 of polycystin-2. Interestingly, this region (D208-D225) displays moderately lower sequence conservation among the TRPPs (Figure 3a). As noted, TLC1 in polycystin-2 appears to extend into the adjacent PMD and interact with the S3 helix and S3-S4 linker (Grieben et al., 2017; Wilkes et al., 2017). In polycystin 2-l1, the analogous TLC1 extends from one monomer into the PMD of the adjacent subunit (Figure 3b). However, the nature of the interaction differs in that F216 of TLC1 is near Y308 of the adjacent subunit\u2019s PMD, representing a possible \u03c0 - \u03c0 stacking interaction or a hydrophobic pocket (Figure 4a). Additionally, N311\u2019s carboxamide oxygen group, located on a hairpin between \u03b23 and \u03b24 of the PMD, is within hydrogen bonding distance (3.3 \u00c5) of Y224\u2019s amide in TLC1 of the adjacent subunit of polycystin 2-l1 (Figure 4b). Finally, residue W259 of TLC3 formats a cation-\u03c0 stacking interaction with the upper pore domain at residue R534 (Figure 4c). We interpret these interactions as supporting tetrameric assembly and stability.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig4-v2.jpg)\n\n**Figure 4.:** (a) \u03c0- \u03c0 interaction of residue residing in TLC1 F216 (brown) with the neighboring (green) PMD (Y308). (b) Hydrogen bonding interaction (green dash) of PMD residue N311 with the neighboring PMD residue Y224\u2019s amide (blue). (c) Residue W259 in TLC3 of the PMD forms a cation-\u03c0 stacking interaction with the upper pore domain residue R534. The guanidino group of R534 also forms a hydrogen bond (red dash) with the carbonyl of G260 of the adjacent PMD domain.\n\n#### Fenestrations\n\nDespite moderately low identity and an increase in charged residues in polycystin 2-l1\u2019s TLC3 (SPDKEE (residues 228\u2013232) versus SVSSED in polycystin-2), the loop appears essentially the same as in polycystin-2. This element appears to reach under the PMD\u2019s \u03b2-sheet. Proximity of the returning loop of TLC1 towards TLC2, as well as the S5-PH1 loop of the monomer and the PH2-S6 loop adjacent monomer creates four lateral openings at the base of the PMD in polycystin 2-l1, as in polycystin-2. These could present an alternative route for ion permeation\u00a0(Grieben et al., 2017; Wilkes et al., 2017). This area is less conserved among the polycystin 2-l1 homologs (PKD2, PKD2L2)(Figure 3a).\n\nPolycystin 2-l1\u2019s PMD also interacts with the adjacent subunit\u2019s upper pore domain. In the polycystin-2 multiple- (pdb 5MKF) and single-ion (pdb 5MKE) structures, Wilkes et al., (Wilkes et al., 2017) observed glycosylation-dependent interactions of the PMD of one subunit with the loop pore-helices of the adjacent (Wilkes et al., 2017), with mutually exclusive glycosylation states. One last interaction between TLC3 and the loop between pore-helix 2 and S6, noted in the polycystin-2 structure (Shen et al., 2016), is seen in polycystin 2-l1: W259, from TLC3, forms a cation-\u03c0 stacking interaction with R534 and a hydrogen bond with G260\u2019s carbonyl (2.8 \u00c5) (Figure 4c). This difference may help rationalize the intermediate pore size observed in the polycystin-2 multiple-ion structure (1.4 \u00c5) (Wilkes et al., 2017) and the single-ion structure (1.0 \u00c5) (Wilkes et al., 2017) where such interactions do not exist, and our polycystin 2-l1 structure (2.6 \u00c5).\n\n### The pore domain\n\nAs in polycystin-2, polycystin 2-l1\u2019s selectivity filter is flanked by two pore-helices, which are themselves each flanked by a transmembrane spanning helix (S5 and S6). The S6 helix of polycystin 2-l1 remains \u03b1-helical throughout its length, whereas the S6 helix of polycystin-2 is broken by a middle \u03c0-helix element, before continuing to the C terminus (Shen et al., 2016) (Figure 1\u2014figure supplement 2b and c). The S6 helix of polycystin 2-l1 is also tilted 7.9\u00b0 relative to polycystin-2 (Figure 1\u2014figure supplement 2c). The key filter residues of polycystin 2-l1 are L521, G522 and D523, in which the carbonyls of L521 and G522 point to the central pore axis (Figure 2a). D523\u2019s side chain is well-resolved; the side chains face upward in parallel to the axis of ion conduction. The pore domain shows moderately strong conservation in S5, S6, and elements of the selectivity filter, as well as in pore helix 1 (Figure 2c). Notably, however, K511 in polycystin 2-l1 is highly variable among equivalent residues in other TRPPs (Figure 2c). The corresponding residue is a negatively-charged glutamate in polycystin-2 and an asparagine in polycystin 2-l2. The effect of this residue is to confer a net positive electrostatic potential (Figure 5a) relative to polycystin-2\u2019s net negative charge.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36931/elife-36931-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0The extracellular facing (top) and selectivity filter region (below) of channels with progressively increasing relative permeability to Ca2+; cut-away schematic (far left) for orientation. (b) Stick representation of the selectivity filter region (top) and simplified diagram (below). Local bonding characteristics are highlighted: conserved salt-bridge (red) interaction of polycystin-2 and polycystin 2-l1, the unique hydrogen bond of polycystin 2-l1 (green), and the direct side-chain coordination of Ca2+ in TRPV5 and TRP6. (c) Alignment with conservation scoring and clustalW coloring scheme of the selectivity filter region show in (b).\n\nRelative to polycystin-2\u2019s pore helix 1 (PDB 5T4D), the angle between the beginning of pore helix 1 and the top of the selectivity filter is similar (77\u00b0 for polycystin 2-l1 and 75\u00b0 for polycystin-2) compared to the 10\u00b0 pitch difference between polycystin-2 and TRPV1 (Grieben et al., 2017). However, polycystin 2-l1\u2019s pore helix, measured from beginning to end of the \u03b1-helix at the C\u03b1, is\u00a0~1.5 \u00c5 shorter than that of polycystin-2.\n\nThe narrowest apertures in the selectivity filter, measured by HOLE (Smart et al., 1996), have radii of 2.6 and 2.8 \u00c5 at L521 and G522 respectively (Figure 2a). These distances represent a larger opening than that in any of the three polycystin-2 structures (1.0 to 1.4 \u00c5) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017). Such a diameter is sufficient to accommodate a partially hydrated Ca2+ ion with an average\u00a0~2.4 \u00c5 metal-oxygen distance (Katz et al., 1996; Marcus, 1988) and an ionic radius of 0.99 \u00c5 (Pauling, 1988; Hille, 2001). An observed density in the selectivity filter extends across the two carbonyls of L521 and G522, contrasting with polycystin-2 densities that localize above and below the selectivity filter (Wilkes et al., 2017) (Figure 2b). However, cryo-EM cannot determine the ion\u2019s identity with the same degree of reliability of X-ray anomalous scattering. Although defined buffers are used, we cannot rule out the possibility of less abundant ions occupying the site.\n\n#### Ion permeation differences between polycystin-2 and polycystin 2-l1\n\nPolycystin-2 and polycystin 2-l1 core selectivity filters residues (LGD) are conserved, leading us to examine other explanations as to why polycystin 2-l1 conducts Ca2+ while polycystin-2 does not (PCa/PNa\u00a0~6) (DeCaen et al., 2013, 2016; Kleene and Kleene, 2017; Liu et al., 2018). If the pore helix 1-selectivity filter-pore helix 2 region of polycystin 2-l1 (C512-P538) is substituted by polycystin-2\u2019s analogous region (C632-P658), the polycystin 2-l1 chimera has roughly (within 4-fold) similar permeability to Na+, K+, and Ca2+ (Shen et al., 2016). Point mutation experiments in which polycystin 2-l1\u2019s D523 and D525 were mutated to alanine or serine yielded no measurable currents (DeCaen et al., 2013). However, polycystin 2-l1(LGD523: D523N) was 18-fold, and polycystin 2-l1(LGDFD525: D525N) 9-fold less calcium-permeant (PCa2+/PCs+) than wt polycystin 2-l1. Also, and significantly, the D525N mutation reduced outward current block by Ca2+, while D523N did not (DeCaen et al., 2016). These experiments indicate that order and placement of negative charge in the narrow region of the pore is important for both Ca2+ permeation and block. Higher resolution cryo-EM structures that identify Ca2+ and/or monovalents that are occupying the pore with high certainty (or equivalent crystallographic studies like those of CaVAb [Tang et al., 2014]), and molecular dynamic simulations, should shed light on these issues.\n\nAs a final attempt to understand the differences in the relative selectivity of TRP channels, we compared the charge landscape of the pore helix-selectivity filter-pore helix assembly of polycystin-2 and polycystin 2-l1. When the PMD is stripped away and only the pore-helices and selectivity filter elements of both channels are visualized, a striking difference appears (Figure 5a). Polycystin 2-l1 has a more restricted negative charge density immediately surrounding the pore than does polycystin-2. Interestingly, its pore-helices form a \u2018Maltese cross\u2019 of net positive charge, rotated 45\u00b0 to the negative charge distribution \u2018cross\u2019 in polycystin-2. We compare these charge distributions to the much more Ca2+-selective TRPV5 and TRPV6 (PCa2+/PNa+> 100) (Ramsey et al., 2006) structures (Hughes et al., 2018; McGoldrick et al., 2018) (Figure 5a) in which the TRPV5/6 channels\u2019 negative charge is much more localized around their respective pores.\n\nAn additional mechanism to explain different selectivities of TRPPs is a local bonding environment difference at and near the selectivity filter between polycystin-2 and polycystin 2-l1. A conserved salt\u00a0bridge between D523 and R518 in polycystin 2-l1 exists in polycystin-2 (D643 and R638). Yet a hydrogen bond between residues D525 and A528 in polycystin 2-l1 is not present in polycystin-2; the residues are not conserved (Figure 5b and c). Local hydrogen bonding networks at the selectivity filter of ion channels have been observed to influence function such as the entry into a C-inactivated state for KcsA (Cordero-Morales et al., 2011), but such details for non-selective channels are currently unknown.\n\nIn both observations, we rely on one structure, which may change with gating. The use of molecular dynamics (MD) to observe the simulated trajectory of ions and their relationship to the energy landscapes of the selectivity filter is an excellent starting point for future experiments. Coupling future structures with functional mutagenic studies (e.g., the weakly conserved residue K511) should answer these questions.\n\n## Discussion\n\nAlthough polycystin 2-l1 and polycystin-2 structures are very similar, there are notable differences that may explain reported functional differences in their selectivity and permeation. For discussion, we divide polycystin 2-l1 into three regions to highlight these differences; the voltage sensing-like domain\u00a0(VSLD), the pore mucolipin domain\u00a0(PMD), and the pore\u00a0(PD). In the VSLD, polycystin 2-l1\u2019s S3 helix extends into the PMD as a complete \u03b1-helix. In addition, the top of the S3-S4 helical region abuts the PMD. Comparing the PMDs, polycystin 2-l1 lacks oligosaccharides that act as bridges between adjacent subunits. Finally, although similar, polycystin 2-l1\u2019s pore diameter is slightly larger.\n\nDue to our inchoate understanding of the TRPP family, we must be cautious in linking the observed differences in structure to functional differences. The two main features we seek to understand are selectivity and gating. Comparing selectivities of the two channels, we know that polycystin 2-l1 conducts both monovalent ions and Ca2+, while polycystin-2 is monovalent-selective (Kleene and Kleene, 2017; Liu et al., 2018). We explain this difference with two features: pore diameter and electrostatic fields. The relatively larger size of polycystin 2-l1\u2019s pore radius (2.6\u20132.8 \u00c5) may enable partially hydrated calcium\u2019s transit, thus avoiding the larger energy required for pore residues to dehydrate calcium. Most striking are the unique electrostatic maps (Figure 5a) surrounding the polycystin-2 and polycystin 2-l1 pores. Such differences in charge suggest that the putative energy landscapes may create small variations in selectivity, a characteristic suggested for the prokaryotic NaK ion channel (Alam and Jiang, 2011). These slight charge differences, and so landscapes, may impart the subtle relative permeability differences observed among most TRP channels. For organelles in which the TRPP (cilia) and TRPML (endolysosomes) appear, these subtle differences may have driven the evolution of small changes in relative permeation in order to titrate levels of ions within these sub-femtoliter compartments. Research into the relative permeabilities of the related TRPML family of ion channels will further our understanding of mechanisms beyond direct side chain coordination.\n\nTRPPs are not appreciably voltage- or mechanically-gated within physiologically\u00a0relevant ranges of these forces (DeCaen et al., 2013, 2016), which raises the question of what other mechanisms activate these channels. The large surface area of the PMD is a logical candidate for binding of ligands. An appealing hypothesis is that unknown ligands bind the PMD, initiates an interaction with the VSLD\u00a0(possibly at the extended S3 helix) and/or pore domain which alters channel function. Similarly, interactions of the PMD with the pore domain may elicit conformational changes leading to gating. Given the association of polycystin-1 (a protein of unknown function) and polycystin-2 proteins, it will be important to determine if any of the domains of polycystin-1 proteins interact with polycystin-2 family PMDs.\n\nPI(4,5)P2 was recently observed to facilitate the gating of both polycystin-2 and polycystin 2-l1 by interacting with residues on both the N and C termini (Zheng et al., 2018). The current lack of resolution of N- and C-terminal ion channel flexible regions limits our interpretation of gating influences for the group II TRP channels. Among group I TRP channels, the large interaction surfaces for intracellular ligands, such as the ankyrin repeats found on several TRPs, the more common TRP domains, and predicted C-terminal EF-hand calcium-binding sites and calmodulin-binding domains,\u00a0are difficult to interpret without better understanding of proteins or ligands that may bind these regions.\n\nThe explosion of structures available for TRP channels lays the groundwork for interpreting future detailed characterization. The structure of polycystin 2-l1 presented here, will help in understanding what drove evolution to create the diversity that exists in the TRPP subfamily, but only when we more completely understand their biophysical and physiological functions. The recent progress made in cryo-EM underscores the importance of discovering these features.\n\n## Materials\u00a0and\u00a0methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>PKD2L1</td>\n      <td>Synthetic, non-codon optimized</td>\n      <td>Uniprot - Q9P0L9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK 293 GnT I-</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-3022/RRID: CVCL_A785</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>ATCC</td>\n      <td>ATCC: CRL-1711/RRID: CVCL_0549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEG BACMAM</td>\n      <td>doi: 10.1038/nprot.20.14.173</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cisTEM</td>\n      <td>doi: 10.7554/eLife.35383</td>\n      <td></td>\n      <td>http://cistem.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>PyMOL Molecular Graphics System, Schr\u00f6dinger, LLC</td>\n      <td>RRID:SCR_000305</td>\n      <td>http://www.pymol.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>UCSF Resource for Biocomputing, Visualization, and Bioinformatics</td>\n      <td>RRID:SCR_004097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>3D FSC</td>\n      <td>doi: 10.1038/nmeth.4347</td>\n      <td></td>\n      <td>https://3dfsc.salk.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>doi.org/10.1107/S0907444909052925</td>\n      <td>RRID:SCR_014224</td>\n      <td>https://www.phenix-online.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>doi.org:10.1107/S0907444910007493</td>\n      <td>RRID:SCR_014222</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE</td>\n      <td>(see References)</td>\n      <td></td>\n      <td>http://www.holeprogram.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VMD</td>\n      <td>UIUC Theoretical and Computational Biophysics Group</td>\n      <td></td>\n      <td>http://www.ks.uiuc.edu/Research/vmd/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning, expression and purification\n\nCloning, expression, and purification of full-length human polycystin 2-l1 were completed using the BacMam strategy (Goehring et al., 2014). Briefly, constructs were subcloned into the vector pEG using restriction sites NotI and BstBI. The construct sequence was verified and transformed into DH10bac cells. Blue-white screening facilitated colony selection to create a midiprep of the bacmid. This preparation was used to transfect Sf9 cells using Cellfectin II following the manufacturer\u2019s instructions. Amplification of the virus was completed for 2 cycles (P2) before viral particle were used to infect HEK293S GnT I- cells at 10% v/v at 37\u00b0C and 8% CO2 with shaking. After 24 hr, sodium butyrate was added to a final concentration of 10 mM and cells were harvested after 48 hr.\n\nProtein was extracted directly from pellets using 40x critical micellar concentration (CMC) of the detergent C12E9 in HKN buffer (in mM: HEPES 50, KCl 150, NaCl 50, CaCl2 5; pH 7.5) with an EDTA-free protease inhibitor cocktail (Roche) tablet for 2 hr at 4\u00b0C using gentle rotation. Ultracentrifugation of the sample was completed at 40,000 RPM for 1 hr at 4\u00b0C. The resulting supernatant was retained and used for a batch incubation with amylose resin overnight at 4\u00b0C. Resin was collected, washed in HKN buffer with higher K+ (500 mM) and 2x CMC of n-Dodecyl \u03b2-D-maltoside: cholesteryl hemisuccinate 10:1 (DDM:CHS) for 10 bed volumes followed by a normal HKN buffer for 10 bed volumes with 2xCMC of DDM:CHS. The protein was eluted using 40 mM maltose in HKN buffer at 2xCMC DDM: CHS. All fractions were collected, concentrated and subjected to 1 round of size exclusion chromatography using an Increase Superose6 (GE Lifesciences) column pre-equilibrated with HKN and 2xCMC DDH: CHS. Protein-containing fractions, as determined by A280 and western-blotting against maltose binding protein (MBP), were collected, concentrated and used for further preparation. The sample\u2019s concentration was again determined using A280 and incubated with a 1:3 ratio (mass) of poly (maleic andydride-alt-1-decene substituted with 3-(dimethylamino) propylamine; PMAL C8) overnight with gentle rotation at 4\u00b0C. A final round of size exclusion chromatography using an Increase Superose6 column equilibrated with HKN buffer was performed, fractions collected, and concentrated using a Vivaspin Turbo4 100,000 molecular weight cutoff (MWCO) centrifugation device before being applied to grids and freezing.\n\n### Sample preparation\n\nThe cryo specimen was vitrified using 3 \u03bcl of purified polycystin 2-l1 in PMAL-C8 at 3.5 mg/ml and applied onto a glow-discharged 400 mesh copper Quantifoil R1.2/1.3 holey carbon grid (Quantifoil). Grids were blotted for 3 s at 95% humidity and flash frozen in liquid nitrogen-cooled liquid ethane bath using a Vitrobot (Thermo Fisher, Hillsboro OR). Samples were stored in liquid nitrogen until acquisition.\n\n### Cryo-EM image acquisition, processing and modeling\n\nData for full-length polycystin 2-l1 were collected on a FEI Titan Krios (Thermo Fisher, Hillsboro,\u00a0OR) at 300\u00a0kV with a Gatan Quantum Image Filter (20 eV slit) and K2 Summit detector at the Janelia Research Campus (Ashburn, VA) using the following parameters: A total of 3814 image stacks were acquired at a sampling rate of 1.04 \u00c5/pixel with an 8 s exposure of 8 e- pixel\u22121 s\u22121 at 0.2 s/frame for a total dose of approximately 60 e- \u00c52 s\u22121 using SerialEM (Mastronarde, 2005).\n\nData was processed using cisTEM (Grant et al., 2018), which contains all processing steps listed below with relevant references to the technique for each step. Briefly, beam-induced motion and physical drift were corrected followed by dose-weighing using the Unblur algorithm (Grant and Grigorieff, 2015). Next the contrast transfer function was estimated and used to correct micrographs. After inspection of all micrographs, 3,494 were used for data processing. Particles were then automatically selected based on an empirical evaluation of maximum particle radius (80 \u00c5), characteristic particle radius (60 \u00c5), and threshold peak height (2 S.D. above noise). 2D classification on 842,130 particles used an input starting reference from a previous model solved in C4 symmetry (Figure 1\u2014figure supplement 3). This initial model was generated ab initio from a data set acquired for polycystin 2-l1 and processed using cisTEM (particles from 20 \u00c5 to 8 \u00c5 for the first step of classification with a 20 \u00c5 low pass filter used for the initial model to avoid bias). Eight class averages representing different orientations were selected for further iterative 3D classification and refinement in C4 symmetry (Figure 1\u2014figure supplement 3). The best solutions for each iteration were selected for local refinement in (Figure 1\u2014figure supplement 3) cisTEM. Upon completion of 3D refinement, the best class was sharpened using B-factors. Fourier Shell Correlation (FSC) and angular distribution plots were collected for the final dataset in cisTEM (Figure 1\u2014figure supplement 4a and b). Final resolution maps are based on the 0.143 FSC criterion (Rosenthal and Henderson, 2003). 3D FSC plots were for the final data were analyzed via the web portal for 3DFSC (https://3dfsc.salk.edu) (Tan et al., 2017) (Figure 1\u2014figure supplement 4c). Local resolution was calculated using ResMAP (Kucukelbir et al., 2014) (Figure 1\u2014figure supplement 4d). Examples of model fit in cryo-EM maps are provided in Figure 1\u2014figure supplement 5 and data collection, refinment and validations statistics in Table 1.\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection and processing</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Calibrated\u00a0Magnification</td>\n      <td>48,077</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron Exposure (e-/A2)</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22121.0 to \u22122.4</td>\n    </tr>\n    <tr>\n      <td>Pixel Size (\u00c5/pixel)</td>\n      <td>1.04</td>\n    </tr>\n    <tr>\n      <td>Symmetry Imposed</td>\n      <td>C4</td>\n    </tr>\n    <tr>\n      <td>Initial Particle images (no.)</td>\n      <td>842,139</td>\n    </tr>\n    <tr>\n      <td>Final Particle images (no.)</td>\n      <td>114,814</td>\n    </tr>\n    <tr>\n      <td>Map Resolution (\u00c5)</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>FSC Threshold</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Map Resolution Range</td>\n      <td>3.3\u20137.1</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model Resolution cutoff (\u00c5)</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Map Sharpening B Factor (\u00c52)</td>\n      <td>\u221290</td>\n    </tr>\n    <tr>\n      <td>Model Composition</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen Atoms</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Protein Residues</td>\n      <td>1656</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>R.M.S. Deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond Lengths (\u00c5)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mol Probity Score</td>\n      <td>1.94</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>7.6</td>\n    </tr>\n    <tr>\n      <td>Outlier Rotamers (%)</td>\n      <td>0.67</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Plot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>91.0</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>8.82</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.18</td>\n    </tr>\n  </tbody>\n</table>\n\nPolyalanine \u03b1-helices and \u03b2-sheets were built for each transmembrane section and the PMD using pdb 5T4D as a final guide in Coot (Emsley et al., 2010). Densities were inspected, and initial assignments of residues were based on aromatic or bulky residues. Real-space refinement, using PHENIX (Adams et al., 2010), was completed iteratively with inspection of the model in Coot. Model quality was evaluated using Molprobity (Williams et al., 2018) and EMRinger (Barad et al., 2015). The model was then compared to sequence alignments of the TRPP family and three models of the closely related polycystin-2 structures (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017). Pore size was evaluated using HOLE (Smart et al., 1996) and local resolution maps calculated from RESMAP (Kucukelbir et al., 2014). The sequence analysis for polycystin 2-l1 family members and projection onto the structure was completed using 500 multiple sequence alignments generated from iterative Blast searches and then analyzed with Consurf (Glaser et al., 2003; Landau et al., 2005). Electrostatic plots were created in Pymol. Model rendering was completed in Pymol and Chimera (Pettersen et al., 2004).\n\n### Electrophysiology\n\nLiposomes containing full-length polycystin 2-l1 protein were voltage clamped to record single channel currents. Protein was reconstituted following the dilution method (Cortes and Perozo, 1997) into liposomes made from Soy Extract Polar (Avanti). After extensive dialysis, lipids were pelleted and resuspended in HKN buffer and stored at \u221280\u00b0C until characterization. A sample of reconstituted protein was dried overnight at 4\u00b0C under constant vacuum and rehydrated the next morning in the same buffer. Liposomes were allowed to swell for 1 hr on ice before recording with patch pipettes (10\u201315 M\u03a9). The bath was a Tris buffered variant of HKN (in mM: TRIS 10, KCl 150, NaCl 50, CaCl2 1), pH 7.4; the pipette contained the same buffer with 1 mM MgCl2. Solution osmolarity was measured at 400\u2013405 mOsm. Data was acquired at 10 kHz and a low-pass Bessel-filtered at 1\u20132 kHz. For each recording, pipette offset and capacitance were corrected. Approximately 2 min after a G\u03a9 seal was achieved, the patch was excised, and capacitance corrected before recording.\n",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e63864c0-ce4d-4432-81be-96a64b009fdb",
+      "submission_id": "32fd1f0a-ae87-412c-8869-864f431c39a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36931.025](https://doi.org/10.7554/eLife.36931.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cryo-EM structure of the polycystin 2-l1 ion channel\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Richard Aldrich as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, Hulse et al., presented a structure of the full-length human polycystin 2-l1 protein at 3.1\u00c5 resolution using single particle electron cryo-microscopy (cryo-EM). Although it shares high sequence similarity to polycystin 2, whose structure has been determined by multiple labs recently, polycystin 2-l1 exhibits distinct ion permeability. The study aims to provide a detailed view of the structural differences between polycystin 2-l1 and polycystin 2, and these structural differences may underlie the functional difference between the two channels.\n\nEssential revisions:\n\n1) The manuscript is structured from the viewpoint of understanding the function of the channel but, at present, it is not clear at this point whether the structural differences contribute to function. The main impact of the present study would be to compare the structures of polycystin 2-l1 and PKD2 in as much detail as possible. Oddly, the introduction to the manuscript barely mentions the fact that a structure for PKD2 has already been reported by this and other groups, but the trajectory of the manuscript would be better served by addressing this up front and moving on from there. In this context, figures showing direct comparisons or overlays of these two TRPP structures would be very useful and help convey important points that are difficult to ascertain from the current format. We are not expecting new functional data but the new structures at the least should help develop a cogent hypothesis for further testing.\n\n2) There seems to be a disconnect between the stated resolution of the structure and the quality of the maps. This is suggested by the inability to resolve many regions and, in particular, side chains. From the figures provided (for example, Figure 2B and Figure 3D), it is not clear how well the model fits the density map in various regions. The maps look more to be in the 4 \u2013 4.5\u00c5 range, and it isn't clear where the possible discrepancy lies. Overfitting is a known issue with cisTEM program for EM structure determination. The authors should re-evaluate their data processing and analysis.\n\n3) Related to the above point, please provide the map for this structure which would help reviewers assess the quality of the data and thus the validity of the conclusions.\n\n4) Another question concerns the unusual protocol for channel protein purification, which is very different from that described for PKD2 and which involves initial extraction into C12E9 detergent, batch overnight incubation with amylose resin, and multiple gel filtration steps. Could this be enhancing protein instability that degrades resolution?\n\n5) Overall, the manuscript is difficult to follow. Most figures are not properly labeled and many of the descriptions in the paper are not adequately supported by figures, making it difficult to comprehend, particularly for readers who are not familiar with the TRPP family of channels. Specifically:\n\nResults section: \"We conclude that these elements are either unstructured or connected with flexible regions, which, along with the lack of cytoplasmic elements in 2D classification (Shen et al., 2016), prevents model building of these regions.\" This sentence is unclear and I am not sure what the phrase \"cytoplasmic elements\" refer to.\n\nSubsection \u201cThe Voltage Sensing-Like Domain\u201d: \"This S3 helix exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al.\" What does greater secondary structure mean here \u2013 longer S3?\n\nSubsection \"The Polycystin Mucolipin Domain\". The authors spend so much effort pointing out very detailed structural differences between polycystin 2-l1 and polycystin 2. However, these differences do not seem to have any functional relevance.\n\nSubsection \u201cThree leaf clovers of the polycystin mucolipin domain\u201d: \"However, the nature of the interaction differs in that F216 of TLC1 is near W308 of the adjacent subunit's PMD, representing a possible pi-pi stacking interaction or a hydrophobic pocket\". A hydrophobic pocket is not a proper way to describe this interaction.\n\nSubsection \u201cFenestrations and TLC3\u201d: If I recall correctly, the fenestration appears to be sealed in polycystin-2 by an extended loop based on Shen's structure. If there is a fenestration in the present structure, a proper figure should be provided here.\n\nSubsection \u201cFenestrations and TLC3\u201d: What does \"upper pore domain\" refer to: the extracellular side of the pore domain? What do \"the loop pore helices\" refer to here: the loop and/or the pore helices? What does \"mutually exclusive glycosylation states\" refer to? In the last sentence of this section: \"This difference may help rationalize the intermediate diameter observed in the polycystin-2 multiple-ion structure (1.4\u00c5) (Wilkes et al., 2017) and the single-ion structure (1.0\u00c5) (Wilkes et al., 2017) where such interactions do not exist, and our polycystin 2-l1 structure (3.1\u00c5).\" What diameters are the authors describing here and what does \"this difference\" refer to? Again, there is no figure to support all the descriptions in this paragraph.\n\nSubsection \u201cThe Pore Domain\u201d:\n\nI am not sure how the figures are ordered. Figure 2 is described after Figure 4. Also, there are no proper labels on Figure 2.\n\nFirst paragraph of subsection \u201cThe Pore Domain\u201d: \"Notably, one element, K511 in polycystin 2-l1, is highly variable among TRPPs.\" Where is this K511? Again, there is no figure to support it.\n\nSecond paragraph subsection \u201cThe Pore Domain\u201d: I simply don't understand what is discussed here and again there is no figure to support the description. Should the filter diameter be radius? Does 5K47 refer to a PDB code?\n\nThird paragraph of subsection \u201cThe Pore Domain\u201d: The narrowest distance of 2.1 \u00c5 appears to be the narrowest filter radius based on Figure 2A (right panel), which excludes the van deer Waals radius of the G522 carbonyl oxygen. The \"2.4 \u00c5 metal-oxygen distance\" refers to atom-to-atom distance between Ca2+ and oxygen. These two distances are not comparable.\n\nThird paragraph of subsection \u201cThe Pore Domain\u201d: Here the author repeated the same discussion as the last paragraph, except using atom-to-atom diagonal distances. If the diagonal distance between the two G522 carbonyl oxygen atoms is 8.7\u00c5, then the minimum distance between the G522 carbonyl oxygen and Ca2+ ion would be 4.4 \u00c5. If so, the argument of 2.4 \u00c5 metal-oxygen distance is no longer correct. Basically, the whole description about the pore domain is messy and incomprehensible.\n\nSubsection \u201cIon permeation differences between polycystin-2 and polycystin 2-l1\u201d. The values of relative permeability ratio should be provided.\n\n\"Higher resolution Cryo-EM structures that identify Ca2+ and/or monovalents that are occupying the pore with high certainty (or equivalent crystallographic studies like those of CaVAb (Tang et al., 2014)), and realistic molecular dynamic simulations, should shed light on these issues.\" What is realistic MD simulation? What do \"these issues\" refer to here?\n\nI simply don't understand the logic behind the electrostatic argument. Are the authors suggesting that the net positive charge of the polycystin 2-l1 pore helices contributes to the Ca2+ permeability of the channel? Also, how do they compare the relative Ca2+ permeability among four different channels?\n\nDiscussion section \"The relatively larger diameter of polycystin 2-l1's pore (0.6\u00c5 \u2013 1.1\u00c5) may enable partially [\u2026]\" Where is this distance value from? It does not match with the pore radius plot! Is it 0.6-1.1 \u00c5 larger than the pore of polycystin 2?\n\nFigure 1A the pore radius and the solvent accessible pathway does not match, particularly the lower gate (green) part.\n",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8139f242-1c1b-44ba-932e-3c4851e7a4ab",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C1",
+      "claim": "The human polycystic kidney disease 2-like 1 (polycystin 2-l1) ion channel structure was determined at near atomic resolution (3.3 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "We report the near atomic resolution (3.3 \u00c5) of the human polycystic kidney disease 2-like 1 (polycystin 2-l1) ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the resolution achieved for the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "5cd85d17-d3be-44d6-886e-461ff195788c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C2",
+      "claim": "Polycystin 2-l1 is encoded by PKD2L1.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the gene encoding the protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8380abe0-6599-4b0a-ac16-55309d237ead",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C3",
+      "claim": "Polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the ion permeability characteristics of the channel.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c8bc17ea-f86c-4b3e-8cfb-5369e43e5adb",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C4",
+      "claim": "Polycystin 2-l1 is located in primary cilia and plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by PKD2L1, polycystin 2-l1 is a calcium and monovalent cation-permeant ion channel in primary cilia and plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the subcellular localization of the channel.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "666a57af-c252-48df-a02e-468dd6add409",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C5",
+      "claim": "Polycystin-2 protein is encoded by PKD2 and shares a high degree of sequence similarity with polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "The related primary cilium-specific polycystin-2 protein, encoded by PKD2, shares a high degree of sequence similarity, yet has distinct permeability characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the relationship between the two proteins and their encoding genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "1c29ac94-b996-4276-9510-b336ec58a6da",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C6",
+      "claim": "Polycystin-2 and polycystin 2-l1 have distinct permeability characteristics despite high sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The related primary cilium-specific polycystin-2 protein, encoded by PKD2, shares a high degree of sequence similarity, yet has distinct permeability characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly contrasts the functional properties of the two proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ee2239f9-4340-43c0-a40c-42ae6a554a5a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C7",
+      "claim": "Primary cilia are small protuberances 5\u201310 \u03bcm in length found in nearly every cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "These small protuberances (5\u201310 \u03bcm in length) are found in nearly every cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides specific measurements and distribution of primary cilia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "1d003e60-5409-4f7e-a5e8-d33fc3d3f09f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C8",
+      "claim": "Primary cilia house key downstream elements of the sonic hedgehog pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia house key downstream elements of the sonic hedgehog pathway, which regulates embryonic development and some cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states the signaling components present in primary cilia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d0aa0a2d-8b99-4020-951f-d32736e95dfa",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C9",
+      "claim": "The sonic hedgehog pathway regulates embryonic development and some cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia house key downstream elements of the sonic hedgehog pathway, which regulates embryonic development and some cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the biological functions of the sonic hedgehog pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "2f1818ba-dd9d-4e0d-a5ce-d05ce4c3eed3",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C10",
+      "claim": "Primary cilia have elevated resting internal Ca2+ concentrations of 300\u2013700 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia have elevated resting internal Ca2+ concentrations ([Ca2+]=300\u2013700 nM [Delling et al., 2013]), and possess at least two TRP channels, polycystin-2 and polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a specific study providing calcium concentration measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4a9be210-03f2-4bc4-8145-71abb6ec311a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C11",
+      "claim": "Primary cilia possess at least two TRP channels: polycystin-2 and polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia have elevated resting internal Ca2+ concentrations ([Ca2+]=300\u2013700 nM [Delling et al., 2013]), and possess at least two TRP channels, polycystin-2 and polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly lists the TRP channels present in primary cilia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "08d267d0-cd74-444f-a360-cdd3e0c32469",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C12",
+      "claim": "Polycystin-2 and polycystin 2-l1 are encoded by genes of the TRPP subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "These ion channels are encoded by the PKD2 and PKD2L1 genes of the TRPP subfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states the gene family classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "979d9ead-8c4f-49ab-b76d-5cace03af495",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C13",
+      "claim": "Polycystin 2-l1 and polycystin-2 both underlie ionic currents in primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological measurements demonstrate that polycystin 2-l1 and polycystin-2 both underlie ionic currents in primary cilia (DeCaen et al., 2013, 2016; Kleene and Kleene, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites electrophysiological studies demonstrating channel function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c8aeae44-d7c9-47b8-9889-558cb2b9dda0",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C14",
+      "claim": "Voltage gradients and Ca2+, in addition to cAMP, are relevant signals within primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that voltage gradients and Ca2+, in addition to cAMP, are relevant signals within primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction infers the relevance of these signals based on the presence of ion channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "553b1acd-038b-49ef-82cb-7e4fffda64e1",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C15",
+      "claim": "PKD2 and PKD2L1 share 52% sequence identity and 71% similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 and PKD2L1 share high degrees of sequence identity (52%) and similarity (71%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides specific sequence comparison metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c0510b7c-b8c5-44ba-a231-beddc0a3594f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C16",
+      "claim": "Mutations in PKD2 account for approximately 15% of cases of Autosomal Dominant Polycystic Kidney Disease (ADPKD).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in PKD2 account for ~15% of cases of individuals afflicted with Autosomal Dominant Polycystic Kidney Disease (ADPKD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states the clinical relevance of PKD2 mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "67030940-b798-4cbd-bd0d-ab68c85a3829",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C17",
+      "claim": "There are no diseases currently linked to PKD2L1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there are no diseases currently linked to PKD2L1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the absence of disease associations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "684be1e7-4dda-4327-9c20-1a41e5d560ed",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C18",
+      "claim": "Deletion of PKD2 is lethal in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of PKD2 is lethal in mice (Wu et al., 1998), but deletion of PKD2L1 results in occasional gut malrotation, a relatively mild situs inversus phenotype (Delling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study demonstrating the lethal phenotype of PKD2 deletion.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ae8448a1-3537-41ac-ab84-d9172b3ed9ca",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C19",
+      "claim": "Deletion of PKD2L1 results in occasional gut malrotation, a relatively mild situs inversus phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of PKD2 is lethal in mice (Wu et al., 1998), but deletion of PKD2L1 results in occasional gut malrotation, a relatively mild situs inversus phenotype (Delling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study describing the phenotype of PKD2L1 deletion.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4f7b7a8a-e789-4e3f-9a3e-7c5815650832",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C20",
+      "claim": "Polycystin 2-l1 protein functional characterization has been enabled by its plasma membrane expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while the functional characterization of polycystin 2-l1 protein has been enabled by its plasma membrane expression (DeCaen et al., 2013, 2016), polycystin-2 protein function has been hampered by its restriction to surface expression in primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explains the experimental advantage of polycystin 2-l1's localization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "31387fd5-f340-4390-8363-9121d1ce4350",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C21",
+      "claim": "Polycystin-2 protein function has been hampered by its restriction to surface expression in primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while the functional characterization of polycystin 2-l1 protein has been enabled by its plasma membrane expression (DeCaen et al., 2013, 2016), polycystin-2 protein function has been hampered by its restriction to surface expression in primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explains the experimental challenge of studying polycystin-2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "12ee0dc9-71e3-44e9-9b14-07267bc33d0d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C22",
+      "claim": "A gain-of-function mutation enables polycystin-2 expression to the plasma membrane in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches include a gain-of-function mutation that enables expression to the plasma membrane in Xenopus oocytes (Arif Pavel et al., 2016) and direct patch clamp recording of polycystin-2 in primary cilia (Kleene and Kleene, 2017; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a study describing a method to study polycystin-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "64ff6a46-eff7-43f9-858f-a9d9792ef018",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C23",
+      "claim": "Direct patch clamp recording of polycystin-2 in primary cilia has been achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches include a gain-of-function mutation that enables expression to the plasma membrane in Xenopus oocytes (Arif Pavel et al., 2016) and direct patch clamp recording of polycystin-2 in primary cilia (Kleene and Kleene, 2017; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites studies describing direct recording methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "87718ccb-cf57-4031-b14b-4d037ddec8d3",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C24",
+      "claim": "Polycystin-2 is a monovalent-selective cation channel with little or no calcium permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies establish polycystin-2 as a monovalent-selective cation channel with little or no calcium permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction summarizes the functional properties established by cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3cc66994-2249-48f5-a3af-c542363e8600",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C25",
+      "claim": "Polycystin 2-l1 shows significant and relevant Ca2+ permeability with PCa/PNa approximately 6.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, polycystin 2-l1 shows significant and relevant Ca2+ permeability (PCa/PNa ~6) (DeCaen et al., 2013, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites studies providing specific permeability measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "1b250e8a-835d-40cd-9783-9417e1769f0f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C26",
+      "claim": "The physiological stimulus for activation and gating is unclear for both polycystin-2 and polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this knowledge, the physiological stimulus for activation and gating is unclear for both channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states the gap in knowledge about channel activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "f88514b8-e3d3-4a32-9eca-1a48ee62af25",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C27",
+      "claim": "Multiple structures have been solved for the TRP ion channel family, including the TRPP family.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, multiple structures have been solved for the TRP ion channel family, including the TRPP family to which polycystin-2 and polycystin 2-l1 belong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states the availability of structural information for related proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4df9c053-a7bb-46dd-84ea-65f7ae4d1a08",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C28",
+      "claim": "Full-length recombinant polycystin 2-l1 protein was expressed and purified using HEK293 GnT I- cells and the BacMam system.",
+      "claim_type": "EXPLICIT",
+      "source": "We first expressed and purified full-length recombinant polycystin 2-l1 protein tagged with maltose binding protein (MBP) (Figure 1\u2014figure supplement 1) using HEK293 GnT I- cells and the BacMam system (Goehring et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the experimental methods used for protein production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "711c74db-492a-4227-8318-361efeea2b9f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C29",
+      "claim": "The MBP-tagged polycystin 2-l1 protein has a single channel conductance of 105 pS in HKN buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel's conductance in the same buffer used for purification (HKN, see Materials and methods) was 105 pS, consistent with previous single-channel studies from cells expressing polycystin 2-l1 (DeCaen et al., 2013) (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides electrophysiological measurements and references a figure showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "46f59ceb-6152-4856-b392-c20e2dd69d95",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C30",
+      "claim": "The 105 pS conductance of recombinant polycystin 2-l1 is consistent with previous single-channel studies from cells expressing polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel's conductance in the same buffer used for purification (HKN, see Materials and methods) was 105 pS, consistent with previous single-channel studies from cells expressing polycystin 2-l1 (DeCaen et al., 2013) (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section compares the measured conductance to published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4c9f9598-fa96-4b1d-9199-45a2a0135bb6",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C31",
+      "claim": "Polycystin 2-l1 forms a homotetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1's structure exhibits many of the hallmarks of TRP channels: it forms a homotetramer with a domain-swapped Voltage Sensing-Like Domain (VSLD, the S1-S4 transmembrane domains) (Figure 1a) and shares remarkable architectural similarity to polycystin-2 (Figure 1\u2014figure supplement 2) (RMSD of 1.5 \u00c5 measured with polycystin-2 model pdb 5T4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the quaternary structure observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "5c2ce0a2-e841-4bca-9023-ccf02401a30b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C32",
+      "claim": "Polycystin 2-l1 has a domain-swapped Voltage Sensing-Like Domain (VSLD) comprising the S1-S4 transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1's structure exhibits many of the hallmarks of TRP channels: it forms a homotetramer with a domain-swapped Voltage Sensing-Like Domain (VSLD, the S1-S4 transmembrane domains) (Figure 1a) and shares remarkable architectural similarity to polycystin-2 (Figure 1\u2014figure supplement 2) (RMSD of 1.5 \u00c5 measured with polycystin-2 model pdb 5T4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the structural organization of the VSLD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "972d9d99-8666-4cbc-8953-2fcb53ba1396",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C33",
+      "claim": "Polycystin 2-l1 shares remarkable architectural similarity to polycystin-2 with an RMSD of 1.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1's structure exhibits many of the hallmarks of TRP channels: it forms a homotetramer with a domain-swapped Voltage Sensing-Like Domain (VSLD, the S1-S4 transmembrane domains) (Figure 1a) and shares remarkable architectural similarity to polycystin-2 (Figure 1\u2014figure supplement 2) (RMSD of 1.5 \u00c5 measured with polycystin-2 model pdb 5T4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides a quantitative comparison to the polycystin-2 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d92b385d-9f5b-40c3-adab-751ac9174557",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C34",
+      "claim": "Polycystin 2-l1 has a long S1-S2 extracellular loop termed the polycystin mucolipin domain (PMD).",
+      "claim_type": "EXPLICIT",
+      "source": "As characteristic of group 2 TRP channels (TRPPs and TRPMLs), polycystin 2-l1 has a long S1-S2 extracellular loop, termed the polycystin mucolipin domain (PMD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a structural feature characteristic of group 2 TRP channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ddf8227e-b39b-4888-b771-bad5838b54c6",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C35",
+      "claim": "The PMD is a series of 3 \u03b1-helices, 4 \u03b2-sheets, and a glycosylated three loop region (TLC or three-leaf clover).",
+      "claim_type": "EXPLICIT",
+      "source": "This domain, a series of 3 \u03b1-helices, 4 \u03b2-sheets, and a glycosylated three loop region (see below, TLC or three-leaf clover), forms a cover, or lid, above the channel (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the secondary structure composition of the PMD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "2babc078-7719-4126-a93b-175ca8199a70",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C36",
+      "claim": "The PMD forms a cover, or lid, above the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This domain, a series of 3 \u03b1-helices, 4 \u03b2-sheets, and a glycosylated three loop region (see below, TLC or three-leaf clover), forms a cover, or lid, above the channel (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the spatial arrangement of the PMD relative to the channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a7ca278b-78a6-47fb-b709-5d966d6cbe3b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C37",
+      "claim": "Polycystin-2's PMD has 3 or 4 observed glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the 3 or 4 observed glycans in polycystin-2's polycystin mucolipin domain (PMD) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017), polycystin 2-l1's PMD has one clear glycan density located at residue N207.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous structural studies of polycystin-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "51c5943e-7ef2-44d7-a06c-8a9044c7cdff",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C38",
+      "claim": "Polycystin 2-l1's PMD has one clear glycan density located at residue N207.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the 3 or 4 observed glycans in polycystin-2's polycystin mucolipin domain (PMD) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017), polycystin 2-l1's PMD has one clear glycan density located at residue N207.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes observed glycosylation in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e51d0168-ec9b-4ce6-a537-b37567f1066d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C39",
+      "claim": "An additional glycan density could possibly be present at N241 in polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional density, at N241, could possibly support an additional glycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a potential but uncertain glycosylation site.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "7de56c4b-04f8-4b31-96eb-5ffaa3c583ca",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C40",
+      "claim": "The PMD interacts with underlying elements of the pore, the voltage sensing-like domains, and adjacent PMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the PMD interacts with underlying elements of the pore, the voltage sensing-like domains, and adjacent PMDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the interaction network of the PMD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "5a756403-cf3e-4e72-87e6-754fd1a81cba",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C41",
+      "claim": "The role of glycosylation of the PMD in TRPPs is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of glycosylation of the PMD in TRPPs is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explicitly states the lack of knowledge about glycosylation function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d81dd9e6-b067-4258-90e1-5480d20923bb",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C42",
+      "claim": "Glycosylation of the PMD may serve as a folding/quality control mechanism or as a site for intermolecular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Two possibilities include serving as a folding/quality control mechanism or as a site for intermolecular interactions (e.g., ligand involved in gating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section proposes hypothetical functions for PMD glycosylation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "22d45536-f984-4efd-836d-f1eb91d4dae5",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C43",
+      "claim": "The N terminus and the S4-S5 linker densities of polycystin 2-l1 are too poorly resolved to model.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular face of polycystin 2-l1 is too poorly resolved to model the N terminus and the S4-S5 linker densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes limitations in the structural resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3e8d3642-e7f1-4044-ad1d-ddc7e434e7c1",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C44",
+      "claim": "The C terminus of polycystin 2-l1 was not resolved despite expression of full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, despite expression of full-length protein (Figure 1\u2014figure supplement 1) the C terminus of polycystin 2-l1 was not resolved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section notes the absence of C-terminal density in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "98e67804-47d4-420f-9578-a19fe7a7d724",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C45",
+      "claim": "The unresolved regions of polycystin 2-l1 are either unstructured or connected with flexible regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that these elements are either unstructured or connected with flexible regions, which, along with the lack of cytoplasmic elements in 2D classification in polycystin-2 (Shen et al., 2016), prevents model building of these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides an interpretation for the missing structural elements.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ba1e9c69-e1d2-4bd4-8cba-8cc7e9344b42",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C46",
+      "claim": "The VSLD is comprised of four transmembrane helical spanning elements.",
+      "claim_type": "EXPLICIT",
+      "source": "The VSLD is comprised of four transmembrane helical spanning elements that, while similar in structure to the voltage-sensing domains of voltage-gated ion channels, do not convert the energy of the transmembrane electric field into pore gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the structural composition of the VSLD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b4fb9504-1d3b-4dde-9f07-423a97e15c9f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C47",
+      "claim": "The VSLD does not convert the energy of the transmembrane electric field into pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The VSLD is comprised of four transmembrane helical spanning elements that, while similar in structure to the voltage-sensing domains of voltage-gated ion channels, do not convert the energy of the transmembrane electric field into pore gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section contrasts the VSLD function with voltage-gated channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "50895866-fa8a-4331-9c6d-cb6958745460",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C48",
+      "claim": "None of the group II TRP channels have significant voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, none of the group II TRP channels have significant voltage dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section states a general property of group II TRP channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "05289df3-47ea-47e3-8844-34bb4d792780",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C49",
+      "claim": "The polycystin 2-l1 S2 helix is tilted an additional 4.5\u00b0 away from the core compared to polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the VSLD of polycystin 2-l1 and polycystin-2 reveals that the polycystin 2-l1 S2 helix is tilted an additional 4.5\u00b0 away from the core, is laterally shifted away from the rest of the VSLD, and shows the greatest local RMSD difference (Figure 1\u2014figure supplement 2a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides a quantitative structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "39d91b14-db32-4379-90dd-b640c4f3bb2f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C50",
+      "claim": "The polycystin 2-l1 S2 helix is laterally shifted away from the rest of the VSLD compared to polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the VSLD of polycystin 2-l1 and polycystin-2 reveals that the polycystin 2-l1 S2 helix is tilted an additional 4.5\u00b0 away from the core, is laterally shifted away from the rest of the VSLD, and shows the greatest local RMSD difference (Figure 1\u2014figure supplement 2a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a structural difference between the two proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b362543e-9377-4b07-805f-c8e43e1fcbeb",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C51",
+      "claim": "The S2 helix shows the greatest local RMSD difference between polycystin 2-l1 and polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the VSLD of polycystin 2-l1 and polycystin-2 reveals that the polycystin 2-l1 S2 helix is tilted an additional 4.5\u00b0 away from the core, is laterally shifted away from the rest of the VSLD, and shows the greatest local RMSD difference (Figure 1\u2014figure supplement 2a, b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section identifies the region with the largest structural deviation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "7d77f756-7b8e-46d6-81f3-cd0b5aa78651",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C52",
+      "claim": "Polycystin 2-l1's S3 is a near-continuous helix extending from the membrane-spanning region into a pocket created by the PMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1's S3 is a near-continuous helix extending from the membrane-spanning region into a pocket created by the PMD (Figures 1c and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the structural organization of the S3 helix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8594fff6-7c25-40c8-bf08-6df613d9b4d0",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C53",
+      "claim": "The S3 helix of polycystin 2-l1 exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al.",
+      "claim_type": "EXPLICIT",
+      "source": "This S3 helix exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al. (Shen et al., 2016), but is similar to that of the multiple- and single-ion models of Wilkes et al., (Wilkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section compares the S3 structure to published polycystin-2 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "57e3c285-9c08-440d-9374-88479ce0987b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C54",
+      "claim": "The S3 helix of polycystin 2-l1 is similar to that of the multiple- and single-ion models of polycystin-2 by Wilkes et al.",
+      "claim_type": "EXPLICIT",
+      "source": "This S3 helix exhibits greater secondary structure than the presumed closed polycystin-2 structure of Shen et al. (Shen et al., 2016), but is similar to that of the multiple- and single-ion models of Wilkes et al., (Wilkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section compares the S3 structure to published polycystin-2 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "26357580-6ee4-4c91-9e9c-d666a4dc45b5",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C55",
+      "claim": "The S3 extended helix abuts the PMD of the same monomer but does not display the same cation-\u03c0 interactions as polycystin-2's F545 and R320 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The S3 extended helix abuts the PMD of the same monomer but does not display the same cation-\u03c0 interactions as polycystin-2's F545 and R320 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes differences in molecular interactions compared to polycystin-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8ea212ab-ff8b-4108-8b94-ef5f0b35e22b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C56",
+      "claim": "The S3-S4 linker and the top portion of the S4 helix fit into the same cleft of the PMD as in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The S3-S4 linker and the top portion of the S4 helix also fit into the same cleft of the PMD as in polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a structural similarity to polycystin-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "445d7c74-796b-40c1-beee-b4206a24d5b9",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C57",
+      "claim": "In polycystin-2, the S4 adopts a 310-helix configuration from I571 to F579.",
+      "claim_type": "EXPLICIT",
+      "source": "In polycystin-2, the S4 adopts a 310-helix configuration (I571 \u2013 F579).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a structural feature of polycystin-2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c2a82c15-1014-425f-80ff-ee3e794f721d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C58",
+      "claim": "The density of the S4 helix of polycystin 2-l1 is incomplete in the region corresponding to the 310-helix of polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of the S4 helix of polycystin 2-l1 is incomplete at this region so a 310 configuration is not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes limitations in structural resolution for this region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "278be09d-4b6d-489a-972d-2bbf28c051bd",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C59",
+      "claim": "The equivalent residues of polycystin-2 that form a salt bridge between the S3 and S4 helix (K572, K575) do not have sufficient side chain density to model accurately in polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the equivalent residues of polycystin-2 that are thought to form a salt bridge between the S3 and S4 helix (K572, K575) (Shen et al., 2016), do not have sufficient side chain density to model accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes limitations in modeling specific residues.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ba417c6a-8477-4e80-9895-326e7c408e5d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C60",
+      "claim": "The equivalent residue for polycystin-2's acidic D511 residue is D390 in polycystin 2-l1, which does not form a salt-bridge with neighboring residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalent residue for polycystin-2's acidic D511 residue is D390 in polycystin 2-l1, which does not form a salt-bridge with neighboring residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a difference in molecular interactions compared to polycystin-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "f5310df0-d9e5-4e0d-80a5-e8ff357512b4",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C61",
+      "claim": "The PMD rests on top of the VSLD of the same monomer and the adjacent pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The polycystin mucolipin domain (PMD) rests on top of the VSLD of the same monomer and the adjacent pore domain (Figure 3b and c), with a series of three \u03b1-helices facing inward towards the funnel/turret of the pore (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the spatial arrangement of the PMD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ebff8869-2e7e-4140-98ed-14e06b20d3c5",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C62",
+      "claim": "A series of three \u03b1-helices in the PMD face inward towards the funnel/turret of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The polycystin mucolipin domain (PMD) rests on top of the VSLD of the same monomer and the adjacent pore domain (Figure 3b and c), with a series of three \u03b1-helices facing inward towards the funnel/turret of the pore (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the orientation of structural elements in the PMD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "cca09d64-4bf0-4278-a9d3-45098987ff81",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C63",
+      "claim": "A series of \u03b2-sheets is sandwiched between the \u03b1-helices of the PMD with several loops that interface with the extracellular space and adjacent PMD.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of \u03b2-sheets is sandwiched between these \u03b1-helices with several loops that interface with the extracellular space and adjacent PMD (Figures 1b and 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the structural organization of the PMD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "f0926db0-a624-486e-9e79-c076137c7eef",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C64",
+      "claim": "A disulfide bond is present between residues C210-C223 in the PMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a disulfide bond is present between residues C210-C223 in the PMD, similar to several polycystin-2 structures (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a specific structural feature observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "16ef7e1d-1874-4390-b5f9-b5e8b3b26cf4",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C65",
+      "claim": "The C210-C223 disulfide bond is similar to that found in several polycystin-2 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a disulfide bond is present between residues C210-C223 in the PMD, similar to several polycystin-2 structures (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section compares the disulfide bond to polycystin-2 structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "1094ff56-96b1-4cba-87f6-5ec497366a7a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C66",
+      "claim": "The C210-C223 disulfide bond is proposed to stabilize a loop in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This element is proposed to stabilize a loop in polycystin-2 (Shen et al., 2016; Wilkes et al., 2017) and seems likely to play the same role in polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous proposals about the function of this disulfide bond.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c09a1093-0480-4180-85be-374597b60615",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C67",
+      "claim": "The C210-C223 disulfide bond seems likely to play the same stabilizing role in polycystin 2-l1 as in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This element is proposed to stabilize a loop in polycystin-2 (Shen et al., 2016; Wilkes et al., 2017) and seems likely to play the same role in polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers a functional role based on structural similarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e6f4095b-3fa3-4139-9f86-5f6605b97d0c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C68",
+      "claim": "Polycystin 2-l1 lacks the small \u03b1-helix in TLC1 that is present in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1 lacks the small \u03b1-helix in TLC1 of polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a structural difference in the TLC1 region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3339897f-9687-4f91-97ab-7d9f51c64ed9",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C69",
+      "claim": "The TLC1 region (D208-D225) displays moderately lower sequence conservation among the TRPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this region (D208-D225) displays moderately lower sequence conservation among the TRPPs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes sequence conservation analysis for this region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "efe42ad3-77b4-4280-9169-0586c805b13e",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C70",
+      "claim": "TLC1 in polycystin-2 appears to extend into the adjacent PMD and interact with the S3 helix and S3-S4 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted, TLC1 in polycystin-2 appears to extend into the adjacent PMD and interact with the S3 helix and S3-S4 linker (Grieben et al., 2017; Wilkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous structural observations of polycystin-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "fdb8581b-b721-4cc2-b0a9-2216de66ee3c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C71",
+      "claim": "In polycystin 2-l1, TLC1 extends from one monomer into the PMD of the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In polycystin 2-l1, the analogous TLC1 extends from one monomer into the PMD of the adjacent subunit (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the inter-subunit interaction of TLC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "58ba0cbb-ab74-4784-96fc-6d73fdd08707",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C72",
+      "claim": "F216 of TLC1 is near Y308 of the adjacent subunit's PMD, representing a possible \u03c0-\u03c0 stacking interaction or a hydrophobic pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the nature of the interaction differs in that F216 of TLC1 is near Y308 of the adjacent subunit's PMD, representing a possible \u03c0 - \u03c0 stacking interaction or a hydrophobic pocket (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a potential molecular interaction observed in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "9614b48f-ccab-4352-b4ca-26534e8a3c01",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C73",
+      "claim": "N311's carboxamide oxygen group is within hydrogen bonding distance (3.3 \u00c5) of Y224's amide in TLC1 of the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, N311's carboxamide oxygen group, located on a hairpin between \u03b23 and \u03b24 of the PMD, is within hydrogen bonding distance (3.3 \u00c5) of Y224's amide in TLC1 of the adjacent subunit of polycystin 2-l1 (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific distance measurements indicating a hydrogen bond.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "27801452-7452-4829-a724-f453a7ac60c4",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C74",
+      "claim": "Residue W259 of TLC3 forms a cation-\u03c0 stacking interaction with the upper pore domain at residue R534.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, residue W259 of TLC3 formats a cation-\u03c0 stacking interaction with the upper pore domain at residue R534 (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a specific molecular interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "787ff2ee-64fd-4974-a979-0deba0f4f9cb",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C75",
+      "claim": "The interactions between TLC regions and adjacent domains support tetrameric assembly and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these interactions as supporting tetrameric assembly and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides an interpretation of the functional significance of observed interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "5bce5022-4796-41be-8198-1242396db1d2",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C76",
+      "claim": "Despite moderately low identity and an increase in charged residues in polycystin 2-l1's TLC3, the loop appears essentially the same as in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite moderately low identity and an increase in charged residues in polycystin 2-l1's TLC3 (SPDKEE (residues 228\u2013232) versus SVSSED in polycystin-2), the loop appears essentially the same as in polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section compares the TLC3 structure and sequence between the two proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a78ed633-4f46-4df5-b797-82bb648d542a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C77",
+      "claim": "TLC3 appears to reach under the PMD's \u03b2-sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "This element appears to reach under the PMD's \u03b2-sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the spatial arrangement of TLC3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b42410d6-001d-4ecc-b1b6-c2912f898bb6",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C78",
+      "claim": "Proximity of the returning loop of TLC1 towards TLC2, as well as the S5-PH1 loop and the PH2-S6 loop, creates four lateral openings at the base of the PMD in polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "Proximity of the returning loop of TLC1 towards TLC2, as well as the S5-PH1 loop of the monomer and the PH2-S6 loop adjacent monomer creates four lateral openings at the base of the PMD in polycystin 2-l1, as in polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes structural features that create openings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "06c09b54-fd45-4759-b25b-79dd0ac3880f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C79",
+      "claim": "The four lateral openings at the base of the PMD could present an alternative route for ion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "These could present an alternative route for ion permeation (Grieben et al., 2017; Wilkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous proposals about the functional significance of these openings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3822bb38-b8c4-4c25-8493-f6e634a4949b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C80",
+      "claim": "The area around the lateral openings is less conserved among the polycystin 2-l1 homologs (PKD2, PKD2L2).",
+      "claim_type": "EXPLICIT",
+      "source": "This area is less conserved among the polycystin 2-l1 homologs (PKD2, PKD2L2)(Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes sequence conservation analysis for this region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "83b154b5-7526-45c9-891f-d14511d8d9b0",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C81",
+      "claim": "Polycystin 2-l1's PMD interacts with the adjacent subunit's upper pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1's PMD also interacts with the adjacent subunit's upper pore domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes inter-subunit interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "fc97b1f2-34fb-480f-8176-15ce21772889",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C82",
+      "claim": "In polycystin-2, Wilkes et al. observed glycosylation-dependent interactions of the PMD with the loop pore-helices of the adjacent subunit, with mutually exclusive glycosylation states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the polycystin-2 multiple- (pdb 5MKF) and single-ion (pdb 5MKE) structures, Wilkes et al., (Wilkes et al., 2017) observed glycosylation-dependent interactions of the PMD of one subunit with the loop pore-helices of the adjacent (Wilkes et al., 2017), with mutually exclusive glycosylation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous observations from polycystin-2 structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c696a8df-0939-4307-ba1a-8c64e488da5a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C83",
+      "claim": "W259 from TLC3 forms a cation-\u03c0 stacking interaction with R534 and a hydrogen bond with G260's carbonyl (2.8 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "One last interaction between TLC3 and the loop between pore-helix 2 and S6, noted in the polycystin-2 structure (Shen et al., 2016), is seen in polycystin 2-l1: W259, from TLC3, forms a cation-\u03c0 stacking interaction with R534 and a hydrogen bond with G260's carbonyl (2.8 \u00c5) (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes specific molecular interactions with distance measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e31d1dd2-1157-446e-9fa4-c2104ff653fc",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C84",
+      "claim": "The W259-R534 interaction may help rationalize the intermediate pore size observed in polycystin 2-l1 (2.6 \u00c5) compared to polycystin-2 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may help rationalize the intermediate pore size observed in the polycystin-2 multiple-ion structure (1.4 \u00c5) (Wilkes et al., 2017) and the single-ion structure (1.0 \u00c5) (Wilkes et al., 2017) where such interactions do not exist, and our polycystin 2-l1 structure (2.6 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section proposes a structural explanation for differences in pore size.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "6d5a37c3-feb5-400c-8fd3-0ac7bec6acd2",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C85",
+      "claim": "Polycystin 2-l1's selectivity filter is flanked by two pore-helices, which are themselves each flanked by a transmembrane spanning helix (S5 and S6).",
+      "claim_type": "EXPLICIT",
+      "source": "As in polycystin-2, polycystin 2-l1's selectivity filter is flanked by two pore-helices, which are themselves each flanked by a transmembrane spanning helix (S5 and S6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the structural organization of the pore domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "443362fd-837a-4a41-b35a-4a7aa82e08e2",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C86",
+      "claim": "The S6 helix of polycystin 2-l1 remains \u03b1-helical throughout its length.",
+      "claim_type": "EXPLICIT",
+      "source": "The S6 helix of polycystin 2-l1 remains \u03b1-helical throughout its length, whereas the S6 helix of polycystin-2 is broken by a middle \u03c0-helix element, before continuing to the C terminus (Shen et al., 2016) (Figure 1\u2014figure supplement 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a structural difference in the S6 helix compared to polycystin-2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "35ca943a-d441-4fd8-9f47-c4b0a4ebef1b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C87",
+      "claim": "The S6 helix of polycystin-2 is broken by a middle \u03c0-helix element.",
+      "claim_type": "EXPLICIT",
+      "source": "The S6 helix of polycystin 2-l1 remains \u03b1-helical throughout its length, whereas the S6 helix of polycystin-2 is broken by a middle \u03c0-helix element, before continuing to the C terminus (Shen et al., 2016) (Figure 1\u2014figure supplement 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section cites a structural feature of polycystin-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e72569d5-7aee-416b-ab2b-1e2302473544",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C88",
+      "claim": "The S6 helix of polycystin 2-l1 is tilted 7.9\u00b0 relative to polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The S6 helix of polycystin 2-l1 is also tilted 7.9\u00b0 relative to polycystin-2 (Figure 1\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides a quantitative structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8c1bfcc1-1e45-4e92-bdd0-021266afb6cf",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C89",
+      "claim": "The key filter residues of polycystin 2-l1 are L521, G522 and D523.",
+      "claim_type": "EXPLICIT",
+      "source": "The key filter residues of polycystin 2-l1 are L521, G522 and D523, in which the carbonyls of L521 and G522 point to the central pore axis (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section identifies the selectivity filter residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b773f56a-9534-4192-8ebe-0a059d36932c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C90",
+      "claim": "The carbonyls of L521 and G522 point to the central pore axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The key filter residues of polycystin 2-l1 are L521, G522 and D523, in which the carbonyls of L521 and G522 point to the central pore axis (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the orientation of specific atoms in the selectivity filter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c8fa57d3-c188-44cb-a426-07d0def4104d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C91",
+      "claim": "D523's side chain is well-resolved and faces upward in parallel to the axis of ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "D523's side chain is well-resolved; the side chains face upward in parallel to the axis of ion conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the orientation of the D523 side chain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "67d2b031-367c-4e18-aa45-7db0d8cff465",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C92",
+      "claim": "The pore domain shows moderately strong conservation in S5, S6, and elements of the selectivity filter, as well as in pore helix 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore domain shows moderately strong conservation in S5, S6, and elements of the selectivity filter, as well as in pore helix 1 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes sequence conservation analysis for the pore domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d83f0b76-c86a-4ca1-a57d-2a5425969243",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C93",
+      "claim": "K511 in polycystin 2-l1 is highly variable among equivalent residues in other TRPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, K511 in polycystin 2-l1 is highly variable among equivalent residues in other TRPPs (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes sequence variation at a specific position.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "bf745ad1-e4ae-443a-a65b-6a6da37ee4fe",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C94",
+      "claim": "The corresponding residue to K511 is a negatively-charged glutamate in polycystin-2 and an asparagine in polycystin 2-l2.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding residue is a negatively-charged glutamate in polycystin-2 and an asparagine in polycystin 2-l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes sequence differences at this position across homologs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c87f572d-5cb8-4b49-9f80-3a29f7d0e684",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C95",
+      "claim": "K511 confers a net positive electrostatic potential in polycystin 2-l1 relative to polycystin-2's net negative charge.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of this residue is to confer a net positive electrostatic potential (Figure 5a) relative to polycystin-2's net negative charge.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the electrostatic consequence of the K511 residue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "fcf2d6ed-21bb-4b61-b8a2-9707f4b95bc9",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C96",
+      "claim": "The narrowest apertures in the selectivity filter have radii of 2.6 and 2.8 \u00c5 at L521 and G522 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The narrowest apertures in the selectivity filter, measured by HOLE (Smart et al., 1996), have radii of 2.6 and 2.8 \u00c5 at L521 and G522 respectively (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section provides specific measurements of pore dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "9f941455-227f-480e-9da7-bbfe9f1ca977",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C97",
+      "claim": "The pore apertures in polycystin 2-l1 represent a larger opening than in any of the three polycystin-2 structures (1.0 to 1.4 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "These distances represent a larger opening than that in any of the three polycystin-2 structures (1.0 to 1.4 \u00c5) (Grieben et al., 2017; Shen et al., 2016; Wilkes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section compares pore dimensions to published polycystin-2 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "deb2a8d9-2aa7-46aa-af77-2d6417e86a6b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C98",
+      "claim": "A pore diameter of 2.6-2.8 \u00c5 is sufficient to accommodate a partially hydrated Ca2+ ion with an average ~2.4 \u00c5 metal-oxygen distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a diameter is sufficient to accommodate a partially hydrated Ca2+ ion with an average ~2.4 \u00c5 metal-oxygen distance (Katz et al., 1996; Marcus, 1988) and an ionic radius of 0.99 \u00c5 (Pauling, 1988; Hille, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites literature values for calcium ion dimensions and interprets the functional significance of the pore size.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "10b07028-2108-447d-b162-3cb2bad3e593",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C99",
+      "claim": "An observed density in the selectivity filter extends across the two carbonyls of L521 and G522.",
+      "claim_type": "EXPLICIT",
+      "source": "An observed density in the selectivity filter extends across the two carbonyls of L521 and G522, contrasting with polycystin-2 densities that localize above and below the selectivity filter (Wilkes et al., 2017) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes electron density observed in the structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "5a3701e1-494a-452e-ac16-c6456303d243",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C100",
+      "claim": "Cryo-EM cannot determine the ion's identity with the same degree of reliability as X-ray anomalous scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cryo-EM cannot determine the ion's identity with the same degree of reliability of X-ray anomalous scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section acknowledges a limitation of the cryo-EM technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4552920b-a2e1-40b1-b9fb-12b1d33a03f9",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C101",
+      "claim": "The possibility of less abundant ions occupying the selectivity filter site cannot be ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "Although defined buffers are used, we cannot rule out the possibility of less abundant ions occupying the site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section acknowledges uncertainty about ion identity in the structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e52a53b5-9614-4bbe-ab08-3f9db33aa63d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C102",
+      "claim": "Polycystin-2 and polycystin 2-l1 core selectivity filter residues (LGD) are conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin-2 and polycystin 2-l1 core selectivity filters residues (LGD) are conserved, leading us to examine other explanations as to why polycystin 2-l1 conducts Ca2+ while polycystin-2 does not (PCa/PNa ~6) (DeCaen et al., 2013, 2016; Kleene and Kleene, 2017; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes sequence conservation and cites functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "eb3b58ce-f2bb-47d5-b188-469a37a1b107",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C103",
+      "claim": "If the pore helix 1-selectivity filter-pore helix 2 region of polycystin 2-l1 (C512-P538) is substituted by polycystin-2's analogous region (C632-P658), the polycystin 2-l1 chimera has roughly similar permeability to Na+, K+, and Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "If the pore helix 1-selectivity filter-pore helix 2 region of polycystin 2-l1 (C512-P538) is substituted by polycystin-2's analogous region (C632-P658), the polycystin 2-l1 chimera has roughly (within 4-fold) similar permeability to Na+, K+, and Ca2+ (Shen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a functional study of chimeric channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b2f7d5ad-7d57-4c75-907a-d4da2e6ab7af",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C104",
+      "claim": "Point mutations of polycystin 2-l1's D523 and D525 to alanine or serine yielded no measurable currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutation experiments in which polycystin 2-l1's D523 and D525 were mutated to alanine or serine yielded no measurable currents (DeCaen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a mutagenesis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "631ee568-8500-4dcd-b32a-446f84fe4d69",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C105",
+      "claim": "Polycystin 2-l1(D523N) was 18-fold less calcium-permeant (PCa2+/PCs+) than wt polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, polycystin 2-l1(LGD523: D523N) was 18-fold, and polycystin 2-l1(LGDFD525: D525N) 9-fold less calcium-permeant (PCa2+/PCs+) than wt polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites functional measurements of mutant channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "52c008cd-93bb-46b5-8c91-84a2b0da1f45",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C106",
+      "claim": "Polycystin 2-l1(D525N) was 9-fold less calcium-permeant than wt polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, polycystin 2-l1(LGD523: D523N) was 18-fold, and polycystin 2-l1(LGDFD525: D525N) 9-fold less calcium-permeant (PCa2+/PCs+) than wt polycystin 2-l1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites functional measurements of mutant channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a9ec4031-d838-4d55-8a74-16eb0b0ec683",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C107",
+      "claim": "The D525N mutation reduced outward current block by Ca2+, while D523N did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, and significantly, the D525N mutation reduced outward current block by Ca2+, while D523N did not (DeCaen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites functional differences between mutants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "6d821db8-5b02-49c8-92af-d21a6a1b3ecd",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C108",
+      "claim": "Order and placement of negative charge in the narrow region of the pore is important for both Ca2+ permeation and block.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that order and placement of negative charge in the narrow region of the pore is important for both Ca2+ permeation and block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section interprets the functional significance of mutagenesis experiments.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "17027504-f921-4e50-b97d-9d7697a2ec2f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C109",
+      "claim": "Polycystin 2-l1 has a more restricted negative charge density immediately surrounding the pore than polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin 2-l1 has a more restricted negative charge density immediately surrounding the pore than does polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes differences in electrostatic properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d05b377b-cc2c-44bc-91f9-191f238f6a13",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C110",
+      "claim": "Polycystin 2-l1's pore-helices form a 'Maltese cross' of net positive charge, rotated 45\u00b0 to the negative charge distribution 'cross' in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, its pore-helices form a 'Maltese cross' of net positive charge, rotated 45\u00b0 to the negative charge distribution 'cross' in polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the spatial distribution of charges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d4c495b9-a874-407c-9140-9f0ef833841a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C111",
+      "claim": "TRPV5 and TRPV6 have PCa2+/PNa+ greater than 100.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare these charge distributions to the much more Ca2+-selective TRPV5 and TRPV6 (PCa2+/PNa+> 100) (Ramsey et al., 2006) structures (Hughes et al., 2018; McGoldrick et al., 2018) (Figure 5a) in which the TRPV5/6 channels' negative charge is much more localized around their respective pores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section cites functional measurements of TRPV5/6 channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "1205023d-f828-484f-90ba-efc03ed0c586",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C112",
+      "claim": "TRPV5/6 channels' negative charge is much more localized around their respective pores compared to polycystin 2-l1.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare these charge distributions to the much more Ca2+-selective TRPV5 and TRPV6 (PCa2+/PNa+> 100) (Ramsey et al., 2006) structures (Hughes et al., 2018; McGoldrick et al., 2018) (Figure 5a) in which the TRPV5/6 channels' negative charge is much more localized around their respective pores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section compares electrostatic properties across channel types.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "9d40e556-3fd7-4c11-a7e8-3ef0a651e248",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C113",
+      "claim": "A conserved salt bridge exists between D523 and R518 in polycystin 2-l1 and between D643 and R638 in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "A conserved salt bridge between D523 and R518 in polycystin 2-l1 exists in polycystin-2 (D643 and R638).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes a conserved structural feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b7430d7a-edd7-4df0-9341-9acfdfcdd63b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C114",
+      "claim": "A hydrogen bond between residues D525 and A528 in polycystin 2-l1 is not present in polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet a hydrogen bond between residues D525 and A528 in polycystin 2-l1 is not present in polycystin-2; the residues are not conserved (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes a structural difference between the two proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "0f76c13c-a134-4653-ac45-e7a46a6e1e8b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C115",
+      "claim": "Local hydrogen bonding networks at the selectivity filter of KcsA have been observed to influence entry into a C-inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Local hydrogen bonding networks at the selectivity filter of ion channels have been observed to influence function such as the entry into a C-inactivated state for KcsA (Cordero-Morales et al., 2011), but such details for non-selective channels are currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a study of another ion channel to provide context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b6fdf384-af22-4513-b7fd-bb5ba250b43c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C116",
+      "claim": "Details about hydrogen bonding networks for non-selective channels are currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Local hydrogen bonding networks at the selectivity filter of ion channels have been observed to influence function such as the entry into a C-inactivated state for KcsA (Cordero-Morales et al., 2011), but such details for non-selective channels are currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section acknowledges a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3843596e-8e1f-484d-a859-3c85dcad6e30",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C117",
+      "claim": "The structure may change with gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In both observations, we rely on one structure, which may change with gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section acknowledges a limitation of having a single structural state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "285dee09-1188-46da-9996-22be8ec47707",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C118",
+      "claim": "Although polycystin 2-l1 and polycystin-2 structures are very similar, there are notable differences that may explain reported functional differences in their selectivity and permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although polycystin 2-l1 and polycystin-2 structures are very similar, there are notable differences that may explain reported functional differences in their selectivity and permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the main findings and their potential functional significance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b6c12959-95e4-4cf4-b1be-7ec0e6489a2a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C119",
+      "claim": "Polycystin 2-l1's S3 helix extends into the PMD as a complete \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the VSLD, polycystin 2-l1's S3 helix extends into the PMD as a complete \u03b1-helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes a structural finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "926bb84f-f0a5-40ec-92e4-8a741d57f39a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C120",
+      "claim": "The top of the S3-S4 helical region abuts the PMD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the top of the S3-S4 helical region abuts the PMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes a structural finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "9244ae39-2eba-4a53-8b6f-cf6faa89635a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C121",
+      "claim": "Polycystin 2-l1 lacks oligosaccharides that act as bridges between adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the PMDs, polycystin 2-l1 lacks oligosaccharides that act as bridges between adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes a structural difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "6c373e0b-6167-4fc4-a493-d7bc8fcdff0e",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C122",
+      "claim": "Polycystin 2-l1's pore diameter is slightly larger than polycystin-2's.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although similar, polycystin 2-l1's pore diameter is slightly larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes a structural difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b684a3d3-29e4-4b62-9d8c-9b60224a62d3",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C123",
+      "claim": "Polycystin 2-l1 conducts both monovalent ions and Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing selectivities of the two channels, we know that polycystin 2-l1 conducts both monovalent ions and Ca2+, while polycystin-2 is monovalent-selective (Kleene and Kleene, 2017; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites functional studies to contrast the two channels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a7096640-576d-4c0b-851a-7dad28be210f",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C124",
+      "claim": "The relatively larger size of polycystin 2-l1's pore radius (2.6\u20132.8 \u00c5) may enable partially hydrated calcium's transit.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively larger size of polycystin 2-l1's pore radius (2.6\u20132.8 \u00c5) may enable partially hydrated calcium's transit, thus avoiding the larger energy required for pore residues to dehydrate calcium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes a mechanism for calcium permeation based on pore size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a82523c4-6649-4d2a-ae3a-e90032931c79",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C125",
+      "claim": "The unique electrostatic maps surrounding the polycystin-2 and polycystin 2-l1 pores suggest that the putative energy landscapes may create small variations in selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most striking are the unique electrostatic maps (Figure 5a) surrounding the polycystin-2 and polycystin 2-l1 pores. Such differences in charge suggest that the putative energy landscapes may create small variations in selectivity, a characteristic suggested for the prokaryotic NaK ion channel (Alam and Jiang, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Discussion proposes a mechanism based on electrostatic differences and cites a related study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c34fe35e-68d0-4b2d-941f-2407e6837c66",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C126",
+      "claim": "Slight charge differences may impart the subtle relative permeability differences observed among most TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These slight charge differences, and so landscapes, may impart the subtle relative permeability differences observed among most TRP channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes a general principle for TRP channel selectivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "0870279d-98f7-4563-bb96-a21e68a450e6",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C127",
+      "claim": "Small changes in relative permeation may have evolved to titrate levels of ions within sub-femtoliter compartments like cilia and endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For organelles in which the TRPP (cilia) and TRPML (endolysosomes) appear, these subtle differences may have driven the evolution of small changes in relative permeation in order to titrate levels of ions within these sub-femtoliter compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes an evolutionary explanation for selectivity differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "906defc6-0ff3-40f8-bafa-2c7650b3cd5a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C128",
+      "claim": "TRPPs are not appreciably voltage- or mechanically-gated within physiologically relevant ranges of these forces.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPPs are not appreciably voltage- or mechanically-gated within physiologically relevant ranges of these forces (DeCaen et al., 2013, 2016), which raises the question of what other mechanisms activate these channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites functional studies and identifies a knowledge gap.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "64d796ef-ce4a-46f0-a390-ac5d453029c3",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C129",
+      "claim": "The large surface area of the PMD is a logical candidate for binding of ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The large surface area of the PMD is a logical candidate for binding of ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes a hypothesis about channel activation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "ae04fd29-e582-472b-8ac1-757f51620c3d",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C130",
+      "claim": "Unknown ligands may bind the PMD and initiate an interaction with the VSLD or pore domain which alters channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "An appealing hypothesis is that unknown ligands bind the PMD, initiates an interaction with the VSLD (possibly at the extended S3 helix) and/or pore domain which alters channel function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes a hypothetical gating mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "962ff69f-9145-4d08-8327-33c6091e4cf5",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C131",
+      "claim": "Interactions of the PMD with the pore domain may elicit conformational changes leading to gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, interactions of the PMD with the pore domain may elicit conformational changes leading to gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion proposes a hypothetical gating mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "7ab45e34-343a-45ef-ba1c-55f8ee4b9098",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C132",
+      "claim": "PI(4,5)P2 was recently observed to facilitate the gating of both polycystin-2 and polycystin 2-l1 by interacting with residues on both the N and C termini.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(4,5)P2 was recently observed to facilitate the gating of both polycystin-2 and polycystin 2-l1 by interacting with residues on both the N and C termini (Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites a recent study on channel regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "d2151264-fa40-46db-bc42-5966f5b36722",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C133",
+      "claim": "The lack of resolution of N- and C-terminal ion channel flexible regions limits interpretation of gating influences for the group II TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The current lack of resolution of N- and C-terminal ion channel flexible regions limits our interpretation of gating influences for the group II TRP channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion acknowledges a limitation in understanding gating mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "2daf8a8a-0039-4866-b666-480c70803a3c",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C134",
+      "claim": "The structure of polycystin 2-l1 will help in understanding what drove evolution to create the diversity that exists in the TRPP subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of polycystin 2-l1 presented here, will help in understanding what drove evolution to create the diversity that exists in the TRPP subfamily, but only when we more completely understand their biophysical and physiological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion states the potential impact of the structural work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "e632a9ac-f51d-41eb-a84e-ae3aa4621f48",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C135",
+      "claim": "3,814 image stacks were acquired for polycystin 2-l1 cryo-EM data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3814 image stacks were acquired at a sampling rate of 1.04 \u00c5/pixel with an 8 s exposure of 8 e- pixel\u22121 s\u22121 at 0.2 s/frame for a total dose of approximately 60 e- \u00c52 s\u22121 using SerialEM (Mastronarde, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section provides specific data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8f556230-3846-46b8-88e4-5df6e5c91b83",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C136",
+      "claim": "3,494 micrographs were used for data processing after inspection.",
+      "claim_type": "EXPLICIT",
+      "source": "After inspection of all micrographs, 3,494 were used for data processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section describes the data processing workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "cb118a0b-3638-4f2d-8f9a-96f08b77db34",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C137",
+      "claim": "842,130 particles were automatically selected for 2D classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Particles were then automatically selected based on an empirical evaluation of maximum particle radius (80 \u00c5), characteristic particle radius (60 \u00c5), and threshold peak height (2 S.D. above noise). 2D classification on 842,130 particles used an input starting reference from a previous model solved in C4 symmetry (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Materials and methods section provides specific numbers from the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "6507c319-03b8-4381-b125-af68804c52cc",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C138",
+      "claim": "The final polycystin 2-l1 dataset contained 114,814 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Final Particle images (no.) 114,814",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides the final number of particles used in the reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "b5bff7a7-9a58-4a07-b2ba-aa2401cc6531",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C139",
+      "claim": "The map resolution is 3.3 \u00c5 based on the 0.143 FSC criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Map Resolution (\u00c5) 3.3 FSC Threshold 0.143",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides the resolution and criterion used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "a53f65c8-1b4e-4d09-8869-a3f4590d68b4",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C140",
+      "claim": "The polycystin 2-l1 model contains 1656 protein residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein Residues 1656",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides the model composition statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "70f82a6e-df02-4f65-aff7-14676fb8ca0e",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C141",
+      "claim": "The angle between the beginning of pore helix 1 and the top of the selectivity filter is 77\u00b0 for polycystin 2-l1 and 75\u00b0 for polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to polycystin-2's pore helix 1 (PDB 5T4D), the angle between the beginning of pore helix 1 and the top of the selectivity filter is similar (77\u00b0 for polycystin 2-l1 and 75\u00b0 for polycystin-2) compared to the 10\u00b0 pitch difference between polycystin-2 and TRPV1 (Grieben et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides specific angle measurements comparing structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "516e4c35-4675-4133-930c-1e11ec7641f5",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "claim_id": "C142",
+      "claim": "Polycystin 2-l1's pore helix is approximately 1.5 \u00c5 shorter than that of polycystin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, polycystin 2-l1's pore helix, measured from beginning to end of the \u03b1-helix at the C\u03b1, is ~1.5 \u00c5 shorter than that of polycystin-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides a specific measurement comparing pore helix lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the cryo-EM structure of full-length human polycystin 2-l1 at 3.3 \u00c5 resolution. The structure reveals a homotetrameric architecture with domain-swapped voltage sensing-like domains (VSLD), showing remarkable similarity to polycystin-2 (RMSD 1.5 \u00c5). The recombinant protein was functionally validated with single-channel conductance of 105 pS, consistent with previous cellular studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C28-C33, and C135-C140 collectively provide strong evidence for the structural determination. The resolution (3.3 \u00c5) is appropriate for the level of detail described, data collection parameters are specified, and functional validation confirms the protein is active. The structural similarity to polycystin-2 is quantified with RMSD measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "537c9559-8c60-486e-aba9-0cdc5130e268",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The polycystin mucolipin domain (PMD) forms a lid-like structure above the channel, consisting of 3 \u03b1-helices, 4 \u03b2-sheets, and a three-leaf clover (TLC) region. Polycystin 2-l1 has fewer glycosylation sites (1-2) compared to polycystin-2 (3-4). The PMD interacts with the VSLD, pore domain, and adjacent PMDs through specific molecular interactions including \u03c0-\u03c0 stacking, hydrogen bonds, and cation-\u03c0 interactions that support tetrameric assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C84 and C121 provide detailed structural characterization of the PMD with specific distance measurements (e.g., 3.3 \u00c5 hydrogen bond, 2.8 \u00c5 interaction) and identified residues. The structural features are supported by electron density maps and comparisons to polycystin-2 structures. The proposed functional roles are appropriately qualified as interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "24c94e8f-686f-48a5-9174-1bfb47e72d11",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The voltage sensing-like domain (VSLD) comprises four transmembrane helices (S1-S4) that do not function in voltage-dependent gating. Structural differences from polycystin-2 include: the S2 helix is tilted 4.5\u00b0 and laterally shifted, the S3 helix extends as a continuous \u03b1-helix into the PMD, and several residues proposed to form salt bridges in polycystin-2 lack sufficient density for accurate modeling in polycystin 2-l1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C60, C119-C120 provide quantitative structural comparisons with specific angle measurements and identify regions with insufficient density. The functional interpretation that the VSLD does not mediate voltage-dependent gating is supported by cited electrophysiological studies (C48). Limitations in modeling certain regions are appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "31ed58e1-3e45-41fa-8fab-863dd34530a6",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The pore domain contains a selectivity filter with key residues L521, G522, and D523, flanked by two pore-helices and transmembrane helices S5 and S6. The narrowest pore apertures are 2.6-2.8 \u00c5 at L521 and G522, larger than polycystin-2 (1.0-1.4 \u00c5) and sufficient to accommodate partially hydrated Ca2+ ions. The S6 helix remains \u03b1-helical throughout (unlike polycystin-2's \u03c0-helix) and is tilted 7.9\u00b0 relative to polycystin-2. Electron density in the selectivity filter suggests ion occupancy, though cryo-EM cannot definitively identify the ion species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C101, C141-C142 provide detailed pore architecture with specific measurements using HOLE analysis. The comparison to polycystin-2 structures is quantitative and appropriately cites literature values for ion dimensions. The limitation regarding ion identification by cryo-EM is appropriately acknowledged (C100-C101), preventing overinterpretation of the density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite conserved selectivity filter residues (LGD), polycystin 2-l1 conducts Ca2+ while polycystin-2 does not. The authors propose this difference arises from: (1) larger pore diameter (2.6-2.8 \u00c5 vs 1.0-1.4 \u00c5) enabling partially hydrated Ca2+ transit, (2) distinct electrostatic landscapes with polycystin 2-l1 showing more restricted negative charge and a 'Maltese cross' positive charge pattern rotated 45\u00b0 from polycystin-2, and (3) unique hydrogen bonding networks (D525-A528) not present in polycystin-2. Mutagenesis studies show D523N and D525N reduce Ca2+ permeability 18-fold and 9-fold respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C116, C123-C126 integrate structural observations with cited functional data from mutagenesis studies. The proposed mechanisms are appropriately qualified as hypotheses ('may enable', 'suggest'). The comparison to highly Ca2+-selective TRPV5/6 channels provides context. However, the mechanisms remain speculative without direct experimental validation of the proposed energy landscapes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "bfd9c8fe-6629-4bc6-b248-d299db7c6e43",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The N-terminus, C-terminus, and S4-S5 linker regions are not resolved in the structure despite expression of full-length protein. The authors conclude these regions are either unstructured or connected by flexible regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C133 appropriately acknowledge structural limitations. The interpretation that missing density indicates flexibility or disorder is reasonable and consistent with similar observations in polycystin-2 structures (C45 cites Shen et al., 2016). This limitation is important for understanding gating mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Polycystin 2-l1 (encoded by PKD2L1) and polycystin-2 (encoded by PKD2) share 52% sequence identity and 71% similarity but have distinct functional properties. Polycystin 2-l1 is a calcium and monovalent cation-permeant channel (PCa/PNa ~6) located in primary cilia and plasma membranes, while polycystin-2 is monovalent-selective with little or no calcium permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6, C12, C15, C24-C25 accurately summarize established knowledge about these proteins, supported by multiple cited studies. The sequence identity/similarity values are specific, and the functional differences are well-documented in the literature cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c5eb6497-f44a-4e75-91f5-3f8853f70812",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Primary cilia are 5-10 \u03bcm protuberances found in nearly every cell type that house sonic hedgehog pathway elements and possess at least two TRP channels (polycystin-2 and polycystin 2-l1). They have elevated resting Ca2+ concentrations (300-700 nM), suggesting voltage gradients and Ca2+ are relevant signals within primary cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 provide background context supported by cited literature. The Ca2+ concentration measurements cite specific studies (Delling et al., 2013), and the presence of ion channels is documented by electrophysiological studies. The inference about relevant signals (C14) is reasonable given the presence of ion channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "f6f6e183-cb64-448f-a860-0d79479c5236",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PKD2 mutations account for ~15% of ADPKD cases and PKD2 deletion is lethal in mice, while PKD2L1 has no associated diseases and its deletion causes only mild situs inversus. Polycystin 2-l1's plasma membrane expression has enabled functional characterization, while polycystin-2's restriction to primary cilia has hampered study, though recent approaches including gain-of-function mutations and direct ciliary patch clamp have overcome this limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 accurately summarize the clinical and experimental context, supported by appropriate citations. The contrast between the two proteins' disease associations and experimental accessibility provides important background for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "c6ee48b2-31d1-422b-9320-addfbc522495",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The physiological stimulus for activation and gating of polycystin-2 and polycystin 2-l1 remains unclear. TRPPs are not appreciably voltage- or mechanically-gated within physiological ranges. The authors propose the PMD's large surface area may bind unknown ligands that interact with the VSLD or pore domain to alter channel function. PI(4,5)P2 was recently shown to facilitate gating by interacting with N- and C-termini, but these regions are not resolved in current structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26, C27, C128-C134 appropriately identify knowledge gaps and propose hypotheses about gating mechanisms. The proposals are speculative (appropriately qualified with 'may', 'appealing hypothesis') and acknowledge that lack of N/C-terminal resolution limits interpretation. The citation of PI(4,5)P2's role (C132) provides some mechanistic insight, but the overall gating mechanism remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "02e17a9f-62b9-40b5-a907-f0110080a5ed",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The role of PMD glycosylation in TRPPs is unknown, though it may serve as a folding/quality control mechanism or as a site for intermolecular interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 appropriately acknowledge uncertainty about glycosylation function while proposing reasonable hypotheses. The speculation is appropriately qualified and does not overstate the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "f1a031bc-94ad-4809-a4ee-a22b0d859adb",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The structure may change with gating, and while polycystin 2-l1 and polycystin-2 structures are very similar, notable differences including slightly larger pore diameter may explain functional differences in selectivity and permeation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C118, C122 appropriately acknowledge the limitation of having a single structural state and cautiously interpret structure-function relationships. The qualification that the structure 'may change with gating' is important for avoiding overinterpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    },
+    {
+      "id": "4f19de7a-d18a-4ba2-af14-f9914ea9bcc8",
+      "content_id": "a1947b5c-b4e3-4d7b-8d3b-d755349bbf12",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Small changes in relative permeation may have evolved to titrate ion levels within sub-femtoliter compartments like cilia and endolysosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C127 proposes an evolutionary explanation for selectivity differences, but this is highly speculative without comparative evolutionary analysis or experimental evidence linking subtle permeability differences to physiological function in these compartments. The proposal is appropriately qualified as speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:29:43.130185Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8139f242-1c1b-44ba-932e-3c4851e7a4ab",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "4df9c053-a7bb-46dd-84ea-65f7ae4d1a08",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "711c74db-492a-4227-8318-361efeea2b9f",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "46f59ceb-6152-4856-b392-c20e2dd69d95",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "4c9f9598-fa96-4b1d-9199-45a2a0135bb6",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "5c2ce0a2-e841-4bca-9023-ccf02401a30b",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "972d9d99-8666-4cbc-8953-2fcb53ba1396",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "e632a9ac-f51d-41eb-a84e-ae3aa4621f48",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "8f556230-3846-46b8-88e4-5df6e5c91b83",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "cb118a0b-3638-4f2d-8f9a-96f08b77db34",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "6507c319-03b8-4381-b125-af68804c52cc",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "b5bff7a7-9a58-4a07-b2ba-aa2401cc6531",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "a53f65c8-1b4e-4d09-8869-a3f4590d68b4",
+      "result_id": "8fdaf37b-8d33-4fd0-a2c0-b5de5e9b862a"
+    },
+    {
+      "claim_id": "d92b385d-9f5b-40c3-adab-751ac9174557",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "ddf8227e-b39b-4888-b771-bad5838b54c6",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "2babc078-7719-4126-a93b-175ca8199a70",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "a7ca278b-78a6-47fb-b709-5d966d6cbe3b",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "51c5943e-7ef2-44d7-a06c-8a9044c7cdff",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "e51d0168-ec9b-4ce6-a537-b37567f1066d",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "7de56c4b-04f8-4b31-96eb-5ffaa3c583ca",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "f5310df0-d9e5-4e0d-80a5-e8ff357512b4",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "ebff8869-2e7e-4140-98ed-14e06b20d3c5",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "cca09d64-4bf0-4278-a9d3-45098987ff81",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "f0926db0-a624-486e-9e79-c076137c7eef",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "16ef7e1d-1874-4390-b5f9-b5e8b3b26cf4",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "1094ff56-96b1-4cba-87f6-5ec497366a7a",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "c09a1093-0480-4180-85be-374597b60615",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "e6f4095b-3fa3-4139-9f86-5f6605b97d0c",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "3339897f-9687-4f91-97ab-7d9f51c64ed9",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "efe42ad3-77b4-4280-9169-0586c805b13e",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "fdb8581b-b721-4cc2-b0a9-2216de66ee3c",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "58ba0cbb-ab74-4784-96fc-6d73fdd08707",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "9614b48f-ccab-4352-b4ca-26534e8a3c01",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "27801452-7452-4829-a724-f453a7ac60c4",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "787ff2ee-64fd-4974-a979-0deba0f4f9cb",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "5bce5022-4796-41be-8198-1242396db1d2",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "a78ed633-4f46-4df5-b797-82bb648d542a",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "b42410d6-001d-4ecc-b1b6-c2912f898bb6",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "06c09b54-fd45-4759-b25b-79dd0ac3880f",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "3822bb38-b8c4-4c25-8493-f6e634a4949b",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "83b154b5-7526-45c9-891f-d14511d8d9b0",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "fc97b1f2-34fb-480f-8176-15ce21772889",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "c696a8df-0939-4307-ba1a-8c64e488da5a",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "e31d1dd2-1157-446e-9fa4-c2104ff653fc",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "9244ae39-2eba-4a53-8b6f-cf6faa89635a",
+      "result_id": "537c9559-8c60-486e-aba9-0cdc5130e268"
+    },
+    {
+      "claim_id": "ba1e9c69-e1d2-4bd4-8cba-8cc7e9344b42",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "b4fb9504-1d3b-4dde-9f07-423a97e15c9f",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "50895866-fa8a-4331-9c6d-cb6958745460",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "05289df3-47ea-47e3-8844-34bb4d792780",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "39d91b14-db32-4379-90dd-b640c4f3bb2f",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "b362543e-9377-4b07-805f-c8e43e1fcbeb",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "7d77f756-7b8e-46d6-81f3-cd0b5aa78651",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "8594fff6-7c25-40c8-bf08-6df613d9b4d0",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "57e3c285-9c08-440d-9374-88479ce0987b",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "26357580-6ee4-4c91-9e9c-d666a4dc45b5",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "8ea212ab-ff8b-4108-8b94-ef5f0b35e22b",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "445d7c74-796b-40c1-beee-b4206a24d5b9",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "c2a82c15-1014-425f-80ff-ee3e794f721d",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "278be09d-4b6d-489a-972d-2bbf28c051bd",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "ba417c6a-8477-4e80-9895-326e7c408e5d",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "b6c12959-95e4-4cf4-b1be-7ec0e6489a2a",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "926bb84f-f0a5-40ec-92e4-8a741d57f39a",
+      "result_id": "24c94e8f-686f-48a5-9174-1bfb47e72d11"
+    },
+    {
+      "claim_id": "6d5a37c3-feb5-400c-8fd3-0ac7bec6acd2",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "443362fd-837a-4a41-b35a-4a7aa82e08e2",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "35ca943a-d441-4fd8-9f47-c4b0a4ebef1b",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "e72569d5-7aee-416b-ab2b-1e2302473544",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "8c1bfcc1-1e45-4e92-bdd0-021266afb6cf",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "b773f56a-9534-4192-8ebe-0a059d36932c",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "c8fa57d3-c188-44cb-a426-07d0def4104d",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "67d2b031-367c-4e18-aa45-7db0d8cff465",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "d83f0b76-c86a-4ca1-a57d-2a5425969243",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "bf745ad1-e4ae-443a-a65b-6a6da37ee4fe",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "c87f572d-5cb8-4b49-9f80-3a29f7d0e684",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "fcf2d6ed-21bb-4b61-b8a2-9707f4b95bc9",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "9f941455-227f-480e-9da7-bbfe9f1ca977",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "deb2a8d9-2aa7-46aa-af77-2d6417e86a6b",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "10b07028-2108-447d-b162-3cb2bad3e593",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "5a3701e1-494a-452e-ac16-c6456303d243",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "4552920b-a2e1-40b1-b9fb-12b1d33a03f9",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "70f82a6e-df02-4f65-aff7-14676fb8ca0e",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "516e4c35-4675-4133-930c-1e11ec7641f5",
+      "result_id": "31ed58e1-3e45-41fa-8fab-863dd34530a6"
+    },
+    {
+      "claim_id": "e52a53b5-9614-4bbe-ab08-3f9db33aa63d",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "eb3b58ce-f2bb-47d5-b188-469a37a1b107",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "b2f7d5ad-7d57-4c75-907a-d4da2e6ab7af",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "631ee568-8500-4dcd-b32a-446f84fe4d69",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "52c008cd-93bb-46b5-8c91-84a2b0da1f45",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "a9ec4031-d838-4d55-8a74-16eb0b0ec683",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "6d821db8-5b02-49c8-92af-d21a6a1b3ecd",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "17027504-f921-4e50-b97d-9d7697a2ec2f",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "d05b377b-cc2c-44bc-91f9-191f238f6a13",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "d4c495b9-a874-407c-9140-9f0ef833841a",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "1205023d-f828-484f-90ba-efc03ed0c586",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "9d40e556-3fd7-4c11-a7e8-3ef0a651e248",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "b7430d7a-edd7-4df0-9341-9acfdfcdd63b",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "0f76c13c-a134-4653-ac45-e7a46a6e1e8b",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "b6fdf384-af22-4513-b7fd-bb5ba250b43c",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "b684a3d3-29e4-4b62-9d8c-9b60224a62d3",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "a7096640-576d-4c0b-851a-7dad28be210f",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "a82523c4-6649-4d2a-ae3a-e90032931c79",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "c34fe35e-68d0-4b2d-941f-2407e6837c66",
+      "result_id": "3827bdf5-6f95-4ee4-b9ce-81362af11a5b"
+    },
+    {
+      "claim_id": "22d45536-f984-4efd-836d-f1eb91d4dae5",
+      "result_id": "bfd9c8fe-6629-4bc6-b248-d299db7c6e43"
+    },
+    {
+      "claim_id": "3e8d3642-e7f1-4044-ad1d-ddc7e434e7c1",
+      "result_id": "bfd9c8fe-6629-4bc6-b248-d299db7c6e43"
+    },
+    {
+      "claim_id": "98e67804-47d4-420f-9578-a19fe7a7d724",
+      "result_id": "bfd9c8fe-6629-4bc6-b248-d299db7c6e43"
+    },
+    {
+      "claim_id": "d2151264-fa40-46db-bc42-5966f5b36722",
+      "result_id": "bfd9c8fe-6629-4bc6-b248-d299db7c6e43"
+    },
+    {
+      "claim_id": "5cd85d17-d3be-44d6-886e-461ff195788c",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "8380abe0-6599-4b0a-ac16-55309d237ead",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "c8bc17ea-f86c-4b3e-8cfb-5369e43e5adb",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "666a57af-c252-48df-a02e-468dd6add409",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "1c29ac94-b996-4276-9510-b336ec58a6da",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "08d267d0-cd74-444f-a360-cdd3e0c32469",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "553b1acd-038b-49ef-82cb-7e4fffda64e1",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "87718ccb-cf57-4031-b14b-4d037ddec8d3",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "3cc66994-2249-48f5-a3af-c542363e8600",
+      "result_id": "8e656fc1-6cbb-4a0b-8816-40c200efd7dd"
+    },
+    {
+      "claim_id": "ee2239f9-4340-43c0-a40c-42ae6a554a5a",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "1d003e60-5409-4f7e-a5e8-d33fc3d3f09f",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "d0aa0a2d-8b99-4020-951f-d32736e95dfa",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "2f1818ba-dd9d-4e0d-a5ce-d05ce4c3eed3",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "4a9be210-03f2-4bc4-8145-71abb6ec311a",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "979d9ead-8c4f-49ab-b76d-5cace03af495",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "c8aeae44-d7c9-47b8-9889-558cb2b9dda0",
+      "result_id": "c5eb6497-f44a-4e75-91f5-3f8853f70812"
+    },
+    {
+      "claim_id": "c0510b7c-b8c5-44ba-a231-beddc0a3594f",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "67030940-b798-4cbd-bd0d-ab68c85a3829",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "684be1e7-4dda-4327-9c20-1a41e5d560ed",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "ae8448a1-3537-41ac-ab84-d9172b3ed9ca",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "4f7b7a8a-e789-4e3f-9a3e-7c5815650832",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "31387fd5-f340-4390-8363-9121d1ce4350",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "12ee0dc9-71e3-44e9-9b14-07267bc33d0d",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "64ff6a46-eff7-43f9-858f-a9d9792ef018",
+      "result_id": "f6f6e183-cb64-448f-a860-0d79479c5236"
+    },
+    {
+      "claim_id": "1b250e8a-835d-40cd-9783-9417e1769f0f",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "f88514b8-e3d3-4a32-9eca-1a48ee62af25",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "906defc6-0ff3-40f8-bafa-2c7650b3cd5a",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "64d796ef-ce4a-46f0-a390-ac5d453029c3",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "ae04fd29-e582-472b-8ac1-757f51620c3d",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "962ff69f-9145-4d08-8327-33c6091e4cf5",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "7ab45e34-343a-45ef-ba1c-55f8ee4b9098",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "d2151264-fa40-46db-bc42-5966f5b36722",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "2daf8a8a-0039-4866-b666-480c70803a3c",
+      "result_id": "c6ee48b2-31d1-422b-9320-addfbc522495"
+    },
+    {
+      "claim_id": "5a756403-cf3e-4e72-87e6-754fd1a81cba",
+      "result_id": "02e17a9f-62b9-40b5-a907-f0110080a5ed"
+    },
+    {
+      "claim_id": "d81dd9e6-b067-4258-90e1-5480d20923bb",
+      "result_id": "02e17a9f-62b9-40b5-a907-f0110080a5ed"
+    },
+    {
+      "claim_id": "3843596e-8e1f-484d-a859-3c85dcad6e30",
+      "result_id": "f1a031bc-94ad-4809-a4ee-a22b0d859adb"
+    },
+    {
+      "claim_id": "285dee09-1188-46da-9996-22be8ec47707",
+      "result_id": "f1a031bc-94ad-4809-a4ee-a22b0d859adb"
+    },
+    {
+      "claim_id": "6c373e0b-6167-4fc4-a493-d7bc8fcdff0e",
+      "result_id": "f1a031bc-94ad-4809-a4ee-a22b0d859adb"
+    },
+    {
+      "claim_id": "0870279d-98f7-4563-bb96-a21e68a450e6",
+      "result_id": "4f19de7a-d18a-4ba2-af14-f9914ea9bcc8"
+    }
+  ],
+  "comparisons": []
+}

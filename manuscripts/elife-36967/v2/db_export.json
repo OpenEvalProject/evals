@@ -1,0 +1,2177 @@
+{
+  "submission": {
+    "id": "d60177ea-b59e-4646-a040-b47a1683a968",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:17:22.777091Z",
+    "updated_at": "2025-12-02T02:17:22.777091Z"
+  },
+  "content": [
+    {
+      "id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "submission_id": "d60177ea-b59e-4646-a040-b47a1683a968",
+      "content_type": "manuscript",
+      "content_text": "# Topography of cancer-associated immune cells in human solid tumors\n\n## Authors\n\n- Jakob Nikolas Kather<sup>1</sup> ([ORCID: 0000-0002-3730-5348](https://orcid.org/0000-0002-3730-5348)) \u2020\n- Meggy Suarez-Carmona<sup>1</sup>\n- Pornpimol Charoentong<sup>1</sup>\n- Cleo-Aron Weis<sup>5</sup>\n- Daniela Hirsch<sup>5</sup>\n- Peter Bankhead<sup>6</sup> ([ORCID: 0000-0003-4851-8813](https://orcid.org/0000-0003-4851-8813))\n- Marcel Horning<sup>1</sup> ([ORCID: 0000-0003-1468-4645](https://orcid.org/0000-0003-1468-4645))\n- Dyke Ferber<sup>1</sup>\n- Ivan Kel<sup>1</sup> ([ORCID: 0000-0002-1221-7114](https://orcid.org/0000-0002-1221-7114))\n- Esther Herpel<sup>7</sup>\n- Sarah Schott<sup>9</sup>\n- Inka Z\u00f6rnig<sup>1</sup>\n- Jochen Utikal<sup>10</sup>\n- Alexander Marx<sup>5</sup>\n- Timo Gaiser<sup>5</sup>\n- Herrmann Brenner<sup>2</sup>\n- Jenny Chang-Claude<sup>14</sup>\n- Michael Hoffmeister<sup>12</sup>\n- Dirk J\u00e4ger<sup>1</sup>\n- Niels Halama<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Medical Oncology and Internal Medicine VI National Center for Tumor Diseases, University Hospital Heidelberg Heidelberg Germany\n2. German Cancer Consortium Heidelberg Germany\n3. Applied Tumor Immunity German Cancer Research Center Heidelberg Germany\n4. Division of Gastroenterology, Hepatology and Hepatobiliary Oncology University Hospital RWTH Aachen Aachen Germany\n5. Department of Pathology University Medical Center Mannheim, Heidelberg University Mannheim Germany\n6. Northern Ireland Molecular Pathology Laboratory Centre for Cancer Research and Cell Biology, Queen\u2019s University Belfast Northern Ireland United Kingdom\n7. Institute of Pathology University Hospital Heidelberg Heidelberg Germany\n8. Tissue Bank of the National Center for Tumor Diseases Heidelberg Germany\n9. Department of Gynecology University Hospital Heidelberg Heidelberg Germany\n10. Skin Cancer Unit German Cancer Research Center Heidelberg Germany\n11. Department of Dermatology, Venereology and Allergology University Medical Center Mannheim, Heidelberg University Mannheim Germany\n12. Division of Clinical Epidemiology and Aging Research German Cancer Research Center Heidelberg Germany\n13. Division of Preventive Oncology German Cancer Research Center and National Center for Tumor Diseases Heidelberg Germany\n14. Division of Cancer Epidemiology German Cancer Research Centre Heidelberg Germany\n15. Cancer Epidemiology Group University Cancer Center Hamburg, University Medical Center Hamburg-Eppendorf Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nLymphoid and myeloid cells are abundant in the tumor microenvironment, can be quantified by immunohistochemistry and shape the disease course of human solid tumors. Yet, there is no comprehensive understanding of spatial immune infiltration patterns (\u2018topography\u2019) across cancer entities and across various immune cell types. In this study, we systematically measure the topography of multiple immune cell types in 965 histological tissue slides from N = 177 patients in a pan-cancer cohort. We provide a definition of inflamed (\u2018hot\u2019), non-inflamed (\u2018cold\u2019) and immune excluded patterns and investigate how these patterns differ between immune cell types and between cancer types. In an independent cohort of N = 287 colorectal cancer patients, we show that hot, cold and excluded topographies for effector lymphocytes (CD8) and tumor-associated macrophages (CD163) alone are not prognostic, but that a bivariate classification system can stratify patients. Our study adds evidence to consider immune topographies as biomarkers for patients with solid tumors.\n\n## Introduction\n\nMalignant tumors growing in an immunocompetent host elicit an immune response, evident by the presence of various inflammatory/immune cell in tumor tissue (Shalapour and Karin, 2015; Mantovani et al., 2008; Bindea et al., 2013). In order to grow to a clinically relevant size, tumor cells develop specific escape mechanisms against the immune system by manipulating inflammatory cells for their benefit (de Visser et al., 2006; Dunn et al., 2002; Fridman et al., 2013). One of the key strategies is that tumor cells interfere with immune signaling, hijacking immunosuppressive cells and thereby shaping the immune infiltrate, which allows for tumor cell proliferation (Chen and Mellman, 2013; Chen and Mellman, 2017).\n\nThese mechanisms have been in the focus of oncology for several years (Kather et al., 2018a). Currently a number of immunotherapeutic drugs are available which interfere with immune cells in the tumor microenvironment in order to facilitate tumor control (Becht et al., 2016a; Galluzzi et al., 2014). However, the complex nature of immune infiltrates impairs the development of more targeted approaches. Specifically, tailored combination treatments are widely proposed as a way to more effective cancer therapy (Sharma and Allison, 2015a; Sharma and Allison, 2015b; Zitvogel et al., 2011). Systematically deciphering tumor-immune phenotypes is key to a better understanding and more effective tailoring of immunotherapies (Greenplate et al., 2016).\n\nAnalysis of solid tumor tissue slides by immunohistochemistry (IHC) is the gold standard to assess tumor immune infiltrate because it allows for exact quantification of type, density and localization of immune cells (Fridman et al., 2017; Becht et al., 2016b). For more than a decade, digital pathology has been the method of choice to reliably and reproducibly analyze large cohorts of patient samples and can provide potential biomarkers for immunotherapy (Becht et al., 2016a; Kather et al., 2016; Gurcan et al., 2009). Immune cell quantification in digitized tissue has been used to identify robust and clinically relevant biomarkers in numerous cancer entities, for example in colorectal cancer (CRC) primary tumors and liver metastases (Galon et al., 2006; Halama et al., 2011; Mlecnik et al., 2016). Histological analysis of tumor-infiltrating lymphoid cells has been proven to be a reliable and prognostically relevant marker (Galon et al., 2014; Denkert et al., 2016; International TILs Working Group 2014 et al., 2015). Antitumor immunity arises in a complex ecosystem of various cell types that closely interact with one another, such as effector lymphocytes (Li et al., 2016), macrophages (Halama et al., 2016; Biswas and Mantovani, 2010), dendritic cells (Gardner and Ruffell, 2016), granulocytes (Coffelt et al., 2016), innate lymphoid cells (Crome et al., 2017), regulatory T cells (Nishikawa and Sakaguchi, 2010), natural killer cells (Crome et al., 2013; Barrow and Colonna, 2017), myeloid-derived suppressor cells (Talmadge and Gabrilovich, 2013) and other cell types (Kather et al., 2017). In tumor tissue, T lymphocytes (T cells) and macrophages are among the most abundant immune cells and are closely related to clinical outcome (Fridman et al., 2017; Kather et al., 2017; Fridman et al., 2012; Kather et al., 2018b).\n\nAfter years of detailed IHC analysis of solid tumor slides, a paradigm for the classification of tumor-immune phenotypes has emerged and three classes of tumors are generally assumed: \u2018cold\u2019 tumors (or \u2018immune desert\u2019, showing no immune cell infiltration), \u2018immune-excluded\u2019 tumors (with immune cells aggregating at the tumor boundaries) and \u2018hot\u2019 tumors (or \u2018inflamed\u2019 tumors, showing pronounced immune infiltrates in the tumor core (Chen and Mellman, 2017; Lanitis et al., 2017; Joyce and Fearon, 2015). However, although this classification is generally accepted, it is backed by surprisingly little quantitative data. Fundamental biological questions regarding this concept are essentially unanswered, such as: Do these topographies exist in all tumor entities? Is there a difference between immunotherapy-sensitive and immunotherapy-insensitive tumor types? Does the concept of cold/excluded/hot apply to lymphoid and myeloid cells, or only to one of them? Do all tumors use the same strategies for immune escape?\n\nIn the last years, several large studies have systematically investigated immune-tumor phenotypes in detail. However, most of these studies were not suitable to distinguish cold, excluded and hot tumors because they did not look at the tumor core and the invasive margin at the same time. Two recent studies of immunophenotypes in colorectal cancer (CRC) have shown that the average immune cell density is higher around the tumor than in the tumor core (Bindea et al., 2013; Mlecnik et al., 2016). Yet, the concept of cold/excluded/hot tumors was not investigated in these studies. Also, other comprehensive studies have not taken spatial patterns of immune cell phenotypes into account (Becht et al., 2016). Recent large-scale studies have looked at high-dimensional phenotypes of tumor-infiltrating immune cells, but have not specifically addressed different topographies (Newell and Davis, 2014; Wong et al., 2016; Newell and Becht, 2018; Kather et al., 2018c). Another previous study investigated spatial patterns of lymphoid and myeloid cells in human solid tumors \u2013 however, only tissue microarrays (TMA) were included in that study, precluding any possible differentiation between invasive margin and tumor core (Tsujikawa et al., 2017). Lastly, the correlation of the tumor immunophenotype to its transcription profile was investigated previously, but was lacking a spatially resolved approach (Charoentong et al., 2017).\n\nIn the present study, we have attempted to close this knowledge gap by a systematic analysis of a large cohort of various human tumors in a spatially resolved way. In particular, this included a systematic analysis of the following immune cells: CD3+\u00a0T-lymphocytes, CD8+\u00a0T-lymphocytes, PD1+\u00a0T lymphocytes, FOXP3+\u00a0T lymphocytes (which we assume to be largely \u2018regulatory\u2019, although the role of FOXP3 is more complex (Wang et al., 2007) and CD68+\u00a0and CD163+\u00a0monocytes/macrophages.\n\n## Results\n\n### Immune cell densities in major cancer entities\n\nWe measured immune cell densities (number of cells per mm\u00b2, Figure 1A\u2013B) in 965 immunostained histological tissue slides (listed in Supplementary file 3) in the pan-cancer cohort in three spatial compartments per slide (Figure 1C): outer invasive margin (0\u00a0\u2013\u00a0500 \u00b5m outside the tumor invasion front), inner invasive margin (500 \u00b5m to the inside) and in the tumor core. In accordance with previous studies, colorectal adenocarcinoma primary tumors and liver metastases had a higher cell count in the outer invasive margin than in the tumor core (Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3). Melanoma samples had higher cell counts in the inner tumor than outside of the tumor for all analyzed cell types. The other tumor types showed less clear-cut patterns, highlighting the need for a more detailed analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig1-v2.jpg)\n\n**Figure 1.:** (A) Manual delineation of three compartments: outer 500 \u00b5m invasive margin, inner 500 \u00b5m invasive margin, tumor core. (B) Example of automatic cell detection in a CD3-stained gastric carcinoma slide. Left: original image, right: after cell detection and classification. (C) Cell counts in all three compartments can be used to create a \u2018target plot\u2019 (visualization resembling a shooting target) where the color of each compartment corresponds to the percentile-normalized cell density. Here, two examples of CD3-stained gastric carcinoma tissue slides are shown. The upper sample has an immune-excluded phenotype while the lower sample has an inflamed phenotype. Unit on the color scale: percentile-normalized cell density. Scale bar in B is 100 \u00b5m, scale bars in C are 1 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For all slides with sufficient sample availability, we performed immunostaining for Foxp3, CD68, PD1, CD8, CD163 and CD3. QuPath was used for automatic cell detection and classification. Here, example images are shown for each staining type (20x magnification) along with the result of the cell segmentation.\n\n### Unsupervised clustering of lymphocyte densities separates hot and cold tumors\n\nAs previous studies have assumed the existence of \u2018hot\u2019, \u2018cold\u2019 and \u2018immune excluded\u2019 tumors with regard to lymphocyte infiltration, we assessed our data set for evidence of this clustering. We used cell densities for CD3+\u00a0and CD8+\u00a0cells in all three spatial compartments and used multiple methods to determine the optimal number of clusters. For CD3 and CD8 separately as well as for both together, the majority of the optimization runs converged on two clusters (Figure 2\u2014figure supplement 4), mostly representing \u2018hot\u2019 and \u2018cold\u2019 tumors. There was no strong tendency to converge on three clusters, which means that there is no strong inherent grouping into \u2018hot\u2019, \u2018cold\u2019 and \u2018immune excluded\u2019 tumors.\n\n### Conceptual definition of hot, cold and immune excluded tumors\n\nWe asked whether there is a rationale to define \u2018immune excluded tumors\u2019 as a separate group although it does not naturally emerge in unsupervised clustering methods. With three spatial compartments, each of them having either high or low cell density, there are in theory eight possible topographies. We asked whether this number could be reduced and analyzed the statistical correlation between the spatial compartments for each type of staining in all tumor types. We found that in general, there was a high correlation between \u2018tumor core\u2019 and \u2018inner invasive margin\u2019, but not between either compartment and the \u2018outer invasive margin\u2019 (Figure 2\u2014figure supplement 5). \u2018Tumor core\u2019 and \u2018inner invasive margin\u2019 can be collapsed into one compartment because cell counts in these compartments are highly correlated. This leaves only four possible topographies that are by equivalent to three previously postulated phenotypes (Chen and Mellman, 2017): high density outside of the tumor with a low density inside the tumor can be described as \u2018immune excluded\u2019. Low density inside and outside is \u2018cold\u2019 and high density inside the tumor is \u2018hot\u2019 regardless of cell density outside of the tumor (Figure 2A\u2013F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-v2.jpg)\n\n**Figure 2.:** Raw cell densities are plotted for each cell type and both major compartments. Gray lines indicate the median density for this cell type. Split at the median, tumors can be classified as cold, hot or immune excluded for all immune cell types. However, the scatter plot shows that for all immune cell types, there is no natural clustering into these phenotypes \u2013 the phenotypes blend into each other.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 60 tissue specimens were randomly selected and stained for CD3 or CD163, scanned and analyzed independently and by blinded observers. The resulting cell counts were similar to the original analysis. In this scatter plot, each data point corresponds to one spatial compartment in one patient. There are two spatial compartments per patient. Pearson\u2019s correlation coefficient is 0.74.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For all three compartments outer invasive margin [out], inner invasive margin [in] and tumor core [core], normalized cell density is shown. In accordance with previous reports, lymphocytes and macrophages are on average more abundant around the tumor in colorectal cancer primary tumors (COAD-PRI) and liver metastases (COAD-MET), the opposite was seen in melanoma (MEL). However, these average values might obscure underlying patterns that are independent of tumor type, highlighting the need for more detailed analysis of spatial immunophenotypes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** For all tumor types and all immunostains, the average target plot is shown based on the mean value of all tumor samples in each group.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Using lymphocyte densities in three regions in tumors from 168 cancer patients, we looked for the optimal number of clusters (1 to 12) to group the topography phenotypes. We used CD3+\u00a0and CD8+\u00a0cell densities separately and together. We used three clustering methods with three loss functions each. The vast majority of clustering runs converged on two clusters which mostly corresponded to high and low overall cell densities.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Pearson\u2019s correlation coefficient is shown for all pairwise comparisons between cell densities in three spatial compartments in tumors from N\u00a0=\u00a0144 cancer patients. Cell densities in the \u2018inner invasive margin\u2019 (MARG-500-IN) are highly correlated to cell densities in the \u2018tumor core\u2019 (TU-CORE) for all six immune cell types. The \u2018outer invasive margin\u2019 (MARG-500-OUT) is less well correlated to the other compartments. This provides a rationale to reduce the complexity of the data set and use only \u2018MARG-500-OUT\u2019 and \u2018TU-CORE\u2019 in further steps of the analysis.\n\n### Prevalence of immune topographies in different tumor types\n\nHaving operationalized these definitions of immune topographies, we next asked how they are distributed in different tumor types in the pan-cancer cohort. As a cutoff value for high versus low cell density we used the median cell density for each cell type (median number of cells per mm\u00b2 in any tumor type in any compartment, listed in Supplementary file 4). Based on these definitions, different tumor types showed very different distributions of immune topographies (Figure 3A\u2013F). Most strikingly, tumor types that are to some degree sensitive to approved cancer immunotherapies (such as melanoma (MEL), lung adeno (LUAD), lung squamous (LUSC) and head and neck squamous (HNSC) had a large proportion (approximately half) of CD3-hot, CD8-hot and PD1-hot tumors. In accordance with previous studies (Halama et al., 2011), colorectal primary (COAD-PRI) and colorectal metastatic (COAD-MET) had a very high proportion of CD3-excluded tumors (Figure 3A). Differences between tumor types were most pronounced for regulatory T-cells (Foxp3+\u00a0cells, Figure 3D) with more than half of lung adeno (LUAD), head and neck squamous (HNSC), stomach adenocarcinoma (STAD) and esophageal (ESCA) cancer samples having Foxp3-hot topographies. Also, while close to half of all analyzed COAD-PRI samples were Foxp3-hot, the vast majority of all COAD-MET samples were Foxp3-cold (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig3-v2.jpg)\n\n**Figure 3.:** Analysis for all six immune cell types (A\u2013F) and for all analyzed tumor types (MEL\u00a0=\u00a0melanoma, LUAD\u00a0=\u00a0lung adeno, LUSC\u00a0=\u00a0lung squamous, BLCA\u00a0=\u00a0bladder, HNSC\u00a0=\u00a0head and neck squamous, STAD\u00a0=\u00a0stomach adeno, ESCA\u00a0=\u00a0esophageal squamous, COAD-PRI\u00a0=\u00a0colorectal primary, COAD-MET\u00a0=\u00a0colorectal liver metastasis, OV\u00a0=\u00a0ovarian). These data comprise all N\u00a0=\u00a0965 tissue slides from N\u00a0=\u00a0177 patients. MEL through HNSC are to some degree sensitive to approved immunotherapies and predominantly have \u2018hot\u2019 phenotypes for most immune cells. However, among these tumor types, different phenotypes for immunosuppressive immune cells (Foxp3+\u00a0regulatory T-cells [Tregs]) and CD163+\u00a0macrophages prevail.\n\n### Bivariate classification of immune topographies\n\nSubsequently, we asked whether the topography for a given immune cell type co-occurs with the same topography for other immune cell types \u2013 or whether tumors can be \u2018cold\u2019 for one immune cell type and \u2018hot\u2019 or \u2018excluded\u2019 for another cell type at the same time. This question is important because in the clinic, immune topographies are often used as stratifying biomarkers for immunotherapy trials (Kather et al., 2018c) but it is unclear how many spatial compartments and which histological markers should be looked at.\n\nIndeed, we saw that tumors often had different topographies for a pair of immune cell markers (Figure 4). Especially, regarding lymphocytic and myeloid markers, there was a discordance in a substantial number of cases that were lymphoid-hot and myeloid-cold (Figure 4). We further stratified this by different tumor entities (Figure 5A\u2013E) and found pronounced differences between the tumor types. CD3 and CD8 topographies were mostly concordant (Figure 5A) as can be expected because CD8+\u00a0lymphocytes are a subset of CD3+\u00a0lymphocytes. Regarding CD8 vs. Tregs (Figure 5B), there was a notable discordance. For example, most colorectal primary tumors (COAD-PRI) that were Foxp3-excluded were CD8-cold. Analyzing tumor-associated macrophages (TAMs) labeled with CD68 (Figure 5D), we found that several melanomas (MEL) that were CD68-hot were CD8-cold which was rarely observed in other tumor types. Colorectal cancer liver metastases (COAD-MET) were mostly CD8-excluded, corresponding to a CD68-excluded or CD68-hot phenotype. This was similarly observed for CD163+\u00a0macrophages (Figure 5E). These findings suggest that tumors of different immunophenotypes require different ways of immune escape and that these mechanisms can only be distinguished when considering a two-dimensional myeloid-lymphoid classification system.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig4-v2.jpg)\n\n**Figure 4.:** For all tissue samples in all tumor types, a pairwise classification into cold-excluded-hot was done for all immune cell types. This analysis was based on the median cutoff for high and low cell densities. Absolute numbers of tumor are given, black marks the most abundant and white the least abundant group. For some pairwise comparisons such as CD3 and CD8 cells (top left corner), there is a high concordance between the phenotypes. For other comparisons such as Foxp3 and CD163 cells, phenotypes are mostly discordant.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig5-v2.jpg)\n\n**Figure 5.:** We analyzed the concordance between hot-cold-excluded topographies for CD8+\u00a0lymphocytes and all other cell types for each tumor type separately. Absolute numbers of patients assigned to each of nine phenotypes are overlaid on the heat map. For some cell types and some tumor types, immune topographies are concordant. This suggests that in these settings, a detailed analysis of multiple immune cell types in biomarker studies is not necessary. On the other hand, some cell types in other tumor entities (such as CD8+\u00a0lymphocytes and CD68+\u00a0macrophages in panel (D) show a high discordance in multiple tumor types. This suggests that measuring one of these cell types only may not be informative enough for biomarker studies.\n\n### Pan-cancer similarity based on spatial immune phenotype\n\nUsing a full panel of immune cell markers (CD3, CD8, PD1, Foxp3, CD68 and CD163), we asked how similar different tumor types were in terms of immune cell spatial layout. For all 144 tumors that were stained for this full panel (Figure 6A\u2013G, six immunostains, three compartments, 144 patients, after percentile normalization for each cell type), we used unsupervised hierarchical clustering to define similarity. We found that ovarian cancer (OV) was an outlier (Figure 6H) due to its low infiltration with almost all immune cell subsets (Figure 2\u2014figure supplement 3). Highly immunogenic tumor types such as melanoma (MEL), stomach cancer (STAD) and non-small cell lung cancer (NSCLC: LUAD and LUSC) were close in hierarchical clustering.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig6-v2.jpg)\n\n**Figure 6.:** Hierarchical clustering based on all normalized cell densities of (A) PD1+exhausted lymphocytes; (B) Foxp3+regulatory T cells; (C) CD8+cytotoxic T lymphocytes; (D) CD68+monocytes/macrophages; (E) CD3+lymphocytes and (F) CD163+pro tumor macrophages. Unit on the color scale: percentile-normalized cell density. (G) corresponding H\u00a0&\u00a0E image of\u00a0the colorectal cancer sample used in this figure. (H) Hierarchical clustering of tumor types (N\u00a0=\u00a0144 total patient samples).\n\n### Clinical utility of immune topography\n\nHaving shown that hot, cold and excluded immune patterns exist, and that these patterns vary between tumor types and immune cell types, we investigated the clinical utility of this classification system in an independent patient cohort (DACHS cohort). We analyzed the topography of CD8+\u00a0lymphocytes and CD163+\u00a0macrophages in colorectal cancer (CRC) primary tumors because these cell types have previously been linked to prognosis (Fridman et al., 2012) and showed discordant topographies in the pan-cancer cohort (COAD_PRI in Figure 5E).\n\nWe derived immune topographies for CD8 and CD163 from cell counts in the outer invasive margin and the tumor core for N\u00a0=\u00a0287 patients using the median cell densities from the pan-cancer cohort as cutoff values (Figure 7A and B). As in the pan-cancer cohort, most patients were cold or immune excluded for these two cell types. The bivariate analysis showed that \u2018CD8-cold, CD163-cold\u2019 was the most prevalent category (Figure 7D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36967/elife-36967-fig7-v2.jpg)\n\n**Figure 7.:** In a validation cohort of N\u00a0=\u00a0287 colorectal cancer patients (N\u00a0=\u00a0286 with follow-up data) from the DACHS study, CD8 and CD163 staining of the primary surgical sample was correlated to clinical outcome (overall survival) using the cutoffs from the pan-cancer cohort. (A) As in the CRC subgroup in the pan-cancer cohort, CD8-cold was the most prevalent phenotype, followed by CD8-excluded. (B) A similar distribution of phenotypes was observed for CD163+\u00a0macrophages. (C) In the bivariate analysis for CD8 and CD163, most patients had cold and excluded phenotypes for both antigens. (D) For each of these nine phenotypes, the hazard ratio (HR) for death of any cause (inverse overall survival, OS) was derived from a multivariable Cox proportional hazard model (covariates UICC stage, age and sex). Bold HR indicates statistically significant findings with p<0.05. Bivariate analysis of both antigens is essential for risk stratification as CD8 and CD163 phenotypes show non-trivial interaction. Raw data for panel D are shown in Supplementary file 5. (E) The Kaplan-Meier plots for the reference groups (CD8-cold CD163 cold) and the two significant groups (\u2018CD8-excl., CD163 excl\u2019 and \u2018CD8 excl., CD163 hot\u2019) show significant differences in overall survival. These differences are not captured by univariate, but only by this bivariate stratification system. Log rank p-value=0.019.\n\nWe then used multivariable Cox proportional hazard models (including tumor stage, age and sex as potential confounders) to analyze the association between cell counts and cell topographies with survival. Cell densities of CD8 and CD163 in the tumor core and the outer invasive margin were not significantly correlated to overall survival (hazard ratios [HR] for death from any cause were 1.00 for both cell types in both compartments, Supplementary file 5). However, bivariate immune topographies showed significant association to overall survival: With \u2018CD8-cold, CD163-cold\u2019 as a reference cohort, the HR was 1.75 for \u2018CD8-excluded, CD163 excluded\u2019 (p=0.041) and the HR was 2.71 for \u2018CD8-excluded, CD163-hot\u2019 (p=0.025, Supplementary file 6 and Figure 7D).\n\n## Discussion\n\nThe tumor microenvironment is a highly complex, heterocellular ecosystem (Bindea et al., 2013; Tape, 2016). Multiple immune cell types are involved in this system and ultimately shift it towards a tumor-promoting or tumor-rejecting environment (Chen and Mellman, 2017; Fridman et al., 2017). Also, these immune cells determine whether a tumor will be responsive to immunotherapy (Becht et al., 2016a). However, immunotherapy outcomes vary pronouncedly between different tumor entities and also between different patients within a given entity. The biological basis for these differences has been the subject of various studies but is still not entirely clear. Most importantly, we currently lack a comprehensive classification system for multiple effector parts of the immune system.\n\nIn the present study, we have performed a large-scale systematic analysis of lymphoid and myeloid phenotypes of human solid tumors. We provide evidence for a classification of tumor-immune phenotypes into hot, cold and immune excluded spatial patterns. These patterns can be detected not only in lymphocyte infiltrates (lymphoid classification, as previously assumed by most studies) but also in macrophage infiltrates (myeloid classification). Interestingly, lymphoid and myeloid patterns are not always identical and a two-dimensional classification is needed to accommodate all possible lymphoid-myeloid phenotypes.\n\nAddressing the biological differences and the different responses to immunotherapy across tumor entities, we systematically compared different tumor types. We analyzed ten tumor entities in the framework of this classification and showed pronounced differences, but also unexpected cross-entity similarities: We found that lymphoid-hot tumors are more prevalent in immunotherapy-responsive tumor entities such as melanoma and lung adenocarcinoma than in other entities such as colorectal cancer. Immune-excluded tumors, such as lymphoid-excluded and myeloid-excluded tumors are common in head and neck tumors (HNSC). Lastly, we show that characteristic patterns of immune evasion (via T cell exhaustion or infiltration by Tregs) are not exclusive to specific tumor-immune phenotypes but can be detected across the defined categories.\n\nAs part of this study, we present a clinical validation of the proposed classification system in the context of colorectal cancer (COAD). It has been previously shown that high density of CD8+\u00a0cells in COAD is associated with long survival (Galon et al., 2006) while high density of CD163+\u00a0cells is associated with poor survival (Fridman et al., 2012). However, some large studies have shown only a very modest impact of CD8+cell density on overall survival (Glaire et al., 2018). Likewise, in the DACHS cohort which we analyzed as part of this study, CD8+\u00a0cell density alone and CD163+\u00a0cell density alone were not clearly associated with differences in overall survival. Also, for both cell types, the immune topographies (cold, excluded, hot) were not associated with such differences. However, classifying patients according to bivariate (CD8 combined with CD163) immune topographies identified statistically significant associations to survival in a multivariable statistical model (Figure 7D). This was particularly clear for CD8-excluded tumors: in this case, CD163-cold, excluded and hot tumors had a significantly (log rank p-value 0.019) different prognosis (Figure 7E). These findings suggest that a multivariate analysis of spatial distributions of multiple immune cell types may be superior to merely quantifying a particular type of immune cells in COAD and possibly other human solid tumors.\n\nOur study adds a systematic approach to a hitherto subjective classification of tumor-immune phenotypes. This new classification could constitute a novel framework to investigate immunotherapy responsiveness in clinical trials. Also, this classification sheds light on common immunological aspects by describing a shared immune topography across human solid tumors.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source/Reference</th>\n      <th>Identifier</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>QuPath v0.1.2</td>\n      <td>Bankheadet al.</td>\n      <td>DOI: 10.1038/s41598-017-17204-5</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD3</td>\n      <td>Leica Novocastra</td>\n      <td>RRID:AB_563544</td>\n      <td>Dilution 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD8</td>\n      <td>Leica Novocastra</td>\n      <td>RRID:AB_442068</td>\n      <td>Dilution 1:50</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Foxp3</td>\n      <td>eBioscience</td>\n      <td>RRID:AB_467555</td>\n      <td>Dilution 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD163</td>\n      <td>BioRad</td>\n      <td>RRID:AB_2074540</td>\n      <td>Dilution 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD68</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>RRID:AB_720547</td>\n      <td>Dilution 1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human PD1</td>\n      <td>Abcam</td>\n      <td>RRID:AB_881954</td>\n      <td>Dilution 1:50</td>\n    </tr>\n  </tbody>\n</table>\n\n### Ethics statement and tissue samples\n\nAll experiments were conducted in accordance with the Declaration of Helsinki, the International Ethical Guidelines for Biomedical Research Involving Human Subjects (CIOMS), the Belmont Report and the U.S. Common Rule. Anonymized archival tissue samples were retrieved from the tissue bank of the National Center for Tumor diseases (NCT, Heidelberg, Germany) in accordance with the regulations of the tissue bank and the approval of the ethics committee of Heidelberg University (tissue bank decision numbers 2152 and 2154, granted to NH and JNK, ovarian cancer tissues granted to SS; informed consent was obtained from all patients as part of the NCT tissue bank protocol, ethics board approval S-207/2005, renewed on 20 Dec 2017). Another set of tissue samples was provided by the pathology archive at UMM (University Medical Center Mannheim, Heidelberg University, Mannheim, Germany) after approval by the institutional ethics board (Ethics Board II at University Medical Center Mannheim, decision number 2017\u00a0\u2013\u00a0806R-MA, granted to AM and waiving the need for informed consent for this retrospective and fully anonymized analysis of archival samples). Also, a set of melanoma samples was provided by the pathology archive at UMM after approval by the institutional ethics board (Ethics Board II at University Medical Center Mannheim, decision number 2014\u00a0\u2013\u00a0835R-MA, granted to JU and waiving the need for informed consent for this retrospective and fully anonymized analysis of archival samples).\n\nWe analyzed tissue samples of primary esophageal carcinoma (ESCA), primary gastric cancer (STAD), primary colorectal cancer (COAD-PRI), primary lung adenocarcinoma (LUAD), primary lung squamous cell carcinoma (LUSC), primary head and neck squamous cell carcinoma (HNSC), primary bladder cancer (BLAC), ovarian cancer primary tumors (OV) as well as melanoma primary tumors (MEL) and colorectal cancer liver metastases (COAD-MET).\n\nIn addition to this pan-cancer cohort, we acquired a set of N\u00a0=\u00a0287 primary surgical specimen of colorectal adenocarcinoma from the DACHS study (Hoffmeister et al., 2015; Brenner et al., 2011) which were provided by the NCT biobank under the same ethics board approval as stated above and including informed consent by all patients. Clinical data for this cohort are listed in Supplementary file 1.\n\n### Immunohistochemistry\n\nWe performed histological staining for CD3 (dilution 1:100 with Leica antigen retrieval ER1 solution), CD8 (1:50 with ER1), Foxp3 (1:100 with Leica antigen retrieval ER2 solution), CD163 (1:500 with ER2), CD68 (1:2000 with Leica Fast Enzyme digestion) and PD1 (1:50 with ER1) on a Leica Bond automatic staining device using a hematoxylin-diaminobenzidine (DAB) staining protocol as described previously (Halama et al., 2016). For melanoma, FastRed (Leica #DS9390) was used as a chromogen. Stained whole slide tissue sections were digitized as described previously (Halama et al., 2016). Almost all samples were stained for these six immune cell markers. In cases of insufficient tissue availability, only CD3, CD8 and CD163 staining was performed.\n\n### Image analysis\n\nOur image analysis pipeline was composed of several steps: First, manual annotation of three regions of interest (ROI) in each histological whole slide image (Figure 1A). The ROIs were \u2018tumor core\u2019 (TU_CORE), \u2018inner invasive margin\u2019 (MARG_500_IN) and \u2018outer invasive margin\u2019 (MARG_500_OUT). Invasive margins were 500 \u00b5m wide. Second, we automatically counted all positively stained cells using the open source software QuPath (Figure 1B) (Bankhead et al., 2017). Intensity thresholds and other parameters for cell detection and classification were set manually for each staining type and were identical for all samples in the pan-cancer cohort. All parameters are listed in Supplementary file 2. All cell detection scripts were manually checked for plausibility in all tumor entities. Examples for cell detection are shown in Figure 1\u2014figure supplement 1. For all further analyses, cell density values were normalized by percentile within each staining type and were visualized as \u2018target plots\u2019 (Figure 1C). Staining intensity thresholds were slightly adapted for the DACHS cohort as listed in Supplementary file 2.\n\n### Reproducibility\n\nTo ensure reproducibility of our digital pathology pipeline, we randomly selected 60 tissue specimen and repeated all analysis steps. We used new tissue slides with a distance between 4 \u00b5m and 40 \u00b5m from the original slice. We stained 30 of these slides for a macrophage marker (CD163) and 30 slides for a lymphocyte marker (CD3) and a blinded observer delineated ROIs for cell quantification as before. There was a high correlation (Pearson\u2019s correlation coefficient was\u00a0>0.74, p-value<0.001) between these replicates (Figure 2\u2014figure supplement 1).\n\nFurthermore, two slides that served as negative controls for CD3 and CD163 staining, 231/86516 (<<0.1%) and 1/38311 (<<0.1%) cells were false positive.\n\n### Automatic determination of optimal cluster number\n\nAnalysis of all six immunostains for 177 patients in our collective yielded 965 sets of cell density counts in three spatial compartments each (2895 data points in total, missing values due to tissue availability or quality). For visualization, cell densities were subjected to percentile normalization (quantile normalization with 100 quantiles) for each staining type, across all tumor entities. For clustering and all other analyses, we used absolute cell density (cell number per mm\u00b2).\n\nTo determine the optimal number of clusters in this data set, we used three different methods for clustering: a gaussian mixture model, k-means and hierarchical clustering. For 1 up to 12 clusters, we computed three loss functions for each approach, using the Davies-Bouldin (Davies and Bouldin, 1979), the Calinski-Harabasz (Cali\u0144skiCalinski and Harabasz, 1974) or the silhouette (Rousseeuw, 1987) criteria for quality of clustering. For all optimization methods, we performed 10 technical replicates.\n\n### Implementation and data availability\n\nAll image analysis steps were implemented in QuPath (see key resources) and all downstream analyses were implemented in MATLAB (Mathworks, Natick, MA, USA) R2017a. All experiments were run on a standard workstation (Intel i7 Processor, 8 cores, 32 GB RAM, Microsoft Windows 10.1). We release all source codes under an open access license\u00a0(Kather, 2018;\u00a0copy archived at https://github.com/elifesciences-publications/immuneTopography). Also, we release all raw data from our experiments (Supplementary file 3). All survival analyses were performed in R version 3.5.1 (R-project.org) using the packages survminer, survival, ggfortify and ggplot2.\n",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "3865b04a-12c5-46fa-9098-35f53108a9e4",
+      "submission_id": "d60177ea-b59e-4646-a040-b47a1683a968",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ian Tannock, Princess Margaret Cancer Centre Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36967.023](https://doi.org/10.7554/eLife.36967.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Topography of cancer-associated immune cells in human solid tumors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ian Tannock as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Jeffrey Settleman as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Roberto Salgado (Reviewer #2); Evan W Newell (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe are sending the original reviews, but the main points are:\n\nThere are major questions about reproducibility of the method. Your team should show:\n\n(i) That using your current algorithm you have reasonable agreement in the results and classification when duplicate sections from the same patient's tumour are analyzed \u2013 a sample to show reproducibility is important.\n\n(ii) The effect of specifying different cluster numbers in your algorithm \u2013 say 2 or 4 instead of 3. To what extent are the results determined by the algorithm used?\n\n(iii) You should recognize that some of your presentation is highly technical and needs to be written in a way that will be understood by most readers of eLife.\n\nOther more specific comments requiring your response are given in the individual reviews below.\n\nReviewer #1:\n\nThe authors classify 965 tumour samples (obtained from tumour banks) from 177 patients, and use digital analysis of sections stained for immunohistochemistry (IHC) with 6 immune markers to classify them on the basis of infiltration of immune cells (T-lymphocytes and macrophages). The major contribution is looking at immune cell infiltration within the core, at the periphery (and outside) different regions of tumours. Important missing information is any measure of the reproducibility of their IHC, automated machine learning approach and tumour classification when undertaken on duplicate specimens (adjacent sections). Also, the technical language of the text and figure legends will make it very hard for most readers of eLife to have a good understanding of what is being done and plotted.\n\nThe authors comment that tumours that are more likely to respond to immunotherapy (melanoma and lung cancer) are more likely to have immune cell infiltration than tumour types that tend not to respond, such as colorectal tumours, but this is a group correlation, not individual. The real test would of course be to compare the topography of immune cell infiltration with outcome of modern immunotherapy (anti-PD1 or \u2013 PDL1) in individual patients.\n\nReviewer #2:\n\nThis is an interesting study, with, as major novelty, the dichotomy between lymphoid and myeloid clusters in human cancer, defining herewith the three major entities \"cold\", \"hot\" and \"excluded\".\n\nA major question arises on the clustering. When you cluster data points you need to tell the algorithm how many clusters. The authors start saying that there are three classifications, using this concept to cluster their data by running the clustering algorithm with k=3. Of course, their data will then end up in 3 clusters. The Authors could have used k=2 and would have ended up with two clusters and said only two types exist. Could have used k=5 and gotten 5 different clusters, etc.\n\nWhat is missing is evidence that three clusters give a classification system that is the most informative of outcome. PAM50, as an example, ended up with 5 classes/clusters based on trying to group patients in 2,3,4,5,6,7,8 groups and seeing if the groupings made any sense biologically based on expression data from 50 genes. They picked 5 and was reasonable but other subclasses definitely exist.\n\nSo, how valid is their statement that only three types of immune-cell patterns exist?\n\nWhy wasn't clustering analysis done with k=2,3,4,5 and 3 shown to be optimal?\n\nIt may be suggested to compare data with number of clusters 2,3,4,5 and then show outcomes comparing the clusters. To improve the paper in its current form a survival analysis based on these defined classes might be important. Is OS data available for the samples that would allow for survival analysis comparing outcomes for each cluster k=2,3,4,5 and that 3 is most informative of outcome with maximum HR or lowest p-value? If there is no survival data available, they should include that in discussion and reason why the survival analysis wasn't done, stating that in future studies a comparison with survival is important so that other groups can make progress on their findings.\n\nReviewer #3:\n\nIn the study by Kather et al., the authors use single color IHC to comprehensively assess the immune infiltration of 10 different types of tumor tissue (9 cancer types). By analyzing each of their 177 patient samples in three compartments (core, inner and outer invasive margins) with 6 different cellular stains, they set out to assess the prevailing notion that there are three main patterns of lymphocytic invasion of tumors: \"cold/immune desert\", \"immune-excluded\" and \"hot\". As described, this paradigm, while widely accepted and discussed is lacking in quantitative evidence, making this an important and timely study. The approach taken here is clearly described and rational, which makes it a useful example of how standard IHC can be used to objectively assess tumor immune cell infiltration in a high dimensional way. Based on their analysis, the authors conclude that their data are consistent with the prevailing view (3 major clusters of lymphocyte infiltration profiles) and suggest a more complex view that also incorporates the profiles of myeloid cell (CD68) infiltration.\n\nAlthough I agree with the overall conclusions made, and despite the rigor in data collection and preprocessing, I am a little bit disappointed in the rigor of the interpretation of the data. Based on density measurements of CD3 and CD8 cells, a tSNE plot is constructed to display the range T cell infiltration phenotypes and this is useful. However, based on this and k-means clustering (using k=3), the authors conclude that there are 3 clusters of immune infiltrate profiles. While this is reasonable and roughly fits, based on the tSNE representation, some attempt to rigorously assess a best-fit in terms of cluster numbers, or otherwise, would have been much appreciated. For the analysis of CD68 staining, this is even worse. Only k-means clustering (k=3) was used to conclude that 3 clusters exist. This is exactly what this algorithm will produce if 3 clusters are requested. No other evidence is provided that 3 clusters of profiles should be used.\n\nAll in all, I think this is an interesting and important study. However, I think the authors should better assess and/or qualify their statements about the validity of the 3-cluster paradigm. Although I agree that their data support this general notion and their analyses provide interesting comparative insights about these tumor types, alternatives are not formally addressed or disproven.\n\nComments:\n\nAlthough important and nicely framed, the hypothesis that 3 clusters of lymphocytic infiltration patterns exists is not adequately tested. What would the data need to look like for the authors to conclude otherwise? Perhaps some sort of best-fit analysis could be used to assess the validity of the 3-cluster claim \u2013 for both lymphocytes and myeloid cells. tSNE plots should be shown for myeloid cell data.\n\nThe tSNE analysis performed is informative but incomplete. Could these plots be shown for myeloid cell parameters as well? It might also be useful to perform this analysis on the entire dataset (similar to that shown in Figure 5H \u2013 e.g., one dot per patient, colored by cancer type or colored by cluster definition from Figure 2). This comment highlights the value of the dataset the authors are providing: it is exciting that many different data analysis/visualization strategies could be used to evaluate these data.\n\nIt is not clear why the authors have provided the exaggeration of 10 for tSNE and used a non-default parameter for this. Does this value largely influence the outcome of their analysis? Did the authors also experiment with various perplexity values for their analysis?\n\nFor the tSNE analysis of this number of events, the stochasticity and perplexity value might be important factors. The authors should show several replicate tSNE runs to assess the consistency of the pattern shown. To justify which of these runs to shown in the main figure, the authors should choose the run with the best fit values provided by the tSNE algorithm. In other words, I am concerned that the conclusion that the tSNE visualization fits well with k-means (k=3) clustering could be a coincidence for this particular run and perplexity setting and the authors should assess the reproducibility of this analysis.\n",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9d7d884-cdfb-4441-82b0-17cf425ddec5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C1",
+      "claim": "Lymphoid and myeloid cells are abundant in the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphoid and myeloid cells are abundant in the tumor microenvironment, can be quantified by immunohistochemistry and shape the disease course of human solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "87e31685-e12d-4a1b-9d67-084074c7e1e6",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C2",
+      "claim": "Lymphoid and myeloid cells can be quantified by immunohistochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphoid and myeloid cells are abundant in the tumor microenvironment, can be quantified by immunohistochemistry and shape the disease course of human solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "f70e06e8-bdf0-4cce-ac4d-40001f55325e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C3",
+      "claim": "Lymphoid and myeloid cells shape the disease course of human solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphoid and myeloid cells are abundant in the tumor microenvironment, can be quantified by immunohistochemistry and shape the disease course of human solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "ca5562dc-ab91-4078-beae-093fed269a01",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C4",
+      "claim": "There is no comprehensive understanding of spatial immune infiltration patterns ('topography') across cancer entities and across various immune cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, there is no comprehensive understanding of spatial immune infiltration patterns ('topography') across cancer entities and across various immune cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d9301e9e-4ecb-43f0-a3f2-18e44d4ebd6c",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C5",
+      "claim": "The study systematically measured the topography of multiple immune cell types in 965 histological tissue slides from N = 177 patients in a pan-cancer cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we systematically measure the topography of multiple immune cell types in 965 histological tissue slides from N = 177 patients in a pan-cancer cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and data collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "188a40a7-f017-403e-b456-738423a7cfcd",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C6",
+      "claim": "The study provides a definition of inflamed ('hot'), non-inflamed ('cold') and immune excluded patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a definition of inflamed ('hot'), non-inflamed ('cold') and immune excluded patterns and investigate how these patterns differ between immune cell types and between cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7ce00611-fe7e-46c2-885a-4351816fdc6f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C7",
+      "claim": "Hot, cold and excluded topographies differ between immune cell types and between cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a definition of inflamed ('hot'), non-inflamed ('cold') and immune excluded patterns and investigate how these patterns differ between immune cell types and between cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7c925936-a45f-44a6-bad0-f2069861863f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C8",
+      "claim": "In an independent cohort of N = 287 colorectal cancer patients, hot, cold and excluded topographies for effector lymphocytes (CD8) and tumor-associated macrophages (CD163) alone are not prognostic.",
+      "claim_type": "EXPLICIT",
+      "source": "In an independent cohort of N = 287 colorectal cancer patients, we show that hot, cold and excluded topographies for effector lymphocytes (CD8) and tumor-associated macrophages (CD163) alone are not prognostic, but that a bivariate classification system can stratify patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation cohort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "aba6c815-000b-4771-bd75-2448ce721dee",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C9",
+      "claim": "A bivariate classification system combining CD8 and CD163 topographies can stratify colorectal cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In an independent cohort of N = 287 colorectal cancer patients, we show that hot, cold and excluded topographies for effector lymphocytes (CD8) and tumor-associated macrophages (CD163) alone are not prognostic, but that a bivariate classification system can stratify patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation cohort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "4e10073f-b0cf-4996-8566-f8f7c73d5cc8",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C10",
+      "claim": "Malignant tumors growing in an immunocompetent host elicit an immune response, evident by the presence of various inflammatory/immune cell in tumor tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant tumors growing in an immunocompetent host elicit an immune response, evident by the presence of various inflammatory/immune cell in tumor tissue (Shalapour and Karin, 2015; Mantovani et al., 2008; Bindea et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "87278853-8bfe-4209-a57c-e35b61b37357",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C11",
+      "claim": "Tumor cells develop specific escape mechanisms against the immune system by manipulating inflammatory cells for their benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to grow to a clinically relevant size, tumor cells develop specific escape mechanisms against the immune system by manipulating inflammatory cells for their benefit (de Visser et al., 2006; Dunn et al., 2002; Fridman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "dd3974cb-ffac-43ae-87a1-4d14207d788d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C12",
+      "claim": "Tumor cells interfere with immune signaling, hijacking immunosuppressive cells and thereby shaping the immune infiltrate, which allows for tumor cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the key strategies is that tumor cells interfere with immune signaling, hijacking immunosuppressive cells and thereby shaping the immune infiltrate, which allows for tumor cell proliferation (Chen and Mellman, 2013; Chen and Mellman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "b8f054a6-d18e-46d6-b05c-dab5ccb62389",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C13",
+      "claim": "A number of immunotherapeutic drugs are currently available which interfere with immune cells in the tumor microenvironment in order to facilitate tumor control.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently a number of immunotherapeutic drugs are available which interfere with immune cells in the tumor microenvironment in order to facilitate tumor control (Becht et al., 2016a; Galluzzi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "a0f8d4b6-6321-4ae0-9b49-f703d1f82bda",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C14",
+      "claim": "The complex nature of immune infiltrates impairs the development of more targeted approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the complex nature of immune infiltrates impairs the development of more targeted approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "741c1f33-85d7-455d-8679-a9cf73da273e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C15",
+      "claim": "Tailored combination treatments are widely proposed as a way to more effective cancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, tailored combination treatments are widely proposed as a way to more effective cancer therapy (Sharma and Allison, 2015a; Sharma and Allison, 2015b; Zitvogel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "30820f39-4ff8-4eca-87a9-0ffaf375c39e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C16",
+      "claim": "Systematically deciphering tumor-immune phenotypes is key to a better understanding and more effective tailoring of immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematically deciphering tumor-immune phenotypes is key to a better understanding and more effective tailoring of immunotherapies (Greenplate et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "84047416-4fc1-4e01-85bf-96a466b30ec6",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C17",
+      "claim": "Analysis of solid tumor tissue slides by immunohistochemistry (IHC) is the gold standard to assess tumor immune infiltrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of solid tumor tissue slides by immunohistochemistry (IHC) is the gold standard to assess tumor immune infiltrate because it allows for exact quantification of type, density and localization of immune cells (Fridman et al., 2017; Becht et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "895fb262-16e0-4a94-8cbd-7c4349ddfef2",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C18",
+      "claim": "IHC allows for exact quantification of type, density and localization of immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of solid tumor tissue slides by immunohistochemistry (IHC) is the gold standard to assess tumor immune infiltrate because it allows for exact quantification of type, density and localization of immune cells (Fridman et al., 2017; Becht et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d0b84580-5704-4829-af25-90c966fd85e5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C19",
+      "claim": "Digital pathology has been the method of choice to reliably and reproducibly analyze large cohorts of patient samples for more than a decade.",
+      "claim_type": "EXPLICIT",
+      "source": "For more than a decade, digital pathology has been the method of choice to reliably and reproducibly analyze large cohorts of patient samples and can provide potential biomarkers for immunotherapy (Becht et al., 2016a; Kather et al., 2016; Gurcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "c5435bad-31eb-482d-ace1-c74f748bbd66",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C20",
+      "claim": "Digital pathology can provide potential biomarkers for immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "For more than a decade, digital pathology has been the method of choice to reliably and reproducibly analyze large cohorts of patient samples and can provide potential biomarkers for immunotherapy (Becht et al., 2016a; Kather et al., 2016; Gurcan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "2dca9c1d-c401-4c55-aee2-8a79e51d6d6d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C21",
+      "claim": "Immune cell quantification in digitized tissue has been used to identify robust and clinically relevant biomarkers in numerous cancer entities.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune cell quantification in digitized tissue has been used to identify robust and clinically relevant biomarkers in numerous cancer entities, for example in colorectal cancer (CRC) primary tumors and liver metastases (Galon et al., 2006; Halama et al., 2011; Mlecnik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "e1f2b61a-7784-44ab-a3ad-b2cd45948ef4",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C22",
+      "claim": "Histological analysis of tumor-infiltrating lymphoid cells has been proven to be a reliable and prognostically relevant marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological analysis of tumor-infiltrating lymphoid cells has been proven to be a reliable and prognostically relevant marker (Galon et al., 2014; Denkert et al., 2016; International TILs Working Group 2014 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0217e514-f498-466c-a11c-9cb242f7d8b3",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C23",
+      "claim": "Antitumor immunity arises in a complex ecosystem of various cell types that closely interact with one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Antitumor immunity arises in a complex ecosystem of various cell types that closely interact with one another, such as effector lymphocytes (Li et al., 2016), macrophages (Halama et al., 2016; Biswas and Mantovani, 2010), dendritic cells (Gardner and Ruffell, 2016), granulocytes (Coffelt et al., 2016), innate lymphoid cells (Crome et al., 2017), regulatory T cells (Nishikawa and Sakaguchi, 2010), natural killer cells (Crome et al., 2013; Barrow and Colonna, 2017), myeloid-derived suppressor cells (Talmadge and Gabrilovich, 2013) and other cell types (Kather et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0f558cc3-20e0-456a-8d01-f1f5399edc97",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C24",
+      "claim": "In tumor tissue, T lymphocytes (T cells) and macrophages are among the most abundant immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In tumor tissue, T lymphocytes (T cells) and macrophages are among the most abundant immune cells and are closely related to clinical outcome (Fridman et al., 2017; Kather et al., 2017; Fridman et al., 2012; Kather et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7a02faad-959a-43f8-a3bb-87b44da1e8b8",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C25",
+      "claim": "T lymphocytes and macrophages are closely related to clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "In tumor tissue, T lymphocytes (T cells) and macrophages are among the most abundant immune cells and are closely related to clinical outcome (Fridman et al., 2017; Kather et al., 2017; Fridman et al., 2012; Kather et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "bda831b5-4265-4f3a-bed5-f3e7990cb1ab",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C26",
+      "claim": "A paradigm for the classification of tumor-immune phenotypes has emerged with three classes of tumors: 'cold' tumors, 'immune-excluded' tumors, and 'hot' tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "After years of detailed IHC analysis of solid tumor slides, a paradigm for the classification of tumor-immune phenotypes has emerged and three classes of tumors are generally assumed: 'cold' tumors (or 'immune desert', showing no immune cell infiltration), 'immune-excluded' tumors (with immune cells aggregating at the tumor boundaries) and 'hot' tumors (or 'inflamed' tumors, showing pronounced immune infiltrates in the tumor core (Chen and Mellman, 2017; Lanitis et al., 2017; Joyce and Fearon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "f8531fde-605c-40d3-938c-9ffec80c881f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C27",
+      "claim": "'Cold' tumors show no immune cell infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "'cold' tumors (or 'immune desert', showing no immune cell infiltration)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "2c345737-185e-4474-9f78-7f73661f7cd3",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C28",
+      "claim": "'Immune-excluded' tumors have immune cells aggregating at the tumor boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "'immune-excluded' tumors (with immune cells aggregating at the tumor boundaries)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "548bd128-7662-44de-8ae9-4f2c69a3be2e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C29",
+      "claim": "'Hot' tumors show pronounced immune infiltrates in the tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "'hot' tumors (or 'inflamed' tumors, showing pronounced immune infiltrates in the tumor core (Chen and Mellman, 2017; Lanitis et al., 2017; Joyce and Fearon, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "5da4933f-8407-481b-9497-c9b47e1bb642",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C30",
+      "claim": "The classification of tumors into cold/excluded/hot is generally accepted but backed by surprisingly little quantitative data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although this classification is generally accepted, it is backed by surprisingly little quantitative data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "61bdc148-18ed-44fd-afc7-d21ef5f012c1",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C31",
+      "claim": "Fundamental biological questions regarding the cold/excluded/hot concept are essentially unanswered.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamental biological questions regarding this concept are essentially unanswered, such as: Do these topographies exist in all tumor entities? Is there a difference between immunotherapy-sensitive and immunotherapy-insensitive tumor types? Does the concept of cold/excluded/hot apply to lymphoid and myeloid cells, or only to one of them? Do all tumors use the same strategies for immune escape?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "654ff47c-2f77-430c-bdca-ad0ef6ac41f6",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C32",
+      "claim": "Two recent studies of immunophenotypes in colorectal cancer (CRC) have shown that the average immune cell density is higher around the tumor than in the tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies of immunophenotypes in colorectal cancer (CRC) have shown that the average immune cell density is higher around the tumor than in the tumor core (Bindea et al., 2013; Mlecnik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "db6941eb-cd4d-4b19-8504-40f8a8f488fa",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C33",
+      "claim": "The concept of cold/excluded/hot tumors was not investigated in previous CRC immunophenotype studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the concept of cold/excluded/hot tumors was not investigated in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in previous research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "553f0199-b27b-4a0e-b0e2-b15b4601ca37",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C34",
+      "claim": "Other comprehensive studies have not taken spatial patterns of immune cell phenotypes into account.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, other comprehensive studies have not taken spatial patterns of immune cell phenotypes into account (Becht et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "b8a717a0-4735-4122-9fc5-d94161681db1",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C35",
+      "claim": "A previous study investigated spatial patterns of lymphoid and myeloid cells in human solid tumors using only tissue microarrays (TMA), precluding differentiation between invasive margin and tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "Another previous study investigated spatial patterns of lymphoid and myeloid cells in human solid tumors \u2013 however, only tissue microarrays (TMA) were included in that study, precluding any possible differentiation between invasive margin and tumor core (Tsujikawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "90c099db-13b4-4708-b671-b572a534effd",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C36",
+      "claim": "The study analyzed CD3+ T-lymphocytes, CD8+ T-lymphocytes, PD1+ T lymphocytes, FOXP3+ T lymphocytes, CD68+ monocytes/macrophages, and CD163+ monocytes/macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this included a systematic analysis of the following immune cells: CD3+ T-lymphocytes, CD8+ T-lymphocytes, PD1+ T lymphocytes, FOXP3+ T lymphocytes (which we assume to be largely 'regulatory', although the role of FOXP3 is more complex (Wang et al., 2007) and CD68+ and CD163+ monocytes/macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the immune cell types analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0f75d3d4-fa2f-4015-b361-6fdb90a526e5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C37",
+      "claim": "FOXP3+ T lymphocytes are assumed to be largely 'regulatory', although the role of FOXP3 is more complex.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXP3+ T lymphocytes (which we assume to be largely 'regulatory', although the role of FOXP3 is more complex (Wang et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation acknowledging complexity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "518d61ce-af6f-404e-b170-cf7a2f2dd563",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C38",
+      "claim": "Immune cell densities were measured in three spatial compartments per slide: outer invasive margin (0 \u2013 500 \u00b5m outside the tumor invasion front), inner invasive margin (500 \u00b5m to the inside), and tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured immune cell densities (number of cells per mm\u00b2, Figure 1A\u2013B) in 965 immunostained histological tissue slides (listed in Supplementary file 3) in the pan-cancer cohort in three spatial compartments per slide (Figure 1C): outer invasive margin (0 \u2013 500 \u00b5m outside the tumor invasion front), inner invasive margin (500 \u00b5m to the inside) and in the tumor core.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "340fbf1c-1756-4420-a04b-c7050c9b5eac",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C39",
+      "claim": "Colorectal adenocarcinoma primary tumors and liver metastases had a higher cell count in the outer invasive margin than in the tumor core.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous studies, colorectal adenocarcinoma primary tumors and liver metastases had a higher cell count in the outer invasive margin than in the tumor core (Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "50653e5d-5651-4848-a870-4f122a18cf34",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C40",
+      "claim": "Melanoma samples had higher cell counts in the inner tumor than outside of the tumor for all analyzed cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanoma samples had higher cell counts in the inner tumor than outside of the tumor for all analyzed cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "e6c8efda-b311-4916-ba3d-508183d307b5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C41",
+      "claim": "Using cell densities for CD3+ and CD8+ cells in all three spatial compartments, the majority of optimization runs converged on two clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We used cell densities for CD3+ and CD8+ cells in all three spatial compartments and used multiple methods to determine the optimal number of clusters. For CD3 and CD8 separately as well as for both together, the majority of the optimization runs converged on two clusters (Figure 2\u2014figure supplement 4), mostly representing 'hot' and 'cold' tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the clustering analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "3f18e893-011b-4a91-82b7-9b928e3f2e64",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C42",
+      "claim": "There was no strong tendency to converge on three clusters in unsupervised clustering of lymphocyte densities.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no strong tendency to converge on three clusters, which means that there is no strong inherent grouping into 'hot', 'cold' and 'immune excluded' tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "49137e39-9447-468f-9847-2012407b9c85",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C43",
+      "claim": "There is a high correlation between 'tumor core' and 'inner invasive margin' cell densities.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in general, there was a high correlation between 'tumor core' and 'inner invasive margin', but not between either compartment and the 'outer invasive margin' (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "6c55cdb8-5759-46e5-96d3-5bc1082d586a",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C44",
+      "claim": "There is not a high correlation between 'outer invasive margin' and either 'tumor core' or 'inner invasive margin' cell densities.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in general, there was a high correlation between 'tumor core' and 'inner invasive margin', but not between either compartment and the 'outer invasive margin' (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "2bf143e7-6078-4016-8113-a5587495486b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C45",
+      "claim": "'Tumor core' and 'inner invasive margin' can be collapsed into one compartment because cell counts in these compartments are highly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "'Tumor core' and 'inner invasive margin' can be collapsed into one compartment because cell counts in these compartments are highly correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "70408536-9f6d-44cf-8f2a-1fa3f1df8dc5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C46",
+      "claim": "High density outside of the tumor with a low density inside the tumor can be described as 'immune excluded'.",
+      "claim_type": "EXPLICIT",
+      "source": "high density outside of the tumor with a low density inside the tumor can be described as 'immune excluded'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "b6c90d0a-c7e9-4885-b68a-54fc72451d3f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C47",
+      "claim": "Low density inside and outside the tumor is 'cold'.",
+      "claim_type": "EXPLICIT",
+      "source": "Low density inside and outside is 'cold'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d488a985-749a-4c47-8add-88856571dc97",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C48",
+      "claim": "High density inside the tumor is 'hot' regardless of cell density outside of the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "high density inside the tumor is 'hot' regardless of cell density outside of the tumor (Figure 2A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition provided in the results with reference to figures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "9c439c4e-bfce-4202-8c8f-57db702dd36c",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C49",
+      "claim": "Different tumor types showed very different distributions of immune topographies.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these definitions, different tumor types showed very different distributions of immune topographies (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "c67a2ebb-6e93-4141-b169-e4ce178d8570",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C50",
+      "claim": "Tumor types that are to some degree sensitive to approved cancer immunotherapies (such as melanoma (MEL), lung adeno (LUAD), lung squamous (LUSC) and head and neck squamous (HNSC)) had a large proportion (approximately half) of CD3-hot, CD8-hot and PD1-hot tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, tumor types that are to some degree sensitive to approved cancer immunotherapies (such as melanoma (MEL), lung adeno (LUAD), lung squamous (LUSC) and head and neck squamous (HNSC) had a large proportion (approximately half) of CD3-hot, CD8-hot and PD1-hot tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "44f0e6bf-6b49-4a5d-a33a-b8eaa2132506",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C51",
+      "claim": "Colorectal primary (COAD-PRI) and colorectal metastatic (COAD-MET) had a very high proportion of CD3-excluded tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous studies (Halama et al., 2011), colorectal primary (COAD-PRI) and colorectal metastatic (COAD-MET) had a very high proportion of CD3-excluded tumors (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "722f9c3e-a114-4397-a265-63533d80912e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C52",
+      "claim": "Differences between tumor types were most pronounced for regulatory T-cells (Foxp3+ cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between tumor types were most pronounced for regulatory T-cells (Foxp3+ cells, Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "efa4c089-9339-4d90-92b5-6b047ecb3b36",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C53",
+      "claim": "More than half of lung adeno (LUAD), head and neck squamous (HNSC), stomach adenocarcinoma (STAD) and esophageal (ESCA) cancer samples had Foxp3-hot topographies.",
+      "claim_type": "EXPLICIT",
+      "source": "with more than half of lung adeno (LUAD), head and neck squamous (HNSC), stomach adenocarcinoma (STAD) and esophageal (ESCA) cancer samples having Foxp3-hot topographies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "17e0876c-b593-4a6b-bced-dde3c025ea07",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C54",
+      "claim": "Close to half of all analyzed COAD-PRI samples were Foxp3-hot.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, while close to half of all analyzed COAD-PRI samples were Foxp3-hot, the vast majority of all COAD-MET samples were Foxp3-cold (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "fefcf511-e277-40b4-92d7-ef474d4234ce",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C55",
+      "claim": "The vast majority of all COAD-MET samples were Foxp3-cold.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, while close to half of all analyzed COAD-PRI samples were Foxp3-hot, the vast majority of all COAD-MET samples were Foxp3-cold (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "abfd0fb1-028b-4cf6-b1d9-65a8ca6569b9",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C56",
+      "claim": "Tumors often had different topographies for a pair of immune cell markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we saw that tumors often had different topographies for a pair of immune cell markers (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7a524bbd-19f3-4c0e-bef7-60bd0192415b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C57",
+      "claim": "There was a discordance in a substantial number of cases that were lymphoid-hot and myeloid-cold.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially, regarding lymphocytic and myeloid markers, there was a discordance in a substantial number of cases that were lymphoid-hot and myeloid-cold (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "29613177-110a-4982-ab1b-981c99be3de7",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C58",
+      "claim": "CD3 and CD8 topographies were mostly concordant.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3 and CD8 topographies were mostly concordant (Figure 5A) as can be expected because CD8+ lymphocytes are a subset of CD3+ lymphocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure and biological knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7839b9b8-0028-4445-97a6-8ceaf3d2ef7f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C59",
+      "claim": "CD8+ lymphocytes are a subset of CD3+ lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "as can be expected because CD8+ lymphocytes are a subset of CD3+ lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "54db2862-2b52-443f-947b-542582809be8",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C60",
+      "claim": "There was a notable discordance between CD8 and Tregs topographies.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding CD8 vs. Tregs (Figure 5B), there was a notable discordance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "ffd42cb8-0827-4c65-83c9-7c94e7643a57",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C61",
+      "claim": "Most colorectal primary tumors (COAD-PRI) that were Foxp3-excluded were CD8-cold.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, most colorectal primary tumors (COAD-PRI) that were Foxp3-excluded were CD8-cold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "36764025-7b8f-4581-8ec8-6c028c148f65",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C62",
+      "claim": "Several melanomas (MEL) that were CD68-hot were CD8-cold, which was rarely observed in other tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing tumor-associated macrophages (TAMs) labeled with CD68 (Figure 5D), we found that several melanomas (MEL) that were CD68-hot were CD8-cold which was rarely observed in other tumor types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d2ef1318-a7df-4a5b-bf42-bf3b0bcb6328",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C63",
+      "claim": "Colorectal cancer liver metastases (COAD-MET) were mostly CD8-excluded, corresponding to a CD68-excluded or CD68-hot phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Colorectal cancer liver metastases (COAD-MET) were mostly CD8-excluded, corresponding to a CD68-excluded or CD68-hot phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "a6f44e20-38fa-4e72-a89b-257f33bbf4ee",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C64",
+      "claim": "Tumors of different immunophenotypes require different ways of immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that tumors of different immunophenotypes require different ways of immune escape and that these mechanisms can only be distinguished when considering a two-dimensional myeloid-lymphoid classification system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "47c7540a-8aea-46d3-930b-a3b83ae4864a",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C65",
+      "claim": "Immune escape mechanisms can only be distinguished when considering a two-dimensional myeloid-lymphoid classification system.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that tumors of different immunophenotypes require different ways of immune escape and that these mechanisms can only be distinguished when considering a two-dimensional myeloid-lymphoid classification system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "bd22e145-b8c5-475a-95a2-ad2cb37c1069",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C66",
+      "claim": "Ovarian cancer (OV) was an outlier in hierarchical clustering due to its low infiltration with almost all immune cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ovarian cancer (OV) was an outlier (Figure 6H) due to its low infiltration with almost all immune cell subsets (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the hierarchical clustering analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "082e9d02-3d5c-40c1-a0ba-f9aaea00cadc",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C67",
+      "claim": "Highly immunogenic tumor types such as melanoma (MEL), stomach cancer (STAD) and non-small cell lung cancer (NSCLC: LUAD and LUSC) were close in hierarchical clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly immunogenic tumor types such as melanoma (MEL), stomach cancer (STAD) and non-small cell lung cancer (NSCLC: LUAD and LUSC) were close in hierarchical clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the hierarchical clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "db17e4f5-db7f-41d3-8882-20ba2bb3f110",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C68",
+      "claim": "Cell densities of CD8 and CD163 in the tumor core and the outer invasive margin were not significantly correlated to overall survival in the DACHS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell densities of CD8 and CD163 in the tumor core and the outer invasive margin were not significantly correlated to overall survival (hazard ratios [HR] for death from any cause were 1.00 for both cell types in both compartments, Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the survival analysis in the validation cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "6d67d4f7-9802-4176-b6c2-58e5d9e5b132",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C69",
+      "claim": "Bivariate immune topographies showed significant association to overall survival in the DACHS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bivariate immune topographies showed significant association to overall survival: With 'CD8-cold, CD163-cold' as a reference cohort, the HR was 1.75 for 'CD8-excluded, CD163 excluded' (p=0.041) and the HR was 2.71 for 'CD8-excluded, CD163-hot' (p=0.025, Supplementary file 6 and Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the survival analysis in the validation cohort with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "98fe5e67-4f31-4064-bd50-859aa479a1ee",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C70",
+      "claim": "With 'CD8-cold, CD163-cold' as a reference cohort, the HR was 1.75 for 'CD8-excluded, CD163 excluded' (p=0.041).",
+      "claim_type": "EXPLICIT",
+      "source": "With 'CD8-cold, CD163-cold' as a reference cohort, the HR was 1.75 for 'CD8-excluded, CD163 excluded' (p=0.041)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "a3d9fe33-6b88-4671-af0a-2acc85e48dc1",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C71",
+      "claim": "With 'CD8-cold, CD163-cold' as a reference cohort, the HR was 2.71 for 'CD8-excluded, CD163-hot' (p=0.025).",
+      "claim_type": "EXPLICIT",
+      "source": "the HR was 2.71 for 'CD8-excluded, CD163-hot' (p=0.025, Supplementary file 6 and Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the survival analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "299a9b85-f61b-4251-9cec-f60846da7571",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C72",
+      "claim": "The tumor microenvironment is a highly complex, heterocellular ecosystem.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor microenvironment is a highly complex, heterocellular ecosystem (Bindea et al., 2013; Tape, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "baf70a64-a50f-42a2-85c7-118da419aa64",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C73",
+      "claim": "Multiple immune cell types are involved in the tumor microenvironment and ultimately shift it towards a tumor-promoting or tumor-rejecting environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple immune cell types are involved in this system and ultimately shift it towards a tumor-promoting or tumor-rejecting environment (Chen and Mellman, 2017; Fridman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0acf19f5-05bc-4026-976a-11f01ca711d2",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C74",
+      "claim": "Immune cells determine whether a tumor will be responsive to immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, these immune cells determine whether a tumor will be responsive to immunotherapy (Becht et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "693921a7-b6be-48f4-9579-3fda775aabeb",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C75",
+      "claim": "Immunotherapy outcomes vary pronouncedly between different tumor entities and between different patients within a given entity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, immunotherapy outcomes vary pronouncedly between different tumor entities and also between different patients within a given entity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "055b2a7d-c317-4382-bd20-7ba85e0a90fe",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C76",
+      "claim": "The biological basis for differences in immunotherapy outcomes is still not entirely clear.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological basis for these differences has been the subject of various studies but is still not entirely clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "8bb352c4-f58d-4159-bc82-1e0fd131e18f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C77",
+      "claim": "We currently lack a comprehensive classification system for multiple effector parts of the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we currently lack a comprehensive classification system for multiple effector parts of the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "fb5e3c72-b91e-4893-ad99-80d81e4839fc",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C78",
+      "claim": "The study provides evidence for a classification of tumor-immune phenotypes into hot, cold and immune excluded spatial patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we have performed a large-scale systematic analysis of lymphoid and myeloid phenotypes of human solid tumors. We provide evidence for a classification of tumor-immune phenotypes into hot, cold and immune excluded spatial patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "5d904f6c-a837-44a5-89c6-553440e38a15",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C79",
+      "claim": "Hot, cold and immune excluded patterns can be detected not only in lymphocyte infiltrates but also in macrophage infiltrates.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns can be detected not only in lymphocyte infiltrates (lymphoid classification, as previously assumed by most studies) but also in macrophage infiltrates (myeloid classification).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "64d64e60-cecf-484b-9739-ce065071574e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C80",
+      "claim": "Lymphoid and myeloid patterns are not always identical and a two-dimensional classification is needed to accommodate all possible lymphoid-myeloid phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, lymphoid and myeloid patterns are not always identical and a two-dimensional classification is needed to accommodate all possible lymphoid-myeloid phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "acd1a132-e131-4947-a825-1f4769b2842d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C81",
+      "claim": "Lymphoid-hot tumors are more prevalent in immunotherapy-responsive tumor entities such as melanoma and lung adenocarcinoma than in other entities such as colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lymphoid-hot tumors are more prevalent in immunotherapy-responsive tumor entities such as melanoma and lung adenocarcinoma than in other entities such as colorectal cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "112b74fe-5b97-46cd-a68d-7c4480ddb6f2",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C82",
+      "claim": "Immune-excluded tumors are common in head and neck tumors (HNSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Immune-excluded tumors, such as lymphoid-excluded and myeloid-excluded tumors are common in head and neck tumors (HNSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "f69f3307-347b-454a-9881-c324628006ee",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C83",
+      "claim": "Characteristic patterns of immune evasion (via T cell exhaustion or infiltration by Tregs) are not exclusive to specific tumor-immune phenotypes but can be detected across the defined categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we show that characteristic patterns of immune evasion (via T cell exhaustion or infiltration by Tregs) are not exclusive to specific tumor-immune phenotypes but can be detected across the defined categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "ade4f116-97aa-4baa-a75f-dd4655a41d42",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C84",
+      "claim": "High density of CD8+ cells in colorectal cancer is associated with long survival.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that high density of CD8+ cells in COAD is associated with long survival (Galon et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "4a39abc8-0850-4493-9785-ca73dab259bc",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C85",
+      "claim": "High density of CD163+ cells in colorectal cancer is associated with poor survival.",
+      "claim_type": "EXPLICIT",
+      "source": "while high density of CD163+ cells is associated with poor survival (Fridman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "76f62ba4-c5fc-4586-a301-ea17d2158238",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C86",
+      "claim": "Some large studies have shown only a very modest impact of CD8+ cell density on overall survival in colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some large studies have shown only a very modest impact of CD8+cell density on overall survival (Glaire et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d5b032c4-2b20-456f-bdda-070ad19b5fa0",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C87",
+      "claim": "In the DACHS cohort, CD8+ cell density alone and CD163+ cell density alone were not clearly associated with differences in overall survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in the DACHS cohort which we analyzed as part of this study, CD8+ cell density alone and CD163+ cell density alone were not clearly associated with differences in overall survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation cohort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "3c984650-474f-4f31-ab45-c7e70cdb958d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C88",
+      "claim": "For both CD8 and CD163, the immune topographies (cold, excluded, hot) were not associated with differences in overall survival in the DACHS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, for both cell types, the immune topographies (cold, excluded, hot) were not associated with such differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation cohort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "f9be6423-a4a1-4d47-9cfa-e0a14004f66b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C89",
+      "claim": "Classifying patients according to bivariate (CD8 combined with CD163) immune topographies identified statistically significant associations to survival in a multivariable statistical model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, classifying patients according to bivariate (CD8 combined with CD163) immune topographies identified statistically significant associations to survival in a multivariable statistical model (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the validation cohort analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "73edba15-295d-4bf4-999d-767ef7103473",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C90",
+      "claim": "For CD8-excluded tumors, CD163-cold, excluded and hot tumors had a significantly different prognosis (log rank p-value 0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "This was particularly clear for CD8-excluded tumors: in this case, CD163-cold, excluded and hot tumors had a significantly (log rank p-value 0.019) different prognosis (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the validation cohort analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "412ff74d-ffdf-49c8-af68-b3000e5a07e5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C91",
+      "claim": "A multivariate analysis of spatial distributions of multiple immune cell types may be superior to merely quantifying a particular type of immune cells in colorectal cancer and possibly other human solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that a multivariate analysis of spatial distributions of multiple immune cell types may be superior to merely quantifying a particular type of immune cells in COAD and possibly other human solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "1e8e5e61-568f-4432-903e-3f3f524016e5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C92",
+      "claim": "The study adds a systematic approach to a hitherto subjective classification of tumor-immune phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study adds a systematic approach to a hitherto subjective classification of tumor-immune phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "c3e9b733-a8f3-4a15-85d7-e0840cce4c9d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C93",
+      "claim": "The new classification could constitute a novel framework to investigate immunotherapy responsiveness in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This new classification could constitute a novel framework to investigate immunotherapy responsiveness in clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "56f43d19-27b0-4db3-b14b-9f50980ea7b8",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C94",
+      "claim": "The classification sheds light on common immunological aspects by describing a shared immune topography across human solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this classification sheds light on common immunological aspects by describing a shared immune topography across human solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's contribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "c2ca20a3-dba9-4c90-9e10-dbc2e59521e0",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C95",
+      "claim": "All experiments were conducted in accordance with the Declaration of Helsinki, the International Ethical Guidelines for Biomedical Research Involving Human Subjects (CIOMS), the Belmont Report and the U.S. Common Rule.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were conducted in accordance with the Declaration of Helsinki, the International Ethical Guidelines for Biomedical Research Involving Human Subjects (CIOMS), the Belmont Report and the U.S. Common Rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the ethics statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "45a04f3c-65ee-4c99-ba1f-d005a3096467",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C96",
+      "claim": "Anonymized archival tissue samples were retrieved from the tissue bank of the National Center for Tumor diseases (NCT, Heidelberg, Germany).",
+      "claim_type": "EXPLICIT",
+      "source": "Anonymized archival tissue samples were retrieved from the tissue bank of the National Center for Tumor diseases (NCT, Heidelberg, Germany) in accordance with the regulations of the tissue bank and the approval of the ethics committee of Heidelberg University (tissue bank decision numbers 2152 and 2154, granted to NH and JNK, ovarian cancer tissues granted to SS; informed consent was obtained from all patients as part of the NCT tissue bank protocol, ethics board approval S-207/2005, renewed on 20 Dec 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of tissue samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "3f304e0f-2293-4b10-9fac-d01d4323f4e3",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C97",
+      "claim": "Informed consent was obtained from all patients as part of the NCT tissue bank protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "informed consent was obtained from all patients as part of the NCT tissue bank protocol, ethics board approval S-207/2005, renewed on 20 Dec 2017",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the ethics statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "cf69d0e2-d2a8-4c2b-ae31-c6a7ae4a61b9",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C98",
+      "claim": "The study analyzed tissue samples of primary esophageal carcinoma (ESCA), primary gastric cancer (STAD), primary colorectal cancer (COAD-PRI), primary lung adenocarcinoma (LUAD), primary lung squamous cell carcinoma (LUSC), primary head and neck squamous cell carcinoma (HNSC), primary bladder cancer (BLAC), ovarian cancer primary tumors (OV), melanoma primary tumors (MEL), and colorectal cancer liver metastases (COAD-MET).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed tissue samples of primary esophageal carcinoma (ESCA), primary gastric cancer (STAD), primary colorectal cancer (COAD-PRI), primary lung adenocarcinoma (LUAD), primary lung squamous cell carcinoma (LUSC), primary head and neck squamous cell carcinoma (HNSC), primary bladder cancer (BLAC), ovarian cancer primary tumors (OV) as well as melanoma primary tumors (MEL) and colorectal cancer liver metastases (COAD-MET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tumor types analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "67029384-138c-4c85-9e6d-862ca8ac798c",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C99",
+      "claim": "The study acquired a set of N = 287 primary surgical specimen of colorectal adenocarcinoma from the DACHS study.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this pan-cancer cohort, we acquired a set of N = 287 primary surgical specimen of colorectal adenocarcinoma from the DACHS study (Hoffmeister et al., 2015; Brenner et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation cohort with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "9a1deeeb-00da-4760-9c31-fce0f1d0f8f1",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C100",
+      "claim": "Histological staining was performed for CD3, CD8, Foxp3, CD163, CD68, and PD1 on a Leica Bond automatic staining device using a hematoxylin-diaminobenzidine (DAB) staining protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed histological staining for CD3 (dilution 1:100 with Leica antigen retrieval ER1 solution), CD8 (1:50 with ER1), Foxp3 (1:100 with Leica antigen retrieval ER2 solution), CD163 (1:500 with ER2), CD68 (1:2000 with Leica Fast Enzyme digestion) and PD1 (1:50 with ER1) on a Leica Bond automatic staining device using a hematoxylin-diaminobenzidine (DAB) staining protocol as described previously (Halama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the immunohistochemistry methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "8af72593-83f0-4a1c-9446-efca4b67e76b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C101",
+      "claim": "For melanoma, FastRed was used as a chromogen.",
+      "claim_type": "EXPLICIT",
+      "source": "For melanoma, FastRed (Leica #DS9390) was used as a chromogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "cb60b707-38aa-463f-8926-592b9d801152",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C102",
+      "claim": "Stained whole slide tissue sections were digitized.",
+      "claim_type": "EXPLICIT",
+      "source": "Stained whole slide tissue sections were digitized as described previously (Halama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "a6cb3fda-d9c9-4f09-ae71-bb57bd92b804",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C103",
+      "claim": "Almost all samples were stained for six immune cell markers (CD3, CD8, Foxp3, CD163, CD68, PD1).",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all samples were stained for these six immune cell markers. In cases of insufficient tissue availability, only CD3, CD8 and CD163 staining was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the staining protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7dd63dfa-5d77-4b77-8dae-f936bcbdcddb",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C104",
+      "claim": "In cases of insufficient tissue availability, only CD3, CD8 and CD163 staining was performed.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases of insufficient tissue availability, only CD3, CD8 and CD163 staining was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "6f344605-3dc2-46f5-b9ab-4b9713afee6e",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C105",
+      "claim": "The image analysis pipeline included manual annotation of three regions of interest (ROI) in each histological whole slide image.",
+      "claim_type": "EXPLICIT",
+      "source": "Our image analysis pipeline was composed of several steps: First, manual annotation of three regions of interest (ROI) in each histological whole slide image (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the image analysis methodology with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "528b91b5-848c-4086-a3d9-23eae8effe9d",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C106",
+      "claim": "The ROIs were 'tumor core' (TU_CORE), 'inner invasive margin' (MARG_500_IN) and 'outer invasive margin' (MARG_500_OUT).",
+      "claim_type": "EXPLICIT",
+      "source": "The ROIs were 'tumor core' (TU_CORE), 'inner invasive margin' (MARG_500_IN) and 'outer invasive margin' (MARG_500_OUT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ROI definitions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d192bf4e-71f2-4f0e-b5cf-b58b8ce2daab",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C107",
+      "claim": "Invasive margins were 500 \u00b5m wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasive margins were 500 \u00b5m wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "84ad10ee-ca7b-4671-8933-23d8c728e7e9",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C108",
+      "claim": "All positively stained cells were automatically counted using the open source software QuPath.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we automatically counted all positively stained cells using the open source software QuPath (Figure 1B) (Bankhead et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the cell counting methodology with citation and reference to a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "f14ce1bb-f027-458f-ad1c-c6f6e2fbc87b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C109",
+      "claim": "Intensity thresholds and other parameters for cell detection and classification were set manually for each staining type and were identical for all samples in the pan-cancer cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity thresholds and other parameters for cell detection and classification were set manually for each staining type and were identical for all samples in the pan-cancer cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "7fe497e5-8798-4c94-94c4-07ef0e8ccf5a",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C110",
+      "claim": "All cell detection scripts were manually checked for plausibility in all tumor entities.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell detection scripts were manually checked for plausibility in all tumor entities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality control step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0fa08d35-42b5-4405-9ace-549279a69424",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C111",
+      "claim": "Cell density values were normalized by percentile within each staining type and were visualized as 'target plots'.",
+      "claim_type": "EXPLICIT",
+      "source": "For all further analyses, cell density values were normalized by percentile within each staining type and were visualized as 'target plots' (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data normalization and visualization method with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "1a28eb2d-15ad-4882-b41f-aa9b142713de",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C112",
+      "claim": "To ensure reproducibility, 60 tissue specimen were randomly selected and all analysis steps were repeated.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure reproducibility of our digital pathology pipeline, we randomly selected 60 tissue specimen and repeated all analysis steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a reproducibility experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "020fd029-cf0d-4854-bd60-8ddcac6f8ce4",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C113",
+      "claim": "There was a high correlation (Pearson's correlation coefficient was >0.74, p-value<0.001) between the original and replicate experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a high correlation (Pearson's correlation coefficient was >0.74, p-value<0.001) between these replicates (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the reproducibility experiment with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "3281f278-0aee-49e9-95ac-0c250e06a5da",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C114",
+      "claim": "For negative control slides, very few cells were false positive (<<0.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two slides that served as negative controls for CD3 and CD163 staining, 231/86516 (<<0.1%) and 1/38311 (<<0.1%) cells were false positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the negative control experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "dea4368b-50de-4583-a244-d68e045fe607",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C115",
+      "claim": "Three different methods for clustering were used: a gaussian mixture model, k-means and hierarchical clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the optimal number of clusters in this data set, we used three different methods for clustering: a gaussian mixture model, k-means and hierarchical clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0e648ad8-fc4a-460f-94c4-26baef90f9b9",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C116",
+      "claim": "For 1 up to 12 clusters, three loss functions were computed for each clustering approach, using the Davies-Bouldin, the Calinski-Harabasz or the silhouette criteria for quality of clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "For 1 up to 12 clusters, we computed three loss functions for each approach, using the Davies-Bouldin (Davies and Bouldin, 1979), the Calinski-Harabasz (Cali\u0144skiCalinski and Harabasz, 1974) or the silhouette (Rousseeuw, 1987) criteria for quality of clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering methodology with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "ddec9db7-4445-4224-b422-5bc0a02cc54f",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C117",
+      "claim": "All image analysis steps were implemented in QuPath and all downstream analyses were implemented in MATLAB R2017a.",
+      "claim_type": "EXPLICIT",
+      "source": "All image analysis steps were implemented in QuPath (see key resources) and all downstream analyses were implemented in MATLAB (Mathworks, Natick, MA, USA) R2017a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "03d5e799-b289-47be-9e47-d003d6faba73",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C118",
+      "claim": "All experiments were run on a standard workstation (Intel i7 Processor, 8 cores, 32 GB RAM, Microsoft Windows 10.1).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were run on a standard workstation (Intel i7 Processor, 8 cores, 32 GB RAM, Microsoft Windows 10.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational infrastructure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "4b6574b7-1225-4841-84b0-6f2c5ea39b7b",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C119",
+      "claim": "All source codes are released under an open access license.",
+      "claim_type": "EXPLICIT",
+      "source": "We release all source codes under an open access license (Kather, 2018; copy archived at https://github.com/elifesciences-publications/immuneTopography).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "71f70840-f797-4a30-b111-37ba50acd397",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C120",
+      "claim": "All raw data from the experiments are released.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we release all raw data from our experiments (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "b125bb28-74bf-4f20-ac58-6aef3ef380e1",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "claim_id": "C121",
+      "claim": "All survival analyses were performed in R version 3.5.1 using the packages survminer, survival, ggfortify and ggplot2.",
+      "claim_type": "EXPLICIT",
+      "source": "All survival analyses were performed in R version 3.5.1 (R-project.org) using the packages survminer, survival, ggfortify and ggplot2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d9afd7c3-56fa-4671-b439-da62915a7caf",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study systematically measured immune cell topography in 965 histological tissue slides from 177 patients across 10 tumor types in a pan-cancer cohort, plus 287 colorectal cancer patients in a validation cohort (DACHS). Six immune cell markers (CD3, CD8, Foxp3, CD163, CD68, PD1) were analyzed in three spatial compartments (outer invasive margin, inner invasive margin, tumor core) using automated digital pathology methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodology is well-documented with appropriate sample sizes, clear spatial definitions, and validated automated analysis using QuPath. Reproducibility was demonstrated (C112-C113) with high correlation (r>0.74, p<0.001) and very low false positive rates (<<0.1%) in negative controls (C114). The approach is systematic and technically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "6e1854fb-c6be-4330-849c-df497de87731",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Colorectal adenocarcinoma primary tumors and liver metastases had higher immune cell counts in the outer invasive margin than in the tumor core, while melanoma samples showed the opposite pattern with higher counts in the inner tumor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are consistent with previous studies (C39 cites prior work) and are supported by data shown in Figure 2 supplements. The contrasting patterns between colorectal cancer and melanoma provide face validity for the spatial analysis approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "c4efb3a2-9037-49a4-99e7-701b8a19cb90",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Unsupervised clustering of CD3+ and CD8+ lymphocyte densities across three spatial compartments converged predominantly on two clusters (representing 'hot' and 'cold' tumors) rather than three clusters, indicating no strong inherent grouping into 'hot', 'cold', and 'immune excluded' categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple clustering methods (Gaussian mixture model, k-means, hierarchical clustering) with three different quality metrics (Davies-Bouldin, Calinski-Harabasz, silhouette) were applied systematically. The majority of optimization runs converged on two clusters (Figure 2 supplement 4), providing robust evidence against a natural three-cluster structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "d578b3f7-07a0-4c92-a87c-2a1155987f60",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell densities in the 'tumor core' and 'inner invasive margin' compartments were highly correlated, but neither was well correlated with the 'outer invasive margin', justifying the collapse of tumor core and inner margin into a single compartment for classification purposes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation analysis (Figure 2 supplement 5) provides quantitative support for this data reduction step. This is a reasonable methodological decision that simplifies the classification system while preserving the key spatial distinction between inside and outside the tumor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "ed207e4d-d376-4848-b2b2-009d2632a869",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study provides operational definitions for immune topographies: 'immune excluded' (high density outside, low inside), 'cold' (low density inside and outside), and 'hot' (high density inside regardless of outside density), using median cell density as the cutoff.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These definitions are clearly stated and operationalized using median cutoffs. While the choice of median as a threshold is somewhat arbitrary, it is a reasonable and reproducible approach. The definitions are applied consistently across the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "fba37915-cfcd-419c-a206-3b2b84acaf05",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Different tumor types showed distinct distributions of immune topographies. Immunotherapy-responsive tumors (melanoma, lung adenocarcinoma, lung squamous, head and neck squamous) had approximately half of samples classified as CD3-hot, CD8-hot, and PD1-hot. Colorectal cancers showed high proportions of CD3-excluded tumors. Foxp3+ regulatory T-cell topographies showed the most pronounced differences between tumor types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are well-documented in Figure 3 with clear visual representation of topography distributions across tumor types. The association between immunotherapy responsiveness and 'hot' phenotypes is biologically plausible and consistent with clinical observations, though causality cannot be inferred from this cross-sectional analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "0f0f17c1-360e-4286-b771-846dc3281d59",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tumors frequently exhibited discordant topographies between different immune cell types, particularly between lymphoid and myeloid markers. CD3 and CD8 topographies were mostly concordant (as expected biologically), but substantial discordance was observed between CD8 and Foxp3, and between CD8 and macrophage markers (CD68, CD163).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bivariate analysis (Figures 4 and 5) clearly demonstrates discordance between immune cell types. The concordance between CD3 and CD8 provides internal validation (C59 notes CD8+ cells are a subset of CD3+ cells). The discordance between lymphoid and myeloid markers is a key finding supported by quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "705dc725-c48d-43c5-befe-26c4fdd7ad13",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings suggest that tumors of different immunophenotypes require different immune escape mechanisms, and these mechanisms can only be distinguished using a two-dimensional myeloid-lymphoid classification system rather than a single immune cell type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the data clearly show discordance between lymphoid and myeloid topographies (supporting the need for bivariate classification), the claim about 'different immune escape mechanisms' is an inference that goes beyond what the descriptive spatial data can demonstrate. Mechanistic studies would be needed to validate this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "9c29eeff-b54e-447d-ab4b-b9ad59611df9",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hierarchical clustering based on all six immune cell markers showed that ovarian cancer was an outlier due to low infiltration with almost all immune cell subsets, while highly immunogenic tumor types (melanoma, stomach cancer, non-small cell lung cancer) clustered together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The hierarchical clustering analysis (Figure 6H) and supporting data (Figure 2 supplement 3) provide clear evidence for these groupings. The biological interpretation is reasonable given known differences in immunogenicity between these tumor types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "28515c00-5378-435a-a163-8e34b92609c5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the DACHS validation cohort of 287 colorectal cancer patients, univariate analysis showed that CD8 and CD163 cell densities alone, and their individual topographies (cold, excluded, hot), were not significantly associated with overall survival (HR=1.00 for both cell types in both compartments).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The survival analysis results are clearly stated with hazard ratios and are consistent with some recent large studies (C86). The lack of univariate associations sets up the key finding about bivariate classification. Statistical methods are appropriate (multivariable Cox models adjusting for stage, age, sex).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bivariate immune topographies combining CD8 and CD163 showed significant associations with overall survival in the DACHS cohort. Using 'CD8-cold, CD163-cold' as reference, the hazard ratio was 1.75 (p=0.041) for 'CD8-excluded, CD163-excluded' and 2.71 (p=0.025) for 'CD8-excluded, CD163-hot'. Among CD8-excluded tumors, CD163 topography significantly stratified prognosis (log rank p=0.019).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The survival analysis is well-executed with appropriate multivariable adjustment and clear statistical significance for specific bivariate categories. The Kaplan-Meier curves (Figure 7E) visually support the findings. This demonstrates clinical utility of the bivariate classification system, though the sample sizes for some subgroups are small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "bfee4dd4-b8d0-43cf-9ecc-1f156b77363a",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that multivariate analysis of spatial distributions of multiple immune cell types may be superior to quantifying a single immune cell type in colorectal cancer and possibly other solid tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is supported by the contrast between non-significant univariate results (C68, C87, C88) and significant bivariate results (C69-C71, C89-C90) in the validation cohort. However, the generalization to 'other solid tumors' is speculative and would require validation in additional tumor types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "61649880-670c-422f-9dca-a3cd1bc0afc0",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study provides systematic evidence for classifying tumor-immune phenotypes into hot, cold, and immune excluded spatial patterns that apply to both lymphocyte and macrophage infiltrates, adding a quantitative approach to a previously subjective classification and describing shared immune topography across human solid tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary of the study's contribution is well-supported by the comprehensive data across multiple tumor types and immune cell markers. The systematic, quantitative approach using digital pathology and clear operational definitions represents a methodological advance over subjective assessments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "2f203380-41b1-4f74-ab52-122a93733777",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Lymphoid-hot tumors are more prevalent in immunotherapy-responsive entities (melanoma, lung adenocarcinoma) than in others (colorectal cancer). Immune-excluded tumors are common in head and neck cancers. Patterns of immune evasion (T cell exhaustion, Treg infiltration) are not exclusive to specific tumor-immune phenotypes but occur across categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are supported by the data in Figure 3 and related analyses. The association with immunotherapy responsiveness is observational and cannot establish causation, but the patterns are consistent with clinical experience. The finding about immune evasion mechanisms crossing phenotype boundaries is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "a69aa5bb-29f0-45b8-ace5-4ee8111840d5",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Reproducibility validation showed high correlation (Pearson's r>0.74, p<0.001) between original and replicate experiments on 60 randomly selected specimens, and very low false positive rates (<<0.1%) in negative control slides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reproducibility experiments are well-designed with appropriate sample size (60 specimens), blinded observers, and independent tissue sections. The high correlation and low false positive rates provide strong evidence for technical reliability of the digital pathology pipeline.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "efe53aea-6f4c-4c2e-ad56-9d790c33d262",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The new classification could constitute a novel framework to investigate immunotherapy responsiveness in clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a speculative claim about future applications. While the classification system is well-validated for describing immune topography and shows prognostic value in colorectal cancer, its utility for predicting immunotherapy response would require prospective validation in clinical trials with immunotherapy-treated patients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    },
+    {
+      "id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691",
+      "content_id": "4180fa1e-5630-49e6-83e1-27a39f9a6f6b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work established a paradigm of three tumor-immune phenotypes (cold, immune-excluded, hot), but this classification was generally accepted despite being backed by surprisingly little quantitative data, with fundamental questions unanswered and previous studies not adequately investigating spatial patterns or using methods that precluded differentiation between invasive margin and tumor core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The literature review accurately identifies gaps in prior work. The citations support the claims about the established paradigm (C26) and limitations of previous studies (C32-C35). This effectively motivates the current study's systematic, quantitative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:17:22.777091Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d9301e9e-4ecb-43f0-a3f2-18e44d4ebd6c",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "90c099db-13b4-4708-b671-b572a534effd",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "518d61ce-af6f-404e-b170-cf7a2f2dd563",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "cf69d0e2-d2a8-4c2b-ae31-c6a7ae4a61b9",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "67029384-138c-4c85-9e6d-862ca8ac798c",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "9a1deeeb-00da-4760-9c31-fce0f1d0f8f1",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "cb60b707-38aa-463f-8926-592b9d801152",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "a6cb3fda-d9c9-4f09-ae71-bb57bd92b804",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "7dd63dfa-5d77-4b77-8dae-f936bcbdcddb",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "6f344605-3dc2-46f5-b9ab-4b9713afee6e",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "528b91b5-848c-4086-a3d9-23eae8effe9d",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "d192bf4e-71f2-4f0e-b5cf-b58b8ce2daab",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "84ad10ee-ca7b-4671-8933-23d8c728e7e9",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "f14ce1bb-f027-458f-ad1c-c6f6e2fbc87b",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "7fe497e5-8798-4c94-94c4-07ef0e8ccf5a",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "0fa08d35-42b5-4405-9ace-549279a69424",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "ddec9db7-4445-4224-b422-5bc0a02cc54f",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "03d5e799-b289-47be-9e47-d003d6faba73",
+      "result_id": "d9afd7c3-56fa-4671-b439-da62915a7caf"
+    },
+    {
+      "claim_id": "340fbf1c-1756-4420-a04b-c7050c9b5eac",
+      "result_id": "6e1854fb-c6be-4330-849c-df497de87731"
+    },
+    {
+      "claim_id": "50653e5d-5651-4848-a870-4f122a18cf34",
+      "result_id": "6e1854fb-c6be-4330-849c-df497de87731"
+    },
+    {
+      "claim_id": "e6c8efda-b311-4916-ba3d-508183d307b5",
+      "result_id": "c4efb3a2-9037-49a4-99e7-701b8a19cb90"
+    },
+    {
+      "claim_id": "3f18e893-011b-4a91-82b7-9b928e3f2e64",
+      "result_id": "c4efb3a2-9037-49a4-99e7-701b8a19cb90"
+    },
+    {
+      "claim_id": "dea4368b-50de-4583-a244-d68e045fe607",
+      "result_id": "c4efb3a2-9037-49a4-99e7-701b8a19cb90"
+    },
+    {
+      "claim_id": "0e648ad8-fc4a-460f-94c4-26baef90f9b9",
+      "result_id": "c4efb3a2-9037-49a4-99e7-701b8a19cb90"
+    },
+    {
+      "claim_id": "49137e39-9447-468f-9847-2012407b9c85",
+      "result_id": "d578b3f7-07a0-4c92-a87c-2a1155987f60"
+    },
+    {
+      "claim_id": "6c55cdb8-5759-46e5-96d3-5bc1082d586a",
+      "result_id": "d578b3f7-07a0-4c92-a87c-2a1155987f60"
+    },
+    {
+      "claim_id": "2bf143e7-6078-4016-8113-a5587495486b",
+      "result_id": "d578b3f7-07a0-4c92-a87c-2a1155987f60"
+    },
+    {
+      "claim_id": "188a40a7-f017-403e-b456-738423a7cfcd",
+      "result_id": "ed207e4d-d376-4848-b2b2-009d2632a869"
+    },
+    {
+      "claim_id": "70408536-9f6d-44cf-8f2a-1fa3f1df8dc5",
+      "result_id": "ed207e4d-d376-4848-b2b2-009d2632a869"
+    },
+    {
+      "claim_id": "b6c90d0a-c7e9-4885-b68a-54fc72451d3f",
+      "result_id": "ed207e4d-d376-4848-b2b2-009d2632a869"
+    },
+    {
+      "claim_id": "d488a985-749a-4c47-8add-88856571dc97",
+      "result_id": "ed207e4d-d376-4848-b2b2-009d2632a869"
+    },
+    {
+      "claim_id": "9c439c4e-bfce-4202-8c8f-57db702dd36c",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "c67a2ebb-6e93-4141-b169-e4ce178d8570",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "44f0e6bf-6b49-4a5d-a33a-b8eaa2132506",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "722f9c3e-a114-4397-a265-63533d80912e",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "efa4c089-9339-4d90-92b5-6b047ecb3b36",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "17e0876c-b593-4a6b-bced-dde3c025ea07",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "fefcf511-e277-40b4-92d7-ef474d4234ce",
+      "result_id": "fba37915-cfcd-419c-a206-3b2b84acaf05"
+    },
+    {
+      "claim_id": "abfd0fb1-028b-4cf6-b1d9-65a8ca6569b9",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "7a524bbd-19f3-4c0e-bef7-60bd0192415b",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "29613177-110a-4982-ab1b-981c99be3de7",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "54db2862-2b52-443f-947b-542582809be8",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "ffd42cb8-0827-4c65-83c9-7c94e7643a57",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "36764025-7b8f-4581-8ec8-6c028c148f65",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "d2ef1318-a7df-4a5b-bf42-bf3b0bcb6328",
+      "result_id": "0f0f17c1-360e-4286-b771-846dc3281d59"
+    },
+    {
+      "claim_id": "a6f44e20-38fa-4e72-a89b-257f33bbf4ee",
+      "result_id": "705dc725-c48d-43c5-befe-26c4fdd7ad13"
+    },
+    {
+      "claim_id": "47c7540a-8aea-46d3-930b-a3b83ae4864a",
+      "result_id": "705dc725-c48d-43c5-befe-26c4fdd7ad13"
+    },
+    {
+      "claim_id": "64d64e60-cecf-484b-9739-ce065071574e",
+      "result_id": "705dc725-c48d-43c5-befe-26c4fdd7ad13"
+    },
+    {
+      "claim_id": "bd22e145-b8c5-475a-95a2-ad2cb37c1069",
+      "result_id": "9c29eeff-b54e-447d-ab4b-b9ad59611df9"
+    },
+    {
+      "claim_id": "082e9d02-3d5c-40c1-a0ba-f9aaea00cadc",
+      "result_id": "9c29eeff-b54e-447d-ab4b-b9ad59611df9"
+    },
+    {
+      "claim_id": "db17e4f5-db7f-41d3-8882-20ba2bb3f110",
+      "result_id": "28515c00-5378-435a-a163-8e34b92609c5"
+    },
+    {
+      "claim_id": "d5b032c4-2b20-456f-bdda-070ad19b5fa0",
+      "result_id": "28515c00-5378-435a-a163-8e34b92609c5"
+    },
+    {
+      "claim_id": "3c984650-474f-4f31-ab45-c7e70cdb958d",
+      "result_id": "28515c00-5378-435a-a163-8e34b92609c5"
+    },
+    {
+      "claim_id": "6d67d4f7-9802-4176-b6c2-58e5d9e5b132",
+      "result_id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0"
+    },
+    {
+      "claim_id": "98fe5e67-4f31-4064-bd50-859aa479a1ee",
+      "result_id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0"
+    },
+    {
+      "claim_id": "a3d9fe33-6b88-4671-af0a-2acc85e48dc1",
+      "result_id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0"
+    },
+    {
+      "claim_id": "f9be6423-a4a1-4d47-9cfa-e0a14004f66b",
+      "result_id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0"
+    },
+    {
+      "claim_id": "73edba15-295d-4bf4-999d-767ef7103473",
+      "result_id": "5d2fc721-5b5b-4849-9b68-f3c26ec139f0"
+    },
+    {
+      "claim_id": "412ff74d-ffdf-49c8-af68-b3000e5a07e5",
+      "result_id": "bfee4dd4-b8d0-43cf-9ecc-1f156b77363a"
+    },
+    {
+      "claim_id": "fb5e3c72-b91e-4893-ad99-80d81e4839fc",
+      "result_id": "61649880-670c-422f-9dca-a3cd1bc0afc0"
+    },
+    {
+      "claim_id": "5d904f6c-a837-44a5-89c6-553440e38a15",
+      "result_id": "61649880-670c-422f-9dca-a3cd1bc0afc0"
+    },
+    {
+      "claim_id": "1e8e5e61-568f-4432-903e-3f3f524016e5",
+      "result_id": "61649880-670c-422f-9dca-a3cd1bc0afc0"
+    },
+    {
+      "claim_id": "56f43d19-27b0-4db3-b14b-9f50980ea7b8",
+      "result_id": "61649880-670c-422f-9dca-a3cd1bc0afc0"
+    },
+    {
+      "claim_id": "acd1a132-e131-4947-a825-1f4769b2842d",
+      "result_id": "2f203380-41b1-4f74-ab52-122a93733777"
+    },
+    {
+      "claim_id": "112b74fe-5b97-46cd-a68d-7c4480ddb6f2",
+      "result_id": "2f203380-41b1-4f74-ab52-122a93733777"
+    },
+    {
+      "claim_id": "f69f3307-347b-454a-9881-c324628006ee",
+      "result_id": "2f203380-41b1-4f74-ab52-122a93733777"
+    },
+    {
+      "claim_id": "1a28eb2d-15ad-4882-b41f-aa9b142713de",
+      "result_id": "a69aa5bb-29f0-45b8-ace5-4ee8111840d5"
+    },
+    {
+      "claim_id": "020fd029-cf0d-4854-bd60-8ddcac6f8ce4",
+      "result_id": "a69aa5bb-29f0-45b8-ace5-4ee8111840d5"
+    },
+    {
+      "claim_id": "3281f278-0aee-49e9-95ac-0c250e06a5da",
+      "result_id": "a69aa5bb-29f0-45b8-ace5-4ee8111840d5"
+    },
+    {
+      "claim_id": "c3e9b733-a8f3-4a15-85d7-e0840cce4c9d",
+      "result_id": "efe53aea-6f4c-4c2e-ad56-9d790c33d262"
+    },
+    {
+      "claim_id": "bda831b5-4265-4f3a-bed5-f3e7990cb1ab",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "f8531fde-605c-40d3-938c-9ffec80c881f",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "2c345737-185e-4474-9f78-7f73661f7cd3",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "548bd128-7662-44de-8ae9-4f2c69a3be2e",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "5da4933f-8407-481b-9497-c9b47e1bb642",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "61bdc148-18ed-44fd-afc7-d21ef5f012c1",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "db6941eb-cd4d-4b19-8504-40f8a8f488fa",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "553f0199-b27b-4a0e-b0e2-b15b4601ca37",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    },
+    {
+      "claim_id": "b8a717a0-4735-4122-9fc5-d94161681db1",
+      "result_id": "8a43a6e1-50ae-4801-8dfd-8a7059e86691"
+    }
+  ],
+  "comparisons": []
+}

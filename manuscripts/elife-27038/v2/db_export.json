@@ -1,0 +1,1397 @@
+{
+  "submission": {
+    "id": "6c97b742-b789-4593-aba1-b56d295e545e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:48:50.665635Z",
+    "updated_at": "2025-12-01T20:48:50.665635Z"
+  },
+  "content": [
+    {
+      "id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "submission_id": "6c97b742-b789-4593-aba1-b56d295e545e",
+      "content_type": "manuscript",
+      "content_text": "# Rapid transporter regulation prevents substrate flow traffic jams in boron transport\n\n## Authors\n\n- Naoyuki Sotta<sup>1</sup> ([ORCID: 0000-0001-5558-5155](https://orcid.org/0000-0001-5558-5155))\n- Susan Duncan<sup>2</sup> ([ORCID: 0000-0001-9581-1145](https://orcid.org/0000-0001-9581-1145))\n- Mayuki Tanaka<sup>1</sup>\n- Takafumi Sato<sup>1</sup>\n- Athanasius FM Mar\u00e9e<sup>2</sup> ([ORCID: 0000-0003-2689-2484](https://orcid.org/0000-0003-2689-2484)) \u2020\n- Toru Fujiwara<sup>1</sup> ([ORCID: 0000-0002-5363-6040](https://orcid.org/0000-0002-5363-6040)) \u2020\n- Ver\u00f4nica A Grieneisen<sup>2</sup> ([ORCID: 0000-0001-6780-8301](https://orcid.org/0000-0001-6780-8301)) \u2020\n\n### Affiliations\n\n1. Graduate School of Agricultural and Life Sciences The University of Tokyo Tokyo Japan\n2. Department of Computational and Systems Biology John Innes Centre Norwich United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nNutrient uptake by roots often involves substrate-dependent regulated nutrient transporters. For robust uptake, the system requires a regulatory circuit within cells and a collective, coordinated behaviour across the tissue. A paradigm for such systems is boron uptake, known for its directional transport and homeostasis, as boron is essential for plant growth but toxic at high concentrations. In Arabidopsis thaliana, boron uptake occurs via diffusion facilitators (NIPs) and exporters (BORs), each presenting distinct polarity. Intriguingly, although boron soil concentrations are homogenous and stable, both transporters manifest strikingly swift boron-dependent regulation. Through mathematical modelling, we demonstrate that slower regulation of these transporters leads to physiologically detrimental oscillatory behaviour. Cells become periodically exposed to potentially cytotoxic boron levels, and nutrient throughput to the xylem becomes hampered. We conclude that, while maintaining homeostasis, swift transporter regulation within a polarised tissue context is critical to prevent intrinsic traffic-jam like behaviour of nutrient flow.\n\n## Introduction\n\nRobust growth and functioning of all living organisms, including plants, requires a well-balanced uptake of nutrients from the environment. However, nutrients are not always readily available in the environment at the organisms\u2019 optimal levels. This issue is exacerbated for sessile plants which take up essential minerals, required for their growth and functioning, from the soil in which the nutrient concentrations are mainly determined by elemental contents of igneous rocks. Most soils are either deficient or in excess of essential elements (Roy et al., 2006). Plants have therefore evolved to take up these essential minerals from the soil in a regulated manner over a wide range of concentrations through their roots, conveying the nutrients to the rest of the plant body via the vascular network. For a well-balanced uptake of nutrients from soils by roots, nutrient transport processes need to be regulated in a nutrient-dependent manner, which constitutes one of the essential processes for plant growth and crop production.\n\nFor roots to transport soil-derived nutrients into its central vascular tissues, which will ultimately transport it to other regions of the plant, a flow of nutrients has to be established which crosses several cell files, from the cells in contact with the medium (typically epidermal or lateral root cap cells) to the xylem. Boron is one of such essential nutrients for plants, critical for cell wall composition (O'Neill et al., 2004). Borate is cross-linking a pectic polysaccharide, Rhamnogalacturonan II, which makes it indispensable for tissue growth (Kobayashi et al., 1996). Only available in the soil, boron is transported to the xylem through an intricate system of polarly localised membrane transporters that bring boron from the apoplast into the cytosol, and then back again into the apoplast (Miwa and Fujiwara, 2010). The boron transport mainly takes place in the form of boric acid and borate. At neutral pH, boron is mostly present in the form of boric acid (Woods, 1996).\n\nTwo families of transporters, BORs and NIPs, are involved in boron transport through the root. BOR proteins export boron from within the cell to the cell wall, while NIP proteins enhance bidirectional permeability. Both BORs and NIPs present polar localisation, often complementary. In the root, BOR1 (At2g47160) and BOR2 (At3g62270) locate on the inwards-facing membranes of the cell (Takano et al., 2010; Miwa et al., 2013), while NIP5;1 (At4g10380) locates on the outwards-facing membranes (Takano et al., 2010). Being polarised in such a manner, their combined action and localisation allows for a highly efficient boron uptake and transport to the xylem, even when boron is only available at very low concentrations in the medium. This transport system ensures that within the root tissue much higher boron concentrations can be reached than what is available in the medium, allowing for significant xylem loading which then provides sufficient boron for the growing shoot. Indeed, both nip5;1 and bor1,\u2009bor2 mutants present severe growth defects under low boron concentrations (Noguchi et al., 1997; Takano et al., 2006-06; Miwa et al., 2013). Such a coordinated and directed polar transport is reminiscent of the intricate polar auxin transport networks within the plant, although their axes of polarity are often perpendicular to one another (Robert and Friml, 2009).\n\nLikewise, the boron transport system faces constraints: While boron is required for cell wall strength and stability, too high intracellular boron concentrations elicit DNA damage, growth retardation and eventually cell death (Sakamoto et al., 2011-09). Unsurprisingly, therefore, is has been found that the protein levels of the boron transporters are regulated by boron itself, with both NIP5;1 and BOR1,\u20092 protein levels dropping at higher boron concentrations (Takano et al., 2005; Takano et al., 2006-06; Takano et al., 2010; Miwa et al., 2013). Such boron-dependent regulation is considered essential to allow for boron homoeostasis, preventing boron toxicity when boron availability is high, but allowing for efficient uptake when availability is low. Protein down-regulation takes place through two distinct mechanisms. In the case of NIP5;1 boron reduces protein levels via mRNA degradation (Tanaka et al., 2011; Tanaka et al., 2016), while in the case of BOR1,\u00a02 the mechanism involves increased protein degradation (Takano et al., 2005; Miwa et al., 2013). Surprisingly, however, in both cases the down-regulation of boron transporters by boron occurs on a short time scale: when a plant is transferred from low to high levels of boron, swift downregulation of BORs (via protein degradation), and NIPs (via transcript degradation) is observed (Takano et al., 2005; Tanaka et al., 2011; Tanaka et al., 2016). The BOR1 degradation occurs through endocytosis, apparent 30\u2009min after the transfer from low to high boron media. After two hours BOR1 has already mostly disappeared, suggesting that the half life of BOR1 is well below one hour (Takano et al., 2005). The half life of NIP5;1 mRNA after the transfer from low to high boron media is 10\u201315 min (Tanaka et al., 2011). Such rapid time scales seem at odds with the expected natural variations of boron a plant would experience, as there is no evidence supporting considerable fluctuations in soil boron concentrations, neither spatially nor temporally. This is due to boron being available to plants as boric acid, which is highly water-soluble (solubility: 0.92\u2009mol/L at 25\u00b0C). Consequently, boron is very mobile in the soil (Nable et al., 1997), rendering patchy heterogeneous boron levels throughout the soil neither stable nor probable. The main process that presumably would allow a plant growing at a fixed location to experience rising boron levels is through drought, a phenomenon which fails to account for the necessity of transporter down-regulation occurring on the order of minutes. Also watering of plants is not expected to quickly change the boron levels. Keren and Bingham, 1985,\u00a0analysing the effects of solution-to-soil ratio on the boron concentration in soil water, propose that soil adsorption plays a role in buffering the fluctuations in boron concentration in soil water as a consequence of fluctuations in the water-soil ratio. Mathematical modelling was used to predict the boron concentrations in the soil solution from the water-to-soil ratio (Keren, 1981), revealing that boron concentration in the soil is robust against fluctuations in the water-to-soil ratio if soil adsorption is considered. From these in-depth studies, the picture consolidates that rapid fluctuations in boron concentration are indeed unlikely, or rare events even if they could occur under very specific and unlikely conditions. Given that there is no apparent necessity for swift regulation, it is thus surprising to find cost-ineffective down-regulation mechanisms through degradation of mRNA and protein underpinning this system, instead of more cost-effective down-regulation processes via transcriptional repression.\n\nIn short, down-regulation of boron transporters can be readily understood as a natural adaptive mechanism for plants to optimise growth and function at different geographical locations with varying natural boron concentrations. Nevertheless, it remains intriguing as to why plants have evolved such a swiftness in the regulation of these transporters. Puzzled by this behaviour, we questioned if other dynamical constraints are operating on polarised root tissue that could explain the need for these rapid timescales. To address this, we explored possible implications of dynamical transporter regulation in a parsimonious model that captures the nutrient flux across a small cross-section of a generic root tissue, with an explicit focus on the swiftness of the temporal regulation.\n\n### A simple model for boron uptake to probe implications of boron transporter regulation swiftness\n\nIn Arabidopsis thaliana, boron is shuttled from the soil across the epidermis, cortex and endodermis into the stele, to finally be taken up into the xylem, mediated by the action of secondary active boron exporters (BORs) and the enhancement of permeability through NIPs. Previously, we analysed boron patterning by using a two-dimensional cross-sectional model of the entire Arabidopsis root meristem, considering all spatial nuances of transporter localisation, polarity and intensity, whilst neglecting transporter dynamics and regulation (Shimotohno et al., 2015-04). Instead, transporter levels and activity were static, fixed to the observed steady state transporter expression under constant boron medium condition of 0.3\u2009\u03bcM. While neglecting regulation of transporter expression or activity, a characteristic boron pattern emerged on the level of the root, presenting highest concentrations at the stem cell niche. This boron profile gradually decreased longitudinally up to the start of the differentiated tissues. The computationally simulated characteristic boron distribution, which we confirmed experimentally through LA-ICP-MS, strongly indicates that the mature root tissue is involved mainly in transporting boron from the soil into the xylem, while the distal meristematic tissues have a differential boron transport function, namely, to locally provide higher boron levels for fuelling local growth (i.e., cell wall material) at those regions. In that study, however, we did not address the dynamics of the transporter regulation nor how nutrient homeostasis is achieved. Here, we investigate the dynamics of the transporters and their mutual feedback with the generated boron distribution. We do so by spatially focussing on the differentiated tissue region involved in xylem-uptake.\n\nAt the elongation and differentiation zone of the root, transporters possess a striking polar expression; BORs are located at the inside-facing membranes of the cells, while NIPs are concentrated to the outside facets (see Figure 1A,B). Although protein levels can present strong variation between cell files, the transcription of the transporters takes place throughout the entire root tissue, even for NIP5;1 (Figure 1\u2014figure supplement 1). We therefore use the simplifying assumption that all cell files are intrinsically the same in respect to the potential of expressing the transporters, and variations arise solely as a consequence of the nutrient distributions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig1-v2.jpg)\n\n**Figure 1.:** (A) Confocal microscope images of BOR1-GFP and GFP-NIP5;1 localisation in A. thaliana roots, revealing polar localisation of both transporters, facing inwards and outwards, respectively. Cell file identities are shown in the top-left with numbers representing, in increasing order, cell files from the outermost to the innermost cells, such as ep, epidermis; co, cortex; en, endodermis; va, vasculature. (B) Detailed view along a transversal section of the tissue at the proximal meristem. lrc, lateral root cap. (C) Schematic diagram of the NIP-BOR boron transport model, consisting of a transversal root cross-section composed of $n$ cells between the medium and the xylem. For a simplified A. thaliana model, we consider $n=4$. Depicted is a generic root model consisting of $n$ cell files, not showing all cells and cell walls in between $W_{2}$ and $W_{n\u22122}$ for illustration purposes. The model includes intracellular and apoplastic compartments, as well as membrane-based properties such as transporter activity and background permeability rates. $lw$: cell wall width; $lc$: cell width; $h\u2062c$: cell height. For a full description of the parameters, see Table 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Promoter activity of NIP5;1 was observed with transgenic plants expressing proNIP5;1-GUS. (A) From the root tip to differentiation zone. White bar, 100\u2009\u03bcm. (B) Cross-section of elongation zone. Approximate root position from which the section was obtained is indicated by black line in (A). Bar, 50\u2009\u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Seedlings were germinated and grown on MGRL plates with various boron concentrations for seven days. GFP-NIP5;1 and BOR1-GFP in epidermis were observed with confocal microscope. Cell walls were visualised with PI staining. Scale bar is 20\u2009\u03bcm.\n\nOur analysis focuses on the transversal nutrient flow through the root that results from boron entering and leaving the different cell files transversally. Effectively, in our simple model, we only consider a single row of cells and, for simplicity, only four cell files over which boron is transported from the soil into the xylem (Figure 1C). To capture the dynamics of boron transport and transporter activities in root tissue, the model\u2019s variables are the boron concentration in cells (C) and cell walls (W), and transporter activities of NIPs (N) and BORs (B) for each individual cell (n). The mutual dependency between these variables is described using ordinary differential equations (ODEs). For each cell file of the model, the transporters are produced at an equal rate, have the same transport potential, and are regulated in the same way. The modelled cells loosely map to the outermost epidermis (cell 1), the cortex (cell 2), the endodermis (cell 3), and finally to the pericycle/vasculature (cell 4). The last cell of the row is endowed with an upward convective flow, which captures the shootwards convective flow of the xylem. For reasons of simplicity, we consider these four cells to have equal dimensions, and make the same assumption for all intermediate cell walls (Figure 1C).\n\nGiven that transporter regulation can be observed in response to varying the boron conditions in the medium (Takano et al., 2005, Takano et al., 2006-06Takano et al., 2006-06, 2010; Miwa et al., 2013), (Figure 1\u2014figure supplement 2), boron sensing underpinning those responses could either involve measurements of the intracellular concentration or involve measurements of the intercellular concentration (i.e., the levels within the apoplast). In the case of NIP5;1, we recently revealed that NIP5;1 mRNA degradation is triggered by boron-dependent ribosome stalling during the translation process (Tanaka et al., 2016). The boron-dependent degradation was also observed in an in vitro system without cell wall fraction, which suggests that the sensing mechanism depends on the cytoplasmic boron concentration. For the BORs the precise subcellular location of the boron sensing has not yet been determined, but it is reasonable to assume that the regulation is also responding to cytosolic boron levels, given that the purpose of the nutrient homeostasis is to keep the nutrient levels within the cell within bounds, and to this end directly sensing the cytoplasmic boron concentration is beneficial. In short, given the current knowledge, cytosolic boron sensing is the most parsimonious assumption.\n\nHence, our model assumes that all the boron transporters of a cell are regulated by the cytosolic boron concentration within that respective cell. Note that we loosely use the term \u2018boron\u2019 in our model to refer to both boric acid as well as borate. They can be found in a dynamic chemical equilibrium, $B(OH)_{3}+H_{2}O\u27faB(OH)_{4}^{\u2212}+H^{+}$, with a $pK$ value of 9.24 (Woods, 1996). Given that this process does not involve any enzyme kinetics, this distinction is not explicitly considered in our model. Moreover, we solely focus on the import of soluble boron (both boric acid and borate), not considering any boron that is bound to the cell wall.\n\nThe temporal dynamics of the soluble boron concentration within the cytosol ($C_{i}$) and in the cell walls ($W_{i}$, being the cell wall adjacent to the inward facing facet of cell $i$) is determined by their inflow and outflow from and to neighbouring compartments:\n\n$$\nC_{i}\u02d9={(p+N_{i})\u2062(W_{i-1}-C_{i})-B_{i}\u2062C_{i}+p\u2062(W_{i}-C_{i})}\u2062\\frac{1}{l\u2062c},\n$$\n\n\n\n$$\nW_{i}\u02d9={p(C_{i}\u2212W_{i})+(p+N_{i+1})(C_{i+1}\u2212W_{i})+B_{i}C_{i}}\\frac{1}{lw}.\n$$\n\nHere, $N_{i}$ and $B_{i}$ represent boron permeabilities due to, respectively, the bi-directional transport by NIPs and the directional transport by BORs within cell $i$. Transporter-independent boron permeability through the plasma-membrane is also taken into account, described by parameter $p$. To capture the tissue context, boundary conditions are set at both extremities of the transversal cell series. The outer cell wall of the first cell (cell 1) is in contact with medium. Given the rapid diffusion rate of boric acid in water, we assume that the boron concentration in the outermost cell wall ($W_{0}$) is the same as in the medium, constant over time. The xylem transport that occurs from roots to upper tissue is represented by a removal term, with rate $a$, attributed to the innermost cell ($i=n$) of the cell row:\n\n$$\nC_{n}\u02d9=(p+N_{n})\u2062(W_{n-1}-C_{n})\u2062\\frac{1}{l\u2062c}-a\u2062C_{n}\u2062\\frac{1}{h\u2062c}.\n$$\n\nAssuming that transport activities are proportional to protein concentration, it follows that the dynamical regulation of NIP and BOR permeability ($N_{i}$ and $B_{i}$) are in direct proportion to the dynamics of their proteins (we will later show that our main insights do not depend on the assumption that the BOR transporter does not saturate under the range of concentrations here treated). It was therefore not necessary to introduce explicit variables for protein concentrations. Instead we directly use permeability, representing the protein concentrations and their regulation. The protein concentration, and thus the effective permeability, is determined by production and degradation rates.\n\nAs mentioned, accumulation of NIP5;1 mRNA is regulated through boron-dependent mRNA degradation. This suggest that the production of NIP5;1 protein is boron dependent. On the other hand, degradation of NIP5;1 protein is not found to be boron dependent (Takano et al., 2010; Tanaka et al., 2016). Thus, the levels of $N_{i}$ vary due to a production term that is dependent on cytosolic boron concentration and a constant degradation term:\n\n$$\nN_{i}\u02d9=\\alpha_{N}\u2062\\frac{k_{N}^{n_{N}}}{k_{N}^{n_{N}}+C_{i}^{n_{N}}}-\u03be_{N}\u2062N_{i},\n$$\n\nwhere $\\alpha_{N}$ is the production rate, $\u03be_{N}$ is degradation rate, and $n_{N}$ is the Hill coefficient capturing the boron-dependent inhibitory regulation.\n\nAccordingly, given that BOR protein levels are regulated through boron-dependent degradation (Takano et al., 2005), but there is no evidence of boron dependent production, $B_{i}$ varies over time due to constant production and boron-dependent degradation terms:\n\n$$\nB_{i}\u02d9=\\alpha_{B}-\u03be_{B}\u2062(1+d_{B}\u2062\\frac{C_{i}^{n_{B}}}{k_{B}^{n_{B}}+C_{i}^{n_{B}}})\u2062B_{i},\n$$\n\nwhere $\\alpha_{B}$ is the production rate, $\u03be_{B}$ the basal degradation rate, $d_{B}$ the maximum boron-independent degradation rate, and $n_{B}$ the Hill coefficient capturing the boron-dependent inhibitory regulation.\n\nWe wish to use this model to understand the significance, if any, of the swift transporter regulation. To assess the effects of regulation swiftness on transport, we therefore introduce a time-scaling factor $\u03f5$, which multiplies both the entire $N_{i}\u02d9$ and $B_{i}\u02d9$ terms (Equations\u00a06\u00a0and\u00a07). To align ourselves with the current experimental evidence that indicates swift regulation of NIP5;1 on the mRNA level and of BORs on the protein level, we modulate the production rate and degradation rate for NIP5;1 and BOR1, respectively. However, changing production rates of NIPs through a factor $\u03f5$ without changing the degradation rate would result in changes of the overall protein concentration which might influence the system\u2019s behaviour, not due to the swiftness of the regulation but due to the changes in equilibrium protein concentration. This also holds for the BOR regulation. Thus, to avoid such possible undesired effects, the time-scaling factor multiplies the entire right-hand side of the dynamics:\n\n$$\nN_{i}\u02d9=\u03f5_{N}\u2062(\\alpha_{N}\u2062\\frac{k_{N}^{n_{N}}}{k_{N}^{n_{N}}+C_{i}^{n_{N}}}-\u03be_{N}\u2062N_{i}),\n$$\n\n\n\n$$\nB_{i}\u02d9=\u03f5_{B}\u2062{\\alpha_{B}-\u03be_{B}\u2062(1+d_{B}\u2062\\frac{C_{i}^{n_{B}}}{k_{B}^{n_{B}}+C_{i}^{n_{B}}})\u2062B_{i}}.\n$$\n\nWe define $\u03f5=1$ as representing the swiftness of regulation in the wild type scenario, while reducing $\u03f5$ allows us to simulate behaviours that would occur with less rapid regulatory dynamics, and increasing $\u03f5$ allows us to consider even higher swiftness of regulation than experimentally observed. Note that the regulation of the transporter activity by cytosolic boron concentrations occurs through a sigmoidal relationship, in which $k_{B}$ and $k_{N}$ are the boron concentrations at the half maximum of the Hill function, defining the sensitivity of the response to the boron concentration. We set $k_{B}\u224330k_{N}$, consistent with our observations that the sensitivity of BOR expression is much less than that of NIP5:1 (Figure 1\u2013Figure supplement 2), but will also show that our results do not require large differences between these two parameters.\n\nWe have assessed what is the biologically acceptable range for each parameter, based on the available literature (see Material and methods for details). Default parameter values were chosen to lie within these valid ranges, and are given in\u00a0Table 1.\n\n### From steady state flows to oscillatory dynamics\n\nWhen regulation swiftness lies within the experimentally observed regime ($\u03f5_{B}=\u03f5_{N}=\u03f5=1$), a constant flow of boron that is transported across the root ensues (Figure 2). Boron concentrations within the cells ($C_{n}$) remain constant over time. This steady state behaviour, however, is disrupted when the transporter regulation swiftness is decreased ten-fold ($\u03f5=0.1$). Oscillations in the boron concentration arise in all cells, but most strikingly in the endodermis (cell 3) and cortex (cell 2) (Figure 2A), as well as in the cell walls (Figure 2B). Decreasing the transporters\u2019 regulation swiftness even further ($\u03f5=0.01,\u20090.001$) consistently enhances the amplitude of such oscillations, and enlarges their periods (Figure 2A,B). We conclude that even when environmental boron levels ($C_{0}$) and xylem activity ($a$) remain constant, simply deviating from the rapid experimentally observed transporter\u2019s regulation swiftness is sufficient to push the boron transport system into an oscillatory dynamics.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig2-v2.jpg)\n\n**Figure 2.:** Time development in the four-cell NIP-BOR model of the boron concentration in the cells (A) and cell walls (B), and of the transporter activity of BOR (C) and NIP (D). The simulations are started using the default parameter setting (Table 1). At the time points 48, 72 and 96\u2009hr, the parameters determining the transporter regulation dynamics ($\u03f5_{N}$ and $\u03f5_{B}$) were each time reduced to one tenth of their previous value. $C_{1}$ to $C_{4}$ are the boron concentrations in the outermost cell 1 up to the innnermost cell 4. $W_{i}$ represents boron concentration in cell wall fraction between cell $i$ and cell $i+1$ and $N_{i}$ are transporter activity of BOR and NIP in cell $i$, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Robustness of behaviour regarding choice of $k_{B}$ parameter.(A,\u2009B) In the standard four-cell model, cellular boron concentrations still present traffic-jam-like behaviour at reduced transporters\u2019 regulation dynamics swiftness ($\u03f5$) when $k_{B}$ is reduced to (A) $k_{B}=400$\u2009\u03bcM; or (B) $k_{B}=250$\u2009\u03bcM. (C) At very low values, here $k_{B}=100$\u2009\u03bcM, the concentrations remain stable even at reduced transporters\u2019 regulation dynamics swiftness ($\u03f5$), due to the trivial result that such low values obstruct boron uptake by the system. (D) Equilibrium relative throughput values, as a function of $k_{B}$, with unity representing the throughput for $k_{B}=600$\u2009\u03bcM. Flow stabilisation at reduced transporters\u2019 regulation dynamics swiftness for low $k_{B}$ values is basically due to a 5-fold reduction in throughput, comparable to real traffic jams not occurring during off-peak hours. Note that for all panels $k_{N}=20$\u2009\u03bcM, its standard value.\n\nThe reason the cells undergo such dramatic concentration variations at lower regulation swiftness can be intuitively linked to the accompanying changes in transporter levels which also ensue (Figure 2C,D). They are initially triggered by minute fluctuations in the concentrations, but then cause increasingly larger changes in cytosolic and apoplastic concentrations. It is not immediately clear, however, how it depends on either the NIP or BOR transporter regulation, why regulation swiftness exacerbates oscillation amplitudes and how their interdependencies either produce stable flows or unstable oscillations that propagate throughout the tissue. What we can already conclude though, is that within a polarised tissue rapid transport dynamics are necessary to ensure flux homeostasis and avoid instabilities in concentration levels. But to fully understand the process we will first observe how in the model the steady flow regime behaves in terms of transporter expression levels when we assume that the regulatory dynamics are as swift as experimentally observed.\n\n### Parsimonious model, under wild type dynamical settings, generates stable transporter expression\n\nGiven that our question is focused on the possible advantages of swift transporter regulation within a polarised tissue context, our model purposely ignored details of tissue-specific regulation, using the simplifying assumption that all cells are endowed with the same potential of expressing transporters. This assumption may initially seem at odds with the actual distinct GFP levels of the GFP-tagged proteins (Figure 1B), which qualitatively indicates stronger BOR1 expression in the epidermis and endodermal files and pronounced NIP5;1 expression in the outermost cell file (lateral root cap or epidermis) only. It was therefore interesting to observe that our parsimonious model could already account for general features of the the observed transporters\u2019 expression patterns (Figure 2C,D) solely as a consequence of the relative positioning of the cells within the cell row: in the model, NIP only becomes highly expressed in the outermost cell, the epidermis ($N_{1}$, representing NIP5;1 in cell 1, is by far the highest variable in the steady flow case). These relative levels are in qualitative agreement with the experimental findings regarding NIP5;1. Moreover, in contrast to this strong expression in the epidermis, in the model NIPs are present at much lower amounts in all the other inner cell files (cell 2, cell 3 and cell 4), again qualitatively similar to the experimental observations. These model results can be understood as follows. Although all in silico cells share the same intrinsic properties, as a consequence of NIPs acting as permeability facilitators rather than directional transporters, it is impossible for the cell file in contact with the medium (cell 1, the outermost cell file, that\u00a0is, epidermal cell) to reach higher concentrations than the level in the medium. Only the next cell inwards, cell 2, is capable of reaching higher levels, due to the directed polar action of the BORs. The inevitable low boron levels in the epidermis give rise to the observed lack of NIP downregulation within the first cell file, and hence to its preferential expression.\n\nThe expression patterns of the active exporters, BORs, are quite different from NIP5;1, but again there are similarities between the model results (B values) and confocal images, with BORs distinctly expressed in the epidermis (cell 1) at the highest levels, in the cortex (cell 2) at high levels, whilst in the endodermis it is relatively weaker (cell 3) (Figure 1B). The model\u2019s qualitative correspondence between the transporter expression patterns and those experimentally observed suggests that concentration-dependent regulation is at least sufficient for such expression patterns to arise. Corroborating this, GUS expression under the NIP5;1 promoter is indeed present in the inner root tissues, albeit the NIP5;1 protein levels in those cells are very low, supporting the notion that these files are likely responsive and capable of expressing NIP5;1, but inhibited to do so by the boron levels that arise due to the cells\u2019 positioning within the tissue (Figure 1\u2014figure supplement 1). However, these results, while suggesting sufficiency of our parsimonious assumptions in relation to observed transporter levels, do not offer evidence that tissue-specific regulation is not occurring. At most, the qualitative matches justify, at first instance, that the model is kept simple, without the need of introducing ad hoc tissue-specific dependencies, when exploring the effects transporter regulation dynamics. Furthermore, these results indicate that under our experimentally observed parameter values, the system presents steady nutrient throughput and constant cellular concentrations and transporter levels over time.\n\n### The spatial nature of the unstable flows: traffic-jam-like behaviour\n\nWe next investigated more carefully the spatial-temporal characteristics of the oscillatory behaviour that arises when transporter swiftness is decreased (Figure 3A). Kymographs make it visually clear that oscillations in the individual cells are in fact spatially coupled, manifested as a boron wave that propagates backwards over the tissue, that\u00a0is, the pulse moves in the direction contrary to the nutrient flow itself. The initiation of the instability, as seen by the first peak in concentration, occurs close to the xylem (i.e., the last cell, here, cell 4), followed by a strong rise in endodermal concentrations (in cell 3) around 90\u2009min later. Due to boron\u2019s inhibitory influence on the transporters, this intracellular rise leads to a decrease in both NIPs and BORs within that cell. This transporter downregulation causes a drop in boron throughput across that cell, leading to an accumulation of boron in the adjacent, outward facing, cell wall. Background permeability rates along the plasma membrane allow this apoplastic rise in concentrations to trigger an increase boron concentrations in the next outermost neighbouring cell, in this case, the cortex cell (cell 2). Cortex concentration levels thus rise, again triggering a shutdown of transporters, causing the same process to ensue in a spatially coupled manner in the outermost cell, the epidermis. In the epidermis, however, boron levels can never rise above the soil concentration levels, as discussed previously, such that the backward travelling wave loses its amplitude and terminates. The overall process is observed to be cyclical, with levels rising again close to the xylem, until a next wave is triggered in the innermost cells\u00a0(Video 2). Moreover, we found that such traffic-jam-like behaviour is robust when smaller differences between $k_{B}$ and $k_{N}$ are considered (Figure 2\u2014figure supplement 1A\u2013C), as\u00a0long as $k_{B}$ is sufficiently large as not to too strongly interrupt boron throughput through the tissue altogether (Figure 2\u2014figure supplement 1D). Obviously, if $k_{B}$ is too low, and traffic-jam-like behaviour are prevented, the plant would also not be able to take up boron, thus, this would be a parameter setting that is biologically irrelevant. Therefore, although our interpretation of the experimental results (Figure 1\u2014figure supplement 2) suggest larger differences between $k_{B}$ and $k_{N}$, given that these are indirect estimates that rely on underlying assumptions, this robustness analysis shows that, within a biologically reasonable window, our results hold even when $k_{B}$ were to be smaller.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013G) Kymographs of boron concentration in NIP-BOR models consisting of four (A) up to ten (G) cells. Boron concentrations in cells and cell walls are represented through a heat map colouring with development over time displayed vertically. Boron concentrations exceeding 3000\u2009\u03bcM are displayed using the same red colour. Regions of high concentration can be observed to displace to the left, contrary to the direction of boron flow due to the transporter activity. Default parameters were used (Table 1), with exception of the transporter regulation swiftness, $\u03f5_{N}$ and $\u03f5_{B}$, which were both set to 0.01. Above each kymograph a schematic diagram of the tissue structure is shown, corresponding to that of Figure 1C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Boron concentrations in the cells and cell walls of a 100-cell NIP-BOR ring model, represented through a heat map colouring and time development shown vertically. The default parameters were used (Table 1), with exception of the transporter regulation swiftness, $\u03f5_{N}$ and $\u03f5_{B}$, which were both set to 0.01.\n\nWe next wondered if this traffic-jam-like effect dissipates over larger tissues. Our four-cell model is a simplified representation of A. thaliana, which has less cell files between the epidermis and the xylem than most other roots of experimental plant models. However, if one distinguishes the pericycle from the vasculature, a five-cell model would be more appropriate. We show that the variables of the five-cell model present similar dynamics as our default model when BOR transporter regulation is lowered to 400\u2009\u03bcM (Figure 4\u2014figure supplement 2A\u2013D). Lowering $k_{B}$ slightly stabilises the dynamics (as shown in Figure 2\u2014figure supplement 1), which counteracts increasing destabilisation of the constant flow regime when the number of cell files in the tissue increases. Conversely, given that this renders smaller tissues (such as our default four-cell model), more robust against traffic-jam-like behaviour, our default setting should be regarded as a worse-case scenario for such dynamics to occur, rather than being a special case. To further appreciate tissue-size dependencies, and explore the generality of these effects for other plants which might have highly deviating cell file numbers, we gradually increased the in silico tissue from 4 to 10 cell files. Figure 3B\u2013G shows that the phenomenon is conserved irrespective of the number of cells between the medium and the convective xylem flux. Larger transversal tissue segments are able to generate higher wave amplitudes, but in all cases the peak in boron propagates contrary to the nutrient flow with approximately the same speed. The same phenomenon was still observed even when the model contained 100 cell files (Figure 3\u2014figure supplement 1), suggesting that large tissues do not prevent these effects from occurring, but rather increase its likelihood.\n\nIn short, when transporter regulation swiftness is sufficiently slow, due to the downregulation of transporters under the control of increased boron concentrations, a traffic jam-like behaviour emerges: a high boron concentration peak appears, correlating with locally lower transport rates, triggering a low-transport high-boron wave that back-propagates from cell to cell in the direction contrary to the transport polarisation direction within the tissue. This occurs independently of the size of the plant tissue under consideration.\n\nWe next studied the importance of the relative dynamics of BOR and NIP regulation to trigger these phenomena, that is, which of the processes have to be sufficiently slow.\n\n### Traffic jam-like behaviour depends on swift regulation of both transporters\n\nUnder what conditions and parameter values for transporter regulation rates does the traffic jam phenomenon manifest itself? In our previous simulations, we simultaneously decreased the swiftness of both the NIP and the BOR regulation. Oscillations in boron concentration then arose due to a change in stability of both the flow and steady state of boron concentrations. We next probed the system\u2019s stability while varying the regulation swiftness of the NIPs and BORs independently. This was done by analysing the equilibrium of the simplified, A. thaliana inspired, four-cell model. We linearised the ODEs around the equilibrium using a Taylor expansion, and then evaluated the stability of the equilibrium in terms of the largest eigenvalue, for 40,000 different parameter combinations. The phase-portrait that emerges (Figure 4A) shows a large region in which the system becomes unstable and oscillations arise (indicated in red), as well as a region in which sufficient regulation swiftness ensures that the system is stable and oscillations do not develop (indicated in blue). For the stable (blue) parameter settings, any perturbation dampens out (Figure 4B), whereas for parameter settings within the red region, oscillations dominate. The frequency of the oscillations is determined by a relative lack of swift regulation for both transporters, as shown by the colour map in Figure 4. This phase diagram is qualitatively unaffected for the five-cell model at $k_{B}=$400\u2009\u03bcM (Figure 4\u2014figure supplement 2F). Furthermore, we also checked if saturation in the activity of the BOR transporter might obstruct or stabilise the system against the appearance of the oscillations. (The NIPs, being a channel, should be less prone to undergo concentration-dependent saturation effects in permeability.) Contrary to this, we found that such a saturation in permeability of the BOR transporter does not change the likelihood or transporter-response dependency to present traffic-jam-like behaviour, but rather, when they arise due to slow dynamics, the oscillations present much higher amplitudes in concentration variations, with peak boron levels becoming more than twice as high due to the transport saturation (Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram showing combinations of transporter regulation swiftness ($\u03f5_{N}$\u2013$\u03f5_{B}$ plane) for the four-cell NIP-BOR model for which stable flows (blue) or oscillations, that\u00a0is, \u2018traffic jams\u2019, (red) ensue. (B) Oscillatory periods of the boron concentration variation. The white curved line represents the boundary between the stable and the unstable region, equivalent to the boundary between the blue and red area in (A). Four insets plot $C_{2}$ [\u03bcM] over time [hour] for the indicated parameter values (white dots), illustrating the behaviour of the model at those points within the $\u03f5_{N}$\u2013$\u03f5_{B}$ plane.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Numerically calculated oscillation period for the four-cell NIP-BOR model, shown on the $\u03f5_{N}$\u2013$\u03f5_{B}$ plane. This figure should be compared to the analytic diagram inferred from the imaginary part of the largest eigenvalue, shown in Figure 4B. Except for $\u03f5_{N}$ and $\u03f5_{B}$, which are varied, default parameters are as given in Table 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013D) Time development in the five-cell NIP-BOR model of the boron concentrations in the cells (A) and cell walls (B), and of the transporter activity of BOR (C) and NIP (D). Default parameter setting (Table 1) was used, except for $k_{B}$, which was set to a lower value of 400\u2009\u03bcM. At the time points 48, 72 and 96 hr, the parameters determining the transporter regulation dynamics ($\u03f5_{N}$ and $\u03f5_{B}$) were each time reduced to one tenth of their previous value. $C_{1}$ to $C_{5}$ represent boron concentration in cell 1 (\u2018epidermis\u2019); cell 2 (\u2018cortex\u2019); cell 3 (\u2018endodermis\u2019); cell 4 (\u2018pericycle\u2019); and cell 5 (\u2018vasculature\u2019), respectively. $W_{i}$ represents the boron concentration in the cell wall fraction between cell $i$ and cell $i+1$ and $N_{i}$ are the transporter activity of BOR and NIP in cell $i$, respectively. (E) Diagram showing combinations of transporter regulation swiftness ($\u03f5_{N}$\u2013$\u03f5_{B}$ plane) for the 5 cell NIP-BOR model for which stable flows (blue) or oscillations, that\u00a0is, \u2018traffic jams\u2019, (red) ensue. (F) Oscillatory periods of the boron concentration variation. The white curved line represents the boundary between the stable and the unstable region, equivalent to the boundary between the blue and red area in (E). Four insets plot $C_{2}$ [\u03bcM] over time [hour] for the indicated parameter value combinations (white dots), illustrating the behaviour of the model at those points within the $\u03f5_{N}$\u2013$\u03f5_{B}$\u00a0plane.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013D) Time development of (A) cellular and (B) cell wall boron concentrations as well as (C) BOR and (D) NIP levels in the 5 cell NIP-BOR model in which we additionally consider the saturation of BOR transporter permeability. We altered the BOR-mediated flux ($J$) as a function of BOR protein levels at the membrane ($B$) and the intracellular boron concentration ($C$), from the standard linear regime, $J_{i}=B_{i}\u2062C_{i}$, into a Michaelis-Menten saturating form given by $J_{i}=B_{i}\u2062\\frac{C_{i}}{1+C_{i}/c_{B}}$, in which $c_{B}$ is the Michaelis constant, the boron concentration at which the flux becomes half as large due to saturation, as well as the concentration at which the flux reaches its half-maximum value. The simulations use the default parameter setting (Table 1), but introduce the above saturation in BOR transport with the Michaelis constant set to $c_{B}=1000$\u2009\u03bcM. The time dynamics of the system\u2019s variables (A\u2013D) show that oscillatory behaviour remains dependent on the transporters\u2019 regulation dynamics swiftness ($\u03f5_{N}$ and $\u03f5_{B}$) in a very comparable fashion, but that the amplitude of the oscillations in these variables becomes much larger than when saturation in BOR permeability is not considered. For further details regarding this figure, see Figure 2.\n\nFrom this combined analysis it becomes apparent that the parameter values we derived to capture wild type dynamics of transporter regulation (i.e., point 1,1) fall into the stable regime. Hence, the wild type system is robust against perturbations and does not present traffic jam-like behaviour. However, independent small reductions from these values in either NIP or BOR regulation rate can cause the tissue to experience oscillations. Not only does the analysis reveal that both transporters are required to present a rapid response, and that this is independent of the BOR-dependent fluxes becoming saturated, but their combined swiftness is synergistic: if one transporter is extremely fast, the other can be bit slower than what is otherwise needed. However, for any parameter setting, a certain speed in responsiveness needs to present to prevent oscillations.\n\n### Physiological implications of flow instabilities for the root system\n\nTraffic jams are commonly experienced by vehicle drivers in urban areas. In terms of human transport, traffic jams are an undesirable outcome as they reduce the throughput through the highway and increase the time to reach the destination. Traffic jams displace backwards in space (contrary to the flow) while giving rise to increased car densities at the specific location of the traffic jam (Kesting and Treiber, 2013). All those properties can also observed in our plant tissue model, namely diminished throughput of boron from the soil to the xylem and backwards propagating pulses of locally increased boron concentrations within cells. Moreover, again analogous to real-life traffic jams, traffic-jam-like behaviour in plant nutrient uptake has undesirable implications in the biological context as well. High intracellular boron is detrimental to plant health as it causes DNA damage and ultimately causes cell death (Sakamoto et al., 2011-09). Plants are therefore likely to have evolved mechanisms to avoid high intracellular boron levels to limit boron-induced damage. Lower throughput across the root implies reduced xylem loading and hence a reduction in the boron absorption efficiency, critical for plant growth at low boron conditions.\n\nTo better quantify the magnitude of these effects, we performed a simulation screen to evaluate the expected physiological impact of the transporter swiftness in the form of increased boron levels within the cells due to the instabilities, as well reduction in throughput (see Materials and methods for details). We observe increasing maximum levels in boron concentration for slower regulation swiftness (Figure 5A), as well as higher fold-changes in boron concentration (Figure 5B). This suggests that sufficiently rapid transport regulation is important to reduce the risk of DNA damage when either considering absolute concentrations or the increase over the basal equilibrium boron concentrations. Moreover, under the conditions in which traffic jams and large-amplitude variations occur, we measured a considerable reduction in total throughput through the tissue (Figure 5C). In our default model we assume the BOR transporter-driven flux to be linear with the cellular boron concentration. If we instead consider Michaelis-Menten saturated BOR transport (using a biologically reasonable Michaelis constant \u2014 the boron concentration at which the flux becomes half as large due to saturation, as well as the concentration at which the flux reaches its half-maximum value \u2014 of $c_{B}=$1000\u2009\u03bcM) the system\u2019s capacity of uptake and throughput only marginally decreases. In stark contrast, the detrimental effects of the instabilities that arise due to slowing down the regulatory dynamics are amplified when BOR saturation is considered (see details of saturation implementation in the caption of Figure 4\u2014figure supplement 3). The impact of the traffic jams becomes much more severe, with peak levels during the concentration fluctuations more than twice as high as the default scenario (compare Figure 2 to Figure 4\u2014figure supplement 3). This is a direct consequence of the cell not being able to effectively efflux boron when intracellular levels spike. Taken all into consideration, we infer that selective pressures operating on the root\u2019s capacity to absorb boron optimally and robustly could result in the system evolving to a regime of rapid regulation of transporters.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig5-v2.jpg)\n\n**Figure 5.:** In the BOR-NIP model with 4 cells, physiological output for the simulation period between 24 and 48\u2009hr was displayed on the $\u03f5_{N}$\u2013$\u03f5_{B}$ plane. (A) Maximum boron concentration in any cell. (B) Maximum amplitude variation in boron concentration for any cell (highest boron concentration/lowest boron concentration). (C) Average throughput, measured as the output from the last cell, which represents the xylem, between 24 and 48\u2009hr of simulation.\n\n### Traffic jam-like behaviour is independent of bottlenecks in the tissue context\n\nOur model thus far consisted of a segment of polarised tissue, of a variable number of cell files, linking the soil to the xylem via a polar flow of nutrients. Consequently, both soil and xylem, although presenting stable characteristics over time, do constitute abrupt boundary conditions: the first sets a constant medium concentration, and the second presents a constant convective flow away from the transversal section. We thus questioned if these boundary conditions are responsible for triggering the traffic jam-like regime that arises under lower rates of transport gene regulation. During the last decades a similar discussion has been taking place regarding what triggers the analogous traffic jams in discrete macroscopic systems such as road networks (Kesting and Treiber, 2013). Although traffic jams are readily triggered by bottlenecks (such as road obstructions, roundabouts, etc.), theoretical models of traffic jam behaviour predicted that the collective systems parameters alone could be sufficient to render the free flow state unstable. It depends on the car density exceeding a critical value as well as how speed relates to the local car density. To prove this theoretical insight, Sugiyama et al., 2008 developed an experiment in which cars were confined to move on a homogeneous circular road. Above a critical car density they observed a transition from a free flow to a traffic jam state, due to the collective effect of the vehicles. They concluded that, although no bottleneck was present, the intrinsic parameters of the system rendered it unstable, such that the smallest of naturally occurring fluctuations was enhanced to disrupt the free flow. This experiment illustrates the non-intuitive notion of traffic jams being generated spontaneously under certain critical parameter regimes.\n\nInspired by this strategy, and for us to be able to rule out that the origin of the nutrient-flow instabilities within the plant tissue is provided by the soil boron concentration or the xylem flow, we constructed an in silico polarised tissue composed of 6 cells, wrapped up into a ring, that\u00a0is, the first cell is connected to the last. The ring structure avoids boundary conditions (i.e., bottlenecks) and offers a scenario in which uninterrupted flows (either stable or unstable) can be studied. We allow the dynamics of the polarised tissue to evolve from an initial situation in which concentrations are homogeneous over the whole ring-tissue. When transporter regulation is as swift as in wild type (Figure 6A), a steady flow with no oscillation in the concentrations is observed. When transporter regulation swiftness is decreased to sufficiently low values as to cause unstable flows (as derived from the analysis shown in Figure 4), oscillations arise. After an initial period in which the flows seem constant, random numerical fluctuations in the simulation bring forth a rise of boron concentration in a random cell, which, due to the mechanism of inhibition by boron of the boron transporters, results in local interruption of flows and the back propagation of the boron concentration pulse (Figure 6C,D, Video 1). The frequency of these oscillations is decreased, and the wave broadened, as the regulation speed is decreased (Figure 6C,D). These simulations demonstrate that the unstable flow regime \u2014 which we now can conclusively eliminate as being triggered by boundary conditions \u2014 continuously self-propagates.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig6-v2.jpg)\n\n**Figure 6.:** Kymographs of the boron concentration in the cells and cell walls of the six-cell NIP-BOR ring model, represented by heat map colours and time development shown progressing vertically. The default parameters were used (Table 1), with $\u03f5_{N}$ and $\u03f5_{B}$ varied as specified for each kymograph.\n\n![Video 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-video1.mp4.jpg)\n\n**Video 1.:** Time is indicated above the simulation, and dynamics show an initially constant flow, with low boron concentrations in all cells. Due to the intrinsic instability of the system, minute numerical noise generates boron peaks in the cells, a pattern which propagates counterclockwise (i.e., against the flow) through the tissue. Cytosolic boron concentrations, as well as those in the cell walls between cells, are depicted through the colour bar shown in the movie. Transporter levels (of both BORs and NIPs) are characterised through the colour changes along the radial membranes, again depicted through the colour bars shown in the movie.\n\n### Mechanisms underlying rapid regulation\n\nOur model analysis highlights the requirement for rapid regulation of both BOR1 and NIP5;1 transporters to stabilise boron flux through root cells and minimise risks associated with transient high levels of boron in cells, both considered to be important constraints for the plant. Current experimental evidence shows rapid downregulation of the BOR1 protein (Takano et al., 2005; Takano et al., 2010), and NIP5;1 transcript (Tanaka et al., 2011; Tanaka et al., 2016), although the fine details regarding the molecular mechanisms remain to be elucidated. The modelling however predicts permanently fast regulation, not only when boron levels drop, but also when they remain constant. This is however difficult to prove with techniques that we have used previously.\n\nTo experimentally explore the regulatory swiftness of the bidirectional transporter NIP5;1 at the transcript level, we used single molecule RNA FISH (smFISH). In this method\u00a0~40 complementary fluorescently labeled oligonucleotide probes are used to visualise RNA at the cellular level (Raj and Tyagi, 2010; Duncan et al., 2017). Initially, we combined probe sets to detect mRNA for both NIP5;1 and the housekeeping gene PP2A (specifically A3 scaffolding subunit of PP2A, At1g13320) and compared abundance and cellular distribution (Figure 7A) (Czechowski et al., 2005; Duncan et al., 2016). Consistent with published smFISH experiments, PP2A mRNA appeared evenly diffused throughout all cells (Figure 7B) (Duncan et al., 2016). In contrast, we observed many nuclear accumulations of NIP5;1 RNA that were accompanied by few cytoplasmic mRNA copies (125 nuclear accumulations in 149 cells) (Figure 7B). Large nuclear smFISH RNA signals have been reported for highly transcribed genes. They are typically accompanied by many copies of cytoplasmic mRNA and considered to represent bursts of transcription, where multiple Pol II associate with a locus (Battich et al., 2015; Duncan et al., 2016).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of probes used to detect NIP5;1 intron 1 (red), NIP5;1 exonic (green) and PP2A exonic (red) RNA. (B) Representative images of cells showing NIP5;1 (green) and PP2A (red) exonic RNA distributions. (C) Representative images showing co localisation of exons (green) and intron 1 (red) regions from NIP5;1 nascent transcripts. DNA labelled with DAPI (blue). Scale bar: 10\u00a0\u03bcm in (B) and 1\u2009\u03bcm\u00a0in (C).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Mature mRNA and pre-mRNA abundance was separately quantified by qRT-PCR, with probes specific to mature mRNA (probe 1 and 5 for NIP5;1; 1 and 3 for PP2A) or pre-mRNA (probe 2 and 3). (A) Probe design for mature- and pre-mRNA specific qRT-PCR. Arrowheads indicate positions and directions of each probe. Probe 4 and 5 were used for normalising concentrations of standard DNA fragments. For details, see Materials and methods and Table 3. (B) Ratio of abundance of mature mRNA/pre-mRNA abundance for NIP5;1 and PP2A. Asterisk indicates significant difference at p<0.05 using Welch\u2019s t-test.\n\nArabidopsis genes that contain introns must undergo pre-mRNA splicing before mature transcripts are translated (Morello and Breviario, 2008-06). Co-transcriptional splicing is common for plant genes and this ensures that introns are removed from the pre-mRNA and rapidly degraded close to the site of transcription (Reddy et al., 2013-10). This system allows intronic smFISH RNA labelling to be used as an effective method to identify loci actively engaged in transcription (Levesque and Raj, 2013; Duncan et al., 2016; Rosa et al., 2016). We used this approach to further investigate NIP5;1 transcription and found 72% of cells with at least one NIP5;1 intron signal. As expected, this was lower than the 84% previously reported for the more highly expressed gene PP2A (Duncan et al., 2016). When we combined NIP5;1 exonic and intronic RNA smFISH probe sets we observed 92.5% of nuclear accumulations co-localised with intron signals ($n=111$) (Figure 7C). This is consistent with the nuclear accumulations representing sites of ongoing RNA production and degradation, rather than separate nuclear storage compartments.\n\nThe suggested rapid degradation of NIP5;1 mRNA after transcription was further supported by an independent approach, in which we performed qRT-PCR using probes specific to pre- or mature mRNA to measure mature mRNA/pre-mRNA ratio in root cells. The average mature mRNA/pre-mRNA ratio of NIP5;1 was less than 25% of that of PP2A (Figure 7\u2014figure supplement 1). In accordance with our interpretation of the smFISH results, this again indicates a high degradation rate of NIP5;1 mRNA.\n\nIn light of our model predictions, these observations combined point to a highly dynamic sensing system where RNA is turned over at or near the site of transcription, to limit NIP5;1 levels when boron is above a threshold level. We recently demonstrated that NIP5;1 transcript degradation occurs through ribosome stalling, triggering degradation in the cytoplasm (Tanaka et al., 2016). We also identified an upstream sequence that promotes mRNA degradation, but does not trigger ribosome stalling. The data presented in Figure 7 provides evidence of mRNA degradation occurring close to the site of transcription. Together these results\u00a0suggest that mRNA degradation could occur through two coordinated B-dependent processes; one where cytoplasmic degradation is triggered by ribosome stalling and another localised in the nucleus where RNA is turned over at the site of transcription. Relief of this repression could then ensure rapid boron uptake when required. Our model suggests that such a dynamic mRNA production/decay process could support the necessary swift boron-mediated transporter regulation critical for the evolution of controlled, stable boric acid flows through polarised tissue.\n\nThese results also support the notion of a constant turnover (both producing and breakdown the RNA) occurring for regulating NIP5;1 transcript levels. We propose that this \u2018wasteful\u2019 process can now be understood in light of constraints of stable flows through polarised tissue. Interestingly, the regulation of the transporters is of a different nature, one predominantly on the level of protein degradation (BOR1), the other occurring on the level of transcript accumulation (NIP5;1).\n\n### Conclusion\n\nWe conclude that the experimentally observed swiftness of boron transporters\u2019 boron-mediated downregulation can be understood as a necessary mechanism to maintain optimal constant xylem loading rates over time, while also avoiding DNA damage due to oscillations within cells. One could argue that without a substrate-mediated downregulation of the transporters there would not be the need to avoid traffic jam-like behaviour through swift regulatory dynamics in the first place. However, were the system not to present the regulation, the plant would be unable to shield itself from toxic soil boron levels (Figure 8A) and be much less efficient in growing at low soil boron levels (Figure 8B). Thus, some kind of inhibitory regulation necessarily has to be present, to ensure plant plasticity under different environmental conditions. As a consequence, the speed of the transporter downregulation needs to be sufficiently high. We showed that this is an intrinsic requirement, simply because boron transporters are polarly located: The requirement itself does not depend on external boron fluctuations in the medium, number of cell files composing the root tissue, possible saturable activity of the transporter itself nor the magnitude, location or strength of the xylem flow.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/27038/elife-27038-fig8-v2.jpg)\n\n**Figure 8.:** (A) Maximum boron concentration; and (B) throughput, for the four-cell NIP-BOR model, plotted for varying boron concentrations in the medium. The default parameters are used (Table 1). When transporter regulation is not considered, NIP and BOR activity were fixed to their unregulated equilibrium value in the wild type model, namely $\\frac{\\alpha_{N}}{\u03be_{N}}$ and $\\frac{\\alpha_{B}}{\u03be_{B}}$.\n\nOur study has been based on the well-characterised system of directed boron transport, owing to the richness in quantitative experimental measurements regarding BOR and NIP regulation. However, the implications of our derived insights apply to any system in which the dynamics of polar transport of a given substance relies on an inhibitory feedback between the concentration of that substance and its local transport rate. For example, the phosphate and iron transport systems present both polar transporters as well as substrate-dependent regulation, serving as candidates for such phenomena and dynamical constraint avoidance. In the case of the phosphate transport system, transporters localised to the outer side of the epidermis are responsible for uptake (LePT1 and LePT2, Liu et al., 1998), and they have recently been found to carry a domain possibly involved in phosphate sensing which leads to rapid degradation of phosphate transporter in a phosphate-dependent manner (Gu et al., 2016). Similar regulation is also reported for the iron (Fe) transport system, where polar accumulation of IRT1, a major Fe transporter for Fe uptake into roots, is regulated in an Fe-dependent manner (Barberon et al., 2014). Even other transport systems which do not shuttle nutrients might display this sort of instability, such as polar auxin transport, for which stable flows might also require fast response dynamics regarding the activity of auxin importers and efflux facilitators (Robert and Friml, 2009). Indeed, for any polarised tissue in which adaptive regulation of transport levels is necessary we can expect to find intrinsic temporal constraints operating to ensure that steady state flows are maintained and large fluctuations avoided.\n\nIn molecular terms, we discovered that although both transporters are predicted to work synergistically and are both required to be effectively similar in regard to rapid regulation, their regulations are biologically encoded in unique ways. We here experimentally focused on the regulatory swiftness of the bidirectional transporter NIP5;1, and found strong evidence that it constitutes a system in which production is maintained high but degradation is rapidly controlled transcriptionally, allowing for the necessarily rapid boron-dependent response. It will be interesting to speculate what underlying reason, if any, has caused the directed exporter, BOR1, which is similarly known and required to be swiftly regulated, to be controlled on a biologically distinct level.\n\nFor this work, the analogy with motorway traffic jams was helpful to build an understanding of principles of polarised transport dynamics, albeit both systems obviously deviate in important aspects. Boron concentrations are continuous and can reach arbitrarily high levels, as opposed to (incompressible) cars. Yet, the discrete nature of cells and their regulated polar transporters, combined with the boron-dependent inhibition of the transporters themselves, resembles cars slowing down in response to busy regions along the motorway. Moreover, in both systems highly sensitive responses can prevent jamming (Sugiyama et al., 2008). We therefore propose that the notion of traffic jams can be universally instructive and helpful for biologists considering physiology and regulated growth through polarised transport in plants, as well as for future efforts to enhance plant growth under diverse environmental conditions.\n\n## materials and methods\n\n### Observation of protein localisation of boron transporters\n\nFor plant culture, MGRL medium was used (Fujiwara et al., 1992) supplemented with 1% sucrose and solidified with 1.5% gellan gum. For Figure 1, A. thaliana\u00a0transgenic lines carrying BOR1-GFP (Kasai et al., 2011) and GFP-NIP5;1 #8 (Tanaka et al., 2011) were germinated and pre-incubated for 5 days on normal MGRL medium plate, and then grown for 2 days on MGRL plates with 0.3\u2009\u03bcM boric acid. For Figure 1\u2014figure supplement 2, plants were grown for seven days on MGRL medium with the indicated boric acid concentrations. Images were captured with a confocal microscope (FV1000, Olympus, Japan). GFP fluorescence was observed with 473\u2009nm excitation and 510\u2009nm emission. Cell wall was stained with 10\u2009\u03bcg/mL propidium iodide aqueous solution for 3 min, and observed with 559\u2009nm excitation and 619\u2009nm emission.\n\nNIP5;1 promoter activity was observed using a transgenic A. thaliana strain carrying NIP5;1 promoter-GUS (strain \u22122,180$\u0394$UTR312 #8 in Tanaka et al., 2011). Seedlings were germinated and cultured on MGRL medium plate. Four-day-old seedlings were stained with GUS staining solution: 100\u2009mM Na$_{2}$HPO$_{4}$ (pH 7.0), 0.1% Triton X-100, 2\u2009mM K$_{4}$Fe(CN)$_{6}$, 2\u2009mM K$_{3}$Fe(CN)$_{6}$, 0.5\u2009mg/mL X-Gluc (5-bromo-4-chloro-3-indolyl $\\beta$-D-glucuronide cyclohexylammonium Salt, Glycosynth, UK) in a decompressed desiccator for 20\u2009min at room temperature. After rinsed with phosphate buffer (pH 7.0), stained seedlings were mounted in 45\u00b0C molten 5% agar (gelling temperature 30\u201331\u00b0C, Nacalai, Japan) aqueous solution and solidified at 4\u00b0C for 3\u2009hr. The samples were trimmed into blocks and sliced with a vibrating microtome with thickness of 100\u2009\u03bcm. The sliced sections were observed with microscope.\n\n### Model parameter choices\n\nAlthough we have constructed our model as parsimonious as possible to qualitatively explore what kind of behaviours could emerge from a polarised tissue with transporter regulation, our model requires a few important parameters to be set. We have sought to explore the possible dynamics of our system while staying well within the expected limits of what is experimentally considered plausible in terms of the boron transport system. Below we give a brief description of the data our parameter choices were based on, and, when possible, how reasonable ranges could be established.\n\nThe plasmamembrane boron permeability rate ($p$) is set to a maximum rate of 8\u00b710-2\u2009s$^{-1}$ and a minimum rate of 4.4\u00b710-3\u2009s$^{-1}$, based on the estimation of boric acid membrane permeability by Raven, 1980 and on more recent experimental measurements performed on internodal cells of the charophyte alga Chara corallina (Stangoulis et al., 2001). Note that the plasmamembrane\u2019s permeability rate for boric acid is relatively high compared to other nutrient elements, due to boric acid existing in a non-charged form under physiological pH.\n\nThe degradation rates $\u03be_{B}$, $\u03be_{N}$ represent the effective decay rate of the actual transporter activity, not just of the transporter protein. This includes processes such as its removal from the membrane, its inactivation due to usage, etc. As it amalgamates a range of inactivation/degradation processes, we set it higher than typical protein degradation rates, but lower than typical membrane residence times, using a half life of 9\u2009s. The valid ranges for the production rate of the transporter activities, $\\alpha_{B}$ and $\\alpha_{N}$, were derived from the degradation rates $\u03be_{B}$, $\u03be_{N}$, combined with qualitative conditions for the transporter equilibrium levels. It is as yet not possible to obtain these values directly through experiments, as several intermediate steps are involved. Instead we impose that the transporter activity steady state level does not exceed the plasmamembrane\u2019s permeability by a thousand fold:\n\n$$\np<B^{*},N^{*}<1000\u2062p.\n$$\n\nCombining these conditions we could then extract the valid ranges for $\\alpha_{B}$ and $\\alpha_{N}$. As explained in the main text, we take $k_{B}\u224330k_{N}$, based on our observations of the sensitivity of BOR and NIP5;1 expression under different boron concentrations (Figure 1\u2014figure supplement 2), further corroborated by earlier data on NIP5;1, as displayed in Figure 1B in Tanaka et al., 2011.\u00a0We also ran simulations to show robustness of the observed behaviours for smaller variations between $k_{B}$ and $k_{N}$ by assuming lower values of $k_{B}$ (Figure 2\u2014figure supplement 1, Figure 4\u2014figure supplement 2). The parameter $d_{B}$ determines the maximum fold increase in BOR degradation at very high intracellular boron concentrations. It was set to a 50-fold increase, based on rough assessments of experiments in which plants were transferred to high boron conditions, with the caveat that assessment of the temporal change in functional, membrane-located BOR as a function of the intracellular boron concentration is very challenging. Typical cell sizes (height, $h\u2062c$; width, $l\u2062c$) and cell wall width ($l\u2062w$) were estimated from confocal microscope images of A. thaliana roots. The xylem loading rate $a$ was calculated as follows: Hosy et al., 2003 reported that in mature Arabidopsis the rate of transpiration is 0.1\u2009g water/g FW tissue/hour at 70% humidity under daytime conditions. Given an Arabidopsis FW at 18 days of around 0.2\u2009g/plant, transpiration is 20\u2009mg/hour/plant, or roughly 5\u00b7106\u2009\u03bcm3/s. Considering a stem xylem cross-sectional surface area being roughly 107\u2009\u03bcm2, the convective velocity $a$ should therefore be around 5\u00b7106\u2009\u03bcm3/s\u2009/\u2009107\u2009\u03bcm2\u00a0=\u00a00.5\u2009\u03bcm/s.\n\n### Numerical analysis\n\nNumerical and analytical calculations were computed using Wolfram Mathematica 10.2. To calculate time development of the model, ODEs were solved numerically using the NDSolve[] function, setting the initial conditions for each variable to zero. The parameters used in the models are shown in Table 1. The solutions of the ODEs were visualised as a line plot or kymograph, using the Plot[] or ListDensityPlot[] functions.\n\n**Table 1.**\n Model Parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">Parameter</th>\n      <th rowspan=\"2\">Unit</th>\n      <th rowspan=\"2\">Description</th>\n      <th colspan=\"2\">Acceptable range</th>\n      <th rowspan=\"2\">Default</th>\n    </tr>\n    <tr>\n      <th>Max.</th>\n      <th>Min.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">BOR</td>\n      <td>\u03f5B</td>\n      <td>-</td>\n      <td>Time constant for transporter regulation</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>\u03b1B</td>\n      <td>\u03bcm\u2009s-2</td>\n      <td>Production rate of transporter activity</td>\n      <td>4.9\u00d7102</td>\n      <td>3.7\u00d710-9</td>\n      <td>2.0\u00d710-1</td>\n    </tr>\n    <tr>\n      <td>\u03beB</td>\n      <td>s-1</td>\n      <td>Basal degradation rate</td>\n      <td></td>\n      <td>1.6\u00d710-6</td>\n      <td>7.6\u00d710-2</td>\n    </tr>\n    <tr>\n      <td>kB</td>\n      <td>\u03bcM</td>\n      <td>Boron concentration for half-maximum in Hill\u2019s function</td>\n      <td>1000</td>\n      <td>1</td>\n      <td>600</td>\n    </tr>\n    <tr>\n      <td>dB</td>\n      <td>-</td>\n      <td>Amplitude of increased degradation rate by boron</td>\n      <td>100</td>\n      <td>0</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>nB</td>\n      <td>-</td>\n      <td>Hill\u2019s coefficient</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>cB</td>\n      <td>\u03bcM</td>\n      <td>Boron concentration at which the flux reaches its half-maximum value</td>\n      <td>\u221e</td>\n      <td>500</td>\n      <td>1000</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">NIP</td>\n      <td>\u03f5N</td>\n      <td>-</td>\n      <td>Time constant for transporter regulation</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>\u03b1N</td>\n      <td>\u03bcm\u2009s-2</td>\n      <td>Production rate of transporter activity</td>\n      <td>4.9\u00d7102</td>\n      <td>3.7\u00d710-9</td>\n      <td>2.0\u00d710-1</td>\n    </tr>\n    <tr>\n      <td>\u03beN</td>\n      <td>s-1</td>\n      <td>Basal degradation rate</td>\n      <td></td>\n      <td>1.6\u00d710-6</td>\n      <td>7.6\u00d710-2</td>\n    </tr>\n    <tr>\n      <td>kN</td>\n      <td>\u03bcM</td>\n      <td>Boron concentration for half-maximum in Hill\u2019s function</td>\n      <td>1000</td>\n      <td>1</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>nN</td>\n      <td>-</td>\n      <td>Hill\u2019s coefficient</td>\n      <td>-</td>\n      <td>-</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Cell size</td>\n      <td>l\u2062c</td>\n      <td>\u03bcm</td>\n      <td>Cell width</td>\n      <td>20</td>\n      <td>5</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>l\u2062w</td>\n      <td>\u03bcm</td>\n      <td>Cell wall width</td>\n      <td>2</td>\n      <td>0.2</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>h\u2062c</td>\n      <td>\u03bcm</td>\n      <td>Cell height</td>\n      <td>150</td>\n      <td>5</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Other</td>\n      <td>p</td>\n      <td>\u03bcm\u2009s-1</td>\n      <td>Membrane background permeability of boron</td>\n      <td>8\u00d710-2</td>\n      <td>2.3\u00d710-3</td>\n      <td>3\u00d710-2</td>\n    </tr>\n    <tr>\n      <td>a</td>\n      <td>\u03bcm\u2009s-1</td>\n      <td>Xylem loading rate (in the last cell)</td>\n      <td>500</td>\n      <td>0</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>c0</td>\n      <td>\u03bcm</td>\n      <td>Boron concentration in medium</td>\n      <td>5000</td>\n      <td>0</td>\n      <td>300</td>\n    </tr>\n  </tbody>\n</table>\n\nTo evaluate the physiological impact (maximum concentration and amplitude of cytosolic boron, and throughput towards shoots) of transporter regulation swiftness, numerical simulations were repeated for combinations of $\u03f5_{B}$ and $\u03f5_{N}$, which were independently varied between 0.01 and 2, at intervals of 0.01. For each simulation, minimum and maximum boron concentration for each cell and average throughput through the cell row between 24 to 48\u2009h simulation time were recorded using the \u2018EventLocator\u2019 method of the NDSolve[] function.\n\nFor the ring model, the boundary conditions in the original model were removed by connecting the last cell in the tissue-segment to the first one. This was done by using a tissue composed of six cells and then introducing a cell wall between cell 6 and cell 1. The boron concentration in the novel cell wall is referred to as $W_{6-1}$. This generates a six-cell ring model. Because within a ring-model the total amount of boron is conserved, introducing an additional ODE for this cell wall component effectively means an overdetermination of variables, causing numerical issues. Hence the value of the new variable was instead defined as follows:\n\n$$\nW_{6-1}=(B_{t\u2062o\u2062t\u2062a\u2062l}-l\u2062c\u2062h\u2062c\u2062\\sumi=16C_{i}-l\u2062w\u2062h\u2062c\u2062\\sumi=15W_{i})\u2062\\frac{1}{l\u2062w\u2062h\u2062c},\n$$\n\nwhere $B_{t\u2062o\u2062t\u2062a\u2062l}$ is the total amount of boron in the whole system, which is constant over time as there is no input into nor outflow from the system. The initial boron concentration of all cells and cell walls in the simulation were set to 300\u2009\u03bcM, and $B_{t\u2062o\u2062t\u2062a\u2062l}$ was determined accordingly.\n\nThe local stability analysis was performed as follows: First, all possible equilibria for the set of ODEs were found using the NSolve[] function. Next, analytical descriptions of the Jacobian matrix of the ODEs around the equilibria were derived using the D[] function. Finally, the stability of the system for varying values of $\u03f5_{B}$ and $\u03f5_{N}$ was determined according to the signs of the eigenvalues of the Jacobian matrix. (Please note that changing $\u03f5_{B}$ and/or $\u03f5_{N}$ does not change the number of equilibria or their value, only their stability can change.) The system is stable when the real parts of all the eigenvalues are negative, and unstable in any other case. The imaginary part of the largest eigenvalues was then used to estimate the oscillatory period in the unstable region, based on the following conversion:\n\n$$\nO\u2062s\u2062c\u2062i\u2062l\u2062l\u2062a\u2062t\u2062o\u2062r\u2062y\u2062p\u2062e\u2062r\u2062i\u2062o\u2062d=\\frac{2\u2062\\pi}{\\lambda_{i\u2062m}}.\n$$\n\nTo compare the predicted oscillatory period close to the unstable equilibrium with the actual oscillatory period of the system, the oscillatory period was also calculated numerically (Figure 4\u2014figure supplement 1). For certain parameters individual variables can present rather complicated patterns, for example temporarily maximum values, followed by a slight decrease and then further rise before decreasing again. We therefore used the following algorithm to determine the oscillatory period: The ODEs were numerically solved using the NDSolve[] function. The \u2018EventLocator\u2019 method was then used to collect all extrema for three variables, $C_{2}$, $C_{3}$ and $N_{2}$, for the period between 24 and 72 hr. Using the first set of extrema as a reference point, the second and potentially later sets of extrema were then compared against the first set. The first case for which all differences were within \u00b10.1% for all three variables was then labeled as being identical to the reference point, and the corresponding time interval reported as the oscillatory period.\n\n### smFISH probe design\n\nThe probes were designed using the online program Stellaris\u2122 Probe Designer version 2.0 and ordered from LGC Biosearch Technologies (Petaluma, CA). For probe sequences see Table 2.\n\n**Table 2.**\n Probes used in the smFISH experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>NIP5;1 exon probes</th>\n      <th>NIP5;1 intron 1 probes</th>\n      <th>PP2A mRNA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>acgaaaatggagctaggact</td>\n      <td>gtagtcgattttcttacggt</td>\n      <td>ccgagcgatctatcaatcag</td>\n    </tr>\n    <tr>\n      <td>cggtttcaccaaacacaagt</td>\n      <td>attactagcacaaaccactt</td>\n      <td>gacatcctcaccaaaactca</td>\n    </tr>\n    <tr>\n      <td>gtgttttaaacttcgccagt</td>\n      <td>cggatggtgacgaatgagta</td>\n      <td>tcgggtataaaggctcatca</td>\n    </tr>\n    <tr>\n      <td>tggaggagccatcaccatta</td>\n      <td>atgcaatatgcggttatgga</td>\n      <td>tagctcgtcgataagcacag</td>\n    </tr>\n    <tr>\n      <td>cattgaatccactctcatcc</td>\n      <td>tctattgttaggtttactga</td>\n      <td>ccaagagcacgagcaatgat</td>\n    </tr>\n    <tr>\n      <td>gttggtttccgatgatcaaa</td>\n      <td>ggttcctagccagaaatttt</td>\n      <td>atcaactcttttcttgtcct</td>\n    </tr>\n    <tr>\n      <td>cggcaagcatttgcatcgag</td>\n      <td>tgtaatttttaggcttacgt</td>\n      <td>catcgtcattgttctcacta</td>\n    </tr>\n    <tr>\n      <td>atgttgaccccaagttgatc</td>\n      <td>ctttgtaaggttataacgct</td>\n      <td>atagccaaaagcacctcatc</td>\n    </tr>\n    <tr>\n      <td>gagggaaaatcggtgaagca</td>\n      <td>aacgagccattggatttctt</td>\n      <td>atacagaataaaacccccca</td>\n    </tr>\n    <tr>\n      <td>ttgcgagtgagggagacatc</td>\n      <td>cgtggattccaatgttttct</td>\n      <td>caagtttcctcaacagtgga</td>\n    </tr>\n    <tr>\n      <td>tgaatgttcccacgaactcg</td>\n      <td>ttcccaattcattattttcc</td>\n      <td>tcatctgagcaccaattcta</td>\n    </tr>\n    <tr>\n      <td>gctgtcgcggtgaatatcaa</td>\n      <td>tgtctcgatctcattttttt</td>\n      <td>tagccagaggagtgaaatgc</td>\n    </tr>\n    <tr>\n      <td>catcgtatttctggttcacg</td>\n      <td>ccctatagtacatctatatt</td>\n      <td>cattcaccagctgaaagtcg</td>\n    </tr>\n    <tr>\n      <td>gttaccgattagggtttctg</td>\n      <td>attacgatcgatttgtgagt</td>\n      <td>ggaaaatcccacatgctgat</td>\n    </tr>\n    <tr>\n      <td>tatgatcatcactgcgagtc</td>\n      <td>ttctctgtatttcagagctt</td>\n      <td>atattgatcttagctccgtc</td>\n    </tr>\n    <tr>\n      <td>cctgagatatgacctgttga</td>\n      <td>agtattatcttttggtcact</td>\n      <td>attggcatgtcatcttgaca</td>\n    </tr>\n    <tr>\n      <td>cagtgatgggtttaggtgag</td>\n      <td>ccctatgatctttttcaata</td>\n      <td>aaattagttgctgcagctct</td>\n    </tr>\n    <tr>\n      <td>cttagagcagcgaatgctat</td>\n      <td>ctcctccaagtgtgacgtaa</td>\n      <td>gctgattcaattgtagcagc</td>\n    </tr>\n    <tr>\n      <td>tatgtaagcagggacgtgtg</td>\n      <td>ctagttcatgtcgtgttaaa</td>\n      <td>ccgaatcttgatcatcttgc</td>\n    </tr>\n    <tr>\n      <td>gcgcaaatggaagctgagac</td>\n      <td>atttaattctcggttgcgac</td>\n      <td>caaccctcaacagccaataa</td>\n    </tr>\n    <tr>\n      <td>gaacactcctttaagtgcga</td>\n      <td>ttcactctctttctatttgc</td>\n      <td>ctccaacaatttcccaagag</td>\n    </tr>\n    <tr>\n      <td>caccaccggacataaaagga</td>\n      <td>ctcttagtttttcttagact</td>\n      <td>caaccatataacgcacacgc</td>\n    </tr>\n    <tr>\n      <td>tccaaggctaacagatggaa</td>\n      <td>taagttgagatcgagtgggc</td>\n      <td>agtagacgagcatatgcagg</td>\n    </tr>\n    <tr>\n      <td>tgaactcaagagcaaaggct</td>\n      <td>gagtcggtgtccattgaata</td>\n      <td>gaacttctgcctcattatca</td>\n    </tr>\n    <tr>\n      <td>cggcagttacaacaaagagg</td>\n      <td>actattagctcattgtcaca</td>\n      <td>cacagggaagaatgtgctgg</td>\n    </tr>\n    <tr>\n      <td>aacggcacgagtgtcggtag</td>\n      <td>atttacgcaacttgcgtgtt</td>\n      <td>tgacgtgctgagaagagtct</td>\n    </tr>\n    <tr>\n      <td>aacggctatacctgccaatt</td>\n      <td>agcgtgaccgttttattttt</td>\n      <td>cccattataactgatgccaa</td>\n    </tr>\n    <tr>\n      <td>aatattgagcatgaccgtgg</td>\n      <td>actttgtattcgtcattgca</td>\n      <td>tggttcacttggtcaagttt</td>\n    </tr>\n    <tr>\n      <td>atagatccaccagtcgatgg</td>\n      <td>gacctaaccaaaccatacgt</td>\n      <td>tctacaatggctggcagtaa</td>\n    </tr>\n    <tr>\n      <td>tcctagagttctcacaggat</td>\n      <td>gcttccgtcatggacagaaa</td>\n      <td>cgattatagccagacgtact</td>\n    </tr>\n    <tr>\n      <td>atagtttcctgatgcaacgg</td>\n      <td>ctaaaagaatcccatccggt</td>\n      <td>gactggccaacaagggaata</td>\n    </tr>\n    <tr>\n      <td>ccagatacacccatagtgac</td>\n      <td>aaaggacaagagccgtggat</td>\n      <td>catcaaagaagcctacacct</td>\n    </tr>\n    <tr>\n      <td>cagatatggcaccaagtgta</td>\n      <td>tccacgttaacgagcatcaa</td>\n      <td>ttgcatgcaaagagcaccaa</td>\n    </tr>\n    <tr>\n      <td>ttaacacctgtgtagaccgc</td>\n      <td>gcgtgtgatctgtctatatc</td>\n      <td>acggattgagtgaaccttgt</td>\n    </tr>\n    <tr>\n      <td>gtcagtcacgctatcgttaa</td>\n      <td>tacagtcaacggttagtatt</td>\n      <td>cttcagattgtttgcagcag</td>\n    </tr>\n    <tr>\n      <td>aaagctcctaaccggacgag</td>\n      <td>gtcattagtagttactagtt</td>\n      <td>ggaccaaactcttcagcaag</td>\n    </tr>\n    <tr>\n      <td>gtctctcactcacttaacga</td>\n      <td>agtattatttctgctgtcca</td>\n      <td>ggaactatatgctgcattgc</td>\n    </tr>\n    <tr>\n      <td>tccaaagctttttcatatca</td>\n      <td>ctagagggttctgagtcgaa</td>\n      <td>gtgggttgttaatcatctct</td>\n    </tr>\n    <tr>\n      <td>gccttttattcttcacacaa</td>\n      <td>gagatgtttcttgtctaaca</td>\n      <td>tgcacgaagaatcgtcatcc</td>\n    </tr>\n    <tr>\n      <td>tgcgtggacttatagtcaca</td>\n      <td>gtactagatgaatagaggct</td>\n      <td>ttactggagcgagaagcgat</td>\n    </tr>\n    <tr>\n      <td>aggtttatatagaccgatgc</td>\n      <td></td>\n      <td>gaacatgtgatctcggatcc</td>\n    </tr>\n    <tr>\n      <td>aatgacgagacaagttcgca</td>\n      <td></td>\n      <td>ctctgtctttagatgcagtt</td>\n    </tr>\n    <tr>\n      <td>agaaacccaaaccacacata</td>\n      <td></td>\n      <td>catcattttggccacgttaa</td>\n    </tr>\n    <tr>\n      <td>ataaaaacagcctcgtctcc</td>\n      <td></td>\n      <td>cgtatcatgttctccacaac</td>\n    </tr>\n    <tr>\n      <td>acacatgccatagattttat</td>\n      <td></td>\n      <td>atcaacatctgggtcttcac</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>ttggagagcttgatttgcga</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>acacaattcgttgctgtctt</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>cgcccaacgaacaaatcaca</td>\n    </tr>\n  </tbody>\n</table>\n\n### Observation of NIP5;1 RNA\n\nCol-0 seeds were stratified for 2\u2009d at 4\u00b0C and then germinated and grown under 16/8\u2009hr light conditions at 20\u00b0C on MGRL plates (30\u03bcM boric acid). smFISH was carried out on seedlings as described by Duncan et al., 2017. Briefly, 5d old seedlings were fixed for 30\u2009min in 4% paraformaldehyde. Root squash samples were prepared on slides. Tissue permeabilisation was achieved by immersing the samples in 70% ethanol for a minimum of one hour. Two washes were carried out with wash buffer (10% formamide and 2x SSC). 100\u2009mL\u00a0of hybridisation solution (0.3\u2009M\u00a0Sodium chloride and 30\u2009mM\u00a0tri-Sodium citrate dihydrate, referred to as \u20192x SSC\u2019, 10% dextran sulfate and 10% formamide) containing probes (final concentration 25\u2009nM) was then left to hybridise at 37\u00b0C in the dark overnight. Each sample was washed twice with wash buffer following hybridisation buffer removal with the second wash left to incubate for 30\u2009min at 37\u00b0C. Each slide was then incubated with 100mL\u00a04\u2019 6-diamidino-2-phenylindole dihydrochloride (DAPI, Sigma, St. Luis, MO) (100\u2009ng/mL) at 37\u00b0C for 30\u2009min. The DAPI solution was removed before 100\u2009\u03bcL\u00a02x SSC was added and then removed. Samples were then incubated for 2\u2009min at room temperature with 100 \u03bcL\u00a0GLOX buffer (0.4% glucose in 10\u2009mM Tris, 2x SSC) before being mounted in 100\u2009\u03bcLof GLOX buffer containing 1\u2009\u03bcL\u00a0of glucose oxidase (#G0543, Sigma) and 1 \u03bcL\u00a0catalase (Sigma) under 22\u2009mm x 22\u2009mm No.\u20091 coverslips (Slaughter, Uppminster, UK) and sealed by nail varnish. A Zeiss Elyra PS1 inverted microscope was used for imaging. A x100 oil-immersion objective (1.46\u2009NA) and cooled EM-CCD Andor iXon 897 camera (512$\\times$512 QE>90%) were used to obtain all images. (Quasar\u00ae570 probes: excitation by 561\u2009nm laser, signals detected between 570\u2013640\u2009nm. Quasar\u00ae670 probes: excitation by 642\u2009nm laser, signals detected between 655\u2013710\u2009nm. DAPI: excitation by 405\u2009nm laser, signals detected between 420\u2013480\u2009nm.) For all experiments a series of optical sections were set up with z-steps of 0.2\u2009\u03bcm. All smFISH images were de convolved with Huygens Professional version 16.05 (Scientific Volume Imaging, the Netherlands, http://svi.nl) using the QMLE algorithm with Good signal to noise settings and 50 iterations. Maximum Z projections in Figure 7 were performed using Fiji (an implementation of ImageJ, a public domain program by W. Rasband available from http://rsb.info.nih.gov/ij/).\n\n### Determination of mature mRNA/pre-mRNA abundance ratio\n\nCol-0 seedlings were germinated and grown on MGRL plates containing 30\u2009\u03bcM boric acid for eight days. Total RNA was extracted from whole roots of about 25 seedlings with four replicates, using NucleoSpin RNA Plant (MACHEREY-NAGEL). To reduce contamination of genome DNA, 500\u2009ng of prepared RNA was subjected to DNase treatment with RQ1 RNase-Free DNase (Promega), following the manufacture\u2019s protocol. Reverse transcription was performed with Super Script III reverse transcriptase (Thermo Fisher Scientific) with random primers. To compare the abundance of cDNAs with different sequences, absolute quantification by realtime PCR was conducted, using PCR-synthesised DNA fragments with known concentration as standard templates. To detect mature or pre-mRNA specifically, exon-exon or intron-exon probes were designed (Figure 7\u2014figure supplement 1 and Table 3). Realtime PCR was performed with Thermal Cycler Dice\u00ae Real Time System and SYBR Premix Ex Taq II (Tli RNaseH Plus) (Takara), following the supplied standard shuttle 2-step PCR protocol. As standard DNA templates, DNA fragments corresponding to cDNA of mature- or pre-mRNA of NIP5;1 and PP2A were amplified by PCR with Prime Star GXL (Takara), using Col-0 cDNA or genome DNA as a template. The primers used are shown in Table 3. The PCR products were subjected to electrophoresis and the target fragment was purified from the gel slices with QIAquick Gel Extraction Kit (Qiagen). The concentration of the purified DNA was estimated by NanoDrop 1000 (Thermo Fisher Scientific). Tenth dilution series of 1\u2009pg/\u03bcL~1\u2009ag/\u03bcL\u00a0template DNA were applied for standard curve. The copy number of each standard DNA solution was normalized by realtime PCR $C_{t}$ values of the exon-exon proves which amplify both mature- and pre-mRNA sequences (Figure 7\u2014figure supplement 1 and Table 3). As a negative control, in parallel, after the total RNA extraction, the same samples were processed with the same procedure except reverse transcription, confirming that realtime PCR signals from contaminated genome DNA does not affect the final results.\n\n**Table 3.**\n Primers used in qRT-PCR experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Sequence</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NIP5;1_qRT-PCR-1</td>\n      <td>caccgattttccctctcctgat</td>\n      <td rowspan=\"10\">Probes for realtime PCR</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_qRT-PCR-2</td>\n      <td>ctctttcttactctctagcctc</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_qRT-PCR-3</td>\n      <td>gaatgttcccacgaactcgg</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_qRT-PCR-4</td>\n      <td>acattcatcttgatattcacc</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_qRT-PCR-5</td>\n      <td>gcatgcagcgttaccgatta</td>\n    </tr>\n    <tr>\n      <td>PP2A_qRT-PCR-1</td>\n      <td>ccatgtttgaggatcttacgc</td>\n    </tr>\n    <tr>\n      <td>PP2A_qRT-PCR-2</td>\n      <td>tgtctacatctcagcttcagtgtc</td>\n    </tr>\n    <tr>\n      <td>PP2A_qRT-PCR-3</td>\n      <td>gctccaacaatttcccaaga</td>\n    </tr>\n    <tr>\n      <td>PP2A_qRT-PCR-4</td>\n      <td>caagattcggttagattattg</td>\n    </tr>\n    <tr>\n      <td>PP2A_qRT-PCR-5</td>\n      <td>gcgagaaattgacaatcacag</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_mRNA_F</td>\n      <td>atttaggtgacactatagtaagctcaaagactaaccaaac</td>\n      <td rowspan=\"4\">For amplification of the standard DNA fragments</td>\n    </tr>\n    <tr>\n      <td>NIP5;1_mRNA_R</td>\n      <td>ttacacatgccatagattttat</td>\n    </tr>\n    <tr>\n      <td>PP2A_mRNA_F</td>\n      <td>atttaggtgacactatagcggtctcatttctcgttcttc</td>\n    </tr>\n    <tr>\n      <td>PP2A_mRNA_R</td>\n      <td>cacttgataagtaaattatttg</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 2.](https://cdn.elifesciences.org/articles/27038/elife-27038-video2.mp4.jpg)\n\n**Video 2.:** Simulation output revealing the details of boron flows over the membranes, due to transporter dynamics and background membrane permeability rates.\n",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "18e95e5b-12a2-4eaa-a43a-a5c815e7c315",
+      "submission_id": "6c97b742-b789-4593-aba1-b56d295e545e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria J Harrison, Boyce Thompson Institute for Plant Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27038.026](https://doi.org/10.7554/eLife.27038.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rapid transporter regulation prevents substrate flow traffic jams in boron transport\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Christophe Maurel (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPreviously, co-authors of this manuscript described the coordinated, polar locations of the NIP5 and BOR1 transporters and the surprising finding of their rapid boron-dependent regulation. Here, the authors have used a mathematical modelling approach to explore the significance of this rapid regulation and its necessity. Their model predicts oscillatory patterns of boron accumulation within a cell file and also a spectacular traffic jam behavior when the swiftness of transporter regulations falls below a certain threshold. Thus the authors argue that rapid regulation of transporters is needed in order to ensure unobstructed trafficking across cells and to avoid potentially toxic spikes of intracellular boron. Their findings provide an intriguing new way of thinking about nutrient transport in plants and the concepts they develop are potentially of significance for other polarized transport systems. The reviewers agree on these very positive aspects and also agree that the following points need to be addressed prior to publication.\n\nEssential revisions:\n\n1) The authors hypothesize complex relationships between B concentration and NIP or BOR protein abundance and thus activity (Equation 5). However, they may oversimplify the relationship between B concentration and transport itself. Proportionality of transport to B concentration gradients (Equations 1 and 2) is consistent for channels such as NIPs. Is it always applicable to BOR1, assuming that this transporter may saturate at high Ci? The authors should know the likely Km of BOR1 (In any case, the bor1-1 mutant lacks a saturating B uptake component): Under steady state conditions (without oscillation), estimated Ci seems to go up to 250 \u03bcM and in oscillating conditions, it goes up to 1.5 mM. In the latter conditions, BOR1 must clearly saturate? In our opinion, the authors should explore this important point.\n\n2) We wondered why the authors hypothesize such a huge difference (30-fold) between kB and kN. Is it consistent with actual variations of intracellular B concentration? Data from Figure 1\u2014figure supplement 2 refer to external B concentration and intracellular B may not vary so much. Could the authors present a sensitivity analysis of their model to kB/kNratio?\n\n3) While the authors have chosen a rather perfect example with the boron transport system, we think the concept they develop might be more widely applicable to a range of other nutrients. The authors should discuss other elements for which such a rapid reporter regulation might be necessary (those where coupled-transcellular transport might occur and where toxicity is an issue)\n\n4) Figures 1 and 2. The labeling is exceedingly poor. There is nothing in Figure 2 to allow the reader to know what C1-C4 etc. are (eventually, we work this out). Please add this to the figure legend. It seems that some of the cells have an identity (C3 is endodermis?) but it is not possible to determine this from the figures. What is the gap between W2 and Wn-2? Please add suitable explanation.\n\n5) Although we think that the reduction of radial transport into a cell file is acceptable in the context of this work, we do not understand why the authors chose a four cell model in which the endodermis is the last cell before the xylem (if we understood it correctly). This is clearly not the case, as the endodermis never touches xylem vessels directly, but is always at least separated from it by on layer of pericycle, which might be quite relevant when considering xylem loading. Please provide some explanation for this.\n\n6) Connected to the above, we think the authors stretch it a bit far when they claim that the observed tissue-specific transporter accumulations can be largely explained by feedback regulation of otherwise constitutively expressed transporters. This might work for NIP5;1, but we question whether it can account for the complex accumulation pattern of BOR1 ? We don't think the statement in the text \u00ab in the cortex (cell 2) at high levels, whilst in the endodermis it is weaker (cell 3) \u00bb reflects what can be seen on the pictures in Figure 1 where BOR1 looks stronger in the endodermis than in the cortex. Please consider providing additional support for Figure 1 (other images?) and discuss these aspects.\n\n7) The experiment in Figure 7 does not evaluate the outcome of the model. Instead, it further evaluates the mechanisms of NIP5 RNA regulation. This is also an interesting question but previous analyses suggested that NIP5 mRNA degradation involved ribosome-stalling controlled by uORFs in the 5' UTR. So how are the current data in Figure 7 reconciled with previously published data in Plant Cell (the Plant Cell data are also generated by some of the authors of this manuscript)?\n\n8) This model has been reported previously (Shimotohno et al., 2015) although it tested different aspects of the system. We are surprised by this omission and request that the authors insert some discussion of the earlier work and its relationship to the current data.\n\n9) The mathematical aspects are very well done with the exception of one small typo in Equation 1B where Wi-1 should be Wiprobably. Please check this.\n\n10) The authors did a robustness analysis to show that the results are not specific to the parameter set they used, but this should be mentioned more explicitly in the text.\n",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4efd2b2e-ddf6-4434-8405-bbcf5a7a3568",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C1",
+      "claim": "Nutrient uptake by roots often involves substrate-dependent regulated nutrient transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Nutrient uptake by roots often involves substrate-dependent regulated nutrient transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about plant biology presented in the abstract without specific experimental data in this manuscript, but represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "1a757c96-b1c2-431d-8989-e4bfb4c1bc24",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C2",
+      "claim": "Boron is essential for plant growth but toxic at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "boron is essential for plant growth but toxic at high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the manuscript (Sakamoto et al., 2011-09) and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "bab4e20b-104f-4206-a078-4ce1cc2d881f",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C3",
+      "claim": "In Arabidopsis thaliana, boron uptake occurs via diffusion facilitators (NIPs) and exporters (BORs).",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, boron uptake occurs via diffusion facilitators (NIPs) and exporters (BORs), each presenting distinct polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1 and citations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "d2380aaa-8704-4deb-beeb-aa63f36041e5",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C4",
+      "claim": "Both NIPs and BORs manifest strikingly swift boron-dependent regulation despite homogenous and stable boron soil concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "although boron soil concentrations are homogenous and stable, both transporters manifest strikingly swift boron-dependent regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data cited in the manuscript (Takano et al., 2005; Tanaka et al., 2011; Tanaka et al., 2016) and is a central observation motivating the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "0bcf7afd-7f34-4d04-a96f-d40060b85a53",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C5",
+      "claim": "Slower regulation of boron transporters leads to physiologically detrimental oscillatory behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Through mathematical modelling, we demonstrate that slower regulation of these transporters leads to physiologically detrimental oscillatory behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mathematical modeling results shown in Figures 2-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "874a0747-9df3-4e25-b5d7-d3896f5befae",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C6",
+      "claim": "During oscillatory behaviour, cells become periodically exposed to potentially cytotoxic boron levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells become periodically exposed to potentially cytotoxic boron levels, and nutrient throughput to the xylem becomes hampered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in modeling results in Figures 2, 3, and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "630d516e-84c1-4fae-9af6-82632584eaad",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C7",
+      "claim": "Swift transporter regulation within a polarised tissue context is critical to prevent intrinsic traffic-jam like behaviour of nutrient flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, while maintaining homeostasis, swift transporter regulation within a polarised tissue context is critical to prevent intrinsic traffic-jam like behaviour of nutrient flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the mathematical modeling analysis presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "58310413-6305-47eb-b4f4-e942a0d69599",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C8",
+      "claim": "Most soils are either deficient or in excess of essential elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Most soils are either deficient or in excess of essential elements (Roy et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Roy et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "a24ec274-ae0b-4ec7-857b-0e40403afdf5",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C9",
+      "claim": "Boron is critical for cell wall composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Boron is one of such essential nutrients for plants, critical for cell wall composition (O'Neill et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to O'Neill et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "7e360269-a524-4ed0-bf3e-a7df6dbbbeba",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C10",
+      "claim": "Borate cross-links a pectic polysaccharide, Rhamnogalacturonan II, making it indispensable for tissue growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Borate is cross-linking a pectic polysaccharide, Rhamnogalacturonan II, which makes it indispensable for tissue growth (Kobayashi et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kobayashi et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "be19646d-387a-476f-aa5f-0eaadebabaa9",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C11",
+      "claim": "At neutral pH, boron is mostly present in the form of boric acid.",
+      "claim_type": "EXPLICIT",
+      "source": "At neutral pH, boron is mostly present in the form of boric acid (Woods, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Woods, 1996 and represents established chemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "f05d5a45-cd33-4d22-baca-cc8f4fb3f477",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C12",
+      "claim": "BOR1 and BOR2 locate on the inwards-facing membranes of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the root, BOR1 (At2g47160) and BOR2 (At3g62270) locate on the inwards-facing membranes of the cell (Takano et al., 2010; Miwa et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations (Takano et al., 2010; Miwa et al., 2013) and shown in Figure 1A and 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "107b9794-e23c-4207-8511-5eb2b31b20e1",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C13",
+      "claim": "NIP5;1 locates on the outwards-facing membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "while NIP5;1 (At4g10380) locates on the outwards-facing membranes (Takano et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation (Takano et al., 2010) and shown in Figure 1A and 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "a390e8f4-f70d-49d8-9cac-8424e194e5d9",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C14",
+      "claim": "Both nip5;1 and bor1, bor2 mutants present severe growth defects under low boron concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both nip5;1 and bor1, bor2 mutants present severe growth defects under low boron concentrations (Noguchi et al., 1997; Takano et al., 2006-06; Miwa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Noguchi et al., 1997; Takano et al., 2006-06; Miwa et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "094e6c1a-407b-457b-9e55-bdc7ece668cc",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C15",
+      "claim": "High intracellular boron concentrations elicit DNA damage, growth retardation and eventually cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "While boron is required for cell wall strength and stability, too high intracellular boron concentrations elicit DNA damage, growth retardation and eventually cell death (Sakamoto et al., 2011-09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation (Sakamoto et al., 2011-09).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "48e7dea7-de19-499a-bda9-85a38f1c7f4c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C16",
+      "claim": "Protein levels of NIP5;1 and BOR1, 2 drop at higher boron concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "the protein levels of the boron transporters are regulated by boron itself, with both NIP5;1 and BOR1, 2 protein levels dropping at higher boron concentrations (Takano et al., 2005; Takano et al., 2006-06; Takano et al., 2010; Miwa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3fb6e6a2-828c-4065-a498-66659594f40e",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C17",
+      "claim": "NIP5;1 protein down-regulation takes place through mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of NIP5;1 boron reduces protein levels via mRNA degradation (Tanaka et al., 2011; Tanaka et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Tanaka et al., 2011; Tanaka et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3ffacb2c-696f-4a4d-8f9f-cb604cd12e9b",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C18",
+      "claim": "BOR1, 2 down-regulation involves increased protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "while in the case of BOR1, 2 the mechanism involves increased protein degradation (Takano et al., 2005; Miwa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Takano et al., 2005; Miwa et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "5c63209e-1178-4b93-9958-ca3e824e7b07",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C19",
+      "claim": "BOR1 degradation occurs through endocytosis, apparent 30 min after transfer from low to high boron media.",
+      "claim_type": "EXPLICIT",
+      "source": "The BOR1 degradation occurs through endocytosis, apparent 30 min after the transfer from low to high boron media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2f23c04c-be99-4fdf-a104-e9d3662f0977",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C20",
+      "claim": "After two hours BOR1 has already mostly disappeared, suggesting that the half life of BOR1 is well below one hour.",
+      "claim_type": "EXPLICIT",
+      "source": "After two hours BOR1 has already mostly disappeared, suggesting that the half life of BOR1 is well below one hour (Takano et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from Takano et al., 2005 and represents an inference from those data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3bbcb474-ebbe-41e6-a0b4-9748133d9645",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C21",
+      "claim": "The half life of NIP5;1 mRNA after transfer from low to high boron media is 10\u201315 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The half life of NIP5;1 mRNA after the transfer from low to high boron media is 10\u201315 min (Tanaka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from Tanaka et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "4502e683-7701-45d3-8b85-c458f498fb39",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C22",
+      "claim": "Boron is very mobile in the soil due to being available as boric acid, which is highly water-soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to boron being available to plants as boric acid, which is highly water-soluble (solubility: 0.92 mol/L at 25\u00b0C). Consequently, boron is very mobile in the soil (Nable et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation (Nable et al., 1997) and chemical properties of boric acid.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "f69c30cc-1067-4de2-bc7a-c14046652f0b",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C23",
+      "claim": "Patchy heterogeneous boron levels throughout the soil are neither stable nor probable.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, boron is very mobile in the soil (Nable et al., 1997), rendering patchy heterogeneous boron levels throughout the soil neither stable nor probable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high mobility of boron in soil.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3b24aef9-0370-4406-9a08-e416ece8af2c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C24",
+      "claim": "Soil adsorption plays a role in buffering fluctuations in boron concentration in soil water as a consequence of fluctuations in the water-soil ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Keren and Bingham, 1985, analysing the effects of solution-to-soil ratio on the boron concentration in soil water, propose that soil adsorption plays a role in buffering the fluctuations in boron concentration in soil water as a consequence of fluctuations in the water-soil ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keren and Bingham, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "9bf08dbc-6361-4c6f-9a41-689a35f0271e",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C25",
+      "claim": "Boron concentration in the soil is robust against fluctuations in the water-to-soil ratio if soil adsorption is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical modelling was used to predict the boron concentrations in the soil solution from the water-to-soil ratio (Keren, 1981), revealing that boron concentration in the soil is robust against fluctuations in the water-to-soil ratio if soil adsorption is considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mathematical modeling from Keren, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2ff7c45f-0d49-48f0-9fe5-30e79eaf2f90",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C26",
+      "claim": "Rapid fluctuations in boron concentration are unlikely, or rare events even if they could occur under very specific and unlikely conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "From these in-depth studies, the picture consolidates that rapid fluctuations in boron concentration are indeed unlikely, or rare events even if they could occur under very specific and unlikely conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies on soil boron dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "5de480d8-9bb1-4ba5-86ff-7396932c06cb",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C27",
+      "claim": "The model assumes that all the boron transporters of a cell are regulated by the cytosolic boron concentration within that respective cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our model assumes that all the boron transporters of a cell are regulated by the cytosolic boron concentration within that respective cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption stated in the model description, supported by experimental evidence for NIP5;1 (Tanaka et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "e07d6208-72ac-4ea7-9874-d6ed369b01d3",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C28",
+      "claim": "NIP5;1 mRNA degradation is triggered by boron-dependent ribosome stalling during the translation process.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of NIP5;1, we recently revealed that NIP5;1 mRNA degradation is triggered by boron-dependent ribosome stalling during the translation process (Tanaka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tanaka et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "a786fd20-f62e-4370-9444-46c619a53586",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C29",
+      "claim": "The boron-dependent degradation of NIP5;1 was observed in an in vitro system without cell wall fraction, suggesting that the sensing mechanism depends on the cytoplasmic boron concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The boron-dependent degradation was also observed in an in vitro system without cell wall fraction, which suggests that the sensing mechanism depends on the cytoplasmic boron concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations that support the inference about the sensing mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "f197031a-cf57-4c91-8c59-cd82286a3a6c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C35",
+      "claim": "The parsimonious model accounts for general features of the observed transporters' expression patterns solely as a consequence of the relative positioning of the cells within the cell row.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore interesting to observe that our parsimonious model could already account for general features of the the observed transporters' expression patterns (Figure 2C,D) solely as a consequence of the relative positioning of the cells within the cell row",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model results (Figure 2C,D) with experimental observations (Figure 1B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c4770cc3-f871-4aa0-9505-ac5f2ccd58b8",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C37",
+      "claim": "Oscillations in the individual cells are spatially coupled, manifested as a boron wave that propagates backwards over the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymographs make it visually clear that oscillations in the individual cells are in fact spatially coupled, manifested as a boron wave that propagates backwards over the tissue, that is, the pulse moves in the direction contrary to the nutrient flow itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by kymographs shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "6254cac9-a547-4b0c-8b0a-ef3bb164bb7e",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C38",
+      "claim": "The traffic-jam-like phenomenon is conserved irrespective of the number of cells between the medium and the convective xylem flux.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3B\u2013G shows that the phenomenon is conserved irrespective of the number of cells between the medium and the convective xylem flux.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 3B-G for tissues with 5-10 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "071f5fc3-ca00-44fd-bd4f-8b55c3723947",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C39",
+      "claim": "The same traffic-jam-like phenomenon was observed even when the model contained 100 cell files.",
+      "claim_type": "EXPLICIT",
+      "source": "The same phenomenon was still observed even when the model contained 100 cell files (Figure 3\u2014figure supplement 1), suggesting that large tissues do not prevent these effects from occurring, but rather increase its likelihood.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c2796de1-1190-45f1-ab8b-c8796c49f6f1",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C40",
+      "claim": "The phase diagram shows a large region in which the system becomes unstable and oscillations arise, as well as a region in which sufficient regulation swiftness ensures that the system is stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase-portrait that emerges (Figure 4A) shows a large region in which the system becomes unstable and oscillations arise (indicated in red), as well as a region in which sufficient regulation swiftness ensures that the system is stable and oscillations do not develop (indicated in blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the stability analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "558cda4a-4e38-494b-acab-b4e4bd1fa118",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C41",
+      "claim": "The parameter values derived to capture wild type dynamics of transporter regulation (point 1,1) fall into the stable regime.",
+      "claim_type": "EXPLICIT",
+      "source": "From this combined analysis it becomes apparent that the parameter values we derived to capture wild type dynamics of transporter regulation (i.e., point 1,1) fall into the stable regime.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phase diagram in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2cf85cef-52b7-4040-8bc4-fe846a17b51d",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C42",
+      "claim": "Independent small reductions from wild type values in either NIP or BOR regulation rate can cause the tissue to experience oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, independent small reductions from these values in either NIP or BOR regulation rate can cause the tissue to experience oscillations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the phase diagram in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "8699abb7-9103-4fb0-bc8b-60efe8278205",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C43",
+      "claim": "Both transporters are required to present a rapid response, and their combined swiftness is synergistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does the analysis reveal that both transporters are required to present a rapid response, and that this is independent of the BOR-dependent fluxes becoming saturated, but their combined swiftness is synergistic: if one transporter is extremely fast, the other can be bit slower than what is otherwise needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the phase diagram analysis in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "807adcfe-94ea-4bca-9b4a-818443457035",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C44",
+      "claim": "Sufficiently rapid transport regulation is important to reduce the risk of DNA damage when considering absolute concentrations or the increase over the basal equilibrium boron concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe increasing maximum levels in boron concentration for slower regulation swiftness (Figure 5A), as well as higher fold-changes in boron concentration (Figure 5B). This suggests that sufficiently rapid transport regulation is important to reduce the risk of DNA damage when either considering absolute concentrations or the increase over the basal equilibrium boron concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from modeling results shown in Figure 5A and 5B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c6e0d4a7-bf11-43b7-8378-0c3ff86b892a",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C45",
+      "claim": "Under conditions in which traffic jams and large-amplitude variations occur, there is a considerable reduction in total throughput through the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, under the conditions in which traffic jams and large-amplitude variations occur, we measured a considerable reduction in total throughput through the tissue (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "fb377c43-614b-4aa6-a58c-fe748ac5222c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C46",
+      "claim": "When BOR saturation is considered, the detrimental effects of the instabilities that arise due to slowing down the regulatory dynamics are amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, the detrimental effects of the instabilities that arise due to slowing down the regulatory dynamics are amplified when BOR saturation is considered (see details of saturation implementation in the caption of Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "998b7e09-b6ad-4f3b-952a-790d67ed8952",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C47",
+      "claim": "The peak levels during concentration fluctuations are more than twice as high as the default scenario when BOR saturation is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of the traffic jams becomes much more severe, with peak levels during the concentration fluctuations more than twice as high as the default scenario (compare Figure 2 to Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing modeling results in Figure 2 and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "21724423-d022-4ccf-bfea-ccf896f7940b",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C48",
+      "claim": "Selective pressures operating on the root's capacity to absorb boron optimally and robustly could result in the system evolving to a regime of rapid regulation of transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all into consideration, we infer that selective pressures operating on the root's capacity to absorb boron optimally and robustly could result in the system evolving to a regime of rapid regulation of transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results regarding physiological impacts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2f9a535b-b6b0-42a4-9b63-9afe1f5d99a2",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C49",
+      "claim": "When transporter regulation is as swift as in wild type, a steady flow with no oscillation in the concentrations is observed in the ring model.",
+      "claim_type": "EXPLICIT",
+      "source": "When transporter regulation is as swift as in wild type (Figure 6A), a steady flow with no oscillation in the concentrations is observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "50931372-c83b-4c95-9156-34e266455422",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C50",
+      "claim": "When transporter regulation swiftness is decreased to sufficiently low values in the ring model, oscillations arise after an initial period.",
+      "claim_type": "EXPLICIT",
+      "source": "When transporter regulation swiftness is decreased to sufficiently low values as to cause unstable flows (as derived from the analysis shown in Figure 4), oscillations arise. After an initial period in which the flows seem constant, random numerical fluctuations in the simulation bring forth a rise of boron concentration in a random cell",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "22b32860-27f5-4b6b-a6c1-39db338ab85b",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C51",
+      "claim": "The unstable flow regime continuously self-propagates and is not triggered by boundary conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations demonstrate that the unstable flow regime \u2014 which we now can conclusively eliminate as being triggered by boundary conditions \u2014 continuously self-propagates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ring model simulations shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "7be1d873-94d3-47d7-8102-bace07a80a5e",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C53",
+      "claim": "Nuclear accumulations of NIP5;1 RNA represent sites of ongoing RNA production and degradation, rather than separate nuclear storage compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the nuclear accumulations representing sites of ongoing RNA production and degradation, rather than separate nuclear storage compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the smFISH observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "64d42a46-fc11-4f4f-834d-448c6260dc15",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C54",
+      "claim": "The average mature mRNA/pre-mRNA ratio of NIP5;1 was less than 25% of that of PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "The average mature mRNA/pre-mRNA ratio of NIP5;1 was less than 25% of that of PP2A (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on qRT-PCR experimental data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "6412c8a8-b820-4993-935d-7899066a55c6",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C55",
+      "claim": "The low mature mRNA/pre-mRNA ratio of NIP5;1 indicates a high degradation rate of NIP5;1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our interpretation of the smFISH results, this again indicates a high degradation rate of NIP5;1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the qRT-PCR data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "5f87fa92-a303-4883-848f-afcd7f4472c2",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C56",
+      "claim": "NIP5;1 mRNA degradation could occur through two coordinated B-dependent processes: one where cytoplasmic degradation is triggered by ribosome stalling and another localised in the nucleus where RNA is turned over at the site of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that mRNA degradation could occur through two coordinated B-dependent processes; one where cytoplasmic degradation is triggered by ribosome stalling and another localised in the nucleus where RNA is turned over at the site of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference combining previous findings (Tanaka et al., 2016) with new smFISH data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "e2cf04c8-2086-4ad5-94b5-5214552e17c9",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C57",
+      "claim": "The experimentally observed swiftness of boron transporters' boron-mediated downregulation can be understood as a necessary mechanism to maintain optimal constant xylem loading rates over time, while also avoiding DNA damage due to oscillations within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the experimentally observed swiftness of boron transporters' boron-mediated downregulation can be understood as a necessary mechanism to maintain optimal constant xylem loading rates over time, while also avoiding DNA damage due to oscillations within cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, drawn from the modeling analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "4a7d821c-294a-48cc-bf70-15a4ab49c94d",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C58",
+      "claim": "Without substrate-mediated downregulation of the transporters, the plant would be unable to shield itself from toxic soil boron levels and be much less efficient in growing at low soil boron levels.",
+      "claim_type": "EXPLICIT",
+      "source": "One could argue that without a substrate-mediated downregulation of the transporters there would not be the need to avoid traffic jam-like behaviour through swift regulatory dynamics in the first place. However, were the system not to present the regulation, the plant would be unable to shield itself from toxic soil boron levels (Figure 8A) and be much less efficient in growing at low soil boron levels (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "341bde8d-c4a2-488c-adc7-711710ce901c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C59",
+      "claim": "The requirement for swift transporter downregulation does not depend on external boron fluctuations in the medium, number of cell files composing the root tissue, possible saturable activity of the transporter itself nor the magnitude, location or strength of the xylem flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that this is an intrinsic requirement, simply because boron transporters are polarly located: The requirement itself does not depend on external boron fluctuations in the medium, number of cell files composing the root tissue, possible saturable activity of the transporter itself nor the magnitude, location or strength of the xylem flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the various modeling analyses presented throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "140892e3-cfa2-4884-87e0-08f84adfbc02",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C60",
+      "claim": "The phosphate and iron transport systems present both polar transporters as well as substrate-dependent regulation, serving as candidates for similar traffic-jam-like phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the phosphate and iron transport systems present both polar transporters as well as substrate-dependent regulation, serving as candidates for such phenomena and dynamical constraint avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of the findings to other transport systems.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "cc45d364-8531-43b5-93a6-827d6bb31e9b",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C61",
+      "claim": "Polar accumulation of IRT1, a major Fe transporter for Fe uptake into roots, is regulated in an Fe-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar regulation is also reported for the iron (Fe) transport system, where polar accumulation of IRT1, a major Fe transporter for Fe uptake into roots, is regulated in an Fe-dependent manner (Barberon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Barberon et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "abd4476e-a710-42e6-894f-24ab235fe5ca",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C62",
+      "claim": "For any polarised tissue in which adaptive regulation of transport levels is necessary, intrinsic temporal constraints are expected to operate to ensure that steady state flows are maintained and large fluctuations avoided.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for any polarised tissue in which adaptive regulation of transport levels is necessary we can expect to find intrinsic temporal constraints operating to ensure that steady state flows are maintained and large fluctuations avoided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization and speculation based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c00409b4-f47e-427d-88a2-adceb9b9098a",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C63",
+      "claim": "Although both transporters are predicted to work synergistically and are both required to be effectively similar in regard to rapid regulation, their regulations are biologically encoded in unique ways.",
+      "claim_type": "EXPLICIT",
+      "source": "In molecular terms, we discovered that although both transporters are predicted to work synergistically and are both required to be effectively similar in regard to rapid regulation, their regulations are biologically encoded in unique ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from both modeling and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2b053045-a6dd-4fd1-bc6c-00f1eeae79d1",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C64",
+      "claim": "NIP5;1 constitutes a system in which production is maintained high but degradation is rapidly controlled transcriptionally, allowing for the necessarily rapid boron-dependent response.",
+      "claim_type": "EXPLICIT",
+      "source": "We here experimentally focused on the regulatory swiftness of the bidirectional transporter NIP5;1, and found strong evidence that it constitutes a system in which production is maintained high but degradation is rapidly controlled transcriptionally, allowing for the necessarily rapid boron-dependent response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the smFISH and qRT-PCR experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "f8e1a045-7464-4597-9037-f7007534f642",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C65",
+      "claim": "72% of cells had at least one NIP5;1 intron signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We used this approach to further investigate NIP5;1 transcription and found 72% of cells with at least one NIP5;1 intron signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on smFISH experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "b8c5673a-eaa5-4ffd-9860-586d477c7d17",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C66",
+      "claim": "84% of cells had PP2A intron signals, as previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this was lower than the 84% previously reported for the more highly expressed gene PP2A (Duncan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to Duncan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "ad97249d-d30e-409e-9a38-ca7bfddf76b1",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C67",
+      "claim": "The transcription of the transporters takes place throughout the entire root tissue, even for NIP5;1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although protein levels can present strong variation between cell files, the transcription of the transporters takes place throughout the entire root tissue, even for NIP5;1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GUS staining shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3315ab2e-fc90-4225-b879-4ecccf789524",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C68",
+      "claim": "The model uses the simplifying assumption that all cell files are intrinsically the same in respect to the potential of expressing the transporters, and variations arise solely as a consequence of the nutrient distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore use the simplifying assumption that all cell files are intrinsically the same in respect to the potential of expressing the transporters, and variations arise solely as a consequence of the nutrient distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit modeling assumption stated in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "3421b33e-8629-4e11-be68-2536b5ef5d9c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C69",
+      "claim": "The modelled cells loosely map to the outermost epidermis (cell 1), the cortex (cell 2), the endodermis (cell 3), and finally to the pericycle/vasculature (cell 4).",
+      "claim_type": "EXPLICIT",
+      "source": "The modelled cells loosely map to the outermost epidermis (cell 1), the cortex (cell 2), the endodermis (cell 3), and finally to the pericycle/vasculature (cell 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "5189ff13-0378-4254-8340-9fafcd79eea9",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C70",
+      "claim": "The last cell of the row is endowed with an upward convective flow, which captures the shootwards convective flow of the xylem.",
+      "claim_type": "EXPLICIT",
+      "source": "The last cell of the row is endowed with an upward convective flow, which captures the shootwards convective flow of the xylem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "72798d4e-8c11-420d-b307-cd2066a80a8f",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C72",
+      "claim": "The plasmamembrane's permeability rate for boric acid is relatively high compared to other nutrient elements, due to boric acid existing in a non-charged form under physiological pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the plasmamembrane's permeability rate for boric acid is relatively high compared to other nutrient elements, due to boric acid existing in a non-charged form under physiological pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on chemical knowledge about boric acid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "18145ce5-c148-4f8d-90ef-f7aa6310bb09",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "claim_id": "C73",
+      "claim": "In mature Arabidopsis the rate of transpiration is 0.1 g water/g FW tissue/hour at 70% humidity under daytime conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hosy et al., 2003 reported that in mature Arabidopsis the rate of transpiration is 0.1 g water/g FW tissue/hour at 70% humidity under daytime conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to Hosy et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01236f5f-e22b-4b95-ba55-d202d95e080f",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Boron transporters BOR1/BOR2 and NIP5;1 exhibit polar localization in Arabidopsis root cells, with BORs on inward-facing membranes and NIPs on outward-facing membranes. Transcription of these transporters occurs throughout root tissue despite variation in protein levels between cell files.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C12, C13 are supported by confocal microscopy data (Figure 1A,B) and multiple citations. Claim C67 is supported by GUS staining (Figure 1\u2014figure supplement 1). The experimental evidence directly demonstrates the polar localization pattern and tissue-wide transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "278b960c-3241-41ea-a2d4-ce42843f12b5",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both NIP5;1 and BOR1/2 protein levels are rapidly downregulated by boron through distinct mechanisms: NIP5;1 via mRNA degradation (half-life 10-15 min) and BOR1 via protein degradation through endocytosis (half-life <1 hour).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are well-supported by multiple citations to experimental studies (Takano et al., 2005; Tanaka et al., 2011; Tanaka et al., 2016; Miwa et al., 2013) and confocal observations (Figure 1\u2014figure supplement 2). The rapid timescales are experimentally documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "44073657-0a54-41cf-a20b-cb00f64046b8",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Boron concentration in soil is stable and homogeneous due to high water solubility of boric acid, soil adsorption buffering, and high mobility. Rapid fluctuations in soil boron are unlikely or rare events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by citations to soil chemistry studies (Nable et al., 1997; Keren and Bingham, 1985; Keren, 1981) and chemical properties of boric acid. The inference about stability is logically drawn from established soil chemistry principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrates that slower regulation of boron transporters leads to oscillatory behavior characterized by backward-propagating boron waves (traffic jams) that expose cells to potentially cytotoxic boron levels. This phenomenon is conserved across tissues of varying sizes (4-100 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C37-C39 are supported by comprehensive modeling results shown in Figures 2, 3, and Figure 3\u2014figure supplement 1. The kymographs clearly demonstrate the backward-propagating waves, and simulations across different tissue sizes confirm robustness of the phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "57e5b33b-2bfb-4e15-8748-56c5a742adca",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stability analysis reveals that wild-type transporter regulation rates fall within a stable regime, but small reductions in either NIP or BOR regulation swiftness can trigger oscillations. Both transporters must respond rapidly, with synergistic effects between their regulation speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by the phase diagram analysis in Figure 4A, which systematically maps stable and unstable parameter regimes. The linearization analysis and eigenvalue calculations provide rigorous mathematical support for the synergistic requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "fab37f7c-13cd-4ec0-8b80-b35d3c44160f",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Slower transporter regulation increases maximum boron concentrations, fold-changes in concentration, and reduces tissue throughput. When BOR saturation is considered, these detrimental effects are amplified with peak concentrations more than doubling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by modeling results in Figures 5A-C and Figure 4\u2014figure supplement 3. The systematic parameter sweeps quantify physiological impacts, and the BOR saturation analysis demonstrates amplification of negative effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c691a4e4-4687-40b8-8b88-00365bc04564",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ring model simulations (eliminating boundary conditions) demonstrate that wild-type regulation maintains steady flow, while reduced regulation swiftness triggers self-propagating oscillations. This proves the unstable flow regime is intrinsic and not triggered by boundary conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by ring model simulations in Figure 6. The ring topology eliminates soil and xylem boundary effects, providing strong evidence that oscillations arise from intrinsic system properties rather than external constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "b479a62d-879f-4e87-bae1-b987abd9c000",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "smFISH experiments reveal that 72% of cells show NIP5;1 intron signals, with nuclear accumulations representing sites of ongoing transcription and degradation. The mature mRNA/pre-mRNA ratio of NIP5;1 is <25% of PP2A, indicating high mRNA degradation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 and C65 are supported by smFISH data (Figure 7B,C) and qRT-PCR measurements (Figure 7\u2014figure supplement 1). The co-localization of exonic and intronic signals (92.5%) and low mature/pre-mRNA ratio provide converging evidence for rapid degradation at transcription sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2cfbe321-5359-4cd2-b181-2ecc9529c935",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NIP5;1 regulation involves a dual degradation mechanism: cytoplasmic degradation triggered by ribosome stalling and nuclear degradation at transcription sites. This constitutes a system with high production but rapidly controlled degradation enabling swift boron-dependent responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is speculative, combining previous findings (C28) with new smFISH data to propose a dual mechanism. While the smFISH data support nuclear degradation and previous work established cytoplasmic degradation, direct evidence for coordinated dual mechanisms is not provided. Claim C64 is an inference requiring additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "c3b72a31-26d6-4bc4-bcd8-43795f7ce6fe",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Swift transporter regulation within polarized tissue is critical to prevent traffic-jam-like behavior and maintain optimal xylem loading while avoiding DNA damage. This requirement is intrinsic to polar transporter organization and independent of external fluctuations, tissue size, or transporter saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C57, and C59 represent the main conclusions drawn from the comprehensive modeling analysis (Figures 2-6). The ring model, tissue size variations, and saturation analyses collectively support that rapid regulation is an intrinsic requirement of polarized transport systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "8a6ccd6a-2f7e-4466-bf4b-1ac3b2eb92e7",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Without substrate-mediated downregulation, plants would be unable to shield themselves from toxic soil boron levels and would be less efficient at growing under low boron conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by modeling results in Figure 8, which compares scenarios with and without transporter regulation across varying medium boron concentrations. The simulations demonstrate both toxicity protection and growth efficiency benefits of regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "b673799a-7b70-4caf-be67-838fc7104492",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The parsimonious model accounts for general features of observed transporter expression patterns solely based on cell positioning within the tissue, without requiring tissue-specific regulation assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by comparing model predictions (Figure 2C,D) with experimental observations (Figure 1B). The model successfully reproduces NIP5;1 preferential expression in epidermis and BOR expression patterns using only concentration-dependent regulation and cell position.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "115f2127-494e-434d-a3e1-74567f12f95d",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model assumes cytosolic boron concentration regulates transporters in each cell. This is supported by experimental evidence showing NIP5;1 mRNA degradation is triggered by boron-dependent ribosome stalling and occurs in vitro without cell wall fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by citation to Tanaka et al., 2016 and in vitro experimental observations. The assumption of cytosolic sensing is justified by experimental evidence, though direct evidence for BOR sensing location is acknowledged as incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "60da07a9-de01-4701-aa56-f0947641841c",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings may extend to other polarized transport systems (phosphate, iron) that exhibit both polar transporters and substrate-dependent regulation. Intrinsic temporal constraints are expected in any polarized tissue requiring adaptive transport regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C62 are speculative extensions of the boron transport findings to other systems. While C61 is supported by citation (Barberon et al., 2014), the broader generalizations in C60 and C62 lack direct experimental validation and represent hypotheses for future testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "72609228-13a5-415a-a63a-65f693931934",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Although both transporters work synergistically and require similar rapid regulation, their regulations are biologically encoded differently (BOR via protein degradation, NIP via mRNA degradation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by the combination of modeling predictions (showing synergistic requirements) and experimental observations of distinct regulatory mechanisms (C17-C18, C64). The conclusion logically integrates computational and experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "2e192eef-1f24-48f8-9e95-872c637b6d43",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Selective pressures on optimal and robust boron absorption could drive evolution toward rapid transporter regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 is an evolutionary inference based on modeling results showing physiological benefits of rapid regulation. While the modeling demonstrates functional advantages, this evolutionary claim is speculative and would require comparative or experimental evolution studies for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "9f444944-2caa-4e6b-9575-eec126747e89",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Boron is essential for plant growth (critical for cell wall composition via Rhamnogalacturonan II cross-linking) but toxic at high concentrations (causing DNA damage, growth retardation, and cell death). At neutral pH, boron exists mainly as boric acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C9, C10, C11, and C15 are supported by established literature citations (O'Neill et al., 2004; Kobayashi et al., 1996; Woods, 1996; Sakamoto et al., 2011) and represent well-established knowledge in plant biology and chemistry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "b7df68e4-2734-4b00-8d15-6eec2648106e",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Both nip5;1 and bor1,bor2 mutants show severe growth defects under low boron concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by multiple citations (Noguchi et al., 1997; Takano et al., 2006; Miwa et al., 2013) documenting mutant phenotypes. This represents established prior knowledge supporting the functional importance of these transporters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    },
+    {
+      "id": "5f17f300-d1df-4956-b012-4f5bfd9cc297",
+      "content_id": "e7fd8e5e-7e94-4c03-bb91-c07fe8619526",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The model uses simplifying assumptions: all cell files have equal potential for transporter expression with variations arising from nutrient distributions; cells map to epidermis, cortex, endodermis, and pericycle/vasculature; the last cell has upward convective flow representing xylem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe explicit modeling assumptions stated in the methods. These are justified by experimental observations (C67) and represent reasonable simplifications for exploring the core question about regulation dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:48:50.665635Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bab4e20b-104f-4206-a078-4ce1cc2d881f",
+      "result_id": "01236f5f-e22b-4b95-ba55-d202d95e080f"
+    },
+    {
+      "claim_id": "f05d5a45-cd33-4d22-baca-cc8f4fb3f477",
+      "result_id": "01236f5f-e22b-4b95-ba55-d202d95e080f"
+    },
+    {
+      "claim_id": "107b9794-e23c-4207-8511-5eb2b31b20e1",
+      "result_id": "01236f5f-e22b-4b95-ba55-d202d95e080f"
+    },
+    {
+      "claim_id": "ad97249d-d30e-409e-9a38-ca7bfddf76b1",
+      "result_id": "01236f5f-e22b-4b95-ba55-d202d95e080f"
+    },
+    {
+      "claim_id": "48e7dea7-de19-499a-bda9-85a38f1c7f4c",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "3fb6e6a2-828c-4065-a498-66659594f40e",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "3ffacb2c-696f-4a4d-8f9f-cb604cd12e9b",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "5c63209e-1178-4b93-9958-ca3e824e7b07",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "2f23c04c-be99-4fdf-a104-e9d3662f0977",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "3bbcb474-ebbe-41e6-a0b4-9748133d9645",
+      "result_id": "278b960c-3241-41ea-a2d4-ce42843f12b5"
+    },
+    {
+      "claim_id": "4502e683-7701-45d3-8b85-c458f498fb39",
+      "result_id": "44073657-0a54-41cf-a20b-cb00f64046b8"
+    },
+    {
+      "claim_id": "f69c30cc-1067-4de2-bc7a-c14046652f0b",
+      "result_id": "44073657-0a54-41cf-a20b-cb00f64046b8"
+    },
+    {
+      "claim_id": "3b24aef9-0370-4406-9a08-e416ece8af2c",
+      "result_id": "44073657-0a54-41cf-a20b-cb00f64046b8"
+    },
+    {
+      "claim_id": "9bf08dbc-6361-4c6f-9a41-689a35f0271e",
+      "result_id": "44073657-0a54-41cf-a20b-cb00f64046b8"
+    },
+    {
+      "claim_id": "2ff7c45f-0d49-48f0-9fe5-30e79eaf2f90",
+      "result_id": "44073657-0a54-41cf-a20b-cb00f64046b8"
+    },
+    {
+      "claim_id": "0bcf7afd-7f34-4d04-a96f-d40060b85a53",
+      "result_id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3"
+    },
+    {
+      "claim_id": "874a0747-9df3-4e25-b5d7-d3896f5befae",
+      "result_id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3"
+    },
+    {
+      "claim_id": "c4770cc3-f871-4aa0-9505-ac5f2ccd58b8",
+      "result_id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3"
+    },
+    {
+      "claim_id": "6254cac9-a547-4b0c-8b0a-ef3bb164bb7e",
+      "result_id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3"
+    },
+    {
+      "claim_id": "071f5fc3-ca00-44fd-bd4f-8b55c3723947",
+      "result_id": "e8c19b1f-ac59-4caa-bdec-b599853da3b3"
+    },
+    {
+      "claim_id": "c2796de1-1190-45f1-ab8b-c8796c49f6f1",
+      "result_id": "57e5b33b-2bfb-4e15-8748-56c5a742adca"
+    },
+    {
+      "claim_id": "558cda4a-4e38-494b-acab-b4e4bd1fa118",
+      "result_id": "57e5b33b-2bfb-4e15-8748-56c5a742adca"
+    },
+    {
+      "claim_id": "2cf85cef-52b7-4040-8bc4-fe846a17b51d",
+      "result_id": "57e5b33b-2bfb-4e15-8748-56c5a742adca"
+    },
+    {
+      "claim_id": "8699abb7-9103-4fb0-bc8b-60efe8278205",
+      "result_id": "57e5b33b-2bfb-4e15-8748-56c5a742adca"
+    },
+    {
+      "claim_id": "807adcfe-94ea-4bca-9b4a-818443457035",
+      "result_id": "fab37f7c-13cd-4ec0-8b80-b35d3c44160f"
+    },
+    {
+      "claim_id": "c6e0d4a7-bf11-43b7-8378-0c3ff86b892a",
+      "result_id": "fab37f7c-13cd-4ec0-8b80-b35d3c44160f"
+    },
+    {
+      "claim_id": "fb377c43-614b-4aa6-a58c-fe748ac5222c",
+      "result_id": "fab37f7c-13cd-4ec0-8b80-b35d3c44160f"
+    },
+    {
+      "claim_id": "998b7e09-b6ad-4f3b-952a-790d67ed8952",
+      "result_id": "fab37f7c-13cd-4ec0-8b80-b35d3c44160f"
+    },
+    {
+      "claim_id": "2f9a535b-b6b0-42a4-9b63-9afe1f5d99a2",
+      "result_id": "c691a4e4-4687-40b8-8b88-00365bc04564"
+    },
+    {
+      "claim_id": "50931372-c83b-4c95-9156-34e266455422",
+      "result_id": "c691a4e4-4687-40b8-8b88-00365bc04564"
+    },
+    {
+      "claim_id": "22b32860-27f5-4b6b-a6c1-39db338ab85b",
+      "result_id": "c691a4e4-4687-40b8-8b88-00365bc04564"
+    },
+    {
+      "claim_id": "7be1d873-94d3-47d7-8102-bace07a80a5e",
+      "result_id": "b479a62d-879f-4e87-bae1-b987abd9c000"
+    },
+    {
+      "claim_id": "64d42a46-fc11-4f4f-834d-448c6260dc15",
+      "result_id": "b479a62d-879f-4e87-bae1-b987abd9c000"
+    },
+    {
+      "claim_id": "6412c8a8-b820-4993-935d-7899066a55c6",
+      "result_id": "b479a62d-879f-4e87-bae1-b987abd9c000"
+    },
+    {
+      "claim_id": "f8e1a045-7464-4597-9037-f7007534f642",
+      "result_id": "b479a62d-879f-4e87-bae1-b987abd9c000"
+    },
+    {
+      "claim_id": "5f87fa92-a303-4883-848f-afcd7f4472c2",
+      "result_id": "2cfbe321-5359-4cd2-b181-2ecc9529c935"
+    },
+    {
+      "claim_id": "2b053045-a6dd-4fd1-bc6c-00f1eeae79d1",
+      "result_id": "2cfbe321-5359-4cd2-b181-2ecc9529c935"
+    },
+    {
+      "claim_id": "630d516e-84c1-4fae-9af6-82632584eaad",
+      "result_id": "c3b72a31-26d6-4bc4-bcd8-43795f7ce6fe"
+    },
+    {
+      "claim_id": "e2cf04c8-2086-4ad5-94b5-5214552e17c9",
+      "result_id": "c3b72a31-26d6-4bc4-bcd8-43795f7ce6fe"
+    },
+    {
+      "claim_id": "341bde8d-c4a2-488c-adc7-711710ce901c",
+      "result_id": "c3b72a31-26d6-4bc4-bcd8-43795f7ce6fe"
+    },
+    {
+      "claim_id": "4a7d821c-294a-48cc-bf70-15a4ab49c94d",
+      "result_id": "8a6ccd6a-2f7e-4466-bf4b-1ac3b2eb92e7"
+    },
+    {
+      "claim_id": "f197031a-cf57-4c91-8c59-cd82286a3a6c",
+      "result_id": "b673799a-7b70-4caf-be67-838fc7104492"
+    },
+    {
+      "claim_id": "5de480d8-9bb1-4ba5-86ff-7396932c06cb",
+      "result_id": "115f2127-494e-434d-a3e1-74567f12f95d"
+    },
+    {
+      "claim_id": "e07d6208-72ac-4ea7-9874-d6ed369b01d3",
+      "result_id": "115f2127-494e-434d-a3e1-74567f12f95d"
+    },
+    {
+      "claim_id": "a786fd20-f62e-4370-9444-46c619a53586",
+      "result_id": "115f2127-494e-434d-a3e1-74567f12f95d"
+    },
+    {
+      "claim_id": "140892e3-cfa2-4884-87e0-08f84adfbc02",
+      "result_id": "60da07a9-de01-4701-aa56-f0947641841c"
+    },
+    {
+      "claim_id": "cc45d364-8531-43b5-93a6-827d6bb31e9b",
+      "result_id": "60da07a9-de01-4701-aa56-f0947641841c"
+    },
+    {
+      "claim_id": "abd4476e-a710-42e6-894f-24ab235fe5ca",
+      "result_id": "60da07a9-de01-4701-aa56-f0947641841c"
+    },
+    {
+      "claim_id": "c00409b4-f47e-427d-88a2-adceb9b9098a",
+      "result_id": "72609228-13a5-415a-a63a-65f693931934"
+    },
+    {
+      "claim_id": "21724423-d022-4ccf-bfea-ccf896f7940b",
+      "result_id": "2e192eef-1f24-48f8-9e95-872c637b6d43"
+    },
+    {
+      "claim_id": "1a757c96-b1c2-431d-8989-e4bfb4c1bc24",
+      "result_id": "9f444944-2caa-4e6b-9575-eec126747e89"
+    },
+    {
+      "claim_id": "a24ec274-ae0b-4ec7-857b-0e40403afdf5",
+      "result_id": "9f444944-2caa-4e6b-9575-eec126747e89"
+    },
+    {
+      "claim_id": "7e360269-a524-4ed0-bf3e-a7df6dbbbeba",
+      "result_id": "9f444944-2caa-4e6b-9575-eec126747e89"
+    },
+    {
+      "claim_id": "be19646d-387a-476f-aa5f-0eaadebabaa9",
+      "result_id": "9f444944-2caa-4e6b-9575-eec126747e89"
+    },
+    {
+      "claim_id": "094e6c1a-407b-457b-9e55-bdc7ece668cc",
+      "result_id": "9f444944-2caa-4e6b-9575-eec126747e89"
+    },
+    {
+      "claim_id": "a390e8f4-f70d-49d8-9cac-8424e194e5d9",
+      "result_id": "b7df68e4-2734-4b00-8d15-6eec2648106e"
+    },
+    {
+      "claim_id": "3315ab2e-fc90-4225-b879-4ecccf789524",
+      "result_id": "5f17f300-d1df-4956-b012-4f5bfd9cc297"
+    },
+    {
+      "claim_id": "3421b33e-8629-4e11-be68-2536b5ef5d9c",
+      "result_id": "5f17f300-d1df-4956-b012-4f5bfd9cc297"
+    },
+    {
+      "claim_id": "5189ff13-0378-4254-8340-9fafcd79eea9",
+      "result_id": "5f17f300-d1df-4956-b012-4f5bfd9cc297"
+    }
+  ],
+  "comparisons": []
+}

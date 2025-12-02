@@ -1,0 +1,1253 @@
+{
+  "submission": {
+    "id": "b85cc992-d615-4ba6-8ea9-086042a7df9d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:09:19.168187Z",
+    "updated_at": "2025-12-01T22:09:19.168187Z"
+  },
+  "content": [
+    {
+      "id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "submission_id": "b85cc992-d615-4ba6-8ea9-086042a7df9d",
+      "content_type": "manuscript",
+      "content_text": "# Lifting the veil on the dynamics of neuronal activities evoked by transcranial magnetic stimulation\n\n## Authors\n\n- Bingshuo Li<sup>1</sup> ([ORCID: 0000-0002-9024-8354](https://orcid.org/0000-0002-9024-8354))\n- Juha P Virtanen<sup>1</sup>\n- Axel Oeltermann<sup>6</sup>\n- Cornelius Schwarz<sup>1</sup> ([ORCID: 0000-0003-4725-473X](https://orcid.org/0000-0003-4725-473X))\n- Martin A Giese<sup>2</sup>\n- Ulf Ziemann<sup>4</sup>\n- Alia Benali<sup>1</sup> ([ORCID: 0000-0001-6047-3713](https://orcid.org/0000-0001-6047-3713)) \u2020\n\n### Affiliations\n\n1. Systems Neurophysiology, Werner Reichardt Centre for Integrative Neuroscience University of T\u00fcbingen T\u00fcbingen Germany\n2. Section on Computational Sensomotorics, Werner Reichardt Centre for Integrative Neuroscience University of T\u00fcbingen T\u00fcbingen Germany\n3. Department of Cognitive Neurology, Hertie Institute for Clinical Brain Research University of T\u00fcbingen T\u00fcbingen Germany\n4. Department of Neurology and Stroke, Hertie Institute for Clinical Brain Research University of T\u00fcbingen T\u00fcbingen Germany\n5. Graduate Training Centre/International Max Planck Research School for Cognitive and Systems Neuroscience University of T\u00fcbingen T\u00fcbingen Germany\n6. Max Planck Institute for Biological Cybernetics T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscranial magnetic stimulation (TMS) is a widely used non-invasive tool to study and modulate human brain functions. However, TMS-evoked activity of individual neurons has remained largely inaccessible due to the large TMS-induced electromagnetic fields. Here, we present a general method providing direct in vivo electrophysiological access to TMS-evoked neuronal activity 0.8\u20131 ms after TMS onset. We translated human single-pulse TMS to rodents and unveiled time-grained evoked activities of motor cortex layer V neurons that show high-frequency spiking within the first 6 ms depending on TMS-induced current orientation and a multiphasic spike-rhythm alternating between excitation and inhibition in the 6\u2013300 ms epoch, all of which can be linked to various human TMS responses recorded at the level of spinal cord and muscles. The advance here facilitates a new level of insight into the TMS-brain interaction that is vital for developing this non-invasive tool to purposefully explore and effectively treat the human brain.\n\n## Introduction\n\nIn 1985, when Barker et al. (1985) applied a pulsed magnetic field to a subject\u2019s head to selectively evoke responses in a hand muscle, the scientific community was fascinated by this pain-free, electrodeless, and non-invasive tool for brain stimulation. Since then, transcranial magnetic stimulation (TMS) has attracted enormous interest in neurology, psychiatry, and applied neuroscience research for its unique capability of non-invasively activating neuronal populations and inducing plasticity. Despite its impressive array of applications and fast-growing popularity (Cohen et al., 1998; Walsh and Cowey, 2000; Reis et al., 2008; Funke and Benali, 2011; Lefaucheur et al., 2014), TMS is poorly understood physiologically as we know very little about how TMS interacts with the brain at the level of neurons and circuitries. Although various sources of indirect evidence obtained from human studies support the use of TMS in multiple contexts (Di Lazzaro et al., 2008; Chung et al., 2015; Suppa et al., 2016), our very limited insight into the neurophysiology of TMS remains a bottleneck that hampers the utilization and the development of TMS applications, blocking the exciting potential of this non-invasive brain stimulation tool.\n\nOne critical reason behind this inadequacy is the absence of a research platform on which TMS-evoked neuronal activities can be investigated in vivo in real time. Extracellular electrophysiology (EEP) with microelectrodes is the gold standard for studying brain activities at the level of neurons (Scanziani and H\u00e4usser, 2009). However, a single TMS pulse, characterized by an alternating tesla-level magnetic field with a center frequency of approximately 4 kHz (Ilmoniemi et al., 1999; Wagner et al., 2007), generates an array of strong interferences disturbing the acquisition of EEP signal. As evidenced by the pioneering works on TMS-EEP (Moliadze et al., 2003; Pasley et al., 2009), artifacts from TMS resulted in a significant amount of data loss that precluded the investigation of TMS-evoked neuronal activities for up to 100 ms after each TMS pulse. Several groups used innovative imaging methods to circumvent this problem (Allen et al., 2007; Kozyrev et al., 2014; Murphy et al., 2016); however, their investigations were restricted to the upper cortical layers and they were unable to reach the single-neuron and millisecond precision needed to decipher the intricate interactions between TMS and neurons. Recently, two groups reported TMS-EEP methods for non-human primate research. One of the methods utilized custom-built TMS coil and offline correction to minimize the TMS-induced data loss to a median time of 2.5 ms (Tischler et al., 2011), while the other used a combination of custom-built coil, amplifier modifications, field sensing, active compensation, and offline correction to minimize the data loss to 1 ms (Mueller et al., 2014). Despite their success in artifact reduction, these methods face a major limitation that the technical expertise required for their implementations, especially custom-building TMS coils and field sensing, is not widely accessible to the neuroscience community. More importantly, these methods were developed solely for non-human primate research, which is used for investigating the neuronal underpinnings of high-level cognitive functions and therefore is not best suited for investigations concerning basic neurophysiology on the level of cells and detailed microcircuits.\n\nWith the aim of establishing a widely applicable in vivo experimental platform to study the dynamics of TMS-evoked neuronal activities and to further develop the scientific and clinical applications of this powerful technique, we engineered a novel method for TMS-EEP that is suitable for, but not limited to, laboratory rodents, which are widely accessible and offer a rich repertoire of experimental techniques including transgenic and optogenetic tools. The method is compatible with existing standard TMS coils and allows the recording of neuronal activities 0.8\u20131 ms after the onset of various types of TMS stimuli by attenuating artifacts resulting from magnetic induction, electric field coupling, and vibrations. Furthermore, the method allows for the instantaneous determination of TMS-driven inadvertent charge injection into the neural tissue, a problem that has been overlooked by almost all prior TMS-EEP studies. In the following sections, we will present this methodological advance and demonstrate its potential by unveiling neuronal activities in the layer V of the primary motor cortex (M1) that accompany cortically evoked unilateral muscle activations by monophasic single-pulse TMS (mspTMS). Additionally, we will also demonstrate that mspTMS modulates different neuronal circuits depending on the orientation of the stimulating current or the time-window of investigation.\n\n## Results\n\n### Attenuation of the induction artifact\n\nThe induction artifact (Figure 1, period indicated in blue) is created as coil-generated rapid magnetic flux change induces voltages within loops formed along an EEP recording assembly. Owing to the large rate of flux change, the induction artifact, if transmitted to the high-gain and filter stages of an EEP amplifier, can easily lead to signal saturation and data loss (Figure 1 inset). To address this, we developed a gated multi-stage TMS-EEP amplifier (Figure 2). It consists of a differential preamplifier (Pamp) stage of gain four and a filter-amplifier (Famp) stage of gain 500, separated by an ultra-low capacitance/charge injection solid-state analog switch (SSSW) controlled by optically coupled digital signal synchronized to TMS. The components of the amplifier were chosen to provide the optimal balance between voltage and current noise with the source impedance of EEP microelectrodes. The Pamp stage must be able to maintain its high impedance character when being perturbed by TMS. Failing to do so will result in excessive induction current in the input wires that leads to electrical stimulation of the brain. In our design, the electronic components and supply voltage of the Pamp stage were chosen so it can tolerate\u00a0\u00b17.9 V input during TMS. Due to its high-gain and filters, the Famp stage must be protected from TMS by SSSW that grounds the input to Famp for a user-defined time interval around TMS onset (e.g. from 0.2 ms pre- to 0.8 ms post-TMS). The SSSW was strategically placed behind the input capacitor of a high-pass filter of the Famp so that the input capacitor is preconditioned to any DC bias in the microelectrodes before the end of the grounding period. To minimize ground bounce and to reduce ground loop, the external digital signal that controls SSSW is connected to the amplifier circuit through an optocoupler (OC). In addition, to protect the amplifier circuit from TMS-induced fields, the circuit board of the amplifier is mounted inside a 1.5-mm-thick grounded aluminum enclosure. The Pamp, as well as DC-DC converters, is housed inside a metal shield for additional protection. Furthermore, to minimize artifacts from vibrations due to the loud click sound of TMS coils, solder contacts, instead of spring-loaded connectors, were used whenever possible, as well as polyphenylene sulfide film capacitors, since they do not generate piezoelectric voltages from vibration. The default frequency response of the amplifier was set from 300 Hz (\u22123 dB) to 5 kHz (\u22126 dB), but the lower bound of the passband can be adjusted to 4 Hz as needed for different applications. A simplified circuit diagram of the amplifier, including the model number of its critical components, is shown in Figure 2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig1-v3.jpg)\n\n**Figure 1.:** The full waveform of a TMS artifact recorded differentially under low-gain (x4) using a high impedance amplifier. The artifact consists of a series of sharp deflections (induction and fast E-field coupling artifacts) and a long tail (polarization decay artifact resulted from E-field coupling). The slow polarization decay artifact renders the signal out of range (indicated by the green area) until ca. 30 ms post-TMS in a standard EEP system. Vibration artifacts (see Figure 4B) are not visible here due to low amplification. The inset shows that under high-gain (x2000) needed for EEP, TMS artifacts lead to long signal saturation in a standard EEP system (bandpass 300\u20135000 Hz) while producing negligible interference in our method. Lightning symbol, TMS onset (at 0 ms). E-field, electric field.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig2-v3.jpg)\n\n**Figure 2.:** Model numbers of the most critical electronic components are noted in red, the values of certain elementary components are noted in grey (units: ohm for resistor; farad for capacitor), and the amplification factor for each stage is indicated in parenthesis. Pamp, pre-amplifier stage; Famp, filter-amplifier stage; OC, optocoupler; SSSW, solid-state analog switch; LGM, low-gain monitoring channel.\n\n### Attenuation of electric field coupling artifacts\n\nThe coil-emitted electric field gives rise to another type of artifacts. When a TMS pulse is triggered, a large current driven by a kV-level voltage pulse flows through the coil. Inadvertently, this process emits an electric field that injects a displacement current into the EEP recording assembly through capacitive coupling (Figure 3A). In a short time-interval (<0.4 ms; Figure 1, period indicated in orange), as the coil current rapidly fluctuates, the displacement current generates a fast-changing artifact in EEP signal. In a long time-interval (tens of ms; Figure 1, period indicated in yellow), a decay-like artifact is observed as the displacement current polarizes the electrochemical double-layer of microelectrode tips and thereby generates a decaying waveform while the double-layer returns to its equilibrium potential. Depending on stimulation intensity, electrode impedance, and filter settings, the decay may persist with relatively high signal values for tens of milliseconds before re-entering the input range of a standard EEP amplifier (green area in Figure 1), contributing to an extended period of data loss. To address this problem, we developed an electrical shield for the TMS coil that substantially attenuates the coil-emitted electric field (Figure 3B). One important consideration in shield construction is that the amount of eddy current in the shield should remain low; otherwise, strong vibration or even magnetic attenuation may occur. Therefore, we applied a layer of weakly conducting material in shield construction and the resulted shield possesses an electrical resistance of 10 k\u03a9 (see Materials and methods) that does not result in vibration and magnetic attenuation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig3-v3.jpg)\n\n**Figure 3.:** (A) A schematic illustrating how electric field coupling interferes with the EEP recording circuit. Here, the loop between one microelectrode and the ground is used as an example. The microelectrode is modeled as a parallel resistor-capacitor for simplification. Note how displacement current (ID), generated by electric field coupling, propagates in both directions once it enters the circuit, while the magnetically induced current (Iind) only propagates in a circular manner. The branch of displacement current (ID1) that flows toward the input end of the amplifier opposes the Iind, counteracting the magnetically induced voltage change across the amplifier input resistance (Rin). The other branch (ID2) flows toward the electrode and can cause polarization at the microelectrode tip. Abbreviations: B, magnetic field; CEL, electrode capacitance; Cin, amplifier input capacitance; Icoil, TMS coil current; REL, electrode resistance. (B) The electrical shield constructed for the Magstim D25 coil. The shield fits tightly with the coil and is grounded through the EEP recording system. (C) Induction waveforms from a pickup probe positioned right below the coil center, along the X-, Y- and Z- axis, with or without the shield, under mspTMS at maximum intensity. Along each axis, the waveforms obtained under shielded and no shield condition overlap, confirming that the shield does not attenuate the magnetic output of the TMS coil. (D) Input voltage to a high impedance buffer (AD825, Vs =\u00b115V), measured with a 1.5 M\u2126 (1 kHz) microelectrode, and an Ag/AgCl ground electrode in normal saline under mspTMS at maximum intensity with or without the shield. Signal in the \u2018Removed\u2019 condition was obtained by taking the difference between the waveforms in \u2018No shield\u2019 and \u2018Shielded\u2019 condition. The shield restored the correct induction waveform and abolished the voltage offset that leads to the decay.\n\nTo verify the performance of our shield, we first used a magnetic pickup probe to confirm that at 10 k\u03a9, the shield does not attenuate the magnetic output of our TMS coil. As Figure 3C illustrates, induction voltage waveforms, with and without the shield, overlap perfectly, confirming the absence of any noticeable magnetic attenuation. Subsequently, using a high-impedance buffer, we measured the voltage between an EEP microelectrode and a ground electrode, both electrode tips immersed in a saline bath, under mspTMS at 100% maximum stimulator output (MSO) delivered with or without the shield. We expected that the shield would remove, to a large extent, voltage signal that is due to electric field coupling between the TMS coil and the EEP recording assembly. Figure 3D illustrates the results from these measurements. Without the shield, the captured waveform was drastically different from the induction waveforms resulted by mspTMS (as seen in Figure 3C), and it ended with a strong voltage bias (polarization). With the shield in place, the captured waveform appeared consistent with the induction waveforms and the voltage bias was no longer visible. These findings confirm that by interrupting electric field coupling, the shield is effective in preventing polarization and the decay artifact that follows.\n\n### Attenuation of vibration artifacts\n\nUpon elimination of artifacts resulted from induction and electric field coupling, vibration artifacts, which are normally masked by the other artifacts, become visible (Figure 4B). Vibration can be generated by magnetic force, as well as by sound pressure perturbation. For the magnetically mediated vibration, an avoidance of ferromagnetic materials and large conductive surfaces in the close vicinity of the coil is adequate. However, the elimination of vibration artifacts driven by sound pressure is not straightforward. When a TMS pulse is triggered, a loud click sound is produced by coil wires due to the attractive forces between them. This sound is problematic as it generates micro-vibration in the amplifier input cables. The extremely weak signal (\u03bcV-level) these cables carry can be easily perturbed by micro-vibrations through the triboelectric effect (Fowler, 1976). Since the generation of such click sound is inevitable, we attenuated the vibration artifacts by using a special type of low-noise miniature coaxial cable with a semiconducting layer added between its dielectric and braided shield (Figure 4A). The addition of this semiconducting layer provides a path that drains triboelectric charges, rendering the cables insensitive to vibration (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig4-v3.jpg)\n\n**Figure 4.:** (A) A schematic illustration of the 36-gauge low-noise miniature coaxial cable. A semiconducting layer of graphite is added between the braided shield and the dielectric of the cable to drain triboelectric charges, rendering the cable insensitive to vibration. (B) An example of vibration artifacts recorded under the standard EEP conditions (x2000 using our TMS-EEP amplifier; 1.5 M\u2126 microelectrode pair; Ag/AgCl ground electrode; normal miniature coaxial cable) in a saline bath after induction and electric field coupling artifacts were suppressed. The vibration artifacts can manifest in multiple types of waveform, depending on the parts of the recording assembly that are perturbed and the resonance properties of these parts. (C) The implementation of low-noise miniature coaxial cables attenuated the vibrational artifacts. Signal recorded under conditions identical to those in (B) except the cables.\n\nDespite the impressive performance of the low-noise miniature coaxial cable in attenuating vibration artifacts, its length in an EEP recording assembly should be limited as the cable\u2019s capacitance (100 pF/m), together with the amplifier input capacitance and electrode impedance, acts as a voltage divider that attenuates EEP signal. In our case, we kept the length of our cables at 16 cm to keep the signal attenuation less than 20% at 1 kHz.\n\n### Minimization and determination of inadvertent charge injection\n\nTMS-driven inadvertent charge injection is another major issue, which has been overlooked by most prior reports using EEP under TMS (Moliadze et al., 2003, 2005; Pasley et al., 2009). By inserting electrodes into the brain and connecting them to the measurement electronics, multiple loops of electric circuit are formed (Figure 5). When being subjected to alternating electric and magnetic field, voltages can be readily developed along these loops that drive unwanted current injection into the brain through microelectrodes. If the amount and the temporal structure of the injected current are comparable to the threshold parameters reported in intracortical microstimulation (ICMS) literature (bipolar charge transfer totaling from 150 to 800 pC, current waveform approximately similar to that of TMS; see Asanuma and Ros\u00e9n, 1973\u00a0and Butovas and Schwarz, 2003), such current will excite neuronal elements around the microelectrode tips and therefore severely confound the measurement of TMS effects. Therefore, it is crucial that the development of voltages along these loops be minimized. Since a large portion of the TMS-emitted electric field had already been filtered away by the coil shield, precautions were taken for magnetic induction. These included a compact arrangement of microelectrodes as well as cable twisting (Figure 5\u2014figure supplement 1), both minimize the area of induction loops exposed to TMS. More importantly, we incorporated a low-gain monitoring channel (LGM as seen in Figure 2) in our amplifier design that allowed us to conveniently determine the amount of inadvertent current flow, without any additional measurement devices, under each experimental setup. The conversion from voltage, which is measured by the LGM, to current is made possible since amplifier\u2019s input capacitance and its voltage fluctuation are known, and the amount of current flow through the input capacitance is equal to the amount of current flow in the circuit. A detailed description of this conversion is presented in Materials and methods and Figure 5\u2014figure supplement 2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig5-v3.jpg)\n\n**Figure 5.:** (A) A schematic illustration of the induction loop formed between the recording (red) and the reference (green) microelectrode under TMS. In the case that TMS-induced voltage is high enough, a substantial amount of electrical current (blue dashed lines) can flow within the loop and subsequently, this may inadvertently stimulate neuronal elements around the microelectrode tips. (B) A schematic illustration of the induction loop formed between a microelectrode and the ground electrode under TMS.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** We fabricated in-house a three-pronged electrode set that minimizes the area of induction loops under TMS. The microelectrodes are connected to a pair of twisted low-noise miniature coaxial cables, and the ground electrode is connected to the coaxial cable shield. A macroscopic view of the electrode set in a recording setup is shown in Figure 6A.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Circuit component abbreviations: amp, amplifier; C, capacitance; el1, recording microelectrode; el2, reference microelectrode; elg, ground electrode; GND, amplifier ground; in, input; Iind, induction current; R, resistance.\n\n### In vivo method evaluation under various types of TMS stimuli\n\nIn six male Sprague-Dawley rats, we evaluated and optimized our method. Figure 6A offers an overview of our recording setup and the subsequent figures illustrate the performance of the method in vivo under a single monophasic (Figure 6B) and biphasic (Figure 6C) TMS pulse, as well as a triplet of 50 Hz biphasic pulses (Figure 6D), which is the fundamental building block of theta burst stimulation (Huang et al., 2005). The stimuli delivered here can be considered as the \u2018worst-case scenarios\u2019 as the stimulator-coil combinations used yield magnetic outputs (peak strength up to four tesla) that are one of the highest among commercially available TMS systems (see Materials and methods). Nonetheless, the EEP signal recovered between 0.8\u00a0and\u00a01 ms after the onset of each TMS pulse and was free from artifacts. Furthermore, the amount of inadvertent charge injection under each condition was far below (by a factor of 200 or more; Figure 6\u2014figure supplement 1) the modulation or activation thresholds reported in ICMS literature (Asanuma and Ros\u00e9n, 1973; Butovas and Schwarz, 2003), confirming the validity of our measurements.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig6-v3.jpg)\n\n**Figure 6.:** (A) A schematic illustration of our recording setup. Thick arrows, direction of coil current; inset blue arrows, direction of induced current in the brain; ML, medial-lateral; PA, posterior-anterior; CFA, caudal forelimb area (rodent\u2019s equivalent to forelimb M1 in primates); EMG, intramuscular electromyography. (B\u2013D) A sample trace of in vivo recordings under the worst-possible (see Materials and methods) monophasic, biphasic, and theta-burst (first three pulses) stimulus, respectively. The short transient (\u22120.2 to\u00a0+0.8 ms) during which the amplifier is protected from the induction artifact is indicated in gray. Lightning symbol, TMS onset (at 0 ms); dashed line, spike detection threshold (see Materials and methods); asterisks, extracellular spikes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Under the worst-possible stimuli (see Materials and methods), the in vivo measured values of induction current (y-axis) and charge transfer (integral of y) are shown. All values obtained are far below (by a factor of 200 or more) the modulation and the activation thresholds reported in the ICMS literature (Asanuma and Ros\u00e9n, 1973; Butovas and Schwarz, 2003). Therefore, it can be concluded that under our recording setup, neurobiological effects of inadvertent charge injection can be neglected.\n\n### mspTMS evokes in the layer V of forelimb M1 a multiphasic rhythm of neuronal activities\n\nWith the newly developed method, we sought to address the question: what are the neuronal correlates of TMS cortically evoked muscle activation? In another group of seven male Sprague-Dawley rats (anesthetized by ketamine-xylazine), we recorded in vivo mspTMS-evoked neuronal activities in the layer V (Figure 7\u2014figure supplement 1) of the caudal forelimb area (CFA), rodent\u2019s equivalent to the forelimb area of primate M1 (Rouiller et al., 1993). With the coil center positioned over the left CFA and the induced current pointing from the medial to the lateral part of the brain (ML stimulation; Figure 6A inset), mspTMS evoked unilateral movement of the right forelimb. Simultaneous intramuscular electromyogram (EMG) recordings of the left and right biceps brachii muscle revealed motor unit action potentials (MUAPs) unilaterally in right biceps brachii (contralateral to the stimulated hemisphere; Figure 7B and the insets of Figure 7C\u2013F). The onset latency of the MUAPs was around 11 ms, similar to that found in our single-pulse ICMS experiment (Figure 7\u2014figure supplement 2) and in the rodent single-pulse ICMS literature (Liang et al., 1993; Deffeyes et al., 2015), confirming the cortical origin of TMS-evoked muscle activation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig7-v3.jpg)\n\n**Figure 7.:** (A) Raster plot (top) and PSTH (bottom; binsize 1 ms) of multiunit spike activity evoked by mspTMS (stimulus orientation ML; intensity 120% MT; onset at 0 ms) recorded in layer V of the CFA from one animal. (B) Traces of evoked MUAPs (corresponding to trials in A) obtained by intramuscular EMG in the biceps (bi.) brachii muscle contralateral and ipsilateral to the stimulated CFA. (C\u2013F) Population average (N\u00a0=\u00a07) of normalized multiunit FR in the layer V of CFA evoked by ML-oriented mspTMS of increasing intensity. The PSTHs were smoothed by a Gaussian kernel for visualization. Inset, example traces of evoked MUAP in the contralateral bi. brachii from one animal. Dashed lines, significance thresholds determined by the 2.5 or 97.5 percentile of the empirical distribution of baseline normalized FR (see Materials and methods for details).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The hematoxylin and eosin stained coronal section confirms the placement of recording electrode (Rec) in layer Vb of CFA and the placement of reference electrode (Ref) outside of the primary motor cortex. The location of Rec was marked by an electrolytic lesion after the experiment and the location of Ref, while not marked by lesioning, is also visible (* in the left inset). The scale bar for the insets represents 20 \u03bcm distance. CC indicates corpus callosum. Latin numbers I to VI represent the different cortical layers.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** In one animal, we stimulated layer V of the left CFA with a single ICMS pulse and recorded intramuscular EMG in both left (ipsilateral to the stimulated motor cortex; not shown) and right (contralateral) biceps brachii. The evoked MUAPs, detected solely in the right biceps brachii, displayed onset latencies (11\u201312 ms) similar to those obtained in our TMS experiment, suggesting the cortical origin of the TMS-evoked MUAPs.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig7-figsupp3-v3.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Population average (N\u00a0=\u00a04) of normalized multiunit FR in layer V of CFA evoked by PA-oriented mspTMS. The histograms were constructed using the same procedures as those described for Figure 7C\u2013F. Insets, zoom-ins (0\u201340 ms) on the PSTH of evoked normalized FR with no smoothing. Dashed lines, significance thresholds determined by the 2.5 or 97.5 percentile of the empirical distribution of baseline normalized FR (see Materials and methods for details). TMS was delivered at time 0 ms.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig7-figsupp4-v3.jpg)\n\n**Figure 7\u2014figure supplement 4.:** In five animals (299 trials total), we recorded multiunit activities in layer II/III (400 \u00b5m from the cortical surface) of the CFA under mspTMS (ML orientation) at 120% MT. The histograms were constructed using the same procedures as those described for Figure 7C\u2013F. The TMS-evoked multiphasic pattern of FR found here is qualitatively similar to that obtained in layer V (Figure 7C\u2013F). Insets, zoom-ins (0\u201340 ms) on the PSTH of evoked normalized FR with no smoothing. Dashed lines, significance thresholds determined by the 2.5 or 97.5 percentile of the empirical distribution of baseline normalized FR (see Materials and\u00a0methods for details). TMS was delivered at time 0 ms.\n\nAt the neuronal level, in layer V of the CFA, mspTMS evoked a rhythm of neuronal activities alternating between excitation and inhibition that lasted until approximately 300 ms post-stimulation. Figure 7A illustrates the multiunit spike raster and its corresponding peristimulus time histogram (PSTH) of multiunit firing rate (FR) from one animal. Figure 7C\u2013F show the evoked normalized FR (instantaneous FR subtracted by baseline average FR; see Materials and methods) with increasing stimulation intensity (0%, 95%, 100%, and 120% motor threshold, MT) averaged across all animals. Significance thresholds were drawn based on the 2.5 and 97.5 percentile of the empirical distribution of normalized FR during baseline (500 ms pre-TMS; see Materials and methods for details) to control Type I error rate (p<0.05). We categorized the evoked significant excitatory and inhibitory events into three phases: intermediate excitation (a period of increased FR that peaks around 20 ms), inhibition (a long-lasting pause in FR after the intermediate excitation), and rebound excitation (a period of increased FR following the inhibition). To investigate the effects of stimulation intensity on the normalized FR of each phase, we constructed hierarchical linear mixed-effects models. Stimulation intensity positively modulated the normalized FR for the intermediate excitation phase (\u03b2\u00a0=\u00a02.75\u00a0\u00b1\u00a00.24, F(1)=127.23, p<0.001) and the rebound excitation phase (\u03b2\u00a0=\u00a01.18\u00a0\u00b1\u00a00.19, F(1)=38.65, p<0.001), while negatively modulated the normalized FR for the inhibition phase (\u03b2\u00a0=\u00a0\u22120.23\u00a0\u00b1\u00a00.10, F(1)=5.28, p=0.02). It is important to note here that despite the faithful EMG response in the contralateral biceps brachii muscle, the neuronal firing rate in the short-latency window (1\u20136 ms after TMS onset) was low. This finding was rather surprising and will be further explored in the following section.\n\n### mspTMS evoked short-latency (1\u20136 ms) neuronal responses differ with stimulus orientations\n\nSince we did not observe any significant modulation of neuronal FR in the short-latency window (1\u20136 ms) after mspTMS despite faithful muscle activations in the contralateral forelimb, in another set of experiments (N\u00a0=\u00a04), we explored the possibility that neuronal response in this very early time window is dependent on the direction of mspTMS-induced current. In this set of experiments, we switched the TMS coil orientation so that the induced current flows from the posterior to the anterior part of the brain (PA stimulation; Figure 6A inset). We could replicate most findings found in the previous set of experiments as the multiphasic response evoked by PA stimulation is qualitatively similar to that evoked by ML stimulation (Figure 7\u2014figure supplement 3). However, in the short-latency window after TMS onset, the neuronal responses observed in ML and PA stimulation are drastically different. As the two examples in Figure 8A demonstrate, at 120% MT intensity, ML stimulation evoked scarcely any spike, whereas PA stimulation evoked robust neuronal firing generating a distinct temporal pattern with peaks at 1.2\u20131.6 ms and at 3.2\u20134.2 ms. To quantify the short-latency responses in the population, we constructed PSTHs of normalized FR across all animals under ML (Figure 8B) and PA (Figure 8C) stimulation. Significance thresholds were drawn using the 2.5 and 97.5 percentile of normalized FR distribution during baseline. ML stimulation evoked no significant excitation with the exception of the low albeit significant FR at 3.5\u20134 ms under stimulation intensity of 120% MT. On the contrary, under PA stimulation, multiple significant excitatory events were observed. At subthreshold level, significant excitatory events appeared at 2.5\u20133.5 ms and at 4\u20134.5 ms. As the stimulation intensity increased, FR was developed at particular time windows: 1\u20131.5 ms and 2.5\u20134.5 ms, reminiscent of the indirect wave (I-wave) phenomena observed in the corticospinal descending volleys in human and animal studies.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig8-v3.jpg)\n\n**Figure 8.:** (A) Examples of short-latency (1\u20136 ms) multiunit response in layer V of the CFA to suprathreshold mspTMS (120% MT) oriented in ML and PA direction. The suprathreshold ML stimulus evoked virtually no response in this time window, whereas the PA stimulus evoked strong periodic firing in the neuronal population. Note, all orientations discussed here refer to the orientation of induced current in the brain. (B\u2013C) Average of short-latency normalized multiunit FR (binsize 0.5 ms) across all animals tested with the ML- (B) and PA- (C) oriented mspTMS at increasing intensities. Dashed lines, significance thresholds determined by the 2.5 or 97.5 percentile of the empirical distribution of baseline normalized multiunit FR (see Materials and methods for details).\n\n## Discussion\n\nOur understanding of the neuronal mechanism of TMS has been largely based on indirect evidence obtained at the level of cortical output reflected in spinal cord or muscle activities. Direct investigation of the dynamics of neuronal activities evoked by TMS was hindered by technical obstacles imposed by the strong electromagnetic pulse produced by TMS. We engineered a widely applicable experimental method for the in vivo study of TMS-evoked brain activities at the level of neurons using EEP. It allows the monitoring of neuronal activities as early as 0.8\u20131 ms after the strong electromagnetic perturbation of various TMS stimuli ranging from single pulse to the high-frequency theta burst stimulation. Our method encompasses solutions to all major challenges in concurrent TMS-EEP recording, including magnetic induction, electric field coupling, vibrations, and inadvertent charge injection. Despite the multidimensional approach of our method, it was developed with generalizability, simplicity, flexibility, and scalability in mind. It is compatible with, but not limited to, rodents, an animal model that is widely used for studying basic neurophysiology and offers a wide range of investigative tools. It does not require active compensation based on magnetic field sensing (Logothetis et al., 2001; Mueller et al., 2014) or custom-made coils (Tischler et al., 2011; Mueller et al., 2014) for artifact reduction. It can accommodate electrodes directly under a conventional TMS coil, a feature making it suitable even for awake animals with chronically implanted electrodes. In addition, the method can be scaled up for large-scale high-density EEP recording with silicon-based microelectrode arrays (Buzs\u00e1ki, 2004) as well as be accompanied by optogenetic tools for the in vivo control of neuronal circuits (Scanziani and H\u00e4usser, 2009).\n\nThe amount of magnetic, electric, and vibrational interference TMS imposed on EEP depends on multiple factors. Some of the most critical factors include the waveform and magnitude of the pulsed magnetic and electric field emitted from a TMS coil, the size of circuit loops formed by an EEP recording assembly, and the coil position relative to these loops. Changes in these parameters will result in changes in the severity of different types of interference. For example, keeping the coil the same, by replacing a standard monophasic with a standard biphasic stimulator, coil-emitted fields will generate a longer period of magnetic and electric field interference due to the longer pulse waveform. However, the severity of interference might be lower if the coil and biphasic stimulator combination does not produce magnetic and electric outputs that are as high as those in the monophasic case. Similarly, miniaturization of TMS coils for small animals can also lead to a reduction in interference because of the reduced electromagnetic output of such devices. Furthermore, the integration of recording, reference, and ground electrode in one microfabricated electrode array can also reduce the severity of interference as such configuration significantly decreases the area of circuit loops exposed to TMS.\n\nOne common criticism of TMS investigations in rodents is that the TMS coil is large compared to the size of a rodent brain. While we fully acknowledge this concern, we argue that it is not a problem of critical importance at this stage. With careful coil positioning, it is possible to achieve certain level of spatial selectivity as evident in the results of our study as well as those of several other reports (Nielsen et al., 2007; Rotenberg et al., 2010; Muller et al., 2014). In addition, plasticity, assessed by motor output (Muller et al., 2014), learning performance (Mix et al., 2010), sensory-evoked neural activities (Thimm and Funke, 2015; Murphy et al., 2016), or protein expressions (Trippe et al., 2009; Benali et al., 2011), can also be successfully induced in rodents using human TMS coils, making rodents a suitable experimental model for investigating the basic neuronal mechanisms underlying stimulation-induced plasticity. Furthermore, TMS can be used as a tool to deliver a strong transient stimulus to perturb neuronal populations of the neocortex (Walsh and Cowey, 2000). Being able to capture the neuronal response to such perturbation at spike resolution will undoubtedly open up another avenue to study the connectivity and the functional properties of neuronal networks. Nonetheless, the development of smaller and more compact coils specifically designed for small animals would be beneficial for their improved spatial resolution and smaller electromagnetic interference as the maximum magnetic output of these coils is much smaller (at mT level; Makowiecki et al., 2014; Tang et al., 2016)\u00a0than the 4T output tested in our development.\n\nTo validate our method, we successfully translated mspTMS to rodents and unveiled the evoked neuronal activities underlying this classical TMS stimulus which has been widely used in humans since its introduction in 1985 (Barker et al., 1985). At the behavioral level, mspTMS delivered in either ML or PA direction over left CFA evoked unilateral forelimb movement in the contralateral side. The similarity between the onset latency of mspTMS- and single-pulse ICMS-evoked MUAPs suggests the cortical origin of the TMS-evoked muscle activations. At the neuronal level, despite the similar evoked motor outputs, mspTMS delivered in the ML and PA orientation evoked different CFA layer V neuronal activities in the short-latency window (1\u20136 ms) after TMS onset. While threshold or suprathreshold ML oriented stimuli evoked virtually no response in this time window, PA oriented stimuli evoked population spiking activities that occurred preferably around 1\u20131.5 ms and at 3\u20133.5 ms (Figure 8). Such discrepancy in neuronal response suggests that TMS-induced current of different orientations activates different microcircuits in the rodent forelimb M1: ML-oriented stimuli directly activated pyramidal cells of the descending motor pathways while PA-oriented stimuli evoked trans-synaptic high-frequency spiking activities in M1 (Figure 9A). It is important to note here that neuronal activity within 1 ms after TMS onset is not visible. Therefore, any antidromic spike evoked by direct axonal activations could not be recorded.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/30552/elife-30552-fig9-v3.jpg)\n\n**Figure 9.:** (A) In the short-latency time window (1\u20136 ms after onset), ML- and PA-oriented mspTMS evoked different patterns of neuronal activities in layer V of CFA (left panel). ML stimuli activated the descending PT pathways, while PA stimuli triggered an oscillatory spiking event that reflects the local connectivity within M1 (right panel). (B) In the long-latency time window (6\u2013300 ms after onset), mspTMS evoked a multiphasic response alternating between excitation and inhibition (left panel shows a raw spike trace evoked by a suprathreshold stimulus; blue and red code for phase of significant excitation and inhibition, respectively, adopted from Figure 7). This multiphasic pattern is generated through multiple possible long-range circuits activated by mspTMS (right panel). Abbreviations: BG, basal ganglia; CC, corpus callosum; M1, primary motor cortex; PM, premotor cortex; S1/S2, somatosensory cortices; SC, subcortical structures; STN, subthalamic nucleus.\n\nIt might be argued that the observed discrepancy in short-latency response is a result of bias in neuronal sampling. We believe this is rather unlikely, as short-latency spikes evoked by ML stimulation were absent across multiple recording sites within CFA (0 out of 7 sites) while the significant high-frequency spiking pattern was observed readily within CFA under PA stimulation (3 out of 4 sites). Additionally, in PA trials, the observed high-frequency spiking disappeared when we turned the stimulus orientation to ML. While we cannot rule out the possibility that mspTMS evoked early spike responses in areas other than the ones we monitored, our data supports the notion that in the layer V of CFA \u2014 the output layer of the rodent forelimb M1 \u2014 selectivity in stimulus orientation exists. Another confounding factor that might explain the discrepancy is the intensity difference of induced electric fields in the brain under ML and PA stimulation. Since the rodent skull is not spherical, with a given coil output, induced electric field in the ML direction (along the short axis of the skull) should be lower in intensity than that in the PA direction (along the long axis of the skull), raising the possibility that the observed high-frequency spiking pattern under PA stimulation is a result of high intensity of the induced electric field. However, motor thresholds under ML stimulation, in which induced electric field intensity is lower, were significantly lower than their PA counterparts (medianML\u00a0=\u00a061% MSO; medianPA\u00a0=\u00a074% MSO; Wilcoxon rank-sum test, p=0.03). This is a strong indication that factors other than induced electric field intensity play a critical role in stimulus orientation selectivity. Therefore, we conclude that the observed response difference between ML and PA stimulation is unlikely to be caused solely by the difference in the intensity of induced electric fields.\n\nTMS works on human (Kaneko et al., 1996; Di Lazzaro et al., 2001) and non-human primates (Amassian et al., 1990; Amassian and Stewart, 2003) also reported similar stimulus orientation selectivity but in the context of evoked motor outputs. However, we stress that the similarities between our results and those of humans and non-human primates rest solely at the level of a shared common principle: TMS-evoked direct activation is a product of the interaction between TMS-induced electric field and the anatomical and physiological properties of the neurons within. Despite different levels of complexity between primate and rodent brains, certain neuronal structures are preferably stimulated in one stimulus orientation rather than the others. But whether such similarity is based on shared anatomical and physiological properties warrants further investigation. Furthermore, the primate cortex is gyrencephalic while the rodent cortex is lissencephalic. As we could reliably stimulate a lissencephalic M1 and evoke muscle activation on the contralateral forelimb at the correct cortically evoked latency, the locus of direct TMS activation is most likely not dependent on the magnitude of induced electric field component normal to the cortical columns (Fox et al., 2004; Bungert et al., 2017).\n\nThe evoked short-latency response in the PA orientation was characterized by population spikes at a very high frequency similar to that of the I-waves recorded in the corticospinal tracts of humans and animals in response to a transient shock delivered to the M1 by either transcranial electrical stimulation (Patton and Amassian, 1954; Kernell and Chien-Ping, 1967) or TMS (Kaneko et al., 1996; Nakamura et al., 1996; Di Lazzaro et al., 2012). What are the principles of anatomical and functional organization in M1 that drive such high-frequency neuronal response? We recorded in layer V of the motor cortex (Figure 7\u2014figure supplement 1) where two types of excitatory projection neurons exist: the corticospinal tract (PT) neurons that project to midbrain, brainstem, and spinal cord, and the intratelencephalic (IT) neurons that project ipsi- or bilaterally within the cortex and striatum (Harris and Shepherd, 2015). It has been shown recently that PT neurons exhibit reciprocal connectivity characterized by short-term facilitation and that synaptic transmission time for a pair of reciprocally connected PT neurons is 1.6\u00a0\u00b1\u00a00.5 ms (Morishima and Kawaguchi, 2006; Morishima et al., 2011). Therefore, it is plausible that the network formed by the interconnected PT neurons in layer V provides the physiological foundation for the high-frequency neuronal discharge and that a mspTMS pulse oriented in PA direction preferably delivers an input into this network that triggers the observed high-frequency spiking response (Figure 9A). Furthermore, the interconnected PT network may also offer a neuronal explanation for the short-interval intracortical facilitation (SICF) described in the human literature (Tokimura et al., 1996; Ziemann et al., 1998).\n\nAs we extend the window of investigation to 6\u2013300 ms after TMS onset, a multiphasic response appears among the recorded CFA layer V neurons. The response is characterized by its excitation-inhibition-excitation pattern and is not qualitatively different between PA and ML stimulations (Figure 7; Figure 7\u2014figure supplement 3). The strong excitation that peaks around 20 ms, given its latency, duration, presence in both layer V and II/III (Figure 7\u2014figure supplement 4), and its apparent lack of motor output (Figure 7B), reflects a high excitability state of the motor cortex. We hypothesize that this excitation is generated through the cortico-basal ganglia-thalamo-cortical loops (Figure 9B). Evidence suggests that cortex projects monosynaptically to basal ganglia (BG) structures such as striatum and subthalamic nucleus (STN) (Kita and Kita, 2012), while the projection from striatum and STN back to cortex is polysynaptic (Shepherd, 2013). Deep brain stimulation (DBS) of the STN produces cortically evoked EEG potentials with a peak latency of 22.2\u00a0\u00b1\u00a01.2 ms, and TMS delivered at this latency after DBS showed facilitation of its cortically evoked motor outputs (Kuriakose et al., 2010). It is likely that TMS activates IT and PT neurons that project to BG monosynaptically, and the response is then transmitted back to the cortex as the intermediate excitation observed here. But other cortico-cortical or cortico-subcortical loops could be involved as well. The neuronal mechanism of TMS protocols such as intracortical facilitation (Ziemann et al., 1996) and theta burst stimulation (interpulse interval of 20 ms within each burst) (Benali et al., 2011; Suppa et al., 2016) remain unknown; however, it is conceivable that these protocols exploit this particular phase of excitation for their physiological effects. The long-lasting inhibition phase that follows the intermediate excitation is well-known, and evidence supports the notion that it is mediated by GABAB (Butovas et al., 2006; Murphy et al., 2016) and underlies the long-interval intracortical inhibition as well as the cortical silent period in human TMS (Valls-Sol\u00e9 et al., 1992; McDonnell et al., 2006). However, the local or long-distance circuit mediating this phase of inhibition remains unknown. The rebound excitation phase, occurring after the inhibition, represents a period of excitation most likely resulting from the termination of GABAB inhibition, and corresponds to the late cortical disinhibition, which is being harnessed for augmenting plasticity induction in human TMS (Cash et al., 2016). Similarly, the circuit mechanism behind this phase of rebound excitation remains to be elucidated as well.\n\nWould the same neuronal activity pattern be observed if a rodent-sized TMS coil is used to stimulate the forelimb M1? We believe that\u00a0this is the case since we carefully calibrated coil position and stimulation strength according to MEP. Furthermore, the long-lasting inhibition and the rebound excitation are well-documented phenomena in ICMS (Butovas and Schwarz, 2003), which is a much more localized stimulation method than TMS. Additionally, as discussed above, data from human TMS is largely congruent with the pattern of neuronal activity reported here. However, we cannot rule out the possibility that the coil we used in this study directly activated structures outside of the forelimb M1. Nonetheless, the role of stimulus spatial resolution in modulating neuronal networks is a highly interesting topic for future research.\n\nBy combining the tool presented here with optogenetic, transgenic, anatomical, theoretical, and clinical methods, future work could take on two parallel directions concerning either the short- or long-latency evoked response of TMS. For the short-latency response, investigation could focus on discerning the circuit selectivity of different stimulus orientations by pinpointing the locus of direct activation in each case, and on elucidating the principles of anatomical and functional organization of the M1 microcircuitry. Additionally, utilizing TMS as a probe, other cortical areas can be investigated in a similar manner. For the long-latency response, the focus shall be on characterizing long-range circuits activated by TMS and examining their modulatory contributions in the treatment of various neurological and psychiatric conditions. We are convinced that studying the neuronal dynamics under TMS will undoubtedly advance our understanding of the functional organization of the brain, and drive the development of non-invasive brain stimulation therapies that are more specific, effective, durable and safe than hitherto possible.\n\n## Materials and methods\n\n### Determination of the inadvertent charge injection\n\nTo determine the amount of TMS-induced charge injection in the electrode-electrode loop (Figure 5A), we used the voltage signal from the low-gain monitoring channel to calculate the current flow via the amplifier\u2019s input capacitance $C_{in}$. As shown in Figure 5\u2014figure supplement 2A, since the input resistance\u00a0$R_{in}$ and the input capacitance $C_{in}$\u00a0are parallel, voltage drop across\u00a0$R_{in}$\u00a0(therefore, the recorded signal $V_{in}$) is equal to the voltage drop across\u00a0$C_{in}$. Because the value of $C_{in}$\u00a0is known, its current $I_{Cin}$can be calculated using the equation\n\n$$\nI_{Cin}=C_{in}\\frac{dV_{in}}{dt}\n$$\n\nFurthermore, since\u00a0$R_{in}$\u00a0is in the order of teraohm, the amount of current it draws can be neglected. Therefore, $I_{Cin}$ is equal to the total amount of induction current present in the loop ($I_{ind}$). It is worth noting here that by adopting this method, the exact model of microelectrodes and its associated component values are not needed for the calculation.\n\nFor determining the induced charge injection in the electrode-ground loop, we used a set of input cables in which both the recording and the reference electrode were connected to the amplifier\u2019s positive input, and the ground electrode was connected to the amplifier\u2019s negative input. Furthermore, the negative input was shorted to the amplifier ground. Under this configuration, $I_{ind}$ reflected the current in the electrode-ground loop (Figure 5\u2014figure supplement 2B).\n\nAt the end of our validation, we conducted these measurements in vivo, under monophasic and biphasic TMS, at 100% MSO. By integrating\u00a0$I_{ind}$\u00a0over time, the amount of charge transfer was determined. The results (Figure 6\u2014figure supplement 1) were then compared with the charge injection values reported in the ICMS literature.\n\n### Electrical shield\n\nTo construct the electrical shield (Figure 3B), we first made a polyoxymethylene (POM) enclosure (1 mm thick at the bottom face) according to the shape of our TMS coil. An even layer of conductive coating (GRAPHIT 33, Kontakt Chemie, Iffezheim, Germany) was painted on the inner side of the enclosure until the desired electrical resistance (10 k\u03a9 measured along the long axes of the shield body and cover) was reached. A layer of non-conductive transparent coating was then applied to protect the conductive layer. As the body and the top covers of the enclosure are separate, protection coating was not applied along the contacting edges between the shield body and its top covers to allow good electrical contact. In addition, an electrical cable was connected directly to the conductive layer to provide a path for grounding.\n\n### Experimental model\n\nAll experimental procedures involving animals were approved by the\u00a0T\u00fcbingen Regional Council (license number: N1/16) and performed in accordance with the Animal Welfare Act of Germany. Seventeen male Sprague-Dawley rats (Charles River Laboratories, Sulzfeld, Germany; RRID:RGD_737891) 11\u201315 weeks of age were used (six for method evaluation and optimization; seven for the ML experiments; four for the PA experiments). The animals were housed in environment-enriched transparent plastic cages under inverted 12 hr light/dark cycle with free access to water and food. Upon arrival, the animals were handled 10 min per day for 5 consecutive days for stress reduction.\n\n### Surgery\n\nAnimals were first sedated through a brief exposure to isoflurane (3% at 0.8 L/min). Upon sedation, a cocktail of ketamine (70 mg/kg) and xylazine (1 mg/kg) was injected intraperitoneally (i.p.) and ophthalmic ointment was applied to eyes. A 27-gauge catheter was implanted in the lower right quadrant of the abdomen to provide i.p. access throughout the experiment. Additional doses of ketamine (30 mg/kg) were administered through the catheter to maintain a constant level of anesthesia, which was assessed by breathing rate, vibrissa whisking, and the toe-pinch reflex. During the incision phase of the surgery, xylocaine gel (2%) was applied to the incision site. In addition, body temperature of the animals was maintained at 37\u00b0C using a feedback-controlled heating pad throughout the experiment.\n\nAnimals were restrained in a stereotaxic frame with non-conductive ear bars. A 5 \u00d7 3 mm craniotomy was made over the left sensorimotor cortex. The resulted trepanation extended from \u22121 mm to\u00a0+4 mm to bregma and from 1 mm to 4 mm lateral to the midline. Dura matter was carefully resected and the cranial window was covered with Ringer's solution.\n\n### Intracortical microstimulation (ICMS)\n\nICMS was used to map the spatial extent of the primary forelimb motor area (caudal forelimb area, CFA). A platinum-tungsten microelectrode (1 M\u03a9 at 1 k Hz) was used for ICMS at depths around 1400 \u03bcm (from the cortical surface), corresponding to layer V in rat neocortex, with a train of 13 biphasic square pulses (200 \u03bcs per phase) delivered at 333 Hz. A stimulation site was considered non-responsive if it was not possible to elicit any visible movement with current intensity up to 100 \u00b5A. In one animal, we also used single-pulse ICMS (one biphasic square pulse, 300 \u03bcs per phase, 300 \u00b5A) to study the onset latency of MUAP of the biceps brachii in response to ICMS (Figure 7\u2014figure supplement 2).\n\n### Electromyogram (EMG)\n\n28-gauge monopolar EMG electrodes (Ambu A/S, Ballerup, Denmark) were implanted in both left and right biceps brachii muscle for recording, and in the finger pads bilaterally for reference. The electrodes were connected to a high-impedance amplifier through shielded cables. The signal was low-pass (cutoff frequency 5 kHz) filtered online and amplified 2000 times before digital conversion. During analysis, the signal was bandpass filtered (100\u20131000 Hz) using digital Butterworth filters implemented anti-causally in MATLAB.\n\n### Transcranial magnetic stimulation (TMS)\n\nTMS was delivered through a Magstim D25 figure-of-eight coil (single circle radius 25 mm; Magstim Ltd., Carmarthenshire, UK) powered by either a Magstim 2002 stimulator for monophasic single-pulse stimulation (mspTMS) or a Magstim Super Rapid Plus stimulator (with the inline inductor Magstim 3467) for biphasic single-pulse and repetitive stimulation. The Magstim 2002 and D25 combination is considered as the worst-case scenario since the resulting flux transient is as high as 4T (based on data supplied by Magstim), which is two to three times higher than the output seen in combinations with larger coils that are routinely used in human stimulation.\n\nThe TMS coil was held by a mechanical arm and positioned over the recording site in medial-lateral orientation, generating a current flowing from the medial to the lateral part of the brain (under monophasic stimulation). In the PA orientation, the induced current flows from the posterior to the anterior part of the brain. The coil, controlled by a three-dimensional microdrive, was lowered as much as possible without touching the electrode assembly. The distance from the coil surface to the head of the animal was normally 8\u201310 mm (including 1 mm due to the coil shield). TMS was triggered digitally by a controller PC, which also digitally controlled the behavior of our EEP amplifier (Figure 6A).\n\n### Extracellular electrophysiology (EEP)\n\nEEP was recorded through a pair (signal-reference) of microelectrodes (ca. 1.5 M\u03a9 impedance at 1 kHz) fabricated in-house from glass-coated platinum-tungsten wires (Thomas RECORDING, Giessen, Germany). A thin silver wire with silver-chloride coating was used as the ground electrode. The three electrodes were arranged in a three-pronged design (Figure 5\u2014figure supplement 1) that minimized the induction loop area between them. The assembly was held by a non-conductive non-magnetic L-shape holder that was mounted on a micropositioner (David Kopf Instruments, Tujunga, USA). The recording electrode was lowered, through the cranial window, into CFA as determined by ICMS. The reference electrode was also lowered into the cortex but outside the boundary of CFA. The ground electrode was positioned to be in contact with unresected subcutaneous tissue by the border of the cranial window. Signals from the electrodes were transmitted through a set of 36-gauge low-noise miniature coaxial cables (Axon\u2019 Cable S.A.S., Montmirail, France; Figure 4A) to the amplifier. The operating mode of the amplifier was controlled by the controller PC as described in the main text. The signal from the amplifier output was digitized (USB-ME64-System, MultiChannel Systems GmbH, Reutlingen, Germany) at 40 kHz and subsequently visualized and stored on a PC. A schematic illustration of the entire recording setup is shown in Figure 6A.\n\n### Histology\n\nUpon completion of an experiment, the recording site was marked by an electrolytic lesion (1 cycle of cathode leading 0.1 Hz biphasic square pulse with 10 \u00b5A) generated using a microelectrode powered by a waveform generator (STG1002, MultiChannel Systems, Reutlingen, Germany). Subsequently, the animal was deeply anesthetized with sodium pentobarbital (200 mg/kg) and perfused using phosphate buffer (0.1 M) followed by paraformaldehyde (4%). Afterward, the brain of the animal was processed using standard histological procedures. The recording layer was assessed by investigating lesions in hematoxylin and eosin stained coronal sections (Figure 7\u2014figure supplement 1).\n\n### Quantification and statistical analysis\n\nElectrophysiological data was processed in MATLAB 2014b (The Mathworks, Natick, USA; RRID:SCR_001622). Spike detection was based on amplitude threshold that was set to 3.5 or 4 times of the median-based background noise standard deviation estimate in order to minimize the influence of high spike rates or amplitudes in biasing spike detection (Quiroga et al., 2004). Spike isolation was performed using principal component analysis of the spike waveforms followed by a Gaussian mixture model with Kalman filters that track waveform drifts over time (Ecker et al., 2014). A total of 51 single units were isolated (L5ML = 19; L5PA = 14; L2/3ML=18); however, since at the present stage we are only interested in characterizing the response of M1 neuronal population to mspTMS, in the following analysis, we combine spikes from all single units as well as those that cannot be reliably isolated into a multiunit cluster.\n\nEach trial was defined by the time interval spanning from 500 ms pre-TMS to 1000 ms post-TMS. Normalized firing rate (FR) was calculated by subtracting the baseline (500 ms period prior to TMS onset) average FR from the instantaneous FR of each time bin (including baseline bins). This normalization procedure was performed on a trial-by-trial basis. For each animal under each stimulation condition, trains of normalized FR were averaged across trials. Thresholds for significant (p<0.05) inhibitory and excitatory events were determined by the 2.5 and 97.5 percentile of the empirical distribution of normalized FR during baseline. To facilitate the detection of significant phasic response, each averaged train of normalized FR was filtered by a Gaussian kernel (\u03c3\u00a0=\u00a02 ms). An event is considered as a significant phasic response if the normalized FR exceeds either threshold for more than 10 ms and a gap up to 10 ms is tolerated to accommodate jittering. The onset and duration information of the detected phasic response was then used to extract FR for each phase in each individual trial.\n\nStatistical analysis was performed in R (Core Team, 2016; RRID:SCR_001905). Multiple hierarchical linear mixed-effects models were constructed using the lme4 package (Bates et al., 2015) to evaluate the effect of stimulation intensity on the normalized FR for each response phase. Stimulation intensity (normalized to %MT) was used as the fixed effect to model trials of normalized FR of each response phase. The animal\u2019s identity was used as the random effect (random intercept) to control for intraclass correlation. We also explored the possibility of trial number being another fixed effect. However, it was dropped in the final models as it did not contribute significantly to model\u2019s fit. Statistical significance of the fixed effect in each model was evaluated against the corresponding null model using the Kenward Roger-based F-test (Halekoh and H\u00f8jsgaard, 2014)\n",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "4d84553a-c0cd-4c0e-816f-f8da17ec81ed",
+      "submission_id": "b85cc992-d615-4ba6-8ea9-086042a7df9d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Rotenberg, United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30552.021](https://doi.org/10.7554/eLife.30552.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Lifting the veil on the dynamics of neuronal activities evoked by transcranial magnetic stimulation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Ivry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Risto J. Ilmoniemi (Reviewer #2); Javier Marquez Ruiz (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThe authors present a novel method for TMS coupled with high fidelity extracellular single neuron recordings in anesthetized rats. This protocol's innovations include electrical TMS coil shielding, specialized amplifier circuitry, and specialized cabling. The presented results provide both a proof of principle for the method, and insight into immediate TMS-modulated single unit activity in the rat motor cortex.\n\nEssential revisions\n\n1) Organization and Presentation:\n\na) Include, in the Introduction, a clear statement of the problematic system interactions, the manifestation of these interactions in the acquired EEP data and short statements about how each is to be ameliorated. This would include the interactions due to induction, electrical field (capacitive) coupling, vibration, and charge injection.\n\nb) Presently the elucidation of the interactions between the TMS and EEP systems and their corrections come in three different places with increasing levels of detail: The Results, Materials and methods section and the Supplemental Section. Please pare this down to two places with much less appearing in the supplemental section.\n\nc) Clarify how the described methods differ from other methods that address these interactions. For instance, consider the following statement: \"Two groups reported TMS-EEP methods for non-human primates (Mueller et al., 2014; Tischler et al., 2011); however, the applicability of these methods is very limited as they were developed solely for primate research, which is not best positioned to answer basic questions on neural circuitry, and they involve complex electronics and custom-designed TMS coils for artifact reduction.\" For this statement, please describe: (i) the methods that they used, (ii) the time window following the TMS pulse in which these methods are effective (0-1 ms as well?), (iii) how effective the methods are, and (iv) why the methods are not \"best positioned to answer basic questions on neural circuitry.\"\n\nd) The manuscript content together with supplementary information has all the elements required for facilitating the proposed methodological improvements by interested researchers; nevertheless, much of this important information is categorized as \"supplementary,\" giving priority to the observed physiological response to TMS (somehow incomplete data, see comments below). Taken into account that this manuscript has been submitted to \"tools and resources\" category all the important technical details should be included in the body of the manuscript.\n\ne) There are 5 \"figures\" in the main part and 10 in the supplement. However, in many figures, there are subfigures (A, B, C.\u2026) and in some of the subfigures, there are multiple panels. The total number of labeled figures or subfigures is about 40. This may be too much. Even the main text contains 19 figures or subfigures. One reason for the large number of figures is that there is material in the manuscript for two manuscripts. For instance, while the abstract emphasizes the development of the engineering and measurement methodology, the discussion and much of the other text emphasize the neuroscientific results. Please consider condensing the text and figures to improve the paper's focus.\n\n2) The section describing the second artifact source which begins at the third paragraph of the Results section lacks clarity. This section can be improved if the authors: (i) state that capacitive coupling between the TMS and EEP systems poses a significant problem which can be eliminated by appropriate shielding, (ii) state the properties which an effective shield must have to eliminate the coupling yet not interfere with the TMS B field, and (iii) propose the mechanism for the long time scale (compared to the TMS pulse length time) of the observed interaction.\n\n3) The Results contain the following statement: \"\u2026displacement current, if large enough, can stimulate neuronal structures through microelectrodes\" and if the amount of such current injection is large enough, it will excite the neural tissues around the microelectrodes and severely confound the measurement of TMS effects.\" Adjacent to these sentences please provide estimates of what is \"large enough\" That is, how large would the current magnitudes have to be to introduce these potential problems?\n\n4) Since the text mentions the problems with using a human-size TMS coil for rodent experimentation, then please elaborate on the expected size of the interactions in rodent sized coils.\n\n5) Would the rebound excitation phase exist if a rat-sized TMS coil were used to stimulate the motor cortex rather than the human-sized coil used in this work? Please elaborate. This is not so much a criticism as it is a direction for further research (perhaps to be mentioned in the Discussion).\n\n6) Please comment on whether the magnitudes of the interactions significantly influenced by the pulse type (i.e. monophasic or biphasic TMS pulse?).\n\n7) Please consider commenting on this in the revised Discussion: While ML-oriented TMS evoked virtually no early response, PA-oriented TMS evoked neuronal spikes around 1-1.5 ms and at 3-3.5 ms. This finding is interesting and indicates the importance of coil orientation. However, since only a limited population of neurons was monitored, this study did not demonstrate that ML-oriented TMS would not have elicited early spikes in some other population of neurons than those that were monitored.\n\n8) In the Discussion section, the reason for different neuronal responses to ML and PA stimulation is discussed but an essential aspect is forgotten: since the rat skull is far from spherical, the induced electric field does not remain the same (adjustment of the TMS intensity to keep the E-field constant was not mentioned in the text) if the coil is rotated; in the latter case, the E-field is likely to be much stronger than in the former case (ML). This fact alone might explain the fact that ML stimulation did not give rise to much early activity (but see the previous paragraph). In any case, in addition to this reviewer's \"armchair thinking\", please take another look at the ML and PA difference and explain the difference in E-field values (if any) in the ML and PA stimulations.\n\n9) Please state the total number of recorded neurons in different animals and describe the methodology used for spike isolation and analysis. This is particularly relevant for TMS evoked response with stimulus orientation (where data are from only 4 animals).\n\n10) Please respond to the following concern: The experiments related to different responses to TMS stimulus orientations is quite preliminary and it needs for additional data to be validated. Do the authors compare spike firing for both stimulus orientations maintaining the same isolated neurons? On the other hand, the authors claim that neurons were recorded at layer V of CFA. Do the authors test the putative nature (pyramidal, inhibitory interneurons\u2026) of the recorded neurons? Could the orientation of the stimulus have a different impact on different neuronal populations located at layer V?\n",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29fdc9fe-6ac3-45c3-ac2c-603020f0dbbc",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C1",
+      "claim": "TMS-evoked activity of individual neurons has remained largely inaccessible due to the large TMS-induced electromagnetic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TMS-evoked activity of individual neurons has remained largely inaccessible due to the large TMS-induced electromagnetic fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "c998baab-403f-4402-9d20-e18565dc204d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C2",
+      "claim": "The presented method provides direct in vivo electrophysiological access to TMS-evoked neuronal activity 0.8\u20131 ms after TMS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a general method providing direct in vivo electrophysiological access to TMS-evoked neuronal activity 0.8\u20131 ms after TMS onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological claim of the manuscript, supported by experimental validation shown in Figures 6B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "ccb45b31-bcdc-4f2f-bfac-02bea942e50d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C3",
+      "claim": "Human single-pulse TMS was successfully translated to rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "We translated human single-pulse TMS to rodents and unveiled time-grained evoked activities of motor cortex layer V neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the experimental results showing motor responses and neuronal recordings in rodents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "c502c4a1-1806-4b54-81af-9815eac0a89d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C4",
+      "claim": "Motor cortex layer V neurons show high-frequency spiking within the first 6 ms depending on TMS-induced current orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We translated human single-pulse TMS to rodents and unveiled time-grained evoked activities of motor cortex layer V neurons that show high-frequency spiking within the first 6 ms depending on TMS-induced current orientation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 8 showing different spiking patterns for ML vs PA orientations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "92dfc2f9-dc5b-4458-aa27-722d60cbc0d0",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C5",
+      "claim": "TMS-evoked neuronal activity shows a multiphasic spike-rhythm alternating between excitation and inhibition in the 6\u2013300 ms epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "a multiphasic spike-rhythm alternating between excitation and inhibition in the 6\u2013300 ms epoch",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 7 showing intermediate excitation, inhibition, and rebound excitation phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "799e1694-f4e2-42cf-96c8-a82c63e81f49",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C6",
+      "claim": "TMS was introduced by Barker et al. in 1985 as a pain-free, electrodeless, and non-invasive tool for brain stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1985, when Barker et al. (1985) applied a pulsed magnetic field to a subject's head to selectively evoke responses in a hand muscle, the scientific community was fascinated by this pain-free, electrodeless, and non-invasive tool for brain stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation to Barker et al. (1985).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "ef7fb172-9fae-40ba-9a8e-5e6a29f3f379",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C7",
+      "claim": "TMS is poorly understood physiologically at the level of neurons and circuitries.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its impressive array of applications and fast-growing popularity (Cohen et al., 1998; Walsh and Cowey, 2000; Reis et al., 2008; Funke and Benali, 2011; Lefaucheur et al., 2014), TMS is poorly understood physiologically as we know very little about how TMS interacts with the brain at the level of neurons and circuitries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study and supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "6029b5d4-ab40-4b16-9f0b-da623ed477be",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C8",
+      "claim": "A single TMS pulse is characterized by an alternating tesla-level magnetic field with a center frequency of approximately 4 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a single TMS pulse, characterized by an alternating tesla-level magnetic field with a center frequency of approximately 4 kHz (Ilmoniemi et al., 1999; Wagner et al., 2007), generates an array of strong interferences disturbing the acquisition of EEP signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "65e2075b-854f-496d-9ed1-ee2d407fafbc",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C9",
+      "claim": "Previous TMS-EEP studies resulted in data loss precluding investigation of TMS-evoked neuronal activities for up to 100 ms after each TMS pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "As evidenced by the pioneering works on TMS-EEP (Moliadze et al., 2003; Pasley et al., 2009), artifacts from TMS resulted in a significant amount of data loss that precluded the investigation of TMS-evoked neuronal activities for up to 100 ms after each TMS pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "ed1d89e6-9972-48d1-9dc1-180eda4dabce",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C10",
+      "claim": "One TMS-EEP method for non-human primates minimized TMS-induced data loss to a median time of 2.5 ms using custom-built TMS coil and offline correction.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the methods utilized custom-built TMS coil and offline correction to minimize the TMS-induced data loss to a median time of 2.5 ms (Tischler et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about prior work supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "9fb1615d-fc60-45ef-a555-272e2351c2dd",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C11",
+      "claim": "Another TMS-EEP method for non-human primates minimized data loss to 1 ms using a combination of custom-built coil, amplifier modifications, field sensing, active compensation, and offline correction.",
+      "claim_type": "EXPLICIT",
+      "source": "while the other used a combination of custom-built coil, amplifier modifications, field sensing, active compensation, and offline correction to minimize the data loss to 1 ms (Mueller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about prior work supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "98a4f9a5-c380-4e8d-9e44-f3327fa0789f",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C12",
+      "claim": "The developed TMS-EEP method is compatible with existing standard TMS coils.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is compatible with existing standard TMS coils and allows the recording of neuronal activities 0.8\u20131 ms after the onset of various types of TMS stimuli by attenuating artifacts resulting from magnetic induction, electric field coupling, and vibrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the method demonstrated in the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "0ff7b858-db30-4aef-bb7e-5503dae98923",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C13",
+      "claim": "The method allows for instantaneous determination of TMS-driven inadvertent charge injection into neural tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the method allows for the instantaneous determination of TMS-driven inadvertent charge injection into the neural tissue, a problem that has been overlooked by almost all prior TMS-EEP studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the low-gain monitoring channel described in the methods and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "8b72445c-136f-495b-b738-e2b8945dbaa8",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C14",
+      "claim": "The induction artifact is created as coil-generated rapid magnetic flux change induces voltages within loops formed along an EEP recording assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction artifact (Figure 1, period indicated in blue) is created as coil-generated rapid magnetic flux change induces voltages within loops formed along an EEP recording assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a physical principle illustrated in Figure 1 and explained in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "795ae421-86fd-4e13-9f98-0b2f2b2bf7f7",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C15",
+      "claim": "The gated multi-stage TMS-EEP amplifier consists of a differential preamplifier stage of gain four and a filter-amplifier stage of gain 500.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of a differential preamplifier (Pamp) stage of gain four and a filter-amplifier (Famp) stage of gain 500, separated by an ultra-low capacitance/charge injection solid-state analog switch (SSSW) controlled by optically coupled digital signal synchronized to TMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the amplifier design shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "a3b748ae-e2ec-4721-90e5-44bb9ba3427b",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C16",
+      "claim": "The Pamp stage can tolerate \u00b17.9 V input during TMS.",
+      "claim_type": "EXPLICIT",
+      "source": "In our design, the electronic components and supply voltage of the Pamp stage were chosen so it can tolerate \u00b17.9 V input during TMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design specification of the amplifier.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "b1974571-1fa0-4827-a266-5c81f0b175e2",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C17",
+      "claim": "The default frequency response of the amplifier was set from 300 Hz (\u22123 dB) to 5 kHz (\u22126 dB).",
+      "claim_type": "EXPLICIT",
+      "source": "The default frequency response of the amplifier was set from 300 Hz (\u22123 dB) to 5 kHz (\u22126 dB), but the lower bound of the passband can be adjusted to 4 Hz as needed for different applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the amplifier.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "3ccb7e94-12d4-4936-a356-2f3785e2f6cf",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C18",
+      "claim": "The electrical shield for the TMS coil possesses an electrical resistance of 10 k\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we applied a layer of weakly conducting material in shield construction and the resulted shield possesses an electrical resistance of 10 k\u03a9 (see Materials and methods) that does not result in vibration and magnetic attenuation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design specification verified by measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e732dec1-d389-43f5-839f-8205178ad8e2",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C19",
+      "claim": "The electrical shield does not attenuate the magnetic output of the TMS coil.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 3C illustrates, induction voltage waveforms, with and without the shield, overlap perfectly, confirming the absence of any noticeable magnetic attenuation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "36a74346-a51c-40ca-bee7-548c1dfd7e10",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C20",
+      "claim": "The electrical shield removes voltage signal due to electric field coupling between the TMS coil and the EEP recording assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected that the shield would remove, to a large extent, voltage signal that is due to electric field coupling between the TMS coil and the EEP recording assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3D showing the difference in waveforms with and without the shield.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "703668fb-c3a4-4df7-a896-e95c5604da94",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C21",
+      "claim": "The shield is effective in preventing polarization and the decay artifact that follows by interrupting electric field coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that by interrupting electric field coupling, the shield is effective in preventing polarization and the decay artifact that follows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "aaa8d111-8899-4245-9d20-d88896f315cd",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C22",
+      "claim": "Low-noise miniature coaxial cables with a semiconducting layer attenuate vibration artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the generation of such click sound is inevitable, we attenuated the vibration artifacts by using a special type of low-noise miniature coaxial cable with a semiconducting layer added between its dielectric and braided shield (Figure 4A). The addition of this semiconducting layer provides a path that drains triboelectric charges, rendering the cables insensitive to vibration (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4C comparing vibration artifacts with and without the special cables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "8b10dc80-afb3-4fba-8526-e64267d83367",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C23",
+      "claim": "The low-noise miniature coaxial cable has a capacitance of 100 pF/m.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the impressive performance of the low-noise miniature coaxial cable in attenuating vibration artifacts, its length in an EEP recording assembly should be limited as the cable's capacitance (100 pF/m), together with the amplifier input capacitance and electrode impedance, acts as a voltage divider that attenuates EEP signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification of the cable.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "6c4b1444-951b-4888-84c1-f2d3490037bd",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C24",
+      "claim": "The cable length was kept at 16 cm to keep signal attenuation less than 20% at 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, we kept the length of our cables at 16 cm to keep the signal attenuation less than 20% at 1 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision based on the cable's electrical properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "fce9813d-69c8-4129-8306-0ec50598c760",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C25",
+      "claim": "TMS-driven inadvertent charge injection has been overlooked by most prior TMS-EEP studies.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS-driven inadvertent charge injection is another major issue, which has been overlooked by most prior reports using EEP under TMS (Moliadze et al., 2003, 2005; Pasley et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem in the field with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "325b5f8c-26e2-438d-936d-7e98d9799dda",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C26",
+      "claim": "ICMS threshold parameters involve bipolar charge transfer totaling from 150 to 800 pC with current waveform approximately similar to that of TMS.",
+      "claim_type": "EXPLICIT",
+      "source": "If the amount and the temporal structure of the injected current are comparable to the threshold parameters reported in intracortical microstimulation (ICMS) literature (bipolar charge transfer totaling from 150 to 800 pC, current waveform approximately similar to that of TMS; see Asanuma and Ros\u00e9n, 1973 and Butovas and Schwarz, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fact from the ICMS literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "ad2b1b1e-543a-45d3-a1d8-f5e473561c68",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C27",
+      "claim": "The amount of inadvertent charge injection under each experimental condition was far below (by a factor of 200 or more) the modulation or activation thresholds reported in ICMS literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the amount of inadvertent charge injection under each condition was far below (by a factor of 200 or more; Figure 6\u2014figure supplement 1) the modulation or activation thresholds reported in ICMS literature (Asanuma and Ros\u00e9n, 1973; Butovas and Schwarz, 2003), confirming the validity of our measurements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e3af17d5-d135-481c-9e70-a1d2d9e00a75",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C28",
+      "claim": "The EEP signal recovered between 0.8 and 1 ms after the onset of each TMS pulse and was free from artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the EEP signal recovered between 0.8 and 1 ms after the onset of each TMS pulse and was free from artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figures 6B-D showing clean recordings after TMS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "79fbf40e-8bf1-4652-ac94-480fc11fa00d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C29",
+      "claim": "mspTMS delivered over left CFA evoked unilateral movement of the right forelimb.",
+      "claim_type": "EXPLICIT",
+      "source": "With the coil center positioned over the left CFA and the induced current pointing from the medial to the lateral part of the brain (ML stimulation; Figure 6A inset), mspTMS evoked unilateral movement of the right forelimb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "0beef62c-a9ae-4f57-b5e0-4d1c4bc6ec52",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C30",
+      "claim": "The onset latency of the MUAPs was around 11 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset latency of the MUAPs was around 11 ms, similar to that found in our single-pulse ICMS experiment (Figure 7\u2014figure supplement 2) and in the rodent single-pulse ICMS literature (Liang et al., 1993; Deffeyes et al., 2015), confirming the cortical origin of TMS-evoked muscle activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7 and Figure 7\u2014figure supplement 2, and supported by citations to ICMS literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "556fc18a-7d57-4320-b59d-4ed4ecba7ebb",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C31",
+      "claim": "mspTMS evoked a rhythm of neuronal activities alternating between excitation and inhibition that lasted until approximately 300 ms post-stimulation in layer V of the CFA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the neuronal level, in layer V of the CFA, mspTMS evoked a rhythm of neuronal activities alternating between excitation and inhibition that lasted until approximately 300 ms post-stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 7A and Figure 7C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "97d021a8-f23c-4bcb-bb98-55e3c53fcfd2",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C32",
+      "claim": "Stimulation intensity positively modulated the normalized FR for the intermediate excitation phase (\u03b2 = 2.75 \u00b1 0.24, F(1)=127.23, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation intensity positively modulated the normalized FR for the intermediate excitation phase (\u03b2 = 2.75 \u00b1 0.24, F(1)=127.23, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from hierarchical linear mixed-effects models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "3d918345-299d-4bf9-a5bb-29c847c50584",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C33",
+      "claim": "Stimulation intensity positively modulated the normalized FR for the rebound excitation phase (\u03b2 = 1.18 \u00b1 0.19, F(1)=38.65, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and the rebound excitation phase (\u03b2 = 1.18 \u00b1 0.19, F(1)=38.65, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from hierarchical linear mixed-effects models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "25680c1d-718e-40c8-882d-206b67500bb5",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C34",
+      "claim": "Stimulation intensity negatively modulated the normalized FR for the inhibition phase (\u03b2 = \u22120.23 \u00b1 0.10, F(1)=5.28, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "while negatively modulated the normalized FR for the inhibition phase (\u03b2 = \u22120.23 \u00b1 0.10, F(1)=5.28, p=0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from hierarchical linear mixed-effects models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "c23c776b-4b2e-4fd7-b42b-a53437840709",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C35",
+      "claim": "ML stimulation evoked scarcely any spike in the short-latency window (1-6 ms) at 120% MT intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "As the two examples in Figure 8A demonstrate, at 120% MT intensity, ML stimulation evoked scarcely any spike, whereas PA stimulation evoked robust neuronal firing generating a distinct temporal pattern with peaks at 1.2\u20131.6 ms and at 3.2\u20134.2 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 8A and quantified in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "95541ac2-204e-44ca-be42-a25f5828e36d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C36",
+      "claim": "PA stimulation evoked robust neuronal firing with peaks at 1.2\u20131.6 ms and at 3.2\u20134.2 ms at 120% MT intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas PA stimulation evoked robust neuronal firing generating a distinct temporal pattern with peaks at 1.2\u20131.6 ms and at 3.2\u20134.2 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 8A and quantified in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "80c96a38-fc69-40fd-90cc-82108437b50c",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C37",
+      "claim": "ML stimulation evoked no significant excitation in the short-latency window except for low albeit significant FR at 3.5\u20134 ms under 120% MT.",
+      "claim_type": "EXPLICIT",
+      "source": "ML stimulation evoked no significant excitation with the exception of the low albeit significant FR at 3.5\u20134 ms under stimulation intensity of 120% MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "65d7a6cb-34b1-4bf2-9fa6-1c242ee175fd",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C38",
+      "claim": "Under PA stimulation, significant excitatory events appeared at 2.5\u20133.5 ms and at 4\u20134.5 ms at subthreshold level.",
+      "claim_type": "EXPLICIT",
+      "source": "At subthreshold level, significant excitatory events appeared at 2.5\u20133.5 ms and at 4\u20134.5 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "f8ff0ca6-9dd1-42f5-9f40-234e3af4d50a",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C39",
+      "claim": "As PA stimulation intensity increased, FR was developed at 1\u20131.5 ms and 2.5\u20134.5 ms time windows.",
+      "claim_type": "EXPLICIT",
+      "source": "As the stimulation intensity increased, FR was developed at particular time windows: 1\u20131.5 ms and 2.5\u20134.5 ms, reminiscent of the indirect wave (I-wave) phenomena observed in the corticospinal descending volleys in human and animal studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 8C and compared to I-wave phenomena.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "fdce8ca4-0e21-4999-b435-a6e34f72bf67",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C40",
+      "claim": "The method does not require active compensation based on magnetic field sensing or custom-made coils for artifact reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "It does not require active compensation based on magnetic field sensing (Logothetis et al., 2001; Mueller et al., 2014) or custom-made coils (Tischler et al., 2011; Mueller et al., 2014) for artifact reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method compared to prior approaches.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "49d10e80-6527-434f-917c-3c7dcadf5732",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C41",
+      "claim": "The method can accommodate electrodes directly under a conventional TMS coil, making it suitable for awake animals with chronically implanted electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "It can accommodate electrodes directly under a conventional TMS coil, a feature making it suitable even for awake animals with chronically implanted electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e7256030-435d-42ef-b9ac-7397e9f77db9",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C42",
+      "claim": "The method can be scaled up for large-scale high-density EEP recording with silicon-based microelectrode arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the method can be scaled up for large-scale high-density EEP recording with silicon-based microelectrode arrays (Buzs\u00e1ki, 2004) as well as be accompanied by optogenetic tools for the in vivo control of neuronal circuits (Scanziani and H\u00e4usser, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "6a605bb9-1836-4fc6-b284-d0df946530ed",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C43",
+      "claim": "With careful coil positioning, it is possible to achieve certain level of spatial selectivity in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "With careful coil positioning, it is possible to achieve certain level of spatial selectivity as evident in the results of our study as well as those of several other reports (Nielsen et al., 2007; Rotenberg et al., 2010; Muller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current study's results and citations to other work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "1fee2e85-efcd-4d26-b5ee-acd6e33a1ca0",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C44",
+      "claim": "Plasticity can be successfully induced in rodents using human TMS coils, as assessed by motor output, learning performance, sensory-evoked neural activities, or protein expressions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, plasticity, assessed by motor output (Muller et al., 2014), learning performance (Mix et al., 2010), sensory-evoked neural activities (Thimm and Funke, 2015; Murphy et al., 2016), or protein expressions (Trippe et al., 2009; Benali et al., 2011), can also be successfully induced in rodents using human TMS coils, making rodents a suitable experimental model for investigating the basic neuronal mechanisms underlying stimulation-induced plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "5a57f5bb-2540-4787-bd98-8b7f5a645782",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C45",
+      "claim": "The similarity between the onset latency of mspTMS- and single-pulse ICMS-evoked MUAPs suggests the cortical origin of the TMS-evoked muscle activations.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the onset latency of mspTMS- and single-pulse ICMS-evoked MUAPs suggests the cortical origin of the TMS-evoked muscle activations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing latencies shown in Figure 7 and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "7d318931-6c16-4782-9d43-9b9a5a1ef48d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C46",
+      "claim": "ML-oriented stimuli directly activated pyramidal cells of the descending motor pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Such discrepancy in neuronal response suggests that TMS-induced current of different orientations activates different microcircuits in the rodent forelimb M1: ML-oriented stimuli directly activated pyramidal cells of the descending motor pathways while PA-oriented stimuli evoked trans-synaptic high-frequency spiking activities in M1 (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 8, illustrated in Figure 9A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "fbfca649-5700-4786-be23-c6e7e3e01c3a",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C47",
+      "claim": "PA-oriented stimuli evoked trans-synaptic high-frequency spiking activities in M1.",
+      "claim_type": "EXPLICIT",
+      "source": "while PA-oriented stimuli evoked trans-synaptic high-frequency spiking activities in M1 (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 8, illustrated in Figure 9A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e5a228d4-3244-48a3-8bcd-f31a67697139",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C48",
+      "claim": "Motor thresholds under ML stimulation were significantly lower than their PA counterparts (medianML = 61% MSO; medianPA = 74% MSO; Wilcoxon rank-sum test, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "However, motor thresholds under ML stimulation, in which induced electric field intensity is lower, were significantly lower than their PA counterparts (medianML = 61% MSO; medianPA = 74% MSO; Wilcoxon rank-sum test, p=0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "22e7ee9f-8fe0-4833-8db7-ec522adcde3e",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C49",
+      "claim": "TMS works on humans and non-human primates also reported similar stimulus orientation selectivity in the context of evoked motor outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "TMS works on human (Kaneko et al., 1996; Di Lazzaro et al., 2001) and non-human primates (Amassian et al., 1990; Amassian and Stewart, 2003) also reported similar stimulus orientation selectivity but in the context of evoked motor outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "66655f93-efb5-4b43-bb8e-983150bf07cf",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C50",
+      "claim": "PT neurons exhibit reciprocal connectivity characterized by short-term facilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown recently that PT neurons exhibit reciprocal connectivity characterized by short-term facilitation and that synaptic transmission time for a pair of reciprocally connected PT neurons is 1.6 \u00b1 0.5 ms (Morishima and Kawaguchi, 2006; Morishima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fact from the literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "024cc205-03d6-4d72-b2a2-08674f5ab437",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C51",
+      "claim": "Synaptic transmission time for a pair of reciprocally connected PT neurons is 1.6 \u00b1 0.5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "and that synaptic transmission time for a pair of reciprocally connected PT neurons is 1.6 \u00b1 0.5 ms (Morishima and Kawaguchi, 2006; Morishima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fact from the literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "0e16ff75-7135-4f83-b320-baf2be6ab0bf",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C52",
+      "claim": "The network formed by interconnected PT neurons in layer V may provide the physiological foundation for the high-frequency neuronal discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is plausible that the network formed by the interconnected PT neurons in layer V provides the physiological foundation for the high-frequency neuronal discharge and that a mspTMS pulse oriented in PA direction preferably delivers an input into this network that triggers the observed high-frequency spiking response (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the data and prior literature, illustrated in Figure 9A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "3d2e8a81-711a-41bf-b320-c42ccf520128",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C53",
+      "claim": "The interconnected PT network may offer a neuronal explanation for the short-interval intracortical facilitation (SICF) described in the human literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interconnected PT network may also offer a neuronal explanation for the short-interval intracortical facilitation (SICF) described in the human literature (Tokimura et al., 1996; Ziemann et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis connecting the findings to human TMS phenomena, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e8f9c6fa-4ee9-4cc3-8595-256f9e3edd78",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C54",
+      "claim": "The multiphasic response is characterized by its excitation-inhibition-excitation pattern and is not qualitatively different between PA and ML stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As we extend the window of investigation to 6\u2013300 ms after TMS onset, a multiphasic response appears among the recorded CFA layer V neurons. The response is characterized by its excitation-inhibition-excitation pattern and is not qualitatively different between PA and ML stimulations (Figure 7; Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7 and Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "1741daf2-4141-4991-a624-4bb458f60979",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C55",
+      "claim": "The intermediate excitation that peaks around 20 ms is hypothesized to be generated through the cortico-basal ganglia-thalamo-cortical loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong excitation that peaks around 20 ms, given its latency, duration, presence in both layer V and II/III (Figure 7\u2014figure supplement 4), and its apparent lack of motor output (Figure 7B), reflects a high excitability state of the motor cortex. We hypothesize that this excitation is generated through the cortico-basal ganglia-thalamo-cortical loops (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the data and illustrated in Figure 9B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "288550dd-b4e8-4f40-a0f0-b6910e834f3d",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C56",
+      "claim": "Deep brain stimulation (DBS) of the STN produces cortically evoked EEG potentials with a peak latency of 22.2 \u00b1 1.2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep brain stimulation (DBS) of the STN produces cortically evoked EEG potentials with a peak latency of 22.2 \u00b1 1.2 ms, and TMS delivered at this latency after DBS showed facilitation of its cortically evoked motor outputs (Kuriakose et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fact from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "cf4fce28-555c-4837-89a4-efd2c35f4faf",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C57",
+      "claim": "The long-lasting inhibition phase is mediated by GABAB.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-lasting inhibition phase that follows the intermediate excitation is well-known, and evidence supports the notion that it is mediated by GABAB (Butovas et al., 2006; Murphy et al., 2016) and underlies the long-interval intracortical inhibition as well as the cortical silent period in human TMS (Valls-Sol\u00e9 et al., 1992; McDonnell et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "b87d4659-ea91-49e8-b1bb-3b26f4a52607",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C58",
+      "claim": "The rebound excitation phase represents a period of excitation most likely resulting from the termination of GABAB inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The rebound excitation phase, occurring after the inhibition, represents a period of excitation most likely resulting from the termination of GABAB inhibition, and corresponds to the late cortical disinhibition, which is being harnessed for augmenting plasticity induction in human TMS (Cash et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data with supporting citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "8e154365-0a9a-4e16-a875-c4af4cca12da",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C59",
+      "claim": "The long-lasting inhibition and the rebound excitation are well-documented phenomena in ICMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the long-lasting inhibition and the rebound excitation are well-documented phenomena in ICMS (Butovas and Schwarz, 2003), which is a much more localized stimulation method than TMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "1dddd7c2-f3a4-4c5b-a5c5-d72ca1b1dedf",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C60",
+      "claim": "Seventeen male Sprague-Dawley rats 11\u201315 weeks of age were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen male Sprague-Dawley rats (Charles River Laboratories, Sulzfeld, Germany; RRID:RGD_737891) 11\u201315 weeks of age were used (six for method evaluation and optimization; seven for the ML experiments; four for the PA experiments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "baf61c1f-34c3-42bb-8cd2-8e86ace473fc",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C61",
+      "claim": "Animals were anesthetized by ketamine-xylazine.",
+      "claim_type": "EXPLICIT",
+      "source": "In another group of seven male Sprague-Dawley rats (anesthetized by ketamine-xylazine), we recorded in vivo mspTMS-evoked neuronal activities in the layer V (Figure 7\u2014figure supplement 1) of the caudal forelimb area (CFA), rodent's equivalent to the forelimb area of primate M1 (Rouiller et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about anesthesia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "7bcea08c-7674-46a6-8ac2-4e51876cf651",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C62",
+      "claim": "The caudal forelimb area (CFA) is rodent's equivalent to the forelimb area of primate M1.",
+      "claim_type": "EXPLICIT",
+      "source": "we recorded in vivo mspTMS-evoked neuronal activities in the layer V (Figure 7\u2014figure supplement 1) of the caudal forelimb area (CFA), rodent's equivalent to the forelimb area of primate M1 (Rouiller et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fact about rodent neuroanatomy supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "351c7837-4c45-4691-952d-7b36ec8c45e3",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C63",
+      "claim": "The Magstim 2002 and D25 combination is considered as the worst-case scenario since the resulting flux transient is as high as 4T.",
+      "claim_type": "EXPLICIT",
+      "source": "The Magstim 2002 and D25 combination is considered as the worst-case scenario since the resulting flux transient is as high as 4T (based on data supplied by Magstim), which is two to three times higher than the output seen in combinations with larger coils that are routinely used in human stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical specification used to justify the testing conditions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "4d3e0494-29c7-4b85-8472-b5fc9ee6f1f0",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C64",
+      "claim": "A total of 51 single units were isolated (L5ML = 19; L5PA = 14; L2/3ML=18).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 51 single units were isolated (L5ML = 19; L5PA = 14; L2/3ML=18); however, since at the present stage we are only interested in characterizing the response of M1 neuronal population to mspTMS, in the following analysis, we combine spikes from all single units as well as those that cannot be reliably isolated into a multiunit cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about spike sorting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "aa53cc85-0fa4-49dc-ac4b-e468b84c9497",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "claim_id": "C65",
+      "claim": "Spike detection was based on amplitude threshold that was set to 3.5 or 4 times of the median-based background noise standard deviation estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike detection was based on amplitude threshold that was set to 3.5 or 4 times of the median-based background noise standard deviation estimate in order to minimize the influence of high spike rates or amplitudes in biasing spike detection (Quiroga et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about data analysis with supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca660af5-8656-4814-a91e-95deddc2bcd9",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel TMS-EEP method that provides artifact-free neuronal recordings 0.8-1 ms after TMS onset. The method addresses magnetic induction, electric field coupling, vibration artifacts, and inadvertent charge injection through a gated multi-stage amplifier, electrical shield, and specialized cables. It is compatible with standard TMS coils and does not require custom hardware or active compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12-C24, C27-C28, and C40-C42 collectively demonstrate the technical specifications and validation of the method. The amplifier design (C15-C17), electrical shield (C18-C21), specialized cables (C22-C24), and charge injection monitoring (C13, C27) are all experimentally validated in Figures 2-6. The method successfully records clean signals 0.8-1 ms post-TMS (C28) with inadvertent charge injection far below ICMS thresholds (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors successfully translated human single-pulse TMS to rodents, demonstrating cortically-evoked unilateral forelimb movements with motor unit action potential (MUAP) onset latencies (~11 ms) consistent with cortical origin. The experiments used 17 male Sprague-Dawley rats with ketamine-xylazine anesthesia, targeting the caudal forelimb area (CFA), the rodent equivalent of primate M1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C30, C45, and C60-C63 establish the successful translation of TMS to rodents. The MUAP latencies (C30) match those from ICMS experiments (Figure 7\u2014figure supplement 2) and literature values, confirming cortical origin (C45). The experimental design is clearly described with appropriate animal models (C60-C62) and worst-case testing conditions (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "a5dcdc53-eb61-487b-81ea-59d271f4710a",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TMS-induced current orientation determines short-latency (1-6 ms) neuronal responses in motor cortex layer V. ML-oriented stimuli evoked minimal spiking despite lower motor thresholds, while PA-oriented stimuli evoked robust high-frequency firing with peaks at 1.2-1.6 ms and 3.2-4.2 ms, reminiscent of I-waves. The authors propose that ML stimuli directly activate descending pyramidal pathways while PA stimuli trigger trans-synaptic activity through interconnected pyramidal tract (PT) neuron networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35-C39, C46-C48, and C50-C53 are well-supported by data in Figure 8 showing clear orientation-dependent differences. The statistical comparison of motor thresholds (C48, p=0.03) and the distinct temporal patterns in PA vs ML stimulation (C35-C39) provide strong evidence. The mechanistic interpretation (C46-C47, C52-C53) is plausible given the cited literature on PT neuron connectivity (C50-C51), though it remains a hypothesis requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "mspTMS evokes a multiphasic neuronal response (6-300 ms) in motor cortex layer V characterized by intermediate excitation (peaking ~20 ms), long-lasting inhibition, and rebound excitation. Stimulation intensity positively modulates excitation phases and negatively modulates inhibition. The authors hypothesize the intermediate excitation arises from cortico-basal ganglia-thalamo-cortical loops, the inhibition is GABAB-mediated, and the rebound reflects termination of GABAB inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C31-C34, and C54-C59 are supported by data in Figure 7 and statistical analyses using hierarchical linear mixed-effects models (C32-C34, all p<0.05). The multiphasic pattern is consistent across ML and PA orientations (C54) and across cortical layers (Figure 7\u2014figure supplement 4). The mechanistic interpretations (C55, C57-C58) are supported by literature citations and are consistent with known TMS phenomena in humans, though they remain hypotheses requiring direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "e2b58494-ee35-49dc-9b34-086a94d56d4c",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Prior TMS-EEP studies faced significant limitations including data loss up to 100 ms post-TMS due to electromagnetic artifacts, and most overlooked inadvertent charge injection. Previous methods for non-human primates achieved 1-2.5 ms recovery times but required custom coils and complex compensation systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C11, C25-C26 accurately characterize prior work and are supported by appropriate citations. The historical context (C6) and technical limitations (C1, C8-C9) are well-documented. The descriptions of prior methods (C10-C11) and the overlooked charge injection problem (C25-C26) are factually correct based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "7cacc253-1503-4d86-b94f-ea4ff4425414",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite concerns about coil size relative to rodent brain, spatial selectivity is achievable with careful positioning, and plasticity can be successfully induced in rodents using human TMS coils. Similar stimulus orientation selectivity has been reported in humans and non-human primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C49 address the validity of using rodents for TMS research. The claims are supported by multiple literature citations and the current study's results demonstrating selective activation of CFA. The comparison to primate studies (C49) is appropriately qualified, noting similarities exist at the level of shared principles rather than identical mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    },
+    {
+      "id": "16ebb953-fdde-46ac-be49-a74be704b697",
+      "content_id": "148273cb-0ac4-44b2-84e8-156e83551152",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A total of 51 single units were isolated from recordings, but for population-level analysis, spikes from all single units and multiunit activity were combined. Spike detection used amplitude thresholds of 3.5-4 times the median-based background noise standard deviation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 describe methodological details that are clearly stated and appropriately justified. The decision to combine single and multiunit activity (C64) is reasonable given the study's focus on population responses. The spike detection threshold (C65) follows established practices and is supported by citation to Quiroga et al. (2004).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:19.168187Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c998baab-403f-4402-9d20-e18565dc204d",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "98a4f9a5-c380-4e8d-9e44-f3327fa0789f",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "0ff7b858-db30-4aef-bb7e-5503dae98923",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "8b72445c-136f-495b-b738-e2b8945dbaa8",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "795ae421-86fd-4e13-9f98-0b2f2b2bf7f7",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "a3b748ae-e2ec-4721-90e5-44bb9ba3427b",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "b1974571-1fa0-4827-a266-5c81f0b175e2",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "3ccb7e94-12d4-4936-a356-2f3785e2f6cf",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "e732dec1-d389-43f5-839f-8205178ad8e2",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "36a74346-a51c-40ca-bee7-548c1dfd7e10",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "703668fb-c3a4-4df7-a896-e95c5604da94",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "aaa8d111-8899-4245-9d20-d88896f315cd",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "8b10dc80-afb3-4fba-8526-e64267d83367",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "6c4b1444-951b-4888-84c1-f2d3490037bd",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "ad2b1b1e-543a-45d3-a1d8-f5e473561c68",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "e3af17d5-d135-481c-9e70-a1d2d9e00a75",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "fdce8ca4-0e21-4999-b435-a6e34f72bf67",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "49d10e80-6527-434f-917c-3c7dcadf5732",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "e7256030-435d-42ef-b9ac-7397e9f77db9",
+      "result_id": "ca660af5-8656-4814-a91e-95deddc2bcd9"
+    },
+    {
+      "claim_id": "ccb45b31-bcdc-4f2f-bfac-02bea942e50d",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "79fbf40e-8bf1-4652-ac94-480fc11fa00d",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "0beef62c-a9ae-4f57-b5e0-4d1c4bc6ec52",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "5a57f5bb-2540-4787-bd98-8b7f5a645782",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "1dddd7c2-f3a4-4c5b-a5c5-d72ca1b1dedf",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "baf61c1f-34c3-42bb-8cd2-8e86ace473fc",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "7bcea08c-7674-46a6-8ac2-4e51876cf651",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "351c7837-4c45-4691-952d-7b36ec8c45e3",
+      "result_id": "7e818cc4-e4b8-46b1-8af7-9a635d4ffc93"
+    },
+    {
+      "claim_id": "c502c4a1-1806-4b54-81af-9815eac0a89d",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "c23c776b-4b2e-4fd7-b42b-a53437840709",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "95541ac2-204e-44ca-be42-a25f5828e36d",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "80c96a38-fc69-40fd-90cc-82108437b50c",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "65d7a6cb-34b1-4bf2-9fa6-1c242ee175fd",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "f8ff0ca6-9dd1-42f5-9f40-234e3af4d50a",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "7d318931-6c16-4782-9d43-9b9a5a1ef48d",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "fbfca649-5700-4786-be23-c6e7e3e01c3a",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "e5a228d4-3244-48a3-8bcd-f31a67697139",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "66655f93-efb5-4b43-bb8e-983150bf07cf",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "024cc205-03d6-4d72-b2a2-08674f5ab437",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "0e16ff75-7135-4f83-b320-baf2be6ab0bf",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "3d2e8a81-711a-41bf-b320-c42ccf520128",
+      "result_id": "a5dcdc53-eb61-487b-81ea-59d271f4710a"
+    },
+    {
+      "claim_id": "92dfc2f9-dc5b-4458-aa27-722d60cbc0d0",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "556fc18a-7d57-4320-b59d-4ed4ecba7ebb",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "97d021a8-f23c-4bcb-bb98-55e3c53fcfd2",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "3d918345-299d-4bf9-a5bb-29c847c50584",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "25680c1d-718e-40c8-882d-206b67500bb5",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "e8f9c6fa-4ee9-4cc3-8595-256f9e3edd78",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "1741daf2-4141-4991-a624-4bb458f60979",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "288550dd-b4e8-4f40-a0f0-b6910e834f3d",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "cf4fce28-555c-4837-89a4-efd2c35f4faf",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "b87d4659-ea91-49e8-b1bb-3b26f4a52607",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "8e154365-0a9a-4e16-a875-c4af4cca12da",
+      "result_id": "33ef2187-e0eb-4ba9-91b6-45c49c5240a9"
+    },
+    {
+      "claim_id": "29fdc9fe-6ac3-45c3-ac2c-603020f0dbbc",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "799e1694-f4e2-42cf-96c8-a82c63e81f49",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "ef7fb172-9fae-40ba-9a8e-5e6a29f3f379",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "6029b5d4-ab40-4b16-9f0b-da623ed477be",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "65e2075b-854f-496d-9ed1-ee2d407fafbc",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "ed1d89e6-9972-48d1-9dc1-180eda4dabce",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "9fb1615d-fc60-45ef-a555-272e2351c2dd",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "fce9813d-69c8-4129-8306-0ec50598c760",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "325b5f8c-26e2-438d-936d-7e98d9799dda",
+      "result_id": "e2b58494-ee35-49dc-9b34-086a94d56d4c"
+    },
+    {
+      "claim_id": "6a605bb9-1836-4fc6-b284-d0df946530ed",
+      "result_id": "7cacc253-1503-4d86-b94f-ea4ff4425414"
+    },
+    {
+      "claim_id": "1fee2e85-efcd-4d26-b5ee-acd6e33a1ca0",
+      "result_id": "7cacc253-1503-4d86-b94f-ea4ff4425414"
+    },
+    {
+      "claim_id": "22e7ee9f-8fe0-4833-8db7-ec522adcde3e",
+      "result_id": "7cacc253-1503-4d86-b94f-ea4ff4425414"
+    },
+    {
+      "claim_id": "4d3e0494-29c7-4b85-8472-b5fc9ee6f1f0",
+      "result_id": "16ebb953-fdde-46ac-be49-a74be704b697"
+    },
+    {
+      "claim_id": "aa53cc85-0fa4-49dc-ac4b-e468b84c9497",
+      "result_id": "16ebb953-fdde-46ac-be49-a74be704b697"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C51",
+      "C130"
+    ],
+    "result": "The theoretical framework establishes that stimulus vignetting arises from Fourier energy spread at contrast changes. When a vignette (aperture or contrast change) is applied to a stimulus, it spreads Fourier energy in a direction and amplitude determined by the stimulus spectrum and aperture geometry. This affects neurons with receptive fields overlapping the vignette, causing them to respond to different spatial frequency and orientation components than neurons far from edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C51, and C130 establish a coherent theoretical framework based on established Fourier analysis principles. The explanation is mathematically sound and consistent with signal processing theory. The framework provides clear predictions that are testable experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A computational model based on the steerable pyramid successfully simulated prior fMRI results (Freeman et al. 2011). Using identical stimuli (16 orientations, 4\u00b0 annulus with raised-cosine edges), the model reproduced the radial coarse-scale orientation bias observed empirically, despite summing across all orientation channels. This demonstrates that vignetting alone can produce orientation-selective responses at the macroscopic scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 describe a well-controlled simulation that replicates prior empirical findings using only vignetting mechanisms. The model's ability to reproduce the radial bias (C37-C38) without any inherent orientation selectivity provides strong evidence for the vignetting hypothesis. The methodology is clearly described and the results are consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The computational model predicted that changing the vignette orientation should predictably alter orientation bias. Novel stimuli with radial versus angular modulators were tested. The radial modulator evoked radial bias (greater vertical responses at vertical meridian, greater horizontal at horizontal meridian), while the angular modulator evoked tangential bias (90\u00b0 rotation), confirming the model's predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe a strong prediction-confirmation cycle. The model made specific, testable predictions about how different vignette geometries would affect orientation bias (C42, C45), and simulations confirmed these predictions (C43-C44, C46-C47). This demonstrates the model's predictive validity and strengthens the vignetting hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "Vignetting effects do not require sharp edges but arise from any contrast change. Both sinusoidal and square-wave modulators produced similar vignetting effects in model simulations and fMRI experiments. Smoothing edges spatially spreads the effect rather than eliminating it, as confirmed empirically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C128-C132 establish that vignetting is not an 'edge effect' per se but results from contrast changes generally. The empirical confirmation (C132) that both modulator types produce similar effects validates the theoretical prediction (C50, C129) and demonstrates the robustness of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "fMRI experiments confirmed vignetting effects across multiple scanning parameters. Evidence was found at both 3T and 7T field strengths, different spatial resolutions, and for both square-wave and sinusoidal modulators. Radial modulators evoked radial bias while angular modulators evoked tangential bias, with voxel-by-voxel orientation preferences shifted by 90\u00b0 between modulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 demonstrate robust empirical validation across diverse experimental conditions. The consistency across field strengths (C52) and resolutions (C53) indicates the effect is not an artifact of specific scanning parameters. The 90\u00b0 shift in orientation preferences (C57) directly confirms the model predictions and is visualized in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Model predictions showed clear correspondence with measured fMRI orientation preferences at the individual voxel level. Circular correlations between predicted and measured preferences were 0.26 (radial) and 0.20 (angular), both highly significant (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide quantitative validation of the model using pRF-based sampling (Figure 6). While the correlations are modest, they are highly significant and the authors appropriately acknowledge multiple noise sources (pRF estimation, orientation measurement, coregistration) and model simplifications that would reduce correlation. The statistical significance is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "MVPA decoding analysis revealed that population responses depend critically on the modulator. Within-modulator decoding was highly accurate (p<0.001), but across-modulator decoding was below chance (p<0.0001). After shifting orientation labels by 90\u00b0, across-modulator decoding returned to above-chance levels (p<0.0001), only slightly lower than within-modulator accuracy (p=0.046 for difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe a rigorous decoding analysis with appropriate statistical testing (permutation tests). The pattern of results\u2014high within-modulator accuracy, below-chance across-modulator accuracy, and recovery after 90\u00b0 shift\u2014provides strong evidence that vignetting determines the population response structure. The small but significant difference (C64) is appropriately acknowledged and may reflect shared radial edges between modulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "Stimulus vignetting strongly affects voxel orientation bias and likely accounts for results from many prior fMRI studies. Because vignetting masquerades as orientation selectivity for voxels at stimulus edges, and edges are spatially continuous, vignetting generally produces coarse-scale orientation bias maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C69 draw appropriate conclusions from the combined modeling and empirical results. The inference that prior studies may have measured vignetting (C66) is supported by the demonstrated strength of the effect (C65) and the theoretical understanding of how it produces coarse-scale patterns (C67, C69). This represents a major reinterpretation of existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The vignetting framework explains patterns in prior fMRI studies. Many studies used circular annuli, which the model predicts should produce radial bias. Studies with other vignette geometries (e.g., Alink et al. 2017 with angular edges) should produce mixed radial/tangential patterns, as was indeed reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 apply the vignetting framework to reinterpret prior literature. The predictions are specific and testable, and the correspondence with reported results (C75) provides external validation. The extensive citations (C70, C72) demonstrate the broad applicability of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Resolution analysis showed that vignetting dominates orientation information at conventional fMRI resolutions. Results at 2mm voxels showed primarily vignetting with no columnar signal, and increasing resolution to 0.9mm did not alter this. The authors conclude that vignetting is the predominant source of orientation information at voxel sizes \u22651mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe a critical test of whether columnar signals contribute to fMRI measurements. The theoretical prediction that columnar signals should increase with resolution while vignetting should not (C102-C106) was tested empirically. The lack of change with increased resolution (C108) supports the conclusion that vignetting dominates (C109) at conventional resolutions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The vignetting framework has broad implications beyond fMRI orientation decoding. Vignetting can produce ostensible orientation tuning in non-selective neurons, confound measurements of truly selective neurons, and create apparent selectivity for second-order features. The model exhibits second-order orientation selectivity despite having no second-order filters, suggesting vignetting may account for reported selectivity to illusory contours and second-order patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C86 extend the vignetting framework to broader phenomena, but most are theoretical predictions or speculations (C80-C82, C85-C86) rather than empirically tested results. While the logic is sound and the model demonstration (C83-C84) is compelling, these claims require additional experimental validation. The speculation about prior studies (C85) is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Vignetting may account for reported orientation selectivity in LGN and retinal inputs. Prior fMRI (Ling et al. 2015) and calcium imaging studies (Sun et al. 2016) reported orientation tuning in LGN/thalamus, but both used stimulus configurations susceptible to vignetting. The mouse study used large displays relative to receptive field sizes, likely causing vignetting for neurons with peripheral receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C95 propose a reinterpretation of important prior findings, but this is largely speculative (C90, C94, C95). While the authors correctly identify that the cited studies used stimulus configurations that could produce vignetting (C91-C92), and the logic regarding mouse receptive field sizes is sound (C93), definitive evidence would require reanalysis of those data or new experiments. This represents an important hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors found no evidence for orientation information beyond vignetting in their data, but cannot rule out other factors. Fine-scale columnar signals and coarse-scale physiological biases may exist but be eclipsed by vignetting. Prior results showing both radial and vertical biases suggest multiple sources may contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 appropriately acknowledge limitations and alternative explanations. The statement of negative findings (C96) is honest, and the acknowledgment that other factors cannot be ruled out (C97) is scientifically appropriate. The speculation about eclipsed signals (C98-C100) is reasonable, and the citation of prior work showing multiple bias patterns (C101) demonstrates balanced consideration of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C117",
+      "C118"
+    ],
+    "result": "Prior work by the authors demonstrated that orientation decoding is dominated by coarse-scale biases. A slice-shifting experiment showed that decoding accuracy was unaffected by shifting slices by half a voxel (half the hypercolumn width), which would have eliminated fine-scale information if it were contributing to decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 and C117-C118 describe prior experimental evidence from Freeman et al. 2013. The slice-shifting logic is sound: if fine-scale columnar information drove decoding, shifting by half the hypercolumn width should eliminate the signal (C112), but it did not (C113). This provides strong evidence for the coarse-scale dominance claim (C117), though it is based on cited prior work rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Other mechanisms may contribute to coarse-scale orientation bias beyond vignetting, including neuronal gain maps and asymmetric surround suppression. However, regardless of these potential additional factors, vignetting shows a strong and robust effect on measured orientation preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C142 discuss alternative mechanisms while maintaining the strength of the vignetting findings. The discussion of gain maps (C134-C136) and asymmetric surround suppression (C137-C141) is appropriately speculative and well-grounded in cited literature (C138, C140). The conclusion (C142) appropriately balances acknowledgment of other potential mechanisms with the demonstrated robustness of vignetting effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The computational model is based on the steerable pyramid, which decomposes images into orientation and spatial frequency channels using linear receptive fields. The model uses 6 orientations (comparable to primate tuning), 15 spatial frequency channels, and evenly tiles retinotopic space. The model was intentionally kept simple to isolate vignetting effects and avoid artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C160 thoroughly describe the model architecture and design rationale. The model is well-established (steerable pyramid, C145-C146), appropriately parameterized (C149-C152), and designed to avoid known artifacts (C157). The explicit statement of design philosophy (C158-C160) demonstrates scientific rigor. The model's simplicity is a strength for isolating the vignetting mechanism, as the authors correctly note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Thirteen observers (8 female, aged 22-27) with normal/corrected vision participated. Written informed consent was obtained and protocols were approved by institutional review boards at NYU and NIH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 describe standard methodological details about participants and ethical compliance. The information is clearly stated and appropriate for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context establishes that orientation selectivity in V1 is well-studied at fine scales (columnar organization with ~1mm periodicity in monkeys, ~2mm in humans), but the coarse-scale structure is poorly understood despite V1 being the best-studied sensory area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide established background knowledge supported by extensive citations (C7-C9). The assertion that coarse-scale structure is poorly understood (C10) sets up the motivation for the study. These are appropriate framing claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior fMRI work described coarse-scale orientation biases (radial bias in periphery) that went unnoticed in single-unit studies. There is debate about whether fMRI orientation preferences arise from fine-scale columnar irregularities or coarse-scale biases. Carlson (2014) proposed an 'edge effect' as the basis for coarse-scale bias, but the neural mechanism remained unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 accurately summarize prior literature and ongoing debates, supported by appropriate citations. The description of the controversy (C18-C22) and the gap in understanding (C23) effectively motivate the current study. These claims establish context rather than present new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The finding that coarse-scale bias dominates orientation decoding remains controversial despite evidence. The current study characterizes vignetting as a source of coarse-scale bias with implications beyond fMRI technical debates. Many prior decoding studies' contributions remain valid regardless of whether signals are coarse or fine-scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C125 provide appropriate context about ongoing debates and the significance of the current work. The acknowledgment that prior studies' contributions remain valid (C121-C125) demonstrates scientific fairness. The statement about broader implications (C120) is supported by the extensive discussion of applications to various phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Stimulus vignetting has been previously termed 'edge effect' and some studies attempted to eliminate edge effects by smoothing edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 provide terminological context and describe prior approaches, supported by citations. This sets up the demonstration that smoothing does not eliminate vignetting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C143",
+      "C144"
+    ],
+    "result": "The study demonstrates that stimulus vignetting can wholly determine orientation selectivity measured at macroscopic scales and provides a framework for reinterpreting findings on orientation selectivity, despite orientation tuning computations remaining inadequately understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C143-C144 represent the main conclusions of the study. The claim that vignetting can 'wholly determine' orientation selectivity (C2) is strongly supported by the combined modeling and empirical evidence, particularly the lack of other detectable signals (C96) and the resolution analysis (C107-C109). The framework for reinterpretation (C144) is demonstrated through multiple applications to prior literature.",
+    "result_type": "MAJOR"
+  }
+]

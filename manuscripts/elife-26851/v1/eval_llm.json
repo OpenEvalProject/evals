@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C26"
+    ],
+    "result": "The endolymphatic sac absorbs fluid in an SLC26A4-dependent manner at E14.5. Fluid absorption rate was significantly higher in Slc26a4\u0394/+ mice (12.3 \u00b1 2.6 nl\u00d7hr\u207b\u00b9\u00d7mm\u207b\u00b2) compared to Slc26a4\u0394/\u0394 mice (6.0 \u00b1 1.6 nl\u00d7hr\u207b\u00b9\u00d7mm\u207b\u00b2, p<0.001), and was significantly reduced by ouabain treatment (5.3 \u00b1 1.8 nl\u00d7hr\u207b\u00b9\u00d7mm\u207b\u00b2, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C20, and C26 provide converging evidence from in vitro fluid absorption experiments with appropriate statistical analysis (one-way ANOVA with p<0.001, Cohen's d = 3.0-3.2). The experimental design includes proper controls (Slc26a4\u0394/+ vs Slc26a4\u0394/\u0394) and pharmacological validation (ouabain sensitivity), with adequate sample sizes (n=7-26) and normalization to surface area.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "Fluid absorption at E14.5 is sensitive to ouabain and gadolinium but insensitive to benzamil, bafilomycin, and S3226, indicating dependence on Na+/K+ ATPase and a gadolinium-sensitive pathway but not v-ATPase, ENaC, or NHE3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 and C22-C25 demonstrate a systematic pharmacological characterization with appropriate statistical testing (one-way ANOVA). The insensitivity to benzamil, bafilomycin, and S3226 (p=1) and sensitivity to gadolinium (p=0.008, Cohen's d=2.2) provide clear mechanistic insights. However, the p=1 values for negative results are unusual and suggest potential issues with multiple testing correction or reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "ATP1A1 (Na+/K+ ATPase \u03b11 subunit) is expressed in basolateral membranes of all epithelial cells in the endolymphatic sac and duct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by immunohistochemistry data shown in Figure 1E-G demonstrating basolateral localization. This complements the functional ouabain sensitivity data and provides anatomical validation of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Single-cell RNA-seq analysis of 82 P5 endolymphatic sac epithelial cells identified two distinct cell populations based on unbiased PCA and hierarchical clustering, which were assigned as MRCs and RRCs based on canonical marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C28-C33 describe a systematic single-cell RNA-seq analysis with appropriate computational methods (PCA, hierarchical clustering using 300 genes). The separation is validated by canonical markers (Slc26a4, Foxi1, Atp6v0a4, Atp6v1b1, Jag1, Coch for MRCs; Notch1 for non-MRCs). The analysis appears methodologically sound with clear cell type assignment criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Differential expression analysis identified 611 MRC-specific genes and 433 RRC-specific genes at P5 (FDR<0.05, specificity>0.5). Gene ontology analysis revealed MRC genes are enriched for mitochondrial functions while RRC genes are enriched for ribosome and translation functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 present differential expression analysis with appropriate statistical thresholds (FDR<0.05, specificity>0.5) and functional validation through GO enrichment. The GO terms align well with the morphological descriptions of the cell types (mitochondria-rich vs ribosome-rich), providing biological validation of the computational clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of P30 endolymphatic sac cells identified the same two cell populations (MRCs and RRCs) as at P5, with 316 MRC-specific and 222 RRC-specific genes, indicating no qualitative difference in cellular composition between P5 and P30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate temporal consistency in cell type identification using the same analytical framework. The conclusion of no qualitative difference is supported by the ability to assign P30 cells to the same two populations identified at P5, though quantitative differences in gene expression are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Four MRC-specific genes and nine RRC-specific genes showed significantly increased expression at P30 compared to P5. The P30 RRC-specific genes are associated with iron homeostasis, defense response, and innate immunity, suggesting mature RRCs may contribute to inner ear immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 identify age-specific gene expression changes with appropriate statistical criteria (FDR<0.05, specificity>0.65) and GO enrichment analysis. However, claim C46 is speculative ('might contribute') and represents an inference rather than demonstrated function. The GO enrichment provides suggestive but not definitive evidence for immune function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Approximately half of P5 and P30 RRCs express Slc26a4 at low levels (14-18 fold lower than MRCs), validated by single-cell qPCR and immunohistochemistry showing SLC26A4 in ATP6V1B1-negative and FOXI1-negative cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 demonstrate low-level Slc26a4 expression in RRCs using three independent methods (RNA-seq, qPCR, IHC), providing strong orthogonal validation. The quantification of expression differences (14-18 fold) is precise. However, the functional significance of this low-level expression remains unclear and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PCA of E12.5 cells showed no distinct clusters, while E16.5 cells clustered into three populations assigned as MRCs, progenitor cells (ProgCs), and proliferating cells (ProlCs). Differential expression identified 975 E16.5 MRC genes and 278 E16.5 ProgC genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe developmental stage-specific clustering patterns with appropriate statistical analysis (FDR<0.05, specificity>0.5). The identification of three populations at E16.5 versus two at P5/P30 suggests developmental complexity. The assignment of ProgCs and ProlCs is based on gene expression patterns including proliferation markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "At E16.5, Foxi1 expression is less specific to MRCs than at P5/P30, with a subset of ProgCs and ProlCs showing high Foxi1 expression and lower expression of other MRC genes, suggesting these cells represent a transitional state of progenitors proliferating and differentiating into MRCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58 present observational data on Foxi1 expression patterns, but claim C59 is explicitly stated as a hypothesis. While the gene expression patterns are consistent with a transitional state, definitive evidence such as lineage tracing or temporal ordering would be needed to confirm this developmental trajectory. The interpretation is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PCA of all 213 cells from E12.5 to P30 shows PC2 separates MRCs from other cells, PC3 segregates E12.5 cells, and PC4 segregates E16.5 ProlCs. Hierarchical clustering identified five gene groups, with MRCs forming a single cluster and E12.5 cells through P30 RRCs forming another cluster sharing expression profiles, suggesting the latter constitute the main differentiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 describe comprehensive temporal analysis using 123 genes selected based on PC correlations. The hierarchical clustering reveals clear developmental patterns with MRCs as a distinct lineage and a main differentiation pathway from E12.5 cells to RRCs. The analysis is methodologically sound, though the interpretation of the 'main pathway' is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Few cells at E12.5 and P5 showed proliferation-associated gene expression, suggesting proliferation occurs most actively at E16.5, which was supported by maximal EdU-positive cell percentage at E16.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 combine transcriptomic inference with direct proliferation measurement (EdU labeling). The EdU data provides experimental validation of the computational prediction from gene expression patterns. The convergence of these two independent approaches strengthens the conclusion about peak proliferation at E16.5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Monocle 2 trajectory analysis reconstructed a branched developmental trajectory from E12.5 cells through E16.5 ProlCs/ProgCs to either P5 MRCs or P5 RRCs, with characteristic gene expression changes along each branch, supporting the hypothesis that MRCs are derived from the main differentiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 describe pseudotemporal ordering using Monocle 2, an established computational method. The trajectory analysis shows coherent gene expression patterns along developmental paths (MRC genes increasing, early RRC genes decreasing along MRC branch; early RRC genes constant, late RRC genes increasing along RRC branch). However, computational trajectory inference has limitations and ideally requires experimental validation through lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Four MRC genes (LOC192640638, LOC102640720, Lcp2, 4930469K13Rik) adjacent to Foxi1 on chromosome 11 actually comprise two unannotated genes encoding predicted long non-coding RNAs (lncRNAs) that may regulate MRC differentiation with Foxi1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 present genomic analysis and transcript prediction based on RNA-seq read alignments, which is methodologically sound. However, claim C80 is explicitly speculative ('may act'). The genomic proximity to Foxi1 and MRC-specific expression are suggestive but not proof of regulatory function. Functional validation would be required to support the proposed regulatory role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Filtering for genes differentially expressed at two or more continuous time points identified 360 MRC genes and 222 RRC genes, including 55 ion transmembrane transporter genes (47 MRC, 8 RRC). MRC genes include known markers and newly identified genes for ion transport, with immunohistochemistry confirming BSND and SLC4A9 in basolateral membranes and CFTR in apical membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 describe systematic identification of ion transport genes with appropriate filtering criteria and validation by immunohistochemistry. The subcellular localization data (basolateral vs apical) provides important functional context. The identification of 55 ion transporter genes represents a comprehensive catalog, though the functional significance of all genes requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Gene array analysis identified 680 probes (525 genes) significantly increasing during E13.5-E17.5, including 38 ion transporter genes and Car2, Car12, and Foxi1. Among these, 71 probes (64 genes) including Clcnkb and Bsnd are significantly downregulated in Slc26a4\u0394/\u0394 mice, suggesting a regulatory relationship between Slc26a4 and Cl- channel genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 present gene array data with regression-based analysis identifying temporal and genotype-dependent expression changes. The downregulation of Clcnkb and Bsnd in Slc26a4\u0394/\u0394 mice is an important observation. However, claim C92 is speculative ('may reflect') - the correlation does not establish direct regulatory relationships, which would require mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Immunohistochemistry showed no difference in FOXI1-positive cell ratios between Slc26a4\u0394/+ and Slc26a4\u0394/\u0394 mice at P0, indicating gene expression differences result from cellular-level changes rather than changes in MRC number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide important mechanistic insight by distinguishing between cell number and per-cell expression changes. The immunohistochemistry data with quantification supports this conclusion. However, the manuscript does not provide statistical analysis details (sample size, p-value) for the FOXI1 quantification, which would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Microarray analysis rejected thick ascending limb and renal connecting tubule models (lacking SLC12A1 and SLC12A3 expression) but identified the cortical collecting duct as a reasonable model for NaCl absorption in the embryonic endolymphatic sac, with shared expression of critical genes including Slc26a4, v-ATPase subunits, Car2, Car12, Foxi1, Cl- channel subunits, Slc4a9, ENaC subunits, Kcnq1, and Atp1a1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe model-based analysis comparing endolymphatic sac gene expression to known renal NaCl absorption mechanisms. The systematic rejection of alternative models based on absence of key genes (SLC12A1, SLC12A3) and identification of shared genes with cortical collecting duct is methodologically sound. The RNA-seq data showing MRC-specific expression of most genes (except Scnn1b, Kcnq1, Atp1a1) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Integration of functional and transcriptomic data confirms the endolymphatic sac absorbs fluid during morphogenesis, demonstrates MRCs and RRCs are two distinct cell types, identifies MRCs as the primary cells expressing ion transport mechanisms for fluid absorption, and implicates MRC dysfunction as the initial lesion leading to EVA and hearing loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 represent major conclusions integrating multiple lines of evidence. C99 combines current in vitro data with previous in vivo findings. C100 is strongly supported by unbiased clustering. C101 is supported by comprehensive ion transporter expression analysis. C102 is a logical inference from the observation that MRCs (not RRCs) express known EVA genes, though it remains somewhat speculative without direct demonstration of MRC dysfunction causing EVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A molecular model proposes fluid absorption is driven by NaCl absorption, with SLC26A4 mediating apical Cl-/HCO3- exchange, Na+ absorbed via a gadolinium-sensitive pathway and exported by Na+/K+ ATPase, K+ recycled through basolateral K+ channels establishing negative potential driving Cl- release through Cl- channels, and excess HCO3- released via basolateral Cl-/HCO3- exchanger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 present a comprehensive mechanistic model integrating functional data (pharmacological sensitivities), gene expression data (ion transporter identification), and known physiology. The model is well-supported by the data presented, though some components (e.g., the specific Na+ channel, K+ channel identity) remain to be definitively identified. The model is consistent with established epithelial transport mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Fluid absorption at E14.5 is insensitive to bafilomycin, consistent with minimal v-ATPase activity (luminal pH only 0.1 units more acidic than interstitial fluid). v-ATPase activity increases with development (0.55 pH units at E17.5), potentially through trafficking from sub-apical vesicles to apical membrane as reported in other FORE family cells, and appears required for normal development based on EVA association with ATP6V1B1 and ATP6V0A4 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 integrate functional data with previous pH measurements. C113-C114 describe developmental changes and propose mechanisms based on known physiology. C115-C116 present reasonable speculation about v-ATPase trafficking based on analogous cell types, supported by citations. C117 connects to human genetics and mouse models. The overall argument is coherent, though the trafficking mechanism (C115) is speculative for the endolymphatic sac specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Fluid absorption requires Na+ and Cl- absorption pathways. SLC26A4 appears required for apical Cl- absorption, but the Na+ absorption mechanism remains unclear. Evidence argues against paracellular Na+ absorption (lumen-negative potential) and NHE3 (S3226 insensitivity). Benzamil insensitivity argues against ENaC at E14.5 (consistent with expression of only two of three required subunits), though ENaC contributes in adult human sac. Gadolinium sensitivity supports a non-selective cation channel, possibly formed by Scnn1a/Scnn1b subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C131 systematically evaluate potential Na+ absorption mechanisms using pharmacological, electrophysiological, and gene expression data. The logic is sound in ruling out certain mechanisms (NHE3, ENaC at E14.5) while identifying gadolinium-sensitive pathway. However, the specific molecular identity remains unresolved (C120, C131), and the speculation about Scnn1a/Scnn1b forming a non-selective channel (C129) requires experimental validation. The integration of embryonic vs adult data (C122, C127) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "CLCNKB and BSND may not be essential for NaCl absorption in the endolymphatic sac, as EVA is not associated with Bartter syndrome and was not observed in Bsnd\u2206/\u2206 mice, with hearing loss in Bartter syndrome instead associated with CLCNKB/BSND loss in stria vascularis. An alternative Cl- absorption pathway may work independently or redundantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 integrate clinical observations (Bartter syndrome) and mouse model data (Bsnd\u2206/\u2206) to argue CLCNKB/BSND are not essential for endolymphatic sac function, supported by citation to Rickheit et al., 2008. The distinction between endolymphatic sac and stria vascularis function is important. However, claim C136 is speculative about alternative pathways. The argument is logical but the proposed redundancy requires experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The NaCl absorption mechanism in the endolymphatic sac shows similarity to renal collecting duct intercalated cells, as both are FORE family members. However, key differences exist: (1) no MRC subtypes detected, (2) no basolateral v-ATPase in MRCs, (3) low non-specific Slc4a8 expression, (4) Scnn1a (ENaC \u03b1, a principal cell marker) expressed exclusively in MRCs. Ion transport components are consolidated into MRCs, making the endolymphatic sac less complex than the renal collecting duct, consistent with lower dynamic range requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C149 provide systematic comparison between endolymphatic sac MRCs and renal intercalated cells, identifying both similarities (FORE family membership, shared genes) and important differences. The differences are well-documented through RNA-seq and IHC data. The conclusion about reduced complexity (C147-C148) is supported by the consolidation of transport functions into one cell type. The physiological explanation (C149) is reasonable. This comparative analysis strengthens the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Aquaporin expression is very low in the endolymphatic sac (only 2-5 of 213 cells expressed Aqp1/3/4/6/7/11 by RNA-seq; Aqp1/3/8/11 detected by microarray but at low levels with no temporal or genotype differences). The endolymphatic sac may not require enhanced water permeability from aquaporins, as water flux may be much smaller than in kidney, and diffusion via transcellular/paracellular routes plus small numbers of aquaporin channels may suffice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 document low aquaporin expression using two independent methods (RNA-seq and microarray). The speculation about functional implications (C155-C157) is reasonable given the low expression and physiological considerations (small tissue volume, lower flux requirements). However, C154 about AQP2 half-life is tangential. The argument is logical but the sufficiency of low aquaporin expression for normal development remains an inference rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "SLC26A4 is equally distributed across the entire endolymphatic sac, with no unique isoforms detected in Slc26a4-positive RRCs based on RNA-seq read alignment inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 address the distribution and isoform question for SLC26A4. C158 is supported by citation to previous work. C159 provides additional analysis of the current RNA-seq data showing no alternative splicing in RRCs. These observations are important for understanding the low-level SLC26A4 expression in RRCs documented earlier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Single-cell RNA-seq has limitations including potential transcriptional changes from enzymatic dissociation, size-based cell capture bias (10-17 \u00b5m), detection limits for low-expression genes, and potential to miss genes expressed at similar levels in both cell types. The microarray approach compensates for these limitations, and combined with qPCR and immunohistochemistry, supports the validity of RNA-seq results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 provide appropriate discussion of methodological limitations and validation strategies. The acknowledgment of technical limitations (C160-C163) is important for interpretation. The use of multiple orthogonal approaches (microarray, qPCR, IHC) to validate key findings (C164-C165) is a strength of the study. This multi-method validation increases confidence in the major conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "The data provide a comprehensive model for normal function and differentiation of the developing endolymphatic sac, which will enhance understanding and reveal potential therapeutic opportunities for hearing/balance loss associated with EVA and endolymph homeostasis diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is a reasonable summary of the study's contributions, supported by the extensive functional, transcriptomic, and developmental data presented. Claim C167 about future therapeutic opportunities is speculative but represents appropriate discussion of translational implications. The comprehensive nature of the model is well-supported by the integration of multiple experimental approaches.",
+    "result_type": "MAJOR"
+  }
+]

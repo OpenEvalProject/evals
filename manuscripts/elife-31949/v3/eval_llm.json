@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C38",
+      "C39",
+      "C51",
+      "C57",
+      "C58",
+      "C62",
+      "C92"
+    ],
+    "result": "Active relief-seeking from tonic pain involves a reinforcement learning process with prediction error signals localized to the dorsal putamen. In both experiments, the TD action-learning model best fit choice behavior, and fMRI analysis revealed that action prediction errors correlated with BOLD responses in the dorsal putamen, with Bayesian model selection confirming this region preferentially encoded action-learning signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C38, C39, C51, C57, C58, C62, and C92 converge to demonstrate that relief-seeking is governed by a TD reinforcement learning mechanism with prediction errors in dorsal putamen. The behavioral model comparison (C23, C51), neuroimaging correlations (C38, C57), and Bayesian model selection (C39, C58) provide strong, multi-modal evidence across both experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C41",
+      "C43",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "An associability signal in the pregenual anterior cingulate cortex (pgACC) controls relief learning rate and parametrically modulates tonic pain levels. The hybrid model with state-based associability best fit SCR data and pain ratings in both experiments, with pgACC BOLD responses correlating with associability. Higher associability was associated with reduced pain ratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28, C41, C43, C54, C55, C56, C59, C60, C63, and C64 collectively demonstrate that pgACC associability signals modulate pain. The convergence of behavioral modeling (C28, C54, C55), pain rating correlations (C56), and neuroimaging findings (C41, C43, C59, C60) across both experiments provides robust support for this dual-function mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C91"
+    ],
+    "result": "Parallel state-outcome and action-outcome learning systems operate during relief learning, with associability operating at the state level but not directly at the action level. Dissociable behavioral responses (SCRs reflecting state learning, choices reflecting action learning) reveal this dual architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C91 are supported by model comparison showing TD (not hybrid action-learning) best fit choices while hybrid state-learning best fit SCRs. This dissociation across behavioral measures provides clear evidence for parallel learning systems with different computational properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C52",
+      "C54"
+    ],
+    "result": "Skin conductance responses (SCRs) reflect state-based associability during relief learning. SCRs were higher in instrumental versus Pavlovian sessions in Experiment 1, and the hybrid model with state-based associability best fit SCR data in both experiments, consistent with prior fear learning studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C28, C52, and C54 demonstrate that SCRs index state-based associability. The model comparison results (C28, C54) and consistency with prior literature (C27) support this interpretation, though the instrumental/Pavlovian difference (C25) was modest and the protected exceedance probability analysis showed less conclusive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C37",
+      "C45"
+    ],
+    "result": "There is no general effect of instrumental controllability on pain or relief ratings. Pain and relief ratings did not differ between instrumental and Pavlovian sessions in Experiment 1, and the relationship between prediction errors and pain was opposite to placebo expectation predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C37, and C45 are supported by the absence of rating differences between instrumental and Pavlovian conditions and the negative correlation between prediction errors and pain (opposite to placebo hypothesis). This null finding motivated the design changes in Experiment 2 (C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C58"
+    ],
+    "result": "State-learning (hybrid model) prediction errors are represented in amygdala, ventral striatum, and DLPFC. Bayesian model selection showed these regions preferentially encoded state-learning signals compared to action-learning signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C58 are supported by Bayesian model selection analysis showing regional specificity for state versus action learning. However, the evidence is weaker than for dorsal putamen action signals, as state prediction errors were highly correlated with action prediction errors and some regions showed mixed results across experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "pgACC associability responses are not solely driven by pain perception itself, as trial-by-trial pain ratings as parametric modulators did not reveal significant pgACC responses in Experiment 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 reports a null finding that helps rule out an alternative interpretation. However, null results are inherently difficult to interpret definitively, and the absence of pgACC correlation with pain ratings could reflect insufficient power, timing issues, or other methodological factors rather than conclusively demonstrating independence from pain perception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "No significant BOLD responses correlated with associability were observed in Pavlovian sessions of Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 reports a null finding in Pavlovian sessions. This is difficult to interpret as it could reflect true absence of associability signals, insufficient power, or methodological limitations. The finding contrasts with the significant instrumental session results but lacks the statistical power to definitively establish a difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The localization of associability signals to pgACC is consistent with prior literature implicating this region in threat unpredictability, approach-avoidance decision-making, foraging perseverance, and various forms of endogenous analgesia including controllability, distraction, and placebo effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 establish consistency between current findings and prior literature. These are well-supported by multiple citations (C77-C83) and provide important context for interpreting the pgACC findings, though they represent integration with prior work rather than novel empirical findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C88"
+    ],
+    "result": "Associability-mediated pain suppression represents a specific, adaptive mechanism that facilitates learning rather than a non-specific effect of control. This framework explains why uncertainty enhances phasic pain (where pain drives learning) but suppresses tonic pain (where pain reduces cognition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71, C72, and C88 present a coherent theoretical interpretation supported by the empirical findings. The specificity of the associability-pain relationship (not general controllability) and its functional logic are well-argued, though these represent interpretive claims extending beyond the direct empirical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Associability as implemented cannot distinguish between reducible and irreducible uncertainty, though evidence from rodent studies suggests associability can be maintained over extended training periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C75 acknowledge a theoretical limitation of the associability mechanism while citing evidence (C75) that this may not be problematic in practice. This represents an honest assessment of model limitations supported by relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The results provide a computational framework integrating pain attention, controllability, and endogenous analgesia, explaining inconsistencies in prior literature. The escape learning framework is theoretically distinct from omission-based relief and avoidance learning, and involves model-free reinforcement learning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C87, C89, C90, C93, C94, and C95 present theoretical integration and contextualization supported by citations and the empirical findings. The characterization of the learning mechanism as model-free (C95) and distinct from avoidance (C90, C93) is well-justified, though some distinctions (e.g., dorsolateral vs. other striatal regions) are subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C99"
+    ],
+    "result": "A model-based learning system likely co-exists with the model-free system identified here, and pgACC represents a potential therapeutic target for chronic pain intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96 and C99 are speculative statements about future research directions and clinical implications. While plausible given the findings, these represent hypotheses for future testing rather than conclusions supported by the current data. C96 is explicitly framed as speculation with citation support, while C99 extends beyond the experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Adaptive learning processes and brain regions including medial prefrontal cortex and striatum have been implicated in chronic pain pathogenesis and maintenance in prior clinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C98 accurately summarize prior literature on chronic pain with appropriate citations. These provide important context for the potential clinical relevance of the findings but represent review of existing literature rather than novel empirical contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The experimental designs of Experiments 1 and 2 are clearly described, including task structure, thermal stimulation parameters, rating procedures, and imaging acquisition parameters. Experiment 2 incorporated several design improvements based on Experiment 1 findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22, C44-C50, and C100-C103 provide detailed methodological descriptions that are internally consistent and clearly documented. The rationale for design changes between experiments (C45, C48, C49, C50) is explicitly stated. These methodological details are essential for reproducibility and interpretation.",
+    "result_type": "MINOR"
+  }
+]

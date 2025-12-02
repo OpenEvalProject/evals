@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "sel-12 mutants exhibit elevated mitochondrial Ca2+ levels in both body wall muscle and mechanosensory neurons. GCaMP6/mCherry fluorescence ratios are 2.4-fold and 3.4-fold higher in sel-12(ar131) and sel-12(ty11) mutants respectively compared to wild type in muscle, with similar elevations observed in ALM and PLM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide consistent quantitative measurements of mitochondrial Ca2+ using ratiometric GCaMP6/mCherry imaging across multiple sel-12 alleles and tissue types (Figure 1A, Figure 1\u2014figure supplement 1B). The use of mCherry as an expression control strengthens the interpretation that differences reflect Ca2+ levels rather than expression variation. Multiple independent alleles showing similar phenotypes supports genetic specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "sel-12 mutants display elevated mitochondrial respiration with basal OCR of 5.5-6.4 pmol/min/worm compared to 3.9 pmol/min/worm in wild type, and maximal OCR of 10-11.7 pmol/min/worm compared to 7.2 pmol/min/worm in wild type. This indicates elevated OXPHOS activity resulting in higher OCR and ATP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 present consistent OCR measurements across three independent sel-12 alleles using Seahorse XFp analysis (Figure 1C,D). The elevated basal and FCCP-stimulated maximal respiration rates are statistically significant and reproducible across alleles. The interpretation linking elevated OCR to OXPHOS activity is well-supported by the experimental design and is consistent with ATP measurements in C1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The elevated ATP, mitochondrial Ca2+, and OCR in sel-12 mutants are not due to increased mitochondrial biogenesis or accumulation, as mitoDNA copy number and TOM20::GFP fluorescence are similar between wild type and sel-12 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 address a critical alternative explanation through qRT-PCR of mitoDNA (Figure 1\u2014figure supplement 1E) and TOM20::GFP fluorescence quantification (Figure 1\u2014figure supplement 1F). Both measurements show no significant differences, supporting the conclusion that metabolic changes reflect altered mitochondrial function rather than mitochondrial number. This control strengthens the interpretation of the primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "FAD patient fibroblasts with PSEN1 mutations show elevated ATP levels, increased basal and maximal OCR, and elevated ROS compared to control fibroblasts, demonstrating a conserved role of PSEN1 in mitochondrial activity similar to SEL-12 in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 demonstrate conservation of the mitochondrial phenotype in human cells (Figure 1E-H). The use of multiple FAD and control cell lines strengthens the findings. However, the manuscript does not specify sample sizes, number of biological replicates, or provide detailed information about the specific PSEN1 mutations in each line, which limits full evaluation. The parallel phenotypes across species support evolutionary conservation of PSEN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "sel-12 mutants exhibit mitochondrial disorganization in mechanosensory neurons, with 53-55% showing discontinuous mitochondrial morphology compared to 16.7% in wild type, indicating that SEL-12 function is required to maintain mitochondrial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 quantify mitochondrial morphology defects using mCherry-labeled mitochondria in mechanosensory neurons (Figure 2A). The significant increase in discontinuous morphology across two sel-12 alleles supports the conclusion. The claim is consistent with prior work cited (Sarasija and Norman, 2015) showing similar defects in other tissues, strengthening the interpretation of a general role for SEL-12 in mitochondrial structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "sel-12 mutants show age-dependent mechanosensory defects, with normal responses at L4 larval stage but significantly reduced light touch responses (39-45% vs 83% in wild type) at day 1 of adulthood that progressively worsen by day 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 document a clear temporal progression of mechanosensory dysfunction using a well-established behavioral assay (Figure 2B). The normal L4 responses followed by adult-onset defects across three independent alleles strongly support a neurodegenerative rather than developmental defect. Statistical significance is indicated and sample sizes appear adequate (n values provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Pan-neuronal but not muscle-specific expression of wild type SEL-12 rescues mechanosensory defects in sel-12(ty11) mutants, demonstrating tissue-specific requirement for SEL-12 in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide tissue-specific rescue experiments (Figure 2C) that establish neuronal autonomy of the mechanosensory phenotype. The differential rescue by pan-neuronal versus muscle-specific promoters is a strong genetic control demonstrating where SEL-12 function is required. This is consistent with similar tissue-specific rescue of sprouting phenotypes (C64-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C70"
+    ],
+    "result": "sel-12 mutants exhibit age-dependent ectopic neuronal sprouting from ALM soma, with normal morphology at L4 but ~2 sprouts/soma at day 1 of adulthood increasing to ~3 sprouts/soma by day 3, compared to 0.56-1 sprouts/soma in age-matched wild type. These structural aberrations appear in adulthood rather than during development, indicating neurodegeneration rather than developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C69-C70 document progressive structural neurodegeneration using GFP-labeled neurons (Figure 3A,B). The temporal pattern\u2014normal at L4 followed by adult-onset and progressive worsening\u2014strongly supports a neurodegenerative interpretation. Quantification shows clear dose-response with age. The parallel between structural and functional decline (mechanosensation) strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "sel-12(ty11) mutants at day 1 of adulthood show multiple axonal abnormalities including wavy processes (~7 vs ~2 per 10 processes in wild type), lesions (~6 vs ~1 per 10), and breaks (~2 vs ~0 per 10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 quantify distinct morphological abnormalities in axonal processes (Figure 3A,C-E). The multiple independent structural defects all showing significant increases in sel-12 mutants provide convergent evidence for neurodegeneration. The quantification appears rigorous with adequate sample sizes indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Notch receptor mutants (lin-12 and glp-1) show normal mechanosensation (78-86% response) at days 1-3 of adulthood similar to wild type (83%), indicating that Notch signaling is not required for mechanosensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 use genetic analysis of Notch pathway mutants to test whether mechanosensory defects require Notch signaling (Figure 4A). The normal touch responses in lin-12 and glp-1 mutants across multiple time points provide strong evidence that the sel-12 mechanosensory phenotype is Notch-independent. This is an important control given PSEN's known role in Notch processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Gamma-secretase inhibition with Compound E does not impair mechanosensation or cause neuronal sprouting, and a catalytically-dead SEL-12 (D226A) rescues both mechanosensory defects and neurodegenerative morphology comparably to wild type SEL-12, demonstrating that gamma-secretase activity is not required for mechanosensory neuronal integrity or function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 use both pharmacological (Compound E) and genetic (D226A mutant) approaches to test gamma-secretase dependence (Figure 4B-D, Figure 4\u2014figure supplement 1). The convergent results from two independent methods strongly support the conclusion. The D226A rescue is particularly compelling as it demonstrates loss of catalytic activity (confirmed by egg-laying defect) while retaining rescue function. This is a critical finding distinguishing PSEN's role in neurodegeneration from its canonical gamma-secretase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Pan-neuronal Abeta1-42 overexpression causes mechanosensory deficits similar to sel-12 mutants but does not produce neuronal structural aberrations, mitochondrial disorganization, or elevated mitochondrial Ca2+, indicating a distinct mechanism from presenilin mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 compare Abeta overexpression to sel-12 phenotypes (Figure 5A-E). The selective overlap (touch defects) versus divergence (no structural/mitochondrial defects) provides important mechanistic insight. However, the interpretation that Abeta acts through a \"distinct mechanism\" is somewhat limited\u2014Abeta overexpression is artificial and may not reflect endogenous Abeta function. The key conclusion that sel-12 neurodegeneration can occur without Abeta-like effects is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Reducing ER Ca2+ release through crt-1 or unc-68 null mutations normalizes mitochondrial Ca2+ levels, improves mitochondrial organization, reduces OCR to wild type levels, and decreases ROS in sel-12 mutants, demonstrating that exacerbated ER Ca2+ release drives elevated OXPHOS and mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 present comprehensive rescue experiments targeting ER Ca2+ release (Figure 6A-F, Figure 6\u2014figure supplement 1). The normalization of multiple downstream phenotypes (mitochondrial Ca2+, morphology, OCR, ROS) by two independent genetic manipulations (crt-1, unc-68) provides strong evidence for the proposed pathway. The logical progression from Ca2+ to metabolism to ROS is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Reducing ER Ca2+ release in crt-1;sel-12 and unc-68;sel-12 double mutants strongly suppresses neurodegeneration (ectopic sprouting, waves, lesions, breaks) and improves mechanosensation (77.7% vs 48.4% in sel-12 alone), indicating that deregulated ER Ca2+ release promotes neurodegeneration through mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 demonstrate functional rescue of neurodegeneration by reducing ER Ca2+ release (Figure 6G-H, supplementary figures). The suppression of multiple independent neurodegenerative phenotypes and restoration of mechanosensory function provide strong support for the causal pathway from ER Ca2+ dysregulation to neurodegeneration. This connects the upstream Ca2+ defects to the downstream neurological phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Reducing mitochondrial Ca2+ uptake through mcu-1 null mutation normalizes mitochondrial Ca2+ levels, improves mitochondrial organization, reduces ROS and OCR, suppresses neurodegeneration (sprouting, waves, lesions, breaks), and restores mechanosensation (78.8% vs 48.4%) in sel-12 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 demonstrate rescue by blocking mitochondrial Ca2+ uptake (Figure 7A-G, Figure 7\u2014figure supplement 1). The comprehensive rescue of metabolic, structural, and functional phenotypes by targeting a different node in the pathway (mitochondrial uptake vs ER release) strongly supports the proposed Ca2+-driven mechanism. The parallel results with crt-1/unc-68 experiments provide convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Treatment of FAD fibroblasts with Ru360 (mitochondrial Ca2+ uniporter inhibitor) decreases both ATP and ROS levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 demonstrates that the mitochondrial Ca2+ uptake mechanism is conserved in human FAD cells (Figure 7H,I). The pharmacological rescue in human cells parallels the genetic rescue in worms, supporting evolutionary conservation. However, limited methodological details are provided about the human cell experiments (replicates, controls, statistical tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "drp-1 RNAi rescues mitochondrial morphology but fails to restore mitochondrial Ca2+ levels, OCR, or neurodegeneration in sel-12 mutants, suggesting that mitochondrial morphology defects are a symptom rather than cause of neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 use drp-1 knockdown to test whether mitochondrial morphology defects are causal (Figure 8\u2014figure supplement 1). The selective rescue of morphology without functional improvement provides important mechanistic insight distinguishing correlation from causation. This negative result strengthens the overall model by ruling out an alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Doxycycline treatment inhibits mitochondrial function (suppresses elevated OCR) and rescues mechanosensory defects in sel-12 mutants. In FAD fibroblasts, doxycycline reduces ATP, ROS, and OCR, indicating that elevated mitochondrial activity drives neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 use pharmacological inhibition of mitochondrial function to test causality (Figure 8A-I). The rescue of neurodegeneration by directly reducing mitochondrial activity provides strong support for the model that excessive OXPHOS drives pathology. The parallel effects in worms and human cells strengthen the conclusion. However, doxycycline has pleiotropic effects beyond mitochondrial inhibition, which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "sel-12 mutants have elevated mitochondrial ROS in mechanosensory neurons. MitoTEMPO treatment reduces mitochondrial ROS without altering Ca2+ levels, decreases ectopic sprouting (from 2 to 1 sprout/ALM), and restores normal mechanosensation (83% vs 48% in untreated), while control TPP treatment shows no improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 use mitochondria-targeted antioxidant to test whether ROS mediates neurodegeneration (Figure 9A-C, Figure 9\u2014figure supplement 1A-B). The selective reduction of ROS without affecting Ca2+ levels, combined with functional rescue and appropriate TPP control, provides strong evidence that mitochondrial ROS is the proximal cause of neurodegeneration. This completes the mechanistic pathway from Ca2+ to OXPHOS to ROS to neurodegeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "MitoTEMPO treatment does not rescue mitochondrial morphology defects in sel-12 mutants, suggesting that oxidative stress does not directly cause mitochondrial structural disorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 show selective rescue effects of MitoTEMPO (Figure 9\u2014figure supplement 1C). The failure to rescue morphology while rescuing function helps order the pathological events and indicates that morphology defects may be parallel to rather than downstream of ROS. This nuanced finding strengthens the overall mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "Mutations in sel-12 result in elevated ER-mitochondrial Ca2+ signaling leading to increased mitochondrial Ca2+ content, which stimulates mitochondrial respiration and increases superoxide production, ultimately causing oxidative stress-mediated neurodegeneration through a pathway involving ER to mitochondria Ca2+ transfer, amplified OXPHOS, and mitochondrial superoxide generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C120-C121, C123 synthesize the overall mechanistic model supported by the collective experimental evidence. The pathway is well-supported by: (1) direct measurements of elevated mitochondrial Ca2+, (2) elevated OXPHOS/OCR, (3) elevated ROS, (4) neurodegeneration phenotypes, and (5) rescue experiments targeting each step (ER Ca2+ release, mitochondrial Ca2+ uptake, ROS scavenging, OXPHOS inhibition). The logical progression and multiple lines of convergent evidence strongly support this integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C26",
+      "C122",
+      "C147",
+      "C154"
+    ],
+    "result": "Neurodegeneration in sel-12 mutants occurs through faulty ER-to-mitochondria Ca2+ transfer and mitochondrial metabolic dysfunction, completely independent of Abeta signaling and gamma-secretase activity, as demonstrated in C. elegans which lack Abeta peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C122, C147, C154 establish Abeta-independence through multiple lines of evidence: (1) C. elegans lacks Abeta-encoding genes, (2) gamma-secretase inhibition doesn't phenocopy sel-12, (3) catalytically-dead SEL-12 rescues, (4) Abeta overexpression produces different phenotypes. This is a critical conceptual advance challenging the amyloid hypothesis. The evidence is strong, though the relevance to human AD where Abeta is present requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C39",
+      "C143"
+    ],
+    "result": "Aged sel-12 mutants (day 8 adults) show dramatically reduced mitochondrial respiration compared to wild type, indicating that mitochondrial function becomes impaired with age in sel-12 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C143 document age-related decline in mitochondrial function (Figure 1\u2014figure supplement 1C,D). This observation is interesting but somewhat tangential to the main findings. The interpretation that early hyperactivity leads to later decline is reasonable but speculative (C144). The data support the observation but mechanistic understanding is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C137"
+    ],
+    "result": "Skin fibroblasts from FAD patients with PSEN1 mutations show upregulation of OXPHOS, ATP production, and ROS generation that can be reduced by inhibiting mitochondrial Ca2+ uptake, demonstrating a conserved role of PSEN in mitochondrial regulation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124 and C137 establish evolutionary conservation of the mechanism (Figure 1E-H, Figure 7H-I). The parallel phenotypes in human FAD cells and rescue by Ru360 support conservation. However, the human cell work is less extensively characterized than the C. elegans studies. More details on cell line validation, mutation specifics, and experimental replication would strengthen confidence.",
+    "result_type": "MAJOR"
+  }
+]

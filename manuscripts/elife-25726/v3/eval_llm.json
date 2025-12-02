@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors developed a CRISPR/Cas-based lineage tracing method by injecting cas9 mRNA and single gRNAs into axolotl zygotes to generate unique indels that label cell lineages. DNA was extracted from original and regenerated limbs and analyzed by NGS to track allele frequencies across regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C25-C32 describe a coherent experimental approach using CRISPR-induced indels as lineage markers, with NGS quantification of allele frequencies in original and regenerated limbs. The method is well-documented with appropriate sample sizes (n=19 animals) and technical details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "NGS analysis revealed that mutagenized axolotl limbs are mosaic with a mean of 27.3 alleles per limb. Linear regression showed that allele frequencies in primary limbs significantly predict frequencies in secondary limbs (r\u00b2=0.37, p<1\u00d710\u207b\u00b9\u2075), indicating that cell lineages contribute to original and regenerated limbs at similar frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present quantitative findings with appropriate statistical analysis. The r\u00b2 value of 0.37 indicates moderate correlation, and the highly significant p-value supports the conclusion that lineage frequencies are preserved during regeneration. Sample size (n=19) is adequate for this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The majority of alleles (367/492) are low frequency (<1.6% of reads, median 2332 RPM). Low frequency alleles are more likely to be retained or increase (197/367) than disappear (97/367) after regeneration, indicating high preservation of low frequency cell lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide quantitative evidence that low frequency lineages are preserved during regeneration. The data show that most low frequency alleles persist rather than being lost, supporting the conclusion of high fidelity regeneration even for rare lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The mean difference in allelic identity between original and secondary limbs was 24.2% (s.d.=\u00b116.1%, n=19), or 22.0% (s.d.=\u00b113.6%) excluding one malformed limb outlier. This difference was independent of mutation rate or allele number, demonstrating that regenerated limbs are high fidelity replicas of originals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C46-C48 present the primary quantitative measure of regeneration fidelity with appropriate statistical analysis. The exclusion of the malformed limb outlier (C43-C44) is justified, and the lack of correlation with technical variables (C47) strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "One animal (EGFP 4) with spontaneous limb malformations and polydactyly showed the highest change in allelic identity (63.3%), suggesting that changes in allelic identity reflect morphological fidelity of regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe a single case that provides correlative evidence linking allelic fidelity to morphological fidelity. While based on n=1 outlier, this observation is consistent with the overall hypothesis and is appropriately presented as suggestive rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "After two rounds of regeneration (tertiary limbs), allele frequencies in primary limbs still predict tertiary limb frequencies (r\u00b2=0.47, p<1\u00d710\u207b\u00b9\u2075). Tertiary limbs differed from secondary limbs by only 15.8% (s.d.=\u00b16.5%), demonstrating no decline in lineage fidelity after repeated amputations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 extend the primary finding to multiple regeneration cycles (n=12 animals). The higher r\u00b2 value (0.47 vs 0.37) and lower percent change (15.8% vs 24.2%) for tertiary limbs actually suggest improved correlation, supporting the conclusion of maintained fidelity across multiple regenerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Despite non-random CRISPR-induced indel formation, most alleles are unique to individual animals. Low frequency alleles (<1.6% reads) appeared in only 1-2 animals, while high frequency alleles were shared. At reduced cas9 concentrations, 26/39 alleles were unique, indicating most alleles represent unique cell lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 address a critical methodological concern about whether alleles truly represent independent lineages. The data from multiple animals (up to 4 per gRNA) and the reduced cas9 experiment (n=50 animals) provide strong evidence that most alleles, especially low frequency ones, are unique lineage markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Tissue-specific analysis of four animals revealed that high frequency alleles (>6.5% reads) are detected in most tissues (mean 5.4/6), while low frequency alleles (<1.6%) are found in fewer tissues (mean 2.8/6). Each tissue contains alleles with >16-fold enrichment (29/171 alleles), with blood showing the most tissue-enriched alleles (17/58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 describe tissue-specific distribution of alleles in n=4 animals. The quantitative findings are internally consistent and supported by appropriate statistical measures. The interpretation that blood enrichment reflects hematopoietic cell origins is reasonable and citation-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Skin-enriched alleles were disproportionately represented among alleles that changed frequency during regeneration (Fisher's exact test, p=0.02 and p=0.05). These alleles were dramatically overrepresented in skin vs cartilage/bone (14,103-fold), likely reflecting epidermal cell migration rather than dermal contribution to cartilage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 identify skin as the only tissue showing significant changes in enriched alleles during regeneration, with appropriate statistical testing. The interpretation is supported by citations to previous work on epidermal cell migration and is consistent with the dramatic fold-enrichment in skin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Tissue-enriched alleles are predominantly low frequency (57/58) and represent a minor proportion of total reads in whole hands (mean 7.8%, s.d.=\u00b18.6%). Of 58 tissue-enriched alleles, 27 were not detected in whole hand samples but represented only 0.43% of reads in enriched tissues, suggesting under-sampling rather than absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 characterize the detection limits of the method and appropriately distinguish between true absence and under-sampling. The quantitative data (n=4 hands) support the interpretation that very low frequency tissue-enriched alleles fall below detection thresholds in whole limb samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "High-frequency alleles account for most sequence reads and are broadly distributed across tissues, likely forming early in embryogenesis or independently in multiple lineages. Low-frequency alleles forming later are more likely tissue-enriched but often undetectable in whole limb NGS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 synthesize the tissue distribution findings into a coherent model of allele origin and distribution. The inferences about developmental timing are reasonable given the data on tissue distribution patterns, though direct temporal data are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Correlation analysis of tissue-enriched samples showed that nerve, blood vessel, and blood exhibit low correlations with each other and other tissues, while muscle and skin show higher correlations with each other and the whole hand. This variation indicates tissues are differently reconstituted with respect to embryonic origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 present correlation analysis results with appropriate interpretation. The authors acknowledge confounding factors (tissue overrepresentation, sample contamination) that could explain some correlations, making their conclusions appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Some alleles present in original limbs were not detected in secondary limbs, but 35/54 lost alleles were recovered in subsequent limbs or tissues. Novel alleles appearing in secondary (5/5) or tertiary (4/6) limbs were also found in other iterations, indicating some losses reflect under-sampling while others represent true lineage loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 address the fate of apparently lost alleles through analysis of n=4 animals across three regeneration cycles. The recovery of most 'lost' alleles in subsequent samples provides strong evidence for under-sampling, while the asymmetry in recovery rates supports the conclusion that some lineages are truly lost.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Alleles undetectable after regeneration are rare (mean 748 RPM, median 20 RPM) and represent only 0.34% (\u00b10.56%) of limb lineages. This indicates either some embryonic lineages cannot participate in regeneration or become isolated in distal regions lost during amputation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 quantify the extent of true lineage loss (n=4 limbs) and propose two plausible explanations. The small percentage of lost lineages (0.34%) supports the overall conclusion of high fidelity regeneration, though the mechanism of loss remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C6",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Regenerated axolotl limbs are high fidelity replicates of originals, with lineages contributing as little as 0.01% (one ten-thousandth) of the original limb found at similar frequencies in regenerated limbs. Low frequency cell populations do not disproportionately repopulate regenerated limbs, and the same embryonic lineages regenerate the limb in the same proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C6, C104-C106 represent the main conclusions synthesized from multiple lines of evidence (allele frequency correlations, low frequency allele preservation, repeated regeneration fidelity). The conclusions are well-supported by the quantitative data presented throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The findings do not challenge previous observations that bone and cartilage contribute little to skeletal regeneration, but indicate that replacement cells are derived from the same embryonic lineages that initially formed the lost bone and cartilage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 appropriately contextualize the current findings relative to previous tissue-specific grafting studies. The interpretation reconciles apparent differences between lineage-level and tissue-level fidelity, though this remains an inference rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Zygotic injection of cas9 and gRNAs achieves high mutagenesis rates, but most cells are labeled with mutations occurring in early cell divisions or multiple times during development. Labeling redundancy could be reduced by using multiple gRNAs within a single amplifiable region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 acknowledge a limitation of the method (labeling redundancy) based on the observed allele frequency distributions. The suggestion for improvement (C111) is reasonable but speculative. This represents appropriate self-critique of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The method detects numerous low-frequency tissue-enriched alleles, but these often occur at or beyond detection thresholds when sampling whole limbs. Input DNA quantity and read coverage should be optimized for characterizing increasingly low frequency lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 identify detection limits as a methodological constraint, supported by the tissue-specific analysis showing many alleles undetectable in whole limbs. The recommendation for optimization is appropriate and based on the empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C117",
+      "C118"
+    ],
+    "result": "This is the first study to characterize regeneration using CRISPR-derived lineage tracing, demonstrating that regenerated limbs are repopulated by embryonic cell lineages in a manner that recapitulates original limb development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C117-C118 assert novelty and summarize the main finding. The novelty claim appears valid given the unique combination of CRISPR lineage tracing and regeneration analysis. The conclusion about recapitulation of development is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C119",
+      "C120"
+    ],
+    "result": "This work establishes baseline fidelity for regenerated limb reconstruction with respect to embryonic lineages in mosaic animals. The approach could be coupled with targeted mutagenesis to identify genes affecting lineage contribution to regenerated limbs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C119-C120 describe the contribution and potential applications of the work. C23 is supported by the comprehensive dataset. C119-C120 are speculative about future applications but represent reasonable extensions of the demonstrated methodology.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C98",
+      "C99"
+    ],
+    "result": "Click chemistry is an efficient method for constructing DNA templates for sgRNA expression. The clicked templates show high reaction efficiency and produce PCR products with efficiencies comparable to full-length synthetic oligonucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24, C98, and C99 are well-supported by Figure 1B showing high-efficiency click reactions and Figure 1C demonstrating no significant difference in PCR efficiency (p>0.05) between clicked and full-length synthetic templates. The methodology is clearly described and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C43",
+      "C30"
+    ],
+    "result": "sgRNAs produced from click chemistry templates are as effective as sgRNAs from full-length synthetic templates at repressing transcripts in vivo, with uniform dCas9 expression across strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C43 are supported by Figure 2G showing comparable repression efficiency between clicked and full-length constructs. Claim C30 is supported by Western blot data in Figure 1\u2014figure supplement 1 showing uniform dCas9 levels, ensuring the comparison is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C89"
+    ],
+    "result": "At the GAL1 locus, CRISPRi with sgRNA AS+112NT/dCas9 significantly represses the GAL1 antisense transcript in a strand-specific manner without affecting GAL1 sense transcript levels, size, or polyA site usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C61, C62, C64, C65, C66, and C89 are well-supported by Northern blotting data (Figures 2C,D and 3A,B) showing significant antisense reduction (p=0.004) with no effect on sense transcription, and 3' RACE data (Figure 3C) confirming unchanged polyA sites. This demonstrates strand-specific repression at GAL1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C47",
+      "C50"
+    ],
+    "result": "At HMS2, only sgRNA AS+243NT/dCas9 significantly repressed SUT650 antisense transcription, while AS+59NT and AS+276NT showed no effect. dCas9 binding was only detected at the AS+243NT site, and repression did not correlate with nucleosome occupancy, highlighting the need for controls for each sgRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44, C45, C47, and C50 are supported by Northern blotting (Figure 2F,G) showing significant SUT650 reduction only with AS+243NT (p=0.011), ChIP data (Figure 2\u2014figure supplement 2) showing dCas9 binding only at AS+243NT, and nucleosome occupancy analysis (Figure 2\u2014figure supplement 3) showing no correlation. The variable efficacy of different sgRNAs justifies the need for controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "CRISPRi with AS+243NT/dCas9 terminates SUT650 antisense transcription at HMS2 via a transcriptional block mechanism, but also generates a new Xrn1-sensitive unstable antisense transcript (Bt) downstream of the sgRNA binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52, C53, C54, C57, and C58 are supported by Northern blotting data (Figure 2F) showing SUT650 reduction without stabilization upon XRN1 deletion (supporting transcriptional block), and detection of a new shorter transcript Bt only in xrn1\u0394 background, indicating it is Xrn1-sensitive and unstable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The novel antisense transcript Bt extends into the HMS2 sense promoter but initiates upstream of the H4 probe site at the 3' end of HMS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 are supported by Northern blotting with multiple probes (Figure 2H) showing Bt is detected by probes H1 and H2 (in promoter and 5' coding region) but not by probe H4 (at 3' end), allowing mapping of the transcript boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CRISPRi with AS+243NT/dCas9 at HMS2 causes premature termination of a proportion of HMS2 sense transcripts, generating a truncated transcript (At) in addition to full-length transcript (A), with combined levels similar to control strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69, C70, C71, C72, and C73 are supported by Northern blotting data (Figures 3D,E) showing both full-length (A) and truncated (At) HMS2 sense transcripts. Probe mapping shows At is detected by upstream probes (H1, H2, H3) but not downstream probe H4, confirming premature termination. The similar combined levels suggest partial termination rather than complete repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C90"
+    ],
+    "result": "CRISPRi is not strand-specific at HMS2, as AS+243NT/dCas9 targeting the antisense non-template strand affects both sense and antisense transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C74, and C90 are strongly supported by the observation that AS+243NT/dCas9, designed to target only antisense transcription, causes both antisense termination (SUT650 reduction) and sense transcript truncation (At generation), demonstrating lack of strand-specificity at this locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C7",
+      "C75",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "sgRNA/dCas9 binding at HMS2 creates a chromatin environment permissive for transcription initiation and termination, redefining the transcriptional landscape by generating novel sense and antisense transcripts of varying stabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C5, C7, C75, C93, C94, and C95 are supported by the collective evidence of novel transcript generation (Bt antisense and At sense) with different stabilities (some only detected upon XRN1 deletion). However, the mechanistic explanation (chromatin environment changes) remains somewhat speculative, though supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Three sgRNAs designed to directly target HMS2 sense transcription near the TSS (S+77NT, S+106NT, S+179NT) showed no CRISPRi repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by Northern blotting data in Figure 3\u2014figure supplement 1 showing unchanged transcript levels and integrity with these sense-targeting sgRNAs, indicating they were ineffective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C87"
+    ],
+    "result": "CRISPRi is less effective than genetic mutations at repressing antisense transcripts at both GAL1 and HMS2. At GAL1, TATA mutation causes greater transcriptional repression than CRISPRi, as evidenced by differential stabilization upon XRN1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C78, C79, C80, and C87 are supported by Northern blotting data (Figure 4B,C) showing that TATA mutation causes minimal GAL1 AS stabilization upon XRN1 deletion (indicating strong transcriptional repression), while CRISPRi shows more stabilization (indicating incomplete repression). The comparison demonstrates CRISPRi is less effective than genetic intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Genetic replacement of HMS2 coding region with URA3 successfully blocks SUT650 and increases HMS2 sense levels, while CRISPRi achieves similar SUT650 reduction but does not increase HMS2 sense levels due to generation of novel transcripts and premature termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by Northern blotting data (Figure 4D-F) showing that HMS2:URA3 increases HMS2 sense and HMS2-BAT2 transcripts while decreasing BAT2, whereas CRISPRi reduces SUT650 similarly but does not alter HMS2, BAT2, or HMS2-BAT2 levels. This difference is explained by the novel transcripts and premature termination observed with CRISPRi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The redefinition of the transcriptional landscape by CRISPRi highlights the need for extensive controls and locus understanding before interpreting CRISPRi results, requiring rigorous analysis of transcript integrity and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 are supported by the collective findings showing unexpected effects at HMS2 (novel transcripts, lack of strand-specificity, premature termination). These observations justify the authors' recommendation for rigorous validation when using CRISPRi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Insertion of URA3 into snR52 and dCas9 expression in control strains did not affect growth rate, though some sgRNA-expressing strains showed slower growth indicating physiological effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C33 are supported by growth rate measurements in Figure 1D showing no effect of URA3 insertion or dCas9 expression alone, but slower growth with some sgRNAs, validating the experimental system while noting potential physiological impacts of specific sgRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The generation of novel antisense transcript Bt is potentially due to chromatin structure changes caused by AS+243NT/dCas9 binding or by blocking SUT650 creating an environment permissive for transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59 and C60 present speculative mechanistic explanations for Bt generation, supported by citations to relevant literature but without direct experimental evidence in this study. The proposed mechanisms are plausible but remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The lack of strand-specificity at HMS2 may reflect different transcription levels between galactose-inducible genes (high) and HMS2 (low).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is a speculative explanation for the observed differences between loci. While plausible, no direct evidence is provided to test this hypothesis, such as measuring transcription rates or testing CRISPRi at loci with varying expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C35",
+      "C39",
+      "C46",
+      "C48",
+      "C63",
+      "C67",
+      "C88",
+      "C92",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background knowledge and prior work establishing the context for the study, including the nature of CRISPRi, pervasive transcription, antisense function, click chemistry properties, and characteristics of specific loci (GAL1, HMS2, SNR52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior work, supported by appropriate citations. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the background accurately represents the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C40",
+      "C41",
+      "C51",
+      "C100",
+      "C101"
+    ],
+    "result": "Methodological details and observations including sgRNA integration strategy, SUT650 TSS heterogeneity, click linkage design, and SUT650 as an Xrn1 substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe methodological choices and observations that support the main findings. They are adequately documented through figures (e.g., Figure 1A for integration, Figure 2\u2014figure supplement 1 for TSS heterogeneity, Figure 2F for Xrn1 sensitivity) and methods descriptions.",
+    "result_type": "MINOR"
+  }
+]

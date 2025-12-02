@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C50"
+    ],
+    "result": "CATaDa produces chromatin accessibility profiles comparable to ATAC-seq and FAIRE-seq in Drosophila eye discs, with high reproducibility between replicates (r\u00b2 = 0.947) and significant overlap with peaks identified by established methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C33-C36, and C50 collectively demonstrate that CATaDa produces reliable chromatin accessibility data. The high correlation between replicates (C2), significant overlap with ATAC/FAIRE peaks (C5, C6), enrichment at expected genomic features (C4, C33), and identification of validated enhancers (C7) provide converging evidence. The authors appropriately acknowledge technical limitations related to GATC site distribution (C34, C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Chromatin accessibility changes dynamically during CNS differentiation, with hierarchical clustering revealing major groups where chromatin is accessible in either stem cells or mature neurons, and intermediate cell types showing transient accessibility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C39-C41 are supported by hierarchical clustering analysis (Figure 4C) showing distinct accessibility patterns across developmental stages. The identification of expected transcription factor motifs (C12, C13) in cell-type-specific accessible regions provides biological validation. The observation of intermediate accessibility in GMCs/newly born neurons (C39) is supported by data showing gradual chromatin changes during differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Chromatin accessibility patterns in midgut lineages show similar dynamics to CNS, with stem cells (ISCs) and differentiated cells (ECs) forming distinct clusters. Notably, NSCs and ISCs show higher correlation (R\u00b2 = 0.76) than their differentiated progeny, suggesting shared chromatin landscapes in somatic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are directly supported by hierarchical clustering (Figure 5D) and PCA analysis (Figure 5E) showing tissue-specific rather than differentiation-state clustering. The high correlation between stem cell types across lineages (C19) supports the inference that somatic stem cells share chromatin features (C20), though this interpretation is somewhat speculative and would benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "CATaDa successfully predicts cell-type-specific enhancers with 57% validation rate (17 of 30 tested lines), comparable to previous chromatin accessibility-based enhancer prediction methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by experimental validation data showing GFP expression patterns matching predictions. The 57% success rate is appropriately contextualized by comparison to published methods (C22, citing Kvon et al., 2014), indicating this is a reasonable performance for enhancer prediction. The validation includes examples from both CNS and midgut (Figure 6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C46",
+      "C47"
+    ],
+    "result": "NSCs and ISCs exhibit more broadly distributed chromatin accessibility than their differentiated progeny, with significantly more genomic regions showing low-level accessibility (1-3 rpm) in stem cells compared to neurons, and intermediate cell types retaining relatively open chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27, C46-C47 are supported by read distribution analysis (Figure 7) showing statistical differences in GATC fragment accessibility across cell types. The inclusion of additional neuronal datasets strengthens the analysis. Statistical testing (Welch's ANOVA with Games-Howell post-hoc) appropriately accounts for heteroscedasticity. The observation holds across both CNS and midgut lineages (C27), supporting generalization to somatic stem cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Intermediate cell types (GMCs/newly born neurons and enteroblasts) show chromatin accessibility patterns more similar to their stem cell precursors than to their differentiated progeny, suggesting delayed chromatin compaction during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by correlation analyses and clustering data (Figures 4B-C, 5B-F) showing intermediate cells cluster more closely with stem cells. This pattern is observed in both CNS and midgut lineages. However, the interpretation that regulatory regions are \"not fully repressed until terminal differentiation\" (C43) is somewhat inferential and could reflect alternative mechanisms discussed by the authors (e.g., repressor binding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C67"
+    ],
+    "result": "The broadly accessible chromatin in somatic stem cells may indicate retained cellular plasticity even after terminal cell fate specification, potentially enabling dedifferentiation or lineage reversion under appropriate conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C67 are explicitly speculative interpretations of the chromatin accessibility data. While the authors cite supporting evidence for dedifferentiation potential (C44, C45), the chromatin accessibility patterns alone do not directly demonstrate plasticity or dedifferentiation capacity. This hypothesis requires functional validation through dedifferentiation experiments or lineage tracing studies to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CATaDa offers methodological advantages over cell-sorting-based methods by marking accessible DNA in vivo, avoiding artifacts from fixation, tissue dissociation, and capturing dynamic chromatin changes over the expression period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are logically supported by the experimental design and appropriately cited literature on artifacts from fixation (C51, Baranello et al., 2016) and tissue dissociation (C52, van den Brink et al., 2017). The inference that in vivo labeling avoids these artifacts is reasonable, though direct comparative experiments would strengthen this claim. The temporal integration aspect (C53) is a logical consequence of Dam expression over hours.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CATaDa resolution is limited by GATC site frequency (~200 bp median spacing in Drosophila), though this can be improved using modified Dam with immunoprecipitation, and other methods like ATAC-seq also exhibit sequence biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 accurately describe technical limitations and are appropriately contextualized. The GATC spacing limitation (C54) is inherent to the method. The potential improvement via Dam-IP (C55) is supported by citations (Xiao et al., 2010; Xiao and Moore, 2011). The comparison to biases in other methods (C56, citing Madrigal, 2015) provides appropriate context that all methods have limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CATaDa is competitive with ATAC-seq in terms of cell number requirements, potentially working with as few as 1,000 cells based on DamID performance, and theoretically down to single cells based on published single-cell DamID methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 compare cell requirements across methods using cited literature. However, the authors have not directly demonstrated CATaDa performance with low cell numbers in this study. The inference that CATaDa will perform similarly to DamID (C58) is reasonable but unvalidated. The claim about single-cell capability (C59) is particularly speculative as it extrapolates from a different technique without experimental validation in the CATaDa context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Dam methylase may access sites inaccessible to Tn5 transposase due to its smaller size (32 kDa vs 55 kDa) or ability to methylate partially exposed nucleosomal DNA, potentially explaining unique CATaDa peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 are explicitly speculative explanations for differences between CATaDa and ATAC-seq. While the size difference is factual (C60, appropriately cited), the mechanistic explanations (C61) are hypothetical and lack direct experimental support. These remain plausible hypotheses that would require biochemical validation to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C48",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background knowledge and methodological context claims about Drosophila development, chromatin biology, DamID methodology, and related published work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C10, C14-C16, C28-C32, C37-C38, C44-C45, C48, C62-C63, C64-C66) represent established knowledge or appropriately cited prior work. They provide necessary context for interpreting the results but are not novel findings of this study. All citations appear appropriate and the factual claims about Drosophila biology and existing methods are standard knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1469 @@
+{
+  "submission": {
+    "id": "4fa492b9-dabc-46c4-863c-138ba3813930",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:53:37.038246Z",
+    "updated_at": "2025-12-02T00:53:37.038246Z"
+  },
+  "content": [
+    {
+      "id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "submission_id": "4fa492b9-dabc-46c4-863c-138ba3813930",
+      "content_type": "manuscript",
+      "content_text": "# Chimeric antigen receptors that trigger phagocytosis\n\n## Authors\n\n- Meghan A Morrissey<sup>1</sup> ([ORCID: 0000-0002-0531-4864](https://orcid.org/0000-0002-0531-4864))\n- Adam P Williamson<sup>1</sup> ([ORCID: 0000-0001-8905-5646](https://orcid.org/0000-0001-8905-5646))\n- Adriana M Steinbach<sup>1</sup>\n- Edward W Roberts<sup>3</sup>\n- Nadja Kern<sup>1</sup>\n- Mark B Headley<sup>3</sup>\n- Ronald D Vale<sup>1</sup> ([ORCID: 0000-0003-3460-2758](https://orcid.org/0000-0003-3460-2758)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Howard Hughes Medical Institute University of California, San Francisco San Francisco United States\n3. Department of Pathology University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nChimeric antigen receptors (CARs) are synthetic receptors that reprogram T cells to kill cancer. The success of CAR-T cell therapies highlights the promise of programmed immunity and suggests that applying CAR strategies to other immune cell lineages may be beneficial. Here, we engineered a family of Chimeric Antigen Receptors for Phagocytosis (CAR-Ps) that direct macrophages to engulf specific targets, including cancer cells. CAR-Ps consist of an extracellular antibody fragment, which can be modified to direct CAR-P activity towards specific antigens. By screening a panel of engulfment receptor intracellular domains, we found that the cytosolic domains from Megf10 and FcR\u0263 robustly triggered engulfment independently of their native extracellular domain. We show that CAR-Ps drive specific engulfment of antigen-coated synthetic particles and whole human cancer cells. Addition of a tandem PI3K recruitment domain increased cancer cell engulfment. Finally, we show that CAR-P expressing murine macrophages reduce cancer cell number in co-culture by over 40%.\n\n## Introduction\n\nChimeric antigen receptors (CARs) are synthetic transmembrane receptors that redirect T cell activity towards clinically relevant targets (reviewed in [Lim et al., 2017; Fesnak et al., 2016]). The CAR-T receptor contains an extracellular single chain antibody fragment (scFv) that recognizes known tumor antigens, and intracellular signaling domains from the T Cell Receptor (TCR) and costimulatory molecules that trigger T cell activation (Fesnak et al., 2016; Kochenderfer et al., 2009). CAR-T cells recognizing CD19, a marker expressed at high levels on the surface of B cells and B cell-derived malignancies, have been used successfully to target hematological malignancies with 70\u201390% of patients showing measurable improvement (Lim et al., 2017; Engel et al., 1995; Haso et al., 2013). The success of CAR-T suggests that programming immune cells to target cancer might be a broadly applicable approach.\n\nMacrophages are critical effectors of the innate immune system, responsible for engulfing debris and pathogens. Harnessing macrophages to combat tumor growth is of longstanding interest (Alvey and Discher, 2017; Lee et al., 2016). Macrophages are uniquely capable of penetrating solid tumors, while other immune cells, like T cells, are physically excluded or inactivated (Lim et al., 2017; Lee et al., 2016). This suggests that engineered macrophages may augment existing T cell-based therapies. Early efforts transferring healthy macrophages into cancer patients failed to inhibit tumor growth, suggesting that macrophages require additional signals to direct their activity towards tumors (Lacerna et al., 1988; Andreesen et al., 1990). Antibody blockade of CD47, a negative regulator of phagocytosis, reduced tumor burden, indicating that shifting the balance in favor of macrophage activation and engulfment is a promising therapeutic avenue (Majeti et al., 2009; Chao et al., 2010; Jaiswal et al., 2009; Tseng et al., 2013). Here, we report a family of chimeric antigen receptors that activate phagocytosis of cancer cells based on recognition of defined cell surface markers, resulting in significantly reduced cancer cell growth.\n\n## Results\n\nTo program engulfment towards a target antigen, we created a CAR strategy using the CAR-T design as a guide (Fesnak et al., 2016). We call this new class of synthetic receptors Chimeric Antigen Receptors for Phagocytosis (CAR-Ps). The CAR-P molecules contain the extracellular single-chain antibody variable fragment (scFv) recognizing the B cell antigen CD19 (\u0251CD19) and the CD8 transmembrane domain present in the \u0251CD19 CAR-T (Fesnak et al., 2016; Kochenderfer et al., 2009). To identify cytoplasmic domains capable of promoting phagocytosis, we screened a library of known murine phagocytic receptors: Megf10 (Figure 1a), the common \u0263 subunit of Fc receptors (FcR\u0263), Bai1, and MerTK (Penberthy and Ravichandran, 2016). FcR triggers engulfment of antibody-bound particles, while the other receptors recognize apoptotic corpses (Freeman and Grinstein, 2014; Penberthy and Ravichandran, 2016). We also made a receptor containing an extracellular \u0251CD19 antibody fragment and a cytoplasmic GFP, but no signaling domain, to test whether adhesion mediated by the \u0251CD19 antibody fragment is sufficient to induce engulfment (Figure 1a; CAR-PGFP).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematics show the structure of CAR-P constructs. An \u0251CD19 (purple) or \u0251CD22 (blue, center) scFv directs CAR specificity. Intracellular signaling domains from Megf10 or the indicated engulfment receptor (green) activate engulfment. CAR-PGFP contains only GFP and no intracellular signaling domains (right). All constructs include a transmembrane domain from CD8 and a C-terminal GFP. (B) J774A.1 macrophages expressing \u0251CD19 CAR-P with the indicated intracellular signaling domain (green) engulf 5 \u00b5m silica beads covered with a supported lipid bilayer containing His-tagged CD19 extracellular domain. The beads were visualized with atto390-labeled lipid incorporated into the supported lipid bilayer (magenta). Cells infected with the cell membrane marker, mCherry-CAAX, were used as a control (no CAR, top left). To the right of each image is a histogram depicting the frequency of cells engulfing the indicated number of beads. The average number of beads eaten per cell is quantified in (C). (D) Bone marrow derived macrophages were infected with CAR-PFcR\u0263 or GFP-CAAX (green, left and center top; grey, center bottom) and incubated with CD19 beads (magenta) for 45 min. Images show an x-y plane through the center of the engulfed beads (left), or a cross section (center) of the z plane indicated in the inset panel (white line). The histogram depicts the number of cells engulfing the indicated number of beads. The scale bar indicates 5 \u00b5m and n\u00a0=\u00a078\u2013163 cells per condition, collected during three separate experiments. Error bars denote 95% confidence intervals and *** indicates p<0.0001 compared to mCherry-CAAX control by Kruskal-Wallis test with Dunn\u2019s multiple comparison correction.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Images of macrophages infected with various \u0251CD19 CAR-PGFP constructs were acquired with identical acquisition settings and scaling to depict differences in expression levels. Fluorescent intensity at the cell cortex of 20 representative \u0251CD19 CAR-PGFP-infected macrophages was quantified using the mean intensity of a two pixel width linescan at the cell membrane, minus the mean intensity of a linescan immediately adjacent to the cell. The images are the same cells included in Figure 1B and fluorescent intensity was measured from the same macrophages assayed in Figure 1C. The dashed red line indicates the position of a bead in contact with the CAR-PGFP macrophage. The scale bar indicates 5 \u00b5m.\n\nTo assay our library of CAR-Ps, we introduced each CAR-P into J774A.1 murine macrophages by lentiviral infection. As an engulfment target, we used 5 \u00b5m diameter silica beads coated with a supported lipid bilayer. A His8-tagged extracellular domain of CD19 was bound to a NiNTA-lipid incorporated into the supported lipid bilayers. Macrophages expressing a CAR-P with the Megf10 (CAR-PMegf10) or FcR\u0263 (CAR-PFcR\u0263) intracellular domain promoted significant engulfment of CD19 beads compared to macrophages with no CAR (Figure 1b,c, Figure 1\u2014video 1). Macrophages expressing CAR-PBai1, CAR-PMerTK, and the adhesion-only CAR-PGFP did not bind the CD19 beads even though these CAR-Ps are present at the cell surface (Figure 1b,c, Figure 1\u2014figure supplement 1). To confirm that the CAR-P was a viable strategy for redirecting primary macrophages, we expressed the CAR-PFcR\u0263 in primary murine bone marrow derived macrophages and found that these transfected primary cells also were able to trigger engulfment of CD19 beads (Figure 1d).\n\nNext we asked if the CAR-P strategy could target a different antigen. Because CAR-PMegf10 performed well in our initial screen (Figure 1a), we developed \u0251CD22 CAR-PMegf10 using a previously developed \u0251CD22 antibody fragment (Xiao et al., 2009; Haso et al., 2013). Consistent with our results using \u0251CD19-based CARs, \u0251CD22 CAR-PMegf10 promoted engulfment of CD22 beads (Figure 2a). To confirm antigen specificity of CAR-P, we incubated \u0251CD19 CAR-PMegf10 macrophages with CD22 beads, and \u0251CD22 CAR-PMegf10 macrophages with CD19 beads. CD19 beads were not eaten by \u0251CD22 CAR-PMegf10 macrophages, and CD22 beads were not eaten by \u0251CD19 CAR-PMegf10 macrophages (Figure 2a). These data indicate that CAR-PMegf10 specifically triggers engulfment in response to the target ligand and that the CAR-P strategy is able to target multiple cancer antigens.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig2-v3.jpg)\n\n**Figure 2.:** (A) Macrophages infected with the \u0251CD19 (purple) or \u0251CD22 (blue) CAR-PMegf10 or mCherry-CAAX control were fed 5 \u00b5m beads ligated with either CD19 (left) or CD22 (right). Engulfment is quantified as the mean beads eaten per cell. The fraction of phagocytic cells is as follows: 31/144 GFP-CAAX cells engulfed CD19 beads, 87/149 \u0251CD19 CAR-PMegf10 engulfed CD19 beads, 20/142 \u0251CD22 CAR-PMegf10 engulfed CD19 beads, 28/140 GFP-CAAX cells engulfed CD22 beads, 18/151 \u0251CD19 CAR-PMegf10 engulfed CD22 beads, 103/148 \u0251CD22 CAR-PMegf10 engulfed CD22 beads (pooled data was collected during three separate experiments). Error bars denote 95% confidence intervals and *** indicates p<0.0001 compared to mCherry-CAAX control by Kruskal-Wallis test with Dunn\u2019s multiple comparison correction. (B) J774A.1 macrophages expressing the \u0251CD19 CAR-PMegf10 (green) were fed beads of various sizes (magenta, diameter of bead indicated below image). The beads were covered in a supported lipid bilayer ligated to His-tagged CD19 extracellular domain and the number of beads engulfed per cell is reported below each image (magenta bars indicate CAR-PMegf10 macrophages and pink bars indicate CAR-PGFP). The \u0251CD19 CAR-PMegf10 macrophages were also incubated with 10 \u00b5m beads coated in phosphatidylserine (PS) and ICAM-1 (blue bar in graph, 51/390 cells engulfed a bead). The fraction of cells engulfing a CD19 bead is as follows: 135/169 CAR-PMegf10 and 134/187 CAR-PGFP cells engulfed 2.5 um bead, 126/395 CAR-PMegf10 and 112/499 CAR-PGFP cells engulfed a 5 um bead, 48/377 CAR-PMegf10 and 21/378 CAR-PGFP cells engulfed a 10 um bead, 120/706 CAR-PMegf10 and 45/675 CAR-PGFP cells engulfed a 15 um bead, 194/760 CAR-PMegf10 and 23/587 CAR-PGFP cells engulfed a 20 um bead (data is pooled from at least three separate experiments). Error bars denote 95% confidence intervals of the mean. *** indicates p<0.0001 respectively by Mann-Whitney test. All scale bars represent 5 \u00b5m.\n\nTo further define the capabilities of the CAR-P, we assessed the capacity of CAR-P-expressing macrophages to engulf variably sized targets. We found that CAR-PMegf10 was able to trigger specific engulfment of beads ranging from 2.5 \u00b5m to 20 \u00b5m in diameter, with higher specificity above background engulfment being demonstrated for the larger beads (Figure 2b). The high background in this assay is due to heterogeneity in the bilayers on beads purchased from a different manufacturer (Corpuscular) than previous assays. For the 10 \u00b5m bead condition, we also tested the phagocytic efficiency of beads containing the endogenous Megf10 ligand, phosphatidylserine. We found that CAR-PMegf10 macrophages engulfed CD19 beads and beads containing 10% phosphatidylserine and the adhesion molecule ICAM-1 at a similar frequency (Figure 2b). This indicates that the CAR-P is comparably efficient to the endogenous system.\n\nTo determine if the CAR-PMegf10 initiates active signaling at the synapse between the macrophage and target, we stained for phosphotyrosine. Macrophages expressing CAR-PMegf10 exhibited an increase in phosphotyrosine at the synapse, while macrophages expressing CAR-PGFP did not show this enrichment (Figure 3a). Consistent with previous reports, we found that F-actin also was enriched at the cell bead synapse (Figure 3\u2014figure supplement 1). This result suggests that CAR-PMegf10 initiates engulfment through a localized signaling cascade involving tyrosine phosphorylation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig3-v3.jpg)\n\n**Figure 3.:** (A) Macrophages expressing \u0251CD19 CAR-PMegf10 (green, top) or \u0251CD19 CAR-PGFP were incubated with CD19-ligated beads (position indicated with dotted line), fixed and stained for phosphotyrosine (magenta, top; greyscale, bottom). The fold enrichment of phosphotyrosine at the cell-bead synapse compared to the cell cortex is graphed on the right (n\u00a0\u2265\u00a011; each dot represents one cell-bead synapse; lines represent the mean\u00a0\u00b1one standard deviation). (B) Schematic shows the structure of CAR-P constructs in the plot at right. An \u03b1CD19 (purple) scFv directs CAR specificity. The intracellular signaling domains from CD3\u03b6 activate engulfment. On the right is a histogram depicting the fraction of macrophages engulfing the indicated number of CD19-coated beads. (C) Comparison showing the average number of beads eaten per cell in J774A.1 macrophages expressing \u03b1CD19 CAR-Ps with the indicated intracellular signaling domain. 5 \u03bcm silica beads covered with a supported lipid bilayer containing His-tagged CD19 extracellular domain were used as an engulfment target (n\u00a0=\u00a0156\u2013167 cells per condition collected during three separate experiments). Error bars denote 95% confidence intervals and *** indicates p<0.0001 compared to CAR-PGFP control by Kruskal-Wallis test with Dunn\u2019s multiple comparison in correction. (D) Model of the liposome-based fluorescence quenching assay used to determine affinity between the Syk tSH2 domains and the receptor tails of CD3\u03b6 and FcR\u0263, two intracellular signaling domains that promote engulfment. Binding between the Syk tSH2 reporter (Syk tSH2), green, and a receptor tail, purple, was detected by rhodamine quenching of BG505 dye on the reporter (see Materials\u00a0and\u00a0methods). Kd was determined by assessing mean fluorescence quenching for the last 20 timepoints collected\u00a0~45 min after ATP addition over a receptor titration from 0 to 500 nM. Each point represents the mean\u00a0\u00b1\u00a0SD from three independent experiments. Kd\u00a0\u00b1\u00a0SE was calculated by nonlinear fit assuming one site specific binding.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Phalloidin staining (magenta overlayed with brightfield and DAPI, left; heatmap, right) of F-actin in a CAR-PFcR\u0263 expressing macrophage shows a 2.3 fold enrichment at the cell-bead synapse (standard deviation of 1.2). The graph depicts actin enrichment at 30 cell-bead synapses collected on three separate days. Each dot represents a cell-bead synapse. The box plot indicates the interquartile range. The cell is in contact with a second bead, but this site of contact has not initiated cup formation and no actin enrichment.\n\nBoth successful CAR-P intracellular domains (from FcR\u0263 and Megf10) have cytosolic Immunoreceptor Tyrosine-based Activation Motifs (ITAMs) that are phosphorylated by Src family kinases. Based on this observation, we hypothesized that the expression of an alternate ITAM-containing receptor might initiate phagocytosis when expressed in macrophages. The CD3\u03b6 subunit of the T cell receptor contains three ITAM motifs. To test if the CD3\u03b6 chain was able to activate phagocytic signaling, we transduced macrophages with the first generation CAR-T (Figure 3b). The CAR-T was able to trigger engulfment of CD19 beads to a comparable extent as CAR-PMegf10 (Figure 3c). In T cells, phosphorylated ITAMs in CD3\u03b6 bind to tandem SH2 domains (tSH2) in the kinase ZAP70. Zap70 is not expressed in macrophages, but Syk, a phagocytic signaling effector and tSH2 domain containing protein, is expressed at high levels (Andreu et al., 2017). Previous work suggested that Syk kinase can also bind to the CD3\u03b6 ITAMs (Bu et al., 1995), indicating that the CAR-T may promote engulfment through a similar mechanism as CAR-PFcR\u0263. To quantitatively compare the interaction between SyktSH2 and CD3\u03b6 or FcR\u0263 in a membrane proximal system recapitulating physiological geometry, we a used liposome-based assay (Figure 3d [Hui and Vale, 2014]). In this system, His10-CD3\u03b6 and His10-Lck (the kinase that phosphorylates CD3\u03b6) are bound to a liposome via NiNTA-lipids and the binding of labeled tandem SH2 domains to phosphorylated CD3\u03b6 was measured using fluorescence quenching. Our results show that Syk-tSH2 binds the CD3\u03b6 and FcR\u0263 with comparable affinity (~15 nM and\u00a0~30 nM respectively, Figure 3d). Collectively, these results demonstrate that the TCR CD3\u03b6 chain can promote phagocytosis in a CAR-P, likely through the recruitment of Syk kinase.\n\nWe next sought to program engulfment towards a cellular target. We incubated the CAR-PMegf10 and CAR-PFcR\u0263 macrophages with cancerous Raji B cells that express high levels of endogenous CD19. Strikingly, the majority of CAR-P-expressing macrophages internalized bites of the target cell (Figure 4a, Figure 4\u2014video 1, 78% of CAR-PMegf10 and 85% of CAR-PFcR\u0263 macrophages internalized bites within 90 min). The biting phenotype resembles trogocytosis, or nibbling of live cells, which has been reported previously in immune cells (Joly and Hudrisier, 2003). This process was dependent on the ITAM-bearing intracellular signaling domain, as removing the signaling domain (CAR-PGFP) dramatically reduced trogocytosis (Figure 4a). Enrichment of phosphotyrosine at the cell-cell synapse further supports active signaling initiating trogocytosis (Figure 4\u2014figure supplement 1). The CAR-P module also was able to induce trogocytosis in non-professional phagocytes, human NIH 3T3 fibroblast cells (Figure 4\u2014figure supplement 2). This suggests that the CAR-P can promote cancer antigen-dependent engulfment by both professional and non-professional phagocytes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-v3.jpg)\n\n**Figure 4.:** (A) J774A.1 macrophages expressing the \u0251CD19 CAR-PMegf10 (top panel, green in merge, left; greyscale, center) engulf pieces of CD19\u00a0+Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The corresponding control \u0251CD19 CAR-PGFP-infected cells are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of CAR-P expressing macrophages internalizing one or more bite within 90 min is quantified on the right. Bites are defined as a fully internalized mCherry-positive vesicle\u00a0>1 \u00b5m in diameter; n\u00a0=\u00a046 CAR-PMegf10 macrophages, n\u00a0=\u00a039 CAR-PFcR\u0263 macrophages and 102 CAR-PGFP macrophages acquired during three separate experiments. (B) Time course of a J774A.1 macrophage expressing CAR-PFcR\u0263 (green) internalizing a whole Raji B cell labeled with mCherry-CAAX (magenta). These images correspond to frames from Figure 4\u2014video 2. (C) Schematic shows the structure of CAR-Ptandem construct, combining the intracellular signaling domain from FcR\u0263 and the p85 recruitment domain from CD19. (D) Time course of a J774A.1 macrophage expressing CAR-Ptandem (green) internalizing a whole Raji B cell labeled with mCherry-CAAX (magenta). These images correspond to frames from Figure 4\u2014video 3. (E) Macrophages and Raji B cells were incubated together at a 1:2 macrophage:Raji ratio, and the number of whole Raji B cells eaten per 100 macrophages during 4\u20138 hr of imaging is graphed. Graph depicts pooled data from four independent experiments; n\u00a0=\u00a0921 CAR-PGFP, n\u00a0=\u00a0762 CAR-PFcR\u0263, n\u00a0=\u00a0638 CAR-PPI3K, n\u00a0=\u00a0555 CAR-Ptandem cells. Sample sizes were selected for their ability to detect a 5% difference between samples with 95% confidence. (F) 10,000 macrophages and 20,000 Raji B cells were incubated together for 44 hr. The number of Rajis was then quantified by FACS. 2\u20133 technical replicates were acquired each day on three separate days. The number of Rajis in each replicate was normalized to the average number present in the GFP-CAAX macrophage wells on that day. * indicates p<0.01, *** indicates p<0.0001 by two-tailed Fisher Exact Test (a and e) or by Ordinary one way ANOVA with Dunnet\u2019s correction for multiple comparisons (f); error bars denote 95% confidence intervals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Phosphotyrosine staining (teal) of macrophages expressing CAR-PMegf10 (green) in contact with Raji B cells (cell membrane visualized with mCherry-CAAX, magenta). Below, the enrichment at the synapse is quantified as the mean intensity of a five pixel width linescan at the synapse divided by the mean intensity at the adjacent cell cortex for at least 11 sites of contact. Each dot represents one cell-cell synapse, lines represent the mean\u00a0\u00b1one standard deviation, and the graph is the pooled results o three biological replicates. The scale bar indicates 5 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** NIH 3T3 cells expressing the \u0251CD19 CAR-PMegf10 (green in merge, left; greyscale, center) engulf pieces of CD19\u00a0+Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The control \u0251CD19 CAR-PGFP-infected 3T3s are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of cells taking at least one bite after 90 min co-incubation is graphed on the left (graphs show the pooled data of three separate experiments; n\u00a0=\u00a0111 CAR-PMegf10 3T3 cells and 121 CAR-PGFP 3T3; *** indicates p<0.0001 by two-tailed Fisher Exact Test; error bars denote 95% confidence intervals). Bites are defined as a fully internalized piece of mCherry-labeled material\u00a0>1 \u00b5m in diameter.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The number of whole Raji B cells eaten per 100 macrophages during 4\u20138 hr of imaging is graphed. Graph depicts pooled data from three independent experiments; n\u00a0=\u00a0232 with no antibody, n\u00a0=\u00a0257 with anti-CD19 antibody, n\u00a0=\u00a0347 with anti-CD47 antibody; * indicates p<0.05 by two-tailed Fisher Exact test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Schematic of antigen internalization and cross-presentation assay. CAR-P expressing Bone Marrow Derived Dendritic Cells (BMDC) were differentiated using GM-CS. CAR-P BMDC were incubated with Raji B cells expressing soluble ovalbumin (OVA). DC with OVA bites (internalized antigen) were then incubated with OTI T cells (OVA specific CD8\u00a0+T cells) and OTI proliferation assessed as a measure of T cell stimulation. Results from each step of this assay are shown in sequence in (B), (C), and (D). (B) Ovalbumin staining (magenta) in Raji B cells infected with mCherry-CAAX-p2a-Ovalbumin lentivirus (OVA) and uninfected controls (uninfected) shows robust OVA expression in infected cells. At right the intracellular OVA signal is plotted as corrected total cell fluorescence (CTCF) for the ovalbumin channel. Each dot represents the CTCF of one cell; n\u00a0=\u00a026 cells OVA, n\u00a0=\u00a033 cells (uninfected); lines represent the mean\u00a0\u00b1one standard deviation, and the graph is the pooled results of three biological replicates. The scale bar indicates 5 \u00b5m. (C) Bone marrow-derived dendritic cells expressing the CAR-PFcR\u0263 (top panel, green in merge, left; greyscale, center) engulf pieces of CD19\u00a0+Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The control \u0251CD19 CAR-PGFP-infected dendritic cells are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of cells taking at least one bite after 90 min co-incubation is graphed on the right of images. Graphs show the pooled data of two separate experiments; n\u00a0=\u00a028 CAR-PFcR\u0263 dendritic cells and n\u00a0=\u00a033 CAR-PGFP dendritic cells; *** indicates p<0.0001 by two-tailed Fisher Exact Test; error bars denote 95% confidence intervals. Bites are defined as a fully internalized piece of mCherry-labeled material\u00a0>1 \u00b5m in diameter. (D) OTI T cell proliferation after 72 hr incubation with CAR-P transduced CD11c\u00a0+\u00a0dendritic cells.\u00b1RAJI below the x-axis indicates whether Raji-OVA B cells were added to CAR-P transduced dendritic cells prior to OTI addition. To measure proliferation, T cells were uniformly stained with eFluor670 dye on day 0, and proliferation was measured by dilution of the cell-bound dye. Graphs show the mean\u00a0\u00b1SD of three independent biological replicates. Data points are values for individual wells of differentiated CD11c\u00a0+\u00a0dendritic cells. Boxed data indicate the mean % T cells dividing when dendritic cells were pulsed with SL8 (OVA) peptide, which directly binds to MHC without undergoing cross presentation. If dendritic cell differentiation was successful, the pulsed dendritic cells should be capable of inducing robust OTI proliferation. Sample sizes were selected to match previous studies that were able to detect robust T cell stimulation (Roberts et al., 2016).\n\nWe next focused on engineering strategies to engulf whole human cancer cells. We observed that macrophages expressing the CAR-PMegf10 or CAR-PFcR\u0263 were capable of engulfing whole Raji B cells (2 cancer cells eaten per 100 macrophages in a 4\u20138 hr window for both CAR-PMegf10 or CAR-PFcR\u0263, Figure 4b,e, Figure 4\u2014video 2). Whole cell engulfment was infrequent but trogocytosis was robust, suggesting that productive macrophage target interactions were frequently insufficient to trigger whole cell engulfment. To determine if whole cell eating could be enhanced by further opsonization of CD19, we opsonized Raji B cells with a mouse IgG2a anti-CD19 antibody. While addition of this antibody did not trigger additional whole cell internalization, blockade of the \u2018don\u2019t eat me\u2019 signal CD47 using the mouse IgG1 anti-human B6H12 clone resulted in a 2.5 fold increase of whole cell eating of opsonized Raji B cells (Figure 4\u2014figure supplement 3). Both endogenous FcR recognition of the anti-CD47 antibody and blockade of CD47 signaling may contribute to this effect.\n\nTo develop a receptor to enhance whole cell eating, we hypothesized that combining signaling motifs in a tandem array might increase the frequency of whole cell engulfment by specifically recruiting effectors required for the engulfment of large targets. Previous work demonstrated that PI3K signaling is important for internalization of large targets (Schlam et al., 2015). To increase PI3K recruitment to the CAR-P, we fused the portion of the CD19 cytoplasmic domain (amino acids 500 to 534) that recruits the p85 subunit of PI3K to the CAR-PFcR\u0263 creating a \u2018tandem\u2019 CAR (CAR-Ptandem, Figure 4c) (Tuveson et al., 1993; Brooks et al., 2004). A CAR-P containing the p85 recruitment motif alone (CAR-PPI3K) was able to induce some whole cell engulfment, comparable to the CAR-PFcR\u0263 (Figure 4e). Expression of CAR-Ptandem tripled the ability of macrophages to ingest whole cells compared to CAR-PGFP (6 cancer cells eaten per 100 macrophages, Figure 4d,e, Figure 4\u2014video 3). These data indicate that assembling an array of motifs designed to recruit distinct phagocytic effectors can increase CAR-P activity towards whole cells.\n\nTo determine if the combination of whole cell eating and trogocytosis was sufficient to drive a noticeable reduction in cancer cell number, we incubated CAR-P macrophages with Raji B cells for two days. After 44 hr of co-culture, we found that CAR-P macrophages significantly reduced the number of Raji cells (Figure 4f). Although the CAR-Ptandem was much more efficient at whole cell eating, the CAR-PFcR\u0263 performed nearly as well at eliminating Rajis. Importantly, our assay does not distinguish between whole cell engulfment or death following trogocytosis, so it is possible both CAR-P activities are contributing to Raji death rates. Overall, these data suggest that the CAR-P is a successful strategy for directing macrophages towards cancer targets, and can initiate whole cell eating and trogocytosis leading to cancer cell elimination.\n\nIn summary, we engineered phagocytes that recognize and ingest targets through specific antibody-mediated interactions. This strategy can be directed towards multiple extracellular ligands (CD19 and CD22) and can be used with several intracellular signaling domains that contain ITAM motifs (Megf10, FcR\u0263, and CD3\u03b6). Previous work has suggested that spatial segregation between Src-family kinases and an inhibitory phosphatase, driven by receptor ligation, is sufficient to trigger signaling by the T cell receptor (Davis and van der Merwe, 2006; James and Vale, 2012) and FcR (Freeman et al., 2016). The CAR-Ps that we have developed may similarly convert receptor-ligand binding into receptor phosphorylation of ITAM domains through partitioning of kinases and phosphatases at the membrane-membrane interface.\n\nFurther development of CAR-Ps could be useful on several therapeutic fronts. Targeting of tumor cells by macrophages has been suggested to cause tumor cell killing (Jaiswal et al., 2009; Majeti et al., 2009; Chao et al., 2010; Jadus et al., 1996), either through directly engulfing cancer cells or by stimulating antigen presentation and a T cell-mediated response (Liu et al., 2015; Tseng et al., 2013). Inhibition of the CD47-SIRPA \u2018Don\u2019t eat me\u2019 signaling pathway has also been shown to result in engulfment of cancer cells (Chen et al., 2017; Gardai et al., 2005; Jaiswal et al., 2009; Majeti et al., 2009; Chao et al., 2010). A recent study suggests that CD47 inhibition is most effective when combined with a positive signal to promote target engulfment, which raises the possibility of combining CAR-P expression with CD47 or SIRPA inhibition for an additive effect (Alvey et al., 2017).\n\nAlthough we were able to increase whole cell engulfment by recruiting the activating subunit of PI3K to the phagocytic synapse, the engulfment of larger 20 micron beads was more frequent than the engulfment of whole cells. We hypothesize that this is due to differing physical properties of the engulfment target. Specifically, increased target stiffness has been shown to promote engulfment, suggesting that manipulating the physical properties of the engulfment target could also be a potential strategy for increasing CAR-P efficiency (Beningo and Wang, 2002; Cross et al., 2007).\n\nWhile the CAR-P can engulf whole, viable cancer cells, the ingestion of a piece of the target cell is more common. Trogocytosis, or nibbling of living cells, has also been described in immune cells (Harshyne et al., 2003; Harshyne et al., 2001; Kao et al., 2006; Joly and Hudrisier, 2003; Batista et al., 2001) and brain-eating amoebae (Ralston et al., 2014). In vivo studies also have shown that endogenous dendritic cell populations ingest bites of live tumor cells, contributing to presentation of cancer neo-antigen (Harshyne et al., 2001; Harshyne et al., 2003). Although we were able to use the CAR-P to induce trogocytosis in dendritic cells, we were not able to detect robust cross presentation of the model antigen ovalbumin (Figure 4\u2014figure supplement 4). Thus, although using CAR-Ps to enhance cross presentation of cancer antigen is an intriguing future avenue, such a strategy would likely require more optimization of the dendritic cell subset employed or the CAR-P receptor itself.\n\nOverall, our study demonstrates that the CAR approach is transferrable to biological processes beyond T cell activation and that the expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>J774A.1 Macrophages</td>\n      <td>UCSF Cell Culture Facility</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Raji B Cells</td>\n      <td>Other</td>\n      <td></td>\n      <td>Obtained from M. McManus, UCSF</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>3t3 Fibroblasts</td>\n      <td>UCSF Cell Culture Facility</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>C57BL/6J</td>\n      <td>PMID: 21356739</td>\n      <td></td>\n      <td>Bone Marrow Derived Macrophages (BMDM)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>C57BL/6J</td>\n      <td>PMID: 7489412</td>\n      <td></td>\n      <td>Bone Marrow derived Dendritic Cells (BMDC)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T cells</td>\n      <td>UCSF Cell Culture Facility</td>\n      <td></td>\n      <td>Lentivirus production</td>\n    </tr>\n    <tr>\n      <td>Genetic Reagent (Mus musculus)</td>\n      <td>OTI</td>\n      <td>PMID: 8287475</td>\n      <td></td>\n      <td>E. Roberts/M. Krummel Lab UCSF</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-mMegf10 CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcgggt ggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 879\u20131147 Mouse Megf10 (Uniprot Q6DIB5 (MEG10_MOUSE)) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-FcGamma CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody  sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcgg gtggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 19\u201386 Mouse Fc ERG precursor (Uniprot P20491 (FCERG_MOUSE)) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-empty CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcggg tggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: basic linker NHRNRRR (nucleotide AACCACAGG AACCGAAGACGT) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD22-Megf10 CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CSF2R (Uniprot P15509 (CSF2R_HUMAN)) Extracellular antibody sequence: aa 22\u2013258 of translated JP 2016502512-A/1: M971 Chimeric Antigen (Genbank HZ530416.1) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_ HUMAN) Cytosolic sequence: aa 879\u20131147 Mouse Megf10 (Uniprot Q6DIB5 (MEG10_ MOUSE)) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD22-empty CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CSF2R (Uniprot P15509 (CSF2R_HUMAN)) Extracellular antibody  sequence: aa 22\u2013258 of translated JP 2016502512-A/1: M971 Chimeric Antigen (Genbank HZ530416.1) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: basic linker NHRNRRR (nucleotide AACCACAGGAACCGAAGACGT) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-MerTK CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6 _HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtg gcggtggctcgggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 519\u2013994 Mouse MerTK (Uniprot Q60805 (MERTK_MOUSE)) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-Bai1 CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_HUMAN)Extracellular antibody  sequence: V-L chain:aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819)-- GS linker: \u00a0ggtggcggtggctcgggcggtggtgggtcgggtggcgg cggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (GenbankAMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (UniprotQ96QR6_HUMAN) Cytosolic sequence: aa1188\u20131582\u00a0Mouse Bai1 (Uniprot Q3UHD1 (BAI1_MOUSE)) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-CD3zeta CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_ HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcg ggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 52\u2013164, Human TCR CD3 zeta chain (Uniprot P20963) Fluorophore: sfGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19-PI3K CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6 _HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggct cgggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 500\u2013534 Mouse CD19 (Uniprot CD19_MOUSE) Fluorophore: mCherry</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CD19 tandem CAR</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Signal peptide: aa 1\u201321 CD8 (Uniprot Q96QR6_ HUMAN) Extracellular antibody sequence: V-L chain: aa 23\u2013130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctc gggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148\u2013267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138\u2013206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 500\u2013534 Mouse CD19 (Uniprot CD19 _MOUSE) fused to aa 19\u201386 Mouse Fc ERG precursor (FCERG_MOUSE) Fluorophore: mGFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GFP-CaaX</td>\n      <td>this paper</td>\n      <td></td>\n      <td>eGFP fused to a c terminal CaaX targeting sequence: aaaatgtccaaggatggta agaaaaagaagaagaagtcaaaaaccaagtgtgttatcatg</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mCherry-CaaX</td>\n      <td>this paper</td>\n      <td></td>\n      <td>mCherry fused to a c terminal CaaX targeting sequence: aaaatgtccaaggatggt aagaaaaagaagaagaagtcaaaaaccaagtgtgttatcatg</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>OVA/p2a/mCherry-CaaX</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Cytoplasmic Ovalbumin (UNIPROT: SERPINB14)/p2 a site: GGAAGCGGAGCTACTAA CTTCAGCCTGCTGAAGCAGGCTGGAGA CGTGGAGGAGAACCCTGGACCT/followed by mCherry fused to\u00a0a c terminal CaaX targeting sequence: aaaatgtccaaggatggtaagaaaaagaag aagaagtcaaaaaccaagtgtgttatcatg</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>His10-CD3 zeta</td>\n      <td>Hui and Vale (2014) PMID: 24463463</td>\n      <td></td>\n      <td>aa 52\u2013164, Human TCR CD3 zeta chain (Uniprot CD3Z_HUMAN) fused to Hisx10 tag</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>His10-FcR\u0263</td>\n      <td>this paper</td>\n      <td></td>\n      <td>aa 45\u201385, Human FcR\u0263 (Uniprot FCERG _HUMAN) fused to Hisx10 tag</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SNAP-Syk tSH2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>aa 1\u2013262, Mouse Syk (Uniprot KSYK_MOUSE) with N-term SNAP tag</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>His10-Lck Y505F</td>\n      <td>Hui and Vale (2014) PMID: 24463463</td>\n      <td></td>\n      <td>full length Human Lck with inhibitory Tyr 505 mutated to Phe (Uniprot LCK_HUMAN) fused to Hisx10 tag</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti phospho-Tyrosine</td>\n      <td>Santa Cruz</td>\n      <td>PY20</td>\n      <td>1:100 IF primary</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti mouse IgG coupled to Alexa Fluor 647</td>\n      <td>Thermo/Lifetech</td>\n      <td>A21236</td>\n      <td>1:200 IF secondary</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti mouse CD11c coupled to APC</td>\n      <td>BioLegend</td>\n      <td>117313</td>\n      <td>FACS</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti mouse F4/80 coupled to APC/Cy7</td>\n      <td>BioLegend</td>\n      <td>123117</td>\n      <td>FACS</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DMEM</td>\n      <td>Gibco</td>\n      <td>11965\u2013092</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Pen-Strep-Glutamine</td>\n      <td>Corning</td>\n      <td>30\u2013009 Cl</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fetal Bovine Serum (FBS)</td>\n      <td>Atlanta Biologicals</td>\n      <td>S1150H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RPMI</td>\n      <td>Gibco</td>\n      <td>11875\u2013093</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>HEPES</td>\n      <td>Gibco</td>\n      <td>1530080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>2-Mercaptoethanol</td>\n      <td>Sigma</td>\n      <td>M6250-100mL</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MycoAlert Mycoplasma Testing Kit</td>\n      <td>Lonza</td>\n      <td>LT07-318</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMD2.G lentiviral plasmid</td>\n      <td>other</td>\n      <td>Addgene 12259</td>\n      <td>D. Stainier, Max Planck; VSV-G envelope</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-dR8.91</td>\n      <td>other</td>\n      <td>Current Addgene 8455</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHRSIN-CSGW</td>\n      <td>other</td>\n      <td></td>\n      <td>As cited James and Vale (2012), PMID: 22763440</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lipofectamine LTX</td>\n      <td>Invitrogen</td>\n      <td>15338\u2013100</td>\n      <td>Lentivirus production</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lipofectamine</td>\n      <td>Invitrogen</td>\n      <td>18324\u2013012</td>\n      <td>Added to spin infections to improve transduction</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hamilton Gastight Syringes</td>\n      <td>Hamilton</td>\n      <td>8 1100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>POPC</td>\n      <td>Avanti</td>\n      <td>850457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ni2+-DGS-NTA</td>\n      <td>Avanti</td>\n      <td>790404</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PEG5000-PE</td>\n      <td>Avanti</td>\n      <td>880230</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>atto390 DOPE</td>\n      <td>ATTO-TEC GmbH</td>\n      <td>AD 390\u2013161</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PBS (Tissue Culture Grade)</td>\n      <td>Gibco</td>\n      <td>20012050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Bioruptor Pico</td>\n      <td>Diagenode</td>\n      <td></td>\n      <td>Used for producing SUVs</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>5 um silica microspheres</td>\n      <td>Bangs</td>\n      <td>SS05N</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CD19-His8</td>\n      <td>Sino Biological</td>\n      <td>11880H08H50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CD22-His8</td>\n      <td>Sino Biological</td>\n      <td>11958H08H50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>2.5 um silica microspheres (size titration)</td>\n      <td>Corpuscular</td>\n      <td>C-SIO-2.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>5 um silica microspheres (size titration)</td>\n      <td>Corpuscular</td>\n      <td>C-SIO-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>10 um silica microspheres (size titration)</td>\n      <td>Corpuscular</td>\n      <td>C-SIO-10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>15 um silica microspheres (size titration)</td>\n      <td>Corpuscular</td>\n      <td>C-SIO-15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>20 um silica microspheres (size titration)</td>\n      <td>Corpuscular</td>\n      <td>C-SIO-20</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Low retention tubes for microsphere cleaning</td>\n      <td>Eppendorf</td>\n      <td>22431081</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>MatriPlate</td>\n      <td>Brooks</td>\n      <td>MGB096-1-2-LG-L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>M-CSF</td>\n      <td>Peprotech</td>\n      <td>315\u201302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>IMDM</td>\n      <td>Thermo</td>\n      <td>12440079</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Retronectin</td>\n      <td>Clontech</td>\n      <td>T100A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CD8\u00a0+\u00a0T cell purification kit</td>\n      <td>Stemcell</td>\n      <td>19853</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>eFluor670 proliferation dye</td>\n      <td>Thermo</td>\n      <td>65-0840-85</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>phRSIN-CSGW</td>\n      <td>Sigma</td>\n      <td>L4516</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fluorobrite DMEM</td>\n      <td>Gibco</td>\n      <td>A1896701</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DMEM minus phenol red</td>\n      <td>Gibco</td>\n      <td>A14430-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Rhodamine PE</td>\n      <td>Avanti</td>\n      <td>810150C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DOPS</td>\n      <td>Avanti</td>\n      <td>840035C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SNAP-Cell 505-Star</td>\n      <td>NEB</td>\n      <td>S9103S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PD MiniTrap G-25 column</td>\n      <td>GE Healthcare</td>\n      <td>28-9225-29 AB</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>6.4% Paraformaldehyde solution</td>\n      <td>Electron Microscopy Sciences</td>\n      <td>50980495</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AlexaFluor 647 Phalloidin</td>\n      <td>Thermo/Molecular Probes</td>\n      <td>A22284</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td>CC, CS6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Photoshop</td>\n      <td>Adobe</td>\n      <td>CC, CS6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>https://fiji.sc/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti human CD19 (mouse antibody)</td>\n      <td>OriGene</td>\n      <td>TA506240 Clone OTI2F6</td>\n      <td>IgG2a mouse monoclonal antibody</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti human CD47 (mouse antibody)</td>\n      <td>BD</td>\n      <td>556044 Clone B6H12</td>\n      <td>IgG1 mouse monoclonal antibody</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti Ovalbumin (rabbit antibody)</td>\n      <td>Pierce</td>\n      <td>PA1-196</td>\n      <td>IgG rabbit polyclonal antibody</td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs and antibodies\n\nDetailed information for all constructs can be found in the Key resources table. This file includes the following information for all receptors developed in this study: signal peptide, extracellular antibody fragment, stalk/transmembrane domain, and cytosolic tail including appropriate accession numbers. Antibodies used in this study are described in Supplemental Excel File 1, \u2018Antibodies\u2019 tab.\n\n### Cell culture\n\nJ774A.1 macrophages and NIH 3T3 fibroblasts were obtained from the UCSF cell culture facility and cultured in DMEM (Gibco, Catalog #11965\u2013092) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30\u2013009 Cl) and 10% fetal bovine serum (FBS) (Atlanta Biologicals, Catalog #S11150H). Raji B cells were obtained from J. Blau (McManus lab, UCSF) and cultured in RPMI (Gibco, Catalog #11875\u2013093) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30\u2013009 Cl), 10% FBS (Atlanta Biologicals, Catalog #S11150H), 10 mM HEPES (Gibco, Catalog #1530080), and 5 \u00b5M 2-Mercaptoethanol (Sigma, Catalog #M6250-100mL). All cell lines used in this study were tested for Mycoplasma at least once per month using the Lonza MycoAlert Detection Kit (Lonza, Catalog# LT07-318) and control set (Lonza, Catalog #LT07-518).\n\n### Lentivirus production and infection\n\nLentiviral infection was used to stably express CAR-P constructs in all cell types. Lentivirus was produced by HEK293T cells transfected with pMD2.G (a gift from Didier Tronon, Addgene plasmid # 12259 containing the VSV-G envelope protein), pCMV-dR8.91 (since replaced by second generation compatible pCMV-dR8.2, Addgene plasmid #8455), and a lentiviral backbone vector containing the construct of interest (derived from pHRSIN-CSGW) using lipofectamine LTX (Invitrogen, Catalog # 15338\u2013100). The media on the HEK293T cells was replaced with fresh media 8\u201316 hr post transfection to remove transfection reagent. At 50\u201372 hr post-transfection, the lentiviral media was filtered with a 0.45 \u00b5m filter and concentrated by centrifugation at 8000 x g for 4 hr or overnight. The concentrated supernatant was applied directly to\u00a0~0.5\u00d7106 NIH 3T3 cells in 2 ml of fresh media. For J77A4.1 macrophages and Raji B cells, the concentrated supernatant was mixed with 2 mls of media and 2 \u00b5g lipofectamine (Invitrogen, Catalog # 18324\u2013012) and added to the cells. The cells were spun at 2200 x g for 45 min at 37\u00b0C. Cells were analyzed a minimum of 72 hr later.\n\n### Preparation of CD19 and CD22 5 \u00b5m silica beads\n\nChloroform-suspended lipids were mixed in the following molar ratio using clean glasstight Hamilton syringes (Hamilton, Catalog #8 1100): 97% POPC (Avanti, Catalog # 850457), 2% Ni2+-DGS-NTA (Avanti, Catalog # 790404), 0.5% PEG5000-PE (Avanti, Catalog # 880230, and 0.5% atto390-DOPE (ATTO-TEC GmbH, Catalog # AD 390\u2013161). Lipid mixes were dried under argon and desiccated overnight under foil. Dried lipids were resuspended in 1 ml tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050), and stored under argon gas. Small unilamellar vesicles were formed by five freeze-thaw cycles followed by 2 \u00d7 5 min of bath sonication (Bioruptor Pico, Diagenode), and cleared by ultracentrifugation (TLA120.1 rotor, 35,000 rpm / 53,227 x g, 35 min, 4\u00b0C) or by 33 freeze thaw cycles. Lipid mixes were used immediately for form bilayers or shock frozen in liquid nitrogen and stored under argon at \u221280\u00b0C. To form bilayers on silica beads, 6 \u00d7 108 5 \u00b5m silica microspheres (10% solids, Bangs Labs, Catalog # SS05N) were washed 2x in water, and 2x in PBS by sequential suspension in water and spinning at 800 rcf, followed by decanting. Cleaned beads were resuspended in 150 \u00b5l tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050) and briefly vortexed. 30 \u00b5l cleared SUVs prepared as above as a 10 mM stock were added to bead suspension for a 2 mM final SUV concentration. Beads were vortexed for 10 s, covered in foil, and rotated for 30 min at room temperature to form bilayers. Bilayer-coated beads were washed 3x in PBS by sequential centrifugation at 800 rcf and decanting. Beads were resuspended in PBS\u00a0+\u00a00.1% w/v BSA for blocking for 15 min rotating at room temperature under foil. 10 nM final concentration of CD19his8 (Sino Biological, Catalog # 11880H08H50) or CD22his8 (Sino Biological, Catalog # 11958H08H50) protein were added to blocked beads and proteins were allowed to bind during a 45 min incubation rotating under foil at room temperature. Beads were washed 3x in PBS\u00a0+\u00a00.1% w/v BSA by sequential centrifugation at 300 rcf and decanting. Beads were resuspended in 120 \u00b5l PBS\u00a0+\u00a00.1% w/v BSA.\n\n### Preparation of CD19 silica beads over a range of diameters\n\nPrior building bilayers on Silica beads ranging from 2.5 \u00b5m-20 \u00b5m in diameter (Microspheres-Nanospheres, Catalog# C-SIO-2.5, 5, 10, 15, 20), beads were RCA cleaned as follows: beads were pelleted at 2000\u00a0x\u00a0g in low retention tubes (Eppendorf, Catalog #022431081) and resuspended in acetone. Resuspended beads were sonicated for 60 min in a bath sonicator. Rinse and sonication were repeated in ethanol. Finally, rinse and sonication were repeated in water. Beads were then washed 2x in water to remove all traces of ethanol and left in a small volume after decanting. All further steps were performed in a 70\u201380\u00b0C water bath prepared in a fume hood. Proper Personal Protective Equipment (PPE) was worn throughout the RCA cleaning protocol. Washed beads were added to 3 ml of hot 1.5 M KOH in a clean glass vial suspended in the water bath described above. 1 ml 30% H2O2 to bead solution and allowed to react for 10 min. Washed beads were cooled on ice, pelleted at 2000xg and rinsed 5x in ultrapure water. Used cleaning solution was saved for disposal by Environmental Health and Safety (EH and S). Cleaned beads were resuspended in 240 \u00b5l tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050) and briefly vortexed. The lipid mix used in this assay differed slightly from above. Here a mix of 93.5% POPC (Avanti, Catalog # 850457), 5% Ni2+-DGS-NTA (Avanti, Catalog # 790404), 1% PEG5000-PE (Avanti, Catalog # 880230, and 0.5% atto390-DOPE (ATTO-TEC GmbH, Catalog # AD 390\u2013161. Bilayers were built and proteins coupled as described above. The concentration of CD19 was scaled appropriately to account for the increased surface area of the larger beads.\n\n### Bead engulfment assay\n\n12 to 16 hr prior to imaging, 2.5 \u00d7 104 J774A.1 macrophages expressing the appropriate CAR-P or control construct were plated in a 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L). To assess engulfment, 0.5 \u00d7 106 CD19 or CD22-ligated beads were added to each well. Engulfment was allowed to proceed for 45 min at 37\u00b0C incubator with CO2. Cells were then imaged as described below.\n\n### Bites assay \u2013 J774A.1 macrophages, dendritic cells and NIH 3T3 fibroblasts\n\nOn the day of imaging 0.5 \u00d7 106 NIH 3T3 fibroblasts, dendritic cells or macrophages and 1.5 million Raji B cells were combined in a 1.5 ml eppendorf tube and pelleted by centrifugation (800 rpm / 68 x g) for 5 min at room temperature. Culture media was decanted to\u00a0~100 \u00b5l volume and cells were gently resuspended, and allowed to interact in the small volume for 60 min in a 37\u00b0C incubator with CO2. After incubation cells and beads were diluted to a final volume of 1000 \u00b5l and 300 \u00b5l of this co-culture plated for imaging in a 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L), and imaged as described below.\n\n### Eating assay read by FACS \u2013 J774A.1 macrophages and Raji B cells\n\n20,000 J774A.1 macrophages were plated into 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L) in a final volume of 300 \u00b5l complete DMEM (Gibco, Catalog #11965\u2013092) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30\u2013009 Cl) and 10% fetal bovine serum (FBS) (Atlanta Biologicals, Catalog #S11150H). 52 hr prior to reading the assay macrophages were stimulated with 500 ng/ml LPS (Sigma, Catalog # L4516). 44 hr prior to imaging LPS was removed by three sequential gentle washes. After LPS removal 10,000 Rajis expressing mCherry-CAAX were added to the well containing stimulated macrophages. The co-culture was incubated for 44 hr in a 37\u00b0C tissue culture incubator with 5% CO2. After 44 hr, the remaining number of Raji B cells remaining was analyzed by FACS as follows: 10,000 counting beads were added to the well immediately prior to reading and the cell-counting bead mixture was harvested by pipetting up and down 8x with a p200 pipet. The assay was read on an LSRII (BD Biosciences) and Rajis were identified by the presence of mCherry fluorescence.\n\n### Primary cell transduction and differentiation\n\nBone marrow derived macrophages (BMDMs) were produced as previously described (Weischenfeldt and Porse, 2008), except that L-929 conditioned media was replaced with purified 25 ng/ml M-CSF (Peprotech, Catalog # 315\u201302). The BMDMs were lentivirally infected with concentrated lentivirus after 5 days of differentiation. Differentiation was confirmed by F4/80 staining on day seven and found to be\u00a0>95% efficient for each replicate. Phagocytosis was measured on day nine in imaging media lacking M-CSF.\n\nTo produce CAR-P expressing dendritic cells, bone marrow-derived hematopoietic stem cells were lentivirally infected immediately after harvest by spinning with concentrated lentivirus in GMCSF-containing media (IMDM supplemented with 10% FBS and PSG) on retronectin (Clontech, Catalog # T100A)-coated plates at 2200 x g for 45 min at 37\u00b0C. Dendritic cells were produced as previously described (Mayordomo et al., 1995) by culturing bone marrow cells for 8\u201311 days with GMCSF. IL-4 was added 2\u20133 days before use. Efficient differentiation into CD11c\u00a0+\u00a0dendritic cells was verified by FACS, revealing\u00a0\u226595% APC-CD11c\u00a0+\u00a0cells (Biolegend, Catalog #N418).\n\n### Antigen cross-presentation assay\n\nThe ability of CAR-P to stimulate OTI T cell proliferation was tested using the co-culture assay shown as a schematic in Figure 4\u2014figure supplement 4 and described previously (Roberts et al., 2016). 10,000 CAR-P transduced CD11c\u00a0+\u00a0dendritic cells transduced and differentiated as above were plated in U bottom 96 well dishes (Falcon, Catalog #353077) and stimulated with 1 ug/ml LPS. 12 hr after LPS stimulation, 40,000 Raji B cells expressing soluble cytosolic ovalbumin (Raji B-OVA) were added to the culture. 24 hr after Raji B-OVA cell addition, 50,000 OTI CD8\u00a0+\u00a0T cells isolated from lymph nodes of OTI TCR transgenic mice using a CD8\u00a0+T cell purification kit (Stemcell, Catalog #19853) and labeled with e670 proliferation dye (Thermo, Catalog #65-0840-85) were added. 72 hr after OTI addition the percent of OTI cells divided was measured by eFluor670 signal using flow cytometry.\n\n### Confocal imaging\n\nAll imaging in this study was performed using a spinning disk confocal microscope with environmental control (Nikon Ti-Eclipse inverted microscope with a Yokogawa spinning disk unit). For bead internalization assays, images were acquired using a 40 \u00d7 0.95 N/A air objective and unbiased live image acquisition was performed using the High Content Screening (HCS) Site Generator plugin in \u00b5Manager3. Other images were acquired using either a 100 \u00d7 1.49 N/A oil immersion objective. All images were acquired using an Andor iXon EM-CCD camera. The open source \u00b5Manager software package was used to control the microscope and acquire all images3.\n\n### Quantification of whole cell internalization\n\n20,000 J774A.1 macrophages were plated into 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L). Four hours prior to imaging, the macrophages were stimulated with 500 ng/ml LPS (Sigma, Catalog # L4516). Immediately prior to imaging the LPS-containing media was replaced with Fluobrite DMEM (ThermoFisher Scientific, Catalog # A1896701) containing 10% FBS. 40,000 Raji cells were added to the macrophages and the co-culture was imaged at 5 min intervals for 12 hr. For the antibody experiments, macrophages were washed into DMEM minus phenol red (A14430-01) containing 10% FBS just prior to addition of 40,000 Raji cells. Where indicated antibody was added to a final concentration of 20 \u00b5g/ml immediately after Raji cell addition and prior to imaging to limit antibody internalization. Because cells moved in and out of the field of view, we selected the cells present after 8 hr of imaging and quantified their B cell eating if they could be followed for four hours or more. Time-lapse analysis was essential to ensure that the B cell appeared viable prior to engulfment by the macrophage. Engulfment of B cells with an apoptotic morphology was not counted as a whole cell eating event.\n\n### Quantification of bites internalization\n\nDuring live cell image acquisition GFP-positive J774A.1 macrophages or NIH 3T3 cells were selected by the presence of GFP signal. A full z-stack comprising the entire cell was captured using 1 \u00b5m steps. All z sections were then manually inspected for internalized Raji B cell material. Cells containing one or more bites of fully internalized Raji B cell material\u00a0>1 \u00b5m in diameter were scored as positive.\n\n### Liposome FRET assay\n\nExperiments were carried out as previously described2. Briefly, proteins were purified using a bacterial expression system. All protein components (1 mg/ml BSA, 100 nM tSH2-Syk SNAP-505, 0 to 500 nM His10-CD3\u03b6 or His10-FcR\u0263 intracellular chain, and 7.2 nM His10-Lck Y505F) were mixed into kinase buffer (50 mM HEPES-NaOH pH 6.8, 150 mM NaCl, 10 mM MgCl2, and 1 mM TCEP). Liposomes prepared at the following molar ratios: 74.5% POPC (Avanti, Catalog # 850457C), 10% DOGS-NTA (Nickel) (Avanti, Catalog # 790404C, 0.5% Rhodamine PE (Avanti, Catalog # 810150C), and 15% DOPS (Avanti, Catalog # 840035C) were added and the mixture was incubated for 40\u201360 min at room temperature, during which the SNAP-505 fluorescence was monitored at 8 s intervals with 504 nm excitation and 540 nm emission. 1 mM ATP was then injected to trigger Lck mediated phosphorylation of CD3\u03b6 or FcR\u0263. Injection was followed by 5 s of automatic shaking of the plate, and the fluorescence was further monitored at 8 s intervals for at least 1 hr. Data were normalized by setting the average fluorescence value of the last 10 data points before ATP addition as 100% and background fluorescence as 0%. The final extent of fluorescence quenching (% fluorescence change) at each concentration of receptor was determined using the average of the last 20 data points after ensuring fully equilibrated binding. Nine reactions containing increasing concentrations of CD3\u03b6 and nine reactions containing increasing concentrations of FcR\u0263 were run in parallel. The final % fluorescence change was plotted against FcR\u0263 or CD3\u03b6 concentration. The apparent dissociation constants (Kd) of tSH2-Syk to FcR\u0263 and CD3\u03b6 were calculated by fitting the data with Graphpad Prism 6.0, using the \u2018one site specific binding\u2019 model.\n\n### Protein expression, purification, and labeling\n\nThe intracellular portion of the FcR \u03b3-chain (aa 45\u201385, Human FcR\u0263, Uniprot FCERG_HUMAN) was cloned into a modified pET28a vector containing a His10 upstream to the multiple cloning site using BamHI and EcoRI. The intracellular portion of CD3\u03b6 (aa 52\u2013164, Human CD3\u03b6, Uniprot CD3Z_HUMAN) was also cloned into the His10 modified pET28a vector. A Lys-Cys-Lys-Lys sequence, originally present for fluorescent labeling, is also present between His10 and CD3\u03b6 in this construct. SNAP-tSH2Syk (aa 1\u2013262) was cloned into a pGEX6 vector using BamHI and EcoRI. His10-CD3\u03b6, His10-FcR \u03b3-chain, and GST-SNAP-tSH2Syk were bacterially expressed in BL21 (DE3) RIPL strain of Escherichia coli as described previously2. His10-Lck Y505F was expressed in SF9 cells using the Bac-to-Bac baculovirus system as described previously2. All cells were lysed in an Avestin Emulsiflex system. His10 proteins were purified by using Ni-NTA agarose (Qiagen, Catalog # 30230) and GST-SNAP-tSH2Syk was purified by using glutathione-Sepharose beads (GE Healthcare, Catalog # 17075601) as described previously2. Soluble SNAP-tSH2 Syk was generated by cleaving the GST moiety via the PreScission Protease at 4\u00b0C overnight. All proteins were subjected to gel-filtration chromatography using a Superdex 200 10/300 GL column (GE Healthcare, Catalog # 17517501) in HEPES-buffered saline (HBS) containing 50 mM HEPES-NaOH (pH 6.8 for His10-CD3\u03b6, His10-FcR \u03b3-chain, and GST-SNAP-tSH2Syk and pH 7.4 for His10-Lck Y505F), 150 mM NaCl, 5% glycerol, and 1 mM TCEP. The monomer fractions were pooled, frozen in liquid nitrogen and stored at \u221280\u00b0C. All gel-filtered proteins were quantified by SDS-PAGE and Coomassie staining, using BSA as a standard. To prepare fluorescently labeled tSH2 Syk, 10 uM SNAP-tSH2 Syk was incubated at a 1:2 ratio with SNAP-Cell 505-Star (NEB, Catalog # S9103S) overnight at 4\u00b0C and run over a PD MiniTrap G-25 (GE Healthcare, Catalog # 28-9225-29 AB) column to eliminate excess dye.\n\n### Phosphotyrosine and phalloidin staining\n\nTo fix and stain preparations described above in bead and bites assays for quantifying enrichment of phosphotyrosine staining, half the media (~150 \u00b5l) was gently removed from the imaging well and replaced with 150 \u00b5l 6.4% paraformaldehyde solution (prepared from 32% stock, Electron Microscopy Sciences, Catalog # 50980495) in tissue culture grade PBS, pH7.2 (Gibco, Catalog # 20012050). Cells were fixed for 15 min in a 37\u00b0C incubator with CO2. After fixation cells were washed 2x with PBS and permeabilized/blocked for 60 min at room temperature in freshly prepared, filter sterilized PBS\u00a0+\u00a05% FBS+0.1% w/v saponin (PFS solution). After permeabilization, cells were washed 2 \u00d7 3 min with PFS solution. Following block, cells were incubated with 1:100 dilution of mouse anti-phosphotyrosine (pTyr) antibody to stain pan-pTyr (Santa Cruz, Catalog # PY20) diluted in PFS solution in the dark for 60 min at room temperature then washed 3 \u00d7 5 min in PFS solution. Washed cells were incubated with a 1:500 dilution of goat anti-mouse Alexa Fluor 647 antibody (Thermo/Molecular Probes, Catalog # A21236) in PFS solution in the dark for 60 min at room temperature. Wells were then washed 3 \u00d7 5 min in PFS solution. Cells were covered in 200 \u00b5l PBS. If not imaged immediately samples were wrapped in parafilm and foil and stored at 4\u00b0C prior to microscopy. Phosphotyrosine enrichment at the synapse was calculated by dividing the mean Alexa Fluor 647 signal of a 5 pixel linescan at the synapse with bead or cell by a 5 pixel linescan on the cortex. For phalloidin staining, cells were fixed with 4% PFA for 15 min at room temperature, blocked and permeabilized with 5% BSA in TBS with 0.5% triton X overnight, and incubated with AlexaFluor 647 Phalloidin (Thermo/Molecular Probes, Catalog # A22284) for 20 min. Cells were then washed with PBS, imaged and quantified using the method described above. Each data point represents a single cell, and the graphs reflect pooled results from three biological replicates.\n\n### Ovalbumin antibody staining\n\nTo fix and stain preparations described above for ovalbumin staining, half the media (~150 \u00b5l) was gently removed from the imaging well and replaced with 150 \u00b5l 8% paraformaldehyde solution (prepared from 32% stock, Electron Microscopy Sciences, Catalog # 50980495) in tissue culture grade PBS, pH7.2 (Gibco, Catalog # 20012050). Cells were fixed for 10 min in a 37\u00b0C incubator with CO2. After fixation cells were washed 2x with PBS and permeabilized/blocked for 60 min at room temperature in freshly prepared, filter sterilized PBS\u00a0+\u00a00.1% w/v casein\u00a0+0.1% w/v saponin (PCS solution). After permeabilization, cells were washed 1 \u00d7 3 min with PCS solution and blocked for 1 hr at room temperature in PCS. Following block, cells were incubated with 1:100 dilution of rabbit anti-ovalbumin (OVA) antibody to stain OVA (Thermo/Pierce, Catalog # PA1-196) diluted in PCS solution overnight at 4\u00b0C. Washed cells were incubated with a 1:200 dilution of goat anti-rabbit Alexa Fluor 647 antibody (Thermo/Molecular Probes, Catalog # A21235) and 3.3 nM 488 phallodin (dissolved at 6.6 \u00b5M in methanol) in PCS solution in the dark for 60 min at room temperature. Wells were then washed 3 \u00d7 5 min in PCS solution. Cells were covered in 200 \u00b5l PBS and immediately imaged. Ovalbumin signal was quantified as the corrected total cell fluorescence (CTCF). CTCF\u00a0=\u00a0Integrated Density \u2013 Area of Selected Cell * Mean Fluorescence of 3 Background Readings. Each data point represents a single cell, and the graphs reflect pooled results from three biological replicates.\n\n### Image processing and analysis\n\nAll image quantification was done on raw, unedited images. All images in figures were first analyzed in ImageJ, where a single Z-slice at the center of the cell was extracted. The image intensities were scaled to enhance contrast and cropped in Photoshop. For movies, background was subtracted in Fiji using a rolling ball radius of 50 \u03bcm and bleach corrected using the Histogram Matching plug in.\n\n### Statistics\n\nAll statistical analysis was performed in Prism 6.0 (GraphPad, Inc.). The statistical test used is indicated in each figure legend. Error bars throughout the paper denote 95% confidence intervals of the mean. *** indicates p<0.0001; ** indicates p<0.001 and * indicates p<0.01.\n",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "46bc1609-871f-4b2d-85e7-6cefc94ecc61",
+      "submission_id": "4fa492b9-dabc-46c4-863c-138ba3813930",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36688.021](https://doi.org/10.7554/eLife.36688.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Chimeric antigen receptors that trigger phagocytosis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Jonathan Cooper as the Senior/Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dennis Discher (Reviewer #1); Adam Hoppe (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes engineering of chimeric receptors that when expressed in macrophages can enable target recognition of the CD19 or CD22 antigens and mediate phagocytosis and trogocytosis. The study works as a proof of principle showing a new effector function (phagocytosis) for chimeric antigen receptors in a new cell type (macrophages). Given the strong interest in cell-based immunotherapies such as chimeric antigen receptor-T cells this work will likely be of broad interest to the readership of eLife.\n\nEssential revisions:\n\n1) The work is timely as it suggests a connection between adoptive transfer therapies using engineered immune cells (such as CAR-T therapy) and immunotherapy approaches using macrophages (as cited studies using blockade of the CD47-SIRPalpha axis). However, whether such a connection can be realized remains unclear as only macrophage cell lines were engineered and phagocytosis assays were all conducted in vitro. A possible route forward is suggested by the engineering of CAR-P bone marrow-derived dendritic cells in Figure 4\u2014figure supplement 4, but bone marrow-derived macrophages or other primary sourced MPS cells should be considered. It should be relatively easy for the authors to obtain such cell types, engineer them, and test them.\n\n2) The phagocytic response to B-cell targets appears relatively weak (e.g. 2-6 macrophage having internalized B-cells) and seems to strongly favor a trogocytic response (nearly 100% of the macrophages having internalized B-cell membrane). Perhaps this is unique to the cell lines (macrophages and B-cells) used in the study, but it raises the question how of how similar would these results be to ADCP mediated by IgG2a (murine) or IgG1 (human) anti-CD19 antibodies under the same conditions? To this end, the authors should compare the CAR-P response to that stimulated by antibody-opsonized particles and/or cell. CD19-coated particles should be treated with anti-CD19 antibodies and incubated with cells for phagocytosis. While the specificity of CAR-Ps could be advantageous, true specificity for the CAR-P target is unlikely since Fc-receptor mediated pathways remain in place. For example, in the authors' system, CD22-coated particles would likely be phagocytosed by anti-CD19 CAR-P cells in the presence of an anti-CD22 antibody.\n\n3) (Optional) The work would be more impactful if the authors demonstrated successful phagocytosis with different CAR extracellular domains that target antigens on solid tumors. As stated in the Introduction, macrophages might offer the benefit of trafficking into solid tumors better than T cells, yet the examples in this manuscript are the standard B cell targets CD19 and CD22. Adding such studies would be beneficial, but may be best left for a follow up paper.\n",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f4c16b9e-51f5-4b36-89f5-c2dfa750b63f",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C1",
+      "claim": "Chimeric antigen receptors (CARs) are synthetic receptors that reprogram T cells to kill cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric antigen receptors (CARs) are synthetic receptors that reprogram T cells to kill cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about CAR technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "87f1bc58-0d8e-459f-8002-9d69fc6f4199",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C2",
+      "claim": "CAR-T cell therapies have been successful, highlighting the promise of programmed immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of CAR-T cell therapies highlights the promise of programmed immunity and suggests that applying CAR strategies to other immune cell lineages may be beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced as an established success in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "9b2737a3-621e-4ba8-bc3a-64984366ef6f",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C3",
+      "claim": "CAR-Ps consist of an extracellular antibody fragment that can be modified to direct CAR-P activity towards specific antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR-Ps consist of an extracellular antibody fragment, which can be modified to direct CAR-P activity towards specific antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract describing the structure of CAR-Ps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "756a2e5b-4ba6-412a-b64e-69f9e0254f4f",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C4",
+      "claim": "The cytosolic domains from Megf10 and FcR\u0263 robustly triggered engulfment independently of their native extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "By screening a panel of engulfment receptor intracellular domains, we found that the cytosolic domains from Megf10 and FcR\u0263 robustly triggered engulfment independently of their native extracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "77dc3c44-20e9-4899-83ca-6ca6a3dba220",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C5",
+      "claim": "CAR-Ps drive specific engulfment of antigen-coated synthetic particles.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CAR-Ps drive specific engulfment of antigen-coated synthetic particles and whole human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "6654c238-21ac-46b0-a172-87146c080b6d",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C6",
+      "claim": "CAR-Ps drive specific engulfment of whole human cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CAR-Ps drive specific engulfment of antigen-coated synthetic particles and whole human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "540de00f-d89f-445f-9728-efb3f6e40589",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C7",
+      "claim": "Addition of a tandem PI3K recruitment domain increased cancer cell engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of a tandem PI3K recruitment domain increased cancer cell engulfment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by data in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "6cf54e5b-10c6-4f3a-b2e4-933e68b3a8e2",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C8",
+      "claim": "CAR-P expressing murine macrophages reduce cancer cell number in co-culture by over 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that CAR-P expressing murine macrophages reduce cancer cell number in co-culture by over 40%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by data in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "23fd7fbc-0232-4872-a2a9-dbb38a5a1250",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C9",
+      "claim": "CAR-T cells recognizing CD19 have been used successfully to target hematological malignancies with 70\u201390% of patients showing measurable improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR-T cells recognizing CD19, a marker expressed at high levels on the surface of B cells and B cell-derived malignancies, have been used successfully to target hematological malignancies with 70\u201390% of patients showing measurable improvement (Lim et al., 2017; Engel et al., 1995; Haso et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "c3f694f3-8cc6-4afd-86d5-d3cf04b08578",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C10",
+      "claim": "CD19 is a marker expressed at high levels on the surface of B cells and B cell-derived malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "CAR-T cells recognizing CD19, a marker expressed at high levels on the surface of B cells and B cell-derived malignancies, have been used successfully to target hematological malignancies with 70\u201390% of patients showing measurable improvement (Lim et al., 2017; Engel et al., 1995; Haso et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f69ef17a-e599-482b-8432-d8ce66693920",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C11",
+      "claim": "Macrophages are critical effectors of the innate immune system, responsible for engulfing debris and pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages are critical effectors of the innate immune system, responsible for engulfing debris and pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about macrophage function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "5682629f-1912-4acc-bde6-6416f9f5ffa6",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C12",
+      "claim": "Macrophages are uniquely capable of penetrating solid tumors, while other immune cells, like T cells, are physically excluded or inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages are uniquely capable of penetrating solid tumors, while other immune cells, like T cells, are physically excluded or inactivated (Lim et al., 2017; Lee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a0452540-39f7-454e-9401-d7d91a7449a9",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C13",
+      "claim": "Early efforts transferring healthy macrophages into cancer patients failed to inhibit tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts transferring healthy macrophages into cancer patients failed to inhibit tumor growth, suggesting that macrophages require additional signals to direct their activity towards tumors (Lacerna et al., 1988; Andreesen et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "059f7f91-3fcb-43de-adf1-1dd960c7cf0d",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C14",
+      "claim": "Macrophages require additional signals to direct their activity towards tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Early efforts transferring healthy macrophages into cancer patients failed to inhibit tumor growth, suggesting that macrophages require additional signals to direct their activity towards tumors (Lacerna et al., 1988; Andreesen et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited studies showing failure of macrophage transfer.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "933897e1-d50a-4fa7-b764-466b27dadade",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C15",
+      "claim": "Antibody blockade of CD47 reduced tumor burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody blockade of CD47, a negative regulator of phagocytosis, reduced tumor burden, indicating that shifting the balance in favor of macrophage activation and engulfment is a promising therapeutic avenue (Majeti et al., 2009; Chao et al., 2010; Jaiswal et al., 2009; Tseng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "93bd8c74-7c86-4a96-82bc-4cbca4d71663",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C16",
+      "claim": "CD47 is a negative regulator of phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody blockade of CD47, a negative regulator of phagocytosis, reduced tumor burden, indicating that shifting the balance in favor of macrophage activation and engulfment is a promising therapeutic avenue (Majeti et al., 2009; Chao et al., 2010; Jaiswal et al., 2009; Tseng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "cabf2b3c-8f93-49e7-b6c5-fce3ad7ec55e",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C17",
+      "claim": "Macrophages expressing CAR-PMegf10 or CAR-PFcR\u0263 promoted significant engulfment of CD19 beads compared to macrophages with no CAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages expressing a CAR-P with the Megf10 (CAR-PMegf10) or FcR\u0263 (CAR-PFcR\u0263) intracellular domain promoted significant engulfment of CD19 beads compared to macrophages with no CAR (Figure 1b,c, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data shown in Figure 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "b06ad2ba-800e-470f-95fe-506d33c78433",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C18",
+      "claim": "Macrophages expressing CAR-PBai1, CAR-PMerTK, and the adhesion-only CAR-PGFP did not bind the CD19 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages expressing CAR-PBai1, CAR-PMerTK, and the adhesion-only CAR-PGFP did not bind the CD19 beads even though these CAR-Ps are present at the cell surface (Figure 1b,c, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 1b,c and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "dc324d08-efe9-45c6-961f-4230690f8a9f",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C19",
+      "claim": "CAR-PBai1, CAR-PMerTK, and CAR-PGFP are present at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages expressing CAR-PBai1, CAR-PMerTK, and the adhesion-only CAR-PGFP did not bind the CD19 beads even though these CAR-Ps are present at the cell surface (Figure 1b,c, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and demonstrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "23011095-c6a4-47b2-8178-c96ea0d14ae6",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C20",
+      "claim": "Primary murine bone marrow derived macrophages expressing CAR-PFcR\u0263 were able to trigger engulfment of CD19 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the CAR-P was a viable strategy for redirecting primary macrophages, we expressed the CAR-PFcR\u0263 in primary murine bone marrow derived macrophages and found that these transfected primary cells also were able to trigger engulfment of CD19 beads (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8a3fd78d-7d7f-4edf-badb-295bfaa04939",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C21",
+      "claim": "\u0251CD22 CAR-PMegf10 promoted engulfment of CD22 beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results using \u0251CD19-based CARs, \u0251CD22 CAR-PMegf10 promoted engulfment of CD22 beads (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "3c0efe19-470b-4cd2-9cea-192fc8fbf0fd",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C22",
+      "claim": "CD19 beads were not eaten by \u0251CD22 CAR-PMegf10 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "CD19 beads were not eaten by \u0251CD22 CAR-PMegf10 macrophages, and CD22 beads were not eaten by \u0251CD19 CAR-PMegf10 macrophages (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "fd1d7fca-8587-4ad7-836b-3c871ea768aa",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C23",
+      "claim": "CD22 beads were not eaten by \u0251CD19 CAR-PMegf10 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "CD19 beads were not eaten by \u0251CD22 CAR-PMegf10 macrophages, and CD22 beads were not eaten by \u0251CD19 CAR-PMegf10 macrophages (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "c0bab203-205d-4dea-b40a-2c3f223175c0",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C24",
+      "claim": "CAR-PMegf10 specifically triggers engulfment in response to the target ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that CAR-PMegf10 specifically triggers engulfment in response to the target ligand and that the CAR-P strategy is able to target multiple cancer antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specificity data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "aa83cdf8-b544-4e49-908b-9bc915eec1fa",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C25",
+      "claim": "The CAR-P strategy is able to target multiple cancer antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that CAR-PMegf10 specifically triggers engulfment in response to the target ligand and that the CAR-P strategy is able to target multiple cancer antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful targeting of both CD19 and CD22.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "d351c576-a3ee-4425-9650-d5d1b15033d5",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C26",
+      "claim": "CAR-PMegf10 was able to trigger specific engulfment of beads ranging from 2.5 \u00b5m to 20 \u00b5m in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CAR-PMegf10 was able to trigger specific engulfment of beads ranging from 2.5 \u00b5m to 20 \u00b5m in diameter, with higher specificity above background engulfment being demonstrated for the larger beads (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a531ec05-c869-4227-87cc-61ab46fca044",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C27",
+      "claim": "Higher specificity above background engulfment was demonstrated for larger beads.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CAR-PMegf10 was able to trigger specific engulfment of beads ranging from 2.5 \u00b5m to 20 \u00b5m in diameter, with higher specificity above background engulfment being demonstrated for the larger beads (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "4b18aa10-9746-4051-9a4f-0377fc4cae72",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C28",
+      "claim": "CAR-PMegf10 macrophages engulfed CD19 beads and beads containing 10% phosphatidylserine and ICAM-1 at a similar frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CAR-PMegf10 macrophages engulfed CD19 beads and beads containing 10% phosphatidylserine and the adhesion molecule ICAM-1 at a similar frequency (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f66bd481-71fc-4410-9994-65575ad3dca1",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C29",
+      "claim": "The CAR-P is comparably efficient to the endogenous system.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the CAR-P is comparably efficient to the endogenous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of CAR-P engulfment with endogenous Megf10 ligand engulfment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "976385b4-d5b7-41d6-8ee1-200fd163dd65",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C30",
+      "claim": "Macrophages expressing CAR-PMegf10 exhibited an increase in phosphotyrosine at the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages expressing CAR-PMegf10 exhibited an increase in phosphotyrosine at the synapse, while macrophages expressing CAR-PGFP did not show this enrichment (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "e4b8f471-94f8-4daf-996e-eb15bb87468f",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C31",
+      "claim": "Macrophages expressing CAR-PGFP did not show phosphotyrosine enrichment at the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages expressing CAR-PMegf10 exhibited an increase in phosphotyrosine at the synapse, while macrophages expressing CAR-PGFP did not show this enrichment (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "fe6b1827-bd82-46b8-94cf-3e52be9979e4",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C32",
+      "claim": "CAR-PMegf10 initiates engulfment through a localized signaling cascade involving tyrosine phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that CAR-PMegf10 initiates engulfment through a localized signaling cascade involving tyrosine phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from phosphotyrosine enrichment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "5e2814b5-b34c-4f63-9c37-d71848726cdb",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C33",
+      "claim": "F-actin was enriched at the cell bead synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, we found that F-actin also was enriched at the cell bead synapse (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "20a051a9-05d3-4a59-95a5-d4d13a84e7f9",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C34",
+      "claim": "Both successful CAR-P intracellular domains (from FcR\u0263 and Megf10) have cytosolic Immunoreceptor Tyrosine-based Activation Motifs (ITAMs).",
+      "claim_type": "EXPLICIT",
+      "source": "Both successful CAR-P intracellular domains (from FcR\u0263 and Megf10) have cytosolic Immunoreceptor Tyrosine-based Activation Motifs (ITAMs) that are phosphorylated by Src family kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a structural feature of the successful CAR-P domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "13964c43-6607-4dfe-94d7-5183ffb6ef97",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C35",
+      "claim": "ITAMs in FcR\u0263 and Megf10 are phosphorylated by Src family kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Both successful CAR-P intracellular domains (from FcR\u0263 and Megf10) have cytosolic Immunoreceptor Tyrosine-based Activation Motifs (ITAMs) that are phosphorylated by Src family kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about ITAM phosphorylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "26218278-2ae2-4d9d-8514-a0ab76837057",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C36",
+      "claim": "The CD3\u03b6 subunit of the T cell receptor contains three ITAM motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD3\u03b6 subunit of the T cell receptor contains three ITAM motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about CD3\u03b6 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a1c87bdb-3684-433b-8004-abb9811813d3",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C37",
+      "claim": "The CAR-T was able to trigger engulfment of CD19 beads to a comparable extent as CAR-PMegf10.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAR-T was able to trigger engulfment of CD19 beads to a comparable extent as CAR-PMegf10 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "bb03c93a-dc0f-4b89-b236-dd4f8c3fd4f9",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C38",
+      "claim": "In T cells, phosphorylated ITAMs in CD3\u03b6 bind to tandem SH2 domains (tSH2) in the kinase ZAP70.",
+      "claim_type": "EXPLICIT",
+      "source": "In T cells, phosphorylated ITAMs in CD3\u03b6 bind to tandem SH2 domains (tSH2) in the kinase ZAP70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about T cell signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "43e100d5-eda0-49a0-bd94-62e58b4456f8",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C39",
+      "claim": "Zap70 is not expressed in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Zap70 is not expressed in macrophages, but Syk, a phagocytic signaling effector and tSH2 domain containing protein, is expressed at high levels (Andreu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "b2e7d0a9-e062-464f-ac99-754ff9cd367a",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C40",
+      "claim": "Syk is a phagocytic signaling effector and tSH2 domain containing protein expressed at high levels in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Zap70 is not expressed in macrophages, but Syk, a phagocytic signaling effector and tSH2 domain containing protein, is expressed at high levels (Andreu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a903bef5-bd3b-4004-9551-19ee80a45adc",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C41",
+      "claim": "Syk kinase can bind to the CD3\u03b6 ITAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work suggested that Syk kinase can also bind to the CD3\u03b6 ITAMs (Bu et al., 1995), indicating that the CAR-T may promote engulfment through a similar mechanism as CAR-PFcR\u0263.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8ac584e1-e963-4b24-a6c8-e7f8376fffbe",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C42",
+      "claim": "Syk-tSH2 binds CD3\u03b6 with an affinity of approximately 15 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Syk-tSH2 binds the CD3\u03b6 and FcR\u0263 with comparable affinity (~15 nM and ~30 nM respectively, Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "fd6cf694-500b-4305-b881-3c03fed415f4",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C43",
+      "claim": "Syk-tSH2 binds FcR\u0263 with an affinity of approximately 30 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Syk-tSH2 binds the CD3\u03b6 and FcR\u0263 with comparable affinity (~15 nM and ~30 nM respectively, Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "70352e21-ea9e-4f9f-b107-b6b352704dae",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C44",
+      "claim": "The TCR CD3\u03b6 chain can promote phagocytosis in a CAR-P, likely through the recruitment of Syk kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results demonstrate that the TCR CD3\u03b6 chain can promote phagocytosis in a CAR-P, likely through the recruitment of Syk kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from binding affinity data and engulfment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "ff377328-6979-4d9a-9ee3-2a38ed0484c7",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C45",
+      "claim": "78% of CAR-PMegf10 macrophages internalized bites within 90 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority of CAR-P-expressing macrophages internalized bites of the target cell (Figure 4a, Figure 4\u2014video 1, 78% of CAR-PMegf10 and 85% of CAR-PFcR\u0263 macrophages internalized bites within 90 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f92ff5df-8b55-44a1-9520-34bffa8d7340",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C46",
+      "claim": "85% of CAR-PFcR\u0263 macrophages internalized bites within 90 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the majority of CAR-P-expressing macrophages internalized bites of the target cell (Figure 4a, Figure 4\u2014video 1, 78% of CAR-PMegf10 and 85% of CAR-PFcR\u0263 macrophages internalized bites within 90 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "275e3f41-5449-4f60-b798-ff427e877fc3",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C47",
+      "claim": "The biting phenotype resembles trogocytosis, or nibbling of live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The biting phenotype resembles trogocytosis, or nibbling of live cells, which has been reported previously in immune cells (Joly and Hudrisier, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "0b9d38b3-f0e9-4459-a131-07c3807caf1b",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C48",
+      "claim": "Trogocytosis has been reported previously in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The biting phenotype resembles trogocytosis, or nibbling of live cells, which has been reported previously in immune cells (Joly and Hudrisier, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f350631e-dfe6-40dc-be25-d5791ab07ff3",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C49",
+      "claim": "Removing the signaling domain (CAR-PGFP) dramatically reduced trogocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This process was dependent on the ITAM-bearing intracellular signaling domain, as removing the signaling domain (CAR-PGFP) dramatically reduced trogocytosis (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "973d90f5-cd33-4957-a0c2-66a90ab3e563",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C50",
+      "claim": "Enrichment of phosphotyrosine at the cell-cell synapse supports active signaling initiating trogocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment of phosphotyrosine at the cell-cell synapse further supports active signaling initiating trogocytosis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "4f6ac510-1637-4073-889b-ad13344a828e",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C51",
+      "claim": "The CAR-P module was able to induce trogocytosis in non-professional phagocytes, human NIH 3T3 fibroblast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAR-P module also was able to induce trogocytosis in non-professional phagocytes, human NIH 3T3 fibroblast cells (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "034f752a-7f8c-4f45-b72c-07a09c97c034",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C52",
+      "claim": "The CAR-P can promote cancer antigen-dependent engulfment by both professional and non-professional phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the CAR-P can promote cancer antigen-dependent engulfment by both professional and non-professional phagocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful trogocytosis in both macrophages and fibroblasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "e377427a-a369-48b4-af8e-e9d3f83033e7",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C53",
+      "claim": "Macrophages expressing CAR-PMegf10 or CAR-PFcR\u0263 were capable of engulfing whole Raji B cells (2 cancer cells eaten per 100 macrophages in a 4\u20138 hr window).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that macrophages expressing the CAR-PMegf10 or CAR-PFcR\u0263 were capable of engulfing whole Raji B cells (2 cancer cells eaten per 100 macrophages in a 4\u20138 hr window for both CAR-PMegf10 or CAR-PFcR\u0263, Figure 4b,e, Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4b,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a710c680-b083-4c12-bb5e-090991c5ab67",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C54",
+      "claim": "Blockade of CD47 using the mouse IgG1 anti-human B6H12 clone resulted in a 2.5 fold increase of whole cell eating of opsonized Raji B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While addition of this antibody did not trigger additional whole cell internalization, blockade of the 'don't eat me' signal CD47 using the mouse IgG1 anti-human B6H12 clone resulted in a 2.5 fold increase of whole cell eating of opsonized Raji B cells (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8620a42e-5ed9-486d-ba5a-52451bf9b0b4",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C55",
+      "claim": "PI3K signaling is important for internalization of large targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work demonstrated that PI3K signaling is important for internalization of large targets (Schlam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "46e5ce7f-3698-447f-98c4-26e51b936c99",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C56",
+      "claim": "A CAR-P containing the p85 recruitment motif alone (CAR-PPI3K) was able to induce some whole cell engulfment, comparable to the CAR-PFcR\u0263.",
+      "claim_type": "EXPLICIT",
+      "source": "A CAR-P containing the p85 recruitment motif alone (CAR-PPI3K) was able to induce some whole cell engulfment, comparable to the CAR-PFcR\u0263 (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f56e0314-35ee-47a9-a62b-37edbf79e240",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C57",
+      "claim": "Expression of CAR-Ptandem tripled the ability of macrophages to ingest whole cells compared to CAR-PGFP (6 cancer cells eaten per 100 macrophages).",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of CAR-Ptandem tripled the ability of macrophages to ingest whole cells compared to CAR-PGFP (6 cancer cells eaten per 100 macrophages, Figure 4d,e, Figure 4\u2014video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "86a86288-8514-4354-9c66-d7df19ddf4ec",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C58",
+      "claim": "Assembling an array of motifs designed to recruit distinct phagocytic effectors can increase CAR-P activity towards whole cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that assembling an array of motifs designed to recruit distinct phagocytic effectors can increase CAR-P activity towards whole cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the improved performance of CAR-Ptandem.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "7b5888c5-0dea-41c7-b0ce-604fbc488bc7",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C59",
+      "claim": "After 44 hr of co-culture, CAR-P macrophages significantly reduced the number of Raji cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After 44 hr of co-culture, we found that CAR-P macrophages significantly reduced the number of Raji cells (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "fdabc6c6-3794-4e86-8d7a-e62c32734545",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C60",
+      "claim": "The CAR-PFcR\u0263 performed nearly as well as CAR-Ptandem at eliminating Rajis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the CAR-Ptandem was much more efficient at whole cell eating, the CAR-PFcR\u0263 performed nearly as well at eliminating Rajis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of data in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "7155a060-f938-4306-bcc8-4b2a1b7a54a5",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C61",
+      "claim": "The CAR-P is a successful strategy for directing macrophages towards cancer targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that the CAR-P is a successful strategy for directing macrophages towards cancer targets, and can initiate whole cell eating and trogocytosis leading to cancer cell elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from all experimental results showing engulfment and cancer cell reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a957e08a-32f8-4445-82e3-709debafac55",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C62",
+      "claim": "CAR-P can initiate whole cell eating and trogocytosis leading to cancer cell elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data suggest that the CAR-P is a successful strategy for directing macrophages towards cancer targets, and can initiate whole cell eating and trogocytosis leading to cancer cell elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "f3d7125d-35b8-48b1-9469-e066438e86cb",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C63",
+      "claim": "Spatial segregation between Src-family kinases and an inhibitory phosphatase, driven by receptor ligation, is sufficient to trigger signaling by the T cell receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested that spatial segregation between Src-family kinases and an inhibitory phosphatase, driven by receptor ligation, is sufficient to trigger signaling by the T cell receptor (Davis and van der Merwe, 2006; James and Vale, 2012) and FcR (Freeman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "1a8a9816-1fcb-440c-b3db-d1b2347aa377",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C64",
+      "claim": "Spatial segregation between Src-family kinases and an inhibitory phosphatase, driven by receptor ligation, is sufficient to trigger signaling by FcR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested that spatial segregation between Src-family kinases and an inhibitory phosphatase, driven by receptor ligation, is sufficient to trigger signaling by the T cell receptor (Davis and van der Merwe, 2006; James and Vale, 2012) and FcR (Freeman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "ff13ce13-45c5-40b4-95ed-0d76ecffe7ee",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C65",
+      "claim": "The CAR-Ps may convert receptor-ligand binding into receptor phosphorylation of ITAM domains through partitioning of kinases and phosphatases at the membrane-membrane interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The CAR-Ps that we have developed may similarly convert receptor-ligand binding into receptor phosphorylation of ITAM domains through partitioning of kinases and phosphatases at the membrane-membrane interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on cited mechanisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "372ed1d2-0dc0-47f2-baaa-c080459c88dd",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C66",
+      "claim": "Targeting of tumor cells by macrophages has been suggested to cause tumor cell killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of tumor cells by macrophages has been suggested to cause tumor cell killing (Jaiswal et al., 2009; Majeti et al., 2009; Chao et al., 2010; Jadus et al., 1996), either through directly engulfing cancer cells or by stimulating antigen presentation and a T cell-mediated response (Liu et al., 2015; Tseng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "3dae39eb-b2b7-4ee3-b2af-e805c9609fba",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C67",
+      "claim": "Macrophages can kill tumor cells either through directly engulfing cancer cells or by stimulating antigen presentation and a T cell-mediated response.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of tumor cells by macrophages has been suggested to cause tumor cell killing (Jaiswal et al., 2009; Majeti et al., 2009; Chao et al., 2010; Jadus et al., 1996), either through directly engulfing cancer cells or by stimulating antigen presentation and a T cell-mediated response (Liu et al., 2015; Tseng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "1b3f9328-1fd4-4790-8740-28c81c458e16",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C68",
+      "claim": "Inhibition of the CD47-SIRPA 'Don't eat me' signaling pathway has been shown to result in engulfment of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of the CD47-SIRPA 'Don't eat me' signaling pathway has also been shown to result in engulfment of cancer cells (Chen et al., 2017; Gardai et al., 2005; Jaiswal et al., 2009; Majeti et al., 2009; Chao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "3423116d-cfe6-4323-936d-e8cc840bf9f1",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C69",
+      "claim": "CD47 inhibition is most effective when combined with a positive signal to promote target engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study suggests that CD47 inhibition is most effective when combined with a positive signal to promote target engulfment, which raises the possibility of combining CAR-P expression with CD47 or SIRPA inhibition for an additive effect (Alvey et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "040cb109-707a-45d0-a925-24646be64f56",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C70",
+      "claim": "The engulfment of larger 20 micron beads was more frequent than the engulfment of whole cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were able to increase whole cell engulfment by recruiting the activating subunit of PI3K to the phagocytic synapse, the engulfment of larger 20 micron beads was more frequent than the engulfment of whole cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of data in Figures 2b and 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "b9f0e0b1-e090-41cc-8385-1207f8dceeac",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C71",
+      "claim": "Differing physical properties of the engulfment target may explain differences in engulfment frequency between beads and cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this is due to differing physical properties of the engulfment target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "96bec7a9-e9bd-4968-bf42-d60b2f8ec418",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C72",
+      "claim": "Increased target stiffness has been shown to promote engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, increased target stiffness has been shown to promote engulfment, suggesting that manipulating the physical properties of the engulfment target could also be a potential strategy for increasing CAR-P efficiency (Beningo and Wang, 2002; Cross et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "a3db236a-273f-4c29-8a62-00d531abfe44",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C73",
+      "claim": "Trogocytosis has been described in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Trogocytosis, or nibbling of living cells, has also been described in immune cells (Harshyne et al., 2003; Harshyne et al., 2001; Kao et al., 2006; Joly and Hudrisier, 2003; Batista et al., 2001) and brain-eating amoebae (Ralston et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "19d557b0-1dba-4ce6-b54c-7f72623cb735",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C74",
+      "claim": "Trogocytosis has been described in brain-eating amoebae.",
+      "claim_type": "EXPLICIT",
+      "source": "Trogocytosis, or nibbling of living cells, has also been described in immune cells (Harshyne et al., 2003; Harshyne et al., 2001; Kao et al., 2006; Joly and Hudrisier, 2003; Batista et al., 2001) and brain-eating amoebae (Ralston et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "3e472f1c-52bd-4a1b-b9b7-f14bb655d170",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C75",
+      "claim": "Endogenous dendritic cell populations ingest bites of live tumor cells, contributing to presentation of cancer neo-antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies also have shown that endogenous dendritic cell populations ingest bites of live tumor cells, contributing to presentation of cancer neo-antigen (Harshyne et al., 2001; Harshyne et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "6487e885-2cfa-48df-b6b8-a88a8d1999a8",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C76",
+      "claim": "The authors were not able to detect robust cross presentation of the model antigen ovalbumin using CAR-P in dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were able to use the CAR-P to induce trogocytosis in dendritic cells, we were not able to detect robust cross presentation of the model antigen ovalbumin (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and supported by data in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "47c872c8-3949-446f-ba76-7b655371f5e1",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C77",
+      "claim": "Using CAR-Ps to enhance cross presentation of cancer antigen would likely require more optimization of the dendritic cell subset employed or the CAR-P receptor itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although using CAR-Ps to enhance cross presentation of cancer antigen is an intriguing future avenue, such a strategy would likely require more optimization of the dendritic cell subset employed or the CAR-P receptor itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future directions based on negative results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "c8a10ade-5074-47ee-9a09-37d91a5e4c86",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C78",
+      "claim": "The CAR approach is transferrable to biological processes beyond T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study demonstrates that the CAR approach is transferrable to biological processes beyond T cell activation and that the expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful application of CAR strategy to phagocytosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8ee91576-a87c-4532-a2e2-7373b83bdd71",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "claim_id": "C79",
+      "claim": "The expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study demonstrates that the CAR approach is transferrable to biological processes beyond T cell activation and that the expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a summary conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CAR-Ps with Megf10 or FcR\u03b3 intracellular domains robustly trigger engulfment of CD19-coated beads in both J774A.1 macrophages and primary bone marrow-derived macrophages, while CAR-Ps with Bai1, MerTK, or GFP-only domains do not, despite surface expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17, C18, C19, and C20 collectively demonstrate that specific intracellular signaling domains (Megf10 and FcR\u03b3) are necessary and sufficient for CAR-P-mediated phagocytosis. The data show both positive results (engulfment with Megf10/FcR\u03b3) and appropriate negative controls (no engulfment with Bai1/MerTK/GFP despite surface expression), and the findings are replicated in primary cells. The experimental design includes proper controls and the results are statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CAR-Ps demonstrate antigen specificity: \u03b1CD19 CAR-PMegf10 engulfs CD19 beads but not CD22 beads, and \u03b1CD22 CAR-PMegf10 engulfs CD22 beads but not CD19 beads, demonstrating that the CAR-P strategy can target multiple cancer antigens with specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 provide strong evidence for antigen-specific targeting. The reciprocal specificity experiments (CD19 CAR with CD22 beads and vice versa) serve as excellent negative controls, demonstrating that engulfment is driven by specific antibody-antigen recognition rather than non-specific binding. This establishes both the specificity and generalizability of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "ea6690b1-3542-497e-8520-427d908530c2",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CAR-PMegf10 triggers specific engulfment of beads ranging from 2.5 \u03bcm to 20 \u03bcm in diameter, with higher specificity for larger beads, and performs comparably to the endogenous Megf10 system when tested with phosphatidylserine-containing beads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 demonstrate the size range capability of CAR-P and provide an important benchmark comparison to the endogenous system. The data show CAR-P can handle targets across a physiologically relevant size range. However, the authors note high background with beads from a different manufacturer, which introduces some uncertainty in the quantitative comparisons, though the overall conclusion remains supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "e9ddeafe-48d2-4fc0-9af0-1e129015478d",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CAR-PMegf10 initiates engulfment through localized signaling involving tyrosine phosphorylation and F-actin enrichment at the synapse, while the adhesion-only CAR-PGFP does not show this enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 provide mechanistic evidence that CAR-P triggers active signaling cascades. The phosphotyrosine enrichment at the synapse in CAR-PMegf10 but not CAR-PGFP, combined with F-actin enrichment, supports the conclusion that CAR-P initiates canonical phagocytic signaling. The comparison to the GFP control is appropriate and the findings are consistent with known phagocytic mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CD3\u03b6 chain from the T cell receptor can promote phagocytosis in a CAR-P context, likely through recruitment of Syk kinase, which binds CD3\u03b6 and FcR\u03b3 with comparable nanomolar affinity (~15 nM and ~30 nM respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C44 establish that ITAM-containing domains from T cell receptors can function in macrophages to drive phagocytosis. The binding affinity measurements (C42-C43) provide quantitative support for the proposed Syk-mediated mechanism. The functional data (C37) showing comparable engulfment between CAR-T and CAR-PMegf10, combined with the biochemical evidence of Syk binding, strongly support this conclusion. This represents an important mechanistic insight and demonstrates cross-applicability of signaling modules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "782d4f32-5465-4b92-b14e-2042e8106450",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CAR-P expressing macrophages and fibroblasts perform trogocytosis (nibbling) of live Raji B cells in an ITAM-dependent manner, with 78-85% of CAR-P macrophages internalizing bites within 90 minutes, and this process is accompanied by phosphotyrosine enrichment at the cell-cell synapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 demonstrate that CAR-P induces trogocytosis in both professional (macrophages) and non-professional (fibroblasts) phagocytes. The high frequency of trogocytosis (78-85%), dependence on signaling domains (C49), phosphotyrosine enrichment (C50), and extension to non-professional phagocytes (C51) provide strong converging evidence. The comparison to CAR-PGFP serves as an appropriate negative control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "5482230a-179d-44e5-a49e-1ed9e3459f77",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CAR-P macrophages can engulf whole Raji B cells, with frequency increased by CD47 blockade (2.5-fold) and by engineering a tandem CAR-Ptandem construct combining FcR\u03b3 and PI3K recruitment domains (3-fold increase to 6 cells per 100 macrophages).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 show that whole cell engulfment occurs but is less frequent than trogocytosis, and can be enhanced through rational design. The CD47 blockade experiment (C54) validates the system against known biology, and the tandem construct (C57-C58) demonstrates that combining signaling motifs can improve performance. The quantitative data support the conclusions, though whole cell engulfment remains relatively infrequent even with optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "8389b77c-219f-4ffe-81a4-8d6a4172978e",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CAR-P expressing macrophages significantly reduce Raji B cell numbers by over 40% after 44 hours of co-culture, with CAR-PFcR\u03b3 performing nearly as well as CAR-Ptandem despite lower whole-cell engulfment rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 and C8 demonstrate the functional outcome of CAR-P activity: significant reduction in cancer cell numbers. The finding that CAR-PFcR\u03b3 performs comparably to CAR-Ptandem in reducing cell numbers despite lower whole-cell engulfment suggests that trogocytosis may contribute substantially to cancer cell elimination. The >40% reduction is statistically significant and represents a meaningful biological effect, though the mechanism (whole cell engulfment vs. trogocytosis-induced death) remains incompletely resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "b334bdf7-5995-43cb-b378-931c30d99031",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CAR-P can induce trogocytosis in dendritic cells, but robust cross-presentation of the model antigen ovalbumin was not detected, suggesting that optimization of dendritic cell subsets or CAR-P design would be required for this application.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 report a negative result with appropriate interpretation. The authors demonstrate that CAR-P induces trogocytosis in dendritic cells but does not lead to robust T cell activation via cross-presentation. This is an important limitation to document, and the authors appropriately suggest that further optimization would be needed. The negative result is supported by data in Figure 4\u2014figure supplement 4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "0413ccb9-b3e9-48f8-a340-ec19c2d79e85",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Engulfment of 20 \u03bcm beads is more frequent than engulfment of whole cells, potentially due to differing physical properties such as target stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72 identify a discrepancy between bead and cell engulfment but provide only speculative explanations. While C70 is supported by data comparison, C71 is explicitly speculative, and C72 cites literature on stiffness effects without directly testing this hypothesis. The observation is valid but the mechanistic explanation remains unvalidated, making this result uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "18bba1e2-78bd-4e18-80fd-91f411416970",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CAR-Ps may convert receptor-ligand binding into ITAM phosphorylation through spatial partitioning of kinases and phosphatases at the membrane-membrane interface, similar to mechanisms proposed for TCR and FcR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 proposes a mechanistic model based on analogy to TCR and FcR signaling, but this is explicitly speculative ('may similarly convert'). While the phosphotyrosine enrichment data (C30-C32) are consistent with this model, no direct evidence for kinase/phosphatase segregation is provided. This represents a plausible hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    },
+    {
+      "id": "9924720d-a61f-4d99-80ee-e9811435c6e0",
+      "content_id": "cdfd1272-67c5-48f1-9fa4-d3c59c554f4f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The CAR approach is transferrable to biological processes beyond T cell activation, and expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 represent the overarching conclusions of the study, supported by the collective evidence from all experimental results. The successful application of CAR design principles to phagocytosis, demonstration of specificity, mechanistic characterization, and functional cancer cell elimination all support these broad conclusions. This represents the primary conceptual advance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:37.038246Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9b2737a3-621e-4ba8-bc3a-64984366ef6f",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "756a2e5b-4ba6-412a-b64e-69f9e0254f4f",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "cabf2b3c-8f93-49e7-b6c5-fce3ad7ec55e",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "b06ad2ba-800e-470f-95fe-506d33c78433",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "dc324d08-efe9-45c6-961f-4230690f8a9f",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "23011095-c6a4-47b2-8178-c96ea0d14ae6",
+      "result_id": "33283270-6ec3-4651-ad9e-d06a0b1b5bbe"
+    },
+    {
+      "claim_id": "8a3fd78d-7d7f-4edf-badb-295bfaa04939",
+      "result_id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd"
+    },
+    {
+      "claim_id": "3c0efe19-470b-4cd2-9cea-192fc8fbf0fd",
+      "result_id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd"
+    },
+    {
+      "claim_id": "fd1d7fca-8587-4ad7-836b-3c871ea768aa",
+      "result_id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd"
+    },
+    {
+      "claim_id": "c0bab203-205d-4dea-b40a-2c3f223175c0",
+      "result_id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd"
+    },
+    {
+      "claim_id": "aa83cdf8-b544-4e49-908b-9bc915eec1fa",
+      "result_id": "15dba7b6-3077-4083-8ec8-d6614fdc70fd"
+    },
+    {
+      "claim_id": "d351c576-a3ee-4425-9650-d5d1b15033d5",
+      "result_id": "ea6690b1-3542-497e-8520-427d908530c2"
+    },
+    {
+      "claim_id": "a531ec05-c869-4227-87cc-61ab46fca044",
+      "result_id": "ea6690b1-3542-497e-8520-427d908530c2"
+    },
+    {
+      "claim_id": "4b18aa10-9746-4051-9a4f-0377fc4cae72",
+      "result_id": "ea6690b1-3542-497e-8520-427d908530c2"
+    },
+    {
+      "claim_id": "f66bd481-71fc-4410-9994-65575ad3dca1",
+      "result_id": "ea6690b1-3542-497e-8520-427d908530c2"
+    },
+    {
+      "claim_id": "976385b4-d5b7-41d6-8ee1-200fd163dd65",
+      "result_id": "e9ddeafe-48d2-4fc0-9af0-1e129015478d"
+    },
+    {
+      "claim_id": "e4b8f471-94f8-4daf-996e-eb15bb87468f",
+      "result_id": "e9ddeafe-48d2-4fc0-9af0-1e129015478d"
+    },
+    {
+      "claim_id": "fe6b1827-bd82-46b8-94cf-3e52be9979e4",
+      "result_id": "e9ddeafe-48d2-4fc0-9af0-1e129015478d"
+    },
+    {
+      "claim_id": "5e2814b5-b34c-4f63-9c37-d71848726cdb",
+      "result_id": "e9ddeafe-48d2-4fc0-9af0-1e129015478d"
+    },
+    {
+      "claim_id": "20a051a9-05d3-4a59-95a5-d4d13a84e7f9",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "13964c43-6607-4dfe-94d7-5183ffb6ef97",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "26218278-2ae2-4d9d-8514-a0ab76837057",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "a1c87bdb-3684-433b-8004-abb9811813d3",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "bb03c93a-dc0f-4b89-b236-dd4f8c3fd4f9",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "43e100d5-eda0-49a0-bd94-62e58b4456f8",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "b2e7d0a9-e062-464f-ac99-754ff9cd367a",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "a903bef5-bd3b-4004-9551-19ee80a45adc",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "8ac584e1-e963-4b24-a6c8-e7f8376fffbe",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "fd6cf694-500b-4305-b881-3c03fed415f4",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "70352e21-ea9e-4f9f-b107-b6b352704dae",
+      "result_id": "63db169f-f866-4033-97cd-3cfbc2eeb2ac"
+    },
+    {
+      "claim_id": "ff377328-6979-4d9a-9ee3-2a38ed0484c7",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "f92ff5df-8b55-44a1-9520-34bffa8d7340",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "275e3f41-5449-4f60-b798-ff427e877fc3",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "0b9d38b3-f0e9-4459-a131-07c3807caf1b",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "f350631e-dfe6-40dc-be25-d5791ab07ff3",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "973d90f5-cd33-4957-a0c2-66a90ab3e563",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "4f6ac510-1637-4073-889b-ad13344a828e",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "034f752a-7f8c-4f45-b72c-07a09c97c034",
+      "result_id": "782d4f32-5465-4b92-b14e-2042e8106450"
+    },
+    {
+      "claim_id": "e377427a-a369-48b4-af8e-e9d3f83033e7",
+      "result_id": "5482230a-179d-44e5-a49e-1ed9e3459f77"
+    },
+    {
+      "claim_id": "a710c680-b083-4c12-bb5e-090991c5ab67",
+      "result_id": "5482230a-179d-44e5-a49e-1ed9e3459f77"
+    },
+    {
+      "claim_id": "46e5ce7f-3698-447f-98c4-26e51b936c99",
+      "result_id": "5482230a-179d-44e5-a49e-1ed9e3459f77"
+    },
+    {
+      "claim_id": "f56e0314-35ee-47a9-a62b-37edbf79e240",
+      "result_id": "5482230a-179d-44e5-a49e-1ed9e3459f77"
+    },
+    {
+      "claim_id": "86a86288-8514-4354-9c66-d7df19ddf4ec",
+      "result_id": "5482230a-179d-44e5-a49e-1ed9e3459f77"
+    },
+    {
+      "claim_id": "7b5888c5-0dea-41c7-b0ce-604fbc488bc7",
+      "result_id": "8389b77c-219f-4ffe-81a4-8d6a4172978e"
+    },
+    {
+      "claim_id": "fdabc6c6-3794-4e86-8d7a-e62c32734545",
+      "result_id": "8389b77c-219f-4ffe-81a4-8d6a4172978e"
+    },
+    {
+      "claim_id": "6cf54e5b-10c6-4f3a-b2e4-933e68b3a8e2",
+      "result_id": "8389b77c-219f-4ffe-81a4-8d6a4172978e"
+    },
+    {
+      "claim_id": "7155a060-f938-4306-bcc8-4b2a1b7a54a5",
+      "result_id": "8389b77c-219f-4ffe-81a4-8d6a4172978e"
+    },
+    {
+      "claim_id": "a957e08a-32f8-4445-82e3-709debafac55",
+      "result_id": "8389b77c-219f-4ffe-81a4-8d6a4172978e"
+    },
+    {
+      "claim_id": "6487e885-2cfa-48df-b6b8-a88a8d1999a8",
+      "result_id": "b334bdf7-5995-43cb-b378-931c30d99031"
+    },
+    {
+      "claim_id": "47c872c8-3949-446f-ba76-7b655371f5e1",
+      "result_id": "b334bdf7-5995-43cb-b378-931c30d99031"
+    },
+    {
+      "claim_id": "040cb109-707a-45d0-a925-24646be64f56",
+      "result_id": "0413ccb9-b3e9-48f8-a340-ec19c2d79e85"
+    },
+    {
+      "claim_id": "b9f0e0b1-e090-41cc-8385-1207f8dceeac",
+      "result_id": "0413ccb9-b3e9-48f8-a340-ec19c2d79e85"
+    },
+    {
+      "claim_id": "96bec7a9-e9bd-4968-bf42-d60b2f8ec418",
+      "result_id": "0413ccb9-b3e9-48f8-a340-ec19c2d79e85"
+    },
+    {
+      "claim_id": "ff13ce13-45c5-40b4-95ed-0d76ecffe7ee",
+      "result_id": "18bba1e2-78bd-4e18-80fd-91f411416970"
+    },
+    {
+      "claim_id": "c8a10ade-5074-47ee-9a09-37d91a5e4c86",
+      "result_id": "9924720d-a61f-4d99-80ee-e9811435c6e0"
+    },
+    {
+      "claim_id": "8ee91576-a87c-4532-a2e2-7373b83bdd71",
+      "result_id": "9924720d-a61f-4d99-80ee-e9811435c6e0"
+    }
+  ],
+  "comparisons": []
+}

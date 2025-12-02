@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Posterior undulation persists despite anterior paralysis induced by optogenetic inhibition of muscles or neurons, or by physical lesioning. When the anterior 33% or 45% of the worm was paralyzed, robust oscillations were observed in posterior regions, and tail undulation frequency increased. This finding is consistent with a multi-oscillator model and inconsistent with a single oscillator model relying on reflex-like signaling for wave propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide converging evidence from multiple experimental approaches (optogenetic inhibition of muscles, optogenetic inhibition of neurons, miniSOG-mediated muscle lesioning, and thermal lesioning) that posterior undulation can persist despite anterior paralysis. The data shown in Figures 2A-E and supplementary figures support these observations. The inference that this is consistent with a multi-oscillator model (C44) is logically sound given the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The C. elegans forward motor circuit contains at least two units capable of independent rhythm generation. Optogenetic inhibition of neck muscles, cholinergic neurons, or B-type motor neurons resulted in two-frequency undulation (2FU), where the tail exhibited higher frequency oscillations than the head. 2FU was also observed after stronger disruption via muscle lesioning, selective activation of tail motor neurons, and in worms transitioning between regions of different viscosities without any internal perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C58 describe a series of experiments demonstrating 2FU under various conditions. The data in Figures 3A-F and supplementary figures support the occurrence of 2FU. The conclusion that the motor circuit contains at least two independent rhythm generators (C57) is well-supported by the multiple lines of evidence showing that posterior oscillations can occur at different frequencies than anterior oscillations when coupling is disrupted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Most premotor interneurons, including PVC, are not essential for 2FU, but AVB may play a key role in activating the rhythm generator(s). Strains with ablated premotor interneurons (Pnmr-1::ICE and Pglr-1::ICE) and mutants lacking UNC-7/UNC-9 gap junctions were capable of 2FU during neck muscle inhibition. However, ablation of AVB nearly eliminated 2FU events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by data shown in Figures 4A, 4B, 4E, and supplementary figures. The genetic ablation and mutant studies provide strong evidence that most premotor interneurons are not required for 2FU, while AVB appears to be important. The inference that AVB may activate the rhythm generator(s) (C68) is reasonable given the near elimination of 2FU after AVB ablation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The A, VC, and D motor neurons are not required for 2FU. Ablation of A and VC motor neurons did not prevent 2FU, and unc-49 mutants (lacking functional D-type motor neuron output) were capable of 2FU. Ablation of individual B motor neurons or small subsets reduced but did not eliminate 2FU, suggesting that in the presence of premotor interneurons, the B class motor neurons contribute to 2FU, but no single member is essential. Posterior rhythm generation can arise from multiple subsets of B or AS motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by data in Figures 4C-F and supplementary figures. The systematic ablation studies provide strong evidence that A, VC, and D motor neurons are not required for 2FU, while B motor neurons contribute but are individually dispensable. The conclusion that multiple subsets of B or AS motor neurons can generate posterior rhythms (C76) is a reasonable inference from the data, though it is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The B motor neurons as a class are essential for independent tail undulation during forward movement. vab-7 mutants, in which DB motor neurons are disrupted, were incapable of 2FU. Elimination of most DB or most VB motor neurons sharply reduced but did not eliminate 2FU. However, when both DB and most VB motor neurons were removed, animals were completely incapable of 2FU (0 out of 102 trials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are strongly supported by data in Figure 5 and supplementary figures. The systematic ablation of DB and VB motor neurons, culminating in the complete elimination of 2FU when both are removed, provides compelling evidence that the B motor neurons as a class are essential for independent tail undulation. The blinded, randomized scoring adds rigor to the assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C102",
+      "C103"
+    ],
+    "result": "Multiple lesion-separated VNC segments are capable of independent rhythm generation. Severing the VNC and DNC posterior to the pharynx, with or without additional head lesioning, resulted in robust oscillations posterior to the cut, often at higher frequencies than the mid-body. When the VNC and DNC were cut in two locations (neck and tail), animals could generate robust oscillations posterior to each cut at different frequencies. These results suggest that the C. elegans forward locomotor circuitry possesses at least three units capable of independent oscillation, with two units located outside the head. The A motor neurons are not required, but the B motor neurons are required for rhythm generation in VNC-lesioned worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C103 describe VNC/DNC severing experiments and are supported by data in Figures 6A-E and supplementary figures. The observation that multiple isolated VNC segments can generate independent oscillations provides strong evidence for distributed rhythm generation. The conclusion that there are at least three oscillatory units (C102) is well-supported by the double-cut experiments. The requirement for B motor neurons (C97) is supported by supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Undulations can arise in arbitrary portions of the VNC motor circuit. When the VNC and DNC were severed at various locations (anterior to VB3, VB5, VB6, VB7, VB9, VB10, and VB11), undulations arose near each cut location, and bending amplitude recovered just posterior to each cut. Oscillations in the tail had higher frequency when the nerve cords were severed in the tail than near the head. The smallest VNC segment that produced clear and robust rhythmic waves was the region between VB9 and the tail, suggesting that the most compact rhythm-generating unit is at least as small as the region containing VB9, VB10, VB11, DB6, and DB7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by data in Figures 7B-G. The systematic severing of the VNC/DNC at different locations provides strong evidence that rhythm generation is distributed along the VNC. The identification of the smallest segment capable of generating rhythms (C107-C108) is a reasonable inference from the data, though the exact boundaries of the minimal unit remain somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Anteriorward coupling is present in the forward locomotor circuitry. During 2FU, head frequency decreases relative to unperturbed swimming, and this slowing is more dramatic with stronger decoupling. Rhythmically inhibiting mid-body BWMs, cholinergic neurons, or B motor neurons caused worms to exhibit head bending at approximately one-half the imposed frequency, demonstrating that a mid-body rhythmic signal can entrain head bending. This entrainment was observed over a range of imposed frequencies and suggests the presence of an anteriorward coupling mechanism, likely mediated neuronally by the VNC motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C120 describe rhythmic optogenetic entrainment experiments and are supported by data in Figures 8A-D and supplementary figures. The observation that head frequency decreases during 2FU (C109-C110) is well-documented. The rhythmic entrainment experiments (C112-C119) provide strong evidence for anteriorward coupling. The inference that this coupling is mediated neuronally by VNC motor neurons (C120) is reasonable given the various manipulations tested, though the exact mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Rhythm generation by the head circuit may require inputs from the VNC. Anterior VNC/DNC cuts disrupt normal head undulation, though very slow head undulation was occasionally observed in animals with cuts slightly more posterior to the head. Input from the posterior motor circuit may be essential for the normal frequency of head undulation, as strong decoupling by muscle ablation resulted in similarly slow head oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 are based on observations in Figures 6A, 6D, 3A, and 3D. While the data show that head undulation is disrupted after VNC/DNC cuts (C98), the interpretation that the head circuit requires VNC inputs (C99) is speculative. The observation of occasional slow head undulation (C100) suggests that the head can generate rhythms independently, but at altered frequencies. The hypothesis that posterior input is essential for normal head frequency (C101) is plausible but not definitively proven, as alternative explanations (e.g., damage to parallel tracts) are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The results reveal a picture of forward locomotor control in C. elegans similar to that found in the lamprey and leech. Rhythmogenic capability is distributed along the VNC motor circuit, and is only detectable when coupling is disrupted. During locomotion, multiple rhythm generating units with different rhythmic properties are combined by strong inter-unit coupling to form one functional unit. The normal locomotory frequency is generally intermediate between the head and tail frequencies exhibited during 2FU. The C. elegans motor circuit is coupled by posteriorward proprioception and additional anteriorward and posteriorward coupling mechanisms, allowing the entire circuit to operate as one unit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C142 synthesize the major findings and compare them to other organisms. The comparison to lamprey and leech (C129, C142) is supported by the cited literature (C121-C128) and the experimental results. The conclusions about distributed rhythmogenesis (C130-C131), multi-oscillator coupling (C135-C136), and bidirectional coupling (C140-C141) are well-supported by the data presented in the manuscript. These are integrative conclusions that tie together the various experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The cholinergic B and AS motor neurons are a likely source of posterior rhythmogenesis during C. elegans forward locomotion. Disruption or removal of most or all B motor neurons virtually abolished independent tail undulations, while elimination of other motor neurons and premotor interneurons did not. Stimulation of select B and AS neurons led to local, high-frequency oscillations. Imposing a rhythmic signal on mid-body B motor neurons entrained whole-body locomotor frequency, and the swimming phase was reset almost immediately after the first inhibitory stimulus. The B motor neurons are rhythmically active in phase with locomotion, satisfying key criteria for candidate oscillator neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C154 synthesize multiple lines of evidence implicating B and AS motor neurons in rhythm generation. The ablation studies (C148), stimulation experiments (C149), entrainment experiments (C150), and phase resetting observations (C152) provide converging support. The comparison to criteria used in leech studies (C153-C154) strengthens the argument. While the exact mechanism of rhythm generation remains unclear, the evidence strongly implicates B motor neurons as key components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "A new working model of C. elegans forward locomotion is proposed with three oscillator units: an unknown head CPG, the VNC motor neurons between VB3 and AS7, and the VNC motor neurons between VB9 and AS11. The two VNC units are justified by data from worms with multiple VNC/DNC cuts. AS is included because it has not been directly investigated and could be important for tail rhythm generation. The premotor interneurons, especially AVB, are important for activating the oscillatory circuit and may have additional roles. When the VNC and DNC were severed at arbitrary locations, oscillations resumed posterior to each cut over a wide range of circuit sizes, and even smaller circuit units, perhaps individual motor neurons, may be capable of generating rhythmic outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C178 present a working model based on the experimental results. The model is supported by data from Figures 6C, 7, and other experiments. The inclusion of three oscillator units (C173-C174) is justified by the double-cut experiments. The inclusion of AS (C175) is speculative but reasonable given the lack of investigation. The role of premotor interneurons (C176) is supported by the ablation studies. The observation that oscillations can arise from various VNC segments (C177) is well-documented. The speculation about even smaller units (C178) is appropriately cautious. Overall, the model is a reasonable synthesis of the data, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "C. elegans is a tractable model organism for studying locomotion. It has a compact nervous system with a few hundred neurons and a nearly complete wiring diagram. Its optical transparency allows monitoring of neural activity and optogenetic manipulation. It is amenable to genetic manipulations and shares genetic homology with humans. The locomotor circuit consists of interneurons, excitatory and inhibitory motor neurons (A, B, VC, D, AS types), and body wall muscles, with most motor neuron cell bodies located in the VNC. A-type neurons are essential for reverse locomotion, B-type for forward locomotion, and D-type for normal bending amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background information about C. elegans as a model organism and the basic architecture of its locomotor circuit. These claims are well-established in the field and are supported by the cited references (White et al., 1986; Chalfie et al., 1985; McIntire et al., 1993b; etc.). This is foundational knowledge that sets the stage for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior work has established that the identity of the rhythmic generator(s) for C. elegans forward locomotion is unknown, and it is unclear how many such generators exist. Worms are capable of limited movement despite ablation of most premotor interneurons, and forward locomotion was observed after ablation of all premotor interneurons and A motor neurons. Sensory feedback plays an important role in coordinating motor behavior, and computational models based on proprioceptive feedback have recapitulated key aspects of locomotion. A single-oscillator model with proprioceptive coupling has been proposed, but alternative multi-oscillator models are also possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C35 summarize prior work and the motivation for the current study. These claims are supported by the cited references (Chalfie et al., 1985; Kawano et al., 2011; Gao et al., 2017; Wen et al., 2012; etc.). The description of the single-oscillator model (C29-C32) and the alternative multi-oscillator model (C34-C35) accurately represents the state of the field and sets up the key question addressed by the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Illuminating body coordinates 50\u201365 in Pmyo-3::NpHR worms caused substantial paralysis in the tail, consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is a control experiment confirming that the optogenetic system works as expected in the posterior, consistent with prior studies (Leifer et al., 2011; Wen et al., 2012). This validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Region-targeted illumination at 470 nm of Pmyo-3::PH::miniSOG worms selectively lesioned muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 describes the miniSOG method for selective muscle lesioning, supported by citation to Xu and Chisholm, 2016. This is a methodological detail that enables the experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The opposite trends of amplitude and frequency may reflect a constraint to the maximum absolute rate of change of curvature, which is proportional to the product of amplitude and frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is a speculative interpretation of the observed inverse relationship between amplitude and frequency. While the observation is supported by data (C51), the proposed explanation is not directly tested and remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Almost all synaptic connections to the VNC motor neurons are made by the premotor interneuron classes AVB, PVC, AVA, AVD, and AVE. Laser ablation studies have indicated that AVB, and to a lesser degree PVC, are essential for normal forward locomotion, although rudimentary forward crawling is possible in their absence if the A motor neurons are also removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 summarize prior work on premotor interneurons, supported by citations to White et al., 1986; Chalfie et al., 1985; and Gao et al., 2017. This provides context for the genetic ablation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "In zebrafish, lampreys, and leeches, rhythmogenic capability for swimming undulations is distributed along the spinal cord or VNC. Isolated segments can generate oscillations, but in the intact animal, intersegmental coupling drives the system to adopt a single locomotor frequency. In the leech, the most robustly oscillating ganglia are in the middle of the body, and isolated midbody ganglia have higher frequency than those near the head or tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 summarize prior work on other organisms, supported by citations to Kiehn, 2006; Mullins et al., 2011; Cohen, 1987; Pearce and Friesen, 1985; Kristan et al., 2005. This provides comparative context for interpreting the C. elegans results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "In the leech, oscillatory interneurons mediate bidirectional coupling between midbody ganglia, and coupling results from a mixture of proprioceptive feedback and central control. Injection of sinusoidally varying current into leech stretch receptor cells was sufficient to entrain swimming activity. Imposed rhythmic movements are also capable of entraining fictive swimming in isolated preparations of the lamprey spinal cord and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 summarize prior work on coupling mechanisms in other organisms, supported by citations to Friesen and Hocker, 2001; Kristan et al., 2005; Yu et al., 1999; Yu and Friesen, 2004; Grillner et al., 1981; McClellan and Sigvardt, 1988; and others. This provides context for the entrainment experiments in C. elegans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Descriptions of swimming CPGs in vertebrates have tended to exclude motor neurons as members of the CPG, with most oscillatory function attributed to interneurons. However, leech inhibitory motor neurons are ascribed a role in swimming rhythm generation, motor neurons comprise the crab stomatogastric CPG, and recent work has shown that motor neurons are key components of several locomotory pattern generators. In zebrafish, motor neurons for swimming are bidirectionally coupled to locomotion-driving interneurons and influence their activity. There is a growing recognition that motor neurons may themselves participate in rhythm generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C163 summarize the evolving understanding of motor neuron roles in rhythm generation across various organisms, supported by citations to Kiehn, 2016; Kristan et al., 2005; Mullins et al., 2011; Marder and Bucher, 2007; Rotstein et al., 2017; Song et al., 2016. This provides context for the finding that B motor neurons may be rhythm generators in C. elegans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "When the VNC and DNC of C. elegans were severed, independent, higher frequency undulations occurred posterior to the severed region, unlike in leeches where VNC disruption did not prevent wave propagation. However, severing VNC intersegmental coordinating neurons in in vitro leech preparations induced uncoordinated oscillations. The laser lesioning of the VNC likely did not remove severed processes of premotor interneurons or prevent nonsynaptic neurotransmission. When the VNC was isolated from the head ganglia, rhythmic tail undulation was reliably evoked by mechanical stimulus, but independent tail undulations were rare after ablating AVB. The AVB processes that remain in severed VNC segments may continue to provide excitation to B motor neurons. The observation that tail undulation was reliably evoked after eliminating all synaptic inputs from the head is inconsistent with the notion that independent oscillations require synaptic input from head circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C172 discuss differences between C. elegans and leech VNC severing results, and address the apparent discrepancy between VNC severing and AVB ablation experiments. The observations are supported by data in Figures 6 and 7, and the discussion acknowledges limitations of the methods (C167-C168). The proposed explanation involving remaining AVB processes (C171) is speculative but reasonable. The conclusion that synaptic inputs from the head are not required (C172) is supported by the VNC severing data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C179"
+    ],
+    "result": "The finding that the architecture for rhythm generation in C. elegans locomotion shares key properties with other vertebrate and invertebrate models sets the stage for molecular, cellular, and network-level investigations of motor coordination in a uniquely tractable model organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C179 is a concluding statement about the significance of the findings. It is supported by the overall results of the study, which demonstrate that C. elegans has a distributed rhythm-generating architecture similar to other organisms, combined with the well-established advantages of C. elegans as a model system.",
+    "result_type": "MINOR"
+  }
+]

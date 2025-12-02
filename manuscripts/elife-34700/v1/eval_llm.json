@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C79"
+    ],
+    "result": "The authors developed chronic 2P-STED microscopy in mouse hippocampus using a hippocampal window and long working distance objective, achieving a six-fold improvement in lateral spatial resolution (54 \u00b1 2 nm vs 325 \u00b1 5 nm FWHM) compared to conventional 2P microscopy, with substantially improved image quality and spine neck visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30-C33, C41-C47, and C79 collectively demonstrate successful development of the method with quantitative PSF measurements (C41-C43), statistical validation (C47: p<0.0001, n=35 spine necks), and visual evidence from figures. The technical specifications are well-documented and the resolution improvement is rigorously characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "2P-STED microscopy detected approximately two-fold higher spine density (2.13 \u00b1 0.10 \u00b5m\u207b\u00b9) compared to conventional 2P microscopy (1.61 \u00b1 0.07 \u00b5m\u207b\u00b9) in vivo, representing 32% more spines detected and approaching EM-reported values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38, C51-C57, and C86 provide converging quantitative evidence with appropriate statistical testing (p<0.0001, paired t-test, n=82 dendrites, 6 mice). The comparison across imaging modalities (2P, 2P-STED in vivo, STED in fixed tissue) and to literature EM values provides strong validation. The mechanistic explanation for increased detection (C53) is supported by visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C88",
+      "C89"
+    ],
+    "result": "A geometric model accounting for limited axial resolution predicted that approximately 25% of spines could not be detected in vivo. Correcting for this yielded spine density estimates of 2.91 \u00b1 0.14 \u00b5m\u207b\u00b9 (in vivo) and 3.15 \u00b1 0.09 \u00b5m\u207b\u00b9 (fixed tissue), effectively matching EM ground truth values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60, C88-C89 present a theoretical correction model, but the model itself is described as 'simple' and 'geometric' without detailed validation. While the corrected values align with EM data, the model assumptions (actual dendritic dimensions, PSF characteristics) are not fully specified or independently validated. The correction is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C39",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C108"
+    ],
+    "result": "Longitudinal 2P-STED imaging over 4 days revealed approximately 40% spine turnover, with a survival fraction of 60.8 \u00b1 3.4% at day 4, while spine density remained stable (day 0: 2.31 \u00b1 0.10 \u00b5m\u207b\u00b9; day 4: 2.30 \u00b1 0.10 \u00b5m\u207b\u00b9), indicating balanced rates of spine loss (~21-25%) and gain (~20-22%) between imaging sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37, C39, C61, C64-C68, and C108 provide comprehensive quantitative data from longitudinal imaging (n=14 dendrites, 3 mice) with consistent measurements across time points. The balanced turnover rates (C68) are logically consistent with stable density (C64). The methodology for tracking individual dendrites is described (C63), and the absence of phototoxicity (C113-C114) validates that observed dynamics are biological rather than artifactual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C40",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C111"
+    ],
+    "result": "Spine turnover depends on spine size, with small spines being more short-lived than large ones. Cluster analysis revealed three distinct spine populations resembling 'small', 'thin', and 'mushroom-like' categories, with persistent spines (>2 days) having larger heads and 50% exhibiting mushroom-like morphology, while less persistent spines rarely (7%) belonged to this category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C40, C72-C78, and C111 present a comprehensive morphological analysis with statistical validation (C72: p<0.0001) and appropriate clustering methodology (Agglomerative Hierarchical Clustering). The relationship between spine size/morphology and persistence is demonstrated quantitatively with 3D reconstructions and multiple morphological parameters. The finding of multiple kinetically distinct populations (C111) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C91",
+      "C92",
+      "C95",
+      "C113",
+      "C114"
+    ],
+    "result": "The imaging approach exhibited minimal motion artifacts and no overt phototoxicity, with imaging limited to within 20 \u00b5m from the coverslip due to optical aberrations from refractive index mismatches. The metal tube implant likely provided mechanical stabilization and hippocampal vasculature characteristics reduced motion artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C91-C92, C95, C113-C114 describe technical observations and limitations with supporting evidence (video data for C50, stable spine density for C114). The depth limitation (C91) is clearly documented, and the explanations for reduced motion artifacts (C95) and depth limitations (C92) are reasonable inferences supported by citations. The absence of phototoxicity is evidenced by lack of blebbing and stable spine density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "The super-resolution approach resolved discrepancies in the literature regarding hippocampal spine turnover, providing direct evidence supporting the modeling-based conclusions of Attardo et al. that spines turn over rapidly in CA1 stratum oriens, while demonstrating that direct 2P analysis underestimates turnover (74.9% vs 60.8% survival at 4 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C97, C99-C107, and C109 contextualize the findings within existing literature and demonstrate how improved resolution addresses methodological limitations. The comparison between 2P and 2P-STED turnover measurements (C69) directly validates the resolution-dependent detection problem. The citations to conflicting prior studies (C100-C102) and analysis of their methodological differences (C104-C107) provide strong support for the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "The study acknowledges several limitations: only three time points over 4 days were imaged, limiting extrapolation of kinetics; ketamine anesthesia was used but unlikely to compromise results given short exposure; stratum radiatum was not imaged, preventing assessment of regional differences; and potential intrinsic differences in postsynaptic neurons may account for dendrite-specific turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C115-C118, and C121 represent appropriate acknowledgment of experimental limitations and alternative interpretations. These are honest assessments of what the data can and cannot support, with reasonable inferences about potential confounds (C116) and suggestions for future improvements (C117). The limitations do not invalidate the main findings but appropriately constrain their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C117",
+      "C127"
+    ],
+    "result": "Future technical improvements including 3D beam shaping for improved axial resolution, adaptive optics for deeper imaging, correction collars to reduce spherical aberrations, and use of non-anesthetized head-fixed animals could further enhance the method and enable broader applications for studying spine plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C93-C94, C117, and C127 are speculative statements about future work and potential applications. While the suggestions are reasonable and supported by citations to relevant technical advances (C90, C94), they represent possibilities rather than demonstrated results. These forward-looking statements are appropriate for a Discussion section but cannot be evaluated as supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The finding of high hippocampal spine turnover supports the view of the hippocampus as a dynamic structure for encoding and processing new memories rather than long-term storage, contrasting with cortical areas where spines are typically stable unless subjected to behavioral training or sensory manipulations, though the functional significance of spine turnover for memory remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 provide appropriate interpretation of the findings in the context of hippocampal function, supported by citations to relevant literature (C122-C124). The comparison to cortical spine stability (C123-C124) is well-documented in cited studies. The acknowledgment that functional significance remains uncertain (C125) is an honest assessment of current knowledge limitations. The interpretation is reasonable given the data but appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C70",
+      "C71",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C96",
+      "C119",
+      "C120"
+    ],
+    "result": "The manuscript establishes the biological and technical context for the study, documenting that dendritic spines are postsynaptic components of excitatory synapses with established roles in brain function and disease, that spine plasticity has been extensively studied in cortex but not hippocampus due to technical limitations, and that previous 2P microscopy approaches detected only ~1 spine/\u00b5m compared to ~3 spines/\u00b5m reported by EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C10-C29, C70-C71, C80-C87, C96, C119-C120 represent background knowledge and literature review that appropriately contextualizes the study. These claims are well-supported by citations to established literature and accurately represent the state of the field. They establish the knowledge gap (C3, C71) and technical challenges (C5, C21, C24-C25) that motivate the study, as well as the discrepancy between light microscopy and EM measurements (C26-C28, C87) that the new method addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The work represents a substantial advance for studying hippocampal synapses in living mice, extending super-resolution microscopy to a deeply embedded brain structure critical for memory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is a summary statement that is well-supported by the collective evidence from the methodological development (C6, C30-C33, C79), improved spine detection (C7, C51-C52), and successful longitudinal imaging (C8, C61, C64-C68). The achievement of chronic super-resolution imaging in hippocampus represents a genuine technical advance that was not previously possible, as documented by the literature review (C22-C23, C80).",
+    "result_type": "MAJOR"
+  }
+]

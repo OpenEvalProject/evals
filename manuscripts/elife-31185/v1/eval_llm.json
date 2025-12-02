@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The study recruited 55 participants for the altruism task, with a subset of 37 also completing the food task, separated by an average of 16 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide clear demographic information about the sample. The sample sizes are explicitly stated with appropriate descriptive statistics (age, gender distribution). This is straightforward methodological reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Regulatory instructions successfully altered choice behavior: subjects made more healthy choices when focusing on health (HC) versus natural choice (NC) or taste (TC), and more altruistic choices when focusing on partner feelings (PC) or ethics (EC) versus NC, with PC producing more altruism than EC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 report behavioral effects with appropriate statistical tests (paired t-tests, ANOVAs) and corrections. The pattern shows regulatory instructions changed behavior as intended. However, C4 reports an uncorrected marginal effect (p=0.043) which weakens confidence in the TC vs NC difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Regulatory success generalized across choice domains: individuals who successfully regulated food choices also showed better regulation of altruistic choices, driven by correlations during regulation conditions rather than baseline choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 demonstrate cross-domain generalization with correlation analyses (Table 1). The finding that baseline choices don't correlate (C10) but regulated choices do (C11) strengthens the interpretation. The 16-month delay between tasks makes this particularly compelling, though it also raises questions about what other factors might have changed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Self-reported motivation to comply with instructions did not correlate with regulatory success in either task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 reports null results for correlations between self-reported motivation and regulatory success. This addresses potential confounds related to demand characteristics, though the lack of correction for multiple comparisons is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Drift diffusion modeling revealed that regulatory goals in the food task altered attribute weights: healthiness weights increased in HC and decreased in TC versus NC, while tastiness weights decreased in HC versus both NC and TC, with no difference between NC and TC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 report DDM parameter estimates with appropriate statistical tests. The pattern is internally consistent and matches behavioral predictions. However, C18's inference that TC resembles natural choice is based on a null result (p=0.47), which is a weak basis for positive claims about similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Drift diffusion modeling of the altruism task showed regulatory goals altered attribute weights: $Self weights decreased in PC and marginally in EC versus NC, $Other weights increased in both PC and EC versus NC (higher in PC), and fairness weights increased in EC and PC versus NC (higher in EC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 report DDM results for the altruism task with statistical support. The pattern shows both increases in goal-consistent attributes and decreases in goal-inconsistent attributes. Some effects are marginal with uncorrected p-values (C20: p=0.059, C22: p=0.013, C23: p=0.021), which weakens confidence in specific comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Multivariate pattern analysis revealed that attribute values and decision values could be decoded from multiple brain regions including VMPFC and DLPFC, with VMPFC identified via conjunction analysis as encoding all choice-relevant attributes across both tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 report MVPA decoding results with appropriate statistical thresholds (FWE correction). The conjunction analysis identifying VMPFC as encoding all attributes is methodologically sound. However, the interpretation in C29 about VMPFC's 'hypothesized importance' relies on prior knowledge rather than the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Neural decoding of healthiness and tastiness showed goal-dependent changes: healthiness decoding in right LPFC was higher in HC versus NC and TC, while tastiness decoding in right SFG/MFG was higher in NC and TC versus HC, with no difference between NC and TC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 report condition-dependent neural decoding that matches behavioral model predictions. The statistical thresholds are appropriate (FWE cluster-corrected). The correspondence between behavioral and neural patterns strengthens both sets of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Neural decoding of $Self showed increased representation in NC versus PC and EC in DMPFC and MFG, while $Other showed increased representation in PC versus EC in precuneus and TPJ, with PC also higher than NC in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C36 report mixed results: $Self shows expected patterns (C33), but $Other fails to show predicted patterns at corrected thresholds (C34), only emerging in PC vs EC comparison (C35). The ROI analysis (C36) 'partially confirms' predictions, suggesting the whole-brain analysis may have been underpowered for this attribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neural decoding of fairness in left SFS was higher in both regulatory conditions versus NC, with no difference between EC and PC, suggesting comparable increases in fairness representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 report fairness encoding results. The inference in C39 about 'comparable level' is based on a null result (C38), which is a limitation. The pattern partially matches behavioral predictions but the lack of EC>PC difference contradicts the behavioral model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A region in DLPFC emerged from conjunction analysis as flexibly encoding healthiness, tastiness, and $Self in a goal-dependent manner using attribute-specific neural codes that generalized across conditions but not across attributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 identify DLPFC as a domain-general hub using conjunction analysis and cross-decoding. The finding that codes generalize within but not across attributes (C42-C43) supports attribute-level rather than integration-level regulation. The cross-validation approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "VMPFC showed no goal-dependent modulation of attribute or decision value encoding and did not predict individual differences in regulatory success, despite reliably encoding decision values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 report null results for VMPFC modulation by regulatory goals. These are important negative findings given prior hypotheses about VMPFC's role. The claims are based on both whole-brain and ROI analyses, strengthening confidence in the null results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Behavioral correlations showed that successful reduction of $Self weights in altruistic choices correlated with successful amplification of healthiness weights and suppression of tastiness weights in food choices, but enhancement of $Other weights did not correlate with other attribute changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 report selective correlations in regulatory success across attributes. The pattern matches the neural findings about DLPFC convergence for some but not all attributes. Statistical corrections are noted. The specificity of correlations argues against general motivation or compliance effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DLPFC neural patterns during food choices predicted individual differences in regulatory success for both attribute weight changes and actual choice behavior in the food task, with predictions improving for specific condition comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 report cross-subject decoding with permutation testing. The correlations are moderate to strong (r=0.42-0.68) and statistically significant. The progression from attribute weights to actual choices (C54-C55) demonstrates behavioral relevance, though C55's interpretation about 'real consequences' is somewhat overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DLPFC neural patterns during food choices predicted regulatory success in the altruism task performed 16 months later, specifically for $Self weight changes and generous behavior, with predictions driven by $Self rather than other social attributes and unrelated to task delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 demonstrate remarkable cross-task, cross-time prediction (r=0.44-0.63). The 16-month delay makes this particularly compelling. Supplemental analyses (C58) show specificity to $Self, and C59-C60 rule out delay as a confound. This is strong evidence for domain-general mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Precuneus neural patterns predicted individual differences in altered generosity in the altruism task, suggesting domain-specific attribute coding contributes to regulatory control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 show precuneus predicts generosity changes (r=0.57-0.61) with permutation testing. This complements the DLPFC findings by showing domain-specific mechanisms for social attributes. The interpretation in C62 is reasonable given the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "VMPFC activation patterns did not predict regulatory success for any attribute, suggesting it was not the locus for changes in value representation despite encoding all attributes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 report null results for VMPFC prediction of regulatory success. This is an important negative finding that challenges integration-level hypotheses. The interpretation in C64 is cautious and appropriate given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cognitive regulation did not modulate VMPFC value signals but instead altered attribute representations in DLPFC (for tastiness, healthiness, $Self) and in domain-specific regions like TPJ and precuneus (for social attributes), with neural patterns mirroring behavioral covariation across tasks separated by up to 24 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 synthesize the main findings. The pattern of convergence in DLPFC and divergence in domain-specific regions is well-supported by the data. The correspondence between neural and behavioral patterns across time (C68) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study provides evidence for attribute-level rather than integration-level regulation: VMPFC encoded all attributes but showed no regulatory modulation, no single region showed complete correspondence between behavioral and neural effects, some attributes showed domain-specific encoding (TPJ/precuneus), and DLPFC used distinct codes for different attributes despite convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present the key theoretical conclusion. The evidence supports attribute-level over integration-level regulation through multiple converging lines: VMPFC null results (C69), lack of single locus (C70), domain-specific effects (C71), attribute-specific codes (C72). The conclusion in C73 is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Behavioral covariation in regulatory success across domains was driven by correlated changes in attributes represented in DLPFC (tastiness, healthiness, $Self) but not attributes encoded elsewhere ($Other, fairness), suggesting DLPFC represents a stable individual resource for flexible attribute representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 link behavioral and neural findings. The selective pattern of correlations (C75) matching neural convergence is compelling. The interpretation of DLPFC as a 'stable resource' (C76) is supported by the cross-time predictions but is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Goal-dependent changes in prosocial attributes appeared in TPJ and precuneus, especially for partner focus, consistent with these regions' role in Theory of Mind. These regions showed specificity to $Other (not fairness) and decreased representation during ethics focus despite increased altruistic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 characterize domain-specific social processing. The link to ToM literature (C78-C79) provides theoretical context. The dissociation in C81 (increased behavior but decreased neural representation for ethics) is intriguing but complicates interpretation. The specificity (C80) supports specialized function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The findings add to evidence that regulation can occur without VMPFC changes and suggest DLPFC flexibility may compensate when VMPFC regulation fails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 appropriately places findings in literature context. However, C84's speculation about DLPFC 'compensating' for VMPFC failure is not directly tested and represents post-hoc interpretation. The cited study (Hutcherson et al., 2012) provides some support but this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Exploratory connectivity analyses suggested DLPFC's capacity to represent attributes may derive from interactions with VMPFC, with connectivity strength correlating with regulatory success, possibly reflecting VMPFC as an earlier processing stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 report exploratory connectivity results. These are explicitly labeled as exploratory and speculative. The connectivity-behavior correlation (C86) is interesting but requires replication. The temporal interpretation in C87 is purely speculative without temporal resolution data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study is the first to comprehensively document goal-consistent changes for all choice-relevant attributes across domains and individuals, revealing important divisions in regulatory success by attribute and domain with implications for therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88's novelty claim cannot be fully evaluated without comprehensive literature review. Claims C89-C90 about therapeutic implications are speculative extrapolations from the findings. While the pattern of results supports domain-specific divisions, clinical applications require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Goal-consistent changes in attribute representations were exceptions rather than the rule, with most regions showing no goal-dependent changes, potentially explaining why regulatory success is difficult due to unregulated representations continuing to influence choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 accurately characterize the pattern of results: most regions encoding attributes didn't show regulatory modulation. The speculation in C93 about 'leakage' from unregulated representations is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The specificity and localization of regulatory effects to DLPFC, TPJ, and precuneus argues against trivial behavioral reflection and demand characteristics, suggesting these regions perform special roles in mediating regulatory goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 address alternative interpretations. The specificity argument (C94) is valid: if results simply reflected behavior, all regions should show effects. The demand characteristics argument (C96) is supported by the specific pattern of correlations. The conclusion about 'special roles' (C95) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study builds on established frameworks: weighted additive utility models successfully capture choice behavior, neuroscience evidence supports attribute-specific encoding in distinct regions and integrated value signals in VMPFC/striatum, and cognitive regulation is important for goal-directed behavior and therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide literature context through citations. These are background claims establishing the theoretical framework. The citations appear appropriate for establishing prior knowledge about utility models, neural value encoding, and clinical applications of cognitive regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Methodological details: subjects received $20/hour plus task earnings, consumed selected food items, data from 5-6 subjects were excluded for movement or invariant behavior, and tasks were separated by 16 months on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 report methodological details. These are straightforward descriptive claims about procedures, compensation, exclusions, and timing. The information is clearly stated and appropriate for methods reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The tasks were modified versions of established paradigms (Hare et al., 2011a for food; Hutcherson et al., 2015b for altruism), and the drift diffusion model captured both choices and reaction times with high accuracy across all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 cite task sources appropriately. Claims C110-C111 report model validation with reference to supplementary figures and analyses. The model fit quality is important for validating the DDM parameter estimates used throughout.",
+    "result_type": "MINOR"
+  }
+]

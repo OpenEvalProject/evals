@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C23",
+      "C25",
+      "C26",
+      "C33",
+      "C38"
+    ],
+    "result": "Prior MD simulations of hemoglobin T0 state show disagreement with experiment: while T0 and R4 are experimentally stable in solution, published simulations show T0 rapidly transitioning to an R-like structure within hundreds of nanoseconds, contradicting the expected stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C23, C25-C26, C33, and C38 collectively establish the discrepancy between published MD simulations and experimental observations. The claims cite specific literature (Hub et al., 2010; Yusuff et al., 2012) and provide experimental context (C2, C30) showing T0 should be stable. The disagreement is explicitly stated (C33) and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "T0 hemoglobin is stable in MD simulations only when using a 150 \u00c5 periodic box containing ~105,000 water molecules (10x standard size), while smaller boxes (75, 90, 120 \u00c5) show transitions to R-like structures. With His146 protonated, the 150 \u00c5 box maintains T0 stability for the entire 1 \u03bcs simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, C45-C49 provide the core experimental finding with specific structural data (RMSD values in Table 1 and Figure 2). The simulation setup is well-documented (C39-C43), methodology is described (C41), and results show clear box-size dependence. The 150 \u00c5 box result (C45, C49) contrasts with smaller boxes (C46-C48), providing strong evidence for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "His146 protonation is essential for T0 stability: even in the 150 \u00c5 box, T0 is unstable when His146 is deprotonated, transitioning to R-like state in <100 ns. This provides atomistic validation of the Perutz model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C70-C73 demonstrate the critical role of His146 protonation through direct computational experiments. The deprotonated simulations (C70-C71) show rapid transitions even in large boxes, contrasting with stable protonated simulations (C6). The connection to the Perutz model (C7, C44, C73) is explicitly stated and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The large box requirement is attributed to the hydrophobic effect: proper manifestation of water structuring and dewetting around the hemoglobin tetramer requires sufficient bulk water. The 150 \u00c5 box shows expected water structuring behavior (g(r) analysis) while smaller boxes do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C37, C74-C78 provide the mechanistic interpretation linking box size to hydrophobic effects. The theoretical framework from Chandler (C35, C74) is appropriately cited, and the g(r) analysis (C76-C77) provides quantitative support. The dewetting observation (C78) and connection to buried surface area (C36-C37) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Water hydrogen bonding network analysis shows that T0 stability requires: (i) sufficient hydrogen bonds per water molecule with small fluctuations, and (ii) proper bulk-like water behavior. The average number of H-bonds per water decreases in smaller boxes, consistent with estimated energy differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C79-C81 describe the water H-bond analysis with reference to Figure 3. The statistical mechanics interpretation (C56) is appropriate, and the connection to T0 stability (C79-C80) is clearly stated. The mechanistic explanation (C81) linking H-bond deficiency to salt bridge destabilization is reasonable. The limitation regarding energy calculation (C52) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Water self-diffusion coefficient analysis reveals that only the 150 \u00c5 box produces bulk-like water dynamics. A linear relationship exists between D-value and T0 transition time, with extrapolation predicting 700 ns transition time for the 150 \u00c5 box, but T0 remains stable at 1.4 \u03bcs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present the diffusion coefficient analysis with clear data (Figure 4). The linear relationship (C64) is demonstrated, and the extrapolation (C65) is explicitly stated. The fact that T0 persists beyond the predicted transition time (C66-C67) strengthens the stability conclusion. The acknowledgment that the linear relationship was unexpected (C68) and requires further explanation (C69) is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Local structural analysis around His146 shows that g(r) remains stable in the 150 \u00c5 box but varies significantly in smaller boxes during transitions. Salt bridge parameters fluctuate around T0 equilibrium values in large boxes but show abrupt changes correlated with global transitions in smaller boxes. Transitions occur over ~10 ns with near-zero apparent activation energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide detailed local structural analysis with reference to supplementary figures. The g(r) stability difference (C82-C85) supports the water structuring hypothesis. The salt bridge analysis (C86-C87) connects local and global structural changes. The transition timescale (C88) and activation energy estimate (C89) are appropriately qualified as apparent values from the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Reversibility test: solvating an R-like structure from the 120 \u00c5 box in the 150 \u00c5 box leads to partial movement toward T-state (RMSD to T0 decreases from 2.73 to 1.97 \u00c5) but does not complete the transition within 1 \u03bcs, consistent with the experimental R0\u2192T0 transition time of ~20 \u03bcs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe a critical control experiment testing reversibility. The RMSD data (C91-C92) show partial structural recovery toward T-state, and the comparison to experimental timescales (C93) appropriately contextualizes why full transition is not observed. This strengthens the overall conclusion by demonstrating the 150 \u00c5 box captures proper thermodynamic behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The finding that extra large simulation boxes are required for proper hydrophobic effect manifestation has broad implications for MD simulations of proteins and other systems, particularly for crowded cellular environments, protein folding, and polymeric materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C94-C99 discuss broader implications but are largely speculative (C8, C95-C99 are marked as SPECULATION). While the implications are reasonable given the hemoglobin results, no additional data is provided to support these generalizations. The authors appropriately note that box size requirements will need to be investigated case-by-case (C97), but the claims remain uncertain without further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Methodological details: simulations used CHARMM36 force field with TIP3P water, GROMACS 5.1.4, starting from 2DN2 crystal structure with His146 doubly protonated based on Zheng et al. 2013. Systems were equilibrated and run for \u22651 \u03bcs in NPT ensemble at 300K with appropriate protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C117 provide comprehensive methodological documentation with appropriate citations. Force field (C101), starting structure (C102), protonation states (C103), simulation protocols (C108-C113), and analysis methods (C115-C117) are clearly described. Temperature control validation (C114) and diffusion coefficient calculation details support reproducibility. The methodology appears sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on hemoglobin structure and cooperativity: hemoglobin is a paradigmatic cooperative system composed of \u03b1 and \u03b2 chains forming dimers with distinct T0 and R4 quaternary structures. The Perutz stereochemical mechanism and MWC model explain cooperativity through salt bridges linking tertiary and quaternary structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22, C24, C29-C30 provide established background knowledge with appropriate citations (Perutz, Monod et al., Baldwin and Chothia, etc.). These are well-accepted facts in the hemoglobin literature and provide necessary context for the study. The claims accurately represent prior work and are properly attributed.",
+    "result_type": "MINOR"
+  }
+]

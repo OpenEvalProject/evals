@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors collected a large-scale EM dataset of the anterior Drosophila brain comprising 1917 thin sections at 4\u00d74 nm\u00b2/pixel resolution, totaling 4 million images and 50 TB of data, covering both left and right antennal lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide consistent technical specifications for the EM dataset. The imaging parameters, data volume, and spatial coverage are clearly stated and represent standard methodology for serial section EM reconstruction studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The DM6 glomerulus is innervated by 53 ORNs (27 left, 26 right), with two ORNs projecting only ipsilaterally, resulting in 52 ORNs per glomerulus. Three PNs were found on the left and two on the right.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe the cellular composition of the reconstructed circuit based on direct EM observations. The counts are internally consistent (53 total ORNs minus 2 unilateral = 52 per glomerulus) and represent primary data from the reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PN number varies between left and right DM6 glomeruli with no consistent lateralization bias. This variability represents true biological variation rather than Gal4 expression artifacts, consistent with cell number variation observed in other Drosophila neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C82-C86 are supported by both EM reconstruction data and photoactivation experiments (Figure 1\u2014figure supplement 2). The finding is contextualized with prior literature on optic lobe variability (C83-C84), strengthening the interpretation that cell number variation is a general phenomenon in Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Reconstruction completeness was high, with orphan fragments representing only 6.8\u00b11.5% overall (4.4\u00b10.8% left, 10.4\u00b10.4% right).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide quality metrics for the reconstruction. The low orphan percentage indicates good reconstruction quality, though the left-right asymmetry suggests some regional variation in data quality. These are standard quality control metrics for connectomics studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "ORNs deliver ~33% of output to PNs and most of the remainder to multiglomerular neurons. PNs receive ~75% of input from ORNs and ~20% from multiglomerular neurons, while devoting ~90% of their output to multiglomerular neurons. All PNs connect reciprocally with sister PNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 describe the connectivity patterns observed in the reconstruction (Figure 1E-F). The percentages are directly measured from synapse counts. The reciprocal PN-PN connectivity (C22) is consistent with prior electrophysiology, providing cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Unitary ORN\u2192PN connections contain ~23 synapses on average, producing ~5 mV uEPSPs. PN\u2192PN connections contain ~11 synapses, while ORN\u2192ORN and PN\u2192ORN connections typically have 1-2 synapses. These values agree with prior electrophysiological and optical measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 report synapse counts from EM reconstruction (Figure 1G) and compare them to prior physiological measurements (C24-C25). The agreement between EM counts and functional predictions from quantal analysis validates both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Each ORN T-bar contacts multiple postsynaptic profiles (typically one PN and 1-2 non-PN profiles). T-bar size correlates strongly with the number of postsynaptic profiles and weakly with postsynaptic contact area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe the ultrastructural organization of individual synapses based on detailed measurements (Figure 1\u2014figure supplement 5-6). The correlations are statistically significant and represent standard polyadic synapse architecture in Drosophila.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Right PNs have larger dendrites than left PNs, but total ORN\u2192PN synapses per glomerulus are similar. Individual right PNs receive 53% more ORN synapses, resulting in similar synapse density. Right PNs also receive more multiglomerular neuron input and form more output synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 describe compensatory scaling between cell number, dendrite size, and synapse number (Figure 2). The measurements are internally consistent: fewer PNs on the right correlates with larger dendrites and more synapses per PN, maintaining constant total synapses per glomerulus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Compartmental modeling reveals that despite differences in dendrite size and synapse number, right and left PNs have nearly identical somatic uEPSP amplitudes. This results from compensatory effects: right PNs have smaller mEPSPs (due to lower input resistance and greater dendritic attenuation) but more synapses per connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 present results from compartmental models constrained by EM reconstructions and electrophysiological parameters (Figure 3). The models demonstrate precise compensation between anatomical parameters. The modeling approach is well-established and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "When one PN is missing, remaining PNs grow larger dendrites and receive proportionally more synapses, resulting in equal average responses to ORN spikes. This compensatory mechanism is consistent with homeostatic plasticity observed in other systems and the instructive role of PN dendrites in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 synthesize current observations with prior studies on homeostatic plasticity (C93-C95) and developmental mechanisms (C97-C98). The compensation is demonstrated through both anatomical measurements and modeling (C89, C92). The proposed developmental scenario (C96) is speculative but well-supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PNs receive 35% more synapses from ipsilateral than contralateral ORNs, providing a structural basis for the 30-40% stronger ipsilateral connections observed electrophysiologically. Compartmental models predict 27% stronger ipsilateral uEPSPs, with no systematic differences in synapse placement or ORN axon length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 link behavioral observations (odor lateralization, C43-C44) to prior electrophysiology (C45) to current EM data (C46) and modeling (C47). The quantitative agreement between predicted (27%) and observed (30-40%) ipsi-contra differences validates the structural explanation. The systematic difference in synapse number (C46, Figure 4C) is the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "While the ipsi-contra asymmetry is not perfectly precise at the single connection level, it is sufficiently precise to enable PNs to prefer ipsilateral stimuli when stimuli are sufficiently strong.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 acknowledge variability in the ipsi-contra asymmetry (Figure 1\u2014figure supplement 4) while demonstrating functional sufficiency through modeling. This represents an appropriate assessment of the precision and functional consequences of the observed structural variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C99"
+    ],
+    "result": "The number of synapses per ORN\u2192PN connection varies widely (e.g., 10-36 synapses for different ipsilateral ORNs onto the same PN), with a CV of 0.31. This variation correlates with physical proximity between ORN axons and PN dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C99 quantify connection strength variability (Figure 5B-C). The correlation with proximity (C55, Figure 5\u2014figure supplement 1) suggests a developmental mechanism. The CV value (C56) is consistent with prior optical studies, providing cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite large variation in synapse number, there is little variation in mean mEPSP amplitude or summation efficacy across connections. Dendritic filtering has a uniform effect across connections because each connection samples many dendritic locations. Thus, synapse number is the major source of connection strength variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 and C79-C81 demonstrate through modeling that dendritic filtering effects average out across the multiple synapses comprising each connection (Figure 5D-G). This makes synapse number the dominant variable determining connection strength, a key finding for understanding circuit function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Different ORNs from the same antenna have markedly different effects on PN membrane potential (up to 10-fold range), suggesting PNs do not weight ORNs equally and that PN responses are dominated by a fraction of the ORN population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are logical inferences from the observed variation in synapse number and the modeling results showing large uEPSP amplitude ranges (Figure 5H). The conclusion that PNs do not equally weight ORNs is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Connection strengths are correlated among ipsilateral sister PNs (7 of 8 comparisons significant, r=0.44-0.78) but not between left and right PNs (0 of 12 comparisons significant). Since all PNs experience identical ORN spike trains, this lack of cross-midline correlation indicates that connection strength variation includes 'connection noise' rather than being optimized to ORN spiking properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 present a critical test of whether connection strength variation is adaptive or noisy (Figure 6). The logic is sound: if variation were optimized to ORN properties, it should correlate across all PNs since they receive the same ORN inputs (C65-C66). The absence of cross-midline correlations (C68) despite ipsilateral correlations (C67) supports the connection noise interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C102"
+    ],
+    "result": "Connection noise limits PN ability to accurately estimate ORN spike counts. Simulations show that natural connection variability impairs odor detection and lateralization performance, particularly for weak stimuli near perceptual threshold (12 spontaneous spikes in 200 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C102 use classifier simulations to quantify the functional impact of connection noise (Figure 7). The simulations appropriately model the detection task and demonstrate that equalizing synapse numbers improves performance, confirming that natural variability is functionally limiting. The spontaneous spike rate (C73) is measured from prior electrophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Synapse number per connection strongly correlates with connection strength. Ipsilateral connections contain 35% more synapses than contralateral connections, and there is no sizeable ipsi-contra difference in synaptic conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 synthesize findings on the structural basis of connection strength. C78 is an inference from the observation that synapse number explains the ipsi-contra difference, but this inference is reasonable given the data. The conclusion that conductance differences are not major contributors is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "ORN\u2192PN connections produce simulated uEPSP amplitudes ranging from 1.6 to 10 mV. If all ORNs were functionally identical, this variation would be non-optimal because PN responses would be dominated by a fraction of ORN axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 present modeling results (Figure 5H) and their functional interpretation. The conditional statement in C101 ('if all ORNs were functionally identical') is appropriate, acknowledging that the optimality assessment depends on assumptions about ORN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Synapse number variations are correlated among ipsilateral sister PNs but uncorrelated across the midline. This correlated developmental noise may contribute to the high electrical noise correlations observed among ipsilateral sister PNs, which affects the speed and accuracy of odor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 link structural observations to prior electrophysiological findings and functional consequences. The connection between correlated wiring noise and electrical noise correlations (C105) is speculative but reasonable. The functional relevance (C107) is supported by citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Comparison with larval connectome data reveals that adult ORN\u2192PN connections have fewer synapses (~23 vs ~70) than larval connections, partially compensating for increased ORN number. Adult networks also show more complex control of ORN output, with substantial PN\u2192ORN and ORN\u2192ORN connectivity absent in larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 compare adult and larval circuit organization using published larval connectome data. The comparisons are straightforward and the inferences about compensation (C111) and increased complexity (C114) are reasonable. This provides developmental context for the adult findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Systematic variations in synapse number enable specific computations (odor lateralization, response equalization), representing functional capacity. However, unsystematic 'connection noise' represents residual imprecision that limits neural computation, though some imprecision can be balanced by homeostatic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 synthesize the major findings into a conceptual framework distinguishing systematic ('signal') from unsystematic ('noise') wiring variation. This synthesis is well-supported by the data presented throughout the study and appropriately acknowledges both the capabilities and limitations of developmental precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "In the optic lobe medulla, the CV of synapse number per connection ranges from 0.08 to 0.87 across different connection types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 cites prior EM work on the optic lobe, providing comparative context for the connection variability observed in the antennal lobe (CV=0.31). This is a straightforward citation of published data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Drosophila melanogaster is likely to be the next organism whose brain is fully mapped at the connectomic level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is speculation about future connectomics efforts. While reasonable given ongoing efforts, this is not a scientific result that can be evaluated as supported or unsupported by the current study.",
+    "result_type": "MINOR"
+  }
+]

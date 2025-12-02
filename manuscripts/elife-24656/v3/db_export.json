@@ -1,0 +1,1746 @@
+{
+  "submission": {
+    "id": "aa4f2da7-8afa-4753-b2ac-43c3531002c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:48:51.315261Z",
+    "updated_at": "2025-12-01T22:48:51.315261Z"
+  },
+  "content": [
+    {
+      "id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "submission_id": "aa4f2da7-8afa-4753-b2ac-43c3531002c1",
+      "content_type": "manuscript",
+      "content_text": "# Multi-neuron intracellular recording in vivo via interacting autopatching robots\n\n## Authors\n\n- Suhasa B Kodandaramaiah<sup>1</sup> ([ORCID: 0000-0002-7767-2644](https://orcid.org/0000-0002-7767-2644))\n- Francisco J Flores<sup>5</sup> ([ORCID: 0000-0002-8974-9717](https://orcid.org/0000-0002-8974-9717))\n- Gregory L Holst<sup>4</sup>\n- Annabelle C Singer<sup>1</sup>\n- Xue Han<sup>7</sup> ([ORCID: 0000-0003-3896-4609](https://orcid.org/0000-0003-3896-4609))\n- Emery N Brown<sup>5</sup>\n- Edward S Boyden<sup>1</sup> \u2020\n- Craig R Forest<sup>4</sup> ([ORCID: 0000-0001-5343-1769](https://orcid.org/0000-0001-5343-1769)) \u2020\n\n### Affiliations\n\n1. Media Lab Massachusetts Institute of Technology Cambridge United States\n2. McGovern Institute for Brain Research Massachusetts Institute of Technology Cambridge United States\n3. Department of Biological Engineering Massachusetts Institute of Technology Cambridge United States\n4. G.W. Woodruff School of Mechanical Engineering Georgia Institute of Technology Atlanta United States\n5. Department of Anesthesia, Critical Care and Pain Medicine Massachusetts General Hospital Boston United States\n6. Picower Institute for Memory and Learning Massachusetts Institute of Technology Cambridge United States\n7. Department of Biomedical Engineering Boston University Boston United States\n8. Institute for Medical Engineering and Science Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe activities of groups of neurons in a circuit or brain region are important for neuronal computations that contribute to behaviors and disease states. Traditional extracellular recordings have been powerful and scalable, but much less is known about the intracellular processes that lead to spiking activity. We present a robotic system, the multipatcher, capable of automatically obtaining blind whole-cell patch clamp recordings from multiple neurons simultaneously. The multipatcher significantly extends automated patch clamping, or 'autopatching\u2019, to guide four interacting electrodes in a coordinated fashion, avoiding mechanical coupling in the brain. We demonstrate its performance in the cortex of anesthetized and awake mice. A multipatcher with four electrodes took an average of 10 min to obtain dual or triple recordings in 29% of trials in anesthetized mice, and in 18% of the trials in awake mice, thus illustrating practical yield and throughput to obtain multiple, simultaneous whole-cell recordings in vivo.\n\n## Introduction\n\nMammalian brains consist of neurons organized into densely interconnected circuits. Traditionally circuit-level characterization of neuronal activities has been carried out using extracellular recording probes (Buzs\u00e1ki, 2004) or using genetically encoded calcium indicators (Chen et al., 2013). While these methods reveal supra-threshold spiking activities of individual neurons in a circuit, they cannot examine synaptic and subthreshold events in neurons, important for understanding the processes within and between cells that lead to spiking. While a few studies have performed simultaneous multi-neuron intracellular recordings in vivo (van Welie et al., 2016; Jouhanneau et al., 2015; Poulet and Petersen, 2008), the difficulty of the technique limits its use.\n\nRecently we developed a robot, called the 'autopatcher', that performs fully-automated whole-cell patch clamping of single neurons in the living mouse brain (Kodandaramaiah et al., 2012; Kodandaramaiah et al., 2016). The autopatcher uses pipette impedance measurements to hunt for neurons, followed by gigasealing and break-in using electronically controlled pressure regulators. We explored several straightforward attempts to scale up this approach to achieve multi-neuron recordings, but they exhibited very low yield. From these pilot studies, we hypothesized that robots engaged in stationary activities, such as the delicate task of gigasealing, would be disrupted by robots engaged in motion, such as during the task of neuron hunting. Therefore, an optimal combination of hardware and software should optimize the interaction between stationary and active tasks across pipettes.\n\nWe thus devised interactions between multiple autonomous patch robots, such that when one was attempting a stationary task, the others would wait before moving. Using this approach, we controlled a four electrode multipatcher robot and used it to perform multi-neuron recordings in the somatosensory and visual cortices of anesthetized mice, and the somatosensory cortex of the awake mouse. Under anesthetized conditions, the multipatcher robot obtained dual or triple whole-cell recordings in 29% of trials, and at least one whole-cell recording in 90% of trials. An individual robot had the same whole-cell yield when used in our multipatcher robot as it did when working alone (31%). In awake mice the multipatcher obtained dual or triple whole-cell recordings in 18% of the trials. The robot took 10.5 $\\pm$2.6 min to complete each trial (summary statistics given as mean $\\pm$ S.D. throughout the paper, unless otherwise noted), with recordings lasting 14.0 $\\pm$10.0 min in the awake head-fixed mouse. Thus, the multipatcher is a practical solution for performing intracellular recordings from multiple neurons in the intact brain.\n\n### Multipatcher hardware\n\nThe multipatcher robot was built by extending some of the hardware components of our previously described autopatcher robot (Kodandaramaiah et al., 2012). It consists of an array of four robotic arms for manipulating the patch recording pipettes, patch amplifiers, a signal control box, a computer with an interface board, and a pressure control box (Figure 1, Figure 1\u2014figure supplements 1 and 2, and Supplementary files 1, 2 and 3). The pipette arms' actuators and motors allowed programmatic control of the pipettes' positions during robot operation. The four arms were arranged in a radial array (Figure 2c) to enable tips of patch pipettes to be positioned and manipulated within 50 $\\mu$m of each other inside the brain. The internal pressures of the patch pipettes were independently controlled using the pressure control box (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig1-v3.jpg)\n\n**Figure 1.:** (a) Schematic of multipatching robot used for obtaining whole-cell patch recordings from multiple neurons simultaneously in vivo. The system consists of four robotic arms arranged radially and associated signal and pressure control hardware. The pipette, pipette holder and the amplifier headstage are mounted to the robotic arms (see also Figure 2). Each headstage is connected to a patch amplifier, which routes signals to a computer via two computer interface boards. A computer interface board, located within the main signal control box, also serves to control the pressure regulation device that can apply pressures ranging from \u2212350 to 1000 mBar independently to each patch pipette (see also Figure 1\u2014figure supplements 1 and 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The pressure control box was designed to independently apply four possible pressures to each of the four pipettes. The pressure control box received compressed air at approximately 2.75 bar and vacuum pressure at approximately \u22121.5 bar. It regulated these input pressures to the required pressures using a series of manual and electronically controlled pressure regulators that fed into a pneumatic valve bank. this pneumatic valve bank switched the pipettes between pressure states during the multipatcher operation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Within the signal control box, an interface board was connected to the computer executing the multipatcher algorithm via a Universal Serial Bus (USB) datalink. Analog output channels on the interface board were used to send command voltage signals to the amplifiers. Analog input channels were used to read measurements taken from the patch amplifiers. BNC relays were controlled using digital Transistor-Transistor-Logic (TTL) signals to switch the command signal being sent to the patch amplifier between the analog outputs on the computer interface board and the analog outputs on the digitizer. TTL signals, and one analog voltage signal from the interface board were also sent to the pressure control box.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig2-v3.jpg)\n\n**Figure 2.:** (a) CAD rendering illustrating details of a single robotic arm that allows 3-axis manual motorized and programmatic control of the pipette's axial position. The pipette is mounted on a pipette holder, which is in turn mounted on a bearing driven by a programmable linear motor. (b) Corresponding photograph showing a single robotic arm. Scale bar indicates 50 mm. (c) Top view rendering of the array of robotic arms illustrating relative arrangement. (d) Side view photograph of the array of robotic arms, with inset showing the arrangement of the pipette tips relative to the head plate affixed to the mouse, the head plate fixation base, and animal warming pad used in anesthetized experiments. Scale bars indicate 25 mm.\n\n#### Robotic arms\n\nThe primary components of a robotic arm include the following: patch pipette, pipette holder, pipette holder extension, and amplifier headstage. The headstage is mounted onto on a programmable linear motor using a custom dovetail adapter plate (PT1-Z8 motor with TDC001 controller, Thorlabs) allowing controlled actuation of the pipette during robot operation (Figure 2a and b). This programmable linear motor was mounted at an angle of 60$^{\u2218}$ (relative to the horizontal plane, Figure 2a) using a swivel mount adapter (FG-285210, Sutter Instruments) on a manually controlled three-axis manipulator (MPC285, Sutter Instruments) to position the pipette outside the brain. Four such robotic arms were arranged with rotational symmetry (Figure 2c and d). This arrangement, combined with the ability to precisely open arrays of craniotomies (Pak et al., 2015) allowed the tips of patch pipettes to be positioned and manipulated very close to each other (Figure 2d, inset), as close as 50 $\\mu$m between tips when positioned on the brain\u2019s surface.\n\n#### Signal control box\n\nSignals from the amplifier headstages are sent to two dual-channel patch amplifiers (Multiclamp 700B, Molecular Devices). Amplified signals were digitized in two computer interface boards: a computer interface board present inside the signal control box, and an external computer interface board, or digitizer (Figure 1\u2014figure supplement 1). The computer interface board inside the signal control box (cDAQ-9174 chassis with modules NI 9215 for analog inputs, NI 9264 for analog outputs and NI 9375 for digital outputs, National Instruments) was utilized for multipatcher operation and the digitizer (Digidata 1440B, Molecular Devices) was dedicated to data-acquisition after whole-cell patch clamp recordings were obtained. Command signals to each patch amplifier were sent from analog output channels on either the cDAQ-9174 (during the multipatcher operation) or from the digitizer (during whole-cell recording). BNC signaling relays (CX230, Tohtsu) route the command signals from the computer interface board and digitizer to the patch amplifiers. Amplified signals from each patch amplifier were sent simultaneously to the analog input channels in both the computer interface board and the digitizer. During multipatcher operation, real time pipette resistance was computed by acquiring the signals from the patch amplifier for use in the multipatching algorithm.\n\n#### Pressure control box\n\nThe pressures applied to the pipettes during the multipatcher operation\u2014high positive pressure, low positive pressure, low suction pressure, and high suction pressure\u2014were controlled using the pressure control box schematized in Figure 1\u2014figure supplement 2. The pressurized air and vacuum inputs are down regulated and switched to control the pressure applied to the pipettes. This enables independent control of the pressures on each pipette. The output of these electronic pressure regulators (VSO-EV series pressure regulators and OEM-PS1 series vacuum regulators, Parker) is controlled by 0\u20135 V analog voltage signals using potentiometers on the front panel of the pressure control box. These regulators were used to supply the regulated pressure states to the valve bank. Within the 12-valve bank, a set of 3 three-way solenoid valves (LHDA0533215H-A, Lee Company) were dedicated to each pipette. Each valve was switched using transistor-transistor logic (TTL) signals from the digitizer board, connected to the gates of power MOSFETS. This allows the pressure control box to deliver four pressure states independently to each pipette at various stages (i.e., regional pipette localization, neuron hunting, gigasealing, break-in) of multipatcher operation. In addition to the four pressure states enabled by the pressure control box, one additional state, atmospheric pressure, is controlled by a three-way valve located adjacent to the pipette holder for fast switching. The pressure control is instantiated for each pipette independently.\n\n### Multipatcher algorithm\n\nWe derived the algorithm for multipatching by iteratively modifying our previously described autopatching algorithm (Kodandaramaiah et al., 2012). We iterated through several strategies for hardware and algorithmic control to maximize scaling, yield, and throughput. However, several steps are common to all the strategies (Figure 3a): First, the experimenter installs freshly pulled patch pipettes filled with intracellular pipette solution into all robotic arms, coarsely aligns the pipettes over a single craniotomy, and initiates the computer program used to control the multipatcher robot (time point i, Figure 3a). The multipatcher robot then performs an initial assessment of the pipettes' resistances to ensure their resistances are in the acceptable range (3\u20139 M$\u03a9$) (Kodandaramaiah et al., 2016). For pipettes that are found to be satisfactory, their positions above the brain surface are noted and all further positions during robot operation are referenced from these initial starting points. The pipettes are then lowered to the desired depths at a speed of $\u223c$200 $\\mu$m/s while applying high positive pressure. Pipettes in different robot arms can be lowered to different depths, thereby allowing simultaneous recordings, for example, from different layers of the cortex, or even different regions of the brain (time ii, Figure 3a). Once lowered to depth, the pressures in the pipettes are decreased to low positive pressure (20\u201325 mBar) and the pipette resistances are compared to their resistances recorded outside the brain. If resistance increases greater than 0.35 M$\u03a9$ are detected in any of the pipettes, their tips are deemed blocked or fouled and those pipettes are depressurized to atmospheric pressure and their actuator arms deactivated (time iii, Figure 3a). This is analogous to the \u201dregional pipette localization\u2019 step in the original autopatcher algorithm (Kodandaramaiah et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig3-v3.jpg)\n\n**Figure 3.:** (a) The initial steps of the multipatcher algorithm: (i) The experimenter manually positioned the pipettes in contact with the cortical surface. (ii) The robot automatically lowered all pipettes to the desired target region in the brain. (iii) Clogged pipettes were detected and deactivated (grayed out pipette). The pipettes that were still active continued seeking for neurons. The black box in iii denotes the region zoomed in in the next figure panels. (b) Schematic of the first development iteration: (iv) active pipettes continued hunting for neurons. (v) whenever a pipette encountered a neuron (red box) the corresponding motor was deactivated, while the rest continued seeking for neurons. (vi) in this example, all active pipettes have made contact with neurons (red boxes). (vii) gigasealing was attempted simultaneously in all pipettes, by releasing positive pressure, applying suction pressure and applying hyperpolarizing voltages synchronously. (viii) Breaking-in was then attempted synchronously in all cells with successful gigaseals. (c) Schematic of the second development iteration: (iv) active pipettes continued hunting for neurons, moving at steps of 2 $\\mu$m. (v) each time a pipette encountered a neuron, it was retracted back by 30 $\\mu$m (black arrow), and held in that position. (vi) once all pipettes had performed this step, all pipettes were simultaneously lowered down to the positions where they had previously encountered neurons (black arrows). (vii) synchronous gigasealing was attempted. (viii) synchronous break-in was attempted in all gigasealed neurons. (d) Third and final development iteration: (iv) The multipatcher moved the pipettes simultaneously at 2 $\\mu$m steps (black arrows). (v) when a pipette detected a neuron, all pipettes were halted. (vi) gigasealing was attempted on the single pipette that had detected a neuron. (vii) After the gigasealing procedure was completed, whether successful or not, the remaining pipettes resumed neuron hunting. Steps iv to vi were repeated until gigasealing had been attempted on all active pipettes. (vii) pipettes with resistance greater than 1 G$\u03a9$ were selected by the algorithm to continue to break-in stage. (viii) Break-in was performed simultaneously on all gigasealed neurons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Configuration of valve bank used for applying pressure states to the pipettes within the algorithm iterations shown in Figure 3a and b. With all pressure state switching events synchronized in all pipettes, a single valve bank was used to supply pressure in parallel to each pipettes. (b) The final algorithm (Figure 3c) required a valve bank dedicated to each pipette to account for asynchronous switching of the pressures states.\n\nAfter regional pipette localization, the first algorithm development strategy was the simplest to implement from a hardware design standpoint: a pressure control box with a single pneumatic valve bank to control pressure state-switching in all the pipettes (Figure 3b and Figure 3\u2014figure supplement 1). This required an algorithm that accommodated synchronized pressure state switching events in all pipettes. Hence, we first implemented a simple extension of the autopatcher algorithm (Kodandaramaiah et al., 2012), as shown in Figure 3b. After regional pipette localization (time iii, Figure 3a), active pipettes proceeded to neuron hunting. Once a neuron was detected, the corresponding motor was deactivated and the rest of the pipettes continued neuron hunting, until all pipettes encountered neurons. Pressure in all pipettes was simultaneously released and gigasealing was attempted in a manner identical to the autopatcher. In 19 trials (n\u00a0=\u00a03 mice) where three or more active pipettes performed the neuron hunting and gigasealing tasks, the multipatcher established successful gigaseals 22% of the time (15/68 pipettes, 19 trials; 8/76 pipettes were deactivated at the end of regional pipette localization stage due to tip blockage). The pipettes reaching neurons last, and thereby attempting to establish gigaseal immediately, successfully formed gigaseals 36.8% of the time (7/19 pipettes). In the rest of attempts, successful gigaseals were formed 16.3% of the time (8/49 pipettes). Thus waiting significantly lowered gigaseal yield relative to both not waiting and previously reported gigaseal yields (van Welie et al., 2016).\n\nWe analyzed the resistance measurements for these \u201dwaiting\u2019 pipettes and found that in some of them, while waiting for other pipettes, their resistance had fallen to the pipette resistance measured before contact with a neuron (20% of the time, 10/49 trials). This indicates that tissue displacements, caused perhaps by either motion of other pipettes in the brain or the force of the ejected intracellular pipette solution, was large enough to dislodge neurons. Further, only 20.5%, 8 out of the remaining 39 pipettes, established successful gigaseals, even when elevated resistance readings, indicating proximity to a neuron, were observed. We hypothesized that the constant exposure to the intracellular pipette solution while waiting possibly had a deleterious effect on the neurons, resulting in lower rates of gigasealing.\n\nOther issues encountered during this strategy were that the movement of pipette actuator arms during neuron hunting resulted in electrical noise, and when coincident with the resistance measurements in other channels, resulted in spurious readings. Thus, the resistance measurements in all channels needed to be synchronized when pipettes were performing neuron hunting. Also, this approach did not take into consideration brain tissue displacement caused by the motion of multiple pipettes in brain. Since encountering a neuron during blind in vivo patch clamping is a random process, multiple autopatchers running independently encounter neurons at different times. This could cause a problem, for example during gigasealing (DeWeese, 2007), when it is critical to prevent any relative motion between the pipette tip and the cell. This highlights the need for a robotic arm interaction strategy: some steps should be synchronous to prioritize throughput, while other steps should be independent to prioritize yield.\n\nWe therefore implemented a second algorithm, shown in 3 c. This algorithm proceeded along the same lines as the previous one, until a neuron was encountered at one of the channels, at which time, the pipette was retracted by 30 $\\mu$m and stopped. We chose a value of 30 $\\mu$m because that was the minimum distance the pipettes needed to be retracted before the resistance measurement decreased to the average baseline value (n\u00a0=\u00a015 trials). This process was repeated for all the active pipettes, such that at the end of neuron hunting the relative positions of all the pipettes and the corresponding neurons they encountered were the same. As a final neuron-hunting step, all pipettes were moved forward by the same distance (30 $\\mu$m), and gigasealing attempted synchronously. This algorithm yielded a success rate for gigasealing of $\u223c$20% (12/59 pipettes in 17 trials, with nine pipettes deactivated at the end of regional pipette localization stage due to tip blockage). Again, this was much less than what we would expect when using the autopatcher robot. We analyzed the resistance measurement traces for this algorithm and found that after the final neuron hunting step, when all pipettes advanced forward by 30 $\\mu$m, resistances went back to the elevated values indicated by contact with neurons in only 45.7% (27/59 pipettes), likely due to tissue displacement.\n\nThe two development iterations described above had synchronous pressure state switching events in all pipettes. This allowed a single pneumatic valve bank (Figure 3\u2014figure supplement 1a) to perform the pressure state switching and simultaneously supply the pressure states to all pipettes in parallel. In the third iteration, we decided to perform the gigasealing operation immediately upon detection of a neuron in any one of the pipettes. As it has been observed previously, once either the gigasealed cell attached or whole-cell stage has been achieved, the configuration is remarkably stable against motion artifacts. This has been used previously to record in the whole-cell state from head-fixed rodents (Poulet and Petersen, 2008; Kodandaramaiah et al., 2012; Kodandaramaiah et al., 2016; Chabrol et al., 2015; Margrie et al., 2002; Margrie et al., 2003) and freely moving animals (Epsztein et al., 2010; Lee et al., 2009; Lee et al., 2014). Several groups have also shown that it is possible to carry out loose cell attached recordings for tens of minutes to hours (DeWeese et al., 2003; Tang et al., 2014). Based on these observations, once a pipette encountered a neuron, the program paused neuron hunting in all channels and attempted gigasealing in the channel that encountered a neuron (Figure 3).\n\nTo implement this third strategy, we re-designed the pressure control box to incorporate a separate pneumatic valve bank for each pipette (Figure 3\u2014figure supplement 1b), which allowed independent pressure state switching in each individual pipette. The third and final iteration of the algorithm then proceeded as follows: after regional pipette localization and deactivation of clogged pipettes (Figure 3a), the multipatcher robot moves the remaining pipettes in small incremental steps (2 $\\mu$m); after each step, square wave voltage pulses (e.g., 10 mV at 10 Hz, with offset voltage set at 0 mV) are applied to the pipettes to compute their resistances (time point iv in Figure 3d). This two-step process of pipette advancement followed by resistance measurement is repeated while looking for monotonic increases of pipette resistance above 0.25 M$\u03a9$ over three actuation steps taken in one or more patch pipettes that indicate suitable contact with a neuron for patch clamping (time v in Figure 3d), analogous to the \u2018neuron hunting\u2019 stage in the autopatcher operation (Kodandaramaiah et al., 2012). After detecting contact with a neuron, the robot halts the movement of all pipettes, and attempts to establish a gigaseal in the pipette that has encountered a neuron (time vi in Figure 3d), analogous to the \u201dgigasealing\u2019 stage in the autopatcher (Kodandaramaiah et al., 2012) by applying low suction pressure and a hyperpolarizing voltage. After a gigasealing attempt, lasting 60 secs or less, the pipette's linear motor is deactivated, and the remaining pipettes resume neuron hunting. This alternating neuron hunting and gigasealing cycle is repeated until all pipettes have encountered neurons and attempted to establish gigaseals (time vii in Figure 3d). At this point, pipettes that have successfully formed gigaseals are selected and, at the operator's command, the robot applies pulses of suction until it successfully breaks into the gigasealed cells (time viii in Figure 3d). Using this algorithm, we were able to get successful gigasealed cell attached states in 58% of the active pipettes (77 out of 133 pipettes in 41 trials, 41 pipettes were deactivated at the end of the initial localization step due to blockage or clogging). This was the highest yield we obtained from all three iterations, and exceeded the gigasealing success rate that we obtained with our autopatcher algorithm (Kodandaramaiah et al., 2012). The details of the software implementation and operation of this algorithm can be found in Supplementary file 4 and Source Code Files 1\u20134.\n\n### Time course of multipatcher operation\n\nA series of pressure state switching and resistance measurements in four pipettes during a single, typical multipatcher trial in which multiple whole-cell recordings are shown in Figure 4a and b. Pressure and resistance measurements from each pipette are coded with green, blue, red, and purple colors. Key events during the trial are denoted by lowercase roman numerals, with the colored bars at the top of Figure 4b (Figure 4\u2014source data 1) indicating when the robot arms are active, or moving. Grey shaded areas indicate when all robot arms are stopped and a pipette is attempting gigasealing with its contacted neuron. The detection of a neuron in pipette 1 is shown at time i. Between times i and ii, all pipettes paused actuation and gigasealing was attempted with pipette 1 (green). This 60 s gigasealing attempt, started at time i, was conducted as follows: (1) measure resistance at low positive pressure for 10 s to ensure positive confirmation of contact with a neuron, (2) switch to atmospheric pressure for 5 s to allow the cell membrane to begin sealing, (3) apply low suction pressure for 10 s to form gigaseal, (4) return pressure to atmospheric and apply hyperpolarizing voltage of \u221235 mV, (5) reduce voltage linearly to \u221270 mV over 30 s, and (6) wait 5 s. The motor of pipette 1 was deactivated for the rest of the trial. At time ii, the remaining pipettes resumed neuron hunting. At time iii the robot detected contact with a neuron using pipette 2. The same gigasealing steps described above for pipette 1 were used for pipette 2 between times iii and iv, resulting in unsuccessful gigaseal formation, as indicated by a minimal resistance increase. The experimenter terminated the gigasealing attempt prematurely, manually, after 35 s, rather than having the robot continue automatically after 60 s as before. Between times v and vi, and again between times vii and viii, the robot successfully gigasealed pipettes 3 and 4. At time ix, the gigasealed neurons attached to the patch electrodes in pipettes 1, 3 and 4 were broken into to establish whole-cell patch recordings. The time for execution of gigasealing tasks for multipatching was fixed at 60 s, whereas in the previous autopatcher, break-in was initiated at the discretion of the operator. The gigasealing times recorded for autopatching were the times taken for gigaseals to fully stabilize and asymptote, upon which break-in was initiated by the operator. In the multipatcher algorithm, however, we used a fixed time for gigasealing with the cell being clamped at \u221270 mV holding potential at the end of the 60 s gigasealing routine. Thus, even as the program resumed neuron hunting with pipettes that were yet to encounter neurons, the seal resistance continued to increase and asymptote due to the hyperpolarizing holding potential that was applied. This did not however apply to the pipette that attempted gigasealing last for which the usual conditions used for autopatching were applied.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig4-v3.jpg)\n\n**Figure 4.:** (a) Time series of the pressures in each of the four valves during the multipatcher operation. The valve pressure settings, each corresponding to a pipette, are color coded blue, green, red and purple. The roman numerals and gray areas denote different steps of the algorithm operation, as shown in Figure 3d. (b) Time series of resistance measurements in a representative multipatching trial. Colors and roman numerals are coded as in (a). The horizontal bars on top indicate the epochs of the algorithm when motors are active and moving, and the grayed out sections indicate epochs when gigasealing was attempted in a pipette. The vertical gray bars indicate epochs in which all pipettes remained stationary. Key events are flagged by roman numerals. Between i and ii gigasealing was attempted in the pipette color-coded green; between iii and iv, gigasealing was attempted in the pipette color coded blue. In this gigasealing attempt, the experimenter utilized a manual override option to prematurely terminate the gigasealing process after observing less than 100 M$\u03a9$ increase in pipette resistance after 35 s, typically indicative of an unsuccessful gigasealing attempt. Gigasealing was attempted similarly with pipettes color coded red and magenta between time points v to vi and vii to viii respectively. Break-in was attempted in all pipettes that had successfully obtained gigaseals at step ix and obtained whole-cell configurations in all three pipettes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Confocal image of somatosensory cortex showing the tracks left by two pipettes painted with DiI. The measurement scale show that the pipettes are at about 250 $\\mu$m from each other.\n\n### Performance in anesthetized rodents\n\nWe first assessed the performance of the multipatcher robot in anesthetized, head-fixed mice. Representative voltage traces of two and three neurons patched simultaneously in the somatosensory cortex of an anesthetized mouse are shown respectively in Figure 5a, right (Figure 5\u2014source data 1) and Figure 5b, right Figure 5\u2014source data 2). Overall in anesthetized animals, for recordings obtained in visual cortex and somatosensory cortex, the multipatcher robot controlling four patch pipettes was able to establish successful whole-cell recordings from multiple neurons in 30.7% (13/41 trials, eight mice) of trials. We were not able to obtain successful recordings from all four pipettes that simultaneously met the quality criteria: resting membrane potential below \u221250 mV, less than 200 pA of negative current injected to hold the cell at \u221265 mV in voltage clamp mode, less than 100 M$\u03a9$ of initial series resistance, and recording time duration of at least 5 min. Recordings were considered to be successful dual- and triple-patches only if all the neurons met the quality and time criteria (Figure 5c and d, and Figure 5\u2014source data 5\u20137). Nineteen percent of the pipette tips were blocked or fouled in the initial descent to depth (31/164 pipettes in 41 trials, eight mice), comparable to that obtained previously (Kodandaramaiah et al., 2012). Of the pipettes that executed neuron hunting, 57% (77/133 pipettes in 41 trials, eight mice) established successful gigaseals, of which 67.5% (52/77 pipettes in 41 trials, eight mice) yielded successful whole-cell recordings of necessary quality. Overall, each pipette had a 31.7% (52/164 pipettes) chance of establishing a whole-cell recording. We hypothesize that the high percentage of gigaseals obtained can be attributed to improvements made in our surgical procedures, for example using an autodrilling robot (Pak et al., 2015) to perform craniotomies.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig5-v3.jpg)\n\n**Figure 5.:** (a) Representative voltage traces for two neurons patched simultaneously in the somatosensory cortex of awake (left) and anesthetized (right) head restrained mouse. (b) Representative voltage traces from three neurons patched simultaneously in the somatosensory cortex of an awake (left) and anesthetized (right) head-fixed mouse. (c) Initial series resistances of neurons recorded at various depths in the cortex plotted against the depths from the pia at which the recordings were obtained. (d) Holding currents required to hold various whole-cell patched neurons at \u221265 mV in voltage clamp mode plotted against the depth from the pia at which recordings were obtained.\n\nWe did observe a decrease in break-in success rate as compared to our previous study (Kodandaramaiah et al., 2012). Of the 77 neurons that were gigasealed, we established successful whole-cell recordings in 52 neurons, achieving a break-in success rate of 67.5%. Multiple reasons could cause this reduction in break-in. Since the algorithm waited until all pipettes had attempted gigasealing, pipettes that encountered neurons first often had to wait a few minutes before break-in was attempted. A small fraction (6.4%, 5/77 gigasealed neurons in 41 trials, eight mice) lost gigaseal attachment to the neurons while waiting. It is also possible that, of the ones that remained gigasealed, the increased duration of holding at this stage made break-in more difficult, although we did not systematically explore this. Another potential explanation for the decrease in break-in success rate is the design of the pressure controller box. In it, the volume of air in the tubing between the control box and the patch pipettes may be significant since we had to use longer tubing to route pressure to all the pipette actuators. On average, the series resistance of recorded neurons was 31.54 $\\pm$16.53 M$\u03a9$ (n\u00a0=\u00a052 neurons, eight mice), while holding currents required to clamp the cell in voltage clamp mode at \u221265 mV were \u221221 $\\pm$54.08 pA (n\u00a0=\u00a052 neurons, eight mice) (Figure 6C and D and Figure 5\u2014source data 5\u20137). The average membrane capacitances and membrane resistances were 66.13 $\\pm$ 34.8 pF and 99.3 $\\pm$44.41 M$\u03a9$ (n\u00a0=\u00a052 neurons, eight mice) respectively (Figure 6A and B and Figure 5\u2014source data 5\u20137). In the interest of time, we assessed the time duration of stable recordings in only a subset of trials, and found that recordings obtained were of similar duration (52.62 $\\pm$9.87 min, n\u00a0=\u00a018 neurons in 18 trials) to those obtained with the single autopatcher (Kodandaramaiah et al., 2012).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24656/elife-24656-fig6-v3.jpg)\n\n**Figure 6.:** (a) i-iii are histograms of cell membrane capacitance, cell membrane resistance and series resistance, respectively, from neurons recorded in the visual cortex under anesthesia (n\u00a0=\u00a027 neurons), (b) i-iii are histograms of cell membrane capacitance, cell membrane resistance and series resistance, respectively, from neurons recorded in the somatosensory cortex under anesthesia (n\u00a0=\u00a025 neurons, four mice), (c) i-iii are histograms of cell membrane capacitance, cell membrane resistance and initial series resistance, respectively, from neurons recorded in the somatosensory cortex in awake mice (n\u00a0=\u00a067 neurons). (d) Histograms of recording time duration per neuron in awake animals (n\u00a0=\u00a038 neurons).\n\n#### Performance in awake animals\n\nOnce validated in anesthetized animals, we attempted to use the multipatcher robot in awake head restrained mice. We optimized our surgical preparation and head restraint protocol to minimize motion of the brain. Representative voltage traces from two and three neurons patched simultaneously in the somatosensory cortex of awake, head-restrained mice are shown respectively in Figure 5a, left (Figure 5\u2014source data 3) and Figure 5b left (Figure 5\u2014source data 4). We attempted a total of 97 multipatching trials (with 97 \u00d7 4\u00a0=\u00a0388 pipettes) in 32 awake, head restrained mice, which yielded 70 successful whole-cell recordings that matched the quality criterion (Figure 5c and d, and Figure 5\u2014source data 5\u20137). Thus, if each pipette was considered individually, it had an 17.3% chance of obtaining a whole-cell patch recording (67/388 pipettes). In 44.3% (43/97) of the trials, no usable whole-cell patch recordings were obtained, perhaps due to additional motion of the brain as compared to anesthetized mice. At least one whole-cell patch clamp recording was obtained in 55.7% (54/97) of trials, with 17.5% (17/97) of the trials resulting in dual or triple whole-cell patch clamp recordings.\n\nThe mean series resistance of recorded neurons was 33.78 $\\pm$14.41 M$\u03a9$ (n\u00a0=\u00a067 neurons, 32 mice), while the holding current required to keep the cell in voltage clamp mode at \u221265 mV was 9.81 $\\pm$78.94 pA (n\u00a0=\u00a067 neurons, 32 mice, Figure 6c and d and Figure 5\u2014source data 5\u20137). The average membrane capacitance and membrane resistance was 88.18 $\\pm$ 49.20 pF (n\u00a0=\u00a067 neurons, 32 mice) and 109.75 $\\pm$68.97 M$\u03a9$ (n\u00a0=\u00a067 neurons, 32 mice) respectively (Figure 6c and Figure 5\u2014source data 5\u20137). Approximately half (48.6%) of recordings obtained in awake head-fixed animals (34/70 neurons, 32 mice), such as those shown in Figure 5a and b, were obtained in experiments involving injection of anesthetics for a separate study (data unpublished). In these experiments, ketamine or dexmedetomidine were injected via a cannula implanted in the peritoneal cavity. The injection was typically done after recording in baseline awake state for 4 min, and resulted in a significant increase in motor activity, with 41.2% of the recorded neurons lost as result of this (14/34 neurons, 32 mice). We obtained a motion index from video recordings using a published methodology (Gao et al., 2014) and standardized its values across mice using z-scores. The median of the standardized motion index observed during baseline was significantly lower than the median value observed after the injection of the drug ($x~_{b\u2062a\u2062s\u2062e}$=\u22120.39, $P_{25-75}$ = [\u22120.66\u20130.12]; $x~_{d\u2062r\u2062u\u2062g}$ = 0.36, $P_{25-75}$ = [\u22120.23 0.81]; p-value=0.0003, Wilcoxon Signed-Rank test; $x~$ denotes the median, and $P_{25-75}$ denotes the 25th and 75th percentile values). This analysis provides strong evidence that the period immediately following anesthetic injection does not represent typical motor activity, and therefore we excluded these part of the recording from our calculations of recording duration. After this correction, the remainder of the recordings lasted 13.98 $\\pm$10.03 min (n\u00a0=\u00a036 neurons, Figure 6d).\n\n#### Throughput and scaling\n\nIn a subset of anesthetized trials, we measured the time to manually fill, install and position pipettes for multipatching. In four pipettes the average time taken for filling and installing was 12.5 $\\pm$1.4 min (n\u00a0=\u00a018 trials), and the time for completion of multipatcher trials culminating in successful whole-cell recordings of one of more neurons was 10.5 $\\pm$2.6 min (n\u00a0=\u00a018 trials). Thus, a single pipette requires 3.2 $\\pm$0.3 min for installation and 2.6 $\\pm$0.6 min for whole-cell patch clamping as compared to the autopatcher (2.0 $\\pm$ 0.4 for pipette installation and 5 $\\pm$2 min for operation). The increased time for pipette installation is due to the increased complexity of tasks involved in positioning with close confinement. However, this is partially offset by the synchronized stages of multipatcher operation, with some additional contribution enabled by limiting gigasealing to 60 s.\n\nIn the limit, scaling with this algorithm necessitates that operation time is 70 s/pipette (60 secs for gigasealing and 10 s for assessment). Using these methodologies, we estimate practical limitations to pipette installation are 10\u201312 pipettes due to hardware constraints, and the time for installation increases non-linearly. Reducing this rate would need a redesign of the actuation modules to enable quick replacement of pipettes for high-throughput operation. Further increases in the throughput may be obtained by using robot systems for automated pipette (Pak et al., 2011) and pipette inspection (Stockslager et al., 2016), and incorporating pipette cleaning protocols (Kolb et al., 2016) between trials to eliminate the pipette changeover time. While the algorithms were formulated and tested using a multipatcher robot controlling four patch pipettes, they can in principle be applied to control many more patch pipettes with further miniaturization. More pipettes would ensure higher a success rate of obtaining multiple patch recordings.\n\n## Discussion\n\nWhole-cell patch clamping is considered a gold standard electrophysiology tool that enables the measurement of both suprathreshold spiking and subthreshold membrane potential fluctuations in single neurons. The ability to whole-cell patch multiple neurons in brain slices has revealed key insights into the mechanisms of synaptic transmission and plasticity (Perin et al., 2011). Such circuit level interrogations have been difficult to perform in vivo, particularly in awake animals. Here we demonstrate the ability to use arrays of robotically-guided patch clamping pipettes to simultaneously obtain whole-cell patch clamp recordings in vivo in anesthetized and awake mice. The algorithm used for controlling this robot builds on our previously developed autopatcher algorithm (Kodandaramaiah et al., 2012) to control the position and pressure in individual patch pipettes, while taking into consideration the mechanical interactions of pipettes with the brain tissue while seeking neurons in close proximity to each other.\n\nThe automation of multi-neuron recording in vivo opens up the possibility of further parallelizing the multipatcher for high density mapping of the intracellular activity of ensembles of neurons in intact tissue, which will be hard to accomplish by humans performing such tasks manually. The advent of low-cost, silicon patch-chip amplifiers (Harrison et al., 2015) will enable scaling up the pipette count at a fraction of the cost compared to that of traditional analog amplifiers. Combined with surgical robotics advances that allow precisely defined access to brain (Pak et al., 2015), high density robotically guided patch clamping arrays that simultaneously target and record from neurons distributed locally in microcircuits or in multiple brain regions could be developed. Imaging could be used for closed-loop control of multiple pipettes, as has already been done for single patch pipettes (Suk et al., 2017; Annecchino et al., 2017). Three or four fold increases in the number of simultaneously controlled pipettes could be achieved by using miniaturized micromanipulators, and increasing the number of pneumatic valve banks in the multipatcher control box\u2014\u2013both of which are possible using existing off-the-shelf hardware. The macroscopic scale of currently used patch clamping pipettes will limit further increases in number of pipettes targeting the microcircuit. Thus, novel electrode materials, or microfabrication techniques that realize device architectures amenable for in vivo application will have to be developed. The time taken to assemble and position these pipette arrays precisely at the brain surface will also increase with the number of electrodes. Developing protocols to clean pipette tips for reuse (Kolb et al., 2016), improving the yield of regional pipette localization (Stoy et al., 2017), or incorporating hardware to robotically exchange pipettes between trials in dense pipette arrays, will be particularly useful to overcome this limitations. However, the users that are less experienced in patch-clamp techniques should always keep in mind that key skills for performing surgery, high quality durectomy, pulling pipettes, making internal solution, controlling pressure lines, etc., still remain a challenge, and time and practice are required to master these skills (Kodandaramaiah et al., 2016).\n\n## Materials and methods\n\n**Key resources table**\n Detail of the key resources needed to build and operate the multipatcher robot (See also Supplementary files 3 and 4).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Source code 1</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Multipatcher control software in LabView Library file format</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Source code 2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Header (.h) file for interfacing with the amplifier.</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Source code 3</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Direct link library (.dll) file for interfacing with the amplifier.</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Source code 4</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Library (.lib) file for interfacing with the amplifier.</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Supplementary file 1</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Bill of materials to build the multipatcher hardware.</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Supplementary file 2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Hardware blueprints.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Surgical procedures\n\nWe conducted all animal work in accordance to federal, state, and local regulations, and following NIH and AAALAC guidelines and standards. The corresponding protocol (#0113-008-16) was approved by the Institutional Committee on Animal Care at the Massachusetts Institute of Technology. Adult male C57BL/6 mice, $\u223c$8 weeks old, were purchased from Taconic. During the period before the experiment, the mice were housed in standard cages in the vivarium for at least one week after procurement from the vendor. Food and water were provided ad libitum under a 12 hr light-dark cycles. On the day of the experiment, mice were anesthetized using 1\u20132% isoflurane in pure oxygen and administered buprenorphine (0.1 mg/kg) and meloxicam (1\u20132 mg/kg) subcutaneously for analgesia. The scalp was shaved and sterilized by scrubbing alternately with betadine solution and 70% ethanol for three times. The eyes were covered with ophthalmic ointment (Puralube, Dechra) and fixed in a stereotaxic apparatus (Kopf Instruments). After making an incision to expose the skull, fascia was removed with a microcurette. Three self-tapping screws (F000CE094, Morris Precision Screws and Parts) were then implanted on the skull, taking care not to thread them into the skull by more than 150 $\\mu$m, to ensure that the tip of the screws did not touch the brain surface. A few drops of medical grade cyanoacrylate tissue adhesive (Vetbond, 3M) were applied at the anchor points, suture lines and to attach the skin to the skull as described previously (Domnisoru et al., 2013). Then we affixed a custom head plate, made of either stainless steel or delrin, using dental acrylic (C and B Metabond, Parkell).\n\nFor animals that underwent anesthetized recordings, the head plate implantation was followed by four craniotomies made in a 2 \u00d7 2 grid using an end-mill (\u2205=200 $\\mu$m) and an autodrilling robot (Pak et al., 2015). To minimize the chance of pipettes colliding during the multipatcher operation, the spacing between the craniotomies was calculated using the relative orientations and distances between the independent robotic arms, and projecting their paths into the brain from the surface, such that they were $\u223c$250 $\\mu$m apart at the start of the neuron hunting stage. The small diameter of the craniotomies also allowed for minimization of brain motion. Figure 4\u2014figure supplement 1 illustrates the tracks left by pipettes lowered to 400 micrometers depth from he surface using two opposing arms of the multi patcher. To target layer 4 of the somatosensory cortex, the craniotomies were made at the following coordinates (in mm from bregma): 1 AP, \u22122.8 ML; 1 AP, \u22123.2 ML; 1.5 AP, \u22122.8 ML; 1.5 AP, \u22123.2 ML. To target layer 4 of the visual cortex, the coordinates were: (in mm from bregma): 2.75 AP, \u22122.8 ML; 2.75 AP, \u22123.2 ML; 3.25 AP, \u22122.8 ML and 3.25 AP, \u22123.2 ML. Craniotomies were followed by counter boring the drilled holes using a dental burr (\u2205=500 $\\mu$m) to allow easy visualization of the brain surface.\n\nFor animals that underwent awake recordings, a thin film of dental acrylic was applied to cover any exposed skull tissue after the head plate fixation, and were then transferred to a warm cage lit by an infrared heating lamp, and kept there until they were fully ambulatory. The health of the mice was carefully monitored, and buprenorphine and meloxicam were administered for analgesia up to 3 days after surgery. They were allowed to fully recover from the surgery for up to one week in the vivarium before we started the behavioral acclimation to the custom restraint setup. On the day of the awake recordings, the mice were anesthetized again using 1\u20132% isoflurane, fixed in the stereotaxic instrument, and the thin dental cement layer was carefully removed using a dental burr to re-expose the skull. We inspected the exposed skull surface for signs of inflammation\u2014fluid secretions at the suture lines as well as softened or damp skull tissue. This signs were observed in 10.9% of experiments (5/46 mice) and no recordings were attempted in these subjects. Of those mice that did not show any inflammation, an array of craniotomies was then opened using a similar procedure as described for anesthetized recording sessions above. The skull was then covered with a silicone sealant (Qwik Sil, World Precision Instruments), and animals were head-fixed in the custom restraint setup and allowed to fully recover from anesthesia before attempting recordings, which were performed 45\u201360 min after the opening of the craniotomy.\n\n### Behavioral acclimation\n\nFor awake recordings, the animals were affixed in a custom head and body restraint setup, similar to that described by (Guo et al., 2014). The mice were allowed to recover for 7 days after surgical implantation of head plates prior to habituation to the restraint setup. Acclimation was carried out for six consecutive days, with training sessions lasting 30, 30, 45, 45, 60 and 60 min on each day. During these training sessions, mice were given undiluted condensed milk at regular intervals as positive reinforcement\n\n### Electrophysiology\n\nThe patch pipettes used in the multipatcher robot were pulled from borosilicate glass capillaries (Outer Diameter: 1.2 mm, Inner Diameter: 0.69 mm, Model G120F-4, Warner Instruments) using a standard, filament-based, flaming-brown pipette puller (Model P97, Sutter Instruments) and had resistances between 5\u20139 M$\u03a9$. Pipettes were stored in a closed container and were used within a few hours of fabrication. They were filled with intracellular pipette solution consisting of (in mM): 125 potassium gluconate (with more added to titrate the final solution to $\u223c$290 mOsm and a pH of 7.2), 0.1 CaCl$_{2}$, 0.6 MgCl$_{2}$, 1 EGTA, 10 HEPES, 4 Mg ATP, 0.4 Na GTP, 8 NaCl. The surface of the brain was kept moist during the multipatching experiment by covering with sterile artificial cerebrospinal fluid (ACSF) consisting of: 135 mM NaCl, 2.5 mM KCl, 10 mM HEPES, 2 mM CaCl$_{2}$ and 1 mM MgCl$_{2}$ with pH titrated to 7.3 by addition of NaOH, and osmolarity titrated to $\u223c$300 mOsm by adding NaCl (up to 150 mM final concentration).\n\n### Multipatcher robot operation\n\nAt the beginning of each multipatcher experiment, patch pipettes were filled with intracellular pipette solution using a thin polyimide/quartz back-filling needle (Microfil, World Precision Instruments) and installed in each of the pipette actuators. The solution was filtered using a 0.2 $\\mu$m filter (#28145\u2013475, VWR) to minimize internal clogging of the pipettes. We then adjusted the pressure states required during multipatcher operation in the pressure control box, setting the high positive pressure to 800 mBar, the low positive pressure to 25 mBar, the low negative pressure to \u221215 mBar, and the high negative pressure to \u2212300 mBar. The pipettes were then manually lowered to roughly the center of a corresponding craniotomy in the mouse skull using the three-axis stage. They were gently lowered to make contact with the brain surface (indicated with slight dimpling when visualized in the stereomicroscope) and retracted back until the tips were just above (15\u201320 $\\mu$m) the brain surface. Measurements of depths traversed by each of the patch pipettes were referenced from these starting points outside the brain. The multipatcher then performed the steps detailed in the multipatcher algorithm section. The algorithm was coded and run in Labview 2011 (National Instruments, Source code 1\u20134 and Supplementary file 4).\n\nThe amplifiers were set to voltage clamp mode and square wave command signals were applied simultaneously to all pipettes (10 mV, 10 Hz, via analog outputs on the cDAQ-9174). Amplified signals were sampled at 15 kHz and filtered using a moving average filter (half width, six samples, with triangular envelope). For each pipette, resistance values are computed on line by dividing applied voltage by the peak-to-peak amplitude of the measured current through the pipette. Each resistance value used in the algorithm was the average of five consecutive resistance measurements. During gigasealing and break-in stages (Figures 3 and 4 and Figure 4\u2014source data 1), DC offsets ranging from 0 to \u221270 mV are applied to the square wave to enhance the formation of gigaseals, as is common practice. To enable accurate measurement of peak-to-peak amplitude during gigasealing, an additional exponential filter (decay rate\u00a0=\u00a00.001 s) was digitally applied to eliminate stray currents resulting from uncompensated pipette capacitance. After multipatcher operation, whole-cell patched neurons were recorded using Clampex software (Molecular Devices). Signals were acquired at standard rates (e.g., 30\u201350 KHz), and low-pass filtered (Bessel filter, 10 kHz cutoff). All data was analyzed using Clampfit software (Molecular Devices) and MATLAB (Mathworks).\n\n### Additional precautions for recording in awake mice\n\nWe had to take several steps to optimize the surgical and experimental preparation in the awake experiments. In order to minimize brain motion, the animals were placed within a plastic restrainer that prevented movement of the hindhead and subsequent movement of the spinal cord that could be transmitted to the brain via the cerebrospinal fluid. However, this setup allowed unrestrained movement of the forepaws. We also closely inspected the skull surface, at 40x magnification, on the day of the recording for any signs of inflammation, for motion of the skull with respect to the head plate, and for motion of the brain relative to the skull or head plate. In 6.5% of experiments (3/46 mice), we observed relative motion between the head plate and skull when animal exhibited motor activity, possibly due to fatigue experienced by the dental cement used for implantation during repeated acclimation sessions. We did not attempt any awake recording sessions in these animals. In 10.9% of the subjects (5/46 mice), we observed discernible (10\u2013100 $\\mu$m) motion of the brain\u2014assessed by observing the relative distance between the brain and edge of the skull at the craniotomy. We did not attempt any automated recordings in these mice. If motion of the skull or brain was not observed through the stereoscope, we would then start the multipatching trial.\n",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "acef13dd-e78f-4ae4-bf95-d7507d54d0d5",
+      "submission_id": "aa4f2da7-8afa-4753-b2ac-43c3531002c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24656.031](https://doi.org/10.7554/eLife.24656.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multi-neuron intracellular recording in vivo via interacting autopatching robots\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Andrew King as the Senior and Reviewing Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Randy M Bruno (Reviewer #2); Andreas T Schaefer (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study describes an automated technique for obtaining multiple simultaneous whole-cell recordings in anesthetized and awake, head-fixed mice. Specifically, the authors developed an algorithm for linking 4 autopatching devices in to attempt to obtain simultaneous whole-cell recordings from nearby neurons. They were able to obtain 2 or 3 simultaneously patched neurons 31% of the time in anesthetized animals, and 19% of the time in awake, head-fixed animals. The reviewers agreed that automating whole-cell recording is valuable for improving experimental throughput since this is a labor-intensive procedure, and that this extension of the authors' previous work on automation of patching to several pipettes could have a considerable impact.\n\nEssential revisions:\n\nAlthough the reviewers considered this paper to be potentially suitable for the extended format of a Technical Report in eLife, they agreed that too little information is provided to allow others to assess or reconstruct the 4 channel autopatching system. More details are needed on how to put together this system as well as on the quality of the recordings obtained with it, including a comparison with manual approaches. The paper addresses how to patch additional neurons while minimally disturbing neurons that have already been patched, but does not deal adequately with the issue of how to position pipettes without them running into each other. Furthermore, delicate and/or time-consuming steps are still manually performed or not fully automated. Consequently, while the reviewers thought that this system had considerable potential, they were not yet convinced about the advance it offered over manual patching.\n\n1) The paper needs to provide enough information for people to as easily as possible replicate the construction of the autopatcher system; this includes providing a parts list, software code, drawings, circuits, PCB layouts and setup instructions (perhaps in the form of an appendix).\n\n2) One aspect that remains completely unclear is the alignment of pipettes. With four and potentially in the future more pipettes, there is not only a risk of not knowing exactly where they go but for them to crash into each other. The pipettes are placed on the brain surface manually with apparent freedom of placement in 2-D, and the authors do not mention how the relative positions of the pipettes are tracked during autopatching. Do they have a way to calibrate the relative positions of the tips in 3D as they move towards each other? How are collisions of pipettes prevented? Can this be automated? This is important, otherwise how can experimenters know where to place the pipettes on the brain surface so they don't collide during the automated advance of the pipettes during patching? If alignment procedure is left to chance the user would presumably be limited to targeting cells several 100 \u03bcm apart from each other, thus precluding the study of local to medium size circuits. Do the authors have numbers for the actual inter-pipette tip distances for their successful multi-neuron patching attempts to assess how closely they can regularly record multiple neurons?\n\n3) The authors say it took 10.5 min per attempt, but this presumably excludes the manual exchange of pipettes and manual positioning of the pipettes on the brain surface. On lines 162-163 the authors appear to indicate that it would take (3.2 + 2.6)*4 = approx. 23 min between successive 4-pipette patching attempts, assuming no recording time. Also, the manual exchange of pipettes and placement of each of the 4 pipettes on the brain surface using the four 3-axis manual manipulators would seem to be a step that is labor-intensive and requires experimenter care (in the case of brain surface placement), especially because the experimenter would have to ensure that the pipettes don't hit each other during automated patching. Although there is certainly a savings of effort from automating the lowering of the pipettes to search depth, hunting for neurons, sealing, and breaking in, it looks like the experimenter would need to be actively performing operations approximately half of the time, and be present most or all of the time. For multi-pipette patching, the exchange of pipettes and safe placement of all pipettes on the brain surface is significantly more involved than the single-pipette case, and so the relative gain from automating only the patching itself is smaller for multi-pipette compared to single-pipette patching. This is especially true since there does not appear to be an automated anti-pipette-collision procedure.\n\n4) There needs to be an investigation into selection bias \u2013 one key advantage of whole-cell patching is low selection bias (i.e. not by firing rate unlike classical unit recordings). However, the thresholds they set e.g. for quality of seal, the pressure when moving pipettes down (and even possibly the shape of the pipette) create a bias in their own right. While this is usually under the user's control, the autopatcher will allow the user to \"conveniently forget\" about these issues. Thus, this needs to be discussed prominently and augmented by some data on e.g. how different thresholds result in different ratios of interneurons to pyramidal cells.\n\n5) Generally, for evaluating the quality of the recordings there is too little data on stability, R_access as f(t) and very few raw example traces. Showing data as in the original Nature Methods paper but for 3-neuron recordings would give further confidence that superior stability can be achieved. What is the rate of loss of gigaseals that have already been obtained while other pipettes are hunting for neurons and/or attempting a gigaseal?\n\n6) The novelty of the work, beyond the previous manuscripts, lies in obtaining doublets/triplets, but these multi-neuron recordings are poorly described. For example (Introduction, last paragraph) awake recordings are reported to last ~14 minutes on average \u2013 is this with regard to individual cells, doublets or triplets? Presumably, this statement is about individual cells, but that is less important here. The awake section of the Results tells us only that 18 out of 97 trials yielded a doublet or triplet. Please tell the reader how many of each, and how many minutes of usable data could be collected from doublets on average and, separately, from triplets on average. Ranges of time would be nice, too. The preceding anesthetized section should also be clear about the frequency and duration of doubles and triplets. These paired recordings need to be held for at least a few minutes for anyone to obtain sufficient data for the simplest experiments. The authors should also show an example of a 3-neuron recording, as they did for 2-neuron traces in Figure 5.\n\n7) The authors should compare and contrast the essential steps and success rate of their multi-neuron patching algorithm with previous manual methods. In particular, Jouhanneau et al., 2015 (cited by the authors) reported that they obtained many examples of 2-4 simultaneously patched nearby neurons in anesthetized animals using two-photon guided targeting. It would be helpful to the field if the numbers of attempts and mice used to obtain the respective datasets could be compared (perhaps via a personal communication from Poulet).\n\n8) In the development section, for the first algorithm they tried, it's not clear why the authors thought it would be possible to attempt to form a gigaseal by releasing suction after a delay (after other pipettes were also in a position to attempt a gigaseal). In the second algorithm they tried, again it is not clear why the authors assumed that pulling back 30 \u03bcm before attempting a gigaseal, waiting, then moving by 30 \u03bcm again would work. This is probably a strategy that would not work well in standard single pipette patching. After trying fully independent autopatchers (which makes sense to try first), it would seem to have made the most sense to just try the third (and final) algorithm, since it appears to be the same as that used in Jouhanneau et al. The one algorithmic variation that the authors did not report trying, and which could potentially be successful, would be to break in after each gigaseal is formed, instead of simultaneously after all gigaseals were formed.\n\n9) It is important for less experienced users to emphasize that key skills for performing surgery, high quality durectomy, pulling pipettes, making internal solution, controlling pressure lines etc. remain an obstacle \u2013 otherwise users will be heavily disappointed if the autopatcher does not permit plug-and-play physiology with the same ease as e.g. photometry.\n",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "66a9e281-d13b-42a7-8d40-9394bfc5a71c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C1",
+      "claim": "Traditional extracellular recordings have been powerful and scalable.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional extracellular recordings have been powerful and scalable, but much less is known about the intracellular processes that lead to spiking activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the established capabilities of extracellular recording methods in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a5c15e29-c8ae-4b86-9973-3906da530e98",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C2",
+      "claim": "Much less is known about the intracellular processes that lead to spiking activity compared to extracellular recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional extracellular recordings have been powerful and scalable, but much less is known about the intracellular processes that lead to spiking activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "12c54dc6-2d61-4e90-9c4f-71074969d756",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C3",
+      "claim": "The multipatcher is capable of automatically obtaining blind whole-cell patch clamp recordings from multiple neurons simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a robotic system, the multipatcher, capable of automatically obtaining blind whole-cell patch clamp recordings from multiple neurons simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary claim about the capability of the developed system, supported by experimental demonstrations throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "047fff66-f585-48f7-aaec-0d50587bf61f",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C4",
+      "claim": "The multipatcher significantly extends automated patch clamping to guide four interacting electrodes in a coordinated fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "The multipatcher significantly extends automated patch clamping, or 'autopatching', to guide four interacting electrodes in a coordinated fashion, avoiding mechanical coupling in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical advancement of the system, demonstrated through the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d376e1ee-d3f3-4d1b-95fc-0430a40437a9",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C5",
+      "claim": "The multipatcher avoids mechanical coupling in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The multipatcher significantly extends automated patch clamping, or 'autopatching', to guide four interacting electrodes in a coordinated fashion, avoiding mechanical coupling in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design goal achieved through the interaction algorithm, as demonstrated by the successful recordings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "fc45abf2-6dd8-4ea4-a111-7ca769fe5969",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C6",
+      "claim": "A multipatcher with four electrodes took an average of 10 min to obtain dual or triple recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "A multipatcher with four electrodes took an average of 10 min to obtain dual or triple recordings in 29% of trials in anesthetized mice, and in 18% of the trials in awake mice, thus illustrating practical yield and throughput to obtain multiple, simultaneous whole-cell recordings in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of system performance reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3ec99df1-fb28-4cfa-949c-c5de8986c276",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C7",
+      "claim": "The multipatcher obtained dual or triple recordings in 29% of trials in anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A multipatcher with four electrodes took an average of 10 min to obtain dual or triple recordings in 29% of trials in anesthetized mice, and in 18% of the trials in awake mice, thus illustrating practical yield and throughput to obtain multiple, simultaneous whole-cell recordings in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative success rate measured experimentally.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a4f9ffc2-ae8a-4cfe-b4d9-3a89872d27bd",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C8",
+      "claim": "The multipatcher obtained dual or triple recordings in 18% of trials in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A multipatcher with four electrodes took an average of 10 min to obtain dual or triple recordings in 29% of trials in anesthetized mice, and in 18% of the trials in awake mice, thus illustrating practical yield and throughput to obtain multiple, simultaneous whole-cell recordings in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative success rate measured experimentally in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "75e976fd-a5c3-43b9-8779-a22597628425",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C9",
+      "claim": "Mammalian brains consist of neurons organized into densely interconnected circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian brains consist of neurons organized into densely interconnected circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about brain organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "0b5c140f-a8f5-4f53-8c03-23c779c3461b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C10",
+      "claim": "Circuit-level characterization of neuronal activities has traditionally been carried out using extracellular recording probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally circuit-level characterization of neuronal activities has been carried out using extracellular recording probes (Buzs\u00e1ki, 2004) or using genetically encoded calcium indicators (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "74402406-5d3d-4a6e-b77b-821b958f6410",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C11",
+      "claim": "Circuit-level characterization of neuronal activities has traditionally been carried out using genetically encoded calcium indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally circuit-level characterization of neuronal activities has been carried out using extracellular recording probes (Buzs\u00e1ki, 2004) or using genetically encoded calcium indicators (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "44d9d793-e77d-4f45-8fd4-8222b82aec0c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C12",
+      "claim": "Extracellular recording probes and genetically encoded calcium indicators reveal supra-threshold spiking activities of individual neurons in a circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "While these methods reveal supra-threshold spiking activities of individual neurons in a circuit, they cannot examine synaptic and subthreshold events in neurons, important for understanding the processes within and between cells that lead to spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of these methods based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "e9b12855-d872-40fa-8ea9-8d0b151dde74",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C13",
+      "claim": "Extracellular recording probes and genetically encoded calcium indicators cannot examine synaptic and subthreshold events in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While these methods reveal supra-threshold spiking activities of individual neurons in a circuit, they cannot examine synaptic and subthreshold events in neurons, important for understanding the processes within and between cells that lead to spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the limitations of these methods based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "02944427-ef37-45ab-a6ed-4204c59c43cb",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C14",
+      "claim": "Synaptic and subthreshold events in neurons are important for understanding the processes within and between cells that lead to spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "While these methods reveal supra-threshold spiking activities of individual neurons in a circuit, they cannot examine synaptic and subthreshold events in neurons, important for understanding the processes within and between cells that lead to spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the importance of subthreshold events in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "afbd6448-4ce8-47f4-9077-5803326c3e07",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C15",
+      "claim": "A few studies have performed simultaneous multi-neuron intracellular recordings in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While a few studies have performed simultaneous multi-neuron intracellular recordings in vivo (van Welie et al., 2016; Jouhanneau et al., 2015; Poulet and Petersen, 2008), the difficulty of the technique limits its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "0d5ac0da-1873-4d14-9645-d1d82f13bf8e",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C16",
+      "claim": "The difficulty of simultaneous multi-neuron intracellular recording technique limits its use.",
+      "claim_type": "EXPLICIT",
+      "source": "While a few studies have performed simultaneous multi-neuron intracellular recordings in vivo (van Welie et al., 2016; Jouhanneau et al., 2015; Poulet and Petersen, 2008), the difficulty of the technique limits its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limited number of studies performing this technique.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "52df6349-19bd-496a-9c68-913efd3906f8",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C17",
+      "claim": "The autopatcher performs fully-automated whole-cell patch clamping of single neurons in the living mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently we developed a robot, called the 'autopatcher', that performs fully-automated whole-cell patch clamping of single neurons in the living mouse brain (Kodandaramaiah et al., 2012; Kodandaramaiah et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "74b2573a-c4fd-4335-9761-39174848cb3a",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C18",
+      "claim": "The autopatcher uses pipette impedance measurements to hunt for neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The autopatcher uses pipette impedance measurements to hunt for neurons, followed by gigasealing and break-in using electronically controlled pressure regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach of the autopatcher system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "e5b44933-6e5f-450d-be6b-260c420adc6b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C19",
+      "claim": "The autopatcher performs gigasealing and break-in using electronically controlled pressure regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The autopatcher uses pipette impedance measurements to hunt for neurons, followed by gigasealing and break-in using electronically controlled pressure regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach of the autopatcher system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "9764d620-5991-4698-b357-d81532ed0203",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C20",
+      "claim": "Several straightforward attempts to scale up the autopatcher approach to achieve multi-neuron recordings exhibited very low yield.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored several straightforward attempts to scale up this approach to achieve multi-neuron recordings, but they exhibited very low yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pilot studies conducted by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a6644451-f59d-44bd-9908-5cd72d10a08b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C21",
+      "claim": "Robots engaged in stationary activities, such as gigasealing, would be disrupted by robots engaged in motion, such as during neuron hunting.",
+      "claim_type": "EXPLICIT",
+      "source": "From these pilot studies, we hypothesized that robots engaged in stationary activities, such as the delicate task of gigasealing, would be disrupted by robots engaged in motion, such as during the task of neuron hunting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis derived from observations in pilot studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "09f58fe5-33e5-4ee4-be4f-201878ad2b14",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C22",
+      "claim": "An optimal combination of hardware and software should optimize the interaction between stationary and active tasks across pipettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an optimal combination of hardware and software should optimize the interaction between stationary and active tasks across pipettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design principle inferred from the hypothesis about robot interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "dbc39c2a-dea8-48fd-a6e1-3626cfd12b77",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C23",
+      "claim": "The multipatcher robot obtained dual or triple whole-cell recordings in 29% of trials under anesthetized conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under anesthetized conditions, the multipatcher robot obtained dual or triple whole-cell recordings in 29% of trials, and at least one whole-cell recording in 90% of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "33a0b7f3-b44b-4c41-ae09-34bd57e8456b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C24",
+      "claim": "The multipatcher robot obtained at least one whole-cell recording in 90% of trials under anesthetized conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under anesthetized conditions, the multipatcher robot obtained dual or triple whole-cell recordings in 29% of trials, and at least one whole-cell recording in 90% of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "69b95f07-2588-4809-be34-c3155a982c1a",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C25",
+      "claim": "An individual robot had the same whole-cell yield when used in the multipatcher robot as it did when working alone (31%).",
+      "claim_type": "EXPLICIT",
+      "source": "An individual robot had the same whole-cell yield when used in our multipatcher robot as it did when working alone (31%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of yields showing that the multipatcher does not reduce individual pipette performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d5d66e3d-5bd7-4f35-b891-23c80e0c4e3d",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C26",
+      "claim": "In awake mice the multipatcher obtained dual or triple whole-cell recordings in 18% of the trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In awake mice the multipatcher obtained dual or triple whole-cell recordings in 18% of the trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "fdafe540-0b69-40c0-8eab-c66b51cf6474",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C29",
+      "claim": "The multipatcher is a practical solution for performing intracellular recordings from multiple neurons in the intact brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the multipatcher is a practical solution for performing intracellular recordings from multiple neurons in the intact brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the demonstrated performance metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "18ebee92-1fe1-4c62-9164-93b071286a6f",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C30",
+      "claim": "The multipatcher robot was built by extending some of the hardware components of the previously described autopatcher robot.",
+      "claim_type": "EXPLICIT",
+      "source": "The multipatcher robot was built by extending some of the hardware components of our previously described autopatcher robot (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development approach, referencing prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "40901e8a-b7cc-4eb7-b342-b1bf3587370b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C31",
+      "claim": "The multipatcher consists of an array of four robotic arms for manipulating the patch recording pipettes.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of an array of four robotic arms for manipulating the patch recording pipettes, patch amplifiers, a signal control box, a computer with an interface board, and a pressure control box (Figure 1, Figure 1\u2014figure supplements 1 and 2, and Supplementary files 1, 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the hardware components, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "5904f216-872c-4d3b-b232-c2477b8ed021",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C33",
+      "claim": "The internal pressures of the patch pipettes were independently controlled using the pressure control box.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal pressures of the patch pipettes were independently controlled using the pressure control box (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a key hardware capability shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "4f0ce1f7-6b52-4f04-a1b2-531246624085",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C34",
+      "claim": "The pipettes that reached neurons last and attempted to establish gigaseal immediately successfully formed gigaseals 36.8% of the time (7/19 pipettes) in the first algorithm iteration.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipettes reaching neurons last, and thereby attempting to establish gigaseal immediately, successfully formed gigaseals 36.8% of the time (7/19 pipettes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from testing the first algorithm iteration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "bd121358-a817-4b73-ab19-87ec74104b40",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C35",
+      "claim": "In the first algorithm iteration, successful gigaseals were formed 16.3% of the time (8/49 pipettes) in the rest of attempts where pipettes had to wait.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rest of attempts, successful gigaseals were formed 16.3% of the time (8/49 pipettes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result showing reduced success rate for waiting pipettes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d7dc0c9e-6b1d-4d98-9590-55986b796311",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C36",
+      "claim": "Waiting significantly lowered gigaseal yield relative to both not waiting and previously reported gigaseal yields.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus waiting significantly lowered gigaseal yield relative to both not waiting and previously reported gigaseal yields (van Welie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative conclusion drawn from the data and cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "9ff86244-6f4b-454e-ab9e-ca368285a479",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C38",
+      "claim": "Tissue displacements caused by either motion of other pipettes in the brain or the force of the ejected intracellular pipette solution was large enough to dislodge neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that tissue displacements, caused perhaps by either motion of other pipettes in the brain or the force of the ejected intracellular pipette solution, was large enough to dislodge neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that resistance fell back to baseline in waiting pipettes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d2e2f03c-51ca-4b0e-853d-2c12dc9fc809",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C39",
+      "claim": "Only 20.5% (8 out of 39 pipettes) established successful gigaseals even when elevated resistance readings indicating proximity to a neuron were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, only 20.5%, 8 out of the remaining 39 pipettes, established successful gigaseals, even when elevated resistance readings, indicating proximity to a neuron, were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the first algorithm iteration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "49774a5a-fe96-448a-a3bc-b75cf1bb5994",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C40",
+      "claim": "Constant exposure to the intracellular pipette solution while waiting possibly had a deleterious effect on the neurons, resulting in lower rates of gigasealing.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the constant exposure to the intracellular pipette solution while waiting possibly had a deleterious effect on the neurons, resulting in lower rates of gigasealing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the observed low gigaseal rates.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a953fbe5-379d-4599-aa93-7571d6577376",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C41",
+      "claim": "The movement of pipette actuator arms during neuron hunting resulted in electrical noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Other issues encountered during this strategy were that the movement of pipette actuator arms during neuron hunting resulted in electrical noise, and when coincident with the resistance measurements in other channels, resulted in spurious readings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from testing the first algorithm iteration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "06da6098-53f9-4070-8f38-5992e49fc1b4",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C42",
+      "claim": "Movement of pipette actuator arms during neuron hunting when coincident with resistance measurements in other channels resulted in spurious readings.",
+      "claim_type": "EXPLICIT",
+      "source": "Other issues encountered during this strategy were that the movement of pipette actuator arms during neuron hunting resulted in electrical noise, and when coincident with the resistance measurements in other channels, resulted in spurious readings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from testing the first algorithm iteration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "e11b408d-a12b-49e2-9918-801649a64a8d",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C46",
+      "claim": "Once either the gigasealed cell attached or whole-cell stage has been achieved, the configuration is remarkably stable against motion artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "As it has been observed previously, once either the gigasealed cell attached or whole-cell stage has been achieved, the configuration is remarkably stable against motion artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior observations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3ef39d35-b04a-44d9-8041-6cc074bba0a1",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C47",
+      "claim": "It is possible to record in the whole-cell state from head-fixed rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been used previously to record in the whole-cell state from head-fixed rodents (Poulet and Petersen, 2008; Kodandaramaiah et al., 2012; Kodandaramaiah et al., 2016; Chabrol et al., 2015; Margrie et al., 2002; Margrie et al., 2003) and freely moving animals (Epsztein et al., 2010; Lee et al., 2009; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d8995ef7-24c1-4240-8e72-b2da29b2d7ab",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C48",
+      "claim": "It is possible to record in the whole-cell state from freely moving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been used previously to record in the whole-cell state from head-fixed rodents (Poulet and Petersen, 2008; Kodandaramaiah et al., 2012; Kodandaramaiah et al., 2016; Chabrol et al., 2015; Margrie et al., 2002; Margrie et al., 2003) and freely moving animals (Epsztein et al., 2010; Lee et al., 2009; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "ab987df7-233b-4f80-81d8-710eaa8711e7",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C49",
+      "claim": "It is possible to carry out loose cell attached recordings for tens of minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Several groups have also shown that it is possible to carry out loose cell attached recordings for tens of minutes to hours (DeWeese et al., 2003; Tang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "2003ebb2-a0ed-4216-80c1-633e998eebed",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C50",
+      "claim": "Using the third and final algorithm, successful gigasealed cell attached states were obtained in 58% of the active pipettes (77 out of 133 pipettes in 41 trials).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this algorithm, we were able to get successful gigasealed cell attached states in 58% of the active pipettes (77 out of 133 pipettes in 41 trials, 41 pipettes were deactivated at the end of the initial localization step due to blockage or clogging).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from testing the final algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d28eb2b3-c1a5-4190-b6fa-905863d302ff",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C51",
+      "claim": "The gigasealing success rate of 58% with the final algorithm was the highest yield obtained from all three iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the highest yield we obtained from all three iterations, and exceeded the gigasealing success rate that we obtained with our autopatcher algorithm (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the performance of different algorithm iterations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "75aecd9b-70bc-4d87-9fd9-af8a25262e26",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C52",
+      "claim": "The gigasealing success rate of 58% with the final algorithm exceeded the gigasealing success rate obtained with the autopatcher algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the highest yield we obtained from all three iterations, and exceeded the gigasealing success rate that we obtained with our autopatcher algorithm (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work showing improvement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3ca5be2f-3812-4f77-aa2b-0b3b01c912a2",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C53",
+      "claim": "Nineteen percent of the pipette tips were blocked or fouled in the initial descent to depth (31/164 pipettes in 41 trials, eight mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Nineteen percent of the pipette tips were blocked or fouled in the initial descent to depth (31/164 pipettes in 41 trials, eight mice), comparable to that obtained previously (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in anesthetized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a97635a9-899a-472e-a121-65919443581c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C54",
+      "claim": "The 19% blockage rate was comparable to that obtained previously with the autopatcher.",
+      "claim_type": "EXPLICIT",
+      "source": "Nineteen percent of the pipette tips were blocked or fouled in the initial descent to depth (31/164 pipettes in 41 trials, eight mice), comparable to that obtained previously (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work showing consistency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a5ff9a20-0995-4828-bbb5-9caa52163e71",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C55",
+      "claim": "Of the pipettes that executed neuron hunting, 57% (77/133 pipettes in 41 trials, eight mice) established successful gigaseals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the pipettes that executed neuron hunting, 57% (77/133 pipettes in 41 trials, eight mice) established successful gigaseals, of which 67.5% (52/77 pipettes in 41 trials, eight mice) yielded successful whole-cell recordings of necessary quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in anesthetized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "9471fd6c-b2cc-4c1b-864c-036ee29947b2",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C56",
+      "claim": "Of the gigasealed pipettes, 67.5% (52/77 pipettes in 41 trials, eight mice) yielded successful whole-cell recordings of necessary quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the pipettes that executed neuron hunting, 57% (77/133 pipettes in 41 trials, eight mice) established successful gigaseals, of which 67.5% (52/77 pipettes in 41 trials, eight mice) yielded successful whole-cell recordings of necessary quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in anesthetized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "70c135de-331a-48f6-add0-010f741ce789",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C57",
+      "claim": "Overall, each pipette had a 31.7% (52/164 pipettes) chance of establishing a whole-cell recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, each pipette had a 31.7% (52/164 pipettes) chance of establishing a whole-cell recording.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated overall success rate from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "b16cf675-f4a4-4efe-b7ed-100132c13568",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C58",
+      "claim": "The high percentage of gigaseals obtained can be attributed to improvements made in surgical procedures, for example using an autodrilling robot to perform craniotomies.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the high percentage of gigaseals obtained can be attributed to improvements made in our surgical procedures, for example using an autodrilling robot (Pak et al., 2015) to perform craniotomies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the reason for improved performance, referencing a technical improvement.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "7b3c8b5d-93c7-454e-a835-1742ddb2ebcc",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C59",
+      "claim": "A decrease in break-in success rate was observed as compared to the previous autopatcher study.",
+      "claim_type": "EXPLICIT",
+      "source": "We did observe a decrease in break-in success rate as compared to our previous study (Kodandaramaiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work showing a difference in performance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "4c258315-479d-4ce3-b9f8-b117bedce1f5",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C60",
+      "claim": "Of the 77 neurons that were gigasealed, successful whole-cell recordings were established in 52 neurons, achieving a break-in success rate of 67.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 77 neurons that were gigasealed, we established successful whole-cell recordings in 52 neurons, achieving a break-in success rate of 67.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "4dcc1b6f-804e-4bef-adbc-a129ec5be550",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C61",
+      "claim": "A small fraction (6.4%, 5/77 gigasealed neurons in 41 trials, eight mice) lost gigaseal attachment to the neurons while waiting for break-in.",
+      "claim_type": "EXPLICIT",
+      "source": "A small fraction (6.4%, 5/77 gigasealed neurons in 41 trials, eight mice) lost gigaseal attachment to the neurons while waiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about a failure mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "b068b9a2-1624-409a-abbd-11382b4e2f23",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C62",
+      "claim": "The increased duration of holding at the gigaseal stage may have made break-in more difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that, of the ones that remained gigasealed, the increased duration of holding at this stage made break-in more difficult, although we did not systematically explore this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential cause of reduced break-in success.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "ee65d30e-64ed-4a2f-bd60-c09935303905",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C68",
+      "claim": "The multipatcher attempted a total of 97 multipatching trials (with 97 \u00d7 4 = 388 pipettes) in 32 awake, head restrained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted a total of 97 multipatching trials (with 97 \u00d7 4 = 388 pipettes) in 32 awake, head restrained mice, which yielded 70 successful whole-cell recordings that matched the quality criterion (Figure 5c and d, and Figure 5\u2014source data 5\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative description of the experimental effort in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "fd2b65c2-4d19-4200-9d7b-75e4cf45f396",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C69",
+      "claim": "The multipatcher yielded 70 successful whole-cell recordings that matched the quality criterion in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted a total of 97 multipatching trials (with 97 \u00d7 4 = 388 pipettes) in 32 awake, head restrained mice, which yielded 70 successful whole-cell recordings that matched the quality criterion (Figure 5c and d, and Figure 5\u2014source data 5\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experiments in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "0b1b7036-1954-4309-a925-d7957243c4a0",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C70",
+      "claim": "If each pipette was considered individually in awake mice, it had a 17.3% chance of obtaining a whole-cell patch recording (67/388 pipettes).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if each pipette was considered individually, it had an 17.3% chance of obtaining a whole-cell patch recording (67/388 pipettes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated success rate from the experimental data in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "9ccad7a7-d8dc-4801-89fe-648e9507b26e",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C71",
+      "claim": "In 44.3% (43/97) of the trials in awake mice, no usable whole-cell patch recordings were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "In 44.3% (43/97) of the trials, no usable whole-cell patch recordings were obtained, perhaps due to additional motion of the brain as compared to anesthetized mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result showing the failure rate in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "6113fac1-5e47-4e35-9c0e-4a3b62eb91ac",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C72",
+      "claim": "The failure to obtain recordings in 44.3% of trials in awake mice was perhaps due to additional motion of the brain as compared to anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In 44.3% (43/97) of the trials, no usable whole-cell patch recordings were obtained, perhaps due to additional motion of the brain as compared to anesthetized mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the cause of failures in awake animals.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a26a08ac-306e-4fb4-aaa7-a643f5b4bfb7",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C73",
+      "claim": "At least one whole-cell patch clamp recording was obtained in 55.7% (54/97) of trials in awake mice.",
+      "claim_type": "EXPLICIT",
+      "source": "At least one whole-cell patch clamp recording was obtained in 55.7% (54/97) of trials, with 17.5% (17/97) of the trials resulting in dual or triple whole-cell patch clamp recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "93a90645-77dd-4b68-abbe-9346e31ea4e0",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C74",
+      "claim": "17.5% (17/97) of the trials in awake mice resulted in dual or triple whole-cell patch clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "At least one whole-cell patch clamp recording was obtained in 55.7% (54/97) of trials, with 17.5% (17/97) of the trials resulting in dual or triple whole-cell patch clamp recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "ecbce4a0-add5-4059-ac91-5b4426e40174",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C79",
+      "claim": "Approximately half (48.6%) of recordings obtained in awake head-fixed animals (34/70 neurons, 32 mice) were obtained in experiments involving injection of anesthetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half (48.6%) of recordings obtained in awake head-fixed animals (34/70 neurons, 32 mice), such as those shown in Figure 5a and b, were obtained in experiments involving injection of anesthetics for a separate study (data unpublished).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental conditions for a subset of recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "c0a01c20-f692-4d5a-ac10-72cc0d042e7f",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C80",
+      "claim": "41.2% of the recorded neurons were lost as result of increased motor activity after anesthetic injection (14/34 neurons, 32 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The injection was typically done after recording in baseline awake state for 4 min, and resulted in a significant increase in motor activity, with 41.2% of the recorded neurons lost as result of this (14/34 neurons, 32 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about recording loss due to motor activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "cc5d2482-c025-44bf-b799-24e8e4f01004",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C89",
+      "claim": "The increased time for pipette installation in the multipatcher is due to the increased complexity of tasks involved in positioning with close confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased time for pipette installation is due to the increased complexity of tasks involved in positioning with close confinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed difference in installation time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3a2b2baf-6337-410d-8003-99fb4576d87c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C90",
+      "claim": "In the limit, scaling with this algorithm necessitates that operation time is 70 s/pipette (60 secs for gigasealing and 10 s for assessment).",
+      "claim_type": "EXPLICIT",
+      "source": "In the limit, scaling with this algorithm necessitates that operation time is 70 s/pipette (60 secs for gigasealing and 10 s for assessment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation of the theoretical scaling limit based on the algorithm design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "2756c264-fdd9-49ac-b60a-d8fdc37443da",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C91",
+      "claim": "Practical limitations to pipette installation are 10\u201312 pipettes due to hardware constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these methodologies, we estimate practical limitations to pipette installation are 10\u201312 pipettes due to hardware constraints, and the time for installation increases non-linearly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate of scaling limits based on hardware considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "678ceda4-d6fc-43d5-adfc-ec8a65cca821",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C92",
+      "claim": "The time for installation increases non-linearly with the number of pipettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these methodologies, we estimate practical limitations to pipette installation are 10\u201312 pipettes due to hardware constraints, and the time for installation increases non-linearly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about scaling behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "54864374-b8e1-4143-864e-e67921553a30",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C93",
+      "claim": "Whole-cell patch clamping is considered a gold standard electrophysiology tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell patch clamping is considered a gold standard electrophysiology tool that enables the measurement of both suprathreshold spiking and subthreshold membrane potential fluctuations in single neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the status of patch clamping in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "ce60b5da-e7ea-4e42-841a-86c812d913ce",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C94",
+      "claim": "Whole-cell patch clamping enables the measurement of both suprathreshold spiking and subthreshold membrane potential fluctuations in single neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell patch clamping is considered a gold standard electrophysiology tool that enables the measurement of both suprathreshold spiking and subthreshold membrane potential fluctuations in single neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of the technique based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "8b626adb-500a-4086-9a0c-db2149124f9c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C95",
+      "claim": "The ability to whole-cell patch multiple neurons in brain slices has revealed key insights into the mechanisms of synaptic transmission and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to whole-cell patch multiple neurons in brain slices has revealed key insights into the mechanisms of synaptic transmission and plasticity (Perin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "c44ffa5d-9e1e-4b21-aff0-33228fa2658a",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C96",
+      "claim": "Circuit level interrogations have been difficult to perform in vivo, particularly in awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Such circuit level interrogations have been difficult to perform in vivo, particularly in awake animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in the field based on the limited prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "e54c4e70-6f68-4a7a-b8f6-e09c2e288825",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C97",
+      "claim": "The automation of multi-neuron recording in vivo opens up the possibility of further parallelizing the multipatcher for high density mapping of the intracellular activity of ensembles of neurons in intact tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The automation of multi-neuron recording in vivo opens up the possibility of further parallelizing the multipatcher for high density mapping of the intracellular activity of ensembles of neurons in intact tissue, which will be hard to accomplish by humans performing such tasks manually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about future possibilities enabled by the technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "90e9f51f-6373-478d-83a3-4a8c4ecdcc61",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C98",
+      "claim": "High density mapping of the intracellular activity of ensembles of neurons in intact tissue will be hard to accomplish by humans performing such tasks manually.",
+      "claim_type": "EXPLICIT",
+      "source": "The automation of multi-neuron recording in vivo opens up the possibility of further parallelizing the multipatcher for high density mapping of the intracellular activity of ensembles of neurons in intact tissue, which will be hard to accomplish by humans performing such tasks manually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of manual approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "50ec9769-301a-43ea-80eb-845fd5b56cfc",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C99",
+      "claim": "The advent of low-cost, silicon patch-chip amplifiers will enable scaling up the pipette count at a fraction of the cost compared to that of traditional analog amplifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of low-cost, silicon patch-chip amplifiers (Harrison et al., 2015) will enable scaling up the pipette count at a fraction of the cost compared to that of traditional analog amplifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about future technological possibilities, citing relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "03cb2d8a-f89e-4ce3-80a6-49d8ab22bc81",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C100",
+      "claim": "Imaging could be used for closed-loop control of multiple pipettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging could be used for closed-loop control of multiple pipettes, as has already been done for single patch pipettes (Suk et al., 2017; Annecchino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future development, supported by citations showing it has been done for single pipettes.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a1a707e0-0a4d-40bb-b461-cbeaef174e8b",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C101",
+      "claim": "Three or four fold increases in the number of simultaneously controlled pipettes could be achieved by using miniaturized micromanipulators and increasing the number of pneumatic valve banks.",
+      "claim_type": "EXPLICIT",
+      "source": "Three or four fold increases in the number of simultaneously controlled pipettes could be achieved by using miniaturized micromanipulators, and increasing the number of pneumatic valve banks in the multipatcher control box\u2014\u2013both of which are possible using existing off-the-shelf hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future scaling possibilities based on available hardware.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "996644e9-e144-4468-91c4-073a20c9b327",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C102",
+      "claim": "The macroscopic scale of currently used patch clamping pipettes will limit further increases in number of pipettes targeting the microcircuit.",
+      "claim_type": "EXPLICIT",
+      "source": "The macroscopic scale of currently used patch clamping pipettes will limit further increases in number of pipettes targeting the microcircuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a fundamental limitation of the current approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "56069f06-3b9c-4771-9521-888b69624ab3",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C103",
+      "claim": "Novel electrode materials or microfabrication techniques that realize device architectures amenable for in vivo application will have to be developed to overcome pipette scaling limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, novel electrode materials, or microfabrication techniques that realize device architectures amenable for in vivo application will have to be developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about needed future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a8659ea9-6511-4da8-8de1-028a803a9a2c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C104",
+      "claim": "The time taken to assemble and position pipette arrays precisely at the brain surface will increase with the number of electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The time taken to assemble and position these pipette arrays precisely at the brain surface will also increase with the number of electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about scaling behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "f8dfcc70-1e54-4c09-bfed-be7312c2bbbc",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C105",
+      "claim": "Developing protocols to clean pipette tips for reuse will be particularly useful to overcome limitations in scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing protocols to clean pipette tips for reuse (Kolb et al., 2016), improving the yield of regional pipette localization (Stoy et al., 2017), or incorporating hardware to robotically exchange pipettes between trials in dense pipette arrays, will be particularly useful to overcome this limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future improvement, citing relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "2343dca4-6284-45d8-93bd-f3c694d176eb",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C106",
+      "claim": "Improving the yield of regional pipette localization will be particularly useful to overcome limitations in scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing protocols to clean pipette tips for reuse (Kolb et al., 2016), improving the yield of regional pipette localization (Stoy et al., 2017), or incorporating hardware to robotically exchange pipettes between trials in dense pipette arrays, will be particularly useful to overcome this limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future improvement, citing relevant work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d0e35b80-d81f-40a0-9c08-a8dee26777d4",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C107",
+      "claim": "Incorporating hardware to robotically exchange pipettes between trials in dense pipette arrays will be particularly useful to overcome limitations in scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing protocols to clean pipette tips for reuse (Kolb et al., 2016), improving the yield of regional pipette localization (Stoy et al., 2017), or incorporating hardware to robotically exchange pipettes between trials in dense pipette arrays, will be particularly useful to overcome this limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "ec9dd748-6a56-4c18-bfce-df3decf122ca",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C108",
+      "claim": "Key skills for performing surgery, high quality durectomy, pulling pipettes, making internal solution, controlling pressure lines, etc., still remain a challenge and time and practice are required to master these skills.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the users that are less experienced in patch-clamp techniques should always keep in mind that key skills for performing surgery, high quality durectomy, pulling pipettes, making internal solution, controlling pressure lines, etc., still remain a challenge, and time and practice are required to master these skills (Kodandaramaiah et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary note about the technical requirements, citing prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "2f743ea4-0551-4821-a820-f07c02cb393f",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C109",
+      "claim": "All animal work was conducted in accordance to federal, state, and local regulations, and following NIH and AAALAC guidelines and standards.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted all animal work in accordance to federal, state, and local regulations, and following NIH and AAALAC guidelines and standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "e4c80ea4-77b7-45a2-affe-75d5668e6f99",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "claim_id": "C110",
+      "claim": "The corresponding protocol (#0113-008-16) was approved by the Institutional Committee on Animal Care at the Massachusetts Institute of Technology.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding protocol (#0113-008-16) was approved by the Institutional Committee on Animal Care at the Massachusetts Institute of Technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2d759074-6703-4d06-83ce-c0fd78293600",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The multipatcher is a robotic system capable of automatically obtaining blind whole-cell patch clamp recordings from multiple neurons simultaneously using four interacting electrodes in a coordinated fashion while avoiding mechanical coupling in the brain. The system was built by extending the autopatcher hardware and consists of four robotic arms with independent pressure control for each pipette.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C30-C33 collectively describe the multipatcher system's capabilities and hardware design. The experimental demonstrations throughout the paper (C7, C8, C23-C26) provide strong evidence that the system achieves its stated goals. The hardware descriptions are supported by detailed figures and component specifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3203c353-7b26-4114-9d83-324353f892f5",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In anesthetized mice, the multipatcher achieved dual or triple whole-cell recordings in 29% of trials and at least one whole-cell recording in 90% of trials. Individual pipettes had a 31.7% success rate for establishing whole-cell recordings, with 19% blockage rate, 57% gigaseal success, and 67.5% break-in success from gigasealed pipettes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C23-C24, and C53-C57 provide comprehensive quantitative performance metrics from 41 trials in 8 mice. The data is internally consistent (e.g., 52/164 = 31.7% overall success rate) and includes appropriate sample sizes. Statistical comparisons with prior work (C54) strengthen the evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "92c329a2-fa76-45dc-8983-9e7784beac1c",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In awake mice, the multipatcher obtained dual or triple whole-cell recordings in 18% of trials (17/97) and at least one recording in 55.7% of trials. Individual pipettes had a 17.3% success rate (67/388 pipettes), with 44.3% of trials yielding no usable recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C26, and C68-C74 provide detailed quantitative results from 97 trials in 32 awake mice. The lower success rates compared to anesthetized conditions are acknowledged and attributed to brain motion (C72). The data is internally consistent and sample sizes are adequate for the conclusions drawn.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "c1ac6aca-c5b9-468f-b8ed-2c6211f0c927",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual pipettes in the multipatcher maintained the same whole-cell yield (31%) as when working alone in the single autopatcher system, demonstrating that the multi-pipette coordination does not compromise individual pipette performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C57 provide a critical validation that the multipatcher does not reduce individual pipette performance. The 31.7% success rate per pipette (C57) matches the 31% rate when working alone (C25), supported by comparison with prior autopatcher work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Initial attempts to scale up the autopatcher with synchronized operations showed very low yield (16.3% gigaseal success for waiting pipettes vs 36.8% for non-waiting). Tissue displacement from pipette motion and prolonged exposure to intracellular solution were identified as key problems, along with electrical noise from actuator movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C34-C42 document the iterative development process and identify specific failure modes. The quantitative data (C34-C36, C39) from 19 trials clearly demonstrates the problems with the first algorithm iteration. The hypotheses about tissue displacement (C38, C40) are reasonable inferences from the resistance measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "3eecf924-eddd-45f1-8d71-b381d65d3b45",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The final algorithm iteration achieved a 58% gigaseal success rate (77/133 active pipettes), which was the highest yield among all three iterations and exceeded the success rate of the original single autopatcher algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 report the performance of the optimized algorithm from 41 trials. The 58% success rate represents a substantial improvement over the first iteration (22%) and is compared favorably to prior work. The data supports the conclusion that the interaction strategy was effective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "651d465f-e267-4764-9fb2-35c137b72f31",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The multipatcher showed a decreased break-in success rate (67.5%, 52/77 gigasealed neurons) compared to the previous autopatcher study, with 6.4% of gigasealed neurons losing attachment while waiting and potential difficulty from increased holding duration at the gigaseal stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 acknowledge a limitation of the system with quantitative data. The 67.5% break-in rate (C60) is lower than prior work (C59), and potential explanations are offered (C61-C62). However, C62 notes this was not systematically explored, appropriately qualifying the speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "59cfb804-ff0b-43d6-bf16-d1d542cf1601",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The multipatcher took an average of 10 minutes to obtain dual or triple recordings. In a subset of awake recordings involving anesthetic injection experiments, 41.2% of recorded neurons were lost due to increased motor activity following injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C79-C80 provide timing and experimental condition details. The 10-minute average (C6) is a key performance metric. The loss of recordings due to motor activity (C80) is well-documented with quantitative data (14/34 neurons) and statistical analysis of motion indices, though this represents a specific experimental perturbation rather than typical awake recording conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "5eec3f21-fdc7-43e5-82bf-6dffcde4ac4f",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Once gigaseal or whole-cell configuration is achieved, the recording is remarkably stable against motion artifacts, enabling recordings in head-fixed and freely moving animals for extended durations (tens of minutes to hours for loose cell attached).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe established knowledge in the field, supported by multiple citations to prior work. This background information justifies the algorithm design choice to prioritize achieving gigaseals quickly. The claims are appropriately attributed to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "2015ddfd-1285-4c2d-9651-73ae2b744c85",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The multipatcher requires increased installation time (3.2\u00b10.3 min per pipette vs 2.0\u00b10.4 min for autopatcher) due to positioning complexity. Theoretical scaling limits are 70 s/pipette operation time, with practical hardware limitations of 10-12 pipettes and non-linear increases in installation time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 provide throughput analysis and scaling projections. The timing data (C89) is quantitative from 18 trials. The theoretical scaling calculation (C90) follows logically from the algorithm design. The hardware limitations (C91-C92) are reasonable engineering estimates based on physical constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "d84bb523-9671-493d-ba4b-1b721da63e09",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Traditional extracellular recordings and calcium imaging reveal supra-threshold spiking but cannot examine synaptic and subthreshold events important for understanding neuronal processes. While a few studies have performed simultaneous multi-neuron intracellular recordings in vivo, the difficulty of the technique limits its use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C16 establish the scientific context and motivation. These are well-established facts in neuroscience supported by appropriate citations (C10-C11, C15). The limitations of existing methods (C13, C16) and importance of subthreshold events (C14) are accurately stated and provide clear rationale for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "dc102756-3f47-4089-bff6-d1ed0e34ae9a",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The autopatcher, previously developed by the authors, performs fully-automated whole-cell patch clamping of single neurons in the living mouse brain using pipette impedance measurements for neuron hunting followed by gigasealing and break-in with electronically controlled pressure regulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe prior work by the authors, appropriately cited (Kodandaramaiah et al., 2012, 2016). This background establishes the foundation for the multipatcher development and is necessary context for understanding the technical advances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "f81f08dd-df3f-43d2-8955-879c035870b6",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Whole-cell patch clamping is a gold standard electrophysiology tool that enables measurement of both suprathreshold spiking and subthreshold membrane potential fluctuations. Multi-neuron patching in brain slices has revealed insights into synaptic transmission and plasticity, but circuit-level interrogations have been difficult to perform in vivo, particularly in awake animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 provide established knowledge about patch clamping and its applications. C95 is supported by citation to prior work. These claims establish the scientific significance of the technical advance and are accurately stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "8a9ecce3-a67e-49c6-9467-824792de3634",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The automation of multi-neuron recording opens possibilities for further parallelization and high-density mapping that would be difficult manually. Future improvements could include low-cost silicon amplifiers, imaging-based control, miniaturized manipulators (enabling 3-4 fold increases), novel electrode materials, and protocols for pipette reuse or robotic exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C107 are forward-looking statements about future possibilities and limitations. While some are supported by citations to relevant technologies (C99-C100, C105-C106), these are speculative projections rather than demonstrated results. The scaling estimates (C101) and limitations (C102-C104) are reasonable but not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "80486529-b47a-4e1d-bb12-f2ff56522de6",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The multipatcher is a practical solution for performing intracellular recordings from multiple neurons in the intact brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is a summary conclusion supported by the demonstrated performance metrics in both anesthetized (C7, C23-C24) and awake (C8, C26) conditions. The 29% and 18% success rates for multi-neuron recordings, combined with reasonable throughput (10 min average), support the practicality claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "231ea80a-0acc-4664-809e-9bb30165eb32",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Key technical skills for surgery, durectomy, pipette pulling, solution preparation, and pressure control remain challenging and require time and practice to master, even with the automated system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 provides an important caveat about the technical requirements for using the system, appropriately citing prior work. This is a reasonable statement about the limitations of automation and sets appropriate expectations for potential users.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    },
+    {
+      "id": "a6a6c10f-2377-47e2-9f0b-500ea84ce397",
+      "content_id": "00196f15-5fe5-42a3-bc54-cb561a52d00c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "All animal work was conducted in accordance with federal, state, and local regulations following NIH and AAALAC guidelines, with protocol #0113-008-16 approved by the MIT Institutional Committee on Animal Care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 document ethical compliance and institutional approval. These are standard statements required for animal research and are appropriately included with specific protocol numbers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:48:51.315261Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "12c54dc6-2d61-4e90-9c4f-71074969d756",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "047fff66-f585-48f7-aaec-0d50587bf61f",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "d376e1ee-d3f3-4d1b-95fc-0430a40437a9",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "18ebee92-1fe1-4c62-9164-93b071286a6f",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "40901e8a-b7cc-4eb7-b342-b1bf3587370b",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "5904f216-872c-4d3b-b232-c2477b8ed021",
+      "result_id": "2d759074-6703-4d06-83ce-c0fd78293600"
+    },
+    {
+      "claim_id": "3ec99df1-fb28-4cfa-949c-c5de8986c276",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "dbc39c2a-dea8-48fd-a6e1-3626cfd12b77",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "33a0b7f3-b44b-4c41-ae09-34bd57e8456b",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "3ca5be2f-3812-4f77-aa2b-0b3b01c912a2",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "a97635a9-899a-472e-a121-65919443581c",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "a5ff9a20-0995-4828-bbb5-9caa52163e71",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "9471fd6c-b2cc-4c1b-864c-036ee29947b2",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "70c135de-331a-48f6-add0-010f741ce789",
+      "result_id": "3203c353-7b26-4114-9d83-324353f892f5"
+    },
+    {
+      "claim_id": "a4f9ffc2-ae8a-4cfe-b4d9-3a89872d27bd",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "d5d66e3d-5bd7-4f35-b891-23c80e0c4e3d",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "ee65d30e-64ed-4a2f-bd60-c09935303905",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "fd2b65c2-4d19-4200-9d7b-75e4cf45f396",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "0b1b7036-1954-4309-a925-d7957243c4a0",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "9ccad7a7-d8dc-4801-89fe-648e9507b26e",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "a26a08ac-306e-4fb4-aaa7-a643f5b4bfb7",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "93a90645-77dd-4b68-abbe-9346e31ea4e0",
+      "result_id": "92c329a2-fa76-45dc-8983-9e7784beac1c"
+    },
+    {
+      "claim_id": "69b95f07-2588-4809-be34-c3155a982c1a",
+      "result_id": "c1ac6aca-c5b9-468f-b8ed-2c6211f0c927"
+    },
+    {
+      "claim_id": "70c135de-331a-48f6-add0-010f741ce789",
+      "result_id": "c1ac6aca-c5b9-468f-b8ed-2c6211f0c927"
+    },
+    {
+      "claim_id": "9764d620-5991-4698-b357-d81532ed0203",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "a6644451-f59d-44bd-9908-5cd72d10a08b",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "09f58fe5-33e5-4ee4-be4f-201878ad2b14",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "4f0ce1f7-6b52-4f04-a1b2-531246624085",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "bd121358-a817-4b73-ab19-87ec74104b40",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "d7dc0c9e-6b1d-4d98-9590-55986b796311",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "9ff86244-6f4b-454e-ab9e-ca368285a479",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "d2e2f03c-51ca-4b0e-853d-2c12dc9fc809",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "49774a5a-fe96-448a-a3bc-b75cf1bb5994",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "a953fbe5-379d-4599-aa93-7571d6577376",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "06da6098-53f9-4070-8f38-5992e49fc1b4",
+      "result_id": "274f2b80-dbe4-4d35-98fc-b8bdcc5f5a82"
+    },
+    {
+      "claim_id": "2003ebb2-a0ed-4216-80c1-633e998eebed",
+      "result_id": "3eecf924-eddd-45f1-8d71-b381d65d3b45"
+    },
+    {
+      "claim_id": "d28eb2b3-c1a5-4190-b6fa-905863d302ff",
+      "result_id": "3eecf924-eddd-45f1-8d71-b381d65d3b45"
+    },
+    {
+      "claim_id": "75aecd9b-70bc-4d87-9fd9-af8a25262e26",
+      "result_id": "3eecf924-eddd-45f1-8d71-b381d65d3b45"
+    },
+    {
+      "claim_id": "7b3c8b5d-93c7-454e-a835-1742ddb2ebcc",
+      "result_id": "651d465f-e267-4764-9fb2-35c137b72f31"
+    },
+    {
+      "claim_id": "4c258315-479d-4ce3-b9f8-b117bedce1f5",
+      "result_id": "651d465f-e267-4764-9fb2-35c137b72f31"
+    },
+    {
+      "claim_id": "4dcc1b6f-804e-4bef-adbc-a129ec5be550",
+      "result_id": "651d465f-e267-4764-9fb2-35c137b72f31"
+    },
+    {
+      "claim_id": "b068b9a2-1624-409a-abbd-11382b4e2f23",
+      "result_id": "651d465f-e267-4764-9fb2-35c137b72f31"
+    },
+    {
+      "claim_id": "fc45abf2-6dd8-4ea4-a111-7ca769fe5969",
+      "result_id": "59cfb804-ff0b-43d6-bf16-d1d542cf1601"
+    },
+    {
+      "claim_id": "ecbce4a0-add5-4059-ac91-5b4426e40174",
+      "result_id": "59cfb804-ff0b-43d6-bf16-d1d542cf1601"
+    },
+    {
+      "claim_id": "c0a01c20-f692-4d5a-ac10-72cc0d042e7f",
+      "result_id": "59cfb804-ff0b-43d6-bf16-d1d542cf1601"
+    },
+    {
+      "claim_id": "e11b408d-a12b-49e2-9918-801649a64a8d",
+      "result_id": "5eec3f21-fdc7-43e5-82bf-6dffcde4ac4f"
+    },
+    {
+      "claim_id": "3ef39d35-b04a-44d9-8041-6cc074bba0a1",
+      "result_id": "5eec3f21-fdc7-43e5-82bf-6dffcde4ac4f"
+    },
+    {
+      "claim_id": "d8995ef7-24c1-4240-8e72-b2da29b2d7ab",
+      "result_id": "5eec3f21-fdc7-43e5-82bf-6dffcde4ac4f"
+    },
+    {
+      "claim_id": "ab987df7-233b-4f80-81d8-710eaa8711e7",
+      "result_id": "5eec3f21-fdc7-43e5-82bf-6dffcde4ac4f"
+    },
+    {
+      "claim_id": "cc5d2482-c025-44bf-b799-24e8e4f01004",
+      "result_id": "2015ddfd-1285-4c2d-9651-73ae2b744c85"
+    },
+    {
+      "claim_id": "3a2b2baf-6337-410d-8003-99fb4576d87c",
+      "result_id": "2015ddfd-1285-4c2d-9651-73ae2b744c85"
+    },
+    {
+      "claim_id": "2756c264-fdd9-49ac-b60a-d8fdc37443da",
+      "result_id": "2015ddfd-1285-4c2d-9651-73ae2b744c85"
+    },
+    {
+      "claim_id": "678ceda4-d6fc-43d5-adfc-ec8a65cca821",
+      "result_id": "2015ddfd-1285-4c2d-9651-73ae2b744c85"
+    },
+    {
+      "claim_id": "66a9e281-d13b-42a7-8d40-9394bfc5a71c",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "a5c15e29-c8ae-4b86-9973-3906da530e98",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "75e976fd-a5c3-43b9-8779-a22597628425",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "0b5c140f-a8f5-4f53-8c03-23c779c3461b",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "74402406-5d3d-4a6e-b77b-821b958f6410",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "44d9d793-e77d-4f45-8fd4-8222b82aec0c",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "e9b12855-d872-40fa-8ea9-8d0b151dde74",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "02944427-ef37-45ab-a6ed-4204c59c43cb",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "afbd6448-4ce8-47f4-9077-5803326c3e07",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "0d5ac0da-1873-4d14-9645-d1d82f13bf8e",
+      "result_id": "d84bb523-9671-493d-ba4b-1b721da63e09"
+    },
+    {
+      "claim_id": "52df6349-19bd-496a-9c68-913efd3906f8",
+      "result_id": "dc102756-3f47-4089-bff6-d1ed0e34ae9a"
+    },
+    {
+      "claim_id": "74b2573a-c4fd-4335-9761-39174848cb3a",
+      "result_id": "dc102756-3f47-4089-bff6-d1ed0e34ae9a"
+    },
+    {
+      "claim_id": "e5b44933-6e5f-450d-be6b-260c420adc6b",
+      "result_id": "dc102756-3f47-4089-bff6-d1ed0e34ae9a"
+    },
+    {
+      "claim_id": "54864374-b8e1-4143-864e-e67921553a30",
+      "result_id": "f81f08dd-df3f-43d2-8955-879c035870b6"
+    },
+    {
+      "claim_id": "ce60b5da-e7ea-4e42-841a-86c812d913ce",
+      "result_id": "f81f08dd-df3f-43d2-8955-879c035870b6"
+    },
+    {
+      "claim_id": "8b626adb-500a-4086-9a0c-db2149124f9c",
+      "result_id": "f81f08dd-df3f-43d2-8955-879c035870b6"
+    },
+    {
+      "claim_id": "c44ffa5d-9e1e-4b21-aff0-33228fa2658a",
+      "result_id": "f81f08dd-df3f-43d2-8955-879c035870b6"
+    },
+    {
+      "claim_id": "e54c4e70-6f68-4a7a-b8f6-e09c2e288825",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "90e9f51f-6373-478d-83a3-4a8c4ecdcc61",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "50ec9769-301a-43ea-80eb-845fd5b56cfc",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "03cb2d8a-f89e-4ce3-80a6-49d8ab22bc81",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "a1a707e0-0a4d-40bb-b461-cbeaef174e8b",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "996644e9-e144-4468-91c4-073a20c9b327",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "56069f06-3b9c-4771-9521-888b69624ab3",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "a8659ea9-6511-4da8-8de1-028a803a9a2c",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "f8dfcc70-1e54-4c09-bfed-be7312c2bbbc",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "2343dca4-6284-45d8-93bd-f3c694d176eb",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "d0e35b80-d81f-40a0-9c08-a8dee26777d4",
+      "result_id": "8a9ecce3-a67e-49c6-9467-824792de3634"
+    },
+    {
+      "claim_id": "fdafe540-0b69-40c0-8eab-c66b51cf6474",
+      "result_id": "80486529-b47a-4e1d-bb12-f2ff56522de6"
+    },
+    {
+      "claim_id": "ec9dd748-6a56-4c18-bfce-df3decf122ca",
+      "result_id": "231ea80a-0acc-4664-809e-9bb30165eb32"
+    },
+    {
+      "claim_id": "2f743ea4-0551-4821-a820-f07c02cb393f",
+      "result_id": "a6a6c10f-2377-47e2-9f0b-500ea84ce397"
+    },
+    {
+      "claim_id": "e4c80ea4-77b7-45a2-affe-75d5668e6f99",
+      "result_id": "a6a6c10f-2377-47e2-9f0b-500ea84ce397"
+    }
+  ],
+  "comparisons": []
+}

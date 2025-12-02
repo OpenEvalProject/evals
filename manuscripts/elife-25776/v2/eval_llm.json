@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Endogenous tagging of CTCF and Rad21 does not affect mESC function or protein levels. The authors validated their genome-edited cell lines (C59) by showing no effects on pluripotency (teratoma assay), stem cell gene expression, protein abundance, or ChIP-Seq enrichment patterns compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide comprehensive validation of the genome-editing approach through multiple orthogonal assays (teratoma, qPCR, Western blot, ChIP-Seq). The data in Figures 1E-F and supplements 2-3 demonstrate that tagged proteins behave like endogenous proteins, supporting the validity of subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CTCF and cohesin co-occupy chromatin sites and physically interact. ChIP-Seq analysis shows 97% of Rad21 peaks overlap with CTCF peaks, and co-immunoprecipitation demonstrates physical interaction between CTCF and cohesin subunits (Rad21, Smc1, Smc3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are well-supported by ChIP-Seq data (Figure 1, supplements 4-5) and co-IP experiments (Figure 1G). The 97% overlap is higher than previously reported (~70-90%, C11), and the co-IP provides direct evidence of physical interaction. Controls with both wt and C59 cells strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "CTCF exhibits a chromatin residence time of approximately 1-4 minutes. Single-molecule tracking (SMT) measurements indicate ~1 min residence time, while FRAP modeling suggests 3-4 min. The authors interpret 1 min as a lower bound and 4 min as an upper bound, with the true value likely closer to 1 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 present converging evidence from two independent methods (SMT and FRAP). The authors appropriately acknowledge limitations of each technique and provide proper controls (DNA-binding mutants, photobleaching correction). The residence time estimates are internally consistent and well-validated, though the range (1-4 min) reflects methodological uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cohesin (mRad21) exhibits much slower chromatin dynamics than CTCF, with a residence time of ~22 minutes in G1 phase. Recovery is faster in G1 than S/G2 phase, while CTCF shows the same recovery in both phases. Overexpressed mRad21 shows artifactually fast recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by FRAP data with appropriate cell cycle controls using the Fucci system. The ~22 min residence time for cohesin is derived from model fitting (Figure 2\u2014supplement 3C). The comparison between endogenous and overexpressed proteins (C39) validates the importance of studying endogenous proteins and strengthens confidence in the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CTCF and cohesin exhibit dramatically different binding dynamics (~10-20x difference in residence times and search times), forming a 'dynamic complex' rather than a stable complex. CTCF binds for ~1-2 min and searches for ~1 min, while cohesin binds for ~22 min and searches for ~33 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C88-C90 synthesize the residence time and search time measurements to reach a major conceptual conclusion. The large difference in dynamics is well-documented through multiple experimental approaches. This challenges the prevailing model of a stable loop maintenance complex and is a central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CTCF searches for binding sites through a combination of 3D diffusion (~65% of search time, ~41s) and non-specific chromatin association (~35% of search time, ~25s). The total search time is ~66s in mES cells and ~103s in U2OS cells. This search mechanism is close to optimal according to facilitated diffusion theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by kinetic modeling of fast stroboscopic paSMT data (Figure 3, Table 1). The modeling approach is sophisticated and accounts for multiple biases. The conclusion that the search mechanism is near-optimal (C47) is supported by citation to theory. The measurements in two cell types provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cohesin exhibits distinct dynamics from CTCF, with ~40% topologically engaged with chromatin in G1, ~13% in non-specific association, and ~47% in free diffusion. Cohesin diffuses more slowly than CTCF. A Rad21 mutant unable to form cohesin complexes shows rapid diffusion and little chromatin association, as does overexpressed wild-type mRad21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by kinetic modeling of paSMT data for mRad21 in different cell cycle phases (Figure 3C-E, Table 1). The use of a Rad21 mutant (C54) and comparison with overexpressed protein (C55) provide important controls. The inference that essentially all endogenous mRad21 is in cohesin complexes (C56) is well-supported by these controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Cohesin searches for ~33 minutes between topological chromatin engagements in G1, spending ~77% of this time in 3D diffusion (~26 min) and ~23% in non-specific chromatin association (~7 min). During each cohesin binding-unbinding cycle, CTCF binds and unbinds ~20-30 times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are inferences from the kinetic modeling applied to cohesin dynamics. The authors appropriately note that applying a simple two-state model to cohesin is an approximation given the complexity of cohesin regulation. The calculation that CTCF cycles ~20-30 times per cohesin cycle (C60) is a straightforward consequence of the measured dynamics and highlights the dynamic nature of the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The large differences in CTCF and cohesin dynamics are inconsistent with a stable loop maintenance complex (LMC) model. CTCF and cohesin likely do not form stable complexes in solution, as evidenced by their different diffusion rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are logical inferences from the dynamic measurements. The ~10-20x difference in residence times and the different diffusion constants (Table 1) provide strong evidence against a stable complex. This is a key conceptual conclusion that challenges the prevailing model in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Despite their dynamic binding, CTCF and cohesin co-localize at the single-molecule level in small clusters (~30-40 nm radius). Two-color super-resolution imaging (dSTORM and PALM) shows significant co-localization at short distances but independence beyond the diffraction limit. Appropriate controls rule out technical artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by sophisticated super-resolution imaging (Figure 4A-C, supplements). The pair cross-correlation analysis (C65) provides quantitative evidence for co-localization. The H2B-SNAPf/Halo control (C67) effectively rules out technical artifacts. The clustering analysis addresses potential photo-blinking artifacts through multiple approaches including two-color labeling experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors propose a 'dynamic LMC' model where CTCF positions cohesin at loop boundaries and cohesin holds chromatin strands together, but CTCF molecules rapidly exchange while cohesin remains bound. Loop lifetimes are unlikely to exceed 1-2 hours, and loops continuously form and dissolve throughout the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 present the authors' interpretive model synthesizing their findings. The model is well-supported by the dynamic measurements and provides a coherent framework for understanding how loops can be both structurally important and dynamically maintained. The estimate of 1-2 hour loop lifetimes (C76) is a reasonable inference from the measured residence times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The dynamic loop model is consistent with polymer simulation studies showing that only dynamic loops reproduce observed chromatin interaction frequencies. The findings support the loop extrusion model and suggest mechanisms for boundary permeability and competing loop domains through stochastic CTCF occupancy. This may facilitate enhancer-promoter scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 connect the experimental findings to theoretical models and broader biological implications. C78 and C82 are supported by appropriate citations. C79-C81 and C83 are speculative but reasonable extensions of the findings. The authors appropriately distinguish between established findings and speculative implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "At least one-third of cognate-bound CTCF molecules and the majority of chromatin-bound G1 cohesin molecules are involved in chromatin looping, based on estimates from ChIP-Seq data and loop counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 are inferences based on ChIP-Seq peak counts and loop numbers from Hi-C studies. While the authors provide detailed discussion in Appendix 1, these estimates involve multiple assumptions about loop architecture and the relationship between ChIP-Seq peaks and functional loops. The estimates are reasonable but inherently uncertain given the complexity of loop organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The measured CTCF residence time of ~1 min is a genomic average, with individual sites likely showing variation. There is likely oversampling of strong ChIP-Seq sites, which tend to be involved in looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are appropriate caveats about the residence time measurements. C25 acknowledges heterogeneity across binding sites, which is reasonable given the diversity of CTCF sites. C26-C27 note a potential bias toward stronger sites, which is supported by the citation to Merkenschlager and Nora, 2016. These caveats strengthen rather than weaken the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "TAD demarcation is strongest in G1 before S-phase, so cohesin dynamics in G1 should predominantly reflect its chromatin looping function rather than sister chromatid cohesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide important context for interpreting the cell cycle-specific cohesin measurements. C33 is supported by citation to Naumova et al., 2013. C34 is a reasonable inference that justifies focusing on G1 dynamics to study the looping function. This reasoning is sound and important for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C15",
+      "C16",
+      "C19",
+      "C27",
+      "C30",
+      "C47",
+      "C69",
+      "C70",
+      "C71",
+      "C78",
+      "C82"
+    ],
+    "result": "Background claims establishing prior knowledge about CTCF, cohesin, TADs, and loop domains from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C9, C11, C15-C16, C19, C27, C30, C47, C69-C71, C78, C82) summarize established knowledge from cited literature. They provide essential context for the study but are not novel findings. All are appropriately supported by citations to relevant prior work.",
+    "result_type": "MINOR"
+  }
+]

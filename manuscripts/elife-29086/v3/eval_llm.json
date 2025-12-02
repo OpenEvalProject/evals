@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C105",
+      "C106"
+    ],
+    "result": "Averaged prestimulus beta power in somatosensory cortex is negatively correlated with detection and attention performance across human MEG and mouse LFP recordings. Higher beta power predicts decreased detection probability and reduced attentional allocation, with effect sizes larger for detection than attention tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 and C105-C106 collectively demonstrate robust negative correlations between prestimulus beta power and behavioral performance across three datasets (human detection, mouse detection, human attention). Statistical significance is shown via multiple complementary analyses (t-tests, Wilcoxon tests, effect sizes, ideal observer analysis), with consistent results across species and recording modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C3"
+    ],
+    "result": "Beta activity emerges as transient high-power events on individual trials rather than sustained oscillations. The accumulation of these events across trials creates the appearance of continuous beta band activity in trial-averaged spectrograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C3 are directly supported by visual evidence in Figure 2 showing individual trial spectrograms with discrete beta events versus averaged spectrograms showing continuous bands. This observation is consistent across all three datasets (human detection, mouse detection, human attention).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A power threshold of 6X median optimally captures beta events that account for variability in trial-averaged prestimulus beta power. This threshold captures approximately 20% of all local maxima in the beta frequency band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by systematic analysis in Figure 4 showing correlation between percent area above various cutoffs and mean prestimulus power. The 6X median cutoff shows peak correlation across all three datasets, providing an empirical justification for the threshold selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Beta event features show homology across tasks and species. Events are characterized by stereotyped properties: <4 events per 1s prestimulus period, monotonically decreasing power distribution, restricted duration (~145-167 ms), and confined frequency span (~8.6-10.6 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by probability histograms in Figure 5 showing consistent distributions of event features across all three datasets. The stereotyped nature of high-power events is further supported by Figure 5\u2014figure supplement 1 showing that lower threshold events become more distributed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C49"
+    ],
+    "result": "Beta event rate (number of events per trial) shows significantly higher correlation with trial-averaged prestimulus beta power compared to other event features (power, duration, frequency span) across all datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C49 are supported by statistical analysis in Figure 6 showing Friedman tests followed by post-hoc comparisons. Event number consistently shows the highest correlation coefficients across human detection, mouse detection, and human attention datasets (p<0.05, Holm-Bonferroni corrected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C109",
+      "C110"
+    ],
+    "result": "Beta event rate is the most consistent predictor of behavioral performance across tasks and species. In human data, only event rate significantly predicts detection and attention, while in mouse data event power and frequency span also show significance, though with smaller effect sizes than event rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60, C109-C110 are supported by comprehensive behavioral analyses in Figure 7 including time-resolved event rates, pooled averages, effect sizes, and ideal observer analyses. Statistical significance is demonstrated via t-tests and Wilcoxon tests, with event rate showing the highest percentage of significant subjects/sessions across datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Trials with \u22652 prestimulus beta events predict non-detection/attend-out conditions, while trials with 0 events predict detection/attend-in conditions. The optimal event number criterion is 2 events for most subjects/sessions (50-60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by probability histograms, effect size calculations, and optimal criterion analysis in Figure 7\u2014figure supplement 2. The binary classification analysis provides a principled approach to determining the threshold, though the moderate percentage of subjects at the optimal criterion (50-60%) suggests some individual variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C111"
+    ],
+    "result": "The timing of the most recent beta event relative to stimulus onset predicts detection performance. Events occurring closer to stimulus onset (<~200 ms) are more likely to result in non-detection. This timing effect is the most consistent predictor among event features in human data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 and C111 are supported by probability time histograms and statistical analyses in Figure 8. The ~200 ms temporal window is identified via pointwise statistical tests. In human data, timing is the only significant feature, while in mouse data power and frequency span also show significance but with smaller effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C112"
+    ],
+    "result": "Event number and event timing independently predict detection performance. When event number is matched across conditions, timing remains predictive (p=0.01 in humans, p=0.076 in mice). When timing is matched, event number remains predictive (p=0.034 in mice, p=0.075 in humans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 and C112 are supported by histogram matching analysis in Figure 9. The approach of matching one variable while testing the other provides evidence for independent contributions. However, the marginal significance in some comparisons (p=0.075-0.076) and the substantial trial loss (~50-67%) during matching suggest this result should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C89",
+      "C90"
+    ],
+    "result": "Inter-event intervals (IEI) do not differ between behavioral conditions and show no clear evidence of rhythmic beta event generation. Many IEIs are <150 ms, suggesting multiple events can occur within continuous high-power regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C89-C90 are supported by IEI distributions in Figure 10i showing no differences between detected/non-detected conditions and no clear rhythmic structure. The observation of short IEIs relative to typical event duration (~150 ms) is consistent with the data and leads logically to the alternative event definition explored in Figure 11.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Using an alternative 'non-overlapping events' definition (continuous supra-threshold regions), ~80% of events have a single local maximum, and multi-maxima events do not constitute a distinct functional class. IEI distributions for non-overlapping events show no rhythmicity when compared to jittered controls. Main results on event rate predicting behavior hold under this alternative definition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by analyses in Figure 11 showing probability distributions, IEI comparisons with jittered controls, and replication of correlation and behavioral prediction results. The jitter control is an appropriate method to test for rhythmicity. The high congruency between definitions (~80% overlap) explains why results are consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Beta event generation is consistent with a 'bursty' process rather than a Poisson or more regular process. Fano Factors are significantly >1 across all datasets, and Fano Factors exceed CV\u00b2 values, indicating the process is not a renewal process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by statistical analysis in Figure 10ii showing Fano Factors significantly >1 (p=9.77\u00d710\u207b\u2074) and exceeding CV\u00b2 values in almost all subjects/sessions. The interpretation that this indicates a bursty process is reasonable, though the analysis is limited to the 1s prestimulus window as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C20",
+      "C21",
+      "C108",
+      "C136"
+    ],
+    "result": "Beta events are generated by a transient 'bursty' mechanism rather than dynamic amplitude modulation of a sustained oscillation. Time lags above a 2X median amplitude cutoff show rhythmicity (centered at integer multiples of beta period), while time lags below cutoff do not (flat distributions), supporting the Bursty Generator hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C20-C21, C108, and C136 are supported by Hilbert amplitude analysis in Figure 12B showing contrasting distributions for time lags above versus below cutoff. The histogram matching for time lag duration is an important control. The analysis provides strong evidence distinguishing between the two competing hypotheses, though it relies on the 2X median amplitude cutoff being appropriately chosen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C116",
+      "C151"
+    ],
+    "result": "Functionally relevant differences in averaged beta power reflect differences in beta event rate rather than event power, duration, or frequency span. This represents a fundamental feature underlying behaviorally relevant beta power differences across tasks, recording modalities, and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C116, and C151 represent the central conclusion synthesizing results from Figures 6-7. The conclusion is well-supported by converging evidence from correlation analyses, behavioral predictions, effect sizes, and consistency across three independent datasets. This is the primary novel contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C121",
+      "C122"
+    ],
+    "result": "Beta events occurring within ~200 ms of stimulus onset are more likely to impair perception. This suggests beta events may have an inhibitory impact extending beyond their duration (~150 ms) to a period as long as ~200 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19, C121-C122 are supported by timing analyses in Figure 8i showing significant differences in probability time histograms out to ~200 ms prestimulus. However, C122 is speculative about the mechanism (prolonged inhibitory impact vs. increased probability of events near stimulus). The temporal window is empirically determined but the mechanistic interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "In mouse detection data, averaged beta power does not differ significantly between correct rejections and false alarms, arguing against the possibility that differences are due to criterion modulation or motor readiness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by analysis in Figure 1\u2014figure supplement 1B showing no significant difference in beta power between CR and FA trials. This is an important control ruling out alternative explanations. However, this analysis was only possible in the mouse dataset due to task design and low false alarm rates in human data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C137",
+      "C132"
+    ],
+    "result": "High-power beta events (>~3X median) are distinct from lower-power transients in their generation and functional impact. High-power events show stereotyped waveforms and spectral features, and there is a clear switch in the relative importance of event features (rate vs. power) as the power cutoff is varied around 3X median.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 and C137 are supported by data in Figure 5\u2014figure supplement 1 showing stereotyped features at high power, and Figures 6\u2014figure supplement 2 and 7\u2014figure supplement 1 showing the crossover in predictive importance around 3X median. However, C132 is explicitly speculative ('we conjecture'), and the lack of clear bimodality in the power distribution (acknowledged by authors) weakens the claim of distinct mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C23",
+      "C24",
+      "C106"
+    ],
+    "result": "Results showing beta event rate predicts behavior are remarkably consistent across human MEG detection, human MEG attention, and mouse LFP detection tasks, indicating fundamental consistency in beta dynamics across recording scales and species in mammalian neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C23-C24, and C106 are supported by parallel analyses across all three datasets throughout the manuscript. The consistency is demonstrated quantitatively through similar effect sizes, correlation patterns, and statistical significance across datasets. This cross-species, cross-modality replication is a major strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C113",
+      "C125",
+      "C126"
+    ],
+    "result": "An increased propensity of beta events predicts failure to effectively transmit information through specific neocortical representations. The rate of beta events predicts the presence of an inhibitory process that decreases sensory information relay to or from SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C113, C125-C126 represent mechanistic inferences from the behavioral data. While the negative correlation between beta event rate and detection/attention is well-established, the interpretation as 'inhibitory' or 'failure to transmit information' is inferential. The claims are reasonable interpretations but go beyond what is directly demonstrated by the correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "These are the first results showing that beta event rate in human neocortical signals is a meaningful predictor of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 asserts novelty but this is difficult to verify without comprehensive literature review. The authors cite prior animal studies (C115) showing transient beta features correlate with behavior, so the novelty appears to be specifically in human neocortical recordings. The claim may be accurate but cannot be fully evaluated from the manuscript alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C124",
+      "C117"
+    ],
+    "result": "In spontaneous, prestimulus states with unpredictable stimulus timing, beta's inhibitory influence on sensory processing is unlikely to operate through temporal phase-alignment of local oscillations with external input, contrary to established theories emphasizing phase-alignment for signal transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C124, and C117 are supported by the findings that event rate and timing (not phase) predict behavior, combined with the experimental design using randomized stimulus timing (C119). However, this conclusion is specific to spontaneous prestimulus states and does not rule out phase-alignment in other contexts (acknowledged in C123). The inference is logical but represents an interpretation of negative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Based on prior mechanistic work, beta's inhibitory impact on function is related to the likelihood of observing strong distal synaptic drive to pyramidal neurons (event number) and/or this drive occurring close to stimulus onset (event timing), rather than stronger, longer-lasting, or broader frequency span drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 connect current findings to prior mechanistic work (Sherman et al., 2016). C127 is supported by citation to prior work. C128 is a reasonable inference connecting the current behavioral findings (event rate and timing matter most) to the prior mechanistic model. However, this remains an inference requiring direct mechanistic testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C120"
+    ],
+    "result": "Potential mechanisms by which beta events impair perception include: (1) recruitment of supragranular inhibitory neurons, (2) alteration of distal dendritic processes in layer V pyramidal neurons, (3) thalamic filtering processes, or (4) presence of processes that enhance beta event rate such as specific thalamic inputs or neuromodulatory environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 and C120 are explicitly speculative about potential mechanisms ('could', 'may', 'suggest'). These are reasonable hypotheses based on the data and prior literature, but they are not tested in this study. The authors appropriately present these as possibilities requiring future investigation rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The transient nature of beta events has implications for brain stimulation studies (tACS, TMS). Stimulation protocols matching the intermittent character of beta events, targeting event rate and timing, may be more effective. Specifically, driving \u22652 events in 1s prestimulus may impair perception, while blocking events may benefit perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C150 are speculative predictions about brain stimulation applications ('may be', 'predict'). While these are logical extensions of the findings, they represent untested hypotheses. The specific predictions (e.g., driving \u22652 events impairs perception) are based on the observational data but require experimental validation through actual stimulation studies.",
+    "result_type": "MINOR"
+  }
+]

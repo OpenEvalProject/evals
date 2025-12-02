@@ -1,0 +1,509 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Huntington's disease is a late-onset neurodegenerative disease caused by CAG repeat expansion in the huntingtin gene, preceded by a prolonged premanifest period with prodromal symptoms including cognitive decline and changes in cortical network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by established scientific knowledge and multiple citations to prior work. These claims accurately describe the genetic basis of Huntington's disease and characterize the premanifest period based on existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Subtle network dysregulations may occur in a very far from disease onset (VFDO) stage, reaching back 15-20 years before motor symptoms, with early deficits including loss of phosphodiesterase 10A and altered visuospatial orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by citations to prior work and reference to Figure 1a showing the disease timeline. The temporal characterization and early deficits are documented in the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The VFDO stage represents an early vulnerable window for disease development and preventive therapy, with the visual cortex being one of the first regions functionally affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 is a hypothesis stated by the authors with supporting citations, while C11 is supported by citations. However, the claim that this represents a therapeutic window is speculative and requires validation through intervention studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "At 10-15 weeks in Hdh150 mice, the cortical microcircuit shifts toward a more excitable state with increased neuronal activity, higher frequency of Ca2+ transients, and emergence of hyperactive neurons, accompanied by behavioral changes including decreased anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C29 are supported by experimental data from two-photon Ca2+ imaging with appropriate statistical analysis (Mann-Whitney tests, t-tests, two-way ANOVA with p<0.05). The findings show consistent patterns of increased activity, frequency, and hyperactive neurons with no change in cell density or AUC, indicating specific network changes rather than general neuronal dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cortical hyperactivity in VFDO Hdh150 mice occurs in the absence of mHtt aggregates, reactive astrocytes, apoptotic cell death, or spatial clustering of hyperactive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by immunohistochemistry data and spatial analysis with appropriate statistical tests. The findings demonstrate that early network changes precede classical pathological hallmarks, though the inference about independence (C35) requires careful interpretation as absence of evidence is not evidence of absence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Synchronicity is increased in Hdh150 mice compared to controls, particularly in medium-medium and hyperactive neuron pairs, with an inverse relationship between synchronicity and pairwise distance that is abolished by randomization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 are supported by Pearson correlation analysis with appropriate statistical tests (Mann-Whitney, two-way ANOVA). The randomization controls (C41, C42, C46) strengthen the conclusion that increased synchronicity is not due to chance. The spatial analysis (C43-C46) is consistent with prior findings in motor cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Mitochondrial respiration is unchanged in cortical tissue of Hdh150 mice, suggesting neuronal hyperactivity occurs prior to metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by high-resolution respirometry data with appropriate statistical analysis. However, the inference that hyperactivity precedes metabolic changes (C48) assumes that mitochondrial respiration is a comprehensive measure of metabolic function, which may not capture all metabolic alterations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "VFDO Hdh150 mice show anxiolytic behavior in open-field tests without deficits in visual discrimination or motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by behavioral experiments with appropriate statistical analysis (two-way ANOVA, Mann-Whitney test). The preserved visual discrimination (C49) and motility (C51) alongside anxiolytic behavior (C50) suggest specific behavioral changes rather than general impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "mRNAs carrying CAG repeats bind to the MID1 protein complex in a repeat size-dependent manner, and disruption of the MID1/PP2A/mTOR complex leads to increased PP2A activity, decreased mTOR activity, and reduced translation of expanded CAG repeat mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by citations to previous work by the authors. These claims establish the mechanistic basis for the metformin intervention but rely on prior publications rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Metformin interferes with the MID1/PP2A/mTOR complex and reduces mHtt translation in a concentration-dependent manner in vitro, with effects mediated by PP2A activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C52-C58 are supported by filter retardation assays, siRNA knockdown experiments, and FRAP-based translation assays with appropriate statistical analysis (Mann-Whitney, RM two-way ANOVA). The lack of additive effect with MID1 depletion (C54) and the ocadaic acid experiments (C57-C58) support the proposed mechanism through PP2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In vivo metformin treatment (5 mg/ml in drinking water) reduces S6 phosphorylation after 3 weeks and significantly reduces mHtt expression after 11 weeks in cortical tissue without affecting drinking volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by western blot analysis with appropriate statistical tests. The time-dependent effect (non-significant at 3 weeks, significant at 11 weeks) suggests a gradual reduction in mHtt protein load. However, the study would benefit from intermediate time points to better characterize the kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Metformin reduces inclusion bodies and rescues motility impairment in C. elegans polyQ disease model, with effects confirmed on heat-inactivated bacteria and mimicked by arc-1 (MID1 homolog) knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by C. elegans experiments with appropriate statistical analysis (Mann-Whitney, p<0.0001). The heat-inactivated bacteria control (C65) addresses potential confounding by bacterial metabolism of metformin, and the arc-1 RNAi experiments (C66) support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Three weeks of metformin treatment fully reverses early neuronal network dysregulations in Hdh150 mice, including restoration of active cell proportion, Ca2+ transient frequency, and abolishment of the hyperactive subgroup, with specific effects on dysregulated components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C68-C77 are supported by two-photon Ca2+ imaging data with appropriate statistical analysis. The complete restoration of network parameters and the specificity of effects (C72) are well-documented. However, the slight effect on AUC in WT mice (C73) with speculative explanation suggests some non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Metformin treatment fully reverses anxiolytic behavior in Hdh150 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by open-field test data with appropriate statistical analysis (Mann-Whitney test, multiple comparisons). The restoration of behavior to WT levels (p=0.8 for WT vs Hdh150 met) demonstrates complete reversal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Metformin reduces mHtt protein load in cell culture and in vivo, reverses early Huntington's disease-related network dysregulations and behavioral aberrations in mice, and influences inclusion body formation and motility in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are well-supported by the collective experimental data from multiple model systems (cell culture, mice, C. elegans) with consistent findings across platforms. The conclusions are appropriately drawn from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A dysregulation of spontaneous neuronal activity was identified in the visual cortex at a very early VFDO stage in Hdh150 mice, characterized by increased activity, hyperactive neurons, and enhanced synchronicity, with preserved visual cortex function but subtle behavioral alterations suggesting exhausted compensational reserve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by the experimental data presented. The characterization of the VFDO stage (C82-C83) is well-documented, though the inference about preserved function (C84) and exhausted compensational reserve (C85) involves some interpretation beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Anxiety-related abnormalities have been described in preclinical Huntington's disease models, and the changes described represent the earliest identified abnormalities in heterozygous Hdh150 animals, which closely resemble human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by citations to prior work. The claim of earliest identified abnormalities (C87) is a comparative statement that depends on the literature but is appropriately qualified with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Network dysregulation as a pathophysiological entity has been recognized in Alzheimer's disease, with hyperactive neurons associated with early disease stages independent of plaque formation, suggesting neuronal hyperactivity may be a principle mechanism in multiple neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by citations to Alzheimer's disease literature. The conclusion that hyperactivity is a principle mechanism across diseases (C93) is an inference based on comparison between Huntington's and Alzheimer's diseases, appropriately presented as a conclusion rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Hyperactive neurons in Hdh150 mice emerge without aggregates, clustering, reactive astrocytes, apoptosis, or metabolic dysregulation, suggesting the cortex responds to early pathophysiological events in subcortical regions, consistent with Alzheimer's disease progression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 are supported by the experimental data and comparisons to Alzheimer's disease literature. The speculation about subcortical drivers (C99, C103-C104) is reasonable given the synchronicity data but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Expression of mutant Htt during early phases is important for disease development, and preventive strategies will be most effective at VFDO stages when cellular and network degeneration have not yet been established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 are supported by citations to other mouse models. However, claims C108-C109 are speculative conclusions about therapeutic strategy that, while reasonable, are not directly tested in this study and represent future work rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Phenotype reversal has been demonstrated in conditional mouse models, and gene suppression reducing mHtt by \u226540% ameliorates Huntington's disease phenotype, with earlier and transient suppression showing more robust and long-lasting effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 are supported by citations to multiple prior studies. These claims establish the rationale for early intervention but are based on literature rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Developing siRNA and antisense oligonucleotides for clinical use faces challenges including toxicity, delivery requiring CSF injection, and difficulty targeting the pathogenic mHttexp1p fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by established knowledge and citations. These claims provide context for why metformin is an attractive alternative but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Metformin is an FDA-approved, orally delivered drug that suppresses mHtt production (both full-length and mHttex1p) and has shown promise in other disease models, though previous Huntington's disease studies showed limited effects with late treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 are supported by the current study's data (C121) and citations to prior work (C123-C127). The comparison to the Ma et al. study (C127) provides important context for the timing of intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Preventive treatment at very early stages is important for stable disease influence, consistent with other CAG expansion diseases, and gender differences in previous studies may be explained by disease progression differences affecting blood-brain barrier permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C135 mix interpretation of prior work (C128, C132-C133) with hypotheses (C129) and speculations about mechanisms (C134-C135). While the reasoning is logical, the speculative nature of several claims limits the strength of support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "In vivo metformin has highly significant effects (p=0.03 to p<0.0001) on primal changes in VFDO phases of Huntington's disease, with the study focusing on male mice to reduce variability and no expected blood-brain barrier changes at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by the experimental data with strong statistical significance. The focus on male mice (C137) is a methodological choice that limits generalizability but is justified. The assumption about blood-brain barrier (C138) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Metformin's effects are mediated through the MID1/PP2A/mTOR pathway rather than AMPK activation at the doses used, with AMPK activation being dose-dependent and the blood-brain barrier limiting metformin bioavailability in preclinical animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 are supported by citations to prior work by the authors and the current study's data. The mechanistic distinction between PP2A and AMPK pathways is well-supported, though the dose-response relationship (C143, C145) involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Metformin has a specific effect on mutant Htt protein expression while leaving wild-type Htt untouched, making it unique among available compounds, though the effects of Htt depletion on brain function remain debated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 are supported by the western blot data (C151) and citations to prior work (C148-C150). The claim of uniqueness (C152) is a strong statement that depends on the current state of the field but is supported by the selective effect shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153"
+    ],
+    "result": "An in silico study showed diabetic Huntington's disease patients treated with metformin had better cognitive performance than untreated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C153 is supported by citation to an in silico study. This provides supportive evidence for metformin's potential in humans but is observational and subject to confounding factors inherent in retrospective analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Metformin treatment reverses all cortical network dysregulations in VFDO Hdh150 mice, potentially by activating intrinsic repair mechanisms and preventing secondary damage, suggesting a shift toward re-balancing network function as a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is well-supported by the experimental data. However, claims C155-C157 involve speculation about mechanisms and therapeutic strategies that, while reasonable, go beyond the direct evidence and represent proposals for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The data provide evidence for a VFDO pathophysiological entity characterized by early network and behavioral changes, with disease developing over a long period in mice similar to humans, providing an early therapeutic window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 are supported by the collective experimental data. The characterization of the VFDO stage and its implications for therapy are well-founded, though the comparison to human disease progression (C159) involves some extrapolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "All attempts at causative Huntington's disease therapy have been unsuccessful, and chronic treatment of mutation carriers starting in VFDO stages is recommended. Metformin has the potential to reduce mHtt load and influence early pathology, is well-tolerated with benign side effects, and prescription from young adulthood is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C161 is supported by citations. Claims C164-C165 are supported by the experimental data. However, claims C162-C163 and C167 are recommendations for clinical practice that go beyond the evidence from this mouse study and would require clinical trials to validate. The safety claims (C166) are based on diabetes use but may not fully translate to long-term use in young, healthy mutation carriers.",
+    "result_type": "MAJOR"
+  }
+]

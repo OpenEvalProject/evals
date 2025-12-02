@@ -1,0 +1,1495 @@
+{
+  "submission": {
+    "id": "882fc96f-ea23-4556-9cb1-beaa989185c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:55:10.788043Z",
+    "updated_at": "2025-12-02T01:55:10.788043Z"
+  },
+  "content": [
+    {
+      "id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "submission_id": "882fc96f-ea23-4556-9cb1-beaa989185c6",
+      "content_type": "manuscript",
+      "content_text": "# A quantitative approach for analyzing the spatio-temporal distribution of 3D intracellular events in fluorescence microscopy\n\n## Authors\n\n- Thierry P\u00e9cot<sup>1</sup> ([ORCID: 0000-0003-0772-9753](https://orcid.org/0000-0003-0772-9753))\n- Liu Zengzhen<sup>2</sup>\n- J\u00e9r\u00f4me Boulanger<sup>2</sup>\n- Jean Salamero<sup>2</sup>\n- Charles Kervrann<sup>1</sup> ([ORCID: 0000-0001-6263-0452](https://orcid.org/0000-0001-6263-0452)) \u2020\n\n### Affiliations\n\n1. Serpico Team-Project Inria, Centre Rennes-Bretagne Atlantique Rennes France\n2. CNRS UMR 144, Space Time Imaging of Endomembranes Dynamics Team PSL Research University, Institut Curie Paris France\n3. Cell and Tissue Imaging Facility IBiSA, Institut Curie Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnalysis of the spatial distribution of endomembrane trafficking is fundamental to understand the mechanisms controlling cellular dynamics, cell homeostasy, and cell interaction with its external environment in normal and pathological situations. We present a semi-parametric framework to quantitatively analyze and visualize the spatio-temporal distribution of intracellular events from different conditions. From the spatial coordinates of intracellular features such as segmented subcellular structures or vesicle trajectories, QuantEv automatically estimates weighted densities that are easy to interpret and performs a comprehensive statistical analysis from distribution distances. We apply this approach to study the spatio-temporal distribution of moving Rab6 fluorescently labeled membranes with respect to their direction of movement in crossbow- and disk-shaped cells. We also investigate the position of the generating hub of Rab11-positive membranes and the effect of actin disruption on Rab11 trafficking in coordination with cell shape.\n\n## Introduction\n\nModern light microscopy associated with fluorescence molecule tagging allows studying the spatial distribution of intracellular events. Unfortunately, fluorescent images are complex to analyze and additional software is needed to evaluate statistical differences between different conditions (Meijering et al., 2016; Tinevez et al., 2017). Automatic methods have the obvious advantage of being quicker and reproducible. However, most computational methods are based on the complex combination of heterogeneous features such as statistical, geometrical, morphological and frequency properties (Peng, 2008), which makes it difficult to draw definitive biological conclusions. Additionally, most experimental designs, especially at single-cell level, pool together data coming from replicated experiments of a given condition (Schauer et al., 2010; Merouane et al., 2015; Biot et al., 2016), neglecting the biological variability between individual cells.\n\nMicro-patterning is now a well-established strategy to reduce morphological variability by imposing constraints on adhesion sites, which has been shown to influence the cytoskeleton geometry and transport carrier localization (Th\u00e9ry et al., 2005; Schauer et al., 2010). This technique opened the way to pairwise comparisons of conditions with a two-sample kernel density-based test by pooling together all data from each condition (Duong et al., 2012). Unfortunately, it does not consider the sample-to-sample variability because all replicated experiments from a given condition are simply merged together. Additionally, the visualization of the kernel density maps enables to average several experiments but fails to identify specific locations of interest in the cell (e.g. docking areas). Finally, assessing the dynamical behavior of labeled membrane structures, a fundamental task for trafficking analysis, remains out of scope in this framework.\n\nIn this paper, we describe a method that we call QuantEv dedicated to the analysis of the spatial distribution of intracellular events represented by any static or dynamical descriptor (e.g. detected points, segmented regions, trajectories...) provided that the descriptors are associated with spatial coordinates. QuantEv offers a unifying frame to decipher complex trafficking experiments at the scale of the whole cell. It is typically able to detect subtle global molecular mechanisms when trajectory clustering fails. An overview of the approach is presented in Figure 1. Our approach first computes 3D histograms of descriptors in a cylindrical coordinate system (parameterized by radius $r$, angle $\\theta$ and depth $z$) with computational cell shape normalization, enabling comparisons between cells of different shape. Densities are obtained via adaptive kernel density estimation (Silverman, 1986; Taylor, 2008). Visualization through histograms and densities allows giving a clear biological interpretation of the experiments. We use the Earth Mover\u2019s Distance (Rubner et al., 2000) and the Circular Earth Mover\u2019s Distance (Rabin et al., 2011) to measure the dissimilarity between densities associated with different experimental conditions. A statistical analysis of these distances reliably takes into account the biological variability over replicated experiments. By computing weighted densities for each point in the cell as the reference center, QuantEv identifies the point that gives the most uniform angular distribution. This point may coincide with a biological structure of interest that would act as the events emitter or attractor.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig1-v1.jpg)\n\n**Figure 1.:** Spatial distribution analysis: QuantEv computes 3D histograms and densities of intracellular descriptors to quantitatively compare different experimental conditions. Uniformity analysis: QuantEv identifies the point that gives the most uniform angular distribution of intracellular descriptors.\n\nIn the section Results, we describe the application of QuantEv to detect significant differences between molecular trafficking and phenotypes observed in cells with various shapes. The first application is concerned with the distribution of membranes labeled by GFP-Rab6 as a hallmark of vesicular carriers in unconstrained, crossbow- and disk-shaped cells. Rab6 proteins are transiently anchored to moving transport carriers from the Golgi apparatus located at the cell center to Endoplasmic Reticulum entry sites or to plasma membrane (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007; Bardin et al., 2015), both assumed to be located at the cell periphery. Cell shape imposes constraints on the cytoskeleton and consequently influences the spatial distribution of Rab6 transport carriers, as confirmed with kernel density maps (Schauer et al., 2010). We apply QuantEv to visualize and quantify this influence and to localize regions in the cell associated with Rab6 trafficking stages. In addition, Rab6 positive membranes were reported to move from and toward the Golgi in apparent close proportions (Grigoriev et al., 2007, Grigoriev et al., 2011), and yet these membrane associated proteins are believed to traffic in majority from the Golgi located at the cell center to the cell periphery (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007) where they should dissociate from membranes and recycle back to the cytosol. To investigate these apparently antagonist statements, we apply QuantEv on Rab6 trajectories to characterize the dynamical behaviors of these transport carriers.\n\nThe second application focuses on the dynamics of mCherry-Rab11-positive membranes. Rab11 is known to be primarily localized to the Endosomal Recycling Compartment (ERC), and it organizes spatially and temporally recycling from this compartment (Ullrich et al., 1996; Gidon et al., 2012; Baetz and Goldenring, 2013; Boulanger et al., 2014). Here, we confirm by using QuantEv the hypothesis that the labeled transport intermediates are uniformly distributed around the ERC at the plasma membrane plane. Furthermore, we also investigate the progressive effect of actin disruption induced by Latrunculin A injection on the ERC localization with respect to time. We finally apply QuantEv to analyze the joined influence of actin disruption and cell shape on the radial distribution of Rab11 vesicles trafficking.\n\n## Results\n\n### Visualizing and quantifying the influence of cell shape on the spatial distribution of Rab6 positive membranes\n\nWe applied the QuantEv approach to visualize the spatial distribution of Rab6-positive membranes in unconstrained, crossbow- and disk-shaped cells (see Appendix 1\u2014figure 1) and quantify their differences. To test the generic performance of QuantEv, these image sequences were acquired with two different 3D imaging modalities, a multi-point confocal microscopy and a wide field video microscopy. We compared the results obtained with QuantEv to those obtained with the more conventional kernel density (KD) maps (Schauer et al., 2010; Merouane et al., 2015). The KD approach concludes that the distribution of Rab6-positive membranes are clearly different between cells of different shapes (see Figure 2a\u2013c,\u00a0p\u00a0value =\u00a00 when considering unconstrained cells versus crossbow-shaped cells, unconstrained cells versus disk-shaped cells, and crossbow-shaped cells versus disk-shaped cells). Unfortunately, it also leads to a significant difference when image sequences with the same cell shape are compared (see Figure 2d). This demonstrates that the KD approach is too sensitive. Instead, QuantEv shows a uniform range of p\u00a0values when cells with same shape are compared (see Figure 2d) while it leads to significant differences between radial, angular and in-depth distributions of Rab6 proteins from cells with different cell shapes (see Figure 2e\u2013f). The angular distribution of Rab6 proteins is different for the three cell shapes. It ranges from a completely uniform distribution for disk-shaped cells, to a less regular distribution for unconstrained cells and to a distribution oriented toward the three tips of the crossbow for crossbow-shaped cells. In-depth and radial distributions are similar for crossbow- and disk-shaped cells. In contrast, they are different from unconstrained cells. Unconstrained cells show diverse sizes with a strong tendency to spread. This explains why the in-depth distribution is flatter for the unconstrained cells than for the constrained cells. Interestingly, QuantEv is able to reflect these differences. QuantEv also highlights a distribution maximum for a radius at the two-thirds (resp. five-sixth) the distance between the Golgi region border and the cell periphery for both micro-patterns (resp. unconstrained cells) (see Figure 2f\u2013i). These maxima correspond to an accumulation of Rab6-positive membranes and identify the area where they enter a docking phase before switching to a tethering phase. The localization difference for these maxima between constrained and unconstrained cells is explained by a smaller adhesion area without micro-patterns, pushing the docking phase for vesicles closer to the cell periphery. Both radial and angular distributions unraveled by QuantEv represent a measurement of the environment constraints undergone by living cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2212c) 3D KD maps obtained with kernel density maps when considering all image sequences with unconstrained (a), crossbow- (b) and disk- (c)\u00a0shaped cells. (d) Box and whisker plots of the p\u00a0values obtained when comparing randomly 100 times two groups of unconstrained (UCC), crossbow-shaped (CSC) or disk-shaped cells (DSC) with QuantEv and KD maps. (e) Box and whisker plots of the condition differences with respect to radius $r$, angle $\\theta$ and depth $z$ over 58 image sequences. p\u00a0values under conditions of one-sided Wilcoxon signed-rank test when considering the condition differences are indicated below the box and whisker plots. A star (*) indicates that the p\u00a0value is smaller than 0.05. (f) Histograms (bar plots) and densities (lines) of the spatial distribution of Rab6 positive membranes with respect to radius $r$, angle $\\theta$ and depth $z$. These distributions come from 18 image sequences with an unconstrained cell (blue bar plots and lines), 18 image sequences with a crossbow-shaped cell (orange bar plots and lines) and 22 image sequences with a disk-shaped cell (green bar plots and lines). (g\u2212i) Overlay of the average intensity projection map of an image sequence with an unconstrained (g), crossbow- (h) and disk- (i) shaped cell and the radial levels at 0.6 and 0.8. The scale bars correspond to 5 $\\mu$m.\n\n### Inwards and outwards Rab6-positive membranes show two distinctive dynamical behaviors\n\nRab6-positive membranes are trafficking from the Golgi located at the cell center to the cell periphery (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007) and at the same time move from and toward the Golgi in comparable proportions (Grigoriev et al., 2007; Grigoriev et al., 2011). To reconcile these two antagonist statements, we applied QuantEv as follows. Rab6 trajectories were classified into two categories (Figure 3a\u2013c): (i) vesicles moving toward the cell periphery; (ii) vesicles moving toward the Golgi. As shown in Figure 3d\u2013f, the proportion of Rab6-positive membranes moving toward the cell periphery and toward the Golgi are close (0.531 versus 0.469 for unconstrained cells, 0.497 versus 0.503 for crossbow-shaped cells, 0.521 versus 0.479 for disk-shaped cells). However, the radial distributions shown in Figure 3d\u2013f display two distinctive modes for vesicles moving toward the cell periphery and those moving toward the Golgi (p\u00a0value = 0.0002 for unconstrained cells, p\u00a0value = 0.021 for crossbow-shaped cells, p\u00a0value = 0.0008 for disk-shaped cells). Between the Golgi and the distribution maxima shown in Figure 2f, Rab6 vesicles are predominantly moving toward the cell periphery. Between these maxima and the cell periphery, they are in majority moving toward the Golgi, indicating that during their docking-tethering phase, the vesicles are predominantly moving toward the cell center. These two distinctive dynamical behaviors are consistent with the aforementioned antagonist statements. To go further in the analysis, we looked at the confinement ratio (Figure 4a), the total path length and the lifetime of Rab6 trajectories, conventional dynamical measures used for particle tracking analysis. The combination of these measures with spatial localization is of high interest (Applegate et al., 2011; Tinevez et al., 2017) and QuantEv provides a good framework to quantitatively analyze and visualize the distribution of these dynamical measures with respect to their intracellular localization. We focus on the radial distribution of Rab6 trajectories from unconstrained and constrained cells as the differences between trajectories moving toward cell periphery and trajectories moving toward Golgi lie in these distributions (see Figure 3d\u2013f). Rab6-positive membranes moving toward the cell periphery have a much more direct path than the ones moving toward the Golgi, except near the cell periphery (see Figure 4b,\u00a0e). Consistently, Rab6 positive membranes moving toward the Golgi have longer total path length and lifetime than the ones moving toward the cell periphery, especially when approaching the cell periphery (see Figure 4c\u2013e). In summary, this analysis clearly demonstrated that\u00a0Rab6-positive membranes move predominantly and quite directly from the Golgi to the cell periphery until they enter a docking phase. Then, they mostly go back toward the cell center by following long and indirect trajectories.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig3-v1.jpg)\n\n**Figure 3.:** (a\u2013c) Rab6 trajectories moving toward the cell periphery (red trajectories) and toward Golgi (green trajectories) extracted from an image sequence with an unconstrained (a), a crossbow- (b) and a disk- (c) shaped cell. The scale bars correspond to 5 $\\mu$m. (d-f) Histograms (bar plots) and densities (lines) of the spatial distribution of Rab6-positive membranes moving toward the cell periphery (green bar plots and lines) or toward the Golgi (pink bar plots and lines) with respect to radius $r$, angle $\\theta$ and depth $z$. These distributions come from 18 image sequences with an unconstrained cell (d), 18 image sequences with a crossbow-shaped cell (e) and 22 image sequences with a disk-shaped cell (f). The box and whisker plots of the condition differences of the spatial distribution of moving Rab6-positive membranes with respect to radius $r$, angle $\\theta$ and depth $z$ for unconstrained (d), crossbow- (e) and disk- (f)\u00a0shaped cells are next to the histograms and densities. p\u00a0values under conditions of one-sided Wilcoxon signed-rank test when considering the condition differences are indicated below the box and whisker plots. A star (*) indicates that the p\u00a0value is smaller than 0.05.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig4-v1.jpg)\n\n**Figure 4.:** (a) Illustration of the displacement distance and the total path length of a trajectory. The confinement ratio is defined as the ratio between the displacement distance and the total path length. (b-d) Histograms (bar plots) and densities (lines) showing the radial distribution of confinement ratio (b), total path length (c) and lifetime (d) for trajectories of Rab6-positive membranes. These distributions come from the grouping of 18 image sequences with unconstrained cells, 18 image sequences with crossbow-shaped cells and 22 image sequences with disk-shaped cells. (e) Box and whisker plots showing the condition differences of the radial distribution of confinement ratio (CR), total path length (TPL) and lifetime (LT) for trajectories of Rab6-positive membranes. p\u00a0values under conditions of one-sided Wilcoxon signed-rank test when considering the condition differences are indicated below the box and whisker plots. A star (*) indicates that the p\u00a0value is smaller than 0.05.\n\n### The endosomal recycling compartment organizes Rab11 angular distribution\n\nRab11-positive recycling membranes originate their journey from the so-called endosomal recycling compartment (ERC). We formulate the assumption that Rab11 positive membranes are uniformly distributed at the membrane plane around the ERC position within the cell, whatever the cell shape is. To test this hypothesis, we used images acquired at the membrane with TIRF microscopy showing Rab11 proteins (see Appendix 1\u2014figure 1 c\u2013d). Most labeled membranes of the ERC are not located near the cell surface. However, for each TIRF sequence, one highly inclined wide field image was also acquired, enabling to visually define its location (red disks in Figure 5a). To test our assumption, the QuantEv uniformity analysis is applied by considering intensity on segmented regions. The results are shown in Figure 5a (blue disks). To have a line of comparison, we also plot the cell centers as green disks in Figure 5a. Interestingly, the blue disk is close to the red disk for all image sequences except one (second line, middle image in Figure 5a). The blue disk is also closer to the red disk than the green disk in seven out of eight image sequences (see Figure 5a\u2013b). Although the point that gives the most uniform angular distribution does not strictly coincide with the manually identified ERC, it is sufficiently close to indicate that the Rab11-positive membranes are quite uniformly distributed around the ERC position at the membrane plane whatever the cell shape is. This indicates that the ERC corresponds to the organizing hub of the Rab11 carrier vesicles.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig5-v1.jpg)\n\n**Figure 5.:** (a) The red disks correspond to the manual annotation, the blue disks to the point defining the most uniform angular distribution of Rab11-positive membranes and the green disks correspond to the cell centers. These disks are displayed over the average intensity projections of the image sequences showing Rab11-positive membranes. The scale bar corresponds to 5 $\\mu$m. (b) Euclidean distances between the manually annotated ERC and the cell centers (green disks) or the points giving the most uniform angular distribution (blue disks).\n\n### Joint actin disruption and cell shape influence on Rab11 radial distribution\n\nApplying the QuantEv uniformity analysis at each time step of a sequence allows studying the location stability of the particle emitter or attractor. To test if the estimated ERC location is stationary over time, we computed the Euclidean distance between the reference point estimated at time t = 0 and the points estimated for the next frames. In untreated cells, this distance remains stable (see Figure 6 green line). We analyzed cells treated with Latrunculin A, which inhibits actin polymerization (see Appendix 1\u2014figure 1 e\u2013f). We show that the ERC location is moving away as the drug is affecting the cell (see Figure 6 blue and orange lines), enlightening the role of cytoskeleton in stabilizing the cellular localization of the ERC. We then acquired image sequences of unconstrained, crossbow-shaped and disk-shaped cells at 10 and 15 min after Latrunculin A addition, and we extracted Rab11 trajectories. The confinement ratio of Rab11 tracks is decreasing with time (see Figure 7), which is consistent with actin cytoskeleton being involved in Rab11 vesicle trafficking, as already reported (Schafer et al., 2014). The radial distribution of Rab11 vesicles is constantly shifting from the cell periphery to the cell center for unconstrained, crossbow- and disk-shaped cells (see Figure 8a). However, before and at drug injection time, we observe significant differences in radial distributions between the three tested conditions (p\u00a0value\u00a0=\u00a00.0023, see Figure 8b). After Latrunculin A treatment, we progressively observe no difference between the radial distributions, as the actin organization is drastically perturbed. Together, these quantifications allow us to conclude that exocytosis/recycling vesicle trafficking is dependent on both cell shape and actin organization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig6-v1.jpg)\n\n**Figure 6.:** Average Euclidean distance between the point giving the most uniform distribution at time t = 0 and the point estimated at further frames for untreated disk-shaped cells (four image sequences) and cells treated with Latrunculin A (six image sequences for each micro-pattern).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig7-v1.jpg)\n\n**Figure 7.:** (a-c) Histograms (bar plots) and densities (lines) of the confinement ratio of Rab11 positive membranes on unconstrained (a), crossbow- (b) and disk- (c)\u00a0shaped cells at Latrunculin A Injection Time, 10 and 15 min after injection. (d) Box and whisker plots of the corresponding condition differences (five image sequences for unconstrained cells, 10 image sequences for crossbow-shaped cells and nine image sequences for disk-shaped cells). p\u00a0values under conditions of one-sided Wilcoxon signed-rank test when considering the condition differences are indicated below the box and whisker plots. A star (*) indicates that the p\u00a0value is smaller than 0.05.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/32311/elife-32311-fig8-v1.jpg)\n\n**Figure 8.:** (a) Histograms (bar plots) and densities (lines) of the radial distribution of Rab11-positive membranes on unconstrained, crossbow- and disk-shaped cells at Latrunculin A Injection Time, 10 and 15 min after injection. (b) Box and whisker plots of the condition differences of the radial distribution between unconstrained, crossbow- and disk-shaped cells at Latrunculin A Injection Time, 10 and 15 min after injection. p\u00a0values under conditions of one-sided Wilcoxon signed-rank test when comparing unconstrained, crossbow- and disk-shaped cells (five image sequences for unconstrained cells, ten image sequences for crossbow-shaped cells and nine image sequences for disk-shaped cells) are indicated below the box and whisker plots.\n\n## Discussion\n\nThis article presents a computational framework taking into account cell variability to quantify the distribution of fluorescently labeled proteins. Using dynamical descriptors, detailed insight into dynamical processes is also unraveled and the uniformity analysis allows to localize an organizing region for the observed biological objects.\n\nAdditionally to the input image, the user has to define three other inputs that depend on the biological application. First, the user has to decide which coordinate system to use. If the imaged cells are flat as in this study (see Appendix 1\u2014figure 1a\u2013c), a cylindrical coordinate system is well suited while a spherical coordinate system will fit better rounded cells. If the user is not familiar with cylindrical or spherical coordinate systems, a classical Cartesian system is also available, even though less suited to intracellular spatial distribution. Finally, QuantEv also allows to analyze the spatial distribution with respect to a reference point or to membrane borders (Heride et al., 2010). Once the reference coordinate system is chosen, the user has to define a reference point, typically the particle emitter or attractor, and a reference direction in order to fairly compare cells. For example, in this study, the direction between the Golgi and the cell center were used to define a reference direction for unconstrained and disk-shaped cells while the crossbow principal axis was used for crossbow-shaped cells.\n\nAs intensity is proportional to the amount of proteins in fluorescence microscopy, using intensity observed in segmented areas is potentially more informative than binary segmentation masks. However, because of phenomena such as photobleaching, phototoxicity, shading, uneven illumination etc., appropriate normalization procedures within and between images need to be applied. If the user is able to correct for these phenomena, it is preferable to use intensity as weights in QuantEv analysis. Otherwise, intensity weights should be avoided.\n\nGiven its genericity, QuantEv can easily be applied to any intracellular event and gives useful insights about their spatial distribution across conditions. From these observations, the user can then apply more sophisticated analyses such as mechanistic models of dynamics (Ponti et al., 2004; Jaqaman et al., 2008) or generative models (Li et al., 2012; Johnson et al., 2015a, Johnson et al., 2015b). QuantEv analysis conclusions can also be the starting point of a new modeling.\n\nWe demonstrate with the help of QuantEv that the distributions of Rab6-positive membranes from unconstrained, crossbow- and disk-shaped cells are statistically different. QuantEv also enables to identify the locations where Rab6-positive membranes enter their docking phase. By considering the directions of the moving Rab6-positive membranes, QuantEv allows demonstrating that these membranes first move predominantly and directly toward the cell periphery before reaching their docking phase. They then go back to the cell center in an undirected and long fashion. This intriguing result showing statistically bi-directional movements of Rab6 was reported before. The Rab6-positive vesicles generated at the Golgi membranes are predestined to the cell periphery, in order to deliver their exocytic cargo (Grigoriev et al., 2007; Grigoriev et al., 2011), which should favor a centrifuge directionality. Our data reconciles this two apparently opposed observations and show for the first time, that a majority of Rab6 vesicles reverses their movement only toward close docking-fusion sites and only during this ultimate phase of docking-fusion.\n\nQuantEv also demonstrates that Rab11 positive membranes are uniformly distributed around the ERC at the plasma membrane plane. This shows that the ERC represents an organizing hub for the Rab11 carrier vesicles. By applying the QuantEv uniformity analysis along time, we exhibit how the ERC location is affected by actin disruption caused by Latrunculin A injection. The radial distribution analysis of Rab11-positive membranes combined with Latrunculin A injection reveals a dual regulation by cell shape and actin organization on Rab11 trafficking at the plasma membrane, and more generally on the exocytosis/recycling vesicle distribution.\n\nIn conclusion, QuantEv has the potential to become a very popular analysis method for dynamics and intracellular event analysis as (i) it is publicly available; (ii) it is fully automated and semi-parametric; (iii) it provides results that are easy to biologically interpret; (iv) it performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data. On a biological prospective beyond the two particular models presented here, QuantEv will be of great interest for studies where quantitative and statistical analysis of intracellular membrane or particle behaviors are required, depending on physical and external constraints. For instance, in single-cell experiments performed in microfluidics devices, QuantEv will efficiently provide automation and diversity of statistical analyses in \u2018one shot\u2019, for a relatively small amount of data. Applying QuantEv in multi-cellular systems, in which cell-cell constraints necessarily affect molecular distribution and particle movements will also be of great interest. Finally, in vivo imaging of single-cell intracellular processes in a very confined and constrained environment will benefit from the generic aspect of the QuantEv sensing and measuring of particle spatial distributions, dynamical measures with respect to intracellular localization and cell to cell variability. An Icy plugin and a tutorial are available at http://icy.bioimageanalysis.org/plugin/QuantEv. A QuantEv analysis module is available on TrackMate and a QuantEv track processor is available in Icy.\n\n## Materials\u00a0and\u00a0methods\n\n### Sample preparation\n\nIn the first dataset, we use cell lines stably expressing fluorescently tagged proteins in order to minimize the cell-to-cell variability in fluorescence signal. HeLa cells stably expressing fluorescently tagged GFP-RAB6A were previously generated in the Lab at Institut Curie (Teber et al., 2005). They were maintained in DMEM supplemented with 10% fetal bovine serum. Cells were then spread onto fibronectin Cytoo chips (Cytoo Cell Architect) 4 to 5 hr before imaging. Cell adhesion on micro-patterns both constrains the cells in terms of lateral movement and averages their size and shape (disk-shaped and crossbow-shaped, Cytoo Cell Architect, 1100$\\mu$ m$^{2}$). As a control of patterning effect, the same cell line was grown under the same culture conditions, and spread on regular glass coverslips, 4 to 5 hr before imaging.\n\nFor a second set of experiments, wild-type RPE1 cells (hTERT RPE-1 obtained from ATCC collection) were grown in Dulbecco\u2019s Modified Eagle Medium, Nutrient Mixture F-12 (DMEM/F12) supplemented with 10% (vol/vol) FCS in six-well plates. RPE1 cells were transiently transfected with plasmids coding for Rab11a-GFP, and Langerin-mCherry using the following protocol: 2 $\\mu$g of each DNAs, completed to 100 $\\mu$L with DMEM/F12 (FCS free) were incubated for 5 min at room temperature. 6 $\\mu$L of X-tremeGENE 9 DNA Transfection Reagent (Roche) completed to 100 $\\mu$L with DMEM/F12 (FCS free) were added to the mix and incubated for further 15 min at room temperature. The transfection mix was then added to RPE1 cells grown 1 day before and incubated further at 37$^{o}$C overnight. Cells were then spread on regular coverslips or onto fibronectin Cytoo chips (Cytoo Cell Architect) for 4 hr at 37$^{o}$C with F-12 (with 10% (vol/vol) FCS, 10 mM Hepes, 100 units/ml of penicillin and 100 ug/ml of Strep) before imaging. When specified, 2 mM Latrunculin A (Sigma) was dissolved to 0.02 mM in F-12 DMEM. 300 $\\mu$L of culture medium with Latrunculin A (600 nM) was added to establish a final Latrunculin A concentration of 3 $\\mu$M.\n\nAll cell lines were routinely tested for mycoplasma, using PCR or the MycoAlert Mycoplasma Detection Assay.\n\n### Data acquisition\n\nFor Rab6-positive membranes in unconstrained cells, videos were recorded with an epifluorescence video automated system composed of a Ti Eclipse inverted microscope equipped with a 100x objective Plan NA (1.4) and a piezo stage for 3D acquisitions (Nikon, S.A, France). The fluorescence was collected using a 512 \u00d7 512 EM-CCD (Evolve, Photometric, USA) and driven through the Metamorph software (Molecular Devices). 18 series of 120 Z image stacks of 10 frames were recorded at a rate of about 1 stack/s. The volume rendering of one image from this dataset is shown in Appendix 1\u2014figure 1a.\n\nFor Rab6-positive membranes on micro-patterns, the 488 nm laser of a spinning-disk confocal microscope (Ti Eclipse, Nikon, S.A, France equipped with spinning disk system, a 100x/1.4 oil objective and CoolSnap HQ2 CCD, from Roper Scientific S.A.R.L, France) was used to acquire 3D 380 $\\times$ 380 $\\times$\u00a08 stacks at a rate of one stack per second. 18 image sequences with crossbow-shaped cells and 22 image sequences with disk-shaped cells were acquired. The system was driven by the Metamorph software (Molecular Devices). The volume rendering of two images from this dataset are shown in Appendix 1\u2014figure 1b\u2013c.\n\nFor the Rab11 dataset, live-cell imaging was performed using simultaneous dual color Total Internal Reflection Fluorescence (TIRF) microscopy. All imagings were performed in full conditioned medium at 37$^{o}$C and 5% CO2 unless otherwise indicated. Simultaneous dual color TIRF microscopy sequences were acquired on a Nikon TE2000 inverted microscope equipped with a 100x TIRF objective (NA\u00a0=\u00a01.49), an azimuthal TIRF module (Ilas2, Roper Scientifc), an image splitter (DV, Roper Scientific) installed in front of an EMCCD camera (Evolve, Photometrics) that can be bypassed or not, depending on the experimental conditions, as indicated in the text, and a temperature controller (LIS). GFP and m-Cherry were excited with a 488 nm and a 561 nm laser, respectively (100 mW). The system was driven by the Metamorph software (Molecular Devices). Four selected image projections from this data set are shown in Appendix 1\u2014figure 1d\u2013g.\n\n### Data availability\n\nWe use two datasets in this study that are publicly available on the iMANAGE database at https://cid.curie.fr/iManage/standard/login.html with username public and password Welcome!1 in the project entitled QuantEv-Data.\n\n### Event detection and localization\n\nBefore applying QuantEv, the intracellular events have to be identified and localized. The Rab6 proteins are extracted from each image sequence by using the C-CRAFT method (P\u00e9cot et al., 2015) with default parameters, except the p\u00a0value that ranges from 0.0025 to 0.35 depending on the noise level, available on Icy (de Chaumont et al., 2012). The Rab11-positive membranes on micro-patterns are segmented at each time point with the ATLAS algorithm (Basset et al., 2015) with default parameters, except the p\u00a0value that ranges from 0.05 to 0.45 depending on the noise level. In both cases, a variance stabilization transform (Boulanger et al., 2010) is performed to take into account the Poisson-Gaussian nature of the noise in the CCD sensors. As unconstrained cells are more mobile than cells on micro-patterns, the image sequences showing Rab11-positive membranes in unconstrained cells are not in focus. To correct this phenomenon, a deconvolution method (Lefkimmiatis et al., 2012) is first applied to the image sequences. The Rab11 positive membranes are then segmented at each time point with the Bernsen local thresholding method (Bernsen, 1986) (radius equal to 15 pixels). Finally, Rab6 and Rab11 trajectories are estimated with the multiple hypothesis tracking method developed by Chenouard et al. (2013) with default parameters, available on Icy (de Chaumont et al., 2012), the combinatorial optimization tracking method developed by Sbalzarini and Koumoutsakos (2005) with default parameters, available on ImageJ (Schneider et al., 2012) and the hybrid approach TrackMate (Tinevez et al., 2017) that first connects detected points into short tracks and then links the resulting tracks together, with default parameters, available on Fiji (Schindelin et al., 2012). To identify the trajectories estimated with different methods, we use the gated distance (Chenouard et al., 2014) defined between two trajectories $\\theta_{1}$ and $\\theta_{2}$ as:\n\n$$\nd(\\theta_{1},\\theta_{2})=\\sumt=0T\u2009min(||\\theta_{1}(t)\u2212\\theta_{2}(t)||_{2},\u03f5),\n$$\n\nwhere $\u03f5$ is the gate. For each image sequence, the gated distance is computed between the trajectories estimated with the three different methods with $\u03f5=5$ pixels. Only the trajectories for which the gated distance is inferior to 2 pixels for at least two methods are used for the analysis.\n\n### Weighted density estimation for spatial localization\n\nThe localization of events needs to be defined on a common coordinate system to compare the experiments. We propose to use the cylindrical coordinate system where only a reference point such as the event emitter or attractor and a reference direction have to be specified by the user. To fairly compare experiments with different cell shapes, we define appropriate distances to obtain normalized densities, that\u00a0is independent from the cell shape. We illustrate the importance of shape normalization in Appendix 2.\n\nMore formally, let us define $\u03a9$ the 3D cell support and $\\partial\u03a9$ the 3D cell surface. Let us consider a set of $N$ sample points associated with intracellular events $S={(r_{i},\\theta_{i},z_{i},w_{i},d_{\\theta_{i}},d_{z_{i}}),i\\in[1,N]}$, where $(r_{i},\\theta_{i},z_{i})$ denote the spatial cylindrical coordinates. The weight $w_{i}$ enables to take into account features associated to events such as intensity, track length, confinement ratio... $w_{i}$ can typically be a function of fluorescence intensity, proportional to the number of molecules observed at a given location. The distance $d_{\\theta_{i}}$ is equal to the Euclidean distance between the coordinate system origin $O\\in\u03a9$ projected on plane $z_{i}$ ($O_{z_{i}}$) and the point $P_{\\theta_{i},z_{i}}\\in\\partial\u03a9$ with angle $\\theta_{i}$ at plane $z_{i}$, such that $d_{\\theta_{i}}=||P_{\\theta_{i},z_{i}}\u2212O_{z_{i}}||_{2}^{2}$. The distance $d_{z_{i}}$ is equal to the Euclidean distance between the coordinate system origin $O$ and the point $P_{r_{i},\\theta_{i}}\\in\\partial\u03a9$ with radius $r_{i}$ and angle $\\theta_{i}$ such that $d_{z_{i}}=||P_{r_{i},\\theta_{i}}\u2212O||$. These two distances allow estimating normalized densities that are independent from cell shapes. We propose to estimate three densities defined as follows:\n\n$$\nf(r)=\\frac{1}{Z_{r,\\theta}}\\sumi=1N\u00a0G_{\\sigma^_{r}}(r_{i}\u2212r)\\frac{w_{i}}{d_{\\theta_{i}}},\n$$\n\n\n\n$$\nf(\\theta)=\\frac{1}{Z_{r,\\theta}}\\sumi=1N\u00a0H_{\u03ba^}(\\theta_{i}\u2212\\theta)\\frac{w_{i}}{d_{\\theta_{i}}},\n$$\n\n\n\n$$\nf(z)=\\frac{1}{Z_{z}}\\sumi=1N\u00a0G_{\\sigma^_{z}}(z_{i}\u2212z)\\frac{w_{i}}{d_{z_{i}}},\n$$\n\nwhere $G_{\\sigma^}(\u22c5)$ is a Gaussian kernel with bandwidth $\\sigma^$, $H_{\u03ba^}$ is a von Mises kernel with concentration $\u03ba^$ such that $H_{\u03ba^}(\\theta)=\\frac{e^{\u03ba^cos\\theta}}{2\\piI_{0}(\u03ba^)}$ and $I_{0}(\u22c5)$ is the Bessel function of order 0. The bandwidths $\\sigma^_{r}$ and $\\sigma^_{z}$ are estimated with the Silverman\u2019s rule of thumb (Silverman, 1986) and $\u03ba^$ is estimated using the robust rule of thumb proposed by Taylor (2008). The normalization constants are defined as follows:\n\n$$\nZ_{r.\\theta}=N\\sumi=1N\\frac{w_{i}}{d_{\\theta_{i}}},Z_{z}=N\\sumi=1N\\frac{w_{i}}{d_{z_{i}}}.\n$$\n\n### Density estimation for dynamical features\n\nIn case the distribution of dynamical features such as confinement ratio or lifetime with respect to the track localization is to be studied, the weighted densities are defined differently than in the previous section. In this case, histograms are first computed as the averaged dynamic features for each bin. A density estimation is then estimated from the histograms.\n\nLet us consider a set of $T$ tracks associated with spatial coordinates $T={(r_{i},\\theta_{i},z_{i},m_{i}),i\\in[1,T]}$, where $(r_{i},\\theta_{i},z_{i})$ denote the spatial cylindrical coordinates of the median point of the trajectory $i$ and $m_{i}$ is a dynamic feature associated to track $i$. The histograms corresponding to the averaged dynamic features for each bin are defined as:\n\n$$\nh_{r}(b_{r})=\\frac{\\sumiT\ud835\udfd9_{b_{r}}[r_{i}]m_{i}}{\\sumiT\ud835\udfd9_{b_{r}}[r_{i}]},\n$$\n\n\n\n$$\nh_{\\theta}(b_{\\theta})=\\frac{\\sumiT\ud835\udfd9_{b_{\\theta}}[\\theta_{i}]m_{i}}{\\sumiT\ud835\udfd91_{b_{\\theta}}[\\theta_{i}]},\n$$\n\n\n\n$$\nh_{z}(b_{z})=\\frac{\\sumiT\ud835\udfd9_{b_{z}}[z_{i}]m_{i}}{\\sumiT\ud835\udfd9_{b_{z}}[z_{i}]},\n$$\n\nwhere $b_{r}\\in[1,B_{r}]$ is a radius bin and $B_{r}$ is the total number of radius bins, $b_{\\theta}\\in[1,B_{\\theta}]$ is a polar bin and $B_{\\theta}$ is the total number of polar bins, $b_{z}\\in[1,B_{z}]$ is an in-depth bin and $B_{z}$ is the total number of in-depth bins, and $1_{b_{r}}[r_{i}]$ is equal to $1$ if $r_{i}$ is defined in bin $b_{r}$ and equal to 0$0$ otherwise. Densities are then estimated from the histograms as follows:\n\n$$\nf_{d}(r)=\\sumi=1B_{r}\u00a0G_{\\sigma^_{r}}(h_{r}(b_{i})\u2212r),\n$$\n\n\n\n$$\nf_{d}(\\theta)=\\sumi=1B_{\\theta}\u00a0H_{\u03ba^}(h_{\\theta}(b_{i})\u2212\\theta),\n$$\n\n\n\n$$\nf_{d}(z)=\\sumi=1B_{z}\u00a0G_{\\sigma^_{z}}(h_{z}(b_{i})\u2212z),\n$$\n\nwhere $G_{\\sigma^}(\u22c5)$ is a Gaussian kernel with bandwidth $\\sigma^$, $H_{\u03ba^}$ is a von Mises kernel with concentration $\u03ba^$. The bandwidths $\\sigma^_{r}$ and $\\sigma^_{z}$ are estimated with the Silverman\u2019s rule of thumb (Silverman, 1986) and $\u03ba^$ is estimated using the robust rule of thumb proposed by Taylor (2008).\n\n### Statistical procedure\n\nQuantitative comparison between different conditions is mandatory to analyze biological data. In most computational biology studies, data from different experiments corresponding to the same condition are pooled together (Schauer et al., 2010; Merouane et al., 2015). This usual procedure enables to add statistical power when comparing two conditions. Therefore, it is especially useful when few data are available. Unfortunately, pooling data together presents two main drawbacks. First, if large amounts of data are available, the opposite problem arises and the statistical tests may become significant for every comparison (Olivier and Walter, 2015). One solution is to down sample the data, but the amount of down sampling becomes another issue. Second, pooling data together for one condition partially hides the variability between the replicated experiments for this condition. As an example, let us consider a study aimed at analyzing the effects of a drug on a sample of normal individuals. To evaluate the drug efficiency, a comparison between normal individuals and individuals that were administered the drug is conducted. Let us assume that the drug is effective on half the individuals. Consequently, normal individuals are compared to a mix of normal individuals and individuals with the drug effects. This comparison should not be statistically significant as the drug is not efficient on all individuals. However, the effects on the individuals for which the drug is efficient might hide the fact that it is not efficient on all individuals if all the data are pooled together. In what follows, we propose to compute a distance between all experiments instead of a distance between conditions. The idea is demonstrated in Appendix 3 and validated on synthetic image sequences (see Appendix 1\u2014figure 1c\u2013d and Appendix 3).\n\n### Distance between densities\n\nWe propose to compute the earth mover\u2019s distance (also known as the Kantorovich-Rubinstein or the first order Wasserstein distance) between every replicate of every condition to apply a statistical test. This transport-based distance demonstrated its efficiency for other studies on cell phenotypes (Wang et al., 2013; Basu et al., 2014). The discrete Earth Mover\u2019s Distance (EMD) between two unidimensional distributions is simply defined as the sum of the absolute differences between their cumulated distribution functions (Rubner et al., 2000):\n\n$$\nEMD(f^{1},f^{2})=\\sumi=1K\u2009|F^{1}(i)\u2212F^{2}(i)|,\n$$\n\nwhere $F^{1}$ and $F^{2}$ are the cumulated distribution functions of $f^{1}$ and $f^{2}$. Although the EMD depends on the number of bins $K$, EMD proportions are kept intact when the number of bins is high enough as shown in Appendix 4. For the angular distribution, the Circular Earth Mover\u2019s Distance (CEMD) (Rabin et al., 2011) is defined as:\n\n$$\nCEMD(f^{1},f^{2})=mink\\in{1,\u22ef,K}\\sumi=1K\u00a0|Q_{k}^{1}(i)\u2212Q_{k}^{2}(i)|,\n$$\n\nwith\n\n$$\nQ_{k}(i)={\\sumj=ki\u00a0f(j)ifi\\geqk,\\sumj=kK\u00a0f(j)+\\sumj=1i\u00a0f(j)ifi<k.\n$$\n\n### Difference between conditions\n\nThe EMD and CEMD enable to compute a distance between two single experiments for the radial, angular and in-depth densities. The distances between the replicates of one condition and the replicates of the other condition(s) give an idea about the difference between the conditions. However, a baseline distance is also needed to state if the difference is random or significant. Therefore, two distances are defined for each experiment and each density:\n\nConsidering more than two groups does not change the intra-condition distance and only expands the inter-condition distance to more than one group. We define as the condition difference the difference between the inter-condition distance and the intra-condition distance. If the condition difference is high, the conditions are different.\n\n### Statistical test\n\nA statistical test is applied on the difference distance to state if the observed conditions are significantly different. A non-parametric statistical test is better suited as there is no underlying model for the condition difference. In addition, a negative condition difference implies that the current experiment is closer to the replicated experiments of the other condition than the replicated experiments of the same condition. Consequently, the condition difference has to be positive if the conditions are different. For those two reasons, we propose to use the one-sided non-parametric Wilcoxon signed-rank test on the condition differences for all experiments to state if two conditions are statistically different.\n\n### Analysis of uniform distribution of events\n\nIn case we focus on the intracellular events assumed to be uniformly distributed around a given biological object, for\u00a0example the events emitter, QuantEv allows us to estimate a location for this traffic-organizing component. This source location is then defined as the reference point with the most uniform angular distribution. It is established that the maximum entropy corresponds to the most uniform distribution. Consequently, the reference point $O^{\u2217}$ is defined as the location that maximizes the entropy:\n\n$$\nO^{\u2217}=maxO\\in\u03a9\u2212\\sumi=1Nf(\\theta_{i})logf(\\theta_{i}).\n$$\n\nThe most straightforward way to find this point is to estimate the entropy map that gives, for each point in $\u03a9$, the entropy value computed with the current point used as the reference center. We also propose to use the bisection method to speed up the computation (about sixty times faster than the entropy map computation, see Appendix 5\u2014table 1). A uniformity analysis conducted on simulations is presented in Appendix 6. The entropy criterion can be extended to detect multiple organizing components if needed.\n\n### Code availability\n\nThe jar file of the QuantEv Icy plugin is available at http://icy.bioimageanalysis.org/plugin/QuantEv. The jar file of the QuantEv track processor is available at http://icy.bioimageanalysis.org/plugin/ QuantEv _(track_processor). The source codes can be extracted from the jar files. The QuantEv analysis module for TrackMate is available on GitHub (P\u00e9cot, 2018; copy archived at https://github.com/elifesciences-publications/QuantEvForTrackMate). These codes are released under the GNU Affero General Public License v3.0.\n",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "2c66e31d-ed4f-461e-8ed7-9e728fce7df9",
+      "submission_id": "882fc96f-ea23-4556-9cb1-beaa989185c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32311.040](https://doi.org/10.7554/eLife.32311.040)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A quantitative approach for the spatio-temporal distribution of 3D intracellular events in fluorescence microscopy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Anna Akhmanova as the Senior/Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper presents a software tool (QuantEv) for quantitative analysis and visualization of the spatial distribution of intracellular events imaged by fluorescence microscopy and represented by static or dynamic descriptors associated with spatial coordinates. The potential practical value of the tool is demonstrated by studying the distribution of moving Rab6 fluorescently labeled membranes with respect to their direction of movement in differently shaped cells, as well as the position of the generating hub of Rab11 positive membranes, and the effects of actin disruption on Rab11 trafficking in relation to cell shape. The paper is well written, and the results are interesting.\n\nEssential revisions:\n\n1) The manuscript ignores extensive prior relevant work on similar problems. The analysis methods described are simple, and not particularly innovative. Evidence of generalizability is lacking. By not considering and incorporating prior approaches, the potential capabilities and applicability of the software have been significantly limited. It is especially important in describing new software to compare its performance to existing approaches. These comparisons should include not just one similar method (kernel density estimation) that is not widely used but other methods (e.g., http://doi.org/10.1038/nmeth.1486). For example, although developed for a different application, the software tool plusTipTracker (http://dx.doi.org/10.1016/j.jsb.2011.07.009) can also perform various dynamics analyses related to cell location, and should be discussed. The same goes for TrackMate (http://doi.org/10.1016/j.ymeth.2016.09.016). More generally, some discussion is needed of what, exactly, can and cannot be done with existing tools, to make the novelties and benefits of the proposed tool more explicit.\n\n2) It seems that the statistical test the authors are proposing is focusing on comparing two groups using the Wilcoxon signed-rank test. While this is fine as such, often in Biology more than two groups need to be compared with each other; like wt, mutant, and rescue for example. Also, the possibility to compare more than two groups is important to avoid problems with repetitive testing between groups. The problem is the additive per comparison error. This issue should be addressed, and potential solutions should be included in the next version.\n\n3) The authors suggest using intensity as a weight for the analysis. In the cases used in the synthetic test images test and likely in the experimental data here the intensities are comparable. However, the potential user needs to be instructed that appropriate normalization procedures need to be applied in case that intensities are used as weight. Likewise, the segmentation needs to start from a similar selection. The authors should at least discuss this necessity and provide what the prerequisites are for the input.\n\n4) The only datasets used in paper are artificial, in that cells were constrained to specific geometries. This reduces the inherent complexity with unknown other effects. Most investigators would not choose to use artificial geometric constraints, and no analysis is presented for images of cells that show natural variation in shape, either in vitro or in vivo. Such variation might overwhelm the straightforward approaches the authors describe and this possibility should be investigated. Application of the methods to an image dataset for unconstrained cells should be included.\n\n5) The claim that the proposed framework is \"generic and non-parametric\" seems too strong. In the paper only a few very specific applications are investigated. And many of the underlying components of the framework are not exactly non-parametric. For example, the kernels involved in the weighted density estimation have parameters, and the distance measures depend on the number of bins. This claim should be toned down.\n\n6) The authors claim that their framework is more sensitive than the Kernel density maps. This asks the question of the discriminatory power of the method. The potential to differentiate distribution patterns depends on the resolution of the input; this should be discussed.\n\n7) The meaning of the results of the various analyses is often unclear and very limited in terms of providing understanding of mechanisms for any of the systems studied. Since the paper is written for a general audience, this should be improved.\n\n8) A number of specific comments on the text must be addressed:\n\nIntroduction, first paragraph \u201cAutomatic methods have the obvious advantage of being quicker and reproducible. However, most computational methods are based on the complex combination of heterogeneous features such as statistical, geometrical, morphological and frequency properties (Peng, 2008), whichmakes difficult to draw de1nitive biological conclusions\u201d: This statement ignores extensive work on generative or mechanistic models, which produce interpretable parameters. Such work includes mechanistic models of dynamics of endocytic vesicles (e.g., http://doi.org/10.1038/nmeth.1237) and cytoskeletal dynamics (http://doi.org/10.1126/science.1100533), and generative models of vesicle distribution (e.g., http://doi.org/10.1371/journal.pcbi.1004614).\n\nIntroduction, first paragraph \u201cAdditionally, most experimental designs, especially at single cell level, pool together data coming from replicated experiments of a given condition (Schauer et al., 2010; Merouane et al., 2015; Biot et al., 2016), neglecting the biological variability between individual cells.\u201d: Again, this ignores work on generative models that specifically analyzes and captures variation between cells. Past examples include microtubule networks (e.g., http://doi.org/10.1371/journal.pone.0050292), and cell and nuclear shape (e.g., http://dx.doi.org/10.1091/mbc.E15-06-0370). Traditional feature-based methods also frequently analyze heterogeneity within populations (e.g., http://doi.org/10.1371/journal.pone.0102678).\n\nIntroduction, third paragraph and subsection \u201cWeighted density estimation\u201d, first paragraph \u2013 The use of circular and/or cylindrical coordinate systems for description of object positions within a cell is well established (e.g., http://doi.org/10.1002/cyto.a.20487 and http://doi.org/10.1002/cyto.a.21066) and in these cases rotation angle was more powerfully defined relative to the major axis of each cell rather than being defined by the confinement fields. Alternative approaches to the problem, such as morphing, were not discussed.\n\nIntroduction, third paragraph and subsection \u201cDistance between densities\u201d, first paragraph \u2013 There is no discussion of more recent metrics related to Earth Mover's Distance that have been described and used to compare subcellular patterns (http://doi.org/10.1007/s11263-012-0566-z).\n\n\"The KD approach concludes\u2026 Instead, QuantEv selectively identifies\u2026\" How do we know which method comes closest to the truth? Can this be verified? Without some control experiment or simulation, how can we conclude that QuantEv is to be preferred over other methods?\n\nSubsection \u201cVisualizing and quantifying the influence of micropatterns on the spatial distribution of Rab6 positive membranes\u201d \u2013 There is no clear peak at the two-thirds position in Figure 2D and no evidence of significance or reproducibility is presented.\n\n\"Rab6 trajectories were classified into two categories\u2026\" How do we know these trajectories are trustworthy? What kind of control experiment was performed to confirm this? This is especially important since it seems the trajectories were not obtained with the best methods available these days (for example according to http://doi.org/10.1038/nmeth.2808 there seem to be better tracking methods than the method mentioned in the subsection \u201cEvent detection and localization\u201d).\n\n\"we extracted Rab11 trajectories\u2026\" Same as previous comment.\n\n\"On the image sequences considered in the previous section (see Figure 4A), this distance remains stable (see Figure 5A). We analyzed cells treated with Latrunculin A\u2026 the ERC location is moving away as the drug is affecting the cell (see Figure 5B)\". But the time scales are very different in these two cases (seconds versus minutes). Control experiments would be needed to confirm that the ERC location in non-treated cells remains stable over the same time scale as in the treated cells.\n\nThe claim that the presented software tool \"is efficient with small and large amounts of data\" has not been demonstrated in the paper. Neither dataset sizes nor processing times are mentioned.\n\nThe claim that \"QuantEv is quite flexible since the user can specify any distance\u2026\" contradicts the statement that \"it is fully automated and non-parametric\".\n\n\"a reference point\u2026 and a reference direction have to be specified by the user\u2026\" Same as previous comment.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A quantitative approach for the spatio-temporal distribution of 3D intracellular events in fluorescence microscopy\" for further consideration at eLife. Your revised article has been favorably evaluated by Anna Akhmanova (Senior/Reviewing Editor) and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThere were significant reservations about using constrained cells, as the use of such cells greatly simplifies the analysis. The authors have now done additional work to add results comparing unconstrained cells and two different types of constrained cells. The results show that QuantEV is able to distinguish among the three groups. However, no perturbation studies (e.g., Latrunculin B) were done with unconstrained cells. Thus the main concern remains about the suitability of QuantEV for use in future studies, the majority of which are expected to be done with unconstrained cells. This is an important point: the method may be able to distinguish changes within constrained cells upon various treatments, but may not be able to distinguish perturbations on the background of significant variation within unconstrained cells. There is no information provided on the variance of the profiles in Figure 2F within the unconstrained population. This is a major concern in the context of the very broad claims made in the manuscript (especially in the Discussion) about the power and generality of QuantEV. To support these broad claims, the authors must provide conclusive evidence that QuantEV can distinguish physiologically relevant changes upon perturbations in unconstrained cells. Since the necessary datasets are undoubtedly available to the authors, no collection of new experimental data is expected to be necessary to address this point.\n",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b89da19-7b32-4b2c-b674-149815b97b5d",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C1",
+      "claim": "Analysis of the spatial distribution of endomembrane trafficking is fundamental to understand the mechanisms controlling cellular dynamics, cell homeostasy, and cell interaction with its external environment in normal and pathological situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the spatial distribution of endomembrane trafficking is fundamental to understand the mechanisms controlling cellular dynamics, cell homeostasy, and cell interaction with its external environment in normal and pathological situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of spatial distribution analysis, drawing from established scientific knowledge about cellular mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "659a1ce3-4a8c-4abe-9c48-bd50cb8078d2",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C2",
+      "claim": "QuantEv automatically estimates weighted densities that are easy to interpret from the spatial coordinates of intracellular features.",
+      "claim_type": "EXPLICIT",
+      "source": "From the spatial coordinates of intracellular features such as segmented subcellular structures or vesicle trajectories, QuantEv automatically estimates weighted densities that are easy to interpret and performs a comprehensive statistical analysis from distribution distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "942730d0-35d5-4aa3-a633-59bf446c42aa",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C3",
+      "claim": "QuantEv performs a comprehensive statistical analysis from distribution distances.",
+      "claim_type": "EXPLICIT",
+      "source": "From the spatial coordinates of intracellular features such as segmented subcellular structures or vesicle trajectories, QuantEv automatically estimates weighted densities that are easy to interpret and performs a comprehensive statistical analysis from distribution distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical analysis capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "70b199be-455d-446d-a588-58c2f338c392",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C4",
+      "claim": "Most computational methods for analyzing fluorescent images are based on the complex combination of heterogeneous features which makes it difficult to draw definitive biological conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most computational methods are based on the complex combination of heterogeneous features such as statistical, geometrical, morphological and frequency properties (Peng, 2008), which makes it difficult to draw definitive biological conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "7ae95c6a-c1d3-4a96-9fad-ef6fbe2cd246",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C5",
+      "claim": "Most experimental designs at single-cell level pool together data coming from replicated experiments of a given condition, neglecting the biological variability between individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, most experimental designs, especially at single-cell level, pool together data coming from replicated experiments of a given condition (Schauer et al., 2010; Merouane et al., 2015; Biot et al., 2016), neglecting the biological variability between individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "463e1c73-fa8b-40f5-89b4-7f2c6b90c60f",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C6",
+      "claim": "Micro-patterning is a well-established strategy to reduce morphological variability by imposing constraints on adhesion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Micro-patterning is now a well-established strategy to reduce morphological variability by imposing constraints on adhesion sites, which has been shown to influence the cytoskeleton geometry and transport carrier localization (Th\u00e9ry et al., 2005; Schauer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "44a43a97-d0f9-4914-bfa0-1d9655188389",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C7",
+      "claim": "Micro-patterning has been shown to influence the cytoskeleton geometry and transport carrier localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Micro-patterning is now a well-established strategy to reduce morphological variability by imposing constraints on adhesion sites, which has been shown to influence the cytoskeleton geometry and transport carrier localization (Th\u00e9ry et al., 2005; Schauer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1bc3257b-aeb3-4844-9893-d20df10ad8ef",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C8",
+      "claim": "The kernel density-based test does not consider the sample-to-sample variability because all replicated experiments from a given condition are simply merged together.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, it does not consider the sample-to-sample variability because all replicated experiments from a given condition are simply merged together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of existing methods based on logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "08d71f3c-5a5f-42c7-8e1a-d19704281b36",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C11",
+      "claim": "QuantEv uses the Earth Mover's Distance and the Circular Earth Mover's Distance to measure the dissimilarity between densities associated with different experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the Earth Mover's Distance (Rubner et al., 2000) and the Circular Earth Mover's Distance (Rabin et al., 2011) to measure the dissimilarity between densities associated with different experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distance metrics used, with citations to the original methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "3b696b22-865a-471e-aabd-896e06bd7622",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C12",
+      "claim": "QuantEv identifies the point that gives the most uniform angular distribution, which may coincide with a biological structure of interest that would act as the events emitter or attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "By computing weighted densities for each point in the cell as the reference center, QuantEv identifies the point that gives the most uniform angular distribution. This point may coincide with a biological structure of interest that would act as the events emitter or attractor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the method and speculates about its biological interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1b054bb6-b55f-430e-857d-eb9ac1d9b151",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C13",
+      "claim": "Rab6 proteins are transiently anchored to moving transport carriers from the Golgi apparatus located at the cell center to Endoplasmic Reticulum entry sites or to plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab6 proteins are transiently anchored to moving transport carriers from the Golgi apparatus located at the cell center to Endoplasmic Reticulum entry sites or to plasma membrane (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007; Bardin et al., 2015), both assumed to be located at the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "ee0ada8c-c638-480b-8770-7034bcaf86bf",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C14",
+      "claim": "Cell shape imposes constraints on the cytoskeleton and consequently influences the spatial distribution of Rab6 transport carriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell shape imposes constraints on the cytoskeleton and consequently influences the spatial distribution of Rab6 transport carriers, as confirmed with kernel density maps (Schauer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "2fc0b5dd-a1f4-4c0b-86fd-6d433c55c136",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C15",
+      "claim": "Rab6 positive membranes were reported to move from and toward the Golgi in apparent close proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Rab6 positive membranes were reported to move from and toward the Golgi in apparent close proportions (Grigoriev et al., 2007, Grigoriev et al., 2011), and yet these membrane associated proteins are believed to traffic in majority from the Golgi located at the cell center to the cell periphery (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007) where they should dissociate from membranes and recycle back to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8b521db4-c734-4f46-95dd-f5269e1a925f",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C16",
+      "claim": "Rab6 membrane associated proteins are believed to traffic in majority from the Golgi located at the cell center to the cell periphery where they should dissociate from membranes and recycle back to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Rab6 positive membranes were reported to move from and toward the Golgi in apparent close proportions (Grigoriev et al., 2007, Grigoriev et al., 2011), and yet these membrane associated proteins are believed to traffic in majority from the Golgi located at the cell center to the cell periphery (White et al., 1999; Chavrier and Goud, 1999; Echard et al., 2000; Opdam et al., 2000; Grigoriev et al., 2007) where they should dissociate from membranes and recycle back to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "89c12bc8-9c95-4330-acf3-366bea806ead",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C17",
+      "claim": "Rab11 is known to be primarily localized to the Endosomal Recycling Compartment (ERC).",
+      "claim_type": "EXPLICIT",
+      "source": "Rab11 is known to be primarily localized to the Endosomal Recycling Compartment (ERC), and it organizes spatially and temporally recycling from this compartment (Ullrich et al., 1996; Gidon et al., 2012; Baetz and Goldenring, 2013; Boulanger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "b544f795-d95a-49af-b204-bec6f751d600",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C18",
+      "claim": "Rab11 organizes spatially and temporally recycling from the Endosomal Recycling Compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab11 is known to be primarily localized to the Endosomal Recycling Compartment (ERC), and it organizes spatially and temporally recycling from this compartment (Ullrich et al., 1996; Gidon et al., 2012; Baetz and Goldenring, 2013; Boulanger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1c949fe9-1ce0-494b-a8dc-b4423aa542a1",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C19",
+      "claim": "The KD approach concludes that the distribution of Rab6-positive membranes are clearly different between cells of different shapes with p value = 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The KD approach concludes that the distribution of Rab6-positive membranes are clearly different between cells of different shapes (see Figure 2a\u2013c, p value = 0 when considering unconstrained cells versus crossbow-shaped cells, unconstrained cells versus disk-shaped cells, and crossbow-shaped cells versus disk-shaped cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "f72f76a3-3111-4dae-9ad0-cdbecbfdfdc6",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C20",
+      "claim": "The KD approach leads to a significant difference when image sequences with the same cell shape are compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, it also leads to a significant difference when image sequences with the same cell shape are compared (see Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "717e033b-eeca-4644-81f7-353f34ce5f30",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C21",
+      "claim": "The KD approach is too sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the KD approach is too sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that KD shows differences even for same-shape cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "9370e893-2594-44d2-a508-14fef43f979a",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C22",
+      "claim": "QuantEv shows a uniform range of p values when cells with same shape are compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, QuantEv shows a uniform range of p values when cells with same shape are compared (see Figure 2d) while it leads to significant differences between radial, angular and in-depth distributions of Rab6 proteins from cells with different cell shapes (see Figure 2e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "a98ecb68-af5a-4ad5-be75-ffe41d05aa30",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C23",
+      "claim": "QuantEv leads to significant differences between radial, angular and in-depth distributions of Rab6 proteins from cells with different cell shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, QuantEv shows a uniform range of p values when cells with same shape are compared (see Figure 2d) while it leads to significant differences between radial, angular and in-depth distributions of Rab6 proteins from cells with different cell shapes (see Figure 2e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figures 2e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1b7fbc46-485c-491e-960f-018344e9c6e3",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C24",
+      "claim": "The angular distribution of Rab6 proteins is different for the three cell shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "The angular distribution of Rab6 proteins is different for the three cell shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "78d5de4a-cdd0-4292-ba00-22e79508872f",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C25",
+      "claim": "The angular distribution of Rab6 proteins ranges from a completely uniform distribution for disk-shaped cells, to a less regular distribution for unconstrained cells and to a distribution oriented toward the three tips of the crossbow for crossbow-shaped cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It ranges from a completely uniform distribution for disk-shaped cells, to a less regular distribution for unconstrained cells and to a distribution oriented toward the three tips of the crossbow for crossbow-shaped cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the observed patterns in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "e4a4eb38-e8d7-48ba-9808-ba589a65f4ac",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C26",
+      "claim": "In-depth and radial distributions are similar for crossbow- and disk-shaped cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth and radial distributions are similar for crossbow- and disk-shaped cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8960dfad-a1eb-41a8-8fc6-d88ba0ccd980",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C27",
+      "claim": "In-depth and radial distributions are different from unconstrained cells compared to constrained cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, they are different from unconstrained cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "4f69a911-1716-454b-ad56-fcff6f656a73",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C28",
+      "claim": "Unconstrained cells show diverse sizes with a strong tendency to spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Unconstrained cells show diverse sizes with a strong tendency to spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "946359ee-2eda-45b1-8a83-6b03020c2393",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C29",
+      "claim": "The in-depth distribution is flatter for the unconstrained cells than for the constrained cells because unconstrained cells show diverse sizes with a strong tendency to spread.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains why the in-depth distribution is flatter for the unconstrained cells than for the constrained cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting cell spreading to distribution patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "3484f5e1-41da-439c-8e47-6a239ed6866f",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C30",
+      "claim": "QuantEv highlights a distribution maximum for a radius at the two-thirds the distance between the Golgi region border and the cell periphery for both micro-patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "QuantEv also highlights a distribution maximum for a radius at the two-thirds (resp. five-sixth) the distance between the Golgi region border and the cell periphery for both micro-patterns (resp. unconstrained cells) (see Figure 2f\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figures 2f-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "3ae85972-b835-480d-942f-3519269393cd",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C31",
+      "claim": "QuantEv highlights a distribution maximum for a radius at the five-sixth the distance between the Golgi region border and the cell periphery for unconstrained cells.",
+      "claim_type": "EXPLICIT",
+      "source": "QuantEv also highlights a distribution maximum for a radius at the two-thirds (resp. five-sixth) the distance between the Golgi region border and the cell periphery for both micro-patterns (resp. unconstrained cells) (see Figure 2f\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figures 2f-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "977b3580-e0f3-461d-bf55-32dfb001d2ea",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C32",
+      "claim": "The distribution maxima correspond to an accumulation of Rab6-positive membranes and identify the area where they enter a docking phase before switching to a tethering phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These maxima correspond to an accumulation of Rab6-positive membranes and identify the area where they enter a docking phase before switching to a tethering phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological interpretation of the observed distribution maxima.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "d20a983d-bb9c-4d1b-bd49-acfb5b9fbd74",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C33",
+      "claim": "The localization difference for distribution maxima between constrained and unconstrained cells is explained by a smaller adhesion area without micro-patterns, pushing the docking phase for vesicles closer to the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "The localization difference for these maxima between constrained and unconstrained cells is explained by a smaller adhesion area without micro-patterns, pushing the docking phase for vesicles closer to the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting adhesion area to vesicle docking location.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "a6ef5e14-1868-42b1-b687-94f1a9d91ad4",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C34",
+      "claim": "Both radial and angular distributions unraveled by QuantEv represent a measurement of the environment constraints undergone by living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both radial and angular distributions unraveled by QuantEv represent a measurement of the environment constraints undergone by living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what the distributions represent biologically.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "d870f658-d4d9-4336-b97e-b71d3318555b",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C35",
+      "claim": "The proportion of Rab6-positive membranes moving toward the cell periphery and toward the Golgi are close (0.531 versus 0.469 for unconstrained cells, 0.497 versus 0.503 for crossbow-shaped cells, 0.521 versus 0.479 for disk-shaped cells).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3d\u2013f, the proportion of Rab6-positive membranes moving toward the cell periphery and toward the Golgi are close (0.531 versus 0.469 for unconstrained cells, 0.497 versus 0.503 for crossbow-shaped cells, 0.521 versus 0.479 for disk-shaped cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative data shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "769df05b-dd13-4933-a7d3-a351f06a80f0",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C36",
+      "claim": "The radial distributions display two distinctive modes for vesicles moving toward the cell periphery and those moving toward the Golgi (p value = 0.0002 for unconstrained cells, p value = 0.021 for crossbow-shaped cells, p value = 0.0008 for disk-shaped cells).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the radial distributions shown in Figure 3d\u2013f display two distinctive modes for vesicles moving toward the cell periphery and those moving toward the Golgi (p value = 0.0002 for unconstrained cells, p value = 0.021 for crossbow-shaped cells, p value = 0.0008 for disk-shaped cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of data shown in Figure 3d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "0c9d3847-4c47-4c3d-9ae0-f99f608d8aab",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C37",
+      "claim": "Between the Golgi and the distribution maxima, Rab6 vesicles are predominantly moving toward the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the Golgi and the distribution maxima shown in Figure 2f, Rab6 vesicles are predominantly moving toward the cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the spatial distribution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "789bdd6c-be68-4d90-986b-0fd8fec4d464",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C38",
+      "claim": "Between the distribution maxima and the cell periphery, Rab6 vesicles are in majority moving toward the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Between these maxima and the cell periphery, they are in majority moving toward the Golgi, indicating that during their docking-tethering phase, the vesicles are predominantly moving toward the cell center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the spatial distribution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1e4c0c8f-eb2b-497c-90d2-a4b499b714d7",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C39",
+      "claim": "During their docking-tethering phase, the Rab6 vesicles are predominantly moving toward the cell center.",
+      "claim_type": "EXPLICIT",
+      "source": "Between these maxima and the cell periphery, they are in majority moving toward the Golgi, indicating that during their docking-tethering phase, the vesicles are predominantly moving toward the cell center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the directional movement data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "616ea37f-a52e-4b86-9810-98c89ca59bd9",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C40",
+      "claim": "The two distinctive dynamical behaviors of Rab6 vesicles are consistent with the aforementioned antagonist statements about bidirectional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "These two distinctive dynamical behaviors are consistent with the aforementioned antagonist statements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed behaviors to previous literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "7db24609-3d12-4515-a589-1d498dd57d88",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C41",
+      "claim": "Rab6-positive membranes moving toward the cell periphery have a much more direct path than the ones moving toward the Golgi, except near the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab6-positive membranes moving toward the cell periphery have a much more direct path than the ones moving toward the Golgi, except near the cell periphery (see Figure 4b, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on confinement ratio data shown in Figure 4b, e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "c45f06e8-eeab-4d07-acd7-7786a715a1fd",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C42",
+      "claim": "Rab6 positive membranes moving toward the Golgi have longer total path length and lifetime than the ones moving toward the cell periphery, especially when approaching the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Rab6 positive membranes moving toward the Golgi have longer total path length and lifetime than the ones moving toward the cell periphery, especially when approaching the cell periphery (see Figure 4c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 4c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "76d94e75-1a57-4310-88ad-99506b634693",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C43",
+      "claim": "Rab6-positive membranes move predominantly and quite directly from the Golgi to the cell periphery until they enter a docking phase, then they mostly go back toward the cell center by following long and indirect trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this analysis clearly demonstrated that Rab6-positive membranes move predominantly and quite directly from the Golgi to the cell periphery until they enter a docking phase. Then, they mostly go back toward the cell center by following long and indirect trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the trajectory analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "0c0a2a27-25c4-4e70-85eb-06c319a73134",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C44",
+      "claim": "The point that gives the most uniform angular distribution is close to the manually identified ERC for all image sequences except one.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the blue disk is close to the red disk for all image sequences except one (second line, middle image in Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparison shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "3a6c50ed-afab-4401-a281-814bf8712400",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C45",
+      "claim": "The point that gives the most uniform angular distribution is closer to the manually identified ERC than the cell center in seven out of eight image sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The blue disk is also closer to the red disk than the green disk in seven out of eight image sequences (see Figure 5a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on distance measurements shown in Figure 5a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "cfa7afc5-a2e1-4a41-a6cc-5f9bb82778c8",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C46",
+      "claim": "The Rab11-positive membranes are quite uniformly distributed around the ERC position at the membrane plane whatever the cell shape is.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the point that gives the most uniform angular distribution does not strictly coincide with the manually identified ERC, it is sufficiently close to indicate that the Rab11-positive membranes are quite uniformly distributed around the ERC position at the membrane plane whatever the cell shape is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the uniformity analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "05f11792-023c-4bfd-b65f-7bc224625d80",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C47",
+      "claim": "The ERC corresponds to the organizing hub of the Rab11 carrier vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the ERC corresponds to the organizing hub of the Rab11 carrier vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the uniform distribution around the ERC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "51648568-cefc-43df-8542-2dbadf0f8ffe",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C48",
+      "claim": "In untreated cells, the Euclidean distance between the reference point estimated at time t = 0 and the points estimated for the next frames remains stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In untreated cells, this distance remains stable (see Figure 6 green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "b844c4cf-2223-4c1d-a9f6-b01d901cb07e",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C49",
+      "claim": "The ERC location is moving away as Latrunculin A is affecting the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed cells treated with Latrunculin A, which inhibits actin polymerization (see Appendix 1\u2014figure 1 e\u2013f). We show that the ERC location is moving away as the drug is affecting the cell (see Figure 6 blue and orange lines), enlightening the role of cytoskeleton in stabilizing the cellular localization of the ERC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "49297fcb-1e17-4352-95d3-444658852f04",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C50",
+      "claim": "The cytoskeleton plays a role in stabilizing the cellular localization of the ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the ERC location is moving away as the drug is affecting the cell (see Figure 6 blue and orange lines), enlightening the role of cytoskeleton in stabilizing the cellular localization of the ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the Latrunculin A treatment effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "ce072321-b17b-4837-9eaf-14e04957d9b5",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C51",
+      "claim": "The confinement ratio of Rab11 tracks is decreasing with time after Latrunculin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The confinement ratio of Rab11 tracks is decreasing with time (see Figure 7), which is consistent with actin cytoskeleton being involved in Rab11 vesicle trafficking, as already reported (Schafer et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "c05b54f7-1ddd-4be9-94c2-1c38d5826d45",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C52",
+      "claim": "Actin cytoskeleton is involved in Rab11 vesicle trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "The confinement ratio of Rab11 tracks is decreasing with time (see Figure 7), which is consistent with actin cytoskeleton being involved in Rab11 vesicle trafficking, as already reported (Schafer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and is consistent with the observed data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "844ec936-3dbd-4c3e-852e-d5257a32e7b6",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C53",
+      "claim": "The radial distribution of Rab11 vesicles is constantly shifting from the cell periphery to the cell center for unconstrained, crossbow- and disk-shaped cells after Latrunculin A treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial distribution of Rab11 vesicles is constantly shifting from the cell periphery to the cell center for unconstrained, crossbow- and disk-shaped cells (see Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "50d46714-8176-42cd-b985-73e8eba1fe7c",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C54",
+      "claim": "Before and at drug injection time, there are significant differences in radial distributions between the three tested conditions (p value = 0.0023).",
+      "claim_type": "EXPLICIT",
+      "source": "However, before and at drug injection time, we observe significant differences in radial distributions between the three tested conditions (p value = 0.0023, see Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "f58784f0-e080-40a2-97b0-e2e7970b24b8",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C55",
+      "claim": "After Latrunculin A treatment, there is progressively no difference between the radial distributions as the actin organization is drastically perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "After Latrunculin A treatment, we progressively observe no difference between the radial distributions, as the actin organization is drastically perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis results and connects them to actin disruption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "e94d147d-12b1-4706-842f-bdfe0807e418",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C56",
+      "claim": "Exocytosis/recycling vesicle trafficking is dependent on both cell shape and actin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these quantifications allow us to conclude that exocytosis/recycling vesicle trafficking is dependent on both cell shape and actin organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined analysis of cell shape and Latrunculin A effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "14060d8d-27bf-4577-91e5-881c4b34653e",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C57",
+      "claim": "QuantEv is publicly available.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, QuantEv has the potential to become a very popular analysis method for dynamics and intracellular event analysis as (i) it is publicly available; (ii) it is fully automated and semi-parametric; (iii) it provides results that are easy to biologically interpret; (iv) it performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "9433b481-7285-4829-b2dd-7c3560343fa9",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C58",
+      "claim": "QuantEv is fully automated and semi-parametric.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, QuantEv has the potential to become a very popular analysis method for dynamics and intracellular event analysis as (i) it is publicly available; (ii) it is fully automated and semi-parametric; (iii) it provides results that are easy to biologically interpret; (iv) it performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical characteristics of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "bad2f356-ec0a-43ee-8187-a57e4bdae50d",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C59",
+      "claim": "QuantEv provides results that are easy to biologically interpret.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, QuantEv has the potential to become a very popular analysis method for dynamics and intracellular event analysis as (i) it is publicly available; (ii) it is fully automated and semi-parametric; (iii) it provides results that are easy to biologically interpret; (iv) it performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the interpretability of the method's output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "2d496fb6-7650-464b-86cb-284eabafb62d",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C60",
+      "claim": "QuantEv performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, QuantEv has the potential to become a very popular analysis method for dynamics and intracellular event analysis as (i) it is publicly available; (ii) it is fully automated and semi-parametric; (iii) it provides results that are easy to biologically interpret; (iv) it performs a statistical analysis that takes into account the biological variability over the replicated experiments of a same condition and is efficient with small and large amounts of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical capabilities of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "1956fd71-825e-4cf9-83a3-3e206b07305b",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C61",
+      "claim": "HeLa cells stably expressing fluorescently tagged GFP-RAB6A were previously generated in the Lab at Institut Curie.",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells stably expressing fluorescently tagged GFP-RAB6A were previously generated in the Lab at Institut Curie (Teber et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the cell line source, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "f965bb75-b061-4954-b2ba-0bd7a3b9f765",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C63",
+      "claim": "18 series of 120 Z image stacks of 10 frames were recorded at a rate of about 1 stack/s for Rab6-positive membranes in unconstrained cells.",
+      "claim_type": "EXPLICIT",
+      "source": "18 series of 120 Z image stacks of 10 frames were recorded at a rate of about 1 stack/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8db116fd-9d1e-404b-a877-3f252b07f646",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C64",
+      "claim": "18 image sequences with crossbow-shaped cells and 22 image sequences with disk-shaped cells were acquired for Rab6-positive membranes on micro-patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "18 image sequences with crossbow-shaped cells and 22 image sequences with disk-shaped cells were acquired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "b3eebd46-ff68-4df1-9369-13d260427660",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C65",
+      "claim": "The Rab6 proteins are extracted from each image sequence by using the C-CRAFT method with default parameters, except the p value that ranges from 0.0025 to 0.35 depending on the noise level.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rab6 proteins are extracted from each image sequence by using the C-CRAFT method (P\u00e9cot et al., 2015) with default parameters, except the p value that ranges from 0.0025 to 0.35 depending on the noise level, available on Icy (de Chaumont et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image analysis method used, with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "961239e2-c67e-41fe-9537-6334a1bba44d",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C66",
+      "claim": "The Rab11-positive membranes on micro-patterns are segmented at each time point with the ATLAS algorithm with default parameters, except the p value that ranges from 0.05 to 0.45 depending on the noise level.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rab11-positive membranes on micro-patterns are segmented at each time point with the ATLAS algorithm (Basset et al., 2015) with default parameters, except the p value that ranges from 0.05 to 0.45 depending on the noise level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the segmentation method used, with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "13e9125c-8e20-4cf7-b0be-b601b5563bed",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C67",
+      "claim": "A variance stabilization transform is performed to take into account the Poisson-Gaussian nature of the noise in the CCD sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, a variance stabilization transform (Boulanger et al., 2010) is performed to take into account the Poisson-Gaussian nature of the noise in the CCD sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a preprocessing step with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "70fa4a0d-6be1-4265-b5f1-9096cfcf2616",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C68",
+      "claim": "Rab6 and Rab11 trajectories are estimated with the multiple hypothesis tracking method developed by Chenouard et al. (2013) with default parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Rab6 and Rab11 trajectories are estimated with the multiple hypothesis tracking method developed by Chenouard et al. (2013) with default parameters, available on Icy (de Chaumont et al., 2012), the combinatorial optimization tracking method developed by Sbalzarini and Koumoutsakos (2005) with default parameters, available on ImageJ (Schneider et al., 2012) and the hybrid approach TrackMate (Tinevez et al., 2017) that first connects detected points into short tracks and then links the resulting tracks together, with default parameters, available on Fiji (Schindelin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tracking methods used, with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "e29622ef-532b-45fd-b525-356cb6fbf825",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C69",
+      "claim": "Only the trajectories for which the gated distance is inferior to 2 pixels for at least two methods are used for the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the trajectories for which the gated distance is inferior to 2 pixels for at least two methods are used for the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control criterion for trajectory selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "c55e6904-5765-4285-8950-03b18dc56260",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C72",
+      "claim": "A one-sided non-parametric Wilcoxon signed-rank test is used on the condition differences for all experiments to state if two conditions are statistically different.",
+      "claim_type": "EXPLICIT",
+      "source": "For those two reasons, we propose to use the one-sided non-parametric Wilcoxon signed-rank test on the condition differences for all experiments to state if two conditions are statistically different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "e3cf0ab5-0eca-4157-9ea3-97e95f5415c2",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C74",
+      "claim": "The bisection method is about sixty times faster than the entropy map computation for finding the point with most uniform distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We also propose to use the bisection method to speed up the computation (about sixty times faster than the entropy map computation, see Appendix 5\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational performance comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "372f5eb7-4ede-4efd-bf45-765e62b0f82c",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C75",
+      "claim": "An Icy plugin and a tutorial are available at http://icy.bioimageanalysis.org/plugin/QuantEv.",
+      "claim_type": "EXPLICIT",
+      "source": "An Icy plugin and a tutorial are available at http://icy.bioimageanalysis.org/plugin/QuantEv.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "ed626e7d-8575-4428-a7be-c4b1d40a53ff",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C76",
+      "claim": "A QuantEv analysis module is available on TrackMate.",
+      "claim_type": "EXPLICIT",
+      "source": "A QuantEv analysis module is available on TrackMate and a QuantEv track processor is available in Icy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "6c90d7a1-75cf-4764-a7e3-51fe9c9e5dd1",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "claim_id": "C77",
+      "claim": "A QuantEv track processor is available in Icy.",
+      "claim_type": "EXPLICIT",
+      "source": "A QuantEv analysis module is available on TrackMate and a QuantEv track processor is available in Icy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9784ece5-d59c-4492-a820-e3eff82757d1",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "QuantEv is a computational method that automatically estimates weighted densities from spatial coordinates of intracellular features and performs statistical analysis using Earth Mover's Distance metrics, accounting for biological variability across replicated experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C11, C58, and C60 collectively describe the core computational capabilities of QuantEv. The method's implementation is demonstrated throughout the manuscript with multiple applications to real biological data (Figures 2-8), showing it functions as described. The statistical framework using EMD/CEMD and Wilcoxon tests is mathematically defined in the Methods section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "4725de62-4261-468b-a204-cb73dbd87612",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "QuantEv demonstrates superior specificity compared to kernel density (KD) maps when analyzing Rab6 spatial distributions across different cell shapes. While KD incorrectly shows significant differences between same-shape cells (p=0), QuantEv shows uniform p-values for same-shape comparisons but detects significant differences between different cell shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by data in Figure 2d-f showing KD's false positive rate and QuantEv's appropriate discrimination. The comparison demonstrates QuantEv addresses the over-sensitivity problem of pooling data (C8). Statistical significance is properly reported with p-values, though the claim that KD is \"too sensitive\" (C21) could benefit from more rigorous false positive rate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cell shape significantly influences the angular, radial, and in-depth distributions of Rab6-positive membranes. Angular distributions range from uniform (disk-shaped) to oriented toward crossbow tips, while unconstrained cells show flatter in-depth distributions due to cell spreading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by quantitative data in Figure 2e-f with appropriate statistical tests. The biological interpretation connecting cell spreading to distribution patterns (C29) is reasonable inference from the data. However, the causal claim about spreading \"explaining\" the flatter distribution could be strengthened with additional controls or perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "QuantEv identifies distribution maxima at specific radial distances (two-thirds for constrained cells, five-sixths for unconstrained cells) that correspond to Rab6 docking phase locations. These maxima reflect environmental constraints on cells, with differences explained by adhesion area variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C31 are supported by data in Figure 2f-i showing clear distribution peaks. However, the biological interpretation that these maxima represent \"docking phase\" entry (C32) and the mechanistic explanation involving adhesion area (C33) are inferences without direct experimental validation. Additional experiments (e.g., perturbation of docking machinery, direct adhesion area measurements) would be needed to confirm these interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rab6-positive membranes exhibit bidirectional movement with approximately equal proportions moving toward periphery versus Golgi, but with distinct spatial patterns: predominantly outward movement between Golgi and distribution maxima, then predominantly inward movement during docking-tethering phase. This reconciles previously antagonistic observations about Rab6 trafficking directionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 and C43 are well-supported by quantitative trajectory analysis in Figure 3d-f with significant p-values (0.0002-0.021). The data successfully reconcile the apparent contradiction between equal bidirectional proportions (C15, C16) and net outward trafficking. The spatial decomposition of directional preferences is a novel insight supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "65914d5e-5434-4983-b4ba-aee3faf25da2",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rab6-positive membranes moving toward the cell periphery follow more direct paths than those moving toward the Golgi, which have longer path lengths and lifetimes, especially near the cell periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by confinement ratio, path length, and lifetime data in Figure 4b-e. The measurements are appropriate for characterizing trajectory properties and the spatial dependence is clearly shown. This provides mechanistic insight into the bidirectional trafficking patterns identified in the previous result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "55538a83-b174-486e-900a-926fd9092b94",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The point identified by QuantEv's uniformity analysis as having the most uniform angular distribution of Rab11-positive membranes is close to the manually identified ERC in 7/8 sequences, indicating the ERC serves as the organizing hub for Rab11 vesicles with uniform angular distribution at the membrane plane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by data in Figure 5a-b showing proximity between computed and manual ERC locations. The uniformity analysis successfully identifies a biologically meaningful structure. However, the sample size is small (n=8), and the interpretation that this represents an \"organizing hub\" (C47) is reasonable inference but not directly demonstrated through perturbation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "e5ed3883-fae3-4d84-8bb7-9be583adaef4",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ERC location remains stable over time in untreated cells but moves away from its initial position following Latrunculin A treatment, demonstrating the cytoskeleton's role in stabilizing ERC cellular localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by time-course data in Figure 6 showing stable distances in controls versus increasing distances with Latrunculin A. The inference about cytoskeleton's stabilizing role (C50) is reasonable given Latrunculin A's known mechanism of inhibiting actin polymerization. This provides functional validation of the uniformity analysis approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "9a6a704e-b6e9-427c-87d3-4bdb4f491d0c",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rab11 track confinement ratio decreases over time following Latrunculin A treatment, consistent with actin cytoskeleton involvement in Rab11 vesicle trafficking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by data in Figure 7 showing temporal decrease in confinement ratio. The result is consistent with prior literature (Schafer et al., 2014, C52) and provides confirmatory evidence. Statistical significance is demonstrated (p-values provided), though the claim would be strengthened by dose-response data or rescue experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "223e724f-d828-44e5-b2aa-77762e9025b8",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rab11 vesicle radial distribution shifts from cell periphery to center following Latrunculin A treatment across all cell shapes. Before treatment, significant differences exist between cell shapes (p=0.0023), but these differences disappear after actin disruption, demonstrating dual regulation by cell shape and actin organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 are supported by data in Figure 8a-b showing temporal shifts and loss of shape-dependent differences. The statistical analysis appropriately demonstrates the interaction between cell shape and actin organization. The conclusion about dual regulation (C56) is well-supported by the convergence of distributions after actin disruption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8079ba1f-fa5e-4531-8f54-7278f014fa45",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Existing computational methods for fluorescence image analysis have limitations: they combine heterogeneous features making biological interpretation difficult, and they pool data across replicates neglecting biological variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C8 accurately characterize limitations of prior approaches, supported by appropriate citations (Peng 2008; Schauer et al. 2010; Merouane et al. 2015; Biot et al. 2016). The manuscript demonstrates these limitations empirically by showing KD's over-sensitivity (C19-C21). These claims establish the motivation for QuantEv's development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "d2eb352e-2140-4780-8590-ca1fa891ebe9",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that micro-patterning influences cytoskeleton and trafficking, Rab6 proteins traffic from Golgi to cell periphery with bidirectional movement, and Rab11 localizes to the ERC organizing recycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C13-C18 accurately summarize established knowledge from prior literature with appropriate citations. These claims provide necessary biological context for the study but represent background knowledge rather than new findings. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "QuantEv is publicly available as an Icy plugin with tutorial, TrackMate analysis module, and Icy track processor, providing results that are easy to biologically interpret.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59, C75-C77 describe software availability and usability. URLs and implementation details are provided. The claim about interpretability (C59) is supported by the clear visualizations throughout the manuscript (Figures 2-8). Software availability is essential for reproducibility and represents good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study used HeLa cells expressing GFP-RAB6A and RPE1 cells with Rab11a-GFP, acquired multiple image sequences across different cell shapes and imaging modalities, and processed data using established detection, segmentation, and tracking methods with quality control criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63-C69 describe experimental methods with appropriate detail and citations. Sample sizes are reported (18-22 sequences per condition), imaging parameters specified, and analysis pipelines described with software versions. The use of three tracking methods with consensus filtering (C69) is a strength. Methods appear reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "fef7a201-d896-4701-85fb-88cee49629e7",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "QuantEv uses one-sided Wilcoxon signed-rank test for statistical comparisons and implements a bisection method that is approximately 60 times faster than entropy map computation for uniformity analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C74 describe methodological choices. The statistical test selection (C72) is appropriate for non-parametric paired comparisons. The computational speedup claim (C74) references Appendix 5-table 1 for quantitative support. These represent valid methodological contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "131559ec-54a6-46ba-8ef8-6908dd885521",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Analysis of spatial distribution of endomembrane trafficking is fundamental for understanding cellular dynamics, homeostasis, and cell-environment interactions in normal and pathological situations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general statement about the importance of the research area, supported by established knowledge in cell biology. While not a novel finding, it accurately frames the scientific context and motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    },
+    {
+      "id": "8a08573d-f18e-40a7-b6c6-dd70ec74b5c0",
+      "content_id": "8de9e331-c98c-4af0-bf00-f68555f94c08",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "QuantEv can identify points giving the most uniform angular distribution, which may coincide with biological structures acting as event emitters or attractors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 describes a capability of QuantEv that is demonstrated empirically with the ERC identification (C44-C47). The hedged language (\"may coincide\") appropriately reflects that this is a hypothesis-generating feature requiring biological validation in each application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:55:10.788043Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "659a1ce3-4a8c-4abe-9c48-bd50cb8078d2",
+      "result_id": "9784ece5-d59c-4492-a820-e3eff82757d1"
+    },
+    {
+      "claim_id": "942730d0-35d5-4aa3-a633-59bf446c42aa",
+      "result_id": "9784ece5-d59c-4492-a820-e3eff82757d1"
+    },
+    {
+      "claim_id": "08d71f3c-5a5f-42c7-8e1a-d19704281b36",
+      "result_id": "9784ece5-d59c-4492-a820-e3eff82757d1"
+    },
+    {
+      "claim_id": "9433b481-7285-4829-b2dd-7c3560343fa9",
+      "result_id": "9784ece5-d59c-4492-a820-e3eff82757d1"
+    },
+    {
+      "claim_id": "2d496fb6-7650-464b-86cb-284eabafb62d",
+      "result_id": "9784ece5-d59c-4492-a820-e3eff82757d1"
+    },
+    {
+      "claim_id": "1c949fe9-1ce0-494b-a8dc-b4423aa542a1",
+      "result_id": "4725de62-4261-468b-a204-cb73dbd87612"
+    },
+    {
+      "claim_id": "f72f76a3-3111-4dae-9ad0-cdbecbfdfdc6",
+      "result_id": "4725de62-4261-468b-a204-cb73dbd87612"
+    },
+    {
+      "claim_id": "717e033b-eeca-4644-81f7-353f34ce5f30",
+      "result_id": "4725de62-4261-468b-a204-cb73dbd87612"
+    },
+    {
+      "claim_id": "9370e893-2594-44d2-a508-14fef43f979a",
+      "result_id": "4725de62-4261-468b-a204-cb73dbd87612"
+    },
+    {
+      "claim_id": "a98ecb68-af5a-4ad5-be75-ffe41d05aa30",
+      "result_id": "4725de62-4261-468b-a204-cb73dbd87612"
+    },
+    {
+      "claim_id": "1b7fbc46-485c-491e-960f-018344e9c6e3",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "78d5de4a-cdd0-4292-ba00-22e79508872f",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "e4a4eb38-e8d7-48ba-9808-ba589a65f4ac",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "8960dfad-a1eb-41a8-8fc6-d88ba0ccd980",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "4f69a911-1716-454b-ad56-fcff6f656a73",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "946359ee-2eda-45b1-8a83-6b03020c2393",
+      "result_id": "59a30e25-84d8-4a1b-8009-2a3cec3f3b33"
+    },
+    {
+      "claim_id": "3484f5e1-41da-439c-8e47-6a239ed6866f",
+      "result_id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8"
+    },
+    {
+      "claim_id": "3ae85972-b835-480d-942f-3519269393cd",
+      "result_id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8"
+    },
+    {
+      "claim_id": "977b3580-e0f3-461d-bf55-32dfb001d2ea",
+      "result_id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8"
+    },
+    {
+      "claim_id": "d20a983d-bb9c-4d1b-bd49-acfb5b9fbd74",
+      "result_id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8"
+    },
+    {
+      "claim_id": "a6ef5e14-1868-42b1-b687-94f1a9d91ad4",
+      "result_id": "12e2d2a2-22f5-46a1-bcb3-b44f01a481a8"
+    },
+    {
+      "claim_id": "d870f658-d4d9-4336-b97e-b71d3318555b",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "769df05b-dd13-4933-a7d3-a351f06a80f0",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "0c9d3847-4c47-4c3d-9ae0-f99f608d8aab",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "789bdd6c-be68-4d90-986b-0fd8fec4d464",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "1e4c0c8f-eb2b-497c-90d2-a4b499b714d7",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "616ea37f-a52e-4b86-9810-98c89ca59bd9",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "76d94e75-1a57-4310-88ad-99506b634693",
+      "result_id": "627bb2c0-8a00-4ed5-a0c5-26a8e941af23"
+    },
+    {
+      "claim_id": "7db24609-3d12-4515-a589-1d498dd57d88",
+      "result_id": "65914d5e-5434-4983-b4ba-aee3faf25da2"
+    },
+    {
+      "claim_id": "c45f06e8-eeab-4d07-acd7-7786a715a1fd",
+      "result_id": "65914d5e-5434-4983-b4ba-aee3faf25da2"
+    },
+    {
+      "claim_id": "0c0a2a27-25c4-4e70-85eb-06c319a73134",
+      "result_id": "55538a83-b174-486e-900a-926fd9092b94"
+    },
+    {
+      "claim_id": "3a6c50ed-afab-4401-a281-814bf8712400",
+      "result_id": "55538a83-b174-486e-900a-926fd9092b94"
+    },
+    {
+      "claim_id": "cfa7afc5-a2e1-4a41-a6cc-5f9bb82778c8",
+      "result_id": "55538a83-b174-486e-900a-926fd9092b94"
+    },
+    {
+      "claim_id": "05f11792-023c-4bfd-b65f-7bc224625d80",
+      "result_id": "55538a83-b174-486e-900a-926fd9092b94"
+    },
+    {
+      "claim_id": "51648568-cefc-43df-8542-2dbadf0f8ffe",
+      "result_id": "e5ed3883-fae3-4d84-8bb7-9be583adaef4"
+    },
+    {
+      "claim_id": "b844c4cf-2223-4c1d-a9f6-b01d901cb07e",
+      "result_id": "e5ed3883-fae3-4d84-8bb7-9be583adaef4"
+    },
+    {
+      "claim_id": "49297fcb-1e17-4352-95d3-444658852f04",
+      "result_id": "e5ed3883-fae3-4d84-8bb7-9be583adaef4"
+    },
+    {
+      "claim_id": "ce072321-b17b-4837-9eaf-14e04957d9b5",
+      "result_id": "9a6a704e-b6e9-427c-87d3-4bdb4f491d0c"
+    },
+    {
+      "claim_id": "c05b54f7-1ddd-4be9-94c2-1c38d5826d45",
+      "result_id": "9a6a704e-b6e9-427c-87d3-4bdb4f491d0c"
+    },
+    {
+      "claim_id": "844ec936-3dbd-4c3e-852e-d5257a32e7b6",
+      "result_id": "223e724f-d828-44e5-b2aa-77762e9025b8"
+    },
+    {
+      "claim_id": "50d46714-8176-42cd-b985-73e8eba1fe7c",
+      "result_id": "223e724f-d828-44e5-b2aa-77762e9025b8"
+    },
+    {
+      "claim_id": "f58784f0-e080-40a2-97b0-e2e7970b24b8",
+      "result_id": "223e724f-d828-44e5-b2aa-77762e9025b8"
+    },
+    {
+      "claim_id": "e94d147d-12b1-4706-842f-bdfe0807e418",
+      "result_id": "223e724f-d828-44e5-b2aa-77762e9025b8"
+    },
+    {
+      "claim_id": "70b199be-455d-446d-a588-58c2f338c392",
+      "result_id": "8079ba1f-fa5e-4531-8f54-7278f014fa45"
+    },
+    {
+      "claim_id": "7ae95c6a-c1d3-4a96-9fad-ef6fbe2cd246",
+      "result_id": "8079ba1f-fa5e-4531-8f54-7278f014fa45"
+    },
+    {
+      "claim_id": "1bc3257b-aeb3-4844-9893-d20df10ad8ef",
+      "result_id": "8079ba1f-fa5e-4531-8f54-7278f014fa45"
+    },
+    {
+      "claim_id": "463e1c73-fa8b-40f5-89b4-7f2c6b90c60f",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "44a43a97-d0f9-4914-bfa0-1d9655188389",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "1b054bb6-b55f-430e-857d-eb9ac1d9b151",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "ee0ada8c-c638-480b-8770-7034bcaf86bf",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "2fc0b5dd-a1f4-4c0b-86fd-6d433c55c136",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "8b521db4-c734-4f46-95dd-f5269e1a925f",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "89c12bc8-9c95-4330-acf3-366bea806ead",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "b544f795-d95a-49af-b204-bec6f751d600",
+      "result_id": "d2eb352e-2140-4780-8590-ca1fa891ebe9"
+    },
+    {
+      "claim_id": "14060d8d-27bf-4577-91e5-881c4b34653e",
+      "result_id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe"
+    },
+    {
+      "claim_id": "bad2f356-ec0a-43ee-8187-a57e4bdae50d",
+      "result_id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe"
+    },
+    {
+      "claim_id": "372f5eb7-4ede-4efd-bf45-765e62b0f82c",
+      "result_id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe"
+    },
+    {
+      "claim_id": "ed626e7d-8575-4428-a7be-c4b1d40a53ff",
+      "result_id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe"
+    },
+    {
+      "claim_id": "6c90d7a1-75cf-4764-a7e3-51fe9c9e5dd1",
+      "result_id": "ad0d3b45-3da6-46c9-ad3c-c63d46304dbe"
+    },
+    {
+      "claim_id": "1956fd71-825e-4cf9-83a3-3e206b07305b",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "f965bb75-b061-4954-b2ba-0bd7a3b9f765",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "8db116fd-9d1e-404b-a877-3f252b07f646",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "b3eebd46-ff68-4df1-9369-13d260427660",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "961239e2-c67e-41fe-9537-6334a1bba44d",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "13e9125c-8e20-4cf7-b0be-b601b5563bed",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "70fa4a0d-6be1-4265-b5f1-9096cfcf2616",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "e29622ef-532b-45fd-b525-356cb6fbf825",
+      "result_id": "55b4d3c7-8a2e-41ed-bdde-0ddffe4b59c6"
+    },
+    {
+      "claim_id": "c55e6904-5765-4285-8950-03b18dc56260",
+      "result_id": "fef7a201-d896-4701-85fb-88cee49629e7"
+    },
+    {
+      "claim_id": "e3cf0ab5-0eca-4157-9ea3-97e95f5415c2",
+      "result_id": "fef7a201-d896-4701-85fb-88cee49629e7"
+    },
+    {
+      "claim_id": "6b89da19-7b32-4b2c-b674-149815b97b5d",
+      "result_id": "131559ec-54a6-46ba-8ef8-6908dd885521"
+    },
+    {
+      "claim_id": "3b696b22-865a-471e-aabd-896e06bd7622",
+      "result_id": "8a08573d-f18e-40a7-b6c6-dd70ec74b5c0"
+    }
+  ],
+  "comparisons": []
+}

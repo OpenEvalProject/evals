@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "IR spectroscopy experiments show that phosphorylation of Aurora A on T288 does not substantially change the DFG-In/Out equilibrium. Phosphorylated Aurora A predominantly shows a 2158 cm\u207b\u00b9 peak corresponding to the DFG-Out state, similar to unphosphorylated Aurora A. Addition of Tpx2 causes a dramatic shift to the DFG-In state (peaks at 2149 and 2164 cm\u207b\u00b9), but phosphorylation alone does not produce this shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 provide converging IR spectroscopy evidence that phosphorylation does not shift the DFG equilibrium. The W277A mutation control (C7) validates the peak assignment, and temperature-dependent experiments with ADP show similar behavior for phosphorylated and unphosphorylated Aurora A. This is a key finding that challenges the prevailing model of kinase activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Time-resolved FRET experiments demonstrate that phosphorylated and unphosphorylated Aurora A have strikingly similar distance distributions in the absence of ligands (~30 \u00c5, broad), indicating high flexibility of the activation loop regardless of phosphorylation state. Both forms adopt a narrow, well-defined structure at ~54 \u00c5 when saturated with Tpx2 and nucleotide, consistent with the DFG-In state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide orthogonal FRET-based evidence supporting the IR results. The similar distance distributions for phosphorylated and unphosphorylated Aurora A in the absence of ligands (C10-C11) confirm that phosphorylation does not substantially alter the conformational ensemble. The shift to ~54 \u00c5 with Tpx2+nucleotide (C12-C13) is consistent with the DFG-In state and validates the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Phosphorylation and Tpx2 exhibit synergistic effects on Aurora A. Phosphorylation does not affect nucleotide binding to apo Aurora A (similar KD for ADP), but enhances Tpx2 binding affinity ~20-fold. Once Tpx2 is bound, phosphorylation enhances nucleotide affinity, establishing allosteric coupling between the phosphorylation site and active site that is absent in apo Aurora A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 demonstrate important synergistic effects through equilibrium binding measurements. The lack of effect of phosphorylation on nucleotide binding to apo Aurora A (C14) is consistent with the lack of DFG shift, while the enhanced Tpx2 binding (C16) and subsequent nucleotide affinity enhancement (C17) reveal mechanistic coupling. The data are internally consistent and well-supported by Figure 2c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Molecular dynamics simulations reveal that phosphorylated Aurora A is locked into a single active DFG-In conformation (L225-S284 distance ~42 \u00c5, R255-T288 distance ~5 \u00c5), while unphosphorylated Aurora A without Tpx2 samples two discrete DFG-In subpopulations: an active-like state (~43 \u00c5) and an autoinhibited state (~38 \u00c5) where the activation loop tip folds into a short helical turn (residues P282-R286).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide computational evidence for distinct DFG-In substates. The simulations remained in the DFG-In state (C18), allowing characterization of substates. The identification of a helical autoinhibited substate (C21) is novel and mechanistically important. However, the simulations did not capture DFG-Out to DFG-In transitions, limiting their ability to assess the DFG equilibrium directly. The findings are consistent with experimental data but represent predictions requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The R180A mutation in Aurora A reduces activity 4-fold in the absence of Tpx2, while activity in the presence of Tpx2 is only modestly affected, supporting the role of R180 in recognizing the phosphothreonine residue in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides experimental validation of the MD simulation predictions regarding the importance of R180-pT288 interactions. The selective effect in the absence of Tpx2 is consistent with the proposed mechanism. However, only one mutant was tested, and the modest 4-fold effect suggests R180 is not the sole determinant of activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "DEER spectroscopy shows that phosphorylated Aurora A bound to ADP or AMPPNP exhibits a broad distance distribution consistent with multiple conformations, while binding to Tpx2 produces a narrow distribution with a dominant peak at 52 \u00c5. Subtle differences indicate that distances beyond 50 \u00c5 are more populated in phosphorylated versus unphosphorylated Aurora A bound to ADP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide high-resolution EPR evidence supporting the dynamic nature of phosphorylated Aurora A. The broad distributions (C23) are consistent with sampling of multiple states, while Tpx2 binding produces a well-ordered structure (C24-C25). The subtle differences between phosphorylated and unphosphorylated samples (C26) suggest phosphorylation does alter the DFG-In subpopulation, though the effect is modest without Tpx2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C61",
+      "C62"
+    ],
+    "result": "DEER experiments with the DFG-In-selective inhibitor SNS-314 reveal distinct structures for unphosphorylated (49 \u00c5) and phosphorylated (53 \u00c5) Aurora A, demonstrating that phosphorylation induces a 4 \u00c5 structural change within the DFG-In state. This distance change is similar to the difference predicted by MD simulations between autoinhibited and active DFG-In substates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C61-C62 provide critical experimental evidence for the central hypothesis. By using SNS-314 to isolate the DFG-In state (C61), the authors reveal a clear phosphorylation-dependent structural change (C27-C28). The agreement with MD predictions (C62) strengthens both approaches. This is strong evidence for the proposed mechanism of activation within the DFG-In state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C45",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Phosphorylation triggers a switch from an autoinhibited DFG-In substate to an active DFG-In substate in Aurora A, leading to ~100-fold catalytic activation without a population shift from DFG-Out to DFG-In. The activation loop of phosphorylated Aurora A remains highly dynamic, continuously sampling both DFG-In and DFG-Out states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C45, C52-C54 represent the central conclusions of the study, integrating evidence from IR, FRET, DEER, and MD simulations. The convergence of multiple orthogonal techniques strongly supports this novel mechanism. The ~100-fold activation (C52) is well-documented in prior work (C1), and the current study provides a mechanistic explanation. This challenges the prevailing model of kinase activation and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "The stabilizing ionic interactions between phosphothreonine and arginine residues are offset by an energetic penalty for refolding the activation loop, explaining why phosphorylation does not shift the DFG equilibrium. Phosphorylation tunes the free energy surface within the DFG-In state, favoring the active over autoinhibited substate. Synergy with Tpx2 arises because phosphorylation promotes formation of the Tpx2-interaction surface, while Tpx2 binding compensates for the energetic cost of loop reconfiguration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C68 provide a thermodynamic framework explaining the experimental observations. The model is internally consistent and accounts for the synergy between phosphorylation and Tpx2 (C16-C17). However, these are inferences from the data rather than direct measurements of free energies. The model is plausible and well-reasoned but would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C46"
+    ],
+    "result": "Phosphorylation and Tpx2 activate Aurora A through different but complementary mechanisms: phosphorylation triggers a structural switch within the DFG-In subpopulation, while Tpx2 promotes a DFG flip to increase the population of the DFG-In state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C46 summarize the distinct mechanisms of activation. The evidence for Tpx2-mediated DFG flip (C46) comes from prior work (Cyphers et al., 2017) and is supported by current IR and FRET data (C2, C5-C6). The phosphorylation mechanism (C44) is the novel contribution of this study. The complementary nature is well-supported by the synergy data (C16-C17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9"
+    ],
+    "result": "Phosphorylation of Aurora A on T288 leads to ~100-fold increase in catalytic activity, and phosphorylated Aurora A exhibits robust activity in the absence of Tpx2 with further ~4-fold activation upon Tpx2 addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C9 establish the functional context for the study. The ~100-fold activation by phosphorylation (C1) is supported by prior work and Figure 1\u2014figure supplement 1a. The ~4-fold additional activation by Tpx2 (C9) is consistent with prior studies and validates the labeled constructs used in this study. These are well-established findings that motivate the mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Tpx2 binding triggers a conformational change from the DFG-Out to the DFG-In state in Aurora A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 summarizes prior work (Cyphers et al., 2017) that is confirmed and extended in the current study. The IR spectroscopy data (C5-C6) and FRET data (C12-C13) in the current manuscript support this mechanism. This provides important context for understanding the distinct mechanism of phosphorylation-mediated activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Phosphorylation can drive catalytic activation of a protein kinase without restraining the protein in the DFG-In state, providing a dynamic view of an activated kinase where major conformational changes occur continuously during the catalytic cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 represents a major conceptual conclusion that challenges the prevailing static view of kinase activation. This is well-supported by the combined spectroscopic and computational evidence showing that phosphorylated Aurora A samples both DFG-In and DFG-Out states while maintaining high activity. This has broad implications for understanding kinase regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background claims establishing the biological context of Aurora A function, the general mechanisms of kinase regulation by phosphorylation and DFG conformational changes, and the prevailing model that phosphorylation stabilizes the DFG-In state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 provide essential background from prior literature. These are well-established facts supported by appropriate citations. They establish the biological importance of Aurora A, the prevailing model of kinase activation by phosphorylation, and the DFG-In/Out conformational switch. These claims provide the foundation for understanding why the current findings are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The AGC kinases possess a C-terminal hydrophobic motif that resembles Tpx2 interaction with Aurora A. In AGC kinases, activation loop phosphorylation and hydrophobic motif engagement are tightly coupled. Aurora A's ability to be independently activated by phosphorylation or Tpx2 depends on a unique active-site water network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide comparative context with AGC kinases, supported by appropriate citations. This comparison helps explain why Aurora A exhibits distinct activation mechanisms. The unique water network (C49) is from prior work (Cyphers et al., 2017) and provides a structural basis for the independent activation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C58",
+      "C59",
+      "C73"
+    ],
+    "result": "In ~10% of melanoma patients, PP6 phosphatase inactivation leads to accumulation of doubly-activated (phosphorylated + Tpx2-bound) Aurora A on the mitotic spindle. In normal cells, the Tpx2-bound spindle pool is predominantly unphosphorylated and the centrosomal pool is not bound to Tpx2. The distinct conformational dynamics of doubly-activated Aurora A might provide opportunities for selective inhibitor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C58-C59, C73 discuss the biological and therapeutic context. The melanoma connection (C50) is supported by appropriate citations. The spatial separation of activation mechanisms in normal cells (C58-C59) is from prior work. The therapeutic speculation (C73) is reasonable but remains to be tested. These claims provide important biological context but are not central findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C60"
+    ],
+    "result": "Many other protein kinases employ an autoinhibitory DFG-In state for regulatory control, and formation of short helices in the activation loop is a common feature of inactive states of other protein kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C60 provide comparative context showing that autoinhibitory DFG-In states and helical activation loop conformations are observed in other kinases. This is supported by appropriate citations and suggests the findings may have broader implications beyond Aurora A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Discussion claims addressing prior single-molecule studies, potential regulation by additional cellular factors, evolutionary considerations, and open questions about the functional role of the DFG-Out subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57, C67, C69-C72, C74 are primarily speculative or discuss prior work. C55 cites a single-molecule study consistent with the current findings. C56-C57 discuss potential regulation by other factors. C67 infers coupling to the \u03b1C-helix. C69-C72 are speculative about evolutionary and functional implications. C74 identifies an important open question. These are reasonable discussions but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  }
+]

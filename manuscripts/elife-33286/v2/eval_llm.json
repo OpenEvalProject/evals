@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C117",
+      "C118"
+    ],
+    "result": "ACS-7 is a peroxisomal acyl-CoA synthetase that activates medium-chain IC-ascarosides for \u03b2-oxidation. The enzyme shows robust activity toward IC-asc-C9 (converting it to IC-asc-C9-CoA within 10 minutes) but minimal activity toward ICA. ACS-7 is localized to the peroxisome (not the lysosome as previously reported), is active at neutral pH but not at lysosomal pH 5.0, and co-localizes with peroxisomal markers ACOX-1.1 and ACOX-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C69-C70, and C72-C74 provide strong enzymatic evidence for ACS-7's substrate specificity and kinetic parameters. Claims C100-C106 provide multiple lines of evidence for peroxisomal localization (PTS1 signal, pH activity profile, co-localization with known peroxisomal proteins, RNAi disruption of peroxisomal import). The catalytic mutants (C63-C64) serve as appropriate negative controls, ruling out copurifying contaminants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C76",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ACOX-1.1 and ACOX-3 (and likely ACOX-1.4) catalyze \u03b2-oxidation cycles that shorten IC-ascarosides, converting IC-asc-C9 to IC-asc-C5. The acox-1.1;acox-3 double mutant completely abolishes IC-asc-C5 production and accumulates IC-asc-C7. In vitro, both ACOX-1.1 and ACOX-3 convert IC-asc-C9-CoA to IC-asc-C5-CoA in the presence of other \u03b2-oxidation enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic evidence from multiple mutant strains (C79-C91) is internally consistent and shows clear accumulation of intermediates. The in vitro reconstitution experiments (C92, C95, C121) directly demonstrate enzymatic activity. The catalytic mutant data (C87-C88) confirm that enzymatic activity, not just protein presence, is required. The triple mutant analysis (C90-C91) provides evidence for ACOX-1.4 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C109"
+    ],
+    "result": "The IC head group is preferentially attached to ascarosides with medium-length (8-11 carbon) side chains, not to short-chain (C5 or C7) ascarosides. This suggests that short-chain IC-ascarosides are produced by \u03b2-oxidation of medium-chain IC-ascarosides rather than by direct attachment of the IC group to short-chain ascarosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by experimental data in Figure 2B showing conversion rates of different chain-length ascarosides to IC-ascarosides in daf-22 worms. The inference in C58 logically follows from the observation that C. elegans produces short-chain IC-ascarosides despite not preferentially attaching the IC group to short-chain ascarosides. This provides key support for the revised biosynthetic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C107",
+      "C108",
+      "C115"
+    ],
+    "result": "C. elegans can dynamically tailor existing IC-ascarosides through \u03b2-oxidation to alter their biological function without de novo synthesis. This mechanism allows rapid modulation of chemical signaling in response to environmental conditions, converting aggregation-inducing medium-chain IC-ascarosides to dauer-inducing short-chain IC-ascarosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the combined enzymatic, genetic, and localization data presented in the manuscript. The mechanism is demonstrated at the molecular level (enzyme activities), genetic level (mutant phenotypes), and cellular level (localization). The biological interpretation is consistent with known functions of different IC-ascarosides and environmental regulation data from prior work (C112-C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The previous model proposing that ACS-7 activates ICA for attachment to asc-C5 is challenged. ACS-7 shows very poor activity toward ICA, with accumulation of the AMP-ester intermediate and requiring 2-hour incubation for minimal CoA-thioester formation. The KM for ICA (270 \u00b1 90 \u03bcM) is much higher than typical acyl-CoA synthetases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide direct experimental evidence contradicting the previous model. The comparison of kinetic parameters (C59-C60) and the acs-7 mutant phenotype (C61) are appropriately cited from prior work. The experimental data clearly demonstrate that ICA is a poor substrate compared to IC-asc-C9, providing strong evidence for the revised model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C85"
+    ],
+    "result": "Production of ascarosides and corresponding IC-ascarosides does not correlate in mutant strains, indicating independent regulation. For example, IC-asc-C7 increases in the acox-1.1;acox-3 double mutant despite asc-C7 decreasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation from Figure 4 (C77, C85) provides important evidence against the previous model where IC groups would be attached to short-chain ascarosides after \u03b2-oxidation. The lack of correlation between ascaroside and IC-ascaroside levels supports the new model where IC attachment occurs before \u03b2-oxidation. The inference in C78 logically follows from this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The mechanism identified for IC-ascarosides likely also applies to OS-ascarosides. ACS-7 is required for short-chain OS-ascaroside biosynthesis, and starvation increases the ratio of short-chain to medium-chain OS-ascarosides, consistent with their biological role as dispersal signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the logic is sound and the parallel between IC- and OS-ascarosides is reasonable (both require ACS-7 for short-chain forms, C126), direct experimental evidence for ACS-7 activity on OS-ascarosides is not provided. Claims C129-C130 cite prior work on OS-ascaroside regulation and function, but the current study does not directly test OS-ascaroside processing. This remains a plausible but undemonstrated extension of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C49",
+      "C50"
+    ],
+    "result": "The \u03b2-oxidation of IC-ascarosides likely occurs under starvation conditions. Prior work shows starvation increases IC-asc-C5 in L1 larvae and bacterial food downregulates IC-asc-C5 in L4 larvae, consistent with IC-asc-C5's role as a dauer pheromone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the biological context and prior observations (C112-C113) support this interpretation, the current study does not directly test the environmental regulation of the ACS-7/ACOX pathway. The inference is reasonable and consistent with the biology, but lacks direct experimental validation in this manuscript. The connection between starvation and pathway activation is logical but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "ACS-7, ACOX-1.1, and ACOX-3 appear to be transcriptionally co-regulated, with ACOX-3 induced by dietary restriction and ACS-7 and ACOX-3 co-regulated by the stress-response transcription factor SKN-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited from prior work (C122-C125) and provide supporting context for the biochemical findings. The transcriptional co-regulation is consistent with the enzymes functioning in the same pathway. However, the manuscript notes that \"the significance of this regulation for IC-ascaroside biosynthesis remains to be seen,\" appropriately acknowledging the limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C134",
+      "C135",
+      "C43"
+    ],
+    "result": "A model is proposed where ascarosides are trafficked between peroxisomes and lysosome-related organelles (LROs) during biosynthesis. Medium-chain ascarosides may be transported from peroxisomes to LROs for IC attachment, then returned to peroxisomes for further \u03b2-oxidation under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model (C136-C138) that attempts to reconcile the current findings with prior observations about LRO involvement (C134-C135, C43). While the model is logical and accounts for known data, it lacks direct experimental support. The trafficking mechanisms, transporters, and regulation are not demonstrated. This represents a reasonable hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Unlike IC- and OS-ascarosides, MB- and HB-ascarosides with fewer than nine carbons have not been detected, suggesting they do not undergo activation for further \u03b2-oxidation in the peroxisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 appropriately cite prior work on the absence of short-chain MB- and HB-ascarosides. The inference in C133 is reasonable given the pattern observed for IC- and OS-ascarosides. This negative observation helps define the scope of the ACS-7-mediated pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C93",
+      "C94"
+    ],
+    "result": "ACOX-3 showed low activity in the peroxidase-coupled assay toward all substrates tested, including its known substrate asc-C13-CoA, suggesting it may require other \u03b2-oxidation enzymes to be fully active. ACOX-1.2 was inactive toward IC-asc-C9-CoA, consistent with its preference for short-chain substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation about ACOX-3's low activity in the coupled assay (C98) is clearly stated as a limitation, with appropriate speculation (C99) about possible explanations. The ACOX-1.2 result (C93) is consistent with prior characterization (C94) and serves as an appropriate negative control. These technical observations support the interpretation of the positive results with ACOX-1.1 and ACOX-3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C55",
+      "C75",
+      "C105"
+    ],
+    "result": "Background information on ascaroside structure, function, and biosynthesis from prior work, including the role of \u03b2-oxidation, acyl-CoA oxidases, and other enzymes in the pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are appropriately cited from prior literature. They establish the foundation for understanding the significance of the current findings. While not original results of this study, they are accurately represented and properly attributed.",
+    "result_type": "MINOR"
+  }
+]

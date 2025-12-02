@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dendritic Ca2+ transients in Class IV neurons occur concurrently with unconventional spikes (USs), with Ca2+ transient onset preceding the first US by approximately 50 ms. The amplitude of Ca2+ transients correlates positively with US number, and interspike intervals shorten before pause onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C74-C78 provide converging evidence from high-temporal-resolution Ca2+ imaging (100 Hz) using GCaMP5G, curve fitting analysis, and statistical tests. The temporal relationship is quantified (\u0394t = \u221250.3 \u00b1 9.2 ms), the correlation is statistically significant (p=1.0 \u00d7 10\u221211, rho = 0.82), and appropriate controls (trials without USs) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C79"
+    ],
+    "result": "Intracellular chloride concentration decreases in Class IV neurons upon thermal stimulation, indicating that passive Cl\u2212 transport is outward and generates depolarizing rather than hyperpolarizing currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C79 are supported by FRET-based Cl\u2212 imaging using SuperClomeleon, showing increased FRET ratio (indicating decreased [Cl\u2212]i) at both soma and dendrites upon IR-laser irradiation in a dose-dependent manner (p<0.001). This rules out Cl\u2212 channels as sources of hyperpolarizing currents underlying pause periods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The Ca2+-activated Cl\u2212 channel Subdued can contribute to membrane excitation in Class IV neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by data in Figure 2\u2014figure supplement 1 showing that subdued mutants display delayed heat avoidance behavior and reduced spike numbers at low IR-laser power, consistent with a role in excitation rather than inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C80",
+      "C81"
+    ],
+    "result": "An electrophysiological screen identified five K+ channel genes (Sh, Shal, SK, Irk2, Task7) whose knockdown significantly increased the number of unconventional spikes and peaks in firing rate fluctuations without decreasing dendritic Ca2+ transient amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C80-C81 are supported by systematic RNAi screening with appropriate statistical tests (Wilcoxon rank sum test, p<0.05) and controls. The finding that Ca2+ transient amplitudes are not decreased (except for L-type VGCC knockdown) indicates these K+ channels act downstream of Ca2+ influx.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C82",
+      "C83"
+    ],
+    "result": "SK channel knockdown increases firing properties (US number, peak number, maximum firing rate) even at low stimulus intensities and significantly shortens pause periods from ~104 ms to ~47 ms, indicating that SK channels regulate pause duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C82-C83 are supported by dose-response experiments with three different laser powers, appropriate statistical tests (p<0.001, Student's t-test with Holm correction), and quantitative measurements. The effect is robust and consistent across multiple RNAi lines targeting different sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C87",
+      "C88"
+    ],
+    "result": "The altered physiological responses in SK knockdown neurons are not due to morphological defects in dendritic arbors, as dendritic coverage does not increase compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C87-C88 are supported by quantitative morphological analysis showing that SK knockdown neurons have dendritic coverage (38.4 \u00b1 1.3%) comparable to the ppk-Gal4 control (39.8 \u00b1 2.2%), ruling out morphological changes as an explanation for the physiological phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SK knockdown larvae display significantly faster heat avoidance responses (median latency reduced from 3.80 s to 1.80 s) and increased response rates (79.2% vs 56.9%) upon moderate thermal stimulation at 44\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C84-C86 are supported by behavioral assays with appropriate sample sizes, statistical tests (Wilcoxon rank sum test, Fisher's exact test with Holm correction), and temperature controls showing that the effect is specific to moderate stimulation intensities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C89"
+    ],
+    "result": "Knockdown of Shal, Irk2, and Task7 did not alter heat avoidance behavior response rates, despite increasing spontaneous spike frequencies, whereas SK knockdown did not significantly change spontaneous spike rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C89 are supported by behavioral assays and electrophysiological recordings showing a dissociation between increased spontaneous activity (Shal, Irk2, Task7) and behavioral phenotype, distinguishing SK from other K+ channels. This negative result is important for interpreting the specificity of SK's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C93",
+      "C94"
+    ],
+    "result": "Elevated basal neuronal activity during development might decrease synaptic transmission efficacy and/or remodel synaptic connections via serotonergic feedback signaling, potentially counteracting the effect of increased firing rate fluctuations on avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C93-C94 propose a hypothesis to explain why Shal, Irk2, and Task7 knockdowns don't show behavioral changes despite increased firing fluctuations. While the hypothesis is supported by citations to relevant studies (Kaneko et al., 2017; Kaneko and Ye, 2015; Yang et al., 2014), it remains speculative without direct experimental validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Optogenetic experiments show that intermittent illumination of Class IV neurons induces more burst-and-pause patterns than continuous illumination while maintaining comparable total spike numbers and maximum firing rates, and downstream Goro neurons respond more strongly to intermittent activation (Fpeak 19.4% vs 11.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C90-C92 are supported by paired optogenetic experiments with appropriate controls showing that firing rate fluctuations are decoded separately from overall firing rate. The downstream Ca2+ imaging provides functional evidence that burst-and-pause patterns have distinct effects on circuit activity (p<0.01, Welch's t-test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Firing rate fluctuations are decoded in downstream circuits separately from the firing rate itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a conclusion supported by the optogenetic experiments (C51-C53, C90-C92) showing differential downstream responses to matched firing rates with different fluctuation patterns. This provides strong evidence for fluctuation coding as a distinct mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SK channels have a dual role: at low Ca2+ concentrations they slightly inhibit firing during burst periods, while at high Ca2+ concentrations (after USs with dendritic Ca2+ transients) they promote after-hyperpolarization generating pause periods. SK knockdown therefore increases US occurrence rate and shortens pause periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 provide a mechanistic explanation for the seemingly counterintuitive increase in US number upon SK knockdown. The model is consistent with known SK channel biophysics (Ca2+/calmodulin activation) and explains both the increased US number and shortened pause periods observed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "When L-type VGCCs in dendritic arbors are activated by high-order depolarization, they induce large Ca2+ influx that rapidly activates SK channels, which produce hyperpolarizing current generating pause periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe the core mechanistic model linking L-type VGCCs to SK channel activation and pause generation. This is supported by the temporal relationship data (C25-C30), the SK knockdown effects on pause periods (C40-C42), and previous work showing L-type VGCC dependence of Ca2+ transients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Other K+ channels may slightly contribute to pause generation because pause periods were not completely abolished in SK knockdown neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is a reasonable inference from the observation that SK knockdown shortened but did not eliminate pause periods (median reduced from ~104 ms to ~47 ms). This suggests partial redundancy or contribution from other hyperpolarizing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The regulatory mechanism of burst-and-pause firing patterns in Class IV neurons is remarkably similar to that of complex spikes in mammalian Purkinje cells, with both involving dendritic Ca2+ influx through VGCCs (L-type vs P/Q-type) and SK channel-dependent after-hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 draw a well-supported comparison between Class IV neurons and Purkinje cells based on established literature (multiple citations) and the current findings. The parallel regulatory mechanisms (VGCC-mediated Ca2+ influx \u2192 SK channel activation \u2192 pause generation) strengthen the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "At higher temperatures, L-type VGCCs and SK channels modulate firing to transition from continuous high-frequency patterns to burst-and-pause patterns, allowing sensory neurons to transmit strong stimuli not covered by rate coding and thereby provoking robust avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 represent the main conclusion of the study, integrating the mechanistic findings (SK channel regulation of pause periods) with the behavioral consequences (faster avoidance in SK knockdown). The model is supported by converging evidence from electrophysiology, Ca2+ imaging, and behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C47"
+    ],
+    "result": "SK channels regulate pause periods and fluctuation frequency in Class IV neurons, SK knockdown larvae display faster heat avoidance, and fluctuation coding is required to convert noxious thermal inputs into effective stereotyped behavior alongside rate coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C7, and C47 summarize the main findings of the study. These are well-supported by the combined electrophysiological (C40-C42), behavioral (C45-C46), and optogenetic (C51-C54) evidence demonstrating the functional importance of SK-mediated firing rate fluctuations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The regulatory mechanism of fluctuations in Class IV neurons resembles that in mammalian Purkinje cells which display complex spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the detailed comparison in the Discussion (C67-C70) and Figure 4\u2014figure supplement 1A, showing parallel mechanisms involving VGCC-mediated Ca2+ influx and SK channel-dependent pause generation in both systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C31",
+      "C43"
+    ],
+    "result": "The burst-and-pause firing patterns are hypothesized to be output signals transducing high intensity stimuli and provoking robust avoidance behavior, with Ca2+ influx through L-type VGCCs amplifying depolarization and activating SK channels to generate pauses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C31, and C43 represent hypotheses that are substantiated by the experimental findings. The hypothesis that burst-and-pause patterns are functional output signals is supported by the behavioral phenotypes of both L-type VGCC knockdown (delayed avoidance, from previous work) and SK knockdown (faster avoidance, current work).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Class IV sensory neurons in Drosophila larvae respond to noxious thermal stimuli with characteristic burst-and-pause firing patterns coordinated with dendritic Ca2+ transients mediated by L-type VGCCs, and these patterns enhance heat avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C13-C15, C18-C22 summarize established background knowledge from previous work (primarily Terada et al., 2016) that provides the foundation for the current study. These are well-supported by citations and serve as the starting point for investigating the mechanism of pause generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Rate coding has intrinsic limitations due to refractory periods causing firing rate saturation at high stimulus intensities, suggesting that sensory neurons may employ alternative coding mechanisms used in the central nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 present well-established principles of neuronal physiology (supported by classic citations: Adrian 1926, Hodgkin and Huxley 1952, Berry and Meister 1998) that motivate the investigation of alternative coding mechanisms. This provides important conceptual context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Voltage-dependent K+ channels hyperpolarize membrane potential after depolarization regardless of Ca2+ influx, and their knockdown increases US number by suppressing the probability of firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 provide a mechanistic explanation for why knockdown of voltage-gated K+ channels (Sh, Shal) increases US number, based on established channel biophysics. This helps explain the screening results and distinguishes these channels from Ca2+-activated SK channels.",
+    "result_type": "MINOR"
+  }
+]

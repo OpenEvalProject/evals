@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Two reference databases were constructed: one containing 31,000 genome-wide SNP genotyping array files from DTC-tested individuals, and another containing 1,099 cancer cell line SNP files from CCLE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the composition of the two reference databases used in the study. Both claims are supported by data descriptions and appropriate citations (Erlich, 2015; Barretina et al., 2012), with Figure 2A providing visual confirmation of the population structure in the first database.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Using R7 chemistry, the NA12890 sample was re-identified in 13 minutes with >99.9% posterior probability using only 195 bi-allelic variants, approximately 2\u00d7 above theoretical expectations. The method showed specificity by not matching first- or second-degree relatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 collectively demonstrate successful re-identification with R7 chemistry. The experimental data (Figure 3, Supplementary file 1B) supports the timing, SNP requirements, and specificity claims. Claims C62-C64 provide technical details on error rates (8.9% mismatches for R7), which are consistent with the need for more SNPs. The comparison to theoretical expectations (C5) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Sample YE001 was re-identified within 13 minutes using 110 SNPs from the 31,000-individual database, with no other individuals reaching similar matching probability. The method was robust to variations in prior probability, achieving 99.9% posterior probability even with extremely low priors (10^-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 demonstrate robustness across ethnic backgrounds and prior probability settings. The experimental data (Figure 2B, Supplementary file 1B, Figure 2\u2014figure supplement 1) supports both the re-identification performance and the insensitivity to prior probability selection. This addresses an important practical consideration for real-world applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C65"
+    ],
+    "result": "Using improved R9 chemistry, samples SZ001 and JP001 were re-identified in under 5 minutes using only 98-134 SNPs. The faster re-identification is linked to increased DNA translocation speed (250 vs 70 bases/sec), and R9 chemistry showed lower error rates (2% vs 8.9% mismatches).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C65 demonstrate improved performance with R9 chemistry. The experimental data (Figure 2C-D, Supplementary file 1C-E) supports the timing and SNP requirements. The mechanistic explanation linking translocation speed to re-identification time (C14) is reasonable inference. Claim C15 is appropriately speculative about future improvements. The lower error rate (C65) explains the reduced SNP requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C39",
+      "C67"
+    ],
+    "result": "The THP1 cancer cell line was authenticated in ~3 minutes of sequencing using 91 SNPs with 99.9% posterior probability from a barcoded, multiplexed sample, with no other CCLE reference files exceeding 10% match probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C39, and C67 demonstrate successful cell line authentication with multiplexing capability. The experimental data (Figure 4A, Supplementary file 1D) supports the rapid authentication and specificity. The use of barcoding shows practical applicability for processing multiple samples simultaneously, which is important for laboratory workflows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Simulations of 10,000 sketching runs established that 120-140 SNPs typically achieve 99.9% match probability, with 99.6% of sketches reaching this threshold by 240-300 SNPs. A 300-SNP threshold was proposed as a 'stop-sketching' criterion, with no false-positive matches observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C47-C49 describe comprehensive simulation results that establish practical thresholds for the method. The simulation data from 10,000 runs provides strong statistical support. The correlation between mismatches and SNPs analyzed (C47) is noted, and the 300-SNP threshold (C23) is a reasonable inference from the simulation results. The absence of false positives (C49) is important for method validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C68"
+    ],
+    "result": "The algorithm correctly rejects matches for contamination levels above 25%, showing 0% match probability at 50% contamination. Cell line contamination can occur rapidly, with cultures potentially shifting from 1% to 80% contamination in as few as 2 days during log-phase growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate the method's ability to detect contamination, supported by experimental data (Figures 4C and 5). Claims C31-C34 and C68 provide context about contamination dynamics, supported by modeling (Figure 5\u2014figure supplement 1) and appropriate citations. However, the 25% contamination threshold is lower than STR methods, which could be seen as a limitation, though the authors argue periodic testing compensates for this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C40"
+    ],
+    "result": "A rapid sample preparation protocol using transposase-mediated fragmentation enables DNA extraction and library preparation in 55 minutes, requiring 239 SNPs for re-identification with >99.9% probability, allowing completion in one afternoon with minimal hands-on time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C40 describe a practical rapid protocol. The experimental data (Figure 6A-B) supports the timing and SNP requirements. The increased SNP requirement (239 vs 91-195) is consistent with the higher error rate of 1D reads mentioned in the methods. This demonstrates practical applicability with reduced hands-on time, though at the cost of requiring more SNPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "MinION sketching enables robust re-identification of human samples in 3-13 minutes using 60-300 SNPs, faster than current methodologies, enabling near real-time DNA re-identification and considerably faster cell line authentication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C69-C70, and C72 summarize the overall performance of the method. These claims are well-supported by the collective experimental results across multiple samples and chemistries. The speed comparison to current methods is reasonable based on the 2-week turnaround time for ATCC STR services (C32), though direct head-to-head comparisons are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Unlike STR analysis which is limited to human contaminants, MinION sketching has potential to detect non-human contaminants like mycoplasma when combined with metagenomic methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C37 discuss potential advantages over STR methods. While C35 is supported by citation and knowledge of STR methodology, C36 and C37 are speculative about detecting non-human contaminants. No experimental data is provided to demonstrate this capability, making this an untested hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C61"
+    ],
+    "result": "MinION sketching can be performed in laboratories, clinics, or biobanks as routine authentication, achievable in one afternoon using hands-on or hands-off protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C61 describe practical applicability. These are supported by the experimental demonstrations of both the 3-hour hands-on protocol and the 55-minute rapid protocol. The portability and ease of use are reasonable inferences from the demonstrated workflows, though broader validation in diverse settings would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "MinION sketching uses random SNP sampling instead of fixed STR/SNP panels, avoiding PCR bias and allelic dropout. This SNP-based approach improves precision for cancer cell lines compared to STR methods, which use an 80% matching threshold and achieve 98% correct identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C50 describe methodological advantages over STR-based approaches. The advantages of avoiding PCR and allelic dropout (C41-C42) are reasonable inferences. The challenges with cancer cell lines (C43-C44) are well-supported by citations. The comparison to STR standards (C45-C46) provides appropriate context. However, the claim of improved precision (C50) is based on inference rather than direct comparative experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MinION sketching costs approximately $100 per sample with multiplexing (12 samples), lower than ATCC STR service ($195) but higher per-run than Geneprint. The method is efficient for small sample numbers but not yet competitive for high-throughput testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 provide cost analysis and practical considerations. The cost calculations (C51-C54) are based on reasonable assumptions about equipment and consumable costs. The comparison to existing methods (C53-C56) provides useful context. The assessment of competitiveness (C58-C59) appropriately acknowledges limitations for high-throughput applications while highlighting advantages for small-scale testing. The inference about hands-on time as a barrier (C57) is reasonable but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C71",
+      "C73"
+    ],
+    "result": "MinION sketching lowers barriers to regular authentication by capitalizing on growing genomic reference data availability. Periodic testing can efficiently detect contamination and potentially minimize irreproducible research from cell line mix-ups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C71, and C73 discuss broader impacts and future potential. While C71 correctly notes the growing availability of reference data, C60 and C73 make claims about reducing irreproducible research that are speculative and not directly demonstrated. The actual impact on research reproducibility would require longitudinal studies and broader adoption, which are beyond the scope of this technical validation study.",
+    "result_type": "MINOR"
+  }
+]

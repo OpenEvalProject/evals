@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Wing vibration measurements from calling tree crickets show peak velocities of 1.8 \u00b1 0.6 m\u00b7s\u207b\u00b9, peak displacements of 95.67 \u00b1 29.54 \u00b5m, and peak accelerations of 4629 \u00b1 1733 g, producing peak SPLs of 108.8 \u00b1 48.5 mPa (74.0 \u00b1 3.9 dB). Average wing velocity (0.13 \u00b1 0.06 m\u00b7s\u207b\u00b9) produced average SPL of 22.8 \u00b1 11.0 mPa (60.4 \u00b1 4.1 dB), with wing velocity related to SPL by a constant of 0.18 \u00b1 0.03 Pa/m/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide direct measurements from laser Doppler vibrometry and acoustic recordings with appropriate sample sizes (n=5) and statistical reporting (mean \u00b1 SD). The measurements are internally consistent and the derived relationship between wing velocity and SPL is appropriately calculated from the empirical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FEA models predicted a bi-lobed acoustic field consistent with previous measurements. Models predicted unbaffled calling produces 14.6 mPa (57.2 dB at 200 mm), commensurate with field measurements, while an oval baffle increased SPL to 24.9 mPa (61.9 dB), consistent with experimental measurements of 22.8 \u00b1 11.0 mPa (60.4 \u00b1 4.1 dB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate good agreement between FEA predictions and both prior literature and current experimental measurements. The model validation is strengthened by consistency with multiple independent data sources (prior acoustic measurements, field measurements, and current experiments), though mesh convergence details could be more explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "FEA modeling revealed that baffle design significantly affects acoustic efficiency. SRE increased with leaf size but became asymptotic for leaves longer than 100 mm. Males choosing larger leaves would always make better baffles under natural conditions. Optimal hole length was ~10 mm (matching wing length), with maximum SRE of 386.3 mPa/m\u00b7s\u207b\u00b9 achieved by a 110.2 mm leaf with a 9.7 mm centrally located hole. Any baffle provides higher SRE than unbaffled calling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20-C21, C37-C41 are well-supported by systematic FEA modeling across the design space (Figure 3A). The modeling approach is appropriate, with mesh convergence studies reported and boundary conditions justified. The asymptotic relationship and optimal dimensions are clearly demonstrated in the data, though the claim that males would 'always' make better baffles with larger leaves (C38) is an inference that assumes availability and ignores potential costs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C100",
+      "C101",
+      "C102",
+      "C117"
+    ],
+    "result": "Field observations over three seasons found only 26% of males (27 of 105) used baffles, indicating baffled-calling is not stereotyped or obligate behavior. Large leaves that make optimal baffles are extremely rare in the wild, and non-host plants with larger leaves are rarely used. The rarity of baffling suggests baffle manufacturing may be costly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C100-C102, C117 are supported by field observations across three seasons with adequate sample size (n=105 calling males, 570 leaves measured). The low frequency of baffling (26%) provides strong evidence against obligate behavior. However, the inference that rarity indicates costliness (C102) is speculative\u2014alternative explanations (e.g., lack of suitable leaves, predation risk) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C113"
+    ],
+    "result": "In no-choice experiments with 51 males presented with leaves of four size classes, baffling probability varied significantly with leaf size (Cochran's Q: 63.9, df=3, p<0.001), with larger leaves more likely to elicit baffling. Baffling probability approached 50% only with 61-69 mm leaves (54% SRE increase). Even with the largest leaves, baffling probability did not exceed 67%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C113 are supported by appropriate statistical tests (Cochran's Q, McNemar's tests) with significant p-values and adequate sample size (n=51). The experimental design (random sampling without replacement over four nights) is sound. The finding that even large leaves don't guarantee baffling is important for understanding the behavior's flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C114"
+    ],
+    "result": "In choice experiments with 19 males offered small (61.2 \u00b1 4.8 mm) versus large (115.2 \u00b1 11.7 mm) leaves, all males that made baffles (15 of 19) selected the larger leaf. Holes made were acoustically optimal in size (10.0 \u00b1 1.9 mm), demonstrating males optimize SRE by selecting appropriate materials and modifying them appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C114 are supported by clear experimental results showing strong preference for larger leaves (15/15 baffling males) and hole sizes matching FEA predictions for optimality. The sample size (n=19, with 15 making baffles) is adequate for the binary choice. The conclusion of optimization is well-justified by the convergence of leaf choice and hole size with predicted optima.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Males did not make holes at exact leaf centers. FEA mapping showed SRE was highest at leaf center and decreased for eccentric positions. Real baffles achieved 332.2 \u00b1 30.3 mPa/m\u00b7s\u207b\u00b9 (88.6 \u00b1 7.6% of maximum SRE, range 72.8-97.7%). Central holes are impractical as they cut through the midrib, compromising structural rigidity and water transport. Males never cut through major leaf veins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are well-supported by FEA modeling (Figure 3C) and observations of real baffles (n=15). The explanation for off-center placement (C57-C59) is biologically reasonable and supported by observations. The achievement of 88.6% efficiency despite geometric suboptimality demonstrates sophisticated constraint-aware optimization. The claim about mechanical difficulty (C58) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Most males made only one hole, achieving near-optimal baffles in a single attempt without trial-and-error. One male made two holes; the first achieved 72.1% of maximum SRE, the second would achieve 96.9%. FEA modeling of two-holed baffles showed that cutting a second hole risks reducing SRE through increased acoustic short-circuiting. A second hole is beneficial only if the primary hole was near the margin; for central holes, a second hole becomes deleterious. For observed baffle positions, six males would have decreased SRE by 6.73 \u00b1 2.77% with a second hole, while nine would increase SRE by only 19.17 \u00b1 11.15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 are strongly supported by behavioral observations and FEA modeling of two-holed scenarios (Figure 4B). The single exception (one male with two holes) provides valuable insight into the optimization landscape. The FEA predictions explain why most males don't make second holes\u2014the risk-benefit analysis favors single-shot optimization. This is a sophisticated result demonstrating constraint-aware behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C22"
+    ],
+    "result": "Tree crickets optimize acoustic baffles used to increase mate-attraction call loudness. Given opportunity, they select the best-sized object and modify it appropriately to make near-optimal baffles. Optimization can be achieved in a single attempt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C6, C22 represent the paper's central findings and are well-supported by the convergence of FEA modeling, choice experiments, and field observations. The demonstration of optimization is robust: males select large leaves (C50), make optimally-sized holes (C51), position them near-optimally given constraints (C56), and achieve this in single attempts (C60). This is the paper's primary contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Optimization is likely achieved through an inherited yet highly accurate behavioral heuristic. Baffle making is common in Oecanthus and expressed by many individuals, suggesting inheritance. The authors propose three simple rules: (i) find the largest available leaf, (ii) place the hole as close to center as possible, (iii) cut a hole that accommodates wings. Learning is considered unlikely due to limited adult calling time and the rarity of large leaves requiring extensive trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C69-C73, C78-C81 propose an inherited heuristic mechanism but lack direct evidence. The inference is reasonable given single-attempt optimization and widespread expression in the genus, but the authors acknowledge that experiments with na\u00efve males are needed for definitive proof (C81). The proposed three-rule heuristic is plausible and parsimonious, but remains speculative. The argument against learning (C78-C80) is logical but not empirically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The accuracy of tree cricket baffle optimization is higher than the progressive optimization in mole cricket burrows, which perform sub-optimally. Mole cricket burrow resonance (3 kHz) is always higher than call frequency (2.5 kHz), with dimensions not fitting optimal values for either frequency. This sub-optimal performance is explained by Weber's law\u2014sensory systems cannot distinguish small differences at high amplitudes due to receptor saturation and habituation, a likely common driver of suboptimal performance in feedback-based optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 appropriately cite prior work on mole crickets (Daws et al., 1996) and neurophysiological principles (Weber's law). The comparison is valid and highlights an important distinction between single-shot heuristic optimization and iterative feedback-based optimization. However, the generalization (C77) that this is a 'common driver' is somewhat speculative, though reasonably supported by the cited neurophysiology literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Heuristics are rational search methods that guide optimization when behaviors have different efficiencies. Using heuristics implies knowledge of performance variability and demonstrates behavioral flexibility. The conventional view holds that invertebrates have stereotyped tool use while vertebrates have flexible tool use, implying optimization is impossible for invertebrate tool-users. However, flexible tool use has been observed in invertebrates (cephalopods, bees), and tree cricket behavior shows inherited heuristic mechanisms may enable flexibility and optimization, prompting re-examination of invertebrate tool use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C95 provide appropriate context from the literature on heuristics, tool use, and animal cognition. The citations to bee and cephalopod tool use are accurate. The argument that tree cricket behavior challenges conventional views about invertebrate tool use is well-reasoned. The interpretation of bee ball-rolling as a greedy heuristic (C94) is reasonable though somewhat speculative. The broader implications (C95) are appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Tree cricket males calling from leaf edges have low efficiencies (94-171 mPa/m\u00b7s\u207b\u00b9) while those making baffles achieve much higher efficiencies (91-386 mPa/m\u00b7s\u207b\u00b9). By finding the largest leaf and making a near-optimal baffle, males can increase active acoustic area by as much as four times (12 dB), greatly increasing chances of attracting mates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 summarize FEA modeling results and calculate the fitness benefit of baffling. The efficiency ranges are supported by the modeling. The calculation of 4\u00d7 increase in active acoustic area from 12 dB gain is mathematically sound (assuming spherical spreading, area scales as pressure squared, so 12 dB \u2248 4\u00d7 in pressure \u2248 16\u00d7 in area, though the claim states 4\u00d7, which may refer to radius rather than area\u2014this should be clarified).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C104",
+      "C105"
+    ],
+    "result": "The increase in call amplitude from baffling can work in two ways: adding to existing variability (broadening male call amplitude distribution) or functioning as a compensatory mechanism for males unable to call loudly. Baffle making may represent a unique system where 'good' males use acoustically optimized objects to further enhance signals, or alternatively, may have evolved as an alternative strategy for smaller/poorer-condition males to sound bigger or louder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99, C104, C105 present alternative evolutionary hypotheses but provide no data to distinguish between them. These are reasonable speculations about sexual selection implications, but remain untested. The paper does not examine correlations between male quality, body size, or condition and baffling behavior, which would be needed to evaluate these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "Methodological parameters were carefully controlled and measured: calling frequency (3.10 \u00b1 0.19 kHz in vibrometry, 3.00 \u00b1 0.07 kHz in choice experiments at 26.3 \u00b1 0.1\u00b0C), costal angle (~137\u00b0), leaf-wing distance (~1 mm), leaf-wing angle (0\u00b0). Field measurements included 570 leaves from 114 plants across three sites. Laboratory experiments were conducted at 26.1\u00b0C during peak activity times (6:45-9:45 PM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112, C115-C116 document methodological details with appropriate precision and sample sizes. Temperature control to maintain consistent calling frequency is important for acoustic comparisons. The field sampling (570 leaves, 114 plants, three sites) is adequate for characterizing natural leaf size distribution. Some parameters (C109, C110) are estimates from video rather than direct measurements, which is acknowledged and reasonable given practical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Object manufacture in insects is typically inherited and believed to be highly stereotyped. Optimization (selecting functionally best material and modifying it appropriately) implies flexibility and is usually thought incompatible with inherited behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 accurately represent the conventional view in the field, providing context for the paper's challenge to this paradigm. These are general knowledge claims about scientific consensus that frame the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on tree cricket acoustics: louder calls travel farther and are more attractive to females. Insects enhance acoustic radiation by exploiting resonance of body parts or environment. Tree crickets use a unique strategy\u2014making acoustic baffles. They produce sound by rubbing forewings together, creating opposite-phase sound on each side. This causes acoustic short-circuiting (destructive interference), particularly potent in tree crickets due to small wings (~9 mm) relative to wavelength (~110 mm at 3.1 kHz). Males cut holes in leaves, place their head through, and call with wings parallel to the leaf surface, which provides acoustic isolation between the two sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19 provide well-cited background on cricket acoustics and baffle function. The physics of acoustic short-circuiting is correctly described and appropriately illustrated (Video 1). The citations to prior work are appropriate. The inference that any leaf could serve as a baffle (C19) is logical given the non-resonant function, though the paper goes on to show this is oversimplified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Real baffles vary as crickets encounter different leaf sizes and produce dissimilar holes, so baffles are expected to vary in capacity to enhance call amplitude. Larger leaves and cricket-size holes are thought to make the best baffles. Males are expected to maximize reach of mate-attraction calls per unit calling effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide logical setup for the optimization experiments. The observation of natural variation (C33) is supported by field data. The hypothesis about larger leaves and cricket-sized holes (C35) is appropriately cited to prior work. The expectation of effort maximization (C36) is a standard assumption from sexual selection theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "All mole cricket males stereotypically make acoustic burrow chambers that resonate and boost call amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 accurately cites prior work on mole crickets for comparison with tree cricket behavior, highlighting the contrast between obligate burrow construction and facultative baffle use.",
+    "result_type": "MINOR"
+  }
+]

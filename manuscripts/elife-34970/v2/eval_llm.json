@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C29"
+    ],
+    "result": "SET-26, but not SET-9, single mutants exhibit extended lifespan and increased heat stress resistance. The set-26(tm2467) mutant lived longer than wild-type worms, while the set-9(rw5) mutation did not alter lifespan in either wild-type or set-26 mutant backgrounds. Similarly, only set-26 mutants showed increased resistance to heat stress at 35\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C27, and C29 are well-supported by lifespan and heat stress assay data shown in Figures 1B and 1C. The data clearly demonstrate differential phenotypes between set-9 and set-26 single mutants, with appropriate controls and statistical analysis. The experiments were repeated multiple times as stated in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SET-9 and SET-26 share redundant functions in germline development. Single mutants show mild fertility defects, while the set-9 set-26 double mutant exhibits progressive fertility defects across generations (F1-F6), displaying a mortal germline phenotype. Maternal contribution appears important, as heterozygous mothers but not fathers help maintain germline function in progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C30-C37 are strongly supported by brood size assays (Figure 2A), mortal germline assays (Figure 2B), crossing experiments (Figure 2C), and DAPI staining (Figure 2D, Figure 2\u2014figure supplement 1B). The progressive nature of the phenotype and maternal effects are well-documented with appropriate sample sizes and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "SET-26 is broadly expressed in both somatic and germline cells, while SET-9 is only detectable in germline cells. Both proteins show nuclear localization. This differential expression pattern was confirmed using GFP knock-in strains at endogenous loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C38-C40 are supported by fluorescence microscopy of GFP knock-in strains (Figures 3A and 3B). The use of CRISPR-mediated knock-ins at endogenous loci provides strong evidence for native expression patterns. Nuclear localization is consistent with chromatin regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The differential expression patterns of SET-9 and SET-26 likely account for their different biological roles in longevity and stress response versus germline development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a reasonable inference supported by the correlation between SET-26's broad expression and its unique role in longevity/stress response (C2, C26, C27, C29), versus SET-9's germline-restricted expression and redundant germline function with SET-26 (C1, C30-C37). The tissue-specific RNAi experiments (C42-C43) further support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Germline-specific inactivation of set-26 and set-9 is not sufficient for lifespan modulation. RNAi knockdown of set-9/26 extended lifespan in wild-type but not in rrf-1 mutant worms (where RNAi is germline-specific), indicating that somatic SET-26 is required for longevity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by tissue-specific RNAi experiments using rrf-1 mutants (Figures 3C and 3D). The control experiment with wdr-5.1 RNAi validates the tissue-specific approach. SET-26::GFP expression monitoring (Figure 3\u2014figure supplement 1D) confirms germline-specific knockdown in rrf-1 background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In the soma, SET-26 acts through DAF-16 to modulate longevity. RNA-seq analysis of germlineless glp-1; set-26 double mutants identified 887 up-regulated and 946 down-regulated genes, with 'collagen' as the most enriched GO term. DAF-16-dependent somatic SET-26 regulated genes are enriched for 'determination of adult lifespan'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C44-C46 are supported by RNA-seq analysis comparing glp-1; set-26 to glp-1 mutants and daf-16; glp-1; set-26 triple mutants (Figure 4). The transcriptomic approach appropriately identifies DAF-16-dependent gene expression changes. GO term enrichment for lifespan determination genes provides mechanistic support for the genetic interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Loss of set-9 and set-26 results in extensive transcriptional changes, with the F1 double mutant showing the most dramatic effects (1888 up-regulated, 1644 down-regulated genes). Germline-specific genes are significantly over-represented among up-regulated genes in the F1 set-9 set-26 double mutant, including both sperm- and oocyte-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by RNA-seq analysis of set-9, set-26 single and F1 set-9 set-26 double mutants (Figure 5). The substantial overlap with previously reported germline-specific gene lists (Reinke et al., 2004) provides validation. Statistical significance of enrichment is demonstrated (Figure 5D). The data suggest redundant gene regulation by SET-9 and SET-26.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59"
+    ],
+    "result": "The PHD domains of SET-9 and SET-26 bind to H3K4me3 with adjacent acetylation marks in vitro. GST pull-down assays show binding to histone H3, and histone peptide arrays demonstrate specific interaction with H3K4me3 combined with nearby acetylation (K9ac, K14ac, K18ac), but not H3K4me3 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58, and C59 are supported by GST pull-down assays (Figure 6A) and histone peptide array data (Figure 6B). The peptide array provides quantitative binding data showing specificity for combinatorial modifications. Two independent array experiments were performed. The requirement for adjacent acetylation is a novel and important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SET-9 and SET-26 bind to H3K4me3-marked regions in vivo. ChIP-seq analysis shows 75% of SET-9/26 binding regions overlap with H3K4me3 peaks, and 49% of H3K4me3 peaks overlap with SET-9/26 binding. SET-9/26 preferentially bind H3K4me3 peaks with higher methylation levels, with binding summits ~100-200 bp upstream of H3K4me3 summits. 28% of SET-9/26 peaks also overlap with H3K9ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C60-C65 are supported by ChIP-seq data (Figures 6C-E, Figure 6\u2014figure supplements 4-5). The genome-wide concordance between SET-9/26 binding and H3K4me3 is statistically significant. Meta-analysis and scatter plots provide quantitative support. The correlation with H3K9ac is consistent with in vitro binding data. At least two independent ChIP-seq experiments were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Loss of SET-9 and SET-26 does not affect global H3K9me3 levels or genome-wide H3K9me3 distribution patterns. Western blotting and ChIP-seq analysis show no detectable changes in H3K9me3 in set-9 set-26 double mutants compared to wild-type, indicating SET-9 and SET-26 are not major H3K9me3 methyltransferases in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by Western blotting (Figure 6\u2014figure supplement 1B) and ChIP-seq analysis (Figure 6\u2014figure supplement 1C, 2A). The data directly contradict a previous report of H3K9me3 activity for SET-26 in vitro. Multiple replicates and genome-wide analysis strengthen the conclusion. This is an important negative result that clarifies the function of these proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Loss of SET-9 and SET-26 results in expansion of H3K4me3 domains specifically in the germline. Western blotting shows subtle but significant H3K4me3 increase in F3 set-9 set-26 double mutants, more prominent in dissected gonads. ChIP-seq reveals 'spreading' of H3K4me3 around SET-9/26 binding sites (\u00b1500 to \u00b11000 bp) in whole worms but not in germlineless mutants, indicating germline-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by Western blotting (Figure 8A, Figure 8\u2014figure supplement 1A), immunofluorescence (Figure 8B), and ChIP-seq analysis (Figure 8C-D, Figure 8\u2014figure supplements 2-3). The germline-specific effect is demonstrated by comparing whole worms to germlineless glp-1 mutants. Statistical significance is shown using 95% confidence intervals. The progressive increase from F1 to F3 correlates with fertility defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "For germline-specific genes bound by SET-9 and SET-26, H3K4me3 expansion correlates with increased RNA expression. Metagene analysis shows elevated H3K4me3 throughout gene bodies (TSS to TES) of germline-specific target genes with increased expression in set-9 set-26 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 are supported by integrated analysis of ChIP-seq and RNA-seq data (Figure 8\u2014figure supplement 4B-C). The correlation is specific to germline genes, consistent with the germline-specific H3K4me3 expansion. However, the overall correlation between H3K4me3 expansion and gene expression changes is weak when considering all genes (Figure 8\u2014figure supplement 3C-D), suggesting additional regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Components of the MLL/COMPASS H3K4 methyltransferase complex (set-2, set-16, wdr-5.1) genetically interact with SET-9 and SET-26 in germline development. RNAi knockdown of these genes significantly reduced brood size in F1 set-9 set-26 double mutants. The F1 set-2; set-9 set-26 triple mutant showed drastically reduced brood size compared to F1 set-9 set-26 double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 are supported by RNAi screen data (Figure 9A) and genetic analysis of the set-2; set-9 set-26 triple mutant (Figure 9B). The synergistic genetic interaction suggests SET-2 (H3K4 methyltransferase) and SET-9/26 (H3K4me3 readers/domain restrictors) have complementary roles. The use of a weak set-2 allele that alone has normal fertility strengthens the interpretation of synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "SET-9 and SET-26 function as H3K4me3 readers based on in vitro binding assays and genome-wide ChIP-seq concordance with H3K4me3 distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by the combined evidence from in vitro binding assays (C6, C58, C59) and in vivo ChIP-seq data (C7, C60-C65). The PHD domain-mediated binding to H3K4me3 with adjacent acetylation, combined with genome-wide co-localization, strongly supports the reader function. This is consistent with known PHD domain functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "In the germline, SET-9 and SET-26 restrict H3K4me3 domains and regulate expression of specific target genes with critical consequences for germline development. This is evidenced by H3K4me3 domain expansion and germline-specific gene expression changes in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are supported by the integration of ChIP-seq data showing H3K4me3 expansion (C68-C72), RNA-seq data showing germline gene expression changes (C54), and the correlation between H3K4me3 expansion and expression changes for germline-specific genes (C73-C74). The progressive fertility defects in double mutants (C31-C37) provide functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C28"
+    ],
+    "result": "SET-9 and SET-26 share extremely high sequence identity (96-97%) based on sequence analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C28 report slightly different percentages (96% vs 97%) but both indicate very high sequence identity. This is a straightforward sequence analysis result. The minor discrepancy may reflect different alignment methods or regions analyzed, but both values support the conclusion of near-identical sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "SET-9 and SET-26 both contain highly conserved PHD and SET domains based on domain analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by domain analysis and sequence alignment (Figure 6\u2014figure supplement 1A). The conservation of these domains across species is well-documented in the literature and confirmed by the authors' analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The SET domain of SET-9 and SET-26 contains mutations in conserved residues thought to be key for methylating activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by sequence alignment (Figure 6\u2014figure supplement 1A) and citation to previous work (Ni et al., 2012). The alignment clearly shows mutations in critical catalytic residues compared to active SET domain methyltransferases. This provides structural basis for lack of methyltransferase activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The set-9(rw5) mutation causes a premature stop codon and is expected to produce a truncated SET-9 protein lacking the conserved PHD and SET domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by the description of the CRISPR-generated mutation and Figure 1A showing the mutation location. The 38 nucleotide deletion causing a frameshift and premature stop is well-characterized. This represents a strong loss-of-function allele.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "RNAi knockdown of wdr-5.1 extended lifespan in both wild-type and rrf-1 mutant worms, serving as a positive control for germline-specific effects on longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by lifespan assay data (Figures 3C and 3D) and is consistent with previous reports that wdr-5.1 acts in the germline to modulate lifespan. This serves as an important positive control for the tissue-specific RNAi experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C77",
+      "C78"
+    ],
+    "result": "SET-9 and SET-26 are highly conserved proteins that arose from gene duplication specifically in C. elegans. Other species including closely related Caenorhabditis species harbor only one homolog. Drosophila UpSET and mammalian SETD5 and MLL5 represent likely homologs based on sequence and domain structure similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C77, and C78 are supported by sequence comparisons across species and citations to previous work (Rincon-Arano et al., 2012; Zhang et al., 2017). The evolutionary analysis showing C. elegans-specific duplication is convincing. The identification of homologs in other species is based on established criteria of sequence and domain conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work has established that loss of COMPASS complex components or H3K4 demethylases (spr-5, rbr-2) results in altered H3K4me3 levels, fertility defects, and lifespan changes in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 accurately cite previous literature establishing the importance of H3K4 methylation regulation in C. elegans fertility and longevity. These claims provide appropriate context for the current study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "PHD domains are known to bind to specific histone modifications based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 accurately cites established knowledge about PHD domain function (Shi et al., 2007; 2006). This provides appropriate background for investigating SET-9/26 PHD domain binding specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "A previous study reported that the SET domain of SET-26 exhibits H3K9me3 activity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 accurately cites a previous report (Greer et al., 2014). However, the current study's data (C55-C57) contradicts this finding, showing no H3K9me3 changes in vivo. This highlights the importance of validating in vitro findings with in vivo data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Homologs of SET-9/26 in other species (UpSET, SETD5, MLL5) share similar molecular functions and biological roles. These proteins lack methylating activity, bind H3K4me3, localize to promoters, and regulate chromatin accessibility. They are implicated in fertility, cell cycle, stem cell pluripotency, and genome stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C90 accurately cite extensive prior literature on SET-9/26 homologs in flies and mammals. The citations appear appropriate and support the evolutionary conservation of function. This comparative analysis strengthens the significance of the C. elegans findings and suggests potential roles for mammalian homologs in longevity.",
+    "result_type": "MINOR"
+  }
+]

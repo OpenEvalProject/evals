@@ -1,0 +1,1935 @@
+{
+  "submission": {
+    "id": "696f10cd-d12a-4241-83f7-cfd040ae5e3a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:58:02.465498Z",
+    "updated_at": "2025-12-02T00:58:02.465498Z"
+  },
+  "content": [
+    {
+      "id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "submission_id": "696f10cd-d12a-4241-83f7-cfd040ae5e3a",
+      "content_type": "manuscript",
+      "content_text": "# Kinetics of HIV-1 capsid uncoating revealed by single-molecule analysis\n\n## Authors\n\n- Chantal L M\u00e1rquez<sup>1</sup>\n- Derrick Lau<sup>1</sup>\n- James Walsh<sup>1</sup>\n- Vaibhav Shah<sup>1</sup>\n- Conall McGuinness<sup>1</sup>\n- Andrew Wong<sup>3</sup>\n- Anupriya Aggarwal<sup>3</sup>\n- Michael W Parker<sup>4</sup> ([ORCID: 0000-0002-3101-1138](https://orcid.org/0000-0002-3101-1138))\n- David A Jacques<sup>1</sup> ([ORCID: 0000-0002-6426-4510](https://orcid.org/0000-0002-6426-4510))\n- Stuart Turville<sup>3</sup>\n- Till B\u00f6cking<sup>1</sup> ([ORCID: 0000-0003-1165-3122](https://orcid.org/0000-0003-1165-3122)) \u2020\n\n### Affiliations\n\n1. EMBL Australia Node in Single Molecule Science, School of Medical Sciences UNSW Sydney Australia\n2. ARC Centre of Excellence in Advanced Molecular Imaging UNSW Sydney Australia\n3. The Kirby Institute Sydney Australia\n4. Australian Cancer Research Foundation Rational Drug Discovery Centre St. Vincent\u2019s Institute of Medical Research Melbourne Australia\n5. Department of Biochemistry and Molecular Biology Bio21 Molecular Science and Biotechnology Institute, University of Melbourne Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nUncoating of the metastable HIV-1 capsid is a tightly regulated disassembly process required for release of the viral cDNA prior to nuclear import. To understand the intrinsic capsid disassembly pathway and how it can be modulated, we have developed a single-particle fluorescence microscopy method to follow the real-time uncoating kinetics of authentic HIV capsids in vitro immediately after permeabilizing the viral membrane. Opening of the first defect in the lattice is the rate-limiting step of uncoating, which is followed by rapid, catastrophic collapse. The capsid-binding inhibitor PF74 accelerates capsid opening but stabilizes the remaining lattice. In contrast, binding of a polyanion to a conserved arginine cluster in the lattice strongly delays initiation of uncoating but does not prevent subsequent lattice disassembly. Our observations suggest that different stages of uncoating can be controlled independently with the interplay between different capsid-binding regulators likely to determine the overall uncoating kinetics.\n\n## Introduction\n\nHIV is an enveloped virus that carries its RNA genome and associated viral proteins within a protein shell called the capsid (Welker et al., 2000). Upon engagement of CD4 and the chemokine receptor CCR5 or CXCR4, the viral membrane fuses with the plasma membrane of the host, depositing the viral core (defined here as the capsid and its contents) in the cytoplasm (Blumenthal et al., 2012). In order to establish infection, the virus must reverse transcribe its single stranded RNA genome into double stranded DNA, traverse the cytoplasm and cross the nuclear membrane, after which it integrates into the host chromosome (Bukrinsky, 2004). We now know that the capsid plays a key role in these processes and is critical for successful infection. It not only acts as a shield to protect the viral genomic material from pattern recognition and degradation (Lahaye et al., 2013; Rasaiyaah et al., 2013), but is also thought to facilitate reverse transcription (Jacques et al., 2016), engage with the nuclear pore complex (Burdick et al., 2017; Dharan et al., 2016; Matreyek et al., 2013), and direct integration site targeting (Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016). In order to achieve many of these proposed functions, the capsid must interact with host proteins and small metabolites, as well as disassemble to release the viral DNA at the appropriate place and time (Campbell and Hope, 2015). The nature of this \u2018uncoating\u2019 process and how it is influenced by host co-factors remains a key unanswered question in HIV biology.\n\nThe HIV capsid comprises 1000\u20131500 copies of a single viral protein, CA, corresponding to less than half of the total CA released by proteolytic processing of the Gag polyprotein during maturation (Briggs et al., 2004). CA is a two-domain protein, which can form both hexameric and pentameric assemblies. The conical capsid is a fullerene structure, which incorporates 12 pentamers into the otherwise hexameric lattice, a geometric constraint that must be satisfied in order to achieve capsid closure (Li et al., 2000; Pornillos et al., 2011). However, there is no such constraint on the number of hexamers nor the positions of pentamers and, as such, HIV capsids are polymorphic. Typically, capsids have a conical shape with an average length of 119\u00a0nm and an average width of 61 nm (Briggs et al., 2003). In addition, a large fraction of viral particles contain \u2018defective\u2019 capsids, which do not have closed surfaces (Frank et al., 2015; Mattei et al., 2016; Yu et al., 2013). This high degree of polymorphism and poor fidelity of assembly mean that the HIV capsid is a technically challenging entity to study, especially when compared to the more regular icosahedral viruses, many of which can even be crystallized.\n\nCurrent biochemical methods used to study HIV capsid stability include an in vitro uncoating assay for the release of CA from isolated capsids (Ambrose and Aiken, 2014; Shah and Aiken, 2011), the fate of capsid assay (Stremlau et al., 2006; Yang et al., 2014) and the cyclosporin A washout assay (Hulme et al., 2011). These assays measure uncoating in bulk, that\u00a0is rely on observing the average behavior of large numbers of viral cores. Fluorescence microscopy methods that track the uncoating process in fixed or live cells (Francis et al., 2016; Mamede et al., 2017) can resolve steps in the uncoating process of individual capsids in the cytoplasm but complementary in vitro methods that allow high throughput measurements and detailed kinetic studies under defined conditions are still missing.\n\nHere we describe an in vitro single-molecule fluorescence imaging assay that allows us to follow the uncoating kinetics of hundreds of individual HIV capsids in a single experiment. This type of single-molecule analysis has the advantage that it can resolve intermediates in the disassembly pathway that are otherwise averaged out in traditional ensemble assays. By observing the properties of many individual capsids, it is possible to classify them according to their uncoating behaviors. This versatile method enables \u2018bottom-up\u2019 approaches to determine the effect of individual host molecules and drugs and is also compatible with \u2018top-down\u2019 studies in which the influence of whole-cell lysates can be observed. Using this method, we are able to classify virions into three categories based on their uncoating behavior. We have also been able to define two discrete uncoating events that we term \u2018capsid opening\u2019 and \u2018lattice disassembly\u2019 and show that known cofactors and drugs have different effects on these two processes. This observation has allowed us to resolve the ambiguity as to what is meant by \u2018uncoating\u2019 and how it can be influenced by external factors.\n\n## Results\n\n### Single-particle fluorescence imaging of capsid opening\n\nFusion of the viral particle with the plasma membrane marks the point in time when the viral core is first exposed to the cytoplasm, but the effects of cellular proteins and small molecules on the stability of the capsid lattice are largely unknown. Here, we designed a fluorescence imaging assay to pinpoint the time of capsid opening at the single-particle level after exposing capsids to biochemically different environments in vitro. We produced viral particles containing GFP as a solution phase marker using a proviral construct with Gag-internal GFP (Figure 1A) (Aggarwal et al., 2012; H\u00fcbner et al., 2007). GFP is expressed as part of the Gag polyprotein and released by proteolysis during maturation, whereby a fraction of GFP molecules are compartmentalized within the viral capsid, with the remainder enclosed outside the viral capsid but within the viral membrane (Mamede et al., 2017; Yu et al., 2013). As a control we also used constructs containing a mutation in the late domain of Gag that leads to a block in the abscission of viral particles from the producer cell. The number of GFP-positive particles in the cell supernatant decreased by 99.7% when viral release was blocked (Figure 1B), confirming that essentially all GFP-positive particles released in the absence of the block represent viral particles. The fluorescent viral particles were biotinylated, purified by gel filtration and captured via streptavidin onto the surface of a coverslip modified with an inert polymer layer that prevents non-specific adsorption of viral particles and proteins (Figure 1B). Using microfluidics, we then delivered a solution containing the bacterial pore-forming protein perfringolysin O (PFO). PFO efficiently permeabilized the viral membrane by assembling into characteristic ring-shaped membrane pores with a mean pore diameter of about 35 nm (Figure 1D and E), consistent with its activity on cholesterol-containing membranes (Dang et al., 2005). These pores are sufficiently large to permit the passage of proteins while the viral core is retained within the perforated viral membrane allowing the core to be observed over time while it can undergo disassembly.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Map of the proviral DNA contained in the vector pNL4.3-iGFP-\u0394Env. Viral particles with Gag-internal GFP (released as a solution phase marker by proteolysis during maturation) were generated by transfection of HEK293T cells with pNL4.3-iGFP-\u0394Env and psPAX2 in a molar ratio of 1.4:1. (B) GFP-positive particles released from HEK293T cells transfected with either wild type or PTAP motif mutants of pNL4.3-iGFP-\u0394Env and psPAX2. (C) Schematic diagram of the TIRF assay to measure capsid opening. (D) Gallery of negative staining TEM images of viral particles incubated with the pore-forming protein PFO. (E) Distribution of PFO pore diameters (34.8\u00a0\u00b1\u00a05.2 nm, mean\u00a0\u00b1standard deviation, N\u00a0=\u00a0347). (F) TIRF image of immobilized viral particles in a 450\u00a0\u00d7\u00a0370 pixel region of the field of view.\u00a0(G) Distribution of GFP intensity for each particle in the field of view. (H) Fluorescence intensity traces of viral particles with leaky, opening and closed capsids showing the release of GFP contained by the envelope at the point of envelope permeabilization (\u2018P\u2019) with PFO and release of encapsidated GFP after spontaneous opening (\u2018O\u2019) of the HIV capsid. The capsid opening time (\u0394t) is the time from permeabilization to capsid opening. The black squares indicate the frames at which the snapshots shown below each trace were taken. The TIRF movie was recorded with an imaging frequency of 1 frame s\u22121.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The fraction of encapsidated GFP was calculated as the ratio of the GFP intensity associated with the closed capsid (i.e. the mean intensity in the period after membrane permeabilization and before core opening) to the total GFP intensity associated with the viral particle (i.e. the mean intensity before membrane permeabilization). The histogram contains combined data from a total of four repeats using two different viral preparations. The mean fraction of encapsidated GFP is\u00a0~13%, similar to the ratio of the volume inside the capsid to the total volume of the viral particle (16%), which was estimated on the basis of the following considerations. Internal volume of the viral particle: The internal virus volume (i.e. excluding the viral membrane and matrix protein layer) has been estimated by cryo-electron tomography (cET) of HIV particles, giving an average value of $V_{particle}=6.79\\times10^{5}nm^{3}$ [from Figure 4, (de Marco et al., 2012)]; this volume corresponds to an internal diameter of 109 nm. Volume of the viral core: The volume of the core was calculated as the volume of an ellipsoid given by $V_{core}=\\frac{4}{3}\\pi\\frac{l}{2}\\frac{d_{b}}{2}^{2}$, where $l$ is the length of the cone, $d_{b}$ is the diameter of the broad end. We assumed the following dimensions for the capsid including the CA shell: $l=109nm$ (i.e. the internal diameter of the virion) and $d_{b}=56nm$ (Briggs et al., 2006). The internal volume of the capsid was calculated after subtracting twice the thickness of the CA lattice (2 \u00d7 5 nm) from the values for $l$ and $d_{b}$, giving $V_{core}^{internal}=1.10\\times10^{5}nm^{3}$. The fraction of the internal volume of the capsid relative to the total internal volume of the viral particle is then given by $V_{core}^{internal}/V_{particle}=16%$.\n\nIn our assay, we detected viral membrane permeabilization and capsid opening using time-lapse total internal reflection fluorescence (TIRF) microscopy to monitor the release of GFP molecules trapped in these compartments. GFP-loaded viral particles captured onto the coverslip appeared as bright diffraction-limited spots in the fluorescence image (Figure 1F), whereby a typical field of view contained several hundred to a thousand particles with a broad distribution of GFP intensities (Figure 1G). We extracted GFP intensity traces for each particle by summing the total fluorescence intensity above background of the diffraction limited spot in each frame of the TIRF movie (see Figure 1H for selected traces and for snapshots of the corresponding particles over time). A common feature of the vast majority of traces was a large drop in the GFP signal that occurred from one frame to the next at a variable time point after addition of PFO to the flow channel. We attributed this sudden drop in signal to the release of the pool of GFP molecules enclosed by the viral membrane as a result of PFO-mediated permeabilization. This process was not synchronized and typically occurred at random times for individual particles over a period of several minutes, as expected for the stochastic process underlying assembly of PFO into membrane pores. The precise time of permeabilization could, nevertheless, be determined from the large drop in the GFP fluorescence intensity traces (indicated by \u2018P\u2019 in Figure 1H) obtained by single-particle analysis.\n\nTracking of the residual GFP signal after permeabilization then permitted us to distinguish between three different classes of particles with \u2018leaky\u2019, \u2018opening\u2019 or \u2018closed\u2019 capsids. The majority of traces was characterized by a complete loss of GFP fluorescence upon membrane permeabilization (Figure 1H, left panel, see also Figure 2A). These particles were classified as containing leaky capsids with a defective and/or unstable CA lattice that did not retain the pool of GFP inside the capsid (Welker et al., 2000; Yu et al., 2013). The remainder of traces showed a residual GFP signal after membrane permeabilization that constituted on average 13% of the total GFP signal prior to permeabilization (Figure 1\u2014figure supplement 1). This fraction was consistent with the amount of GFP expected to be randomly trapped inside the volume of the capsid (relative to the volume of the viral particle) during maturation. Loss of this residual GFP signal to background levels at a later point in time was attributed to the spontaneous opening of the capsid lattice to create a hole sufficiently large to permit the passage of GFP (indicated by \u2018O\u2019 in Figure 1H, middle panels). We then calculated the capsid opening time (denoted as \u0394t in Figure 1H) for each trace as the difference between the time of membrane permeabilization and the time of capsid opening. In a fraction of traces the residual GFP signal remained constant until the end of the TIRF movie and the corresponding particles were classified as having closed capsids that retain GFP for the duration of the experiment (Figure 1H, right panel). We conclude that monitoring the steps of GFP release from viral particles at the single-particle level reveals differences in capsid opening times.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Bar chart showing the fraction of capsids classified as \u2018leaky\u2019, \u2018opening\u2019 and \u2018closed\u2019 that are present 30 min after addition of PFO to permeabilize the envelope, recorded in the absence and presence of capsid binders. (B) Survival curves of capsids with encapsidated GFP after permeabilization with mono- (black line) and bi-exponential (dotted grey line) fit. The parameter values of the fits are provided in Figure 2\u2014source data 1 and 2. The data in panels A and B was combined from multiple measurements (total number of repeats/number of viral preparations): No binder (3/2); CypA - 1 \u03bcM (4/2); CypA - 20 \u03bcM (5/2); PF74 - 10 \u03bcM (4/2); BI2 - 50 \u03bcM (5/3); hexacarboxybenzene - 10 \u03bcM (3/2); hexacarboxybenzene - 1000 \u03bcM (2/1); CA E45A (5/3). (C) Half-lives of intact capsids determined by fitting survival curves from individual repeats with a mono-exponential decay function. The error bars represent 95% confidence intervals; unpaired t-test with Welch\u2019s correction, p=0.2797 (1 \u03bcM CypA), p=0.0403 (20 \u03bcM CypA), p=0.0403 (20 \u03bcM CypA), p=0.0014 (10 \u03bcM PF74), p=0.0022 (50 \u03bcM BI2), p=0.0043 (CA E45A). The half-lives of capsids in the presence of hexacarboxybenze (C6(COOH)6) could not be determined with certainty and were estimated to be\u00a0>1 hr.\n\n### Effect of capsid-binding molecules on capsid opening kinetics\n\nWe used the capsid opening assay to characterize the intrinsic stability of the HIV capsid in the absence and presence of molecules known to affect the stability of the CA lattice. Figure 2A shows the fraction of capsids that are leaky, undergo opening or remain closed within 30 min of adding PFO to the immobilized particles. Leaky capsids constituted the largest fraction of particles (60\u201380%), irrespective of which type of capsid-binding molecules were present in the solution. Even in the absence of capsid-binding molecules, we observed variability in the fraction of leaky capsids in this range for different batches of particles. These observations suggest that leaky particles result from assembly defects during maturation, which are unaffected by modulators of CA lattice stability that the capsid encounters at a later stage (e.g. after entry into the cell).\n\nTo obtain an estimate of the half-life of the opening process, we analyzed the distribution of capsid opening times determined for hundreds of particles that undergo opening (Figure 2B,\u00a0C). The survival curve of intact capsids (i.e. those that remain positive for encapsidated GFP) exposed to buffer without additives could be approximated with an exponential decay function (Figure 2B, black lines and Figure 2\u2014source data 1) yielding an estimate for the capsid half-life of 8 min (Figure 2C), which is similar to a previous estimate of 10 min for the half-life of capsid uncoating in vitro (Francis et al., 2016). Fitting a bi-exponential decay made it possible to quantify a sub-population of capsids (~20%) that were substantially less stable and opened with a half-life of less than 1 min (Figure 2B, dashed grey line and Figure 2\u2014source data 2).\n\nTo validate that the GFP release kinetics depend on capsid stability, we assessed the effect of the E45A mutation in CA on capsid opening. This mutation is known to yield hyperstable capsids (Forshey et al., 2002; Yang et al., 2012), which was also apparent in our capsid opening assay with a 4.5-fold increase in half-life compared to capsids assembled from wild-type CA (Figure 2C).\n\nThe ability to identify different subpopulations of capsids and to extract a half-life for capsid opening allowed us to quantitatively compare the effect of known capsid-binding proteins and small molecules on capsid stability. Cyclophilin A (CypA) is a host cell protein that binds to the cyclophilin binding loop of CA exposed on the exterior of the capsid (Gamble et al., 1996), and this interaction is thought to control capsid stability after cell entry (Shah et al., 2013). In our assay, CypA had no effect on capsid half-life when added at a concentration of 1 \u03bcM and lead to an approximately two-fold increase in half-life at 20 \u03bcM (Figure 2C).\n\nThe small molecules PF74 and BI2 bind to hexameric CA and inhibit HIV infection at an early post-fusion event (Bhattacharya et al., 2014; Blair et al., 2010; Lamorte et al., 2013; Price et al., 2014). Addition of these inhibitors to the capsid opening assay at high concentrations within the range typically used in cellular and biochemical assays revealed an increase in the ratio of opening to closed particles after 30 min (Figure 2A) and a pronounced acceleration of capsid opening with half-lives of 41 s and 2.4 min, respectively (Figure 2C). In contrast, the small molecule hexacarboxybenzene (C6(COOH)6), which binds to hexameric CA (Jacques et al., 2016), showed the opposite effect by strongly inhibiting capsid opening (Figure 2A). There was an insufficient number of opening events to allow a robust fit of the survival curves but we estimated that the half-lives in the presence of 10 and 1000 \u03bcM hexacarboxybenzene were in the order of 1 hr and 10 hr, respectively. Taken together, our observations show that measuring GFP release from authentic viral capsids at the single-particle level is suitable to reveal the heterogeneity of capsid assembly states and quantify the effect of capsid binders on the opening kinetics of intact capsids.\n\n### Kinetics of protein binding to intact HIV capsids\n\nThe half-life of the HIV capsid is sufficiently long to use PFO-permeabilized viral particles as a platform to quantify the binding of labeled proteins to authentic viral capsids at the single-particle level as shown in Figure 3A. To demonstrate this approach, we added CypA labeled with Alexa Fluor 568 (AF568) at the same time as PFO to the flow channel and followed the fluorescence signals of GFP packaged into the virion and AF568-CypA using dual-color TIRF microscopy. For binding analysis, we selected particles with capsids that remained intact (GFP-positive) for a sufficient period of time to obtain a binding equilibrium. Using a calibration value obtained by single-molecule photobleaching, we converted the AF568 intensity to obtain the number of CypA molecules bound at each location corresponding to a closed capsid.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Schematic diagram of the TIRF assay for measuring protein binding to the intact capsid and snapshots of the GFP signal and AF568-CypA signal of a selected viral particle at different times. (B) Example traces of CypA binding (vermillion) to individual closed capsids that retain GFP (green) after permeabilization of the viral envelope (note the residual GFP signal after the large drop). The concentration of CypA was 1 \u03bcM. (C) CypA binding traces (vermillion) to all closed capsids in the field of view aligned with respect to the time of envelope permeabilization (tP\u00a0=\u00a00). The bold black line represents the median binding trace. CypA binding was recorded in the absence (top) and presence (bottom) of cyclosporine A (CsA). The histograms at the right show the distribution of intensities after binding equilibrium is reached (at tP\u00a0=\u00a010 s). Gaussian fitting gave a mean\u00a0\u00b1standard deviation of 73\u00a0\u00b1\u00a020 and 1.6\u00a0\u00b1\u00a02.9 in the presence and absence of CsA, respectively. Representative data from four (\u2212CsA) and two (+CsA) independent experiments using different viral preparations. (D) Median CypA binding traces recorded at CypA concentrations ranging from 0.1 to 20 \u03bcM as indicated above the corresponding trace. Binding experiments with concentrations above 1 uM were carried out with a mixture of unlabeled and labeled CypA, whereby the concentration of the labeled CypA was kept at 1 \u03bcM. (E) Median number of CypA molecules bound at equilibrium as a function of CypA concentration (vermillion circles) and fit of an equilibrium binding model (black line). The fit gave the following estimates for the interaction: KD\u00a0=\u00a010 \u03bcM; number of CypA-binding sites on the intact capsid\u00a0~1000. See Figure 3\u2014figure supplement 2 for an independent repeat experiment. (F) Mean CypA intensity measured at closed capsids after wash-out of CypA from the flow channel at t\u00a0=\u00a00. The black line represents a fit of the data with an exponential decay function.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Measurements with 1 \u03bcM CypA were carried out in the absence and presence of small molecules (PF74 or hexacarboxybenzene) or HeLa cell lysate. Each symbol represents an independent experiment. Experiments were recorded at different times with several different batches of viral particles and on two different TIRF microscopes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Median number of CypA molecules bound to closed capsids at equilibrium as a function of CypA concentration (vermillion circles) and fit of an equilibrium binding model (black line). The fit gave the following estimates for the interaction: KD\u00a0=\u00a012 \u03bcM; number of CypA-binding sites on the intact capsid\u00a0~600. These data were recorded in a repeat experiment for the data shown in Figure 3E but with a different batch of viral particles and on a different TIRF microscope.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A,\u00a0B)\u00a0SPR traces of CypA binding and dissociation on surfaces modified with (A) CA K158C (reacted with a maleimide derivative of biotin) or (B) cross-linked CA hexamers (reacted with an NHS ester derivative of biotin) recorded at 1.6, 3.1, 6.3, 12.5, 25, 50 and 100 \u03bcM CypA (curves from bottom to top). (C,\u00a0D) Response at equilibrium as a function of CypA concentration and fit of a binding model to the data (black line) to obtain the dissociation constant of the CypA interaction with monomeric (C, KD\u00a0=\u00a021.8 \u03bcM) and hexameric (D, KD\u00a0=\u00a019 \u03bcM) CA protein.\n\nRepresentative traces of CypA binding to closed capsids are shown in Figure 3B. As before, PFO-mediated permeabilization of each individual particle was evident from the large drop in GFP intensity to a level corresponding to the pool of GFP trapped inside the closed capsid. Coincident with GFP signal loss, we observed a rapid increase in the CypA signal up to an equilibrium binding level. We then obtained the CypA binding kinetics for the entire population of closed capsids in the field by aligning all single-particle traces at the time of membrane permeabilization. The aligned traces recorded in the presence of 1 \u03bcM CypA are shown as a heatmap in Figure 3C. The median binding trace showed that binding equilibrium was rapidly established, suggesting that the PFO-permeabilized membrane does not present a significant barrier for diffusion of proteins to and from the capsid. The number of molecules bound at equilibrium in the experiment shown in Figure 3C had a median of 73 molecules per capsid. Across 12 independent experiments, we measured 58\u00a0\u00b1\u00a08 molecules per capsid in the presence of 1 \u03bcM CypA (Figure 3\u2014figure supplement 1). When imaged for longer periods of time, the plateau level increased slowly, suggesting that a low level of irreversible or non-specific binding may occur over time. However, binding of CypA was completely abolished in the presence of the competitive inhibitor cyclosporin A, which binds to the binding pocket on CypA (Figure 3C, bottom panels) (Mikol et al., 1993). This observation indicates that the interaction with the permeabilized viral particle is largely driven by an interaction with sites recognized by its binding pocket.\n\nNext, we used the binding assay to obtain an estimate of the dissociation constant (KD) for the CypA-capsid interaction and the number of binding sites that can be occupied simultaneously on the assembled capsid. Mean binding curves were obtained from aligned single-particle traces recorded at concentrations ranging from 0.1 to 20 \u03bcM (Figure 3D). Analysis of the equilibrium binding levels gave an estimate of the KD of 10\u201312 \u03bcM with an estimated 500\u20131000 molecules bound per capsid at saturation (Figure 3E and Figure 3\u2014figure supplement 2). This number of sites represents roughly half of the number of CA proteins in an assembled capsid (Briggs et al., 2003). The expected CypA:CA ratio at saturation is also 1:2, because binding to both cyclophilin loops of CA molecules connecting neighboring hexamers in the lattice would lead to steric clashes (Liu et al., 2016). This observation suggests that the lattice is completely coated with CypA at saturation, and that binding sites on different locations of the capsid are equivalent.\n\nFinally, we obtained the rate of CypA dissociation by measuring the decay of the mean fluorescence intensity associated with closed capsids after removing CypA from solution by flushing the flow channel with buffer (Figure 3F). The majority of the fluorescence signal (85%) disappeared rapidly with a rate of 1.5 s\u22121. This rate was close to the rate of solution exchange achievable in our microfluidic set-up, such that the off-rate of CypA measured here may be limited by mass transport. The residual CypA signal associated with the particles, possibly representing irreversibly bound CypA, decayed with a rate consistent with photobleaching. For comparison, we also measured the binding and dissociation of unlabeled CypA to CA and cross-linked CA hexamers using surface plasmon resonance. Equilibrium binding analysis of the SPR data gave a KD of 21.8 \u03bcM and 19 \u03bcM for interaction with immobilized CA (consistent with previous data [Yoo et al., 1997]) and CA hexamer (Figure 3\u2014figure supplement 3), respectively, while the off-rates determined after removal of CypA from solution were 4\u00a0\u00b1\u00a00.3 s\u22121 and 3.5\u00a0\u00b1\u00a00.4 s\u22121, respectively. We conclude that CypA binds with low affinity to the authentic viral capsid lattice shortly after membrane permeabilization in an interaction that is governed by rapid kinetics and not fundamentally different from its interaction with CA that is not part of a lattice.\n\n### Visualizing capsid lattice disassembly using CypA paint\n\nThe capsid opening assay pinpoints the start of the uncoating reaction. To also measure the kinetics of lattice disassembly beyond the appearance of the first defect, we explored the possibility of using labeled CypA to \u2018paint\u2019 the CA lattice, whereby the signal of bound CypA is proportional to the number of CA molecules that remain at a given point in time during disassembly, similar to a previous approach using CypA-DsRed (Francis et al., 2016). Our observations above revealed that CypA fulfils two important requirements for its use as a capsid lattice paint. Firstly, CypA binding does not have a measurable effect on capsid opening when used at concentrations of up to 1 \u03bcM (Figure 2C). Secondly, CypA binds (and dissociates) with fast rates to binding sites all over the surface of the lattice (Figure 3). In the experiments shown here, we added labeled CypA to the buffer at the same time as adding PFO, but in principle it is possible to add (and withdraw) the label at any point in time during the uncoating experiment. We then observed the CypA signal as a function of time for each GFP-positive particle in the field of view, whereby the vast majority of particles showed the appearance of a CypA signal above background shortly after permeabilization. Below we focus on the analysis of leaky and opening capsids, whereby the intensity of the CypA signal was converted into a measure for the integrity of the capsid lattice.\n\nParticles with leaky capsids (complete disappearance of the GFP signal in a single step) showed a spike in the CypA signal upon membrane permeabilization that typically decayed rapidly (within seconds to minutes, see Figure 4B for example traces). The median CypA intensity trace obtained by aligning all traces with leaky capsids at the time of membrane permeabilization showed instantaneous accumulation of CypA intensity followed by a short dwell time of 5\u20137 s and exponential decay characterized by a half-life of 14\u201325 s (Figure 4C). We interpreted this signal as follows: particles with leaky capsids contain a CA lattice that is poised to fall apart and only persists for a short period of time before disassembly. The distribution of CypA molecules bound per capsid at the intensity peak (Figure 4C, middle panel) suggested the presence of particles containing almost complete capsids with only minor defects as well as particles with only partially assembled lattices. The distribution of CypA paint intensities measured 5 min after permeabilization (Figure 4C, right panel) revealed a small residual signal, suggesting the presence of residual CA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Schematic diagram of the TIRF CypA paint assay. (B) Example traces of AF568-CypA binding (vermillion) to individual leaky capsids that do not retain GFP (green) after permeabilization of the viral envelope. The concentration of CypA was 0.7 \u03bcM. (C) Heatmap of CypA binding traces to all leaky capsids in the field of view aligned with respect to the time of envelope permeabilization (tP\u00a0=\u00a00). The bold black line represents the median CypA trace. The histograms at the right show the distribution of intensities at tP\u00a0=\u00a05 s and 300 s. (D) Example traces of AF568-CypA binding (vermillion) to individual capsids that initially retain a fraction of the GFP signal (green) after permeabilization of the viral envelope, and then open to release this residual GFP signal. The concentration of CypA was 0.7 \u03bcM. (E) Heatmap of CypA intensity traces of all capsids in the field of view that undergo opening. The traces in the left panel are aligned with respect to the time of envelope permeabilization (tP\u00a0=\u00a00), while the traces in the right panel are aligned with respect to capsid opening. The bold black line represents the median CypA trace. The histograms at the right show the distribution of intensities after binding equilibrium is reached (at tP\u00a0=\u00a010 s) and at the end of lattice disassembly. Representative data from three independent experiments using different viral preparations.\n\nSingle-particle traces of opening capsids (Figure 4D) were characterized by the following phases: First, rapid binding of CypA upon membrane permeabilization, reaching a binding equilibrium while the capsid remained closed (Figure 4E, left heatmap). Second, the CypA fluorescence signal started to decay within a short dwell time of capsid opening (GFP release) and then reached a stable level above background. We interpret the second phase as the disassembly of most of the CA lattice. The median disassembly kinetics after capsid opening (Figure 4E, right heatmap) were governed by a half-life of approximately 70\u2013100 s. The rapid decay of the lattice after initiation of uncoating observed here with labeled monomeric CypA is consistent with previous measurements in vitro and in cells using a tetrameric probe, CypA-dsRed, that binds irreversibly to the capsid lattice (Francis et al., 2016). As observed for leaky capsids, we detected residual CypA intensity at the end of the disassembly phase, possibly due to the presence of some CA molecules remaining associated with the viral RNA inside the permeabilized viral particle.\n\nOverall, the disassembly process after capsid opening followed a similar process as observed for leaky capsids, but with slower kinetics. We conclude that capsid opening is the rate-limiting step for capsid uncoating, and lattice disassembly will proceed rapidly once the capsid has developed the first defect.\n\n### CypA paint reveals the effects of PF74 and hexacarboxybenzene on capsid lattice disassembly\n\nAs shown above, PF74 accelerated capsid opening, while hexacarboxybenzene strongly inhibited this step. A simple explanation of these observations is that binding of these compounds globally affects capsid stability. In this case, we would predict that the rates of lattice disassembly are affected in the same way as capsid opening, that\u00a0is increased in the presence of PF74 and decreased in the presence of hexacarboxybenzene. To test this prediction, we used CypA paint to determine the effect of these compounds on the kinetics of lattice disassembly. CypA binding to the capsid was indistinguishable in the presence and absence of these compounds (Figure 3\u2014figure supplement 1), suggesting that binding of either compound does not interfere with CypA binding. Surprisingly, in the presence of PF74, we observed no decrease in the CypA paint signal after capsid opening (Figure 5B, right heatmap). This observation suggests that the lattice develops a defect to allow the passage of proteins but is otherwise highly stabilized such that no (further) CA proteins are released from the lattice. The amount of CA protein lost during the opening step was below the limit of detection in our assay (compare the CypA paint intensity histograms before and after capsid opening, Figure 5B). This stabilization of the lattice was also observed for leaky capsids (Figure 5A). Here, too, the CypA paint signal remained constant for at least 8 min. The observations indicate that the lattice did not release a substantial number of individual CA subunits (or small multimers), but we cannot rule out breakage of the capsid into stable parts that are too large to traverse the PFO pores. In contrast to the strong stabilization observed with PF74, hexacarboxybenzene only had a modest stabilizing effect on the CA lattice after capsid opening, as seen from the CypA paint signal decay from that point onwards (Figure 5D); the inability to prevent collapse of the lattice was also apparent for leaky capsids (Figure 5C). We conclude that while PF74 promotes a structural change leading to a defect in the capsid that allows passage of proteins, only little (if any) CA protein is lost during this step, and the remaining lattice is highly stabilized. In contrast, hexacarboxybenzene strongly inhibits capsid opening but has little effect on uncoating once the process has started.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig5-v2.jpg)\n\n**Figure 5.:** (A, C)\u00a0Heatmaps of CypA binding traces to all leaky capsids in the field of view aligned with respect to the time of envelope permeabilization (tP\u00a0=\u00a00) in the presence of PF74 (A) or hexacarboxybenzene (C). The bold black line represents the median CypA trace. (B, D) Heatmaps of CypA intensity traces of all capsids in the field of view that undergo opening in the presence of PF74 (B) or hexacarboxybenzene (D). The traces in the left panel are aligned with respect to the time of envelope permeabilization (tP\u00a0=\u00a00), while the traces in the right panel are aligned with respect to capsid opening (tO\u00a0=\u00a00). The bold black line represents the median CypA trace. Heatmaps are representative of data acquired in two independent experiments using different viral preparations.\n\n### Cell lysate slows capsid opening but not lattice disassembly\n\nFinally, we conducted capsid opening and CypA paint experiments in the presence of cell lysate to test whether it was compatible with our single-particle approaches. PFO-mediated permeabilization was unaffected when HeLa cell lysate was added to the buffer at a final protein concentration of 1 mg mL\u22121. However, capsid opening was slowed down with a four-fold increase in the half-life of this process (Figure 6A and B). CypA bound to the exposed capsid in the same manner as observed in buffer (Figure 6C). The number of CypA molecules bound on intact (closed) capsids at equilibrium was comparable to that measured in buffer (Figure 3\u2014figure supplement 1), indicating that there was no competition with endogenous CypA due to the high dilution factor used in this experiment. CypA paint revealed that the process of uncoating in diluted cell lysate was in principle the same as is buffer, with the lattice falling apart shortly after it had opened up, albeit with a slightly reduced rate (Figure 6D and E). The stabilizing effect exerted by the diluted cell lysate is consistent with previous observations (Francis et al., 2016; Fricke et al., 2013; Guth and Sodroski, 2014), and it may be amplified when components are present at cytosolic concentrations. Identification of components contributing to this effect is the subject of future investigation, whereby the single-particle methods introduced here are suitable to dissect the effect of specific perturbations in the context of a complex mixture such as cell lysate.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Survival curve of GFP-positive capsids in the presence of HeLa cell lysate. The half-life determined from the curve is 48 min. Combined data from a total of five repeats using two different viral preparations. (B) Half-life of intact capsids determined by fitting survival curves from individual repeats with a mono-exponential decay function. The error bars represent 95% confidence intervals; unpaired t-test with Welch\u2019s correction, p=0.0184. (C) Example traces of AF568-CypA binding (vermillion) in the presence of HeLa cell lysate to individual capsids (green) after permeabilization of the viral envelope. The concentration of CypA was 1 \u03bcM. (D) Heatmap of CypA binding traces to all leaky capsids in the field of view aligned with respect to the time of envelope permeabilization. The bold black line represents the median CypA trace. (E) Heatmap of CypA intensity traces of all capsids in the field of view that undergo opening. The traces in the left panel are aligned with respect to the time of envelope permeabilization, while the traces in the right panel are aligned with respect to capsid opening. The bold black line represents the median CypA trace.\n\n## Discussion\n\nMeasurement of the single-particle uncoating kinetics of authentic HIV capsids immediately after removing the protective barrier of the viral membrane has allowed us to observe the effects of capsid-binding molecules on discrete steps in the capsid uncoating process. The order of events established with our new assays would have been obscured in ensemble measurements due to dephasing. We observed the following main characteristics of HIV-1 capsid uncoating and its interactions with capsid-binding molecules: (1) The integrity and stability of capsids in a population is highly heterogeneous, whereby the majority of capsids contain defects and/or uncoat immediately after removal of the viral membrane. (2) In the absence of capsid binders, uncoating is an all-or-none process that proceeds rapidly after the first defect is created. (3) Capsid-binding molecules exhibit differential effects on the steps that control initiation and continuation of uncoating.\n\nThe structural heterogeneity of the HIV capsid is well described, with the assembly process yielding a variety of conical, tubular and other shapes that often contain structural defects such as gaps in the CA lattice (Briggs et al., 2003; Frank et al., 2015; Mattei et al., 2016; Yu et al., 2013). Here, we identify functionally distinct classes of capsids on the basis of their GFP release kinetics, allowing us to quantify the functional heterogeneity for hundreds of capsids within a population and relate them to different assembly states. By utilizing a pore-former to permeabilize the viral membrane in a controlled manner while recording capsid opening traces, we are able to observe early events that occur upon exposure of the capsid to a change in conditions and thus capture unstable assembly states. This approach circumvents the need for isolating viral cores, a process which exposes cores to experimental buffer conditions for extended periods of time (Shah and Aiken, 2011) and would result in a loss of this information. Our results show that the assembly states range from incomplete or imperfect (leaky) lattices to fully assembled (closed) capsids that nevertheless exhibit pronounced differences in uncoating kinetics. Here, we have quantified the fraction of particles of different stability for a viral particle that lacks HIV envelope protein and has GFP inserted into the Gag polyprotein. These features may affect maturation and capsid assembly or lead to misclassification of some particles, for\u00a0example as a result of incomplete proteolysis. It is therefore important to note that wild type HIV may exhibit a different distribution of capsid stability types. Nevertheless, it is striking that 60\u201380% of capsids in our experiments are not fully closed and are unable to retain GFP upon membrane permeabilization. This category includes early assembly intermediates but mostly structures that are essentially fully assembled (as judged by our CypA paint method, see below) yet unable to form a closed cone. We assign the latter class of leaky structures to capsids with holes that are also observed in intact viral particles by cryo-electron microscopy (Mattei et al., 2016) and by GFP release in vivo (Yu et al., 2013). The abundance of these types of particles obtained here using a viral preparation protocol that avoids harsh treatments (such as centrifugation) suggests that capsid assembly frequently becomes trapped at this stage, whereby remodeling of the lattice to allow it to close might be a slow process.\n\nHost cell proteins that interact with the viral capsid after cell entry often recognize assembled CA rather than CA monomers (Yamashita and Engelman, 2017). Cross-linked CA hexamers and self-assembled lattices from recombinant CA (Ganser-Pornillos et al., 2004; Pornillos et al., 2010) or CA-NC protein (Campbell and Vogt, 1995) are powerful tools for identification and structural studies of capsid-binding molecules but do not fully recapitulate the structural features (including curvature and flexibility) of the lattice that may be required for binding. In contrast, our assay provides access to the authentic, wild-type capsid lattice for determining interaction kinetics, affinity and stoichiometry, and thus assess structural models for the binding mode of host proteins on the intact lattice. A recent study of self-assembled CA lattices in complex with CypA using cryo-electron microscopy and solid-state NMR spectroscopy suggested that each CypA bridges two hexamers in the lattice by simultaneously contacting the cyclophilin loops on two neighboring CA proteins, one via its canonical binding site and one via a postulated non-canonical binding site located on the opposite side of the CypA molecule (Liu et al., 2016). While our binding measurements are consistent with a 1:2 CypA:CA stoichiometry at saturation, we observed that the KD and off-rate for the CypA-capsid complex were only two-fold lower compared to complex with CA. Further, CypA binding resulted in only modest stabilization of the capsid (two-fold increase in half-life). Our data is consistent with a binding mode that relies primarily on an interaction via the canonical binding site and suggests that binding via the non-canonical binding site is either very weak and/or not immediately accessible for most CypA molecules interacting with the capsid. The fast interaction kinetics imply rapid turn-over of CypA and/or exchange with other host proteins that compete for binding to the capsid lattice.\n\nThe observation that CypA binding at low concentrations is neutral with respect to capsid opening provides an added dimension to our single-particle assay. The ability to \u2018paint\u2019 the capsid with fluorescent CypA at sub-stoichiometric ratios (about 1:20 CypA:CA) enables kinetic studies of capsid disassembly. We observed that defective capsids collapsed rapidly after membrane permeabilization suggesting that they are only stable in the presence of the high concentrations of free CA inside the viral membrane (most CA released by proteolysis during maturation is not incorporated into the capsid and remains in solution at a concentration in the low mM range). Similarly, we found that lattice disassembly of an initially intact capsid is a rapid process that ensues as soon as the first gap in the lattice has appeared, that\u00a0is uncoating is primarily controlled by the slow rate of removing the first (few) CA subunits.\n\nThe ability to simultaneously monitor appearance of the first defect and overall lattice stability allows us to define different stages of \u2018uncoating\u2019 and study how they may be influenced by external factors, as demonstrated here by dissecting the effects of two known capsid-binding molecules, PF74 and hexacarboxybenzene. PF74 is a drug molecule designed to target CA (Blair et al., 2010). At high concentration (\u226510 \u00b5M), it blocks HIV infection at a stage before reverse transcription (Price et al., 2014). It has been described as stabilizing self-assembled hexameric CA or CA-NC tubes but destabilizing HIV cores (Bhattacharya et al., 2014; Da Silva Santos et al., 2016; Fricke et al., 2013; Shi et al., 2011). In our assay, PF74 uncoupled the step of capsid opening from lattice disassembly. Addition of PF74 led to a pronounced acceleration of capsid opening but the remaining lattice was highly stabilized. This observation reconciles the previous ambiguity regarding the mode of action of PF74. It stabilizes CA lattices, but in a manner that makes it incompatible with a closed structure. Binding rapidly leads to capsid rupture in a manner that releases little CA but removes the barrier for free diffusion of proteins. In contrast, we found that hexacarboxybenzene is a potent inhibitor of capsid opening as seen from the remarkable increase in the half-life of this process. But in the event that the core does open, disassembly proceeds in a manner similar to the untreated capsid.\n\nTaken together our observations suggest that the CA lattice has enhanced stability as long as it forms a closed surface, as predicted from coarse-grained simulations of capsid lattice disassembly (Grime et al., 2016). Appearance of a local defect leads to catastrophic failure of the lattice whereby the defect could rapidly propagate via dissociation of CA subunits that are no longer stabilized by dimer and/or trimer interfaces linking neighboring hexamers in the lattice (Figure 7). The interactions between subunits in a hexamer (or pentamer) represent a weak link in the CA lattice. Hexacarboxybenzene stabilizes the hexamer by binding in the its central electropositive pore (Jacques et al., 2016), leading to an increase in the energy barrier for dissociation of the first CA molecule(s), but only if the surrounding lattice is intact. Progressive loss of hexamer subunits would be expected to destroy the binding site for hexacarboxybenzene, leading to its dissociation and further destabilization of the disassembling part of the lattice. PF74 on the other hand binds in a pocket between CA subunits in a hexamer and stabilizes the hexameric lattice (Bhattacharya et al., 2014; Price et al., 2014). We speculate that PF74 may stabilize a particular conformation that is incompatible with the highly curved section of the capsid, leading to breakage at those points, whereby the restructured lattice is sufficiently stable to prevent dissociation of CA from hexamers adjacent to the gap.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34772/elife-34772-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0Intact CA lattice with dimeric and trimeric interfaces between hexamers highlighted as rectangles and triangles, respectively. Removal of a CA subunit (dark cyan) from a hexamer in the lattice leads to destabilization and dissociation of its dimer partner (light cyan) in the neighboring hexamer; GFP release may occur as early as at this stage. The defect propagates by dissociation of subunits (dark magenta) that have now lost contacts within the hexamer and at the trimer interface, followed by (or concomitant with) loss of their corresponding dimer partners (light magenta). Disassembly continues in all directions from the initial defect with increasing rate while the length of the defect edge grows. (B) Binding of hexacarboxybenzene (circles) to the central pore stabilizes the hexamer, reducing the probability of dissociation of the first CA subunit(s). Once the defect is created, the stabilizing effect of hexacarboxybenzene is insufficient to prevent disassembly via the pathway described in A. (C) Binding of PF74 (black lines) may lead to capsid rupture instead of loss of CA subunits, whereby PF74 molecules bound at the interfaces between CA subunit act as a glue to prevent dissociation of CA subunits from hexamers adjacent to the defect.\n\nWhat are the implications of our findings for uncoating in the cell? Two currently debated, non-mutually exclusive models for uncoating pose that core opening occurs either en route towards the nucleus (cytoplasmic uncoating) or after docking of the core at the nuclear pore complex (Campbell and Hope, 2015). In both models, residual CA protein remains associated with the pre-integration complex during and after nuclear import, but to what extent CA protein is lost from the capsid in the cytoplasmic uncoating model remains unclear. The intrinsic instability of the lattice after capsid opening observed here suggests that partially uncoated states with the capsid largely intact do not exist unless stabilized by host cell proteins. Such a stabilizing role has been suggested for CypA (Liu et al., 2016; Shah et al., 2013); however, the only modest stabilization of the lattice observed here in the presence of physiological concentrations suggests that other factors may be involved in this process. While not naturally present during an infection, the effect of the capsid-binding molecules, PF74 and hexacarboxybenze, offer insight into additional mechanisms that may be at play. PF74 binds at a junction between two neighboring CA proteins within the hexamer. This site can also be occupied by two host proteins: CPSF6 and Nup153 (Matreyek et al., 2013; Price et al., 2014). The observation that small-molecule binding at this site results in what could be described as a partially\u00a0uncoated state raises the possibility that these two cofactors may also play roles in regulating the core-opening/uncoating event in vivo. In addition, the inhibition of capsid opening in the presence of hexacarboxybenze suggests that polyanionic species bound at the Arg18 cluster in the central pore of a hexamer could greatly enhance the lifetime of the closed core as it travel through the cytoplasm. Rapid uncoating could then be initiated, for example after docking at the nuclear pore complex, by catalyzing removal of a few CA subunits. In an accompanying paper, we show that the naturally occurring polyanion inositol hexakisphosphate is selectively packaged into viral particles and stabilizes the mature lattice against spontaneous opening as observed here for the non-natural compound hexacarboxybenzene.\n\nThe competition for binding to the capsid between host molecules that facilitate or restrict infection, and their effect on uncoating remain to be fully determined, but our assay is ideally suited to answering these questions. The advantages of our approach include the ability to extract hundreds of single-particles traces in a single experiment for detailed kinetic analysis under defined conditions and the low requirements for reagents. The compatibility of the assay with lysates should prove powerful to dissect the effect of capsid-binding proteins and small molecules in complex mixtures containing components of different pathways and allows the study of perturbations via knock-down or overexpression of candidate proteins and lysates from different cell types or cells stimulated with different treatments, for example to induce antiviral states. The methods described here could readily be extended to competition binding studies or screening of the effect of small molecules on properties of the viral capsid for drug discovery.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pNL4.3-iGFP-\u0394Env</td>\n      <td>DOI: 10.1371/journal. ppat.1002762</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pNL4.3-iGFP-CA E45A-\u0394Env</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Proviral construct generated by subcloning a fragment with the CA E45A mutation into pNL4.3-iGFP-\u0394Env using the XbaI-SbfI restriction sites.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>psPAX2</td>\n      <td>NIH AIDS Reagent Program</td>\n      <td>#11348</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>ATCC CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>ATCC CCL-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PF74</td>\n      <td>Sigma Aldrich</td>\n      <td>SML0835</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BI2</td>\n      <td>Enamine</td>\n      <td>Z1982491200</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs for production of viral particles\n\nThe proviral construct pNL4.3-iGFP-\u0394Env was generated as described previously (Aggarwal et al., 2012). It contains the open reading frame for eGFP flanked by protease cleavage sites inserted into the Gag gene between the coding sequences for MA and CA. In addition, it contains the SalI-BamHI fragment from HXB2, in which the start codon of the Env gene is mutated to a stop codon (TGA) to prevent expression of the envelope protein. The proviral construct pNL4.3-iGFP-CA E45A-\u0394Env containing an additional mutation to produce CA E45A was generated by subcloning a fragment with that mutation into pNL4.3-iGFP-\u0394Env using the XbaI-SbfI restriction sites. Constructs with PTAP to LIRL mutation in the late domain of Gag were generated by moving the SphI-SbfI fragment of a pNL4.3 construct with Gag-LIRL (courtesy of Eric Freed) into pNL4.3-iGFP-\u0394Env and into psPAX2. The second-generation lentiviral packaging plasmid psPAX2 (Cat# 11348, from Didier Trono) encoding the Gag, Pol, Rev, and Tat genes was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH.\n\n### Cell lines\n\nHEK-293T cells and HeLa cells were obtained from ATCC. Identity testing was carried out by PCR. Cell lines tested negative for mycoplasma.\n\n### Production, purification and biotinylation of viral particles\n\nViral particles were produced by transfecting HEK293T cells with a mixture of pNL4.3-iGFP-\u0394Env and psPAX2 (1.4:1, mol/mol) using polyethylenimine (PEI Max) reagent (Polysciences, 9002-98-6). The virus-containing medium was collected 48 hr post-transfection and centrifuged (2100 x g, 20 min, 4\u00b0C) to remove cells. Next, viral membrane proteins were biotinylated to allow immobilization of viral particles on surfaces. The biotinylation reagent EZ-Link Sulfo-NHS-LC-LC-Biotin (Thermo Scientific, 21338) was added to the virus-containing medium (~1 mg per 7 mL of medium) and the mixture was incubated for 90 min at 4\u00b0C. Biotinylated viral particles were then purified by size exclusion chromatography using a HiPrep 16/60 Sephacryl S-500 HR column (GE Healthcare) equilibrated with HBS (50 mM HEPES pH 7.5, 100 mM NaCl) and stored at 4\u00b0C for use within 7 days.\n\n### Counting of GFP-positive viral particles\n\nPTAP mutant virus was produced alongside WT pNL4.3-iGFP-\u0394Env as outlined in the methods above. To enumerate HIV particles per mL, 5 \u03bcL of each virus preparation was added to 45 \u03bcL of DMEM complete media and spinoculated onto poly-L-lysine-coated glass-bottom (175 \u03bcm thickness) 96-well plates (Greiner Sensoplate, Sigma) at 1200\u00a0\u00d7\u00a0g for 60 min at 4\u00b0C. GFP-positive particles were detected using an inverted Olympus IX-70 microscope equipped with a 60\u00a0\u00d7\u00a0oil immersion objective (1.42 NA), microtiter stage (DeltaVision ELITE Image Restoration Microscope, Applied Precision/Olympus) and Evolve 512 EMCCD camera (Photometrics). Four fields of view were acquired per sample and counted using a viral particle count algorithm developed in Cellprofiler (Broad Institute) based on intensity and size cut offs. Viral counts per mL in the initial sample were then calculated from the viral count per \u03bcm2 by taking the surface area of the well bottom and the initial sample volume into account. Means and standard deviations represent three independent viral counts.\n\n### Expression and purification of CypA\n\nHuman CypA was expressed using a pET expression vector in BL21 (DE3) E. coli grown in Luria-Bertani medium at 37\u00b0C with shaking. Protein expression was induced by addition of isopropyl \u03b2-D-thiogalactopyranoside to a final concentration of 1 mM, and the cells were grown for 3 hr at 37\u00b0C with shaking. Cells were harvested by centrifugation, resuspended in cold (4\u00b0C) lysis buffer (25 mM HEPES, pH 7.6, 1 mM DTT, 0.02% NaN3, supplemented with \u2018Complete\u2019 protease inhibitor and 1 mg mL\u22121 lysozyme) and lyzed by sonication on ice. The lysate was clarified by centrifugation (Thermo Fisher SS-34 rotor, 19,000 rpm, 30 min, 4\u00b0C). The supernatant was passed through a syringe filter (0.22 \u03bcm) and purified by anion exchange chromatography using a 10 mL HiTrap Q HP column (GE Healthcare Life Science, 17-1154-01) equilibrated with a buffer containing 25 mM HEPES, pH 7.6, 1 mM DTT, 0.02% NaN3. CypA eluted in the flow-through and fractions containing CypA were pooled and adjusted to a pH of 5.8 with 1% v/v acetic acid. After removal of aggregates by centrifugation (Sorvall SS34 rotor, 19,000 rpm, 1 hr, 4\u00b0C), the supernatant was applied to a cation exchange chromatography column (5 mL HiTrap SP HP, GE Healthcare Life Science, 17115201) equilibrated with a buffer containing 25 mM sodium phosphate, pH 5.8, 1 mM DTT, 0.02% NaN3 and CypA was eluted with a linear gradient from 0 to 1 M NaCl over 20 column volumes. Fractions containing purified CypA were dialyzed against CypA storage buffer (25 mM MOPS, pH 6.6, 1 mM DTT, 0.02% NaN3), concentrated using an Amicon-15 Ultra centrifugal filtration device (10 k MWCO, Merck, UFC901024) to a final concentration of 300 \u03bcM and frozen in liquid nitrogen for storage at \u221280\u00b0C. The yield was approximately 3 mg/g of cell mass.\n\n### Labeling of CypA\n\nCypA was labeled by reaction with a 4-fold molar excess of Alexa-Fluor 568-C5-maleimide (Thermo Fisher Scientific, A10254) in PBS (pH 7.4, 0.1 mM TCEP) for 10 min at room temperature. The reaction was quenched by addition of 1 M DTT to a final concentration of 17 mM. Labeled CypA was separated from unconjugated dye using Zeba desalting spin columns (Thermo Fisher Scientific, 89883) equilibrated with AF568-CypA storage buffer (50 mM Tris, pH 7.9, 20% v/v glycerol, 1 mM DTT). Under these conditions, CypA is quantitatively labeled at residue C51. CypA labeled at C51 binds in surface plasmon resonance measurements to immobilized CA or CA hexamers with the same affinity as unlabeled CypA. Labeled CypA was frozen in liquid nitrogen and stored at \u221240\u00b0C.\n\n### Negative staining transmission electron microscopy of viral particles treated with perfringolysin O\n\nRecombinant perfringolysin O was produced as described previously (Rossjohn et al., 1997). Viral particles purified by size exclusion chromatography were concentrated by 40-fold using Amicon Ultra-4 centrifugal ultrafiltration devices (Merck, UFC800324) and incubated with PFO at a final concentration of 0.5 \u03bcM at 37\u00b0C for 10 min in the presence of 0.1 mM inositol hexakisphosphate. A formvar/carbon grid (Ted Pella, 01801) was cleaned in a glow discharge unit and modified with Cell-Tak adhesive (0.05 mg mL\u22121, Corning, 354240). The grid was then incubated with a sample (5 \u03bcL) containing PFO-treated viral particles for 1 min at room temperature, and the solution was wicked away using filter paper. The sample was immediately stained twice with uranyl formate (1% w/v) and excess solution wicked away with filter paper. The grids were dried under a gentle stream of nitrogen gas and allowed to dry further overnight. The samples were imaged using a FEI Tecnai G2 20 Transmission Electron Microscope equipped with a BM Eagle digital camera. Diameters of the PFO pores were measured using ImageJ.\n\n### Fabrication and operation of microfluidic flow cells\n\nGlass coverslips were cleaned by sonication in ethanol for 30 min followed by sonication in 1 M NaOH for 30 min, rinsed with ultrapure water and dried. PDMS devices for assembly of microfluidic flow cells (channel height 60 \u03bcm, channel width 800 \u03bcm) were prepared using standard protocols for soft lithography. After treating the PDMS device and the coverslip with an air plasma inside a plasma cleaner for 3 min, the PDMS device was mounted on the coverslip and the assembled microfluidic flow cell was heated in an oven at 70\u00b0C for at least 15 min to improve bonding between the glass and the PDMS. The glass surface at the bottom of the microfluidic channels was then modified by adsorption of a co-polymer composed of poly-L-lysine (PLL) and biotinylated poly(ethylene glycol) (PEG) (Susos AG, PLL(20)-g[3.4]-PEG(2)/PEG(3.4)-biotin (20%)). A solution of PLL-PEG-biotin (1 mg mL\u20131 in PBS) was injected into the flow channels and incubated at room temperature for 30 min followed by flushing the channels with water and drying. The channels were then filled with a solution of streptavidin (Sigma-Aldrich, 0.2 mg mL\u20131 in blocking buffer containing 20 mM Tris pH 7.5, 2 mM EDTA, 50 mM NaCl, 0.03% NaN3, 0.025% Tween 20, 0.2 mg mL\u20131 BSA) for 15 min and rinsed with HBS pH 7.5. The microfluidic flow cell was mounted on the microscope stage and connected to tubing. Solutions were pulled through the channels at a flow rate of 100 \u03bcL min\u22121 (unless specified otherwise) using a syringe pump connected to the outlet tubing and operating in \u2018withdraw\u2019 mode.\n\n### TIRF microscopy assays\n\nBiotinylated viral particles in HBS (30\u2013100 \u03bcL) were flowed through the flow channel and captured on the modified coverslip surface. Unbound viral particles were washed out with 50 \u03bcL of HBS pH 7.5. TIRF microscopy assays were carried out with imaging buffer (50 mM HEPES pH 7.0, 100 mM NaCl), which was supplemented with an oxygen quenching system for dual colour experiments to reduce photobleaching (2 mM trolox, 2.5 mM protocatechuic acid, 0.25 U mL\u22121 protocatechuate-3,4-dioxygenase).\n\nImages were collected on a custom built TIRF microscope based around an ASI-RAMM frame (Applied Scientific Instrumentation) with a Nikon 100\u00a0\u00d7\u00a0CFI Apochromat TIRF (1.49 NA) oil immersion objective. Lasers were incorporated using the NicoLase system (Nicovich et al., 2017). Images were captured on two Andor iXon 888 EMCCD cameras (Andor Technology Ltd). 300 mm tube lenses were used to give a field of view of 88.68 \u03bcm\u00a0\u00d7\u00a088.68 \u03bcm. Alternatively, images were collected on a TILL Photonics TIRF microscope equipped with a Zeiss 100\u00a0\u00d7\u00a0Plan Apochromat (1.46 NA) oil immersion objective, solid state lasers for excitation, a beam splitter for simultaneous dual channel acquisition of fluorescence emission using two Andor iXon 897U EMCCD cameras for detection with a field of view of 46 \u03bcm\u00a0\u00d7\u00a046 \u03bcm.\n\n#### Capsid opening assay\n\nImaging buffer (30 \u03bcL) containing PFO (200 nM) was injected into the channel to initiate viral membrane permeabilization and TIRF images were acquired (488 nm laser, 20 ms exposure time) with a frequency of 1 frame s\u22121 for the initial phase of the reaction (typically 300\u2013500 frames) followed by a frequency of 0.1 frame s\u22121. The total duration of the experiment varied depending on the uncoating kinetics, lasting between 15 and 90 min, whereby the total number of frames was kept at 800\u2013900 frames.\n\n#### Capsid uncoating assay via painting with CypA\n\nImaging buffer (30 \u03bcL) containing PFO (200 nM) and Alexa Fluor 568-labeled CypA (1 \u03bcM) was injected into the flow channel. TIRF images were acquired sequentially for the different fluorophores (488 nm and 561 nm laser, 1\u20133 W cm\u22122 power density,~200 nm penetration depth, 20 ms exposure time) and a frequency of 1 frame s\u22121. The following equation was used for model fitting to obtain estimates for the dissociation constant and the number of molecules bound at saturation (Figure 3E): N(eq) = [CypA]\u00d7N(max) / ([CypA]+KD), where N(eq) is the number of molecules bound at equilibrium for a given CypA concentration, [CypA] is the concentration of CypA, N(max) is the number of molecules bound at saturation and KD is the dissociation constant.\n\n#### Protein-capsid interaction assay\n\nProtein binding was imaged (sequential acquisition, 488 nm and 561 nm laser, 20 ms exposure time, one frame s\u22121) after flowing imaging buffer (30 \u03bcL) containing PFO (200 nM) and different concentrations of Alexa Fluor 568-labeled CypA (0.1\u201320 \u03bcM) into the flow channel. Protein dissociation was imaged (561 nm laser, 20 ms exposure time, five frame s\u22121) after wash-out of labeled protein with imaging buffer.\n\n### Image analysis\n\nImages were analyzed with software written in MATLAB (The MathWorks, Inc.) adapted from previous work (B\u00f6cking et al., 2011). Images in the time series were aligned by cross-correlation to the first frame to correct for x/y-drift (Guizar-Sicairos et al., 2008). GFP-loaded viral particles appear as diffraction limited objects and were detected as local maxima in the first frame and their positions determined by Gaussian fitting. Overlapping particles were excluded from analysis. Fluorescence traces were calculated by integrating the fluorescence intensity in a 7\u00a0\u00d7\u00a07 pixel region for each channel. The fluorescence intensity for each object was corrected for background fluorescence determined from pixels in the vicinity of the object. Fluorescence traces were fitted with step traces to identify the presence and time of steps corresponding to permeabilization and capsid opening. Traces were automatically sorted into four classes on the basis of the following criteria: (1) loss of entire GFP signal in one step; (2) loss of GFP intensity in one large (permeabilization) and one small (capsid opening) step; (3) loss of the majority of the GFP signal in one step with residual GFP signal persisting for the rest of the experiment; (4) no permeabilization or otherwise uninterpretable traces (excluded from analysis). The assignment to classes was verified by visual inspection of traces. Capsid opening times were calculated for traces in class two as the time difference between permeabilization and capsid opening. The time of reagent addition (or reagent wash-out) was detected as an overall increase (or decrease) of the background fluorescence in the reagent channel. The number of bound AF568-CypA molecules was determined from the ratio of the AF568-CypA fluorescence intensity associated with the capsid at equilibrium to the fluorescence intensity of a single AF568-CypA molecule. The fluorescence intensity of the single fluorophore was determined from the quantal photobleaching step in photobleaching traces of AF568-CypA molecules adsorbed sparsely to the coverslip surface and imaged continuously.\n\n### Surface Plasmon resonance analysis of CypA binding to CA\n\n#### Biotinylation of CA\n\nCA K158C was expressed and purified using methods adapted from the literature (Hung et al., 2013) and biotinylated at the engineered cysteine residue using the following procedure. CA K158C was first assembled into tubes in high salt buffer (50 mM Tris pH 8, 2.5 M NaCl, 0.1 mM TCEP, 0.02% sodium azide), collected by centrifugation (18,000 g, 5 min) and the pellet was resuspended in high-salt buffer. This centrifugation/resuspension procedure was repeated another two times. Biotin maleimide (Sigma-Aldrich B-1267) was then added in a twofold molar excess to the resuspended CA K158C tubes, allowed to react for one min and quenched by the addition 2-mercaptoethanol to a final concentration of 50 mM. The biotinylated tubes were washed by two cycles of centrifugation and resuspension in high-salt buffer as above. Finally, the tubes were collected by centrifugation, resuspended in buffer without salt to induce disassembly, and biotinylated CA was buffer exchanged into SPR running buffer (10 mM HEPES pH 8, 0.005% Tween 20, 2 mM EDTA, 100 mM NaCl) using a Zeba gel filtration spin column.\n\n#### Biotinylation of cross-linked CA hexamers\n\nSoluble CA hexamers were assembled from CA A14C/E45C/W184A/M185A using a published protocol (Pornillos et al., 2010) and biotinylated using EZ-Link sulfo-NHS-LC-LC-biotin (Thermo Fisher Scientific, 21338). The biotinylation reagent was added at a twofold molar excess to CA hexamers in PBS (pH 7) and incubated at room temperature for 30 min. The reaction was stopped by buffer exchange into SPR running buffer using a Zeba gel filtration spin column.\n\n#### Surface chemistry and SPR measurements\n\nStreptavidin was immobilized on the surface of a CM5 sensor chip (GE Healthcare, BR100399) using the amine coupling kit (GE Healthcare, BR100050). A solution containing EDC (7.5 mg mL\u22121) and NHS (11.5 mg mL\u22121) was injected into the flow cells to activate the carboxyl groups followed by a solution containing streptavidin (0.5 mg mL\u22121) and finally ethanolamine (1 M) to block remaining activated carboxyl groups. All solutions were flowed through the channels for 7 min at a flow rate of 10 \u00b5L min\u22121. Finally, biotinylated CA K158Cor biotinylated CA hexamer were immobilized on the surface by injection a 2.5 \u00b5M solution for 30 s at a flow rate of 30 \u00b5L min\u22121. Flow channels modified with streptavidin were used as reference cells. CypA was buffer exchanged into SPR running buffer using a Zeba gel filtration spin column. CypA solutions at a range of concentrations (3.125\u2013100 \u00b5M) were flowed through the cells (20 s at a flow rate of 100 \u00b5L min\u22121) followed by a buffer wash (30 s at a flow rate of 100 \u00b5L min\u22121) while measuring the SPR response at a frequency of 40 Hz.\n\n### Preparation of cell lysate\n\nHeLa cells were washed with PBS, resuspended in lysis buffer (10 mM Tris-HCl, pH 8, 10 mM KCl, 1.5 mM MgCl2, protease inhibitor and phosphatase inhibitor), and incubated for 15 min at 4\u00b0C. Lysis was achieved by passing the cell suspension through a 30.5 g needle (130 strokes with cooling the sample on ice for 2 min at every 10th stroke). Cell lysis was verified by staining a sample of the lysate with trypan blue (added to a final concentration 0.2% w/v). The lysate was centrifuged (18,000 x g, 30 min, 4\u00b0C) to remove cell debris and protein levels in the supernatant were estimated from the absorbance at 280 nm. Lysate was frozen in liquid nitrogen and stored at \u221240\u00b0C.\n",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "7157b419-8131-409c-b749-7ed12fec6b57",
+      "submission_id": "696f10cd-d12a-4241-83f7-cfd040ae5e3a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wesley I Sundquist, University of Utah School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34772.020](https://doi.org/10.7554/eLife.34772.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Kinetics of HIV-1 capsid uncoating revealed by single-molecule analysis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Wes Sundquist as the Reviewing Editor and Wenhui Li as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Hans-Georg Kr\u00e4usslich.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nM\u00e1rquez et al. describe a novel single-molecule imaging approach for visualizing HIV-1 capsid uncoating. Capsid uncoating after cell entry is still enigmatic and hotly debated in the field, and no clear picture exists, so the manuscript represents a timely contribution. The authors demonstrate that virus particles engineered to encapsidate the fluorescent marker GFP can be immobilized on a coverslip and then efficiently permeabilized with a bacterial pore-forming protein. Importantly, the authors demonstrate that the permeabilization process does not completely disrupt the lipid envelope and that the viral cores are retained inside the partially disrupted membrane. The authors are then able to use loss of GFP signals to discern 3 subpopulations of viral cores \u2013 leaky, opening, or closed. To demonstrate the utility of their assay, the authors analyze the core populations over time in the presence or absence of a variety of co-factors or CA mutations previously published to have either positive or negative effects on core stability. These initial experiments quantified the kinetics of GFP release (i.e., \"capsid opening\") over time. Using this readout, the authors recapitulate the expected effects of the different cofactors and the stabilizing E45A mutation on core stability.\n\nIn the second half of the manuscript, the authors describe another technical advance in which they use fluorescent-labelled CypA binding (CypA \"paint\") to characterize the kinetics of lattice disassembly (i.e., the fate of the bulk lattice following core opening). The authors use this approach to discern the mechanisms of action of PF74 and hexacarboxybenzene on virion cores. Interestingly, the authors find that while PF74 increases the rate of core opening, the capsid lattice remains intact. Hexacarboxybenzene, on the other hand, slows core opening considerably, but lattice integrity is rapidly compromised once core opening does occur. Finally, the authors demonstrate that their assay is compatible with analyses of the effects of cell lysate, which they find slows capsid opening.\n\nThis study represents a significant technical advance in the biochemical analysis of HIV-1 uncoating, the study makes nice use of several relevant small molecules, and the imaging and quantification of large numbers of individual events (rather than bulk studies or following just a few particles inside cells) adds significantly to our understanding and may help to clarify outstanding issues. The experiments are generally well executed, but several aspects need to be clarified or controlled.\n\nSignificant Issues that need to be addressed:\n\n1) The text refers to immobilized viral particles, but the preparation, as described, will not clearly separate virus-like particles from membrane vesicles (and both of these species will be biotinylated and captured). Accordingly, the immobilized objects may be a mixture, although the virus-like particles should, at least in principle, have greater GFP fluorescence (incorporated via Gag). However, the permeabilized particles, as seen in the EM images, seem rather large for an HIV particle preparation (it's difficult to measure on the image, but some appear to be >200nm). It is therefore not clear what fraction of these objects are HIV and what fraction are vesicles (and if vesicles are present and being scored, then these would presumably lead an over estimate of the fraction of leaky capsids). The basic experiment should therefore be repeated with viron preparations that have been treated with subtilisin (to remove any vesicles). It is also a bit puzzling why conical capsids are not visible by negative staining inside the permeabilized virus-like particles. The authors should also report the GFP intensity variation in the initial fields of particles.\n\n2) The major part of the manuscript serves to describe and validate the assay. This sometimes reads a bit like a circular argument. As there is no direct proof that the signals remaining are indeed intact or partially disassembled capsids (in the absence of direct visualization by e.g. EM), the authors correctly use other tools to validate what they are (i.e. stabilizing molecules or stabilizing mutations etc). This is appropriate, but should then not be used to say that observations confirm these effects. If a known feature is used to validate the assay, observing the expected phenotype does not confirm the feature. Accordingly, the majority of the figures serve to validate the assay and its implications for capsid opening and disassembly. This is fine, but should be stated more clearly.\n\n3) The authors argue for the biological relevance of the subset of capsids that uncoat with some delay are relevant, whereas those that fail to uncoat over the time period would be too stable. However, we really don\u00b4t understand the role of the host cell environment, so this seems an overstatement. The experiment with diluted HeLa cytoplasmic extract is a nice initial result, but this is not a relevant cell type and the appropriate host factors may not be present at the correct levels (to say nothing of potential changes with cell type, cellular substructures such as microtubule motor forces, etc.).\n\nOther issues for the author's consideration:\n\n1) Subsection \u201cSingle-particle fluorescence imaging of capsid opening\u201d, first paragraph, the statement that PFO-mediated permeabilization mimics some aspects of viral fusion seems a bit reaching. While the system described in the manuscript is very nice, introducing (defined) holes into a membrane is rather removed from the process of viral fusion. It doesn't add anything significant to the paper, so the authors may consider removing the statement.\n\n2) Can the k1 and k2 curves, in addition to the Figure 2B sum plots, be reported (or at least report the fractions of particles in the \"fast\" and \"slow\" decay time populations)?\n\n3)Please justify with a more detailed calculation the statement that \"This fraction was consistent with the amount of GFP expected to be randomly trapped inside the volume of the capsid (relative to the volume of the viral particle) during maturation.\"\n\n4) There is no callout to Figure 3F. Should this, and callouts to Figure 3 figure supplements, belong in the last paragraph of the subsection \u201cKinetics of protein binding to intact HIV capsids\u201d?\n\n5) Discussion, seventh paragraph. Please provide citation(s) after Nup153.\n\n6) Subsection \u201cLabeling of CypA\u201d. Please indicate whether you verified that CypA, labelled at C51, binds CA with the same affinity as unlabeled CypA.\n\n7) The bibliography needs to be cleaned up \u2013 at least 5 citations lack volume/ page indicators. In addition, several of the references in the Introduction should be updated with more recent references.\n\n8) Throughout the manuscript, virus-like particles carrying GFP within the Gag polyproteins are used. While this may not influence mature capsid formation or stability, this possibility should at least be acknowledged.\n\n9) The authors refer in various parts to binding to the CA monomer vs. hexamer, but CA at the indicated concentrations would be a dimer (unless constructed to form the hexamer).\n\n10) It makes sense to use PF74 at the relatively high concentration, where it is supposed to affect capsid integrity, but it would also be informative if this experiment were performed at the low concentration, where others have argued that the compound only affects cofactor binding without disturbing capsid architecture.\n\n11) Subsection \u201cKinetics of protein binding to intact HIV capsidsKinetics of protein binding to intact HIV capsids\u201d, last sentence, should read \"CA\" rather than \"CypA\".\n\nAdditional statistical issues:\n\n1) Although some datasets harbor error bars, the paper does a rather poor job describing numbers of biological replicates (independent experiments) and technical replicates (number of replicates within individual experiments). Although single-molecule datasets comprise many individual measurements, biological replicates surely still apply. The easiest way to supply this transparency would be to state in the figure legends how many replicates were done.\n\n2) Figure 2A lacks error bars, and thus may be representative of one of x number of replicates (as mentioned, please supply such info). Also, please define error bars (SEM, SD, etc).\n\n3) The paper lacks statistical considerations of results differences. For example, is the influence of 20 \u03bcM CypA in Figure 2C significant? It would seem that something like a t test analysis will readily address this question. Authors should more comprehensively analyze results statistically.\n",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48af4125-1408-47cb-ad10-c2af077ccf95",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C1",
+      "claim": "HIV-1 capsid comprises 1000\u20131500 copies of a single viral protein, CA.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV capsid comprises 1000\u20131500 copies of a single viral protein, CA, corresponding to less than half of the total CA released by proteolytic processing of the Gag polyprotein during maturation (Briggs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Briggs et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "12ece547-f855-4ddb-ba55-a0967ed39467",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C2",
+      "claim": "CA incorporated into the capsid corresponds to less than half of the total CA released by proteolytic processing of the Gag polyprotein during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV capsid comprises 1000\u20131500 copies of a single viral protein, CA, corresponding to less than half of the total CA released by proteolytic processing of the Gag polyprotein during maturation (Briggs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Briggs et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d5059009-0f1b-4492-8ed8-d220a3b73215",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C3",
+      "claim": "CA is a two-domain protein which can form both hexameric and pentameric assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "CA is a two-domain protein, which can form both hexameric and pentameric assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about CA protein structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "05fe9d9c-7678-411f-af70-0a98da92889c",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C4",
+      "claim": "The conical capsid is a fullerene structure which incorporates 12 pentamers into the otherwise hexameric lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The conical capsid is a fullerene structure, which incorporates 12 pentamers into the otherwise hexameric lattice, a geometric constraint that must be satisfied in order to achieve capsid closure (Li et al., 2000; Pornillos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2000 and Pornillos et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "c9f6ef84-75ed-4d0c-a1fd-9fc3704b4d6d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C5",
+      "claim": "Incorporation of 12 pentamers is a geometric constraint that must be satisfied in order to achieve capsid closure.",
+      "claim_type": "EXPLICIT",
+      "source": "The conical capsid is a fullerene structure, which incorporates 12 pentamers into the otherwise hexameric lattice, a geometric constraint that must be satisfied in order to achieve capsid closure (Li et al., 2000; Pornillos et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2000 and Pornillos et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8caab678-2825-4df3-8ae7-7c3bf3e76801",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C6",
+      "claim": "HIV capsids have an average length of 119 nm and an average width of 61 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, capsids have a conical shape with an average length of 119 nm and an average width of 61 nm (Briggs et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Briggs et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "951b7c9c-ac45-4776-b510-6ca88fd2c1cd",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C7",
+      "claim": "A large fraction of viral particles contain 'defective' capsids which do not have closed surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large fraction of viral particles contain 'defective' capsids, which do not have closed surfaces (Frank et al., 2015; Mattei et al., 2016; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Frank et al., 2015; Mattei et al., 2016; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5d0e770f-2694-4e3d-a350-946db74dc5a8",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C8",
+      "claim": "GFP-positive particles released from HEK293T cells decreased by 99.7% when viral release was blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of GFP-positive particles in the cell supernatant decreased by 99.7% when viral release was blocked (Figure 1B), confirming that essentially all GFP-positive particles released in the absence of the block represent viral particles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5c4c6f52-09ea-4ba3-85d9-dee9e78e1cc5",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C9",
+      "claim": "Essentially all GFP-positive particles released in the absence of the block represent viral particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of GFP-positive particles in the cell supernatant decreased by 99.7% when viral release was blocked (Figure 1B), confirming that essentially all GFP-positive particles released in the absence of the block represent viral particles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the 99.7% decrease when release is blocked",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "25a02e64-defd-4ed6-9f63-0ad9a9c12792",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C10",
+      "claim": "PFO efficiently permeabilized the viral membrane by assembling into characteristic ring-shaped membrane pores with a mean pore diameter of about 35 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "PFO efficiently permeabilized the viral membrane by assembling into characteristic ring-shaped membrane pores with a mean pore diameter of about 35 nm (Figure 1D and E), consistent with its activity on cholesterol-containing membranes (Dang et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1D and E and citation to Dang et al., 2005",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "92bf210f-ee67-4ad3-a2e9-d1f36d020b44",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C11",
+      "claim": "PFO pores are sufficiently large to permit the passage of proteins while the viral core is retained within the perforated viral membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These pores are sufficiently large to permit the passage of proteins while the viral core is retained within the perforated viral membrane allowing the core to be observed over time while it can undergo disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the pore size of ~35 nm and the ability to observe cores over time",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "2f62ea94-1892-48c6-969c-d1c536683eeb",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C12",
+      "claim": "The mean fraction of encapsidated GFP is approximately 13%.",
+      "claim_type": "EXPLICIT",
+      "source": "This fraction was consistent with the amount of GFP expected to be randomly trapped inside the volume of the capsid (relative to the volume of the viral particle) during maturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "2340ee4a-b2c6-4df6-8933-5adf638eea89",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C13",
+      "claim": "The fraction of encapsidated GFP is consistent with the ratio of the volume inside the capsid to the total volume of the viral particle (16%).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean fraction of encapsidated GFP is ~13%, similar to the ratio of the volume inside the capsid to the total volume of the viral particle (16%), which was estimated on the basis of the following considerations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calculation and data in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5c4b9a6c-728f-4926-85d7-92e965f0f38b",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C14",
+      "claim": "Leaky capsids constituted the largest fraction of particles (60\u201380%), irrespective of which type of capsid-binding molecules were present in the solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Leaky capsids constituted the largest fraction of particles (60\u201380%), irrespective of which type of capsid-binding molecules were present in the solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d3d35ce6-7313-4620-89c9-87c9f508f07f",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C15",
+      "claim": "The half-life of capsid opening in the absence of capsid-binding molecules is 8 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival curve of intact capsids (i.e. those that remain positive for encapsidated GFP) exposed to buffer without additives could be approximated with an exponential decay function (Figure 2B, black lines and Figure 2\u2014source data 1) yielding an estimate for the capsid half-life of 8 min (Figure 2C), which is similar to a previous estimate of 10 min for the half-life of capsid uncoating in vitro (Francis et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2B and 2C, and citation to Francis et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "2ad61f7b-7fda-4760-9641-2dd25c4ef333",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C16",
+      "claim": "A sub-population of capsids (~20%) opened with a half-life of less than 1 minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting a bi-exponential decay made it possible to quantify a sub-population of capsids (~20%) that were substantially less stable and opened with a half-life of less than 1 min (Figure 2B, dashed grey line and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bi-exponential fitting of data in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "47824217-6251-453a-96f2-3f59ee5f1758",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C17",
+      "claim": "The E45A mutation in CA yields hyperstable capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate that the GFP release kinetics depend on capsid stability, we assessed the effect of the E45A mutation in CA on capsid opening. This mutation is known to yield hyperstable capsids (Forshey et al., 2002; Yang et al., 2012), which was also apparent in our capsid opening assay with a 4.5-fold increase in half-life compared to capsids assembled from wild-type CA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Forshey et al., 2002; Yang et al., 2012 and experimental data in Figure 2C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "cc2d03de-d40e-4aa9-a2ed-a2ffef98fc55",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C18",
+      "claim": "CA E45A mutation results in a 4.5-fold increase in capsid opening half-life compared to wild-type CA.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation is known to yield hyperstable capsids (Forshey et al., 2002; Yang et al., 2012), which was also apparent in our capsid opening assay with a 4.5-fold increase in half-life compared to capsids assembled from wild-type CA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "74c0da35-e7b7-478a-8974-1a1cb512f530",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C19",
+      "claim": "CypA at 1 \u03bcM had no effect on capsid half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay, CypA had no effect on capsid half-life when added at a concentration of 1 \u03bcM and lead to an approximately two-fold increase in half-life at 20 \u03bcM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "11d7e798-f1d0-4ce8-aac4-8b5ab51a6683",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C20",
+      "claim": "CypA at 20 \u03bcM leads to an approximately two-fold increase in capsid half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay, CypA had no effect on capsid half-life when added at a concentration of 1 \u03bcM and lead to an approximately two-fold increase in half-life at 20 \u03bcM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "70589b89-45af-4969-af16-cd4f2b9d4512",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C21",
+      "claim": "PF74 accelerates capsid opening with a half-life of 41 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of these inhibitors to the capsid opening assay at high concentrations within the range typically used in cellular and biochemical assays revealed an increase in the ratio of opening to closed particles after 30 min (Figure 2A) and a pronounced acceleration of capsid opening with half-lives of 41 s and 2.4 min, respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2A and 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "7283b8d9-0a5e-473c-824b-2e19663a0149",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C22",
+      "claim": "BI2 accelerates capsid opening with a half-life of 2.4 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of these inhibitors to the capsid opening assay at high concentrations within the range typically used in cellular and biochemical assays revealed an increase in the ratio of opening to closed particles after 30 min (Figure 2A) and a pronounced acceleration of capsid opening with half-lives of 41 s and 2.4 min, respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2A and 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ebace11c-3360-40e5-abb9-cbabc3434dfe",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C23",
+      "claim": "Hexacarboxybenzene strongly inhibits capsid opening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the small molecule hexacarboxybenzene (C6(COOH)6), which binds to hexameric CA (Jacques et al., 2016), showed the opposite effect by strongly inhibiting capsid opening (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2A and citation to Jacques et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "eeb23a66-3d2b-4f11-98c5-9d71a52d0cae",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C24",
+      "claim": "The half-lives of capsids in the presence of 10 and 1000 \u03bcM hexacarboxybenzene were estimated to be in the order of 1 hr and 10 hr, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "There was an insufficient number of opening events to allow a robust fit of the survival curves but we estimated that the half-lives in the presence of 10 and 1000 \u03bcM hexacarboxybenzene were in the order of 1 hr and 10 hr, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimated from limited data due to insufficient opening events",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ebfefdd8-11cd-4abc-93e7-bcb548cfa657",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C25",
+      "claim": "CypA binding to the capsid is completely abolished in the presence of cyclosporin A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, binding of CypA was completely abolished in the presence of the competitive inhibitor cyclosporin A, which binds to the binding pocket on CypA (Figure 3C, bottom panels) (Mikol et al., 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3C and citation to Mikol et al., 1993",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ed3c33ea-e424-48d4-9633-4fb4d7f3287d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C26",
+      "claim": "The dissociation constant (KD) for the CypA-capsid interaction is 10\u201312 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the equilibrium binding levels gave an estimate of the KD of 10\u201312 \u03bcM with an estimated 500\u20131000 molecules bound per capsid at saturation (Figure 3E and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3E and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5c3ff434-05a4-4567-b1f3-e29b111a71a9",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C27",
+      "claim": "An estimated 500\u20131000 CypA molecules are bound per capsid at saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the equilibrium binding levels gave an estimate of the KD of 10\u201312 \u03bcM with an estimated 500\u20131000 molecules bound per capsid at saturation (Figure 3E and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3E and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6f748dc0-0787-453b-b76b-b3102ce4ba60",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C28",
+      "claim": "The number of CypA binding sites represents roughly half of the number of CA proteins in an assembled capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "This number of sites represents roughly half of the number of CA proteins in an assembled capsid (Briggs et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the estimated 500-1000 binding sites and citation to Briggs et al., 2003",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d6bd0317-4c45-4d99-86de-314ed45d2583",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C29",
+      "claim": "The expected CypA:CA ratio at saturation is 1:2.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected CypA:CA ratio at saturation is also 1:2, because binding to both cyclophilin loops of CA molecules connecting neighboring hexamers in the lattice would lead to steric clashes (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2016 and inference about steric clashes",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "248cfb3a-6dad-451e-8679-b4d3fec466b7",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C30",
+      "claim": "The lattice is completely coated with CypA at saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the lattice is completely coated with CypA at saturation, and that binding sites on different locations of the capsid are equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the 1:2 CypA:CA ratio and the number of binding sites",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "edce6716-6433-431c-b69a-028e6d70c384",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C31",
+      "claim": "Binding sites on different locations of the capsid are equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the lattice is completely coated with CypA at saturation, and that binding sites on different locations of the capsid are equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the binding data showing uniform saturation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "f341d97c-732e-4c73-8741-1c959b45eb7b",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C32",
+      "claim": "The majority of CypA fluorescence signal (85%) disappeared rapidly with a rate of 1.5 s\u22121 after removal from solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the fluorescence signal (85%) disappeared rapidly with a rate of 1.5 s\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8a8925ca-0d07-4f07-a01a-9472d8d18eb0",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C33",
+      "claim": "The off-rate of CypA measured may be limited by mass transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate was close to the rate of solution exchange achievable in our microfluidic set-up, such that the off-rate of CypA measured here may be limited by mass transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of measured rate to solution exchange rate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "fda51cba-c10f-4440-9f14-aa3e626ea8e7",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C34",
+      "claim": "SPR measurements gave a KD of 21.8 \u03bcM for CypA interaction with immobilized CA.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium binding analysis of the SPR data gave a KD of 21.8 \u03bcM and 19 \u03bcM for interaction with immobilized CA (consistent with previous data [Yoo et al., 1997]) and CA hexamer (Figure 3\u2014figure supplement 3), respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SPR data in Figure 3\u2014figure supplement 3 and citation to Yoo et al., 1997",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "e10ff799-6023-4bb0-a6b2-a582a6c259d8",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C35",
+      "claim": "SPR measurements gave a KD of 19 \u03bcM for CypA interaction with CA hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium binding analysis of the SPR data gave a KD of 21.8 \u03bcM and 19 \u03bcM for interaction with immobilized CA (consistent with previous data [Yoo et al., 1997]) and CA hexamer (Figure 3\u2014figure supplement 3), respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SPR data in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "fd306fa4-a0cc-4619-8e8d-0bf1a937e34f",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C36",
+      "claim": "The off-rates for CypA from CA and CA hexamer determined by SPR were 4 \u00b1 0.3 s\u22121 and 3.5 \u00b1 0.4 s\u22121, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "while the off-rates determined after removal of CypA from solution were 4 \u00b1 0.3 s\u22121 and 3.5 \u00b1 0.4 s\u22121, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SPR measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "898b0f92-3617-4172-af1f-35ebdb7eb330",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C37",
+      "claim": "CypA binding does not have a measurable effect on capsid opening when used at concentrations of up to 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, CypA binding does not have a measurable effect on capsid opening when used at concentrations of up to 1 \u03bcM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "9ae2f716-2864-4a4a-833c-c3eb5943402a",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C38",
+      "claim": "CypA binds (and dissociates) with fast rates to binding sites all over the surface of the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, CypA binds (and dissociates) with fast rates to binding sites all over the surface of the lattice (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "9440aaaa-99c6-49a7-a077-3b613097380e",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C39",
+      "claim": "Particles with leaky capsids contain a CA lattice that is poised to fall apart and only persists for a short period of time before disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpreted this signal as follows: particles with leaky capsids contain a CA lattice that is poised to fall apart and only persists for a short period of time before disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of CypA paint data for leaky capsids",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8ddfbb76-e4eb-463a-8bfe-073de685c48f",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C40",
+      "claim": "The median disassembly kinetics after capsid opening were governed by a half-life of approximately 70\u2013100 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The median disassembly kinetics after capsid opening (Figure 4E, right heatmap) were governed by a half-life of approximately 70\u2013100 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "09f49d21-cace-48c7-8bd1-86ca07cd3523",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C41",
+      "claim": "Capsid opening is the rate-limiting step for capsid uncoating.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that capsid opening is the rate-limiting step for capsid uncoating, and lattice disassembly will proceed rapidly once the capsid has developed the first defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that disassembly proceeds rapidly after opening",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "0c19569e-6d2a-4649-8a01-4cf67f45b558",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C42",
+      "claim": "Lattice disassembly will proceed rapidly once the capsid has developed the first defect.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that capsid opening is the rate-limiting step for capsid uncoating, and lattice disassembly will proceed rapidly once the capsid has developed the first defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the rapid disassembly kinetics observed after opening",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "90b70522-f054-44d8-9f36-97c218d8cc48",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C43",
+      "claim": "In the presence of PF74, no decrease in the CypA paint signal was observed after capsid opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in the presence of PF74, we observed no decrease in the CypA paint signal after capsid opening (Figure 5B, right heatmap).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "f7a7a53f-63fc-4bcd-8ef4-dd09bd539d06",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C44",
+      "claim": "PF74 stabilizes the lattice such that no (further) CA proteins are released from the lattice after opening.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the lattice develops a defect to allow the passage of proteins but is otherwise highly stabilized such that no (further) CA proteins are released from the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the constant CypA paint signal after opening in the presence of PF74",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "87b9b2a7-692d-4168-b88d-ae7c070fffe6",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C45",
+      "claim": "The amount of CA protein lost during the opening step in the presence of PF74 was below the limit of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of CA protein lost during the opening step was below the limit of detection in our assay (compare the CypA paint intensity histograms before and after capsid opening, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6d10a15c-f0af-49a7-9451-7ea3d778cc34",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C46",
+      "claim": "Hexacarboxybenzene only had a modest stabilizing effect on the CA lattice after capsid opening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the strong stabilization observed with PF74, hexacarboxybenzene only had a modest stabilizing effect on the CA lattice after capsid opening, as seen from the CypA paint signal decay from that point onwards (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "aabfcc98-558a-4eef-a117-11d8f655172f",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C47",
+      "claim": "PF74 promotes a structural change leading to a defect in the capsid that allows passage of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that while PF74 promotes a structural change leading to a defect in the capsid that allows passage of proteins, only little (if any) CA protein is lost during this step, and the remaining lattice is highly stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that PF74 accelerates opening but stabilizes the remaining lattice",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "01a35939-633b-4fb9-9e3a-8a56dc44c95d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C48",
+      "claim": "Only little (if any) CA protein is lost during the PF74-induced opening step.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that while PF74 promotes a structural change leading to a defect in the capsid that allows passage of proteins, only little (if any) CA protein is lost during this step, and the remaining lattice is highly stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the CypA paint data showing no decrease in signal",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6adc4595-3041-43bc-9139-aface1de26fc",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C49",
+      "claim": "The remaining lattice is highly stabilized after PF74-induced opening.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that while PF74 promotes a structural change leading to a defect in the capsid that allows passage of proteins, only little (if any) CA protein is lost during this step, and the remaining lattice is highly stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the constant CypA paint signal after opening",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "b9e31be1-86a0-4247-b153-be1e310f4455",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C50",
+      "claim": "Hexacarboxybenzene strongly inhibits capsid opening but has little effect on uncoating once the process has started.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hexacarboxybenzene strongly inhibits capsid opening but has little effect on uncoating once the process has started.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the delayed opening but continued disassembly in the presence of hexacarboxybenzene",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "1ee6f374-3caf-4cef-87ea-76cd3b665155",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C51",
+      "claim": "Cell lysate slows capsid opening with a four-fold increase in the half-life of this process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, capsid opening was slowed down with a four-fold increase in the half-life of this process (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "885b158d-7f0f-454f-a65f-cf0ba0399a1a",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C52",
+      "claim": "The number of CypA molecules bound on intact (closed) capsids at equilibrium in the presence of cell lysate was comparable to that measured in buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of CypA molecules bound on intact (closed) capsids at equilibrium was comparable to that measured in buffer (Figure 3\u2014figure supplement 1), indicating that there was no competition with endogenous CypA due to the high dilution factor used in this experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "2e6c9bb1-09c5-45af-b65f-49ee69182bd2",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C53",
+      "claim": "There was no competition with endogenous CypA in cell lysate due to the high dilution factor used.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of CypA molecules bound on intact (closed) capsids at equilibrium was comparable to that measured in buffer (Figure 3\u2014figure supplement 1), indicating that there was no competition with endogenous CypA due to the high dilution factor used in this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparable binding levels in buffer and lysate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "a6310509-dbac-48aa-a1b8-4239acee641d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C54",
+      "claim": "The process of uncoating in diluted cell lysate is in principle the same as in buffer, with the lattice falling apart shortly after it had opened up, albeit with a slightly reduced rate.",
+      "claim_type": "EXPLICIT",
+      "source": "CypA paint revealed that the process of uncoating in diluted cell lysate was in principle the same as is buffer, with the lattice falling apart shortly after it had opened up, albeit with a slightly reduced rate (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 6D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "3a6893a0-b8a2-4790-bdf8-545c04ce09f0",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C55",
+      "claim": "The stabilizing effect exerted by the diluted cell lysate is consistent with previous observations.",
+      "claim_type": "EXPLICIT",
+      "source": "The stabilizing effect exerted by the diluted cell lysate is consistent with previous observations (Francis et al., 2016; Fricke et al., 2013; Guth and Sodroski, 2014), and it may be amplified when components are present at cytosolic concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Francis et al., 2016; Fricke et al., 2013; Guth and Sodroski, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6c9e8fdd-0cf0-4526-beb6-b7deba7f5254",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C56",
+      "claim": "The stabilizing effect of cell lysate may be amplified when components are present at cytosolic concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The stabilizing effect exerted by the diluted cell lysate is consistent with previous observations (Francis et al., 2016; Fricke et al., 2013; Guth and Sodroski, 2014), and it may be amplified when components are present at cytosolic concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the effect at higher concentrations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8a8b010d-f21f-4adf-bade-0c417a10245d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C57",
+      "claim": "Opening of the first defect in the lattice is the rate-limiting step of uncoating.",
+      "claim_type": "EXPLICIT",
+      "source": "Opening of the first defect in the lattice is the rate-limiting step of uncoating, which is followed by rapid, catastrophic collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of rapid disassembly after opening",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "77b14fdd-df30-435f-b694-87818f00b2d9",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C58",
+      "claim": "Capsid opening is followed by rapid, catastrophic collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Opening of the first defect in the lattice is the rate-limiting step of uncoating, which is followed by rapid, catastrophic collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of rapid disassembly kinetics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ef04ab1b-33b9-423e-befd-42d37d8fbf02",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C59",
+      "claim": "The capsid-binding inhibitor PF74 accelerates capsid opening but stabilizes the remaining lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The capsid-binding inhibitor PF74 accelerates capsid opening but stabilizes the remaining lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing accelerated opening and stable CypA paint signal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "a4999cc3-6272-47a0-9ada-6f88f9f7c2e4",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C60",
+      "claim": "Binding of a polyanion to a conserved arginine cluster in the lattice strongly delays initiation of uncoating but does not prevent subsequent lattice disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, binding of a polyanion to a conserved arginine cluster in the lattice strongly delays initiation of uncoating but does not prevent subsequent lattice disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with hexacarboxybenzene",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "96004d12-1790-44ac-a8cf-ee24c6f8551a",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C61",
+      "claim": "Different stages of uncoating can be controlled independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that different stages of uncoating can be controlled independently with the interplay between different capsid-binding regulators likely to determine the overall uncoating kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of PF74 and hexacarboxybenzene on opening vs. disassembly",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d15e39bc-04c4-4090-bad8-3e98500b6412",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C62",
+      "claim": "The interplay between different capsid-binding regulators is likely to determine the overall uncoating kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that different stages of uncoating can be controlled independently with the interplay between different capsid-binding regulators likely to determine the overall uncoating kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the observed differential effects of different binders",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ef2d42c7-e06a-43f3-9a54-9e819cd05786",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C63",
+      "claim": "The capsid plays a key role in HIV infection processes and is critical for successful infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We now know that the capsid plays a key role in these processes and is critical for successful infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge in HIV biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "3e740c3f-77ec-48eb-90bf-3c969c9227b2",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C64",
+      "claim": "The capsid acts as a shield to protect the viral genomic material from pattern recognition and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "It not only acts as a shield to protect the viral genomic material from pattern recognition and degradation (Lahaye et al., 2013; Rasaiyaah et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahaye et al., 2013; Rasaiyaah et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "92488173-337b-4725-8c49-a200b53d4d5f",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C65",
+      "claim": "The capsid is thought to facilitate reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "but is also thought to facilitate reverse transcription (Jacques et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacques et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "14479786-f902-425c-95e2-35c664330d07",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C66",
+      "claim": "The capsid engages with the nuclear pore complex.",
+      "claim_type": "EXPLICIT",
+      "source": "engage with the nuclear pore complex (Burdick et al., 2017; Dharan et al., 2016; Matreyek et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burdick et al., 2017; Dharan et al., 2016; Matreyek et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "f0981429-ea78-429a-9eb1-dee239db8f31",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C67",
+      "claim": "The capsid directs integration site targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "and direct integration site targeting (Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "b489926b-0dd8-4a61-91e1-559f09c3335d",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C68",
+      "claim": "The capsid must interact with host proteins and small metabolites to achieve its proposed functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to achieve many of these proposed functions, the capsid must interact with host proteins and small metabolites, as well as disassemble to release the viral DNA at the appropriate place and time (Campbell and Hope, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Campbell and Hope, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "e925db69-14b8-4cff-b15c-49f829853d24",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C69",
+      "claim": "The capsid must disassemble to release the viral DNA at the appropriate place and time.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to achieve many of these proposed functions, the capsid must interact with host proteins and small metabolites, as well as disassemble to release the viral DNA at the appropriate place and time (Campbell and Hope, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Campbell and Hope, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "7860ddb0-60b7-4de2-95c1-b234ee9d91dd",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C70",
+      "claim": "Cyclophilin A (CypA) binds to the cyclophilin binding loop of CA exposed on the exterior of the capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclophilin A (CypA) is a host cell protein that binds to the cyclophilin binding loop of CA exposed on the exterior of the capsid (Gamble et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gamble et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "c4ad5c02-1654-422d-bf8e-af32901237e9",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C71",
+      "claim": "The CypA-capsid interaction is thought to control capsid stability after cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "and this interaction is thought to control capsid stability after cell entry (Shah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shah et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5b9108f6-2262-46a2-93a8-6dae9ec20c73",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C72",
+      "claim": "PF74 and BI2 bind to hexameric CA and inhibit HIV infection at an early post-fusion event.",
+      "claim_type": "EXPLICIT",
+      "source": "The small molecules PF74 and BI2 bind to hexameric CA and inhibit HIV infection at an early post-fusion event (Bhattacharya et al., 2014; Blair et al., 2010; Lamorte et al., 2013; Price et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhattacharya et al., 2014; Blair et al., 2010; Lamorte et al., 2013; Price et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d3fbec0f-0f2f-4ad1-8e4b-c8d19f01f611",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C73",
+      "claim": "Hexacarboxybenzene binds to hexameric CA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the small molecule hexacarboxybenzene (C6(COOH)6), which binds to hexameric CA (Jacques et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacques et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "0be1d26c-6b8a-47cc-887a-84b8c889d953",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C74",
+      "claim": "The CA lattice has enhanced stability as long as it forms a closed surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our observations suggest that the CA lattice has enhanced stability as long as it forms a closed surface, as predicted from coarse-grained simulations of capsid lattice disassembly (Grime et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations and supported by citation to Grime et al., 2016",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "75c38aaf-23ad-4c12-aae3-2bde6513fbf2",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C75",
+      "claim": "Appearance of a local defect leads to catastrophic failure of the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Appearance of a local defect leads to catastrophic failure of the lattice whereby the defect could rapidly propagate via dissociation of CA subunits that are no longer stabilized by dimer and/or trimer interfaces linking neighboring hexamers in the lattice (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental observations and illustrated in Figure 7",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "c675941b-6532-40c0-9692-0f7f04c88009",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C76",
+      "claim": "The defect could rapidly propagate via dissociation of CA subunits that are no longer stabilized by dimer and/or trimer interfaces linking neighboring hexamers in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Appearance of a local defect leads to catastrophic failure of the lattice whereby the defect could rapidly propagate via dissociation of CA subunits that are no longer stabilized by dimer and/or trimer interfaces linking neighboring hexamers in the lattice (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the rapid disassembly kinetics and illustrated in Figure 7",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "22d41b05-367e-4102-b7e0-19e72a384e13",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C77",
+      "claim": "The interactions between subunits in a hexamer (or pentamer) represent a weak link in the CA lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The interactions between subunits in a hexamer (or pentamer) represent a weak link in the CA lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effects of hexacarboxybenzene and PF74",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "3433b4e5-a11a-40db-a434-e920af5a32e2",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C78",
+      "claim": "Hexacarboxybenzene stabilizes the hexamer by binding in its central electropositive pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexacarboxybenzene stabilizes the hexamer by binding in the its central electropositive pore (Jacques et al., 2016), leading to an increase in the energy barrier for dissociation of the first CA molecule(s), but only if the surrounding lattice is intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jacques et al., 2016 and inferred from experimental observations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "a9571d05-f7cb-44ca-98af-d88a27edeafc",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C79",
+      "claim": "Hexacarboxybenzene leads to an increase in the energy barrier for dissociation of the first CA molecule(s), but only if the surrounding lattice is intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexacarboxybenzene stabilizes the hexamer by binding in the its central electropositive pore (Jacques et al., 2016), leading to an increase in the energy barrier for dissociation of the first CA molecule(s), but only if the surrounding lattice is intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that hexacarboxybenzene delays opening but not disassembly",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "44b20a6b-290d-4131-acc6-75ba186b60cb",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C80",
+      "claim": "Progressive loss of hexamer subunits would be expected to destroy the binding site for hexacarboxybenzene, leading to its dissociation and further destabilization of the disassembling part of the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Progressive loss of hexamer subunits would be expected to destroy the binding site for hexacarboxybenzene, leading to its dissociation and further destabilization of the disassembling part of the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the mechanism based on the binding site location",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "15c8f77d-d0ee-4acd-b89f-43db4e6666d5",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C81",
+      "claim": "PF74 binds in a pocket between CA subunits in a hexamer and stabilizes the hexameric lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "PF74 on the other hand binds in a pocket between CA subunits in a hexamer and stabilizes the hexameric lattice (Bhattacharya et al., 2014; Price et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhattacharya et al., 2014; Price et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "21054fd1-3295-416d-a23d-b68a42082891",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C82",
+      "claim": "PF74 may stabilize a particular conformation that is incompatible with the highly curved section of the capsid, leading to breakage at those points.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that PF74 may stabilize a particular conformation that is incompatible with the highly curved section of the capsid, leading to breakage at those points, whereby the restructured lattice is sufficiently stable to prevent dissociation of CA from hexamers adjacent to the gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the mechanism of PF74 action",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6c4f3b6c-eab1-43fc-ae19-6a05b6f43c45",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C83",
+      "claim": "The restructured lattice after PF74-induced breakage is sufficiently stable to prevent dissociation of CA from hexamers adjacent to the gap.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that PF74 may stabilize a particular conformation that is incompatible with the highly curved section of the capsid, leading to breakage at those points, whereby the restructured lattice is sufficiently stable to prevent dissociation of CA from hexamers adjacent to the gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the observation that the lattice remains stable after opening",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d3cbf29c-14ab-4d6f-805f-d7848eae8e5b",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C84",
+      "claim": "The intrinsic instability of the lattice after capsid opening suggests that partially uncoated states with the capsid largely intact do not exist unless stabilized by host cell proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic instability of the lattice after capsid opening observed here suggests that partially uncoated states with the capsid largely intact do not exist unless stabilized by host cell proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the rapid disassembly kinetics after opening",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5b63638c-564e-4f7c-835d-2d0f586b34f3",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C85",
+      "claim": "A stabilizing role for CypA has been suggested.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a stabilizing role has been suggested for CypA (Liu et al., 2016; Shah et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2016; Shah et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "d205617e-803e-4275-b03f-0858fb56b878",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C86",
+      "claim": "The modest stabilization of the lattice observed in the presence of physiological concentrations of CypA suggests that other factors may be involved in stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the only modest stabilization of the lattice observed here in the presence of physiological concentrations suggests that other factors may be involved in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the limited stabilization effect of CypA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "6c88db98-d6bd-4af5-bc11-763e023e0db4",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C87",
+      "claim": "PF74 binds at a junction between two neighboring CA proteins within the hexamer, a site that can also be occupied by CPSF6 and Nup153.",
+      "claim_type": "EXPLICIT",
+      "source": "PF74 binds at a junction between two neighboring CA proteins within the hexamer. This site can also be occupied by two host proteins: CPSF6 and Nup153 (Matreyek et al., 2013; Price et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Matreyek et al., 2013; Price et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "62c180d1-ff3b-44c9-bb74-41d7e04874c7",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C88",
+      "claim": "CPSF6 and Nup153 may play roles in regulating the core-opening/uncoating event in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that small-molecule binding at this site results in what could be described as a partially uncoated state raises the possibility that these two cofactors may also play roles in regulating the core-opening/uncoating event in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the similarity of binding sites",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "cedb108c-bf76-4c9d-8ea7-6f20709f0e43",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C90",
+      "claim": "Rapid uncoating could be initiated after docking at the nuclear pore complex by catalyzing removal of a few CA subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid uncoating could then be initiated, for example after docking at the nuclear pore complex, by catalyzing removal of a few CA subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about a possible mechanism for controlled uncoating",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "31cb9b51-1250-450c-8027-4297698975ea",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C91",
+      "claim": "The integrity and stability of capsids in a population is highly heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The integrity and stability of capsids in a population is highly heterogeneous, whereby the majority of capsids contain defects and/or uncoat immediately after removal of the viral membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of leaky, opening, and closed capsids",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "22c292ed-8e07-49b8-b1bf-abf245fb44a5",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C92",
+      "claim": "The majority of capsids contain defects and/or uncoat immediately after removal of the viral membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The integrity and stability of capsids in a population is highly heterogeneous, whereby the majority of capsids contain defects and/or uncoat immediately after removal of the viral membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing 60-80% leaky capsids",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "7e312182-d545-4cd2-9367-f9d0112523c6",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C93",
+      "claim": "In the absence of capsid binders, uncoating is an all-or-none process that proceeds rapidly after the first defect is created.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) In the absence of capsid binders, uncoating is an all-or-none process that proceeds rapidly after the first defect is created.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of rapid disassembly after opening",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "00444e13-cb97-40f7-89ad-9100f6bd3158",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "claim_id": "C94",
+      "claim": "Capsid-binding molecules exhibit differential effects on the steps that control initiation and continuation of uncoating.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Capsid-binding molecules exhibit differential effects on the steps that control initiation and continuation of uncoating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations with PF74 and hexacarboxybenzene",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0581326-391e-4a38-aad0-3db410dba366",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HIV-1 capsid structure and composition: The HIV-1 capsid comprises 1000-1500 copies of CA protein forming a fullerene structure with 12 pentamers in an otherwise hexameric lattice. Capsids are typically conical (119 nm \u00d7 61 nm) but a large fraction contain defects and lack closed surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 describe established structural features of HIV-1 capsids supported by multiple citations to prior structural studies (Briggs et al., Li et al., Pornillos et al., Frank et al., Mattei et al., Yu et al.). These are well-documented background claims establishing the context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "af05e42d-317b-4402-b3b6-74a5433a493c",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Development of single-particle fluorescence assay: A TIRF microscopy assay was developed using GFP-labeled viral particles and PFO-mediated membrane permeabilization. PFO forms ~35 nm pores that allow protein passage while retaining the viral core, enabling real-time observation of capsid opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 describe the methodological development supported by experimental data (Figure 1B, 1D, 1E). The 99.7% reduction in GFP-positive particles when release is blocked validates the specificity of the assay. PFO pore size measurements are consistent with literature (Dang et al., 2005).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "76f89e79-3d20-4b31-a055-a9707241811e",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Quantification of encapsidated GFP: The mean fraction of encapsidated GFP is ~13%, consistent with the calculated ratio of capsid internal volume to total viral particle volume (16%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by experimental measurements (Figure 1\u2014figure supplement 1) and geometric calculations. The close agreement between measured (13%) and calculated (16%) values validates that GFP encapsidation reflects random trapping during maturation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5b2db128-7c7f-4a96-ab41-6af6fd238313",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Capsid heterogeneity: The majority of capsids (60-80%) are 'leaky' with defects that prevent GFP retention, demonstrating high heterogeneity in capsid integrity and stability within viral populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C91-C92 are supported by experimental data (Figure 2A) showing consistent fractions of leaky capsids across different conditions. This represents a major finding about the functional heterogeneity of HIV-1 capsid assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "7a9a9a8c-8f0f-432a-af1a-bdfbcc9ba535",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Intrinsic capsid opening kinetics: Intact capsids open with a half-life of 8 minutes in buffer, with a sub-population (~20%) opening much faster (half-life <1 minute).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by survival curve analysis (Figure 2B, 2C) with both mono- and bi-exponential fitting. The 8-minute half-life is consistent with prior estimates (Francis et al., 2016). Statistical analysis appears appropriate for the kinetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "a357f07a-6710-423d-93aa-36b267c323a7",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Validation with hyperstable mutant: The CA E45A mutation yields hyperstable capsids with a 4.5-fold increase in opening half-life compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 validate the assay using a known hyperstable mutant. The 4.5-fold increase (Figure 2C) is consistent with prior characterization (Forshey et al., 2002; Yang et al., 2012) and demonstrates that the GFP release kinetics accurately report capsid stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "f150a25b-9639-4721-8235-3e57a28fce17",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CypA effects on capsid opening: CypA has no effect on capsid half-life at 1 \u03bcM but causes an approximately two-fold increase at 20 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20, C37 are supported by experimental data (Figure 2C). The concentration-dependent effect is clearly demonstrated, though the modest stabilization at physiological concentrations is notable and discussed by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "b86b0ed0-9929-4655-b27e-a798de51f7b3",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PF74 and BI2 accelerate capsid opening: PF74 and BI2 dramatically accelerate capsid opening with half-lives of 41 seconds and 2.4 minutes, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C59 are supported by experimental data (Figure 2A, 2C). The pronounced acceleration of opening by these capsid-binding inhibitors represents a key finding about their mechanism of action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "8e2b72dc-d784-4590-9054-d0fc298bf332",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hexacarboxybenzene strongly inhibits capsid opening: Hexacarboxybenzene strongly inhibits capsid opening, with estimated half-lives of ~1 hour (10 \u03bcM) and ~10 hours (1000 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C24, C60 show strong inhibition (Figure 2A) but the half-life estimates are acknowledged as uncertain due to insufficient opening events for robust fitting. The qualitative effect is clear but quantitative values should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "e08ce595-9579-47c8-acd7-7dbb68783f19",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CypA binding to intact capsids: CypA binds to intact capsids with KD = 10-12 \u03bcM, with 500-1000 molecules bound at saturation (1:2 CypA:CA ratio), suggesting complete coating of the lattice with equivalent binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31, C38 are supported by equilibrium binding analysis (Figure 3E, Figure 3\u2014figure supplement 2). The 1:2 stoichiometry is consistent with structural predictions (Liu et al., 2016). Cyclosporin A competition validates specificity (Figure 3C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CypA binding kinetics: CypA dissociates rapidly (1.5 s\u207b\u00b9 in TIRF, 4 s\u207b\u00b9 by SPR), though the TIRF measurement may be mass-transport limited. SPR measurements give KD values of 21.8 \u03bcM (CA) and 19 \u03bcM (CA hexamer).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by both TIRF (Figure 3F) and SPR data (Figure 3\u2014figure supplement 3). The authors appropriately note the potential mass-transport limitation in TIRF measurements. SPR values are consistent with prior literature (Yoo et al., 1997).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two-stage uncoating process: Capsid opening is the rate-limiting step for uncoating, followed by rapid catastrophic lattice disassembly with a half-life of 70-100 seconds. Uncoating is an all-or-none process after the first defect appears.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42, C57-C58, C93 describe a major mechanistic finding supported by CypA paint data (Figure 4E). The rapid disassembly after opening demonstrates that capsid opening is rate-limiting. This represents a key insight into the uncoating mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PF74 uncouples opening from disassembly: PF74 accelerates capsid opening but stabilizes the remaining lattice, with no detectable CA loss during opening and no subsequent disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45, C47-C49 are supported by CypA paint data (Figure 5B) showing constant signal after opening. This represents a major mechanistic insight that PF74 creates a 'partially uncoated' state, reconciling previous conflicting reports about PF74's effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "c8d2ea8d-f800-4f25-835e-cce4e3122366",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Hexacarboxybenzene has differential effects: Hexacarboxybenzene strongly inhibits capsid opening but has only modest effects on lattice disassembly once opening occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C50 are supported by CypA paint data (Figure 5D) showing continued disassembly after opening despite strong inhibition of the opening step. This demonstrates differential control of uncoating stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "5c0d6fcd-3a04-4691-97da-aba0ff769443",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cell lysate effects on uncoating: Diluted HeLa cell lysate slows capsid opening (4-fold increase in half-life) but does not fundamentally alter the disassembly process. CypA binding is unaffected, indicating no competition with endogenous CypA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by experimental data (Figure 6A-E). The stabilizing effect is consistent with prior observations (Francis et al., 2016; Fricke et al., 2013; Guth and Sodroski, 2014). The assay's compatibility with complex mixtures is demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "967e0e1e-3aa6-4139-aa13-d56e8410ed45",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Independent control of uncoating stages: Different stages of uncoating (initiation vs. continuation) can be controlled independently by different capsid-binding molecules, with their interplay determining overall kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C94 represent a major conceptual conclusion supported by the differential effects of PF74 (accelerates opening, stabilizes lattice) versus hexacarboxybenzene (inhibits opening, minimal effect on disassembly). This is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "716efff1-9bc4-4f84-bf26-6393cbdb3ab5",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mechanism of catastrophic disassembly: The CA lattice has enhanced stability when forming a closed surface. Local defects lead to catastrophic failure through rapid propagation via dissociation of CA subunits no longer stabilized by inter-hexamer interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 present a mechanistic model supported by experimental observations and consistent with simulations (Grime et al., 2016). The model logically explains the rapid disassembly kinetics observed after opening.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "bd0a4e2b-b911-4c78-a1f8-dc69eae19c2e",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Hexacarboxybenzene mechanism: Hexacarboxybenzene stabilizes hexamers by binding in the central pore, increasing the energy barrier for dissociation of the first CA molecules only when the surrounding lattice is intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by the binding site location (Jacques et al., 2016) and the observed differential effects on opening versus disassembly. Claim C80 is speculative but logically consistent with the binding mode.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "4e73aa92-a08f-45e8-a65d-da3de2663c49",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PF74 mechanism: PF74 binds between CA subunits in hexamers and may stabilize a conformation incompatible with highly curved capsid regions, leading to breakage while preventing CA dissociation from hexamers adjacent to the gap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 is supported by structural studies (Bhattacharya et al., 2014; Price et al., 2014), but claims C82-C83 are explicitly speculative. The proposed mechanism is consistent with observations but lacks direct structural evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "881d7421-05d7-4a54-a6a7-2075dff18eb4",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Implications for partially uncoated states: The intrinsic instability after capsid opening suggests partially uncoated states do not exist unless stabilized by host proteins. CypA provides only modest stabilization, suggesting other factors are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84, C86 are logical inferences from the rapid disassembly kinetics and modest CypA effects. Claim C85 cites prior suggestions (Liu et al., 2016; Shah et al., 2013). The conclusion is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "132cc217-e10e-45b0-af6c-9b6d853dcedc",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Implications for host factors: PF74 binds at a site also occupied by CPSF6 and Nup153, suggesting these host proteins may regulate core opening/uncoating in vivo, potentially after nuclear pore docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is supported by structural studies (Matreyek et al., 2013; Price et al., 2014), but claims C88 and C90 are explicitly speculative. While the speculation is reasonable based on binding site similarity, direct evidence for these host protein functions is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    },
+    {
+      "id": "64167403-bf80-433f-beff-236d7b754ea7",
+      "content_id": "86da48a6-6db8-4b53-81c6-fa59fc600c67",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background on capsid functions and binding partners: The capsid plays multiple roles in HIV infection including protection from innate immunity, facilitating reverse transcription, nuclear pore engagement, and integration site targeting. Various host proteins and small molecules interact with the capsid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C73 provide background context supported by extensive citations to prior literature. These establish the biological importance of understanding capsid uncoating and the relevance of the molecules studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.465498Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "48af4125-1408-47cb-ad10-c2af077ccf95",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "12ece547-f855-4ddb-ba55-a0967ed39467",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "d5059009-0f1b-4492-8ed8-d220a3b73215",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "05fe9d9c-7678-411f-af70-0a98da92889c",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "c9f6ef84-75ed-4d0c-a1fd-9fc3704b4d6d",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "8caab678-2825-4df3-8ae7-7c3bf3e76801",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "951b7c9c-ac45-4776-b510-6ca88fd2c1cd",
+      "result_id": "e0581326-391e-4a38-aad0-3db410dba366"
+    },
+    {
+      "claim_id": "5d0e770f-2694-4e3d-a350-946db74dc5a8",
+      "result_id": "af05e42d-317b-4402-b3b6-74a5433a493c"
+    },
+    {
+      "claim_id": "5c4c6f52-09ea-4ba3-85d9-dee9e78e1cc5",
+      "result_id": "af05e42d-317b-4402-b3b6-74a5433a493c"
+    },
+    {
+      "claim_id": "25a02e64-defd-4ed6-9f63-0ad9a9c12792",
+      "result_id": "af05e42d-317b-4402-b3b6-74a5433a493c"
+    },
+    {
+      "claim_id": "92bf210f-ee67-4ad3-a2e9-d1f36d020b44",
+      "result_id": "af05e42d-317b-4402-b3b6-74a5433a493c"
+    },
+    {
+      "claim_id": "2f62ea94-1892-48c6-969c-d1c536683eeb",
+      "result_id": "76f89e79-3d20-4b31-a055-a9707241811e"
+    },
+    {
+      "claim_id": "2340ee4a-b2c6-4df6-8933-5adf638eea89",
+      "result_id": "76f89e79-3d20-4b31-a055-a9707241811e"
+    },
+    {
+      "claim_id": "5c4b9a6c-728f-4926-85d7-92e965f0f38b",
+      "result_id": "5b2db128-7c7f-4a96-ab41-6af6fd238313"
+    },
+    {
+      "claim_id": "31cb9b51-1250-450c-8027-4297698975ea",
+      "result_id": "5b2db128-7c7f-4a96-ab41-6af6fd238313"
+    },
+    {
+      "claim_id": "22c292ed-8e07-49b8-b1bf-abf245fb44a5",
+      "result_id": "5b2db128-7c7f-4a96-ab41-6af6fd238313"
+    },
+    {
+      "claim_id": "d3d35ce6-7313-4620-89c9-87c9f508f07f",
+      "result_id": "7a9a9a8c-8f0f-432a-af1a-bdfbcc9ba535"
+    },
+    {
+      "claim_id": "2ad61f7b-7fda-4760-9641-2dd25c4ef333",
+      "result_id": "7a9a9a8c-8f0f-432a-af1a-bdfbcc9ba535"
+    },
+    {
+      "claim_id": "47824217-6251-453a-96f2-3f59ee5f1758",
+      "result_id": "a357f07a-6710-423d-93aa-36b267c323a7"
+    },
+    {
+      "claim_id": "cc2d03de-d40e-4aa9-a2ed-a2ffef98fc55",
+      "result_id": "a357f07a-6710-423d-93aa-36b267c323a7"
+    },
+    {
+      "claim_id": "74c0da35-e7b7-478a-8974-1a1cb512f530",
+      "result_id": "f150a25b-9639-4721-8235-3e57a28fce17"
+    },
+    {
+      "claim_id": "11d7e798-f1d0-4ce8-aac4-8b5ab51a6683",
+      "result_id": "f150a25b-9639-4721-8235-3e57a28fce17"
+    },
+    {
+      "claim_id": "898b0f92-3617-4172-af1f-35ebdb7eb330",
+      "result_id": "f150a25b-9639-4721-8235-3e57a28fce17"
+    },
+    {
+      "claim_id": "70589b89-45af-4969-af16-cd4f2b9d4512",
+      "result_id": "b86b0ed0-9929-4655-b27e-a798de51f7b3"
+    },
+    {
+      "claim_id": "7283b8d9-0a5e-473c-824b-2e19663a0149",
+      "result_id": "b86b0ed0-9929-4655-b27e-a798de51f7b3"
+    },
+    {
+      "claim_id": "ef04ab1b-33b9-423e-befd-42d37d8fbf02",
+      "result_id": "b86b0ed0-9929-4655-b27e-a798de51f7b3"
+    },
+    {
+      "claim_id": "ebace11c-3360-40e5-abb9-cbabc3434dfe",
+      "result_id": "8e2b72dc-d784-4590-9054-d0fc298bf332"
+    },
+    {
+      "claim_id": "eeb23a66-3d2b-4f11-98c5-9d71a52d0cae",
+      "result_id": "8e2b72dc-d784-4590-9054-d0fc298bf332"
+    },
+    {
+      "claim_id": "a4999cc3-6272-47a0-9ada-6f88f9f7c2e4",
+      "result_id": "8e2b72dc-d784-4590-9054-d0fc298bf332"
+    },
+    {
+      "claim_id": "ebfefdd8-11cd-4abc-93e7-bcb548cfa657",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "ed3c33ea-e424-48d4-9633-4fb4d7f3287d",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "5c3ff434-05a4-4567-b1f3-e29b111a71a9",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "6f748dc0-0787-453b-b76b-b3102ce4ba60",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "d6bd0317-4c45-4d99-86de-314ed45d2583",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "248cfb3a-6dad-451e-8679-b4d3fec466b7",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "edce6716-6433-431c-b69a-028e6d70c384",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "9ae2f716-2864-4a4a-833c-c3eb5943402a",
+      "result_id": "e08ce595-9579-47c8-acd7-7dbb68783f19"
+    },
+    {
+      "claim_id": "f341d97c-732e-4c73-8741-1c959b45eb7b",
+      "result_id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34"
+    },
+    {
+      "claim_id": "8a8925ca-0d07-4f07-a01a-9472d8d18eb0",
+      "result_id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34"
+    },
+    {
+      "claim_id": "fda51cba-c10f-4440-9f14-aa3e626ea8e7",
+      "result_id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34"
+    },
+    {
+      "claim_id": "e10ff799-6023-4bb0-a6b2-a582a6c259d8",
+      "result_id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34"
+    },
+    {
+      "claim_id": "fd306fa4-a0cc-4619-8e8d-0bf1a937e34f",
+      "result_id": "cd0a07cd-ca43-44f1-ae9d-23a7ebc8ba34"
+    },
+    {
+      "claim_id": "9440aaaa-99c6-49a7-a077-3b613097380e",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "8ddfbb76-e4eb-463a-8bfe-073de685c48f",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "09f49d21-cace-48c7-8bd1-86ca07cd3523",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "0c19569e-6d2a-4649-8a01-4cf67f45b558",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "8a8b010d-f21f-4adf-bade-0c417a10245d",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "77b14fdd-df30-435f-b694-87818f00b2d9",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "7e312182-d545-4cd2-9367-f9d0112523c6",
+      "result_id": "bf2a8dc9-82ca-4686-a2f5-e0ccefcbc1f9"
+    },
+    {
+      "claim_id": "90b70522-f054-44d8-9f36-97c218d8cc48",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "f7a7a53f-63fc-4bcd-8ef4-dd09bd539d06",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "87b9b2a7-692d-4168-b88d-ae7c070fffe6",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "aabfcc98-558a-4eef-a117-11d8f655172f",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "01a35939-633b-4fb9-9e3a-8a56dc44c95d",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "6adc4595-3041-43bc-9139-aface1de26fc",
+      "result_id": "ab7b7b2f-b4fb-4ba7-b330-a4464094322e"
+    },
+    {
+      "claim_id": "6d10a15c-f0af-49a7-9451-7ea3d778cc34",
+      "result_id": "c8d2ea8d-f800-4f25-835e-cce4e3122366"
+    },
+    {
+      "claim_id": "b9e31be1-86a0-4247-b153-be1e310f4455",
+      "result_id": "c8d2ea8d-f800-4f25-835e-cce4e3122366"
+    },
+    {
+      "claim_id": "1ee6f374-3caf-4cef-87ea-76cd3b665155",
+      "result_id": "5c0d6fcd-3a04-4691-97da-aba0ff769443"
+    },
+    {
+      "claim_id": "885b158d-7f0f-454f-a65f-cf0ba0399a1a",
+      "result_id": "5c0d6fcd-3a04-4691-97da-aba0ff769443"
+    },
+    {
+      "claim_id": "2e6c9bb1-09c5-45af-b65f-49ee69182bd2",
+      "result_id": "5c0d6fcd-3a04-4691-97da-aba0ff769443"
+    },
+    {
+      "claim_id": "a6310509-dbac-48aa-a1b8-4239acee641d",
+      "result_id": "5c0d6fcd-3a04-4691-97da-aba0ff769443"
+    },
+    {
+      "claim_id": "3a6893a0-b8a2-4790-bdf8-545c04ce09f0",
+      "result_id": "5c0d6fcd-3a04-4691-97da-aba0ff769443"
+    },
+    {
+      "claim_id": "96004d12-1790-44ac-a8cf-ee24c6f8551a",
+      "result_id": "967e0e1e-3aa6-4139-aa13-d56e8410ed45"
+    },
+    {
+      "claim_id": "d15e39bc-04c4-4090-bad8-3e98500b6412",
+      "result_id": "967e0e1e-3aa6-4139-aa13-d56e8410ed45"
+    },
+    {
+      "claim_id": "00444e13-cb97-40f7-89ad-9100f6bd3158",
+      "result_id": "967e0e1e-3aa6-4139-aa13-d56e8410ed45"
+    },
+    {
+      "claim_id": "0be1d26c-6b8a-47cc-887a-84b8c889d953",
+      "result_id": "716efff1-9bc4-4f84-bf26-6393cbdb3ab5"
+    },
+    {
+      "claim_id": "75c38aaf-23ad-4c12-aae3-2bde6513fbf2",
+      "result_id": "716efff1-9bc4-4f84-bf26-6393cbdb3ab5"
+    },
+    {
+      "claim_id": "c675941b-6532-40c0-9692-0f7f04c88009",
+      "result_id": "716efff1-9bc4-4f84-bf26-6393cbdb3ab5"
+    },
+    {
+      "claim_id": "22d41b05-367e-4102-b7e0-19e72a384e13",
+      "result_id": "716efff1-9bc4-4f84-bf26-6393cbdb3ab5"
+    },
+    {
+      "claim_id": "3433b4e5-a11a-40db-a434-e920af5a32e2",
+      "result_id": "bd0a4e2b-b911-4c78-a1f8-dc69eae19c2e"
+    },
+    {
+      "claim_id": "a9571d05-f7cb-44ca-98af-d88a27edeafc",
+      "result_id": "bd0a4e2b-b911-4c78-a1f8-dc69eae19c2e"
+    },
+    {
+      "claim_id": "44b20a6b-290d-4131-acc6-75ba186b60cb",
+      "result_id": "bd0a4e2b-b911-4c78-a1f8-dc69eae19c2e"
+    },
+    {
+      "claim_id": "15c8f77d-d0ee-4acd-b89f-43db4e6666d5",
+      "result_id": "4e73aa92-a08f-45e8-a65d-da3de2663c49"
+    },
+    {
+      "claim_id": "21054fd1-3295-416d-a23d-b68a42082891",
+      "result_id": "4e73aa92-a08f-45e8-a65d-da3de2663c49"
+    },
+    {
+      "claim_id": "6c4f3b6c-eab1-43fc-ae19-6a05b6f43c45",
+      "result_id": "4e73aa92-a08f-45e8-a65d-da3de2663c49"
+    },
+    {
+      "claim_id": "d3cbf29c-14ab-4d6f-805f-d7848eae8e5b",
+      "result_id": "881d7421-05d7-4a54-a6a7-2075dff18eb4"
+    },
+    {
+      "claim_id": "5b63638c-564e-4f7c-835d-2d0f586b34f3",
+      "result_id": "881d7421-05d7-4a54-a6a7-2075dff18eb4"
+    },
+    {
+      "claim_id": "d205617e-803e-4275-b03f-0858fb56b878",
+      "result_id": "881d7421-05d7-4a54-a6a7-2075dff18eb4"
+    },
+    {
+      "claim_id": "6c88db98-d6bd-4af5-bc11-763e023e0db4",
+      "result_id": "132cc217-e10e-45b0-af6c-9b6d853dcedc"
+    },
+    {
+      "claim_id": "62c180d1-ff3b-44c9-bb74-41d7e04874c7",
+      "result_id": "132cc217-e10e-45b0-af6c-9b6d853dcedc"
+    },
+    {
+      "claim_id": "cedb108c-bf76-4c9d-8ea7-6f20709f0e43",
+      "result_id": "132cc217-e10e-45b0-af6c-9b6d853dcedc"
+    },
+    {
+      "claim_id": "ef2d42c7-e06a-43f3-9a54-9e819cd05786",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "3e740c3f-77ec-48eb-90bf-3c969c9227b2",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "92488173-337b-4725-8c49-a200b53d4d5f",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "14479786-f902-425c-95e2-35c664330d07",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "f0981429-ea78-429a-9eb1-dee239db8f31",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "b489926b-0dd8-4a61-91e1-559f09c3335d",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "e925db69-14b8-4cff-b15c-49f829853d24",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "7860ddb0-60b7-4de2-95c1-b234ee9d91dd",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "c4ad5c02-1654-422d-bf8e-af32901237e9",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "5b9108f6-2262-46a2-93a8-6dae9ec20c73",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    },
+    {
+      "claim_id": "d3fbec0f-0f2f-4ad1-8e4b-c8d19f01f611",
+      "result_id": "64167403-bf80-433f-beff-236d7b754ea7"
+    }
+  ],
+  "comparisons": []
+}

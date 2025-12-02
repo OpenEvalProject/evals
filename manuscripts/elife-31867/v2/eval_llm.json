@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors propose and provide evidence for a novel gene regulation mechanism called 'stochastic tuning' that enables cellular adaptation without relying on pre-existing regulatory circuitry. This mechanism operates through a fitness-directed stochastic search where individual genes achieve optimal expression levels by responding to changes in cellular health, functioning locally at individual gene promoters and being modulated by chromatin modification machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 collectively establish the core concept of stochastic tuning with strong experimental support. The experimental evidence includes colony formation assays (C6), allele-specific expression changes measured by RT-qPCR (C7, C47-C48), and genetic perturbations to chromatin machinery affecting tuning rates (C8, C75-C76). The mechanism is demonstrated in engineered yeast strains where URA3 expression is required for growth but lacks conventional regulatory input (C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors identify three theoretical requirements for stochastic tuning: (1) stochastic transitions in gene expression (transcriptional noise), (2) chromatin-based memory of recent transcriptional changes, and (3) a global metabolic integrator of cellular health. They argue these components exist in eukaryotic cells and describe the logic by which they interact to enable fitness-directed tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 establish the theoretical framework for stochastic tuning. The existence of the required components is well-supported by citations to prior work (C16-C19), and the proposed logic is clearly articulated (C20-C21). However, while the individual components are established, the specific mechanism by which they integrate to produce stochastic tuning remains somewhat speculative and is addressed more directly in later experimental claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C50",
+      "C51",
+      "C52",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Computational simulations demonstrate that the proposed stochastic tuning mechanism can optimize gene expression across thousands of genes and is robust to parameter variations. The simulations show that tuning behavior shifts from stochastic to deterministic depending on the threshold required for fitness improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C50-C52 are supported by simulations shown in Figures 2 and 5. The more detailed physiological model (C81-C84, Figure 9) demonstrates biological feasibility and robustness. The simulations provide strong theoretical support for the mechanism, though they rely on assumptions about how fitness feedback operates that are not fully validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors engineered a yeast experimental system where URA3 expression is required for growth but is driven by synthetic promoters lacking transcription factor binding sites. Cells show stochastic colony formation at rates too high to be explained by mutation (1 in 10^3 to 10^5 depending on promoter), and similar behavior is observed with natural high-noise promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 describe the experimental design and initial observations. The colony formation data (C30-C31, Figure 3B) clearly demonstrate the phenomenon. The use of multiple synthetic promoters (C32-C33) and natural promoters (C34-C35) strengthens the generalizability. The rate calculations (C31) provide reasonable evidence against simple mutational mechanisms, though this is more definitively addressed in later sequencing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Flow cytometry and RT-qPCR experiments demonstrate that URA3 expression increases specifically during tuning, while control genes do not. Critically, when both URA3 and DHFR are driven by the same promoter, only URA3 shows enhanced expression, demonstrating allele-specific, cis-acting regulation independent of conventional transcription factor input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 provide strong evidence for the local, cis-acting nature of tuning. The flow cytometry data (C42-C45, Figure 4) show promoter-specific and allele-specific induction. The RT-qPCR data (C47-C48, Figure 4\u2014figure supplement 2) quantitatively confirm increased URA3:DHFR ratios in tuned cells. This is perhaps the most critical experimental evidence distinguishing stochastic tuning from conventional trans-acting regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "At low 6AU concentrations, tuning switches from slow and stochastic to rapid and deterministic, occurring over hours rather than days. The tuning remains confined to the URA3 allele even when DHFR is driven by the same promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by experimental data in Figure 5C showing rapid, deterministic tuning at low 6AU concentrations. This validates the simulation predictions (C50-C52) and further demonstrates the allele-specific nature of tuning. The experimental design is sound and the observations are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Time-lapse microscopy reveals that URA3 expression fluctuations that improve fitness are reinforced and inherited across generations. Dividing cells have higher URA3 levels than non-dividing cells, URA3 expression is highly heritable, and the URA3:DHFR ratio increases progressively in dividing lineages. Mixing time experiments show that expression memory persists for 400-1200 minutes under starvation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 are supported by extensive microscopy data (Figures 6-7) and FACS-based mixing time experiments (Figure 7\u2014figure supplement 1). The observation that URA3 continues to increase in dividing lineages (C61, C64) is particularly important as it distinguishes fitness-directed tuning from alternative explanations. The mixing time data (C57-C58) provide quantitative support for the existence of transcriptional memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Multiple lines of evidence exclude genetic mutation as the primary mechanism: (1) ongoing emergence over many days in non-growing cells, (2) minimal cell divisions before growth onset, (3) rapid reversion to na\u00efve state upon growth in uracil-containing media, and (4) whole-genome sequencing showing 7 of 8 isolates lack mutations that could explain tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 collectively provide strong evidence against mutational mechanisms. The reversion experiments (C68, Figure 8A) are particularly compelling, as genetic mutations would not revert rapidly. The whole-genome sequencing data (C69-C72) definitively show that most tuned isolates lack relevant mutations. The combination of kinetic arguments (C66-C67) and molecular evidence (C69-C72) makes a convincing case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "FACS sorting experiments show that cells with initially high URA3 expression do not form colonies at substantially higher rates than unsorted cells, excluding the possibility that tuning simply reflects selection of pre-existing high expressers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by FACS sorting data (Supplementary file 5). This control experiment is important for excluding a trivial explanation of the results. The data clearly show that initial expression level is not the primary determinant of colony formation ability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C88"
+    ],
+    "result": "Genetic and chemical perturbations to chromatin modification machinery modulate tuning rates. Deletion of the histone acetyltransferase GCN5 abolishes tuning, deletion of the histone chaperone ASF1 accelerates tuning by >10-fold, and nicotinamide treatment (inhibiting sirtuin HDACs) accelerates reversion to the na\u00efve state. These effects are not explained by changes in cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 and C88 are supported by experimental data in Figure 8. The GCN5 deletion result (C75) is particularly striking as it nearly eliminates tuning. The ASF1 deletion (C76) and nicotinamide treatment (C79) provide additional evidence for chromatin involvement. The control experiments showing no correlation between survival and tuning rates (C78) strengthen the interpretation. These results provide strong mechanistic insights into the role of chromatin modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Colony formation on selective plates shows stochastic characteristics: steady emergence over days to weeks, wide variance in colony sizes, cells remaining quiescent for days before transitioning to growth, and heritability of the growth-enabling state. Control experiments exclude plate aging as an explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe the stochastic nature of colony formation, supported by data in Figure 3B-E. The observations are consistent with a stochastic process rather than a deterministic one. The microscopy data (C39, Figure 3E) showing prolonged quiescence followed by growth is particularly informative. The control for plate aging (C41) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that stochastic tuning is not driven by noise alone, but rather requires proper integration of noise, transcriptional memory, chromatin modification, and cellular-health feedback. They note that histone modification is tightly coupled with gene expression and can both store memory of transcriptional activity and affect transcription rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 synthesize the mechanistic understanding. The inference that tuning is not driven by noise alone (C92) is supported by the observation that GCN5 deletion increases noise but abolishes tuning (C91). The proposed integration model (C93) is consistent with all experimental observations, though the specific molecular details remain to be elucidated. The statements about histone modification (C94-C96) are well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Sequence features influence tuning efficacy, with TATA-containing promoters showing higher tuning rates. Replacement of the TATA-containing region in synprom with a TATA-free sequence substantially reduced tuning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by the observed variation in tuning rates across promoters (Figure 3B-C, Figure 3\u2014figure supplement 1) and the specific experiment comparing TATA-containing vs. TATA-free versions of synprom (C104). The connection to TATA boxes is well-supported by citations linking TATA boxes to noise and chromatin-mediated regulation (C103).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors discuss potential mechanisms for global fitness feedback to promoters, noting that histone modification enzymes depend on metabolic intermediates (NAD+, SAM, acetyl-CoA), providing a potential link between cellular fitness and chromatin state. They show that chemical manipulation of sirtuin activity affects epigenetic memory retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C111 address an important mechanistic question but remain largely speculative. The dependence of histone modifying enzymes on metabolic cofactors (C107) is well-established by citations, and the nicotinamide experiment (C108) provides some support. However, the specific mechanism by which fitness information is transmitted to individual promoters (C109-C110) remains unclear. The mTOR connection (C111) is intriguing but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors establish the biological context: cells normally adapt through predefined regulatory programs, but these may be inadequate for novel environments. In principle, optimal gene expression states exist for any environment, and populations can slowly adapt through genetic mutations that rewire regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C12 provide background context supported by appropriate citations. These are well-established concepts in the field and provide motivation for the study. The statements are accurate representations of current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors speculate that stochastic tuning would be valuable for optimizing gene expression in environments where dedicated regulatory networks are inadequate, and propose a model where conventional regulation provides coarse adjustment while stochastic tuning provides fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25, C85-C86 are explicitly speculative statements about the potential value and operation of stochastic tuning. While plausible and consistent with the data, these represent hypotheses about the broader biological role of the mechanism rather than demonstrated facts. The proposed division of labor between conventional regulation and stochastic tuning (C86) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors compare their work to previous experiments by the Braun lab on GAL1 promoter adaptation, noting that while superficially similar, those experiments were driven by genetic mutations rather than the epigenetic stochastic tuning observed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C97-C99 appropriately contextualize the work relative to prior studies. The comparison to bacterial chemotaxis (C87) is apt as an analogy. The distinction from the Braun lab work (C97-C99) is important and well-supported by citations showing that system was mutation-driven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The authors distinguish stochastic tuning from conventional homeostatic mechanisms, noting that while cells have hard-wired systems for sensing internal parameters, these still represent predefined responses rather than the exploratory search mechanism of stochastic tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 make an important conceptual distinction supported by appropriate citations (C100). The argument that conventional homeostatic mechanisms differ fundamentally from stochastic tuning (C101) is logical and helps clarify the novelty of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors speculate about the evolutionary origins and broader implications of stochastic tuning, suggesting it may have evolved for adaptation to extreme environments in single-celled eukaryotes but could also function in metazoan development and potentially underlie cancer cell adaptation and drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 are explicitly speculative about evolutionary origins and broader implications. While the connections to differentiation (C114) and cancer (C115-C116) are supported by citations showing epigenetic mechanisms are important in these contexts, direct evidence for stochastic tuning operating in these systems is not provided. These represent interesting hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The authors conclude that their observations support a fitness-directed tuning process operating at the transcriptional level, but note that in principle, similar mechanisms could operate at other levels of gene expression regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is well-supported by the experimental data showing transcriptional changes. Claim C118 is a reasonable speculation about potential broader applicability of the tuning principle, though it remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors note that genes regulated by the SAGA complex (containing GCN5) show high intrinsic noise, and that previous work has shown both that increased noise can be beneficial for stress adaptation and that GCN5 deletion increases noise in some contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 accurately represent findings from cited prior work. These observations are important for interpreting the GCN5 deletion results and understanding why noise alone is insufficient for tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Experiments with the repressed PGAL1 promoter showed dramatically lower colony formation rates (<1 in 10^7), with colonies appearing to be non-reverting genetic mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 reports an observation but notes the data are not shown. Without seeing the data or the evidence for the mutant interpretation, this claim cannot be fully evaluated. The observation is consistent with the idea that not all promoters support efficient stochastic tuning, but more details would be needed.",
+    "result_type": "MINOR"
+  }
+]

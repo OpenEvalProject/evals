@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The standard Smart-seq2 protocol was optimized for Plasmodium parasites by testing different oligo(dT) primers, reverse transcriptases, and PCR cycles. The optimized protocol using a longer unanchored T30 oligo(dT) primer and SMARTScribe enzyme significantly improved gene detection and reduced rRNA contamination compared to the standard protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe systematic optimization experiments with clear quantitative results shown in Figure 1B-D and Table 1. The initial poor performance (C30-C31) and subsequent improvements (C32-C34) are well-documented with appropriate controls and statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A dual-species sorting experiment demonstrated minimal cross-contamination and no doublet events. The vast majority of reads (98.1% for P. berghei, 99.4% for P. falciparum) mapped to the expected species, with only 15 of 3566 P. berghei transcripts originating from P. falciparum, none of which were differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 present a well-designed contamination control experiment with clear quantitative results shown in Figure 2A and Figure 2\u2014figure supplement 1. The low contamination rates and lack of differential expression of contaminants support the reliability of the protocol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study generated high-quality single-cell transcriptomes for P. berghei (144 cells after filtering) and P. falciparum (191 sexual stage cells, 161 asexual stage cells). The protocol detected over 90% of genes in the P. berghei genome, with an average of ~1900-2100 genes per cell, comparable to mammalian single-cell experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe the dataset generation with clear filtering criteria and quantitative metrics shown in Figure 2B. The comparison to mammalian studies (C42) provides appropriate context, though the citation could be more thoroughly evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The optimized protocol showed no bias related to GC content or gene length in transcript detection, but exhibited a slight 5' bias, potentially due to internal priming by oligo(dT) at polyA-rich regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by analyses shown in Figure 2C, 2D, and Figure 2\u2014figure supplement 2. The lack of length and GC bias is clearly demonstrated, and the 5' bias is appropriately characterized with a plausible mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Single P. berghei cells were classified as male, female, or asexual using PCA, k-means clustering, and comparison to bulk transcriptome datasets. The classification was validated by established stage-specific markers and enabled identification of new stage-specific markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe a multi-method classification approach shown in Figure 3A-B and Figure 3\u2014figure supplement 1. The validation with known markers (C48) and discovery of new markers (C49) provide strong support for the classification accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Pseudotime analysis revealed abrupt transcriptional transitions during the asexual cycle, contrasting with the continuous cascade observed in bulk RNA-seq studies. Single Plasmodium cells from unsynchronized pools could be accurately ordered by transcriptional signatures, revealing step-wise rather than incremental transcriptional progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 present a major finding supported by Figure 4A-C and Figure 4\u2014figure supplement 1-2. The concordance with bulk studies (C52) validates the ordering, while the contrast with bulk data (C54-C55) is clearly demonstrated. The interpretation (C56-C58) is reasonable, though C57 is appropriately labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "K-means clustering identified three gene expression clusters in pseudotime for each species, enriched for distinct cellular functions: protein dynamics/energy metabolism (cluster 1), rhoptry organelle (cluster 2), and microneme/inner membrane complex (cluster 3). Two ApiAP2 transcription factors were associated with specific clusters, suggesting potential regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe clustering analysis with functional enrichment shown in Figure 4C and Figure 4\u2014figure supplement 1. The functional annotations are well-supported, though C63 is appropriately speculative about biological significance. The TF associations (C64) provide testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "After correcting for cell cycle variation, 56 genes in P. falciparum asexual cells showed residual variation. These genes were not in subtelomeric regions, were involved in nucleosome assembly/proteasome/vacuolar acidification, had longer-than-average mRNA half-lives, were highly conserved evolutionarily, and 22 were also variable in sexual stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe cell-cycle-independent variation using scLVM analysis shown in Figure 5A-C. The characterization is thorough with multiple lines of evidence (genomic location, function, half-life, conservation). The statistical test for conservation (p=2.2e-16, C73) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Sexual stages showed sex-specific variable expression of contingency gene families. P. berghei males showed significant pir gene variability (p=0.014), while females showed variation in fam-a and fam-b genes. P. falciparum females showed mutually exclusive var gene expression from internal clusters with upsC promoters, while males expressed only var2csa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 present novel findings about sex-specific multigene family expression shown in Figure 6 and Figure 6\u2014figure supplement 1. The statistical significance for pir genes (C76) is reported, and the var gene analysis (C79-C82) uses appropriate methods to distinguish coding from non-coding transcripts. The inference about mutually exclusive expression (C80) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Gametocytes show significant sex-specific variation in expression of large multigene families previously known for importance in asexual stages. A conserved sex-specific pattern of transcription factor expression was observed, including the female-specific ap2-o transcription factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 synthesize findings about sex-specific expression patterns shown in Figure 6B and Figure 6\u2014figure supplement 2. The observation is novel and well-supported, with C86 appropriately citing prior work on ap2-o function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The optimized protocol enables evaluation of full-length transcripts and provides information on nearly three times as many genes per cell (~1900 average) compared to Drop-seq (~650 average) for the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 compare the method to Drop-seq with specific quantitative comparisons. The advantage for full-length transcript analysis is demonstrated by the var gene analysis, and the gene detection comparison is appropriately cited to Poran et al., 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Single-cell data revealed sharp transcriptional transitions over the asexual life cycle, which was previously thought to be continuous. These transitions are speculated to correspond to cell cycle checkpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is well-supported by the pseudotime analysis, but C90 is explicitly speculative without direct experimental validation of checkpoint function. The hypothesis is reasonable but requires additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The study found unexpected cell-to-cell variation in gene expression independent of the cell cycle. These cell-cycle-independent variable genes were highly conserved between species, with the same types of genes variable in both human and rodent parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93-C94 describe cell-cycle-independent variation supported by scLVM analysis in Figure 5. The conservation between species is demonstrated, though the biological significance remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study adapted a single-cell RNA-sequencing protocol using a lower throughput but higher coverage approach to analyze over 500 individual parasites of P. berghei and P. falciparum across asexual and sexual life-cycle stages. The method effectively captured transcriptional variation and uncovered previously unknown aspects of parasite development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C25 provide an overview of the study's approach and findings. The methodological choices are well-justified, and the effectiveness is demonstrated throughout the manuscript with multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The study uncovered previously hidden discrete transcriptional signatures during the pathogenic asexual cycle, suggesting that expression over development is not as continuous as commonly thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 summarize a major finding about discrete vs. continuous transcriptional progression. This is well-supported by the pseudotime analysis and comparison to bulk RNA-seq data shown in Figure 4 and Figure 4\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The study found novel, sex-specific roles for differential expression of contingency gene families in transmission stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 summarizes findings about sex-specific contingency gene expression in gametocytes, which is well-supported by the detailed analysis in Figure 6 and related supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Generating variation in parasite populations may be a bet-hedging strategy, and the sex-specific expression of var and pir genes could indicate a role in fertilization in the mosquito midgut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 are explicitly speculative hypotheses about the biological significance of observed variation. While plausible, these interpretations require additional experimental validation and are appropriately presented as speculation.",
+    "result_type": "MINOR"
+  }
+]

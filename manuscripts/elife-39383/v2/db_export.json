@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "96b0556f-189e-4cb1-836d-598b05447bc7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:39:14.717985Z",
+    "updated_at": "2025-12-02T01:39:14.717985Z"
+  },
+  "content": [
+    {
+      "id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "submission_id": "96b0556f-189e-4cb1-836d-598b05447bc7",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the benzodiazepine-sensitive \u03b11\u03b21\u03b32S tri-heteromeric GABAA receptor in complex with GABA\n\n## Authors\n\n- Swastik Phulera<sup>1</sup> ([ORCID: 0000-0002-1272-7712](https://orcid.org/0000-0002-1272-7712))\n- Hongtao Zhu<sup>1</sup> ([ORCID: 0000-0003-1522-0500](https://orcid.org/0000-0003-1522-0500))\n- Jie Yu<sup>1</sup>\n- Derek P Claxton<sup>1</sup> ([ORCID: 0000-0002-1374-7176](https://orcid.org/0000-0002-1374-7176))\n- Nate Yoder<sup>1</sup> ([ORCID: 0000-0002-9017-0673](https://orcid.org/0000-0002-9017-0673))\n- Craig Yoshioka<sup>1</sup>\n- Eric Gouaux<sup>1</sup> ([ORCID: 0000-0002-8549-2360](https://orcid.org/0000-0002-8549-2360)) \u2020\n\n### Affiliations\n\n1. Vollum Institute Oregon Health and Science University Portland United States\n2. Howard Hughes Medical Institute Oregon Health and Science University Portland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABAA receptors, chloride-selective members of the superfamily of pentameric Cys-loop receptors. Native GABAA receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents, with mutant forms of GABAA receptors implicated in multiple neurological diseases. Despite the profound importance of heteromeric GABAA receptors in neuroscience and medicine, they have proven recalcitrant to structure determination. Here we present the structure of a tri-heteromeric \u03b11\u03b21\u03b32SEM GABAA receptor in complex with GABA, determined by single particle cryo-EM at 3.1\u20133.8 \u00c5 resolution, elucidating molecular principles of receptor assembly and agonist binding. Remarkable N-linked glycosylation on the \u03b11 subunit occludes the extracellular vestibule of the ion channel and is poised to modulate receptor assembly and perhaps ion channel gating. Our work provides a pathway to structural studies of heteromeric GABAA receptors and a framework for rational design of novel therapeutic agents.\n\n## Introduction\n\nGABAA receptors are chloride permeable, \u03b3-amino butyric acid (GABA)-gated ion channels that are responsible for the majority of fast inhibitory neurotransmission in the mammalian nervous system (Sigel and Steinmann, 2012). Because of the fundamental role that GABAA receptors play in balancing excitatory signaling, GABAA receptors are central to the development and normal function of the central nervous system (Wu and Sun, 2015). In accord with their crucial role in brain function, mutations in GABAA receptor genes are directly linked to epilepsy syndromes (Hirose, 2014) and are associated with schizophrenia, autism, alcohol dependence, manic depression and eating disorder syndromes (Rudolph and M\u00f6hler, 2014). Moreover, GABAA receptors are the targets of a large number of important therapeutic drugs, from sedatives, sleep aids and anticonvulsant medications to anesthetic agents (Braat and Kooy, 2015). GABAA receptors are also the target of alcohol and are implicated in alcohol dependence (Trudell et al., 2014).\n\nGABAA receptors belong to the pentameric ligand-gated ion channel (pLGIC) superfamily (Thompson et al., 2010). Other members of this family are nicotinic acetylcholine (nAChR), 5-HT3A, glycine, and the invertebrate GluCl and Zn2+-activated cation channels (Thompson et al., 2010). Members of the pLGIC superfamily are composed of five protein subunits and each subunit contains four transmembrane domains (M1\u2013M4) along with extracellular N- and C- termini. GABAA receptors are typically found as heteromeric channels derived from a pool of 19 possible subunits: \u03b11\u20136, \u03b21\u20133, \u03b31\u20133, \u03b4, \u025b, \u03b8, \u03c0, and \u03c11\u20133 (Sigel and Steinmann, 2012). The large number of subunits gives rise to many possible pentameric assemblies; nevertheless, the most prevalent subunit combination in the vertebrate brain is the tri-heteromeric receptor composed of two \u03b1, two \u03b2 and one \u03b3 subunit (Chang et al., 1996; Farrar et al., 1999; Tretter et al., 1997), with the arrangement of subunits being \u03b2-\u03b1-\u03b2-\u03b3-\u03b1, in a clockwise order when viewed from the extracellular space (Baumann et al., 2001; Baumann et al., 2002; Baur et al., 2006). The molecular basis for selective subunit assembly of GABAA receptors is not well understood.\n\nPioneering structural studies of the paradigmatic acetylcholine receptor (AChR) (Unwin, 2005), as well as crystallographic studies of homomeric pLGICs that include prokaryotic pLGICs (Hilf and Dutzler, 2008; Sauguet et al., 2013) and the eukaryotic GluCl (Hibbs and Gouaux, 2011), 5\u2010HT3A serotonin receptor (Hassaine et al., 2014), \u03b23 GABAA (Miller and Aricescu, 2014), \u03b13 glycine receptor (GlyR) (Huang et al., 2015), along with the cryo-EM structures of the zebrafish \u03b11 GlyR (Du et al., 2015) and the mouse 5-HT3A receptor (Basak et al., 2018), have helped to shape our understanding of receptor architecture and mechanism. Recent structures of diheteromeric nAChRs also further our understanding of subunit arrangement and function in heteromeric Cys-loop receptors (Walsh et al., 2018).\n\nThese studies, together with a large number of biochemical and biophysical experiments, have defined the transmembrane ion channel pore, its lining by the M2 helices and likely mechanisms of ion selectivity (Cymes and Grosman, 2016; Sine et al., 2010). The extracellular N-terminal domain harbors the orthosteric agonist binding site, located at subunit interfaces, in addition to multiple binding sites for an array of small molecules and ions that act as allosteric modulators (Lynagh and Pless, 2014). While the mechanism by which orthosteric agonists and competitive antagonists activate or inhibit ion channel activity is well explored (Gielen and Corringer, 2018), the molecular mechanisms for the action of allosteric ligands, especially those that act on heteromeric GABAA receptors, remain to be fully elucidated. Here we present methods for the expression and isolation of tri-heteromeric GABAA receptors and the cryo-EM structure of the rat \u03b11\u03b21\u03b32SEM GABAA receptor in the presence of GABA. The structural analysis not only defines subunit organization, but it also uncovers the mode of GABA binding to the orthosteric agonist binding site and suggests a critical role of N-linked glycosylation of the \u03b11 subunit in governing receptor assembly and, perhaps, ion channel activity.\n\n## Results\n\n### Receptor expression and structure elucidation\n\nTo enhance receptor expression we employed the M3/M4 loop deletion constructs of the \u03b11 and \u03b21 subunits analogous to the functional M3/M4 loop deletion constructs of GluCl (Hibbs and Gouaux, 2011) and GlyR (Du et al., 2015), together with a full-length construct of the \u03b32S (short splice variant) subunit (Figure 1\u2014figure supplement 1), yielding the \u03b11\u03b21\u03b32SEM construct (Claxton and Gouaux, 2018). Optimization of receptor expression constructs and conditions were monitored by fluorescence-detection, size-exclusion chromatography (FSEC) (Kawate and Gouaux, 2006). We included a 1D4 affinity tag (MacKenzie et al., 1984) on the \u03b32 subunit to selectively isolate the heteromeric complex from baculovirus-transduced mammalian cells (Goehring et al., 2014). For ensuing cryo-EM studies, we developed an \u03b11 subunit-specific monoclonal antibody, 8E3, with the aim of using the Fab to identify the \u03b11 subunit in the pseudo-symmetric receptor complex (Figure 1\u2014figure supplement 2). The resulting purified \u03b11\u03b21\u03b32SEM receptor, in the presence of the 8E3 Fab, binds muscimol, a high affinity agonist, and flunitrazepam, a benzodiazepine, with affinities similar to the full-length receptor (Figure 1\u2014figure supplement 3) (Hauser et al., 1997; Johnston, 2014).\n\nMoreover, the \u03b11\u03b21\u03b32SEM receptor also exhibits ion channel gating properties that are similar to the wild-type receptor in the presence and in the absence of the 8E3 Fab (Figure 1\u2014figure supplement 3) (Li et al., 2013). We note, however, that while the cryo-EM construct retains potentiation by diazepam, the extent of potentiation is reduced for the Fab complex.\n\nStructure elucidation was carried out using the \u03b11\u03b21\u03b32SEM receptor solubilized in \u03b2-dodecyl-maltoside (C12M) and cholesterol hemisuccinate (CHS) in the presence of 1.5 mM GABA. To enhance particle density on the cryo-EM grids in light of modest levels of receptor expression, we employed grids coated with graphene oxide. We proceeded to collect micrographs using a Titan Krios microscope and a Falcon three camera as described in the Materials and methods. Subsequent selection of particles and calculation of 2D class averages yielded projections that were readily identified as a pentameric Cys-loop receptor bound by 2 Fabs (Figure 1 and Figure 1\u2014figure supplement 4). Three dimensional reconstruction, combined with judicious masking of either the Fab constant domains or, alternatively, the receptor transmembrane domain (TMD), allowed for reconstructions at\u00a0~3.8 and\u00a0~3.1 \u00c5 resolution, respectively, based on Fourier shell correlation (FSC) analysis (Figure 1\u2014figure supplement 5 and Supplementary file 1). We note that there is substantial preferred orientation in the particle distribution and, despite substantial efforts in exploring a wide spectrum of conditions, we were unable to obtain grids that yielded more well distributed particle orientations. Inspection of the resulting density maps were consistent with these resolution estimations, and in the case of the density in the extracellular domain (ECD), the quality of the density map is excellent, allowing for visualization of medium and large side chains, as well as glycosylation of Asn side chains (Figure 1\u2014figure supplement 6). By contrast, the density for the TMD is not as well defined. While the M1, M2 and M3 helices of all subunits show strong density, with density for some residues with large side chains, the M4 helices of the two \u03b11 subunits and the \u03b32S subunit have weak density and thus we have not attempted to include them in the structure. To build a molecular structure into the cryo-EM density maps, we first generated homology models of the \u03b11, \u03b21 and \u03b32S subunits using the human \u03b23 GABAA receptor (PDB code: 4COF) (Miller and Aricescu, 2014) as a template and we then manually fit the models to the density and carried out iterative cycles of manual fitting and computational refinement, which together resulted in a structural model that fits well to the density and that has good stereochemistry (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-v2.jpg)\n\n**Figure 1.:** (a) 2D class averages. Red arrows indicate 8E3 Fab bound to \u03b1 subunits. (b) The cryo-EM map of the entire receptor viewed parallel to membrane plane. The \u03b1, \u03b2 and \u03b3 subunits are colored by lime, salmon and marine, respectively. (c) Cartoon representation of the receptor viewed parallel to the membrane plane. The extracellular domain (ECD) and transmembrane domain (TMD) are indicated. (d) Cartoon representation of an \u03b1 subunit. (e) Schematic representation of subunit arrangement, viewed from the extracellular side of the membrane.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cells expressing various subunit combinations of subunits (a) \u03b11\u03b21, (b) \u03b11\u03b21\u03b32S, (c) \u03b11\u03b22, (d) \u03b11\u03b22\u03b32S, and (e) \u03b16\u03b22\u03b32S were solubilized and analyzed by fluorescence-detection-size-exclusion chromatography (FSEC) either alone (black trace) or with 8E3 Fab (red trace). The \u03b1 subunit in each case is GFP tagged within the M3/M4 loop. Excitation and emission wavelengths were 480 and 510 nm respectively. Shifts in FSEC traces confirm that the presence of the \u03b11 subunit is required for 8E3 binding.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Representative whole-cell patch-clamp recording from TSA-201 cells expressing \u03b11\u03b21EM/\u03b32S-FR receptors activated by 5 \u03bcM GABA in the presence or absence of 1 \u03bcM Diazepam. (b) Summary of electrophysiology data representing potentiation by 1 \u03bcM Diazepam in the presence or absence of 25 nM Fab; n\u00a0=\u00a06 cells for both experiments. Unpaired t-test with Welch\u2019s correction, p=0.0040% and 95% confidence interval (CI)\u00a0=\u00a0\u22124.861 to \u22121.466. Midline and error bars represent mean and SEM, respectively. (c) Dose-response data for GABA from TSA-201 cells expressing \u03b11\u03b21EM/\u03b32S-FR receptors. EC50\u00a0=\u00a028.68 \u03bcM (95% CI\u00a0=\u00a021.38\u201338.49 \u03bcM) or 22.51 \u03bcM (95% CI\u00a0=\u00a012.69\u201339.93 \u03bcM) GABA in the presence or absence of 25 nM Fab, respectively. Error bars represent SEM and n\u00a0=\u00a06 cells for both experiments. (d) and (e), Saturation binding curve of [Methyl-3H]flunitrazepam (d) and [3H]muscimol (e) to \u03b11\u03b21\u03b32SEM receptor Fab complexes; the plotted result is from a representative experiment. Kd\u00a0=\u00a05.49 nM (95% CI\u00a0=\u00a04.25\u20137.05 nM) or 109.3 nM (95% CI\u00a0=\u00a091.76\u2013129.7 nM) for [Methyl-3H]flunitrazepam and [3H]muscimol, respectively. Error bars represent SEM.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp4-v2.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Typical micrograph of tri-heteromeric GABAA receptor. (b) FSC curves for the whole map and ECD map. The resolution is determined using the gold standard FSC standard. FSC 0.5 is also labeled. Purple and red curves represent whole map and ECD map curve, respectively. The resolution for the whole map and the ECD map is 3.8 and 3.1 \u00c5, respectively. (c) and (d) The particle angular distribution for the whole map and the ECD map, respectively. (e) and (f) The local resolution map for the whole map and the ECD map, respectively.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (a) Glycosylation densities located on the \u03b1 and \u03b1* subunits, derived from modification of Asn 110 and protruding into the extracellular vestibule of the channel of the receptor are shown. The glycosylation densities on the exterior surface of the receptor and located on the \u03b2 (Asn 149) and \u03b2* (Asn 80) subunit are depicted, contoured at 5.5 \u03c3. These densities are from the ECD map. (b) Representative densities from the \u03b1, \u03b2 and \u03b3 subunits from the ECD map, contoured at 11 \u03c3. (c) Illustrative densities from the \u03b1, \u03b2 and \u03b3 subunits from the whole map, contoured at 5.5 \u03c3. (d) M3 and M4 densities for the \u03b1, \u03b2 and \u03b3 subunits from the whole map, contoured at 4.5 \u03c3.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** The glycosylation sites are marked with a red arrow, the corresponding position is boxed and the glycosylated residue is shown in a red background; the antibody binding sites (based on analysis of buried surface area) are indicated with a black arrow and represent antibody binding in the \u03b1 subunit. Numbering for the \u03b11, \u03b21, \u03b32S subunits is maintained as per the mature peptide.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** The 8E3 fab binds specifically on the \u03b1 subunit to residues located on the \u03b2-sheets 1, 8, 9 and 10. Analysis for the buried surface area was done by placing a model of Fab in the ECD electron density map and analyzing the resulting model on the PDBePISA web server. Interface residues are shown as sticks (a) and surface representation (b).\n\n### Tri-heteromeric GABAA receptor subunit arrangement\n\nThe \u03b11\u03b21\u03b32SEM receptor hews to the classic architecture of Cys-loop receptors, first established by cryo-EM studies of the nicotinic receptor (Toyoshima and Unwin, 1988; Unwin, 1993; Unwin, 2005), with a clockwise subunit arrangement of \u03b11-\u03b21*-\u03b32S-\u03b11*-\u03b21 when viewed from the extracellular side of the membrane. Here we label the \u03b11* and \u03b21* subunits that are adjacent to the unique \u03b32S subunit with asterisks in order to distinguish them from their chemically equivalent yet spatially distinct \u03b11 and \u03b21 partners. The arrangement of subunits in this heteromeric complex, as mapped out by the \u03b11-specific Fab fragments, is in agreement with previous biochemical studies (Figure 1\u2014figure supplement 2) (Baur et al., 2006). The subunit identity is further verified by prominent N-linked glycosylation sites that are unique to each subunit. The epitope of the Fab resides entirely on the periphery of the \u03b11 ECDs and the Fab buries approximately 760 \u00c52 of surface area in the interface with the receptor. Most of the receptor residues that interact with the Fab are located on the \u03b28, \u03b29 and \u03b210 elements of secondary structure (Figure 1\u2014figure supplements 7 and 8). While the Fab binding site is near the crucial C-loop, we note that it does not overlap with it and thus the Fab is unlikely to directly influence agonist binding, in agreement with the agonist binding experiments (Figure 1\u2014figure supplement 3).\n\n### Subunit interfaces\n\nSubunit-subunit interactions within the extracellular domain play a major role in pLGIC function (Jones and Henderson, 2007) and in GABAA receptor assembly. Here, we estimate that within the ECD each subunit buries as much as 1150\u20131600 \u00c52 of solvent accessible surface area within each subunit interface (Supplementary file 2). There are five unique subunit interfaces in the tri-heteromeric receptor and, while we observed a similar arrangement of the ECDs at each interface, we also found subtle differences due to variations in amino acid sequences and in local protein structure. There are solvent accessible fenestrations at subunit interfaces in the ECD that \u2018connect\u2019 the extracellular solution with the extracellular vestibule, possibly providing an alternative pathway for ions to access the ion channel (Figure 2A). When comparing the various subunit interfaces one can readily identify specific interactions of amino acids that are common to all interfaces (Figure 2). As examples, at the \u03b1(+)/\u03b2(-) interface (Figure 2B), there is a conserved interaction between Tyr209 at the beginning of \u03b210 from the \u03b1 subunit at the (+) face to Arg117 at \u03b25 in (\u2013) face, as well as a hydrogen bond between Tyr206 from the \u03b1 subunit and Gln64 from the \u03b2 subunit. At the \u03b2(+)/\u03b1*(-) interface (Figure 2C), a similar interaction is observed between Tyr205 at the beginning of \u03b210 from the \u03b2 subunit of the (+) subunit and Arg117 at \u03b25 in the (\u2013) subunit. Furthermore, a hydrogen bond between Thr202 from the \u03b2 subunit and Arg66 from the \u03b2 subunit is observed even though, in comparison to the \u03b1(+)/\u03b2(-) interface, the Gln is replaced by Arg. At the \u03b1*(+)/\u03b3(-) interface (Figure 2D), the distance between Tyr209 from the \u03b1 and Arg132 from the \u03b3 subunit is similar to that observed at the \u03b1(+)/\u03b2(-) interface. The hydrogen bond observed in \u03b1(+)/\u03b2(-), \u03b2(+)/\u03b1*(-), \u03b2*(+)/\u03b1(-) (Figure 2B,C and F) between a Thr from the (+) face and Arg/Gln at the (-) face is lost because Ala79 occupies the position corresponding to the Arg/Gln residues. At the \u03b3(+)/\u03b2*(-) interface, Tyr220 from the \u03b3 subunit is within hydrogen bonding distance to Arg117 from the \u03b2 subunit. Interestingly, with the other set of interactions seen in the \u03b1(+)/\u03b2(-), \u03b2(+)/\u03b1*(-) and \u03b2*(+)/\u03b1(-) interfaces (Figure 2B,C and F) between a Thr from the (+) face and a Arg/Gln at the (\u2013) face, the Thr is replaced by a Ser and forms a hydrogen bond with the Tyr220 from the \u03b3 subunit rather than interacting with the Gln64 from the \u03b2 subunit. The \u03b2*(-)/\u03b1(-) interface closely resembles the spatially distinct \u03b2(+)/\u03b1*(-) interface (Figure 2F,C), with both of the interactions preserved.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig2-v2.jpg)\n\n**Figure 2.:** (a) The interface region between the \u03b1 and \u03b2 subunits, with the boxed area enlarged in panels b-f and the viewing angle indicated by an arrow, the region with fenestration between the subunits is marked with an asterisk. The \u03b1 and \u03b1* subunits are colored in salmon, \u03b2 and \u03b2* are colored in lime, and \u03b3 is colored in marine and shown as cartoon. Side chains for amino acids for which specific interactions were observed are shown with interactions depicted in dashed lines. In (b) is the \u03b1(+)/\u03b2(-) interface, (c) the \u03b2(+)/\u03b1*(-) the interface, (d) the \u03b1*(+)/\u03b3(-) interface, (e) the \u03b3(+)/\u03b2*(-) interface and (f) the \u03b2*(-)/\u03b1(-) interface.\n\nTo investigate the overall conformation of the extracellular domain, we compared the ECDs of our current structure and their relative positioning to the existing structures of homomeric pLGICs. To do this, we superposed the \u03b1 subunit of our structure onto one of the subunits of the homomeric 5-HT3A receptor in the apo (Basak et al., 2018) or the desensitized state (Hassaine et al., 2014), the human GABAA receptor bound to benzamidine (Miller and Aricescu, 2014) and homomeric GlyR bound to strychnine or to glycine/ivermectin (Du et al., 2015) (Figure 3\u2014figure supplement 1).\n\nWe observe that the ECDs in all the homomeric structures are located at similar distances as in our current structure. Nevertheless, if we compare the pentagon formed by joining a line through the center of mass of these individual ECDs, we observe that these are rotated in comparison to our current structure and that our current structure most resembles the conformation of glycine/ivermectin-bound GlyR. Thus, we propose that the conformation of the ECD represents an agonist/allosteric modulator bound, activated-like state.\n\n### Neurotransmitter binding sites\n\nTo illuminate the molecular basis for GABA binding, we determined the structure of the \u03b11\u03b21\u03b32SEM receptor in the presence of saturating GABA (Sigel and Steinmann, 2012). Neurotransmitter binding sites in Cys-loop receptors are located at the interface of two adjacent subunits and are composed of the three loops from the principle (+) face and \u03b2-strands from the complementary (-) face (Nys et al., 2013). There are three substantive densities within the neurotransmitter binding sites, at the interface between the \u03b2*(+)/\u03b1(-), the \u03b1(+)/\u03b2(-) and the \u03b2(+)/\u03b1*(-) subunits, an observation that diverges from previous studies suggesting that there are only two canonical GABA binding sites located at the \u03b2*(+)/\u03b1(-) and \u03b2(+)/\u03b1*(-) interfaces (Figure 3A and Figure 3\u2014figure supplement 2) (Chua and Chebib, 2017). Nevertheless, other studies have pointed out that GABA may bind to interfacial binding sites in addition to the two canonical sites (Chua and Chebib, 2017). The oval-like densities in the two canonical sites are well fit by the chemical structure of GABA, although the density feature at the \u03b2(+)/\u03b1*(-) interface is weaker than that at the \u03b2*(+)/\u03b1(-) site (Figure 3\u2014figure supplement 2). Interestingly, the third feature at the \u03b1(+)/\u03b2(-) interface, with a sausage-like shape, has the strongest density (Figure 3\u2014figure supplement 2). Because GABA is the only small molecule present in the sample buffer that has a size and shape similar to the density feature, we speculate that the density belongs to a GABA molecule. Nevertheless, it is possible that the density at the \u03b1(+)/\u03b2(-) interface belongs to an unidentified small molecule that co-purified with the receptor. Alternatively, the density feature could be due to several ordered water molecules. Given the continuous nature of the density, however, we favor the notion that the density is attributable to non-water, small molecule. Further studies will be required to experimentally determine GABA binding stoichiometry, and higher resolution cryo-EM studies will be needed to more thoroughly define the density features.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-v2.jpg)\n\n**Figure 3.:** (a) Top down view of the receptor looking from the extracellular side. The \u03b1 and \u03b1* subunits are colored in salmon, \u03b2 and \u03b2* are colored in lime, and \u03b3 is colored in marine. GABA molecules are shown in sphere representation. (b) View of the binding site between the \u03b2*(+)/\u03b1(-) subunits viewed parallel to the membrane. Dashed lines indicate hydrogen bonds, cation-\u03c0 interactions and salt bridges. The \u03b2*(+) and \u03b1(-) subunits are colored in salmon and lime, respectively. The residues in the \u03b2*(+) and \u03b1(-) subunits and GABA are depicted in salmon, lime and yellow sticks, respectively. (c) View of the binding site between the \u03b1(+)/\u03b2(-) subunits viewed parallel to the membrane. Subunits and residues are depicted in the same color code as in (b). The residues differing from the corresponding residues in the \u03b2*(+)/\u03b1(-) binding site are indicated with red stars. (d) View of the binding site between the \u03b3 (+)/\u03b2*(-) subunits looking parallel to the membrane. Residues in the \u03b3(+) and \u03b2*(-) binding site are shown in marine and salmon sticks, respectively. The residues differing from the corresponding residues in the \u03b2*(+)/\u03b1(-) binding site are indicated with red stars. (e) View of the binding site between the \u03b1*(+)/\u03b3(-) binding site viewed parallel to the membrane. Residues in the \u03b1*(+) and \u03b3(-) binding site are shown in lime and marine sticks, respectively. The residues differing from the corresponding residues in \u03b2*(+)/\u03b1(-) are indicated with red stars. (f) Similar view of the diazepam binding site as in panel (e).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The C\u03b1 traces from chain A are used to do the alignment. (a) The distances between the nearby centers of mass, together with the angles of the pentagon of centers of mass, are shown. (b) The ECD structure is in lime and 4PIR is in marine. Lime and marine balls indicate the centers of mass of one subunit for the ECD structure and 4PIR, respectively. The distances between the two nearby centers of mass are labeled. The distances related to the ECD are labeled outside of the pentagon and the distances labeled inside the pentagon are for 4PIR. The angle indicates the approximate rotation of the pentagon formed by the five centers of mass between the ECD and 4PIR. (c), (d), (e) and (f) similar to (a), the distances between the nearby two centers of mass are shown overlapping with the ECD structure.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Three non-protein densities were found between the interfaces of subunits, (a) for the \u03b2*(+)/\u03b1(-) interface, (b) for the \u03b1(+)/\u03b2(-) interface and (c) for the \u03b2(+)/\u03b1*(-). GABA molecules were placed in these densities colored with yellow bonds, blue nitrogen and red oxygen. To fit the GABA molecules to their respective density features we utilized the shapes of the density features and the surrounding chemical environments. The resulting structural models resulted in a good fit of GABA to the density and chemically reasonable ligand-protein interactions.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** \u03b1, \u03b2 and \u03b3 subunits are colored in salmon, lime and marine, respectively. The ligand binding site is indicated with a black dash frame.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a) Overall comparison of ECD of \u03b2*/ \u03b1 subunits with the human \u03b23 GABAA, GlyR-open and GlyR-closed. \u03b2*(+) and \u03b1(-) are colored in salmon and lime. Human-\u03b23, GlyR-open and GlyR-closed are colored in cyan, yellow and gray, respectively. Loop C was highlighted with a black frame. The enlarged view of loop C is shown in (b), (c) and (d).\n\nIn the canonical binding sites, GABA is wedged between the \u03b2*(+) and \u03b1(-) subunits with extensive interactions with residues from loop C, loop B, loop A, \u03b22 strand and \u03b26 strand. The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-\u03c0 interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (\u03b26 strand) and Thr202 (loop C) and a salt bridge with Arg66 (\u03b22 strand). In addition, sandwiching of the amino group of GABA between Tyr205 (loop C) and Tyr157 further increases the number of interactions between agonist and receptor (Figure 3B). Notably, Tyr97, Glu155 and Arg66 are unique in the \u03b2 subunit compared to the corresponding residues in the \u03b1 and \u03b3 subunits and are crucial for substrate binding, as reported in previous studies demonstrating that Tyr97 and Arg66 play an important role in the binding pocket (Newell et al., 2004; Sander et al., 2011; Smith and Olsen, 1995). Experiments employing non native amino acids suggest that Tyr 97 forms a cation-\u03c0 interaction with GABA instead of Tyr 205 (Padgett et al., 2007). We note, however, that the aromatic ring of Tyr 97 is sandwiched between Arg 131 of the adjacent \u03b1 subunit and Glu 155 of \u03b2 and thus, in this structure, it is not well positioned to form a cation-\u03c0 interaction with GABA. Nevertheless, we cannot exclude the possibility that there are changes in the conformation of the binding pocket that allow for cation-\u03c0 interactions between GABA and Tyr 97. Mutation of Tyr157, a highly conserved residue in the \u03b1, \u03b2 and \u03b3 subunits, significantly reduces the binding affinity for agonist and antagonist (Lummis, 2009). Similar neurotransmitter binding interactions have previously been reported in the other Cys-loop members, including GluCl and GlyR (Du et al., 2015; Hibbs and Gouaux, 2011). Superposing this canonical binding site with the putative third \u2018GABA\u2019 binding site at the interface of the \u03b1(+)/\u03b2(-) site shows that there are fewer interactions between \u2018GABA\u2019 and the surrounding residues, such as the cation-\u03c0 interactions with Tyr209 and contacts with Thr206 and the carbonyl oxygen of Tyr159 (Figure 3C). We thus emphasize that, while the density feature is unambiguous, the identification of this site as a bona fide GABA binding site will require additional investigation.\n\nWe also superposed the canonical GABA binding site at the \u03b2*(+)/\u03b1(-) interface with the homologous sites at the \u03b3(+)/\u03b2(-) and \u03b1*(+)/\u03b3(-) interfaces, finding differences among the residues that play important roles in binding GABA, differences that may lead to weak or no GABA binding (Figure 3D and E). In inspecting these sites that include the \u03b32S subunit, we have attempted to better understand the binding site of benzodiazepines, such as diazepam, which function as allosteric potentiators of the \u03b3-subunit containing GABAA receptors (Figure 1\u2014figure supplement 3) (Li et al., 2013). Previous studies demonstrated that diazepam binds to the \u03b1*(+)/\u03b3(-) interface with high affinity (Li et al., 2013). In agreement with previous studies, we speculate that \u03b1*His101 could provide aromatic or hydrophobic interactions with the pendant phenyl ring of diazepam. Additionally, \u03b1*Tyr209, \u03b1*Phe99, \u03b1*Tyr159 and \u03b3Phe77 likely also contribute to hydrophobic interactions with diazepam (Figure 3F). All these key structural residues surrounding the diazepam site have been identified in homology models and functional experiments (Richter et al., 2012; Teiss\u00e9re and Czajkowski, 2001; Wongsamitkul et al., 2017). Indeed, mutation of \u03b1*His101, \u03b1*Tyr209 and \u03b1*Tyr159 markedly impairs the modulation by diazepam (Amin et al., 1997), while mutation of \u03b3Phe77 results in decreased binding affinity.\n\nAgonist binding has been proposed to induce loop C closure in the open, ion conducting state and antagonist binding to stabilize an \u2018open\u2019 configuration of loop C in the closed, non-conducting state of the ion channel (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013). To probe the relationship between agonist binding and the position of loop C, we superposed the \u03b2* subunit with GABA bound onto the \u03b1* and \u03b3 subunits and found that loop C in the \u03b2* subunit is in an \u2018open\u2019 conformation relative to that in the \u03b1* and \u03b3 subunits (Figure 3\u2014figure supplement 3). Additionally, superposition of the ECD of the \u03b2*/\u03b1 subunit with the human \u03b23 GABAA, GlyR-open and GlyR-closed structures suggests that the position of loop C in the \u03b2* subunit closely approximates that in the GlyR-closed non-conducting state, while loop C in the human \u03b23 GABAA is in a more \u2018open\u2019 configuration (Figure 3\u2014figure supplement 4). However, this interpretation is subject to caveats because it is derived from the comparison of different subunits and different receptors. It would be more persuasive to define the relationship between loop C and the functional state of the receptor using the same receptor in different ligand bound/functional states, as well as in the absence of bound Fab.\n\n### Glycosylation within the extracellular vestibule\n\nThere is a well-defined glycosylation site at Asn110 of the \u03b1 subunit, within the extracellular vestibule of the receptor, at a site of post-translational modification that is distinct from the other GABAA receptor subunits (Figure 4A) and not observed before in any Cys-loop receptor (Figure 1\u2014figure supplement 8, Figure 4\u2014figure supplement 1). This site is predicted to be glycosylated based on sequence analysis (Blom et al., 2004; Julenius et al., 2005; Miller and Aricescu, 2014), and the quality of the cryo-EM map allows us to confidently locate sugar residues involved in glycosylation (Figure 4B and C). For the \u03b1 subunit at Asn110 we have built a carbohydrate chain with seven sugar residues and, for the \u03b1* subunit at Asn 110, we have built a carbohydrate chain with four sugar groups (Figure 4C and D). These two carbohydrate chains are remarkably well ordered, a feature that is likely due to the fact that the chains are contained within the extracellular vestibule and are in direct contact with numerous protein side chains (Figures 4A and 5). Additional glycosylation sites found in the \u03b2 subunit have been previously observed in the \u03b23 crystal structure (Miller and Aricescu, 2014) and are located on the external surface of the receptor, pointing away from the receptor (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of the sugar chain chemical structure for the Asn110 modification. The amino acids interacting with the sugar chains are also shown. The names of the carbohydrates are given at the bottom of the panel (Gamian, 1992). (b) Top down view of ECD map. The \u03b1, \u03b2 and \u03b3 subunits are colored by light green, salmon and blue, respectively. The glycosylation densities are colored by purple. The related Asn residue numbers are labeled. (c) Two views of the density of the glycosylation from the \u03b1* subunit, isolated and fitted with four sugar molecules. Asn110 and the name of sugars are labeled. (d) Similar panel to (c), showing the density of the glycosylation on the \u03b1 subunit fit with a carbohydrate chain containing seven sugar residues.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sequences were downloaded from swiss-prot with the following identifiers: P14867, P47869, P34903, P48169, P31644, Q16445, P18505, P47870, P28472, Q8N1C3, P18507, Q99928, O14764, P78334, Q9UN88, O00591, P24046, P28476, A8MPY1, P23415, P23416, O75311, P48167, P46098, O95264, Q8WXA8, Q70Z44, A5X5Y0, P02708, Q15822, P32297, P43681, P30532, Q15825, P36544, Q9UGM1, Q9GZZ6, P11230, P17787, Q05901, P30926, P07510, Q07001. Fully conserved positions are shaded black and partially conserved positions are shaded gray. Numbering shown is based on the swiss-prot record and represents the numbering for the nascent peptide. The unique \u03b1-specific glycosylation site is colored in red.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig5-v2.jpg)\n\n**Figure 5.:** (a) Top-down view of the glycosylation pocket parallel to the membrane. The \u03b1 and \u03b1* subunits are colored in salmon, the \u03b2 and \u03b2* subunits are in lime and the \u03b3 subunit is in marine. Glycosylation from the \u03b1/\u03b1* and \u03b2/\u03b2* subunits are shown in green and salmon sticks. Interacting residues from the \u03b3 subunit are depicted in stick representation (marine). (b) Enlarged view of the glycosylation pocket indicated by the dash-outlined frame in (a). The \u03b2 and \u03b2* subunits are removed for clarity. (c) Side view of the glycosylation pocket perpendicular to the membrane. The \u03b2* subunit was removed for clarity. (d) Enlarged view of the glycosylation pocket from the dash-outlined frame in (c). The \u03b2 and \u03b2* subunits were removed for clarity.\n\nThe glycosylation at the \u03b1 subunit is well supported by the density to the extent that even chain branches can be easily defined (Figure 4C and D). These glycosylation sites are located in the ECD at the center of the pore (Figures 4B and 5) and they occupy a substantial portion of the ECD cavity. The volume of glycosylation in the vestibule is approximately 700 \u00c53 at the contour level of 6 \u03c3, which occupies nearly 18% of the total volume of the ECD vestibule. Because it is likely that each carbohydrate chain has sugar residues that are not resolved in the density map, we predict that the volume of the ECD vestibule occupied by these carbohydrate groups is actually larger than our estimation. There are extensive and specific interactions observed between the sugar groups and the \u03b32S subunit involving residues Asn101, Lys112 and Trp123 (Figures 4A and 5).\n\nWe propose that the glycosylation at Asn110 of the \u03b1 subunits is important for subunit assembly, effectively blocking the formation of pentamers with more than two \u03b1 subunits, due to the fact that more than two carbohydrate chains would engage in sterically prohibitive van der Waals clashes. Moreover, we speculate that the contacts between the carbohydrate at position Asn110 of the \u03b1 subunit and, for example, the Trp123 of the \u03b32S subunit, favor the inclusion of the \u03b3subunit as the last subunit in the formation of the heteropentamer. This is consistent with prior studies which showed that glycosylation of the \u03b1 subunit is essential for proper receptor assembly in mammalian cells (Buller et al., 1994), as well as the important role of tryptophan residues in interacting with carbohydrates in general (Maenaka et al., 1994; Stewart et al., 2008). We further suggest that these carbohydrate chains within the extracellular vestibule may also modulate receptor gating and, perhaps, ion channel block by large ion channel blockers. Indeed, it is intriguing that a post-translational modification such as N-linked glycosylation occupies such an important and \u2018internal\u2019 site in a neurotransmitter-gated ion channel.\n\n### Conformation and asymmetry of the TMD\n\nIn the GABAA structure, the intrinsic flexibility of the TMD or the presence of the detergent micelle prevents us from accurately placing residues in each TM helix, especially in the M4 helices. Nevertheless, the density of the M1, M2 and M3 helices is well defined, allowing us to reliably position the helices. We note that in this receptor composed of \u03b1, \u03b2 and \u03b3 subunits there is a breakdown in 5-fold symmetry observed in the homomeric or di-heteromeric Cys-loop receptors (Figure 6) (Miller and Aricescu, 2014; Nys et al., 2013). While the distances between the center of mass (COM) of two adjacent subunits are similar, where the COMs were calculated using the M1, M2 and M3 helices of each subunit, varying from 17.6 \u00c5 to 19 \u00c5, the angles in the pentagon range from 94\u00b0 to 124\u00b0 (Figure 6A). Looking at the top-down views of five central M2 helices, the two \u03b1 M2 helices are located away from the other three TM helices. Superposition of the two \u03b2 subunits with the human \u03b23 GABAA receptor shows that there are rotations of each TM helix in the \u03b11\u03b21\u03b32SEM receptor structure relative to corresponding TM helices in the human \u03b23 GABAA receptor, further demonstrating the asymmetric structure of the TMD (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig6-v2.jpg)\n\n**Figure 6.:** (a) View of the TMD from the extracellular (left panel) side or from the intracellular side (right panel) of the membrane. The \u03b1 and \u03b1* subunits are colored in salmon, \u03b2 and \u03b2* are colored in lime, and \u03b3 is colored in marine. Center of mass of M1, M2 and M3 helices for each subunit, shown as a solid black circle, was generated by Pymol. Distances are in \u00c5. (b) Superposition of the TMD in the GABAA receptor with human \u03b23 (PDB code: 4COF). The TMD of the human \u03b23 is colored in cyan.\n\nThe asymmetry in the TMD complicates defining whether the structure represents an open or closed state, as the M2 helices lining the pore in the \u03b2 subunit display a similar orientation as in the desensitized state of the human \u03b23 GABAA receptor, yet the \u03b1 subunits are farther from the pseudo 5-fold axis, enlarging the pore (Figure 6B). Because of the asymmetric structure of the TMD and the fact that the structure was solved using a receptor embedded in a detergent micelle, the TMD structure may represent a non-native conformation. Future structural studies using different detergents and lipids, or using lipid-filled nanodiscs, will be important in elucidating structures in specific functional states.\n\n## Discussion\n\nHere we directly visualize the subunit stoichiometry and subunit arrangement for a tri-heteromeric GABAA receptor. While previous studies have suggested that GABAA receptor assembly occurs via defined pathways that limit the receptor diversity (Sarto-Jackson and Sieghart, 2008), precise molecular mechanisms regarding assembly are unknown. If we consider how heteromeric GABAA receptors form from \u03b1, \u03b2 and \u03b3 subunits, we speculate that the larger contact areas in the ECD region makes formation of the \u03b2(+)/\u03b1(-) interface favorable, thus leading to \u03b1/\u03b2 assembly intermediates, which then transition to (\u03b1/\u03b2)2 intermediates. The crucial glycosylation site on the \u03b1 subunit at Asn110 disfavors addition of a third \u03b1 subunit, due to steric clashes, and that either a \u03b2 or a \u03b3 subunit will be incorporated to complete the heteropentamer (Figure 7). Thus, the glycosylation at Asn110 of the \u03b1\u00a0subunits not only plays an important role in ion channel assembly, but it may also be important to ion channel function.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig7-v2.jpg)\n\n**Figure 7.:** Steric clashes prevent the formation of a pentameric receptor with more than 2 \u03b1 subunits, while other combinations are allowed. Individual subunits are marked and shown as circles. The glycosylation of the \u03b1 subunit at position Asn110 is shown as a purple \u2018Y\u2019.\n\nInvestigation of the GABA binding site identified subunit-specific interactions. Interestingly, we also find a strong density at a non-canonical site at the \u03b1(+)/\u03b2(-) interface. We postulate that this density is GABA, although it is also possible that it represents a ligand that co-purified with the receptor and could be a binding site for agonists or other small molecules that are involved in regulation of the receptor function. Our results lay the foundation for future studies directed towards developing novel therapeutic agents that modulate GABAA receptors, provide methods to express and elucidate structures of GABAA receptors and illuminate the role of post translational modifications on GABAA receptor assembly, structure and function.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>GBRB1_RAT</td>\n      <td>Synthetic</td>\n      <td>UniProtKB - P15431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>GBRA1_RAT</td>\n      <td>Gift from Dr. David S. Weiss</td>\n      <td>UniProtKB - P62813, Gene ID 29705</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>GBRG2_RAT</td>\n      <td>Gift from Dr. David S. Weiss</td>\n      <td>UniProtKB - P18508, Gene ID 29709</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo Sapiens)</td>\n      <td>TSA201</td>\n      <td>ATCC</td>\n      <td>ATCC Cat# CRL-11268, RRID:CVCL_1926</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>8E3</td>\n      <td>OHSU VGTI, Monoclonal Antibody Core</td>\n      <td></td>\n      <td>Isotype: IgG2b, kappa</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEG BacMam</td>\n      <td>doi: 10.1038/nprot.2014.173</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GABA</td>\n      <td>Sigma</td>\n      <td>CAT NO. A5835</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Relion-2.1</td>\n      <td>doi: 10.1016/j.jsb.2012.09.006</td>\n      <td>RRID:SCR_016274</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>doi:10.1038/nmeth.4193</td>\n      <td></td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>PyMOL Molecular Graphics System, Schr\u00f6dinger, LLC</td>\n      <td>RRID:SCR_000305</td>\n      <td>http://www.pymol.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>doi:10.1002/jcc.20084</td>\n      <td>RRID:SCR_004097</td>\n      <td>http://plato.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bsoft</td>\n      <td>doi:10.1006/jsbi.2001.4339</td>\n      <td></td>\n      <td>https://lsbr.niams.nih.gov/bsoft/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Localscale</td>\n      <td>doi:10.7554/eLife.27131</td>\n      <td></td>\n      <td>https://git.embl.de/jakobi/LocScale</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>doi:10.1107/S2059798318006551</td>\n      <td>RRID:SCR_014224</td>\n      <td>https://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Molprobity</td>\n      <td>doi:10.1107/S0907444909042073</td>\n      <td>RRID:SCR_014226</td>\n      <td>http://molprobity.biochem.duke.edu</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSparc</td>\n      <td>doi:10.1038/nmeth.4169</td>\n      <td></td>\n      <td>https://cryosparc.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf</td>\n      <td>doi:10.1016/j.jsb.2015.11.003</td>\n      <td></td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gctf/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DoG picker</td>\n      <td>doi: 10.1016/j.jsb.2009.01.004</td>\n      <td></td>\n      <td>https://omictools.com/dog-picker-tool</td>\n    </tr>\n  </tbody>\n</table>\n\n### Construct description\n\nThe full-length rat GABAA receptor subunit isoforms \u03b11 (Gene ID 29705) and \u03b32S (Gene ID 29709) with the native signal sequence were a gift from Dr. David S. Weiss. The \u03b11-LT construct was generated by replacing a portion of the M3/M4 cytoplasmic loop from 313 to 381 by a Gly-Thr linker and adding a thrombin site and a His8 tag to the C-terminus. The \u03b21-LT subunit (Gene ID 25450) was synthesized and cloned into pEG BacMam by Bio Basic Inc. with residues K309-K414 replaced with a Gly-Thr linker, along with a thrombin site and a His8 tag at the C-terminus. A bicistronic construct called \u03b11\u03b21EM containing \u03b11-LT and \u03b21-LT, in the context of the pEG BacMam vector, was used for large scale expression. The \u03b32SEM subunit construct has a three-residue (Gly-Arg-Ala) insertion between Asp374 and Cys375 along with a thrombin site, a His8 tag and a 1D4 tag at the C-terminus. For electrophysiology experiments the FusionRed fluorophore was inserted in the \u03b32S subunit within the M3/M4 loop using an AscI restriction site; this construct is called \u03b32S-FR. A cartoon depiction of the constructs is provided in Figure 1\u2014figure supplement 1.\n\n### Preparation of an \u03b1 subunit-specific Fab\n\nThe purified \u03b11\u03b21EM receptor complex in lauryl maltose neopentyl glycol was used for immunization. Initial screening returned a large number (>200) of IgG positive mAb candidates. ELISA screening was used to determine the highest binding antibodies against receptor in the native and denatured states at a 1:300 dilution. Those that selectively bound to the native state were chosen for further characterization. Subsequent ELISA binding results at a 1:3000 dilution further filtered the candidate pool to 40 supernatants which were examined by western dot blot. Subsequent FSEC analysis identified 8E3 as a \u03b11 specific antibody (Figure 1\u2014figure supplement 2). Isolated mAb at 0.5 mg/ml in 50 mM NaPO4 pH 7 buffer containing 10 mM EDTA, 10 mM L-Cys, 1:100 papain (w/w) was digested for 2 hr at 37\u00b0C. The reaction was quenched by adding 30 mM Idoacetamide and placing on ice for 20 mins in the dark. After verification of the digestion by SDS page, the Fc portion was separated using Protein A resin and the flow through containing Fab was collected and concentrated for further use.\n\n### Expression and purification\n\nP1 virus for the \u03b11\u03b21EM and the \u03b32SEM was generated and amplified using standard procedures to obtain P2 virus. Viruses were stored at 4\u00b0C in the dark and supplemented with 1% FBS. Virus titer was determined using flow cytometry in a ViroCyt Virus Counter 2100 Ferris et al., 2011Ferris et al., 2011Ferris et al., 2011Ferris et al., 2011(Ferris et al., 2011). The tri-heteromer (\u03b11\u03b21\u03b32SEM) was expressed in TSA201 suspension cells. Infection was performed at a cell density of 1.5\u22123 \u00d7 106 cells/mL in Gibco Freestyle 293 Expression medium supplemented with 1% FBS and placed in a humidity- and CO2-controlled incubator. The total volume of virus added was less than 10% of the culture volume in all cases. Cells were infected with an MOI of 2 for both the viruses. After 24 hr of infection at 30\u00b0C, sodium butyrate and picrotoxinin were added at final concentrations of 10 mM and 12.5 \u03bcM, respectively, and the flasks were shifted to 27\u00b0C for another 24 hr. All procedures thereafter were done either on ice or in a cold room. Cells were harvested by centrifugation and the pellets were washed with TBS pH 8 containing 25 mM MgCl2 and 5 mM CaCl2. The pellets were re-suspended in 30 mL/L of culture volume in wash buffer with 1 mM PMSF, protease inhibitors (2 \u03bcg/ml leupeptin, 2.0 \u03bcM pepstatin and 0.8 \u03bcM aprotinin), 1.5 mM GABA, 20 \u03bcM ivermectin, and 25 \u03bcg/mL DNAse I. Cells were then sonicated for a 3:30 min cycle (15 s on/off) while stirring. Cell debris was removed by centrifugation at 7500 g for 20 mins, followed by centrifugation at 125,000 g for 1.5 hr, to pellet the cellular membranes. Membranes were re-suspended (~7 ml/lit culture) in 20 mM NaPO4 pH 8, 200 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, 5 \u03bcg/mL DNAse I, 0.3 mM PMSF, 1.5 mM GABA and 10 \u03bcM ivermectin and mechanically homogenized. Membranes were solubilized by adding 2% (w/v) C12M and 1 mM CHS for 1 hr at 4\u00b0C. Solubilized membranes were centrifuged for 50 min at 125,000 g. The supernatant was then mixed with 1D4 affinity resin equilibrated in 20 mM NaPO4 pH 8, 200 mM NaCl, and 1 mM C12M for 3\u20134 hr at 4\u00b0C with gentle mixing. The resin was washed with 100 column volumes of the equilibration buffer; elution was achieved using a buffer supplemented with 0.2 mM 1D4 peptide. The eluted protein was concentrated by ultrafiltration, followed by the addition of 2.1 molar fold excess of 8E3 Fab. The concentrated sample was loaded onto a Superose 6 increase 10/300 GL column equilibrated with 20 mM HEPES pH 7.3, 200 mM NaCl, 1 mM C12M and 1.5 mM GABA. The flow rate was kept at 0.5 mL/min.\n\n### Radio ligand binding assay\n\nBinding assays were performed with the 10 nM \u03b11\u03b21\u03b32SEM receptor-Fab complex using either 0.75\u2013500 nM [3H]-muscimol or 1\u20131000 nM [3H]-flunitrazepam in a buffer containing 20 mM Tris pH 7.4, 150 mM NaCl, 1 mM C12M, 20 \u03bcg/ml BSA and 1 mg/ml YiSi Copper HIS TAG scintillation proximity assay beads (Perkin Elmer, MA). Flunitrazepam binding was measured in the presence of 1.5 mM GABA. Non-specific signal was determined in the presence of 1 mM GABA for the muscimol and 1 mM diazepam for flunitrazepam. Experiments were performed using triplicate measurements. Data was analyzed using Prism 7.02 software (GraphPad, CA) using a one site binding model.\n\n### Electrophysiology\n\nTSA-201 cells grown at 30\u00b0C in suspension were transfected with plasmid DNA encoding the bicistronic \u03b11\u03b21EM construct and the monocistronic \u03b32S-FR construct using Lipofectamine 2000. Cells were plated on glass coverslips 2 hr prior to recording, and all recordings were conducted 18\u201336 hr after transfection.\n\nPipettes were pulled and polished to 2\u20134 M\u2126 resistance and filled with internal solution containing (in mM) 140 CsCl, 4 NaCl, 4 MgCl2, 0.5 CaCl2, 5 EGTA, 10 HEPES pH 7.4. Unless otherwise noted, external solutions contained (in mM) 140 NaCl, 5 KCl, 1 MgCl2, 2 CaCl2, 10 Glucose, 10 HEPES pH 7.4. For all electrophysiology experiments requiring Fab, 25 nM Fab was maintained in all bath and perfusion solutions. For potentiation experiments, currents were elicited via step from bath solution to solution supplemented with either 5 \u03bcM GABA or 5 \u03bcM GABA\u00a0+\u00a01 \u03bcM Diazepam. An unpaired t-test with Welch\u2019s correction was used to analyze changes in potentiation with or without Fab. External solution exchange was accomplished using the RSC-160 rapid solution changer (Bio-Logic). Membrane potential was clamped at \u221260 mV and the Axopatch 200B amplifier was used for data acquisition. All traces were recorded and analyzed using the pClamp 10 software suite.\n\n### Cryo-EM data collection\n\nGold 200 mesh quantifoil 1.2/1.3 grids were covered with a fresh layer of 2 nm carbon using a Leica EM ACE600 coater. The grids were glow discharged at 15 mA for 30 s using Pelco easiGlow followed by the application of 4 \u03bcL 1 mg/mL PEI (MAX Linear Mw 40 k from Polysciences) dissolved in 25 mM HEPES pH 7.9. After 2 min, PEI was removed using filter paper immediately followed by two washes with water. The grids were dried at room temperature for 15 mins. Graphene oxide (Sigma) at 0.4 mg/mL was centrifuged at 1000 g for 1 min and applied to the grids for 2 mins. Excess graphene oxide was blotted away followed by two water washes. The grids were dried once again for 15 mins at room temperature before use. 2.5 \u03bcL of 0.15 mg/mL \u03b11\u03b21\u03b32SEM receptor sample was applied to the grids with blot-force of 1 for 2 s using FEI Vitrobot in 100% humidity.\n\nGrids were loaded into a Titan Krios microscope operated at 300 kV. Images were acquired on a Falcon three direct-detector using counting mode at a nominal magnification of 120,000, corresponding to a pixel size of 0.649 \u00c5, and at a defocus range between \u22121.2 to \u22122.5 \u00b5m. Each micrograph was recorded over 200 frames at a dose rate of\u00a0~0.6 e\u2212/pixel/s and a total exposure time of 40 s, resulting in a total dose of\u00a0~37 e\u2212/\u00c52.\n\n### Cryo-EM data analysis\n\nA total of 1391 movie stacks were collected and correction for beam-induced motion was carried out using MotionCor2 (Zheng et al., 2017) (Figure 1\u2014figure supplement 4). The dose weighted micrographs were used for determination of defocus values by Gctf (Zhang, 2016). Micrographs with large areas of ice contamination, multiple layers of graphene oxide, defocus values larger than \u22122.5 \u03bcm or defocus values smaller than \u22121.2 \u03bcm were deleted. Thus 1097 \u2018good\u2019 micrographs were retained for the following image analysis. A total of 183,040 particles were automatically picked by DoG-picker (Voss et al., 2009), binned by 2x, and imported into cryosparc (Punjani et al., 2017) for 2D classification. In order to populate the particle stack with receptor-Fab complexes, only classes with clear features and clear background were chosen. A total of 34,911 particles were retained and used to generate an initial model, which was then subjected to homogenous refinement using cryosparc. The stack of 34,911 particles and the model were employed for further processing using Relion (Scheres, 2012).\n\nWe also carried out reference-based particle picking from the 1097 \u2018good\u2019 micrographs with RELION, using seven of the 2D class averages from the cryoSPARC processing described above to derive the templates (Figure 1\u2014figure supplement 4). This process yielded 216,543 particles which then were binned by 2x and subjected to one round of 2D classification to remove the \u2018junk\u2019 particles, yielding a total of 62,844 particles. Prior to further 3D refinement, the \u2018DoG-picker\u2019 selected particles (34911) were combined with the template-based particles (62,844) and an in-house script was used to remove the duplicates, this has been deposited at https://github.com/craigyk/emtools\u00a0(Yoshioka, 2018; copy archived at https://github.com/elifesciences-publications/emtools). A total of 68,793 particles remained after removal of duplicates.\n\nThe combined, 2x binned particles were then used for 3D refinement in RELION by applying a mask focusing on the receptor and the variable domains of the Fabs. Subsequent 3D classification, without alignment, yielded 6 classes (Figure 1\u2014figure supplement 4). The 49,417 particles belonging to class 2 were selected for a final refinement by RELION using the receptor-variable domain mask, yielding a map at\u00a0~3.8 \u00c5 resolution (Figure 1\u2014figure supplement 5). We refer to this map as the \u2018whole map\u2019. The \u2018whole map\u2019 was sharpened using Localscale (Jakobi et al., 2017). To further refine the ECD of the receptor, another mask focused on the ECD of the receptor and the variable domains of the Fabs was created, omitting the transmembrane domain and the micelle. Unbinned particles belonging to class 2 and class 3 were re-extracted and used in refinement, along with the ECD-variable domain mask, yielding a map at\u00a0~3.1 \u00c5 resolution (ECD map; Figure 1\u2014figure supplement 5). The ECD map was sharpened using Phenix (Terwilliger et al., 2018). Local resolution was estimated using blocres as implemented in Bsoft (Heymann and Belnap, 2007).\n\nOverall estimations of the resolutions of the reconstructions were carried out by Fourier Shell Correlation (FSC)\u00a0=\u00a00.143 criterion analysis (Scheres and Chen, 2012). The local resolution for the whole map varies about from 3.5 \u00c5 to 7 \u00c5 (Figure 1\u2014figure supplement 5) where the low resolution areas are in the flexible or disordered regions of the TMD and constant domains of the Fabs. The local resolution for ECD map varies from about 3 to 4 \u00c5.\n\n### Model building\n\nHomology models for the \u03b11, \u03b21 and \u03b32S subunit were generated using SWISS-MODEL (Biasini et al., 2014). The \u2018initial model\u2019 for the pentamer was generated via rigid body fitting of the subunit models to the density map using UCSF Chimera (Pettersen et al., 2004). The high quality of ECD map facilitated building of the ECD structure by way of iterative cycles of manual adjustment in Coot (Emsley and Cowtan, 2004) and refinement using phenix (Afonine et al., 2018). After phenix refinement, the map correlation coefficient (CC) between the map and the ECD model was 0.80, indicative of a good fit between the ECD model and the ECD map.\n\nTo build the \u2018whole model\u2019 using the whole map, the TMD derived from the \u2018initial model\u2019 was combined with the ECD model using Coot. Due to the lower resolution of the density in the TMD, it was only possible to fit the helices to their associated density and some of the residues with large side chains. \u03b1\u2212Helical secondary structure restraints were placed on the TMD helices throughout refinement. Due to the weak density associated with the loop between helices M3-M4 (M3/M4 loop) for all of the subunits, and with the M4 helixes for the two \u03b1 subunits and the \u03b3 subunit, the M4 helixes together with the M3/M4 loop were not included in the whole model. After phenix refinement, the CC between the whole map model and whole map was 0.74. The final model has good stereochemistry as evaluated by MolProbity (Chen et al., 2010) (Supplementary file 1).\n",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "099536d4-355b-4501-9462-c6c0b3dc6cb0",
+      "submission_id": "96b0556f-189e-4cb1-836d-598b05447bc7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton Jon Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39383.034](https://doi.org/10.7554/eLife.39383.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cryo-EM structure of the benzodiazepine-sensitive \u03b11\u03b21\u03b32S heterotrimeric GABAA receptor in complex with GABA\" for consideration by eLife. Your article has been reviewed by Richard Aldrich as the Senior Editor, Kenton Swartz as the Reviewing Editor and three reviewers. The following individual involved in review of your submission has agreed to reveal his identity: Mark L Mayer (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents a new GABA-bound cryo-EM structure of the rat \u03b11\u03b21\u03b32S triheteropentameric GABAA receptor (GABAR) resolved at 3.1 \u2013 3.8 \u00c5. The new structure captures a GABA-bound channel structure in the presence of a Fab fragments attached to the \u03b1 subunits. The structure also reveals a novel N-linked glycosylation on the \u03b1 subunit that surprisingly lies inside the ECD channel vestibule, which may partially block ion permeation and regulate receptor subunit assembly. The M3-M4 cytoplasmic regions were removed from the \u03b1 and \u03b2 subunits in the construct used for cryo-EM experiments and thus, no structural details about this important region were obtained. The manuscript is clear and well written. The approach is valid and the quality of data is good. The work is exciting and provides one of the first high-resolution structures of a heteropentameric GABAR. The structure adds significant new details about intersubunit interactions and provides a template for understanding GABA and allosteric drug modulator actions. It provides additional insight and complements the recent cryo-EM structure of the human GABAR solved in the presence of GABA and a BZD site antagonist (3.9 resolution) that was published in Nature (June 28) from the lab of Ryan Hibbs. Both structures reveal the N-linked glycosylation in the ECD channel vestibule, and somewhat poorer resolution of the TMD domain suggesting that in the heteropentameric protein this domain is dynamic. Specifics of some intersubunit residue interactions and potential numbers of GABA binding sites are different between the structures, which due to their resolution and different ligands present is not surprising. Overall, the paper is a significant contribution to the field and we have no major concerns. Each of the reviewers has identified issues that can readily be addressed by carefully revising the text. For clarity, we refer you to the individual reviews below. There are no requests for additional experiments.\n\nReviewer #1:\n\nThis paper reports the first structure of a tri-heteromeric \u03b11\u03b21\u03b32S GABAA receptor solved by single particle cryo-EM that is an exciting advance appropriate for eLife without major revision.\n\nAn \u03b1 subunit selective monoclonal antibody Fab fragment was used to break quasi 5-fold symmetry and identify subunit arrangement in 2D class averages. The structure was solved to 3.1 to 3.8 \u00c5 overall resolution, allowing atomic models to be built and refined using density maps for the extracellular domain, but with substantially lower resolution for the \u03b1-helical TM domains that was impacted by preferred orientation which the authors were unable to overcome after exploring multiple conditions for sample preparation. Despite this, the paper represents a tour de force study of challenging membrane protein biochemistry, coupled with state of the art cryo-EM data processing, and substantially increases our understanding of pentameric ion channels and in particular GABAA receptor structural biology. With one exception, all of the features reported here are confirmed in two recent papers on closely related GABAA receptor structures, leaving zero doubt that the work is sound.\n\nKey findings from the study include the first clues and structural information on mechanisms controlling assembly of heteromeric GABAA receptors; discovery of an unanticipated glycosylation site that partially occludes the outer vestibule of the ion channel, for which compelling structural data is provided, and that is unique to GABAA receptor \u03b1 subunits; and insights into ligand binding. Unexpectedly, the strongest ligand density is found at a non-canonical site, which the authors interpret with reasonable caution.\n\nAlthough many details revealed by the structure were anticipated by extensive prior mutagenesis studies coupled with functional and biochemical analysis, the direct visualization of these mechanisms is a major advance, and refreshingly the authors do a reasonable job of discussing the structure in context of prior work, although this could be improved. Also, appropriately acknowledged is the fact that it is unclear whether the present agonist bound structure represents an open, desensitized, or preactivated state, along with possible issues that could impact this, but as discussed below this needs elaboration.\n\nI have no major issues with the paper, but the following point could be better addressed during revision. In subsection \u201cConformation and asymmetry of the TMD\u201d, the authors note that sample preparation conditions could potentially impact the observed structural asymmetry in subunit arrangement around the central pore that differs from the more symmetric arrangement in prior homomeric and di-heteromeric pentameric ligand gated ion channel structures. This is a frequent caveat for studies of detergent solubilized membrane proteins extracted from the lipid bilayer, and two recent papers on closely \u03b11\u03b22\u03b32 (Hibbs et al., 2018) and \u03b11\u03b23\u03b32 (Aricescu lab, https://www.biorxiv.org/ content/early/2018/06/05/338343) GABAA receptors directly address this, revealing alternative, symmetric TMD conformations (Hibbs) and major changes in TMD structure depending on lipids added during purification (Aricescu). I believe that the authors should explicitly state that it is possible that the observed structural asymmetry in the TMD may represent a non-native conformation.\n\nReviewer #2:\n\nThe GABAA receptors are major inhibitory neurotransmitter receptors in the central nervous system, responding to GABA binding with opening of a chloride permeable channel. Their dysfunction is associated with conditions including epilepsy, schizophrenia, and autism. The GABAA receptors are members of the diverse pLGIC family which has been the subject of considerable structural work across prokaryotic and eukaryotic systems, which has defined core structural features. In the central nervous system, the most prevalent GABAA assembly bears 2x \u03b1 subunits, 2x \u03b2 subunits, and 1x \u03b3 subunit, arranged as \u03b2-\u03b1-\u03b2-\u03b3-\u03b1 when viewed extracellularly. Despite the centrality of this receptor to human biology, basic questions including the basis of tri-heteromeric assembly and GABA binding have been incompletely explored.\n\nTo address this gap in fundamental understanding of GABAA biology, Phulera and colleagues pursued the structure of the tri-heteromeric rat \u03b11\u03b21\u03b32 isoform, with M3/M4 loop deletions in \u03b11 and \u03b21 subunits (\u03b11\u03b21\u03b32SEM). They heroically expressed and purified this receptor and raised the 8E3 antibody specific to the \u03b11 subunit. Before pursuing the structure of the receptor in complex with Fab 8E3, the authors established that Fab binding does not hinder receptor activity, while noting some reduction of diazepam potentiation. The GABA-bound structure was solved with the receptor solubilized in C12M-CHS, on grids coated with graphene oxide. This condition gave a preferred orientation but permitted resolution to a reported 3.8 \u00c5 for the full receptor, or 3.1 \u00c5 for the ECD with masking. They use these results for analysis of the subunit arrangement, subunit interfaces, the GABA binding site, glycosylation sites, and to conclude that the receptor is in an agonist/allosteric modulator bound, activated-like state.\n\nThe study involves impressive biochemical work to provide a look at the organization of a biologically and clinically significant receptor. The \u03b11\u03b21\u03b32SEM construct was functionally validated, the cryo-EM work was well done, and the structural interpretations seem reasonable. The observed glycosylations and speculation about how they influence receptor assembly is particularly exciting and adds to an important foundation for future interrogation. Overall, the text and figures are clear and professional and I have no major concerns.\n\nReviewer #3:\n\nThis manuscript presents a new GABA-bound cryo-EM structure of the rat \u03b11\u03b22\u03b32 triheteropentameric GABAA receptor (GABAR) resolved at 3.1 \u2013 3.8 \u00c5. The new structure captures a GABA-bound channel structure in the presence of a Fab fragments attached to the \u03b1 subunits. The structure also reveals a novel N-linked glycosylation on the \u03b1 subunit that surprisingly lies inside the ECD channel vestibule, which may partially block ion permeation and regulate receptor subunit assembly. The M3-M4 cytoplasmic regions were removed from the \u03b1 and \u03b2 subunits in the construct used for cryo-EM experiments and thus, no structural details about this important region were obtained. The manuscript is clear and well written. The approach is valid and the quality of data is good. The work is exciting and provides one of the first high-resolution structures of a heteropentameric GABAR. The structure adds significant new details about intersubunit interactions and provides a template for understanding GABA and allosteric drug modulator actions. It provides additional insight and complements the recent cryo-EM structure of the human GABAR solved in the presence of GABA and a BZD site antagonist (3.9 resolution) that was published in Nature (June 28) from the lab of Ryan Hibbs. Both structures reveal the N-linked glycosylation in the ECD channel vestibule, and somewhat poorer resolution of the TMD domain suggesting that in the heteropentameric protein this domain is dynamic. Specifics of some intersubunit residue interactions and potential numbers of GABA binding sites are different between the structures, which due to their resolution and different ligands present is not surprising. Overall, the paper is a significant contribution to the field and I have no major concerns.\n",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d6936b9-7d6e-47b7-a5ed-032dee277f47",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C1",
+      "claim": "Fast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABAA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABAA receptors, chloride-selective members of the superfamily of pentameric Cys-loop receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in neuroscience supported by extensive literature, as indicated by the citation (Sigel and Steinmann, 2012) in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "a0ce02ea-62b1-45e2-9340-30559820571d",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C2",
+      "claim": "GABAA receptors are chloride-selective members of the superfamily of pentameric Cys-loop receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABAA receptors, chloride-selective members of the superfamily of pentameric Cys-loop receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GABAA receptor structure and function, supported by the citation (Sigel and Steinmann, 2012).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "12f27ddc-9363-4535-9490-1420e9a09f00",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C3",
+      "claim": "Native GABAA receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Native GABAA receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents, with mutant forms of GABAA receptors implicated in multiple neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in pharmacology and neuroscience, as well as citations throughout the Introduction (Braat and Kooy, 2015).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "8dbee870-032b-4b28-8079-0c44bd6ebf0c",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C4",
+      "claim": "Mutant forms of GABAA receptors are implicated in multiple neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Native GABAA receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents, with mutant forms of GABAA receptors implicated in multiple neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the Introduction linking GABAA receptor mutations to epilepsy syndromes (Hirose, 2014) and other neurological conditions (Rudolph and M\u00f6hler, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "a6bfc62a-687a-4ac7-93d2-eaadfaa3191f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C5",
+      "claim": "The structure of a tri-heteromeric \u03b11\u03b21\u03b32SEM GABAA receptor in complex with GABA was determined by single particle cryo-EM at 3.1\u20133.8 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present the structure of a tri-heteromeric \u03b11\u03b21\u03b32SEM GABAA receptor in complex with GABA, determined by single particle cryo-EM at 3.1\u20133.8 \u00c5 resolution, elucidating molecular principles of receptor assembly and agonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental data presented in the manuscript, including the cryo-EM reconstruction and resolution analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "873255ac-b908-4398-af35-fce820101450",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C6",
+      "claim": "Remarkable N-linked glycosylation on the \u03b11 subunit occludes the extracellular vestibule of the ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkable N-linked glycosylation on the \u03b11 subunit occludes the extracellular vestibule of the ion channel and is poised to modulate receptor assembly and perhaps ion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM density maps showing glycosylation at Asn110 of the \u03b11 subunit within the extracellular vestibule, as shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "9ad99365-2c34-4300-a0c5-4327a6d7fe92",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C7",
+      "claim": "N-linked glycosylation on the \u03b11 subunit is poised to modulate receptor assembly and perhaps ion channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkable N-linked glycosylation on the \u03b11 subunit occludes the extracellular vestibule of the ion channel and is poised to modulate receptor assembly and perhaps ion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the structural data showing the glycosylation occupies a substantial portion of the ECD vestibule and makes specific contacts with the \u03b32S subunit, combined with speculation about functional implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "faef7379-45b9-42fb-9771-347856ad29ff",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C8",
+      "claim": "Mutations in GABAA receptor genes are directly linked to epilepsy syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with their crucial role in brain function, mutations in GABAA receptor genes are directly linked to epilepsy syndromes (Hirose, 2014) and are associated with schizophrenia, autism, alcohol dependence, manic depression and eating disorder syndromes (Rudolph and M\u00f6hler, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Hirose, 2014) which provides evidence for the link between GABAA receptor mutations and epilepsy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "485b1770-ca9c-4a85-8300-e98e5adaf14f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C9",
+      "claim": "GABAA receptor mutations are associated with schizophrenia, autism, alcohol dependence, manic depression and eating disorder syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with their crucial role in brain function, mutations in GABAA receptor genes are directly linked to epilepsy syndromes (Hirose, 2014) and are associated with schizophrenia, autism, alcohol dependence, manic depression and eating disorder syndromes (Rudolph and M\u00f6hler, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Rudolph and M\u00f6hler, 2014) which provides evidence for these associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "44ab0bc2-9b75-4a01-b644-09549edf6c99",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C10",
+      "claim": "GABAA receptors are the targets of a large number of important therapeutic drugs, from sedatives, sleep aids and anticonvulsant medications to anesthetic agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GABAA receptors are the targets of a large number of important therapeutic drugs, from sedatives, sleep aids and anticonvulsant medications to anesthetic agents (Braat and Kooy, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Braat and Kooy, 2015) and represents established pharmacological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "0438d625-062c-401a-bc90-320521a28666",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C11",
+      "claim": "GABAA receptors are the target of alcohol and are implicated in alcohol dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAA receptors are also the target of alcohol and are implicated in alcohol dependence (Trudell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Trudell et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "823b6d10-d285-4ee7-b7c5-759049f8b390",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C12",
+      "claim": "GABAA receptors belong to the pentameric ligand-gated ion channel (pLGIC) superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAA receptors belong to the pentameric ligand-gated ion channel (pLGIC) superfamily (Thompson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the citation (Thompson et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "1b6bc249-a930-43dd-a988-7a885af15811",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C13",
+      "claim": "Other members of the pLGIC family include nicotinic acetylcholine (nAChR), 5-HT3A, glycine, and the invertebrate GluCl and Zn2+-activated cation channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Other members of this family are nicotinic acetylcholine (nAChR), 5-HT3A, glycine, and the invertebrate GluCl and Zn2+-activated cation channels (Thompson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the citation (Thompson et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c9193a7f-1724-4caf-8a0f-ce3bc5604d38",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C14",
+      "claim": "Members of the pLGIC superfamily are composed of five protein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the pLGIC superfamily are composed of five protein subunits and each subunit contains four transmembrane domains (M1\u2013M4) along with extracellular N- and C- termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about pLGIC receptors supported by the citation (Thompson et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "6d8692a3-133d-4a46-bde1-3cefe149e612",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C15",
+      "claim": "Each subunit of pLGIC receptors contains four transmembrane domains (M1\u2013M4) along with extracellular N- and C- termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the pLGIC superfamily are composed of five protein subunits and each subunit contains four transmembrane domains (M1\u2013M4) along with extracellular N- and C- termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about pLGIC receptors supported by the citation (Thompson et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "d66a5bbc-8d5a-4b93-81bc-90c3e5162566",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C16",
+      "claim": "GABAA receptors are typically found as heteromeric channels derived from a pool of 19 possible subunits: \u03b11\u20136, \u03b21\u20133, \u03b31\u20133, \u03b4, \u025b, \u03b8, \u03c0, and \u03c11\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAA receptors are typically found as heteromeric channels derived from a pool of 19 possible subunits: \u03b11\u20136, \u03b21\u20133, \u03b31\u20133, \u03b4, \u025b, \u03b8, \u03c0, and \u03c11\u20133 (Sigel and Steinmann, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the citation (Sigel and Steinmann, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "9625c97c-a323-43af-92e0-364ba7d55b3d",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C17",
+      "claim": "The most prevalent subunit combination in the vertebrate brain is the tri-heteromeric receptor composed of two \u03b1, two \u03b2 and one \u03b3 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of subunits gives rise to many possible pentameric assemblies; nevertheless, the most prevalent subunit combination in the vertebrate brain is the tri-heteromeric receptor composed of two \u03b1, two \u03b2 and one \u03b3 subunit (Chang et al., 1996; Farrar et al., 1999; Tretter et al., 1997), with the arrangement of subunits being \u03b2-\u03b1-\u03b2-\u03b3-\u03b1, in a clockwise order when viewed from the extracellular space (Baumann et al., 2001; Baumann et al., 2002; Baur et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Chang et al., 1996; Farrar et al., 1999; Tretter et al., 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "411099a3-d985-407b-9518-84ef4c2b047b",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C18",
+      "claim": "The arrangement of subunits in the tri-heteromeric GABAA receptor is \u03b2-\u03b1-\u03b2-\u03b3-\u03b1, in a clockwise order when viewed from the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "The large number of subunits gives rise to many possible pentameric assemblies; nevertheless, the most prevalent subunit combination in the vertebrate brain is the tri-heteromeric receptor composed of two \u03b1, two \u03b2 and one \u03b3 subunit (Chang et al., 1996; Farrar et al., 1999; Tretter et al., 1997), with the arrangement of subunits being \u03b2-\u03b1-\u03b2-\u03b3-\u03b1, in a clockwise order when viewed from the extracellular space (Baumann et al., 2001; Baumann et al., 2002; Baur et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Baumann et al., 2001; Baumann et al., 2002; Baur et al., 2006) and confirmed by the structural data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "09b58e50-675f-4551-962c-08b923a46649",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C19",
+      "claim": "The molecular basis for selective subunit assembly of GABAA receptors is not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis for selective subunit assembly of GABAA receptors is not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "a01e82da-2656-44de-9920-2ff04d033b0c",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C20",
+      "claim": "The transmembrane ion channel pore is lined by the M2 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, together with a large number of biochemical and biophysical experiments, have defined the transmembrane ion channel pore, its lining by the M2 helices and likely mechanisms of ion selectivity (Cymes and Grosman, 2016; Sine et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations (Cymes and Grosman, 2016; Sine et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c5e16697-d006-4cd9-ad50-ca6bf8fa14bc",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C21",
+      "claim": "The extracellular N-terminal domain harbors the orthosteric agonist binding site, located at subunit interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular N-terminal domain harbors the orthosteric agonist binding site, located at subunit interfaces, in addition to multiple binding sites for an array of small molecules and ions that act as allosteric modulators (Lynagh and Pless, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the citation (Lynagh and Pless, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "901d0f94-897c-4133-b8cd-d49b4e902247",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C22",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor binds muscimol with a Kd of 109.3 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Kd = 5.49 nM (95% CI = 4.25\u20137.05 nM) or 109.3 nM (95% CI = 91.76\u2013129.7 nM) for [Methyl-3H]flunitrazepam and [3H]muscimol, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1\u2014figure supplement 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "0c934ac8-838b-4d89-b9a9-7635d3f4a5fa",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C23",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor binds flunitrazepam with a Kd of 5.49 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Kd = 5.49 nM (95% CI = 4.25\u20137.05 nM) or 109.3 nM (95% CI = 91.76\u2013129.7 nM) for [Methyl-3H]flunitrazepam and [3H]muscimol, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1\u2014figure supplement 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "7d3f0714-4988-4d01-a93e-5f336a2fe7e7",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C24",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor exhibits ion channel gating properties that are similar to the wild-type receptor in the presence and in the absence of the 8E3 Fab.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the \u03b11\u03b21\u03b32SEM receptor also exhibits ion channel gating properties that are similar to the wild-type receptor in the presence and in the absence of the 8E3 Fab (Figure 1\u2014figure supplement 3) (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3 and comparison to literature (Li et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "ed7b1b28-b945-4680-8a25-3ed58feeff48",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C25",
+      "claim": "The cryo-EM construct retains potentiation by diazepam, but the extent of potentiation is reduced for the Fab complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that while the cryo-EM construct retains potentiation by diazepam, the extent of potentiation is reduced for the Fab complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "a9b1a565-403a-4958-9426-d218d786b057",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C26",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor has a clockwise subunit arrangement of \u03b11-\u03b21*-\u03b32S-\u03b11*-\u03b21 when viewed from the extracellular side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b11\u03b21\u03b32SEM receptor hews to the classic architecture of Cys-loop receptors, first established by cryo-EM studies of the nicotinic receptor (Toyoshima and Unwin, 1988; Unwin, 1993; Unwin, 2005), with a clockwise subunit arrangement of \u03b11-\u03b21*-\u03b32S-\u03b11*-\u03b21 when viewed from the extracellular side of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryo-EM structure and confirmed by the Fab binding pattern, as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "23fb3fad-a07d-40f9-b22f-69404cdbc5fd",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C27",
+      "claim": "The arrangement of subunits in the \u03b11\u03b21\u03b32SEM receptor is in agreement with previous biochemical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The arrangement of subunits in this heteromeric complex, as mapped out by the \u03b11-specific Fab fragments, is in agreement with previous biochemical studies (Figure 1\u2014figure supplement 2) (Baur et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of the structural data with previous biochemical studies (Baur et al., 2006).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "4e7afcc9-d67c-4a94-9642-f25fdc4004f5",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C28",
+      "claim": "The epitope of the 8E3 Fab resides entirely on the periphery of the \u03b11 ECDs.",
+      "claim_type": "EXPLICIT",
+      "source": "The epitope of the Fab resides entirely on the periphery of the \u03b11 ECDs and the Fab buries approximately 760 \u00c52 of surface area in the interface with the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from analysis of the cryo-EM structure, as shown in Figure 1\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "78d1cc87-ff60-4d6c-868a-a2497ac30c57",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C29",
+      "claim": "The 8E3 Fab buries approximately 760 \u00c52 of surface area in the interface with the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The epitope of the Fab resides entirely on the periphery of the \u03b11 ECDs and the Fab buries approximately 760 \u00c52 of surface area in the interface with the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cryo-EM structure using buried surface area analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "57398d58-c985-4b81-88b7-c74cd80cb768",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C30",
+      "claim": "Most of the receptor residues that interact with the 8E3 Fab are located on the \u03b28, \u03b29 and \u03b210 elements of secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the receptor residues that interact with the Fab are located on the \u03b28, \u03b29 and \u03b210 elements of secondary structure (Figure 1\u2014figure supplements 7 and 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from analysis of the cryo-EM structure, as shown in Figure 1\u2014figure supplements 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "ed039e3e-730a-48a4-9796-731ee604059f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C31",
+      "claim": "The 8E3 Fab binding site does not overlap with the C-loop and is unlikely to directly influence agonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Fab binding site is near the crucial C-loop, we note that it does not overlap with it and thus the Fab is unlikely to directly influence agonist binding, in agreement with the agonist binding experiments (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis combined with experimental binding data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "e0f28f9a-a676-436a-9443-628fd0206491",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C32",
+      "claim": "Within the ECD, each subunit buries as much as 1150\u20131600 \u00c52 of solvent accessible surface area within each subunit interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we estimate that within the ECD each subunit buries as much as 1150\u20131600 \u00c52 of solvent accessible surface area within each subunit interface (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cryo-EM structure using buried surface area analysis, as reported in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "1d0a89d1-a2d1-40fe-b4eb-49b7e8627ea3",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C33",
+      "claim": "There are five unique subunit interfaces in the tri-heteromeric receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "There are five unique subunit interfaces in the tri-heteromeric receptor and, while we observed a similar arrangement of the ECDs at each interface, we also found subtle differences due to variations in amino acid sequences and in local protein structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "64736d9f-ba57-4707-be1c-40317aefc267",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C34",
+      "claim": "There are solvent accessible fenestrations at subunit interfaces in the ECD that 'connect' the extracellular solution with the extracellular vestibule.",
+      "claim_type": "EXPLICIT",
+      "source": "There are solvent accessible fenestrations at subunit interfaces in the ECD that 'connect' the extracellular solution with the extracellular vestibule, possibly providing an alternative pathway for ions to access the ion channel (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the cryo-EM structure as shown in Figure 2A, with speculation about functional implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "06ddde9a-c13b-4616-808a-7c8d08ec6334",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C35",
+      "claim": "At the \u03b1(+)/\u03b2(-) interface, there is a conserved interaction between Tyr209 at the beginning of \u03b210 from the \u03b1 subunit at the (+) face to Arg117 at \u03b25 in (\u2013) face.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, at the \u03b1(+)/\u03b2(-) interface (Figure 2B), there is a conserved interaction between Tyr209 at the beginning of \u03b210 from the \u03b1 subunit at the (+) face to Arg117 at \u03b25 in (\u2013) face, as well as a hydrogen bond between Tyr206 from the \u03b1 subunit and Gln64 from the \u03b2 subunit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "ed2676bd-b6ca-4852-93f8-9badc1d2b66f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C36",
+      "claim": "At the \u03b1(+)/\u03b2(-) interface, there is a hydrogen bond between Tyr206 from the \u03b1 subunit and Gln64 from the \u03b2 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, at the \u03b1(+)/\u03b2(-) interface (Figure 2B), there is a conserved interaction between Tyr209 at the beginning of \u03b210 from the \u03b1 subunit at the (+) face to Arg117 at \u03b25 in (\u2013) face, as well as a hydrogen bond between Tyr206 from the \u03b1 subunit and Gln64 from the \u03b2 subunit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "05418315-4eb0-4033-beed-4fec12e85fac",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C37",
+      "claim": "The conformation of the ECD in the \u03b11\u03b21\u03b32SEM receptor most resembles the conformation of glycine/ivermectin-bound GlyR.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, if we compare the pentagon formed by joining a line through the center of mass of these individual ECDs, we observe that these are rotated in comparison to our current structure and that our current structure most resembles the conformation of glycine/ivermectin-bound GlyR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with other pLGIC structures, as shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "adfbedf6-0baf-4b0f-a77c-0ff0bc497cb3",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C38",
+      "claim": "The conformation of the ECD represents an agonist/allosteric modulator bound, activated-like state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the conformation of the ECD represents an agonist/allosteric modulator bound, activated-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on comparison with other structures and the presence of GABA in the structure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "2b2dcae1-a829-4b8b-84b4-17ab2a6ffc16",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C39",
+      "claim": "There are three substantive densities within the neurotransmitter binding sites, at the interface between the \u03b2*(+)/\u03b1(-), the \u03b1(+)/\u03b2(-) and the \u03b2(+)/\u03b1*(-) subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three substantive densities within the neurotransmitter binding sites, at the interface between the \u03b2*(+)/\u03b1(-), the \u03b1(+)/\u03b2(-) and the \u03b2(+)/\u03b1*(-) subunits, an observation that diverges from previous studies suggesting that there are only two canonical GABA binding sites located at the \u03b2*(+)/\u03b1(-) and \u03b2(+)/\u03b1*(-) interfaces (Figure 3A and Figure 3\u2014figure supplement 2) (Chua and Chebib, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps as shown in Figure 3A and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "48504cc7-4255-4ff9-8d53-beb9005a7eec",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C40",
+      "claim": "The observation of three GABA binding sites diverges from previous studies suggesting that there are only two canonical GABA binding sites located at the \u03b2*(+)/\u03b1(-) and \u03b2(+)/\u03b1*(-) interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three substantive densities within the neurotransmitter binding sites, at the interface between the \u03b2*(+)/\u03b1(-), the \u03b1(+)/\u03b2(-) and the \u03b2(+)/\u03b1*(-) subunits, an observation that diverges from previous studies suggesting that there are only two canonical GABA binding sites located at the \u03b2*(+)/\u03b1(-) and \u03b2(+)/\u03b1*(-) interfaces (Figure 3A and Figure 3\u2014figure supplement 2) (Chua and Chebib, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the structural data with previous literature (Chua and Chebib, 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "072b3ae0-0572-4548-9b13-b16febfb4e8c",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C41",
+      "claim": "The density feature at the \u03b2(+)/\u03b1*(-) interface is weaker than that at the \u03b2*(+)/\u03b1(-) site.",
+      "claim_type": "EXPLICIT",
+      "source": "The oval-like densities in the two canonical sites are well fit by the chemical structure of GABA, although the density feature at the \u03b2(+)/\u03b1*(-) interface is weaker than that at the \u03b2*(+)/\u03b1(-) site (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps as shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "f23f03f3-d23b-446d-915b-827bf44665c4",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C42",
+      "claim": "The third density feature at the \u03b1(+)/\u03b2(-) interface has the strongest density.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the third feature at the \u03b1(+)/\u03b2(-) interface, with a sausage-like shape, has the strongest density (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps as shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c2d01759-1151-4a03-9819-93f1cdc2b466",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C43",
+      "claim": "In the canonical binding sites, the amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157, Glu155 and Tyr 97.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-\u03c0 interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (\u03b26 strand) and Thr202 (loop C) and a salt bridge with Arg66 (\u03b22 strand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model of GABA bound to the receptor, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "66858bed-0cb6-43c3-9ec6-535436dbe58e",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C44",
+      "claim": "The amino group of GABA forms a cation-\u03c0 interaction with Tyr205.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-\u03c0 interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (\u03b26 strand) and Thr202 (loop C) and a salt bridge with Arg66 (\u03b22 strand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model of GABA bound to the receptor, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "8f2c2938-451c-454e-ae42-98775402ba2d",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C45",
+      "claim": "The carboxylate group of GABA forms possible hydrogen bonds with Thr129 and Thr202.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-\u03c0 interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (\u03b26 strand) and Thr202 (loop C) and a salt bridge with Arg66 (\u03b22 strand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model of GABA bound to the receptor, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "fdd9ef1b-8b25-4ccb-83f1-0d895578946b",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C46",
+      "claim": "The carboxylate group of GABA forms a salt bridge with Arg66.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-\u03c0 interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (\u03b26 strand) and Thr202 (loop C) and a salt bridge with Arg66 (\u03b22 strand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural model of GABA bound to the receptor, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c6a1f52b-dc20-4cbe-9447-1c032b5f32ff",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C47",
+      "claim": "Tyr97, Glu155 and Arg66 are unique in the \u03b2 subunit compared to the corresponding residues in the \u03b1 and \u03b3 subunits and are crucial for substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Tyr97, Glu155 and Arg66 are unique in the \u03b2 subunit compared to the corresponding residues in the \u03b1 and \u03b3 subunits and are crucial for substrate binding, as reported in previous studies demonstrating that Tyr97 and Arg66 play an important role in the binding pocket (Newell et al., 2004; Sander et al., 2011; Smith and Olsen, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the structure with previous functional studies (Newell et al., 2004; Sander et al., 2011; Smith and Olsen, 1995).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c0f28414-e845-4a1a-91af-9b0dcab78db2",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C48",
+      "claim": "Mutation of Tyr157 significantly reduces the binding affinity for agonist and antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of Tyr157, a highly conserved residue in the \u03b1, \u03b2 and \u03b3 subunits, significantly reduces the binding affinity for agonist and antagonist (Lummis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Lummis, 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "64dfc8db-ee50-4f7e-a4b1-c7dab448953f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C49",
+      "claim": "There is a well-defined glycosylation site at Asn110 of the \u03b1 subunit, within the extracellular vestibule of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a well-defined glycosylation site at Asn110 of the \u03b1 subunit, within the extracellular vestibule of the receptor, at a site of post-translational modification that is distinct from the other GABAA receptor subunits (Figure 4A) and not observed before in any Cys-loop receptor (Figure 1\u2014figure supplement 8, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps as shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "918b3c1a-692c-4833-aefb-e936387f932e",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C50",
+      "claim": "The glycosylation site at Asn110 of the \u03b1 subunit is distinct from the other GABAA receptor subunits and not observed before in any Cys-loop receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a well-defined glycosylation site at Asn110 of the \u03b1 subunit, within the extracellular vestibule of the receptor, at a site of post-translational modification that is distinct from the other GABAA receptor subunits (Figure 4A) and not observed before in any Cys-loop receptor (Figure 1\u2014figure supplement 8, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with other GABAA receptor subunits and other Cys-loop receptor structures, as shown in Figure 1\u2014figure supplement 8 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "aa07e20f-5c95-4ea2-aa8c-b143231ce216",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C51",
+      "claim": "For the \u03b1 subunit at Asn110, a carbohydrate chain with seven sugar residues was built.",
+      "claim_type": "EXPLICIT",
+      "source": "For the \u03b1 subunit at Asn110 we have built a carbohydrate chain with seven sugar residues and, for the \u03b1* subunit at Asn 110, we have built a carbohydrate chain with four sugar groups (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fitting the cryo-EM density with carbohydrate structures, as shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "73169bf0-c393-4cfc-909e-4453f25fc82e",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C52",
+      "claim": "For the \u03b1* subunit at Asn 110, a carbohydrate chain with four sugar groups was built.",
+      "claim_type": "EXPLICIT",
+      "source": "For the \u03b1 subunit at Asn110 we have built a carbohydrate chain with seven sugar residues and, for the \u03b1* subunit at Asn 110, we have built a carbohydrate chain with four sugar groups (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fitting the cryo-EM density with carbohydrate structures, as shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "30ba5c86-106b-435e-abda-de3164b4d8a0",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C53",
+      "claim": "The two carbohydrate chains at Asn110 are remarkably well ordered.",
+      "claim_type": "EXPLICIT",
+      "source": "These two carbohydrate chains are remarkably well ordered, a feature that is likely due to the fact that the chains are contained within the extracellular vestibule and are in direct contact with numerous protein side chains (Figures 4A and 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the cryo-EM density maps and inferred to be due to the structural constraints, as shown in Figures 4A and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "917d5cf2-3e2e-4e31-8465-a28be6f79d25",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C54",
+      "claim": "The volume of glycosylation in the vestibule is approximately 700 \u00c53 at the contour level of 6 \u03c3, which occupies nearly 18% of the total volume of the ECD vestibule.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume of glycosylation in the vestibule is approximately 700 \u00c53 at the contour level of 6 \u03c3, which occupies nearly 18% of the total volume of the ECD vestibule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cryo-EM density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "7d4a05b0-d085-4132-be20-43bf343ac9c2",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C55",
+      "claim": "There are extensive and specific interactions observed between the sugar groups and the \u03b32S subunit involving residues Asn101, Lys112 and Trp123.",
+      "claim_type": "EXPLICIT",
+      "source": "There are extensive and specific interactions observed between the sugar groups and the \u03b32S subunit involving residues Asn101, Lys112 and Trp123 (Figures 4A and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figures 4A and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "4aece812-aeae-4d79-b5fb-16fc0fe93434",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C56",
+      "claim": "The glycosylation at Asn110 of the \u03b1 subunits is important for subunit assembly, effectively blocking the formation of pentamers with more than two \u03b1 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the glycosylation at Asn110 of the \u03b1 subunits is important for subunit assembly, effectively blocking the formation of pentamers with more than two \u03b1 subunits, due to the fact that more than two carbohydrate chains would engage in sterically prohibitive van der Waals clashes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on structural analysis and inference about steric constraints, as illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "729fff83-9918-4fee-a6fc-a8d640f743d2",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C57",
+      "claim": "The contacts between the carbohydrate at position Asn110 of the \u03b1 subunit and Trp123 of the \u03b32S subunit favor the inclusion of the \u03b3 subunit as the last subunit in the formation of the heteropentamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we speculate that the contacts between the carbohydrate at position Asn110 of the \u03b1 subunit and, for example, the Trp123 of the \u03b32S subunit, favor the inclusion of the \u03b3subunit as the last subunit in the formation of the heteropentamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed interactions in the structure.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "72a7f164-1d17-479f-a0fe-88b3a29445be",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C58",
+      "claim": "Glycosylation of the \u03b1 subunit is essential for proper receptor assembly in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with prior studies which showed that glycosylation of the \u03b1 subunit is essential for proper receptor assembly in mammalian cells (Buller et al., 1994), as well as the important role of tryptophan residues in interacting with carbohydrates in general (Maenaka et al., 1994; Stewart et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Buller et al., 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "69d25e01-3a6d-4233-9395-00cd5f7dacc9",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C59",
+      "claim": "Tryptophan residues play an important role in interacting with carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with prior studies which showed that glycosylation of the \u03b1 subunit is essential for proper receptor assembly in mammalian cells (Buller et al., 1994), as well as the important role of tryptophan residues in interacting with carbohydrates in general (Maenaka et al., 1994; Stewart et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations (Maenaka et al., 1994; Stewart et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "28a2998b-07a2-4ad5-9cef-ee5999272be5",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C60",
+      "claim": "The carbohydrate chains within the extracellular vestibule may modulate receptor gating and ion channel block by large ion channel blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "We further suggest that these carbohydrate chains within the extracellular vestibule may also modulate receptor gating and, perhaps, ion channel block by large ion channel blockers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the location and size of the glycosylation within the vestibule.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "512f8072-89d3-4285-a805-de6259b03cea",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C61",
+      "claim": "The distances between the center of mass of two adjacent subunits in the TMD are similar, varying from 17.6 \u00c5 to 19 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "While the distances between the center of mass (COM) of two adjacent subunits are similar, where the COMs were calculated using the M1, M2 and M3 helices of each subunit, varying from 17.6 \u00c5 to 19 \u00c5, the angles in the pentagon range from 94\u00b0 to 124\u00b0 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the cryo-EM structure as shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "e3353d1b-7bf2-4898-a84b-fc9be359e828",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C62",
+      "claim": "The angles in the pentagon formed by the centers of mass of the TMD subunits range from 94\u00b0 to 124\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "While the distances between the center of mass (COM) of two adjacent subunits are similar, where the COMs were calculated using the M1, M2 and M3 helices of each subunit, varying from 17.6 \u00c5 to 19 \u00c5, the angles in the pentagon range from 94\u00b0 to 124\u00b0 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the cryo-EM structure as shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "2a505ac8-72ef-4670-b34c-f970c3f2fcb5",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C63",
+      "claim": "The two \u03b1 M2 helices are located away from the other three TM helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at the top-down views of five central M2 helices, the two \u03b1 M2 helices are located away from the other three TM helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "4fe1d511-b53b-4b4a-8167-e4a240f72807",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C64",
+      "claim": "The M2 helices lining the pore in the \u03b2 subunit display a similar orientation as in the desensitized state of the human \u03b23 GABAA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetry in the TMD complicates defining whether the structure represents an open or closed state, as the M2 helices lining the pore in the \u03b2 subunit display a similar orientation as in the desensitized state of the human \u03b23 GABAA receptor, yet the \u03b1 subunits are farther from the pseudo 5-fold axis, enlarging the pore (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the structure with the human \u03b23 GABAA receptor structure, as shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "4a06b9b8-e00d-4b61-a397-7aca14fc51d0",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C65",
+      "claim": "The \u03b1 subunits are farther from the pseudo 5-fold axis, enlarging the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetry in the TMD complicates defining whether the structure represents an open or closed state, as the M2 helices lining the pore in the \u03b2 subunit display a similar orientation as in the desensitized state of the human \u03b23 GABAA receptor, yet the \u03b1 subunits are farther from the pseudo 5-fold axis, enlarging the pore (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure as shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "bc210876-8daf-4db1-8ff9-4d4dbefdb9ee",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C66",
+      "claim": "The TMD structure may represent a non-native conformation due to the asymmetric structure and the fact that the structure was solved using a receptor embedded in a detergent micelle.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the asymmetric structure of the TMD and the fact that the structure was solved using a receptor embedded in a detergent micelle, the TMD structure may represent a non-native conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed asymmetry and the use of detergent micelles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "aa0fa875-bb41-4cc7-8e1a-c73abdde6631",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C67",
+      "claim": "The larger contact areas in the ECD region make formation of the \u03b2(+)/\u03b1(-) interface favorable, leading to \u03b1/\u03b2 assembly intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "If we consider how heteromeric GABAA receptors form from \u03b1, \u03b2 and \u03b3 subunits, we speculate that the larger contact areas in the ECD region makes formation of the \u03b2(+)/\u03b1(-) interface favorable, thus leading to \u03b1/\u03b2 assembly intermediates, which then transition to (\u03b1/\u03b2)2 intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the buried surface area analysis reported in Supplementary file 2.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c685a940-3260-4859-a0a1-6950ce0aeec1",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C68",
+      "claim": "The glycosylation at Asn110 of the \u03b1 subunits disfavors addition of a third \u03b1 subunit due to steric clashes.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial glycosylation site on the \u03b1 subunit at Asn110 disfavors addition of a third \u03b1 subunit, due to steric clashes, and that either a \u03b2 or a \u03b3 subunit will be incorporated to complete the heteropentamer (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on structural analysis, as illustrated in Figure 7.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "8f5fd888-a284-44c8-8d83-d6d51b4573c6",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C69",
+      "claim": "Either a \u03b2 or a \u03b3 subunit will be incorporated to complete the heteropentamer after formation of (\u03b1/\u03b2)2 intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial glycosylation site on the \u03b1 subunit at Asn110 disfavors addition of a third \u03b1 subunit, due to steric clashes, and that either a \u03b2 or a \u03b3 subunit will be incorporated to complete the heteropentamer (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on structural analysis, as illustrated in Figure 7.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "b63629f1-9145-4baf-8ac0-6df10c0c2894",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C70",
+      "claim": "The glycosylation at Asn110 of the \u03b1 subunits may be important to ion channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the glycosylation at Asn110 of the \u03b1 subunits not only plays an important role in ion channel assembly, but it may also be important to ion channel function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the location of the glycosylation within the extracellular vestibule.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "e9d03a6f-1113-46e1-96bc-c7d731e2e795",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C71",
+      "claim": "Diazepam binds to the \u03b1*(+)/\u03b3(-) interface with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that diazepam binds to the \u03b1*(+)/\u03b3(-) interface with high affinity (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Li et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "d78307d5-78d8-4271-915c-48047151a2f4",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C72",
+      "claim": "\u03b1*His101 could provide aromatic or hydrophobic interactions with the pendant phenyl ring of diazepam.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies, we speculate that \u03b1*His101 could provide aromatic or hydrophobic interactions with the pendant phenyl ring of diazepam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural model and comparison with previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "0028d5d5-2425-4191-96d3-28210e25a052",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C73",
+      "claim": "\u03b1*Tyr209, \u03b1*Phe99, \u03b1*Tyr159 and \u03b3Phe77 likely contribute to hydrophobic interactions with diazepam.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, \u03b1*Tyr209, \u03b1*Phe99, \u03b1*Tyr159 and \u03b3Phe77 likely also contribute to hydrophobic interactions with diazepam (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the structural model shown in Figure 3F.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "a11a1c9a-a46a-4f26-9d3f-8a5099bba8d2",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C74",
+      "claim": "All key structural residues surrounding the diazepam site have been identified in homology models and functional experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "All these key structural residues surrounding the diazepam site have been identified in homology models and functional experiments (Richter et al., 2012; Teiss\u00e9re and Czajkowski, 2001; Wongsamitkul et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations (Richter et al., 2012; Teiss\u00e9re and Czajkowski, 2001; Wongsamitkul et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "6f011c1c-2d44-444c-a1af-a37a81cb0494",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C75",
+      "claim": "Mutation of \u03b1*His101, \u03b1*Tyr209 and \u03b1*Tyr159 markedly impairs the modulation by diazepam.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of \u03b1*His101, \u03b1*Tyr209 and \u03b1*Tyr159 markedly impairs the modulation by diazepam (Amin et al., 1997), while mutation of \u03b3Phe77 results in decreased binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation (Amin et al., 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "d86f5cdf-ddd5-477e-a7e4-a2982bf2b2d9",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C76",
+      "claim": "Mutation of \u03b3Phe77 results in decreased binding affinity for diazepam.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of \u03b1*His101, \u03b1*Tyr209 and \u03b1*Tyr159 markedly impairs the modulation by diazepam (Amin et al., 1997), while mutation of \u03b3Phe77 results in decreased binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge, though no specific citation is provided for the \u03b3Phe77 mutation effect.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "35dfb164-1dab-4773-b070-8869574c562c",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C77",
+      "claim": "Agonist binding has been proposed to induce loop C closure in the open, ion conducting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Agonist binding has been proposed to induce loop C closure in the open, ion conducting state and antagonist binding to stabilize an 'open' configuration of loop C in the closed, non-conducting state of the ion channel (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "67716cb9-e91e-48d7-b70c-a7d969fd748d",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C78",
+      "claim": "Antagonist binding stabilizes an 'open' configuration of loop C in the closed, non-conducting state of the ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Agonist binding has been proposed to induce loop C closure in the open, ion conducting state and antagonist binding to stabilize an 'open' configuration of loop C in the closed, non-conducting state of the ion channel (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "aad01717-db3b-4b52-9ffa-d2fe23f5c8c0",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C79",
+      "claim": "Loop C in the \u03b2* subunit is in an 'open' conformation relative to that in the \u03b1* and \u03b3 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe the relationship between agonist binding and the position of loop C, we superposed the \u03b2* subunit with GABA bound onto the \u03b1* and \u03b3 subunits and found that loop C in the \u03b2* subunit is in an 'open' conformation relative to that in the \u03b1* and \u03b3 subunits (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison as shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "1d670ab9-e146-46fd-a176-738739992a1e",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C80",
+      "claim": "The position of loop C in the \u03b2* subunit closely approximates that in the GlyR-closed non-conducting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, superposition of the ECD of the \u03b2*/\u03b1 subunit with the human \u03b23 GABAA, GlyR-open and GlyR-closed structures suggests that the position of loop C in the \u03b2* subunit closely approximates that in the GlyR-closed non-conducting state, while loop C in the human \u03b23 GABAA is in a more 'open' configuration (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison as shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "d6fd5b90-1978-4971-8d72-b902a380c66f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C81",
+      "claim": "Loop C in the human \u03b23 GABAA is in a more 'open' configuration compared to the \u03b2* subunit in the \u03b11\u03b21\u03b32SEM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, superposition of the ECD of the \u03b2*/\u03b1 subunit with the human \u03b23 GABAA, GlyR-open and GlyR-closed structures suggests that the position of loop C in the \u03b2* subunit closely approximates that in the GlyR-closed non-conducting state, while loop C in the human \u03b23 GABAA is in a more 'open' configuration (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison as shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "d659cec3-5642-44b7-bef7-4bf67d41d945",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C82",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor was expressed in TSA201 suspension cells using baculovirus transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "The tri-heteromer (\u03b11\u03b21\u03b32SEM) was expressed in TSA201 suspension cells. Infection was performed at a cell density of 1.5\u22123 \u00d7 106 cells/mL in Gibco Freestyle 293 Expression medium supplemented with 1% FBS and placed in a humidity- and CO2-controlled incubator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "fab57082-6266-4e53-a442-80006b6d9f2a",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C83",
+      "claim": "The \u03b11\u03b21\u03b32SEM receptor was purified using 1D4 affinity chromatography followed by size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The supernatant was then mixed with 1D4 affinity resin equilibrated in 20 mM NaPO4 pH 8, 200 mM NaCl, and 1 mM C12M for 3\u20134 hr at 4\u00b0C with gentle mixing. The resin was washed with 100 column volumes of the equilibration buffer; elution was achieved using a buffer supplemented with 0.2 mM 1D4 peptide. The eluted protein was concentrated by ultrafiltration, followed by the addition of 2.1 molar fold excess of 8E3 Fab. The concentrated sample was loaded onto a Superose 6 increase 10/300 GL column equilibrated with 20 mM HEPES pH 7.3, 200 mM NaCl, 1 mM C12M and 1.5 mM GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "65dd5e76-6906-4064-a89b-a6bfca05e8ff",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C84",
+      "claim": "The cryo-EM structure was determined using graphene oxide coated grids.",
+      "claim_type": "EXPLICIT",
+      "source": "To enhance particle density on the cryo-EM grids in light of modest levels of receptor expression, we employed grids coated with graphene oxide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "3fcc02d3-3983-473c-85d7-84ca9714dc75",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C85",
+      "claim": "A total of 1391 movie stacks were collected for cryo-EM data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1391 movie stacks were collected and correction for beam-induced motion was carried out using MotionCor2 (Zheng et al., 2017) (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "470b718b-8020-4511-9d28-3c816280a12e",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C86",
+      "claim": "1097 'good' micrographs were retained for image analysis after initial screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Micrographs with large areas of ice contamination, multiple layers of graphene oxide, defocus values larger than \u22122.5 \u03bcm or defocus values smaller than \u22121.2 \u03bcm were deleted. Thus 1097 'good' micrographs were retained for the following image analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "57f55974-4f0f-4bb1-8ff6-a57f7ffd958c",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C87",
+      "claim": "There is substantial preferred orientation in the particle distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that there is substantial preferred orientation in the particle distribution and, despite substantial efforts in exploring a wide spectrum of conditions, we were unable to obtain grids that yielded more well distributed particle orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the quality of the cryo-EM data, as shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "eb34f02a-8df8-4024-9207-39fbb0d88ed3",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C88",
+      "claim": "The density for the TMD is not as well defined as the density in the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the resulting density maps were consistent with these resolution estimations, and in the case of the density in the extracellular domain (ECD), the quality of the density map is excellent, allowing for visualization of medium and large side chains, as well as glycosylation of Asn side chains (Figure 1\u2014figure supplement 6). By contrast, the density for the TMD is not as well defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the quality of the cryo-EM density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "fac57a74-8f86-4c9e-b569-0557f5552ae4",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C89",
+      "claim": "The M4 helices of the two \u03b11 subunits and the \u03b32S subunit have weak density and were not included in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "While the M1, M2 and M3 helices of all subunits show strong density, with density for some residues with large side chains, the M4 helices of the two \u03b11 subunits and the \u03b32S subunit have weak density and thus we have not attempted to include them in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the limitations of the structural model due to weak density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "72694381-a826-49ec-aba9-af9692ee0030",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C90",
+      "claim": "The EC50 for GABA is 28.68 \u03bcM in the absence of Fab.",
+      "claim_type": "EXPLICIT",
+      "source": "EC50 = 28.68 \u03bcM (95% CI = 21.38\u201338.49 \u03bcM) or 22.51 \u03bcM (95% CI = 12.69\u201339.93 \u03bcM) GABA in the presence or absence of 25 nM Fab, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "fea4b2b6-9545-42ef-868b-c1de4b2035d5",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C91",
+      "claim": "The EC50 for GABA is 22.51 \u03bcM in the presence of 25 nM Fab.",
+      "claim_type": "EXPLICIT",
+      "source": "EC50 = 28.68 \u03bcM (95% CI = 21.38\u201338.49 \u03bcM) or 22.51 \u03bcM (95% CI = 12.69\u201339.93 \u03bcM) GABA in the presence or absence of 25 nM Fab, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "def95be4-d8e3-4397-87d3-a4428d28ef2f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C92",
+      "claim": "The 8E3 antibody is specific for the \u03b11 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent FSEC analysis identified 8E3 as a \u03b11 specific antibody (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "199cdc82-e49e-4dad-8c77-1931c1011570",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C93",
+      "claim": "The map correlation coefficient between the ECD model and the ECD map is 0.80.",
+      "claim_type": "EXPLICIT",
+      "source": "After phenix refinement, the map correlation coefficient (CC) between the map and the ECD model was 0.80, indicative of a good fit between the ECD model and the ECD map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measure of the quality of the structural model fit to the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "49dfacea-0fb6-42ff-bfe9-2b5db294cb76",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "claim_id": "C94",
+      "claim": "The map correlation coefficient between the whole model and the whole map is 0.74.",
+      "claim_type": "EXPLICIT",
+      "source": "After phenix refinement, the CC between the whole map model and whole map was 0.74.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measure of the quality of the structural model fit to the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a326a038-e5d2-4244-b030-849db095f749",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the cryo-EM structure of a tri-heteromeric \u03b11\u03b21\u03b32SEM GABAA receptor in complex with GABA at 3.1\u20133.8 \u00c5 resolution, revealing a clockwise subunit arrangement of \u03b11-\u03b21*-\u03b32S-\u03b11*-\u03b21 that agrees with previous biochemical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structure determination is well-supported by comprehensive cryo-EM data (C5, C85-C86), appropriate data processing methods, and quality metrics (C93-C94). The subunit arrangement (C26) is confirmed by Fab binding patterns and agrees with prior biochemical work (C27). The resolution is appropriate for the ECD but lower for the TMD (C88-C89), which is acknowledged. Preferred orientation is noted as a limitation (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "8408ccc7-7091-4ba6-9273-86608b05891f",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The \u03b11\u03b21\u03b32SEM receptor construct exhibits ligand binding and functional properties similar to wild-type receptors, with Kd values of 109.3 nM for muscimol and 5.49 nM for flunitrazepam, and EC50 values for GABA of 22.51\u201328.68 \u03bcM. The 8E3 Fab is \u03b11-specific and reduces diazepam potentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biochemical and functional characterization is well-supported by direct experimental measurements (C22-C23, C90-C91) with appropriate confidence intervals. The Fab specificity is demonstrated by FSEC analysis (C92). The reduction in diazepam potentiation with Fab (C25) is acknowledged and statistically significant, representing a limitation of the construct.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "10d59696-61fa-4583-a415-a36dd89ddaa1",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 8E3 Fab epitope resides on the periphery of the \u03b11 ECDs, burying ~760 \u00c5\u00b2 of surface area, primarily involving \u03b28, \u03b29, and \u03b210 secondary structure elements, and does not overlap with the C-loop or directly influence agonist binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Fab epitope characterization is supported by structural analysis (C28-C30) and buried surface area calculations. The claim that the Fab does not influence agonist binding (C31) is supported by both structural analysis showing no C-loop overlap and experimental binding data, though the reduced diazepam potentiation suggests some functional effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "37bec788-f249-428c-9219-644a78050e32",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The tri-heteromeric receptor has five unique subunit interfaces in the ECD, each burying 1150\u20131600 \u00c5\u00b2 of surface area, with conserved interactions including Tyr209-Arg117 and Tyr206-Gln64 at the \u03b1(+)/\u03b2(-) interface, and solvent-accessible fenestrations connecting the extracellular solution to the vestibule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of subunit interfaces is well-supported by structural data (C33, C35-C36) and quantitative buried surface area calculations (C32). The observation of fenestrations (C34) is directly visible in the structure, though the functional speculation about ion access pathways is appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "2b5f5092-6466-4bac-be2d-f83d78e3c611",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ECD conformation most resembles the glycine/ivermectin-bound GlyR structure and represents an agonist/allosteric modulator bound, activated-like state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural comparison with other pLGIC structures (C37) is based on reasonable geometric analysis, but the interpretation as an 'activated-like state' (C38) is speculative and acknowledged as a proposal. The presence of GABA and the comparison to other structures provide some support, but definitive assignment of functional state requires additional validation, particularly given the TMD ambiguities and use of detergent micelles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Three substantive densities are observed at neurotransmitter binding sites (\u03b2*(+)/\u03b1(-), \u03b1(+)/\u03b2(-), and \u03b2(+)/\u03b1*(-)), diverging from the canonical two-site model. GABA binding involves hydrogen bonds with Tyr157, Glu155, Tyr97, Thr129, and Thr202, a cation-\u03c0 interaction with Tyr205, and a salt bridge with Arg66, with key residues Tyr97, Glu155, and Arg66 unique to the \u03b2 subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observation of three density features is well-documented (C39, C41-C42), but the identity of the third site at \u03b1(+)/\u03b2(-) is uncertain. The authors appropriately acknowledge that this could be GABA, another co-purified ligand, or ordered water molecules. The canonical GABA binding interactions (C43-C46) are well-supported by structural data and prior literature (C47-C48), but the third site requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A well-defined N-linked glycosylation site at Asn110 of the \u03b1 subunit is located within the extracellular vestibule, with carbohydrate chains of seven (\u03b1) and four (\u03b1*) sugar residues that are remarkably well-ordered, occupy ~18% of the vestibule volume (~700 \u00c5\u00b3), and make extensive interactions with \u03b32S residues Asn101, Lys112, and Trp123.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The glycosylation observation is strongly supported by high-quality cryo-EM density (C49, C51-C53) and is novel for Cys-loop receptors (C50). The structural characterization including volume calculations (C54) and specific interactions (C55) is well-documented. The quality of the density allows confident modeling of the carbohydrate chains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "440d23f9-57bf-4a7c-8298-18b0448d8d75",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The glycosylation at Asn110 is proposed to be important for receptor assembly by blocking formation of pentamers with more than two \u03b1 subunits through steric clashes, favoring \u03b3 subunit inclusion, and may modulate receptor gating and ion channel block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The proposal about assembly (C56, C68-C69) is based on reasonable structural inference about steric constraints and is consistent with prior literature showing glycosylation is essential for assembly (C58). However, the specific mechanism and the proposed effects on gating and channel block (C60, C70) are speculative and require experimental validation. The structural observations provide a plausible hypothesis but not definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "3a9f38d0-f43e-4681-9636-7573895b0b8b",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The TMD exhibits asymmetry with distances between subunit centers of mass varying from 17.6\u201319 \u00c5 and angles ranging from 94\u2013124\u00b0. The \u03b2 subunit M2 helices resemble the desensitized state of human \u03b23 GABAA receptor, while \u03b1 subunits are farther from the pseudo 5-fold axis, enlarging the pore. The structure may represent a non-native conformation due to asymmetry and detergent micelle environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural observations of TMD asymmetry (C61-C63, C65) are well-documented, but the functional interpretation is complicated. The comparison to the desensitized state (C64) is based on structural similarity, but the enlarged pore from \u03b1 subunit positioning creates ambiguity. The authors appropriately acknowledge that the TMD may represent a non-native conformation (C66) due to detergent use and lower resolution, making functional state assignment uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "c104076c-7738-44b1-aab7-efb0dd07925b",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The diazepam binding site at the \u03b1*(+)/\u03b3(-) interface is characterized, with \u03b1*His101, \u03b1*Tyr209, \u03b1*Phe99, \u03b1*Tyr159, and \u03b3Phe77 likely contributing to binding through aromatic and hydrophobic interactions, consistent with prior mutagenesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of the diazepam binding site is supported by structural analysis and is consistent with extensive prior mutagenesis data (C74-C76). While the specific interactions are speculative (C72-C73), they are based on reasonable structural modeling and agree with established functional data showing these residues are critical for diazepam binding and modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    },
+    {
+      "id": "22c87244-7e4f-4216-bba6-d3badcc91346",
+      "content_id": "6d9f52fa-f3f2-4749-9166-6870cf58451a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loop C in the \u03b2* subunit is in an 'open' conformation relative to \u03b1* and \u03b3 subunits and closely approximates the GlyR-closed non-conducting state, while loop C in human \u03b23 GABAA is more open.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural comparisons of loop C conformations (C79-C81) are based on superposition analysis, but the interpretation is complicated by comparing different subunits and different receptors. The authors appropriately acknowledge this caveat and note that definitive assignment would require structures of the same receptor in different functional states. The comparison to established models (C77-C78) provides context but doesn't resolve the ambiguity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:39:14.717985Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a6bfc62a-687a-4ac7-93d2-eaadfaa3191f",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "a9b1a565-403a-4958-9426-d218d786b057",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "23fb3fad-a07d-40f9-b22f-69404cdbc5fd",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "d659cec3-5642-44b7-bef7-4bf67d41d945",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "fab57082-6266-4e53-a442-80006b6d9f2a",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "65dd5e76-6906-4064-a89b-a6bfca05e8ff",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "3fcc02d3-3983-473c-85d7-84ca9714dc75",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "470b718b-8020-4511-9d28-3c816280a12e",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "57f55974-4f0f-4bb1-8ff6-a57f7ffd958c",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "eb34f02a-8df8-4024-9207-39fbb0d88ed3",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "fac57a74-8f86-4c9e-b569-0557f5552ae4",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "199cdc82-e49e-4dad-8c77-1931c1011570",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "49dfacea-0fb6-42ff-bfe9-2b5db294cb76",
+      "result_id": "a326a038-e5d2-4244-b030-849db095f749"
+    },
+    {
+      "claim_id": "901d0f94-897c-4133-b8cd-d49b4e902247",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "0c934ac8-838b-4d89-b9a9-7635d3f4a5fa",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "7d3f0714-4988-4d01-a93e-5f336a2fe7e7",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "ed7b1b28-b945-4680-8a25-3ed58feeff48",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "72694381-a826-49ec-aba9-af9692ee0030",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "fea4b2b6-9545-42ef-868b-c1de4b2035d5",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "def95be4-d8e3-4397-87d3-a4428d28ef2f",
+      "result_id": "8408ccc7-7091-4ba6-9273-86608b05891f"
+    },
+    {
+      "claim_id": "4e7afcc9-d67c-4a94-9642-f25fdc4004f5",
+      "result_id": "10d59696-61fa-4583-a415-a36dd89ddaa1"
+    },
+    {
+      "claim_id": "78d1cc87-ff60-4d6c-868a-a2497ac30c57",
+      "result_id": "10d59696-61fa-4583-a415-a36dd89ddaa1"
+    },
+    {
+      "claim_id": "57398d58-c985-4b81-88b7-c74cd80cb768",
+      "result_id": "10d59696-61fa-4583-a415-a36dd89ddaa1"
+    },
+    {
+      "claim_id": "ed039e3e-730a-48a4-9796-731ee604059f",
+      "result_id": "10d59696-61fa-4583-a415-a36dd89ddaa1"
+    },
+    {
+      "claim_id": "e0f28f9a-a676-436a-9443-628fd0206491",
+      "result_id": "37bec788-f249-428c-9219-644a78050e32"
+    },
+    {
+      "claim_id": "1d0a89d1-a2d1-40fe-b4eb-49b7e8627ea3",
+      "result_id": "37bec788-f249-428c-9219-644a78050e32"
+    },
+    {
+      "claim_id": "64736d9f-ba57-4707-be1c-40317aefc267",
+      "result_id": "37bec788-f249-428c-9219-644a78050e32"
+    },
+    {
+      "claim_id": "06ddde9a-c13b-4616-808a-7c8d08ec6334",
+      "result_id": "37bec788-f249-428c-9219-644a78050e32"
+    },
+    {
+      "claim_id": "ed2676bd-b6ca-4852-93f8-9badc1d2b66f",
+      "result_id": "37bec788-f249-428c-9219-644a78050e32"
+    },
+    {
+      "claim_id": "05418315-4eb0-4033-beed-4fec12e85fac",
+      "result_id": "2b5f5092-6466-4bac-be2d-f83d78e3c611"
+    },
+    {
+      "claim_id": "adfbedf6-0baf-4b0f-a77c-0ff0bc497cb3",
+      "result_id": "2b5f5092-6466-4bac-be2d-f83d78e3c611"
+    },
+    {
+      "claim_id": "2b2dcae1-a829-4b8b-84b4-17ab2a6ffc16",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "48504cc7-4255-4ff9-8d53-beb9005a7eec",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "072b3ae0-0572-4548-9b13-b16febfb4e8c",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "f23f03f3-d23b-446d-915b-827bf44665c4",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "c2d01759-1151-4a03-9819-93f1cdc2b466",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "66858bed-0cb6-43c3-9ec6-535436dbe58e",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "8f2c2938-451c-454e-ae42-98775402ba2d",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "fdd9ef1b-8b25-4ccb-83f1-0d895578946b",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "c6a1f52b-dc20-4cbe-9447-1c032b5f32ff",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "c0f28414-e845-4a1a-91af-9b0dcab78db2",
+      "result_id": "b1ed56ad-007c-4b6a-ba7f-c5fb5f9a04fa"
+    },
+    {
+      "claim_id": "64dfc8db-ee50-4f7e-a4b1-c7dab448953f",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "918b3c1a-692c-4833-aefb-e936387f932e",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "aa07e20f-5c95-4ea2-aa8c-b143231ce216",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "73169bf0-c393-4cfc-909e-4453f25fc82e",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "30ba5c86-106b-435e-abda-de3164b4d8a0",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "917d5cf2-3e2e-4e31-8465-a28be6f79d25",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "7d4a05b0-d085-4132-be20-43bf343ac9c2",
+      "result_id": "fb85d43b-a91c-424e-8faf-fcda3f325e4d"
+    },
+    {
+      "claim_id": "4aece812-aeae-4d79-b5fb-16fc0fe93434",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "729fff83-9918-4fee-a6fc-a8d640f743d2",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "72a7f164-1d17-479f-a0fe-88b3a29445be",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "69d25e01-3a6d-4233-9395-00cd5f7dacc9",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "28a2998b-07a2-4ad5-9cef-ee5999272be5",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "aa0fa875-bb41-4cc7-8e1a-c73abdde6631",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "c685a940-3260-4859-a0a1-6950ce0aeec1",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "8f5fd888-a284-44c8-8d83-d6d51b4573c6",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "b63629f1-9145-4baf-8ac0-6df10c0c2894",
+      "result_id": "440d23f9-57bf-4a7c-8298-18b0448d8d75"
+    },
+    {
+      "claim_id": "512f8072-89d3-4285-a805-de6259b03cea",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "e3353d1b-7bf2-4898-a84b-fc9be359e828",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "2a505ac8-72ef-4670-b34c-f970c3f2fcb5",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "4fe1d511-b53b-4b4a-8167-e4a240f72807",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "4a06b9b8-e00d-4b61-a397-7aca14fc51d0",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "bc210876-8daf-4db1-8ff9-4d4dbefdb9ee",
+      "result_id": "3a9f38d0-f43e-4681-9636-7573895b0b8b"
+    },
+    {
+      "claim_id": "e9d03a6f-1113-46e1-96bc-c7d731e2e795",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "d78307d5-78d8-4271-915c-48047151a2f4",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "0028d5d5-2425-4191-96d3-28210e25a052",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "a11a1c9a-a46a-4f26-9d3f-8a5099bba8d2",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "6f011c1c-2d44-444c-a1af-a37a81cb0494",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "d86f5cdf-ddd5-477e-a7e4-a2982bf2b2d9",
+      "result_id": "c104076c-7738-44b1-aab7-efb0dd07925b"
+    },
+    {
+      "claim_id": "35dfb164-1dab-4773-b070-8869574c562c",
+      "result_id": "22c87244-7e4f-4216-bba6-d3badcc91346"
+    },
+    {
+      "claim_id": "67716cb9-e91e-48d7-b70c-a7d969fd748d",
+      "result_id": "22c87244-7e4f-4216-bba6-d3badcc91346"
+    },
+    {
+      "claim_id": "aad01717-db3b-4b52-9ffa-d2fe23f5c8c0",
+      "result_id": "22c87244-7e4f-4216-bba6-d3badcc91346"
+    },
+    {
+      "claim_id": "1d670ab9-e146-46fd-a176-738739992a1e",
+      "result_id": "22c87244-7e4f-4216-bba6-d3badcc91346"
+    },
+    {
+      "claim_id": "d6fd5b90-1978-4971-8d72-b902a380c66f",
+      "result_id": "22c87244-7e4f-4216-bba6-d3badcc91346"
+    }
+  ],
+  "comparisons": []
+}

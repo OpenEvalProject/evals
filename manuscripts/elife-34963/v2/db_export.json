@@ -1,0 +1,1758 @@
+{
+  "submission": {
+    "id": "4b9d20bf-d2f9-4ee0-a223-5c6b5b83aaf6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:53:42.320471Z",
+    "updated_at": "2025-12-02T01:53:42.320471Z"
+  },
+  "content": [
+    {
+      "id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "submission_id": "4b9d20bf-d2f9-4ee0-a223-5c6b5b83aaf6",
+      "content_type": "manuscript",
+      "content_text": "# A resource-rational theory of set size effects in human visual working memory\n\n## Authors\n\n- Ronald van den Berg<sup>1</sup> ([ORCID: 0000-0001-7353-5960](https://orcid.org/0000-0001-7353-5960)) \u2020\n- Wei Ji Ma<sup>2</sup> ([ORCID: 0000-0002-9835-9083](https://orcid.org/0000-0002-9835-9083)) \u2020\n\n### Affiliations\n\n1. Department of Psychology University of Uppsala Uppsala Sweden\n2. Center for Neural Science and Department of Psychology New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEncoding precision in visual working memory decreases with the number of encoded items. Here, we propose a normative theory for such set size effects: the brain minimizes a weighted sum of an error-based behavioral cost and a neural encoding cost. We construct a model from this theory and find that it predicts set size effects. Notably, these effects are mediated by probing probability, which aligns with previous empirical findings. The model accounts well for effects of both set size and probing probability on encoding precision in nine delayed-estimation experiments. Moreover, we find support for the prediction that the total amount of invested resource can vary non-monotonically with set size. Finally, we show that it is sometimes optimal to encode only a subset or even none of the relevant items in a task. Our findings raise the possibility that cognitive \"limitations\" arise from rational cost minimization rather than from constraints.\n\n## Introduction\n\nA well-established property of visual working memory (VWM) is that the precision with which items are encoded decreases with the number of encoded items (Ma et al., 2014; Luck and Vogel, 2013). A common way to explain this set size effect has been to assume that there is a fixed amount of resource available for encoding: the more items, the less resource per item and, therefore, the lower the precision per item. Different forms have been proposed for this encoding resource, such as samples (Palmer, 1994; Sewell et al., 2014), Fisher information (van den Berg et al., 2012; Keshvari et al., 2013), and neural firing rate (Bays, 2014). Models with a fixed amount of resource generally predict that the encoding precision per item (defined as inverse variance of the encoding error) is inversely proportional to set size. This prediction is often inconsistent with empirical data, which is the reason that more recent studies instead use a power law to describe set size effects (Bays et al., 2009; Bays and Husain, 2008; van den Berg et al., 2012; van den Berg et al., 2014; Devkar et al., 2015; Elmore et al., 2011; Mazyar et al., 2012; Wilken and Ma, 2004; Donkin et al., 2016; Keshvari et al., 2013). In these power-law models, the total amount of resource across all items is no longer fixed, but instead decreases or increases monotonically with set size. These models tend to provide excellent fits to experimental data, but they have been criticized for lacking a principled motivation (Oberauer et al., 2016; Oberauer and Lin, 2017): they accurately describe how memory precision depends on set size, but not why these effects are best described by a power law \u2013 or why they exist at all. In the present study, we seek a normative answer to these fundamental questions.\n\nWhile previous studies have used normative theories to account for certain aspects of VWM, none of them has accounted for set size effects in a principled way. Examples include our own previous work on change detection (Keshvari et al., 2012; Keshvari et al., 2013), change localization (van den Berg et al., 2012), and visual search (Mazyar et al., 2012). In those studies, we modelled the decision stage using optimal-observer theory, but assumed an ad hoc power law to model the relation between encoding precision and set size. Another example is the work by Sims and colleagues, who developed a normative framework in which working memory is conceptualized as an optimally performing information channel (Sims, 2016; Sims et al., 2012). Their information-theoretic framework offers parsimonious explanations for the relation between stimulus variability and encoding precision (Sims et al., 2012) and the non-Gaussian shape of encoding noise (Sims, 2015). However, it does not offer a normative explanation of set size effects. In their early work (Sims et al., 2012), they accounted for these effects by assuming that total information capacity is fixed, which is similar to other fixed-resource models and predicts an inverse proportionality between encoding precision and set size. In their later work (Orhan et al., 2014; Sims, 2016), they add to this the assumption that there is an inefficiency in distributing capacity across items and fit capacity as a free parameter at each set size. Neither of these assumptions has a normative motivation. Finally, Nassar and colleagues have proposed a normative model in which a strategic trade-off is made between the number of encoded items and their precision: when two items are very similar, they are encoded as a single item, such that there is more resource available per encoded item (Nassar et al., 2018). They showed that this kind of \"chunking\" is rational from an information-theoretical perspective, because it minimizes the observer\u2019s expected estimation error. However, just as in much of the work discussed above, this theory assumes a fixed resource budget for item encoding, which is not necessarily optimal when resource usage is costly.\n\nThe approach that we take here aligns with the recent proposal that cognitive systems are \"resource-rational,\" that is, trade off the cost of using resources against expected task performance (Griffiths et al., 2015). The starting point of our theory is the principle that neural coding is costly (Attwell and Laughlin, 2001; Lennie, 2003; Sterling and Laughlin, 2015), which may have pressured the brain to trade off the behavioral benefits of high precision against the cost of the resource invested in stimulus encoding (Pestilli and Carrasco, 2005; Lennie, 2003; Ma and Huang, 2009; Christie and Schrater, 2015). We hypothesize that set size effects \u2013 and limitations in VWM in general \u2013 may be the result of making this trade-off near-optimally. We next formalize this hypothesis in a general model that can be applied to a broad range of tasks, analyze the theoretical predictions of this model, and fit it to data from nine previous delayed-estimation experiments.\n\n### Theory\n\n#### General theoretical framework: trade-off between behavioral and neural cost\n\nWe define a vector Q={Q1,\u2026, QN} that specifies the amount of resource with which each of N task-relevant items is encoded. We postulate that Q affects two types of cost: an expected behavioral cost $C\u00af_{neural}(Q)$ induced by task errors and an expected neural cost $C\u00af_{neural}(Q)$ induced by spending neural resources on encoding. The expected total cost is a weighted combination,\u00a0\n\n$$\nC\u00af_{total}(Q;\\lambda)=C\u00af_{behavioral}(Q)+\\lambdaC\u00af_{neural}(Q),\n$$\n\nwhere the weight \u03bb\u22650 represents the importance of the neural cost relative to the behavioral cost. Generally, increasing the amount of resource spent on encoding will reduce the expected behavioral cost, but simultaneously increase the expected neural cost.\n\nThe key novelty of our theory is that instead of assuming that there is a fixed resource budget for stimulus encoding (a hard constraint), we postulate that the brain \u2013 possibly on a trial-by-trial basis \u2013 chooses its resource vector Q in a manner that minimizes the expected total cost. We denote the vector that yields this minimum by Qoptimal:\n\n$$\nQ_{optimal}=argminQ\u00a0C\u00af_{total}(Q;\\lambda).\n$$\n\nUnder this policy, the total amount of invested resource \u2013 the sum of the elements of Qoptimal \u2013 does not need to be fixed: when it is \"worth it\" (i.e. when investing more resource reduces the expected behavioral cost more than it increases the expected neural cost), more resource may be invested.\n\nEquations (1) and (2) specify the theory at the most general level. To derive testable predictions, we next propose specific formalizations of resource and of the two expected cost functions.\n\n#### Formalization of resource\n\nAs in our previous work (Keshvari et al., 2012; Keshvari et al., 2013; Mazyar et al., 2012; van den Berg et al., 2012; van den Berg et al., 2014), we quantify encoding precision as Fisher information, J. This measure provides a lower bound on the variance of any unbiased estimator (Cover and Thomas, 2005; Ly et al., 2017) and is a common tool in the study of theoretical limits on stimulus coding and discrimination (Abbott and Dayan, 1999). Moreover, we assume that there is item-to-item and trial-to-trial variation in precision (Fougnie et al., 2012; van den Berg et al., 2012; van den Berg et al., 2014; Keshvari et al., 2013; van den Berg et al., 2017). Following our previous work, we model this variability using a gamma distribution with a mean $J\u00af$ and shape parameter \u03c4\u00a0\u22650 (larger \u03c4 means more variability); we denote this distribution by gamma $(J;J\u00af,\\tau)$.\n\nWe specify resource vector Q as the vector with mean encoding precisions, $J\u00af$, such that the general theory specified by Equations (1) and (2) modifies to\n\n$$\nC\u00af_{total}(J\u00af;\\lambda,\\tau)=C\u00af_{behavioral}(J\u00af;\\tau)+\\lambdaC\u00af_{neural}(J\u00af;\\tau)\n$$\n\nand\n\n$$\nJ\u00af_{optimal}=argminJ\u00af\u00a0C\u00af_{total}(J\u00af;\\lambda,\\tau)\n$$\n\nIn this formulation, it is assumed that the brain has control over resource vector $J\u00af$, but not over the variability in how much resource is actually assigned to an item. It should be noted, however, that our choice to incorporate variability in J is empirically motivated and not central to the theory: parameter \u03c4 mainly affects the kurtosis of the predicted estimation error distributions, not their variance or the way that the variance depends on set size (which is the focus of this paper). We will show that the theory also predicts set size effects when there is no variability in J.\n\n#### Formalization of expected neural cost\n\nTo formalize the neural cost function, we make two general assumptions. First, we assume that the expected neural cost induced by encoding a set of N items is the sum of the expected neural cost associated with each of the individual items. Second, we assume that each of these \u201clocal\u201d neural costs has the same functional dependence on the amount of allocated resource: if two items are encoded with the same amount of resource, they induce equal amounts of neural cost. Combining these assumptions, the expected neural cost induced by encoding a set of N items with resource $J\u00af={J\u00af_{1},\u2026,J\u00af_{N}}$ takes the form\n\n$$\nC\u00af_{neural}(J\u00af;\\tau)=\\sumi=1N\u2009c\u00af_{neural}(J\u00af_{i};\\tau),\n$$\n\nwhere we introduced the convention to denote local costs (associated with a single item) with small c, to distinguish them from the global costs (associated with the entire set of encoded items), which we denote with capital C.\n\nWe denote by cneural(J) the neural cost induced by investing an amount of resource J. The expected neural cost induced by encoding an item with resource $J\u00af$ is obtained by integrating over J,\n\n$$\nc\u00af_{neural}(J\u00af;\\tau)=\\intc_{neural}(J)Gamma(J;J\u00af,\\tau)dJ,\n$$\n\nThe theory is agnostic about the exact nature of the cost function $c_{neural}(J)$: it could include spiking and non-spiking components (Lennie, 2003), be associated with activity in both sensory and non-sensory areas, and include other types of cost that are linked to \u201cmental effort\u201d in general (Shenhav et al., 2017).\n\nTo motivate a specific form of this function, we consider the case that the neural cost is incurred by spiking activity. For many choices of spike variability, including the common one of Poisson-like variability (Ma et al., 2006), Fisher information J of a stimulus encoded in a neural population is proportional to the trial-averaged neural spiking rate (Paradiso, 1988; Seung and Sompolinsky, 1993). If we further assume that each spike has a fixed cost, we find that the local neural cost induced by each item is proportional to J,\n\n$$\nc_{neural}(J;\\alpha)=\\alphaJ,\n$$\n\nwhere \u03b1 is the amount of neural cost incurred by a unit increase in resource. Combining Equations (5\u20137) yields\n\n$$\nC\u00af_{neural}(J\u00af;\\alpha)=\\alpha\\sumi=1N\u2009J\u00af_{i}.\n$$\n\nHence, the global expected neural cost is proportional to the total amount of invested resource and independent of the amount of variability in J. Although we use this linear expected neural cost function throughout the paper, we show in Appendix 1 that the key model prediction \u2013 a decrease of the optimal resource per item with set size \u2013 generalizes to a broad range of choices.\n\n#### Formalization of expected behavioral cost for local tasks\n\nBefore we specify the expected behavioral cost function, we introduce a distinction between two classes of tasks. First, we define a task as \"local\" if the observer\u2019s response depends on only one of the encoded items. Examples of local tasks are single-probe delayed-estimation (Blake et al., 1997; Prinzmetal et al., 1998; Wilken and Ma, 2004), single-probe change detection (Todd and Marois, 2004; Luck and Vogel, 1997), and single-probe change discrimination (Klyszejko et al., 2014). By contrast, when the task response depends on all memorized items, we define the task as \"global.\" Examples of global tasks are whole-display change detection (Luck and Vogel, 1997; Keshvari et al., 2013), change localization (van den Berg et al., 2012), and delayed visual search (Mazyar et al., 2012). The theory that we developed up to this point \u2013 Equations (1\u20138) \u2013 applies to both global and local tasks. However, from here on, we develop our theory in the context of local tasks only; we will come back to global tasks at the end of the\u00a0Results.\n\nAs in local tasks only one item gets probed, the expected behavioral cost across all items is a weighted average,\n\n$$\nC\u00af_{behavioral}(J\u00af;\\tau)=\\sumi=1N\u2009p_{i}c\u00af_{behavioral,i}(J\u00af_{i};\\tau),\n$$\n\nwhere pi is the experimentally determined probing probability of the ith item and $c\u00af_{behavioral,i}(J\u00af_{i};\\tau)$ is the local expected behavioral cost associated with reporting the ith item. We will refer to the product $p_{i}c\u00af_{behavioral,i}(J\u00af_{i};\\tau)$ as the 'expected behavioral cost per item'. The only remaining step is to specify $c\u00af_{behavioral,i}(J\u00af_{i};\\tau)$. This function is task-specific and we will specify it after we have described the task to which we apply the model.\n\n#### A resource-rational model for local tasks\n\nCombining Equations 3, 8, and 9 yields the following expected total cost function for local tasks:\n\n$$\nC\u00af_{total}(J\u00af;\\alpha,\\lambda,\\tau)=\\sumi=1N\u2009p_{i}c\u00af_{behavioral}(J\u00af_{i};\\tau)+\\alpha\\lambda\\sumi=1N\u2009J\u00af_{i}.\n$$\n\nAs parameters \u03b1 and \u03bb have interchangeable effects on the model predictions, we will fix \u03b1\u00a0=\u00a01 and only treat \u03bb as a free parameter.\n\nWe recognize that the right-hand side of Equation 10 is a sum of independent terms. Therefore, each element of $J\u00af_{optimal}$, Equation 4, can be computed independently of the other elements, by minimizing the expected total cost per item,\n\n$$\nJ\u00af_{optimal,i}(p_{i};\\lambda,\\tau)=argminJ\u00af\u00a0(p_{i}c\u00af_{behavioral}(J\u00af;\\tau)+\\lambdaJ\u00af).\n$$\n\nThis completes the specification of the general form of our resource-rational model for local tasks. Its free parameters are \u03bb and \u03c4.\n\n#### Set size effects result from cost minimization and are mediated by probing probability\n\nTo obtain an understanding of the model predictions, we analyze how $J\u00af_{optimal}$ depends on probing probability and set size. We perform this analysis under two general assumptions about the local expected behavioral cost function: first, that it monotonically decreases with $J\u00af$ (i.e. increasing resource reduces the expected behavioral cost) and, second, that it satisfies a law of diminishing returns (i.e. the reductions per unit increase of resource decrease with the total amount of already invested resource). It can be proven (see Appendix 1) that under these assumptions, the domain of probing probability pi consists of three potential regimes, each with a different optimal encoding strategy (Figure 1A). First, there might exist a regime 0\u2264pi<p0 in which it is optimal to not encode an item, $J\u00af_{optimal}=0$. In this regime, the probing probability of an item is so low that investing any amount of resource can never reduce the local expected behavioral cost by more than it increases the expected neural cost. Second, there might exist a regime p0\u2264pi<p\u221e in which it is optimal to encode an item with a finite amount of resource, $J\u00af_{optimal}\\in(0,\u221e)$. In this regime, $J\u00af_{optimal}$ increases as a function of pi. Finally, there may be a regime p\u221e\u2264pi\u22641 in which the optimal strategy is to encode the item with an infinite amount of resource, $J\u00af_{optimal}=\u221e$. This last regime will only exist in extreme cases, such as when there is no neural cost associated with encoding. The threshold p0 depends on the importance of the neural cost, \u03bb, and on the derivative of the local expected behavioral cost evaluated at $J\u00af=0$; specifically, $p_{0}=\\frac{\\lambda}{|c\u00af_{behavioral}^{\u2032}(0)|}$ . The threshold p\u221e depends on \u03bb and on the derivative of the local expected behavioral cost evaluated at $J\u00af\u2192\u221e$; specifically, $p_{\u221e}=\\frac{\\lambda}{|c\u00af_{behavioral}^{\u2032}(\u221e)|}$ . If p\u221e>1, then the third regime does not exist, whereas if p0\u00a0>1, only the first regime exists.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig1-v2.jpg)\n\n**Figure 1.:** Effects of probing probability and set size on $J\u00af_{optimal}$ in the resource-rational model for local tasks.(A) The model has three different optimal solutions depending on probing probability pi: invest no resource when pi is smaller than some threshold value p0, invest infinite resource when pi is larger than p\u221e, and invest a finite amount of resource when p0\u00a0<pi\u00a0< p\u221e. The thresholds p0 and p\u221e depend on weight \u03bb (see Equation (1)) and on the derivative of the local expected behavioral cost function evaluated at 0 and \u221e, respectively. If p0\u00a0>1, then only the first regime exists; if p0\u00a0<1\u00a0< p\u221e then only the first two regimes exist. (B) If, in addition, pi\u00a0=\u00a01/N, then the domain of N partitions in a similar manner.\n\nWe next turn to set size effects. An interesting property of the model is that $J\u00af_{optimal}$ depends only on the probing probability, pi, and on the model parameters \u2013 it does not explicitly depend on set size, N. Therefore, the only way in which the model can predict set size effects is through a coupling between N and pi. Such a coupling exists in most studies that use a local task. For example, in delayed-estimation tasks, each item is usually equally likely to be probed such that pi\u00a0=\u00a01/N. For those experiments, the above partitioning of the domain of pi translates to a similar partitioning of the domain of N (Figure 1B). Then, a set size N\u221e\u22650 may exist below which it is optimal to encode items with infinite resource, a region N\u221e\u2264N\u00a0<\u00a0N0 in which it is optimal to encode items with a finite amount of resource, and a region N>N0 in which it is optimal to not encode items at all.\n\n## Results\n\n### Model predictions for delayed-estimation tasks\n\nTo test the predictions of the model against empirical data, we apply it to the delayed-estimation task (Wilken and Ma, 2004; Blake et al., 1997; Prinzmetal et al., 1998), which is currently one of the most widely used paradigms in VWM research. In this task, the observer briefly holds a set of items in memory and then reports their estimate of a randomly probed target item (Figure 2A). Set size effects manifest as a widening of the estimation error distribution as the number of items is increased (Figure 2B), which suggests a decrease in the amount of resource per item (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig2-v2.jpg)\n\n**Figure 2.:** (A) Example of a trial in a delayed-estimation experiment. The subject is briefly presented with a set of stimuli and, after a short delay, reports the value of the item at a randomly chosen location (here indicated with thick circle). (B) The distribution of estimation errors in delayed-estimation experiments typically widens with set size (data from Experiment E5 in Table 1). (C) This suggests that the amount of resource per encoded item decreases with set size. The estimated amount of resource per item was computed using the same non-parametric model as the\u00a0one\u00a0underlying\u00a0Figure 3C.\u00a0(D) Expected cost per item as a function of the amount of invested resource (model parameters: \u03bb\u00a0=\u00a00.01, \u03b2\u00a0=\u00a02, \u03c4\u21930). Left: The expected behavioral cost per item (colored curves) decreases with the amount of invested resource, while the expected neural cost per item increases (black line). Center: The sum of these two costs has a unique minimum, whose location (arrows) depends on probing probability pi. Right: The optimal amount of resource per item increases with the probability that the item will be probed. (E) Expected cost across all items, when each item is probed with a probability pi\u00a0=\u00a01/N; the model parameters are the same as in D and the set sizes correspond with the values of pi in D. The predicted set size effect (right panel) is qualitatively similar to set size effects observed in empirical data (cf. panel C). (D) and (E) are alternative illustrations of the same optimization problem; the right panel of (E) could also be obtained by replotting the right panel of (D) as a function of N\u00a0=\u00a01/pi.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Circular variance (top) and circular kurtosis (bottom) of the estimation error distributions as a function of set size, split by experiment. Error bars and shaded areas represent 1 s.e.m. of the mean across subjects. The first three data\u00a0sets were excluded from the main analyses on the grounds that they were published in papers that were later retracted (Anderson and Awh, 2012; Anderson et al., 2011). The data\u00a0set from the study by Rademaker et al. (2012) was excluded from the main analyses because it contains only two set sizes, which makes it less suitable for a fine-grained study of the relationship between encoding precision and set size.\n\n**Table 1.**\n Overview of experimental datasets.Experiments E5 and E6 differed in the way that subjects provided their responses (E5: color wheel; E6: scroll).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Exp. ID</th>\n      <th>Reference</th>\n      <th>Feature</th>\n      <th>Set size(s)</th>\n      <th>Probing probability</th>\n      <th>Number of subjects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E1</td>\n      <td>Wilken and Ma (2004)</td>\n      <td>Color</td>\n      <td>1, 2, 4, 8</td>\n      <td>Equal</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>E2</td>\n      <td>Zhang and Luck (2008)</td>\n      <td>Color</td>\n      <td>1, 2, 3, 6</td>\n      <td>Equal</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>E3</td>\n      <td>Bays et al. (2009)</td>\n      <td>Color</td>\n      <td>1, 2, 4, 6</td>\n      <td>Equal</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>E4</td>\n      <td>van den Berg et al. (2012)</td>\n      <td>Orientation</td>\n      <td>1-8</td>\n      <td>Equal</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>E5</td>\n      <td>van den Berg et al. (2012)</td>\n      <td>Color</td>\n      <td>1-8</td>\n      <td>Equal</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>E6</td>\n      <td>van den Berg et al. (2012)</td>\n      <td>Color</td>\n      <td>1-8</td>\n      <td>Equal</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>E7</td>\n      <td>Bays et al. (2009)</td>\n      <td>Orientation</td>\n      <td>2,4,8</td>\n      <td>Unequal</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>E8</td>\n      <td>Emrich et al. (2017)</td>\n      <td>Color</td>\n      <td>4</td>\n      <td>Unequal</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>E9</td>\n      <td>Emrich et al. (2017)</td>\n      <td>Color</td>\n      <td>6</td>\n      <td>Unequal</td>\n      <td>20</td>\n    </tr>\n  </tbody>\n</table>\n\nTo apply our model to this task, we express the expected local behavioral cost as an expected value of the behavioral cost with respect to the error distribution,\n\n$$\nc\u00af_{behavioral,i}(J\u00af_{i};\\tau)=\\intc_{behavioral,i}(\\epsilon)p(\\epsilon;J\u00af_{i},\\tau)d\\epsilon,\n$$\n\nwhere the behavioral cost function cbehavioral,i(\u03b5) maps an encoding error \u03b5 to a cost and $p(\\epsilon;J\u00af_{i},\\tau)$ is the predicted distribution of \u03b5 for an item encoded with resource $J\u00af_{i}$. We first specify $p(\\epsilon;J\u00af_{i},\\tau)$ and then turn to cbehavioral,i(\u03b5). As the task-relevant feature in delayed-estimation experiments is usually a circular variable (color or orientation), we make the common assumption that \u03b5 follows a Von Mises distribution. We denote this distribution by VM(\u03b5;J), where J is one-to-one related to the distribution\u2019s concentration parameter \u03ba (Appendix 1). The distribution of \u03b5 for a stimulus encoded with resource $J\u00af_{i}$ is found by integrating over J, \n\n$$\np(\\epsilon;J\u00af_{i},\\tau)=\\intVM(\\epsilon;J)Gamma(J;J\u00af_{i},\\tau)dJ\n$$\n\nFinally, we specify the behavioral cost function $c_{behavioral,i}(\\epsilon)$ in Equation 12, which maps an estimation error \u03b5 to a behavioral cost. As in most psychophysical experiments, human subjects tend to perform well on delayed-estimation tasks even when the reward is independent of their performance. This suggests that the behavioral cost function is strongly determined by internal incentives. A recent paper (Sims, 2015) has attempted to measure this mapping and proposed a two-parameter function. We will test that proposal later, but for the moment we assume a simpler, one-parameter power-law function, $c_{behavioral,i}(\\epsilon;\\beta)=|\\epsilon|^{\\beta}$, where power \u03b2 is a free parameter.\n\nTo obtain an intuition for the predictions of this model, we plot in Figure 2D for a specific set of parameters the two expected costs per item and their sum, Equation 11, as a function of $J\u00af$. The expected behavioral cost per item depends on pi and decreases with $J\u00af$ (colored curves in left panel), while the expected neural cost per item is independent of pi and increases (black line in left panel). The expected total cost per item has a unique minimum (middle panel). The value of $J\u00af$ corresponding to this minimum, $J\u00af_{optimal}$, increases with pi (Figure 2D, right). Hence, in this example, the optimal amount of resource per item is an increasing function of its probing probability.\n\nWe next consider the special case in which each item is equally likely to be probed, that\u00a0is, pi\u00a0=\u00a01/N. The values of pi in Figure 2D then correspond to set sizes 1, 2, 4, and 8. When replotting $J\u00af_{optimal}$ as a function of N, we find a set size effect (Figure 2E, right panel) that is qualitatively similar to the empirical result in Figure 2C. An alternative way to understand this predicted set size effect is by considering how the three expected costs across all items, Equation 3, depend on $J\u00af$. Substituting pi\u00a0=\u00a01/N in Equation 9, we find that the expected behavioral cost across all items is independent of set size (Figure 2E, left panel, black curve). Moreover, when all items are encoded with the same amount of resource (which is necessarily the optimal solution when pi is identical across items), the expected neural cost across all items equals $NJ\u00af$ and therefore scales linearly with set size (Figure 2E, left panel, colored lines). The sum of these terms has a unique minimum $J\u00af_{optimal}$ (Figure 2E, center panel), which monotonically decreases with set size (Figure 2E, right panel). The costs plotted in Figure 2E can be considered as obtained by multiplying the corresponding costs in Figure 2D by N.\n\nThe model thus predicts set size effects in delayed-estimation tasks that are fully mediated by individual-item probing probability. The latter notion is consistent with empirical observations. Palmer et al. (1993) reported that \"relevant set size\"\u00a0(where irrelevance means pi\u00a0=\u00a00) acts virtually identically to actual set size. Emrich et al. (2017) independently varied probing probability and set size in their experiment, and found that the former was a better predictor of performance than the latter. Based on this, they hypothesized that set size effects are mediated by probing probability. The predictions of our model are qualitatively consistent with these findings.\n\n### Model fits to data from delayed-estimation experiments with equal probing probabilities\n\nTo examine how well the model accounts for set size effects in empirical data, we fit it to data from six experiments that are part of a previously published benchmark set (E1-E6 in Table 1). We use a Bayesian optimization method (Acerbi and Ma, 2017) to estimate the maximum-likelihood parameter values, separately for each individual data set (see Table 2 for a summary of these estimates). The model accounts well for the subject-level error distributions (Figure 3A) and the two statistics that summarize these distributions (Figure 3B). The original benchmark set (van den Berg et al., 2014) contained four more data sets, but three of those were published in papers that were later retracted and another one contains data at only two set sizes. Although we decided to leave those four datasets out of our main analyses, the model accounts well for them too (Figure 2\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig3-v2.jpg)\n\n**Figure 3.:** (A) Maximum-likelihood fits to raw data of the worst-fitting and best-fitting subjects (subjects S10 in E6 and S4 in E4, respectively). Goodness of fit was measured as R2, computed for each subject by concatenating histograms across set sizes. (B) Subject-averaged circular variance and kurtosis of the estimation error, as a function of set size and split by experiment. The maximum-likelihood fits of the model account well for the trends in these statistics. (C) Estimated amounts of resource per item in the resource-rational model scattered against the estimates in the non-parametric model. Each dot represents estimates from a single subject. (D) Estimated amount of resource per item (red) and total resource (black) plotted against set size. Here and in subsequent figures, error bars and shaded areas represent 1 s.e.m. of the mean across subjects.\n\n**Table 2.**\n Subject-averaged parameter estimates of the resource-rational model fitted to data from nine previously published experiments.See Table 1 for details about the experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Experiment</th>\n      <th>\u03b2</th>\n      <th>\u03bb</th>\n      <th>\u03c4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E1</td>\n      <td>1.87\u00a0\u00b1\u00a00.29</td>\n      <td>(4.8 \u00b1 1.2)\u00b710\u22122</td>\n      <td>17.9\u00b12.5</td>\n    </tr>\n    <tr>\n      <td>E2</td>\n      <td>(1.33 \u00b1 0.30)\u00b710\u22122</td>\n      <td>(4.27 \u00b1 0.83)\u00b710\u22124</td>\n      <td>14.8\u00b11.1</td>\n    </tr>\n    <tr>\n      <td>E3</td>\n      <td>0.138\u00a0\u00b1\u00a00.042</td>\n      <td>(2.78 \u00b1 0.87) \u00b710\u22123</td>\n      <td>19.1\u00b12.6</td>\n    </tr>\n    <tr>\n      <td>E4</td>\n      <td>0.106\u00a0\u00b1\u00a00.052</td>\n      <td>(3.2 \u00b1 1.4)\u00b710\u22123</td>\n      <td>8.2\u00b11.8</td>\n    </tr>\n    <tr>\n      <td>E5</td>\n      <td>0.356\u00a0\u00b1\u00a00.085</td>\n      <td>(5.8 \u00b1 1.1)\u00b710\u22123</td>\n      <td>18.1\u00b12.8</td>\n    </tr>\n    <tr>\n      <td>E6</td>\n      <td>0.61\u00a0\u00b1\u00a00.15</td>\n      <td>(8.8 \u00b1 1.5)\u00b710\u22123</td>\n      <td>7.4\u00b11.3</td>\n    </tr>\n    <tr>\n      <td>E7</td>\n      <td>1.19\u00a0\u00b1\u00a00.51</td>\n      <td>(9.5 \u00b1 6.6)\u00b710\u22122</td>\n      <td>5.7\u00b11.5</td>\n    </tr>\n    <tr>\n      <td>E8</td>\n      <td>0.58\u00a0\u00b1\u00a00.19</td>\n      <td>(1.58 \u00b1 0.66)\u00b710\u22122</td>\n      <td>27.0\u00b13.7</td>\n    </tr>\n    <tr>\n      <td>E9</td>\n      <td>0.93\u00a0\u00b1\u00a00.25</td>\n      <td>(3.0 \u00b1 1.0)\u00b710\u22122</td>\n      <td>23.7\u00b12.3</td>\n    </tr>\n  </tbody>\n</table>\n\nWe next compare the goodness of fit of the resource-rational model to that of a descriptive variant in which the amount of resource per item, $J\u00af$, is assumed to be a power-law function of set size (all other aspects of the model are kept the same). This variant is identical to the VP-A model in our earlier work, which is one of the most accurate descriptive models currently available (van den Berg et al., 2014). Model comparison based on the Akaike Information Criterion (AIC) (Akaike, 1974) indicates that the data provide similar support for both models, with a small advantage for the resource-rational model (\u0394AIC\u00a0=\u00a05.27\u00a0\u00b1\u00a00.70; throughout the paper, X\u00a0\u00b1\u00a0Y indicates mean\u00a0\u00b1s.e.m. across subjects). Hence, the resource-rational model provides a principled explanation of set size effects without sacrificing quality of fit compared to one of the best available descriptive models of VWM. We find that the resource-rational model also fits better than a model in which the total amount of resource is fixed and divided equally across items (\u0394AIC\u00a0=\u00a013.9\u00a0\u00b1\u00a01.4).\n\nSo far, we have assumed that there is random variability in the actual amount of resource assigned to an item. Next, we test an equal-precision variant of the resource-rational model, by fixing parameter \u03c4 to a very small value (10\u22123). Consistent with the results obtained with the variable-precision model, we find that the rational model has a substantial AIC advantage over a fixed-resource model (\u0394AIC\u00a0=\u00a043.0\u00a0\u00b1\u00a06.8) and is on equal footing with the power-law model (\u0394AIC\u00a0=\u00a02.0\u00a0\u00b1\u00a01.7 in favor of the power-law model). However, all three equal-precision models (fixed resource, power law, rational) are outperformed by their variable-precision equivalents by over 100 AIC points. Therefore, we will only consider variable-precision models in the remainder of the paper.\n\nTo get an indication of the absolute goodness of fit of the resource-rational model, we next examine how much room for improvement there is in the fits. We do this by fitting a non-parametric model variant in which resource $J\u00af$ is a free parameter at each set size, while keeping all other aspects of the model the same. We find a marginal AIC difference, suggesting that the fits of the rational model cannot be improved much further without overfitting the data (\u0394AIC\u00a0=\u00a03.49\u00a0\u00b1\u00a00.93, in favor of the non-parametric model). An examination of the fitted parameter values corroborates this finding: the estimated resource values in the non-parametric model closely match the optimal values in the rational model (Figure 3C).\n\nSo far, we have assumed that behavioral cost is a power-law function of the absolute estimation error, cbehavioral(\u03b5)=|\u03b5|\u03b2. To evaluate the necessity of a free parameter in this function, we also test three parameter-free choices: |\u03b5|, \u03b52, and \u2212cos(\u03b5). Model comparison favors the original model with AIC differences of 14.0\u00a0\u00b1\u00a02.8, 24.4\u00a0\u00b1\u00a04.1, and 19.5\u00a0\u00b1\u00a03.5, respectively. While there may be other parameter-free functions that give better fits, we expect that a free parameter is unavoidable here, as the error-to-cost mapping may differ across experiments (because\u00a0of differences in external incentives) and also across subjects within an experiment (because\u00a0of differences in intrinsic motivation). Finally, we also test a two-parameter function that was proposed recently (Equation (5) in Sims [2015]). The main difference with our original choice is that this alternative function allows for saturation effects in the error-to-cost mapping. However, this extra flexibility does not increase the goodness of fit sufficiently to justify the additional parameter, as the original model outperforms this variant with an AIC difference of 5.3\u00a0\u00b1\u00a01.8.\n\nFinally, we use five-fold cross validation to verify the AIC-based results reported in this section. We find that they are all consistent (Table 3).\n\n**Table 3.**\n Comparing two metrics for model comparison: AIC and five-fold cross-validated log likelihood.Each comparison is between the main version of the resource-rational model, Equation (11), and the model listed in the first column of the table. Negative AIC differences and positive cross-validated log likelihood differences indicate an advantage of the resource-rational model over the alternative model. In all comparisons, these differences have opposite signs, which means that the AIC-based results are consistent with the cross-validation results.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model with which the main model is compared</th>\n      <th>AIC difference</th>\n      <th>Cross-validation log likelihood difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Descriptive power-law model</td>\n      <td>\u22125.27\u00b10.70</td>\n      <td>2.59\u00b10.39</td>\n    </tr>\n    <tr>\n      <td>Descriptive fixed-resource model</td>\n      <td>\u221213.9\u00b11.4</td>\n      <td>8.4\u00b11.0</td>\n    </tr>\n    <tr>\n      <td>Descriptive unconstrained model</td>\n      <td>3.49\u00b10.93</td>\n      <td>\u22121.26\u00b10.49</td>\n    </tr>\n    <tr>\n      <td>Rational model variant: equal precision</td>\n      <td>\u2212110\u00b110</td>\n      <td>56\u00b14.7</td>\n    </tr>\n    <tr>\n      <td>Rational model variant: cbehavioral=|\u03b5|</td>\n      <td>\u221214\u00b12.8</td>\n      <td>7.1\u00b11.4</td>\n    </tr>\n    <tr>\n      <td>Rational model variant: cbehavioral=\u03b52</td>\n      <td>\u221224.4\u00b14.1</td>\n      <td>12.2\u00b12.0</td>\n    </tr>\n    <tr>\n      <td>Rational model variant: cbehavioral=\u2212cos(\u03b5)</td>\n      <td>\u221219.5\u00b13.5</td>\n      <td>9.8\u00b11.8</td>\n    </tr>\n    <tr>\n      <td>Rational model variant: cbehavioral as in Sims (2015)</td>\n      <td>\u22125.3\u00b11.8</td>\n      <td>4.7\u00b10.74</td>\n    </tr>\n  </tbody>\n</table>\n\n### Non-monotonic relation between total resource and set size\n\nOne quantitative feature that sets the resource-rational theory apart from previous theories is its predicted relation between set size and the total amount of invested resource, $J\u00af_{total}=\\sum_{i=1}^{N}\u2009J\u00af_{i}$. This quantity is by definition constant in fixed-resource models, and in power-law models it varies monotonically with set size. By contrast, we find that in the fits to several of the experiments, $J\u00af_{total}$ varies non-monotonically with set size (Figure 3D, gray curves). To examine whether there is evidence for non-monotonic trends in the subject data, we next compute an \"empirical\" estimate $J\u00af_{total}=\\sum_{i=1}^{N}\u2009J\u00af^_{i}$, where $J\u00af^_{i}$ are the best-fitting resource estimates in the non-parametric model. We find that these estimates show evidence of similar non-monotonic relations in some of the experiments (Figure 3D, black circles). To quantify this evidence, we perform Bayesian paired t-tests in which we compare the estimates of $J\u00af_{total}$ at set size 3 with the estimates at set sizes 1 and 6 in the experiments that included these three set sizes (E2 and E4-E6). These tests reveal strong evidence that the total amount of resource is higher at set size 3 than at set sizes 1 (BF+0=1.05\u00b7107) and 6 (BF+0=4.02\u00b7102). We next compute for each subject the set size at which $J\u00af_{total}$ is largest, which we denote by Npeak, and find a subject-averaged value of 3.52\u00a0\u00b1\u00a00.18. Altogether, these findings suggest that the total amount of resource that subjects spend on item encoding varies non-monotonically with set size, which is consistent with predictions from the resource-rational model, but not with any of the previously proposed models. To the best of our knowledge, evidence for a possible non-monotonicity in the relation between set size and total encoding resource has not been reported before.\n\n### Predicted effects of probing probability\n\nAs we noted before, the model predictions do not explicitly depend on set size, N. Yet, we found that the model accounts well for set size effects in the experiments that we considered so far (E1-E6). This happens because in all those experiments, N was directly coupled with probing probability pi, through pi\u00a0=\u00a01/N. This coupling makes it impossible to determine whether changes in subjects\u2019 encoding precision are the\u00a0result\u00a0of changes in N or changes in pi. Therefore, we will next consider experiments in which individual probing probabilities and set size were varied independently of each other (E7-E9 in Table 1). According to our model, the effects of N that we found in E1-E6 were really effects of pi. Therefore, we should be able to make predictions about effects of pi in E7-E9 by recasting the effects of N in E1-E6 as effects of pi\u00a0=\u00a01/N. Given that the amount of resource per item in E1-E6 decreases with N, a first prediction is that it should increase as a function of pi in E7-E9. A second and particularly interesting prediction is that the estimated total amount of invested resource should vary non-monotonically with pi and peak at a value ppeak that is close to 1/Npeak found in E1-E6 (see previous section). Based on the values of Npeak in experiments E1-E6, we find a prediction ppeak\u00a0=\u00a00.358\u00a0\u00b1\u00a00.026.\n\n### Model fits to data from delayed-estimation experiments with unequal probing probabilities\n\nTo test the predictions presented in the previous section and, more generally, to evaluate how well our model accounts for effects of pi on encoding precision, we fit it to data from three experiments in which probing probability was varied independently of set size (E7-E9 in Table 1).\n\nIn the first of these experiments (E7), seven subjects performed a delayed-estimation task at set sizes 2, 4, and 8. On each trial, one of the items \u2013 indicated with a cue \u2013 was three times more likely to be probed than any of the other items. Hence, the probing probabilities for the cued and uncued items were 3/4 and 1/4 at N\u00a0=\u00a02, respectively, 1/2 and 1/6 at N\u00a0=\u00a04, and 3/10 and 1/10 at N\u00a0=\u00a08. The subject data show a clear effect of pi: the higher the probing probability of an item, the more precise the subject responses (Figure 4A, top row, black circles). We find that the resource-rational model, Equation (11), accounts well for this effect (Figure 4A, top row, curves) and does so by increasing the amount of resource as a function of probing probability pi (Figure 4B, left panel, red curves).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig4-v2.jpg)\n\n**Figure 4.:** (A) Fits of the resource-rational model (curves) to the data (black circles) of experiments E7-E9. (B) Estimated amount of resource per item as a function of probing probability (red) and the corresponding estimated total amount of resource that the subject would spend on encoding a display filled with items with equal probing probabilities (black). (C) Error histograms and a plot of $J\u00af_{optimal}$ as a function of pi for a single subject (S4 in E9). The estimated value of p0 was 0.18 for this subject, which was larger than the smallest probing probability in the experiment. The error histograms for items with the four lowest probing probabilities appear to be uniform for this subject, which is indicative of guessing (p>0.23 in Kolgomorov-Smirnov tests for uniformity on these four distributions).\n\nIn the other two experiments (E8 and E9), the number of cued items and cue validity were varied between conditions, while set size was kept constant at 4 or 6. For example, in one of the conditions of E8, three of the four items were cued with 100% validity, such that pi was 1/3 for each cued item and 0 for the uncued item; in another condition of the same experiment, two of the four items were cued with 66.7% validity, meaning that pi was 1/3 for each cued item and 1/6 for each uncued item. The unique values of pi across all conditions were {0, 1/6, 2/9, 1/4, 1/3, 1/2, 1} in E8 and {0, 1/12, 1/10, 2/15, 1/6, 1/3, 1/2, and 1} in E9. As in E7, responses become more precise with increasing pi and the model accounts well for this (Figure 4A), again by increasing the amount of resource assigned to an item with pi (Figure 4B).\n\nWe next examine how our model compares to the models proposed in the papers that originally published these three data\u00a0sets. In contrast to our model, both Bays (2014) and Emrich et al. (2017) proposed that the total amount of invested resource is fixed. However, while Bays proposed that the distribution of this resource is in accordance with minimization of a behavioral cost function (as in our model), Emrich et al. postulated that the resource is distributed in proportion to each item\u2019s probing probability. Hence, while our model optimizes both the amount of invested resource and its distribution, Bays\u2019 model only optimizes the distribution, and Emrich et al.\u2019s model does not explicitly optimize anything. To examine how the three proposals compare in terms of how well they account for the data, we fit two variants of our model that encapsulate the main assumptions of these two earlier proposals. In the first variant, we compute $J\u00af_{optimal}$ as $argminbfJ\u00af\u2009[\\sumi=1N\u2009p_{i}c\u00af_{behavioral}(J\u00af_{i};\\beta,\\tau)]$ under the constraint $\\sumi=1N\u2009J\u00af_{i}=J\u00af_{total}$, which is consistent with Bays\u2019 proposal. Hence, in this variant, the neural cost function is removed and parameter \u03bb is replaced by a parameter $J\u00af_{total}$ \u2013 otherwise, all aspects of the model are the same as in our main model. In the variant that we use to test Emrich et al.\u2019s proposal, we compute $J\u00af_{i}$ for each item as $p_{i}J\u00af_{total}$, where pi is the probing probability and $J\u00af_{total}$ is again a free parameter that represents the total amount of resource. Fitting the models to the data from all 47 subjects in E7-E9, we find a substantial advantage of our model over the proposal by Emrich et al., with an AIC difference of 18.0\u00a0\u00b1\u00a03.9. However, our model cannot reliably be distinguished from the proposal by Bays: either model is preferred in about half of the subjects (our model: 27; Bays: 20) and the subject-averaged AIC difference is negligible (1.8\u00a0\u00b1\u00a02.5 in favor of our model). Hence, the model comparison suggests quite convincingly that subjects distribute their resource near-optimally across items with unequal probing probabilities, but it is inconclusive regarding the question of\u00a0whether the total amount of invested resource is fixed or optimized.\n\nAs an alternative way to address the question of whether the total amount of resource is fixed, we again fit a non-parametric model to obtain \u201cempirical\u201d estimates of the total amount of invested resource. To this end, we define $J\u00af^_{total}=J\u00af^_{i}/p_{i}$, where $J\u00af^_{i}$ are the best-fitting values in a non-parametric model, such that $J\u00af^_{total}$ represents the estimated total amount of resource that a subject would invest to encode a display filled with items that all have probing probability pi. We find that these estimates show signs of a non-monotonicity as a function of pi (Figure 4B, black points), which are captured reasonably well by the resource-rational model (Figure 4B, black curves). Averaged across all subjects in E7-E9, the value of pi at which $J\u00af^_{total}$ is largest is 0.384\u00a0\u00b1\u00a00.037, which is close to the predicted value of 0.358\u00a0\u00b1\u00a00.026 (see previous section). Indeed, a Bayesian independent-samples t-test supports the null hypothesis that there is no difference (BF01\u00a0=\u00a04.27). Hence, while the model comparison results in the previous paragraph were inconclusive regarding the question\u00a0of whether the total amount of invested resource is fixed or optimized, the present analysis provides evidence against fixed-resource models and confirms a prediction made by our own model.\n\nIn summary, the results in this section show that effects of probing probability in E7-E9 are well accounted for by the same model as we used to explain effects of set size in E1-E6. Regardless of whether total resource is fixed or optimized, this finding provides further support for the suggestion that set size effects are mediated by probing probability (Emrich et al., 2017) or, more generally, by item relevance (Palmer et al., 1993).\n\n### Is it ever optimal to not encode an item?\n\nThere is an ongoing debate about the question of\u00a0whether a task-relevant item is sometimes completely left out of working memory (Adam et al., 2017; Luck and Vogel, 2013; Ma et al., 2014; Rouder et al., 2008). Specifically, slot models predict that this happens when set size exceeds the number of slots (Zhang and Luck, 2008). In resource models, the possibility of complete forgetting has so far been an added ingredient separate from the core of the model (van den Berg et al., 2014). Our normative theory allows for a reinterpretation of this question: are there situations in which it is optimal to assign zero resource to the encoding of an item? We already established that this could happen in delayed-estimation tasks: whenever the probing probability is lower than a threshold value $p_{0}=\\frac{\\lambda}{|c\u00af_{behavioral}(0)|}$, the optimal amount of resource to invest on encoding the item is zero (see Theory). But what values does p0 take in practice? Considering the expected behavioral cost function of a fixed-precision model (a variable-precision model with $\\tau\u21930$), we can prove that p0\u00a0=\u00a00, that\u00a0is, it is never optimal to invest no resource (Appendix 1). For the expected behavioral cost function of the variable-precision model, however, simulations indicate that p0 can be greater than 0 (we were not able to derive this result analytically). We next examine whether this ever happens under parameter values that are representative for human subjects. Using the maximum-likelihood parameters obtained from the data in E7-E9, we estimate that p0 (expressed as a percentage) equals 8.86 \u00b1 0.54%. Moreover, we find that for 8 of the 47 subjects, p0 is larger than the lowest probing probability in the experiment, which suggests that these subjects sometimes entirely ignored one or more of the items. For these subjects, the error distributions on items with pi<p0 look uniform (see Figure 4C for an example) and Kolmogorov-Smirnov tests for uniformity did not reject the null hypothesis in any of these cases (p>0.05 in all tests).\n\nThese results suggest that there might be a principled reason why people sometimes leave task-relevant items out of visual working memory in delayed-estimation experiments. However, our model cannot explain all previously reported evidence for this. In particular, when probing probabilities are equal for all items, the model makes an \"all or none\"\u00a0prediction: all items are encoded when pi>p0 and none are encoded otherwise. Hence, the\u00a0model cannot explain why subjects in tasks with equal probing probabilities sometimes seem to encode a subset of task-relevant items. For example, a recent study reported that in a whole-report delayed-estimation experiment (pi\u00a0=\u00a01 for all items), subjects encoded about half of the six presented items on each trial (Adam et al., 2017). Unless additional assumptions are made, our model cannot account for this finding.\n\n### Predictions for a global task: whole-display change detection\n\nThe results so far show that the resource-rational model accounts well for data in a variety of delayed-estimation experiments. To examine how its predictions generalize to other tasks, we next consider a change detection task, which is another widely used paradigm in research on VWM. In this task, the observer is sequentially presented with two sets of items and reports if any one of them changed (Figure 5A). In the variant that we consider here, a change is present on exactly half of the trials and is equally likely to occur in any of the items. We construct a model for this task by combining Equations 3, 4, and 8 with an expected behavioral cost function based on the Bayesian decision rule for this task (see Appendix 1), which yields\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example of a trial in a change detection task with a set size of 2. The subject is sequentially presented with two sets of stimuli and reports whether there was a change at any of the item locations. (B) Simulated expected total cost in the resource-rational cost function applied to a task with a set size of 2 and a reward of 0.05 (left), 0.20 (center), or 0.35 (right) units per correct trial. The red dot indicates the location of minimum cost, that\u00a0is the resource-optimal combination of $J\u00af_{1}$ and $J\u00af_{2}$ (note that the expected cost function in the central panel has a minimum at two distinct locations). When reward is low (left), the optimal strategy is to encode neither of the two stimuli. When reward is high (right), the optimal strategy is to encode both stimuli with equal amounts of resource. For intermediate reward (center), the optimal strategy is to encode one of the two items, but not the other one. (C) Model predictions as a function of trial rewards at N\u00a0=\u00a02. Left: The amount of resource assigned to the two items for a range of reward values. Right: the corresponding optimal number of encoded items (top) and optimal amount of resource per encoded item (bottom) as a function of reward. (D) Model predictions as a function of set size (trial reward\u00a0=\u00a01.5). The model predicts set size effects in both the number of encoded items (left, top) and the amount of resource with which these items are encoded (left, bottom). Moreover, the model produces response data (right) that are qualitatively similar to human data (see, for example, Figure 2C in Keshvari et al., 2013). The parameter values used in all simulations were \u03bb\u00a0=\u00a00.01 and \u03c4\u21930.\n\n$$\nJ\u00af_{optimal}=argminJ\u00af\u2009[p(error|J\u00af)+\\lambda\\sumi=1N\u2009J\u00af_{i}],\n$$\n\nwhere $p(error|J\u00af)$ is the expected behavioral cost function, which in this case specifies the probability of an error response when a set of items is encoded with resource $J\u00af$.\n\nIn contrast to local tasks, the expected total cost in global tasks cannot be written as a sum of expected costs per item, because the expected behavioral cost \u2013 such as $p(error|J\u00af)$ in Equation (14) \u2013 can only be computed globally, not per item. Consequently, the elements of $J\u00af_{optimal}$ in global tasks cannot be computed separately for each item. This makes resource optimization computationally much more demanding, because it requires solving an N-dimensional minimization problem instead of N one-dimensional problems.\n\nWe perform a simulation at N\u00a0=\u00a02 (which is still tractable) to get an intuition of the predictions that follow from Equation (14). For practical convenience, we assume in this simulation that there is no variability in precision, \u03c4\u21930, such that \u03bb is the only model parameter. The results (Figure 5B) show that the cost-minimizing strategy is to encode neither of the items when the amount of reward per correct trial is very low (left panel) and encode them both when reward is high (right panel). However, interestingly, there is also an intermediate regime in which the optimal strategy is to encode one of the two items, but not the other one (Figure 5B, central panel). Hence, just as in the delayed-estimation task, there are conditions in which it is optimal to encode only a subset of items. An important difference, however, is that in the delayed-estimation task this only happens when items have unequal probing probabilities, while in this change detection task it even happens when all items are equally likely to change.\n\nSimulations at larger set sizes quickly become computationally intractable, because of the reason mentioned above. However, the results at N\u00a0=\u00a02 suggest that if two items are encoded, the optimal solution is to encode them with the same amount of resource (Figure 5C). Therefore, we conjecture that all non-zero values in $J\u00af_{optimal}$ are identical, which would mean that the entire vector can be summarized by two values: the number of encoded items, which we denote by Koptimal, and the amount of resource assigned to each encoded item, which we denote by $J\u00af_{optimal}$. Using this conjecture (which we have not yet been able to prove), we are able to efficiently compute predictions at an arbitrary set size. Simulation results show that the model then predicts that both Koptimal and $J\u00af_{optimal}$ depend on set size (Figure 5D, left) and produces response data that are qualitatively similar to human data (Figure 5D, right).\n\n## Discussion\n\n### Summary\n\nDescriptive models of visual working memory (VWM) have evolved to a point where there is little room for improvement in how well they account for experimental data. Nevertheless, the basic finding that VWM precision depends on set size still lacks a principled explanation. Here, we examined a normative proposal in which expected task performance is traded off against the cost of spending neural resource on encoding. We used this principle to construct a resource-rational model for \"local\" VWM tasks and found that set size effects in this model are fully mediated by the probing probabilities of the individual items; this is consistent with suggestions from earlier empirical work (Emrich et al., 2017; Palmer et al., 1993). From the perspective of our model, the interpretation is that as more items are added to a task, the relevance of each individual item decreases, which makes it less cost-efficient to spend resource on its encoding. We also found that in this model it is sometimes optimal to encode only a subset of task-relevant items, which implies that resource rationality could serve as a principled bridge between resource and slot-based models of VWM. We tested the model on data from nine previous delayed-estimation experiments and found that it accounts well for effects of both set size and probing probability, despite having relatively few parameters. Moreover, it accounts for a non-monotonicity that appears to exist between set size and the total amount of resource that subjects invest in item encoding. The broader implication of our findings is that VWM limitations \u2013 and cognitive limitations in general \u2013 may be driven by a mechanism that minimizes a cost, instead of by a fixed constraint on available encoding resource.\n\n### Limitations\n\nOur theory makes a number of assumptions that need further investigation. First, we have assumed that the expected behavioral cost decreases indefinitely with the amount of invested resource, such that in the limit of infinite resource there is no encoding error and no behavioral cost. However, encoding precision in VWM is fundamentally limited by the precision of the sensory input, which is itself limited by irreducible sources of neural noise \u2013 such as Johnson noise and Poisson shot noise (Faisal et al., 2008; Smith, 2015) \u2013 and suboptimalities in early sensory processing (Beck et al., 2012). One way to incorporate this limitation is by assuming that there is a resource value $J\u00af_{input}$ beyond which the expected behavioral cost no longer decreases as a function of $J\u00af$. In this variant, $J\u00af_{input}$ represents the quality of the input and $J\u00af_{optimal}$ will never exceed this value, because any additional resource would increase the expected neural cost without decreasing the expected behavioral cost.\n\nMoreover, our theory assumes that there is no upper limit on the total amount of resource available for encoding: cost is the only factor that matters. However, as the brain is a finite entity, the total amount of resource must obviously have an upper limit. This limit can be incorporated by optimizing $J_{optimal}$ under the constraint $\\sum_{i=1}^{N}\u2009J\u00af_{optimal,i}\\leqJ\u00af_{max}$, where $J\u00af_{max}$ represents the maximum amount of resource that can be invested. While an upper limit certainly exists, it may be much higher than the average amount of resource needed to encode information with the same fidelity as the sensory input. If that is the case, then $J\u00af_{input}$ would be the constraining factor and $J\u00af_{max}$ would have no effect.\n\nSimilarly, our theory assumes that there is no lower limit on the amount of resource available for encoding. However, there is evidence that task-irrelevant stimuli are sometimes automatically encoded (Yi et al., 2004; Shin and Ma, 2016), perhaps because in natural environments few stimuli are ever completely irrelevant. This would mean that there is a lower limit to the amount of resource spent on encoding. In contradiction to the predictions of our model, such a lower limit would prevent subjects from sometimes encoding nothing at all. For local tasks, such a lower limit can be incorporated by assuming that probing probability pi is never zero.\n\nWe have fitted our model only to data from delayed-estimation experiments. However, it applies without modification to other local tasks, such as single-probe change detection (Luck and Vogel, 1997; Todd and Marois, 2004) and single-probe change discrimination (Klyszejko et al., 2014). Further work is needed to examine how well the model accounts for empirical data of such tasks. Moreover, it should further examine how the theory generalizes to global tasks. One such task could be whole-report change detection; we presented simulation results for this task but the theory remains to be further worked out and fitted to the data.\n\nA final limitation is that our theory assumes that items are uniformly distributed and uncorrelated. Although this is correct for most experimental settings, items in more naturalistic settings are often correlated and can take non-uniform distributions. In such environments, the expected total cost can probably be further minimized by taking into account statistical regularities (Orhan et al., 2014). Moreover, recent work has suggested that even when items are uncorrelated and uniformly distributed, the expected estimation error can sometimes be reduced by using a \"chunking\" strategy, that\u00a0is, encoding similar items as one (Nassar et al., 2018). However, as Nassar et al. assumed a fixed total resource and did not take neural encoding cost into account in their optimization, it remains to be seen whether chunking is also optimal in the kind of model that we proposed. We speculate that this is likely to be the case, because encoding multiple items as one will reduce the expected neural cost (fewer items to encode), while the increase in expected behavioral cost will be negligible if the items are very similar. Hence, it seems worthwhile to examine models that combine resource rationality with chunking.\n\n### Variability in resource assignment\n\nThroughout the paper, we have assumed that there is variability in resource assignment. Part of this variability is possibly a\u00a0result\u00a0of stochastic factors, but part of it may also be systematic \u2013 for example, particular colors and orientations may be encoded with higher precision than others (Bae et al., 2014; Girshick et al., 2011). Whereas the systematic component could have a rational basis (e.g. higher precision for colors and orientations that occur more frequently in natural scenes [Ganguli and Simoncelli, 2010; Wei and Stocker, 2015]), this is unlikely to be true for the random component. Indeed, when we jointly optimize $J\u00af$and \u03c4 in Equation 11, we find estimates of \u03c4 that consistently approach 0, meaning that any variability in encoding precision is suboptimal under our proposed cost function. One way to reconcile this apparent suboptimality with the otherwise normative theory is to postulate that maintaining exactly equal resource assignment across cortical regions may itself be a costly process; under such a cost, it could be optimal to allow for some variability in resource assignment. Another possibility is that there are unavoidable imperfections in mental inference (Drugowitsch et al., 2016) that make it impossible to compute $J\u00af_{optimal}$ without error, such that the outcome of the computation will vary from trial to trial even when the stimuli are identical.\n\n### Experimental predictions of incentive manipulations\n\nIn the present study, we have focused on effects of set size and probing probability on encoding precision. However, our theory also makes predictions about effects of incentive manipulations on encoding precision, because such manipulations affect the expected behavioral cost function.\n\nIncentives can be experimentally manipulated in a variety of ways. One method used in at least two previously published delayed-estimation experiments is to make the feedback binary (\"correct,\" \"error\") and vary the value of the maximum error allowed to receive positive feedback (Zhang and Luck, 2011; Nassar et al., 2018). In both studies, subjects in a \"low precision\" condition received positive feedback whenever their estimation error was smaller than a threshold value of \u03c0/3. Subjects in the \"high precision\" condition, however, received positive feedback only when the error was smaller than \u03c0/12 (Zhang and Luck, 2011) or \u03c0/8 (Nassar et al., 2018). Neither of the two studies found evidence for a difference in encoding precision between the low- and high-precision conditions. At first, this may seem to be at odds with the predictions of our model, as one may expect that it should assign more resource to items in the high-precision condition. To test whether this is the case, we simulated this experimental manipulation using a behavioral cost function cbehavioral,i(\u03b5) that maps values of |\u03b5| smaller than the feedback threshold to 0 and larger values to 1. The results reveal that the model predictions are not straightforward and that it can actually account for the absence of an effect (Figure 6). In particular, the simulation results suggest that the experimental manipulations in the studies by Zhang and Luck and Nassar et al. may not have been strong enough to measure an effect. Indeed, another study has criticized the study by Zhang and Luck on exactly this point and did find an effect when using an experimental design with stronger incentives (Fougnie et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34963/elife-34963-fig6-v2.jpg)\n\n**Figure 6.:** In this experiment, the observer receives positive feedback (e.g. \"correct\") when their estimation error is smaller than the positive feedback threshold and negative feedback (e.g. \"error\") otherwise. We modelled this using a behavioral cost function that maps errors below the feedback threshold to a cost of 0 and errors larger than this threshold to a cost equal to 1. The model predicts that subjects do not invest any resource when the feedback threshold is very small (extremely difficult tasks) or very large (extremely easy tasks), such that the expected absolute estimation error is \u03c0/2 (guessing). In an intermediate regime, the prediction is U-shaped and contains a region in which the predicted estimation error barely changes as a function of feedback threshold. In this region, any performance benefit from increasing the amount of invested resource is almost exactly outdone by the added neural cost. The dashed lines show the feedback thresholds corresponding to the \"high precision\" and \"low precision\" conditions in the experiment by Nassar et al. (2018). Under the chosen parameter settings (\u03bb\u00a0=\u00a00.08, \u03c4\u00a0=\u00a030), the model predicts that the average absolute estimation errors in these two conditions (black circles) are very similar to each other.\n\nAnother method to manipulate incentives is to vary the amount of potential reward across items within a display. For example, Klyszejko and colleagues performed a local change discrimination experiment in which the monetary reward for a correct response depended on which item was probed (Klyszejko et al., 2014). They found a positive relation between the amount of reward associated with an item and response accuracy, which indicates that subjects spent more resource on encoding items with larger potential reward. This incentive manipulation can be implemented by multiplying the behavioral cost function with an item-dependent factor ui, which modifies Equation (11) to $J\u00af_{optimal},i(r_{i};\\lambda,\\tau)=argminJ\u00af\u00a0(u_{i}p_{i}c\u00af_{behavioral}(J\u00af;\\tau)+\\lambdaJ\u00af)$. The coefficients ui and pi can be combined into a single \"item relevance\" coefficient ri\u00a0=\u00a0uipi, and all theoretical results and predictions that we derived for pi now apply to ri.\n\nA difference between the two discussed methods is that the former varied incentives within a trial and the latter across trials. However, both methods can be applied in both ways. A within-trial variant of the experiments by Zhang and Luck (2011) and Nassar et al. (2018) would be a N\u00a0=\u00a02 task in which one of the items always has a low positive feedback threshold and the other a high one. Similarly, a between-trial variant of the experiment by Klyszejko et al. (2014) would be to scale the behavioral cost function of items with a factor that varies across trials or blocks, but is constant within a trial. Our model can be used to derive predictions for these task variants, which to our knowledge have not been previously\u00a0reported in the published literature.\n\n### Neural mechanisms and timescale of optimization\n\nOur results raise the question of\u00a0what neural mechanism could implement the optimal allocation policy that forms the core of our theory. Some form of divisive normalization (Bays, 2014; Carandini and Heeger, 2012) would be a likely candidate, which is already a key operation in neural models of attention (Reynolds and Heeger, 2009) and visual working memory (Bays, 2014; Wei et al., 2012). The essence of this mechanism is that it lowers the gain when set size is larger, without requiring explicit knowledge of the set size prior to the presentation of the stimuli. Consistent with the predictions of this theory, empirical work has found that the neural activity associated with the encoding of an item decreases with set size, as observed in for example the lateral intraparietal cortex (Churchland et al., 2008; Balan et al., 2008) and superior colliculus (Basso and Wurtz, 1998). Moreover, the work by Bays (2014) has shown that a modified version of divisive normalization can account for the near-optimal distribution of resources across items with unequal probing probabilities. As set size effects in our model are mediated by probing probability, its predicted set size effects can probably be accounted for by a similar mechanism.\n\nAnother question concerns the timescale at which the optimization takes place. In all experimental data that we considered here, the only factors that changed from trial to trial were set size (E1-E7) and probing probability (E7-E9). When we fitted the model, we assumed that the expected total cost in these experiments was minimized on a trial-by-trial basis: whenever set size or probing probability changed from one trial to the next, the computation of $J_{optimal}$ followed this change. This assumption accounted well for the data and, as discussed above, previous work has shown that divisive normalization can accommodate trial-by-trial changes in set size and probing probability. However, can the same mechanism also accommodate changes in the optimal resource policy changes driven by other factors, such as the behavioral cost function, cbehavioral(\u03b5)? From a computational standpoint, divisive normalization is a mapping from an input vector of neural activities to an output vector, and the shape of this mapping depends on the parameters of the mechanism (such as gain, weighting factors, and a power on the input). As the mapping is quite flexible, we expect that it can accommodate a near-optimal allocation policy for most experimental conditions. However, top-down control and some form of learning (e.g. reinforcement learning) are likely required to adjust the parameters of the normalization mechanism, which would prohibit instantaneous optimality after a change in the experimental conditions.\n\n### Neural prediction\n\nThe total amount of resource that subjects spend on item encoding may vary non-monotonically with set size in our model. At the neural level, this translates to a prediction of a non-monotonic relation between population-level spiking activity and set size. We are not aware of any studies that have specifically addressed this prediction, but it can be tested using neuroimaging experiments similar to previously conducted experiments. For example, Balan et al. used single-neuron recording to estimate neural activity per item for set sizes 2, 4, and 6 in a visual search task (Balan et al., 2008). To test for the existence of the predicted non-monotonicity, the same recoding techniques can be used in a VWM task with a more fine-grained range of set sizes. Even though it is practically impossible to directly measure population-level activity, reasonable estimates may be obtained by multiplying single-neuron recordings with set size (under the assumption that an increase in resource translates to an increase in firing rate and not an increase of neurons used to encode an item). A similar method can also assess the relation between an item\u2019s probing probability and the spiking activity related to its neural encoding.\n\n### Extensions to other domains\n\nOur theory might apply beyond working memory tasks. In particular, it has been speculated that the selectivity of attention arises from a need to balance performance against the costs associated with spiking (Pestilli and Carrasco, 2005; Lennie, 2003). Our theory provides a normative formalism to test this speculation and may thus explain set size effects in attention tasks (Lindsay et al., 1968; Shaw, 1980; Ma and Huang, 2009).\n\nFurthermore, developmental studies have found that that working memory capacity estimates change with age (Simmering and Perone, 2012; Simmering, 2012). Viewed from the perspective of our proposed theory, this raises the question\u00a0of why the optimal trade-off between behavioral and neural cost would change with age. A speculative answer is that a subject's coding efficiency \u2013 formalized by the reciprocal of parameter \u03b1 in Equation 7 \u2013 may improve during childhood: an increase in coding efficiency reduces the neural cost per unit of precision, which shifts the optimal amount of resource to use for encoding to larger values. Neuroimaging studies might provide insight into whether and how coding efficiency changes with age, for\u00a0example by estimating the amount of neural activity required per unit of precision in memory representations.\n\n### Broader context\n\nOur work fits into a broader tradition of normative theories in psychology and neuroscience (Table 4). The main motivation for such theories is to reach a deeper level of understanding by analyzing a system in the context of the ecological needs and constraints under which it evolved. Besides work on ideal-observer decision rules (Green and Swets, 1966; KordingK\u00f6rding, 2007; Geisler, 2011; Shen and Ma, 2016) and on resource-limited approximations to optimal inference (Gershman et al., 2015; Griffiths et al., 2015; Vul and Pashler, 2008; Vul, 2009), normative approaches have also been used at the level of neural coding. For example, properties of receptive fields (Vincent et al., 2005; Liu et al., 2009; Olshausen and Field, 1996), tuning curves (Attneave, 1954; Barlow, 1961; Ganguli and Simoncelli, 2010), neural architecture (Cherniak, 1994; Chklovskii et al., 2002), receptor performance (Laughlin, 2001), and neural network modularity (Clune et al., 2013) have been explained as outcomes of optimization under either a cost or a hard constraint (on total neural firing, sparsity, or wiring length), and are thus mathematically closely related to the theory presented here. However, a difference concerns the timescale at which the optimization takes place: while optimization in the context of neural coding is typically thought to take place at the timescale over which the statistics of the environment change or a developmental timescale, the theory that we presented here could optimize on a trial-by-trial basis to follow changes in task properties.\n\n**Table 4.**\n Examples of resource-rationality concepts in neuroscience, psychology, and economics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Study</th>\n      <th>Optimized quantity</th>\n      <th>Performance term</th>\n      <th>Resource cost/constraint</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Efficient coding in neural populations</td>\n    </tr>\n    <tr>\n      <td>Ganguli and Simoncelli (2010)</td>\n      <td>Tuning curve spacing and width</td>\n      <td>Fisher information or discriminability</td>\n      <td>Neural activity (constraint)</td>\n    </tr>\n    <tr>\n      <td>Olshausen and Field (1996)</td>\n      <td>Receptive field specificity</td>\n      <td>Information</td>\n      <td>Sparsity</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Capacity \u201climitations\u201d in attention and memory</td>\n    </tr>\n    <tr>\n      <td>Sims et al. (2012)</td>\n      <td>Information channel bit allocation</td>\n      <td>Channel distortion (e.g. squared error)</td>\n      <td>Channel capacity (constraint)</td>\n    </tr>\n    <tr>\n      <td>Van den Berg and Ma (present study)</td>\n      <td>Mean encoding precision</td>\n      <td>Behavioral task accuracy</td>\n      <td>Neural activity (cost)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Rational inattention in consumer choice</td>\n    </tr>\n    <tr>\n      <td>Sims (2003)</td>\n      <td>Distribution of attention</td>\n      <td>Channel distortion (e.g. squared error)</td>\n      <td>Channel capacity (constraint)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe already mentioned the information-theory models of working memory developed by Chris R. Sims et al. A very similar framework has been proposed by Chris A. Sims in behavioral economics, who used information theory to formalize his hypothesis of \"rational inattention,\" that\u00a0is, the hypothesis that consumers make optimal decisions under a fixed budget of attentional resources that can be allocated to process economic data (Sims, 2003). The model presented here differs from these two approaches in two important ways. First, similar to early models of visual working memory limitations, they postulate a fixed total amount of resources (formalized as channel capacity), which is a constraint rather than a cost. Second, even if it had been a cost, it would have been the expected value of a log probability ratio. Unlike neural spike count, a log probability ratio does not obviously map to a biologically meaningful cost on a single-trial level. Nevertheless, recent work has attempted to bridge rational inattention and attention in a psychophysical setting (Caplin et al., 2018).\n\n## Materials and methods\n\n### Data and code sharing\n\nData from experiments E1-E7 (Table 1) and Matlab code for model fitting and simulations are available at http://dx.doi.org/10.5061/dryad.nf5dr6c.\n\n### Statistical analyses\n\nBayesian t-tests were performed using the JASP software package (JASP Team, 2017) with the scale parameter of the Cauchy prior set to its default value of 0.707.\n\n### Model fitting\n\nWe used a Bayesian optimization method (Acerbi and Ma, 2017) to find the parameter vector $\\theta={\\beta,\\lambda,\\tau}$ that maximizes the log likelihood function, $\\sum_{i=1}^{n}\u2009logp(\\epsilon_{i};p_{i},\\theta)$, where n is the number of trials in the subject\u2019s data set, \u03b5i the estimation error on the ith trial, and pi the probing probability of the probed item on that trial. To reduce the risk of converging into a local maximum, initial parameter estimates were chosen based on a coarse grid search over a large range of parameter values. The predicted estimation error distribution for a given parameter vector \u03b8 and probing probability pi was computed as follows. First, $J\u00af_{optimal}$ was computed by applying Matlab's fminsearch function to Equation 11. Thereafter, the gamma distribution over J (with mean $J\u00af_{optimal}$ and shape parameter \u03c4) was discretized into 50 equal-probability bins. The predicted (Von Mises) estimation error distribution was then computed under the central value of each bin. Finally, these 50 predicted distributions were averaged. We verified that increasing the number of bins used in the numerical approximation of the integral over J did not substantially affect the results.\n\n### Model comparison using cross-validation\n\nIn the cross-validation analysis, we fitted the models in the same way as described above, but using only 80% of the data. We did this five times, each time leaving out a different subset of 20%\u00a0of\u00a0the data (in the first run we left out trials 1, 6, 11; in the second run we left out trials 2, 7, 12, etc.). At the end of each run, we used the maximum-likelihood parameter estimates to compute the log likelihood of the 20% of trials that were left out. These log likelihood values were then combined across the five runs to give an overall cross-validated log likelihood value for each model.\n",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "027a6327-821f-46d7-aca5-bab41af2f717",
+      "submission_id": "4b9d20bf-d2f9-4ee0-a223-5c6b5b83aaf6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie Palmer, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34963.022](https://doi.org/10.7554/eLife.34963.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ecological rationality in human working memory and attention\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Jacqueline Gottlieb (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, van den Berg and Ma propose a normative theory of a phenomenon called set-size effect \u2013 the fact that attention and working memory performance degrades as a function of the number of items. The set-size effect is fundamental in attention and working memory research, and many previous models have successfully described it by using ad hoc assumptions about the relation between precision and set-size. The authors' main innovation is to explain this relation in a normative framework. Specifically, they propose that the degradation in precision as a function of set size reflects a tradeoff between the benefits of precise encoding and the neural costs that this encoding demands. The authors develop the model, use it to fit several existing data sets, and offer an extensive discussion of the limitations of their model and its relation to the previous theoretical and empirical literatures.\n\nThe paper incorporates a genuinely new idea and is clearly written and quite thorough in its analysis and discussion. The Results section details a substantive amount of work, in which the model was fit to data from several experiments where working memory precision was measured in the context of local delayed-estimation, global estimation, change detection, change localization and present/absent visual search, and was quantitatively evaluated against other (often equally good) prediction schemes.\n\nSome major revisions are requested to clarify situations in which not all items are stored, to answer questions about the model parameter \u03c4, and to expand the discussion about how the flexibility of resource allocation in the model could be mechanistically realized in the brain.\n\nEssential revisions:\n\n1) The number of encoded items: The paper mentions a possible hard constraint on the number of items encoded. Depending on set size and cost functions, when (if ever) is it \"optimal\" not to encode some of the items? Some new modeling results should be shown here to shore this up and a longer discussion of this point should be added to the Results and Discussion.\n\nFurthermore, please expand the discussion of the costs of encoding more items versus fewer. Intuitively, it is obvious that it is more costly to encode 8 items than 2, but there are numerous reasons why this could be the case. Are there any experimental data in support of this assumption? In particular, are there any experimental data showing that encoding more items results in higher firing rates (at the population level)?\n\nMichael Frank and his group have recently made a very principled attempt to characterize the nature of the cost in these tasks, in terms of how participants might group or chunk the items. It may be beyond the scope of the current paper to attempt to outline a theory that explains these results, but perhaps readers would enjoy some more elaborate discussion of this issue.\n\n2) \u03c4: Please provide additional model results that show how the fits look when \u03c4 = 0. In particular, please show the goodness of fit of the rational model (with \u03c4 = 0) as compared to the fit of a model with a \"hard\" constraint on resources? In general, it was confusing that the theory is initially described in absence of \u03c4, while \u03c4 is used for actual fits to data. It would have been easier to understand if the theory had been evaluated in presence of \u03c4, and its effect studied within that theoretical framework.\n\n3) The speed of policy update: An assumption of the model that may be problematic is that people must almost instantaneously optimize their encoding precision when set-sizes change unpredictably from trial to trial. The theory predicts that, when a trial contains 2 stimuli and the next trial contains 4 stimuli, the participant instantaneously lowers the encoding precision to the new (near-) optimal level. This process sounds pretty demanding itself, especially considering that humans may also play an active role in determining their intrinsic motivation or deciding which items to memorize, which may further slow down the adjustment process. The flexibility in allocating resources that is implied by this model seems to be at odds with the slowness of cognitive control, well-documented by task switching costs. The authors touch on this point in the very last line of the paper, where they note that divisive normalization can provide a rapid adjustment mechanism. Even though the discussion is already long, it would be good to hear more about this point, and a comparison between a hardwired allocation mechanism and slower but more flexible cognitive control strategies.\n\nFurthermore, in the Frank paper described above, they use a task in which there is binary feedback that depends on the liberal vs. conservative error criterion (and they don't report major differences in performance as a function of this). One might suspect that participants would fail to adapt their policy even in an incentive-compatible version of this task which systematically varied these behavioral costs, and this would present a challenge to the authors' theory as described here. Please add some text to the Discussion addressing this point.\n\n4) Total precision vs. set-size: A novel and interesting prediction of the model is the non-monotonic relation between set-size and total precision (Figure 3B). Although the authors state that this point requires more empirical documentation, are the model results consistent with a non-monotonic encoding of target location that was reported by Balan et al. (2008) in monkey area LIP? That study found that, in a covert visual search task with different set sizes, the fidelity of target location encoding by area LIP was higher at set size 4 than at set size 2 or set size 6 (see Figure 5) \u2013 a non-linearity that was puzzling at the time but may gain new significance in light of this paper. Please add some discussion of this point to the manuscript.\n",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6863ec2-57b9-4c07-b2b3-17f6d285f9cc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C1",
+      "claim": "Encoding precision in visual working memory decreases with the number of encoded items.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding precision in visual working memory decreases with the number of encoded items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established empirical finding cited in the introduction with references to Ma et al., 2014 and Luck and Vogel, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e85730e5-6aad-4fdb-8b85-5bda83e30dfe",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C2",
+      "claim": "The brain minimizes a weighted sum of an error-based behavioral cost and a neural encoding cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a normative theory for such set size effects: the brain minimizes a weighted sum of an error-based behavioral cost and a neural encoding cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central theoretical proposal of the paper, presented as a hypothesis to be tested.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "a0c74c5b-aad2-446c-bea6-be8edc1b84f4",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C3",
+      "claim": "Set size effects are mediated by probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these effects are mediated by probing probability, which aligns with previous empirical findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The paper cites previous empirical findings and presents model predictions that align with this claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "d48c1899-3f3a-4e6f-9216-aae9f27bf6cc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C4",
+      "claim": "The model accounts well for effects of both set size and probing probability on encoding precision in nine delayed-estimation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accounts well for effects of both set size and probing probability on encoding precision in nine delayed-estimation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model fitting results presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "62859674-4515-4383-a213-a94bd0b3a23c",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C5",
+      "claim": "The total amount of invested resource can vary non-monotonically with set size.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find support for the prediction that the total amount of invested resource can vary non-monotonically with set size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by empirical analysis of data from experiments E2 and E4-E6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "3f915f3f-f17b-4b45-9a48-c321664cc222",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C6",
+      "claim": "It is sometimes optimal to encode only a subset or even none of the relevant items in a task.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that it is sometimes optimal to encode only a subset or even none of the relevant items in a task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from theoretical analysis and supported by model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c7de649b-519f-4142-aa9f-0c52e3eb5ab1",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C7",
+      "claim": "Cognitive limitations arise from rational cost minimization rather than from constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings raise the possibility that cognitive \"limitations\" arise from rational cost minimization rather than from constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "1a64f902-39f3-4269-a1b0-ac56444d5f4c",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C8",
+      "claim": "Models with a fixed amount of resource generally predict that the encoding precision per item is inversely proportional to set size.",
+      "claim_type": "EXPLICIT",
+      "source": "Models with a fixed amount of resource generally predict that the encoding precision per item (defined as inverse variance of the encoding error) is inversely proportional to set size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the predictions of existing models in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "ef124fe0-c30d-44f9-8b9b-4d72b89f1e51",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C9",
+      "claim": "The prediction of inverse proportionality between encoding precision and set size is often inconsistent with empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction is often inconsistent with empirical data, which is the reason that more recent studies instead use a power law to describe set size effects (Bays et al., 2009; Bays and Husain, 2008; van den Berg et al., 2012; van den Berg et al., 2014; Devkar et al., 2015; Elmore et al., 2011; Mazyar et al., 2012; Wilken and Ma, 2004; Donkin et al., 2016; Keshvari et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "562ddfee-6bf6-4496-b22f-3e4d0882095e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C10",
+      "claim": "Power-law models provide excellent fits to experimental data but lack a principled motivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These models tend to provide excellent fits to experimental data, but they have been criticized for lacking a principled motivation (Oberauer et al., 2016; Oberauer and Lin, 2017): they accurately describe how memory precision depends on set size, but not why these effects are best described by a power law \u2013 or why they exist at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to critical papers and is a motivation for the current work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e9279bcb-3419-4993-a4a1-164be8c7784f",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C11",
+      "claim": "Neural coding is costly.",
+      "claim_type": "EXPLICIT",
+      "source": "The starting point of our theory is the principle that neural coding is costly (Attwell and Laughlin, 2001; Lennie, 2003; Sterling and Laughlin, 2015), which may have pressured the brain to trade off the behavioral benefits of high precision against the cost of the resource invested in stimulus encoding (Pestilli and Carrasco, 2005; Lennie, 2003; Ma and Huang, 2009; Christie and Schrater, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "77afbcff-19e4-4215-ac69-a39595f6868b",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C13",
+      "claim": "Increasing the amount of resource spent on encoding will reduce the expected behavioral cost but simultaneously increase the expected neural cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, increasing the amount of resource spent on encoding will reduce the expected behavioral cost, but simultaneously increase the expected neural cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the theoretical framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b14e9f63-e149-4798-b2f1-da101493677e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C14",
+      "claim": "Fisher information provides a lower bound on the variance of any unbiased estimator.",
+      "claim_type": "EXPLICIT",
+      "source": "This measure provides a lower bound on the variance of any unbiased estimator (Cover and Thomas, 2005; Ly et al., 2017) and is a common tool in the study of theoretical limits on stimulus coding and discrimination (Abbott and Dayan, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established mathematical property supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c513114e-77ac-4b6e-941e-04d636db274d",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C15",
+      "claim": "There is item-to-item and trial-to-trial variation in precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we assume that there is item-to-item and trial-to-trial variation in precision (Fougnie et al., 2012; van den Berg et al., 2012; van den Berg et al., 2014; Keshvari et al., 2013; van den Berg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "7d608a4b-0eae-46ef-a014-b15d5541d9e1",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C16",
+      "claim": "For many choices of spike variability, including Poisson-like variability, Fisher information J is proportional to the trial-averaged neural spiking rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For many choices of spike variability, including the common one of Poisson-like variability (Ma et al., 2006), Fisher information J of a stimulus encoded in a neural population is proportional to the trial-averaged neural spiking rate (Paradiso, 1988; Seung and Sompolinsky, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b20e3767-2774-403b-9612-da21e730a68d",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C17",
+      "claim": "The resource-rational model provides a principled explanation of set size effects without sacrificing quality of fit compared to one of the best available descriptive models of VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the resource-rational model provides a principled explanation of set size effects without sacrificing quality of fit compared to one of the best available descriptive models of VWM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model comparison results using AIC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "73a16325-9828-4bf3-a54e-7774298c18c7",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C18",
+      "claim": "The resource-rational model fits better than a model in which the total amount of resource is fixed and divided equally across items.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the resource-rational model also fits better than a model in which the total amount of resource is fixed and divided equally across items (\u0394AIC = 13.9 \u00b1 1.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "fe78119a-435e-4656-b746-2c80e9e6da26",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C19",
+      "claim": "The estimated resource values in the non-parametric model closely match the optimal values in the rational model.",
+      "claim_type": "EXPLICIT",
+      "source": "An examination of the fitted parameter values corroborates this finding: the estimated resource values in the non-parametric model closely match the optimal values in the rational model (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparison in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "43dc6362-213e-4c95-bbab-a284ed89e41b",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C20",
+      "claim": "The total amount of resource is higher at set size 3 than at set sizes 1 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests reveal strong evidence that the total amount of resource is higher at set size 3 than at set sizes 1 (BF+0=1.05\u00b7107) and 6 (BF+0=4.02\u00b7102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Bayesian paired t-tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "d4f11a8e-d340-41bd-92fb-1e78f7bb8d05",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C22",
+      "claim": "Evidence for a possible non-monotonicity in the relation between set size and total encoding resource has not been reported before.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, evidence for a possible non-monotonicity in the relation between set size and total encoding resource has not been reported before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "220c2688-e2c3-4120-baec-e9dfe2d835ed",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C23",
+      "claim": "The amount of resource per item should increase as a function of probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the amount of resource per item in E1-E6 decreases with N, a first prediction is that it should increase as a function of pi in E7-E9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "484fd958-7c86-4a6c-bc78-757c0511a16e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C24",
+      "claim": "The estimated total amount of invested resource should vary non-monotonically with probing probability and peak at a value ppeak that is close to 1/Npeak.",
+      "claim_type": "EXPLICIT",
+      "source": "A second and particularly interesting prediction is that the estimated total amount of invested resource should vary non-monotonically with pi and peak at a value ppeak that is close to 1/Npeak found in E1-E6 (see previous section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "39d36584-7665-4ac3-9303-bbdebef42e2d",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C25",
+      "claim": "The predicted value of ppeak is 0.358 \u00b1 0.026.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the values of Npeak in experiments E1-E6, we find a prediction ppeak = 0.358 \u00b1 0.026.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is computed from the data in E1-E6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "6614f515-a6b1-4b01-b484-6c6b7748d348",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C26",
+      "claim": "The higher the probing probability of an item, the more precise the subject responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The subject data show a clear effect of pi: the higher the probing probability of an item, the more precise the subject responses (Figure 4A, top row, black circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an empirical observation from experiment E7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "fcfffffa-b39a-4f71-b239-ba4da9f72afc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C27",
+      "claim": "The resource-rational model accounts well for the effect of probing probability on response precision.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the resource-rational model, Equation (11), accounts well for this effect (Figure 4A, top row, curves) and does so by increasing the amount of resource as a function of probing probability pi (Figure 4B, left panel, red curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model fits shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "135da508-ff96-4444-96b7-4f57ccd047e9",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C29",
+      "claim": "A Bayesian independent-samples t-test supports the null hypothesis that there is no difference between the observed and predicted peak probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a Bayesian independent-samples t-test supports the null hypothesis that there is no difference (BF01 = 4.27).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a Bayesian t-test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "db53d8a0-38c8-47ce-94d8-2812aafe0594",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C30",
+      "claim": "Effects of probing probability in E7-E9 are well accounted for by the same model used to explain effects of set size in E1-E6.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the results in this section show that effects of probing probability in E7-E9 are well accounted for by the same model as we used to explain effects of set size in E1-E6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "911ddd9c-ab20-4013-a8bd-72417813fd4d",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C31",
+      "claim": "Set size effects are mediated by probing probability or, more generally, by item relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of whether total resource is fixed or optimized, this finding provides further support for the suggestion that set size effects are mediated by probing probability (Emrich et al., 2017) or, more generally, by item relevance (Palmer et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the model fitting results and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b0c8fcaa-059d-4556-a039-a79c3679d38e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C33",
+      "claim": "For a fixed-precision model, it is never optimal to invest no resource (p0 = 0).",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the expected behavioral cost function of a fixed-precision model (a variable-precision model with \u03c4\u21930), we can prove that p0 = 0, that is, it is never optimal to invest no resource (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "0180770d-4d63-4ef1-8665-88d3589f722a",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C34",
+      "claim": "For the variable-precision model, p0 can be greater than 0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the expected behavioral cost function of the variable-precision model, however, simulations indicate that p0 can be greater than 0 (we were not able to derive this result analytically).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "8367b275-f72b-487d-8ab2-0b7a770c5279",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C35",
+      "claim": "The estimated value of p0 (expressed as a percentage) equals 8.86 \u00b1 0.54%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the maximum-likelihood parameters obtained from the data in E7-E9, we estimate that p0 (expressed as a percentage) equals 8.86 \u00b1 0.54%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is computed from the fitted model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e5be9814-e257-4b8d-b118-8c440215aeac",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C36",
+      "claim": "For 8 of the 47 subjects, p0 is larger than the lowest probing probability in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that for 8 of the 47 subjects, p0 is larger than the lowest probing probability in the experiment, which suggests that these subjects sometimes entirely ignored one or more of the items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is computed from the fitted model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "69452b99-cdfc-4333-b472-6db3d95109b4",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C37",
+      "claim": "For subjects with pi<p0, the error distributions look uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "For these subjects, the error distributions on items with pi<p0 look uniform (see Figure 4C for an example) and Kolmogorov-Smirnov tests for uniformity did not reject the null hypothesis in any of these cases (p>0.05 in all tests).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual inspection and statistical tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "7e824717-3f25-4acd-bcba-1e18cfe8011a",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C38",
+      "claim": "There might be a principled reason why people sometimes leave task-relevant items out of visual working memory in delayed-estimation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that there might be a principled reason why people sometimes leave task-relevant items out of visual working memory in delayed-estimation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "7df9a29e-0037-44c4-b39e-c786bf4869f1",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C39",
+      "claim": "When probing probabilities are equal for all items, the model makes an 'all or none' prediction: all items are encoded when pi>p0 and none are encoded otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, when probing probabilities are equal for all items, the model makes an \"all or none\" prediction: all items are encoded when pi>p0 and none are encoded otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "26b19580-88dd-4816-84ae-1bc68a7f2b3b",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C40",
+      "claim": "The model cannot explain why subjects in tasks with equal probing probabilities sometimes seem to encode a subset of task-relevant items.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the model cannot explain why subjects in tasks with equal probing probabilities sometimes seem to encode a subset of task-relevant items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "5612edb8-04cc-46c0-a7e1-4be58fcfc233",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C41",
+      "claim": "In a whole-report delayed-estimation experiment with six items, subjects encoded about half of the items on each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study reported that in a whole-report delayed-estimation experiment (pi = 1 for all items), subjects encoded about half of the six presented items on each trial (Adam et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Adam et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e8901c19-a9a0-4225-a384-64a5c9250ba9",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C42",
+      "claim": "The model predicts that subjects do not invest any resource when the feedback threshold is very small or very large.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that subjects do not invest any resource when the feedback threshold is very small (extremely difficult tasks) or very large (extremely easy tasks), such that the expected absolute estimation error is \u03c0/2 (guessing).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "a74728c2-dd6d-430e-abd0-4884a0e3f911",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C43",
+      "claim": "The experimental manipulations in the studies by Zhang and Luck and Nassar et al. may not have been strong enough to measure an effect of incentive on encoding precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the simulation results suggest that the experimental manipulations in the studies by Zhang and Luck and Nassar et al. may not have been strong enough to measure an effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of simulation results in the context of previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "12e5b065-7225-4ec0-ac00-4087a675086b",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C44",
+      "claim": "Klyszejko and colleagues found a positive relation between the amount of reward associated with an item and response accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Klyszejko and colleagues performed a local change discrimination experiment in which the monetary reward for a correct response depended on which item was probed (Klyszejko et al., 2014). They found a positive relation between the amount of reward associated with an item and response accuracy, which indicates that subjects spent more resource on encoding items with larger potential reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Klyszejko et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "432fcec8-9368-46dc-b1ce-5e2725c67983",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C45",
+      "claim": "Divisive normalization would be a likely candidate mechanism for implementing the optimal allocation policy.",
+      "claim_type": "EXPLICIT",
+      "source": "Some form of divisive normalization (Bays, 2014; Carandini and Heeger, 2012) would be a likely candidate, which is already a key operation in neural models of attention (Reynolds and Heeger, 2009) and visual working memory (Bays, 2014; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "373f61ef-7ae8-4fe2-857f-71f06a9238ea",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C46",
+      "claim": "The neural activity associated with the encoding of an item decreases with set size in the lateral intraparietal cortex and superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the predictions of this theory, empirical work has found that the neural activity associated with the encoding of an item decreases with set size, as observed in for example the lateral intraparietal cortex (Churchland et al., 2008; Balan et al., 2008) and superior colliculus (Basso and Wurtz, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from empirical neuroscience studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "22f0f389-03bd-4b07-992e-f8c87e1be33e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C47",
+      "claim": "A modified version of divisive normalization can account for the near-optimal distribution of resources across items with unequal probing probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the work by Bays (2014) has shown that a modified version of divisive normalization can account for the near-optimal distribution of resources across items with unequal probing probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bays, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "8fda9b1f-0609-44f6-9388-87f79f2d7435",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C48",
+      "claim": "At the neural level, the non-monotonic relation between total resource and set size translates to a prediction of a non-monotonic relation between population-level spiking activity and set size.",
+      "claim_type": "EXPLICIT",
+      "source": "At the neural level, this translates to a prediction of a non-monotonic relation between population-level spiking activity and set size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c3d93ea0-ec0c-449e-ad69-9abab03c0f08",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C49",
+      "claim": "The theory might apply beyond working memory tasks to attention tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory might apply beyond working memory tasks. In particular, it has been speculated that the selectivity of attention arises from a need to balance performance against the costs associated with spiking (Pestilli and Carrasco, 2005; Lennie, 2003). Our theory provides a normative formalism to test this speculation and may thus explain set size effects in attention tasks (Lindsay et al., 1968; Shaw, 1980; Ma and Huang, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the theory.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "2011ec0e-3464-4033-ae1a-b35990a69ef2",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C50",
+      "claim": "Working memory capacity estimates change with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, developmental studies have found that that working memory capacity estimates change with age (Simmering and Perone, 2012; Simmering, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "419b4e9e-aa1b-4e07-b31d-4aabdea55ae8",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C51",
+      "claim": "A subject's coding efficiency may improve during childhood.",
+      "claim_type": "EXPLICIT",
+      "source": "A speculative answer is that a subject's coding efficiency \u2013 formalized by the reciprocal of parameter \u03b1 in Equation 7 \u2013 may improve during childhood: an increase in coding efficiency reduces the neural cost per unit of precision, which shifts the optimal amount of resource to use for encoding to larger values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "4cd86cb5-3131-4fc9-819d-180c76e954d3",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C52",
+      "claim": "The model comparison indicates that the data provide similar support for both the resource-rational model and the descriptive power-law model, with a small advantage for the resource-rational model.",
+      "claim_type": "EXPLICIT",
+      "source": "Model comparison based on the Akaike Information Criterion (AIC) (Akaike, 1974) indicates that the data provide similar support for both models, with a small advantage for the resource-rational model (\u0394AIC = 5.27 \u00b1 0.70; throughout the paper, X \u00b1 Y indicates mean \u00b1s.e.m. across subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "d9896773-1497-421e-8be1-a28955573a0b",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C53",
+      "claim": "The resource-rational model has a substantial AIC advantage over a fixed-resource model in the equal-precision variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained with the variable-precision model, we find that the rational model has a substantial AIC advantage over a fixed-resource model (\u0394AIC = 43.0 \u00b1 6.8) and is on equal footing with the power-law model (\u0394AIC = 2.0 \u00b1 1.7 in favor of the power-law model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "288355a0-3013-408d-9a73-90cf796775f6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C54",
+      "claim": "All three equal-precision models are outperformed by their variable-precision equivalents by over 100 AIC points.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all three equal-precision models (fixed resource, power law, rational) are outperformed by their variable-precision equivalents by over 100 AIC points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "6580a428-8ca3-4fa5-96b9-42b27b4aa8c2",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C55",
+      "claim": "The fits of the rational model cannot be improved much further without overfitting the data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a marginal AIC difference, suggesting that the fits of the rational model cannot be improved much further without overfitting the data (\u0394AIC = 3.49 \u00b1 0.93, in favor of the non-parametric model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with a non-parametric model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "2b4c10da-72e4-4371-a348-ecceda2e8760",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C56",
+      "claim": "Model comparison favors the power-law behavioral cost function over three parameter-free choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Model comparison favors the original model with AIC differences of 14.0 \u00b1 2.8, 24.4 \u00b1 4.1, and 19.5 \u00b1 3.5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c8678c7f-1ff6-4675-9c2f-e553dcb3d0d9",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C57",
+      "claim": "The original behavioral cost function outperforms a two-parameter function proposed by Sims (2015).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this extra flexibility does not increase the goodness of fit sufficiently to justify the additional parameter, as the original model outperforms this variant with an AIC difference of 5.3 \u00b1 1.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AIC comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "88626cd3-251b-44df-8765-b6dda4e81497",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C58",
+      "claim": "The AIC-based results are consistent with five-fold cross-validation results.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we use five-fold cross validation to verify the AIC-based results reported in this section. We find that they are all consistent (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cross-validation analysis shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "f3d2cdf4-427b-462a-bc78-e865c5ca65dc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C59",
+      "claim": "The resource-rational model accounts well for the subject-level error distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accounts well for the subject-level error distributions (Figure 3A) and the two statistics that summarize these distributions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "3cc1800e-7fe0-4630-a641-2dceda71dd06",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C60",
+      "claim": "The model accounts well for the four datasets that were excluded from the main analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we decided to leave those four datasets out of our main analyses, the model accounts well for them too (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "16f85458-ca2a-4e71-af0f-f6fb8c195d7f",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C61",
+      "claim": "The model comparison suggests that subjects distribute their resource near-optimally across items with unequal probing probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the model comparison suggests quite convincingly that subjects distribute their resource near-optimally across items with unequal probing probabilities, but it is inconclusive regarding the question of whether the total amount of invested resource is fixed or optimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "ebd592e6-2b89-49b5-8893-8958b06d29cc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C62",
+      "claim": "The resource-rational model cannot reliably be distinguished from Bays' proposal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our model cannot reliably be distinguished from the proposal by Bays: either model is preferred in about half of the subjects (our model: 27; Bays: 20) and the subject-averaged AIC difference is negligible (1.8 \u00b1 2.5 in favor of our model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "f7295558-1104-482b-957a-e2333659ba18",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C63",
+      "claim": "The resource-rational model has a substantial advantage over Emrich et al.'s proposal.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the models to the data from all 47 subjects in E7-E9, we find a substantial advantage of our model over the proposal by Emrich et al., with an AIC difference of 18.0 \u00b1 3.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "befc774a-7f03-4dc8-8eaa-c2484c89c10c",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C64",
+      "claim": "The domain of probing probability consists of three potential regimes, each with a different optimal encoding strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be proven (see Appendix 1) that under these assumptions, the domain of probing probability pi consists of three potential regimes, each with a different optimal encoding strategy (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is proven in Appendix 1 and illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "45fd7010-d6de-46db-ba9c-ad768a46341c",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C72",
+      "claim": "The only way the model can predict set size effects is through a coupling between N and pi.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the only way in which the model can predict set size effects is through a coupling between N and pi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "27f6ca49-39ec-4190-ac13-7d72bd677903",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C73",
+      "claim": "In most studies that use a local task, there is a coupling between set size and probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a coupling exists in most studies that use a local task. For example, in delayed-estimation tasks, each item is usually equally likely to be probed such that pi = 1/N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common experimental designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c172aa9d-b6d9-4479-817e-f657887de1c1",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C74",
+      "claim": "The expected behavioral cost across all items is independent of set size when pi = 1/N and all items are encoded with the same amount of resource.",
+      "claim_type": "EXPLICIT",
+      "source": "Substituting pi = 1/N in Equation 9, we find that the expected behavioral cost across all items is independent of set size (Figure 2E, left panel, black curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the mathematical formulation and shown in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "795012bd-0c4d-440c-b493-af20119f3794",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C76",
+      "claim": "Palmer et al. (1993) reported that 'relevant set size' acts virtually identically to actual set size.",
+      "claim_type": "EXPLICIT",
+      "source": "Palmer et al. (1993) reported that \"relevant set size\" (where irrelevance means pi = 0) acts virtually identically to actual set size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Palmer et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c1b387bf-b344-41a5-b269-e0182959b8d6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C77",
+      "claim": "Emrich et al. (2017) found that probing probability was a better predictor of performance than set size.",
+      "claim_type": "EXPLICIT",
+      "source": "Emrich et al. (2017) independently varied probing probability and set size in their experiment, and found that the former was a better predictor of performance than the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Emrich et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b77e7205-2cf7-4892-aa33-d0adba56fed6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C78",
+      "claim": "Emrich et al. (2017) hypothesized that set size effects are mediated by probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this, they hypothesized that set size effects are mediated by probing probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Emrich et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "dc34c4e0-99f0-4d4f-b52a-5969f1027bb3",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C79",
+      "claim": "The predictions of the resource-rational model are qualitatively consistent with the findings of Palmer et al. (1993) and Emrich et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions of our model are qualitatively consistent with these findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and empirical findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "347f0e62-9a61-4e2e-81e3-0dcb1ca06544",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C81",
+      "claim": "The estimation error follows a Von Mises distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "As the task-relevant feature in delayed-estimation experiments is usually a circular variable (color or orientation), we make the common assumption that \u03b5 follows a Von Mises distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard modeling assumption for circular variables.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "df5cc68a-6e7e-43e7-afdd-4f3078264805",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C82",
+      "claim": "Human subjects tend to perform well on delayed-estimation tasks even when the reward is independent of their performance.",
+      "claim_type": "EXPLICIT",
+      "source": "As in most psychophysical experiments, human subjects tend to perform well on delayed-estimation tasks even when the reward is independent of their performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about human behavior in psychophysical experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "84a3429c-caa4-47b0-b2b7-d19ff2147e2e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C83",
+      "claim": "The behavioral cost function is strongly determined by internal incentives.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the behavioral cost function is strongly determined by internal incentives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about human performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b2832522-8cb7-4c3d-ba6f-22bc820764a3",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C86",
+      "claim": "The expected total cost per item has a unique minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected total cost per item has a unique minimum (middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "2cff84b6-b76f-4c74-b8ad-a98f4713d6aa",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C87",
+      "claim": "The optimal amount of resource per item is an increasing function of probing probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, in this example, the optimal amount of resource per item is an increasing function of its probing probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2D and is a consequence of the cost minimization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "64506d08-60ae-47f5-8004-664d326f3ff6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C91",
+      "claim": "Resource optimization in global tasks is computationally much more demanding than in local tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes resource optimization computationally much more demanding, because it requires solving an N-dimensional minimization problem instead of N one-dimensional problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the computational structure of global tasks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b2fa44f3-df27-4a10-9c5c-2f20dbe7c2c8",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C92",
+      "claim": "In the change detection simulation at N=2, the cost-minimizing strategy is to encode neither of the items when reward is very low.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 5B) show that the cost-minimizing strategy is to encode neither of the items when the amount of reward per correct trial is very low (left panel) and encode them both when reward is high (right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "7ebb1e42-841c-47d2-afda-45bc7fd167b4",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C93",
+      "claim": "In the change detection simulation at N=2, the cost-minimizing strategy is to encode both items when reward is high.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 5B) show that the cost-minimizing strategy is to encode neither of the items when the amount of reward per correct trial is very low (left panel) and encode them both when reward is high (right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "0b00c8de-ad29-4dbe-a983-ef1cbb4badc6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C94",
+      "claim": "In the change detection simulation at N=2, there is an intermediate regime in which the optimal strategy is to encode one of the two items, but not the other one.",
+      "claim_type": "EXPLICIT",
+      "source": "However, interestingly, there is also an intermediate regime in which the optimal strategy is to encode one of the two items, but not the other one (Figure 5B, central panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "318f1b03-9441-4beb-9d3c-5e49b352fdcb",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C95",
+      "claim": "In the change detection task, it is optimal to encode only a subset of items even when all items are equally likely to change.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, just as in the delayed-estimation task, there are conditions in which it is optimal to encode only a subset of items. An important difference, however, is that in the delayed-estimation task this only happens when items have unequal probing probabilities, while in this change detection task it even happens when all items are equally likely to change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "5574071e-60e0-4ea7-b44e-20de7e8c58c8",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C96",
+      "claim": "If two items are encoded in the change detection task, the optimal solution is to encode them with the same amount of resource.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the results at N = 2 suggest that if two items are encoded, the optimal solution is to encode them with the same amount of resource (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "ad104280-c94c-405c-a193-2162e3c87922",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C99",
+      "claim": "VWM limitations may be driven by a mechanism that minimizes a cost, instead of by a fixed constraint on available encoding resource.",
+      "claim_type": "EXPLICIT",
+      "source": "The broader implication of our findings is that VWM limitations \u2013 and cognitive limitations in general \u2013 may be driven by a mechanism that minimizes a cost, instead of by a fixed constraint on available encoding resource.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e24a652e-bc03-401e-bcb7-bc72226d5c08",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C100",
+      "claim": "Encoding precision in VWM is fundamentally limited by the precision of the sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, encoding precision in VWM is fundamentally limited by the precision of the sensory input, which is itself limited by irreducible sources of neural noise \u2013 such as Johnson noise and Poisson shot noise (Faisal et al., 2008; Smith, 2015) \u2013 and suboptimalities in early sensory processing (Beck et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "22ec3da9-4bc8-4b4f-82ce-2112d0671a75",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C101",
+      "claim": "The total amount of resource must have an upper limit because the brain is a finite entity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the brain is a finite entity, the total amount of resource must obviously have an upper limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about physical constraints.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "24b41f74-21d6-4e05-a9b2-5a891ff0c87e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C102",
+      "claim": "Task-irrelevant stimuli are sometimes automatically encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is evidence that task-irrelevant stimuli are sometimes automatically encoded (Yi et al., 2004; Shin and Ma, 2016), perhaps because in natural environments few stimuli are ever completely irrelevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "0e2b8839-e28b-426e-87b8-d35d99c0923a",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C103",
+      "claim": "Part of the variability in resource assignment may be systematic, such as particular colors and orientations being encoded with higher precision than others.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of this variability is possibly a result of stochastic factors, but part of it may also be systematic \u2013 for example, particular colors and orientations may be encoded with higher precision than others (Bae et al., 2014; Girshick et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "db0b2a78-52fc-4d8e-89a9-d55ddbd310f7",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C105",
+      "claim": "Maintaining exactly equal resource assignment across cortical regions may itself be a costly process.",
+      "claim_type": "EXPLICIT",
+      "source": "One way to reconcile this apparent suboptimality with the otherwise normative theory is to postulate that maintaining exactly equal resource assignment across cortical regions may itself be a costly process; under such a cost, it could be optimal to allow for some variability in resource assignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "a38d3c6f-4e97-4278-9aeb-060c965f0892",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C107",
+      "claim": "Zhang and Luck (2011) and Nassar et al. (2018) did not find evidence for a difference in encoding precision between low- and high-precision conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the two studies found evidence for a difference in encoding precision between the low- and high-precision conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Zhang and Luck (2011) and Nassar et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "ca7947e4-6427-4d9e-8119-0fe9049d280f",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C108",
+      "claim": "The experimental manipulations in the studies by Zhang and Luck and Nassar et al. may not have been strong enough to measure an effect of incentive.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the simulation results suggest that the experimental manipulations in the studies by Zhang and Luck and Nassar et al. may not have been strong enough to measure an effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "c3b4f182-27f0-4efe-b761-7eb2409ac723",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C109",
+      "claim": "Fougnie et al. (2016) criticized the study by Zhang and Luck and found an effect when using an experimental design with stronger incentives.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, another study has criticized the study by Zhang and Luck on exactly this point and did find an effect when using an experimental design with stronger incentives (Fougnie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Fougnie et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "87a5c138-dad3-4495-9020-54f814f717a7",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "claim_id": "C110",
+      "claim": "Data from experiments E1-E7 and Matlab code for model fitting and simulations are available at http://dx.doi.org/10.5061/dryad.nf5dr6c.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from experiments E1-E7 (Table 1) and Matlab code for model fitting and simulations are available at http://dx.doi.org/10.5061/dryad.nf5dr6c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a3c9b25-1dab-478b-9691-5de68c184719",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The resource-rational model proposes that the brain minimizes a weighted sum of behavioral and neural encoding costs, and predicts that set size effects are mediated by probing probability. The model predicts three regimes of optimal encoding strategy based on probing probability, and set size effects emerge through the coupling between set size N and probing probability pi (typically pi=1/N in experiments).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C64, and C72-C74 establish the theoretical framework and its key prediction that set size effects are mediated by probing probability. This is supported by mathematical derivations (C64 proven in Appendix 1) and is consistent with prior empirical findings from Palmer et al. (1993) and Emrich et al. (2017) as noted in C76-C79. The theoretical predictions are logically derived from the cost minimization framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "9546abc0-d688-4f22-badf-b440e828e584",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The resource-rational model accounts well for effects of both set size and probing probability on encoding precision across nine delayed-estimation experiments (E1-E9), performing comparably to or better than existing descriptive models while providing a principled theoretical explanation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17-C18, and C52-C60 collectively demonstrate strong model performance through multiple validation approaches: AIC comparisons show the model performs as well as the best descriptive power-law model (C52, \u0394AIC=5.27\u00b10.70) and substantially better than fixed-resource models (C18, C53); cross-validation confirms AIC results (C58); and visual fits to error distributions are good (C59-C60). The model achieves this with relatively few parameters while providing theoretical motivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The total amount of invested resource varies non-monotonically with set size, peaking around set size 3 in experiments E2 and E4-E6. This prediction was confirmed in experiments E7-E9 where the peak occurred at a probing probability of approximately 0.384, close to the predicted value of 0.358\u00b10.026.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C5 report strong Bayesian evidence for non-monotonicity (BF+0=1.05\u00d710^7 for N=3 vs N=1; BF+0=4.02\u00d710^2 for N=3 vs N=6). The prediction was validated across independent experiments (C24-C25, C29), with Bayesian t-test supporting no difference between observed and predicted peak (BF01=4.27). Claim C22 notes this is a novel finding. This represents a key distinguishing prediction of the resource-rational model versus fixed-resource or monotonic power-law models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "519931d9-6245-4558-8f4b-36049d4543c6",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The resource-rational model successfully accounts for effects of probing probability on encoding precision in experiments E7-E9, where probing probability was varied independently of set size. The model outperforms the proposal by Emrich et al. but cannot be reliably distinguished from Bays' fixed-resource model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 show the model fits the probing probability effects well. C30-C31 confirm the model accounts for both set size and probing probability effects with the same framework. Model comparisons (C61-C63) show substantial advantage over Emrich et al.'s model (\u0394AIC=18.0\u00b13.9) but negligible difference from Bays' model (\u0394AIC=1.8\u00b12.5). While the model comparison between resource-rational and Bays' fixed-resource model is inconclusive, the non-monotonicity evidence (previous result) provides additional support for resource optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "0223686f-a71e-4211-9148-9e86a73942c0",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model predicts it can be optimal to encode only a subset or none of the task-relevant items. For the variable-precision model, the threshold probing probability p0 below which no resource is invested is estimated at 8.86\u00b10.54%, and 8 of 47 subjects showed evidence of ignoring items with low probing probability. However, the model cannot explain why subjects sometimes encode only a subset of items when all items have equal probing probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C37 provide evidence that some subjects (8/47) may ignore items with very low probing probability, with uniform error distributions supporting this interpretation. However, C40-C41 identify a significant limitation: the model makes an 'all or none' prediction for equal probing probabilities, which contradicts empirical findings (e.g., Adam et al. 2017 showing subjects encoded ~half of 6 items). This limitation undermines the generality of the result, though it may apply in specific contexts with unequal probing probabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts non-monotonic effects of incentive manipulations on encoding precision, with no resource investment when feedback thresholds are very small or very large. Simulations suggest that previous null results from Zhang and Luck (2011) and Nassar et al. (2018) may be explained by insufficiently strong experimental manipulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 and C108 present model predictions and post-hoc interpretations of prior null results, but these are based on simulations rather than new empirical tests. While C109 cites Fougnie et al. (2016) as supporting evidence with stronger manipulations, the model's predictions for incentive effects have not been directly tested in the current work. The interpretation of prior null results is speculative and would require prospective experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "e7429984-1010-463f-ab1a-d19d1ef61617",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In simulations of a whole-display change detection task (a global task), the model predicts that at N=2, the optimal strategy depends on reward level: encode neither item when reward is very low, encode both when reward is high, and encode only one item at intermediate reward levels. When items are encoded, they should receive equal resource.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C96 describe simulation results for a change detection task, demonstrating the model can be extended to global tasks. However, these are purely theoretical predictions shown in Figure 5B-C without empirical validation. The authors acknowledge computational intractability for larger set sizes and rely on an unproven conjecture (C96) that all non-zero resource values should be equal. Without empirical testing, these predictions remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "3ffe9d99-05df-4820-b1e4-f7c65af1b700",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings raise the possibility that cognitive limitations in visual working memory arise from rational cost minimization rather than from fixed constraints on available resources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7 and C99 present a broad theoretical interpretation of the findings. While the model provides a normative framework and fits data well, the evidence is insufficient to definitively establish that cognitive limitations arise from cost minimization rather than constraints. The model comparison with Bays' fixed-resource model was inconclusive (C62), and several limitations are acknowledged (C100-C102). This interpretation is speculative and represents a theoretical perspective rather than a firmly established conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The theoretical framework is built on established principles: neural coding is costly, Fisher information provides a lower bound on estimator variance, and there is trial-to-trial variability in encoding precision. For Poisson-like variability, Fisher information is proportional to neural firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14, and C16 cite well-established principles from neuroscience and information theory with appropriate references. C13 is a logical consequence of the framework. C15 cites empirical evidence for precision variability. These foundational assumptions are well-supported by prior literature and provide a reasonable basis for the model, though the specific choice of linear neural cost (C16) is one of several possible formulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "3709c666-28cc-4ac5-8c3b-c8507961a077",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Divisive normalization is proposed as a likely neural mechanism for implementing the optimal resource allocation policy. Empirical work shows neural activity decreases with set size in lateral intraparietal cortex and superior colliculus, consistent with model predictions. The model predicts a non-monotonic relation between population-level spiking activity and set size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 is speculative about mechanism, though supported by citations. C46-C47 cite relevant empirical findings consistent with the model. However, C48's prediction of non-monotonic neural activity has not been tested. The mechanistic proposals are reasonable but remain hypothetical without direct experimental validation of the specific predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "9bc97157-4556-449e-9b17-daae0af06c45",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The theory might extend beyond working memory to attention tasks and could explain developmental changes in working memory capacity through improvements in coding efficiency during childhood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49 and C51 are explicitly speculative (\"might apply,\" \"speculative answer\"). C50 cites developmental findings but C51's explanation via coding efficiency is untested. These represent interesting theoretical extensions but lack empirical support and are acknowledged as speculative by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "f1631f36-b524-4158-ba9e-a425009e9526",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that encoding precision decreases with set size, and while fixed-resource models predict inverse proportionality (often inconsistent with data), power-law models fit data well but lack principled motivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10 accurately summarize prior literature with appropriate citations. C1 describes a well-established empirical finding. C8-C10 correctly characterize the predictions and limitations of existing models, providing motivation for the current work. These claims about prior work are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model assumes estimation errors follow a Von Mises distribution (standard for circular variables), and that the behavioral cost function is determined by internal incentives since subjects perform well even without external rewards. The expected total cost per item has a unique minimum, and optimal resource increases with probing probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C81 describes a standard modeling assumption for circular variables. C82-C83 make reasonable observations about human behavior in psychophysical tasks. C86-C87 describe mathematical properties of the cost function shown in Figure 2D. These modeling choices and mathematical properties are appropriate and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model has several acknowledged limitations: encoding precision is fundamentally limited by sensory input quality and neural noise; the brain has finite resources imposing an upper limit; task-irrelevant stimuli may be automatically encoded; and variability in resource assignment may be partly systematic or result from costs of maintaining equal assignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 and C105 acknowledge important limitations and boundary conditions of the theory, supported by appropriate citations. These represent honest assessments of where the model may not fully capture biological reality. The authors appropriately discuss how these limitations could be incorporated into future versions of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "23ed97b2-81fe-4c32-8504-467ebd95149e",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The estimated resource values in the non-parametric model closely match optimal values in the rational model (Figure 3C). Prior work by Palmer et al. (1993) and Emrich et al. (2017) found that item relevance and probing probability are better predictors of performance than set size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C19 reports good agreement between non-parametric and rational model estimates, shown in Figure 3C. C76-C78 accurately cite prior empirical findings that support the model's key prediction about mediation by probing probability. These provide convergent evidence for the model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    },
+    {
+      "id": "2e28f5bc-ccee-46b8-b5c7-951bcc28f83c",
+      "content_id": "9a2eed97-e182-4c06-b163-74853265b673",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Data from experiments E1-E7 and Matlab code for model fitting and simulations are publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C110 provides a data availability statement with a DOI link. This supports reproducibility and is a straightforward factual claim about data sharing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:53:42.320471Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e85730e5-6aad-4fdb-8b85-5bda83e30dfe",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "a0c74c5b-aad2-446c-bea6-be8edc1b84f4",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "befc774a-7f03-4dc8-8eaa-c2484c89c10c",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "45fd7010-d6de-46db-ba9c-ad768a46341c",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "27f6ca49-39ec-4190-ac13-7d72bd677903",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "c172aa9d-b6d9-4479-817e-f657887de1c1",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "dc34c4e0-99f0-4d4f-b52a-5969f1027bb3",
+      "result_id": "7a3c9b25-1dab-478b-9691-5de68c184719"
+    },
+    {
+      "claim_id": "d48c1899-3f3a-4e6f-9216-aae9f27bf6cc",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "b20e3767-2774-403b-9612-da21e730a68d",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "73a16325-9828-4bf3-a54e-7774298c18c7",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "4cd86cb5-3131-4fc9-819d-180c76e954d3",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "d9896773-1497-421e-8be1-a28955573a0b",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "288355a0-3013-408d-9a73-90cf796775f6",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "6580a428-8ca3-4fa5-96b9-42b27b4aa8c2",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "2b4c10da-72e4-4371-a348-ecceda2e8760",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "c8678c7f-1ff6-4675-9c2f-e553dcb3d0d9",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "88626cd3-251b-44df-8765-b6dda4e81497",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "f3d2cdf4-427b-462a-bc78-e865c5ca65dc",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "3cc1800e-7fe0-4630-a641-2dceda71dd06",
+      "result_id": "9546abc0-d688-4f22-badf-b440e828e584"
+    },
+    {
+      "claim_id": "62859674-4515-4383-a213-a94bd0b3a23c",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "43dc6362-213e-4c95-bbab-a284ed89e41b",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "d4f11a8e-d340-41bd-92fb-1e78f7bb8d05",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "484fd958-7c86-4a6c-bc78-757c0511a16e",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "39d36584-7665-4ac3-9303-bbdebef42e2d",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "135da508-ff96-4444-96b7-4f57ccd047e9",
+      "result_id": "5b1f1d8d-36c6-48fa-b865-5dff913b5725"
+    },
+    {
+      "claim_id": "6614f515-a6b1-4b01-b484-6c6b7748d348",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "fcfffffa-b39a-4f71-b239-ba4da9f72afc",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "db53d8a0-38c8-47ce-94d8-2812aafe0594",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "911ddd9c-ab20-4013-a8bd-72417813fd4d",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "16f85458-ca2a-4e71-af0f-f6fb8c195d7f",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "ebd592e6-2b89-49b5-8893-8958b06d29cc",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "f7295558-1104-482b-957a-e2333659ba18",
+      "result_id": "519931d9-6245-4558-8f4b-36049d4543c6"
+    },
+    {
+      "claim_id": "3f915f3f-f17b-4b45-9a48-c321664cc222",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "b0c8fcaa-059d-4556-a039-a79c3679d38e",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "0180770d-4d63-4ef1-8665-88d3589f722a",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "8367b275-f72b-487d-8ab2-0b7a770c5279",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "e5be9814-e257-4b8d-b118-8c440215aeac",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "69452b99-cdfc-4333-b472-6db3d95109b4",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "7e824717-3f25-4acd-bcba-1e18cfe8011a",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "7df9a29e-0037-44c4-b39e-c786bf4869f1",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "26b19580-88dd-4816-84ae-1bc68a7f2b3b",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "5612edb8-04cc-46c0-a7e1-4be58fcfc233",
+      "result_id": "0223686f-a71e-4211-9148-9e86a73942c0"
+    },
+    {
+      "claim_id": "e8901c19-a9a0-4225-a384-64a5c9250ba9",
+      "result_id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc"
+    },
+    {
+      "claim_id": "a74728c2-dd6d-430e-abd0-4884a0e3f911",
+      "result_id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc"
+    },
+    {
+      "claim_id": "a38d3c6f-4e97-4278-9aeb-060c965f0892",
+      "result_id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc"
+    },
+    {
+      "claim_id": "ca7947e4-6427-4d9e-8119-0fe9049d280f",
+      "result_id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc"
+    },
+    {
+      "claim_id": "c3b4f182-27f0-4efe-b761-7eb2409ac723",
+      "result_id": "5cf2c678-9508-40d2-ab3e-053f5d4175fc"
+    },
+    {
+      "claim_id": "b2fa44f3-df27-4a10-9c5c-2f20dbe7c2c8",
+      "result_id": "e7429984-1010-463f-ab1a-d19d1ef61617"
+    },
+    {
+      "claim_id": "7ebb1e42-841c-47d2-afda-45bc7fd167b4",
+      "result_id": "e7429984-1010-463f-ab1a-d19d1ef61617"
+    },
+    {
+      "claim_id": "0b00c8de-ad29-4dbe-a983-ef1cbb4badc6",
+      "result_id": "e7429984-1010-463f-ab1a-d19d1ef61617"
+    },
+    {
+      "claim_id": "318f1b03-9441-4beb-9d3c-5e49b352fdcb",
+      "result_id": "e7429984-1010-463f-ab1a-d19d1ef61617"
+    },
+    {
+      "claim_id": "5574071e-60e0-4ea7-b44e-20de7e8c58c8",
+      "result_id": "e7429984-1010-463f-ab1a-d19d1ef61617"
+    },
+    {
+      "claim_id": "c7de649b-519f-4142-aa9f-0c52e3eb5ab1",
+      "result_id": "3ffe9d99-05df-4820-b1e4-f7c65af1b700"
+    },
+    {
+      "claim_id": "ad104280-c94c-405c-a193-2162e3c87922",
+      "result_id": "3ffe9d99-05df-4820-b1e4-f7c65af1b700"
+    },
+    {
+      "claim_id": "e9279bcb-3419-4993-a4a1-164be8c7784f",
+      "result_id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2"
+    },
+    {
+      "claim_id": "77afbcff-19e4-4215-ac69-a39595f6868b",
+      "result_id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2"
+    },
+    {
+      "claim_id": "b14e9f63-e149-4798-b2f1-da101493677e",
+      "result_id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2"
+    },
+    {
+      "claim_id": "c513114e-77ac-4b6e-941e-04d636db274d",
+      "result_id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2"
+    },
+    {
+      "claim_id": "7d608a4b-0eae-46ef-a014-b15d5541d9e1",
+      "result_id": "eb91d5c3-2abc-4725-a71b-bfc33cd6c9d2"
+    },
+    {
+      "claim_id": "432fcec8-9368-46dc-b1ce-5e2725c67983",
+      "result_id": "3709c666-28cc-4ac5-8c3b-c8507961a077"
+    },
+    {
+      "claim_id": "373f61ef-7ae8-4fe2-857f-71f06a9238ea",
+      "result_id": "3709c666-28cc-4ac5-8c3b-c8507961a077"
+    },
+    {
+      "claim_id": "22f0f389-03bd-4b07-992e-f8c87e1be33e",
+      "result_id": "3709c666-28cc-4ac5-8c3b-c8507961a077"
+    },
+    {
+      "claim_id": "8fda9b1f-0609-44f6-9388-87f79f2d7435",
+      "result_id": "3709c666-28cc-4ac5-8c3b-c8507961a077"
+    },
+    {
+      "claim_id": "c3d93ea0-ec0c-449e-ad69-9abab03c0f08",
+      "result_id": "9bc97157-4556-449e-9b17-daae0af06c45"
+    },
+    {
+      "claim_id": "2011ec0e-3464-4033-ae1a-b35990a69ef2",
+      "result_id": "9bc97157-4556-449e-9b17-daae0af06c45"
+    },
+    {
+      "claim_id": "419b4e9e-aa1b-4e07-b31d-4aabdea55ae8",
+      "result_id": "9bc97157-4556-449e-9b17-daae0af06c45"
+    },
+    {
+      "claim_id": "e6863ec2-57b9-4c07-b2b3-17f6d285f9cc",
+      "result_id": "f1631f36-b524-4158-ba9e-a425009e9526"
+    },
+    {
+      "claim_id": "1a64f902-39f3-4269-a1b0-ac56444d5f4c",
+      "result_id": "f1631f36-b524-4158-ba9e-a425009e9526"
+    },
+    {
+      "claim_id": "ef124fe0-c30d-44f9-8b9b-4d72b89f1e51",
+      "result_id": "f1631f36-b524-4158-ba9e-a425009e9526"
+    },
+    {
+      "claim_id": "562ddfee-6bf6-4496-b22f-3e4d0882095e",
+      "result_id": "f1631f36-b524-4158-ba9e-a425009e9526"
+    },
+    {
+      "claim_id": "347f0e62-9a61-4e2e-81e3-0dcb1ca06544",
+      "result_id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af"
+    },
+    {
+      "claim_id": "df5cc68a-6e7e-43e7-afdd-4f3078264805",
+      "result_id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af"
+    },
+    {
+      "claim_id": "84a3429c-caa4-47b0-b2b7-d19ff2147e2e",
+      "result_id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af"
+    },
+    {
+      "claim_id": "b2832522-8cb7-4c3d-ba6f-22bc820764a3",
+      "result_id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af"
+    },
+    {
+      "claim_id": "2cff84b6-b76f-4c74-b8ad-a98f4713d6aa",
+      "result_id": "95f73ebc-7a4e-41a8-9242-c6e2fb56f0af"
+    },
+    {
+      "claim_id": "e24a652e-bc03-401e-bcb7-bc72226d5c08",
+      "result_id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35"
+    },
+    {
+      "claim_id": "22ec3da9-4bc8-4b4f-82ce-2112d0671a75",
+      "result_id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35"
+    },
+    {
+      "claim_id": "24b41f74-21d6-4e05-a9b2-5a891ff0c87e",
+      "result_id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35"
+    },
+    {
+      "claim_id": "0e2b8839-e28b-426e-87b8-d35d99c0923a",
+      "result_id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35"
+    },
+    {
+      "claim_id": "db0b2a78-52fc-4d8e-89a9-d55ddbd310f7",
+      "result_id": "b7cbf0b3-faaa-42aa-9aea-6a9fe7471c35"
+    },
+    {
+      "claim_id": "fe78119a-435e-4656-b746-2c80e9e6da26",
+      "result_id": "23ed97b2-81fe-4c32-8504-467ebd95149e"
+    },
+    {
+      "claim_id": "795012bd-0c4d-440c-b493-af20119f3794",
+      "result_id": "23ed97b2-81fe-4c32-8504-467ebd95149e"
+    },
+    {
+      "claim_id": "c1b387bf-b344-41a5-b269-e0182959b8d6",
+      "result_id": "23ed97b2-81fe-4c32-8504-467ebd95149e"
+    },
+    {
+      "claim_id": "b77e7205-2cf7-4892-aa33-d0adba56fed6",
+      "result_id": "23ed97b2-81fe-4c32-8504-467ebd95149e"
+    },
+    {
+      "claim_id": "87a5c138-dad3-4495-9020-54f814f717a7",
+      "result_id": "2e28f5bc-ccee-46b8-b5c7-951bcc28f83c"
+    }
+  ],
+  "comparisons": []
+}

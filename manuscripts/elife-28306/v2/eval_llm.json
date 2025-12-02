@@ -1,0 +1,512 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C52",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors developed bisDRIP-seq, a bisulfite-based method to map R-loops at near-nucleotide resolution. The method involves lysing cells in the presence of bisulfite and SDS to rapidly label single-stranded DNA, followed by S9.6 antibody enrichment of RNA-DNA hybrids, and sequencing to identify cytosine-to-uracil conversions that mark single-stranded DNA regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C22, C28-C31, C37-C41, C52, C158-C159 collectively describe the bisDRIP-seq method and its underlying principles. The method is well-documented with detailed protocol steps, chemical rationale (bisulfite chemistry), and computational analysis pipeline. The approach is validated through multiple controls including RNase H sensitivity (C48, C55-C56, C86-C87), reproducibility between replicates (C49-C50, C58), and comparison to existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "bisDRIP-seq successfully detects R-loops with strand-specific cytosine conversions that are clustered in specific genomic regions and are sensitive to RNase H treatment. The method shows high reproducibility across biological replicates and produces non-random signal distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C58 demonstrate that bisDRIP-seq produces specific, reproducible signals. The RPPH1 locus shows high strand-specific conversions (C42-C43), consecutive conversions indicative of single-stranded DNA (C45, C53-C54), RNase H sensitivity (C55-C56), non-random clustering by Monte Carlo simulation (C46-C47, C57), and significant correlation between replicates (C58, p<10^-16). These multiple lines of evidence strongly support method validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "bisDRIP-seq scores are enriched in promoter regions, correlate with DRIP-seq and GRO-seq measurements, and show transcription-dependent strand asymmetry consistent with sense-strand R-loop formation. The non-template strand shows preferential labeling that is lost upon triptolide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C72-C75 demonstrate that bisDRIP-seq recapitulates known R-loop biology. Promoter enrichment is shown relative to exonic regions (C61), correlation with DRIP-seq is significant (C62, p<2.2\u00d710^-16), and transcription dependence is demonstrated by triptolide sensitivity (C63, C65, C74-C75). The strand asymmetry (C72-C73) provides mechanistic insight consistent with R-loop structure. Statistical tests support all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The transcription start site (TSS) serves as the 5' boundary of promoter-associated R-loops in intron-containing genes. bisDRIP-seq scores show significant strand asymmetry immediately 3' of the TSS (p<0.005) that is lost upon triptolide treatment and RNase H digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, C77-C88 establish the TSS as the 5' R-loop boundary through multiple lines of evidence: metaplot analysis showing strand asymmetry beginning at the TSS (C77-C80), statistical significance (C80, p<0.005), transcription dependence via triptolide sensitivity (C82-C83), and RNase H sensitivity confirming R-loop identity (C86-C87). The convergence of these independent validations strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The first exon-intron junction acts as the 3' boundary of promoter-associated R-loops in intron-containing genes. Strand asymmetry drops at the junction, R-loop length correlates with first exon length, and the boundary is resolved to within a few base pairs of the junction. Only the first exon-intron junction acts as a boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C90, C92-C101 demonstrate that the first exon-intron junction bounds R-loops through: (1) strand asymmetry ending at the junction (C93-C95), (2) correlation between first exon length and R-loop length (C96-C97), (3) near-nucleotide resolution mapping showing the boundary within base pairs of the junction (C98-C99), and (4) absence of boundaries at downstream junctions (C100). The median first exon length (181 bp) matches the observed R-loop extent (200-250 bp) (C90), providing additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C161",
+      "C162"
+    ],
+    "result": "Gene structure, specifically the exon-intron architecture, is a critical determinant of R-loop formation. The discovery of boundaries at the TSS and first exon-intron junction suggests that the maximum length of promoter-associated R-loops is predetermined by gene structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27, C161-C162 represent the major conceptual conclusion of the study. This conclusion is well-supported by the data showing: (1) R-loops bounded by TSS and first exon-intron junction (C6, C23), (2) correlation between first exon length and R-loop size (C96-C97), and (3) enrichment of intronless genes among strong R-loop formers (C8, C113, C182). The inference that gene structure predetermines R-loop length is logical and supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C182",
+      "C183"
+    ],
+    "result": "Intronless genes are enriched among promoters with strong R-loop association. Two major classes were identified: replication-dependent histone genes (24% of top 25 genes) and intronless lncRNAs (MALAT1, NEAT1, RPPH1). Overall, 44% of top 25 genes are intronless compared to 2-3% genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C25, C109-C114, C182-C183 document enrichment of intronless genes through ranking analysis. The percentages are clearly stated (C110: 24% of top 25, C112: 44% of top 25 vs 2-3% genome-wide) and specific genes are identified (C111, C183). The observation that intronless genes form R-loops without exon-intron junctions (C114) logically supports that junctions are not required for R-loop formation, only for bounding them. The data and inference are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Replication-dependent histone genes show high R-loop formation that cannot be explained by promoter activity, nuclear RNA levels, or RNA polymerase II recruitment. R-loops in these intronless genes show gene-specific heterogeneity in 3' boundaries, with some restricted to the initial portion of the gene and others extending throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C26, C118-C125, C127-C131 characterize R-loops in histone genes. The claims are supported by: (1) comparison to genes with similar promoter activity showing histone genes have higher R-loop scores (C118-C119), (2) controls for RNA levels and Pol II (C120), (3) low template-strand and triptolide-treated scores indicating minimal non-R-loop structure (C121-C122), (4) RNase H sensitivity (C124), and (5) individual gene analysis showing heterogeneous boundaries (C127-C130). The lack of sequence motifs at boundaries (C129) is appropriately noted as uncertain mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "MALAT1 and NEAT1 form large R-loops extending ~1700 bp and ~1400 bp from the TSS, respectively. These R-loops are transcription-dependent, RNase H-sensitive, and show periodic variation in signal. Individual reads suggest potential heterogeneity in R-loop size and location within the mapped region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C145 characterize R-loops in MALAT1 and NEAT1. The R-loop boundaries are clearly defined (C135-C136), transcription dependence is shown by triptolide sensitivity (C137), and R-loop identity is confirmed by RNase H sensitivity (C138). The periodicity observation (C140-C141) and heterogeneity hypothesis (C142, C145) are appropriately presented as observations requiring further investigation. The read-level analysis (C143-C144) provides supporting evidence for heterogeneity but is correctly presented as suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Antisense-strand R-loops form upstream of the TSS in promoters with high antisense transcription activity. These R-loops show preferential template-strand labeling and correlate with antisense transcription levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 identify antisense-strand R-loops through: (1) negative R-loop signal upstream of TSS (C102), (2) correlation with antisense transcription (C105-C106), and (3) appropriate strand asymmetry for antisense R-loops (C105). The inference that these represent antisense-strand R-loops (C103-C104, C108) is logical given the strand specificity and transcription dependence. The data support this conclusion, though the biological significance is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "bisDRIP-seq provides higher resolution than DRIPc-seq for mapping R-loop boundaries. While some genes (MALAT1, NEAT1) show concordance between methods, bisDRIP-seq detects R-loops in genes (RPPH1, HIST1H2BG) with few DRIPc-seq reads, suggesting bisDRIP-seq may identify R-loops not observable by DRIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 compare bisDRIP-seq to DRIPc-seq. The superior resolution of bisDRIP-seq is demonstrated by clear boundaries at TSS and first exon-intron junction (C146) versus diffuse DRIPc-seq signal (C147). Concordance for some genes (C149) validates bisDRIP-seq, while detection of R-loops missed by DRIPc-seq (C151) suggests complementary information. The inference that bisDRIP-seq may detect a distinct set of R-loops (C152) is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Some R-loops (RPPH1, HIST1H2BG) are unstable ex vivo, showing marked depletion in delayed-bisulfite experiments, while others (MALAT1, NEAT1) remain stable. This suggests differential R-loop stability and may explain why some R-loops are not observed in methods that do not label during lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 demonstrate differential R-loop stability through delayed-bisulfite experiments. The observation that some R-loops are lost when bisulfite treatment is delayed (C155) while others remain stable (C154) is clearly shown in the data. The inference that unstable R-loops may not be detected by methods with delayed processing (C156) is logical and supported by prior literature on R-loop structural changes (C153). This provides important methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "bisDRIP-seq overcomes S9.6 antibody specificity limitations by requiring preferential single-strand labeling and transcription dependence. While this may exclude some R-loops (e.g., those with RNA-DNA hybrids on both strands or extremely stable R-loops), it allows exclusion of non-R-loop single-stranded structures and mitigates promoter bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C171 address methodological considerations. The S9.6 antibody's cross-reactivity is acknowledged (C163-C164), and the solution through multiple criteria (C166-C167) is well-justified. The potential limitations (C170) are appropriately noted, and the benefits (C169, C171) are supported by the data showing strand asymmetry and transcription dependence. This represents a balanced assessment of the method's strengths and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The location of the 5' R-loop boundary at the TSS suggests R-loops are primarily formed from canonical gene transcripts rather than from promoter upstream transcripts or extracoding RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 make an inference about R-loop RNA source based on the 5' boundary location. The inference is logical: if R-loops formed from upstream transcripts, the 5' boundary would not align with the canonical TSS. While alternative transcripts could theoretically form R-loops (C173), the data showing precise TSS alignment (C172, C174) argues against this being the major source. The conclusion is appropriately stated as a suggestion rather than definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Two potential mechanisms could explain the exon-intron junction R-loop boundary: (1) RNA splicing prevents spliced RNA from hybridizing to intron-encoding DNA, or (2) proteins bound to the 5' splice site block R-loop expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C178 propose mechanistic models but are explicitly speculative (evidence_type: SPECULATION). While both mechanisms are plausible and consistent with the data, no experiments directly test these hypotheses. The models are illustrated (Figure 8) but not validated. Additional experiments (e.g., splicing inhibition, splice site mutations, protein depletion) would be needed to distinguish between these mechanisms or identify the correct one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Smaller first exons are associated with higher transcription rates, which may be explained if smaller first exons produce less efficient or less stable R-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179-C181 propose a connection between first exon size, R-loop stability, and transcription rate. While prior work shows the relationship between first exon size and transcription (C179-C180, supported by citations), the hypothesis that R-loops mediate this relationship (C181) is speculative. The current study does not measure R-loop stability or directly test whether R-loop differences explain transcription rate differences. This is an interesting hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "RNA-binding proteins, such as SRSF1, may determine R-loop boundaries in intronless genes. SRSF1 binding is observed at the 3' boundary of the MALAT1 R-loop, suggesting RNA-protein complexes may limit R-loop expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C191-C193 propose that RNA-binding proteins determine R-loop boundaries in intronless genes. While SRSF1 binding near the MALAT1 R-loop boundary is shown using public data (C192), this is correlative evidence only. No experiments test whether SRSF1 or other proteins actually determine the boundary (e.g., protein depletion, binding site mutations). The hypothesis is reasonable (C191, C193) but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "All studied intronless genes with strong R-loop signals are components of nuclear bodies (histone locus bodies, nuclear speckles, paraspeckles). R-loops may play a role in nuclear body formation or regulation by tethering RNA to chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C194-C198 note an interesting correlation between R-loop-forming intronless genes and nuclear body components. The observation is valid (C194-C195, supported by citations), and the proximity of nuclear body formation to encoding DNA (C197) is documented. However, the hypothesis that R-loops facilitate nuclear body formation (C196, C198) is speculative without functional experiments (e.g., R-loop disruption, nuclear body localization studies). This represents an interesting observation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "R-loops produce a specific cytosine conversion signature with conversions limited to one DNA strand, distinguishing them from other single-stranded DNA structures that would show conversions on both strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe the key principle enabling R-loop identification by bisDRIP-seq. This is based on established R-loop structure (C67, supported by Yu et al., 2003) and is validated throughout the manuscript by strand asymmetry observations. The distinction from other single-stranded structures (C66) is crucial for method specificity and is supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Sense-strand R-loops expose the non-template DNA strand for bisulfite conversion, while antisense-strand R-loops expose the template strand, allowing strand-specific identification of R-loop orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 define R-loop types and their expected bisulfite signatures. These are definitional statements (evidence_type: KNOWLEDGE) that follow logically from R-loop structure. The definitions are consistently applied throughout the manuscript and validated by the observed strand asymmetries matching expected patterns for sense-strand R-loops.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Genome-wide bisulfite mapping of R-loops faces three major challenges: non-physiological R-loop changes between lysis and bisulfite treatment, need for high sequencing depth, and background conversions in double-stranded DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 identify technical challenges addressed by bisDRIP-seq design. Each challenge is supported by citations (C34: Kaback et al., 1979; Landgraf et al., 1996; C35: Sims et al., 2014; C36: Yu et al., 2003). The bisDRIP-seq protocol is explicitly designed to address these challenges (C37-C41), demonstrating that the challenges are real and the solutions are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Thirteen bisDRIP-seq experiments were performed on different samples of MCF-7 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 describes the experimental design. This is clearly stated and the number of replicates is appropriate for the analyses performed. The reproducibility across these samples is demonstrated (C49-C50, C58), supporting the adequacy of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C59",
+      "C60"
+    ],
+    "result": "R-loops are chromatin structures consisting of RNA-DNA hybrids and displaced DNA. They are enriched at promoters, can alter histone modifications, and are associated with changes in gene transcription. Previous DRIP-seq studies showed R-loops are transcription-dependent and correlate with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C13, C59-C60 summarize established R-loop biology from prior work. All claims are supported by appropriate citations (Ginno et al., 2012; Chen et al., 2015; Colak et al., 2014; Sun et al., 2013; Lenhard et al., 2012; Sanz et al., 2016). These provide necessary background context and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C157",
+      "C160"
+    ],
+    "result": "The precise location of promoter-associated R-loops and their boundaries were unclear due to low resolution of existing methods like DRIP-seq. R-loops were thought to extend thousands of base pairs without clear boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C20, C157, C160 identify the knowledge gap addressed by this study. The limitations of DRIP-seq are supported by citations (C15-C16: Ginno et al., 2012; C19, C160: Ch\u00e9din, 2016; C157: Chen et al., 2015; Ginno et al., 2012). The identification of this gap appropriately motivates the development of bisDRIP-seq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Bisulfite treatment for 5-methylcytosine mapping involves DNA denaturation and conversion of unmethylated cytosines, searching for unconverted cytosines. This contrasts with R-loop mapping which detects converted cytosines in native single-stranded DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 distinguish bisDRIP-seq from 5-methylcytosine mapping. The description of 5-methylcytosine mapping is supported by citation (C32: Frommer et al., 1992) and the contrast is accurate. This clarification is important for understanding the novelty of applying bisulfite to R-loop mapping under non-denaturing conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Knockdown of the 5' splice site-binding factor SRSF1 induces R-loop formation, which could be explained if splicing is involved in bounding R-loop expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 cites prior work (Li and Manley, 2005) showing SRSF1 knockdown induces R-loops. This observation is used to support the hypothesis that splicing machinery may bound R-loops. The citation is appropriate and the inference is reasonable, though the mechanism remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C126",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Replication-dependent histone genes have unique characteristics: cell-cycle dependent regulation, lack of poly-A tails, lack of introns, processing in special nuclear bodies, and termination with stem-loop structures. Their special processing is linked to transcription and absence of splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C126, C184-C188 describe established histone gene biology. All claims are supported by appropriate citations (C115: Robbins and Borun, 1967; C116-C117: Dominski and Marzluff, 1999; C126, C184, C187: Marzluff et al., 2008; C185: Hereford et al., 1981). This background is accurately presented and provides context for understanding why these genes show strong R-loop formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C199",
+      "C200"
+    ],
+    "result": "bisDRIP-seq could be used to study dynamic changes in R-loop size and location in response to signals like estrogen, and to study R-loops involved in transcription termination as termination sites become better annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C199-C200 suggest future applications of bisDRIP-seq. These are reasonable proposals (evidence_type: SPECULATION) based on the method's capabilities, but no data are presented to support these specific applications. These represent appropriate suggestions for future work rather than results of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C189"
+    ],
+    "result": "It is speculated that either transcription or the absence of splicing may relate to the robust R-loop structures seen at the 5' end of histone genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C189 is explicitly speculative (evidence_type: SPECULATION) about why histone genes show strong R-loops. While the observation of strong R-loops in histone genes is well-supported (C118-C125), the mechanistic explanation is not tested. This represents an appropriate speculation requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

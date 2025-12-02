@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "DUX4 is a retrogene in the D4Z4 macrosatellite repeat that is normally expressed in cleavage-stage embryos but repressed in somatic tissues. Failure of this repression causes FSHD due to DUX4 mis-expression in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe well-established background knowledge about DUX4 genomic organization, developmental expression, and role in FSHD. These are supported by multiple citations to prior work and represent accepted facts in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "enChIP-MS identified 261 D4Z4-associated proteins including known factors (SMCHD1, CBX3/HP1\u03b3, cohesin components) and novel NuRD complex components (CHD4, HDAC2, MTA2, RBBP4) that were enriched in D4Z4 but not MYOD1 control pulldowns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40-C47 describe the enChIP-MS experimental approach and results. The identification of 261 proteins including known D4Z4 factors validates the method, while the specific enrichment of NuRD components in D4Z4 versus control pulldowns (C47) provides strong evidence for their association with the D4Z4 locus. GO enrichment analysis (C45) further supports biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ChIP-qPCR confirmed occupancy of NuRD complex components CHD4, HDAC2, MTA2, and MBD2 at the D4Z4 array in control myoblasts, demonstrating that the D4Z4 repeat is bound by the MBD2/NuRD complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe independent validation of enChIP-MS findings using ChIP-qPCR in a different cell line (MB2401). The data in Figure 1B-E show significant enrichment of all tested NuRD components at D4Z4 compared to IgG controls, providing orthogonal confirmation of the proteomic results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HDAC1/HDAC2 knockdown de-represses DUX4 in both control and FSHD myoblasts, with FSHD cells showing greater sensitivity. Pharmacological HDAC inhibition similarly increases DUX4 expression and H4 acetylation at D4Z4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 demonstrate functional requirement for HDAC1/2 in DUX4 repression through siRNA knockdown (Figure 2B-D) and pharmacological inhibition (Figure 2\u2014supplement 2). The differential sensitivity between control (requiring dual knockdown) and FSHD cells (responding to single knockdown) is well-documented. Statistical significance is shown with p\u22640.05. The conclusion that D4Z4 in control cells is more resistant to de-repression (C63) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CHD4 knockdown increases DUX4 expression 20-fold in FSHD myoblasts but not in control myoblasts, while CHD3 depletion has no effect, demonstrating CHD4-specific requirement for DUX4 silencing in FSHD cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 show CHD4 is necessary for DUX4 repression in FSHD but not control cells (Figure 2E-G), while CHD3 has no effect (Figure 2\u2014supplement 4). This specificity is consistent with CHD3 absence from enChIP and mutual exclusivity of CHD3/CHD4 in NuRD. The differential requirement between control and FSHD cells parallels the HDAC findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MBD2 depletion moderately increases DUX4 in MB073 FSHD1 but not MB200 FSHD2 myoblasts, while MBD3 depletion has no effect in any cell type, indicating context-dependent MBD2 requirement for D4Z4 repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 demonstrate cell-type-specific effects of MBD2 knockdown (Figure 2H-J, supplements 5-6). The moderate but significant increase in MB073 FSHD1 cells contrasts with no effect in MB200 FSHD2 or control cells, suggesting context-dependent mechanisms. MBD3 knockdown shows no effect across all cell types. The conclusion (C71) appropriately acknowledges this context-dependency and suggests additional recruitment factors may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CAF-1 complex components CHAF1A and CHAF1B are necessary for DUX4 repression in FSHD myoblasts. NuRD and CAF-1 share the core subunit RBBP4, which was identified at D4Z4 by enChIP-MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 establish CAF-1 involvement through prior literature (C72), enChIP-MS identification of shared subunit RBBP4 (C73-C74), and functional knockdown experiments (C75, Figure 3B-D). The convergence of proteomic and functional data supports CAF-1's role in D4Z4 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "MBD1 knockdown activates DUX4 in MB200 FSHD2 but not MB2401 control or MB073 FSHD1 myoblasts, indicating context-dependent MBD1 requirement that differs from MBD2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 show MBD1 has cell-type-specific effects (Figure 3E-G) that complement the MBD2 findings. The pattern differs from MBD2 (active in MB073 but not MB200), suggesting distinct context-dependent recruitment mechanisms for CAF-1 versus NuRD complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Simultaneous CHAF1A and CHD4 knockdown synergistically de-represses DUX4 over 150-fold in control myoblasts and shows additive effects in FSHD cells, demonstrating that NuRD and CAF-1 complexes work together to silence D4Z4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 demonstrate functional cooperation between NuRD and CAF-1 through dual knockdown experiments (Figure 3H-J). The >150-fold increase in control cells with dual knockdown versus no effect with single knockdowns provides strong evidence for parallel/redundant pathways. The additive effects in FSHD cells further support this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Testing five additional FSHD cell lines confirmed that MBD2 and CHAF1A knockdown consistently de-repress DUX4, while CHD4 and MBD1 show variable effects across different FSHD contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 extend findings to multiple FSHD cell lines with different genetic backgrounds (Figure 3\u2014supplements 4-7, Supplementary file 3). The consistent effects of MBD2/CHAF1A versus variable effects of CHD4/MBD1 support the conclusion of combined but context-dependent roles for NuRD and CAF-1 components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Auxiliary factors TRIM28, SETDB1, and KDM1A that are shared by NuRD and CAF-1 complexes contribute to D4Z4 silencing, with KDM1A being uniquely required in both control and FSHD myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 identify shared auxiliary factors through literature (C85) and functional knockdown (C86-C88, Figure 4). The 3-130-fold de-repression range in FSHD cells and KDM1A's unique requirement in control cells (Figure 4G) distinguish it from other factors. This supports a model of multiple cooperating chromatin regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "SIN3A/SIN3B depletion activates DUX4 in FSHD cells, indicating the SIN3 complex also contributes to D4Z4 silencing through multiple cooperating chromatin regulatory factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 extend the findings to the SIN3 complex (Figure 4\u2014supplement 4), which shares HDAC1/2 and RBBP4/7 with NuRD. The activation of DUX4 upon SIN3A/B knockdown in FSHD cells supports the conclusion that multiple chromatin complexes cooperate to achieve full D4Z4 repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "NuRD and CAF-1 complex components (HDAC1/2, CHD4, CHAF1A, SETDB1, SIN3B) also repress DUX4 in human iPS cells, with iPS cells showing decreased D4Z4 repression compared to parental fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 demonstrate that the same repressive mechanisms operate in iPS cells (Figure 5). The knockdown experiments show similar de-repression patterns as in myoblasts, with the notable exception of KDM1A having minor effects (C95). The differential response between fibroblasts (no de-repression) and iPS cells (de-repression) supports decreased repression in pluripotent cells (C96-C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "DUX4 directly induces MBD3L family genes that antagonize NuRD function. MBD3L2 overexpression increases DUX4 5-18-fold and DUX4-positive nuclei 10-fold in FSHD but not control myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 establish MBD3L as a DUX4 target through prior work (C100-C101) and demonstrate functional antagonism of NuRD-mediated repression through overexpression experiments (C104-C106, Figure 6A-E). The 5-18-fold increase in DUX4 mRNA and 10-fold increase in DUX4-positive nuclei in FSHD cells, with no effect in control cells, parallels the NuRD knockdown results and supports a feed-forward amplification mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Endogenous MBD3L proteins contribute to DUX4 amplification in FSHD myotubes, as shRNA knockdown of MBD3L family members decreases DUX4 expression by ~30-50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 demonstrate physiological relevance of MBD3L through loss-of-function experiments in differentiated myotubes (Figure 6F-G, supplements). The ~30-50% reduction in DUX4 expression upon MBD3L knockdown, combined with prior citation showing increased DUX4 in myotubes (C107), supports the conclusion that endogenous MBD3L proteins contribute to DUX4 amplification during differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "NuRD and CAF-1 complexes have parallel/redundant functions in DUX4 repression, with different FSHD mutations potentially weakening specific components of each pathway, but both complexes are necessary together to maintain D4Z4 repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 synthesize the functional data into a mechanistic model. The requirement for dual knockdown in control cells (C110) supports redundancy, while variable component requirements across FSHD cell lines (C111) suggests context-dependent weakening. The overall conclusion (C112) is well-supported by the comprehensive knockdown data across multiple cell lines and components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "enChIP-MS identified multiple Momme genes (PBRM1, RIF1, SMARCA4, SMARCA5, UHRF1, HDAC1, SETDB1, TRIM28) at D4Z4, suggesting conserved machinery represses variegated gene expression across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 connect the findings to mouse variegated expression studies. The identification of multiple Momme genes by enChIP-MS (C115) and functional validation through knockdown (C116) provides strong evidence. The convergence with mouse studies (C113-C114) supports the speculation about conserved mechanisms (C117), though this remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The presence of chromatin remodelers and positive transcriptional regulators (SMARCA5, BRD3, BRD4) at D4Z4 indicates a dynamic balance between activators and repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by enChIP-MS identification of these factors and is consistent with prior detection of sense/antisense transcripts at D4Z4. This represents a reasonable inference about the dynamic nature of D4Z4 regulation, though direct functional testing of these activators is not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "DUX4 induces MBD3L proteins that antagonize NuRD, creating a positive feed-forward mechanism that may facilitate spreading of DUX4 expression between nuclei in multinucleated myotubes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 propose a mechanistic model for DUX4 amplification in myotubes. The model is supported by: (1) MBD3L overexpression increasing DUX4 (C121), (2) MBD3L knockdown decreasing DUX4 in myotubes (C122), (3) DUX4 inducing MBD3L (C123), and (4) observations of internuclear spreading (C124-C125). However, C125 relies on unpublished data and C126 is explicitly a model/speculation. The feed-forward mechanism is well-supported, but the internuclear spreading hypothesis requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "DUX4-mediated MBD3L amplification may be additive with DUX4's inhibition of NMD, which also amplifies DUX4 by stabilizing DUX4 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 connects the current findings to prior work on NMD inhibition. This is supported by citation and represents a reasonable speculation about additive amplification mechanisms, though direct testing of combined effects is not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The findings suggest therapeutic strategies including enhancing NuRD-mediated repression, inhibiting MBD3L production, or using myoblast transplantation with decoy nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C132 propose therapeutic strategies based on the findings. While these are logical extensions of the results, they are explicitly speculative (C128 states \"interesting to speculate\") and lack experimental validation. These represent reasonable hypotheses for future work but are not supported by data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "DUX4 regulation in iPS cells shares mechanisms with skeletal muscle and shows similarities to mouse Dux regulation, suggesting conserved regulatory mechanisms despite independent evolutionary origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C143 synthesize findings about DUX4 regulation across cell types and species. The shared regulation in iPS cells and muscle (C133) is supported by the knockdown data. The connections to mouse studies (C134-C143) are well-supported by multiple citations showing parallel regulation of Dux by CAF-1, TRIM28, KDM1A, and NuRD. The speculation about DUX4 facilitating reprogramming (C142) is reasonable but untested. The overall conclusion about conserved regulation (C143) is well-supported despite independent retrotransposition events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on DUX4 function, FSHD genetics, and known D4Z4 repression mechanisms including DNA methylation, histone modifications (H3K9me2/3, H3K27me3), and associated proteins (CBX3/HP1\u03b3, EZH2, DNMT3B, SMCHD1, cohesin, CTCF, HDAC3, YY1/HMGB2/NCL, DICER/AGO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C39 provide established background knowledge about DUX4 biology and FSHD pathogenesis, all supported by multiple citations to prior work. These represent the scientific context for the current study rather than novel findings. Some factors (SMCHD1, CBX3/HP1\u03b3, cohesin, NCL) are confirmed by the enChIP-MS data, validating the approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2092 @@
+{
+  "submission": {
+    "id": "0220867e-e213-4bed-b256-9067c97344e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:25:18.136587Z",
+    "updated_at": "2025-12-02T00:25:18.136587Z"
+  },
+  "content": [
+    {
+      "id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "submission_id": "0220867e-e213-4bed-b256-9067c97344e0",
+      "content_type": "manuscript",
+      "content_text": "# Rev7 and 53BP1/Crb2 prevent RecQ helicase-dependent hyper-resection of DNA double-strand breaks\n\n## Authors\n\n- Bryan A Leland<sup>1</sup>\n- Angela C Chen<sup>1</sup>\n- Amy Y Zhao<sup>1</sup>\n- Robert C Wharton<sup>1</sup>\n- Megan C King<sup>1</sup> ([ORCID: 0000-0002-1688-2226](https://orcid.org/0000-0002-1688-2226)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Yale School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPoly(ADP ribose) polymerase inhibitors (PARPi) target cancer cells deficient in homology-directed repair of DNA double-strand breaks (DSBs). In preclinical models, PARPi resistance is tied to altered nucleolytic processing (resection) at the 5\u2019 ends of a DSB. For example, loss of either 53BP1 or Rev7/MAD2L2/FANCV derepresses resection to drive PARPi resistance, although the mechanisms are poorly understood. Long-range resection can be catalyzed by two machineries: the exonuclease Exo1, or the combination of a RecQ helicase and Dna2. Here, we develop a single-cell microscopy assay that allows the distinct phases and machineries of resection to be interrogated simultaneously in living S. pombe cells. Using this assay, we find that the 53BP1 orthologue and Rev7 specifically repress long-range resection through the RecQ helicase-dependent pathway, thereby preventing hyper-resection. These results suggest that \u2018rewiring\u2019 of BRCA1-deficient cells to employ an Exo1-independent hyper-resection pathway is a driver of PARPi resistance.\n\n## Introduction\n\nDNA repair is an essential process conserved throughout evolution and commonly disrupted in tumor cells (Jeggo et al., 2016). Many cancer treatments, including poly(ADP ribose) polymerase (PARP) inhibitors (PARPi), target DNA repair pathways to kill rapidly dividing, repair-deficient cells (Farmer et al., 2005; Fojo and Bates, 2013; Lord et al., 2015; Mateo et al., 2015). 5\u2019 end resection, which generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends dictates repair pathway choice: blocking resection promotes canonical non-homologous end joining (typically in G1), while initiating resection commits a DSB to repair by homologous recombination (HR), usually in S/G2 (Chapman et al., 2012; Hustedt and Durocher, 2016; Symington, 2016). The resection machinery is tightly controlled at both the step of resection initiation (involving Ctp1/Sae2/CtIP and the MRN/X complex) and during long-range resection, which is mediated by two parallel pathways catalyzed by either the exonuclease Exo1 or the combination of a RecQ helicase and Dna2 (Chen et al., 2012; Croteau et al., 2014; Nimonkar et al., 2011; Tk\u00e1\u010d et al., 2016; Zimmermann et al., 2013). Additional accessory factors play key roles as modulators of resection; for example, loss of Rev7/MAD2L2/FANCV, a small, multifunctional HORMA domain protein (Bluteau et al., 2016; Rosenberg and Corbett, 2015) derepresses resection inhibition (Boersma et al., 2015; Xu et al., 2015), thereby allowing HR-deficient, Brca1\u2013/\u2013p53\u2013/\u2013 cells to become resistant to PARPi. In human cells, Rev7 appears to act in concert with another inhibitor of resection, 53BP1(Chapman et al., 2013; Ochs et al., 2016; Zimmermann et al., 2013), loss of which is also sufficient to drive PARPi resistance (Boersma et al., 2015; Bouwman et al., 2010; Jaspers et al., 2013; Xu et al., 2015). Importantly, the mechanisms by which Rev7 and 53BP1 inhibit DSB end resection remain poorly understood. To gain insights into how resection is controlled, we have developed a single-cell microscopy-based assay capable of quantitatively measuring DSB end resection rates in the facile genetic model, S. pombe. Leveraging this assay, we find that Rev7 and the 53BP1 orthologue, Crb2, specifically inhibit the RecQ-helicase-dependent long-range resection pathway. Moreover, through derepression of RecQ helicases, rev7\u2206 or crb2\u2206 cells can achieve very fast resection rates (>20 kb/hr) \u2013 approximately twice as fast as Exo1-dependent long-range resection. As BRCA1 activity has been tied to Exo1-dependent long-range resection (Tomimatsu et al., 2012), our findings suggest that PARPi resistance can be driven by compensation through derepression of the RecQ-helicase-dependent resection pathway.\n\n## Results\n\n### A microscopy-based assay to measure the rate of long-range resection in single cells\n\nIn order to quantitatively measure initial steps in DSB processing in single, living cells, we developed a microscopy-based DSB end resection assay (Figure 1A). In this system, an ectopic 10.3 kb, 256-copy LacO array and adjacent HO endonuclease cut site (HOcs)\u00a0are engineered at a euchromatic (but intergenic) region near Mmf1 (Figure 1\u2014figure supplement 1). A single, site-specific DSB is generated by regulating the expression of the HO endonuclease under the control of the Ura-inducible Purg1lox RMCE system (Watson et al., 2008; 2011). The timing of on-target DSB events is visualized by the appearance of a Rad52(Rad22)-mCherry focus that co-localizes with Mmf1:LacO/LacI-GFP (Figure 1B). By tracking cell lineages, we see that HO endonuclease induction produces on-target Rad52-mCherry foci in S/G2 (G1 is very short in S. pombe) when the repair machinery is primed for HR (Symington and Gautier, 2011) (Figure 1B). Importantly, we do not observe loading of Rad52-mCherry at the LacO/LacI-GFP array in the absence of HO endonuclease expression (on-target Rad52 foci in\u00a0<0.2% of uninduced cells, n\u00a0=\u00a0657), suggesting that the LacO array is not sufficient to create a \u2018fragile site\u2019 in S. pombe (Jacome and Fernandez-Capetillo, 2011; Saad et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig1-v2.jpg)\n\n**Figure 1.:** (A) Design of the LacO resection assay in S. pombe. HO endonuclease cut cite (HOcs) and LacO integration at the Mmf1 locus on Chr II allows live-cell measurements of resection rates. Rad52-mCherry loads on DSB ends after resection initiation, and LacI-GFP is displaced as resection creates long tracts of ssDNA through the LacO array. (B) DSB resection events in two WT daughter cells. The majority of the S. pombe cell cycle is spent in G2, and all DSBs are observed in S/G2 based on the timing of mitosis and cell fission. Images shown are maximum intensity Z-projections acquired at 10-min time intervals. Blue annotations denote the starting point of resection (first frame with a detectable Rad52 focus, shortly after resection begins) and the end point (first frame with total loss of the LacO/LacI-GFP focus) of individual resection events. These start/end frames mark the total duration of resection through the 13.87 kb distance between the HOcs and the distal end of the repetitive LacO array and are used to compute resection rate (kb/hr) for individual cells. (C) Representative resection-deficient exo1\u2206 cell that that loads on-target Rad52-mCherry but does not lose the LacO/LacI-GFP focus. Because resection of the LacO array is too slow to be completed during the window of data acquisition, we are not able to quantify the rate of resection in exo1\u2206 cells. (D and E) Quantification of LacO/LacI-GFP focus and Rad52-mCherry focus intensities over time for the cells shown in (B). The arrow and \u2018M\u2019 show the time of mitotic division, which leads to a decrease in GFP intensity. Quantification used full Z-stack images (not maximum intensity projections shown in B) at subpixel resolution with background normalization. See Materials\u00a0and\u00a0methods for more details. (F) Single-cell measurements of resection rate using the LacO resection assay. Horizontal red bars mark the median resection rate for each genotype. exo1\u2206 rates cannot be determined (N.D.) because resection through the LacO array does not complete within 5 hr of data acquisition. p-values shown are from pairwise two-tailed t-tests, using a Bonferroni correction for multiple comparisons. Number of biological replicates and counts of analyzed cells can be found in Supplementary file 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Map of LacO array integration and HO cut cite integration in S.pombe (Chr II: 3,442,981 and Chr II: 3,446,249, respectively) drawn to scale (note: only 6 of the\u00a0~256 LacO repeats are shown). (B) Verification of LacO array length after integration into S. pombe by HincII digest and southern blot with a LacO-targeted probe. Circled lanes: (i) MKSP1381: the S. pombe strain with a complete 10.3 kb LacO array integration used to derive all LacO assay strains used in this study; (ii) MKSP1173: a strain where the LacO array contracted upon integration to\u00a0<5 kb (not used for LacO resection assay); (iii) pSR10_ura4_10.3 kb and (iv) pSR10_ura4_5.6 kb are plasmids with LacO arrays of known size. Linearized pSR10_ura4_10.3 kb was integrated into S. pombe.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013D)\u00a0As in Figure 1B, the blue annotations denote the starting point of resection (first frame with a detectable Rad52 focus, which formation shortly after resection begins) and the end point (first frame with total loss of the LacO/LacI-GFP focus) of individual resection events. These start/end frames mark the total duration of resection through the 13.87 kb distance between the HOcs and the distal end of the repetitive LacO array, and are used to compute resection rate (kb/hr) for individual cells. (A\u2019, B\u2019) Additional examples of the subpixel quantification of focus intensity for (A) and (B), respectively, as described in Figure 1D,E and in the Materials and methods.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) qPCR using primers spanning the HO cut site to monitor the efficiency DSB induction efficiency at 180 min after HO induction by uracil addition.\u00a0(B) Diagram of the qPCR assay. Resection at the HO-induced DSB generates ssDNA through the ApoI site 168 nt from the HO cut cite, protecting from ApoI digestion. (C) Kinetics of resection assessed by qPCR and Rad52 loading. Percentage of chromosomes that have undergone 168 nt of resection at the HO cut cite over time, measured by the ApoI-site protection-based qPCR assay (bars, left y-axis). Error bars show SEM for three technical qPCR replicates. Corresponding data for Rad52-mCherry focus formation in the LacO resection assay (red line, right y-axis). (D\u2013G) Representative images showing that LacO arrays as short as 1 kb in length are easily detectible under these imaging conditions. (D) is an image of LacO/LacI-GFP foci for a 10.3 kb LacO array (the same one used in the resection assay throughout). (E) is a comparision showing a still readily visible 1 kb LacO array, whereas (F) is a cell with LacI-GFP expression but no LacO array, showing the pan-nuclear background signal if LacI-GFP is allowed to diffuse throughout the nucleus without LacO binding. (D-E) are maximum intensity Z projections with similar exposure and contrast. (G) Is a control strain without any LacI-GFP expression that is imaged under longer exposure conditions and shown as a single Z slice in the middle of the cells to highlight the very faint autofluorescence in the cytoplasm but absent in the nucleus that is characteristic of fluorescent microscopy in S. pombe. Scale bars\u00a0=\u00a05 \u00b5m. (H) The rate of resection is equivalent on both the LacO and non-LacO sides of the HOcs in WT cells. Average long-range resection at the population level assessed by an orthogonal qPCR assay that quantifies the percentage of chromosomes that have undergone resection through ApoI sites at various distances from the HOcs. Resection to single-stranded DNA through an ApoI site protects that site from digestion by the double-strand-specific nuclease, ApoI. Error bars show 95% CIs for three technical qPCR replicates. (I) Resection rates, measured by a population-based qPCR assay, at various distances from the HOcs in exo1\u2206 and ctp1\u2206 cells 90 min after HO induction by uracil addition. Resection to single-stranded DNA through an ApoI site at the indicated positions relative to the HO cut site protects that site from digestion by the double-strand-specific nuclease, ApoI. Error bars show 95% CIs for three technical qPCR replicates. (J) On-target Rad52-mCherry foci form at reduced rates in exo1\u2206 cells. p-value shown is from pairwise two-tailed t-tests, using a Bonferroni correction for multiple comparisons. Number of biological replicates and counts of analyzed cells can be found in Supplementary file 2.\n\nAs resection proceeds, the LacO repeats become single-stranded, disrupting LacI-GFP binding and causing the intensity of the GFP focus to progressively decrease (Bell and Lewis, 2001) (Figure 1B, Figure 1\u2014figure supplement 2). To verify that loss of GFP focus intensity reflects DSB end resection, we analyzed cells lacking Exo1, which catalyzes the majority of long-range resection in WT S. pombe, with the Rqh1/Sgs1/BLM and Dna2 resection pathway playing a secondary role (Langerak et al., 2011). As expected, cells lacking Exo1 show a persistent LacO/LacI-GFP focus over many hours even after Rad52-mCherry loads (Figure 1C). Importantly, loss of Exo1 does not influence the induction of the site-specific DSB as measured by quantitative\u00a0loss of a PCR product across the cut site (Figure 1\u2014figure supplement 3A).\n\nThis assay only visualizes DSB foci after resection initiation by Ctp1/Sae2/CtIP and MRN/MRX (~100 nt of resection), as Rad52 loads at DSBs by exchanging with RPA on nascent\u00a0,resected ssDNA ends (Jensen and Russell, 2016; Lisby et al., 2004; Ma et al., 2015; Mimitou and Symington, 2008). Using quantitative imaging with calibration strains, we estimate that visualization of the Rad52-mCherry focus requires loading of\u00a0~30 copies (see Materials and methods), representing a Rad52 filament equivalent to at least 90 nt (but likely several hundred nts, see below) of resected ssDNA on each sister in G2 (Gibb et al., 2014; Grimme et al., 2010; Kagawa et al., 2002; Singleton et al., 2002; Swartz et al., 2014; Wu and Pollard, 2005). To test the frequency with which resection initiation leads to visible Rad52 foci in this assay, we compared the timing of Rad52-mCherry foci formation within the cell population to an independent measure of resection using a quantitative PCR (qPCR) assay in which resection protects from digestion at an ApoI cut site 168 nt downstream of the HO cut site (Langerak et al., 2011) (Figure 1\u2014figure supplement 3B). Using this qPCR-based assay, we observe similar DSB induction frequency and kinetics for ApoI protection and Rad52 focus formation, with an apparent 30\u201360 min delay between ApoI protection (qPCR) and Rad52-mCherry loading, which likely represents the time required for RPA loading and exchange to Rad52 (Lisby et al., 2004) (Figure 1\u2014figure supplement 3C). As the visibility of the LacO array is an important endpoint for this assay, we estimate that the LacI-GFP focus is visible down to a LacO array length of\u00a0<500 bps under these conditions, based on our ability to robustly detect the focus from a 1 kb LacO array integrated into S. pombe (Figure 1\u2014figure supplement 3D\u2013G).\n\nBy measuring the time interval between Rad52-mCherry focus formation and LacO/LacI-GFP focus disappearance, we can determine the time required to resect through the full LacO array in individual cells (Figure 1B, Figure 1\u2014figure supplement 2A-D, blue boxes). For example, for the two daughter cells in Figure 1B arising from cell division, the time interval from Rad52-mCherry loading until loss of the LacO/LacI-GFP focus is 150 min for the upper cell (\u20181\u2019), and 140 min for the lower cell (\u20182\u2019). The progressive loss of LacI-GFP intensity and gain in Rad52-mCherry intensity during the duration of resection is further illustrated by quantitative image analysis (Figure 1E\u2013F and Figure 1\u2014figure supplement 3A'\u2013B'). As we know the genomic separation of the LacO array and the HO cut site (13.9 kb, Figure 1\u2014figure supplement 1), we can calculate the resection rate from the resection duration. For example, the calculated resection rates for the two cells in Figure 1B are very similar at 5.55 and 5.94 kb/hr. Across all WT cells, we detect a median, long-range resection rate of 7.6 kb/hr (Figure 1F). This rate is somewhat faster than the resection rates measured by previous population-based assays using qPCR in S. pombe (4 kb/hr) or Southern blot in S. cerevisiae (4.4 kb/hr) (Langerak et al., 2011; Zhu et al., 2008). As this assay isolates the process of long-range resection after Rad52 loading, one possibility is that resection rates that measure both resection initiation and long-range resection give rise to slower rates. Importantly, using the qPCR approach to compare resection upstream of the DSB (which contains the LacO array) and downstream of the DSB (which does not) demonstrates that any influence of the LacO array on resection rate is minor (Figure 1\u2014figure supplement 3H).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative timeseries of resection through the LacO array in a single rev7\u2206 cell. Blue annotations mark the beginning and end of the resection event, as in Figure 1B. (B) Subpixel quantification of focus intensity for the rev7\u2206 cell resection event shown in (A). Quantification is as described in Figure 1D,E\u00a0and in the Materials and methods. (C) Single-cell measurements of resection rate using the LacO resection assay. Horizontal red bars mark the median resection rate for each genotype. p-values shown are from pairwise two-tailed t-tests, using a Bonferroni correction for multiple comparisons. Number of biological replicates and counts of analyzed cells can be found in Supplementary file 2. (D) The long-range rate of resection\u00a0in rev7\u2206 and WT\u00a0cells, measured with an ApoI protection qPCR assay on a population level. ApoI cut site distances from the HOcs are indicated and shown in the diagram at right. Error bars show 95% CIs for at least three technical qPCR replicates across two or more biological replicates. (E) Similar to D, qPCR primers spanning the HOcs itself are used to monitor the efficiency of the HO cutting to form DSBs at 180 min after HO induction by uracil addition.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) Blue annotations mark the beginning and end of individual resection events, as in Figure 1B. (A\u2019\u2013D\u2019) Corresponding subpixel quantification of focus intensity, as described in Figure 1D,E and in the Materials and methods.\n\nAs resection in the absence of Exo1 is very inefficient (Figure 1C), the rate cannot be determined using this assay. However, we can infer an upper bound of the long-range resection rate of\u00a0~2.8 kb/hr for exo1\u2206 cells. We also note a strong inhibition of resection (comparable to ctp1\u2206 cells) as close as 300 nts from the DSB in cells lacking Exo1 as detected by qPCR (Figure 1\u2014figure supplement 3I); this correlates with a defect in Rad52-mCherry loading in the imaging-based resection assay (Figure 1\u2014figure supplement 3J). This observation confirms that the extent of resection required to form visible Rad52 foci in this assay discussed above (~30 molecules;\u00a0<300 nt) partially requires Exo1-dependent resection in addition to MRN/MRX- and Ctp1/Sae2/CtIP-dependent resection initiation (Symington, 2016), consistent with a study in budding yeast suggesting a specific requirement for Exo1 in the early phase of resection post-initiation (Saad et al., 2014).\n\n53BP1 (in human cells) and its orthologue Rad9 (in budding yeast) repress resection initiation (Chapman et al., 2012; Ferrari et al., 2015; Symington, 2016); in budding yeast, loss of Rad9 also increases resection efficiency (Bonetti et al., 2015). Applying the live cell resection assay to fission yeast lacking the orthologous Crb2, we observe a strong increases the median rate of resection to (13.9 kb/hr), with some individual cells demonstrating very fast (~40 kb/hr) resection rates (Figure 1F). Thus, we can readily assess factors that positively and negatively influence long-range resection rate using this new LacO-based assay.\n\n### Rev7 inhibits long-range resection\n\nNext, we examined how loss of Rev7 influences long-range resection at DSBs during S/G2. The duration of LacO array resection is shorter in rev7\u2206 cells than in WT cells (80 min or less, Figure 2A\u2013B and Figure 2\u2014figure supplement 1). In the population, the median long-range resection rate for rev7\u2206 cells is similar to cells lacking Crb2 (10.4 kb/hr, Figure 2C). As Rev7 also functions with Rev3 as part of the polymerase \u03b6 complex in translesion synthesis, we also confirmed that Rev3 does not affect resection (Figure 2C), consistent with previous data showing that repressing resection during HR is a distinct function of Rev7 (Boersma et al., 2015; Rosenberg and Corbett, 2015; Xu et al., 2015). Using the orthogonal qPCR approach (Figure 1\u2014figure supplement 3B), we confirm that in rev7\u2206 cells, more chromosomes with DSBs have undergone 3 kb and 13 kb of resection than WT between 90 and 180 min after HO induction, respectively (Figure 2D). Again, loss of Rev7 has no influence on the rate of DSB induction (Figure 2E).\n\n### The RecQ helicase, Rqh1, rather than Exo1, drives hyper-resection in the absence of Crb2 and Rev7\n\nWe next asked if Crb2/Rad9/53BP1 and Rev7 inhibit long-range resection through the Exo1 pathway, the RecQ helicase (Rqh1)-Dna2 pathway, or both (Symington and Gautier, 2011). Interestingly, we find that the rapid long-range resection rate observed in crb2\u2206 or rev7\u2206 cells is entirely Exo1-independent (Figure 3A\u2013C, Figure 3\u2014figure supplement 1). In stark contrast, the rapid rate of resection in a rev7\u2206 single mutant is entirely dependent on the presence of Rqh1 (Figure 3A). Consistent with these observations, we find that loss of Rev7 is able to rescue the severe growth defect of exo1\u2206 cells on rich media plates containing camptothecin, consistent with a derepression of Rqh1-dependent resection in the absence of a functional Exo1 pathway (Figure 3D). When considering only precisely determined resection events, the average long-range resection rate in crb2\u2206 cells is not statically less than that of crb2\u2206rqh1\u2206 cells when correcting for multiple comparisons (p=0.16) (Figure 3A). However, in many crb2\u2206rqh1\u2206 cells, resection durations extend beyond the timeframe of data acquisition, suggesting that rapid crb2\u2206 resection also requires Rqh1 (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig3-v2.jpg)\n\n**Figure 3.:** (A) Epistasis analyses of long-range resection rates from single-cell measurements. exo1\u2206 rates cannot be determined (N.D.) because resection through the LacO array does not complete within 5 hr of data acquisition. Red bars show median resection rates and p-values are from pairwise two-tailed t-tests, using a Bonferroni correction for multiple comparisons (significant comparisons shown in green). (B,C) Very rapid resection through the 10.3 kb LacO array is common in crb2\u2206exo1\u2206 (B) and rev7\u2206exo1\u2206 (C) cells, in contrast to exo1\u2206 single mutants that do not completely resect the LacO array within 5 hr (see Figure 1C). (D) Growth assay on rich media with and without camptothecin. Loss of Rev7 can rescue the severe growth defect of exo1\u2206 cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Examples of resection in individual crb2\u2206exo1\u2206 and (B) rev7\u2206exo1\u2206 cells.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33402/elife-33402-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Diagram of exactly and non-exactly determined resection events.\u00a0The LacO resection assay is limited to 5 hr due to photobleaching. Thus, many resection events will start before the first frame or end after the last frame of data acquisition (red). Longer durations (slower resection) are more likely to extend past the first or last frame, and the lower threshold for exactly determined resection rates is 2.8 kb/hr for 5 hr of data acquisition. (B) Duration of individual resection events through the 10.3 kb LacO array (secondary y-axis shows resection rate). Minimum possible durations are shown in red. Of particular note, many slow crb2\u2206rqh1\u2206 events have longer durations (slower rates) and thus they cannot be exactly determined. See Supplementary file 2 for number of biological replicates and counts of analyzed cells.\n\nTaken together, these results strongly suggest that loss of either Rev7 or Crb2 drives a shift in resection pathway mechanism from Exo1 to the RecQ helicase-dependent pathway. Unlike Exo1-driven resection that dominates in WT cells, crb2\u2206 or rev7\u2206 cells in which the RecQ helicase is derepressed are capable of resection rates in excess of 20 kb/hr, indicating that the RecQ helicases are more capable of driving hyper-resection of DSBs than the Exo1-dependent pathway. The strong inhibition of RecQ helicase-dependent resection by Crb2 and Rev7 also explains why Rqh1 is not a major player in WT S. pombe resection, since Rqh1 can be derepressed to such a large extent (by loss of Crb2 or Rev7) that Exo1 becomes dispensable for long-range resection in crb2\u2206exo1\u2206 and rev7\u2206exo1\u2206 cells (Figure 3A-C, Figure 3\u2014figure supplement 1).\n\n## Discussion\n\nHere, we demonstrate a microscopy-based assay capable of quantitatively measuring DSB end resection in living cells, specifically the long-range phase of resection catalyzed by Exo1 or Rqh1/Dna2. By allowing for the visualization of resection in single cells, this assay reveals individual long-range resection rates, which will provide access to information about the variability in resection efficiency within cell populations. Moreover, as this assay allows the tracking of the location of DSB lesions within the nucleus, it will be able to uniquely interrogate the role of intranuclear architecture on resection rates and pathways in the future.\n\nBy leveraging the advantages of this LacO-based assay, we show that Crb2/Rad9/53BP1 and Rev7 both act as specific inhibitors of RecQ helicase-mediated long-range resection of DSBs (Figures 2 and 3), supporting a model in which loss of these resection inhibitors drives a change in resection pathway rather than boosting Exo1-dependent resection. This is consistent with a previous study that identified specific mutations in the budding yeast RecQ helicase, Sgs1, that can disrupt inhibition by the Crb2 orthologue, Rad9, leading to a gain in Sgs1-dependent resection (Bonetti et al., 2015), as well as a recent study highlighting the ability of Rad9 to antagonize resection at stalled replication forks by repressing a Dna2-dependent pathway (Villa et al., 2018). Integrating these findings together with this study, we suggest that Crb2/Rad9 and Rev7 enforce Exo1-dependent long-range resection in yeasts, which prevents the hyper-resection that we find is characteristic of the RecQ helicase/Dna2 pathway (Figure 3 and Bonetti et al., 2015). In support of this model, we find that loss of Rev7 is able to restore cell viability of exo1\u0394 cells on media containing camptothecin, suggesting that derepression of Rqh1 can substitute for loss of Exo1, consistent with the gain in resection rate in cells lacking both Rev7 and Exo1 (Figure 3).\n\nThe ability of Rev7 to antagonize RecQ helicase/Dna2-dependent long-range resection in fission yeast is very likely to be conserved in mammalian cells. Indeed, indirect evidence suggests that Rev7 knock-down promotes a gain in resection, as loss of Rev7 rescues CtIP-dependent RPA and Rad51 loading at irradiation-induced DSBs in cells lacking BRCA1 (Xu et al., 2015). Importantly, the resection pathway responsible for the gain in repair factor loading was not investigated in this study, but our work suggests that BLM (acting with DNA2) is a likely candidate. Loss of Rev7 does lead to longer 3\u2019 single-stranded G-rich overhangs at telomeres in cells with inactivated TRF2 (a component of the shelterin complex); in this case, only a partial rescue was obtained by co-depletion of CtIP or Exo1 (Boersma et al., 2015). Again, we hypothesize that this finding likely reflects contributions of BLM\u00a0and\u00a0DNA2, although it remains possible that the impact of Rev7 on long-range resection during G2 figures more prominently in fission yeast.\n\nCritically, our findings suggest a new mechanism by which loss\u00a0of\u00a0either 53BP1 or Rev7 allows BRCA1-/- p53-/- cells to become resistant to PARP inhibitors (Jaspers et al., 2013; Xu et al., 2015). It has been proposed previously that the compromised CtIP- and Exo1-dependent resection in BRCA1-deficient cells can be restored by loss of 53BP1 or Rev7 (Boersma et al., 2015; Xu et al., 2015), thereby overcoming the increased DSB load caused by PARP inhibitors (Polato et al., 2014; Tomimatsu et al., 2012). Our study reveals that not just the efficiency, but also the molecular mechanism of resection is altered upon loss of Crb2/53BP1 or Rev7. We expect these insights to have several consequences. First, RecQ helicases, when paired with DNA2, are capable of exceptionally fast resection in vitro (Niu et al., 2010), which when derepressed by loss of 53BP1 or Rev7 could cause extended tracts of ssDNA several kb long, promoting further genome instability (Hicks et al., 2010; Ochs et al., 2016); indeed, our data point to such a hyper-resection phenotype upon loss of either Crb2 or Rev7 (Figure 2C). Second, our results suggest that inhibitors of RecQ helicases could potentially re-sensitize BRCA1-null cells to PARP inhibitors, as this would make them both Exo1- and RecQ helicase-deficient (Aggarwal et al., 2013; Yazinski et al., 2017).\n\n## Materials and methods\n\n### Cell culture, strain construction and verification\n\nThe strains used in this study are listed in Supplementary file 1. S. pombe were grown, maintained, and crossed using standard procedures and media (Moreno et al., 1991). Gene replacements were made by exchanging open reading frames with various MX6-based drug resistance genes (B\u00e4hler et al., 1998; Hentges et al., 2005). The 10.3 kb LacO array was inserted between Mmf1 and Apl1 on the right arm of chromosome II (Chr II: 3,442,981) using a modified two-step integration procedure that first creates a site-specific DSB to increase targeting efficiency of linearized plasmid pSR10_ura4_10.3kb (Leland and King, 2014; Rohner et al., 2008). A modified MX6-based hygromycin-resistance cassette containing the HO cut site was then inserted between Apl1 and Mug178 on chromosome II (Chr II: 3,446,249), 3.2 kb distal to the LacO insertion. The total distance between the HO cut site and the beginning of the 10.3 kb LacO array is 3.57 kb. As the LacO array can contract during the process of transformation, integrants were screened by HincII digest followed by southern blot (Figure 1\u2014figure supplement 1) using standard procedures, a biotin-conjugated LacO probe, and a streptavidin-HRP chemilluminescent detection system (Thermo #N100 and #34096).\n\n### DSB induction using Purg1lox-HO\n\nWe used the uracil-responsive Purg1lox expression system, with slight modifications, to induce HO endonuclease expression and create site-specific DSBs at the HO cut site (Watson et al., 2011; Watt et al., 2008). We performed a fresh integration of the HO gene at the endogenous urg1 locus for each experiment in order to reduce long-term instability at the HO cut site or the development of HO resistance, presumably due to insertion/deletion events caused by basal expression levels of HO. The pAW8ENdeI-HO plasmid (a gift from Tony Carr) was transformed into S. pombe, which were then plated onto EMM-leu+thi-ura plates (-leucine: plasmid selection;\u00a0+thiamine: Pnmt1-Cre repression; -uracil: Purg1lox-HO repression). After 4\u20135 days of growth at 30\u00b0C, 40\u2013100 individual colonies were combined to obtain a reproducible plasmid copy number across the population. Cre-mediate HO gene exchange at the endogenous Urg1 locus (urg1::RMCEbleMX6) was induced by overnight culture in EMM-thi-ura+ade+NPG media (-thiamine: expression of Cre from pAW8ENdeI-HO; -uracil: Purg1lox-HO repression;\u00a0+0.25 mg/mL adenine: reduce autofluorescence;\u00a0+0.1 mM n-Propyl Gallate (NPG): reduce photobleaching in microscopy experiments, prepared fresh). The following day, site-specific DSBs were induced in log-phase cultures by the addition of 0.50 mg/mL uracil. This induction strategy resulted in\u00a0~15% of cells making a DSB within\u00a0~2 hr (Figure 1\u2014figure supplement 3C).\n\n### qPCR resection assay\n\nInitiation of resection was assessed using a previously described qPCR assay where ssDNA produced by resection causes protection from ApoI digestion (Langerak et al., 2011). ApoI cut site positions (relative to the HO cut cite (Chr II: 3446192)) and PCR primer sets spanning each ApoI recognition site can be found in Supplementary file 3. Mock HincII digestions (do not affect qPCR products) and additional control primers at Ncb2 were used to normalize for ApoI digestion efficiency (see Supplementary File 3).\n\n### Microscopy\n\nAll images were acquired on a DeltaVision widefield microscope (Applied Precision/GE) using a 1.2 NA 100x objective (Olympus), solid-state illumination, and an Evolve 512 EMCCD camera (Photometrics). Slides were prepared\u00a0~20 min after adding 0.50 mg/ml uracil to log-phase cultures to induce HO endonuclease expression and DSB formation. Cells were mounted on 1.2% agar pads (EMM\u00a0+0.50 mg/mL uracil,\u00a0+2.5 mg/ml adenine,\u00a0+0.1 mM freshly prepared NPG) and sealed with VALAP (1:1:1 vaseline:lanolin:paraffin). Image acquisition began between 40 and 80 min after uracil addition. Imaging parameters for all resection assay data acquisition were as follows. Transmitted light: 35% transmittance, 0.015 s exposure; mCherry: 32% power, 0.08 s exposure; GFP: 10% power, 0.05 s exposure. At each time point (every 10 min for 5\u20137 hr), 25 Z-sections were acquired at 0.26 \u03bcm spacing. Identical imaging parameters were used to image a strain expressing endogenously tagged Sad1-mCherry (Sad1 forms a single focus at the spindle pole body that contains between 450 and 1030 molecules) and relative mCherry foci intensities were used to determine that\u00a0~30 molecules of Rad52-mCherry are required to detect a visible focus with these imaging parameters (Wu and Pollard, 2005).\n\n### Image analysis\n\nFor the LacO resection assay, every cell cycle was tracked and quantified individually, including timing of nuclear division, cellular division, Rad52-mCherry focus formation, and LacO/LacI-GFP focus disappearance. Only on-target Rad52 foci (that co-localized with LacO/LacI-GFP for at least 2 frames) were considered, since many DSB events occur throughout the genome spontaneously, especially during S-phase. The number of cells and events used to generate the plots in all Figures is included as Supplementary file 2. The time between the first frame with an on-target Rad52-mCherry focus and the first frame with complete disappearance of the LacO/LacI-GFP focus is the duration of resection through 3.57 kb (between the HO cut site and the start of the LacO repeats) plus the full 10.3 kb LacO array. All fields from all genotypes were input into custom ImageJ macros that randomized the order of the fields/genotypes, blinded the images by removal\u00a0of the file names, set the contrast to be identical for every image, and numbered each cell lineage. Each blinded field was then manually assessed for photobleaching of the LacO/LacI-GFP foci in cells without induced DSBs (>80% of all cells) to ensure that disappearance of any LacO/LacI-GFP foci in cells with on-target DSBs was due to resection through the LacO array rather than photobleaching of the GFP signal. Next, using the pre-determined contrast settings for mCherry and GFP channels (to maintain consistency across all images analyzed) individual cells which had on-target DSB events were manually identified, and scored for the first frame of Rad52-mCherry focus appearance and then the first frame in which the LacO/LacI-GFP focus had completely disappeared.\n\nFor focus intensity plots (e.g. Figure 1D,E), quantification was performed in ImageJ on the full 5D image stacks (not maximum intensity projections, which are shown in the image panels throughout for ease of viewing, for\u00a0example Figure 1B). Subpixel measurements were made in a cylinder approximating the point\u00a0spread\u00a0function surrounding the manually scored subpixel center of the focus. A cylindrical shell surrounding the focus was used for background subtraction in both the GFP and mCherry channels.\n\nRaw data were processed, visualized, and analyzed using R, in particular packages dplyr, ggplot2, and broom. Raw data, raw analysis for all individual cells included in plots, complete code, and other supporting materials are publically available on GitHub https://github.com/lelandbr/Leland_King_2018_eLife_Rev7_EndResection (King and Leland, 2018; copy archived at https://github.com/elifesciences-publications/Leland_King_2018_eLife_Rev7_EndResection).\n\n### Growth assays\n\nCells were grown overnight in YE5S media. Concentrations for each culture were monitored by both OD600 and a Coulter Principle cell counter (Orflow Moxi Z). Cultures were diluted as needed to ensure identical numbers of cells were spotted for each genotype, starting with\u00a0~4\u00d7106 cell/mL and going down by sixfold dilutions. Plates were prepared using standard procedures (Moreno et al., 1991), with the addition of 30 \u03bcM camptothecin (Sigma;\u00a0\u226595% HPLC purified) after autoclaving.\n",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "e54b1d7a-8336-4743-bc2b-f91e94c7dfe8",
+      "submission_id": "0220867e-e213-4bed-b256-9067c97344e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Kowalczykowski, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33402.021](https://doi.org/10.7554/eLife.33402.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Rev7 and 53BP1/Crb2 prevent RecQ helicase-dependent hyper-resection of DNA double-strand breaks\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe overall findings with regard to Crb2 and Rev7 inhibiting the Rqh1 pathway are interesting, but there were many concerns with how the data are collected and analyzed. The manuscript presents novel data based on an assay that is not fully substantiated. Many controls are still needed to support the validity of the underlying assay.\n\nThere were unanimous reservations and many discussions about the assay which, in turn, undermined the confidence in, and significance of, the conclusions. Although most of the conclusion were consistent with existing facts, there were some specific inconsistencies noted by the reviewers. Overall, the results seem incomplete or preliminary.\n\nEssential revisions:\n\nReviewer #1:\n\nThis is an interesting paper with potentially important conclusions. The results depend entirely on the assay, which seems to be reliable, but some questions remain:\n\n1) There are no graphs showing the quality of the kinetic data. The authors need to show graphs of intensity vs time, for each assay, with fitting statistics.\n\n2) It's a bit surprising that the array of 256 copies of lac repressor protein doesn't affect the measured rate. The authors need to show overlaid graphs of intensity vs time for the arrays; the PCR data for the arrays with lac repressor; and PCR data for the DNA arrays without lac repressors.\n\n3) In the experiments with tagged RAD52, I don't understand why the foci persist. I would have expected RAD51 to replace the RAD52. Although the intensity does decrease (maybe just from photobleaching), it seems to be slower than the observations from the Rothstein lab on Rad52 in S. cerevisiae.\n\nAs stated above, the results are interesting and informative. However, the results rely entirely on the validity of the assay. In the current version, the authors don't present enough analysis and comparisons of the kinetic data to convincingly establish the assay. Presumably, they have the data; they need to provide it.\n\nReviewer #2:\n\nDNA end resection is essential for homologous recombination, but excessive end resection can be detrimental to genome integrity. Long-range resection is catalyzed by either Exo1 or by a RecQ family helicase in collaboration with Dna2. The relative contribution of these two mechanisms and how they are regulated is not well understood. Here, the authors use a cytological approach to study end resection in single cells. An HO cut site was inserted 3.4-kb from a 10.3-kb lacO array located on Ch 2 of S. pombe. DSB formation/early resection was detected by the appearance of Rad52-mCherry foci that co-localize with the lacO array marked with LacI-GFP. Resection of the entire lacO array results in loss of the GFP signal while the mCherry signal remains. Consistent with a previous study using population based qPCR to measure resection (Langerak et al., 2011), the authors report that most resection is due to Exo1 activity and not Rqh1. Two years ago, several groups reported that Rev7 acts with 53BP1 to inhibit resection in mammalian cells. Here, the authors show that Rev7 and Crb2/53BP1 have a conserved role in preventing long-range resection in S. pombe. Furthermore, they show that Rev7 and Crb2 specifically block resection by Rqh1.\n\nOverall, the authors demonstrate that live cell imaging can be used to study end resection in single cells, and their studies show considerable cell-to-cell variation in the initiation of resection, a feature missed by population-based DNA analysis. However, I'm not convinced that the microscopy-based single-cell assay is the best way to monitor resection. The generated data imply that resection speed can be measured accurately but that relies on some assumptions. In subsection \u201cImage analysis\u201d the authors write \"The time between the first frame with an on-target Rad52-mCherry focus and the first frame with complete disappearance of the LacO/LacI-GFP focus is the duration of resection through 3.57 kb (between the HO cut site and the start of the LacO repeats) plus the full 10.3 kb LacO array\". Is resection through the complete LacO array necessary for disappearance of the GFP focus? I could imagine that the GFP focus disappears before the complete LacO array is degraded. What is the minimum number of detectable LacO repeats? The authors could integrate LacO arrays of different lengths and check what the detection limit is. Or they should at least confirm the timing of the GFP focus disappearance with the qPCR assay (According to Figure 1\u2014figure supplement 1 they could use HincII for this).\n\nAlso, to my eye the Rad52 focus appearance and LacI-GFP focus disappearance are not easily identified (based on the microscopy images shown). The authors should mark the frames they define as \"Rad52 focus appearance\" and \"LacI-GFP focus disappearance\". In the Materials and methods section, they don't say how they define these events. Do they do it manually or using some image analysis software? What is the threshold? More details are necessary here to judge the accuracy of the method. Also, the restriction of the assay to 5 hours by photobleaching seems to be a considerable drawback, which limits the number of \"usable\" cell trajectories (as shown in Figure 2\u2014figure supplement 2B). Perhaps by changing the imaging period and number of z-stacks they could extend the time window for monitoring resection. Other approaches, such as using more photostable fluorescent proteins (e.g. LacI-mKate2, Rad52-monomeric NeonGreen), LEDs as light sources, or switching to an enzyme that cuts more efficiently than HO (I-PpoI has been successfully used in S. pombe and the efficiency of cutting is better than HO) would involve considerable more effort and time.\n\nThe authors stress that they use a single cell assay. But it is not clear what the advantage of single cell data is in their work. In the end they are comparing population medians, which could also be generated with bulk experiments. The low DSB formation efficiency might be a motivation to use a single cell assay to restrict the analysis to the few cells with a DSB. However, bulk experiments generally take the cutting efficiency into account, e.g. the qPCR-based assay described by Zierhut and Diffley, (2008) considers the HO cut fraction.\n\nRad52 foci are used as a read out for DSB formation and initiation of resection. Can these two steps be separated, for example, by measuring DSB formation by qPCR using primers flanking the HO cut site on the same samples used for the ApoI protection assay, or possibly using Mre11-mCherry instead of Rad52? It appears from Figure 1B (upper panel) that resection through most of the lacO array is required for a strong Rad52 signal.\n\nIn theory, the HO-induced DSB is unrepairable, but because the HO cutting efficiency is quite low, and S. pombe cells are in G2 most of the time, if one sister chromatid was cut and engaged in repair with the uncut sister it could result in an underestimation of resection. Were cells with a transient Rad52 focus detected? The exo1 example in Figure 1 appears to have a Rad52 focus that appears early and then goes away. Does elimination of Rad51 change the number of cells resecting or rate of resection? At late times, when the mCherry signal is very bright, are both sister chromatids cut and resected?\n\nLangerak et al., used a qPCR assay to measure end resection and reported no defect in resection initiation (35 nt from HO cut site) in the exo1 mutant or exo1 rqh1 double mutant. Is the failure to detect Rad52 foci in most exo1 cells because resection tracts are <90 nt or because the amount of ssDNA required to support a Rad52 focus is much longer than 90 nt? Given that the Rad52 single is quite weak until the lacO array disappears, I think the authors might be under-estimating the amount of ssDNA to visualize a Rad52 focus. Does the exo1 mutant show normal DSB formation (measured with primers flanking the HOcs) and resection to the ApoI site located 168 nt from HOcs? Similarly, is DSB formation normal in the rev7 mutant and can early resection be detected by the qPCR assay?\n\nWhy does rqh1 suppress the early resection defect of rev7? An odd result that is not discussed in the text.\n\nWhile the overall findings on the role of Rev7 and Crb2 repressing the Rqh1 resection pathway are certainly of interest to the field, the data analysis needs to be improved.\n\nReviewer #3:\n\nDNA end resection is a process that initiates recombination-based DNA double strand break repair. As resection also generally inhibits non-homologous end-joining, regulation of DNA end resection is an important process. The human 53BP1 protein, though its various effectors, has been found to be an inhibitor of DNA end resection, although mechanistic insights are lacking. These processes appear to be at least partially conserved in low eukaryotes.\n\nThe authors are using a S. pombe as a model system, where they developed an assay allowing the monitoring of resection in live cells (Figure 1). The assay is based on the disappearance of GFP-LacI and appearance of Rad52-mCherry signal next to HO-endonuclease induced DSB. This is an interesting method that will be useful for high throughput microscopy-based screenings. However, the method has certain limitations in contrast to established southern blotting, PFGE or RTPCR-based methods:\n\na) The assay measures Rad52 accumulation, which is a step after resection. Rad52 is a mediator that loads Rhp51 on RPA-coated resected DNA. Using RT-PCR based assay, the authors established that there is a correlation between both processes (resection and RAD52 loading). However, this was only done in wt background, and it is possible RAD52 loading might differ in the mutants analyzed, and Rad52 might be loaded with different kinetics dependent on the resection pathway. The authors calculate resection rates making the assumption that there is no difference.\n\nb) The assay measures resection of DNA bound by GFP-LacI, a non-physiologic binder. Therefore, the resection proteins must displace LacI for resection to occur. Under physiologic conditions, DNA near DSBs will likely be chromatinized and subsequently remodeled allowing resection. This is especially a concern when analyzing the role of chromatin binders such as 53BP1/Crb2. Also, the individual resection pathways may be affect by LacI binder to a different degree, which complicates interpretation.\n\nThe most interesting finding is that Rev7 and 53BP1/Crb2 appear to repress long-range resection dependent on Rqh1 (Figure 2): In the absence of Rev7 and Crb2, long-range resection is accelerated, which is independent of Exo1 and depends on Rqh1.\n\n1) This observation should be verified using a previously established assay, given the concerns listed above. Related to this point, it remains a formal possibility that the action of Rqh1 is not specific to resection, but to strip LacI, allowing resection through another process. Performing resection with the same mutants in an established setup (with no LacI) will address this concern as well.\n\nThe authors then go on to demonstrate differential effects of Rev7 and Crb2 on early resection steps, based on timing of Rad52 foci appearance upon break induction (Figure 3). I am concerned about these results: using Rad52 (a protein with a function downstream of resection) does not appear to be correct as a marker of \"early\" resection.\n\n2) The results should be analyzed in an established assay where the readout is clearly early resection. Also, to make claims on early resection, the analysis should include mutants deficient in short-range resection (e.g. mre11) and mutants in long-range resection, where both pathways have been inactivated (e.g. exo1 rqh1).\n\n3) In Figure 2, the authors demonstrate that rev7 mutants have accelerated long-range resection, which is dramatically decreased when rqh1 is additionally mutated (rev7 rqh1), supporting the hypothesis that resection in rev7 mutants is Rqh1 dependent. In contrast however, the in Figure 3, the \"early\" resection is increased when rqh1 is mutated in rev7 background, a completely opposite effect. This is very confusing. The authors comment that \"early\" resection is a combination of Mre11 and Exo1/Rqh1 dependent processes. This dichotomy reinforces my concerns about the robustness of the experimental setup.\n\nIn summary, the manuscript presents an interesting assay and interesting pieces of data, but it seems rather preliminary at this point.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Rev7 and 53BP1/Crb2 prevent RecQ helicase-dependent hyper-resection of DNA double-strand breaks\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe biological findings of this manuscript are interesting, particularly the role of Rev7 in suppressing resection by the Rqh1 pathway, but there are significant concerns over the reliability of the assays used. The authors place equal importance on the fluorescence-based resection presented; however, the reliability of the assay is questionable and the weak point of this work. The conceptual idea of the assay is good, but there are reservations about its implementation and use to quantify resection speed. The authors have, for the most part, established the utility of their assay for the analysis of long-range resection, although they still need to provide a graphical example of their quantification. They discovered interesting roles of Rev7 and Crb2 in Rqh1-dependent resection. As both a methods contribution and a contribution to the recombination field, these findings could justify publication of a revised manuscript.\n\nHowever, the manuscript then goes on to dissect the roles of these proteins in proximal recombination. Here the work is both incomplete and internally inconsistent. It would appear that the data in Figure 4A and Figure 4C are inconsistent with one another: 4A show a reduction in \"Cell cycles with Rad52 foci\" for rev7delta, whereas 4C shows no change, within error, for rev7delta at 300 bps (The figure legend, as well as the associated text in the main body of the manuscript, is not justified: \"The extent of resection 300 bps and 3 kb from the HO cut site as assessed by the restriction enzyme/qPCR method supports less efficient resection initiation in rev7\u0394 cells compared to WT at 300 bp\u2026\").\n\nAlso, the conclusion that of Rev7 promotes early resection is based entirely on how quickly a Rad52 focus forms after break induction, and how many cells have visible Rad52 foci. It was suggested that the authors use a more direct measurement of break induction by qPCR using primers flanking the HO cut site. This has not been done and is a significant concern. If one compares the qPCR data for resection 168-bp from the HO cut site shown in Figure 1D and Figure 1\u2014figure supplement 3B there are vast differences \u2013 3% resection at 120 min in one figure compared with 15% resection at 120 min in the other. If there is this much variability between populations of cells then it could explain why the rev7 mutant looks different to wild type, and why rqh1 appears to suppress the early resection defect of rev7. How many independent inductions were performed for image analysis? The authors need a reliable method to assess DSB formation independent of Rad52 focus formation before drawing conclusions about a role for Rev7 in promoting early resection.\n\nFurthermore, In Figure 1D, the authors use a qPCR assay to detect formation of ssDNA 168 and 14,253 bp from the HO cut site. From this assay, very few (2%) cells exhibit resection to the end of the lacO array 360 min after HO induction. This would appear to contradict the microscopy assay, which shows resection through the array takes ~150 minutes. Also, data should really be from biological replicas, not technical replicates of qPCR.\n\nConsequently, whether or not Rev7 has a role in proximal resection is not clear from the authors' data.\n\nThere was agreement that manuscript needs to be revised:\n\n1) It is essential that the confusing data on short range resection are clarified or removed from the manuscript. If the proximal resection data are retained, then the comments raised above need to be addressed. In addition, in the review of the prior version of this manuscript, reviewer #3 commented on this part in the original submission: \"Also, to make claims on early resection, the analysis should include mutants deficient in short-range resection (e.g. mre11) and mutants in long-range resection, where both pathways have been inactivated (e.g. exo1 rqh1).\" The authors did not address this previous request for clarification of this unexpected finding in this revised manuscript, using the analyses described for proximal resection (i.e., Figure 4).\n\nIt is unclear whether the authors can make these revision within the timeframe given. If not, then these data on proximal resection would need to be removed, and the conclusions of the manuscript refocused. One major finding is the effect of Crb2 on long-range resection: while this is new in S. pombe, it is well-described in S. cerevisiae (Rad9). The second major finding is the effect of Rev7 on long-range resection: this was only shown in humans, but not in the microbial eukaryotes. Although significant, the impact of the current manuscript is diminished without the proximal resection data; consequently, the author would need to make the contributions of their sound work much clearer in an expanded Discussion section of their work in relation to the existing literature (in any event, the existing Discussion section is inadequate.).\n\n2) The authors use appearance of a Rad52-mCherry focus to identify onset of resection and disappearance of a lacO/LacI-GFP focus to identify resection past a site some 14 kb away from the DSB site. The problem is that both signals are rather fuzzy in many of the image series shown. This is especially true for the Rad52-mCherry focus (see e.g. the lower image series in Figure 1B, the first three image series in Figure 1\u2014figure supplement 2, Figure 2A). The decision if a signal is judged as a focus or not is crucial, as it is the basis to calculate resection speed. This decision is made manually. Although the authors try to \"equalize\" the error by randomizing the image series prior to analysis, it seems to be a quite ambiguous approach of questionable reliability. What is their criterion to judge if a focus is present or not? Do they compare with background control strains? Why don't the authors use software to quantify the fluorescence signals and generate intensity trajectories? There are several non-commercial image analysis software packages available dedicated to exactly this purpose. Based on thresholds defined by appropriate control strains, appearance and disappearance of the signals could then be identified in a more controlled and rational way. A minimal requirement is that the author provides an x-y graph of foci fluorescent intensity vs time for each their examples of time-lapse video data in the manuscript.\n\nIf the authors submit another revised version, then the decision to accept or reject will be final, and no subsequent revisions will be considered.\n",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7744b776-ec8f-42de-80ca-f26594b98de3",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C1",
+      "claim": "Poly(ADP ribose) polymerase inhibitors (PARPi) target cancer cells deficient in homology-directed repair of DNA double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "Poly(ADP ribose) polymerase inhibitors (PARPi) target cancer cells deficient in homology-directed repair of DNA double-strand breaks (DSBs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of PARPi action, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b347b275-b01b-4935-83a3-b88d3d775db7",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C2",
+      "claim": "In preclinical models, PARPi resistance is tied to altered nucleolytic processing (resection) at the 5' ends of a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "In preclinical models, PARPi resistance is tied to altered nucleolytic processing (resection) at the 5' ends of a DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references findings from preclinical models, drawing on established research in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "0c59a9d5-7ce7-46eb-9ee6-d909bce3eb67",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C3",
+      "claim": "Loss of 53BP1 derepresses resection to drive PARPi resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, loss of either 53BP1 or Rev7/MAD2L2/FANCV derepresses resection to drive PARPi resistance, although the mechanisms are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of how PARPi resistance occurs, referencing established findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "e29f8697-ba40-4109-b6a9-b708cf45a98b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C4",
+      "claim": "Loss of Rev7/MAD2L2/FANCV derepresses resection to drive PARPi resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, loss of either 53BP1 or Rev7/MAD2L2/FANCV derepresses resection to drive PARPi resistance, although the mechanisms are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of how PARPi resistance occurs, referencing established findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "80eb45e9-2b48-4b23-af33-a8d784917e6e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C5",
+      "claim": "The mechanisms by which 53BP1 and Rev7 depress resection are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, loss of either 53BP1 or Rev7/MAD2L2/FANCV derepresses resection to drive PARPi resistance, although the mechanisms are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "265d521e-8d37-4b3d-80b4-ba40d17d04d8",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C6",
+      "claim": "Long-range resection can be catalyzed by the exonuclease Exo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range resection can be catalyzed by two machineries: the exonuclease Exo1, or the combination of a RecQ helicase and Dna2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established molecular mechanisms of DNA resection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b7a2ff85-3209-478b-9b0a-5d9a3df569cf",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C7",
+      "claim": "Long-range resection can be catalyzed by the combination of a RecQ helicase and Dna2.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range resection can be catalyzed by two machineries: the exonuclease Exo1, or the combination of a RecQ helicase and Dna2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established molecular mechanisms of DNA resection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "a8b423f8-22b4-4f51-bf81-832df57b0b05",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C8",
+      "claim": "A single-cell microscopy assay was developed that allows the distinct phases and machineries of resection to be interrogated simultaneously in living S. pombe cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a single-cell microscopy assay that allows the distinct phases and machineries of resection to be interrogated simultaneously in living S. pombe cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of a new experimental method in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "dc173517-f22e-4683-85a2-90836eb713d1",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C9",
+      "claim": "The 53BP1 orthologue and Rev7 specifically repress long-range resection through the RecQ helicase-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we find that the 53BP1 orthologue and Rev7 specifically repress long-range resection through the RecQ helicase-dependent pathway, thereby preventing hyper-resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from the microscopy assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "59a3a9d8-f202-4b5e-a583-f805adb79d9e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C10",
+      "claim": "The 53BP1 orthologue and Rev7 prevent hyper-resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we find that the 53BP1 orthologue and Rev7 specifically repress long-range resection through the RecQ helicase-dependent pathway, thereby preventing hyper-resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from the microscopy assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "68d5cd73-3d95-4071-8695-40916e49464c",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C11",
+      "claim": "'Rewiring' of BRCA1-deficient cells to employ an Exo1-independent hyper-resection pathway is a driver of PARPi resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that 'rewiring' of BRCA1-deficient cells to employ an Exo1-independent hyper-resection pathway is a driver of PARPi resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings, presented as a suggestion based on inference.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "79a79607-8d64-4fb1-ba65-20e24190549c",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C12",
+      "claim": "DNA repair is an essential process conserved throughout evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA repair is an essential process conserved throughout evolution and commonly disrupted in tumor cells (Jeggo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8c04a063-cdb2-4123-bc0d-bc7174387ea8",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C13",
+      "claim": "DNA repair is commonly disrupted in tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA repair is an essential process conserved throughout evolution and commonly disrupted in tumor cells (Jeggo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "2eaeb6cd-cd85-4528-b5b2-02ba5bca5a4e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C14",
+      "claim": "Many cancer treatments, including PARP inhibitors, target DNA repair pathways to kill rapidly dividing, repair-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cancer treatments, including poly(ADP ribose) polymerase (PARP) inhibitors (PARPi), target DNA repair pathways to kill rapidly dividing, repair-deficient cells (Farmer et al., 2005; Fojo and Bates, 2013; Lord et al., 2015; Mateo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about cancer treatment mechanisms supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "c76c5c25-7927-48e2-b45c-0662d4dc7657",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C15",
+      "claim": "5' end resection generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends.",
+      "claim_type": "EXPLICIT",
+      "source": "5' end resection, which generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends dictates repair pathway choice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular mechanism of DNA resection, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "82004e7b-7fcf-49d1-a8c9-b375f743ddac",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C16",
+      "claim": "5' end resection dictates repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "5' end resection, which generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends dictates repair pathway choice: blocking resection promotes canonical non-homologous end joining (typically in G1), while initiating resection commits a DSB to repair by homologous recombination (HR), usually in S/G2 (Chapman et al., 2012; Hustedt and Durocher, 2016; Symington, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DNA repair pathway choice supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "bc427b94-e0e7-4de5-b2f5-19abc4d52e21",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C17",
+      "claim": "Blocking resection promotes canonical non-homologous end joining (typically in G1).",
+      "claim_type": "EXPLICIT",
+      "source": "5' end resection, which generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends dictates repair pathway choice: blocking resection promotes canonical non-homologous end joining (typically in G1), while initiating resection commits a DSB to repair by homologous recombination (HR), usually in S/G2 (Chapman et al., 2012; Hustedt and Durocher, 2016; Symington, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DNA repair pathway choice supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "717bd870-aaab-4b27-ba10-67b0a471062b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C18",
+      "claim": "Initiating resection commits a DSB to repair by homologous recombination (HR), usually in S/G2.",
+      "claim_type": "EXPLICIT",
+      "source": "5' end resection, which generates tracts of single-strand DNA (ssDNA) at DNA double-strand break (DSB) ends dictates repair pathway choice: blocking resection promotes canonical non-homologous end joining (typically in G1), while initiating resection commits a DSB to repair by homologous recombination (HR), usually in S/G2 (Chapman et al., 2012; Hustedt and Durocher, 2016; Symington, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about DNA repair pathway choice supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b42ebf5a-921f-4c4c-af3d-1349c5a4794d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C19",
+      "claim": "The resection machinery is tightly controlled at the step of resection initiation involving Ctp1/Sae2/CtIP and the MRN/X complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The resection machinery is tightly controlled at both the step of resection initiation (involving Ctp1/Sae2/CtIP and the MRN/X complex) and during long-range resection, which is mediated by two parallel pathways catalyzed by either the exonuclease Exo1 or the combination of a RecQ helicase and Dna2 (Chen et al., 2012; Croteau et al., 2014; Nimonkar et al., 2011; Tk\u00e1\u010d et al., 2016; Zimmermann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the regulation of DNA resection supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "194d63ca-47c1-47d5-8c40-7854c66bfb3a",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C20",
+      "claim": "Long-range resection is mediated by two parallel pathways catalyzed by either the exonuclease Exo1 or the combination of a RecQ helicase and Dna2.",
+      "claim_type": "EXPLICIT",
+      "source": "The resection machinery is tightly controlled at both the step of resection initiation (involving Ctp1/Sae2/CtIP and the MRN/X complex) and during long-range resection, which is mediated by two parallel pathways catalyzed by either the exonuclease Exo1 or the combination of a RecQ helicase and Dna2 (Chen et al., 2012; Croteau et al., 2014; Nimonkar et al., 2011; Tk\u00e1\u010d et al., 2016; Zimmermann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular mechanisms of long-range resection supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "e2f3f7ac-94ab-4bfa-b587-087398f0966b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C21",
+      "claim": "Rev7/MAD2L2/FANCV is a small, multifunctional HORMA domain protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional accessory factors play key roles as modulators of resection; for example, loss of Rev7/MAD2L2/FANCV, a small, multifunctional HORMA domain protein (Bluteau et al., 2016; Rosenberg and Corbett, 2015) derepresses resection inhibition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular characteristics of Rev7 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8a48520c-3c84-47ce-a520-79b1d574bac0",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C22",
+      "claim": "Loss of Rev7/MAD2L2/FANCV derepresses resection inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional accessory factors play key roles as modulators of resection; for example, loss of Rev7/MAD2L2/FANCV, a small, multifunctional HORMA domain protein (Bluteau et al., 2016; Rosenberg and Corbett, 2015) derepresses resection inhibition (Boersma et al., 2015; Xu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of Rev7 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "e6f87cf0-8636-4cd0-b2e1-5fc4ae94da53",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C23",
+      "claim": "Loss of Rev7 allows HR-deficient, Brca1\u2013/\u2013p53\u2013/\u2013 cells to become resistant to PARPi.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of Rev7/MAD2L2/FANCV, a small, multifunctional HORMA domain protein (Bluteau et al., 2016; Rosenberg and Corbett, 2015) derepresses resection inhibition (Boersma et al., 2015; Xu et al., 2015), thereby allowing HR-deficient, Brca1\u2013/\u2013p53\u2013/\u2013 cells to become resistant to PARPi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of Rev7 in PARPi resistance supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "e18931d0-b176-4089-96dc-b7fd153943d1",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C24",
+      "claim": "In human cells, Rev7 appears to act in concert with another inhibitor of resection, 53BP1.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, Rev7 appears to act in concert with another inhibitor of resection, 53BP1(Chapman et al., 2013; Ochs et al., 2016; Zimmermann et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interaction between Rev7 and 53BP1 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "cac7a21d-7e02-4177-b47b-16317ccd9f50",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C25",
+      "claim": "Loss of 53BP1 is sufficient to drive PARPi resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, Rev7 appears to act in concert with another inhibitor of resection, 53BP1(Chapman et al., 2013; Ochs et al., 2016; Zimmermann et al., 2013), loss of which is also sufficient to drive PARPi resistance (Boersma et al., 2015; Bouwman et al., 2010; Jaspers et al., 2013; Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of 53BP1 in PARPi resistance supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5c80113d-b965-4223-b2b5-9e1a83c3f1df",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C26",
+      "claim": "The mechanisms by which Rev7 and 53BP1 inhibit DSB end resection remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the mechanisms by which Rev7 and 53BP1 inhibit DSB end resection remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "375ab8bc-ce1b-4c1c-8330-5d5074617146",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C27",
+      "claim": "Rev7 and the 53BP1 orthologue, Crb2, specifically inhibit the RecQ-helicase-dependent long-range resection pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging this assay, we find that Rev7 and the 53BP1 orthologue, Crb2, specifically inhibit the RecQ-helicase-dependent long-range resection pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "01a0daf1-54b7-4e13-959c-f76ead509154",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C28",
+      "claim": "Through derepression of RecQ helicases, rev7\u2206 or crb2\u2206 cells can achieve very fast resection rates (>20 kb/hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, through derepression of RecQ helicases, rev7\u2206 or crb2\u2206 cells can achieve very fast resection rates (>20 kb/hr) \u2013 approximately twice as fast as Exo1-dependent long-range resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "fc35ffa4-42b9-4d94-bed9-af1c8c7eac68",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C29",
+      "claim": "RecQ helicase-dependent resection in rev7\u2206 or crb2\u2206 cells is approximately twice as fast as Exo1-dependent long-range resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, through derepression of RecQ helicases, rev7\u2206 or crb2\u2206 cells can achieve very fast resection rates (>20 kb/hr) \u2013 approximately twice as fast as Exo1-dependent long-range resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "d3f54d1e-6d05-423b-bb5c-0990f3bd642e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C30",
+      "claim": "BRCA1 activity has been tied to Exo1-dependent long-range resection.",
+      "claim_type": "EXPLICIT",
+      "source": "As BRCA1 activity has been tied to Exo1-dependent long-range resection (Tomimatsu et al., 2012), our findings suggest that PARPi resistance can be driven by compensation through derepression of the RecQ-helicase-dependent resection pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about BRCA1 function supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "84c100bb-c707-4f7f-aa18-7ac2755af38b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C31",
+      "claim": "PARPi resistance can be driven by compensation through derepression of the RecQ-helicase-dependent resection pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As BRCA1 activity has been tied to Exo1-dependent long-range resection (Tomimatsu et al., 2012), our findings suggest that PARPi resistance can be driven by compensation through derepression of the RecQ-helicase-dependent resection pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings, presented as a suggestion based on inference.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "ed8c042a-6f75-4ab8-bb72-4644660b3b1d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C32",
+      "claim": "An ectopic 10.3 kb, 256-copy LacO array and adjacent HO endonuclease cut site (HOcs) are engineered at a euchromatic (but intergenic) region near Mmf1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, an ectopic 10.3 kb, 256-copy LacO array and adjacent HO endonuclease cut site (HOcs) are engineered at a euchromatic (but intergenic) region near Mmf1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design of the assay system, with reference to a figure showing the genomic location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "ccd7d777-a83a-4c63-8e4a-e72dc6568143",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C33",
+      "claim": "A single, site-specific DSB is generated by regulating the expression of the HO endonuclease under the control of the Ura-inducible Purg1lox RMCE system.",
+      "claim_type": "EXPLICIT",
+      "source": "A single, site-specific DSB is generated by regulating the expression of the HO endonuclease under the control of the Ura-inducible Purg1lox RMCE system (Watson et al., 2008; 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method for DSB induction with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "2e7a7e97-08ae-49ca-8747-57e134e65ac8",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C34",
+      "claim": "The timing of on-target DSB events is visualized by the appearance of a Rad52(Rad22)-mCherry focus that co-localizes with Mmf1:LacO/LacI-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of on-target DSB events is visualized by the appearance of a Rad52(Rad22)-mCherry focus that co-localizes with Mmf1:LacO/LacI-GFP (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method for visualizing DSB events, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "089816af-9840-4045-9323-d47291c713c5",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C35",
+      "claim": "HO endonuclease induction produces on-target Rad52-mCherry foci in S/G2.",
+      "claim_type": "EXPLICIT",
+      "source": "By tracking cell lineages, we see that HO endonuclease induction produces on-target Rad52-mCherry foci in S/G2 (G1 is very short in S. pombe) when the repair machinery is primed for HR (Symington and Gautier, 2011) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "bf651d09-9d44-4771-91c8-3d727f01c63a",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C36",
+      "claim": "G1 is very short in S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "By tracking cell lineages, we see that HO endonuclease induction produces on-target Rad52-mCherry foci in S/G2 (G1 is very short in S. pombe) when the repair machinery is primed for HR (Symington and Gautier, 2011) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about S. pombe cell cycle characteristics, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "3756567e-07c6-42d9-81f0-b825c8c2fbac",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C37",
+      "claim": "On-target Rad52 foci occur in <0.2% of uninduced cells (n = 657).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we do not observe loading of Rad52-mCherry at the LacO/LacI-GFP array in the absence of HO endonuclease expression (on-target Rad52 foci in <0.2% of uninduced cells, n = 657)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "7fdbb47b-7d2d-4990-ac93-fa8a1af7ec91",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C38",
+      "claim": "The LacO array is not sufficient to create a 'fragile site' in S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we do not observe loading of Rad52-mCherry at the LacO/LacI-GFP array in the absence of HO endonuclease expression (on-target Rad52 foci in <0.2% of uninduced cells, n = 657), suggesting that the LacO array is not sufficient to create a 'fragile site' in S. pombe (Jacome and Fernandez-Capetillo, 2011; Saad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observation, with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "7c40e129-0d45-4d82-b365-169890f10313",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C39",
+      "claim": "As resection proceeds, the LacO repeats become single-stranded, disrupting LacI-GFP binding and causing the intensity of the GFP focus to progressively decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "As resection proceeds, the LacO repeats become single-stranded, disrupting LacI-GFP binding and causing the intensity of the GFP focus to progressively decrease (Bell and Lewis, 2001) (Figure 1B, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism underlying the assay readout, with citation and figure support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "a234beb9-a988-4bcf-a74e-7ef25f9fb3a4",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C40",
+      "claim": "Cells lacking Exo1 catalyze the majority of long-range resection in WT S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that loss of GFP focus intensity reflects DSB end resection, we analyzed cells lacking Exo1, which catalyzes the majority of long-range resection in WT S. pombe, with the Rqh1/Sgs1/BLM and Dna2 resection pathway playing a secondary role (Langerak et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of Exo1 in S. pombe resection supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f470a993-5fd4-48d1-969e-8abbc42b3f23",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C41",
+      "claim": "The Rqh1/Sgs1/BLM and Dna2 resection pathway plays a secondary role in long-range resection in WT S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that loss of GFP focus intensity reflects DSB end resection, we analyzed cells lacking Exo1, which catalyzes the majority of long-range resection in WT S. pombe, with the Rqh1/Sgs1/BLM and Dna2 resection pathway playing a secondary role (Langerak et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of the RecQ helicase pathway in S. pombe resection supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "db26be83-850e-4ade-8f6c-fa2ec4e031e3",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C42",
+      "claim": "Cells lacking Exo1 show a persistent LacO/LacI-GFP focus over many hours even after Rad52-mCherry loads.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cells lacking Exo1 show a persistent LacO/LacI-GFP focus over many hours even after Rad52-mCherry loads (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the microscopy assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8049600f-9a8e-4e13-ad8f-2bfb3e066db9",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C43",
+      "claim": "Loss of Exo1 does not influence the induction of the site-specific DSB as measured by quantitative loss of a PCR product across the cut site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, loss of Exo1 does not influence the induction of the site-specific DSB as measured by quantitative loss of a PCR product across the cut site (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the qPCR assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "50aac863-0de2-414e-9166-5510de633e0d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C44",
+      "claim": "The assay only visualizes DSB foci after resection initiation by Ctp1/Sae2/CtIP and MRN/MRX (~100 nt of resection).",
+      "claim_type": "EXPLICIT",
+      "source": "This assay only visualizes DSB foci after resection initiation by Ctp1/Sae2/CtIP and MRN/MRX (~100 nt of resection), as Rad52 loads at DSBs by exchanging with RPA on nascent ,resected ssDNA ends (Jensen and Russell, 2016; Lisby et al., 2004; Ma et al., 2015; Mimitou and Symington, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the assay based on the mechanism of Rad52 loading, with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "4890412d-8f07-48ff-8cb5-d09deb81fc48",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C45",
+      "claim": "Rad52 loads at DSBs by exchanging with RPA on nascent resected ssDNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "This assay only visualizes DSB foci after resection initiation by Ctp1/Sae2/CtIP and MRN/MRX (~100 nt of resection), as Rad52 loads at DSBs by exchanging with RPA on nascent ,resected ssDNA ends (Jensen and Russell, 2016; Lisby et al., 2004; Ma et al., 2015; Mimitou and Symington, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of Rad52 loading supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "799f8023-9e78-4abe-833a-223d3c93d813",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C46",
+      "claim": "Visualization of the Rad52-mCherry focus requires loading of ~30 copies.",
+      "claim_type": "EXPLICIT",
+      "source": "Using quantitative imaging with calibration strains, we estimate that visualization of the Rad52-mCherry focus requires loading of ~30 copies (see Materials and methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "357b8370-43c4-4930-b6e8-3ff21ed40a32",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C47",
+      "claim": "Visualization of the Rad52-mCherry focus represents a Rad52 filament equivalent to at least 90 nt (but likely several hundred nts) of resected ssDNA on each sister in G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using quantitative imaging with calibration strains, we estimate that visualization of the Rad52-mCherry focus requires loading of ~30 copies (see Materials and methods), representing a Rad52 filament equivalent to at least 90 nt (but likely several hundred nts, see below) of resected ssDNA on each sister in G2 (Gibb et al., 2014; Grimme et al., 2010; Kagawa et al., 2002; Singleton et al., 2002; Swartz et al., 2014; Wu and Pollard, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on experimental data and literature values, with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "95af8ba7-c778-43a6-ba14-768dea8530e0",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C48",
+      "claim": "Similar DSB induction frequency and kinetics are observed for ApoI protection (qPCR) and Rad52 focus formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this qPCR-based assay, we observe similar DSB induction frequency and kinetics for ApoI protection and Rad52 focus formation, with an apparent 30\u201360 min delay between ApoI protection (qPCR) and Rad52-mCherry loading, which likely represents the time required for RPA loading and exchange to Rad52 (Lisby et al., 2004) (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing two experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "c8a31983-92b3-4f50-b02b-b6536e120657",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C49",
+      "claim": "There is an apparent 30\u201360 min delay between ApoI protection (qPCR) and Rad52-mCherry loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this qPCR-based assay, we observe similar DSB induction frequency and kinetics for ApoI protection and Rad52 focus formation, with an apparent 30\u201360 min delay between ApoI protection (qPCR) and Rad52-mCherry loading, which likely represents the time required for RPA loading and exchange to Rad52 (Lisby et al., 2004) (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing two experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "aeb31885-0859-4cc6-8e59-35b0dfad9203",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C50",
+      "claim": "The delay between ApoI protection and Rad52-mCherry loading likely represents the time required for RPA loading and exchange to Rad52.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this qPCR-based assay, we observe similar DSB induction frequency and kinetics for ApoI protection and Rad52 focus formation, with an apparent 30\u201360 min delay between ApoI protection (qPCR) and Rad52-mCherry loading, which likely represents the time required for RPA loading and exchange to Rad52 (Lisby et al., 2004) (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the mechanism underlying the observed delay, with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b870b95c-68ea-4300-acda-200c98af720a",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C51",
+      "claim": "The LacI-GFP focus is visible down to a LacO array length of <500 bps under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As the visibility of the LacO array is an important endpoint for this assay, we estimate that the LacI-GFP focus is visible down to a LacO array length of <500 bps under these conditions, based on our ability to robustly detect the focus from a 1 kb LacO array integrated into S. pombe (Figure 1\u2014figure supplement 3D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "627d6dd2-fa22-4bda-b51f-8c51d128bcc4",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C52",
+      "claim": "The median, long-range resection rate in WT cells is 7.6 kb/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all WT cells, we detect a median, long-range resection rate of 7.6 kb/hr (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5fb6b1b2-ce29-40f3-81c0-47e54a952fff",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C53",
+      "claim": "The resection rate measured by this assay is somewhat faster than the resection rates measured by previous population-based assays using qPCR in S. pombe (4 kb/hr) or Southern blot in S. cerevisiae (4.4 kb/hr).",
+      "claim_type": "EXPLICIT",
+      "source": "This rate is somewhat faster than the resection rates measured by previous population-based assays using qPCR in S. pombe (4 kb/hr) or Southern blot in S. cerevisiae (4.4 kb/hr) (Langerak et al., 2011; Zhu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current results with previous studies, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "bc46fe9a-c6e6-4dcf-ace5-7803d5f36dc2",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C54",
+      "claim": "Resection rates that measure both resection initiation and long-range resection give rise to slower rates.",
+      "claim_type": "EXPLICIT",
+      "source": "As this assay isolates the process of long-range resection after Rad52 loading, one possibility is that resection rates that measure both resection initiation and long-range resection give rise to slower rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about why the measured rates differ from previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "3564f667-1bfd-4e63-90c8-79c64756fb6e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C55",
+      "claim": "Any influence of the LacO array on resection rate is minor.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, using the qPCR approach to compare resection upstream of the DSB (which contains the LacO array) and downstream of the DSB (which does not) demonstrates that any influence of the LacO array on resection rate is minor (Figure 1\u2014figure supplement 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the qPCR comparison experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "1a9f40dc-71fe-4ae7-b93f-829783791534",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C56",
+      "claim": "The upper bound of the long-range resection rate for exo1\u2206 cells is ~2.8 kb/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "As resection in the absence of Exo1 is very inefficient (Figure 1C), the rate cannot be determined using this assay. However, we can infer an upper bound of the long-range resection rate of ~2.8 kb/hr for exo1\u2206 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental observation that resection does not complete within the observation window.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "a90ff183-e55e-4c1b-aa85-092c24ded6fc",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C57",
+      "claim": "There is a strong inhibition of resection (comparable to ctp1\u2206 cells) as close as 300 nts from the DSB in cells lacking Exo1 as detected by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note a strong inhibition of resection (comparable to ctp1\u2206 cells) as close as 300 nts from the DSB in cells lacking Exo1 as detected by qPCR (Figure 1\u2014figure supplement 3I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the qPCR experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f2f41234-611a-4f3c-b9f9-b0583a701f89",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C58",
+      "claim": "The strong inhibition of resection in exo1\u2206 cells correlates with a defect in Rad52-mCherry loading in the imaging-based resection assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note a strong inhibition of resection (comparable to ctp1\u2206 cells) as close as 300 nts from the DSB in cells lacking Exo1 as detected by qPCR (Figure 1\u2014figure supplement 3I); this correlates with a defect in Rad52-mCherry loading in the imaging-based resection assay (Figure 1\u2014figure supplement 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation correlating two experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f857c779-3911-4950-adb6-7b891e08bed7",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C59",
+      "claim": "The extent of resection required to form visible Rad52 foci in this assay (~30 molecules; <300 nt) partially requires Exo1-dependent resection in addition to MRN/MRX- and Ctp1/Sae2/CtIP-dependent resection initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation confirms that the extent of resection required to form visible Rad52 foci in this assay discussed above (~30 molecules; <300 nt) partially requires Exo1-dependent resection in addition to MRN/MRX- and Ctp1/Sae2/CtIP-dependent resection initiation (Symington, 2016), consistent with a study in budding yeast suggesting a specific requirement for Exo1 in the early phase of resection post-initiation (Saad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations, with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "cfae21d2-7239-42db-b486-c69dc08f4113",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C60",
+      "claim": "53BP1 (in human cells) and its orthologue Rad9 (in budding yeast) repress resection initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "53BP1 (in human cells) and its orthologue Rad9 (in budding yeast) repress resection initiation (Chapman et al., 2012; Ferrari et al., 2015; Symington, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of 53BP1/Rad9 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "4eabce61-28a1-4e44-9709-5d8e7ec3bcb4",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C61",
+      "claim": "In budding yeast, loss of Rad9 increases resection efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "53BP1 (in human cells) and its orthologue Rad9 (in budding yeast) repress resection initiation (Chapman et al., 2012; Ferrari et al., 2015; Symington, 2016); in budding yeast, loss of Rad9 also increases resection efficiency (Bonetti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of Rad9 in budding yeast supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "34df14c1-ca82-4587-a23e-de8396b6eb2b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C62",
+      "claim": "Loss of Crb2 increases the median rate of resection to 13.9 kb/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the live cell resection assay to fission yeast lacking the orthologous Crb2, we observe a strong increases the median rate of resection to (13.9 kb/hr), with some individual cells demonstrating very fast (~40 kb/hr) resection rates (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "475c892b-de9e-44d9-9691-58a984743f84",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C63",
+      "claim": "Some individual crb2\u2206 cells demonstrate very fast (~40 kb/hr) resection rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the live cell resection assay to fission yeast lacking the orthologous Crb2, we observe a strong increases the median rate of resection to (13.9 kb/hr), with some individual cells demonstrating very fast (~40 kb/hr) resection rates (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "aa04ac9f-c302-427c-9012-83b16bc0602d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C64",
+      "claim": "The duration of LacO array resection is shorter in rev7\u2206 cells than in WT cells (80 min or less).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined how loss of Rev7 influences long-range resection at DSBs during S/G2. The duration of LacO array resection is shorter in rev7\u2206 cells than in WT cells (80 min or less, Figure 2A\u2013B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the microscopy assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "a565b860-528f-42c2-aafe-3bf2a55ab63c",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C65",
+      "claim": "The median long-range resection rate for rev7\u2206 cells is similar to cells lacking Crb2 (10.4 kb/hr).",
+      "claim_type": "EXPLICIT",
+      "source": "In the population, the median long-range resection rate for rev7\u2206 cells is similar to cells lacking Crb2 (10.4 kb/hr, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b953e519-c315-426d-82fb-cb3dd8ddde72",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C66",
+      "claim": "Rev7 functions with Rev3 as part of the polymerase \u03b6 complex in translesion synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As Rev7 also functions with Rev3 as part of the polymerase \u03b6 complex in translesion synthesis, we also confirmed that Rev3 does not affect resection (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the known function of Rev7, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "589f35b0-0b04-47e8-aef3-41756805ff70",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C67",
+      "claim": "Rev3 does not affect resection.",
+      "claim_type": "EXPLICIT",
+      "source": "As Rev7 also functions with Rev3 as part of the polymerase \u03b6 complex in translesion synthesis, we also confirmed that Rev3 does not affect resection (Figure 2C), consistent with previous data showing that repressing resection during HR is a distinct function of Rev7 (Boersma et al., 2015; Rosenberg and Corbett, 2015; Xu et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the microscopy assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "0cc1d62a-664d-4377-aa3f-6540bf339906",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C68",
+      "claim": "Repressing resection during HR is a distinct function of Rev7.",
+      "claim_type": "EXPLICIT",
+      "source": "As Rev7 also functions with Rev3 as part of the polymerase \u03b6 complex in translesion synthesis, we also confirmed that Rev3 does not affect resection (Figure 2C), consistent with previous data showing that repressing resection during HR is a distinct function of Rev7 (Boersma et al., 2015; Rosenberg and Corbett, 2015; Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about Rev7 function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8bcf29b0-b418-4d5a-9a8d-d49b4a35fba9",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C69",
+      "claim": "In rev7\u2206 cells, more chromosomes with DSBs have undergone 3 kb and 13 kb of resection than WT between 90 and 180 min after HO induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the orthogonal qPCR approach (Figure 1\u2014figure supplement 3B), we confirm that in rev7\u2206 cells, more chromosomes with DSBs have undergone 3 kb and 13 kb of resection than WT between 90 and 180 min after HO induction, respectively (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the qPCR experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5ef4ce30-bd2f-4e7f-9d6e-5e756f3075b1",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C70",
+      "claim": "Loss of Rev7 has no influence on the rate of DSB induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, loss of Rev7 has no influence on the rate of DSB induction (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the qPCR experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "de0ddda0-f6bb-4c76-bdae-15c6d60efca9",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C71",
+      "claim": "The rapid long-range resection rate observed in crb2\u2206 or rev7\u2206 cells is entirely Exo1-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the rapid long-range resection rate observed in crb2\u2206 or rev7\u2206 cells is entirely Exo1-independent (Figure 3A\u2013C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the epistasis analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f8425e33-4b4b-456f-93d9-1341daecbc18",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C72",
+      "claim": "The rapid rate of resection in a rev7\u2206 single mutant is entirely dependent on the presence of Rqh1.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, the rapid rate of resection in a rev7\u2206 single mutant is entirely dependent on the presence of Rqh1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the epistasis analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "0e6e61a8-e506-4915-837e-1481d91fa2b6",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C73",
+      "claim": "Loss of Rev7 is able to rescue the severe growth defect of exo1\u2206 cells on rich media plates containing camptothecin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, we find that loss of Rev7 is able to rescue the severe growth defect of exo1\u2206 cells on rich media plates containing camptothecin, consistent with a derepression of Rqh1-dependent resection in the absence of a functional Exo1 pathway (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the growth assay experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "86d85681-ecaa-4bea-b20c-e2e51f024c33",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C74",
+      "claim": "The rescue of exo1\u2206 growth defect by loss of Rev7 is consistent with a derepression of Rqh1-dependent resection in the absence of a functional Exo1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, we find that loss of Rev7 is able to rescue the severe growth defect of exo1\u2206 cells on rich media plates containing camptothecin, consistent with a derepression of Rqh1-dependent resection in the absence of a functional Exo1 pathway (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the growth assay results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "2e85af88-3c3f-4038-b6ce-e6f8fccf6062",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C75",
+      "claim": "The average long-range resection rate in crb2\u2206 cells is not statistically less than that of crb2\u2206rqh1\u2206 cells when correcting for multiple comparisons (p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "When considering only precisely determined resection events, the average long-range resection rate in crb2\u2206 cells is not statically less than that of crb2\u2206rqh1\u2206 cells when correcting for multiple comparisons (p=0.16) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "d3b26eb9-a10c-4813-affb-7707b65f5eb5",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C76",
+      "claim": "In many crb2\u2206rqh1\u2206 cells, resection durations extend beyond the timeframe of data acquisition, suggesting that rapid crb2\u2206 resection also requires Rqh1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in many crb2\u2206rqh1\u2206 cells, resection durations extend beyond the timeframe of data acquisition, suggesting that rapid crb2\u2206 resection also requires Rqh1 (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the microscopy assay with an inference about the role of Rqh1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "82f903f6-f009-42c6-81cb-386228d574b7",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C77",
+      "claim": "Loss of either Rev7 or Crb2 drives a shift in resection pathway mechanism from Exo1 to the RecQ helicase-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly suggest that loss of either Rev7 or Crb2 drives a shift in resection pathway mechanism from Exo1 to the RecQ helicase-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the epistasis analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "4ce250a6-f494-4dcf-b307-4ff7efb2571b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C78",
+      "claim": "crb2\u2206 or rev7\u2206 cells in which the RecQ helicase is derepressed are capable of resection rates in excess of 20 kb/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Exo1-driven resection that dominates in WT cells, crb2\u2206 or rev7\u2206 cells in which the RecQ helicase is derepressed are capable of resection rates in excess of 20 kb/hr, indicating that the RecQ helicases are more capable of driving hyper-resection of DSBs than the Exo1-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b4499176-c894-42ec-9266-180fe7110a53",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C79",
+      "claim": "RecQ helicases are more capable of driving hyper-resection of DSBs than the Exo1-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Exo1-driven resection that dominates in WT cells, crb2\u2206 or rev7\u2206 cells in which the RecQ helicase is derepressed are capable of resection rates in excess of 20 kb/hr, indicating that the RecQ helicases are more capable of driving hyper-resection of DSBs than the Exo1-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of resection rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "85397e8f-9540-44b8-8341-8e9cd2d6e8c6",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C80",
+      "claim": "The strong inhibition of RecQ helicase-dependent resection by Crb2 and Rev7 explains why Rqh1 is not a major player in WT S. pombe resection.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong inhibition of RecQ helicase-dependent resection by Crb2 and Rev7 also explains why Rqh1 is not a major player in WT S. pombe resection, since Rqh1 can be derepressed to such a large extent (by loss of Crb2 or Rev7) that Exo1 becomes dispensable for long-range resection in crb2\u2206exo1\u2206 and rev7\u2206exo1\u2206 cells (Figure 3A-C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "add3c879-4b46-4980-bdbc-8109182455d0",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C81",
+      "claim": "Exo1 becomes dispensable for long-range resection in crb2\u2206exo1\u2206 and rev7\u2206exo1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong inhibition of RecQ helicase-dependent resection by Crb2 and Rev7 also explains why Rqh1 is not a major player in WT S. pombe resection, since Rqh1 can be derepressed to such a large extent (by loss of Crb2 or Rev7) that Exo1 becomes dispensable for long-range resection in crb2\u2206exo1\u2206 and rev7\u2206exo1\u2206 cells (Figure 3A-C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the epistasis analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "0478c47b-7f13-441c-b4e9-3f14d9445554",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C82",
+      "claim": "The microscopy-based assay is capable of quantitatively measuring DSB end resection in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate a microscopy-based assay capable of quantitatively measuring DSB end resection in living cells, specifically the long-range phase of resection catalyzed by Exo1 or Rqh1/Dna2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the assay developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "59c414d5-95ca-4eee-9666-9720f10a6fc4",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C83",
+      "claim": "The assay specifically measures the long-range phase of resection catalyzed by Exo1 or Rqh1/Dna2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate a microscopy-based assay capable of quantitatively measuring DSB end resection in living cells, specifically the long-range phase of resection catalyzed by Exo1 or Rqh1/Dna2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of what the assay measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "390fa2f5-29c5-4678-9f41-c9f262c05115",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C84",
+      "claim": "The assay reveals individual long-range resection rates.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing for the visualization of resection in single cells, this assay reveals individual long-range resection rates, which will provide access to information about the variability in resection efficiency within cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "1b784e06-8eb3-4d6f-a28c-e039b17e899d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C85",
+      "claim": "The assay will provide access to information about the variability in resection efficiency within cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "By allowing for the visualization of resection in single cells, this assay reveals individual long-range resection rates, which will provide access to information about the variability in resection efficiency within cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the assay.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "83eaec85-6c2b-4148-92f0-98d9eceeccd8",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C86",
+      "claim": "The assay allows the tracking of the location of DSB lesions within the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as this assay allows the tracking of the location of DSB lesions within the nucleus, it will be able to uniquely interrogate the role of intranuclear architecture on resection rates and pathways in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "97b04e0a-b69e-4e1b-bd16-e9fe10a68a81",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C87",
+      "claim": "The assay will be able to uniquely interrogate the role of intranuclear architecture on resection rates and pathways in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as this assay allows the tracking of the location of DSB lesions within the nucleus, it will be able to uniquely interrogate the role of intranuclear architecture on resection rates and pathways in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential future applications of the assay.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "a38dfdc5-0bd6-4a32-b057-62e141751cdd",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C88",
+      "claim": "Crb2/Rad9/53BP1 and Rev7 both act as specific inhibitors of RecQ helicase-mediated long-range resection of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "By leveraging the advantages of this LacO-based assay, we show that Crb2/Rad9/53BP1 and Rev7 both act as specific inhibitors of RecQ helicase-mediated long-range resection of DSBs (Figures 2 and 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "6ea9556f-6d33-4e62-8404-d24052b830f1",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C89",
+      "claim": "Loss of resection inhibitors drives a change in resection pathway rather than boosting Exo1-dependent resection.",
+      "claim_type": "EXPLICIT",
+      "source": "By leveraging the advantages of this LacO-based assay, we show that Crb2/Rad9/53BP1 and Rev7 both act as specific inhibitors of RecQ helicase-mediated long-range resection of DSBs (Figures 2 and 3), supporting a model in which loss of these resection inhibitors drives a change in resection pathway rather than boosting Exo1-dependent resection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "54986658-2c2b-4ce7-bb40-ee4f5119a4dd",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C90",
+      "claim": "A previous study identified specific mutations in the budding yeast RecQ helicase, Sgs1, that can disrupt inhibition by the Crb2 orthologue, Rad9, leading to a gain in Sgs1-dependent resection.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a previous study that identified specific mutations in the budding yeast RecQ helicase, Sgs1, that can disrupt inhibition by the Crb2 orthologue, Rad9, leading to a gain in Sgs1-dependent resection (Bonetti et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "4843d84b-dc8c-471d-a52a-c98e9e163d41",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C91",
+      "claim": "Rad9 can antagonize resection at stalled replication forks by repressing a Dna2-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a previous study that identified specific mutations in the budding yeast RecQ helicase, Sgs1, that can disrupt inhibition by the Crb2 orthologue, Rad9, leading to a gain in Sgs1-dependent resection (Bonetti et al., 2015), as well as a recent study highlighting the ability of Rad9 to antagonize resection at stalled replication forks by repressing a Dna2-dependent pathway (Villa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "8469c112-72d3-401c-bdbc-c0cea0d36141",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C92",
+      "claim": "Crb2/Rad9 and Rev7 enforce Exo1-dependent long-range resection in yeasts, which prevents the hyper-resection that is characteristic of the RecQ helicase/Dna2 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating these findings together with this study, we suggest that Crb2/Rad9 and Rev7 enforce Exo1-dependent long-range resection in yeasts, which prevents the hyper-resection that we find is characteristic of the RecQ helicase/Dna2 pathway (Figure 3 and Bonetti et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the integration of current and previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "74492b9c-86ee-4817-a677-354418382df3",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C93",
+      "claim": "Loss of Rev7 is able to restore cell viability of exo1\u0394 cells on media containing camptothecin.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, we find that loss of Rev7 is able to restore cell viability of exo1\u0394 cells on media containing camptothecin, suggesting that derepression of Rqh1 can substitute for loss of Exo1, consistent with the gain in resection rate in cells lacking both Rev7 and Exo1 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the growth assay experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "3b51bf16-d96a-41b3-8cc3-afa449c86f16",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C94",
+      "claim": "Derepression of Rqh1 can substitute for loss of Exo1.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, we find that loss of Rev7 is able to restore cell viability of exo1\u0394 cells on media containing camptothecin, suggesting that derepression of Rqh1 can substitute for loss of Exo1, consistent with the gain in resection rate in cells lacking both Rev7 and Exo1 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the growth assay results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "466d438a-3863-47b0-bb1e-2478860c7b4a",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C95",
+      "claim": "The ability of Rev7 to antagonize RecQ helicase/Dna2-dependent long-range resection in fission yeast is very likely to be conserved in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of Rev7 to antagonize RecQ helicase/Dna2-dependent long-range resection in fission yeast is very likely to be conserved in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the conservation of the mechanism across species.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5472cd35-dbb6-43b7-9c6c-99b97dff4378",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C96",
+      "claim": "Indirect evidence suggests that Rev7 knock-down promotes a gain in resection, as loss of Rev7 rescues CtIP-dependent RPA and Rad51 loading at irradiation-induced DSBs in cells lacking BRCA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, indirect evidence suggests that Rev7 knock-down promotes a gain in resection, as loss of Rev7 rescues CtIP-dependent RPA and Rad51 loading at irradiation-induced DSBs in cells lacking BRCA1 (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b73552e7-d29c-404f-b7fa-7fc7ad262739",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C97",
+      "claim": "BLM (acting with DNA2) is a likely candidate for the resection pathway responsible for the gain in repair factor loading in BRCA1-deficient cells upon Rev7 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the resection pathway responsible for the gain in repair factor loading was not investigated in this study, but our work suggests that BLM (acting with DNA2) is a likely candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "050749c1-1584-4128-a3f2-cb87d8ed6c31",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C98",
+      "claim": "Loss of Rev7 leads to longer 3' single-stranded G-rich overhangs at telomeres in cells with inactivated TRF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rev7 does lead to longer 3' single-stranded G-rich overhangs at telomeres in cells with inactivated TRF2 (a component of the shelterin complex); in this case, only a partial rescue was obtained by co-depletion of CtIP or Exo1 (Boersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "727e847f-3534-4e5b-bd1b-5a6fd3ac5ebf",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C99",
+      "claim": "Only a partial rescue of telomere overhang length was obtained by co-depletion of CtIP or Exo1 in cells with inactivated TRF2 and Rev7 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rev7 does lead to longer 3' single-stranded G-rich overhangs at telomeres in cells with inactivated TRF2 (a component of the shelterin complex); in this case, only a partial rescue was obtained by co-depletion of CtIP or Exo1 (Boersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous research supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "bf87abab-ea49-4696-a175-32d2bb5086c9",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C100",
+      "claim": "The partial rescue of telomere overhang length likely reflects contributions of BLM and DNA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rev7 does lead to longer 3' single-stranded G-rich overhangs at telomeres in cells with inactivated TRF2 (a component of the shelterin complex); in this case, only a partial rescue was obtained by co-depletion of CtIP or Exo1 (Boersma et al., 2015). Again, we hypothesize that this finding likely reflects contributions of BLM and DNA2, although it remains possible that the impact of Rev7 on long-range resection during G2 figures more prominently in fission yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "106a550c-ebdf-48ef-becc-c6566327ca13",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C101",
+      "claim": "It remains possible that the impact of Rev7 on long-range resection during G2 figures more prominently in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, we hypothesize that this finding likely reflects contributions of BLM and DNA2, although it remains possible that the impact of Rev7 on long-range resection during G2 figures more prominently in fission yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of an alternative possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "9cca6ac2-7ab2-4d98-b13b-fcd136ac9a2b",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C102",
+      "claim": "The findings suggest a new mechanism by which loss of either 53BP1 or Rev7 allows BRCA1-/- p53-/- cells to become resistant to PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, our findings suggest a new mechanism by which loss of either 53BP1 or Rev7 allows BRCA1-/- p53-/- cells to become resistant to PARP inhibitors (Jaspers et al., 2013; Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings, with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5d29396c-42f5-4736-8aa2-2d2fc3ea6609",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C103",
+      "claim": "It has been proposed previously that the compromised CtIP- and Exo1-dependent resection in BRCA1-deficient cells can be restored by loss of 53BP1 or Rev7.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed previously that the compromised CtIP- and Exo1-dependent resection in BRCA1-deficient cells can be restored by loss of 53BP1 or Rev7 (Boersma et al., 2015; Xu et al., 2015), thereby overcoming the increased DSB load caused by PARP inhibitors (Polato et al., 2014; Tomimatsu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous models supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "7c70488b-7aae-44ce-be71-dbaae93eaad7",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C104",
+      "claim": "Loss of 53BP1 or Rev7 can overcome the increased DSB load caused by PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed previously that the compromised CtIP- and Exo1-dependent resection in BRCA1-deficient cells can be restored by loss of 53BP1 or Rev7 (Boersma et al., 2015; Xu et al., 2015), thereby overcoming the increased DSB load caused by PARP inhibitors (Polato et al., 2014; Tomimatsu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous models supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "52e21502-f257-42ad-b0cb-bf57b4942141",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C105",
+      "claim": "Not just the efficiency, but also the molecular mechanism of resection is altered upon loss of Crb2/53BP1 or Rev7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that not just the efficiency, but also the molecular mechanism of resection is altered upon loss of Crb2/53BP1 or Rev7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b18a7abd-c62d-4083-b5f0-111c93909682",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C106",
+      "claim": "RecQ helicases, when paired with DNA2, are capable of exceptionally fast resection in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RecQ helicases, when paired with DNA2, are capable of exceptionally fast resection in vitro (Niu et al., 2010), which when derepressed by loss of 53BP1 or Rev7 could cause extended tracts of ssDNA several kb long, promoting further genome instability (Hicks et al., 2010; Ochs et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about in vitro biochemical properties supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "477dd82c-96a9-4c71-929e-9efe338e7039",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C107",
+      "claim": "Derepression of RecQ helicases by loss of 53BP1 or Rev7 could cause extended tracts of ssDNA several kb long, promoting further genome instability.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RecQ helicases, when paired with DNA2, are capable of exceptionally fast resection in vitro (Niu et al., 2010), which when derepressed by loss of 53BP1 or Rev7 could cause extended tracts of ssDNA several kb long, promoting further genome instability (Hicks et al., 2010; Ochs et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the consequences of RecQ helicase derepression, with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "2dfab87a-4c4f-4d03-b8bf-8f8afc3cfc72",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C108",
+      "claim": "The data point to a hyper-resection phenotype upon loss of either Crb2 or Rev7.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RecQ helicases, when paired with DNA2, are capable of exceptionally fast resection in vitro (Niu et al., 2010), which when derepressed by loss of 53BP1 or Rev7 could cause extended tracts of ssDNA several kb long, promoting further genome instability (Hicks et al., 2010; Ochs et al., 2016); indeed, our data point to such a hyper-resection phenotype upon loss of either Crb2 or Rev7 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f657e7db-ec43-401d-a3ab-1d297929496e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C109",
+      "claim": "Inhibitors of RecQ helicases could potentially re-sensitize BRCA1-null cells to PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our results suggest that inhibitors of RecQ helicases could potentially re-sensitize BRCA1-null cells to PARP inhibitors, as this would make them both Exo1- and RecQ helicase-deficient (Aggarwal et al., 2013; Yazinski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic applications, with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "99c0b81c-5992-458a-b5ce-c66845e66cb8",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "claim_id": "C110",
+      "claim": "Making BRCA1-null cells both Exo1- and RecQ helicase-deficient could re-sensitize them to PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our results suggest that inhibitors of RecQ helicases could potentially re-sensitize BRCA1-null cells to PARP inhibitors, as this would make them both Exo1- and RecQ helicase-deficient (Aggarwal et al., 2013; Yazinski et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic applications, with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa2188df-0298-437d-a9dd-54cf143631fa",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel single-cell microscopy assay was developed to quantitatively measure long-range DSB end resection rates in living S. pombe cells. The assay uses a LacO/LacI-GFP array adjacent to an HO endonuclease cut site, where resection through the array causes progressive loss of GFP signal, while Rad52-mCherry loading marks DSB formation. The assay measures resection from ~100-300 nt (after initiation) through 13.9 kb at rates of 7.6 kb/hr (median) in WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The assay design is well-documented with multiple validation experiments (C37, C38, C42, C43, C48, C55) showing specificity, reproducibility, and minimal artifacts. Quantitative calibrations establish detection thresholds (C46, C47, C51), and the measured WT resection rate (C52) is consistent with prior studies while being somewhat faster, which is explained by the assay measuring only long-range resection after Rad52 loading (C53, C54). The assay's capabilities and limitations are clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exo1 is the primary nuclease responsible for long-range resection in WT S. pombe, with the Rqh1/Dna2 pathway playing a secondary role. Loss of Exo1 severely impairs resection, preventing completion through the 10.3 kb LacO array within 5 hours and causing defects in both early resection (~300 nt) and Rad52 loading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lines of evidence support Exo1's dominant role: exo1\u0394 cells show persistent LacO/LacI-GFP foci (C42), resection rates <2.8 kb/hr (C56), strong inhibition at 300 nt from the DSB (C57), and defective Rad52 loading (C58). These observations are consistent with prior knowledge (C40, C41) and demonstrate that the assay can distinguish between resection pathways. The conclusion that Exo1 is required for early post-initiation resection (C59) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of Crb2 (53BP1 orthologue) or Rev7 significantly increases long-range resection rates. Crb2\u0394 cells show median resection rates of 13.9 kb/hr with some cells reaching ~40 kb/hr, while rev7\u0394 cells show median rates of 10.4 kb/hr. This increased resection is independent of Rev7's role in translesion synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The increased resection rates in crb2\u0394 and rev7\u0394 cells are well-documented through both microscopy (C62, C63, C64, C65) and orthogonal qPCR validation (C69). The control showing Rev3 does not affect resection (C67) confirms this is a distinct function of Rev7. DSB induction is unaffected by Rev7 loss (C70), ruling out indirect effects. The quantitative measurements are consistent across methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "91da4180-354f-4159-936f-d8dc3443b2c3",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Crb2 and Rev7 specifically inhibit the RecQ helicase (Rqh1)-dependent resection pathway rather than Exo1-dependent resection. The rapid resection in crb2\u0394 or rev7\u0394 cells is entirely Exo1-independent but completely dependent on Rqh1, and can achieve rates >20 kb/hr\u2014approximately twice as fast as Exo1-dependent resection. This explains why Rqh1 plays only a minor role in WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The epistasis analysis provides strong evidence: rapid resection in crb2\u0394 or rev7\u0394 cells is Exo1-independent (C71) but Rqh1-dependent (C72), and rev7\u0394 rescues the growth defect of exo1\u0394 cells (C73, C74). The hyper-resection rates >20 kb/hr (C78) demonstrate RecQ helicases are more capable than Exo1 (C79). The model that Crb2/Rev7 enforce Exo1-dependent resection by repressing Rqh1 (C77, C80, C81) is well-supported by the genetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "95e3624f-4059-4348-b652-1d707317ac1e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The role of Rqh1 in rapid resection in crb2\u0394 cells is less clear than in rev7\u0394 cells. While the average resection rate in crb2\u0394 cells is not statistically different from crb2\u0394rqh1\u0394 cells (p=0.16), many crb2\u0394rqh1\u0394 cells show extended resection durations beyond the observation window, suggesting Rqh1 is still required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The statistical analysis (C75) shows no significant difference when considering only precisely determined events, but this may be due to limited statistical power. The observation that many crb2\u0394rqh1\u0394 cells have incomplete resection (C76) suggests Rqh1 is required, but the incomplete data acquisition prevents definitive quantification. Additional experiments with longer observation times or alternative approaches would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "dcd5f19e-c561-498b-919b-79ac5b276e1d",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Crb2/Rad9/53BP1 and Rev7 act as specific inhibitors of RecQ helicase-mediated long-range resection, driving a mechanistic shift in resection pathway rather than simply modulating resection efficiency. Loss of these inhibitors changes both the efficiency and molecular mechanism of resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion (C88, C89, C105) is well-supported by the epistasis data showing pathway-specific effects. The model that these factors enforce Exo1-dependent resection to prevent RecQ helicase-mediated hyper-resection (C92) is consistent with prior studies in budding yeast and integrates the current findings effectively. The conclusion represents a mechanistic advance beyond previous models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings suggest a new mechanism for PARPi resistance in BRCA1-deficient cells: loss of 53BP1 or Rev7 allows 'rewiring' to employ an Exo1-independent, RecQ helicase-dependent hyper-resection pathway, compensating for compromised BRCA1/Exo1-dependent resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the S. pombe data clearly demonstrate pathway switching upon loss of Crb2/Rev7, the connection to PARPi resistance in mammalian BRCA1-deficient cells (C11, C31, C102) is speculative and based on indirect evidence. The prior model (C103, C104) is cited but not directly tested. The proposed mechanism is plausible given that BRCA1 is tied to Exo1-dependent resection (C30), but experimental validation in mammalian cells is needed. The claim represents an important hypothesis but requires additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ability of Rev7 to antagonize RecQ helicase/Dna2-dependent resection is likely conserved in mammalian cells, with BLM/DNA2 as the probable pathway. Indirect evidence from prior studies shows Rev7 loss rescues resection in BRCA1-deficient cells and increases telomere overhangs, with only partial rescue by CtIP or Exo1 depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The conservation argument (C95) is speculative, though reasonable. The cited evidence (C96, C98, C99) from prior studies is indirect and does not directly test the RecQ helicase pathway. The hypothesis that BLM/DNA2 accounts for the partial rescue (C97, C100) is plausible but untested. The acknowledgment of alternative possibilities (C101) is appropriate. This represents a reasonable extrapolation but requires direct experimental validation in mammalian systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "af4064a9-5b52-4c28-bc22-822da50ba040",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Derepression of RecQ helicases by loss of 53BP1 or Rev7 could cause extended ssDNA tracts several kb long, promoting genome instability. The data show a hyper-resection phenotype in crb2\u0394 or rev7\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The hyper-resection phenotype is directly demonstrated by the resection rate data (C108, referencing Figure 2C showing rates >20 kb/hr). The speculation about genome instability consequences (C107) is reasonable given the in vitro capabilities of RecQ helicases (C106) and is supported by citations. While the genome instability consequences are not directly tested in this study, the hyper-resection phenotype itself is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "ae4250dc-41fb-40ba-b4b7-274b243dbc95",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RecQ helicase inhibitors could potentially re-sensitize BRCA1-null cells to PARP inhibitors by making them deficient in both Exo1 and RecQ helicase pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a therapeutic speculation (C109, C110) based on the pathway switching mechanism demonstrated in S. pombe. While the logic is sound\u2014blocking both resection pathways should prevent resistance\u2014this has not been tested experimentally. The citations provided support the general concept but not this specific application. This represents a testable hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "86b416f0-00be-43ce-a4b3-0311d65137ab",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The assay will provide access to information about variability in resection efficiency within cell populations and will be able to interrogate the role of intranuclear architecture on resection rates and pathways in the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are forward-looking statements about potential future applications (C85, C87) rather than demonstrated results. While the assay does reveal individual resection rates (C84) and can track DSB location (C86), the claims about future capabilities are speculative. These represent reasonable expectations for future work but are not current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about DNA repair, PARPi resistance mechanisms, resection pathways, and the roles of 53BP1, Rev7, Exo1, and RecQ helicases in DSB repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations. They provide necessary context for the study but are not novel findings. The claims accurately represent the current understanding and prior work, establishing the knowledge gap that this study addresses (C5, C26).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "b837a6a7-b9c5-4c81-8156-5479f27104c1",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The resection rate measured by this assay (7.6 kb/hr) is somewhat faster than previous population-based assays (4-4.4 kb/hr), possibly because this assay isolates long-range resection after Rad52 loading rather than measuring both initiation and long-range resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to prior studies (C53) is accurate and appropriately cited. The explanation for the difference (C54) is reasonable speculation based on the assay design\u2014measuring only post-initiation long-range resection should yield faster rates than methods that include the initiation phase. This represents appropriate contextualization of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    },
+    {
+      "id": "f86d20a8-4d64-422c-8565-5df7f3c7cf75",
+      "content_id": "3e13aba2-d998-40a3-bbb4-bbfa1b7f7da9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Loss of Rev7 restores viability of exo1\u0394 cells on camptothecin-containing media, suggesting that derepression of Rqh1 can substitute for loss of Exo1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The growth assay data (C93) directly demonstrate rescue of the exo1\u0394 growth defect by rev7\u0394. The interpretation that this reflects Rqh1 derepression (C94) is consistent with the resection rate data showing rapid Rqh1-dependent resection in rev7\u0394exo1\u0394 cells. This provides independent functional validation of the pathway switching mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:25:18.136587Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a8b423f8-22b4-4f51-bf81-832df57b0b05",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "ed8c042a-6f75-4ab8-bb72-4644660b3b1d",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "ccd7d777-a83a-4c63-8e4a-e72dc6568143",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "2e7a7e97-08ae-49ca-8747-57e134e65ac8",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "089816af-9840-4045-9323-d47291c713c5",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "3756567e-07c6-42d9-81f0-b825c8c2fbac",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "7fdbb47b-7d2d-4990-ac93-fa8a1af7ec91",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "7c40e129-0d45-4d82-b365-169890f10313",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "db26be83-850e-4ade-8f6c-fa2ec4e031e3",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "8049600f-9a8e-4e13-ad8f-2bfb3e066db9",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "50aac863-0de2-414e-9166-5510de633e0d",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "799f8023-9e78-4abe-833a-223d3c93d813",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "357b8370-43c4-4930-b6e8-3ff21ed40a32",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "95af8ba7-c778-43a6-ba14-768dea8530e0",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "c8a31983-92b3-4f50-b02b-b6536e120657",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "aeb31885-0859-4cc6-8e59-35b0dfad9203",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "b870b95c-68ea-4300-acda-200c98af720a",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "627d6dd2-fa22-4bda-b51f-8c51d128bcc4",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "3564f667-1bfd-4e63-90c8-79c64756fb6e",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "0478c47b-7f13-441c-b4e9-3f14d9445554",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "59c414d5-95ca-4eee-9666-9720f10a6fc4",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "390fa2f5-29c5-4678-9f41-c9f262c05115",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "83eaec85-6c2b-4148-92f0-98d9eceeccd8",
+      "result_id": "aa2188df-0298-437d-a9dd-54cf143631fa"
+    },
+    {
+      "claim_id": "a234beb9-a988-4bcf-a74e-7ef25f9fb3a4",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "f470a993-5fd4-48d1-969e-8abbc42b3f23",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "db26be83-850e-4ade-8f6c-fa2ec4e031e3",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "1a9f40dc-71fe-4ae7-b93f-829783791534",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "a90ff183-e55e-4c1b-aa85-092c24ded6fc",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "f2f41234-611a-4f3c-b9f9-b0583a701f89",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "f857c779-3911-4950-adb6-7b891e08bed7",
+      "result_id": "5f4e887d-caab-42e3-b4e8-41d12ffc59b9"
+    },
+    {
+      "claim_id": "34df14c1-ca82-4587-a23e-de8396b6eb2b",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "475c892b-de9e-44d9-9691-58a984743f84",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "aa04ac9f-c302-427c-9012-83b16bc0602d",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "a565b860-528f-42c2-aafe-3bf2a55ab63c",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "589f35b0-0b04-47e8-aef3-41756805ff70",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "8bcf29b0-b418-4d5a-9a8d-d49b4a35fba9",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "5ef4ce30-bd2f-4e7f-9d6e-5e756f3075b1",
+      "result_id": "ed22a560-3d94-44e2-8e4d-76a86ace8a6d"
+    },
+    {
+      "claim_id": "de0ddda0-f6bb-4c76-bdae-15c6d60efca9",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "f8425e33-4b4b-456f-93d9-1341daecbc18",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "0e6e61a8-e506-4915-837e-1481d91fa2b6",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "86d85681-ecaa-4bea-b20c-e2e51f024c33",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "82f903f6-f009-42c6-81cb-386228d574b7",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "4ce250a6-f494-4dcf-b307-4ff7efb2571b",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "b4499176-c894-42ec-9266-180fe7110a53",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "85397e8f-9540-44b8-8341-8e9cd2d6e8c6",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "add3c879-4b46-4980-bdbc-8109182455d0",
+      "result_id": "91da4180-354f-4159-936f-d8dc3443b2c3"
+    },
+    {
+      "claim_id": "2e85af88-3c3f-4038-b6ce-e6f8fccf6062",
+      "result_id": "95e3624f-4059-4348-b652-1d707317ac1e"
+    },
+    {
+      "claim_id": "d3b26eb9-a10c-4813-affb-7707b65f5eb5",
+      "result_id": "95e3624f-4059-4348-b652-1d707317ac1e"
+    },
+    {
+      "claim_id": "a38dfdc5-0bd6-4a32-b057-62e141751cdd",
+      "result_id": "dcd5f19e-c561-498b-919b-79ac5b276e1d"
+    },
+    {
+      "claim_id": "6ea9556f-6d33-4e62-8404-d24052b830f1",
+      "result_id": "dcd5f19e-c561-498b-919b-79ac5b276e1d"
+    },
+    {
+      "claim_id": "8469c112-72d3-401c-bdbc-c0cea0d36141",
+      "result_id": "dcd5f19e-c561-498b-919b-79ac5b276e1d"
+    },
+    {
+      "claim_id": "52e21502-f257-42ad-b0cb-bf57b4942141",
+      "result_id": "dcd5f19e-c561-498b-919b-79ac5b276e1d"
+    },
+    {
+      "claim_id": "68d5cd73-3d95-4071-8695-40916e49464c",
+      "result_id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e"
+    },
+    {
+      "claim_id": "84c100bb-c707-4f7f-aa18-7ac2755af38b",
+      "result_id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e"
+    },
+    {
+      "claim_id": "9cca6ac2-7ab2-4d98-b13b-fcd136ac9a2b",
+      "result_id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e"
+    },
+    {
+      "claim_id": "5d29396c-42f5-4736-8aa2-2d2fc3ea6609",
+      "result_id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e"
+    },
+    {
+      "claim_id": "7c70488b-7aae-44ce-be71-dbaae93eaad7",
+      "result_id": "2b813cd6-50e6-4a6d-b33b-999b67425a3e"
+    },
+    {
+      "claim_id": "466d438a-3863-47b0-bb1e-2478860c7b4a",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "5472cd35-dbb6-43b7-9c6c-99b97dff4378",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "b73552e7-d29c-404f-b7fa-7fc7ad262739",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "050749c1-1584-4128-a3f2-cb87d8ed6c31",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "727e847f-3534-4e5b-bd1b-5a6fd3ac5ebf",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "bf87abab-ea49-4696-a175-32d2bb5086c9",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "106a550c-ebdf-48ef-becc-c6566327ca13",
+      "result_id": "ee031e80-6cbc-469d-8672-b9a38a5aa7b7"
+    },
+    {
+      "claim_id": "b18a7abd-c62d-4083-b5f0-111c93909682",
+      "result_id": "af4064a9-5b52-4c28-bc22-822da50ba040"
+    },
+    {
+      "claim_id": "477dd82c-96a9-4c71-929e-9efe338e7039",
+      "result_id": "af4064a9-5b52-4c28-bc22-822da50ba040"
+    },
+    {
+      "claim_id": "2dfab87a-4c4f-4d03-b8bf-8f8afc3cfc72",
+      "result_id": "af4064a9-5b52-4c28-bc22-822da50ba040"
+    },
+    {
+      "claim_id": "f657e7db-ec43-401d-a3ab-1d297929496e",
+      "result_id": "ae4250dc-41fb-40ba-b4b7-274b243dbc95"
+    },
+    {
+      "claim_id": "99c0b81c-5992-458a-b5ce-c66845e66cb8",
+      "result_id": "ae4250dc-41fb-40ba-b4b7-274b243dbc95"
+    },
+    {
+      "claim_id": "1b784e06-8eb3-4d6f-a28c-e039b17e899d",
+      "result_id": "86b416f0-00be-43ce-a4b3-0311d65137ab"
+    },
+    {
+      "claim_id": "97b04e0a-b69e-4e1b-bd16-e9fe10a68a81",
+      "result_id": "86b416f0-00be-43ce-a4b3-0311d65137ab"
+    },
+    {
+      "claim_id": "7744b776-ec8f-42de-80ca-f26594b98de3",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "b347b275-b01b-4935-83a3-b88d3d775db7",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "0c59a9d5-7ce7-46eb-9ee6-d909bce3eb67",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "e29f8697-ba40-4109-b6a9-b708cf45a98b",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "80eb45e9-2b48-4b23-af33-a8d784917e6e",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "79a79607-8d64-4fb1-ba65-20e24190549c",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "8c04a063-cdb2-4123-bc0d-bc7174387ea8",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "2eaeb6cd-cd85-4528-b5b2-02ba5bca5a4e",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "c76c5c25-7927-48e2-b45c-0662d4dc7657",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "82004e7b-7fcf-49d1-a8c9-b375f743ddac",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "bc427b94-e0e7-4de5-b2f5-19abc4d52e21",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "717bd870-aaab-4b27-ba10-67b0a471062b",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "b42ebf5a-921f-4c4c-af3d-1349c5a4794d",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "194d63ca-47c1-47d5-8c40-7854c66bfb3a",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "e2f3f7ac-94ab-4bfa-b587-087398f0966b",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "8a48520c-3c84-47ce-a520-79b1d574bac0",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "e6f87cf0-8636-4cd0-b2e1-5fc4ae94da53",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "e18931d0-b176-4089-96dc-b7fd153943d1",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "cac7a21d-7e02-4177-b47b-16317ccd9f50",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "5c80113d-b965-4223-b2b5-9e1a83c3f1df",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "d3f54d1e-6d05-423b-bb5c-0990f3bd642e",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "bf651d09-9d44-4771-91c8-3d727f01c63a",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "4890412d-8f07-48ff-8cb5-d09deb81fc48",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "cfae21d2-7239-42db-b486-c69dc08f4113",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "4eabce61-28a1-4e44-9709-5d8e7ec3bcb4",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "b953e519-c315-426d-82fb-cb3dd8ddde72",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "0cc1d62a-664d-4377-aa3f-6540bf339906",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "54986658-2c2b-4ce7-bb40-ee4f5119a4dd",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "4843d84b-dc8c-471d-a52a-c98e9e163d41",
+      "result_id": "fd2e8bb5-b21f-41eb-a1b2-fa684509898a"
+    },
+    {
+      "claim_id": "5fb6b1b2-ce29-40f3-81c0-47e54a952fff",
+      "result_id": "b837a6a7-b9c5-4c81-8156-5479f27104c1"
+    },
+    {
+      "claim_id": "bc46fe9a-c6e6-4dcf-ace5-7803d5f36dc2",
+      "result_id": "b837a6a7-b9c5-4c81-8156-5479f27104c1"
+    },
+    {
+      "claim_id": "74492b9c-86ee-4817-a677-354418382df3",
+      "result_id": "f86d20a8-4d64-422c-8565-5df7f3c7cf75"
+    },
+    {
+      "claim_id": "3b51bf16-d96a-41b3-8cc3-afa449c86f16",
+      "result_id": "f86d20a8-4d64-422c-8565-5df7f3c7cf75"
+    }
+  ],
+  "comparisons": []
+}

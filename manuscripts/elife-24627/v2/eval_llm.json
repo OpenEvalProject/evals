@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Growth-phase Dictyostelium exhibit highly sensitive chemotaxis to folate with an EC50 of ~5 nM, defining detection sensitivity <0.5 nM. This response requires G\u03b2 (essential for all GPCR signaling) and the folate receptor GrlL/fAR1, but not the cAMP-responsive G\u03b12 subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 provide converging evidence from dose-response curves (Figure 1C), genetic knockouts (Figure 1D), and receptor-specific dependencies. The EC50 determination is based on curve fitting with appropriate controls. However, the <0.5 nM sensitivity claim (C20) is an extrapolation from EC50 data rather than direct measurement, and no statistical significance testing is reported for mutant comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Dictyostelium exhibit precise dose-dependent chemotaxis to live Bacillus subtilis (5\u00d710^4 to 5\u00d710^7 bacteria/well), with folate as the primary chemoattractant. Cells lacking G\u03b2 show no response, while G\u03b14-null cells show minimal chemotaxis, and G\u03b12-null cells respond fully.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 demonstrate bacterial chemotaxis with appropriate genetic controls (Figure 2A-B). The conclusion that folate is the primary chemoattractant (C36) is supported by G\u03b14 dependency and later competitive assays (Figure 5A), though it remains an inference. The lack of saturation at high bacterial numbers (C32) is noted but not fully explored experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Chemotaxis to Klebsiella planticola occurs in a similar dose range as Bacillus subtilis, but both folate-responsive G\u03b14 and cAMP-responsive G\u03b12 mutants retain partial sensitivity, indicating that both folate and cAMP contribute to directional sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 show differential G-protein dependencies for Klebsiella versus Bacillus (Figure 2C-D), supporting dual chemoattractant secretion. This is further validated by competitive assays (Figure 5B) and cAMP immunoassay (C62). The inference of dual chemoattractant contribution (C39) is well-supported by converging genetic and biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Growth-phase Dictyostelium exhibit rapid, robust chemotaxis to cAMP with EC50 ~6 nM, a response not previously observed. This requires G\u03b2, G\u03b12, and CAR1, but not G\u03b14 or GrlL/fAR1. The same cell population responds to both folate and cAMP, indicating no developmental shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 establish a novel finding contradicting prior literature (C40, citing Veltman et al., 2014). The dose-response data (Figure 3A-B) and genetic dependencies (Figure 3C) are clear. The claim that cells haven't undergone developmental shift (C43) is supported by dual responsiveness but lacks molecular markers of developmental state. This is a significant discovery but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "At sub-optimal concentrations (<50 nM), folate and cAMP exhibit enhanced chemotactic effects compared to either alone, but at near-maximal doses (~500 nM), minimal additional chemotaxis occurs with a second chemoattractant, indicating common rate-limiting downstream components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate additive effects at low concentrations and saturation at high concentrations (Figure 4A, supplements). The conclusion of common downstream components (C50) is a reasonable inference supported by prior biochemical work (Liao et al., 2013). However, the claim that effects are 'not strictly additive' (C49) lacks quantitative analysis or statistical modeling to define expected versus observed additivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Adaptation pathways for folate and cAMP function independently: cells adapted to saturating folate remain responsive to cAMP and vice versa, indicating ligand-selective adaptation upstream of common downstream effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide strong evidence for independent adaptation mechanisms through competitive assays (Figure 4B, supplements). The reciprocal cross-adaptation experiments are well-controlled. The conclusion (C55) is supported by both current data and prior biochemical studies (Liao et al., 2013). This mechanistic insight is important for understanding multi-ligand sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Competitive assays confirm that folate is the primary Bacillus subtilis chemoattractant (minimal chemotaxis with folate competitor), while both folate and cAMP contribute to Klebsiella planticola sensing (partial inhibition by either competitor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 use competitive adaptation to identify bacterial chemoattractants (Figure 5A-B). This approach is elegant and well-controlled, providing functional validation of the dual chemoattractant hypothesis for Klebsiella. The results are consistent with G-protein dependency data (C34-C39) and cAMP immunoassay (C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Klebsiella planticola secrete chemoattractants in a time- and density-dependent manner, accumulating ~20-30 nM cAMP from 5\u00d710^7 cells in 2 hours, as measured by pERK2 activation and immunoassay. Bacillus subtilis do not secrete detectable cAMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide biochemical validation of bacterial chemoattractant secretion (Figure 6A-B). The time-course and density-dependence are well-documented. The cAMP quantification by immunoassay (C62) provides direct evidence. The negative result for Bacillus cAMP (C63) supports the folate-only model. Controls for media carryover (C60) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Dictyostelium are 5-10 times more sensitive for chemotactic migration (EC50 ~5-6 nM) than for biochemical pathway activation (EC50 ~20-45 nM for pPKBR1/pERK2), suggesting that collective signaling pathways amplify chemotactic sensitivity beyond individual biochemical readouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 compare chemotaxis and biochemical sensitivities (Figures 1C, 3B, 6C). The modified biochemical assay to minimize ligand degradation is methodologically sound. The 5-10x sensitivity difference is clearly demonstrated. The interpretation (C66, C69) that multiple pathways collectively enhance chemotaxis is reasonable but remains somewhat speculative without direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Phagocytosis of pHrodo-labeled E. coli is not substantially regulated by chemoattractant receptors. Cells lacking G\u03b14 show no significant inhibition, and matched pairs of receptor-null versus receptor-expressing cells (grlL/fAR1 and CAR1) exhibit identical phagocytic rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 use genetically matched cell lines with and without specific receptors (Figure 7A-B), providing strong evidence for independence of phagocytosis from chemoreceptor signaling. The experimental design with rescued cell lines is rigorous. However, the claim about G\u03b2 (C75-C76) shows minimal phagocytosis, contradicting the receptor-independence conclusion and suggesting G\u03b2 may have receptor-independent roles in phagocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Using live pHrodo-labeled Bacillus subtilis, GrlL/fAR1-expressing cells chemotax robustly while grlL/fAR1-nulls are completely insensitive, yet both exhibit identical phagocytosis rates, definitively separating chemotaxis from phagocytosis for folate-secreting bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 address potential concerns about E. coli viability and multiple chemoattractants by using live Bacillus (folate-only) (Figure 7C). This experiment provides the strongest evidence for chemotaxis-phagocytosis independence. The complete loss of chemotaxis with preserved phagocytosis in receptor-null cells is compelling. This is a key result of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Pre-stimulation of WT cells with cAMP or folate (mimicking chemotactic activation) does not enhance phagocytosis rates compared to non-stimulated controls, indicating that chemotactic activation does not inherently potentiate phagocytic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 test whether chemotactic activation primes cells for phagocytosis (Figure 8). The experimental design with pulsed stimulation is appropriate. The negative result strengthens the independence model. However, the experiment only tests one stimulation protocol; other activation conditions might yield different results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "WT and grlL/fAR1-null cells phagocytose latex beads identically, regardless of whether beads are coated with ~20,000 folate ligands per bead. WT cells do not differentially recognize folate-coated versus non-coated beads, indicating that chemo-sensing of surface ligands does not contribute to phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 use synthetic beads with controlled folate coating (Figures 9A-C, supplements 1-2). The near 100% co-localization of pHrodo and folate-FITC (C89) validates uniform coating. The identical phagocytosis rates across all conditions (C87, C90, C92) provide strong evidence that surface-bound folate is not recognized for phagocytosis. This complements the bacterial phagocytosis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Dictyostelium demonstrate high sensitivity to multiple bacterially-secreted chemoattractants, with signaling networks utilizing independent upstream adaptive mechanisms but common downstream targets, amplifying detection while strengthening discrimination. Chemoattractant receptor-signaling is not essential for bacterial phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 represent the main conclusions stated in the abstract, which are well-supported by the collective experimental evidence from chemotaxis assays (Figures 1-5), additive/competitive experiments (Figure 4), and phagocytosis studies (Figures 7-9). Each component claim is validated by multiple independent experiments with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "Dictyostelium and mammalian phagocytes share mechanistic pathways for chemotaxis and phagocytosis, including GPCRs, downstream signaling components, and similar drug sensitivities, supporting Dictyostelium as a model for innate immunity despite ~1 billion years of evolutionary separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11, C13-C16, C18 establish the rationale for using Dictyostelium as a model system. These are well-supported by extensive literature citations and represent established knowledge in the field. The evolutionary conservation argument is important context but not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C29"
+    ],
+    "result": "G\u03b14 is generally considered essential for folate responses with possible compensatory actions by other G\u03b1 proteins. Chemotaxis to folate is significantly reduced but not eliminated in G\u03b14-null cells. G\u03b12 is a cAMP receptor-coupled subunit, and CAR1 is the primary cAMP receptor for developmental chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C26, C29 describe established receptor-G protein relationships supported by literature (Natarajan et al., 2000; Kumagai et al., 1989; McMains et al., 2008). The observation of residual folate chemotaxis in G\u03b14-null cells (C24, Figure 1D) is consistent with prior suggestions of compensatory mechanisms. These are confirmatory findings that validate the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PIP3-signaling via PI3K may be associated with chemotaxis, macropinocytosis, and phagocytosis, and is required for macropinocytosis, but appears largely dispensable for chemotaxis and bacterial phagocytosis. Folate receptor-null cells show only 20% reduced bacterial growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 summarize literature on PIP3 signaling (multiple citations) and provide context for why the authors did not focus on this pathway. The 20% growth rate reduction (C73, citing Pan et al., 2016) is noted as inconsistent with a major role for folate receptors in phagocytosis. These are important contextual claims that frame the Discussion but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Secreted chemoattractant-degrading enzymes (folate deaminase, cAMP PDE) strengthen gradients by attenuating signals near cells. At least 6 signaling arms are activated downstream of receptors, and their collective activity enables chemotaxis at <0.5 nM despite weak individual biochemical responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 discuss gradient shaping mechanisms (C94, citing Mackenzie et al., 2016; Tweedy et al., 2016) and multi-pathway integration (C95-C96). The collective signaling model (C96) is supported by the sensitivity difference between chemotaxis and biochemical assays (C69). These are important mechanistic interpretations but largely synthesize prior knowledge with current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "At very high chemoattractant concentrations (>100 \u03bcM), chemotaxis is diminished, accompanied by ligand-specific receptor downregulation. This may represent an avoidance mechanism since Dictyostelium have reduced viability at extreme bacterial density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 describe high-concentration effects with limited supporting data. C100 cites unpublished data ('data not shown'), C101 cites both published and unpublished work, and C102 is speculative ('we suggest'). While the receptor downregulation is documented in literature, the avoidance hypothesis lacks direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Since chemotactic signaling networks are shared among Dictyostelium, macrophages, and neutrophils, similar multi-ligand integration likely functions in immune responses. Bacterial detection may be further enhanced at very low signal levels through cooperative action of multiple chemoattractants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 extrapolate findings to mammalian systems and speculate about enhanced detection at even lower concentrations. While C97 is based on established conservation, C98-C99 are explicitly speculative ('it is likely,' 'we suggest') without direct experimental evidence. These represent reasonable hypotheses for future work but are not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Cells desensitized to one chemoattractant remain responsive to others, and low-dose multi-chemoattractant stimulation amplifies gradient detection and bacterial sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 synthesize findings from competitive assays (C52-C54) and additive assays (C48-C49). C103 is directly supported by experimental data and literature. C104 is an inference from the additive effects data. These represent important mechanistic conclusions that integrate multiple experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "PIP3 patches co-localize with phagocytic cups, but PIP3-free pseudopods orient toward folate during migration, suggesting PIP3-labeled protrusions in phagocytic cups are not initiated via folate signaling. Macropinocytosis is antagonistic to chemotaxis, and PIP3 production interferes with pseudopod orientation. Phagocytic cup and chemotaxis leading edge formation are competitive events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 synthesize literature on PIP3 localization and function (multiple citations). These provide important context for interpreting the phagocytosis results and address potential alternative explanations. The logic connecting PIP3-free pseudopods (C106) to non-folate-initiated phagocytic cups (C107) is sound but remains inferential. These are important for the Discussion but not primary experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Efficient phagocytosis is independent of chemo-sensing and chemotaxis in Dictyostelium. Similar findings in mammalian neutrophils show conditions that suppress chemotaxis without affecting phagocytosis, though chemotactically active neutrophils may be more efficient at blocking fungal growth post-phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 summarizes the main phagocytosis finding, well-supported by Figures 7-9. Claims C112-C113 cite mammalian studies (Heinrich and Lee, 2011; Mankovich et al., 2013; Jones et al., 2016) showing parallel findings and nuances. These provide important comparative context and suggest the findings may extend beyond Dictyostelium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The chemotaxis system can be used to examine virulent/non-virulent bacteria, search for novel chemoattractants and orphan receptors, screen for inhibitors, and be applied to macrophages, neutrophils, and Dictyostelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 describe potential future applications of the system. These are speculative ('can be used') and represent proposed rather than demonstrated capabilities. While reasonable given the demonstrated sensitivity and versatility, these are not validated experimental results.",
+    "result_type": "MINOR"
+  }
+]

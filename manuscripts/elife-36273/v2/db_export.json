@@ -1,0 +1,1693 @@
+{
+  "submission": {
+    "id": "e4c36e4f-1493-4b48-8ad7-ae102ead3876",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:05:27.681089Z",
+    "updated_at": "2025-12-02T02:05:27.681089Z"
+  },
+  "content": [
+    {
+      "id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "submission_id": "e4c36e4f-1493-4b48-8ad7-ae102ead3876",
+      "content_type": "manuscript",
+      "content_text": "# Trade-off shapes diversity in eco-evolutionary dynamics\n\n## Authors\n\n- Farnoush Farahpour<sup>1</sup> ([ORCID: 0000-0002-4510-8483](https://orcid.org/0000-0002-4510-8483)) \u2020\n- Mohammadkarim Saeedghalati<sup>1</sup> ([ORCID: 0000-0003-3387-6263](https://orcid.org/0000-0003-3387-6263))\n- Verena S Brauer<sup>2</sup>\n- Daniel Hoffmann<sup>1</sup> ([ORCID: 0000-0003-2973-7869](https://orcid.org/0000-0003-2973-7869)) \u2020\n\n### Affiliations\n\n1. Bioinformatics and Computational Biophysics University of Duisburg-Essen Essen Germany\n2. Bio\ufb01lm Center University of Duisburg-Essen Essen Germany\n3. Center for Computational Sciences and Simulation University of Duisburg-Essen Essen Germany\n4. Center for Medical Biotechnology University of Duisburg-Essen Essen Germany\n5. Center for Water and Environmental Research University of Duisburg-Essen Essen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe introduce an Interaction- and Trade-off-based Eco-Evolutionary Model (ITEEM), in which species are competing in a well-mixed system, and their evolution in interaction trait space is subject to a life-history trade-off between replication rate and competitive ability. We demonstrate that the shape of the trade-off has a fundamental impact on eco-evolutionary dynamics, as it imposes four phases of diversity, including a sharp phase transition. Despite its minimalism, ITEEM produces a remarkable range of patterns of eco-evolutionary dynamics that are observed in experimental and natural systems. Most notably we find self-organization towards structured communities with high and sustained diversity, in which competing species form interaction cycles similar to rock-paper-scissors games.\n\n## Introduction\n\nWe observe an immense diversity in natural communities (Hutchinson, 1961; Tilman, 1982; Huston, 1994), but also in controlled experiments (Maharjan et al., 2006; Gresham et al., 2008; Kinnersley et al., 2009; Herron and Doebeli, 2013; Kvitek and Sherlock, 2013), where many species continuously compete, diversify and adapt via eco-evolutionary dynamics (Darwin, 1859; Cody and Diamond, 1975). However, the basic theoretical models (Volterra, 1928; Tilman, 1982) predict that both ecological and evolutionary dynamics tend to decrease the number of coexisting species by competitive exclusion or selection of the fittest. This apparent contradiction between observations and theory gives the stunning biodiversity in communities the air of a paradox (Hutchinson, 1961; Sommer and Worm, 2002) and hence has begotten a long, ongoing debate on the mechanisms underlying emergence and stability of diversity in communities of competitive organisms (Hutchinson, 1959; Huston, 1994; Chesson, 2000; Sommer and Worm, 2002; Doebeli and Ispolatov, 2010).\n\nTo identify candidate mechanisms that could resolve the problem of generation and maintenance of diversity, the basic theoretical ecological and evolutionary models have been extended by numerous features (Chesson, 2000; Chave et al., 2002), including spatial structure (Mitarai et al., 2012; Villa Mart\u00edn et al., 2016; Vandermeer and Yitbarek, 2012), spatial and temporal heterogeneity (Caswell and Cohen, 1991; Fukami and Nakajima, 2011; Hanski and Mononen, 2011; Kremer and Klausmeier, 2013), tailored interaction network topologies (Meli\u00e1n et al., 2009; Mougi and Kondoh, 2012; K\u00e4renlampi, 2014; Laird and Schamp, 2015; Coyte et al., 2015; Grilli et al., 2017), predefined niche width (Scheffer and van Nes, 2006; Doebeli, 1996), adjusted mutation-selection rate (Johnson, 1999; Desai and Fisher, 2007), and life-history trade-offs (Rees, 1993; Bonsall et al., 2004; de Mazancourt and Dieckmann, 2004; Gudelj et al., 2007; Ferenci, 2016; Posfai et al., 2017). However, it is still unclear which features are essential to explain biodiversity. For instance, diversity is also observed under stable and homogeneous conditions (Gresham et al., 2008; Kinnersley et al., 2009; Maharjan et al., 2012; Herron and Doebeli, 2013; Kvitek and Sherlock, 2013).\n\nSo far, models of eco-evolutionary dynamics have been developed in three major categories: models in genotype space, like population genetics (Ewens, 2012) and quasispecies models (Nowak, 2006); models in phenotype space, like adaptive dynamics (Doebeli, 2011) and webworld models (Drossel et al., 2001); and models in interaction space, like Lotka-Volterra models (Coyte et al., 2015; Ginzburg et al., 1988) and evolving networks (Mathiesen et al., 2011; Allesina and Levine, 2011). Each of these categories has strengths and limitations and emphasizes particular aspects. However, in nature these aspects are entangled by eco-evolutionary feedbacks that link genotype, phenotype, and interaction levels (Post and Palkovacs, 2009; Schoener, 2011; Ferriere and Legendre, 2013; Weber et al., 2017). In a closed system of evolving organisms mutations, that\u00a0is, evolutionary changes at the genetic level (Figure 1a), can cause phenotypic variations if they are mapped to novel phenotypic traits in phenotype space (Figure 1b)(Soyer, 2012). These variations have ecological impact only if they affect biotic or abiotic interactions of species (Figure 1c); otherwise they are ecologically neutral. The resulting adaptive variations in the interaction network change the species composition through population dynamics. Finally, frequency-dependence occasionally selects strategies that adapt species to their new environment (Schoener, 2011; Moya-Lara\u00f1o et al., 2014; Hendry, 2016; Weber et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36273/elife-36273-fig1-v2.jpg)\n\n**Figure 1.:** This schematic shows species in a community of grain-eating and nectar-feeding birds, living in an environment where nectar feeding is advantageous. (a) Six different genotypes (sequences $S_{i}$) on a distance tree genotype space. (b) Four distinct phenotypes, $P_{j}$, are present in this space. Genotypes $S_{1}$ and $S_{2}$ are mapped to the same phenotype $P_{I}$, and $S_{5}$ and $S_{6}$ are mapped to the same phenotype $P_{IV}$. (c) Interaction space distinguishes only three interaction traits $T_{k}$ (for definition see Model section below). $P_{I}$ and $P_{II}$ are mapped to the same interaction trait $T_{\\alpha}$ because the change of feather color does not affect ecological interactions regarding the feeding habit. The table on the right shows how the complexity of the description reduces as we map the system to interaction space.\n\nThus, we have a link from interactions to eco-evolutionary dynamics, suggesting that we do not need to follow all evolutionary changes at the genetic or phenotypic level if we are interested in macro-eco-evolutionary dynamics, but only those changes that affect interactions. In this picture, evolution can be considered\u00a0as an exploration of interaction space, and modeling at this level can help us to study how complex competitive interaction networks evolve and shape diversity. This neglect of genetic and phenotypic details in interaction-based models (Ginzburg et al., 1988; Sol\u00e9, 2002; Tokita and Yasutomi, 2003; Shtilerman et al., 2015) equals a coarse-graining of the eco-evolutionary system (Figure 1). This coarse-graining not only reduces complexity but it should also make the approach applicable to a broader class of biological systems.\n\nInteraction-based evolutionary models have received some attention in the past (Ginzburg et al., 1988; Sol\u00e9, 2002) but then were almost forgotten, despite remarkable results. We think that these works have pointed to a possible solution of a hard problem: The complexity of evolving ecosystems is immense, and it is therefore difficult to find a representation suitable for the development of a statistical mechanics that enables qualitative and quantitative analysis (Weber et al., 2017). Modeling at the level of interaction traits, rather than modeling of detailed descriptions of genotypes or phenotypes, coarse-grains these complex systems in a natural way so that this approach may be helpful for developing a biologically meaningful statistical mechanics.\n\nThe first eco-evolutionary interaction-based model was introduced by Ginzburg et al. (1988) based on Lotka\u2013Volterra dynamics for competitive communities. Instead of adding species characterized by random coefficients, taken out of some arbitrary species pool, they made the assumption that a new mutant should be ecologically similar to its parent, which\u00a0means\u00a0that phenotypic variations that are not ecologically neutral generate mutants that interact with other species similar to their parents (Figure 1). Thus, speciation events were simulated as ecologically continuous mutations in the strength of competitive interactions. This model, although conceptually progressive, was not able to produce a large stable diversity, possibly because diversity requires components not included in this model. Therefore subsequent interaction-based models supplemented\u00a0it\u00a0with ad hoc features to specifically increase diversity, such as special types of mutations (Tokita and Yasutomi, 2003), addition of mutual interactions (Tokita and Yasutomi, 2003; Yoshida, 2003), enforcement of partially connected interaction graphs (K\u00e4renlampi, 2014), or imposed parent-offspring niche separation (Shtilerman et al., 2015). While these models generated, as expected, higher diversity than the original Ginzburg model, they could not reproduce key characteristics of real systems, for example\u00a0emergence of large and stable diversity, diversification to separate species and mass extinctions. Of course, the use of ad hoc features that deliberately increase diversity also cannot explain why diversity emerges.\n\nAn essential component missing in the previous interaction-based models had been a constraint on strategy adoption. In real systems such constraints prevent the emergence of Darwinian Demons, that\u00a0is, species that develop\u00a0in the absence of any restriction and act as a sink in the network of population flow. Among all investigated features responsible for diversity, mentioned above, life-history trade-offs that regulate energy investment in different life-history strategies are fundamentally imposed by physical laws such as energy conservation or other thermodynamic constraints, and thus present in any natural system (Stearns, 1989; Gudelj et al., 2007; Del Giudice et al., 2015). These physical laws constrain evolutionary trajectories in trait space of evolving organisms and determine plausible evolutionary paths (Fraebel et al., 2017; Ng'oma et al., 2017), i.e. combinations of strategies adopted or abandoned over time. Roles of trade-offs for emergence and stabilization of diversity have been investigated in previous eco-evolutionary studies (Posfai et al., 2017; Rees, 1993; Bonsall et al., 2004; de Mazancourt and Dieckmann, 2004; Ferenci, 2016; Gudelj et al., 2007) and experiments (Stearns, 1989; Kneitel and Chase, 2004; Agrawal et al., 2010; Maharjan et al., 2013; Ferenci, 2016). It has been shown, for example, that if metabolic trade-offs are considered, even at equilibrium and in homogeneous environments, stable coexistence of species becomes possible (Gudelj et al., 2007; Beardmore et al., 2011; Maharjan and Ferenci, 2016).\n\nHere, we introduce a new, minimalist model, the Interaction and Trade-off-based Eco-Evolutionary Model (ITEEM), with simple and intuitive eco-evolutionary dynamics at the interaction level that considers a life-history trade-off between interaction traits and replication rate, that\u00a0means, better competitors replicate less (Jakobsson and Eriksson, 2003; Bonsall et al., 2004). To our knowledge, ITEEM is the first model which joins these two elements, the interaction-space description with a life-history trade-off, that we deem crucial for an understanding of eco-evolutionary dynamics. We use ITEEM to study development of communities of organisms that diversify from one ancestor by gradual changes in their interaction traits and compete under Lotka-Volterra dynamics in well-mixed, closed system.\n\nWe show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017). Interestingly, the model shows a unimodal (\u2018humpback\u2019) course of diversity as function of trade-off, with a critical trade-off at which biodiversity undergoes a phase transition, a behavior observed in nature (Kassen et al., 2000; Smith, 2007; Vallina et al., 2014; Nathan et al., 2016). By changing the shape of trade-off and comparing the results with a no-trade-off model, we show that diversity is a natural outcome of competition if interacting species evolve under physical constraints that restrict energy allocation to different strategies. The natural emergence of diversity from a bare-bone eco-evolutionary model suggests that a unified treatment of ecology and evolution under physical constraints dissolves the apparent paradox of stable diversity.\n\n## Model\n\nITEEM is an individual-based model (Black and McKane, 2012; DeAngelis and Grimm, 2014) with simple intuitive updating rules for population and evolutionary dynamics. A simulated system in ITEEM has $N_{s}$ sites of undefined spatial arrangement (no neighborhood), each providing permanently a pool of resources that is sufficient for the metabolism of one organism. The community is well-mixed, which means that the probability for an encounter is the same for all pairs of individuals, and that the probability of an individual to enter a site (i.e. to access resources) is the same for all individuals and sites.\n\nWe start an eco-evolutionary simulation with individuals of a single strain occupying a fraction of the $N_{s}$ sites, and then carry out long simulations for millions of generations. Note that in the following, to facilitate discourse, we use the term strain for a group of individuals with identical traits, whereas the term species denotes a monophyletic cluster of strains with some intraspecific diversity (for a discussion on application of these terms in this study see Appendix 1, Species and strains). Over\u00a0time $t$, measured in generations, the number of individuals, $N_{ind}(t)$, number of strains, $N_{st}(t)$, and number of species, $N_{sp}(t)$, change by ecological (birth, death, competition) and evolutionary dynamics (mutation, extinction, diversification).\n\nEvery generation or time step consists of $N_{s}$ sequential replication trials of randomly selected individuals, followed at the end by a single death step. In the death step all individuals that have reached their lifespan at that generation will vanish. Lifespans of individuals are drawn at their births from a Poisson distribution with overall fixed mean lifespan $\\lambda$. This is equivalent to an identical per capita death rate for all strains. For comparison, simulations with no attributed lifespan ($\\lambda=\u221e$) were carried out, too; in this case the only cause of death is defeat in a competitive encounter.\n\nAt each replication trial, a randomly selected individual of a strain $\\alpha$ can replicate with probability $r_{\\alpha}$. Age of individuals plays no role in their reproduction and thus a newborn individual can be selected and replicate with the same probability as adult individuals. With a fixed probability $\\mu$ the offspring mutates to a new strain $\\alpha^{\u2032}$. Then, the newborn individual is assigned to a randomly selected site. If the site is empty, the new individual will occupy it. If the site is already occupied, the new individual competes with the current holder in a life-or-death struggle. In that case, the surviving individual is determined probabilistically by the \u2018interaction\u2019 $I_{\\alpha\\beta}$, defined for each pair of strains $\\alpha$, $\\beta$. $I_{\\alpha\\beta}$ is the survival probability of an $\\alpha$ individual in a competitive encounter with a $\\beta$ individual, with $I_{\\alpha\\beta}\\in[0,1]$ and $I_{\\alpha\\beta}+I_{\\beta\\alpha}=1$ (Grilli et al., 2017). All interactions $I_{\\alpha\\beta}$ form an interaction matrix $I(t)$ that encodes the outcomes of all possible competitive encounters in this probabilistic sense. Row $\\alpha$ of $I$ defines the \u2018interaction trait\u2019 $T_{\\alpha}=(I_{\\alpha1},I_{\\alpha2},\u2026,I_{\\alphaN_{st}(t)})$ of strain $\\alpha$, with $N_{st}(t)$ the number of strains at time $t$.\n\nIf strain $\\alpha$ goes extinct, its interaction elements must be removed, i.e. the $\\alpha$th row and column of $I$ are deleted. Conversely, if a mutation of $\\alpha$ generates a new strain $\\alpha^{\u2032}$, its trait vector is obtained by adding a small random variation to the parent trait, that\u00a0is $T_{\\alpha^{\u2032}}=T_{\\alpha}+\u03b7$, where $\u03b7=(\u03b7_{1},\u22ef,\u03b7_{N_{st}(t)})$ is a vector of independent random variations, drawn from a zero-centered normal distribution of fixed width $m$. With this, $I$ grows by one row and column. The new elements of the matrix are:\n\n$$\nI_{\\alpha^{\u2032}\\beta}=I_{\\alpha\\beta}+\u03b7_{\\beta} ,\n$$\n\n\n\n$$\nI_{\\beta\\alpha^{\u2032}}=1\u2212I_{\\alpha^{\u2032}\\beta} ,\n$$\n\n\n\n$$\nI_{\\alpha^{\u2032}\\alpha^{\u2032}}=0.5 ,\n$$\n\nwhere $\\beta=1,\u22ef,N_{st}(t)$ and thus $\\alpha^{\u2032}$ inherits its interactions from $\\alpha$, but with a small random modification. Evolutionary variations in ITEEM generate mutants that are ecologically similar to their parents. Such variations can represent any phenotypic variation that influences interactions of strains with their community and thus changes their relative competitive abilities (Thompson, 1998; Thorpe et al., 2011; Bergstrom and Kerr, 2015; Thompson, 1999). With Equation 1 we assume that all the interaction terms of the new mutant can change independently.\n\nTo implement trade-off between competitive ability and fecundity, we introduce a relation between competitive ability $C$, defined as average interaction\n\n$$\nC(T_{\\alpha})=\\frac{1}{N_{st}(t)\u22121}\\sum\\beta\\neq\\alpha\u2009I_{\\alpha\\beta},\n$$\n\nand replication $r_{\\alpha}$ (for fecundity). When $N_{st}=1$, competitive ability of that single strain is set to zero. To study the influence of trade-off between competitive ability and replication, we systematically change its shape by varying a parameter $\\delta$\u00a0$(0\\leq\\delta<1)$ (Figure 2). For details of trade-off function and its effect on trait distribution and relative fitness see Appendix 1, Trade-off. Trade-off functions can be concave ($\\delta<0.5$), linear ($\\delta=0.5$), or convex ($\\delta>0.5$). The trade-off function ties better competitive ability to lower fecundity and vice versa. The extreme case $\\delta=0$ makes $r=1$ and thus independent of $C$, which means no trade-off.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36273/elife-36273-fig2-v2.jpg)\n\n**Figure 2.:** The shape of trade-off is controlled by trade-off parameter $\\delta$ (Appendix 1, Trade-off). Trade-off functions with $\\delta=0$, $0.14$, $0.29$, $0.43$, $0.57$, $0.71$, $0.86$ are plotted, each in different color, from the dark blue horizontal line for $\\delta=0$ (i.e. no trade-off), to the red convex curve for $\\delta=0.86$.\n\nWe compare ITEEM results to the corresponding results of a neutral model (Hubbell, 2001), where we have formally evolving trait vectors $T_{\\alpha}$ but fixed and uniform replication probabilities and interactions. Accordingly, the neutral model has no trade-off.\n\nITEEM belongs to the well-established class of generalized Lotka-Volterra (GLV) models in the sense that the population-level approximation of the stochastic, individual-based ecological dynamics of ITEEM leads to the competitive Lotka-Volterra equations (Appendix 1, Generalized Lotka\u2013Volterra (GLV) equation). Thus the results of the model can be interpreted in the framework of competitive GLV equations that model competition for a renewable resource pool and summarize all types of competition (Gill, 1974; Maurer, 1984) in the elements of the interaction matrix $I$ (see above), i.e. these elements represent the resultant negative effect of all competitor populations on each other.\n\nOur model also allows to study speciation in terms of network dynamics. The interaction matrix $I$ defines a complete dominance network between coexisting strains. In this network the nodes are strains ($\\alpha,\\beta$), and the directed edges connecting them indicate direction and strength of dominance, i.e. sign and size of $I_{\\alpha\\beta}\u2212I_{\\beta\\alpha}$, respectively. Thus, the elements of the weighted adjacency matrix of this network are defined as either $W_{\\alpha\\beta}=I_{\\alpha\\beta}\u2212I_{\\beta\\alpha}$, if $\\alpha$ is the superior competitor in the pairwise encounter with $\\beta$ ($I_{\\alpha\\beta}>I_{\\beta\\alpha}$), or otherwise as $W_{\\alpha\\beta}=0$. With this definition all $W_{\\alpha\\beta}$ are in $[0,1]$. Accordingly, for the dominance network of species, we computed directed edges between any two species, $i$ and $j$, by averaging over edges between all pairs of strains belonging to these species, that\u00a0is $W_{ij}^{sp}=W\u00af_{\\alpha\\beta}$ for all strains $\\alpha$ and $\\beta$ in the $i$th and $j$th species, respectively. The strength and direction of dominance edges indicate the effective flow of population between species.\n\nAs we consider a trade-off between replication and competitive ability in the framework of GLV equations, we can distinguish between $r$- and $\\alpha$-selection (Gill, 1974; Kurihara et al., 1990; Masel, 2014). $r$-selection selects for reproductive ability, which is beneficial in low density regimes, while $\\alpha$-selection selects for competitive ability and is effective at high density regimes under frequency-dependent selection. $\\alpha$-selection, first introduced by Gill (Gill, 1974), can be realized by acquisition of any kind of ability or mechanism that increases the chance of an organism to take over resources, to prevent competitors from gaining resources (Gill, 1974), or helps the organism to tolerate stress or reduction of contested resource availability (Aarssen, 1984). $\\alpha$-selection is different from $K$-selection; although both are effective at high density, the latter is limited to investments in efficient and parsimonious usage of resources (Masel, 2014).\n\nThe source code of the ITEEM model is freely available at GitHub (Farahpour, 2018; copy archived at https://github.com/elifesciences-publications/ITEEM).\n\n## Results\n\n### Generation of diversity\n\nOur first question was whether ITEEM is able to generate and sustain diversity. Since we have a well-mixed system with initially only one strain, a positive answer implies sympatric diversification: the emergence of new species by evolutionary branching without geographic isolation or resource partitioning. In fact, we observe that during long-time eco-evolutionary trajectories in ITEEM new, distinct species emerge, and their coexistence establishes a sustained high diversity in the system (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36273/elife-36273-fig3-v2.jpg)\n\n**Figure 3.:** Evolutionary dynamics of a community driven by competitive interactions, with trade-off between fecundity and competitive abilities ($\\delta=0.5$, $\\lambda=300$, $\\mu=0.001$, $m=0.02$, $N_{s}=10^{5}$).(a) Species\u2019 frequencies over time (Muller plot): one color per species, vertical width of each colored region is the relative abundance of respective species. Frequencies are recorded every $10^{4}$ generations over $10^{6}$ generations. The plot was produced with R-package MullerPlot (Farahpour et al., 2016). (b) Distribution over trait space: Snapshot of distribution of strains and species in trait space after $10^{6}$ generations. By using classical multidimensional scaling the multidimensional trait space is reduced to two dimensions that explain most of the variance in trait space (see Appendix 1, Classical multi-dimensional scaling (CMDS)). Points and discs are strains and species, respectively (see Appendix 1, Species and strains). Magnified disc in lower right corner shows strains in the light green species disc. Discs diameter are proportional to the total abundance of corresponding species, i.e. the\u00a0sum of relative abundances of all strains that belong to that species. In this snapshot $N_{st}=660$ and $N_{sp}=10$. (c) Evolutionary dynamics in trait space: Snapshots as in panel\u00a0(b), but concatenated for all times (horizontal axis), from the monomorphic first generation to generation $10^{6}$. Figure 3\u2014video 1 shows this evolutionary dynamics over time. (d) Functional diversity over time (see Appendix 1,\u00a0Diversity indexes and parameters of dynamics)\u00a0measured by the size of minimum spanning tree (SMST) in interaction trait space (see Appendix 1, SMST and distribution of species and strains in trait space). At $1.75\\times10^{6}$ generations diversity collapses with all species but one going extinct (vertical dashed line) (Appendix 1, Collapses of diversity). (e) Heatmap of interaction matrix $I$ for generation $10^{6}$. Row and column order reflects species consistent with panel (b) and indicated by color bars along top and left. Colors inside heat map represent values of interaction terms (color-key along bottom). (f) Evolution of dominance network: several snapshots from panel (c) with dominance edges, $W_{ij}^{sp}$ between species (colored discs). (g) Numbers and mean strength of cycles over time in green and red, respectively. The strength of a cycle is defined by its weakest edge. Number and mean strength are given in units of number and mean strength of equivalent random networks, respectively (Appendix 1, Intransitive dominance cycles). Right ends in (a) and (c) correspond to generation panel (b) and (e). Colors of species are the same in panels (a), (b), (c), (e) and (f). Note that time scales differ between panels (a), (c) and (d), (g).\n\nRemarkably, the emerging diversity has a clear hierarchical structure in the phylogeny tree and trait space: at the highest level we see that the phylogenetically separated strains (Figure 3a and Appendix 1, Species and strains) appear as well-separated clusters in trait space (Figure 3b) similar to biological species. Within these clusters there are sub-clusters of individual strains (Barraclough et al., 2003). Both levels of diversity can be quantitatively identified as levels in the distribution of branch lengths in minimum spanning trees in trait space (Appendix 1, SMST and distribution of species and strains in trait space). This hierarchical diversity is reminiscent of the phylogenetic structures in biology (Barraclough et al., 2003).\n\nOverall, the model shows evolutionary divergence from one ancestor to several species consisting of a total of hundreds of coexisting strains (Figure 3c). This evolutionary divergence in interaction space is the result of frequency-dependent selection without any further assumption on the competition function, for\u00a0example a Gaussian or unimodal competition kernel (Dieckmann and Doebeli, 1999; Doebeli and Ispolatov, 2010), or predefined niche width (Scheffer and van Nes, 2006). In the course of this diverging sympatric evolution, diversity measures typically increase and, depending on trade-off parameter $\\delta$, high diversity is sustained over hundreds of thousands of generations (Figure 3d, and Appendix 1, Diversity over time). This observation holds for several complementary measures of diversity, no matter whether they are based on abundance of strains or species, or on functional diversity, i.e. quantities that measure the spread of the population in trait space (Appendix 1, Functional diversity (FD), functional group and functional niche).\n\nThe observed pattern of divergence contradicts the long-held view of sequential fixation in asexual populations (Muller, 1932). Instead, we see frequently concurrent speciation with emergence of two or more species in quick succession (Figure 3a), in agreement with recent results from long-term bacterial and yeast cultures (Herron and Doebeli, 2013; Maddamsetti et al., 2015; Kvitek and Sherlock, 2013).\n\nITEEM systems self-organize toward structured communities: the interaction matrix of a diverse system obtained after many generations has a conspicuous block structure with groups of strains with similar interaction strategies (Figure 3e), and these groups being well-separated from each other in trait space (Figure 3b) (Sander et al., 2015). This fact can be interpreted in terms of functional organization as the interaction trait in ITEEM directly determines the functions of strains and species in the community (Appendix 1, Functional diversity (FD), functional group and functional niche). This means that the block structure in Figure 3e corresponds to self-organized, well-separated functional niches (Whittaker et al., 1973; Rosenfeld, 2002; Taillefumier et al., 2017), each occupied by a cluster of closely related strains. This niche differentiation among species, which facilitates their coexistence, is the result of frequency-dependent selection among competing strategies. Within each functional niche the predominant dynamics, determining relative abundances of strains in the niche, is neutral. Speciation can occur when random genetic drift in a functional group generates sufficiently large differences between the strategies of strains in that group, and then selection forces imposed by biotic interactions reinforce this nascent diversification by driving strategies further apart.\n\nWe observe as characteristic of the dynamics of the dominance network $W$ (see Model) the appearance of strong edges as diversification increases trait distance (or dissimilarity) between species (Figure 3f) (Anderson and Jensen, 2005).\n\n### Emergence of intransitive cycles\n\nThree or more directed edges in the dominance network can form cycles of strains in which each strain competes successfully against one cycle neighbor but loses against the other neighbor, a configuration corresponding to rock-paper-scissors games (Szolnoki et al., 2014). Such intransitive dominance relations have been observed in nature (Buss and Jackson, 1979; Sinervo and Lively, 1996; Lankau and Strauss, 2007; Bergstrom and Kerr, 2015), and it has been shown that they stabilize a system driven by competitive interactions (Allesina and Levine, 2011; Mathiesen et al., 2011; Mitarai et al., 2012; Laird and Schamp, 2015; Maynard et al., 2017; Gallien et al., 2017). We find in ITEEM networks that the increase of diversity coincides with growth of mean strength of cycles (Figure 3d,g and Appendix 1, Intransitive dominance cycles). Note that these cycles emerge and self-organize in the evolving ITEEM networks without any presumption or constraint on network topology.\n\nFormation of strong cycles could also hint at a mechanistic explanation for another phenomenon that we observe in long ITEEM simulations: Occasionally diversity collapses from medium levels abruptly to very low levels, usually followed by a recovery (Figure 3d). Remarkably, dynamics before these mass extinctions are clear exceptions of the generally strong correlation of diversity and average cycle strength. While the diversity immediately before mass extinctions is inconspicuous, these events are always preceded by exceptionally high average cycle strengths (Appendix 1, Collapses of diversity). Because of the rarity of mass extinctions in our simulations we currently have not sufficient data for a strong statement on this phenomenon, however, it is conceivable that the emergence of new species in a system with strong cycles likely leads to frustrations, i.e. the newcomers cannot be accommodated without inducing tensions in the network, and these tensions can destabilize the network and discharge in a collapse. The extinction of a species in a network with strong cycles will probably have a similar effect. This explanation of mass extinctions would be consistent with related works where collapses of diversity occur if maximization of competitive fitness (here: by the newcomer species) leads to a loss of absolute fitness (here: break-down of the network) (Matsuda and Abrams, 1994; Masel, 2014). This is a special case of the tragedy of the commons (Hardin, 1968; Masel, 2014) that happens when competing organisms under frequency-dependent selection exploit shared resources (Rankin and L\u00f3pez-Sepulcre, 2005), as it is the case in ITEEM.\n\n### Impact of trade-off and lifespan on diversity\n\nThe eco-evolutionary dynamics described above depends on lifespan and trade-off between replication and competitive ability. This becomes clear if we study properties of dominance network and trait diversity. Figure 4a relates properties of the dominance network to the trade-off parameter $\\delta$, at fixed lifespan $\\lambda$. Specifically, we plot two indicators of community structure against trade-off parameter $\\delta$, namely mean weight of dominance edges $\u27e8W\u27e9$, and mean strength of cycles $\u03c1$. Figure 4b summarizes the behavior of diversity as function of $\\delta$ and lifespan $\\lambda$. For this summary, we chose ten parameters that quantify different aspects of diversity, for example richness, evenness, functional diversity, and trait distribution, and then averaged over their normalized values to obtain an overall measure of diversity (color bar in the figure). The full set of parameters is detailed in Appendix 1, Diversity indexes and parameters of dynamics for different trade-offs and lifespans. The resulting phase diagram gives us an overview of the community diversity for different trade-off parameters $\\delta$ and lifespans $\\lambda$. The diagram shows a weak dependency of diversity on $\\lambda$ and a strong impact of $\\delta$, with four distinct phases (I-IV) from low to high $\\delta$ as described in the following.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36273/elife-36273-fig4-v2.jpg)\n\n**Figure 4.:** Effects of trade-off $\\delta$ and lifespan $\\lambda$ on community structure and diversity.(a) Mean weight of dominance edges $\u27e8W\u27e9$ (orange squares) and mean strength of cycles $\u03c1$ (blue circles) as function of $\\delta$. Mean cycle strength is given in units of mean strength of corresponding random networks for the respective trade-off (Appendix 1, Intransitive dominance cycles). Points in panel (a) are evaluated as averages over three different simulations, each over $5\\times10^{6}$ generations with $\\mu=0.001$, $m=0.02$, $\\lambda=\u221e$ and $N_{S}=10^{5}$. Error bars are standard deviations averaged over these three simulations. The shaded area marks mean strength of cycles for a neutral model with corresponding parameters $\\pm$ standard deviation. (b) Phase diagram of diversity as function of trade-off $\\delta$ and lifespan $\\lambda$. Diversity (represented by color spectrum defined in the color bar) is given as consensus of several quantities (Appendix 1, Diversity indexes and parameters of dynamics for different trade-offs and lifespans). Diversity has four distinct phases (I\u2013IV). Insets along the top margin are representative MDS plots (Appendix 1, Classical multi-dimensional scaling (CMDS)) of strain distributions in trait space, with $\\lambda=10^{5}$ but different values of $\\delta$ (left to right: I with $\\delta=0.11$; II with $\\delta=0.5$; III with $\\delta=0.89$). Panel (a) corresponds to a horizontal cross-section through the phase diagram in panel (b) with $\\lambda=\u221e$ for $\u27e8W\u27e9$ and $\u03c1$ as indicators of community structure.\n\nWithout trade-off ($\\delta=0$), strains do not have to sacrifice replication for better competitive abilities. Any resident community can be invaded by a new mutant with relatively higher $C$ that does not have to compensate with a lower $r$. These mutants resemble Darwinian Demons (Law, 1979), i.e. strains or species that can maximize all aspects of fitness (here $C$ and $r$) simultaneously and would exist under physically unconstrained evolution. Such Darwinian Demons can then be outcompeted by their own mutant offspring\u2019s that have higher $C$ and the same $r$. Thus we have sequential predominance of such strategies with constantly changing traits and improving competitiveness, but no diverse network emerges. As we increase $\\delta$ from this unrealistic extreme into phase I ($0<\\delta\u22720.2$) coexistence is facilitated. However, the small $\\delta$ still favors investing in relatively higher competitive ability as a low-cost strategy to increase fitness. In this phase $\u27e8W\u27e9$ and $\u03c1$ (Figure 4a) slightly increase: biotic selection pressure exerted by inter-species interactions starts to generate diverse communities (left inset in Figure 4b, Appendix 1,\u00a0Diversity indexes and parameters of dynamics for different trade-offs and lifespans).\n\nWhen $\\delta$ increases further (phase II), trade-off starts to force strains to choose between higher replication or better competitive abilities. Extremes of these quantities do not allow for viable species: sacrificing $r$ completely for maximum $C$ stalls population dynamics, whereas maximum $r$ leads to inferior $C$. Thus strains seek middle ground values in both $r$ and $C$. The nature of $C$ as mean of interactions (Equation 2) allows for many combinations of interaction traits with approximately the same mean. Thus, in a middle range of $r$ and $C$, many strategies with the same overall fitness are possible, which is a condition of diversity (Marks and Lechowicz, 2006). From this multitude of strategies, sets of trait combinations emerge in which strains with different combinations keep each other in check, for example by the competitive rock-paper-scissors-like cycles between species described above. An equivalent interpretation is the emergence of diverse sets of non-overlapping compartments or functional niches in trait space (Figure 3b,e). Diversity in this phase II is the highest and most stable (middle inset in Figure 4b, Appendix 1, Diversity indexes and parameters of dynamics for different trade-offs and lifespans).\n\nAs $\\delta$ approaches $0.7$, $\u27e8W\u27e9$ and $\u03c1$ plummet (Figure 4a) to interaction values comparable to the noise level $m$ (see Model), and a cycle strength typical for the neutral model (horizontal light\u00a0green ribbon in Figure 4a), respectively. The sharp drop of $\u27e8W\u27e9$ and $\u03c1$ at $\\delta\u22480.7$ is reminiscent of a phase transition. As expected for a phase transition, the steepness increases with system size (Appendix 1, Size of the system). For $\\delta\u22730.7$, weights of dominance edges never grow and no structures, for example cycles, emerge. Diversity remains low and close to that of a neutral system. The sharp transition at $\\delta\u22480.7$ which is visible in practically all diversity measures (between phases II and III in Figure 4b,\u00a0see\u00a0also Appendix 1, Diversity indexes and parameters of dynamics for different trade-offs and lifespans) is a transition from a system dominated by biotic selection pressure to a neutral system. In high trade-off phase III, a small relative change in $C$ produces a large relative change in $r$ (Appendix 1, Strength of trade-off function). For instance, given a resident strain $R$ with $r$ and $C$, a closely related mutant $M$ increases the fitness by adopting a relatively high $r$ while paying a relatively small penalty in $C$ (see Appendix 1, Strength of trade-off function for the relative impacts of the traits), and therefore will invade $R$. Thus, diversity in phase III will remain stable and low, and is characterized by a group of similar strains with no effective interaction and hence no diversification to distinct species (right inset in Figure 4b and Appendix 1, Diversity indexes and parameters of dynamics\u00a0for different trade-offs and lifespans). In this high trade-off regime, lifespan comes into play: here, decreasing $\\lambda$ can make lives too short for replication. These hostile conditions minimize diversity and favor extinction (phase IV).\n\n### Trade-off, resource availability, and diversity\n\nThere is a well-known but not well understood unimodal relationship (\u2018humpback curve\u2019)\u00a0between biomass productivity and diversity: diversity as function of productivity has a convex shape with a maximum at middle values of productivity\u00a0(Smith, 2007;\u00a0Vallina et al., 2014). This productivity-diversity relation has been reported at different scales in a wide-range of natural communities, for example phytoplankton assemblages (Vallina et al., 2014), microbial (Kassen et al., 2000; Horner-Devine et al., 2003; Smith, 2007), plant (Guo and Berry, 1998; Michalet et al., 2006), and animal communities (Bailey et al., 2004). This behavior is reminiscent of horizontal sections through the phase diagram in Figure 4b, though here the driving parameter is not productivity but trade-off. However, we can make the following argument for a monotonic relation between productivity and trade-off shape. First we note that biomass productivity is a function of available resources (Kassen et al., 2000): the larger the available resources, the higher the possible productivity. This allows us to argue in terms of available resources. For eco-evolutionary systems with scarce resources, species with high replication rates will have low competitive ability because for each individual of the numerous offspring there is little material or energy available to develop costly mechanisms that increase competitive ability. On the other hand, if a species under these resource-limited conditions produces competitively constructed individuals it cannot produce many of them. This argument shows a correspondence between a resource-limited condition and high $\\delta$ for trade-off between replication and competitive ability. At the opposite, rich end of the resource scale, evolving species are not confronted with hard choices between replication rate and competitive ability, which is equivalent to low $\\delta$. Taken together, the trade-off axis should roughly correspond to the inverted resource axis: high $\\delta$ for poor resources (or low productivity) and low $\\delta$ for rich resources (or high productivity); a detailed analytical derivation will be presented elsewhere. The fact that ITEEM produces this frequently observed humpback curve proposes trade-off as underlying mechanism of this productivity-diversity relation.\n\n### Frequency-dependent selection\n\nObservation of eco-evolutionary trajectories as in Figure 3 suggested the hypothesis that speciation and extinction events in ITEEM simulations do not occur at a constant rate and independently of each other, but that one speciation or extinction makes a following speciation or extinction more likely. Such a frequency-dependence occurs if emergence or extinction of one species creates the niche for emergence and invasion of another species, or causes its decline or extinction (Herron and Doebeli, 2013). Without frequency-dependence such evolutionary events should be uncorrelated.\n\nTo test for frequency-dependent selection we checked whether the probability distribution of inter-event times (time intervals between consecutive\u00a0speciation or extinction events) is compatible with a constant rate Poisson process, i.e. a purely random process, or whether such events are correlated (Appendix 1, Frequency-dependent selection). We find that for long inter-event times the decay of the distribution in ITEEM simulations is indistinguishable from that of a Poisson process. However, for shorter times there are significant deviations from a Poisson process for speciation and extinction events: at inter-event times of around $10^{4}$ the probability decreases for a Poisson process but significantly increases in ITEEM simulations. Thus, the model shows frequency-dependent selection with the emergence of new species increasing the probability for generation of further species, and the loss of a species making further losses more likely. This behavior of ITEEM is similar to microbial systems where new species open new niches for further species, or the loss of species causes the loss of dependent species (Herron and Doebeli, 2013; Maddamsetti et al., 2015).\n\nThe above analysis illustrates a further application of ITEEM simulations. Eco-evolutionary trajectories from ITEEM simulations can be used to develop analytical methods for the inference of competition based on observed diversification patterns. Such methods could be instrumental for understanding the reciprocal effects of competition and diversification.\n\n### Effect of mutation on diversity\n\nMutations are controlled in ITEEM by two parameters: mutation probability $\\mu$, and width $m$ of trait variation. In simulations, diversity grew faster and to a higher level with increasing mutation probability ($\\mu=10^{\u22124},5\\times10^{\u22124},10^{\u22123},5\\times10^{\u22123}$), but without changing the overall structure of the phase diagram (Appendix 1, Mutation probability). One interesting tendency is that for higher $\\mu$, the lifespan becomes more important at the interface of regions III and IV (high trade-offs), leading to an expansion of region III at the expense of the hostile region IV: long lifespans in combination with high mutation probability establish low but viable diversity at large $\\delta$. The humpback curve of diversity over $\\delta$ is observed for all mutation probabilities. Thus, the diversity in ITEEM is not a simple result of a mutation-selection balance but trade-off plays an important role in shaping diversity in trait space.\n\nThe width of trait variation, $m$, influences both the speed of evolutionary dynamics and the maximum variation inside species, i.e.\u00a0clusters of strains. The smaller $m$ the slower the dynamics and the smaller the clusters. However extreme values of $m$ can completely suppress the diverging evolution: Very small variations are wiped out by rapid ecological dynamics, and very large variations disrupt selection forces by imposing big fluctuations.\n\n### Comparison of ITEEM with neutral model\n\nThe neutral model introduced in the Model section has no meaningful interaction traits, and consequently no meaningful competitive ability or trade-off with fecundity. Instead, it evolves solely by random drift in trait space. Similarly to ITEEM, the neutral model generates clumpy structures of traits (Appendix 1, Neutral model), though here the clusters are much closer and thus the functional diversity is\u00a0much lower. This can be demonstrated quantitatively by the size of the minimum spanning tree of populations in trait space that are much smaller for the neutral model than for ITEEM at moderate trade-off (Appendix 1, Neutral model). The clumpy structures generated with the neutral model do not follow a stable trajectory of divergent evolution, and, hence, niche differentiation cannot be established. In a neutral model, without frequency-dependent selection and trade-off, stable structures and cycles cannot form in the community network, and consequently, diversity cannot grow effectively (Appendix 1, Neutral model). The comparison with the neutral model points to frequency-dependent selection as a promoter of diversity in ITEEM. For high trade-offs (region III in Figure 4b), diversity and number of strong cycles in ITEEM are comparable to the neutral model (Figure 4a).\n\n## Discussion\n\n### Phenotype traits and interaction traits\n\nIn established eco-evolutionary models, organisms are described in terms of one or a few phenotype traits. In contrast, the phenotype space of real systems is often very high-dimensional; competitive species in their evolutionary arms race are not confined to few predefined phenotypes but rather explore new dimensions in that space (Maharjan et al., 2006; Maharjan et al., 2012; Zaman et al., 2014; Doebeli and Ispolatov, 2017). Coevolution systematically pushes species toward complex traits that facilitate diversification and coexistence (Zaman et al., 2014; Svardal et al., 2014), and evolutionary innovation frequently generates phenotypic dimensions that are completely novel in the system (Doebeli and Ispolatov, 2017). Complexity and multi-dimensionality of phenotype space have recently been the subject of several experimental and theoretical studies with different approaches that demonstrate that evolutionary dynamics and diversification in high-dimensional phenotype trait space can produce more complex patterns in comparison to evolution in low-dimensional space (Doebeli and Ispolatov, 2010; Gilman et al., 2012; Svardal et al., 2014; Kraft et al., 2015; Doebeli and Ispolatov, 2017). For example, it has been shown that the conditions needed for frequency-dependent selection to generate diversity are satisfied more easily in high-dimensional phenotype spaces (Doebeli and Ispolatov, 2010). Moreover, the level at which diversity saturates in a system depends on its dimensionality, with higher dimensions allowing for more diversity (Doebeli and Ispolatov, 2017), and the probability of intransitive cycles in species competition networks grows rapidly with the number of phenotype traits. The conventional way to tackle this problem is to use models with a larger number of phenotype traits. However, this is not really a solution of the problem because this still confines evolution to the chosen fixed number of traits, and it also makes these models more complex and thus computationally less tractable. As will be discussed below, interaction-based models such as ITEEM offer a natural solution to this problem by mapping the system to an interaction trait space that can dynamically expand by the emergence of novel interaction traits as eco-evolutionary dynamics unfolds.\n\n### Eco-evolutionary dynamics in interaction trait space\n\nInteraction-based eco-evolutionary models rely on the assumption that phenotypic evolution can be coarse-grained to the interaction level (Figure 1). This means that regardless of the details of phenotypic variations, we just study the resultant changes in the interaction network. In an eco-evolutionary system dominated by competition this is justified because phenotypic variations are relevant only when they change the interaction of organisms, directly or indirectly; otherwise they do not impact ecological dynamics. The interaction level is still sufficiently detailed to model macro-evolutionary dynamics that are dominated by ecological interactions.\n\nA transition from phenotype space to interaction space requires a mapping from the former to the latter, based on the rules that characterize the interaction of individuals with different phenotypic traits. As a concrete example, we might consider the competition kernel of adaptive dynamics models (Doebeli, 2011) that determines the competitive pressure of two individuals with specific traits. That formalism describes well how, after mapping phenotypic traits to the interaction space, ecological outcome eventually is determined by interactions between species. In Appendix 1, Phenotype-interaction map, some properties of this mapping are discussed.\n\n### Interaction-based models\n\nIn the first interaction-based model by Ginzburg et al. (1988), emergence of a new mutant was counted as speciation, and it was shown that simulating speciation events as ecologically continuous mutations in the strength of competitive interactions resulted in stable communities. However the Ginzburg model produced stable coexistence of only a few similar interaction traits, without branching and diversification to distinct species. As outlined in the introduction, subsequent interaction-based models tried to solve this problem by supplementing the Ginzburg model with some ad hoc features. For example, Tokita and Yasutomi (2003) mixed mutualistic and competitive interactions, and showed that only local mutations, i.e. changes in one pair-wise interaction rate, can produce stable diversity. Recently, Shtilerman et al. (2015) enforced diversification in purely competitive communities by imposing a large parent-offspring niche separation. To our knowledge, ITEEM is the first interaction-based model in which, despite its minimalism and without ad hoc features, diversity gradually emerges under frequency-dependent selection by\u00a0considering physical constraints of eco-evolutionary dynamics.\n\nIn all previous interaction-based models, eco-evolutionary dynamics has been divided into iterations over two successive steps: each first step of continuous population dynamics, implemented by integration of differential equations, was followed by a stochastic evolutionary process, namely speciation events and mutations, as a second step. However, in nature these two steps are not separated but intertwined in a single non-equilibrium process. Hence, the artificial separation necessitated the introduction of model components and parameters that do not correspond to biological phenomena and observables. In contrast, individual-based models like ITEEM operate with organisms as units, and efficiently simulate eco-evolutionary dynamics in a more natural and consistent way, with parameters that correspond to biological observables.\n\n### Trade-off anchors eco-evolutionary dynamics in physical reality\n\nLife-history trade-offs, like the trade-off between replication and competitive ability, now experimentally established as essential to living systems (Stearns, 1989; Agrawal et al., 2010; Masel, 2014), are inescapable constraints imposed by physical limitations in natural systems. Our results with ITEEM show that trade-offs fundamentally impact eco-evolutionary dynamics, in agreement with other eco-evolutionary models with trade-off (Huisman et al., 2001; Bonsall et al., 2004; de Mazancourt and Dieckmann, 2004; Beardmore et al., 2011). Remarkably, we observe with ITEEM sustained high diversity in a well-mixed homogeneous system. This is possible because moderate life-history trade-offs force evolving species to adopt different strategies or, in other words, lead to the emergence of well-separated functional niches in interaction space (Gudelj et al., 2007; Beardmore et al., 2011).\n\nGiven the accumulating experimental and theoretical evidence, the importance of trade-off for diversity is becoming more and more clear. ITEEM provides an intuitive and generic conceptual framework with a minimum of specific assumptions or requirements. This makes the results transferable to different systems, for example\u00a0biological, economical and social systems, wherever competition is the driving force of evolving communities. Put simply, ITEEM shows generally that in a bare-bone eco-evolutionary model withal standard population dynamics (birth-death-competition) and a basic evolutionary process (mutation), diverse set of strategies will emerge and coexist if physical constraints force species to manage their resource allocation.\n\n### Power and limitations of ITEEM\n\nDespite its minimalism, ITEEM reproduces in a single framework several phenomena of eco-evolutionary dynamics that previously were addressed with a range of distinct models or not at all, namely sympatric and concurrent speciation with emergence of new niches in the community, mass extinctions and recovery, large and sustained functional diversity with hierarchical organization, spontaneous emergence of intransitive interactions and cycles, and a unimodal diversity distribution as function of trade-off between replication and competition. The model allows detailed analysis of eco-evolutionary mechanisms and could guide experimental tests.\n\nThe current model has important limitations. For instance, the trade-off formulation was chosen to reflect reasonable properties in a minimalist way. This should be revised or refined as more experimental data become available. Secondly, individual lifespans in this study came from a random distribution with an identical fixed mean. Hence we have no adaptation and evolutionary-based diversity in lifespan. This limits the applicability of the current model to communities of species that have similar lifespans, and that invest their main adaptation effort into growth or reproduction and competitive ability. Furthermore, our model assumes an undefined pool of steadily replenished shared resources in a well-mixed system. This was motivated by the goal of a minimalist model for competitive communities that could reveal mechanisms behind diversification and niche differentiation, without resource partitioning or geographic isolation. However, in nature, there will in general be few or several limiting resources and abiotic factors that have their own dynamics. For this scenario, which is better explained by a resource-competition model than by the GLV equation, it is possible to consider resources as additional rows and columns in the interaction matrix $I$ and in this way to include abiotic interactions as well as biotic ones.\n\nIn an interaction-based model like ITEEM the interaction terms of the mutants change gradually and independently (Equation 1). This assumption of random exploration of interaction space can be violated, for example, in simplified models with few fixed phenotypic traits. Further studies are necessary to investigate the general properties and restrictions of the map between phenotype and interaction space. In Appendix 1, Phenotype-interaction map\u00a0we briefly introduced and discussed some properties of this map.\n",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8a24c28f-716d-4d90-b77e-6f6e173c5877",
+      "submission_id": "e4c36e4f-1493-4b48-8ad7-ae102ead3876",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Doebeli, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36273.029](https://doi.org/10.7554/eLife.36273.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Trade-off shapes diversity in eco-evolutionary dynamics\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Yaroslav Ispolatov (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that we have decided to reject your paper. However, we would like to offer the possibility of resubmission of a substantially revised manuscript. Our detailed assessment is as follows.\n\nThe paper has been carefully read by four expert reviewers. All of the reviewers found your paper thought provoking and potentially interesting. However, three reviewers raised substantial concerns. Two reviewers question the biological relevance of the models considered in the paper, and they think the model is too abstract to be useful for biologists thinking about long-term evolution. Since eLife is a \"generalist\" journal, it is imperative that papers have a high relevance not only for a narrow theoretical audience, but also for a general audience, in this case primarily in ecology and evolution. The reviewers also raised concerns that the work was not put into the context of existing theoretical work. In particular, one reviewer was concerned that a very similar approach has been taken in a previous paper, which is cited in the manuscript, but not discussed at all. All these concerns would need to be addressed in a revision. Specifically, the authors need to convince a mainly biological audience that the work presented is interesting and relevant, and they need to be clear about what advances the current work represents over previous work. Consequently, a serious effort would be required for revising the paper, and there is no guarantee for a positive outcome. Should you choose to resubmit a revised version, you would also need to take into account all the other reviewer comments in a constructive manner.\n\nIf you feel you can make the necessary revisions, we will make every effort to return a new version of the manuscript to the same editors and reviewers. Please note that this would be treated as a new submission.\n\nReviewer #1:\n\nThis is an interesting paper presenting a \"minimal\" model for the evolution of diversity in communities governed by competitive interactions. The model is minimal in the sense that only the outcome of interactions is modelled, but not their mechanistic basis, which greatly simplifies the description.\n\nI have two main concerns, and a number of more technical points.\n\nEssential revisions:\n\n1) The work presented appears to be very similar to the theory presented in Shtilerman et al., (2015). The authors need to clarify to what extent their work is novel compared to that earlier paper.\n\n2) In fact, I think the logistic equations presented by the authors in the appendix are similar to the ones used in Shtilerman et al., 2015. I think the authors need to consider using these equations, rather than their individual-based simulations, to derive their results. It appears to be straightforward to implement the evolutionary dynamics based on the deterministic logistic equations, with one differential equation per species, and with evolution being implemented by adding new equations to the system (and deleting those ones in which the frequency falls below a threshold). This would yield a computationally more efficient model, whose salient features would nevertheless be essentially the same as in the individual-based model (perhaps barring the nearly neutral variation within species clusters). If the results are not the same, then this needs to be known, as it would probably point to an important role of stochasticity. I think this line of analysis is necessary to obtain a complete picture of the system studied by the authors, which is required for eLife.\n\nEssential revisions:\n\n\u2013 Subsection \u201cModel\u201d: the procedure for the individual-based model is not clear: the text states that \"we try \ud835\udc41\ud835\udc56\ud835\udc5b\ud835\udc51(\ud835\udc61) (number of individuals at that time step) replications of randomly selected individuals. Each selected individual of a strain \ud835\udefc can replicate with rate r_\u03b1\u2026\" this is imprecise; what does is it mean that an individual that has already been selected for replication replicates with a rare r_\\\u03b1? Isn't it rather the case that individuals get selected to produce an offspring with a probability that is proportional to r_\u03b1?\n\n\u2013 Also, it is not clear how the discreteness of time is dealt with exactly. For example, the paper says that each offspring is assigned a randomly selected site, then competes against the occupant of the site and probabilistically takes over. What if one offspring takes over, but then a second offspring is chosen (by chance) to compete for the same site? Is that second offspring then competing against the previous occupant, or against the new occupant, i.e., the offspring that has already taken over from the previous occupant?\n\n\u2013 And when do individuals die? Before or after offspring production?\n\n\u2013 The authors mention the existence of rock-paper-scissor interactions, but it is not at all clear what the importance of such interactions are for the overall dynamics of the system. Are such interactions very common, essential, just a quirk?\n\n\u2013 Subsection \u201cImpact of trade-off and lifespan on diversity\u201d: it is not clear what \"average cycle strength\" is. Which cycles were used to calculate the average of what?\n\n\u2013 Subsection \u201cImpact of trade-off and lifespan on diversity\u201d: shouldn't the average interaction strength, i.e. the average values of all I's, be ca. 0.5?\n\n\u2013 I failed to understand Figure 2. Please explain better.\n\n\u2013 Subsection \u201cImpact of trade-off and lifespan on diversity\u201d: the Darwinian demon doesn't really make sense: with no diversification, there is only one strain present, and it is impossible to say what kind of competitive ability this strain has, because no other strain is present\u2026 so what are you actually trying to say?\n\n\u2013 I don't find the section about the relationship between tradeoff and productivity very convincing, because it is too vague. I think the authors need to be more specific and detailed here.\n\n\u2013 Section \"Frequency-dependent selection\": I think a more mechanistic explanation for differences of speciation and extinction rates compared to Poisson processes is needed. What is the cause of these differences? When is this mechanism at play, and when not? In particular, why do speciation rates increase with the diversity in the system? Shouldn't this only happen at certain intermediate levels of diversity, because when the community reaches a high-level diversity, speciation rates presumably decline?\n\n\u2013 I would like to bring the authors' attention to the recent paper by Doebeli and Ispolatov, (2017), which also presents models for community assembly and evolution of diversity are presented, with some parallels to the work discussed here. These parallels could be taken up in the Discussion section.\n\nReviewer #2:\n\nThe authors present a model for studying diversification dynamics as an outcome of, as they claim, competition for a single resource. I have substantial concerns regarding the insight that could be gained from this work, mainly due to the type of model and the lack of a mechanistic interpretation.\n\nSubsection \u201cModel\u201d and subsection \u201cFrequent-dependent selection\u201d: Your trait space is Nsp-dimensional, where Nsp is the number of extant strains. In particular, the trait space grows explicitly with every strain added. Is it surprising that you get coexistence of Nsp strains in an Nsp-dimensional trait space? Further, is it surprising that \"emergence of new species increases the probability for generation of further species\"? It seems to me that this is quite expected, given your model. This also explains why you get these mass extinction events; there's a positive feedback loop between speciation rate and species number that is easy to recognize even without simulations.\n\nSubsection \u201cGeneration of Diversity\u201d: Please explain how you define \"functional diversity\" in your model at first mention. Appendix 6 was uninformative. The only information I found was in the caption of Figure 1, where you define functional diversity \"in terms of the size of minimum spanning tree (SMST) in trait space\". But your trait space is continuous ([0,1]Subsection \u201cGeneration of Diversity\u201d: Please explain how you define \"functional diversity\" in your model at first mention. Appendix 6 was uninformative. The only information I found was in the caption of Figure 1, where you define functional diversity \"in terms of the size of minimum spanning tree (SMST) in trait space\". But your trait space is continuous ([0,1]Subsection \u201cGeneration of Diversity\u201d: Please explain how you define \"functional diversity\" in your model at first mention. Appendix 6 was uninformative. The only information I found was in the caption of Figure 1, where you define functional diversity \"in terms of the size of minimum spanning tree (SMST) in trait space\". But your trait space is continuous ([0,1]Subsection \u201cGeneration of Diversity\u201d: Please explain how you define \"functional diversity\" in your model at first mention. Appendix 6 was uninformative. The only information I found was in the caption of Figure 1, where you define functional diversity \"in terms of the size of minimum spanning tree (SMST) in trait space\". But your trait space is continuous ([0,1]^Nsp) so a priori there is no tree structure connecting species (apart from phylogeny). So how do you define a spanning tree, and how is this spanning tree not a function purely of the number of strains?\n\nSubsection \u201cGeneration of Diversity\u201d: Related to the previous point. What is a \"functional niche\" in your model? Since you did not discuss mechanisms underlying the interaction matrix, it is not clear what a function is.\n\nSubsection \u201cGeneration of Diversity\u201d: Saying your model has no geographical isolation nor resource partitioning sounds meaningless. You have not specified the underlying mechanisms for your \"interaction trait\", so it is hard to draw a comparison to other more mechanistic models (i.e. where the physiological/metabolic traits are explicit).\n\nSubsection \u201cModel\u201d: Since replication is non-sexual, what is the purpose of defining \"species\" separately from \"strain\" in your model? In Appendix-I you mention that you define \"species\" operationally based on divergence time and using some arbitrary cutoff threshold, so this sounds a bit analogous to operational taxonomic units (OTUs) in microbiology. However, you model mutation/selection/growth dynamics at the strain level. Please explain early on what additional insight one may get from counting \"species\".\n\nDiscussion section: You claim that modeling in terms of interaction traits (which in your case means in terms of outcome probabilities of local competitive exclusion) \"coarse-grains these complex systems in a natural, biologically meaningful way.\". But many of your interpretations and comparisons to other models or data require translating your Abstract \"interaction traits\" to functions or life histories. You did not discuss at all what real traits could possibly give rise to your interaction trait matrix. Your interaction matrix seems to loosely represent competitive interactions; but then it can only explain diversity within a single trophic level (e.g. in the case of animals) or a single metabolic niche (e.g. in the case of bacteria); yet, you keep referring to \"functional diversity\".\n\nDiscussion section: Related to the previous comment. You say that your formulation was \"chosen to reflect reasonable properties\" and that you \"have assumed a single, limiting resource in a well-mixed system\". However, you did not provide any plausible mechanism for how such an interaction matrix could arise from competition for a single resource in a well-mixed system. This is actually a big question: how can one obtain a Nsp-dimensional trait space through competition for a single resource pool?\n\nReviewer #3:\n\nThe manuscript \"Trade-off shapes diversity in eco-evolutionary dynamics\" presents a quite original evolutionary-ecological individual-based model based on a compromise between growth rate and competitiveness. The model is simple but exhibits quite rich evolutionary properties, which, while being not entirely unpredictable, are intriguing and provide useful insights and generalizations. This combination of simplicity of the rules and relevance of the dynamics usually distinguishes successful and long-living models from the rest and makes them understandable and appealing to a wide audience. Besides, I cannot see any potentially \"hidden\" flaws in the model and interpretation of results that could cast doubts on the main conclusions. Thus, in my opinion, the manuscript may be published in eLife after the following and, perhaps, other comments are addressed:\n\n1) The complexity of algebra in (3) and subsequent definition of s is definitely unwarranted by an otherwise quite accessible level of math in the rest of the paper. Furthermore, it apparently confuses even the Authors when they classify the domains of weak and strong trade-offs:\n\nIt looks like the definitions of high-tradeoff (\\\u03b4 ~ 1) and intermediate trade-off (\\\u03b4 ~ 1/2) are misleading. The strongest dependence of r on C appears to be when \\\u03b4=1/2, which also follows from Figure 1. The phrase \"In high-trade-off phase III, any small change in C changes r drastically\" is simply wrong for all but very small C. I would call both the \\\u03b4=1 and \\\u03b4=0 limits as small tradeoffs as they look perfectly symmetric, or, even better, choose another, more heuristic and transparent, form of parametrization of r vs. C.\n\n2) Would it be possible to say anything about population dynamics of \"species\"? Is it cyclic?\n\n3) At least qualitatively, what are mechanisms of mass extinction?\n\n4) An explicit plot of diversity vs. system size (perhaps just for the \u03b4 optimal for diversity) and, ideally, an estimate of corresponding scaling, would be very revealing.\n\n5) Similarly, how the level of diversity and the typical number of traits in a species depends on the mutation amplitude m?\n\n6) For a general reader of eLife, the MDS algorithm needs to be explained and properly referenced. It plays a major role in interpreting the results, however, is presented only by the name of the corresponding function in R.\n\n7) A qualitative explanation about the minimal spanning tree analysis would help as well.\n\nReviewer #4:\n\nI've carefully read the paper \"Trade-off shapes diversity in eco-evolutionary dynamics\" by Farnoush Farahpour and colleagues. In it, they use an individual-based eco-evolutionary model to understand the emergence of community structure based on evolving interactions. The model produces some interesting patterns, such as clustering in trait-space and the evolution of intransitive competitive loops.\n\nThere are a number of aspects of this paper that I liked: the focus on evolution of interactions, the emergence of intransitive loops, the dimension reduction applied to the vector-valued traits, and the comparison with a neutral model variant. These are all creative contributions to the modeling literature.\n\nWhile I was intrigued by the idea of modeling the evolution of interactions directly, it was hard for me to connect it to real ecological systems. The interactions between species are not determined by phenotypic traits of the organisms but evolve independently. It's based on an unstated assumption that species interactions are totally idiosyncratic and unpredictable. I feel that evolution in this model is too unconstrained, despite the trade-off between competitive ability and reproduction, resulting in the prevalence of intransitive loops. As a complex-systems researcher, I'm fascinated, but as an evolutionary ecologist, I'm skeptical.\n\nThe authors need to do a better job putting their work in the context of the extensive literature on eco-evolutionary dynamics. The text had many statements that had me scratching my head. Examples:\n\n1) Framing the problem in terms of resources, but in the model there are no actual resources.\n\n2) The competitive exclusion principle only holds at equilibrium (Armstrong, Levins) and must count resources plus shared predators (Levin, 1970).\n\n3) The \"eco-evolutionary models\" cited in the Introduction seem to be just ecological models.\n\n4) In the Introduction, the \"observed eco-evolutionary dynamics\" cited that the model \"closely resembles\" aren't empirical patterns observed in real systems, but just results of other models.\n\n5) Discussion of speciation overlooks that the species here are clonal, so what's hard about speciation?\n\nAlso, some of the sentences throughout were hard to understand the meaning of. E.g., \"Evolutionary changes at the genetic level influence ecology if they cause phenotypic variations that affect biotic or abiotic interactions of species which in turn changes the species composition and occasionally forces species to evolve their strategies.\"\n\nSome of the details of the model implementation weren't clear. For example:\n\nHow exactly do births happen (subsection \u201cModel\u201d)?\n\nIs mu a mutation \"rate\" or probability of mutation during a replication event (subsection \u201cModel\u201d)?\n\nWhy is lifespan drawn from a Poisson distribution (Subsection \u201cModel\u201d) and how can that be infinite (Figure 2)?\n\nIf each individual stays in a site, is it really well-mixed?\n\nDoes mutation of one species' interaction coefficients end up changing another species' reproduction rate through the trade-off (2)?\n\nCould you not get at the same questions more efficiently using deterministic Lotka-Volterra dynamics?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Trade-off shapes diversity in eco-evolutionary dynamics\" for further consideration at eLife. Your revised article has been evaluated by Ian Baldwin (Senior editor), a Reviewing editor, and 4 reviewers (the same reviewers as for the initial submission, reports below).\n\nThe reviewers agree that substantial effort was put into the revision. However, there are a number of remaining issues that call for a further in-depth revision. Reviewers 1, 2 and 3 (who was previously reviewer 4) still have substantial concerns about aspects of the paper. These concerns are all related to issues raised in the initial reports and will need to be addressed in a constructive manner if the paper is to be published in eLife.\n\nEssential revisions:\n\n1) Individual-based vs deterministic systems: both reviewer 1 and 4 (formerly reviewer 3) point out that it is not at all clear that these different approaches would yield different results. In other words, it is not clear that salient results reported in the paper depend crucially on the presence of noise, as appears to be the contention of the authors. This needs to be explored at least to some extent. This issue cannot be dealt with by simply \"citing it away\".\n\n2) The assumption of independent evolution of the elements of the interaction matrix needs to be discussed in more detail and clarity, and in the context of biological realism. This point was raised by both reviewers 1 and 3 (formerly reviewer 4).\n\n3) The \"single resource\" issue is related to point 2, and also needs a revised treatment.\n\n4) I am sympathetic with reviewer 3's (formerly reviewer 4) concern about some of the references to previous work, particularly with regard to tradeoffs.\n\n5) Please also address the remaining points, e.g. the definition of \"species\" raised by reviewer 2, as well as other minor points.\n\nReviewer #1:\n\nThe authors did a very good and thorough job in revising their paper. Almost all of my concerns have been addressed satisfactorily. The one remaining issue is that I don't buy the authors case for only using individual-based simulations (my original comment 2). The authors state in their rebuttal that \"It has been extensively discussed in the literature that continuum approaches are unsuitable in cases of non-equilibrium dynamics,.\u2026\", and they somehow conclude from this that the deterministic Lotka-Volterra description (which in my mind is the same as a \"logistic\" description) would not be appropriate for the problem at hand. But that is exactly the question: in some general sense, one would expect that in the limit of large population sizes, the individual-based model used by the authors would converge to some deterministic model, and my guess is that this model would be at least close to the \"mean-field\" Lotka-Volterra model. It then becomes important to understand just which features of the individual-based models can be understood by studying the much simpler mean-field model. The authors present no arguments why there even are *any* features of their individual-based model that could not be observed in the deterministic model. They refer to near-neutrality, but that's exactly one of the features that was observed in similar deterministic Lotka-Volterra models by Shtilerman et al., (2015). I am not convinced that the salient results reported in this paper could not also be obtained with deterministic models. Just claiming that some results cannot be obtained in that way on general grounds does not make it true in this particular case. The obvious advantage of using deterministic models would be that such models are much more tractable analytically (e.g. from a statistical physics point of view), and it is therefore important to know how far one can get using them. I think it would not be too onerous to at least do some tests using the deterministic models to either confirm or refute the claim that they can produce similar results as the individual-based models. The question is: does stochasticity really play a major role in producing the results reported in this paper? If so, then this would be important to know (but this point would need to be made based on more than just a vague statement that their \"system falls into the category of those better modeled by individual- based models\"). If not, then the deterministic models should do a good job reproducing these results.\n\nReviewer #2:\n\nThe authors have partly addressed my concerns and those of the other reviewers. I do however still have two major concerns:\n\n1) I agree that a low-dimensional phenotype space (e.g. pertinent to exploitation of/competition for a single resource) can give rise to an Nst x Nst interaction matrix that encodes the competitive interaction between strains. However, the crucial assumption of the authors is that each term in this matrix (well, half of the terms) can vary independently. How this could come about in reality is unclear to me.\n\nIn other words, if \"P\" is the underlying phenotype space (solely related to consumption of/competition for the common resource) and \"I\" is the space of possible interaction matrices, what could the mapping f:P->I possibly look like, such that f(P) is an Nst x Nst/2 dimensional manifold?\n\nI strongly recommend:\n\n(a) Avoid any comparison to \"single resource\" models or real systems.\n\n(b) Acknowledge early on that an important assumption of the model is that the terms of the interaction matrix (well, half of them) can in principle vary independently (i.e. are not constrained explicitly due to genetics or ecology). Whether this assumption is met in reality is an open question.\n\n(c) Clarify in the discussion that this paper does not address the important question of how such a high-dimensional interaction trait space (i.e. with Nst x Nst/2 independent axes) might arise, or provide a plausible example.\n\n2) The definition of \"species\" by the authors is still confusing and of questionable relevance. The authors define \"species\" operationally based on a cutoff threshold in phylogenetic distance. While this is common practice in microbial ecology (where such clusters are called Operational Taxonomic Units), few would claim that the emergence and disappearance of OTUs is comparable to \"speciation\" dynamics in sexually reproducing organisms.\n\nWhat I also found confusing is that in their \"response to reviewers\", the authors explain that \"species\" are \"well-separated non-transient clusters in trait space\". This does not align with the definition provided in their manuscript (Appendix 1), where species are defined as \"clusters of strains separated by long-lasting gaps in a phylogenetic tree\". Are these definitions equivalent in your model?\n\nWhile the emergence of clusters in trait space is indeed interesting, I would recommend not calling these clusters \"species\", since clusters in trait space need not always be monophyletic and could in principle also consist of distantly related strains that happen to have converged in trait space.\n\nReviewer #3:\n\nThis is reviewer 4 from the original submission again. This remains an interesting yet frustrating manuscript. The authors resisted many of the good suggestions from the other reviewers and myself in how they can place their manuscript in the broader context. In the end, it's the authors' manuscript, but I still think they could do a better job in the introduction and discussion to not confuse potential readers.\n\nTo me, the most interesting part of the manuscript is the idea that species interactions might be so high dimensional that it is best to focus on interaction traits that summarize many idiosyncratic phenotypes. This is described in the discussion but should also be highlighted more in the Introduction. The relationship between phenotypic traits and interaction traits should be clarified to better address comments 1 and 6-7 of reviewer 2. Maybe could be described as a rugged \"phenotype-interaction map\", in analogy to the idea of \"genotype-phenotype maps\"? By the way, this is a big assumption of the model, not an established empirical fact, but still an interesting basis for the theory.\n\nReviewer 2 and I were confused by statements about limiting resources and the competitive exclusion principle. In the revision, the authors still make statements like \"GLV equations model competition over renewable resources\" (Subsection \u201cModel\u201d), \"we observe high diversity in a well-mixed homogenous system without violating the competitive exclusion principle\" (subsection \u201cTrade-off anchors eco-evolutionary dynamics in physical reality\u201d) and \"we have assumed a single, limiting resource\" (Subsection \u201cPower and limitations of ITEEM\u201d). Such statements will misdirect many readers into thinking about resource competition, R* rules, and the impossibility of coexistence of more species than resources. This is not appropriate, because in this model, the species interactions are direct (interference competition) and idiosyncratic. Allelopathy among plants or microbes would be a more relevant example than resource competition. The authors should remove all mentions about resources in the paper, because they will only confuse readers.\n\nConcerning my previous comment 4, please don't portray other theoretical results as empirical support for your new model. Keep them clearly distinct.\n\nIt's a big stretch to say claim \"life-history trade-offs\" are a missing ingredient in existing theory (Introduction). Almost all existing eco-evolutionary theory is built around trade-offs. Models without trade-offs are the exception, not the rule.\n\nThe references cited in subsection \u201cModel\u201d, do not represent current, mainstream ecological thinking.\n\nReviewer #4:\n\nI think that the authors addressed the main points from my previous review, just a few minor issues remain.\n\nI still disagree with the definition of \u201cstrong' and \u201cweak' tradeoff limits, seeing, for example, plots in Figure 1 as completely symmetric. In my opinion, the strongest dependence of birthrate on competitiveness happens at the line in the middle of the plot, presumably for \u03b4=0.5. I guess it's more a terminological discussion, however, I find the definition of the strong tradeoff adopted by the Authors rather confusing.\n\nCaption to Figure 2, \u201cDisc diameter scales with total abundance of species' Does it mean that it scales with the number of individuals in a species? Or the number of species in the system? What kind of scaling is it?\n\nSubsection \u201cGeneration of diversity\u201d, \u201cOccasionally diversity collapses from medium levels abruptly to very low levels, usually followed a recovery\u201d, should it read \u201cby a recovery\u201d?\n\nAppendix 1 (Eq.8) Is \u03b3 the index of summation, running from one to N_st? If not, what is the index?\n\nI don't know if I should dwell on that, yet I also strongly disagree with the Authors' reply to the second comment of the first reviewer, and especially, with the apparent misuse of the term \u201cmean field'.\n\nIn short, I believe that both implementations of this process, the individual-based and continuous-populations models should yield very similar phenomenology. Both those implementations are mean field in their nature as neither has any spatial correlations (in phenotypic or geographical space) or long temporal memory. The only difference between those is the presence of some stochasticity or noise in the individual-based model. If the Authors truly believe that such noise is the necessary source of the observed phenomenology, it should be clearly stated in the manuscript. Which, I believe, would have strongly depreciated the generality of conclusions. However, I don't think this is the case; on contrary, a continuous population version of this model would have enabled one to get \u201ccleaner' results, speeding up the simulations and expanding the scaling range by including more species. The main distinct features that the model develops, such as temporal changes in the population, interaction cycles, speciations, etc., do not appear to be fluctuation-dominated. A minor related comment, contrary to what is said int he appendix, the per capita death rate can be included into the continuous description (which is often also called the logistic model as all elements of matrix A are negative) by simply reducing the birth rate.\n",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8484598-ce11-49f3-9dac-4f7c781182bd",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C1",
+      "claim": "ITEEM is an Interaction- and Trade-off-based Eco-Evolutionary Model in which species compete in a well-mixed system.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce an Interaction- and Trade-off-based Eco-Evolutionary Model (ITEEM), in which species are competing in a well-mixed system, and their evolution in interaction trait space is subject to a life-history trade-off between replication rate and competitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the model's characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "bac4d98e-32a1-40c5-86ff-20709fdeb45b",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C2",
+      "claim": "In ITEEM, evolution in interaction trait space is subject to a life-history trade-off between replication rate and competitive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduce an Interaction- and Trade-off-based Eco-Evolutionary Model (ITEEM), in which species are competing in a well-mixed system, and their evolution in interaction trait space is subject to a life-history trade-off between replication rate and competitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the trade-off mechanism in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "b1671d96-3bef-431d-a97b-600b57d5f198",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C3",
+      "claim": "The shape of the trade-off has a fundamental impact on eco-evolutionary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the shape of the trade-off has a fundamental impact on eco-evolutionary dynamics, as it imposes four phases of diversity, including a sharp phase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a demonstrated finding from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "5ab2ece6-c14c-4611-acaa-36e82c7998b0",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C4",
+      "claim": "The trade-off shape imposes four phases of diversity, including a sharp phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the shape of the trade-off has a fundamental impact on eco-evolutionary dynamics, as it imposes four phases of diversity, including a sharp phase transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number of phases and mentions a phase transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "76097cb3-88a4-4a74-8c90-19e24e45f474",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C5",
+      "claim": "ITEEM produces self-organization towards structured communities with high and sustained diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably we find self-organization towards structured communities with high and sustained diversity, in which competing species form interaction cycles similar to rock-paper-scissors games.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a notable finding from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "76262a35-3a66-4bb6-bac9-f5b8b511e5e0",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C6",
+      "claim": "Competing species in ITEEM form interaction cycles similar to rock-paper-scissors games.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably we find self-organization towards structured communities with high and sustained diversity, in which competing species form interaction cycles similar to rock-paper-scissors games.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the formation of rock-paper-scissors-like cycles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "b92c8bd6-9212-4b66-8538-d8fb8b6fc4e0",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C7",
+      "claim": "Immense diversity is observed in natural communities.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an immense diversity in natural communities (Hutchinson, 1961; Tilman, 1982; Huston, 1994), but also in controlled experiments (Maharjan et al., 2006; Gresham et al., 2008; Kinnersley et al., 2009; Herron and Doebeli, 2013; Kvitek and Sherlock, 2013), where many species continuously compete, diversify and adapt via eco-evolutionary dynamics (Darwin, 1859; Cody and Diamond, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "3b8d8283-968d-45d7-80e4-ba0e4f8d5c54",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C8",
+      "claim": "Diversity is observed in controlled experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an immense diversity in natural communities (Hutchinson, 1961; Tilman, 1982; Huston, 1994), but also in controlled experiments (Maharjan et al., 2006; Gresham et al., 2008; Kinnersley et al., 2009; Herron and Doebeli, 2013; Kvitek and Sherlock, 2013), where many species continuously compete, diversify and adapt via eco-evolutionary dynamics (Darwin, 1859; Cody and Diamond, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "6b98fa44-d1bd-4e2e-b1ed-58f6bc518401",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C9",
+      "claim": "Basic theoretical models predict that ecological and evolutionary dynamics tend to decrease the number of coexisting species by competitive exclusion or selection of the fittest.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the basic theoretical models (Volterra, 1928; Tilman, 1982) predict that both ecological and evolutionary dynamics tend to decrease the number of coexisting species by competitive exclusion or selection of the fittest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement references established theoretical models with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "cda72c8a-c91a-473b-bec6-e7c16edf7e4f",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C10",
+      "claim": "There is an apparent contradiction between observations of biodiversity and theoretical predictions, giving biodiversity the air of a paradox.",
+      "claim_type": "EXPLICIT",
+      "source": "This apparent contradiction between observations and theory gives the stunning biodiversity in communities the air of a paradox (Hutchinson, 1961; Sommer and Worm, 2002) and hence has begotten a long, ongoing debate on the mechanisms underlying emergence and stability of diversity in communities of competitive organisms (Hutchinson, 1959; Huston, 1994; Chesson, 2000; Sommer and Worm, 2002; Doebeli and Ispolatov, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations describing the biodiversity paradox.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "99f0b4a2-894d-49c5-91f4-1ab91b1d9774",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C11",
+      "claim": "Diversity is observed under stable and homogeneous conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, diversity is also observed under stable and homogeneous conditions (Gresham et al., 2008; Kinnersley et al., 2009; Maharjan et al., 2012; Herron and Doebeli, 2013; Kvitek and Sherlock, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by multiple experimental citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "101212f7-efde-426b-9681-7c51d01d3a96",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C12",
+      "claim": "Life-history trade-offs are fundamentally imposed by physical laws such as energy conservation or other thermodynamic constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all investigated features responsible for diversity, mentioned above, life-history trade-offs that regulate energy investment in different life-history strategies are fundamentally imposed by physical laws such as energy conservation or other thermodynamic constraints, and thus present in any natural system (Stearns, 1989; Gudelj et al., 2007; Del Giudice et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations and references to physical laws.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "bd6dd9fa-06b8-4d87-a82e-4c365d576816",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C13",
+      "claim": "Life-history trade-offs are present in any natural system.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all investigated features responsible for diversity, mentioned above, life-history trade-offs that regulate energy investment in different life-history strategies are fundamentally imposed by physical laws such as energy conservation or other thermodynamic constraints, and thus present in any natural system (Stearns, 1989; Gudelj et al., 2007; Del Giudice et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations and logical inference from physical constraints.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "e8eb25d8-bd66-46db-9d44-a3f0d245d8ae",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C14",
+      "claim": "Physical laws constrain evolutionary trajectories in trait space of evolving organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These physical laws constrain evolutionary trajectories in trait space of evolving organisms and determine plausible evolutionary paths (Fraebel et al., 2017; Ng'oma et al., 2017), i.e. combinations of strategies adopted or abandoned over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "c7469eb9-ffcc-457d-b6dc-2f8dea01e6ca",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C15",
+      "claim": "If metabolic trade-offs are considered, stable coexistence of species becomes possible even at equilibrium and in homogeneous environments.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown, for example, that if metabolic trade-offs are considered, even at equilibrium and in homogeneous environments, stable coexistence of species becomes possible (Gudelj et al., 2007; Beardmore et al., 2011; Maharjan and Ferenci, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to studies demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "54ef2245-9035-4404-88b4-86fbf0b56e08",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C16",
+      "claim": "ITEEM is the first model which joins interaction-space description with a life-history trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, ITEEM is the first model which joins these two elements, the interaction-space description with a life-history trade-off, that we deem crucial for an understanding of eco-evolutionary dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly state this as a novel contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "5e4b4dd4-4602-43c2-b5bd-bd2562e81ba6",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C17",
+      "claim": "ITEEM generates large and complex biodiversity over long times without any ad hoc assumption.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a finding from the model with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "b53e2562-2c71-46ca-a0ab-4ede80ae7705",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C18",
+      "claim": "ITEEM produces sympatric speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "a653d4eb-c6de-4ee6-a61c-a63ef552d33d",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C19",
+      "claim": "ITEEM produces emergence of two or more levels of differentiation similar to phylogenetic structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0d22f404-0277-4b53-97f6-c382fa1a151e",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C20",
+      "claim": "ITEEM produces occasional collapses of diversity and mass extinctions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2e53e02f-6d80-4895-92f7-01ad8c28adca",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C21",
+      "claim": "ITEEM produces emergence of cycles in interaction networks that facilitate species diversification and coexistence.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ITEEM dynamics, without any ad hoc assumption, not only generates large and complex biodiversity over long times (Herron and Doebeli, 2013; Kvitek and Sherlock, 2013) but also closely resembles other observed eco-evolutionary dynamics, such as sympatric speciation (Tilmon, 2008; Bolnick and Fitzpatrick, 2007; Herron and Doebeli, 2013), emergence of two or more levels of differentiation similar to phylogenetic structures (Barraclough et al., 2003), occasional collapses of diversity and mass extinctions (Rankin and L\u00f3pez-Sepulcre, 2005; Sol\u00e9, 2002), and emergence of cycles in interaction networks that facilitate species diversification and coexistence (Buss and Jackson, 1979; Hibbing et al., 2010; Maynard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2535de9d-e3d9-4791-a751-1e0a463a4677",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C22",
+      "claim": "The model shows a unimodal ('humpback') course of diversity as function of trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the model shows a unimodal ('humpback') course of diversity as function of trade-off, with a critical trade-off at which biodiversity undergoes a phase transition, a behavior observed in nature (Kassen et al., 2000; Smith, 2007; Vallina et al., 2014; Nathan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable natural observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "6d157be5-b217-498c-a905-b4815676a21d",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C23",
+      "claim": "There is a critical trade-off at which biodiversity undergoes a phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the model shows a unimodal ('humpback') course of diversity as function of trade-off, with a critical trade-off at which biodiversity undergoes a phase transition, a behavior observed in nature (Kassen et al., 2000; Smith, 2007; Vallina et al., 2014; Nathan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a model result with citations to comparable natural observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f635d8d3-8d37-458e-ad4e-525e8a72929f",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C24",
+      "claim": "Diversity is a natural outcome of competition if interacting species evolve under physical constraints that restrict energy allocation to different strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "By changing the shape of trade-off and comparing the results with a no-trade-off model, we show that diversity is a natural outcome of competition if interacting species evolve under physical constraints that restrict energy allocation to different strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a conclusion from model comparisons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0634260a-23be-452d-9b9d-6e3a0685b958",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C25",
+      "claim": "A unified treatment of ecology and evolution under physical constraints dissolves the apparent paradox of stable diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural emergence of diversity from a bare-bone eco-evolutionary model suggests that a unified treatment of ecology and evolution under physical constraints dissolves the apparent paradox of stable diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "44fbd0ae-0d8a-413c-b984-4700dce51e3a",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C26",
+      "claim": "ITEEM is an individual-based model.",
+      "claim_type": "EXPLICIT",
+      "source": "ITEEM is an individual-based model (Black and McKane, 2012; DeAngelis and Grimm, 2014) with simple intuitive updating rules for population and evolutionary dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly describes the model type with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "254bd228-129f-465b-9013-07cc36a647b2",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C29",
+      "claim": "The community in ITEEM is well-mixed, meaning the probability for an encounter is the same for all pairs of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The community is well-mixed, which means that the probability for an encounter is the same for all pairs of individuals, and that the probability of an individual to enter a site (i.e. to access resources) is the same for all individuals and sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly defines the well-mixed property.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "d0a11a0d-c78f-4a5c-8fc8-9728f6a9dfd3",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C30",
+      "claim": "The population-level approximation of the stochastic, individual-based ecological dynamics of ITEEM leads to the competitive Lotka-Volterra equations.",
+      "claim_type": "EXPLICIT",
+      "source": "ITEEM belongs to the well-established class of generalized Lotka-Volterra (GLV) models in the sense that the population-level approximation of the stochastic, individual-based ecological dynamics of ITEEM leads to the competitive Lotka-Volterra equations (Appendix 1, Generalized Lotka\u2013Volterra (GLV) equation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly connects ITEEM to GLV models with reference to appendix.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "bb33d769-a4f7-4f83-a91b-ad5cc0be74b7",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C31",
+      "claim": "During long-time eco-evolutionary trajectories in ITEEM, new, distinct species emerge and their coexistence establishes sustained high diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observe that during long-time eco-evolutionary trajectories in ITEEM new, distinct species emerge, and their coexistence establishes a sustained high diversity in the system (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as an observation from simulations with reference to Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "53e6806b-a045-435f-adb2-9b6cbd5f925b",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C32",
+      "claim": "The emerging diversity in ITEEM has a clear hierarchical structure in the phylogeny tree and trait space.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the emerging diversity has a clear hierarchical structure in the phylogeny tree and trait space: at the highest level we see that the phylogenetically separated strains (Figure 3a and Appendix 1, Species and strains) appear as well-separated clusters in trait space (Figure 3b) similar to biological species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as an observation with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "d8a7aeaa-43f4-4550-ad57-0ffaf6495e98",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C33",
+      "claim": "Phylogenetically separated strains appear as well-separated clusters in trait space similar to biological species.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the emerging diversity has a clear hierarchical structure in the phylogeny tree and trait space: at the highest level we see that the phylogenetically separated strains (Figure 3a and Appendix 1, Species and strains) appear as well-separated clusters in trait space (Figure 3b) similar to biological species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as an observation with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "e9b224ba-87ad-47b1-9f9d-508a1651f648",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C34",
+      "claim": "The model shows evolutionary divergence from one ancestor to several species consisting of hundreds of coexisting strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model shows evolutionary divergence from one ancestor to several species consisting of a total of hundreds of coexisting strains (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as a model result with reference to Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8cac6b4e-3fe0-4f08-a0dc-41103b002cee",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C35",
+      "claim": "Evolutionary divergence in interaction space is the result of frequency-dependent selection without any further assumption on the competition function.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolutionary divergence in interaction space is the result of frequency-dependent selection without any further assumption on the competition function, for example a Gaussian or unimodal competition kernel (Dieckmann and Doebeli, 1999; Doebeli and Ispolatov, 2010), or predefined niche width (Scheffer and van Nes, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as an explanation of model results with citations to alternative approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0d08b0a3-fe4d-4f8c-96dc-42545a6db90c",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C36",
+      "claim": "The observed pattern of divergence contradicts the long-held view of sequential fixation in asexual populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed pattern of divergence contradicts the long-held view of sequential fixation in asexual populations (Muller, 1932).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a conclusion from model results with citation to the contradicted view.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "68d46e10-53a2-4314-b23b-794fc2a9a6f7",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C37",
+      "claim": "ITEEM shows frequently concurrent speciation with emergence of two or more species in quick succession.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we see frequently concurrent speciation with emergence of two or more species in quick succession (Figure 3a), in agreement with recent results from long-term bacterial and yeast cultures (Herron and Doebeli, 2013; Maddamsetti et al., 2015; Kvitek and Sherlock, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as a model result with reference to figure and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "717aeb5f-1a2d-4932-9650-f823215c5180",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C38",
+      "claim": "ITEEM systems self-organize toward structured communities.",
+      "claim_type": "EXPLICIT",
+      "source": "ITEEM systems self-organize toward structured communities: the interaction matrix of a diverse system obtained after many generations has a conspicuous block structure with groups of strains with similar interaction strategies (Figure 3e), and these groups being well-separated from each other in trait space (Figure 3b) (Sander et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as a model result with references to figures and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "1ae10fea-4635-4e4a-ac9c-eb971c8e35dd",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C39",
+      "claim": "The interaction matrix of a diverse ITEEM system has a conspicuous block structure with groups of strains with similar interaction strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "ITEEM systems self-organize toward structured communities: the interaction matrix of a diverse system obtained after many generations has a conspicuous block structure with groups of strains with similar interaction strategies (Figure 3e), and these groups being well-separated from each other in trait space (Figure 3b) (Sander et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as a model result with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "aa9fbbd2-b902-4a99-bcfe-a88b630f0e06",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C40",
+      "claim": "The block structure in the interaction matrix corresponds to self-organized, well-separated functional niches.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the block structure in Figure 3e corresponds to self-organized, well-separated functional niches (Whittaker et al., 1973; Rosenfeld, 2002; Taillefumier et al., 2017), each occupied by a cluster of closely related strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as an interpretation of model results with citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "58424f06-3137-4ab9-a7d7-8f9a8a1a1311",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C41",
+      "claim": "Niche differentiation among species facilitates their coexistence and is the result of frequency-dependent selection among competing strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This niche differentiation among species, which facilitates their coexistence, is the result of frequency-dependent selection among competing strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as an explanation of model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "e3cb8159-623f-4d9d-9d1e-7fad6390179a",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C42",
+      "claim": "Within each functional niche, the predominant dynamics determining relative abundances of strains is neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each functional niche the predominant dynamics, determining relative abundances of strains in the niche, is neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as a characterization of model dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "215521fd-16c1-4af7-8bd9-ecd23628cc0c",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C43",
+      "claim": "The increase of diversity in ITEEM coincides with growth of mean strength of cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We find in ITEEM networks that the increase of diversity coincides with growth of mean strength of cycles (Figure 3d,g and Appendix 1, Intransitive dominance cycles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as a finding with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "a9583b81-fae0-4970-973d-3f1fe7e64700",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C44",
+      "claim": "Cycles in ITEEM emerge and self-organize without any presumption or constraint on network topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that these cycles emerge and self-organize in the evolving ITEEM networks without any presumption or constraint on network topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement emphasizes a property of the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "44267e8f-2e86-4318-93dd-5a2e61d91195",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C45",
+      "claim": "Diversity in ITEEM occasionally collapses from medium levels abruptly to very low levels, usually followed by a recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Occasionally diversity collapses from medium levels abruptly to very low levels, usually followed by a recovery (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is presented as an observation with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f82a2d5c-ea7a-4346-91c6-49ec22a0ac82",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C46",
+      "claim": "Mass extinctions in ITEEM are always preceded by exceptionally high average cycle strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "While the diversity immediately before mass extinctions is inconspicuous, these events are always preceded by exceptionally high average cycle strengths (Appendix 1, Collapses of diversity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as an observation from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8d40bbab-61a7-403b-8bd0-a3329294f29f",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C47",
+      "claim": "The eco-evolutionary dynamics in ITEEM depends on lifespan and trade-off between replication and competitive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The eco-evolutionary dynamics described above depends on lifespan and trade-off between replication and competitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement introduces the analysis of parameter dependencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "7dfc3988-eea2-475a-840d-96df06cea55f",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C50",
+      "claim": "In phase II, diversity is the highest and most stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Diversity in this phase II is the highest and most stable (middle inset in Figure 4b, Appendix 1, Diversity indexes and parameters of dynamics for different trade-offs and lifespans).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement characterizes a specific phase in the phase diagram.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "21228331-4d88-4bdf-855b-96371fe4c3ce",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C52",
+      "claim": "The steepness of the transition at \u03b4\u22480.7 increases with system size.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a phase transition, the steepness increases with system size (Appendix 1, Size of the system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents evidence supporting the phase transition interpretation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "98f8cbab-3285-4a97-bc6c-4bc53a4ab405",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C54",
+      "claim": "There is a well-known but not well understood unimodal relationship ('humpback curve') between biomass productivity and diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a well-known but not well understood unimodal relationship ('humpback curve') between biomass productivity and diversity: diversity as function of productivity has a convex shape with a maximum at middle values of productivity (Smith, 2007; Vallina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement describes an established ecological pattern with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "1a153fac-4c05-45db-bbd9-67b4c0f379c8",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C55",
+      "claim": "The productivity-diversity relation has been reported at different scales in a wide-range of natural communities.",
+      "claim_type": "EXPLICIT",
+      "source": "This productivity-diversity relation has been reported at different scales in a wide-range of natural communities, for example phytoplankton assemblages (Vallina et al., 2014), microbial (Kassen et al., 2000; Horner-Devine et al., 2003; Smith, 2007), plant (Guo and Berry, 1998; Michalet et al., 2006), and animal communities (Bailey et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by multiple citations across different systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2f5a5ef9-1cfa-4aca-ae5e-01f392ce69be",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C57",
+      "claim": "For long inter-event times, the decay of the distribution in ITEEM simulations is indistinguishable from that of a Poisson process.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for long inter-event times the decay of the distribution in ITEEM simulations is indistinguishable from that of a Poisson process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a finding from analysis of inter-event times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "280430c9-296a-4435-9410-118036b04f5b",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C59",
+      "claim": "ITEEM shows frequency-dependent selection with the emergence of new species increasing the probability for generation of further species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the model shows frequency-dependent selection with the emergence of new species increasing the probability for generation of further species, and the loss of a species making further losses more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a conclusion from the inter-event time analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "815d202e-9e03-49c9-af60-921f4fbacdf9",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C60",
+      "claim": "The loss of a species in ITEEM makes further losses more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the model shows frequency-dependent selection with the emergence of new species increasing the probability for generation of further species, and the loss of a species making further losses more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a conclusion from the inter-event time analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "3ab6dcc6-71f6-4fb5-9c1f-1d6e0b6484bb",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C64",
+      "claim": "The diversity in ITEEM is not a simple result of a mutation-selection balance but trade-off plays an important role in shaping diversity in trait space.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the diversity in ITEEM is not a simple result of a mutation-selection balance but trade-off plays an important role in shaping diversity in trait space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a conclusion from parameter variation studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0080cf9a-13c6-403b-8d7e-d22c3c50832a",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C65",
+      "claim": "The neutral model generates clumpy structures of traits, though the clusters are much closer and the functional diversity is much lower than in ITEEM at moderate trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to ITEEM, the neutral model generates clumpy structures of traits (Appendix 1, Neutral model), though here the clusters are much closer and thus the functional diversity is much lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a comparison between ITEEM and neutral model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f4b9b54a-9688-4936-b6e5-7e1c40d5d11d",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C66",
+      "claim": "The clumpy structures generated with the neutral model do not follow a stable trajectory of divergent evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The clumpy structures generated with the neutral model do not follow a stable trajectory of divergent evolution, and, hence, niche differentiation cannot be established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a finding from neutral model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8aa12b67-570b-4e49-ad57-11255f842f41",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C67",
+      "claim": "In a neutral model, without frequency-dependent selection and trade-off, stable structures and cycles cannot form in the community network.",
+      "claim_type": "EXPLICIT",
+      "source": "In a neutral model, without frequency-dependent selection and trade-off, stable structures and cycles cannot form in the community network, and consequently, diversity cannot grow effectively (Appendix 1, Neutral model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a finding from neutral model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "743d8759-54f1-43a7-aa48-f275dc3be07a",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C68",
+      "claim": "The comparison with the neutral model points to frequency-dependent selection as a promoter of diversity in ITEEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison with the neutral model points to frequency-dependent selection as a promoter of diversity in ITEEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a conclusion from model comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "3d3f963b-99f1-4b88-a22c-f88fac96e356",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C69",
+      "claim": "Competitive species in their evolutionary arms race explore new dimensions in phenotype space.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the phenotype space of real systems is often very high-dimensional; competitive species in their evolutionary arms race are not confined to few predefined phenotypes but rather explore new dimensions in that space (Maharjan et al., 2006; Maharjan et al., 2012; Zaman et al., 2014; Doebeli and Ispolatov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "d55d35b5-1e34-47c7-8d80-0f5a350567ab",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C70",
+      "claim": "Coevolution systematically pushes species toward complex traits that facilitate diversification and coexistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Coevolution systematically pushes species toward complex traits that facilitate diversification and coexistence (Zaman et al., 2014; Svardal et al., 2014), and evolutionary innovation frequently generates phenotypic dimensions that are completely novel in the system (Doebeli and Ispolatov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "e330d0d2-c72d-4125-a022-7c9abd4f73d6",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C71",
+      "claim": "Evolutionary innovation frequently generates phenotypic dimensions that are completely novel in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Coevolution systematically pushes species toward complex traits that facilitate diversification and coexistence (Zaman et al., 2014; Svardal et al., 2014), and evolutionary innovation frequently generates phenotypic dimensions that are completely novel in the system (Doebeli and Ispolatov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citation to relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "98131557-35eb-4c0d-b5cc-f2673aad3cd2",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C72",
+      "claim": "The conditions needed for frequency-dependent selection to generate diversity are satisfied more easily in high-dimensional phenotype spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been shown that the conditions needed for frequency-dependent selection to generate diversity are satisfied more easily in high-dimensional phenotype spaces (Doebeli and Ispolatov, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citation to relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "84dd5948-7498-47cc-a408-ebe33fbf71eb",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C73",
+      "claim": "The level at which diversity saturates in a system depends on its dimensionality, with higher dimensions allowing for more diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the level at which diversity saturates in a system depends on its dimensionality, with higher dimensions allowing for more diversity (Doebeli and Ispolatov, 2017), and the probability of intransitive cycles in species competition networks grows rapidly with the number of phenotype traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citation to relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "4375c4cb-7525-4a01-a081-b200dc8251b7",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C74",
+      "claim": "The probability of intransitive cycles in species competition networks grows rapidly with the number of phenotype traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the level at which diversity saturates in a system depends on its dimensionality, with higher dimensions allowing for more diversity (Doebeli and Ispolatov, 2017), and the probability of intransitive cycles in species competition networks grows rapidly with the number of phenotype traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is presented as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "dc71e84d-0345-4452-bd94-b05999cf0cb9",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C75",
+      "claim": "Interaction-based models offer a natural solution to the problem of high-dimensional phenotype space by mapping the system to an interaction trait space that can dynamically expand.",
+      "claim_type": "EXPLICIT",
+      "source": "As will be discussed below, interaction-based models such as ITEEM offer a natural solution to this problem by mapping the system to an interaction trait space that can dynamically expand by the emergence of novel interaction traits as eco-evolutionary dynamics unfolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents an argument for the interaction-based approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8a14c6ba-ae7d-4ec2-9590-dd7deab8d0ba",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C76",
+      "claim": "Interaction-based eco-evolutionary models rely on the assumption that phenotypic evolution can be coarse-grained to the interaction level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction-based eco-evolutionary models rely on the assumption that phenotypic evolution can be coarse-grained to the interaction level (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement explicitly describes the fundamental assumption of interaction-based models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f53861c9-dd46-4d0f-814b-3bfe4536b0d0",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C77",
+      "claim": "Phenotypic variations are relevant only when they change the interaction of organisms, directly or indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that regardless of the details of phenotypic variations, we just study the resultant changes in the interaction network. In an eco-evolutionary system dominated by competition this is justified because phenotypic variations are relevant only when they change the interaction of organisms, directly or indirectly; otherwise they do not impact ecological dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a justification for the interaction-based approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "b773ad66-34bf-4d05-adf6-55e196bf961c",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C78",
+      "claim": "The first interaction-based model by Ginzburg et al. (1988) was not able to produce a large stable diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "This model, although conceptually progressive, was not able to produce a large stable diversity, possibly because diversity requires components not included in this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement describes a limitation of previous work with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2e69d183-99eb-4378-9d85-ff9f1833f34c",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C79",
+      "claim": "Previous interaction-based models could not reproduce key characteristics of real systems, such as emergence of large and stable diversity, diversification to separate species and mass extinctions.",
+      "claim_type": "EXPLICIT",
+      "source": "While these models generated, as expected, higher diversity than the original Ginzburg model, they could not reproduce key characteristics of real systems, for example emergence of large and stable diversity, diversification to separate species and mass extinctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement describes limitations of previous models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "4c76b4c1-b753-4117-a133-de5ea8c29a2d",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C80",
+      "claim": "Life-history trade-offs are experimentally established as essential to living systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Life-history trade-offs, like the trade-off between replication and competitive ability, now experimentally established as essential to living systems (Stearns, 1989; Agrawal et al., 2010; Masel, 2014), are inescapable constraints imposed by physical limitations in natural systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8c96ccc2-36e4-4885-9fb4-243af14e5fae",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C81",
+      "claim": "ITEEM results show that trade-offs fundamentally impact eco-evolutionary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results with ITEEM show that trade-offs fundamentally impact eco-evolutionary dynamics, in agreement with other eco-evolutionary models with trade-off (Huisman et al., 2001; Bonsall et al., 2004; de Mazancourt and Dieckmann, 2004; Beardmore et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a conclusion from ITEEM results with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "5a851d19-7ab2-434a-9d56-eef93691dd39",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C82",
+      "claim": "ITEEM shows sustained high diversity in a well-mixed homogeneous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we observe with ITEEM sustained high diversity in a well-mixed homogeneous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a notable finding from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f43abc01-1a6a-4a0e-8c15-9706097e2f88",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C83",
+      "claim": "Moderate life-history trade-offs force evolving species to adopt different strategies, leading to the emergence of well-separated functional niches in interaction space.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possible because moderate life-history trade-offs force evolving species to adopt different strategies or, in other words, lead to the emergence of well-separated functional niches in interaction space (Gudelj et al., 2007; Beardmore et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents an explanation for the observed diversity with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "5b6cee01-495a-4714-aef1-7dcf090c9e9f",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C84",
+      "claim": "ITEEM provides an intuitive and generic conceptual framework with a minimum of specific assumptions or requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "ITEEM provides an intuitive and generic conceptual framework with a minimum of specific assumptions or requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement characterizes the model's approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "ed916d36-5ddf-42ff-bd1e-65ea9196eab9",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C85",
+      "claim": "ITEEM results are transferable to different systems, including biological, economical and social systems, wherever competition is the driving force of evolving communities.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes the results transferable to different systems, for example biological, economical and social systems, wherever competition is the driving force of evolving communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a claim about the generality of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "49e95d21-c96f-42d9-afb2-14bab8b4d018",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C86",
+      "claim": "In a bare-bone eco-evolutionary model with standard population dynamics and basic evolutionary process, diverse set of strategies will emerge and coexist if physical constraints force species to manage their resource allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Put simply, ITEEM shows generally that in a bare-bone eco-evolutionary model withal standard population dynamics (birth-death-competition) and a basic evolutionary process (mutation), diverse set of strategies will emerge and coexist if physical constraints force species to manage their resource allocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents a general conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "42b5ef87-473f-4030-b8b8-0604791ec792",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C87",
+      "claim": "ITEEM reproduces several phenomena of eco-evolutionary dynamics in a single framework that previously were addressed with a range of distinct models or not at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its minimalism, ITEEM reproduces in a single framework several phenomena of eco-evolutionary dynamics that previously were addressed with a range of distinct models or not at all, namely sympatric and concurrent speciation with emergence of new niches in the community, mass extinctions and recovery, large and sustained functional diversity with hierarchical organization, spontaneous emergence of intransitive interactions and cycles, and a unimodal diversity distribution as function of trade-off between replication and competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement summarizes the model's achievements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "52deff93-8e45-4407-a7de-67f45370f111",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C88",
+      "claim": "The model allows detailed analysis of eco-evolutionary mechanisms and could guide experimental tests.",
+      "claim_type": "EXPLICIT",
+      "source": "The model allows detailed analysis of eco-evolutionary mechanisms and could guide experimental tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement presents potential applications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "cd793fbe-aa84-4e2f-84b6-be318241ca57",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C89",
+      "claim": "The current ITEEM model has no adaptation and evolutionary-based diversity in lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, individual lifespans in this study came from a random distribution with an identical fixed mean. Hence we have no adaptation and evolutionary-based diversity in lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly describes a limitation of the current model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "9febb7be-728e-4db3-9f33-aea697723481",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C90",
+      "claim": "The current model is limited to communities of species that have similar lifespans and invest their main adaptation effort into growth or reproduction and competitive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "This limits the applicability of the current model to communities of species that have similar lifespans, and that invest their main adaptation effort into growth or reproduction and competitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly describes the scope of applicability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "3536fe21-5c0b-4ea9-8018-6edcbd98c314",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C91",
+      "claim": "The current ITEEM model assumes an undefined pool of steadily replenished shared resources in a well-mixed system.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model assumes an undefined pool of steadily replenished shared resources in a well-mixed system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement explicitly describes a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "9e023f9e-6751-40de-8d84-ddec23e85553",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "claim_id": "C93",
+      "claim": "In an interaction-based model like ITEEM, the interaction terms of the mutants change gradually and independently.",
+      "claim_type": "EXPLICIT",
+      "source": "In an interaction-based model like ITEEM the interaction terms of the mutants change gradually and independently (Equation 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement describes a property of the model with reference to equation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e6669ab-75a5-4342-b795-0fd81b325ba7",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ITEEM is an individual-based model in which species compete in a well-mixed system with evolution subject to a life-history trade-off between replication rate and competitive ability. The model's population-level approximation leads to competitive Lotka-Volterra equations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C26, C29, and C30 collectively describe the fundamental structure of ITEEM. The model description is internally consistent, clearly defined, and the connection to GLV equations provides theoretical grounding. These are definitional claims about the model itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2b4b6e49-47c0-442c-97e7-27800b325150",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The shape of the trade-off has a fundamental impact on eco-evolutionary dynamics, imposing four distinct phases of diversity including a sharp phase transition at \u03b4\u22480.7. The model shows a unimodal 'humpback' course of diversity as a function of trade-off, with phase II exhibiting the highest and most stable diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C22, C23, C47, C50, and C52 are supported by Figure 4, which shows clear phase structure and the unimodal relationship. The phase transition is demonstrated with system size dependence (C52), and the four phases are characterized with multiple diversity metrics. The visual evidence in Figure 4b strongly supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2fdf15cd-68ea-40b7-a454-1894f09255e6",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ITEEM produces self-organization towards structured communities with high and sustained diversity, where competing species form interaction cycles similar to rock-paper-scissors games. The emerging diversity has clear hierarchical structure with phylogenetically separated strains appearing as well-separated clusters in trait space, and the interaction matrix shows conspicuous block structure corresponding to self-organized functional niches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C31-C34, and C38-C40 are strongly supported by Figure 3, which shows the Muller plot (3a), trait space distribution (3b), interaction matrix block structure (3e), and dominance network (3f). The visual evidence clearly demonstrates hierarchical organization, cluster formation, and block structure in the interaction matrix.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "d20d3c6f-a7d3-41d8-9729-512685534722",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The increase of diversity in ITEEM coincides with growth of mean strength of cycles. These intransitive dominance cycles emerge and self-organize without any presumption or constraint on network topology, facilitating species diversification and coexistence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C44, and C21 are supported by Figure 3d and 3g, which show the correlation between diversity (SMST) and cycle strength over time. Figure 4a also shows cycle strength as a function of trade-off parameter. The emergence without imposed constraints is a property of the model design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "41ec475a-cc5c-4627-8c72-362bad393fc1",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Diversity in ITEEM occasionally collapses from medium levels abruptly to very low levels, usually followed by recovery. These mass extinction events are always preceded by exceptionally high average cycle strengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45, C46, and C20 describe mass extinctions visible in Figure 3d. However, the authors explicitly state 'Because of the rarity of mass extinctions in our simulations we currently have not sufficient data for a strong statement on this phenomenon.' The mechanistic explanation involving cycle strength is speculative ('it is conceivable that'). Insufficient statistical power undermines the 'always' claim in C46.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "9e95adda-8b66-4255-83f1-b35e303894db",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ITEEM shows evolutionary divergence in interaction space resulting from frequency-dependent selection without assumptions on competition function. The model produces concurrent speciation with emergence of two or more species in quick succession, contradicting the long-held view of sequential fixation in asexual populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C18 are supported by Figure 3a (Muller plot) showing concurrent speciation events, and by the model design which lacks imposed competition kernels or niche widths. The comparison to experimental observations (Herron and Doebeli, 2013; Maddamsetti et al., 2015) provides external validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "1f7db98b-b395-4aba-a8e6-926c17d4fdab",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Niche differentiation among species facilitates their coexistence and results from frequency-dependent selection among competing strategies. Within each functional niche, the predominant dynamics determining relative abundances of strains is neutral.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C42 are supported by the block structure in Figure 3e and the trait space clustering in Figure 3b. The interpretation that within-niche dynamics are neutral while between-niche dynamics are selective is consistent with the observed patterns and the model's frequency-dependent selection mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2684a934-16a8-4405-9d3b-73d129d7297c",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of inter-event times shows that for long intervals, ITEEM is indistinguishable from a Poisson process, but for shorter times there are significant deviations. The model shows frequency-dependent selection where emergence of new species increases the probability for generation of further species, and loss of a species makes further losses more likely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C59, and C60 describe the inter-event time analysis referenced in the text. The deviation from Poisson at short times and agreement at long times is clearly stated. However, the manuscript references 'Appendix 1, Frequency-dependent selection' for details, and no statistical tests or figures are shown in the main text to verify the significance of deviations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "d3a1eab2-6269-473c-823b-c2b02111fd68",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison with a neutral model shows that diversity in ITEEM is not simply a result of mutation-selection balance but that trade-off plays an important role. The neutral model generates clumpy structures but with much lower functional diversity, no stable divergent evolution, and no effective cycle formation. This comparison points to frequency-dependent selection as a promoter of diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 describe the neutral model comparison. Figure 4a shows that at high trade-off (phase III), ITEEM cycle strength approaches neutral model levels (green shaded area). The comparison is referenced to Appendix 1, and the logical inference that frequency-dependent selection promotes diversity is well-supported by the contrasting behaviors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "2ae45da1-12a4-41ba-a415-454908b01733",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Diversity is a natural outcome of competition if interacting species evolve under physical constraints that restrict energy allocation to different strategies. ITEEM shows sustained high diversity in a well-mixed homogeneous system because moderate life-history trade-offs force evolving species to adopt different strategies, leading to emergence of well-separated functional niches. This suggests that unified treatment of ecology and evolution under physical constraints dissolves the apparent paradox of stable diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C81-C83, and C86 represent the main conceptual conclusions of the paper. These are well-supported by the simulation results showing high diversity (Figure 3), the phase diagram (Figure 4b), and comparisons with no-trade-off conditions. The mechanistic explanation linking trade-offs to niche emergence is consistent with the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "13291970-24bf-4a99-99e7-0d7e577f0ed2",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ITEEM is claimed to be the first model joining interaction-space description with life-history trade-off. Despite its minimalism, ITEEM reproduces several phenomena of eco-evolutionary dynamics in a single framework, including sympatric speciation, phylogenetic-like hierarchical structures, mass extinctions, large sustained diversity, and spontaneous emergence of intransitive interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, C19, and C87 describe the novelty and scope of ITEEM. The 'first model' claim (C16) is qualified with 'to our knowledge' and is plausible given the literature review. The various phenomena are demonstrated in Figures 3 and 4. However, the claim of being 'first' cannot be definitively verified without exhaustive literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "78db604a-44c6-4ebd-92d9-8521e39e88da",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "There is a well-known but not well understood unimodal 'humpback curve' relationship between biomass productivity and diversity, reported at different scales in a wide range of natural communities including phytoplankton, microbial, plant, and animal communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C55 describe established ecological patterns supported by multiple citations (Smith, 2007; Vallina et al., 2014; Kassen et al., 2000; etc.). These are accurate representations of prior work and provide context for the authors' results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Immense diversity is observed in natural communities and controlled experiments, but basic theoretical models predict that ecological and evolutionary dynamics tend to decrease coexisting species by competitive exclusion or selection of the fittest. This apparent contradiction gives biodiversity the air of a paradox. Diversity is also observed under stable and homogeneous conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 accurately describe the biodiversity paradox and are well-supported by appropriate citations to established literature (Hutchinson, 1961; Volterra, 1928; Tilman, 1982; etc.). These claims provide accurate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "98a39e59-a391-4578-9854-4ec7ddc65f50",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Life-history trade-offs are fundamentally imposed by physical laws such as energy conservation and are present in any natural system. These physical laws constrain evolutionary trajectories in trait space. Life-history trade-offs are experimentally established as essential to living systems, and metabolic trade-offs can enable stable coexistence even at equilibrium in homogeneous environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C80 accurately represent established knowledge about trade-offs, supported by appropriate citations (Stearns, 1989; Gudelj et al., 2007; Agrawal et al., 2010; etc.). The connection to physical laws is conceptually sound, though the claim that trade-offs are present in 'any natural system' (C13) is very strong.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Competitive species in evolutionary arms races explore new dimensions in phenotype space. Coevolution pushes species toward complex traits facilitating diversification, and evolutionary innovation generates novel phenotypic dimensions. Conditions for frequency-dependent selection to generate diversity are satisfied more easily in high-dimensional phenotype spaces, diversity saturation depends on dimensionality, and probability of intransitive cycles grows rapidly with number of phenotype traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 accurately represent prior work on high-dimensional phenotype spaces, supported by appropriate citations (Maharjan et al., 2006; Doebeli and Ispolatov, 2010, 2017; Zaman et al., 2014; etc.). These provide context for the interaction-based modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0465608d-83ea-4319-992e-86e9955f7f98",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Interaction-based models offer a natural solution to the problem of high-dimensional phenotype space by mapping the system to an interaction trait space that can dynamically expand. These models rely on the assumption that phenotypic evolution can be coarse-grained to the interaction level, justified because phenotypic variations are relevant only when they change organism interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 present the conceptual justification for interaction-based modeling. The logic is sound and well-articulated, supported by Figure 1 which illustrates the mapping from genotype to phenotype to interaction space. The coarse-graining argument is reasonable for competition-dominated systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "1a209b1c-3859-4171-bd5c-0f0d98ecadb8",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The first interaction-based model by Ginzburg et al. (1988) was not able to produce large stable diversity. Previous interaction-based models could not reproduce key characteristics of real systems such as emergence of large and stable diversity, diversification to separate species, and mass extinctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C79 accurately characterize limitations of prior interaction-based models, supported by citations. This provides context for ITEEM's contributions. The characterization appears fair based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "0ff563ab-8f48-4656-ac14-0348004742de",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ITEEM provides an intuitive and generic conceptual framework with minimum specific assumptions. The results are claimed to be transferable to different systems including biological, economical, and social systems wherever competition drives evolving communities. The model could guide experimental tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C85, and C88 make broad claims about generality and applicability. While C84 is supported (the model is indeed minimal), C85 and C88 are speculative. No evidence is provided that ITEEM applies to economic or social systems, and no experimental tests are proposed. These are aspirational rather than demonstrated claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    },
+    {
+      "id": "a149dc9e-736e-4faa-94d6-d22b215961f3",
+      "content_id": "c1dc4462-ae20-425e-a58a-66851a61383b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The current ITEEM model has important limitations: no adaptation or evolutionary-based diversity in lifespan, limiting applicability to communities with similar lifespans; assumption of undefined pool of steadily replenished shared resources in a well-mixed system; and assumption that interaction terms of mutants change gradually and independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 and C93 accurately describe acknowledged limitations of the model. These are honest assessments by the authors of their model's scope and assumptions. The limitations are clearly stated and reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:05:27.681089Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8484598-ce11-49f3-9dac-4f7c781182bd",
+      "result_id": "8e6669ab-75a5-4342-b795-0fd81b325ba7"
+    },
+    {
+      "claim_id": "bac4d98e-32a1-40c5-86ff-20709fdeb45b",
+      "result_id": "8e6669ab-75a5-4342-b795-0fd81b325ba7"
+    },
+    {
+      "claim_id": "44fbd0ae-0d8a-413c-b984-4700dce51e3a",
+      "result_id": "8e6669ab-75a5-4342-b795-0fd81b325ba7"
+    },
+    {
+      "claim_id": "254bd228-129f-465b-9013-07cc36a647b2",
+      "result_id": "8e6669ab-75a5-4342-b795-0fd81b325ba7"
+    },
+    {
+      "claim_id": "d0a11a0d-c78f-4a5c-8fc8-9728f6a9dfd3",
+      "result_id": "8e6669ab-75a5-4342-b795-0fd81b325ba7"
+    },
+    {
+      "claim_id": "b1671d96-3bef-431d-a97b-600b57d5f198",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "5ab2ece6-c14c-4611-acaa-36e82c7998b0",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "2535de9d-e3d9-4791-a751-1e0a463a4677",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "6d157be5-b217-498c-a905-b4815676a21d",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "8d40bbab-61a7-403b-8bd0-a3329294f29f",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "7dfc3988-eea2-475a-840d-96df06cea55f",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "21228331-4d88-4bdf-855b-96371fe4c3ce",
+      "result_id": "2b4b6e49-47c0-442c-97e7-27800b325150"
+    },
+    {
+      "claim_id": "76097cb3-88a4-4a74-8c90-19e24e45f474",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "76262a35-3a66-4bb6-bac9-f5b8b511e5e0",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "bb33d769-a4f7-4f83-a91b-ad5cc0be74b7",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "53e6806b-a045-435f-adb2-9b6cbd5f925b",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "d8a7aeaa-43f4-4550-ad57-0ffaf6495e98",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "e9b224ba-87ad-47b1-9f9d-508a1651f648",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "717aeb5f-1a2d-4932-9650-f823215c5180",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "1ae10fea-4635-4e4a-ac9c-eb971c8e35dd",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "aa9fbbd2-b902-4a99-bcfe-a88b630f0e06",
+      "result_id": "2fdf15cd-68ea-40b7-a454-1894f09255e6"
+    },
+    {
+      "claim_id": "215521fd-16c1-4af7-8bd9-ecd23628cc0c",
+      "result_id": "d20d3c6f-a7d3-41d8-9729-512685534722"
+    },
+    {
+      "claim_id": "a9583b81-fae0-4970-973d-3f1fe7e64700",
+      "result_id": "d20d3c6f-a7d3-41d8-9729-512685534722"
+    },
+    {
+      "claim_id": "2e53e02f-6d80-4895-92f7-01ad8c28adca",
+      "result_id": "d20d3c6f-a7d3-41d8-9729-512685534722"
+    },
+    {
+      "claim_id": "44267e8f-2e86-4318-93dd-5a2e61d91195",
+      "result_id": "41ec475a-cc5c-4627-8c72-362bad393fc1"
+    },
+    {
+      "claim_id": "f82a2d5c-ea7a-4346-91c6-49ec22a0ac82",
+      "result_id": "41ec475a-cc5c-4627-8c72-362bad393fc1"
+    },
+    {
+      "claim_id": "0d22f404-0277-4b53-97f6-c382fa1a151e",
+      "result_id": "41ec475a-cc5c-4627-8c72-362bad393fc1"
+    },
+    {
+      "claim_id": "8cac6b4e-3fe0-4f08-a0dc-41103b002cee",
+      "result_id": "9e95adda-8b66-4255-83f1-b35e303894db"
+    },
+    {
+      "claim_id": "0d08b0a3-fe4d-4f8c-96dc-42545a6db90c",
+      "result_id": "9e95adda-8b66-4255-83f1-b35e303894db"
+    },
+    {
+      "claim_id": "68d46e10-53a2-4314-b23b-794fc2a9a6f7",
+      "result_id": "9e95adda-8b66-4255-83f1-b35e303894db"
+    },
+    {
+      "claim_id": "b53e2562-2c71-46ca-a0ab-4ede80ae7705",
+      "result_id": "9e95adda-8b66-4255-83f1-b35e303894db"
+    },
+    {
+      "claim_id": "58424f06-3137-4ab9-a7d7-8f9a8a1a1311",
+      "result_id": "1f7db98b-b395-4aba-a8e6-926c17d4fdab"
+    },
+    {
+      "claim_id": "e3cb8159-623f-4d9d-9d1e-7fad6390179a",
+      "result_id": "1f7db98b-b395-4aba-a8e6-926c17d4fdab"
+    },
+    {
+      "claim_id": "2f5a5ef9-1cfa-4aca-ae5e-01f392ce69be",
+      "result_id": "2684a934-16a8-4405-9d3b-73d129d7297c"
+    },
+    {
+      "claim_id": "280430c9-296a-4435-9410-118036b04f5b",
+      "result_id": "2684a934-16a8-4405-9d3b-73d129d7297c"
+    },
+    {
+      "claim_id": "815d202e-9e03-49c9-af60-921f4fbacdf9",
+      "result_id": "2684a934-16a8-4405-9d3b-73d129d7297c"
+    },
+    {
+      "claim_id": "3ab6dcc6-71f6-4fb5-9c1f-1d6e0b6484bb",
+      "result_id": "d3a1eab2-6269-473c-823b-c2b02111fd68"
+    },
+    {
+      "claim_id": "0080cf9a-13c6-403b-8d7e-d22c3c50832a",
+      "result_id": "d3a1eab2-6269-473c-823b-c2b02111fd68"
+    },
+    {
+      "claim_id": "f4b9b54a-9688-4936-b6e5-7e1c40d5d11d",
+      "result_id": "d3a1eab2-6269-473c-823b-c2b02111fd68"
+    },
+    {
+      "claim_id": "8aa12b67-570b-4e49-ad57-11255f842f41",
+      "result_id": "d3a1eab2-6269-473c-823b-c2b02111fd68"
+    },
+    {
+      "claim_id": "743d8759-54f1-43a7-aa48-f275dc3be07a",
+      "result_id": "d3a1eab2-6269-473c-823b-c2b02111fd68"
+    },
+    {
+      "claim_id": "f635d8d3-8d37-458e-ad4e-525e8a72929f",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "0634260a-23be-452d-9b9d-6e3a0685b958",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "8c96ccc2-36e4-4885-9fb4-243af14e5fae",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "5a851d19-7ab2-434a-9d56-eef93691dd39",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "f43abc01-1a6a-4a0e-8c15-9706097e2f88",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "49e95d21-c96f-42d9-afb2-14bab8b4d018",
+      "result_id": "2ae45da1-12a4-41ba-a415-454908b01733"
+    },
+    {
+      "claim_id": "54ef2245-9035-4404-88b4-86fbf0b56e08",
+      "result_id": "13291970-24bf-4a99-99e7-0d7e577f0ed2"
+    },
+    {
+      "claim_id": "5e4b4dd4-4602-43c2-b5bd-bd2562e81ba6",
+      "result_id": "13291970-24bf-4a99-99e7-0d7e577f0ed2"
+    },
+    {
+      "claim_id": "a653d4eb-c6de-4ee6-a61c-a63ef552d33d",
+      "result_id": "13291970-24bf-4a99-99e7-0d7e577f0ed2"
+    },
+    {
+      "claim_id": "42b5ef87-473f-4030-b8b8-0604791ec792",
+      "result_id": "13291970-24bf-4a99-99e7-0d7e577f0ed2"
+    },
+    {
+      "claim_id": "98f8cbab-3285-4a97-bc6c-4bc53a4ab405",
+      "result_id": "78db604a-44c6-4ebd-92d9-8521e39e88da"
+    },
+    {
+      "claim_id": "1a153fac-4c05-45db-bbd9-67b4c0f379c8",
+      "result_id": "78db604a-44c6-4ebd-92d9-8521e39e88da"
+    },
+    {
+      "claim_id": "b92c8bd6-9212-4b66-8538-d8fb8b6fc4e0",
+      "result_id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3"
+    },
+    {
+      "claim_id": "3b8d8283-968d-45d7-80e4-ba0e4f8d5c54",
+      "result_id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3"
+    },
+    {
+      "claim_id": "6b98fa44-d1bd-4e2e-b1ed-58f6bc518401",
+      "result_id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3"
+    },
+    {
+      "claim_id": "cda72c8a-c91a-473b-bec6-e7c16edf7e4f",
+      "result_id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3"
+    },
+    {
+      "claim_id": "99f0b4a2-894d-49c5-91f4-1ab91b1d9774",
+      "result_id": "f2338f71-b350-4cd4-9d7a-ee34db3506b3"
+    },
+    {
+      "claim_id": "101212f7-efde-426b-9681-7c51d01d3a96",
+      "result_id": "98a39e59-a391-4578-9854-4ec7ddc65f50"
+    },
+    {
+      "claim_id": "bd6dd9fa-06b8-4d87-a82e-4c365d576816",
+      "result_id": "98a39e59-a391-4578-9854-4ec7ddc65f50"
+    },
+    {
+      "claim_id": "e8eb25d8-bd66-46db-9d44-a3f0d245d8ae",
+      "result_id": "98a39e59-a391-4578-9854-4ec7ddc65f50"
+    },
+    {
+      "claim_id": "c7469eb9-ffcc-457d-b6dc-2f8dea01e6ca",
+      "result_id": "98a39e59-a391-4578-9854-4ec7ddc65f50"
+    },
+    {
+      "claim_id": "4c76b4c1-b753-4117-a133-de5ea8c29a2d",
+      "result_id": "98a39e59-a391-4578-9854-4ec7ddc65f50"
+    },
+    {
+      "claim_id": "3d3f963b-99f1-4b88-a22c-f88fac96e356",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "d55d35b5-1e34-47c7-8d80-0f5a350567ab",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "e330d0d2-c72d-4125-a022-7c9abd4f73d6",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "98131557-35eb-4c0d-b5cc-f2673aad3cd2",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "84dd5948-7498-47cc-a408-ebe33fbf71eb",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "4375c4cb-7525-4a01-a081-b200dc8251b7",
+      "result_id": "8f76a7a4-1930-4bbc-9ac1-6d9ef6f8889e"
+    },
+    {
+      "claim_id": "dc71e84d-0345-4452-bd94-b05999cf0cb9",
+      "result_id": "0465608d-83ea-4319-992e-86e9955f7f98"
+    },
+    {
+      "claim_id": "8a14c6ba-ae7d-4ec2-9590-dd7deab8d0ba",
+      "result_id": "0465608d-83ea-4319-992e-86e9955f7f98"
+    },
+    {
+      "claim_id": "f53861c9-dd46-4d0f-814b-3bfe4536b0d0",
+      "result_id": "0465608d-83ea-4319-992e-86e9955f7f98"
+    },
+    {
+      "claim_id": "b773ad66-34bf-4d05-adf6-55e196bf961c",
+      "result_id": "1a209b1c-3859-4171-bd5c-0f0d98ecadb8"
+    },
+    {
+      "claim_id": "2e69d183-99eb-4378-9d85-ff9f1833f34c",
+      "result_id": "1a209b1c-3859-4171-bd5c-0f0d98ecadb8"
+    },
+    {
+      "claim_id": "5b6cee01-495a-4714-aef1-7dcf090c9e9f",
+      "result_id": "0ff563ab-8f48-4656-ac14-0348004742de"
+    },
+    {
+      "claim_id": "ed916d36-5ddf-42ff-bd1e-65ea9196eab9",
+      "result_id": "0ff563ab-8f48-4656-ac14-0348004742de"
+    },
+    {
+      "claim_id": "52deff93-8e45-4407-a7de-67f45370f111",
+      "result_id": "0ff563ab-8f48-4656-ac14-0348004742de"
+    },
+    {
+      "claim_id": "cd793fbe-aa84-4e2f-84b6-be318241ca57",
+      "result_id": "a149dc9e-736e-4faa-94d6-d22b215961f3"
+    },
+    {
+      "claim_id": "9febb7be-728e-4db3-9f33-aea697723481",
+      "result_id": "a149dc9e-736e-4faa-94d6-d22b215961f3"
+    },
+    {
+      "claim_id": "3536fe21-5c0b-4ea9-8018-6edcbd98c314",
+      "result_id": "a149dc9e-736e-4faa-94d6-d22b215961f3"
+    },
+    {
+      "claim_id": "9e023f9e-6751-40de-8d84-ddec23e85553",
+      "result_id": "a149dc9e-736e-4faa-94d6-d22b215961f3"
+    }
+  ],
+  "comparisons": []
+}

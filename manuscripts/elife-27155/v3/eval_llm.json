@@ -1,0 +1,538 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C44",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "IMP2 gene is frequently amplified in human cancers, particularly in squamous lung cancers (35-50%), ovarian cancers (15-27%), and head/neck, esophageal, cervical, and uterine cancers (15-20%). IMP2 mRNA is the most abundant IMP paralogue across most cancer types, with amplification occurring more frequently than IMP1 or IMP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C60 are well-supported by TCGA data presented in Figure 1A and 1B. The frequency ranges are specific and derived from a large cancer genomics database. The comparative analysis showing IMP2 predominance over IMP1/IMP3 is clearly demonstrated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C45",
+      "C46",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "IMP2 overexpression stimulates proliferation by 50-80% in diverse human cancer cell lines and MEFs in a dose-dependent manner, while IMP2 elimination (via CRISPR or genetic knockout) reduces proliferation by 52-78% in cancer cells and to 19-25% of wildtype rates in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C45, C46, C61-C63 are strongly supported by experimental data in Figures 1C-E showing consistent proliferation effects across multiple cell types. The dose-dependent response (C61) and quantitative ranges are clearly documented with statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Loss of IMP2 causes only a modest 19% reduction in IGF2 production in MEFs, and saturating exogenous IGF2 fails to rescue the proliferation defect in Imp2\u2212/\u2212 MEFs, contrasting sharply with Imp1\u2212/\u2212 MEFs where IGF2 fully restores proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by data in Figures 1F-G and citation to prior work (C66). The IGF2 rescue experiment clearly demonstrates that reduced IGF2 production is not the primary mechanism for IMP2's proliferative effects, distinguishing IMP2 from IMP1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Proteomic analysis reveals that Imp2\u2212/\u2212 MEFs exhibit dramatic increases in IGFBP2 (24.7-fold), Grb14 (8.6-fold), and p21Cip1 (4.5-fold) protein abundance compared to wildtype, while IMP1 and IMP3 levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by mass spectrometry data (Supplementary file 2) and confirmed by immunoblot in Figure 2A. The quantitative fold-changes are specific and the lack of compensation by other IMPs (C72) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Depletion of Grb14 or IGFBP2 from Imp2\u2212/\u2212 MEFs partially rescues proliferation (to ~68-80% of wildtype), with combined depletion restoring proliferation to ~75% of wildtype levels. In contrast, p21Cip1 depletion increases proliferation equally in both wildtype and knockout MEFs (~1.3-fold) without rescuing the IMP2-deficient phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are well-supported by experimental data in Figures 2D-E using inducible shRNA systems. The differential rescue by Grb14/IGFBP2 versus p21 clearly identifies the former as key mediators of IMP2's proliferative effects, while p21 appears to be a secondary consequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "IGF1R signaling is substantially impaired in Imp2\u2212/\u2212 MEFs, with reduced IGF1-induced tyrosine phosphorylation of IGF1R beta subunit, IRS1/IRS2, and Akt Ser473 phosphorylation, despite normal receptor abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by signaling data in Figure 2F showing clear reductions in phosphorylation of multiple signaling nodes. The conclusion that IGF1R signaling is impeded (C82) logically follows from the phosphorylation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "IGFBP2 mRNA is not an IMP2 client (not enriched in IMP2 immunoprecipitates), but is increased 18.6-21.7 fold in Imp2\u2212/\u2212 MEFs with a 1.7-fold prolonged half-life (10.1 vs 5.9 hr), indicating the increase is primarily due to enhanced transcription rather than direct mRNA stabilization by IMP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by RNA-seq data (Supplementary file 1) and QPCR/mRNA stability experiments (Figure 3A-B). The conclusion that increased IGFBP2 is transcriptional (C88) is appropriately inferred from the large mRNA increase and modest stability change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Grb14 mRNA is ~70% lower in Imp2\u2212/\u2212 MEFs with a ~40% shorter half-life (3.89 vs 6.03 hr), but the ~9-fold increase in Grb14 protein is primarily post-translational, driven by a dramatic prolongation of protein half-life from ~2 hr to ~31 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by mRNA and protein stability data in Figures 3A-D. The conclusion that Grb14 accumulation is post-translational (C92) is well-justified given the decreased mRNA but dramatically increased protein stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IMP2 deletion in human cancer cell lines increases Grb14 and IGFBP2 abundance (similar to MEFs), while IMP2 overexpression reduces both proteins. IMP2 deletion causes a larger decrease in IGF2 production in cancer cells (35-50% of parental) than in MEFs (19%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by immunoblot data (Figures 4A-B) and IGF2 measurements (Figure 4C). The observation that cancer cells show greater IGF2 dependence on IMP2 than MEFs is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In most cancer cell lines, Grb14 depletion and/or IGF2 addition preferentially rescue IMP2-deficient cell proliferation compared to parental cells, with combined treatment restoring proliferation to 72-96% of parental levels in HeLa, MB-231, and Hep3b cells, demonstrating that IMP2's pro-proliferative effect is mediated predominantly through IGF2 production and suppression of Grb14/IGFBP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by comprehensive rescue experiments in Figure 4D across six cancer cell lines. The additive/synergistic effects of IGF2 and Grb14 depletion provide strong evidence for the proposed mechanism, though some cell lines (RD, SNU-423) show incomplete rescue suggesting additional factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Among 64 transcription factor mRNAs enriched in IMP2 immunoprecipitates, HMGA1 mRNA shows the most dramatic IMP2-dependent regulation: it is enriched ~2-fold (MEFs) to ~5-fold (RD cells) in IMP2 IPs, binds primarily to the 3'UTR, and is 90% lower in Imp2\u2212/\u2212 MEFs due to reduced mRNA half-life (3.5 hr to 0.4 hr), resulting in ~60% lower HMGA1 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 are supported by RNA-seq (Supplementary file 1), IP-PCR (Figure 5A), RNA stability (Figure 5C), and proteomic data (Supplementary file 2, Figure 5F). The identification of HMGA1 as a key IMP2 target is well-documented through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "HMGA1 directly suppresses IGFBP2 transcription by binding to the Igfbp2 promoter (3.7-fold enrichment in ChIP): HMGA1 depletion increases IGFBP2 mRNA 12.1-fold (MEFs) to 20.8-fold (RD cells), while HMGA1 overexpression reduces IGFBP2 mRNA by 63-79%. HMGA1 does not bind the Grb14 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by HMGA1 manipulation experiments (Figure 5G) and ChIP data (Figure 5H). The direct transcriptional regulation of IGFBP2 by HMGA1 is clearly demonstrated through gain- and loss-of-function studies combined with promoter binding evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "HMGA1 regulates Grb14 protein abundance identically to IGFBP2, but through an indirect mechanism: HMGA1 does not bind the Grb14 promoter, the effect is not mediated through IGFBP2, and HMGA1 depletion increases Grb14 protein by reducing its degradation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by immunoblot data (Figure 5I), lack of ChIP enrichment (Figure 5H), IGFBP2 independence (Figure 5\u2014supplement 2), and protein stability data (Figure 5\u2014supplement 3). The indirect mechanism is clearly distinguished from the direct IGFBP2 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "HMGA1 overexpression substantially rescues proliferation of IMP2-deficient cells: in Imp2\u2212/\u2212 MEFs, HMGA1 increases proliferation 3.1-fold (restoring to 73% of wildtype), and in IMP2-deficient RD cells, HMGA1 increases proliferation 2.6-fold (to 83% of parental). The greater rescue in RD cells compared to IGF2+Grb14 depletion suggests HMGA1 has additional pro-proliferative outputs beyond IGFBP2/Grb14 suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by HMGA1 overexpression experiments (Figures 5J-K). The rescue data clearly establish HMGA1 as a major mediator of IMP2's proliferative effects. The inference of additional HMGA1 functions (C126) is reasonable given the more complete rescue compared to IGF2/Grb14 manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "IMP2's ability to promote MEF proliferation and regulate HMGA1/IGFBP2/Grb14 depends critically on Ser164 phosphorylation status: IMP2 variants with Asp at position 164 (IMP2-AD, IMP2-DD) fully rescue proliferation and protein regulation, while variants with Ala at 164 (IMP2-AA, IMP2-DA) proliferate at only ~50% of wildtype rates. Proteomic analysis confirms IGFBP2 and Grb14 are the most differentially regulated proteins between functional and non-functional IMP2 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by phosphorylation mutant experiments (Figure 6A-B) and proteomics (Supplementary file 3). The systematic analysis of all four double mutants clearly demonstrates the critical importance of Ser164 phosphorylation for IMP2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Dual phosphorylation of IMP2 at Ser162/Ser164 is abolished by serum withdrawal, amino acid deprivation, or torin1 treatment, and is rapidly stimulated by insulin, indicating mTORC1-mediated regulation. However, individual site phosphorylation shows differential sensitivity: Ser162P is highly resistant to dephosphorylation while Ser164P shows partial dephosphorylation, contrasting with complete dephosphorylation of canonical mTORC1 substrates (S6K1, 4E-BP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 are supported by phosphorylation state analysis in Figure 6C. The differential sensitivity of the two sites and comparison to canonical mTORC1 substrates provides important mechanistic insight, though the incomplete dephosphorylation suggests additional complexity in IMP2 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "IMP2 undergoes both co-translational and post-translational phosphorylation by mTOR: puromycin-labeled nascent IMP2 is phosphorylated at both Ser162 and Ser164 (co-translational), and this is inhibited by torin1 pretreatment. Additionally, IMP2 undergoes insulin/serum/rapamycin-sensitive post-translational phosphorylation primarily at Ser164, resulting in dual phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 are supported by puromycin incorporation experiments (Figure 6D) and the phosphorylation regulation data (Figure 6C). The demonstration of both co-translational and post-translational phosphorylation provides a mechanistic explanation for the differential dephosphorylation kinetics observed in C138-C139.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Phosphorylation at IMP2 Ser162 and Ser164 occurs independently: substitution of either site with Ala or Asp has little effect on phosphorylation of the other site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 are supported by phosphorylation analysis of single-site mutants in Figure 6E. This independence is important for understanding how the two sites contribute to IMP2 function, though it contrasts somewhat with the functional requirement for Ser164 shown in C129-C133.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C11",
+      "C47",
+      "C50",
+      "C52",
+      "C54",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "IMP2 promotes cancer cell proliferation through a coordinated pathway: IMP2 binds and stabilizes HMGA1 mRNA, HMGA1 directly suppresses IGFBP2 transcription (via promoter binding) and indirectly promotes Grb14 degradation (via an unknown intermediate), and the resulting reduction in these IGF pathway inhibitors synergizes with IMP2-stimulated IGF2 production to drive proliferation through IGF1R and insulin receptor-A signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes claims C5-C187 and is strongly supported by the complete set of experiments: IMP2-HMGA1 binding (Fig 5A-F), HMGA1-IGFBP2 regulation (Fig 5G-H), HMGA1-Grb14 regulation (Fig 5I, supplements), rescue experiments (Figs 4D, 5J-K), and signaling data (Fig 2F). The pathway model in Figure 7 summarizes these relationships. The mechanism for Grb14 regulation remains incomplete (C175), but the overall pathway is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "IMP2's ability to promote both proliferation and IGF action requires IMP2 phosphorylation by mTOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by the phosphorylation mutant data in Figure 6, particularly the demonstration that Ser164 phosphorylation is critical for IMP2's effects on HMGA1/IGFBP2/Grb14 and proliferation. This connects mTOR signaling to the IMP2-HMGA1-IGF pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Imp2 null mice exhibit extended lifespan, resistance to diet-induced obesity, and reduced tumor burden: necropsy at ~845-850 days revealed malignant tumors in 4/6 wildtype mice but 0/6 Imp2\u2212/\u2212 mice, suggesting IMP2 contributes to tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C41 are supported by citations to prior work (Dai et al., 2015). While not new data in this manuscript, these observations provide important in vivo context for the mechanistic studies and support the tumor-promoting role of IMP2 demonstrated in cell culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "IMP2 is best characterized as a tumor promoter rather than an oncogene: while IMP2 drives proliferation of diverse cancer cell lines and MEFs, and transgenic IMP2 overexpression increases tumor burden after chemical hepatotoxicity, IMP2 has not been shown to initiate tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 represent a reasonable interpretation of the data. The distinction between tumor promoter and oncogene (C150) is supported by the lack of transformation data and the requirement for additional insults (C151). This is an appropriate characterization given the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "IMP2 is preferentially expressed in tissue-resident stem cells (satellite cells, neural stem cells, adipocyte precursors) where it is critical for proliferation, differentiation, and motility. IMP2 gene amplification/upregulation may be important for cancer stem cell genesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by citations to prior literature. The speculation about cancer stem cells (C157) is reasonable given IMP2's role in normal stem cells and is supported by cited work in glioblastoma stem cells (Degrauwe et al., 2016b).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "IMP2 is part of an oncofetal regulatory network: HMGA2 upregulates IMP2 expression, IMP2 stabilizes HMGA1 mRNA (previously identified as an IMP2 client), and HMGA1 restoration largely rescues IMP2 deficiency. The mechanism involves IMP2 binding to HMGA1 3'UTR overlapping the Let-7 binding site, antagonizing Let-7-mediated mRNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 are supported by citations and the rescue data in Figures 5J-K. The Let-7 mechanism (C161-C162) is from cited work (Degrauwe et al., 2016b) and is consistent with the 3'UTR binding shown in Figure 5\u2014supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Genes encoding components of the IMP2 tumor-promoting pathway (HMGA2, IMP2, Grb14, IGF2) contain SNPs associated with type 2 diabetes risk, a condition with increased cancer risk. However, the role of these pathway elements in diabetes development and diabetes-associated cancer susceptibility remains unclear, and evidence for HMGA1's role in human diabetes is unsubstantiated despite mouse model data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C195 appropriately discuss the diabetes connection with appropriate caveats. The GWAS associations (C188) are cited, the diabetes-cancer link (C189) is established, but the authors correctly note that the mechanistic role of these genes in diabetes is uncertain (C195) and that HMGA1-diabetes associations have been refuted (C191-C192).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on IMP family: IMPs are RNA-binding proteins with six RNA-binding motifs (two RRM, four KH domains) that regulate IGF2 translation and are mTOR substrates. IMPs show coordinated embryonic expression but differ functionally: Imp1 null mice are small with intestinal defects and 50% mortality, while Imp2 null mice are nearly normal early but lean, obesity-resistant, and long-lived as adults. Imp1 deficiency is fully rescued by exogenous IGF2, unlike Imp2 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C35 provide established background information supported by appropriate citations. These claims set up the rationale for the current study by highlighting functional differences between IMP family members and the incomplete understanding of IMP2's mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C10",
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Background on HMGA1 and IGF pathway inhibitors: HMGA1 is an oncofetal protein and known oncogene that modulates gene expression through chromatin remodeling without direct transcriptional activity. Its output is context-dependent and can promote transformation, stem cell programs, or EMT. IGFBP2 and Grb14 are established inhibitors of IGF1R and insulin receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C9, C10, C48, C49, C51, C53, C163-C171 provide established background supported by appropriate citations. This contextual information is necessary for understanding the significance of the IMP2-HMGA1-IGFBP2/Grb14 pathway discovered in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C42",
+      "C153",
+      "C154"
+    ],
+    "result": "IMP2 differs from IMP1/IMP3 in expression pattern: while IMP1/IMP3 are 'oncofetal' genes with embryonic expression that is downregulated before birth but reappears in cancers, IMP2 continues to be widely expressed in adult life. Nevertheless, IMP2 is usually the most abundant IMP in human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C153-C154 are supported by citations and data in Figure 1B. This distinction in expression patterns is important for understanding IMP2's unique role in both normal adult physiology and cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C140"
+    ],
+    "result": "Prior work established that IMP2 phosphorylation mutants show differential activity: IMP2(Ser162Asp/Ser164Asp) functions like wildtype in IGF2 translation assays while IMP2(Ser162Ala/Ser164Ala) is inactive. IMP2(Ser162P) shows resistance to dephosphorylation similar to co-translational phosphorylation of IMP1(Ser181).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128, C140 cite prior work (Dai et al., 2011, 2013) that provides context for the phosphorylation studies in Figure 6. These prior observations motivated the systematic analysis of phosphorylation site function in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Background on IGF signaling in cancer: IGFBP2 has complex, context-dependent roles (both pro- and anti-proliferative), but transgenic overexpression inhibits growth and tumorigenesis in vivo. IGF1R is important for oncogenic transformation, but clinical IGF1R inhibition has failed, possibly due to IGF2 overexpression and signaling through insulin receptor-A (INSR-A), which has high affinity for IGF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C184 provide important context from the literature about IGF signaling complexity and clinical translation challenges. This background helps explain why the IMP2-HMGA1 pathway's effects on multiple IGF pathway components is significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The authors hypothesize that Grb14 and IGFBP2 overexpression slows Imp2\u2212/\u2212 MEF proliferation through inhibition of IGF1R and insulin receptor-A signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is explicitly stated as a hypothesis and is well-supported by the subsequent signaling data in Figure 2F showing impaired IGF1R signaling in Imp2\u2212/\u2212 MEFs. The hypothesis is reasonable given the known functions of Grb14 and IGFBP2.",
+    "result_type": "MINOR"
+  }
+]

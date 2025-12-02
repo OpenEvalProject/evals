@@ -1,0 +1,496 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C18",
+      "C19",
+      "C20",
+      "C114"
+    ],
+    "result": "CpG and UpA dinucleotides are under-represented in the genomes of most RNA viruses infecting vertebrates and plants, mimicking host mRNA composition, while viruses infecting invertebrates show little CpG suppression consistent with the lack of methylation in invertebrate genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C13, C18-C20, and C114 collectively establish well-documented patterns of dinucleotide suppression in viral genomes. These claims are supported by multiple citations to prior literature (Simmonds et al., 2013; Karlin et al., 1994; Rima and McFerran, 1997) and represent established knowledge in the field. The correlation between host genome methylation patterns and viral CpG suppression is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C115"
+    ],
+    "result": "Artificially increasing CpG/UpA dinucleotides attenuates viruses through an unknown mechanism, while removing these dinucleotides increases viral replication rates. In mice, influenza virus with increased CpG/UpA was non-pathogenic but elicited protective immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C25, and C115 establish prior work demonstrating viral attenuation by CpG/UpA modification. These are supported by citations to prior work (Atkinson et al., 2014; Witteveldt et al., 2016; Gaunt et al., 2016) and establish the knowledge gap that motivates the current study. The claims accurately represent findings from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "E7 viruses with increased CpG or UpA dinucleotides in R2 showed consistently lower viral titers across different cell types at 24 hours post-infection, with relative replication rates (RRRs) varying between cell types but showing no correlation with WT virus susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are well-supported by experimental data in Figure 1B with appropriate statistical analysis (one-way ANOVA, p<0.01). The RRR values are quantified for multiple cell lines, and the lack of correlation between RRR and WT virus titer is demonstrated with Pearson correlation coefficients. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Restriction of E7 replication by increased CpG/UpA dinucleotides occurs in all tested cell types and cannot be lifted by inhibiting IRF3 or MAVS antiviral signaling pathways, including in cells expressing BVDV NPro or HCV NS3/4A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by data in Figure 1B showing that attenuation persists in cells with inhibited antiviral pathways (A549-Npro, A549 NS3/4A, Vero). The observation that restriction occurs across all cell types despite pathway inhibition is well-documented. This is a key finding ruling out conventional interferon-mediated antiviral responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "E7 replicons with CpG/UpA modifications in non-coding regions (ncR1) showed similar attenuation to coding region (R2) mutants in RD and A549 cells, with approximately 10-fold reduction for CpG-high and 2-fold for UpA-high sequences, while attenuation was reduced in BHK kidney cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by data in Figures 2 and 2-figure supplements showing comparable attenuation between coding and non-coding region mutants. The quantitative RRR values are provided, and the cell-type specific differences (particularly in BHK cells) are documented. This is a critical finding demonstrating that attenuation is independent of codon usage effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Kinase inhibitor C16 reversed the attenuation of CpG- and UpA-high mutants in both viruses and replicons, increasing luciferase expression by 1.8-fold for UpA-high and 6-fold for CpG-high replicons, independently of PKR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by data in Figure 2-figure supplement 3 with statistical analysis (p-values 0.069 and 0.01). The reversal by C16 is demonstrated for both replicons and viruses, providing evidence that the restriction is not due to intrinsic defects in the mutant sequences. The similarity between replicon and virus responses validates the replicon system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The ranking of cell lines for attenuation of CpG and UpA-elevated mutants was similar between virus and replicon systems across multiple human and murine cell types, with RRRs ranging from 0.01 to 0.3 for CpG-high and 0.2-0.7 for UpA-high in murine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by data in Figures 3A-C showing consistent patterns across cell types and experimental systems. The comparison between virus and replicon systems (Figure 3B) validates the replicon approach. The extension to murine cells demonstrates the breadth of the restriction phenomenon. The quantitative RRR values are provided for multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C76",
+      "C77"
+    ],
+    "result": "When replication was inhibited by GuHCl or polymerase mutation, E7 replicons with CpG or UpA high ncR1 showed comparable luciferase expression to WT, demonstrating that attenuation is not dependent on differences in translation rates or RNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70, C76-C77 are strongly supported by data in Figure 4 showing no difference in translation efficiency between WT and mutant replicons when replication is blocked. This is a critical control experiment that definitively rules out translation efficiency as the mechanism of attenuation. The experiment is well-designed with appropriate controls (GuHCl treatment and polymerase mutants) and tested across multiple cell types (Figure 4D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cumulative CpG and UpA dinucleotides in non-coding regions have additive effects on E7 replication restriction, with double ncS insertions showing significantly greater attenuation than single insertions, and the CpG-high double mutant almost entirely abrogating replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by data in Figure 5B with statistical analysis showing significant differences. The dose-dependent effect of increasing CpG/UpA content provides strong evidence for a cumulative recognition mechanism. The comparison to GuHCl-treated controls (Figure 5B, dotted red line) provides appropriate context for the magnitude of attenuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Infection with equal RNA copies showed reduced infectivity of E7 R2_C virus as early as 2 hours post-infection with no difference in initial entry, but after the initial delay, CpG-high virus replicated at rates similar to other variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by data in Figure 6 showing early time-point analysis. The qRT-PCR data (C80) demonstrates equal RNA levels at 1 hpi, ruling out entry defects. The observation that replication rates normalize after initial delay (C81, Figure 6B) is an important finding suggesting the restriction acts at replication initiation rather than elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RNA FISH analysis showed that while initial RNA foci were comparable between WT and mutant viruses at 2 hpi, CpG-high mutants failed to develop replication complexes in most cells, with only 3.5% of cells showing productive replication at 6 hpi compared to 49% for WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by RNA FISH data in Figure 7 with quantitative analysis (Figure 7C). The observation that dinucleotide frequency affects the frequency of productively infected cells but not the intensity of replication in positive cells is a key mechanistic finding. The imaging data are appropriately quantified and statistically analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "FACS analysis of EGFP-expressing replicons confirmed that CpG-high mutants showed dramatically reduced percentages of positive cells while mean fluorescent intensities were comparable, with enhanced attenuation when both coding R2 and ncR1 were modified, and reduced attenuation in BHK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by FACS data in Figure 8 and Table 2. This independent experimental approach confirms the RNA FISH findings (C85) and extends them to show additive effects of multiple modified regions. The data are quantified and statistically analyzed (Figure 8, asterisks indicate p<0.05). The BHK cell data are consistent with earlier findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The restriction in E7 replication occurs immediately after viral entry with incoming virions failing to form replication complexes, though a small number of cells can overcome restriction, suggesting either RNA defects or saturable restriction factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C89-C91 synthesize findings from Figures 6-8. The conclusion that restriction occurs post-entry but pre-replication complex formation is well-supported by the combined data. However, C91 includes speculation about mechanisms (RNA defects vs. saturable factors) that is not definitively tested. The core observation of early restriction is solid, but the mechanistic interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C129",
+      "C130"
+    ],
+    "result": "Sequencing of CpG/UpA-high virus stocks showed comparable mutation frequencies to WT (approximately 10^-4 mutations/nucleotide) with no evidence of RNA editing signatures, indicating these viral RNAs are not intrinsically replication defective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C92-C95, C129-C130 are supported by sequencing data in Table 3. The mutation frequencies are comparable across all variants and consistent with published poliovirus rates. The absence of RNA editing signatures (no enrichment for A-G or C-U transitions) rules out ADAR/APOBEC-mediated defects. Combined with C16 reversal data, this strongly argues against intrinsic defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CpG/UpA-high viral RNAs were not differentially sequestered in cytoplasmic stress granules, with no G3BP-positive granules observed during E7 infection and no increased eIF2\u03b1 phosphorylation compared to WT virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C97-C99 are supported by immunofluorescence data in Figure 9 and Western blot data in Figure 9-figure supplement 1A. The absence of stress granule formation and eIF2\u03b1 phosphorylation rules out stress response pathways as mediators of restriction. The controls (arsenite treatment) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Treatment with acriflavine (RNA interference inhibitor) did not affect RRR of mutants, and caspase 3/7 activity correlated with viral replication rates rather than CpG/UpA content, ruling out RNA interference and apoptosis as restriction mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by data in Figure 9-figure supplement 1B-C. The ACF experiment rules out RNA interference pathways, and the caspase assay demonstrates that apoptosis is a consequence of replication rather than a cause of restriction. These are appropriate negative controls that narrow down possible mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C118"
+    ],
+    "result": "CpG/UpA-high RNAs did not induce a systemic antiviral state, as demonstrated by trans-infection experiments showing no effect on WT virus replication, indicating restriction acts strictly in cis and differs from conventional interferon-mediated responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C105-C109, C118 are supported by data in Figure 10 showing no trans effects in three different experimental formats (plasmid expression, co-transfection of non-replicating RNA, co-transfection of replicons). This is a critical finding that distinguishes the restriction mechanism from conventional antiviral responses. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C140",
+      "C141",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C156",
+      "C157",
+      "C167"
+    ],
+    "result": "Viruses with increased CpG/UpA frequencies do not differentially induce stress, interferon-coupled, or apoptosis-associated antiviral pathways, and the restriction mechanism appears to lie outside the conventional paradigm of innate cellular immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C140-C141, C149-C152, C156-C157, C167 synthesize negative results from multiple experiments (Figures 1, 9, 10, and cited prior work). The systematic ruling out of conventional antiviral pathways (IRF3, MAVS, TLR7/8, interferon response, stress granules, apoptosis) is well-documented. The conclusion that restriction lies outside conventional paradigms is justified by the comprehensive negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The context of bases surrounding CpG dinucleotides has a potent effect on replication attenuation, with ncR1_UUCGUU showing 30-fold lower RRR than WT despite having identical CpG content, and ncR1_AACGAA showing RRR comparable to CpG-high sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by data in Figure 11B showing dramatic context-dependent effects. This is an important finding demonstrating that CpG alone is not sufficient for recognition and that flanking sequences matter. However, only two contexts were tested (AACGAA and UUCGUU), limiting the ability to define minimal recognition motifs. Further work is needed to characterize the recognition sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C124"
+    ],
+    "result": "The functional constraints act directly on RNA with increased CpG and UpA dinucleotides to inhibit viral RNA replication, independent of whether these nucleotides are in coding or non-coding regions, demonstrating that attenuation is independent of codon usage or codon pair bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C116-C117, C120-C121, C124 represent the central conclusion of the study. This is well-supported by the combined data from Figures 2-5 showing comparable attenuation in coding and non-coding regions, and Figure 4 showing no translation defects. The conclusion that dinucleotide composition rather than codon usage drives attenuation is strongly supported for the E7 model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C96"
+    ],
+    "result": "Host cells possess intrinsic defense pathways that prevent replication of viruses with increased CpG/UpA frequencies independently of codon usage, mediated through cell-mediated restriction of viral RNA replication and/or alternative fate of compositionally altered RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C78, C96 represent the overarching conclusion of the study. This is supported by the combined evidence ruling out translation effects, intrinsic RNA defects, and conventional antiviral pathways, while demonstrating cis-acting restriction that occurs at replication initiation. The conclusion of host-cell restriction factors is well-justified, though the specific factors remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C161",
+      "C168"
+    ],
+    "result": "The findings suggest that under-representation of UpA and CpG dinucleotides in viral RNA has contributed to biases in nucleotide composition and codon choice in native viral sequences, potentially representing an evolutionarily conserved eukaryotic virus defense mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123, C161, C168 represent speculation about evolutionary implications and generalizability beyond the E7 model. While the widespread CpG/UpA suppression in viral genomes (C1, C114, C160) supports evolutionary constraint, the specific mechanism identified in E7 has not been demonstrated in other viruses or organisms. The speculation about plant viruses (C161) is particularly uncertain given differences in antiviral mechanisms (C162-C163).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C45",
+      "C119"
+    ],
+    "result": "Prior work suggested that alteration of CpG/UpA frequencies may introduce unfavored codons reducing translation rates, but in the E7 model, dinucleotide frequency changes were the primary factor behind attenuation rather than codon pair bias, as demonstrated by permutated controls showing WT replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C45, C119 establish the context and rationale for the current study. The prior work by the authors (Tulloch et al., 2014) is cited, though noted as disputed (Futcher et al., 2015). The permutated control data showing WT replication validates that the R1/R2 regions can be modified without affecting replication, supporting the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "RNA virus genomes possess RNA secondary and tertiary structures that interact with host cell elements, and the E7 replication cycle involves cap-independent translation, ER-associated RNA replication, and dsRNA intermediates that activate cytosolic pattern recognition receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C28-C32 provide established background knowledge about RNA virus biology and the E7 replication cycle. These are well-supported by citations to prior literature and represent standard knowledge in the field. This background is necessary context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "UpA dinucleotides are recognized by RNA-degrading enzymes and may control RNA turnover, while CpG suppression results from methylation-induced deamination. RNase L can cleave UpA/UpU dinucleotides, potentially accounting for UpA suppression, though this doesn't explain why UpU is not similarly suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C136-C139 provide mechanistic background for dinucleotide suppression in host genomes. These are supported by citations to prior literature. The speculation about RNase L (C138) is reasonable but the observation about UpU (C139) highlights an inconsistency in this hypothesis. This background is relevant but the specific mechanisms may not apply to the E7 restriction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "While no currently described PRRs recognize CpGs in RNA, CpG dinucleotides in DNA activate TLR9, and removing CpGs from transgenes improves expression in vivo. TLR9-independent mechanisms exist for detecting CpG dinucleotides, and GU/AU-rich sequences activate TLR7/8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C148 provide background on potential recognition mechanisms. These are supported by citations to prior literature. The observation of TLR9-independent CpG recognition (C146) is particularly relevant to the current findings. However, the relevance to the E7 system is limited as discussed in C149-C151.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C158",
+      "C159"
+    ],
+    "result": "Picornaviruses are well-armored against IFN-mediated responses through the 2C protease that cleaves MAVS, MDA5, and RIG-I. Inhibition of replication was observed immediately after infection before ISG induction, preventing establishment of replication complexes rather than inhibiting expression once formed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155, C158-C159 combine established knowledge about picornavirus immune evasion with experimental findings from Figures 6-8. The timing of restriction (before ISG induction) is well-documented and argues against interferon-mediated mechanisms. The distinction between preventing establishment vs. inhibiting ongoing replication is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "While post-transcriptional RNA editing or increased intramolecular base pairing could theoretically cause replication defects, the reversal by C16 and reduced attenuation in BHK cells argues strongly against intrinsic replication defects in the mutant viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C134 present and test alternative hypotheses for the restriction mechanism. The RNA editing hypothesis (C127-C128) is ruled out by sequencing data (Table 3, C129). The base-pairing hypothesis (C131) is ruled out by C16 reversal and cell-type differences (C132-C133). The logic is sound and the experimental evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C135",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "While viral RNA structure may serve as PAMPs for PRRs, and enterovirus 71 protein 3A suppresses RNA interference, there is nothing in siRNA mechanisms that would cause dinucleotide composition-related differences in replication efficacy, and animal and plant cells differ in their antiviral mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C162-C166 discuss potential mechanisms and their limitations. The RNA interference pathway is considered (C164-C165) but reasonably dismissed (C166) based on mechanistic incompatibility. The discussion of differences between animal and plant antiviral responses (C162-C163) is relevant to the speculation about evolutionary conservation but highlights uncertainties in generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "Plant viruses suppress CpG and UpA dinucleotide frequencies as much or more intensively than vertebrate viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is supported by prior literature on viral genome composition (implied by citations in C1, C11, C114). This observation is important for the speculation about evolutionary conservation (C161) but is presented as established knowledge rather than a finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

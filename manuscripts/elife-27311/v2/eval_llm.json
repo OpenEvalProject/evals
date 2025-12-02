@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The crystal structure of the MGD21 Fab fragment was determined at 2.52 \u00c5 resolution using molecular replacement, with two copies in the asymmetric unit. The structure includes residues 2\u2013211 of the light chain and 1\u2013351 of the heavy chain (with some disordered regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 and C93-C104 describe standard crystallographic methods that are well-documented and appropriate for antibody structure determination. The resolution (2.52 \u00c5), crystallization conditions, data collection, and refinement procedures are clearly stated with proper citations to established methods. The structural model completeness and quality metrics (Table 1) support the validity of the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The two Fab fragments in the asymmetric unit superimpose with an RMSD of 0.26 \u00c5, indicating a highly ordered and rigid structure. LAIR1 is anchored through three fixed positions: two linker attachment sites and a disulphide bond between C93 (light chain) and C223 (heavy chain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low RMSD value (C26) provides quantitative evidence for structural similarity between the two copies. The identification of three anchor points (C60) and the inference that this rigidity is not solely due to crystal packing (C59) are well-supported by the structural data shown in Figures 1 and 1\u2014figure supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LAIR1 is inserted into CDR H3 through two extended linkers and lies across the antigen-binding surface with its \u03b2-strands perpendicular to the CDR groove. The N-terminal linker (10 residues) adopts a simple loop, while the C-terminal linker (34 residues) has a complex zigzag structure stabilized by hydrogen bonds and a disulphide bond to the light chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 describe the structural arrangement of LAIR1 and its linkers based on direct crystallographic observations shown in Figure 1. The specific interactions (hydrogen bonds, disulphide bonds) are detailed in Table 2 and Figure 1C, providing strong structural evidence for this architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C105"
+    ],
+    "result": "LAIR1 and its linkers occlude significant portions of all five remaining CDR loops (12.7-47.3% of accessible surface area), with each CDR making direct interactions with LAIR1 or the linkers. These interactions include a critical disulphide bond between C93 (light chain) and C223 (linker 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative surface area calculations (C48-C52) were performed using AREAIMOL (C105), a standard tool. The specific interactions are documented in Table 2 and shown in Figures 1B and 1C. The consistency of interactions in both asymmetric unit copies (C56) strengthens confidence in these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The five non-LAIR1 CDR loops adopt canonical structures, but contain seven unusual residues identified by Abcheck analysis. Most notably, C93 in CDR L3 (found in only 0.096% of light chains) forms a disulphide bond with linker 2, and the CDR H3 base adopts a 'kinked' conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The canonical class assignments (C41) and unusual residue identification (C42) are based on established computational tools with proper citations. The rarity of C93 (C44) and its structural role are well-documented. The kinked conformation (C45) is supported by citation to a classification system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The structure demonstrates a rigid association between LAIR1 and the antibody variable domains, stabilized by multiple CDR-linker interactions. While these specific interactions may vary across the antibody family due to different light chains and linkers, some form of CDR-linker interaction is likely conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference of rigidity (C57, C62) is well-supported by the structural observations of multiple anchor points and consistent interactions. The caveat about variability across the family (C63, C64) appropriately acknowledges the limitations of studying a single structure while being informed by sequence data from 27 antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The LAIR1 insert maintains its native structure (RMSD 0.43 \u00c5 vs. germline) with only 13 sequence differences. Polymorphisms do not affect residues involved in antibody interactions, suggesting that stable LAIR1-antibody association derives from CDR loop adaptations rather than LAIR1 modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C65) provides quantitative evidence for structural conservation. The sequence analysis (C66) and mapping of polymorphisms (C67) shown in Figure 2B support the inference that CDR adaptations drive the interaction (C68). This is a logical conclusion from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Polymorphisms in the LAIR1 insert are concentrated on the surface distal to the antibody, overlapping with the collagen-binding site. Key collagen-binding residues (R59, E61, R65) map to the most exposed surface, and 11/27 sequenced antibodies have mutations affecting collagen binding, suggesting potential for altered ligand specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mapping of polymorphisms (C73, Figure 2E) and collagen-binding residues (C71, C72, Figures 2C-D) is based on solid structural data and prior mutagenesis studies. The inference about altered binding potential (C69, C74) is reasonable, though C76 appropriately notes this as speculation. The sequence analysis of 27 antibodies (C77) provides statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Of three putative N-linked glycosylation sites in the antibody, only N242 (distant from LAIR1) shows electron density for glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward observation from the electron density maps (C29) combined with sequence analysis (C28). The lack of glycosylation at N30 and N61 may be due to expression conditions or structural constraints, which is appropriately reported without overinterpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The linkers connecting LAIR1 to the antibody are variable in length and sequence across the antibody family, but the structural arrangement should accommodate this variation without disturbing LAIR1 packing against the variable domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence variability (C39) is supported by citation to prior work analyzing 27 antibodies. The inference about structural accommodation (C40) is reasonable given that the linkers radiate away from the core structure, though this prediction would benefit from experimental validation with other family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Unlike other antibodies with extended CDR H3 loops (HIV-neutralizing and bovine antibodies) where remaining CDRs stay exposed, LAIR1-containing antibodies uniquely occlude all five remaining CDR loops through direct interactions with the LAIR1 insert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with other antibody types (C46, C80) is supported by appropriate citations. The unique occlusion pattern (C81) is clearly demonstrated by the structural data. The interpretation (C82) that this resembles an antibody adapted for LAIR1 binding is a reasonable structural inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The LAIR1-containing antibody represents a novel antigen recognition mechanism where the Fab acts as an adaptor positioning LAIR1 for antigen binding while the traditional CDRs are occluded. LAIR1 (or a homologue) is likely the physiological RIFIN ligand, and its insertion into the antibody allows affinity maturation for immune recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observations (C83, C90, C91) are well-supported, the functional interpretations (C88, C89) are largely speculative. The cited binding data (C84-C86) show that LAIR1 alone can bind infected erythrocytes, but the failure of germline LAIR1 to bind (C86) is confounded by unknown folding status. The lack of data on RIFIN binding to unaltered LAIR1 (C87) is a critical gap. These functional claims require direct binding studies and structural characterization of antibody-RIFIN complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C79"
+    ],
+    "result": "Background on antibody diversity: Most antibodies have predictable CDR structures, but CDR H3 shows greater diversity. Examples include HIV-neutralizing antibodies with elongated CDR H3 loops and bovine antibodies with disulphide-rich domains inserted into CDR H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C5-C14, C79) provide established background knowledge about antibody structure and diversity, all supported by appropriate citations to prior work. This contextualizes the novelty of the LAIR1-containing antibodies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work identified unusual human antibodies from malaria-endemic regions containing a 96-residue LAIR1 insertion in CDR H3. These antibodies bind RIFIN proteins on infected erythrocytes, and LAIR1 is essential for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work (Tan et al., 2016) that motivated the current structural study. The citations are appropriate and the claims are consistent with the referenced work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C92"
+    ],
+    "result": "The LAIR1-containing antibodies represent a remarkable variant of the immunoglobulin fold, and this paradigm of using the Fab to position an inserted domain may be found in other undiscovered antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C78 is a reasonable interpretive summary of the structural findings. C92 is appropriate speculation about the potential generality of this mechanism, clearly framed as a question for future investigation rather than a definitive claim.",
+    "result_type": "MINOR"
+  }
+]

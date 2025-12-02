@@ -1,0 +1,887 @@
+{
+  "submission": {
+    "id": "24941f75-836f-473e-affc-ba3b7934a849",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:39:54.679396Z",
+    "updated_at": "2025-12-01T21:39:54.679396Z"
+  },
+  "content": [
+    {
+      "id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "submission_id": "24941f75-836f-473e-affc-ba3b7934a849",
+      "content_type": "manuscript",
+      "content_text": "# Preferential assembly of heteromeric kainate and AMPA receptor amino terminal domains\n\n## Authors\n\n- Huaying Zhao<sup>1</sup> \u2020\n- Suvendu Lomash<sup>2</sup>\n- Sagar Chittori<sup>2</sup> ([ORCID: 0000-0003-1417-6552](https://orcid.org/0000-0003-1417-6552))\n- Carla Glasser<sup>2</sup>\n- Mark L Mayer<sup>2</sup> ([ORCID: 0000-0003-4378-8451](https://orcid.org/0000-0003-4378-8451)) \u2020\n- Peter Schuck<sup>1</sup> ([ORCID: 0000-0002-8859-6966](https://orcid.org/0000-0002-8859-6966)) \u2020\n\n### Affiliations\n\n1. Dynamics of Molecular Assembly Section, Laboratory of Cellular Imaging and Macromolecular Biophysics National Institute of Biomedical Imaging and Bioengineering Institutes of Health, National Institutes of Health Bethesda United States\n2. Laboratory of Cellular and Molecular Neurophysiology, Porter Neuroscience Research Center National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIon conductivity and the gating characteristics of tetrameric glutamate receptor ion channels are determined by their subunit composition. Competitive homo- and hetero-dimerization of their amino-terminal domains (ATDs) is a key step controlling assembly. Here we measured systematically the thermodynamic stabilities of homodimers and heterodimers of kainate and AMPA receptors using fluorescence-detected sedimentation velocity analytical ultracentrifugation. Measured affinities span many orders of magnitude, and complexes show large differences in kinetic stabilities. The association of kainate receptor ATD dimers is generally weaker than the association of AMPA receptor ATD dimers, but both show a general pattern of increased heterodimer stability as compared to the homodimers of their constituents, matching well physiologically observed receptor combinations. The free energy maps of AMPA and kainate receptor ATD dimers provide a framework for the interpretation of observed receptor subtype combinations and possible assembly pathways.\n\n## Introduction\n\nAt excitatory synapses in the brain of vertebrates, signal transduction is mediated by a large family of glutamate receptor ion channels (iGluRs) encoded by 18 iGluR subunit genes. These membrane proteins assemble as tetramers, with coassembly between subunits limited to four major families named AMPA, kainate, NMDA and delta receptors. Within each family, there are four AMPA receptor subunits, five kainate receptor subunits, seven NMDA receptor subunits, and two delta receptor subunits, which assemble in different combinations to generate various homomeric or heteromeric species in vivo. Functional experiments have shown that individual iGluR subtypes and their assemblies exhibit unique gating characteristics (Traynelis et al., 2010). Key insights into the formation of tetrameric receptors were provided by iGluR crystal and cryo-EM structures. These revealed tetramers with a modular architecture formed by a layered assembly of extracellular amino terminal (ATD), ligand binding (LBD), transmembrane ion channel (TMD), and cytoplasmic (CTD) domains (Sobolevsky et al., 2009; Schauder et al., 2013; Karakas and Furukawa, 2014; Lee et al., 2014; Meyerson et al., 2014). The ATD and LBD, both of which combine as dimers with two-fold symmetry, can be genetically excised and individually expressed as soluble proteins; when crystallized, the soluble proteins form dimeric structures identical to those found in intact receptors (Mayer, 2011; Furukawa, 2012), motivating the study of their assembly using biophysical techniques.\n\nTo gain insight into the energetics and specificity of iGluR assembly, multiple studies have used analytical ultracentrifugation (AUC) to examine the oligomerization of both the ATD and LBD expressed as soluble proteins, allowing analysis of both self-association and hetero-association processes in solution over a wide range of affinities. These studies revealed that the equilibrium dissociation constant ($K_{D}$) for dimer assembly by the LBD is too weak to reliably measure (Furukawa et al., 2005; Weston et al., 2006), except for proteins in which mutations in the LBD dimer interface strengthen the interaction between subunits (Sun et al., 2002; Furukawa et al., 2005; Chaudhry et al., 2009), indicating a $K_{D}$ for wild type iGluR LBDs in the mM range. By contrast, the ATDs of iGluRs form dimers at low nM to low \u00b5M concentrations (Jin et al., 2009; Kumar et al., 2009; Karakas et al., 2011; Rossmann et al., 2011), suggesting that ATD oligomerization plays a major role in controlling iGluR assembly. In support, dimeric GluA2 assembly intermediates have been resolved by single-particle EM studies after synchronized protein expression, showing closely apposed ATD domains (Shanks et al., 2010). Further, electrophysiological studies with ATD mutants have shown that ATD interactions are critical for the assembly of functional heteromeric receptors (Kumar et al., 2011; Rossmann et al., 2011). On the other hand, additional important contributions in iGluR assembly are likely to arise from other interactions, including the transmembrane domain (Gan et al., 2016), and auxiliary proteins (Jackson and Nicoll, 2011; Sheng et al., 2017). Currently the energetic contributions and importance of these domains relative to that of the ATD are not clear.\n\nThe study of iGluR high-affinity homo- and hetero-associations was greatly facilitated in the last decade by the introduction of a commercial fluorescence detection system (FDS) for analytical ultracentrifugation (MacGregor et al., 2004; Schuck et al., 2015). In pioneering work by\u00a0Rossmann et al. (2011)\u00a0this was applied to study the assembly pathways of AMPA receptor ATDs, unexpectedly indicating GluA2 homodimers to be of only slightly lower stability than the GluA2/GluA1 and GluA2/GluA3 heterodimers, the major species found in mammalian neurons (Wenthold et al., 1996). However, the results were impacted by technical issues resulting from non-specific interactions due to the hydrophobic FAM label attached as an extrinsic fluorophore (Rossmann et al., 2011; Zhao et al., 2012), compounded by the lack of precise analytical tools for the quantitative study of data from FDS sedimentation velocity (FDS-SV) experiments. Using model systems, in subsequent studies we have systematically addressed these issues, identifying DyLight 488 and EGFP as labels better suited for FDS experiments on iGluR ATDs, and have developed analytical procedures and controls that allow measurement of protein interactions with low pM equilibrium dissociation constants (Zhao et al., 2013d, 2013c, Zhao et al., 2014; Chaturvedi et al., 2017a). Applied to GluA2 homodimerization (Zhao et al., 2012, 2013d), this revealed approximately an order of magnitude weaker interaction than initially reported (Rossmann et al., 2011), reinforcing the importance of obtaining accurate data to quantitatively study the preferential assembly of iGluR ATDs.\n\nSurprisingly, relatively little is known about the interactions of kainate receptor (KaiR) ATDs. Kainate receptors are encoded by two gene families, GluK1-GluK3, for which the ATDs share 68\u201375% amino acid sequence identity; and GluK4-GluK5 which share 63% identity, but exhibit only 25\u201327% identity with GluK1-GluK3. GluK1-GluK3 form functional homomeric receptors but GluK4 and GluK5 are obligate heteromers which form functional channels only when coexpressed with GluK1-GluK3 (Perrais et al., 2010). Experiments with recombinant receptors and genetically targeted mice also reveal that GluK1-GluK3 can coassemble to form functional heteromeric KaiRs (Cui and Mayer, 1999; Mulle et al., 2000; Veran et al., 2012) but at present it is not known whether like AMPA receptors these subunits assemble in preferred combinations. Prior work on the assembly of kainate receptor ATDs has been limited to measurements of self-association for GluK2 (previously referred to as GluR6), with a $K_{D}$ of 250 nM, and GluK5 (previously referred to as KA-2) with a $K_{D}$ of 350 \u00b5M, and their heterodimer assembly, with a $K_{D}$ of 11 nM (Kumar et al., 2011). These values were determined using sedimentation velocity analysis with conventional absorbance and interference optics, and for the GluK2/GluK5 heterodimer assembly we were unable to work at sufficiently low protein concentrations to obtain full dissociation of the complex (Kumar et al., 2011). Currently, we do not know if GluK4, like GluK5, forms preferential high affinity heterodimer assemblies with GluK2, and whether the GluK4 and GluK5 ATDs form high affinity heteromeric assemblies with ATDs from other members of the GluK1-GluK3 KaiR family.\n\n**Table 1.**\n $K_{D}$-values for kainate receptor amino-terminal domain dimer assembly.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>DL-GluK1</th>\n      <th>DL-GluK2</th>\n      <th>DL-GluK3</th>\n      <th>DL-GluK4</th>\n      <th>DL-GluK5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>UL GluK1</td>\n      <td>1.2 \u00b5M [0.8, 1.7]</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UL GluK2</td>\n      <td>1.8 \u00b5M [1.5, 2.2]</td>\n      <td>163 nM [113, 235]</td>\n      <td></td>\n      <td></td>\n      <td>9.4 nM [8, 11]</td>\n    </tr>\n    <tr>\n      <td>DL GluK3</td>\n      <td></td>\n      <td></td>\n      <td>&lt;50 pM*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UL GluK4</td>\n      <td>146 nM [116, 184]</td>\n      <td>57 nM [46, 71]</td>\n      <td></td>\n      <td>&gt;1 mM$</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UL GluK5</td>\n      <td>18 nM [15,22]</td>\n      <td>12 nM [10, 14]</td>\n      <td></td>\n      <td></td>\n      <td>350 \u00b5M%</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in brackets indicate 95% confidence limits. Abbreviations: UL, Unlabeled protein; DL, DyLight 488-labeled protein; EGFP, EGFP fusion protein. *KD determination from FDS-SV dilution series. $KD determined from SV ABS data. %KD previously determined from SV ABS data for unlabeled GluK5 (Kumar et al., 2011)._\n\nTherefore, here we embark on a systematic study of the affinities of all KaiR homo- and heterodimers, and in addition use improved methods to revisit the interactions of AMPA receptor ATDs in a systematic survey of their homomeric and heteromeric binding affinities. We find distinct patterns of ATD assembly that differ between AMPA and kainate receptor families, with dissociation equilibrium constants spanning several orders of magnitude, revealing clearly energetically favored homomeric and heteromeric assemblies. In addition, a more detailed analysis of sedimentation profiles for some\u00a0species suggests that there are intriguing differences in their binding kinetics underlying the differences in affinity, which may also contribute to modulate assembly pathways.\n\n## Results\n\n### SV analysis of kainate receptor ATD assemblies\n\nBecause mixtures of KaiR ATDs exhibit simultaneous and competitive homo-dimerization and hetero-dimerization equilibria, the strategy used for their analysis was to characterize their self-association first, such that the homo-dimerization $K_{D}$ can be fixed in the analysis of mixtures, which then can reveal the affinity of hetero-dimerization.\n\n#### Self-association of KaiR ATDs\n\nBased on the results of preliminary experiments, GluK1, GluK2, and GluK3 ATDs exhibit high-affinity self-association requiring the use of fluorescence detection in SV (FDS-SV). These KaiR ATDs were purified and labeled with DyLight 488 as described in Methods and Materials. Avoiding the pitfalls of FAM, DyLight 488 has been shown previously to be an inert tag (Zhao et al., 2013d). For GluK1 and GluK2 we performed tracer titration experiments in which a series of concentrations of unlabeled protein was added to a low concentration of the labeled sample, shifting the sedimentation profile from monomer to dimer species. For GluK3, which expressed less well than other KaiR species, we performed a dilution series of the fluorescently labeled sample. In contrast to GluK1-3, only weak self-association is shown by GluK4 and GluK5; therefore unlabeled GluK4 and GluK5 could be studied by SV with conventional absorbance optics.\n\nSedimentation coefficient distributions $c\u2062(s)$ for these experiments are shown in Figure 1 and reveal three distinct patterns. GluK1 and GluK2 share the common pattern of a major peak, which shifts to higher sedimentation coefficients as the concentration increases over the range of 0.2 nM to 40 \u00b5M for GluK1 (Panel A) and 1 nM to 500 nM for GluK2 (Panel B), respectively. By contrast, although no concentration dependent shift in peak position is observed for either GluK3 (Panel C) or GluK4 (Panel D) the sedimentation coefficients for these species are strikingly different. For GluK3 the peak at $\u223c$5.8 S is consistent with an essentially pure dimer population over a concentration range from 50 pM to 1.2 \u00b5M, while for GluK4 the peak at $\u223c$3.8 S is consistent with an essentially pure monomer population over a concentration range from 0.3 to 29 \u00b5M. This indicates that under the current experimental conditions, the GluK3 ATD has an extremely high affinity for homo-dimerization ($K_{D}$< 50 pM), while GluK4 has very low affinity ($K_{D}$> 1 mM), even weaker than that previously determined for GluK5 ($K_{D}$= 350 \u00b5M [Kumar et al., 2011]). To determine the $K_{D}$ for homo-dimerization of GluK1 and GluK2 we performed integration from 2 to 8 S of the $c\u2062(s)$ traces for each concentration shown in Figure 1A/B to calculate the signal-weighted average sedimentation coefficients ($s_{w}$); the resulting $s_{w}$ isotherms were fit using a model for a monomer-dimer equilibrium; this gave a $K_{D}$ of 1.2 \u00b5M (95% CI: 0.8\u20131.7 \u00b5M) for GluK1 (Panel E) and 160 nM (95% CI: 70\u2013350 nM) for GluK2 (Panel F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig1-v3.jpg)\n\n**Figure 1.:** Panel A: Sedimentation coefficient distributions $c\u2062(s)$ derived from FDS-SV data of samples with 0.2 nM or 1 nM DyLight 488-labeled GluK1 mixed with 0.3 nM - 40 \u00b5M unlabeled GluK1 at the concentrations indicated in the legend (with the asterisk indicating the molecule carrying the fluorophore). Panel B: $c\u2062(s)$ traces for an analogous titration series of 1 nM DyLight 488-labeled GluK2 with 2\u2013499 nM unlabeled GluK2 using fluorescence detection, and a 15 \u00b5M sample of unlabeled GluK2 determined by absorbance detection at 280 nm. Panel C: $c\u2062(s)$ distributions from fluorescence data from DyLight 488-GluK3 at 50 pM - 1.2 \u00b5M. Panel D: Analogous $c\u2062(s)$ distributions of 0.3\u201329 \u00b5M unlabeled GluK4 detected by absorbance at 280 nm. Panels E and F: Isotherms of signal-weighted average sedimentation coefficients $s_{w}$ of GluK1 and GluK2, derived from the $c\u2062(s)$ distributions in A and B, respectively, and best-fit isotherms of a monomer-dimer model with refined $K_{D}$ of 1.2 \u00b5M for GluK1 E and 160 nM for GluK2 F, respectively. For better visual comparison, $s_{w}$ is normalized to assign a value of 1.0 to the range from monomer to dimer $s$-value.\n\n#### Hetero-association of KaiR ATDs\n\nHetero-association between KaiR ATDs was studied using FDS-SV titration series experiments in which an unlabeled ATD component was added at different final concentrations to a low concentration of a second ATD binding partner carrying the fluorescent label. Because at the lowest concentrations studied, GluK3 did not dissociate into monomers, we did not study its association with other KaiR ATDs. For the combination GluK1/GluK2 we used 1 nM labeled GluK1, mixed with GluK2 ranging from 0.3 nM to 20 \u00b5M (Figure 2). The $c\u2062(s)$ distributions shown in Panel A reflect a competitive interaction between formation of GluK1 homodimers with a $K_{D}$ of 1.2 \u00b5M, GluK2 homodimers with a $K_{D}$ of 163 nM, and GluK1/GluK2 heterodimers. At a concentration of 1 nM, GluK1 forms an essentially pure monomer population, and thus in the titration series with unlabeled GluK2 the appearance of a peak at $\u223c$5.5 S indicates formation of the GluK1/GluK2 heterodimer. This is clearly visible at GluK2 concentrations of 5 and 20 \u00b5M (red and purple lines, respectively) but at the highest GluK2 concentration studied there is a still significant amount of GluK1 monomer present. This reflects both the high affinity of the GluK2 ATD homodimer reaction, which strongly competes with the formation of GluK1/GluK2 heterodimers, and practical limitations on the upper limit of GluK2 concentrations that can be prepared from the available samples. The $s_{w}$ isotherm calculated from this experiment (Panel B) was fit with a coupled equilibrium model, in which the $K_{D}$ and $s$-values for the two homo-dimerization reactions were fixed at values determined from independent measurements (Figure 1 and Table 1), while the $K_{D}$ and $s$-value for the heterodimer are refined. The best-fit heterodimer $K_{D}$ of 1.8 \u00b5M (95% CI: 1.5\u20132.2 \u00b5M) indicates that GluK1 and GluK2 do not preferentially coassemble to form heterodimers; in fact, this interaction is weaker than the homo-dimerization reactions of either of its components, implying a preference for homodimer formation by KaiRs from the GluK1-3 gene family members.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig2-v3.jpg)\n\n**Figure 2.:** Panel A: Sedimentation coefficient distribution $c\u2062(s)$ based on FDS-SV data of 1 nM DyLight 488-labeled GluK1 mixed with 0.3\u201320 \u00b5M unlabeled GluK2. A GluK1 control sample without GluK2 (grey) is virtually superimposed by those for 0.3 nM (black) and 1 nM (cyan) GluK2. Panel B: $s_{w}$ isotherm (normalized to assign a value of 1.0 to the range from monomer to dimer $s$-value) after integration of $c\u2062(s)$ traces (circles) and fit with a model for competitive homo- and hetero-association, fixing the two previously measured homo-dimerization constants of GluK1 and GluK2 while refining the $K_{D}$ for GluK1/GluK2 heteromers to the best-fit value of 1.8 \u00b5M.\n\nTo study heterodimer association for the other KaiR combinations, unlabeled constructs were titrated into labeled binding\u00a0partners. The $c\u2062(s)$ distributions for the these mixtures, shown in Figure 3, exhibit similar features for all explored pairs, with a major peak shifting to higher $s$-values with increase in concentration. For all combinations studied, at the highest concentration of the unlabeled protein (1.2 \u00b5M or 5 \u00b5M), the main peak sediments at $\u223c$5.6 S close to the expected $s$-value for the dimer, indicating nearly full binding saturation; conversely, at the lowest concentrations studied (0.2\u20130.5 nM) the labeled species sediments at $\u223c$3.8 S close to the expected $s$-value for the monomer Figure 3. It can be discerned that transition between monomer and dimer species in different hetero-pairs occurs at higher concentrations for GluK1/GluK4 (Panel A) and GluK2/GluK4 (Panel C) than for GluK1/GluK5 (Panel B) and GluK2/GluK5 (Panel D). This difference can be clearly identified by comparing the peak position of the sample at X nM\u00a0+10 nM (where X is 0.2, 0.5 or 1 nM of the particular labeled species, with 10 nM unlabeled binding partner added): For example, for GluK1/GluK4, 0.2 nM\u00a0+10 nM (dark green curve in Panel A) the peak is located at $\u223c$3.8 S, indicating a mainly monomer population, while for GluK2/GluK5 0.5 nM\u00a0+\u00a010 nM (orange curve in\u00a0Panel D) the peak is located at $\u223c$4.7 S, indicating a shift towards the dimer species.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig3-v3.jpg)\n\n**Figure 3.:** Panel A: Sedimentation coefficient distributions $c\u2062(s)$ determined from analysis of FDS-SV data for titration of 50\u2013200 pM DyLight 488-labeled GluK1 with 0.2 nM - 1.2 \u00b5M unlabeled GluK4. Panel B: $c\u2062(s)$ distributions for an analogous titration series of 200 pM or 1 nM DyLight 488-labeled GluK1 with 0.2 nM - 5 \u00b5M unlabeled GluK5. Panel C: $c\u2062(s)$ distributions from analysis of FDS-SV data for titration of 200 pM DyLight 488-labeled GluK2 with 0.2 nM - 1.2 \u00b5M unlabeled GluK4. Panel D: Analogous $c\u2062(s)$ distributions from FDS-SV data for the titration of 0.5 nM or 1 nM DyLight 488-labeled GluK5 with 0.2 nM - 1.2 \u00b5M unlabeled GluK2. Panel E: Isotherms of $s_{w}$-values for the titration series of GluK1 with either GluK4 or GluK5, fit with a coupled equilibrium model for GluK1/GluK4 or GluK1/GluK5 heterodimer assembly competitive with homo-dimerization of both binding partners, leads to a best-fit heterodimer $K_{D}$ of 146 nM (95% CI: 116\u2013184 nM) for GluK1/GluK4 and 18 nM (95% CI: 15\u201322 nM) for GluK1/GluK5. For comparison, the dashed line shows the isotherm for homomeric GluK1. $s_{w}$ is normalized to assign 1.0 for the range from monomer to dimer $s$-value. Panel F: Analogous to E, isotherms of $s_{w}$-values for the titration series of GluK2 with either GluK4 or GluK5, fit with a coupled equilibrium model for GluK2/GluK4 or GluK2/GluK5 heterodimer assembly competitive with homo-dimerization of both binding partners, lead to a heterodimer $K_{D}$ of 57 nM (95% CI: 46\u201371 nM) for GluK1/GluK4 and 12 nM (95% CI: 6\u201317 nM) for GluK1/GluK5; the dashed line shows the isotherm for homomeric GluK2.\n\nTo determine the $K_{D}$ for KaiR heterodimer ATD assembly by GluK1 and GluK2 with GluK4 and GluK5, the $c\u2062(s)$ traces for each concentration were integrated between 2 and 8 S to generate $s_{w}$ binding isotherms (Figure 3E/F). These were fit with a coupled equilibrium model in which the $K_{D}$ and $s$-values for the two homo-dimerization reactions were fixed at values determined from independent measurements as described above (Figure 1 and Table 1), with the $K_{D}$ and $s$-value for the heterodimer fit as free parameters. In summary, within the kainate receptor gene families, GluK1/GluK2 ATD heterodimers exhibit a $K_{D}$ of 1.8 \u00b5M, which is similar in affinity to the assembly of GluK1 homodimers ($K_{D}$=1.2 \u00b5M), but the GluK1/GluK2 heterodimer is 10-fold less stable than the GluK2 homodimer ($K_{D}$=163 nM). By contrast, the GluK4 and GluK5 ATDs both show a strong preference for heterodimer assembly with GluK1 and with GluK2, but with subunit dependent differences in affinity Table 1. For GluK1 (Figure 3E), we observed an 8-fold lower affinity for coassembly with GluK4 (GluK1/GluK4 $K_{D}$ = 146 nM; 95% CI: 116\u2013184 nM), compared to coassembly with GluK5 (GluK1/GluK5 $K_{D}$ = 18 nM; 95% CI: 15\u201322 nM). For GluK2 (Figure 3F), we observe a 5-fold lower affinity for coassembly with GluK4 (GluK2/GluK4 $K_{D}$ = 57 nM; 95% CI: 46\u201371 nM), compared to coassembly with GluK5 (GluK2/GluK5 $K_{D}$ = 12 nM; 95% CI: 6\u201317 nM).\n\n### SV analysis of AMPA receptor ATD interactions\n\nAll AMPA receptor ATDs undergo high-affinity self- and/or hetero-dimerization, and thus require fluorescently labeled versions for all members. GluA2 ATD was chemically labeled with DyLight 488 as previously described (Zhao et al., 2013d), whereas GluA1 and GluA4 ATDs were expressed as EGFP fusion proteins, which is equally inert with regard to interactions as DyLight 488 (Zhao et al., 2013d). Because the EGFP-GluA1 and EGFP-GluA4 ATDs expressed well in HEK cells, the comparatively large quantity of materials available allowed us to employ a dilution series strategy, taking advantage of the high signal/noise ratio of the data from samples at higher concentrations.\n\n#### Self-association of AMPA ATDs\n\nAs described above for kainate receptors, we first determined the $K_{D}$ and sedimentation coefficients for self-association of AMPA receptors ATDs, and then used these as constraints for analysis of heteromeric assemblies. Because we had previously studied homodimer formation by the GluA2 and GluA3 ATDs (Zhao et al., 2012, 2013d), in the present study these measurements were only performed for GluA1 and GluA4. The $c\u2062(s)$ distributions for the dilution series of GluA1 and GluA4 ATD-EGFP fusion proteins are shown in Figure 4A/B. For GluA1, a minor peak at 2.5 S and two major peaks at 4.4 S and $\u223c$6\u20136.5 S can be discerned. From hydrodynamic scale relationships the $s$-values for the GluA1 ATD-EGFP monomer and dimer are expected to be $\u223c$4\u20135 S and $\u223c$6\u20137 S, respectively. The 2.5 S peak matches the value determined previously for EGFP (Zhao et al., 2013c), and thus it is likely that free EGFP was present in this preparation, perhaps due to proteolytic cleavage of the fusion protein; consistent with this the amplitude of the 2.5 S peak varied between preparations. In any event, due to hydrodynamic separation from the GluA1 monomer and dimer peaks, we were able to unambiguously exclude the free EGFP signal from the integration of $c\u2062(s)$ distributions and the subsequent isotherm analysis. From the overlay of the $c\u2062(s)$ traces it can be visually discerned that the monomer to dimer transition occurs at lower concentrations for GluA1 than GluA4. This is reflected in the quantitative analysis of the $s_{w}$ isotherms after integration of $c\u2062(s)$ from 3 to 8 S, shown in Figure 4C/D together with previously determined data for GluA2 (Zhao et al., 2013d) and GluA3 (Zhao et al., 2012). The $K_{D}$-values were 28 nM (95% CI, 14\u201358 nM) for GluA1 and 318 nM (95% CI, 150\u2013730 nM) for GluA4. As shown in the diagonal of Table 2, for AMPA receptor ATDs self-association covers a wide range of binding strength, with the $K_{D}$ for GluA1 and GluA2 the strongest (28 and 20 nM, respectively), intermediate for GluA4 (318 nM), and weakest for GluA3 (5.2 \u00b5M).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig4-v3.jpg)\n\n**Figure 4.:** Panels A and B: Sedimentation coefficient distributions $c\u2062(s)$ derived from FDS-SV data of a dilution series of 100 pM - 1.2 \u00b5M EGFP-GluA1 (A) and 500 pM - 1.2 \u00b5M EGFP-GluA4. Panels C and D: Isotherms of $s_{w}$ for GluA1 (C) or GluA4 (D) fit with a model for monomer-dimer association with a best-fit $K_{D}$ for GluA1 of 28 nM (95% CI: 14\u201358 nM) and for GluA4 of 318 nM (95% CI: 145\u2013730 nM). For comparison, the dotted and dashed lines show isotherms for GluA2 and GluA3, respectively. $s_{w}$ is normalized to assign a value of 1.0 to the range from monomer to dimer $s$-value.\n\n**Table 2.**\n $K_{D}$-values for AMPA receptor amino-terminal domain dimer assembly.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>EGFP-GluA1</th>\n      <th>DL-GluA2</th>\n      <th>UL-GluA3</th>\n      <th>EGFP-GluA4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>28.4 nM [14, 58]</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>UL GluA1</td>\n    </tr>\n    <tr>\n      <td>2.9 nM [1.6, 5.6]</td>\n      <td>21.1 nM* [17, 27]</td>\n      <td></td>\n      <td>32.6 nM [19, 59]</td>\n      <td>UL GluA2</td>\n    </tr>\n    <tr>\n      <td>8.3 nM [6, 12]</td>\n      <td>1.3 nM [1.0, 1.7]</td>\n      <td>5.2 \u00b5M# [1.7, 14]</td>\n      <td>91 nM [60,137]</td>\n      <td>UL GluA3</td>\n    </tr>\n    <tr>\n      <td>62 nM [15, 218]</td>\n      <td></td>\n      <td></td>\n      <td>318 nM [145, 730]</td>\n      <td>UL GluA4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in brackets indicate 95% confidence limits. Abbreviations: UL, Unlabeled protein; DL, DyLight 488-labeled protein; EGFP, EGFP fusion protein. *Similar estimates were obtained separately in previous studies for GluA2 ATD: 24 nM in (Zhao et al., 2016); 16.5\u201325.4 nM in (Zhao et al., 2013d); 8.3\u201312 nM in (Zhao et al., 2012). # Value from (Zhao et al., 2012)._\n\nThe homo-dimerization $K_{D}$ of GluA1 and GluA4 is in a range that provides correspondingly high fluorescence signals at concentrations that produce mixed populations of monomers and dimers. This exposes more details in terms of the kinetic stability of homo-dimers in the sedimentation patterns compared to data from titration series experiments which use low nM concentrations of a fluorescent label. The source of this information can be visually discerned in the $c\u2062(s)$ overlays of Figure 4A/B when comparing the concentration dependence of the dimer peak position: For GluA1 (Panel A) the position of the peak shows little change over the range 0.1\u20131200 nM, and only the relative amplitude changes with concentration. This is characteristic for a monomer-dimer equilibrium with slow dissociation on the time-scale of sedimentation (Dam et al., 2005; Schuck and Zhao, 2017), implying off-rate constants $k_{off}$ in the range of $10^{-4}\u2062sec^{-1}$ or below. By contrast, for GluA4, the peak position shifts to intermediate values at concentrations of 50 and 300 nM \u2014 similar to the behavior observed previously for GluA2 (Zhao et al., 2013d) \u2014 which is indicative of fast interconversion of species on the time scale of sedimentation (Gilbert and Jenkins, 1956; Dam et al., 2005; Schuck and Zhao, 2017). Shifts in $c\u2062(s)$ peak positions are seen also for KaiRs (Figures 1 and 3), but the interpretation in this case is obscured by the lack of resolution at the lower signal/noise ratio at fluorophore concentrations of only 0.2\u20131 nM, where the most parsimonious distribution calculated by maximum entropy regularization in $c\u2062(s)$ commonly results in broad peaks for both slow and fast kinetics (Schuck, 2016).\n\nTo obtain more quantitative estimates of the dissociation rate constants, direct fits of the FDS-SV data with the partial differential equation for sedimentation/diffusion/chemical reaction processes (the Lamm equation) were carried out (Dam et al., 2005; Schuck and Zhao, 2017). In addition to a high signal/noise ratio for concentrations in the range of the $K_{D}$, this approach requires complex lifetimes on the timescale of the sedimentation experiment. For GluA4, as well as previously reported data for GluA2 (Zhao et al., 2013d) and GluA3 (Zhao et al., 2012), only a lower limit of $k_{off}>3\\times10^{-3}\u2062sec^{-1}$ can be obtained, which agrees well with the experimentally determined values of $5.1\\times10^{-3}\u2062sec^{-1}$ and $6.1\\times10^{-3}\u2062sec^{-1}$ measured by FRET for EGFP and DyLight\u00a0488 GluA2, respectively (Zhao et al., 2013d). For GluA1, an estimate of $k_{off}=3\\times10^{-4}\u2062sec^{-1}$ (95% CI, 1\u20135$\\times10^{-4}\u2062sec^{-1}$) could be determined. Together with the measured affinities, these values imply lower limits for the on-rate constants $k_{on}>1.4\\times10^{5}\u2062M^{-1}\u2062sec^{-1}$ for GluA2, contrasting with a value of only $\u223c10^{4}M^{\u22121}sec^{\u22121}$ for GluA1.\n\n#### Hetero-association of AMPA receptor ATDs\n\nTo examine the assembly of AMPA receptor heterodimers we exploited a titration series strategy to monitor the oligomeric state of the fluorophore carrier as a function of concentration of its unlabeled binding partner. To facilitate accurate analysis of what we expected to be high affinity interactions, with dissociation constants in the nM range, for all AMPA receptor ATD pairs examined, a 0.5 or 1 nM concentration of the fluorescently labeled construct was mixed with the unlabeled binding partner over a wide concentration range. As shown in Figure 5 the sedimentation coefficient distributions display predominantly monomeric species at low protein concentrations, shifting to predominantly dimeric species at high protein concentrations, indicating nearly full binding saturation. It should be noted that the $s$-values for the monomer, homo-dimer, as well as hetero-dimer species varies for individual pairs, depending on whether the fluorescent label was DyLight 488 (GluA2) or an EGFP fusion (GluA1 and GluA3). Different patterns in the sedimentation profiles observed in these experiments suggests differences in the dissociation kinetics for individual dimer species, but at the low fluorophore concentrations and concommitantly low signal/noise ratios these cannot be unequivocally assigned.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig5-v3.jpg)\n\n**Figure 5.:** Shown are sedimentation coefficient distributions $c\u2062(s)$ for the titrations of 0.2 or 0.5 nM EGFP-GluA1 with 0.2 nM - 1.2 \u00b5M unlabeled GluA2 (Panel A), 0.5 nM\u00a0EGFP-GluA1\u00a01 with 0.2 nM - 3 \u00b5M unlabeled GluA3 (Panel B), 0.5 nM EGFP-GluA1 with 0.2 nM - 3 \u00b5M unlabeled GluA4 (Panel C), 0.5 or 1 nM DyLight 488-labeled GluA2 with 0.2 nM - 1.2 \u00b5M unlabeled GluA3 (Panel D), 0.5 nM EGFP-GluA4\u00a0with 0.2 nM - 3 \u00b5M unlabeled GluA3 (Panel E), and 0.5 nM EGFP-GluA4\u00a0with 1 nM - 3 \u00b5M unlabeled GluA2 (Panel F).\n\nThe quantitative analysis of the $s_{w}$ isotherms obtained after integration of the $c\u2062(s)$ distributions is shown in Figure 6. Similar to kainate receptors, the hetero-dimerization affinity was determined by fitting a binding model describing the three coupled equilibria for which the $K_{D}$ and $s$-values for the two homo-dimerization reactions were fixed at pre-determined values described above, while refining the $K_{D}$ and $s$-value for the heterodimer. The results in Figure 6A highlight differences in affinity for heterodimers vs. homodimers of GluA2. Favored are complexes with GluA1 and GluA3, with the best-fit $K_{D}$ of 2.9 nM (95% CI, 1.6\u20135.6 nM) for GluA1/GluA2, and 1.3 nM (95% CI, 1\u20131.7 nM) for GluA2/GluA3, whereas the GluA2/GluA4 heterodimer is slightly less stable (33 nM; 95% CI, 19\u201359 nM) than the homodimer. Independent confirmatory data for the high GluA2/GluA3 affinity was obtained recently using a novel multi-component fluorescence detection technique for SV that could track both GluA2 and GluA3 complexes separately (Zhao et al., 2016). As shown in Figure 6B, energetically favored assembly of heteromeric species occurs also for AMPA receptor combinations that lack GluA2: For the pairs GluA1/GluA3, the best-fit $K_{D}$ was 8.3 nM (95% CI, 5.8\u201312 nM); for GluA1/GluA4 it was 62 nM (95% CI, 16\u2013218 nM); and for GluA3/GluA4 we determined a $K_{D}$ of 91 nM (95% CI, 60\u2013137 nM).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig6-v3.jpg)\n\n**Figure 6.:** Weighted-average $s_{w}$ as a function of concentration were extracted from the sedimentation coefficient distributions shown in Figure 5, and fit with a competitive homo- and hetero-dimerization model using previously determined homo-dimerization parameters of both components as fixed constraints (solid line). Panel A: The analysis of complexes of GluA2 yielded best-fit heterodimer $K_{D}$-values of 2.9 nM (95% CI: 1.6\u20135.6 nM) for GluA2/GluA1; 1.3 nM (95% CI: 1.0\u20131.7 nM) for GluA2/GluA3; and 32.6 nM (95% CI: 19\u201359 nM) for GluA2/GluA4. For comparison, the dotted line shows the isotherm for homomeric assembly of the GluA2 ATD. (Panel B:) The analysis of heterodimer assemblies not containing GluA2 yields best-fit heterodimer $K_{D}$-values of 8.3 nM (95% CI: 6\u201312 nM) for GluA1/GluA3; 61.5 nM (95% CI: 15\u2013218 nM) for GluA1/GluA4; and 91 nM (95% CI: 60\u2013137 nM) for GluA3/GluA4. For comparison, the dashed line shows the isotherm for self-association of GluA3 ATD and the dotted line that of GluA4 ATD. $s_{w}$ isotherms are normalized to assign 1.0 for the range from monomer to dimer $s$-value.\n\n## Discussion\n\nIn the present work we have undertaken a systematic survey of homomeric and heteromeric kainate and AMPA receptor ATD dimer stabilities. On one hand, this can aid the interpretation of an increasing body of iGluR structural data and their dimerization interfaces (Rossmann et al., 2011; Mayer, 2016); on the other hand, knowledge of the different energetic stabilities is a reference point for the interpretation of the physiologically observed repertoire and local abundances of various homo- and heterodimers expressed under different patterns of activity in different neurons, dictating synaptic gating kinetics and ion conductivity. The relative free energy of binding of purified receptor ATDs was hypothesized to reconstruct an assembly pathway and reflect the diversity in dimeric populations found in vivo (Rossmann et al., 2011), although precise mechanisms are still unclear, including impact of local copy numbers, and the physico-chemical microenvironment. In addition, interactions mediated by other receptor domains, especially the transmembrane domain (Gan et al., 2016; Greger et al., 2003), and complex formation with auxiliary proteins (Jackson and Nicoll, 2011; Sheng et al., 2017) are likely to be important determinants of receptor assembly. However, knowledge of the relative thermodynamic stability of assembly of ATD dimers for different species forms a useful guide for the analysis of additional regulatory contributions. Further, at least at some stage of receptor assembly, without invoking as of yet unknown mechanisms, the formation of heterodimers would be directly competitive to the homodimers of their components, and therefore the comparison of their binding energetics and kinetics is of special interest.\n\nThe measured binding energies of AMPA receptors, summarized in Figure 7, mirror in many ways physiologically observed preferences, with species of greatest stability being the heterodimers GluA2/GluA3, GluA1/GluA2, and GluA1/GluA3. Of note, the GluA1 and GluA3 heterodimer assemblies with GluA2 exhibit $K_{D}$-values that are 7-fold and 16-fold lower than that for self-assembly of GluA2, indicating that heterodimer assembly is strongly preferred. Formation of GluA2 heterodimers would also be facilitated considering the relatively short life-time of GluA2 homodimers observed in the present work, lowering the energy barrier between different states, although more complete information on other pairs \u2014 requiring FDS-SV strategies with higher signal/noise ratio or future experiments with other biophysical techniques \u2014 would be necessary to fully understand this aspect. Interestingly, the pairs GluA1/GluA3 and GluA3/GluA4 form heterodimer assemblies of comparable strength to those containing GluA2, indicating that high affinity heterodimer assembly is not limited to AMPA receptor assemblies containing GluA2. For the pairs GluA1/GluA3, the best-fit $K_{D}$ was 8.3 nM; for GluA1/GluA4 it was 62 nM; and for GluA3/GluA4 we determined a $K_{D}$ of 91 nM. These heterodimer assembly $K_{D}$ values are between 5-fold to 1000-fold lower than for the GluA3 and GluA4 homodimers. In particular, the comparatively low stability of GluA3 homodimer leads to the strongest preference of GluA3 to hetero-dimerize.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/32056/elife-32056-fig7-v3.jpg)\n\n**Figure 7.:** The Gibbs free energy for various dimers at 20$^{\u2218}$C under the current experimental conditions was calculated from the $K_{D}$-values in Table 1 and Table 2. Panel A: Graphic presentation of the relationship between the ATDs for AMPAR and KaiR. The color of the big circle (energy cloud) surrounding each pair indicates the free energy level of the dimerization, using the color temperature scale on the right. The width, line type, and color of the arrows emphasizes the stability difference between pairs with exchanged subunits. Panel B and C: Bar graphs of the Gibbs free energy for AMPA (A) and kainate (B) receptor ATD pairs. The dashed lines are visual guides for comparison, at the level of different homodimer free energies.\n\nSeveral of the results are in conflict with those obtained in pioneering FDS-SV studies using FAM-labeled preparations (Rossmann et al., 2011) which we have shown exhibit a label-induced increase in stability for GluA2 homodimers (Zhao et al., 2013d). We have hypothesized this largely to originate from artificial hydrophobic interfaces, which are eliminated in the present work by using DyLight labels carrying charged sulfonate groups, or EGFP fusion constructs (Zhao et al., 2013d). Another source of discrepancy arises from data processing not consistently based on rigorous mass transport theory to account for seemingly binding incompetent fractions (Rossmann et al., 2011); for example, $c\u2062(s)$ distributions exhibiting significant apparent monomer populations are inconsistent with mixtures of molecules at concentrations far above calculated $K_{D}$ with excess of high-affinity binding partners (Figure 1 and S2 in Rossmann et al., 2011). Similarly to GluA2, in the present work we find $\u223c$30-fold lower affinity for GluA4 homodimers and a $\u223c$4-fold difference for GluA3 homodimers as compared to results from the FAM-labeled preparations (Rossmann et al., 2011). Also, we found similar affinity for GluA1 and GluA2 homodimers, in contrast to 50-fold difference observed from FAM-labeled preparations (Rossmann et al., 2011). These differences are qualitatively important, for example, as they resolve the previously reported unexpectedly similar low nM $K_{D}$-values for the GluA2 homodimer and the hetero-dimer assemblies with GluA1, GluA3 and GluA4 (Rossmann et al., 2011), which would impede the formation of GluA2 heterodimers. In this context we note the new kinetic results which for GluA2, GluA3, and GluA4 show at least an order of magnitude shorter homodimer lifetime as compared to GluA1, seemingly facilitating the pathway to form high-affinity heterodimers. Despite the similar homodimer affinities of GluA1 and GluA2, the on-rate constant is at least 15-fold lower for GluA1, which may arise from differences in flexibility and subtle structural differences of the largely conserved homodimer interface comparing the two (Yao et al., 2011), and thus may play role in the abundance of GluA1/GluA2 heterodimers.\n\nIt is interesting to compare AMPA and kainate receptor ATD dimerization. In general, AMPA receptors bind more tightly for both homo- and hetero-dimerization reactions. Whereas for AMPA receptors heterodimer $\u0394$G estimates range from \u22129.4 to \u221211.4 kcal/mol, kainate heterodimers exhibit lower free energies of binding between \u22127.7 to \u221210.6 kcal/mol. The strongest KaiR heterodimer assembly is formed by GluK2/GluK5 (best-fit $K_{D}$ = 9.4 nM), which corresponds well with its physiological identification as a major species in the brain (Petralia et al., 1994; Mulle et al., 1998; Contractor et al., 2003). With the exception of GluK3, all homodimers were found to be relatively weak, which provides larger driving force to form heterodimers among kainate as compared to AMPA receptor ATDs. Especially, the heterodimer $K_{D}$-values for both GluK4 and GluK5 are more than three orders of magnitude smaller than their homodimer $K_{D}$-values, consistent with functional experiments which\u00a0revealed that both GluK4 and GluK5 only form functional receptors when coexpressed with GluK1-3 (Werner et al., 1991; Herb et al., 1992; Fisher and Fisher, 2014). A similar phenomenon was observed for GluN1B/GluN2B NMDA receptor ATD assembly, in which both components alone did not form dimers even at a concentration of $\u223c$20 \u00b5M and whereas the heterodimer showed a $K_{D}$ of 0.7 \u00b5M, further enhanced by ifenprodil (Karakas et al., 2011). This suggests that similar guiding principles of subtype combination may exist for other iGluR families (Rossmann et al., 2011). The GluK3 ATD shows an extremely stable homo-dimer with no dissociation observed even in pM regime. Interestingly, the gating properties of GluK3 are also unique with a low affinity for glutamate and Zn modulation that is absent in other KaiRs (Swanson et al., 1997; Veran et al., 2012). However, co-assembly of GluK3 with GluK2 has been demonstrated (Cui and Mayer, 1999), indicating that in vivo hetero-dimer formation is possible in spite of the highly thermodynamically favorable homo-dimer.\n\nFinally, from a methodological point of view, the present work highlights the unique potential of FDS-SV to study complex equilibria of interacting molecules, here including competitive homo- and hetero-associations, over many orders of magnitude of concentrations for systems with pM to \u00b5M $K_{D}$. A powerful feature of FDS-SV is the presentation of the size-distribution of the observed components, and their changes in population or migration patterns in the course of titration series. This provides for independent internal controls for the quality and assembly state of the samples under study, and allows for highly reproducible results (Table 2). At the same time, the present work demonstrates the requirement for rigorous analysis and thorough control experiments to eliminate potential pitfalls from attaching fluorescent labels (Zhao et al., 2013a). Though not universally applicable, EGFP fusions proteins have the advantage of a well-controlled 1:1 labeling ratio, and do not require laborious and expensive optimization of chemical labeling and associated extra purification steps to remove free dye. The additional mass of EGFP fusion constructs also leads to greater hydrodynamic distinction between homo- and heterodimer species in titration experiments with unlabeled proteins. Furthermore, with minor modifications to introduce photoswitchable variants, it offers opportunities for monochromatic multi-component detection in FDS-SV (Zhao et al., 2016). We also found that, if data with mixed populations of species can be obtained with sufficient signal/noise ratio, complex life-times can be measured, which may describe an avenue for more detailed future studies of iGluR assembly pathways. However, for most of the molecules studied here, this will require improved ultracentrifuge fluorescence detectors.\n\nIn summary, the present work provides a free energy map of AMPA and kainate receptor ATD dimerization, which describe driving forces for homo- and hetero-dimerization of different receptor subtype combinations. We believe this will contribute to the understanding of the mechanism of assembly of functional receptors, and provides rationales for their observed composition and distribution in vivo on the basis of their molecular properties.\n\n## Materials and methods\n\n### Protein expression and purification\n\nPlasmids for expression of secreted proteins using HEK cell suspension cultures were designed as follows. For unlabeled proteins, and for preparations that were later labeled with DyLight 488, the following cDNAs for iGluR ATDs with native signal peptides were cloned into the pRK5-IRES-EGFP mammalian expression vector: GluK1 G213N/M215T, last residue Arg402; GluK2 G215N/M217T, last residue Lys389; GluK3\u00a0T221N/Y223S, last residue Arg392; GluK4, last residue Val399; GluK5, last residue Ile387; GluA2, last residue Ser383; GluA3, last residue Ser386; followed in all constructs with a C-terminal linker, thrombin cleavage site and affinity tag, sequence: LELVPRGS-His8. Where indicated, mutations in the lateral face of ATD dimer assemblies were introduced to insert N-linked glycosylation sites that prevent protein aggregation, as reported previously for GluK2 (Kumar et al., 2011). For GluA1 and GluA4 we created N-terminal EGFP A206K mutant fusion proteins as follows. The cDNA for the GluA1 signal peptide and ATD, residues Met1-Phe21, was coupled in frame to an SGSG tetrapeptide followed by EGFP residues Val2-Lys239, followed by a second SGSG tetrapeptide and then the GluA1 ATD cDNA, residues Val17- Gln405, followed by a linker peptide, thrombin cleavage site and affinity tag peptide, sequence: SGLRSGLVPRGS-His8, and cloned into pFastBac1 baculovirus expression vectors for protein expression in Sf9 insect cells. For GluA4, the cDNA for the signal peptide and ATD, residues Met1-Gly21, was coupled in frame to an SGSG tetrapeptide followed by EGFP residues Val2-Lys239, followed by a second SGSG tetrapeptide and then the GluA4 ATD cDNA, residues Ala22- Glu413, followed by a linker peptide, thrombin cleavage site and affinity tag peptide, sequence LVPRGS-His8, and cloned into pRK5 for protein expression in HEK cells. Following expression induced by transient transfection of HEK cell suspension cultures using PEI (Aricescu et al., 2006), or for the GluA1-EGFP fusion protein baculovirus infection of insect cell cultures, media were clarified by centrifugation, concentrated by ultrafiltration (Millipore Labscale TFF system, Pellicon Ultracel 10 kDa), loaded onto Ni2+ charged HiTrap chelating HP columns (GE Health Care) and eluted with linear imidazole gradients. Pooled fractions were digested with thrombin to remove affinity tags followed by further purification using ion exchange chromatography.\n\n### Protein labeling\n\nPurified concentrated iGluR ATD samples were mixed with N-hydroxysuccinimide (NHS) ester-activated DyLight 488 (Thermo Fisher Scientific) dissolved in DMSO and then resuspended in labeling buffer (150 mM NaCl, 1 mM EDTA, 20 mM Na$_{2}$HPO$_{4}$/NaH$_{2}$PO$_{4}$ pH 7.0), as reported previously (Zhao et al., 2013d). The reactions were incubated in the dark at room temperature; the incubation time was typically 1 hr. The reaction solution was then loaded onto a high resolution size exclusion chromatography column at 4$^{\u2218}$C (Superdex 75 10/300 GL) equilibrated with labeling buffer at pH 7.5 to separate free dye from labeled protein. The protein concentration and labeling ratio were then determined by UV-Vis spectrophotometry using extinction coefficient values of the unmodified protein calculated from the amino acid sequence, and $\u03f5_{280}$ of 10,290 M$^{-1}$cm$^{-1}$ and $\u03f5_{493}$ of 70,000 M$^{-1}$cm$^{-1}$ for DyLight 488. Labeling ratios were typically 0.9\u20131.3 and final protein concentrations generally 1\u20135 \u00b5M.\n\n### Sedimentation velocity analytical ultracentrifugation (SV-AUC)\n\nOur analysis of ATD dimerization was performed using sedimentation velocity (SV) rather than sedimentation equilibrium (SE) for three reasons. First, SV offers better size-resolution than SE; second, the shorter run time for SV lowers the susceptibility to degradation artifacts which we previously established can impact the study of ATD assembly by SE (Zhao et al., 2012); third, SV is better suited for the data structure of fluorescence optical detection (Zhao et al., 2013c). Sedimentation velocity experiments were performed in an Optima XL-A analytical ultracentrifuge (Beckman Coulter, Indianapolis, IN) equipped with a fluorescence detection system (FDS) using a 10 mW solid-state laser at 488 nm as the light source (AVIV Biomedical, Lakewood, NJ) or an Optima XL-I analytical ultracentrifuge with an absorbance optical detection system at 280 nm. Concentration series for the homo- and hetero-interactions were prepared with either titration or dilution strategies. In titration series, the protein carrying the fluorophore was kept at a constant low nM concentration in each sample, while the unlabeled binding partner concentration was varying in a wide range up to \u00b5M. For some homo-dimerization analyses, a dilution series was employed by diluting the stock solution to the targeted concentrations. In all FDS-SV experiments reported in this study, we included 0.1 mg/mL of bovine serum albumin (BSA) in the samples in order to minimize surface adsorption of the protein of interest in the AUC cell.\n\nPrior to the SV experiments, standard protocols were followed as described in (Zhao et al., 2013b; Chaturvedi et al., 2017a). The protein samples were loaded into AUC cell assemblies with standard charcoal-filled Epon double-sector centerpieces with 12 mm pathlength and quartz or sapphire windows. The AUC cell assemblies filled with samples were subject to at least 3 hr temperature equilibration at 20$^{\u2218}$C before initiation of the SV experiments. No concentration-dependent change in quantum yield was observed (Chaturvedi et al., 2017b). In general, a focusing depth at 3955 \u00b5m for the laser beam was used. Depending on the brightness and the concentrations of the fluorescent molecule, the PMT setting varied to ensure an optimal fluorescent intensity below 3000 counts per sec. Generally PMT voltage was set at 30\u201350%. For the samples with pM concentration fluorescent molecules, usually 80% PMT voltage was used to maximize the sensitivity of the detection. After temperature equilibration, the rotor loaded with the samples was accelerated to 50,000 rpm and continuous data acquisition was started immediately. In order to account for the signal contribution of the carrier protein and buffer, a cell loaded with working buffer and 0.1 mg/mL of BSA in the two sectors respectively was included in the experiments. The signal from these two control samples was examined. In experiments using a high photomultiplier voltage necessary for detecting very low fluorophore concentrations, the signal from BSA was significant and was subtracted from the data (Schuck et al., 2015; Chaturvedi et al., 2017a). When a lower photomultiplier voltage was used, this signal was usually lower than the noise of the data, and thus could be ignored.\n\n### Data analysis\n\n#### Sedimentation coefficient distribution and binding isotherm analysis\n\nThe\u00a0SV scans of each sample were loaded into\u00a0SEDFIT (sedfitsedphat.nibib.nih.gov) and $c\u2062(s)$ analysis was applied to resolve the diffusion-deconvoluted sedimentation coefficient distribution ($c\u2062(s)$ distribution) of non-interacting species adhering to the hydrodynamic scaling law of compact particles, using maximum entropy regularization, as described (Schuck, 2000). For each concentration series, the resulting $c\u2062(s)$ distributions were loaded into the software GUSSI (Brautigam, 2015) for superimposed plotting and integration across the $s$-value range of monomeric and dimeric species to determine the signal-weighted average sedimentation coefficient $s_{w}$ of the corresponding samples, corrected for BSA contributions where necessary (see above). In the present study, no corrections to standard conditions were carried out, and the $s$-values shown in all $c\u2062(s)$ and isotherm plots are for experimental conditions. The corrected $s_{w}$ values were assembled into an isotherm as a function of the protein concentrations, and loaded in SEDPHAT (sedfitsedphat.nibib.nih.gov) for modeling in accordance with the transport method (Schuck and Zhao, 2017) with homo- and/or hetero-dimerization models. For the application of the transport method, which is a consideration of mass balance of sedimentation, the only requirement is a good fit of the $c(s$) sedimentation model to the experimental data, which was achieved without exception.\n\nFor homodimerization, mass action law between monomeric species at molar concentration $c_{\u20621}$ and dimeric species at molar concentration $c_{\u20622}$ of component X was imposed\n\n$$\nc_{\u20622}=K_{,12}\u2062c_{,1}^{2},\n$$\n\nwith equilibrium association constant $K_{,12}=1/K_{D,}$, leading to contributions to the observed $s_{w}$ of\n\n$$\ns_{w,}=\\frac{s_{,1}\u2062c_{,1}+2\u2062s_{,2}\u2062c_{,2}}{c_{,1}+2\u2062c_{,2}},\n$$\n\nwhere $s_{,1}$ and $s_{,2}$ denote monomeric and dimeric species\u2019 $s$-values, respectively. These were treated as parameters to be refined in the isotherm of component X, alongside $K_{,12}$. If the $s$-values of monomer and dimer are well-determined by $c\u2062(s)$ distributions of slowly interacting systems, they can be fixed to the concentration-independent peak $c\u2062(s)$ values (Schuck and Zhao, 2017). This allows a dimerization-incompetent fraction to be identified from the $s_{w}$ isotherm in addition to $K_{,12}$ with little parameter correlation (Schuck and Zhao, 2017). The need for this additional consideration arose for GluA1 and GluA4, recognized from a concentration-independent monomer fraction\u00a0even at high concentrations saturating binding (Schuck and Zhao, 2017); incompetent fractions varied for individual preparations from 0\u201323% and 0\u201333%, respectively. For all other molecules, the monomer and dimer $s$-values extrapolated as the asymptotic endpoints of the $s_{w}$ isotherm were consistent with peak $c\u2062(s)$-values for monomeric and dimeric populations, respectively, thus not requiring consideration of binding-incompetent fractions.\n\nFor mixtures of components X and Y, hetero-dimerization was described with the equilibrium relationship\n\n$$\nc_{}=K_{}\u2062c_{,1}\u2062c_{,1},\n$$\n\nwith equilibrium association constant $K_{}=1/K_{D,}$, to be fulfilled in addition to the homo-dimerization of X and Y, each independently following (Equation 1) with their respective homo-dimerization constant $K_{,12}$ and $K_{,12}$, and satisfying mass conservation $c_{Y,tot}=c_{Y,1}+2c_{Y,2}+c_{XY}$, rendering the homo- and hetero-dimerization processes competitive. While the total protomer concentration of the labeled component $c_{,tot}$ was determined from the observed signal, $c_{,tot}$ of the unlabeled component was taken as prior knowledge from the known loading concentration. The observed $s_{w}$ of the mixture tracing species X was modeled with contributions from the two coupled homo-dimerization and the hetero-dimerization processes\n\n$$\ns_{w,}=\\frac{s_{,1}\u2062c_{,1}+2\u2062s_{,2}\u2062c_{,2}+s_{}\u2062c_{}}{c_{,1}+2\u2062c_{,2}+c_{}}\n$$\n\nwith predetermined parameters from the homo-dimerization and refined parameters in the least-squares fit only $K_{}$ and $s_{}$. This fit to experimental data was carried out in SEDPHAT as a special case of the general homo/heterodimerization model switching off tetramerization. Confidence intervals were determined using error projection analysis in SEDPHAT to determine 95% confidence level (95% CI) based on F-statistics (Johnson and Straume, 1994).\n\n#### Determination of the complex lifetime with Lamm equation modeling\n\nAlternative to examining the effect of homo- and hetero-dimerization through its effect on the overall mass transport, which is achieved in the modeling of the $s_{w}$ isotherm as a function of loading concentrations, it is possible to directly fit the evolution of experimental boundary profiles with the explicit partial differential equation for the sedimentation/diffusion/reaction process (Stafford and Sherwood, 2004; Dam et al., 2005; Schuck and Zhao, 2017), replacing the equilibrium relationships of the coupled homo- and heterodimer formation Equations 1 and 3 with their corresponding chemical rate equations, in combination with the description of concentration gradients from sedimentation and diffusion by the Lamm equation (Lamm, 1929; Fujita, 1975). The advantage of this approach is that it can extract information on the kinetics of the reaction from the detailed boundary shapes, but only under the premise of highly pure components and for data of sufficiently high signal/noise ratio, due to the exquisite sensitivity of the boundary shapes for micro-heterogeneity and the limited kinetic range for which sedimentation profiles are sensitive to chemical kinetics (Dam et al., 2005; Brautigam, 2011; Schuck and Zhao, 2017). These conditions were met for some of the samples studied, and for these data, the SV profiles were directly modeled with numerical solutions to the coupled Lamm equation embedding\u00a0the dimerization binding model with $s$-values for monomer and dimer fixed at the values determined from $s_{w}$ isotherm analysis, refining the dissociation kinetic rate constant, $k_{off}$ along with $K_{D}$, by direct fitting of sedimentation profiles in SEDPHAT.\n",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "efa3d2c2-9787-4c23-9368-53d608a32a29",
+      "submission_id": "24941f75-836f-473e-affc-ba3b7934a849",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32056.012](https://doi.org/10.7554/eLife.32056.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Preferential Assembly of Kainate and AMPA Receptor Amino Terminal Domains\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers all recognized the high technical quality and comprehensive nature of the experiments that can serve as a template or building block for future studies of ionotropic glutamate receptor structure and assembly. Of course, isolated ATDs cannot tell us everything, but neither can structures of membrane receptors with truncated C-termini, various mutations to stabilize domains etc. Thus, the authors should be explicit in the revised manuscript about the limitation of interpretations from their results, particularly with respect to additional factors that may play a role in receptor assembly. You will see this issue reflected in the comments particular of reviewers 1 and 3. Please also address the specific concerns noted in the reviews below.\n\nReviewer #1:\n\nGlutamate receptors mediate the majority of excitatory neurotransmission in the central nervous system (CNS), are important for high cognitive brain functions and represent targets for treatment of numerous neurological diseases. The Zhao et al. manuscript presents a high-quality study of AMPA and kainate subtype glutamate receptor ATD dimerization properties using an advanced AUC technique. The results are solid and to a great extent supplement and in some instances correct previous measurements. No doubt, this study will make a great reference for future work on assembly of ionotropic glutamate receptors.\n\nThe major caveat of this work is a possibly wrong assumption about importance of ATD dimer interface stability for glutamate receptor assembly. While this stability might indeed serve as a driving force for the initial steps of assembly, the entire process ends up producing a structure with many more interfaces, including the larger size interfaces in the transmembrane region. Any of these additional interfaces might be potentially more important for the overall assembly of glutamate receptors. As rightfully mentioned by the authors, the issue is even more complicated because of the presence of glutamate receptor auxiliary subunits that seem to accompany the majority of receptors in the CNS synapses. To properly address glutamate receptor assembly, the approach used in the present study would need to be applied to full length glutamate receptors or their complexes with auxiliary subunits.\n\nAdditionally, while this work is important for assessing interaction of ATDs as possible important factors at the initial steps of glutamate receptor assembly, similar measurements have been previously conducted by this same group as well as others. Conceptually, the binding diagram in Figure 7 of this manuscript represents similar results and ideas as Figure 7 in 2011 paper by Rossmann et al.\n\nReviewer #2:\n\nThe manuscript by Zhao et al. reports the work related to the biochemical/molecular mechanism underlying the preferential assembly of heteromeric AMPA and kainate receptors. Heteromeric oligomerization of non-NMDA receptors (AMPA and kainate receptors) is a fundamental biological question since native non-NMDA receptors are known to exist as heterotetramers. However, patterns of heteromeric subunit association remains obscure. It's been known that an amino terminal domain (NTD) of ionotropic glutamate receptors is critical in subunit assembly. The current study addresses the question regarding the pattern of subunit assembly by isolating the purified NTD proteins from various subunits from both kainate and AMPA receptor families and measure their association constants by a series of analytical ultracentrifugation (AUC) experiments. All of the AUC experiments are conducted at the highest level with the most updated technology involving fluorescence labeling and the fluorescence detection to allow detection of the NTD proteins at low concentrations and precise measurement of high-affinity subunit association, which would not be possible if conventional detection methods such as absorbance and interference are used. The conclusion in Figure 7 is complete and translates well to the biology of ionotropic glutamate receptors. The methodological details in this work is also meaningful to the community of AUC. The manuscript, in general, reads very well.\n\n\u2013Why did the authors choose sedimentation velocity at various protein concentrations over sedimentation equilibrium? An explanation for this choice would be meaningful for readers.\n\n\u2013Abstract \u2013 The sentence \u201cKainate receptor ATD dimers are generally lower affinity than [...]\u201d would sound strange to the general reader. The association of ATD dimers are stronger or weaker.\n\nReviewer #3:\n\nThis manuscript describes a technically challenging biochemical analysis of the binding energies for the isolated amino terminal domains of the AMPA and kainate receptors. I have no concerns about the technical execution of the experiments, the analytical approach, or the rigor of the study. The results support some previously published work and extends our understanding of amino terminal domain binding in a comprehensive fashion across the full family of AMPA and kainate receptors. Interestingly, the authors find a range of affinities and thus lifetimes for dimer formation, and suggest, on the assumption that this is the key event driving assembly, that this heterogeneity will influence or perhaps control both receptor distributions in neurons as well as influence ability of neurons to change subunit composition. The information is certainly valuable, particularly as a systematic and comprehensive approach to evaluating all subunits. The authors argue they have circumvented technical artifacts associated with previous studies, and in this sense the comprehensive approach creates a data set that can be uniformly relied on by interested individuals. This is far more valuable than piecing together a story in which some subunit interactions were evaluated by one group, and others by a different group using different approaches. True to the authors' publication history, this is an excellent study of a molecular question that is important for basic understanding of receptor structure and assembly. I have no specific suggestions on ways to improve the study nor do I have any suggested wording changes that might improve clarity.\n\nThe key question is whether this uniform dataset is impactful and influential in directing others to new insight, and whether it will stimulate work in the field that will advance our understanding. On one hand, the authors make a compelling case that this information \"can aid the interpretation of an increasing body of iGluR structural data [\u2026]\", and I agree with this statement. They also state that \"knowledge of the relative thermodynamic stability of the different species may guide the analysis of regulatory contributions\", which I also agree with. I also believe that rigorous data available in a comparative manner can be influential by allowing future dissection of ideas that might rely, for example, on different ATD stability; such analysis would not be possible without the comprehensive approach taken, so in this way the study, because of its rigor, can guide and stimulate future work.\n\nOn the other hand, I believe it is perhaps a stretch to assume the affinities describe here will serve as a \"reference point for interpretation of physiologically observed repertoire and local abundances of various homo- and heterodimers expressed under different patterns of activity [\u2026]\". I do not see this work influencing physiologists, nor do I anticipate ATD affinity to be the over-riding driving force dictating which receptors that reach the cell surface. The authors admit as much a few sentences later saying local copy number, the microenvironment, other protein domains, and auxiliary subunits will all influence assembly. On balance, I favor publication because these comprehensive studies can stimulate thinking about new questions in ways partial evaluations do not.\n",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ced9fd5-a1ad-455c-9a80-e5f7e735a5ec",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C1",
+      "claim": "Ion conductivity and gating characteristics of tetrameric glutamate receptor ion channels are determined by their subunit composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion conductivity and the gating characteristics of tetrameric glutamate receptor ion channels are determined by their subunit composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "5f103bf1-ca51-4777-add4-1d43175cc645",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C2",
+      "claim": "Competitive homo- and hetero-dimerization of amino-terminal domains (ATDs) is a key step controlling glutamate receptor assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive homo- and hetero-dimerization of their amino-terminal domains (ATDs) is a key step controlling assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "f662ad52-046b-4c17-94e4-4b5daa83b3be",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C3",
+      "claim": "The association of kainate receptor ATD dimers is generally weaker than the association of AMPA receptor ATD dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of kainate receptor ATD dimers is generally weaker than the association of AMPA receptor ATD dimers, but both show a general pattern of increased heterodimer stability as compared to the homodimers of their constituents, matching well physiologically observed receptor combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the measured KD values presented in Tables 1 and 2 and discussed throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "c31fed39-2b6d-47e6-b186-81719b5b68a1",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C4",
+      "claim": "Both AMPA and kainate receptors show a general pattern of increased heterodimer stability compared to the homodimers of their constituents.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of kainate receptor ATD dimers is generally weaker than the association of AMPA receptor ATD dimers, but both show a general pattern of increased heterodimer stability as compared to the homodimers of their constituents, matching well physiologically observed receptor combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the measured KD values in Tables 1 and 2 showing heterodimers generally have lower KD values than their constituent homodimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "8feffaa5-20f0-4347-b745-736aecb53ca5",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C5",
+      "claim": "Signal transduction at excitatory synapses in vertebrate brains is mediated by a large family of glutamate receptor ion channels encoded by 18 iGluR subunit genes.",
+      "claim_type": "EXPLICIT",
+      "source": "At excitatory synapses in the brain of vertebrates, signal transduction is mediated by a large family of glutamate receptor ion channels (iGluRs) encoded by 18 iGluR subunit genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "b39b9228-d8c3-4ab0-9717-bae30e360cb4",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C6",
+      "claim": "Glutamate receptor ion channels assemble as tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "These membrane proteins assemble as tetramers, with coassembly between subunits limited to four major families named AMPA, kainate, NMDA and delta receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "0129b557-0e93-4d0a-be5e-fceffa02533e",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C7",
+      "claim": "There are four AMPA receptor subunits, five kainate receptor subunits, seven NMDA receptor subunits, and two delta receptor subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each family, there are four AMPA receptor subunits, five kainate receptor subunits, seven NMDA receptor subunits, and two delta receptor subunits, which assemble in different combinations to generate various homomeric or heteromeric species in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "deb0c9c4-6ae8-47bf-8f93-7accee5d8d97",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C8",
+      "claim": "Individual iGluR subtypes and their assemblies exhibit unique gating characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional experiments have shown that individual iGluR subtypes and their assemblies exhibit unique gating characteristics (Traynelis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "49c1e075-d16b-4dc3-8b1f-593732904a00",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C9",
+      "claim": "iGluR tetramers have a modular architecture formed by a layered assembly of extracellular amino terminal (ATD), ligand binding (LBD), transmembrane ion channel (TMD), and cytoplasmic (CTD) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These revealed tetramers with a modular architecture formed by a layered assembly of extracellular amino terminal (ATD), ligand binding (LBD), transmembrane ion channel (TMD), and cytoplasmic (CTD) domains (Sobolevsky et al., 2009; Schauder et al., 2013; Karakas and Furukawa, 2014; Lee et al., 2014; Meyerson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to crystal and cryo-EM structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "0aedfe03-d201-4af8-a748-748f70343f06",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C10",
+      "claim": "The ATD and LBD both combine as dimers with two-fold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATD and LBD, both of which combine as dimers with two-fold symmetry, can be genetically excised and individually expressed as soluble proteins; when crystallized, the soluble proteins form dimeric structures identical to those found in intact receptors (Mayer, 2011; Furukawa, 2012), motivating the study of their assembly using biophysical techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "d3f33379-95c2-4f64-a0e7-becda96c6b9e",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C12",
+      "claim": "The ATDs of iGluRs form dimers at low nM to low \u00b5M concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ATDs of iGluRs form dimers at low nM to low \u00b5M concentrations (Jin et al., 2009; Kumar et al., 2009; Karakas et al., 2011; Rossmann et al., 2011), suggesting that ATD oligomerization plays a major role in controlling iGluR assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior analytical ultracentrifugation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "2ae3d494-38fd-4ef4-8f67-1e21f09b3095",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C13",
+      "claim": "ATD oligomerization plays a major role in controlling iGluR assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ATDs of iGluRs form dimers at low nM to low \u00b5M concentrations (Jin et al., 2009; Kumar et al., 2009; Karakas et al., 2011; Rossmann et al., 2011), suggesting that ATD oligomerization plays a major role in controlling iGluR assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the much stronger binding of ATDs compared to LBDs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "f2febaa7-58eb-4fed-8f17-3480de0fa6e0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C14",
+      "claim": "Dimeric GluA2 assembly intermediates have been resolved by single-particle EM studies showing closely apposed ATD domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In support, dimeric GluA2 assembly intermediates have been resolved by single-particle EM studies after synchronized protein expression, showing closely apposed ATD domains (Shanks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "ea81cd4c-e87a-437b-a14f-7df0486e7915",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C15",
+      "claim": "ATD interactions are critical for the assembly of functional heteromeric receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, electrophysiological studies with ATD mutants have shown that ATD interactions are critical for the assembly of functional heteromeric receptors (Kumar et al., 2011; Rossmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "a55b54f1-3855-4d52-9fd9-6cf699d4fadc",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C16",
+      "claim": "Additional important contributions in iGluR assembly are likely to arise from the transmembrane domain and auxiliary proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, additional important contributions in iGluR assembly are likely to arise from other interactions, including the transmembrane domain (Gan et al., 2016), and auxiliary proteins (Jackson and Nicoll, 2011; Sheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on transmembrane domains and auxiliary proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "9dc48bf7-f09c-4518-aa63-67abf88107c8",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C17",
+      "claim": "DyLight 488 and EGFP are labels better suited for FDS experiments on iGluR ATDs than FAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using model systems, in subsequent studies we have systematically addressed these issues, identifying DyLight 488 and EGFP as labels better suited for FDS experiments on iGluR ATDs, and have developed analytical procedures and controls that allow measurement of protein interactions with low pM equilibrium dissociation constants (Zhao et al., 2013d, 2013c, Zhao et al., 2014; Chaturvedi et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' prior work cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "c925b0e3-d255-4883-b20e-47ca08b55798",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C18",
+      "claim": "GluA2 homodimerization has approximately an order of magnitude weaker interaction than initially reported by Rossmann et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to GluA2 homodimerization (Zhao et al., 2012, 2013d), this revealed approximately an order of magnitude weaker interaction than initially reported (Rossmann et al., 2011), reinforcing the importance of obtaining accurate data to quantitatively study the preferential assembly of iGluR ATDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' prior measurements compared to earlier published values.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "40334efc-d4ac-49e4-9052-df75f194635d",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C19",
+      "claim": "Kainate receptors are encoded by two gene families: GluK1-GluK3 (with 68-75% amino acid sequence identity) and GluK4-GluK5 (with 63% identity but only 25-27% identity with GluK1-GluK3).",
+      "claim_type": "EXPLICIT",
+      "source": "Kainate receptors are encoded by two gene families, GluK1-GluK3, for which the ATDs share 68\u201375% amino acid sequence identity; and GluK4-GluK5 which share 63% identity, but exhibit only 25\u201327% identity with GluK1-GluK3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about kainate receptor sequence relationships.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "d5505b83-62b6-4a14-8c2c-d17d259c2fab",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C20",
+      "claim": "GluK1-GluK3 form functional homomeric receptors but GluK4 and GluK5 are obligate heteromers which form functional channels only when coexpressed with GluK1-GluK3.",
+      "claim_type": "EXPLICIT",
+      "source": "GluK1-GluK3 form functional homomeric receptors but GluK4 and GluK5 are obligate heteromers which form functional channels only when coexpressed with GluK1-GluK3 (Perrais et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "99fe28bb-093c-493d-b6e3-f55bdc56e471",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C21",
+      "claim": "GluK1-GluK3 can coassemble to form functional heteromeric kainate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with recombinant receptors and genetically targeted mice also reveal that GluK1-GluK3 can coassemble to form functional heteromeric KaiRs (Cui and Mayer, 1999; Mulle et al., 2000; Veran et al., 2012) but at present it is not known whether like AMPA receptors these subunits assemble in preferred combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "96416fea-505d-43f4-9261-63d1ae09a63e",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C35",
+      "claim": "GluK4 and GluK5 ATDs both show a strong preference for heterodimer assembly with GluK1 and with GluK2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the GluK4 and GluK5 ATDs both show a strong preference for heterodimer assembly with GluK1 and with GluK2, but with subunit dependent differences in affinity Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the heterodimer KD values (nM range) to the homodimer KD values (>1 mM for GluK4, 350 \u00b5M for GluK5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "af2d82dd-f0b3-4b5f-8093-3f2ca610eba0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C40",
+      "claim": "GluA4 homodimers show fast interconversion of species on the time scale of sedimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, for GluA4, the peak position shifts to intermediate values at concentrations of 50 and 300 nM \u2014 similar to the behavior observed previously for GluA2 (Zhao et al., 2013d) \u2014 which is indicative of fast interconversion of species on the time scale of sedimentation (Gilbert and Jenkins, 1956; Dam et al., 2005; Schuck and Zhao, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the sedimentation patterns in Figure 4B showing concentration-dependent peak shifts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "c2e52b2f-ebec-4a51-aea0-93ac285803b0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C51",
+      "claim": "The measured binding energies of AMPA receptors mirror physiologically observed preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured binding energies of AMPA receptors, summarized in Figure 7, mirror in many ways physiologically observed preferences, with species of greatest stability being the heterodimers GluA2/GluA3, GluA1/GluA2, and GluA1/GluA3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred by comparing the measured KD values to known physiological receptor compositions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "30650eda-ac70-47f9-bea8-302459c14368",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C53",
+      "claim": "High affinity heterodimer assembly is not limited to AMPA receptor assemblies containing GluA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pairs GluA1/GluA3 and GluA3/GluA4 form heterodimer assemblies of comparable strength to those containing GluA2, indicating that high affinity heterodimer assembly is not limited to AMPA receptor assemblies containing GluA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measured KD values for GluA1/GluA3 and GluA3/GluA4 being in the same range as GluA2-containing heterodimers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "e6be3815-625e-4034-86d9-b3868d3f67a1",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C54",
+      "claim": "The comparatively low stability of GluA3 homodimer leads to the strongest preference of GluA3 to hetero-dimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the comparatively low stability of GluA3 homodimer leads to the strongest preference of GluA3 to hetero-dimerize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak GluA3 homodimer KD (5.2 \u00b5M) compared to its heterodimer KD values (1.3-91 nM).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "b17ae6e7-d859-46e8-b6ba-5dda4724dba4",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C55",
+      "claim": "FAM-labeled preparations exhibit a label-induced increase in stability for GluA2 homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the results are in conflict with those obtained in pioneering FDS-SV studies using FAM-labeled preparations (Rossmann et al., 2011) which we have shown exhibit a label-induced increase in stability for GluA2 homodimers (Zhao et al., 2013d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' prior work comparing FAM to other labels.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "b79c2e34-cd6d-4391-847c-7cc7ba4f05c4",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C57",
+      "claim": "The present work finds similar affinity for GluA1 and GluA2 homodimers, in contrast to 50-fold difference observed from FAM-labeled preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we found similar affinity for GluA1 and GluA2 homodimers, in contrast to 50-fold difference observed from FAM-labeled preparations (Rossmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparing the current measurements to prior published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "ad43c529-ab9d-4f5f-99a4-625adc4acd60",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C58",
+      "claim": "GluA2, GluA3, and GluA4 show at least an order of magnitude shorter homodimer lifetime compared to GluA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context we note the new kinetic results which for GluA2, GluA3, and GluA4 show at least an order of magnitude shorter homodimer lifetime as compared to GluA1, seemingly facilitating the pathway to form high-affinity heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measured koff values for GluA1 versus the other subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "41605da5-8d00-44d6-9aa4-253067f46354",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C59",
+      "claim": "AMPA receptors bind more tightly than kainate receptors for both homo- and hetero-dimerization reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, AMPA receptors bind more tightly for both homo- and hetero-dimerization reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the KD values in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "bbc298d6-6b7f-4edd-bab2-3852edf947a5",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C64",
+      "claim": "All kainate receptor homodimers except GluK3 are relatively weak.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of GluK3, all homodimers were found to be relatively weak, which provides larger driving force to form heterodimers among kainate as compared to AMPA receptor ATDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the measured KD values in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "7eda0e5b-976d-4614-a0fb-a046a2535267",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C67",
+      "claim": "Similar guiding principles of subtype combination may exist for other iGluR families.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that similar guiding principles of subtype combination may exist for other iGluR families (Rossmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed patterns in AMPA, kainate, and NMDA receptors.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "821895f0-0e38-4044-a30d-713cd7c8c424",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C68",
+      "claim": "The GluK3 ATD shows an extremely stable homo-dimer with no dissociation observed even in pM regime.",
+      "claim_type": "EXPLICIT",
+      "source": "The GluK3 ATD shows an extremely stable homo-dimer with no dissociation observed even in pM regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental observations in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "1e83fa84-ad0e-4e4e-9bf2-0119b28dfa1e",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C69",
+      "claim": "The gating properties of GluK3 are unique with a low affinity for glutamate and Zn modulation that is absent in other kainate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the gating properties of GluK3 are also unique with a low affinity for glutamate and Zn modulation that is absent in other KaiRs (Swanson et al., 1997; Veran et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "0dcfe5a8-a5c6-40b2-aa38-9d4067f3be12",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C70",
+      "claim": "Co-assembly of GluK3 with GluK2 has been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-assembly of GluK3 with GluK2 has been demonstrated (Cui and Mayer, 1999), indicating that in vivo hetero-dimer formation is possible in spite of the highly thermodynamically favorable homo-dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "a6321df3-84e0-4fd0-89fd-19a6f4f7f3ab",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C72",
+      "claim": "EGFP fusion proteins have the advantage of a well-controlled 1:1 labeling ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Though not universally applicable, EGFP fusions proteins have the advantage of a well-controlled 1:1 labeling ratio, and do not require laborious and expensive optimization of chemical labeling and associated extra purification steps to remove free dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological advantage based on the nature of fusion proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "d6ac9ea2-2415-4384-a932-e207cebe09a0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C73",
+      "claim": "The additional mass of EGFP fusion constructs leads to greater hydrodynamic distinction between homo- and heterodimer species in titration experiments with unlabeled proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional mass of EGFP fusion constructs also leads to greater hydrodynamic distinction between homo- and heterodimer species in titration experiments with unlabeled proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the physical properties of larger fusion proteins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "acdce280-4939-4830-8359-168e76634592",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C74",
+      "claim": "DyLight 488 is an inert tag for FDS-SV experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These KaiR ATDs were purified and labeled with DyLight 488 as described in Methods and Materials. Avoiding the pitfalls of FAM, DyLight 488 has been shown previously to be an inert tag (Zhao et al., 2013d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "1249a6a6-72c5-4926-a9a4-dc81c9938416",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C75",
+      "claim": "GluK1 ATD construct includes mutations G213N/M215T to insert N-linked glycosylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "For unlabeled proteins, and for preparations that were later labeled with DyLight 488, the following cDNAs for iGluR ATDs with native signal peptides were cloned into the pRK5-IRES-EGFP mammalian expression vector: GluK1 G213N/M215T, last residue Arg402",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the constructs used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "e1f18ea7-82f5-4cd0-8506-d34c8847bdab",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C76",
+      "claim": "GluK2 ATD construct includes mutations G215N/M217T to insert N-linked glycosylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "GluK2 G215N/M217T, last residue Lys389",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the constructs used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "40c92a9c-b3be-414c-8538-0cd47c5dc651",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C77",
+      "claim": "Mutations in the lateral face of ATD dimer assemblies were introduced to insert N-linked glycosylation sites that prevent protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Where indicated, mutations in the lateral face of ATD dimer assemblies were introduced to insert N-linked glycosylation sites that prevent protein aggregation, as reported previously for GluK2 (Kumar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "b28a16bb-5ca8-4e29-a917-5c936909b493",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "claim_id": "C78",
+      "claim": "BSA at 0.1 mg/mL was included in all FDS-SV experiments to minimize surface adsorption of the protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In all FDS-SV experiments reported in this study, we included 0.1 mg/mL of bovine serum albumin (BSA) in the samples in order to minimize surface adsorption of the protein of interest in the AUC cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental procedure in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bf235de8-73c6-4d05-944c-ceeca80031f0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Kainate receptor ATD dimers generally exhibit weaker association than AMPA receptor ATD dimers. With the exception of GluK3, kainate receptor homodimers are relatively weak, providing a larger thermodynamic driving force for heterodimer formation compared to AMPA receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C59, and C64 are well-supported by the comprehensive KD measurements in Tables 1 and 2. The data show kainate heterodimers range from 7.7-10.6 kcal/mol while AMPA heterodimers range from 9.4-11.4 kcal/mol. The weak kainate homodimers (except GluK3) are documented with specific KD values (GluK1: 1.2 \u00b5M, GluK2: 163 nM, GluK4: >1 mM, GluK5: 350 \u00b5M), providing clear quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "fd6ae302-79e2-4091-a487-854f9b34ff9e",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both AMPA and kainate receptors show a general pattern of increased heterodimer stability compared to their constituent homodimers. GluK4 and GluK5 ATDs show strong preference for heterodimer assembly with GluK1 and GluK2, with heterodimer KD values in the nM range versus >350 \u00b5M for homodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C35 are strongly supported by the measured KD values in Tables 1 and 2. For kainate receptors, GluK1/GluK5 (18 nM) and GluK2/GluK5 (12 nM) heterodimers are orders of magnitude more stable than GluK5 homodimers (350 \u00b5M). For AMPA receptors, heterodimers like GluA2/GluA3 (1.3 nM) are more stable than GluA3 homodimers (5.2 \u00b5M). The pattern is consistent across multiple receptor pairs with appropriate statistical confidence intervals provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "6f3c3d55-0361-48ab-8728-49b47aa7bed1",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GluK3 ATD exhibits an exceptionally stable homodimer with no dissociation observed even at pM concentrations (KD <50 pM), which correlates with its unique gating properties. Despite this extreme stability, co-assembly with GluK2 has been demonstrated in functional studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is directly supported by experimental data in Figure 1C showing no concentration-dependent dissociation from 50 pM to 1.2 \u00b5M. Claims C69 and C70 are supported by appropriate citations to functional studies. The apparent contradiction between extreme homodimer stability and observed heterodimerization is acknowledged but not resolved experimentally in this work, representing a limitation rather than an error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "ee1aec3a-d401-4ea4-a4f4-4aa1338a8d75",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AMPA receptor homodimers exhibit distinct kinetic behaviors: GluA1 shows slow dissociation kinetics (koff ~3\u00d710\u207b\u2074 sec\u207b\u00b9) while GluA2, GluA3, and GluA4 show at least an order of magnitude faster dissociation, potentially facilitating heterodimer formation pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C58 are supported by direct analysis of sedimentation patterns in Figure 4 and Lamm equation modeling. The concentration-independent peak position for GluA1 versus concentration-dependent shifts for GluA4 provide clear evidence for different kinetic regimes. The koff estimate for GluA1 (3\u00d710\u207b\u2074 sec\u207b\u00b9, 95% CI: 1-5\u00d710\u207b\u2074) is quantitatively determined with appropriate confidence intervals. The inference about facilitating heterodimer formation is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "5f08b844-78dc-403b-8928-82f499e04f24",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AMPA receptor ATD binding energies mirror physiologically observed preferences, with the most stable heterodimers being GluA2/GluA3 (1.3 nM), GluA1/GluA2 (2.9 nM), and GluA1/GluA3 (8.3 nM). High-affinity heterodimer assembly is not limited to GluA2-containing complexes, and GluA3 shows the strongest preference for heterodimerization due to its weak homodimer (5.2 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C53, and C54 are well-supported by the comprehensive KD measurements in Table 2 and Figure 7. The measured affinities show clear quantitative differences with appropriate confidence intervals. The comparison to physiological preferences (C51) is qualitative but reasonable based on cited literature. The inference about GluA3's preference for heterodimerization (C54) is logically sound given the >1000-fold difference between its homodimer and heterodimer KD values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "8f2e5374-983a-4db5-8e82-a6074074dda0",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DyLight 488 and EGFP are superior fluorescent labels for FDS-SV experiments compared to FAM, which induces artificial stabilization. Using improved labeling, GluA2 homodimerization is approximately 10-fold weaker than initially reported, and GluA1/GluA2 homodimers show similar affinities rather than the 50-fold difference observed with FAM labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C55, C57, and C74 are supported by the authors' extensive prior work (cited appropriately) and the current measurements. The comparison between current results and FAM-labeled preparations from Rossmann et al. (2011) is explicit and quantitative. The methodological improvements are well-documented in cited prior work. However, the evaluation relies heavily on the authors' own prior publications, which could represent a form of self-validation bias.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "a2772ed5-e865-4f63-913a-eb14d618ae27",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EGFP fusion proteins provide methodological advantages including well-controlled 1:1 labeling ratios and greater hydrodynamic distinction between homo- and heterodimer species due to their additional mass.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C73 are supported by the nature of fusion protein technology and the experimental results. The 1:1 labeling ratio is inherent to fusion proteins, and the improved hydrodynamic separation is demonstrated in the experimental data (e.g., Figure 4). These are straightforward technical advantages that are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "be51fee9-cd27-43e4-b164-938dd547f773",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Similar guiding principles of subtype combination through preferential heterodimer formation may exist for other iGluR families beyond AMPA and kainate receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is speculative and based on limited evidence from NMDA receptors cited from prior work. While the pattern observed for AMPA and kainate receptors is consistent, extrapolation to other iGluR families requires direct experimental validation. The claim is appropriately presented as speculation ('suggests') but lacks sufficient evidence for definitive support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "05130d0f-13c6-4f68-8ca0-5bc8a8c90e0a",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Specific mutations were introduced to insert N-linked glycosylation sites in kainate receptor ATD constructs to prevent aggregation, and BSA was included in all experiments to minimize surface adsorption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C76, C77, and C78 describe methodological details that are clearly stated in the Materials and Methods section. The glycosylation site mutations are supported by citation to prior work (Kumar et al., 2011) showing their effectiveness. The BSA addition is a standard control procedure. These are straightforward methodological claims with appropriate documentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    },
+    {
+      "id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f",
+      "content_id": "9283aeaa-28a6-4786-bf36-ed70b7d9005c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background knowledge claims establish that glutamate receptor ion channels are tetramers encoded by 18 genes, assemble with modular architecture including ATD and LBD domains that form dimers, and that ATD dimerization (nM-\u00b5M range) is stronger than LBD dimerization (mM range), suggesting ATDs play a major role in controlling assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 represent established knowledge from the field, appropriately cited to prior literature. These claims provide necessary context but are not novel findings of this manuscript. The citations appear appropriate and the knowledge claims are consistent with the field's understanding. However, these are not results of the current work and serve as background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:39:54.679396Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f662ad52-046b-4c17-94e4-4b5daa83b3be",
+      "result_id": "bf235de8-73c6-4d05-944c-ceeca80031f0"
+    },
+    {
+      "claim_id": "41605da5-8d00-44d6-9aa4-253067f46354",
+      "result_id": "bf235de8-73c6-4d05-944c-ceeca80031f0"
+    },
+    {
+      "claim_id": "bbc298d6-6b7f-4edd-bab2-3852edf947a5",
+      "result_id": "bf235de8-73c6-4d05-944c-ceeca80031f0"
+    },
+    {
+      "claim_id": "c31fed39-2b6d-47e6-b186-81719b5b68a1",
+      "result_id": "fd6ae302-79e2-4091-a487-854f9b34ff9e"
+    },
+    {
+      "claim_id": "96416fea-505d-43f4-9261-63d1ae09a63e",
+      "result_id": "fd6ae302-79e2-4091-a487-854f9b34ff9e"
+    },
+    {
+      "claim_id": "821895f0-0e38-4044-a30d-713cd7c8c424",
+      "result_id": "6f3c3d55-0361-48ab-8728-49b47aa7bed1"
+    },
+    {
+      "claim_id": "1e83fa84-ad0e-4e4e-9bf2-0119b28dfa1e",
+      "result_id": "6f3c3d55-0361-48ab-8728-49b47aa7bed1"
+    },
+    {
+      "claim_id": "0dcfe5a8-a5c6-40b2-aa38-9d4067f3be12",
+      "result_id": "6f3c3d55-0361-48ab-8728-49b47aa7bed1"
+    },
+    {
+      "claim_id": "af2d82dd-f0b3-4b5f-8093-3f2ca610eba0",
+      "result_id": "ee1aec3a-d401-4ea4-a4f4-4aa1338a8d75"
+    },
+    {
+      "claim_id": "ad43c529-ab9d-4f5f-99a4-625adc4acd60",
+      "result_id": "ee1aec3a-d401-4ea4-a4f4-4aa1338a8d75"
+    },
+    {
+      "claim_id": "c2e52b2f-ebec-4a51-aea0-93ac285803b0",
+      "result_id": "5f08b844-78dc-403b-8928-82f499e04f24"
+    },
+    {
+      "claim_id": "30650eda-ac70-47f9-bea8-302459c14368",
+      "result_id": "5f08b844-78dc-403b-8928-82f499e04f24"
+    },
+    {
+      "claim_id": "e6be3815-625e-4034-86d9-b3868d3f67a1",
+      "result_id": "5f08b844-78dc-403b-8928-82f499e04f24"
+    },
+    {
+      "claim_id": "9dc48bf7-f09c-4518-aa63-67abf88107c8",
+      "result_id": "8f2e5374-983a-4db5-8e82-a6074074dda0"
+    },
+    {
+      "claim_id": "c925b0e3-d255-4883-b20e-47ca08b55798",
+      "result_id": "8f2e5374-983a-4db5-8e82-a6074074dda0"
+    },
+    {
+      "claim_id": "b17ae6e7-d859-46e8-b6ba-5dda4724dba4",
+      "result_id": "8f2e5374-983a-4db5-8e82-a6074074dda0"
+    },
+    {
+      "claim_id": "b79c2e34-cd6d-4391-847c-7cc7ba4f05c4",
+      "result_id": "8f2e5374-983a-4db5-8e82-a6074074dda0"
+    },
+    {
+      "claim_id": "acdce280-4939-4830-8359-168e76634592",
+      "result_id": "8f2e5374-983a-4db5-8e82-a6074074dda0"
+    },
+    {
+      "claim_id": "a6321df3-84e0-4fd0-89fd-19a6f4f7f3ab",
+      "result_id": "a2772ed5-e865-4f63-913a-eb14d618ae27"
+    },
+    {
+      "claim_id": "d6ac9ea2-2415-4384-a932-e207cebe09a0",
+      "result_id": "a2772ed5-e865-4f63-913a-eb14d618ae27"
+    },
+    {
+      "claim_id": "7eda0e5b-976d-4614-a0fb-a046a2535267",
+      "result_id": "be51fee9-cd27-43e4-b164-938dd547f773"
+    },
+    {
+      "claim_id": "1249a6a6-72c5-4926-a9a4-dc81c9938416",
+      "result_id": "05130d0f-13c6-4f68-8ca0-5bc8a8c90e0a"
+    },
+    {
+      "claim_id": "e1f18ea7-82f5-4cd0-8506-d34c8847bdab",
+      "result_id": "05130d0f-13c6-4f68-8ca0-5bc8a8c90e0a"
+    },
+    {
+      "claim_id": "40c92a9c-b3be-414c-8538-0cd47c5dc651",
+      "result_id": "05130d0f-13c6-4f68-8ca0-5bc8a8c90e0a"
+    },
+    {
+      "claim_id": "b28a16bb-5ca8-4e29-a917-5c936909b493",
+      "result_id": "05130d0f-13c6-4f68-8ca0-5bc8a8c90e0a"
+    },
+    {
+      "claim_id": "7ced9fd5-a1ad-455c-9a80-e5f7e735a5ec",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "5f103bf1-ca51-4777-add4-1d43175cc645",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "8feffaa5-20f0-4347-b745-736aecb53ca5",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "b39b9228-d8c3-4ab0-9717-bae30e360cb4",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "0129b557-0e93-4d0a-be5e-fceffa02533e",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "deb0c9c4-6ae8-47bf-8f93-7accee5d8d97",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "49c1e075-d16b-4dc3-8b1f-593732904a00",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "0aedfe03-d201-4af8-a748-748f70343f06",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "d3f33379-95c2-4f64-a0e7-becda96c6b9e",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "2ae3d494-38fd-4ef4-8f67-1e21f09b3095",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "f2febaa7-58eb-4fed-8f17-3480de0fa6e0",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "ea81cd4c-e87a-437b-a14f-7df0486e7915",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "a55b54f1-3855-4d52-9fd9-6cf699d4fadc",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "40334efc-d4ac-49e4-9052-df75f194635d",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "d5505b83-62b6-4a14-8c2c-d17d259c2fab",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    },
+    {
+      "claim_id": "99fe28bb-093c-493d-b6e3-f55bdc56e471",
+      "result_id": "bc2860c1-b56e-4bad-8d77-c3d1cf7f898f"
+    }
+  ],
+  "comparisons": []
+}

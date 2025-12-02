@@ -1,0 +1,472 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A network-based iterative ranking algorithm was developed and applied to publicly available gene expression data to predict functionally significant genes in the Caulobacter GSR regulon, identifying gsrN (ccna_R0081) as a top hit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C22, C32-C37 describe the computational methodology and results. The approach is well-documented with appropriate parameter optimization (C37, Figure 1\u2014figure supplement 1A), uses established correlation-based network construction (C33-C34), and applies an iterative ranking algorithm related to PageRank (C35). The identification of gsrN as a top hit (C38) is supported by the ranked list data (Figure 1\u2014source data 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GsrN is a conserved small RNA that is directly activated by the general stress sigma factor \u03c3T, as demonstrated by the presence of a consensus \u03c3T binding site in its promoter and \u03c3T-dependent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C38-C40 are supported by multiple lines of evidence: computational identification of a consensus \u03c3T binding site (Figure 1\u2014figure supplement 2A), transcriptional reporter assays showing \u03c3T-dependent transcription (Figure 1\u2014figure supplement 2A,C), and citation to previous work identifying the sRNA (C38). The direct activation by \u03c3T is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "GsrN does not feedback to control GSR transcription, as deletion or overexpression of gsrN does not affect transcription from the \u03c3T-dependent PsigU reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by transcriptional reporter assays (Figure 1\u2014figure supplement 2D) showing no effect of gsrN deletion or overexpression on PsigU transcription, both basally and after sucrose induction. This establishes that GsrN acts downstream of \u03c3T without feedback regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "GsrN is a major genetic contributor to hydrogen peroxide stress survival, with \u0394gsrN showing a ~3-log viability defect that is fully complemented by ectopic expression, while 10 other \u03c3T-regulated genes tested showed no peroxide sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by survival assays (Figure 1E, Figure 1\u2014figure supplement 2B, Figure 2A, Figure 2\u2014figure supplement 1C). The phenotype is robust, complementation is complete, and the specificity is demonstrated by testing multiple other \u03c3T-regulated genes. The comparison to core GSR regulators (C44) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GsrN confers dose-dependent protection from peroxide stress, with measured GsrN levels directly correlating with cell survival (r = 0.92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by survival assays at increasing peroxide concentrations (Figure 2A) and correlation analysis between GsrN levels and survival (Figure 2\u2014figure supplement 1C). The strong correlation (r = 0.92) with statistical significance supports the dose-dependent protection model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Constitutive expression of gsrN from a strong \u03c3RpoD promoter (P1) but not a weak one (P2) rescues the \u0394sigT peroxide survival defect, demonstrating that gsrN is a major genetic determinant of hydrogen peroxide survival downstream of \u03c3T and that a threshold level of expression is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by survival assays (Figure 2C) and Northern blot quantification (Figure 2B) showing differential rescue by P1 (15% higher expression than native) versus P2 (50% lower). This elegantly demonstrates both sufficiency and threshold requirements for GsrN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "GsrN is endonucleolytically processed from a full-length (~100 nt) transcript into a stable 5' isoform (51-54 nt) and less stable 3' isoform, as demonstrated by Northern blots, rifampicin chase experiments, primer extension, and 5'RACE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 are supported by multiple complementary experimental approaches: Northern blots with 5' and 3' probes (Figure 3A, Figure 3\u2014figure supplement 1A), RNA-seq (Figure 3\u2014figure supplement 1B), rifampicin chase showing accumulation of 5' isoform as full-length decays (Figure 3\u2014figure supplement 1C,D), primer extension mapping termini (Figure 3C,D), and 5'RACE confirming processing (Figure 3\u2014figure supplement 1E). The convergent evidence strongly supports the processing model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Hfq influences GsrN processing in vivo, with \u0394hfq strains showing undetectable full-length GsrN and hfq overexpression increasing full-length GsrN levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by Northern blot data (Figure 3\u2014figure supplement 2) showing clear effects of hfq deletion and overexpression on GsrN isoform distribution. However, the authors appropriately note pleiotropic effects of hfq mutations that complicate phenotypic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 5' end of GsrN (nucleotides 1-58) is necessary and sufficient for peroxide protection, as demonstrated by complementation with gsrN(\u03943') and loss of function with gsrN(\u03945').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by survival assays (Figure 4B, 4E) and Northern blots (Figure 4C) showing that the 5' portion alone complements the \u0394gsrN phenotype while deletion of the 5' region abolishes function. The data clearly establish the functional importance of the 5' region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A novel PP7hp-PP7cp affinity purification system was developed to identify GsrN targets, revealing enrichment of multiple mRNAs including katG, with predicted binding involving the cytosine-rich 5' loop of GsrN and G-rich sequences in target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C76-C92 describe the methodological innovation and results. The PP7hp tagging strategy is validated by complementation and Northern blot analysis (Figure 5\u2014figure supplement 1, Figure 5B). RNA-seq analysis using both gene-based and sliding window approaches identifies enriched targets (Figure 5C,D). Computational prediction of binding sites shows consistent patterns (Figure 5E, Table 1). The enrichment of katG 5' leader is particularly strong (Figure 5F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "GsrN enhances KatG protein expression without affecting katG transcription, as demonstrated by translational but not transcriptional reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by transcriptional reporter assays showing no effect of GsrN on katG transcription (Figure 6\u2014figure supplement 1A-C) and translational reporter assays showing GsrN-dependent regulation (Figure 6\u2014figure supplement 1D,F). The distinction between transcriptional and post-transcriptional regulation is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Base pairing between the 5' loop of GsrN and the 5' leader of katG mRNA is critical for katG expression and peroxide survival, as demonstrated by compensatory mutation analysis showing rescue of both expression and survival phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by elegant compensatory mutation experiments. Mutations in either the GsrN loop or katG target site reduce expression and survival (Figure 6B,C, Figure 6\u2014figure supplement 2A, Figure 6\u2014figure supplement 3B), while compensatory mutations that restore base pairing rescue both phenotypes (Figure 6B,C). This is strong genetic evidence for direct RNA-RNA interaction. The instability of GsrN(RS) (C100) is a complication but is addressed by overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "katG is necessary and sufficient for GsrN-mediated protection from hydrogen peroxide, as gsrN overexpression cannot protect \u0394kat G cells and katG overexpression rescues \u0394gsrN cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by epistasis experiments (Figure 6\u2014figure supplement 2C) showing that katG deletion eliminates gsrN overexpression protection and katG overexpression rescues \u0394gsrN. This establishes katG as the critical downstream target for peroxide protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Mutations in the katG mRNA target site affect GsrN stability without affecting gsrN transcription, suggesting that target interactions influence GsrN steady-state levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by Northern blot data (Figure 6D) showing reduced GsrN levels with katG target site mutations and partial rescue with compensatory mutations, while transcriptional reporter assays show no effect on gsrN transcription (Figure 6\u2014figure supplement 2B). This reveals an interesting feedback mechanism where target availability affects sRNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "GsrN enhances KatG translation in vivo, with protein levels changing more than transcript levels in response to GsrN, and peroxide treatment inducing katG mRNA via OxyR but requiring GsrN for efficient translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 are supported by dot blot and Western blot analysis (Figure 7) showing discordance between transcript and protein changes. In untreated cells, KatG protein is reduced 2-fold in \u0394gsrN despite no significant transcript change (C115-C116). After peroxide treatment, transcript induction occurs in all strains but protein induction requires GsrN (C117-C125). This strongly supports a translational activation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Global RNA-seq and proteomics analysis reveals that GsrN regulates multiple genes at the post-transcriptional level, with katG being the only gene significantly enriched in pull-down and differentially expressed in proteomics, confirming it as a major target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C138 are supported by RNA-seq (Figure 8\u2014figure supplement 1A, Figure 8B) and LC-MS/MS proteomics (Figure 8\u2014figure supplement 1B, Figure 8C) comparing \u0394gsrN and gsrN++ strains. The limited overlap between transcriptomics and proteomics (C130-C131) is expected for post-transcriptional regulation. The authors appropriately note limited proteome coverage (30%, C132). katG shows the expected pattern: no transcript change but significant protein change (C134-C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "GsrN protects cells from hyperosmotic stress independently of katG, indicating regulation of distinct targets for different stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 are supported by survival assays (Figure 8D) showing that \u0394gsrN has a hyperosmotic stress survival defect similar to \u0394sigT, gsrN overexpression provides protection, but \u0394kat G does not show this phenotype. This demonstrates that GsrN has multiple functional targets for different stresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Hyperosmotic stress induces GsrN expression while peroxide does not, and GsrN transcription is enhanced in stationary phase, consistent with previous transcriptomic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 are supported by Northern blot data (Figure 8E) and transcriptional reporter assays (Figure 1\u2014figure supplement 2E), with citation to previous work (C144). This establishes differential regulation of GsrN by different stresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Putative GsrN homologs with conserved 5' C-rich loops and \u03c3EcfG-dependent promoters were identified in Caulobacteraceae and Rhizobiaceae families, suggesting conservation of GsrN-like sRNAs in alphaproteobacterial GSR systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C155 are supported by BLASTn searches, genomic analysis (Figure 9A), sequence alignments (Figure 9B,C), and analysis of published transcriptomic data with appropriate citations (C153). The identification is based on multiple criteria: sequence similarity, genomic location, promoter elements, and secondary structure. However, C155 is appropriately framed as a prediction requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C164",
+      "C170",
+      "C171",
+      "C182",
+      "C186"
+    ],
+    "result": "GsrN functions as a central post-transcriptional regulator with major protective effects across distinct stress conditions (peroxide and hyperosmotic) via genetically distinct mechanisms, representing a layered regulatory response downstream of \u03c3T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C164, C170-C171, C182, C186 represent the major integrative conclusions. These are well-supported by the cumulative evidence: survival defects under multiple stresses (Figures 1E, 8D), distinct genetic requirements (katG for peroxide but not osmotic stress), multiple regulatory targets identified by pull-down and proteomics, and mechanistic studies of katG regulation. The model in Figure 10 appropriately summarizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "\u03c3T-dependent transcription of GsrN provides basal protection from hydrogen peroxide by enhancing KatG expression, with modest fold-changes in KatG (2-fold) producing large survival phenotypes, suggesting KatG operates near capacity under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 are supported by the experimental data and provide important mechanistic insight. The basal (non-induced) nature of GsrN under peroxide stress (C157) contrasts with OxyR induction. The observation that 2-fold changes in KatG produce large survival effects (C158-C159) is well-documented. The inference about KatG operating near capacity (C160) is reasonable and supported by comparison to E. coli, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The protective effect of Dps is minimal under the experimental conditions used, as gsrN expression alone rescues \u0394sigT and survival is determined by GsrN-katG interactions, though Dps may contribute to the difference between \u0394sigT and \u0394gsrN phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C163 appropriately contextualize the findings relative to previous work on Dps. The inference that Dps has minimal effect under these conditions (C162) is supported by the rescue experiments (Figure 2B,C) and compensatory mutation analysis. The speculation about Dps contributing to phenotypic differences (C163) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "GsrN functions similarly to sRNAs regulated downstream of \u03c3S and \u03c3B in other bacteria, acting purely post-transcriptionally without feedback on \u03c3T, unlike some other GSR-associated sRNAs that regulate sigma factor translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C169 appropriately place the findings in the context of other bacterial stress response systems with appropriate citations. The lack of feedback (C167) is experimentally demonstrated. The comparison to other systems (C169) is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Mutations in katG mRNA leader affect GsrN steady-state levels, suggesting that target mRNA concentrations could affect each other via GsrN in a complex regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C189 are supported by experimental data (Figure 6D) showing target-dependent GsrN stability. However, C188-C189 are appropriately framed as speculation about potential regulatory scenarios. This represents an interesting observation with implications for understanding sRNA regulatory networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "GsrN is processed into a stable 5' isoform that is sufficient for peroxide protection, though whether processing is required for function or PP7hp insertions interfere with function remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C199 appropriately discuss the processing results in context of other processed sRNAs with citations (C191-C192). The data clearly show processing occurs (C198) and the 5' isoform is sufficient (C199, Figure 4B). The uncertainty about whether processing is required (C196-C197) is appropriately acknowledged, as PP7hp insertions that reduce processing also reduce function, but causality is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "GsrN may regulate katG translation through multiple potential mechanisms including ribosome recruitment, structural changes enhancing ribosome binding, or mRNA stabilization, though the exact mechanism remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C181 appropriately discuss potential mechanisms with citations to analogous systems. However, these are explicitly framed as speculation (C176, C179-C180). The observation that 75% of Caulobacter ORFs lack canonical RBS (C178) is well-cited and relevant. The data support translational regulation but do not distinguish between proposed mechanisms. This represents appropriate discussion of future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The transcription of sigT, gsrN, and other GSR genes is cell cycle regulated with highest expression during the swarmer-to-stalked transition, potentially protecting cells from endogenous metabolic stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C203 are well-supported by citations to previous studies and data shown in Figure 1C. However, C204-C205 are appropriately framed as speculation about functional significance and future research directions. The cell cycle regulation is established fact; the functional interpretation is reasonable hypothesis.",
+    "result_type": "MINOR"
+  }
+]

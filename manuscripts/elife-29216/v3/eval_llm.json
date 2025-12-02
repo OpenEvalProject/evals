@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A genome-wide genetic screen in S. pombe identified NGD pathway components (Dom34, Hbs1, Ski2, Ski7) as critical factors for the UPR. The screen analyzed 2346 deletion strains and identified 180 genes affecting fitness under ER stress, with NGD factors showing sensitivity to tunicamycin. This sensitivity was specific to S. pombe and not observed in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic screen methodology is clearly described (C32, C34), statistical thresholds are defined (C35, z-score \u00b12), and results are validated by reconstruction of deletions (C42). The species-specific phenotype is demonstrated by comparative analysis with S. cerevisiae (C43). GO analysis provides functional context (C38, C40, C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Ribosome profiling in NGD mutants revealed that Ire1-mediated mRNA cleavage results in ribosome stalling. Short (15-18 nt) footprints accumulated at cleavage sites in dom34\u0394/ski2\u0394 strains under ER stress, and mRNAs degraded upon UPR induction were enriched in these short footprints, including previously identified RIDD targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ribosome profiling methodology is well-described (C45, C46, C48), with appropriate controls including time course validation of Ire1 activity (C49). The footprint size distributions are consistent with prior work (C50-C52), and the correlation between mRNA degradation and short footprint enrichment is demonstrated across multiple analyses (C54-C56), validating the experimental strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C58",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C121",
+      "C122"
+    ],
+    "result": "Ribosome profiling identified 471 novel Ire1 target mRNAs with UG/C cleavage sites, expanding the known RIDD substrate list by over ten-fold. These targets showed striking enrichment of short footprints at UG/C sites upon UPR induction, with 91% predicted to be ER-associated, and 85% having UG/C as the most downstream cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of targets is supported by rigorous quantitative thresholds (C69, C71, >10-fold enrichment), validation against previously known targets (C70, C122), and strong enrichment of ER-associated proteins (C74, 91%). The pattern of UG/C sites being predominantly downstream (C76, 85%) is consistent with the proposed NGD mechanism. The methodology and statistical criteria are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C95",
+      "C96",
+      "C97",
+      "C115",
+      "C116"
+    ],
+    "result": "Stalled ribosomes serve as a molecular ruler, templating precise, regularly spaced upstream mRNA cleavage events with ~14 nucleotide periodicity. This periodic pattern extends hundreds of nucleotides upstream of the initial Ire1 cleavage site and is consistent with iterative NGD cleavage events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 14-nucleotide periodicity is rigorously demonstrated through multiple lines of evidence: visual inspection of individual transcripts (C64, C95), power spectrum analysis confirming the periodicity (C96), and comparison to prior NGD patterns in S. cerevisiae (C62). The precision of cleavage sites (C115, C116) strengthens the mechanistic interpretation (C97). The data quality and analytical approach are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Disomes (stacked ribosomes) form at Ire1 cleavage sites, evidenced by a 28-nucleotide periodicity superimposed on the 14-nucleotide pattern and enrichment of long (25-34 nt) footprints positioned ~15 nucleotides upstream of short footprints. The upstream ribosome in disomes protects mRNA from cleavage, accounting for alternating peak amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disome formation is supported by multiple complementary observations: the 28-nt peak in power spectrum analysis (C96, C98), the positioning of long footprints (C100), and the alternating amplitude pattern (C98, C101). The interpretation is consistent with known ribosome dimensions and RNase 1 digestion patterns. The model logically explains the observed data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Frame analysis of ribosome footprints revealed that footprint length depends on reading frame position of the terminal G in UG/C motifs (16 nt in frame 0, 17 nt in frame 1, 18 nt in frame 2), indicating ribosomes halt when the 3' mRNA end is positioned in the A site. A minority population of 15-nt reads suggests low-efficiency translocation when the A site contains terminal nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The frame-dependent footprint length distribution (C78) is clearly demonstrated and mechanistically interpretable based on ribosome structure and translation mechanism (C79). The observation of 15-nt reads in frame 2 (C80) provides additional mechanistic insight. The distribution of cleavage sites across frames matches transcriptome background (C81), supporting unbiased detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C120"
+    ],
+    "result": "MEME analysis revealed no strong sequence context features outside the UG/C motif for Ire1 cleavage. In contrast, non-UG/C NGD cleavage sites showed reading frame preference (diminished frame 0 cleavages), consistent with stalled ribosomes guiding the NGDase and similar to observations in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MEME analysis is appropriately applied (C82) and the negative result (C83) is clearly stated. The frame bias for non-UG/C sites (C84) is demonstrated and mechanistically interpreted (C85), with validation from prior work in S. cerevisiae (C86, C120). The distinction between Ire1 and NGDase cleavage patterns is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Analysis of averaged ribosome footprint data across strains revealed that both Dom34/Hbs1 (NGD/ribosome rescue) and Ski2 (3'\u21925' decay) pathways are critical for eliminating Ire1 cleavage products. Single knockouts showed smaller effects than the double knockout, suggesting the pathways can partially substitute for each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The strain comparison is systematic (C87, C88) with clear dependence on both UPR induction and pathway components (C89, C90). The graded effects across genotypes (C91, C110) support the interpretation of partial redundancy (C111). The increase in short reads upon pathway disruption (C93, C94) provides quantitative support. The analysis connects molecular and phenotypic data (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The 14-nucleotide spacing between upstream cleavage peaks indicates that the NGDase does not cleave flush against the ribosome surface but rather 1-2 nucleotides within the mRNA exit channel, providing mechanistic insight into NGDase positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of 14-nt spacing (C116) is clearly documented and distinct from the 15-18 nt footprints generated by RNase 1. The inference about NGDase positioning (C117, C118) is logical given known ribosome structure and the experimental data. While alternative explanations are acknowledged (C119), the primary interpretation is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The UPR in S. pombe executes RIDD through an intricate interplay between Ire1, translation, and the NGD pathway. The proposed model involves initial Ire1 cleavage leading to ribosome stalling, disome formation, iterative NGD cleavage events, and eventual mRNA degradation by the exosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model (C104-C107) is well-supported by the collective experimental evidence from genetic screens, ribosome profiling, and mechanistic analyses. The model logically synthesizes multiple observations including ribosome stalling (C4), periodic cleavage patterns (C5), and disome formation (C59). The conclusion about NGD's critical role (C8) is supported by both genetic and molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Ire1 cleaves its own mRNA, suggesting a potential autoregulatory mechanism to limit Ire1 production once a threshold level is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation of Ire1 self-cleavage is documented (C65), the autoregulatory interpretation (C66) is speculative. No functional validation of this proposed feedback mechanism is provided, such as measuring Ire1 protein levels or demonstrating that self-cleavage limits Ire1 activity. Additional experiments would be needed to support this mechanistic claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "816 mRNAs showed cleavage at non-UG/C sites upon UPR induction. Of these, 193 have sites differing from UG/C by one base (putative Ire1 targets), while 623 exhibit cleavage at other sites, possibly by Ire1 with relaxed specificity or by another unidentified endonuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of non-UG/C cleavage sites is data-driven (C77, C127-C129), but the mechanistic interpretation is speculative (C130). Without direct evidence distinguishing Ire1 cleavage with relaxed specificity from cleavage by another endonuclease, or validation of the single-base variants as true Ire1 targets, the molecular basis for these cleavages remains unclear. Further biochemical characterization would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Only 7.9% of UG/C motifs were cleaved upon UPR induction, suggesting additional features beyond the UG/C sequence determine Ire1 target selection. Sequence context immediately outside UG/C appears unimportant, and ER-associated mRNAs that escape cleavage show no particular functional enrichment, implying other properties (mRNA structure, localization, RNA-binding proteins, or nascent peptide features) specify targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low percentage of cleaved UG/C sites (C131) is clearly documented and raises an important mechanistic question. The negative results from MEME analysis (C134) and functional enrichment analysis (C137) are appropriately reported. While the proposed alternative determinants (C135) are speculative, the conclusion that additional unidentified features are required (C133, C138) is well-supported by the data. This represents an important limitation and direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The identified RIDD targets include many mRNAs encoding proteins involved in secretory pathway and lipid metabolism. The ribosome profiling method may miss cleavages in UTRs, and additional cleavage sites may exist in 5'UTR or 3'UTR regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional characterization of targets (C123) is observational and appropriately qualified as speculation regarding functional significance. The methodological limitation (C124) is honestly acknowledged, and the possibility of UTR cleavages (C125, C126) is supported by prior work. This represents appropriate discussion of method limitations and interpretation boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The biological importance of RIDD is underscored by the genetic screen results. Ski-complex mutants showed strong ER stress sensitivity, potentially because stalled ribosomes clog translocons and limit protein flux into the ER. These findings may have broad implications for human diseases involving chronic ISR activation, including atherosclerosis and neurological dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the genetic screen results (C139, C140) are well-supported, the mechanistic explanation involving translocon clogging (C141) is speculative and lacks direct experimental evidence. The extrapolation to human disease (C142, C144) is highly speculative, as the work is conducted in S. pombe, which lacks key UPR branches present in mammals. The connection to human health (C145) requires substantial additional validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C39",
+      "C47"
+    ],
+    "result": "Background and context claims establishing the UPR system, Ire1 function, RIDD mechanism, NGD pathway, and experimental reagents based on prior literature and established knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are appropriately supported by citations to prior work and established knowledge in the field. They set up the rationale for the current study and are not primary findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C108",
+      "C119"
+    ],
+    "result": "Speculative mechanistic proposals including higher-order ribosome structures (trisomes, quadrasomes), successive disome formation, factors determining complete vs. partial mRNA degradation, and alternative explanations for NGDase access to cleavage sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative proposals (C102, C103, C108, C119) that extend beyond the direct experimental evidence. While they represent reasonable hypotheses based on the data, they lack direct experimental validation and are appropriately presented as speculation by the authors. They represent interesting directions for future investigation.",
+    "result_type": "MINOR"
+  }
+]

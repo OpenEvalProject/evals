@@ -1,0 +1,2184 @@
+{
+  "submission": {
+    "id": "cc9dd13c-b9ba-4010-8bd4-94afc5516321",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:44:00.650402Z",
+    "updated_at": "2025-12-02T01:44:00.650402Z"
+  },
+  "content": [
+    {
+      "id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "submission_id": "cc9dd13c-b9ba-4010-8bd4-94afc5516321",
+      "content_type": "manuscript",
+      "content_text": "# State-dependent cell-type-specific membrane potential dynamics and unitary synaptic inputs in awake mice\n\n## Authors\n\n- Aur\u00e9lie Pala<sup>1</sup> ([ORCID: 0000-0002-9910-8470](https://orcid.org/0000-0002-9910-8470)) \u2020\n- Carl CH Petersen<sup>1</sup> ([ORCID: 0000-0003-3344-4495](https://orcid.org/0000-0003-3344-4495)) \u2020\n\n### Affiliations\n\n1. Laboratory of Sensory Processing, Brain Mind Institute, Faculty of Life Sciences \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL) Lausanne Switzerland\n2. Wallace H. Coulter Department of Biomedical Engineering Georgia Institute of Technology and Emory University Atlanta United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cellular and synaptic mechanisms driving cell-type-specific function during various cortical network activities and behaviors are poorly understood. Here, we targeted whole-cell recordings to two classes of inhibitory GABAergic neurons in layer 2/3 of the barrel cortex of awake head-restrained mice and correlated spontaneous membrane potential dynamics with cortical state and whisking behavior. Using optogenetic stimulation of single layer 2/3 excitatory neurons we measured unitary excitatory postsynaptic potentials (uEPSPs) across states. During active states, characterized by whisking and reduced low-frequency activity in the local field potential, parvalbumin-expressing neurons depolarized and, albeit in a small number of recordings, received uEPSPs with increased amplitude. In contrast, somatostatin-expressing neurons hyperpolarized and reduced firing rates during active states without consistent change in uEPSP amplitude. These results further our understanding of neocortical inhibitory neuron function in awake mice and are consistent with the hypothesis that distinct genetically-defined cell classes have different state-dependent patterns of activity.\n\n## Introduction\n\nIn cortical excitatory neurons, reduced low-frequency neocortical EEG or local field potential (LFP) activity, such as that observed during active behaviors, consistently correlates with a decrease in membrane potential (Vm) variance through a reduction in the amplitude of low-frequency Vm fluctuations, accompanied, on average, by Vm depolarization (Steriade et al., 2001; Timofeev et al., 2001; Crochet and Petersen, 2006; Poulet and Petersen, 2008; Yamashita et al., 2013; Bennett et al., 2013; Polack et al., 2013; Schneider et al., 2014; Reimer et al., 2014; Zhao et al., 2016). Much less is known regarding Vm and its relationship to action potential (AP) firing in inhibitory GABAergic neurons during various states of awake neocortical activity and during active behaviors. In layer 2/3 (L2/3) mouse primary somatosensory whisker barrel cortex (wS1), fast-spiking inhibitory neurons were found to decrease AP firing during whisking with little change in mean Vm but decreased Vm variance (Gentet et al., 2010). In comparison, parvalbumin-expressing (PV) neurons in L2/3 mouse visual cortex exhibited Vm depolarization accompanied by an increase in AP firing during locomotion (Polack et al., 2013). Disparities also exist amongst somatostatin-expressing (Sst) neurons, which are inhibited during whisking in L2/3 of wS1 (Gentet et al., 2012; Lee et al., 2013; Mu\u00f1oz et al., 2017), and either excited or inhibited by locomotion in L2/3 visual cortex (Polack et al., 2013; Reimer et al., 2014).\n\nMechanistically, changes in synaptic efficacy could contribute to driving state-dependent Vm dynamics, but in vivo measurements of synaptic transmission have largely been carried out under anesthesia (Matsumura et al., 1996; Crochet et al., 2005; Bruno and Sakmann, 2006; Jouhanneau et al., 2015; Pala and Petersen, 2015; Safari et al., 2017; Jouhanneau et al., 2018). Further experiments are therefore needed to investigate the cellular and synaptic mechanisms contributing to cell-type-specific and state-dependent Vm dynamics during wakefulness and active behaviors. Here, we carried out whole-cell recordings to measure Vm fluctuations in PV and Sst neurons in L2/3 of wS1 in awake head-restrained mice, and, in the subset of synaptically connected recordings, we probed unitary synaptic inputs through optogenetic stimulation of single nearby excitatory neurons.\n\n## Results\n\n### Vm dynamics in PV and Sst neurons across cortical and behavioral states\n\nWe made two-photon targeted whole-cell recordings of PV (Figure 1A) (Hippenmeyer et al., 2005) and Sst (Figure 1B) (Taniguchi et al., 2011) neurons expressing tdTomato (Madisen et al., 2010) in L2/3 of the C2 barrel column of wS1 in awake, head-restrained mice. Simultaneously, we recorded nearby LFP and conducted high speed filming of whisker movements to define cortical states and whisking-related behavioral states. We identified periods of high and low LFP power in the 1\u20135 Hz frequency band, as the amplitude of low frequency activity is known to correlate with various levels of arousal and to be modulated by movement (Steriade, 2000; Gervasoni et al., 2004; Crochet and Petersen, 2006; McGinley et al., 2015). Epochs with and without whisking were determined based on the velocity of the C2 whisker (Figure 1A,B) (see Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig1-v1.jpg)\n\n**Figure 1.:** (A) Example recording of a PV-expressing neuron. From top to bottom: Membrane potential (Vm), whisker angle, local field potential (LFP), normalized LFP FFT power. Green/grey boxes represent Whisking/Not-Whisking states, pink/grey color boxes represent Low/High 1\u20135 Hz LFP power states, and blue/grey boxes represent Active/Quiet states. (B) Same as in panel A, but for a Sst-expressing neuron.\n\nCortical states with high 1\u20135 Hz LFP power largely occurred during non-whisking periods, whereas whisking periods were dominated by low 1\u20135 Hz LFP power (Figure 2\u2014figure supplement 2). In further analyses, we therefore distinguished the two predominant non-overlapping states: Quiet periods defined as epochs with high 1\u20135 Hz LFP power without whisker movement, and Active periods defined as epochs with low 1\u20135 Hz LFP power accompanied by whisker movement. During Active states, PV neurons depolarized (Figure 2A), reduced Vm\u00a0standard deviation (Figure 2B), and reduced AP firing rate (Figure 2C). During Active states, PV neurons also reduced the amplitude of slow-frequency Vm fluctuations (Figure 2D,E), and decreased Vm\u00a0vs LFP cross-correlation (Figure 2F). In contrast, Vm of Sst neurons hyperpolarized during Active states (Figure 2A) without a change in Vm\u00a0standard deviation (Figure 2B), giving rise to a\u00a0reduced AP firing rate (Figure 2C). Sst neurons had low amplitude slow-frequency Vm fluctuations during both Quiet and Active states (Figure 2D,E), and Vm of Sst neurons showed little correlation with LFP, irrespective of state (Figure 2F). The Vm differences between PV and Sst neurons were not due to overall differences in cortical states or whisking-related behavior across different genotypes of mice (Figure 2\u2014figure supplement 1). Separate analyses of whisking-related and cortical state-related Vm modulation suggested that PV neurons may be relatively more strongly modulated by cortical state, whereas Sst neurons may be relatively more strongly modulated by whisking (Figure 2\u2014figure supplements 2 and 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mean membrane potential (Vm). (B) Standard deviation (SD) of Vm. (C) Spontaneous action potential (AP) rate. (D) Vm FFT amplitude spectrum. (E) Vm FFT amplitude in the 1\u20135 Hz frequency band. (F) Peak cross-correlation between Vm and LFP. Two-tailed Wilcoxon signed-rank test assessed statistical significance, with ** indicating p<0.01 and * indicating p<0.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) LFP FFT amplitude spectrum. (B) LFP FFT amplitude in the 1\u20135 Hz and 1\u201380 Hz frequency bands. (C) Fraction of time spent in Not-Whisking and Whisking states. (D) Mean duration of Not-Whisking and Whisking epochs. Two-tailed Wilcoxon rank-sum test assessed for statistical significance and none was found.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Fraction of time spent in Low 1\u20135 Hz LFP power (L), High 1\u20135 Hz LFP power (H), Whisking (W) and Not-Whisking (NW) states. (B) Mean membrane potential (Vm). (C) Standard deviation (SD) of Vm. (D) Vm FFT amplitude spectrum. (E) Vm FFT amplitude in the 1\u20135 Hz frequency band. (F) Spontaneous AP rate. (G) Peak cross-correlation between Vm and LFP. H: High 1\u20135 Hz LFP power, L: Low 1\u20135 Hz LFP power, NW: Not-Whisking, W: Whisking. Two-tailed Wilcoxon signed-rank test assessed statistical significance, with *** indicating p<0.001, ** indicating p<0.01 and * indicating p<0.05.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Mean Vm; Standard deviation (SD) of Vm; Vm FFT amplitude spectrum; Vm FFT amplitude in the 1\u20135 Hz frequency band; Spontaneous AP rate; and Peak cross-correlation between Vm and LFP. Comparison between Not-Whisking and Whisking epochs occurring during Low 1\u20135 Hz LFP power. (B) Same as panel A, but comparing epochs of High and Low 1\u20135 Hz LFP power occurring during Not-Whisking periods. NW: Not-Whisking, W: Whisking, H: High 1\u20135 Hz LFP power, L: Low 1\u20135 Hz LFP power. Two-tailed Wilcoxon signed-rank test assessed statistical significance, with ** indicating p<0.01.\n\nAltogether, these results show a cell-type-specific modulation of Vm across cortical and behavioral states in L2/3 wS1 of awake head-restrained mice. AP firing rates reduced during Active states in both PV and Sst neurons, but through distinct changes in Vm dynamics.\n\n### Excitatory unitary synaptic inputs in PV and Sst neurons across cortical and behavioral states\n\nEnhanced efficacy of local excitatory synaptic input onto PV neurons could contribute to the overall depolarization of PV neurons in Active states, and equally decreased efficacy of excitatory synaptic input onto Sst neurons could contribute to the overall hyperpolarisation of Sst neurons in Active states. We tested these specific hypotheses by measuring unitary synaptic inputs across states. Through two-photon targeted single-cell electroporation (Kitamura et al., 2008; Pala and Petersen, 2015), we expressed a fast channelrhodopsin, Chronos (Klapoetke et al., 2014), in a single L2/3 excitatory neuron per mouse (Figure 3\u2014figure supplement 1). Brief pulses of light (1 ms, 1 Hz) delivered using a 470 nm LED elicited highly reliable, time-locked single APs at short latency in Chronos-expressing neurons across both Quiet and Active states (Figure 3A\u2013C, Figure 3\u2014figure supplement 1), evoking unitary excitatory postsynaptic potentials (uEPSPs) in PV (Figure 3D\u2013F) and Sst neurons (Figure 3G\u2013I). The uEPSPs were faster in PV neurons than in Sst neurons, but with overall similar amplitudes (Figure 4A,C Figure 4\u2014figure supplement 1). In the small number of synaptically-connected postsynaptic neurons, we found an increase in uEPSP amplitude in PV neurons (n\u00a0=\u00a05 cells, p=0.031, one-tailed Wilcoxon signed-rank test) during Active states compared to Quiet states, but no consistent change in uEPSP amplitude in Sst neurons (n\u00a0=\u00a05 cells, p=0.22, one-tailed Wilcoxon signed-rank test) (Figure 4B,D). In the Active state, the baseline Vm (from which uEPSPs were evoked) was more depolarized for PV neurons, but more hyperpolarized for Sst neurons (Figure 4F), in agreement with the overall state-dependent Vm changes (Figure 2A). Altogether, these results suggest an enhancement of local excitatory synaptic transmission onto PV neurons during Active states.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig3-v1.jpg)\n\n**Figure 3.:** (A) Example juxtacellular recording of a presynaptic Chronos-expressing neuron. From top to bottom: Extracellular signal (Juxta), whisker angle, LFP, and light stimulus (LED). Blue/grey color boxes represent Active and Quiet states. (B and C) Time-locked individual APs evoked by a 1 ms LED stimulus during Quiet and Active states. (D) Example whole-cell recording from a PV neuron together with whisker angle, LFP and LED stimulus. (E and F) Individual uEPSP responses to 1 ms optogenetic stimuli during Quiet and Active states. (G\u2013I) Same as panels D-F, but for a Sst neuron.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Example single excitatory neurons expressing Chronos-eGFP in PV-Cre x LSL-tdTomato mice 24 hr post electroporation. (B) Same as in panel A, but in Sst-Cre x LSL-tdTomato mice. (C) PSTH of AP peak time in Chronos-expressing excitatory neurons during Quiet and Active states. (D) Reliable evoked single APs during Quiet and Active states. (E) Comparable short latency and small jitter of light-evoked APs across Quiet and Active states. Two-tailed Wilcoxon signed-rank test assessed statistical significance, and none was found.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean optogenetically-evoked Vm responses for PV, Sst, and all non-connected (NC) neurons. (B) Mean uEPSPs evoked in PV and Sst neurons during Quiet and Active states. (C) uEPSP amplitudes across PV and Sst neurons. (D) uEPSP amplitudes in PV and Sst neurons during Active and Quiet states. (E) Baseline Vm at uEPSP onset in PV and Sst neurons. (F) Baseline Vm at uEPSP onset in PV and Sst neurons during Active and Quiet states. Two-tailed Wilcoxon rank-sum test assessed statistical significance for panels C and E, and none was found. One-tailed Wilcoxon signed-rank test assessed statistical significance for panels D and F, with * indicating p<0.05.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35869/elife-35869-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) uEPSP rise-time is faster in PV neurons compared to Sst neurons. (B) uEPSP onset latency is comparable across PV and Sst neurons. Two-tailed Wilcoxon rank-sum test assessed statistical significance, with ** indicating p<0.01.\n\n## Discussion\n\nOur measurements in L2/3 of wS1 reveal prominent cell-type-specific differences in Vm dynamics across cortical states and whisking behavior. Mechanistically, modulation of local unitary synaptic input strength might contribute to these state-dependent Vm dynamics.\n\n### Sst-expressing GABAergic neurons\n\nSst neurons hyperpolarized (Figure 2A) and reduced firing rates (Figure 2C) during Active states, in agreement with previous measurements of whisking-related modulation in L2/3 of wS1 (Gentet et al., 2012; Lee et al., 2013; Mu\u00f1oz et al., 2017). The hyperpolarization of Sst neurons is thought to be driven by increased firing of VIP-expressing GABAergic neurons, which strongly inhibit Sst neurons (Lee et al., 2013; Pfeffer et al., 2013; Pi et al., 2013). The reduction in AP firing rate of Sst neurons during Active states may disinhibit distal dendrites of nearby excitatory neurons (Gentet et al., 2012), perhaps promoting non-linear dendritic excitation important for sensorimotor integration and perceptual decision-making (Xu et al., 2012; Takahashi et al., 2016).\n\nInterestingly, the Vm of Sst neurons only showed low-amplitude slow fluctuations (Figure 2D,E) and little correlation with LFP (Figure 2F), neither of which were affected by Quiet vs Active states. Sst neurons in L2/3 mouse barrel cortex are therefore functionally relatively uncoupled from the surrounding neuronal network, within which all other cell-types show highly correlated low frequency Vm fluctuations (Poulet and Petersen, 2008; Gentet et al., 2010; Gentet et al., 2012). In addition to prominent inhibitory input from VIP neurons, Sst neurons receive excitatory synaptic input, which shows strong frequency-dependent facilitation (Reyes et al., 1998; Kapfer et al., 2007; Silberberg and Markram, 2007; Pala and Petersen, 2015). Short-term synaptic plasticity together with cell-type- and layer-specific circuits likely contribute to the relatively decoupled Vm dynamics of Sst neurons compared to other types of nearby neurons.\n\nNicotinic enhancement of uEPSPs has recently been reported on Sst neurons in wS1 of anesthetised mice (Urban-Ciecko et al., 2018), and acetylcholine is known to be released during whisking (Eggermann et al., 2014). However, in our study with limited sample size, optogenetically-evoked uEPSPs in Sst neurons had similar amplitude during Quiet and Active epochs, suggesting comparable local excitatory drive across states. Future studies with a larger sample size, and with additional classification of subtypes of Sst neurons (Mu\u00f1oz et al., 2017), may well reveal state-dependent synaptic transmission onto Sst neurons in awake mice. Furthermore, it is possible that diverse synaptic inputs (for example from different sources such as from thalamus, or different cell-types in different layers of various cortical regions) onto Sst neurons might be differentially modulated by diverse cortical and behavioral states, and in future experiments it will be particularly important to measure synaptic transmission during execution and learning of goal-directed behaviors.\n\n### PV-expressing GABAergic neurons\n\nVm recordings from PV cells revealed that these fast-spiking GABAergic neurons are strongly modulated across Active and Quiet states. During Quiet states PV neurons were on average hyperpolarized (Figure 2A) and exhibited large Vm variance (Figure 2B) in the slow frequency range (Figure 2D,E) highly correlated with the LFP (Figure 2F). Conversely, during Active states, the Vm of PV neurons depolarized together with a reduction in Vm variance, Vm slow fluctuations and Vm correlation with LFP. Despite depolarization, the AP firing rate of PV neurons reduced significantly during the Active state (Figure 2C), presumably because the decreased Vm variance prevented an increased frequency of Vm excursions above AP threshold. Consistent with these observations, decreased firing of fast-spiking neurons was also previously noted in L2/3 of wS1 during whisking (Gentet et al., 2010), and during licking events accompanied by whisking in a whisker detection task (Sachidhanandam et al., 2016). These results appear to suggest that a reduction in the firing rate of PV neurons in L2/3 of wS1 typically accompanies whisking. The reduced firing rates of PV neurons during Active states will presumably disinhibit the surrounding neuronal network, perhaps promoting synaptic computations amongst the excitatory pyramidal neurons. Studies with larger sample size considering subtypes of PV neurons and comparing across various behavioral conditions will be important to further our understanding.\n\nOptogenetic stimulation of a single nearby excitatory pyramidal neuron appeared to\u00a0evoke uEPSPs with increased amplitude during Active states across the small sample of synaptically-connected postsynaptic PV neurons in our data set (Figure 4B,D). An increased amplitude of incoming L2/3 excitatory synaptic input could contribute to driving the depolarized average Vm in PV neurons during the Active cortical state (Figures 2A and 4F). Depolarization reduces the electrical driving force for glutamatergic conductances and therefore cannot explain increased amplitude of uEPSPs. In future experiments, it will be of interest to investigate whether state-dependent changes in the input resistance, or other aspects of dendritic integration, as well as the concentration of diverse neuromodulators might play a role in regulating synaptic efficacy through various presynaptic and postsynaptic mechanisms. Importantly, PV neurons receive synaptic inputs from many sources, which could be differentially regulated giving rise to complex state dependent Vm dynamics. Understanding the mechanisms regulating synaptic transmission during behavior remains an important challenge, necessary for a causal understanding of cortical circuit function.\n\n## Materials and methods\n\n### Animal preparation, surgery, and habituation to head-restraint\n\nSix 5\u201310 week old female and male PV-IRES-Cre (Hippenmeyer et al., 2005) mice and five 5\u201310 week old female and male Sst-IRES-Cre (Taniguchi et al., 2011) mice crossed with CAG-Lox-STOP-Lox-tdTomato (LSL-tdTomato) mice (Madisen et al., 2010) were used in accordance with protocols approved by the Swiss Federal Veterinary Office (authorisation VD1628). Mice were maintained under 1\u20132% isoflurane anesthesia while being implanted with a custom-made head-holder and a recording chamber. The location of the left C2 barrel column was functionally identified through intrinsic signal optical imaging under 0.5\u20131% isoflurane anesthesia (Lefort et al., 2009). Mice were habituated to head- and paw-restraint under different light conditions for 3\u20135 days before proceeding to electroporation and electrophysiological recordings.\n\n### Single-cell electroporation\n\nMice were kept under 1% isoflurane anesthesia while a small craniotomy (diameter 1\u20131.5 mm) was made leaving the dura intact. Electroporation of a single non-tdTomato neuron per PV-Cre x LSL-tdTomato or Sst-Cre x LSL-tdTomato mouse was carried out as previously described (Kitamura et al., 2008; Pala and Petersen, 2015). In brief, a glass pipette with a resistance of 10\u201317 M\u03a9 was filled with the same solution used for whole-cell recordings (see below) to which Alexa 488 dye (50\u2013100 \u03bcM) (Invitrogen), and plasmid DNA pAAV-Syn-Chronos-eGFP (100 ng/\u03bcl) (kindly provided by Thomas Oertner) (Klapoetke et al., 2014) were added. A two-photon microscope (Prairie Technologies) was used to visualize the pipette and the tdTomato-negative cell somas as dark shadows over a brighter background. The pipette was inserted in the brain through the intact dura and brought into close contact with the cell body of the target neuron and 50 pulses of negative voltage step (0.5 ms, \u201312 V) were delivered at 50 Hz using a pulse generator (Axoporator 800A, Molecular Devices). The craniotomy was then covered with silicone elastomer (Kwik-Cast, WPI) and the mice were returned to their home cage for 24 hr before proceeding to electrophysiological recordings.\n\n### Electrophysiology\n\n24 hr after electroporation, mice were re-anesthetized with 1\u20132% isoflurane and the dura was removed. A drop of agarose gel (1.2% in Ringer solution) (Sigma) was placed on top of the craniotomy, which was then partially sealed with a coverslip (#1 thickness, Menzel-Gl\u00e4ser) held in place with cyanoacrylate glue (Loctite, Henkel). The recording chamber was filled with Ringer solution and capped with silicone elastomer (Kwik-Cast, WPI). Mice were returned to their home cage and left to recover from anesthesia for a minimum of 2 hr. Mice were head-restrained under the two-photon microscope, the silicone elastomer cap removed and the agarose gel cleared from the non-sealed part of the craniotomy. The location of the single Chronos-expressing neuron was identified by cortical blood vasculature pattern and its excitatory nature was confirmed by its overall morphology and the presence of numerous dendritic spines. Local field potential (LFP) was continuously recorded with a 2\u20134 M\u03a9 glass pipette filled with Ringer solution containing 10\u201325 \u03bcM Alexa 594 dye and lowered to a depth of 150\u2013250 \u03bcm below the pia and within 250 \u03bcm from the Chronos-expressing neuron. Two-photon targeted juxtacellular recording of the Chronos-expressing neuron was performed with 5\u20137 M\u03a9 glass pipettes filled with the same solution as used for LFP recordings. Two-photon targeted whole-cell patch-clamp recordings were performed as previously described (Margrie et al., 2003; Gentet et al., 2010; Yamashita et al., 2013; Pala and Petersen, 2015). 5\u20138 M\u03a9 glass pipettes were filled with a solution containing (in mM): 135 potassium gluconate, 4 KCl, 10 HEPES, 10 sodium phosphocreatine, 4 MgATP, 0.3 Na3GTP (adjusted to pH 7.3 with KOH), to which 25\u201375 \u03bcM Alexa 488 dye was added. Patch-clamp recordings were obtained in current-clamp mode without current injection and Vm was not corrected for liquid junction potentials. All recorded signals were amplified by a Multiclamp 700B amplifier (Axon Instruments), Bessel filtered at 10 kHz and digitized at 20 kHz by an ITC-18 (Instrutech Corporation) under the control of custom written routines in IgorPro (Wavemetrics).\n\n### Optogenetic stimulation\n\nA collimated 470 nm superbright LED (Luxeon, Philips) was placed at the back of the 40x/0.8NA two-photon objective (Olympus) to generate wide field stimulation. Optogenetic stimuli consisted of single square pulses of light of 1 ms duration and 58 mW/mm2 intensity, delivered at a frequency of 1 Hz. A constant 470 nm background illumination made of an array of small LEDs (Everlight Electronics) was located in front of the mouse and kept on for the duration of the whole recording session.\n\n### Whisker filming\n\nOn recording day, all whiskers except for the left and right C2 whiskers were trimmed. Whisker movements were filmed at 200 Hz (CamRecord CL600 \u00d7 2, Optronis) with a resolution of 13 pixels/mm using the 470 nm LED array (see above) as an illumination source. During one postsynaptic Vm recording, we failed to acquire high-speed filming data due to a disk error.\n\n### Data analysis\n\nEpochs of whisking (W) and not-whisking (NW) were identified according to the speed of whisker movement using custom routines written in ImageJ (NIH) and Matlab (MathWorks). Portions of the recordings not assigned to either W or NW categories were not considered in the analysis. Epochs of high and low LFP power in the 1\u20135 Hz frequency band were identified for each recorded Chronos-expressing neuron\u00a0and each\u00a0postsynaptic neuron. Briefly, for each recorded trial of spontaneous and optogenetically-evoked activity, the LFP was down-sampled to 2000 Hz, low-pass filtered at 200 Hz (forward and reverse direction) and the power in the 1\u20135 Hz band was computed using a sliding FFT (window size: 2 s, overlap: 10 ms). A distribution of the 1\u20135 Hz power values was generated for each recorded neuron and portions of the recording were assigned to \u2018Low 1\u20135 Hz LFP power (L)\u2019 if their corresponding FFT power values were smaller than the 40th percentile of the distribution. Similarly, portions of the recording were assigned to \u2018High 1\u20135 Hz LFP power (H)\u2019 if their corresponding FFT power values were larger than the 60th percentile of the distribution. The \u2018Active\u2019 state was then defined as periods of recording displaying Low 1\u20135 Hz LFP power together with whisking, while the \u2018Quiet\u2019 state was defined as periods with High 1\u20135 Hz LFP power without whisker movement.\n\nElectrophysiological properties of PV and Sst neurons were quantified as follows. Mean Vm and standard deviation (SD) of Vm were computed for spontaneous periods of recording excluding APs. The Vm\u00a0vs LFP cross-correlation was computed for segments of spontaneous activity of 1 s duration. The Vm was offset by its average value and normalized by its standard deviation and the LFP was low-pass filtered at 200 Hz. To compute the Vm FFT spectrum and FFT amplitude in the 1\u20135 Hz frequency band, the Vm was median-filtered to remove APs. Segments of spontaneous activity of 1 s duration were used to compute the Vm FFT.\n\nTo quantify the light-evoked AP responses of the presynaptic Chronos-expressing neurons, an AP was considered as optogenetically evoked if its peak occurred within 10 ms of the onset of the 1 ms light stimulus. AP latency was defined as the time elapsed between light stimulus onset and AP peak time. AP jitter was defined as the standard deviation of the AP latency.\n\nTo quantify the properties of the light-evoked uEPSPs, an optogenetic stimulus-triggered smoothed Vm average was computed, excluding stimuli with postsynaptic APs occurring in a 50 ms window starting 20 ms before stimulus onset (Pala and Petersen, 2015). We analyzed 54\u00a0\u00b1\u00a032 (mean\u00a0\u00b1\u00a0SD, median 50) stimuli during the Quiet state (n\u00a0=\u00a010 cells) and 32\u00a0\u00b1\u00a018 (34) stimuli during the Active state (n\u00a0=\u00a010 cells). uEPSP amplitude was calculated as the difference between the mean Vm averaged over a 0.25 ms window centered at the peak of the uEPSP and the mean baseline Vm averaged over a 0.25 ms window taken immediately prior to the onset of the uEPSP. The uEPSP onset latency was defined as the time at which the smoothed first derivative of the Vm exceeded a threshold of 100 mV/s for PV neurons and 60 mV/s for Sst neurons. The uEPSP peak was defined as the first time at which the smoothed first derivative of the Vm became negative post uEPSP onset. The uEPSP rise time corresponded to the time elapsed from 20% to 80% of the amplitude on the rising phase of the averaged uEPSP. Classification of an optogenetic stimulus in a given category (Quiet/Active) required that 20 ms prior to stimulus onset and 30 ms post stimulus onset continuously be assigned to that category.\n\nPopulation data are represented as mean\u00a0\u00b1\u00a0SD in bar plots. In box plots, the median and interquartile range are shown with whiskers extending from the smallest data point comprised within 1.5x the interquartile range of the 1st quartile to the largest data point comprised within 1.5x the interquartile range of the third quartile. The mean value is superimposed on the box plots with a filled circle. Two-tailed Wilcoxon rank-sum and signed-rank tests were used to compare two groups of unpaired and paired data respectively, except in Figure 4D,F where we applied one-tailed Wilcoxon signed-rank tests. We justify use of one-tailed statistics in Figure 4D, because we test the specific hypothesis of whether uEPSP amplitude increased during Active states in PV neurons, thus contributing to their depolarization. For Sst neurons, we test the specific hypothesis of whether uEPSP amplitude decreased during Active states, thus contributing to their hyperpolarization. In Figure 4F, we justify use of one-tailed statistics because we test the specific hypotheses that PV neurons depolarize during Active states (as already found in Figure 2A) and that Sst neurons hyperpolarize during Active states (as already found in Figure 2A). Data analysis and statistical analysis were carried out in Matlab (Mathworks).\n\n### Data availability\n\nThe complete data set and Matlab analysis code are freely available at the CERN database Zenodo (https://zenodo.org/communities/petersen-lab-data) with DOI: https://doi.org/10.5281/zenodo.1304771.\n",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "a97b8bcf-e236-4fc6-859e-c49e89a4ca82",
+      "submission_id": "cc9dd13c-b9ba-4010-8bd4-94afc5516321",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yang Dan, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35869.019](https://doi.org/10.7554/eLife.35869.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell-type-specific modulation of membrane potential dynamics and unitary synaptic inputs by behavior and cortical state\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Yang Dan as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this study, the authors make targeted patch-clamp recordings to examine the excitatory synaptic inputs to parvalbumin-expressing (PV) and somatostatin-expressing (SOM) interneurons in the barrel cortex of awake mice during different cortical states and whisking behaviors. They optogenetically activated single excitatory neurons and measured the evoked uEPSPs. They showed that during desynchronized cortical state, PV-expressing interneurons are depolarized and receive larger uEPSPs, whereas during whisking Sst neurons are hyperpolarized but showed no change in uEPSPs.\n\nPrevious studies from this group of investigators showed distinct effects of brain and behavioral states on the firing rates of PV and Sst neurons. By measuring the excitatory inputs into each subtype, the current study provides new insights into the synaptic mechanism underlying the firing rate modulation. In addition, they found differential effects of cortical state vs. whisking behavior on modulating the membrane potential dynamics of PV and Sst neurons, which will no doubt inspire future studies on the underlying mechanism. Methodologically, the approach builds on their 2015 paper (Pala and Petersen, 2015) which addressed similar questions, but here they carry out the experiments in awake mice while tracking LFP and whisker movements. These are highly challenging experiments and the recordings are of high quality. The dataset is valuable and the results are potentially interesting for our understanding of synaptic integration in defined interneuron populations in the awake cortex, though the authors could to more to explain the significance of their findings to a wider audience.\n\nEssential revisions:\n\n- The n's are generally quite low which might lead to erroneous conclusions (see e.g. Figure 4D, PV Q vs W is not significant \u2013 even though 4/5 cells go up. The same can be seen in more graphs in Figure 4). Given that Figure 4 provides the only really novel results in this manuscript \u2013 attempting to link what is already known in the literature about how interneurons react to changes in state and whisking to the excitatory input that they receive from local pyramidal cells \u2013 and recognizing that these experiments are extremely difficult \u2013 if a few additional n's could be added to the dataset in Figure 4 it would greatly strengthen the study. If this is not practical, the authors should perhaps tone down their claims to reflect the limitations of the data.\n\n- A related concern is on the conclusion that \"PV neurons are modulated more strongly by cortical state, while Sst neurons are modulated more strongly by whisking behavior\". Looking at Figure 2, although there are differences in the magnitude and significance levels of the modulation by cortical state and whisking, the trends tend to be in the same direction. This raises some question as to whether the difference is sensitive to how H and L LFP powers are defined. Are the observed differences robust to whether the threshold is set at 40th percentile? Since in Figure 1C, lower 1-5 Hz LFP power occurs in both Q and W behavioral states, can the authors compare the PV and Sst activity between Q and W within the low LFP state? In addition. the authors claim that PV neurons do not change firing when cortical state changes \u2013 however, Figure 1 shows how the slow LFP fluctuations changes the PV firing to a burst-like firing pattern. Additional analyses to demonstrate the robustness of the result will be helpful.\n\n- A major concern of the analysis that has been done is that the \"whisking\" state and the \"LOW 1-5Hz\" state are obviously strongly correlated (as shown in Figure 1). However, it seems that they did not correct for this when analysing their data (making sure that the amount of whisking is matched when comparing cortical states and vice versa). Therefore, it is unclear, if e.g. the reduction in 1-5Hz power in PV neurons during whisking is actually due to the whisking or because the whisking periods coincide with \"Low 1-5Hz\" periods which correlate with a reduced 1-5Hz power in PV neurons (Figure 2D). The same problem applies to all plots in Figure 2 and Figure 4C-J.\n\n- The single-cell electroporation technique is elegant but also tricky. Based on the loose-patch access, there could be leaking and labeling of neurons nearby. Only one example image is shown in Figure 1. Some quantification and more images for the recordings would be important to demonstrate the unitary stimulation. It would also be important to show how stable the recording of the same neuron is, whether there is any change of the access in different brain or behavioral states.\n\n- The unitary excitatory input examined in this study is the intralaminar (l2/3) local input. The major excitatory inputs for a L2/3 PV neuron could be from L4 or thalamic neurons, and it could be different for Sst neurons. It would be very helpful for the authors to discuss how these different inputs could shape the membrane potential dynamics of l2/3 PV and Sst inhibitory neurons respectively.\n\n- The authors include \"behaviour\" in the title, leading the reader to expect that the animal was actively engaged in some task, but the authors were simply referring to \"whisking or not\". They should consider removing 'behaviour' from the title.\n\n- The Discussion section sticks very close to the data and the authors give almost no consideration to how their findings relate to cortical function and current models of cortical processing of sensory input. This should be addressed.\n",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7765e58f-6a2a-4adb-be82-a2080cd10220",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C1",
+      "claim": "Whole-cell recordings were targeted to two classes of inhibitory GABAergic neurons in layer 2/3 of the barrel cortex of awake head-restrained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we targeted whole-cell recordings to two classes of inhibitory GABAergic neurons in layer 2/3 of the barrel cortex of awake head-restrained mice and correlated spontaneous membrane potential dynamics with cortical state and whisking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "94dc3797-6d67-4808-b79a-75fd6b5b9988",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C2",
+      "claim": "Spontaneous membrane potential dynamics were correlated with cortical state and whisking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we targeted whole-cell recordings to two classes of inhibitory GABAergic neurons in layer 2/3 of the barrel cortex of awake head-restrained mice and correlated spontaneous membrane potential dynamics with cortical state and whisking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the experimental approach in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b58c9eb5-78ba-4ff2-ad44-34cd2134a917",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C3",
+      "claim": "Optogenetic stimulation of single layer 2/3 excitatory neurons was used to measure unitary excitatory postsynaptic potentials (uEPSPs) across states.",
+      "claim_type": "EXPLICIT",
+      "source": "Using optogenetic stimulation of single layer 2/3 excitatory neurons we measured unitary excitatory postsynaptic potentials (uEPSPs) across states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "3e1a3c6d-e973-4ea5-b6aa-4459eeac9863",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C4",
+      "claim": "During active states, parvalbumin-expressing neurons depolarized.",
+      "claim_type": "EXPLICIT",
+      "source": "During active states, characterized by whisking and reduced low-frequency activity in the local field potential, parvalbumin-expressing neurons depolarized and, albeit in a small number of recordings, received uEPSPs with increased amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "6f2a2e92-9ecb-47a1-ad9e-e75b871a79c6",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C5",
+      "claim": "During active states, parvalbumin-expressing neurons received uEPSPs with increased amplitude, albeit in a small number of recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "During active states, characterized by whisking and reduced low-frequency activity in the local field potential, parvalbumin-expressing neurons depolarized and, albeit in a small number of recordings, received uEPSPs with increased amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract with acknowledgment of limited sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "523e1542-5d8f-4554-82fb-01490e433a1b",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C6",
+      "claim": "Active states are characterized by whisking and reduced low-frequency activity in the local field potential.",
+      "claim_type": "EXPLICIT",
+      "source": "During active states, characterized by whisking and reduced low-frequency activity in the local field potential, parvalbumin-expressing neurons depolarized and, albeit in a small number of recordings, received uEPSPs with increased amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of active states provided in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "3f739025-f089-4dec-8441-01400503402a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C7",
+      "claim": "Somatostatin-expressing neurons hyperpolarized during active states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, somatostatin-expressing neurons hyperpolarized and reduced firing rates during active states without consistent change in uEPSP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "812f6b6b-205c-4145-9530-9d390196340d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C8",
+      "claim": "Somatostatin-expressing neurons reduced firing rates during active states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, somatostatin-expressing neurons hyperpolarized and reduced firing rates during active states without consistent change in uEPSP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "9c7e2fd4-c4e6-49bc-a2f6-1135685b88c9",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C9",
+      "claim": "Somatostatin-expressing neurons showed no consistent change in uEPSP amplitude during active states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, somatostatin-expressing neurons hyperpolarized and reduced firing rates during active states without consistent change in uEPSP amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "fd7e0316-8aef-41f3-82e9-452939a4958e",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C10",
+      "claim": "Distinct genetically-defined cell classes have different state-dependent patterns of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further our understanding of neocortical inhibitory neuron function in awake mice and are consistent with the hypothesis that distinct genetically-defined cell classes have different state-dependent patterns of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis consistent with the results in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "dbf21558-8731-4b6a-a292-22e3d202fc32",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C11",
+      "claim": "In cortical excitatory neurons, reduced low-frequency neocortical EEG or local field potential (LFP) activity consistently correlates with a decrease in membrane potential (Vm) variance.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortical excitatory neurons, reduced low-frequency neocortical EEG or local field potential (LFP) activity, such as that observed during active behaviors, consistently correlates with a decrease in membrane potential (Vm) variance through a reduction in the amplitude of low-frequency Vm fluctuations, accompanied, on average, by Vm depolarization (Steriade et al., 2001; Timofeev et al., 2001; Crochet and Petersen, 2006; Poulet and Petersen, 2008; Yamashita et al., 2013; Bennett et al., 2013; Polack et al., 2013; Schneider et al., 2014; Reimer et al., 2014; Zhao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c79d7a96-b62a-41fd-8028-cf9da7d0823f",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C12",
+      "claim": "Reduced low-frequency neocortical activity in excitatory neurons is accompanied by a reduction in the amplitude of low-frequency Vm fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortical excitatory neurons, reduced low-frequency neocortical EEG or local field potential (LFP) activity, such as that observed during active behaviors, consistently correlates with a decrease in membrane potential (Vm) variance through a reduction in the amplitude of low-frequency Vm fluctuations, accompanied, on average, by Vm depolarization (Steriade et al., 2001; Timofeev et al., 2001; Crochet and Petersen, 2006; Poulet and Petersen, 2008; Yamashita et al., 2013; Bennett et al., 2013; Polack et al., 2013; Schneider et al., 2014; Reimer et al., 2014; Zhao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "326c949c-0557-497b-8f2c-7eb2349c3795",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C13",
+      "claim": "Reduced low-frequency neocortical activity in excitatory neurons is accompanied, on average, by Vm depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortical excitatory neurons, reduced low-frequency neocortical EEG or local field potential (LFP) activity, such as that observed during active behaviors, consistently correlates with a decrease in membrane potential (Vm) variance through a reduction in the amplitude of low-frequency Vm fluctuations, accompanied, on average, by Vm depolarization (Steriade et al., 2001; Timofeev et al., 2001; Crochet and Petersen, 2006; Poulet and Petersen, 2008; Yamashita et al., 2013; Bennett et al., 2013; Polack et al., 2013; Schneider et al., 2014; Reimer et al., 2014; Zhao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c2621f8e-ec4e-4974-9889-0b44d88db44b",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C14",
+      "claim": "Much less is known regarding Vm and its relationship to action potential (AP) firing in inhibitory GABAergic neurons during various states of awake neocortical activity and during active behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Much less is known regarding Vm and its relationship to action potential (AP) firing in inhibitory GABAergic neurons during various states of awake neocortical activity and during active behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "38a697c8-3bd6-4c7a-a92f-e055de1c7449",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C15",
+      "claim": "Fast-spiking inhibitory neurons in layer 2/3 mouse primary somatosensory whisker barrel cortex (wS1) decrease AP firing during whisking with little change in mean Vm but decreased Vm variance.",
+      "claim_type": "EXPLICIT",
+      "source": "In layer 2/3 (L2/3) mouse primary somatosensory whisker barrel cortex (wS1), fast-spiking inhibitory neurons were found to decrease AP firing during whisking with little change in mean Vm but decreased Vm variance (Gentet et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "a429df9d-5935-441d-99fb-1c65ecc65848",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C16",
+      "claim": "Parvalbumin-expressing (PV) neurons in L2/3 mouse visual cortex exhibited Vm depolarization accompanied by an increase in AP firing during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, parvalbumin-expressing (PV) neurons in L2/3 mouse visual cortex exhibited Vm depolarization accompanied by an increase in AP firing during locomotion (Polack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "1bdb6c64-805d-4804-bec5-c2e64bab7132",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C17",
+      "claim": "Somatostatin-expressing (Sst) neurons are inhibited during whisking in L2/3 of wS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Disparities also exist amongst somatostatin-expressing (Sst) neurons, which are inhibited during whisking in L2/3 of wS1 (Gentet et al., 2012; Lee et al., 2013; Mu\u00f1oz et al., 2017), and either excited or inhibited by locomotion in L2/3 visual cortex (Polack et al., 2013; Reimer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "2f8e2a71-2031-4652-8034-73fa8876afaf",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C18",
+      "claim": "Somatostatin-expressing (Sst) neurons are either excited or inhibited by locomotion in L2/3 visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Disparities also exist amongst somatostatin-expressing (Sst) neurons, which are inhibited during whisking in L2/3 of wS1 (Gentet et al., 2012; Lee et al., 2013; Mu\u00f1oz et al., 2017), and either excited or inhibited by locomotion in L2/3 visual cortex (Polack et al., 2013; Reimer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "168740ac-4d12-4662-ab72-1a8348ccf9a2",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C19",
+      "claim": "Changes in synaptic efficacy could contribute to driving state-dependent Vm dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, changes in synaptic efficacy could contribute to driving state-dependent Vm dynamics, but in vivo measurements of synaptic transmission have largely been carried out under anesthesia (Matsumura et al., 1996; Crochet et al., 2005; Bruno and Sakmann, 2006; Jouhanneau et al., 2015; Pala and Petersen, 2015; Safari et al., 2017; Jouhanneau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "f7b97473-a903-4178-a39a-b1e87caee63c",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C20",
+      "claim": "In vivo measurements of synaptic transmission have largely been carried out under anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, changes in synaptic efficacy could contribute to driving state-dependent Vm dynamics, but in vivo measurements of synaptic transmission have largely been carried out under anesthesia (Matsumura et al., 1996; Crochet et al., 2005; Bruno and Sakmann, 2006; Jouhanneau et al., 2015; Pala and Petersen, 2015; Safari et al., 2017; Jouhanneau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "561bbfcd-b634-40cf-8197-0e975f5efe6b",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C21",
+      "claim": "Two-photon targeted whole-cell recordings were made of PV neurons expressing tdTomato in L2/3 of the C2 barrel column of wS1 in awake, head-restrained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We made two-photon targeted whole-cell recordings of PV (Figure 1A) (Hippenmeyer et al., 2005) and Sst (Figure 1B) (Taniguchi et al., 2011) neurons expressing tdTomato (Madisen et al., 2010) in L2/3 of the C2 barrel column of wS1 in awake, head-restrained mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "9541c7ea-9718-4a0f-9b77-4dfad0cbee20",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C22",
+      "claim": "Two-photon targeted whole-cell recordings were made of Sst neurons expressing tdTomato in L2/3 of the C2 barrel column of wS1 in awake, head-restrained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We made two-photon targeted whole-cell recordings of PV (Figure 1A) (Hippenmeyer et al., 2005) and Sst (Figure 1B) (Taniguchi et al., 2011) neurons expressing tdTomato (Madisen et al., 2010) in L2/3 of the C2 barrel column of wS1 in awake, head-restrained mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "91ae921c-37d0-4bdb-b568-0afc1309be19",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C23",
+      "claim": "Nearby LFP was recorded simultaneously with whole-cell recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, we recorded nearby LFP and conducted high speed filming of whisker movements to define cortical states and whisking-related behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "02f47b58-b86f-49c3-b2a6-03937056ddfd",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C24",
+      "claim": "High speed filming of whisker movements was conducted to define cortical states and whisking-related behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, we recorded nearby LFP and conducted high speed filming of whisker movements to define cortical states and whisking-related behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "479b49d5-7d7f-49e2-973a-9f8061c7209e",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C25",
+      "claim": "Periods of high and low LFP power in the 1\u20135 Hz frequency band were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified periods of high and low LFP power in the 1\u20135 Hz frequency band, as the amplitude of low frequency activity is known to correlate with various levels of arousal and to be modulated by movement (Steriade, 2000; Gervasoni et al., 2004; Crochet and Petersen, 2006; McGinley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "81644178-7be0-4824-bbe2-d0778ca2d128",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C26",
+      "claim": "The amplitude of low frequency activity is known to correlate with various levels of arousal and to be modulated by movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified periods of high and low LFP power in the 1\u20135 Hz frequency band, as the amplitude of low frequency activity is known to correlate with various levels of arousal and to be modulated by movement (Steriade, 2000; Gervasoni et al., 2004; Crochet and Petersen, 2006; McGinley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "47124eec-f57a-431f-b16e-64211b930d81",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C27",
+      "claim": "Epochs with and without whisking were determined based on the velocity of the C2 whisker.",
+      "claim_type": "EXPLICIT",
+      "source": "Epochs with and without whisking were determined based on the velocity of the C2 whisker (Figure 1A,B) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "f851e785-26fc-40cf-99e5-74f936c26491",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C28",
+      "claim": "Cortical states with high 1\u20135 Hz LFP power largely occurred during non-whisking periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical states with high 1\u20135 Hz LFP power largely occurred during non-whisking periods, whereas whisking periods were dominated by low 1\u20135 Hz LFP power (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "11c935f8-8ee7-4860-a945-d05cbcaea7c5",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C29",
+      "claim": "Whisking periods were dominated by low 1\u20135 Hz LFP power.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical states with high 1\u20135 Hz LFP power largely occurred during non-whisking periods, whereas whisking periods were dominated by low 1\u20135 Hz LFP power (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "cbd4ff4b-89f8-4ce2-bbce-36247344d5e2",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C30",
+      "claim": "Quiet periods are defined as epochs with high 1\u20135 Hz LFP power without whisker movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In further analyses, we therefore distinguished the two predominant non-overlapping states: Quiet periods defined as epochs with high 1\u20135 Hz LFP power without whisker movement, and Active periods defined as epochs with low 1\u20135 Hz LFP power accompanied by whisker movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "f1239e1b-f510-4bbf-9813-478cdaae984a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C31",
+      "claim": "Active periods are defined as epochs with low 1\u20135 Hz LFP power accompanied by whisker movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In further analyses, we therefore distinguished the two predominant non-overlapping states: Quiet periods defined as epochs with high 1\u20135 Hz LFP power without whisker movement, and Active periods defined as epochs with low 1\u20135 Hz LFP power accompanied by whisker movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b78ec379-1946-4920-b81d-9e45634e86ea",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C32",
+      "claim": "During Active states, PV neurons reduced Vm standard deviation.",
+      "claim_type": "EXPLICIT",
+      "source": "During Active states, PV neurons depolarized (Figure 2A), reduced Vm standard deviation (Figure 2B), and reduced AP firing rate (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "0780e941-f2f4-42f6-b834-491563d31676",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C33",
+      "claim": "During Active states, PV neurons reduced AP firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "During Active states, PV neurons depolarized (Figure 2A), reduced Vm standard deviation (Figure 2B), and reduced AP firing rate (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "9bd6b1ec-39cb-4711-94f7-8799663e47b5",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C34",
+      "claim": "During Active states, PV neurons reduced the amplitude of slow-frequency Vm fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "During Active states, PV neurons also reduced the amplitude of slow-frequency Vm fluctuations (Figure 2D,E), and decreased Vm vs LFP cross-correlation (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "fae59a3a-bf29-416d-9230-a5e91e2f1bab",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C35",
+      "claim": "During Active states, PV neurons decreased Vm vs LFP cross-correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "During Active states, PV neurons also reduced the amplitude of slow-frequency Vm fluctuations (Figure 2D,E), and decreased Vm vs LFP cross-correlation (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "911a59a1-25ae-473d-8a47-9a2d6c5ed07d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C36",
+      "claim": "Vm of Sst neurons did not change in standard deviation during Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Vm of Sst neurons hyperpolarized during Active states (Figure 2A) without a change in Vm standard deviation (Figure 2B), giving rise to a reduced AP firing rate (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "040aca6b-1bdf-4b45-b302-251e91dda58e",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C37",
+      "claim": "Sst neurons had low amplitude slow-frequency Vm fluctuations during both Quiet and Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "Sst neurons had low amplitude slow-frequency Vm fluctuations during both Quiet and Active states (Figure 2D,E), and Vm of Sst neurons showed little correlation with LFP, irrespective of state (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "7f183c05-70c1-48be-914f-aac19a218eca",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C38",
+      "claim": "Vm of Sst neurons showed little correlation with LFP, irrespective of state.",
+      "claim_type": "EXPLICIT",
+      "source": "Sst neurons had low amplitude slow-frequency Vm fluctuations during both Quiet and Active states (Figure 2D,E), and Vm of Sst neurons showed little correlation with LFP, irrespective of state (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "7c7dc764-b63f-4e0e-bf08-8503de5b47c5",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C39",
+      "claim": "The Vm differences between PV and Sst neurons were not due to overall differences in cortical states or whisking-related behavior across different genotypes of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vm differences between PV and Sst neurons were not due to overall differences in cortical states or whisking-related behavior across different genotypes of mice (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "14bb9d47-62b4-4d10-8865-22af6df828fc",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C40",
+      "claim": "PV neurons may be relatively more strongly modulated by cortical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate analyses of whisking-related and cortical state-related Vm modulation suggested that PV neurons may be relatively more strongly modulated by cortical state, whereas Sst neurons may be relatively more strongly modulated by whisking (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on data shown in Figure 2\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "158effea-eaff-473e-9faf-4c71d8389039",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C41",
+      "claim": "Sst neurons may be relatively more strongly modulated by whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate analyses of whisking-related and cortical state-related Vm modulation suggested that PV neurons may be relatively more strongly modulated by cortical state, whereas Sst neurons may be relatively more strongly modulated by whisking (Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on data shown in Figure 2\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "93f40922-da34-49dc-a45a-1e0cbe2056d0",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C42",
+      "claim": "Enhanced efficacy of local excitatory synaptic input onto PV neurons could contribute to the overall depolarization of PV neurons in Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced efficacy of local excitatory synaptic input onto PV neurons could contribute to the overall depolarization of PV neurons in Active states, and equally decreased efficacy of excitatory synaptic input onto Sst neurons could contribute to the overall hyperpolarisation of Sst neurons in Active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "87e69114-4a58-4d67-a1fa-3a5686bce4d8",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C43",
+      "claim": "Decreased efficacy of excitatory synaptic input onto Sst neurons could contribute to the overall hyperpolarisation of Sst neurons in Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhanced efficacy of local excitatory synaptic input onto PV neurons could contribute to the overall depolarization of PV neurons in Active states, and equally decreased efficacy of excitatory synaptic input onto Sst neurons could contribute to the overall hyperpolarisation of Sst neurons in Active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the results section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "2e58564c-424c-4285-889c-6d742c7b0472",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C44",
+      "claim": "Chronos was expressed in a single L2/3 excitatory neuron per mouse through two-photon targeted single-cell electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Through two-photon targeted single-cell electroporation (Kitamura et al., 2008; Pala and Petersen, 2015), we expressed a fast channelrhodopsin, Chronos (Klapoetke et al., 2014), in a single L2/3 excitatory neuron per mouse (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "767a437d-ac6e-4689-8ab4-acce3132e486",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C45",
+      "claim": "Brief pulses of light (1 ms, 1 Hz) delivered using a 470 nm LED elicited highly reliable, time-locked single APs at short latency in Chronos-expressing neurons across both Quiet and Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief pulses of light (1 ms, 1 Hz) delivered using a 470 nm LED elicited highly reliable, time-locked single APs at short latency in Chronos-expressing neurons across both Quiet and Active states (Figure 3A\u2013C, Figure 3\u2014figure supplement 1), evoking unitary excitatory postsynaptic potentials (uEPSPs) in PV (Figure 3D\u2013F) and Sst neurons (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3A\u2013C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b5490074-b6df-47a8-8c6a-4cab6d49b9fe",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C46",
+      "claim": "Light stimulation evoked unitary excitatory postsynaptic potentials (uEPSPs) in PV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief pulses of light (1 ms, 1 Hz) delivered using a 470 nm LED elicited highly reliable, time-locked single APs at short latency in Chronos-expressing neurons across both Quiet and Active states (Figure 3A\u2013C, Figure 3\u2014figure supplement 1), evoking unitary excitatory postsynaptic potentials (uEPSPs) in PV (Figure 3D\u2013F) and Sst neurons (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "31885f7b-cf01-488b-b10e-d0c427e2c36d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C47",
+      "claim": "Light stimulation evoked unitary excitatory postsynaptic potentials (uEPSPs) in Sst neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief pulses of light (1 ms, 1 Hz) delivered using a 470 nm LED elicited highly reliable, time-locked single APs at short latency in Chronos-expressing neurons across both Quiet and Active states (Figure 3A\u2013C, Figure 3\u2014figure supplement 1), evoking unitary excitatory postsynaptic potentials (uEPSPs) in PV (Figure 3D\u2013F) and Sst neurons (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "73870b7b-ac74-4906-ae32-0b0e4642a08f",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C48",
+      "claim": "The uEPSPs were faster in PV neurons than in Sst neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The uEPSPs were faster in PV neurons than in Sst neurons, but with overall similar amplitudes (Figure 4A,C Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A, 4C, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c5bba553-bf66-4fdd-a64b-e427bdd4cd4e",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C49",
+      "claim": "uEPSPs in PV and Sst neurons had overall similar amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "The uEPSPs were faster in PV neurons than in Sst neurons, but with overall similar amplitudes (Figure 4A,C Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A, 4C, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "76a5f81b-cce9-48ae-97e4-165879a1b010",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C50",
+      "claim": "There was an increase in uEPSP amplitude in PV neurons (n = 5 cells, p=0.031, one-tailed Wilcoxon signed-rank test) during Active states compared to Quiet states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the small number of synaptically-connected postsynaptic neurons, we found an increase in uEPSP amplitude in PV neurons (n = 5 cells, p=0.031, one-tailed Wilcoxon signed-rank test) during Active states compared to Quiet states, but no consistent change in uEPSP amplitude in Sst neurons (n = 5 cells, p=0.22, one-tailed Wilcoxon signed-rank test) (Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of data shown in Figure 4B and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "338f6aea-aadb-4457-80be-a048bfa6bd3f",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C51",
+      "claim": "There was no consistent change in uEPSP amplitude in Sst neurons (n = 5 cells, p=0.22, one-tailed Wilcoxon signed-rank test) during Active states compared to Quiet states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the small number of synaptically-connected postsynaptic neurons, we found an increase in uEPSP amplitude in PV neurons (n = 5 cells, p=0.031, one-tailed Wilcoxon signed-rank test) during Active states compared to Quiet states, but no consistent change in uEPSP amplitude in Sst neurons (n = 5 cells, p=0.22, one-tailed Wilcoxon signed-rank test) (Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of data shown in Figure 4B and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "886ff77a-ee53-4885-afa8-4bd1cb0be8e3",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C52",
+      "claim": "In the Active state, the baseline Vm (from which uEPSPs were evoked) was more depolarized for PV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Active state, the baseline Vm (from which uEPSPs were evoked) was more depolarized for PV neurons, but more hyperpolarized for Sst neurons (Figure 4F), in agreement with the overall state-dependent Vm changes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c91f454d-0866-42f5-89b5-1e6962c81c12",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C53",
+      "claim": "In the Active state, the baseline Vm (from which uEPSPs were evoked) was more hyperpolarized for Sst neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Active state, the baseline Vm (from which uEPSPs were evoked) was more depolarized for PV neurons, but more hyperpolarized for Sst neurons (Figure 4F), in agreement with the overall state-dependent Vm changes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "a0535135-d525-4189-9071-60bc89a8b95a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C54",
+      "claim": "The results suggest an enhancement of local excitatory synaptic transmission onto PV neurons during Active states.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest an enhancement of local excitatory synaptic transmission onto PV neurons during Active states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the uEPSP amplitude data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "4f0226c2-d7bd-4cf5-9963-dfefb569e1f5",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C55",
+      "claim": "The hyperpolarization of Sst neurons is thought to be driven by increased firing of VIP-expressing GABAergic neurons, which strongly inhibit Sst neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The hyperpolarization of Sst neurons is thought to be driven by increased firing of VIP-expressing GABAergic neurons, which strongly inhibit Sst neurons (Lee et al., 2013; Pfeffer et al., 2013; Pi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "6318f2f2-0b79-4283-9589-94f4e462ffcf",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C56",
+      "claim": "The reduction in AP firing rate of Sst neurons during Active states may disinhibit distal dendrites of nearby excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in AP firing rate of Sst neurons during Active states may disinhibit distal dendrites of nearby excitatory neurons (Gentet et al., 2012), perhaps promoting non-linear dendritic excitation important for sensorimotor integration and perceptual decision-making (Xu et al., 2012; Takahashi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "348184ef-0ea1-4d48-a294-52a6ddc671dd",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C57",
+      "claim": "Sst neurons in L2/3 mouse barrel cortex are functionally relatively uncoupled from the surrounding neuronal network.",
+      "claim_type": "EXPLICIT",
+      "source": "Sst neurons in L2/3 mouse barrel cortex are therefore functionally relatively uncoupled from the surrounding neuronal network, within which all other cell-types show highly correlated low frequency Vm fluctuations (Poulet and Petersen, 2008; Gentet et al., 2010; Gentet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the low correlation with LFP and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "197c54c4-b51e-4a69-98cb-0bddc424b000",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C58",
+      "claim": "All other cell-types in L2/3 mouse barrel cortex show highly correlated low frequency Vm fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Sst neurons in L2/3 mouse barrel cortex are therefore functionally relatively uncoupled from the surrounding neuronal network, within which all other cell-types show highly correlated low frequency Vm fluctuations (Poulet and Petersen, 2008; Gentet et al., 2010; Gentet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "94cab213-3221-494a-9094-79e34b57ebc0",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C59",
+      "claim": "Sst neurons receive excitatory synaptic input, which shows strong frequency-dependent facilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to prominent inhibitory input from VIP neurons, Sst neurons receive excitatory synaptic input, which shows strong frequency-dependent facilitation (Reyes et al., 1998; Kapfer et al., 2007; Silberberg and Markram, 2007; Pala and Petersen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "50b37a9d-e9b9-4d75-8cac-4a4eeaf7d3be",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C60",
+      "claim": "Short-term synaptic plasticity together with cell-type- and layer-specific circuits likely contribute to the relatively decoupled Vm dynamics of Sst neurons compared to other types of nearby neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Short-term synaptic plasticity together with cell-type- and layer-specific circuits likely contribute to the relatively decoupled Vm dynamics of Sst neurons compared to other types of nearby neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on prior knowledge and current findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "2df08064-34e0-4c0a-97d3-32749ef52042",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C61",
+      "claim": "Nicotinic enhancement of uEPSPs has recently been reported on Sst neurons in wS1 of anesthetised mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Nicotinic enhancement of uEPSPs has recently been reported on Sst neurons in wS1 of anesthetised mice (Urban-Ciecko et al., 2018), and acetylcholine is known to be released during whisking (Eggermann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "1f4474dc-c357-4921-8838-fa8dbf86441b",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C62",
+      "claim": "Acetylcholine is known to be released during whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "Nicotinic enhancement of uEPSPs has recently been reported on Sst neurons in wS1 of anesthetised mice (Urban-Ciecko et al., 2018), and acetylcholine is known to be released during whisking (Eggermann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "5322f5dc-21d4-49fa-9107-5c2221bcaaf1",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C63",
+      "claim": "During Quiet states PV neurons were on average hyperpolarized.",
+      "claim_type": "EXPLICIT",
+      "source": "During Quiet states PV neurons were on average hyperpolarized (Figure 2A) and exhibited large Vm variance (Figure 2B) in the slow frequency range (Figure 2D,E) highly correlated with the LFP (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e0cdd97f-898d-43e2-87a2-b361154d6bff",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C64",
+      "claim": "During Quiet states PV neurons exhibited large Vm variance.",
+      "claim_type": "EXPLICIT",
+      "source": "During Quiet states PV neurons were on average hyperpolarized (Figure 2A) and exhibited large Vm variance (Figure 2B) in the slow frequency range (Figure 2D,E) highly correlated with the LFP (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "fc1dbe3f-2290-4512-b737-4dfeda5cfdd8",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C65",
+      "claim": "During Quiet states PV neurons exhibited large Vm variance in the slow frequency range highly correlated with the LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "During Quiet states PV neurons were on average hyperpolarized (Figure 2A) and exhibited large Vm variance (Figure 2B) in the slow frequency range (Figure 2D,E) highly correlated with the LFP (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D, 2E, and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "aaf02778-c76c-4dd4-980d-3c49e116769a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C66",
+      "claim": "During Active states, the Vm of PV neurons depolarized together with a reduction in Vm variance, Vm slow fluctuations and Vm correlation with LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, during Active states, the Vm of PV neurons depolarized together with a reduction in Vm variance, Vm slow fluctuations and Vm correlation with LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "a68935fb-2613-4e59-a6a9-338ffa0faed3",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C67",
+      "claim": "Despite depolarization, the AP firing rate of PV neurons reduced significantly during the Active state.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite depolarization, the AP firing rate of PV neurons reduced significantly during the Active state (Figure 2C), presumably because the decreased Vm variance prevented an increased frequency of Vm excursions above AP threshold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c7bf7f80-f878-4166-b783-add669998bad",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C68",
+      "claim": "The decreased Vm variance in PV neurons during Active states presumably prevented an increased frequency of Vm excursions above AP threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite depolarization, the AP firing rate of PV neurons reduced significantly during the Active state (Figure 2C), presumably because the decreased Vm variance prevented an increased frequency of Vm excursions above AP threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observed data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e19585c5-f03c-4587-b8ed-cbf3101313eb",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C69",
+      "claim": "Decreased firing of fast-spiking neurons was previously noted in L2/3 of wS1 during whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, decreased firing of fast-spiking neurons was also previously noted in L2/3 of wS1 during whisking (Gentet et al., 2010), and during licking events accompanied by whisking in a whisker detection task (Sachidhanandam et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "40a02b8a-5db4-4dc1-a96f-832a9cf328ca",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C70",
+      "claim": "Decreased firing of fast-spiking neurons was previously noted during licking events accompanied by whisking in a whisker detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, decreased firing of fast-spiking neurons was also previously noted in L2/3 of wS1 during whisking (Gentet et al., 2010), and during licking events accompanied by whisking in a whisker detection task (Sachidhanandam et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "8dc2901e-70ba-4584-9dfa-42eee8a250f2",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C71",
+      "claim": "A reduction in the firing rate of PV neurons in L2/3 of wS1 typically accompanies whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "These results appear to suggest that a reduction in the firing rate of PV neurons in L2/3 of wS1 typically accompanies whisking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on current and prior findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "960208b0-e418-4208-908a-e3aa8f721088",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C72",
+      "claim": "The reduced firing rates of PV neurons during Active states will presumably disinhibit the surrounding neuronal network.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced firing rates of PV neurons during Active states will presumably disinhibit the surrounding neuronal network, perhaps promoting synaptic computations amongst the excitatory pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ab7c23f3-4f8e-4657-a7fe-cf1347f1543c",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C73",
+      "claim": "An increased amplitude of incoming L2/3 excitatory synaptic input could contribute to driving the depolarized average Vm in PV neurons during the Active cortical state.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased amplitude of incoming L2/3 excitatory synaptic input could contribute to driving the depolarized average Vm in PV neurons during the Active cortical state (Figures 2A and 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the observed data in Figures 2A and 4F.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "5a78b13b-446a-4a54-bbaf-93c8b1ec78a9",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C74",
+      "claim": "Depolarization reduces the electrical driving force for glutamatergic conductances and therefore cannot explain increased amplitude of uEPSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolarization reduces the electrical driving force for glutamatergic conductances and therefore cannot explain increased amplitude of uEPSPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established biophysical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ce132cb3-a31d-4283-84ff-e43f882df674",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C75",
+      "claim": "Six 5\u201310 week old female and male PV-IRES-Cre mice were used in accordance with protocols approved by the Swiss Federal Veterinary Office (authorisation VD1628).",
+      "claim_type": "EXPLICIT",
+      "source": "Six 5\u201310 week old female and male PV-IRES-Cre (Hippenmeyer et al., 2005) mice and five 5\u201310 week old female and male Sst-IRES-Cre (Taniguchi et al., 2011) mice crossed with CAG-Lox-STOP-Lox-tdTomato (LSL-tdTomato) mice (Madisen et al., 2010) were used in accordance with protocols approved by the Swiss Federal Veterinary Office (authorisation VD1628).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the animals used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "6e46acec-3c81-4f18-a736-8504241b52d1",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C76",
+      "claim": "Five 5\u201310 week old female and male Sst-IRES-Cre mice were used in accordance with protocols approved by the Swiss Federal Veterinary Office (authorisation VD1628).",
+      "claim_type": "EXPLICIT",
+      "source": "Six 5\u201310 week old female and male PV-IRES-Cre (Hippenmeyer et al., 2005) mice and five 5\u201310 week old female and male Sst-IRES-Cre (Taniguchi et al., 2011) mice crossed with CAG-Lox-STOP-Lox-tdTomato (LSL-tdTomato) mice (Madisen et al., 2010) were used in accordance with protocols approved by the Swiss Federal Veterinary Office (authorisation VD1628).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the animals used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "14e43958-b6df-4517-9b43-7a7a9729ab46",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C77",
+      "claim": "Mice were maintained under 1\u20132% isoflurane anesthesia while being implanted with a custom-made head-holder and a recording chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were maintained under 1\u20132% isoflurane anesthesia while being implanted with a custom-made head-holder and a recording chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e5d5d110-c8a6-4c8a-8b95-6110601be330",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C78",
+      "claim": "The location of the left C2 barrel column was functionally identified through intrinsic signal optical imaging under 0.5\u20131% isoflurane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the left C2 barrel column was functionally identified through intrinsic signal optical imaging under 0.5\u20131% isoflurane anesthesia (Lefort et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the identification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "06185a45-9541-42e5-bbb7-dd5c822bec5a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C79",
+      "claim": "Mice were habituated to head- and paw-restraint under different light conditions for 3\u20135 days before proceeding to electroporation and electrophysiological recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were habituated to head- and paw-restraint under different light conditions for 3\u20135 days before proceeding to electroporation and electrophysiological recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the habituation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "353676f3-65cc-4460-94cb-e69b5e6a3632",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C80",
+      "claim": "Electroporation of a single non-tdTomato neuron per PV-Cre x LSL-tdTomato or Sst-Cre x LSL-tdTomato mouse was carried out as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroporation of a single non-tdTomato neuron per PV-Cre x LSL-tdTomato or Sst-Cre x LSL-tdTomato mouse was carried out as previously described (Kitamura et al., 2008; Pala and Petersen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "95d18086-ffe3-4c32-9184-cddca144f898",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C81",
+      "claim": "A glass pipette with a resistance of 10\u201317 M\u03a9 was filled with the same solution used for whole-cell recordings to which Alexa 488 dye (50\u2013100 \u03bcM) and plasmid DNA pAAV-Syn-Chronos-eGFP (100 ng/\u03bcl) were added.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, a glass pipette with a resistance of 10\u201317 M\u03a9 was filled with the same solution used for whole-cell recordings (see below) to which Alexa 488 dye (50\u2013100 \u03bcM) (Invitrogen), and plasmid DNA pAAV-Syn-Chronos-eGFP (100 ng/\u03bcl) (kindly provided by Thomas Oertner) (Klapoetke et al., 2014) were added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the electroporation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "84ac17af-8c86-413f-8dcd-7cfe488a8281",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C82",
+      "claim": "A two-photon microscope was used to visualize the pipette and the tdTomato-negative cell somas as dark shadows over a brighter background.",
+      "claim_type": "EXPLICIT",
+      "source": "A two-photon microscope (Prairie Technologies) was used to visualize the pipette and the tdTomato-negative cell somas as dark shadows over a brighter background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the visualization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "cfd1eabd-14cf-4bee-82c4-67228e31eb53",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C83",
+      "claim": "50 pulses of negative voltage step (0.5 ms, \u201312 V) were delivered at 50 Hz using a pulse generator for electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pipette was inserted in the brain through the intact dura and brought into close contact with the cell body of the target neuron and 50 pulses of negative voltage step (0.5 ms, \u201312 V) were delivered at 50 Hz using a pulse generator (Axoporator 800A, Molecular Devices).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the electroporation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "20c6d81f-d1bb-46cc-b545-6bb1770b3a61",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C84",
+      "claim": "24 hr after electroporation, mice were re-anesthetized with 1\u20132% isoflurane and the dura was removed.",
+      "claim_type": "EXPLICIT",
+      "source": "24 hr after electroporation, mice were re-anesthetized with 1\u20132% isoflurane and the dura was removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the preparation for recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "baec36ac-99ef-49d7-ab78-af41a8a39d58",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C85",
+      "claim": "Local field potential (LFP) was continuously recorded with a 2\u20134 M\u03a9 glass pipette filled with Ringer solution containing 10\u201325 \u03bcM Alexa 594 dye and lowered to a depth of 150\u2013250 \u03bcm below the pia and within 250 \u03bcm from the Chronos-expressing neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Local field potential (LFP) was continuously recorded with a 2\u20134 M\u03a9 glass pipette filled with Ringer solution containing 10\u201325 \u03bcM Alexa 594 dye and lowered to a depth of 150\u2013250 \u03bcm below the pia and within 250 \u03bcm from the Chronos-expressing neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the LFP recording procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "78ef9ecf-1a78-443c-828e-14cbaade8b8b",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C86",
+      "claim": "Two-photon targeted juxtacellular recording of the Chronos-expressing neuron was performed with 5\u20137 M\u03a9 glass pipettes filled with the same solution as used for LFP recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon targeted juxtacellular recording of the Chronos-expressing neuron was performed with 5\u20137 M\u03a9 glass pipettes filled with the same solution as used for LFP recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the juxtacellular recording procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "30d378dd-7ce3-4abe-9672-d07a2c885a14",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C87",
+      "claim": "5\u20138 M\u03a9 glass pipettes were filled with a solution containing (in mM): 135 potassium gluconate, 4 KCl, 10 HEPES, 10 sodium phosphocreatine, 4 MgATP, 0.3 Na3GTP (adjusted to pH 7.3 with KOH), to which 25\u201375 \u03bcM Alexa 488 dye was added.",
+      "claim_type": "EXPLICIT",
+      "source": "5\u20138 M\u03a9 glass pipettes were filled with a solution containing (in mM): 135 potassium gluconate, 4 KCl, 10 HEPES, 10 sodium phosphocreatine, 4 MgATP, 0.3 Na3GTP (adjusted to pH 7.3 with KOH), to which 25\u201375 \u03bcM Alexa 488 dye was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the intracellular solution composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "436b1553-08f7-4ef5-962a-5b22b4d57b11",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C88",
+      "claim": "Patch-clamp recordings were obtained in current-clamp mode without current injection and Vm was not corrected for liquid junction potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch-clamp recordings were obtained in current-clamp mode without current injection and Vm was not corrected for liquid junction potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the recording parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "264f3127-49fb-41c5-ac9b-fbc2f4f4305d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C89",
+      "claim": "All recorded signals were amplified by a Multiclamp 700B amplifier, Bessel filtered at 10 kHz and digitized at 20 kHz by an ITC-18 under the control of custom written routines in IgorPro.",
+      "claim_type": "EXPLICIT",
+      "source": "All recorded signals were amplified by a Multiclamp 700B amplifier (Axon Instruments), Bessel filtered at 10 kHz and digitized at 20 kHz by an ITC-18 (Instrutech Corporation) under the control of custom written routines in IgorPro (Wavemetrics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the signal processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ecc2cb7d-bcfe-46bb-9079-f362ab468175",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C90",
+      "claim": "Optogenetic stimuli consisted of single square pulses of light of 1 ms duration and 58 mW/mm2 intensity, delivered at a frequency of 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimuli consisted of single square pulses of light of 1 ms duration and 58 mW/mm2 intensity, delivered at a frequency of 1 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the optogenetic stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "293a74ec-4e26-48d8-9975-e02f73b1efbc",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C91",
+      "claim": "On recording day, all whiskers except for the left and right C2 whiskers were trimmed.",
+      "claim_type": "EXPLICIT",
+      "source": "On recording day, all whiskers except for the left and right C2 whiskers were trimmed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the whisker preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "4edd2947-5ed6-4a86-b433-27da52aab593",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C92",
+      "claim": "Whisker movements were filmed at 200 Hz with a resolution of 13 pixels/mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Whisker movements were filmed at 200 Hz (CamRecord CL600 \u00d7 2, Optronis) with a resolution of 13 pixels/mm using the 470 nm LED array (see above) as an illumination source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the whisker filming parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "0fb567f2-c850-4904-9140-c6b16f2acc0a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C93",
+      "claim": "Epochs of whisking (W) and not-whisking (NW) were identified according to the speed of whisker movement using custom routines written in ImageJ and Matlab.",
+      "claim_type": "EXPLICIT",
+      "source": "Epochs of whisking (W) and not-whisking (NW) were identified according to the speed of whisker movement using custom routines written in ImageJ (NIH) and Matlab (MathWorks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "90406859-d779-4673-80bb-347caf656e02",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C94",
+      "claim": "For each recorded trial, the LFP was down-sampled to 2000 Hz, low-pass filtered at 200 Hz (forward and reverse direction) and the power in the 1\u20135 Hz band was computed using a sliding FFT (window size: 2 s, overlap: 10 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, for each recorded trial of spontaneous and optogenetically-evoked activity, the LFP was down-sampled to 2000 Hz, low-pass filtered at 200 Hz (forward and reverse direction) and the power in the 1\u20135 Hz band was computed using a sliding FFT (window size: 2 s, overlap: 10 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the LFP analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "a32f21f7-6cd3-43ea-8b21-0ca32df3e256",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C95",
+      "claim": "Portions of the recording were assigned to 'Low 1\u20135 Hz LFP power (L)' if their corresponding FFT power values were smaller than the 40th percentile of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A distribution of the 1\u20135 Hz power values was generated for each recorded neuron and portions of the recording were assigned to 'Low 1\u20135 Hz LFP power (L)' if their corresponding FFT power values were smaller than the 40th percentile of the distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the state classification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "0a6e2cd5-0866-46ba-89f7-c3fe32c7565d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C96",
+      "claim": "Portions of the recording were assigned to 'High 1\u20135 Hz LFP power (H)' if their corresponding FFT power values were larger than the 60th percentile of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, portions of the recording were assigned to 'High 1\u20135 Hz LFP power (H)' if their corresponding FFT power values were larger than the 60th percentile of the distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the state classification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "4995b158-5a96-412d-a3a9-a75c8a2bae43",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C97",
+      "claim": "The 'Active' state was defined as periods of recording displaying Low 1\u20135 Hz LFP power together with whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Active' state was then defined as periods of recording displaying Low 1\u20135 Hz LFP power together with whisking, while the 'Quiet' state was defined as periods with High 1\u20135 Hz LFP power without whisker movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the state definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "f821c239-9659-4f00-8069-470b37306ff5",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C98",
+      "claim": "The 'Quiet' state was defined as periods with High 1\u20135 Hz LFP power without whisker movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Active' state was then defined as periods of recording displaying Low 1\u20135 Hz LFP power together with whisking, while the 'Quiet' state was defined as periods with High 1\u20135 Hz LFP power without whisker movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the state definition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e6688220-d495-4774-94f6-160279b47d5c",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C99",
+      "claim": "Mean Vm and standard deviation (SD) of Vm were computed for spontaneous periods of recording excluding APs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean Vm and standard deviation (SD) of Vm were computed for spontaneous periods of recording excluding APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b7b78789-9d8c-41c7-8585-0baa1fbbb9eb",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C100",
+      "claim": "The Vm vs LFP cross-correlation was computed for segments of spontaneous activity of 1 s duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The Vm vs LFP cross-correlation was computed for segments of spontaneous activity of 1 s duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "606cdb41-5951-48e3-ab17-e2dfd3b4b743",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C101",
+      "claim": "To compute the Vm FFT spectrum and FFT amplitude in the 1\u20135 Hz frequency band, the Vm was median-filtered to remove APs.",
+      "claim_type": "EXPLICIT",
+      "source": "To compute the Vm FFT spectrum and FFT amplitude in the 1\u20135 Hz frequency band, the Vm was median-filtered to remove APs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "f7199314-dbb1-47f1-8acf-17800dc7269e",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C102",
+      "claim": "An AP was considered as optogenetically evoked if its peak occurred within 10 ms of the onset of the 1 ms light stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the light-evoked AP responses of the presynaptic Chronos-expressing neurons, an AP was considered as optogenetically evoked if its peak occurred within 10 ms of the onset of the 1 ms light stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "3f02d339-8af3-4843-b232-077a42bb8c3f",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C103",
+      "claim": "AP latency was defined as the time elapsed between light stimulus onset and AP peak time.",
+      "claim_type": "EXPLICIT",
+      "source": "AP latency was defined as the time elapsed between light stimulus onset and AP peak time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "8424ce3a-e3a6-46da-8c4f-6d02ce22efaf",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C104",
+      "claim": "AP jitter was defined as the standard deviation of the AP latency.",
+      "claim_type": "EXPLICIT",
+      "source": "AP jitter was defined as the standard deviation of the AP latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ef9dc612-1d63-4e27-afd2-e46a384188e8",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C105",
+      "claim": "An optogenetic stimulus-triggered smoothed Vm average was computed, excluding stimuli with postsynaptic APs occurring in a 50 ms window starting 20 ms before stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the properties of the light-evoked uEPSPs, an optogenetic stimulus-triggered smoothed Vm average was computed, excluding stimuli with postsynaptic APs occurring in a 50 ms window starting 20 ms before stimulus onset (Pala and Petersen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "244ff092-2054-4286-a1d3-41b58a24267d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C106",
+      "claim": "54 \u00b1 32 (mean \u00b1 SD, median 50) stimuli during the Quiet state (n = 10 cells) were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed 54 \u00b1 32 (mean \u00b1 SD, median 50) stimuli during the Quiet state (n = 10 cells) and 32 \u00b1 18 (34) stimuli during the Active state (n = 10 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c4296e7d-7079-4d74-a403-f4bcfdfb1290",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C107",
+      "claim": "32 \u00b1 18 (median 34) stimuli during the Active state (n = 10 cells) were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed 54 \u00b1 32 (mean \u00b1 SD, median 50) stimuli during the Quiet state (n = 10 cells) and 32 \u00b1 18 (34) stimuli during the Active state (n = 10 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c94a28fd-46e0-4baa-ad2f-682a9e6d5539",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C108",
+      "claim": "uEPSP amplitude was calculated as the difference between the mean Vm averaged over a 0.25 ms window centered at the peak of the uEPSP and the mean baseline Vm averaged over a 0.25 ms window taken immediately prior to the onset of the uEPSP.",
+      "claim_type": "EXPLICIT",
+      "source": "uEPSP amplitude was calculated as the difference between the mean Vm averaged over a 0.25 ms window centered at the peak of the uEPSP and the mean baseline Vm averaged over a 0.25 ms window taken immediately prior to the onset of the uEPSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "d857e6f2-2aed-480f-bdb4-5f9c505649b8",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C109",
+      "claim": "The uEPSP onset latency was defined as the time at which the smoothed first derivative of the Vm exceeded a threshold of 100 mV/s for PV neurons and 60 mV/s for Sst neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The uEPSP onset latency was defined as the time at which the smoothed first derivative of the Vm exceeded a threshold of 100 mV/s for PV neurons and 60 mV/s for Sst neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "d65cbae7-9ff4-4fa1-ac64-63dc8cd7bbb9",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C110",
+      "claim": "The uEPSP peak was defined as the first time at which the smoothed first derivative of the Vm became negative post uEPSP onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The uEPSP peak was defined as the first time at which the smoothed first derivative of the Vm became negative post uEPSP onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "97455e80-5ace-435b-bb22-dd2522b4542d",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C111",
+      "claim": "The uEPSP rise time corresponded to the time elapsed from 20% to 80% of the amplitude on the rising phase of the averaged uEPSP.",
+      "claim_type": "EXPLICIT",
+      "source": "The uEPSP rise time corresponded to the time elapsed from 20% to 80% of the amplitude on the rising phase of the averaged uEPSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "74c69446-06ea-4a8f-af67-fc4ee8ab42a6",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C112",
+      "claim": "Classification of an optogenetic stimulus in a given category (Quiet/Active) required that 20 ms prior to stimulus onset and 30 ms post stimulus onset continuously be assigned to that category.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification of an optogenetic stimulus in a given category (Quiet/Active) required that 20 ms prior to stimulus onset and 30 ms post stimulus onset continuously be assigned to that category.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data analysis procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e76246a8-f2d9-498a-abec-185ed36c5335",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C113",
+      "claim": "Two-tailed Wilcoxon rank-sum and signed-rank tests were used to compare two groups of unpaired and paired data respectively, except in Figure 4D,F where one-tailed Wilcoxon signed-rank tests were applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-tailed Wilcoxon rank-sum and signed-rank tests were used to compare two groups of unpaired and paired data respectively, except in Figure 4D,F where we applied one-tailed Wilcoxon signed-rank tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b5ac91fd-86c7-460a-904a-d28665d4a894",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "claim_id": "C114",
+      "claim": "The complete data set and Matlab analysis code are freely available at the CERN database Zenodo with DOI: https://doi.org/10.5281/zenodo.1304771.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete data set and Matlab analysis code are freely available at the CERN database Zenodo (https://zenodo.org/communities/petersen-lab-data) with DOI: https://doi.org/10.5281/zenodo.1304771.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "564dbfba-701d-421c-924c-bd9d187eb450",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed whole-cell recordings targeted to PV and Sst neurons in layer 2/3 of barrel cortex in awake head-restrained mice, with simultaneous LFP recording, whisker filming, and optogenetic stimulation of single excitatory neurons to measure unitary synaptic inputs across cortical and behavioral states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C1-C3, C21-C114) are well-documented with detailed descriptions of animal preparation, recording techniques, optogenetic stimulation, data analysis procedures, and statistical methods. The approach is technically sound and appropriately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During Active states, PV neurons depolarized, reduced Vm standard deviation, reduced slow-frequency Vm fluctuations, decreased Vm-LFP correlation, and paradoxically reduced AP firing rate despite depolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32-C35, C63-C67 are consistently supported by data in Figure 2A-F showing statistically significant changes (p<0.05 to p<0.01) in PV neuron properties during Active states. The paradoxical reduction in firing despite depolarization is explained by decreased Vm variance (C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "271ac06d-1074-4635-a497-1fbc1abbe645",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During Active states, Sst neurons hyperpolarized, reduced firing rates, maintained unchanged Vm standard deviation, exhibited low-amplitude slow-frequency Vm fluctuations, and showed little correlation with LFP across both states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C36-C38 are supported by data in Figure 2A-F showing statistically significant hyperpolarization and reduced firing (p<0.05) in Sst neurons during Active states, with no significant change in Vm variance and consistently low LFP correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "2278c084-2835-4fba-9841-97a6a0c3b9af",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PV neurons showed increased uEPSP amplitude during Active states compared to Quiet states (n=5 cells, p=0.031), suggesting enhanced local excitatory synaptic transmission that may contribute to PV neuron depolarization during Active states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C50 reports a statistically significant increase in uEPSP amplitude in PV neurons (p=0.031, one-tailed test), the authors explicitly acknowledge the small sample size (n=5 cells) in C5. The use of one-tailed statistics is justified but the limited sample size and marginal p-value warrant caution. Additional recordings would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "b4774920-01a0-4c2b-bf2e-047dbe146936",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sst neurons showed no consistent change in uEPSP amplitude during Active states compared to Quiet states (n=5 cells, p=0.22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C51 are supported by data in Figure 4D showing no significant change in uEPSP amplitude in Sst neurons (p=0.22, one-tailed test, n=5 cells). While the sample size is small, the lack of effect is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ff684693-8dc5-470f-95dc-63563b24ef9f",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of single Chronos-expressing L2/3 excitatory neurons reliably evoked single action potentials across states and elicited uEPSPs in both PV and Sst neurons, with faster kinetics in PV neurons but similar amplitudes overall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by data in Figures 3 and 4, showing reliable optogenetic activation and measurable uEPSPs in both cell types. The kinetic differences (C48) and similar amplitudes (C49) are documented in Figure 4A, C and Figure 4\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "c88c9281-533d-4aa8-bb62-6f26d1c666c2",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "During Active states, baseline Vm at uEPSP onset was more depolarized for PV neurons but more hyperpolarized for Sst neurons, consistent with overall state-dependent Vm changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by data in Figure 4F showing statistically significant changes (p<0.05) in baseline Vm for both cell types during Active states, consistent with the overall Vm modulation patterns described in C4 and C7.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ac607554-5532-4a15-b7ed-68b5bb03bde6",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Active states were defined as epochs with low 1-5 Hz LFP power accompanied by whisking, while Quiet states were defined as epochs with high 1-5 Hz LFP power without whisker movement, with these two states being largely non-overlapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C25-C31 describe the operational definitions of cortical states used in the study. These definitions are clearly stated and supported by data in Figure 2\u2014figure supplement 2 showing the temporal relationship between LFP power and whisking behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "d300e512-5c86-4398-b113-791a1a725907",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results are consistent with the hypothesis that distinct genetically-defined cell classes have different state-dependent patterns of activity, with PV neurons more strongly modulated by cortical state and Sst neurons more strongly modulated by whisking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C40-C41 represent interpretations supported by the differential responses of PV and Sst neurons documented throughout the study. The separate analyses in Figure 2\u2014figure supplements 2 and 3 provide evidence for differential modulation by cortical state versus whisking behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "24cb26c8-c991-4dfe-b7e4-385d5646c54a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Vm differences between PV and Sst neurons were not due to overall differences in cortical states or whisking-related behavior across different genotypes of mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by control data in Figure 2\u2014figure supplement 1 showing no significant differences in LFP properties or whisking behavior between PV-Cre and Sst-Cre mouse lines, ruling out genotype-specific behavioral confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "be0680f6-5cdb-4912-b692-43071086dc52",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The hyperpolarization of Sst neurons during Active states is thought to be driven by increased VIP neuron firing, and their functional uncoupling from the local network may involve short-term synaptic plasticity and cell-type-specific circuits, though nicotinic modulation was not observed in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 represent interpretations and mechanistic hypotheses supported by citations to prior literature (C55, C58-C59, C61-C62) and by the current data showing low LFP correlation in Sst neurons (C57). The discussion appropriately acknowledges limitations regarding nicotinic modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The reduced firing rate of PV neurons during Active states, despite depolarization, is explained by decreased Vm variance preventing threshold crossings, consistent with prior studies, and may disinhibit the surrounding network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 provide mechanistic interpretation (C68) supported by the data and consistency with prior literature (C69-C70). The inference about network disinhibition (C72) is reasonable speculation based on established principles of cortical inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established state-dependent Vm dynamics in excitatory neurons, but less is known about inhibitory neurons, with conflicting reports about PV and Sst neuron responses across different cortical areas and behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20 accurately summarize prior literature with appropriate citations, establishing the context and motivation for the current study. The characterization of knowledge gaps (C14) and conflicting findings (C15-C18) is well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    },
+    {
+      "id": "043d5890-7b98-4539-a416-4402a2b3173a",
+      "content_id": "c1d7b1cd-b3bc-4af8-b3d7-6d496f3f39ca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Enhanced excitatory synaptic efficacy could contribute to PV neuron depolarization during Active states, while decreased efficacy could contribute to Sst neuron hyperpolarization, though depolarization alone cannot explain increased uEPSP amplitude due to reduced driving force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are hypotheses tested by the optogenetic experiments, with C74 providing important biophysical context. The logic is sound: depolarization reduces driving force, so increased uEPSP amplitude in PV neurons (C50) must reflect enhanced synaptic efficacy rather than passive electrical effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:00.650402Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7765e58f-6a2a-4adb-be82-a2080cd10220",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "94dc3797-6d67-4808-b79a-75fd6b5b9988",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "b58c9eb5-78ba-4ff2-ad44-34cd2134a917",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "561bbfcd-b634-40cf-8197-0e975f5efe6b",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "9541c7ea-9718-4a0f-9b77-4dfad0cbee20",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "91ae921c-37d0-4bdb-b568-0afc1309be19",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "02f47b58-b86f-49c3-b2a6-03937056ddfd",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "ce132cb3-a31d-4283-84ff-e43f882df674",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "6e46acec-3c81-4f18-a736-8504241b52d1",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "14e43958-b6df-4517-9b43-7a7a9729ab46",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "e5d5d110-c8a6-4c8a-8b95-6110601be330",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "06185a45-9541-42e5-bbb7-dd5c822bec5a",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "353676f3-65cc-4460-94cb-e69b5e6a3632",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "95d18086-ffe3-4c32-9184-cddca144f898",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "84ac17af-8c86-413f-8dcd-7cfe488a8281",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "cfd1eabd-14cf-4bee-82c4-67228e31eb53",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "20c6d81f-d1bb-46cc-b545-6bb1770b3a61",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "baec36ac-99ef-49d7-ab78-af41a8a39d58",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "78ef9ecf-1a78-443c-828e-14cbaade8b8b",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "30d378dd-7ce3-4abe-9672-d07a2c885a14",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "436b1553-08f7-4ef5-962a-5b22b4d57b11",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "264f3127-49fb-41c5-ac9b-fbc2f4f4305d",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "ecc2cb7d-bcfe-46bb-9079-f362ab468175",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "293a74ec-4e26-48d8-9975-e02f73b1efbc",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "4edd2947-5ed6-4a86-b433-27da52aab593",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "0fb567f2-c850-4904-9140-c6b16f2acc0a",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "90406859-d779-4673-80bb-347caf656e02",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "a32f21f7-6cd3-43ea-8b21-0ca32df3e256",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "0a6e2cd5-0866-46ba-89f7-c3fe32c7565d",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "4995b158-5a96-412d-a3a9-a75c8a2bae43",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "f821c239-9659-4f00-8069-470b37306ff5",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "e6688220-d495-4774-94f6-160279b47d5c",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "b7b78789-9d8c-41c7-8585-0baa1fbbb9eb",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "606cdb41-5951-48e3-ab17-e2dfd3b4b743",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "f7199314-dbb1-47f1-8acf-17800dc7269e",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "3f02d339-8af3-4843-b232-077a42bb8c3f",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "8424ce3a-e3a6-46da-8c4f-6d02ce22efaf",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "ef9dc612-1d63-4e27-afd2-e46a384188e8",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "244ff092-2054-4286-a1d3-41b58a24267d",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "c4296e7d-7079-4d74-a403-f4bcfdfb1290",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "c94a28fd-46e0-4baa-ad2f-682a9e6d5539",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "d857e6f2-2aed-480f-bdb4-5f9c505649b8",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "d65cbae7-9ff4-4fa1-ac64-63dc8cd7bbb9",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "97455e80-5ace-435b-bb22-dd2522b4542d",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "74c69446-06ea-4a8f-af67-fc4ee8ab42a6",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "e76246a8-f2d9-498a-abec-185ed36c5335",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "b5ac91fd-86c7-460a-904a-d28665d4a894",
+      "result_id": "564dbfba-701d-421c-924c-bd9d187eb450"
+    },
+    {
+      "claim_id": "3e1a3c6d-e973-4ea5-b6aa-4459eeac9863",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "b78ec379-1946-4920-b81d-9e45634e86ea",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "0780e941-f2f4-42f6-b834-491563d31676",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "9bd6b1ec-39cb-4711-94f7-8799663e47b5",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "fae59a3a-bf29-416d-9230-a5e91e2f1bab",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "5322f5dc-21d4-49fa-9107-5c2221bcaaf1",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "e0cdd97f-898d-43e2-87a2-b361154d6bff",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "fc1dbe3f-2290-4512-b737-4dfeda5cfdd8",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "aaf02778-c76c-4dd4-980d-3c49e116769a",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "a68935fb-2613-4e59-a6a9-338ffa0faed3",
+      "result_id": "e7ff59fc-e4c0-4caf-926b-485b630a43cc"
+    },
+    {
+      "claim_id": "3f739025-f089-4dec-8441-01400503402a",
+      "result_id": "271ac06d-1074-4635-a497-1fbc1abbe645"
+    },
+    {
+      "claim_id": "812f6b6b-205c-4145-9530-9d390196340d",
+      "result_id": "271ac06d-1074-4635-a497-1fbc1abbe645"
+    },
+    {
+      "claim_id": "911a59a1-25ae-473d-8a47-9a2d6c5ed07d",
+      "result_id": "271ac06d-1074-4635-a497-1fbc1abbe645"
+    },
+    {
+      "claim_id": "040aca6b-1bdf-4b45-b302-251e91dda58e",
+      "result_id": "271ac06d-1074-4635-a497-1fbc1abbe645"
+    },
+    {
+      "claim_id": "7f183c05-70c1-48be-914f-aac19a218eca",
+      "result_id": "271ac06d-1074-4635-a497-1fbc1abbe645"
+    },
+    {
+      "claim_id": "6f2a2e92-9ecb-47a1-ad9e-e75b871a79c6",
+      "result_id": "2278c084-2835-4fba-9841-97a6a0c3b9af"
+    },
+    {
+      "claim_id": "76a5f81b-cce9-48ae-97e4-165879a1b010",
+      "result_id": "2278c084-2835-4fba-9841-97a6a0c3b9af"
+    },
+    {
+      "claim_id": "a0535135-d525-4189-9071-60bc89a8b95a",
+      "result_id": "2278c084-2835-4fba-9841-97a6a0c3b9af"
+    },
+    {
+      "claim_id": "ab7c23f3-4f8e-4657-a7fe-cf1347f1543c",
+      "result_id": "2278c084-2835-4fba-9841-97a6a0c3b9af"
+    },
+    {
+      "claim_id": "9c7e2fd4-c4e6-49bc-a2f6-1135685b88c9",
+      "result_id": "b4774920-01a0-4c2b-bf2e-047dbe146936"
+    },
+    {
+      "claim_id": "338f6aea-aadb-4457-80be-a048bfa6bd3f",
+      "result_id": "b4774920-01a0-4c2b-bf2e-047dbe146936"
+    },
+    {
+      "claim_id": "2e58564c-424c-4285-889c-6d742c7b0472",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "767a437d-ac6e-4689-8ab4-acce3132e486",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "b5490074-b6df-47a8-8c6a-4cab6d49b9fe",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "31885f7b-cf01-488b-b10e-d0c427e2c36d",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "73870b7b-ac74-4906-ae32-0b0e4642a08f",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "c5bba553-bf66-4fdd-a64b-e427bdd4cd4e",
+      "result_id": "ff684693-8dc5-470f-95dc-63563b24ef9f"
+    },
+    {
+      "claim_id": "886ff77a-ee53-4885-afa8-4bd1cb0be8e3",
+      "result_id": "c88c9281-533d-4aa8-bb62-6f26d1c666c2"
+    },
+    {
+      "claim_id": "c91f454d-0866-42f5-89b5-1e6962c81c12",
+      "result_id": "c88c9281-533d-4aa8-bb62-6f26d1c666c2"
+    },
+    {
+      "claim_id": "523e1542-5d8f-4554-82fb-01490e433a1b",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "479b49d5-7d7f-49e2-973a-9f8061c7209e",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "81644178-7be0-4824-bbe2-d0778ca2d128",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "47124eec-f57a-431f-b16e-64211b930d81",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "f851e785-26fc-40cf-99e5-74f936c26491",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "11c935f8-8ee7-4860-a945-d05cbcaea7c5",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "cbd4ff4b-89f8-4ce2-bbce-36247344d5e2",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "f1239e1b-f510-4bbf-9813-478cdaae984a",
+      "result_id": "ac607554-5532-4a15-b7ed-68b5bb03bde6"
+    },
+    {
+      "claim_id": "fd7e0316-8aef-41f3-82e9-452939a4958e",
+      "result_id": "d300e512-5c86-4398-b113-791a1a725907"
+    },
+    {
+      "claim_id": "14bb9d47-62b4-4d10-8865-22af6df828fc",
+      "result_id": "d300e512-5c86-4398-b113-791a1a725907"
+    },
+    {
+      "claim_id": "158effea-eaff-473e-9faf-4c71d8389039",
+      "result_id": "d300e512-5c86-4398-b113-791a1a725907"
+    },
+    {
+      "claim_id": "7c7dc764-b63f-4e0e-bf08-8503de5b47c5",
+      "result_id": "24cb26c8-c991-4dfe-b7e4-385d5646c54a"
+    },
+    {
+      "claim_id": "4f0226c2-d7bd-4cf5-9963-dfefb569e1f5",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "6318f2f2-0b79-4283-9589-94f4e462ffcf",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "348184ef-0ea1-4d48-a294-52a6ddc671dd",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "197c54c4-b51e-4a69-98cb-0bddc424b000",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "94cab213-3221-494a-9094-79e34b57ebc0",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "50b37a9d-e9b9-4d75-8cac-4a4eeaf7d3be",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "2df08064-34e0-4c0a-97d3-32749ef52042",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "1f4474dc-c357-4921-8838-fa8dbf86441b",
+      "result_id": "be0680f6-5cdb-4912-b692-43071086dc52"
+    },
+    {
+      "claim_id": "c7bf7f80-f878-4166-b783-add669998bad",
+      "result_id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395"
+    },
+    {
+      "claim_id": "e19585c5-f03c-4587-b8ed-cbf3101313eb",
+      "result_id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395"
+    },
+    {
+      "claim_id": "40a02b8a-5db4-4dc1-a96f-832a9cf328ca",
+      "result_id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395"
+    },
+    {
+      "claim_id": "8dc2901e-70ba-4584-9dfa-42eee8a250f2",
+      "result_id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395"
+    },
+    {
+      "claim_id": "960208b0-e418-4208-908a-e3aa8f721088",
+      "result_id": "9137e856-6dfc-4ff9-89b8-5e8c507a4395"
+    },
+    {
+      "claim_id": "dbf21558-8731-4b6a-a292-22e3d202fc32",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "c79d7a96-b62a-41fd-8028-cf9da7d0823f",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "326c949c-0557-497b-8f2c-7eb2349c3795",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "c2621f8e-ec4e-4974-9889-0b44d88db44b",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "38a697c8-3bd6-4c7a-a92f-e055de1c7449",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "a429df9d-5935-441d-99fb-1c65ecc65848",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "1bdb6c64-805d-4804-bec5-c2e64bab7132",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "2f8e2a71-2031-4652-8034-73fa8876afaf",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "168740ac-4d12-4662-ab72-1a8348ccf9a2",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "f7b97473-a903-4178-a39a-b1e87caee63c",
+      "result_id": "ebb3db42-1fcd-4eca-83bc-fc02f92bb680"
+    },
+    {
+      "claim_id": "93f40922-da34-49dc-a45a-1e0cbe2056d0",
+      "result_id": "043d5890-7b98-4539-a416-4402a2b3173a"
+    },
+    {
+      "claim_id": "87e69114-4a58-4d67-a1fa-3a5686bce4d8",
+      "result_id": "043d5890-7b98-4539-a416-4402a2b3173a"
+    },
+    {
+      "claim_id": "5a78b13b-446a-4a54-bbaf-93c8b1ec78a9",
+      "result_id": "043d5890-7b98-4539-a416-4402a2b3173a"
+    }
+  ],
+  "comparisons": []
+}

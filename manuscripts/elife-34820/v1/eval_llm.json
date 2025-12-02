@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript develops a theoretical framework showing that mean phenotypes deviate from optimal states due to the combined effects of mutation bias, genetic drift, and selection, with the magnitude of deviation depending on effective population size. This leads to phenotypic divergence among lineages even under identical selection pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10, C36-38, C43, C64-65 collectively establish this core theoretical result through mathematical derivations (Equations 1b, 11, 13b, 14a) and logical inference. The mathematical framework is internally consistent and properly derived from diffusion theory. The claims are well-supported by the theoretical models presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C44",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript demonstrates theoretically that stationary distributions can be bimodal under certain conditions, with one peak driven by selection and another by mutation pressure. This occurs when the product of mutation and selection gradients has an internal minimum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C80-83 establish the theoretical conditions for bimodality with mathematical rigor and illustration in Figure 4. Claims C44, C84-85 provide context from prior work and speculative applications. The mathematical conditions are clearly stated and the theoretical framework is sound, though empirical validation is acknowledged as lacking (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The manuscript derives specific forms of stationary distributions for three fitness functions: Gaussian (yielding Gaussian distributions), hyperbolic (yielding slightly right-skewed but approximately normal distributions), and sigmoid/mesa (yielding distributions with flattened extremes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-63 describe mathematical properties of the models that follow directly from the equations presented (Equations 12-18, Table 1). The derivations are mathematically sound and properly cite prior work (Lande 1976, Gerland and Hwa 2002, Berg et al. 2004). These are well-established mathematical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C22",
+      "C71",
+      "C25"
+    ],
+    "result": "The manuscript argues that mutation rates scale inversely with effective population size across the Tree of Life, consistent with the drift-barrier hypothesis. This pattern is also observed in transcription-factor binding-site affinity differences between bacteria and eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-71, C22, C25 cite empirical observations from Lynch 2010, 2011, Lynch et al. 2016, and Lynch and Hagner 2015. The qualitative consistency with the drift-barrier hypothesis is appropriately stated as an inference rather than proof. The cited work provides the empirical foundation for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C31",
+      "C32",
+      "C33",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript presents protein stability as an example of a cellular feature subject to drift barriers. Proteins evolve to marginal stability despite the ease of obtaining more stable variants, and bacterial proteins fold faster and show variation in stability consistent with drift around a fitness plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-33, C72-77 are well-supported by multiple citations to experimental work (Taverna and Goldstein 2002, Tokuriki and Tawfik 2009, Matsuura et al. 1999, Bershtein et al. 2013, 2015, and others). The hyperbolic fitness model for protein stability is supported by biophysical principles (C31, C74). Claim C77 is appropriately marked as speculative interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "The manuscript derives that the change in mean phenotype from selection equals the product of genetic variance and the gradient of log mean fitness, with evolution halting when genetic variance is zero or at fitness optima. Phenotypic variance reduces selection efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-13, C16 follow directly from the mathematical derivation in Equation 7 and represent well-established quantitative genetics principles. The derivations are mathematically correct and properly contextualized. These are foundational results for the subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "The manuscript defines the stationary distribution as representing either phenotypic means across replicate populations or historical means in a single population over long time periods, with convergence to this distribution occurring under most biological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-47, C49 provide clear definitions and theoretical properties of the stationary distribution concept. These are standard results from diffusion theory properly applied to the phenotypic evolution context. Figure 1 illustrates the concept effectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The composite parameter 4Ne\u03bc ranges from 0.001 to 0.1, with lower values in vertebrates and higher values in microbes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by citation to Lynch 2007 and represents an empirical observation about standing heterozygosity at neutral sites. This provides important context for parameter estimation in the models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes background principles: cellular features vary continuously within populations due to genetic and stochastic factors, this variation transforms into among-species divergence through mutation and fixation, and the cellular environment remains relatively constant due to homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-8 represent well-established principles in evolutionary biology, properly cited to Lynch and Walsh 1998, Wright 1969, and Walsh and Lynch 2018. These provide appropriate foundational context for the theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript states that quantitative traits are approximately normally distributed (by the central limit theorem) and that many cellular features depend on finite numbers of sites with binary or limited states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14-15 represent established knowledge properly cited (Lynch and Walsh 1998) and reasonable characterizations of protein structure. These assumptions underpin the mutation model developed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "With a flat mutation function (no mutation bias), the stationary distribution follows that expected under selection alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a logical consequence of Equation 1b in the limiting case where mutation has no directional bias. This is a straightforward mathematical inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Similar behavior of stationary distributions was previously described for allele frequencies by Wright (1969).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 properly cites Wright 1969 and draws an appropriate parallel between the current work on phenotypes and prior work on allele frequencies. This provides important historical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript acknowledges that while the mutation function used likely approximates cellular features better than previous models, the exact form is unknown for any cellular feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-79 represent appropriate acknowledgment of model limitations and current knowledge gaps. This demonstrates scientific caution about the generality of the specific mutation model employed.",
+    "result_type": "MINOR"
+  }
+]

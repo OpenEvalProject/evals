@@ -1,0 +1,1294 @@
+{
+  "submission": {
+    "id": "bce9630a-ae26-43a9-9f71-4edcbc2bde57",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:12:34.717437Z",
+    "updated_at": "2025-12-01T20:12:34.717437Z"
+  },
+  "content": [
+    {
+      "id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "submission_id": "bce9630a-ae26-43a9-9f71-4edcbc2bde57",
+      "content_type": "manuscript",
+      "content_text": "# Ecological feedback in quorum-sensing microbial populations can induce heterogeneous production of autoinducers\n\n## Authors\n\n- Matthias Bauer<sup>1</sup> ([ORCID: 0000-0001-7040-2054](https://orcid.org/0000-0001-7040-2054))\n- Johannes Knebel<sup>1</sup> ([ORCID: 0000-0002-0660-9496](https://orcid.org/0000-0002-0660-9496))\n- Matthias Lechner<sup>1</sup> ([ORCID: 0000-0002-0452-7091](https://orcid.org/0000-0002-0452-7091))\n- Peter Pickl<sup>2</sup>\n- Erwin Frey<sup>1</sup> ([ORCID: 0000-0001-8792-3358](https://orcid.org/0000-0001-8792-3358)) \u2020\n\n### Affiliations\n\n1. Arnold Sommerfeld Center for Theoretical Physics and Center for NanoScience, Department of Physics Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen M\u00fcnchen Germany\n2. Department of Mathematics Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen M\u00fcnchen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAutoinducers are small signaling molecules that mediate intercellular communication in microbial populations and trigger coordinated gene expression via \u2018quorum sensing\u2019. Elucidating the mechanisms that control autoinducer production is, thus, pertinent to understanding collective microbial behavior, such as virulence and bioluminescence. Recent experiments have shown a heterogeneous promoter activity of autoinducer synthase genes, suggesting that some of the isogenic cells in a population might produce autoinducers, whereas others might not. However, the mechanism underlying this phenotypic heterogeneity in quorum-sensing microbial populations has remained elusive. In our theoretical model, cells synthesize and secrete autoinducers into the environment, up-regulate their production in this self-shaped environment, and non-producers replicate faster than producers. We show that the coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations, suggesting an alternative mechanism to stochastic gene expression in bistable gene regulatory circuits.\n\n## Introduction\n\nAutoinducers are small molecules that are produced by microbes, secreted into the environment, and sensed by the cells in the population (Keller and Surette, 2006; Hense and Schuster, 2015). Autoinducers can trigger a collective behavior of all cells in a population, which is called quorum sensing. For example, quorum sensing regulates the transcription of virulence genes in the Gram-positive bacterium Listeria monocytogenes (Gray et al., 2006; Garmyn et al., 2011; da Silva and De Martinis, 2013) and the transcription of bioluminescence genes in the Gram-negative bacterium Vibrio harveyi (Xavier and Bassler, 2003; Anetzberger et al., 2009), and it may also autoregulate the transcription of autoinducer synthase genes (Fuqua and Greenberg, 2002; Waters and Bassler, 2005). When the concentration of autoinducers reaches a threshold value, a coordinated and homogeneous expression of target genes may be initiated in all cells of the population (Waters and Bassler, 2005; Hense and Schuster, 2015; Papenfort and Bassler, 2016), or a heterogeneous gene expression in the population may be triggered at low concentrations (Anetzberger et al., 2009; Williams et al., 2008; Boedicker et al., 2009; Garmyn et al., 2011; P\u00e9rez and Hagen, 2010; Ackermann, 2015; Grote et al., 2014, Grote et al., 2015; Papenfort and Bassler, 2016; Pradhan and Chatterjee, 2014). To implement all of these functions and behaviors, a microbial population needs to dynamically self-regulate the average autoinducer production.\n\nWithin a given population, the promoter activity of autoinducer synthase genes may vary between genetically identical cells (Garmyn et al., 2011; Grote et al., 2014; Anetzberger et al., 2012; Plener et al., 2015; C\u00e1rcamo-Oyarce et al., 2015; Grote et al., 2015). For example, during the growth of L. monocytogenes under well-mixed conditions two subpopulations were observed, one of which expressed autoinducer synthase genes, while the other did not (Garmyn et al., 2011). Such a phenotypic heterogeneity was associated with biofilm formation (Garmyn et al., 2011; da Silva and De Martinis, 2013; Hense and Schuster, 2015; C\u00e1rcamo-Oyarce et al., 2015). The stable coexistence of different phenotypes in one population may serve the division of labor or act as a bet-hedging strategy and, thus, may be beneficial for the survival and resilience of a microbial species on long time scales (Ackermann, 2015).\n\nThe mechanism by which a heterogeneous expression of autoinducer synthase genes is established when their expression is autoregulated by quorum sensing has remained elusive. For example, expression of the above mentioned autoinducer synthase genes in L. monocytogenes is up-regulated through quorum-sensing in single cells (Garmyn et al., 2011, Garmyn et al., 2009; Waters and Bassler, 2005). From an experimental point of view it is often not known, however, whether autoinducer synthesis is up-regulated for all autoinducer levels or only above a threshold level. To explain phenotypic heterogeneity of autoinducer production, currently favored threshold models of quorum sensing typically assume a bistable gene regulation function (Fujimoto and Sawai, 2013; P\u00e9rez-Vel\u00e1zquez et al., 2016; Goryachev et al., 2005; Dockery and Keener, 2001). For bistable regulation, cellular autoinducer synthesis is up-regulated above a threshold value of the autoinducer concentration in the population, whereas it is down-regulated below the threshold ('all-or-none' expression); see Figure 1B. Stochastic gene expression at the cellular level then explains the coexistence of different phenotypes in one population. If, however, cellular autoinducer synthesis is up-regulated for all autoinducer concentrations (monostable up-regulation), the mechanism by which phenotypic heterogeneity can arise and is controlled has not been explained.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25773/elife-25773-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sketch of a typical update step. Individuals are depicted as disks and the degree of autoinducer production ($p_{i}\\in[0,1]$) is indicated by the size of the green fraction. Non-producers (orange disks) reproduce fastest, full producers (green disks) slowest. Individual $i$ with $p_{i}=1/6$ divides into two offspring individuals, one of which replaces another individual $j$. Both offspring individuals sense the average production level in the population ($\u27e8p\u27e9=1/3$), and may either respond to this environment, with probability $\\lambda$, by adopting the value $R\u2062(\u27e8p\u27e9)$ of the response function ($=2/3$ here, see (B)) or, with probability $1-\\lambda$, retain the production degree from the ancestor ($=1/6$). Here, offspring individual $i$ responds to the environment while $j$ does not (denoted by gray shading). (B) Quorum sensing is characterized by the response function. Perception of the average production level in the population ($\u27e8p\u27e9$) enables individuals to change their production degree to the value $R\u2062(\u27e8p\u27e9)\\in[0,1]$. Sketched are a monostable response function (stable fixed point at 1, unstable fixed point at 0), and a bistable response function (stable fixed points at 0 and 1, unstable fixed point at an intermediate threshold value). Stable fixed points of the response function are depicted as black circles while unstable fixed points are colored in white. For the sketched bistable response function, autoinducer production is down-regulated with respect to the sensed production level in the population below the threshold value, and up-regulated above this threshold. For the monostable response function, autoinducer production is up-regulated at all sensed production levels.\n\nHere we show that the coupling between ecological and population dynamics through quorum sensing can control a heterogeneous production of autoinducers in quorum-sensing microbial populations. At the same time, the overall autoinducer level in the environment is robustly self-regulated, so that further quorum-sensing functions such as virulence or bioluminescence can be triggered. We studied the collective behavior of a stochastic many-particle model of quorum sensing, in which cells produce autoinducers to different degrees and secrete them into the well-mixed environment. Production of large autoinducer molecules (for example oligopeptides) and accompanied gene expression are assumed to reduce fitness such that non-producers reproduce faster than producing cells. Moreover, it is assumed that quorum sensing enables up-regulation of autoinducer production, that is, individuals can increase their production in response to the sensed average production level in the population (Figure 1). As a central result, we found that the population may split into two subpopulations: one with a low, and a second with a high production rate of autoinducers. This phenotypic heterogeneity in the autoinducer production is stable for many generations and the autoinducer concentration in the population is tightly controlled by how production is up-regulated. If cellular response to the environment is absent or too frequent, phase transitions occur from heterogeneous to homogeneous populations in which all individuals produce autoinducers to the same degree. To capture these emergent dynamics, we derived the macroscopic mean-field equation (1) from the microscopic stochastic many-particle process in the spirit of the kinetic theory in statistical physics, which we refer to as the autoinducer equation. The analysis of the autoinducer equation explains both phenotypic heterogeneity through quorum sensing and the phase transitions to homogeneity.\n\nThe key aspect of our work is how the composition of a population changes in time when its constituents respond to an environment that is being shaped by their own activities (see Box 1). This ecological feedback is mediated by quorum sensing and creates an effective global coupling between the individuals in the population. Such a global coupling is reminiscent of long-range interactions in models of statistical mechanics, such as in the classical XY spin model with infinite range interactions (Antoni and Ruffo, 1995; Yamaguchi et al., 2004; Barr\u00e9 et al., 2002; Choi and Choi, 2003; de Buyl et al., 2010; Campa et al., 2009; Pakter and Levin, 2013). Our analysis suggests that quorum sensing in microbial populations can induce and control phenotypic heterogeneity as a collective behavior through such a global coupling and, notably, does not rely on a bistable gene regulatory circuit (see Discussion).\n\n## Set-up of the quorum-sensing model\n\nWe now introduce the quorum-sensing model for a well-mixed population of $N$ individuals (Figure 1). The phenotype of each individual $i=1,\u2026,N$ is characterized by its production degree $p_{i}\\in[0,1]$, that is, the extent to which it produces and secretes autoinducers. In an experiment with microbes, the promoter activity of autoinducer synthase genes or their enzymatic activity could be a proxy for the production degree. The limiting case $p_{i}=0$ denotes a non-producer, and $p_{i}=1$ denotes a full producer.\n\nThe state of the population $p=(p_{1},\u2026,p_{N})$ changes stochastically (Figure 1A): An individual $i$ reproduces with rate $\u03d5_{i}$, which we refer to as the individual\u2019s fitness. We assume that fitness decreases with incurring metabolic costs of induction and synthesis of autoinducers, and with other metabolic burdens in the cell\u2019s phenotypic state (Ruparell et al., 2016; Diggle et al., 2007; He et al., 2003). For simplicity, we choose $\u03d5_{i}=\u03d5(p_{i})=1\u2212sp_{i}$. The selection strength $0\\leqs<1$ scales the fitness difference with respect to the non-producing phenotype ($\u03d5\u2062(0)=1$). Thus, the larger an individual\u2019s production, the smaller its reproduction rate. This assumption is discussed in detail further below (see Discussion).\n\nWhenever an individual divides into two offspring individuals in the stochastic process, another individual from the population is selected at random to die such that the population size $N$ remains constant. Qualitative results of our model remain valid if only the average population size is constant, which may be assumed, for example, for the stationary phase of microbial growth in batch culture. One recovers the mathematical set-up of frequency-dependent Moran models for Darwinian selection (Moran, 1958; Ewens, 2004; Blythe and McKane, 2007; Nowak et al., 2004) if one restricts the production degrees to a discrete set, for example, to full producers or non-producers only, $p_{i}\\in{0,1}$. The mathematical set-up of the well-known Prisoner\u2019s dilemma in evolutionary game theory is recovered if, in addition, the secreted molecules would confer a fitness benefit on the population (Nowak et al., 2004; Traulsen et al., 2005; Melbinger et al., 2010; Assaf et al., 2013). Since we are interested in the mechanism by which heterogeneous production of autoinducers might be induced and do not study the context under which it might have evolved, we do not include any fitness benefits through signaling, for example at the population level, into the modeling here (see Discussion).\n\nA central feature of our model is the fact that individuals may adjust their production degree via a sense-and-response mechanism through quorum sensing, which is implemented as follows. After reproduction, both offspring individuals sense the average production level of autoinducers $\u27e8p\u27e9=1/N\\sum_{i}p_{i}$ in the well-mixed population. With probability $\\lambda$, they independently adopt the value $R\u2062(\u27e8p\u27e9)\\in[0,1]$ as their production degree in response to the sensed environmental cue $\u27e8p\u27e9$, whereas they retain the ancestor\u2019s production degree with probability $1-\\lambda$ through non-genetic inheritance. In an experimental setting, the response probability $\\lambda$ relates to the rate with which cells respond to the environment (Kussell and Leibler, 2005; Acar et al., 2008; Axelrod et al., 2015) and regulate their production through quorum sensing. We refer to the function $R\u2062(\u27e8p\u27e9)$ as the response function, which is the same for all individuals. The response function encapsulates all biochemical steps involved in the autoinducer production between perception of the average production level $\u27e8p\u27e9$ and adjustment of the individual production degree to $R\u2062(\u27e8p\u27e9)$ in response (He et al., 2003; Williams et al., 2008; Drees et al., 2014; Hense and Schuster, 2015; Maire and Youk, 2015); see Figure 1B. For example, it may be a bistable step or bistable Hill function, which is often effectively assumed in threshold models of phenotypic heterogeneity (Fujimoto and Sawai, 2013; P\u00e9rez-Vel\u00e1zquez et al., 2016; Goryachev et al., 2005; Dockery and Keener, 2001). For a bistable response function, cellular production is up-regulated above a threshold value of $\u27e8p\u27e9$, whereas it is down-regulated below the threshold. For the bistable response function sketched in Figure 1B, both values $\u27e8p\u27e9=0$ and $\u27e8p\u27e9=1$ are stable fixed points. In this work, however, we particularly focus on monostable response functions $R\u2062(\u27e8p\u27e9)$ to model microbial quorum-sensing systems in which autoinducer synthesis is up-regulated at all autoinducer production levels in the population (Garmyn et al., 2009; Waters and Bassler, 2005). In other words, cellular production always increases with respect to the sensed production level in the population (stable fixed point at $\u27e8p\u27e9=1$ and unstable fixed point at $\u27e8p\u27e9=0$). The sense-and-response mechanism is further discussed in the Discussion section.\n\nFrom a mathematical point of view, the introduced sense-and-response mechanism through quorum sensing constitutes a source of innovation in the space of production degrees because an individual may adopt a production degree that was not previously present in the population. Thus, a continuous production space with $p_{i}\\in[0,1]$ as opposed to a discrete production space is a technical necessity for the implementation of the quorum-sensing model. The coupling of ecological dynamics (given by the average production level of autoinducers $\u27e8p\u27e9$) with population dynamics (determined by fitness differences between the phenotypes) through quorum sensing results in interesting collective behavior, as we show next. We emphasize that, as long as this coupling is present, the effects of the quorum-sensing model that we found and report next are qualitatively robust against noise at all steps; see below.\n\n## Results of numerical simulations\n\nThe quorum-sensing model was numerically simulated by employing Gillespie\u2019s stochastic simulation algorithm (Gillespie, 1976, 1977) for a population size of N=104 individuals and an exemplary selection strength s=0.2, such that s\u2062N\u226b1. In this regime, demographic fluctuations are subordinate (Nowak et al., 2004; Wild and Traulsen, 2007; Blythe and McKane, 2007). Within the scope of our quorum-sensing model, the precise value of the selection strength s that scales the fitness differences is not important for the reported mechanism by which phenotypic heterogeneity can be induced, see below. We tracked the state of the population \ud835\udc29 over time, and depict the histogram of production degrees and the population average in Figure 2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25773/elife-25773-fig2-v1.jpg)\n\n**Figure 2.:** Temporal evolution of autoinducer production in the quorum-sensing model depicted as histograms of production degrees (normalized values), (A\u2013C); and average production level of autoinducers in the population (D\u2013F); see also Videos 1\u20133. (A) In the absence of sense-and-response ($\\lambda=0$), only non-producers proliferate. The approach to stationarity is asymptotically algebraically slow for a quasi-continuous initial distribution of production degrees (D). The black line $\u27e8p\u27e9\u223ct^{-1}$ serves as a guide for the eye. (B) Sense-and-response through quorum sensing ($\\lambda=0.2$ here) promotes autoinducer production, and the population becomes homogeneous (ultimately, fixation at a single production degree, data not shown). The response function used here, $R\u2062(\u27e8p\u27e9)=\u27e8p\u27e9+0.2\u22c5sin\u2061(\\pi\u2062\u27e8p\u27e9)$, was chosen such that an individual\u2019s production degree is always up-regulated through quorum sensing (see Figure 1B). Approach to stationarity is exponentially fast (E), but timescales may diverge at bifurcations of the response function (see Appendix 1\u2014figure 3). The dashed line in (E) shows fit to an exponential decay. (C) When $\\lambda$ is small ($\\lambda=0.05$ here), the population becomes heterogeneous: quasi-stationary states arise in which the population splits into two subpopulations, one of which does not produce autoinducers, while the other does. The same monostable response function was chosen as in (B). Therefore, heterogeneity may arise without bistable response. For very long times, one of the two absorbing states (A, B) is reached, data not shown (see Figure 3A). Heterogeneous, quasi-stationary states arise for a broad class of initial distributions (see Appendix 1\u2014figure 1 and our mathematical analysis). At the same time, the average production level of autoinducers in the population is adjusted by the response probability $\\lambda$ if $s$ is fixed (F) or vice versa (data not shown). Bimodal, quasi-stationary states also arise when noisy inheritance, noisy perception, and noisy response are included in the model set-up (see Appendix 1\u2014figure 2). Mean-field theory\u00a0agrees with all observations\u00a0(autoinducer equation (1)). The time unit $\u0394\u2062t=1$ means that in a population consisting solely of non-producers, each individual will have reproduced once on average. Ensemble size $M=100$, $s=0.2$, $N=10^{4}$.\n\n![Video 1.](https://cdn.elifesciences.org/articles/25773/elife-25773-media1.mp4.jpg)\n\n**Video 1.:** Video accompanying Figure 2A \u2013 Homogeneous production of autoinducers in the population if sense-and-response is absent in the quorum-sensing model ($\\lambda=0$).\n\n![Video 2.](https://cdn.elifesciences.org/articles/25773/elife-25773-media2.mp4.jpg)\n\n**Video 2.:** Video accompanying Figure 2B \u2013 Homogeneous production of autoinducers in the population if sense-and-response is frequent in the quorum-sensing model ($\\lambda=0.2$ here).\n\n![Video 3.](https://cdn.elifesciences.org/articles/25773/elife-25773-media3.mp4.jpg)\n\n**Video 3.:** Video accompanying Figure 2C \u2013 Heterogeneous production of autoinducers in the population if sense-and-response is rare in the quorum-sensing model ($\\lambda=0.05$ here).\n\nFirst, we studied the stochastic many-particle process without sense-and-response ($\\lambda=0$); see Figure 2A,D and Video 1. In this case, non-producers always proliferate because they reproduce at the highest rate in the population, which is well-studied in evolutionary game theory (Taylor and Jonker, 1978; Maynard Smith, 1982; Hofbauer and Sigmund, 1998). Thus, the initially uniform distribution in the population shifts to a peaked distribution at low production degrees. Ultimately, a homogeneous (unimodal) stationary state is reached in which all individuals produce autoinducers to the same low degree $p_{low}\u22430$. Such a stationary state is absorbing (Hinrichsen, 2000), that is, the stochastic process offers no possibility of escape from this state of the population.\n\nWith quorum sensing ($\\lambda>0$), absorbing states are reached if, again, all individuals produce to the same degree $p^{*}$ and, in addition, the value of this production degree is a fixed point of the response function ($R\u2062(p^{*})=p^{*}$); see Figure 2B,E and Video 2. In such a homogeneous absorbing state with $\u27e8p\u27e9_{\u221e}=p^{*}$, an offspring individual can no longer alter its production degree. It either takes over the production degree $p^{*}$ from its ancestor or it adopts that same degree $R\u2062(\u27e8p\u27e9_{\u221e})=\u27e8p\u27e9_{\u221e}=p^{*}$ through sense-and-response. Thus, all individuals continue to produce with degree $p^{*}$ and the state of the population remains homogeneous (unimodal).\n\nSurprisingly, for small response probabilities \u03bb, we found that the population may get trapped in heterogeneous (bimodal) states for long times before a homogeneous absorbing state is reached. The temporal evolution of such a heterogeneous state is shown in Figure 2C,F and Video 3 for \u03bb=0.05. A monostable response function was chosen with R(\u27e8p\u27e9)>\u27e8p\u27e9 for all \u27e8p\u27e9\u2208(0,1) (unstable fixed point at 0, and stable fixed point at 1) such that the production degree is always up-regulated through quorum sensing; see sketch in Figure 1B. After some time has elapsed, the population is composed of two subpopulations: one in which individuals produce autoinducers to a low degree plow, and a second in which individuals produce to a higher degree phigh that is separated from plow by a gap in the space of production degrees. Only through strong demographic fluctuations can the population reach one of the homogeneous absorbing states (\u27e8p\u27e9\u221e=0 or 1 for the response function chosen above). The time taken to reach a homogeneous absorbing state grows exponentially with N (Figure 3A). Therefore, states of phenotypic heterogeneity are quasi-stationary and long-lived. These heterogeneous states arise for a broad class of response functions and initial distributions (Appendix 1\u2014figure 1), and they are robust against demographic noise that is always present in populations of finite size (Figure 3A); see our mathematical analysis below. We demonstrated that states of phenotypic heterogeneity are also robust against changes of the model set-up, which might account for more biological details (see, for example, Papenfort and Bassler, 2016 and references therein). Upon including, for example, noisy inheritance of the production degree, noisy perception of the environment, and noisy response to the environment into the quorum-sensing model, heterogeneous states still arise; see Appendix 1\u2014figure 2. Furthermore, the average production in the heterogeneous state is finely adjusted by the interplay between the response probability \u03bb and the selection strength s (Figure 2F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25773/elife-25773-fig3-v1.jpg)\n\n**Figure 3.:** (A) For small response probability $\\lambda$, populations get stuck in heterogeneous quasi-stationary states. The time taken to reach a homogeneous absorbing state, $T_{abs}$, increases exponentially with the population size $N$ (filled circles denote the mean, gray bars denote the range within which 95% of the data points lie closest to the mean; dashed lines show fit to $T_{abs}\u223ce^{\\gammaN}$). (B) Heterogeneous states are long-lived only if $\\lambda$ is small and the response function is nonlinear (in particular, up-regulation is required for some average production level such that $R(\u27e8p\u27e9)>\u27e8p\u27e9$). Here, the monostable response function $R\u2062(\u27e8p\u27e9)=\u27e8p\u27e9+\u03ba\u2062sin\u2061(\\pi\u2062\u27e8p\u27e9)$ was chosen such that $\u03ba\\in[0,1/\\pi]$ scales the magnitude of up-regulation. As $\u03ba$ increases, the gap between the low-productive and high-productive peaks of the heterogeneous state becomes larger such that it takes longer to reach the absorbing state. Mean-field theory (1) predicts the existence and local stability of heterogeneous stationary distributions for $0<\\lambda<\\lambda_{up}=s/2$ (regime below the black line). Deviations between the stochastic process and mean-field theory are due to demographic fluctuations that vanish as $N\u2192\u221e$. (C) The variance of production degrees in the population reveals whether the population is in a homogeneous ($Var\u2062(p)=0$) or heterogeneous state ($Var(p)>0$). The variance was averaged over long times in the quasi-stationary state. Mean-field theory (1) (black line) agrees with our numerical observations (red filled circles); see Methods and materials. Ensemble size $M=100$, $s=0.2$, in (B) $N=10^{3}$ and in (C) $N=10^{4}$ and $N=5\u22c510^{4}$ close to $\\lambda_{up}$, in (A, C) $\u03ba=0.2$.\n\nThe establishment of long-lived, heterogeneous states induced by quorum sensing is one central finding of our study. We interpret this phenotypic heterogeneity as the result of the robust balance between population and ecological dynamics coupled through quorum sensing (see Box 1). On the one hand, fitness differences due to costly production favor non-producers. On the other hand, sensing the population average and accordingly up-regulating individual production enables producers to persist. Remarkably, fitness differences and sense-and-response balance such that separated production degrees may stably coexist in one population; the population does not become homogeneous at an intermediate production degree as one might naively expect. Heterogeneity of the autoinducer production is a robust outcome of the dynamics (and not a fine-tuned effect), and the average production level in the population is adjusted by the interplay of the response probability $\\lambda$ and the selection strength $s$. Phenotypic heterogeneity does not rely on a bistable response function, but arises due to the global intercellular coupling of ecological and population dynamics through quorum sensing, as we show next. The relevance of quorum sensing for phenotypic heterogeneity in microbial populations is further explored below (see Discussion).\n\n## Results of mathematical analysis\n\nIn the following, the observed long-lived states of phenotypic heterogeneity in the quorum-sensing model are explained. First, we derived the macroscopic mean-field equation (the autoinducer equation (1)) from the microscopic dynamics of the quorum-sensing model. Second, we analyzed this mean-field equation and characterized phenotypic heterogeneity of autoinducer production.\n\nThe microscopic dynamics of the quorum-sensing model are captured by a memoryless stochastic birth-death process as sketched in Figure 1. Starting from the microscopic many-particle stochastic process, we derived a mean-field equation for the probability distribution of finding any individual at a specified production degree $p$ at time $t$ in the spirit of the kinetic theory in statistical physics (Kadar, 2007). We call this one-particle probability distribution the production distribution $\u03c1$; Figure 2 shows the corresponding histogram numerically obtained from the stochastic many-particle process. The mean-field equation for $\u03c1$, which we refer to as the autoinducer equation, is obtained as:\n\n$$\n\u2202_{t}\u03c1(p,t)=2\\lambda\u03d5\u00af_{t}(\\delta(p\u2212R(p\u00af_{t}))\u2212\u03c1(p,t))+(1\u22122\\lambda)(\u03d5(p)\u2212\u03d5\u00af_{t})\u03c1(p,t)\u00a0,\n$$\n\nwhere $\u22c5\u00af_{t}$ denotes averaging with respect to $\u03c1$ at time $t$. The details of the derivation of the autoinducer equation from the microscopic dynamics are given in the Methods and materials section and in Appendix 2.\n\nThe autoinducer equation (1) involves two contributions: the sense-and-response term with prefactor $2\u2062\\lambda$, and the replicator term with prefactor $1-2\u2062\\lambda$. Through the replicator term, probability weight at production degree $p$ changes if the fitness $\u03d5\u2062(p)$ is different from the mean fitness in the population $\u03d5\u00af_{t}$ (here $\u03d5\u2062(p)-\u03d5\u00af_{t}=-s\u2062(p-p\u00af_{t})$). Without quorum sensing ($\\lambda=0$), Equation (1) reduces to the well-known replicator equation of the continuous Prisoner\u2019s dilemma (Bomze, 1990; Oechssler and Riedel, 2001; Hofbauer and Sigmund, 2003; Cressman, 2005; McGill and Brown, 2007). The sense-and-response term, on the other hand, encodes the global feedback by which individuals adopt the production degree $R\u2062(p\u00af_{t})$ upon sensing the average $p\u00af_{t}$ through quorum sensing at rate $2\u2062\\lambda$. The difference between the current state $\u03c1$ and the state in which all individuals have this production degree $R\u2062(p\u00af_{t})$ determines the change in $\u03c1$ at every production degree. Through the replicator term and the sense-and-response term, the ecological dynamics (average production level $p\u00af_{t}$) are coupled with the dynamics of $\u03c1$.\n\nWe now present our results for the long-time behavior of the autoinducer\u00a0equation (1). First, the autoinducer\u00a0equation (1) admits homogeneous stationary distributions. Without quorum sensing ($\\lambda=0$), the initially lowest production degree in the population, $p_{low}$, constitutes the homogeneous stationary distribution $\u03c1_{\u221e}(p)=\\delta(p\u2212p_{low})$, which is attractive for generic initial conditions. With quorum sensing ($\\lambda>0$), fixed points of the response function $p^{*}=R\u2062(p^{*})$ yield homogeneous stationary distributions as $\u03c1_{\u221e}\u2062(p)=\\delta\u2062(p-p^{*})$, which are attractors of the quorum-sensing dynamics\u00a0(1) for all initial distributions if $\\lambda>s/2$; see analysis below. These homogeneous stationary distributions confirm our observations of homogeneous absorbing states in the quorum-sensing model, in which all individuals produce to the same degree; see Figure 2A,B. Time scales at which stationarity is approached are discussed in the Methods and materials section.\n\nSecond, to analytically characterize long-lived heterogeneous states of the population, we decomposed $\u03c1$ into a distribution at low production degrees and a remainder distribution at higher degrees. We found that such a decomposition yields the bimodal, heterogeneous, stationary distribution of the autoinducer equation (1):\n\n$$\n\u03c1_{\u221e}(p)=y\\delta(p)+(1\u2212y)\\delta(p\u2212p_{high})\u00a0,with\u00a0\u00a0p_{high}=R(\\beta)\u00a0\u00a0and\u00a0\u00a0y=1\u2212\\beta/R(\\beta)\u00a0,\n$$\n\nif the conditions $0<p_{high}\\leq1$ and $0<y<1$ are fulfilled; see Box 1 for an illustration and Appendix 3 for the derivation. The parameter $\\beta=2\u2062\\lambda/s$ quantifies the balance between fitness differences and sense-and-response mechanism through quorum sensing. Heterogeneous stationary distributions (2) are constituted of a probability mass $y$ at the low-producing degree $p_{low}=0$ and a coexisting $\\delta$-peak with stationary value $1-y$ at a high-producing degree $p_{high}$ separated from $p_{low}$ by a gap. Such heterogeneous stationary distributions have mean $p\u00af_{\u221e}=\\beta$ and variance $Var\u2062(p)_{\u221e}=\\beta\u2062(R\u2062(\\beta)-\\beta)$. Therefore, the interplay between selection strength $s$ and response probability $\\lambda$ adjusts the average production of autoinducers in the population (Figure 2F). For simplicity, we assumed in Equation (2) that the initially lowest production degree in the population is $p_{low}=0$; generalized bimodal distributions for arbitrary initial distributions $\u03c1_{0}$ are given in Appendix 3.\n\nFrom the conditions on $p_{high}$ and $y$ below Equation (2), one can derive the following conditions on the response function and the value of the response probability $\\lambda$ (for given selection strength $s$) for the existence of heterogeneous stationary distributions: (i) The response function needs to be nonlinear with $R(p\u00af_{\u221e})=p_{high}>p\u00af_{\u221e}$; that is, quorum sensing needs to up-regulate the cellular production in some regime of the average production level. Therefore, both monostable and bistable response functions depicted in Figure 1B may induce heterogeneous stationary distributions through the ecological feedback. (ii) The response probability needs to be small with $\\lambda<\\lambda_{up}=s/2$; that is, to induce phenotypic heterogeneity, cells must respond only rarely to the environmental cue $p\u00af$. This estimate of an upper bound on $\\lambda$ is confirmed by our numerical results of the stochastic process (Figure 3A\u2013C). Vice versa, for a given response probability, the selection strength needs to be big enough to induce heterogeneous stationary distributions. As we show in the Methods and materials section, phase transitions in the space of stationary probability distributions govern the long-time dynamics of the autoinducer equation (1) from heterogeneity to homogeneity as the response probability changes ($\\lambda\u21920$ and $\\lambda\u2192\\lambda_{up}$); see Figure 3C.\n\nFor small $\\lambda$, the coexistence of the low-producing and the high-producing peaks in solution (2) is stable due to the balance of fitness differences and sense-and-response through quorum sensing. In Appendix 3 we show that the heterogeneous stationary distributions (2) are stable up to linear order in perturbations around stationarity. As our numerical simulations show, these bimodal distributions are the attractor of the mean-field dynamics (1) for a broad range of initial distributions when $\\lambda$ is small; see Appendix 1\u2014figure 1 for some examples. They are also robust against noisy inheritance, noisy perception, and noisy response as demonstrated in Appendix 1\u2014figure 2. We interpret the stability of the bimodal stationary distributions (2) as follows (see also Box 1). Fitness differences quantified by the selection strength $s$ increase probability mass at production degree $p_{low}$, whereas nonlinear response to the environment with probability $\\lambda$ pushes probability mass towards the up-regulated production degree $p_{high}=R(p\u00af_{\u221e})$. The gap $p_{high}\u2212p_{low}>0$ ensures that the exponential time scales of selection and sense-and-response stably balance the coexistence of both peaks; see Methods and materials. Because heterogeneous stationary distributions (2) are attractive and stable, heterogeneous states of the stochastic many-particle process arise and are quasi-stationary. Consequently, the time to reach a homogeneous absorbing state in the stochastic process through demographic fluctuations scales exponentially with the population size $N$ (Elgart and Kamenev, 2004; Kessler and Shnerb, 2007; Assaf and Meerson, 2010; Frey, 2010; Hanggi, 1986); see Figure 3A. Thus, phenotypic heterogeneity is long-lived.\n\nIn summary, our mathematical analysis explains how phenotypic heterogeneity in the autoinducer production arises when quorum sensing up-regulates the autoinducer production in microbial populations (Box 1). As an emergent phenomenon, the population may split into two subpopulations: one in which cells do not produce autoinducers (\u2018off\u2019 state, $p_{low}=0$) and a second in which cells produce autoinducers (\u2018on\u2019 state, $p_{high}=R(2\\lambda/s)>0$), but grow slower. The fraction of individuals in the \u2018off\u2019 state is given by the value of $y$ in Equation (2). If quorum sensing is absent ($\\lambda=0$), the whole population is in the \u2018off\u2019 state ($y=1$), whereas all individuals are in the \u2018on\u2019 state ($y=0$) if quorum sensing is frequent ($\\lambda\\geq\\lambda_{up}$). Only when response to the environment is rare ($0<\\lambda<\\lambda_{up}$) can the two phenotypic states, $p_{low}$ and $p_{high}$, coexist in the population ($0<y<1$). The transitions from heterogeneous to homogeneous populations are governed by nonequilibrium phase transitions when the response probability changes ($\\lambda\u21920$ and $\\lambda\u2192\\lambda_{up}$). Our mathematical analysis shows that phenotypic heterogeneity arises dynamically, is robust against perturbations of the autoinducer production in the population, and is robust against noise at the level of inheritance, sense, and response.\n\n## Discussion\n\n### Summary: Phenotypic heterogeneity in the quorum-sensing model as a collective phenomenon through an ecological feedback\n\nIn this work, we studied a conceptual model for the heterogeneous production of autoinducers in quorum-sensing microbial populations. The two key assumptions of our quorum-sensing model are as follows. First, production of large autoinducer molecules and accompanied gene expression in the cell\u2019s phenotypic state are negatively correlated with fitness such that non-producers reproduce faster than producers. Second, cells sense the average production level of autoinducers in the population and may accordingly up-regulate their production through quorum sensing. As a result, not only does the interplay between fitness differences and sense-and-response give rise to homogeneously producing populations, but it can also induce a heterogeneous production of autoinducers in the population as a stable collective phenomenon. In these heterogeneous states, the average production level of autoinducers in the population is adjusted within narrow limits by the balance between fitness differences (selection strength $s$ in the model), and the rate with which cells respond to the environment and up-regulate their production through quorum sensing (response probability $\\lambda$ and response function $R\u2062(\u27e8p\u27e9)$ in the model). Due to this robust adjustment of the production level in the population, the expression of other genes (for example, bioluminescence and virulence genes) can be regulated by quorum sensing even when the production of autoinducers is heterogeneous in the population.\n\nIn the following, we discuss the assumptions of our model in the light of the empirical reality for both quorum sensing and phenotypic heterogeneity. Furthermore, we indicate possible directions to experimentally test the ecological feedback that is suggested by the results of our theoretical work.\n\n### Does autoinducer production reduce individual growth rate?\n\nIn our quorum-sensing model, it is assumed that the individual's production degree of autoinducers is negatively correlated with its growth rate ($\u03d5_{i}=1\u2212sp_{i}$). Is this assumption of growth impairment for producing phenotypes justified (Parsek and Greenberg, 2005)? This would be the case if cellular production of autoinducers directly causes a reduction of the cell's growth rate. For example, in L. monocytogenes populations, heterogeneous production was observed for an autoinducer oligopeptide that is synthesized via the agr operon (Garmyn et al., 2011, Garmyn et al., 2009). This signaling oligopeptide incurs high metabolic costs through the generation of a larger pre-protein. For the oligopeptide signal synthesized via the agr operon in Staphylococcus aureus, the metabolic costs were conservatively estimated by Keller and Surette to be 184 ATP per molecule (metabolic costs for precursors were disregarded in this estimate); see Keller and Surette, 2006 for details. In contrast, basically no costs (0\u20131 ATP) incur for the different signaling molecule Autoinducer-2 (AI-2) that is considered as a metabolic by-product. As to what extent the production of oligopeptides for signaling reduces an individual's growth rate has, to our knowledge, not been studied quantitatively.\n\nFor quorum-sensing systems that involve $N$-acyl homoserine lactones (AHLs) as signaling molecules, however, a reduced fitness of producers has been reported for microbial growth in batch culture (Ruparell et al., 2016; Diggle et al., 2007; He et al., 2003). Even though metabolic costs for the synthesis of C$_{4}$-HSL (one of the simplest AHL signaling molecules that is synthesized via the rhl operon) were conservatively estimated with only 8 ATP per molecule (Keller and Surette, 2006), a growth impairment was experimentally reported only recently for a C$_{4}$-HSL-producing strain (Ruparell et al., 2016). Furthermore, a strain producing a long-chain AHL (OC$_{12}$-HSL, synthesized via the las operon) showed a reduced fitness in both mono and mixed culture compared with a non-producing strain. The reduced fitness of AHL-producers was attributed to (i) metabolic costs of autoinducer production, in particular also to metabolic costs of precursors that were disregarded in the estimates by Keller and Surette, 2006, and (ii) accumulation of toxic side products accompanying the synthesis of autoinducers (Ruparell et al., 2016). As another example, the strain Sinorhizobium fredii NGR234 synthesizes AHLs via both the ngr and the tra operon (Schmeisser et al., 2009), and it was shown that gene expression related to autoinducer production reduces the strain\u2019s growth rate in mono culture (He et al., 2003). On the other hand, a heterogeneous expression of the corresponding autoinducer synthase genes was observed during growth of NGR234 only recently (Grote et al., 2014). As to what extent the production of AHLs reduces fitness of NGR234 in mixed culture and, thus, whether the phenotypic heterogeneity observed in Grote et al., 2014 could be explained through the ecological feedback proposed by our quorum-sensing model, remains to be explored experimentally.\n\nIn the quorum-sensing model, even small growth rate differences between producer and non-producer, which are quantified by the ratio (growth rate of producer) / (growth rate of non-producer) $=1-s$, may give rise to a bimodal production of autoinducers in the population. Furthermore, it would be interesting to track the expression level of autoinducer synthase genes of a microbial strain during growth for which growth differences between the producing and the non-producing phenotype are known such as in the study of Ruparell et al., 2016. We emphasize that it would be desirable to report the full distribution of expression levels in the population in order to detect whether a population splits into several subpopulations; note that variance or percentiles are not suitable measures to characterize and compare the bimodality of distributions. A bimodal expression of autoinducer synthase genes in the population together with a tightly controlled average expression level could be a signature of the feedback between ecological and population dynamics underlying the observation of phenotypic heterogeneity as suggested by our results.\n\n### A question of spatio-temporal scales: How stable and how dispersed are autoinducers in the environment?\n\nAutoinducers are secreted into the environment where they get dispersed and are degraded. For simplicity and to facilitate our mathematical analysis, we assumed in the quorum-sensing model that individuals respond to the current average production level of autoinducers in the whole population. Temporal availability and spatial dispersal of autoinducers determine whether this assumption is valid or not. On the one hand, temporal availability of autoinducers in the environment for signaling depends on many factors. For example, pH and temperature influence the stability of autoinducers (Yates et al., 2002; Byers et al., 2002; Decho et al., 2009; Grandcl\u00e9ment et al., 2016; Hmelo, 2017). Biochemical mechanisms that inhibit or disrupt the functioning of signaling molecules (commonly referred to as 'quorum quenching') further determine the time scales at which autoinducers are degraded in the environment (LaSarre and Federle, 2013; Grandcl\u00e9ment et al., 2016; Hmelo, 2017). On the other hand, spatial dispersal of autoinducers in the population depends, for example, upon cellular mechanisms that import and export autoinducers into the cell from the environment and vice versa, and upon the spatial structure of the microbial population (Platt and Fuqua, 2010; Hense and Schuster, 2015). The degree of dispersal determines whether autoinducers remain spatially privatized to a single cell, diffuse to neighboring cells, or are spread evenly between all cells of the population. Consequently, the spatio-temporal organization of the microbial population determines as to what extent microbes sense rather the current average production level or a time-integrated production of autoinducers, and to what extent they sense rather the global or a local average production level. Our quorum-sensing model assumes that autoinducers are uniformly degraded in a well-mixed environment. These assumptions do not hold true for a spatially structured microbial biofilm, but should be fulfilled during the stationary phase of microbial growth in a well-mixed batch culture (Yates et al., 2002; Byers et al., 2002).\n\n### How is production of autoinducers up-regulated at the single-cell level?\n\n#### Monostable or bistable up-regulation of autoinducer synthesis at the single-cell level\n\nOur theoretical results also relate to the question of how cells regulate the production of autoinducers upon sensing the level of autoinducers in the environment. In this work, we showed that positive feedback loops and, thus, up-regulation of cellular autoinducer production may give rise to phenotypic heterogeneity. Positive feedback loops are mathematically introduced in our model as a stable fixed point at the producing phenotype of the response function (up-regulation to the stable \u2018on'\u00a0state at $p=1$; see Figure 1B). Such a positive feedback is not present in all autoinducer synthase systems, but was reported for the strains L. monocytogenes and S. fredii NGR234 (Waters and Bassler, 2005; Garmyn et al., 2009; He et al., 2003; Gonz\u00e1lez and Marketon, 2003) that showed a heterogeneous synthesis of autoinducers at the population level (Garmyn et al., 2011; Grote et al., 2014). From an experimental point of view it is often not known, however, whether autoinducer synthesis is up-regulated for all autoinducer levels or only above a threshold level. Up-regulation at all production levels in the population corresponds to a monostable response function with an unstable fixed point at the \u2018off' state at $p=0$, whereas up-regulation only above a threshold level corresponds to a bistable response function with a stable fixed point at the \u2018off' state at $p=0$ and an additional unstable fixed point at the threshold value (see Figure 1B). Most models of quorum-sensing microbial populations explicitly or implicitly assume a bistable gene regulation for positive feedback loops without experimental verification; see (Hense and Schuster, 2015) for further discussion. Why might it be relevant to distinguish between bistable (for example, a Hill function with Hill coefficient $>1$) and monostable (for example, a Hill function with Hill coefficient $\\leq1$) regulation of autoinducer synthesis \u2013 apart from the insight on how regulation proceeds at the molecular level? As the results of our quorum-sensing model show, the qualitative form of the regulation could discriminate between different mechanisms that control phenotypic heterogeneity of the autoinducer production at the population level as we describe in the following.\n\n#### Heterogeneity through stochastic gene expression only for bistable gene regulation\n\nIn recent years, a deeper mechanistic understanding of phenotypic heterogeneity has been achieved by exploring how the presence of different phenotypes in a population of genetically identical cells depends upon molecular mechanisms and stochasticity at the cellular level (Ackermann, 2015). For example, a bistable gene regulation function enables cells to switch between an \u2018on\u2019 and an \u2018off\u2019 state with respect to the expression of a certain gene or operon. Depending on environmental cues, cells are either in the stable \u2018on\u2019 or in the stable \u2018off\u2019 state. A noisy expression at intermediate concentrations of an environmental cue may then cause some cells to be in the \u2018on\u2019 state while others are still in the \u2018off\u2019 state. Thus, stochastic gene expression explains the coexistence of different phenotypic states in one population in many experimental situations (Novick and Weiner, 1957; Ozbudak et al., 2004; Kaern et al., 2005; Dubnau and Losick, 2006; Smits et al., 2006; Raj and van Oudenaarden, 2008; Eldar and Elowitz, 2010). In the context of quorum sensing, the level of autoinducers in the population is the environmental cue that triggers the stochastic switch between \u2018on\u2019 and \u2018off\u2019 state explaining heterogeneous autoinducer production when the response function is bistable (Fujimoto and Sawai, 2013; P\u00e9rez-Vel\u00e1zquez et al., 2016; Goryachev et al., 2005; Dockery and Keener, 2001). In other words, bistable regulation together with stochastic gene expression can explain a bimodal autoinducer synthesis in the population. If, however, regulation of autoinducer synthesis is monostable, an explanation of phenotypic heterogeneity in the autoinducer production in terms of stochastic gene expression appears questionable to us.\n\n#### Heterogeneity through an ecological feedback for monostable and for bistable gene regulation\n\nThe analysis of our quorum-sensing model suggests that an alternative mechanism could explain a heterogeneous production of autoinducers in quorum-sensing microbial populations. Our results show that phenotypic heterogeneity may also arise dynamically as a collective phenomenon for monostable regulation of autoinducer production when quorum sensing creates an ecological feedback by coupling ecological with population dynamics. Cells need to up-regulate their expression with respect to the sensed production level in the population. A threshold-like, bistable response function does not need to be assumed in the quorum-sensing model, but would work as well, to establish a bimodal production of autoinducers in the population.\n\nTherefore, if phenotypic heterogeneity of autoinducer synthesis is observed in a microbial population and if cellular growth rate is correlated with the cell's production degree of autoinducers, then it would be worth testing experimentally whether regulation of autoinducer synthesis is monostable or bistable. Monostable regulation would be an indicator that heterogeneity on the population level is not caused by stochastic gene expression, but actually is caused by a different mechanism such as the ecological feedback proposed here.\n\n#### On which timescales do microbes respond to autoinducers in the environment?\n\nFurthermore, in our implementation of the quorum-sensing model, individuals respond to the environment with response probability $\\lambda$ upon reproduction. The rule that offspring individuals can only respond at reproduction events represents a coarse-grained view in time to facilitate the mathematical analysis and to identify the ecological feedback. The response probability can actually be interpreted as the rate with which individuals respond to autoinducers in the environment. This cellular response rate is then effectively measured in units of the cell's reproduction rate ($\u03d5_{i}$) in the quorum-sensing model. Phenotypic heterogeneity of autoinducer production arises in the quorum-sensing model if the time scale at which cells respond to autoinducers in the environment is of similar order as or larger than the time scale at which growth rate differences affect the population dynamics. This can be inferred from the prefactors of the sense-and-response term and the replicator term in the autoinducer equation (1): Effective changes of the distribution of autoinducer production in the population occur (i) through cellular response to autoinducers in the environment at rate $\u223c2\u2062\\lambda$ and (ii) through growth rate differences at rate $\u223cs$. Both contributions need to balance each other such that a bimodal production in the population is established (quantified in our model by the ratio $\\beta=2\\lambda/s$; see also Box 1 for an illustration). This balance is robust against several kinds of perturbations and noise as discussed above; see Appendix 1\u2014figures 1 and 2. To understand how bacteria respond to changes of autoinducer levels in the environment and to quantify response rates, experiments at the single-cell level seem most promising to us at present.\n\n### Single-cell experiments\n\nSome of the questions raised above may be addressed most effectively with single-cell experiments. For example, it would be desirable to simultaneously monitor, at the single-cell level, the correlations between autoinducer levels in the environment, the expression of autoinducer synthase genes, and the transcriptional regulators that mediate response to quorum sensing. Upon adjusting the level of autoinducers in a controlled manner, for example in a microfluidic device, one could characterize how cells respond to autoinducers in the environment. This way, it might be possible to answer questions of (i) how the cellular production of autoinducers is regulated (monostable or bistable regulation, or a different form of regulation), (ii) whether response times to environmental changes are stochastic and whether response rates can be identified, (iii) as to what extent cellular response in the production of autoinducers depends on both the level of autoinducers in the environment and on the cell's present production degree, and (iv) how production of autoinducers is correlated with single-cell growth rate. In the context of the quorum-sensing model, the results of such single-cell experiments would help to identify the form of the fitness function $\u03d5$ and the response function $R$, to quantify the selection strength $s$ and response probability $\\lambda$, and to refine the model set-up.\n\nDifferent mechanisms at the cellular (microscopic) level may yield the same behavior at the population (macroscopic) level. Therefore, observations at the population level might not discriminate between different mechanisms at the cellular level. Is phenotypic heterogeneity in the production of autoinducers an example of such a case? In this work, we discussed that phenotypic heterogeneity in the autoinducer production could be the result of stochastic gene expression in bistable gene regulation or, as suggested by our model, the result of the feedback between ecological and population dynamics. We believe that the above-mentioned single-cell experiments could elucidate the mechanisms that allow for phenotypic heterogeneity in quorum-sensing microbial populations, and help to understand how population dynamics and ecological dynamics influence each other.\n\n### What is the function of phenotypic heterogeneity in autoinducer production?\n\nThe purpose of the quorum-sensing model presented here is to explain how phenotypic heterogeneity in the autoinducer production arises and how it is controlled in quorum-sensing microbial populations. With the current model set-up, however, we did not address its function. Why might this phenotypic heterogeneity in the autoinducer production be beneficial for a microbial species on long times? From an experimental point of view, the evolutionary contexts and ecological scenarios under which this phenotypic heterogeneity may have arisen are still under investigation (Garmyn et al., 2011; Grote et al., 2014, Grote et al., 2015). From a modeling perspective, one could extend, for example, our chosen fitness function with a term that explicitly accounts for the benefit of signaling either at the cellular or population level, and study suitable evolutionary contexts and possible ecological scenarios (Pollak et al., 2016; Dandekar et al., 2012; Cz\u00e1r\u00e1n and Hoekstra, 2009; Carnes et al., 2010; Hense and Schuster, 2015). Such theoretical models together with further experiments might help to clarify whether heterogeneous production of autoinducers can be regarded as a bet-hedging strategy of the population or rather serves the division of labor in the population (Ackermann, 2015).\n\n### Conclusion\n\nOverall, our analyses suggest that feedbacks between ecological and population dynamics through signaling might generate phenotypic heterogeneity in the production of signaling molecules itself, providing an alternative mechanism to stochastic gene expression in bistable gene-regulatory circuits. Spatio-temporal scales are important for the identified ecological feedback to be of relevance for microbial population dynamics: growth rate differences between producers and non-producers need to balance the rate at which cells respond to the environment, degradation of signaling molecules should be faster than time scales at which growth rate differences affect the population composition significantly, and signaling molecules should get dispersed in the whole population faster than they are degraded. In total, if microbes sense and respond to their self-shaped environment under these conditions, the population may not only respond as a homogeneous collective as is typically associated with quorum sensing, but may also become a robustly controlled heterogeneous collective. Further experimental and theoretical studies are needed to clarify the relevance of the different mechanisms that might control phenotypic heterogeneity, in particular for quorum-sensing microbial populations.\n\n## Materials and methods\n\n### Derivation of the autoinducer equation (1)\n\nThe microscopic dynamics are captured by a memoryless stochastic birth-death process (a continuous-time Markov process) as sketched in Figure 1. The state of the population $\ud835\udc29$ is updated by non-genetic inheritance and sense-and-response through quorum sensing such that at most two individuals $i$ and $j\\neqi$ change their production degree at one time. The temporal evolution of the corresponding joint $N$-particle probability distribution $P\u2062(\ud835\udc29,t)$ is governed by a master equation for the stochastic many-particle process (Gardiner, 2009; Van Kampen, 2007; Weber and Frey, 2017), whose explicit form is derived from Figure 1 and given in Appendix 2. This master equation tracks the correlated microscopic dynamics of the production degrees of all $N$ individuals. To make analytical progress, we focused on the reduced one-particle probability distribution $\u03c1^{(1)}(p,t)=1/N\u27e8\\sumi\\delta(p\u2212p_{i})\u27e9_{P}$ in the spirit of a kinetic theory (Kadar, 2007) starting from the microscopic stochastic dynamics. $\u03c1^{(1)}$ denotes the probability distribution of finding any individual at a specified production degree $p$ at time $t$; the numerically obtained histogram of $\u03c1^{(1)}$ was plotted in Figure 2. The temporal evolution of $\u03c1^{(1)}$ is derived from the master equation, and couples to the reduced two-particle probability distribution and to the full probability distribution $P$ through quorum sensing. By assuming that correlations are negligible, one may approximate $\u03c1^{(1)}$ by the mean-field distribution $\u03c1$, which we refer to as the production distribution. The mean-field equation (1) for $\u03c1$ is derived in Appendix 2 and referred to as the autoinducer equation. Note that Equation (1) conserves normalization of $\u03c1$, that is, $\\int_{0}^{1}dp\u00a0\u2202_{t}\u03c1(p,t)=0$.\n\nWe also proved that $\u03c1^{(1)}$ converges in probability to $\u03c1$ as $N\u2192\u221e$ for any finite time if initial correlations are not too strong. In other words, the autoinducer equation (1) captures exactly the collective dynamics of the stochastic many-particle process for large $N$. To show this convergence, we introduced the bounded Lipschitz distance $d$ between $\u03c1$ and $\u03c1^{(1)}$, applied Gr\u00f6nwall\u2019s inequality to the temporal evolution of $d$, and used the law of large numbers; see (Frey et al., 2017) for details. Similar distance measures and estimates have been used, for example, to prove that the Vlasov equation governs the macroscopic dynamics of the above-mentioned classical XY spin model with infinite range interactions (Braun and Hepp, 1977; Dobrushin, 1979; Spohn, 1991; Yamaguchi et al., 2004).\n\n### Analysis of homogeneous stationary distributions of the autoinducer equation (1)\n\nWithout quorum sensing ($\\lambda=0$), one finds the analytical solution for $\u03c1$ by applying the method of characteristics to Equation (1) in the space of moment and cumulant generating functions as: $\u03c1\u2062(p,t)=\u03c1_{0}\u2062(p)\u2062e^{-s\u2062t\u2062p}/\\int_{0}^{1}d\u2062p\u2062e^{-s\u2062t\u2062p}\u2062\u03c1_{0}\u2062(p)$; see Appendix 3 for details. Thus, the initially lowest production degree in the population, $p_{low}$, constitutes the homogeneous stationary distribution $\u03c1_{\u221e}(p)=\\delta(p\u2212p_{low})$, which is attractive for generic initial conditions. Only $\\delta$-peaks at production degrees greater than $p_{low}$ are stationary as well, but they are neither attractive nor stable. The temporal approach to the homogeneous stationary distribution is algebraically slow for continuous initial distributions $\u03c1_{0}$, and exponentially fast if $p_{low}$ is separated from all greater degrees by a gap in production space; see Appendix 3 and Figure 2D.\n\nWith quorum sensing ($\\lambda>0$), fixed points of the response function $p^{*}=R\u2062(p^{*})$ yield homogeneous stationary distributions of the autoinducer equation (1) as $\u03c1_{\u221e}\u2062(p)=\\delta\u2062(p-p^{*})$. In particular, stable fixed points of the response function ($R^{\u2032}(p^{\u2217})<1$) constitute homogeneous stationary distributions that are stable up to linear order in perturbations around stationarity. For $\\lambda>s/2$, these distributions are also attractors of the mean-field dynamics (1) for all initial distributions; see Appendix 3. The temporal approach towards homogeneous stationary distributions with quorum sensing is generically exponentially fast (Figure 2E). This exponentially fast approach is illustrated for the special case of a linear response function and $\\lambda=1/2$, for which one finds the analytical solution as: $\u03c1\u2062(p,t)=y\u2062(t)\u2062\u03c1_{0}\u2062(p)+(1-y\u2062(t))\u2062\\delta\u2062(p-p\u00af_{0})$ with $y\u2062(t)=e^{-\u03d5\u00af_{0}\u2062t}$. However, time scales at which stationarity is approached may diverge at bifurcations of the response function. Such can be seen, for example, if one chooses a supercritical pitchfork bifurcation of a polynomial response function and $\\lambda=1/2$; see Appendix 1\u2014figure 3 and Appendix 3.\n\n### Phase transitions from heterogeneity to homogeneity in the autoinducer equation (1)\n\nHere we discuss how the long-time behavior of the quorum-sensing model changes from heterogeneous to homogeneous populations as the response probability $\\lambda$ vanishes or reaches the upper threshold $\\lambda_{up}$ while the selection strength $s$ is kept fixed. For small response probabilities, $0<\\lambda<\\lambda_{up}$, the heterogeneous stationary distributions of the autoinducer equation (1) explain the long-lived, heterogeneous states of the stochastic quorum-sensing process. The coexisting $\\delta$-peaks at the low-producing and high-producing degree in the heterogeneous stationary distribution are separated by a gap in production space, which gives rise to the non-vanishing variance $Var\u2062(p)_{\u221e}$ in the phase of heterogeneity (Figure 3C). As $\\lambda\u2192\\lambda_{up}$, the gap closes, $p_{high}\u2192R(p_{high})$, and $y\u21920$, such that a homogeneous stationary distribution with $Var\u2062(p)_{\u221e}=0$ is recovered in a continuous transition. This nonequilibrium phase transition from heterogeneity to homogeneity proceeds without any critical behavior. As $\\lambda\u21920$, and under the assumption that $0$ is an unstable fixed point of the response function ($R\u2062(0)=0$ and $1<R^{\u2032}(0)$; we further assume $R^{\u2032}(0)<\u221e$), the gap between the low-producing and the high-producing peak closes as well because $p_{high}\u21920$. However, $y$ does not approach $1$, but the value $1\u22121/R^{\u2032}(0)<1$. The probability weight at the low-producing mode jumps by the value $1/R^{\u2032}\u2062(0)$ and the homogeneous stationary distribution with $Var\u2062(p)_{\u221e}=0$ is recovered in a discontinuous transition. Therefore, a discontinuous phase transition in the space of stationary probability distributions governs the long-time dynamics of the autoinducer equation (1) from heterogeneity to homogeneity as the response probability $\\lambda$ vanishes (for fixed selection strength $s$).\n",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "a01605ec-597d-4b4f-9d7d-49d47e751df3",
+      "submission_id": "bce9630a-ae26-43a9-9f71-4edcbc2bde57",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Doebeli, University of British Columbia , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25773.016](https://doi.org/10.7554/eLife.25773.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Eco-evolutionary dynamics in quorum-sensing microbial populations can induce heterogeneous production of autoinducers\" for consideration by eLife. Your article has been favorably evaluated by Gisela Storz (Senior Editor) and three reviewers, one of whom, is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper presents a theoretical model for the emergence of phenotypic heterogeneity in autoinducer production, which is essential for quorum sensing in bacteria. The paper shows that a feedback between the total concentration of autoinducers and individual costly production of autoinducers is sufficient to generate heterogeneity in individual production.\n\nEssential revisions:\n\nThe reviewers found the paper very interesting and well written. However, they raised a number of concerns that preclude publication of the paper in its present form.\n\nNotably, some comments point to a lack of integration of the theoretical results with empirical reality. On the one hand, the paper should make more specific suggestions about how the proposed theory can be tested. On the other hand, and more importantly, the authors should consider incorporating more biological realism into their modelling. Reviewer 3 makes a number of useful suggestions in that regard. For example, this reviewer suggests incorporating heterogeneity in signal perception, an issue that was also commented on by reviewers 1 and 2. Further, it is unclear how decay of the signal concentration in the environment would affect the results. You will see that the reviewers have made a number of other suggestions about how to improve the paper.\n\nIf you find that you are able to address the concerns raised in the reviewer comments we would welcome a resubmission of your article. In the revision, please try to address all of the reviewers' comments in a constructive way. In particular, it would be good if you could extend the theoretical analysis to cover the salient comments.\n\nReviewer #1:\n\nThis is an interesting paper showing how the emergence of phenotypic heterogeneity in autoinducer production can, in principle, be understood as an emergent collective behaviour of quorum sensing in microbial ecosystems.\n\nThe model presented is simple and elegant, and results are supported by both numerical simulations and analytical derivations. The main result of long transients at heterogeneous states in the stochastic model is surprising, and the mean-field approximation serves the purpose of explaining this result very well.\n\nIn principle, the analytical work generates novel and testable predictions for autoinducer heterogeneity in quorum sensing (although the paper might benefit from being more specific in this regard).\n\n1) The phenotypic response defined by the response function R is assumed to be deterministic (as e.g. seen by the Delta function appearing in the autoinducer equation (Acar et al., 2008)). I think it is important to investigate what happens if the response is instead probabilistic, i.e., when the offspring phenotype is drawn probabilistically from some distribution with mean R(<p>) and positive variance.\n\n2) I don't agree with the paper's distinction between \"ecological\" and \"evolutionary\" dynamics. The authors call the feedback mechanism for autoinducer production \"ecological\", and they call differences in growth rates \"evolutionary\". However, there are no genetic differences between individuals, and hence no evolutionary dynamics occur. Instead, individuals simply have different birth rates, which is a purely ecological difference. Thus, both processes, fitness difference and global feedback, are clearly ecological in this model, and any claim that the former is \"evolutionary\" is misleading. The coupling is not between \"ecological\" and \"evolutionary\" dynamics, but between global production and individual birth rates.\n\nReviewer #2:\n\nThis manuscript shows how phenotypic heterogeneity in autoinducer (AI) production may arise in monostable autoregulation from the interplay between sensing and responding to the environment and fitness differences between producer and non-producer phenotypes. I really enjoyed the manuscript, and feel that this is an important contribution to the study of collective behavior in microbes, mainly because it provides an alternative mechanism to explain AI production phenotypic heterogeneity using \"bistable threshold models\". The paper is well-written and technically very rigorous. In my view, it would be acceptable for publication in eLife after some minor points are clarified.\n\nAccording to this model, phenotypic heterogeneity relies on (i) fitness differences between producers and non-producers linked to the metabolic cost associated with AI production, and (ii) AI production, p, is more likely to be inherited from the parental cell than obtained from the mean level of production, <p>, in the environment. I am wondering if, due to this fitness difference between producers and nonproducers the authors could devise any population level experimental procedure (in addition to the single cell experiments briefly discussed in the last paragraph of the Discussion) to check the existence of the proposed feedback. The authors envision this possibility, but I think that the paper would greatly improve by establishing tighter connections between theoretical results and their possible empirical confirmation. In my opinion, this would be an important point to reach the broad readership of eLife, although the theoretical results are of enough significance by their own.\n\nI have some doubts about the probabilistic mechanism by which newborn cells adopt. In my opinion, this is the most important ingredient of the model, because it allows for phenotypic heterogeneity, and I think that it would be good to discuss whether there is empirical support for such election (is the production level a trait maintained during the whole life cycle of the cell?) or whether that is a choice of the authors. In the latter case, it could be interesting to discuss other possible mechanisms and maybe outline the robustness of the results presented here against these alternatives.\n\nI think that the importance of the paper could be highlighted, especially for non-specialist readers, if the Introduction is slightly reorganized. As it is now, one may understand that there are experimental proofs of both bistable and monostable autoinducer synthesis regulation, and that the authors provide a mechanism that could explain phenotypic heterogeneity in the latter case. However, if I understood the Discussion correctly (second paragraph), bistable autoregulation has not been experimentally verified, but there are not empirical studies showing monostable autoregulation either. I think this point should appear earlier in the Introduction, accompanied by more references to existent models that utilize a bistable autoregulation (1,2). My feeling is that if there is not experimental verification of monostable regulation in AI synthesis, then this paper opens a much broader and deeper question because it not only provides a new mechanism by which phenotypic heterogeneity can emerge, but also suggests that AI synthesis regulation could be monostable. In either case, I think that this should be clarified.\n\n1) Goryachev AB, Toh DJ, Wee KB, Lee T, Zhang HB, et al. (2005) Transition to Quorum Sensing in an Agrobacterium Population: A Stochastic Model. PLOS Computational Biology 1(4): e37. doi: 10.1371/journal.pcbi.0010037\n\n2) Dockery, Jack D., and James P. Keener. \"A mathematical model for quorum sensing in Pseudomonas aeruginosa.\" Bulletin of mathematical biology 63.1 (2001): 95.\n\nReviewer #3:\n\nThe present study describes theoretical model to provide a possible explanation for the occurrence of phenotypic heterogeneity in quorum sensing. In general phenotypic heterogeneity is an interesting topic which spans from antibiotics persistence to bacterial competence. Resent study has shown that bacteria exhibit reversible heterogeneity in QS response even in the presence of saturating concentration of QS signal, which indicate that bacteria maintain a stochastic homogenous population as a bet-hedging strategy to counter fluctuating environmental conditions.\n\n1) The model has been thought in the lines of heterogeneous expression of QS synthase gene by epigenetic mechanism, however in QS, sensor plays an important role in the perception and auto regulation of the QS synthase as well as expression of other QS controlled genes. In this model however, the heterogeneity in terms of QS signal perception is not considered which could play an important role in the process.\n\n2) The model is based on the assumption that there appears to be little change in the extracellular signal concentration once it is produced or the intracellular conc. It has now been shown that signal degradation also takes place in some QS system such as in Pseudomonas syringae, in which bacteria secrete QS degrading enzymes (some are secreted and some are intracellular), which can also influence the heterogeneity in the population. However, it appears that in this model it could have been also considered while simulating the fluctuation along with the assumption of non-producers grows faster.\n\n3) It has been shown that in certain environmental condition, the QS nonproducers has a growth advantage as they take benefit of the social task performed by the responders and also save on signal production cost. However, it has also has been shown in case of Pseudomonas that QS- strains has a big disadvantage under certain environmental condition where QS controlled \"private goods\" are required (Science. 2012 Oct 12;338(6104):264-6.). How will this affect the present model?\n\n4) How the stability of auto inducers in the system will influence the cellular response to fluctuating environment and phase transition to homogeneous response?\n\n5) A factor that could play a role in the QS heterogeneity response is the relative affinity of different QS signal with the receptor. In case the affinity is high, the local concentration of QS signal could be maintained for a prolong period and can affect the distribution. In this model, it is better to include the signal perception component also, as ultimately even for the stochastic expression of signal synthase, the signal perception and henceforth regulation of gene expression also contributes to the overall QS process.\n\n6) What happens when competition experiments are performed with signal blind and signal sensing mutants in this model? Does fluctuating the ratio of these variants also influence the heterogeneous distribution?\n",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fe93e1bf-218c-4049-b480-8831f01b397b",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C1",
+      "claim": "Autoinducers are small signaling molecules that mediate intercellular communication in microbial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoinducers are small signaling molecules that mediate intercellular communication in microbial populations and trigger coordinated gene expression via 'quorum sensing'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations throughout the manuscript to established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "2942bc4d-2a22-4b95-a47f-2fad8e69fb05",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C2",
+      "claim": "Autoinducers trigger coordinated gene expression via quorum sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Autoinducers are small signaling molecules that mediate intercellular communication in microbial populations and trigger coordinated gene expression via 'quorum sensing'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in microbiology supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "7e85b1b2-52ab-47c4-b7b3-635ff19116f9",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C3",
+      "claim": "Recent experiments have shown heterogeneous promoter activity of autoinducer synthase genes in isogenic cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments have shown a heterogeneous promoter activity of autoinducer synthase genes, suggesting that some of the isogenic cells in a population might produce autoinducers, whereas others might not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references experimental observations and is supported by citations to experimental studies (Garmyn et al., 2011; Grote et al., 2014; Anetzberger et al., 2012; Plener et al., 2015; C\u00e1rcamo-Oyarce et al., 2015; Grote et al., 2015) mentioned later in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "fbdfdce8-7356-4b0b-8a8d-91edf7d79f39",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C4",
+      "claim": "The mechanism underlying phenotypic heterogeneity in quorum-sensing microbial populations has remained elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanism underlying this phenotypic heterogeneity in quorum-sensing microbial populations has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, setting up the research question.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "225d51e8-0c7c-4129-9e4e-6651cddd6de2",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C5",
+      "claim": "In the theoretical model, cells synthesize and secrete autoinducers into the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our theoretical model, cells synthesize and secrete autoinducers into the environment, up-regulate their production in this self-shaped environment, and non-producers replicate faster than producers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "a81b99a2-d140-499d-be0b-cc4f41d6d34f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C6",
+      "claim": "In the theoretical model, cells up-regulate autoinducer production in response to their self-shaped environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our theoretical model, cells synthesize and secrete autoinducers into the environment, up-regulate their production in this self-shaped environment, and non-producers replicate faster than producers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "28571dd4-c23a-48a0-9201-2ced2ac30c4d",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C7",
+      "claim": "In the theoretical model, non-producers replicate faster than producers.",
+      "claim_type": "EXPLICIT",
+      "source": "In our theoretical model, cells synthesize and secrete autoinducers into the environment, up-regulate their production in this self-shaped environment, and non-producers replicate faster than producers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the theoretical model regarding fitness differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "6dbeb733-38e4-4a20-be93-ce32dca2e313",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C8",
+      "claim": "The coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations, suggesting an alternative mechanism to stochastic gene expression in bistable gene regulatory circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the theoretical study, supported by mathematical analysis and simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "d6b6ecb7-7e33-4022-a228-e6a8b7a202b5",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C9",
+      "claim": "The proposed mechanism suggests an alternative to stochastic gene expression in bistable gene regulatory circuits for explaining phenotypic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations, suggesting an alternative mechanism to stochastic gene expression in bistable gene regulatory circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis comparing the proposed mechanism to existing explanations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "2abc14ee-6d1d-46c4-ac98-55ad44a5ea26",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C10",
+      "claim": "Quorum sensing regulates the transcription of virulence genes in Listeria monocytogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, quorum sensing regulates the transcription of virulence genes in the Gram-positive bacterium Listeria monocytogenes (Gray et al., 2006; Garmyn et al., 2011; da Silva and De Martinis, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "add37688-affd-461c-a07c-1459aa791011",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C11",
+      "claim": "Quorum sensing regulates the transcription of bioluminescence genes in Vibrio harveyi.",
+      "claim_type": "EXPLICIT",
+      "source": "and the transcription of bioluminescence genes in the Gram-negative bacterium Vibrio harveyi (Xavier and Bassler, 2003; Anetzberger et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "f5fc6c1c-4806-496a-a75d-21b74ac18f66",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C12",
+      "claim": "Quorum sensing may autoregulate the transcription of autoinducer synthase genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and it may also autoregulate the transcription of autoinducer synthase genes (Fuqua and Greenberg, 2002; Waters and Bassler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "20c641e6-9951-4673-bdf9-521e321463f5",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C13",
+      "claim": "When autoinducer concentration reaches a threshold value, coordinated and homogeneous expression of target genes may be initiated in all cells of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "When the concentration of autoinducers reaches a threshold value, a coordinated and homogeneous expression of target genes may be initiated in all cells of the population (Waters and Bassler, 2005; Hense and Schuster, 2015; Papenfort and Bassler, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to literature describing quorum sensing behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "3566f84f-f78f-48ca-9351-063fad2cb1c3",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C14",
+      "claim": "Heterogeneous gene expression in the population may be triggered at low autoinducer concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "or a heterogeneous gene expression in the population may be triggered at low concentrations (Anetzberger et al., 2009; Williams et al., 2008; Boedicker et al., 2009; Garmyn et al., 2011; P\u00e9rez and Hagen, 2010; Ackermann, 2015; Grote et al., 2014, Grote et al., 2015; Papenfort and Bassler, 2016; Pradhan and Chatterjee, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "dbd7a475-8cff-4873-b190-130952834ab7",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C15",
+      "claim": "The promoter activity of autoinducer synthase genes may vary between genetically identical cells within a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a given population, the promoter activity of autoinducer synthase genes may vary between genetically identical cells (Garmyn et al., 2011; Grote et al., 2014; Anetzberger et al., 2012; Plener et al., 2015; C\u00e1rcamo-Oyarce et al., 2015; Grote et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "c66c27c1-50ef-4382-b69b-d445558822e7",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C16",
+      "claim": "During growth of L. monocytogenes under well-mixed conditions, two subpopulations were observed: one expressing autoinducer synthase genes and one not expressing them.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, during the growth of L. monocytogenes under well-mixed conditions two subpopulations were observed, one of which expressed autoinducer synthase genes, while the other did not (Garmyn et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "303d6c7c-f7d5-4047-be05-7a460adb0ef4",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C17",
+      "claim": "Phenotypic heterogeneity in L. monocytogenes was associated with biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a phenotypic heterogeneity was associated with biofilm formation (Garmyn et al., 2011; da Silva and De Martinis, 2013; Hense and Schuster, 2015; C\u00e1rcamo-Oyarce et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies linking heterogeneity to biofilm formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "e40732ff-6e03-4c4c-8934-067a8eb25f24",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C18",
+      "claim": "The stable coexistence of different phenotypes in one population may serve division of labor or act as a bet-hedging strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable coexistence of different phenotypes in one population may serve the division of labor or act as a bet-hedging strategy and, thus, may be beneficial for the survival and resilience of a microbial species on long time scales (Ackermann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to literature on evolutionary strategies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "1a01c451-8921-4b8d-98ee-77e6407a7097",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C19",
+      "claim": "Expression of autoinducer synthase genes in L. monocytogenes is up-regulated through quorum-sensing in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, expression of the above mentioned autoinducer synthase genes in L. monocytogenes is up-regulated through quorum-sensing in single cells (Garmyn et al., 2011, Garmyn et al., 2009; Waters and Bassler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "7d01470e-7324-4d37-884e-2c7bc8ce27ec",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C20",
+      "claim": "It is often not known experimentally whether autoinducer synthesis is up-regulated for all autoinducer levels or only above a threshold level.",
+      "claim_type": "EXPLICIT",
+      "source": "From an experimental point of view it is often not known, however, whether autoinducer synthesis is up-regulated for all autoinducer levels or only above a threshold level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current experimental knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "7fc720eb-ce90-42ed-b663-7d0eece98a2e",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C21",
+      "claim": "Currently favored threshold models of quorum sensing typically assume a bistable gene regulation function to explain phenotypic heterogeneity of autoinducer production.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain phenotypic heterogeneity of autoinducer production, currently favored threshold models of quorum sensing typically assume a bistable gene regulation function (Fujimoto and Sawai, 2013; P\u00e9rez-Vel\u00e1zquez et al., 2016; Goryachev et al., 2005; Dockery and Keener, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "b8807288-7b8d-404a-bb08-e782a377fb50",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C22",
+      "claim": "For bistable regulation, cellular autoinducer synthesis is up-regulated above a threshold value and down-regulated below the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "For bistable regulation, cellular autoinducer synthesis is up-regulated above a threshold value of the autoinducer concentration in the population, whereas it is down-regulated below the threshold ('all-or-none' expression); see Figure 1B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the characteristics of bistable regulation as illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "82ca6e5c-c021-4370-8543-ccf2a9928ee8",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C23",
+      "claim": "Stochastic gene expression at the cellular level explains the coexistence of different phenotypes in bistable regulation models.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic gene expression at the cellular level then explains the coexistence of different phenotypes in one population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism by which bistable models explain heterogeneity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "91571736-be73-414e-8dda-7b4d17e421da",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C24",
+      "claim": "The mechanism by which phenotypic heterogeneity can arise with monostable up-regulation has not been explained.",
+      "claim_type": "EXPLICIT",
+      "source": "If, however, cellular autoinducer synthesis is up-regulated for all autoinducer concentrations (monostable up-regulation), the mechanism by which phenotypic heterogeneity can arise and is controlled has not been explained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current understanding that the manuscript addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "d98c7d0c-5072-4afb-9242-423502d8859f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C26",
+      "claim": "In the model, fitness decreases with metabolic costs of autoinducer production.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that fitness decreases with incurring metabolic costs of induction and synthesis of autoinducers, and with other metabolic burdens in the cell's phenotypic state (Ruparell et al., 2016; Diggle et al., 2007; He et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assumption is supported by citations to experimental studies showing fitness costs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "d1fee0f9-6696-4d69-8890-cbe2287a3a20",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C28",
+      "claim": "The larger an individual's production, the smaller its reproduction rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the larger an individual's production, the smaller its reproduction rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the chosen fitness function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "aab0d07b-c5a5-439d-8430-d3c53c880a47",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C30",
+      "claim": "Qualitative results remain valid if only the average population size is constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitative results of our model remain valid if only the average population size is constant, which may be assumed, for example, for the stationary phase of microbial growth in batch culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the robustness of the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "b87de79d-ce8f-479e-83c0-7aff34bf794f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C36",
+      "claim": "The sense-and-response mechanism constitutes a source of innovation in the space of production degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "From a mathematical point of view, the introduced sense-and-response mechanism through quorum sensing constitutes a source of innovation in the space of production degrees because an individual may adopt a production degree that was not previously present in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical properties of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "e14f8073-47e1-4229-a159-1f9ccdb9cd84",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C38",
+      "claim": "The quorum-sensing model was numerically simulated using Gillespie's stochastic simulation algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The quorum-sensing model was numerically simulated by employing Gillespie's stochastic simulation algorithm (Gillespie, 1976, 1977) for a population size of N=104 individuals and an exemplary selection strength s=0.2, such that s\u2062N\u226b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used, with citations to the algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "7a9b8574-39d9-4c3f-87e2-ba5d860310a7",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C40",
+      "claim": "The approach to stationarity without sense-and-response is asymptotically algebraically slow for a quasi-continuous initial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach to stationarity is asymptotically algebraically slow for a quasi-continuous initial distribution of production degrees (D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in simulations and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "7f6d24ae-5ba2-4c1c-baa3-960793044af3",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C42",
+      "claim": "Approach to stationarity with sense-and-response is exponentially fast.",
+      "claim_type": "EXPLICIT",
+      "source": "Approach to stationarity is exponentially fast (E), but timescales may diverge at bifurcations of the response function (see Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in simulations shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "dcf82466-7f6a-48b8-a14e-8bf0817f6944",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C44",
+      "claim": "Heterogeneity may arise without bistable response.",
+      "claim_type": "EXPLICIT",
+      "source": "The same monostable response function was chosen as in (B). Therefore, heterogeneity may arise without bistable response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by using a monostable response function in simulations shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "6d459d13-74ed-4312-9605-d15062b0c63e",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C46",
+      "claim": "Bimodal, quasi-stationary states arise for a broad class of initial distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneous, quasi-stationary states arise for a broad class of initial distributions (see Appendix 1\u2014figure 1 and our mathematical analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through additional simulations and mathematical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "33ab6cef-6354-4eac-838e-84f05a715f02",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C47",
+      "claim": "Bimodal, quasi-stationary states also arise when noisy inheritance, noisy perception, and noisy response are included in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodal, quasi-stationary states also arise when noisy inheritance, noisy perception, and noisy response are included in the model set-up (see Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates robustness of the results through additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "529354d2-1073-4999-b6f7-769df0c653e2",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C48",
+      "claim": "Mean-field theory agrees with all observations from the stochastic simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean-field theory agrees with all observations (autoinducer equation (1)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison between theoretical predictions and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "582686b0-eb83-446f-80e0-2225a236f352",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C49",
+      "claim": "The time taken to reach a homogeneous absorbing state grows exponentially with population size N.",
+      "claim_type": "EXPLICIT",
+      "source": "The time taken to reach a homogeneous absorbing state grows exponentially with N (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in simulation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "9db4e730-503d-4f74-a3ce-27b15c3f94d9",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C50",
+      "claim": "Heterogeneous states are robust against demographic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, states of phenotypic heterogeneity are quasi-stationary and long-lived. These heterogeneous states arise for a broad class of response functions and initial distributions (Appendix 1\u2014figure 1), and they are robust against demographic noise that is always present in populations of finite size (Figure 3A); see our mathematical analysis below.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations and mathematical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "5a0403b2-fccb-457f-80d1-2e2ab3a74ef8",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C59",
+      "claim": "The heterogeneous stationary distributions are stable up to linear order in perturbations around stationarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix 3 we show that the heterogeneous stationary distributions (2) are stable up to linear order in perturbations around stationarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven through mathematical analysis in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "ee9385fc-3daa-41fd-9865-b7dd1c8bbb37",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C61",
+      "claim": "Metabolic costs for the oligopeptide signal synthesized via the agr operon in S. aureus were conservatively estimated at 184 ATP per molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "For the oligopeptide signal synthesized via the agr operon in Staphylococcus aureus, the metabolic costs were conservatively estimated by Keller and Surette to be 184 ATP per molecule (metabolic costs for precursors were disregarded in this estimate); see Keller and Surette, 2006 for details.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a published estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "835ef2c6-a55a-4b7c-a9d0-27d3ef8839b8",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C62",
+      "claim": "Basically no costs (0-1 ATP) incur for the signaling molecule Autoinducer-2 (AI-2).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, basically no costs (0\u20131 ATP) incur for the different signaling molecule Autoinducer-2 (AI-2) that is considered as a metabolic by-product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on knowledge from the cited source (Keller and Surette, 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "21817333-2e93-4bc2-b67a-8f258c903e05",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C67",
+      "claim": "The reduced fitness of AHL-producers was attributed to metabolic costs of autoinducer production and accumulation of toxic side products.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced fitness of AHL-producers was attributed to (i) metabolic costs of autoinducer production, in particular also to metabolic costs of precursors that were disregarded in the estimates by Keller and Surette, 2006, and (ii) accumulation of toxic side products accompanying the synthesis of autoinducers (Ruparell et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cited study's interpretation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "c3988104-bdb7-4cda-a053-cb765e32f46b",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C68",
+      "claim": "Gene expression related to autoinducer production reduces the growth rate of S. fredii NGR234 in mono culture.",
+      "claim_type": "EXPLICIT",
+      "source": "and it was shown that gene expression related to autoinducer production reduces the strain's growth rate in mono culture (He et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "ecfa612b-20cf-4155-b046-390f26b25366",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C69",
+      "claim": "A heterogeneous expression of autoinducer synthase genes was observed during growth of NGR234.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a heterogeneous expression of the corresponding autoinducer synthase genes was observed during growth of NGR234 only recently (Grote et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "312d1029-7717-40c7-a006-1a1e56a9a419",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C70",
+      "claim": "pH and temperature influence the stability of autoinducers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, pH and temperature influence the stability of autoinducers (Yates et al., 2002; Byers et al., 2002; Decho et al., 2009; Grandcl\u00e9ment et al., 2016; Hmelo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on autoinducer stability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "0c2b64a5-77a6-4732-9199-bf6b17298479",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C71",
+      "claim": "Positive feedback loops are not present in all autoinducer synthase systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a positive feedback is not present in all autoinducer synthase systems, but was reported for the strains L. monocytogenes and S. fredii NGR234 (Waters and Bassler, 2005; Garmyn et al., 2009; He et al., 2003; Gonz\u00e1lez and Marketon, 2003) that showed a heterogeneous synthesis of autoinducers at the population level (Garmyn et al., 2011; Grote et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "84976ea2-7076-495a-95c7-29007c11b7ba",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C72",
+      "claim": "Most models of quorum-sensing microbial populations explicitly or implicitly assume a bistable gene regulation for positive feedback loops without experimental verification.",
+      "claim_type": "EXPLICIT",
+      "source": "Most models of quorum-sensing microbial populations explicitly or implicitly assume a bistable gene regulation for positive feedback loops without experimental verification; see (Hense and Schuster, 2015) for further discussion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the modeling literature, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "304b74b0-aa03-4b06-a043-0fdca5cd6660",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C73",
+      "claim": "Stochastic gene expression explains the coexistence of different phenotypic states in one population in many experimental situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, stochastic gene expression explains the coexistence of different phenotypic states in one population in many experimental situations (Novick and Weiner, 1957; Ozbudak et al., 2004; Kaern et al., 2005; Dubnau and Losick, 2006; Smits et al., 2006; Raj and van Oudenaarden, 2008; Eldar and Elowitz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "ff20e564-86cf-45fd-ae54-22451634624e",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C74",
+      "claim": "Bistable regulation together with stochastic gene expression can explain a bimodal autoinducer synthesis in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, bistable regulation together with stochastic gene expression can explain a bimodal autoinducer synthesis in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing explanatory mechanisms in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "0674333e-904e-4d74-b168-2d99316d97e9",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C75",
+      "claim": "If regulation of autoinducer synthesis is monostable, an explanation of phenotypic heterogeneity in terms of stochastic gene expression appears questionable.",
+      "claim_type": "EXPLICIT",
+      "source": "If, however, regulation of autoinducer synthesis is monostable, an explanation of phenotypic heterogeneity in the autoinducer production in terms of stochastic gene expression appears questionable to us.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the properties of monostable systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "c33b6c8c-6586-4f0d-b313-99e10335cf23",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C76",
+      "claim": "The model suggests that phenotypic heterogeneity may arise dynamically as a collective phenomenon for monostable regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that phenotypic heterogeneity may also arise dynamically as a collective phenomenon for monostable regulation of autoinducer production when quorum sensing creates an ecological feedback by coupling ecological with population dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "1bc3258f-b8d9-4643-91c6-8976a4e9cff4",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C77",
+      "claim": "Monostable regulation would be an indicator that heterogeneity is not caused by stochastic gene expression but by a different mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Monostable regulation would be an indicator that heterogeneity on the population level is not caused by stochastic gene expression, but actually is caused by a different mechanism such as the ecological feedback proposed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the theoretical results that could be tested experimentally.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "4cc86332-767c-4532-a5ac-4b93d584153f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C78",
+      "claim": "Phenotypic heterogeneity arises in the model if the time scale at which cells respond to autoinducers is of similar order as or larger than the time scale at which growth rate differences affect population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic heterogeneity of autoinducer production arises in the quorum-sensing model if the time scale at which cells respond to autoinducers in the environment is of similar order as or larger than the time scale at which growth rate differences affect the population dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analysis of the autoinducer equation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "976b47c9-ee2b-4db2-a9ae-c0fd5e581546",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C79",
+      "claim": "The balance between cellular response and growth rate differences is robust against several kinds of perturbations and noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance is robust against several kinds of perturbations and noise as discussed above; see Appendix 1\u2014figures 1 and 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through additional simulations shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "5a365154-5367-4922-be17-42781cfaa29f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C80",
+      "claim": "The model does not address the function or evolutionary benefit of phenotypic heterogeneity in autoinducer production.",
+      "claim_type": "EXPLICIT",
+      "source": "The purpose of the quorum-sensing model presented here is to explain how phenotypic heterogeneity in the autoinducer production arises and how it is controlled in quorum-sensing microbial populations. With the current model set-up, however, we did not address its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the scope and limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "5a727522-b23a-4c40-a248-cb9b6f2eec1c",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C81",
+      "claim": "Feedbacks between ecological and population dynamics through signaling might generate phenotypic heterogeneity in the production of signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our analyses suggest that feedbacks between ecological and population dynamics through signaling might generate phenotypic heterogeneity in the production of signaling molecules itself, providing an alternative mechanism to stochastic gene expression in bistable gene-regulatory circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on theoretical analysis and simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "36814ae2-d340-4b17-ae00-ea30c19af538",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C82",
+      "claim": "Growth rate differences between producers and non-producers need to balance the rate at which cells respond to the environment for the ecological feedback to be relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatio-temporal scales are important for the identified ecological feedback to be of relevance for microbial population dynamics: growth rate differences between producers and non-producers need to balance the rate at which cells respond to the environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a condition for the relevance of the proposed mechanism derived from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "72befd2f-e647-4f6e-a6c5-58b1dd46c968",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C83",
+      "claim": "Degradation of signaling molecules should be faster than time scales at which growth rate differences affect population composition significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "degradation of signaling molecules should be faster than time scales at which growth rate differences affect the population composition significantly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a condition for the relevance of the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "eb289858-5412-4bc7-94b9-e56985988559",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C84",
+      "claim": "Signaling molecules should get dispersed in the whole population faster than they are degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "and signaling molecules should get dispersed in the whole population faster than they are degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a condition for the relevance of the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "512f90fa-6fc7-47ea-bfb9-5297661a7990",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C85",
+      "claim": "The population may become a robustly controlled heterogeneous collective when microbes sense and respond to their self-shaped environment under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, if microbes sense and respond to their self-shaped environment under these conditions, the population may not only respond as a homogeneous collective as is typically associated with quorum sensing, but may also become a robustly controlled heterogeneous collective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the theoretical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "3a37dc2e-bab2-4d43-93f1-0300358e41eb",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "claim_id": "C92",
+      "claim": "The temporal approach towards homogeneous stationary distributions with quorum sensing is generically exponentially fast.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal approach towards homogeneous stationary distributions with quorum sensing is generically exponentially fast (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis and confirmed by simulations in Figure 2E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5155dc6a-c2cd-408a-867b-532075cd296f",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about quorum sensing, including that autoinducers mediate intercellular communication, trigger coordinated gene expression, and regulate various genes including virulence, bioluminescence, and autoinducer synthase genes themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C10-C14) represent well-established background knowledge in the quorum sensing field, supported by multiple citations to prior experimental work. They provide appropriate context for the study but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "ba0b32e2-4020-44a6-8e6b-415f9575091a",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior experimental studies have observed heterogeneous promoter activity of autoinducer synthase genes in isogenic populations, including in L. monocytogenes where two subpopulations were observed (one expressing and one not expressing), associated with biofilm formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C3, C15-C17) accurately summarize prior experimental observations from cited studies. The authors correctly attribute these findings to the appropriate sources and use them to motivate their theoretical investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "e8ae904b-3c5b-48a1-9172-f16c2e5ddcca",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mechanism underlying phenotypic heterogeneity in quorum-sensing populations has remained elusive, particularly for monostable up-regulation where it is often unknown whether synthesis is up-regulated at all autoinducer levels or only above a threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C4, C20, C24) appropriately identify a gap in current understanding that the manuscript addresses. The characterization of the knowledge gap is reasonable and well-supported by the discussion of existing literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Current threshold models typically assume bistable gene regulation to explain phenotypic heterogeneity, where stochastic gene expression at the cellular level explains coexistence of 'on' and 'off' states in the population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C21-C23, C72-C74) accurately characterize the prevailing theoretical framework in the field, supported by appropriate citations. This establishes the context for the authors' alternative mechanism and is consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The theoretical model assumes cells synthesize and secrete autoinducers, up-regulate production in response to the environment, and that non-producers replicate faster than producers due to metabolic costs, with qualitative results remaining valid if only average population size is constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C5-C7, C26, C28, C30, C36) clearly describe the model assumptions. The fitness cost assumption is supported by citations to experimental studies (C26). The mathematical properties are appropriately characterized. These are reasonable simplifying assumptions for a theoretical model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "97100fe8-a576-4127-af6c-ca0ed0fc7453",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Numerical simulations using Gillespie's algorithm demonstrate that without quorum sensing, approach to stationarity is algebraically slow, with quorum sensing it is exponentially fast, and heterogeneity can arise with monostable response functions. Heterogeneous states are long-lived (time to absorption grows exponentially with N), arise for broad classes of initial distributions, and are robust to various forms of noise. Mean-field theory agrees with simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These simulation results (C38, C40, C42, C44, C46-C50, C92) are well-documented in Figures 2 and 3 with appropriate statistical analysis. The agreement between stochastic simulations and mean-field theory is demonstrated. The robustness checks (noise, initial conditions) strengthen the findings. The exponential scaling with N is clearly shown in Figure 3A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "d908eee1-6447-4080-9d71-5c31ee41b4e4",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The coupling between ecological and population dynamics through quorum sensing can induce phenotypic heterogeneity in microbial populations, suggesting an alternative mechanism to stochastic gene expression in bistable gene regulatory circuits, where heterogeneity arises dynamically as a collective phenomenon for monostable regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central theoretical finding (C8, C9, C76, C81), supported by both mathematical analysis (Equation 1, Equation 2) and numerical simulations (Figures 2-3). The derivation of the autoinducer equation from microscopic dynamics is rigorous, and the stability analysis of heterogeneous stationary distributions is provided in Appendix 3. The mechanism is clearly distinct from existing bistable/stochastic gene expression models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "d641e975-e6ae-46dd-844e-8cf005656cb2",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The heterogeneous stationary distributions are stable up to linear order in perturbations around stationarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mathematical result (C59) is stated to be proven in Appendix 3. Linear stability analysis is a standard approach for analyzing stationary distributions. The claim is consistent with the observed robustness in simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "20c8b766-89ea-498b-8d12-082bdf5aa235",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phenotypic heterogeneity arises when the timescale of cellular response to autoinducers is similar to or larger than the timescale of growth rate differences affecting population dynamics. This balance is robust against perturbations and noise. For relevance, growth rate differences must balance response rates, degradation should be faster than population composition changes, and dispersal should be faster than degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These conditions (C78-C79, C82-C84) are derived from analysis of the autoinducer equation (the balance parameter \u03b2=2\u03bb/s). The robustness is demonstrated in Appendix figures. These represent important predictions about the spatiotemporal scales required for the mechanism to operate, though experimental validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Metabolic costs of autoinducer production vary widely: oligopeptides like those in S. aureus cost ~184 ATP per molecule, while AI-2 costs 0-1 ATP. Experimental studies have shown reduced fitness for AHL producers attributed to metabolic costs and toxic side products, and reduced growth rates for S. fredii NGR234 related to autoinducer production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C61-C62, C67-C69) accurately cite prior experimental work on metabolic costs and fitness effects. The authors appropriately use these to justify their model assumption of fitness costs, while acknowledging that quantitative relationships between production and growth rate remain incompletely characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "228c2275-8d0e-4d7c-b887-3cde62a72960",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Environmental factors like pH and temperature influence autoinducer stability, and positive feedback loops are not present in all autoinducer synthase systems but were reported for L. monocytogenes and S. fredii NGR234 that showed heterogeneous synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C70-C71) accurately summarize prior work on autoinducer stability and feedback regulation, supported by appropriate citations. They provide relevant biological context for the model assumptions and scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "1cd6eb07-5967-4128-9eea-7819b9d3c254",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "If regulation of autoinducer synthesis is monostable, an explanation of phenotypic heterogeneity in terms of stochastic gene expression appears questionable. Monostable regulation would indicate heterogeneity is caused by a different mechanism such as the ecological feedback proposed here.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C75, C77) represent logical inferences from the theoretical results, but the assertion that stochastic gene expression is 'questionable' for monostable systems may be too strong. The authors acknowledge this is speculative and requires experimental validation. The distinction between mechanisms may not be as clear-cut in real biological systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "650044f5-1940-4664-bca9-05c4932349bc",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model does not address the function or evolutionary benefit of phenotypic heterogeneity in autoinducer production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C80) is an explicit and appropriate statement of the study's scope and limitations. The authors clearly distinguish between explaining the mechanism of heterogeneity (their goal) and explaining its evolutionary function (not addressed).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "0266a530-6b9e-465c-a266-5a887579fc8a",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Under certain conditions, when microbes sense and respond to their self-shaped environment, the population may become a robustly controlled heterogeneous collective, not just a homogeneous collective as typically associated with quorum sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C85) appropriately summarizes the theoretical findings. It is supported by the mathematical analysis and simulations showing stable heterogeneous states. However, experimental validation in real microbial systems is needed to confirm biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "298c75f1-7945-4f83-8ed4-6de5dddec28c",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The stable coexistence of different phenotypes may serve division of labor or act as a bet-hedging strategy, potentially beneficial for survival and resilience on long timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C18) appropriately cites prior work on evolutionary strategies. It provides context for why heterogeneity might be important, though the authors acknowledge they do not address evolutionary function in their model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    },
+    {
+      "id": "cc614204-8fac-41d7-a7c4-99fd6234a80d",
+      "content_id": "bee0ed88-f016-429d-9e11-278684d84788",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Expression of autoinducer synthase genes in L. monocytogenes is up-regulated through quorum-sensing in single cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C19) accurately cites prior experimental work and is used to motivate the model's assumption of up-regulation through quorum sensing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:12:34.717437Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fe93e1bf-218c-4049-b480-8831f01b397b",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "2942bc4d-2a22-4b95-a47f-2fad8e69fb05",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "2abc14ee-6d1d-46c4-ac98-55ad44a5ea26",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "add37688-affd-461c-a07c-1459aa791011",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "f5fc6c1c-4806-496a-a75d-21b74ac18f66",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "20c641e6-9951-4673-bdf9-521e321463f5",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "3566f84f-f78f-48ca-9351-063fad2cb1c3",
+      "result_id": "5155dc6a-c2cd-408a-867b-532075cd296f"
+    },
+    {
+      "claim_id": "7e85b1b2-52ab-47c4-b7b3-635ff19116f9",
+      "result_id": "ba0b32e2-4020-44a6-8e6b-415f9575091a"
+    },
+    {
+      "claim_id": "dbd7a475-8cff-4873-b190-130952834ab7",
+      "result_id": "ba0b32e2-4020-44a6-8e6b-415f9575091a"
+    },
+    {
+      "claim_id": "c66c27c1-50ef-4382-b69b-d445558822e7",
+      "result_id": "ba0b32e2-4020-44a6-8e6b-415f9575091a"
+    },
+    {
+      "claim_id": "303d6c7c-f7d5-4047-be05-7a460adb0ef4",
+      "result_id": "ba0b32e2-4020-44a6-8e6b-415f9575091a"
+    },
+    {
+      "claim_id": "fbdfdce8-7356-4b0b-8a8d-91edf7d79f39",
+      "result_id": "e8ae904b-3c5b-48a1-9172-f16c2e5ddcca"
+    },
+    {
+      "claim_id": "7d01470e-7324-4d37-884e-2c7bc8ce27ec",
+      "result_id": "e8ae904b-3c5b-48a1-9172-f16c2e5ddcca"
+    },
+    {
+      "claim_id": "91571736-be73-414e-8dda-7b4d17e421da",
+      "result_id": "e8ae904b-3c5b-48a1-9172-f16c2e5ddcca"
+    },
+    {
+      "claim_id": "7fc720eb-ce90-42ed-b663-7d0eece98a2e",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "b8807288-7b8d-404a-bb08-e782a377fb50",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "82ca6e5c-c021-4370-8543-ccf2a9928ee8",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "84976ea2-7076-495a-95c7-29007c11b7ba",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "304b74b0-aa03-4b06-a043-0fdca5cd6660",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "ff20e564-86cf-45fd-ae54-22451634624e",
+      "result_id": "41b6ceda-2fe2-4a0b-a663-94e72b42a8e9"
+    },
+    {
+      "claim_id": "225d51e8-0c7c-4129-9e4e-6651cddd6de2",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "a81b99a2-d140-499d-be0b-cc4f41d6d34f",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "28571dd4-c23a-48a0-9201-2ced2ac30c4d",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "d98c7d0c-5072-4afb-9242-423502d8859f",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "d1fee0f9-6696-4d69-8890-cbe2287a3a20",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "aab0d07b-c5a5-439d-8430-d3c53c880a47",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "b87de79d-ce8f-479e-83c0-7aff34bf794f",
+      "result_id": "37c7b62b-4d36-4ba3-bb0b-322ac3eeeb31"
+    },
+    {
+      "claim_id": "e14f8073-47e1-4229-a159-1f9ccdb9cd84",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "7a9b8574-39d9-4c3f-87e2-ba5d860310a7",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "7f6d24ae-5ba2-4c1c-baa3-960793044af3",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "dcf82466-7f6a-48b8-a14e-8bf0817f6944",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "6d459d13-74ed-4312-9605-d15062b0c63e",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "33ab6cef-6354-4eac-838e-84f05a715f02",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "529354d2-1073-4999-b6f7-769df0c653e2",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "582686b0-eb83-446f-80e0-2225a236f352",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "9db4e730-503d-4f74-a3ce-27b15c3f94d9",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "3a37dc2e-bab2-4d43-93f1-0300358e41eb",
+      "result_id": "97100fe8-a576-4127-af6c-ca0ed0fc7453"
+    },
+    {
+      "claim_id": "6dbeb733-38e4-4a20-be93-ce32dca2e313",
+      "result_id": "d908eee1-6447-4080-9d71-5c31ee41b4e4"
+    },
+    {
+      "claim_id": "d6b6ecb7-7e33-4022-a228-e6a8b7a202b5",
+      "result_id": "d908eee1-6447-4080-9d71-5c31ee41b4e4"
+    },
+    {
+      "claim_id": "c33b6c8c-6586-4f0d-b313-99e10335cf23",
+      "result_id": "d908eee1-6447-4080-9d71-5c31ee41b4e4"
+    },
+    {
+      "claim_id": "5a727522-b23a-4c40-a248-cb9b6f2eec1c",
+      "result_id": "d908eee1-6447-4080-9d71-5c31ee41b4e4"
+    },
+    {
+      "claim_id": "5a0403b2-fccb-457f-80d1-2e2ab3a74ef8",
+      "result_id": "d641e975-e6ae-46dd-844e-8cf005656cb2"
+    },
+    {
+      "claim_id": "4cc86332-767c-4532-a5ac-4b93d584153f",
+      "result_id": "20c8b766-89ea-498b-8d12-082bdf5aa235"
+    },
+    {
+      "claim_id": "976b47c9-ee2b-4db2-a9ae-c0fd5e581546",
+      "result_id": "20c8b766-89ea-498b-8d12-082bdf5aa235"
+    },
+    {
+      "claim_id": "36814ae2-d340-4b17-ae00-ea30c19af538",
+      "result_id": "20c8b766-89ea-498b-8d12-082bdf5aa235"
+    },
+    {
+      "claim_id": "72befd2f-e647-4f6e-a6c5-58b1dd46c968",
+      "result_id": "20c8b766-89ea-498b-8d12-082bdf5aa235"
+    },
+    {
+      "claim_id": "eb289858-5412-4bc7-94b9-e56985988559",
+      "result_id": "20c8b766-89ea-498b-8d12-082bdf5aa235"
+    },
+    {
+      "claim_id": "ee9385fc-3daa-41fd-9865-b7dd1c8bbb37",
+      "result_id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0"
+    },
+    {
+      "claim_id": "835ef2c6-a55a-4b7c-a9d0-27d3ef8839b8",
+      "result_id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0"
+    },
+    {
+      "claim_id": "21817333-2e93-4bc2-b67a-8f258c903e05",
+      "result_id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0"
+    },
+    {
+      "claim_id": "c3988104-bdb7-4cda-a053-cb765e32f46b",
+      "result_id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0"
+    },
+    {
+      "claim_id": "ecfa612b-20cf-4155-b046-390f26b25366",
+      "result_id": "2683d5a6-943e-4e82-8ce4-30e1151cd9e0"
+    },
+    {
+      "claim_id": "312d1029-7717-40c7-a006-1a1e56a9a419",
+      "result_id": "228c2275-8d0e-4d7c-b887-3cde62a72960"
+    },
+    {
+      "claim_id": "0c2b64a5-77a6-4732-9199-bf6b17298479",
+      "result_id": "228c2275-8d0e-4d7c-b887-3cde62a72960"
+    },
+    {
+      "claim_id": "0674333e-904e-4d74-b168-2d99316d97e9",
+      "result_id": "1cd6eb07-5967-4128-9eea-7819b9d3c254"
+    },
+    {
+      "claim_id": "1bc3258f-b8d9-4643-91c6-8976a4e9cff4",
+      "result_id": "1cd6eb07-5967-4128-9eea-7819b9d3c254"
+    },
+    {
+      "claim_id": "5a365154-5367-4922-be17-42781cfaa29f",
+      "result_id": "650044f5-1940-4664-bca9-05c4932349bc"
+    },
+    {
+      "claim_id": "512f90fa-6fc7-47ea-bfb9-5297661a7990",
+      "result_id": "0266a530-6b9e-465c-a266-5a887579fc8a"
+    },
+    {
+      "claim_id": "e40732ff-6e03-4c4c-8934-067a8eb25f24",
+      "result_id": "298c75f1-7945-4f83-8ed4-6de5dddec28c"
+    },
+    {
+      "claim_id": "1a01c451-8921-4b8d-98ee-77e6407a7097",
+      "result_id": "cc614204-8fac-41d7-a7c4-99fd6234a80d"
+    }
+  ],
+  "comparisons": []
+}

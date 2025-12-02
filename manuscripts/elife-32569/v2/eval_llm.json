@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors successfully isolated and characterized clathrin-coated vesicles (CCVs) from mouse brain. Electron microscopy, immunoblotting, mass spectrometry, and cryo-EM analysis confirmed high purity of CCVs with intact clathrin coats, enrichment of synaptic vesicle and clathrin proteins, minimal contamination from other organelles, and structural dimensions consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 and C58-C60 collectively demonstrate rigorous characterization of isolated CCVs using multiple complementary techniques (EM, immunoblotting, mass spectrometry, cryo-EM). The structural measurements (C58-C60) are consistent with cited literature (C20-C21), and the purity assessment shows appropriate controls for contamination (C15-C16). The cryo-EM analysis of 43,711 particles (C19) provides robust structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CCVs exhibit dramatically reduced ATP-induced acidification compared to synaptic vesicles (SVs). Single-vesicle measurements of pH and membrane potential showed that the majority (~94%) of CCVs did not acidify upon ATP addition, with only a small subpopulation (~6%) showing acidification comparable to SVs, likely due to contamination or damaged coats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C22-C27 are well-supported by single-vesicle fluorescence measurements (Figure 2) using both pH-sensitive (spH) and potentiometric (VF2.1.Cl) probes. The two-Gaussian fitting analysis (C25) appropriately identifies the acidifying subpopulation, and the interpretation of this subpopulation as contamination/damaged coats (C26) is supported by EM data. The statistical analysis appears sound with appropriate controls for photobleaching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Both Vo and V1 vATPase complex subunits are present on CCVs in a complete assembled complex. Mass spectrometry and immunoblotting confirmed the presence of vATPase subunits on CCVs, with a Vo/V1 ratio close to 1:1, indicating intact vATPase complexes despite lower absolute levels due to coat protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by complementary mass spectrometry and immunoblotting data (Figure 3A-C). The Vo/V1 ratio analysis (C31-C32) provides quantitative evidence for complete vATPase complexes. The explanation for lower absolute levels (C30) is reasonable given the high abundance of coat proteins. However, the quantification method and normalization approach could be more explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "CCVs show significantly reduced vATPase-specific ATPase activity compared to SVs. The ATPase activity in CCVs was not blocked by the vATPase inhibitor NEM, indicating that the residual ATPase activity is not due to vATPase, and demonstrating that vATPases on CCVs are functionally impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by biochemical ATPase activity assays (Figure 3D-E) with appropriate controls including NEM inhibition. The logic is sound: if vATPase were active in CCVs, NEM should block the activity, but it does not (C34-C35), indicating the measured activity is from other ATPases. The conclusion that vATPases are impaired (C36-C37) follows logically from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Removal of the clathrin coat from CCVs restores full vATPase activity and acidification capacity. Multiple uncoating methods (alkaline Tris, neutral Tris, enzymatic with auxilin/Hsc70/Hsp110) all resulted in complete coat removal verified by EM and immunoblotting, and uncoated vesicles achieved the same pH and membrane potential as SVs, demonstrating reversible inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C38-C46 provide strong evidence through multiple independent uncoating approaches with consistent results. The use of three different uncoating methods (C38-C44) strengthens the conclusion. Controls with Tris-treated SVs (C42) rule out artifacts from the uncoating procedure. The EM and immunoblotting verification of coat removal (C38-C40) is rigorous. The conclusion of reversible inhibition (C45-C46) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54"
+    ],
+    "result": "The clathrin coat inhibits vATPase function on CCVs, preventing acidification during vesicle formation. This finding resolves a longstanding debate about CCV acidification and establishes that clathrin uncoating must occur before acidification and neurotransmitter refilling in the synaptic vesicle cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53, and C54 represent the central conclusion of the manuscript, synthesizing the experimental findings. The conclusion is well-supported by the convergent evidence from acidification measurements (C4, C22-C27), vATPase presence (C29-C32), impaired activity (C33-C37), and restoration upon uncoating (C5, C38-C46). The implications for the SV cycle (C54) follow logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose a steric hindrance model where clathrin coat assembly physically constrains the vATPase, particularly the regulatory V1H-subunit, blocking its activity. The model is based on structural analysis combining cryo-EM data with known vATPase and clathrin structures, and is consistent with published literature on vATPase regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C47-C52, C66-C67 present a mechanistic model that is explicitly described as hypothetical and speculative. While the model is consistent with structural constraints (C47-C49) and cited literature on V1H-subunit function (C51, C67), it remains a proposed mechanism without direct experimental validation. The model provides a plausible explanation but alternative mechanisms (e.g., allosteric regulation, protein-protein interactions) are not rigorously excluded. Direct structural or functional evidence for V1H-subunit displacement is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C57"
+    ],
+    "result": "The finding that CCVs do not acidify is consistent with previous observations in synapses with delayed uncoating and with studies of liver CCVs, suggesting a conserved mechanism across cell types and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C57 appropriately contextualize the findings within existing literature. The citations to previous studies showing delayed acidification kinetics in synapses with impaired uncoating (C28) and non-acidifying liver CCVs (C57) support the generalizability of the findings. These claims strengthen the overall narrative by demonstrating consistency with prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The model suggests that even partial clathrin coat formation around vATPase may be sufficient to block its activity, which could serve as an ATP conservation mechanism at the synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 are explicitly speculative extrapolations from the proposed model. While the hypothesis is interesting and potentially testable, no experimental evidence is provided for partial coat effects on vATPase activity. The ATP conservation hypothesis (C56) is plausible but remains unvalidated. These claims represent interesting future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background claims establishing the known biology of synaptic vesicles, vATPases, clathrin-mediated endocytosis, and vATPase regulation, including the dual function of the V1H-subunit and conflicting prior literature on CCV acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C12, and C61-C65 represent established knowledge appropriately cited from the literature. These background claims provide necessary context for the experimental work. The citations appear appropriate and the knowledge claims are consistent with the field's understanding. The acknowledgment of conflicting prior literature (C11-C12) appropriately frames the research question.",
+    "result_type": "MINOR"
+  }
+]

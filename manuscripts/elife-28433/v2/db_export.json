@@ -1,0 +1,2059 @@
+{
+  "submission": {
+    "id": "a5c8075f-d9b1-4af5-aa58-d59aee5063c8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:40:46.915021Z",
+    "updated_at": "2025-12-01T19:40:46.915021Z"
+  },
+  "content": [
+    {
+      "id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "submission_id": "a5c8075f-d9b1-4af5-aa58-d59aee5063c8",
+      "content_type": "manuscript",
+      "content_text": "# Direct measurement of conformational strain energy in protofilaments curling outward from disassembling microtubule tips\n\n## Authors\n\n- Jonathan W Driver<sup>1</sup>\n- Elisabeth A Geyer<sup>2</sup>\n- Megan E Bailey<sup>1</sup>\n- Luke M Rice<sup>2</sup> \u2020\n- Charles L Asbury<sup>1</sup> ([ORCID: 0000-0002-0143-5394](https://orcid.org/0000-0002-0143-5394)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics University of Washington Seattle United States\n2. Department of Biophysics UT Southwestern Medical Center Dallas United States\n3. Department of Biochemistry UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDisassembling microtubules can generate movement independently of motor enzymes, especially at kinetochores where they drive chromosome motility. A popular explanation is the \u2018conformational wave\u2019 model, in which protofilaments pull on the kinetochore as they curl outward from a disassembling tip. But whether protofilaments can work efficiently via this spring-like mechanism has been unclear. By modifying a previous assay to use recombinant tubulin and feedback-controlled laser trapping, we directly demonstrate the spring-like elasticity of curling protofilaments. Measuring their mechanical work output suggests they carry ~25% of the energy of GTP hydrolysis as bending strain, enabling them to drive movement with efficiency similar to conventional motors. Surprisingly, a \u03b2-tubulin mutant that dramatically slows disassembly has no effect on work output, indicating an uncoupling of disassembly speed from protofilament strain. These results show the wave mechanism can make a major contribution to kinetochore motility and establish a direct approach for measuring tubulin mechano-chemistry.\n\n## Introduction\n\nMicrotubules are protein polymers that grow and shorten by addition and loss of \u03b1\u03b2-tubulin subunits from their tips (reviewed in Desai and Mitchison, 1997). In addition to supporting cell structure and serving as tracks over which motor enzymes move, the filaments can act more directly to produce force and movement \u2013 that\u00a0is, to do mechanical work \u2013 independently of motor enzymes. Microtubule polymerization can generate pushing forces (Dogterom and Yurke, 1997; Janson et al., 2003) and depolymerization can generate pulling forces (Coue et al., 1991; Koshland et al., 1988; Lombillo et al., 1995). An important example of microtubule pulling occurs at kinetochores, where disassembling microtubule tips drive mitotic chromosome movements (Desai and Mitchison, 1997; Inou\u00e9 and Salmon, 1995; McIntosh et al., 2010). Similar depolymerization-driven pulling might occur at other cellular locations as well, for example at the cell cortex, where disassembling tips might generate pulling forces to position the spindle in the cell, (Laan et al., 2012; Nguyen-Ngoc et al., 2007; Carminati and Stearns, 1997; Kozlowski et al., 2007) or at spindle poles, where they might drive poleward microtubule flux (Waters et al., 1996). The mechanical work that a disassembling microtubule tip exerts on an isolated kinetochore, or on a collection of kinetochore subcomplexes, can be directly measured in vitro (Volkov et al., 2013; Akiyoshi et al., 2010). But the mechanism underlying this force production is unknown.\n\nTwo classes of models have been proposed to explain how disassembling microtubules produce force, conformational wave and biased diffusion (Koshland et al., 1988; Hill, 1985; Asbury et al., 2011). The central tenet of the conformational wave model is that individual rows of tubulin subunits, the protofilaments, pull on the kinetochore as they curl outward from a disassembling microtubule tip. Strain energy is trapped after GTP hydrolysis in the microtubule lattice, because intrinsically curved GDP-tubulin subunits are held in a straight (i.e., strained) configuration by their binding to neighboring subunits (Desai and Mitchison, 1997; Caplow and Shanks, 1996). This stored strain energy is released during tip disassembly, when the protofilaments curl outward from the tip and break apart, forming a conformational wave that propagates down the microtubule (Mandelkow et al., 1991; Nogales and Wang, 2006). Kinetochores are proposed to harness this wave to produce useful mechanical work. The central tenet of the alternative biased diffusion model is that the energy of interactions between a kinetochore and a microtubule creates a thermodynamic force that pulls the kinetochore toward the microtubule tip, analogous to the interfacial forces that draw fluid into a capillary (Hill, 1985; Asbury et al., 2011). These two models are not mutually exclusive and, in principle, a purely biased diffusion-based mechanism could operate independently of any spring-like action of the protofilaments.\n\nThe conformational wave mechanism, however, requires curling protofilaments to generate powerful \u2018working strokes\u2019. A seminal study by Grishchuk and co-workers used a laser trap assay to show that disassembling microtubule tips can exert brief pulses of force against an attached bead (Grishchuk et al., 2005). Their analysis suggested that the conformational wave might be capable of generating very high forces, up to\u00a0~50 pN, but the actual measured forces were much lower (<0.5 pN) and probably were restricted by interference of the attached beads with the short working strokes of the protofilaments. Displacement amplitudes were not reported. Because of these limitations, the energy carried by the curling protofilaments was not determined.\n\nFundamentally, the work output of the conformational wave mechanism must be limited by the amount of curvature strain energy carried by GDP-protofilaments, which dictates how forcefully they can curl outward from the tip. Convincing measurements of protofilament strain energy should therefore reveal how efficiently they can produce mechanical work via the wave mechanism. Moreover, protofilament strain is fundamental to all current models of microtubule dynamic instability, and it is generally thought to drive rapid disassembly (Desai and Mitchison, 1997; Nogales and Wang, 2006; VanBuren et al., 2005; Molodtsov et al., 2005). Thus, measuring the strain energy in curling protofilaments will also provide insight into the basic mechano-chemistry of tubulin.\n\nBased on the pioneering work of Grishchuk et al. (2005) we have developed a modified \u2018wave assay\u2019 that overcomes limitations inherent to their study. Interference from the attached bead was minimized by using recombinant tubulin with an engineered, flexible tether. By applying a feedback-controlled laser trap, nm-scale displacements were measured as functions of force, enabling direct observation of the spring-like elasticity of curling protofilaments and showing that they carry a substantial fraction of the energy of GTP hydrolysis in the form of curvature strain. To probe the relationship between strain energy and disassembly rate, we measured the wave energy of a slow-disassembling tubulin mutant. Surprisingly, a 7-fold decrease in disassembly rate had no effect on conformational wave energy, which reveals that the speed of disassembly can be uncoupled from curvature-derived protofilament strain. We present a simple model to explain how strain energy and disassembly speed can be uncoupled.\n\n## Results\n\n### Modified assay improves detection of conformational wave-driven movement\n\nThe prior laser trap study demonstrated for the first time that disassembling microtubule tips can exert brief pulses of force on microbeads attached to the filaments by strong inert linkers, such as biotin-avidin (Grishchuk et al., 2005). However, pulses were detected in fewer than half of the trials, pulse durations varied over 300-fold, and relaxation of the beads into the center of the trap was slower after the trials that failed to produce pulses. These observations suggest that the bead-microtubule attachments, which consisted of multiple biotin-avidin bonds (approximately 3 to 8), restricted outward curling of the protofilaments. Moreover, because a fixed trap was used without feedback control, pulse amplitudes were probably limited by the maximum distance over which the curling protofilaments could exert force (i.e., by their working stroke length), rather than by their total capacity for work output. These limitations made it difficult to quantitatively assess the force generating potential of the system. We therefore sought to improve the assay by developing a single molecule tethering scheme and by using a feedback-controlled trap.\n\nTo begin our modified wave assay, we grew dynamic microtubule extensions from coverslip-anchored seeds. The extensions were assembled from recombinant yeast \u03b1\u03b2-tubulin, with a His6 tag engineered onto the C-terminal tail of the \u03b2 subunit. Microbeads were tethered to the sides of individual, growing filaments via single anti-His antibodies, creating a strong yet flexible tether (~36 nm in length; see Materials and methods). A bead-microtubule assembly was held in the laser trap (Figure 1a\u00a0and\u00a0b) and feedback control was initiated to apply a constant tension, which reduced Brownian motion and facilitated detection of microtubule-driven movements. The distal microtubule plus end was then severed with laser scissors to induce disassembly (Franck et al., 2010). When the disassembling tip reached the bead, it generated a brief pulse, during which the bead first moved against the force of the laser trap, then relaxed back toward the trap center, and finally detached as the microtubule disassembled past the tether (Figure 1c-e). At low opposing force, a pulse was nearly always observed (90%, or 148 of 164 events recorded at <5 pN). The pulses were large, often >60 nm (Figure 1d and e), which is more than twice the width of the microtubules. These observations show that disassembling tips can generate pulses of movement more reliably than previously observed. The pulses were also fast, with average risetimes between 0.1 and 0.3 s (depending on the level of force; Figures 1d,e and 2a\u2013b), which is 5- to 10-fold faster than in the previous recordings. These observations suggest that our modified tethering scheme imposed less restriction on the outward curling of the protofilaments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig1-v2.jpg)\n\n**Figure 1.:** (a) A bead is tethered to the side of a microtubule via a single antibody bound to the C-terminal tail of \u03b2-tubulin and placed under tension using the laser trap. The trap is feedback-controlled to keep a fixed separation from the bead (\u0394x), thereby maintaining a constant level of tension. Microtubule disassembly is induced by cutting the tip with a second laser. (b) Video-enhanced differential interference contrast (VE-DIC) image of a 900 nm bead tethered to a single microtubule under laser trap tension (from Video 1). Approximate locations for the coverslip-anchored portion of the microtubule (white arrow), the laser trap center (red dashes), and the plus end tip (yellow chevron) are indicated. (c, d) Example record showing trap force (c) and bead displacement (d) versus time. Grey trace shows raw bead-trap separation after converting to force by multiplying by the trap stiffness. Black trace shows same data after smoothing with a 250 ms median filter. When the disassembling tip arrives at the bead, the bead initially moves against the trapping force and then releases as the microtubule disassembles out from underneath it. The pulse amplitude, a, and risetime, t, are indicated. (e) Gallery of additional example records, measured at the indicated levels of tension. Data in (c - e) were collected using 900 nm beads.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) Mean pulse risetime versus force (a) and distributions of risetime at indicated forces (b) for wild-type microtubules. The mean risetime across all forces is depicted by the dashed line in (a). (c, d) Mean pulse amplitude versus force (c) and distributions of amplitude at indicated forces (d) for pulses generated by wild-type yeast microtubules. Total pulse energy, W, is estimated from the area under the line-fit in (c), shaded grey. Error bars show standard errors (for N\u00a0=\u00a06 to 87 amplitudes; N\u00a0=\u00a03 to 78 risetimes). All data in (a - d) were collected using 900 nm beads.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a \u2013 f) Mean amplitudes versus force (a, c, e) and distributions of amplitude at indicated forces (b, d, f) for pulses generated by wild-type yeast microtubules, measured with 320 nm beads (a, b), with 440 nm beads (c, d), and with 900 nm beads (e, f). (g \u2013 l) Mean pulse risetimes versus force (g, i, k) and distributions of risetime at indicated forces (h, j, l) for wild-type microtubules measured with 320 nm beads (g, h), with 440 nm beads (i, j), and with 900 nm beads (k, l). Dashed lines in (a, c, and e) show fits used to estimate the stall forces, unloaded amplitudes, and total pulse energies (shaded gray areas), which are plotted against bead size in Figure 4a\u2013c. Horizontal dashed lines in (g, i, and k) show mean risetimes across all forces, which are plotted against bead size in Figure 4d and e. Error bars show standard errors (for N\u00a0=\u00a05 to 87 amplitudes; N\u00a0=\u00a03 to 78 risetimes).\n\n### Conformational waves can drive movement against large opposing loads\n\nOur modified wave assay enabled us to measure pulse properties as functions of force for the first time. Pulse amplitudes decreased as the force of the laser trap was increased (Figure 2c and d). This behavior demonstrates directly that curling protofilaments exhibit spring-like elasticity. Eventually a \u2018stall force\u2019 was reached, at which the pulses were completely suppressed (Figure 2c). Depending on bead size, the stall force ranged from 8 to 16 pN (Figure 2\u2014figure supplement 1), which is at least 16-fold higher than the maximal force measured in the previous study (<0.5 pN). The increased force production may be explained by our use of a force clamp, by our less restrictive tethering scheme, or by a combination of these two factors. It is also formally possible that the force generating capacity of microtubules grown from yeast tubulin (used here) is intrinsically higher than that of microtubules grown from bovine brain tubulin (used in the previous study). However, we consider this possibility unlikely because the shapes and lengths of curling protofilaments are very similar in yeast and vertebrate cells (McIntosh et al., 2013) and because, at the level of tubulin structure, the internal curvature of unpolymerized \u03b1\u03b2-tubulin (i.e., the rotation required to superimpose \u03b1- onto \u03b2-tubulin) is also very similar (Ayaz et al., 2014, 2012). In any case, our results show that protofilaments curling outward from a disassembling microtubule tip behave like springs and can generate forces much higher than previously recorded.\n\n### Mechanism of wave-driven movement: protofilaments push laterally, bead pivots about tether\n\nMeasurements of wave-driven bead movement can potentially be used to estimate the total capacity of the conformational wave for mechanical work output, provided the mechanism underlying movement in the assay is understood. Beads in our assay were linked to the microtubules through the flexible C-terminal tails of \u03b2-tubulin. Flexible tethering implies that when a microtubule-attached bead is placed under tension, the tether should become extended and the bead surface should initially rest against the microtubule wall at a secondary contact point (Figure 3a). Starting from this initial condition, we considered two scenarios for how the pulses of bead movement might be generated. In the \u2018lateral push\u2019 scenario, the curling protofilaments push laterally against the bead at the secondary contact point, causing the bead to pivot about the base of the tether (Figure 3b). The bead acts as a lever in this case, but because the fulcrum is located at the tether, away from where the curling protofilaments exert their force, the predicted leverage is only modest (~2 fold, depending on bead size and tether length). In the second scenario, \u2018axial pull\u2019, the microtubule first disassembles past the secondary contact point, allowing the bead to rotate under laser trap tension into an end-on configuration relative to the microtubule tip (Figure 3c). Then the working stroke occurs when curling protofilaments encounter the tether and pull axially on the bead (Figure 3d). There is no leverage in this case. The unamplified trapping force opposes protofilament curling directly.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig3-v2.jpg)\n\n**Figure 3.:** (a) Initially, when a bead is placed under tension it rests against the microtubule wall at a secondary contact point. (b) In the lateral push scenario, the curling protofilaments push laterally against the secondary contact point, causing the bead to pivot about the base of the tether. Lateral deflections from the protofilaments, h, produce larger axial displacements of the bead, a. If A is the tether point and B is the point of bead-microtubule contact and C is the bead center, then ABC defines a right triangle and the amount of leverage is given by the ratio of sides BC/AB. The predicted leverage for 900 nm diameter beads attached via 36 nm tethers is a\u00b7h\u22121=2.4. (c) In the axial pull scenario, the microtubule first disassembles past the secondary contact point, allowing the bead to rotate under laser trap tension into an end-on configuration relative to the microtubule tip. (d) Then the working stroke occurs when curling protofilaments encounter the tether and pull axially on the bead.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Such secondary pulses were seen in only 2% of all recorded events (18 of 760). These rare secondary pulses might be generated by axial pulling. However, the lack of any relaxation before the primary pulses indicates that these were not preceded by bead rotation into an end-on configuration, and thus were not generated by axial pulling.\n\nBecause of the relatively large bead radius, its rotation into an end-on configuration would produce an obvious relaxation toward the trap center, which in the axial pull scenario must precede the working stroke by\u00a0~200 ms (the time required for tip disassembly to propagate from the secondary contact point to the tether). However, we found that the bead position was nearly always stable prior to the pulses (Figure 1e), except in a very small fraction of trials (~2%, 18 of 760) during which the initial pulse, from a stable baseline, was followed by bead relaxation toward the trap center and then by a second pulse (Figure 3\u2014figure supplement 1). These rare secondary pulses might be generated by axial pulling. However, the lack of any relaxation before the primary pulses indicates that these were not preceded by rotation into an end-on configuration, and thus were not generated by axial pulling. Thus, it seems that the lateral push mechanism underlies bead movement in most cases.\n\nTo test more directly whether the lateral push model was operational, we examined how pulse amplitudes varied with laser trap tension and bead size. Altering bead size is predicted to have two consequences. First, larger beads should increase leverage and therefore decrease the amount of laser trap tension required to suppress the pulses. Consistent with this prediction, stall forces decreased from 16.2 \u00b1 3.0 pN to 8.4 \u00b1 0.9 pN as bead diameter was increased from 320 to 900 nm (Figure 4a). The second prediction, also a consequence of leverage, is that larger beads should produce larger pulse amplitudes when the opposing tension is low enough to allow unhindered movement. Indeed, the maximum pulse amplitudes, extrapolated to zero tension, increased from 45.2 \u00b1 3.6 nm to 64.3 \u00b1 3.6 nm as bead diameter was increased from 320 to 900 nm (Figure 4b). The relationships for stall force-vs-bead diameter and for unloaded amplitude-vs-bead diameter can be predicted quantitatively from simple geometric considerations, given estimates of the height that the curls project from the microtubule surface (~20 nm, based on electron micrographs of disassembling tips) (Mandelkow et al., 1991; McIntosh et al., 2013, 2008) and of the tether length (~36 nm; see Materials and methods). The predicted curves fit our data well, and they are relatively insensitive to the precise tether length (Figure 4a and b), suggesting that the lateral push model provides a good description of the underlying mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig4-v2.jpg)\n\n**Figure 4.:** (a) With increasing bead size, the leverage increases and therefore the trapping force required to completely suppress the pulses (i.e., the \u2018stall force\u2019) decreases. (b) Unloaded pulse amplitudes (i.e., amplitudes extrapolated to zero tension) increase with bead size, because the amplification ratio increases (see Figure 3b). Dotted curves in (a) and (b) show predictions assuming a tether length of 36 nm and a curl height, h\u00a0=\u00a020 nm. Gray shaded regions show predicted ranges for tether lengths ranging from 30 to 42 nm. (c) The total pulse energy, W, is independent of bead size. Horizontal dotted line in (c) shows global estimate of pulse energy, W\u00a0=\u00a0304\u00a0\u00b1\u00a024 pN\u00b7nm, from a weighted fit of the wild-type data across all bead sizes. (d, e) Mean pulse risetimes as a function of bead size. Wild-type data in (d) are replotted in (e) with an expanded scale for comparison to the mutant, T238V.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Given the 23\u00b0 curvature and 8 nm length of a tubulin dimer, a curl height of h\u00a0=\u00a020 nm implies that the curled segments are\u00a0~4 dimers in length. (b) A maximum of\u00a0~4 curls could push simultaneously against the bead. (c) Thus, the mechanical work output, W\u00a0=\u00a0304\u00a0\u00b1\u00a024 pN\u00b7nm (Figure 4c), may derive from outward curling of as many as 16 tubulin dimers and the wave carries at least 19 pN\u00b7nm of energy per dimer. (d) Table of estimates of the mechanical strain energy stored after GTP hydrolysis in the microtubule lattice. Our estimate is based on the total mechanical work output of curling protofilaments, measured directly in the conformational wave assay, as explained above and in the text. The previously published estimates were inferred from thermodynamic considerations, (Desai and Mitchison, 1997; Caplow and Shanks, 1996; Howard, 2001) from fitting of computational models to microtubule dynamic rate data, (VanBuren et al., 2005; Molodtsov et al., 2005) from molecular dynamics (MD) simulations, (Kononova et al., 2014) and from measurements of the flexural rigidity of whole microtubules (Mickey and Howard, 1995; Venier et al., 1994; Felgner et al., 1996; Pampaloni et al., 2006; Schaedel et al., 2015). * Values shown in red were taken directly from the indicated references and used to calculate the values shown in black using the following relations (which have been previously explained in detail; see Mickey and Howard, 1995 and VanBuren et al. 2005): Lattice strain W and protofilament flexural rigidity EIp were related by W = \u00bd\u00b7 EIp\u00b7d\u00b7R\u22122 where d\u00a0=\u00a08 nm represents dimer length and R\u00a0=\u00a020 nm represents the radius of curvature for a relaxed protofilament. (R\u00a0=\u00a020 nm corresponds to 23\u00b0 per dimer; Mandelkow et al., 1991). Microtubule and protofilament flexural rigidity, EImt and EIp respectively, were related by a factor of 2140, the ratio of their second moments (Mickey and Howard, 1995). Microtubule persistence length was defined as EImt divided by thermal energy, kBT\u00a0=\u00a04.1 pN\u00b7nm. \u2020 Estimates of stored lattice strain per tubulin dimer can be compared to the total free energy available from hydrolysis of GTP, which under typical cellular conditions is\u00a0~87 pN\u00b7nm (=21 kBT=13 kcal\u00b7mol\u22121;\u00a0Desai and Mitchison, 1997).\n\n### Conformational waves carry substantial amounts of strain energy\n\nMeasuring pulse amplitude as a function of trapping force enabled us to calculate the total mechanical work output of the assay, W, which is given by the area under the amplitude-vs-force curve (e.g., Figure 2c and Figure 2\u2014figure supplement 1). Whereas changes in bead size altered the amplitude-vs-force curve in predictable ways (as discussed above), the total work output was independent of bead size (Figure 4c). This invariance would not be expected if work output was limited by the attached bead, and therefore it suggests that W indeed measures the intrinsic strain energy carried by the curling protofilaments that pushed against the bead. Based on a global average across all three bead sizes, we estimate W\u00a0=\u00a0304\u00a0\u00b1\u00a024 pN\u00b7nm (Figure 4c), a value 74-fold greater than thermal energy (kBT). Assuming the lateral push model correctly describes the assay geometry, a maximum of 4 curls could push simultaneously against the beads (Figure 4\u2014figure supplement 1b). Given the 23\u00b0 curvature and 8 nm length of an individual tubulin dimer, (Mandelkow et al., 1991; Amos and Klug, 1974) the estimated curl height of h\u00a0=\u00a020 nm further suggests that the curled segments are\u00a0~4 dimers in length (Figure 4\u2014figure supplement 1a). Thus, the total work output, W, may derive from outward curling of as many as 16 tubulin dimers, implying that the wave carries at least 19 pN\u00b7nm of energy per dimer (4.7 kBT, or 2.7 kcal mole\u22121; Figure 4\u2014figure supplement 1c). These observations establish that the conformational wave carries considerable strain energy that can be harnessed to perform mechanical work, and they provide a direct estimate of the strain per tubulin subunit.\n\n### Disassembly speed can be uncoupled from curvature strain\n\nMechanical strain in the microtubule lattice is commonly assumed to drive the rapid disassembly of microtubules, (Desai and Mitchison, 1997; Nogales and Wang, 2006; VanBuren et al., 2005; Molodtsov et al., 2005) but it has not been possible to test directly for a relationship between lattice strain and disassembly speed. To determine whether curvature strain dictates the speed of microtubule disassembly, we used our assay to measure the wave energy for microtubules assembled from a slow-shortening mutant tubulin. A number of tubulin mutations that \u2018hyperstabilize\u2019 microtubules in vivo have been described, (Geyer et al., 2015; Gupta et al., 2002; Machin et al., 1995) and some have been shown to slow the disassembly of microtubules grown in vitro from purified mutant tubulin (Geyer et al., 2015; Gupta et al., 2002; Sage et al., 1995). We focused on a particular mutant in which threonine 238 of \u03b2-tubulin is replaced by valine (T238V; see Figure 5a) (Geyer et al., 2015). The mutated residue is buried inside \u03b2-tubulin, where it cannot directly perturb inter-subunit lattice contacts. T238V tubulin forms microtubules that disassemble 7-fold more slowly than wild-type (Figure 5\u2014figure supplement 1). If the rate of disassembly is determined by lattice strain, then the slow-disassembling mutant microtubules should store less conformational strain energy than their wild-type counterparts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig5-v2.jpg)\n\n**Figure 5.:** (a) Superposition of polymerized (\u2019straight\u2019, green) and unpolymerized (\u2019curved\u2019, blue) conformations of \u03b2-tubulin. Residue T238 is inaccessible to solvent and located on a helix (H7) that undergoes piston-like movement between the straight and curved conformations (which are represented by PDB entries 3JAT and 1SA0, respectively). GDP nucleotide is shown in red. (b, c) Example record showing trap force (b) and bead displacement (c) versus time for a mutant T238V microtubule. Grey trace shows raw bead-trap separation after converting to force by multiplying by the trap stiffness. Black trace shows same data after smoothing with a 250 ms median filter. The pulse amplitude, a, and risetime, t, are indicated. (d) Gallery of additional example records for mutant T238V microtubules, measured at the indicated levels of tension. Data in (b - d) were collected using 900 nm beads. Note the different time scales here in comparison to Figure 1c\u2013e.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Selected images from a movie of an individual yeast microtubule dissembling in vitro, recorded by video-enhanced differential interference contrast (VE-DIC) microscopy. The white arrow marks the coverslip-anchored seed. The yellow chevron marks the disassembling plus end. (b) Mean disassembly speeds measured in vitro for wild-type and mutant T238V microtubules (by VE-DIC). Error bars show standard deviations (for N\u00a0=\u00a016 to 24 microtubules). (c) Fluorescence images of individual wild-type and mutant T238V microtubules assembling in the presence of 50 nM Bim-GFP, which binds preferentially near the growing ends but also decorates the body of the microtubules at lower intensity. (d) Average Bim1-GFP fluorescence intensity versus distance from tip (for N\u00a0=\u00a09 microtubules of each type).\n\nContrary to this prediction, however, the conformational wave energy for T238V microtubules was indistinguishable from that of wild-type microtubules. T238V microtubules in the wave assay produced pulses that were\u00a0~5 fold slower than wild-type (Figures 4e, 5c,d and 6a), consistent with their slower disassembly speed. However, the wave amplitude-vs-force relation for T238V microtubules was essentially identical to that of wild-type (Figure 6c). Thus, even though they disassemble at very different rates, wild-type and T238V microtubules must store similar amounts of curvature-derived mechanical strain (Figure 4c). The similar amplitude-vs-force curves further suggest that the mutation does not substantially alter the intrinsic curvature, flexural rigidity, or contour length of protofilament curls, because all of these properties together determine pulse amplitude.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig6-v2.jpg)\n\n**Figure 6.:** (a) Mean pulse risetime versus force for mutant T238V microtubules. Wild-type data (from Figure 2a) is shown for comparison. The mean risetimes across all forces for T238V and wild-type microtubules are depicted by the dashed blue and red lines, respectively. Error bars show standard errors (for N\u00a0=\u00a06 to 25 amplitudes; N\u00a0=\u00a02 to 78 risetimes). (b) Distributions of risetime at indicated forces for wild-type and T238V microtubules. (c, d) Mean amplitude versus force (c) and distributions of amplitude at indicated forces (d) for pulses generated by mutant T238V microtubules. Wild-type data (from Figure 2c) is shown in (c) for comparison. Total pulse energy, W\u00a0=\u00a0280\u00a0\u00b1\u00a050 pN\u00b7nm, estimated from the grey-shaded area under the line-fit, is similar for both types of microtubules. All data in (a - d) were measured with 900 nm beads.\n\n### Energy landscape model for the curling reaction\n\nHow might the rate of microtubule disassembly be uncoupled from mechanical strain in the lattice? To begin addressing this question, we developed a simple model for the energy landscape of a single GDP-tubulin dimer curling outward from a disassembling tip (Figure 7). The mechanical strain energy carried by the dimer was modeled as a function of its bend angle by assuming it behaves as a slender elastic rod with a naturally bent shape, with 23\u00b0 of curvature when fully relaxed, (Mandelkow et al., 1991) and with\u00a0~5 kBT of strain at 0\u00b0 curvature. (Its flexural rigidity was chosen such that the fully straightened dimer carries a strain energy similar to our estimated value, 19 pN\u00b7nm; see Figure 7\u2014figure supplement 1a.) The energy of the lateral bonds the dimer forms with its neighbors in the microtubule wall was assumed to follow a simple (Lennard-Jones) function of the bend angle (Figure 7\u2014figure supplement 1b). These mechanical strain and lateral bond energies were added together to calculate a total free energy landscape (Figure 7\u2014figure supplement 1c). The predicted landscape implies a curling reaction that proceeds via a high-energy transition state. We envision that the lateral bonds are short-range interactions, such that they break before much curling has developed. With this assumption, the high-energy transition state should closely resemble the initial, straight conformation (and the curling reaction can be considered \u2018Eyring-like\u2019 [Howard, 2001]).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig7-v2.jpg)\n\n**Figure 7.:** (a) The model considers a single \u03b1\u03b2-tubulin (highlighted) as it bends outward from a microtubule. For simplicity, only two protofilaments are depicted. The curling subunit is shown (arbitrarily) at the base of a previously formed protofilament curl. (b) Hypothetical free energy landscapes for wild-type (red curve) and mutant T238V tubulin (blue curve) as functions of subunit curvature, \u03c6. Lateral bonding initially holds the tubulin in a straight conformation (strained, \u03c6\u00a0=\u00a00\u00b0). Curling then proceeds via a high-energy transition state (open circles), which is reached without the development of much curvature (\u03c6\u00a0~\u00a02\u00b0). Stronger lateral bonding in T238V increases the height of the transition energy barrier, reducing the rate of curling relative to wild-type. Relaxation from the highly strained transition state to the naturally curved ground state (at \u03c6\u00a0=\u00a023\u00b0, with free energy arbitrarily set to zero) drives movement in the wave assay. Because T238V and wild-type have similar transition energies, they produce conformational waves with similar energy.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Mechanical strain energy, U, is calculated as a function of bend angle, \u03c6, by assuming the \u03b1\u03b2-tubulin subunit behaves like a slender elastic rod with a naturally bent shape, a bend angle of \u03c6\u00a0=\u00a023\u00b0 when fully relaxed, and a constant flexural rigidity, chosen such that the fully straightened dimer carries a strain energy similar to our estimated value (~19 pN\u00b7nm). Strain energy functions for wild-type and mutant T238V tubulin are assumed to be identical. Yellow shading in the cartoons indicates mechanical strain. (b) The energy of the lateral bond that the subunit makes with its neighbors in the microtubule lattice, G, follows a simple (Lennard-Jones) function of bend angle. Mutant T238V tubulin (blue curve) is proposed to form stronger lateral bonds than wild-type (red curve). (c) The total free energy, T, is the sum of mechanical strain and lateral bond energies (U + G). Stronger lateral bonding by T238V tubulin increases the height of the transition energy barrier, thereby slowing the rate of curling relative to wild-type. Provided the lateral bonds are highly localized, such that they break before much curling has developed, their contribution to the conformational wave energy is small (irrespective of the exact shapes of the energy functions). Thus, changes in curling rate can occur without necessarily changing the conformational wave energy.\n\nAccording to this model, the slower disassembly of T238V microtubules is explained by an increase in the height of the activation barrier, which could arise either because the energy of the transition state is higher or because the energy of the starting state (i.e., when the tubulin is straight and laterally bonded) is lower. Our data exclude the possibility of a substantially higher transition state energy because this would lead to a higher wave energy for the mutant, which we did not observe. We therefore propose that the mutation specifically strengthens lateral bonds, thereby lowering the energy of the starting state and raising the activation barrier, without altering the intrinsic 23\u00b0 curvature or the mechanical rigidity of the dimer (Figure 7b).\n\n### The T238V mutation affects tubulin lattice structure and strengthens tubulin-tubulin bonds\n\nTo further explore whether the T238V mutation might strengthen lateral bonds in the microtubule lattice, we took two additional approaches. In one approach, we probed the conformation of tubulin in the lattice using the plus-end-tracking EB1-family protein, Bim1. Like other EB1 proteins, (Zanic et al., 2009; Bieling et al., 2007) Bim1-GFP brightly decorates the growing plus-ends of wild-type yeast microtubules, with a strong preference for the growing ends over the remainder of the filament lattice (Geyer et al., 2015). We observed similar bright Bim1-GFP decoration at the growing plus-ends of mutant T238V microtubules as well, but the lattice of the mutant T238V microtubules retained an abnormally high affinity for Bim1-GFP (Figure 5\u2014figure supplement 1c and d). This observation indicates that the lattice conformation of T238V tubulin retains structural characteristics that are normally found only near the ends of growing microtubules (GTP-cap-like), which may be associated with stronger lateral bonding in the lattice.\n\nAs a second approach for examining the effects of the T238V mutation, we devised a new \u2018plucking\u2019 assay to measure the forces required to remove tubulins from growing microtubule ends. We fortuitously found, using the same flexible tethers devised for the wave assay (i.e., single anti-His antibodies bound to a His6 tag on the C-terminal tail of \u03b2-tubulin), that individual beads could be linked to the growing ends (rather than the sides) of single, dynamic microtubules. If increasing tension was then applied (0.25 pN\u00b7s\u22121), the end-bound bead could be detached (Figure 8a and b). End-bound beads were readily detached in this manner, but side-bound beads generally did not detach, even at the maximum laser trap tension (~40 pN under the conditions used here). Usually, detaching an end-bound bead by force triggered immediate disassembly of the microtubule (43 of 57 detachments,\u00a0~75%), which confirms that tubulin dimers were forcibly removed (Figure 8c). Given the single antibody-based linkages, the number of plucked dimers was probably low, but possibly greater than one or two. The average force required to pluck tubulins from a wild-type microtubule end was 8.3\u00a0\u00b1\u00a00.6 pN (Figure 8d and f). Plucking tubulins from mutant T238V microtubules required considerably more force, 19.0\u00a0\u00b1\u00a01.6 pN on average (Figure 8e and f). This higher plucking force is consistent with stronger lateral bonds, although it could arise from a strengthening of longitudinal bonds, or a strengthening of both kinds of bonds. Whether it would also occur in the context of a disassembling end remains uncertain; nevertheless, the observation shows that mutant T238V tubulin forms relatively stronger tubulin-tubulin bonds compared to wild-type, at least in the context of an assembling end.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/28433/elife-28433-fig8-v2.jpg)\n\n**Figure 8.:** (a) A bead is tethered to the end of a growing microtubule via a single antibody bound to the \u03b2-tubulin C-terminus and then tested with a 0.25 pN\u00b7s\u22121 force ramp. (b) Usually, detaching the bead by force triggers immediate disassembly of the microtubule (43 of 57 detachments,\u00a0~75%), indicating that tubulin dimers were forcibly removed. (c) Selected frames from Video 3, showing an end-tethered bead under tension (2.2 s), detachment of the bead (3.2 s), and tip shortening (4.3 s). White arrows mark the coverslip-anchored segment of the microtubule. Yellow chevrons mark the plus end. (d, e) Example records of tensile force versus time for beads tethered to the ends of wild-type and hyperstable mutant T238V microtubules. Arrows mark plucking forces. Gray dots show raw data. Colored traces show same data after smoothing with a 500 ms boxcar average. (f) Distributions of plucking force for wild-type and mutant T238V tubulins. Dotted vertical lines indicate averages for wild-type tubulin, 8.3\u00a0\u00b1\u00a00.6 pN (mean \u00b1 SEM; N\u00a0=\u00a024), and for T238V, 19.0\u00a0\u00b1\u00a01.6 pN (N\u00a0=\u00a019).\n\n![Video 1.](https://cdn.elifesciences.org/articles/28433/elife-28433-media1.mp4.jpg)\n\n**Video 1.:** A bead tethered to the side of a coverslip-anchored microtubule is initially held under laser trap tension (here,\u00a0~1 pN). The distal plus end of the microtubule is severed by laser scissors (at 0 s), triggering disassembly. When the disassembling end reaches the bead, it causes a brief pulse of motion (0.7 s) before the bead detaches (1.0 s). After bead detachment, the microtubule continues disassembling while the stage also moves rightward under feedback control. Red dashes mark the approximate location of the center of the laser trap.\n\n![Video 2.](https://cdn.elifesciences.org/articles/28433/elife-28433-media2.mp4.jpg)\n\n**Video 2.:** A bead tethered to the side of a coverslip-anchored microtubule is initially held in the laser trap, at low tension (<1 pN). Feedback control is initiated (at \u22125.6 s) to apply higher tension (4 pN), and then the distal plus end of the microtubule is severed (0 s). The bead detaches when it is reached by the disassembling end (1 s). After bead detachment, the microtubule continues disassembling while the stage moves rightward under feedback control. Red dashes mark the approximate location of the center of the laser trap.\n\n![Video 3.](https://cdn.elifesciences.org/articles/28433/elife-28433-media3.mp4.jpg)\n\n**Video 3.:** A bead linked to the assembling plus end of a coverslip-anchored microtubule is subjected to increasing tension until the bead detaches. After bead detachment, the microtubule plus end disassembles, indicating that tubulin dimers were forcibly removed from the end. Two views of the same movie are shown. At right, the plus end and the coverslip-anchored portion of the microtubule are indicated by red and yellow markers, respectively.\n\n## Discussion\n\nAs with any cantilevered spring, the amount of force that curling protofilaments can produce depends on how they are coupled to the object on which they are pushing (Molodtsov et al., 2005; Efremov et al., 2007). The amount of strain energy they carry is a more fundamental quantity, and therefore less sensitive to geometric details of the coupling. Ultimately, this strain energy determines the maximum force-generating capacity of the conformational wave mechanism. It is also fundamentally important for all current models of microtubule dynamic instability, and numerous previous studies have attempted to estimate its magnitude. Thermodynamic approaches (Desai and Mitchison, 1997; Caplow and Shanks, 1996; Howard, 2001) and analyses based on the bending rigidity of intact microtubules (Mickey and Howard, 1995) have yielded estimates spanning more than an order of magnitude (Figure 4\u2014figure supplement 1d). But these methods can only infer the stored strain indirectly. Our wave assay has provided a more direct approach.\n\nTo measure the energy carried by the conformational wave we modified an assay pioneered in a previous study, (Grishchuk et al., 2005) adding a feedback-controlled laser trap and other improvements to prevent the microbeads used in the assay from restricting the curling of the protofilaments. Our results clearly demonstrate the spring-like elasticity of the protofilaments and establish that they carry a very substantial amount of curvature strain (>74 kBT), which can be harnessed to perform mechanical work. Our data further show that movement in the assay is likely driven by a lateral push mechanism, in which the curling protofilaments push laterally on the bead, causing it to pivot around the flexible tether linking it to the microtubule. Based on this arrangement, we estimate that the measured work output derives from outward curling of as many as 16 tubulin dimers, implying an energy per dimer of at least 19 pN\u00b7nm (4.7 kBT, or 2.7 kcal mole\u22121).\n\nUltimately this energy is derived from the chemo-mechanical cycle of tubulin. Soon after a tubulin dimer assembles into a microtubule, GTP is hydrolyzed and a portion of the free energy liberated by this chemical reaction is stored as curvature strain in the microtubule lattice (Desai and Mitchison, 1997; Nogales and Wang, 2006). Our estimate of this stored strain represents\u00a0~22% of the total free energy available from GTP hydrolysis (see Figure 4\u2014figure supplement 1d), indicating that tubulin can convert chemical energy into mechanical work with an efficiency similar to other, more conventional molecular motors, such as kinesin, (Howard, 1996) myosin, (Rief et al., 2000) and dynein (Gennerich et al., 2007).\n\nThe curvature strain energy carried by curling protofilaments is easily sufficient to make a major contribution to the motility of isolated kinetochores and recombinant kinetochore subcomplexes in vitro (Volkov et al., 2013; Akiyoshi et al., 2010; Asbury et al., 2006; Powers et al., 2009; Tien et al., 2010). The mechanical work harnessed by these reconstituted couplers from a disassembling microtubule tip is the product of the opposing force, F, against which they move, multiplied by the distance moved, \u03b4. The distance moved per released tubulin dimer, \u03b4\u00a0=\u00a00.61 nm, is known from the structure of the microtubule lattice (i.e., the 8 nm length of an \u03b1\u03b2-tubulin dimer divided by 13 protofilaments) (Amos and Klug, 1974). The maximum force against which a yeast kinetochore has been observed to track in vitro with disassembly is F\u00a0=\u00a08.5\u00a0\u00b1\u00a01.9 pN (based on a line-fit to tracking speeds measured as a function of tension) (Akiyoshi et al., 2010). Multiplying these gives F\u00b7\u03b4\u00a0=\u00a05.2\u00a0\u00b1\u00a01.2 pN\u00b7nm of work per released dimer (equivalent to 1.3\u00a0\u00b1\u00a00.3 kBT per dimer, or 0.74\u00a0\u00b1\u00a00.17 kcal mole\u22121), which is lower than our estimate of curvature strain in the protofilaments, by\u00a0~3 fold. Tip-couplers made by linking recombinant Dam1 complexes at high density to beads via long tethers can sometimes track against even higher forces, up to F\u00a0=\u00a030 pN (Volkov et al., 2013). This maximum force corresponds to F\u00b7\u03b4\u00a0=\u00a018 pN\u00b7nm per released dimer (4.5 kBT per dimer, or 2.6 kcal mole\u22121), a value nearly equal to our estimated protofilament strain.\n\nThe most directly comparable in vivo results are the classic microneedle-based measurements of Nicklas, who found that the total force required to stall anaphase chromosome movement in grasshopper spermatocytes was 700 pN (Nicklas, 1983, 1988). Assuming this load was shared by 15 kinetochore-attached microtubules leads to an often-cited estimate of F \u2248 50 pN per microtubule (Nicklas, 1983, 1988). If all the energy driving chromosome movement was derived from disassembly of these kinetochore-attached microtubule tips, then the work harnessed per released dimer would be F\u00b7\u03b4\u00a0=\u00a030 pN\u00b7nm. Our results suggest that the majority of this energy could be derived from protofilament curvature strain.\n\nFor decades, the conformational wave model has remained a compelling but unproven hypothesis for kinetochore motility. By establishing that protofilaments carry enough curvature strain energy to make a major contribution to kinetochore movement, our findings lend strong support to the conformational wave hypothesis. Our study also reveals how the rate of microtubule disassembly can be altered dramatically by tubulin mutations that do not necessarily affect the amount of lattice strain or the intrinsic protofilament curvature. While the hyperstable mutant T238V tubulin that we examined here did not exhibit low lattice strain, we speculate that such low-strain mutants exist. We envision that the wave assay developed here will be useful for identifying low-strain tubulin mutants and for examining the mechano-chemistry of other recombinant tubulins.\n\n## Materials\u00a0and\u00a0methods\n\n### Expression and purification of yeast tubulin\n\nPlasmids to express wild-type yeast \u03b1\u03b2-tubulin with a His6 tag fused to the C-terminus of \u03b2-tubulin were previously described (Ayaz et al., 2014, 2012; Johnson et al., 2011). A plasmid to express the T238V mutation of Tub2p (yeast \u03b2-tubulin) was made by QuikChange mutagenesis (Stratagene), using an expression plasmid for wild-type Tub2 as template and with primers designed according to the manufacturer\u2019s instructions. The integrity of all expression constructs was confirmed by DNA sequencing. Wild-type or mutant yeast \u03b1\u03b2-tubulin was purified from inducibly overexpressing strains of S. cerevisiae using nickel affinity and ion exchange chromatography (Ayaz et al., 2014, 2012; Johnson et al., 2011) with the exception that the T238V mutant was eluted from the nickel-affinity column with 200 mM NaCl. T238V nickel elution fractions were treated with Universal Nuclease (Pierce) at room temperature for 1 hr prior to ion exchange chromatography. Tubulin samples for the laser trap assays were prepared at UT Southwestern, aliquoted and snap-frozen in storage buffer (10 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA) containing 50 \u03bcM GTP, shipped on dry ice to the University of Washington, and stored at \u221280\u00b0C.\n\n### Wave assay setup\n\nFor each experiment, a small channel\u00a0~3 mm wide was formed by bonding a plasma-cleaned glass coverslip to a clean glass slide using two parallel strips of double-stick tape. GMPCPP-stabilized, biotinylated seeds were assembled from bovine brain tubulin, anchored to the coverslip surface, and then washed with a solution of 1 mM GTP in BRB80 (80 mM PIPES, 120 mM K+, 1 mM MgCl2 and 1 mM EGTA, pH 6.9) as previously described (Akiyoshi et al., 2010; Franck et al., 2010; Powers et al., 2009; Franck et al., 2007). Alternatively, for some experiments, axonemes purified from sea urchin sperm (Waterman-Storer, 2001) were adsorbed directly to the coverslips and then washed as above.\n\nFrom the coverslip-anchored seeds or axonemes, dynamic microtubule extensions were grown and simultaneously decorated with anti-His-beads (prepared as described below) by introducing a suspension of the beads together with\u00a0~1 \u03bcM of either wild-type or mutant T238V yeast tubulin, freshly thawed, in microtubule growth buffer (BRB80 supplemented with 1 mM GTP, 5 mM DTT, 25 mM glucose, 200 \u00b5g mL\u22121 glucose oxidase, 35 \u00b5g mL\u22121 catalase) and then incubating the slide at 30\u00b0C for\u00a0~20 min. Only the microtubule minus ends were anchored to the glass coverslip \u2013 otherwise the filaments were unsupported.\n\nTo prepare the anti-His-beads, commercially available streptavidin-coated polystyrene microbeads (Spherotech Inc., Libertyville, IL) were functionalized by incubation of\u00a0~36 pM beads with 25 pM biotinylated anti-Penta-His antibodies (#34440, Qiagen, Valencia, CA) for 30 min, washed extensively, and stored at 4\u00b0C for up to several months. Just prior to each experiment, a small aliquot of the beads was incubated with a mixture of plain and biotinylated BSA (at 40 and 0.4 mg mL\u22121, respectively) for\u00a0>30 min, diluted into growth buffer with tubulin, and then used as described above. Pre-incubation with BSA was important for preventing non-specific attachment of the sparsely anti-His-decorated beads to the microtubules. Control experiments with beads lacking anti-His antibody confirmed that the attachments were specific after the BSA pre-incubation.\n\nTo ensure that most beads attached via single antibodies, the ratio of antibodies to beads during bead functionalization was kept very low,\u00a0~1:1, such that the fraction of beads under manual manipulation that would attach to the growing end of a microtubule was less than 50%. Active beads attached readily to growing ends, but not to the sides of microtubules. Their preference for growing ends was expected because the anti-His antibodies on each bead should become quickly and stably occupied by individual, unpolymerized (and His-tagged) tubulin dimers upon initial mixing of the beads and tubulin. Thus, bead-microtubule attachments presumably occurred via incorporation of bead-tethered tubulins into growing ends. Laterally attached beads, which are required for the wave assay, were nevertheless found readily after microtubule polymerization had commenced for\u00a0~20 min. These lateral attachments presumably arose by polymerization of microtubules past beads that were initially end-attached.\n\n### Performing the wave assay\n\nOur combination laser trap and laser scissors instrument has been described previously (Franck et al., 2010). Briefly, the microscope incorporates two lasers, a 1064 nm wavelength laser for trapping and a 473 nm laser for cutting microtubules. The trapping laser is focused to a diffraction-limited spot in the center of the field of view and the cutting laser is focused to an ellipse several micrometers away, to ensure that it does not interfere with trap operation. Both lasers are controlled independently by manual shutters. Individual microtubules can be severed by brief exposure to the cutting laser (<1 s).\n\nTo perform the wave assay, a suitable laterally attached bead was first selected and placed under laser trap tension. The bead-microtubule assembly was bent slightly upward, away from the coverslip, to prevent interactions between the bead and the coverslip, or between the disassembling tip and the coverslip, which would have interfered with the movements generated by the conformational wave. The distal, growing end of the microtubule was then severed using laser scissors to induce disassembly. The desired load was maintained by adjusting the position of the specimen stage under feedback control, implemented using custom software written in LabView (Source code 1). Significant forces could only be applied in the longitudinal direction, along the axis of the microtubule, because of the arrangement of the assay, with the beads tethered to flexible microtubule extensions anchored only by their minus ends to the coverslip. Flexibility of the unsupported microtubule extensions prevented the application of piconewton-scale forces in transverse directions. Bead-trap separation was sampled at 40 kHz while stage position was updated at 50 Hz to maintain the desired load for as long as the bead remained attached to the microtubule. The bead and stage position data were decimated to 200 Hz before storing to disk. Brief recordings (<20 s) were sufficient to capture the wave pulses. Up to 40 events could be recorded during a single 1 hr experiment, depending on the scarcity of suitably attached beads. Individual amplitudes and risetimes for all recorded pulses, as well as the means and standard errors for each measurement condition, are given in Supplementary file 1.\n\n### Estimation of tether length\n\nThe beads in our experiments were tethered to the microtubules through a linkage that consisted of streptavidin on the bead surface, a biotinylated anti-Penta-His antibody (mouse monoclonal IgG1), and the C-terminal tail of \u03b2-tubulin, which is a disordered 30-amino-acid polypeptide segment exposed at the microtubule surface. Approximate lengths for streptavidin, 7 nm, and for the antibody, 18 nm, were estimated from PDB structures 1AVD and 1IGT, respectively. A length of 3.6 \u00c5 per amino acid was assumed for the C-terminal tail of \u03b2-tubulin, based on lengths measured for other mechanically unfolded polypeptides (e.g., see Schwaiger et al., 2002), yielding an estimate for the 30-amino-acid tail of 11 nm (excluding the His6 tag, which is presumably bound up by the antibody). Adding these values for streptavidin, IgG, and the \u03b2-tubulin tail yielded a total of 36 nm for the complete tether. We considered deviations from this estimated length to examine how sensitively it would affect the predicted curves for stall force-vs-bead diameter and for unloaded amplitude-vs-bead diameter. The predicted curves were similar and fit our data well for tethers ranging from 30 to 42 nm (see Figure 4).\n\n### Imaging of Bim1-GFP-decorated microtubules\n\nFluorescence imaging of growing microtubule tips decorated with Bim1-GFP was performed and analyzed as previously described, (Geyer et al., 2015) with the use of\u00a0wild-type or T238V yeast microtubules grown in 1 mM GTP and in the presence of 50 nM Bim1-GFP.\n\n### Methods for the plucking force assay\n\nBeads for the plucking force assay were prepared and dynamic microtubule extensions grown from coverslip-anchored seeds exactly as described above for the wave assay. Single freely diffusing beads were selected and held near an individual growing microtubule end using the laser trap. Once the bead attached to the microtubule, increasing tension was applied with feedback control to maintain a constant loading rate, 0.25 pN s\u22121, until the bead detached. Upon bead detachment, microtubule tip state was determined visually, from video-enhanced differential interference contrast (VE-DIC) images displayed live during the experiments. Usually, the microtubule began disassembling immediately after detachment of the bead (43 of 57 detachments,\u00a0~75%), which indicates that tubulin dimers were forcibly removed. Only detachments that were followed immediately by microtubule disassembly were included in the analyses of plucking force. The same stocks of antibody-decorated beads were used for the plucking force measurements with wild-type and T238V tubulin. Thus, the different plucking strengths cannot be attributed to different numbers of antibodies on the beads, or different types of antibodies, or different numbers of bonds between the beads and the microtubules. All the individual plucking force values are given in Supplementary file 1 .\n",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "d35fa3c7-ebce-4f07-a82f-e69418d8692c",
+      "submission_id": "a5c8075f-d9b1-4af5-aa58-d59aee5063c8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28433.022](https://doi.org/10.7554/eLife.28433.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Direct measurement of the force-generating capacity of protofilaments curling out from a disassembling microtubule tip\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Guest Reviewing Editor (Marileen Dogterom) and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAs you will see all three reviewers acknowledge that the work presented is technically sound, and that the results are carefully interpreted. However, the reviewers are not convinced that the new insights provided are substantial enough to warrant publication in eLife. They also have a number of additional (technical) questions that we hope will help you when preparing your work for publication elsewhere.\n\nReviewer #1:\n\nThe paper by Driver et al. describes a new optical tweezers-based assay to measure forces generated by outward curling protofilaments of depolymerising microtubules, as well as forces needed to detach both WT and mutant tubulin dimers. While the experiments are carefully performed and analysed, we have a number of concerns:\n\nOur main concern regarding this manuscript is its novelty. The authors state in the Abstract that \"whether curling protofilaments are strong enough to produce significant force has been unclear\", however they later go on to cite literature on this subject that has already reported significant force from microtubule disassembly (Volkov et al., 2013; Grishchuk et al., 2005). In the main text the authors report that they have measured a force resulting from microtubule disassembly that \"was at least 16\u2010fold higher than the maximum force measured previously(Grishchuk et al., 2005)\". They fail to acknowledge however, that this 16-fold increase is due mainly to the calculations that the authors performed based on the geometry of the laser trap acting on the center of the bead bound laterally to a microtubule (see Figure 2B-C and Figure 2\u2014figure supplement 2). These same geometrical considerations were previously applied to the force values obtained in Grishchuk et al., 2005, resulting in an increase of the estimated force on the bead surface that is well within the values reported in the manuscript by Driver et al. (see Grishchuk et al., 2005 Nature 438: 384\u2010388). Therefore, we believe that the bulk of the manuscript, although presenting a new experimental approach to measuring the bending force of tubulin protofilaments, does not report substantially novel results.\n\nReviewer #2:\n\nThis is a nice study using in vitro assays and optical trapping to measure the force generated by individual depolymerising microtubules. The authors use a neat design that pushes a microtubule attached bead 'sideways' when a microtubule depolymerises. The authors attribute this 'sideways' displacement to protofilament curls generating a force on the bead as they peel off the microtubule end. This is a plausible interpretation, since such curls have been often observed by electron microscopy. Using geometrical arguments they conclude that about a fifth of the chemical energy of GTP hydrolysis is transformed into mechanical work. The same work can be performed by a more slowly hydrolysable tubulin mutant, showing that kinetics can be uncoupled from the production of mechanical work. The authors also measure the force it takes to rip off tubulins from the microtubule end. Overall the experiments seem to be very carefully performed and the data and interpretations are convincing. Overall the results are very interesting and they agree well with several other published results that aimed at estimating the forces generated by microtubules at kinetochores.\n\nPoints of concerns/questions:\n\n1) Some of the interpretations seem to depend critically on the assumptions that are made about the nature of the 'tether' between bead and microtubule, because it affects the lever effect. In the beginning of the Results the authors could be more explicit about what is the tether (His-tag on tubulin \u2013 biotinylated anti-His antibody \u2013 steptavidin bead). Why do they estimate that this tether is 36 nm long? What is the estimated error of this estimate of the tether length and how does this affect the precision of the conclusions?\n\n2) The method describing the laser cutting does not seem to be described.\n\n3) The authors state in the Methods that the antibody beads bind selectively to growing microtubule ends, which is maybe first a bit surprising, but they give a plausible explanation for that. However, no data are shown demonstrating that beads bind this way (apart from Figure 5 where the beads seem to be positioned close to MT ends using the trap). Since this bead-tubulin incorporation into the microtubule seems to be an important part of how the assay is set up, it might be worth mentioning this in the main text.\n\n4) Reported forces are probably reported for the direction along the axis of the microtubule in the x/y plane. Correct? How well is that orientation known? Can the z-component of the force be measured?\n\n5) The authors translate their measured h=20nm into observing a curled protofilament segment consisting of 4 tubulins. Why are the curls so short? Could it be that they are longer and less curved under load? Then this height might correspond to more tubulins.\n\nReviewer #3:\n\nDriver et al. report on the direct measurement of the force-generating capacity of protofilaments curling out from a disassembling microtubule tip. While the 'conformational wave' model (according to which individual protofilaments pull on the kinetochore as they curl outward from a disassembling tip) is a popular explanation for motility powered by microtubule disassembly, the authors ask if curling protofilaments are indeed strong enough to produce significant force. To answer this question, they utilized a wave assay with recombinant yeast tubulin and a feedback-controlled laser trap. They show that curling protofilaments are surprisingly strong, enabling them to drive movement with forces and efficiency similar to conventional motor proteins. Taken together, the study demonstrates a direct way to examine tubulin mechanochemistry, thereby establishing that the wave mechanism can make a major contribution to kinetochore motility.\n\nExperiments and data evaluation have been performed at the highest technical level. The described results are of excellent quality, leaving no doubt that the wave mechanism can generate enough force for chromosome separation. Overall, the manuscript is written in a most clear and concise manner.\n\nI just have one major comment: Have the authors done a good enough job to differentiate their approach and their results from the seminal Grishchuk/McIntosh paper from 2005 (Grishchuk et al., 2005)? I do have the following questions:\n\na) What is the difference between the wave assays performed back then and now? Is the current study really demonstrating a \"new\" way to measure the forces associated with protofilament curling? Or, isn't the present work rather (just) an adaptation of the earlier approach?\n\nb) How different are the current results from the earlier values? In Grishchuk et al., 2005 forces of 0.24 pN arising from curling of 1-2 protofilaments measured by 500 nm beads were reported. From these values, forces of about 5 pN on the bead (microtubule) surface \u2013 or 30 to 65 pN at the end of one depolymerizing microtubule \u2013 were estimated. These forces are quite substantial and I am not sure how fair the following statement is: However, the measured forces (~0.24 pN) were much weaker than forces generated at kinetochore-microtubule interfaces in vitro (9 pN or more) and also weaker than force estimates for kinetochore-microtubule attachments in vivo (4 to 8 pN during normal prometaphase) (Introduction, third paragraph). Doesn't it compare apples and pears? Consequently, I thought that also the following statements have already been answered by Grishchuk et al., 2005: But whether curling protofilaments are strong enough to produce significant force has been unclear (from the Abstract) and: The mechanisms underlying this type of energy transduction are unknown (from the Introduction). Perhaps I missed something but a clarification of the raised issues \u2013 and at places potentially toning down the novelty of the used approach and the drawn conclusions \u2013 seem appropriate.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Direct measurement of conformational strain energy in protofilaments curling outward from disassembling microtubule tips\" for further consideration at eLife. Your revised article has been favorably evaluated by Anna Akhmanova (Senior Editor and Reviewing Editor), and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) It would be good if the authors could have another look at their text while keeping a broader audience in mind, for example when starting the Results section which is now maybe a bit technical. Some of this information, which mostly concerns the previous work, could probably be presented in a bit more conceptualised manner with the details being moved to the Methods or a supplementary Discussion.\n\n2) The observation that the slowly-depolymerizing T238V mutant does not substantially change the amplitude-vs-force is surprising and interesting. This suggests that longitudinal interactions in the disassembling tip are not altered by the mutation. However, the authors don't have a way to directly confirm this. In the subsequent experiments, the authors acknowledge that the observed changes in Bim1 binding and \"plucking\" force of the mutant could be explained by changes in lateral or longitudinal contacts but cannot distinguish between these two possibilities with certainty. Can the authors discuss a bit more any potential structural differences between the wild-type and mutant, for example in protofilament number or the curvature of protofilament curls?\n\n3) In the legend for Video 3, the word \"coverslip\" is misspelled. In the legend for Figure 3 (a), the word \"Initially\" is misspelled.\n",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "58a719e6-b3e5-4619-b212-0bfad735dbce",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C1",
+      "claim": "Disassembling microtubules can generate movement independently of motor enzymes, especially at kinetochores where they drive chromosome motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Disassembling microtubules can generate movement independently of motor enzymes, especially at kinetochores where they drive chromosome motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about microtubule function, presented as background in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "316bb97a-e6c1-493b-90ca-dc68611753e5",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C2",
+      "claim": "In the conformational wave model, protofilaments pull on the kinetochore as they curl outward from a disassembling tip.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular explanation is the 'conformational wave' model, in which protofilaments pull on the kinetochore as they curl outward from a disassembling tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical model from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c0192a37-84f5-4678-bb4a-5b91caa9e1d0",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C3",
+      "claim": "Curling protofilaments carry ~25% of the energy of GTP hydrolysis as bending strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring their mechanical work output suggests they carry ~25% of the energy of GTP hydrolysis as bending strain, enabling them to drive movement with efficiency similar to conventional motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's measurements, as stated in the abstract and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "d596bf34-e080-441e-8d1e-aa24555fe460",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C4",
+      "claim": "Curling protofilaments can drive movement with efficiency similar to conventional motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring their mechanical work output suggests they carry ~25% of the energy of GTP hydrolysis as bending strain, enabling them to drive movement with efficiency similar to conventional motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the measured work output and comparison to known motor efficiencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "04ed4e54-e90c-403b-b603-6cdb66843c41",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C5",
+      "claim": "A \u03b2-tubulin mutant (T238V) that dramatically slows disassembly has no effect on work output.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a \u03b2-tubulin mutant that dramatically slows disassembly has no effect on work output, indicating an uncoupling of disassembly speed from protofilament strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "daba523a-ffbe-476a-b516-dfdfad21ff1a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C6",
+      "claim": "Disassembly speed can be uncoupled from protofilament strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a \u03b2-tubulin mutant that dramatically slows disassembly has no effect on work output, indicating an uncoupling of disassembly speed from protofilament strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the T238V mutant data showing different disassembly rates but similar work output.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "eab97b72-a328-4309-be9d-0078aa51fe9b",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C7",
+      "claim": "Microtubule polymerization can generate pushing forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule polymerization can generate pushing forces (Dogterom and Yurke, 1997; Janson et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "563e8026-bb01-499f-afd0-e7e61a72fb29",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C8",
+      "claim": "Microtubule depolymerization can generate pulling forces.",
+      "claim_type": "EXPLICIT",
+      "source": "depolymerization can generate pulling forces (Coue et al., 1991; Koshland et al., 1988; Lombillo et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c208ea74-a6dc-4560-9230-d7d126650d36",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C9",
+      "claim": "Disassembling microtubule tips drive mitotic chromosome movements at kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "An important example of microtubule pulling occurs at kinetochores, where disassembling microtubule tips drive mitotic chromosome movements (Desai and Mitchison, 1997; Inou\u00e9 and Salmon, 1995; McIntosh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f3f4219d-427e-4956-a04e-34884c8e6a0c",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C10",
+      "claim": "The mechanism underlying force production by disassembling microtubule tips is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "But the mechanism underlying this force production is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "a5c123e9-8231-4617-a9a6-25ce1d0de3d9",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C11",
+      "claim": "Two classes of models have been proposed to explain how disassembling microtubules produce force: conformational wave and biased diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Two classes of models have been proposed to explain how disassembling microtubules produce force, conformational wave and biased diffusion (Koshland et al., 1988; Hill, 1985; Asbury et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "a34593a3-ee5e-486a-a634-0ffcbd3b2daa",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C12",
+      "claim": "Strain energy is trapped after GTP hydrolysis in the microtubule lattice because intrinsically curved GDP-tubulin subunits are held in a straight configuration by their binding to neighboring subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Strain energy is trapped after GTP hydrolysis in the microtubule lattice, because intrinsically curved GDP-tubulin subunits are held in a straight (i.e., strained) configuration by their binding to neighboring subunits (Desai and Mitchison, 1997; Caplow and Shanks, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "eadbbdbf-7875-4268-8d93-a73f68ef40f7",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C13",
+      "claim": "Stored strain energy is released during tip disassembly when protofilaments curl outward from the tip and break apart, forming a conformational wave.",
+      "claim_type": "EXPLICIT",
+      "source": "This stored strain energy is released during tip disassembly, when the protofilaments curl outward from the tip and break apart, forming a conformational wave that propagates down the microtubule (Mandelkow et al., 1991; Nogales and Wang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "aff13dfa-0609-4df3-9a82-c0f55cbaaee1",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C14",
+      "claim": "Grishchuk et al. (2005) showed that disassembling microtubule tips can exert brief pulses of force against an attached bead.",
+      "claim_type": "EXPLICIT",
+      "source": "A seminal study by Grishchuk and co-workers used a laser trap assay to show that disassembling microtubule tips can exert brief pulses of force against an attached bead (Grishchuk et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "249b5c2f-5c6d-4513-bbad-46094e46d214",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C15",
+      "claim": "The conformational wave might be capable of generating very high forces, up to ~50 pN, according to analysis by Grishchuk et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Their analysis suggested that the conformational wave might be capable of generating very high forces, up to ~50 pN, but the actual measured forces were much lower (<0.5 pN)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to analysis from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c925550a-6797-496a-81f2-fbed81bb4da6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C16",
+      "claim": "Actual measured forces in the Grishchuk et al. study were much lower (<0.5 pN) than the theoretical maximum.",
+      "claim_type": "EXPLICIT",
+      "source": "Their analysis suggested that the conformational wave might be capable of generating very high forces, up to ~50 pN, but the actual measured forces were much lower (<0.5 pN)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to experimental results from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8f812833-8cf2-4953-aee0-3f2d8e6c4378",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C17",
+      "claim": "The energy carried by curling protofilaments was not determined in the Grishchuk et al. study.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of these limitations, the energy carried by the curling protofilaments was not determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b70898e4-d9dd-4c62-b3db-4aa7febd0f3c",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C18",
+      "claim": "The work output of the conformational wave mechanism must be limited by the amount of curvature strain energy carried by GDP-protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamentally, the work output of the conformational wave mechanism must be limited by the amount of curvature strain energy carried by GDP-protofilaments, which dictates how forcefully they can curl outward from the tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on physical principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b853b525-df46-4cea-ac1f-62d9e005314c",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C19",
+      "claim": "Protofilament strain is fundamental to all current models of microtubule dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, protofilament strain is fundamental to all current models of microtubule dynamic instability, and it is generally thought to drive rapid disassembly (Desai and Mitchison, 1997; Nogales and Wang, 2006; VanBuren et al., 2005; Molodtsov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f02e634c-4066-4bdc-90eb-149200ca5661",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C20",
+      "claim": "Protofilament strain is generally thought to drive rapid disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, protofilament strain is fundamental to all current models of microtubule dynamic instability, and it is generally thought to drive rapid disassembly (Desai and Mitchison, 1997; Nogales and Wang, 2006; VanBuren et al., 2005; Molodtsov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "975572c8-03a3-44ec-ac8d-02f5886462d0",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C21",
+      "claim": "The modified wave assay uses recombinant tubulin with an engineered, flexible tether to minimize interference from the attached bead.",
+      "claim_type": "EXPLICIT",
+      "source": "Interference from the attached bead was minimized by using recombinant tubulin with an engineered, flexible tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "7e5c4102-7beb-47ab-9a92-3905e7387feb",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C22",
+      "claim": "A feedback-controlled laser trap was applied to measure nm-scale displacements as functions of force.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying a feedback-controlled laser trap, nm-scale displacements were measured as functions of force",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "070440c7-2e6c-449b-b889-e9b326e2304f",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C23",
+      "claim": "The modified assay enabled direct observation of the spring-like elasticity of curling protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying a feedback-controlled laser trap, nm-scale displacements were measured as functions of force, enabling direct observation of the spring-like elasticity of curling protofilaments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c32177d1-4f4b-4cdf-b287-f257a2a68908",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C24",
+      "claim": "Curling protofilaments carry a substantial fraction of the energy of GTP hydrolysis in the form of curvature strain.",
+      "claim_type": "EXPLICIT",
+      "source": "enabling direct observation of the spring-like elasticity of curling protofilaments and showing that they carry a substantial fraction of the energy of GTP hydrolysis in the form of curvature strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b9ced9bf-53e2-4cd2-b656-6d8c512d11d4",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C25",
+      "claim": "A 7-fold decrease in disassembly rate had no effect on conformational wave energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a 7-fold decrease in disassembly rate had no effect on conformational wave energy, which reveals that the speed of disassembly can be uncoupled from curvature-derived protofilament strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the T238V mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "4910602a-06ac-4065-85e1-9548c8c6dc77",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C26",
+      "claim": "Pulses were detected in fewer than half of the trials in the Grishchuk et al. study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pulses were detected in fewer than half of the trials, pulse durations varied over 300-fold, and relaxation of the beads into the center of the trap was slower after the trials that failed to produce pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to results from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "dfadc517-26d5-44c9-aa89-62fa0c3ff7f0",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C27",
+      "claim": "The bead-microtubule attachments in the Grishchuk et al. study restricted outward curling of the protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the bead-microtubule attachments, which consisted of multiple biotin-avidin bonds (approximately 3 to 8), restricted outward curling of the protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about limitations of the previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c47d512c-3726-4133-8acc-8f85fef78d1e",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C28",
+      "claim": "Pulse amplitudes in the Grishchuk et al. study were probably limited by the maximum distance over which the curling protofilaments could exert force.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because a fixed trap was used without feedback control, pulse amplitudes were probably limited by the maximum distance over which the curling protofilaments could exert force (i.e., by their working stroke length), rather than by their total capacity for work output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about limitations of the previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "4f6b4d00-829a-4bae-a821-ba45d87a1977",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C29",
+      "claim": "Dynamic microtubule extensions were grown from coverslip-anchored seeds assembled from recombinant yeast \u03b1\u03b2-tubulin with a His6 tag on the C-terminal tail of \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensions were assembled from recombinant yeast \u03b1\u03b2-tubulin, with a His6 tag engineered onto the C-terminal tail of the \u03b2 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3f5a885b-e8a8-40fc-9c23-c6a5700383e6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C30",
+      "claim": "Microbeads were tethered to the sides of individual, growing filaments via single anti-His antibodies, creating a strong yet flexible tether (~36 nm in length).",
+      "claim_type": "EXPLICIT",
+      "source": "Microbeads were tethered to the sides of individual, growing filaments via single anti-His antibodies, creating a strong yet flexible tether (~36 nm in length; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "963ffa8e-1118-41a6-955a-2b92c1269345",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C31",
+      "claim": "At low opposing force, a pulse was nearly always observed (90%, or 148 of 164 events recorded at <5 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "At low opposing force, a pulse was nearly always observed (90%, or 148 of 164 events recorded at <5 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3b8f03b1-4a97-4645-84d6-0622d76e1342",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C32",
+      "claim": "The pulses were large, often >60 nm, which is more than twice the width of the microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulses were large, often >60 nm (Figure 1d and e), which is more than twice the width of the microtubules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "df1d0db8-ec41-4ead-9663-c2a8b8586dbb",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C33",
+      "claim": "Disassembling tips can generate pulses of movement more reliably than previously observed.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations show that disassembling tips can generate pulses of movement more reliably than previously observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the current results to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "7ca82366-cdb4-4ec3-9c89-bbc4b97453f4",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C34",
+      "claim": "The pulses were fast, with average risetimes between 0.1 and 0.3 s (depending on the level of force), which is 5- to 10-fold faster than in the previous recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulses were also fast, with average risetimes between 0.1 and 0.3 s (depending on the level of force; Figures 1d,e and 2a\u2013b), which is 5- to 10-fold faster than in the previous recordings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "80fee449-4616-47d8-b5f0-2d210295a13d",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C35",
+      "claim": "The modified tethering scheme imposed less restriction on the outward curling of the protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that our modified tethering scheme imposed less restriction on the outward curling of the protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "d3f78fa5-de37-4381-beaa-16e4d41fc1ba",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C36",
+      "claim": "Pulse amplitudes decreased as the force of the laser trap was increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse amplitudes decreased as the force of the laser trap was increased (Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "2af3436c-de53-4a0f-a071-b8bd1c511431",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C37",
+      "claim": "Curling protofilaments exhibit spring-like elasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior demonstrates directly that curling protofilaments exhibit spring-like elasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the force-displacement measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f5cc45b5-ab84-4ba8-9e80-4722183359db",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C38",
+      "claim": "A 'stall force' was reached at which the pulses were completely suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually a 'stall force' was reached, at which the pulses were completely suppressed (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "519229cd-dc67-4873-a78b-ed42eca6d0d7",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C39",
+      "claim": "Depending on bead size, the stall force ranged from 8 to 16 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on bead size, the stall force ranged from 8 to 16 pN (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "acc438c9-4e56-4230-a715-a92ab18b4e9e",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C40",
+      "claim": "The stall force is at least 16-fold higher than the maximal force measured in the previous study (<0.5 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "which is at least 16-fold higher than the maximal force measured in the previous study (<0.5 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to results from a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "5865d3ba-99a7-4185-acb2-fd7f90e53046",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C41",
+      "claim": "Protofilaments curling outward from a disassembling microtubule tip behave like springs and can generate forces much higher than previously recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, our results show that protofilaments curling outward from a disassembling microtubule tip behave like springs and can generate forces much higher than previously recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "871d29c3-b413-4b64-a48b-419e71a2633d",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C42",
+      "claim": "In the lateral push scenario, the curling protofilaments push laterally against the bead at the secondary contact point, causing the bead to pivot about the base of the tether.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'lateral push' scenario, the curling protofilaments push laterally against the bead at the secondary contact point, causing the bead to pivot about the base of the tether (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a theoretical model for the mechanism, illustrated in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "91143e45-ebc3-4d4a-b719-2bb77bcff824",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C43",
+      "claim": "The predicted leverage in the lateral push scenario is only modest (~2 fold, depending on bead size and tether length).",
+      "claim_type": "EXPLICIT",
+      "source": "The bead acts as a lever in this case, but because the fulcrum is located at the tether, away from where the curling protofilaments exert their force, the predicted leverage is only modest (~2 fold, depending on bead size and tether length).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the geometric model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3db83717-5b61-45b1-9bea-ad3eff433698",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C44",
+      "claim": "In the axial pull scenario, the microtubule first disassembles past the secondary contact point, allowing the bead to rotate under laser trap tension into an end-on configuration relative to the microtubule tip.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second scenario, 'axial pull', the microtubule first disassembles past the secondary contact point, allowing the bead to rotate under laser trap tension into an end-on configuration relative to the microtubule tip (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an alternative theoretical model for the mechanism, illustrated in Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "2c3a8849-e761-411a-81f9-456ddad0baf4",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C45",
+      "claim": "There is no leverage in the axial pull scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no leverage in this case. The unamplified trapping force opposes protofilament curling directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the geometric properties of the axial pull model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c232adda-e11d-41d3-b152-1e006fce9d0a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C46",
+      "claim": "The bead position was nearly always stable prior to the pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the bead position was nearly always stable prior to the pulses (Figure 1e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental observation from the study, supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f91078ec-47de-4473-8592-be8baacf32ac",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C47",
+      "claim": "Only 2% of trials (18 of 760) showed a secondary pulse after the initial pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "except in a very small fraction of trials (~2%, 18 of 760) during which the initial pulse, from a stable baseline, was followed by bead relaxation toward the trap center and then by a second pulse (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "fdaaaff7-8c66-4e59-9f98-08962391e0b2",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C48",
+      "claim": "The lack of any relaxation before the primary pulses indicates that these were not preceded by rotation into an end-on configuration, and thus were not generated by axial pulling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of any relaxation before the primary pulses indicates that these were not preceded by rotation into an end-on configuration, and thus were not generated by axial pulling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "5be6f543-bd7d-4ac6-8cec-83d9dd7306b8",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C49",
+      "claim": "The lateral push mechanism underlies bead movement in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it seems that the lateral push mechanism underlies bead movement in most cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b1fa28e5-a238-4c40-8186-e943184895d9",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C50",
+      "claim": "Larger beads should increase leverage and therefore decrease the amount of laser trap tension required to suppress the pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "First, larger beads should increase leverage and therefore decrease the amount of laser trap tension required to suppress the pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the lateral push model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "7d38476e-248a-4b8c-bc9f-2dbc038da6d2",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C51",
+      "claim": "Stall forces decreased from 16.2 \u00b1 3.0 pN to 8.4 \u00b1 0.9 pN as bead diameter was increased from 320 to 900 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, stall forces decreased from 16.2 \u00b1 3.0 pN to 8.4 \u00b1 0.9 pN as bead diameter was increased from 320 to 900 nm (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "67a7d493-e140-48a6-9708-ef32ddcc1ce2",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C52",
+      "claim": "Larger beads should produce larger pulse amplitudes when the opposing tension is low enough to allow unhindered movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The second prediction, also a consequence of leverage, is that larger beads should produce larger pulse amplitudes when the opposing tension is low enough to allow unhindered movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the lateral push model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "a5d0c71e-6e60-4ea6-a6c9-ef7fbc0585a2",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C53",
+      "claim": "The maximum pulse amplitudes, extrapolated to zero tension, increased from 45.2 \u00b1 3.6 nm to 64.3 \u00b1 3.6 nm as bead diameter was increased from 320 to 900 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the maximum pulse amplitudes, extrapolated to zero tension, increased from 45.2 \u00b1 3.6 nm to 64.3 \u00b1 3.6 nm as bead diameter was increased from 320 to 900 nm (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "00c78dd1-a8bc-4081-974a-c1ede862ea55",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C54",
+      "claim": "The predicted curves for stall force-vs-bead diameter and unloaded amplitude-vs-bead diameter fit the data well.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted curves fit our data well, and they are relatively insensitive to the precise tether length (Figure 4a and b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of theoretical predictions to experimental data, shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "925eb048-d931-474c-b537-7eb0fb6ee158",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C55",
+      "claim": "The lateral push model provides a good description of the underlying mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the lateral push model provides a good description of the underlying mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "30faee14-7f98-4cf8-96e3-881722b13c30",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C56",
+      "claim": "The total work output was independent of bead size.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas changes in bead size altered the amplitude-vs-force curve in predictable ways (as discussed above), the total work output was independent of bead size (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "109d4fa2-dde7-43f7-aae1-6ff5bedec757",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C57",
+      "claim": "The invariance of work output with bead size suggests that W indeed measures the intrinsic strain energy carried by the curling protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "This invariance would not be expected if work output was limited by the attached bead, and therefore it suggests that W indeed measures the intrinsic strain energy carried by the curling protofilaments that pushed against the bead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observation of bead-size independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b2bf1f53-98c0-48de-a925-614c219af00a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C58",
+      "claim": "The total work output is estimated at W = 304 \u00b1 24 pN\u00b7nm based on a global average across all three bead sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a global average across all three bead sizes, we estimate W = 304 \u00b1 24 pN\u00b7nm (Figure 4c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "763a06c4-ba92-44d3-9c1e-fed98965ffc3",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C59",
+      "claim": "The total work output (304 \u00b1 24 pN\u00b7nm) is 74-fold greater than thermal energy (kBT).",
+      "claim_type": "EXPLICIT",
+      "source": "a value 74-fold greater than thermal energy (kBT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured work output.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8f3bc0c8-2e11-4648-bc50-7d2a5833a269",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C60",
+      "claim": "A maximum of 4 curls could push simultaneously against the beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the lateral push model correctly describes the assay geometry, a maximum of 4 curls could push simultaneously against the beads (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the geometric model, illustrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c5a9f29d-d50f-44f2-8e64-f2f256b99fb6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C61",
+      "claim": "The curled segments are ~4 dimers in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 23\u00b0 curvature and 8 nm length of an individual tubulin dimer, (Mandelkow et al., 1991; Amos and Klug, 1974) the estimated curl height of h = 20 nm further suggests that the curled segments are ~4 dimers in length (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on geometric calculations and cited structural data, illustrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "82e48cd7-8ef3-4e8a-82ac-cb90fc89e784",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C62",
+      "claim": "The total work output may derive from outward curling of as many as 16 tubulin dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the total work output, W, may derive from outward curling of as many as 16 tubulin dimers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geometric model and experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "ec85a0a1-de17-4e6d-93b4-35ea44246f7e",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C63",
+      "claim": "The wave carries at least 19 pN\u00b7nm of energy per dimer (4.7 kBT, or 2.7 kcal mole\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "implying that the wave carries at least 19 pN\u00b7nm of energy per dimer (4.7 kBT, or 2.7 kcal mole\u22121; Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the measured work output and geometric model, shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3f4039b5-9f6e-4d4c-8a98-7d694084802a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C64",
+      "claim": "The conformational wave carries considerable strain energy that can be harnessed to perform mechanical work.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations establish that the conformational wave carries considerable strain energy that can be harnessed to perform mechanical work",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "df0cfffe-858f-49b7-9360-a7208adce29d",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C65",
+      "claim": "The study provides a direct estimate of the strain per tubulin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "and they provide a direct estimate of the strain per tubulin subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "6806b953-e3dc-479c-b062-59a1ad8756d6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C66",
+      "claim": "Mechanical strain in the microtubule lattice is commonly assumed to drive the rapid disassembly of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical strain in the microtubule lattice is commonly assumed to drive the rapid disassembly of microtubules, (Desai and Mitchison, 1997; Nogales and Wang, 2006; VanBuren et al., 2005; Molodtsov et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prevailing assumptions in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "70c9a3bb-7728-4491-b6f8-897bd79eaca5",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C67",
+      "claim": "T238V tubulin forms microtubules that disassemble 7-fold more slowly than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "T238V tubulin forms microtubules that disassemble 7-fold more slowly than wild-type (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "17fad58f-2535-4821-9a27-c4b2a785db1a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C68",
+      "claim": "The conformational wave energy for T238V microtubules was indistinguishable from that of wild-type microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this prediction, however, the conformational wave energy for T238V microtubules was indistinguishable from that of wild-type microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "9588e924-0cb9-4b55-99f4-5ff336a65909",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C69",
+      "claim": "T238V microtubules in the wave assay produced pulses that were ~5 fold slower than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "T238V microtubules in the wave assay produced pulses that were ~5 fold slower than wild-type (Figures 4e, 5c,d and 6a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "ab2fa454-da28-46c4-94a5-0ad8775014db",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C70",
+      "claim": "The wave amplitude-vs-force relation for T238V microtubules was essentially identical to that of wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the wave amplitude-vs-force relation for T238V microtubules was essentially identical to that of wild-type (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c9afdb56-cfd8-46f5-9e6f-997d7f3e0e47",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C71",
+      "claim": "Wild-type and T238V microtubules must store similar amounts of curvature-derived mechanical strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even though they disassemble at very different rates, wild-type and T238V microtubules must store similar amounts of curvature-derived mechanical strain (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental observation of similar work output, shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "581bfd4b-d771-4023-b26e-6b6caa9a3692",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C72",
+      "claim": "The T238V mutation does not substantially alter the intrinsic curvature, flexural rigidity, or contour length of protofilament curls.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar amplitude-vs-force curves further suggest that the mutation does not substantially alter the intrinsic curvature, flexural rigidity, or contour length of protofilament curls, because all of these properties together determine pulse amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observation of similar amplitude-vs-force curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "5dcbe208-8463-4c36-8235-7a6658ca6a72",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C73",
+      "claim": "The mechanical strain energy carried by the dimer was modeled as a function of its bend angle by assuming it behaves as a slender elastic rod with a naturally bent shape, with 23\u00b0 of curvature when fully relaxed.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical strain energy carried by the dimer was modeled as a function of its bend angle by assuming it behaves as a slender elastic rod with a naturally bent shape, with 23\u00b0 of curvature when fully relaxed, (Mandelkow et al., 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical model developed in the study, based on cited structural data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "58c6b1cb-ea04-4943-b9e0-c77929f802ef",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C74",
+      "claim": "The predicted energy landscape implies a curling reaction that proceeds via a high-energy transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted landscape implies a curling reaction that proceeds via a high-energy transition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "1c623082-e642-46b6-8b39-7a2f2d9b9f6d",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C75",
+      "claim": "The high-energy transition state should closely resemble the initial, straight conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "With this assumption, the high-energy transition state should closely resemble the initial, straight conformation (and the curling reaction can be considered 'Eyring-like' [Howard, 2001]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "7077fa47-9297-4643-a9fc-f4a52e85644a",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C76",
+      "claim": "The slower disassembly of T238V microtubules is explained by an increase in the height of the activation barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, the slower disassembly of T238V microtubules is explained by an increase in the height of the activation barrier",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "1ac36560-0033-4431-98df-b170296b1f09",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C77",
+      "claim": "The data exclude the possibility of a substantially higher transition state energy for T238V because this would lead to a higher wave energy for the mutant, which was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data exclude the possibility of a substantially higher transition state energy because this would lead to a higher wave energy for the mutant, which we did not observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "fc2cb79a-16dc-44b6-8743-8544e76235f7",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C78",
+      "claim": "The T238V mutation specifically strengthens lateral bonds, thereby lowering the energy of the starting state and raising the activation barrier, without altering the intrinsic 23\u00b0 curvature or the mechanical rigidity of the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the mutation specifically strengthens lateral bonds, thereby lowering the energy of the starting state and raising the activation barrier, without altering the intrinsic 23\u00b0 curvature or the mechanical rigidity of the dimer (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and theoretical model, illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "e42ff1d0-523c-49d7-a049-6fd87f3faf95",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C79",
+      "claim": "The lattice of mutant T238V microtubules retained an abnormally high affinity for Bim1-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar bright Bim1-GFP decoration at the growing plus-ends of mutant T238V microtubules as well, but the lattice of the mutant T238V microtubules retained an abnormally high affinity for Bim1-GFP (Figure 5\u2014figure supplement 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the study, supported by data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "ffc7cee3-25e5-46b4-8adb-bb6879406379",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C80",
+      "claim": "The lattice conformation of T238V tubulin retains structural characteristics that are normally found only near the ends of growing microtubules (GTP-cap-like).",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the lattice conformation of T238V tubulin retains structural characteristics that are normally found only near the ends of growing microtubules (GTP-cap-like), which may be associated with stronger lateral bonding in the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the Bim1-GFP binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "03b638c8-b399-42ce-adbb-96f8ab135f23",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C81",
+      "claim": "Usually, detaching an end-bound bead by force triggered immediate disassembly of the microtubule (43 of 57 detachments, ~75%).",
+      "claim_type": "EXPLICIT",
+      "source": "Usually, detaching an end-bound bead by force triggered immediate disassembly of the microtubule (43 of 57 detachments, ~75%), which confirms that tubulin dimers were forcibly removed (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the plucking assay, supported by data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "7ae30682-31be-4c2a-838f-3ea0e594a0e6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C82",
+      "claim": "The average force required to pluck tubulins from a wild-type microtubule end was 8.3 \u00b1 0.6 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The average force required to pluck tubulins from a wild-type microtubule end was 8.3 \u00b1 0.6 pN (Figure 8d and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the plucking assay, supported by data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "9f077d48-81e0-4275-9276-76a729153f86",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C83",
+      "claim": "Plucking tubulins from mutant T238V microtubules required considerably more force, 19.0 \u00b1 1.6 pN on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Plucking tubulins from mutant T238V microtubules required considerably more force, 19.0 \u00b1 1.6 pN on average (Figure 8e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental result from the plucking assay, supported by data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3f568402-6ebc-438c-b455-bb0fc60bf612",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C84",
+      "claim": "The higher plucking force for T238V is consistent with stronger lateral bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "This higher plucking force is consistent with stronger lateral bonds, although it could arise from a strengthening of longitudinal bonds, or a strengthening of both kinds of bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the plucking force measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "346f682b-95f7-4299-8d47-95308f460902",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C85",
+      "claim": "Mutant T238V tubulin forms relatively stronger tubulin-tubulin bonds compared to wild-type, at least in the context of an assembling end.",
+      "claim_type": "EXPLICIT",
+      "source": "the observation shows that mutant T238V tubulin forms relatively stronger tubulin-tubulin bonds compared to wild-type, at least in the context of an assembling end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the plucking force measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "88045387-aa66-435f-88d4-16489a6e5705",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C86",
+      "claim": "The amount of strain energy carried by curling protofilaments determines the maximum force-generating capacity of the conformational wave mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "As with any cantilevered spring, the amount of force that curling protofilaments can produce depends on how they are coupled to the object on which they are pushing (Molodtsov et al., 2005; Efremov et al., 2007). The amount of strain energy they carry is a more fundamental quantity, and therefore less sensitive to geometric details of the coupling. Ultimately, this strain energy determines the maximum force-generating capacity of the conformational wave mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of physical principles, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "a6e071ba-eb83-4594-ad61-30e4cf04f3b6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C87",
+      "claim": "Strain energy is fundamentally important for all current models of microtubule dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also fundamentally important for all current models of microtubule dynamic instability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the theoretical importance of strain energy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "08634fe2-578e-4a66-9045-4da8a7eafa8b",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C88",
+      "claim": "Previous studies have attempted to estimate the magnitude of strain energy using thermodynamic approaches and analyses based on the bending rigidity of intact microtubules, yielding estimates spanning more than an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermodynamic approaches (Desai and Mitchison, 1997; Caplow and Shanks, 1996; Howard, 2001) and analyses based on the bending rigidity of intact microtubules (Mickey and Howard, 1995) have yielded estimates spanning more than an order of magnitude (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of previous work, supported by citations and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "da80320c-5dce-46e3-9b3b-87092886e7a6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C89",
+      "claim": "Previous methods can only infer the stored strain indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "But these methods can only infer the stored strain indirectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of previous methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "311cedad-bbca-4e64-812c-ba9eaaf42402",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C90",
+      "claim": "The wave assay has provided a more direct approach for measuring strain energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our wave assay has provided a more direct approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "dcc64418-23a6-44a7-a917-1c5ba6f23684",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C91",
+      "claim": "The estimated strain energy represents ~22% of the total free energy available from GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimate of this stored strain represents ~22% of the total free energy available from GTP hydrolysis (see Figure 4\u2014figure supplement 1d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on the measured work output, shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "d1a34253-c4dd-41ac-ab8b-abf9aa4549f7",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C92",
+      "claim": "Tubulin can convert chemical energy into mechanical work with an efficiency similar to other, more conventional molecular motors, such as kinesin, myosin, and dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that tubulin can convert chemical energy into mechanical work with an efficiency similar to other, more conventional molecular motors, such as kinesin, (Howard, 1996) myosin, (Rief et al., 2000) and dynein (Gennerich et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the measured efficiency, with citations to motor protein studies for comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "655929fd-9205-49bf-a1cd-1231428413d8",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C93",
+      "claim": "The curvature strain energy carried by curling protofilaments is easily sufficient to make a major contribution to the motility of isolated kinetochores and recombinant kinetochore subcomplexes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The curvature strain energy carried by curling protofilaments is easily sufficient to make a major contribution to the motility of isolated kinetochores and recombinant kinetochore subcomplexes in vitro (Volkov et al., 2013; Akiyoshi et al., 2010; Asbury et al., 2006; Powers et al., 2009; Tien et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the measured strain energy, with citations to kinetochore studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "3ee65c1d-e23f-4db6-b31e-d73e79df5f6f",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C94",
+      "claim": "The distance moved per released tubulin dimer is \u03b4 = 0.61 nm, known from the structure of the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance moved per released tubulin dimer, \u03b4 = 0.61 nm, is known from the structure of the microtubule lattice (i.e., the 8 nm length of an \u03b1\u03b2-tubulin dimer divided by 13 protofilaments) (Amos and Klug, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited structural data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "6a3fef73-b04f-43c3-ac4a-a356fc7996fc",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C95",
+      "claim": "The maximum force against which a yeast kinetochore has been observed to track in vitro with disassembly is F = 8.5 \u00b1 1.9 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum force against which a yeast kinetochore has been observed to track in vitro with disassembly is F = 8.5 \u00b1 1.9 pN (based on a line-fit to tracking speeds measured as a function of tension) (Akiyoshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous experimental result.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "5ca0a6bd-b05c-423f-9ff7-8ec9ed30d469",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C96",
+      "claim": "The work per released dimer for yeast kinetochores is F\u00b7\u03b4 = 5.2 \u00b1 1.2 pN\u00b7nm (equivalent to 1.3 \u00b1 0.3 kBT per dimer, or 0.74 \u00b1 0.17 kcal mole\u22121), which is lower than the estimate of curvature strain in the protofilaments by ~3 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplying these gives F\u00b7\u03b4 = 5.2 \u00b1 1.2 pN\u00b7nm of work per released dimer (equivalent to 1.3 \u00b1 0.3 kBT per dimer, or 0.74 \u00b1 0.17 kcal mole\u22121), which is lower than our estimate of curvature strain in the protofilaments, by ~3 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing the study's results to previous kinetochore measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "1c9111f6-e97f-4275-91bf-711cacd6ef03",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C97",
+      "claim": "Tip-couplers made by linking recombinant Dam1 complexes at high density to beads via long tethers can sometimes track against forces up to F = 30 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Tip-couplers made by linking recombinant Dam1 complexes at high density to beads via long tethers can sometimes track against even higher forces, up to F = 30 pN (Volkov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a previous experimental result.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c476ad5c-b3da-4904-ad5f-d3ca4c696add",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C98",
+      "claim": "The maximum force for Dam1 tip-couplers corresponds to F\u00b7\u03b4 = 18 pN\u00b7nm per released dimer (4.5 kBT per dimer, or 2.6 kcal mole\u22121), a value nearly equal to the estimated protofilament strain.",
+      "claim_type": "EXPLICIT",
+      "source": "This maximum force corresponds to F\u00b7\u03b4 = 18 pN\u00b7nm per released dimer (4.5 kBT per dimer, or 2.6 kcal mole\u22121), a value nearly equal to our estimated protofilament strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing the study's results to previous Dam1 measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f1164ecc-e388-45a2-bce7-2356ef505777",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C99",
+      "claim": "Nicklas found that the total force required to stall anaphase chromosome movement in grasshopper spermatocytes was 700 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The most directly comparable in vivo results are the classic microneedle-based measurements of Nicklas, who found that the total force required to stall anaphase chromosome movement in grasshopper spermatocytes was 700 pN (Nicklas, 1983, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a classic in vivo measurement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "c0f67bbf-1b67-4230-aa10-9e0538a79ea9",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C100",
+      "claim": "Assuming the 700 pN load was shared by 15 kinetochore-attached microtubules leads to an estimate of F \u2248 50 pN per microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming this load was shared by 15 kinetochore-attached microtubules leads to an often-cited estimate of F \u2248 50 pN per microtubule (Nicklas, 1983, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited in vivo measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "26bf2a5d-9586-48dc-bb83-92f1a85e0382",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C101",
+      "claim": "If all the energy driving chromosome movement was derived from disassembly of kinetochore-attached microtubule tips, then the work harnessed per released dimer would be F\u00b7\u03b4 = 30 pN\u00b7nm.",
+      "claim_type": "EXPLICIT",
+      "source": "If all the energy driving chromosome movement was derived from disassembly of these kinetochore-attached microtubule tips, then the work harnessed per released dimer would be F\u00b7\u03b4 = 30 pN\u00b7nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited in vivo measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "29b2f5c3-efc1-4304-ae90-cdc853c90762",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C102",
+      "claim": "The majority of the energy for chromosome movement could be derived from protofilament curvature strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the majority of this energy could be derived from protofilament curvature strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the study's results to in vivo measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "ffaa47d8-454e-4835-83d1-7ecc832db5ed",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C103",
+      "claim": "The findings lend strong support to the conformational wave hypothesis for kinetochore motility.",
+      "claim_type": "EXPLICIT",
+      "source": "By establishing that protofilaments carry enough curvature strain energy to make a major contribution to kinetochore movement, our findings lend strong support to the conformational wave hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "a691bb87-13f5-42c3-915a-f022f59a68c3",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C104",
+      "claim": "The study reveals how the rate of microtubule disassembly can be altered dramatically by tubulin mutations that do not necessarily affect the amount of lattice strain or the intrinsic protofilament curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also reveals how the rate of microtubule disassembly can be altered dramatically by tubulin mutations that do not necessarily affect the amount of lattice strain or the intrinsic protofilament curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the T238V mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "51388d43-e91b-44e8-9ed4-1b293e11e45c",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C105",
+      "claim": "The wave assay will be useful for identifying low-strain tubulin mutants and for examining the mechano-chemistry of other recombinant tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the wave assay developed here will be useful for identifying low-strain tubulin mutants and for examining the mechano-chemistry of other recombinant tubulins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "4c3fda93-7b66-4ee2-a164-eca0822ff615",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C106",
+      "claim": "The tether linking the bead to the microtubule is approximately 36 nm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding these values for streptavidin, IgG, and the \u03b2-tubulin tail yielded a total of 36 nm for the complete tether.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on structural estimates described in the Materials and methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "e6ef4997-1460-47c4-888c-81b09163b7c1",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "claim_id": "C107",
+      "claim": "The curl height is estimated to be h = 20 nm based on electron micrographs of disassembling tips.",
+      "claim_type": "EXPLICIT",
+      "source": "given estimates of the height that the curls project from the microtubule surface (~20 nm, based on electron micrographs of disassembling tips) (Mandelkow et al., 1991; McIntosh et al., 2013, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on cited electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3e4438d5-099e-4b50-ad1d-86288eb8f615",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The modified wave assay using recombinant yeast tubulin with flexible antibody tethers and feedback-controlled laser trapping reliably detects large, fast pulses of movement from disassembling microtubule tips. At low opposing force (<5 pN), pulses were observed in 90% of events (148/164), with amplitudes often >60 nm and risetimes 5-10 fold faster (0.1-0.3 s) than previously recorded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C35 describe methodological improvements and their outcomes. The experimental data (C31-C34) directly support that the modified assay produces more reliable and faster pulses than the prior Grishchuk et al. study. The use of single antibody tethers and feedback control (C21-C22, C29-C30) is well-documented, and the inference that these modifications reduced restriction on protofilament curling (C35) is reasonable given the improved detection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Curling protofilaments exhibit spring-like elasticity, with pulse amplitudes decreasing as laser trap force increases until reaching a stall force of 8-16 pN (depending on bead size), which is at least 16-fold higher than previously measured (<0.5 pN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 present force-displacement measurements showing spring-like behavior. The data in Figure 2 clearly demonstrate amplitude decreasing with force (C36) and complete suppression at stall force (C38-C39). The comparison to prior work (C40) is appropriately cited. The conclusion about spring-like elasticity (C37, C41) follows directly from the force-displacement relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "f3fd4043-6c11-4853-8529-71dcd17633da",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The lateral push mechanism, where curling protofilaments push laterally against the bead causing it to pivot about the tether, explains most pulse events. This is supported by: (1) stable bead position before pulses in 98% of trials, (2) stall forces decreasing with bead size (16.2\u00b13.0 to 8.4\u00b10.9 pN for 320-900 nm beads), and (3) unloaded amplitudes increasing with bead size (45.2\u00b13.6 to 64.3\u00b13.6 nm), all consistent with geometric predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C55 present a geometric model and test its predictions. The experimental observations (C46-C47, C51, C53) match the model's predictions (C50, C52) quantitatively (C54). The stable baseline before pulses (C46) argues against the alternative axial pull mechanism (C48-C49). The agreement between predicted curves and data (Figure 4a-b) provides strong support for the lateral push model (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "63469e4b-809d-4a21-9553-78d6a5ba58aa",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The total mechanical work output of curling protofilaments is W = 304\u00b124 pN\u00b7nm (74-fold greater than thermal energy), independent of bead size. Based on geometric analysis, this derives from ~16 tubulin dimers (4 curls \u00d7 4 dimers each), yielding at least 19 pN\u00b7nm (4.7 kBT or 2.7 kcal/mol) of strain energy per dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 present the key energetic measurement. The bead-size independence (C56, Figure 4c) supports that W measures intrinsic protofilament strain (C57). The calculation of W=304\u00b124 pN\u00b7nm (C58-C59) is based on integrating amplitude-vs-force curves. The geometric inference about 16 dimers (C60-C62) relies on reasonable assumptions (curl height ~20 nm from EM, 4 curls maximum). The per-dimer energy calculation (C63) follows logically, establishing the main result (C64-C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The T238V \u03b2-tubulin mutant forms microtubules that disassemble 7-fold more slowly than wild-type but produce conformational waves with indistinguishable energy (W~300 pN\u00b7nm). Pulses from T238V microtubules are ~5-fold slower but have essentially identical amplitude-vs-force relationships, indicating that disassembly speed can be uncoupled from protofilament curvature strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72, C25, C5-C6 present the surprising T238V mutant results. The 7-fold slower disassembly (C67, Figure 5\u2014supplement 1) and ~5-fold slower pulses (C69) are well-documented. The similar wave energy (C68, C71, Figure 4c, 6c) and amplitude-vs-force curves (C70) directly support the uncoupling conclusion (C6, C25). The inference that intrinsic curvature and rigidity are unchanged (C72) is reasonable given the identical amplitude-vs-force relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "11b3c4c4-30bb-4181-932d-17866154c797",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "An energy landscape model explains the T238V results: the mutation strengthens lateral bonds, lowering the starting state energy and raising the activation barrier without altering intrinsic curvature (23\u00b0) or mechanical rigidity. This increases the barrier height for the curling reaction while maintaining similar transition state energy, consistent with slower disassembly but unchanged wave energy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 present a theoretical model to explain the T238V data. The model (C73-C75) is physically reasonable, treating tubulin as an elastic rod. The explanation for slower disassembly via higher activation barrier (C76) is standard transition state theory. The exclusion of higher transition state energy (C77) follows logically from the unchanged wave energy. The proposed mechanism of strengthened lateral bonds (C78) is consistent with all observations, though labeled as speculation in the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "58c87fa4-35e0-4373-a7d0-13dacef8a2b6",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "T238V microtubule lattices retain abnormally high affinity for Bim1-GFP, indicating the mutant lattice conformation retains structural characteristics normally found only at growing microtubule ends (GTP-cap-like), potentially associated with stronger lateral bonding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 present Bim1-GFP binding data supporting the lateral bond strengthening hypothesis. The observation of high lattice affinity (C79, Figure 5\u2014supplement 1c-d) is clear. The inference about GTP-cap-like structure (C80) is reasonable given Bim1's known preference for growing ends, though the connection to lateral bonding is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8bee652c-223e-4234-9b94-fd2b7773f300",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A novel plucking assay shows that forcibly removing tubulins from growing microtubule ends requires 8.3\u00b10.6 pN for wild-type but 19.0\u00b11.6 pN for T238V mutant, indicating T238V forms stronger tubulin-tubulin bonds, consistent with strengthened lateral bonds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 present the plucking assay results. The experimental design is clear and the observation that detachment triggers disassembly (C81, 75% of events) validates that tubulins were removed. The measured forces (C82-C83, Figure 8) show a clear ~2.3-fold difference. The inference of stronger bonds (C84-C85) is reasonable, though the authors appropriately note uncertainty about whether lateral vs. longitudinal bonds are affected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "62be9600-26dc-4118-b2d8-0d18af260357",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Curling protofilaments carry ~22-25% of GTP hydrolysis energy as bending strain, enabling them to convert chemical energy into mechanical work with efficiency similar to conventional molecular motors (kinesin, myosin, dynein).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C91-C92 present the efficiency calculation. The ~22% value (C91) is calculated from W=304 pN\u00b7nm relative to ~87 pN\u00b7nm from GTP hydrolysis (stated in Figure 4\u2014supplement 1d). The ~25% in the abstract (C3) is consistent within error. The comparison to motor proteins (C4, C92) is appropriate given similar efficiencies (20-50% for conventional motors), though the citations support this comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "04622a06-4026-4e1e-b6b6-f5335d05c77b",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The measured protofilament strain energy (19 pN\u00b7nm per dimer) is sufficient to power kinetochore motility in vitro. For yeast kinetochores tracking at F=8.5\u00b11.9 pN, the work per dimer is F\u00b7\u03b4=5.2\u00b11.2 pN\u00b7nm (~3-fold less than protofilament strain). For Dam1 tip-couplers tracking at F=30 pN, the work per dimer is F\u00b7\u03b4=18 pN\u00b7nm, nearly equal to the estimated strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98 compare the measured strain to in vitro kinetochore studies. The calculations (C96, C98) correctly use \u03b4=0.61 nm from lattice structure (C94) and forces from cited studies (C95, C97). The comparisons show the strain energy is sufficient (C93), with quantitative agreement for Dam1 complexes. The logic is sound and appropriately cites prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b5beafb6-69a4-4b44-80c1-d3716a818273",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Comparing to classic in vivo measurements (Nicklas: 700 pN total force, ~50 pN per microtubule for 15 kinetochore-attached microtubules), the work per dimer would be F\u00b7\u03b4=30 pN\u00b7nm if all energy came from disassembly. The measured protofilament strain (19 pN\u00b7nm per dimer) could provide the majority of this energy, lending strong support to the conformational wave hypothesis for kinetochore motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 extend the comparison to in vivo data. The Nicklas measurements (C99-C100) are appropriately cited classics. The calculation (C101) is straightforward. The conclusion that protofilament strain could provide the majority of energy (C102) is reasonable given 19 vs. 30 pN\u00b7nm. The strong support for the conformational wave hypothesis (C103) is justified as a main conclusion, though it assumes all energy comes from tip disassembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "b9476763-f41c-4fa5-8253-2d8c50a4e2b1",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study reveals that tubulin mutations can dramatically alter disassembly rate without affecting lattice strain or intrinsic curvature. The wave assay will be useful for identifying low-strain mutants and examining mechano-chemistry of other recombinant tubulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 summarizes a key finding from the T238V experiments, well-supported by the data. Claim C105 is explicitly labeled as speculation about future applications, which is appropriate for a discussion section. Both are reasonable conclusions from the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Strain energy is the fundamental quantity determining the conformational wave mechanism's force-generating capacity and is important for all models of microtubule dynamic instability. Previous indirect methods yielded estimates spanning more than an order of magnitude; the wave assay provides a more direct approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 provide context for the study's contribution. The statement about strain energy's importance (C86-C87) is well-established. The summary of previous estimates (C88, Figure 4\u2014supplement 1d) is appropriately cited. The claim about indirect methods (C89) and the wave assay being more direct (C90) are reasonable characterizations of the methodological advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context: Disassembling microtubules can generate pulling forces at kinetochores to drive chromosome movement. The conformational wave model proposes protofilaments pull as they curl outward, with strain energy trapped after GTP hydrolysis. Previous work by Grishchuk et al. measured forces <0.5 pN but could not determine the energy carried by curling protofilaments due to experimental limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 provide background and motivation. These are appropriately cited statements about established knowledge (C1, C7-C9, C12-C13, C19-C20), theoretical models (C2, C11), and prior work (C14-C17). The characterization of limitations in the Grishchuk study (C26-C28) is reasonable. These claims establish context rather than present new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    },
+    {
+      "id": "ef0a203a-ae32-4866-9b58-beb384223e39",
+      "content_id": "bd971982-3ab3-4d8f-a639-df5a8ec066f9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details: The tether linking beads to microtubules is approximately 36 nm long (calculated from streptavidin, IgG, and \u03b2-tubulin tail dimensions). The curl height is estimated at h=20 nm based on electron micrographs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 present structural estimates used in geometric modeling. The tether length calculation (C106) is reasonable based on known protein dimensions. The curl height (C107) is appropriately taken from cited EM studies. These are supporting methodological details rather than primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:46.915021Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "975572c8-03a3-44ec-ac8d-02f5886462d0",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "7e5c4102-7beb-47ab-9a92-3905e7387feb",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "070440c7-2e6c-449b-b889-e9b326e2304f",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "4f6b4d00-829a-4bae-a821-ba45d87a1977",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "3f5a885b-e8a8-40fc-9c23-c6a5700383e6",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "963ffa8e-1118-41a6-955a-2b92c1269345",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "3b8f03b1-4a97-4645-84d6-0622d76e1342",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "df1d0db8-ec41-4ead-9663-c2a8b8586dbb",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "7ca82366-cdb4-4ec3-9c89-bbc4b97453f4",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "80fee449-4616-47d8-b5f0-2d210295a13d",
+      "result_id": "3e4438d5-099e-4b50-ad1d-86288eb8f615"
+    },
+    {
+      "claim_id": "d3f78fa5-de37-4381-beaa-16e4d41fc1ba",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "2af3436c-de53-4a0f-a071-b8bd1c511431",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "f5cc45b5-ab84-4ba8-9e80-4722183359db",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "519229cd-dc67-4873-a78b-ed42eca6d0d7",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "acc438c9-4e56-4230-a715-a92ab18b4e9e",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "5865d3ba-99a7-4185-acb2-fd7f90e53046",
+      "result_id": "8482655f-9ca2-4d48-9c7a-be8b6ccec9dc"
+    },
+    {
+      "claim_id": "871d29c3-b413-4b64-a48b-419e71a2633d",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "91143e45-ebc3-4d4a-b719-2bb77bcff824",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "3db83717-5b61-45b1-9bea-ad3eff433698",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "2c3a8849-e761-411a-81f9-456ddad0baf4",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "c232adda-e11d-41d3-b152-1e006fce9d0a",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "f91078ec-47de-4473-8592-be8baacf32ac",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "fdaaaff7-8c66-4e59-9f98-08962391e0b2",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "5be6f543-bd7d-4ac6-8cec-83d9dd7306b8",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "b1fa28e5-a238-4c40-8186-e943184895d9",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "7d38476e-248a-4b8c-bc9f-2dbc038da6d2",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "67a7d493-e140-48a6-9708-ef32ddcc1ce2",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "a5d0c71e-6e60-4ea6-a6c9-ef7fbc0585a2",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "00c78dd1-a8bc-4081-974a-c1ede862ea55",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "925eb048-d931-474c-b537-7eb0fb6ee158",
+      "result_id": "f3fd4043-6c11-4853-8529-71dcd17633da"
+    },
+    {
+      "claim_id": "30faee14-7f98-4cf8-96e3-881722b13c30",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "109d4fa2-dde7-43f7-aae1-6ff5bedec757",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "b2bf1f53-98c0-48de-a925-614c219af00a",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "763a06c4-ba92-44d3-9c1e-fed98965ffc3",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "8f3bc0c8-2e11-4648-bc50-7d2a5833a269",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "c5a9f29d-d50f-44f2-8e64-f2f256b99fb6",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "82e48cd7-8ef3-4e8a-82ac-cb90fc89e784",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "ec85a0a1-de17-4e6d-93b4-35ea44246f7e",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "3f4039b5-9f6e-4d4c-8a98-7d694084802a",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "df0cfffe-858f-49b7-9360-a7208adce29d",
+      "result_id": "63469e4b-809d-4a21-9553-78d6a5ba58aa"
+    },
+    {
+      "claim_id": "70c9a3bb-7728-4491-b6f8-897bd79eaca5",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "17fad58f-2535-4821-9a27-c4b2a785db1a",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "9588e924-0cb9-4b55-99f4-5ff336a65909",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "ab2fa454-da28-46c4-94a5-0ad8775014db",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "c9afdb56-cfd8-46f5-9e6f-997d7f3e0e47",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "581bfd4b-d771-4023-b26e-6b6caa9a3692",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "b9ced9bf-53e2-4cd2-b656-6d8c512d11d4",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "04ed4e54-e90c-403b-b603-6cdb66843c41",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "daba523a-ffbe-476a-b516-dfdfad21ff1a",
+      "result_id": "1383872a-d6c4-4cc7-a496-6f9713e4fe04"
+    },
+    {
+      "claim_id": "5dcbe208-8463-4c36-8235-7a6658ca6a72",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "58c6b1cb-ea04-4943-b9e0-c77929f802ef",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "1c623082-e642-46b6-8b39-7a2f2d9b9f6d",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "7077fa47-9297-4643-a9fc-f4a52e85644a",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "1ac36560-0033-4431-98df-b170296b1f09",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "fc2cb79a-16dc-44b6-8743-8544e76235f7",
+      "result_id": "11b3c4c4-30bb-4181-932d-17866154c797"
+    },
+    {
+      "claim_id": "e42ff1d0-523c-49d7-a049-6fd87f3faf95",
+      "result_id": "58c87fa4-35e0-4373-a7d0-13dacef8a2b6"
+    },
+    {
+      "claim_id": "ffc7cee3-25e5-46b4-8adb-bb6879406379",
+      "result_id": "58c87fa4-35e0-4373-a7d0-13dacef8a2b6"
+    },
+    {
+      "claim_id": "03b638c8-b399-42ce-adbb-96f8ab135f23",
+      "result_id": "8bee652c-223e-4234-9b94-fd2b7773f300"
+    },
+    {
+      "claim_id": "7ae30682-31be-4c2a-838f-3ea0e594a0e6",
+      "result_id": "8bee652c-223e-4234-9b94-fd2b7773f300"
+    },
+    {
+      "claim_id": "9f077d48-81e0-4275-9276-76a729153f86",
+      "result_id": "8bee652c-223e-4234-9b94-fd2b7773f300"
+    },
+    {
+      "claim_id": "3f568402-6ebc-438c-b455-bb0fc60bf612",
+      "result_id": "8bee652c-223e-4234-9b94-fd2b7773f300"
+    },
+    {
+      "claim_id": "346f682b-95f7-4299-8d47-95308f460902",
+      "result_id": "8bee652c-223e-4234-9b94-fd2b7773f300"
+    },
+    {
+      "claim_id": "c0192a37-84f5-4678-bb4a-5b91caa9e1d0",
+      "result_id": "62be9600-26dc-4118-b2d8-0d18af260357"
+    },
+    {
+      "claim_id": "d596bf34-e080-441e-8d1e-aa24555fe460",
+      "result_id": "62be9600-26dc-4118-b2d8-0d18af260357"
+    },
+    {
+      "claim_id": "dcc64418-23a6-44a7-a917-1c5ba6f23684",
+      "result_id": "62be9600-26dc-4118-b2d8-0d18af260357"
+    },
+    {
+      "claim_id": "d1a34253-c4dd-41ac-ab8b-abf9aa4549f7",
+      "result_id": "62be9600-26dc-4118-b2d8-0d18af260357"
+    },
+    {
+      "claim_id": "655929fd-9205-49bf-a1cd-1231428413d8",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "3ee65c1d-e23f-4db6-b31e-d73e79df5f6f",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "6a3fef73-b04f-43c3-ac4a-a356fc7996fc",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "5ca0a6bd-b05c-423f-9ff7-8ec9ed30d469",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "1c9111f6-e97f-4275-91bf-711cacd6ef03",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "c476ad5c-b3da-4904-ad5f-d3ca4c696add",
+      "result_id": "04622a06-4026-4e1e-b6b6-f5335d05c77b"
+    },
+    {
+      "claim_id": "f1164ecc-e388-45a2-bce7-2356ef505777",
+      "result_id": "b5beafb6-69a4-4b44-80c1-d3716a818273"
+    },
+    {
+      "claim_id": "c0f67bbf-1b67-4230-aa10-9e0538a79ea9",
+      "result_id": "b5beafb6-69a4-4b44-80c1-d3716a818273"
+    },
+    {
+      "claim_id": "26bf2a5d-9586-48dc-bb83-92f1a85e0382",
+      "result_id": "b5beafb6-69a4-4b44-80c1-d3716a818273"
+    },
+    {
+      "claim_id": "29b2f5c3-efc1-4304-ae90-cdc853c90762",
+      "result_id": "b5beafb6-69a4-4b44-80c1-d3716a818273"
+    },
+    {
+      "claim_id": "ffaa47d8-454e-4835-83d1-7ecc832db5ed",
+      "result_id": "b5beafb6-69a4-4b44-80c1-d3716a818273"
+    },
+    {
+      "claim_id": "a691bb87-13f5-42c3-915a-f022f59a68c3",
+      "result_id": "b9476763-f41c-4fa5-8253-2d8c50a4e2b1"
+    },
+    {
+      "claim_id": "51388d43-e91b-44e8-9ed4-1b293e11e45c",
+      "result_id": "b9476763-f41c-4fa5-8253-2d8c50a4e2b1"
+    },
+    {
+      "claim_id": "88045387-aa66-435f-88d4-16489a6e5705",
+      "result_id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862"
+    },
+    {
+      "claim_id": "a6e071ba-eb83-4594-ad61-30e4cf04f3b6",
+      "result_id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862"
+    },
+    {
+      "claim_id": "08634fe2-578e-4a66-9045-4da8a7eafa8b",
+      "result_id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862"
+    },
+    {
+      "claim_id": "da80320c-5dce-46e3-9b3b-87092886e7a6",
+      "result_id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862"
+    },
+    {
+      "claim_id": "311cedad-bbca-4e64-812c-ba9eaaf42402",
+      "result_id": "4f85e9f3-742c-4aa2-bf27-0728fa15e862"
+    },
+    {
+      "claim_id": "58a719e6-b3e5-4619-b212-0bfad735dbce",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "316bb97a-e6c1-493b-90ca-dc68611753e5",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "eab97b72-a328-4309-be9d-0078aa51fe9b",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "563e8026-bb01-499f-afd0-e7e61a72fb29",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "c208ea74-a6dc-4560-9230-d7d126650d36",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "f3f4219d-427e-4956-a04e-34884c8e6a0c",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "a5c123e9-8231-4617-a9a6-25ce1d0de3d9",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "a34593a3-ee5e-486a-a634-0ffcbd3b2daa",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "eadbbdbf-7875-4268-8d93-a73f68ef40f7",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "aff13dfa-0609-4df3-9a82-c0f55cbaaee1",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "249b5c2f-5c6d-4513-bbad-46094e46d214",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "c925550a-6797-496a-81f2-fbed81bb4da6",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "8f812833-8cf2-4953-aee0-3f2d8e6c4378",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "b70898e4-d9dd-4c62-b3db-4aa7febd0f3c",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "b853b525-df46-4cea-ac1f-62d9e005314c",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "f02e634c-4066-4bdc-90eb-149200ca5661",
+      "result_id": "8fcfd0e5-f195-4966-a5b2-28be8ecb9e97"
+    },
+    {
+      "claim_id": "4c3fda93-7b66-4ee2-a164-eca0822ff615",
+      "result_id": "ef0a203a-ae32-4866-9b58-beb384223e39"
+    },
+    {
+      "claim_id": "e6ef4997-1460-47c4-888c-81b09163b7c1",
+      "result_id": "ef0a203a-ae32-4866-9b58-beb384223e39"
+    }
+  ],
+  "comparisons": []
+}

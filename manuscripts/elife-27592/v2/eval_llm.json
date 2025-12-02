@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "U1 binding to pre-mRNA exhibits bi-exponential kinetics with short-lived (\u03c41) and long-lived (\u03c42) binding events. The long-lived events and their amplitude (A2) are highly sensitive to 5' SS strength, decreasing dramatically when the 5' SS is weakened or removed. However, short-lived events (\u03c41) and overall binding frequency remain relatively constant regardless of 5' SS presence, suggesting that short-lived events are not solely dependent on strong 5' SS base pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 collectively demonstrate bi-exponential U1 binding kinetics through rastergrams, dwell time distributions, and fitted parameters (Figures 1E-J). The data show that removal or weakening of the 5' SS dramatically reduces \u03c42 and A2 while \u03c41 and binding frequency remain relatively unchanged. RNase H ablation of the U1 snRNA 5' end (C40) confirms that long-lived events require base pairing capability. The hyperstabilized 5' SS results (C42) show asymmetric sensitivity, supporting the conclusion that long-lived events are more sensitive to loss than gain of base pairing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "E complex proteins (ECPs), specifically the CBC and BBP, are responsible for recruiting U1 to RNAs in the absence of a functional 5' SS. When both the CBC (via cap analog addition) and BBP (via BS/\u03a8BS mutation) are mitigated, U1 binding to RNAs lacking a 5' SS is eliminated. However, U1 can still bind RNAs with strong 5' SS even after ECP mitigation, indicating that short-lived U1 binding events originate from both 5' SS-dependent and ECP-dependent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are well-supported by systematic manipulation of ECPs and 5' SS (Figure 2). The data show that simultaneous mitigation of CBC (via CA) and BBP (via BS/\u03a8BS mutation) eliminates U1 binding to RNAs lacking functional 5' SS (C47), while binding persists on RNAs with strong 5' SS (C50). RNase H ablation experiments (C48) confirm these findings. The conclusion that short-lived events involve both 5' SS and ECP interactions is logically supported by the differential effects of ECP mitigation on different RNA substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ECPs significantly modulate U1 binding even at strong consensus 5' SS. When ECPs are mitigated, the long-lived binding parameter (\u03c42) is reduced ~3-fold and long-lived events become less frequent. After ECP mitigation, hyperstabilization of the 5' SS causes a 2-fold increase in both \u03c42 and A2, an effect that is masked when ECPs are present. This demonstrates that the longest-lived U1 complexes depend on both the 5' SS and ECPs, and that ECPs mask the effects of increased base pairing potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by systematic comparison of U1 binding kinetics with and without ECP mitigation (Figures 1H-J vs. 2D-F). The data show that ECP mitigation reduces \u03c42 by ~3-fold on consensus 5' SS (C55) and that U1 dwell times on RNAs with 5' SS but without ECPs are similar to those on RNAs lacking 5' SS but with ECPs (C56). The hyperstabilization experiments (C59) demonstrate that ECPs mask the effect of increased base pairing, as the difference between consensus and hyperstabilized 5' SS only becomes apparent after ECP mitigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The CBC (via the 5' cap) and BBP (via the BS/\u03a8BS) modulate U1 binding through distinct mechanisms. Both the cap and BS/\u03a8BS can modulate the lifetime of long-lived U1 binding events (\u03c42), but only the BS/\u03a8BS influences the relative abundance of long-lived events (A2). The cap only decreases U1 lifetimes on RNAs lacking a BS/\u03a8BS, while removal of the BS/\u03a8BS only decreases U1 lifetimes in the presence of cap analog, indicating conditional effects. However, the BS/\u03a8BS changes A2 independent of cap presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by systematic manipulation of both the cap (via CA) and BS/\u03a8BS (via mutation) and analysis of their effects on \u03c42 and A2 (Figure 2H-I). The data show that both factors can modulate \u03c42, but only the BS/\u03a8BS affects A2 (C66). The conditional effects (C64-C65) are demonstrated by comparing different combinations of CA addition and BS/\u03a8BS presence. These findings support the conclusion that CBC and BBP modulate U1 binding through distinct molecular mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "U1 and BBP frequently colocalize on the same pre-mRNA, forming complexes that likely represent E complex. These colocalized complexes persist from seconds to minutes. U1 molecules colocalizing with BBP have significantly longer mean lifetimes (182.3 \u00b1 35.6 s) compared to U1 binding without BBP (73.6 \u00b1 32.2 s), indicating that simultaneous BBP binding promotes a functional change in U1 that stabilizes its association with the pre-mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by three-color CoSMoS experiments (Figure 3B-D). The data show frequent U1/BBP colocalization (C67) with variable lifetimes (C69). The mean lifetime comparison (C71) is statistically significant and supported by a randomized control showing no difference (Figure 3\u2014figure supplement 4). The conclusion that BBP promotes stable U1 binding (C72) is well-supported by the quantitative lifetime data. The inference that colocalized complexes represent E complex (C70) is reasonable given that long-lived U1 and BBP complexes depend on 5' SS and BS presence, respectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "E complex exhibits dynamic behavior with bi-exponential lifetime distribution (\u03c41 ~20 s, \u03c42 ~165 s), indicating multiple types of E complexes exist. E complex can assemble via either U1-first or BBP-first pathways. After formation, frequent redefinition of the 5' SS and BS occurs through spontaneous dissociation and rebinding of U1 or BBP, with only single molecules of each bound at a time. Loss of U1 or BBP from E complex is nearly equally probable, but subsequent fates differ: pre-mRNAs losing U1 are twice as likely to lose BBP than redefine the 5' SS, while those losing BBP are nearly twice as likely to redefine the BS. These redefinition events occur without ATP, indicating E complex is dynamic and results in little commitment to any particular 5' SS/BS pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 are comprehensively supported by three-color CoSMoS data (Figure 3). The bi-exponential E complex lifetime distribution (C73) is shown in Figure 3E with fitted parameters. E complex assembly pathways (C75) are demonstrated in Figure 3\u2014figure supplement 6. Redefinition events (C76) are directly observed in rastergrams (Figure 3C), and stoichiometry analysis (C77, Figure 3\u2014figure supplement 7) confirms single molecule binding. The fate analysis (C79-C81) is quantified in Figure 3F. The absence of ATP in experiments (C78) supports the conclusion that redefinition is ATP-independent. The overall conclusion of dynamic E complex with little commitment (C83) is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The Yhc1 protein is directly involved in both short- and long-lived U1 binding, and its impact is modulated by ECPs. The Yhc1-L13F mutation, which destabilizes U1/5' SS pairing, minimally affects U1 binding when ECPs are present but completely eliminates binding to consensus 5' SS when ECPs are mitigated. The Yhc1-D36A mutation, which stabilizes U1/5' SS pairing, doubles the short-lived parameter \u03c41 in the presence of ECPs, but this effect disappears when ECPs are mitigated. These results demonstrate that Yhc1 mutations affect U1 binding dynamics and that ECPs can modify these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 are supported by systematic analysis of Yhc1 mutants under different ECP conditions (Figure 4). The minimal perturbation of Yhc1-L13F in the presence of ECPs (C86-C87) and complete loss of binding when ECPs are mitigated (C89) are shown in Figure 4C-F. The Yhc1-D36A effects on \u03c41 (C88, C92) are demonstrated in Figure 4D. The conclusion that Yhc1 is involved in both short- and long-lived binding (C93) is supported by the differential effects of the two mutations. The modulation by ECPs (C94) is clearly demonstrated by comparing binding with and without ECP mitigation. The agreement with prior work (C90) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Yhc1-L13F U1 binds hyperstabilized 5' SS with dramatically increased stability when ECPs are mitigated, persisting for tens of minutes with large increases in both \u03c42 and A2. These extremely long-lived binding events can only be suppressed by simultaneously permitting both BBP and CBC to bind; individually including the BS/\u03a8BS or omitting cap analog does not significantly decrease \u03c42. This demonstrates that ECPs can tune U1 interactions in different ways depending on U1 composition and 5' SS strength, either enhancing binding or promoting release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 are supported by analysis of Yhc1-L13F U1 on hyperstabilized RNAs (Figure 5). The dramatic increase in stability (C96-C97) is shown in rastergrams (Figure 5C-D) and quantified in Figure 5E-F. The requirement for both ECPs to suppress long-lived binding (C99-C101) is demonstrated in Figure 5\u2014figure supplement 2. The agreement with prior work (C98, C102) strengthens the interpretation. The conclusion that ECPs can tune U1 interactions in different ways (C103) is well-supported by the contrasting effects observed with different U1 variants and 5' SS strengths throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "U1 binding occurs through a two-step mechanism where initial, fleeting 5' SS-dependent interactions transition into more stable complexes. E complex tunes U1 occupancy by altering complex stability at each step and regulating the transition between initial and stable binding. Multiple lines of evidence support this model: (1) all U1/5' SS interactions depend on the 5' SS sequence, Yhc1 protein, and snRNA, indicating both short- and long-lived events occur at the duplex formation site; (2) increasing base pairs at the 5' SS increases both \u03c42 and A2 simultaneously without changing binding frequency, consistent with short-lived complexes transitioning more frequently to long-lived complexes; (3) short-lived events persist even under maximally stabilizing conditions, as expected if they are precursors to stable binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C112 present a mechanistic model supported by the collective experimental data. The two-step binding mechanism (C104-C105) is supported by prior work and the bi-exponential kinetics observed throughout. The evidence that both binding modes occur at the duplex site (C107) is supported by the dependence on 5' SS, Yhc1, and snRNA (Figures 2C-F, 4, 1\u2014figure supplement 3). The hyperstabilization data (C108-C109, Figure 2C-F) support the transition model by showing coordinated changes in \u03c42 and A2. The persistence of short-lived events under stabilizing conditions (C110, Figure 5D) supports the precursor model (C111). The model is internally consistent and parsimoniously explains the observed kinetic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The spliceosome E complex is dynamic and readily disassembled without ATP, with only a subset of complexes stable enough to result in commitment. The kinetic characterization reveals heterogeneity with both short- and long-lived E complexes. This dynamic behavior permits rapid definition and redefinition of the 5' SS and BS used by the spliceosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by the three-color CoSMoS data showing dynamic U1/BBP interactions (Figure 3C) and the bi-exponential E complex lifetime distribution (Figure 3E). The conclusion that E complex is readily disassembled without ATP (C115-C116) is supported by the observed dynamics in the absence of ATP and agrees with prior identification of committed and uncommitted complexes (Ruby, 1997). The characterization of E complex heterogeneity (C117) is directly demonstrated by the kinetic analysis. The functional consequence for 5' SS/BS definition (C118) logically follows from the observed redefinition events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "BBP association with pre-mRNA stimulates stable U1 binding, but frequent BBP release and rebinding while U1 remains bound suggests U1 stabilization could be triggered by BS sequences not ultimately used by the spliceosome. This flexibility may be important for regulating splicing, particularly on long introns with many potential BS sequences. In the presence of ATP, redefinition likely competes with spliceosome assembly, and modulation of E complex and other splicing factor binding kinetics may regulate proper 5' SS and BS selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C124 mix supported findings with speculation. The stimulation of stable U1 binding by BBP (C119) is well-supported by the colocalization data (Figure 3, C71-C72). However, the suggestion that U1 stabilization could be triggered by non-functional BS sequences (C120) is speculative, based on inference from the observed dynamics but not directly tested. The proposed importance for long introns (C122) and competition with assembly in the presence of ATP (C123) are reasonable hypotheses but lack direct experimental support. The speculation about modulation of binding kinetics for proper selection (C124) is plausible but not demonstrated. These claims represent reasonable interpretations and future directions but go beyond what the data directly support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Yeast ECPs function to facilitate U1 recruitment to pre-mRNAs with weak splice sites, modulate U1 interactions at consensus splice sites, and destabilize U1 binding when excessive complementarity is present. Tuning of U1 interactions is a general feature of both weak and strong splice sites, and the lifetime of a U1/pre-mRNA complex may not be apparent from base pairing potential alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 synthesize the major findings regarding ECP function. Facilitation of U1 recruitment to weak splice sites (C126) is supported by Figure 1D data. Modulation at consensus sites (C127) is demonstrated throughout Figure 2. Destabilization with excessive complementarity (C128) is shown in Figures 1, 2, and 5. The conclusion that tuning is a general feature (C129) and that lifetime cannot be predicted from base pairing alone (C130) are well-supported by the collective data showing that identical 5' SS sequences exhibit different U1 binding kinetics depending on ECP presence. These represent well-supported summary conclusions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C148"
+    ],
+    "result": "The BS exerts an additional effect on U1 by increasing the relative abundance (A2) of long-lived complexes, which is rationalized by BBP/Mud2 at the BS impacting the transition between initial and stable U1 binding in the two-step model. While BBP/Mud2 and CBC each help anchor U1 to transcripts, their molecular influences on U1 are distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 are supported by the differential effects of cap and BS/\u03a8BS on \u03c42 and A2 (Figure 2H-I, C61-C66). The finding that the BS affects A2 independent of cap presence (C145, C66) is clearly demonstrated. The rationalization through the two-step model (C146) is consistent with the overall mechanistic framework and the data showing that the BS promotes the transition to long-lived binding. The conclusion that CBC and BBP have distinct molecular influences (C148) is well-supported by their differential effects on binding parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C154",
+      "C155"
+    ],
+    "result": "Transcripts containing introns (with cap, 5' SS, and BS) are more competitive for U1 than those with only 5' SS or only ECPs. The authors propose that CBC facilitates sequence-independent U1 recruitment to transcripts, biasing U1 occupancy toward Pol II products that may contain introns. Initial recruitment may not involve snRNA/transcript pairing since the 5' end of the snRNA is not required for transient ECP-dependent interactions. If the transcript contains a downstream BS bound by BBP/Mud2, this promotes both recruitment and the switch to stable binding. The two-step mechanism results in coupling of 5' SS and BS recognition, with stable U1 binding associated with multiple intron landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 present an integrated model of U1 recruitment and capture. The competitiveness of intron-containing transcripts (C149) logically follows from the demonstrated effects of cap, 5' SS, and BS on U1 binding stability. The proposal of CBC-mediated sequence-independent recruitment (C150) is supported by the observation that U1 binds RNAs lacking 5' SS when the cap is present (Figure 1D). The inference that initial recruitment may not involve pairing (C151) is supported by the RNase H ablation data (Figure 1\u2014figure supplement 3). The role of BBP in promoting recruitment and stable binding (C152) is well-supported by the colocalization data (Figure 3). The coupling of 5' SS and BS recognition (C154) and association with multiple landmarks (C155) are logical consequences of the two-step model and the demonstrated effects of both elements on U1 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The data support a two-step mechanism for U1 snRNP recruitment to 5' SS similar to mechanisms used by Cas9 and Argonaute, where short-lived interactions give way to longer-lived complexes. The U1-C/Yhc1 protein is positioned to potentially participate in a 'seed' region that nucleates U1 binding, which could explain the observed kinetics and provide U1 an efficient means of searching for potential 5' SS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C159 is well-supported by the extensive kinetic data demonstrating two-step binding. However, claims C160-C161 regarding a potential 'seed' region are speculative. While the structural position of Yhc1 (Figure 4A) and its demonstrated role in U1 binding support the possibility of seed-like function, the data do not directly demonstrate a seed region analogous to those in Cas9 and Argonaute. The comparison to other RNP systems is reasonable but the specific mechanism of how Yhc1 might function as a seed region is not established. These claims represent plausible hypotheses for future investigation rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and context claims establishing the spliceosome composition, E complex formation, 5' SS recognition mechanisms, and prior genetic evidence for ECP function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide established background knowledge supported by appropriate citations. These claims describe the spliceosome composition (C8), assembly pathway (C9-C10), E complex components (C11-C12), and prior evidence for U1/5' SS recognition (C17) and ECP function (C21-C28). All claims are appropriately cited and represent accurate summaries of prior work. These provide necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C45"
+    ],
+    "result": "Prior work has shown that U1 associates with immobilized RNAs containing a 5' SS, removal of functional 5' SS decreases surface accumulation, and cap analog can inhibit CBC function in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C45 cite prior work that provides methodological foundation for the current study. These claims are appropriately cited (Hoskins et al., 2011 for C29-C30; multiple citations for C45) and accurately represent the prior findings. These establish the basis for the experimental approaches used in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C98",
+      "C113",
+      "C125",
+      "C131",
+      "C135",
+      "C136",
+      "C139",
+      "C143",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Additional background claims regarding Yhc1 mutations, prior U1 lifetime studies, alternative splicing correlations, genetic interactions, and comparisons to other RNP systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C98, C113, C125, C131, C135-C136, C139, C143, and C156-C158 provide additional background and context supported by appropriate citations. These include prior characterization of Yhc1 mutations (C84-C85, C98, C139), previous findings on U1 lifetimes and alternative splicing (C113, C125), genetic interaction networks (C131, C143), and comparisons to other RNP systems (C156-C158). All are appropriately cited and provide relevant context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "U1 tuning occurs through physical connections between E complex components, and any cross-intron bridging complex between U1 and BBP/Mud2 is transient with a dissociation rate constant of ~0.4 min\u207b\u00b9 or greater.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by the single molecule data and extensive genetic evidence cited. Claim C133 is supported by the measured E complex lifetimes (Figure 3E) which allow calculation of the dissociation rate constant. The conclusion that bridging interactions are transient is well-supported by the dynamic behavior observed in the three-color experiments. These claims appropriately integrate the current findings with prior genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C137",
+      "C138",
+      "C142",
+      "C147"
+    ],
+    "result": "Speculative claims about potential roles of U1 tuning in other processes, mechanisms for U1 release during activation, and explanations for genetic observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134, C137-C138, C142, and C147 are speculative extensions of the findings. The suggestion that U1 tuning may be important for splicing-independent processes (C134) is plausible but not tested. The proposals about U1 release during activation (C137-C138) and the role of other spliceosome components (C142) are reasonable hypotheses based on the two-step model but lack direct experimental support. The explanation for genetic lethality differences (C147) is speculative. These represent reasonable interpretations and hypotheses for future work but go beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Summary claims from the abstract stating the main findings of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are abstract statements summarizing the main findings. These are well-supported by the detailed experimental results described in the manuscript. C4 (E complex dynamics and redefinition) is supported by Figure 3 data. C5 (BBP promotes long-lived U1 binding) is supported by Figure 3D data. C6-C7 (ECPs facilitate U1 binding to weak 5' SS and prevent accumulation on hyperstabilized 5' SS) are supported by Figures 1-2 and Figure 5 data. These represent accurate high-level summaries of the work.",
+    "result_type": "MINOR"
+  }
+]

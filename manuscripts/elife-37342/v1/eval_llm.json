@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Homology models of Cdc12 and mDia1 FH2 domains were created based on the Bni1 crystal structure and refined through 200 ns all-atom MD simulations. The models achieved z-scores within acceptable ranges (Bni1: -8.9, Cdc12: -7.69, mDia1: -6.45) and showed similar overall structures with FH2 domains forming donut-like shapes around actin filaments, though local structural differences exist particularly in the knob regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C53 collectively demonstrate that the homology modeling approach produced structurally valid models. The z-scores (C41-C43) confirm model quality, and detailed structural comparisons (C44-C53) show both conserved features and meaningful differences between formins. The methodology is well-documented and the validation metrics are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "All-atom simulations of both seven-mer and five-mer filaments revealed that FH2 domains sterically interfere with incoming actin subunits, with Cdc12 showing the strongest interference (64% and 21% of time in two replicates), Bni1 intermediate (19% and 18%), and mDia1 the weakest (4% and 2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present quantitative measurements of steric interference from simulations that correlate with known gating factors. The data from multiple replicates (C56) show consistency for Bni1 and mDia1 but variability for Cdc12, which is acknowledged. The trend clearly supports differential steric blocking among the three formins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Extended all-atom MD simulations of seven-mer filaments showed that FH2 domains flatten the helical twist at the barbed end, with mDia1 relaxing toward favorable 167\u00b0 angles (169.4\u00b0\u00b10.7\u00b0 and 167.2\u00b0\u00b11.1\u00b0) while Cdc12 and Bni1 maintained flattened angles (169-173\u00b0). The distortion is localized to terminal subunits and dissipates toward the pointed end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 provide detailed quantitative data on helical twist angles from 500 ns simulations with appropriate statistical measures (means \u00b1 SD). The findings show clear differentiation between formins that correlates with gating factors. The observation that flattening is local rather than global (C67-C69) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "All-atom simulations of five-mer filaments (representing the state before subunit addition) revealed that each formin favors distinct twist angles between A2-A3: mDia1 favors open configurations (168-170\u00b0), Bni1 intermediate (171-172\u00b0), and Cdc12 closed configurations (174-175\u00b0), with maximum differences up to 9\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 present replicated measurements showing consistent trends across two independent simulations. The quantitative data (C71) with error estimates demonstrate that formins impose different structural constraints on the barbed end. The conclusions about open vs. closed configurations (C73-C74) are well-supported by the twist angle data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Metabasin metadynamics simulations confirmed that mDia1 FH2 favors open twist angles near 168\u00b0 while Cdc12 favors closed angles >170\u00b0, with Bni1 showing intermediate behavior resembling mDia1 more than Cdc12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 use an enhanced sampling method to validate findings from standard MD simulations. The MB-MetaD approach provides independent confirmation of the twist angle preferences, strengthening the conclusions about differential gating mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Analysis of FH2-actin contacts revealed that buried surface areas are similar across formins (10,116-10,725 \u0172) and do not correlate with gating factors. All FH2 domain regions (lasso, linker, knob, post) contribute to contacts, with knob regions making the most extensive contacts despite being the most variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 present quantitative measurements showing that total buried surface area and overall contact patterns do not explain gating differences. This negative result (C78) is important for ruling out simple explanations and is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "For Cdc12, barbed end flattening strongly correlates with increased contacts between post regions and actin subunits A2/A3, particularly at twist angles >173\u00b0. This correlation was not observed for Bni1 or mDia1, nor for lasso/knob regions of any formin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 identify a specific structural mechanism for Cdc12's strong gating. The correlation is clearly demonstrated (C83-C84), though causality is appropriately noted as uncertain (C85). The specificity to Cdc12 and post regions strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Salt bridge analysis revealed that the number of stable salt bridges between FH2 knobs and the actin barbed end groove correlates with gating, with Cdc12 forming more stable bridges than Bni1 or mDia1. These salt bridges are dynamic, with residues rearranging during simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 present detailed salt bridge occupancy data from multiple time points and simulation types. The correlation with gating factors is clear, and the dynamic nature of these interactions (C90-C91) is appropriately noted. The quantitative data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of lasso/linker salt bridges showed that while mDia1 forms more total bridges, Cdc12 and Bni1 form more long-lived bridges (>70% occupancy). A conserved salt bridge with actin D363 shows differential stability: 100% in Cdc12, 85% in Bni1, and only 23% in mDia1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 identify a specific conserved interaction (D363) with dramatically different stabilities across formins that correlates with gating. The quantitative occupancy data are clear and the identification of this conserved residue is significant for understanding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MB-MetaD simulations revealed that Cdc12 FH2 domains are confined by higher energy barriers than Bni1 or mDia1, restricting conformational mobility. This lower mobility correlates with more salt bridges and larger barbed end distortion, and may make Cdc12 the best nucleator of the three formins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C100 present energy landscape data showing differential conformational restrictions. However, the connections to salt bridges (C99) and nucleation ability (C101) are speculative. The energy barrier data are solid, but the mechanistic interpretations and prediction about nucleation require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Coarse-grained simulations over 2 \u03bcs showed that at low dielectric constant (\u03b5=1) all formins remained stable, but at higher dielectric (\u03b5=3) Cdc12 underwent larger fluctuations than Bni1 or mDia1. This dielectric sensitivity is consistent with Cdc12 having stronger electrostatic interactions with actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 use CG simulations to probe the role of electrostatic interactions over longer timescales. The differential response to dielectric constant changes provides independent evidence for the importance of electrostatic interactions in Cdc12, supporting conclusions from AA simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Long-timescale CG simulations revealed that Cdc12's FHL domain shifts inward toward the binding site upon partial dissociation, increasing steric blocking, while mDia1's FHL shifts outward away from the binding site. This demonstrates that partial dissociation can either increase or decrease steric blocking depending on the formin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 and C118-C120 identify an unexpected finding that partial dissociation has opposite effects for different formins. This is well-supported by the CG simulation data and provides important mechanistic insight into how conformational dynamics affect gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "All-atom simulations confirmed two mechanisms by which FH2 domains interfere with subunit addition: (1) steric blocking of A1 and +A1 subunit volumes, and (2) flattening of helical twist at the barbed end. Both mechanisms scale with gating factors across the three formins. The distortion dissipates gradually rather than abruptly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 synthesize the major findings about gating mechanisms. Both steric and geometric mechanisms are well-documented in the simulation data, and the scaling with gating factors is clearly demonstrated. The characterization of gradual vs. abrupt distortion (C111) is supported by the twist angle data at different positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Coarse-grained simulations support the conclusion that steric interference contributes to gating, showing that Cdc12 and mDia1 conformations diverge at long timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 use CG simulations to validate AA simulation findings over longer timescales. The divergence of conformations provides independent support for differential gating mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "The simulations demonstrate that formin-actin complexes sample a continuum of conformations through thermal fluctuations rather than discrete open/closed states. Each formin favors different equilibrium distributions, with Cdc12 favoring closed conformations and mDia1 favoring open conformations. The rate of elongation is governed by the time-averaged probability of finding the barbed end in a binding-competent conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C132 present a mechanistic model that reinterprets gating as a continuous rather than discrete process. This is well-supported by the simulation data showing continuous variation in twist angles and steric blocking. The model is consistent with thermodynamic principles (C122) and provides a unified explanation for the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Simulations revealed that FH2 domain dissociation is not required to open the barbed end for elongation. Thermal motions can move bound FH2 domains out of blocking positions, supporting the stepping-second model over the stair-stepping model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 address competing mechanistic models. The simulation data showing that twist angles don't improve without A1 (C139) and that thermal fluctuations allow conformational changes (C138) support the stepping-second mechanism. However, the authors appropriately note limitations (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "While the simulations don't include large-scale conformational changes and thus don't rule out stair-stepping, metadynamics simulations revealed energy barriers relevant to partial dissociation, with Cdc12 showing lower FHT mobility than Bni1 or mDia1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 appropriately acknowledge limitations while presenting relevant findings. The energy barriers from metadynamics (C141) provide information about potential dissociation pathways even if full dissociation isn't observed. The differential mobility (C142) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Both steric interference and barbed end flattening scale with gating factors (Cdc12 strongest, mDia1 weakest). Energy barriers confine Cdc12 to more closed states. While buried surface area and total contacts don't correlate with gating, the number and location of salt bridges do correlate, though the relationship is complex. Cdc12 has more stable knob-A2 bridges while mDia1 has more FHT linker-A1 bridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C161 synthesize multiple lines of evidence about what determines gating differences. The complexity is appropriately acknowledged (C156), and the data support the importance of salt bridge patterns over simple metrics like total surface area. The specific differences in salt bridge locations (C159-C160) provide mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The simulation data can guide mutation experiments, but gating involves complex global conformational changes that may not be amenable to simple mutations. Previous linker-swap experiments changed formin lifetime but not gating. Structural studies and biophysical methods like FRET may be more informative than mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 provide appropriate guidance for future work. The suggestion that mutations may not be sufficient (C163) is supported by the complexity observed in simulations and previous experimental results (C164). The recommendations for alternative approaches (C165) are reasonable given the findings.",
+    "result_type": "MINOR"
+  }
+]

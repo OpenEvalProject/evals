@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The crystal structure of PglC is stable in a membrane environment, as demonstrated by MD simulations showing RMSD values within ~1 \u00c5 over 400 ns, supporting that the crystal structure reflects a native state in a lipid bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 are well-supported by MD simulation data (Figure 1\u2014figure supplement 1) showing structural stability over 400 ns with low RMSD values. This provides computational validation that the crystal structure represents a physiologically relevant conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Ser23-Pro24 motif acts synergistically to establish a reentrant topology in PglC. Single mutants S23A and P24A retain reentrant topology, but the double mutant S23A/P24A shows aberrant topology with all cysteines in the periplasm, indicating substantially perturbed folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by SCAM analysis (Figure 2C) showing that single mutations preserve topology while the double mutation causes dramatic mislocalization. This demonstrates synergistic action of the two residues, though the precise topology of the double mutant remains undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "During MD simulations, the break in the RMH is stabilized by dynamic hydrogen bonding between Ser23 (side chain and backbone) and backbone carbonyls of Leu19 and Ile20, forming an extensive network that compensates for Pro24's lack of hydrogen-bond donor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by MD simulation data (Figure 3A) showing dynamic hydrogen bonding patterns. The computational observations provide mechanistic insight into how the Ser-Pro motif maintains the helix break, complementing the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Peptide folding simulations demonstrate that the Ser-Pro motif drives formation of the helix-break-helix structure in wild-type PglC during early folding, while the S23A/P24A variant forms a continuous \u03b1-helix, supporting a model where the motif facilitates proper membrane insertion in a reentrant topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by peptide folding MD simulations (Figure 3B, Figure 3\u2014figure supplement 1) showing distinct folding behaviors over 1.6 \u03bcs. The wild-type peptide maintains unstructured residues around the Ser-Pro motif while forming helices on either side, whereas the double mutant forms a continuous helix. This provides mechanistic insight into early folding events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The Ser-Pro motif is necessary for both RMH formation and overall PglC stability. S23A/P24A SUMO-PglC shows significantly reduced thermal stability (Tm = 42.6 \u00b1 2.0 \u00b0C) compared to wild-type (Tm = 49.9 \u00b1 1.5 \u00b0C), with \u0394Tm = 7.3 \u00b1 2.5 \u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by thermal shift assay data (Figure 4A) with appropriate error bars and statistical significance. The control mutations (Figure 4\u2014figure supplement 3) show only minor stability changes, confirming specificity. However, the assay measures resistance to precipitation rather than true thermodynamic stability, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In S23A/P24A PglC, MD simulations show collapse of the protein interior containing the polyprenol phosphate binding site, with residues Leu21, Leu90, and Val180 moving closer together over 400 ns, reducing interior volume and hindering lipid passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by MD simulation data (Figure 4B, Figure 4\u2014figure supplements 4-5) showing structural collapse in the mutant. The distance measurements and lipid occupancy analysis provide quantitative evidence. However, the simulations are relatively short (400 ns) for assessing large conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Lys7-Arg8 motif cooperates with the Ser-Pro motif to enforce reentrant topology. Single K7A or R8A mutations have minimal effect, but K7A/R8A causes partial periplasmic localization of the N-terminus, and K7A/R8A/P24A shows complete periplasmic mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by SCAM analysis (Figure 5) showing progressive topology perturbation with increasing mutations. The data demonstrate cooperative action between the two motifs, though the mixed population in K7A/R8A complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The extended RMH conformation observed in the crystal structure (118\u00b0 inter-helical angle) reflects a native conformation, as demonstrated by dibromobimane crosslinking of E3C/I163C SUMO-PglC (C\u03b2-C\u03b2 distance ~5.2 \u00c5), which shows significantly higher fluorescence than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by crosslinking experiments (Figure 6A-B) showing specific fluorescence increase in the double cysteine variant compared to single cysteine and negative controls. The p-values (p<0.01) indicate statistical significance. However, the failure to form disulfide bonds and reliance on a longer crosslinker (bBBr) introduces some uncertainty about the exact distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "MD simulations show that the distance between Arg3 and Leu164 remains invariable over 400 ns, supporting a model where the RMH is constrained with little conformational freedom of the N-terminus relative to the globular domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by MD simulation data (Figure 6C) showing stable distance measurements. This complements the crosslinking data and provides dynamic validation of the structural model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Intramolecular crosslinking of E3C/I163C SUMO-PglC by dibromobimane does not impact catalytic activity, indicating that the crosslinked RMH conformation is compatible with catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by activity assay data (Figure 6D) showing no significant difference between crosslinked and control samples. This provides functional validation that the constrained RMH conformation represents a catalytically competent state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "LpxM adopts a reentrant topology rather than the predicted transmembrane topology. Sequence analysis shows positively-charged residues preceding the hydrophobic domain, polar/aromatic residues within it, and covariance between hydrophobic and globular domains. SCAM analysis confirms both N-terminus and globular domain are cytoplasmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by sequence analysis (Table 1), covariance analysis (Supplementary file 4), and SCAM experiments (Figure 7A). The experimental validation of LpxM topology provides strong evidence that the sequence-based predictions can identify reentrant domains. This is a key demonstration of the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The reentrant topology is proposed to be conserved among lipid A biosynthesis acyltransferases LpxM, LpxL, and LpxP based on sequence similarity. The LpxM structure from A. baumannii shows a helix-break-helix protruding from the globular domain, with a shorter hydrophobic region suggesting shallower membrane penetration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is an inference based only on LpxM data and sequence similarity, without direct experimental validation of LpxL and LpxP topologies. Claims C75-C77 regarding the A. baumannii structure are observational but the interpretation of shallow penetration is speculative. Additional experimental validation of LpxL and LpxP would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Lys7 forms a salt bridge with Asp169 (98% conserved) at the interface between N-terminus and globular domain. This interaction is necessary for catalytic activity, as K7A SUMO-PglC is catalytically inactive despite adopting reentrant topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by structural data (Figure 1D), conservation analysis, and activity assays (Figure 9). The combination of structural observation, high conservation, and loss-of-function phenotype provides strong evidence for functional importance. However, the mechanism by which this salt bridge enables catalysis is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "R8A SUMO-PglC retains ~15% catalytic activity, suggesting Arg8 plays a less significant role in the PglC fold than Lys7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by activity assay data (Figure 9) showing partial retention of activity. The comparison with K7A provides evidence for differential importance, though the mechanistic basis for this difference is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "S23A SUMO-PglC exhibits near-wild-type activity while P24A and S23A/P24A variants are inactive, despite all retaining reentrant topologies. This suggests Pro24 plays a crucial role in mediating polyprenol binding, and the motifs position Pro24 to recognize substrate in a catalytically-relevant configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by activity assay data (Figure 9) showing differential effects of mutations. The dissociation of topology from activity in these mutants provides strong evidence that Pro24 has a specific functional role beyond topology determination. However, direct substrate binding measurements would strengthen the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C81",
+      "C100",
+      "C101"
+    ],
+    "result": "Two conserved motifs (Lys7-Arg8 and Ser23-Pro24) exemplify principles of topology determination that can be applied to identify reentrant domains among diverse monotopic proteins. Positively-charged residues preceding and helix-disrupting residues within the hydrophobic domain bias toward reentrant topology, and covariance analysis can identify supporting interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C81, C100, and C101 represent the main conclusions of the study. They are supported by the comprehensive analysis of PglC (multiple experimental and computational approaches) and successful application to LpxM. The identification of generalizable sequence features and validation in an unrelated protein family provides strong evidence for broad applicability. However, the principles have only been tested on two protein families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The N-terminal domain of PglC forms a reentrant membrane helix (RMH) with both termini on the cytoplasmic face. The RMH is an \u03b1-helix broken at 118\u00b0 by a conserved Ser23-Pro24 dyad, where Pro24 disrupts backbone hydrogen bonding and Ser23 forms a 2.6 \u00c5 hydrogen bond with Ile20. This topology is conserved in the PGT superfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 describe the core structural findings from the previously reported crystal structure (Ray et al., 2018) and SCAM validation. These are well-established by the cited work and serve as the foundation for the current study. The structural measurements are precise and the topology is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "At the N-terminus, Lys7 makes contacts with Asp169 at the C-terminus of the globular domain, and Arg8 interacts with a co-purified phospholipid headgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are structural observations from the crystal structure (Figure 1D). These are direct observations supported by electron density, though the functional significance is explored in other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The Ser-Pro motif acts as a rigidifying 'staple' restricting RMH conformational freedom. Pro24 is hypothesized to play an important role in polyprenol phosphate binding, consistent with conserved prolines in polyisoprene recognition sequences. P24A SUMO-PglC was previously reported to be catalytically inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 combine mechanistic interpretation (C89) with literature context (C90-C91) and prior experimental data (C92). The 'staple' model is supported by MD simulations and structural data. The substrate binding hypothesis is reasonable given Pro24's location and literature precedent, though direct binding data are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The proposed model for RMH formation builds on existing principles of membrane protein topogenesis, including the positive-inside rule and peptide backbone hydrogen bonding as driving forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 appropriately contextualizes the findings within established membrane protein biology principles. The work extends these principles to monotopic proteins with reentrant domains, which is a novel contribution.",
+    "result_type": "MINOR"
+  }
+]

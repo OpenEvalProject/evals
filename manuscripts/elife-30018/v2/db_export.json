@@ -1,0 +1,1255 @@
+{
+  "submission": {
+    "id": "e6500ff4-9b5d-4cfe-a76a-2e9dcbc06a59",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:33:28.686228Z",
+    "updated_at": "2025-12-01T23:33:28.686228Z"
+  },
+  "content": [
+    {
+      "id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "submission_id": "e6500ff4-9b5d-4cfe-a76a-2e9dcbc06a59",
+      "content_type": "manuscript",
+      "content_text": "# Shorter cortical adaptation in dyslexia is broadly distributed in the superior temporal lobe and includes the primary auditory cortex\n\n## Authors\n\n- Sagi Jaffe-Dax<sup>1</sup> ([ORCID: 0000-0002-8759-6980](https://orcid.org/0000-0002-8759-6980)) \u2020\n- Eva Kimel<sup>2</sup>\n- Merav Ahissar<sup>2</sup>\n\n### Affiliations\n\n1. Department of Psychology Princeton University Princeton United States\n2. The Edmond and Lily Safra Center for Brain Sciences Hebrew University of Jerusalem Jerusalem Israel\n3. Department of Psychology Hebrew University of Jerusalem Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nStudies of the performance of individuals with dyslexia in perceptual tasks suggest that their implicit inference of sound statistics is impaired. Previously, using two-tone frequency discrimination, we found that the effect of previous trials' frequencies on the judgments of individuals with dyslexia decays faster than the effect on controls' judgments, and that the adaptation (decrease of neural response to repeated stimuli) of their ERP responses to tones is shorter (Jaffe-Dax et al., 2017). Here, we show the cortical distribution of these abnormal dynamics of adaptation using fast-acquisition fMRI. We find that faster decay of adaptation in dyslexia is widespread, although the most significant effects are found in the left superior temporal lobe, including the auditory cortex. This broad distribution suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which also affects sensory cortices.\n\n## Introduction\n\nDyslexia, a specific and significant impairment in the development of reading skills that is not accounted for by mental age, visual acuity problems, or inadequate schooling (World Health Organization, 2016), affects\u00a0~5% of the world\u2019s population (Lindgren et al., 1985). Though individuals with dyslexia are diagnosed for their reading impairments, they also often have difficulties in simple non-linguistic perceptual tasks (Mcanally and Stein, 1996; Ahissar et al., 2000; Sperling et al., 2005; Giraud and Ramus, 2013). These can be largely explained as resulting from inefficient use of stimulus statistics that characterize the experiment (the \u2018Anchoring Deficit hypothesis\u2019; Ahissar et al., 2006; Oganian and Ahissar, 2012; Jaffe-Dax et al., 2015). In these tasks, participants are not aware of the effect of previous stimuli. But their perception\u00a0\u2014 in particular when retention is required,\u00a0as for\u00a0example\u00a0in serial discrimination tasks\u00a0\u2014\u00a0tends to contract to the estimated mean of previous stimuli (contraction bias; Raviv et al., 2012, 2014). This contraction to the mean merges the (implicit) predicted stimulus (based on previous exposures) with the current sensory estimate, forming a coherent percept.\n\nThe neural mechanism that may underlie the implicit learning of experimental statistics is adaptation; that\u00a0is, an automatic, implicit, and stimulus-specific decrease of the response to repeated stimuli. Importantly, the rate of decay of the behavioral effect of previous trials in serial discrimination is similar to the rate of decay of neural adaptation, as measured by magnetoencephalography\u00a0(MEG) (Lu et al., 1992). Inspired by this finding, we recently compared both the\u00a0behavioral dynamics and\u00a0the rate of adaptation (event-related potential\u00a0[ERP] responses) of good readers (i.e., the control group) and dyslexic participants (Jaffe-Dax et al., 2017). All participants performed serial two-tone frequency discrimination in four blocks with different Trial Onset Asynchronies (TOAs, i.e., temporal interval from the onset of a trial to the onset of the next trial). Both the magnitude of perceptual contraction to the mean frequency of previous trials and the magnitude of neural adaptation (P2 and N1 components that are automatically produced by the auditory cortex [Mayhew et al., 2010]) decayed faster in participants with dyslexia (ERP [Jaffe-Dax et al., 2017]).\n\nAs ERP responses cannot be used to localize the cortical source of this group difference, we now recruited the participants from the ERP study (Jaffe-Dax et al., 2017) to take part in an fMRI study with a similar protocol, which allowed us to characterize which brain areas show shorter adaptation in dyslexia. Using the ERP-based protocol in the scanner, we measured the BOLD response ($\\beta$s) to tones for each TOA, and calculated the time constant of adaptation (fitting an exponential decay function). To identify the areas of significant group difference in time constants of adaptation, we used two methods:\u00a0data-driven whole-brain analysis, and hypothesis-driven regions of interest (ROI) based on areas suggested to produce N1 and P2 (e.g. Mayhew et al., 2010). All cortical regions that responded to tone discrimination showed a tendency to decay faster in participants with dyslexia. Whole-brain analysis revealed significant group differences in the left superior temporal lobe and in the right insular cortex, and ROI analysis revealed significant differences in the left primary auditory cortex.\n\n## Results\n\nWe recruited 20 participants with dyslexia and 19 good readers from our previous study (Table 1; Jaffe-Dax et al., 2017) and asked them to perform two-tone frequency discrimination in separate blocks with four trial-onset intervals (TOAs) of 3, 6, 9, and 15 s. Before entering the scanner, all participants performed a short four-block training session with simulated scanner noise to familiarize them with in-scan conditions (Sperling et al., 2005; Chait et al., 2007). The two groups exhibited similar accuracy (72.4 \u00b1 6% vs. 73 \u00b1 4.6%, z\u00a0=\u00a00.5, p=0.57). In\u00a0scans, good readers (controls) performed better than dyslexic participants (Mean \u00b1 SEM: 82.5 \u00b1 1.6% vs. 76.3 \u00b1 2.2%, z\u00a0=\u00a02.6, p<0.01\u00a0in\u00a0Mann-Whitney U-tests), suggesting that they gained more from the short pre-scan practice (in line with the faster learning reported by Jaffe-Dax et al., 2017).\n\nTo evaluate the dynamics of cortical adaptation in each group, we used the following procedure. First, we determined which Talairach voxels responded to the task (standard generalized linear model [GLM], p<0.001, false discovery rate [FDR] corrected) when all participants were considered. For each of these voxels, we calculated the dynamics of adaptation, among control participants and among participants with dyslexia, as follows. We estimated $\\beta$ over the mean blood oxygenation level dependent signal\u00a0(BOLD) response of each group in each of the four TOA conditions (block design; see 'Materials\u00a0and\u00a0methods'). Using these $\\beta$s, we fitted an exponential decay model (Lu et al., 1992; Jaffe-Dax et al., 2017): $\\betaTOA=a+bexp\u2061-TOA/\\tau$ to each voxel. In this model, $\\tau$ denotes the time constant of adaptation, $a$ is the asymptotic level of BOLD and $b$ is the magnitude of adaptation. Figures 1A and 1B\u00a0show the distribution of the mean fitted $\\tau$s for the control and dyslexic groups,\u00a0respectively. Their comparison illustrates the broadly distributed trend of faster decay in the dyslexic group.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30018/elife-30018-fig1-v2.jpg)\n\n**Figure 1.:** Cortical distribution of the groups\u2019 mean estimated time constants ($\\tau$) of adaptation, calculated separately for each of the responding voxels.(A) Control participants. (B) Participants with dyslexia. The estimated $\\tau$s for participants with dyslexia were consistently shorter than those estimated for the control group. Significant group differences in the whole-brain analysis (Monte-Carlo cluster-level corrected: cluster threshold of 44 voxels; see 'Materials and methods') are outlined in magenta. The left and right primary auditory cortices, which were estimated as a source of P2 (ERP)\u00a0component, are outlined in orange. An ROI analysis (see text) revealed a significant group difference in the left primary auditory cortex (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30018/elife-30018-fig2-v2.jpg)\n\n**Figure 2.:** Blue:\u00a0control. Red:\u00a0dyslexic. AC: the 3 subregions that comprise the primary auditory cortex, outlined in orange in Figure 1.\n\nTo locate regions in which the fitted $\\tau$ differs significantly between the groups, we conducted a whole-brain analysis, in which we fitted $\\tau$ to each voxel, for each participant separately. To reduce the impact of outliers resulting from the noisy estimation of $\\tau$ (due to this single subject and single voxel analysis), we assessed group difference with a non-parametric test (Mann-Whitney U test), in which extreme values are not over-weighted. We corrected for multiple comparison bias by requiring a cluster of contingent voxels with a significant group difference (cluster corrected for p<0.05, dictated 44 spatially contingent voxels, based on Monte-Carlo cluster-level correction). Significant regions were found in the left superior temporal cortex (TAL: \u221254,\u201318, 10) and in the right insular cortex (TAL: 39,\u20132, \u22128), outlined in magenta in Figure 1A\u00a0and\u00a01B. The superior temporal cortex is known to be involved in a broad range of auditory tasks, including simple tone discrimination (Daikhin and Ahissar, 2015), language (Fedorenko et al., 2010)\u00a0and music (Fedorenko et al., 2011), and even social tasks (e.g. Deen et al., 2015). Thus, the group difference for this area was expected given the behavioral results. The right insular cortex is multi-modal (Bushara et al., 2003), and is also involved in introspection (Craig et al., 2000). A\u00a0comparison\u00a0of\u00a0Figures 1A and 1B suggests that other regions might have mean group differences (e.g., frontal cortices), but due to large inter-subject variability in these regions, the group differences were not significant. This large variability might account for the spurious dots of large $\\tau$ values scattered throughout the cortical map (Figures 1A and 1B).\n\nIn addition to the whole-brain, data-driven analysis, we conducted an ROI, hypothesis-driven analysis. Given our previous ERP findings that P2 (and to a lesser extent N1) of individuals with dyslexia shows shorter adaptation (Jaffe-Dax et al., 2017), we conducted an ROI for the estimated cortical source of this ERP component. In a seminal MEG study (L\u00fctkenh\u00f6ner and Steinstr\u00e4ter, 1998), the source of N1 was attributed to Planum Temporale, and that\u00a0of P2 to Heschl's gyrus. A more recent study (Mayhew et al., 2010) combined ERP and fMRI, and found significant correlations between variability in ERP-measured N1\u2013P2 complex and BOLD responses in several regions, including the primary (Heschl's gyrus) and secondary (Planum Temporale and STG areas) auditory areas. Given these estimates, we conducted an ROI analysis\u00a0on both primary and secondary auditory areas. We used a combined cytoarchitectonic (Morosan et al., 2001) and myeloarchitectonic (Dick et al., 2012) definition of these areas (the primary auditory cortex\u00a0being composed of three sub-regions and two secondary auditory areas\u00a0[Planum Temporale and Planum Polare]). We fitted the exponential decay model to the $\\beta$s averaged over the right and the left primary auditory cortices (composed of 99 voxels each, denoted by the orange outlines in Figure 1A\u20131B), and over the two right and left secondary cortices. We found significant differences between the groups' $\\tau$s in the left primary auditory cortex (z\u00a0=\u00a02.6, p<0.01, effect size r\u00a0=\u00a00.42;\u00a0Mann-Whitney U-tests). In the right primary auditory cortex,\u00a0the $\\tau$ group difference showed the same trend, but did not reach significance (z\u00a0=\u00a01.5, p=0.15, effect size r\u00a0=\u00a00.23; Mann-Whitney U-tests). Figure 2 shows the $\\beta$s estimated for the left and right primary auditory cortices of the control (blue) and dyslexic (red) participants on each of the four TOA blocks. None of the other sub-regions of auditory cortex yielded significant group differences.\n\nTaken together, the whole-brain and ROI analyses revealed a significant group difference in the timescales of adaptation in the left superior temporal cortex, left primary auditory cortex, and the right insular cortex. BOLD activity in both auditory regions was previously shown to correlate with the magnitude of N1\u2013P2 responses (Mayhew et al., 2010). The right insular cortex is probably not associated with the P2 response that we measured with ERP and was therefore not predicted by our previous study. In\u00a0addition, the general (though not significant) trend of shorter adaptation in participants with dyslexia was consistent across all responding voxels.\n\n## Discussion\n\nWe characterized the cortical distribution of the decay of BOLD adaptation for participants with dyslexia and control participants, thus extending our previous behavioral and ERP study (Jaffe-Dax et al., 2017). We found a broadly distributed tendency for shorter adaptation in dyslexia. We further assessed group difference in the primary and secondary auditory cortices, associated with the production of P2 (Mayhew et al., 2010). Reports of previous studies asking whether these areas manifest neuro-typical structure and function in dyslexia are mixed. For example, Clark et al. (2014) reported early anatomical abnormalities, whereas Boets et al. (2013) reported adequate stimulus resolution. We now found a significant group difference in the left primary auditory cortex, and a similar tendency, which did not reach significance, in the right primary auditory cortex.\n\nThe broad distribution of dyslexics' faster decay of adaptation is in line with recent observations of a domain general abnormally small adaptation in dyslexia (Perrachione et al., 2016). The researchers compared BOLD responses to stimulus repetitions (in blocks of\u00a0~10 s) with BOLD response to non-repeated stimuli (auditory and visual), and found reduced stimulus-specific adaptation in the auditory (superior temporal), visual (fusiform and lateral occipital [LO]), and associative (insular and inferior frontal) cortices. Importantly, they found a three-way interaction of group (control and dyslexic) x condition (repeated and non-repeated) x time (within the block), where controls' increase of adaptation along the block was larger than that of participants with dyslexia. This observation, which results from controls' accumulative adaptation with stimulus repetition, is fully consistent with our observation of dyslexics' faster decay of adaptation.\n\nWe should note that the timescale of impaired retention in dyslexia is slower than that of sensory memory (iconic or echoic memory is\u00a0<<1 s). Still, it is expected to affect the\u00a0perception of individuals with dyslexia owing to their reduced cross-trial retention. It is therefore expected to impede their performance in a broad range of perceptual tasks, such as entrainment to rapid stimuli (e.g., Witton et al., 1998; Goswami, 2011; Lehongre et al., 2013), but only in protocols that contain stimulus repetitions. Indeed, it was shown that listeners entrain better to familiar compared with unfamiliar stimuli (Doelling and Poeppel, 2015; Kumagai et al., 2017). The advantage of familiarity is expected to be smaller in dyslexia. The\u00a0faster decay of implicit perceptual memory of individuals with dyslexia is expected to also impede\u00a0their long-term accumulation of stimulus statistics, and consequently to\u00a0reduce the complexity and richness of their long-term accumulated categorical representations (e.g., Perrachione et al., 2011; Banai and Ahissar, 2017).\n\nIn summary, the data collected in this study point to the specific neural structures that underlie the \u2018anchoring deficit\u2019 in dyslexia, namely a reduced use of stimulus statistics (Ahissar et al., 2006; Ahissar, 2007; Oganian and Ahissar, 2012). These data suggest a broad multimodal (e.g., Jaffe-Dax et al., 2016) cortical distribution that includes, but is not limited to, sensory areas.\n\n## Materials and methods\n\nIn the two-tone frequency discrimination task, subjects were asked to indicate which of two sequentially presented tones had a higher pitch. The tones were 50 ms long, presented at comfortable intensity, and were drawn from a uniform distribution between 800\u00a0Hz\u00a0and\u00a01250 Hz. The frequency difference within each pair was randomly drawn at\u00a0between 1%\u00a0and\u00a020% (following the protocol in Jaffe-Dax et al., 2017). In the pre-training session (8 min), each participant performed one block of each of the four Trial Onset Asynchronies (TOAs) of 3, 6, 9, or 15 s, administered in four separate blocks in random order (each block consisted of 16 trials). These TOAs are longer than those in our previous ERP experiment (1.5, 3, 6, and 9 s, Jaffe-Dax et al., 2017), because the controls' ERP (N1 and P2) response at 9 s was still larger than that\u00a0at 6 s. Each block had a constant TOA of 3, 6, 9, or 15 s. In the scanner, each participant performed three runs of four blocks (of 16 trials). The block design allowed us to measure the dynamics of adaptation in timescales that are independent of the sluggishness of typical hemodynamic response function (HRF), as we analyzed each block as a whole, and not on a trial-by-trial basis. Specifically, we modelled the magnitude of the\u00a0BOLD signal in each block as a function of its TOA. This block design was used to\u00a0estimate $\\tau$ on the basis of the magnitude of the BOLD response. However, the number of trials was too small for robust estimation of behavioral context effects, which are based on the difference in success rate (binary scores for each trial) between trials that gain and those that are hampered by the context (Jaffe-Dax et al., 2017). Stimuli were digitally constructed using Matlab 2015b (The Mathworks Inc., Natwick, MA,\u00a0USA) and administered through inserted sound-attenuating MR compatible S14 earphones (Sensimetrics Corporation, Malden, MA,\u00a0USA). The demographic, cognitive and reading assessments of this cohort are described in Jaffe-Dax et al. (2017).\n\n**Table 1.**\n General characteristics of the participants in this study (mean and standard deviation).The assessments used in this study were the same as in our previous study (Jaffe-Dax et al., 2017).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Control group</th>\n      <th>Dyslexic group</th>\n      <th>Mann-Whitney z value</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>N\u00a0=\u00a019</th>\n      <th>N\u00a0=\u00a020</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (years)</td>\n      <td>25.9 (2.6)</td>\n      <td>24.5 (2.6)</td>\n      <td>1.7 n.s.</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">General cognitive (scaled)</td>\n    </tr>\n    <tr>\n      <td>Block design</td>\n      <td>13.1 (3.2)</td>\n      <td>12.4 (2.9)</td>\n      <td>0.6 n.s.</td>\n    </tr>\n    <tr>\n      <td>Digit span</td>\n      <td>11.1 (2.9)</td>\n      <td>7.5 (1.9)</td>\n      <td>4.0****</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Phonological speed [items/minute]</td>\n    </tr>\n    <tr>\n      <td>Pseudo-word reading rate</td>\n      <td>64.0 (25.2)</td>\n      <td>31.9 (9.7)</td>\n      <td>3.9****</td>\n    </tr>\n    <tr>\n      <td>Single-word reading rate</td>\n      <td>101.6 (35.2)</td>\n      <td>69.2 (21.3)</td>\n      <td>3.0***</td>\n    </tr>\n    <tr>\n      <td>Word pattern recognition rate</td>\n      <td>69.8 (15.6)</td>\n      <td>41.7 (11.8)</td>\n      <td>4.5****</td>\n    </tr>\n    <tr>\n      <td>Passage reading rate</td>\n      <td>142.2 (23.9)</td>\n      <td>100.7 (17.4)</td>\n      <td>4.5****</td>\n    </tr>\n    <tr>\n      <td>Spoonerism rate</td>\n      <td>9.9 (3.0)</td>\n      <td>5.7 (3.1)</td>\n      <td>3.8****</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Phonological accuracy [% correct]</td>\n    </tr>\n    <tr>\n      <td>Pseudo-word reading accuracy</td>\n      <td>90.6 (11.9)</td>\n      <td>63.5 (18.4)</td>\n      <td>4.0****</td>\n    </tr>\n    <tr>\n      <td>Single-word reading accuracy</td>\n      <td>97.2 (4.3)</td>\n      <td>89.0 (6.5)</td>\n      <td>3.7****</td>\n    </tr>\n    <tr>\n      <td>Word pattern recognition accuracy</td>\n      <td>100.0 (0.0)</td>\n      <td>98.27 (3.1)</td>\n      <td>2.5**</td>\n    </tr>\n    <tr>\n      <td>Passage reading accuracy</td>\n      <td>98.7 (1.2)</td>\n      <td>95.4 (2.3)</td>\n      <td>4.1****</td>\n    </tr>\n    <tr>\n      <td>Spoonerism accuracy</td>\n      <td>90.8 (6.9)</td>\n      <td>77.8 (17.2)</td>\n      <td>2.5**</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p < 0.05; **p<0.01; ***p<0.005; ****p<0.0005._\n\nBefore the functional scan, high-resolution (1\u00a0\u00d7\u00a01\u00a0\u00d7\u00a01 mm resolution) T1-weighted magnetization-prepared rapid acquisition gradient-echo (MPRAGE) images were acquired using a 3T Magnetom Skyra Siemens scanner and a 32-channel head coil at the ELSC Neuroimaging Unit (ENU). The cortical surface was reconstructed from the high-resolution anatomical images using standard procedures implemented by the BrainVoyager QX software package (version 2.84; Brain Innovation, The Netherlands). The functional T2*-weighted MRI protocols were based on a multislice gradient echo-planar imaging and obtained under the following parameters: TR\u00a0=\u00a01 s, TE\u00a0=\u00a030 ms, flip angle\u00a0=\u00a090\u00b0, imaging matrix\u00a0=\u00a064\u00a0\u00d7\u00a064, field-of-view=192 mm; 42 slices with 3 mm slice thickness and no gap were oriented in AC-PC plane, covering the whole brain, with functional voxels of 3\u00a0\u00d7\u00a03\u00a0\u00d7\u00a03 mm and multiband parallel imaging with an acceleration factor of 3 (Moeller et al., 2010).\n\nPreprocessing of functional scans in BrainVoyager included 3D motion correction, slice scan time correction, and removal of low frequencies up to three cycles per scan (linear trend removal and high-pass filtering). The anatomical and functional images were transformed to the Talairach coordinate system using trilinear interpolation. Each voxel\u2019s time course was z-score normalized and smoothed using a 3D Gaussian filter (full width at half maximum [FWHM] of 4 mm). A standard (two gamma) hemodynamic response function (Friston et al., 1998) was convolved with the trial timings of each TOA block to build four predictors for the subsequent GLM analysis. For all task-responsive voxels (p<0.001, FDR corrected; Benjamini and Yekutieli, 2001), each TOA condition was modeled separately to account for its contribution to the measured BOLD signal in each voxel. Specifically, a single $\\beta$ value was obtained for each TOA condition. An exponential decay model (see 'Results') was fitted to these $\\beta$ values, and its parameters were estimated for each voxel in each subject using a least-square method. For ROI analysis, the MNI coordinates of auditory cortex subdivision were obtained from Morosan et al., 2001 and translated into Talairach coordinates using Yale BioImage Suite Package (sprout022.sprout.yale.edu/mni2tal/mni2tal.html; Lacadie et al., 2008). The BOLD signal was averaged for each ROI and then the $\\beta$ values of the four TOA blocks were fitted to the exponential decay.\n\nWhole-brain significance results were corrected for multiple comparison false-positive biases by a Monte-Carlo cluster correction (Forman et al., 1995), implemented using a plug-in of BrainVoyager (Goebel et al., 2006). The Monte-Carlo procedure was given an a-priori chosen probability for type I error of 0.05 and yielded a cluster threshold of 44 voxels. Non-parametric tests (Mann-Whitney\u2019s U-test) were used for group comparisons, as we did not assume a normal distribution, as in our previous study (Jaffe-Dax et al., 2017).\n",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "c0e7ed98-a7c6-4de7-8c9e-368f63c0836c",
+      "submission_id": "e6500ff4-9b5d-4cfe-a76a-2e9dcbc06a59",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30018.008](https://doi.org/10.7554/eLife.30018.008)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Widespread shorter cortical adaptation in dyslexia\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: John Stein (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study builds on the authors' previous work that demonstrated using behavioral measurements and EEG recordings that dyslexics show a faster decay of implicit memory than controls, which may account for their longer reading times. Here they used fMRI to investigate which cortical areas show these shorter neural adaptation effects. The authors calculate time constants of adaptation and find these to be significantly different in the dyslexic subjects in a region of left non-primary cortex and in the right anterior insula close to frontal operculum. The reviewers agreed that this study has a solid theoretical and empirical foundation in the previous work carried out by the authors and by other groups, and that the results are presented clearly and potentially add important new details to the framework for understanding dyslexia. The success of the authors in demonstrating differences in the time constant between the groups using the sluggish BOLD response is notable. Nevertheless, the reviewers had some difficulty reconciling these data with the previous neurophysiological data.\n\nEssential revisions:\n\n1) The study does not show widespread significant shorter cortical adaptation as suggested in the title. The regions in which significant group differences are small and include high-level multimodal cortex that is not predicted by the previous work. The N1 and P2 responses are generally regarded as arising from non-primary auditory cortex in the posterior superior plane and the previous neurophysiological data fitted with the idea that there might be a less stable representation of sensory information over time in dyslexia promoted by this group, which is a compelling idea. A specific test of this idea would require a comparison of the time constants in the generator of the N1, conventionally regarded as in planum temporale (there are probably two generators in PT as suggested by the work of Lutkenhoner). The reviewers were unanimous that a region of interest analysis is needed, though this might be focused on this region for which there is a strong prior based on the previous work.\n\n2) Examination of the areas in which there is a decrease in tau without correction for multiple comparisons shows a widespread swathe of differences that I find difficult to reconcile with the hypothesised deficit in the sensory trace. For example, there is shorter tau in primary somatosensory cortex and motor cortex. Do the authors think this is consistent with the anchoring deficit model?\n\n3) The authors suggest that poorer behavioral performance by the dyslexia group in the scanner could be related to their impairment in learning the task after training compared to the control group. An alternative possibility that needs to be discussed is that these results are due to the added acoustic noise of scanning, since continuous fMRI sampling as opposed to sparse sampling was employed. It is well known that individuals with dyslexia tend to have trouble with noise exclusion, and a tone-discrimination task with relatively sensitive pitch differences will be disproportionately difficulty for dyslexic individuals in the presence of noise. There is a paper by Chait et al., 2007 to that effect (tones in noise) specifically, if a citation is needed, as well as the larger noise-exclusion literature (e.g. Sperling et al., 2005 and others).\n\n4) Some attempt should be made to explain why the decay is faster in dyslexics by fitting the results into what is already known about dyslexics' relative insensitivity to amplitude and frequency modulations. For example, lower frequency sensitivity may impair auditory entrainment to a tone; could this underlie the difference in adaptation time constant?\n\n5) All the reviewers were struck by the capacity to extract adaptation and adaptation-recovery time course information from fMRI data, but it was agreed that a clearer explanation is warranted of how this can be studied using a method that has a time lag of several seconds.\n\n6 The characteristics of the dyslexics should be given in brief for those who haven't read the previous paper. More details are also needed regarding the Monte Carlo simulations for cluster-level multiple comparison corrections to ensure that others could replicate this approach.\n\n7) The discussion of the time course of adaptation with regards to the Perrachione et al.,2016 at the beginning of the Discussion section is confusing. In that paper, stimuli were presented for 8 repetitions in blocks of approximately 10 seconds, but each adapting or non-adapting stimulus was presented for 700 ms and at a rate of one per 1200 ms - so when the authors say \"adaptation across a window of ~10 seconds was smaller than controls because it was largely recovered\" it is unclear how they reconcile this with the stimulation procedure of the Perrachione study.\n\n8) It should also be pointed out that Perrachione et al., 2016 reported a group x time x condition interaction in the adaptation response in their study (see Supplementary table S4) for all conditions, which they interpreted as evidence for increasing adaptation in the control group w/ repeated presentation of the same stimulus, whereas such increasing adaptation was attenuated or absent in the dyslexia group. The correspondence between this result and the present observations seems meaningful and is worth commenting on.\n",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcb8db92-6b5e-42a8-af38-ff6e74ec4d40",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C1",
+      "claim": "Dyslexia affects approximately 5% of the world's population.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyslexia, a specific and significant impairment in the development of reading skills that is not accounted for by mental age, visual acuity problems, or inadequate schooling (World Health Organization, 2016), affects ~5% of the world's population (Lindgren et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lindgren et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "24a5e1b9-154c-416b-9bcc-6a43daca13e2",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C2",
+      "claim": "Individuals with dyslexia often have difficulties in simple non-linguistic perceptual tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Though individuals with dyslexia are diagnosed for their reading impairments, they also often have difficulties in simple non-linguistic perceptual tasks (Mcanally and Stein, 1996; Ahissar et al., 2000; Sperling et al., 2005; Giraud and Ramus, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "524fa003-df29-4531-abe2-a0391281cd06",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C3",
+      "claim": "Perceptual difficulties in dyslexia can be largely explained as resulting from inefficient use of stimulus statistics that characterize the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be largely explained as resulting from inefficient use of stimulus statistics that characterize the experiment (the 'Anchoring Deficit hypothesis'; Ahissar et al., 2006; Oganian and Ahissar, 2012; Jaffe-Dax et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the Anchoring Deficit hypothesis and related studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "829fa08b-d235-4ea0-8489-d1224d2f5c77",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C4",
+      "claim": "Perception tends to contract to the estimated mean of previous stimuli (contraction bias) when retention is required.",
+      "claim_type": "EXPLICIT",
+      "source": "But their perception \u2014 in particular when retention is required, as for example in serial discrimination tasks \u2014 tends to contract to the estimated mean of previous stimuli (contraction bias; Raviv et al., 2012, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Raviv et al., 2012, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "5bf4bc9a-1674-4ff3-b318-3ece1bd6aecf",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C5",
+      "claim": "The rate of decay of the behavioral effect of previous trials in serial discrimination is similar to the rate of decay of neural adaptation as measured by MEG.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the rate of decay of the behavioral effect of previous trials in serial discrimination is similar to the rate of decay of neural adaptation, as measured by magnetoencephalography (MEG) (Lu et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lu et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "84f6e0e4-1ed2-4536-9f6f-fb80e5db4dd5",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C6",
+      "claim": "Both the magnitude of perceptual contraction to the mean frequency of previous trials and the magnitude of neural adaptation decayed faster in participants with dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the magnitude of perceptual contraction to the mean frequency of previous trials and the magnitude of neural adaptation (P2 and N1 components that are automatically produced by the auditory cortex [Mayhew et al., 2010]) decayed faster in participants with dyslexia (ERP [Jaffe-Dax et al., 2017]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the authors' previous ERP study (Jaffe-Dax et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "e2398e2d-e283-44b4-8f84-59418ec90085",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C7",
+      "claim": "P2 and N1 components are automatically produced by the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the magnitude of perceptual contraction to the mean frequency of previous trials and the magnitude of neural adaptation (P2 and N1 components that are automatically produced by the auditory cortex [Mayhew et al., 2010]) decayed faster in participants with dyslexia (ERP [Jaffe-Dax et al., 2017]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mayhew et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "c8fea95f-3c02-4f24-b90a-638b04a5330d",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C8",
+      "claim": "The study recruited 20 participants with dyslexia and 19 good readers from a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "We recruited 20 participants with dyslexia and 19 good readers from our previous study (Table 1; Jaffe-Dax et al., 2017) and asked them to perform two-tone frequency discrimination in separate blocks with four trial-onset intervals (TOAs) of 3, 6, 9, and 15 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the Results section and references Table 1 and the previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "eed30722-b151-4494-be1b-cebffe295396",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C9",
+      "claim": "The two groups exhibited similar accuracy in the pre-scan training session (72.4 \u00b1 6% vs. 73 \u00b1 4.6%, z = 0.5, p=0.57).",
+      "claim_type": "EXPLICIT",
+      "source": "The two groups exhibited similar accuracy (72.4 \u00b1 6% vs. 73 \u00b1 4.6%, z = 0.5, p=0.57).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1bf16fe9-53c0-4f34-8011-7816cb687ec9",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C10",
+      "claim": "In scans, good readers performed better than dyslexic participants (82.5 \u00b1 1.6% vs. 76.3 \u00b1 2.2%, z = 2.6, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In scans, good readers (controls) performed better than dyslexic participants (Mean \u00b1 SEM: 82.5 \u00b1 1.6% vs. 76.3 \u00b1 2.2%, z = 2.6, p<0.01 in Mann-Whitney U-tests), suggesting that they gained more from the short pre-scan practice (in line with the faster learning reported by Jaffe-Dax et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1dfcf76b-2935-4453-a985-9bd3ae654283",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C11",
+      "claim": "Good readers gained more from the short pre-scan practice than dyslexic participants.",
+      "claim_type": "EXPLICIT",
+      "source": "In scans, good readers (controls) performed better than dyslexic participants (Mean \u00b1 SEM: 82.5 \u00b1 1.6% vs. 76.3 \u00b1 2.2%, z = 2.6, p<0.01 in Mann-Whitney U-tests), suggesting that they gained more from the short pre-scan practice (in line with the faster learning reported by Jaffe-Dax et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the performance difference and supported by citation to faster learning in Jaffe-Dax et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "dfcecbe6-a138-41e2-b0a1-5a58ad2ab1e4",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C13",
+      "claim": "Significant group differences in the whole-brain analysis were found in the left superior temporal lobe and in the right insular cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant regions were found in the left superior temporal cortex (TAL: \u221254,\u201318, 10) and in the right insular cortex (TAL: 39,\u20132, \u22128), outlined in magenta in Figure 1A and 1B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1c662d55-dd4c-4342-a4ed-5c748b35386c",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C14",
+      "claim": "The superior temporal cortex is involved in a broad range of auditory tasks, including simple tone discrimination, language, and music.",
+      "claim_type": "EXPLICIT",
+      "source": "The superior temporal cortex is known to be involved in a broad range of auditory tasks, including simple tone discrimination (Daikhin and Ahissar, 2015), language (Fedorenko et al., 2010) and music (Fedorenko et al., 2011), and even social tasks (e.g. Deen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "e9e7e2a6-660a-4c3c-8275-f0653bf00023",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C15",
+      "claim": "The right insular cortex is multi-modal and is involved in introspection.",
+      "claim_type": "EXPLICIT",
+      "source": "The right insular cortex is multi-modal (Bushara et al., 2003), and is also involved in introspection (Craig et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1210c6c3-4726-4ff6-8359-a5a358f52575",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C18",
+      "claim": "BOLD activity in auditory regions was previously shown to correlate with the magnitude of N1\u2013P2 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "BOLD activity in both auditory regions was previously shown to correlate with the magnitude of N1\u2013P2 responses (Mayhew et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mayhew et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "dbb7c15e-da41-471e-8b9b-31fbfc622db1",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C19",
+      "claim": "The right insular cortex is probably not associated with the P2 response measured with ERP.",
+      "claim_type": "EXPLICIT",
+      "source": "The right insular cortex is probably not associated with the P2 response that we measured with ERP and was therefore not predicted by our previous study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the lack of association in previous ERP study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "5f90535e-a70c-4f96-920f-b0ad2a1da04d",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C20",
+      "claim": "The general trend of shorter adaptation in participants with dyslexia was consistent across all responding voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the general (though not significant) trend of shorter adaptation in participants with dyslexia was consistent across all responding voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis across all responding voxels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "9e99b225-a3f4-4e89-a8f5-7cd96bfbf7f3",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C21",
+      "claim": "There is a broadly distributed tendency for shorter adaptation in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a broadly distributed tendency for shorter adaptation in dyslexia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the fMRI data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "35db18e0-4d82-40b0-969c-cc2d96e9d2d3",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C22",
+      "claim": "The source of N1 was attributed to Planum Temporale in a seminal MEG study.",
+      "claim_type": "EXPLICIT",
+      "source": "In a seminal MEG study (L\u00fctkenh\u00f6ner and Steinstr\u00e4ter, 1998), the source of N1 was attributed to Planum Temporale, and that of P2 to Heschl's gyrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to L\u00fctkenh\u00f6ner and Steinstr\u00e4ter, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "c4cccd1e-15e0-4d72-8560-1fda02673593",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C23",
+      "claim": "The source of P2 was attributed to Heschl's gyrus in a seminal MEG study.",
+      "claim_type": "EXPLICIT",
+      "source": "In a seminal MEG study (L\u00fctkenh\u00f6ner and Steinstr\u00e4ter, 1998), the source of N1 was attributed to Planum Temporale, and that of P2 to Heschl's gyrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to L\u00fctkenh\u00f6ner and Steinstr\u00e4ter, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "9a90ff62-3730-4653-849d-15f8659186d6",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C24",
+      "claim": "Significant correlations were found between variability in ERP-measured N1\u2013P2 complex and BOLD responses in several regions, including the primary and secondary auditory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent study (Mayhew et al., 2010) combined ERP and fMRI, and found significant correlations between variability in ERP-measured N1\u2013P2 complex and BOLD responses in several regions, including the primary (Heschl's gyrus) and secondary (Planum Temporale and STG areas) auditory areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mayhew et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "e57d4893-4c3a-4877-97a7-9dd00008f709",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C25",
+      "claim": "Reports of previous studies asking whether primary and secondary auditory cortices manifest neuro-typical structure and function in dyslexia are mixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports of previous studies asking whether these areas manifest neuro-typical structure and function in dyslexia are mixed. For example, Clark et al. (2014) reported early anatomical abnormalities, whereas Boets et al. (2013) reported adequate stimulus resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to conflicting studies (Clark et al., 2014 and Boets et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1d36fb44-129e-4725-887e-14f4e51da0f9",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C26",
+      "claim": "Clark et al. (2014) reported early anatomical abnormalities in auditory cortices in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Clark et al. (2014) reported early anatomical abnormalities, whereas Boets et al. (2013) reported adequate stimulus resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Clark et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "6bd3481a-cfd6-436a-b5b7-6b9f04ccbb94",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C27",
+      "claim": "Boets et al. (2013) reported adequate stimulus resolution in auditory cortices in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Clark et al. (2014) reported early anatomical abnormalities, whereas Boets et al. (2013) reported adequate stimulus resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Boets et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "908ce729-1fab-4924-8726-2619ccc8e2b6",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C28",
+      "claim": "The broad distribution of dyslexics' faster decay of adaptation is in line with recent observations of a domain general abnormally small adaptation in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "The broad distribution of dyslexics' faster decay of adaptation is in line with recent observations of a domain general abnormally small adaptation in dyslexia (Perrachione et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perrachione et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "af84ba3a-8e76-4e26-8465-0ae2abbdb8d6",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C29",
+      "claim": "Perrachione et al. (2016) found reduced stimulus-specific adaptation in the auditory, visual, and associative cortices in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "The researchers compared BOLD responses to stimulus repetitions (in blocks of ~10 s) with BOLD response to non-repeated stimuli (auditory and visual), and found reduced stimulus-specific adaptation in the auditory (superior temporal), visual (fusiform and lateral occipital [LO]), and associative (insular and inferior frontal) cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perrachione et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "5a2b9546-14a8-4d4a-b8fa-a8968d5fe168",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C30",
+      "claim": "Perrachione et al. (2016) found a three-way interaction of group (control and dyslexic) x condition (repeated and non-repeated) x time (within the block), where controls' increase of adaptation along the block was larger than that of participants with dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, they found a three-way interaction of group (control and dyslexic) x condition (repeated and non-repeated) x time (within the block), where controls' increase of adaptation along the block was larger than that of participants with dyslexia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perrachione et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "59edd8cb-b338-4bf7-b3b7-2c58779278b6",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C31",
+      "claim": "The observation of controls' accumulative adaptation with stimulus repetition is fully consistent with the observation of dyslexics' faster decay of adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, which results from controls' accumulative adaptation with stimulus repetition, is fully consistent with our observation of dyslexics' faster decay of adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference connecting findings from Perrachione et al., 2016 with the current study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "c34c4cbd-c28d-469b-94e0-c598d1353dff",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C32",
+      "claim": "The timescale of impaired retention in dyslexia is slower than that of sensory memory (iconic or echoic memory is <<1 s).",
+      "claim_type": "EXPLICIT",
+      "source": "We should note that the timescale of impaired retention in dyslexia is slower than that of sensory memory (iconic or echoic memory is <<1 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about sensory memory timescales.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "f1dd622f-a6bf-410f-ba92-c24b96b393a2",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C33",
+      "claim": "Impaired retention in dyslexia is expected to affect perception owing to reduced cross-trial retention.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it is expected to affect the perception of individuals with dyslexia owing to their reduced cross-trial retention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "6f6affe0-6669-4595-bd7a-3dd1bb06229f",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C34",
+      "claim": "Impaired retention in dyslexia is expected to impede performance in a broad range of perceptual tasks, such as entrainment to rapid stimuli, but only in protocols that contain stimulus repetitions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore expected to impede their performance in a broad range of perceptual tasks, such as entrainment to rapid stimuli (e.g., Witton et al., 1998; Goswami, 2011; Lehongre et al., 2013), but only in protocols that contain stimulus repetitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings and supported by citations to related research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "0c189959-742b-4946-8c6c-a315fc0a5c7b",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C35",
+      "claim": "Listeners entrain better to familiar compared with unfamiliar stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was shown that listeners entrain better to familiar compared with unfamiliar stimuli (Doelling and Poeppel, 2015; Kumagai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Doelling and Poeppel, 2015 and Kumagai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "d4b06eed-ef6f-41ae-a736-c17c515c9b92",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C36",
+      "claim": "The advantage of familiarity is expected to be smaller in dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of familiarity is expected to be smaller in dyslexia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings about faster decay of adaptation in dyslexia.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "4b576e72-7065-48d6-bf0a-0431d1888fa5",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C37",
+      "claim": "The faster decay of implicit perceptual memory of individuals with dyslexia is expected to impede their long-term accumulation of stimulus statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "The faster decay of implicit perceptual memory of individuals with dyslexia is expected to also impede their long-term accumulation of stimulus statistics, and consequently to reduce the complexity and richness of their long-term accumulated categorical representations (e.g., Perrachione et al., 2011; Banai and Ahissar, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings and supported by citations to related research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1447aae7-1fc1-4bf5-969c-659071e2fa71",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C38",
+      "claim": "The faster decay of implicit perceptual memory of individuals with dyslexia is expected to reduce the complexity and richness of their long-term accumulated categorical representations.",
+      "claim_type": "EXPLICIT",
+      "source": "The faster decay of implicit perceptual memory of individuals with dyslexia is expected to also impede their long-term accumulation of stimulus statistics, and consequently to reduce the complexity and richness of their long-term accumulated categorical representations (e.g., Perrachione et al., 2011; Banai and Ahissar, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings and supported by citations to related research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "0af5aafa-066f-45d2-a558-9d5c95b92b35",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C39",
+      "claim": "The data point to the specific neural structures that underlie the 'anchoring deficit' in dyslexia, namely a reduced use of stimulus statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the data collected in this study point to the specific neural structures that underlie the 'anchoring deficit' in dyslexia, namely a reduced use of stimulus statistics (Ahissar et al., 2006; Ahissar, 2007; Oganian and Ahissar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the study's data and supported by citations to the anchoring deficit hypothesis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "267c94a5-f845-45f7-bbb1-9d57f28adfd5",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C40",
+      "claim": "The data suggest a broad multimodal cortical distribution that includes, but is not limited to, sensory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a broad multimodal (e.g., Jaffe-Dax et al., 2016) cortical distribution that includes, but is not limited to, sensory areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the study's data and supported by a citation to Jaffe-Dax et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "2714c548-186e-47d8-a093-06ec1ffc162d",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C41",
+      "claim": "Tones were 50 ms long and presented at comfortable intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The tones were 50 ms long, presented at comfortable intensity, and were drawn from a uniform distribution between 800 Hz and 1250 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "4a53f256-410a-466e-8bb7-125dbe4ad2f3",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C42",
+      "claim": "Tones were drawn from a uniform distribution between 800 Hz and 1250 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The tones were 50 ms long, presented at comfortable intensity, and were drawn from a uniform distribution between 800 Hz and 1250 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "73b925f3-1b1a-48cb-9687-ea905a225c8d",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C43",
+      "claim": "The frequency difference within each pair was randomly drawn at between 1% and 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency difference within each pair was randomly drawn at between 1% and 20% (following the protocol in Jaffe-Dax et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study and references the previous protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "7511fdcc-ba40-4dba-8459-782d230d2ff7",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C44",
+      "claim": "The TOAs used in this study (3, 6, 9, and 15 s) are longer than those in the previous ERP experiment (1.5, 3, 6, and 9 s).",
+      "claim_type": "EXPLICIT",
+      "source": "These TOAs are longer than those in our previous ERP experiment (1.5, 3, 6, and 9 s, Jaffe-Dax et al., 2017), because the controls' ERP (N1 and P2) response at 9 s was still larger than that at 6 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodological choice and is supported by reference to the previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "a4e899db-3748-4dd1-aae5-e63fec0467da",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C45",
+      "claim": "The controls' ERP (N1 and P2) response at 9 s was still larger than that at 6 s in the previous experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "These TOAs are longer than those in our previous ERP experiment (1.5, 3, 6, and 9 s, Jaffe-Dax et al., 2017), because the controls' ERP (N1 and P2) response at 9 s was still larger than that at 6 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data from the previous ERP study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "497c0774-52ea-49ad-9165-bc9c10468f72",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C46",
+      "claim": "The block design allowed measurement of the dynamics of adaptation in timescales that are independent of the sluggishness of typical hemodynamic response function (HRF).",
+      "claim_type": "EXPLICIT",
+      "source": "The block design allowed us to measure the dynamics of adaptation in timescales that are independent of the sluggishness of typical hemodynamic response function (HRF), as we analyzed each block as a whole, and not on a trial-by-trial basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains the methodological rationale for the block design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "5c3a55a8-9cc3-4281-a35b-94b8d5f5e925",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C47",
+      "claim": "The number of trials was too small for robust estimation of behavioral context effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of trials was too small for robust estimation of behavioral context effects, which are based on the difference in success rate (binary scores for each trial) between trials that gain and those that are hampered by the context (Jaffe-Dax et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on methodological limitations and references the previous study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "41adddc5-3d34-44e5-a568-0101f57399e9",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C48",
+      "claim": "High-resolution T1-weighted MPRAGE images were acquired using a 3T Magnetom Skyra Siemens scanner and a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the functional scan, high-resolution (1 \u00d7 1 \u00d7 1 mm resolution) T1-weighted magnetization-prepared rapid acquisition gradient-echo (MPRAGE) images were acquired using a 3T Magnetom Skyra Siemens scanner and a 32-channel head coil at the ELSC Neuroimaging Unit (ENU).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the imaging methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "c8b664d4-6e59-4e30-9164-803e6d9fd82f",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C49",
+      "claim": "The cortical surface was reconstructed from the high-resolution anatomical images using standard procedures implemented by the BrainVoyager QX software package.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortical surface was reconstructed from the high-resolution anatomical images using standard procedures implemented by the BrainVoyager QX software package (version 2.84; Brain Innovation, The Netherlands).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the image processing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "86cd2388-838b-4ce7-9031-bb293cc00bdb",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C50",
+      "claim": "Preprocessing of functional scans included 3D motion correction, slice scan time correction, and removal of low frequencies up to three cycles per scan.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprocessing of functional scans in BrainVoyager included 3D motion correction, slice scan time correction, and removal of low frequencies up to three cycles per scan (linear trend removal and high-pass filtering).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "44366f61-adf1-4bf7-b9b5-b3d022077463",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C51",
+      "claim": "Each voxel's time course was z-score normalized and smoothed using a 3D Gaussian filter (FWHM of 4 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "Each voxel's time course was z-score normalized and smoothed using a 3D Gaussian filter (full width at half maximum [FWHM] of 4 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the preprocessing methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "a673995b-a9c4-42ea-8a3a-bd9bc75d4981",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C52",
+      "claim": "A standard (two gamma) hemodynamic response function was convolved with the trial timings of each TOA block to build four predictors for the subsequent GLM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A standard (two gamma) hemodynamic response function (Friston et al., 1998) was convolved with the trial timings of each TOA block to build four predictors for the subsequent GLM analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the analysis methods and is supported by a citation to Friston et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "1b5982cf-7622-4968-8e54-7aac3f264c4f",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C53",
+      "claim": "Whole-brain significance results were corrected for multiple comparison false-positive biases by a Monte-Carlo cluster correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain significance results were corrected for multiple comparison false-positive biases by a Monte-Carlo cluster correction (Forman et al., 1995), implemented using a plug-in of BrainVoyager (Goebel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods and is supported by citations to Forman et al., 1995 and Goebel et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "3a630e19-a4ce-466a-93d5-b92cb771dfdd",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C54",
+      "claim": "The Monte-Carlo procedure yielded a cluster threshold of 44 voxels for an a-priori chosen probability for type I error of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "The Monte-Carlo procedure was given an a-priori chosen probability for type I error of 0.05 and yielded a cluster threshold of 44 voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "54474e67-10a6-413a-9c66-0850279d3c0b",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C55",
+      "claim": "Non-parametric tests (Mann-Whitney's U-test) were used for group comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-parametric tests (Mann-Whitney's U-test) were used for group comparisons, as we did not assume a normal distribution, as in our previous study (Jaffe-Dax et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods and references the previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "57ab0bea-bb11-4d94-8a6c-b0c828e1e44e",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C69",
+      "claim": "Faster decay of adaptation in dyslexia is widespread, although the most significant effects are found in the left superior temporal lobe, including the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that faster decay of adaptation in dyslexia is widespread, although the most significant effects are found in the left superior temporal lobe, including the auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the fMRI data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "95bcc30b-aeb0-44d5-8650-76d1ef62b8e2",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C70",
+      "claim": "The broad distribution of faster decay of adaptation suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which also affects sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "This broad distribution suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which also affects sensory cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "61afb266-bf31-43be-9a0d-0b929da81261",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C71",
+      "claim": "All cortical regions that responded to tone discrimination showed a tendency to decay faster in participants with dyslexia.",
+      "claim_type": "EXPLICIT",
+      "source": "All cortical regions that responded to tone discrimination showed a tendency to decay faster in participants with dyslexia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the fMRI data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "05ec3b2c-0ec6-4ed2-a01a-433c055c0f6f",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C72",
+      "claim": "Adaptation is an automatic, implicit, and stimulus-specific decrease of the response to repeated stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural mechanism that may underlie the implicit learning of experimental statistics is adaptation; that is, an automatic, implicit, and stimulus-specific decrease of the response to repeated stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about adaptation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "b037db86-1ded-472c-9652-110b31435b83",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C73",
+      "claim": "Contraction to the mean merges the (implicit) predicted stimulus (based on previous exposures) with the current sensory estimate, forming a coherent percept.",
+      "claim_type": "EXPLICIT",
+      "source": "This contraction to the mean merges the (implicit) predicted stimulus (based on previous exposures) with the current sensory estimate, forming a coherent percept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about perceptual processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "0fe542e4-88cf-4b4f-a827-b1733cc9ee34",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C75",
+      "claim": "None of the other sub-regions of auditory cortex yielded significant group differences.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the other sub-regions of auditory cortex yielded significant group differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the ROI analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "56e99f23-09e5-49f8-9b1f-6e54fdf8bfa4",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C76",
+      "claim": "The primary auditory cortex is composed of three sub-regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a combined cytoarchitectonic (Morosan et al., 2001) and myeloarchitectonic (Dick et al., 2012) definition of these areas (the primary auditory cortex being composed of three sub-regions and two secondary auditory areas [Planum Temporale and Planum Polare]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established anatomical definitions cited from Morosan et al., 2001 and Dick et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "339ff64f-9f25-4ac3-9a38-6b3f57d02301",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C77",
+      "claim": "There are two secondary auditory areas: Planum Temporale and Planum Polare.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a combined cytoarchitectonic (Morosan et al., 2001) and myeloarchitectonic (Dick et al., 2012) definition of these areas (the primary auditory cortex being composed of three sub-regions and two secondary auditory areas [Planum Temporale and Planum Polare]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established anatomical definitions cited from Morosan et al., 2001 and Dick et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "81625efe-3b83-41dd-bd73-20dc773ef360",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "claim_id": "C80",
+      "claim": "Other regions might have mean group differences (e.g., frontal cortices), but due to large inter-subject variability in these regions, the group differences were not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of Figures 1A and 1B suggests that other regions might have mean group differences (e.g., frontal cortices), but due to large inter-subject variability in these regions, the group differences were not significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from visual comparison of Figures 1A and 1B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "22cedf5e-d64e-4161-94f0-92d0069e256e",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 39 participants (20 with dyslexia, 19 controls) who performed similarly in pre-scan training (72.4\u00b16% vs. 73\u00b14.6%, p=0.57), but controls performed significantly better during scanning (82.5\u00b11.6% vs. 76.3\u00b12.2%, p<0.01), suggesting faster learning in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 provide consistent evidence for group differences in task performance. The statistical tests are appropriate (Mann-Whitney U-test for non-normal distributions), sample sizes are reasonable (n=19-20 per group), and the interpretation of better in-scan performance as reflecting faster learning is supported by citation to prior work (C11).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Whole-brain analysis revealed that faster decay of BOLD adaptation in dyslexia is broadly distributed across cortical regions responding to tone discrimination, with significant group differences in the left superior temporal cortex and right insular cortex (cluster-corrected p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C69, C71, C20, and C21 converge on the finding of widespread faster adaptation decay in dyslexia. The whole-brain analysis used appropriate multiple comparison correction (Monte-Carlo cluster correction with 44-voxel threshold), non-parametric statistics, and the broad distribution is evident in Figure 1. The significant clusters are clearly localized and reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ROI analysis of primary and secondary auditory cortices, based on established anatomical definitions and prior ERP-fMRI correlations, revealed significant group differences in the left primary auditory cortex (z=2.6, p<0.01, r=0.42) but not in other auditory sub-regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C18, C76-C77, and C75 support the ROI analysis findings. The ROI selection is well-justified by prior literature linking N1-P2 ERP components to specific auditory regions (L\u00fctkenh\u00f6ner & Steinstr\u00e4ter 1998; Mayhew et al. 2010). The statistical test is appropriate, effect size is reported, and the anatomical definitions are properly cited. The lack of significance in other regions (C75) is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "8e101426-ee28-445f-bd90-cd17fc091e3a",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work established that neural adaptation (automatic, stimulus-specific decrease in response to repeated stimuli) parallels behavioral contraction bias, and that both decay faster in dyslexia, providing the theoretical foundation for the current fMRI study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C72-C73 establish the theoretical framework linking adaptation to behavior. These are well-supported by citations to prior work (Lu et al. 1992; Raviv et al. 2012, 2014; Jaffe-Dax et al. 2017; Mayhew et al. 2010). This provides appropriate context for the current study's hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "bf8da7d3-3a0e-46f0-9fb3-e7b2253de1d9",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The broad distribution of faster adaptation decay in dyslexia is consistent with recent findings by Perrachione et al. (2016) showing domain-general reduced stimulus-specific adaptation across auditory, visual, and associative cortices, with controls showing greater accumulation of adaptation over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 appropriately contextualize the current findings within recent literature. The comparison to Perrachione et al. (2016) is valid, as both studies found widespread adaptation differences in dyslexia. The interpretation that controls' accumulative adaptation is consistent with dyslexics' faster decay (C31) is logically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "3c46b156-32b7-41c6-b941-9636eddfdd49",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The data identify specific neural structures underlying the 'anchoring deficit' in dyslexia, suggesting that faster decay of implicit memory is a general characteristic of cortical dynamics in dyslexia affecting a broad multimodal distribution including sensory areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39, C40, and C70 make strong interpretive conclusions about the 'anchoring deficit' and general cortical characteristics. While the data show widespread trends and some significant regions, the interpretation that this definitively identifies 'specific neural structures' underlying the anchoring deficit is somewhat overstated given that only two regions survived whole-brain correction and many regions showed non-significant trends. The causal link between observed adaptation patterns and the anchoring deficit framework requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The faster decay of implicit perceptual memory in dyslexia is expected to impair performance in perceptual tasks involving stimulus repetitions (e.g., entrainment), reduce the advantage of familiarity, and impede long-term accumulation of stimulus statistics, thereby reducing the complexity of categorical representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C33-C38 present predictions and expected consequences rather than tested findings. These are speculative inferences about how the observed adaptation differences might affect various perceptual and cognitive processes. While logically derived from the data, these claims require empirical validation through additional experiments. The manuscript appropriately frames these as expectations, but they remain untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "e94aaa40-215c-437f-8485-7264ee64f788",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study employed a two-tone frequency discrimination task with TOAs of 3, 6, 9, and 15 seconds, using fMRI with appropriate preprocessing, GLM analysis with exponential decay modeling, Monte-Carlo cluster correction (44-voxel threshold, p<0.05), and non-parametric group comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C55 describe the experimental and analytical methods. The methods are generally well-described and appropriate for the research question. The block design rationale (C46) is sound for measuring adaptation dynamics independent of HRF sluggishness. The acknowledgment of insufficient trials for behavioral context effects (C47) shows appropriate methodological awareness. Statistical corrections and preprocessing steps are standard and properly implemented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "a8105144-d1c5-4b53-8c79-29ca6707dcd5",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The significant regions identified (left superior temporal cortex and right insular cortex) have established roles in auditory processing and introspection, though the right insular cortex was not predicted by prior ERP findings, and other regions (e.g., frontal cortices) may show group differences masked by high inter-subject variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, C19, and C80 provide appropriate interpretation of the anatomical findings. The functional characterizations are well-supported by citations. The acknowledgment that the right insular cortex was not predicted (C19) shows scientific honesty. The observation about potential group differences in other regions being masked by variability (C80) is a reasonable interpretation of Figure 1, though it highlights a limitation in detecting effects in high-variability regions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "d30a447d-6b2b-4e40-a489-14ce55a931d3",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior literature on whether primary and secondary auditory cortices show atypical structure and function in dyslexia is mixed, with some studies reporting anatomical abnormalities (Clark et al. 2014) and others reporting adequate stimulus resolution (Boets et al. 2013).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 accurately characterize the mixed state of prior literature on auditory cortex function in dyslexia. The citations to conflicting findings (Clark et al. 2014 vs. Boets et al. 2013) appropriately contextualize the current study's contribution to resolving this debate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "ed312915-266b-4c64-967c-d042a5fd507a",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dyslexia affects ~5% of the population and is characterized by difficulties in non-linguistic perceptual tasks that can be explained by inefficient use of stimulus statistics (anchoring deficit hypothesis), with P2 and N1 ERP components being automatically produced by auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C7 provide background context supported by appropriate citations. These establish the prevalence of dyslexia, its perceptual manifestations, and the theoretical framework (anchoring deficit hypothesis) motivating the study. All claims are properly attributed to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    },
+    {
+      "id": "bdac1581-13bb-4495-874c-1e0c8c074cb2",
+      "content_id": "fc317c4f-e600-4708-80ff-ce14ccb5456c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The timescale of impaired retention in dyslexia (3-15 seconds) is slower than sensory memory (<<1 second).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 makes an appropriate distinction between the timescales studied (3-15s TOAs) and sensory memory. This is based on established knowledge about sensory memory duration and helps clarify the type of memory process being investigated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:33:28.686228Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8fea95f-3c02-4f24-b90a-638b04a5330d",
+      "result_id": "22cedf5e-d64e-4161-94f0-92d0069e256e"
+    },
+    {
+      "claim_id": "eed30722-b151-4494-be1b-cebffe295396",
+      "result_id": "22cedf5e-d64e-4161-94f0-92d0069e256e"
+    },
+    {
+      "claim_id": "1bf16fe9-53c0-4f34-8011-7816cb687ec9",
+      "result_id": "22cedf5e-d64e-4161-94f0-92d0069e256e"
+    },
+    {
+      "claim_id": "1dfcf76b-2935-4453-a985-9bd3ae654283",
+      "result_id": "22cedf5e-d64e-4161-94f0-92d0069e256e"
+    },
+    {
+      "claim_id": "dfcecbe6-a138-41e2-b0a1-5a58ad2ab1e4",
+      "result_id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1"
+    },
+    {
+      "claim_id": "57ab0bea-bb11-4d94-8a6c-b0c828e1e44e",
+      "result_id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1"
+    },
+    {
+      "claim_id": "61afb266-bf31-43be-9a0d-0b929da81261",
+      "result_id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1"
+    },
+    {
+      "claim_id": "5f90535e-a70c-4f96-920f-b0ad2a1da04d",
+      "result_id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1"
+    },
+    {
+      "claim_id": "9e99b225-a3f4-4e89-a8f5-7cd96bfbf7f3",
+      "result_id": "322e5f47-cab5-4eb4-9ca4-96c2a9bb24e1"
+    },
+    {
+      "claim_id": "35db18e0-4d82-40b0-969c-cc2d96e9d2d3",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "c4cccd1e-15e0-4d72-8560-1fda02673593",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "9a90ff62-3730-4653-849d-15f8659186d6",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "1210c6c3-4726-4ff6-8359-a5a358f52575",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "56e99f23-09e5-49f8-9b1f-6e54fdf8bfa4",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "339ff64f-9f25-4ac3-9a38-6b3f57d02301",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "0fe542e4-88cf-4b4f-a827-b1733cc9ee34",
+      "result_id": "7e7065a7-6a57-4264-bfd2-5c6822f90cd5"
+    },
+    {
+      "claim_id": "84f6e0e4-1ed2-4536-9f6f-fb80e5db4dd5",
+      "result_id": "8e101426-ee28-445f-bd90-cd17fc091e3a"
+    },
+    {
+      "claim_id": "5bf4bc9a-1674-4ff3-b318-3ece1bd6aecf",
+      "result_id": "8e101426-ee28-445f-bd90-cd17fc091e3a"
+    },
+    {
+      "claim_id": "05ec3b2c-0ec6-4ed2-a01a-433c055c0f6f",
+      "result_id": "8e101426-ee28-445f-bd90-cd17fc091e3a"
+    },
+    {
+      "claim_id": "b037db86-1ded-472c-9652-110b31435b83",
+      "result_id": "8e101426-ee28-445f-bd90-cd17fc091e3a"
+    },
+    {
+      "claim_id": "829fa08b-d235-4ea0-8489-d1224d2f5c77",
+      "result_id": "8e101426-ee28-445f-bd90-cd17fc091e3a"
+    },
+    {
+      "claim_id": "908ce729-1fab-4924-8726-2619ccc8e2b6",
+      "result_id": "bf8da7d3-3a0e-46f0-9fb3-e7b2253de1d9"
+    },
+    {
+      "claim_id": "af84ba3a-8e76-4e26-8465-0ae2abbdb8d6",
+      "result_id": "bf8da7d3-3a0e-46f0-9fb3-e7b2253de1d9"
+    },
+    {
+      "claim_id": "5a2b9546-14a8-4d4a-b8fa-a8968d5fe168",
+      "result_id": "bf8da7d3-3a0e-46f0-9fb3-e7b2253de1d9"
+    },
+    {
+      "claim_id": "59edd8cb-b338-4bf7-b3b7-2c58779278b6",
+      "result_id": "bf8da7d3-3a0e-46f0-9fb3-e7b2253de1d9"
+    },
+    {
+      "claim_id": "0af5aafa-066f-45d2-a558-9d5c95b92b35",
+      "result_id": "3c46b156-32b7-41c6-b941-9636eddfdd49"
+    },
+    {
+      "claim_id": "267c94a5-f845-45f7-bbb1-9d57f28adfd5",
+      "result_id": "3c46b156-32b7-41c6-b941-9636eddfdd49"
+    },
+    {
+      "claim_id": "95bcc30b-aeb0-44d5-8650-76d1ef62b8e2",
+      "result_id": "3c46b156-32b7-41c6-b941-9636eddfdd49"
+    },
+    {
+      "claim_id": "f1dd622f-a6bf-410f-ba92-c24b96b393a2",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "6f6affe0-6669-4595-bd7a-3dd1bb06229f",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "0c189959-742b-4946-8c6c-a315fc0a5c7b",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "d4b06eed-ef6f-41ae-a736-c17c515c9b92",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "4b576e72-7065-48d6-bf0a-0431d1888fa5",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "1447aae7-1fc1-4bf5-969c-659071e2fa71",
+      "result_id": "9fe84500-020c-4ff6-b15a-e2baf4f684ef"
+    },
+    {
+      "claim_id": "2714c548-186e-47d8-a093-06ec1ffc162d",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "4a53f256-410a-466e-8bb7-125dbe4ad2f3",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "73b925f3-1b1a-48cb-9687-ea905a225c8d",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "7511fdcc-ba40-4dba-8459-782d230d2ff7",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "a4e899db-3748-4dd1-aae5-e63fec0467da",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "497c0774-52ea-49ad-9165-bc9c10468f72",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "5c3a55a8-9cc3-4281-a35b-94b8d5f5e925",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "41adddc5-3d34-44e5-a568-0101f57399e9",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "c8b664d4-6e59-4e30-9164-803e6d9fd82f",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "86cd2388-838b-4ce7-9031-bb293cc00bdb",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "44366f61-adf1-4bf7-b9b5-b3d022077463",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "a673995b-a9c4-42ea-8a3a-bd9bc75d4981",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "1b5982cf-7622-4968-8e54-7aac3f264c4f",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "3a630e19-a4ce-466a-93d5-b92cb771dfdd",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "54474e67-10a6-413a-9c66-0850279d3c0b",
+      "result_id": "e94aaa40-215c-437f-8485-7264ee64f788"
+    },
+    {
+      "claim_id": "1c662d55-dd4c-4342-a4ed-5c748b35386c",
+      "result_id": "a8105144-d1c5-4b53-8c79-29ca6707dcd5"
+    },
+    {
+      "claim_id": "e9e7e2a6-660a-4c3c-8275-f0653bf00023",
+      "result_id": "a8105144-d1c5-4b53-8c79-29ca6707dcd5"
+    },
+    {
+      "claim_id": "dbb7c15e-da41-471e-8b9b-31fbfc622db1",
+      "result_id": "a8105144-d1c5-4b53-8c79-29ca6707dcd5"
+    },
+    {
+      "claim_id": "81625efe-3b83-41dd-bd73-20dc773ef360",
+      "result_id": "a8105144-d1c5-4b53-8c79-29ca6707dcd5"
+    },
+    {
+      "claim_id": "e57d4893-4c3a-4877-97a7-9dd00008f709",
+      "result_id": "d30a447d-6b2b-4e40-a489-14ce55a931d3"
+    },
+    {
+      "claim_id": "1d36fb44-129e-4725-887e-14f4e51da0f9",
+      "result_id": "d30a447d-6b2b-4e40-a489-14ce55a931d3"
+    },
+    {
+      "claim_id": "6bd3481a-cfd6-436a-b5b7-6b9f04ccbb94",
+      "result_id": "d30a447d-6b2b-4e40-a489-14ce55a931d3"
+    },
+    {
+      "claim_id": "bcb8db92-6b5e-42a8-af38-ff6e74ec4d40",
+      "result_id": "ed312915-266b-4c64-967c-d042a5fd507a"
+    },
+    {
+      "claim_id": "24a5e1b9-154c-416b-9bcc-6a43daca13e2",
+      "result_id": "ed312915-266b-4c64-967c-d042a5fd507a"
+    },
+    {
+      "claim_id": "524fa003-df29-4531-abe2-a0391281cd06",
+      "result_id": "ed312915-266b-4c64-967c-d042a5fd507a"
+    },
+    {
+      "claim_id": "e2398e2d-e283-44b4-8f84-59418ec90085",
+      "result_id": "ed312915-266b-4c64-967c-d042a5fd507a"
+    },
+    {
+      "claim_id": "c34c4cbd-c28d-469b-94e0-c598d1353dff",
+      "result_id": "bdac1581-13bb-4495-874c-1e0c8c074cb2"
+    }
+  ],
+  "comparisons": []
+}

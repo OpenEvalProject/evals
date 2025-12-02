@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Transposable elements, particularly endogenous retroviruses and their LTRs, comprise a substantial portion of the human genome and have been increasingly recognized as sources of regulatory innovation for the host, with evidence from epigenomic studies and specific examples of exaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 collectively establish the background knowledge about TEs and ERVs in the human genome. All claims are supported by multiple citations to prior literature and represent well-established knowledge in the field. These provide the scientific context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "HERVK (HML-2) is the most recently endogenized retrovirus in humans, with LTR5HS elements present in ~697 copies in the human genome. HERVK is transcriptionally activated in human preimplantation embryos and na\u00efve hESCs, and this activation is associated with enhancer-like chromatin signatures at LTR5HS elements in NCCIT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 establish the biological context for HERVK and LTR5HS, supported by citations to prior research including the authors' own previous work. These claims provide the rationale for studying LTR5HS specifically and establish NCCIT cells as an appropriate model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A CARGO array with 12 distinct gRNA transcriptional units was designed to target ~91% of LTR5HS insertions in the human genome, with most insertions recognized by multiple gRNAs. The array is predicted to exhibit some binding to related LTR5A and LTR5B elements but not other TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 describe the computational design of the CARGO array. The predictions are based on sequence analysis and are supported by data shown in Figure 1\u2014figure supplement 1. The design rationale is sound, accounting for the need for multiple gRNAs per target (C28, supported by citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C75"
+    ],
+    "result": "CARGO-CRISPRa/CRISPRi enables robust manipulation of HERVK expression. CRISPRa increases HERVK transcript and protein levels 10-15 fold, while CRISPRi decreases them by over 98-fold compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C75 are supported by RT-qPCR data (Figure 1C) and western blot data (Figure 1D) showing reciprocal effects of activation and repression. The magnitude of effects is substantial and the controls are appropriate, demonstrating the efficacy of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "dCas9 ChIP-seq demonstrates selective targeting of LTR5HS elements. 1178 high-confidence peaks were identified in the recruitment condition, with 85% of LTR5HS elements bound. The system also binds related LTR5A/5B elements as predicted, with minimal off-target binding to other TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 are supported by ChIP-seq data (Figures 2A-D and supplements). The specificity is demonstrated by comparison to controls (C38-C39), and the binding patterns match computational predictions (C40-C41, C44). The moderate correlation between predicted gRNA number and binding strength (C45) is appropriately noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPRa and CRISPRi induce widespread changes in the chromatin landscape at LTR5HS elements. CRISPRa leads to H3K27ac gain at over 90% of LTR5HS elements, while CRISPRi causes reduction in active marks and strong H3K9me3 deposition at over 90% of elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by ChIP-seq data for histone modifications (Figures 3A-B). The reciprocal effects on chromatin marks are consistent with the known mechanisms of VPR and KRAB domains. The observation that LTR5HS elements lack H3K9me3 in WT cells (C49) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Perturbation of LTR5HS function leads to reciprocal regulation of 275 human genes. These genes are predominantly located near LTR5HS elements (79% in the closest decile), show substantial expression changes (82% with >2-fold change), and 91% fall within the first or second decile of distance from LTR5HS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by RNA-seq data analysis (Figures 4A-B). The reciprocal effects (C54) and proximity to LTR5HS elements (C55, C57) provide strong evidence for LTR5HS-dependent regulation. The magnitude of expression changes (C56) indicates biologically significant effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "LTR5HS-regulated genes show enrichment in na\u00efve hESCs and human preimplantation embryos. 50% are upregulated in na\u00efve vs. primed hESCs, 20% are expressed in human preimplantation epiblast, and these genes are more highly expressed in human than rhesus blastocysts, suggesting that HERVK endogenization contributed to unique gene expression patterns in ape embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C79-C82 are supported by analysis of published RNA-seq data with appropriate statistical testing (Fisher's exact test, Wilcoxon-Mann-Whitney test). The comparison to rhesus macaque (which lacks LTR5HS, C81) provides evolutionary context. The conclusion about HERVK contribution (C82) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "LTR5HS elements exert long-range effects on gene expression. Genes located up to ~200 kb from LTR5HS show significant upregulation with CRISPRa and downregulation with CRISPRi, indicating that LTR5HS elements function as distal enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C78 are supported by RNA-seq data analysis (Figures 5A-B and Supplementary file 1). The distance-dependent effects up to ~200 kb are consistent with enhancer function. The reciprocal effects of activation and repression strengthen the conclusion about enhancer activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Promoters of LTR5HS-regulated genes show changes in H3K27ac under CRISPRa/CRISPRi conditions in the absence of direct dCas9 binding, suggesting long-range chromatin effects from LTR5HS elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by ChIP-seq data (Figure 5E). The observation that changes occur without direct dCas9 binding to promoters (C65) is critical evidence for long-range enhancer function. The control analysis on random promoters (Figure 5\u2014figure supplement 3) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CRISPR/Cas9 deletion of individual LTR5HS elements confirms their requirement for host gene expression. All six genes tested (CACNA2D2, EPHA7, ALPPL2, NFKB2, SERPINB9, GDPD1) showed significant decreases in expression (2.6-8.1 fold) upon deletion of the nearest LTR5HS, with corresponding reductions in enhancer marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 are supported by ChIP-qPCR (Figure 6A, Figure 6\u2014figure supplement 1) and RT-qPCR data (Figure 6B) from multiple clonal lines. The deletion experiments provide direct evidence that LTR5HS sequences are required for gene expression. The effects span a range of distances and orientations, supporting the enhancer model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C83",
+      "C94"
+    ],
+    "result": "The CARGO-CRISPRa/CRISPRi strategy enables robust and specific targeting of ~90% of LTR5HS elements for functional manipulation, demonstrating that LTR5HS elements function as embryonic gene enhancers and providing a novel tool for studying TE impact on gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C83, and C94 represent the main conclusions of the study. These are well-supported by the collective experimental evidence from ChIP-seq, RNA-seq, histone modification ChIP-seq, and deletion experiments. The conclusions are appropriately stated as supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Unlike mouse MERVL elements which function as alternative promoters with pervasive chimeric transcription, HERVK LTR5HS elements do not show evidence of pervasive chimeric transcription with nearby host genes, illustrating diverse mechanisms of TE regulatory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 compare the mechanism of LTR5HS function to mouse MERVL. C84-C85 are supported by citations to prior work. C86 is supported by RNA-seq data analysis from this study and prior work, showing only 4 of 275 genes with appreciable chimeric transcription. This comparison strengthens the enhancer model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "LTR5HS elements contain a consensus OCT4 motif and are bound by OCT4, which may have contributed to their endogenization and cooption for enhancer function. The OCT4 binding motif is important for LTR5HS transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by data shown in Figure 5\u2014figure supplement 2 and citations to prior work including the authors' previous study. The presence of the OCT4 motif specifically in LTR5HS (but not LTR5A/B) provides a mechanistic explanation for their enhancer activity in pluripotent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Both human-specific and older ape-specific LTR5HS elements contribute to long-range gene regulation. Given that rhesus diverged from humans ~25 million years ago before LTR5HS integration, a recent burst of HERVK endogenization likely supplied apes with new embryonic enhancers, shifting preimplantation gene expression programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 integrate the age analysis of LTR5HS elements with the comparative embryo expression data. C93 is supported by citation. The evolutionary inference (C92) is reasonable given the data, though it remains somewhat speculative about the functional consequences of these changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Sequencing data have been deposited in GEO under accession code GSE111337.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a straightforward statement about data availability that can be verified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Single-molecule Slimfield microscopy reveals that Mig1 exists as two distinct populations in live yeast cells: a diffuse monomer pool and discrete multimeric foci (clusters) containing 6-9 molecules with diffusion coefficients of 1-2 \u03bcm\u00b2/s. These foci are trackable for hundreds of milliseconds and show consistent stoichiometry across cytoplasm, nucleus, and trans-nuclear populations at low glucose conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C41 provide converging evidence from multiple fluorescent protein variants (GFP, mGFP, mEos2) showing consistent cluster stoichiometry and mobility. Statistical tests confirm no significant differences between variants (p=0.67, C31) and between compartments (p>0.05, C40-C41). Controls with oligomerization-resistant mGFP and super-resolution STORM imaging (C32) rule out fluorescent protein artifacts. The single-molecule calibration (C24) and photobleaching analysis provide quantitative rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "At high glucose, nuclear Mig1 foci exhibit increased stoichiometry (24-28 molecules), reduced diffusion coefficient (factor of 2 decrease), and a mixed population of mobile and immobile components (20-30% immobile). The immobile fraction is consistent with DNA-bound clusters, and foci show anomalous subdiffusion over timescales >30 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are well-supported by quantitative microscopy data shown in Figures 2-3 and Tables 2-3. The two-component mobility analysis (C50-C51) uses appropriate CDF and Gamma function fitting with clear statistical support. The MSD analysis (C52) demonstrates subdiffusion with anomalous exponent \u03b1=0.4-0.8, consistent with interactions with nuclear structures. The higher apparent stoichiometry is later explained (C68) as multiple ~7-molecule clusters within the optical resolution limit, which is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mig1 phosphorylation state, regulated by Snf1 kinase, controls cluster localization between nucleus and cytoplasm but does not affect the ability to form clusters. SNF1 deletion, kinase inhibition, and phosphorylation site mutations all show glucose-insensitive nuclear localization while maintaining cluster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by experiments with three independent perturbations (SNF1 deletion, Snf1-I132G inhibition, phosphorylation site mutants) all showing consistent phenotypes. The data in Figure 2\u2014figure supplements 1-2 and Table 4 demonstrate that clusters persist with similar stoichiometry and diffusion coefficients across conditions. This provides strong evidence that clustering is independent of phosphorylation, though the conclusion relies on the assumption that these perturbations fully eliminate Mig1 phosphorylation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Mig1 clusters bind to DNA via their Zn finger motif with glucose-dependent affinity. Deletion of the Zn finger eliminates the immobile cluster population at both glucose conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by CDF analysis of the Zn finger deletion mutant (Figure 3\u2014figure supplement 1) showing loss of the immobile population. This provides direct evidence that DNA binding requires the Zn finger domain. However, the claim of 'relatively high association constant' (C55) is inferred from slow off-rates rather than directly measured, which is reasonable but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Trans-nuclear Mig1 clusters dwell at the nuclear envelope for ~10 ms, with a time constant insensitive to glucose concentration. This demonstrates that nuclear pore complexes do not directly select cargo based on phosphorylation state, and that Mig1 localization is instead driven by differential binding affinities to proteins within or outside the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present a surprising finding supported by trans-nuclear tracking analysis (Figure 3D-E). The glucose-insensitive dwell time (C57) is clearly demonstrated, and the ~10 ms time constant (C56) is consistent with previous transport factor measurements. The inference that nuclear pore complexes are 'blind to phosphorylation state' (C58) is logical given the data, though alternative explanations (e.g., phosphorylation affecting binding partners rather than NPC recognition) are not fully excluded. The proposed mechanism (C59) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "FRAP experiments reveal that nuclear Mig1 foci at high glucose turn over slowly (>100 s time constant) with a stoichiometry periodicity of 7-9 molecules, while the nuclear pool recovers rapidly (<5 s). This periodicity is identical in both FRAP recovery and steady-state measurements, indicating that turnover occurs in units of whole clusters rather than individual monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are well-supported by FRAP data (Figure 3F-G, Figure 4A, Figure 4\u2014figure supplement 1A). The stoichiometry periodicity analysis using pairwise differences and Fourier spectral analysis provides quantitative evidence for the ~7-9 molecule unit. The single exponential fits to recovery kinetics are appropriate. The conclusion that turnover occurs as whole clusters (C64) is a logical inference from the periodicity data, though direct visualization of cluster binding/unbinding events would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Mig1 clusters have diameters of 15-50 nm that scale with stoichiometry according to a power law with exponent 0.32\u00b10.06, consistent with spherical packing geometry (theoretical exponent 1/3). Higher apparent stoichiometry nuclear foci at high glucose represent multiple ~7-molecule clusters separated by <200 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 provide structural information about clusters. The power law analysis (C66) with exponent matching theoretical predictions for spherical packing (C67) is compelling. The size measurements are corrected for motion blur and optical resolution, showing appropriate rigor. The interpretation that high-stoichiometry foci are multiple clusters (C68) is consistent with the periodicity data and resolution limits. However, the immuno-gold EM data mentioned provides only weak support due to poor labeling efficiency, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Native gel electrophoresis and in vitro Slimfield imaging show that purified Mig1-GFP exists as monomers in the absence of crowding agents. Addition of PEG, which mimics cellular depletion forces, induces cluster formation in vitro. Control experiments with GFP alone show no clustering effect, supporting the hypothesis that clusters are stabilized by depletion forces lost during purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide biochemical evidence for the depletion force mechanism. The native gel (C69) and in vitro imaging (C70) establish that purified protein is monomeric. The PEG-induced clustering (C71) with appropriate GFP-only control (C72) supports the depletion force hypothesis. However, this is an in vitro reconstitution that may not fully recapitulate the in vivo environment. The conclusion (C73) is reasonable but somewhat speculative about the exact nature of 'depletion components' in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Computational modeling using a 3D yeast genome structure with 112 predicted Mig1 promoter binding sites shows that a cluster binding model (7-mer clusters) fits experimental stoichiometry distributions excellently (R\u00b2=0.75), while a monomer binding model fails completely (R\u00b2<0). The optimized model predicts ~25% promoter occupancy by clusters, with remaining clusters near the nuclear envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 present strong computational support for the cluster model. The bioinformatics analysis (C74) identifies binding sites systematically. The model comparison (C75-C76) shows a dramatic difference in fit quality (R\u00b2=0.75 vs <0), providing quantitative support for clusters over monomers. The modeling approach accounts for trans-nuclear foci and different chromosome orientations, showing appropriate rigor. However, the model makes simplifying assumptions about binding site occupancy and cluster distribution that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The transcriptional activator Msn2, which co-regulates Mig1 target genes but with opposite glucose response, also forms clusters with comparable stoichiometry and diffusion coefficients to Mig1. Msn2 shows high stoichiometry and low diffusion at low glucose, consistent with its activator role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 demonstrate that clustering is not unique to Mig1. The Slimfield data on Msn2 (Figure 5A-B, Table 2) shows similar cluster properties with opposite glucose dependence, which is consistent with its known activator function. This provides important evidence for a general clustering mechanism. However, the sample size and depth of analysis for Msn2 appear less extensive than for Mig1, and the immuno-gold EM data for Msn2 suffers from the same limitations as for Mig1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PP7-labeled mRNA from the GSY1 target gene shows high colocalization (overlap integral ~0.95) with both Mig1 clusters at high glucose and Msn2 clusters at low glucose. No PP7 accumulation occurs with Zn finger-deleted Mig1, demonstrating a functional link between transcription factor cluster localization and mRNA production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide crucial functional validation that clusters regulate gene expression. The high overlap integral (C85) with theoretical maximum of 1.0 indicates strong colocalization. The Zn finger deletion control (C84) shows specificity. The similar results for both Mig1 and Msn2 (C86) strengthen the conclusion. However, the PP7 system reports on mRNA localization rather than transcription per se, and the temporal relationship between cluster binding and mRNA appearance could be better characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Bioinformatics analysis reveals that Mig1 and Msn2 contain >50% intrinsically disordered regions (up to 75% for Mig1), with Zn finger motifs at opposite termini creating molecular bipolarity. In contrast, the prokaryotic LacI repressor has <50% disorder. At least 50% of phosphorylation sites lie within disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 present comprehensive sequence analysis using multiple disorder prediction algorithms (PONDR, DISOPRED). The high disorder content (C89-C90) and bipolar organization (C91-C92) are clearly demonstrated in Figure 6A-B and Table 6. The comparison with LacI (C93) provides evolutionary context. The phosphorylation site analysis (C94) suggests a regulatory mechanism. However, disorder predictions are computational and not experimentally validated in this study. The functional significance of the disorder is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Circular dichroism measurements show significant structural changes in Mig1-GFP upon PEG addition in the 200-230 nm wavelength range, sensitive to order-disorder transitions. The bipolar arrangement of structured Zn fingers opposite to disordered regions may stabilize cluster cores while exposing DNA-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide experimental evidence for PEG-induced structural changes (Figure 6C). The CD measurements are appropriate for detecting order-disorder transitions. However, the interpretation of molecular bipolarity (C97) is speculative and based on sequence analysis rather than direct structural determination. The proposed model of cluster organization is reasonable but lacks direct structural evidence (e.g., from cryo-EM or crosslinking-MS).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Analysis of the 3C chromosome structure model indicates that 20-30% of Mig1 promoter sites are separated by <50 nm, enabling intersegment transfer by single clusters. This proportion is consistent with the estimated fraction of immobile foci and cluster-occupied sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 use the 3C model to predict spatial relationships between binding sites (Figure 6D). The <50 nm separation for 20-30% of sites is consistent with cluster sizes and the observed immobile fraction. However, this analysis assumes the 3C model accurately represents in vivo chromosome organization, which may vary between cells and conditions. The consistency between different measurements (C99) provides some validation but is somewhat circular since the same data inform multiple estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Electrostatic charge analysis shows that regions near Zn finger motifs in both Mig1 and Msn2 have strong net positive charge. This could enable electrostatic interactions with negatively charged DNA backbone for sequence-independent 1D sliding diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 presents clear charge analysis data (Figure 6F) showing positive charge near Zn fingers. However, claim C102 is explicitly speculative ('could interact', 'may suggest') and lacks experimental validation. The proposed mechanism for 1D sliding is reasonable based on known DNA-protein interactions but is not tested in this study. This represents a plausible hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discovery of transcription factor clustering addresses the longstanding question of how factors efficiently find targets through intersegment transfer, reduces off-rates compared to monomer binding, and improves robustness against false positive signal detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 present the main functional implications of clustering. The intersegment transfer mechanism (C103) is supported by the modeling and spatial analysis, though direct observation of transfer events is lacking. The slow off-rates (C104) are demonstrated by FRAP (>100 s time constant). The robustness claim (C105) is inferred from slow kinetics and comparison with LacI but not directly tested with noise perturbations. These are reasonable conclusions from the data but involve some extrapolation beyond direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Control experiments demonstrate that the Mig1-GFP strain has normal growth and expression, single GFP molecules have calibrated brightness of ~5000 counts, and fluorescent protein maturation contributes <15% recovery over experimental timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 present essential technical controls. Growth curves and qPCR (C23, Figure 1\u2014figure supplement 2A) show the tagged strain is functional. Single-molecule calibration (C24) provides quantitative basis for stoichiometry measurements. Maturation kinetics (C25) validate that photobleaching experiments measure turnover rather than new protein synthesis. These controls are appropriate and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Copy number analysis indicates ~850-1,300 total Mig1 molecules per cell (higher at low glucose), with ~950 molecules in the cytoplasmic pool and 30-50 multimeric foci per cell at low glucose conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 present quantitative measurements from the CoPro algorithm and foci counting. The copy numbers (C34-C36) are supported by qPCR validation (C35). The foci count (C37) involves extrapolation from the microscope depth of field to whole cell volume, which introduces some uncertainty but uses a reasonable approach. The values are consistent with previous yeast protein abundance measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Cytoplasmic foci at both glucose conditions and nuclear foci at low glucose show single-component mobility consistent with freely diffusing clusters (D=1-2 \u03bcm\u00b2/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by CDF analysis (Figure 3\u2014figure supplement 1) showing single-component fits are adequate for these populations. This contrasts with the two-component behavior of nuclear foci at high glucose, providing important context for understanding DNA binding. The analysis is appropriate and well-controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The multivalency of transcription factor clusters leads to low promoter off-rates similar to tetrameric LacI binding in prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 draws a comparison between eukaryotic clusters and prokaryotic LacI tetramers, both achieving slow off-rates through multivalency. The comparison is reasonable given the similar timescales (~100 s) and provides evolutionary context. However, the mechanisms differ (clusters vs. stable tetramers), so the analogy has limitations. This is a valid comparative observation rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

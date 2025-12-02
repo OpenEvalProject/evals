@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Mcm2-7 loading is inhibited during the MI-MII transition while ORC remains bound to origins. ORC binding was detected at multiple origins (ARS1, ARS1413, ARS305, ARS418) throughout both meiotic divisions, but Mcm2-7 was only present at origins during pre-meiotic G1 phase and did not reassociate during or between the meiotic divisions. This establishes Mcm2-7 loading as the earliest inhibited step of replisome assembly during the MI-MII transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 and C106-C109 are well-supported by ChIP-qPCR data shown in Figures 1B and 1C, demonstrating persistent ORC binding and absence of Mcm2-7 loading during meiotic divisions. The data are internally consistent across multiple origins and include appropriate controls (non-origin DNA, protein abundance). The conclusion that Mcm2-7 loading is the earliest inhibited step is logically derived from these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C103",
+      "C105"
+    ],
+    "result": "CDK-dependent mechanisms inhibiting Mcm2-7 loading are transiently weakened during the MI-MII transition. Orc2 and Orc6 showed partial dephosphorylation at the MI-MII transition, and Cdc6 protein and mRNA partially reaccumulated during this period, indicating that reduced CDK activity during the MI-MII transition results in weakening of at least two CDK-dependent inhibitory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 and C103-C105 are supported by immunoblot and northern blot data in Figure 2 showing transient changes in ORC phosphorylation and Cdc6 levels. The data demonstrate clear mobility shifts for Orc2/Orc6 and protein/mRNA reaccumulation for Cdc6 at the MI-MII transition. The conclusion that CDK-dependent mechanisms are weakened is well-supported by these observations and consistent with known CDK activity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C104"
+    ],
+    "result": "Ime2 directly inhibits helicase loading through phosphorylation of helicase-loading proteins. Pre-treatment of purified helicase-loading proteins with Ime2 fully inhibited Mcm2-7 loading in vitro, and this inhibition required Ime2 kinase activity as demonstrated by analog-sensitive Ime2 experiments. Ime2 phosphorylation does not block OCCM complex formation, indicating it inhibits a downstream step after initial Mcm2-7 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C104 are strongly supported by in vitro reconstitution experiments in Figure 3. The use of purified proteins demonstrates direct inhibition, the analog-sensitive kinase approach with 1-NA-PP1 confirms kinase activity dependence, and the OCCM formation assay identifies the step inhibited. The experimental design is rigorous and the conclusions are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C47",
+      "C56",
+      "C67"
+    ],
+    "result": "Ime2 phosphorylation of Mcm2-7 is the primary mechanism by which Ime2 inhibits helicase loading, distinct from CDK. In vitro kinase assays showed Ime2 phosphorylates multiple helicase-loading proteins, but selective phosphorylation experiments revealed that Mcm2-7 phosphorylation alone caused >90% inhibition of helicase loading, while ORC phosphorylation caused ~50% inhibition. In contrast, CDK primarily targets ORC, demonstrating non-overlapping mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29, C47, C56, and C67 are well-supported by systematic in vitro experiments in Figure 4 that individually phosphorylate each helicase-loading protein. The quantification (Figure 4C) shows clear differences in inhibition levels, and comparison with CDK (Figure 4\u2014figure supplement 1) demonstrates distinct targets. The experimental design effectively isolates the contribution of each phosphorylation target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C46",
+      "C52"
+    ],
+    "result": "CDK and Ime2 cooperatively inhibit helicase loading during the MI-MII transition. Inhibition of either CDK or Ime2 alone at the end of MI caused only limited Mcm2-7 reloading, but simultaneous inhibition of both kinases resulted in much higher levels of Mcm2-7 reloading and restored CDC6 mRNA and protein expression to G1 levels, demonstrating that neither kinase alone is sufficient but together they potently inhibit origin licensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C30-C34, C37, C46, and C52 are strongly supported by in vivo experiments in Figure 5 using analog-sensitive alleles. The data clearly show synergistic effects of co-inhibition on Mcm2-7 loading, Cdc6 levels, and ORC phosphorylation. The experimental design with all four genotype combinations (WT, cdk1-as, ime2-as, double mutant) provides compelling evidence for cooperative inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C58"
+    ],
+    "result": "Ime2 phosphorylates Cdc6 at sites overlapping with CDK phosphorylation sites in degron domains. Mass spectrometry analysis showed Ime2 phosphorylates multiple sites on Cdc6 within phosphorylation-responsive degron domains, with two sites directly overlapping CDK sites known to contribute to Cdc6 degradation, and Ime2 has a larger role than CDK for Cdc6 repression at the MI-MII transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C58 are supported by iTRAQ LC-MS/MS data in Figure 5E and Supplementary file 1, showing specific phosphorylation sites. The overlap with known CDK sites is documented in prior literature (Calzada et al., 2000; Drury et al., 2000). The conclusion about Ime2's larger role is supported by comparing effects of CDK vs Ime2 inhibition on Cdc6 levels in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C48"
+    ],
+    "result": "CDK and Cdc5 promote degradation of Sld2 during the meiotic divisions. While most helicase-activation proteins remained present throughout meiosis, Sld2 was robustly degraded upon entry into MI and did not reaccumulate until completion of MII. Mutation of either Cdc5 or CDK phosphorylation sites on Sld2 resulted in protein stabilization, with both kinases required for substantial degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C39, C41-C43, and C48 are well-supported by immunoblot data in Figure 6. The time course shows clear Sld2 degradation during meiotic divisions, and phosphorylation site mutants (2TA, 2SA, 4A) show stabilization. Quantification in Figure 6E demonstrates both kinases contribute to degradation. The experimental design with multiple mutants and quantification across cell cycle stages is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "Multiple kinases (CDK, Ime2, and Cdc5) inhibit both helicase loading and activation between the meiotic divisions to ensure reductive cell division. CDK and Ime2 cooperatively inhibit helicase loading through multiple mechanisms, while CDK and Cdc5 promote Sld2 degradation to inhibit helicase activation. This multi-layered inhibition allows CDK to oscillate and reset the chromosome segregation program without allowing DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C49, C53-C54 represent the main conclusions of the study, synthesizing results from all experimental approaches. These conclusions are well-supported by the collective data showing: (1) cooperative inhibition of helicase loading by CDK and Ime2 (Figure 5), (2) distinct mechanisms for each kinase (Figures 3-4), and (3) Sld2 degradation by CDK and Cdc5 (Figure 6). The integration of these findings provides a comprehensive model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C55",
+      "C57"
+    ],
+    "result": "The amount of CDK activity during the MI-MII transition is sufficient to inhibit most origin licensing, but the decrease in CDK activity that resets chromosome segregation is not sufficient to fully reset the DNA replication program. The transient weakening of Cdc6 repression and ORC phosphorylation indicates that decreased CDK activity poses a significant threat to origin licensing, suggesting CDK-dependent inhibition alone is inadequate for genome stability during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C55, and C57 are supported by the observation that Ime2 inhibition alone does not cause robust helicase reloading (Figure 5C), indicating sufficient CDK activity remains. The transient weakening of CDK-dependent mechanisms (Figure 2) combined with the requirement for multiple kinases (Figure 5D) supports the conclusion that CDK alone is insufficient. The reasoning is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C72"
+    ],
+    "result": "Ime2 is not merely a backup for CDK but uses both overlapping and distinct mechanisms to inhibit helicase loading. Ime2 uses at least two mechanisms similar to CDK (Cdc6 degradation and Mcm2-7 nuclear export) but also employs a distinct mechanism through direct phosphorylation of Mcm2-7 that prevents helicase loading completion\u2014a mechanism not previously identified in studies of origin licensing inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C68, and C72 are supported by data showing Ime2 targets Mcm2-7 while CDK targets ORC (Figure 4), both kinases affect Cdc6 (Figure 5E), and prior work on nuclear export (Holt et al., 2007). The claim about novelty (C68) is supported by citations to comprehensive reviews (Arias and Walter, 2007; Siddiqui et al., 2013). The conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Ime2 likely insulates helicase loading from helicase activation during the meiotic G1-S transition, analogous to G1-CDK in mitosis. During mitotic G1-S transition, G1-CDK inhibits helicase loading before S-CDK stimulates activation. During meiosis, G1 cyclins are not expressed and Ime2 triggers S-CDK activation, suggesting Ime2 performs the insulation function of G1-CDK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C73 present a well-reasoned model based on the demonstrated ability of Ime2 to inhibit helicase loading by multiple mechanisms (current data) and established knowledge about cell cycle regulation (supported by citations: Benjamin et al., 2003; Dirick et al., 1998; Drury et al., 2000; Labib et al., 1999). The analogy is logical and supported by functional similarities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Meiotic cells inhibit multiple steps of Mcm2-7 activation, similar to mechanisms at the mitotic M-G1 transition. Sld2 is required for CMG complex formation and is degraded during both meiotic divisions, similar to its degradation at the mitotic M-G1 transition. Dbf4, another helicase activation protein, is also degraded during both mitotic and meiotic anaphase, suggesting meiotic cells protect against replication initiation by inhibiting multiple activation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C60-C64 are supported by the Sld2 degradation data (Figure 6) and citations for Sld2 function (Heller et al., 2011; Kamimura et al., 1998; Muramatsu et al., 2010; Yeeles et al., 2015), mitotic Sld2 degradation (Reusswig et al., 2016), and Dbf4 degradation (Ferreira et al., 2000; Matos et al., 2008). The parallel between mitotic and meiotic mechanisms is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The problem of uncoupling DNA replication and chromosome segregation during meiosis is conserved in metazoans, and mammalian Cdk2 may have a similar role to yeast Ime2. Metazoans use CDK to regulate both processes, with Cdk1 becoming critical for inhibiting origin licensing during M-phase. Human Cdk2 can rescue some ime2\u0394 meiotic defects in yeast, and Cdk2 is required for meiosis but not mitosis in mice, suggesting functional similarity to Ime2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are well-supported by multiple citations documenting CDK regulation in metazoans (Arias and Walter, 2007; Malumbres and Barbacid, 2009; Siddiqui et al., 2013), Cdk1 re-replication (Bates et al., 1998; Dahmann et al., 1995; Itzhaki et al., 1997), Cdk2 rescue of ime2\u0394 (Szwarcwort-Cohen et al., 2009), and Cdk2 meiotic requirement (Ortega et al., 2003). The speculation about Cdk2 function (C82) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background on meiosis, DNA replication, and cell cycle regulation. These claims establish the fundamental biology of meiosis (single DNA replication, two divisions), the role of CDK in regulating both DNA replication and chromosome segregation in mitotic cells, and the two competing models (CDK-balance vs. alternative-kinase) for how meiotic cells uncouple these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C83-C102 provide essential background information supported by extensive citations to established literature. These are well-accepted facts about meiosis, DNA replication initiation, CDK regulation, and prior hypotheses. The claims accurately represent current knowledge and provide necessary context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C59"
+    ],
+    "result": "Speculative claims about the functional importance of the findings. If an origin escapes inhibition of Mcm2-7 loading, Sld2 degradation would prevent helicase activation. Preventing DNA re-replication in meiotic cells is more important than in mitotic cells for maintaining genome integrity in multicellular eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C59 are reasonable inferences from the data but are explicitly speculative. C44 logically follows from the demonstration that Sld2 is degraded and required for helicase activation. C59 is a general statement about the importance of germline genome integrity that is biologically reasonable but not directly tested. These are appropriately presented as interpretations rather than demonstrated facts.",
+    "result_type": "MINOR"
+  }
+]

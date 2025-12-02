@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C113",
+      "C114",
+      "C150"
+    ],
+    "result": "The authors developed a CRISPR/Cas9-based Synthetic Genetic Interaction (CRISPR-SGI) approach that enables systematic generation of double mutants in C. elegans by replacing target genes with fluorescently-marked deletion alleles, eliminating the need for PCR/sequencing genotyping at each generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C32 describe the technical approach with clear methodological details supported by Figure 1. The approach successfully generated all single mutants (C37) and 78 double mutants (C52, C54), representing the largest such collection in metazoans (C55). The method's advantages (C32, C113-C114) are demonstrated by the successful completion of the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Single mutant analysis of 14 conserved neuronal RNA binding protein genes revealed that most deletions had minimal fitness effects, but unc-75, mec-8, C25A1.4, and sup-12 showed significant fitness defects, with sup-12 representing a previously uncharacterized null phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe the overall pattern supported by Figure 2B. Known phenotypes (C38-C39, C44) validate the approach. The sup-12 findings (C45-C51) are well-supported by independent allele validation (C50) and comparison to prior literature (C48), though the claim about 'true null' (C51) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C115",
+      "C121",
+      "C122"
+    ],
+    "result": "A competitive fitness assay was developed using GFP-marked mutants competed against wild-type animals over two generations, revealing that ~14% of pairwise interactions resulted in fitness changes distributed across >90% of tested genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assay design (C40-C41) is clearly described with Figure 2A. The quantitative results (C121-C122) are supported by the data in Figure 3 and Supplementary file 2. The approach provides a high-throughput phenotypic readout as claimed (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C123",
+      "C124"
+    ],
+    "result": "Systematic generation of 78 double mutants (13 of 14 genes) revealed 11 significant genetic interactions including one synthetic lethal interaction (mec-8; exc-7), with all detected interactions exacerbating fitness defects, suggesting additive/synergistic effects on shared RNA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The double mutant collection (C52-C55) is well-documented in Figure 3A. The synthetic lethality (C56-C59) is validated with independent alleles (C59, Figure 3\u2014figure supplement 1). The quantification of interactions (C61-C62) and their directionality (C123) are supported by Figure 3A-B, though the mechanistic model (C124) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C126"
+    ],
+    "result": "The genetic interaction network shows variable connectivity, with some genes like tiar-3 having minimal interactions while exc-7 acts as a highly connected hub interacting with 45% of tested genes, revealing extensive interactions among neuronal RNA binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are directly supported by the data in Figure 3B showing the network structure. The conclusion about high interaction frequency (C126) is supported by the quantitative data, though comparison to yeast studies (C125) would benefit from more explicit statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "The exc-7; mbl-1 double mutants display severely shortened lifespan with premature adult death, normal development, and initially normal behavior that declines in early adulthood, with the lifespan defect being stronger than daf-16 mutants and rescuable by overexpression of either gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lifespan phenotype (C67-C69) is well-documented in Figure 4A and Video 1. Independent allele validation (C70) and rescue experiments (C71, C106) provide strong support. The developmental and behavioral characterization (C100-C102) is shown in Figure 6A and Figure 6\u2014figure supplement 1. Comparison to daf-16 (C104) is supported by Figure 6B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "EXC-7 and MBL-1 show overlapping expression patterns with EXC-7 expressed in multiple tissues including neurons and MBL-1 expressed almost exclusively in neurons, with striking co-expression in specific neuronal subtypes such as cholinergic motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression patterns (C72-C73) are documented in Figure 4B with supporting citations. The specific co-expression pattern (C74-C75) is clearly shown in Figure 4C. The inference about functional cooperation (C76) is reasonable but somewhat speculative given the expression data alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C90",
+      "C142",
+      "C143"
+    ],
+    "result": "RNA-seq analysis revealed that exc-7; mbl-1 double mutants have the most severe transcriptional changes with nearly 5-fold more differentially expressed genes than exc-7 single mutants (100 vs 23), with >90% showing increased expression, suggesting synthetic co-regulation of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq results (C77-C80) are clearly presented in Figure 5A-C with quantitative support. The directionality bias (C80) is striking and well-documented. The lack of GO enrichment for expression changes (C90) is noted. The interpretation of synthetic regulation (C81, C143) is reasonable though the mechanism (transcriptional vs post-transcriptional) remains uncertain (C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C146"
+    ],
+    "result": "exc-7 and mbl-1 regulate hundreds of alternative splicing events with 46% overlap, including >100 synthetic splicing changes in double mutants, with enrichment of EXC-7/MBNL1 binding motifs in flanking introns suggesting direct regulation, and GO enrichment for neuronal function, development, and reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The splicing analysis (C82-C86) is well-supported by Figure 5D-E with statistical significance (C84, p<1\u00d710\u207b\u2076\u2070). Motif enrichment (C87-C88) shown in Figure 5\u2014figure supplement 2B supports direct binding (C89). GO analysis (C91-C93) connects molecular findings to phenotypes. The additive/cumulative nature (C146) is documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "RT-PCR validation confirmed splicing changes in lifespan-regulating genes including unc-62 (a transcription factor with isoforms that differentially regulate lifespan) and unc-13 (a synaptic protein that regulates lifespan), supporting coordinate regulation of longevity-related genes by exc-7 and mbl-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-PCR validations (C94, C97) are shown in Figure 5F and Figure 5\u2014figure supplement 1. The functional annotations for unc-62 (C95-C96) and unc-13 (C98) are supported by citations. The conclusion about coordinate regulation (C99) is reasonable given the validated targets, though causality for lifespan effects requires further work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C136",
+      "C137"
+    ],
+    "result": "Epistasis experiments show that eat-2 mutation extends lifespan in exc-7; mbl-1 double mutants proportionally to wild-type, indicating independence from caloric restriction, while daf-2 mutation fails to extend lifespan in double mutants, suggesting exc-7 and mbl-1 may act downstream of insulin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The eat-2 epistasis (C109-C110) is clearly shown in Figure 6D and supports independence from caloric restriction. However, the daf-2 epistasis (C111-C112) shown in Figure 6E is more complex to interpret. The failure of daf-2 to extend lifespan could indicate that exc-7/mbl-1 act downstream, but alternative explanations (e.g., the double mutant lifespan is already so short that further extension is impossible) are not ruled out. The model (C137) is appropriately presented as speculative, and additional experiments are acknowledged as needed (C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The ~14% interaction frequency represents substantial enrichment compared to unbiased yeast screens, revealing high genetic interaction among neuronal RNA binding proteins, though the competitive fitness assay likely misses subtler phenotypes suggesting even higher true interaction rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The high interaction frequency (C121-C122) is well-documented. However, the comparison to yeast (C125) lacks explicit statistical analysis or detailed citation of the specific yeast study used for comparison. The speculation about missed interactions (C127-C128) is reasonable but remains speculative without additional validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The findings suggest that mutations in RNA binding protein genes may act as disease modifiers in neurological disorders, with unc-75/CELF showing synthetic interactions with ALS-associated genes tdp-1/TDP-43 and fust-1/FUS, though the relevance to mammalian disease requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The genetic interactions with ALS-related genes (C131) are documented in the screen data. The association of TDP-43 and FUS with ALS (C132) is well-established by citations. However, the speculation about disease modification (C129) and relevance to mammalian ALS (C134) is appropriately acknowledged as requiring additional work (C133). The C. elegans findings are suggestive but not sufficient to support claims about human disease without mammalian validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The CRISPR-SGI approach combined with competitive fitness assays discovered a hidden layer of genetic interactions, establishing a paradigm for systematic genetic interaction analysis in metazoans and highlighting the importance of studying combinatorial effects of RNA binding proteins on post-developmental health and longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The successful application of the method (C151) is demonstrated by the comprehensive dataset. The comparison to yeast SGA success (C116) is supported by citations. The claims about future applicability (C117, C120) are reasonable given the demonstrated success, though appropriately presented as speculative. The biological conclusions (C152-C153) are well-supported by the extensive genetic interaction data and phenotypic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study expands understanding of RNA binding proteins as lifespan regulators, with two neuronally-expressed factors controlling organismal aging through combinatorial regulation of hundreds of genes and isoforms, though the precise causal mechanisms linking molecular changes to lifespan remain to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension of RNA binding protein roles in lifespan (C135-C136, C139) is supported by the data and appropriately contextualized with prior work. The observation about neuronal expression affecting multiple tissues (C140) is intriguing and well-documented. The acknowledgment of mechanistic uncertainty (C141, C144, C147-C148) is appropriate given the complexity of the system. Future directions (C149) are reasonable.",
+    "result_type": "MAJOR"
+  }
+]

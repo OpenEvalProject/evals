@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Tunicamycin exhibits dose-dependent effects on UPR activation and cell survival. At 5 \u00b5g/ml, tunicamycin induces maximal XBP1 mRNA splicing but causes complete cell death after 7 days. At 50 ng/ml, it induces submaximal, transient XBP1 splicing with substantial growth defects. Even at 25 ng/ml, where no XBP1 splicing is detected, some growth impairment occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by RT-PCR data (Figure 1A) showing dose-dependent XBP1 splicing and cell growth assays (Figures 1B, 1C) demonstrating dose-dependent cytotoxicity. The data clearly establish that tunicamycin has pleiotropic toxic effects beyond UPR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The UPR is predominantly cytoprotective rather than pro-apoptotic. Cells with all three UPR branches ablated (IRE1\u03b1 deletion, PERK and ATF6\u03b1 silencing) show minimal growth impairment under basal conditions but exhibit increased sensitivity to tunicamycin at lower concentrations compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by cell growth assays (Figure 1D) comparing wild-type and UPR-ablated cells. The observation that UPR ablation increases tunicamycin sensitivity provides strong evidence for the cytoprotective role of the UPR. The inference that UPR-mediated pro-apoptotic pathways are not decisive is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "ER stress-eliciting drugs have pleiotropic effects that obscure mechanisms of ER homeostatic readjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by the collective evidence from C1-C8 showing that tunicamycin causes cytotoxicity independent of UPR activation levels, including at concentrations that do not trigger detectable UPR. This provides strong justification for developing alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The HeLa-\u00b5s cell model enables inducible, dose-tunable expression of \u00b5s that is retained in the ER. Expression is undetectable without mifepristone induction, different clones express \u00b5s at different levels upon induction, expression is uniform within clones, and \u00b5s co-localizes with the ER marker calreticulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are well-supported by immunoblotting (Figure 2A), immunofluorescence (Figures 2B, 2C), and co-localization data. The characterization of the cell model is thorough and provides essential validation for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "\u00b5s expression triggers full-blown UPR activation comparable to drug-induced ER stress. All three UPR branches are activated (XBP1 splicing, PERK phosphorylation, CHOP expression, ATF6\u03b1 cleavage, IRE1\u03b1 clustering) in a dose-dependent manner. Mifepristone alone does not induce UPR in parental cells, confirming that UPR activation results from \u00b5s expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 are strongly supported by multiple complementary assays including RT-PCR (Figure 2A), immunoblotting (Figure 2A), fluorescence microscopy (Figure 2H), and appropriate controls (Figure 2G). The dose-dependence across clones and comparison to drug-induced UPR provide robust validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Despite inducing full-blown UPR, \u00b5s expression is well-tolerated by cells, with growth nearly paralleling that of control cells. This contrasts with tunicamycin-induced UPR, which causes cell death, establishing the HeLa-\u00b5s model as suitable for studying ER homeostatic readjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by cell growth assays (Figures 2I, 2J) comparing \u00b5s-expressing cells to controls and to tunicamycin-treated cells (Figure 1). The contrast between \u00b5s-induced and drug-induced UPR outcomes is clear and validates the model's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The nature of the proteostatic insult, not the flux of proteins entering the ER, determines UPR activation. Co-expression of \u03bb with \u00b5s in excess \u03bb allows efficient IgM assembly and secretion without strong UPR activation. In contrast, \u00b5s alone or in excess over \u03bb triggers strong UPR and BiP upregulation. \u03bb alone is a poor UPR activator. BiP binds \u00b5s until displaced by \u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 are well-supported by immunoblotting data (Figures 3A-D) showing IgM assembly, secretion patterns, and UPR markers across different \u03bb:\u00b5s ratios. The observation that total client protein levels are similar but UPR activation differs based on \u03bb:\u00b5s ratio provides strong evidence for the conclusion. The BiP binding mechanism is supported by prior literature (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "BiP levels increase approximately 12.5-fold upon \u00b5s expression, rising from ~2\u00d710^7 to ~2\u00d710^8 copies per cell. Early after \u00b5s induction, \u00b5s levels transiently match or exceed BiP levels (1:1 stoichiometry), but once cells adapt, BiP levels exceed \u00b5s levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by quantitative immunoblotting using BiP and \u00b5s standards (Figure 4B), combined with cell counting and protein weight measurements. The temporal dynamics showing transient BiP shortage followed by BiP excess are clearly demonstrated. The calculations appear sound given the methodology described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "All three UPR branches transiently reach maximal output upon \u00b5s expression onset, with distinct temporal dynamics. ATF6\u03b1 p50 peaks at ~6 hours, XBP1 splicing peaks at ~6 hours and remains maximal for ~24 hours, and CHOP peaks at 12-16 hours. ATF6\u03b1 p90 is largely depleted after initial p50 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are well-supported by time-course immunoblotting and RT-PCR data (Figure 4C and supplements). The temporal resolution is sufficient to establish the dynamics of each UPR branch. The observation about ATF6\u03b1 p90 depletion (C42) is supported by the data and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "During chronic \u00b5s expression when UPR output is submaximal, treatment with ER stress drugs readily triggers near-maximal UPR output, indicating that prolonged \u00b5s expression does not exhaust UPR signaling capacity. Instead, homeostatic readjustment of the ER accounts for lowered UPR output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by immunoblotting data (Figure 4\u2014figure supplement 4) showing that cells with chronic \u00b5s expression can still mount full UPR responses to drugs. This provides strong evidence that submaximal UPR during chronic stress reflects successful adaptation rather than exhaustion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Maximal UPR output coincides with the highest \u00b5s/BiP ratio rather than maximal \u00b5s levels. UPR signals are commensurate with the extent to which BiP is sequestered by \u00b5s rather than \u00b5s accumulation per se, supporting a ratiometric sensing model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by comparing temporal patterns of \u00b5s/BiP ratios (Figure 4B) with UPR activation levels (Figure 4D). The correlation between high \u00b5s/BiP ratio and maximal UPR output is clear. This is a key mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The ER expands 2-3-fold upon \u00b5s expression. Before induction, the ER lumen occupies 10-12% of cytoplasmic area (~60-80 fl volume). Within 1-3 days of \u00b5s expression, the ER expands to ~18% of cytoplasmic area (~120-240 fl volume), with no further expansion after 3 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by electron microscopy measurements (Figure 5). The quantification methodology is described and appears sound. The volume calculations use a simplifying assumption (cuboidal ER) that the authors acknowledge as approximate, which is reasonable. The temporal dynamics of ER expansion are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Proteomics analysis reveals that the ER accounts for ~3% of total protein before \u00b5s expression and expands to ~10-12% within 3-7 days. BiP levels increase ~8-14-fold (by label-free and SILAC quantitation respectively), becoming the second most abundant cellular protein after \u03b2-actin at ~4% of total proteome. Cells harbor an average of 5\u00d710^9 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by comprehensive label-free and SILAC proteomics data (Figure 6, Supplementary file 1). The agreement between different quantitation methods (C56, C57) and with immunoblotting data (Figure 4B) strengthens confidence. The estimate of total cellular protein number (C59) is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "BiP concentration increases from ~0.5 mM before induction to ~1.5 mM in the expanded ER at day 7, accounting for about one-third of the estimated 200-300 mg/ml total ER luminal protein concentration. BiP levels within the ER increase from ~15% to 30-40% of the ER proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are based on calculations combining BiP quantitation, ER volume measurements, and proteomics data. The calculations appear sound and internally consistent. The dramatic enrichment of BiP within the ER is clearly demonstrated and represents a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "ERdj co-chaperones of BiP are upregulated upon \u00b5s expression but to levels about two orders of magnitude lower than BiP, indicating they function in a sub-stoichiometric fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by proteomics data (Supplementary file 1). The observation is surprising and mechanistically interesting. The inference about sub-stoichiometric function (C65) is logical given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "\u00b5s levels rapidly increase to ~1-2% of total protein content. After 1 day, \u00b5s exceeds all ER chaperones except BiP (which outmatches \u00b5s 3:2). BiP increases 3-4-fold during the first day. Eventually, BiP and \u00b5s together constitute about half of the ER protein mass in the 3-4-fold expanded ER, which becomes dominated by \u00b5s held in check by excess BiP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by proteomics data (Figure 6, Supplementary file 1). The temporal dynamics and stoichiometric relationships are clearly demonstrated. The conclusion that the ER becomes dominated by \u00b5s and BiP represents a major finding about the nature of ER homeostatic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The UPR is essential for ER homeostatic readjustment upon \u00b5s expression. Ablation of all three UPR branches does not substantially impair growth in the absence of \u00b5s, but \u00b5s expression in UPR-ablated cells fully abolishes growth and causes synthetic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are strongly supported by cell growth assays (Figures 7A, 7B) and Annexin V staining (Figure 7C). The synthetic lethality demonstrates that the UPR is essential for coping with \u00b5s-induced proteostatic stress. This is a critical validation of the model's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ER expansion is not necessarily provoked by bulk synthesis of client proteins per se. The ER folding machinery appears underused in HeLa cells, and mobilization of the default machinery is sufficient for productive folding and assembly of IgM from stoichiometrically expressed subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by data showing that \u03bb+\u00b5s co-expression with excess \u03bb allows efficient IgM secretion without strong UPR activation (Figure 3). The inference about underused ER capacity is logical given the data and proteomics showing low secretory load (Supplementary file 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Discussion of BiP biology and ER expansion specificity. BiP is kept in reserve in inactive, AMPylated form under basal conditions. BiP binding to \u00b5s is highly stringent for immunological reasons, and mutations reducing BiP affinity cause immune disorders. During B cell differentiation, cellular machineries develop sequentially to anticipate IgM production, whereas \u00b5s-driven stimulus results almost exclusively in ER expansion with minimal expansion of downstream secretory machinery. Stringent \u00b5s retention may obviate need to reinforce downstream pathways, which are governed by UPR-independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 combine data from this study (C83: proteomics showing ER-specific expansion) with well-supported prior literature (C79, C81, C82, C85). The reasoning about BiP stringency (C80) and downstream pathway regulation (C84, C85) is logical and well-grounded. C84 is somewhat speculative but clearly presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Maximal UPR activation correlates with BiP shortage in matching accumulating \u00b5s load rather than with client protein accumulation per se. UPR transitions to chronic submaximal levels when BiP is in excess again and the ER becomes dominated by BiP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 synthesize key findings from temporal analysis of BiP/\u00b5s ratios and UPR activation (Figures 4B, 4D, 6). This represents a central conclusion of the paper about ratiometric sensing and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion of UPR activation mechanisms from prior literature. The PiZ \u03b11-antitrypsin mutant does not sequester BiP and fails to trigger UPR despite ER accumulation. In vitro studies suggest BiP sequestering by \u00b5s is sufficient to activate IRE1\u03b1 and PERK. Alternative models propose that Ire1/IRE1\u03b1 activates through direct binding of unfolded proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 accurately represent prior literature (Graham et al., 1990; Carrara et al., 2015; Credle et al., 2005; Gardner and Walter, 2011; Karag\u00f6z et al., 2017). These provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Proposed model of ratiometric ER stress sensing. UPR transducers are in the OFF state when bound to BiP and ON state when bound to clients. In three-way competition between sensor-BiP, sensor-client, and BiP-client complexes, the ratio between sensor-client and sensor-BiP robustly reports on the client/BiP ratio. This model reconciles BiP dissociation and direct client binding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 present a mechanistic model that is well-supported by the data showing correlation between \u00b5s/BiP ratios and UPR activation (Figures 4B, 4D). While the model involves some speculation (C94, C95), it is clearly presented as such and provides a logical framework for reconciling prior models with current observations. The model is testable and makes specific predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Homeostatic readjustment entails submaximal UPR output. Cells with genetic disorders causing ER client protein misfolding will likely adapt and display submaximal UPR signaling. Submaximal UPR reflects chronic stress rather than mild ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is directly supported by the data (Figure 4). Claims C98-C99 are reasonable extrapolations to disease contexts based on the findings. While C98 is somewhat speculative, it is clearly presented as such and represents an important implication of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The HeLa-\u00b5s model provides an excellent tool to dissect how the UPR alleviates ER stress and evaluates homeostatic readjustment success. This is important because various disorders from cancer to diabetes involve aberrant UPR-driven cell fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by the collective findings demonstrating successful ER homeostatic readjustment in the model. Claim C101 accurately represents prior literature (Wang and Kaufman, 2012) about disease relevance. Together these establish the significance and potential applications of the model.",
+    "result_type": "MINOR"
+  }
+]

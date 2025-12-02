@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C57"
+    ],
+    "result": "Ndc80 is the limiting subunit of the kinetochore complex in meiosis. Among the Ndc80 complex subunits (Ndc80, Nuf2, Spc24, Spc25), only Ndc80 protein abundance decreases during meiotic prophase (C8, C9). Overexpression of NDC80, but not other subunits, in meiotic prophase causes premature kinetochore activation and abnormal chromosome segregation (C11, C12), demonstrating that Ndc80 is the sole tightly regulated subunit governing kinetochore functionality (C13, C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 provide converging experimental evidence from immunoblots (Figure 1C) and functional overexpression assays (Figure 1D) demonstrating that Ndc80 is uniquely regulated and limiting for kinetochore function. The data directly support the conclusion that kinetochore activity is controlled through limiting Ndc80 availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two distinct NDC80 mRNA isoforms exist with anti-correlated expression patterns in meiosis. RNA-seq analysis revealed meiosis-specific extended transcripts (C14, C15), confirmed by northern blotting as a longer (NDC80luti) and shorter (NDC80ORF) isoform (C16). The long isoform predominates during meiotic prophase when Ndc80 protein is low, while the short isoform increases during meiotic divisions when Ndc80 protein is high (C17-C19, C21, C22). Both isoforms localize to nucleus and cytoplasm (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods (RNA-seq, northern blot, smFISH) consistently demonstrate two NDC80 isoforms with distinct temporal expression patterns (Figures 2A-D). The anti-correlation between the long isoform and Ndc80 protein levels is well-documented across multiple experiments, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C60"
+    ],
+    "result": "The long NDC80 isoform (NDC80luti) cannot produce Ndc80 protein due to translational repression by upstream ORFs (uORFs). The longer isoform contains nine uORFs with AUG start codons (C23), at least six of which show ribosome profiling signatures consistent with translation (C24). Mutation of all nine uORF start codons restores Ndc80 protein production during meiotic prophase (C25), demonstrating that uORF translation, rather than the encoded peptides, prevents ribosome access to the NDC80 ORF (C26, C28, C60). The short isoform lacks these uORFs and can translate Ndc80 (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The uORF-mediated translational repression is convincingly demonstrated through mutational analysis (Figure 3). The \u03949AUG and mini uORF experiments provide strong evidence that the act of uORF translation, not the peptide products, mediates repression. The ribosome profiling data support that uORFs are translated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "NDC80luti expression is necessary for NDC80ORF repression and acts in cis. Deletion of the NDC80luti promoter results in persistent NDC80ORF mRNA and Ndc80 protein during meiotic prophase (C29, C30). Early termination of NDC80luti transcription also allows NDC80ORF persistence (C31), indicating continuous transcription through the NDC80ORF promoter is required for repression (C32) and ruling out promoter competition (C33). NDC80luti only represses NDC80ORF on the same chromosome, demonstrating cis-acting repression (C34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiments (Figures 4A, 4D, Figure 4\u2014figure supplement 3) provide strong evidence for cis-acting transcriptional repression. The allele-specific repression experiment (C34) is particularly compelling, and the early termination experiment rules out simple promoter competition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The NDC80luti regulatory mechanism is sufficient to repress other genes and functions outside of meiosis. Replacing the NUF2 promoter and 5' leader with NDC80luti sequences causes meiotic downregulation of Nuf2 protein (C35). Artificial induction of NDC80luti in mitotic cells is sufficient to repress NDC80ORF and reduce Ndc80 protein levels (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterologous gene fusion (NDC80luti-NUF2, Figure 5A-B) and ectopic expression experiments (Figure 5C-D) demonstrate the sufficiency and portability of the NDC80luti regulatory mechanism. These gain-of-function experiments complement the loss-of-function studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The transcription factors Ime1 and Ume6 directly regulate NDC80luti expression. Deletion of IME1 abolishes NDC80luti production and causes persistent NDC80ORF and Ndc80 protein (C37). A Ume6 consensus binding site (URS1) is present 583 bp upstream of the Ndc80 start site within the NDC80luti promoter (C38). ChIP analysis shows Ume6 binding enrichment at this site in mitosis and early meiosis (C39), and deletion of the URS1 site abolishes Ume6 binding (C40) and causes leaky NDC80luti expression in vegetative growth (C41), demonstrating direct regulation by Ime1-Ume6 (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of genetic deletion (C37), sequence analysis (C38), ChIP validation (C39, C40), and functional consequences of URS1 deletion (C41) provide strong converging evidence for direct transcriptional regulation by Ime1-Ume6 (Figure 6A-E). The specificity controls (IME2, NUF2) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The transcription factor Ndt80 directly induces NDC80ORF expression after meiotic prophase. An Ndt80 consensus binding site (MSE) is present 184 bp upstream of the Ndc80 start site within the NDC80ORF promoter (C43). ChIP analysis shows Ndt80 binding enrichment at this site one hour after Ndt80 induction (C44), and mutations in the MSE abolish Ndt80 binding (C44) and reduce both NDC80ORF transcript and Ndc80 protein levels during meiotic divisions (C45), demonstrating direct induction by Ndt80 (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence parallels that for Ime1-Ume6 regulation: sequence analysis (C43), ChIP validation with mutant controls (C44, Figure 6F), and functional consequences of MSE mutation (C45, Figure 6J). The MAM1 control demonstrates specificity. The data strongly support direct transcriptional activation by Ndt80.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Repression of NDC80ORF by NDC80luti is essential to prevent premature kinetochore activation in meiotic prophase. Over 50% of cells lacking NDC80luti (\u0394NDC80luti) or expressing a translatable version (\u03949AUG) display abnormal chromosome segregation in meiosis I when a bipolar spindle is present (C47), demonstrating that NDC80luti-mediated repression is crucial for preventing untimely kinetochore function (C48).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional consequences of disrupting NDC80luti regulation are clearly demonstrated in Figure 7A. The phenotype is comparable to direct NDC80 overexpression, providing strong evidence that the regulatory mechanism is biologically essential for proper meiotic chromosome segregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Ndt80-dependent induction of NDC80ORF is essential for kinetochore reactivation and meiotic chromosome segregation. In cells with mutated Ndt80 binding site (ndc80-mse), 98% fail to properly segregate chromosome V (C49), spindle dynamics are abnormal, and sporulation is severely defective, demonstrating that Ndt80-dependent NDC80ORF induction is essential for re-establishing kinetochore function (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ndc80-mse phenotype is severe and well-characterized (Figure 7B-D, Figure 7\u2014figure supplement 1), with multiple lines of evidence (chromosome segregation, spindle morphology, sporulation efficiency) all pointing to defective kinetochore function. The data strongly support the essential role of Ndt80-mediated reactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Temporal regulation of NDC80luti and NDC80ORF is essential for proper kinetochore function in both mitosis and meiosis. Deletion of the Ume6 binding site (urs1\u0394) causes temperature-sensitive growth defects due to reduced Ndc80 levels (C51), demonstrating that Ume6-mediated repression of NDC80luti is critical for mitotic cell fitness (C52). Strong induction of NDC80luti in vegetative cells causes severe growth defects (C53) that are rescued by an ectopic NDC80 copy (C54), and cells display kinetochore-microtubule attachment defects (C55). These results demonstrate that strict temporal regulation is essential for proper kinetochore function and chromosome segregation fidelity (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitotic phenotypes (Figure 8A-G) complement the meiotic studies and demonstrate the broader importance of the regulatory mechanism. The rescue experiments (ectopic NDC80, CRISPRi) provide strong evidence for specificity. The microscopy data directly demonstrate kinetochore dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "NDC80luti is a bona fide mRNA that is polyadenylated, ribosome-engaged, and likely transcribed by RNA Polymerase II. The transcript is polyadenylated and shows ribosome profiling signatures (C58), and when uORF start codons are mutated, Ndc80 protein is translated from this isoform. The NDC80luti promoter is occupied by TFIIB and shows Pol II-associated chromatin marks (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by published ribosome profiling data (Brar et al., 2012), the authors' own \u03949AUG experiments (Figure 3), and data from the accompanying manuscript (Chia et al.). The convergent evidence establishes NDC80luti as a legitimate Pol II transcript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Upstream AUG codons are present in putative NDC80luti orthologs across fungal species, suggesting evolutionary conservation of the regulatory mechanism. Analysis of five Saccharomyces species revealed upstream AUGs in three enriched regions (C61), though the sequences and lengths of putative uORFs are not conserved, consistent with the idea that the act of uORF translation, rather than peptide identity, is the conserved feature (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative sequence analysis (Figure 9\u2014figure supplements 1 and 2, Supplementary file 1G) demonstrates conservation of uORF positions but not sequences, supporting the inference that translational repression mechanism, not specific peptides, is conserved. This is consistent with the mini uORF experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The primary biological function of NDC80luti is to repress NDC80ORF in cis and thereby inactivate kinetochore function. Multiple lines of evidence support this model: disruption of NDC80luti causes elevated NDC80ORF and premature kinetochore activation (C63), NDC80luti transcription introduces repressive chromatin marks at the NDC80ORF promoter (C64), and induction of NDC80luti is sufficient to repress NDC80ORF and inactivate kinetochores (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a synthesis claim drawing on multiple results (Figures 4, 5, 7, 8) and the accompanying manuscript. The convergent evidence from loss-of-function, gain-of-function, and mechanistic studies (chromatin marks) strongly supports this as the primary function of NDC80luti.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The NDC80 regulatory mechanism represents a novel mode of transcription factor-mediated gene regulation through alternative promoter usage. The meiotic cell co-opts existing transcription factors (Ime1 and Ndt80) for both activating and repressing gene expression (C67), and this study provides the first clear demonstration that promoter choice and mRNA isoform identity govern whether a transcription factor turns a gene on or off (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data clearly demonstrate that Ime1-Ume6 activates the repressive NDC80luti isoform while Ndt80 activates the protein-coding NDC80ORF isoform. The novelty claim (C68) is appropriately contextualized with citations to prior work on transcriptional interference, and the mechanism described is indeed distinct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The luti-mRNA regulatory mechanism may be widespread in meiosis. Analysis of published datasets revealed hundreds of transcripts with potential luti-like signatures in meiotic yeast (C69), and two other genes (ORC1 and BOI1) have been shown to express meiosis-specific transcript isoforms with uORF-containing leader extensions (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic analysis (C69) and supporting examples from the literature (C70) provide evidence for broader prevalence of this mechanism. However, the claim is appropriately cautious ('potential' luti-like signatures), acknowledging that further validation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The regulatory principles underlying the NDC80 luti-mRNA mechanism (alternative promoter usage, transcription-coupled repression, uORF-mediated translational control) are widespread across organisms, suggesting this regulatory circuit may be broadly applicable. Alternative promoter usage is common in development (C71), transcription-based interference and chromatin modifications are described in various organisms (C72), and uORF translation is widespread and regulatory (C73), suggesting the NDC80 regulatory circuit can serve as a roadmap for discovering similar mechanisms in other species (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are well-supported by extensive citations to prior literature. The forward-looking claim C74 is appropriately speculative but reasonable given the widespread occurrence of the individual regulatory principles. This represents a valid discussion of broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The luti-mRNA concept may explain poor mRNA-protein correlations observed in genome-wide studies. Multiple studies report poor correlation between mRNA and protein abundance (C75), and for mRNAs that anti-correlate with protein levels, this might be due to luti-mRNAs being misattributed as canonical protein-coding transcripts (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C75 is supported by citation, C76 is speculative. The hypothesis is reasonable and testable, but no data are presented to demonstrate that luti-mRNAs actually account for a significant fraction of mRNA-protein anti-correlations in existing datasets. This remains an interesting but unvalidated hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Meiosis requires transient removal of the outer kinetochore through a conserved mechanism. Kinetochores do not bind microtubules in meiotic prophase across multiple systems (C1, C5), and this inactivation is achieved by removing the outer kinetochore (C6). Failure to disassemble the outer kinetochore causes catastrophic chromosome missegregation (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and are well-supported by multiple citations to prior work (Asakawa et al., 2005; Kim et al., 2013; Meyer et al., 2015; Miller et al., 2012; Sun et al., 2011). This represents established knowledge that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The luti-mRNA mechanism is economical and evolutionarily flexible because it relies on cis-regulatory elements rather than novel trans-acting factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative evolutionary argument (C66) that, while reasonable, is not directly tested. The claim about evolutionary flexibility would require experimental evolution studies or more extensive comparative genomics to validate. It represents informed speculation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The BioMe biobank is a highly diverse cohort comprising over 38,000 participants, with over 65% self-reporting as Black/African-American or Hispanic/Latino/a, over 35% born outside mainland US, and representing more than 110 countries of origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide consistent demographic characterization of the BioMe biobank. These are straightforward descriptive statistics about the cohort composition that are well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Analysis of IBD sharing patterns revealed elevated distant relatedness in Ashkenazi Jewish and Hispanic/Latino populations in BioMe, with the founder effect in Hispanic/Latino populations predominantly driven by Puerto Rican-born individuals. A total of 2816 individuals were estimated to be of Puerto Rican ancestry for downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 describe IBD analysis results with specific quantitative measures (median IBD sharing, confidence intervals) and cite appropriate prior work on founder effects. The methodology for identifying Puerto Rican ancestry individuals is described, though the PCA-based selection strategy (C11) introduces some subjectivity. Overall well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "IBD mapping identified one genome-wide significant locus at 9q32 associated with extreme short stature in Puerto Ricans under a recessive model. The significant IBD-clique contained 59 individuals (56 heterozygous, 3 homozygous), with homozygous individuals 6-10 inches shorter than the population mean. The minimum shared boundary overlapped the gene COL27A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe the primary discovery result with appropriate statistical thresholds (Bonferroni correction for 480 tests), effect sizes, and genomic localization. The association is strong (p<2.57\u00d710\u207b\u00b9\u00b9) and the phenotypic effect in homozygotes is substantial and clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24"
+    ],
+    "result": "Whole genome sequencing of homozygous individuals identified a missense mutation in COL27A1 (p.G697R, rs140950220) that was predicted to be damaging by in silico analysis and had been previously implicated in Steel syndrome. Genotyping validation demonstrated 100% concordance between the variant and the significant IBD-haplotype in homozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C24 describe the identification and validation of the causal variant. The WGS analysis used appropriate filtering criteria (\u22656 copies in 4 individuals), in silico predictions support pathogenicity, and the 100% concordance with IBD haplotype provides strong validation. The connection to prior work on Steel syndrome strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Comparison with 1000 Genomes Project imputation showed that the IBD haplotype had better concordance with true COL27A1 p.G697R homozygous state (100%) compared to imputation (66.67%), demonstrating superior performance of IBD mapping over traditional GWAS approaches for this variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide a direct methodological comparison showing the advantage of IBD mapping. The concordance metrics are clearly stated and the comparison is fair, though the sample size for this comparison is small (3 homozygotes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The association between COL27A1 p.G697R and clinical short stature was replicated in an independent cohort of 1775 Puerto Rican individuals from the PAGE Study, showing strong association under a recessive model (\u03b2 = \u22123.5; p<4.87\u00d710\u207b\u2070\u2077) and identifying 51 additional carriers and 2 homozygous individuals who were both short statured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe successful replication in an independent cohort with consistent effect size and statistical significance. The identification of additional homozygotes with the expected phenotype strengthens the finding. The replication cohort is adequately sized and genotyping was direct rather than imputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Manual review of electronic health records revealed that none of the five homozygous patients had a clinical diagnosis of Steel syndrome, but all had EHR-documented evidence of several Steel syndrome characteristics including developmental dysplasia of the hip, carpal coalition, scoliosis, and cervical spine anomalies. The incidence of cervical spine anomalies (4 out of 5) was higher than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe systematic EHR review findings. The absence of formal Steel syndrome diagnosis despite presence of characteristic features is clinically important and suggests underdiagnosis. The higher incidence of cervical spine anomalies expands understanding of the phenotype, though the small sample size (n=5) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Structural modeling suggests that the COL27A1 p.G697R variant would destabilize the triple helix through steric hindrance, similar to mechanisms in other collagen disorders (Ehlers-Danlos syndrome, Alport syndrome, Osteogenesis Imperfecta). However, unlike these dominant disorders, Steel syndrome has only been reported as recessive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide mechanistic context based on structural modeling and comparison to other collagen disorders. The structural prediction is reasonable given the conserved Gly-Xaa-Yaa repeat and the known importance of glycine in the triple helix. The contrast with dominant inheritance of other collagen disorders raises an important question about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "PheWAS analysis identified five ICD9 codes significantly associated with COL27A1 p.G697R carrier status (FDR < 0.05), three involving the musculoskeletal system: vertebral osteomyelitis (730.08, OR=34.5), cervical spondylosis (721.0, OR=5.4), and knee arthropathy (716.98, OR=5.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C49 report PheWAS results, but the manuscript acknowledges significant methodological challenges including test statistic inflation (\u03bb ranging from 1.20 to 2.09 across different models) and that no single model fully accounts for confounding. While musculoskeletal associations are biologically plausible, the statistical uncertainty and lack of consensus across models limits confidence in these specific associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Manual chart review of carriers under age 55 found significantly increased risk of cervical stenosis (15% vs 0%, p<0.05) and overall spine degeneration (38% vs 13%, p<0.03) compared to non-carriers, with non-significant trends for increased scoliosis, arthritis, and lumbar spine degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe systematic chart review with appropriate statistical testing. The significant findings for cervical stenosis and overall spine degeneration are well-supported, though sample sizes are modest (34 carriers, 31 controls). The non-significant trends are appropriately reported as such and suggest potential carrier effects that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Global screening of 57,316 individuals across 112 populations revealed that COL27A1 p.G697R carrier frequency varies dramatically by population: 1:51 in Puerto Rican-born individuals (MAF=1.1%), 1:9 in St. Thomas (MAF=11%), 1:346 in US Hispanic/Latino/as (MAF=0.29%), 1:72 in NYC Hispanic/Latino/as (MAF=0.7%), 1:746 in Dominican Republic (MAF=0.067%), and only 4 copies in 60,706 ExAC exomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide comprehensive population frequency data from large-scale screening. The dramatic population differences are well-documented, though the St. Thomas estimate (C56) is noted to be based on only 9 individuals and may be biased. The rarity in ExAC is consistent with the population-specific nature of this variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Local ancestry inference revealed that all three homozygous individuals were homozygous for Native American ancestry at the IBD haplotype, suggesting the variant arose on a Native American haplotype. IBDNe analysis indicated a strong bottleneck in Puerto Ricans 9-14 generations ago (smallest Ne=2580, 95% CI 2320-2910), consistent with European colonization timing. No evidence of selection was detected by iHS analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 provide convergent evidence for the demographic history of the variant. Local ancestry analysis, effective population size estimation, and selection testing are appropriate methods. The timing of the bottleneck aligns with historical records of colonization. The inference that the variant arose in ancestral Native American populations is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In the Mount Sinai health system treating approximately 190,000 Puerto Rican patients annually, an estimated 80 may have homozygous Steel syndrome and 1,200 may be heterozygous carriers. However, a search of the data warehouse found no documented cases of Steel syndrome (42 mentions all referred to vascular Steal Syndrome), suggesting the disorder is largely undiagnosed. A genetic test is now available at Mount Sinai.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe the clinical implications and current state of diagnosis. The estimates of affected individuals are based on the carrier frequency data (C71-C72 are inferences). The absence of documented Steel syndrome cases despite the estimated prevalence strongly supports underdiagnosis (C74). The availability of genetic testing (C75) is a factual statement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "IBD mapping demonstrated better power for discovery of the COL27A1 variant compared to typical GWAS approaches. As biobank sample sizes increase, the probability of detecting distant relatives increases exponentially, enabling detection of shared haplotypes harboring rarer causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by the direct comparison showing IBD mapping succeeded where imputation-based GWAS failed (C26). The principle that relatedness increases with sample size is well-established and appropriately cited. This represents an important methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The COL27A1 p.G697R variant may have segregated at 25-30% carrier frequency in pre-Columbian Ta\u00edno populations and/or been driven to its current frequency by a bottleneck during early colonization in Puerto Rico.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculative inferences about historical carrier frequencies. While the demographic modeling (C63-C64) supports a bottleneck, the specific estimate of 25-30% carrier frequency in pre-Columbian populations is not directly supported by presented data. This is acknowledged as an estimate/inference rather than a measured value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "This study demonstrates that EHR data can be used to characterize clinical features of musculoskeletal genetic disorders, though this approach has limitations for disorders not detectable via routine clinical measures. Statistical methods developed for research cohorts may not be optimally calibrated for patient populations in health systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide balanced assessment of the EHR-based approach. The successful characterization of Steel syndrome features (C32-C33, C50-C54) supports C81. The acknowledged limitations (C82-C83) are appropriate and reflect the challenges observed in the PheWAS analysis (inflation of test statistics).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A single mutation in COL27A1 underlies a common collagen disorder impacting up to 2% of people of Puerto Rican ancestry. Steel syndrome, previously thought to be rare and recessive, manifests in both heterozygotes and homozygotes. Traditional association strategies focused on European populations would have failed to identify this disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 represent the main conclusions of the study. The 2% prevalence estimate (C86) is based on the carrier frequency data (1:51 = ~2% carriers). The demonstration of heterozygote effects (C88) is supported by the chart review data (C50-C54). The claim about European-focused strategies (C85) is supported by the rarity of the variant in non-Puerto Rican populations and ExAC.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1438 @@
+{
+  "submission": {
+    "id": "829af0c0-5a1d-447a-b6bb-d17836373824",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:05:35.418134Z",
+    "updated_at": "2025-12-01T21:05:35.418134Z"
+  },
+  "content": [
+    {
+      "id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "submission_id": "829af0c0-5a1d-447a-b6bb-d17836373824",
+      "content_type": "manuscript",
+      "content_text": "# Protein-mediated RNA folding governs sequence-specific interactions between rotavirus genome segments\n\n## Authors\n\n- Alexander Borodavka<sup>1</sup> ([ORCID: 0000-0002-5729-2687](https://orcid.org/0000-0002-5729-2687)) \u2020\n- Eric C Dykeman<sup>3</sup>\n- Waldemar Schrimpf<sup>2</sup>\n- Don C Lamb<sup>2</sup>\n\n### Affiliations\n\n1. Astbury Centre for Structural Molecular Biology School of Molecular and Cellular Biology, University of Leeds Leeds United Kingdom\n2. Department of Chemistry Center for NanoScience, Nanosystems Initiative Munich (NIM) and Center for Integrated Protein Science Munich (CiPSM), Ludwig-Maximilian University of Munich Munich Germany\n3. York Centre for Complex Systems Analysis University of York York United Kingdom\n4. Department of Mathematics University of York York United Kingdom\n5. Department of Biology University of York York United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSegmented RNA viruses are ubiquitous pathogens, which include influenza viruses and rotaviruses. A major challenge in understanding their assembly is the combinatorial problem of a non-random selection of a full genomic set of distinct RNAs. This process involves complex RNA-RNA and protein-RNA interactions, which are often obscured by non-specific binding at concentrations approaching in vivo assembly conditions. Here, we present direct experimental evidence of sequence-specific inter-segment interactions between rotavirus RNAs, taking place in a complex RNA- and protein-rich milieu. We show that binding of the rotavirus-encoded non-structural protein NSP2 to viral ssRNAs results in the remodeling of RNA, which is conducive to formation of stable inter-segment contacts. To identify the sites of these interactions, we have developed an RNA-RNA SELEX approach for mapping the sequences involved in inter-segment base-pairing. Our findings elucidate the molecular basis underlying inter-segment interactions in rotaviruses, paving the way for delineating similar RNA-RNA interactions that govern assembly of other segmented RNA viruses.\n\n## Introduction\n\nGenomes of rotaviruses (RVs), and other pathogens of the Reoviridae family, comprise nine to twelve double-stranded (ds)RNA segments, co-packaged into each infectious virion. The RNA assortment process, during which a single distinct positive-sense ssRNA copy of each of the genomic segments is selected for packaging and replication, occurs within cytoplasmic inclusion bodies termed viroplasms (Patton and Spencer, 2000; Trask et al., 2012). Multiple copies of viral RNAs and proteins accumulate in viroplasms, of which the non-structural ssRNA-binding proteins NSP2 & NSP5 are essential components (Patton and Spencer, 2000; Trask et al., 2012; Taraporewala and Patton, 2004). Current views of the mechanisms of segment assortment are based on the idea that selection of the correct genomic segments is governed by inter-segment RNA-RNA interactions (Gavazzi et al., 2013a; Gavazzi et al., 2013b; Fajardo et al., 2015; McDonald et al., 2016). However, the analysis of such interactions remains a particularly challenging task due to a vast number of RNA-RNA contacts present in multiple folding intermediates of large RNAs (Solomatin et al., 2010; Woodson, 2010a; Woodson, 2010b; Laing and Schlick, 2011). This problem is further confounded by non-specific RNA self-association and aggregation, particularly in the presence of RNA-binding proteins, at concentrations mimicking in vivo assembly conditions (Borodavka et al., 2012). Recently, several tools for investigating RNA-RNA interactions have been developed, based on proximity-ligation of interacting RNAs (Helwak and Tollervey, 2014) and psoralen-mediated crosslinking of RNA duplexes (Engreitz et al., 2014; Lu et al., 2016; Sharma et al., 2016; Aw et al., 2016). While these powerful methods are well suited for detection of RNA duplexes in cells, further experimental validation of the identified RNA-RNA contacts is often required (Weidmann et al., 2016). Moreover, such techniques give little insight into the dynamics and stability of the observed RNA-RNA interactions, particularly when they are involved in the assembly of macromolecular complexes.\n\nTo address these challenges, we have developed an experimental framework for interrogating RNA-RNA interactions by taking advantage of two-colour fluorescence cross-correlation spectroscopy combined with pulsed interleaved excitation (PIE-FCCS) (M\u00fcller et al., 2005; Schrimpf et al., 2017). Such assays offer unprecedented capacity for detection of stable, sequence-specific interactions between labeled RNAs in complex mixtures of RNAs and proteins. Using PIE-FCCS, we show that incubation of a full set of eleven genomic ssRNAs with the non-structural protein NSP2 results in de novo formation of specific inter-segment RNA-RNA contacts. By testing pairwise RNA-RNA interactions between segment 11 ssRNA (S11) and other RV ssRNAs, we demonstrate that S11 preferentially binds to a subset of genomic ssRNAs. We show that NSP2 binding to S11 RNA results in its structural reorganization, concomitant with the exposure of single-stranded areas, required for stabilization of new inter-segment interactions. The weakest detected pairwise interaction between S11 and S10 RNAs is significantly enhanced in the presence of a full set of eleven ssRNAs, suggesting formation of a complex RNA interaction network, stabilized by NSP2.\n\nTo gain further insights into specific inter-segment contacts of RV RNAs, we introduce an RNA-RNA SELEX approach for mapping the genomic sequences, mediating such interactions. Using FCCS methodology combined with RNA mutagenesis studies, we validate the sites of inter-segment RNA-RNA interactions, identified via RNA-RNA SELEX. This integrated approach provides unique insights into the stability of macromolecular complexes, containing multiple RNAs, and it can be universally applied for investigating assembly of other segmented RNA viruses and ribonucleoproteins.\n\n## Results\n\n### NSP2 promotes interactions between ssRNA segment precursors\n\nUnlike most ensemble methods previously used for detecting inter-segment interactions in segmented RNA viruses (Gavazzi et al., 2013b; Fajardo et al., 2015; Fournier et al., 2012), fluorescence correlation spectroscopy (FCS) allows probing of such interactions in extremely dilute solutions, effectively eliminating self-association and aggregation of RNAs (Borodavka et al., 2012; Borodavka et al., 2016). We employed this technique to identify specific inter-molecular RNA-RNA interactions, which remain stable at low sub-nanomolar concentrations. We used a dual-color extension of FCS, fluorescence cross-correlation spectroscopy (FCCS, Materials and methods and Figure 1\u2014figure supplement 1) for detecting interactions of differently labeled RNAs in the presence of unlabeled molecules, which may be required for stabilization of such RNA-RNA contacts.\n\nWe first investigated whether the RV ssRNAs could spontaneously associate into larger RNA complexes in vitro. We examined binding of S1-S10 ssRNAs (Figure 1\u2014figure supplement 2) to the smallest genomic RNA S11, for which there is a complete secondary structure model available (Li et al., 2010). As described in Materials and methods, ATTO647-labeled S11 and ATTO565-labeled S10 (+)ssRNAs were incubated with unlabeled (+)ssRNAs S1 to S9. After incubation, RNA samples were diluted (1 nM each) and examined by two-color FCCS. Analysis of the cross-correlation function (CCF) between dye-labeled S11 and S10 RNAs suggests that the two RNAs do not interact with each other in the presence of a full set of eleven genomic ssRNA segment precursors (Figure 1A, zero amplitude of CCF, shown as dashed magenta line). Upon incubation with eleven genomic ssRNAs, the apparent hydrodynamic radius, Rh of the S11 RNA remained unchanged, consistent with lack of RNA oligomerization under those conditions (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-v2.jpg)\n\n**Figure 1.:** (A) Interactions between fluorescently labelled ssRNAs S10 and S11, incubated in the presence of an equimolar set of unlabelled ssRNAs S1 to S9, were probed by FCCS, as described in Materials and methods. A full set of S1-S11 ssRNAs does not associate into a higher order RNA complex (cross-correlation function amplitude, CCF \u2248 0, shown as a dashed magenta line). In contrast, incubation of the mixture of all eleven genomic ssRNAs in the presence of NSP2 results in a strong interaction between S10 and S11 (high amplitude of CCF shown in blue). (B) Pairwise inter-segment RNA-RNA interactions in RVs. Fluorescently labelled ssRNA S11 (red), incubated with RNA Sx (where x \u2013 any other genomic ssRNA S1-S10) in the presence of NSP2, as described in Materials and methods. CCF amplitudes were normalised by their respective auto-correlation functions (ACFs), reflecting the differences in the affinities between S11 and other ssRNAs, with the strongest interactions detected for the RNA-RNA combinations S11:S3, S11:S5 and S11:S6.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In Fluorescence Correlation Spectroscopy (FCS), the fluorescent signal is collected from fluorescently labelled molecules passing through the confocal volume. This results in fluctuations in the fluorescent signal, which are detected by single photon avalanche photodiodes (APDs). The fluctuations are analyzed using an autocorrelation analysis. Typical autocorrelation functions (ACFs) for the red-labelled RNA S11 (red particles) and green-labelled RNA S5 (green particles) are shown on the right. The diffusion time values, \u03c4, reflect the average dwell times of the labelled molecules, which are proportional to their hydrodynamic radii (Rh), i.e. sizes. The amplitude of the ACF, G(\u03c4), is inversely proportional to the total number (N) of green and red labelled particles, NG and NR respectively. Dual-color Fluorescence Cross-correlation spectroscopy (FCCS) is a powerful extension of FCS technique that detects interactions of two differently labelled molecules. A cross-correlation signal is observed when green- and red-labeled molecules are interacting, thus diffusing together through the detection volume as a single species. This results in a CCF amplitude, GGR(\u03c4), that is directly proportional to the number of the interacting molecules NGR. The fraction of double-labeled species (i.e., interacting RNA molecules) in a sample can be then extracted from the ratio of the amplitudes of the cross-correlation (CCF, shown in blue) to the auto-correlation functions (ACFs, in green and red).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A schematic of eleven positive-sense ssRNAs genome precursors of RVA. Terminal untranslated regions (UTRs) are shown as grey bars. Note that the UTRs are different for different segments: 9\u201348 nt of the 5\u2019 UTR, and 17\u2013182 nt for the 3\u2019 UTR. For the FCCS assay, RNAs were labelled with either ATTO647 or ATTO565 dyes, as described in Materials and methods. (B) Denaturing formaldehyde agarose gel electrophoresis of 11 ssRNA transcripts. In vitro transcribed RNAs were separated on a formaldehyde agarose gel (1% w/v) and visualized by staining with ethidium bromide. Lanes 1\u201311 - segment precursors S1-S11. (C) ATTO-dye-labelled RNA transcripts visualised by fluorescence scanning. Lanes 1\u201311 \u2013 segment precursors S1-S11. L \u2013 RNA ladder (High Range RiboRuler, Thermo Scientific), sizes shown in number of nucleotides. (D) Mg2+-dependent multimerization of S11 ssRNA. Native (1% agarose, 0.5 x Tris-borate buffer) gel of S11 RNA transcripts prepared and purified as described in Materials and methods. Lane 1 \u2013 S11 RNA sample with residual Mg2+ ions after in vitro transcription prior to heat-denaturation. Lane 2 \u2013 S11 RNA after heat-annealing (70\u00b0C, 5 min, followed by snap-cooling in a low-salt buffer, 10 mM HEPES, pH 7.4). Lane 3 \u2013 RNA sample in the presence of 10 mM Mg2+. Lane 4 \u2013 RNA sample, heat-annealed in the presence of 10 mM Mg2+ (notable Mg2+-dependent RNA hydrolysis and RNA aggregation). Sizes are given in number of nucleotides, RNA loading concentration \u2013 1 \u03bcg/lane. A similar behaviour is also observed in FCS experiments with fluorescently labelled S11 RNA samples. The S11 ssRNA, after heat annealing, has a smaller hydrodynamic radius (Rh\u00a0~\u00a08 nm) compared to non-heat treated RNA (~13 nm). A prolonged incubation of s11 RNA in the presence of 10 mM Mg2+ leads to an increase of Rh, indicating RNA oligomerization.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) ssRNA-binding of NSP2 and NSP5 to a Cy5-dye labelled 18-nt long ssRNA. Dye-labelled ssRNA probe (1 nM) was incubated with 0.5 \u03bcM NSP5 or NSP2, and examined by FCS. Normalised ACFs for the ssRNA alone (black), RNA:NSP2 complex (blue), and RNA:NSP5 (red) are shown along with the respective fits (shown as solid lines, see Materials and methods), yielding the apparent hydrodynamic radii, Rh, shown next to the fits. Sizes of NSP2-bound and NSP5-bound ssRNAs are in close agreement with the previously estimated hydrodynamic radii of NSP2 octamer (Zeng et al., 1998) and NSP5 decamer (Jiang et al., 2006). (B) ssRNA-binding protein NSP5 does not promote interactions between S5 and S11 RNAs. Both fluorescently labelled RNAs were incubated with NSP5 instead of NSP2, and assayed by FCCS, as described above. The resulting CCF \u2248 0 (magenta) indicates lack of detectable interactions between the two RNAs. (C) Co-incubation of NSP2 (20 \u03bcM) and 0.5 \u03bcM NSP5 with ssRNAs S5 and S11 results in significantly decreased amplitude of CCF (black triangles), compared to the CCF of the S11:S5 RNA complex formed in the presence of NSP2 alone.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) RNA-binding properties of NSP2 were examined with two non-complementary Cy5 (red) and Cy3 (green)-labelled ssRNAs (18 nt-long). Non-interacting RNA strands (10 nM each strand) were incubated with 10 nM NSP2 octamer and examined by FCCS. The non-zero CCF (blue circles) suggest that both differently labelled RNAs may bind a single NSP2 octamer with high affinity, consistent with the previously reported binding of two 20-mer RNAs per single NSP2 octamer (Schuck et al., 2001). Addition of 1 mM ATP to the reaction has very little effect on the CCF amplitude (purple triangles). (B) Pairwise S5:S11 interactions assay, as described in Materials and methods, carried out in the presence of 1 mM ATP (CCF shown as blue triangles), and without ATP (CCF shown as purple circles). The resulting CCF amplitudes are similar in both cases, suggesting that addition of 1 mM ATP does not affect the formation of the RNA-RNA contacts.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Substitution of a full-length NSP2 with its C-terminally truncated mutant\u0394C-NSP2 with reduced affinity for ssRNA (see Materials and methods), results in significantly lower efficiency of S5:S11 complex formation (CCF in blue and the reduced CCF in purple).\u00a0(B) RV group C NSP2 (NSP2-C) was used instead of RV group A NSP2 (NSP2-A) in the RNA-RNA interaction assay as described in (A). The differences in the resulting CCF amplitudes (shown in blue for NSP2-A and in purple for NSP2-C) reveal that NSP2-C has low efficiency in promoting RNA-RNA contacts formation between S5 and S11 ssRNAs.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Fluorescently labeled S5 (green) and S11 (red) (equimolar ratio, both green and red ACFs\u00a0~\u00a01) were incubated with NSP2 as described in Materials and methods. After incubation, the RNA sample was extensively digested with proteinase K (PrK, see Materials and methods) and then further diluted to 1 nM RNA concentration of each strand. A noticeably longer diffusion time of ATTO565-labelled S5, compared to S11, reflects their differences in sizes (e.g., diffusion times\u00a0~\u00a0Rh, see Table 1 and Figure 1\u2014figure supplement 2D). After dilution and prolonged incubation in low ionic strength buffer at 37\u00b0C, the apparent amplitude of the CCF between S5 and S11 (dark blue) after NSP2 removal is reduced, compared to the NSP2-bound RNA samples (Figure 1B). The non-zero CCF amplitude confirms that the two RNAs remain associated after the removal of NSP2. (B) A control reaction of the heat-annealed fluorescently labelled S5 and S11 RNAs, interacting after heat-annealing, with a CCF amplitude, comparable to the CCF shown in panel (A).\n\nBecause RNA segment assortment is likely to occur in the presence of the non-structural proteins NSP5 and NSP2 (3, 24), the latter capable of helix-unwinding and strand-annealing reactions in vitro (Taraporewala and Patton, 2001; Borodavka et al., 2015), we first examined inter-segment RNA interactions in the presence of NSP2. Incubation of eleven distinct ssRNAs S1-S11 with a 100-fold molar excess of NSP2, that\u00a0is, enough NSP2 to promote strand-annealing (Borodavka et al., 2015), both labeled S11 and S10 formed a stable complex (Figure 1A, CCF in blue).\n\nAnalysis of the resulting ACFs and the CCF confirms that both NSP2-bound RNAs have similar hydrodynamic radii, Rh\u00a0~30 nm, significantly larger than the protein-free S11 and S10 ssRNAs (Supplementary file 1).\n\nHaving established that the S11:S10 interaction is formed in the presence of a full genomic set of eleven ssRNAs upon incubation with NSP2, we then explored whether the remaining S1-S9 RNAs are involved in stabilization of the detected interaction. Omitting S1-S9 RNAs from the reaction significantly decreased the apparent CCF amplitude between S11 and S10 RNAs (Figure 1, cf. panels A and B). This result suggests that the observed S11:S10 interaction involves additional RNAs that may be required to form a larger supramolecular complex (Trask et al., 2012; Gavazzi et al., 2013a; Gavazzi et al., 2013b). Alternatively, binding of one or more RNAs to either S11 or S10 may result in stabilization of the RNA conformations, which favor stable base-pairing between the two RNAs. Either interaction model predicts that some of the remaining segment ssRNAs (S1-S9) should strongly interact with S11 RNA.\n\nWe then examined the remaining pairwise interactions between S11 and S1-S9 RNAs, after incubating an equimolar mixture of the two differently labeled RNAs with NSP2 (Figure 1B). The strongest pairwise interactions of S11 were observed for segments S3, S6 and S5, with CCF amplitudes similar to those, observed for the S11:S10 complex, incubated in the presence of S1-S9 RNAs (CCFs ~ 0.5, Figure 1A). The apparent CCF amplitudes between S11 and any other segment RNA are not proportional to the length or the size of the interacting RNA partner (Supplementary file 1), suggesting that it is the RNA sequence, rather than its size, that is important for S11 binding.\n\nWe also examined the effect of NSP5 on ssRNA binding and inter-segment RNA complex formation. Both NSP2 and NSP5 were capable of binding a short 18-nt long ssRNA with nM affinity, yielding the apparent hydrodynamic radii, Rh, closely matching the sizes of NSP2 octamers (Schuck et al., 2001), or NSP5 decamers (Martin et al., 2011), respectively (Figure 1\u2014figure supplement 3A). Despite its ssRNA-binding activity, incubation of NSP5 with ssRNAs S5 and S11 at saturating amounts did not yield any detectable cross-correlation (Figure 1\u2014figure supplement 3B), indicating that NSP5 binding to ssRNAs did not promote the formation of a stable S5:S11 RNA complex. Remarkably, co-incubation of NSP2 in the presence of sub-micromolar amounts of NSP5 resulted in a marked decrease of the S5:S11 CCF amplitude, compared to the NSP2 incubation alone (Figure 1\u2014figure supplement 3C). Further addition of NSP5 resulted in severe aggregation of NSP2, as previously reported by Jiang et al. (2006).\n\nGiven the NTPase and autophosphorylation activities of NSP2 (30\u201333), we also investigated the effect of ATP on the formation of RNA-RNA contacts in the presence of NSP2. Addition of 1 mM ATP did not affect RNA binding by NSP2 octamers (Figure 1\u2014figure supplement 4A), nor had it any effect on the apparent S11:S5 CCF amplitude (Figure 1\u2014figure supplement 4B). Collectively these data suggest that inter-segment RNA contact formation is not coupled to ATP hydrolysis and thus most likely to be dependent on the ssRNA-binding activity of NSP2. To further investigate this, we examined the interactions between S5 and S11 RNAs co-incubated with a C-terminally truncated NSP2 mutant (\u0394C-NSP2) with a significantly reduced affinity for ssRNA (Hu et al., 2012). The analysis of S11 and S5 RNAs ACFs reveals that both interacting RNAs recruited multiple copies of the full-length NSP2 or its deletion mutant \u0394C-NSP2, respectively, yielding similar hydrodynamic sizes of S5 (Figure 1\u2014figure supplement 5A, light and dark green ACFs). However, the apparent CCF amplitude between S5 and S11 was significantly reduced when the full-length NSP2 was replaced with \u0394C-NSP2 (Figure 1\u2014figure supplement 5A, CCFs in blue and magenta). A drastic reduction of the CCF amplitude between S5 and S11 ssRNAs was also observed when rotavirus group A NSP2 was substituted with NSP2 from rotavirus group C (Figure 1\u2014figure supplement 5B), despite the apparent structural resemblance and similar enzymatic activities of both proteins (Hu et al., 2012). Together, these results strongly suggest that the formation of stable inter-segment RNA-RNA contacts requires selective binding of RV group A NSP2 to ssRNAs, but not ssRNA-binding proteins NSP5 or RV group C NSP2.\n\n### Inter-segment interactions are mediated by direct RNA-RNA contacts\n\nGiven that NSP2 has a capacity to bind multiple RNAs (Schuck et al., 2001), the observed cross-correlation may reflect its simultaneous binding to differently labeled segment ssRNAs. The differences in relative affinities between S11 and other ssRNAs (Figure 1B) strongly suggest that the detected RNA interactions are not due to non-specific aggregation, resulting from NSP2 binding. Moreover, the observed inter-segment interactions remained stable in highly dilute solutions (<1 nM), while the apparent affinity of NSP2 for ssRNA is nanomolar (Hu et al., 2012). Thus, we hypothesized that the high stability of these interactions could arise from strong, specific inter-molecular RNA contacts, formed upon incubation with NSP2. To test this, we removed NSP2 from the preformed stable RNA-RNA complex S11:S5 by digesting it with proteinase K, and examined the sample by FCCS. The interacting S5 and S11 RNAs had lower Rh upon removal of NSP2 (Table 1 and Figure 1\u2014figure supplement 6), suggesting that both RNAs were protein-free. These highly diluted NSP2-free RNA-RNA complexes remained stable at 37\u00b0C for extended periods of time (>30 min, Figure 1\u2014figure supplement 6A).\n\n**Table 1.**\n Apparent hydrodynamic radii (Rh) of the protein-free and NSP2-bound genomic ssRNAs\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Rh of S11</th>\n      <th>Rh of S5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>S11\u00a0+\u00a0S5, no NSP2</td>\n      <td>9\u00a0\u00b1\u00a00.9 nm</td>\n      <td>13.4\u00a0\u00b1\u00a00.95 nm</td>\n    </tr>\n    <tr>\n      <td>S11\u00a0+\u00a0S5, heat-annealed</td>\n      <td>13.3\u00a0\u00b1\u00a01.3 nm</td>\n      <td>17.0\u00a0\u00b1\u00a03.0 nm</td>\n    </tr>\n    <tr>\n      <td>S11\u00a0+\u00a0S5+NSP2</td>\n      <td>17.3\u00a0\u00b1\u00a02.9 nm</td>\n      <td>20.8\u00a0\u00b1\u00a05.0 nm</td>\n    </tr>\n    <tr>\n      <td>S11\u00a0+\u00a0S5+NSP2, proteinase K digested</td>\n      <td>13.0\u00a0\u00b1\u00a01.4</td>\n      <td>17.0\u00a0\u00b1\u00a02.3 nm</td>\n    </tr>\n  </tbody>\n</table>\n\n_The Rh values are reported as mean\u00a0\u00b1SD computed from at least 6 measurements._\n\nAs a further control, we made a protein-free RNA-RNA complex S11:S5 by heat-annealing a mixture of fluorescently labeled RNAs S11 and S5 (Materials and methods), and examined it by FCCS. Both heat-annealed RNAs strongly interacted (Figure 1\u2014figure supplement 6B), yielding an apparent Rh\u00a0~13\u201317 nm typical for a proteinase K-digested complex S11:S5 (Table 1). Together, these data strongly support the view that inter-segment interactions mediated by binding of NSP2 remain stable after removal of NSP2 due to the formation of new, specific inter-molecular RNA contacts.\n\n### Exploring the S11 RNA interactome using RNA-RNA SELEX\n\nHaving established that S11 preferentially binds to S3, S5 and S6 RNAs, we devised an RNA-RNA SELEX methodology to identify the S11 RNA sequences that can form stable inter-molecular contacts with other segment ssRNAs. We used this approach to analyze the distribution of the RNA-RNA interaction sites in S11 alone, and in complex with NSP2 (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig2-v2.jpg)\n\n**Figure 2.:** (A) A na\u00efve 30-nt ssRNA library contains a subset of RNAs (shown as red stem-loops) that can interact with the target RNA (schematically shown in black). In parallel, the na\u00efve RNA library is incubated with S11 RNA in the presence of the RNA-binding protein NSP2 (schematically shown as blue spheres). Both RNA libraries are subject to an RNA-RNA SELEX procedure, combined with high-throughput sequencing, as described in Materials and methods. Analysis of the recovered sequences allows identification of multiple RNA-binding sites present in S11 RNA. (B) Histogram plots of the sequences recovered from the RNA-RNA SELEX against S11 RNA, which were aligned to the sequence of S11 (Materials and methods). The numbers of sequences aligning to a given nucleotide of S11 are normalised to the overall number of alignments in both RNA libraries (S11 RNA alone \u2013 black dashed line, S11\u00a0+NSP2 \u2013 solid red line). Highlighted in green are regions with low accessibilities that correspond to stable helices H1-H3, yielding poor sequence enrichment during the RNA-RNA SELEX procedure. (C) NSP2-induced structural rearrangements of S11 RNA. The refolded RNA structure was computed using folding constraints derived from the RNA-RNA SELEX experiment. The colour map shows changes in accessibilities in S11 RNA upon NSP2 binding. Highly exposed areas of the S11 RNA alone are shown in blue, while the sequences predominantly enriched in the presence of NSP2 are shown in red.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Minimum free energy (MFE) secondary structure model of S11 RNA, computed using the constraints derived from enzymatic RNA probing and covariation analysis, as described in Li et al. (2010). The terminal sequences and regions, previously predicted to form tertiary contacts, are shown in red and magenta, respectively. The conserved helices H1-H3 are highlighted in blue. (B) Accessibility of the S11 RNA probed by RNA-RNA SELEX. Regions with a high number of alignments correspond to highly exposed areas (e.g., loops), while regions with the lowest sequence enrichment (shown in blue) correspond to the highly stable helices H1-H3. The conserved terminal regions (highlighted in red) and loop regions are in good agreement with the structure shown in (A).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overlaid circular plots of S11 RNA structures probed by RNA-RNA SELEX in the absence and in the presence of NSP2. Green arcs indicate stable base pairs that are present in the S11 RNA structure and remain unchanged upon NSP2 binding. Upon incubation with NSP2, multiple base-paired regions are destabilized and exposed (red arcs), or become less accessible due to re-formation of new intra-molecular contacts (blue arcs). (B) Circular dichroism (CD) spectra analysis of S11 ssRNA confirms RNA secondary structure destabilization in the presence of NSP2 (blue). The CD spectra of folded RNA at 37\u00b0C and thermally unfolded RNA (90\u00b0C) are shown in black and red, respectively, along with the spectra of the RNA in the presence of bovine serum albumin (BSA, shown in magenta), with an extinction coefficient similar to NSP2.\n\nAs described in Materials and methods, we used a na\u00efve RNA library comprising\u00a0~3.6\u00d71013 unique 30-mer ssRNA sequences. Biotinylated S11 RNA was incubated with the na\u00efve RNA library (Figure 2A), and sequences strongly interacting with immobilized S11 RNA were separated from excess NSP2 and low affinity 30-mers through multiple rounds of washes. After several rounds of sequence enrichment, the resulting pool of 30-mers was subjected to high-throughput sequencing, yielding 4.9 \u00d7 106 unique sequences. To identify the sequences that strongly interact with S11 RNA, we aligned the reverse complements of all individual SELEX-enriched sequences to S11 using a probabilistic score-based approach (Materials and methods). The resulting histogram indicates the areas, in which multiple SELEX-enriched sequences align to S11 RNA (the peaks shown as a black dashed line, Figure 2B). The histogram peaks are correlated with highly exposed areas of S11 RNA that strongly interact with ssRNAs during the RNA-RNA SELEX procedure. Similarly, S11 areas with poor accessibilities, e.g., stable helices, yielded the lowest number of sequence alignments.\n\nAs the test of the ability of our approach to report on secondary structure of S11 RNA, we computed its structure using the constraints, derived from the RNA-RNA SELEX experiment (Materials and methods). The analysis enabled us to precisely map the conserved helices H1-H3 (Figure 2B and Figure 2\u2014figure supplement 1), consistent with the structure probing data and covariation analyses (Li et al., 2010).\n\nSimilarly, multiple histogram peaks aligned well to various loop regions that had been previously identified in S11 RNA (Figure 2\u2014figure supplement 1). Overall, the RNA-RNA SELEX data reproduced multiple features of the target RNA structure, demonstrating that our approach does not perturb its solution conformations. More importantly, RNA-RNA SELEX allows direct identification of the RNA areas capable of forming stable inter-molecular contacts.\n\n### Revealing NSP2-mediated conformational changes in S11 RNA\n\nBecause the folded structures of interacting RNAs in isolation would present a substantial energy barrier for forming inter-molecular base pairs between them, RNA-RNA SELEX favors selection of unstructured RNA sequences. We reasoned that binding of NSP2 to ssRNAs would alter their structures and, thus, accessibilities of the RNA-binding sites. Analysis of the RNA-RNA SELEX data revealed significant enrichment of the RNAs interacting with S11 in the presence of NSP2 (Figure 2B, solid red line), consistent with its strand-annealing activity (Taraporewala and Patton, 2001; Borodavka et al., 2015). A comparison between the two SELEX experiments uncovered a number of additional RNA-binding sites in S11 RNA after its incubation with NSP2 (Figure 2B and Figure 2\u2014figure supplement 2A). The overall architecture of S11, including stable helices H1-H3, was not affected by NSP2 binding (Figure 2B and C). Interestingly, the majority of the newly formed RNA-binding sites were located near the loop regions and helical junctions of the RNA (Figure 2C), potentially reflecting the sites of preferential binding of NSP2 to S11 RNA.\n\nTo further confirm that NSP2 binding to S11 results in conformational change of the RNA, we monitored the circular dichroism (CD) spectrum of S11 RNA in the presence of NSP2, as described in Materials and methods. The protein-free S11 RNA spectrum is characteristic of an A-type helical conformation (Figure 2\u2014figure supplement 2B), typical for a folded RNA (Borodavka et al., 2015). A positive 260\u2013265 nm band decreases in response to increasing amounts of NSP2 (Figure 2\u2014figure supplement 2B, shown in blue), or thermal melting (shown in red), indicating that the global helical RNA fold is destabilized by NSP2 binding, consistent with the structural rearrangements due to NSP2-mediated RNA unfolding.\n\n### Identification of sites of Inter-segment RNA-RNA interactions\n\nHaving established that NSP2 binding is a prerequisite for inter-segment RNA-RNA interactions, we aligned the SELEX-enriched sequences to the S1-S10 RNAs (Figure 3). The analysis revealed multiple sequences within S1-S10 genome segments with a potential to interact with S11 RNA (Figure 3, black peaks).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig3-v2.jpg)\n\n**Figure 3.:** SELEX-enriched sequences were aligned against S1-S10 genomic segments using probabilistic score-based filtering (Materials and methods) to construct the resulting histogram plots. Each histogram peak corresponds to a sequence with a potential to interact with the S11 RNA alone (shown as black peaks), or in the presence of NSP2 (peaks shown in red). These histograms are plotted in the order of decreasing CCF amplitudes (see Figure 1B). Each plot is scaled to the size of the longest segment S1 (3302 nts), and the 3\u2019-end of each RNA segment is marked with a vertical dotted line. Sequences that can stably base-pair with S11 RNA in the presence of NSP2 are highlighted (magenta boxes). A number of genomic sequences identified in the RNA-RNA SELEX experiments may be sequestered by stable local secondary structures (peaks identified by cyan boxes). Insets \u2013 RNA-RNA interaction sites between RNA S11 (bottom strand shown in red), and its interacting partners S3, S6, S5 and S9 (top strand, shown in black).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Multiple RNAs interacting with S11 enriched in the presence of NSP2 were aligned to Non-RV RNA sequence using a Bernoulli score of 12 (blue line) or 14 (red line). Only a small number of sequences (~170) with a score of 14 or above align to the Non-RV sequence, suggesting that this region could potentially interact (albeit weakly) with S11 RNA. This result is consistent with a non-zero CCF amplitude, observed for S11:Non-RV control RNA, incubated in the presence of NSP2 (Figure 4A, CCF shown as a dashed magenta line). (B) A correlation between the CCF amplitudes of pairwise RNA-RNA interactions examined by FCCS (Figure 1B) and the number of \u2018filtered\u2019 sequence alignments (using a Bernoulli score of 14 or above over 200 hits per identified peak) from the RNA-RNA SELEX against S11 RNA. At the 0.05 level, the slope is significantly different from zero, with a Pearson\u2019s r\u00a0=\u00a00.73.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** RNA strands shown in green correspond to the genomic sequences represented by the peaks shown in Figure 3, identified using the Bernoulli score of 14 or above. (A) RV genomic sequences, involved in S11:S3 inter-segment interactions, confirmed by mutagenesis studies and FCCS (see Figure 4\u2014figure supplement 1A). (B) An additional peak identified in S3 RNA that may also pair with S11, albeit with a significantly lower stability of the resulting RNA-RNA contact (\u221211.1 kcal/mol, corresponding to a Kd value of\u00a0~10 nM). (C\u2013G) RNA sequences present in S6, S4, S1 and S10 RNAs (strands shown in green) with a potential to base-pair with S11 RNA. These sequences are expected to be sequestered by secondary structures and/or tertiary contacts, which may preclude these interactions with S11 RNA (see Figure 3\u2014figure supplement 4).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) ATTO647-labelled S10 RNA was incubated with the Cy3-labelled 17-mer RNA Seq11_84\u2013100 (Supplementary file 2) in the presence of NSP2, as described in Materials and methods. No significant interactions between the two RNAs were observed (CCF\u00a0=\u00a00, in blue), suggesting that the probed region 272\u2013287 is sequestered. (B) A control heat-annealing reaction of the two labelled RNA samples, resulting in a non-zero cross-correlation (CCF\u00a0~0.2), confirming that the sequence 84\u2013100 of S11 RNA can base-pair with S10 RNA, only after heat-annealing of a mixture of the two RNAs. (C) Heat-annealing of labelled RNAs S10 and S11 results in similar CCF amplitude as in (B), suggesting that region 272\u2013287 of S10 RNA has low accessibility for base-pairing with S11 RNA in the presence of NSP2.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Thermodynamic ensemble of secondary structures and base-pairing probabilities were calculated for the entire genomic segment sequences using RNAfold, as described in Materials and methods. These RNA sequences were extracted from the computed centroid RNA structures, that\u00a0is, showing minimal base pair distances to all other secondary structures in the Boltzmann ensemble. The identified S11 RNA-interacting sequences within RNAs S3 and S5 have high predicted accessibilities (regions 1415\u20131427 in S3 and 307\u2013325 in S5), in agreement with the observed high CCF amplitudes for RNA combinations S3:S11 and S5:S11. Regions 1124\u20131136 in S6 RNA and 495\u2013507 in S9 have lower accessibilities, while the region 1243\u20131260 in S6 is sequestered in a stable intra-molecular helix, consistent with the S6 RNA model proposed by Li et al. (2010), and thus is unlikely to stably base-pair with S11 RNA. RNA sequences of S4, S1 and S10 segments, identified as peaks in the RNA-RNA SELEX, showing low accessibilities of the S11-interacting sequences. The colour map shows the calculated base-pairing probabilities of the analysed nucleotides (blue\u00a0=\u00a00, red\u00a0=\u00a01).\n\nRemarkably, the distribution of the identified peaks changes in the presence of NSP2 (Figure 3, peaks shown in red), reflecting the observed conformational rearrangement of the S11 RNA.\n\nThe identified sequences appear in the RV RNA segments with high statistical significance (>200 hits using a statistical score of 14 or above for sequences, enriched in the presence of NSP2), compared to the non-rotaviral control sequence (Non-RV, Materials and methods and Figure 3\u2014figure supplement 1A). This result suggests that the RV segment precursors may contain multiple sites that have the potential to interact with S11 RNA in the presence of NSP2.\n\nNext, we compared the number of the hits resulting from RNA-RNA SELEX experiments, with the relative amplitudes of CCFs, determined in pairwise RNA-RNA interaction assays. There is a positive correlation between the abundance of S11-interacting sequences present in S1-S10 and the respective CCF amplitudes (Figure 1B and Figure 3\u2014figure supplement 1B). Because RNA-RNA SELEX provides the information about the accessibility of a target RNA, but not its interacting partners, we analyzed the sequences of segments S3, S5 and S6, which strongly interacted with S11 in the presence of NSP2. We selected the peaks with significant sequence enrichment, capable of stable base-pairing with S11 RNA in the presence of NSP2 (Figure 3, peaks highlighted in magenta boxes). The identified sequences within S3, S5 and S6 RNAs can stably base-pair with S11 RNA (\u0394G\u00a0=\u00a0\u221215.3 to \u221219.1 kcal/mol, Figure 3, insets and Figure 3\u2014figure supplement 2). Overall, the stabilities of the identified inter-segment RNA-RNA duplexes correlate well with the apparent CCF amplitudes.\n\nWe carried out similar analyses for RNAs S1, S4 and S10, which also contain sequences that have a potential of base pairing with S11 (Figure 3, highlighted in blue boxes). Despite the observed enrichment of the sequences interacting with S11 RNA, identified in S1, S4 and S10, the apparent CCF amplitudes determined in pairwise RNA-RNA interaction assays are low. This suggests that the identified RNA-RNA interaction sites may be sequestered by local secondary structures. To investigate this further, we performed FCCS with ATTO647-labeled S10 RNA and a Cy3-labeled ssRNA probe, representing region 84\u2013100 of S11 RNA (complementary to the region 272\u2013288 of S10 RNA that corresponds to the peak shown in a blue box in Figure 3). No significant cross-correlation between S10 and a complementary RNA sequence was observed after incubation with NSP2 (Figure 3\u2014figure supplement 3). In contrast, heat-annealing of a mixture of the two RNAs resulted in a high CCF amplitude (Figure 3\u2014figure supplement 3B and C). This result strongly suggests that the identified sequence within S10 RNA is sequestered, and the free energy change of opening the intramolecular base pairs by NSP2 binding is too high. This idea is further corroborated by the analysis of secondary structure of S10 RNA (Figure 3\u2014figure supplement 4G). Similar analyses of S1 and S4 sequences (Figure 3\u2014figure supplement 4) suggest the identified S11 RNA-binding sites may be obstructed by local secondary structures that prevent interactions between S11 and those RNAs.\n\nAs a further control, we investigated the effects of mutations disrupting inter-molecular base-pairing between S11 and the interacting RNAs. We examined interactions between S11 and S5 by introducing nucleotide substitutions within the identified RNA-RNA interaction sites (nts 307\u2013322 in S5 and 51\u201366 in S11, Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic of the mutated RNAs S5 and S11 (S5mut and S11mut, respectively), showing the sites of mutations that disrupt inter-segment interactions (magenta stripes). These RNAs were examined in pairwise RNA-RNA interaction assays, as described in Materials and methods. Below \u2013 normalized CCFs of the wild-type S5:S11 RNA:RNA complexes (solid green line, high amplitude CCF), and significantly weaker interacting S11 and S5mut (dashed blue line), or S5 and S11mut ssRNAs (dashed red line). The non-rotavirus control RNA (Non-RV, see Materials and methods) does not strongly bind S11 RNA upon incubation with NSP2, resulting in low CCF amplitude (dotted magenta line). Similarly, incubation of a \u2018scrambled\u2019 RNA, designed to have a minimal propensity to base-pair with S5 RNA, yields the lowest CCF amplitude (black dotted line). (B) Temperature melting experiments of the pre-formed S5:S11 RNA-RNA complexes, examined by FCCS. The observed melting temperature (Tm) of 46\u00b0C agrees well with the estimated Tm of the identified RNA duplex, formed between S5 and S11 RNAs upon incubation with NSP2 (Figure 3, inset).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mutated wild-type (wt) ssRNAs S5 and S11 (S5mut and S11mut, respectively, Figure 4) were examined in pairwise RNA-RNA interaction assays, as described in Materials and methods. Below \u2013 normalized ACFs (shown as crosses) of the wild type RNAs S5 and S11, S5mut and comp_mutS11 RNAs, along with the normalised CCFs (shown as circles) of the wild-type S5:S11 RNA:RNA complex (blue), and a significantly weaker interacting S11 and S5mut (black CCF), and the \u2018rescued\u2019 CCF of the strongly interacting trans-complementary mutants comp_mutS11:S5mut (magenta CCF).\u00a0(B) Stable base-pairing between the wtRNAs S5 and S11 and the trans-complementary mutated sequences S5mut:S11comp (below), which were examined in the pairwise RNA-RNA interaction assay shown in (A).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Segment ssRNAs were analyzed in pairwise RNA-RNA interaction assays, as described in Materials and methods. CCF amplitudes were normalized by their respective ACFs, and the resulting relative CCF amplitudes of the mutated S11 or S6 sequences were further normalized to the highest CCF, characteristic for the wild-type S6:S11 RNA:RNA complex. (A) Mutations disrupting RNA-RNA interactions between S3 and S11 ssRNAs were introduced into S11 RNA sequences yielding S11mut_493 and S11mut_566 RNAs, as described in Materials and methods. These mutations affect inter-segment base-pairing, which involves regions 493\u2013505 (green CCF) and 566\u2013593 (black CCF), respectively. (B) Mutations disrupting RNA-RNA interactions between S6 and S11 ssRNAs were introduced into S6 RNA, yielding S6mut_1243 and S6mut_1124 RNAs. These mutations affect inter-segment base-pairing, which involves regions 1124\u20131136 of S6 RNA, impinging on the ability of S11 to interact with S6 (low CCF in black). In contrast, mutated S6 RNA region 1243\u20131262 did not significantly affect the S11:S6 interaction (CCF shown in green), confirming that this region does not contribute to the stability of the S11:S6 RNA:RNA complex, consistent with the low accessibility of this site (Figure 3\u2014figure supplement 4).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** S11 S11 RNA structure computed using folding constraints derived from the RNA-RNA SELEX experiment, as shown in Figure 2C, with mapped sites of inter-segment RNA-RNA interactions for S3 (green), S5 (red), S6 (orange) and S9 (purple). Highly accessible areas of the S11 RNA alone are shown in blue, while the sequences predominantly exposed in the presence of NSP2 are shown in red.\n\nSubstitution of either RNAs with its mutated counterpart (S11mut or S5mut) resulted in a dramatic reduction of the CCF amplitude (Figure 4A, red and blue dotted lines), while the wild-type S5 and S11 RNAs formed stable complexes in the presence of NSP2 (Figure 4A, solid green line). Similarly, incubation of S11 with a non-RV control RNA resulted in low CCF amplitude (Figure 4A, dotted magenta line), reflecting its low propensity to form stable base-pairs with S11 RNA (Figure 3\u2014figure supplement 1). Both combinations of S11 with S5mut and non-RV RNAs have similarly low CCF amplitudes, suggesting that the interacting RNAs did not stably interact. To further test this, we computer-generated a scrambled S11 RNA sequence with low propensity to form extensive base-pairing with S5 RNA (Materials and methods). Using FCCS, we probed the interactions between the \u2018scrambled\u2019 RNA and S5 RNA. The resulting apparent CCF amplitude was lower compared to the S5:S11mut combination (Figure 4A), suggesting that the observed weaker interactions are mediated by non-specific residual base-pairing between the mutated RNAs.\n\nWe then used the two-color FCCS approach to probe the stability of S5:S11 RNA complex. The FCCS analysis of the preformed S5:S11 RNA complex, incubated at elevated temperatures, yielded the estimated melting temperature, Tm\u00a0~\u00a047\u00b0C (Figure 4B). This value is in good agreement with the Tm of the identified RNA-RNA duplex, formed between S5 and S11 (Figure 3, inset, Tm\u00a0=\u00a046\u00b0C, calculated as described in Materials and methods).\n\nWe also introduced compensatory nucleotide substitutions in the putative interacting sequences of S11 and S5mut in order to test if the disrupted inter-segment contacts could be rescued by restoring the stable base-pairing between the mutated RNAs. The resulting mutated trans-complementary RNAs S5mut and comp_mutS11 strongly interacted with each other upon incubation with NSP2 (Figure 4\u2014figure supplement 1A and B). Moreover, the CCF amplitude between the trans-complementary mutant RNAs was higher than that of the interacting wild-type RNA sequences, consistent with the increased stability of the rescued RNA-RNA contacts (Figure 4\u2014figure supplements 1B, \u201318.8 kcal/mol for the S5:S11 complex and \u221223.7 kcal/mol for S5mut:S11comp). Collectively, these data demonstrate the importance of the identified sequences in the formation of stable and sequence-specific RNA-RNA contacts between S5 and S11.\n\nWe also carried out similar mutagenesis analyses for segment precursors S3 and S6 (Figure 4\u2014figure supplement 2), confirming the identified RNA-RNA interaction sites in S11 RNA. All identified sequences (Figure 3, peaks highlighted in magenta) were capable of forming stable duplexes with S11 RNA (insets in Figure 3 and Figure 3\u2014figure supplement 2), consistent with the high CCF amplitudes observed for the S3:S11 and S6:S11 complexes. Collectively, our data provide extensive experimental evidence that sequence-specific inter-molecular base-pairing mediated by NSP2 binding to viral ssRNAs, governs inter-segment interactions in RVs.\n\n## Discussion\n\nSeveral models of segmented genome encapsidation have been proposed to explain selective packaging of eleven RNAs in RVs (Patton and Spencer, 2000; Trask et al., 2012; McDonald et al., 2016). Here, we provide direct evidence of specific, inter-segment RNA-RNA interactions in RVs, by establishing experimental assays based on a combination of two-colour FCCS and an RNA-RNA SELEX. The FCCS-based assays allow rapid quantitative analyses of the stability of RNA-RNA and ribonucleoprotein complexes, providing additional information about the stoichiometry of the RNAs within such complexes. To delineate the sequences that mediate contacts between the RV ssRNAs, we have employed the RNA-RNA SELEX approach for identifying stable, specific inter-segment RNA-RNA interactions.\n\nThe data presented here collectively support the model in which RV ssRNAs can specifically interact with each other as a result of RNA remodeling brought about by the ssRNA-binding protein NSP2 (Figure 5). The results of RNA-RNA SELEX against S11 reveal multiple areas of the RNA undergoing conformational rearrangements upon NSP2 binding, while the most stable S11 intra-molecular helices H1-H3 remain largely inaccessible. This model is consistent with the high affinity of NSP2 for ssRNA, but not dsRNA, which may underlie the protein\u2019s ability to alter the kinetics of RNA-RNA hybridization by accelerating the breakdown of weaker intra-molecular helices, concomitant with the stabilization of the alternative, stable inter-molecular contacts. Substitution of NSP2 with its mutant \u0394C-NSP2 with significantly lower affinity for ssRNA reduces the efficiency of formation of inter-segment contacts, further supporting the proposed model of NSP2-mediated remodeling of RV (+)ssRNAs. Such a mechanism would account for NSP2-facilitated selection of thermodynamically favorable inter-segment interactions that may not always follow strict pairing rules. Because of the high affinity of NSP2 for ssRNA it is expected that NSP2 may remain associated with the oligomeric ssRNA complex prior its replication. Given that NSP2 inhibits the initiation of replication, but not the elongation stage (Vende et al., 2003), it is possible that the inner core protein VP2 binding to the ssRNA-NSP2 complex (Guglielmi et al., 2010; Estrozi et al., 2013; Patton, 1996) would result in the initial displacement of the NSP2 during the core assembly nucleation, followed by further eviction of NSP2 during the elongation. In this model, the assembly of the core is nucleated by multiple copies of the RV polymerase VP1 bound to eleven pre-selected (+)ssRNAs (Patton, 1996), arranged within the ssRNA-NSP2 complex at defined spatial locations. The highly basic N-terminal \u2018arms\u2019 of VP2 would interact with VP1 and ssRNA (Zeng et al., 1998; Guglielmi et al., 2010; Estrozi et al., 2013) within the ribonucleoprotein complex, which could also facilitate the formation of the VP2 lattice around it. The proposed model would account for incorporation of multiple assorted (+)ssRNAs, each associated with its own copy of the VP1 polymerase (Guglielmi et al., 2010; Patton, 1996; Periz et al., 2013). Interestingly, at high concentrations VP2 self-assembles into empty core-like particles (Crawford et al., 1994). This implies that VP2 nucleation must be tightly regulated to prevent early assembly to ensure specific packaging of eleven (+)ssRNAs (Desselberger et al., 2013; Viskovska et al., 2014). It is possible that nucleation of core assembly by (+)ssRNA complexes may occur at VP2 concentrations significantly lower, than those required for formation of empty cores (Borodavka et al., 2012). Binding of NSP2 may also contribute to the regulation of over-nucleation of VP2 on the RNA substrate (Viskovska et al., 2014). Early biochemical studies of RV assembly intermediates suggest that (+)ssRNA replication may take place within the pre-core intermediates lacking a complete VP2 shell (Gallegos and Patton, 1989). The proposed model would explain the absence of NSP2 inside the assembled virions, despite its abundance in viroplasms and high affinity for ssRNAs (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/27453/elife-27453-fig5-v2.jpg)\n\n**Figure 5.:** RV segment (+)ssRNAs (here only 3 RNAs are shown schematically as RNA1, RNA2 and RNA3) do not form stable RNA-RNA contacts with each other, consistent with the previously reported lack of oligomerization of ssRNA transcripts emerging from transcribing RV double-layered particles (Periz et al., 2013). NSP2 (doughnut-like cyan octamers) binding to ssRNAs results in their structural rearrangements concomitant with the exposure of otherwise sequestered complementary sequences (interspersed sequences shown in red, blue and green) capable of inter-segment base-pairing. The exposed complementary sequences form stable sequence-specific inter-segment contacts (RNA helices shown in red, green and blue) during the RNA assortment process. The resulting multi-RNA ribonucleoprotein complex (containing NSP2/NSP5 and multiple copies of the viral polymerase VP1/capping enzyme VP3, not shown here) may nucleate the VP2 core assembly around it. In this model, the core assembly is concurrent with further structural reorganisation of the RNA assortment complex, displacement of ssRNA-bound NSP2 octamers and (-)strand RNA synthesis by VP1.\n\nOur studies also reveal several parallels in the ways, by which segmented RNA viruses, including RVs, Bluetongue virus (BTV) and influenza A viruses (IAVs), may control selection of the correct RNA segments (Fajardo et al., 2015; Gerber et al., 2014). In BTV, multiple sites of the smallest segment S10 RNA have been shown to be involved in assortment of other genomic segments (Fajardo et al., 2015). In IAVs, genome segment packaging into virions is coordinated via interactions among the different viral RNA segments, while the sites of inter-segment interactions overlap with the coding regions of segmental RNAs (Gavazzi et al., 2013b; Gerber et al., 2014). Our data suggest that the majority of RNA-RNA interaction sites are also located within the coding regions of the RV genomic segments (Figure 4\u2014figure supplement 3). The IAV nucleoprotein (NP) has also been shown to regulate selective packaging of the viral genomic segments (Moreira et al., 2016), revealing the distinct amino acid residues of NP that are required for packaging of specific RNA segments. Interestingly, the RNA-RNA interaction assays conducted in the presence of group C rotavirus NSP2 did not yield stable inter-segment RNA contacts normally formed upon co-incubating interacting ssRNAs with group A rotavirus NSP2 (Figure 1\u2014figure supplement 5B). Previously, using a NSP2 complementation system Taraporewala et al. reported that group C NSP2 could not rescue replication in NSP2-deficient cells infected with group A RV (Taraporewala et al., 2006). Our assays present additional evidence that despite multiple structural similarities and analogous enzymatic activities, group C RV NSP2 not only fails to substitute group A RV NSP2 during assembly of viroplasms, but is also incompetent in promoting the formation of stable RNA-RNA contacts between segmental ssRNAs.\n\nInterestingly, the IAV segment ssRNAs were shown to form higher order species in vitro; however most of these interactions were only detectable upon co-incubation of the RNAs at 55\u00b0C (Gavazzi et al., 2013a). Similarly, BTV ssRNAs would also interact with each other, albeit with extremely low efficiencies, unless they were co-transcribed in vitro (Fajardo et al., 2015). Using the FCCS-based approach, we did not detect inter-segment interactions prior the incubation with NSP2, consistent with previously reported lack of association of the RNAs, emerging from the transcribing rotavirions (Periz et al., 2013).\n\nAlthough the precise mechanism of the selective packaging of eleven distinct RNAs in RVs is still largely unknown, our results pave the way for delineating the mechanistic details and the RNA sequences essential for this process. Combining our approach with a recently established reverse genetics system for RVs (Kanai et al., 2017) will ultimately move us one step closer to understanding segment selection and encapsidation in these important pathogens. However, currently the analysis of such interactions in vivo is unfeasible, mostly due to the low rescue efficiency of the rotavirus reverse genetics system, through which only a very limited number of mutated genomic sequences have been rescued at this point (T.Kobayashi, personal communication). In conclusion, the experimental approach reported here allows identification of RNA-RNA interactions without the need for cross-linking and intercalating agents, which may perturb dynamic RNA structures. It takes into account the kinetic effects of structure formation, e.g., when RNA binding is concomitant with structural changes due to binding of other RNAs, or proteins. The FCCS-based assays presented here provide instant quantitative validation of RNA-RNA interactions and probe their stabilities. This approach can be used for high-throughput screening of the conditions that favor stabilization of RNA-RNA contacts, thus providing an additional dimension to the panoply of techniques for detecting base-paired RNA nucleotides. The combination of FCCS and RNA-RNA SELEX-based approaches holds promise for validation and quantitative analyses of the interacting viral ssRNAs and miRNAs. We anticipate that these methods will become useful tools in the armory of instruments for gaining novel mechanistic insights into the dynamics of genomic RNA-RNA interactions in RNA viruses.\n\n## Materials and methods\n\n### Plasmids\n\nGenome segment precursors S1-S11 (GenBank IDs are listed in Supplementary file 2) of bovine rotavirus strain RF (G6P6[1]) were obtained as pUC19 cDNA clones (Richards et al., 2013) from Dr Ulrich Desselberger and Professor Andrew Lever (University of Cambridge, UK). Mutant RNA sequences were produced from the original pUC19 plasmids harboring S11, S5 and S6 cDNA clones using the Q5 site-directed mutagenesis kit (NEB) and the oligonucleotides listed in Supplementary file 2. A DNA sequence was designed to make an RNA template with a minimal propensity to stably form base pairs (longer than 8 bp) with S5 and S6 RNAs. S11 RNA was used as an input sequence. It was mutated into a sequence with a minimal number of substitutions required to obtain a \u2018scrambled\u2019 sequence, which has only short (maximum of 8 nt) regions of complementarity with the sequences of S5 and S6 RNAs. The \u2018scrambled\u2019 667-nt long RNA sequence, lacking extended regions of complementarity with S5 and S6 (Supplementary file 2), was cloned into a pUC19 vector, as previously described (Borodavka et al., 2016). The non-rotavirus control RNA (Non-RV) was transcribed as a 1221-nt long Satellite Tobacco Necrosis Virus (STNV) genomic RNA from the DNA template as previously described (Borodavka et al., 2012).\n\n### NSP2 and NSP5 expression and purification\n\ncDNA clone of gene 8 of rotavirus A (strain RF) was used to PCR-amplify NSP2 ORF (Supplementary file 2) with NcoI and XhoI restriction sites used for ligating the resulting double-digested NSP2-coding fragment into a linearized pET-28b vector. The resulting pET-28b-NSP2 construct was verified by sequencing and used for protein expression in BL21(DE3) E.coli as previously described (Schuck et al., 2001). NTA-affinity purified NSP2 fractions were further purified over a HiTrap SP cation-exchange column (Schuck et al., 2001). The concentrated peak fractions were resolved on a Superdex 200 10 \u00d7 300 GL column and pre-equilibrated with RNAse-free SEC buffer (25 mM HEPES-Na, pH 7.5, 150 mM NaCl) to ensure high purity and homogeneity of the preparation. Rotavirus group C NSP2 (strain Bristol) was expressed from pQE60g8C construct and purified, as described in Taraporewala et al. (2006). Bovine rotavirus A (strain RF) protein NSP5 was expressed and purified as previously described in (Martin et al., 2011). A plasmid for expression of the C-terminally truncated NSP2 variant \u0394C-NSP2 was constructed using pET-28b-NSP2 vector by removing C-terminal residues 295\u2013317 (Hu et al., 2012). The resulting \u0394C-NSP2 variant was expressed and purified following the purification procedures for a full-length NSP2, as described above.\n\n### RNA transcription and labeling\n\nRNA transcripts were produced by in vitro transcription of linearized DNA templates (Supplementary file 2) using the HiScribe T7 RNA synthesis kit (NEB). Transcribed RNAs were purified using RNeasy columns (QIAGEN). All in vitro transcription reactions were carried out using the T7 RNA transcription kit (NEB), following the manufacturer\u2019s protocol, except for the fluorescently labeled or biotinylated RNA samples. RNA transcripts were labeled by introducing 5\u2032-aminoallyl-uridine-5\u2032-triphosphate (5-AA-UTP, Thermo Fisher) during the in vitro transcription. Similar uridine derivatives with substituents at the fifth carbon have been previously shown to support the replication of RVs (Silvestri et al., 2004). This minimally perturbing RNA labeling approach results in only few 5-AA-uridines incorporated per each transcript. Such a labeling strategy minimizes the influence of fluorescence quenching or F\u00f6rster Resonance Energy Transfer (FRET) between the reporter dyes on the apparent cross-correlation amplitudes (Foo et al., 2012). For labeling, amine-modified RNAs were produced by incorporating 5\u2032-aminoallyl-uridine-5\u2032-triphosphate (5-AA-UTP) (3:1 ratio UTP:5-AA-UTP) during T7 transcription (Borodavka et al., 2012). Amine-modified RNAs (1\u20132 \u03bcM), in a total volume of 100 \u03bcL, RNAse-free 100 mM sodium borate buffer (pH 8), were reacted with 1 mM ATTO647- or ATTO565-NHS ester for 2 hr at 4\u00b0C. Under physiological conditions, the chosen dyes are characterized by zero net charge, relatively high hydrophilicity and high photo- and thermal stabilities, important for RNA melting experiments. Fluorescently labeled and biotinylated RNAs were purified using RNeasy columns, as previously described (Borodavka et al., 2012). RNA labeling efficiencies were routinely examined spectrophotometrically (Borodavka et al., 2012). Based on the estimated labeling efficiencies, typically 85% of all RNA molecules contained 1\u20136 dye molecules and less than 2% of RNAs were unlabeled. RNA biotinylation was carried out under similar conditions except EZLink Sulfo-NHS-LC-LC-biotin was used in lieu of NHS-esters of ATTO dyes. Further purification of biotinylated RNAs was carried out following the purification protocol used for dye-labeled RNAs (see above). All RNA samples were routinely examined on denaturing formaldehyde agarose gels to ensure their integrity (Figure 2\u2014figure supplement 2B and C).\n\n### Fluorescence cross-correlation spectroscopy (FCCS)-based assays of RNA-RNA interactions\n\nFor FCCS, to minimize any potential RNA self-association (Figure 2\u2014figure supplement 2D), all RNA samples were heat-annealed for 5 min at 70\u00b0C in 10 mM HEPES-Na, pH 7.4, slowly cooled and diluted in an assay buffer (100 nM \u2013 1 \u03bcM RNA in 20 mM HEPES-Na, pH 7.4, 1 mM MgCl2, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT).\n\nReactions were set up with equimolar amounts of ATTO647-dye labeled S11 RNA or \u2018scrambled\u2019 or mutated S11 RNA sequence and ATTO565-dye labeled RNA Sx (where x is any other interacting RNA partner). RNA samples were mixed in reaction buffer (0.1\u20132.5 \u03bcM total concentration) and allowed to interact for 30 min at 37\u00b0C. For NSP2-mediated RNA-RNA-interaction assays, labeled RNA samples (150 nM total RNA concentration) were incubated with 2.5\u201310 \u03bcM NSP2 (or 2.5\u201310 \u00b5M BSA for control reactions). Reactions were allowed to proceed at 37\u00b0C for 30 min before they were stopped by diluting RNA samples into assay buffer, as discussed above, to achieve a final concentration of labeled RNAs of 1 nM (each strand). These samples were further allowed to equilibrate at 25\u00b0C for 15 min prior to FCCS measurements. Proteinase K digestion of NSP2 was performed by adding 40 \u03bcg of proteinase K (800 U/ml) to the NSP2-RNA samples and incubating them for 30 min at 37\u00b0C, as previously described (Taraporewala and Patton, 2001), prior to dilution into assay buffer as described above. Temperature melting experiments were performed by measuring the FCCS amplitudes of the pre-formed S5:S11 RNA-RNA complex (1 nM each RNA strand), treated with proteinase K. S5:S11 RNA-RNA complex was diluted into an assay buffer without MgCl2. The diluted RNA samples (1 nM of each strand) were incubated at 37-70\u00b0C for 15 min, after which they were slowly cooled down to 25\u00b0C prior to FCCS measurements. S10 RNA oligonucleotide hybridization assay was performed by heat-annealing RNA substrates (200 nM of ATTO647-labeled S10 RNA and Cy3-labelled RNA oligonucleotide Seq11_84_100, as described in Supplementary file 2) for 5 min at 70\u00b0C in 100 mM NaCl, 20 mM HEPES-Na buffer, pH 7.4, and slowly cooling down and diluting the complexes in assay buffer as described above.\n\n### Dual-color fluorescence cross-correlation spectroscopy (FCCS) data acquisition and analysis\n\nDual-color fluorescence cross-correlation spectroscopy is a technique that allows sensitive detection of interactions of differently labeled molecules at low concentrations, typically with single-molecule sensitivity (Figure 1\u2014figure supplement 1). FCCS detects coincident fluctuations in both the green and red channels. The amplitude of the cross-correlation function (CCF) is proportional to the number of double-labeled complexes and inversely proportional to the average number of labeled species in each individual channel (i.e., red and green). Therefore, the fraction of double-labeled species in a sample can be extracted from the ratio of the amplitudes of the cross-correlation (CCF) to the auto-correlation functions (ACF). Conventionally, in dual-color FCCS, the signal from differently labeled molecules is divided into channels by emission (e.g., via dichroic mirrors and filters) (Schwille et al., 1997; Bacia and Schwille, 2007). Due to spectral crosstalk, an artificial cross-correlation signal can be observed between the two channels, even when the different species do not interact. When using pulsed interleaved excitation (PIE) in combination with the high temporal resolution of time-correlated single photon counting (TCSPC), the signals can be further divided by the excitation source. This removes the influence of the crosstalk and greatly enhances both the sensitivity and specificity of this technique (M\u00fcller et al., 2005).\n\nFCCS measurements of ATTO647, and ATTO565 or Cy3-dye labeled RNAs were performed on a custom-built confocal microscope with time-correlated single photon counting (TCSPC) detection designed for pulsed interleaved excitation (PIE), as previously described (M\u00fcller et al., 2005). Two pulsed lasers at 561 nm (frequency-doubled fiber laser, Toptica Photonics) and 635 nm (diode laser LDH-P-C-635b, Picoquant) with a fixed repetition rate of 27.4 MHz were used for excitation with the laser power set to 10 \u03bcW, as measured before the objective. The emission of the red laser was delayed electronically by 20 ns with respect to the yellow laser to achieve pulsed interleaved excitation. A 60x, 1.27 NA objective (Plan Apo IR 60\u00a0\u00d7\u00a0WI, Nikon) was used both to focus the excitation light and to collect the fluorescence. The fluorescence was focused on an 80 \u03bcm pinhole to remove out-of-focus light. Green and red emission signals were spectrally separated and focused on two single photon avalanche photodiodes (APDs). The photon detection signals of each APDs are timed and recorded with separate TCSPC cards (SPC-150, Becker and Hickl).\n\nData analysis and processing were performed using a custom-written Matlab-based data processing platform PAM (PIE Analysis with Matlab, https://gitlab.com/PAM-PIE/PAM; a copy archived at https://github.com/elifesciences-publications/PAM-PIE-PAM), which includes tools for processing single point data collected using PIE (Schrimpf et al., 2017).\n\nThe ACFs and CCFs were fit with a one-component model showing dark state dynamics (Bacia and Schwille, 2007):\n\n$$\nG(\\tau)=\\frac{\\gamma}{N}\u22c5(1+\\frac{T}{1\u2212T}\u22c5e^{\u2212\\frac{\\tau}{t_{T}}})\u22c5\\frac{1}{1+\\frac{4D\\tau}{\\omega_{r}^{2}}}\u22c5\\sqrt{\\frac{1}{1+\\frac{4D\\tau}{\\omega_{z}^{2}}}}+G(\u221e)\n$$\n\nHere, N is the number of individually diffusing molecules in the focus volume, D is the diffusion coefficient, and \u03c9r and \u03c9z are the distances from the center of the focus to the point where the fluorescence intensity has decayed to 1/e2 of the maximum intensity for the lateral and axial dimensions, respectively. T and tT denote the dark state fraction and the correlation time, respectively. G(\u221e) is a constant offset accounting for slow signal fluctuations. The geometric factor, \u03b3, accounts for gradual intensity decrease of the assumed 3D Gaussian shape of the observation volume and is 0.35355. The CCF amplitudes were normalized by the N, measured for the ATTO647 labeled S11 RNA (or its mutated variants, including the \u2018Scrambled\u2019 RNA sequence). These normalized CCFs yield the fraction of the interacting ATTO565- and ATTO647-dye labeled ssRNAs. Thus, the fraction of interacting species is only an estimate of the absolute CCF value, as the stochastic labeling of the RNAs leads to the non-trivial weighting of a different number of fluorophores. In the case of complete binding with 1:1 stoichiometry, the ratio of the CCF/ACF amplitudes is expected to be close to one (Foo et al., 2012). The lower absolute CCF amplitudes are attributed to small differences in the observation volumes for red and green fluorophores.\n\nRNA samples were measured at least three times, and the photon data were acquired for 10\u201315 min (or up to 45 min when the stability of the preformed RNA-RNA complexes were investigated). The resulting ACF and CCF amplitudes were averaged, yielding mean CCF amplitudes reported here.\n\n### RNA-RNA SELEX (systematic evolution of ligands by EXponential enrichment)\n\nA na\u00efve 30-mer RNA library (N30) consisting of\u00a0~3.6\u00d71013 N30 random sequences flanked by primer sequences for RT-PCR amplification and transcription was produced by in vitro T7 transcription from a DNA template (Supplementary file 2). It was purified on Agencourt AMPure beads (Beckman) following the manufacturer\u2019s protocol. Biotinylated S11 RNA target was prepared as described above. RNA target (200 nM) was heat-annealed for 5 min at 70\u00b0C in a low ionic strength buffer (10 mM HEPES-Na, pH 7.4), and slowly cooled to room temperature to minimize its oligomerization (Li et al., 2010). A na\u00efve N30 RNA library (10 \u03bcM), re-suspended in SB buffer (10 mM HEPES-Na, pH 7.2, 150 mM NaCl, 1 mM DTT, 1 U/\u03bcL murine RNAse inhibitor (NEB), 1 mM MgCl2, 0.1 mg/ml bovine serum albumin, BSA) was incubated with the S11 RNA target for 15 min at 37\u00b0C, either in the absence (RNA alone selection) or presence of 10 \u03bcM NSP2 (NSP2\u00a0+selection). 20 \u03bcL of RNAse-free Dynabeads MyOne Streptavidin T1 beads (Invitrogen) were re-suspended in SB buffer and added to the S11 RNA samples followed by further incubation at 37\u00b0C for 15 min. Captured RNA targets with bound 30-mer RNAs were washed with SB buffer (200 \u03bcl) 4 times for 10 min at 37\u00b0C during the first 3 rounds of selections, and the stringency of selection was increased after round 3 by increasing the number of washes up to 8 per round. Negative selections were carried out at every second round of SELEX using streptavidin-coated beads. S11-bound 30-mers were recovered by heat-elution (95\u00b0C, 5 min) of the RNAs from carrier beads into 30 \u03bcl of RNAse-free water. Eluted RNA libraries were reverse-transcribed using Superscript III Reverse Transcriptase (Thermo Scientific) and primer P1, and further PCR-amplified using primers P1 and P2 (Supplementary file 2). PCR-amplified SELEX-enriched cDNA libraries were analyzed by native PAGE after each group of two rounds of selection to confirm the presence of selected products for the next round of in vitro transcription and selection. In the final selection round, the resulting PCR products were prepared for Illumina MiSeq sequencing (LIMM DNA Sequencing Facility, University of Leeds).\n\n### Identification of sites of RNA-RNA interactions\n\nWe identified 4,857,793 unique sequences from the RNA alone SELEX data and 3,308,107 sequences from the NSP2+-enriched data. The lower number of the unique sequences from the NSP2\u00a0+selection is due to selective enrichment of certain RNA sequences in the presence of NSP2. Each sequence from both data sets was aligned against all 10 segments (S1-10) and the single best alignment was identified using a probabilistic score (the Bernoulli score), which benchmarks the probability of a non-contiguous alignment to that of a contiguous alignment of N nucleotides (Shakeel et al., 2017). Thus, a 30-nt long RNA sequence, which aligns to the genomic segment with a total of N non-contiguous matches (N\u00a0\u2264\u00a030), will have a Bernoulli score of N. The score N is equivalent to the probability that a short sequence of N nucleotides would match the sequence of the genomic segment (Shakeel et al., 2017). We used the alignments with the Bernoulli score of 12 or above to analyze sequences that strongly interact with S11 RNA to identify highly accessible areas in S11 RNA. Higher scores (14 or above) increase the stringency of the analysis (see Figure 3\u2014figure supplement 1). We used RNA sequences with Bernoulli scores of 12 and above (for alignments against S11 RNA target) or 14 and above (for other RNA segments) to construct histogram plots for each genomic segment S1-S10. The histogram bins are associated with individual nucleotides in each segment. Each sequence aligning to a nucleotide increments the histogram bin by one, so that the peak height corresponds to the number of sequences aligning to it. This approach allows identification of multiple RNA sequences that strongly interact with S11 RNA, including RNAs not fully matching the S1-S10 genomic sequences to account for nucleotide mismatches and possible gapped regions. We used the areas of high sequence alignments to identify regions that have a high probability of being single-stranded. These data were used as constraints for computing secondary structures of S11 RNA, with and without NSP2, using Mfold (Zuker, 2003).\n\n### Circular Dichroism (CD) Spectroscopy of S11 RNA\n\nCD spectra were acquired between 240 nm and 320 nm in a 1 cm-long path cell, as previously described (26). CD spectra were recorded for the S11 RNA (200 nM in 10 mM HEPES-Na, pH 7.6) before and after incubation with either 10 \u00b5M NSP2 or RNAse-free acetylated bovine serum albumin (BSA, New England Biolabs) for 15 min. RNA secondary structure transitions upon thermal melting were also monitored at various temperatures up to 90oC.\n\n### RNA structure analysis and visualization\n\nRNA secondary structures were predicted using minimum free energy (MFE) modeling in RNAfold to compute the thermodynamic ensemble of secondary structures and base-pairing probabilities. The centroid structures showing minimal base-pair distances to all other secondary structures in the Boltzmann ensemble were analyzed in order to identify regions of high and low accessibilities within S1-S10 RNAs. Similarly, the MFE structure of S11 RNA was calculated in Mfold (RRID:SCR_008543) with the folding restraints derived from the RNA-RNA SELEX experiments. Differences in target RNA accessibilities were expressed as a normalized number of sequence alignments in the presence of NSP2, after subtracting alignments, identified in the S11 structure alone. These values were used to calculate a color map, applied to the S11 RNA structure, shown in Figure 2C.\n\nRNA structures were visualized in VARNA (Darty et al., 2009), and jVizRNA 2.0 was used for generating secondary structure circular plots (Wiese et al., 2005). The free energies of hybridization of the interacting sequences were calculated using IntaRNA (Freiburg RNA tools) with the ensemble free energy calculations realized in Vienna RNA library (Lorenz et al., 2011; Wright et al., 2014). Duplex melting temperature (Tm) calculations were performed using nearest-neighbor parameters implemented in MELTING v.5.0 (56), estimated for 1 nM RNA strand concentration using the parameters matching the low-salt buffer conditions, used for FCCS measurements, as described above.\n",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "6a79f64e-7be2-498c-8e0e-6e463809055f",
+      "submission_id": "829af0c0-5a1d-447a-b6bb-d17836373824",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27453.039](https://doi.org/10.7554/eLife.27453.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Protein-mediated RNA folding governs sequence-specific interactions involved in genome segment selection in rotaviruses\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wenhui Li as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Bidadi Venkataram Prasad (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript tries to address the fascinating and complex question of how eleven segments of RNA are selected for subsequent encapsidation in rotavirus. Rotavirus is a member of the Reoviridae. A common feature is that these viruses encapsidate 9\u201312 segments of dsRNA; rotaviruses, in particular, have 11 dsRNA segments. How these viruses in the Reoviridae selectively package a correct set of RNA segments has been an unanswered question. Borodavka et al., present an interesting set of experiments to address how the 11 segments of the rotavirus RNA genome are selected for packaging into virions. The data suggest that the rotavirus non-structural protein NSP2 remodels viral ssRNA to facilitate the formation of stable inter-segment contacts. In particular, authors show that segment S11 (smallest of the segments) interacts with S10 and this association is further stabilized by the presence of other RNA segments and that S11 preferentially binds to S3, S5, and S6. Authors further show that these specific inter-segmental interactions result in the formation of an RNA oligomer which remains stable even in the absence of NSP2, thus suggesting that the role of NSP2 is to promote such specific inter-segmental contacts and facilitate the formation of an RNA oligomer presumably containing the correct set of 11 segments for subsequent packaging. Using RNA SELEX methods authors have mapped the sequences in S11 that are likely involved in the inter-segmental RNA-RNA base-pairing, which were further substantiated selective mutating the contact regions. Overall this is an elegant study, well designed, presenting novel experimental approaches. Previous studies have suggested or speculated the possibility of such interactions as a requirement of selective packaging of RNA segments, however, this is perhaps the first study to demonstrate the possibility of such inter-segmental interactions in the case of rotavirus.\n\nOverall, this is a very nice paper demonstrating the possibility of specific inter-segmental interactions among rotavirus RNAs that is promoted by NSP2 using a clever combination of various techniques. It is unfortunate that the reverse genetics system published recently for rotaviruses is not sufficiently robust to address the functional relevance of the identified interactions. However, even in the absence of such data, the current manuscript makes a significant step towards uncovering the molecular basis of RNA packaging in rotaviruses and the presented methodologies will be useful for analysing RNA packaging mechanisms in other segmented negative strand RNA viruses.\n\nEssential revisions:\n\nThe data in Figure 4 would be considerably strengthened by showing that interactions between S5:S11mut can be recovered by compensatory mutations in S5 and, vice versa, that S5mut:S11 interactions can be recovered by compensatory mutations in S11. Similar interaction 'rescue' experiments could be carried out for the S3:S11 and S6:S11 pairs presented in Figure 4\u2014figure supplement 1.\n\nOne major concern of this paper is the lack of in vivo validation for the observations made, and a lack of a well-reasoned model for how the formation of the higher-order ssRNA-oligomer allows itself for replication, duplex formation, and packaging. As noted above, we understand that in vivo validation is not practical at this point. Still, there are several questions (some of which could be addressed by in vitro experiments as well) such as for example 1) given that NSP2 strongly interacts with NSP5 in the viroplasm (and perhaps with other proteins including VP1 and VP2), how do these interactions affect NSP2-RNA interactions and RNA remodeling? Can the experiments be done in the presence of both NSP2 and NSP5? Do NTPase/RTPase activities of NSP2 play a role in RNA-RNA interactions or remodeling? This can be tested perhaps by using a mutant of NSP2 that lacks NTPase/RTPase activities? Addition of NSP5 and/or elucidation of potential roles of NTPase/RTPase activities would greatly strengthen the manuscript by making the measurement and analysis more physiologically relevant.\n",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81524d2d-e8ac-42ed-ba2b-3df54d1bca86",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C1",
+      "claim": "Rotavirus genomes comprise eleven double-stranded RNA segments that are co-packaged into each infectious virion.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes of rotaviruses (RVs), and other pathogens of the Reoviridae family, comprise nine to twelve double-stranded (ds)RNA segments, co-packaged into each infectious virion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Introduction section of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "7b0e3dd0-4069-43b4-88dc-b8114c47793d",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C2",
+      "claim": "RNA assortment in rotaviruses occurs within cytoplasmic inclusion bodies termed viroplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA assortment process, during which a single distinct positive-sense ssRNA copy of each of the genomic segments is selected for packaging and replication, occurs within cytoplasmic inclusion bodies termed viroplasms (Patton and Spencer, 2000; Trask et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Patton and Spencer, 2000; Trask et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3b2356c2-5672-4cef-a7ab-f93b32996b46",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C3",
+      "claim": "NSP2 and NSP5 are essential components of viroplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple copies of viral RNAs and proteins accumulate in viroplasms, of which the non-structural ssRNA-binding proteins NSP2 & NSP5 are essential components (Patton and Spencer, 2000; Trask et al., 2012; Taraporewala and Patton, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "54e6b623-2d5c-4bb0-95d0-016ed244efd8",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C4",
+      "claim": "Current views suggest that selection of correct genomic segments is governed by inter-segment RNA-RNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Current views of the mechanisms of segment assortment are based on the idea that selection of the correct genomic segments is governed by inter-segment RNA-RNA interactions (Gavazzi et al., 2013a; Gavazzi et al., 2013b; Fajardo et al., 2015; McDonald et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "ef68513a-9e1c-4c31-b269-70423bc03af4",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C5",
+      "claim": "A full set of eleven genomic ssRNAs does not associate into a higher order RNA complex in the absence of NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "A full set of S1-S11 ssRNAs does not associate into a higher order RNA complex (cross-correlation function amplitude, CCF \u2248 0, shown as a dashed magenta line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1A, where the CCF amplitude is approximately zero in the absence of NSP2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "79577e5a-eb0c-42e5-aad3-cc376fd957eb",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C6",
+      "claim": "Incubation of eleven genomic ssRNAs with NSP2 results in strong interaction between S10 and S11.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, incubation of the mixture of all eleven genomic ssRNAs in the presence of NSP2 results in a strong interaction between S10 and S11 (high amplitude of CCF shown in blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1A, where the CCF amplitude is high in the presence of NSP2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "924cc208-2682-4afb-8c64-2393397e0041",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C7",
+      "claim": "S11 RNA preferentially binds to segments S3, S5, and S6 in the presence of NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest pairwise interactions of S11 were observed for segments S3, S6 and S5, with CCF amplitudes similar to those, observed for the S11:S10 complex, incubated in the presence of S1-S9 RNAs (CCFs ~ 0.5, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "006647d5-4e47-4fcc-91bb-87c6560961d1",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C8",
+      "claim": "NSP2 binding to ssRNAs results in structural reorganization of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that binding of the rotavirus-encoded non-structural protein NSP2 to viral ssRNAs results in the remodeling of RNA, which is conducive to formation of stable inter-segment contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the Abstract and supported by RNA-RNA SELEX data and CD spectroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "059d0dc0-7088-4cfe-ac27-4116166377bd",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C9",
+      "claim": "NSP5 binding to ssRNAs does not promote formation of stable S5:S11 RNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its ssRNA-binding activity, incubation of NSP5 with ssRNAs S5 and S11 at saturating amounts did not yield any detectable cross-correlation (Figure 1\u2014figure supplement 3B), indicating that NSP5 binding to ssRNAs did not promote the formation of a stable S5:S11 RNA complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "61256241-ddf5-4f05-8b4d-90a831a309c3",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C10",
+      "claim": "Co-incubation of NSP2 with sub-micromolar amounts of NSP5 results in decreased S5:S11 CCF amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, co-incubation of NSP2 in the presence of sub-micromolar amounts of NSP5 resulted in a marked decrease of the S5:S11 CCF amplitude, compared to the NSP2 incubation alone (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "f129ae0a-0134-476e-a492-0602519c79f2",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C11",
+      "claim": "Addition of 1 mM ATP does not affect RNA binding by NSP2 octamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 1 mM ATP did not affect RNA binding by NSP2 octamers (Figure 1\u2014figure supplement 4A), nor had it any effect on the apparent S11:S5 CCF amplitude (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "31c501fa-fadd-4bd7-83da-1baccf0ece59",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C12",
+      "claim": "Inter-segment RNA contact formation is not coupled to ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these data suggest that inter-segment RNA contact formation is not coupled to ATP hydrolysis and thus most likely to be dependent on the ssRNA-binding activity of NSP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the ATP addition experiments showing no effect on RNA-RNA interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8f2e51ff-f2bc-4f95-9729-52ffeff50615",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C13",
+      "claim": "C-terminally truncated NSP2 mutant (\u0394C-NSP2) has significantly reduced affinity for ssRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate this, we examined the interactions between S5 and S11 RNAs co-incubated with a C-terminally truncated NSP2 mutant (\u0394C-NSP2) with a significantly reduced affinity for ssRNA (Hu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research (Hu et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "08c39644-d5cc-40e9-8ad0-13d47ea5c0cf",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C14",
+      "claim": "\u0394C-NSP2 shows reduced efficiency in promoting S5:S11 RNA-RNA interactions compared to full-length NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the apparent CCF amplitude between S5 and S11 was significantly reduced when the full-length NSP2 was replaced with \u0394C-NSP2 (Figure 1\u2014figure supplement 5A, CCFs in blue and magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "91ec2e5e-b325-41d5-b756-6bd0ce57aaba",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C15",
+      "claim": "Rotavirus group C NSP2 cannot substitute for rotavirus group A NSP2 in promoting inter-segment RNA-RNA contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "A drastic reduction of the CCF amplitude between S5 and S11 ssRNAs was also observed when rotavirus group A NSP2 was substituted with NSP2 from rotavirus group C (Figure 1\u2014figure supplement 5B), despite the apparent structural resemblance and similar enzymatic activities of both proteins (Hu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "aca1c842-4179-4339-9a4c-c2afefe8152d",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C16",
+      "claim": "Inter-segment interactions remain stable after removal of NSP2 by proteinase K digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "These highly diluted NSP2-free RNA-RNA complexes remained stable at 37\u00b0C for extended periods of time (>30 min, Figure 1\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 6A after proteinase K treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "ad20ee34-e534-4360-bda4-413dd710b1a3",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C17",
+      "claim": "Heat-annealed S11 and S5 RNAs strongly interact with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "As a further control, we made a protein-free RNA-RNA complex S11:S5 by heat-annealing a mixture of fluorescently labeled RNAs S11 and S5 (Materials and methods), and examined it by FCCS. Both heat-annealed RNAs strongly interacted (Figure 1\u2014figure supplement 6B), yielding an apparent Rh ~13\u201317 nm typical for a proteinase K-digested complex S11:S5 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 6B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "9ff5ffe0-3495-40ae-a372-4ebe43ae1f77",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C18",
+      "claim": "Inter-segment interactions are mediated by direct RNA-RNA contacts rather than protein-mediated bridging.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data strongly support the view that inter-segment interactions mediated by binding of NSP2 remain stable after removal of NSP2 due to the formation of new, specific inter-molecular RNA contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the stability of RNA-RNA complexes after NSP2 removal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8c84397e-caab-4d46-a0d9-6df91184f5ea",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C19",
+      "claim": "RNA-RNA SELEX reveals multiple areas of S11 RNA undergoing conformational rearrangements upon NSP2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of RNA-RNA SELEX against S11 reveal multiple areas of the RNA undergoing conformational rearrangements upon NSP2 binding, while the most stable S11 intra-molecular helices H1-H3 remain largely inaccessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-RNA SELEX data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "5e55ef44-6357-40fe-9901-0eefbef02895",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C20",
+      "claim": "The conserved helices H1-H3 in S11 RNA remain stable upon NSP2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall architecture of S11, including stable helices H1-H3, was not affected by NSP2 binding (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-RNA SELEX data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "5b1fc3a1-89bd-4136-9530-2c60a4c05850",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C21",
+      "claim": "NSP2 binding to S11 RNA results in destabilization of RNA secondary structure as shown by circular dichroism spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive 260\u2013265 nm band decreases in response to increasing amounts of NSP2 (Figure 2\u2014figure supplement 2B, shown in blue), or thermal melting (shown in red), indicating that the global helical RNA fold is destabilized by NSP2 binding, consistent with the structural rearrangements due to NSP2-mediated RNA unfolding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CD spectroscopy data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "9cdf329d-918f-4c72-97aa-6f3e1b4932b1",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C22",
+      "claim": "Sequences within S3, S5, and S6 RNAs can stably base-pair with S11 RNA with free energy changes ranging from -15.3 to -19.1 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified sequences within S3, S5 and S6 RNAs can stably base-pair with S11 RNA (\u0394G = \u221215.3 to \u221219.1 kcal/mol, Figure 3, insets and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by thermodynamic calculations shown in Figure 3 insets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "1098cad0-7d3d-45af-867c-49892279f392",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C23",
+      "claim": "Mutations disrupting inter-molecular base-pairing between S11 and S5 result in dramatic reduction of CCF amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of either RNAs with its mutated counterpart (S11mut or S5mut) resulted in a dramatic reduction of the CCF amplitude (Figure 4A, red and blue dotted lines), while the wild-type S5 and S11 RNAs formed stable complexes in the presence of NSP2 (Figure 4A, solid green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 4A with mutated RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "bfcda7db-1308-4831-8f66-afc5ffed9425",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C24",
+      "claim": "The melting temperature of the S5:S11 RNA complex is approximately 47\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The FCCS analysis of the preformed S5:S11 RNA complex, incubated at elevated temperatures, yielded the estimated melting temperature, Tm ~ 47\u00b0C (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temperature melting experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "24beff6e-e987-4ff4-90a5-aaf19987b925",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C25",
+      "claim": "Trans-complementary mutant RNAs S5mut and comp_mutS11 strongly interact with each other upon incubation with NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting mutated trans-complementary RNAs S5mut and comp_mutS11 strongly interacted with each other upon incubation with NSP2 (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "2043b10a-38d7-47bb-8a40-45edb58415f7",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C26",
+      "claim": "The CCF amplitude between trans-complementary mutant RNAs is higher than that of wild-type RNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the CCF amplitude between the trans-complementary mutant RNAs was higher than that of the interacting wild-type RNA sequences, consistent with the increased stability of the rescued RNA-RNA contacts (Figure 4\u2014figure supplements 1B, \u201318.8 kcal/mol for the S5:S11 complex and \u221223.7 kcal/mol for S5mut:S11comp).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data and thermodynamic calculations shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "b5a85cd1-3e79-4fdf-9898-4c59dbeb89fe",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C27",
+      "claim": "Sequence-specific inter-molecular base-pairing mediated by NSP2 binding governs inter-segment interactions in rotaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data provide extensive experimental evidence that sequence-specific inter-molecular base-pairing mediated by NSP2 binding to viral ssRNAs, governs inter-segment interactions in RVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "a61c5e23-d213-4da6-b88f-9ef0c4240a22",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C28",
+      "claim": "NSP2 has high affinity for ssRNA but not dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with the high affinity of NSP2 for ssRNA, but not dsRNA, which may underlie the protein's ability to alter the kinetics of RNA-RNA hybridization by accelerating the breakdown of weaker intra-molecular helices, concomitant with the stabilization of the alternative, stable inter-molecular contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on known properties of NSP2 and is used to explain the observed RNA remodeling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "f49612c0-655e-41b2-a647-be87ceda4d16",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C29",
+      "claim": "NSP2 inhibits the initiation of replication but not the elongation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that NSP2 inhibits the initiation of replication, but not the elongation stage (Vende et al., 2003), it is possible that the inner core protein VP2 binding to the ssRNA-NSP2 complex (Guglielmi et al., 2010; Estrozi et al., 2013; Patton, 1996) would result in the initial displacement of the NSP2 during the core assembly nucleation, followed by further eviction of NSP2 during the elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3f000613-2617-4656-9ddc-7ab71e4e5204",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C30",
+      "claim": "The majority of RNA-RNA interaction sites are located within the coding regions of RV genomic segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the majority of RNA-RNA interaction sites are also located within the coding regions of the RV genomic segments (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the mapping of interaction sites shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "b74132a4-db54-4f65-996a-34f7f5c9b78e",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C31",
+      "claim": "Rotavirus group C NSP2 fails to substitute group A RV NSP2 during assembly of viroplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, using a NSP2 complementation system Taraporewala et al. reported that group C NSP2 could not rescue replication in NSP2-deficient cells infected with group A RV (Taraporewala et al., 2006). Our assays present additional evidence that despite multiple structural similarities and analogous enzymatic activities, group C RV NSP2 not only fails to substitute group A RV NSP2 during assembly of viroplasms, but is also incompetent in promoting the formation of stable RNA-RNA contacts between segmental ssRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research and the authors' own FCCS data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "4269552e-8fa3-44d7-87e2-3766fd14599d",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C32",
+      "claim": "RV ssRNAs do not form higher order species in vitro without NSP2 or heat-annealing.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the FCCS-based approach, we did not detect inter-segment interactions prior the incubation with NSP2, consistent with previously reported lack of association of the RNAs, emerging from the transcribing rotavirions (Periz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FCCS data and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "7df951b8-6255-4bad-b385-e74a43a2f811",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C33",
+      "claim": "Both NSP2 and NSP5 are capable of binding short ssRNA with nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NSP2 and NSP5 were capable of binding a short 18-nt long ssRNA with nM affinity, yielding the apparent hydrodynamic radii, Rh, closely matching the sizes of NSP2 octamers (Schuck et al., 2001), or NSP5 decamers (Martin et al., 2011), respectively (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCS data shown in Figure 1\u2014figure supplement 3A and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "2248d7e1-30d9-4612-9b9a-5ce1b3fd6da4",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C34",
+      "claim": "NSP2 octamers can bind two differently labeled ssRNAs simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-zero CCF (blue circles) suggest that both differently labelled RNAs may bind a single NSP2 octamer with high affinity, consistent with the previously reported binding of two 20-mer RNAs per single NSP2 octamer (Schuck et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 1\u2014figure supplement 4A and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3b32ac56-25cc-435f-9a42-5cce893d75c2",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C35",
+      "claim": "The apparent hydrodynamic radius of S11 RNA is approximately 9 nm after heat-annealing.",
+      "claim_type": "EXPLICIT",
+      "source": "The S11 ssRNA, after heat annealing, has a smaller hydrodynamic radius (Rh ~ 8 nm) compared to non-heat treated RNA (~13 nm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCS measurements described in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "275aa2e5-eb97-42ca-9f12-2f270ebd26bb",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C36",
+      "claim": "Prolonged incubation of S11 RNA in the presence of 10 mM Mg2+ leads to RNA oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "A prolonged incubation of s11 RNA in the presence of 10 mM Mg2+ leads to an increase of Rh, indicating RNA oligomerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCS data described in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "b61af760-a574-48eb-b88a-9ffd4915010a",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C37",
+      "claim": "The apparent hydrodynamic radius of NSP2-bound S11 and S10 RNAs is approximately 30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the resulting ACFs and the CCF confirms that both NSP2-bound RNAs have similar hydrodynamic radii, Rh ~30 nm, significantly larger than the protein-free S11 and S10 ssRNAs (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FCCS analysis data referenced in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "161c17b8-8f5a-491f-a4ae-8cecc10274cb",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C38",
+      "claim": "The apparent CCF amplitudes between S11 and other segment RNAs are not proportional to the length or size of the interacting RNA partner.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent CCF amplitudes between S11 and any other segment RNA are not proportional to the length or the size of the interacting RNA partner (Supplementary file 1), suggesting that it is the RNA sequence, rather than its size, that is important for S11 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from FCCS data analysis comparing CCF amplitudes with RNA sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "2fd71ab0-306d-46db-b6cb-9c3413ba126b",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C39",
+      "claim": "Omitting S1-S9 RNAs from the reaction significantly decreases the apparent CCF amplitude between S11 and S10 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Omitting S1-S9 RNAs from the reaction significantly decreased the apparent CCF amplitude between S11 and S10 RNAs (Figure 1, cf. panels A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of FCCS data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "889e5e3c-65e4-422c-bea8-3894168b2103",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C40",
+      "claim": "The S11:S10 interaction involves additional RNAs that may be required to form a larger supramolecular complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the observed S11:S10 interaction involves additional RNAs that may be required to form a larger supramolecular complex (Trask et al., 2012; Gavazzi et al., 2013a; Gavazzi et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that omitting S1-S9 reduces S11:S10 interaction, and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "b0441b1a-7928-4616-828b-f05dc561fb8c",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C41",
+      "claim": "RNA-RNA SELEX can identify multiple RNA-binding sites present in S11 RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the recovered sequences allows identification of multiple RNA-binding sites present in S11 RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-RNA SELEX methodology and results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "718d57d2-3900-4101-8285-b5849f374ebc",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C42",
+      "claim": "The majority of newly formed RNA-binding sites in S11 upon NSP2 binding are located near loop regions and helical junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the majority of the newly formed RNA-binding sites were located near the loop regions and helical junctions of the RNA (Figure 2C), potentially reflecting the sites of preferential binding of NSP2 to S11 RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-RNA SELEX data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8acc216c-bbdb-400d-9b76-fa8ff5e60a4f",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C43",
+      "claim": "There is a positive correlation between the abundance of S11-interacting sequences in S1-S10 and the respective CCF amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a positive correlation between the abundance of S11-interacting sequences present in S1-S10 and the respective CCF amplitudes (Figure 1B and Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "0c1a1e81-a289-4669-aef9-d3a34ad2cd7c",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C44",
+      "claim": "The identified sequence within S10 RNA (region 272-288) is sequestered and has low accessibility for base-pairing with S11 RNA in the presence of NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant cross-correlation between S10 and a complementary RNA sequence was observed after incubation with NSP2 (Figure 3\u2014figure supplement 3). In contrast, heat-annealing of a mixture of the two RNAs resulted in a high CCF amplitude (Figure 3\u2014figure supplement 3B and C). This result strongly suggests that the identified sequence within S10 RNA is sequestered, and the free energy change of opening the intramolecular base pairs by NSP2 binding is too high.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FCCS data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "17d0a37e-836d-408a-8057-081141b1897e",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C45",
+      "claim": "The estimated melting temperature of the identified RNA-RNA duplex between S5 and S11 is 46\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is in good agreement with the Tm of the identified RNA-RNA duplex, formed between S5 and S11 (Figure 3, inset, Tm = 46\u00b0C, calculated as described in Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by thermodynamic calculations based on the identified duplex sequence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "ce22c286-e8d3-4d98-9bef-daaacfd6dc86",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C46",
+      "claim": "Fluorescence correlation spectroscopy allows probing of RNA interactions in extremely dilute solutions, effectively eliminating self-association and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike most ensemble methods previously used for detecting inter-segment interactions in segmented RNA viruses (Gavazzi et al., 2013b; Fajardo et al., 2015; Fournier et al., 2012), fluorescence correlation spectroscopy (FCS) allows probing of such interactions in extremely dilute solutions, effectively eliminating self-association and aggregation of RNAs (Borodavka et al., 2012; Borodavka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research and describes a methodological advantage.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "0f8c10b1-82ae-4d4e-b5d2-afed3636cd02",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C47",
+      "claim": "PIE-FCCS removes the influence of spectral crosstalk and greatly enhances both sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "When using pulsed interleaved excitation (PIE) in combination with the high temporal resolution of time-correlated single photon counting (TCSPC), the signals can be further divided by the excitation source. This removes the influence of the crosstalk and greatly enhances both the sensitivity and specificity of this technique (M\u00fcller et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research describing the PIE-FCCS technique.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "ad89c66c-b4b0-4245-bcac-3845ff9d9f66",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C48",
+      "claim": "The stabilities of identified inter-segment RNA-RNA duplexes correlate well with the apparent CCF amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the stabilities of the identified inter-segment RNA-RNA duplexes correlate well with the apparent CCF amplitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from comparing thermodynamic calculations with FCCS measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "67b2952d-8322-4773-ad1d-2c348c32b6b6",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C49",
+      "claim": "The identified sequences demonstrate the importance of specific sequences in the formation of stable and sequence-specific RNA-RNA contacts between S5 and S11.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate the importance of the identified sequences in the formation of stable and sequence-specific RNA-RNA contacts between S5 and S11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from mutagenesis and complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "a4fc93ab-8ffb-406d-81ee-c9522b6425c2",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C50",
+      "claim": "The experimental framework combining PIE-FCCS and RNA-RNA SELEX offers unprecedented capacity for detection of stable, sequence-specific interactions between labeled RNAs in complex mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Such assays offer unprecedented capacity for detection of stable, sequence-specific interactions between labeled RNAs in complex mixtures of RNAs and proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the capabilities of the developed methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "73f9b50c-ee24-4620-a64f-b66fc5c8e1f0",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C51",
+      "claim": "RV ssRNAs can specifically interact with each other as a result of RNA remodeling brought about by NSP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here collectively support the model in which RV ssRNAs can specifically interact with each other as a result of RNA remodeling brought about by the ssRNA-binding protein NSP2 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "7784805d-0ea5-43a9-afeb-a6926db1aaf6",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C52",
+      "claim": "NSP2 may remain associated with the oligomeric ssRNA complex prior to its replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the high affinity of NSP2 for ssRNA it is expected that NSP2 may remain associated with the oligomeric ssRNA complex prior its replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the known high affinity of NSP2 for ssRNA.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "9d2e87e3-ba47-45df-bb6c-c018ab3ef960",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C53",
+      "claim": "VP2 binding to the ssRNA-NSP2 complex may result in displacement of NSP2 during core assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that NSP2 inhibits the initiation of replication, but not the elongation stage (Vende et al., 2003), it is possible that the inner core protein VP2 binding to the ssRNA-NSP2 complex (Guglielmi et al., 2010; Estrozi et al., 2013; Patton, 1996) would result in the initial displacement of the NSP2 during the core assembly nucleation, followed by further eviction of NSP2 during the elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citations to previous research and the authors' model.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "5882c739-2113-4531-be31-5a1efc8bf9a9",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C54",
+      "claim": "The proposed model accounts for incorporation of multiple assorted (+)ssRNAs, each associated with its own copy of the VP1 polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed model would account for incorporation of multiple assorted (+)ssRNAs, each associated with its own copy of the VP1 polymerase (Guglielmi et al., 2010; Patton, 1996; Periz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is part of the proposed model, supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "cf690832-88ac-416c-a96d-c1d8679b0a99",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C55",
+      "claim": "VP2 nucleation must be tightly regulated to prevent early assembly and ensure specific packaging of eleven (+)ssRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that VP2 nucleation must be tightly regulated to prevent early assembly to ensure specific packaging of eleven (+)ssRNAs (Desselberger et al., 2013; Viskovska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that VP2 can self-assemble into empty particles, and is supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8c933019-5a16-4dd8-8e56-4a55102aeebf",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C56",
+      "claim": "Nucleation of core assembly by (+)ssRNA complexes may occur at VP2 concentrations significantly lower than those required for formation of empty cores.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that nucleation of core assembly by (+)ssRNA complexes may occur at VP2 concentrations significantly lower, than those required for formation of empty cores (Borodavka et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3fa2c6d8-6957-4c9f-bdd4-1249e6f30027",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C57",
+      "claim": "Binding of NSP2 may contribute to regulation of over-nucleation of VP2 on the RNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of NSP2 may also contribute to the regulation of over-nucleation of VP2 on the RNA substrate (Viskovska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "6f519a75-2b0f-4b09-9fa4-0837a60dc140",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C58",
+      "claim": "Early biochemical studies suggest that (+)ssRNA replication may take place within pre-core intermediates lacking a complete VP2 shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Early biochemical studies of RV assembly intermediates suggest that (+)ssRNA replication may take place within the pre-core intermediates lacking a complete VP2 shell (Gallegos and Patton, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "63be7746-8cb2-4256-b1ec-ce0c54aa4e4b",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C59",
+      "claim": "The proposed model explains the absence of NSP2 inside assembled virions despite its abundance in viroplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed model would explain the absence of NSP2 inside the assembled virions, despite its abundance in viroplasms and high affinity for ssRNAs (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is part of the proposed model, explaining an observed phenomenon.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "a5e79e44-2d93-4b04-9067-688b687fc3f4",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C60",
+      "claim": "In Bluetongue virus, multiple sites of the smallest segment S10 RNA are involved in assortment of other genomic segments.",
+      "claim_type": "EXPLICIT",
+      "source": "In BTV, multiple sites of the smallest segment S10 RNA have been shown to be involved in assortment of other genomic segments (Fajardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research on BTV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "49afa854-5409-4158-8bc4-d8818d47ceef",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C61",
+      "claim": "In influenza A viruses, genome segment packaging is coordinated via interactions among different viral RNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "In IAVs, genome segment packaging into virions is coordinated via interactions among the different viral RNA segments, while the sites of inter-segment interactions overlap with the coding regions of segmental RNAs (Gavazzi et al., 2013b; Gerber et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on IAV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "9ba91af5-67b0-4b21-924a-19d822bc2ec4",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C62",
+      "claim": "The IAV nucleoprotein regulates selective packaging of viral genomic segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The IAV nucleoprotein (NP) has also been shown to regulate selective packaging of the viral genomic segments (Moreira et al., 2016), revealing the distinct amino acid residues of NP that are required for packaging of specific RNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research on IAV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "92eb7d12-6c24-441d-ac3d-9bd39e1c7495",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C63",
+      "claim": "IAV segment ssRNAs form higher order species in vitro only upon co-incubation at 55\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the IAV segment ssRNAs were shown to form higher order species in vitro; however most of these interactions were only detectable upon co-incubation of the RNAs at 55\u00b0C (Gavazzi et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research on IAV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "f8e999dc-2b55-4a79-a12a-50bf3475879a",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C64",
+      "claim": "BTV ssRNAs interact with each other with extremely low efficiencies unless they were co-transcribed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, BTV ssRNAs would also interact with each other, albeit with extremely low efficiencies, unless they were co-transcribed in vitro (Fajardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research on BTV.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "49f2680e-a7cb-4544-b509-c378ee4a830b",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C65",
+      "claim": "The combination of FCCS and RNA-RNA SELEX holds promise for validation and quantitative analyses of interacting viral ssRNAs and miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of FCCS and RNA-RNA SELEX-based approaches holds promise for validation and quantitative analyses of the interacting viral ssRNAs and miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the potential applications of the developed methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "abe7af5f-3a75-4f9e-8449-dbf6ea212711",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "claim_id": "C66",
+      "claim": "The developed methods will become useful tools for gaining novel mechanistic insights into the dynamics of genomic RNA-RNA interactions in RNA viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that these methods will become useful tools in the armory of instruments for gaining novel mechanistic insights into the dynamics of genomic RNA-RNA interactions in RNA viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the anticipated impact of the developed methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NSP2 promotes specific inter-segment RNA-RNA interactions between rotavirus genomic ssRNAs. In the absence of NSP2, eleven genomic ssRNAs do not form higher-order complexes (C5, C32). However, incubation with NSP2 results in strong interactions between S10 and S11 (C6), with S11 preferentially binding to S3, S5, and S6 (C7). The interaction strength is sequence-dependent rather than size-dependent (C38), and omitting S1-S9 RNAs reduces S11:S10 interaction (C39), suggesting involvement of additional RNAs in complex formation (C40).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C32, C37-C40 are supported by FCCS data showing CCF amplitudes near zero without NSP2 and high CCF amplitudes with NSP2 (Figure 1A-B). The data demonstrate sequence-specific interactions and provide hydrodynamic radius measurements confirming complex formation. The experimental design includes appropriate controls (BSA) and multiple replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "8d36c594-caf7-4c23-8eb8-b513018ec374",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NSP5, despite binding ssRNA with nanomolar affinity, does not promote stable inter-segment RNA-RNA interactions. While both NSP2 and NSP5 bind short ssRNA with similar affinity (C33), NSP5 alone does not promote S5:S11 complex formation (C9). Co-incubation of NSP2 with sub-micromolar NSP5 decreases S5:S11 CCF amplitude (C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C33 are supported by FCCS data (Figure 1\u2014figure supplement 3). The data show that NSP5 binds RNA but does not promote RNA-RNA interactions, and actually inhibits NSP2-mediated interactions. This distinguishes the functional roles of NSP2 and NSP5 in RNA assortment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "0ed2de64-7f93-4b69-9e8a-3158230090e9",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inter-segment RNA contact formation is independent of ATP hydrolysis and depends on NSP2's ssRNA-binding activity. Addition of 1 mM ATP does not affect RNA binding by NSP2 octamers or S11:S5 CCF amplitude (C11). NSP2 octamers can bind two differently labeled ssRNAs simultaneously (C34), and inter-segment interactions are not coupled to ATP hydrolysis (C12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C34 are supported by FCCS data (Figure 1\u2014figure supplement 4) showing no effect of ATP on CCF amplitudes. The data demonstrate that RNA-RNA interactions depend on NSP2's RNA-binding activity rather than its NTPase activity, which is an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "527080ad-d37a-4aad-862a-f1fc09230096",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ssRNA-binding activity of rotavirus group A NSP2 is specifically required for promoting inter-segment RNA-RNA contacts. A C-terminally truncated NSP2 mutant (\u0394C-NSP2) with reduced ssRNA affinity shows reduced efficiency in promoting S5:S11 interactions (C13-C14). Rotavirus group C NSP2 cannot substitute for group A NSP2 in promoting inter-segment contacts (C15, C31), despite structural similarities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15, C31 are supported by FCCS data (Figure 1\u2014figure supplement 5) and citations to prior work. The mutagenesis and cross-species substitution experiments demonstrate the specificity of NSP2's role. However, the mechanism underlying group-specificity is not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "f625a491-e64f-43ce-aee1-44a35b5302b5",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Inter-segment interactions are mediated by direct RNA-RNA contacts that remain stable after NSP2 removal. RNA-RNA complexes remain stable after proteinase K digestion and dilution (C16). Heat-annealed S11 and S5 RNAs strongly interact (C17), and the stability after NSP2 removal indicates formation of specific inter-molecular RNA contacts rather than protein-mediated bridging (C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by FCCS data after proteinase K treatment (Figure 1\u2014figure supplement 6) and hydrodynamic radius measurements (Table 1). The data demonstrate that NSP2 facilitates RNA remodeling that enables stable RNA-RNA base-pairing, which persists after protein removal. This is a key mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NSP2 binding induces conformational rearrangements in S11 RNA while preserving stable helices H1-H3. RNA-RNA SELEX reveals multiple areas undergoing conformational changes upon NSP2 binding (C19, C41), with newly formed RNA-binding sites located near loop regions and helical junctions (C42). The conserved helices H1-H3 remain stable (C20), while CD spectroscopy confirms destabilization of global RNA secondary structure (C21).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21, C41-C42 are supported by RNA-RNA SELEX data (Figure 2) and CD spectroscopy (Figure 2\u2014figure supplement 2B). The RNA-RNA SELEX approach successfully maps accessible regions and structural changes. The CD data provide independent confirmation of RNA remodeling. The methodology is novel and well-validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "fda3c417-7c26-4bd2-80a8-8d109d55f9bd",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific sequences within S3, S5, and S6 RNAs can stably base-pair with S11 RNA with predicted free energies of -15.3 to -19.1 kcal/mol (C22). There is positive correlation between abundance of S11-interacting sequences in S1-S10 and CCF amplitudes (C43), and the stabilities of identified RNA-RNA duplexes correlate well with CCF amplitudes (C48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C43, C48 are supported by RNA-RNA SELEX data, thermodynamic calculations (Figure 3), and correlation analysis (Figure 3\u2014figure supplement 1B). The correlation between predicted stability and experimental CCF amplitudes (r=0.73) provides strong validation of the identified interaction sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments validate the identified RNA-RNA interaction sites between S5 and S11. Mutations disrupting inter-molecular base-pairing dramatically reduce CCF amplitude (C23). The melting temperature of S5:S11 complex is ~47\u00b0C (C24), matching predicted Tm of 46\u00b0C. Trans-complementary mutants restore strong interactions (C25) with higher CCF amplitude than wild-type (C26), demonstrating the importance of specific sequences (C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26, C49 are supported by FCCS data with mutated RNAs (Figure 4, Figure 4\u2014figure supplement 1) and temperature melting experiments. The rescue of interactions by compensatory mutations provides strong evidence for sequence-specific base-pairing. The agreement between predicted and measured Tm values validates the thermodynamic calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "25ecd9c6-c928-4483-8045-47e37829dab1",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Some identified sequences are sequestered by secondary structure and have low accessibility. The sequence within S10 RNA (region 272-288) is sequestered and has low accessibility for base-pairing with S11 in the presence of NSP2 (C44). The estimated melting temperature of the S5:S11 duplex is 46\u00b0C (C45), in good agreement with experimental measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by FCCS data (Figure 3\u2014figure supplement 3) showing no interaction with NSP2 but interaction after heat-annealing, and by secondary structure predictions (Figure 3\u2014figure supplement 4). This demonstrates that not all predicted interaction sites are accessible, which is an important caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "3f3322f8-0a6d-49f5-8a79-43efe4b70af6",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sequence-specific inter-molecular base-pairing mediated by NSP2 binding governs inter-segment interactions in rotaviruses. The data collectively support a model where RV ssRNAs specifically interact through RNA remodeling brought about by NSP2 (C27, C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C51 represent the main conclusion of the study, supported by the totality of experimental evidence including FCCS, RNA-RNA SELEX, mutagenesis, and biophysical characterization. The model is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "34ab5ed8-72a4-4a75-aecb-90b954c8eb85",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NSP2 has high affinity for ssRNA but not dsRNA, which may enable it to alter RNA-RNA hybridization kinetics by destabilizing weaker intra-molecular helices while stabilizing inter-molecular contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by prior knowledge cited in the manuscript and is consistent with the observed RNA remodeling activity. However, the manuscript does not directly test dsRNA binding, relying instead on cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "cd18a1ae-441c-4091-98b2-0b7a42ee496b",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The majority of RNA-RNA interaction sites are located within the coding regions of RV genomic segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by mapping of interaction sites (Figure 4\u2014figure supplement 3). This finding parallels observations in other segmented RNA viruses and suggests functional constraints on genome organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "709812a2-1018-4c70-8d9a-3385ab2cbea6",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "S11 RNA undergoes conformational changes and oligomerization depending on conditions. After heat-annealing, S11 has Rh ~8 nm (C35), while prolonged incubation with 10 mM Mg2+ leads to oligomerization (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by FCS measurements (Figure 1\u2014figure supplement 2D). These observations validate the experimental approach and demonstrate the importance of controlling RNA preparation conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "a26271a4-df5d-48c3-a1e2-567450a042a7",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The PIE-FCCS methodology offers advantages for detecting RNA-RNA interactions. FCS allows probing interactions in extremely dilute solutions, eliminating self-association and aggregation (C46). PIE-FCCS removes spectral crosstalk and enhances sensitivity and specificity (C47). The combined PIE-FCCS and RNA-RNA SELEX approach offers unprecedented capacity for detecting stable, sequence-specific interactions (C50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C50 describe methodological advantages supported by citations and demonstrated by the experimental results. The methodology is well-validated and represents a significant technical contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A proposed model for rotavirus assembly suggests NSP2 remains associated with the oligomeric ssRNA complex prior to replication (C52), VP2 binding may displace NSP2 during core assembly (C53), and the model accounts for incorporation of multiple assorted ssRNAs with VP1 polymerase (C54). VP2 nucleation must be tightly regulated (C55), and may occur at lower concentrations for RNA complexes than empty cores (C56). NSP2 binding may regulate VP2 over-nucleation (C57), and replication may occur in pre-core intermediates (C58). The model explains NSP2 absence in virions (C59).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29, C52-C59 represent a speculative model based on the current findings and cited literature. While the model is consistent with available data, it lacks direct experimental validation. Key predictions (e.g., NSP2 displacement by VP2, timing of replication) require further testing. The model is plausible but remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Comparisons with other segmented RNA viruses reveal parallels in genome packaging mechanisms. In BTV, multiple sites of S10 RNA are involved in segment assortment (C60). In IAV, packaging is coordinated via RNA-RNA interactions in coding regions (C61), and the nucleoprotein regulates selective packaging (C62). IAV ssRNAs form higher-order species only at 55\u00b0C (C63), and BTV ssRNAs interact with extremely low efficiency unless co-transcribed (C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by citations to prior research on BTV and IAV. These comparisons provide context for the rotavirus findings and suggest common principles in segmented virus assembly. However, these are not original findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "c718916a-2297-4ce8-850c-61fe3990572a",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The developed methods have potential for future applications. The combination of FCCS and RNA-RNA SELEX holds promise for validation and quantitative analyses of interacting viral ssRNAs and miRNAs (C65). The methods will become useful tools for gaining mechanistic insights into genomic RNA-RNA interactions in RNA viruses (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe anticipated future applications of the methodology. While speculative, these claims are reasonable given the demonstrated capabilities of the approach. The methodology has clear potential for broader application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "0cb5a29a-8d51-4627-bcd3-ccaa360b3551",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about rotavirus biology: RV genomes comprise 9-12 dsRNA segments co-packaged into virions (C1), RNA assortment occurs in viroplasms (C2), NSP2 and NSP5 are essential viroplasm components (C3), and current views suggest inter-segment RNA-RNA interactions govern segment selection (C4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 represent established background knowledge supported by citations to prior research. These provide context for the current study but are not original findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    },
+    {
+      "id": "7cbb50b6-4011-4429-8b2c-3044e326a66e",
+      "content_id": "6adcc057-a0de-4040-aebb-395e1b3d9b84",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "NSP2 binding to ssRNAs results in structural reorganization of RNA conducive to inter-segment contact formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 is the central finding of the manuscript, supported by RNA-RNA SELEX data (Figure 2) and CD spectroscopy (Figure 2\u2014figure supplement 2B). This claim integrates multiple lines of evidence and represents the key mechanistic insight. Already covered in other result groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:05:35.418134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef68513a-9e1c-4c31-b269-70423bc03af4",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "79577e5a-eb0c-42e5-aad3-cc376fd957eb",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "924cc208-2682-4afb-8c64-2393397e0041",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "4269552e-8fa3-44d7-87e2-3766fd14599d",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "b61af760-a574-48eb-b88a-9ffd4915010a",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "161c17b8-8f5a-491f-a4ae-8cecc10274cb",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "2fd71ab0-306d-46db-b6cb-9c3413ba126b",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "889e5e3c-65e4-422c-bea8-3894168b2103",
+      "result_id": "63fe1a4f-578f-4292-b2cf-028ca8ee0b9f"
+    },
+    {
+      "claim_id": "059d0dc0-7088-4cfe-ac27-4116166377bd",
+      "result_id": "8d36c594-caf7-4c23-8eb8-b513018ec374"
+    },
+    {
+      "claim_id": "61256241-ddf5-4f05-8b4d-90a831a309c3",
+      "result_id": "8d36c594-caf7-4c23-8eb8-b513018ec374"
+    },
+    {
+      "claim_id": "7df951b8-6255-4bad-b385-e74a43a2f811",
+      "result_id": "8d36c594-caf7-4c23-8eb8-b513018ec374"
+    },
+    {
+      "claim_id": "f129ae0a-0134-476e-a492-0602519c79f2",
+      "result_id": "0ed2de64-7f93-4b69-9e8a-3158230090e9"
+    },
+    {
+      "claim_id": "31c501fa-fadd-4bd7-83da-1baccf0ece59",
+      "result_id": "0ed2de64-7f93-4b69-9e8a-3158230090e9"
+    },
+    {
+      "claim_id": "2248d7e1-30d9-4612-9b9a-5ce1b3fd6da4",
+      "result_id": "0ed2de64-7f93-4b69-9e8a-3158230090e9"
+    },
+    {
+      "claim_id": "8f2e51ff-f2bc-4f95-9729-52ffeff50615",
+      "result_id": "527080ad-d37a-4aad-862a-f1fc09230096"
+    },
+    {
+      "claim_id": "08c39644-d5cc-40e9-8ad0-13d47ea5c0cf",
+      "result_id": "527080ad-d37a-4aad-862a-f1fc09230096"
+    },
+    {
+      "claim_id": "91ec2e5e-b325-41d5-b756-6bd0ce57aaba",
+      "result_id": "527080ad-d37a-4aad-862a-f1fc09230096"
+    },
+    {
+      "claim_id": "b74132a4-db54-4f65-996a-34f7f5c9b78e",
+      "result_id": "527080ad-d37a-4aad-862a-f1fc09230096"
+    },
+    {
+      "claim_id": "aca1c842-4179-4339-9a4c-c2afefe8152d",
+      "result_id": "f625a491-e64f-43ce-aee1-44a35b5302b5"
+    },
+    {
+      "claim_id": "ad20ee34-e534-4360-bda4-413dd710b1a3",
+      "result_id": "f625a491-e64f-43ce-aee1-44a35b5302b5"
+    },
+    {
+      "claim_id": "9ff5ffe0-3495-40ae-a372-4ebe43ae1f77",
+      "result_id": "f625a491-e64f-43ce-aee1-44a35b5302b5"
+    },
+    {
+      "claim_id": "8c84397e-caab-4d46-a0d9-6df91184f5ea",
+      "result_id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4"
+    },
+    {
+      "claim_id": "5e55ef44-6357-40fe-9901-0eefbef02895",
+      "result_id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4"
+    },
+    {
+      "claim_id": "5b1fc3a1-89bd-4136-9530-2c60a4c05850",
+      "result_id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4"
+    },
+    {
+      "claim_id": "b0441b1a-7928-4616-828b-f05dc561fb8c",
+      "result_id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4"
+    },
+    {
+      "claim_id": "718d57d2-3900-4101-8285-b5849f374ebc",
+      "result_id": "fab9b681-1c3e-4f31-8ff4-c3b1ec12ffc4"
+    },
+    {
+      "claim_id": "9cdf329d-918f-4c72-97aa-6f3e1b4932b1",
+      "result_id": "fda3c417-7c26-4bd2-80a8-8d109d55f9bd"
+    },
+    {
+      "claim_id": "8acc216c-bbdb-400d-9b76-fa8ff5e60a4f",
+      "result_id": "fda3c417-7c26-4bd2-80a8-8d109d55f9bd"
+    },
+    {
+      "claim_id": "ad89c66c-b4b0-4245-bcac-3845ff9d9f66",
+      "result_id": "fda3c417-7c26-4bd2-80a8-8d109d55f9bd"
+    },
+    {
+      "claim_id": "1098cad0-7d3d-45af-867c-49892279f392",
+      "result_id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea"
+    },
+    {
+      "claim_id": "bfcda7db-1308-4831-8f66-afc5ffed9425",
+      "result_id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea"
+    },
+    {
+      "claim_id": "24beff6e-e987-4ff4-90a5-aaf19987b925",
+      "result_id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea"
+    },
+    {
+      "claim_id": "2043b10a-38d7-47bb-8a40-45edb58415f7",
+      "result_id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea"
+    },
+    {
+      "claim_id": "67b2952d-8322-4773-ad1d-2c348c32b6b6",
+      "result_id": "3e3d09df-0964-4ee8-bcb5-2a3fdd4b44ea"
+    },
+    {
+      "claim_id": "0c1a1e81-a289-4669-aef9-d3a34ad2cd7c",
+      "result_id": "25ecd9c6-c928-4483-8045-47e37829dab1"
+    },
+    {
+      "claim_id": "17d0a37e-836d-408a-8057-081141b1897e",
+      "result_id": "25ecd9c6-c928-4483-8045-47e37829dab1"
+    },
+    {
+      "claim_id": "b5a85cd1-3e79-4fdf-9898-4c59dbeb89fe",
+      "result_id": "3f3322f8-0a6d-49f5-8a79-43efe4b70af6"
+    },
+    {
+      "claim_id": "73f9b50c-ee24-4620-a64f-b66fc5c8e1f0",
+      "result_id": "3f3322f8-0a6d-49f5-8a79-43efe4b70af6"
+    },
+    {
+      "claim_id": "a61c5e23-d213-4da6-b88f-9ef0c4240a22",
+      "result_id": "34ab5ed8-72a4-4a75-aecb-90b954c8eb85"
+    },
+    {
+      "claim_id": "3f000613-2617-4656-9ddc-7ab71e4e5204",
+      "result_id": "cd18a1ae-441c-4091-98b2-0b7a42ee496b"
+    },
+    {
+      "claim_id": "3b32ac56-25cc-435f-9a42-5cce893d75c2",
+      "result_id": "709812a2-1018-4c70-8d9a-3385ab2cbea6"
+    },
+    {
+      "claim_id": "275aa2e5-eb97-42ca-9f12-2f270ebd26bb",
+      "result_id": "709812a2-1018-4c70-8d9a-3385ab2cbea6"
+    },
+    {
+      "claim_id": "ce22c286-e8d3-4d98-9bef-daaacfd6dc86",
+      "result_id": "a26271a4-df5d-48c3-a1e2-567450a042a7"
+    },
+    {
+      "claim_id": "0f8c10b1-82ae-4d4e-b5d2-afed3636cd02",
+      "result_id": "a26271a4-df5d-48c3-a1e2-567450a042a7"
+    },
+    {
+      "claim_id": "a4fc93ab-8ffb-406d-81ee-c9522b6425c2",
+      "result_id": "a26271a4-df5d-48c3-a1e2-567450a042a7"
+    },
+    {
+      "claim_id": "f49612c0-655e-41b2-a647-be87ceda4d16",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "7784805d-0ea5-43a9-afeb-a6926db1aaf6",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "9d2e87e3-ba47-45df-bb6c-c018ab3ef960",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "5882c739-2113-4531-be31-5a1efc8bf9a9",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "cf690832-88ac-416c-a96d-c1d8679b0a99",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "8c933019-5a16-4dd8-8e56-4a55102aeebf",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "3fa2c6d8-6957-4c9f-bdd4-1249e6f30027",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "6f519a75-2b0f-4b09-9fa4-0837a60dc140",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "63be7746-8cb2-4256-b1ec-ce0c54aa4e4b",
+      "result_id": "1d53f4aa-3a56-4985-bb01-36964cd37b0a"
+    },
+    {
+      "claim_id": "a5e79e44-2d93-4b04-9067-688b687fc3f4",
+      "result_id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8"
+    },
+    {
+      "claim_id": "49afa854-5409-4158-8bc4-d8818d47ceef",
+      "result_id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8"
+    },
+    {
+      "claim_id": "9ba91af5-67b0-4b21-924a-19d822bc2ec4",
+      "result_id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8"
+    },
+    {
+      "claim_id": "92eb7d12-6c24-441d-ac3d-9bd39e1c7495",
+      "result_id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8"
+    },
+    {
+      "claim_id": "f8e999dc-2b55-4a79-a12a-50bf3475879a",
+      "result_id": "d18c9535-2dd4-43af-9e1d-4bd2ba69dff8"
+    },
+    {
+      "claim_id": "49f2680e-a7cb-4544-b509-c378ee4a830b",
+      "result_id": "c718916a-2297-4ce8-850c-61fe3990572a"
+    },
+    {
+      "claim_id": "abe7af5f-3a75-4f9e-8449-dbf6ea212711",
+      "result_id": "c718916a-2297-4ce8-850c-61fe3990572a"
+    },
+    {
+      "claim_id": "81524d2d-e8ac-42ed-ba2b-3df54d1bca86",
+      "result_id": "0cb5a29a-8d51-4627-bcd3-ccaa360b3551"
+    },
+    {
+      "claim_id": "7b0e3dd0-4069-43b4-88dc-b8114c47793d",
+      "result_id": "0cb5a29a-8d51-4627-bcd3-ccaa360b3551"
+    },
+    {
+      "claim_id": "3b2356c2-5672-4cef-a7ab-f93b32996b46",
+      "result_id": "0cb5a29a-8d51-4627-bcd3-ccaa360b3551"
+    },
+    {
+      "claim_id": "54e6b623-2d5c-4bb0-95d0-016ed244efd8",
+      "result_id": "0cb5a29a-8d51-4627-bcd3-ccaa360b3551"
+    },
+    {
+      "claim_id": "006647d5-4e47-4fcc-91bb-87c6560961d1",
+      "result_id": "7cbb50b6-4011-4429-8b2c-3044e326a66e"
+    }
+  ],
+  "comparisons": []
+}

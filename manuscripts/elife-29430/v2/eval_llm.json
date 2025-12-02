@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C76"
+    ],
+    "result": "ATP-bound BiP exhibits conformational heterogeneity, existing as an ensemble of domain-docked and domain-undocked conformations (~53% docked) that interconvert slowly (>50 ms timescale), distinguishing it from DnaK which predominantly adopts the docked conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C41, and C76 are strongly supported by methyl NMR data in Figure 2 showing two sets of peaks with near-equal intensities, quantitative population analysis, and estimation of exchange kinetics from spectral properties. The experimental evidence directly demonstrates the conformational heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "ADP-bound BiP adopts a domain-undocked conformation where the NBD and SBD behave independently, similar to DnaK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by NMR data in Figure 2 showing no chemical shift differences between full-length BiP and isolated domains in the ADP-bound state, consistent with domain independence. This is a well-established finding for Hsp70s.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "BiP exhibits weaker nucleotide binding affinity than DnaK, with ATP binding ~7-fold preferred over ADP. Domain communication and linker-NBD interactions stabilize ATP binding, as truncation of the linker and SBD decreases ATP affinity >9-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by ITC data in Table 1 comparing binding affinities across constructs. The systematic comparison of full-length and truncated constructs provides clear evidence for the role of interdomain communication in nucleotide binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ATP binding to full-length BiP is entropically driven (-T\u0394S ~-19-20 kcal/mol), and this entropic contribution persists in the isolated NBD, contrasting with DnaK where it depends on the full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by thermodynamic analysis of ITC data in Table 1. The comparison between BiP and DnaK thermodynamics reveals a fundamental mechanistic difference, though the interpretation about NBD flexibility (C35) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ATP binding to isolated BiP NBD favors linker interactions with the NBD and causes allosteric changes, but full-length BiP does not significantly populate a linker-bound, domain-undocked conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by NMR data in Figure 3 showing chemical shift perturbations upon linker presence in isolated NBD constructs, and spectral overlaps indicating the absence of this conformation in full-length protein. The evidence is clear and systematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C77"
+    ],
+    "result": "Substrate binding to ATP-bound BiP destabilizes domain docking and shifts the equilibrium toward the domain-undocked conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C77 are supported by NMR data in Figure 2\u2014figure supplement 1 showing changes in peak populations upon peptide substrate binding. This is consistent with the expected Hsp70 mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Single amino acid substitutions at allosteric sites in the BiP SBD (V461F, I526V, I437V, I538V) bidirectionally modulate the domain-docked/undocked equilibrium. V461F and I526V stabilize docking even in the absence of ATP, demonstrating ATP binding is not essential for domain docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are strongly supported by systematic NMR analysis in Figure 4 showing quantitative changes in conformational populations for each mutant. The observation of domain docking in ADP-bound state for certain mutants (Figure 4C) directly demonstrates ATP-independent docking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59"
+    ],
+    "result": "AMPylation of Thr518 shifts BiP conformational equilibrium toward domain-docked conformation in both ATP-bound (68%) and ADP-bound (64%) states. The AMPylated V461F variant adopts >80% docked conformation with either nucleotide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C59 are supported by quantitative NMR analysis in Figure 5A showing increased populations of docked conformation upon AMPylation. The mass spectrometry validation of AMPylation (Figure 5\u2014figure supplement 7) confirms sample identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AMPylation preserves BiP structure and does not disturb inter-domain allostery. The domain-docked conformation is structurally identical whether ATP-bound, ADP-bound AMPylated, or ATP-bound AMPylated, as shown by identical NMR chemical shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60-C62 are supported by NMR spectral comparisons in Figure 5\u2014figure supplements 3-4 showing no chemical shift differences for docked conformation peaks across conditions. This is consistent with crystallographic data cited from Preissler et al., 2017.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AMPylation inactivates BiP by redistributing the conformational ensemble to stabilize domain docking, which rationalizes observed functional effects including fast substrate release, prevention of J-domain stimulated ATP hydrolysis, and linker protection from proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C81-C83 are supported by the conformational data and consistent with functional observations from a co-submitted manuscript. The mechanistic explanation logically follows from the conformational effects, though the functional validation relies on external work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C85"
+    ],
+    "result": "Stabilization of domain docking gradually increases nucleotide binding affinity. The correlation between free energies of docking and nucleotide binding can be quantitatively modeled with a two-state ensemble, yielding ATP/ADP binding constants of 800 nM/7 \u03bcM (undocked) and 1 nM/1.5 \u03bcM (docked).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C85 are supported by thermodynamic analysis in Figure 5B combining ITC and NMR data. The two-state model fits the experimental data well, providing quantitative validation of the conformational ensemble model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ADP-bound and ATP-bound domain-docked conformations are structurally similar but thermodynamically distinct. Domain docking dramatically favors ATP binding but has less effect on ADP affinity. The entropic contribution to ATP binding is not due to domain docking itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by combined NMR and ITC data showing structural similarity (Figure 5\u2014figure supplement 3) but different thermodynamic signatures (Figure 5B, Figure 5\u2014source data 2). The inference about entropic contributions is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The thermodynamic differences between BiP and DnaK ATP binding arise from differences in NBD subdomain communication. Weaker communication in BiP results in enhanced NBD conformational flexibility and entropic contribution to ATP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73 are speculative interpretations (C70 explicitly states 'we speculate') based on comparison of thermodynamic data and known structural differences. While the hypothesis is reasonable and supported by citation to prior work (C71), direct experimental evidence for NBD subdomain communication differences is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "AMPylation efficiency depends on BiP conformation. Wild-type BiP* AMPylation was ~60% complete, while the V461F variant achieved near 100% AMPylation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are directly supported by mass spectrometry data in Figure 5\u2014figure supplement 7 showing different AMPylation efficiencies. This observation is consistent with the conformational model where V461F stabilizes the docked conformation that is more efficiently AMPylated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Local SBD perturbations fine-tune the pre-existing conformational ensemble, can overpower nucleotide binding effects without decoupling allostery, and can complement each other to produce additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C87 are supported by systematic NMR analysis showing mutations shift equilibria between pre-existing states (Figure 4), can induce docking in ADP state, and combine with AMPylation for enhanced effects (Figure 5A, Figure 6). The data demonstrate preserved allostery throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Domain docking in BiP is a slow multistep process requiring large structural rearrangements (~10 nm \u03b1Lid displacement), with significantly slower kinetics than DnaK as evidenced by distinct NMR spectral patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by NMR kinetic analysis (C41) and comparison to published DnaK data. The slow exchange regime observed for BiP versus fast exchange for DnaK provides clear evidence for kinetic differences, though the exact timescales are estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The linker-bound intermediate conformation is only transiently populated in BiP, observed for isolated NBD or domain-docked full-length BiP but not domain-undocked full-length BiP. This conformation can be transiently populated even without ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by NMR data comparing different constructs (Figure 3) and observations of ATP-independent docking in mutants (Figure 4C). The inference about transient population is logical given the spectral patterns, though direct kinetic measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C88",
+      "C89"
+    ],
+    "result": "The enhanced conformational heterogeneity and tunability of BiP enables post-translational regulation, provides opportunities for BiP-specific allosteric drug development, and suggests Hsp70s fine-tune function through conformational landscape adjustments rather than structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C88-C89 are speculative conclusions and hypotheses about broader implications. While the conformational tunability is well-demonstrated, the claims about enabling post-translational regulation (C48) and drug development opportunities (C88) are forward-looking. C89 is a general inference that extends beyond the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C90"
+    ],
+    "result": "Hsp70 chaperones exist as heterogeneous conformational ensembles in solution. The findings highlight the role of conformational dynamics in allosteric regulation of complex multidomain systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C90 are supported by the current study's data combined with extensive citations to prior work. The characterization of BiP's conformational ensemble provides direct experimental evidence for the role of dynamics in allostery, though C90 is somewhat of a general conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "BiP is the only ER Hsp70 chaperone that binds unfolded proteins to promote folding. It shares ~60% sequence identity with DnaK and has identical domain organization (NBD, \u03b2SBD, \u03b1Lid connected by conserved linker).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C10 are background statements supported by citations to established literature and illustrated in Figure 1. These are well-accepted facts about BiP structure and function that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "DnaK and other Hsp70s cycle through distinct conformational states controlled by nucleotide and substrate binding. Despite structural similarity, functional activities vary significantly. Conformational dynamics and allosteric hotspots regulate the functional cycle, and many hotspots are not fully conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 are background information about DnaK and Hsp70 mechanisms supported by extensive citations to prior literature. These establish the context and rationale for studying BiP's conformational landscape. The conservation analysis (C25) is shown in Figure 1\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The T229G mutation in BiP slows ATPase activity while retaining wild-type conformational features, enabling 'trapping' of ATP-bound states for study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are methodological statements supported by citations to prior characterization of this well-established BiP variant. This is standard practice for studying ATP-bound Hsp70 conformations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The AMPylation site Thr518 is located on loop L7,8 connecting allosterically important \u03b2-strands \u03b27 and \u03b28 in the \u03b2SBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a structural description supported by Figure 4A and citation to prior work on DnaK allostery. This establishes the structural context for understanding AMPylation effects.",
+    "result_type": "MINOR"
+  }
+]

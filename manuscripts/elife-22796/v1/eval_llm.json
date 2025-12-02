@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The Drosophila retina consists of approximately 750 ommatidia, each containing four cone cells embedded in two primary pigment cells. E-cadherin and N-cadherin are expressed in the retina, with N-cadherin expression specifically in cone cells governing their shape and arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the basic anatomical structure of the Drosophila retina and cadherin expression patterns. These claims are well-supported by citations to prior work (Cagan and Ready, 1989; Tepass and Harris, 2007; Hayashi and Carthew, 2004) and are consistent with established knowledge in the field. The claims provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "N-cadherin localizes at cone cell-cone cell contacts forming homophilic complexes, with low levels at cone cell-primary pigment cell contacts where it cannot form trans-homophilic bonds. E-cadherin is present at all contacts with varying concentrations, and MyoII is enriched at cell contacts and present as apical mesh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 describe the localization patterns of cadherins and MyoII in the retina. These observations are supported by imaging data (Figure 1C-E and supplements) and are consistent with prior work. The differential localization of Ncad and the inability to form trans-homophilic bonds at heterotypic contacts (C8) is a logical inference based on expression patterns. The MyoII distribution is confirmed by multiple markers (Zip::YFP, Sqh::GFP, phospho-MyoII antibodies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Loss of N-cadherin in cone cells causes significant shape changes dependent on the number and combination of wildtype and mutant cells. In full NcadM19 ommatidia, cone cells acquire a cruciform rather than diamond shape, with reduced contact lengths and altered angles. MyoII levels increase at wildtype-mutant cell contacts, suggesting MyoII contractility contributes to cone cell patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 describe the phenotypic consequences of Ncad loss. The shape changes are well-documented in Figure 1F-G with quantitative measurements and are consistent with prior work (Hayashi and Carthew, 2004). The observation of increased MyoII at heterotypic contacts (C17) and the inference about MyoII's role in patterning (C18) are supported by imaging data, though the mechanistic link requires further investigation in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "MyoII levels vary systematically across different contact types, with P(E)|P(E) contacts showing 1.8-fold higher MyoII than C(E,N)|C(E,N) contacts. These differences depend on Ncad expression and are uncorrelated with Ecad levels. MyoII levels anti-correlate with contact length, while F-actin distribution does not strictly correlate with MyoII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 present quantitative measurements of MyoII distribution across contact types. The data are supported by Figure 2A-C and supplements with statistical analysis (Supplementary file 1 - table 1). The lack of correlation between MyoII and Ecad (C22) rules out a simple adhesion-based explanation. The anti-correlation with contact length (C23) is consistent with MyoII's contractile role. The F-actin observation (C24) adds complexity but is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Laser ablation experiments reveal that tension is highest at C(E,N)|C(E) contacts and lowest at C(E,N)|C(E,N) contacts. These tension values correlate with MyoII levels, consistent with MyoII being a major determinant of interfacial tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 present mechanical measurements that directly test the relationship between MyoII and tension. The ablation experiments (Figure 2J-K, Videos 1-2) provide quantitative data showing correlation between MyoII levels and recoil speed (a proxy for tension). The methodology is appropriate and the conclusion that MyoII is a major determinant of tension is well-supported by the correlation, though causality is more definitively established by later perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Homophilic N-cadherin at homotypic contacts reduces MyoII levels (1.8-fold lower than P(E)|P(E) contacts), while unbound N-cadherin at heterotypic contacts signals to MyoII and induces its accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 propose a dual mechanism for Ncad's effect on MyoII. C27 is supported by the observation of high Ncad and low MyoII at C(E,N)|C(E,N) contacts (Figure 2A,C) and is consistent with prior work (Ma\u00eetre and Heisenberg, 2013). C28 is an inference based on low Ncad and high MyoII at C(E,N)|P(E) contacts. While correlative at this stage, these hypotheses are directly tested in subsequent gain-of-function experiments (C29-C46), which provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Misexpression of N-cadherin in primary pigment cells confirms that homophilic Ncad reduces MyoII levels at modified C(E,N)|P(E,N+) contacts, while increasing MyoII at P(E)|P(E,N+) contacts. This regulation is not specific to the retina, as shown by wing disc experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 present gain-of-function experiments that directly test the hypotheses from C27-C28. The misexpression experiments (Figure 3A-D and supplements) show that creating homophilic Ncad contacts reduces MyoII (C30-C32), while creating heterotypic contacts increases MyoII (C33). The wing disc experiments (C34, Figure 3\u2014figure supplement 1B,C) demonstrate generality. These experiments provide strong causal evidence for Ncad's dual role in MyoII regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MyoII is asymmetrically distributed at heterotypic C(E,N)|P(E) contacts, enriched in the cortex of Ecad- and Ncad-expressing cells. This asymmetry is significant (distance between MyoII and Ecad peaks exceeds localization imprecision), systematic, and contact-autonomous. Symmetric MyoII localization is observed at homotypic C(E,N)|C(E,N) contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe the asymmetric distribution of MyoII at heterotypic contacts using high-precision intensity profiling. The methodology is rigorous, with careful analysis of localization precision (Figure 3\u2014figure supplement 2C,D) showing the asymmetry is significant. The observation is confirmed with multiple markers (Ecad, Stan) and in different experimental contexts (C40). The contact-autonomous nature (C39) is demonstrated by examining cells with mixed contact types. This is a novel and important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Expression of truncated N-cadherin (extracellular domain only) confirms that homophilic Ncad bonds reduce MyoII contractility, but the cytoplasmic domain is required for MyoII accumulation at heterotypic contacts. This demonstrates that while homophilic Ncad reduces MyoII at homotypic contacts, unbound Ncad activates MyoII at heterotypic contacts through its cytoplasmic part.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 use a structure-function approach with truncated Ncad to dissect the mechanism. The truncated Ncad can form adhesion bonds but lacks the cytoplasmic domain (C41). The results (Figure 4B-E) show that the extracellular domain is sufficient for MyoII reduction at homotypic contacts (C42-C43) but the cytoplasmic domain is required for MyoII accumulation at heterotypic contacts (C44-C45). This elegant experiment provides strong mechanistic insight into Ncad's dual role (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A mechanical model based on energy minimization, incorporating both local tension and cell-scale elasticity, accurately predicts cell shapes. The best-fit elastic constant K = 4.2 yields excellent agreement with experimental patterns in wildtype and NcadM19 mosaic ommatidia. Elastic tension contributes 1/3 to 1/2 of total interfacial tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 present a quantitative mechanical model. The model parameters are constrained by experimental measurements (circular ablations for preferred perimeters C47, laser ablations for tensions). The fitting procedure (Figure 5\u2014figure supplement 2B) identifies K = 4.2 as the best fit (C48), and the resulting simulations match experimental shapes well (C49, Figure 5B). The estimate that elastic tension contributes 1/3 to 1/2 of total tension (C50) is an important quantitative finding. The model is appropriately simplified (2D, fixed area) with limitations acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "MyoII contributes 2-5 times more to local tension than Ncad or Ecad, depending on contact type. Control of cell shape by adhesion is mostly indirect, through regulation of MyoII levels by unbound Ncad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 quantify the relative contributions of MyoII and cadherins to local tension using molecular concentrations and tension measurements (Figure 5D). The analysis assumes proportionality between molecular concentrations and their mechanical contributions, which is a simplification but reasonable. The finding that MyoII dominates (C51) is consistent with in vitro work (Ma\u00eetre et al., 2012) and emphasizes the indirect role of adhesion through MyoII regulation (C52). This is a key quantitative result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MyoII loss-of-function (SqhAx3) causes massive increase in cell apical area, while constitutively active MyoII (SqhT20E.S21E) reduces apical area. These shape changes are dominated by cell-scale (apical MyoII) rather than contact-scale contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present genetic perturbations of MyoII activity. The experiments (Figure 5E-F and supplements) show clear effects on cell area and contact lengths. The interpretation that cell-scale effects dominate (C55) is supported by the large area changes and is consistent with the model simulations (Figure 5\u2014figure supplement 4C-D) where simply changing fixed area reproduces the phenotypes. However, the experiments simultaneously affect both junctional and apical MyoII, making it difficult to definitively separate their contributions as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Wildtype cone cells undergo stereotypic A-P to Eq-Pl contact transitions during development. Loss of Ncad in equatorial or polar cells prevents this transition (98.2% failure rate with one mutant, 100% with two mutants). The transition is prevented by increased tension at transverse contacts, as confirmed by increased MyoII levels and energy landscape modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 demonstrate the functional importance of Ncad-mediated MyoII regulation for morphogenesis. The live imaging (Figure 6A-B, Videos 4-5) documents the normal transition (C56-C57) and the high penetrance defects in Ncad mutants (C58-C59). The mechanistic explanation involving increased tension (C60) is supported by MyoII measurements (Figure 6E-F) and energy landscape calculations (C61, Figure 6G-H) showing the vertical configuration is energetically favored. This connects the molecular and mechanical findings to a developmental outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cadherin homophilic bonds have moderate direct contribution to interfacial tension compared to MyoII (roughly half of MyoII cortical tension in vivo). The balance of contractility and adhesion determines cell shapes, arrangement, and sorting, reconciling differential contractility and differential adhesion hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 synthesize the main quantitative findings. The moderate contribution of adhesion (C63-C64) is supported by the tension decomposition analysis (Figure 5D) and is consistent with in vitro work (Ma\u00eetre et al., 2012). The conclusion that contractility and adhesion are not mutually exclusive (C65) is well-supported by the data showing both contribute. The speculation about cadherin binding affinities (C66) is reasonable given the findings but is more interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The work reveals both cell-scale elastic tension (restricting cell deformation) and junction-scale cortical tension (shaping contacts). Cell-scale elasticity is crucial for stabilizing the four-cone cell arrangement. Both contributions are on the same order of magnitude and crucial for predicting cell shape, extending previous models that did not consider local MyoII contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 discuss the modeling contributions. The confirmation of cell-scale elasticity (C67) builds on prior models (K\u00e4fer et al., 2007; Hilgenfeldt et al., 2008), while the demonstration of its importance for stability (C68) is a new finding from the current model. The identification of junction-scale cortical tension (C69-C70) is a novel contribution not considered in previous works. The finding that both contributions are comparable (C71, Figure 5\u2014figure supplement 2E) is important for understanding epithelial mechanics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "N-cadherin has a dual role: junctional Ncad bonds cause moderate contact expansion between Ncad-expressing cells (insufficient alone to account for cell shapes), while heterotypic contacts show increased contractility that cannot be explained by adhesion differences alone. This increased contractility is junction-autonomous and mediated by unbound Ncad's intracellular region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 summarize the key mechanistic findings about Ncad's dual role. The moderate effect of adhesion (C72-C73) is supported by the quantitative analysis showing MyoII dominates. The increased contractility at heterotypic contacts (C74-C75) is well-documented throughout the paper. The junction-autonomous property (C76) is demonstrated by examining cells with mixed contacts. The role of the intracellular region (C77) is supported by the truncated Ncad experiments. This represents the central mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "N-cadherin polarizes MyoII contractility through cytoplasmic partners like \u03b2-catenin or through interplay with E-cadherin. Cadherin-mediated adhesion is coupled to actomyosin through small GTPases including Rho and Rac, and homophilic N-cadherin dimerization activates both Rho and Rac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 discuss potential molecular mechanisms linking Ncad to MyoII, citing prior work (Ouyang et al., 2013; Scarpa et al., 2015; Takeichi et al., 1997; Ratheesh et al., 2013; and others). However, the current study does not directly test these mechanisms. The authors mention they did not detect Rho activity differences using a biosensor. These claims represent plausible mechanisms based on literature but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The four cone cells form a boundary with primary pigment cells through increased MyoII contractility at heterotypic contacts, creating a MyoII cable reminiscent of boundaries in other Drosophila tissues. In the retina, MyoII accumulation is junction-autonomous and determined by adhesive molecule expression in apposed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 place the findings in the context of tissue boundaries. The observation that cone cells form a boundary through increased MyoII at heterotypic contacts (C83) is well-supported by the data. The comparison to other boundaries (C81-C82, C84) is appropriate and supported by citations. The distinction that retinal MyoII accumulation is junction-autonomous (C85) contrasts with some other boundary systems and is well-documented in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MyoII is asymmetrically distributed at heterotypic contacts, mainly in the cortex of Ecad- and Ncad-expressing cells. This asymmetry suggests tension can be set asymmetrically, potentially allowing unilateral junction shrinkage or extension. Asymmetrically distributed unbound Ncad likely causes this MyoII asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 discuss the implications of MyoII asymmetry. The asymmetric distribution (C86) is well-documented (C35-C40). The inference that tension can be set asymmetrically (C87) is reasonable given the asymmetric MyoII distribution. The speculation about unilateral junction dynamics (C88) is plausible but not directly tested. The proposed mechanism involving unbound Ncad (C89) is consistent with all the data, though the exact signaling pathway remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "High MyoII contractility at contacts between different cell types might represent a general mechanism important for lineage sorting and elimination of misspecified cells, with potential implications for epithelial-mesenchyme transition and other developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are speculative statements about broader implications, supported by citations (Bielmeier et al., 2016; Wheelock et al., 2008). While the wing disc experiments (C34) suggest some generality, these claims extend beyond what is directly demonstrated in the study. They represent reasonable hypotheses for future work but are not tested here.",
+    "result_type": "MINOR"
+  }
+]

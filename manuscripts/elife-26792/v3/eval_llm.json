@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C41",
+      "C115"
+    ],
+    "result": "The authors developed a vertical confocal microscope setup by rotating an inverted Zeiss Axio Observer with LSM 700 scanhead 90\u00b0 and mounting it on an aluminum plate, while maintaining full functionality including the motorized stage. The laser safety mechanism was modified with magnets to ensure safe operation during sample insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C35, C41, and C115 collectively describe the vertical microscope setup with detailed technical specifications, photographs (Figure 2), and demonstrations of multi-day imaging capability. The modifications are well-documented with CAD files provided, and the system's functionality is validated through multiple experimental demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A custom LED illumination system was developed with blue (453 nm) and red (625 nm) LEDs arranged in a square configuration, providing adjustable intensity (40-180 \u00b5mol m\u207b\u00b2s\u207b\u00b9) and directional illumination. With proper filter settings, the LED light does not interfere with fluorescence imaging, allowing continuous illumination during acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by spectral data (Figure 3E,F), circuit diagrams (Figure 3D), and experimental validation showing no LED light detection during imaging (Figure 3G,H). The system design is documented with PCB files provided in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C116"
+    ],
+    "result": "A rotation stage was developed consisting of an aluminum frame with a rotating inset connected by Teflon rings, enabling rapid gravistimulation experiments. A MATLAB script calculates new root positions after rotation, allowing imaging to resume within approximately 3 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C55-C58, and C116 describe the rotation stage design with supporting images (Figure 4E,F), CAD files, and experimental validation showing successful gravistimulation experiments. The mechanical precision and timing are documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "TipTracker is a MATLAB-based software that automatically tracks moving samples using cross-correlation of maximum intensity projections, making no assumptions about sample shape or movement type. It interacts with microscope software via AutoIt scripts, enabling use on various microscope platforms while preserving full confocal functionality including multi-position, multi-channel, and z-stack imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C32, C61-C68, C118-C120 collectively describe TipTracker's design, implementation, and capabilities. The software is validated through demonstrations on two different microscope platforms (Zeiss LSM700 and LaVision TriM II) with both plant roots and zebrafish embryos. Source code is provided in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TipTracker successfully tracked eight roots expressing plasma membrane marker UBQ10::YFP-PIP1;4 over 38 hours with 20-minute intervals. Growth rates varied from 50-250 \u00b5m/hour, and all roots showed decreased growth during simulated night periods and increased growth during day periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by experimental data shown in Figure 6A,B and Video 2. The tracking performance is quantitatively documented with growth rate measurements showing diurnal variation. The experiment demonstrates successful long-term multi-root tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C126"
+    ],
+    "result": "Long-term imaging revealed previously unappreciated regularity in cell division patterns: each first-generation membrane observed at the first time point is separated by three new membranes at the last time point of recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C126 describe a novel finding about cell division regularity, supported by detailed analysis shown in Figure 6C and Video 3. The pattern is clearly visualized through color-coded membrane tracking over 38 hours.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C127"
+    ],
+    "result": "High-resolution tracking of GFP-KNOLLE during cell division captured the complete life cycle of the syntaxin, from cell plate localization to pre-vacuolar compartment relocalization and vacuolar degradation, lasting more than 4 hours. Quantification of 83 cytokinesis events showed an average duration of 3 h 49 min \u00b1 18 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 and C127 are supported by experimental data in Figure 7 and Videos 4-5. The observations confirm prior findings (Reichardt et al., 2007) while providing new quantitative timing data from multiple cells across multiple roots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Stem cell initial divisions were captured in five out of six roots, occurring within a 10-hour time window with no divisions observed before or after. This supports and strengthens the hypothesis that stem cell initials synchronize their mitosis and divide together in a wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 and C93 present observations of coordinated stem cell division timing. While the inference of synchronization (C91, C93) is reasonable given the temporal clustering, the sample size is limited (5/6 roots) and the mechanism is not investigated. The result builds on prior work (Campilho et al., 2006) with improved temporal coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C128"
+    ],
+    "result": "Gravistimulation experiments using the rotation stage and DII-Venus auxin response marker revealed rapid changes in auxin distribution with high spatio-temporal resolution. The upper/lower DII-Venus intensity ratio reached a plateau approximately 80 minutes after gravistimulation, with dynamics similar to prior work but at higher temporal resolution. Cell-to-cell changes in auxin distribution were observed with previously unseen resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 and C128 describe gravistimulation experiments supported by quantitative data in Figure 8 and Video 6. The observations are consistent with prior work (Band et al., 2012) while providing improved temporal resolution (3-minute intervals). The claim of 'previously unseen resolution' (C104) is somewhat subjective but supported by the experimental parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C111",
+      "C112"
+    ],
+    "result": "TipTracker was successfully implemented on an upright two-photon microscope (LaVision TriM II) to track prechordal plate migration in zebrafish embryos expressing gsc::mEGFP, enabling uninterrupted imaging for several hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C111, and C112 demonstrate TipTracker's versatility beyond plant roots, supported by experimental data in Figure 9 and Video 7. This validates the generality of the tracking approach on a different microscope platform with a non-plant sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Seedlings are grown in Nunc Lab-Tek chambered coverglasses with roots between glass and agar while cotyledons remain exposed to air. Roots in this configuration grew 88% as fast as surface-growing roots (87.94% \u00b1 10.5% vs 100% \u00b1 10.9%, n=21 and 20), attributed to mechanical impedance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe the sample preparation method with quantitative validation of growth rates. The reduced growth is documented with appropriate sample sizes and statistical measures. The attribution to mechanical impedance (C51) is a reasonable inference though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Immersion objectives are problematic in the vertical setup due to liquid flow, addressed by using viscous hair gel with water-like refractive index. The system is primarily intended for long time-lapse experiments using 20x/0.8NA or 40x/0.95NA dry objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe practical limitations and solutions for the vertical setup. The immersion liquid problem (C43) is a logical consequence of vertical orientation, and the hair gel solution (C44) is a practical workaround. The focus on dry objectives (C46) is consistent with the system's intended use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TipTracker includes safety features limiting maximum stage movement to prevent objective damage if tracking fails. The system requires no computer interference during imaging and creates time overhead compared to direct microscope control due to file saving and reading at each time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe practical limitations and safety features of TipTracker. These are reasonable design considerations based on the system's operation, though the magnitude of time overhead is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "There is no correlation between day time and cell divisions in the primary root tip, consistent with prior reports for primary root tips and lateral root formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 reports an observation consistent with prior work (Campilho et al., 2006; von Wangenheim et al., 2016). While confirmatory rather than novel, it validates the system's ability to capture biologically relevant dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Users should consider sample velocity relative to field of view and temporal resolution when setting up experiments. For 20x objectives, time intervals should not exceed 30 minutes to prevent roots from escaping the tracking field of view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 provide practical guidance based on the relationship between root growth rates (50-300 \u00b5m/hour), field of view dimensions, and tracking window size. This is illustrated in Figure 10 and represents sound operational advice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Both experts and non-experts can easily adapt TipTracker from one microscope setup to another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 makes assertions about ease of use for non-experts, but this is not empirically tested. While the authors provide documentation and demonstrate implementation on two platforms, actual usability by non-experts is not validated. The claim is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "TipTracker currently tracks in 2D since roots are confined between coverslip and agar, but 3D tracking would be a straightforward extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 accurately describes the current implementation. Claim C122 about straightforward 3D extension is reasonable given the algorithm's design but remains speculative without implementation. This is appropriately presented as a potential future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Lightsheet microscopy systems are ideally suited for use with TipTracker due to existing vertical sample mounting. Implementation on Zeiss Z1 lightsheet would be straightforward but require modifications to file handling and position input. For custom SPIM systems, direct implementation of tracking algorithms in acquisition software is easier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 discuss potential implementations on other systems but are largely speculative. While the reasoning is sound based on system characteristics, no actual implementations on lightsheet systems are demonstrated. These represent reasonable suggestions for future work rather than validated results.",
+    "result_type": "MINOR"
+  }
+]

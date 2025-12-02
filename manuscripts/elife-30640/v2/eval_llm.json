@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C126",
+      "C127"
+    ],
+    "result": "Each AKT isoform exhibits distinct spatial expression patterns in the mouse hippocampus. AKT1 and AKT3 are primarily expressed in neurons with regional differences (AKT1 enriched in CA1, AKT3 in CA3 and dentate gyrus hilus), while AKT2 is exclusively localized to astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary approaches: immunohistochemistry with isoform-specific antibodies validated in KO tissues (C46), co-localization studies with cell-type markers NeuN and GFAP (C47-C52), and Cre-mediated deletion experiments showing neuron-specific Cre lines do not affect AKT2 while Nestin-Cre abolishes it (C53-C56). The convergence of anatomical, immunological, and genetic evidence provides strong support for these expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "AKT2 expression in the hippocampus is restricted to astrocytes and absent from neurons, as demonstrated by cell-type-specific Cre-mediated deletion experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by systematic Cre-lox experiments (C53-C56, C138-C139) showing that neuron-specific Cre drivers (Camk2\u03b1-Cre, NSE-Cre) do not reduce hippocampal AKT2 levels, while Nestin-Cre (expressed in neural progenitors that generate both neurons and astrocytes) completely abolishes AKT2 expression. This genetic evidence, combined with GFAP co-localization (C52), provides strong support for astrocyte-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Two mechanistically distinct AKT inhibitors (MK2206 and AZD5363) effectively inhibit AKT activity in hippocampal slices, as evidenced by dose-dependent reduction in phosphorylation of downstream substrates GSK-3\u03b2 and TSC2, despite differential effects on AKT autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological characterization is thorough and well-controlled (C57-C69). MK2206 reduces pAKT S473 while AZD5363 causes hyperphosphorylation (C64), but both reduce substrate phosphorylation in a dose-dependent manner, confirming functional inhibition. The mechanistic explanation for AZD-induced hyperphosphorylation is supported by citations (C65-C66). Controls showing no effect on upstream PDK1 (C67) and no reduction in GluA2 levels (C71) strengthen the specificity claims. The use of two mechanistically distinct inhibitors provides convergent pharmacological evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C86"
+    ],
+    "result": "AKT1, but not AKT2 or AKT3, is specifically required for late-phase long-term potentiation (L-LTP) in hippocampal area CA1, as demonstrated by both pharmacological inhibition and genetic deletion approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is strongly supported by converging pharmacological and genetic evidence. Both AKT inhibitors impair L-LTP (C73), and genetic deletion of Akt1 specifically impairs L-LTP (C79) while Akt2 and Akt3 deletion do not (C80-C81). The isoform specificity is further supported by normal basal transmission, paired-pulse facilitation, and E-LTP in all single KO lines (C75-C78), indicating the deficit is specific to L-LTP. The conclusion that AKT1 is the major isoform (C86) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "AKT1 specifically regulates activity-induced protein synthesis required for L-LTP, as Akt1 KO slices fail to increase protein synthesis and S6 phosphorylation following high-frequency stimulation, while Akt3 KO slices show normal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein synthesis measurements using puromycin labeling (SUnSET method) provide direct evidence for the role of AKT1 in activity-induced translation (C90-C91). The parallel measurements of pS6 S235/236 (C94) provide mechanistic insight into the translational control pathway. The isoform specificity is clearly demonstrated by the differential effects in Akt1 vs. Akt3 KO slices. The consistency between protein synthesis deficits and L-LTP impairment strengthens the causal link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "AKT1 and AKT3 show differential compensatory capacity in L-LTP: AKT1 can partially compensate for AKT3 loss (allowing normal L-LTP in Akt3 KO), but AKT3 cannot compensate for AKT1 loss (resulting in impaired L-LTP in Akt1 KO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the phosphorylation data (C82-C83) show a small increase in pAKT1 in Akt3 KO mice but no change in pAKT3 in Akt1 KO mice, the interpretation of functional compensation (C84-C85) is inferential. The modest increase in pAKT1 (described as 'small but significant') may not fully explain the normal L-LTP in Akt3 KO mice. Alternative explanations, such as inherent functional differences between isoforms or differential subcellular localization, are not adequately ruled out. Additional experiments examining whether AKT1 activity is specifically increased during L-LTP induction in Akt3 KO mice would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "AKT is not required for low-frequency stimulation-induced long-term depression (LFS-LTD) in hippocampal CA1, as neither single isoform deletion nor pan-AKT pharmacological inhibition affects LFS-LTD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is well-supported by both genetic (C102) and pharmacological (C103) approaches. The observation that Akt3 deletion reduces pGSK-3\u03b2 levels (C100), a protein previously implicated in LFS-LTD, yet does not affect LFS-LTD itself, is particularly informative. This suggests that while AKT3 regulates GSK-3\u03b2 phosphorylation, this pathway is not critical for LFS-LTD under the conditions tested. The convergence of multiple negative results from different experimental approaches provides strong evidence for the conclusion (C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Pan-AKT inhibition and PI3K inhibition enhance mGluR-LTD, but single deletion of Akt1, Akt2, or Akt3 does not affect mGluR-LTD, suggesting functional redundancy among AKT isoforms in regulating this form of plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The apparent paradox between pharmacological enhancement (C109-C110) and normal mGluR-LTD in single KO mice (C112) is well-documented and appropriately interpreted as evidence for isoform redundancy (C113). The use of two different AKT inhibitors plus PI3K inhibition provides convergent pharmacological evidence. The inference of redundancy is logical given that complete inhibition enhances LTD while single isoform loss does not. This sets up the rationale for testing double mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Concomitant deletion of Akt1 and Akt3 in CA1 pyramidal neurons results in enhanced mGluR-LTD, demonstrating that AKT1 and AKT3 have overlapping inhibitory functions in regulating mGluR-LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generation of conditional double mutants (cA1F/A3K mice) circumvents the embryonic lethality of constitutive double KO (C114) and provides critical genetic evidence for isoform redundancy. The Western blot (C115) and immunostaining (C116) data confirm substantial reduction of both isoforms in CA1. The enhanced mGluR-LTD in these mice (C117) recapitulates the pharmacological inhibition results, strongly supporting the overlapping function hypothesis (C118-C119). The postnatal deletion strategy also addresses potential developmental confounds (C176).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Removal of both AKT1 and AKT3 leads to altered ERK and S6 signaling following mGluR stimulation, with increased phosphorylation of ERK and S6 at 60 min post-DHPG in cA1F/A3K slices but not WT slices, while basal TSC2 phosphorylation is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical analysis of signaling pathways (C120-C123) provides mechanistic insight into how AKT1/AKT3 loss enhances mGluR-LTD. The time-specific increase in pERK and pS6 at 60 min post-DHPG in double mutants (C120) but not WT (C121), combined with reduced basal pTSC2 (C123), suggests altered translational control. However, the lack of change in pTSC2 at 60 min post-DHPG (C122) is somewhat puzzling given the TSC2-mTOR-S6 pathway relationship. The interpretation that this leads to altered ERK and S6 regulation (C124) is reasonable but would benefit from additional time points and functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "AKT normally acts to inhibit mGluR-LTD through a mechanism that may involve regulating distinct pools of mGluR-induced protein synthesis, potentially acting as a brake on mTOR-regulated translation while ERK promotes protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the evidence that AKT inhibits mGluR-LTD is strong (C173-C174), the mechanistic interpretation (C177-C180) is largely speculative. The proposed model that AKT regulates 'distinct pools' of protein synthesis (C177) and acts as a 'brake' on mTOR-mediated translation (C178) is based primarily on citations to previous literature rather than direct experimental evidence in this study. The speculation that AKT1/AKT3 removal 'may relieve the brake' (C180) is not directly tested. Additional experiments examining protein synthesis rates, specific protein expression, or AMPA receptor internalization in the double mutants would be needed to support these mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "There are conflicting reports in the literature regarding AKT2 cellular localization in the brain, with the Allen Brain Atlas showing neuronal expression, single-cell RNA-seq showing astrocytic expression, and proteomics showing expression in all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately characterizes the state of the literature (C141-C143) and highlights the novelty of the current study's findings. The authors appropriately acknowledge these discrepancies and note that their immunostaining and genetic deletion data provide more definitive evidence for astrocyte-specific expression in the hippocampus. This contextualization strengthens the significance of their AKT2 localization findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C153",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "AKT1 may be an important factor in synaptic and cognitive deficits in schizophrenia, given its role in L-LTP and protein synthesis, the association of AKT1 polymorphisms with schizophrenia, and evidence for reduced protein synthesis in schizophrenia patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily speculative reasoning connecting the current findings to schizophrenia (C153). While the background on AKT1-schizophrenia associations is well-cited (C144-C151), and the link between protein synthesis and L-LTP is established (C152), the leap to clinical relevance is not directly tested. The authors appropriately use cautious language ('may be'), but this remains a hypothesis rather than a demonstrated result. Testing cognitive function or synaptic plasticity in Akt1 KO mice in behavioral paradigms relevant to schizophrenia would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C163",
+      "C164",
+      "C162"
+    ],
+    "result": "AKT1 and AKT3 have distinct roles in protein synthesis: AKT1 is the activity-regulated isoform that converts external stimuli into protein synthesis during L-LTP, while AKT3 is more important for steady-state (basal) protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This functional distinction is well-supported by the differential effects on activity-induced versus basal protein synthesis and S6 phosphorylation. The confirmation of previous findings that basal pS6 is reduced in Akt3 KO but not Akt1 KO mice (C162) strengthens the interpretation. The activity-induced increase in pS6 after HFS in WT and Akt3 KO but not Akt1 KO slices (C94) directly supports the activity-regulated role of AKT1 (C163). The inference about AKT3's role in steady-state synthesis (C164) is reasonable given the basal pS6 data, though direct measurement of basal protein synthesis rates would further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

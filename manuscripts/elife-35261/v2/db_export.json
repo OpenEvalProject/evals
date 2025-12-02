@@ -1,0 +1,1673 @@
+{
+  "submission": {
+    "id": "43c90f96-504c-4e87-a0c7-c46c06dfe461",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:18:02.024012Z",
+    "updated_at": "2025-12-02T01:18:02.024012Z"
+  },
+  "content": [
+    {
+      "id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "submission_id": "43c90f96-504c-4e87-a0c7-c46c06dfe461",
+      "content_type": "manuscript",
+      "content_text": "# Bidirectional encoding of motion contrast in the mouse superior colliculus\n\n## Authors\n\n- Jad Barchini<sup>1</sup>\n- Xuefeng Shi<sup>1</sup>\n- Hui Chen<sup>1</sup>\n- Jianhua Cang<sup>1</sup> ([ORCID: 0000-0002-0760-7468](https://orcid.org/0000-0002-0760-7468)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Northwestern University Evanston United States\n2. Interdepartmental Neuroscience Program Northwestern University Evanston United States\n3. Tianjin Key Laboratory of Ophthalmology and Visual Science, Tianjin Eye Institute, Clinical College of Ophthalmology Tianjin Medical University Tianjin China\n4. Department of Pediatric Ophthalmology and Strabismus Tianjin Eye Hospital Tianjin China\n5. Department of Psychology University of Virginia Charlottesville United States\n6. Department of Biology University of Virginia Charlottesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetection of salient objects in the visual scene is a vital aspect of an animal\u2019s interactions with its environment. Here, we show that neurons in the mouse superior colliculus (SC) encode visual saliency by detecting motion contrast between stimulus center and surround. Excitatory neurons in the most superficial lamina of the SC are contextually modulated, monotonically increasing their response from suppression by the same-direction surround to maximal potentiation by an oppositely-moving surround. The degree of this potentiation declines with depth in the SC. Inhibitory neurons are suppressed by any surround at all depths. These response modulations in both neuronal populations are much more prominent to direction contrast than to phase, temporal frequency, or static orientation contrast, suggesting feature-specific saliency encoding in the mouse SC. Together, our findings provide evidence supporting locally generated feature representations in the SC, and lay the foundations towards a mechanistic and evolutionary understanding of their emergence.\n\n## Introduction\n\nThe detection of objects in the environment is crucial for an animal\u2019s ability to efficiently and safely navigate the world. In the visual system, objects are processed by neurons that respond to specific features in their receptive fields (RFs), such as orientation, movement direction, luminance, and color. Being spatially restricted, each RF provides a local representation of the visual scene. At the perceptual level, however, the same stimulus presented within an RF could appear drastically different depending on its context. For example, a vertical bar would \u2018pop out\u2019 perceptually when it is surrounded by horizontal bars, but not among other identical vertical bars (Li, 1999). Such saliency computation thus requires a comparison between local and global visual features at the neuronal level.\n\nMost studies on feature-specific saliency computation have been conducted in primate and cat primary visual cortex (V1), predominantly in the context of orientation selectivity. It was shown that V1 neurons are suppressed by stimuli of the same orientation in regions surrounding the RF (Jones et al., 2002; Knierim and van Essen, 1992; Sengpiel et al., 1997), consistent with the classical surround suppression seen at the level of the retina and lateral geniculate nucleus (Sachdev et al., 2012). Importantly, V1 neurons displayed lower levels of suppression when static gratings of orthogonal orientations were shown in the surround (Kastner et al., 1999; Knierim and van Essen, 1992; Nothdurft et al., 1999). In response to moving gratings, orthogonal surrounds were even able to induce a certain level of response facilitation in primate V1 (Jones et al., 2001; Jones et al., 2002; Sillito et al., 1995). In other words, depending on the relationship between the properties of the center and surround stimuli, differential levels of suppression or facilitation can occur, thus providing a neural basis for the perceptual \u2018pop-out\u2019 phenomenon.\n\nIt is theorized that feature-specific saliency computations are combined into a map to represent the total saliency value of each point in space (Veale et al., 2017). Although the exact location of where the saliency map is first generated is still a matter of debate, there is a general agreement that the superior colliculus (SC) in the midbrain contains such a map (Veale et al., 2017; Zhaoping, 2016). In primates, SC neurons are not tuned to specific visual properties, consistent with the notion of feature-agnostic saliency representation (White et al., 2017). In contrast, in lower vertebrates such as fish and birds, where neocortex has not evolved, neurons in the optic tectum, the homologue of the mammalian SC, can perform certain feature-specific saliency computations (Ben-Tov et al., 2015; Frost et al., 1981; Sun et al., 2002; Zahar et al., 2012). This has led to the idea that the locus of saliency computation has migrated evolutionarily, among many other visual system functions, from the tectum to the visual cortex (Zhaoping, 2016).\n\nThese considerations thus raise an intriguing question about saliency computation in mice. Although neurons in mouse V1 show similar selectivity compared to those in higher mammals (Niell and Stryker, 2008), the SC remains the most prominent retinal target in mice, and mediates visually-guided behaviors (Ellis et al., 2016; Liang et al., 2015; Shang et al., 2015; Wei et al., 2015; Zhao et al., 2014). Unlike in primates, most visual neurons in the mouse SC are tuned to features such as motion direction or stimulus orientation (Gale and Murphy, 2014; Wang et al., 2010). Here, we study how neurons in the stratum griseum superficiale (SGS) of the mouse SC respond to several types of motion contrast between RF center and surround. We use 2-photon calcium imaging to first study direction contrast in a highly selective population of SGS neurons in the superficial SGS (sSGS). Importantly, by imaging in transgenic mice with labeled GABAergic neurons, we reveal striking differences in the responses of excitatory and inhibitory neurons to direction contrast. We then demonstrate a bias in sSGS neuronal populations towards encoding direction contrast, as opposed to other features of the moving stimulus, possibly identifying a feature-specific saliency encoding in these superficial neurons. Finally, we delve deeper into the SGS to describe the depth-dependent profile of direction contrast responses. Together, our findings provide important information on how motion contrast is encoded by visual neurons in the SC.\n\n## Results\n\n### Responses of sSGS excitatory neurons are modulated by motion contrast\n\nWe first performed 2-photon calcium imaging of SGS neurons in anesthetized mice using the synthetic calcium dye Cal-520. Visual cortex was removed to allow optical access and eliminate any potential cortical influence on SC responses (Figure 1A). We specifically imaged the most superficial lamina of the SGS (sSGS,<50 \u03bcm from the surface), which we have recently shown to be enriched with neurons that are highly selective for movement direction (Inayat et al., 2015). Here, we uncoupled the movement direction between the stimulus center and surround, and determined how sSGS responses were modulated by this form of motion contrast (Figure 1C). These experiments were performed in mice where GAD2+ neurons were fluorescently labeled with tdTomato, allowing us to compare the response properties of inhibitory (GAD2+, GABAergic) and excitatory (GAD2-) neurons (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two-photon calcium imaging in the mouse sSGS (bottom). Depiction of the surgical procedure to expose the SC, showing the removal of V1 (top). The star indicates a rough estimate of the imaging location. (B) Field of view containing sSGS neurons (at 20 \u03bcm below the surface) loaded with Cal-520 (top), GAD2+ neurons (expressing tdTomato) and GAD2- neurons (middle), and a merged image of both channels (bottom). Scale bars are 20 \u03bcm. R, rostral; C, caudal; M, medial; L, lateral. (C) Calcium signal of 4 GAD2- neurons in response to six chosen conditions of the center-surround (C-S) stimulus. C, center; S, surround; Pref, preferred; Opp, opposite. The diagrams on top are for illustration purpose only, while the actual preferred directions vary from cell to cell. The numbers on the left represent the neurons circled in (B, bottom). Neurons 5, 6, 7, and 8 are GAD2+, and their responses are shown in Figure 3A. Thin multicolored traces are individual trials, and thick black traces are the average. All scale bars represent 100% \u0394F/F0. The dotted horizontal lines are aligned to the peak of the black trace in response to the preferred direction at the center. The gray boxes delimit the 2 s period of stimulus presentation. (D\u2013E) Response comparison for individual center-responsive GAD2- neurons at the preferred center direction and when the preferred center was coupled with the same-direction surround (D), or when coupled with opposite-direction surround (E, n\u00a0=\u00a0355 cells, 9 mice). (F) Same plot as (E), but for center-silent neurons. See Results and Materials and methods for the determination of the \u2018preferred center direction\u2019 for these neurons (n\u00a0=\u00a0191 cells, 9 mice). (G) Modulation index distribution under same-surround (green) and opposite-surround (red) conditions (n\u00a0=\u00a0355\u00a0+\u00a0191=546 cells, 9 mice). Both histograms and cumulative distributions (inset) are shown. The color scheme used in panels (D\u2013F) illustrates the results of a bootstrapping test to determine the significance of the C-S modulation for individual neurons (orange indicates potentiation; blue, suppression; gray, no statistically significant change; See Materials\u00a0and\u00a0methods for details).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The same field of view depicted in Figure 1, with the same example neurons circled. (B,C) The mapped receptive fields (RFs) of those example GAD2- (B) and GAD2+ (C) neurons. Each RF is labeled by its corresponding neuron\u2019s number. The blue circle represents the extent of spatial coverage by the center gratings stimulus.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Average responses evoked by flashing black squares of GAD2- neurons that were responsive to the center drifting gratings stimulus (\u2018Center-responsive\u2019, n\u00a0=\u00a0355, 9 mice). The blue circle represents the extent of spatial coverage by the center gratings stimulus, which also applies to panels B-D. (B) Average responses of Center-responsive GAD2+ neurons (n\u00a0=\u00a0379, 9 mice). (C) Average responses of GAD2- neurons that were silent to the separate presentations of center and surround but responded to a C-S combination (\u2018Center-silent\u2019, n\u00a0=\u00a0191, 9 mice). (D) Average responses of Center-silent GAD2+ neurons (n\u00a0=\u00a085, 9 mice). (E) Histogram of the receptive field size of GAD2- (black) and GAD2+ (red) cells that were responsive to the flashing square stimulus (n\u00a0=\u00a0542 GAD2-; n\u00a0=\u00a0425 GAD2+). (F) Cumulative distributions of the same data in (E) (p=0.19, Mann-Whitney U-test). (G) Receptive field centroids, mapped on the area where flashing squares were shown, of a population of GAD2- (black) and GAD2+ (red) neurons from a single imaging field of view. The corresponding values of the 2D standard deviation for each population is shown in the top right. The blue circle represents the extent of spatial coverage by the center gratings stimulus. (H) Comparison of the 2D standard deviations of GAD2- and GAD2+ neuronal populations from all imaged locations (n\u00a0=\u00a022 fields of view, 9 mice, p=0.03, paired t-test).\n\nFor each imaging session, we first mapped the RFs of the imaged neurons using a flashing black square on a gray background (Figure 1\u2014figure supplement 1). A small circular patch of gratings (10\u00b0 radius) was then placed at the center of the RFs and drifted in different directions, to determine the tuning and preferred direction of each imaged neuron. Consistent with our previous finding, about half of sSGS neurons were responsive to the drifting gratings (n\u00a0=\u00a0355/811 GAD2- and n\u00a0=\u00a0379/652 GAD2+, from 9 mice, see Materials and methods for details of determining responsiveness), and most of them were direction selective (DS), showing much higher increases in fluorescence to their preferred direction than to the opposite direction (Figure 1C; 259/355, 73.0% of GAD2-, and 239/379, 63.1% of GAD2+ neurons had gDSI\u00a0\u22650.25).\n\nFor most responsive excitatory neurons (n\u00a0=\u00a0294/355, 82.8%), the small patch of gratings covered their entire RFs (Figure 1\u2014figure supplement 2A), such that gratings in the surround (an annulus from 10 to 30\u00b0 radius) did not cause any response when presented alone (e.g., Figure 1C). However, when the surround gratings were presented simultaneously with the center stimulus, the response magnitude of sSGS neurons was dramatically altered. In the case when both the center and surround gratings moved along the preferred direction of a given excitatory neuron, we saw a classical surround-suppression of the center response (Figure 1C\u2013D). In striking contrast, when the preferred direction in the center was coupled with a surround stimulus of opposite direction, most excitatory sSGS neurons increased their responses (Figure 1C,E). In other words, to the same stimulus in their RF center, excitatory sSGS neurons could increase or decrease their response, that\u00a0is, they are\u00a0bidirectionally modulated, depending on what is shown in the surround.\n\nInterestingly, a substantial population of excitatory sSGS neurons did not respond to the center or the surround gratings when presented separately but became responsive to particular Center-Surround (C-S) combinations (n\u00a0=\u00a0191/811, 23.6%). This was despite the fact that the majority of these cells (154/191, 80.6%) had mappable RFs that were covered by the center patch (Figure 1\u2014figure supplement 1A,B and Figure 1\u2014figure supplement 2C). We assigned the \u2018preferred direction\u2019 of these \u2018center-silent\u2019 neurons as the center direction of their preferred C-S stimulus. When this \u2018preferred direction\u2019 in the center was coupled with its opposite direction surround, an emergent response was observed in those cells (e.g., cell four in Figure 1C, and Figure 1F).\n\nTo quantify the modulating effect of the surround, we calculated a \u201cmodulation index\u201d for each neuron to compare its response to the center stimulus alone at the preferred direction (\u201cpreferred center\u201d, $R_{pref.C}$) with that to \u201cpreferred center\u201d coupled with a particular surround ($R_{pref.CwithS})$. The index, $ModulationIndex=\\frac{R_{pref.CwithS}-R_{pref.C}}{R_{pref.CwithS}+R_{pref.C}},$ ranged between -1 and 1 where negative values represented decreases in response and positive values represented increases. Over the entire population of these excitatory sSGS cells (n = 355 \u201ccenter responsive\u201d + 191 \u201ccenter silent\u201d = 546), the response to the \u201cpreferred center\u201d stimulus became smaller with the introduction of the same direction surround in 83.3% of cells (n = 455/546), and larger in 74.7% of cells (n = 408/546) when the surround was moving in the opposite direction (Fig. 1G, Kolmogorov Smirnov [KS] test, p = 4.0e-83, KS stat = 0.59).\n\n### sSGS excitatory neurons encode motion contrast\n\nThe above results demonstrate that excitatory neurons in the sSGS detect motion saliency by virtue of their sensitivity to the difference in direction between the RF center and surround. To study how sSGS neurons are tuned to this form of motion contrast, we systematically and independently varied the direction of the center and surround of the C-S gratings. Specifically, our stimulus set consisted of 81 C-S combinations (Figure 2A; 8 directions and one blank for both center and surround).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig2-v2.jpg)\n\n**Figure 2.:** (A) Averaged response matrix of center-responsive GAD2- neurons to all 81 combinations of the C-S stimulus, aligned to each cell\u2019s preferred direction (n\u00a0=\u00a0355 cells, 9 mice). The color scale to the right represents the response magnitude in % \u0394F/F0. (B) Aligned and averaged population tuning curves for these neurons under particular C-S combinations. The x-axis represents the direction of the center stimulus relative to the preferred direction (\u2018Pref.\u201d). The different colored curves represent the relationship of the surround to the center, corresponding to the same colored lines in (A). All data points are compared statistically to their corresponding points in the black tuning curve. (C) Geometric modulation of the center tuning curve by the two different surrounds in B; same surround induced divisive suppression (green, slope\u00a0=\u00a00.50, y-intercept\u00a0=\u00a00.48, R2\u00a0=\u00a00.97), and opposite surround induced multiplicative potentiation (red, slope\u00a0=\u00a01.63, y-intercept\u00a0=\u00a01.55, R2\u00a0=\u00a00.94). (D) Multiplicative potentiation of the center tuning curve by orthogonal-direction surrounds (slope\u00a0=\u00a01.17, y-intercept\u00a0=\u00a02.54, R2\u00a0=\u00a00.96). The dashed blued lines in C and D are lines of identity. (E) The slopes of modulation illustrated in (C-D, corresponding colors) as well as the intermediate conditions vs. C-S direction difference (gray lines delimit the 95% confidence interval). The dashed blued line indicates a slope of 1, that is, no modulation. (F) Mean averaged responses (\u0394F/F0) of center-silent GAD2- neurons vs. C-S direction difference (n\u00a0=\u00a0191 cells, 9 mice). The dashed blue line is averaged \u2018response\u2019 to center alone. Data in B and F are presented as mean\u00a0\u00b1\u00a0s.e.m. *: p<0.05, Mann-Whitney U-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Analysis of motion contrast encoding for individual center-responsive GAD2- cells (n\u00a0=\u00a0355, 9 mice). Three examples are shown to illustrate the variability in goodness of fit. For each cell, its response to a particular C-S difference (red traces in top panels) was fitted to a first degree polynomial against its response to the corresponding center gratings alone (black traces in top panels). The fitted lines are shown in the bottom panels, and the slopes and R2 values are shown in the top panels. (D\u2013F) Histograms of R2 values (D), y-intercept (E), and slopes (F), color coded by C-S combinations. (G) The fitted slope was averaged over all cells and plotted against the C-S difference (mean\u00a0\u00b1\u00a0s.e.m, *: p<0.01, Mann-Whitney U-test). The dashed blue line is slope of 1, that is, no modulation. (H\u2013I) Same plots as in (G) and (E), but only for fits where R2\u00a0\u22650.5 (mean\u00a0\u00b1\u00a0s.e.m are shown in H, as well as the number of cells in each C-S category where R2\u00a0\u22650.5, *: p<0.01, Mann-Whitney U-test).\n\nWe shifted the 81 condition response matrix of all excitatory cells that responded to center gratings (n\u00a0=\u00a0355) in order to align their preferred directions. These shifted responses were then averaged and illustrated in a 9 \u00d7 9 matrix (Figure 2A). This matrix allows us to examine the responses under different C-S conditions. For example, the top row (Black trace in Figure 2A) represents the stimulus condition where the surround was \u2018blank\u2019, that is, only center grating was shown. As expected, these neurons were DS in response to the center grating alone, showing greater responses to the preferred directions than to the opposite direction (Black trace in Figure 2A\u2013B). Furthermore, surround suppression was seen for all directions of the center stimulus when the surround gratings were moving in the same direction as the center (i.e., the diagonal in the matrix; Green traces in Figure 2A\u2013B). Similarly, the potentiation by opposite surround was also seen for all directions of the center stimulus (Red traces in Figure 2A\u2013B).\n\nInterestingly, this modulation was geometric in nature, ranging from a divisive suppression by the same surround to a multiplicative potentiation by the opposite surround (Figure 2C). In fact, a linear modulation of the center responses was also seen with intermediate differences between C-S directions (e.g., Figure 2D). We thus calculated the slope of these linear relationships (i.e., fold changes of center responses by the surround), and found that it gradually increased with the C-S direction difference (Figure 2E). In other words, excitatory sSGS neurons were monotonically tuned to motion contrast, showing maximal responses to the most salient stimulus with oppositely-moving center and surround. We also performed similar analyses with normalized responses for each cell before averaging and reached the same conclusions (data not shown). Furthermore, in addition to analyzing the averaged data, which reveal how sSGS excitatory neurons encode motion contrast as a population, we also examined the geometric relationship in individual cells. There was great variability in the goodness of fit between Center alone and C-S responses (Figure 2\u2014figure supplement 1A\u2013D), but the vast majority of them could be reasonably fitted by a linear relationship (R2\u00a0\u22650.5) with near zero y-intercept (Figure 2\u2014figure supplement 1E), suggesting a multiplicative modulation. Importantly, the average slope increased monotonically with the C-S direction difference (Figure 2\u2014figure supplement 1F\u2013I), just like for\u00a0the population response.\n\nFinally, we performed a similar analysis for the \u2018center silent\u2019 neurons (n\u00a0=\u00a0191), by averaging their responses to particular C-S direction differences. An emergent, and again monotonically increasing, response was seen as the C-S direction difference increased (Figure 2F). These cells thus display similar tuning to direction contrast as their center-responsive neighbors.\n\n### Inhibitory neurons in the sSGS are suppressed by motion contrast\n\nNext, we analyzed how inhibitory sSGS neurons (GAD2+) responded to C-S direction contrast. Just like excitatory neurons, inhibitory neurons also experienced surround suppression when the surround direction matched the direction in the RF center (Figure 3A\u2013B). They were, however, significantly less suppressed than their excitatory counterparts (Figure 4A, KS test, p=6.0e-20, KS stat\u00a0=\u00a00.30). Furthermore, when the surround grating drifted in the opposite direction, the inhibitory neurons\u2019 response to the preferred center stimulus was quite strongly suppressed (Figure 3A and C). This is in stark contrast with the potentiation seen in excitatory sSGS neurons under the same conditions (Figure 4B, KS test, p=1.46e-58, KS stat\u00a0=\u00a00.51). Consistently, compared with excitatory neurons, fewer \u2018center-silent\u2019 inhibitory cells became responsive when opposite center and surround was shown and their responses were weaker (n\u00a0=\u00a085/652; Figure 3D, compare with Figure 1F). Overall, the suppression by the opposite surround was even greater than that by the same-direction surround for most inhibitory neurons (Figure 3E, KS test, p=3.2e-6, KS stat\u00a0=\u00a00.17), as well as at the population level (compare green and red curves in Figure 3\u2014figure supplement 1A\u2013B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig3-v2.jpg)\n\n**Figure 3.:** (A) Same as in Figure 1C, for four inhibitory neurons, with numbers on the left representing the neurons circled in Figure 1B, bottom. (B\u2013C) Response comparison for individual center-responsive GAD2+ neurons to the preferred center direction and when the preferred center was coupled with same-direction surround (B), or opposite-direction surround (C, n\u00a0=\u00a0379, 9 mice). The color scheme follows that in Figure 1D\u2013F. (D) Response comparison for GAD2+ neurons that were silent to the separate presentations of center and surround but responded to a C-S combination, at the \u2018preferred center\u2019 and when coupled with the opposite-direction surround. See Materials and methods for the determination of the \u2018preferred center\u2019 for those neurons (n\u00a0=\u00a085 cells, 9 mice). (E) Modulation index distribution of neurons in (B\u2013D) under same-surround (green) and opposite-surround (red) conditions (n\u00a0=\u00a0379\u00a0+\u00a085\u00a0=\u00a0464 cells, nine mice, KS test, p\u00a0=\u00a03.2e-6, KS stat\u00a0=\u00a00.17).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Averaged response matrix of center-responsive GAD2+ neurons to all 81 combinations of the C-S stimulus, aligned to each cell\u2019s preferred direction (n\u00a0=\u00a0379 cells, 9 mice). The color scale to the right represents the response magnitude in % \u0394F/F0. (B) Aligned and averaged population tuning curves for these neurons under particular C-S combinations. The x-axis represents the direction of the center stimulus relative to the preferred direction (Pref.). The different colored curves represent the relationship of the surround to the center, corresponding to the same colored lines in A. (C) Comparing these cells\u2019 response to center\u00a0+same surround against the sum of their responses to the Center and Surround stimuli alone. (D) Comparing these cells\u2019 response to center\u00a0+\u00a0opposite surround against the sum of their responses to the Center and Surround stimuli alone. (E) Both same (left panel) and opposite surround (right) are still suppressive when only including cells that were not responsive to Surround stimulus alone.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Cumulative distributions of modulation index by same surround (A) or opposite surround (B) in GAD2- (dashed lines) and GAD2+ cells (solid lines). The distributions are the same as in Figure 1G and Figure 3E, grouped here to highlight the differences between the two cell types. (C) Percentages of GAD2- and GAD2+ neurons in four response categories (determined by a bootstrapping test) to the presentation of the preferred center\u00a0+\u00a0opposite surround combination: non-responsive, non-modulated, potentiated, and suppressed. Values in the boxes represent the percentage of neurons in each category; numbers at the top represent the total numbers of neurons in the study. The \u2018non-responsive\u2019 category included neurons that did not respond to any of the C-S conditions and a small population of neurons that responded to the surround alone, but not the center stimulus.\n\nIn addition to calculating a modulation index, we also used a bootstrapping test to determine statistical significance for individual neurons when comparing their response to C-S combinations with that to the center stimulus alone (see Materials and methods for details). Consistently, using this method, we found that a much larger proportion of excitatory sSGS neurons was significantly potentiated by the opposite-direction surround (n\u00a0=\u00a0274 out of 546 responsive cells, 50.2%), compared to inhibitory neurons (n\u00a0=\u00a046 out of 464, 9.9%; Figure 4C).\n\nFinally, we found that many center-responsive inhibitory neurons (204/379, 53.8%) could be activated by a surround alone that was moving in their preferred direction (Figure 3A and Figure 3\u2014figure supplement 1B, blue curve). Such a response profile was rarely observed in excitatory neurons. This was quite surprising given the fact that excitatory and inhibitory neurons had similar RF sizes when mapped with flashing squares (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2A\u2013F, p=0.19, Mann-Whitney U-test comparing their RF size in panels E-F, n\u00a0=\u00a0542 GAD2- and 425 GAD2+ neurons responsive to flashing squares). It is possible that flashing squares might not provide enough drive to activate inhibitory neurons away from the center, leading to an underestimation of their effective RF size. Drifting gratings, on the other hand, could provide that drive, thereby revealing a potential difference between the RF properties of excitatory and inhibitory neurons in the sSGS. Alternatively, but non-exclusively, a wider spread of GAD2+ RFs compared to their GAD2- neighbors could lead GAD2+ neurons to sample inputs from beyond the center drifting gratings stimulus, therefore explaining those observations. This was true to some extent. The 2-dimensional standard deviation of GAD2+ RF centroids for any given imaging field of view was statistically larger than that of GAD2- ones (Figure 1\u2014figure supplement 2G and H, p=0.03, paired t-test). However, while this difference is statistically significant, it is rather subtle, and unlikely to account for the surround-evoked responses in GAD2+ cells.\n\nRegardless of their origin, we performed two additional analyses to determine whether the \u2018surround-alone\u2019 responses could confound our conclusions. In one, we compared the responses of these cells to C-S stimuli vs. the sum of their respective responses to Center alone and to Surround alone (Figure 3\u2014figure supplement 1C\u2013D). In the other, we only included the inhibitory cells that did not show any significant response to the Surround alone stimulus and examined their response profiles (n\u00a0=\u00a0175/379, Figure 3\u2014figure supplement 1E). Both analyses support the conclusion that inhibitory cells were suppressed by a surround stimulus, regardless of its direction. Together, these results demonstrate that sSGS excitatory and inhibitory neurons have slightly different RF properties and are differentially modulated by motion contrast. The greater suppression of inhibitory neurons by the opposite-direction surround suggests a possible role for them in mediating the potentiation of excitatory neurons through disinhibition.\n\n### sSGS are specifically tuned to motion direction contrast\n\nThe responses we observed in the sSGS could be specific to the particular property of motion direction. Alternatively, such responses could be elicited by any type of feature-contrast between center and surround, in an indiscriminate manner. To assess the specificity of these responses, we compared the response of sSGS neurons to several types of C-S feature contrasts, including direction, phase, temporal frequency, and static orientation differences.\n\nWe first presented the mice with a surround stimulus drifting in the same direction as the center, but 180\u00b0 out of phase (\u2018Anti-phase S\u2019, Figure 5A). Compared to the in-phase surround (\u2018Same S\u2019), which strongly suppressed sSGS responses to the center stimulus, the anti-phase surround resulted in an attenuated suppression (or even a slight potentiation) in both GAD2- and GAD2+ neurons (Figure 5B\u2013C; compare the green and the red dashed lines in Figure 5B, p=2.2e-10, and Figure 5C, p=6.2e-6). Similar responses were seen when we varied the temporal frequency of the surround grating. Either lower (1 Hz, red dotted) or higher (4 Hz, navy blue dotted) temporal frequencies in the surround elicited a similar attenuation of response suppression compared to a uniform (2 Hz, solid green) temporal frequency between center and surround (compare the solid green line to the dotted red and blue lines in Figure 5B\u2013C, p<0.01 for both comparisons).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig5-v2.jpg)\n\n**Figure 5.:** (A) Visual stimuli used in this set of experiments and analyses, with center gratings presented at individual cells\u2019 preferred directions, either alone (Pref. C, left) or surrounded by different patterns of drifting grating: surround along the same direction, opposite direction, anti-phase along the same direction, and different temporal frequencies (Opp., Opposite; S, Surround). (B\u2013C) Modulation index quantifying how the response to each C-S stimuli differ from that to center grating only. The same color and line styles follow those in A. Plot B is for center-responsive GAD2- neurons (n\u00a0=\u00a073, 3 mice, KS test, p<0.01 between opposite direction surround and any of the three dotted or dashed lines; and p<0.01 between same direction surround and any of the three dotted or dashed lines). Plot C is for GAD2+ neurons (n\u00a0=\u00a0124, 3 mice, KS test, p<0.01 between opposite direction surround and any of the three dotted or dashed lines, and p<0.01 between same direction surround and any of the three dotted or dashed lines). (D\u2013E) Modulation index for responses to static oriented gratings in center and surround, under iso-surround (green) and cross-surround (red) conditions in center-responsive GAD2- (D, n\u00a0=\u00a0111, 3 mice, KS test, p\u00a0=\u00a02.5e-4, KS stat\u00a0=\u00a00.28), and GAD2+ neurons (E, n\u00a0=\u00a0155, 3 mice, KS test, p\u00a0=\u00a05.8e-4, KS stat\u00a0=\u00a00.23).\n\nImportantly, the attenuated suppression seen in these 3 sets of center-surround contrast (anti-phase, and lower and higher temporal frequency) did not reach the level of potentiation experienced by the same excitatory neurons to an oppositely-moving surround (solid red line in Figure 5B, n\u00a0=\u00a073, 3 mice, KS test, p<0.01 for all comparisons). In the same vein, the heightened level of suppression experienced by inhibitory neurons to an oppositely-moving surround could not be matched either under the aforementioned conditions (solid red line in Figure 5C, n\u00a0=\u00a0124, 3 mice, KS test, p<0.01 for all comparisons). In fact, as mentioned earlier, and as a point of major divergence, inhibitory neurons experienced a significant alleviation of suppression under those conditions, when compared to non-contrasting C-S stimulus conditions (Figure 5C).\n\nNext, we tested static gratings with varying orientations. Consistent with their selectivity for the direction of moving stimuli, sSGS neurons showed weaker responses to static gratings (data not shown). More relevant to the current study, both GAD2- and GAD2+ neurons experienced a slightly attenuated level of suppression under cross-surround conditions, but no potentiation, compared to iso-surround (Figure 5D\u2013E). In addition, the excitatory neurons (i.e., GAD2-) appeared to be more strongly suppressed than the inhibitory neurons (i.e., GAD2+) regardless of the surround orientation (Compare same-colored distributions in Figure 5D and E; Iso-surround GAD2- vs. GAD2+, KS test, p=1.6e-8, KS stat\u00a0=\u00a00.37; Cross-surround GAD2- vs. GAD2+, KS test, p=9.7e-7, KS stat\u00a0=\u00a00.33). In other words, the bidirectional modulation of activity that we observed in GAD2- vs. GAD2+ neurons under C-S motion direction contrast was not observed under static orientation opponency conditions.\n\nAltogether, these observations reveal a specificity of saliency responses in sSGS neurons to motion direction contrast between the center and surround. The same cells respond both qualitatively and quantitatively differently when the features that render the center stimulus salient are related to other aspects of motion or to static orientation.\n\n### Depth-dependent motion contrast coding in the SGS\n\nStudies in a number of species have shown that the visual layers of the SC or optic tectum can be further divided into sub-laminae (May, 2006). Indeed, based on a small number of single unit recordings, we recently found that direction selectivity in the mouse SGS declines with depth (Inayat et al., 2015). We thus assessed the depth profile of motion direction contrast responses and its relationship to\u00a0direction selectivity. We were limited in our imaging depth when using calcium indicators that disperse throughout the cell body and processes, due to the strong neuropil signal in the deeper SGS. To overcome this limitation, we used a genetically-encoded calcium indicator (AAV-H2B-GCaMP6s) that was largely restricted to the cell nucleus (Figure 6A). This led to a substantial reduction of the neuropil signal in the deeper layers of the SGS, and allowed us to confidently image down to depths of around 200 \u00b5m. We characterized the performance of this indicator by performing simultaneous two-photon imaging and cell-attached recording to correlate the fluorescent signal with spiking activity. Although the \u2018nuclear\u2019 GCaMP6s was significantly slower than Cal-520 and could not resolve single spike activity (Figure 6\u2014figure supplement 1A\u2013C), it was able to reliably report the tuning of SGS neurons to the C-S stimuli (Figure 6\u2014figure supplement 1D\u2013E and Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig6-v2.jpg)\n\n**Figure 6.:** (A) Two-photon calcium imaging at different depths of the SGS, using AAV-H2B-GCaMP6s. Shown are neurons expressing H2B-GCaMP6s at four different depths in the SGS of a GAD2-tdTomato mouse. Scale bar is 20 \u00b5m. (B) Cumulative distribution of gDSI divided into four depth categories for center-responsive GAD2- neurons (n\u00a0=\u00a0378, 10 mice). The same depth color code applies to panels B-E. (C) Cumulative distribution of the opposite-surround modulation index for center-responsive and center-silent GAD2- neurons (n\u00a0=\u00a0378\u00a0+\u00a0176=554, 10 mice). (D) Cumulative distribution of the same-surround modulation index for GAD2- neurons (n\u00a0=\u00a0554, 10 mice; p<0.05 between \u2018superficial\u2019 and 60 \u00b5m, and between 120 \u00b5m and 180 \u00b5m, KS test). (E\u2013G) Same as in (B\u2013D), but for GAD2+ neurons (n\u00a0=\u00a0534 in D; and n\u00a0=\u00a0534\u00a0+\u00a0127=661 in E, 10 mice; In G, p<0.05 between 60 \u00b5m and 120 \u00b5m, KS test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Example GAD2- neuron patched at a depth of 80 \u03bcm (left) and the corresponding raw calcium trace and spiking activity of the same neuron (Cell#1) to the presentation of 5 randomized conditions of the C-S visual stimulus (right). (B) Linear relationship between the \u0394F/F0 signal and the corresponding spiking activity for Cell#1. Each data point represents a single trial. (C) Comparison between the response dynamics of Cal-520 and H2B-GCaMP6s by averaging the maximum responses of all cells (i.e. each cell\u2019s response to its preferred C-S combination), after normalization to the peak of each trace (Red, mean and SD of the Cal-520 responses, n\u00a0=\u00a01065; Blue, mean and SD of the H2B-GCaMP6s responses, n\u00a0=\u00a01140). The gray shaded region represents the 2 s period of visual stimulus presentation. The red vertical lines delimit the \u0394F/F0 window for analyzing Cal-520; the blue vertical lines delimit the \u0394F/F0 window for H2B-GCaMP6s. (D) Relationship between \u0394F/F0 and spike rate for Cell#1 using four different methods for calculating \u0394F/F0. For panels B, D, and E, diagrams on top of each panel represent the different methods for \u0394F/F0 calculation. The onset and offset of the stimulus is depicted as a square wave. Time stamps are in seconds, and the yellow and green shaded regions represent the respective time windows for F0 and F that were considered for the calculation of \u0394F/F0. For the last panel in D, F0 for every point in F was extrapolated from the signal decay before stimulus onset (pink shaded region). Note that regardless of the method, the relationship between \u0394F/F0 and spiking is maintained; the only major difference being the magnitude of \u0394F/F0. (E) Relationship between \u0394F/F0 and spike rate for two more example cells (Cell#2, left; Cell#3, right), using the adopted \u0394F/F0 calculation method in this study.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Calcium signal of 5 GAD2- neurons in response to four chosen conditions of the C-S stimulus. The depth of each neuron in the SGS is specified to the left. Figure conventions are the same as in Figures 1C and 3A. (B) Comparison in the distribution of the gDSI using two different \u0394F/F0 calculation methods, showing very similar trends. The \u0394F/F0 calculation methods are described at the top and apply to the corresponding panels in both B and C below. (C) The distribution of the modulation index of GAD2- cells by the opposite surround is also preserved under those two \u0394F/F0 calculation methods. The depth color code in panels B and C is the same as in Figure 4B\u2013E.\n\nWe first quantified SGS neurons\u2019 direction selectivity in response to the center gratings. Largely consistent with the results using Cal-520, the very superficial SGS lamina was enriched with highly DS cells, including both excitatory and inhibitory neurons (black curves in Figure 6B and\u00a0E, respectively; 109/125, 87.2% of GAD2- and 106/146, 72.6% of GAD2+ neurons had gDSI\u00a0\u22650.25). The degree of direction selectivity declined with depth in the SGS, confirming our previous single unit results and results from a recent study using high-density electrode recordings (Ito et al., 2017). Importantly, our results indicate that the decline was observed for both excitatory (Figure 6B, KS test, p=1.7e-16, KS stat\u00a0=\u00a00.62, between the most superficial (black) and deepest (magenta) cell populations) and inhibitory neurons (Figure 6E, KS test, p=4.6e-7, KS stat\u00a0=\u00a00.39).\n\nWe then examined the depth profile of the surround modulation. In response to oppositely-moving surround, the response potentiation of excitatory neurons that we observed in the sSGS using Cal-520 was confirmed with nuclear GCaMP6s. Interestingly, this potentiation gradually turned into suppression with depth (Figure 6C, KS test, p<0.01 between the four depths). On the other hand, surround of the same direction remained suppressive across depth, despite some subtle difference (Figure 6D). In the case of inhibitory neurons, no significant change was seen in the opposite surround modulation index with depth (Figure 6F) and only minor difference in the same surround modulation index (Figure 6G), but overall the cells remained similarly suppressed by the opposite or same surround.\n\nThe concurrent decline in excitatory cells\u2019 gDSI and modulation index with depth suggested a potential correlation between these properties. Indeed, a significant, albeit noisy, correlation was seen between the two variables for excitatory neurons (Figure 7A, r\u00a0=\u00a00.38, p=1.3e-14), where highly DS neurons tend to be potentiated by the opposite surround, while the non-selective ones tend to be suppressed. In contrast, we observed a negative correlation for inhibitory neurons between the modulation index and gDSI (Figure 7B, r\u00a0=\u00a0\u22120.42, p=4.2e-24), where the highly DS cells were much more suppressed by the opposite surround. Interestingly, a positive correlation was seen between the modulation index and gDSI for inhibitory neurons when the same surround was presented (Figure 7C, r\u00a0=\u00a00.43, p=8.1e-26). Correlations of the same polarities were also observed for the sSGS excitatory and inhibitory neurons that were imaged with Cal-520 (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013B) Relationship between the opposite-surround modulation index and gDSI for center-responsive GAD2- neurons (A, n\u00a0=\u00a0378, 10 mice) and GAD2+ neurons (B, n\u00a0=\u00a0534, 10 mice) at all depths combined. (C) Relationship between the same-surround modulation index and gDSI for the same cells in B. (D) Modulation index by same or opposite surround for GAD2+ neurons, separated into two gDSI categories (gDSI\u00a0<\u00a00.5, n\u00a0=\u00a0302; gDSI\u00a0\u2265\u00a00.5, n\u00a0=\u00a0232, 10 mice. Data are presented as mean\u00a0\u00b1\u00a0s.e.m. * represents p<0.01, Mann-Whitney U-test).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35261/elife-35261-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013B) Relationship between the modulation index and gDSI for center-responsive GAD2- neurons under same-direction surround (A, r\u00a0=\u00a0\u22120.05, p=0.33) and opposite-direction surround (B, r\u00a0=\u00a00.20 p=1.0e-4). (C\u2013D) Relationship between the modulation index and gDSI for center-responsive GAD2+ neurons (n\u00a0=\u00a0379 cells, 9 mice) under same-direction surround (C, r\u00a0=\u00a00.24, p=1.5e-6), and under opposite-direction surround (D, r\u00a0=\u00a0\u22120.35 p=2.0e-12).\n\nImaging deeper into the SGS also allowed us to reveal an intriguing property of inhibitory neurons. These cells appear to form two clusters based on their gDSI (Figure 7B\u2013C). The more DS cells (gDSI\u00a0\u2265\u00a00.5) were much more susceptible to suppression by the opposite direction surround compared to less selective counterparts (Figure 7B, KS test, p=1.1e-19, KS stat\u00a0=\u00a00.41, between the \u2018gDSI\u00a0\u2265\u00a00.5\u2019 and \u2018gDSI\u00a0<\u00a00.5\u2019 populations; Figure 7D, Mann-Whitney U-test, p=3.7e-19, between \u2018gDSI\u00a0\u22650.5 Opp.\u2019 and \u2018gDSI\u00a0<\u00a00.5 Opp.\u201d), and much less susceptible to suppression by the same surround (Figure 7C, KS test, p=2.5e-19, KS stat\u00a0=\u00a00.40, between the \u2018gDSI\u00a0\u2265\u00a00.5\u2019 and \u2018gDSI\u00a0<\u00a00.5\u2019 populations; Figure 7D, Mann-Whitney U-test, p=7.5e-24, between \u2018gDSI\u00a0\u2265\u00a00.5 Same\u2019 and \u2018gDSI\u00a0<\u00a00.5 Same\u2019). Whether they correspond to different functional classes of inhibitory neurons and how they might be involved in motion contrast coding remain to be determined in future studies.\n\n## Discussion\n\nIn this study, we determined how neurons in the mouse SGS encode motion contrast between their RF center and surround. The responses of superficial excitatory neurons are bidirectionally modulated, increasing monotonically as a function of the direction difference between the center and surround, from suppression by the same-direction surround to maximal potentiation by an oppositely-moving surround. Such response profiles are likely important for the animal to detect object motion in the environment and distinguish it from self-induced global motion in the background.\n\n### Saliency computation and representation\n\nCurrent theories postulate that visual saliency is analyzed separately by feature-specific channels, which are then combined into a feature-agnostic saliency map (Veale et al., 2017). A classic example of feature-specific saliency computation takes place in V1 (Li, 2002). Being orientation selective, V1 neurons modulate their responses depending on the orientation difference between the RF and its surround. In primate and cat V1, lower levels of suppression, or even facilitation, could occur when cross-oriented stimuli were shown in the surround (Jones et al., 2001; Jones et al., 2002; Kastner et al., 1999; Knierim and van Essen, 1992; Nothdurft et al., 1999; Sengpiel et al., 1997; Sillito et al., 1995). More recent studies have shown similar findings in mouse V1, where responses were suppressed by an iso-oriented surround, but experienced an attenuation of suppression to a cross-oriented surround (Self et al., 2014). This type of differential neuronal activity may underlie the \u2018pop-out\u2019 phenomenon mentioned earlier (Li, 1999). Similarly, the direction-contrast dependent response might help the animal distinguish between self-induced motion in the visual scene, manifested as full-field motion, and actual object motion in the RF. Indeed, a similar role has been proposed for a population of neurons in mouse V1, under awake and running conditions (Keller et al., 2012; Zmarz and Keller, 2016). Importantly, mouse studies have allowed researchers to explore the circuit mechanisms underlying surround suppression in more detail. With the available genetic toolkit in this species, the specific contributions of different types of cortical inhibitory neurons to surround-suppression are now being elucidated (Adesnik et al., 2012; Nienborg et al., 2013).\n\nIn lower vertebrates where neocortex has not evolved, the SC homologue optic tectum is the main visual center for signal processing, including saliency analysis. Tectal neurons in these species are usually motion sensitive and selective for movement direction. In barn owls, tectal neurons are differentially suppressed depending on the motion direction in the surround (Zahar et al., 2012). In the pigeon tectum, a potentiating effect could be elicited under conditions of center-surround motion-opponency (Frost et al., 1981; Sun et al., 2002). Additionally, studies in the archer fish showed that their tectal neurons exhibited contextual modulation which might underlie \u2018pop-out\u2019 in a visual search paradigm (Ben-Tov et al., 2015).\n\nIn the primate SC, very few visual neurons are tuned to specific features such as direction or orientation. The SC is therefore thought to be the locus of integration of feature-specific cortical inputs into a feature-agnostic saliency map (Veale et al., 2017), where neurons would respond indiscriminately to any feature contrast between the RF center and the surround. In contrast, neurons in the mouse SGS are mostly tuned to particular visual features such as motion direction. We demonstrate here that sSGS neurons in fact perform feature-specific saliency computations by encoding direction contrast in a monotonic, bidirectional, and cell-type specific fashion. Our findings are largely consistent with previous studies of orientation contextual modulation in rat SC (Girman and Lund, 2007), and more recently in mouse SC (Ahmadlou et al., 2017), where SGS neurons show greater responses when the center grating is surrounded by cross-orientated surround than by iso-oriented surround. Interestingly, we found that this computation is cell-type specific and more prominent in the very superficial SGS. In the mouse SC, direction selectivity is lost in the deeper laminae of the SGS, and the intermediate layers are multisensory integrators (Cang and Feldheim, 2013; Inayat et al., 2015). It is therefore possible that the transformation from a feature-specific saliency analysis to a feature-agnostic saliency map, or even more generally to a modality-agnostic saliency map, takes place between the deep SGS and the intermediate layers of the SC. Our results thus significantly expand on past findings of contextual modulation in the tectum as well as the SC. Importantly, the comparison of SC response properties across vertebrate species, including our current findings, supports the idea of a gradual evolutionary migration of saliency computation from a single locus in the SC/OT to a multi-structural process that involves cortical inputs (Zhaoping, 2016).\n\n### Mechanisms for motion contrast computation in the mouse SGS\n\nOne of the main reasons for studying saliency computation in mice is that we can monitor the activity of specific cell types using modern genetic and imaging techniques. Here we show that SGS excitatory and inhibitory neurons respond differently to the same motion contrast stimuli, an important finding that had not been shown in any other species. The inhibitory circuits in the rodent SGS have only been studied in the context of classical surround suppression, mostly using stimulus size tuning as a measure of modulation (Binns and Salt, 1997; Kasai and Isa, 2016). A recent two-photon imaging study in the mouse SGS showed that the activity of local inhibitory and excitatory neurons is equally suppressed by the surround, implicating long range inhibitory input in mediating the phenomenon (Kasai and Isa, 2016). In our current study, however, we observe interesting differences in the responses of excitatory and inhibitory neurons. Inhibitory neurons are less susceptible to surround suppression, especially when they are direction selective (Figure 7). These neurons can nonetheless be much more suppressed by a surround moving in the opposite direction (Figure 7), potentially contributing to the increased responses in excitatory neurons.\n\nInput from other brain areas could also contribute to surround modulation of SGS activity. The SGS receives direct inputs from both retina and visual cortex, in addition to a few other structures (May, 2006). Visual cortex was removed in our experiments, ruling out its involvement in setting up those responses. This is consistent with the findings of a recent electrophysiological study suggesting that visual cortex may actually limit context-dependent modulation by cross-oriented gratings in the SGS (Ahmadlou et al., 2017). The same study also showed that this type of contextual modulation was more prominent in awake mice than in anesthetized mice (Ahmadlou et al., 2017). How the direction-specific contextual modulation we discovered here might be influenced by anesthesia, and how it might be modulated by cortex in awake mice, remain to be determined.\n\nRetinal inputs, on the other hand, were shown to be the source of direction selectivity in the SGS (Shi et al., 2017) and could provide contextually-modulated input. Surround-modulated suppression was observed under several motion-contrast regimes (spatial phase, spatial frequency, and velocity) in direction-selective retinal ganglion cells (DSGCs) in rabbits (Chiao and Masland, 2003), and orientation-specific surround modulation of RGCs was shown in rats (Girman and Lund, 2010). Furthermore, object motion sensitive (\u2018OMS\u2019) RGCs were found in rabbits and salamander, which are suppressed by global motion but respond strongly to motion difference between RF center and surround (Olveczky et al., 2003; Baccus et al., 2008). The OMS cells included several RGC types, and their selectivity for differential motion is independent of direction (Olveczky et al., 2003). Even more relevantly, the same stimuli used in our experiments have also been used to investigate context modulation in mouse DSGCs in an unpublished study (Xiaolin Huang and Wei Wei, University of Chicago, personal communications). They showed that the oppositely-moving surround elicits smaller suppression than the same-direction surround, but never reaches potentiation; and the anti-phase surround causes similar responses as the opposite surround. These retinal studies thus suggest that some of the SC responses, including the suppression by same surround and its attenuation by anti-phase and cross-oriented static gratings, are likely inherited from the retina. However, these and other observations indicate that the bidirectional encoding of motion direction contrast by sSGS neurons is not inherited from the retina. Most notably, the modulation by out-of-phase and opposite surround is nearly identical in DSGCs, but dramatically different in the sSGS. Additionally, the fact that excitatory and inhibitory neurons in the sSGS, both of which receive direct retinal input (Shi et al., 2017), exhibit strikingly different responses to center-surround stimuli argues for a role of intracollicular circuit mechanisms. These circuits may include long range excitatory and inhibitory connections from the surround, and they must be wired in a direction- and cell-type-specific manner to mediate the differential responses in excitatory and inhibitory neurons. They are also likely restricted to the superficial SGS to account for the depth-specific changes.\n\nIn conclusion, our study identified response correlates of motion saliency in the mouse SGS. The striking distinction between the responses of excitatory and inhibitory neurons to direction contrast in this structure makes it a strong candidate to be a locus of saliency encoding. This opens the door for future mechanistic studies that manipulate local inhibitory circuits in the SGS and examine the cellular and behavioral consequences. Our findings thus offer a unique opportunity to describe a circuit-level mechanism of saliency computation in the brain, and to look for downstream neuronal populations where feature-specific saliency representations are integrated into a feature-agnostic saliency map.\n\n## Materials and methods\n\n### Animal preparation\n\nAdult C57BL/6 mice of both sexes were used in this study (n\u00a0=\u00a024, 2\u20134 months old), Gad2-IRES-cre mice (from the Jackson Laboratory, Stock no. 010802) were either crossed with an Ai9 line (RCL-tdT, Stock no. 007909), or injected with AAV1.CAG.Flex.tdTomato.WPRE.bGH (University of Pennsylvania Vector Core, Allen Institute 864) in their SC, to express the red fluorescent protein tdTomato in glutamate decarboxylase two positive (GAD2+, GABAergic) neurons. All mice were kept on a 12 hr light/dark cycle, with one to five animals housed per cage. All experimental procedures were approved by the Northwestern University Institutional Animal Care and Use Committee.\n\nMice were anesthetized with urethane (1.2 g/kg in 0.9% saline solution, i.p.) and then sedated with chlorprothixene (10 mg/kg in water, i.p.). Atropine (0.3 mg/kg in 0.9% saline) and dexamethasone (2 mg/kg in 0.9% saline) were subsequently administrated subcutaneously to minimize respiratory secretions and brain inflammation, respectively. The animals were then transferred onto a heating pad, and their body temperature was monitored via a rectal thermoprobe and maintained at 37\u00b0C through a feedback heater control module (Frederick Haer Company, Bowdoinham, Maine). Artificial tears (Henry Schein) were applied to the eyes for protection during surgery. The scalp was then shaved, and the skin removed to expose the skull. A craniotomy was performed on the left hemisphere along the midline and posterior sutures, covering an area of\u00a0~3.0\u00d73.0 mm2. The overlaying cortical tissues (including V1 and hippocampus) were removed by aspiration to expose the left SC. A head bar was finally mounted on the skull using Metabond (Parkell, Edgewood, NY) mixed with black ink. Animals previously injected with H2B-GCaMP6s would be ready for imaging. Animals to undergo imaging using the calcium-sensitive dye Cal520 would have the dye loaded into their SC as described below.\n\n### Preparation and administration of the calcium-sensitive dye Cal-520\n\nA fresh solution of the fluorogenic calcium-sensitive dye Cal-520 AM (AAT Bioquest; [Tada et al., 2014]) was prepared for every experiment. A solution of 20% Pluronic F-127 in DMSO was initially prepared and sonicated for 10\u201315 min. Four microliters of this solution were used to reconstitute 50 \u03bcg of powdered Cal-520. The resulting solution was sonicated for another 12\u201315 min and then brought to a total volume of 40 \u03bcl by adding 36 \u03bcl of a calcium-free solution (in mM: 150 NaCl, 2.5 KCl, and 10 HEPES, pH 7.4), for a final concentration of 1.13 mM Cal-520. After five more min of sonication, the solution was ready to be bolus loaded using a Nanoject II (Drummond) fitted with a glass pipette with a beveled tip and an inner diameter of 10\u201320 \u03bcm.\n\nOnce the SC was exposed, the pipette was filled with the previously prepared solution and lowered into the tissue. Twenty pulses of 2.3 nL each (46 nL total volume), at 20 s intervals, were administered to deliver the solution first at a depth of 450 \u03bcm below the surface, then at 200 \u03bcm after retracting the pipette to that depth. The pipette was left in the tissue for 1\u20132 min before being slowly retracted. The SC was then covered with ACSF (in mM: 125 NaCl, 5 KCl, 10 glucose, 10 HEPES, 2 CaCl2, pH 7.4, 300 mOsm). Imaging was performed 1\u20132 hr after dye loading.\n\n### Injection of H2B-GCaMP6s\n\nMice were anesthetized with isoflurane (5% for induction, 1.5% for maintenance, in O2) then transferred onto a heating pad. Their body temperature was monitored via a rectal thermoprobe and maintained at 37\u00b0C through a feedback heater control module (Frederick Haer Company, Bowdoinham, Maine). Artificial tears (Henry Schein) were applied to the eyes for protection during surgery. The scalp was then shaved, and a small cut was made to expose the skull near the lambda point. A burr hole was drilled on the left hemisphere using a dental drill, 0.75 mm lateral and 0.5 mm anterior of the lambda point.\n\nA Nanoject II (Drummond) fitted with a glass pipette with a beveled tip and an inner diameter of 10\u201320 \u03bcm, was used for viral injection. Viral particles were loaded into the pipette, which was then lowered into the brain through the burr hole, first to a depth of 1.4 mm below the pial surface, and then retracted to a depth of 1.2 mm. At each depth a total volume of roughly 50 nL was delivered, in 2.3 nL pulses, 15 s apart. AAV-syn-H2B-GCaMP6s (generously provided by Dr. Loren Looger, Janelia Research Campus) was injected into the SC of GAD2-Cre x AI9 (RCL-tdT) animals (1:1 in PBS). Alternatively AAV-syn-H2B-GCaMP6s was mixed with AAV1.CAG.Flex.tdTomato.WPRE.bGH (5.1 \u00d7 1012 GC/mL, University of Pennsylvania Vector Core, Allen Institute 864) (1:1:2 in PBS) and the same volumes were injected in the SC of GAD2-Cre mice at the aforementioned depths. The pipette was left in the tissue for 1\u20132 min before being slowly retracted. The skin was subsequently sutured back. Mice were given a dose of buprenex during surgery (0.05 mg/Kg, Sub-Q), and a dose of carprofen after (5 mg/Kg, Sub-Q), and were monitored daily for pain and wound health. Imaging was performed 10 to 21 days after injection.\n\n### Two-photon calcium imaging\n\nAfter the mice were prepared for imaging as described in the previous sections, they were moved onto a heating pad under a two-photon scanning microscope (2P-SGS or Ultima Investigator, Bruker Nano Surface Division). The head bar was clamped at an angle so that the imaged SC surface was largely flat and perpendicular to the optical axis of the objective. A thin film of silicone oil was applied to the eyes for protection. A shield was placed around the craniotomy to block light from the visual stimulus during imaging. The SC was covered with 3% agarose in ACSF for stability. Imaging was performed with a Ti:sapphire laser (Coherent Chameleon Ultra II) at excitation wavelengths of 800 nm for Cal-520, 920 nm for H2B-GCaMP6s, and 720 or 1020 nm for tdTomato, using a 40X, 0.8-NA Leica, or a 16X, 0.8-NA Nikon objective, immersed in ACSF. Emitted signals from the Ca2+ indicators and tdTomato were filtered into separate PMTs (green and red channels). Laser excitation power after the objective was around 10 mW for Cal-520 imaging, and varied between roughly 10 and 120 mW (depending on the depth) for H2B-GCaMP6s imaging. With the 2P-SGS, data were acquired using PrairieView software (Versions 5.0 and 5.3) in spiral scan mode at 2X optical zoom, resulting in a circular field of view with a diameter of 135 \u03bcm. Image resolution was 256\u00a0\u00d7\u00a0256 pixels and the acquisition rate was 8.079 Hz. Data in Figure 5 were acquired with the Ultima Investigator, using PrairieView software (Versions 5.4) with a resonant scanner at 4X optical zoom, resulting in a 206 \u00d7 206 \u03bcm field of view. Image resolution was 512\u00a0\u00d7\u00a0512 pixels and the acquisition rate was roughly 30 Hz. Frame-averaged data were used for the analysis (4-frame averages). Imaging with Cal-520 was performed in the superficial SGS (sSGS, no deeper than 50 \u03bcm from the SC surface), while imaging with H2B-GCaMP6s was performed across different depths of the SGS, ranging from the sSGS down to 205 \u03bcm below the surface.\n\n### Visual stimulus for imaging\n\nVisual stimuli were generated with Matlab Psychophysics toolbox (Brainard, 1997; Niell and Stryker, 2008) on an LCD monitor (37.5 cm\u00a0\u00d730 cm, 60 Hz refresh rate,~50 cd/m2 mean luminance, gamma corrected). The screen was placed 25 cm away from the eye contralateral to the imaging site (the right eye), and slightly tilted at an angle matching that of the mouse's head, given that the mouse's nose was slightly elevated to correct for the curvature of SC and allow imaging from a relatively flat surface. The monitor was moved for every imaged field of view so that the cells' receptive fields were near the center of the screen. The placement of the monitor center in visual space varied between 30\u00b0 and \u221225\u00b0 in elevation (0\u00b0 representing eye-level) and between 30\u00b0 and 90\u00b0 across the azimuth (0\u00b0 representing the center of the binocular field) in all imaging experiments reported in this study. The ipsilateral eye was covered throughout the experiment.\n\nTwo types of visual stimuli were used for imaging. First, a flashing black square (5\u00b0 x 5\u00b0 in visual angle) on a gray background was used to map the receptive fields of the imaged neurons. The square was flashed in a 6 \u00d7 6 grid (30\u00b0 x 30\u00b0 in visual angle), for a duration of 1 s, followed by the presentation of a gray screen for 3 s. This stimulus set was shown to the mouse at least four times in a pseudo-random fashion for every imaged field of view.\n\nThe second visual stimulus was \u2018center-surround\u2019 square wave drifting gratings (100% contrast, 0.08 cpd, 2 Hz), presented on a gray background at the center of the screen so that the center component (20\u00b0 across) covered the receptive fields of the imaged neurons. The surround was an annulus that started at the very edge of the center stimulus and extended 60\u00b0 across. To assess responses to direction-contrast, eight different directions of motion were used for both center and surround gratings, ranging from 0\u00b0 to 315\u00b0 and tiling all of direction space in 45\u00b0 increments. 0\u00b0 represented forward motion from the animal\u2019s perspective; positive values followed in a clockwise fashion, and negative values in a counterclockwise fashion. A blank (gray) condition was added to the eight directions for both center and surround for a total of 81 (9 \u00d7 9) unique center-surround combinations (including center alone conditions, surround alone conditions, and a gray screen condition). To assess responses to phase contrast, the 8 directions of the center stimulus were coupled with an anti-phase surround (180\u00b0 phase difference), moving in the same direction as the center, for a total of 8 unique conditions. To assess responses to temporal frequency contrast, the 8 directions of the center stimulus were coupled with a surround at an either lower (1 Hz), or higher (4 Hz) temporal frequency, moving in the same direction as the center, for a total of 16 unique conditions. Finally, to assess responses to orientation contrast, static gratings of 4 different orientations (100% contrast, 0.08 cpd) were used for both center and surround, ranging from 0\u00b0 to 135\u00b0 and tiling all of orientation space in 45\u00b0 increments. 0\u00b0 represented vertical orientation; positive values followed in a clockwise fashion, and negative values in a counterclockwise fashion. A blank (gray) condition was added to the four directions for both center and surround for a total of 25 (5 \u00d7 5) unique center-surround combinations (including center alone conditions, surround alone conditions, and a gray screen condition). Each stimulus condition of the gratings was presented for 2 s, followed by a gray screen for 5 s. Every stimulus set was shown to the mouse at least four times in a pseudo-random fashion for every imaged field of view.\n\n### Imaging data analysis\n\nAnimals that had visible tissue damage to their SC after dye loading, where the dye failed to be incorporated into the cells, or where there was poor expression of H2B-GCaMP6s, were not subject to imaging. Data analysis was performed on all animals that were subject to imaging, and no data points were excluded from the resulting datasets.\n\nTime-series frames were averaged to produce an average image of the field of view. In the cases where the imaging field shifted in the x-y plane over the course of the series, a semi-automated procedure was used to realign the frames. Specifically, a subset of the frames along the recording were manually realigned to match the first frame of the recording, and the corrected positions of all the intermediate frames were automatically extrapolated, leading to a sharper corrected average image, and spatially stable regions of interest (ROIs).\n\nTo determine whether each selected ROI is an inhibitory (GAD2+) or excitatory neuron (GAD2-), the experimenter referred to the red channel image of each field of view where GAD2+ cells were labeled with tdTomato. This selection process relied exclusively on the expression of tdTomato and was performed blindly to the functional properties of the cells, which were determined at a later stage of the process.\n\nFor the analysis of Cal-520 imaging data, we followed our published procedures (Inayat et al., 2015). Briefly, ROIs were manually drawn on the average image of the collected time-series, and the intensity values of all pixels in each ROI were averaged for each frame to obtain the raw Ca2+ signal for each cell. From the raw trace, and for each stimulus presentation, \u0394F/F0 = (F \u2013 F0)/F0, was calculated, where F0 was the mean of the baseline signal over a fixed interval (1.25 s for gratings; 0.75 s for flashing squares) before stimulus onset, and F was the average fluorescence signal over a 2.5 s duration starting at 250 ms after stimulus onset and ending at 750 ms after stimulus offset for gratings (1.1 s duration, 250 ms after onset and 350 ms after offset, for flashing squares). A cell was considered responsive if its mean \u0394F/F0 was more than two standard derivations above its F0 for at least one of the stimulus conditions. The mean value of \u0394F/F0 for each of the stimulus conditions was then used to determine the direction tuning curve for every responsive cell, and to calculate a direction selectivity index and a response modulation index by the surround.\n\nA similar procedure was used to analyze the H2B-GCaMP6s imaging data, with the exception that the 2.5 s integration time window of \u0394F/F0 was shifted forward in time by 375 ms to account for the slower dynamics of H2B-GCaMP6s, compared to Cal-520. We analyzed this dataset with time windows of different latencies and durations, and our conclusions were not affected (Figure 6\u2014figure supplements 1 and 2, and See \u2018Simultaneous two-photon imaging and cell-attached recording\u2019 below).\n\nTo quantify the degree of direction selectivity, we calculated a global direction selectivity index (gDSI), which is the vector sum of \u0394F/F0 responses normalized by their scalar sum (Gale and Murphy, 2014; Inayat et al., 2015):\u00a0$gDSI=\\frac{\\sumR_{\\theta}e^{i\\theta}}{\\sumR_{\\theta}}$, where R\u03b8 is the response magnitude in \u0394F/F0 at direction \u03b8 of the center stimulus.\n\nTo calculate the modulation index, we first determined each neuron\u2019s preferred direction as the center-stimulus direction that elicited the peak average \u0394F/F0. In the case of neurons that were non-response to the center stimulus alone (center-silent neurons), the preferred direction was chosen as the center direction of the center-surround stimulus combination that elicited the peak average \u0394F/F0. The modulation index was then calculated as follows:\n\n$$\nModulation\u00a0Index=\\frac{R_{pref.\u00a0\u00a0C\u00a0with\u00a0S}\u2212R_{pref.\u00a0\u00a0C\u00a0}}{R_{pref.\u00a0\u00a0C\u00a0with\u00a0S}+R_{pref.\u00a0\u00a0C}}\n$$\n\nWhere Rpref. C with S is the neuron\u2019s response (in \u0394F/F0) to coupling its preferred direction at the center with whichever surround we were assessing, and Rpref. C is the neuron\u2019s response to the presentation of its preferred direction at the center alone. Negative numbers indicate a suppression by the surround of the response to the center alone, while positive numbers indicate potentiation. Values that were below \u22121 or above 1 due to negative \u0394F/F0 values were adjusted to \u22121 and 1, respectively.\n\nThe RF center was determined by the following \u2018center of mass\u2019 equation, $RFCenter,[x,y]=\\frac{\\sumR_{i}r_{i}}{\\sumR_{i}}$, where i represents the places in the grid where the cell was responsive. R and r represent the response magnitude (\u0394F/F0) and position vector at the ith location, respectively (Inayat et al., 2015).\n\n### Simultaneous two-photon imaging and cell-attached recording\n\nWe performed imaging-guided cell-attached recordings to characterize H2B-GCaMP6s and assess its capacity to report spiking activity. We used glass micropipettes (1.8\u20132.5 \u03bcm tip diameter, 2.2\u20136.5 M\u03a9 tip resistance) filled with ACSF (in mM: 125 NaCl, 5 KCl, 10 glucose, 10 HEPES, and 2 CaCl2, pH 7.4) and containing a mixture of 20 \u03bcM Alexa Fluor 488 and 594, for visualization under the microscope. Positive pressure was applied to the pipette, and the tip was brought to a position on top of a target neuron. The tip was subsequently lowered onto the cell, until a change in resistance was detected. Light suction was then applied to generate a seal and detect spiking activity. A MultiClamp 700B amplifier (Molecular Devices) in current-clamp mode and a System three workstation (Tucker-Davis Technologies) were used to record extracellular spiking. A minimal version of the Center-Surround stimulus (four directions and a blank in both center and surround) was used to elicit visual responses, and both image acquisition and the electrophysiological recording were synchronized to the visual stimulus.\n\nThe imaging and spiking data were then analyzed to compare their response magnitude to each stimulus condition (Figure 6\u2014figure supplement 1A\u2013B). Spike rate was averaged over the 2 s period of visual stimulus presentation (firing rate to the blank stimulus was subtracted). Due to its slow dynamics, the H2B-GCaMP6s calcium signal was averaged between 625 ms after stimulus onset and 1125 ms after offset for a duration of 2.5 s. This particular delay was longer than that used for Cal-520 (250 ms and 750 ms respectively). It was chosen so that for either reporter the start time coincided with a 20% response increase from baseline to the preferred C-S combination (Figure 6\u2014figure supplement 1C, blue and red curves). Note that because of the slow dynamics of H2B-GCaMP6s, and particularly the slow fluorescence decay time following a stimulus offset, a stable baseline was not always reached before the onset of the following stimulus. This resulted in negative \u0394F/F0 values at some non-responsive conditions (Figure 6\u2014figure supplement 1B). This could lead to an overestimation of the selectivity of cells, a foreseeable problem with calcium indicators that are slow or do not have single-spike resolution. Nevertheless, given the reasonably linear relationship between H2B-GCaMP6s and spike responses (n\u00a0=\u00a03, 2 mice; Figure 6\u2014figure supplement 1B,E), relative comparisons of responses within a single tuning curve and between cells are still valid. Some neurons exhibited uncharacteristic activity when patched (n\u00a0=\u00a02, 2 mice), which resulted in the immediate saturation of their calcium signal; a phenomenon very rarely observed during regular imaging sessions, and clearly induced by the recording procedure. Those cells were excluded from further analysis (data not shown).\n\n### Statistics\n\nAll pooled data were presented as mean\u00a0\u00b1\u00a0s.e.m, unless stated otherwise. Significance was calculated using two-sided statistical tests including Mann-Whitney U-tests, Kolmogorov-Smirnov (K-S) tests, Wilcoxon signed-rank tests, and paired t-tests as stated. Correlation coefficients and their corresponding p-values were calculated, in addition to first degree polynomial fits and their corresponding R2 values and y-intercepts, as mentioned in the text.\n\nTo determine a significant difference between a neuron\u2019s responses to any given pair of center-surround conditions (e.g. preferred-direction center vs. preferred center\u00a0+oppositely moving surround), we performed a bootstrapping test. The four \u0394F/F0 values (four trials) for each of the two compared stimulus conditions were pooled for a set of 8 values. Eight values were then sampled from that set 10,000 times, with replacement. Each of the generated sets was subsequently split into two subsets of 4 values randomly and the means of the two subsets subtracted to generate a distribution of the difference. The difference between the mean \u0394F/F0 of the observed data was calculated, and depending on where that value fell with respect to the 95% confidence interval of the distribution, the response was considered significantly potentiated, suppressed, or unaltered. This measure gave us a more statistically tractable measure of modulation compared to the calculation of the modulation index, where a hard cutoff value of 0 separated between potentiated and suppressed neurons.\n\nNote that when using this bootstrapping analysis we observe significant response suppression in center-silent neurons by a surround moving in the same direction, compared to their \u2018response\u2019 to the center alone (Figure 2F). This indicates that our method for assigning response significance is rather conservative, and that some of these neurons might actually have some low-magnitude response to the center stimulus alone.\n\nAll analyses and graph plotting were performed in Matlab (MathWorks). The Matlab workspace used to generate Figures 1\u20137 are included in the three source data files. No statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in the field. We did not randomly assign animals to groups because it is not applicable to the experimental design of this study.\n\n## Ackowledgements\n\nThe authors wish to thank Dr. Loren Looger and Dr. Na Ji from the Janelia Research Campus for providing H2B-GCaMP6s. This work was supported by US National Institutes of Health (NIH) grants (EY026286 and EY020950) to JC. National Natural Science Foundation of China (NSFC) grant (81770956) and Tianjin Science Fund for Distinguished Young Scholars (17JCJQJC46000) to XS.\n",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "d2fbc7b6-7959-44b6-955b-0d4bb1deac0e",
+      "submission_id": "43c90f96-504c-4e87-a0c7-c46c06dfe461",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35261.021](https://doi.org/10.7554/eLife.35261.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Bidirectional Encoding of Motion Contrast in the Mouse Superior Colliculus\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, Fred Rieke as the Reviewing Editor, and Andrew King as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers were enthusiastic and felt that the work potentially makes an important and timely contribution. At the same time, several issues need to be strengthened before we can reach a final decision. These include:\n\n1) It is unclear how much of the results can be accounted for by the classic receptive field, and which require responses outside the classic receptive field.\n\n2) The interpretation of the results needs to be discussed more carefully, with an emphasis on what is established and what is speculative. This should include clarifying that the origin of the measured signals and the connection to saliency are both speculative.\n\n3) Additional analyses are needed to establish definitively that suppression is directionally tuned in excitatory but not inhibitory neurons.\n\nThese and other issues are detailed in the individual reviews below.\n\nReviewer #1:\n\nThis paper describes the encoding of motion in mouse SC, with a particular focus on how motion in the receptive field center and surround interact. The work is technically impressive and the results quite clear. My concerns are largely to do with the presentation and the strength of the conceptual advance of the work described.\n\nRelation of results to saliency.\n\nThroughout the paper, the results are described as a saliency computation. But unless I am missing something, the effects are close to fairly standard receptive field descriptions. Thus, for a cell sensitive to luminance, responses are suppressed with center and surround are stimulated with the same polarity inputs, and responses are potentiated with opposite polarity inputs. The current paper describes a similar receptive field behavior for motion. I would find the paper easier to read if this was described in terms of local vs. global motion rather than in terms of saliency. One issue I found particularly hard to relate the results of the paper to, was the idea of a saliency map.\n\nReviewer #2:\n\nThe manuscript provides a very readable, well-illustrated and interesting report on data from the superficial (i.e. visual sensory) layers of the superior colliculus in anaesthetised mouse. The authors use 2p imaging to measure calcium responses in inhibitory (GAD2 expressing) and other neurons. They report responses to stimuli composed of a drifting square-wave central grating, and a surround grating that could drift at the same rate in the same direction, or other directions, different drift rates, or different phase.\n\nThe experiments appear to be very well performed, and the analyses are clearly careful and well thought through. The current manuscript contributes significantly to our understanding of SC function by distinguishing excitatory from inhibitory neurons, and by showing that there is a depth dependence to these effects. The data may also be important for understanding the 'building blocks' of saliency computations.\n\nThe claims are as follows:\n\n1) In very superficial excitatory neurons surrounds of the same motion direction suppress, but those of the opposite direction strongly facilitate. Strong facilitation is not seen for surrounds of different phase or temporal frequency.\n\n2) Inhibitory neurons throughout layers instead show 'pan-direction' suppression.\n\n3) There is reduced opposite-direction facilitation in deeper excitatory neurons.\n\nClaim 1: The measurements in excitatory neurons show the expected suppression by surrounds moving in the same direction alongside an unexpected and powerful facilitation by oppositely moving surrounds. This is a very intriguing result and I would like to see some more evidence that this is not interactions among stimuli within the classical receptive field (if the surround is strongly suppressive, it could mask responses from the parts of the receptive field that it lies over, so lack of response to the surround alone needs to be treated with caution). I make this statement because the experiments in Figure 4 show that the suppression is reduced by manipulating surround drift rate or phase (i.e. the effect of these manipulations is in the same direction as the opposite-direction facilitation). Drift in opposite direction may have stronger impact than offset spatial phase and some analysis of models of direction-selectivity would be useful to be secure that the pattern of effects could not be attributed to interactions with DS receptive fields.\n\nClaim 2: The measurements of surround suppression in inhibitory neurons are harder to interpret, as the authors point out, because the 'surround alone' stimulus drove responses strongly in many or most neurons. This probably would not change the overall conclusion that inhibitory neurons show suppression but not facilitation, but it certainly may impact on the estimates of direction sensitivity of surround suppression. More analyses are needed to be more secure in this. For example, the authors compare response to center stimulus to response to center + same surround stimulus (Figure 3B) but I think it more appropriate (here and in other analyses) to compare (center alone + surround alone) to the center + surround stimulus.\n\nClaim 3: That deeper layers show less opposite direction facilitation is very intriguing. The analyses here however aren't quite as comprehensive as those above \u2013 for example I cannot see results for same direction surround, and therefore find it difficult to know whether the depth dependence reflects specific differences in direction-dependent suppression or also non-direction dependent suppression. It would also be useful to consider the impact of changes in receptive field size at deeper depths (Ahmadlou et al., 2017).\n\nReviewer #3:\n\nContextual features in visual scenes have large effects on sensory processing and behavior. In particular, these features have been suggested to work through fast, bottom-up mechanisms to alter the saliency of a stimulus. However, the mechanisms that support these effects, and the areas that are responsible, are not well understood. In this manuscript, Barchini et al., address this question by imaging the activity of identified GAD2+ and GAD2- neurons in the mouse superior colliculus (SC), an area thought to be involved in the bottom-up contextual processing. They present a rich dataset in which they cleverly explore stimulus space and find that GAD2- neurons in the superficial layers of the SC undergo bidirectional contextual modulation. Altogether, these data are clear, beautifully quantified and reveal novel relationships between context and sensory processing in the SC. My only major request is that the authors clarify their proposed SC-intrinsic model for bidirectional contextual modulation.\n\nEssential revisions:\n\nThe authors argue (in the Abstract, Results section and Discussion section) that the bidirectional contextual modulation of GAD2- activity is driven by local interactions within the SC. However, there remain a number of confusing points about this model:\n\na) First, it is not clear what is driving the suppression of the GAD2+ cells when the center and surround move in the opposite direction. In order for this to be a SC-intrinsic mechanism, there must be a population of GAD2+ cells that is potentiated by opposite direction stimuli (to suppress the high DSI GAD2+ cells), but these are rarely observed. Is it proposed that the potentiated neurons in Figure 3\u2014figure supplement 1F are the source of this inhibitory drive to the GAD2+ cells? Alternatively, is the proposal that this is mediated by longer-range inputs from GAD2+ cells centered on the surround of the studied neurons? The authors need to clarify their model for how high DSI GAD2+ cells are selectively suppressed by opposite center-surround stimuli.\n\nb) Second, it is not clear what is driving the suppression of all cells when the center and surround move in the same direction. Again, if this is a SC-intrinsic mechanism, there must be a population of GAD2+ cells that is potentiated by these stimuli. However, these are very rarely observed. Again, is this proposed to be a long-range mechanism? Or is it possible that the potentiation and suppression are supported by distinct mechanisms where the latter is inherited from the retina? The authors need to clarify their model for how same-direction stimuli suppress most SC cells.\n\nc) Third, it is not clear what drives the depth-dependence of the observed effects. Despite the change in DSI with depth, the GAD2+ cells are similarly suppressed by opposite direction stimuli at all depths. Thus, the suppression of these cells should be sufficient to drive potentiation of GAD2- cells at all depths. Is there a specific model of connectivity that the authors suggest can account for this?\n\nd) Fourth, it is not clear why this effect is specific to direction. The authors demonstrate that cross-orientation stimuli are generally suppressive (though less suppressive than iso-orientation stimuli) in both GAD2- and GAD2+ cells. They also show that when the center and surround are moving in the same direction, but antiphase or at different TFs, this disrupts the suppressive nature of the surround, though does not drive potentiation. How do these data fit into the authors' model for contextual modulation?\n\ne) Finally, something strange is happening in Figure 3\u2014figure supplement 1B. There seems to be a facilitation of GAD2+ neurons' responses to the non-preferred direction when the preferred direction is in the surround, making these neurons orientation tuned. Is this true for individual neurons (are they orientation tuned in this context) or do some neurons start responding selectively to the opposite direction? Moreover, how does this result fit into the authors\u2019 model of contextual modulation in the SC?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Bidirectional Encoding of Motion Contrast in the Mouse Superior Colliculus\" for further consideration at eLife. Your revised article has been favorably evaluated by Andrew King (Senior Editor) and a Reviewing Editor.\n\nThis is a revision of a paper on motion coding in superior colliculus. The authors have done a good job responding to comments from the previous round of reviews, but there are some points that need to be addressed before acceptance. A few remaining issues and a few new ones that were clarified from the revised paper follow.\n\nReviewing editor comments:\n\nOMS ganglion cells\n\nThe encoding of local motion described here resembles in several ways that of object-motion sensitive ganglion cells \u2013 see Olveczy et al., (2003), Baccus et al., (2008). The similarities and any dissimilarities should be described.\n\nSubsection \u201cResponses of sSGS excitatory neurons are modulated by motion contrast\u201d: What criterion was used to determine which cells were sufficiently well centered to include in the analysis? This is related to the request in the previous round of reviews to show individual receptive fields. I think those included in the response to reviews should be included as a figure supplement.\n\nSubsection \u201cResponses of sSGS excitatory neurons are modulated by motion contrast\u201d: I think this is the first place bidirectional modulation comes up. Please define that term here.\n\nSubsection \u201cInhibitory neurons in the sSGS are suppressed by motion contrast\u201d and elsewhere: statistical quantities often have too many digits \u2013 e.g. here the p value could be 6.0e-20.\n\nSubsection \u201cInhibitory neurons in the sSGS are suppressed by motion contrast\u201d: Is the surround for inhibitory neurons clearly a surround (e.g. do you see the surround with flashed squares, or could the RFs of excitatory and inhibitory neurons be quite different in size)?\n\nSubsection \u201cInhibitory neurons in the sSGS are suppressed by motion contrast\u201d: Sentence is awkward and could get rewritten or broken up.\n\np-values: Make sure it is clear for each use what is being tested.\n\nSubsection \u201cInhibitory neurons in the sSGS are suppressed by motion contrast\u201d: Please spell this suggestion out in a bit more detail.\n\nSubsection \u201csSGS are specifically tuned to motion direction contrast\u201d: The second paragraph is hard to follow, particularly relationship between text and figure.\n\nSubsection \u201csSGS are specifically tuned to motion direction contrast\u201d: Red dashed line?\n\nSubsection \u201cDepth-dependent motion contrast coding in the SGS\u201d: Why is the last paragraph in this section about depth dependence? It feels out of place.\n\nDiscussion section: The jump from orientation to motion in this paragraph is a bit disconcerting. One possibility is to return to the pop out phenomena mentioned in the Introduction.\n\nSubsection \u201cMechanisms for motion contrast computation in the mouse SGS\u201d: This section could get tightened considerably.\n",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "622676d6-c2a0-48e2-b229-c5af9e292c75",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C1",
+      "claim": "Neurons in the mouse superior colliculus (SC) encode visual saliency by detecting motion contrast between stimulus center and surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that neurons in the mouse superior colliculus (SC) encode visual saliency by detecting motion contrast between stimulus center and surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by experimental data throughout the manuscript including calcium imaging experiments showing differential responses to center-surround motion contrast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f1aedc4c-fe9c-4b6b-b606-0974da345e46",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C2",
+      "claim": "Excitatory neurons in the most superficial lamina of the SC are contextually modulated, monotonically increasing their response from suppression by the same-direction surround to maximal potentiation by an oppositely-moving surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory neurons in the most superficial lamina of the SC are contextually modulated, monotonically increasing their response from suppression by the same-direction surround to maximal potentiation by an oppositely-moving surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figures 1 and 2 showing response modulation patterns of excitatory neurons to different center-surround direction combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "9eb61438-637c-491a-b3ac-2cead5b5f7f4",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C3",
+      "claim": "The degree of potentiation by opposite-direction surround declines with depth in the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of this potentiation declines with depth in the SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by depth-dependent imaging data shown in Figure 6C demonstrating that potentiation gradually turns into suppression with increasing depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "4db18c25-d726-496a-81f9-b67fcbb03501",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C4",
+      "claim": "Inhibitory neurons are suppressed by any surround at all depths.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons are suppressed by any surround at all depths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figures 3 and 6F-G showing suppression of inhibitory neurons by both same and opposite direction surrounds across different depths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "27f7cad6-1762-437e-94ae-daa206de70e8",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C5",
+      "claim": "Response modulations in both excitatory and inhibitory neuronal populations are much more prominent to direction contrast than to phase, temporal frequency, or static orientation contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "These response modulations in both neuronal populations are much more prominent to direction contrast than to phase, temporal frequency, or static orientation contrast, suggesting feature-specific saliency encoding in the mouse SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative data in Figure 5 showing differential modulation indices for direction contrast versus other types of feature contrast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "07fd7c8d-513c-452c-9338-aef03d3ed3fb",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C6",
+      "claim": "V1 neurons are suppressed by stimuli of the same orientation in regions surrounding the RF.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that V1 neurons are suppressed by stimuli of the same orientation in regions surrounding the RF (Jones et al., 2002; Knierim and van Essen, 1992; Sengpiel et al., 1997), consistent with the classical surround suppression seen at the level of the retina and lateral geniculate nucleus (Sachdev et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies in primate and cat V1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "1fc13050-7acb-4eab-8c3e-5e2435a2a423",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C7",
+      "claim": "V1 neurons displayed lower levels of suppression when static gratings of orthogonal orientations were shown in the surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, V1 neurons displayed lower levels of suppression when static gratings of orthogonal orientations were shown in the surround (Kastner et al., 1999; Knierim and van Essen, 1992; Nothdurft et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "ceb3e54b-3b93-4366-933e-163bb33d8f5a",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C8",
+      "claim": "Orthogonal surrounds were able to induce response facilitation in primate V1 in response to moving gratings.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to moving gratings, orthogonal surrounds were even able to induce a certain level of response facilitation in primate V1 (Jones et al., 2001; Jones et al., 2002; Sillito et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies in primate V1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "34d1a8ad-0a9d-44f3-912b-401ae4e01575",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C9",
+      "claim": "The superior colliculus contains a saliency map.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the exact location of where the saliency map is first generated is still a matter of debate, there is a general agreement that the superior colliculus (SC) in the midbrain contains such a map (Veale et al., 2017; Zhaoping, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical work on saliency maps.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "9fcba326-7589-4ef9-9112-e0d03c3b97d6",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C10",
+      "claim": "In primates, SC neurons are not tuned to specific visual properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In primates, SC neurons are not tuned to specific visual properties, consistent with the notion of feature-agnostic saliency representation (White et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study on primate SC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "e64140bb-d7b5-4ba2-8ee4-7d519745663d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C11",
+      "claim": "In lower vertebrates such as fish and birds, neurons in the optic tectum can perform feature-specific saliency computations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in lower vertebrates such as fish and birds, where neocortex has not evolved, neurons in the optic tectum, the homologue of the mammalian SC, can perform certain feature-specific saliency computations (Ben-Tov et al., 2015; Frost et al., 1981; Sun et al., 2002; Zahar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies in fish and birds.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "a2febe0e-9283-4403-9314-5aaf8f8a1671",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C12",
+      "claim": "Most visual neurons in the mouse SC are tuned to features such as motion direction or stimulus orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in primates, most visual neurons in the mouse SC are tuned to features such as motion direction or stimulus orientation (Gale and Murphy, 2014; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on mouse SC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7ffcd258-6654-4fd6-bf65-2d0c55bff5f8",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C13",
+      "claim": "The SC is the most prominent retinal target in mice and mediates visually-guided behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neurons in mouse V1 show similar selectivity compared to those in higher mammals (Niell and Stryker, 2008), the SC remains the most prominent retinal target in mice, and mediates visually-guided behaviors (Ellis et al., 2016; Liang et al., 2015; Shang et al., 2015; Wei et al., 2015; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on mouse SC function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "9cc8256e-6d3a-4c3e-9e60-e9db2a034004",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C14",
+      "claim": "About half of sSGS neurons were responsive to drifting gratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous finding, about half of sSGS neurons were responsive to the drifting gratings (n = 355/811 GAD2- and n = 379/652 GAD2+, from 9 mice, see Materials and methods for details of determining responsiveness)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the imaging experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "91e1bc4a-249c-4492-919b-ec3638cf0627",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C15",
+      "claim": "Most responsive sSGS neurons were direction selective (73.0% of GAD2- and 63.1% of GAD2+ neurons had gDSI \u22650.25).",
+      "claim_type": "EXPLICIT",
+      "source": "and most of them were direction selective (DS), showing much higher increases in fluorescence to their preferred direction than to the opposite direction (Figure 1C; 259/355, 73.0% of GAD2-, and 239/379, 63.1% of GAD2+ neurons had gDSI \u22650.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the imaging experiments with specific percentages and cell counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7511fa22-5210-40fb-9326-eaa0967c524a",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C16",
+      "claim": "For most responsive excitatory neurons (82.8%), the small patch of gratings covered their entire RFs.",
+      "claim_type": "EXPLICIT",
+      "source": "For most responsive excitatory neurons (n = 294/355, 82.8%), the small patch of gratings covered their entire RFs (Figure 1\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from receptive field mapping experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "13da7a25-edf8-41b0-b9d4-7246759a0185",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C17",
+      "claim": "When both center and surround gratings moved along the preferred direction, classical surround-suppression of the center response was observed in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case when both the center and surround gratings moved along the preferred direction of a given excitatory neuron, we saw a classical surround-suppression of the center response (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D demonstrating reduced responses when same-direction surround is added.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "e4987a3a-f6a8-45cd-a471-b5993810dc84",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C18",
+      "claim": "When the preferred direction in the center was coupled with a surround stimulus of opposite direction, most excitatory sSGS neurons increased their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, when the preferred direction in the center was coupled with a surround stimulus of opposite direction, most excitatory sSGS neurons increased their responses (Figure 1C,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1C and 1E showing potentiation of responses with opposite-direction surround.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "4299b0f5-1c16-4062-94a7-3d0d7a138ace",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C19",
+      "claim": "Excitatory sSGS neurons are bidirectionally modulated depending on what is shown in the surround.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, to the same stimulus in their RF center, excitatory sSGS neurons could increase or decrease their response, that is, they are bidirectionally modulated, depending on what is shown in the surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data showing both suppression and potentiation depending on surround direction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "bd445924-98a1-43e8-a2c4-c372849a10d8",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C20",
+      "claim": "A substantial population of excitatory sSGS neurons (23.6%) did not respond to center or surround gratings when presented separately but became responsive to particular Center-Surround combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a substantial population of excitatory sSGS neurons did not respond to the center or the surround gratings when presented separately but became responsive to particular Center-Surround (C-S) combinations (n = 191/811, 23.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the imaging experiments identifying a specific population of 'center-silent' neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "5b579c0b-d064-4e3f-80f1-7f2b5080d285",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C21",
+      "claim": "The majority of center-silent neurons (80.6%) had mappable RFs that were covered by the center patch.",
+      "claim_type": "EXPLICIT",
+      "source": "This was despite the fact that the majority of these cells (154/191, 80.6%) had mappable RFs that were covered by the center patch (Figure 1\u2014figure supplement 1A,B and Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from receptive field mapping of center-silent neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "06d7f9ca-d6fe-4e54-94d5-da1063eebe28",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C22",
+      "claim": "Over the entire population of excitatory sSGS cells, the response to the preferred center stimulus became smaller with the introduction of the same direction surround in 83.3% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the entire population of these excitatory sSGS cells (n = 355 \"center responsive\" + 191 \"center silent\" = 546), the response to the \"preferred center\" stimulus became smaller with the introduction of the same direction surround in 83.3% of cells (n = 455/546)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the modulation data across the population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "e9fc33e5-e28a-4e3e-b49c-770dc4155792",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C23",
+      "claim": "The response became larger in 74.7% of excitatory cells when the surround was moving in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "and larger in 74.7% of cells (n = 408/546) when the surround was moving in the opposite direction (Fig. 1G, Kolmogorov Smirnov [KS] test, p = 4.0e-83, KS stat = 0.59).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary with statistical testing showing significant potentiation by opposite surround.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "fc77d217-510c-4408-a6f8-6d96a69d0908",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C24",
+      "claim": "The modulation of center responses by surround was geometric in nature, ranging from divisive suppression by the same surround to multiplicative potentiation by the opposite surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this modulation was geometric in nature, ranging from a divisive suppression by the same surround to a multiplicative potentiation by the opposite surround (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the linear relationship analysis shown in Figure 2C with specific slopes indicating divisive and multiplicative effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "1379ed9d-7b17-4c72-aa96-68a60c96b375",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C25",
+      "claim": "A linear modulation of the center responses was seen with intermediate differences between C-S directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a linear modulation of the center responses was also seen with intermediate differences between C-S directions (e.g., Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2D showing linear relationships for orthogonal-direction surrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "07c82a3d-4a82-4975-92be-3c0e078b19de",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C26",
+      "claim": "The slope of linear relationships between center and center-surround responses gradually increased with the C-S direction difference.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus calculated the slope of these linear relationships (i.e., fold changes of center responses by the surround), and found that it gradually increased with the C-S direction difference (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 2E demonstrating monotonic tuning to motion contrast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6f44c57b-d928-4fdd-af5e-8c43ffa8f68d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C27",
+      "claim": "Excitatory sSGS neurons were monotonically tuned to motion contrast, showing maximal responses to the most salient stimulus with oppositely-moving center and surround.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, excitatory sSGS neurons were monotonically tuned to motion contrast, showing maximal responses to the most salient stimulus with oppositely-moving center and surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the data showing increasing slope with C-S direction difference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "d06c4726-f35a-4e0e-846f-e3683e84cb5a",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C28",
+      "claim": "Center-silent neurons showed an emergent, monotonically increasing response as the C-S direction difference increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed a similar analysis for the 'center silent' neurons (n = 191), by averaging their responses to particular C-S direction differences. An emergent, and again monotonically increasing, response was seen as the C-S direction difference increased (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2F showing increasing responses with increasing C-S direction difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "2a647610-26aa-45a0-bcd7-dfc5fc54ed03",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C29",
+      "claim": "Inhibitory sSGS neurons experienced surround suppression when the surround direction matched the direction in the RF center.",
+      "claim_type": "EXPLICIT",
+      "source": "Just like excitatory neurons, inhibitory neurons also experienced surround suppression when the surround direction matched the direction in the RF center (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 3A-B showing reduced responses with same-direction surround.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f1b1c9c2-5345-4e86-8c20-28adfaf1b4aa",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C30",
+      "claim": "Inhibitory neurons were significantly less suppressed by same-direction surround than excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "They were, however, significantly less suppressed than their excitatory counterparts (Figure 4A, KS test, p=6.0e-20, KS stat = 0.30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis between GAD2+ and GAD2- neurons shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "d9a15352-b334-4811-bf19-9dfcab2cf294",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C31",
+      "claim": "When the surround grating drifted in the opposite direction, inhibitory neurons' response to the preferred center stimulus was strongly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when the surround grating drifted in the opposite direction, the inhibitory neurons' response to the preferred center stimulus was quite strongly suppressed (Figure 3A and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 3A and 3C showing suppression rather than potentiation in inhibitory neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "15aa4c19-473e-4118-a6b7-e2f252880813",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C32",
+      "claim": "The response of inhibitory neurons to opposite-direction surround is in stark contrast with the potentiation seen in excitatory sSGS neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast with the potentiation seen in excitatory sSGS neurons under the same conditions (Figure 4B, KS test, p=1.46e-58, KS stat = 0.51).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement supported by statistical analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "28a25bc0-f63b-4b4e-93aa-b73c917f0790",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C33",
+      "claim": "Fewer center-silent inhibitory cells became responsive when opposite center and surround was shown compared to excitatory neurons, and their responses were weaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, compared with excitatory neurons, fewer 'center-silent' inhibitory cells became responsive when opposite center and surround was shown and their responses were weaker (n = 85/652; Figure 3D, compare with Figure 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative quantitative observation between GAD2+ and GAD2- center-silent neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "18722195-554b-4fa9-8a5b-3b0bd77415b6",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C34",
+      "claim": "The suppression by the opposite surround was greater than that by the same-direction surround for most inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the suppression by the opposite surround was even greater than that by the same-direction surround for most inhibitory neurons (Figure 3E, KS test, p=3.2e-6, KS stat = 0.17)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical comparison of modulation indices shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "a40fc844-e515-4fa9-ab19-386440d54229",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C35",
+      "claim": "A much larger proportion of excitatory sSGS neurons (50.2%) was significantly potentiated by the opposite-direction surround compared to inhibitory neurons (9.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, using this method, we found that a much larger proportion of excitatory sSGS neurons was significantly potentiated by the opposite-direction surround (n = 274 out of 546 responsive cells, 50.2%), compared to inhibitory neurons (n = 46 out of 464, 9.9%; Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison using bootstrapping analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "77f30356-3723-47cb-938c-76c591a14cd5",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C36",
+      "claim": "Many center-responsive inhibitory neurons (53.8%) could be activated by a surround alone that was moving in their preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that many center-responsive inhibitory neurons (204/379, 53.8%) could be activated by a surround alone that was moving in their preferred direction (Figure 3A and Figure 3\u2014figure supplement 1B, blue curve).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the imaging data showing responses to surround-alone stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7975030e-1d5d-49b3-bbc6-7872f24b27ed",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C37",
+      "claim": "Response to surround alone was rarely observed in excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a response profile was rarely observed in excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation between GAD2+ and GAD2- neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "e3f19d3d-d220-4bae-a561-7880e8274a85",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C38",
+      "claim": "Excitatory and inhibitory neurons had similar RF sizes when mapped with flashing squares.",
+      "claim_type": "EXPLICIT",
+      "source": "This was quite surprising given the fact that excitatory and inhibitory neurons had similar RF sizes when mapped with flashing squares (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2A\u2013F, p=0.19, Mann-Whitney U-test comparing their RF size in panels E-F, n = 542 GAD2- and 425 GAD2+ neurons responsive to flashing squares).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison with statistical testing of receptive field sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f0e31d13-a3cb-470f-8f84-5e1183c2d7c3",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C39",
+      "claim": "The 2-dimensional standard deviation of GAD2+ RF centroids for any given imaging field of view was statistically larger than that of GAD2- ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This was true to some extent. The 2-dimensional standard deviation of GAD2+ RF centroids for any given imaging field of view was statistically larger than that of GAD2- ones (Figure 1\u2014figure supplement 2G and H, p=0.03, paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from analysis of RF centroid distributions shown in Figure 1\u2014figure supplement 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "dc3b7187-d53a-4d15-8f8a-80331041598c",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C40",
+      "claim": "The anti-phase surround resulted in an attenuated suppression (or even a slight potentiation) in both GAD2- and GAD2+ neurons compared to the in-phase surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the in-phase surround ('Same S'), which strongly suppressed sSGS responses to the center stimulus, the anti-phase surround resulted in an attenuated suppression (or even a slight potentiation) in both GAD2- and GAD2+ neurons (Figure 5B\u2013C; compare the green and the red dashed lines in Figure 5B, p=2.2e-10, and Figure 5C, p=6.2e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data with statistical testing shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "94ef84ec-60d7-4aeb-bc1d-aa84dc272bf1",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C41",
+      "claim": "Either lower (1 Hz) or higher (4 Hz) temporal frequencies in the surround elicited a similar attenuation of response suppression compared to a uniform (2 Hz) temporal frequency between center and surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar responses were seen when we varied the temporal frequency of the surround grating. Either lower (1 Hz, red dotted) or higher (4 Hz, navy blue dotted) temporal frequencies in the surround elicited a similar attenuation of response suppression compared to a uniform (2 Hz, solid green) temporal frequency between center and surround (compare the solid green line to the dotted red and blue lines in Figure 5B\u2013C, p<0.01 for both comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative data with statistical testing shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "69530ea6-dfeb-441d-8519-8912c3d18249",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C42",
+      "claim": "The attenuated suppression seen with anti-phase, lower and higher temporal frequency surrounds did not reach the level of potentiation experienced by excitatory neurons to an oppositely-moving surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the attenuated suppression seen in these 3 sets of center-surround contrast (anti-phase, and lower and higher temporal frequency) did not reach the level of potentiation experienced by the same excitatory neurons to an oppositely-moving surround (solid red line in Figure 5B, n = 73, 3 mice, KS test, p<0.01 for all comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7012ce3f-d769-4978-8ad1-eb24c02067dc",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C43",
+      "claim": "The heightened level of suppression experienced by inhibitory neurons to an oppositely-moving surround could not be matched by anti-phase or temporal frequency contrast conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same vein, the heightened level of suppression experienced by inhibitory neurons to an oppositely-moving surround could not be matched either under the aforementioned conditions (solid red line in Figure 5C, n = 124, 3 mice, KS test, p<0.01 for all comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6a7453d4-1e35-4415-a8aa-3480487f9ff3",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C44",
+      "claim": "Both GAD2- and GAD2+ neurons experienced a slightly attenuated level of suppression under cross-surround conditions compared to iso-surround for static gratings, but no potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested static gratings with varying orientations. Consistent with their selectivity for the direction of moving stimuli, sSGS neurons showed weaker responses to static gratings (data not shown). More relevant to the current study, both GAD2- and GAD2+ neurons experienced a slightly attenuated level of suppression under cross-surround conditions, but no potentiation, compared to iso-surround (Figure 5D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 5D-E showing modulation indices for static orientation contrast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "aa4c1e14-4a3c-4276-9e5c-bad1c39e2f76",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C45",
+      "claim": "Excitatory neurons appeared to be more strongly suppressed than inhibitory neurons by static gratings regardless of the surround orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the excitatory neurons (i.e., GAD2-) appeared to be more strongly suppressed than the inhibitory neurons (i.e., GAD2+) regardless of the surround orientation (Compare same-colored distributions in Figure 5D and E; Iso-surround GAD2- vs. GAD2+, KS test, p=1.6e-8, KS stat = 0.37; Cross-surround GAD2- vs. GAD2+, KS test, p=9.7e-7, KS stat = 0.33).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis between GAD2- and GAD2+ neurons for static orientation stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "0679701d-d01e-4383-a5e7-cd016d86a685",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C46",
+      "claim": "The bidirectional modulation of activity observed in GAD2- vs. GAD2+ neurons under C-S motion direction contrast was not observed under static orientation opponency conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the bidirectional modulation of activity that we observed in GAD2- vs. GAD2+ neurons under C-S motion direction contrast was not observed under static orientation opponency conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive summary of the comparative data between motion and static orientation conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6353024f-6bdf-4dee-b734-a79de1be258b",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C47",
+      "claim": "sSGS neurons show specificity of saliency responses to motion direction contrast between the center and surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these observations reveal a specificity of saliency responses in sSGS neurons to motion direction contrast between the center and surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the feature contrast comparison experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "501ad0fb-b434-43b0-957a-2ec8eebcae5e",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C48",
+      "claim": "Direction selectivity in the mouse SGS declines with depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in a number of species have shown that the visual layers of the SC or optic tectum can be further divided into sub-laminae (May, 2006). Indeed, based on a small number of single unit recordings, we recently found that direction selectivity in the mouse SGS declines with depth (Inayat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work and confirmed by data in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "87d15295-dc81-46ae-b5a0-897f4846f852",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C49",
+      "claim": "The decline in direction selectivity with depth was observed for both excitatory and inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our results indicate that the decline was observed for both excitatory (Figure 6B, KS test, p=1.7e-16, KS stat = 0.62, between the most superficial (black) and deepest (magenta) cell populations) and inhibitory neurons (Figure 6E, KS test, p=4.6e-7, KS stat = 0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by depth-dependent imaging data with statistical testing shown in Figure 6B and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f81f82a6-e13b-49db-bb98-3e59d5aa0644",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C50",
+      "claim": "Response potentiation of excitatory neurons by oppositely-moving surround gradually turned into suppression with depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this potentiation gradually turned into suppression with depth (Figure 6C, KS test, p<0.01 between the four depths).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by depth-dependent analysis shown in Figure 6C with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "c318ea69-38a8-44af-9125-17b342304fa4",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C51",
+      "claim": "Surround of the same direction remained suppressive across depth in excitatory neurons, despite some subtle difference.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, surround of the same direction remained suppressive across depth, despite some subtle difference (Figure 6D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by depth-dependent analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f71243a3-fb89-4ca2-8285-9ff4b373b521",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C52",
+      "claim": "No significant change was seen in the opposite surround modulation index with depth for inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of inhibitory neurons, no significant change was seen in the opposite surround modulation index with depth (Figure 6F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by depth-dependent analysis shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "f95607dc-a7f6-4c6a-8078-042cb2575e46",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C53",
+      "claim": "A significant correlation was seen between modulation index and gDSI for excitatory neurons (r = 0.38, p=1.3e-14).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a significant, albeit noisy, correlation was seen between the two variables for excitatory neurons (Figure 7A, r = 0.38, p=1.3e-14), where highly DS neurons tend to be potentiated by the opposite surround, while the non-selective ones tend to be suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical correlation analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7b3ce1c1-e935-46bd-8354-7c8868d3c19d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C54",
+      "claim": "A negative correlation was observed for inhibitory neurons between the modulation index and gDSI (r = \u22120.42, p=4.2e-24).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a negative correlation for inhibitory neurons between the modulation index and gDSI (Figure 7B, r = \u22120.42, p=4.2e-24), where the highly DS cells were much more suppressed by the opposite surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical correlation analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "74edf3c9-f7ff-4785-b15c-cb63af1fa2b0",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C55",
+      "claim": "A positive correlation was seen between the modulation index and gDSI for inhibitory neurons when the same surround was presented (r = 0.43, p=8.1e-26).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a positive correlation was seen between the modulation index and gDSI for inhibitory neurons when the same surround was presented (Figure 7C, r = 0.43, p=8.1e-26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical correlation analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "cb255810-dee7-4209-b201-e8737ec1fec9",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C56",
+      "claim": "Inhibitory neurons appear to form two clusters based on their gDSI.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging deeper into the SGS also allowed us to reveal an intriguing property of inhibitory neurons. These cells appear to form two clusters based on their gDSI (Figure 7B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the scatter plots in Figure 7B-C showing distinct populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "d7eacf76-0a1b-485a-9f61-1332d74e771d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C57",
+      "claim": "More direction-selective inhibitory cells (gDSI \u2265 0.5) were much more susceptible to suppression by the opposite direction surround compared to less selective counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "The more DS cells (gDSI \u2265 0.5) were much more susceptible to suppression by the opposite direction surround compared to less selective counterparts (Figure 7B, KS test, p=1.1e-19, KS stat = 0.41, between the 'gDSI \u2265 0.5' and 'gDSI < 0.5' populations; Figure 7D, Mann-Whitney U-test, p=3.7e-19, between 'gDSI \u22650.5 Opp.' and 'gDSI < 0.5 Opp.\")",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis between high and low gDSI inhibitory neurons shown in Figure 7B and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "8d7c7dfe-8f13-40c0-9932-b3a87084cb3f",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C58",
+      "claim": "More direction-selective inhibitory cells were much less susceptible to suppression by the same surround.",
+      "claim_type": "EXPLICIT",
+      "source": "and much less susceptible to suppression by the same surround (Figure 7C, KS test, p=2.5e-19, KS stat = 0.40, between the 'gDSI \u2265 0.5' and 'gDSI < 0.5' populations; Figure 7D, Mann-Whitney U-test, p=7.5e-24, between 'gDSI \u2265 0.5 Same' and 'gDSI < 0.5 Same').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statistical analysis between high and low gDSI inhibitory neurons shown in Figure 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "2d7a406d-0d9d-4c62-af78-6abad60a31c1",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C59",
+      "claim": "Visual cortex was removed to allow optical access and eliminate any potential cortical influence on SC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual cortex was removed to allow optical access and eliminate any potential cortical influence on SC responses (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "49e49691-8a56-4b30-949a-6b1192eac909",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C60",
+      "claim": "The superficial SGS is enriched with neurons that are highly selective for movement direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We specifically imaged the most superficial lamina of the SGS (sSGS,<50 \u03bcm from the surface), which we have recently shown to be enriched with neurons that are highly selective for movement direction (Inayat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "86516261-c33f-40e4-9e60-9c9aeb8bbca0",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C61",
+      "claim": "The greater suppression of inhibitory neurons by the opposite-direction surround suggests a possible role for them in mediating the potentiation of excitatory neurons through disinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater suppression of inhibitory neurons by the opposite-direction surround suggests a possible role for them in mediating the potentiation of excitatory neurons through disinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the differential responses observed in excitatory and inhibitory neurons.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "dd2741d6-5274-45e6-b8ac-e1f66e2285a2",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C62",
+      "claim": "Visual cortex may limit context-dependent modulation by cross-oriented gratings in the SGS.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the findings of a recent electrophysiological study suggesting that visual cortex may actually limit context-dependent modulation by cross-oriented gratings in the SGS (Ahmadlou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "c1733166-19d4-49b5-be77-7f0dc268082d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C63",
+      "claim": "Contextual modulation was more prominent in awake mice than in anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The same study also showed that this type of contextual modulation was more prominent in awake mice than in anesthetized mice (Ahmadlou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7ef4f621-7989-439f-972a-0fd26abfa96f",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C64",
+      "claim": "Retinal inputs were shown to be the source of direction selectivity in the SGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal inputs, on the other hand, were shown to be the source of direction selectivity in the SGS (Shi et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "dbd46042-35ea-49ea-8b5e-b3b694d6781b",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C65",
+      "claim": "Surround-modulated suppression was observed under several motion-contrast regimes in direction-selective retinal ganglion cells in rabbits.",
+      "claim_type": "EXPLICIT",
+      "source": "Surround-modulated suppression was observed under several motion-contrast regimes (spatial phase, spatial frequency, and velocity) in direction-selective retinal ganglion cells (DSGCs) in rabbits (Chiao and Masland, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study in rabbit retina.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "43a26946-3345-46ad-9447-72bebe2d636d",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C66",
+      "claim": "Orientation-specific surround modulation of RGCs was shown in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "and orientation-specific surround modulation of RGCs was shown in rats (Girman and Lund, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study in rat retina.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "a6f44512-bcee-461a-941b-013d185f81ef",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C67",
+      "claim": "Object motion sensitive (OMS) RGCs were found in rabbits and salamander, which are suppressed by global motion but respond strongly to motion difference between RF center and surround.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, object motion sensitive ('OMS') RGCs were found in rabbits and salamander, which are suppressed by global motion but respond strongly to motion difference between RF center and surround (Olveczky et al., 2003; Baccus et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies in rabbit and salamander retina.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6cc3507d-71c8-48ae-9fa5-cfc9be47671b",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C68",
+      "claim": "The OMS cells included several RGC types, and their selectivity for differential motion is independent of direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The OMS cells included several RGC types, and their selectivity for differential motion is independent of direction (Olveczky et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on OMS cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "2a7c0b26-d770-45b1-a890-66dcbedf5181",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C69",
+      "claim": "In mouse DSGCs, the oppositely-moving surround elicits smaller suppression than the same-direction surround, but never reaches potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed that the oppositely-moving surround elicits smaller suppression than the same-direction surround, but never reaches potentiation; and the anti-phase surround causes similar responses as the opposite surround.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on unpublished personal communication from other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "e3dbba44-a4b9-4f3e-9a8f-c0efa6aa5827",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C70",
+      "claim": "Some of the SC responses, including the suppression by same surround and its attenuation by anti-phase and cross-oriented static gratings, are likely inherited from the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "These retinal studies thus suggest that some of the SC responses, including the suppression by same surround and its attenuation by anti-phase and cross-oriented static gratings, are likely inherited from the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with retinal studies cited in the discussion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "761e0695-3514-48b3-8160-08eab37f9690",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C71",
+      "claim": "The bidirectional encoding of motion direction contrast by sSGS neurons is not inherited from the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these and other observations indicate that the bidirectional encoding of motion direction contrast by sSGS neurons is not inherited from the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with retinal studies and differences observed in SC responses.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "0712656f-1627-41b7-a6df-6e2ed43d9889",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C72",
+      "claim": "The modulation by out-of-phase and opposite surround is nearly identical in DSGCs, but dramatically different in the sSGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, the modulation by out-of-phase and opposite surround is nearly identical in DSGCs, but dramatically different in the sSGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation between retinal and SC responses supporting the claim that SC responses are not simply inherited from retina.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "c2915f7e-bf66-403c-a987-b7a15855f3e1",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C73",
+      "claim": "The fact that excitatory and inhibitory neurons in the sSGS exhibit strikingly different responses to center-surround stimuli argues for a role of intracollicular circuit mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the fact that excitatory and inhibitory neurons in the sSGS, both of which receive direct retinal input (Shi et al., 2017), exhibit strikingly different responses to center-surround stimuli argues for a role of intracollicular circuit mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential responses observed in excitatory and inhibitory neurons that both receive retinal input.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "826bb817-ab8e-4fa6-a9b8-3cfd026bb236",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C74",
+      "claim": "Intracollicular circuits may include long range excitatory and inhibitory connections from the surround, wired in a direction- and cell-type-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These circuits may include long range excitatory and inhibitory connections from the surround, and they must be wired in a direction- and cell-type-specific manner to mediate the differential responses in excitatory and inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal based on the observed response properties.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "4ac48eb6-23b6-4f45-b0be-5e96ad019746",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C75",
+      "claim": "The circuits mediating direction contrast responses are likely restricted to the superficial SGS to account for the depth-specific changes.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also likely restricted to the superficial SGS to account for the depth-specific changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the depth-dependent changes in response properties observed in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "31862937-b45c-424f-8fb8-ea053c4ef8e2",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C76",
+      "claim": "The transformation from feature-specific saliency analysis to a feature-agnostic saliency map may take place between the deep SGS and the intermediate layers of the SC.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that the transformation from a feature-specific saliency analysis to a feature-agnostic saliency map, or even more generally to a modality-agnostic saliency map, takes place between the deep SGS and the intermediate layers of the SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the depth-dependent changes and known properties of SC layers.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "754ef453-7b3f-489f-8202-5ee3a6e4b034",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C77",
+      "claim": "The comparison of SC response properties across vertebrate species supports the idea of a gradual evolutionary migration of saliency computation from a single locus in the SC/OT to a multi-structural process that involves cortical inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the comparison of SC response properties across vertebrate species, including our current findings, supports the idea of a gradual evolutionary migration of saliency computation from a single locus in the SC/OT to a multi-structural process that involves cortical inputs (Zhaoping, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim connecting the current findings to evolutionary theory, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "a3f69e22-55d1-4eb7-b2b6-1e673cc88b19",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C78",
+      "claim": "The inhibitory circuits in the rodent SGS have only been studied in the context of classical surround suppression, mostly using stimulus size tuning as a measure of modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory circuits in the rodent SGS have only been studied in the context of classical surround suppression, mostly using stimulus size tuning as a measure of modulation (Binns and Salt, 1997; Kasai and Isa, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "69c4f998-a6d0-410b-82f9-6972c2d1ab46",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C79",
+      "claim": "A recent two-photon imaging study in the mouse SGS showed that the activity of local inhibitory and excitatory neurons is equally suppressed by the surround, implicating long range inhibitory input in mediating the phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent two-photon imaging study in the mouse SGS showed that the activity of local inhibitory and excitatory neurons is equally suppressed by the surround, implicating long range inhibitory input in mediating the phenomenon (Kasai and Isa, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "2ec69edd-121b-469a-b2d1-e2933f3114e1",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C80",
+      "claim": "Adult C57BL/6 mice of both sexes were used in this study (n = 24, 2\u20134 months old).",
+      "claim_type": "EXPLICIT",
+      "source": "Adult C57BL/6 mice of both sexes were used in this study (n = 24, 2\u20134 months old)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "df5dd699-134a-480b-b7e8-4bb12caaa497",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C81",
+      "claim": "All experimental procedures were approved by the Northwestern University Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental procedures were approved by the Northwestern University Institutional Animal Care and Use Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "2abfe893-5265-412a-91e2-c093995dce16",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C82",
+      "claim": "Imaging was performed 1\u20132 hr after dye loading with Cal-520.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed 1\u20132 hr after dye loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the timing of experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "1515da04-e433-44cf-807f-add34ddba9bf",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C83",
+      "claim": "Imaging with H2B-GCaMP6s was performed 10 to 21 days after injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed 10 to 21 days after injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the timing of experiments after viral injection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7333eb22-0197-40e7-81b8-53380bc7fa22",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C84",
+      "claim": "The nuclear GCaMP6s was significantly slower than Cal-520 and could not resolve single spike activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the 'nuclear' GCaMP6s was significantly slower than Cal-520 and could not resolve single spike activity (Figure 6\u2014figure supplement 1A\u2013C), it was able to reliably report the tuning of SGS neurons to the C-S stimuli (Figure 6\u2014figure supplement 1D\u2013E and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the calcium indicator based on simultaneous imaging and electrophysiology experiments shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "c612ea40-2343-49d8-8a00-6a286fdaf020",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "claim_id": "C85",
+      "claim": "The nuclear GCaMP6s was able to reliably report the tuning of SGS neurons to the C-S stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the 'nuclear' GCaMP6s was significantly slower than Cal-520 and could not resolve single spike activity (Figure 6\u2014figure supplement 1A\u2013C), it was able to reliably report the tuning of SGS neurons to the C-S stimuli (Figure 6\u2014figure supplement 1D\u2013E and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the calcium indicator based on simultaneous imaging and electrophysiology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0e15efc-f9fa-4388-be8d-59ea800b2192",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Excitatory neurons in the superficial SGS encode motion contrast through bidirectional modulation, showing suppression by same-direction surrounds and potentiation by opposite-direction surrounds in a monotonically increasing manner with direction difference. This modulation is geometric in nature (divisive suppression to multiplicative potentiation) and includes a population of center-silent neurons that become responsive to specific center-surround combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C17-C19, C22-C28 collectively provide strong converging evidence from calcium imaging experiments (Figures 1-2) showing bidirectional modulation of excitatory neurons. The data include quantitative measurements (83.3% suppressed by same surround, 74.7% potentiated by opposite surround), statistical testing (KS test p=4.0e-83), geometric characterization of modulation (slopes indicating divisive/multiplicative effects), and identification of center-silent neurons (23.6% of population). The monotonic tuning to motion contrast is well-supported by systematic variation of center-surround direction differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibitory neurons in the superficial SGS show differential responses to motion contrast compared to excitatory neurons, being suppressed by both same-direction and opposite-direction surrounds, with greater suppression by opposite surrounds. A substantial proportion (53.8%) of inhibitory neurons respond to surround-alone stimuli, unlike excitatory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C37 provide comprehensive evidence from GAD2+ neuron imaging showing distinct response profiles from excitatory neurons. Statistical comparisons demonstrate significant differences (KS tests with p<1e-19), quantitative measurements show differential suppression patterns, and bootstrapping analysis confirms that only 9.9% of inhibitory neurons are potentiated versus 50.2% of excitatory neurons. The surround-alone responses in inhibitory neurons are well-documented (53.8% of center-responsive cells) with appropriate controls to rule out confounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "sSGS neurons show feature-specific saliency encoding with responses much more prominent to motion direction contrast than to phase, temporal frequency, or static orientation contrast. The bidirectional modulation observed for direction contrast is not replicated for other feature contrasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40-C47 are supported by systematic comparison experiments (Figure 5) testing multiple types of feature contrast. Statistical testing shows that anti-phase, temporal frequency differences, and static orientation contrasts produce attenuated suppression but not the potentiation seen with direction contrast (p<0.01 for all comparisons). The differential responses between GAD2- and GAD2+ neurons to direction contrast are not observed for static orientation contrast, supporting feature specificity. However, the sample size for these experiments is smaller (n=73-155 cells from 3 mice) compared to the main direction contrast experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "0998894f-479f-4811-bcda-b99460b83345",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Direction selectivity and response potentiation by opposite-direction surrounds decline with depth in the SGS for excitatory neurons, while inhibitory neurons maintain suppression across depths. Same-direction surround suppression remains relatively constant across depths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48-C52 are supported by depth-dependent imaging using H2B-GCaMP6s (Figure 6). Statistical testing confirms decline in direction selectivity (KS test p=1.7e-16 for excitatory, p=4.6e-7 for inhibitory neurons) and gradual transition from potentiation to suppression with depth for excitatory neurons (p<0.01 between four depth categories). The use of nuclear GCaMP6s is validated by simultaneous imaging and electrophysiology (Figure 6\u2014figure supplement 1), though it has slower dynamics than Cal-520 and cannot resolve single spikes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Direction selectivity (gDSI) correlates with surround modulation in a cell-type specific manner: positive correlation for excitatory neurons with opposite surround (r=0.38), negative correlation for inhibitory neurons with opposite surround (r=-0.42), and positive correlation for inhibitory neurons with same surround (r=0.43). Inhibitory neurons appear to form two clusters based on gDSI with differential susceptibility to surround modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are supported by correlation analyses (Figure 7) with significant p-values (all p<1e-14). The identification of two inhibitory neuron clusters is supported by visual inspection of scatter plots and statistical comparisons between high (gDSI\u22650.5) and low (gDSI<0.5) selectivity groups showing significant differences in modulation (p<1e-19). However, the correlations are described as 'noisy' (r values 0.38-0.43), suggesting substantial variability, and the mechanistic interpretation of the two clusters remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "1e612817-d469-4df3-972d-2fff7c74d3f5",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The differential responses of excitatory and inhibitory neurons suggest intracollicular circuit mechanisms involving direction- and cell-type-specific wiring, with inhibitory neuron suppression potentially mediating excitatory neuron potentiation through disinhibition. These circuits are likely restricted to superficial SGS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61, C73-C75 are mechanistic interpretations and speculative proposals based on the observed response differences. While the differential responses between excitatory and inhibitory neurons are well-documented (supporting C73), the specific circuit mechanisms (C74) and disinhibition hypothesis (C61) are not directly tested. The inference that circuits are restricted to superficial SGS (C75) is based on depth-dependent changes but lacks direct circuit manipulation or connectivity data. These claims represent reasonable hypotheses but require additional experimental validation through circuit manipulation, connectivity mapping, or pharmacological interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "1aa688bb-a791-429f-83d4-4a4ee1d332cb",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Some SC responses (suppression by same surround, attenuation by anti-phase and cross-oriented gratings) are likely inherited from retina, but the bidirectional encoding of motion direction contrast by sSGS neurons is not inherited from retina, as evidenced by dramatic differences in responses to out-of-phase versus opposite surrounds between retinal ganglion cells and SC neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by comparison with published retinal studies and unpublished data from collaborators on mouse DSGCs. The key evidence is that retinal DSGCs show nearly identical modulation by out-of-phase and opposite surrounds, while sSGS neurons show dramatically different responses to these conditions (C72). This comparative analysis, combined with the differential responses of excitatory and inhibitory neurons that both receive retinal input, provides strong support for intracollicular processing. However, the reliance on unpublished data (C69) and the indirect nature of the comparison (no direct retinal recordings in this study) introduce some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "5823a9e1-09ed-4bc3-a318-5b12463532f0",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "About half of sSGS neurons respond to drifting gratings, with most being direction selective (73.0% GAD2-, 63.1% GAD2+). The center stimulus covers the entire receptive field for most responsive excitatory neurons (82.8%), and a substantial population (23.6%) are center-silent neurons with mappable RFs (80.6% covered by center patch).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C20-C21 provide quantitative characterization of the neuronal population with specific percentages and cell counts from 9 mice. These are straightforward observational findings supported by receptive field mapping (Figure 1\u2014figure supplement 1-2) and response characterization. The identification of center-silent neurons is particularly well-documented with both quantitative data and controls showing they have mappable RFs covered by the center stimulus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "a141ec15-2883-4020-b3e3-b2ac946faed9",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Excitatory and inhibitory neurons have similar RF sizes when mapped with flashing squares (p=0.19), but the 2D standard deviation of GAD2+ RF centroids is statistically larger than GAD2- (p=0.03), though the difference is subtle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by quantitative RF mapping data (Figure 1\u2014figure supplement 2) with appropriate statistical testing (Mann-Whitney U-test and paired t-test). The authors acknowledge the difference in RF centroid spread is 'subtle' and 'unlikely to account for the surround-evoked responses in GAD2+ cells,' appropriately tempering the interpretation. The sample sizes are substantial (n=542 GAD2-, n=425 GAD2+).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "5bdf62ac-85e5-4b2e-9808-aa99e452ded9",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nuclear H2B-GCaMP6s is significantly slower than Cal-520 and cannot resolve single spike activity, but reliably reports the tuning of SGS neurons to center-surround stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are supported by simultaneous two-photon imaging and cell-attached recording (Figure 6\u2014figure supplement 1) showing linear relationships between calcium signals and spike rates (n=3 cells from 2 mice). The characterization of slower dynamics and inability to resolve single spikes is directly demonstrated, while the reliability for reporting tuning is validated by comparing responses across different analysis windows. However, the validation sample size is small (n=3 cells), which is a limitation for generalizing the indicator's performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Methodological details: Visual cortex was removed to eliminate cortical influence; adult C57BL/6 mice (n=24, 2-4 months, both sexes) were used with institutional approval; imaging was performed 1-2 hr after Cal-520 loading or 10-21 days after H2B-GCaMP6s injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C80-C83 are straightforward methodological statements describing experimental procedures, subjects, and timing. These are adequately documented in the Materials and methods section and are standard practices for this type of study. The removal of visual cortex is a critical methodological choice that is clearly stated and justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6dcfe645-1743-468c-97e5-0ef44253ebf0",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about saliency computation, surround modulation in V1 and other species, SC properties across species, retinal contributions, and previous studies on inhibitory circuits in rodent SGS, all supported by citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C13, C60, C62-C69, C78-C79 are literature review claims supported by appropriate citations. These provide context for the current study and are generally accurate representations of prior work. The claim about unpublished mouse DSGC data (C69) is appropriately attributed to personal communication. These claims establish the scientific background and rationale for the study but do not represent novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    },
+    {
+      "id": "6a2582e3-f8b0-466d-b26d-0a5933f15342",
+      "content_id": "3c10b223-192d-4ff8-8d01-c59f6baf9fa2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The transformation from feature-specific to feature-agnostic saliency representation may occur between deep SGS and intermediate SC layers, supporting the evolutionary migration hypothesis of saliency computation from SC/OT to cortical structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 are speculative interpretations extending beyond the data presented. While the depth-dependent changes in response properties provide some support, the study does not directly examine intermediate SC layers or feature-agnostic representations. The evolutionary interpretation (C77) is a broad theoretical claim supported by citation but not directly tested. These represent interesting hypotheses for future work but lack direct experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:02.024012Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "622676d6-c2a0-48e2-b229-c5af9e292c75",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "f1aedc4c-fe9c-4b6b-b606-0974da345e46",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "13da7a25-edf8-41b0-b9d4-7246759a0185",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "e4987a3a-f6a8-45cd-a471-b5993810dc84",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "4299b0f5-1c16-4062-94a7-3d0d7a138ace",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "06d7f9ca-d6fe-4e54-94d5-da1063eebe28",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "e9fc33e5-e28a-4e3e-b49c-770dc4155792",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "fc77d217-510c-4408-a6f8-6d96a69d0908",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "1379ed9d-7b17-4c72-aa96-68a60c96b375",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "07c82a3d-4a82-4975-92be-3c0e078b19de",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "6f44c57b-d928-4fdd-af5e-8c43ffa8f68d",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "d06c4726-f35a-4e0e-846f-e3683e84cb5a",
+      "result_id": "e0e15efc-f9fa-4388-be8d-59ea800b2192"
+    },
+    {
+      "claim_id": "2a647610-26aa-45a0-bcd7-dfc5fc54ed03",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "f1b1c9c2-5345-4e86-8c20-28adfaf1b4aa",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "d9a15352-b334-4811-bf19-9dfcab2cf294",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "15aa4c19-473e-4118-a6b7-e2f252880813",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "28a25bc0-f63b-4b4e-93aa-b73c917f0790",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "18722195-554b-4fa9-8a5b-3b0bd77415b6",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "a40fc844-e515-4fa9-ab19-386440d54229",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "77f30356-3723-47cb-938c-76c591a14cd5",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "7975030e-1d5d-49b3-bbc6-7872f24b27ed",
+      "result_id": "444503c2-24ee-4a34-a9c1-7ebfd749bcb2"
+    },
+    {
+      "claim_id": "27f7cad6-1762-437e-94ae-daa206de70e8",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "dc3b7187-d53a-4d15-8f8a-80331041598c",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "94ef84ec-60d7-4aeb-bc1d-aa84dc272bf1",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "69530ea6-dfeb-441d-8519-8912c3d18249",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "7012ce3f-d769-4978-8ad1-eb24c02067dc",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "6a7453d4-1e35-4415-a8aa-3480487f9ff3",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "aa4c1e14-4a3c-4276-9e5c-bad1c39e2f76",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "0679701d-d01e-4383-a5e7-cd016d86a685",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "6353024f-6bdf-4dee-b734-a79de1be258b",
+      "result_id": "7f4569f0-c62b-440e-ba9a-63dfec242f6b"
+    },
+    {
+      "claim_id": "9eb61438-637c-491a-b3ac-2cead5b5f7f4",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "501ad0fb-b434-43b0-957a-2ec8eebcae5e",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "87d15295-dc81-46ae-b5a0-897f4846f852",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "f81f82a6-e13b-49db-bb98-3e59d5aa0644",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "c318ea69-38a8-44af-9125-17b342304fa4",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "f71243a3-fb89-4ca2-8285-9ff4b373b521",
+      "result_id": "0998894f-479f-4811-bcda-b99460b83345"
+    },
+    {
+      "claim_id": "f95607dc-a7f6-4c6a-8078-042cb2575e46",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "7b3ce1c1-e935-46bd-8354-7c8868d3c19d",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "74edf3c9-f7ff-4785-b15c-cb63af1fa2b0",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "cb255810-dee7-4209-b201-e8737ec1fec9",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "d7eacf76-0a1b-485a-9f61-1332d74e771d",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "8d7c7dfe-8f13-40c0-9932-b3a87084cb3f",
+      "result_id": "7c72a37d-11bc-49e0-958d-4c49a0dfcab2"
+    },
+    {
+      "claim_id": "86516261-c33f-40e4-9e60-9c9aeb8bbca0",
+      "result_id": "1e612817-d469-4df3-972d-2fff7c74d3f5"
+    },
+    {
+      "claim_id": "c2915f7e-bf66-403c-a987-b7a15855f3e1",
+      "result_id": "1e612817-d469-4df3-972d-2fff7c74d3f5"
+    },
+    {
+      "claim_id": "826bb817-ab8e-4fa6-a9b8-3cfd026bb236",
+      "result_id": "1e612817-d469-4df3-972d-2fff7c74d3f5"
+    },
+    {
+      "claim_id": "4ac48eb6-23b6-4f45-b0be-5e96ad019746",
+      "result_id": "1e612817-d469-4df3-972d-2fff7c74d3f5"
+    },
+    {
+      "claim_id": "e3dbba44-a4b9-4f3e-9a8f-c0efa6aa5827",
+      "result_id": "1aa688bb-a791-429f-83d4-4a4ee1d332cb"
+    },
+    {
+      "claim_id": "761e0695-3514-48b3-8160-08eab37f9690",
+      "result_id": "1aa688bb-a791-429f-83d4-4a4ee1d332cb"
+    },
+    {
+      "claim_id": "0712656f-1627-41b7-a6df-6e2ed43d9889",
+      "result_id": "1aa688bb-a791-429f-83d4-4a4ee1d332cb"
+    },
+    {
+      "claim_id": "9cc8256e-6d3a-4c3e-9e60-e9db2a034004",
+      "result_id": "5823a9e1-09ed-4bc3-a318-5b12463532f0"
+    },
+    {
+      "claim_id": "91e1bc4a-249c-4492-919b-ec3638cf0627",
+      "result_id": "5823a9e1-09ed-4bc3-a318-5b12463532f0"
+    },
+    {
+      "claim_id": "7511fa22-5210-40fb-9326-eaa0967c524a",
+      "result_id": "5823a9e1-09ed-4bc3-a318-5b12463532f0"
+    },
+    {
+      "claim_id": "bd445924-98a1-43e8-a2c4-c372849a10d8",
+      "result_id": "5823a9e1-09ed-4bc3-a318-5b12463532f0"
+    },
+    {
+      "claim_id": "5b579c0b-d064-4e3f-80f1-7f2b5080d285",
+      "result_id": "5823a9e1-09ed-4bc3-a318-5b12463532f0"
+    },
+    {
+      "claim_id": "e3f19d3d-d220-4bae-a561-7880e8274a85",
+      "result_id": "a141ec15-2883-4020-b3e3-b2ac946faed9"
+    },
+    {
+      "claim_id": "f0e31d13-a3cb-470f-8f84-5e1183c2d7c3",
+      "result_id": "a141ec15-2883-4020-b3e3-b2ac946faed9"
+    },
+    {
+      "claim_id": "7333eb22-0197-40e7-81b8-53380bc7fa22",
+      "result_id": "5bdf62ac-85e5-4b2e-9808-aa99e452ded9"
+    },
+    {
+      "claim_id": "c612ea40-2343-49d8-8a00-6a286fdaf020",
+      "result_id": "5bdf62ac-85e5-4b2e-9808-aa99e452ded9"
+    },
+    {
+      "claim_id": "2d7a406d-0d9d-4c62-af78-6abad60a31c1",
+      "result_id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813"
+    },
+    {
+      "claim_id": "2ec69edd-121b-469a-b2d1-e2933f3114e1",
+      "result_id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813"
+    },
+    {
+      "claim_id": "df5dd699-134a-480b-b7e8-4bb12caaa497",
+      "result_id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813"
+    },
+    {
+      "claim_id": "2abfe893-5265-412a-91e2-c093995dce16",
+      "result_id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813"
+    },
+    {
+      "claim_id": "1515da04-e433-44cf-807f-add34ddba9bf",
+      "result_id": "aef38390-db0b-4a36-a8b2-8eed3a3d6813"
+    },
+    {
+      "claim_id": "07fd7c8d-513c-452c-9338-aef03d3ed3fb",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "1fc13050-7acb-4eab-8c3e-5e2435a2a423",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "ceb3e54b-3b93-4366-933e-163bb33d8f5a",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "34d1a8ad-0a9d-44f3-912b-401ae4e01575",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "9fcba326-7589-4ef9-9112-e0d03c3b97d6",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "e64140bb-d7b5-4ba2-8ee4-7d519745663d",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "a2febe0e-9283-4403-9314-5aaf8f8a1671",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "7ffcd258-6654-4fd6-bf65-2d0c55bff5f8",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "49e49691-8a56-4b30-949a-6b1192eac909",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "dd2741d6-5274-45e6-b8ac-e1f66e2285a2",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "c1733166-19d4-49b5-be77-7f0dc268082d",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "7ef4f621-7989-439f-972a-0fd26abfa96f",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "dbd46042-35ea-49ea-8b5e-b3b694d6781b",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "43a26946-3345-46ad-9447-72bebe2d636d",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "a6f44512-bcee-461a-941b-013d185f81ef",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "6cc3507d-71c8-48ae-9fa5-cfc9be47671b",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "2a7c0b26-d770-45b1-a890-66dcbedf5181",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "a3f69e22-55d1-4eb7-b2b6-1e673cc88b19",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "69c4f998-a6d0-410b-82f9-6972c2d1ab46",
+      "result_id": "6dcfe645-1743-468c-97e5-0ef44253ebf0"
+    },
+    {
+      "claim_id": "31862937-b45c-424f-8fb8-ea053c4ef8e2",
+      "result_id": "6a2582e3-f8b0-466d-b26d-0a5933f15342"
+    },
+    {
+      "claim_id": "754ef453-7b3f-489f-8202-5ee3a6e4b034",
+      "result_id": "6a2582e3-f8b0-466d-b26d-0a5933f15342"
+    }
+  ],
+  "comparisons": []
+}

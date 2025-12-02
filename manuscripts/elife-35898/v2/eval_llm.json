@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "COMMD proteins form homodimers via the C-terminal COMM domain. SEC-MALLS analysis shows that full-length Commd1, Commd7, and Commd9 form homodimers in solution, while isolated HN domains behave as monomers and isolated COMM domains form dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are well-supported by SEC-MALLS data presented in Figure 1. The experimental molecular weights match theoretical dimeric masses, and domain truncation experiments clearly demonstrate that the COMM domain is necessary and sufficient for dimerization. The data is internally consistent and uses appropriate biophysical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The crystal structure of the Commd9 COMM domain reveals a tightly interlocked dimeric structure with extensive hydrophobic interactions. The structure was determined to 2.2 \u00c5 resolution and shows two cone-shaped chains forming a globular dimer with ~2100 \u00c5\u00b2 buried surface area, representing nearly 1/3 of the monomer surface. Sequence conservation analysis reveals high conservation in the hydrophobic core, particularly leucine residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are strongly supported by crystallographic data (Table 1), structural analysis (Figure 1D), and sequence conservation analysis (Figure 2). The resolution is adequate, the structure is well-described, and the buried surface area calculation supports the obligatory dimer interpretation. CONSURF analysis validates the conservation claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The crystal structure of the Commd9 HN domain shows a globular six-helix bundle with meander topology, determined to 1.55 \u00c5 resolution. The structure is similar to the Commd1 HN domain (DALI Z-score >3, RMSD 3.2 \u00c5 over 83 C\u03b1 atoms), with some differences including an additional N-terminal helix in Commd9. Bioinformatics analysis suggests all COMMD family members share this \u03b1-helical topology, except human Commd6 which lacks an HN domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are well-supported by crystallographic data (Table 1, Figure 3), structural comparison using DALI, and bioinformatics analysis (Figure 3\u2014figure supplement 1). The resolution is excellent, the structural comparison is quantitative, and the bioinformatics predictions are reasonable based on secondary structure analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C115"
+    ],
+    "result": "SAXS analysis reveals that COMMD proteins adopt an elongated homodimeric architecture in solution. The scattering data for Commd1, Commd7, and Commd9 indicate relatively globular but elongated molecules, with theoretical scattering profiles showing good agreement with experimental data (low \u03c7\u00b2 values). The solution structures show a modular architecture with flexible HN domains as appendages to the COMM domain dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C115 are supported by comprehensive SAXS analysis (Figure 4, Table 2) including Guinier analysis, P(r) functions, ab initio modeling, and rigid body fitting. The low \u03c7\u00b2 values and good agreement between different modeling approaches validate the structural models. The data quality appears adequate based on the Kratky plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "COMMD proteins form promiscuous homo- and heterodimeric complexes through their C-terminal COMM domains. Co-expression GST pull-down assays show that all COMMD proteins can co-assemble with each other when co-translated, but no exchange occurs between pre-formed homodimers. Some specificity is observed, with Commd10 binding most strongly to Commd2 and Commd5. The COMM domain is necessary and sufficient for these interactions, while the HN domain shows no binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by systematic co-expression GST pull-down experiments (Figure 5A). The requirement for co-translation is a key observation that supports the obligatory dimer model. However, the lack of quantification and the qualitative nature of Western blot analysis limits the strength of conclusions about binding specificity. The inference about dimeric structures (C82) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Commd5-Commd10 complex forms a heterotetramer in solution. SEC-MALLS analysis shows the complex is monodisperse with an experimental mass of 85 kDa, compared to a theoretical dimeric mass of 47.5 kDa. The isolated COMM domains of Commd5 and Commd10 also appear to form heterotetrameric assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 are based on SEC-MALLS data (Figure 5E,F), but the interpretation is uncertain. While the experimental mass suggests a tetramer, the authors acknowledge two possible models (homodimers assembling as tetramers vs. heterodimers forming tetramers) without distinguishing between them. Additional experiments such as cross-linking or analytical ultracentrifugation would be needed to definitively establish the stoichiometry and architecture. The discrepancy between this result and the homodimer data for other COMMDs is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "COMMD proteins bind directly to CCDC22 and CCDC93 through their COMM domains, with CCDC proteins binding primarily via their N-terminal NN-CH domains. Commd1, 7, and 10 bind both CCDC22 and CCDC93, while Commd9 shows specificity for CCDC93. Unlike COMMD-COMMD interactions, CCDC binding to pre-formed COMMD dimers occurs spontaneously in vitro. Commd1 shows stronger affinity than Commd9 for CCDC proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by both co-translation and in vitro GST pull-down assays (Figure 6A,B). The key distinction that CCDC binding does not require co-translation (unlike COMMD-COMMD binding) is well-demonstrated. Domain truncation experiments clearly identify the binding regions. However, the relative affinity claims (C91, C92) are based on qualitative gel band intensities rather than quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The affinity of the Commd1 COMM domain for the NN-CH domains of CCDC22 and CCDC93 is in the low micromolar range, with Kd values of 10.3 \u00b5M and 14.6 \u00b5M respectively, measured by biolayer interferometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by quantitative biolayer interferometry measurements (Figure 6C,D) showing dose-dependent binding. The Kd values are in a reasonable range for protein-protein interactions. The measurements appear to be performed properly with appropriate controls, though only single measurements are shown without error estimates or replicates clearly indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Cross-linking mass spectrometry identifies the binding interface between Commd9 and CCDC93. Three intermolecular cross-links connect lysines K100, K133, and K152 of Commd9 to the NN-CH domain of CCDC93. K133 and K152 are located on contiguous \u03b2-sheet surfaces, suggesting this region (which includes conserved residues 128WRVD131) is the likely binding surface for CCDC93.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by cross-linking mass spectrometry data (Figure 7, Table 3) with appropriate controls (lysozyme negative control, retromer positive control). The cross-links are mapped onto the crystal structure, and the identified lysines are solvent-accessible. The inference about the binding surface (C98) is reasonable based on the spatial clustering of cross-linked residues and sequence conservation. The xQuest scores appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "COMMD proteins show differential membrane-binding properties. Commd1 and Commd7 associate non-specifically with various negatively charged membranes, while Commd10 shows stronger interaction with Folch liposomes and polyphosphorylated phosphoinositides. Commd9 shows weak or no membrane association. The Commd1 COMM domain contains a basic patch (R133, H134, K167) responsible for membrane binding; mutation of these residues abolishes binding. Commd1 binds various liposomes with affinities of 1-10 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 are supported by both qualitative liposome pelleting assays (Figure 8A) and quantitative BLiTz measurements (Figure 8D-H). The identification of the basic patch by electrostatic surface analysis and its validation by mutagenesis provides strong mechanistic insight. The Kd values are reasonable. However, the liposome pelleting assays are qualitative, and the BLiTz measurements show some variability. The conclusion about the COMM domain as a central hub (C110) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The membrane-binding site on Commd1 is not required for endosomal localization in cells. While wild-type GFP-Commd1 localizes to endosomal puncta and colocalizes with Fam21, the membrane-binding mutant (R133Q, H134A, K167A) also colocalizes with Fam21 on endosomes despite being defective for membrane binding in vitro. This suggests the membrane-binding site may be important for non-specific interactions or complex orientation but is not required for specific recruitment to endosomes in the context of the assembled complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by immunofluorescence microscopy (Figure 8I). The observation that the membrane-binding mutant still localizes to endosomes is surprising but well-documented. However, the interpretation (C113) is speculative and represents a hypothesis rather than a demonstrated mechanism. The authors appropriately frame this as a proposal. Additional experiments such as testing the mutant in CCDC-depleted cells would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C117"
+    ],
+    "result": "The COMMD protein architecture shows remarkable structural similarity to chlamydial proteins CT584 and Cpn0803. These bacterial proteins have modular structures with \u03b1-helical N-terminal domains and \u03b1/\u03b2 C-terminal domains analogous to COMMD HN and COMM domains respectively (DALI Z-scores >7.5). The main difference is two additional C-terminal \u03b1-helices in the bacterial proteins. Like COMMDs, the chlamydial proteins form dimers via their C-terminal domains and can assemble into hexamers through trimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 and C117 are supported by structural comparison using DALI (Figure 4\u2014figure supplement 4) and citations to published structures. The Z-scores are high, indicating significant structural similarity. The comparison is well-documented with structural overlays. However, the functional implications of this similarity remain speculative (addressed in separate claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "The functional significance of COMMD similarity to chlamydial proteins is speculative. While the function of CT584/Cpn0803 is unknown, there is evidence that Cpn0803 can interact with phospholipids and Type III secretion components. The authors speculate these may be secreted effectors that mimic COMMD functions, possibly acquired through horizontal gene transfer. They also speculate that COMMD N-terminal domains may contribute to higher-order assemblies similar to the hexameric chlamydial structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 and C124 are explicitly speculative as acknowledged by the authors. While the structural similarity is clear, the functional implications are uncertain. The horizontal gene transfer hypothesis (C121-C122) is plausible given precedents in chlamydial evolution, but lacks direct evidence. The speculation about higher-order COMMD assemblies (C124) is reasonable given the chlamydial hexamers and the known 600 kDa CCC complex size, but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C134",
+      "C135"
+    ],
+    "result": "The COMM domain shows structural similarity to Pur-\u03b1 repeat domains, suggesting a possible role in DNA/RNA binding. However, the specific DNA binding site in Pur-\u03b1 is not conserved in COMMD proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131, C134, and C135 are based on structural comparison (C131 is supported by DALI analysis and citations). However, the speculation about DNA/RNA binding (C134) is appropriately qualified by the authors noting that the DNA binding site is not conserved (C135, supported by Figure 4\u2014figure supplement 3A). This represents an interesting hypothesis but lacks experimental support. The structural similarity alone is insufficient to conclude functional similarity in nucleic acid binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Summary of COMMD protein properties and main conclusions. COMMD proteins are conserved proteins involved in trafficking and transcription, forming oligomeric complexes and acting as components of the endosomal CCC complex. All COMMD proteins possess \u03b1-helical N-terminal domains and highly conserved C-terminal COMM domains that form tightly interlocked dimeric structures responsible for COMMD-COMMD interactions, CCDC binding, and membrane association. The study concludes that COMMD proteins function as obligatory dimers with conserved domain architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 represent the main conclusions of the study. C1-C5 are established knowledge from prior work (supported by citations). C6-C11 are primary findings well-supported by the structural, biophysical, and biochemical data presented throughout the manuscript. C12-C13 are overarching conclusions supported by multiple lines of evidence including MALLS, crystal structures, SAXS, and binding assays. The conclusion that COMMDs are obligatory dimers is strongly supported, though the evidence for heterodimers being obligatory is less direct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C114",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Background information on COMMD proteins from prior literature. This includes their conservation, family size, roles in trafficking and transcription, involvement in copper metabolism and disease, interactions with ATP7A/B, effects on LDLR and cholesterol, specific functions of individual family members, the CCC/Commander complex composition, and various regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C41 and C114, C125-C141 are background information supported by citations to previous literature. These establish the context for the current study and are appropriately referenced. The authors accurately represent prior work, though some claims (e.g., C24 about Cu(II) binding) are noted as controversial. These are not primary findings of this study but provide essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C60"
+    ],
+    "result": "The HN domain is a structurally conserved feature shared by all COMMD family members. Biophysical, structural, and bioinformatics analyses show that despite sequence variability, the HN domain maintains a conserved \u03b1-helical topology across the family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C60 challenge the previous characterization of the N-terminal domain as a 'variable domain.' The conclusion is supported by crystal structures of Commd1 and Commd9 HN domains, DALI structural comparison, and bioinformatics analysis (Figure 3\u2014figure supplement 1). However, the bioinformatics predictions are based on secondary structure prediction rather than experimental structures for all family members. The exception of Commd6 is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142"
+    ],
+    "result": "Data availability statement indicating deposition of crystal structures in the Protein Data Bank with accession codes 6BP6 and 4OE9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 is a straightforward data availability statement that can be verified by checking the PDB. This is standard practice and supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

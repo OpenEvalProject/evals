@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cone outer segments appear rapidly at postnatal day 6 (P6) in the central mouse retina. Electron microscopy showed outer segments were absent until P4, increased from 7% at P5 to 53% at P6, and continued increasing until P11. Light microscopy of opsin-labeled cones confirmed this pattern, with opsin-rich extensions increasing from 4% at P5 to 45% at P6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32-C34, C42-C45, C105-C107 provide convergent evidence from two independent microscopy methods (EM and light microscopy) showing synchronized, rapid outer segment formation at P6. The quantitative data are consistent across methods, and appropriate controls verified cone-specific labeling (C38-C41). The temporal resolution (daily measurements) and spatial focus (central retina) are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A major transcriptional switch occurs at P6 coinciding with outer segment formation. The switch affects 14% of all expressed genes (1,546 genes total: 508 switch-on, 1,038 switch-off), accounts for 67% of variance in gene expression, and temporally aligns with the morphological appearance of outer segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C46-C61, C101-C103 demonstrate a well-characterized transcriptional switch using multiple analytical approaches (correlation analysis, PCA, differential expression). The statistical methods are appropriate (likelihood-ratio test, FDR < 5%), biological replicates are included (n=3 per timepoint), and the temporal correlation between structural and transcriptional changes is compelling. The 67% variance explained by PC1 strongly supports the dominance of this switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Switch-off genes are enriched for transcription factors (23% vs. 6% expected, p=9\u00d710\u207b\u2078), including five neurogenic transcription factors (Ascl1, Myt1l, Neurog1, Neurog2, Pou3f2) that are downregulated 7- to 188-fold. These factors are known to promote neuronal conversion and are typically expressed throughout neuronal life, suggesting the neuronal state is turned off before cones become functional sensory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C62-C70, C116-C119 provide strong statistical evidence for transcription factor enrichment using permutation testing. The identification of specific neurogenic factors is well-supported by RNA-seq data, and the connection to prior literature on neuronal reprogramming (C64, C117) is appropriate. However, the functional interpretation (C119) is inferential and would benefit from experimental validation. The claim about neuronal state being \"turned off\" is a reasonable interpretation but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C122"
+    ],
+    "result": "Switch-on genes include cone-specific genes, phototransduction pathway genes (both p<10\u207b\u2076), and all metabolic pathways. Switch-off genes include pathways for Hedgehog signaling (p=0.005), Notch signaling (p=0.01), and axon guidance (p<10\u207b\u2076). Overall, 50 of 219 analyzed pathways showed significant switch-like regulation (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C80, C122 demonstrate comprehensive pathway analysis with appropriate statistical testing (permutation tests with 10\u2076 iterations). The biological interpretation is logical: functional pathways switch on while developmental pathways switch off. The p-values are well-controlled for multiple testing. The pathway definitions from KEGG and cone-specific genes from prior work (Siegert et al., 2012) provide solid foundations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The transcriptional switch is primarily regulated at the transcriptional level (70% of changes, R=0.84 between exonic and intronic reads) and is accompanied by asymmetric chromatin rearrangements. Between P3-P6, 26,014 regions lost accessibility and 5,687 gained accessibility, while only 172 lost and 114 gained accessibility between P6-P10. Changes predominantly affected distal enhancer regions rather than promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C81-C87, C91-C93, C97-C100, C124-C126 provide strong mechanistic insights using exon-intron split analysis and ATACseq. The temporal asymmetry is striking and well-quantified. The interpretation that distal regions (enhancers) are preferentially affected is supported by the distance analysis (C92, Figure 4D). However, the 70% estimate for transcriptional control (C82) is an inference from correlation and may underestimate post-transcriptional contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "CTCF binding sites protect chromatin regions from accessibility loss during the switch. Regions with more CTCF binding sites showed more stable chromatin accessibility, while regions lacking CTCF sites had higher probability of losing accessibility between P3 and P6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96, C127-C129 identify CTCF through regularized regression (elastic net) analysis of motif enrichment. The relationship between CTCF site number and accessibility stability is clearly demonstrated (Figure 4E). However, the analysis is limited by incomplete transcription factor binding site annotations (only 23% of expressed TFs have annotated sites). The mechanistic interpretation invoking CTCF's role in chromatin organization (C128) is well-supported by citations but remains correlative in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Chrnb4-GFP mouse line specifically and extensively labels cones from P3 onwards. Between P3-P11, 98% of GFP+ cells were in the photoreceptor layer, 94% of GFP+ cells were opsin-positive (cones), and 99.1% of opsin+ cells were GFP-labeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 provide thorough validation of the genetic tool used for cone isolation. The quantitative immunohistochemistry data demonstrate high specificity (94%) and coverage (99.1%). This validation is critical for interpreting the RNA-seq results. The citation to prior work (Siegert et al., 2009) and independent verification strengthen confidence in the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ATACseq data from developing cones (P3, P6, P10) correlate strongly with adult cones (R=0.86) but weakly with adult rods (R=0.32). Post-switch cones (P6, P10) correlate more strongly with adult cones (R=0.88) than pre-switch cones (P3, R=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 validate the ATACseq data by comparison to published adult photoreceptor data (Mo et al., 2016). The correlations confirm cell-type specificity and show progressive maturation toward the adult cone chromatin state. This cross-validation strengthens confidence in the ATACseq results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Switch genes are distributed across the entire genome without chromosomal clustering. The genomic distribution of switch-on and switch-off genes does not differ from the distribution of all expressed genes (Chi-square test, switch-on: p=0.279, switch-off: p=0.5499).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 demonstrate that the switch is a genome-wide phenomenon rather than being restricted to specific chromosomal regions. The statistical test is appropriate, and the result argues against simple mechanisms like chromosomal domain regulation. This supports the interpretation of a coordinated transcriptional program.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C110"
+    ],
+    "result": "The electron microscopy reconstruction is dominated by rod outer segments because rods constitute 97% of mouse photoreceptors. Therefore, rod outer segments must also appear rapidly at P6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C110 acknowledge an important limitation and make a reasonable inference. The proportion of rods (97%) is well-established (Carter-Dawson and LaVail, 1979). The inference that rods also show rapid outer segment formation at P6 is logical but remains indirect. The authors appropriately focus on cones using the Chrnb4-GFP line for cell-type-specific analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The retina develops asynchronously from center to periphery, which explains why previous whole-retina studies found more gradual changes compared to this central retina-focused analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 appropriately contextualize the findings relative to prior literature. The asynchronous development is well-established (Holt et al., 1988), and the explanation for discrepancies with prior studies (Duncan and Herald, 1974; Obata and Usukura, 1992; Olney, 1968; Sedmak and Wolfrum, 2011) is reasonable. The focus on central retina is well-justified methodologically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "No such fast and extensive change in gene expression and chromatin accessibility, correlated with a distinct morphological change, has been reported in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 makes a strong novelty statement but is difficult to verify comprehensively. While the authors may be correct based on their knowledge of the literature, the claim would require systematic review of neuronal differentiation studies across multiple systems. The statement is qualified with 'to our knowledge,' which is appropriate, but the claim remains uncertain without more comprehensive literature analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Prior studies showed large-scale gene expression changes in rod photoreceptors between P6-P10 (Kim et al., 2016) and similar changes using SAGE and in situ hybridization (Blackshaw et al., 2001, 2004). It is possible that rods also show a gene expression switch between P5-P7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 appropriately cite relevant prior work on rods and make a cautious speculation (C115: 'it is possible'). The speculation is reasonable given the structural and functional similarities between rods and cones, but the authors correctly note that fine temporal resolution studies are needed to confirm this in rods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Opn1mw (middle-wavelength opsin) switches on at P6 and also turns on in vitro in retinal explants cultured from P3 onwards. If other switch genes behave similarly, the switch is triggered either by an intra-retinal clock or by an extra-retinal signal acting before P3 with delayed effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 present an interesting observation about Opn1mw behavior in vitro (supported by citations to Satoh et al., 2009; Wikler et al., 1996), but the generalization to other switch genes (C132) is speculative. The conditional logic ('if other switch genes behave similarly') is appropriate, but without testing other switch genes in vitro, the mechanism remains uncertain. This represents a testable hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Another switch-like event occurs at P6 in retinal ganglion cells, where GABA switches from excitatory to inhibitory due to sudden changes in chloride concentration. For both this switch and the cone gene expression switch, the trigger is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 appropriately cite established knowledge about the GABA switch in ganglion cells (Zhang et al., 2006; Barkis et al., 2010) and draw a parallel to the cone switch. The acknowledgment that triggers for both switches are unknown (C136) is accurate and highlights an important open question. This contextualizes the cone findings within broader retinal development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The miRNA-182/183/96 cluster is necessary for outer segment maintenance in adult cones (Busskamp et al., 2014a), begins expression at P10 (Krol et al., 2015), and knockout results in shortened outer segments (Fan et al., 2017; Xiang et al., 2017). These studies suggest this cluster is not involved in initiating outer segment formation at P6 but is needed later for maintenance or elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 synthesize prior literature appropriately. The inference (C143) that the miRNA cluster is not involved in initiation but rather in maintenance/elongation is logical based on the timing (expression starts at P10, after the P6 switch). The citations support each component claim, and the interpretation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C137",
+      "C138"
+    ],
+    "result": "There is a therapeutic time window during which outer segments could potentially be regenerated to restore light sensitivity. Understanding the molecular program driving outer segment formation could provide insights into regeneration strategies, and elucidating the trigger for the switch could help establish causality and find regeneration strategies for blinding diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C20, C137-C138 make speculative statements about therapeutic applications. While the logic is reasonable (understanding formation mechanisms could inform regeneration), these are forward-looking statements without experimental support in the current manuscript. The therapeutic window concept (C19) is based on prior work (C18), but the regeneration potential remains speculative. These represent motivations and future directions rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "Proneuronal factors may play a role in axon formation and may inhibit outer segment formation, such that their downregulation may initiate outer segment formation. The late switch-on of metabolic pathways may save energy until needed for light responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121, C123 are speculative interpretations (note the repeated use of 'may') about functional roles. While these are reasonable hypotheses based on the observed gene expression patterns, they lack experimental validation. The speculation about energy conservation (C123) is plausible but untested. These represent interesting hypotheses for future mechanistic studies but are not supported results.",
+    "result_type": "MINOR"
+  }
+]

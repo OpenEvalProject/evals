@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TMC1 and TMEM16 proteins share structural similarity based on HMM-based template searches and hydrophobicity profile analysis, despite low sequence identity (11-12%). nhTMEM16 and mTMEM16A were identified as the best structural templates for modeling TMC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide converging computational evidence from multiple independent methods (HMM profiling, sequence coverage at 80%, hydrophobicity analysis) that establish structural relatedness despite low sequence identity. The methodology is appropriate for remote homology detection, and the consistency across approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three TMC1 structural models were generated using TMEM16 templates, revealing a conserved 10-TM architecture with a large cavity formed by helices TM4-TM7. Model 1 (based on nhTMEM16) showed the highest quality scores and contains a wide-open cavity facing the lipid bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C48-C59 describe a systematic modeling approach with appropriate quality assessment (ProQM scores, PROCHECK analysis). The convergence of three models on similar overall architecture, combined with quantitative quality metrics favoring model 1, provides solid computational support. However, these remain computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The TMC1 model reveals a large hydrophilic cavity at the protein-lipid interface containing polar and acidic residues, exhibiting negative electrostatic potential consistent with cation selectivity. This cavity is highly conserved among TMC proteins and lacks the Ca2+-binding residues found in TMEM16 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C60-C67 provide detailed structural characterization of the cavity with multiple lines of computational evidence (residue composition, electrostatic calculations, conservation analysis). The negative electrostatic potential is consistent with known MET channel cation selectivity (C63), and conservation analysis (C64) supports functional importance. The absence of Ca2+-binding residues (C62) is a key distinguishing feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Twenty-two deafness-causing TMC1 mutations map to the modeled structure, with nine mutations in cavity-forming helices TM4-TM5. Notably, both autosomal dominant deafness mutations (M412K Beethoven and D569N/H) localize to the cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide strong functional validation of the structural model by showing that disease-causing mutations cluster in the predicted cavity region. The specific localization of both known dominant mutations to the cavity is particularly compelling evidence for the cavity's functional importance, though this is correlative rather than mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Auditory hair cells from P6 wild-type mice show robust uptake of 3 kDa Texas Red-labeled dextran after 2-hour incubation, with labeling observed in both inner and outer hair cells across all cochlear regions. Basal hair cells show significantly higher dextran incorporation than middle or apical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C71-C73 present clear experimental observations with appropriate microscopy methods (Airyscan super-resolution) and statistical analysis showing regional differences (C73). The regional gradient is consistent with prior FM1-43 studies (cited), providing independent validation. Sample sizes appear adequate (n=69-89 cells per region).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Dextran-TR labeling shows a specific pattern where only hair cells with labeled cell bodies also show stereocilia labeling, with signal intensity correlating between these compartments. Labeling is enriched at the tips of shorter stereocilia rows where MET channels are localized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe a consistent spatial pattern linking stereocilia and cell body labeling that is mechanistically coherent with dextran entry through MET channels at stereocilia tips followed by diffusion. The enrichment at shorter stereocilia tips (C76) matches known MET channel localization, providing strong circumstantial evidence for channel-mediated entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Dextran-TR uptake occurs at 4\u00b0C with similar diffuse labeling patterns as at room temperature, indicating that the diffuse uptake pathway does not require endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 use an appropriate temperature control to distinguish endocytic from non-endocytic uptake. The persistence of diffuse labeling at 4\u00b0C (which inhibits endocytosis) provides strong evidence against an endocytic mechanism for the diffuse pattern, though vesicular uptake may still occur via other pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Dextran uptake shows size and charge selectivity: 10 kDa dextran-TR and anionic 3 kDa dextran-FITC show only vesicle-like uptake patterns, while cationic 3 kDa dextran-TR shows diffuse uptake. This indicates that fluorophore properties influence the uptake pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate appropriate controls testing size and charge selectivity. The differential uptake patterns provide specificity for the 3 kDa cationic dextran-TR pathway and help distinguish channel-mediated from endocytic uptake. However, the interpretation that fluorophore properties (rather than just charge) matter (C81) requires additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "BAPTA treatment (which breaks tip links) and multiple MET channel blockers (dihydrostreptomycin, benzamil, neomycin, amiloride) completely abolish diffuse dextran-TR uptake, demonstrating that functional MET channels are required for this uptake pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide strong pharmacological evidence using multiple independent blockers with different mechanisms, all showing consistent abolition of diffuse uptake. BAPTA control (breaking tip links) provides mechanical validation. The consistency across multiple blockers with different binding sites strengthens the conclusion that MET channels mediate uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Diffuse dextran-TR uptake and stereocilia labeling are preserved in TMC1 or TMC2 single knockout mice but completely absent in TMC1/TMC2 double knockout mice, demonstrating that TMC1/2 proteins are essential for dextran permeation while either protein alone is sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C85-C89 use appropriate genetic controls showing that loss of both TMC proteins eliminates diffuse uptake while single knockouts retain function. This is consistent with known redundancy at P6 (cited) and provides strong genetic evidence for TMC protein involvement. The preservation of vesicular uptake in double knockouts (C88) further validates the specificity of the diffuse pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The time course for hair cell labeling varies with molecule size (minutes for FM1-43, 30-60 min for aminoglycosides, 1-2 hours for 3 kDa dextran), consistent with permeation through the MET channel. The slower kinetics compared to MscL suggests the MET channel pore is considerably smaller than MscL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C94-C96 provide a logical size-dependent kinetic analysis consistent with channel permeation. The comparison to MscL (C95-C96) is appropriate and suggests the MET pore is large but not as large as MscL (>25 \u00c5). However, C96 is speculative and alternative explanations (rare conformational states) are acknowledged but not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C88"
+    ],
+    "result": "Vesicle-like dextran uptake is preserved in TMC1/TMC2 double knockout mice and in the presence of most MET channel blockers (except amiloride), indicating an endocytic pathway independent of TMC proteins and MET channel function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C88 distinguish two uptake pathways using genetic and pharmacological approaches. The persistence of vesicular uptake in dKO mice and with most blockers demonstrates pathway independence. The amiloride exception is explained by its known effect on endocytosis (cited), providing internal consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The dimeric architecture of the TMC1 model is consistent with the homodimeric tip link structure (PCDH15), where each tip link binds two MET channels. The N-terminus of TMC1 is positioned to interact with the intracellular C-terminus of PCDH15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 provide a logical structural framework connecting the TMC1 model to known tip link architecture. The 2:2 stoichiometry is supported by prior studies (cited in C91), and the positioning of the TMC1 N-terminus (C93) is consistent with known PCDH15-TMC1 interactions (C92, cited). This represents reasonable structural inference rather than direct experimental validation.",
+    "result_type": "MINOR"
+  }
+]

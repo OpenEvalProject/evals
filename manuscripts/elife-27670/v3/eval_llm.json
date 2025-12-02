@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Insects navigate odor plumes that are intermittent with broadly distributed whiff intensities and durations following power law statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C9 establish the naturalistic context for the study by describing odor plume structure based on prior work. These claims are well-supported by citations to established literature on insect navigation and odor plume physics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "ORNs respond to naturalistic odor stimuli with dynamic gain modulation that amplifies responses to isolated whiffs and suppresses responses following preceding whiffs, deviating from simple linear or static nonlinear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C24, and C26 collectively demonstrate that ORNs exhibit context-dependent gain changes during naturalistic stimulation. The experimental data (Figures 1-2) show that responses to similar whiffs vary with stimulus history, and statistical analyses confirm correlations with preceding stimulus statistics. The evidence rules out simple LN models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ORN gain scales inversely with mean stimulus intensity following the Weber-Fechner Law across multiple odor-receptor combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C30 demonstrate Weber-Fechner scaling with experimental data showing power law exponent of -1 (Figure 3). The result is replicated across five different odor-receptor combinations, and rescaling by Weber's Law collapses input-output curves onto a single curve, providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ORNs exhibit rapid variance-dependent gain control, decreasing gain with increasing stimulus variance on timescales of ~130 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate variance gain control with experimental data (Figure 4) showing that ORN input-output curves become shallower during high variance epochs. The gain changes correlate with stimulus variance and c.d.f. slope (r\u00b2=0.7), and the timescale is quantified at ~130 ms. Statistical significance is established (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mean-dependent gain control occurs primarily at odor transduction, with transduction gain following Weber-Fechner scaling while spiking machinery gain remains invariant to mean stimulus changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C38 demonstrate the locus of mean gain control through separate analysis of LFP (transduction) and firing rate responses (Figure 5a-d). The data show that LFP gain scales with Weber-Fechner Law while firing gain remains constant (p=0.41), supported by statistical tests and consistency with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40"
+    ],
+    "result": "Variance-dependent gain control occurs at both transduction and spiking stages, with both gains changing by a factor of ~1.3 between high and low variance epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, and C40 demonstrate distributed variance gain control through analysis of both LFP and firing rate responses (Figure 5e-h). Statistical significance is established (p<0.001, Wilcoxon signed rank test), and the contributions from each stage are quantified as roughly equal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Optogenetic experiments demonstrate that mean-dependent gain control at transduction is independent of spiking activity, while variance gain control involves the spiking machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 use optogenetic manipulation (Chrimson) to dissect contributions of transduction and spiking (Figure 6a-d). The experiments show that increasing firing rate via light does not affect transduction gain, and increasing odor background does not affect spiking gain, demonstrating modularity of mean gain control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Optogenetic stimulation with varying variance confirms that the spiking machinery contributes to variance gain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 demonstrate variance gain control in the spiking machinery using optogenetic stimulation (Figure 6e-f). The gain changed by a factor of ~1.5 when light stimulus variance changed by a factor of ~3, consistent with the contribution observed in odor experiments. However, the authors note that Chrimson channels may have their own nonlinearities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C73",
+      "C74"
+    ],
+    "result": "Transduction and spike generation possess complementary kinetic properties: while LFP response lags increase with stimulus intensity, firing rate lags remain invariant, preserving timing information about odor encounters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C52, C73-C74 demonstrate complementary kinetics through cross-correlation analysis (Figure 7). LFP lags increase significantly with odorant concentration (p<10\u207b\u00b2) while firing rate lags remain invariant (p>0.1). Optogenetic experiments (C52) confirm that spiking machinery speeds up with increasing input, providing a mechanism for the compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Changes in stimulus variance do not significantly affect response kinetics at either LFP or firing rate, distinguishing variance gain control from mean gain control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 demonstrates that variance changes, despite affecting gain, do not change kinetics (Figure 7\u2014figure supplement 1). This provides evidence that mean and variance gain control are mechanistically distinct, as mean changes affect LFP kinetics but variance changes do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C98",
+      "C101"
+    ],
+    "result": "A two-state Or-Orco complex model with adaptive feedback reproduces Weber-Fechner scaling, kinetic slowdown, and responses to naturalistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C98, and C101 describe a computational model that reproduces key experimental findings (Figure 8). The model architecture is based on bacterial chemotaxis and generates Weber-Fechner scaling, increasing response lags with mean stimulus, and accurate predictions of LFP responses to naturalistic stimuli (r\u00b2=0.84 for gain prediction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has established multiple mechanisms for odor encoding including receptor diversity, compressive nonlinearities, glomerular gain control, and adaptation, but whether ORN firing follows Weber-Fechner scaling remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 summarize prior work on olfactory processing. These are well-supported by citations to established literature and accurately represent the state of knowledge, including the unresolved question about Weber-Fechner scaling in ORN firing rates that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The LFP serves as a proxy for transduction activity in ORNs, generated upstream of the spiking machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 establish the interpretation of LFP measurements based on prior work. The claims are supported by citations showing that LFP is unaffected by TTX (which blocks spiking) and by genetic ablation of partner cells, validating its use as a transduction proxy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The naturalistic stimulus was designed with whiff and blank durations following a power law with exponent -3/2 to match natural odor plume statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 describes the experimental stimulus design, supported by Figure 1\u2014figure supplement 3 and citation to theoretical work (Celani et al., 2014). This establishes that the stimulus is ecologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Gain scaling at ORNs maintains firing rates in the 0-50 Hz range where postsynaptic projection neurons are most sensitive, potentially avoiding synaptic saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 propose a functional interpretation of Weber-Fechner scaling. C60 is supported by citations to prior work on PN sensitivity. C61 is a reasonable inference from the experimental data showing ORNs maintain firing rates below 50 Hz despite 10-fold changes in mean stimulus, though direct evidence for avoiding saturation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Variance gain control exists in multiple sensory systems and neuron models, with photoreceptors lacking this property while downstream neurons and model neurons exhibit it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 summarize prior work on variance gain control across systems. These are well-supported by citations to established literature and provide context for interpreting the ORN results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Fast adaptation on timescales of hundreds of milliseconds, combined with dynamic inhibition in the antennal lobe, could enable rapid propagation of odor encounter information to the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citations to prior work on adaptation timescales. C67 is a reasonable inference combining the current results with prior work on antennal lobe processing, though direct experimental evidence for this functional consequence is not provided in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Flying insects experience brief odor encounters (10-250 ms) and use timing-based navigation strategies rather than intensity gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 establish the behavioral context for the study based on prior work on fly flight and odor plume navigation. These are well-supported by citations and motivate the importance of preserving timing information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C75"
+    ],
+    "result": "The complementary kinetic mechanisms that preserve timing could aid insects in navigating odor plumes to their source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C72 summarizes prior conflicting findings that the current study resolves. C75 is a reasonable speculation about functional significance based on the experimental findings and knowledge of insect navigation, though direct behavioral evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Olfactory receptors that adapt have co-evolved with flight and occur only in flying insects, suggesting fast adaptation may be specialized for detecting brief airborne odor whiffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by citations to prior work on receptor evolution. C79-C80 are speculative but reasonable inferences about the functional significance of the co-evolution of ORs with flight, though direct evidence is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The experimental methods including sensillum identification, spike sorting, and stimulus measurement were validated and reproducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 describe methodological details. C84 provides validation data (99.5% accuracy for spike sorting). C85 shows PID calibration is linear. C86 notes a limitation about cross-experiment comparability. These are adequately supported by the methods description and validation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Linear filters can be reliably estimated from Gaussian stimuli but are biased when estimated from naturalistic stimuli, though they still provide the best linear prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe methodological considerations for filter estimation. These are supported by citation to prior methodological work (Chichilnisky, 2001) and established knowledge of linear systems analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "ORN gain changes with variance are consistent with efficient coding principles but do not achieve optimal information encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C91 is supported by citation to Laughlin's efficient coding theory. C92 quantifies the deviation from optimality: gain changed by 1.7-fold while variance changed by 2.5-fold. This is supported by experimental data and comparison to theoretical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Multiple mechanisms including calcium signaling and cAMP-mediated Orco regulation have been implicated in ORN adaptation on fast timescales of hundreds of milliseconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 summarize prior work on adaptation mechanisms. These are supported by citations to prior work and consistency with the current experimental observations of fast adaptation timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Unlike other sensory systems where adaptation speeds up kinetics, olfactory transduction kinetics slow down with adaptation in both insect and vertebrate ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 contrast olfactory systems with other sensory modalities. These are supported by citations to prior work and the current experimental data (Figure 7), establishing the unusual kinetic properties of olfactory adaptation.",
+    "result_type": "MINOR"
+  }
+]

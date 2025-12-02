@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "CAR-Ps with Megf10 or FcR\u03b3 intracellular domains robustly trigger engulfment of CD19-coated beads in both J774A.1 macrophages and primary bone marrow-derived macrophages, while CAR-Ps with Bai1, MerTK, or GFP-only domains do not, despite surface expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C18, C19, and C20 collectively demonstrate that specific intracellular signaling domains (Megf10 and FcR\u03b3) are necessary and sufficient for CAR-P-mediated phagocytosis. The data show both positive results (engulfment with Megf10/FcR\u03b3) and appropriate negative controls (no engulfment with Bai1/MerTK/GFP despite surface expression), and the findings are replicated in primary cells. The experimental design includes proper controls and the results are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CAR-Ps demonstrate antigen specificity: \u03b1CD19 CAR-PMegf10 engulfs CD19 beads but not CD22 beads, and \u03b1CD22 CAR-PMegf10 engulfs CD22 beads but not CD19 beads, demonstrating that the CAR-P strategy can target multiple cancer antigens with specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide strong evidence for antigen-specific targeting. The reciprocal specificity experiments (CD19 CAR with CD22 beads and vice versa) serve as excellent negative controls, demonstrating that engulfment is driven by specific antibody-antigen recognition rather than non-specific binding. This establishes both the specificity and generalizability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CAR-PMegf10 triggers specific engulfment of beads ranging from 2.5 \u03bcm to 20 \u03bcm in diameter, with higher specificity for larger beads, and performs comparably to the endogenous Megf10 system when tested with phosphatidylserine-containing beads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate the size range capability of CAR-P and provide an important benchmark comparison to the endogenous system. The data show CAR-P can handle targets across a physiologically relevant size range. However, the authors note high background with beads from a different manufacturer, which introduces some uncertainty in the quantitative comparisons, though the overall conclusion remains supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CAR-PMegf10 initiates engulfment through localized signaling involving tyrosine phosphorylation and F-actin enrichment at the synapse, while the adhesion-only CAR-PGFP does not show this enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide mechanistic evidence that CAR-P triggers active signaling cascades. The phosphotyrosine enrichment at the synapse in CAR-PMegf10 but not CAR-PGFP, combined with F-actin enrichment, supports the conclusion that CAR-P initiates canonical phagocytic signaling. The comparison to the GFP control is appropriate and the findings are consistent with known phagocytic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The CD3\u03b6 chain from the T cell receptor can promote phagocytosis in a CAR-P context, likely through recruitment of Syk kinase, which binds CD3\u03b6 and FcR\u03b3 with comparable nanomolar affinity (~15 nM and ~30 nM respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 establish that ITAM-containing domains from T cell receptors can function in macrophages to drive phagocytosis. The binding affinity measurements (C42-C43) provide quantitative support for the proposed Syk-mediated mechanism. The functional data (C37) showing comparable engulfment between CAR-T and CAR-PMegf10, combined with the biochemical evidence of Syk binding, strongly support this conclusion. This represents an important mechanistic insight and demonstrates cross-applicability of signaling modules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CAR-P expressing macrophages and fibroblasts perform trogocytosis (nibbling) of live Raji B cells in an ITAM-dependent manner, with 78-85% of CAR-P macrophages internalizing bites within 90 minutes, and this process is accompanied by phosphotyrosine enrichment at the cell-cell synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 demonstrate that CAR-P induces trogocytosis in both professional (macrophages) and non-professional (fibroblasts) phagocytes. The high frequency of trogocytosis (78-85%), dependence on signaling domains (C49), phosphotyrosine enrichment (C50), and extension to non-professional phagocytes (C51) provide strong converging evidence. The comparison to CAR-PGFP serves as an appropriate negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CAR-P macrophages can engulf whole Raji B cells, with frequency increased by CD47 blockade (2.5-fold) and by engineering a tandem CAR-Ptandem construct combining FcR\u03b3 and PI3K recruitment domains (3-fold increase to 6 cells per 100 macrophages).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 show that whole cell engulfment occurs but is less frequent than trogocytosis, and can be enhanced through rational design. The CD47 blockade experiment (C54) validates the system against known biology, and the tandem construct (C57-C58) demonstrates that combining signaling motifs can improve performance. The quantitative data support the conclusions, though whole cell engulfment remains relatively infrequent even with optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C8",
+      "C61",
+      "C62"
+    ],
+    "result": "CAR-P expressing macrophages significantly reduce Raji B cell numbers by over 40% after 44 hours of co-culture, with CAR-PFcR\u03b3 performing nearly as well as CAR-Ptandem despite lower whole-cell engulfment rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C8 demonstrate the functional outcome of CAR-P activity: significant reduction in cancer cell numbers. The finding that CAR-PFcR\u03b3 performs comparably to CAR-Ptandem in reducing cell numbers despite lower whole-cell engulfment suggests that trogocytosis may contribute substantially to cancer cell elimination. The >40% reduction is statistically significant and represents a meaningful biological effect, though the mechanism (whole cell engulfment vs. trogocytosis-induced death) remains incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "CAR-P can induce trogocytosis in dendritic cells, but robust cross-presentation of the model antigen ovalbumin was not detected, suggesting that optimization of dendritic cell subsets or CAR-P design would be required for this application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 report a negative result with appropriate interpretation. The authors demonstrate that CAR-P induces trogocytosis in dendritic cells but does not lead to robust T cell activation via cross-presentation. This is an important limitation to document, and the authors appropriately suggest that further optimization would be needed. The negative result is supported by data in Figure 4\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Engulfment of 20 \u03bcm beads is more frequent than engulfment of whole cells, potentially due to differing physical properties such as target stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 identify a discrepancy between bead and cell engulfment but provide only speculative explanations. While C70 is supported by data comparison, C71 is explicitly speculative, and C72 cites literature on stiffness effects without directly testing this hypothesis. The observation is valid but the mechanistic explanation remains unvalidated, making this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "CAR-Ps may convert receptor-ligand binding into ITAM phosphorylation through spatial partitioning of kinases and phosphatases at the membrane-membrane interface, similar to mechanisms proposed for TCR and FcR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 proposes a mechanistic model based on analogy to TCR and FcR signaling, but this is explicitly speculative ('may similarly convert'). While the phosphotyrosine enrichment data (C30-C32) are consistent with this model, no direct evidence for kinase/phosphatase segregation is provided. This represents a plausible hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The CAR approach is transferrable to biological processes beyond T cell activation, and expression of an engineered receptor in phagocytic cells is sufficient to promote specific engulfment and elimination of cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 represent the overarching conclusions of the study, supported by the collective evidence from all experimental results. The successful application of CAR design principles to phagocytosis, demonstration of specificity, mechanistic characterization, and functional cancer cell elimination all support these broad conclusions. This represents the primary conceptual advance of the work.",
+    "result_type": "MAJOR"
+  }
+]

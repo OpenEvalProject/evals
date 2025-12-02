@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32"
+    ],
+    "result": "Cilia in the zebrafish KV exhibit a meridional tilt orientation pattern, not a dorsal density gradient, as the dominant mechanism generating directional flow. The authors found no left-right density differences, a steep anteroposterior gradient (4-fold), and a shallower dorsoventral gradient (2-fold). 65% of motile cilia showed meridional tilt (\u03c6 angle between -45\u00b0 and +45\u00b0), with average tilt \u03b8=46\u00b0 and \u03c6=14\u00b0. This meridional tilt allows all motile cilia to contribute to directional flow around the DV axis regardless of location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide converging evidence from theoretical analysis (C24), experimental density measurements (C25-C27), and orientation measurements (C29-C31) that collectively support the meridional tilt scenario. The theoretical prediction is validated by quantitative in vivo data showing the expected orientation pattern and the absence of AP-directed flows that would result from the alternative density gradient scenario.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During KV development from 3-SS to 9-14-SS, the vesicle volume increases ~5-fold (17 to 82 pl), cilia number doubles (30 to 63), and the fraction of motile cilia increases dramatically (44% immotile at 3-SS vs. 2% at 8-SS). Despite these changes, motile cilia exhibit meridional tilt at all stages (57% in meridional quadrant at 3-SS), and directional flow is established as early as 3-SS in 5/8 vesicles, though with lower amplitude. The establishment of the AP density gradient from 3-SS to 8-SS does not affect flow direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 present a comprehensive developmental time course with consistent measurements across multiple embryos at three stages. The data show that the key feature for directional flow (meridional tilt) is present from the earliest stage examined, while other features (cilia number, density gradients) develop later. The conclusion that meridional tilt is the dominant mechanism is strengthened by the observation that flow direction is established before the AP gradient develops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Single vesicle analysis reveals high variability in cilia density, orientation, and local flow velocities between individual embryos at all developmental stages. The difference between left and right flow amplitudes shows high variability without persistent bias, and maximum velocities at anterior and posterior poles vary between embryos. However, the directional flow (characterized by effective angular velocity \u03a9) is robust across embryos, making it the most reliable left-right asymmetric feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 document inter-embryo variability through analysis of individual vesicles and identify directional flow as the most robust feature. This is supported by computational flow calculations on experimentally characterized vesicles showing consistent flow direction despite variable local amplitudes. The conclusion is logical given the data presented in Figures 6 and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "Mechanosensory detection of directional flow by immotile cilia faces severe physical limitations. Instantaneous torques show broad distributions with ~25% pointing opposite to flow direction due to beating of adjacent cilia (r.m.s. amplitude 9\u00d710\u207b\u00b9\u2079 Nm) and thermal fluctuations (2\u00d710\u207b\u00b9\u2079 Nm). Achieving 95% reliability requires ensemble averaging of at least 3 cilia per side and a sensitivity threshold of 10\u207b\u00b9\u2079 Nm (corresponding to 0.5 s\u207b\u00b9 shear rate), which is 1-2 orders of magnitude lower than known mechanosensory cilia (20 mPa in renal cilia). However, most KV have fewer than 3 immotile cilia per side at stages when flow is established (only 5% immotile at 8-SS and 9-14-SS), and at 3-SS when immotile cilia are more numerous, the flow is too weak and irregular for reliable detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C96 present a detailed computational analysis of the physical constraints on mechanosensing, combining theoretical calculations of torques, noise analysis, and comparison with known mechanosensory systems. The conclusion that mechanosensing is physically implausible is supported by multiple independent lines of evidence: insufficient cilia numbers, high noise levels, low signal strength, and unfavorable timing. The analysis is rigorous and accounts for both temporal and spatial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C97",
+      "C98"
+    ],
+    "result": "Motile cilia could theoretically sense their own motion (auto-sensing), as the mean torque from a beating cilium (~10\u207b\u00b9\u2077 Nm) is ~20 times higher than torque from directional flow. However, this mechanism predicts that counter-rotating flow would enhance rather than reverse LR asymmetry, which contradicts experimental observations in mouse (Nonaka et al., 2002) and Xenopus (Schweickert et al., 2007) showing asymmetry reversal with artificial flow and breakdown in viscoelastic fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C66-C98 present the auto-sensing hypothesis with computational support (C66, C97) but then cite experimental evidence from other species (C68, C69, C93) that contradicts the key prediction (C67). The authors appropriately conclude the mechanism is incompatible with existing data. However, the hypothesis remains speculative for zebrafish as it has not been directly tested in this species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C99"
+    ],
+    "result": "Flow-mediated transport of signaling molecules provides a robust mechanism for LR asymmetry establishment. Computational simulations show that particles with Stokes radius \u22652 nm achieve robust asymmetric distribution (left:right ratio >2:1) in 18/20 experimentally characterized vesicles and >95% of randomly generated vesicles for particle sizes 2-10 nm. The mechanism works with homogeneous cilia distribution and requires approximately the observed number of motile cilia: 35 cilia show sufficient average asymmetry but fail to achieve 95% reliability, and 20 cilia (close to the in vivo minimum) cause mechanism failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C99 present computational simulations of particle diffusion in calculated flow fields, testing multiple scenarios including experimentally characterized vesicles, randomly generated vesicles, and vesicles with varying cilia numbers. The conclusion that chemosensing is robust is supported by quantitative analysis showing >95% reliability for appropriate particle sizes. The prediction that ~20 cilia represents a functional minimum aligns with experimental observations (C19, C76), providing independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C65",
+      "C78",
+      "C100"
+    ],
+    "result": "The physical limits to reliable mechanical sensing of flow are stronger than those for chemical sensing. The number of immotile cilia is too small to ensure robust left-right determination by mechanosensing given the large spatial variability of flow. Combined with evidence that isolated mouse cilia do not bend significantly at endogenous flow amplitudes (Delling et al., 2016), a mechanism based solely on mechanical sensing of directional flow appears incompatible with in vivo analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C65, C78, and C100 represent the main conclusions synthesizing results from multiple analyses. These conclusions are well-supported by the detailed computational modeling of both mechanosensing (showing insufficient cilia numbers, high noise, and low sensitivity) and chemosensing (showing robustness with appropriate particle sizes). The integration of in vivo data with physical modeling provides strong support for ruling out mechanosensing as the sole mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C101"
+    ],
+    "result": "The predicted minimum particle size of ~2 nm for robust chemosensing corresponds to the size range of extracellular vesicles (ECVs), which play important roles in intercellular communication. This prediction will facilitate the search for the molecular identity of the signaling particle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 connect the computational prediction of minimum particle size to known biological molecules (ECVs) and propose this as a testable prediction for future work. The size correspondence is based on established knowledge of ECV dimensions (C94, C95) and provides a concrete hypothesis for experimental follow-up. This represents a logical extension of the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C79",
+      "C80"
+    ],
+    "result": "Background context on LR axis determination: In most vertebrates, LR axis determination involves directional flow generated by motile cilia in the left-right organizer (LRO). The molecular mechanisms are conserved from fish to mammals, though many steps remain unclear. Two competing hypotheses exist: chemosensing (flow establishes chemical gradient) and mechanosensing (cells detect mechanical effects of flow). The molecular nature of potential diffusing compounds is unknown, and cilia-mediated mechanotransduction has been experimentally challenged. In zebrafish, 90-95% of embryos have properly positioned left axis despite variable KV size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23, C79-C80 provide established background knowledge supported by appropriate citations to prior literature. These claims set the context for the current study and are not novel findings but rather accepted facts in the field. The citations appear appropriate and the statements are consistent with current understanding of LR axis determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C88"
+    ],
+    "result": "Motile cilia could sense their own motion by a yet unknown mechanism, though the hypothesis that cilia are capable of directional flow sensing remains untested in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3 and C88 acknowledge gaps in knowledge and untested hypotheses. C3 is stated as speculation in the abstract, and C88 notes the lack of in vivo testing. These represent areas requiring future experimental work rather than conclusions supported by the current study. The auto-sensing hypothesis (C97) is explored computationally but contradicted by data from other species (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Prior experimental findings in other species: Cilia from isolated mouse cells do not bend significantly in response to flow at endogenous amplitudes (Delling et al., 2016), and artificially induced counter-rotating flow can cause asymmetry reversal in the mouse node (Nonaka et al., 2002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 accurately cite prior experimental work from other research groups. These are used appropriately to support arguments about the plausibility of different mechanisms. The citations appear accurate and the findings are used correctly in the context of evaluating mechanosensing hypotheses.",
+    "result_type": "MINOR"
+  }
+]

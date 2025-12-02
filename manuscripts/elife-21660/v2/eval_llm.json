@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors developed molecular beacon (MB) probes with a hairpin structure that minimizes non-specific fluorescence. Each MB probe contains a 42-nt hybridizing region flanked by 7-nt arms, with Alexa-647 fluorophore and BHQ3 quencher at opposite ends. Spectrophotometry measurements showed MB probes exhibited high fluorescence with complementary sequences but only 19.0 \u00b1 7.1% fluorescence with non-complementary sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C16, C23-C25 collectively demonstrate the MB probe design and its specificity. The hairpin structure mechanism is well-established (C13), the choice of Alexa-647 and BHQ3 is justified by citations (C14-C15), and spectrophotometry data (C24-C25, Figure 1d) directly support the low non-specific fluorescence claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The optimal hybridization temperature for MB probes was determined to be 22\u00b0C to 14\u00b0C. Temperature-dependent binding studies showed that MB-target binding increased as temperature decreased from 42\u00b0C to 14\u00b0C, while non-specific binding decreased, likely due to the hairpin structure preventing association with non-complementary sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by spectrophotometry data in Figure 1e showing temperature-dependent binding patterns. The optimal temperature range determination (C29) is a reasonable inference from the data, though C28 includes speculation about the mechanism that, while plausible, is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors optimized 3D-STORM imaging conditions to efficiently distinguish sparsely distributed Alexa-647 from cellular autofluorescence. Condition XII (85 Hz frame rate, 18 W/cm\u00b2 405 nm laser, 1 kW/cm\u00b2 641 nm laser) showed the lowest false discovery rate and was optimal for imaging sparsely labeled targets, with superior performance in detecting extremely sparse Alexa-647 distributions compared to unoptimized conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C38 are well-supported by systematic optimization data in Figure 2. The FDR analysis (C32-C34), photo-bleaching assessment (C35), and detection efficiency comparisons (C36-C38) provide converging evidence for the optimized condition. Statistical significance is demonstrated (Figure 2e, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The 3D-STORM system achieved a resolution of 20-30 nm in lateral (x-y) and 50-60 nm in axial (z) directions, with localization precision of 9 nm (lateral) and 22 nm (axial) standard deviations. The system successfully resolved two clusters separated by 95 nm in the z-axis, and drift correction using fluorescent beads improved localization precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are directly supported by localization precision measurements shown in Figure 3. The resolution values are calculated from FWHM measurements (C40-C41), and the ability to resolve 95 nm separation (C42) and effectiveness of drift correction (C44) are demonstrated with clear data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A 3.3 kb lentiviral DNA sequence was randomly integrated into the human genome, containing a 2.5 kb target region (CMV promoter and egfp gene) labeled with 29 MB probes. PCR confirmed viral integration in EGFP cells, with no tandem repeats detected at single insertion loci. Most sorted EGFP cells (92.9 \u00b1 1.5%) maintained EGFP expression after eight passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 describe the experimental system and are supported by PCR data (Figure 1c), flow cytometry (Figure 1\u2014figure supplement 1a), and additional PCR controls (Figure 1\u2014figure supplement 2). The evidence for single-copy insertion without tandem repeats is convincing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Using 29 MB probes and 3D-STORM, the authors visualized fine-scale nanostructures of 2.5 kb integrated viral DNA in human cells. Nanostructures composed of 100-1800 localizations were detected in 21/78 EGFP cells but 0/83 blank cells (p=5.0\u00d710\u207b\u2078). The method resolved sub-structures separated by 41 nm and structural features of 35-43 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C50 are strongly supported by STORM imaging data (Figure 4) and statistical analysis. The significant difference between EGFP and blank cells (C49) with hypergeometric p-value provides strong evidence for specificity. The resolution measurements (C48) are supported by FWHM analysis (Figure 4c).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors applied MB-FISH to visualize a 2.5 kb endogenous Nanog super-enhancer in mouse ESCs using 34 MB probes. CRISPR/Cas9-generated homozygous knockout cells served as negative controls. Nanostructures were detected in 14/92 WT cells but 0/74 HoKO cells (p=1.6\u00d710\u207b\u2074), with structures composed of 150-1200 localizations and resolution of sub-structures separated by 59 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 demonstrate successful application to endogenous DNA. The CRISPR/Cas9 knockout is well-validated (C54-C55, Figure 5c), and the significant difference in detection between WT and HoKO cells (C56) provides strong evidence for specificity. The structural resolution data (C59) is supported by FWHM analysis (Figure 5e).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "The MB-FISH method visualized 2.5 kb non-repetitive DNA sequences at super-resolution, representing the shortest unique genomic sequence resolved to date, improving upon the 4.9 kb resolution limit of Oligopaint-FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C61, C70 represent the main conclusion. The 2.5 kb resolution is demonstrated in both integrated viral DNA (C4, C45-C50) and endogenous Nanog enhancer (C51-C59) experiments. The comparison to Oligopaint-FISH's 4.9 kb limit (C1, C7, C70) is supported by citations, making the claim of 'shortest to date' reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MB-FISH differs from Oligopaint-FISH in several key aspects: it uses imaging optimization rather than secondary probes for localization density, employs quenching rather than high temperature to reduce non-specific fluorescence, uses lower hybridization temperature (22\u00b0C vs 42-47\u00b0C), requires fewer probes (29 vs ~106), and achieves better sequence resolution (2.5 kb vs 4.9 kb). MB-FISH is suitable for shorter elements while Oligopaint-FISH works well for large domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 provide a comprehensive comparison between methods. The differences are supported by experimental data (temperature effects in Figure 1e, probe numbers, resolution achievements) and citations to Oligopaint-FISH literature. The complementary nature of the methods (C73-C74) is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Stringent filtering criteria eliminated false positives, with no nanostructures detected in negative controls. Detection rates were ~27% in EGFP cells and ~15% in ESCs. Higher detection rates are expected when imaging multiple nuclear layers, though 100% efficiency is not achievable due to mitotic cells being insensitive to labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 address detection efficiency and limitations. The detection rates (C76) are supported by experimental data. The speculation about improved detection with multiple layers (C77) is reasonable but untested. The explanation for <100% efficiency (C78-C79) is supported by citations on ESC mitosis rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The MB-FISH method preserves chromatin topology by using low hybridization temperature (22\u00b0C) to minimize disruption of formaldehyde cross-links. The 2.5 kb labeled DNA occasionally showed folded structures, consistent with DNA flexibility and chromatin organization into nucleosomes and higher-order structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C86 address chromatin preservation and structural observations. While the low temperature approach (C84) and reduced cross-link disruption (C85, supported by citation) are reasonable, the actual preservation of chromatin topology (C86) is inferred rather than directly demonstrated. The folded structures (C80) are observed but the mechanistic explanations (C81-C82) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work established that 3C-based methods only reveal population-average chromatin interactions, while Oligopaint-FISH combined with STORM achieved 4.9 kb resolution but required hundreds to thousands of probes and a secondary probe for sufficient localizations. High-resolution visualization of elements smaller than 4.9 kb was not previously possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 accurately describe prior work and are supported by appropriate citations. These claims establish the context and limitations of existing methods, justifying the need for the MB-FISH approach. The characterization of Oligopaint-FISH requirements and limitations is consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MB probes can be bioinformatically designed for specific genomic loci with allele specificity. The method could potentially be combined with other super-resolution techniques like STED and extended to multi-color imaging using different fluorophores (Atto-488, Atto-565, Alexa-647) to detect interactions among multiple loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 discuss potential applications and extensions. While C62 is a reasonable inference based on probe design principles and comparison to Oligopaint methods, C63-C65 are speculative about future applications. These possibilities are plausible but not demonstrated in the current work.",
+    "result_type": "MINOR"
+  }
+]

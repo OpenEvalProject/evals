@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C34",
+      "C35"
+    ],
+    "result": "A dual-fluorescence reporter cassette was developed and validated to distinguish gene amplifications from other up-mutations in real-time. The cassette contains a promoterless tetA-yfp fusion followed by a constitutively expressed cfp gene, such that amplifications increase both YFP and CFP fluorescence, while other mutations increase only YFP. qPCR validation showed good correlation (r=0.88, P<0.0001) between CFP fluorescence and chromosomal copy number of tetA-yfp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe the reporter design and rationale, while C34-C35 provide experimental validation. The qPCR data (Figure 1E) demonstrates strong correlation between CFP fluorescence and gene copy number, supporting the validity of using CFP as a proxy for amplification. The design logic is sound and the validation is quantitative with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The reporter cassette was integrated at four chromosomal loci (A, B, C, D) in E. coli \u0394tolC strains, chosen to lie in intergenic regions between divergently transcribed genes. MIC measurements revealed locus-dependent differences in initial tetracycline sensitivity, interpreted as differences in baseline tetA-yfp expression. Evolution experiments used tetracycline concentrations adjusted to strain-specific MICs starting at 50% of MIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe the experimental design with clear rationale for locus selection. Claims C26-C30 describe the MIC normalization strategy. The approach of normalizing drug concentrations to strain-specific MICs is appropriate for comparing adaptive potential across strains with different baseline expression levels. MIC data are provided in Figure 1\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "An evolutionary rescue experimental design was implemented with daily increasing tetracycline levels and constant dilution. The probability of rescue depends on population size, decline rate, and mutation rate/fitness effects. Selective conditions were normalized across strains such that initial population size and decline rate were approximately equal, making rescue probability informative about strain-specific mutation rates and fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe the experimental design and its theoretical basis (supported by citation to Martin et al., 2013). Claims C31-C33 describe the execution with 95 populations per strain and phenotype classification criteria. The normalization strategy is appropriate for isolating the effects of chromosomal neighborhood on adaptive potential. The experimental design is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The number of rescued populations differed significantly between strains (Figure 2A), demonstrating that chromosomal location of tetA-yfp is critical for adaptive potential. No rescue occurred without the reporter cassette, all rescued populations showed increased YFP fluorescence, and deletion of reporter genes eliminated tetracycline growth in tested clones. Results were qualitatively reproducible across replicate experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 present the main finding with statistical support. Claims C38-C40 provide critical controls demonstrating that rescue depends on tetA-yfp overexpression. Claim C42 addresses reproducibility. The controls are appropriate and the statistical significance is clearly stated. The conclusion that chromosomal location affects adaptive potential is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Strain B showed the highest rescue frequency with 76/77 rescued populations having amplifications, while amplification-mediated rescue was rare in strains A, C, and D. Homologous IS5 copies flanking locus B were identified and verified by junction PCR in 16/16 tested clones. Deletion of one flanking IS (strain B\u0394IS5I) dramatically reduced rescue frequency and eliminated IS5-mediated amplifications, confirming that flanking homology is a main determinant of adaptation via gene amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 present the amplification data. Claims C46-C49 describe the genomic context and prior knowledge. Claims C50-C53 provide experimental validation through PCR and IS deletion. The junction PCR (Figure 2D) and B\u0394IS5I deletion experiment provide strong evidence that IS5-mediated recombination drives amplification at locus B. The conclusion (C54) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Evolution experiments were repeated in IS-free strains (MDS42 background) to test whether differences would disappear without insertion sequences. Despite the absence of IS, rescue frequencies still differed significantly among strains (p=3\u00d710\u207b\u2075), with rescue observed only in strains B and D (10 and 8 populations, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe the rationale and properties of the IS-free background. Claims C58-C59 present the results showing persistent locus-dependent differences. The statistical significance is provided and the result demonstrates that factors beyond IS-mediated amplification contribute to differences in adaptive potential. This is an important control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Sequencing revealed diverse mutation types upstream of tetA-yfp: point mutations, deletions, and IS insertions. The relative contribution of mutation types differed significantly between loci in both IS-containing (p=10\u207b\u2079) and IS-free (p=0.003) strains. Plasmid reconstructions showed that 5/6 point mutations and 2/4 IS insertions (IS2, IS3) increased reporter expression, while IS1 and IS5 effects were context-dependent. Point mutations and IS insertions likely do not explain locus-dependent differences in rescue frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 present sequencing results with statistical analysis. Claims C63-C70 describe plasmid reconstruction experiments validating mutation effects. The plasmid data (Figure 3C-E) provide functional validation of mutations. Claim C71 draws an appropriate inference that since the same p0 sequence is present at all loci, these mutations cannot explain locus-specific differences. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Whole genome sequencing revealed trans-acting mutations in the essential rho gene encoding a transcriptional termination factor. Rho mutations and upstream deletions were found only at loci B and D, where active upstream promoters could be co-opted either by deletion of intervening non-essential genes or by compromising Rho-dependent termination. Transduction experiments confirmed locus-specific effects of Rho mutations on tetracycline tolerance (Figure 4B), and RT-PCR detected read-through transcripts at loci B and D but not A and C (Figure 4C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe the discovery and genomic context of Rho mutations. Claims C79-C81 provide experimental validation through transduction and RT-PCR. The experimental validation is strong, with both phenotypic (Figure 4B) and molecular (Figure 4C) evidence supporting the locus-specific effects. Claims C82-C83 draw appropriate conclusions about the mechanistic basis of these neighborhood effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Amplification costs, arising from dosage imbalances in co-amplified genes, represent a neighborhood-dependent constraint on adaptation. Strain B\u0394IS5I showed significantly higher extinction risk for amplifications compared to strain B (Table 1), with rescued amplifications having higher YFP/CFP ratios (Figure 5C), indicating cost limitation. Strain E amplifications never went extinct and had low YFP/CFP ratios, indicating absence of cost. Strains A, C, and D showed elevated extinction risk and YFP/CFP ratios, supporting higher amplification costs. Promoter co-option mutations are important determinants of adaptive potential both independently and in interaction with amplifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 establish the conceptual framework. Claims C87-C92 present experimental evidence using extinction risk and YFP/CFP ratios as indicators of amplification cost. The validation approach using strains with predicted high (B\u0394IS5I) and low (E) costs is appropriate. Statistical support is provided (Table 1, Figure 5C-D). Claims C93-C94 draw appropriate conclusions about neighborhood effects and mutation interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Single-step plating experiments showed that colony numbers at 2 days were higher in strains B and D than A and C for both IS-wt and IS-free backgrounds, consistent with neighborhood-dependent availability of promoter co-option mutations. During longer incubation, strain B plates accumulated late colonies (1229/1304 with high CFP), explained by post-plating amplification expansion. After 5 days, colony counts were qualitatively similar to rescue frequencies in evolution experiments, supporting that chromosomal neighborhood effects extend to different selective regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 present early colony data consistent with promoter co-option mutations. Claims C97-C99 describe late colony appearance attributed to amplification. Claim C100-C101 compare plating and evolution results. The plating experiments provide independent validation of neighborhood effects under different selective conditions. The interpretation of late colonies as amplification-driven is supported by CFP fluorescence data (Figure 6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Chromosomal neighborhood effects arise from local properties of neighboring genes (expression, orientation, termination, essentiality, flanking duplicates) rather than global factors like distance to origin of replication. These are termed 'chromosome neighborhood effects' to distinguish from 'chromosome position effects' on gene expression per se. Neighborhoods facilitate or constrain adaptation via amplification (affected by duplication rate) and promoter co-option mutations (affected by fitness effects). For loci with flanking homology, amplification is the main response; for loci lacking flanking homology, differences in adaptive potential are due to availability of deletions and termination-compromising mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 propose terminology and conceptual framework. Claims C104-C109 summarize the mechanistic findings. These conclusions are well-supported by the experimental data showing locus-specific effects that correlate with local genomic features rather than chromosomal position. The terminology proposal is appropriate and the mechanistic summary accurately reflects the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The discovery of mutations at 22 different Rho residues suggests the protein is more 'tunable' than expected for an essential gene. Adaptation via trans Rho mutations with pleiotropic effects may be more likely than via cis-acting terminator mutations, supported by prior work showing adaptive Rho mutations. This suggests operons delimited by factor-dependent terminators may be fluid, providing variation for adaptation. Whether Rho alleles serve as capacitors of adaptation beyond laboratory experiments remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110 and C113 present data on Rho mutation diversity. Claims C111, C114, and C115 are speculative interpretations. While the data on Rho mutation diversity is solid, the speculation about trans vs. cis mutations (C111) lacks direct comparative data on the rate or target size of cis-acting terminator mutations. The broader evolutionary implications (C114-C115) are reasonable hypotheses but require additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The influence of chromosomal neighborhood arises from simple properties of neighboring genes that can be assessed at genomic scale, making a chromosome-wide 'map of adaptive potential' conceivable. Genome-wide analysis suggests most genes (2295/4317) have medium adaptive potential comparable to locus D. However, some properties are dynamic (essentiality, expression, IS positions), so classifications represent snapshots reflecting particular conditions. How adaptive potential translates to actual adaptation depends on population parameters and selection scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 propose a framework for genome-wide prediction and present preliminary analysis (Figure 7B). Claims C120-C122 provide appropriate caveats about dynamic properties and context-dependence. The genome-wide analysis is a reasonable first step, though the authors appropriately acknowledge limitations. The classification is based on assessable properties and the caveats are well-considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "On evolutionary timescales, dynamics of neighborhood properties would degrade signals in genome sequences, but neighborhood-dependent evolution could explain phenomena like operon organization, reductive genome evolution, and chromosomal position of horizontally transferred genes. Horizontally transferred genes depend on activating mutations and their fate will be shaped by chromosomal neighborhood. Genes entering at loci B or D would be more likely to enable survival than at loci A or C. The association of horizontally acquired genes with flanking mobile elements may reflect high amplifiability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C128 are speculative about broader evolutionary implications. While the speculation is reasonable and supported by citations to relevant phenomena, these claims extend beyond the experimental data. The logic connecting neighborhood effects to horizontal gene transfer and genome evolution is plausible but would require additional evidence to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The importance of promoter-capture mutations, transcriptional read-through modulation, and gene amplification extends to cancer evolution and rapid adaptation in higher organisms, suggesting chromosomal neighborhood effects may be of wider significance and could be investigated with similar reporter-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 cites literature showing these mutation types occur in eukaryotes, but claim C130 speculates about broader applicability without direct evidence. While the speculation is reasonable given the cited literature, the extent to which the specific neighborhood effects observed in E. coli would apply to eukaryotic systems with different genome organization is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The organization of genes on a chromosome shapes adaptation, with the adaptive potential of a gene under selection being a system-property with complex genetic basis specific to each chromosomal locus. The relative contribution of mutation types differs systematically between loci due to neighboring gene properties (essentiality, expression, orientation, termination, presence of duplicates), which determine rate and fitness effects of amplifications, deletions, and termination-compromising mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study. Claims C1-C2 state the central thesis. Claims C4-C6 summarize the key findings. All are well-supported by the comprehensive experimental data including evolution experiments, sequencing, functional validation, and mechanistic studies. The integration of multiple lines of evidence (Figures 2-6) strongly supports these overarching conclusions.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C98",
+      "C116"
+    ],
+    "result": "Protonation of D408 in the drug-bound (B state) protomer drives the functional rotation in AcrB. Free energy calculations comparing two systems with different protonation states show that System 2 (with D408 protonated in the B state protomer) has its energy minimum shifted toward the final EAB state, while System 1 (with D408 protonated in the E state protomer) remains stable near the initial BEA state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C49, C98, and C116 collectively demonstrate through free energy calculations and alchemical transformations that D408 protonation in the B state drives functional rotation. The comparison between systems with different protonation states provides direct computational evidence, with consistent results from independent calculations (C116). The free energy profiles (C47-C49) and alchemical free energy differences (~26 kcal/mol destabilization at image 5, ~0 kcal/mol at image 15) support the mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Protonation of D408 induces vertical shear motions in the transmembrane domain. Electrostatic potential analysis reveals that D408 protonation creates a positive electrostatic bias due to surrounding residues R971 and K940, causing downward shifts of TM4, TM11, and additional helices (TM3, TM5, TM6), which can be interpreted as vertical shear motion of the R1 rigid assembly against R2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C61, C64-C65, and C67 are well-supported by electrostatic potential calculations (Figure 3A-C), structural analysis along the conformational pathway (Figure 3\u2014figure supplement 3), and alchemical free energy calculations showing ~26 kcal/mol destabilization. The identification of vertical shear motion as the primary conformational change is supported by center-of-mass tracking of TM helices and comparison with crystal structures (C68). This represents a novel mechanistic insight distinct from previously described lateral shear and rocking motions (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Vertical shear motions in the transmembrane domain regulate alternate access of water concurrent with proton translocation. In the deprotonated state (System 1, image 5), a water channel exists from periplasmic D924 to the conflux space with R971 blocking cytoplasmic access. After D408 protonation and vertical shear motion (System 2, image 15), the conflux space collapses while R971 opens toward the cytoplasm, exemplifying alternate access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C71, C73-C78 are supported by water distribution analysis (Figure 3D-E) showing clear differences in water accessibility between the two states. The structural mechanism is well-characterized: downshifts of TM4 and TM11 collapse the conflux space by decreasing distances between residue pairs (L400-T933, L937-F982), while R971 reorientation provides cytoplasmic access. The identification of R971 as an electrostatic gate (C77) is supported by analogy to aquaporins and previous studies (Eicher et al., 2014; Eriksson et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C99",
+      "C100"
+    ],
+    "result": "The transmembrane domain motion is coupled to the porter domain through TM8, which acts as a transmitter. System 2 exhibits synchronized pathways and higher correlations between TM and porter domains compared to System 1. Protomer I shows the greatest correlation, with downshift of TM5 causing F459 sidechain to flip, allowing coil-to-helix transition of TM8, which expedites PN1/PC2 rigid body motion to open the drug exit gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88, C99-C100 are supported by string method pathway analysis (Figure 4), mutual information calculations (Figure 5\u2014figure supplement 1), and structural analysis (Figure 5, Figure 5\u2014figure supplement 1C). The synchronized pathways in System 2 but not System 1 (C79) provide evidence for coupling. Mutual information analysis quantitatively demonstrates higher correlations in System 2 (C81), with protomer I showing the greatest correlation (C82). The structural mechanism through TM8 and F459 is well-documented through visualization along the pathway. The conclusion that B\u2192E is the energy-consuming step (C84) is consistent with the free energy profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Vertical shear motions among transmembrane helices regulate both alternate access of water in the transmembrane domain and peristaltic motions that pump drugs in the periplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C5 are high-level summary claims supported by the detailed mechanistic findings in other result groups. The alternate access of water is demonstrated through water distribution analysis (C69-C78), while the peristaltic drug pumping motion is supported by the coupling mechanism through TM8 (C79-C100) and the structural changes in the porter domain including binding pocket shrinkage and exit gate opening (C50, Figure 2C-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C109",
+      "C110"
+    ],
+    "result": "Energy is consumed to release the drug during the B-to-E transition. The increase in free energy in the late stage (images 20-30) of System 2 correlates with drug release, as shown by absolute binding free energy calculations. This energy consumption was predicted by Pos's model in analogy to F0F1-ATP synthase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C109-C110 are supported by the free energy profile (Figure 2B) showing increased free energy at images 20-30, which correlates with the absolute drug binding free energy calculations. The binding free energy increases rapidly at images 10-20, with structural analysis showing binding pocket collapse and exit gate opening (Figure 2C-D). The consistency with Pos's model (C110) provides theoretical support. However, the study only examines one drug (minocycline) and does not include additional drugs for uptake, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Protomers II (E\u2192A) and III (A\u2192B) show only local and weak correlations between TM and porter domains, suggesting coupling occurs indirectly via interfacial interactions between protomers rather than through proton translocation. The E\u2192A transition occurs spontaneously due to steric clashes making multiple E-state protomers energetically unfavorable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C95-C96, C101-C105 are supported by mutual information analysis showing weak correlations in protomers II and III (Figure 5\u2014figure supplement 1B). The interpretation that coupling is not harnessed by proton translocation in these protomers (C96, C101) is reasonable given the weak correlations. The spontaneous E\u2192A transition (C105) is supported by citations to cross-linking experiments and coarse-grained simulations (C102-C103) showing steric clashes between E protomers (C104), though this study does not directly demonstrate this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "This study provides a molecular mechanism for energy transduction from the TM domain to the porter domain through vertical shear motion. The same type of vertical shear motions can be seen in other transporters employing the elevator alternating-access mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 represent the broader significance of the findings. C111 is well-supported by the comprehensive mechanistic data from this study. C112 is supported by citations to studies on other transporters (Drew and Boudker, 2016; Slotboom, 2014), suggesting the mechanism may be generalizable. However, the study does not directly analyze other transporters, so the generalizability claim relies on cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study addresses conflicting prior work on protonation stoichiometry. While Eicher et al. (2014) suggested both D407 and D408 are protonated in the E state, Yamane et al. (2013) showed only D408 should be protonated and that double protonation destabilizes the TM domain. This study confirms that transient D408 protonation alone is sufficient to drive functional rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 address an important controversy in the field. The study provides independent validation through two different computational approaches (free energy profiles and alchemical free energies) that D408 protonation alone is sufficient (C116). The consistency between independent calculations strengthens the conclusion. However, the study does not definitively rule out the possibility of D407 protonation at other stages of the cycle or under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The simulation system comprised 480,074 atoms with AcrB trimer embedded in POPE lipid bilayer, with minocycline bound in the distal binding pocket. Two systems were constructed with different protonation states: System 1 with D408 protonated in protomer II (E state) and System 2 with D408 protonated in protomer I (B state).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C117-C122 describe the computational system setup. These are methodological details that are clearly stated and internally consistent. The system size (480,074 atoms) represents a comprehensive all-atom model. The choice of two different protonation states provides a direct test of the hypothesis. The use of POPE lipids and manual packing of lipids into the central hole are reasonable methodological choices, though alternative lipid compositions were not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on AcrB and multidrug resistance: AcrB is a well-characterized RND transporter that uses proton-motive force to transport drugs. The AcrA-AcrB-TolC complex in E. coli is responsible for multidrug resistance, with AcrB as the inner membrane protein responsible for drug specificity and energy transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C14 represent established background knowledge supported by appropriate citations. These claims provide context for the study but do not represent novel findings. The characterization of AcrB as a prototype for RND family studies (C14) is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C36"
+    ],
+    "result": "Structural organization of AcrB: AcrB is a homotrimer with each protomer containing three domains (TM, porter, funnel). In the asymmetric structure, each protomer adopts one of three functional states (Access, Binding, Extrusion) with distinct structural features including drug binding pockets and exit pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C29, C36 describe established structural knowledge of AcrB supported by citations to crystal structures and shown in Figure 1. These are well-established facts in the field that provide necessary background for interpreting the simulation results. The structural descriptions are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The functional rotation mechanism is supported by biochemical and MD simulation studies. The three functional states satisfy the alternate access model, with A state as inward-facing, E state as outward-facing, and B state as occluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 represent established knowledge about the functional rotation mechanism supported by appropriate citations. The mapping to the alternate access model (C32-C35) is based on comparison with Jardetzky's model and represents reasonable inference from structural data. C33 appropriately notes uncertainty about whether B state is also inward-facing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prior work identified key residues for proton translocation (D407, D408, K940, T978) and showed that D408 protonation affects TM conformational changes and is related to functional rotation. K940 shows distinct orientation in the E state, tilting away from D408.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 summarize prior experimental and computational work that motivated this study. The mutagenesis data (C38) and prior MD simulations (C42-C43) are appropriately cited. The structural observation about K940 orientation (C39-C40) is based on crystal structure analysis (Figure 1D). These claims establish the rationale for focusing on D408 protonation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Previous simulation studies suggested that asymmetric trimeric states are unstable without a bound drug, while the symmetric AAA state becomes most stable, avoiding rebinding of released drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 cite previous simulation studies (Yamane et al., 2013; Yao et al., 2010) to explain the free energy increase in late stages of System 2. This provides context for interpreting the results but represents prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "Prior structural studies by Eicher et al. (2014) recognized two rigid assemblies in the TM domain (R1 and R2) that change their mutual arrangement during state transitions, focusing on lateral shear and rocking motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C66 cite prior structural work that identified the R1/R2 rigid assemblies. This provides the framework for interpreting the vertical shear motion observed in this study (C67) as a novel finding distinct from previously described motions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Downshifts of specific TM helices, including TM11, can be discerned in crystal structures when properly aligned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by structural analysis shown in Figure 3\u2014figure supplement 4. This provides validation that the vertical shear motions observed in simulations are consistent with available crystal structures, though the alignment method (only in xy-plane) is somewhat unconventional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "D924 is a possible transient proton binding site on TM10, and E346 may be another possible proton-binding site on TM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is supported by citation to Eicher et al., 2014. Claim C72 is more speculative, based on observation of a minor water pathway. The study examined protonation at these sites (Figure 3\u2014figure supplement 2) and found localized effects that do not strongly impact functional rotation, but did not definitively establish their roles in proton translocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Protomer I exhibits weak linkage between PN2 and TM helices. The downshift of TM helices decreases contacts with PN2, potentially accommodating PN2 rearrangement. Previous studies showed TM2 tilting is coupled to PN2 motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by mutual information analysis (Figure 5\u2014figure supplement 1B) showing weak correlations between PN2 and TM helices. The interpretation about decreased contacts (C90) is reasonable inference from structural analysis. C91 appropriately cites prior work and notes consistency with weak TM2-PN2 correlations observed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Yamane et al. (2013) described a scenario for E\u2192A transition involving twisting motions of TM4 and TM10 interfering with TM1, PN1, and PN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 cites prior work and notes consistency with weak correlations observed in this study. This represents appropriate contextualization of results with prior literature but does not constitute a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Coupling of the TM and porter domains during B\u2192E is the energy-consuming process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is a summary conclusion supported by the free energy calculations and correlation analyses. This is essentially a restatement of findings from other result groups (particularly the energy consumption result C109 and the coupling result C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "In the A\u2192B step, drug bound in A may catalyze formation of the distal binding pocket in PN2/PC1 tandem, with the conformational change increasing contacts with the TM domain and driving TM helices upwards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 are speculative about the A\u2192B transition. C106 cites Moradi et al., 2015 for the catalysis concept but uses tentative language ('may'). C107 is inference based on structural analysis but lacks the detailed mechanistic support provided for the B\u2192E transition. The study did not include additional drug for uptake, limiting direct observation of this step.",
+    "result_type": "MINOR"
+  }
+]

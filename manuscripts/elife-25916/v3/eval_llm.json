@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors demonstrate that applying moderate positive bias (>500V) to the specimen transforms the InLens detector into an effective backscattered electron detector, filtering out secondary electrons while maintaining collection efficiency. This results in approximately 10x improvement in imaging speed compared to traditional EsB detection alone without contrast degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C56-C58 are well-supported by experimental data in Figures 11 and 12, showing quantitative measurements of electron counts, SNR, and contrast at different bias voltages. The ~10x speed improvement is documented in Figure 11j with specific measurements. The mechanism is validated through both experimental results and SIMION modeling (Figure 14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C29"
+    ],
+    "result": "The enhanced FIB-SEM system can operate continuously for months with improved reliability, enabling acquisition of volumes >10^6 \u03bcm\u00b3. Biological volumes as large as 1 million \u03bcm\u00b3 can now be routinely acquired in a few months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C29 are supported by the demonstrated 100-day continuous acquisition of Drosophila optic lobe (C32-C34, Figure 3) with only one noticeable imperfection despite multiple planned and unplanned interruptions. The system improvements (closed-loop control, auto-optimization, seamless restart) are described in detail and validated through extended operation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A Drosophila optic lobe volume of 180 \u00d7 100 \u00d7 50 \u03bcm\u00b3 was successfully imaged at 8 \u00d7 8 \u00d7 8 nm\u00b3 resolution over 100 days, with only one noticeable imperfection despite multiple system interruptions including source replacements and unplanned failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are directly supported by Figure 3 and Video 2, which show the acquired volume with clear visualization of neural structures. The 100-day acquisition period and handling of interruptions demonstrates the reliability improvements. The single imperfection mentioned provides honest assessment of system performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "FIB-SEM detected 50% more synaptic connections than TEM in Drosophila medulla columns, and volume reconstruction (including segmentation and proofreading) was 3-5x faster for FIB-SEM data compared to serial-section TEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by citations to Takemura et al. 2015 and Plaza 2014, and by Figure 2 comparison showing superior z-resolution. The 50% improvement in synapse detection is attributed to isotropic resolution preventing loss of fine processes oriented parallel to section planes. However, the comparison depends on the quality of the TEM dataset used as reference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "A portion of Drosophila optic lobe containing seven medulla columns was imaged at isotropic 10 \u00d7 10 \u00d7 10 nm\u00b3 resolution, with the entire 30 \u00d7 30 \u00d7 60 \u03bcm\u00b3 volume acquired over 2 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by the description in the text and Figure 4 showing the reconstructed volume. The 2-week acquisition time for this volume size at 10nm isotropic resolution is consistent with the system capabilities described. Figure 4 demonstrates high reconstruction completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "An 8 \u00d7 8 \u00d7 8 \u03bcm\u00b3 high-resolution dataset from Drosophila central complex was acquired over 10 days, achieving resolution <3.5 nm as confirmed by resolving the hollow core of microtubules (25 nm outer/17 nm inner diameter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by Figure 7 and Video 4, which clearly show resolved microtubule hollow cores and other subcellular structures. The resolution claim is validated using a known biological structure (microtubules) as an internal standard, which is a rigorous approach. The 10-day acquisition time is stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C53"
+    ],
+    "result": "A complete Drosophila brain could be imaged in ~5 FIB-SEM-years using 30 slabs, or ~3 years using 4 systems in parallel. A 1 mm\u00b3 volume could be imaged in 3 years with 4 production systems including overhead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 and C53 are projections based on demonstrated acquisition rates and hot-knife partitioning, not actual completed experiments. While the calculations appear reasonable given the demonstrated throughput, they involve assumptions about system uptime, maintenance overhead, and scalability. The estimates are clearly labeled as such in the text, but remain unvalidated predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Experimental measurements show ~27% backscatter efficiency for gold at 1.2 keV, with InLens detector capturing about half (55% detection efficiency). Osmium staining in biological membranes corresponds to approximately Os\u2080.\u2088 (XOs = 0.8) based on comparison with Pt reference standards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by quantitative measurements described in the Technology and Methods section and shown in Figures 15-16. The calibration approach using reference materials (gold, epoxy, Pt-containing compounds) is sound. The osmium concentration estimate is derived from signal matching, though the authors acknowledge complexities in real membrane staining.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "Contrast is optimal at 1.2 keV landing energy and drops by a factor of 2 at 600 eV. Monte Carlo modeling shows 50% contrast change occurs at 5 nm depth for 800 eV electrons and 11 nm depth for 1.2 keV electrons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65-C66 are supported by experimental data in Figure 15 and Monte Carlo simulations in Figure 17. The energy-dependent contrast measurements are consistent with theoretical predictions based on backscattering cross-sections. The depth-dependent contrast modeling provides quantitative estimates of z-resolution limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Based on segmentation and proofreading analysis, 8 nm voxel sampling was determined optimal for Drosophila connectomics. Doubling resolution requires 400x slower volume acquisition rate due to combined effects of more voxels (8x) and longer dwell time per voxel (50x).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by Figure 19 showing systematic evaluation of different voxel sizes. Claim C52 follows from the physics of electron microscopy (8x more voxels for 2x resolution in 3D, plus need for same electron dose per voxel requiring ~50x longer integration at lower current). The 400x factor is correctly derived.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Epon embedding resin develops severe streaks and uneven milling artifacts, while Durcupan resin is much less prone to such artifacts during FIB-SEM imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are directly supported by Figure 11c,d showing clear visual comparison of the two resins. The observation is practical and important for sample preparation. The mechanism (differential radiation response) is plausible though not deeply investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "FIB-SEM provides x, y, z resolution all <10 nm with superior registration, fully automated operation, and minimal post-processing requirements compared to other EM methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C16 describe established capabilities of FIB-SEM technology, supported by citations (Knott et al. 2008, Xu and Hess 2011) and demonstrated throughout the manuscript. The superior z-resolution and registration are inherent to the block-face imaging approach and validated by the isotropic data shown in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior to this work, FIB-SEM adoption in neuroscience was limited by slow imaging speed and lack of long-term stability, with typical volumes less than a single neuron extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C17-C18 accurately describe the state of FIB-SEM before the presented improvements, supported by multiple citations (Briggman and Bock 2012, Knott et al. 2008, Helmstaedter 2013, Denk et al. 2012). These claims establish the motivation for the technical developments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SEM imaging is inherently slower than TEM due to serial pixel acquisition, lower electron flux from backscattered/secondary electrons, reduced contrast at low landing energies, beam current limitations for high resolution, and inability to use post-staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 accurately describe fundamental physical limitations of SEM compared to TEM. These are well-established principles in electron microscopy, correctly explained in the Technology and Methods section. The constraints are important context for understanding the significance of the speed improvements achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "FIB gallium sources have limited lifetime of 3-4 months continuous operation and require reheat every 3-5 days, representing significant maintenance challenges for long-term imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe known operational characteristics of gallium ion sources. These maintenance requirements are standard for FIB systems and are important context for the seamless restart capabilities developed. The 100-day run (C32) demonstrates successful handling of multiple source reheats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Detailed operating parameters are provided for both Zeiss NVision40 and Zeiss Merlin systems, including beam energies, bias voltages, pixel sizes, milling intervals, and FIB currents used for the various datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 provide specific technical parameters documented in the Technology and Methods section. These details are essential for reproducibility and are consistent with the results shown throughout the manuscript. The parameters differ slightly between systems but are appropriate for the respective configurations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Volumes >10^6 \u03bcm\u00b3 are large enough for connectomics applications, where excellent z-resolution helps trace small neuronal processes and accelerates human proofreading effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by the demonstrated Drosophila brain imaging (Figures 3-4) showing biologically meaningful volumes containing complete neural modules. The proofreading speed improvement (C31) validates the acceleration claim. However, 'large enough' depends on the specific biological question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Tracing and proofreading of segmented connectomics data requires two to three orders of magnitude more man-years than data acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by citation to Plaza 2014 and is consistent with known challenges in connectomics. This contextualizes why acquisition speed improvements alone are insufficient - the bottleneck is in reconstruction. The claim emphasizes that FIB-SEM's better z-resolution helps address the larger proofreading challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Monte Carlo modeling shows that about half of the contrast step when moving laterally from osmium-free to osmium-stained regions occurs within 1.0 nm, indicating sharp lateral resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by Monte Carlo simulation results described in the Technology and Methods section and shown in Figure 17d. This demonstrates that lateral resolution is primarily limited by beam spot size rather than electron scattering, which is important for understanding resolution limits.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1606 @@
+{
+  "submission": {
+    "id": "174b6a8c-5c87-4e8c-b5c5-ff70fff39369",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:41:21.652043Z",
+    "updated_at": "2025-12-02T01:41:21.652043Z"
+  },
+  "content": [
+    {
+      "id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "submission_id": "174b6a8c-5c87-4e8c-b5c5-ff70fff39369",
+      "content_type": "manuscript",
+      "content_text": "# Unified mechanisms for self-RNA recognition by RIG-I Singleton-Merten syndrome variants\n\n## Authors\n\n- Charlotte L\u00e4ssig<sup>1</sup> ([ORCID: 0000-0001-6253-7880](https://orcid.org/0000-0001-6253-7880))\n- Katja Lammens<sup>1</sup> ([ORCID: 0000-0002-4438-1381](https://orcid.org/0000-0002-4438-1381))\n- Jacob Luci\u00e1n Gorenflos L\u00f3pez<sup>1</sup>\n- Sebastian Michalski<sup>1</sup>\n- Olga Fettscher<sup>1</sup>\n- Karl-Peter Hopfner<sup>1</sup> ([ORCID: 0000-0002-4528-8357](https://orcid.org/0000-0002-4528-8357)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n2. Gene Center, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n3. Center for Integrated Protein Science Munich Munich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe innate immune sensor retinoic acid-inducible gene I (RIG-I) detects cytosolic viral RNA and requires a conformational change caused by both ATP and RNA binding to induce an active signaling state and to trigger an immune response. Previously, we showed that ATP hydrolysis removes RIG-I from lower-affinity self-RNAs (L\u00e4ssig et al., 2015), revealing how ATP turnover helps RIG-I distinguish viral from self-RNA and explaining why a mutation in a motif that slows down ATP hydrolysis causes the autoimmune disease Singleton-Merten syndrome (SMS). Here we show that a different, mechanistically unexplained SMS variant, C268F, which is localized in the ATP-binding P-loop, can signal independently of ATP but is still dependent on RNA. The structure of RIG-I C268F in complex with double-stranded RNA reveals that C268F helps induce a structural conformation in RIG-I that is similar to that induced by ATP. Our results uncover an unexpected mechanism to explain how a mutation in a P-loop ATPase can induce a gain-of-function ATP state in the absence of ATP.\n\n## Introduction\n\nRetinoic acid-inducible gene I (RIG-I)-like receptors (RLRs) are cytosolic innate immune sensors that recognize viral double-stranded (ds)RNAs. RLRs (RIG-I, MDA5 and LGP2) are members of the so-called Superfamily II (SF2) helicases/translocases. They share a multi-domain architecture that consists of a central SF2 ATPase domain accompanied by two N-terminal tandem caspase activation and recruitment domains (2CARD, only in RIG-I and MDA5) and a C-terminal regulatory domain (CTD or RD) (Rawling and Pyle, 2014). The SF2 domain itself is built out of an N-terminal RecA-like domain (1A) and a C-terminal RecA-like domain (2A) that together form an ATP-binding pocket, as well as an insertion domain (domain 2B). SF2 and RD\u00a0are\u00a0crucial for RNA-recognition of RLRs, whereas 2CARD communicates successful RNA-binding events to downstream signaling factors (Jiang et al., 2011; Kowalinski et al., 2011; Luo et al., 2011). Specifically, RIG-I detects dsRNA ends harbouring 5\u2019 tri- or diphosphates (Goubau et al., 2014; Schlee et al., 2009; Schmidt et al., 2009). Simultaneous binding of an RNA ligand and ATP to RIG-I switches the protein into an active state in which the otherwise shielded 2CARD is released (Zheng et al., 2015). Activated RIG-I homo-tetramerizes via 2CARD (Jiang et al., 2012) and nucleates the polymerisation of its adapter protein, mitochondrial antiviral-signaling (MAVS), to elicit the innate immune signaling cascade (Peisley et al., 2014; Wu et al., 2014).\n\nThe similarity of epitopes of viral RNA recognized by RLRs, in particular dsRNA stems, to some endogenous ribonucleic acids\u00a0has\u00a0required the immune system to develop mechanisms\u00a0besides merely recognizing 5\u2019-di/triphosphate-containing RNA ends to discriminate self from non-self. Self-ribonucleic acids for instance are shielded from RLRs by introducing 2\u2019O-methylations or by destabilizing double-stranded parts through A-to-I editing (Chung et al., 2018; Devarkar et al., 2016; Liddicoat et al., 2015; Schuberth-Wagner et al., 2015). In addition, we and others have been able to show that the SF2 domain of RLRs itself confers a proof-reading activity by removing RIG-I from self-RNA so\u00a0as\u00a0to avoid autoimmunity (Anchisi et al., 2015; L\u00e4ssig et al., 2015; Louber et al., 2015; Rawling et al., 2015). In particular, ATP turnover can lead to translocation on dsRNA stems that could remove the protein from the RNA and reinstall the inactivated state (Myong et al., 2009; Yao et al., 2015).\n\nDeficiencies in any of these mechanisms can lead to immune recognition of self-RNAs (Ahmad et al., 2018; Chiang et al., 2018). For instance, single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases\u00a0such\u00a0as Aicardi-Gouti\u00e8re syndrome (AGS) (Oda et al., 2014; Rice et al., 2014), Singleton-Merten syndrome (SMS) (Jang et al., 2015; Rutsch et al., 2015), systemic lupus erythematosus (SLE) (Cunninghame Graham et al., 2011; Pettersson et al., 2017; Van Eyck et al., 2015) or type 1\u00a0diabetes (Liu et al., 2009; Smyth et al., 2006). The molecular basis for the development of these diseases is in many cases not understood, because structural data on these RLR variants have been missing.\n\nIn this work, we present the biochemical and structural analysis of the RIG-I SMS variant C268F and\u00a0unveil an ATP-independent signaling mechanism. We show that active site rearrangements of several amino acid side chains in RIG-I C268F mimic an ATP-bound state and activate the protein for signaling upon recognition of RNA ligands in the\u00a0absence of ATP.\n\n## Results and discussion\n\nThe RIG-I SMS variants C268F and E373A are located within SF2 ATP binding and hydrolysis motifs I and II, respectively, (Fairman-Williams et al., 2010) (Figure 1\u2014figure supplement 1) and were previously shown to be constitutively\u00a0active in reporter cells without any external dsRNA trigger (Jang et al., 2015; L\u00e4ssig et al., 2015) (Figure 1\u2014figure supplement 2A). RIG-I E373A\u2019s enhanced immune signaling ability can be explained by proficient ATP binding but reduced ATP hydrolysis, since the motif II glutamate is implicated in positioning and polarizing the attacking water molecule in the hydrolysis reaction. The stabilized ATP state leads to increased binding of and activation by endogenous dsRNA (L\u00e4ssig et al., 2015; Louber et al., 2015). By\u00a0contrast, the molecular basis for activation of RIG-I C268F is still unknown\u00a0as this mutation is located in motif I, which is normally associated with ATP binding and which is critical for RIG-I activation. For instance, a designed and widely used mutant with a defect in the invariant ATP phosphate-binding motif I lysine, K270A, possesses reduced ATP binding properties (Rawling et al., 2015) and the\u00a0RIG-I K270A/I mutant\u00a0is deficient in inducing an immune response (L\u00e4ssig et al., 2015; Yoneyama et al., 2005). By contrast, the RIG-I SMS variant C268F shows the opposite effect and is constitutively active, although this mutation is only two amino acids away from K270A in the same ATP phosphate-binding \u2018P-loop\u2019 in motif I (Figure 1\u2014figure supplement 2A).\n\nTo analyze whether the autoimmune activity of the SMS variant RIG-I C268F is RNA-dependent, we designed a double-mutant that is defective in RNA-binding and carried out interferon (IFN)-\u03b2-promoter-driven luciferase reporter assays with overexpressed proteins in HEK293T RIG-I KO cells (Figure 1A). In particular, we used a previously described T347A point mutation in the RNA-binding interface of the N-terminal RecA-like domain (1A) (Figure 1\u2014figure supplement 1), that abrogates the\u00a0signaling of wild\u00a0type (wt) RIG-I in infected\u00a0cells and decreases the affinity for dsRNA in vitro (L\u00e4ssig et al., 2015). Our assays show, that RIG-I C268F, T347A fails to induce the IFN-\u03b2 promoter in uninfected as well as in 19mer 5\u2019-triphosphate (ppp)-dsRNA-stimulated cells, indicating that the RIG-I SMS single-mutant C268F induces immune signaling only if bound to endogenous or transfected RNA. In addition, competition assays of RIG-I C268F titrated with signaling-deficient RIG-I lacking the 2CARD domain (RIG-I \u03942CARD) or with RIG-I \u03942CARD E373Q also gradually decreased the IFN-\u03b2 promoter-driven luciferase activity (Figure 1\u2014figure supplement 2B). Thus, RIG-I C268F as well as RIG-I \u03942CARD (E373Q) seem to recognize identical RNA substrates which are, however, saturated with signaling-deficient RIG-I\u00a0\u03942CARD (E373Q) at higher transfected DNA concentrations thus preventing an immune response. Furthermore, we can exclude the\u00a0possibility\u00a0that the RIG-I C268F SMS mutation leads to a liberation of the 2CARD signaling module in the absence of RNA, for\u00a0example by unfolding SF2. Instead, signaling by the RIG-I C268F SMS variant is dependent on 2CARD release triggered by binding to RNA molecules, as it\u00a0is\u00a0in wild\u00a0type RIG-I.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fold change of interferon (IFN)-\u03b2 promoter-driven luciferase activity in uninfected HEK293T RIG-I KO cells or in cells stimulated with a 19mer 5\u2019-triphosphate (ppp)-dsRNA upon overexpression of different RIG-I mutants. Cells were co-transfected with RIG-I expression vectors and p-125luc/pGL4.74 reporter plasmids, and stimulated with ppp-dsRNA 6 hr post transfection. Firefly luciferase activities were determined in respect to Renilla luciferase activities 16 hr after RNA stimulation. All ratios were normalized to an empty vector control. n\u00a0=\u00a04\u201312, error bars represent mean values\u00a0+ standard error of the mean (SEM). (B) Fluorescence anisotropy changes measured after titrating RIG-I or RIG-I C268F in the\u00a0presence or absence of ATP into solutions containing a fluorescently\u00a0labeled 14mer dsRNA. All binding curves were fit to a one-site binding equation using R. n\u00a0=\u00a04, error bars represent mean values \u00b1 standard deviation (SD).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A RIG-I-RNA-ADP\u00b7BeF3 structure (PDB: 5E3H) served as scaffold (Jiang et al., 2011). The RIG-I SF2 sub-domains (1A, 2A and 2B) are colored in light blue and dark blue. The RD is depicted in cyan and 2CARD is indicated in yellow. Mutated amino acid side chains are depicted in orange. C268 and K270 are located in the SF2 motif I (\u2018P-loop\u2019) and mutation of K270 reduces ATP binding (Rawling et al., 2015). Mutation of motif II E373 slows down ATP hydrolysis but keeps the\u00a0molecule's\u00a0ATP-binding properties intact. T347 recognizes the RNA backbone and its mutation impedes RNA-dependent signaling of wild\u00a0type RIG-I (L\u00e4ssig et al., 2015). C268 and E373 are mutated in atypical Singleton-Merten syndrome.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Fold change of interferon (IFN)-\u03b2 promoter-driven luciferase activity in uninfected HEK293T RIG-I KO cells or in cells stimulated with a 19mer 5\u2019-triphosphate (ppp)-dsRNA upon overexpression of different RIG-I mutants. Cells were co-transfected with RIG-I expression vectors and p-125luc/pGL4.74 reporter plasmids, and stimulated with ppp-dsRNA 6 hr post transfection. Firefly luciferase activities were determined in respect to Renilla luciferase activities 16 hr after RNA stimulation. All ratios were normalized to an empty vector control. n = 4\u201312, error bars represent mean values + SEM. Overall, our results corroborate the findings reported by Jang et al. (2015) and by L\u00e4ssig et al. (2015) in a concentration-dependent manner. (B) Normalized IFN-\u03b2 promoter-driven luciferase activity in uninfected HEK293T RIG-I KO cells that were co-transfected with the RIG-I SMS variant C268F, p-125luc/pGL4.74 reporter plasmids and increasing amounts of signaling-incompetent versions of RIG-I. Firefly luciferase activities were determined in respect to Renilla luciferase activities 16 hr after second transfection. All ratios were normalized to the RIG-I C268F-only control. n = 4, error bars represent mean values + SEM.\n\nTo validate the\u00a0intact RNA-binding properties of RIG-I C268F, we performed in vitro fluorescence anisotropy assays of purified proteins with a labeled hairpin (hp) RNA containing non-base-paired RNA ends (Figure 1B). We chose to use a double-stranded RNA ligand without blunt ends to suppress the\u00a0dominant binding of RIG-I\u2019s RD to terminal RNA base pairs and to simulate recognition of endogenous-like RNA species that could be present within the cytosol. As expected, wild\u00a0type RIG-I shows a moderate binding affinity to this ligand that is further decreased in the\u00a0presence of ATP. By contrast, RIG-I C268F displays an already increased affinity to the hpRNA that is even enhanced in\u00a0the presence of ATP. This confirms\u00a0the\u00a0previous results for RIG-I C268F showing an increased co-purification with endogenous RNA molecules (L\u00e4ssig et al., 2015) and indicates that RIG-I C268F has two conformations (apo and ATP-bound)\u00a0that\u00a0have increased dsRNA affinity.\n\nSince an intact SF2 ATPase domain of RIG-I is needed so that signaling only occurs when foreign RNA molecules are recognized (Louber et al., 2015; Rawling et al., 2015), we further analyzed the ATP binding and hydrolysis properties of RIG-I C268F in vitro. The ATP-binding-deficient and hydrolysis-deficient motif I mutant RIG-I K270I and the hydrolysis-deficient motif II mutant RIG-I E373Q both served as references. ATP hydrolysis assays with 32P-labeled ATP confirmed a loss of catalytic activity of RIG-I C268F and of both motif I and II mutants in the presence of dsRNA (Figure 2A). In accordance with our RNA-binding experiments, this evidence supports a model in which RIG-I C268F has defects in dissociating from endogenous RNA, because it lacks the capability for ATP turnover and hence translocation. To further analyze the ATP-binding properties of the RIG-I SMS variant, we conducted a tryptophan fluorescence-based FRET assay with MANT-ATP (Rawling et al., 2015) (Figure 2B). In the absence of any RNA ligand, both wild type RIG-I and ATP-hydrolysis-deficient RIG-I E373Q show comparable affinities for MANT-ATP and MANT-ATP\u03b3S in the low \u00b5M range (Table 1). As expected, ATP-binding-deficient RIG-I K270I has a reduced affinity for ATP (in the medium \u00b5M range). In accordance with previous data (Kohlway et al., 2013), the presence of RNA increases the affinity of wtRIG-I and RIG-I E373Q, but not of RIG-I K270I for MANT-ATP or MANT-ATP\u03b3S. Interestingly, like RIG-I K270I, the RIG-I SMS variant C268F displays reduced ATP-binding affinities compared to that of wtRIG-I or RIG-I E373Q independently of the availability of an RNA ligand (Figure 2B, Table 1). This is puzzling as both RNA and ATP binding are normally needed to induce a molecular switch within RIG-I in order to release the 2CARD module and to activate an immune response (Shah et al., 2018; Zheng et al., 2015). RIG-I C268F might thus be able to signal even in the absence of a bound ATP molecule. However, even though it is possible that under cellular conditions of 1 mM ATP or even higher, ATP is still bound by both motif I mutants, the molecular switch to release 2CARD is only triggered in RIG-I C268F but not in RIG-I K270I (Figure 1\u2014figure supplement 2A). These peculiarities of the ATP-bound states of the motif I mutants need to be addressed in future studies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig2-v2.jpg)\n\n**Figure 2.:** (A) ATP hydrolysis activity of RIG-I, the RIG-I Singleton-Merten syndrome (SMS) variant C268F and the RIG-I motif I and II mutants K270I and E373Q. RIG-I proteins were incubated with [\u03b3-32P]-ATP in the\u00a0presence or absence of a 12mer dsRNA for 15 min at room temperature and free phosphate was separated from ATP by thin layer chromatography. (B) Affinity of RIG-I, RIG-I C268F and the RIG-I motif I and II mutants to MANT-ATP or MANT-ATP\u03b3S measured by tryptophan fluorescence F\u00f6rster resonance energy transfer to the MANT-nucleotide. Proteins were incubated with increasing amounts of nucleotides in the\u00a0presence or absence of a 14mer dsRNA. MANT fluorescence was recorded minus a MANT-nucleotide-only control. n\u00a0=\u00a04, error bars represent mean values\u00a0\u00b1\u00a0SD. (C) Fold change of interferon (IFN)-\u03b2 promoter-driven luciferase activity in uninfected HEK293T RIG-I KO cells or in cells stimulated with a 19mer 5\u2019-triphosphate (ppp)-dsRNA upon overexpression of different RIG-I mutants. Cells were co-transfected with RIG-I expression vectors and p-125luc/pGL4.74 reporter plasmids, and stimulated with ppp-dsRNA 6 hr post transfection. Firefly luciferase activities were determined in respect to Renilla luciferase activities 16 hr after RNA stimulation. All ratios were normalized to an empty vector control. n\u00a0=\u00a04\u201312, error bars represent mean values\u00a0+\u00a0SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A RIG-I-RNA-ADP\u00b7BeF3 structure (PDB: 5E3H) served as scaffold (Jiang et al., 2011). The RIG-I SF2 sub-domains (1A, 2A and 2B) are colored in light blue and dark blue. The RD is depicted in cyan and 2CARD is indicated in yellow. Mutated amino acid side chains are depicted in orange. Q247 and R244 are located within the SF2 Q-motif and participate in ATP base recognition. C268 is mutated in atypical Singleton-Merten syndrome.\n\n**Table 1.**\n Affinities of different RIG-I mutants to MANT-ATP or MANT-ATP\u03b3S in the\u00a0presence or absence of a 14mer dsRNA. n.d., not determined, n.f., no fit possible as no saturation was reached.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>MANT-ATP</th>\n      <th>MANT-ATP\u03b3S</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RIG-I</td>\n      <td>72\u00a0\u00b1\u00a013 \u00b5M</td>\n      <td>58\u00a0\u00b1\u00a07 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>RIG-I\u00a0+\u00a0RNA</td>\n      <td>n.d.</td>\n      <td>11\u00a0\u00b1\u00a01 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>RIG-I E373Q</td>\n      <td>72\u00a0\u00b1\u00a013 \u00b5M</td>\n      <td>n.d</td>\n    </tr>\n    <tr>\n      <td>RIG-I E373Q\u00a0+\u00a0RNA</td>\n      <td>28\u00a0\u00b1\u00a05 \u00b5M</td>\n      <td>n.d</td>\n    </tr>\n    <tr>\n      <td>RIG-I K270I</td>\n      <td>298\u00a0\u00b1\u00a081 \u00b5M</td>\n      <td>n.d</td>\n    </tr>\n    <tr>\n      <td>RIG-I K270I\u00a0+\u00a0RNA</td>\n      <td>n.f.</td>\n      <td>n.d</td>\n    </tr>\n    <tr>\n      <td>RIG-I C268F</td>\n      <td>166\u00a0\u00b1\u00a034 \u00b5M</td>\n      <td>116\u00a0\u00b1\u00a013 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>RIG-I C268F\u00a0+\u00a0RNA</td>\n      <td>n.f.</td>\n      <td>147\u00a0\u00b1\u00a055 \u00b5M</td>\n    </tr>\n  </tbody>\n</table>\n\nTo further investigate the influence of ATP binding to RIG-I C268F, we mutated two residues\u00a0that\u00a0are implicated in ATP adenine recognition, R244A and Q247A (Figure 2\u2014figure supplement 1), thereby further lowering the ATP-binding affinity of the SMS mutant, and tested the ability of the resulting triple-mutant to induce an immune response (Figure 2C). We expected to see no decrease in the\u00a0autoimmune signaling activity of the triple-mutant compared to that\u00a0of\u00a0the RIG-I SMS single-mutant if the single\u00a0mutant was not able to bind ATP under cellular conditions. However, compared to the SMS variant itself, the IFN-\u03b2 promoter activity of the ATP-binding mutant RIG-I R244A, Q247A, C268F was reduced, albeit still significantly higher than\u00a0that\u00a0of wild\u00a0type RIG-I. Hence, these data support a model\u00a0in\u00a0which RIG-I C268F is able to release its 2CARD domain and start a signaling cascade by a process that is at least partly independent of ATP.\n\nIn order to elucidate the molecular basis of autoimmune signaling by RIG-I C268F, we went on to crystalize RIG-I \u03942CARD C268F in the presence of a 14mer dsRNA and ADP\u00b7BeFx or ATP and determined the corresponding structures (Figure 3\u2014figure supplement 1A). Intriguingly, despite an overall high structural similarity to wtRIG-I \u03942CARD bound to dsRNA (Jiang et al., 2011), the SMS mutant shows crucial amino acid side chain rearrangements in the active site that stabilize the protein in an activated state but prevent binding and co-crystalization of a nucleotide (Figure 3A, Figure 3\u2014figure supplement 1B). In particular, the bulky F268 side chain displaces the evolutionary invariant motif I K270 from its central ATP phosphate-binding position in the P-loop, into a position where the N\u03b5 of K270 is situated at a site normally occupied by the Mg2+ ion (Video 1). As a result, K270 now forms a salt bridge with E702 from the C-terminal RecA-like domain 2A, which in turn occupies the ATP \u03b3-phosphate binding site. The resulting overall conformation resembles the ATP-bound state of RIG-I, but without ATP, and could thus explain how C268F is able to signal independently of any nucleotide. In order to clarify the impact of the salt bridge, we mutated both side chains in RIG-I C268F and analyzed the resulting double-mutants in our IFN-\u03b2 promoter activity assay (Figure 3B). We expected that a disturbance of the salt-bridge formation in RIG-I C268F would lead to a loss of autoimmune signaling. Indeed, mutation of K270 in RecA-like domain A1 renders RIG-I C268F inactive, probably as the result of a mixture of (i) prevention of the activation\u00a0of\u00a0RIG-I C268F in the absence of ATP by disrupting the salt bridge, and/or (ii) the failure to bind ATP altogether through impaired ATP phosphate coordination and thus an impaired 2CARD release. In contrast to our ATP-binding triple mutant R244A, Q247A, C268F,\u00a0which still allows formation of the salt bridge in\u00a0the absence of ATP, mutation of motif I K270 in RIG-I C268F thus renders the protein inactive. Mutation of E702 in\u00a0the RecA-like domain 2A of RIG-I C268F, by contrast, does not disrupt constitutive signaling\u00a0of\u00a0the protein, although this activity is at a reduced level compared to\u00a0that\u00a0of RIG-I C268F. An explanation for this might be E702's localization within the SF2 helicase motif V,\u00a0which\u00a0couples RNA-binding-induced ATP hydrolysis with movement on dsRNA. Similar to our previously described V699A mutant in the same motif (L\u00e4ssig et al., 2015), E702A alone already induces an autoimmune phenotype similar to that induced by RIG-I C268F, E702A. The most plausible explanation for these data is that RIG-I C268F stabilizes an ATP-like state in the absence of ATP, but still allows formation of a proper ATP-bound state. Although\u00a0E702A could reduce the former (by disrupting the salt bridge), it might stabilize the latter by sterically allowing ATP binding or by\u00a0increasing the interaction with RNA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig3-v2.jpg)\n\n**Figure 3.:** (A) ATP-binding pockets of the RIG-I Singleton-Merten syndrome (SMS) variant C268F (left and\u00a0middle\u00a0panels) and the RIG-I wild type (right panel) bound to a 14mer dsRNA. The RIG-I SF2 sub-domains are colored in light gray or light blue (1A and 2A) and dark blue (2B). The RD is depicted in cyan and 2CARD is indicated in yellow. (B) Fold change of interferon (IFN)-\u03b2 promoter-driven luciferase activity in uninfected HEK293T RIG-I KO cells or in cells stimulated with a 19mer 5\u2019-triphosphate (ppp)-dsRNA upon overexpression of different RIG-I mutants. Cells were co-transfected with RIG-I expression vectors and p-125luc/pGL4.74 reporter plasmids, and stimulated with ppp-dsRNA 6 hr post transfection. Firefly luciferase activities were determined in respect to Renilla luciferase activities 16 hr after RNA stimulation. All ratios were normalized to an empty vector control. n\u00a0=\u00a04\u201312, error bars represent mean values\u00a0+\u00a0SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Alignment of RIG-I \u03942CARD C268F (light gray) with wild type RIG-I \u03942CARD (color code as in Figure 1\u2014figure supplement 1) PDB 5E3H (Jiang et al., 2011). ADP\u00b7Bef3\u00a0and Mg2+\u00a0are co-crystalized with wild type RIG-I \u03942CARD but not with RIG-I \u03942CARD C268F. (B) 2Fo \u2212 Fc electron density of residues within the ATP-binding pocket of RIG-I \u03942CARD C268F at a contour level of 1\u03c3.\n\n![Video 1.](https://cdn.elifesciences.org/articles/38958/elife-38958-video1.mp4.jpg)\n\n**Video 1.:** The Singleton-Merten syndrome (SMS) mutation F268, as well as K270 and E702, are represented by\u00a0a stick\u00a0model. Theoretic locations of ADP\u00b7BeF3 and Mg2+ are indicated in faint sticks and spheres, respectively, according to a superposition with RIG-I \u03942CARD in complex with RNA and nucleotide analogue (PDB 5E3H). K270 is located at the Mg2+-binding site, whereas E702 occupies the BeF3 (ATP \u03b3-phosphate) position.\n\nIn summary, our data suggest that the RIG-I C268F SMS mutation stabilizes the signal-on state of RIG-I in the presence of RNA but absence of ATP through a salt bridge between K270 from domain 1A and E702 from 2A. Unlike wild\u00a0type RIG-I, which requires both RNA and ATP bound in order to be activated for downstream signaling, RIG-I C268F can signal independently of ATP (Figure 2C) in the\u00a0presence of RNA (Figure 1A). However, our data also show that ATP further increases the\u00a0binding of RIG-I C268F to internal dsRNA stems (Figure 1B) and that the engineering of ATP-binding mutations R244A, Q247A into RIG-I C268F at least partly reduces its signaling activity in\u00a0response\u00a0to endogenous or ppp-dsRNA RNA (Figure 2C). Even though we were not able to co-crystalize RIG-I C268F in the\u00a0presence of a nucleotide, it is very\u00a0possible that binding of ATP at high molecular concentrations,\u00a0such\u00a0as those\u00a0present in a cellular context, further contributes to the pathogenic signaling activity of the protein. In principle, ATP binding would be sterically allowed if the salt-bridge-forming residue E702 occupies a site as in wtRIG-I. It is not\u00a0yet clear what happens at the Mg2+-binding site, as sterically F268 would not allow a canonical positioning of motif I K270 and might thus prevent binding of Mg2+. Perhaps K270 remains at the displaced site even in the presence of ATP and simply \u2018mimics\u2019 Mg2+. Such a scenario could still lead to reduced binding of ATP but would prevent ATP hydrolysis, as observed, because\u00a0of a substantially altered charge distribution. This mechanism unifies the molecular basis for the development of SMS by both RIG-I variants (Figure 4). Unlike wtRIG-I, which consumes ATP and uses ATP turnover to decrease its affinity to self-RNA (Figure 4A), both motif I and II SMS mutations either mimic or freeze RIG-I in an ATP-bound state (Figure 4B). As a consequence, the inability to hydrolyze ATP and thus to dissociate actively\u00a0from RNA (Figure 1B, Figure 2A) traps the protein in an activated state and thus explains autoimmune signaling in\u00a0response\u00a0to self-RNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38958/elife-38958-fig4-v2.jpg)\n\n**Figure 4.:** (A) In healthy cells, wild\u00a0type RIG-I occurs in a signal-off state in\u00a0which 2CARD is\u00a0shielded by binding to the insertion domain of SF2. Binding of RIG-I to self-RNAs is efficiently prevented through ATP-turnover-induced dissociation (for a detailed model on self- vs non-self RNA discrimination see also L\u00e4ssig et al. (2015). (B) RIG-I Singleton-Merten syndrome (SMS) mutations either slow down ATP hydrolysis and stabilize the ATP-state (E373A, left side) or mimic the ATP-bound state (C268F, right side), and thus allow formation of the RIG-I signal-on state. In both cases, loss of ATP hydrolysis enhances the interaction with self-RNA and therefore results in pathogenic signaling. SMS mutations are indicated with a yellow or orange star.\n\nIn conclusion, we provide for the first time a detailed biochemical and structural analysis of an RLR autoimmune disease variant. Slight intramolecular rearrangements within the RIG-I C268F ATP-binding pocket appear to compensate for ATP binding and render the protein active in the presence of dsRNA only. At the same time, loss of proof-reading activity leads to increased activation by endogenous RNA. This unusual gain-of-function mutation reveals, for the first time\u00a0to our knowledge, that a P-loop mutation can mimic the effects of ATP binding.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or source</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293T RIG-I KO</td>\n      <td>Zhu et al. (2014)</td>\n      <td></td>\n      <td>Growth in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) as monolayer</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 (DE3) Rosetta</td>\n      <td>Novagene</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH10multiBac</td>\n      <td>GenevaBiotech</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Spodoptera frugipeda)</td>\n      <td>Sf21 insect cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11497013</td>\n      <td>Growth in SF-900 III serum-free medium</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Trichoplusia ni)</td>\n      <td>High Five insect cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>B85502</td>\n      <td>Growth in Express Five serum-free medium supplemented with 10 mM L-glutamine</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA5/FRT/TO</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>V652020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA5/FRT/TO-FLAG/ HA-RIG-I\u00a0and various mutants of the\u00a0same construct</td>\n      <td>L\u00e4ssig et al. (2015) and this paper</td>\n      <td></td>\n      <td>Progenitors: PCR, DDX58 (cDNA) and pcDNA5/FRT/TO</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p-125luc</td>\n      <td>Yoneyama et al. (1996)</td>\n      <td></td>\n      <td>Firefly luciferase controlled by an interferon-\u03b2 promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGL4.74</td>\n      <td>Promega</td>\n      <td>E6921</td>\n      <td>Constitutive expression of a Renilla luciferase</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFBDM</td>\n      <td>Berger et al. (2004)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFBDM-His-RIG-I and various\u00a0mutants of the same construct</td>\n      <td>L\u00e4ssig et al. (2015) and this paper</td>\n      <td></td>\n      <td>Progenitors: PCR, DDX58 (cDNA) and pFBDM</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pETM11-SUMO3GFP</td>\n      <td>EMBL Heidelberg, H. Besir</td>\n      <td>https://www.embl.de/pepcore/pepcore_services/cloning/sumo/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pETM11-SUMO3-RIG-I- \u03942CARD-C268F</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Progenitors: PCR, DDX58 (cDNA) and pETM11-SUMO3GFP</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>19mer 5' triphosphate dsRNA</td>\n      <td>InvivoGen</td>\n      <td>tlrl-3prna</td>\n      <td>1 \u00b5g/mL,\u00a05\u2019-pppGCAUGC GACCUCUGUUUGA-3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>14mer dsRNA</td>\n      <td>Dharmacon</td>\n      <td></td>\n      <td>5'-CGACGCUAGCGUCG-3'</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cy3-hpRNA</td>\n      <td>Biomers</td>\n      <td></td>\n      <td>5'-Cy3-CCACCCGCCCCCCUAGU GAGGGGGGCGGGCC-3'</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 2000</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11668019</td>\n      <td>Used at 2.5x excess compared to RNA/DNA mass</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MANT-ATP</td>\n      <td>Jena Bioscience</td>\n      <td>NU-202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MANT-ATP\u03b3S</td>\n      <td>Jena Bioscience</td>\n      <td>NU-232</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b3-32P]ATP</td>\n      <td>Hartmann Analytic</td>\n      <td>SRP-301</td>\n      <td>10 nM spiked with 3 mM unlabeled ATP</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dual-Luciferase Reporter Assay System</td>\n      <td>Promega</td>\n      <td>E1910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS, XSCALE</td>\n      <td>Kabsch (2010)</td>\n      <td>http://xds.mpimf-heidelberg.mpg.de/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHASER</td>\n      <td>McCoy et al. (2007); Winn et al. (2011)</td>\n      <td>http://www.ccp4.ac.uk/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>Emsley et al. (2010)</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Afonine et al. (2012)</td>\n      <td>https://www.phenix-online.org/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>Schr\u00f6dinger</td>\n      <td>https://pymol.org/2/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>R Development Core Team (2013)</td>\n      <td>https://www.r-project.org/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Vectors and cell lines\n\nSequences encoding full-length (1-925) or N-terminal truncated (230\u2013925 or 232\u2013925) human RIG-I were cloned into either pcDNA5/FRT/TO (purchased from Thermo Fisher Scientific, Waltham, MA; for expression in human cells), pFBDM (for expression in insect cells) (Berger et al., 2004) or pETM11-SUMO3 (EMBL, Heidelberg, Germany; for expression in E. coli). All proteins that\u00a0were\u00a0overexpressed in human cells contained an N-terminal FLAG/HA-tag,\u00a0whereas proteins purified from insect cells contained an N-terminal His-tag.\n\nMutants were generated by site-directed mutagenesis using the QuikChange protocol and PfuUltra polymerase (Agilent, Santa Clara, CA).\n\nHEK293T RIG-I KO cells (Zhu et al., 2014) were maintained in high glucose Dulbecco\u2019s Modified Eagle Medium (DMEM)\u00a0supplemented with GlutaMAX, pyruvate and 10% fetal bovine serum (FBS) (all purchased from Thermo Fisher Scientific, Waltham, MA) at 37\u00b0C/ 5% CO2 and were regularly tested by\u00a0PCR\u00a0for potential mycoplasma contaminations. Spodoptera frugipeda Sf21 and Trichoplusia ni High Five insect cells were maintained at 27\u00b0C/ 150 rpm in SF-900 III serum-free medium and High Five serum-free medium supplemented with 10 mM L-glutamine, respectively (both purchased from Thermo Fisher Scientific, Waltham, MA).\n\n### Luciferase reporter-gene assays\n\nTransfection-based reporter gene assays in HEK293T RIG-I KO cells were carried out in 96-well tissue culture plates seeded with 0.2 \u00d7 105 cells one day prior to transfection. Cells were transfected with 25 ng p-125Luc (inducible-expression of a Firefly luciferase controlled by an interferon-\u03b2 promoter) (Yoneyama et al., 1996), 5 ng pGL4.74 (constitutive-expression of\u00a0Renilla luciferase, Promega, Madison, WI) and varying concentrations of FLAG/HA-RIG-I plasmids (1\u2013200 ng) in a total amount of 300 ng DNA per well (filled up with empty pcDNA5 FRT/TO) using OptiMEM and Lipofectamine 2000 (both Thermo Fisher Scientific, Waltham, MA) according to the vendor\u2019s protocol. After 6 hr, cells were either stimulated by transfection of 1 \u00b5g/mL 19mer 5\u2019triphosphate-dsRNA (InvivoGen, San Diego, CA) in OptiMEM using Lipofectamine 2000 or the respective amount of OptiMEM alone was added. Cells were harvested 16 hr after RNA stimulation in 50 \u00b5L passive lysis buffer (Promega, Madison, WI) and frozen at \u221220\u00b0C until they\u00a0were\u00a0used. Luciferase activities were determined with a Berthold Luminometer in black 96-well plates using 20 \u00b5L cell lysate and the Dual-Luciferase Reporter Assay System (Promega, Madison, WI).\n\nFor competition assays of FLAG/HA-RIG-I C268F with N-terminally shortened FLAG/HA-RIG-I \u03942CARD (230-925), cells were seeded as described above. Cells were transfected with 25 ng p-125Luc, 5 ng pGL4.74, 75 ng FLAG/HA-RIG-I C268F plasmid and varying concentrations (1\u2013195 ng) of competitor plasmids containing N-terminal truncated RIG-I in a total of 300 ng DNA per well (filled up with empty pcDNA5 FRT/TO) using OptiMEM and Lipofectamine 2000 as transfection reagent according to the vendor\u2019s protocol. Cells were harvested 16 hr after transfection in 50 \u00b5L passive lysis buffer and frozen at \u221220\u00b0C. Luciferase activities were determined as described above.\n\nAll cell-based assays were performed at least four times in independent experiments and are represented as mean values +\u00a0SEM.\n\n### Protein expression and purification\n\nRecombinant full-length human RIG-I or RIG-I single amino acid mutants (1\u2013925, N-terminal His-tag) were produced in and purified from High Five insect cells as described before (Cui et al., 2008; L\u00e4ssig et al., 2015; Rawling et al., 2015). Briefly, the open reading frame for human RIG-I was cloned into the pFBDM vector,\u00a0transformed into E. coli DH10MultiBac, and extracted Baculovirus DNA was then\u00a0transfected into SF21 insect cells. Baculoviruses were propagated twice in SF21 insect cells and subsequently used for infection of High Five insect cells. Expression was carried out for 3 days at 27\u00b0C. Harvested cells were shock frozen in liquid nitrogen and stored at \u221220\u00b0C until they\u00a0were\u00a0used. For purification, cells were resuspended in lysis buffer (25 mM HEPES, 500 mM NaCl, 10 mM imidazole, 10% glycerol, 5 mM \u03b2-mercaptoethanol, pH 7) and lyzed by sonication. Cleared lysate was loaded onto Ni-NTA agarose resin (Qiagan, Hilden, Germany), washed with lysis buffer containing 300 mM NaCl and eluted in elution buffer (25 mM HEPES, 100 mM NaCl, 200 mM imidazole, 10% glycerol, 5 mM \u03b2-mercaptoethanol, pH 7). Proteins were further purified on a HiTrap Heparin HP column (GE Healthcare, Little Chalfont, UK) in 25 mM HEPES, 10% glycerol, 5 mM \u03b2-mercaptoethanol, pH 7 using a linear salt gradient ranging from 100 mM to 1 M NaCl. Finally, fractions containing RIG-I were pooled and loaded onto a HiLoad Superdex 200 16/60 size exclusion column (GE Healthcare, Little Chalfont, UK) using gel filtration buffer (25 mM HEPES, 150 mM NaCl, 5 mM MgCl2, 5% glycerol, 5 mM \u03b2-mercaptoethanol, pH 7). Monomeric RIG-I was concentrated to\u00a0~6 mg/mL, flash frozen in liquid nitrogen and stored at \u221280\u00b0C. N-terminally truncated RIG-I \u03942CARD C268F (232\u2013925, N-terminal His-tag) expressed in High Five cells was purified as described above.\n\nIn addition, N-terminally truncated RIG-I \u03942CARD C268F (232\u2013925, N-terminal His-Sumo3-tag) was produced in and purified from E. coli Rosetta (DE3). Cells were induced with 0.2 mM DTT at an OD600\u00a0of\u00a00.6\u20130.8 and protein was expressed at 18\u00b0C overnight. Harvested cells were shock frozen in liquid nitrogen and stored at \u221220\u00b0C. Protein was purified as described above, except that after metal affinity chromatography, the His-SUMO-tag was cleaved off by adding SenP2 protease\u00a0(mass ratio 1:500) to pooled eluate fractions during a dialysis step against elution buffer without imidazole (25 mM HEPES, 100 mM NaCl, 10% glycerol, 5 mM \u03b2-mercaptoethanol, pH 7) that was carried out overnight at\u00a04\u00b0C. Cleaved protein was separated from the tag during a second metal-affinity chromatography by step-wise elution with elution buffers containing 20 mM and 40 mM imidazole, and subjected to heparin-affinity and gel-filtration chromatography as described above.\n\nFor crystalization, N-terminally truncated RIG-I \u03942CARD C268F (purified either from insect cells or from E. coli) was concentrated to\u00a0~25 mg/mL.\n\n### Protein crystalization\n\nCo-crystalization of RIG-I \u03942CARD C268F (170 \u00b5M) with equimolar concentrations of 14mer dsRNA (5'-CGACGCUAGCGUCG-3', palindromic\u00a0RNA, purchased from Dharmacon, Lafayette, CO) was done either in the\u00a0presence of 2 mM ADP, 2 mM BeCl2 and 10 mM NaF to reconstitute ADP\u00b7BeFx (crystal 1) or with 2 mM ATP (crystal 2) by hanging-drop vapor diffusion at 20\u00b0C. In each case, 2.5 \u00b5L protein/RNA/nucleotide mix was added to 2.5 \u00b5L reservoir solution from a total reservoir volume of 400 \u00b5L per well. Crystal 1 was raised in wells containing 0.1 M MOPS pH 7.5, 15% (w/v) PEG 3350, 0.125 M NaSCN and 3% (v/v) 2,2,2-trifluoroethanol as reservoir solution. The reservoir of crystal 2 contained 0.1 M MOPS pH 7.5, 17.5% (w/v) PEG 3350, 0.25 M NaSCN and 3% (v/v) 2,2,2-trifluoroethanol. Crystals appeared after 1\u20132 days and were transferred into the respective reservoir solutions containing 10% (v/v) 2,3-butanediol as cryoprotectant, flash-frozen and stored in liquid nitrogen.\n\n### Data collection and structure determination\n\nX-ray diffraction data were collected at the SLS X06SA beamline (Swiss Light Source, Villigen, Switzerland). Diffraction datasets from both crystals were indexed and integrated using XDS and scaled with XSCALE (Kabsch, 2010). Crystal 1 had space group P212121 and diffracted to 3.3 \u00c5, crystal 2 had space group P6522 and diffracted until 2.9 \u00c5 (Table 2). Diffraction data from crystal 1 were used to determine an initial structure of RIG-I \u03942CARD C268F by molecular replacement using PHASER (McCoy et al., 2007; Winn et al., 2011) and a search model based on a published structure of RIG-I \u03942CARD (PDB entry 5E3H) (Jiang et al., 2011). The initial model was created in two iterative rounds of manual model building and refinement using Coot and PHENIX (Afonine et al., 2012; Emsley et al., 2010). This model was used to phase the second, better-diffracting dataset from crystal 2 using PHASER. The final structure was built and refined in several iterative rounds using Coot and PHENIX. The statistics describing\u00a0both structures are shown in (Table 2). We did not detect any density for a bound nucleotide in either structure.\n\n**Table 2.**\n Data collection and refinement statistics.Values in parentheses are for the highest resolution shell.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Crystal 1</th>\n      <th>Crystal 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB code</td>\n      <td></td>\n      <td>6GPG</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>P6522</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Cell dimensions</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>112.1, 177.1, 314.8</td>\n      <td>175.6, 175.6, 109.5</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 120</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>47.2\u20133.3 (3.42\u20133.30)</td>\n      <td>46.4\u20132.9 (3.00\u20132.89)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>14.3 (112)</td>\n      <td>7.6 (206)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>8.45 (1.28)</td>\n      <td>19.72 (1.15)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>99.8 (67.6)</td>\n      <td>99.9 (99.7)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>95.3 (79.7)</td>\n      <td>99.7 (97.4)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>3.38 (2.91)</td>\n      <td>13.09 (13.21)</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.3</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>90,121</td>\n      <td>22,649</td>\n    </tr>\n    <tr>\n      <td>Rwork/ Rfree</td>\n      <td>22.8/28.3</td>\n      <td>21.4/25.9</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>35,730</td>\n      <td>5,810</td>\n    </tr>\n    <tr>\n      <td>Ions</td>\n      <td>10</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Ramachandran statistics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favoured (%)</td>\n      <td>92.78</td>\n      <td>92.71</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>6.39</td>\n      <td>6.98</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.83</td>\n      <td>0.31</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">R.M.S deviations</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.011</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>Angles (\u00b0)</td>\n      <td>1.48</td>\n      <td>1.43</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">B-factors</td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>109.98</td>\n      <td>139.89</td>\n    </tr>\n    <tr>\n      <td>Ions</td>\n      <td>105.23</td>\n      <td>121.74</td>\n    </tr>\n  </tbody>\n</table>\n\nFigures and movies were created with PyMOL (Schr\u00f6dinger, 2015).\n\n### ATP hydrolysis assays\n\nATP hydrolysis activities of different full-length His-RIG-I constructs were determined using [\u03b3-32P]ATP (Hartmann Analytic, Braunschweig, Germany). 100 nM protein was pre-incubated with 100 nM 12mer 5\u2019triphosphate-dsRNA for 10 min at room temperature in hydrolysis buffer (25 mM HEPES, 50 mM KCl, 5 mM MgCl2, 5 mM TCEP, pH 7.5). The reaction was initiated by the\u00a0addition of 3 mM unlabeled and 10 nM [\u03b3-32P]ATP and incubated for 15 min at 37\u02daC. Free phosphate was separated from ATP by thin layer chromatography (TLC) in TLC running buffer (1 M formic acid, 0.5 M LiCl) on polyethyleneimine cellulose TLC plates (Sigma-Aldrich, St. Louis, MO). [\u03b3-32P]Pi and [\u03b3-32P]ATP were detected using the TyphoonTM FLA 9500 phosphor-imaging system (GE Healthcare, Little Chalfont, UK).\n\n### Fluorescence anisotropy\n\nAffinities of full-length RIG-I or RIG-I C268F (1\u2013925, N-terminal His-tag) to a Cy3-labeled hpRNA (5'-Cy3-CCACCCGCCCCCCUAGUGAGGGGGGCGGGCC-3', purchased from Biomers, Ulm, Germany) were determined using fluorescence anisotropy. All samples were prepared in 96-well black chimney microplates (Greiner Bio-One, Kremsm\u00fcnster, Austria). 10 nM RNA was pre-incubated with different protein concentrations (2.4 nM \u2013 5 \u00b5M) for 15 min at room temperature in assay buffer (25 mM HEPES, 50 mM KCl, 5 mM MgCl2, 1 mM DTT, pH 7). Fluorescence anisotropy was measured after the\u00a0addition of 5 mM ATP using a TECAN M1000 microplate reader (Tecan, M\u00e4nnedorf, Switzerland) at \u03bbex/em = 530/570 nm and gain\u00a0=\u00a0130 during a time course of 25 min in 1 min intervals. Assays were performed four times in independent experiments using the same protein purification batch. For determination of affinities, anisotropy values between 15 and 20 min measuring time were averaged and fit to the following single-site binding model using R (R Development Core Team, 2013):\n\n$$\ny=B_{max}\\frac{[P]}{P+K_{D}}\n$$\n\nwhere y is the observed anisotropy, [P] is the protein concentration, Bmax is the maximal anisotropy and KD is the dissociation constant. Fitting was performed globally on all available datasets. Representative values in figures are mean values\u00a0\u00b1\u00a0SD.\n\n### MANT-ATP binding\n\nBinding of MANT-ATP and MANT-ATP\u03b3S to different full-length RIG-I mutants (1\u2013925, N-terminal His-tag) was determined via F\u00f6rster resonance energy transfer from RIG-I to MANT-ATP (Jena Bioscience, Jena, Germany). All samples were prepared in 96-well black chimney microplates. 2.2 \u00b5M protein and equimolar concentrations of a 14mer dsRNA (5'-CGACGCUAGCGUCG-3', see 'Protein crystalization') were pre-incubated with different MANT-ATP concentrations (0.2 \u00b5M \u2013 200 \u00b5M) for 15 min at room temperature in assay buffer (25 mM HEPES, 50 mM NaCl, 5 mM MgCl2, 1 mM DTT, pH 7). Fluorescence of MANT-ATP was measured in a TECAN M1000 microplate reader at \u03bbex/em = 290/448 nm, gain\u00a0=\u00a0170 using an average of five reads per well. Assays were performed four times in independent experiments using the same protein purification batch. For determination of affinities fluorescence values were fitted to Equation (1) using R, where y is the fluorescence, [P] is the protein concentration, Bmax is the maximal fluorescence and KD is the dissociation constant. Fitting was performed globally on all available datasets. Representative values in figures are mean values\u00a0\u00b1\u00a0SD.\n",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "2275967c-dfcf-41ab-b2d3-4f6ace7ce0fa",
+      "submission_id": "174b6a8c-5c87-4e8c-b5c5-ff70fff39369",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Kowalczykowski, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38958.020](https://doi.org/10.7554/eLife.38958.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Unified mechanisms for self-RNA recognition by RIG-I Singleton-Merten syndrome variants\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Sua Myong (Reviewer #1).\n\nThis is an interesting novel extension of their prior publication in eLife, structurally rationalizing the behavior of a disease-causing mutation in RIG-I.\n\nThis manuscript is acceptable without further review, but some textual clarification is requested. The authors should consider whether to do this, and if they feel that these changes would improve their manuscript they should make the changes. The revised manuscript will be accepted with a minimum of editorial intervention, without further reviewer input.\n\n1) The manuscript is written in a condensed manner i.e., there are many mutants and various assays presented in the manuscript. It will be great if the authors can take time to explain why each mutant was made and what the expected result vs. experimental outcome was.\n\n2) Despite the structural data in support of this idea, the ATP-independent mode of activity is less certain. It is very difficult to prove that ATP is not binding under cellular conditions. C268F is likely bound to ATP in the cell due to the high concentration of ATP (1 mM or higher), even in consideration of the binding data in Figure 2B. Binding of C268F to ATP is weak, but clearly observable. Some qualification should be noted.\n\nReviewer #1:\n\nThis is an exciting study presented by the Hopfner lab. RIG-I is a major antiviral innate immune sensor which distinguishes self- from viral RNA by recognizing the 5'-triphosphate moiety, a unique molecular signature of viral RNA. Moreover, the ATP dependent translocation activity and the subsequent release of the protein is important for discriminating the self-RNA. Understanding the mechanism by which RIG-I acts to transmit innate immune signaling is critical, especially in light of severe mutations that occur in Singleton Merton Syndrome. In this study, the authors performed a series of thorough biochemical analysis of one of the poorly understood SMS variants, C268F which causes constitutive immune activation. They explain the biochemical defect of C268F by structural analysis of the protein. The combined analysis points toward a clear structural basis of the mutant phenotype. Impressively, the authors compared three different mutants including previously characterized E373A and K270I to the current mutant, C268F. A clever approach of creating double mutant C268F/T347A demonstrated that RNA binding is still required for IFN-\u03b2 induction i.e. immune activation by C268F. Both the apo and ATP-bound form of C268F mutants exhibited increased RNA binding affinity although the mutant had reduced affinity for ATP and deficient at ATP hydrolysis. Additional mutations, R244A and Q247A which further reduced ATP binding affinity still induced comparable level of immune signaling. Taken together, the C268F mutant is capable of constitutive antiviral signaling when bound to any RNA, even without ATP binding or ATP hydrolysis. The structure shows why. The C268F results in the formation of a special salt bridge in P-loop which leads to a conformation that mimics ATP bound state even in the absence of ATP. When the salt bridge is abolished, the constitutive effect disappears, signifying that the structural rearrangement induced by C268F is the key in creating an ATP bound conformation which induce the antiviral immune-signaling. The study is meticulously carried out, each hypotheses thoroughly tested and the structural result perfectly complements the biochemical data. The only point to be addressed is the following assays presented in the manuscript. It will be great if the authors can take time to explain why each mutant was made and what the expected result vs. experimental outcome was. I highly recommend publication of this work in eLife.\n\nReviewer #2:\n\nPrevious work from some of these authors, published in eLife, indicated that RIG-I utilizes its ATP hydrolysis driven translocation on double-stranded RNA to distinguish self RNA from non-self RNA. The ATPase activity allowed the enzyme to rapidly translocate from self RNA while non-self dsRNA tended to slow the ATP hydrolysis thereby allowing more stable RNA binding and subsequent signaling of the innate immune pathway. In the current submission, the authors provide a possible structural mechanism for how a known mutation in RIG-I causes the Singleton-Merten autoimmune syndrome. Biochemical data indicate little or no ATP hydrolysis and low ATP binding of the C268F variant. Structural data indicates that C268F leads to arrangement of amino acids in the ATP binding site as if ATP is bound (but in the absence of ATP). This arrangement of amino acids and lack of ATP hydrolysis leads to continued immune signaling, or in other words, a \"gain-of-function\". The current work therefore builds upon the previous work by showing how a mutation can lead to immune activation by causing the enzyme to mimic a structural conformation that resembles the ATP-bound or \"activated\" conformation. Thus, C268F RIG-I is unable to translocate off of an RNA substrate (supported by binding data). The current data does appear to solidify the proposed mechanism involving the ATP binding and hydrolysis which is a significant advance.\n\nSummary of Concerns:\n\nAn additional significant advance claimed by the authors is that the C268F mutation can lead to RIG-I being locked into an \"signal-on state\" even in the absence of ATP binding. Despite the structural data in support of this idea, the ATP-independent mode of activity is less certain. It is very difficult to prove that ATP is not binding under cellular conditions. C268F is likely bound to ATP in the cell due to the high concentration of ATP (1 mM or higher), even in consideration of the binding data in Figure 2B. Binding of C268F to ATP is weak, but clearly observable. The results with the double mutant C268F, K270I seem to support the idea that ATP binding is needed for activation of the immune response, because this double mutant displays very low immune activity and likely does not bind to ATP.\n\nThe concerns are balanced by high quality structural and solid biophysical work coupled with a gene expression reporter that supports the biophysical data. The RIG-I enzyme does appear to distinguish self RNA from non-self RNA through the activation or lack of activation of the ATP hydrolysis activity or through structural conformations that mimic these conformations. I am less sure of whether this occurs in complete absence of ATP binding.\n",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "87289f21-88b7-4a2a-8f14-8da757b545c2",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C1",
+      "claim": "RIG-I detects cytosolic viral RNA and requires a conformational change caused by both ATP and RNA binding to induce an active signaling state and to trigger an immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "The innate immune sensor retinoic acid-inducible gene I (RIG-I) detects cytosolic viral RNA and requires a conformational change caused by both ATP and RNA binding to induce an active signaling state and to trigger an immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and represents established knowledge about RIG-I function, supported by the citation to previous work (L\u00e4ssig et al., 2015).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "cd555de1-f025-427e-afc9-58b85235a1d2",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C2",
+      "claim": "ATP hydrolysis removes RIG-I from lower-affinity self-RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that ATP hydrolysis removes RIG-I from lower-affinity self-RNAs (L\u00e4ssig et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "99078ee0-3767-48a5-8f8a-eacf1a54f7b2",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C3",
+      "claim": "A mutation in a motif that slows down ATP hydrolysis causes the autoimmune disease Singleton-Merten syndrome (SMS).",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that ATP hydrolysis removes RIG-I from lower-affinity self-RNAs (L\u00e4ssig et al., 2015), revealing how ATP turnover helps RIG-I distinguish viral from self-RNA and explaining why a mutation in a motif that slows down ATP hydrolysis causes the autoimmune disease Singleton-Merten syndrome (SMS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and represents an established finding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "13b88ac3-dc9b-4bc8-9d69-045d51535793",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C4",
+      "claim": "The SMS variant C268F is localized in the ATP-binding P-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that a different, mechanistically unexplained SMS variant, C268F, which is localized in the ATP-binding P-loop",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation that is later confirmed by crystallographic data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "fa1dd072-7386-4838-8196-5f93caac8860",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C5",
+      "claim": "RIG-I C268F can signal independently of ATP but is still dependent on RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that a different, mechanistically unexplained SMS variant, C268F, which is localized in the ATP-binding P-loop, can signal independently of ATP but is still dependent on RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from luciferase reporter assays and binding studies presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "5469065f-54a2-4113-81e1-4b57bbc9f69f",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C6",
+      "claim": "The structure of RIG-I C268F in complex with double-stranded RNA reveals that C268F helps induce a structural conformation in RIG-I that is similar to that induced by ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of RIG-I C268F in complex with double-stranded RNA reveals that C268F helps induce a structural conformation in RIG-I that is similar to that induced by ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "01ce005a-e6ee-47c2-b3eb-4e8da2eae36f",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C7",
+      "claim": "A mutation in a P-loop ATPase can induce a gain-of-function ATP state in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results uncover an unexpected mechanism to explain how a mutation in a P-loop ATPase can induce a gain-of-function ATP state in the absence of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "86e0e0a5-23ba-4260-b74b-b5574b59911c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C8",
+      "claim": "RLRs (RIG-I, MDA5 and LGP2) are members of the Superfamily II (SF2) helicases/translocases.",
+      "claim_type": "EXPLICIT",
+      "source": "RLRs (RIG-I, MDA5 and LGP2) are members of the so-called Superfamily II (SF2) helicases/translocases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RLR protein family classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "5492a70f-900d-42b7-8171-4972b4df03d5",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C9",
+      "claim": "RLRs share a multi-domain architecture that consists of a central SF2 ATPase domain accompanied by two N-terminal tandem caspase activation and recruitment domains (2CARD, only in RIG-I and MDA5) and a C-terminal regulatory domain (CTD or RD).",
+      "claim_type": "EXPLICIT",
+      "source": "They share a multi-domain architecture that consists of a central SF2 ATPase domain accompanied by two N-terminal tandem caspase activation and recruitment domains (2CARD, only in RIG-I and MDA5) and a C-terminal regulatory domain (CTD or RD) (Rawling and Pyle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RLR protein architecture, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "02e3e3d0-6f48-4689-a40a-1f12ba13d0ce",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C10",
+      "claim": "The SF2 domain is built out of an N-terminal RecA-like domain (1A) and a C-terminal RecA-like domain (2A) that together form an ATP-binding pocket, as well as an insertion domain (domain 2B).",
+      "claim_type": "EXPLICIT",
+      "source": "The SF2 domain itself is built out of an N-terminal RecA-like domain (1A) and a C-terminal RecA-like domain (2A) that together form an ATP-binding pocket, as well as an insertion domain (domain 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about the SF2 domain architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "10adef72-badb-4317-844d-862374dc782a",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C11",
+      "claim": "SF2 and RD are crucial for RNA-recognition of RLRs.",
+      "claim_type": "EXPLICIT",
+      "source": "SF2 and RD are crucial for RNA-recognition of RLRs, whereas 2CARD communicates successful RNA-binding events to downstream signaling factors (Jiang et al., 2011; Kowalinski et al., 2011; Luo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "a3cc9de2-5107-47d7-9f2e-a23a3edbe72e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C12",
+      "claim": "2CARD communicates successful RNA-binding events to downstream signaling factors.",
+      "claim_type": "EXPLICIT",
+      "source": "SF2 and RD are crucial for RNA-recognition of RLRs, whereas 2CARD communicates successful RNA-binding events to downstream signaling factors (Jiang et al., 2011; Kowalinski et al., 2011; Luo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on RLR signaling mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "153ec50a-ddcd-4ec4-a8c8-92d2517cb4ad",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C13",
+      "claim": "RIG-I detects dsRNA ends harbouring 5' tri- or diphosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RIG-I detects dsRNA ends harbouring 5' tri- or diphosphates (Goubau et al., 2014; Schlee et al., 2009; Schmidt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RIG-I ligand specificity, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "712f92d7-e709-46a7-a687-c46b52660a91",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C14",
+      "claim": "Simultaneous binding of an RNA ligand and ATP to RIG-I switches the protein into an active state in which the otherwise shielded 2CARD is released.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous binding of an RNA ligand and ATP to RIG-I switches the protein into an active state in which the otherwise shielded 2CARD is released (Zheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "97ca511a-63ee-44ea-bc0c-39b02852ba4b",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C15",
+      "claim": "Activated RIG-I homo-tetramerizes via 2CARD.",
+      "claim_type": "EXPLICIT",
+      "source": "Activated RIG-I homo-tetramerizes via 2CARD (Jiang et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "d1e54779-0c51-48d2-9a75-ca366c04102c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C16",
+      "claim": "Activated RIG-I nucleates the polymerisation of its adapter protein, mitochondrial antiviral-signaling (MAVS), to elicit the innate immune signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Activated RIG-I homo-tetramerizes via 2CARD (Jiang et al., 2012) and nucleates the polymerisation of its adapter protein, mitochondrial antiviral-signaling (MAVS), to elicit the innate immune signaling cascade (Peisley et al., 2014; Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on RIG-I signaling mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "ecdc3eb1-2475-4ec9-9014-4f194bb67617",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C17",
+      "claim": "Self-ribonucleic acids are shielded from RLRs by introducing 2'O-methylations or by destabilizing double-stranded parts through A-to-I editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-ribonucleic acids for instance are shielded from RLRs by introducing 2'O-methylations or by destabilizing double-stranded parts through A-to-I editing (Chung et al., 2018; Devarkar et al., 2016; Liddicoat et al., 2015; Schuberth-Wagner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies on self-RNA discrimination mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "497f9265-7785-4d7c-85d1-9f71cb77c005",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C18",
+      "claim": "The SF2 domain of RLRs confers a proof-reading activity by removing RIG-I from self-RNA to avoid autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we and others have been able to show that the SF2 domain of RLRs itself confers a proof-reading activity by removing RIG-I from self-RNA so as to avoid autoimmunity (Anchisi et al., 2015; L\u00e4ssig et al., 2015; Louber et al., 2015; Rawling et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations including the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "dd6fb38a-e5d0-45f8-9b04-aef8ebeec66b",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C19",
+      "claim": "ATP turnover can lead to translocation on dsRNA stems that could remove the protein from the RNA and reinstall the inactivated state.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, ATP turnover can lead to translocation on dsRNA stems that could remove the protein from the RNA and reinstall the inactivated state (Myong et al., 2009; Yao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on RIG-I dynamics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "6f55bb77-ed14-4211-9a91-dc9d57284504",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C20",
+      "claim": "Single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases such as Aicardi-Gouti\u00e8re syndrome (AGS).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases such as Aicardi-Gouti\u00e8re syndrome (AGS) (Oda et al., 2014; Rice et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "a65d28e7-d27c-4b83-818c-2b7ba3bee75c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C21",
+      "claim": "Single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause Singleton-Merten syndrome (SMS).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases such as Aicardi-Gouti\u00e8re syndrome (AGS) (Oda et al., 2014; Rice et al., 2014), Singleton-Merten syndrome (SMS) (Jang et al., 2015; Rutsch et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "1f220613-1054-4af0-9578-c69106c92fc2",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C22",
+      "claim": "Single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause systemic lupus erythematosus (SLE).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases such as Aicardi-Gouti\u00e8re syndrome (AGS) (Oda et al., 2014; Rice et al., 2014), Singleton-Merten syndrome (SMS) (Jang et al., 2015; Rutsch et al., 2015), systemic lupus erythematosus (SLE) (Cunninghame Graham et al., 2011; Pettersson et al., 2017; Van Eyck et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "7bda6e40-6d3d-4b72-9dca-975065bde846",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C23",
+      "claim": "Single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause type 1 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, single-nucleotide polymorphisms (SNPs) in RLR genes are known to cause system-wide autoimmune diseases such as Aicardi-Gouti\u00e8re syndrome (AGS) (Oda et al., 2014; Rice et al., 2014), Singleton-Merten syndrome (SMS) (Jang et al., 2015; Rutsch et al., 2015), systemic lupus erythematosus (SLE) (Cunninghame Graham et al., 2011; Pettersson et al., 2017; Van Eyck et al., 2015) or type 1 diabetes (Liu et al., 2009; Smyth et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical and genetic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "03c6ca54-cd5d-4778-a52f-c91b20f2be2d",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C24",
+      "claim": "The RIG-I SMS variants C268F and E373A are located within SF2 ATP binding and hydrolysis motifs I and II, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The RIG-I SMS variants C268F and E373A are located within SF2 ATP binding and hydrolysis motifs I and II, respectively, (Fairman-Williams et al., 2010) (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and structural data shown in the figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "277af5dd-6131-4c43-95ed-195f7f031888",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C25",
+      "claim": "RIG-I SMS variants C268F and E373A were previously shown to be constitutively active in reporter cells without any external dsRNA trigger.",
+      "claim_type": "EXPLICIT",
+      "source": "The RIG-I SMS variants C268F and E373A are located within SF2 ATP binding and hydrolysis motifs I and II, respectively, (Fairman-Williams et al., 2010) (Figure 1\u2014figure supplement 1) and were previously shown to be constitutively active in reporter cells without any external dsRNA trigger (Jang et al., 2015; L\u00e4ssig et al., 2015) (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies and data shown in the figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "606f7da5-2dca-4f90-ba34-feeca2f37af0",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C26",
+      "claim": "RIG-I E373A's enhanced immune signaling ability can be explained by proficient ATP binding but reduced ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I E373A's enhanced immune signaling ability can be explained by proficient ATP binding but reduced ATP hydrolysis, since the motif II glutamate is implicated in positioning and polarizing the attacking water molecule in the hydrolysis reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the role of motif II glutamate in ATP hydrolysis and previous experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "38488ef2-4986-437d-bfec-94fc1acb40e3",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C27",
+      "claim": "The motif II glutamate is implicated in positioning and polarizing the attacking water molecule in the hydrolysis reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I E373A's enhanced immune signaling ability can be explained by proficient ATP binding but reduced ATP hydrolysis, since the motif II glutamate is implicated in positioning and polarizing the attacking water molecule in the hydrolysis reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the catalytic mechanism of ATPases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "b9f9053a-3e86-4177-8802-573313f44682",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C28",
+      "claim": "The stabilized ATP state in RIG-I E373A leads to increased binding of and activation by endogenous dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The stabilized ATP state leads to increased binding of and activation by endogenous dsRNA (L\u00e4ssig et al., 2015; Louber et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "c9af6ee1-95c0-477f-81c3-ff8d7e71946a",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C29",
+      "claim": "The RIG-I mutant K270A possesses reduced ATP binding properties.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a designed and widely used mutant with a defect in the invariant ATP phosphate-binding motif I lysine, K270A, possesses reduced ATP binding properties (Rawling et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e018c123-2cf5-411c-b486-339f8e3c2553",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C30",
+      "claim": "The RIG-I K270A/I mutant is deficient in inducing an immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a designed and widely used mutant with a defect in the invariant ATP phosphate-binding motif I lysine, K270A, possesses reduced ATP binding properties (Rawling et al., 2015) and the RIG-I K270A/I mutant is deficient in inducing an immune response (L\u00e4ssig et al., 2015; Yoneyama et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "4458bd91-d57d-47da-b6b8-2537daf7a43d",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C31",
+      "claim": "The RIG-I SMS variant C268F is constitutively active.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the RIG-I SMS variant C268F shows the opposite effect and is constitutively active, although this mutation is only two amino acids away from K270A in the same ATP phosphate-binding 'P-loop' in motif I (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "4725096c-71a0-4f66-bd7e-b080830d61f7",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C32",
+      "claim": "RIG-I C268F, T347A fails to induce the IFN-\u03b2 promoter in uninfected as well as in 19mer 5'-triphosphate (ppp)-dsRNA-stimulated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assays show, that RIG-I C268F, T347A fails to induce the IFN-\u03b2 promoter in uninfected as well as in 19mer 5'-triphosphate (ppp)-dsRNA-stimulated cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from luciferase reporter assays presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "8408c8f1-24da-4fe6-8d76-4ddeac2f675c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C33",
+      "claim": "The RIG-I SMS single-mutant C268F induces immune signaling only if bound to endogenous or transfected RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assays show, that RIG-I C268F, T347A fails to induce the IFN-\u03b2 promoter in uninfected as well as in 19mer 5'-triphosphate (ppp)-dsRNA-stimulated cells, indicating that the RIG-I SMS single-mutant C268F induces immune signaling only if bound to endogenous or transfected RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that the double mutant with impaired RNA binding cannot signal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e4e16ad9-3721-46ab-b5d9-0bdd6584afe5",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C34",
+      "claim": "Competition assays of RIG-I C268F titrated with signaling-deficient RIG-I lacking the 2CARD domain (RIG-I \u03942CARD) or with RIG-I \u03942CARD E373Q gradually decreased the IFN-\u03b2 promoter-driven luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, competition assays of RIG-I C268F titrated with signaling-deficient RIG-I lacking the 2CARD domain (RIG-I \u03942CARD) or with RIG-I \u03942CARD E373Q also gradually decreased the IFN-\u03b2 promoter-driven luciferase activity (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "bd4b5aa2-c009-4ea4-8c5f-03520e6db7b5",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C35",
+      "claim": "RIG-I C268F and RIG-I \u03942CARD (E373Q) recognize identical RNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RIG-I C268F as well as RIG-I \u03942CARD (E373Q) seem to recognize identical RNA substrates which are, however, saturated with signaling-deficient RIG-I \u03942CARD (E373Q) at higher transfected DNA concentrations thus preventing an immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competition assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "76db49de-3c43-48ac-9fc4-b827201c5e81",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C36",
+      "claim": "The RIG-I C268F SMS mutation does not lead to a liberation of the 2CARD signaling module in the absence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we can exclude the possibility that the RIG-I C268F SMS mutation leads to a liberation of the 2CARD signaling module in the absence of RNA, for example by unfolding SF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing RNA-dependence of signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "87501369-536b-4b13-86d6-e0e22d412a6e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C37",
+      "claim": "Signaling by the RIG-I C268F SMS variant is dependent on 2CARD release triggered by binding to RNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, signaling by the RIG-I C268F SMS variant is dependent on 2CARD release triggered by binding to RNA molecules, as it is in wild type RIG-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing RNA-dependence of signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "dcab49ce-273a-490f-b63b-1e55d857b60f",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C38",
+      "claim": "Wild type RIG-I shows a moderate binding affinity to hpRNA that is further decreased in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, wild type RIG-I shows a moderate binding affinity to this ligand that is further decreased in the presence of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence anisotropy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "0d04903a-5e15-4091-8f17-bdc16ef4dd39",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C39",
+      "claim": "RIG-I C268F displays an increased affinity to hpRNA that is even enhanced in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, RIG-I C268F displays an already increased affinity to the hpRNA that is even enhanced in the presence of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence anisotropy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "6cc8df5c-f29f-45d7-bb82-fc4e2eace26c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C40",
+      "claim": "RIG-I C268F has increased co-purification with endogenous RNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the previous results for RIG-I C268F showing an increased co-purification with endogenous RNA molecules (L\u00e4ssig et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "c2693b35-0fea-4035-bd36-ce76ef8f9181",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C41",
+      "claim": "RIG-I C268F has two conformations (apo and ATP-bound) that have increased dsRNA affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the previous results for RIG-I C268F showing an increased co-purification with endogenous RNA molecules (L\u00e4ssig et al., 2015) and indicates that RIG-I C268F has two conformations (apo and ATP-bound) that have increased dsRNA affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding data showing increased affinity in both presence and absence of ATP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "fd9c02a6-9d2f-4c69-b9de-9b6c3bdb6271",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C42",
+      "claim": "ATP hydrolysis assays with 32P-labeled ATP confirmed a loss of catalytic activity of RIG-I C268F in the presence of dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis assays with 32P-labeled ATP confirmed a loss of catalytic activity of RIG-I C268F and of both motif I and II mutants in the presence of dsRNA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "d399a542-d588-4fd9-92e7-4d939e46dec3",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C43",
+      "claim": "RIG-I C268F has defects in dissociating from endogenous RNA because it lacks the capability for ATP turnover and hence translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our RNA-binding experiments, this evidence supports a model in which RIG-I C268F has defects in dissociating from endogenous RNA, because it lacks the capability for ATP turnover and hence translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ATP hydrolysis and RNA binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "59bc83b3-9642-4374-a30a-04bdcfe10d26",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C44",
+      "claim": "Wild type RIG-I and ATP-hydrolysis-deficient RIG-I E373Q show comparable affinities for MANT-ATP and MANT-ATP\u03b3S in the low \u00b5M range in the absence of any RNA ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of any RNA ligand, both wild type RIG-I and ATP-hydrolysis-deficient RIG-I E373Q show comparable affinities for MANT-ATP and MANT-ATP\u03b3S in the low \u00b5M range (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "67ed803d-111e-4569-b955-7a90c5d2a376",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C45",
+      "claim": "ATP-binding-deficient RIG-I K270I has a reduced affinity for ATP in the medium \u00b5M range.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ATP-binding-deficient RIG-I K270I has a reduced affinity for ATP (in the medium \u00b5M range).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "7b5650db-73ee-40c0-b28c-d754577bfc8c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C46",
+      "claim": "The presence of RNA increases the affinity of wtRIG-I and RIG-I E373Q for MANT-ATP or MANT-ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous data (Kohlway et al., 2013), the presence of RNA increases the affinity of wtRIG-I and RIG-I E373Q, but not of RIG-I K270I for MANT-ATP or MANT-ATP\u03b3S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "57e9e509-d99b-477a-89d1-63317ed27e88",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C47",
+      "claim": "The presence of RNA does not increase the affinity of RIG-I K270I for MANT-ATP or MANT-ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous data (Kohlway et al., 2013), the presence of RNA increases the affinity of wtRIG-I and RIG-I E373Q, but not of RIG-I K270I for MANT-ATP or MANT-ATP\u03b3S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "ecbcca8e-87e3-4c67-a4b3-7115d3dc3530",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C48",
+      "claim": "The RIG-I SMS variant C268F displays reduced ATP-binding affinities compared to that of wtRIG-I or RIG-I E373Q independently of the availability of an RNA ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, like RIG-I K270I, the RIG-I SMS variant C268F displays reduced ATP-binding affinities compared to that of wtRIG-I or RIG-I E373Q independently of the availability of an RNA ligand (Figure 2B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e3facbb2-3717-42bf-a33f-231fc4ddaf67",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C49",
+      "claim": "Both RNA and ATP binding are normally needed to induce a molecular switch within RIG-I in order to release the 2CARD module and to activate an immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "This is puzzling as both RNA and ATP binding are normally needed to induce a molecular switch within RIG-I in order to release the 2CARD module and to activate an immune response (Shah et al., 2018; Zheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "2a78de0f-186f-4244-ad95-39d4da1af9a9",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C50",
+      "claim": "RIG-I C268F might be able to signal even in the absence of a bound ATP molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I C268F might thus be able to signal even in the absence of a bound ATP molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing reduced ATP binding but maintained signaling activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "17b50e71-4b72-4218-8103-6fa933cf76a5",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C51",
+      "claim": "The molecular switch to release 2CARD is only triggered in RIG-I C268F but not in RIG-I K270I.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even though it is possible that under cellular conditions of 1 mM ATP or even higher, ATP is still bound by both motif I mutants, the molecular switch to release 2CARD is only triggered in RIG-I C268F but not in RIG-I K270I (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "5513454a-795c-43f1-9da2-6279712b9dbf",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C52",
+      "claim": "The SMS mutant RIG-I C268F shows crucial amino acid side chain rearrangements in the active site that stabilize the protein in an activated state but prevent binding and co-crystalization of a nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, despite an overall high structural similarity to wtRIG-I \u03942CARD bound to dsRNA (Jiang et al., 2011), the SMS mutant shows crucial amino acid side chain rearrangements in the active site that stabilize the protein in an activated state but prevent binding and co-crystalization of a nucleotide (Figure 3A, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic structural data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e80f66b7-4140-4ee4-9bae-353aba882dc3",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C53",
+      "claim": "The bulky F268 side chain displaces the evolutionary invariant motif I K270 from its central ATP phosphate-binding position in the P-loop, into a position where the N\u03b5 of K270 is situated at a site normally occupied by the Mg2+ ion.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the bulky F268 side chain displaces the evolutionary invariant motif I K270 from its central ATP phosphate-binding position in the P-loop, into a position where the N\u03b5 of K270 is situated at a site normally occupied by the Mg2+ ion (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic structural data shown in the video and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "bfcee22e-feea-4635-a4be-8e33f3e602d1",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C54",
+      "claim": "K270 forms a salt bridge with E702 from the C-terminal RecA-like domain 2A in RIG-I C268F.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, K270 now forms a salt bridge with E702 from the C-terminal RecA-like domain 2A, which in turn occupies the ATP \u03b3-phosphate binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "02a23584-09db-4fa8-bd01-6e84f102c651",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C55",
+      "claim": "E702 occupies the ATP \u03b3-phosphate binding site in RIG-I C268F.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, K270 now forms a salt bridge with E702 from the C-terminal RecA-like domain 2A, which in turn occupies the ATP \u03b3-phosphate binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "95e84133-9d07-4041-929f-6287cac4272f",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C56",
+      "claim": "The overall conformation of RIG-I C268F resembles the ATP-bound state of RIG-I, but without ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting overall conformation resembles the ATP-bound state of RIG-I, but without ATP, and could thus explain how C268F is able to signal independently of any nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic structural data and comparison with wild-type structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "df71d416-e24f-40bb-8ca6-2cea1aa9e727",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C57",
+      "claim": "Mutation of K270 in RecA-like domain A1 renders RIG-I C268F inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of K270 in RecA-like domain A1 renders RIG-I C268F inactive, probably as the result of a mixture of (i) prevention of the activation of RIG-I C268F in the absence of ATP by disrupting the salt bridge, and/or (ii) the failure to bind ATP altogether through impaired ATP phosphate coordination and thus an impaired 2CARD release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "3730623a-d6b4-47f0-9e14-04968571dc47",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C58",
+      "claim": "Mutation of E702 in the RecA-like domain 2A of RIG-I C268F does not disrupt constitutive signaling of the protein, although this activity is at a reduced level compared to that of RIG-I C268F.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of E702 in the RecA-like domain 2A of RIG-I C268F, by contrast, does not disrupt constitutive signaling of the protein, although this activity is at a reduced level compared to that of RIG-I C268F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "92f0e6a1-efac-40c5-b93c-c0887c9f57b6",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C59",
+      "claim": "E702A alone already induces an autoimmune phenotype similar to that induced by RIG-I C268F, E702A.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our previously described V699A mutant in the same motif (L\u00e4ssig et al., 2015), E702A alone already induces an autoimmune phenotype similar to that induced by RIG-I C268F, E702A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "01fa461b-f2cd-488e-a2ed-7c3fdd14696e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C60",
+      "claim": "RIG-I C268F stabilizes an ATP-like state in the absence of ATP, but still allows formation of a proper ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "The most plausible explanation for these data is that RIG-I C268F stabilizes an ATP-like state in the absence of ATP, but still allows formation of a proper ATP-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "1130993d-c120-4291-94ce-49b92782ec0f",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C61",
+      "claim": "ATP further increases the binding of RIG-I C268F to internal dsRNA stems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data also show that ATP further increases the binding of RIG-I C268F to internal dsRNA stems (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "137c8068-c97a-442f-924a-3e09faf759d8",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C62",
+      "claim": "Engineering of ATP-binding mutations R244A, Q247A into RIG-I C268F at least partly reduces its signaling activity in response to endogenous or ppp-dsRNA RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data also show that ATP further increases the binding of RIG-I C268F to internal dsRNA stems (Figure 1B) and that the engineering of ATP-binding mutations R244A, Q247A into RIG-I C268F at least partly reduces its signaling activity in response to endogenous or ppp-dsRNA RNA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e29ebecc-bf3e-4ecb-a1fd-b37387483455",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C63",
+      "claim": "Binding of ATP at high molecular concentrations, such as those present in a cellular context, further contributes to the pathogenic signaling activity of RIG-I C268F.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though we were not able to co-crystalize RIG-I C268F in the presence of a nucleotide, it is very possible that binding of ATP at high molecular concentrations, such as those present in a cellular context, further contributes to the pathogenic signaling activity of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "71c3efa7-b9fc-4a84-8e7e-c7ed94cbc45e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C64",
+      "claim": "The mechanism unifies the molecular basis for the development of SMS by both RIG-I variants C268F and E373A.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism unifies the molecular basis for the development of SMS by both RIG-I variants (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental and structural data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "526a6029-0eef-4bad-a17e-6f485cfe4288",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C65",
+      "claim": "Wild type RIG-I consumes ATP and uses ATP turnover to decrease its affinity to self-RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike wtRIG-I, which consumes ATP and uses ATP turnover to decrease its affinity to self-RNA (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by previous work and illustrated in the figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "7b9e9d70-9447-4962-afd2-1b6e53cb798c",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C66",
+      "claim": "Both motif I and II SMS mutations either mimic or freeze RIG-I in an ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike wtRIG-I, which consumes ATP and uses ATP turnover to decrease its affinity to self-RNA (Figure 4A), both motif I and II SMS mutations either mimic or freeze RIG-I in an ATP-bound state (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental and structural data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "8d252a4b-d78e-44a6-afcf-3acc20211898",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C67",
+      "claim": "The inability to hydrolyze ATP and thus to dissociate actively from RNA traps RIG-I SMS variants in an activated state and thus explains autoimmune signaling in response to self-RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the inability to hydrolyze ATP and thus to dissociate actively from RNA (Figure 1B, Figure 2A) traps the protein in an activated state and thus explains autoimmune signaling in response to self-RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "17cf1351-e374-4930-8de3-a4c9cf8c37b7",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C68",
+      "claim": "Slight intramolecular rearrangements within the RIG-I C268F ATP-binding pocket appear to compensate for ATP binding and render the protein active in the presence of dsRNA only.",
+      "claim_type": "EXPLICIT",
+      "source": "Slight intramolecular rearrangements within the RIG-I C268F ATP-binding pocket appear to compensate for ATP binding and render the protein active in the presence of dsRNA only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "4a30f3b0-a88c-4da6-a3cc-24be2fb67f25",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C69",
+      "claim": "Loss of proof-reading activity in RIG-I C268F leads to increased activation by endogenous RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, loss of proof-reading activity leads to increased activation by endogenous RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing loss of ATP hydrolysis and increased RNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "734af883-ee34-45e8-8378-f458bf6fcca7",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C70",
+      "claim": "A P-loop mutation can mimic the effects of ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This unusual gain-of-function mutation reveals, for the first time to our knowledge, that a P-loop mutation can mimic the effects of ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "702cc341-0846-43c1-9652-710131e00037",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C71",
+      "claim": "Crystal 1 had space group P212121 and diffracted to 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal 1 had space group P212121 and diffracted to 3.3 \u00c5, crystal 2 had space group P6522 and diffracted until 2.9 \u00c5 (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is crystallographic data reported in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "46f4d24d-d79a-4f5d-850d-44ef3166cb3e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C72",
+      "claim": "Crystal 2 had space group P6522 and diffracted until 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal 1 had space group P212121 and diffracted to 3.3 \u00c5, crystal 2 had space group P6522 and diffracted until 2.9 \u00c5 (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is crystallographic data reported in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "dd796f65-71d5-4838-9bcf-b067b770ff80",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C73",
+      "claim": "No density for a bound nucleotide was detected in either structure of RIG-I C268F.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any density for a bound nucleotide in either structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystallographic data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "9888f3eb-a2fb-4fd6-9786-c8c72469e2c6",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C74",
+      "claim": "T347A point mutation in the RNA-binding interface of the N-terminal RecA-like domain (1A) abrogates the signaling of wild type RIG-I in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we used a previously described T347A point mutation in the RNA-binding interface of the N-terminal RecA-like domain (1A) (Figure 1\u2014figure supplement 1), that abrogates the signaling of wild type (wt) RIG-I in infected cells and decreases the affinity for dsRNA in vitro (L\u00e4ssig et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "405de1aa-53ec-4f98-8da1-111891919674",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C75",
+      "claim": "T347A point mutation decreases the affinity for dsRNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we used a previously described T347A point mutation in the RNA-binding interface of the N-terminal RecA-like domain (1A) (Figure 1\u2014figure supplement 1), that abrogates the signaling of wild type (wt) RIG-I in infected cells and decreases the affinity for dsRNA in vitro (L\u00e4ssig et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "8f53ff6c-a4df-42b4-8b16-eb4e8d977957",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C80",
+      "claim": "RIG-I has an affinity for MANT-ATP of 72 \u00b1 13 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I 72 \u00b1 13 \u00b5M",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e0c45681-289b-4196-9d9c-371947974799",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C83",
+      "claim": "RIG-I E373Q has an affinity for MANT-ATP of 72 \u00b1 13 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I E373Q 72 \u00b1 13 \u00b5M",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "3ad33351-1cca-43b7-ab9c-aed6cb7708a6",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C84",
+      "claim": "RIG-I E373Q in the presence of RNA has an affinity for MANT-ATP of 28 \u00b1 5 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I E373Q + RNA 28 \u00b1 5 \u00b5M",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "d7b625b9-ce92-481d-ac5b-15f685c382b8",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C85",
+      "claim": "RIG-I K270I has an affinity for MANT-ATP of 298 \u00b1 81 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I K270I 298 \u00b1 81 \u00b5M",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "48f2c3c2-1973-4205-aa8e-ab20a2c7a8f2",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "claim_id": "C86",
+      "claim": "RIG-I C268F has an affinity for MANT-ATP of 166 \u00b1 34 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "RIG-I C268F 166 \u00b1 34 \u00b5M",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about RIG-I structure, function, and disease associations. RIG-I is an SF2 helicase that detects viral dsRNA and requires both ATP and RNA binding for activation. ATP hydrolysis provides proofreading activity to distinguish self from viral RNA, and mutations affecting this process cause autoimmune diseases including Singleton-Merten syndrome (SMS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C23 represent well-established background knowledge supported by multiple citations to prior literature. These claims provide necessary context for understanding the novel findings about the C268F mutation and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "682260fb-a8be-4633-a606-45cbe0ade438",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The RIG-I SMS variants C268F and E373A are located in ATP binding/hydrolysis motifs I and II respectively, and both show constitutive activity. The E373A mechanism is explained by reduced ATP hydrolysis while maintaining ATP binding, whereas C268F shows constitutive activity despite being in the same P-loop as the inactive K270A mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 establish the contrasting behaviors of different motif I mutations and the known mechanism for E373A, setting up the central puzzle of how C268F causes constitutive activation. These claims are supported by citations and experimental data from Figure 1\u2014figure supplement 2A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "f8ca81f7-9073-46db-842b-8986786b3c4a",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RIG-I C268F signaling is RNA-dependent but not due to 2CARD liberation in the absence of RNA. The double mutant C268F/T347A (which impairs RNA binding) fails to induce IFN-\u03b2 promoter activity, demonstrating that C268F requires RNA binding for signaling, similar to wild-type RIG-I.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C36-C37, C74-C75 are well-supported by the luciferase reporter assay data in Figure 1A. The use of the T347A mutation as a control to test RNA-dependence is appropriate and the conclusion that C268F requires RNA binding is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "7976ff51-f756-4283-b172-27a7376c86e9",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Competition assays show that signaling-deficient RIG-I \u03942CARD or RIG-I \u03942CARD E373Q can titrate out C268F activity, suggesting they recognize identical RNA substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by data in Figure 1\u2014figure supplement 2B. The competition experiment is well-designed and the interpretation that both proteins recognize the same RNA substrates is reasonable, though alternative explanations (e.g., protein-protein interactions) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RIG-I C268F displays increased affinity for dsRNA compared to wild-type, and this affinity is further enhanced in the presence of ATP. Wild-type RIG-I shows decreased RNA affinity in the presence of ATP. C268F has two conformations (apo and ATP-bound) with increased dsRNA affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C61 are supported by fluorescence anisotropy data in Figure 1B. The experiments are appropriately designed with n=4 replicates. The conclusion that C268F has increased RNA affinity in both apo and ATP-bound states is well-supported, though KD values are not explicitly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "ca7f987c-43b4-42ae-b191-415836ae81c8",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RIG-I C268F shows loss of ATP hydrolysis activity in the presence of dsRNA, supporting a model where C268F cannot dissociate from RNA due to lack of ATP turnover and translocation capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by ATP hydrolysis assay data in Figure 2A using 32P-labeled ATP. The experimental approach is standard and appropriate. The inference that loss of ATP hydrolysis prevents RNA dissociation is logical and consistent with prior work (C2, C18, C19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "c5790073-f204-4289-a395-38c58105b394",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ATP binding affinity measurements show that C268F has reduced ATP binding (166 \u00b1 34 \u00b5M) compared to wild-type (72 \u00b1 13 \u00b5M) or E373Q (72 \u00b1 13 \u00b5M), similar to the ATP-binding-deficient K270I mutant (298 \u00b1 81 \u00b5M). RNA increases ATP affinity for wild-type and E373Q but not for K270I or C268F.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 and C80-C86 are supported by MANT-ATP binding data in Figure 2B and Table 1 with n=4 replicates. The finding that C268F has reduced ATP binding despite being constitutively active is puzzling and well-documented, setting up the key mechanistic question addressed by structural studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "67361ec9-bbdb-485d-bd00-48037d18c165",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Despite reduced ATP binding, C268F can signal in the absence of ATP, whereas K270I cannot, even though both are motif I mutants with reduced ATP binding. This suggests C268F has a unique mechanism for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 synthesize the biochemical data to highlight the paradox: C268F signals despite reduced ATP binding, unlike K270I. This is supported by comparing luciferase data (Figure 1\u2014figure supplement 2A) with ATP binding data (Figure 2B, Table 1). The reasoning is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "23061c3f-3005-4fd0-ad34-161418ed11a7",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Engineering ATP-binding mutations R244A, Q247A into C268F partially reduces its signaling activity in response to endogenous or ppp-dsRNA, suggesting ATP binding at cellular concentrations contributes to C268F pathogenic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by luciferase data in Figure 2C. The triple mutant shows reduced but still elevated signaling compared to wild-type, suggesting C268F can signal both with and without ATP. The experiment is well-designed to test the contribution of ATP binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "11013ae3-a444-4112-ade0-e7496653f576",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Crystal structures of RIG-I \u03942CARD C268F bound to dsRNA reveal that the F268 side chain displaces K270 from its ATP-binding position to a site normally occupied by Mg2+, where K270 forms a salt bridge with E702. This creates an ATP-like conformation without bound nucleotide, explaining ATP-independent signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, C52-C56, C71-C73 are supported by crystallographic data at 2.9-3.3 \u00c5 resolution (Table 2, Figure 3A, Figure 3\u2014figure supplement 1, Video 1). Two independent crystal forms were solved. The structural interpretation is clear and well-documented. The absence of nucleotide density despite crystallization attempts with ATP/ADP\u00b7BeFx is significant and supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "3bdfd15b-a536-4495-b918-ca920274fe49",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mutational analysis shows that disrupting K270 in C268F abolishes activity, while mutating E702 reduces but does not eliminate activity. E702A alone induces an autoimmune phenotype, suggesting the salt bridge is important but E702 has additional roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by luciferase data in Figure 3B. The differential effects of K270 vs E702 mutations provide functional validation of the structural model. The interpretation that K270 is essential while E702 has multiple roles is reasonable, though the authors acknowledge complexity in the E702 results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "edf018cf-ac76-4433-b63c-9baa945f6075",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "C268F stabilizes an ATP-like state without ATP but can still form a proper ATP-bound state. At high cellular ATP concentrations, ATP binding likely contributes to pathogenic signaling activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is a reasonable inference from structural and biochemical data, but claim C63 is explicitly speculative (\"it is very possible\"). While the triple mutant data (C62) supports some ATP contribution, the inability to co-crystallize with nucleotide and the lack of direct evidence for ATP binding at physiological concentrations leaves this uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The C268F mutation represents a novel mechanism where a P-loop mutation mimics ATP binding effects without ATP. Both SMS variants (C268F and E373A) trap RIG-I in an ATP-bound state (mimicked or stabilized), preventing ATP hydrolysis and RNA dissociation, leading to autoimmune signaling from self-RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, C64, C66-C70 represent the main conclusions integrating all experimental data. The unified mechanism for both SMS variants is well-supported by the combination of structural (C52-C56), biochemical (C42, C48), and functional (C32-C33, C39) data. The claim that this is the first demonstration of a P-loop mutation mimicking ATP binding is appropriately qualified (\"to our knowledge\").",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    },
+    {
+      "id": "ccc35666-74c7-43bd-975c-4d087d292f44",
+      "content_id": "5e2691ab-2f5a-4656-aece-ef647b306431",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Wild-type RIG-I uses ATP turnover to decrease affinity for self-RNA, providing a proofreading mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 summarizes established knowledge from prior work (C2, C18, C19) and is illustrated in Figure 4A. This provides important context for understanding how SMS mutations disrupt normal function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:41:21.652043Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "87289f21-88b7-4a2a-8f14-8da757b545c2",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "cd555de1-f025-427e-afc9-58b85235a1d2",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "99078ee0-3767-48a5-8f8a-eacf1a54f7b2",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "86e0e0a5-23ba-4260-b74b-b5574b59911c",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "5492a70f-900d-42b7-8171-4972b4df03d5",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "02e3e3d0-6f48-4689-a40a-1f12ba13d0ce",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "10adef72-badb-4317-844d-862374dc782a",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "a3cc9de2-5107-47d7-9f2e-a23a3edbe72e",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "153ec50a-ddcd-4ec4-a8c8-92d2517cb4ad",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "712f92d7-e709-46a7-a687-c46b52660a91",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "97ca511a-63ee-44ea-bc0c-39b02852ba4b",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "d1e54779-0c51-48d2-9a75-ca366c04102c",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "ecdc3eb1-2475-4ec9-9014-4f194bb67617",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "497f9265-7785-4d7c-85d1-9f71cb77c005",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "dd6fb38a-e5d0-45f8-9b04-aef8ebeec66b",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "6f55bb77-ed14-4211-9a91-dc9d57284504",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "a65d28e7-d27c-4b83-818c-2b7ba3bee75c",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "1f220613-1054-4af0-9578-c69106c92fc2",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "7bda6e40-6d3d-4b72-9dca-975065bde846",
+      "result_id": "0de9048c-aad0-43f2-a4cb-ef5995b5169a"
+    },
+    {
+      "claim_id": "03c6ca54-cd5d-4778-a52f-c91b20f2be2d",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "277af5dd-6131-4c43-95ed-195f7f031888",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "606f7da5-2dca-4f90-ba34-feeca2f37af0",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "38488ef2-4986-437d-bfec-94fc1acb40e3",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "b9f9053a-3e86-4177-8802-573313f44682",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "c9af6ee1-95c0-477f-81c3-ff8d7e71946a",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "e018c123-2cf5-411c-b486-339f8e3c2553",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "4458bd91-d57d-47da-b6b8-2537daf7a43d",
+      "result_id": "682260fb-a8be-4633-a606-45cbe0ade438"
+    },
+    {
+      "claim_id": "4725096c-71a0-4f66-bd7e-b080830d61f7",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "8408c8f1-24da-4fe6-8d76-4ddeac2f675c",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "76db49de-3c43-48ac-9fc4-b827201c5e81",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "87501369-536b-4b13-86d6-e0e22d412a6e",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "9888f3eb-a2fb-4fd6-9786-c8c72469e2c6",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "405de1aa-53ec-4f98-8da1-111891919674",
+      "result_id": "f8ca81f7-9073-46db-842b-8986786b3c4a"
+    },
+    {
+      "claim_id": "e4e16ad9-3721-46ab-b5d9-0bdd6584afe5",
+      "result_id": "7976ff51-f756-4283-b172-27a7376c86e9"
+    },
+    {
+      "claim_id": "bd4b5aa2-c009-4ea4-8c5f-03520e6db7b5",
+      "result_id": "7976ff51-f756-4283-b172-27a7376c86e9"
+    },
+    {
+      "claim_id": "dcab49ce-273a-490f-b63b-1e55d857b60f",
+      "result_id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a"
+    },
+    {
+      "claim_id": "0d04903a-5e15-4091-8f17-bdc16ef4dd39",
+      "result_id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a"
+    },
+    {
+      "claim_id": "6cc8df5c-f29f-45d7-bb82-fc4e2eace26c",
+      "result_id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a"
+    },
+    {
+      "claim_id": "c2693b35-0fea-4035-bd36-ce76ef8f9181",
+      "result_id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a"
+    },
+    {
+      "claim_id": "1130993d-c120-4291-94ce-49b92782ec0f",
+      "result_id": "e5b17b10-8fcf-47ad-b39f-440d946fac7a"
+    },
+    {
+      "claim_id": "fd9c02a6-9d2f-4c69-b9de-9b6c3bdb6271",
+      "result_id": "ca7f987c-43b4-42ae-b191-415836ae81c8"
+    },
+    {
+      "claim_id": "d399a542-d588-4fd9-92e7-4d939e46dec3",
+      "result_id": "ca7f987c-43b4-42ae-b191-415836ae81c8"
+    },
+    {
+      "claim_id": "59bc83b3-9642-4374-a30a-04bdcfe10d26",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "67ed803d-111e-4569-b955-7a90c5d2a376",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "7b5650db-73ee-40c0-b28c-d754577bfc8c",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "57e9e509-d99b-477a-89d1-63317ed27e88",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "ecbcca8e-87e3-4c67-a4b3-7115d3dc3530",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "8f53ff6c-a4df-42b4-8b16-eb4e8d977957",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "e0c45681-289b-4196-9d9c-371947974799",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "3ad33351-1cca-43b7-ab9c-aed6cb7708a6",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "d7b625b9-ce92-481d-ac5b-15f685c382b8",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "48f2c3c2-1973-4205-aa8e-ab20a2c7a8f2",
+      "result_id": "c5790073-f204-4289-a395-38c58105b394"
+    },
+    {
+      "claim_id": "e3facbb2-3717-42bf-a33f-231fc4ddaf67",
+      "result_id": "67361ec9-bbdb-485d-bd00-48037d18c165"
+    },
+    {
+      "claim_id": "2a78de0f-186f-4244-ad95-39d4da1af9a9",
+      "result_id": "67361ec9-bbdb-485d-bd00-48037d18c165"
+    },
+    {
+      "claim_id": "17b50e71-4b72-4218-8103-6fa933cf76a5",
+      "result_id": "67361ec9-bbdb-485d-bd00-48037d18c165"
+    },
+    {
+      "claim_id": "137c8068-c97a-442f-924a-3e09faf759d8",
+      "result_id": "23061c3f-3005-4fd0-ad34-161418ed11a7"
+    },
+    {
+      "claim_id": "13b88ac3-dc9b-4bc8-9d69-045d51535793",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "5469065f-54a2-4113-81e1-4b57bbc9f69f",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "5513454a-795c-43f1-9da2-6279712b9dbf",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "e80f66b7-4140-4ee4-9bae-353aba882dc3",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "bfcee22e-feea-4635-a4be-8e33f3e602d1",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "02a23584-09db-4fa8-bd01-6e84f102c651",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "95e84133-9d07-4041-929f-6287cac4272f",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "702cc341-0846-43c1-9652-710131e00037",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "46f4d24d-d79a-4f5d-850d-44ef3166cb3e",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "dd796f65-71d5-4838-9bcf-b067b770ff80",
+      "result_id": "11013ae3-a444-4112-ade0-e7496653f576"
+    },
+    {
+      "claim_id": "df71d416-e24f-40bb-8ca6-2cea1aa9e727",
+      "result_id": "3bdfd15b-a536-4495-b918-ca920274fe49"
+    },
+    {
+      "claim_id": "3730623a-d6b4-47f0-9e14-04968571dc47",
+      "result_id": "3bdfd15b-a536-4495-b918-ca920274fe49"
+    },
+    {
+      "claim_id": "92f0e6a1-efac-40c5-b93c-c0887c9f57b6",
+      "result_id": "3bdfd15b-a536-4495-b918-ca920274fe49"
+    },
+    {
+      "claim_id": "01fa461b-f2cd-488e-a2ed-7c3fdd14696e",
+      "result_id": "edf018cf-ac76-4433-b63c-9baa945f6075"
+    },
+    {
+      "claim_id": "e29ebecc-bf3e-4ecb-a1fd-b37387483455",
+      "result_id": "edf018cf-ac76-4433-b63c-9baa945f6075"
+    },
+    {
+      "claim_id": "fa1dd072-7386-4838-8196-5f93caac8860",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "01ce005a-e6ee-47c2-b3eb-4e8da2eae36f",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "71c3efa7-b9fc-4a84-8e7e-c7ed94cbc45e",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "7b9e9d70-9447-4962-afd2-1b6e53cb798c",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "8d252a4b-d78e-44a6-afcf-3acc20211898",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "17cf1351-e374-4930-8de3-a4c9cf8c37b7",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "4a30f3b0-a88c-4da6-a3cc-24be2fb67f25",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "734af883-ee34-45e8-8378-f458bf6fcca7",
+      "result_id": "f19e8b35-ad43-43bd-a30a-3657c1b4029e"
+    },
+    {
+      "claim_id": "526a6029-0eef-4bad-a17e-6f485cfe4288",
+      "result_id": "ccc35666-74c7-43bd-975c-4d087d292f44"
+    }
+  ],
+  "comparisons": []
+}

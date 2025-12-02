@@ -1,0 +1,742 @@
+{
+  "submission": {
+    "id": "85f2ab94-8a61-40fd-9cff-d743a8fcfaf9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:38:56.357445Z",
+    "updated_at": "2025-12-01T23:38:56.357445Z"
+  },
+  "content": [
+    {
+      "id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "submission_id": "85f2ab94-8a61-40fd-9cff-d743a8fcfaf9",
+      "content_type": "manuscript",
+      "content_text": "# Correction: MELK is an oncogenic kinase essential for mitotic progression in basal-like breast cancer cells\n\n## Authors\n\n- Yubao Wang ([ORCID: 0000-0003-2703-3104](https://orcid.org/0000-0003-2703-3104))\n- Young-Mi Li\n- Lukas Baitsch\n- Alan Huang\n- Yi Xiang\n- Haoxuan Tong\n- Ana Lako\n- Thanh Von\n- Christine Choi\n- Elgene Lim\n- Junxia Min\n- Li Li\n- Frank Stegmeier\n- Robert Schlegel\n- Michael J Eck\n- Nathanael S Gray ([ORCID: 0000-0001-5354-7403](https://orcid.org/0000-0001-5354-7403))\n- Timothy J Mitchison\n- Jean J Zhao \u2020\n\n\u2020 Corresponding author\n\n## Proliferation assays for MELK dependency\n\nThe conflicting sets of studies differed in multiple aspects of their experimental protocol. However, using our own reagents and reagents from Dr. Sheltzer\u2019s group at CSHL, we were able to substantially reproduce key findings from these studies, under their respective experimental conditions. Specifically, we found that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions (Figure 1A, right upper panels), as reported by Wang et al. (2014) and Toure\u0301 et al., 2016. However, MELK is indeed dispensable under higher density culture conditions (Figure 1A, right lower panels), consistent with findings by Lin et al. (2017) and Huang et al. (2017). Therefore, at least under 2D culture conditions, it appears that cellular dependency on MELK is highly dependent upon growth density.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36414/elife-36414-fig1-v1.jpg)\n\n**Figure 1.:** Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences). Whole well images are shown with green pseudo coloring to visualize cell confluence. Graphs indicate mean \u00b1 SD (n = 4). Cas9-expressing MDA-MB-231 and lentiGuide constructs were generous gifts of Dr. Sheltzer. (B) Proliferation of MDA-MB-468 wild-type parental cells, MELK wild-type (E9) and MELK-knockout (E3, C7, and C9) clonal sub-lines under clonogenic growth conditions. Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system (LI-COR Biosciences).\n\n## MELK function in parental cell lines and clonal sub-lines\n\nOur initial studies used inducible MELK knockdown in cell populations from non-clonal parental cell lines (Wang et al., 2014), in contrast to MELK-null clonal derivatives (Lin et al., 2017; Giuliano et al., 2018). We recently derived a number of MELK CRISPR knockout clonal sub-lines, and observed notable variation in proliferative capacity with some MELK-null clones proliferating at comparable rate to parental cells and others much slower (Figure 1B). Given that MELK may be essential for clonogenic growth as described above, clonal sub-lines are likely enriched for sub-populations that are MELK-independent or have adapted to its depletion.\n\n## Off-target effects of genetic and chemical reagents\n\nOur original studies were primarily based on RNAi-mediated MELK depletion experiments, whereas newer studies utilized CRISPR-Cas9 technology. In hindsight, we must acknowledge that these shRNA reagents, which were state-of-the-art at the time, have substantial off-target effects, and that these off-target effects may have contributed to their anti-proliferative effects. However, we note that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK (Wang et al., 2014; Janostiak et al., 2017), indicating that on-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed. We also found that compounds targeting MELK (OTSSP167, HTH-01-091), like all chemical inhibitors, have a spectrum of other targets (Huang et al., 2017). This brings inevitable complexities to studies utilizing MELK inhibitors, and likely explains the persistence of their anti-proliferative effects upon MELK depletion.\n",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3454178e-5510-4042-bed2-1ff72b36706c",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C1",
+      "claim": "Using reagents from the authors' group and Dr. Sheltzer's group at CSHL, key findings from conflicting studies on MELK dependency could be substantially reproduced under their respective experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using our own reagents and reagents from Dr. Sheltzer's group at CSHL, we were able to substantially reproduce key findings from these studies, under their respective experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental reproduction performed by the authors using reagents from multiple sources.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "579bf6ae-6574-4d42-8bc2-4c066bdf8032",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C2",
+      "claim": "MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions (Figure 1A, right upper panels), as reported by Wang et al. (2014) and Tour\u00e9 et al., 2016.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and is consistent with previous publications by Wang et al. (2014) and Tour\u00e9 et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "4e006c63-da1d-467f-a208-0ff8912323d3",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C3",
+      "claim": "Wang et al. (2014) reported that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions (Figure 1A, right upper panels), as reported by Wang et al. (2014) and Tour\u00e9 et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a previous publication by Wang et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "ef77799f-311b-4bf9-8996-f2b29ccae794",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C4",
+      "claim": "Tour\u00e9 et al., 2016 reported that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that MELK is necessary for the proliferation of MDA-MB-231 cells under clonogenic conditions (Figure 1A, right upper panels), as reported by Wang et al. (2014) and Tour\u00e9 et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a previous publication by Tour\u00e9 et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "03571e12-e90c-4422-9dfa-0e5931ed8aee",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C5",
+      "claim": "MELK is dispensable for MDA-MB-231 cell proliferation under higher density culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MELK is indeed dispensable under higher density culture conditions (Figure 1A, right lower panels), consistent with findings by Lin et al. (2017) and Huang et al. (2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1A and is consistent with previous publications by Lin et al. (2017) and Huang et al. (2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "82d16795-b265-46a2-beef-29b25da956f2",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C6",
+      "claim": "Lin et al. (2017) found that MELK is dispensable under higher density culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MELK is indeed dispensable under higher density culture conditions (Figure 1A, right lower panels), consistent with findings by Lin et al. (2017) and Huang et al. (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a previous publication by Lin et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "6db8c3e0-cde4-4b0b-b803-c9b7d55780e4",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C7",
+      "claim": "Huang et al. (2017) found that MELK is dispensable under higher density culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MELK is indeed dispensable under higher density culture conditions (Figure 1A, right lower panels), consistent with findings by Lin et al. (2017) and Huang et al. (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references a previous publication by Huang et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "496367ce-9ec3-4faf-8186-d98b5ba137c5",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C8",
+      "claim": "Under 2D culture conditions, cellular dependency on MELK is highly dependent upon growth density.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, at least under 2D culture conditions, it appears that cellular dependency on MELK is highly dependent upon growth density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations showing different MELK dependencies at different cell densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "aeffd28a-1610-4704-abc8-d7927cc845d9",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C9",
+      "claim": "Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "aa4d8e89-6052-4136-be7a-99468a2af694",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C10",
+      "claim": "Cas9-expressing MDA-MB-231 cells seeded at 250 cells per well were imaged 11 days after seeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "4b2c452f-0cc2-4306-a01e-dd3de68b7c5d",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C11",
+      "claim": "Cas9-expressing MDA-MB-231 cells seeded at 25,000 cells per well were imaged 3 days after seeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "048739b7-1bf7-4e00-b840-4223a2aa6a1d",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C12",
+      "claim": "Celigo Image Cytometry from Nexcelom Biosciences was used to image the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methodology and equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "f5ecb580-b594-44cc-900f-bf251db9b817",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C13",
+      "claim": "Cas9-expressing MDA-MB-231 and lentiGuide constructs were gifts from Dr. Sheltzer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-expressing MDA-MB-231 and lentiGuide constructs were generous gifts of Dr. Sheltzer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the source of reagents used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "96fcf2f8-7935-433e-8c4b-cd9d67db859e",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C14",
+      "claim": "The initial studies by Wang et al. (2014) used inducible MELK knockdown in cell populations from non-clonal parental cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies used inducible MELK knockdown in cell populations from non-clonal parental cell lines (Wang et al., 2014), in contrast to MELK-null clonal derivatives (Lin et al., 2017; Giuliano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the authors' previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "c8ee1e4b-bd0b-4e8b-a357-d07c06524250",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C15",
+      "claim": "Lin et al. (2017) used MELK-null clonal derivatives in their studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies used inducible MELK knockdown in cell populations from non-clonal parental cell lines (Wang et al., 2014), in contrast to MELK-null clonal derivatives (Lin et al., 2017; Giuliano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references the methodology used in a previous publication by Lin et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "b478de11-5c68-4c93-8f94-5c5e2aaf1282",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C16",
+      "claim": "Giuliano et al. (2018) used MELK-null clonal derivatives in their studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies used inducible MELK knockdown in cell populations from non-clonal parental cell lines (Wang et al., 2014), in contrast to MELK-null clonal derivatives (Lin et al., 2017; Giuliano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references the methodology used in a previous publication by Giuliano et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "fee8b570-737b-4242-a2e4-20f04fc84461",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C17",
+      "claim": "MELK CRISPR knockout clonal sub-lines show notable variation in proliferative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently derived a number of MELK CRISPR knockout clonal sub-lines, and observed notable variation in proliferative capacity with some MELK-null clones proliferating at comparable rate to parental cells and others much slower (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "2c7867dc-ffe7-42f1-8d90-b88cd0501e74",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C18",
+      "claim": "Some MELK-null clones proliferate at comparable rate to parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently derived a number of MELK CRISPR knockout clonal sub-lines, and observed notable variation in proliferative capacity with some MELK-null clones proliferating at comparable rate to parental cells and others much slower (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "942d6725-3994-44b6-a1d6-649b740cf250",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C19",
+      "claim": "Some MELK-null clones proliferate much slower than parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently derived a number of MELK CRISPR knockout clonal sub-lines, and observed notable variation in proliferative capacity with some MELK-null clones proliferating at comparable rate to parental cells and others much slower (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "482f0916-cd10-4b50-a32d-939e1977983c",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C20",
+      "claim": "Clonal sub-lines are likely enriched for sub-populations that are MELK-independent or have adapted to MELK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that MELK may be essential for clonogenic growth as described above, clonal sub-lines are likely enriched for sub-populations that are MELK-independent or have adapted to its depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that MELK is essential for clonogenic growth but some clonal sub-lines can proliferate without MELK.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "72d72d34-52a5-4b4f-be81-740f0761b8f0",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C21",
+      "claim": "The original studies by Wang et al. were primarily based on RNAi-mediated MELK depletion experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our original studies were primarily based on RNAi-mediated MELK depletion experiments, whereas newer studies utilized CRISPR-Cas9 technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the authors' previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "4b15c9e1-5ef7-497d-91c3-322369a6fa0c",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C22",
+      "claim": "Newer studies on MELK utilized CRISPR-Cas9 technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our original studies were primarily based on RNAi-mediated MELK depletion experiments, whereas newer studies utilized CRISPR-Cas9 technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in more recent studies on MELK.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "b83352da-bc3e-485a-b26c-66e5f37582e0",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C23",
+      "claim": "The shRNA reagents used in the original studies have substantial off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In hindsight, we must acknowledge that these shRNA reagents, which were state-of-the-art at the time, have substantial off-target effects, and that these off-target effects may have contributed to their anti-proliferative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an acknowledgment by the authors based on current understanding of shRNA technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "7b5b41a9-7619-478a-9a51-cf41878dd351",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C24",
+      "claim": "The shRNA reagents used were state-of-the-art at the time of the original studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In hindsight, we must acknowledge that these shRNA reagents, which were state-of-the-art at the time, have substantial off-target effects, and that these off-target effects may have contributed to their anti-proliferative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement by the authors about the historical context of their methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "58cf587b-07f5-4988-8d64-6b8ecbdcc80d",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C25",
+      "claim": "Off-target effects of shRNA reagents may have contributed to the anti-proliferative effects observed in the original studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In hindsight, we must acknowledge that these shRNA reagents, which were state-of-the-art at the time, have substantial off-target effects, and that these off-target effects may have contributed to their anti-proliferative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation by the authors about potential confounding factors in their original studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "5ccf28d0-58c1-4617-9cc0-ae093033730b",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C26",
+      "claim": "The effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK (Wang et al., 2014; Janostiak et al., 2017), indicating that on-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Wang et al., 2014 and Janostiak et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "4ed4dee7-7184-43ec-91f8-4a22b11dd771",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C27",
+      "claim": "Wang et al., 2014 showed that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK (Wang et al., 2014; Janostiak et al., 2017), indicating that on-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references experimental data from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "cfb99c5c-60a5-4d76-bb14-94bf45057973",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C28",
+      "claim": "Janostiak et al., 2017 showed that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK (Wang et al., 2014; Janostiak et al., 2017), indicating that on-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references experimental data from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "d552fb62-8257-47b0-9369-a12c842d2ee0",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C29",
+      "claim": "On-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed in shRNA experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the effects of MELK-targeting shRNAs can be rescued by re-expression of shRNA-resistant MELK (Wang et al., 2014; Janostiak et al., 2017), indicating that on-target MELK depletion contributed, at least in part, to the anti-proliferative effects observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from rescue experiments showing that shRNA-resistant MELK can reverse the effects of MELK-targeting shRNAs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "4485200b-9b64-47e8-b08e-d46d1230c813",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C30",
+      "claim": "Compounds targeting MELK (OTSSP167, HTH-01-091) have a spectrum of other targets besides MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that compounds targeting MELK (OTSSP167, HTH-01-091), like all chemical inhibitors, have a spectrum of other targets (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by findings from Huang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "8b015e9a-852b-4d3f-bcd5-d625deadcb19",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C31",
+      "claim": "Huang et al., 2017 found that compounds targeting MELK (OTSSP167, HTH-01-091) have a spectrum of other targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that compounds targeting MELK (OTSSP167, HTH-01-091), like all chemical inhibitors, have a spectrum of other targets (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references findings from a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "289d9ffb-201c-4b56-b1ce-1f78fdf71a5a",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C32",
+      "claim": "All chemical inhibitors have a spectrum of other targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that compounds targeting MELK (OTSSP167, HTH-01-091), like all chemical inhibitors, have a spectrum of other targets (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge about the nature of chemical inhibitors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "cd40c9a2-874f-4b9a-aaf1-479e175f02b3",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C33",
+      "claim": "The off-target effects of MELK inhibitors bring inevitable complexities to studies utilizing these compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This brings inevitable complexities to studies utilizing MELK inhibitors, and likely explains the persistence of their anti-proliferative effects upon MELK depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observation that MELK inhibitors have off-target effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "bdc67fe1-2eb0-46e5-bdc1-484d8eba0e6d",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C34",
+      "claim": "Off-target effects of MELK inhibitors likely explain the persistence of their anti-proliferative effects upon MELK depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This brings inevitable complexities to studies utilizing MELK inhibitors, and likely explains the persistence of their anti-proliferative effects upon MELK depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the observation that MELK inhibitors continue to have anti-proliferative effects even when MELK is depleted.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "7dfc7bed-8af1-491d-98eb-1d7c0b4ea092",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C35",
+      "claim": "Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system from LI-COR Biosciences.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system (LI-COR Biosciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methodology and equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "694a4d32-6562-4888-8bac-709ce2766b7e",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C36",
+      "claim": "MDA-MB-468 MELK-knockout clonal sub-lines (E3, C7, and C9) show different proliferation patterns compared to wild-type parental cells under clonogenic growth conditions.",
+      "claim_type": "IMPLICIT",
+      "source": "Proliferation of MDA-MB-468 wild-type parental cells, MELK wild-type (E9) and MELK-knockout (E3, C7, and C9) clonal sub-lines under clonogenic growth conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is implied by the presentation of proliferation data for different cell lines in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "b040886c-a238-40da-b785-c071017c95c5",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "claim_id": "C37",
+      "claim": "MELK protein expression is absent in MELK-knockout clonal sub-lines (E3, C7, C9) but present in parental and MELK wild-type (E9) MDA-MB-468 cells.",
+      "claim_type": "IMPLICIT",
+      "source": "Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system (LI-COR Biosciences).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is inferred from the Western blot image in Figure 1B showing MELK protein bands in parental and E9 cells but not in E3, C7, and C9 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MELK dependency in MDA-MB-231 cells is context-dependent, being necessary for proliferation under clonogenic (low-density) conditions but dispensable under high-density culture conditions. This reconciles conflicting findings from previous studies (Wang et al. 2014, Tour\u00e9 et al. 2016 vs. Lin et al. 2017, Huang et al. 2017) by demonstrating that growth density is a critical determinant of MELK essentiality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide converging experimental evidence using reagents from multiple sources (including Dr. Sheltzer's group) showing density-dependent MELK essentiality in MDA-MB-231 cells. Figure 1A clearly demonstrates differential effects at 250 vs. 25,000 cells/well with appropriate imaging timepoints (11 vs. 3 days). The methodology is adequately described with proper controls and imaging equipment specified. The result successfully reproduces and reconciles previously conflicting findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MELK CRISPR knockout clonal sub-lines show heterogeneous proliferative capacity, with some clones proliferating comparably to parental cells and others much slower. This variation suggests that clonal selection may enrich for MELK-independent sub-populations or cells that have adapted to MELK loss, potentially explaining discrepancies between studies using non-clonal knockdown versus clonal knockout approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C17-C19 and C36-C37 demonstrate clonal heterogeneity in Figure 1B with proper MELK knockout validation by Western blot. However, claim C20's interpretation that clones are 'enriched for MELK-independent or adapted populations' is speculative without direct evidence of pre-existing heterogeneity versus adaptation. The manuscript lacks time-course data, single-cell analysis, or rescue experiments in the slow-growing clones to distinguish these mechanisms. Additional experiments are needed to support the proposed explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The original Wang et al. (2014) studies using shRNA-mediated MELK depletion had substantial off-target effects that may have contributed to observed anti-proliferative effects. However, rescue experiments with shRNA-resistant MELK demonstrate that on-target MELK depletion contributed at least partially to the phenotype, indicating the original findings were not entirely artifactual.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 provide a balanced assessment acknowledging both off-target effects of shRNA reagents (C23, C25) and on-target contributions validated by rescue experiments (C26-C29). The rescue data from Wang et al. 2014 and Janostiak et al. 2017 provides critical evidence that MELK depletion itself has biological effects. This represents appropriate scientific self-correction while defending the partial validity of original findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "ffbd5ddc-d66a-4340-a39f-41264dc36689",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MELK-targeting chemical inhibitors (OTSSP167, HTH-01-091) have off-target effects that likely explain their persistent anti-proliferative activity even upon MELK genetic depletion. This polypharmacology is characteristic of small molecule kinase inhibitors and complicates interpretation of studies using these compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 appropriately acknowledge the well-established limitation that kinase inhibitors have multiple targets (C32 reflects general knowledge). The citation of Huang et al. 2017 (C31) provides experimental evidence for off-target effects of these specific MELK inhibitors. The inference that off-target effects explain persistent activity upon MELK depletion (C34) is logical and consistent with pharmacological principles, though the manuscript does not present new data on this point.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    },
+    {
+      "id": "3ff9ebcf-a2ff-4210-8ab3-de72dc4ec328",
+      "content_id": "402fad7f-1c97-44db-a3c0-ba36cfbcbd5e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Western blot detection of MELK protein was performed using the Odyssey CLx infrared imaging system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is a straightforward methodological detail that is adequately documented. The imaging system is appropriate for Western blot detection and is properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:38:56.357445Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3454178e-5510-4042-bed2-1ff72b36706c",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "579bf6ae-6574-4d42-8bc2-4c066bdf8032",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "4e006c63-da1d-467f-a208-0ff8912323d3",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "ef77799f-311b-4bf9-8996-f2b29ccae794",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "03571e12-e90c-4422-9dfa-0e5931ed8aee",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "82d16795-b265-46a2-beef-29b25da956f2",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "6db8c3e0-cde4-4b0b-b803-c9b7d55780e4",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "496367ce-9ec3-4faf-8186-d98b5ba137c5",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "aeffd28a-1610-4704-abc8-d7927cc845d9",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "aa4d8e89-6052-4136-be7a-99468a2af694",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "4b2c452f-0cc2-4306-a01e-dd3de68b7c5d",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "048739b7-1bf7-4e00-b840-4223a2aa6a1d",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "f5ecb580-b594-44cc-900f-bf251db9b817",
+      "result_id": "98bf9373-1d77-40b2-afb6-1c1aed8b9c32"
+    },
+    {
+      "claim_id": "96fcf2f8-7935-433e-8c4b-cd9d67db859e",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "c8ee1e4b-bd0b-4e8b-a357-d07c06524250",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "b478de11-5c68-4c93-8f94-5c5e2aaf1282",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "fee8b570-737b-4242-a2e4-20f04fc84461",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "2c7867dc-ffe7-42f1-8d90-b88cd0501e74",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "942d6725-3994-44b6-a1d6-649b740cf250",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "482f0916-cd10-4b50-a32d-939e1977983c",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "694a4d32-6562-4888-8bac-709ce2766b7e",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "b040886c-a238-40da-b785-c071017c95c5",
+      "result_id": "914a37c8-9a99-40ab-8d37-36fa49a3e90a"
+    },
+    {
+      "claim_id": "72d72d34-52a5-4b4f-be81-740f0761b8f0",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "4b15c9e1-5ef7-497d-91c3-322369a6fa0c",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "b83352da-bc3e-485a-b26c-66e5f37582e0",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "7b5b41a9-7619-478a-9a51-cf41878dd351",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "58cf587b-07f5-4988-8d64-6b8ecbdcc80d",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "5ccf28d0-58c1-4617-9cc0-ae093033730b",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "4ed4dee7-7184-43ec-91f8-4a22b11dd771",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "cfb99c5c-60a5-4d76-bb14-94bf45057973",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "d552fb62-8257-47b0-9369-a12c842d2ee0",
+      "result_id": "6480e9c3-c04d-4c8a-99cb-85b0f4f399a6"
+    },
+    {
+      "claim_id": "4485200b-9b64-47e8-b08e-d46d1230c813",
+      "result_id": "ffbd5ddc-d66a-4340-a39f-41264dc36689"
+    },
+    {
+      "claim_id": "8b015e9a-852b-4d3f-bcd5-d625deadcb19",
+      "result_id": "ffbd5ddc-d66a-4340-a39f-41264dc36689"
+    },
+    {
+      "claim_id": "289d9ffb-201c-4b56-b1ce-1f78fdf71a5a",
+      "result_id": "ffbd5ddc-d66a-4340-a39f-41264dc36689"
+    },
+    {
+      "claim_id": "cd40c9a2-874f-4b9a-aaf1-479e175f02b3",
+      "result_id": "ffbd5ddc-d66a-4340-a39f-41264dc36689"
+    },
+    {
+      "claim_id": "bdc67fe1-2eb0-46e5-bdc1-484d8eba0e6d",
+      "result_id": "ffbd5ddc-d66a-4340-a39f-41264dc36689"
+    },
+    {
+      "claim_id": "7dfc7bed-8af1-491d-98eb-1d7c0b4ea092",
+      "result_id": "3ff9ebcf-a2ff-4210-8ab3-de72dc4ec328"
+    }
+  ],
+  "comparisons": []
+}

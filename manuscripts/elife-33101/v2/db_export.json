@@ -1,0 +1,1856 @@
+{
+  "submission": {
+    "id": "090fa411-0b3c-43a9-b66e-c32618eebf3f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:21:35.689296Z",
+    "updated_at": "2025-12-01T23:21:35.689296Z"
+  },
+  "content": [
+    {
+      "id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "submission_id": "090fa411-0b3c-43a9-b66e-c32618eebf3f",
+      "content_type": "manuscript",
+      "content_text": "# Architecture of the human mTORC2 core complex\n\n## Authors\n\n- Edward Stuttfeld<sup>1</sup> ([ORCID: 0000-0003-3932-9076](https://orcid.org/0000-0003-3932-9076))\n- Christopher HS Aylett<sup>2</sup> ([ORCID: 0000-0003-0662-6664](https://orcid.org/0000-0003-0662-6664))\n- Stefan Imseng<sup>1</sup>\n- Daniel Boehringer<sup>2</sup>\n- Alain Scaiola<sup>2</sup> ([ORCID: 0000-0003-3233-3910](https://orcid.org/0000-0003-3233-3910))\n- Evelyn Sauer<sup>1</sup>\n- Michael N Hall<sup>1</sup> \u2020\n- Timm Maier<sup>1</sup> ([ORCID: 0000-0002-7459-1363](https://orcid.org/0000-0002-7459-1363)) \u2020\n- Nenad Ban<sup>2</sup> ([ORCID: 0000-0002-9527-210X](https://orcid.org/0000-0002-9527-210X)) \u2020\n\n### Affiliations\n\n1. Biozentrum University of Basel Basel Switzerland\n2. Institute for Molecular Biology and Biophysics Z\u00fcrich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mammalian target of rapamycin (mTOR) is a key protein kinase controlling cellular metabolism and growth. It is part of the two structurally and functionally distinct multiprotein complexes mTORC1 and mTORC2. Dysregulation of mTOR occurs in diabetes, cancer and neurological disease. We report the architecture of human mTORC2 at intermediate resolution, revealing a conserved binding site for accessory proteins on mTOR and explaining the structural basis for the rapamycin insensitivity of the complex.\n\n## Introduction\n\nThe serine/threonine kinase mammalian target of rapamycin (mTOR) is the master regulator of cellular growth (Saxton and Sabatini, 2017). Originally identified in yeast as TOR (Heitman et al., 1991; Kunz et al., 1993), the mammalian orthologue mTOR senses a range of cellular cues, including nutrient and energy availability, and growth factor signals, to control metabolism and autophagy (Laplante and Sabatini, 2012; Loewith and Hall, 2011; Saxton and Sabatini, 2017). Due to its role as a central controller of cell growth, aberrant mTOR signaling is observed in major diseases (Dazert and Hall, 2011; Saxton and Sabatini, 2017). mTOR is a member of the phosphatidylinositol-kinase-related kinase (PIKK) family (Keith and Schreiber, 1995) and exerts its function as the enzymatic component of two distinct protein complexes, mTOR complex (mTORC) one and mTORC2. Together with the small protein mLST8, mTOR forms the core of both complexes (Kim et al., 2003; Loewith et al., 2002). The protein Raptor is unique to mTORC1 (Hara et al., 2002; Kim et al., 2002), whereas the proteins Rictor and SIN1 are defining subunits of mTORC2 (Frias et al., 2006; Jacinto et al., 2006; Jacinto et al., 2004; Sarbassov et al., 2004; Yang et al., 2006). Additionally, Protor-1/2 and Deptor can bind to mTORC2 (Pearce et al., 2007; Peterson et al., 2009). The polyketide rapamycin, in complex with the endogenous protein FKBP12, inhibits mTORC1 activity by binding the FKBP-rapamycin (FRB) domain of mTOR (Aylett et al., 2016; Yang et al., 2013). In contrast, the FKBP-rapamycin complex is unable to bind mTORC2\u00a0(Jacinto et al., 2004), although prolonged rapamycin treatment disrupts mTORC2 signaling by preventing mTOR incorporation into mTORC2 (Lamming et al., 2012; Sarbassov et al., 2006). mTORC2 is activated by growth factors, in particular through the insulin/PI3K signaling pathway (Saxton and Sabatini, 2017). The major substrates of mTORC2 are the AGC-kinase family members Akt, SGK-1 and PKC-\u03b1 (Garc\u00eda-Mart\u00ednez and Alessi, 2008; Ikenoue et al., 2008; Sarbassov et al., 2005). Biochemical analysis has revealed that mTORCs form dimeric assemblies (Wullschleger et al., 2005). The architecture of mTORC1 was resolved only recently through the use of cryo-EM and X-ray crystallography (Aylett et al., 2016; Yang et al., 2016). However, although biochemical analysis and a 26 \u00c5 EM reconstruction of yeast TORC2 have suggested that TOR and Lst8 form the same dimeric core as observed in mTORC1 (Gaubitz et al., 2015; Wullschleger et al., 2005), higher resolution information on the mTORC2 assembly remains unavailable. Structural data on mTORC2 accessory proteins are restricted to the fission yeast Sin1 CRIM domain (Tatebe et al., 2017) and the SIN1 PH domains (Pan and Matsuura, 2012).\n\n## Results and discussion\n\nWe co-expressed the core components of human mTORC2; mTOR, mLST8, Rictor, SIN1 and Protor-1, in Spodoptera frugiperda cells using the MultiBac system (Fitzgerald et al., 2006). Expression was attained for all components, and mTORC2 was captured by affinity to a FLAG tag inserted in the amino-terminal HEAT repeats of mTOR. Reconstituted complexes were purified by size-exclusion chromatography (SEC). Yields remained low (~0.1 nmol complex per 10 L culture), as mTORC2 proved labile over the course of purification, resulting in two major species of mTOR complexes eluting from SEC; mTOR-mLST8 alone and reconstituted mTORC2 complex comprising mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1, as confirmed by mass spectrometry (Figure 1\u2014figure supplement 1). Human mTORC2 demonstrated kinase activity towards the substrate Akt-1 (Figure 1\u2014figure supplement 1). mTORC2 also proved extremely labile during sample preparation for both negative staining (Figure 1\u2014figure supplement 2) and cryo-electron microscopy (cryo-EM). Stabilisation of human mTORC2, by cross-linking with glutaraldehyde using a modified gradient fixation protocol, allowed us to visualise intact, rhombic complexes. We collected cryo-EM data from stabilised samples, yielding 94 953 mTOR-dimer-containing particles for single particle analysis (Figure 1\u2014figure supplement 3). Due to the labile nature of the complex, we observed intact complexes only in thicker ice, which limited the achievable contrast. Single particle reconstruction of mTORC2 proceeded from both an ab initio model generated from negatively stained samples and from the prior structure of the Kluyveromyces marxianus TOR-Lst8 complex (Bareti\u0107 et al., 2016), yielding essentially identical results. A reconstruction of non-cross-linked mTORC2 from negatively stained grids agrees well with the cryo-EM reconstructions of cross-linked mTORC2 indicating that the cross-linking procedure preserves the native structure of the complex (Figure 1\u2014figure supplement 2). mTORC2 proved heterogeneous; refinement initiated from the K.m. TOR-Lst8 reference yielded classes encompassing free mTOR-mLST8 (30%), mTOR-mLST8 occupied on a single flank by accessory protein (52%) and a complete complex bearing accessory factors on both flanks of the mTOR dimer (18%) (Figure 1\u2014figure supplement 4). Since only a fraction of particles were of the complete complex we conclude that our mTORC2 sample dissociated prior to fixation or due to non-exhaustive cross-linking. Subsequent refinement of the complete complex with the application of C2 symmetry resolved the entire complex to 7.4 \u00c5, while a focused refinement on the accessory factor density yielded 6.2 \u00c5 resolution, based upon a gold standard FSC of 0.143 (Figure 1\u2014figure supplement 3). The resolution is likely limited by the achieved contrast in the measured micrographs and the inherent flexibility of the Rictor/SIN1 domains.\n\nThe complete human mTORC2 dimer displays a general organization similar to that we previously reported for mTORC1 (Aylett et al., 2016) (Figure 1). The previous 26 \u00c5 structure of Saccharomyces cerevisiae TORC2 was refined without symmetry because of substantial differences in the densities resolved on either side of the central cavity (Gaubitz et al., 2015) (Figure 1\u2014figure supplement 5), however, our complete mTORC2 complex is effectively identical (real-space two-fold rotated correlation\u00a0>0.9) on either side of the symmetry axis to at least 8.9 \u00c5 (the limit of resolution in C1) refined without symmetry (Figure 1 and Figure 1\u2014figure supplement 3). Both mTORC1 and mTORC2 therefore function as dimeric, C2 symmetric, complexes. The dimeric arrangement of mTOR in mTORC2 is most similar to that observed for the K.m. TOR-Lst8 (Bareti\u0107 et al., 2016) (Figure 1\u2014figure supplement 5). The FAT domains of the (m)TOR dimer in mTORC2 and TOR-Lst8 come within 6 \u00c5 of each other, contrary to the conformation of the mTOR dimer in mTORC1 that is substantially outward-rotated. The resemblance between the free mTOR dimer and the mTOR dimer found within the mTORC2 complex may account for the increased lability of mTORC2 compared to mTORC1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) The architecture of human mTORC2. The structure is shown rotated as indicated by the arrows between the panels. The accessory factor density from focused refinement is shown within the dimeric, C2-symmetric mTORC2 density in pink. (D\u2013E) The architecture of human mTORC1 (Aylett et al., 2016). The structure is shown rotated as indicated by the arrows between the panels. All complexes are shown with cryo-EM density as a grey transparent surface and the fitted structures in cartoon representation, coloured according to the primary structure schematics shown between the corresponding panels.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Size exclusion chromatography elution profile of mTORC2 from a tandem Superose 6 Increase 10/300 GL column. Peaks representing the void, mTORC2 and excess mTOR-mLST8 are labeled. SDS-PAGE analysis of the final mTORC2 sample is shown in inset. Tubulin and virus envelope protein E25 were detected by mass spectrometry as contaminants. Fractions used for the in vitro kinase activity assay are indicated with a blue and orange box. (B) In vitro kinase activity assay of recombinant mTORC2. Western blots showing the phosphorylation state of Akt-1 in the presence and absence of mTOR inhibitor Torin1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Most populated class averages (out of 80 class averages) of a 2D classification of negatively stained non-cross-linked mTORC2. In some class averages a peripheral density (arrow) is underrepresented (star). (B) Comparison of representative class averages (upper panel) with reprojections of the cryo-EM reconstruction with matching projection angles (lower panel). (C) Reconstruction of the non-cross-linked mTORC2 (orange mesh) from negatively stained grids superimposed on a down sampled cryo-EM density of the cross-linked mTORC2.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013B) Sample micrograph and its power spectrum. Thon rings visible to 3 \u00c5 are indicated. (C\u2013D) Fourier shell correlation plots for the full mTORC2 dimeric complex and the mTORC2 accessory protein region, calculated between independently refined half sets (gold-standard) (Scheres, 2012). (E\u2013F) The surface of each mTORC2 density is shown coloured according to local resolution (6 \u00c5 in blue through to 10 \u00c5 in red) (Kucukelbir et al., 2014).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The reconstructions from each round of classification, the number of particles involved in each step, and the retention of particles between stages of the classification are shown as a flow diagram. Magenta circles indicate the classes from which particles were retained at each stage, dotted half-circles indicate single-sided particles retained after subtraction of the opposing density.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) human mTORC2, (B) K.m. TOR-Lst8, (C) S.c. TORC2. Each structure is shown rotated as indicated by the arrows. The accessory factor density from focused refinement is shown within the C2-symmetric mTORC2 density. All complexes are shown with the corresponding cryo-EM density as a grey transparent surface, the fitted structures in cartoon representation, and are coloured according to the colour scheme from Figure 1.\n\nRictor makes up most (~60%) of the mass of the mTOR accessory proteins and is predicted to have an almost entirely helical secondary structure, most of which is expected to be \u03b1-solenoidal. SIN1 consists of two domains of known structure, a CRIM domain and a PH domain, neither of which form \u03b1-solenoids. While it remains impossible to definitively trace a polypeptide chain at this resolution, we were able to identify five regions of stacked \u03b1-solenoidal repeats, of which three can be resolved to the level of individual helices and two are less well ordered, that make up the majority of the density outside of the mTOR-mLST8 dimer and account for most of the elements expected to correspond to Rictor (Figure 2A). The assignment of the major density features to Rictor is confirmed by a negatively stained EM reconstruction of mTORC2 lacking Protor-1, which recapitulates density for all but one partially disordered extremus of the accessory protein region (Figure 2\u2014figure supplement 1). The most striking feature, which we dub the \u2018tower\u2019, is a well-resolved, 9/10-\u03b1-hairpin stack rising from the \u2018bridge\u2019 HEAT repeat of mTOR. This centrepiece is joined at one-third its length from the bridge by another well-resolved \u03b1-solenoid, encompassing 4/5-hairpins, which we refer to as the \u2018buttress\u2019. The buttress links the tower to a region we term the \u2018body\u2019, comprising three further repeats (9\u201311 hairpins in total) that stack against one another, with its periphery being poorly ordered. The body is only peripherally associated with the mTOR dimer. Finally, at the top of the tower, a \u2018cap\u2019 region of linked density juts out toward the mTOR active site. No large regions of non-\u03b1-solenoidal density were resolved, preventing us from assigning a location to SIN1, although a small region of non-helical density at the extremity of the cap represents the most likely candidate. This location of SIN1 would corroborate previous studies implying an interaction between SIN1 and mLST8 and a role of the SIN1 CRIM domain in recruiting substrates towards the active site of mTOR within mTORC2 (Tatebe et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig2-v2.jpg)\n\n**Figure 2.:** (A) Accessory factor density bound to the mTOR dimer. The regions of \u03b1-solenoid are indicated by surface colour, and the visible helical hairpins denoted by points (\u2018\u2022\u2019 - well-ordered regions believed to correspond to Rictor) or 5-pointed stars (\u2018*\u2019 - poorly ordered regions that cannot be definitively assigned to Rictor or Protor-1). mTOR-mLST8 is shown in cartoon representation, and the mTOR active site is indicated by a large 6-pointed\u00a0asterisk\u00a0\u2018\uff0a\u2019. (B) Schematic overview of the 3-dimensional layout of the mTORC2 complex in the same colour scheme. Well-ordered \u03b1-solenoidal repeat density, almost all of which will correspond to Rictor, makes up the tower and buttress. The cap and body each consist of less well-ordered density; the body comprises density connecting to the buttress, and is believed to contain both regions of Rictor and peripheral density belonging to Protor-1 (see Supplement 1), whereas the cap contains density continuing from the tower, which is believed to consist of regions of Rictor and possibly SIN1. (C) Superimposition of the mTORC2 density upon the mTORC1 model, indicating the clash between FKBP and the density corresponding to the cap (black arrow). (D) Comparison between the binding site (black arrow) of Raptor within mTORC1 (cartoon representation) and the corresponding binding site for the mTORC2 accessory factors (surface representation). All panels are coloured according to the scheme in Figure 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33101/elife-33101-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Negatively stained EM reconstruction of mTORC2-\u0394Protor-1 (blue mesh) superimposed on the cryo-EM reconstruction of mTORC2 (blue surface) with the accessory factor density colored red. The mTORC2-\u0394Protor-1 accessory factor density is very similar in size and shape to that in the mTORC2 cryo-EM reconstruction indicating that the \u2018tower\u2019 and \u2018buttress\u2019 structure are part of Rictor as is most of the \u2018body\u2019. Density in the mTORC2 \u2018body\u2019 absent in the mTORC2-\u0394Protor-1 reconstruction (*) might correspond to partial density for Protor-1. We note that this region corresponds to the part of S.c. TORC2 tentatively identified as Bit2/61 (Gaubitz et al., 2015).\n\nThe principal site of interaction between Rictor and the mTOR-mLST8 dimer is the juncture of the bridge and the horn, which is occupied by the base of the tower and its contact with the buttress. This is the same site occupied by the characteristic mTORC1 subunit Raptor (Figure 2C). Baretic and colleagues have established that the TOR dimer interface runs along this plane, and have shown that a partner protein is not required for TOR dimer formation (Bareti\u0107 et al., 2016). We confirm this observation for mTOR-mLST8, demonstrating that the Rictor-mTOR and Raptor-mTOR interactions can be formed only with intact mTOR dimer and are not required to stabilise the mTOR dimer. Given that the inter-subunit interfaces are completely different in the two mTOR complexes (in Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins, whereas in mTORC2 a single helix covers the length of the cleft), there must be an as yet unknown selective advantage to a dimeric architecture.\n\nAnother less well-resolved contact is the junction of the body and the free end of the bridge amino-terminal HEAT repeats within the mTOR dimer, which does not recapitulate any contact found in mTORC1. Regions of Raptor make contact with the HEAT repeat horn in the mTORC1 structure, however, the horn does not appear to make an analogous contact with any mTORC2 accessory protein. The differences between mTORC1 and mTORC2 in the mTOR-exposed surfaces of the horn region are presumably linked to their distinct modes of regulation by post-translational modifications or binding of associated protein factors.\n\nThe final major contact identified between Rictor and the mTOR dimer is near the FRB domain of mTOR. The tower \u03b1-solenoid repeat bridges the gap between the binding site at the juncture of the mTOR dimer and the FRB domain of mTOR itself, while the cap, which is connected to the tower, straddles the surface of the FRB, deepening the active site cleft of the mTOR kinase domain. Raptor similarly deepens the active site in mTORC1, but from a position directly opposite mLST8, as opposed to Rictor, which approaches from the other side of the active site. This position of the cap masks the FKBP-rapamycin binding site of mTOR, thereby explaining the rapamycin insensitivity of mTORC2 (Figure 2B). This finding is consistent with what was seen previously with yeast TORC2 (Gaubitz et al., 2015). It is tempting to conclude that this region is responsible for substrate recruitment, given its proximity to the active site, however, further study is required to confirm this.\n\nThe architecture of human mTORC2 reveals that the two mTOR complexes share many features, including the preservation of effective C2 symmetry, the common binding site for the principal accessory proteins Raptor and Rictor, the deepening of the active site cleft and the significant distance between the presumptive substrate-selection region and the active site of mTOR. While this manuscript was under revision, another publication described the architecture of yeast TORC2 at a resolution of 7.9 \u00c5 (Karuppasamy et al., 2017). The main conclusions drawn in that publication are consistent with our findings. Many important biological questions remain, in particular the reason for the requirement for C2 symmetry, and the exact identity and function of the mTORC2 domains making up the cap region. A full interpretation of human mTORC2 must await future higher-resolution studies of a more stable form of the complex.\n\n## Materials and methods\n\n### Laboratory materials\n\nUnless otherwise stipulated, Sf21 insect cell lines and media were provided by Expression Systems (Davies, USA) and Lonza (Basel, Switzerland), respectively. Cell lines have been tested negative for mycoplasma contamination using the MycoAlert mycoplasma detection kit from Lonza (Basel, Switzerland). Chromatography equipment was provided by GE Healthcare (Schenectady, USA), chemicals were provided by Sigma Aldrich (St. Louis, USA) and Applichem (Darmstadt, Germany), electron microscopy consumables were provided by Agar Scientific (Stansted, UK), and molecular graphics were generated using Chimera (Pettersen et al., 2004), Coot (Emsley et al., 2010) and PyMol (Schr\u00f6dinger LLC, New York, USA).\n\n### Cloning, expression and purification of mTORC2\n\nExpression plasmids were prepared by cloning an internal FLAG-tag into pAB2G-mTOR after Asp258, the coding sequence of Rictor into pIDK, SIN1 into pAB1G and mLST8 into pIDC. A triple pIDC expression plasmid encoding mLST8, SIN1 and Protor-1 was synthesized de novo (Genscript, Piscataway, USA). Rictor was originally amplified from myc-Rictor corrected, which was a gift from David Sabatini (Sarbassov et al., 2004) (Addgene plasmid #11367). In order to clone tandem-tomato (tdTomato) labeled SIN1, the tdTomato cDNA was amplified from tdTomato-N1 and inserted into pAB1G-SIN1 using the In-Fusion HD cloning kit (Takara Bio USA, Mountain View, USA). tdTomato-N1 was kindly provided by M. Davidson and R. Tsien (Addgene plasmid #54642).\n\nThe complex of H.s. mTORC2 was expressed in Sf21 cells using the \u2018MultiBac\u2019 Baculovirus expression system (Fitzgerald et al., 2006) (Geneva Biotech, Geneva, Switzerland). Briefly, expression plasmids encoding FLAG-tagged mTOR, Rictor and the triple expression plasmid encoding SIN1, mLST8, and Protor-1 were fused to a \u2018MultiBac\u2019 expression plasmid using Cre-recombinase (New England Biolabs, Ipswich, USA) and recombined with a bacmid for baculovirus production. In order to express mTORC2-\u0394Protor-1 the plasmids encoding Flag-tagged mTOR, Rictor and mLST8 were fused to a \u2018MultiBac\u2019 expression plasmid and recombined with a bacmid for baculovirus production. Baculovirus for the expression of tdTomato tagged SIN1 was produced separately. For the expression and purification of mTORC2-\u0394Protor-1, Sf21 cells were coinfected with baculovirus encoding Flag-mTOR, Rictor and mLST8 and baculovirus encoding SIN1-tdTomato.\n\nSf21 cells expressing mTORC2 or mTORC2-\u0394Protor-1 were harvested 72 hr post-infection and lysed in 50 mM bicine pH 8.5, 200 mM NaCl, 2 mM MgCl2 lysis buffer by sonication. The lysate was cleared by centrifugation at 234 788 \u00b7 g and then incubated with anti- DYKDDDDK agarose beads (Genscript, Piscataway, USA) for 2 hr at 4\u00b0C. The beads were washed 4 times in 50 mM bicine pH 8.5, 200 mM NaCl and bound protein was eluted with DYKDDDDK-peptide (0.6 mg/ml; Genscript, Piscataway, USA). The eluted protein was concentrated to 0.5 ml and applied to a tandem Superose 6 Increase 10/300 GL gel filtration column equilibrated in 10 mM bicine pH8.5, 150 mM NaCl, 0.5 mM EDTA, 2 mM TCEP. Fractions corresponding to mTORC2 were pooled, concentrated and directly used for further experiments.\n\n### Kinase activity assay\n\nmTORC2 kinase activity assays were conducted in 25 mM HEPES pH 7.4, 100 mM potassium acetate, 2 mM MgCl2 using Akt-1 (Jena Bioscience, Jena, Germany) as a substrate. The indicated gel filtration fractions of a mTORC2 preparation were pooled and concentrated. In a 50 \u00b5l reaction volume 8.5 \u00b5g mTORC2 or mTOR/mLST8 were mixed with 100 ng inactive Akt-1 in reaction buffer and where indicated with 20 \u00b5M Torin1. The mixture was pre-incubated for 5 min on ice, and the reaction was initiated with the addition of 50 \u00b5M ATP. After 20 min at 37\u00b0C the reaction was terminated by the addition of 12.5 \u00b5l 5x SDS loading buffer. The reactions were Western Blotted using primary antibodies against phospho-Akt-Ser473 (#4060), Akt (#4685), and mTOR (#2972; Cell Signaling Technologies, Beverly, USA) at a dilution of 1:1000. A goat anti-rabbit HRP-labeled antibody (ab6721; Abcam, Cambridge, UK) was used as the secondary antibody at a dilution of 1:3000.\n\n### Cryo-EM sample preparation and cross-linking\n\nGiven that H.s. mTORC2 proved highly labile, it was purified, fixed and quenched using a modification of the GraFix protocol (Kastner et al., 2008). Briefly, 7.5\u201327.5% (w/v) gradients were prepared from 150 mM NaCl, 15 mM NaBicine pH 8.0, 1 mM TCEP. The upper quarter of the less dense buffer was supplemented with 0.25% glutaraldehyde (Grade I), whereas the lower quarter of the denser buffer was supplemented with 150 mM NH4Cl. Samples were subjected to ultracentrifugation for 16 hr at 100 000 \u2219 g in an SW32 rotor, thereby both fixing and quenching the sample in situ, and recovered by gradient fractionation. The recovered peak was concentrated to as low a volume as possible in 100 kDa cutoff Vivaspin concentrators (Sartorius Stedim Biotech, Aubagne, France). The buffer was then exchanged three times against 150 mM NaCl, 15 mM NaBicine pH 8.0, 1 mM TCEP in order to minimise the residual sugar in the final sample.\n\n### Generation of the initial reference density\n\nA fixed sample of mTORC2 was applied to a carbon coated holey carbon grid and stained with 2% (w/v) uranyl acetate. Micrographs (33) were collected using an FEI F20 electron microscope (Thermo Fisher Scientific, Waltham, MA, USA) at a magnification of 82 000 fold, an acceleration voltage of 200 kV, and a total dose of 20 e/A2 at a defocus of between \u22120.5 and \u22122.0 \u03bcm. Particles (15 331) were selected semi-automatically using BOXER (Ludtke et al., 1999). The parameters of the contrast transfer function were then determined with CTFFIND4 (Rohou and Grigorieff, 2015). Particles were 2D-classified into 100 classes in two dimensions using RELION (Scheres, 2012) and sixteen well-defined classes were selected for initial three-dimensional reconstruction. Initial models were created using the e2initialmodel.py function in EMAN 2.1 (Tang et al., 2007), then filtered to 60 \u00c5 and used as an initial reference for gold-standard refinement. The resulting initial model (resolution 26 \u00c5, gold-standard FSC) was used for further refinement.\n\n### Negatively stained EM reconstruction of non-crosslinked mTORC2\n\nWe prepared EM samples from the peak fraction of the final Superose 6 Increase gel filtration step by negative staining. The sample was adsorbed to a freshly glow discharged thin carbon film supported on a 200 mesh copper grid and stained with 2% (w/v) uranyl acetate solution for 1 min with one additional post-staining step. The grid was imaged on a Philips CM 100 operated at 13700 fold nominal magnification at 80 kV acceleration voltage with an Olympus Veleta camera resulting in a pixel size of 5.4 \u00c5 on the specimen level. Images were acquired at a defocus between \u22120.9 and \u22121.7 \u03bcm. Particles (13879) were selected semi-automatically using BOXER (Ludtke et al., 1999). Contrast transfer function parameters were determined with CTFFIND4 (Rohou and Grigorieff, 2015). All further processing steps were done within the RELION software (Scheres, 2012). Initially, particles were classified into 50 classes followed by a second round of classification into 80 classes (Figure 1\u2014figure supplement 2). Well-defined average images were selected, and the subset of particles which contributed to these average images was chosen for further processing. An initial model was created without applying symmetry using the 3D initial model function of RELION, which utilizes a stochastic gradient descent algorithm for de novo structure determination. The initial model was refined and used in a 3D classification into three classes applying C2 symmetry. One class (1261 particles) showed well-defined density for the core and the peripheral domains (Figure 1\u2014figure supplement 2). This reconstruction (29 \u00c5 resolution) was superimposed on the cryo-EM reconstruction using UCSF CHIMERA (Pettersen et al., 2004).\n\n### mTORC2-\u0394Protor-1 negatively stained EM reconstruction\n\nWe prepared EM samples from affinity-purified mTORC2-\u0394Protor-1 by crosslinking and negative staining. Briefly, a sample of the mTORC2-\u0394Protor-1 complex was stabilised by fixation with 0.1% (v/v) glutaraldehyde for 15 min on ice. The sample was adsorbed to a thin carbon film and stained with 2% (w/v) uranyl acetate solution for 2 min with three additional post-staining steps. The sample was imaged on a Tecnai F20 electron microscope operated at 82 000 fold magnification at 200 kV acceleration voltage. Images were acquired under low dose conditions with a total dose of 20 e/\u00c52 at \u22121 to \u22122 \u03bcm defocus on a Gatan US 4 000 CCD camera. A total of 35 micrographs were selected for further processing in Relion2 (Scheres, 2012) using contrast transfer function correction with CTFFIND4 (Rohou and Grigorieff, 2015). Single particle images were picked with Relion using a gaussian picking reference. After two-dimensional classification 13 170 single particle images were selected for refinement, during which C2 symmetry was applied. The structure of the mTORC2-\u0394Protor-1 complex was refined to a final resolution of 21 \u00c5 (gold-standard FSC, 0.143 criterion) (Scheres, 2012).\n\n### Cryo-EM data collection\n\nSamples of mTORC2 were applied to holey carbon copper grids (R2/2 \u2013 Quantifoil) bearing an additional fine film of carbon. Grids were blotted for two seconds and then plunged directly into a mixture of liquid ethane (33%) and propane (67%) using a vitrobot mark 4 (Thermo Fisher Scientific, Waltham, MA, USA) at 4\u00b0C and 95% humidity. Data were recorded semi-automatically using SerialEM (Mastronarde, 2005) on a Titan Krios transmission electron microscope (Thermo Fisher Scientific, Waltham, MA, USA) equipped with a K2 Summit direct electron detector (GATAN, San Diego, USA) at 300 kV, 47 100 fold magnification and with an applied defocus of between \u22121.0 and \u22123.0 \u03bcm, resulting in 3 997 images of 3 838 by 3 710 pixels with a pixel size of 1.06 \u00c5 on the object scale. Each image was recorded as forty separate frames in electron counting mode, comprising a total exposure of 80 e-\u00c5\u22122, which were subsequently aligned, summed and weighted by dose according to the method of Grant and Grigorieff (Grant and Grigorieff, 2015) using Motioncor2 (Zheng et al., 2017) to obtain the final image.\n\n### Cryo-EM data processing and refinement\n\nPoor quality micrographs were rejected based on the diminished maximum resolution and regularity of the Thon rings observed in the power spectra. Estimation of the contrast transfer function was carried out for each image using CTFFIND4 (Rohou and Grigorieff, 2015), particles were selected using BATCHBOXER (Ludtke et al., 1999), and refinement thereafter performed using RELION (Scheres, 2012). Two cycles of two-dimensional reference-free alignment of 207 920 boxed particles into 100 classes were performed initially, and particles that did not yield high-resolution class averages were excluded from further refinement. Three-dimensional classification of the remaining 94 953 mTORC2 particles into six classes was then performed with RELION (Scheres, 2012), separating the dataset into classes without excess density (mTOR-mLST8 - 28 774), occupied on one flank (C1-mTORC2 - 48 996), and doubly occupied (C2-mTORC2 - 17 183).\n\nThe C2 particles were refined independently (gold-standard) using full-sized images, resulting in a complete symmetrical mTORC2 density map with an estimated resolution of 7.4 \u00c5 at a Fourier shell correlation of 0.143 (Scheres, 2012). Resolution was limited by the poor cryo-stability of the complex, the necessity for heavy fixation of the sample, and by conformational flexibility. Additionally, the mTOR-mLST8 core dominated the overall particle alignment, resulting in lower local resolution for the accessory proteins due to their flexibility. In order to attain the highest possible resolution of the accessory factors, the C1-mTORC2 particles and the two symmetrical sides of each C2-mTORC2 particle were refined in combination by subtracting the symmetry-related density and refining all occupied sides of the molecule in a single class, yielding a focused accessory factor density map with an estimated resolution of 6.2 \u00c5 at a Fourier shell correlation of 0.143 (Scheres, 2012).\n\n### Data and materials availability\n\nThe cryo-EM density map representing the complete structure of mTORC2 with C2 symmetry has been deposited in the EM Databank under accession code EMDB ID EMD-3927. The density corresponding to the focused refinement on the accessory proteins of mTORC2 has been deposited in the EM Databank under accession code EMDB ID EMD-3928.\n",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "91d11c8a-b6c6-438a-80c2-91d48beb3029",
+      "submission_id": "090fa411-0b3c-43a9-b66e-c32618eebf3f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33101.017](https://doi.org/10.7554/eLife.33101.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Architecture of the Human mTORC2 Core Complex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Kun-Liang Guan (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports the structure of the human mTORC2 complex at intermediate resolution. The structural information reveals similarities of mTOR between mTORC1 and mTORC2 in their interactions with other subunits. Importantly, the study provides molecular basis explaining why mTORC2 is resistant to inhibition by the FKBP12-rapamycin. Therefore, this report makes an important step forward towards the molecular understanding of mTORC2 function and regulation.\n\nEssential revisions:\n\n1) The resolution of the mTOR2 is rather low considering the currently available instrumentation and technology. Specifically, the use of only 100K particles is unusually low for such projects. Assuming that a better resolution has not been achieved since the submission of the paper, a discussion about the technical limitations that hindered the achievement of a better resolution is necessary.\n\n2) Can the authors provide some evidence that non cross-linked samples assume similar architecture to the presented structure? Even some noisy negative stain averages would go a long way towards convincing that cross-linking did not affect the particle architecture.\n\n3) It is unclear how the focused refinement improved the map features \u2013 do the authors observe an improvement in features or does the improvement in value merely reflect the increase in the number of projections used?\n\n4) The parameters reported for negative stain data collection are very similar to those used for cryo-EM. Might this be an error?\n\n5) The authors state that \"[\u2026]our mTORC2 samples underwent partial fragmentation to yield successively less-occupied products during freezing.\" Do the authors mean that the complex dissociated during blotting prior to vitrification? How is this the case since the sample was cross-linked?\n\n6) Recent findings from the cryo-EM structure of S. cerevisiae TORC2 (Karuppasamy et al., 2017) are also in line with some of the findings here and should therefore be mentioned in the Discussion.\n\n7) A better schematic representation that includes the terminologies they used such as tower, bridge, horn, cap etc. should be included to better orient the reader. Is the \"cap\" part of rictor?\n",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08759a0a-2746-4f96-b116-7e49d9cc8fcb",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C1",
+      "claim": "mTOR is a key protein kinase controlling cellular metabolism and growth",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian target of rapamycin (mTOR) is a key protein kinase controlling cellular metabolism and growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about mTOR function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "ee0c34f8-8d62-44cf-a480-46ee57607ace",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C2",
+      "claim": "mTOR is part of two structurally and functionally distinct multiprotein complexes mTORC1 and mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "It is part of the two structurally and functionally distinct multiprotein complexes mTORC1 and mTORC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "bdf98453-9209-443e-a8dc-65ed584e01d5",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C3",
+      "claim": "Dysregulation of mTOR occurs in diabetes, cancer and neurological disease",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of mTOR occurs in diabetes, cancer and neurological disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "74439f42-f9c5-46fa-b3ca-b95d2851b6df",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C4",
+      "claim": "The architecture of human mTORC2 was determined at intermediate resolution",
+      "claim_type": "EXPLICIT",
+      "source": "We report the architecture of human mTORC2 at intermediate resolution, revealing a conserved binding site for accessory proteins on mTOR and explaining the structural basis for the rapamycin insensitivity of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding reported in the abstract, supported by the cryo-EM data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "67bcef48-f17f-45c4-94aa-58d441f6c1f0",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C5",
+      "claim": "Human mTORC2 structure reveals a conserved binding site for accessory proteins on mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "We report the architecture of human mTORC2 at intermediate resolution, revealing a conserved binding site for accessory proteins on mTOR and explaining the structural basis for the rapamycin insensitivity of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the structural analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "e828bc42-5662-4655-8c35-04e6fa20adfe",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C6",
+      "claim": "The structure explains the structural basis for the rapamycin insensitivity of mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "We report the architecture of human mTORC2 at intermediate resolution, revealing a conserved binding site for accessory proteins on mTOR and explaining the structural basis for the rapamycin insensitivity of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the structural analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "dd3e8a37-8373-4630-9602-a82cebfd248b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C7",
+      "claim": "mTOR is the master regulator of cellular growth",
+      "claim_type": "EXPLICIT",
+      "source": "The serine/threonine kinase mammalian target of rapamycin (mTOR) is the master regulator of cellular growth (Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "499c56c9-fea0-4016-8e37-e3be5e489a1a",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C8",
+      "claim": "TOR was originally identified in yeast",
+      "claim_type": "EXPLICIT",
+      "source": "Originally identified in yeast as TOR (Heitman et al., 1991; Kunz et al., 1993), the mammalian orthologue mTOR senses a range of cellular cues, including nutrient and energy availability, and growth factor signals, to control metabolism and autophagy (Laplante and Sabatini, 2012; Loewith and Hall, 2011; Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support from the original discovery papers",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "47be5b79-318a-46cb-8433-f33d83fa5b98",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C9",
+      "claim": "mTOR senses nutrient and energy availability and growth factor signals to control metabolism and autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "Originally identified in yeast as TOR (Heitman et al., 1991; Kunz et al., 1993), the mammalian orthologue mTOR senses a range of cellular cues, including nutrient and energy availability, and growth factor signals, to control metabolism and autophagy (Laplante and Sabatini, 2012; Loewith and Hall, 2011; Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "46f0d00b-69e1-490a-a3bc-3e3f5ac29cc3",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C10",
+      "claim": "Aberrant mTOR signaling is observed in major diseases",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its role as a central controller of cell growth, aberrant mTOR signaling is observed in major diseases (Dazert and Hall, 2011; Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "f24c3d50-458d-464f-88ad-08c1480cd740",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C11",
+      "claim": "mTOR is a member of the phosphatidylinositol-kinase-related kinase (PIKK) family",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR is a member of the phosphatidylinositol-kinase-related kinase (PIKK) family (Keith and Schreiber, 1995) and exerts its function as the enzymatic component of two distinct protein complexes, mTOR complex (mTORC) one and mTORC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "9c35c8cb-c253-46d8-87f2-1cceaa603c66",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C12",
+      "claim": "mTOR exerts its function as the enzymatic component of two distinct protein complexes, mTORC1 and mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR is a member of the phosphatidylinositol-kinase-related kinase (PIKK) family (Keith and Schreiber, 1995) and exerts its function as the enzymatic component of two distinct protein complexes, mTOR complex (mTORC) one and mTORC2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "7adaf3b0-c644-428c-9267-e341500f69ec",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C13",
+      "claim": "mTOR forms the core of both mTORC1 and mTORC2 together with the small protein mLST8",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the small protein mLST8, mTOR forms the core of both complexes (Kim et al., 2003; Loewith et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "4df0cc82-0f2a-45b1-b348-bc9b04c5c3bd",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C14",
+      "claim": "Raptor is unique to mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "The protein Raptor is unique to mTORC1 (Hara et al., 2002; Kim et al., 2002), whereas the proteins Rictor and SIN1 are defining subunits of mTORC2 (Frias et al., 2006; Jacinto et al., 2006; Jacinto et al., 2004; Sarbassov et al., 2004; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "fddd84c2-bedc-4a2e-9672-a4aab3eba83f",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C15",
+      "claim": "Rictor and SIN1 are defining subunits of mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "The protein Raptor is unique to mTORC1 (Hara et al., 2002; Kim et al., 2002), whereas the proteins Rictor and SIN1 are defining subunits of mTORC2 (Frias et al., 2006; Jacinto et al., 2006; Jacinto et al., 2004; Sarbassov et al., 2004; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "26a1ec97-166d-45b4-8114-64782efa6306",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C16",
+      "claim": "Protor-1/2 and Deptor can bind to mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Protor-1/2 and Deptor can bind to mTORC2 (Pearce et al., 2007; Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "4006910a-9b8d-44aa-b924-63b30eca7abb",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C17",
+      "claim": "Rapamycin in complex with FKBP12 inhibits mTORC1 activity by binding the FRB domain of mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "The polyketide rapamycin, in complex with the endogenous protein FKBP12, inhibits mTORC1 activity by binding the FKBP-rapamycin (FRB) domain of mTOR (Aylett et al., 2016; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "365e5cb1-2fc5-4420-ba4b-080c84d80447",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C18",
+      "claim": "The FKBP-rapamycin complex is unable to bind mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the FKBP-rapamycin complex is unable to bind mTORC2 (Jacinto et al., 2004), although prolonged rapamycin treatment disrupts mTORC2 signaling by preventing mTOR incorporation into mTORC2 (Lamming et al., 2012; Sarbassov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "653e9486-9187-48b5-8b36-7123ba3a54c5",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C19",
+      "claim": "Prolonged rapamycin treatment disrupts mTORC2 signaling by preventing mTOR incorporation into mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the FKBP-rapamycin complex is unable to bind mTORC2 (Jacinto et al., 2004), although prolonged rapamycin treatment disrupts mTORC2 signaling by preventing mTOR incorporation into mTORC2 (Lamming et al., 2012; Sarbassov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "7619aeb1-92c6-4692-a89d-bed33a699625",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C20",
+      "claim": "mTORC2 is activated by growth factors, particularly through the insulin/PI3K signaling pathway",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC2 is activated by growth factors, in particular through the insulin/PI3K signaling pathway (Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "09706b57-5f79-4568-afe3-4d3fb311edf5",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C21",
+      "claim": "The major substrates of mTORC2 are the AGC-kinase family members Akt, SGK-1 and PKC-\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "The major substrates of mTORC2 are the AGC-kinase family members Akt, SGK-1 and PKC-\u03b1 (Garc\u00eda-Mart\u00ednez and Alessi, 2008; Ikenoue et al., 2008; Sarbassov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "504bf020-c24a-493f-ba14-9d3988808630",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C22",
+      "claim": "mTORCs form dimeric assemblies",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analysis has revealed that mTORCs form dimeric assemblies (Wullschleger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "9f22524a-11a4-44f8-bcdf-f5db68375b1d",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C23",
+      "claim": "The architecture of mTORC1 was resolved recently through the use of cryo-EM and X-ray crystallography",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of mTORC1 was resolved only recently through the use of cryo-EM and X-ray crystallography (Aylett et al., 2016; Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "654e157a-01f7-4383-9646-151b95483ee0",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C24",
+      "claim": "Biochemical analysis and a 26 \u00c5 EM reconstruction of yeast TORC2 have suggested that TOR and Lst8 form the same dimeric core as observed in mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "However, although biochemical analysis and a 26 \u00c5 EM reconstruction of yeast TORC2 have suggested that TOR and Lst8 form the same dimeric core as observed in mTORC1 (Gaubitz et al., 2015; Wullschleger et al., 2005), higher resolution information on the mTORC2 assembly remains unavailable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "0ac4ef25-7c38-4b51-9e83-a7a471ad2b2e",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C25",
+      "claim": "Higher resolution information on the mTORC2 assembly was unavailable prior to this study",
+      "claim_type": "EXPLICIT",
+      "source": "However, although biochemical analysis and a 26 \u00c5 EM reconstruction of yeast TORC2 have suggested that TOR and Lst8 form the same dimeric core as observed in mTORC1 (Gaubitz et al., 2015; Wullschleger et al., 2005), higher resolution information on the mTORC2 assembly remains unavailable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that the current study addresses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "13133cba-50b3-47c3-bd07-d103f6a20348",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C26",
+      "claim": "Structural data on mTORC2 accessory proteins are restricted to the fission yeast Sin1 CRIM domain and the SIN1 PH domains",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data on mTORC2 accessory proteins are restricted to the fission yeast Sin1 CRIM domain (Tatebe et al., 2017) and the SIN1 PH domains (Pan and Matsuura, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "e47cb1d7-dd0e-4e3f-a866-75e04a91bf12",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C27",
+      "claim": "The core components of human mTORC2 were co-expressed in Spodoptera frugiperda cells using the MultiBac system",
+      "claim_type": "EXPLICIT",
+      "source": "We co-expressed the core components of human mTORC2; mTOR, mLST8, Rictor, SIN1 and Protor-1, in Spodoptera frugiperda cells using the MultiBac system (Fitzgerald et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "aa43a9fe-d1d9-4bb2-9b8f-0e419045c812",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C28",
+      "claim": "Expression was attained for all mTORC2 components",
+      "claim_type": "EXPLICIT",
+      "source": "Expression was attained for all components, and mTORC2 was captured by affinity to a FLAG tag inserted in the amino-terminal HEAT repeats of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "49238692-494f-48b9-8133-5bca1ebcb105",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C29",
+      "claim": "mTORC2 was captured by affinity to a FLAG tag inserted in the amino-terminal HEAT repeats of mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "Expression was attained for all components, and mTORC2 was captured by affinity to a FLAG tag inserted in the amino-terminal HEAT repeats of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "4472f68b-7a5d-4966-adbc-6663583a793a",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C30",
+      "claim": "Yields of mTORC2 remained low at approximately 0.1 nmol complex per 10 L culture",
+      "claim_type": "EXPLICIT",
+      "source": "Yields remained low (~0.1 nmol complex per 10 L culture), as mTORC2 proved labile over the course of purification, resulting in two major species of mTOR complexes eluting from SEC; mTOR-mLST8 alone and reconstituted mTORC2 complex comprising mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1, as confirmed by mass spectrometry (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by the data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "540dd8a5-7bb9-4d83-be04-24f350c0d31e",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C31",
+      "claim": "mTORC2 proved labile over the course of purification",
+      "claim_type": "EXPLICIT",
+      "source": "Yields remained low (~0.1 nmol complex per 10 L culture), as mTORC2 proved labile over the course of purification, resulting in two major species of mTOR complexes eluting from SEC; mTOR-mLST8 alone and reconstituted mTORC2 complex comprising mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1, as confirmed by mass spectrometry (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "adb50c32-eb96-4b72-b7ec-a60a8f695136",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C32",
+      "claim": "Two major species of mTOR complexes eluted from SEC: mTOR-mLST8 alone and reconstituted mTORC2 complex",
+      "claim_type": "EXPLICIT",
+      "source": "Yields remained low (~0.1 nmol complex per 10 L culture), as mTORC2 proved labile over the course of purification, resulting in two major species of mTOR complexes eluting from SEC; mTOR-mLST8 alone and reconstituted mTORC2 complex comprising mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1, as confirmed by mass spectrometry (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation confirmed by mass spectrometry data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "c540432a-e021-40ee-ac4f-e694bfc0be1b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C33",
+      "claim": "Reconstituted mTORC2 complex comprises mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1",
+      "claim_type": "EXPLICIT",
+      "source": "Yields remained low (~0.1 nmol complex per 10 L culture), as mTORC2 proved labile over the course of purification, resulting in two major species of mTOR complexes eluting from SEC; mTOR-mLST8 alone and reconstituted mTORC2 complex comprising mTOR, mLST8, Rictor, SIN1 and substoichiometric amounts of Protor-1, as confirmed by mass spectrometry (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by mass spectrometry data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "f23490f3-edc5-4bac-9cf3-998ccc630bf1",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C34",
+      "claim": "Human mTORC2 demonstrated kinase activity towards the substrate Akt-1",
+      "claim_type": "EXPLICIT",
+      "source": "Human mTORC2 demonstrated kinase activity towards the substrate Akt-1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "1ceb2bfd-d89f-4c52-906c-06c2c08cc7d6",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C35",
+      "claim": "mTORC2 proved extremely labile during sample preparation for both negative staining and cryo-electron microscopy",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC2 also proved extremely labile during sample preparation for both negative staining (Figure 1\u2014figure supplement 2) and cryo-electron microscopy (cryo-EM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "3abd46d5-ff27-4ae7-a9a6-7d52f84bca1a",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C36",
+      "claim": "Stabilisation of human mTORC2 by cross-linking with glutaraldehyde using a modified gradient fixation protocol allowed visualization of intact, rhombic complexes",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilisation of human mTORC2, by cross-linking with glutaraldehyde using a modified gradient fixation protocol, allowed us to visualise intact, rhombic complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method and its result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "2252e791-56b0-44aa-8518-81adfae11322",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C37",
+      "claim": "94,953 mTOR-dimer-containing particles were collected for single particle analysis",
+      "claim_type": "EXPLICIT",
+      "source": "We collected cryo-EM data from stabilised samples, yielding 94 953 mTOR-dimer-containing particles for single particle analysis (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "1536eb7b-2f5c-4624-901f-b6cf2ca86fec",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C38",
+      "claim": "Intact mTORC2 complexes were observed only in thicker ice, which limited the achievable contrast",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the labile nature of the complex, we observed intact complexes only in thicker ice, which limited the achievable contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation explaining a limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "d4b36f40-2664-48de-bf54-7b2eec56e31b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C39",
+      "claim": "Single particle reconstruction of mTORC2 proceeded from both an ab initio model generated from negatively stained samples and from the prior structure of the Kluyveromyces marxianus TOR-Lst8 complex, yielding essentially identical results",
+      "claim_type": "EXPLICIT",
+      "source": "Single particle reconstruction of mTORC2 proceeded from both an ab initio model generated from negatively stained samples and from the prior structure of the Kluyveromyces marxianus TOR-Lst8 complex (Bareti\u0107 et al., 2016), yielding essentially identical results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method and its result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "893750b9-89c9-49be-bdea-b8479c089c23",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C40",
+      "claim": "A reconstruction of non-cross-linked mTORC2 from negatively stained grids agrees well with the cryo-EM reconstructions of cross-linked mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "A reconstruction of non-cross-linked mTORC2 from negatively stained grids agrees well with the cryo-EM reconstructions of cross-linked mTORC2 indicating that the cross-linking procedure preserves the native structure of the complex (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "766f643f-0ec6-4f56-b3f0-c6e05856c714",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C41",
+      "claim": "The cross-linking procedure preserves the native structure of mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "A reconstruction of non-cross-linked mTORC2 from negatively stained grids agrees well with the cryo-EM reconstructions of cross-linked mTORC2 indicating that the cross-linking procedure preserves the native structure of the complex (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the agreement between cross-linked and non-cross-linked structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "812101e5-3da6-4244-a946-0bcae68f4391",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C42",
+      "claim": "mTORC2 proved heterogeneous with 30% free mTOR-mLST8, 52% mTOR-mLST8 occupied on a single flank by accessory protein, and 18% complete complex bearing accessory factors on both flanks",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC2 proved heterogeneous; refinement initiated from the K.m. TOR-Lst8 reference yielded classes encompassing free mTOR-mLST8 (30%), mTOR-mLST8 occupied on a single flank by accessory protein (52%) and a complete complex bearing accessory factors on both flanks of the mTOR dimer (18%) (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from classification analysis shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "fb39725c-ca9c-4da5-a69e-bd811179bed9",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C43",
+      "claim": "The mTORC2 sample dissociated prior to fixation or due to non-exhaustive cross-linking",
+      "claim_type": "EXPLICIT",
+      "source": "Since only a fraction of particles were of the complete complex we conclude that our mTORC2 sample dissociated prior to fixation or due to non-exhaustive cross-linking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the heterogeneity observed in the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "99c47d12-9008-433f-8542-8e993bb74754",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C44",
+      "claim": "Refinement of the complete complex with C2 symmetry resolved the entire complex to 7.4 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent refinement of the complete complex with the application of C2 symmetry resolved the entire complex to 7.4 \u00c5, while a focused refinement on the accessory factor density yielded 6.2 \u00c5 resolution, based upon a gold standard FSC of 0.143 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the cryo-EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "5d012a7b-f0fd-4012-adaa-82ae6a585714",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C45",
+      "claim": "Focused refinement on the accessory factor density yielded 6.2 \u00c5 resolution",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent refinement of the complete complex with the application of C2 symmetry resolved the entire complex to 7.4 \u00c5, while a focused refinement on the accessory factor density yielded 6.2 \u00c5 resolution, based upon a gold standard FSC of 0.143 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the cryo-EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "9149ccdc-284e-44c3-b457-a6b19c41a85f",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C46",
+      "claim": "The resolution is likely limited by the achieved contrast in the measured micrographs and the inherent flexibility of the Rictor/SIN1 domains",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution is likely limited by the achieved contrast in the measured micrographs and the inherent flexibility of the Rictor/SIN1 domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the factors limiting resolution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "d1028127-9150-4aa4-9f48-eb0927450c83",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C47",
+      "claim": "The complete human mTORC2 dimer displays a general organization similar to that previously reported for mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "The complete human mTORC2 dimer displays a general organization similar to that we previously reported for mTORC1 (Aylett et al., 2016) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on the structural data shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "4ed8d8c6-e728-45b4-ab36-32c95d5e0649",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C48",
+      "claim": "The previous 26 \u00c5 structure of Saccharomyces cerevisiae TORC2 was refined without symmetry because of substantial differences in the densities resolved on either side of the central cavity",
+      "claim_type": "EXPLICIT",
+      "source": "The previous 26 \u00c5 structure of Saccharomyces cerevisiae TORC2 was refined without symmetry because of substantial differences in the densities resolved on either side of the central cavity (Gaubitz et al., 2015) (Figure 1\u2014figure supplement 5), however, our complete mTORC2 complex is effectively identical (real-space two-fold rotated correlation >0.9) on either side of the symmetry axis to at least 8.9 \u00c5 (the limit of resolution in C1) refined without symmetry (Figure 1 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "5356cca9-9313-4612-8d13-04ec1ca51bc7",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C49",
+      "claim": "The complete human mTORC2 complex is effectively identical on either side of the symmetry axis to at least 8.9 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "The previous 26 \u00c5 structure of Saccharomyces cerevisiae TORC2 was refined without symmetry because of substantial differences in the densities resolved on either side of the central cavity (Gaubitz et al., 2015) (Figure 1\u2014figure supplement 5), however, our complete mTORC2 complex is effectively identical (real-space two-fold rotated correlation >0.9) on either side of the symmetry axis to at least 8.9 \u00c5 (the limit of resolution in C1) refined without symmetry (Figure 1 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "40c8c551-2c52-4292-bf53-a634f72e3312",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C50",
+      "claim": "Both mTORC1 and mTORC2 function as dimeric, C2 symmetric, complexes",
+      "claim_type": "EXPLICIT",
+      "source": "Both mTORC1 and mTORC2 therefore function as dimeric, C2 symmetric, complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "d26faab4-4880-4892-b07f-34f9f33d786f",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C51",
+      "claim": "The dimeric arrangement of mTOR in mTORC2 is most similar to that observed for the K.m. TOR-Lst8",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric arrangement of mTOR in mTORC2 is most similar to that observed for the K.m. TOR-Lst8 (Bareti\u0107 et al., 2016) (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on structural data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "5bc3480b-638a-401a-9162-ab5cd6c87dcc",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C52",
+      "claim": "The FAT domains of the mTOR dimer in mTORC2 and TOR-Lst8 come within 6 \u00c5 of each other",
+      "claim_type": "EXPLICIT",
+      "source": "The FAT domains of the (m)TOR dimer in mTORC2 and TOR-Lst8 come within 6 \u00c5 of each other, contrary to the conformation of the mTOR dimer in mTORC1 that is substantially outward-rotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "78fec855-fb05-4715-bed3-e7307ed1933f",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C53",
+      "claim": "The conformation of the mTOR dimer in mTORC1 is substantially outward-rotated compared to mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "The FAT domains of the (m)TOR dimer in mTORC2 and TOR-Lst8 come within 6 \u00c5 of each other, contrary to the conformation of the mTOR dimer in mTORC1 that is substantially outward-rotated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "dd5b10cf-6f08-425c-9cca-ed3743d5d464",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C54",
+      "claim": "The resemblance between the free mTOR dimer and the mTOR dimer found within the mTORC2 complex may account for the increased lability of mTORC2 compared to mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "The resemblance between the free mTOR dimer and the mTOR dimer found within the mTORC2 complex may account for the increased lability of mTORC2 compared to mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "9d76de9b-3a9a-4763-9cf4-86c6adb1e2a6",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C55",
+      "claim": "Rictor makes up most (~60%) of the mass of the mTOR accessory proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Rictor makes up most (~60%) of the mass of the mTOR accessory proteins and is predicted to have an almost entirely helical secondary structure, most of which is expected to be \u03b1-solenoidal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of protein composition and structure prediction",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "248df483-44f3-45f1-ac2e-923be16ab499",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C56",
+      "claim": "Rictor is predicted to have an almost entirely helical secondary structure, most of which is expected to be \u03b1-solenoidal",
+      "claim_type": "EXPLICIT",
+      "source": "Rictor makes up most (~60%) of the mass of the mTOR accessory proteins and is predicted to have an almost entirely helical secondary structure, most of which is expected to be \u03b1-solenoidal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structure prediction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "2eb15e14-851d-449c-9bab-4de8ddba19cf",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C57",
+      "claim": "SIN1 consists of two domains of known structure, a CRIM domain and a PH domain, neither of which form \u03b1-solenoids",
+      "claim_type": "EXPLICIT",
+      "source": "SIN1 consists of two domains of known structure, a CRIM domain and a PH domain, neither of which form \u03b1-solenoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known structural information about SIN1",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "942eda9e-a2aa-4c75-bc9a-8395379e35c8",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C58",
+      "claim": "Five regions of stacked \u03b1-solenoidal repeats were identified in the accessory protein density, of which three can be resolved to the level of individual helices and two are less well ordered",
+      "claim_type": "EXPLICIT",
+      "source": "While it remains impossible to definitively trace a polypeptide chain at this resolution, we were able to identify five regions of stacked \u03b1-solenoidal repeats, of which three can be resolved to the level of individual helices and two are less well ordered, that make up the majority of the density outside of the mTOR-mLST8 dimer and account for most of the elements expected to correspond to Rictor (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the structural analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "ee489959-8b37-457f-ac53-1167ecc9a21e",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C59",
+      "claim": "The identified \u03b1-solenoidal repeats make up the majority of the density outside of the mTOR-mLST8 dimer and account for most of the elements expected to correspond to Rictor",
+      "claim_type": "EXPLICIT",
+      "source": "While it remains impossible to definitively trace a polypeptide chain at this resolution, we were able to identify five regions of stacked \u03b1-solenoidal repeats, of which three can be resolved to the level of individual helices and two are less well ordered, that make up the majority of the density outside of the mTOR-mLST8 dimer and account for most of the elements expected to correspond to Rictor (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "543a440d-0b25-4ff1-bb76-b83a98f7ef2b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C60",
+      "claim": "The assignment of the major density features to Rictor is confirmed by a negatively stained EM reconstruction of mTORC2 lacking Protor-1",
+      "claim_type": "EXPLICIT",
+      "source": "The assignment of the major density features to Rictor is confirmed by a negatively stained EM reconstruction of mTORC2 lacking Protor-1, which recapitulates density for all but one partially disordered extremus of the accessory protein region (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "0e07310a-ce6e-4266-b0f9-a30b2f378d13",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C61",
+      "claim": "The 'tower' is a well-resolved, 9/10-\u03b1-hairpin stack rising from the 'bridge' HEAT repeat of mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking feature, which we dub the 'tower', is a well-resolved, 9/10-\u03b1-hairpin stack rising from the 'bridge' HEAT repeat of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a structural feature observed in the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "bc870090-6df8-4b63-b9e5-5e0d86713fde",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C62",
+      "claim": "The tower is joined at one-third its length from the bridge by the 'buttress', a well-resolved \u03b1-solenoid encompassing 4/5-hairpins",
+      "claim_type": "EXPLICIT",
+      "source": "This centrepiece is joined at one-third its length from the bridge by another well-resolved \u03b1-solenoid, encompassing 4/5-hairpins, which we refer to as the 'buttress'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a structural feature observed in the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "88149fbb-3f62-4db8-94e7-1f0d28deea0b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C63",
+      "claim": "The buttress links the tower to the 'body', comprising three further repeats (9\u201311 hairpins in total) that stack against one another",
+      "claim_type": "EXPLICIT",
+      "source": "The buttress links the tower to a region we term the 'body', comprising three further repeats (9\u201311 hairpins in total) that stack against one another, with its periphery being poorly ordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a structural feature observed in the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "41eabf3f-e397-42eb-b334-218e7f8c1150",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C64",
+      "claim": "The body is only peripherally associated with the mTOR dimer",
+      "claim_type": "EXPLICIT",
+      "source": "The body is only peripherally associated with the mTOR dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "e2bb91e9-7309-4bba-a7e1-3e6d48bda409",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C65",
+      "claim": "At the top of the tower, a 'cap' region of linked density juts out toward the mTOR active site",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at the top of the tower, a 'cap' region of linked density juts out toward the mTOR active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a structural feature observed in the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "698badab-3aab-4fff-ba00-79b9107d579d",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C66",
+      "claim": "No large regions of non-\u03b1-solenoidal density were resolved, preventing assignment of a location to SIN1",
+      "claim_type": "EXPLICIT",
+      "source": "No large regions of non-\u03b1-solenoidal density were resolved, preventing us from assigning a location to SIN1, although a small region of non-helical density at the extremity of the cap represents the most likely candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "70d4f7e5-7c5a-46d3-93b1-16bbf04e41fe",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C67",
+      "claim": "A small region of non-helical density at the extremity of the cap represents the most likely candidate location for SIN1",
+      "claim_type": "EXPLICIT",
+      "source": "No large regions of non-\u03b1-solenoidal density were resolved, preventing us from assigning a location to SIN1, although a small region of non-helical density at the extremity of the cap represents the most likely candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data and known properties of SIN1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "f41b6329-6bd2-4d95-baa9-1f62429e37e7",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C68",
+      "claim": "The proposed location of SIN1 at the cap would corroborate previous studies implying an interaction between SIN1 and mLST8",
+      "claim_type": "EXPLICIT",
+      "source": "This location of SIN1 would corroborate previous studies implying an interaction between SIN1 and mLST8 and a role of the SIN1 CRIM domain in recruiting substrates towards the active site of mTOR within mTORC2 (Tatebe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "2efbf705-17b5-4842-b3cb-d161f01f6b29",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C69",
+      "claim": "The proposed location of SIN1 at the cap would corroborate a role of the SIN1 CRIM domain in recruiting substrates towards the active site of mTOR within mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "This location of SIN1 would corroborate previous studies implying an interaction between SIN1 and mLST8 and a role of the SIN1 CRIM domain in recruiting substrates towards the active site of mTOR within mTORC2 (Tatebe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "1bb97dcd-cf60-4785-8915-c8472fbe9961",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C70",
+      "claim": "The principal site of interaction between Rictor and the mTOR-mLST8 dimer is the juncture of the bridge and the horn",
+      "claim_type": "EXPLICIT",
+      "source": "The principal site of interaction between Rictor and the mTOR-mLST8 dimer is the juncture of the bridge and the horn, which is occupied by the base of the tower and its contact with the buttress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "67bc389e-3bd1-4691-8708-a3715b943cae",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C71",
+      "claim": "The juncture of the bridge and the horn is the same site occupied by Raptor in mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "This is the same site occupied by the characteristic mTORC1 subunit Raptor (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on structural data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "3ac6d843-150d-4f34-8e3b-ccf01b956393",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C72",
+      "claim": "The TOR dimer interface runs along the plane of the bridge-horn juncture",
+      "claim_type": "EXPLICIT",
+      "source": "Baretic and colleagues have established that the TOR dimer interface runs along this plane, and have shown that a partner protein is not required for TOR dimer formation (Bareti\u0107 et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "c65f42e9-224c-433b-8bce-2c1f3a1e3eee",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C73",
+      "claim": "A partner protein is not required for TOR dimer formation",
+      "claim_type": "EXPLICIT",
+      "source": "Baretic and colleagues have established that the TOR dimer interface runs along this plane, and have shown that a partner protein is not required for TOR dimer formation (Bareti\u0107 et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "10f78032-ea4e-41a7-9063-69beda35f662",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C74",
+      "claim": "The Rictor-mTOR and Raptor-mTOR interactions can be formed only with intact mTOR dimer and are not required to stabilise the mTOR dimer",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm this observation for mTOR-mLST8, demonstrating that the Rictor-mTOR and Raptor-mTOR interactions can be formed only with intact mTOR dimer and are not required to stabilise the mTOR dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data and previous observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "7f4b5a34-a3f4-442e-a93f-4d170e69c430",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C75",
+      "claim": "The inter-subunit interfaces are completely different in mTORC1 and mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the inter-subunit interfaces are completely different in the two mTOR complexes (in Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins, whereas in mTORC2 a single helix covers the length of the cleft), there must be an as yet unknown selective advantage to a dimeric architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "39987fd5-9622-4346-86ea-4e370698dad2",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C76",
+      "claim": "In Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the inter-subunit interfaces are completely different in the two mTOR complexes (in Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins, whereas in mTORC2 a single helix covers the length of the cleft), there must be an as yet unknown selective advantage to a dimeric architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural feature in mTORC1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "66d9f2d4-4084-488c-8fd3-bfaf1ddfdd15",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C77",
+      "claim": "In mTORC2 a single helix covers the length of the cleft between the horn and bridge",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the inter-subunit interfaces are completely different in the two mTOR complexes (in Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins, whereas in mTORC2 a single helix covers the length of the cleft), there must be an as yet unknown selective advantage to a dimeric architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural feature in mTORC2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "5fca3458-d126-4e8f-8390-27005e9dbc3e",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C78",
+      "claim": "There must be an as yet unknown selective advantage to a dimeric architecture for mTOR complexes",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the inter-subunit interfaces are completely different in the two mTOR complexes (in Raptor the cleft between the horn and bridge is occupied by the loops at the tips of three helical hairpins, whereas in mTORC2 a single helix covers the length of the cleft), there must be an as yet unknown selective advantage to a dimeric architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the structural observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "8bcf2470-d418-4a05-a524-df724ed66477",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C79",
+      "claim": "The body makes a less well-resolved contact at the junction of the body and the free end of the bridge amino-terminal HEAT repeats within the mTOR dimer",
+      "claim_type": "EXPLICIT",
+      "source": "Another less well-resolved contact is the junction of the body and the free end of the bridge amino-terminal HEAT repeats within the mTOR dimer, which does not recapitulate any contact found in mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "45bacbb7-4c95-4f9e-a483-3ad9ea0d218f",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C80",
+      "claim": "The body-bridge contact does not recapitulate any contact found in mTORC1",
+      "claim_type": "EXPLICIT",
+      "source": "Another less well-resolved contact is the junction of the body and the free end of the bridge amino-terminal HEAT repeats within the mTOR dimer, which does not recapitulate any contact found in mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "fc22a175-8a24-44f7-9f2a-c60cdb686a74",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C81",
+      "claim": "Regions of Raptor make contact with the HEAT repeat horn in the mTORC1 structure",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of Raptor make contact with the HEAT repeat horn in the mTORC1 structure, however, the horn does not appear to make an analogous contact with any mTORC2 accessory protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the mTORC1 structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "831d8b03-8c71-44af-a41f-f769ec4885a4",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C82",
+      "claim": "The horn does not appear to make an analogous contact with any mTORC2 accessory protein",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of Raptor make contact with the HEAT repeat horn in the mTORC1 structure, however, the horn does not appear to make an analogous contact with any mTORC2 accessory protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the mTORC2 structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "3afef585-7fe6-41f4-aad1-7078053c52ab",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C83",
+      "claim": "The differences between mTORC1 and mTORC2 in the mTOR-exposed surfaces of the horn region are presumably linked to their distinct modes of regulation by post-translational modifications or binding of associated protein factors",
+      "claim_type": "EXPLICIT",
+      "source": "The differences between mTORC1 and mTORC2 in the mTOR-exposed surfaces of the horn region are presumably linked to their distinct modes of regulation by post-translational modifications or binding of associated protein factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural differences",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "25a4b929-60d0-4f45-b3f3-0608cee526cd",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C84",
+      "claim": "The final major contact identified between Rictor and the mTOR dimer is near the FRB domain of mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "The final major contact identified between Rictor and the mTOR dimer is near the FRB domain of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "881f665d-f61a-40a6-870e-9b85aa5bd2e6",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C85",
+      "claim": "The tower \u03b1-solenoid repeat bridges the gap between the binding site at the juncture of the mTOR dimer and the FRB domain of mTOR itself",
+      "claim_type": "EXPLICIT",
+      "source": "The tower \u03b1-solenoid repeat bridges the gap between the binding site at the juncture of the mTOR dimer and the FRB domain of mTOR itself, while the cap, which is connected to the tower, straddles the surface of the FRB, deepening the active site cleft of the mTOR kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural arrangement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "f910eb60-8040-4258-a942-ca2891db4b81",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C86",
+      "claim": "The cap straddles the surface of the FRB, deepening the active site cleft of the mTOR kinase domain",
+      "claim_type": "EXPLICIT",
+      "source": "The tower \u03b1-solenoid repeat bridges the gap between the binding site at the juncture of the mTOR dimer and the FRB domain of mTOR itself, while the cap, which is connected to the tower, straddles the surface of the FRB, deepening the active site cleft of the mTOR kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural arrangement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "e3b3a073-1593-4014-aaff-029c651b8e7a",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C87",
+      "claim": "Raptor similarly deepens the active site in mTORC1, but from a position directly opposite mLST8",
+      "claim_type": "EXPLICIT",
+      "source": "Raptor similarly deepens the active site in mTORC1, but from a position directly opposite mLST8, as opposed to Rictor, which approaches from the other side of the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "8bb1b241-caee-4c60-a16a-42079fcabc9b",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C88",
+      "claim": "Rictor approaches the active site from the other side compared to Raptor",
+      "claim_type": "EXPLICIT",
+      "source": "Raptor similarly deepens the active site in mTORC1, but from a position directly opposite mLST8, as opposed to Rictor, which approaches from the other side of the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on structural data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "50261b70-d1a8-4ae6-a5ba-f30264b973c9",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C89",
+      "claim": "The position of the cap masks the FKBP-rapamycin binding site of mTOR, thereby explaining the rapamycin insensitivity of mTORC2",
+      "claim_type": "EXPLICIT",
+      "source": "This position of the cap masks the FKBP-rapamycin binding site of mTOR, thereby explaining the rapamycin insensitivity of mTORC2 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the structural data shown in Figure 2B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "274b5465-6d3d-40b3-8973-d58437c5bfb7",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C90",
+      "claim": "The finding that the cap masks the FKBP-rapamycin binding site is consistent with what was seen previously with yeast TORC2",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with what was seen previously with yeast TORC2 (Gaubitz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "d8dca32a-4dd5-418e-ab87-61828233a466",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C91",
+      "claim": "The cap region may be responsible for substrate recruitment given its proximity to the active site",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to conclude that this region is responsible for substrate recruitment, given its proximity to the active site, however, further study is required to confirm this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation that requires further study",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "26b46d73-3889-44f7-8f32-56ce6cbd44a4",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C92",
+      "claim": "The two mTOR complexes share many features, including the preservation of effective C2 symmetry",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of human mTORC2 reveals that the two mTOR complexes share many features, including the preservation of effective C2 symmetry, the common binding site for the principal accessory proteins Raptor and Rictor, the deepening of the active site cleft and the significant distance between the presumptive substrate-selection region and the active site of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "4c881207-89ac-4b07-821b-f94e024fc1cd",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C93",
+      "claim": "The two mTOR complexes share a common binding site for the principal accessory proteins Raptor and Rictor",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of human mTORC2 reveals that the two mTOR complexes share many features, including the preservation of effective C2 symmetry, the common binding site for the principal accessory proteins Raptor and Rictor, the deepening of the active site cleft and the significant distance between the presumptive substrate-selection region and the active site of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "34c208d2-559d-432c-86a0-c193a30c844e",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C94",
+      "claim": "Both mTOR complexes share the deepening of the active site cleft",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of human mTORC2 reveals that the two mTOR complexes share many features, including the preservation of effective C2 symmetry, the common binding site for the principal accessory proteins Raptor and Rictor, the deepening of the active site cleft and the significant distance between the presumptive substrate-selection region and the active site of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "395c54e5-758f-48e5-9562-b3bd55796925",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C95",
+      "claim": "Both mTOR complexes share the significant distance between the presumptive substrate-selection region and the active site of mTOR",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of human mTORC2 reveals that the two mTOR complexes share many features, including the preservation of effective C2 symmetry, the common binding site for the principal accessory proteins Raptor and Rictor, the deepening of the active site cleft and the significant distance between the presumptive substrate-selection region and the active site of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "524c51ea-9430-4548-b1d6-9795a9c573ed",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C96",
+      "claim": "Another publication described the architecture of yeast TORC2 at a resolution of 7.9 \u00c5 while this manuscript was under revision",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was under revision, another publication described the architecture of yeast TORC2 at a resolution of 7.9 \u00c5 (Karuppasamy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "012064b4-7c0d-412b-843f-341697930cc8",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C97",
+      "claim": "The main conclusions drawn in the yeast TORC2 publication are consistent with the findings of this study",
+      "claim_type": "EXPLICIT",
+      "source": "The main conclusions drawn in that publication are consistent with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with another publication",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "2095d432-4f48-4c29-a4d1-6bb2991cdd92",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C98",
+      "claim": "Many important biological questions remain, including the reason for the requirement for C2 symmetry",
+      "claim_type": "EXPLICIT",
+      "source": "Many important biological questions remain, in particular the reason for the requirement for C2 symmetry, and the exact identity and function of the mTORC2 domains making up the cap region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies open questions for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "60868ecc-048d-486a-9c9d-0262eb4a469c",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C99",
+      "claim": "The exact identity and function of the mTORC2 domains making up the cap region remain unknown",
+      "claim_type": "EXPLICIT",
+      "source": "Many important biological questions remain, in particular the reason for the requirement for C2 symmetry, and the exact identity and function of the mTORC2 domains making up the cap region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies open questions for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "c472ec65-41aa-4c64-9b1e-61f375f868b1",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "claim_id": "C100",
+      "claim": "A full interpretation of human mTORC2 must await future higher-resolution studies of a more stable form of the complex",
+      "claim_type": "EXPLICIT",
+      "source": "A full interpretation of human mTORC2 must await future higher-resolution studies of a more stable form of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current study and future directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1dddabd7-dae8-4056-8018-e6c472989b3d",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Human mTORC2 was successfully reconstituted by co-expressing mTOR, mLST8, Rictor, SIN1, and Protor-1 in insect cells. The purified complex demonstrated kinase activity toward Akt-1, though yields were low (~0.1 nmol per 10 L culture) due to complex lability during purification, resulting in two major species: mTOR-mLST8 alone and complete mTORC2 with substoichiometric Protor-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 provide converging evidence for successful reconstitution and functional validation. The expression, purification, composition (confirmed by mass spectrometry in Figure 1\u2014figure supplement 1), and kinase activity (Figure 1\u2014figure supplement 1) are all experimentally demonstrated. The observed lability and heterogeneity are acknowledged limitations but do not undermine the core finding of functional complex reconstitution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "165a28d2-33ff-46c8-89f8-4f45815f5e09",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mTORC2 exhibited extreme lability during EM sample preparation, necessitating stabilization by glutaraldehyde cross-linking using a modified gradient fixation protocol. This approach enabled visualization of intact rhombic complexes and collection of 94,953 particles for analysis. Validation by comparing cross-linked and non-cross-linked reconstructions confirmed that cross-linking preserves native structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 describe a methodological challenge and its solution. The lability issue is documented, the cross-linking approach is described, and validation is provided through comparison of cross-linked vs. non-cross-linked structures (Figure 1\u2014figure supplement 2). The agreement between methods supports that cross-linking does not introduce major artifacts, though some uncertainty remains about subtle conformational effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cryo-EM analysis revealed mTORC2 heterogeneity with 30% free mTOR-mLST8, 52% singly-occupied, and 18% complete complex. Refinement with C2 symmetry resolved the complete complex to 7.4 \u00c5 overall and 6.2 \u00c5 for accessory factors. Resolution was limited by contrast in thick ice and inherent flexibility of Rictor/SIN1 domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 present the cryo-EM data processing and resolution determination. The heterogeneity percentages are derived from classification (Figure 1\u2014figure supplement 4), resolutions are determined by gold-standard FSC (Figure 1\u2014figure supplement 3), and resolution-limiting factors are reasonably identified. The methods and results are internally consistent and follow standard cryo-EM practices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "7398e7b8-17cf-40ec-8a5c-d0cc7ca1718c",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Human mTORC2 displays general organization similar to mTORC1, with both complexes functioning as dimeric, C2 symmetric assemblies. Unlike the previous yeast TORC2 structure refined without symmetry, human mTORC2 shows effective C2 symmetry with real-space correlation >0.9 between sides to at least 8.9 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 establish the dimeric, symmetric architecture of mTORC2. The comparison to mTORC1 is supported by structural data (Figure 1), the symmetry is quantitatively validated (correlation >0.9), and the contrast with yeast TORC2 is appropriately cited. The conclusion that both mTOR complexes function as C2 symmetric dimers is well-supported by the structural evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "ada33a78-7852-4f8a-b10b-f07834a8b103",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The dimeric arrangement of mTOR in mTORC2 most closely resembles K. marxianus TOR-Lst8, with FAT domains coming within 6 \u00c5 of each other, contrasting with the substantially outward-rotated conformation in mTORC1. This structural similarity to the free dimer may explain mTORC2's increased lability compared to mTORC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 compare mTORC2 conformation to other TOR structures. The similarity to K.m. TOR-Lst8 and difference from mTORC1 are supported by structural comparisons (Figure 1\u2014figure supplement 5). The 6 \u00c5 measurement is specific. However, C54's explanation for lability is speculative ('may account for'), though it's a reasonable hypothesis based on the structural observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "a686fed6-cc37-4736-887a-fda327555963",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The accessory protein density consists primarily of \u03b1-solenoidal repeats attributed to Rictor (~60% of accessory protein mass). Five \u03b1-solenoidal regions were identified: a well-resolved 'tower' (9/10 \u03b1-hairpins), 'buttress' (4/5 hairpins), and 'body' (9-11 hairpins total), plus a 'cap' region near the active site. Assignment to Rictor was confirmed by reconstruction of mTORC2 lacking Protor-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C65 describe the structural features of accessory proteins. The \u03b1-solenoidal identification is consistent with predicted Rictor structure (C55-C56), the architectural features are observed in the density (Figure 2A), and Rictor assignment is validated by the \u0394Protor-1 reconstruction (C60, Figure 2\u2014figure supplement 1). The structural descriptions are detailed and internally consistent, though definitive chain tracing is acknowledged as impossible at this resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "f221bb21-1ab7-4948-bae3-74a58c15784d",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SIN1 could not be definitively localized due to lack of large non-\u03b1-solenoidal density regions, though a small non-helical density at the cap extremity represents the most likely candidate location. This proposed location would be consistent with previous studies suggesting SIN1-mLST8 interaction and a role for the SIN1 CRIM domain in substrate recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C69 acknowledge inability to definitively assign SIN1 location (C66) while proposing a candidate site (C67). The proposal is reasonable given SIN1's known non-\u03b1-solenoidal structure (C57) and proximity to the active site, and would be consistent with prior work (C68-C69). However, this remains speculative without higher resolution or additional validation. The authors appropriately express uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "39ee50b5-32fe-453d-a8e4-b019319a5327",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The principal Rictor-mTOR interaction site is at the bridge-horn juncture, the same site occupied by Raptor in mTORC1. This binding site is formed by the intact mTOR dimer, with accessory proteins (Rictor/Raptor) not required for dimer stabilization, confirming previous observations that partner proteins bind to but do not stabilize the TOR dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 identify a conserved binding site for accessory proteins. The structural observation of the binding site is supported by the density (C70), comparison to mTORC1 is shown in Figure 2C (C71), and the conclusion about dimer formation is consistent with cited prior work (C72-C73) and confirmed by the current structural data (C74). The convergence of structural and biochemical evidence supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "914d5a81-d3b1-4bb0-a5ba-8b00305c3392",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Despite occupying the same binding site, the inter-subunit interfaces are completely different in mTORC1 and mTORC2: Raptor uses loops at tips of three helical hairpins to occupy the horn-bridge cleft, while mTORC2 uses a single helix. This suggests an unknown selective advantage to dimeric architecture conserved across different interface structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 describe structural differences that are observable in the density and models. The conclusion about selective advantage (C78) is speculative ('must be') but represents reasonable scientific inference from the observation that dimeric architecture is conserved despite completely different interfaces. The speculation is appropriately qualified and identifies an important open question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "6094a768-672d-433b-a2ce-715da0d4338a",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Additional contacts between accessory proteins and mTOR differ between complexes: the body contacts the bridge HEAT repeats in mTORC2 (not seen in mTORC1), while Raptor contacts the horn in mTORC1 but no analogous mTORC2 contact is observed. These differences in horn region exposure are presumably linked to distinct regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 describe observable structural differences between mTORC1 and mTORC2. The contacts (or lack thereof) are identified from the structural data. C83's interpretation linking these differences to regulation is speculative ('presumably') but represents reasonable inference. The structural observations themselves are well-supported, though the functional interpretation requires future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "e449300b-9a2c-4354-a36d-3887f0c6e904",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The tower bridges from the dimer binding site to the FRB domain, with the cap straddling the FRB surface and deepening the active site cleft. This cap position masks the FKBP-rapamycin binding site, explaining mTORC2's rapamycin insensitivity, consistent with previous yeast TORC2 findings. Both Raptor and Rictor deepen the active site but approach from opposite sides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 describe the structural basis for rapamycin insensitivity, a major finding. The structural arrangement is observed in the density (C84-C86), the comparison to mTORC1 is valid (C87-C88), and the mechanistic explanation for rapamycin insensitivity is directly supported by the structure showing steric occlusion (C89, Figure 2B). Consistency with yeast TORC2 (C90) provides independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "d022ff53-70f9-493f-886e-532bdb024b73",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The cap region may be responsible for substrate recruitment given its proximity to the active site, though further study is required to confirm this hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 is explicitly speculative ('tempting to conclude') and the authors acknowledge that 'further study is required.' While the proximity to the active site makes this a reasonable hypothesis, there is no direct evidence for substrate recruitment function presented. This represents a testable hypothesis for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "dda69265-8d3b-45b6-977b-a582196838da",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The two mTOR complexes share multiple architectural features: effective C2 symmetry, a common binding site for principal accessory proteins (Raptor/Rictor), deepening of the active site cleft, and significant distance between the presumptive substrate-selection region and the mTOR active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 summarize shared features between mTORC1 and mTORC2 identified throughout the structural analysis. Each feature is supported by the structural data presented: C2 symmetry (C49-C50), common binding site (C70-C71), active site deepening (C86-C87), and distance to substrate selection region. This represents a valid synthesis of the structural findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "c5f2eddd-85fb-485b-ba52-4ab5db685c67",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A concurrent publication described yeast TORC2 architecture at 7.9 \u00c5 resolution with conclusions consistent with the current study's findings on human mTORC2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 acknowledge concurrent work and note consistency. This is appropriately cited (Karuppasamy et al., 2017) and represents proper scientific practice in acknowledging related work. The consistency between independent studies strengthens confidence in both sets of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    },
+    {
+      "id": "228da457-56ff-4eba-9deb-61c55c454435",
+      "content_id": "c651414d-7d83-4177-a7a6-cf2efa536ae6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Important questions remain unresolved, including the reason for C2 symmetry requirement and the exact identity and function of cap region domains. Full interpretation of human mTORC2 requires future higher-resolution studies of a more stable complex form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 appropriately identify limitations and future directions. These represent honest acknowledgment of what the current study does not resolve: the functional basis for symmetry (C98), cap region identity/function (C99), and the need for higher resolution (C100). This is appropriate scientific practice in defining the scope and limitations of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:21:35.689296Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e47cb1d7-dd0e-4e3f-a866-75e04a91bf12",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "aa43a9fe-d1d9-4bb2-9b8f-0e419045c812",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "49238692-494f-48b9-8133-5bca1ebcb105",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "4472f68b-7a5d-4966-adbc-6663583a793a",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "540dd8a5-7bb9-4d83-be04-24f350c0d31e",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "adb50c32-eb96-4b72-b7ec-a60a8f695136",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "c540432a-e021-40ee-ac4f-e694bfc0be1b",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "f23490f3-edc5-4bac-9cf3-998ccc630bf1",
+      "result_id": "1dddabd7-dae8-4056-8018-e6c472989b3d"
+    },
+    {
+      "claim_id": "1ceb2bfd-d89f-4c52-906c-06c2c08cc7d6",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "3abd46d5-ff27-4ae7-a9a6-7d52f84bca1a",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "2252e791-56b0-44aa-8518-81adfae11322",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "1536eb7b-2f5c-4624-901f-b6cf2ca86fec",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "d4b36f40-2664-48de-bf54-7b2eec56e31b",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "893750b9-89c9-49be-bdea-b8479c089c23",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "766f643f-0ec6-4f56-b3f0-c6e05856c714",
+      "result_id": "165a28d2-33ff-46c8-89f8-4f45815f5e09"
+    },
+    {
+      "claim_id": "812101e5-3da6-4244-a946-0bcae68f4391",
+      "result_id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15"
+    },
+    {
+      "claim_id": "fb39725c-ca9c-4da5-a69e-bd811179bed9",
+      "result_id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15"
+    },
+    {
+      "claim_id": "99c47d12-9008-433f-8542-8e993bb74754",
+      "result_id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15"
+    },
+    {
+      "claim_id": "5d012a7b-f0fd-4012-adaa-82ae6a585714",
+      "result_id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15"
+    },
+    {
+      "claim_id": "9149ccdc-284e-44c3-b457-a6b19c41a85f",
+      "result_id": "7bd8aa5d-f66b-4bc2-9626-2712101b3f15"
+    },
+    {
+      "claim_id": "d1028127-9150-4aa4-9f48-eb0927450c83",
+      "result_id": "7398e7b8-17cf-40ec-8a5c-d0cc7ca1718c"
+    },
+    {
+      "claim_id": "4ed8d8c6-e728-45b4-ab36-32c95d5e0649",
+      "result_id": "7398e7b8-17cf-40ec-8a5c-d0cc7ca1718c"
+    },
+    {
+      "claim_id": "5356cca9-9313-4612-8d13-04ec1ca51bc7",
+      "result_id": "7398e7b8-17cf-40ec-8a5c-d0cc7ca1718c"
+    },
+    {
+      "claim_id": "40c8c551-2c52-4292-bf53-a634f72e3312",
+      "result_id": "7398e7b8-17cf-40ec-8a5c-d0cc7ca1718c"
+    },
+    {
+      "claim_id": "d26faab4-4880-4892-b07f-34f9f33d786f",
+      "result_id": "ada33a78-7852-4f8a-b10b-f07834a8b103"
+    },
+    {
+      "claim_id": "5bc3480b-638a-401a-9162-ab5cd6c87dcc",
+      "result_id": "ada33a78-7852-4f8a-b10b-f07834a8b103"
+    },
+    {
+      "claim_id": "78fec855-fb05-4715-bed3-e7307ed1933f",
+      "result_id": "ada33a78-7852-4f8a-b10b-f07834a8b103"
+    },
+    {
+      "claim_id": "dd5b10cf-6f08-425c-9cca-ed3743d5d464",
+      "result_id": "ada33a78-7852-4f8a-b10b-f07834a8b103"
+    },
+    {
+      "claim_id": "9d76de9b-3a9a-4763-9cf4-86c6adb1e2a6",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "248df483-44f3-45f1-ac2e-923be16ab499",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "2eb15e14-851d-449c-9bab-4de8ddba19cf",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "942eda9e-a2aa-4c75-bc9a-8395379e35c8",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "ee489959-8b37-457f-ac53-1167ecc9a21e",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "543a440d-0b25-4ff1-bb76-b83a98f7ef2b",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "0e07310a-ce6e-4266-b0f9-a30b2f378d13",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "bc870090-6df8-4b63-b9e5-5e0d86713fde",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "88149fbb-3f62-4db8-94e7-1f0d28deea0b",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "41eabf3f-e397-42eb-b334-218e7f8c1150",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "e2bb91e9-7309-4bba-a7e1-3e6d48bda409",
+      "result_id": "a686fed6-cc37-4736-887a-fda327555963"
+    },
+    {
+      "claim_id": "698badab-3aab-4fff-ba00-79b9107d579d",
+      "result_id": "f221bb21-1ab7-4948-bae3-74a58c15784d"
+    },
+    {
+      "claim_id": "70d4f7e5-7c5a-46d3-93b1-16bbf04e41fe",
+      "result_id": "f221bb21-1ab7-4948-bae3-74a58c15784d"
+    },
+    {
+      "claim_id": "f41b6329-6bd2-4d95-baa9-1f62429e37e7",
+      "result_id": "f221bb21-1ab7-4948-bae3-74a58c15784d"
+    },
+    {
+      "claim_id": "2efbf705-17b5-4842-b3cb-d161f01f6b29",
+      "result_id": "f221bb21-1ab7-4948-bae3-74a58c15784d"
+    },
+    {
+      "claim_id": "1bb97dcd-cf60-4785-8915-c8472fbe9961",
+      "result_id": "39ee50b5-32fe-453d-a8e4-b019319a5327"
+    },
+    {
+      "claim_id": "67bc389e-3bd1-4691-8708-a3715b943cae",
+      "result_id": "39ee50b5-32fe-453d-a8e4-b019319a5327"
+    },
+    {
+      "claim_id": "3ac6d843-150d-4f34-8e3b-ccf01b956393",
+      "result_id": "39ee50b5-32fe-453d-a8e4-b019319a5327"
+    },
+    {
+      "claim_id": "c65f42e9-224c-433b-8bce-2c1f3a1e3eee",
+      "result_id": "39ee50b5-32fe-453d-a8e4-b019319a5327"
+    },
+    {
+      "claim_id": "10f78032-ea4e-41a7-9063-69beda35f662",
+      "result_id": "39ee50b5-32fe-453d-a8e4-b019319a5327"
+    },
+    {
+      "claim_id": "7f4b5a34-a3f4-442e-a93f-4d170e69c430",
+      "result_id": "914d5a81-d3b1-4bb0-a5ba-8b00305c3392"
+    },
+    {
+      "claim_id": "39987fd5-9622-4346-86ea-4e370698dad2",
+      "result_id": "914d5a81-d3b1-4bb0-a5ba-8b00305c3392"
+    },
+    {
+      "claim_id": "66d9f2d4-4084-488c-8fd3-bfaf1ddfdd15",
+      "result_id": "914d5a81-d3b1-4bb0-a5ba-8b00305c3392"
+    },
+    {
+      "claim_id": "5fca3458-d126-4e8f-8390-27005e9dbc3e",
+      "result_id": "914d5a81-d3b1-4bb0-a5ba-8b00305c3392"
+    },
+    {
+      "claim_id": "8bcf2470-d418-4a05-a524-df724ed66477",
+      "result_id": "6094a768-672d-433b-a2ce-715da0d4338a"
+    },
+    {
+      "claim_id": "45bacbb7-4c95-4f9e-a483-3ad9ea0d218f",
+      "result_id": "6094a768-672d-433b-a2ce-715da0d4338a"
+    },
+    {
+      "claim_id": "fc22a175-8a24-44f7-9f2a-c60cdb686a74",
+      "result_id": "6094a768-672d-433b-a2ce-715da0d4338a"
+    },
+    {
+      "claim_id": "831d8b03-8c71-44af-a41f-f769ec4885a4",
+      "result_id": "6094a768-672d-433b-a2ce-715da0d4338a"
+    },
+    {
+      "claim_id": "3afef585-7fe6-41f4-aad1-7078053c52ab",
+      "result_id": "6094a768-672d-433b-a2ce-715da0d4338a"
+    },
+    {
+      "claim_id": "25a4b929-60d0-4f45-b3f3-0608cee526cd",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "881f665d-f61a-40a6-870e-9b85aa5bd2e6",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "f910eb60-8040-4258-a942-ca2891db4b81",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "e3b3a073-1593-4014-aaff-029c651b8e7a",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "8bb1b241-caee-4c60-a16a-42079fcabc9b",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "50261b70-d1a8-4ae6-a5ba-f30264b973c9",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "274b5465-6d3d-40b3-8973-d58437c5bfb7",
+      "result_id": "e449300b-9a2c-4354-a36d-3887f0c6e904"
+    },
+    {
+      "claim_id": "d8dca32a-4dd5-418e-ab87-61828233a466",
+      "result_id": "d022ff53-70f9-493f-886e-532bdb024b73"
+    },
+    {
+      "claim_id": "26b46d73-3889-44f7-8f32-56ce6cbd44a4",
+      "result_id": "dda69265-8d3b-45b6-977b-a582196838da"
+    },
+    {
+      "claim_id": "4c881207-89ac-4b07-821b-f94e024fc1cd",
+      "result_id": "dda69265-8d3b-45b6-977b-a582196838da"
+    },
+    {
+      "claim_id": "34c208d2-559d-432c-86a0-c193a30c844e",
+      "result_id": "dda69265-8d3b-45b6-977b-a582196838da"
+    },
+    {
+      "claim_id": "395c54e5-758f-48e5-9562-b3bd55796925",
+      "result_id": "dda69265-8d3b-45b6-977b-a582196838da"
+    },
+    {
+      "claim_id": "524c51ea-9430-4548-b1d6-9795a9c573ed",
+      "result_id": "c5f2eddd-85fb-485b-ba52-4ab5db685c67"
+    },
+    {
+      "claim_id": "012064b4-7c0d-412b-843f-341697930cc8",
+      "result_id": "c5f2eddd-85fb-485b-ba52-4ab5db685c67"
+    },
+    {
+      "claim_id": "2095d432-4f48-4c29-a4d1-6bb2991cdd92",
+      "result_id": "228da457-56ff-4eba-9deb-61c55c454435"
+    },
+    {
+      "claim_id": "60868ecc-048d-486a-9c9d-0262eb4a469c",
+      "result_id": "228da457-56ff-4eba-9deb-61c55c454435"
+    },
+    {
+      "claim_id": "c472ec65-41aa-4c64-9b1e-61f375f868b1",
+      "result_id": "228da457-56ff-4eba-9deb-61c55c454435"
+    }
+  ],
+  "comparisons": []
+}

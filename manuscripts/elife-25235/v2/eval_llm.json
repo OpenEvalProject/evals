@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C86",
+      "C94"
+    ],
+    "result": "TRAP1 requires hydrolysis of both bound ATPs to efficiently progress through its ATPase cycle. Heterodimeric constructs with one catalytically dead protomer (+/E115A) show reduced steady-state activity, accumulate in the closed state, and exhibit very slow reopening rates compared to wild-type, demonstrating that efficient reopening only occurs from the ADP/ADP state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C42, C43, C44, C46, C86, and C94 collectively provide strong experimental evidence from multiple complementary approaches (steady-state ATPase assays, single-turnover experiments, and FRET-based conformational monitoring) that both ATP hydrolysis events are required for efficient progression through the TRAP1 cycle. The data show that heterodimers with one inactive site can close normally but cannot reopen efficiently, directly supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATP hydrolysis on the two TRAP1 protomers is sequential and deterministic, with the buckled protomer preferentially hydrolyzing ATP first. Time-resolved crystallography of zTRAP1 crystals (1-day, 3-day, and 53-day old) shows monotonic progression from ATP-ATP through ATP-ADP to ADP-ADP states, with the buckled protomer showing loss of \u03b3-phosphate density before the straight protomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C8, C51, C52, C53, C54, and C55 are strongly supported by time-resolved crystallographic data showing differential hydrolysis rates between protomers. The electron density maps clearly demonstrate that the buckled protomer loses its \u03b3-phosphate first, providing direct structural evidence for sequential, deterministic hydrolysis. The crystallographic approach is well-controlled and the progression is monotonic across multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C92",
+      "C93"
+    ],
+    "result": "After the first ATP hydrolysis, TRAP1 undergoes a conformational flip in asymmetry while remaining closed, such that the ADP-containing protomer straightens and the ATP-containing protomer becomes buckled. DEER measurements on heterodimers mimicking the hemi-hydrolyzed state (+/R402A) show that protomers with intact \u03b3-phosphate contact adopt the buckled conformation (~22 \u00c5), while those lacking \u03b3-phosphate contact adopt the straight conformation (~41 \u00c5), confirmed by crystal structure of the +/R417A heterodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C74, C75, C76, C77, C79, C80, C81, C92, and C93 are well-supported by converging evidence from DEER spectroscopy and crystallography. The DEER data clearly show distinct conformational states depending on \u03b3-phosphate contact, and the crystal structure of the heterodimer validates the interpretation. The use of the R402A/R417A mutation as an ADP-state mimic is well-justified by prior literature (C70, C71) and the minimal perturbation to ATPase activity (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TRAP1 has the capacity for ATP hydrolysis in the absence of Mg2+, albeit slowly. At 500 \u00b5M ATP (where ~80% of TRAP1 is in the closed state), a low but significant TRAP1-specific ATPase activity is detected with a rate of 0.5808 per hr per active site, which is ~375-fold slower than spontaneous hydrolysis and an order of magnitude slower than the dimer closure rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are supported by careful kinetic measurements using a sensitive fluorescent phosphate sensor. The experiments include appropriate controls (ATP alone, concentration dependence, Radicicol inhibition) to demonstrate TRAP1-specificity. The measured rates are internally consistent with the crystallographic observations. However, the biological relevance of Mg2+-free hydrolysis is unclear, as this is not a physiological condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Molecular dynamics simulations reveal asymmetric water dynamics near the ATP \u03b3-phosphate between protomers. The buckled protomer has fewer water molecules in proximity to the \u03b3-phosphate on average, with most waters spending only a few nanoseconds in this region. In contrast, the straight protomer has longer-lived waters positioned between E130 and the \u03b3-phosphate, correlating with the observed preferential hydrolysis of the buckled protomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C69 are based on microsecond-scale MD simulations at two temperatures. While the simulations show interesting differences in water dynamics that correlate with experimental observations, the mechanistic connection between reduced water occupancy and enhanced hydrolysis is not established. The authors acknowledge 'the precise mechanism is still unclear' (C69). Additionally, the simulations were performed with Mg2+ present, while the experimental hydrolysis data showing differential rates were obtained without Mg2+, creating a potential inconsistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C88"
+    ],
+    "result": "Covalent heterodimers of TRAP1 were efficiently created using SpyCatcher/SpyTag fusions at the C-terminus, enabling precise targeting of protomer-specific mutations and production of homogeneous heterodimer populations without dimer exchange. TRAP1 closure can be monitored by FRET using probes at E140C (NTD) and K413C (MD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C88 describe methodological approaches that are well-validated. The SpyCatcher/SpyTag system is established technology (cited to Zakeri et al., 2012), and the FRET approach was previously validated (cited to Partridge et al., 2014). The functionality of the heterodimers is confirmed by multiple experiments throughout the manuscript (e.g., C42, C43, C72, C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48",
+      "C89"
+    ],
+    "result": "TRAP1 uniquely accumulates in the closed state upon addition of ATP in the absence of Mg2+, allowing the normally rate-limiting closure step to be bypassed and synchronizing all molecules in a closed ATP/ATP state. This behavior appears specific to the mitochondrial homolog, as bacterial Hsp90 and yeast Hsp90 do not exhibit this behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47, C48, and C89 are supported by FRET data (Figure 1E) and comparative observations with other Hsp90 homologs. This unique property of TRAP1 is critical for the experimental design, enabling synchronization of the population for kinetic studies. However, the comparison with bHsp90 and yHsp90 is noted as 'data not shown' (C48), which weakens confidence in the specificity claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78"
+    ],
+    "result": "The MD-Arg residue (R402 in hTRAP1, R417 in zTRAP1) acts as an ATP sensor, and mutating this residue effectively mimics the ADP state. The +/R402A heterodimer can form the closed state with ADP-BeF and has minimally perturbed (twofold increase) ATPase activity. The R417A mutation does not perturb the overall closed state structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C78 are supported by prior literature (Cunningham et al., 2012) and validated by functional assays and structural data in this manuscript. The minimal perturbation to ATPase activity (twofold increase) and ability to form closed state support the use of this mutation as an ADP-state mimic. The crystal structure (C77-C79) confirms the mutation does not cause major structural perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C90",
+      "C91"
+    ],
+    "result": "Crystallographic analysis reveals that the crystal lattice blocks significant conformational rearrangements in TRAP1 even after both ATPs are hydrolyzed. In the ATP/ATP state, labeled protomers adopt roughly equal mixtures of buckled and straight conformations due to random buckling during closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C90, and C91 are supported by crystallographic data and DEER measurements. The observation that crystal packing constrains conformational changes is a well-known limitation of crystallography and is appropriately acknowledged. The DEER data (C91) showing equal mixture of conformations in ATP/ATP state is consistent with random buckling and provides important context for interpreting the asymmetry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C84",
+      "C93",
+      "C95",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose a model where direct coupling of ATP hydrolysis and conformational flipping rearranges client-binding sites at the MD:CTD interface, providing a mechanism for how ATP hydrolysis energy is used for client remodeling. The first hydrolysis would be used for client remodeling, while the second resets the cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C84, C93, C95, C101, C102, and C103 represent a proposed mechanistic model that integrates the experimental findings. While the model is consistent with the data showing sequential hydrolysis and conformational flipping, direct evidence for client remodeling is lacking. The experiments were performed without client proteins, so the connection between conformational changes and client remodeling remains speculative. The model is plausible and well-reasoned but requires validation with actual client proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The crystal structure of TRAP1 reveals a catalytically active closed state with pronounced asymmetry between protomers, with one protomer buckled and the other straight. This asymmetry is unobserved in other Hsp90 homologs and is most pronounced at the MD:CTD interface where the client-binding site is located.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C30-C34 are supported by crystallographic data from this study and prior work (Lavery et al., 2014). The structural asymmetry is well-documented with quantitative measurements (2.5-fold difference in buried surface area). However, the claim that this asymmetry is 'unobserved in other Hsp90 homologs' (C3) requires careful interpretation, as C32 notes that a similar buckled conformation was observed in p23-bound yeast Hsp90, suggesting the asymmetry may be induced by different mechanisms in different homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The proposed sequential hydrolysis mechanism explains the lack of ATPase cooperativity observed in other Hsp90s and may be shared among other GHKL ATPases. The open-to-close transition is unlikely to be the ATP-driven mechanism for client remodeling. Yeast topoisomerase II also hydrolyzes two ATPs sequentially, with the first hydrolysis facilitating DNA transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C98, C104, C105, and C106 extend the findings to other Hsp90 homologs and GHKL family members. While the sequential mechanism could explain non-cooperative kinetics (C96), this is an inference rather than direct demonstration in other homologs. The argument against the open-to-close transition as the remodeling mechanism (C98) is based on energetic considerations and prior work (C97), but is not directly tested. The comparison to topoisomerase II (C105, C106) is interesting but based on citations rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A critical feature of the proposed model is functional asymmetry within the Hsp90 homodimer. For cytosolic Hsp90s, asymmetry can be provided by cochaperones or post-translational modifications. For TRAP1 and bacterial homologs (which lack known cochaperones), the functional asymmetry may be an intrinsic property encoded by structural asymmetry of the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 present a conceptual framework for understanding asymmetry in Hsp90 function. The distinction between induced asymmetry (cytosolic Hsp90s with cochaperones) and intrinsic asymmetry (TRAP1/bacterial Hsp90s) is well-supported by the data and literature. The proposal that structural asymmetry encodes functional asymmetry in TRAP1 (C112) is a reasonable inference from the experimental results, though it contains speculative elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C82",
+      "C83",
+      "C85",
+      "C87",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Background and context claims about Hsp90 structure, function, dynamics, and prior knowledge from the literature, including its role as a molecular chaperone, domain organization, conformational states, homologs, ATPase properties, and client-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C29, C35-C37, C82, C83, C85, C87, C97, C99, and C100 represent established knowledge about Hsp90 from prior literature, appropriately cited throughout. These provide essential context for interpreting the new findings but do not constitute novel results from this study. The citations appear appropriate and the characterizations are consistent with the Hsp90 literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C147",
+      "C148"
+    ],
+    "result": "This study performed the first single-cell transcriptome analysis of cranial neural crest cell migration at three progressive developmental stages (HHSt11, 13, 15) in chick, analyzing 469 cells from spatially distinct subregions (Front, Lead, Trail) of the migratory stream. The analysis identified and established hierarchical relationships between cell position- and time-specific transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C23-C27, C147-C148 collectively describe the experimental design and scope of the study. The methodology is clearly described with specific numbers of cells (469), developmental stages (HHSt11, 13, 15), and spatial subdivisions (Front 5%, Lead 25%, Trail 70%). Quality control metrics and hierarchical clustering analyses support the identification of distinct transcriptional profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Bulk RNA-seq analysis of neural crest cells from the invasive front versus the remainder of the stream at HHSt13 and HHSt15 revealed statistically significant differences in gene expression, with 23 genes consistently enriched and 19 genes consistently reduced in the front across both stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 describe bulk RNA-seq experiments with appropriate biological replicates (n=3), quality control (C16), and statistical validation (C17). The identification of 23 up-regulated and 19 down-regulated genes (C19-C20) is supported by hierarchical clustering and Venn diagram analysis shown in Figure 1. The validation of specific genes from previous RT-qPCR studies (C21-C22) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Single-cell RNA-seq analysis revealed that spatial location within the stream and temporal progression along the migratory pathway are primary determinants of gene expression, with distinct molecular signatures for each subpopulation (Front, Lead, Trail) but also substantial heterogeneity within subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C38-C43 are supported by hierarchical clustering (Figure 2\u2014figure supplement 2, Figure 3) and Pearson correlation analysis (Figure 3\u2014figure supplement 1). The identification of gene subsets that increase/decrease with developmental stage (C38), are uniquely expressed in specific subpopulations (C39), or correlate with spatial position (C40) is demonstrated through heatmap analysis. The observation of heterogeneity (C41-C42) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "In vitro neural crest cell transcriptional profiles are prominently distinct from all in vivo profiles, with 806 genes down-regulated and 312 genes up-regulated in vitro compared to in vivo, suggesting that the in vivo embryonic microenvironment critically influences neural crest cell gene expression and biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37, C141-C144 are well-supported by Pearson correlation matrix (Figure 2C), PCA analysis (Figure 2D), and GO term analysis (Figure 2E). The identification of 806 down-regulated and 312 up-regulated genes (C34-C35) is documented with specific examples. The lack of GO term enrichment for up-regulated genes (C36) is appropriately noted. The conclusion about microenvironmental influence (C37, C144) is supported by comparison with previous RT-qPCR data (C142-C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Hierarchical clustering and PCA analysis of invasive front cells identified five distinct subpopulations: two clusters at HHSt11 (Cluster1 and Cluster2), Lead-like cells at HHSt13 and HHSt15, and a distinct Trailblazer cluster containing cells from all three developmental stages with minimal overlap with other subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by hierarchical clustering (Figure 4A), Pearson correlation matrix (Figure 4B), and PCA analysis (Figure 4C). The identification of five distinct subpopulations is clearly demonstrated with appropriate statistical methods. The Trailblazer cluster shows consistent separation from other subpopulations across all three developmental stages, representing a more comprehensive analysis than previous RT-qPCR work (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The Trailblazer transcriptional signature is characterized by 964 up-regulated and 406 down-regulated genes, with Trailblazer cells representing approximately 8% of cells at HHSt11, 49% of invasive front cells at HHSt13 (~12 cells), and 32% at HHSt15 (~13 cells), and mostly confined to the invasive front with fewer than 10% of cells in other stream regions showing overlapping expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C50-C60 are supported by volcano plot analysis (Figure 5A), comparison with bulk RNA-seq (C52-C53 showing 79% and 37% overlap), and PCA analysis (Figure 5C). The quantification of Trailblazer cell proportions (C56-C58) is based on clustering analysis. The spatial restriction to the invasive front (C59-C60) is demonstrated by PCA showing <10% overlap with Lead and Trail cells. The approximate number of 900 genes (C2) is consistent with 964 up-regulated genes (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Pathway analysis of the Trailblazer signature revealed that 81% of differentially expressed genes in known pathways were increased, including genes associated with WNT/Beta Catenin, EMT, integrin, and BMP signaling, with increased expression of VEGF receptors 1, 2, and 3 and neuropilin-1 (NRP1), strengthening support for VEGF chemoattraction in neural crest migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64, C127-C129 are supported by pathway enrichment analysis (Figure 5D) using Ingenuity Pathway Analysis. The 81% increase versus 19% decrease (C61) is clearly documented. The identification of specific pathways (C62) and VEGF signaling components (C63) is consistent with previous functional studies showing that neuropilin-1 knockdown prevents branchial arch invasion (C128). The connection to prior work (C127-C129) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Thirty-seven genes associated with axonal guidance signaling are expressed at significantly higher levels in Trailblazers, including members of the BMP, EPH, MMP, and WNT families, with only 7 of 26 axonal guidance genes previously examined in neural crest migration, suggesting shared molecular features between neural crest invasion and axonal growth cone guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C130-C134 are supported by pathway analysis (Figure 5D) and literature review. The identification of 37 axonal guidance genes (C64) is documented, and the observation that only 7 of 26 have been previously studied in neural crest (C133) is supported by citations. The connection to neurovascular patterning (C131) and the suggestion of shared molecular features (C132) are appropriately framed as emerging evidence and inference. The speculation about future research (C134) is reasonable but does not affect the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Comparison of scRNA-seq Trailblazer signature with the previous 16-gene RT-qPCR signature revealed that four genes (AQP1, BAMBI, CTNNB1, PKP2) were enriched in both analyses, with differences explained by methodological variances (RT-qPCR sensitivity versus scRNA-seq comprehensiveness) and inclusion of HHSt11 cells in the scRNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69, C135-C138 appropriately compare the current scRNA-seq results with previous RT-qPCR work (McLennan et al., 2015). The identification of four overlapping genes (C65) is shown in Figure 5E. The explanation for partial overlap (C135-C138) is reasonable, noting differences in cell selection criteria (C136), methodological sensitivity (C137), and inclusion of additional developmental stages (C138). The analysis acknowledges both validation and refinement of previous findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "RNAscope expression analysis of 13 Trailblazer genes revealed that none were expressed in all or the majority of cells at the invasive front, with some genes showing heterogeneous expression (~30% of front cells), salt and pepper patterns including expression in middle/back portions of the stream, or expression outside the invasive front, with potential technical limitations including differences in sensitivity between scRNA-seq and RNAscope and difficulty visualizing low numbers of Trailblazer cells in 3D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C70-C75, C118-C120 describe RNAscope validation results that are inconsistent with the scRNA-seq Trailblazer signature. While the RNAscope data (Figure 6A-M) are clearly presented, the lack of expression restriction to the invasive front (C70-C75) contradicts the scRNA-seq findings (C59-C60). The authors appropriately acknowledge potential technical limitations (C118-C120), including sensitivity differences and visualization challenges, but these explanations are speculative. The inconsistency between transcriptomic and spatial expression data creates uncertainty about the spatial restriction of the Trailblazer signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Morpholino knockdown of three Trailblazer genes (WNT5B, PKP2, EDN1) showed significant but modest reductions in neural crest cell distance migrated (21%, 13%, and >13% respectively), with validation by RT-PCR for splice-blocking morpholinos, while overall stream migration remained >90% of normal distance, suggesting cell-autonomous effects with wildtype cells compensating for knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 describe morpholino knockdown experiments with appropriate controls and statistical analysis (p-values provided). The modest effects (C76-C78) are clearly documented in Figure 6N-Q, with validation by RT-PCR (C81-C82, Figure 6\u2014figure supplement 2). The observation that overall stream migration is minimally affected (C83, Figure 6\u2014figure supplement 3) supports the interpretation of cell-autonomous effects with compensation by wildtype cells (C84). The lack of correlation between expression level and functional effect (C80) is appropriately noted. However, the modest effects and compensation by wildtype cells limit the strength of functional conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C139",
+      "C140"
+    ],
+    "result": "Neural crest cells at HHSt11 cluster into two distinct subpopulations: Cluster1 enriched for neural plate border genes (WNT3, WNT3A, WNT7B, WNT8B, ZIC1, ZIC3, MSX1, CDH6, EphA7, CDH2, and novel transcription factor PAX6) with increased signaling pathway genes (59%), and Cluster2 enriched for later specification/EMT/migration genes (PAX3, TFAP2B, SOX8, FHL2) with decreased signaling pathway genes (1%), suggesting a rapid molecular switch from EMT to directed migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C99, C139-C140 are supported by volcano plots (Figure 7A-B), GO term analysis (Figure 7C-D), and pathway enrichment analysis (Figure 7E-F). The identification of Cluster1 genes associated with neural plate border (C85-C86) is consistent with previous work (Sim\u00f5es-Costa and Bronner, 2015). The discovery of PAX6 enrichment (C88) represents a novel finding. The Cluster2 signature (C89-C92) shows appropriate EMT/migration genes. The dramatic difference in pathway gene expression (C95-C99) and minimal overlap between clusters (C140) support the interpretation of a rapid molecular switch (C139-C140) rather than gradual transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Lead and Trail subpopulations show distinct transcriptional signatures with relatively small numbers of differentially expressed genes: at HHSt13, Trail had 45 enriched and 151 reduced genes while Lead had 26 enriched and 35 reduced genes; at HHSt15, Trail had 174 enriched and 132 reduced genes while Lead had 77 enriched and 138 reduced genes, with pathway analysis revealing reduced expression of developmental signaling pathways including VEGF, actin cytoskeleton, integrin, axonal guidance, and ephrin receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 are supported by volcano plots (Figure 8A-B, D-E) and pathway enrichment analysis (Figure 8C, F). The identification of specific numbers of differentially expressed genes (C100, C104, C107) is documented with examples (C101-C102, C105). The pathway analysis (C103, C106, C108) shows consistent reduction of developmental signaling pathways. However, the relatively small numbers of differentially expressed genes and high heterogeneity within these large subpopulations (noted in text) suggest these signatures are less robust than the Trailblazer signature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Four main features contribute to cranial neural crest migration: (1) majority of invasive front cells change gene expression during migration while a small Trailblazer subpopulation maintains a conserved signature; (2) newly exited cells cluster into two subpopulations indicating rapid EMT to migration transition; (3) Lead cells cluster with non-Trailblazer invasive front cells; (4) Trail cells cluster with newly exited and in vitro cells, which have distinct profiles from all in vivo populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 represent summary statements of the main findings in the discussion. These conclusions are supported by the collective evidence from hierarchical clustering, PCA analysis, and differential expression analyses described in previous result groups. The four features appropriately synthesize the spatial and temporal transcriptional dynamics observed throughout the study. These are interpretive conclusions that integrate multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The number of genes up-regulated in the invasive front was consistent between HHSt13 (61 genes) and HHSt15 (55 genes) with 23 genes overlapping, while down-regulated genes showed a nearly 4-fold difference (255 genes at HHSt13 versus 36 at HHSt15) with 19 genes overlapping, confirming rapid molecular changes as cells encounter the branchial arch microenvironment, with the 42 overlapping genes representing a conserved molecular signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 provide quantitative analysis of bulk RNA-seq data from Figure 1. The numbers are clearly documented in the heatmaps and Venn diagrams. The interpretation of the 4-fold difference in down-regulated genes (C116) as indicating rapid microenvironmental response is reasonable. The identification of 42 conserved genes (C117) across both stages is appropriately characterized as a stable signature during the transition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Several Trailblazer genes (AQP1, BAMBI, CTNNB1, PKP2, Tescalcin, WNT5B) have been implicated in human cancer cell invasion and metastasis, suggesting these genes may have critical functional roles in both neural crest migration and cancer aggressiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 connect Trailblazer genes to cancer biology through literature citations. The specific examples (BAMBI in colorectal/osteosarcoma C122, PKP2 in glioma/bladder cancer C123, Tescalcin in colorectal cancer C124, WNT5B in multiple cancers C125) are supported by appropriate citations. The suggestion that these genes may be part of a broader molecular signature in cancer aggressiveness (C126) is appropriately framed as inference and speculation. This represents valid contextualization of the findings within broader biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "This study addresses the challenge of identifying distinct transcriptional signatures in dynamic cell populations during migration by providing the first comprehensive single-cell transcriptome analysis of neural crest migration across three developmental stages, revealing hierarchical relationships between cell position- and time-specific profiles and providing insights into molecular patterns underlying directed, collective cell migration with implications for other migratory phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 represent summary statements about the study's significance and contribution. The claim of being the first comprehensive single-cell analysis of neural crest migration (C147) is supported by the scope of the work (469 cells, three stages, multiple spatial positions). The identification of hierarchical relationships (C148) is demonstrated through multiple analytical approaches. The broader significance (C149) is appropriately framed. These are valid summary statements supported by the collective evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The study employed standard methods for chick embryo manipulation, cell labeling, tissue dissection, FACS isolation, bulk and single-cell RNA-seq library preparation using SMART-seq v4, sequencing on HiSeq 2500, computational analysis using Tophat, edgeR, ClusterProfiler, and Ingenuity Pathway Analysis, and RNAscope combined with immunohistochemistry for spatial expression validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C176 describe the experimental and computational methods. The methods are clearly described with appropriate detail including specific reagents, instruments, software versions, and parameters. The choice of SMART-seq v4 is justified for detecting maximum genes per cell (C164). Quality control metrics are provided (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1). The computational pipeline is standard and appropriate. The RNAscope protocol is adapted from published methods (C174). These methodological claims are well-supported and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background knowledge claims establish that neural crest cells undergo EMT to exit the dorsal neural tube, cranial neural crest cells travel in multicellular streams beneath the surface ectoderm, the chick embryo is well-suited for studying neural crest migration with optimized techniques, and previous work identified a 16-gene Trailblazer signature with functional evidence from transcription factor overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 represent established knowledge and previous work that provides context for the current study. These claims are supported by appropriate citations to the literature (Morrison et al., 2012, 2015; McLennan et al., 2015). The background information is accurate and relevant to the study design and interpretation.",
+    "result_type": "MINOR"
+  }
+]

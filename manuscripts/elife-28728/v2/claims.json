@@ -1,0 +1,1165 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "In vivo calcium imaging through microendoscopic lenses enables imaging of previously inaccessible neuronal populations deep within the brains of freely moving animals.",
+    "claim_type": "EXPLICIT",
+    "source": "In vivo calcium imaging through microendoscopic lenses enables imaging of previously inaccessible neuronal populations deep within the brains of freely moving animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract as a known capability of the technique.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "It is computationally challenging to extract single-neuronal activity from microendoscopic data because of very large background fluctuations and high spatial overlaps intrinsic to this recording modality.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is computationally challenging to extract single-neuronal activity from microendoscopic data, because of the very large background fluctuations and high spatial overlaps intrinsic to this recording modality.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known challenge in the abstract and is supported by data shown in figures throughout the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The proposed CNMF-E method substantially improved the quality of extracted cellular signals compared to previous methods on both simulated and experimental data.",
+    "claim_type": "EXPLICIT",
+    "source": "On both simulated and experimental data recorded from mice, our method substantially improved the quality of extracted cellular signals and detected more well-isolated neural signals, especially in noisy data regimes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by comparative analyses shown in Figures 4, 6, 7, 8, and 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "CNMF-E detected more well-isolated neural signals than previous methods, especially in noisy data regimes.",
+    "claim_type": "EXPLICIT",
+    "source": "On both simulated and experimental data recorded from mice, our method substantially improved the quality of extracted cellular signals and detected more well-isolated neural signals, especially in noisy data regimes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 4E showing fewer missed neurons and Figure 6D showing additional neurons detected only by CNMF-E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Improvements in signal extraction from CNMF-E can significantly enhance the statistical power of downstream analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "These advances can in turn significantly enhance the statistical power of downstream analyses, and ultimately improve scientific conclusions derived from microendoscopic data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 9 showing improved detection of footshock responses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Microendoscopic calcium imaging has been widely used to study neural circuits in cortical, subcortical, and deep brain areas including hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "This technique has been widely used to study the neural circuits in cortical, subcortical, and deep brain areas, such as hippocampus (Cai et al., 2016; Ziv et al., 2013; Jimenez et al., 2018; Rubin et al., 2015), entorhinal cortex (Kitamura et al., 2015; Sun et al., 2015), hypothalamus (Jennings et al., 2015), prefrontal cortex (PFC) (Pinto and Dan, 2015), premotor cortex (Markowitz et al., 2015), dorsal pons (Cox et al., 2016), basal forebrain (Harrison et al., 2016), striatum (Barbera et al., 2016; Carvalho Poyraz et al., 2016; Klaus et al., 2017), amygdala (Yu et al., 2017), and other brain regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Microendoscopic data typically displays large, blurry background fluctuations due to fluorescence contributions from neurons outside the focal plane.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these methods are not suitable for analyzing single-photon microendoscopic data because of its distinct features: specifically, this data typically displays large, blurry background fluctuations due to fluorescence contributions from neurons outside the focal plane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is illustrated in Figure 1A and Figure 1D showing background dominates the signal.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Standard methods based on local correlations for visualizing cell outlines are not effective for microendoscopic data because correlations in fluorescence of nearby pixels are dominated by background signals.",
+    "claim_type": "EXPLICIT",
+    "source": "In turn, standard methods based on local correlations for visualizing cell outlines (Smith and H\u00e4usser, 2010) are not effective here, because the correlations in the fluorescence of nearby pixels are dominated by background signals (Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 1B showing poor visualization of neurons in the correlation image.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The background signal in microendoscopic data has much larger variance than the relatively sparse neural signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1D shows that the background (blue) has much larger variance than the relatively sparse neural signal (red); moreover, the background signal fluctuates on similar timescales as the single-neuronal signal, so we can not simply temporally filter the background away after extraction of the mean signal within the ROI.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is directly shown in Figure 1D comparing background and neural signal traces.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The background signal fluctuates on similar timescales as the single-neuronal signal, preventing simple temporal filtering.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1D shows that the background (blue) has much larger variance than the relatively sparse neural signal (red); moreover, the background signal fluctuates on similar timescales as the single-neuronal signal, so we can not simply temporally filter the background away after extraction of the mean signal within the ROI.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1D showing temporal overlap of background and neural signals.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Semi-manual ROI analysis does not effectively demix signals of spatially overlapping neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, ROI analysis does not effectively demix signals of spatially overlapping neurons, and drawing ROIs is laborious for large population recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known limitation of ROI analysis methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "In ROI analysis, background contaminations are not adequately corrected, and extracted signals are not sufficiently clean for downstream analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, in many cases, the background contaminations are not adequately corrected, and thus the extracted signals are not sufficiently clean enough for downstream analyses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known problem with existing ROI analysis approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "PCA/ICA analysis typically fails when neural components exhibit strong spatial overlaps.",
+    "claim_type": "EXPLICIT",
+    "source": "As for PCA/ICA analysis, it is a linear demixing method and therefore typically fails when the neural components exhibit strong spatial overlaps (Pnevmatikakis et al., 2016), as is the case in the microendoscopic setting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known limitation and supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Current implementations of CNMF approach often have poor performance on microendoscopic data because the background is not modeled sufficiently accurately.",
+    "claim_type": "EXPLICIT",
+    "source": "When applied to microendoscopic data, CNMF often has poor performance because the background is not modeled sufficiently accurately (Barbera et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of existing CNMF and supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "CNMF-E utilizes a more accurate and flexible spatiotemporal background model than previous CNMF approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, our extended CNMF for microendoscopic data (CNMF-E) approach utilizes a more accurate and flexible spatiotemporal background model that is able to handle the properties of the strong background signal illustrated in Figure 1, along with new specialized algorithms to initialize and fit the model components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a key feature of the proposed method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The rank-1 background model used in previous CNMF approaches fails in many microendoscopic datasets where multiple large overlapping background sources exist.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as we will see below, the local rank-1 model fails in many microendoscopic datasets, where multiple large overlapping background sources exist even within modestly sized FOVs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 2 showing poor performance of rank-1 NMF.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "CNMF-E can reliably estimate large high-rank background fluctuations in simulated data.",
+    "claim_type": "EXPLICIT",
+    "source": "We first use simulated data to illustrate the background model in CNMF-E and compare its performance against the low-rank NMF model used in the basic CNMF approach (Pnevmatikakis et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 2 showing accurate background recovery.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The fluorescence traces of a center pixel and its neighboring pixels are highly correlated due to shared large background fluctuations.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 2C shows that the fluorescence traces of the center pixel and its neighbors are highly correlated due to the shared large background fluctuations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is directly shown in Figure 2C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "CNMF-E can reconstruct complicated background traces while leaving neural signals uncontaminated.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, this example shows that we can reconstruct a complicated background trace while leaving the neural signal uncontaminated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 2D showing accurate separation of background and neural signal.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Higher rank NMF yields generally better reconstruction performance but with high variability and low reliability.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 2H demonstrates that this approach is ineffective: higher rank NMF does yield generally better reconstruction performance, but with high variability and low reliability (due to randomness in the initial conditions of NMF).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2H with error bars indicating variability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "CNMF-E recovers background signal more accurately than high-rank NMF models.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, CNMF-E recovers the background signal more accurately than any of the high-rank NMF models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 2H where CNMF-E outperforms all NMF ranks tested.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "CNMF-E can recover background accurately across a diverse range of background sources.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, CNMF-E can recover the background accurately across a diverse range of background sources, as desired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 2I showing stable performance across varying numbers of background sources.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Applying a Gaussian spatial filter to images reduces the spatially coarser background and boosts the power of neuron-sized objects.",
+    "claim_type": "EXPLICIT",
+    "source": "One of the first steps in our initialization procedure is to apply a Gaussian spatial filter to the images to reduce the (spatially coarser) background and boost the power of neuron-sized objects in the images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3C showing improved visualization after filtering.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The local correlation image computed on spatially filtered data provides a good initial visualization of neuron locations.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 3C, we see that the local correlation image (Smith and H\u00e4usser, 2010) computed on the spatially filtered data provides a good initial visualization of neuron locations; compare to Figure 1B, where the correlation image computed on the raw data was highly corrupted by background signals.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by comparing Figure 3C to Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Spatial filtering reduces shared background activity and remaining neural signals dominate the filtered data.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because spatial filtering reduces the shared background activity and the remaining neural signals dominate the filtered data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3D showing cleaner neural signals in filtered traces.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "CNMF-E successfully identified all 200 neurons and initialized their spatial and temporal components in the simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "In this simulated data, CNMF-E successfully identified all 200 neurons and initialized their spatial and temporal components (Figure 3F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3F displaying all detected neurons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "All initialized neurons have high similarities with the ground truth, indicating good recovery and demixing of all neuron sources.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 3G shows that all initialized neurons have high similarities with the truth, indicating a good recovery and demixing of all neuron sources.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is directly shown in Figure 3G with similarity metrics near 1.0.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The two classes of pixels (neuron centers vs. outside areas) are linearly well separated in local correlation and PNR space, indicating the algorithm is robust with respect to threshold parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "It is clear that the two classes are linearly well separated and the thresholds can be chosen within a broad range of values (Figure 3H), indicating that the algorithm is robust with respect to these threshold parameters here.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3H with clear separation between the two classes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "PCA/ICA fails to identify some neurons and for identified neurons, it recovers temporal traces that are sufficiently noisy that small calcium transients are submerged in noise.",
+    "claim_type": "EXPLICIT",
+    "source": "PCA/ICA fails to identify one neuron, and for the other two identified neurons, it recovers temporal traces that are sufficiently noisy that small calcium transients are submerged in the noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4A comparing PCA/ICA results to ground truth.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "CNMF recovers neuron shapes that remain at the initial condition but with clear contaminations in the temporal traces.",
+    "claim_type": "EXPLICIT",
+    "source": "As for CNMF, the neuron shapes remain more or less at the initial condition (i.e. the ground truth spatial footprints), but clear contaminations in the temporal traces are visible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4A comparing CNMF results to ground truth.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The pure NMF model in CNMF does not model the true background well and residuals in the background are mistakenly captured by neural components.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because the pure NMF model in CNMF does not model the true background well and the residuals in the background are mistakenly captured by neural components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an explanation for CNMF's poor performance and supported by the data in Figure 4A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "CNMF-E recovers the true neural shapes and neural activity with high accuracy in the simulation example.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, on this example, CNMF-E recovers the true neural shapes and neural activity with high accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4A comparing CNMF-E results to ground truth.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "PCA/ICA detected 195 out of 200 neurons while CNMF-E detected all 200 neurons in the simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "We also compare the number of detected neurons: PCA/ICA detected 195 out of 200 neurons, while CNMF-E detected all 200 neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct comparison of detection performance on simulated data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Neurons detected using PCA/ICA have much lower spatial and temporal similarities with the ground truth compared to CNMF-E.",
+    "claim_type": "EXPLICIT",
+    "source": "We also quantitatively evaluated the performance of source extraction by showing the spatial and temporal cosine similarities between detected neurons and ground truth (Figure 4C); we find that the neurons detected using PCA/ICA have much lower similarities with the ground truth (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown quantitatively in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Running the full iterative pipeline of CNMF-E leads to improvements in both spatial and temporal similarities compared with the initialization step results.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, running the full iterative pipeline of CNMF-E leads to improvements in both spatial and temporal similarities, compared with the results in the initialization step.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4C comparing initialization to final CNMF-E results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "PCA/ICA seeks statistically independent components, which forces temporal traces to have near-zero correlation, badly corrupting the correlation structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Since PCA/ICA seeks statistically independent components, which forces the temporal traces to have near-zero correlation, the correlation structure is badly corrupted in the raw PCA/ICA outputs (Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D and is a known property of ICA.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "CNMF-E results matched the ground truth correlation structure very well due to accurate extraction of individual neurons' temporal activity.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the CNMF-E results matched the ground truth very well due to accurate extraction of individual neurons' temporal activity (Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4D comparing estimated to true correlations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "CNMF detects all neurons over a wide SNR range while PCA/ICA fails to detect the majority of neurons when SNR drops to sufficiently low levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4E shows that CNMF-E detects all neurons over a wide SNR range, while PCA/ICA fails to detect the majority of neurons when the SNR drops to sufficiently low levels.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is directly shown in Figure 4E across different SNR reduction factors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Detected neurons in CNMF-E preserve high spatial and temporal similarities with the ground truth across different SNR levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the detected neurons in CNMF-E preserve high spatial and temporal similarities with the ground truth (Figure 4F\u2013G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figures 4F and 4G across different SNR levels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The high accuracy of extracting neurons' temporal activity in CNMF-E benefits from modeling of calcium dynamics, which leads to significantly denoised neural activity.",
+    "claim_type": "EXPLICIT",
+    "source": "This high accuracy of extracting neurons' temporal activity benefits from the modeling of the calcium dynamics, which leads to significantly denoised neural activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 4G comparing CNMF-E with and without denoising.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "CNMF-E extracted 692 putative neural components from the dorsal striatum dataset while PCA/ICA extracted 547 components.",
+    "claim_type": "EXPLICIT",
+    "source": "CNMF-E extracted 692 putative neural components from this dataset; PCA/ICA extracted 547 components (starting from 700 initial components, and then automatically removing false positives using the same criterion as applied in CNMF-E).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct comparison of the number of components detected in experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The background fluctuation dominates the raw data in the selected neuron from the dorsal striatum dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "For the selected neuron, we plot the mean fluorescence trace of the raw data and the estimated background (Figure 6B). These two traces are very similar, indicating that the background fluctuation dominates the raw data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6B where raw and background traces are nearly identical.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The background accounts for around 90% of the variance on average in the dorsal striatum dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 6C (blue) shows the distribution of the background-explained variance over all pixels. The background accounts for around 90% of the variance on average.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown quantitatively in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Neural signals account for less than 10% of the raw signal variance in the dorsal striatum dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We further remove the denoised neural signals and compute the variance reduction; Figure 6C shows that neural signals account for less than 10% of the raw signal variance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Many realistic components were only detected by CNMF-E and these components have low SNRs.",
+    "claim_type": "EXPLICIT",
+    "source": "However, many realistic components were only detected by CNMF-E (shown as the green areas in Figure 6D). In these plots, we rank the inferred components according to their SNRs; the color indicates the relative rank (decaying from red to yellow). We see that the components missed by PCA/ICA have low SNRs (green shaded areas with yellow contours).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6D with green areas indicating CNMF-E-only detections.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "For neurons inferred by both methods, CNMF-E shows significant improvements in the SNR of extracted cellular signals compared to PCA/ICA.",
+    "claim_type": "EXPLICIT",
+    "source": "For neurons that are inferred by both methods, CNMF-E shows significant improvements in the SNR of the extracted cellular signals (Figure 6F), even before the temporal denoising step is applied.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown quantitatively in Figure 6F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "PCA/ICA components have much smaller size, often with negative dips surrounding the neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the CNMF-E results, PCA/ICA components have much smaller size, often with negative dips surrounding the neuron (remember that ICA avoids spatial overlaps in order to reduce nearby neurons' statistical dependences, leading to some loss of signal strength; see (Pnevmatikakis et al., 2016) for further discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 6G and explained by the ICA independence constraint.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The activity traces extracted by CNMF-E are visually cleaner than the PCA/ICA traces, which is important for reliable event detection.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity traces extracted by CNMF-E are visually cleaner than the PCA/ICA traces; this is important for reliable event detection, particularly in low SNR examples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 6G comparing traces from both methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "CNMF-E successfully extracts neural signals from a strong fluctuating background in the PFC dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Again we find that CNMF-E successfully extracts neural signals from a strong fluctuating background (Figure 7A), which contributes a large proportion of the variance in the raw data (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figures 7A and 7B for the PFC dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "PCA/ICA analysis missed 33 components in the PFC dataset that have very weak signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly as with the striatum data, PCA/ICA analysis missed many components that have very weak signals (33 missed components here).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a comparison result for the PFC dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "For matched neurons in the PFC dataset, CNMF-E shows strong improvements in the SNRs of extracted traces compared to PCA/ICA.",
+    "claim_type": "EXPLICIT",
+    "source": "For the matched neurons, CNMF-E shows strong improvements in the SNRs of the extracted traces (Figure 7D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7D for the PFC dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The spatial footprints of PCA/ICA components are shrunk to promote statistical independence between neurons while neurons inferred by CNMF-E have visually reasonable morphologies.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with our observation in striatum (Figure 6G), the spatial footprints of PCA/ICA components are shrunk to promote statistical independence between neurons, while the neurons inferred by CNMF-E have visually reasonable morphologies (Figure 6E).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 7E comparing spatial footprints.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "For traces with low SNRs in the PFC dataset, it is challenging to detect any calcium events from PCA/ICA traces due to large noise variance while CNMF-E is able to visually recover many weaker signals.",
+    "claim_type": "EXPLICIT",
+    "source": "For traces with low SNRs (Figure 7, cell 7-10), it is challenging to detect any calcium events from the PCA/ICA traces due to the large noise variance; CNMF-E is able to visually recover many of these weaker signals.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7E comparing low SNR traces.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "CNMF-E uses a more suitable nonlinear matrix factorization method and has better capability of demixing spatially overlapping neurons compared to PCA/ICA.",
+    "claim_type": "EXPLICIT",
+    "source": "The demixing performance of PCA/ICA analysis can be relatively weak because it is inherently a linear demixing method (Pnevmatikakis et al., 2016). Since CNMF-E uses a more suitable nonlinear matrix factorization method, it has a better capability of demixing spatially overlapping neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 7G showing better demixing of overlapping neurons.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "PCA/ICA forces obtained filters to be spatially separated to reduce dependence while CNMF-E allows inferred spatial components to have large overlaps.",
+    "claim_type": "EXPLICIT",
+    "source": "PCA/ICA forces its obtained filters to be spatially separated to reduce their dependence (thus reducing the effective signal strength), while CNMF-E allows inferred spatial components to have large overlaps (Figure 7G, left), retaining the full signal power.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7G comparing spatial components.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "In PCA/ICA traces from the PFC dataset, some components contain many negative 'spikes' which are highly correlated with spiking activity of nearby neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "In the traces extracted by PCA/ICA, the component labeled in green contains many negative 'spikes,' which are highly correlated with the spiking activity of the blue neuron (Figure 7G, yellow).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7G with highlighted negative spikes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Some PCA/ICA neurons have significant crosstalk with nearby neurons due to failure of signal demixing.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the green PCA/ICA neuron has significant crosstalk with the red neuron due to the failure of signal demixing (Figure 7G, cyan); the CNMF-E traces shows no comparable negative 'spikes' or crosstalk.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7G comparing CNMF-E and PCA/ICA traces.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "In the ventral hippocampus dataset, CNMF-E detected 24 components and PCA/ICA detected 24 components.",
+    "claim_type": "EXPLICIT",
+    "source": "In this example, we detected 24 CNMF-E components and 24 PCA/ICA components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as the result for the hippocampus dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "In the ventral hippocampus dataset, there are 20 components detected by both CNMF-E and PCA/ICA methods.",
+    "claim_type": "EXPLICIT",
+    "source": "In total we have 20 components detected by both methods (shown in the first three rows of Figure 8B+C); each method detected extra components that are not detected by the other (the last rows of Figure 8B+C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figures 8B and 8C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "PCA/ICA filters contain many negative pixels in an effort to reduce spatial overlaps in the ventral hippocampus dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Once again, the PCA/ICA filters contain many negative pixels in an effort to reduce spatial overlaps; see components 3 and 5 in Figure 8A\u2013C, for example.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 8A-C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "CNMF-E traces have much lower noise level and cleaner neural signals than PCA/ICA in both high and low SNR settings in the ventral hippocampus dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We can see that the CNMF-E traces have much lower noise level and cleaner neural signals in both high and low SNR settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figures 8D and 8E comparing traces.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The calcium traces of the three extra neurons identified by PCA/ICA in the ventral hippocampus dataset show noisy signals that are unlikely to be neural responses.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, the calcium traces of the three extra neurons identified by PCA/ICA show noisy signals that are unlikely to be neural responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 8E for PCA/ICA-only components.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The median responses of CNMF-E neurons display prominent responses to footshock stimuli compared with the resting state before stimuli onset in the BNST dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The median responses of CNMF-E neurons display prominent responses to the footshock stimuli compared with the resting state before stimuli onset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 9D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The activity dynamics extracted by PCA/ICA have relatively low SNR in the BNST dataset, making it more challenging to reliably extract footshock responses.",
+    "claim_type": "EXPLICIT",
+    "source": "In comparison, the activity dynamics extracted by PCA/ICA have relatively low SNR, making it more challenging to reliably extract footshock responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 9D comparing CNMF-E and PCA/ICA responses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "CNMF-E outputs significantly more easily detectable responses than PCA/ICA in the BNST footshock experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel E summarizes the results of panel D; we see that CNMF-E outputs significantly more easily detectable responses than does PCA/ICA.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown quantitatively in Figure 9E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Downstream analyses of calcium imaging data can significantly benefit from improvements in accuracy of source extraction offered by CNMF-E.",
+    "claim_type": "EXPLICIT",
+    "source": "This is an example in which downstream analyses of calcium imaging data can significantly benefit from the improvements in the accuracy of source extraction offered by CNMF-E.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 9 showing improved detection of stimulus responses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "More neurons can be tracked across multiple days using CNMF-E outputs compared to PCA/ICA.",
+    "claim_type": "EXPLICIT",
+    "source": "(sheintuch2017tracking recently presented another such example, showing that more neurons can be tracked across multiple days using CNMF-E outputs, compared to PCA/ICA.)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to another study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Strong background signals are largely inescapable in the context of one-photon imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "Since strong background signals are largely inescapable in the context of one-photon imaging, insufficient removal of the background could yield problematic conclusions in downstream analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fundamental property of one-photon imaging.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Insufficient removal of background could yield problematic conclusions in downstream analysis of microendoscopic data.",
+    "claim_type": "EXPLICIT",
+    "source": "Since strong background signals are largely inescapable in the context of one-photon imaging, insufficient removal of the background could yield problematic conclusions in downstream analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a logical consequence of poor background removal.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "CNMF-E can be used in either automatic or semi-automatic mode.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed CNMF-E algorithm can be used in either automatic or semi-automatic mode, and leads to significant improvements in the accuracy of source extraction compared with previous methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a feature of the algorithm.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "CNMF-E requires very few parameters to be specified and these parameters are easily interpretable and can be selected within a broad range.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, CNMF-E requires very few parameters to be specified, and these parameters are easily interpretable and can be selected within a broad range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an advantage of the method and supported by Figure 3H showing robustness to parameter selection.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "CNMF-E performs well across data from a wide diversity of brain areas, SNR regimes, calcium indicators, neuron sizes and densities, and hardware setups.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrated the power of CNMF-E using data from a wide diversity of brain areas (subcortical, cortical, and deep brain areas), SNR regimes, calcium indicators, neuron sizes and densities, and hardware setups. Among all these examples (and many others not shown here), CNMF-E performs well and improves significantly on the standard PCA/ICA approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated across Figures 6-9 showing different experimental datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Improvements from CNMF-E should lead to more stable and interpretable results from downstream analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "Considering that source extraction is typically just the first step in calcium imaging data analysis pipelines (Mohammed et al., 2016), these improvements should in turn lead to more stable and interpretable results from downstream analyses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an expected consequence and supported by the footshock example in Figure 9.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "MATLAB implementation of CNMF-E has been released as open-source software.",
+    "claim_type": "EXPLICIT",
+    "source": "We have released our MATLAB implementation of CNMF-E as open-source software (https://github.com/zhoupc/CNMF_E (Zhou, 2017a)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fact about code availability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "A Python implementation of CNMF-E has been incorporated into the CaImAn toolbox.",
+    "claim_type": "EXPLICIT",
+    "source": "A Python implementation has also been incorporated into the CaImAn toolbox (Giovannucci et al., 2017b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a fact about code availability with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "CNMF-E supports three different modes optimized for different dataset sizes: single-mode, patch-mode, and multi-batch-mode.",
+    "claim_type": "EXPLICIT",
+    "source": "Our MATLAB implementation supports running CNMF-E in three different modes that are optimized for different datasets: single-mode, patch-mode and multi-batch-mode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an implementation feature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Patch-mode CNMF-E allows running in parallel on multi-core CPUs, yielding a speed-up roughly proportional to the number of available cores.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, this mode allows running CNMF-E in parallel on multi-core CPUs, yielding a speed-up roughly proportional to the number of available cores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a feature of the patch-mode implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Expression of GCaMP6f in neurons was achieved using AAV-Syn-GCaMP6f in the dorsal striatum experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Expression of the genetically encoded calcium indicator GCaMP6f in neurons was achieved using a recombinant adeno-associated virus (AAV) encoding the GCaMP6f protein under transcriptional control of the synapsin promoter (AAV-Syn-GCaMP6f).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Cortical neurons were targeted by administering AAV-DJ-CamkIIa-GCaMP6s into the prefrontal cortex in the PFC experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Cortical neurons were targeted by administering two microinjections of 300 ul of AAV-DJ-CamkIIa-GCaMP6s (titer: 5.3 \u00d7 1012, 1:6 dilution, UNC vector core) into the prefrontal cortex (PFC)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The activity of PFC neurons was recorded at 15 Hz over a 10 min period in the PFC experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity of PFC neurons were recorded at 15 Hz over a 10 min period (nVista HD Acquisition Software, Inscopix) while the test subject freely explored an empty novel chamber.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental parameter.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "GCaMP6f was expressed in ventral hippocampal-amygdala projecting neurons by injecting retrograde CAV2-Cre virus into the basal amygdala and AAV1-flex-Synapsin-GCaMP6f into ventral CA1.",
+    "claim_type": "EXPLICIT",
+    "source": "The calcium indicator GCaMP6f was expressed in ventral hippocampal-amygdala projecting neurons by injecting a retrograde canine adeno type 2-Cre virus (CAV2-Cre; from Larry Zweifel, University of Washington) into the basal amydala (coordinates relative to bregma: \u22121.70 AP, 3.00 mm ML, and \u22124.25 mm DV from brain tissue at site), and a Cre-dependent GCaMP6f adeno associated virus (AAV1-flex-Synapsin-GCaMP6f, UPenn vector core) into ventral CA1 of the hippocampus",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "A 0.5 mm diameter GRIN lens was implanted over the vCA1 subregion in the ventral hippocampus experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "A 0.5 mm diameter GRIN lens was then implanted over the vCA1 subregion and imaging began 3 weeks after surgery to allow for sufficient viral expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental procedure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Images were acquired at 15 frames per second while mice explored an Elevated Plus Maze arena in the ventral hippocampus experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Mice were then imaged with Inscopix miniaturized microscopes and nVistaHD Acquisition software as described above; images were acquired at 15 frames per second, while mice explored an anxiogenic Elevated Plus Maze arena.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental parameter.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "GCaMP6s was expressed within CaMKII-expressing neurons in the BNST by injecting AAVdj-CaMKII-GCaMP6s in the BNST experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Calcium indicator GCaMP6s was expressed within CaMKII-expressing neurons in the BNST by injecting the recombinant adeno-associated virus AAVdj-CaMKII-GCaMP6s (packaged at UNC Vector Core) into the anterior dorsal portion of BNST",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Images were acquired at 20 frames per second in the BNST experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Images were acquired at 20 frames per second while the animal was freely moving inside a sound-attenuated chamber equipped with a house light and a white noise generator (Med Associates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental parameter.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Unpredictable foot shocks were 0.75 mA in intensity and 500 ms in duration on a variable interval (VI-60) in the BNST experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Each unpredictable foot shock was 0.75 mA in intensity and 500 ms in duration on a variable interval (VI-60).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an experimental parameter.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  }
+]

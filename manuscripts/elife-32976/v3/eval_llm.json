@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C15",
+      "C16"
+    ],
+    "result": "Bacteriostatic drugs induce homogeneous population dynamics at sub-MIC concentrations, with nearly constant plating efficiency that drops abruptly to zero at the MIC. Colony size decreases with increasing drug concentration, but almost all cells form colonies below the MIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide plate assay data with statistical analysis (linear regression, R\u00b2=0.99) showing constant plating efficiency below MIC. Claims C15-C16 provide independent time-lapse microscopy validation showing homogeneous growth dynamics. Multiple experimental approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Bactericidal drugs induce heterogeneous colony formation at sub-MIC concentrations, with plating efficiency decreasing gradually from 1 to 0. This heterogeneity is not due to heritable resistance, as demonstrated by sequential plating experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 provides plate assay data with linear regression (R\u00b2=0.79) showing gradual decrease. Claim C12 correctly identifies this contrasts with bacteriostatic drugs and deterministic models. Claims C13-C14 provide sequential plating experiments ruling out heritable resistance. The experimental design appropriately tests alternative hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C50"
+    ],
+    "result": "Bactericidal drugs induce stochastic population fluctuations in genetically identical cells under homogeneous conditions, with some cells killed stochastically while others survive and divide. These fluctuations drive some populations to extinction even at sub-MIC concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by time-lapse microscopy data (Figure 2C, Videos, Figure 2\u2014figure supplements 2-3) showing heterogeneous dynamics and extinction events. Visual inspection and quantitative analysis converge. Claim C50 summarizes this key finding. The use of genetically identical cells and controlled conditions strengthens causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Extinction probability increases with drug concentration due to increased death rate (\u03d5), while growth rate (\u03bb) remains nearly constant. Bactericidal drugs primarily affect cell death, not cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by single-cell analysis from time-lapse microscopy (Figure 2\u2014figure supplements 4-6). The analysis method is described in Figure 2\u2014figure supplement 5 with linear regression validation. Claim C24's inference is logically sound given the data. However, the manuscript does not provide error estimates or statistical tests for the claim that \u03bb is constant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C41",
+      "C53",
+      "C65"
+    ],
+    "result": "A Markovian birth-death stochastic model quantitatively predicts extinction probability as P0 = \u03d5/\u03bb at sub-MIC concentrations, with linear dependence on death rate. At the MIC, \u03d5 = \u03bb and P0 = 1. Model predictions agree well with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the model (Appendix 1, Equation A6). Claim C26 shows quantitative agreement between model and experiment (Figure 2D). Claims C41, C53, C65 reinforce this agreement. The model is well-established in population dynamics literature. However, goodness-of-fit statistics beyond visual inspection are not provided, and the R\u00b2 value for the experimental data fit (0.79) suggests moderate scatter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C51",
+      "C69"
+    ],
+    "result": "At drug concentrations above the MIC, all populations eventually go extinct (P0=1), but extinction times are highly variable. The number of live populations decreases exponentially over time, consistent with stochastic model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 present model predictions (Equations A5-A7). Claims C30-C31 provide experimental validation with time-lapse microscopy (Figure 3A-B, Figure 2\u2014figure supplement 3D-F). The semi-log plot shows linear decrease consistent with exponential decay. Claims C51 and C69 summarize these findings. The agreement between model and experiment is visually compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Stochastic clearance occurs even for populations with large inoculum sizes (up to ~20,000 cells), particularly near the MIC where population fluctuations are intensified. MIC values increase with inoculum size (inoculum effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present model predictions about fluctuation magnitude (Equation A16). Claims C35-C40 provide experimental validation using microtiter plate assays with varying inoculum sizes (Figure 3C-D). The experimental design appropriately tests the model predictions. Claim C39 acknowledges the inoculum effect is known, appropriately scoping the novelty. The variation in cell numbers between chambers (~10%, C86) is reasonable but could affect results at small inoculum sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C54",
+      "C55",
+      "C66"
+    ],
+    "result": "Reducing bacterial growth rate (by using poor growth media or adding bacteriostatic drugs) increases extinction probability at sub-MIC concentrations of bactericidal drugs, as predicted by the model (P0 = \u03d5/\u03bb). This strategy was experimentally validated for antibiotic-susceptible bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 present the model-based prediction. Claim C45 provides experimental validation (Figure 4A) showing increased plating inefficiency with growth reduction. Claims C54-C55, C66 summarize the strategy and validation. The experimental design tests the model prediction appropriately. However, the strategy does not work universally (see next result), and statistical significance of increases is not always reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C89",
+      "C90"
+    ],
+    "result": "The growth reduction strategy does not work for all bactericidal drugs. Drugs that only kill growing cells (kanamycin, 6-APA) show no increased extinction with growth reduction. Quinolone drugs (ofloxacin, ciprofloxacin) also show no significant change due to drug-drug interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by experimental data (Figure 4\u2014figure supplements 2-4). Claims C89-C90 provide mechanistic insight showing kanamycin and 6-APA cannot kill non-growing cells. The limitations are appropriately characterized and explained. Claim C47 cites prior work on quinolone-bacteriostatic interactions, appropriately contextualizing the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C74",
+      "C75"
+    ],
+    "result": "Antibiotic-resistant bacteria exhibit stochastic clearance at sub-MIC concentrations, and the growth reduction strategy facilitates their clearance, similar to antibiotic-susceptible bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by experimental data (Figure 4B) using clinically-isolated resistant strains and a laboratory-evolved rifampicin-resistant mutant. Claims C74-C75 reinforce these findings. The extension to resistant bacteria is important for clinical relevance. However, only three resistant strains were tested, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C64",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "The stochastic nature of bacterial clearance exposes fundamental limits in our ability to deterministically predict antibiotic-mediated eradication. Deterministic knowledge from large populations cannot be extrapolated to population extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C64, C70 present the conceptual conclusion. Claims C68, C71 provide specific implications. These claims are logical inferences from the experimental findings (C17-C20, C30-C31, C35-C40) showing stochastic extinction. The conclusion is appropriately scoped, acknowledging inherent unpredictability. However, the practical clinical impact remains to be demonstrated in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C52"
+    ],
+    "result": "The study demonstrates the potential of using sub-MIC antibiotic concentrations, previously deemed inefficacious, to eradicate bacteria through stochastic clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C52 are supported by experimental data showing non-zero extinction probability at sub-MIC concentrations (Figure 2C, Figure 3C-D) and increased clearance with growth reduction strategies (Figure 4A-B). However, this is a proof-of-concept in vitro; clinical translation requires in vivo validation, consideration of pharmacokinetics, and host factors not addressed here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study reconciles deterministic and stochastic frameworks for MIC definition. In both frameworks, \u03d5 = \u03bb at the MIC, but population dynamics differ (maintenance vs. extinction). For small culture volumes, MIC should be defined based on extinction, not maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C81-C83 present the conceptual reconciliation. Claim C82 is supported by experimental data (Figure 2D). Claim C84 provides a practical recommendation for small-volume MIC assays, citing recent work (Avesar et al., 2017). The clarification is logically sound and addresses a methodological issue in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Cell-to-cell variability in gene expression could be one possible molecular mechanism underlying population fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculative, citing previous studies showing gene expression variability affects antibiotic susceptibility. While plausible, this mechanism was not directly tested in the current study. The claim appropriately uses cautious language ('could be'), but experimental validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The observation of stochastic extinction dynamics, especially variability in extinction time, has significant bearing on antibiotic treatment duration and the conventional wisdom of 'complete the prescribed course'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 connects the study's findings to clinical practice, citing Llewelyn et al., 2017. While the connection is logical, the claim is speculative about clinical implications. The in vitro findings need in vivo validation before informing treatment duration guidelines. The claim appropriately uses cautious language ('we believe').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Persisters have little effect on the population dynamics studied here due to their low frequency (~10^-5). However, stochasticity in small populations may complicate persister enrichment and characterization studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by citations to persister frequency studies and appropriate inference about relevance to small populations (<10^5 cells). Claims C79-C80 are speculative but cite a recent study (Brauner et al., 2017) reporting variability in persistence studies. The discussion appropriately scopes the relevance of persisters to the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C63"
+    ],
+    "result": "Background claims about antibiotic resistance burden, treatment failures, previous deterministic models, and infectious doses are supported by appropriate citations to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C63 provide background context with appropriate citations. These are standard literature review claims establishing motivation and context. The citations appear appropriate, though the specific projections in C1 (O'Neill, 2016) have been debated in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methods and materials are described, including bacterial strains, culture conditions, resistant strain generation, and experimental calibrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C85-C88 describe experimental methods and materials. These are factual statements about procedures performed. Claim C86 notes ~10% variation in cell distribution, which is reasonable. Claim C87 provides calibration data. These methodological details support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C76",
+      "C91"
+    ],
+    "result": "General knowledge claims about antibiotic resistance, MIC as a critical parameter, and lower susceptibility of non-growing bacteria are supported by established knowledge and citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C76, C91 state established knowledge in the field, with C91 providing a citation. These are appropriate background statements that do not require extensive validation in the current study.",
+    "result_type": "MINOR"
+  }
+]

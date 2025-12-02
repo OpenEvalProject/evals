@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors processed GCxGC-TOFMS data from 30 Bangladeshi plasma samples, resolving 394 peaks which were filtered to 236 metabolite peaks suitable for modeling. Of these, 27.5% had putative annotations, 3.4% had metabolite class assignments, 13.6% were of uncertain identity, and 55.5% were unknown. One outlying fever control sample was excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 describe the data processing pipeline with specific quantitative results. The methodology is clearly described with appropriate quality control (filtering low-quality peaks, removing run order correlations, excluding outliers). The high proportion of unknown metabolites (55.5%) is acknowledged, which is transparent reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C5"
+    ],
+    "result": "An OPLS-DA model using 236 metabolite features provided excellent predictive power for distinguishing culture-positive typhoid patients from fever controls (p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C5 report statistically significant separation between typhoid and control groups with appropriate p-value. The model performance is supported by Figure 1A showing clear separation between groups. The use of cross-validation (tcv[1]) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C25",
+      "C64"
+    ],
+    "result": "Among 9 clinically suspected typhoid patients with negative blood cultures, 5/9 had metabolite profiles indicative of culture-positive typhoid, with 3/5 of these being PCR-positive for S. Typhi. There was significant overlap between culture-negative/suspected typhoid profiles with both culture-positive and fever control groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe prediction results for culture-negative cases with independent PCR validation supporting 3/5 predictions. The overlap observation (C26) is appropriately acknowledged. The concordance between metabolite prediction and PCR results provides orthogonal validation, though the small sample size (n=9) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C65",
+      "C66"
+    ],
+    "result": "Urine metabolite analysis using UPLC-Q-TOFMS with 941 metabolite peaks showed significant separation between typhoid patients and fever controls (p=0.025), but did not provide the same predictions as plasma samples for culture-negative patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C65-C66 report statistically significant urine metabolite differences but acknowledge discordance with plasma predictions for culture-negative cases. The p-value (0.025) is weaker than plasma results (0.006), and the lack of concordance for culture-negative predictions suggests urine may be less reliable for this application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Comparing Bangladeshi and Nepali cohorts, 99 common metabolites were identified, with 33 consistently up- or downregulated between typhoid patients and controls. Of these, 15 metabolites met stricter significance criteria in Bangladesh and all 33 were significant in Nepal. OPLS-DA models with these 15 metabolites showed significant separation in both cohorts (Bangladesh p=0.016, Nepal p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe cross-cohort validation with appropriate statistical testing. The stronger significance in the Nepali cohort (p<0.0001) versus Bangladeshi cohort (p=0.016) is noted. The use of different significance thresholds between cohorts is transparent, though the rationale for different criteria is not explained. Figure 2 supports the separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Models using all 33 correspondingly regulated metabolites could distinguish typhoid from controls in the Nepali cohort (p<0.0001) but showed weaker performance in the Bangladeshi cohort (p=0.077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 report model performance with all 33 metabolites. The Nepali result is highly significant, but the Bangladeshi result (p=0.077) does not meet conventional significance thresholds (p<0.05), suggesting the full 33-metabolite panel may not be robust across cohorts. The discrepancy raises questions about generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A validation cohort of 54 plasma samples from Bangladesh and Senegal (14 typhoid, 15 malaria, 25 other infections) was analyzed using GC-TOFMS. After processing 247 metabolites filtered to 104, OPLS-DA models showed significant separation between typhoid and all controls (p<0.0001), with clear separation for Bangladeshi samples and majority of Senegalese samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 and C83-C86 describe independent validation using different analytical platform (GC-TOFMS vs GCxGC-TOFMS) and geographically diverse samples. The highly significant p-value (p<0.0001) and use of different control groups (malaria, other pathogens) strengthen validation. One overlapping control is noted, showing transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Typhoid samples were significantly separated from malaria samples (p=0.0001), with two overlapping Senegalese typhoid samples potentially indicating co-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 report significant discrimination between typhoid and malaria, which is clinically important given overlapping presentations (C45). The p-value is strong. However, C47's interpretation of overlap as co-infection is speculative without confirmatory testing. The claim appropriately uses \"potentially,\" acknowledging uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C6",
+      "C69"
+    ],
+    "result": "Across all three cohorts (Bangladeshi/Senegalese validation, primary Bangladeshi, and Nepali), 49 common metabolites were identified, with 24 consistently up- or downregulated. These 24 metabolites showed significant separation in the validation cohort (p<0.0001) and Nepali cohort (p<0.0001), but weaker performance in the primary Bangladeshi cohort (p=0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C52, C6, and C69 identify 24 metabolites validated across cohorts. Strong performance in validation and Nepali cohorts supports the panel, but the non-significant result in primary Bangladeshi cohort (p=0.39) is concerning. The inconsistency across cohorts raises questions about robustness. The claim that these metabolites \"have the potential\" (C69) is appropriately cautious but the evidence is mixed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The identified metabolites include glycerol-3-phosphate (carbon source/phospholipid precursor), stearic acid (liposome component), linoleic acid (bactericidal activity), pyruvic acid, creatinine, with leucine and phenylalanine consistently regulated across all collections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 identify specific metabolites with biological functions supported by citations. The consistent regulation of leucine and phenylalanine across cohorts (C74) is a data-driven observation. The biological interpretations are appropriately cited to literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C62",
+      "C63"
+    ],
+    "result": "A validated metabolite panel can distinguish typhoid from other febrile diseases including malaria, providing a new diagnostic approach. The panel significantly discriminated culture-positive typhoid from alternative febrile diseases across validation cohorts from Asia and Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C76, C62-C63 present the main conclusion. While significant discrimination was shown in validation cohorts, the inconsistent performance of the 24-metabolite panel across cohorts (particularly p=0.39 in primary Bangladeshi cohort, C52) undermines the claim of a robust validated panel. The approach shows promise but requires larger validation studies before claiming a diagnostic panel is \"validated.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Future work should corroborate these metabolite targets in larger patient numbers, incorporate them into simple diagnostic test formats, and potentially expand to other tropical febrile diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 appropriately identify necessary future work. Given the inconsistent performance across cohorts and small sample sizes, larger validation studies are indeed needed. The suggestions are reasonable next steps and acknowledge current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C25",
+      "C45",
+      "C67",
+      "C75"
+    ],
+    "result": "Background context establishes that typhoid is caused by S. Typhi, affects 21 million people annually, is diagnosed by blood culture (which lacks sensitivity), and presents diagnostic challenges particularly for culture-negative cases. Malaria has overlapping clinical presentation with typhoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14, C25, C45, C67, C75 provide established background knowledge appropriately supported by citations. These contextual claims are well-established in the field and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Previous work by the authors demonstrated that metabolite profiles could segregate S. Typhi, S. Paratyphi A, and asymptomatic controls in Nepal, with six metabolites defining the infecting pathogen. The previous study used asymptomatic controls and aimed to distinguish between genetically related pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C16, C54-C57 describe prior work appropriately cited to the authors' previous publication. These claims provide context for the current study and are supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C53",
+      "C68"
+    ],
+    "result": "The current study aimed to identify S. Typhi metabolite profiles in different settings without S. Paratyphi A, using heterogeneous fever controls and suspected typhoid patients, which more closely reflects real clinical situations and provides a new approach for investigating culture-negative patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C53, C68 describe study objectives and design rationale. The use of fever controls rather than asymptomatic controls is indeed more clinically relevant. These are interpretive claims about study design that are reasonable and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C4"
+    ],
+    "result": "The study analyzed plasma and urine samples from 30 Bangladeshi patients (10 culture-positive typhoid, 9 clinically suspected typhoid, 11 fever controls) using GCxGC-TOFMS for plasma and UPLC-Q-TOFMS for urine. Validation samples from 54 patients were analyzed using GC-TOFMS. Data were analyzed using chemometrics-based pattern recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C87-C90, C4 describe study design and methods. Sample sizes are clearly stated, analytical platforms are specified, and analysis approach is described. The methods are appropriately detailed though full methodological details are referenced to supplementary materials.",
+    "result_type": "MINOR"
+  }
+]

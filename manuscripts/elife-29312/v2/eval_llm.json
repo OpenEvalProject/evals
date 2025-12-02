@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10"
+    ],
+    "result": "Single-cell quantitative RT-PCR analysis of 95 genes in mouse embryonic yolk sac and AGM at E9, E10.5, and E11 identified three major cell populations during endothelial-to-hematopoietic transition (EHT): endothelial cells (Endo), pre-hematopoietic stem/progenitor cells (Pre-HSPCs), and hematopoietic stem/progenitor cells (HSPCs). Pre-HSPCs specifically co-express seven transcription factors (Erg, Fli1, Tal1, Lyl1, Lmo2, Runx1, and Gata2), a combination not found in Endo or HSPC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide converging evidence from experimental design (C1-C3), clustering analysis (C4), and gene expression profiling (C5, C7, C9, C10) that collectively support the identification of three distinct populations and the specific co-expression pattern of seven TFs in Pre-HSPCs. The data are internally consistent and supported by figures referenced in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "An inducible ESC line (i8TFs) expressing eight transcription factors (Runx1, Cbfb, Gata2, Tal1, Fli1, Lyl1, Erg, and Lmo2) linked by T2A sequences was generated and validated. Upon doxycycline induction during hemangioblast differentiation, almost all cells acquired a VE-Cad+ CD41+ phenotype with decreased round cell morphology and reduced S-phase frequency (40% decrease), while maintaining cell viability. The induced cells showed dramatically increased colony-forming units in CFU assays, indicating enhanced hematopoietic differentiation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 describe a coherent experimental system with appropriate validation (C14) and multiple phenotypic readouts (C15-C21). The flow cytometry, time-lapse imaging, cell cycle analysis, viability assays, and functional CFU assays provide complementary evidence supporting the conclusion that simultaneous expression of eight TFs drives cells toward a Pre-HSPC-like state with enhanced hematopoietic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Microarray analysis of i8TFs cells revealed that overexpression of the eight TFs led to reduced expression of vasculature/heart development genes and increased expression of immune system/vasculature development genes. Surprisingly, only 26 genes (10%) overlapped between differentially expressed genes and the 927 heptad targets identified by ChIP-seq, suggesting that gene expression changes were not a direct consequence of the eight-TF complex binding at regulatory elements, but rather due to individual TF functions acting on gene regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C79-C81 present microarray data with GO analysis and comparison to ChIP-seq data. The low overlap (26/927 genes, ~3%) between DEGs and known heptad targets is a surprising but well-documented finding that challenges the simple model of a unified eight-protein complex. The interpretation (C25, C80, C81) is appropriately cautious and supported by the quantitative overlap analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Single-cell qRT-PCR analysis of i8TFs and eight individual i1TF cell lines after BL-CFC culture identified six cell clusters (Endo, VSM, Pre-HSPCs, EryPCs_I, EryPCs_II, MyePCs). None of the i1TF lines qualitatively resembled i8TFs. The i8TFs +dox cells formed a Pre-HSPCs population co-expressing endothelial and hematopoietic genes. Individual TF overexpression had limited effects: Gata2 increased EryPCs_II frequency ~4-fold, while Erg and Fli1 slightly increased Pre-HSPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe systematic single-cell analysis comparing i8TFs to individual TF overexpression lines. The hierarchical clustering (C27) with clear marker gene definitions (C28-C30) and statistical comparison (C32-C33) provide robust evidence that the combinatorial effect of eight TFs is distinct from individual TF effects. The data support the conclusion that multiple TFs are required for the Pre-HSPC phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Single-cell RNA sequencing showed that i8TFs +dox cells clustered separately from control cells with reduced variance on PC2, indicating that i8TFs +dox cells are more homogeneous than control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe PCA analysis of sc-RNA-seq data showing clear separation and reduced variance in i8TFs +dox cells. The observation of reduced variance (C35) supporting the interpretation of increased homogeneity (C36) is consistent with the flow cytometry data showing uniform VE-Cad+ CD41+ phenotype. The conclusion is appropriately supported by the dimensional reduction analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Flow cytometry analysis showed that ~99% of VE-cad+ cells in i8TFs +dox condition have a Pro-HSCs phenotype (VE-Cad+ CD41+ CD43\u2212 CD45\u2212). However, single-cell qRT-PCR revealed that Pro-HSCs from E10 AGM are heterogeneous (only half express blood genes), while Pre-HSCs type I are homogeneous (all express hematopoietic genes at lower endothelial gene levels). Clustering analysis showed that i8TFs +dox cells transcriptionally resemble Pre-HSCs type I rather than Pro-HSCs, despite their Pro-HSCs surface phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 reveal an important discrepancy between surface marker phenotype and transcriptional profile. The flow cytometry (C37), single-cell qRT-PCR (C38-C39), and clustering analysis (C40-C42) provide complementary evidence supporting the conclusion (C43). This demonstrates the power of single-cell transcriptomics to reveal distinctions not apparent from surface markers alone. The data are internally consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Network analysis using distance correlation (dcor) and conditional pdcor statistics on sc-RNA-seq data from i8TFs cells identified regulatory relationships among the eight TFs and additional seed genes (Gata1, Gfi1b, Spi1, Ldb1, Cbfa2t3). The analysis revealed a core network of Erg, Lyl1, Lmo2, Tal1, Gfi1b, and Gata1 with Fli1 and Runx1 on opposite periphery ends. Network targets included known genes like Gpr56 and Nfe2. Luciferase reporter assays validated that two Gpr56 enhancers bound by seven of eight TFs showed strong induction upon eight-TF expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 describe a comprehensive network analysis with appropriate methodology (C44-C45), expanded seed genes (C46), network structure characterization (C47-C49), and experimental validation (C51-C52). The luciferase reporter assay (C52) provides functional validation of a predicted network target, strengthening confidence in the computational approach. The integration of computational and experimental validation is a strength of this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Network analysis of the Pereira dataset revealed that Fli1 and Runx1 share 210 target genes but with opposing correlations. Genes positively correlated with Fli1 and negatively with Runx1 are enriched for vascular development/angiogenesis terms, while genes with opposite correlation pattern are enriched for immune system process terms. ChIP-seq data showed 77/210 genes are direct targets of both TFs. Expression analysis showed a clear shift in Fli1/Runx1 relative expression between endothelial cells and HSPCs, suggesting opposing functional properties of these TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 present network analysis of an independent dataset (Pereira) with genome-wide correlation analysis (C54), GO enrichment (C55-C56), ChIP-seq validation (C58), and expression pattern analysis (C59). The convergence of computational correlation analysis, functional enrichment, and ChIP-seq binding data provides strong support for the conclusion of opposing Fli1/Runx1 functions (C57, C60). The use of an independent dataset strengthens the generalizability of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Gain-of-function analysis showed that iFli1 and iErg increased Endo and Pre-HSPCs populations, while iRunx1 and iGata2 increased EryPCs_II and decreased MyePCs. Based on this, i5TFs (lacking Runx1, Gata2, Cbfb) and i6TFs (lacking Erg, Fli1) cell lines were generated. i5TFs overexpression increased VE-Cad+ CD41+ and VE-Cad+ CD41\u2212 populations with decreased round cells, while i6TFs had minor impact on VE-cad/CD41 but increased round hematopoietic cells. Single-cell qRT-PCR confirmed i5TFs decreased EryPCs_I while increasing Endo/Pre-HSPCs, and i6TFs increased EryPCs_II, suggesting Fli1/Erg and Runx1/Gata2 have opposing effects on cell-fate decisions during EHT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 describe a systematic loss-of-function approach (removing specific TFs from the eight-TF cocktail) with multiple complementary readouts: flow cytometry (C65-C66, C68), time-lapse imaging (C67, C69), and single-cell qRT-PCR (C70-C71). The hypothesis-driven design (C63-C64) followed by experimental validation and the consistency across multiple assays strongly support the conclusion of opposing TF functions (C72). This is a key mechanistic finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Single-cell transcriptomics defined three main populations during blood formation (endothelial, Pre-HSPCs, HSPCs) and demonstrated for the first time that heptad genes are specifically co-expressed at single-cell level within Pre-HSPCs, a combination not found in other populations. Enforced expression of heptad genes plus Cbfb gave rise to Pre-HSPCs in culture, suggesting this co-expression is necessary for cells to reach the transient Pre-HSPCs stage. Pre-HSPCs represent the pivotal stage where competition between developmental programs occurs, with the balance of Erg, Fli1, Gata2, and Runx1 activity having the most important role in EHT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C77-C78, and C98-C100 synthesize the major findings of the study. The conclusions are well-supported by the comprehensive single-cell analysis (C73-C75), gain-of-function experiments (C77), and mechanistic dissection (C98-C100). These represent the primary conclusions of the manuscript and are supported by multiple independent lines of evidence presented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "Network analysis revealed an unexpected opposite relationship between Runx1 and Fli1 functions, with Gata2 and Lmo2 potentially acting as cooperative co-regulators. A model is proposed where initially Erg/Fli1 drive endothelial fate, then Runx1/Gata2 expression initiates hematopoietic program. At Pre-HSPCs stage, endothelial genes are downregulated despite stable Fli1/Erg expression, suggesting a functional switch for Fli1/Erg toward hematopoietic fate. At HSPC stage, Erg expression is suppressed and Fli1 is fully dedicated to hematopoietic program with Runx1. Single-cell transcriptomics revealed this unexpected change in Fli1 activity as a critical process for proper EHT completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C97 and C103-C104 present a comprehensive model integrating network analysis, expression dynamics, and functional data. The model is well-supported by the opposing correlation patterns (C82), expression dynamics (C88-C89, C95), and functional validation from i5TFs/i6TFs experiments. However, some mechanistic details (C91-C94) are speculative and presented as hypotheses with supporting citations rather than direct experimental evidence in this study. The core conclusion about Fli1 functional switching (C90, C103-C104) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C76",
+      "C101",
+      "C102"
+    ],
+    "result": "The seven transcription factors have been proposed to work together as a complex (Wilson et al., 2010), and their co-expression might be important for establishing Pre-HSPCs identity. This co-expression pattern may be conserved in human EHT. The Tal1/Lmo2/Lyl1 axis might have an essential role in priming EHT, as Tal1 acts as a repressor of alternative cellular programs and is actively needed to initiate EHT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11, C76, C101-C102 integrate prior literature (C8, C76, C102) with interpretations from current data (C11, C101). The claim about conservation in human EHT (C76) is supported by citation to Guibentif et al., 2017. The speculation about Tal1/Lmo2/Lyl1 axis (C101) is appropriately presented as a hypothesis with supporting citations (C102). These claims appropriately distinguish between established knowledge, current findings, and speculative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Based on findings, conditions reinforcing Runx1-Fli1 interaction would probably help tilt balance toward hematopoietic fate, while preventing this interaction could impair blood cell formation from endothelium. More generally, dual competing function for a transcription factor might be key for other developmental transitions like epithelial-to-mesenchymal transition. The bioinformatics approach could be applicable to other developmental processes, and the discrepancy between bulk and single-cell analyses could prompt researchers to revisit previous assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 are speculative statements about future work and broader implications. While these are reasonable extrapolations from the findings, they represent hypotheses rather than tested conclusions. C105-C106 are testable predictions that would require additional experiments. C107-C109 are broader speculations about applicability to other systems without supporting data. These are appropriately presented as discussion points but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background knowledge claims establish that HSPCs are generated in yolk sac (E7-E7.5) and AGM (E10.5+) through endothelial-to-hematopoietic transition (EHT), that Cbfb is essential for Runx1 function, that Gfi1\u2212/\u2212Gfi1b\u2212/\u2212 cells cannot complete EHT, and that EHT can be recapitulated in vitro using ESC differentiation. Gfi1\u2212/\u2212Gfi1b\u2212/\u2212 cells clustered with Pre-HSPCs, reinforcing that this population is an essential intermediary step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 combine established background knowledge (C110-C112, C115) with experimental validation (C113-C114). The background claims are appropriately cited. The experimental observation that Gfi1\u2212/\u2212Gfi1b\u2212/\u2212 cells cluster with Pre-HSPCs (C113-C114) provides functional validation that Pre-HSPCs represent an intermediate stage, as cells lacking repressors required for EHT completion are arrested at this stage. This is well-supported evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In vitro ESC differentiation followed by Flk1+ cell isolation and culture for 1.5 days before sc-qRT-PCR identified four groups by hierarchical clustering: Endo, HSPCs, Pre-HSPCs, and VSM. The VSM group is characterized by high Acta2/Serpine1 expression and low endothelial/hematopoietic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 describe the in vitro experimental system that recapitulates in vivo findings. The methodology (C116) is clearly described with appropriate citations. The clustering results (C117) and VSM characterization (C118) are supported by referenced figures. This establishes that the in vitro system is a valid model for studying EHT, which is important for the subsequent gain-of-function experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1847 @@
+{
+  "submission": {
+    "id": "e235fa9c-3a5b-42d4-b039-ab98a4212917",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:40:57.619135Z",
+    "updated_at": "2025-12-01T19:40:57.619135Z"
+  },
+  "content": [
+    {
+      "id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "submission_id": "e235fa9c-3a5b-42d4-b039-ab98a4212917",
+      "content_type": "manuscript",
+      "content_text": "# Mechanosensory neurons control the timing of spinal microcircuit selection during locomotion\n\n## Authors\n\n- Steven Knafo<sup>1</sup> ([ORCID: 0000-0002-8733-0429](https://orcid.org/0000-0002-8733-0429))\n- Kevin Fidelin<sup>1</sup> ([ORCID: 0000-0001-7676-1410](https://orcid.org/0000-0001-7676-1410))\n- Andrew Prendergast<sup>1</sup>\n- Po-En Brian Tseng<sup>1</sup>\n- Alexandre Parrin<sup>1</sup>\n- Charles Dickey<sup>1</sup>\n- Urs Lucas B\u00f6hm<sup>1</sup>\n- Sophie Nunes Figueiredo<sup>1</sup>\n- Olivier Thouvenin<sup>1</sup> ([ORCID: 0000-0003-4853-7555](https://orcid.org/0000-0003-4853-7555))\n- Hugues Pascal-Moussellard<sup>1</sup>\n- Claire Wyart<sup>1</sup> ([ORCID: 0000-0002-1668-4975](https://orcid.org/0000-0002-1668-4975)) \u2020\n\n### Affiliations\n\n1. Institut du Cerveau et de la Moelle \u00e9pini\u00e8re (I.C.M.) Sorbonne Universit\u00e9s, UPMC Univ Paris 06, Inserm, CNRS, Institut du Cerveau et la Moelle \u00e9pini\u00e8re, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re Paris France\n2. AP-HP H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite numerous physiological studies about reflexes in the spinal cord, the contribution of mechanosensory feedback to active locomotion and the nature of underlying spinal circuits remains elusive. Here we investigate how mechanosensory feedback shapes active locomotion in a genetic model organism exhibiting simple locomotion\u2014the zebrafish larva. We show that mechanosensory feedback enhances the recruitment of motor pools during active locomotion. Furthermore, we demonstrate that inputs from mechanosensory neurons increase locomotor speed by prolonging fast swimming at the expense of slow swimming during stereotyped acoustic escape responses. This effect could be mediated by distinct mechanosensory neurons. In the spinal cord, we show that connections compatible with monosynaptic inputs from mechanosensory Rohon-Beard neurons onto ipsilateral V2a interneurons selectively recruited at high speed can contribute to the observed enhancement of speed. Altogether, our study reveals the basic principles and a circuit diagram enabling speed modulation by mechanosensory feedback in the vertebrate spinal cord.\n\n## Introduction\n\nThe generation of complex motor behaviors at a given speed relies on the sequential selection and orderly activation of groups of muscles by the nervous system (Bellardita and Kiehn, 2015). At the level of locomotor circuits in the spinal cord, premotor excitatory V2a interneurons and motor neurons are recruited in a frequency-dependent manner (Crone et al., 2008; Kimura et al., 2006; McLean et al., 2007), a feature thought to underlie speed control in zebrafish (McLean et al., 2008). Recently, circuit-mapping experiments revealed preferential connectivity profiles between identified groups of V2a interneurons and motor neurons suggesting that distinct microcircuit modules could regulate the mobilization of individual muscles during locomotion (Ampatzis et al., 2014; Bagnall and McLean, 2014). Genetic ablation of V2a interneurons in mammals is associated with deficits in left-right coordination and gait transitions suggesting that V2a interneurons play a key role in controlling speed across vertebrates (Crone et al., 2008). The nature of spinal circuits involved in motor pattern generation and speed control has mainly been studied during fictive locomotion when sensory feedback is absent (Kiehn, 2016; McLean and Dougherty, 2015). However, less is known about the cellular and circuit mechanisms regulating the timing of microcircuit selection in the spinal cord during movement, which incorporate proprioceptive feedback from muscle contraction.\n\nPeripheral mechanosensory feedback plays a critical role in setting the timing of muscle activation during movement (Windhorst, 2007). In particular, stimulation of afferent sensory neurons in decerebrate and paralyzed cats can reorganize the pattern of motor output during fictive locomotion, either by entraining or resetting the locomotor rhythm, depending on the nature of active spinal circuits (Conway et al., 1987; Guertin et al., 1995; Jankowska, 1992; McCrea, 2001; Rossignol et al., 2006). In addition, altering the development of peripheral sensory neurons leads to dramatic perturbations of motor sequences during walking and swimming in mice, suggesting that mechanosensory circuits can directly control the activity of spinal central pattern generators responsible for rhythmic motor outputs (Akay et al., 2014; Takeoka et al., 2014). However, the molecular identity of spinal neurons mediating these effects in mammals remains elusive.\n\nTo understand the contribution of mechanosensory feedback to speed control, we investigated the role of spinal mechanosensory neurons during acoustic escape responses in the zebrafish larva, a genetic model system with tractable locomotor behaviors that can be analyzed using fine kinematic analysis. We developed a bioluminescence-based assay to monitor the activity of populations of spinal motor neurons in moving animals and combined this approach with calcium imaging and quantitative kinematic analysis of locomotor behaviors to compare the dynamics of motor activity in active and fictive swimming. We demonstrate that glutamatergic mechanosensory neurons enhance the recruitment of spinal motor neurons during motion by increasing locomotor frequency, and consequently, the speed of locomotion. In particular, we show that mechanosensory feedback selectively enhances the fast regime over the slow regime during escape responses, thereby promoting the transition between fast and slow locomotion. Using optogenetics for circuit connectivity mapping, we identified a functional microcircuit module formed by mechanosensory Rohon-Beard neurons onto ipsilateral glutamatergic V2a interneurons selectively active during fast locomotion. Altogether our results reveal how spinal microcircuits controlling locomotor frequency can be selected by mechanosensory pathways to enhance speed during active locomotion.\n\n## Results\n\n### Monitoring the recruitment of spinal motor neurons in moving animals\n\nIn order to investigate the contribution of sensorimotor circuits during locomotor activity in zebrafish larvae, we used the bioluminescent calcium sensor GFP-Aequorin to monitor calcium activity emitted by identified neuronal populations in freely moving animals (Baubet et al., 2000; Naumann et al., 2010; Shimomura et al., 1962). To maximize expression of GFP-Aequorin in zebrafish motor circuits, we codon-optimized the Aequorin sequence and targeted its expression to spinal motor neurons. We recorded bioluminescence signals emitted from spinal motor neurons during active behaviors elicited by an acoustic stimulus in Tg(mnx1:gal4;UAS:GFP-aequorin-opt) zebrafish larvae at four days post-fertilization (dpf) (Figure 1A\u2013B, see Materials and methods). To remove the concern of collecting unspecific signals following large changes in intracellular calcium concentration in muscle fibers during tail contractions, we systematically determined both in live animals and after GFP immunostainings that there was no expression in non-neuronal tissues such as muscles (Figure 1B, n\u00a0=\u00a05 larvae, Video 1). Acoustic stimulations triggered stereotypical escape responses characterized by an asymmetrical initial C-bend followed by fast swimming. In rare cases, possibly due to coelenterazine application, acoustic stimulations led to stereotypical slow swims characterized\u00a0by symmetrical bends with undulations propagating from rostral to caudal along the tail (7.4% of trials, 21 out of 283 stimulations; see Mirat et al. [2013]) (Figure 1C\u2013D, Videos 2\u20133, n\u00a0=\u00a010 larvae, see Budick and O'Malley, 2000). Each locomotor behavior was associated with a specific bioluminescence signal (Figure 1D, Videos 2\u20133). While time-to-peak and time decay of bioluminescence signals were invariant across maneuvers (data not shown), stereotypical escape responses generated larger bioluminescence amplitudes than slow swims (Figure 1D\u2013E, mean bioluminescence amplitude\u00a0=\u00a030.8\u00a0+\u00a0/- 1.4 photons/10 ms for escapes and 4.1\u00a0\u00b1\u00a01.6 photons/10 ms for slow swimming, p<0.001). Bioluminescence signal amplitude correlated with the maximal angle of the tail bend (Figure 1F, R\u00a0=\u00a00.4, p<0.001), suggesting that spinal motor neuron recruitment is increased during behaviors with larger tail bends and faster locomotor frequencies. However, monitoring global bioluminescence signals lacks the single cell resolution required to explain whether these increased bioluminescence signals result from the recruitment of additional motor neurons during fast locomotion or from increased signals in the same pool of active cells. To decipher between these possibilities we recorded the activity of pools of motor neurons using the genetically-encoded calcium indicator GCaMP6f during spontaneous fictive slow swimming and elicited fictive escape responses in Tg(mnx1:gal4;UAS:GCaMP6f,cryaa:mCherry) (Figure 2A\u2013B, B\u00f6hm et al., 2016). This strategy allowed us to monitor dynamics of both individual neurons and populations of neurons during locomotor behaviors previously probed using bioluminescence. At 4 dpf, fictive locomotor burst frequencies ranged between 20\u201330 Hz for slow swims (left panel of Figure 2C, see Masino and Fetcho [2005]) and 20\u201380 Hz for escapes (right panel of Figure 2C). During slow swimming, a small fraction of ventral motor neurons was active (23.2%, left panel of Figure 2D, Figure 2E, Video 4). In contrast, the majority of motor neurons, including large dorsal motor neurons, was recruited during escapes (88.4%, right panel of Figure 2D, Figure 2E, and Video 5). Dorsalmost motor neurons showed larger calcium transients than ventral ones (Figure 2D), and the averaged \u0394F/F across all recruited motor neurons was higher during escapes compared to slow swims (Figure 2F, mean \u0394F/F/active cell\u00a0=\u00a091.1\u00a0+\u00a0/- 4.7% during escape responses and 25.9\u00a0\u00b1\u00a03.8% during slow swimming, p<0.001, n\u00a0=\u00a010 larvae). These data revealed that the generation of fast escape responses requires the recruitment of more spinal motor neurons compared to slow swimming and that the amplitude of calcium signals are higher in cells active during escapes compared to spontaneous swimming. Therefore, we conclude that high bioluminescence signal amplitude during escape responses compared to slow swims likely results from the combination of two effects: a larger pool of active cells driven by an increase in swimming frequency and larger calcium transients per active neuron.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig1-v3.jpg)\n\n**Figure 1.:** (A) Bioluminescence signals emitted from spinal motor neurons in Tg(mnx1:gal4;UAS:GFP-aequorin-opt) zebrafish larvae at 4 dpf were recorded using a photomultiplier tube under infrared illumination during active behaviors elicited by an acoustic stimulus. (B) Live fluorescent image (upper panel) and immunohistochemistry for GFP (lower panel) in a 4 dpf Tg(mnx1:gal4;UAS:GFP-aequorin-opt) zebrafish larva showing selective expression in spinal motor neurons (arrowhead: dorsal primary, arrow: ventral secondary motor neurons), and strictly no expression in muscle fibers (n\u00a0=\u00a05). (C) Motor behaviors elicited by acoustic stimuli. Superimposed traces illustrate the amplitude of tail contractions over time, for each behavior. Traces are color-coded according to the delay from stimulus onset. Automated categorization classified maneuvers into escapes (n\u00a0=\u00a0245/283) or swims (n\u00a0=\u00a021/283) (n\u00a0=\u00a010 larvae and 300 trials). (D) Example traces of typical bioluminescence signals and kinematic parameters observed for each category. (E) Mean bioluminescence amplitude was higher for escapes (28.4\u00a0\u00b1\u00a00.9 photons/10 ms; normalized amplitude per larva\u00a0=\u00a00.41\u00a0+\u00a0/- 0.18) than swims (3.9\u00a0\u00b1\u00a01.4 photons/10 ms, p<0.001; normalized amplitude\u00a0=\u00a00.06\u00a0+\u00a0/- 0.02, p<0.001). (F) Correlation between bioluminescence signal amplitude and maximum tail angle amplitude (R\u00a0=\u00a00.4, p<0.001).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig2-v3.jpg)\n\n**Figure 2.:** (A) Calcium transients emitted from spinal motor neurons in Tg(mnx1:gal4;UAS:GCaMP6f,cryaa:mCherry) zebrafish larvae at 4 dpf were recorded simultaneously with ventral nerve root recordings (VNR) during fictive behaviors elicited by a water puff to the otic vesicle. (B) Expression pattern in a Tg(mnx1:gal4;UAS:GCaMP6f,cryaa:mCherry) larva at 4 dpf (R is rostral, V is ventral; scale bar is 50 \u00b5m). (C) VNR for each fictive behavior illustrates typical spontaneous fictive slow swims and induced fictive escapes: burst frequencies ranged between 20\u201330 Hz for slow swims (left panel) and 20\u201380 Hz for escapes (right panel). (D) GCaMP6f signals from individual motor neurons during spontaneous slow swimming (4 swims, left panel) and during an evoked escape response (right panel). For each recording, out-of-focus light was estimated within the spinal cord (black trace) and used as a criterion to determine the active vs inactive status of each cell. Pie charts represent the proportion of active cells in each behavior: 16/69 cells across 27 swims versus 61/69 cells across 12 escapes (n\u00a0=\u00a03 larvae). (E) Dorso-ventral (D\u2013V) position of cells recruited during each maneuver shows dorsal motor neurons only active during escapes (the dorso-ventral axis within the spinal cord is normalized to 0 at the ventral limit and 1 the dorsal limit; mean D-V position for escapes\u00a0=\u00a00.41\u00a0+\u00a0/- 0.02 versus 0.25\u00a0\u00b1\u00a00.01, p<0.001, n\u00a0=\u00a078 cells in n\u00a0=\u00a03 larvae). (F) Mean \u0394F/F amplitude was higher during escapes compared to spontaneous swims across larvae (91.2\u00a0\u00b1\u00a04.7% versus 25.9\u00a0\u00b1\u00a03.8%, p<0.001, 12 escapes and 27 swims in n\u00a0=\u00a03 larvae).\n\n![Video 1.](https://cdn.elifesciences.org/articles/25260/elife-25260-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/25260/elife-25260-media2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/25260/elife-25260-media3.mp4.jpg)\n\n![Video4.](https://cdn.elifesciences.org/articles/25260/elife-25260-media4.mp4.jpg)\n\n**Video4.:** Animals were paralyzed with bungarotoxin injections. A small fraction of ventral motor neurons is active. Recordings were acquired at 20 Hz. Movies were sped up by 2.5 X.\n\n![Video 5.](https://cdn.elifesciences.org/articles/25260/elife-25260-media5.mp4.jpg)\n\n**Video 5.:** Animals were paralyzed with bungarotoxin injections. A large portion of both ventral and dorsal motor neurons is recruited. Recordings were acquired at 20 Hz. Movies were sped up by 2.5 X.\n\n### Mechanosensory feedback enhances the recruitment of spinal motor neurons\n\nTo test whether mechanosensory feedback modulates the global recruitment of spinal motor neurons during locomotion, we compared motor dynamics in active and fictive escape responses by recording bioluminescence before and after blocking muscle contraction following the bath application of cholinergic blocker pancuronium bromide (Figure 3A, Panier et al., 2013). Across all Tg(mnx1:gal4;UAS:GFP-aequorin-opt) larvae, mean bioluminescence amplitude was markedly decreased in paralyzed compared to motile animals (Figure 3B\u2013C, signal amplitude before paralysis\u00a0=\u00a026.6\u00a0+\u00a0/- 0.9 photons/10 ms; signal amplitude after paralysis\u00a0=\u00a011.1\u00a0+\u00a0/- 0.4 photons/10 ms, p<0.001, n\u00a0=\u00a010 larvae). Within each larva, the mean normalized bioluminescence amplitude was decreased seven-fold (0.056\u00a0\u00b1\u00a00.08 versus 0.36\u00a0\u00b1\u00a00.18, p<0.001). Since this effect could be partly explained by the inhibition of acetylcholine receptors located on targets of reticulospinal neurons, such as the Mauthner cell (Koyama et al., 2011), we conducted the same experiments in immotile relaxed (cacnb1ts25) mutant zebrafish (Granato et al., 1996; Zhou et al., 2006). The mean bioluminescence amplitude was markedly decreased in immotile Tg(cacnb1ts25/ts25; mnx1:gal4; UAS:GFP-aequorin-opt) larvae compared to motile Tg(mnx1:gal4, UAS:GFP-aequorin-opt) control siblings (Figure 3D\u2013E, mean signal amplitude in motile siblings\u00a0=\u00a037.6\u00a0+\u00a0/- 1.4 photons/10 ms; mean signal amplitude in immotile mutants\u00a0=\u00a09.8\u00a0+\u00a0/- 0.4 photons/10 ms, p<0.001, n\u00a0=\u00a03 larvae). Altogether these results demonstrate that the recruitment of spinal motor neurons is enhanced during active locomotion, indicating that mechanosensory feedback pathways recruited during muscle contraction contributes to increasing spinal motor output. However, from these measurements it is unclear whether the decrease in signal amplitude observed in Aequorin-expressing larvae when muscle contraction is impaired is indicative of a reduction in amplitude or frequency of motor output during acoustic escapes responses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig3-v3.jpg)\n\n**Figure 3.:** (A) To compare the recruitment of spinal motor neurons when mechanosensory feedback was present (\u2018active locomotion\u2019) or suppressed (\u2018fictive locomotion\u2019), we conducted bioluminescence assays in 4 dpf Tg(mnx1:gal4;UAS:GFP-aequorin-opt) zebrafish larvae before and after paralysis using pancuronium bromide, and in immotile 4 dpf Tg(mnx1:gal4;UAS:GFP-aequorin-opt;cacnb1ts25/ts25) mutants compared to their motile siblings. (B) Bioluminescence signals from motor neurons revealed a marked decrease in bioluminescence amplitude after paralysis. (C) Quantification of the change in mean bioluminescence amplitude (before paralysis: 26.6\u00a0\u00b1\u00a00.9 photons/10 ms; after paralysis: 11.1\u00a0\u00b1\u00a00.4 photons/10 ms, n\u00a0=\u00a010 larvae in each group, 30 trials per larva, p<0.001). (D) Similarly, averaged bioluminescence signals from motor neurons were markedly decreased in immotile Tg(mnx1:gal4;UAS:GFP-aequorin-opt;cacnb1ts25/ts25,) mutant larvae when compared with motile siblings. (E) Mean bioluminescence amplitude in motile siblings (37.6\u00a0\u00b1\u00a01.4 photons/10 ms) compared to immotile mutants (9.8\u00a0\u00b1\u00a00.4 photons/10 ms, n\u00a0=\u00a0300 trials in 10 larvae for each group, p<0.001).\n\n### Silencing mechanosensory neurons decreases the speed of locomotion\n\nTo decipher between these possibilities, we probed the contribution of mechanosensory neurons during active swimming through fine kinematic analysis of locomotor behaviors in freely moving animals. We expressed the zebrafish-optimized Botulinum toxin under the control of the isl2b promoter (Auer et al., 2015; B\u00f6hm et al., 2016; Sternberg et al., 2016) (see Materials and methods and Video 6) in order to block synaptic release in glutamatergic mechanosensory neurons, namely Rohon-Beard neurons (RB) and dorsal root ganglia (DRG) in the spinal cord and trigeminal ganglia (Figure 4A, note the bundle of RB and DRG axons ascending in the spinal cord in Figure 4B, (Won et al., 2011)). We performed quantitative kinematic analysis of locomotor behaviors in freely-swimming Tg(isl2b:gal4,cmlc2:eGFP;UAS:BoTxBLC-GFP) larvae and found alteration of several kinematic parameters compared to control siblings (Figure 4C\u2013D, n\u00a0=\u00a0304 larvae, 890 escapes). Distance traveled (Figure 4E1) and total number of oscillations (Figure 4E2) were unaffected in animals deprived of mechanosensory feedback. However, we noted that tail-beat frequency (TBF) (Figure 4E3) and, accordingly, speed (Figure 4E4) were markedly reduced in BoTxBLC-GFP+ animals. Coincident with the reduction in TBF and stability of number of oscillations, the escape duration increased in larvae deprived of mechanosensory feedback (Figure 4E5, from 168.1\u00a0\u00b1\u00a02.4 ms to 182.0\u00a0\u00b1\u00a03 ms). While the amplitude of the first C-bend was not affected in BoTxBLC-GFP+ animals (Figure 4\u2014figure supplement 1), the amplitudes of subsequent tail bends were increased. This was especially pronounced on the ipsilateral side, suggesting a modulation of motor circuits recruited after the response onset. However, from this global analysis it is unclear if the effects on locomotor frequency and speed by mechanosensory feedback reflect a specific modulation of fast and/or slow swimming.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig4-v3.jpg)\n\n**Figure 4.:** (A) In vivo fluorescence image and (B) immunohistochemistry for GFP in 4 dpf Tg(isl2b:gal4,cmlc2:eGFP;UAS:GFP-aequorin-opt) double transgenic zebrafish larva show selective expression of GFP-aequorin in mechanosensory neurons: trigeminal ganglia (arrow), Rohon-Beard spinal neurons and their ascending axons (arrowhead) and dorsal root ganglia (*), but no expression in muscle fibers (n\u00a0=\u00a04). (C\u2013D) Superimposed images from the raw high-speed camera recording (left), the corresponding automated tracking (middle, pink triangles represent the head and green lines the tail of the fish) and tail angle over time extracted from the tracking analysis (right; stimulus is represented by the black vertical line, duration of the event is the black horizontal line) of a typical escape elicited by an acoustic stimulus in a freely-swimming control sibling larva at 6 dpf (C), and in a Tg(isl2b:gal4,cmlc2:eGFP;UAS:BoTxBLC-GFP) larva (D). (E1) Distance travelled was unchanged in BoTxBLC+ and control larvae (10.2\u00a0\u00b1\u00a00.2 mm versus 10.6\u00a0\u00b1\u00a00.2 mm, p=0.1). (E2) Number of oscillations was unchanged in BoTxBLC+ and control larvae (6.0\u00a0\u00b1\u00a00.2 versus n\u00a0=\u00a06.1\u00a0+\u00a0/- 0.2 oscillations, p=0.6). (E3) BoTxBLC+ larvae showed a decreased tail-beat frequency (TBF, 34.2\u00a0\u00b1\u00a00.4 Hz versus 37.8\u00a0\u00b1\u00a00.3 Hz, p<0.001). (E4) BoTxBLC+ larvae showed a decreased speed of escape responses (56.9\u00a0\u00b1\u00a01.1 versus 64.1\u00a0\u00b1\u00a00.9 mm/s, p<0.001). (E5) Escape duration was increased in BoTxBLC+ larvae compared to control siblings (182.0\u00a0\u00b1\u00a03.0 ms versus 168.1\u00a0\u00b1\u00a02.4 ms, p<0.001). (For all parameters: control group: n\u00a0=\u00a0176 larvae from 8 clutches, n\u00a0=\u00a0561 escapes; BoTxBLC+ group: n\u00a0=\u00a0128 larvae from 8 clutches, n\u00a0=\u00a0329 escapes).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Amplitude of the initial C-bend was not affected, but the bend amplitudes were overall larger in BoTxBLC-GFP+ larvae on the side of the initial C-bend (24 versus 22\u00b0, p=0.001, control group: n\u00a0=\u00a0176 larvae from 8 clutches, n\u00a0=\u00a0561 escapes; BoTxBLC+ group: n\u00a0=\u00a0128 larvae from 8 clutches, n\u00a0=\u00a0329 escapes).\u00a0Over the duration of the escape response, the amplitude of the tail angle decreases concomitantly with tail-beat frequency, both in the control group (B) and the BotxBLC-GFP+ group (C).\n\n![Video 6.](https://cdn.elifesciences.org/articles/25260/elife-25260-media6.mp4.jpg)\n\nTo determine if mechanosensory feedback selectively modulates fast versus slow locomotion in our silencing experiments, we separated the fast from the slow locomotor regime in elicited escape responses by applying a cutoff at 30 Hz, a threshold that defines the recruitment of fast motor neurons during swimming (McLean et al., 2008; Severi et al., 2014) (Figure 5A\u2013B). This analysis revealed a decrease of the distance travelled, duration, number of cycles, speed, and tail-beat frequency of the fast component in BoTxBLC-GFP+ compared to wild type siblings (Figure 5C1\u2013C5). In contrast, there was an increase of the distance travelled, duration and number of cycles of the slow component in BoTxBLC-GFP+ while the tail-beat frequency and speed were not altered (Figure 5D1\u2013D5). Remarkably, the total number of cycles remains constant in BoTxBLC-GFP+ compared to wild type siblings (Figure 4E2), indicating that the decrease of fast swimming frequencies observed in BoTxBLC-GFP+ larvae leads to a decrease of the fast component duration and induces an increase of the slow component duration. Therefore, the reduction of speed and locomotor frequency observed in mechanosensory-deprived animal is specifically restricted to the fast component but not the slow one (Figure 5A\u2013B). Altogether, our results demonstrate that mechanosensory feedback enhances speed of locomotion by promoting the transition between fast and slow locomotion during escape responses. Due to the fact that the Gal4/UAS combinatorial expression system labels cells in a variegated manner in zebrafish, we only observed BoTxBLC-GFP in half the RB neurons although the isl2b promoter drives expression in all RB neurons, dorsal root ganglia and trigeminal neurons. This observation suggests that the effects of silencing mechanosensory feedback are likely underestimated in our behavior experiments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013B) We separately analyzed the fast component of the escape response (cycles with TBF\u00a0>30 Hz) and the slow component (cycles with TBF\u00a0\u226430 Hz) as shown for control (n\u00a0=\u00a0176 larvae from 8 clutches, n\u00a0=\u00a0561 escapes) and BoTxBLC+ larvae (n\u00a0=\u00a0128 larvae from 8 clutches, n\u00a0=\u00a0329 escapes). (C1\u2013C5) Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9\u00a0\u00b1\u00a00.2 versus 7.4\u00a0\u00b1\u00a00.2 mm, p<0.001), duration (C2, 60.0\u00a0\u00b1\u00a02.1 versus 67.8\u00a0\u00b1\u00a01.9 ms, p=0.005), number of oscillations (C3, 2.9\u00a0\u00b1\u00a00.1 versus 3.6\u00a0\u00b1\u00a00.1 oscillations, p<0.001), speed (C4, 104.3\u00a0\u00b1\u00a01.9 versus 112.6\u00a0\u00b1\u00a01.6 mm/s, p=0.001), and TBF (C5, 45.8\u00a0\u00b1\u00a00.4 versus 48.4\u00a0\u00b1\u00a00.3 Hz, p<0.001). (D1\u2013D5) Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5\u00a0\u00b1\u00a00.1 versus 2.4\u00a0\u00b1\u00a00.1 mm, p<0.001), duration (D2, 140.9\u00a0\u00b1\u00a03.4 versus 97.1\u00a0\u00b1\u00a03.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8\u00a0\u00b1\u00a00.1 versus 1.9\u00a0\u00b1\u00a00.1, p<0.001) but has no effect on speed (D4, 24.9\u00a0\u00b1\u00a00.4 versus 24.6\u00a0\u00b1\u00a00.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3\u00a0\u00b1\u00a00.1 versus 25.4\u00a0\u00b1\u00a00.1 Hz, p=0.5). For all parameters: n\u00a0=\u00a0304 larvae, number of fast components\u00a0=\u00a01013; number of slow components\u00a0=\u00a01265.\n\n### Mechanosensory neurons synapse onto V2a interneurons involved in fast locomotion\n\nGiven the selective effect on tail-beat frequency and speed during the fast component of escape responses following the silencing of mechanosensory feedback, we reasoned that mechanosensory neurons may be able to selectively recruit spinal interneurons involved in fast locomotion. Previous studies in zebrafish larvae showed that spinal V2a interneurons are recruited in a topographic and frequency-dependent manner during fictive locomotion, with dorsalmost V2a interneurons solely active during fast locomotion (McLean et al., 2008, 2007). Ablation, silencing and optogenetic manipulations revealed that these neurons constitute an important class of excitatory interneurons driving the recruitment of motor neurons\u2014especially during fast locomotion (Ampatzis et al., 2014; Bagnall and McLean, 2014; Crone et al., 2008; Kimura et al., 2006, 2013; Ljunggren et al., 2014; McLean et al., 2007). Interestingly, we noticed patterns of perisomatic innervation of dorsal V2a cell bodies by axonal projections originating from one cell type targeted by the isl2b driver, Rohon-Beard cells (Figure 6A\u2013D, mean soma position of V2a\u00a0=\u00a00.72\u00a0+\u00a0- 0.04, n\u00a0=\u00a012 cells in 4 larvae).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig6-v3.jpg)\n\n**Figure 6.:** (A) Z-projection stack of the spinal cord imaged from the lateral side in a 4 dpf Tg(isl2b:gal4,cmcl2:eGFP;UAS:GFP-aequorin;chx10:DsRed) triple transgenic larva. White dashed lines delineate ventral and dorsal limits of the spinal cord; these limits define the dorso-ventral (D/V) axis from 0 to 1. The axon bundle from isl2b+ Dorsal Root Ganglia (DRG) and Rohon-Beard (RB) neurons contact the soma of dorsal chx10+\u00a0V2a interneurons. The white square is enlarged in the right panel to stress the anatomical connections (arrow). (B) Dendrites of dorsal V2a interneurons are targeted by axonal processes from isl2b+ sensory neurons (arrows). (C) D/V positions of V2a neurons receiving putative inputs from isl2b+ cells (mean D/V position\u00a0=\u00a00.72\u00a0\u00b1\u00a00.04. N\u00a0=\u00a012 cells in n\u00a0=\u00a04 larvae). (D) Profile of expression of 4 dpf Tg(isl2b:gal4,cmcl2:eGFP;chx10:DsRed) injected with the Tg(UAS:CoChR-tdTomato) construct reveals projections from single Rohon Beard cells onto chx10+ dorsal V2a interneurons. Scale bars in (A) and (D) are 50 \u00b5m and is 10 \u00b5m in (B). For each panel rostral side (R) is on the left and ventral side (V) is at the bottom.\n\nIn order to test whether Rohon-Beard neurons form functional synapses onto V2a interneurons, we performed optogenetic-mediated mapping of synaptic connectivity in the spinal cord (Figure 6D, Figure 7D). Rohon-Beard cells are low input resistance neurons and required current injections ranging from 200 to 700 pA to generate single spikes (Figure 7B, n\u00a0=\u00a06 cells, 250 ms injection steps). In comparison, dorsalmost V2a neurons only required from 15 to 50 pA to fire action potentials (Figure 7H, n\u00a0=\u00a05 cells). As a consequence, RBs might not be amenable to optogenetic stimulations at larval stages using first generation opsins such as ChR2-H134R (Boyden et al., 2005). To circumvent this potential issue we expressed the novel opsin CoChR-tdTomato (Klapoetke et al., 2014) in Rohon Beard cells and tested their responses to blue light stimulation (Figure 6D, Figure 7A). We found that 1 to 5 ms blue light pulses were sufficient to elicit photocurrents driving single action potentials in Rohon-Beard neurons at 4 and 5 dpf (Figure 7C and G, mean time to peak from the onset of the light pulse\u00a0=\u00a02.80\u00a0+\u00a0/- 0.29 ms, n\u00a0=\u00a06 cells). We then recorded from target V2a interneurons while photostimulating RB neurons in Tg(isl2b:gal4,cmcl2:eGFP;UAS:CoChR-tdTomato;chx10:DsRed) larvae (Figure 7D\u2013F). We found that RB stimulation led to short latency excitatory post-synaptic currents (EPSCs) in target V2a interneurons (Figure 7D\u2013E and G, mean delay from the onset of light pulse\u00a0=\u00a03.71\u00a0+\u00a0/- 0.19 ms, n\u00a0=\u00a08 cells in 8 larvae). To assess whether RB-V2A ipsilateral connection might be monosynaptic, we analyzed the lag between RB spikes time-to-peak and V2a EPSCs onset and found that it was below 1 ms (Figure 7G, 0.9 ms), a value compatible with monosynaptic connection (see Li et al. [2007a]) where cutoff is set at 3 ms for monosynaptic connections). Assuming a synaptic delay of 0.5 ms, the estimated conduction velocity along the axon of RB neuron would be 0.75 m/s, a value compatible with previous measurement in the field (Li et al., 2007a, 2004a). EPSC amplitude induced by RB stimulation in V2a interneurons were on average 28.14\u00a0\u00b1\u00a03.9 pA, leading to estimated depolarization of 11.71\u00a0\u00b1\u00a02.59 mV on target V2a (n\u00a0=\u00a08). In some cases, RB inputs were therefore sufficient to elicit action potentials in V2a interneurons tested in current clamp mode (Figure 7F). Given the glutamatergic nature of RB neurons, we incubated the preparation with blockers of glutamatergic neurotransmission and found that it abolished EPSCs in target V2a (Figure 7I, n\u00a0=\u00a02 cells). Altogether, these results indicate a monosynaptic connection between RB neurons and ipsilateral dorsalmost V2a interneurons and demonstrate the ability of RB neurons to recruit selectively a subpopulation of V2a interneurons controlling fast swimming in the dorsal spinal cord. This direct pathway from RB neurons onto ipsilateral \u2018fast\u2019 V2a neurons may act in concert with afferences from dorsal root ganglia and trigeminal neurons to enhance speed during active locomotion.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25260/elife-25260-fig7-v3.jpg)\n\n**Figure 7.:** (A) Schematic of the optogenetic calibration of CoChR-mediated stimulation in RB neurons. (B) Current-injection steps recording reveals the low-input resistance nature of Rohon Beard neurons, n\u00a0=\u00a07 cells). (C) 5 ms blue light pulse stimulations reliably elicit single action potentials in CoChR-expressing RB cells (n\u00a0=\u00a03 cells). (D) Schematic of whole cell recording of V2a interneurons with optogenetic stimulation of RB neurons. (E) Voltage clamp recording of a target V2a interneuron receiving monosynaptic inputs from a RB neuron. (F) Current clamp recording of a target V2a interneuron firing an action potential following the stimulation of a RB neuron. (G) Timing of RB spike time-to-peak (2.8 ms\u00a0\u00b10.3 ms after the onset of the blue light pulse, n\u00a0=\u00a0103 stimulations recorded in 6 cells) and onset of EPSCs in target V2a interneurons (3.7 ms\u00a0\u00b10.2 ms after the onset of the blue light pulse, n\u00a0=\u00a078 EPSCs in 8 cells). The average lag between RB spiking and V2a EPSC is 0.9 ms. The blue bar represents the duration of the blue light pulse. (H) Membrane properties of recorded V2a interneurons in the dorsal cord, n\u00a0=\u00a05 cells). (I) Blockade of glutamatergic neurotransmission following the application of 10 \u00b5M of CNQX and D-AP5 suppresses elicited post-synaptic currents in a V2a interneuron (n\u00a0=\u00a02 cells).\n\n## Discussion\n\nUnderstanding the contribution of peripheral mechanosensory feedback during locomotion is an important question in the field of motor control. Although the state-dependent nature of spinal modulation by afferent muscle fibers has been appreciated for more than a century in limbed vertebrates, little is currently known on the role of mechanosensory feedback during ongoing locomotion. The reasons for this lie in the difficulty of recording and manipulating neural circuits in moving animals and in the fact that mechanosensory feedback is absent in fictive preparations. In this study, we took advantage of the genetic and optical accessibility of the zebrafish larva to unravel mechanisms of circuit and behavior modulation by mechanosensory feedback using a combination of optical methods for circuit interrogation during animal motion with electrophysiology and high-throughput kinematic analysis of locomotor behaviors. Our results demonstrate that mechanosensory feedback enhances swimming speed by providing excitation to spinal circuits controlling the frequency of motor output during fast locomotion, thereby controlling the timing of spinal microcircuit activation and the transition between fast and slow locomotion. As it allows zebrafish larvae to travel the same distance in a shorter time (about 15 ms), mechanosensory feedback also bears ecological implications for fitness. By speeding up escapes during a predator attack, mechanosensory feedback may help enhancing survival.\n\nTo probe the contribution of mechanosensory feedback during active locomotion in zebrafish, we used the bioluminescent GFP-Aequorin sensor in motor neurons. We found that the amplitude of Aequorin signals from motor neurons could be used as a signature for distinguishing locomotor maneuvers including slow swimming and fast escape responses that have specific ranges of swimming frequencies and distinct profiles of motor neurons recruitment (Liao and Fetcho, 2008; Masino and Fetcho, 2005; McLean et al., 2008). We found that eliminating mechanical sensory feedback originating from muscle contraction led to a decrease of bioluminescence signals from motor neurons during acoustic escape responses. Our observations suggest that mechanosensory feedback enhances the recruitment of motor circuits. However, the effect observed could be driven by a decrease in swimming frequency and /or a decrease in the number of active spinal motor neurons. The poor temporal resolution of GFP-Aequorin prevented us from resolving these possibilities.\n\n### Speed modulation by mechanosensory feedback\n\nTo determine how the deprivation of mechanosensory feedback affects motor neuron recruitment, we analyzed kinematic parameters of animals deprived of excitatory synaptic transmission in glutamatergic mechanosensory neurons using the genetically encoded Botulinum toxin. The perturbation of major kinematic parameters such as left/right coordination or locomotor frequency during fictive locomotion usually requires the ablation of entire classes of spinal neurons (Crone et al., 2008; Gosgnach et al., 2006; Talpalar et al., 2013; Zhang et al., 2008). To identify the consequence of the selective silencing of mechanosensory feedback in the zebrafish spinal cord, we implemented a high-throughput kinematic analysis of acoustic escape responses in larvae deprived of neurotransmission in isl2b+ mechanosensory neurons versus their control siblings. Our analysis revealed that mechanosensory feedback increases the swimming frequency and corresponding locomotor speed without affecting the total number of oscillations during an escape. Inputs from mechanosensory neurons first contribute to reaching the maximum range of fast swimming frequencies and second set the transition time from fast to slow swimming frequencies. Without mechanosensory inputs, the initial swimming frequency is reduced and the transition from fast to slow swimming occurs earlier, which leads to an increase of locomotor event duration for the same number of oscillations and distance travelled, and therefore an overall slower escape response.\n\nContrary to mammals, there are no muscle spindles relaying mechanical information on muscle contraction to spinal circuits in fish. Instead, glutamatergic stretch receptor neurons that can sense body elongation in lamprey (Grillner et al., 1981; Rovainen, 1974) project onto spinal sensory neurons, motor neurons and interneurons (Di Prisco et al., 1990) and can entrain the locomotor central pattern generators (CPGs, [Grillner et al., 1981; McClellan and Sigvardt, 1988]). Recently, GABAergic cerebrospinal-fluid contacting neurons have been shown to detect body curvature following muscle contraction in both zebrafish (B\u00f6hm et al., 2016; Grillner et al., 1984; Jalalvand et al., 2016). Interestingly, the activation of each of these pathways, either during natural mechanical oscillations of the tail or optogenetic stimulations, is sufficient to trigger locomotor activity demonstrating that mechanosensory feedback can provide inputs to locomotor central pattern generator circuits in the spinal cord (B\u00f6hm et al., 2016; Fidelin et al., 2015; McClellan and Grillner, 1983; Wyart et al., 2009). Yet, the molecular identity of CPG neurons receiving inputs from mechanosensory neurons has remained unclear.\n\n### Circuit architecture of mechanosensory neurons in zebrafish\n\nPrevious studies have described a remarkably simple and conserved disynaptic cutaneous skin reflex relying on spinal mechanosensory neurons referred to as Rohon Beard (RB) neurons in Xenopus and zebrafish and \u2018dorsal cells\u2019 in lamprey (Buchanan and Cohen, 1982; Christenson et al., 1988; Clarke et al., 1984; Easley-Neal et al., 2013; Li et al., 2003; Roberts et al., 1983). In these species, spinal mechanosensory neurons respond to skin stimulation at rest by firing a single spike and project onto glutamatergic commissural interneurons (referred to as dIc, CoPA and giant interneurons respectively [Buchanan and Cohen, 1982; Easley-Neal et al., 2013; Li et al., 2003; Pietri et al., 2009; Sillar and Roberts, 1988]), which drive contralateral motor neuron activation and subsequent swimming away from the stimulus (Buchanan and Cohen, 1982; Christenson et al., 1988; Li et al., 2003, 2004b). During swimming, excitation of commissural sensory interneurons from sensory neurons was shown to be filtered out by phase-locked inhibition (Knogler and Drapeau, 2014; Sillar and Roberts, 1988), ensuring that the recruitment of RB neurons potentially arising from movement-related activation would not trigger the disynaptic cutaneous reflex.\n\nHere we discovered a novel sensory disynaptic pathway originating from spinal sensory neurons. We demonstrate that mechanosensory Rohon-Beard neurons synapse onto dorsalmost V2a interneurons previously shown to drive fast swimming in zebrafish (Ampatzis et al., 2014; McLean et al., 2008, 2007). Furthermore, we show that in some cases, this monosynaptic connection can provide suprathreshold inputs to V2a interneurons recruited during fast locomotion. Given that the isl2b transgenic line used in this study also labels dorsal root ganglia and trigeminal neurons, it is possible that the modulation of speed results from synergistic inputs from these three neuronal populations (Buhl et al., 2012). Dorsal root ganglia might in particular provide glutamatergic sensory inputs that could modulate locomotor frequency as well. Yet, we identified here a direct RB-V2a pathway that could contribute to the enhancement of speed triggered by mechanosensory feedback during the escape. The contribution of RB neurons to the enhancement of speed by mechanosensory feedback is consistent with previous experiments showing that stimulation of RB neurons can reset or increase locomotor frequency in Xenopus tadoples (for\u00a0example,[Sillar and Roberts, 1992]). The role of mechanosensory feedback to increase swimming speed is consistent with former observations in lamprey showing an entrainment of locomotion by mechanical stimulation of the spinal cord (Grillner et al., 1981). Therefore, the direct connection we demonstrated here from spinal mechanosensory neurons onto a subtype of ipsilateral V2a interneurons recruited during fast swimming could underlie the effect we observed on swimming speed, along with other potential pathways involving dorsal root ganglia and trigeminal neurons.\n\nRB neurons have complex processes branching under the skin as well as ascending and descending in the spinal cord. One critical experiment in the future will consist of recording the activity of RB neurons during muscle contraction in freely swimming animals. Recording reliable calcium transients associated with mechanical stimulation has been possible by combining fluorescent calcium sensors in one wavelength with another fluorescent protein enabling to control for cell position (B\u00f6hm et al., 2016). Nonetheless measuring activation of RB neurons during mechanical stimulation remains challenging due to the fact that RB neurons usually fire single action potentials ( et al., 2017; Roberts et al., 2012; Winlove and Roberts, 2012) and most calcium indicator fail to report single spike without extensive averaging (see Chen et al. [2013]; Tian et al. [2009]). Further studies will identify the connectivity diagrams of each of these mechanosensory cell types and devise genetic strategies to silence these neurons individually to probe their contribution to speed modulation during active locomotion. While local reflex pathways have been characterized at rest, further studies will decipher the mechanisms underlying the diversity of behavioral effects due to mechanosensory neuron recruitment: escapes for single touch at rest (Buchanan and Cohen, 1982; Douglass et al., 2008; Roberts et al., 1983), struggling for continuous stimulation (Li et al., 2007b) and enhancement of speed during active locomotion (this study).\n\n### Conclusion\n\nAltogether, our results about the role of mechanosensory feedback in speed modulation can explain the general observation made in various invertebrate as well as vertebrate species that locomotion is faster in active compared to fictive conditions. In invertebrates, there is evidence in several species for fictive locomotor patterns being typically twice slower than real locomotion (sea slugs, (Morton and Chiel, 1993), 1993; crayfish, (Bacqu\u00e9-Cazenave et al., 2015); and fruit fly, (Mendes et al., 2013). The leech is a particularly interesting example as it can perform both swimming and crawling. The effect of denervation is a systematic slowdown of locomotor activity, although it is much larger in crawling (twofolds) (Baader and Kristan, 1992; Eisenhart et al., 2000; Kristan and Calabrese, 1976). In lamprey where the same animal was used to compare active and fictive locomotion, the frequency of fictive swimming appears 5\u201310 times slower than the frequency of active swimming recorded through electromyography (Wall\u00e9n and Williams, 1984). The general slowdown of locomotor frequencies when peripheral sensory feedback is removed is commonly observed in fictive locomotion in mice as well (Bellardita and Kiehn, 2015; Talpalar et al., 2013). New preparations to manipulate and record from spinal neurons in moving mice (Hayes et al., 2009; Hochman et al., 2012) will enable in the future to investigate the dynamic role of mechanosensory feedback during active locomotion in mammals.\n\nOur study explains how mechanosensory neurons enhance speed during active locomotion and reveal one possible spinal circuit that could mediate this effect. Furthermore, our work demonstrates that microcircuit selection during locomotor behaviors is not only set by descending commands from supra-spinal centers but could rather result from a combination of inputs from descending and local spinal sensorimotor circuits recruited while the movement is performed.\n\n## Material and methods\n\n### Zebrafish care, generation and characterization of transgenic lines\n\nAll procedures were approved by the Institutional Ethics Committee at the Institut du Cerveau et de la Moelle \u00e9pini\u00e8re (ICM), Paris, France, the Ethical Committee Charles Darwin and received subsequent approval from the EEC (2010/63/EU). Adult AB and and T\u00fcpfel long fin (TL) strains of Danio rerio were maintained and raised on a 14/10 hr light cycle and water was maintained at 28.5\u00b0C, conductivity at 500 \u03bcS and pH at 7.4. Embryos were raised in blue water (3 g of Instant Ocean salts and 2 mL of methylene blue at 1% in 10 L of osmosed water) at 28.5\u00b0C during the first 24 hr before screening for GFP expression. The Tg(mnx1:gal4)icm11 line was based on the injection of the mnx1 construct provided by Dr. Thomas Auer and Dr. Filippo Del Bene (Institut Curie, Paris, France, see Table 1). The original sequence for GFP-Aequorin provided by Dr. Ludovic Tricoire (Universit\u00e9 Pierre et Marie Curie, Paris, France) was subsequently codon-optimized for expression in zebrafish and subcloned into the PT2 14XUAS plasmid provided by Pr. Koichi Kawakami (National Institute of Genetics, Mishima, Japan). Injection of the Tg(UAS:GFP-aequorin-opt) construct in Tg(mnx1:gal4)icm23 larvae allowed the generation of the Tg(mnx1:gal4;UAS:GFP-aequorin-opt)icm09 line with selective expression of GFP-Aequorin in spinal motor neurons: more prominently primary dorsal motor neurons but also intermediate and ventral secondary motor neurons (Figure 1B) without any expression in the muscles and only very limited expression in the brain and hindbrain (note we cannot exclude that a minority a spinal ventral neurons distinct from motor neurons might be targeted). The transgenic line Tg(UAS:GCaMP6f,cryaa:mCherry)icm06 was generated by subcloning GCaMP6f (Chen et al., 2013) into pDONR221 and then assembled into the final expression vector in a three-fragment Gateway reaction using p5E-14XUAS, pME-GCaMP6f, p3E-poly(A) and pDest-CryAA:mCherry. Given the potential variability in expression patterns of Gal4 lines with different UAS, we characterized the Tg(mnx1:gal4;UAS:GCaMP6f,cryaa:mCherry) line and observed a similar expression in motor neurons as in the Tg(mnx1:gal4;UAS:GFP-aequorin-opt)icm09 line. In both cases, we observed the targeting of spinal neurons exiting the spinal cord in the ventral root, and therefore referred to as motor neurons. However, we cannot exclude that the mnx1 promoter may target other spinal neurons, distinct from motor neurons. relaxed mutants (cacnb1ts25/ts25) (Granato et al., 1996) were provided by Pr. Paul Brehm (Vollum Institute, Oregon Health and Science University, Portland, USA). In homozygous cacnb1ts25/ts25 mutants, a mutation of the skeletal muscle dihydropyridine receptor \u03b21a subunit interferes with the calcium release and mutant larvae are immotile (Granato et al., 1996). The Tg(isl2b:gal4,cmlc2:eGFP) line (Auer et al., 2015) driving expression in Dorsal Root Ganglia (DRG), trigeminal, Rohon-Beard neurons, a subset of Retinal Ganglion Cells (RGCs), and blood vessels was provided by Dr. Thomas Auer and Dr. Filippo Del Bene (Institut Curie, Paris, France) (see Table 1).\n\n**Table 1.**\n Stable transgenic lines used or generated in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Original reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Tg(mnx1:gal4)icm23</td>\n      <td>(B\u00f6hm et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Tg(isl2b:gal4,cmlc2:eGFP)</td>\n      <td>(Auer et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>Tg(UAS:GFP-aequorin-opt)icm09</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>Tg(UAS:GCaMP6f,cryaa:mCherry)icm06</td>\n      <td>(B\u00f6hm et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Tg(chx10:loxP:DsRed:loxP:GFP)</td>\n      <td>(Kimura et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>relaxed (cacnb1ts25)</td>\n      <td>(Granato et al., 1996)</td>\n    </tr>\n    <tr>\n      <td>Tg(UAS:BoTxLCB-GFP)icm21</td>\n      <td>(Auer et al., 2015; B\u00f6hm et al., 2016; Sternberg et al., 2016)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Immunohistochemistry\n\nLarvae were fixed in 4% PFA for 4 hr at 4\u00b0C followed by 3 \u00d7 5 min washes in PBS. Larvae were blocked for 1 hr in blocking solution (10% NGS, 1% DMSO, 0.5% Triton X100 in 0.1 M PBS). Larvae were incubated with the primary antibody over night at RT (1% NGS, 1% DMSO, 0.5% Triton X100 in 0.1% PBS). After washing three times for 5 min in 0.1 M PBST with 0.5% Triton X100 (PBST), larvae were incubated in the dark with the secondary antibody in PBST. After washing again three times for 5 min in PBST, larvae were mounted on a slide with mounting medium and were imaged on an upright confocal microscope (FV-1000, Olympus, Tokyo, Japan). The following antibodies were used: anti-GFP (Abcam ab 13970, dilution 1:500), Alexa Fluor 488 goat anti-chicken IgG (A11039, dilution1:1000, Invitrogen, Carlsbad, CA, USA). Immunostaining specificity was established by omitting the primary antibody.\n\n### Monitoring neuronal activity with bioluminescence\n\nEmbryos were dechorionated and soaked at 26\u00b0C in 100 \u00b5L of blue water with a final concentration of 60 \u00b5M of coelenterazine-h (Biotium, Fremont, CA, USA). Coelenterazine-h was renewed at 2 dpf. All experiments were performed at 4 dpf. In all experiments, one larva was head-embedded in 1.5% low-melting point agarose with the tail free to move in a circular (2 cm diameter) 3D-printed arena (Sculpteo, Villejuif, France). The arena was then placed in a lightproof box (Figure 1A) and attached to a small speaker (2 Ohm). Each trial consisted of a 500 ms baseline followed by a 10 ms acoustic stimulus and 1990 ms subsequent recording. Assays consisted of 30 trials with 1 min inter trial intervals to reduce habituation. Sinusoidal stimuli (5 cycles, 500 Hz) were delivered through a wave generator (33210-A, Agilent, Santa Clara, CA, USA) and audio amplifier (LP2020A, Lepai). Intensity was adjusted to the lowest value that reliably elicited an escape response (between 0.5 and 5 Vpp). The same larvae used for the active assay were subsequently paralyzed by bath application of pancuronium bromide (P1918, Sigma-Aldrich, Saint-Louis, MO, USA) at 0.6 mg/mL final concentration and stimulation intensity was adjusted to the lowest value that elicited a bioluminescent signal. For Figure 3, cacnb1ts25/ts25 and control siblings were tested alternatively on the same day and compared to each other. In non-moving animals (that is, paralyzed or cacnb1 mutants), the intensity was progressively increased until stimuli elicited bioluminescence signals. A higher intensity of the acoustic stimulus was often needed after addition of pancuronium bromide, possibly due to modulation of cholinergic arousal brain circuitry (Yokogawa et al., 2007). As negative controls, bioluminescence assays of wild type animals or Tg(mnx1:gal4;UAS:GFP) (Zelenchuk and Brus\u00e9s, 2011) where motor neurons express GFP only revealed no signals (n = 3 wild type larvae with 30 trials each, n = 5 Tg(mnx1:gal4;UAS:GFP) larvae with 30 trials each). Animals deprived of GFP-Aequorin did not produce any signals above baseline noise level during escape responses. Infrared light illumination for monitoring larval behavior was provided by an 850 nm LED (Effisharp, Effilux, France) mounted with 2 long-pass 780 and 810 filters (Asahi ZIL0780 and Asahi XIL0810, respectively) and a diffuser (DG10-120B, Thorlabs, Newton, NJ, USA). Video acquisition was performed at 1000 Hz using a high-speed infrared sensitive camera (Eosens MC1362, Mikrotron, Unterschleissheim, Germany; objective Nikkor 50 mm f/1.8D, Nikon, Tokyo, Japan) at 320 \u00d7 320 pixels resolution controlled by the software Hiris (RD Vision, Saint-Maur-des-Foss\u00e9s, France). Photons were counted with a photomultiplier tube (PMT, H7360-02, Hamamatsu, Japan) located under the larva arena and sent to an acquisition card (NI PCI 6602, National Instruments, Cos Cob, CT, USA). A band-pass filter (525 nm / 50 nm, ref. 489038\u20138002, Carl Zeiss, Thornwood, NY, USA) and a short-pass filter (670 nm, XVS0670, Asahi, Japan) were placed between the larva and the PMT. A custom application-programming interface developed in collaboration with R&D Vision synchronized the video acquisition with the photon count and the stimulus delivery using 30 trials batched TTL chronogram (EG Chrono, RD Vision, France).\n\n### Kinematics and bioluminescence analysis\n\nThe base and tip of the tail were manually determined for each larva and the tail was subsequently automatically tracked with a custom Matlab algorithm (R2012b, Mathworks, Natick,\u00a0MA,\u00a0USA). The tail angle was computed for each frame and filtered using median filtering (window size\u00a0=\u00a010). The start of the movement was determined as the first frame followed by 3 with a differential tail angle value above 0.08. The end was determined as the end of the 20 frames with a differential tail angle value below 0.1 degree. Local minimal and maximal values of the tail angle occurred at least 2 ms apart and 1 degree above the 5 ms preceding value. Automated movement categorization was determined as follows: \u2018escapes\u2019 for all movements starting with an asymmetrical C-bend and number of cycles\u00a0\u2265\u00a01; \u2018slow swims\u2019 for all movements with symmetrical bends of amplitude\u00a0<25\u00b0 and number of cycles\u00a0>\u00a01.\n\nPhotons were counted with a temporal resolution of 1 ms and then binned every 10 ms. The signal was filtered using a running average with a window size of 10, giving a typical signal-to-noise ratio (SNR) for active movements of 50 to 1. Noise was extrapolated from a linear fit of the cumulative photon count before the stimulus and subtracted from the signal. The start and end of the bioluminescent signal were computed as the first time point followed by three points with a differential value above 0.4 photons/10 ms and below 0.2 photons/10 ms, respectively. The time-to-peak was calculated between the start and the peak of the bioluminescent signal while the decay coefficient was derived from the one-term exponential fit between the peak and the end of the signal.\n\n### Calcium imaging of spinal motor neurons and ventral nerve root recordings (VNR)\n\n4 dpf Tg(mnx1:gal4; UAS:GCaMP6f,cryaa:mCherry) double transgenic larvae were screened for dense labeling and good expression of GCaMP6f in spinal motor neurons under a dissecting microscope equipped with an epifluorescence lamp (Leica, Wetzlar,\u00a0Germany). Larvae were anaesthetized in 0.02% Tricaine-Methiodide (MS-222, Sigma-Aldrich) diluted in fish facility water and mounted on their lateral side in 1.5% low-melting point agarose in glass-bottom dishes filled with external solution ([NaCl]\u00a0=\u00a0134 mM, [KCl]\u00a0=\u00a02.9 mM, [MgCl2]\u00a0=\u00a01.2 mM, [HEPES]\u00a0=\u00a010 mM, [glucose]\u00a0=\u00a010 mM and [CaCl2]\u00a0=\u00a02.1 mM; adjusted to pH 7.7\u20137.8 with NaOH and osmolarity 290 mOsm). Larvae were immobilized by injecting 0.1\u20130.3 nL of 0.5 mM \u03b1-Bungarotoxin (Tocris, Bristol,\u00a0UK) in the ventral axial musculature. A portion of agar was removed using a razor blade in order to expose 2 to 3 segments. To achieve a strong signal-to-noise ratio during fictive locomotion recordings, the skin overlying these segments was removed using suction glass pipettes. Zebrafish larvae were imaged using a custom spinning disk microscope (Intelligent Imaging Innovation, Denver,\u00a0CO,\u00a0USA) equipped with a set of water-immersion objectives (Zeiss 20X, 40X, NA\u00a0=\u00a01). Recordings were acquired using Slidebook software at 20 Hz using a 488 nm laser. Gain and binning were optimized to maximize signal to noise ratio. Z-projection stacks showed full pattern of expression using Fiji (Schindelin et al., 2012). Positions of cells along the D-V axis were computed using Fiji and Matlab (Mathworks, USA). Calcium signals were extracted online using custom scripts. Regions of interest (ROIs) were manually designed and calcium signals time series were extracted as the mean fluorescence from individual ROIs at each time point of the recording. We observed that out-of-focus signals varied between animals, from dorsal to ventral spinal cord regions in a behavior-dependent manner. To estimate the contribution of out-of-focus signals we systematically picked two background ROIs, one placed below the ventral limit of the spinal cord to capture out-of-focus signals at the level of ventral motor neurons during slow swimming, the second in the dorsalmost part of the spinal cord to capture out-of-focus signals in the dorsal spinal cord during the escape. We estimated the maximum out-of-focus signals observed during each behavior and used this value as a threshold for discriminating active from silent motor neurons. Thin-walled, borosilicate glass capillaries (Sutter Instruments, Novato, CA,\u00a0USA) were pulled and fire-polished from a Flaming/Brown pipette puller (Sutter Instruments, Novato) to obtain peripheral nerve recording micropipettes. Pipettes were filled with external solution and positioned next to the preparation using motorized micromanipulators under the microscope. Light suction was applied when the pipette reached the muscle region located at the vicinity of intermyotomal junctions, ventral to the axial musculature midline. VNR signals were acquired at 10 kHz in current clamp IC\u00a0=\u00a00 mode using a MultiClamp 700A amplifier (Molecular Devices\u2013Axon Instruments, Sunnyvale,\u00a0CA,\u00a0USA), a Digidata series 1322A digitizer (Axon Instruments) and pClamp 8.2 software (Axon instruments). Recordings were considered for analysis when the background noise did not exceed 0.05 mV amplitude and signal to noise ratio for fictive locomotor events detection was above three. VNR recordings were analyzed offline and aligned to calcium imaging data using custom-made Matlab scripts.\n\n### Fluorescence-guided whole-cell recordings and pharmacology\n\n4 dpf larvae were pinned down in Sylgard-coated, glass-bottom dishes filled with external solution with thin tungsten pins through the notochord. Skin was removed from segments 5\u20136 to the end of the tail using sharp forceps. After removing the skin, one to two segments were dissected using glass suction pipettes. Patch pipettes (1B150F-4, WPI, Sarasota, FL, USA) were designed to reach a tip resistance of 8\u201312 MOhms and were filled with potassium-containing internal solution (concentrations in mM: K-gluconate 115, KCl 15, MgCl2 2, Mg-ATP 4, HEPES free acid 10, EGTA 0.5, 290 mOsm, adjusted to pH 7.2 with KOH and supplemented with Alexa 647 at 4 mM). Cells were held at around \u221260 mV. We calculated the liquid junction potential in our experiments (\u22129 mV) but did not correct for it since it did not affect the outcome of our experiments. NMDA receptor antagonist (D-AP5, Tocris) and AMPA receptor antagonist (CNQX, Tocris) were bath applied at 10 \u00b5M final concentrations. Kinetic parameters of light-evoked currents and EPSCs were extracted and analyzed using custom-made Matlab scripts.\n\n### Behavioral analysis of freely moving BoTxBLC larvae\n\nTg(isl2b:gal4,cmlc2:eGFP;UAS:BoTxBLC-GFP) larvae were screened at 2 dpf for expression. At 6 dpf, larvae were tested 4 by 4: each larva was positioned in a separate dish (2 cm diameter) and illuminated from below, freely moving. Each swim arena contained 400 \u03bcL of external solution to minimize movement in the z-axis. Escapes were elicited by delivering a 500 Hz stimulus for 1 ms via 20W speakers. Each trial consisted of a 200 ms pretrial window followed by the stimulus and 800 ms subsequent recording. Five trials were performed in succession with 2 min long intertrial resting periods. Behavior was recorded at 650 fps with a high-speed camera (acA2000-340km, Basler, Ahrensburg, Germany) and analyzed using a tracking algorithm (ZebraZoom, [Mirat et al., 2013]) and a custom Matlab script. Extracted kinematic variables are listed and defined as follows: duration (the amount of time during movement), distance (travelled distance), speed (distance/duration), number of oscillations (1/2 of the number of peaks in tail angle over time), and mean tail beat frequency (TBF, inverse of the duration between two subsequent peaks in the tail angle). Visual inspection of the unsmoothed tail angle was used to exclude trials in which erroneous tracking occurred. Trials fulfilling at least one of the following criteria were programmatically excluded: (i) Detected movement prior to the stimulus. In these cases, spontaneous pretrigger movement lingering into the post-trigger recording window can occlude escape-type movements. (ii) First peak in tail-angle occurring more than 20 frames after the stimulus. These no longer represent low-latency escapes and most likely represent a different category of movement altogether (Budick and O'Malley, 2000; Liu and Fetcho, 1999). (iii) First peak in tail-angle lower than 60 degrees. Bouts lacking an initial C-bend are not escapes and are most likely slow swim bouts or other movement types (Budick and O'Malley, 2000). Hemi-periods were calculated as the interval between two consecutive peaks in the tail angle, and subsequently used as a determinate to extract fast and slow components of the escape with a cutoff of 650/60 frames (30 Hz). Peaks which alternated between the cutoff value after the first appearance of a slow peak were excluded.\n\n### Statistical analysis\n\nSPSS 20 (IBM, Armonk,\u00a0NY,\u00a0USA) was used to perform all statistical analyses. Comparisons of bioluminescence signals parameters was conducted using a t-test for paired samples for repeated measures within subjects (that\u00a0is, active versus paralyzed data). Mixed linear model analysis with repeated measures using an auto-regressive covariance structure was performed to compare the bioluminescence amplitude between movement categories in active assays, and between moving and immotile larvae in active versus fictive assays. The same model was used to analyze behavioral parameters in order to account for repeated measures in within-fish (trial number) and between-group comparisons (genotype). Bioluminescence time decay coefficients were included if the goodness of fit r-square value was\u00a0>0.95. A Pearson test was used to assess correlations for parametric data. Statistical significance is represented in the graphs as *** for p<0.001, ** for p<0.01, * for p<0.05, corrected for multiple comparisons when needed. All data are provided in the figures and text as means +/- standard error of the mean (SEM).\n",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e42d980d-308a-4037-8f76-df7c09edbe09",
+      "submission_id": "e235fa9c-3a5b-42d4-b039-ab98a4212917",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25260.021](https://doi.org/10.7554/eLife.25260.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanosensory Neurons Control the Timing of Spinal Microcircuit Selection during Locomotion\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ronald L Calabrese (Reviewer #1), is a member of our Board or Reviewing Editors and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Mark A Masino (Reviewer #2); David McLean (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an elegant exploration of how sensory feedback affects escape and slow swimming in zebra fish larvae. Combing genetic, imaging, electrophysiological, optogenetic and kinematic analysis, the authors show that mechanosensory feedback enhances the recruitment of motor pools and controls the speed and duration of escape swimming. They then show that Rohon Beard neurons (spinal cord mechanoreceptors) make anatomical contacts and functional synaptic connections with V2a interneurons that are known to control speed of escape swimming. The experiments are carefully done with many thoughtful controls. The data shown is sufficient and analyzed with appropriate statistics. This work reveals microcircuits that underlie speed modulation by mechanosensory feedback in the vertebrate spinal cord and will thus be of wide interest.\n\nEssential revisions:\n\nThere is no direct causal evidence that Rohon Beard neurons do indeed mediate the speed changes associated with active swimming, because they are not selectively silenced. Moreover, there is no direct demonstration that they are activated by the animals own movements during active swimming. These weaknesses can be mitigated in two ways.\n\n1) An experiment where calcium imaging is used to monitor transients in RB neurons in partially embedded versus fully embedded and/or paralytic fish. This would demonstrate whether the RB cells participate in reafference.\n\n2) More extensive analysis of the connectivity data between RB neurons and V2a neurons, including increases in the number of independent observations. Latency repeatability and jitter should be critically evaluated both for the EPSC and for the spike response of V2a neurons to RB cell photoactivation. We would like to be reassured that the nature of the connection is truly distinct from the one revealed by prior work, and is thus capable of influencing V2a activity during swimming.\n\nThe detailed reviews of two of the reviewers are included to help in revision but the focus of revision should be the two major points above.\n\nReviewer #1\n\n1) The paper is well written within text but important details are missing from the legends that allow easy interpretation of the data. Some figures are too dense as if composed for a journal with restrictions on figure numbers.\n\nAll legends must be upgraded so that a reader can easily understand the data. Let me focus on Figure 1 to illustrate what must be done. What is going on in panels A and G? What are the superimposed lines in panel C (I know this but I am just saying be complete)? What is the color code in panel H and how does it relate to panel I. In panel I, I am really confused please explain the traces. Why are there multiple bumps in the left traces and what does the superposition mean in each set of traces? Please write figure legends that allow the data to be easily understood. Figure 3 is also a problem. What do the arrow and the arrowhead point out in panel A? What are we looking at in the left most image of panel C and in the middle image of panel C and left image of panel D? What are the different colors showing? In all graphs like panel E1 the mean and SEM are just too difficult to see especially amid the blue points; make bold.\n\nSplit Panels G to K of Figure 1 into a separate figure. Consider splitting Figure 5 also.\n\n2) I am concerned about the morphological data shown in Figure 1B. Was this observation made in a number of larvae? In Figure 5A and B, was this observation made in a number of larvae. The legend of panel C implies that it was but you must be explicit. In Figure 5G, was this observation made in a number of larvae?\n\n3) There is no direct causal evidence that Rohon Beard cells do indeed mediate the speed changes associated with active swimming, because they are not selectively silenced or optogenetically activated. This needs to be more explicitly acknowledged.\n\n4) Given the central effects of pancuronium bromide why wasn't \u03b1-bungarotoxin used to immobilize the larvae in the experiments of Figure 2? I am also concerned that you did not control for stimulus intensity in these experiments. In active fish and during pancuronium paralysis, is the size of the aequorin response dependent of stimulus amplitude? If it is, then comparisons of amplitudes across these two groups is suspect because different stimulus amplitudes were used.\n\nReviewer #3:\n\n1) If RB neurons are encoding proprioceptive information in addition to the cutaneous exteroceptive information they are normally associated with, then activation of RB neurons during acoustic stimuli needs to be confirmed. The prediction is that RB neurons would respond to skin stimulation and acoustic stimulation when the tail can move, but not to acoustic stimuli when the tail is immotile. Without a better idea of whether RB neurons are in fact responding to self generated movements, then it is difficult to attribute the behavioral deficit to them and justify the ensuing circuit busting. For example, it could be that there are neurons in the DRG that are instead responsible.\n\n2) There has been quite a bit of work in Xenopus tadpoles studying RB circuitry involved in cutaneous skin reflexes (e.g., Li et al., 2003, J Neurosci.; Li et al., 2004, J Neurophysiol). Abrupt stimulation of RB afferents generates a reflexive response away from the stimulus. Also, as I understand it, they demonstrate that drive from RB cells that potentially arises from movement-related stimulation would largely be filtered out by inhibition (Sillar and Roberts, 1988, Nature). However, RB neurons can reset or increase swimming rhythms when they are stimulated (e.g., Sillar and Roberts, 1992, J Neurosci), so there is clearly the potential for RB neurons to act as they are proposed to here. I think it would be worth explaining more how the findings here fit into previous work in tadpoles, as well as studies of dorsal cells (the RB equivalents) in lampreys (Buchanan and Cohen, 1982, J Neurophysiol; Christenson etal.,1988, Brain Res). I think the role of the RB-V2a connection would be worth considering in the context of struggling as well (Li et al., 2007, J Neurosci).\n\n3) The optogenetic-electrophysiology data as currently presented don't provide sufficient temporal resolution to determine if the RB-V2a connection is monosynaptic or not. If it is, this would be novel, since studies of RB circuits in Xenopus have only revealed indirect connections from RBs to V2a-like neurons (with extremely short latencies though). In fact, the responses have multiple components which would be more consistent with a polysynaptic connection (especially since RB neurons tend to fire once). Given this is not the main goal of the work, I would suggest perhaps stepping back from saying it is a direct connection and instead focus on the excitatory nature of that connection, monosynaptic or not. Of course, this could all be moot if the RBs are not even active during body bending.\n\n4) For the botulinum experiments it is largely assumed that the sensory populations are silenced, but it would be better if there was some confirmation in this line of fish. Patch recordings would be ideal, but if not possible a mention of whether the fish fail to respond to touch or not would suffice.\n\n5) Since the RB driven response is specific to high frequency swimming commensurate with large deflections of the tail, I was expecting that the controls for the aequorin experiments would be zebrafish that are fully embedded so the tail can't move. Is it known if there is still less motor neuron recruitment in this condition comparable to toxin and mutants?\n\n6) Work in lampreys studying the role of edge-cells seems appropriate to discuss more, since the function appears to be very similar to that proposed here and a lot of that work is performed while the tail is moving. Also the recent development of a rodent preparation is another precedence for neural recordings in moving animals (Hayes etal., 2009, J Neurophysiol; Hochman et al., 2012, Front. Biosci).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mechanosensory Neurons Control the Timing of Spinal Microcircuit Selection during Locomotion\" for further consideration at eLife. Your revised article has been favorably evaluated by Didier Stainier (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been greatly improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nA few more changes are necessary that do not require re-review by the expert reviewers.\n\n1) There was concern that the authors overstated the case for monosynapticity in the Introduction and Results, subsection \u201cMechanosensory neurons synapse onto V2a interneurons involved in fast locomotion\u201d, given that experiments with a high concentration of divalent ions \u2013 or the like \u2013 to eliminate (reduce the probability of) disynaptic events were not performed. We suggest that the text starting in subsection \u201cMechanosensory neurons synapse onto V2a interneurons involved in fast locomotion\u201d be modified something like \"To assess whether RB-V2A ipsilateral connection might be monosynaptic, we analyzed the lag between RB spikes time-to-peak and V2a EPSCs onset and found that it was below 1 ms (Figure 7G, 0.9 ms), a value compatible with monosynaptic connection (see (Li et al., 2007a) where cutoff is set at 3 ms for monosynaptic connections).\" The Introduction can be correspondingly edited.\n\n2) Quoting one of the expert reviewers \"There is an underlying assumption that all UAS lines (GFP-aequorin-opt and GCaMP6f;cryaa:mCherry) will produce the same expression patterns when paired with this Gal4 (mnx1:gal4) line. Just because the icm23 line (mnx1:gal4-UAS:preEGFP) was characterized by Bohm et al., this does not mean that Gal4 will work the same with different versions of UAS (UAS:GFP-aequorin-opt or GCaMP6f;cryaa:mCherry). Have these lines been characterized? If so, references to that work must be made to show MN specificity/variegated expression patterns (if any).\"\n\nPlease make an effort to give any references that are relevant and provide any characterizations performed at least in Material and methods.\n",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47757e13-78f8-4416-9a39-b7aa2d36beda",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C1",
+      "claim": "Mechanosensory feedback enhances the recruitment of motor pools during active locomotion in zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that mechanosensory feedback enhances the recruitment of motor pools during active locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data comparing active and fictive locomotion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "7f99a6e4-1677-4353-8aef-e45249ec1b5e",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C2",
+      "claim": "Inputs from mechanosensory neurons increase locomotor speed by prolonging fast swimming at the expense of slow swimming during stereotyped acoustic escape responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrate that inputs from mechanosensory neurons increase locomotor speed by prolonging fast swimming at the expense of slow swimming during stereotyped acoustic escape responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by kinematic analysis data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "8b5cced4-7b5b-4fc2-997e-11496b0c6ba3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C3",
+      "claim": "Connections compatible with monosynaptic inputs from mechanosensory Rohon-Beard neurons onto ipsilateral V2a interneurons selectively recruited at high speed can contribute to the observed enhancement of speed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the spinal cord, we show that connections compatible with monosynaptic inputs from mechanosensory Rohon-Beard neurons onto ipsilateral V2a interneurons selectively recruited at high speed can contribute to the observed enhancement of speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by optogenetic circuit mapping experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "75d6adb1-9ae7-45ad-be11-1357e51d3e88",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C4",
+      "claim": "Premotor excitatory V2a interneurons and motor neurons are recruited in a frequency-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of locomotor circuits in the spinal cord, premotor excitatory V2a interneurons and motor neurons are recruited in a frequency-dependent manner (Crone et al., 2008; Kimura et al., 2006; McLean et al., 2007), a feature thought to underlie speed control in zebrafish (McLean et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e9d1080f-022e-49d8-8a2c-0ffc5108020c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C5",
+      "claim": "Distinct microcircuit modules could regulate the mobilization of individual muscles during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, circuit-mapping experiments revealed preferential connectivity profiles between identified groups of V2a interneurons and motor neurons suggesting that distinct microcircuit modules could regulate the mobilization of individual muscles during locomotion (Ampatzis et al., 2014; Bagnall and McLean, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous circuit-mapping studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "3188a038-2f92-4471-b7a8-9348b74d1f3a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C6",
+      "claim": "Genetic ablation of V2a interneurons in mammals is associated with deficits in left-right coordination and gait transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of V2a interneurons in mammals is associated with deficits in left-right coordination and gait transitions suggesting that V2a interneurons play a key role in controlling speed across vertebrates (Crone et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4e10b135-3be3-4b89-bdef-20b96894039b",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C7",
+      "claim": "V2a interneurons play a key role in controlling speed across vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of V2a interneurons in mammals is associated with deficits in left-right coordination and gait transitions suggesting that V2a interneurons play a key role in controlling speed across vertebrates (Crone et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited ablation study results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "df761f90-cdce-4084-b7bc-95958d107cf8",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C8",
+      "claim": "Peripheral mechanosensory feedback plays a critical role in setting the timing of muscle activation during movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral mechanosensory feedback plays a critical role in setting the timing of muscle activation during movement (Windhorst, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "01caf1cf-8d21-4fcf-95a8-9d381677d20c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C9",
+      "claim": "Stimulation of afferent sensory neurons in decerebrate and paralyzed cats can reorganize the pattern of motor output during fictive locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, stimulation of afferent sensory neurons in decerebrate and paralyzed cats can reorganize the pattern of motor output during fictive locomotion, either by entraining or resetting the locomotor rhythm, depending on the nature of active spinal circuits (Conway et al., 1987; Guertin et al., 1995; Jankowska, 1992; McCrea, 2001; Rossignol et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2d7b86e5-2007-4bc0-8ed5-9493e1f335ab",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C10",
+      "claim": "Altering the development of peripheral sensory neurons leads to dramatic perturbations of motor sequences during walking and swimming in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, altering the development of peripheral sensory neurons leads to dramatic perturbations of motor sequences during walking and swimming in mice, suggesting that mechanosensory circuits can directly control the activity of spinal central pattern generators responsible for rhythmic motor outputs (Akay et al., 2014; Takeoka et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d8dbe4b2-9187-4837-ae4b-e54b83c5973a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C11",
+      "claim": "Mechanosensory circuits can directly control the activity of spinal central pattern generators responsible for rhythmic motor outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, altering the development of peripheral sensory neurons leads to dramatic perturbations of motor sequences during walking and swimming in mice, suggesting that mechanosensory circuits can directly control the activity of spinal central pattern generators responsible for rhythmic motor outputs (Akay et al., 2014; Takeoka et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited studies on sensory neuron perturbations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "9746360a-dd6d-4f16-9f05-cb37d096ab58",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C12",
+      "claim": "GFP-Aequorin was expressed selectively in spinal motor neurons with no expression in muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Live fluorescent image (upper panel) and immunohistochemistry for GFP (lower panel) in a 4 dpf Tg(mnx1:gal4;UAS:GFP-aequorin-opt) zebrafish larva showing selective expression in spinal motor neurons (arrowhead: dorsal primary, arrow: ventral secondary motor neurons), and strictly no expression in muscle fibers (n = 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "757554cc-185a-4c59-8552-5340eff22cfb",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C13",
+      "claim": "Acoustic stimulations triggered stereotypical escape responses characterized by an asymmetrical initial C-bend followed by fast swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Acoustic stimulations triggered stereotypical escape responses characterized by an asymmetrical initial C-bend followed by fast swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral observations and kinematic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4742146a-b961-4034-ac45-ce71c3f3fabe",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C14",
+      "claim": "Acoustic stimulations led to stereotypical slow swims characterized by symmetrical bends with undulations propagating from rostral to caudal along the tail in 7.4% of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In rare cases, possibly due to coelenterazine application, acoustic stimulations led to stereotypical slow swims characterized by symmetrical bends with undulations propagating from rostral to caudal along the tail (7.4% of trials, 21 out of 283 stimulations; see Mirat et al. [2013]) (Figure 1C\u2013D, Videos 2\u20133, n = 10 larvae, see Budick and O'Malley, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "ffa26501-6666-4953-ae83-68ec63ab7918",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C15",
+      "claim": "Stereotypical escape responses generated larger bioluminescence amplitudes than slow swims.",
+      "claim_type": "EXPLICIT",
+      "source": "While time-to-peak and time decay of bioluminescence signals were invariant across maneuvers (data not shown), stereotypical escape responses generated larger bioluminescence amplitudes than slow swims (Figure 1D\u2013E, mean bioluminescence amplitude = 30.8 + /- 1.4 photons/10 ms for escapes and 4.1 \u00b1 1.6 photons/10 ms for slow swimming, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioluminescence measurements presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "a697f2d8-ce35-4176-bdbf-cda4379191d2",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C16",
+      "claim": "Bioluminescence signal amplitude correlated with the maximal angle of the tail bend.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence signal amplitude correlated with the maximal angle of the tail bend (Figure 1F, R = 0.4, p<0.001), suggesting that spinal motor neuron recruitment is increased during behaviors with larger tail bends and faster locomotor frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of bioluminescence and kinematic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4b1a37fc-40c8-46c2-840b-52b4ca463d80",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C17",
+      "claim": "Spinal motor neuron recruitment is increased during behaviors with larger tail bends and faster locomotor frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence signal amplitude correlated with the maximal angle of the tail bend (Figure 1F, R = 0.4, p<0.001), suggesting that spinal motor neuron recruitment is increased during behaviors with larger tail bends and faster locomotor frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the correlation between bioluminescence amplitude and tail bend angle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "51eed32d-3ca6-4685-bac2-390d9a9233e6",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C18",
+      "claim": "At 4 dpf, fictive locomotor burst frequencies ranged between 20\u201330 Hz for slow swims.",
+      "claim_type": "EXPLICIT",
+      "source": "At 4 dpf, fictive locomotor burst frequencies ranged between 20\u201330 Hz for slow swims (left panel of Figure 2C, see Masino and Fetcho [2005]) and 20\u201380 Hz for escapes (right panel of Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ventral nerve root recordings shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "11d6827e-e9c3-4697-bb70-5aa4731b9380",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C19",
+      "claim": "At 4 dpf, fictive locomotor burst frequencies ranged between 20\u201380 Hz for escapes.",
+      "claim_type": "EXPLICIT",
+      "source": "At 4 dpf, fictive locomotor burst frequencies ranged between 20\u201330 Hz for slow swims (left panel of Figure 2C, see Masino and Fetcho [2005]) and 20\u201380 Hz for escapes (right panel of Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ventral nerve root recordings shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e784b070-ae4f-450c-8f37-cfc4ba823154",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C20",
+      "claim": "During slow swimming, 23.2% of ventral motor neurons was active.",
+      "claim_type": "EXPLICIT",
+      "source": "During slow swimming, a small fraction of ventral motor neurons was active (23.2%, left panel of Figure 2D, Figure 2E, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "70e26b29-5f98-484c-9287-8e952297a496",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C21",
+      "claim": "During escapes, 88.4% of motor neurons, including large dorsal motor neurons, was recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of motor neurons, including large dorsal motor neurons, was recruited during escapes (88.4%, right panel of Figure 2D, Figure 2E, and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d0bd58ee-2bec-42e1-8cba-b1899b729524",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C22",
+      "claim": "Dorsalmost motor neurons showed larger calcium transients than ventral ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsalmost motor neurons showed larger calcium transients than ventral ones (Figure 2D), and the averaged \u0394F/F across all recruited motor neurons was higher during escapes compared to slow swims (Figure 2F, mean \u0394F/F/active cell = 91.1 + /- 4.7% during escape responses and 25.9 \u00b1 3.8% during slow swimming, p<0.001, n = 10 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f3f1ec27-09f9-4ccd-978d-0ea07ef1e961",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C23",
+      "claim": "The averaged \u0394F/F across all recruited motor neurons was higher during escapes compared to slow swims (91.1 \u00b1 4.7% versus 25.9 \u00b1 3.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsalmost motor neurons showed larger calcium transients than ventral ones (Figure 2D), and the averaged \u0394F/F across all recruited motor neurons was higher during escapes compared to slow swims (Figure 2F, mean \u0394F/F/active cell = 91.1 + /- 4.7% during escape responses and 25.9 \u00b1 3.8% during slow swimming, p<0.001, n = 10 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f86c5cd4-b9c5-4367-86b8-21d8e7379fda",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C24",
+      "claim": "The generation of fast escape responses requires the recruitment of more spinal motor neurons compared to slow swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that the generation of fast escape responses requires the recruitment of more spinal motor neurons compared to slow swimming and that the amplitude of calcium signals are higher in cells active during escapes compared to spontaneous swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the calcium imaging data showing different recruitment patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "953006c0-1065-49a6-9e7d-d38a9f64213a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C25",
+      "claim": "The amplitude of calcium signals are higher in cells active during escapes compared to spontaneous swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "These data revealed that the generation of fast escape responses requires the recruitment of more spinal motor neurons compared to slow swimming and that the amplitude of calcium signals are higher in cells active during escapes compared to spontaneous swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calcium imaging data comparing escapes and slow swimming.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2d86ed10-7be1-4fde-9778-e73d1a2ae0ff",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C26",
+      "claim": "High bioluminescence signal amplitude during escape responses compared to slow swims results from the combination of a larger pool of active cells and larger calcium transients per active neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that high bioluminescence signal amplitude during escape responses compared to slow swims likely results from the combination of two effects: a larger pool of active cells driven by an increase in swimming frequency and larger calcium transients per active neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined bioluminescence and calcium imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "bf2a671d-4605-4654-b1ac-cd17bd4d5d25",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C27",
+      "claim": "Mean bioluminescence amplitude was markedly decreased in paralyzed compared to motile animals (26.6 \u00b1 0.9 versus 11.1 \u00b1 0.4 photons/10 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all Tg(mnx1:gal4;UAS:GFP-aequorin-opt) larvae, mean bioluminescence amplitude was markedly decreased in paralyzed compared to motile animals (Figure 3B\u2013C, signal amplitude before paralysis = 26.6 + /- 0.9 photons/10 ms; signal amplitude after paralysis = 11.1 + /- 0.4 photons/10 ms, p<0.001, n = 10 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by bioluminescence measurements before and after paralysis shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "b39f402d-5924-428a-9bf4-495786ee2fc9",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C28",
+      "claim": "Within each larva, the mean normalized bioluminescence amplitude was decreased seven-fold after paralysis (0.056 \u00b1 0.08 versus 0.36 \u00b1 0.18).",
+      "claim_type": "EXPLICIT",
+      "source": "Within each larva, the mean normalized bioluminescence amplitude was decreased seven-fold (0.056 \u00b1 0.08 versus 0.36 \u00b1 0.18, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by normalized bioluminescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d9043bf8-0e57-4790-b02b-eec2d789af73",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C29",
+      "claim": "Mean bioluminescence amplitude was markedly decreased in immotile cacnb1ts25/ts25 mutant larvae compared to motile control siblings (9.8 \u00b1 0.4 versus 37.6 \u00b1 1.4 photons/10 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean bioluminescence amplitude was markedly decreased in immotile Tg(cacnb1ts25/ts25; mnx1:gal4; UAS:GFP-aequorin-opt) larvae compared to motile Tg(mnx1:gal4, UAS:GFP-aequorin-opt) control siblings (Figure 3D\u2013E, mean signal amplitude in motile siblings = 37.6 + /- 1.4 photons/10 ms; mean signal amplitude in immotile mutants = 9.8 + /- 0.4 photons/10 ms, p<0.001, n = 3 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by bioluminescence measurements in mutant and control larvae shown in Figure 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "3858b8e1-9638-422f-a8ef-8533eff26897",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C30",
+      "claim": "The recruitment of spinal motor neurons is enhanced during active locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results demonstrate that the recruitment of spinal motor neurons is enhanced during active locomotion, indicating that mechanosensory feedback pathways recruited during muscle contraction contributes to increasing spinal motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of bioluminescence in active versus paralyzed/immotile conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2f2d2934-941a-4101-99a0-b6b5c2cf80e6",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C31",
+      "claim": "Mechanosensory feedback pathways recruited during muscle contraction contribute to increasing spinal motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results demonstrate that the recruitment of spinal motor neurons is enhanced during active locomotion, indicating that mechanosensory feedback pathways recruited during muscle contraction contributes to increasing spinal motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results comparing active and fictive locomotion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "adb741f1-a194-4ac5-920e-befaae3e6642",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C32",
+      "claim": "The isl2b promoter drives expression in glutamatergic mechanosensory neurons, namely Rohon-Beard neurons and dorsal root ganglia in the spinal cord and trigeminal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the zebrafish-optimized Botulinum toxin under the control of the isl2b promoter (Auer et al., 2015; B\u00f6hm et al., 2016; Sternberg et al., 2016) (see Materials and methods and Video 6) in order to block synaptic release in glutamatergic mechanosensory neurons, namely Rohon-Beard neurons (RB) and dorsal root ganglia (DRG) in the spinal cord and trigeminal ganglia (Figure 4A, note the bundle of RB and DRG axons ascending in the spinal cord in Figure 4B, (Won et al., 2011)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the expression pattern shown in Figure 4A-B and cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d77b46c7-3d55-4cfd-917e-5cae5cb08f2b",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C35",
+      "claim": "Tail-beat frequency was markedly reduced in BoTxBLC-GFP+ animals (34.2 \u00b1 0.4 Hz versus 37.8 \u00b1 0.3 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted that tail-beat frequency (TBF) (Figure 4E3) and, accordingly, speed (Figure 4E4) were markedly reduced in BoTxBLC-GFP+ animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 4E3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "82949aaa-874c-438c-a783-d30173e41fd3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C36",
+      "claim": "Speed was markedly reduced in BoTxBLC-GFP+ animals (56.9 \u00b1 1.1 versus 64.1 \u00b1 0.9 mm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted that tail-beat frequency (TBF) (Figure 4E3) and, accordingly, speed (Figure 4E4) were markedly reduced in BoTxBLC-GFP+ animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 4E4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "a482dfe0-a2e9-4e23-934e-3a33cc5dd6bf",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C37",
+      "claim": "Escape duration increased in larvae deprived of mechanosensory feedback (from 168.1 \u00b1 2.4 ms to 182.0 \u00b1 3 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Coincident with the reduction in TBF and stability of number of oscillations, the escape duration increased in larvae deprived of mechanosensory feedback (Figure 4E5, from 168.1 \u00b1 2.4 ms to 182.0 \u00b1 3 ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 4E5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "ce133ece-2f40-4f14-8b1c-459070a1e8af",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C38",
+      "claim": "The amplitude of the first C-bend was not affected in BoTxBLC-GFP+ animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the amplitude of the first C-bend was not affected in BoTxBLC-GFP+ animals (Figure 4\u2014figure supplement 1), the amplitudes of subsequent tail bends were increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "9776fe8c-ec45-4c4e-a177-311a835707c4",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C39",
+      "claim": "The amplitudes of subsequent tail bends were increased in BoTxBLC-GFP+ animals, especially on the ipsilateral side.",
+      "claim_type": "EXPLICIT",
+      "source": "While the amplitude of the first C-bend was not affected in BoTxBLC-GFP+ animals (Figure 4\u2014figure supplement 1), the amplitudes of subsequent tail bends were increased. This was especially pronounced on the ipsilateral side, suggesting a modulation of motor circuits recruited after the response onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d7482183-7dac-4e8f-be0b-f8b029d446ff",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C40",
+      "claim": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm, p<0.001), duration (C2, 60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms, p=0.005), number of oscillations (C3, 2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations, p<0.001), speed (C4, 104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s, p=0.001), and TBF (C5, 45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5C1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "916e3459-bad1-4576-b8a2-644b0a29c2d3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C41",
+      "claim": "Within the fast regime of the escape, silencing mechanosensory feedback reduces duration in BoTxBLC+ larvae (60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm, p<0.001), duration (C2, 60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms, p=0.005), number of oscillations (C3, 2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations, p<0.001), speed (C4, 104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s, p=0.001), and TBF (C5, 45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5C2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "595e3bb7-7e22-49f4-81e6-39226267c336",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C42",
+      "claim": "Within the fast regime of the escape, silencing mechanosensory feedback reduces number of oscillations in BoTxBLC+ larvae (2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm, p<0.001), duration (C2, 60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms, p=0.005), number of oscillations (C3, 2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations, p<0.001), speed (C4, 104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s, p=0.001), and TBF (C5, 45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5C3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "da60e084-00a9-483f-a11e-4aa108ce46b5",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C43",
+      "claim": "Within the fast regime of the escape, silencing mechanosensory feedback reduces speed in BoTxBLC+ larvae (104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm, p<0.001), duration (C2, 60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms, p=0.005), number of oscillations (C3, 2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations, p<0.001), speed (C4, 104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s, p=0.001), and TBF (C5, 45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5C4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "60b9b583-e781-4b26-b45a-e05d51834753",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C44",
+      "claim": "Within the fast regime of the escape, silencing mechanosensory feedback reduces TBF in BoTxBLC+ larvae (45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the fast regime of the escape, silencing mechanosensory feedback reduces the distance travelled in BoTxBLC+ larvae compared to control siblings (C1, 5.9 \u00b1 0.2 versus 7.4 \u00b1 0.2 mm, p<0.001), duration (C2, 60.0 \u00b1 2.1 versus 67.8 \u00b1 1.9 ms, p=0.005), number of oscillations (C3, 2.9 \u00b1 0.1 versus 3.6 \u00b1 0.1 oscillations, p<0.001), speed (C4, 104.3 \u00b1 1.9 versus 112.6 \u00b1 1.6 mm/s, p=0.001), and TBF (C5, 45.8 \u00b1 0.4 versus 48.4 \u00b1 0.3 Hz, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5C5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4524153a-cbc0-4936-98f0-43212e2f172a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C45",
+      "claim": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm, p<0.001), duration (D2, 140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1, p<0.001) but has no effect on speed (D4, 24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz, p=0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5D1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d1aa21df-ba70-4ef3-a520-c16a6afac8fd",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C46",
+      "claim": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases duration (140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm, p<0.001), duration (D2, 140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1, p<0.001) but has no effect on speed (D4, 24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz, p=0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5D2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e55b5c88-c75f-41a2-b324-41f42a1ee809",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C47",
+      "claim": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases number of oscillations (2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm, p<0.001), duration (D2, 140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1, p<0.001) but has no effect on speed (D4, 24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz, p=0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5D3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "07a43409-363e-4da2-850a-859b3952e944",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C48",
+      "claim": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae has no effect on speed (24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm, p<0.001), duration (D2, 140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1, p<0.001) but has no effect on speed (D4, 24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz, p=0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5D4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "770c5ebd-c4ff-4f73-a4b1-be356119cec1",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C49",
+      "claim": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae has no effect on tail-beat frequency (25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the slow component of the escape, silencing mechanosensory feedback in BoTxBLC+ larvae increases the distance travelled (D1, 3.5 \u00b1 0.1 versus 2.4 \u00b1 0.1 mm, p<0.001), duration (D2, 140.9 \u00b1 3.4 versus 97.1 \u00b1 3.2 ms, p<0.001, p<0.001) and number of oscillations (D3, 2.8 \u00b1 0.1 versus 1.9 \u00b1 0.1, p<0.001) but has no effect on speed (D4, 24.9 \u00b1 0.4 versus 24.6 \u00b1 0.4 mm/s, p=0.5) and tail-beat frequency (D5, 25.3 \u00b1 0.1 versus 25.4 \u00b1 0.1 Hz, p=0.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinematic analysis data shown in Figure 5D5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "62857483-5eae-4f9c-a0b0-0bd325a7d232",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C50",
+      "claim": "The reduction of speed and locomotor frequency observed in mechanosensory-deprived animals is specifically restricted to the fast component but not the slow one.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the reduction of speed and locomotor frequency observed in mechanosensory-deprived animal is specifically restricted to the fast component but not the slow one (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the differential effects on fast versus slow components shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "aaf1ce59-d16a-4b84-b9c5-c90be7d01fcd",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C51",
+      "claim": "Mechanosensory feedback enhances speed of locomotion by promoting the transition between fast and slow locomotion during escape responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results demonstrate that mechanosensory feedback enhances speed of locomotion by promoting the transition between fast and slow locomotion during escape responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinematic analysis showing effects on fast versus slow components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "beb236a9-c0b2-4b2f-8f04-8c9f32d2e2ed",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C52",
+      "claim": "Spinal V2a interneurons are recruited in a topographic and frequency-dependent manner during fictive locomotion, with dorsalmost V2a interneurons solely active during fast locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in zebrafish larvae showed that spinal V2a interneurons are recruited in a topographic and frequency-dependent manner during fictive locomotion, with dorsalmost V2a interneurons solely active during fast locomotion (McLean et al., 2008, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "54558dd6-869a-4b39-b386-80a3fbcacab7",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C53",
+      "claim": "V2a interneurons constitute an important class of excitatory interneurons driving the recruitment of motor neurons\u2014especially during fast locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation, silencing and optogenetic manipulations revealed that these neurons constitute an important class of excitatory interneurons driving the recruitment of motor neurons\u2014especially during fast locomotion (Ampatzis et al., 2014; Bagnall and McLean, 2014; Crone et al., 2008; Kimura et al., 2006, 2013; Ljunggren et al., 2014; McLean et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "9fec7455-b301-474b-9107-20d37184113d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C54",
+      "claim": "Axonal projections from Rohon-Beard cells show patterns of perisomatic innervation of dorsal V2a cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed patterns of perisomatic innervation of dorsal V2a cell bodies by axonal projections originating from one cell type targeted by the isl2b driver, Rohon-Beard cells (Figure 6A\u2013D, mean soma position of V2a = 0.72 + - 0.04, n = 12 cells in 4 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical observations shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "b00cfd57-041a-4062-b81d-906df8cec80a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C55",
+      "claim": "Rohon-Beard cells are low input resistance neurons and required current injections ranging from 200 to 700 pA to generate single spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rohon-Beard cells are low input resistance neurons and required current injections ranging from 200 to 700 pA to generate single spikes (Figure 7B, n = 6 cells, 250 ms injection steps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f41fe498-dd3f-41b5-9d0c-62dcee7e457b",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C56",
+      "claim": "Dorsalmost V2a neurons only required from 15 to 50 pA to fire action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, dorsalmost V2a neurons only required from 15 to 50 pA to fire action potentials (Figure 7H, n = 5 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f35fb4ae-89a8-4be2-84dc-3410fbdfeecd",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C57",
+      "claim": "1 to 5 ms blue light pulses were sufficient to elicit photocurrents driving single action potentials in Rohon-Beard neurons at 4 and 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 1 to 5 ms blue light pulses were sufficient to elicit photocurrents driving single action potentials in Rohon-Beard neurons at 4 and 5 dpf (Figure 7C and G, mean time to peak from the onset of the light pulse = 2.80 + /- 0.29 ms, n = 6 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic stimulation data shown in Figure 7C and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e0904ee3-2117-4be4-9b0f-d770178335d3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C58",
+      "claim": "RB stimulation led to short latency excitatory post-synaptic currents (EPSCs) in target V2a interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that RB stimulation led to short latency excitatory post-synaptic currents (EPSCs) in target V2a interneurons (Figure 7D\u2013E and G, mean delay from the onset of light pulse = 3.71 + /- 0.19 ms, n = 8 cells in 8 larvae).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 7D-E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "74a3f152-69e8-42b8-b096-6be9943ca367",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C59",
+      "claim": "The lag between RB spikes time-to-peak and V2a EPSCs onset was below 1 ms (0.9 ms), a value compatible with monosynaptic connection.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether RB-V2A ipsilateral connection might be monosynaptic, we analyzed the lag between RB spikes time-to-peak and V2a EPSCs onset and found that it was below 1 ms (Figure 7G, 0.9 ms), a value compatible with monosynaptic connection (see Li et al. [2007a]) where cutoff is set at 3 ms for monosynaptic connections).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by timing analysis shown in Figure 7G and comparison to literature standards.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "5090fc74-06d7-4d73-97b4-3f094e91049e",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C60",
+      "claim": "Assuming a synaptic delay of 0.5 ms, the estimated conduction velocity along the axon of RB neuron would be 0.75 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a synaptic delay of 0.5 ms, the estimated conduction velocity along the axon of RB neuron would be 0.75 m/s, a value compatible with previous measurement in the field (Li et al., 2007a, 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the timing measurements and is consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "aa53d8fc-c27a-424f-bfcd-fe5480d1a009",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C61",
+      "claim": "EPSC amplitude induced by RB stimulation in V2a interneurons were on average 28.14 \u00b1 3.9 pA, leading to estimated depolarization of 11.71 \u00b1 2.59 mV on target V2a.",
+      "claim_type": "EXPLICIT",
+      "source": "EPSC amplitude induced by RB stimulation in V2a interneurons were on average 28.14 \u00b1 3.9 pA, leading to estimated depolarization of 11.71 \u00b1 2.59 mV on target V2a (n = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "b9ed0373-5e9c-4700-83c1-493f825db1dc",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C62",
+      "claim": "In some cases, RB inputs were sufficient to elicit action potentials in V2a interneurons tested in current clamp mode.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, RB inputs were therefore sufficient to elicit action potentials in V2a interneurons tested in current clamp mode (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "d62a7f73-5377-431d-b37c-f50493c38944",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C63",
+      "claim": "Blockers of glutamatergic neurotransmission abolished EPSCs in target V2a.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the glutamatergic nature of RB neurons, we incubated the preparation with blockers of glutamatergic neurotransmission and found that it abolished EPSCs in target V2a (Figure 7I, n = 2 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pharmacological experiments shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "3105d04a-33d6-485f-98de-2936c718d132",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C64",
+      "claim": "There is a monosynaptic connection between RB neurons and ipsilateral dorsalmost V2a interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate a monosynaptic connection between RB neurons and ipsilateral dorsalmost V2a interneurons and demonstrate the ability of RB neurons to recruit selectively a subpopulation of V2a interneurons controlling fast swimming in the dorsal spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined optogenetic and electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "ba92758c-22b0-41fd-9773-5d8e8784bd83",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C65",
+      "claim": "RB neurons can recruit selectively a subpopulation of V2a interneurons controlling fast swimming in the dorsal spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate a monosynaptic connection between RB neurons and ipsilateral dorsalmost V2a interneurons and demonstrate the ability of RB neurons to recruit selectively a subpopulation of V2a interneurons controlling fast swimming in the dorsal spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined anatomical, optogenetic, and electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "8b9b6821-7419-4427-be07-90e42ff7e0a5",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C66",
+      "claim": "The direct pathway from RB neurons onto ipsilateral 'fast' V2a neurons may act in concert with afferences from dorsal root ganglia and trigeminal neurons to enhance speed during active locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "This direct pathway from RB neurons onto ipsilateral 'fast' V2a neurons may act in concert with afferences from dorsal root ganglia and trigeminal neurons to enhance speed during active locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a mechanism based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "96e17932-aed0-41c4-875f-93944c545aae",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C67",
+      "claim": "Mechanosensory feedback allows zebrafish larvae to travel the same distance in a shorter time (about 15 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "As it allows zebrafish larvae to travel the same distance in a shorter time (about 15 ms), mechanosensory feedback also bears ecological implications for fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinematic data showing reduced escape duration with mechanosensory feedback.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "7394affa-0018-4587-9fa8-efa0cbb52aaa",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C68",
+      "claim": "By speeding up escapes during a predator attack, mechanosensory feedback may help enhancing survival.",
+      "claim_type": "EXPLICIT",
+      "source": "By speeding up escapes during a predator attack, mechanosensory feedback may help enhancing survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing an ecological implication based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "3e804bf9-48e3-4e99-af9d-5fbba99d22fb",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C69",
+      "claim": "The amplitude of Aequorin signals from motor neurons could be used as a signature for distinguishing locomotor maneuvers including slow swimming and fast escape responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the amplitude of Aequorin signals from motor neurons could be used as a signature for distinguishing locomotor maneuvers including slow swimming and fast escape responses that have specific ranges of swimming frequencies and distinct profiles of motor neurons recruitment (Liao and Fetcho, 2008; Masino and Fetcho, 2005; McLean et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bioluminescence data and cited literature on motor neuron recruitment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2c9b0a19-6dc1-4a8b-9e66-b205335f556a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C70",
+      "claim": "Eliminating mechanical sensory feedback originating from muscle contraction led to a decrease of bioluminescence signals from motor neurons during acoustic escape responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eliminating mechanical sensory feedback originating from muscle contraction led to a decrease of bioluminescence signals from motor neurons during acoustic escape responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bioluminescence measurements in paralyzed versus active conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "70a3f81e-9fc1-47d8-bee3-b3b0561c8a8d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C71",
+      "claim": "Mechanosensory feedback enhances the recruitment of motor circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that mechanosensory feedback enhances the recruitment of motor circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the bioluminescence data comparing active and fictive locomotion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e2e2c8b7-241a-4b07-9e60-a552b0f72dd5",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C72",
+      "claim": "The perturbation of major kinematic parameters such as left/right coordination or locomotor frequency during fictive locomotion usually requires the ablation of entire classes of spinal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The perturbation of major kinematic parameters such as left/right coordination or locomotor frequency during fictive locomotion usually requires the ablation of entire classes of spinal neurons (Crone et al., 2008; Gosgnach et al., 2006; Talpalar et al., 2013; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "b967ce47-306b-4f87-b750-35c770b9b70c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C73",
+      "claim": "There are no muscle spindles relaying mechanical information on muscle contraction to spinal circuits in fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to mammals, there are no muscle spindles relaying mechanical information on muscle contraction to spinal circuits in fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about fish anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2dc21ce9-484d-4c00-b186-a4fd54248e3d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C74",
+      "claim": "Glutamatergic stretch receptor neurons that can sense body elongation in lamprey project onto spinal sensory neurons, motor neurons and interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, glutamatergic stretch receptor neurons that can sense body elongation in lamprey (Grillner et al., 1981; Rovainen, 1974) project onto spinal sensory neurons, motor neurons and interneurons (Di Prisco et al., 1990) and can entrain the locomotor central pattern generators (CPGs, [Grillner et al., 1981; McClellan and Sigvardt, 1988]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "48d02ead-181d-40e1-b882-650b6198b28e",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C75",
+      "claim": "Stretch receptor neurons can entrain the locomotor central pattern generators in lamprey.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, glutamatergic stretch receptor neurons that can sense body elongation in lamprey (Grillner et al., 1981; Rovainen, 1974) project onto spinal sensory neurons, motor neurons and interneurons (Di Prisco et al., 1990) and can entrain the locomotor central pattern generators (CPGs, [Grillner et al., 1981; McClellan and Sigvardt, 1988]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "8bfec47d-414c-44d7-b7ab-c079415b0e4a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C76",
+      "claim": "GABAergic cerebrospinal-fluid contacting neurons have been shown to detect body curvature following muscle contraction in both zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, GABAergic cerebrospinal-fluid contacting neurons have been shown to detect body curvature following muscle contraction in both zebrafish (B\u00f6hm et al., 2016; Grillner et al., 1984; Jalalvand et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "e12f0d82-bd18-4c25-ac50-3390f3bf701a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C77",
+      "claim": "The activation of mechanosensory pathways, either during natural mechanical oscillations of the tail or optogenetic stimulations, is sufficient to trigger locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the activation of each of these pathways, either during natural mechanical oscillations of the tail or optogenetic stimulations, is sufficient to trigger locomotor activity demonstrating that mechanosensory feedback can provide inputs to locomotor central pattern generator circuits in the spinal cord (B\u00f6hm et al., 2016; Fidelin et al., 2015; McClellan and Grillner, 1983; Wyart et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "289b133e-c387-43aa-8892-7727caea50eb",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C78",
+      "claim": "Mechanosensory feedback can provide inputs to locomotor central pattern generator circuits in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the activation of each of these pathways, either during natural mechanical oscillations of the tail or optogenetic stimulations, is sufficient to trigger locomotor activity demonstrating that mechanosensory feedback can provide inputs to locomotor central pattern generator circuits in the spinal cord (B\u00f6hm et al., 2016; Fidelin et al., 2015; McClellan and Grillner, 1983; Wyart et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited studies showing activation of locomotion by mechanosensory pathways.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "c867afe6-8595-44ef-a1a2-20bada9e261f",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C79",
+      "claim": "A remarkably simple and conserved disynaptic cutaneous skin reflex relies on spinal mechanosensory neurons referred to as Rohon Beard (RB) neurons in Xenopus and zebrafish and 'dorsal cells' in lamprey.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have described a remarkably simple and conserved disynaptic cutaneous skin reflex relying on spinal mechanosensory neurons referred to as Rohon Beard (RB) neurons in Xenopus and zebrafish and 'dorsal cells' in lamprey (Buchanan and Cohen, 1982; Christenson et al., 1988; Clarke et al., 1984; Easley-Neal et al., 2013; Li et al., 2003; Roberts et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "05108483-f7bd-4d0e-97ac-b045ba01065e",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C80",
+      "claim": "Spinal mechanosensory neurons respond to skin stimulation at rest by firing a single spike and project onto glutamatergic commissural interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In these species, spinal mechanosensory neurons respond to skin stimulation at rest by firing a single spike and project onto glutamatergic commissural interneurons (referred to as dIc, CoPA and giant interneurons respectively [Buchanan and Cohen, 1982; Easley-Neal et al., 2013; Li et al., 2003; Pietri et al., 2009; Sillar and Roberts, 1988]), which drive contralateral motor neuron activation and subsequent swimming away from the stimulus (Buchanan and Cohen, 1982; Christenson et al., 1988; Li et al., 2003, 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4652f7a1-63f6-4bbd-8e89-a4f5ff86ba80",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C81",
+      "claim": "Commissural interneurons drive contralateral motor neuron activation and subsequent swimming away from the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In these species, spinal mechanosensory neurons respond to skin stimulation at rest by firing a single spike and project onto glutamatergic commissural interneurons (referred to as dIc, CoPA and giant interneurons respectively [Buchanan and Cohen, 1982; Easley-Neal et al., 2013; Li et al., 2003; Pietri et al., 2009; Sillar and Roberts, 1988]), which drive contralateral motor neuron activation and subsequent swimming away from the stimulus (Buchanan and Cohen, 1982; Christenson et al., 1988; Li et al., 2003, 2004b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "8dc6547a-de75-446c-b04b-1e7a3e1a52db",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C82",
+      "claim": "During swimming, excitation of commissural sensory interneurons from sensory neurons was shown to be filtered out by phase-locked inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "During swimming, excitation of commissural sensory interneurons from sensory neurons was shown to be filtered out by phase-locked inhibition (Knogler and Drapeau, 2014; Sillar and Roberts, 1988), ensuring that the recruitment of RB neurons potentially arising from movement-related activation would not trigger the disynaptic cutaneous reflex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "99ba4092-28d6-40a8-9702-6b397a46b33a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C83",
+      "claim": "Phase-locked inhibition ensures that the recruitment of RB neurons potentially arising from movement-related activation would not trigger the disynaptic cutaneous reflex.",
+      "claim_type": "EXPLICIT",
+      "source": "During swimming, excitation of commissural sensory interneurons from sensory neurons was shown to be filtered out by phase-locked inhibition (Knogler and Drapeau, 2014; Sillar and Roberts, 1988), ensuring that the recruitment of RB neurons potentially arising from movement-related activation would not trigger the disynaptic cutaneous reflex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited studies on phase-locked inhibition.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f415c370-ecc9-481d-8d2e-86fca5244f4d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C84",
+      "claim": "The contribution of RB neurons to the enhancement of speed by mechanosensory feedback is consistent with previous experiments showing that stimulation of RB neurons can reset or increase locomotor frequency in Xenopus tadpoles.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of RB neurons to the enhancement of speed by mechanosensory feedback is consistent with previous experiments showing that stimulation of RB neurons can reset or increase locomotor frequency in Xenopus tadoples (for example,[Sillar and Roberts, 1992]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "6df912ce-bfaf-47cd-9fd3-8b73b7984de1",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C85",
+      "claim": "The role of mechanosensory feedback to increase swimming speed is consistent with former observations in lamprey showing an entrainment of locomotion by mechanical stimulation of the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of mechanosensory feedback to increase swimming speed is consistent with former observations in lamprey showing an entrainment of locomotion by mechanical stimulation of the spinal cord (Grillner et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "956f045d-d202-43be-9845-527db0c37bca",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C86",
+      "claim": "RB neurons have complex processes branching under the skin as well as ascending and descending in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "RB neurons have complex processes branching under the skin as well as ascending and descending in the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "20e729d6-0dc9-4616-8c26-982842e546b2",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C87",
+      "claim": "RB neurons usually fire single action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless measuring activation of RB neurons during mechanical stimulation remains challenging due to the fact that RB neurons usually fire single action potentials ( et al., 2017; Roberts et al., 2012; Winlove and Roberts, 2012) and most calcium indicator fail to report single spike without extensive averaging (see Chen et al. [2013]; Tian et al. [2009]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "df223ec6-1eb5-41bc-aba8-615e2912851c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C88",
+      "claim": "Most calcium indicators fail to report single spike without extensive averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless measuring activation of RB neurons during mechanical stimulation remains challenging due to the fact that RB neurons usually fire single action potentials ( et al., 2017; Roberts et al., 2012; Winlove and Roberts, 2012) and most calcium indicator fail to report single spike without extensive averaging (see Chen et al. [2013]; Tian et al. [2009]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "255b8023-5c7f-4a20-afc8-54069afdfafb",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C89",
+      "claim": "Locomotion is faster in active compared to fictive conditions in various invertebrate as well as vertebrate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results about the role of mechanosensory feedback in speed modulation can explain the general observation made in various invertebrate as well as vertebrate species that locomotion is faster in active compared to fictive conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general observations across species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "04f01abd-78e5-47d0-9009-1cb459db7c9d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C90",
+      "claim": "In invertebrates, there is evidence in several species for fictive locomotor patterns being typically twice slower than real locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In invertebrates, there is evidence in several species for fictive locomotor patterns being typically twice slower than real locomotion (sea slugs, (Morton and Chiel, 1993), 1993; crayfish, (Bacqu\u00e9-Cazenave et al., 2015); and fruit fly, (Mendes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies in invertebrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "4b4cfc13-54da-494b-b980-5df15c4be446",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C91",
+      "claim": "In the leech, the effect of denervation is a systematic slowdown of locomotor activity, although it is much larger in crawling (twofolds).",
+      "claim_type": "EXPLICIT",
+      "source": "The leech is a particularly interesting example as it can perform both swimming and crawling. The effect of denervation is a systematic slowdown of locomotor activity, although it is much larger in crawling (twofolds) (Baader and Kristan, 1992; Eisenhart et al., 2000; Kristan and Calabrese, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies in leeches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "c082a417-db8e-4d21-99c8-f51eca7f2445",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C92",
+      "claim": "In lamprey, the frequency of fictive swimming appears 5\u201310 times slower than the frequency of active swimming recorded through electromyography.",
+      "claim_type": "EXPLICIT",
+      "source": "In lamprey where the same animal was used to compare active and fictive locomotion, the frequency of fictive swimming appears 5\u201310 times slower than the frequency of active swimming recorded through electromyography (Wall\u00e9n and Williams, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study in lamprey.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2a645252-20a1-4ad8-b70d-2ca59e0e3174",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C93",
+      "claim": "The general slowdown of locomotor frequencies when peripheral sensory feedback is removed is commonly observed in fictive locomotion in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The general slowdown of locomotor frequencies when peripheral sensory feedback is removed is commonly observed in fictive locomotion in mice as well (Bellardita and Kiehn, 2015; Talpalar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "88562f61-029d-40b2-b045-a2d60f407076",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C94",
+      "claim": "Microcircuit selection during locomotor behaviors is not only set by descending commands from supra-spinal centers but could rather result from a combination of inputs from descending and local spinal sensorimotor circuits recruited while the movement is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our work demonstrates that microcircuit selection during locomotor behaviors is not only set by descending commands from supra-spinal centers but could rather result from a combination of inputs from descending and local spinal sensorimotor circuits recruited while the movement is performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings showing the role of mechanosensory feedback.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "74c4482b-0d41-4d83-af1e-42afc0c68839",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C95",
+      "claim": "The Tg(mnx1:gal4)icm11 line was based on the injection of the mnx1 construct provided by Dr. Thomas Auer and Dr. Filippo Del Bene.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tg(mnx1:gal4)icm11 line was based on the injection of the mnx1 construct provided by Dr. Thomas Auer and Dr. Filippo Del Bene (Institut Curie, Paris, France, see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the generation of transgenic lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "40c0d965-a635-43d9-9e8a-9df515bd6386",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C96",
+      "claim": "The original sequence for GFP-Aequorin provided by Dr. Ludovic Tricoire was codon-optimized for expression in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The original sequence for GFP-Aequorin provided by Dr. Ludovic Tricoire (Universit\u00e9 Pierre et Marie Curie, Paris, France) was subsequently codon-optimized for expression in zebrafish and subcloned into the PT2 14XUAS plasmid provided by Pr. Koichi Kawakami (National Institute of Genetics, Mishima, Japan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the generation of transgenic lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "dbe04401-cd97-432e-a23c-e7084df332c3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "claim_id": "C97",
+      "claim": "In homozygous cacnb1ts25/ts25 mutants, a mutation of the skeletal muscle dihydropyridine receptor \u03b21a subunit interferes with the calcium release and mutant larvae are immotile.",
+      "claim_type": "EXPLICIT",
+      "source": "In homozygous cacnb1ts25/ts25 mutants, a mutation of the skeletal muscle dihydropyridine receptor \u03b21a subunit interferes with the calcium release and mutant larvae are immotile (Granato et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the original characterization of the mutant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc822deb-132d-4088-90eb-f6af75f40a3d",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bioluminescence imaging using GFP-Aequorin in motor neurons distinguishes locomotor behaviors. GFP-Aequorin was selectively expressed in spinal motor neurons without muscle expression (C12). Acoustic stimulation triggered escape responses (C13) and occasionally slow swims (C14). Escape responses generated larger bioluminescence amplitudes than slow swims (30.8 vs 4.1 photons/10 ms, C15), and bioluminescence amplitude correlated with tail bend angle (R=0.4, C16), suggesting increased motor neuron recruitment during behaviors with larger tail bends and faster frequencies (C17, C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 and C69 provide converging evidence from immunohistochemistry, behavioral tracking, and bioluminescence measurements with appropriate statistical analysis (p<0.001). The correlation analysis (C16) and the differential amplitudes between behaviors (C15) support the interpretation that bioluminescence amplitude reflects motor neuron recruitment patterns. Sample sizes are adequate (n=10 larvae, 283 stimulations).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "362c53bf-6408-463d-9993-8c94d3b6eddf",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Motor neuron recruitment patterns differ between slow swimming and escape responses. During fictive locomotion at 4 dpf, slow swims (20-30 Hz) recruited 23.2% of ventral motor neurons (C18, C20), while escapes (20-80 Hz) recruited 88.4% of motor neurons including dorsal populations (C19, C21). Dorsalmost motor neurons showed larger calcium transients (C22), and mean \u0394F/F was higher during escapes (91.1% vs 25.9%, C23). The high bioluminescence during escapes results from both increased cell recruitment and larger calcium transients per neuron (C24-C26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 are well-supported by calcium imaging data with appropriate controls (n=10 larvae for GCaMP6f experiments). The combination of ventral nerve root recordings and calcium imaging provides complementary evidence. Statistical significance is properly reported (p<0.001), and the interpretation linking bioluminescence to both cell number and calcium amplitude is logically sound given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "a035747c-9682-4cfe-beb0-e9b111a7d71e",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mechanosensory feedback enhances motor neuron recruitment during active locomotion. Bioluminescence amplitude decreased markedly after paralysis (26.6 vs 11.1 photons/10 ms, C27) with seven-fold reduction in normalized amplitude (C28). Immotile cacnb1 mutants showed similarly reduced bioluminescence compared to motile siblings (9.8 vs 37.6 photons/10 ms, C29). These results demonstrate enhanced motor neuron recruitment during active locomotion (C30, C31, C70, C71), indicating mechanosensory feedback contributes to increasing spinal motor output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31, C70-C71 are supported by two complementary experimental approaches (pharmacological paralysis and genetic mutants) with appropriate statistical analysis (p<0.001). The use of cacnb1 mutants (C29) controls for potential confounds from cholinergic receptor blockade. Sample sizes are adequate (n=10 larvae for paralysis, n=3 for mutants). The interpretation that mechanosensory feedback enhances motor output is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Silencing mechanosensory neurons via BoTxBLC expression reduces locomotor speed and frequency. The isl2b promoter drives expression in mechanosensory neurons including Rohon-Beard neurons and dorsal root ganglia (C32). BoTxBLC+ animals showed reduced tail-beat frequency (34.2 vs 37.8 Hz, C35) and speed (56.9 vs 64.1 mm/s, C36), with increased escape duration (182.0 vs 168.1 ms, C37). The first C-bend amplitude was unaffected (C38), but subsequent tail bend amplitudes increased, especially ipsilaterally (C39).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C35-C39 are supported by high-throughput kinematic analysis with large sample sizes (n=304 larvae, 890 escapes) and appropriate statistical tests. The expression pattern is confirmed by immunohistochemistry (C32). The selective effects on post-C-bend parameters (C38-C39) suggest specific modulation of motor circuits after response onset. Statistical significance is properly reported for all comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "078e73e3-d7d3-43a0-8183-527b2577b79c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mechanosensory feedback selectively enhances the fast component of escape responses. Within the fast regime (>30 Hz), silencing mechanosensory feedback reduced distance (5.9 vs 7.4 mm, C40), duration (60.0 vs 67.8 ms, C41), oscillations (2.9 vs 3.6, C42), speed (104.3 vs 112.6 mm/s, C43), and TBF (45.8 vs 48.4 Hz, C44). The reduction in speed and frequency is specifically restricted to the fast component (C50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C50 are supported by detailed kinematic analysis separating fast and slow components using a 30 Hz cutoff based on prior literature. All comparisons show statistical significance (p\u22640.005) with large sample sizes (n=1013 fast components). The selective effect on the fast component is a key finding that distinguishes this from global motor deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mechanosensory feedback promotes transition from fast to slow locomotion. Within the slow component (\u226430 Hz), silencing mechanosensory feedback increased distance (3.5 vs 2.4 mm, C45), duration (140.9 vs 97.1 ms, C46), and oscillations (2.8 vs 1.9, C47), but had no effect on speed (C48) or TBF (C49). Mechanosensory feedback enhances speed by promoting the transition between fast and slow locomotion during escapes (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49, C51 are supported by kinematic analysis with appropriate statistics (p<0.001 for significant effects, p=0.5 for non-significant). The differential effects on fast vs slow components (increased slow duration but unchanged slow speed) support the interpretation that mechanosensory feedback controls the timing of the fast-to-slow transition (C51). Sample size is adequate (n=1265 slow components).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "40033eba-fd27-44d5-a5d3-e18395db93c5",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Rohon-Beard neurons form monosynaptic connections onto dorsal V2a interneurons. Anatomical observations showed perisomatic innervation of dorsal V2a neurons by RB axons (C54). RB neurons required 200-700 pA to spike (C55) while V2a neurons required only 15-50 pA (C56). Optogenetic stimulation with 1-5 ms light pulses elicited RB spikes (C57) and short-latency EPSCs in V2a neurons (3.71 ms delay, C58). The 0.9 ms lag between RB spike and V2a EPSC onset is compatible with monosynaptic connection (C59), with estimated conduction velocity of 0.75 m/s (C60). EPSC amplitude averaged 28.14 pA, producing ~11.71 mV depolarization (C61), sufficient to elicit V2a spikes in some cases (C62). Glutamatergic blockers abolished EPSCs (C63), confirming monosynaptic glutamatergic connection (C64) that selectively recruits fast V2a interneurons (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C65 provide converging evidence from anatomy, electrophysiology, optogenetics, and pharmacology. The timing analysis (C59) uses appropriate criteria from cited literature (3 ms cutoff). Sample sizes are adequate (n=6-8 cells). The conduction velocity calculation (C60) is consistent with prior measurements. The pharmacological validation (C63) confirms glutamatergic transmission. The integration of multiple experimental approaches strongly supports the monosynaptic connection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "fbf856f1-f288-4739-989f-28e787589e4c",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mechanosensory feedback enhances motor pool recruitment, increases locomotor speed by prolonging fast swimming, and involves monosynaptic RB-V2a connections. These are the primary findings stated in the abstract, integrating behavioral, imaging, and circuit mapping data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent the main conclusions of the manuscript and are supported by the detailed experimental results grouped in other result clusters. C1 is supported by bioluminescence and calcium imaging data. C2 is supported by kinematic analysis of BoTxBLC animals. C3 is supported by optogenetic circuit mapping. All three claims are well-justified by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "f71722c8-cfa2-4d3e-9836-8efa69d01e2b",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RB-V2a pathway may act with other mechanosensory inputs to enhance speed (C66). Mechanosensory feedback allows larvae to travel the same distance ~15 ms faster (C67), potentially enhancing survival during predator attacks (C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C68 are speculative interpretations. C66 acknowledges that DRG and trigeminal neurons may also contribute, but this is not directly tested. C67 infers the 15 ms time savings from the duration data but doesn't directly measure it. C68 proposes ecological implications without survival experiments. These are reasonable hypotheses but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "1ce990cb-6673-4122-897e-f63aef071ece",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on V2a interneurons and mechanosensory feedback from prior literature. V2a interneurons are recruited frequency-dependently (C4) in distinct microcircuit modules (C5), and their ablation affects coordination and gait (C6, C7). Mechanosensory feedback sets timing of muscle activation (C8), can reorganize motor output (C9), and perturbations affect motor sequences (C10, C11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C11 are properly cited background claims from prior literature. They provide context for the current study but are not new findings. The citations appear appropriate and the claims accurately represent the cited work based on the descriptions provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "7d522415-1c19-441e-a072-952c38b05af3",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Additional background claims from prior literature on V2a interneurons, mechanosensory systems in fish and other species, and comparisons between active and fictive locomotion across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C72-C85, C87-C93 are properly cited background claims that provide context for the study. They accurately represent prior work based on the citations provided. These are not new findings but establish the scientific foundation for the current experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "3b503a25-be01-41c7-b338-0b9c59c8f544",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RB neurons have complex processes (C86). Microcircuit selection results from combined descending and local spinal sensorimotor inputs (C94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C86 is established anatomical knowledge. C94 is a reasonable inference from the experimental findings showing that mechanosensory feedback modulates motor output during active locomotion, suggesting that circuit selection involves both descending commands and local sensory feedback. This interpretation is well-justified by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    },
+    {
+      "id": "79f7d9ef-e7d4-45e2-9336-8210b705ad1f",
+      "content_id": "079b27e4-046c-4228-a696-9b8c8f531c15",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details on transgenic line generation and characterization. The mnx1:gal4 line was generated using constructs from collaborators (C95), GFP-Aequorin was codon-optimized (C96), and cacnb1 mutants have impaired calcium release causing immobility (C97).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 are methodological details that are appropriately documented. C95-C96 describe transgenic line generation with proper attribution. C97 accurately describes the cacnb1 mutant phenotype based on the cited original characterization. These are necessary technical details but not primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:40:57.619135Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9746360a-dd6d-4f16-9f05-cb37d096ab58",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "757554cc-185a-4c59-8552-5340eff22cfb",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "4742146a-b961-4034-ac45-ce71c3f3fabe",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "ffa26501-6666-4953-ae83-68ec63ab7918",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "a697f2d8-ce35-4176-bdbf-cda4379191d2",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "4b1a37fc-40c8-46c2-840b-52b4ca463d80",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "3e804bf9-48e3-4e99-af9d-5fbba99d22fb",
+      "result_id": "dc822deb-132d-4088-90eb-f6af75f40a3d"
+    },
+    {
+      "claim_id": "51eed32d-3ca6-4685-bac2-390d9a9233e6",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "11d6827e-e9c3-4697-bb70-5aa4731b9380",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "e784b070-ae4f-450c-8f37-cfc4ba823154",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "70e26b29-5f98-484c-9287-8e952297a496",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "d0bd58ee-2bec-42e1-8cba-b1899b729524",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "f3f1ec27-09f9-4ccd-978d-0ea07ef1e961",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "f86c5cd4-b9c5-4367-86b8-21d8e7379fda",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "953006c0-1065-49a6-9e7d-d38a9f64213a",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "2d86ed10-7be1-4fde-9778-e73d1a2ae0ff",
+      "result_id": "362c53bf-6408-463d-9993-8c94d3b6eddf"
+    },
+    {
+      "claim_id": "bf2a671d-4605-4654-b1ac-cd17bd4d5d25",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "b39f402d-5924-428a-9bf4-495786ee2fc9",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "d9043bf8-0e57-4790-b02b-eec2d789af73",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "3858b8e1-9638-422f-a8ef-8533eff26897",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "2f2d2934-941a-4101-99a0-b6b5c2cf80e6",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "2c9b0a19-6dc1-4a8b-9e66-b205335f556a",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "70a3f81e-9fc1-47d8-bee3-b3b0561c8a8d",
+      "result_id": "a035747c-9682-4cfe-beb0-e9b111a7d71e"
+    },
+    {
+      "claim_id": "adb741f1-a194-4ac5-920e-befaae3e6642",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "d77b46c7-3d55-4cfd-917e-5cae5cb08f2b",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "82949aaa-874c-438c-a783-d30173e41fd3",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "a482dfe0-a2e9-4e23-934e-3a33cc5dd6bf",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "ce133ece-2f40-4f14-8b1c-459070a1e8af",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "9776fe8c-ec45-4c4e-a177-311a835707c4",
+      "result_id": "2e241e2a-27ee-4178-92cf-8f2b3c3e0545"
+    },
+    {
+      "claim_id": "d7482183-7dac-4e8f-be0b-f8b029d446ff",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "916e3459-bad1-4576-b8a2-644b0a29c2d3",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "595e3bb7-7e22-49f4-81e6-39226267c336",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "da60e084-00a9-483f-a11e-4aa108ce46b5",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "60b9b583-e781-4b26-b45a-e05d51834753",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "62857483-5eae-4f9c-a0b0-0bd325a7d232",
+      "result_id": "078e73e3-d7d3-43a0-8183-527b2577b79c"
+    },
+    {
+      "claim_id": "4524153a-cbc0-4936-98f0-43212e2f172a",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "d1aa21df-ba70-4ef3-a520-c16a6afac8fd",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "e55b5c88-c75f-41a2-b324-41f42a1ee809",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "07a43409-363e-4da2-850a-859b3952e944",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "770c5ebd-c4ff-4f73-a4b1-be356119cec1",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "aaf1ce59-d16a-4b84-b9c5-c90be7d01fcd",
+      "result_id": "bfa997e0-9692-4e74-b4b3-66fef42abb7a"
+    },
+    {
+      "claim_id": "9fec7455-b301-474b-9107-20d37184113d",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "b00cfd57-041a-4062-b81d-906df8cec80a",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "f41fe498-dd3f-41b5-9d0c-62dcee7e457b",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "f35fb4ae-89a8-4be2-84dc-3410fbdfeecd",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "e0904ee3-2117-4be4-9b0f-d770178335d3",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "74a3f152-69e8-42b8-b096-6be9943ca367",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "5090fc74-06d7-4d73-97b4-3f094e91049e",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "aa53d8fc-c27a-424f-bfcd-fe5480d1a009",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "b9ed0373-5e9c-4700-83c1-493f825db1dc",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "d62a7f73-5377-431d-b37c-f50493c38944",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "3105d04a-33d6-485f-98de-2936c718d132",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "ba92758c-22b0-41fd-9773-5d8e8784bd83",
+      "result_id": "40033eba-fd27-44d5-a5d3-e18395db93c5"
+    },
+    {
+      "claim_id": "47757e13-78f8-4416-9a39-b7aa2d36beda",
+      "result_id": "fbf856f1-f288-4739-989f-28e787589e4c"
+    },
+    {
+      "claim_id": "7f99a6e4-1677-4353-8aef-e45249ec1b5e",
+      "result_id": "fbf856f1-f288-4739-989f-28e787589e4c"
+    },
+    {
+      "claim_id": "8b5cced4-7b5b-4fc2-997e-11496b0c6ba3",
+      "result_id": "fbf856f1-f288-4739-989f-28e787589e4c"
+    },
+    {
+      "claim_id": "8b9b6821-7419-4427-be07-90e42ff7e0a5",
+      "result_id": "f71722c8-cfa2-4d3e-9836-8efa69d01e2b"
+    },
+    {
+      "claim_id": "96e17932-aed0-41c4-875f-93944c545aae",
+      "result_id": "f71722c8-cfa2-4d3e-9836-8efa69d01e2b"
+    },
+    {
+      "claim_id": "7394affa-0018-4587-9fa8-efa0cbb52aaa",
+      "result_id": "f71722c8-cfa2-4d3e-9836-8efa69d01e2b"
+    },
+    {
+      "claim_id": "75d6adb1-9ae7-45ad-be11-1357e51d3e88",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "e9d1080f-022e-49d8-8a2c-0ffc5108020c",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "3188a038-2f92-4471-b7a8-9348b74d1f3a",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "4e10b135-3be3-4b89-bdef-20b96894039b",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "df761f90-cdce-4084-b7bc-95958d107cf8",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "01caf1cf-8d21-4fcf-95a8-9d381677d20c",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "2d7b86e5-2007-4bc0-8ed5-9493e1f335ab",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "d8dbe4b2-9187-4837-ae4b-e54b83c5973a",
+      "result_id": "1ce990cb-6673-4122-897e-f63aef071ece"
+    },
+    {
+      "claim_id": "beb236a9-c0b2-4b2f-8f04-8c9f32d2e2ed",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "54558dd6-869a-4b39-b386-80a3fbcacab7",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "e2e2c8b7-241a-4b07-9e60-a552b0f72dd5",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "b967ce47-306b-4f87-b750-35c770b9b70c",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "2dc21ce9-484d-4c00-b186-a4fd54248e3d",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "48d02ead-181d-40e1-b882-650b6198b28e",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "8bfec47d-414c-44d7-b7ab-c079415b0e4a",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "e12f0d82-bd18-4c25-ac50-3390f3bf701a",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "289b133e-c387-43aa-8892-7727caea50eb",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "c867afe6-8595-44ef-a1a2-20bada9e261f",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "05108483-f7bd-4d0e-97ac-b045ba01065e",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "4652f7a1-63f6-4bbd-8e89-a4f5ff86ba80",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "8dc6547a-de75-446c-b04b-1e7a3e1a52db",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "99ba4092-28d6-40a8-9702-6b397a46b33a",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "f415c370-ecc9-481d-8d2e-86fca5244f4d",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "6df912ce-bfaf-47cd-9fd3-8b73b7984de1",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "20e729d6-0dc9-4616-8c26-982842e546b2",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "df223ec6-1eb5-41bc-aba8-615e2912851c",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "255b8023-5c7f-4a20-afc8-54069afdfafb",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "04f01abd-78e5-47d0-9009-1cb459db7c9d",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "4b4cfc13-54da-494b-b980-5df15c4be446",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "c082a417-db8e-4d21-99c8-f51eca7f2445",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "2a645252-20a1-4ad8-b70d-2ca59e0e3174",
+      "result_id": "7d522415-1c19-441e-a072-952c38b05af3"
+    },
+    {
+      "claim_id": "956f045d-d202-43be-9845-527db0c37bca",
+      "result_id": "3b503a25-be01-41c7-b338-0b9c59c8f544"
+    },
+    {
+      "claim_id": "88562f61-029d-40b2-b045-a2d60f407076",
+      "result_id": "3b503a25-be01-41c7-b338-0b9c59c8f544"
+    },
+    {
+      "claim_id": "74c4482b-0d41-4d83-af1e-42afc0c68839",
+      "result_id": "79f7d9ef-e7d4-45e2-9336-8210b705ad1f"
+    },
+    {
+      "claim_id": "40c0d965-a635-43d9-9e8a-9df515bd6386",
+      "result_id": "79f7d9ef-e7d4-45e2-9336-8210b705ad1f"
+    },
+    {
+      "claim_id": "dbe04401-cd97-432e-a23c-e7084df332c3",
+      "result_id": "79f7d9ef-e7d4-45e2-9336-8210b705ad1f"
+    }
+  ],
+  "comparisons": []
+}

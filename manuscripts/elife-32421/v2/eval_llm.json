@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Nucleolar morphology progressively deteriorates during aging in Drosophila male GSCs. Most young GSCs (89.2%) contain a single, round nucleolus, but this typical morphology decreases with age as atypical morphologies (fragmented and deformed) accumulate over 40 days of adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide converging evidence: quantitative immunofluorescence data (C20, C21) show age-dependent changes in nucleolar morphology, supported by the established principle that nucleolar morphology reflects rDNA transcriptional activity (C22, C23). The data are quantitative with adequate sample sizes (n=408 at day 0) and show statistically significant progressive changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Atypical nucleolar morphology in aging GSCs is caused by transcriptional activation of the normally silent X rDNA locus. In young GSCs, only Y rDNA is transcriptionally active (nucleolar dominance), but during aging, X rDNA becomes activated, leading to fragmented or deformed nucleoli. The frequency of GSCs expressing X rRNA increases from 18.2\u00b13.0% at day 0 to 37.2\u00b12.4% at day 40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide multiple complementary lines of evidence: DNA FISH shows spatial association of Y (but not X) rDNA with nucleoli in young GSCs (C25), SNP in situ hybridization directly demonstrates Y-only transcription in most young GSCs (C29-C30) and increased X rDNA activation with age (C32), and fragmented nucleoli consistently show both X and Y rRNA signals (C31). The conclusion (C33) is well-supported by converging experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Total rDNA copy number decreases during aging in male germline, with selective loss of actively transcribed, uninserted rDNA copies. qPCR shows significant reduction in 18S, 5.8S, and 28S rRNA genes, while R1/R2 retrotransposon-inserted (transcriptionally silent) copies are maintained, suggesting that transcriptional activity is associated with rDNA instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 present coherent qPCR data showing age-dependent rDNA loss (C34-C35), with the critical observation that R1/R2-inserted copies are maintained (C36). The inference that actively transcribed rDNA is preferentially lost (C38-C39) is well-supported by the differential behavior of inserted vs. uninserted copies and is consistent with established mechanisms of replication-transcription collision (C37, C39 with citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Y chromosome rDNA is preferentially lost during aging compared to X chromosome rDNA. Quantitative DNA FISH shows that Y:X ratios for both 18S rRNA gene and 240-IGS decrease significantly from day 0 to day 40, with the overall decrease in total rDNA (from qPCR) indicating Y rDNA loss rather than X rDNA expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present quantitative FISH data showing decreased Y:X ratios during aging (C42-C43). The interpretation that this reflects Y rDNA loss rather than X expansion (C44) is well-justified by integrating FISH ratio data with the qPCR data showing overall rDNA decrease (C34). The baseline Y:X ratios (C40-C41) provide appropriate controls. The method's limitations are acknowledged (ratio only, not absolute amounts).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Reduced Y rDNA copy number causally drives atypical nucleolar morphology in GSCs. Young flies with a Y chromosome deletion (X/Df(YS)bb) exhibit atypical nucleolar morphology at frequencies comparable to 40-day-old wild-type flies, demonstrating a causal relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide genetic evidence for causality using a Y rDNA deletion mutant. The observation that young mutant flies phenocopy aged wild-type flies (C45) strongly supports the causal inference (C46). This is a well-designed experiment that directly tests the hypothesis by manipulating the proposed causal variable (Y rDNA copy number).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Age-dependent reduction in rDNA copy number is heritable to offspring. F1 sons from 40-day-old fathers show reduced rDNA copy number (by qPCR), perturbed nucleolar morphology (59.1% typical vs. 89.2% in young P0), and increased X rDNA activation comparable to their aged fathers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide multiple complementary measurements (qPCR, nucleolar morphology, SNP in situ) all showing that F1 offspring from old fathers inherit the rDNA-deficient state. The consistency across multiple assays and the quantitative nature of the data (C47, C49) strongly support heritability. Sample sizes appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Male GSC nucleolar morphology is primarily determined by the age of the inherited Y chromosome, with the X chromosome playing a modifying role. Genetic crosses show that Xold/Yyoung offspring have normal nucleolar morphology, while Xyoung/Yold and Xold/Yold offspring show perturbed morphology, with Xold exacerbating the Yold phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 present results from systematic genetic crosses that dissect the contributions of X and Y chromosomes. The conclusion that Y chromosome age is the primary determinant (C51) is well-supported by the Xold/Yyoung cross showing normal morphology. The modifying effect of X chromosome age (C52) is also supported by comparing Xyoung/Yold vs. Xold/Yold crosses. The experimental design appropriately controls for parental age effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Young F1 sons from old fathers can recover normal rDNA copy number and nucleolar morphology during the first 10 days of adulthood. Recovery is accompanied by decreased X rDNA expression, increased Y:X rDNA ratio, and restoration of nucleolar dominance, revealing a remarkable capacity for rDNA expansion. The recovery appears stochastic, with heterogeneity among individual germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe a striking recovery phenomenon with multiple complementary measurements: nucleolar morphology (C53-C54), X rDNA expression (C55), and Y:X ratio (C56). The temporal specificity (first 10 days) is well-documented. The inference of Y rDNA expansion capacity (C57) is justified by the data. The observation of heterogeneity (C58) adds important nuance and is supported by the FISH data showing variable recovery among cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Recovery of rDNA copy number requires homologous recombination repair factors mus-101 and mei-41, but not mus-102. This suggests that rDNA recovery and the classical phenomenon of rDNA magnification share similar molecular mechanisms, and that rDNA magnification may represent a manifestation of normal rDNA maintenance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide genetic evidence linking rDNA recovery to known rDNA magnification factors. The differential requirement for mus-101/mei-41 (required) vs. mus-102 (not required) (C59-C60) matches the known genetic requirements for rDNA magnification, supporting the mechanistic connection (C61-C62). The negative control with mus-102 strengthens the specificity of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "mus-101 is required for normal rDNA maintenance during aging. Controlled genetic experiments show that Y chromosomes aged in mus-101 mutant background suffer more rDNA loss than those aged in wild-type background, as assessed by nucleolar morphology in F2 offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 present a well-controlled experiment that isolates the effect of mus-101 on rDNA maintenance during aging. The experimental design (Figure 7A scheme) appropriately controls for background variation by using the same source of X and Y chromosomes. The significant difference between aged yw and mus-101 Y chromosomes (p=0.0070, C63) supports the conclusion that mus-101 is required for normal maintenance (C64-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "rDNA loci are inherently unstable genetic elements due to their repetitive nature and high transcriptional activity. They can undergo intrachromatid recombination leading to copy number loss and ERC formation, and collision between replication and transcription machineries can cause double-strand breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C9 present established knowledge about rDNA instability mechanisms, supported by appropriate citations. These claims provide essential background context for the study but represent prior knowledge rather than new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15"
+    ],
+    "result": "In yeast, rDNA instability (reduction of rDNA copy number and ERC accumulation) is a major cause of replicative aging, and rDNA stability state correlates with lifespan in various mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C15 accurately summarize established findings from yeast aging research with appropriate citations. This provides important context for extending these concepts to multicellular organisms but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "rDNA copy number varies considerably among individuals within populations across many species (6-fold range in Drosophila, with estimates of 80-600 copies), yet the range is maintained within populations, suggesting a maintenance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 accurately cite prior literature on rDNA copy number variation across species. The inference about maintenance mechanisms (C13) is reasonable given the data but represents background motivation rather than a new finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Drosophila male GSCs provide an excellent model system for studying rDNA dynamics during aging. GSCs proliferate throughout life, undergo continuous asymmetric divisions, and Drosophila rDNA loci are limited to X and Y chromosomes, providing a simplified system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 establish the rationale for the experimental system with appropriate citations. These are accurate statements about the model system but represent justification for the approach rather than results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Nucleolar dominance, where Y rDNA is predominantly expressed while X rDNA is silent in D. melanogaster males, may have evolved to protect rDNA loci from deleterious recombination or to maintain a stable reserve locus for later use during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 accurately describe nucleolar dominance with citations, but C68-C70 are explicitly speculative explanations for its evolutionary advantage. While the speculation is reasonable given the study's findings, these remain untested hypotheses. The authors appropriately label these as speculation (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study reveals that rDNA loci are dynamic genetic elements that undergo contraction and expansion across generations. While rDNA instability in Drosophila GSCs resembles yeast, young animals can restore lost rDNA copies, suggesting this dynamic process maintains rDNA copy number throughout populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 synthesize the study's main conclusions. C72 cites prior work on nutrient-responsive rDNA changes. C73 appropriately compares findings to yeast with the caveat that extension to other metazoan stem cells is inferential (C74). C75-C76 summarize the key findings about recovery and maintenance. These represent valid synthesis of the results, though C74 is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study speculates that rDNA destabilization may underlie age-associated replication stress observed in mammalian stem cells. Cells with fewer rDNA copies must transcribe a larger proportion of their rDNA, increasing replication-transcription collisions, as observed in yeast with reduced rDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 accurately cite prior work on replication stress in mouse hematopoietic stem cells. However, C79 is explicitly speculative, and while C80-C81 provide logical reasoning supported by yeast studies, the connection to mammalian stem cell aging remains hypothetical. The speculation is reasonable but untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The preferential loss of uninserted, transcribed rDNA copies is consistent with mathematical modeling suggesting that transcription and copy loss preferentially occur in contiguous blocks of uninserted copies, supporting the idea that transcribed rDNA is preferentially destabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 integrate the study's findings (C36, C38) with prior mathematical modeling (C83-C84) to support the mechanistic interpretation (C85). The consistency between the experimental observations and the model strengthens the interpretation, though C85 remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The phenomenon of rDNA magnification, where bobbed flies with large rDNA deletions can restore rDNA copies in offspring, requires mus-101 (TOPBP1 homolog) and mei-41 (ATR homolog), factors involved in homologous recombination repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 accurately summarize prior work on rDNA magnification and its genetic requirements with appropriate citations. This background is essential for interpreting the recovery experiments (C59-C62) but represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Female neuroblasts exhibit co-dominance between two X chromosome rDNA loci, contrasting with the Y-dominance observed in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 accurately cites prior work on female neuroblasts. This provides useful context for understanding sex-specific differences in nucleolar dominance but represents prior knowledge. The authors note they could not assess female GSCs due to technical limitations.",
+    "result_type": "MINOR"
+  }
+]

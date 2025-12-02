@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Wnt5a signaling induces phosphorylation of APT1 at serine residues 209 and 210. Mass spectrometry identified these as the only phosphorylation sites on APT1 (C36, C37), consistent with prior database findings (C38). Phospho-specific antibodies confirmed Wnt5a-induced phosphorylation at both sites (C39, C40), with phosphorylation peaking at 30 minutes (C41). The phospho-dead mutant APT1SA showed no increase in phosphorylation upon Wnt5a treatment (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary experimental approaches including mass spectrometry (C36-C38), phospho-specific antibodies (C39-C40), time-course analysis (C41), and validation with phospho-dead mutants (C42). The convergence of evidence from different methodologies strengthens the conclusion that Wnt5a induces APT1 phosphorylation at S209/S210.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C93",
+      "C94"
+    ],
+    "result": "Phosphorylation increases APT1 depalmitoylating activity. The phosphomimetic mutant APT1S209D showed increased activity compared to APT1WT in vitro using the DPP-3 probe (C45, C47, C93), while the catalytically inactive APT1S119A showed minimal activity (C46). In cells, Wnt5a stimulation increased endogenous APT1 activity (C48, C49), and APT1S209D showed higher activity than APT1WT or APT1SA (C52, C94). Wnt5a could not further increase APT1S209D activity or activate APT1SA (C54, C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is strongly supported by convergent evidence from in vitro enzyme assays (C45-C47), live-cell imaging (C48, C52), and immunoprecipitation experiments (C49). The use of appropriate controls (catalytically inactive mutant C46, phospho-dead mutant C54) and the consistency between in vitro and cellular assays strengthen the conclusion. The inability of Wnt5a to further activate APT1S209D (C55) provides additional support for phosphorylation as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Kinase inhibitors block Wnt5a-mediated increase in APT1 activity. Treatment with either BI-D1870 or staurosporine inhibited the Wnt5a-mediated increase in APT1 activity to levels comparable to unstimulated cells (C56), suggesting phosphorylation is the main driver of increased APT1 activity in response to Wnt5a (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two different kinase inhibitors (C56) provides converging evidence that phosphorylation drives the Wnt5a effect. However, the broad-spectrum nature of staurosporine and the lack of identification of the specific kinase responsible represent limitations. The inference (C57) is reasonable given the data but would be strengthened by identifying the specific kinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C95"
+    ],
+    "result": "APT1 activation is specific to non-canonical Wnt signaling. Wnt3a, a canonical Wnt ligand, was unable to increase APT1 activity compared to Wnt5a (C50), indicating the ability to increase APT1 activity is specific to the non-canonical Wnt pathway (C51, C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between Wnt5a and Wnt3a (C50) provides clear evidence for pathway specificity. The authors confirmed Wnt3a functionality by demonstrating \u03b2-catenin stabilization, which validates the negative result. This specificity is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "APT1 phosphorylation state regulates depalmitoylation of endogenous substrates. Using an acyl biotin exchange assay with MCAM as substrate, APT1SA showed the highest MCAM palmitoylation (decreased depalmitoylation, C59), while APT1S209D showed the lowest MCAM palmitoylation (highest depalmitoylation, C60). Expression levels of APT1 variants were similar (C58), indicating the phosphorylation state regulates substrate depalmitoylation (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acyl biotin exchange assay provides direct evidence that phosphorylation affects depalmitoylation of a physiological substrate (MCAM). The control for equal expression (C58) is important. However, the authors acknowledge a discrepancy between the ABE assay and in vitro DPP-3 assay for APT1SA, which they attribute to cellular factors. This introduces some uncertainty but doesn't invalidate the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "APT1 phosphorylation increases melanoma invasion. In spheroid invasion assays, APT1SA showed decreased invasion similar to control (C62), while APT1S209D significantly increased invasion (C63). The APT1 inhibitor ML348 blocked invasion in APT1S209D-expressing cells (C64), demonstrating the effect is mediated by APT1 activity (C65). Together, these results indicate phosphorylation of Ser209 increases depalmitoylating activity and metastatic cell behavior (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spheroid invasion assays (C62-C63) provide functional evidence linking phosphorylation to metastatic behavior. The use of the specific APT1 inhibitor ML348 (C64) is a critical control demonstrating the effect is due to APT1 enzymatic activity rather than off-target effects. The convergence of activity data and functional invasion data strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Phosphorylation reduces APT1 dimerization. Differential scanning fluorimetry showed similar thermostability for all mutants (C67-C68), ruling out protein destabilization. Structural modeling revealed phosphorylation sites S209/S210 reside at the dimer interface (C70, C72), where the active site is occluded in the dimer (C69, C96). Size-exclusion chromatography showed concentration-dependent dimerization of APT1WT (C74-C77, C97), while APT1S209D remained monomeric at concentrations where APT1WT dimerized (C76, C98), supporting that phosphorylation reduces dimerization (C78, C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural modeling (C70, C72) provides a mechanistic hypothesis, and the size-exclusion chromatography data (C74-C77, C97-C98) provide experimental support for reduced dimerization. The thermostability control (C67-C68) rules out protein misfolding. However, the authors acknowledge uncertainty about whether reduced dimerization fully accounts for increased activity (C100-C102), which is an appropriate caveat. The data support reduced dimerization but don't definitively prove it's the sole mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C111"
+    ],
+    "result": "The cancer-associated S210L mutation increases APT1 activity and melanoma invasion. The S210L mutation, found in multiple tumor types (C79), exhibited nearly identical increased activity to the phosphomimetic APT1S209D in vitro (C80, C111) and similar ML348 inhibition (C81). Structural modeling showed leucine at position 210 is 5.5\u00c5 from the adjacent monomer (C82), suggesting steric hindrance disrupts dimerization (C83). APT1S210L increased melanoma invasion compared to APT1WT (C84), which was blocked by ML348 (C85), demonstrating the effect depends on APT1 catalytic activity (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel between the phosphomimetic mutant and the cancer-associated S210L mutation (C80, C111) is compelling. The activity assays, structural modeling, and functional invasion assays provide converging evidence. The ML348 inhibition experiments (C81, C85) confirm the effects are due to APT1 enzymatic activity. This result effectively links the mechanistic findings to cancer biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "APT1 phosphorylation correlates with increased tumor grade and metastasis in human melanoma samples. Immunohistochemistry on human melanoma tumor arrays showed a correlation between high pAPT1 staining and increased tumor grade (C87) and metastatic samples (C88), implicating increased APT1 phosphorylation with tumor progression and metastasis (C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunohistochemistry data on human tumor arrays (C87-C88) provide clinical relevance to the mechanistic findings. However, correlation does not establish causation, and the analysis appears to be qualitative rather than quantitative. Statistical analysis of the correlation strength is not clearly presented. While supportive, this result would be strengthened by more rigorous quantification and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Phosphorylation sites S209/S210 are positioned to influence APT1 activity. Structural modeling showed these residues are solvent-exposed on the lip of the hydrophobic acyl-binding channel and adjacent to the catalytic triad (C43), suggesting phosphorylation could influence APT1 activity (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural modeling (C43) provides a reasonable mechanistic hypothesis for how phosphorylation might affect activity. However, this is primarily a structural observation and inference (C44) rather than direct experimental evidence. The claim is appropriately stated as a suggestion rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The APT1 gene (LYPLA1) is amplified or mutated in multiple cancer types. LYPLA1 is amplified in 31.8% of neuroendocrine prostate cancer, 23.2% of uterine carcinosarcoma, and 13.8% of invasive breast carcinoma (C106-C108), as well as in other cancers (C109). Serine 210 is mutated in melanoma, colorectal adenocarcinoma, and lung squamous cell carcinoma (C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to cancer genomics databases and studies (C106-C110). The data are from established resources (cBioPortal, TCGA) and provide important context for the clinical relevance of the findings. However, these are descriptive observations from databases rather than new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The mechanism by which phosphorylation increases APT1 activity remains incompletely understood. The authors acknowledge uncertainty about whether reduced dimer formation fully accounts for increased activity (C100), and whether the effect is due to reduced dimerization or conformational changes (C101-C102). They also note that cellular factors may contribute to differences between in vitro and cellular assays (C103-C104), and hypothesize that MCAM depalmitoylation may contribute to invasion (C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent appropriate acknowledgments of limitations and uncertainties in the mechanistic understanding. The authors correctly identify gaps in knowledge and alternative explanations. These statements reflect scientific rigor in acknowledging what is not yet known, but they don't constitute supported results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Therapeutic implications and speculation about APT1 as a cancer target. The authors suggest APT1 inhibition may be a novel therapy for Wnt5a-driven cancers (C8), that the S210L mutation might increase invasion in patients (C112), and that APT1 mutations could regulate metastasis across tumor types (C113). They note APT1 mutations are unlikely to contribute to oncogenesis (C114), that S210L is the only mutation at the dimer interface (C115-C116), and may provide selective advantage (C117). They discuss the clinical need for therapies (C118) and potential to expand patient populations for APT1 inhibition (C119-C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are primarily speculative statements about therapeutic implications and future directions. While they are reasonable extrapolations from the data, they represent hypotheses rather than experimentally supported conclusions. The speculation is appropriate for a Discussion section but does not constitute a supported result. Clinical validation would be required to support these therapeutic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background and context from prior literature. These claims establish the research context, including Wnt5a's role in melanoma (C1, C2, C9, C11-C13, C22-C23), melanoma statistics (C10), Wnt5a signaling mechanisms (C14-C21), palmitoylation of CD44 and MCAM (C24-C28), the biochemistry of palmitoylation (C29-C31), and prior work on Wnt5a-APT1 signaling (C32-C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by citations to prior literature and represent established knowledge in the field. They provide appropriate context for the current study but are not new findings from this work. They are accurately cited and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Summary statements of the study's main findings. The authors summarize that Wnt5a signaling induces APT1 phosphorylation, activating APT1 and increasing depalmitoylation (C90, C121), that this is the first example of differential APT1 phosphorylation in response to an extracellular signal (C91), and that activation results in increased invasion correlating with tumor grade and metastasis (C92, C122). They note the lack of therapeutics for Wnt5a-driven cancers (C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary statements accurately reflect the supported findings from the study (C90, C92, C121-C122). The novelty claim (C91) appears reasonable given the literature context. The statement about lack of therapeutics (C123) is a general observation about the field. These are appropriate summary statements that integrate the major findings.",
+    "result_type": "MINOR"
+  }
+]

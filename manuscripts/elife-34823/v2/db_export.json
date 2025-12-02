@@ -1,0 +1,1973 @@
+{
+  "submission": {
+    "id": "d9afea9f-959b-45ec-aa88-ba8eb6259ac5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:31:18.131139Z",
+    "updated_at": "2025-12-01T23:31:18.131139Z"
+  },
+  "content": [
+    {
+      "id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "submission_id": "d9afea9f-959b-45ec-aa88-ba8eb6259ac5",
+      "content_type": "manuscript",
+      "content_text": "# Fidaxomicin jams Mycobacterium tuberculosis RNA polymerase motions needed for initiation via RbpA contacts\n\n## Authors\n\n- Hande Boyaci<sup>1</sup>\n- James Chen<sup>1</sup>\n- Mirjana Lilic<sup>1</sup>\n- Margaret Palka<sup>2</sup>\n- Rachel Anne Mooney<sup>2</sup>\n- Robert Landick<sup>2</sup>\n- Seth A Darst<sup>1</sup> ([ORCID: 0000-0002-8241-3153](https://orcid.org/0000-0002-8241-3153)) \u2020\n- Elizabeth A Campbell<sup>1</sup> \u2020\n\n### Affiliations\n\n1. The Rockefeller University New York United States\n2. Department of Biochemistry University of Wisconsin-Madison Madison United States\n3. Department of Bacteriology University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFidaxomicin (Fdx) is an antimicrobial RNA polymerase (RNAP) inhibitor highly effective against Mycobacterium tuberculosis RNAP in vitro, but clinical use of Fdx is limited to treating Clostridium difficile intestinal infections due to poor absorption. To identify the structural determinants of Fdx binding to RNAP, we determined the 3.4 \u00c5 cryo-electron microscopy structure of a complete M. tuberculosis RNAP holoenzyme in complex with Fdx. We find that the actinobacteria general transcription factor RbpA contacts fidaxomycin, explaining its strong effect on M. tuberculosis. Additional structures define conformational states of M. tuberculosis RNAP between the free apo-holoenzyme and the promoter-engaged open complex ready for transcription. The results establish that Fdx acts like a doorstop to jam the enzyme in an open state, preventing the motions necessary to secure promoter DNA in the active site. Our results provide a structural platform to guide development of anti-tuberculosis antimicrobials based on the Fdx binding pocket.\n\n## Introduction\n\nThe bacterial RNA polymerase (RNAP) is a proven target for antibiotics. The rifamycin (Rif) class of antibiotics, which inhibit RNAP function, is a lynchpin of modern tuberculosis (TB) treatment (Chakraborty and Rhee, 2015). TB, caused by the infectious agent Mycobacterium tuberculosis (Mtb), is responsible for almost 2 million deaths a year. It is estimated that one third of the world is infected. Mortality from TB is increasing, partly due to the emergence of strains resistant to Rifs (RifR) (Zumla et al., 2015). Hence, additional antibiotics against RifR Mtb are needed.\n\nFidaxomicin (Fdx; also known as Dificimicin, lipiarmycin, OPT-80, PAR-101, or tiacumicin), an antimicrobial in clinical use against Clostridium difficile (Cdf) infection (Venugopal and Johnson, 2012), functions by inhibiting the bacterial RNAP (Talpaert et al., 1975). Fdx targets the RNAP 'switch region', a determinant for RNAP inhibition that is distinct from the Rif binding pocket (Srivastava et al., 2011), and Fdx does not exhibit cross-resistance with Rif (Gualtieri et al., 2009, 2006; Kurabachew et al., 2008; O'Neill et al., 2000). The switch region sits at the base of the mobile RNAP clamp domain and, like a hinge, controls motions of the clamp crucial for DNA loading into the RNAP active-site cleft and maintaining the melted DNA in the channel (Chakraborty et al., 2012; Feklistov et al., 2017). Fdx is a narrow spectrum antibiotic that inhibits Gram-positive anaerobes and mycobacteria (including Mtb) much more potently than Gram-negative bacteria (Kurabachew et al., 2008; Srivastava et al., 2011), but the clinical use of Fdx is limited to intestinal infections due to poor bioavailability (Venugopal and Johnson, 2012). Addressing this limitation requires understanding the structural and mechanistic basis for Fdx inhibition, which is heretofore unknown. Here, we used single-particle cryo-electron microscopy (cryo-EM) to determine structures of Mtb transcription initiation complexes in three distinct conformational states, including a complex with Fdx at an overall resolution of 3.4 \u00c5. The results define the molecular interactions of Mtb RNAP with Fdx as well as the mechanistic basis of inhibition, and establish that RbpA, an Actinobacteria-specific general transcription factor (GTF), is crucial to the sensitivity of Mtb to Fdx.\n\n## Results\n\n### Fdx potently inhibits mycobacterial TICs in vitro\n\nFdx has potent inhibitory activity against multi-drug-resistant Mtb cells and the in vivo target is the RNAP (Kurabachew et al., 2008). To our knowledge, the in vitro activity of Fdx against mycobacterial RNAPs has not been reported. RbpA, essential in Mtb, is a component of transcription initiation complexes (TICs) that tightly binds the primary promoter specificity \u03c3A subunit of the RNAP holoenzyme (holo) (Bortoluzzi et al., 2013; Forti et al., 2011; Hubin et al., 2017a, 2015; Tabib-Salazar et al., 2013). We therefore compared Fdx inhibition of mycobacterial RNAPs containing core RNAP combined with \u03c3A (\u03c3A-holo) and RbpA with inhibition of Escherichia coli (Eco) \u03c370-holo using a quantitative abortive initiation assay (Davis et al., 2015). Fdx inhibited Mtb and M. smegmatis (Msm) transcription at sub-\u03bcM concentrations, whereas inhibition of an Mtb TIC containing Fdx-resistant (FdxR) RNAP (\u03b2Q1054H) (Kurabachew et al., 2008) required a nearly two orders of magnitude higher concentration of Fdx. Eco RNAP was inhibited even less effectively by another order of magnitude (Figure 1A, Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fdx inhibits mycobacterial RbpA/\u03c3A-holo transcription greater than 250-fold more effectively than Eco\u03c370-holo in in vitro abortive initiation assays. The error bars denote the standard error from a minimum of three experiments (for some points, the error bars are smaller than the width of the point and are not shown). (B) Chemical structure of Fdx (Serra et al., 2017). (C) Synthetic us-fork promoter fragment used for cryo-EM experiments. The DNA sequence is derived from the full con promoter (Gaal et al., 2001). The nontemplate-strand DNA (top strand) is colored light gray; the template-strand DNA (bottom strand), dark grey. The \u221235 and \u221210 elements are shaded yellow. The extended \u221210 (Keilty and Rosenberg, 1987) is colored violet. (D) The 3.4 \u00c5 resolution cryo-EM density map of the Fdx/RbpA/\u03c3A-holo/us-fork complex is rendered as a transparent surface colored as labeled. Superimposed is the final refined model; proteins are shown as a backbone ribbon, Fdx and the nucleic acids are shown in stick format. (E) Views of the cryo-EM map colored by local resolution based on blocres calculation (Cardone et al., 2013). The left view shows the entire map, while the middle view shows a cross-section of the map sliced at the level of the Fdx binding pocket. The boxed region is magnified on the right. Density for the Fdx molecule is outlined in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Abortive transcription activity of samples (labeled) after incubation with the indicated concentrations of Fdx.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Flowchart showing the image processing pipeline for the cryo-EM data of Mtb Fdx/RbpA/\u03c3A-holo/us-fork complexes starting with 8357 dose-fractionated movies collected on a 300 keV Titan Krios (FEI) equipped with a K2 Summit direct electron detector (Gatan). Movies were frame aligned and summed using MotionCor2 (Zheng et al., 2017). CTF estimation for each micrograph was calculated with Gctf (Zhang, 2016). A representative micrograph is shown following processing by MotionCor2. Particles were autopicked from each micrograph with Gautomatch and then sorted by 2D classification using RELION (Scheres, 2012) to assess quality. The ten highest populated classes from the 2D classification are shown. After initial cleaning, the dataset contained 582,169 particles. A subset of particles was used to generate an ab-initio map in cryoSPARC (Punjani et al., 2017). Using the low-pass filtered (60 \u00c5) ab-initio map as a template, 3D heterogeneous refinement was performed in cryoSPARC in a binomial-like fashion. Two major classes were observed: Fdx/RbpA/\u03c3A-holo/us-fork (blue) and RbpA/\u03c3A-holo//(us-fork)2 (red). Multiple rounds of 3D classification were performed; colored classes represent the selected classes while grey classes were thrown out. The final sets of particles for each class were refined using cryoSPARC homogenous refinement and then sharpened for model building.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Gold-standard FSC (Rosenthal and Henderson, 2003), calculated by comparing the two independently determined half-maps from cryoSPARC. The dotted line represents the 0.143 FSC cutoff which indicates a nominal resolution of 3.38 \u00c5. (B) FSC calculated between the refined structure and the half map used for refinement (work, red), the other half map (free, blue), and the full map (black). (C) Angular distribution calculated in cryoSPARC for particle projections. Heat map shows number of particles for each viewing angle (less\u00a0=\u00a0blue, more\u00a0=\u00a0red). (D) Stereo view of the Fdx binding pocket with cryo-EM density (blue mesh) superimposed.\n\n### Cryo-EM structure of the Fdx/RbpA/\u03c3A-holo complex\n\nWe used single-particle cryo-EM to examine the complex of Mtb RbpA/\u03c3A-holo with and without Fdx (Figure 1B). Preliminary analyses revealed that the particles were prone to oligomerization, which was reduced upon addition of an upstream-fork (us-fork) junction promoter DNA fragment (Figure 1C). We sorted nearly 600,000 cryo-EM images of individual particles into two distinct classes, each arising from approximately half of the particles (Figure 1\u2014figure supplement 2).\n\nThe first class comprised Mtb RbpA/\u03c3A-holo with one us-fork promoter fragment and bound to Fdx. The cryo-EM density map was computed to a nominal resolution of 3.4 \u00c5 (Figure 1D, Figure 1\u2014figure supplement 3, Supplementary file 1). The us-fork promoter fragment was bound outside the RNAP active site cleft, as expected, with the \u221235 and \u221210 promoter elements engaged with the \u03c3A4 and \u03c3A2 domains, respectively (Figure 1D). Local resolution calculations (Cardone et al., 2013) indicated that the central core of the structure, including the Fdx binding determinant and the bound Fdx, was determined to 2.9\u20133.4 \u00c5 resolution (Figure 1E).\n\n### Cryo-EM structure of a Mtb RPo mimic\n\nThe second class comprised Mtb RbpA/\u03c3A-holo bound to two us-fork promoter fragments but without Fdx to a nominal resolution of 3.3 \u00c5 (Figure 2A, Figure 2\u2014figure supplement 1, Supplementary file 1). One us-fork promoter fragment bound upstream from the RNAP active site cleft as in the previous class, but a second us-fork promoter fragment bound the RNAP downstream duplex DNA binding channel, with the 5-nucleotide 3'-overhang (Figure 1C) engaged with the RNAP active site (as the template strand) like previously characterized 3'-tailed templates (Gnatt et al., 2001; Kadesch and Chamberlin, 1982). Local resolution calculations (Cardone et al., 2013) indicated that the central core of the structure was determined to between 2.8\u20133.2 \u00c5 resolution (Figure 2B). The overall conformation of this protein complex and its engagement with the upstream and downstream DNA fragments was very similar to the crystal structure of a full Msm open promoter complex (RPo) (Hubin et al., 2017b) with one exception (see below). We will therefore call this complex an Mtb RbpA/RPo mimic.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig2-v2.jpg)\n\n**Figure 2.:** (A) The 3.3 \u00c5 resolution cryo-EM density map of the RbpA/\u03c3A-holo/(us-fork)2 complex (RbpA/RPo mimic) is rendered as a transparent surface colored as labeled. Superimposed is the final refined model; proteins are shown as a backbone ribbon, nucleic acids are shown in stick format. (B) Views of the Mtb RbpA/RPo mimic cryo-EM map colored by local resolution based on blocres calculation (Cardone et al., 2013). The left view shows the entire map, while the middle view shows a cross-section of the map sliced at the level of the RbpANTT. The boxed region is magnified on the right. Density for the RbpANTT is outlined in red.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gold-standard FSC (Rosenthal and Henderson, 2003), calculated by comparing the two independently determined half-maps from cryoSPARC. The dotted line represents the 0.143 FSC cutoff which indicates a nominal resolution of 3.27 \u00c5. (B) FSC calculated between the refined structure and the half map used for refinement (work, red), the other half map (free, blue), and the full map (black). (C) Angular distribution calculated in cryoSPARC for particle projections. Heat map shows number of particles for each viewing angle (less\u00a0=\u00a0blue, more\u00a0=\u00a0red).\n\n### The RbpA N-terminal tail invades the RNAP active site cleft\n\nRbpA comprises four structural elements, the N-terminal tail (NTT), the core domain (CD), the basic linker, and the sigma interacting domain (SID) (Bortoluzzi et al., 2013; Hubin et al., 2017a; Tabib-Salazar et al., 2013). Our previous crystal structures of Msm TICs containing RbpA showed that the RbpASID interacts with the \u03c3A2 domain, the RbpABL establishes contacts with the promoter DNA phosphate backbone just upstream of the \u221210 element, and the RbpACD interacts with the RNAP \u03b2' Zinc-Binding-Domain (ZBD) (Hubin et al., 2017a, 2017b). Density for the RbpANTT (RbpA residues 1\u201325) was never observed in the crystal structures and was presumed to be disordered. In striking contrast to the crystal structures, both cryo-EM structures reveal density for the RbpANTT, which unexpectedly threads into the RNAP active site cleft between the ZBD and \u03c3A4 domains and snakes through a narrow channel towards the RNAP active site Mg2+ (Figure 3). On its path, conserved residues of the RbpANTT interact with conserved residues of the \u03c3-finger (\u03c33.2-linker) on one wall of the channel, and with conserved residues of the ZBD and \u03b2'lid on the other wall (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig3-v2.jpg)\n\n**Figure 3.:** (A) An overview of the RbpA/RPo structure is shown as a color-coded molecular surface (color-coding denoted in the key) except the \u03b2 flap and \u03c3A4 domain are shown as backbone worms, revealing the RbpANTT (magenta) underneath. The DNA fragments are not shown. The boxed region is magnified in panel (B). (B) Magnified view of the boxed region from panel (A). The RbpANTT is shown in stick format with a transparent molecular surface. Conserved RNAP structural elements that interact with the RbpANTT are highlighted (\u03b2Sw3, \u03b2'ZBD, \u03b2'Zipper, \u03b2'Lid, and \u03c3-finger). (C) Further magnified view showing the cryo-EM density (blue mesh) with the superimposed model. Conserved residues of the RbpANTT are labeled, along with conserved residues of the \u03b2'ZBD, \u03b2'Lid, and \u03c3-finger that interact with the RbpANTT.\n\nThe most N-terminal RbpA residues visible in the cryo-EM structures (A2 in the Fdx complex, R4 in the RPo) sit near the tip of the \u03c3-finger where it makes its closest approach to the RNAP active site, too far (25 \u00c5) to play a direct role in RNAP catalytic activity or substrate binding. The \u03c3-finger plays an indirect role in transcription initiation, stimulating de novo phosphodiester bond formation by helping to position the t-strand DNA (Kulbachinskiy and Mustaev, 2006; Zhang et al., 2012). The \u03c3-finger is also a major determinant of abortive initiation, playing a direct role in initiation and promoter escape by physically blocking the path of the elongating RNA transcript before \u03c3 release (Cashel et al., 2003; Murakami et al., 2002). The intimate association of the RbpANTT with the \u03c3-finger (Figure 3C) suggests that the RbpANTT also plays a role in these processes of Mtb RNAP initiation. This is consistent with our findings that the RbpANTT does not strongly affect RPo formation but plays a significant role in in vivo gene expression in Msm (Hubin et al., 2017a). This location of the RbpANTT explains the high Fdx sensitivity of Mtb RNAP (see below).\n\n### Fdx interacts with RNAP, \u03c3A, and RbpA\n\nThe reconstruction from the Fdx-bound class (Figure 1D) reveals unambiguous density for Fdx (Figure 4A) and defines Fdx-interacting residues from four protein components of the complex, \u03b2, \u03b2', \u03c3A, and RbpA, including six water molecules, four of which mediate Fdx/RNAP interactions (Figure 4A,B). Fdx binding to the TIC buries a large accessible surface area of 4,800 \u00c52 (\u03b2, 2,100 \u00c52; \u03b2', 2,000 \u00c52; \u03c3A, 300 \u00c52; RbpA, 330 \u00c52). Fdx forms direct hydrogen bonds with nine residues (\u03b2Q1054, \u03b2D1094, \u03b2T1096, \u03b2K1101, \u03b2'R84, \u03b2'K86, \u03b2'R89, \u03b2'E323, and \u03b2'R412) and water-mediated interactions with four (\u03b2'R89, \u03b2'D404, \u03b2'Q415, and RbpA-E17). Notably, the Fdx/RNAP interaction is stabilized by two cation-\u03c0 interactions between \u03b2'R84 and the aromatic ring of the Fdx homodichloroorsellinic acid moiety (Figure 1B) and \u03b2'R89 and the conjugated double-bond system centered between C4 and C5 of the macrolide core (Figures 1B and 4A,B). Fdx interacts with residues from eight distinct structural elements (Lane and Darst, 2010) of the initiation complex (\u03b2Sw3, \u03b2Sw4, \u03b2 residues belonging to the clamp, \u03b2'ZBD, \u03b2'lid, \u03b2'Sw2, the \u03c3-finger, and the RbpaNTT (Figure 4A,B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig4-v2.jpg)\n\n**Figure 4.:** (A) (left) Overview of the Fdx/RbpA/\u03c3A-holo/us-fork structure, shown as a molecular surface (the DNA is not shown). The boxed region is magnified on the right. (right) Magnified view of the Fdx binding pocket at the same orientation as the boxed region on the left. Proteins are shown as \u03b1-carbon backbone worms. Residues that interact with Fdx are shown in stick format. Fdx is shown in stick format with green carbon atoms. Water molecules are shown as small pink spheres. Hydrogen-bonds are indicated by dashed gray lines. Cation-\u03c0 interactions (between \u03b2'R84 and the aromatic ring of the Fdx homodichloroorsellinic acid moiety and \u03b2'R89 and the conjugated double-bond system centered between C4 and C5 of the macrolide core) are represented by red dashed lines. (B) Schematic summary of the Fdx contacts with \u03c3A-holo and RbpA. Fdx is shown in stick format with green carbon atoms. Thin dashed lines represent van der Waals contacts (\u22644.5 \u00c5), thick red lines represent hydrogen bonds (<4 \u00c5). The thin dashed red lines denote cation-\u03c0 interactions. (C) The RbpANTT is required for optimal inhibition of Mtb transcription by Fdx in in vitro abortive initiation assays. The error bars denote the standard error from a minimum of three experiments (for some points, the error bars are smaller than the width of the point and are not shown). (D) Zone of inhibition assays with Msm cells show that loss of the RbpA-NTT (RbpA\u0394NTT) leads to loss of Fdx sensitivity in vivo.\n\nAmino-acid substitutions conferring FdxR have been identified in RNAP \u03b2 or \u03b2' subunits from Bacillus subtilis (Gualtieri et al., 2006), Cdf (Kuehne et al., 2017), Enterococcus faecalis (Gualtieri et al., 2009), and Mtb (Kurabachew et al., 2008), corresponding to Mtb RNAP \u03b2 residues Q1054 (Sw3), V1100 and V1123 (clamp), and \u03b2' residues R89 (ZBD), P326 (lid), and R412 (Sw2). The structure shows that each of these residues makes direct interactions with Fdx (Figure 4A,B). All five chemical moieties of Fdx (Figure 1B) interact with at least one RNAP residue that confers FdxR when mutated (Figure 4B), suggesting that each moiety may be important for Fdx action.\n\n### The RbpANTT is critical for Fdx potency against mycobacterial RNAP in vitro and in vivo\n\nIn addition to the \u03b2 and \u03b2' subunits, Fdx interacts with residues of the \u03c3-finger (D424 and V445; Figure 4A,B). Finally and unexpectedly, Fdx contacts residues from the RbpANTT (Figure 4A,B). To test the functional importance of the RpbANTT for Fdx inhibition in vitro, we compared Fdx inhibition of Mtb\u03c3A-holo with either RbpA or RbpA with the NTT truncated (RbpA\u0394NTT) in the abortive initiation assay (Figure 1\u2014figure supplement 1B). Truncation of the RbpA-NTT caused a 35-fold increase in resistance to Fdx (Figure 4C).\n\nRbpA is essential in Mtb and Msm, but strains carrying RbpA\u0394NTT are viable (Hubin et al., 2017a), allowing us to test the role of the RbpANTT in Fdx growth inhibition of Msm cells. We performed zone of inhibition assays on two Msm strains that are isogenic except one harbors wild-type RbpA (RbpAwt) and the other RbpA\u0394NTT (Hubin et al., 2017a). The Msm RbpA\u2206NTT strain grew considerably slower on plates, taking approximately twice the time as the wild-type Msm to reach confluency. Despite the growth defect, the RbpA\u0394NTT strain was significantly less sensitive to Fdx (Figure 4D). Discs soaked with up to 250 \u03bcM Fdx did not produce inhibition zones with RbpA\u0394NTT but inhibition zones were apparent with RbpAwt. At 500 \u03bcM Fdx, the inhibition zone for RbpA\u0394NTT was significantly smaller than for RbpAwt. By contrast, 860 \u03bcM streptomycin, a protein synthesis inhibitor, produced equal inhibition zones for the RbpAwt and RbpA\u0394NTT strains. We conclude that the essential role of RbpA in Mtb transcription is key to the relatively high sensitivity of Mtb cells to Fdx.\n\n### Fdx traps an open-clamp conformation\n\nThe RNAP switch regions are thought to act as hinges connecting the mobile clamp domain to the rest of the RNAP (Gnatt et al., 2001; Lane and Darst, 2010). Bacterial RNAP inhibitors myxopyronin, corallopyronin, and ripostatin bind Sw1 and Sw2 and stabilize a closed-clamp conformation of the RNAP (Belogurov et al., 2009; Mukhopadhyay et al., 2008). The Fdx binding determinant does not overlap the sites for these other inhibitors, but the Fdx interactions with the Sw2, Sw3, and Sw4 regions (Figure 4A,B) suggest that Fdx may influence the clamp conformation as well.\n\nTo understand the role of Fdx in clamp movement without the complication of DNA binding in the RNAP active site cleft, we determined cryo-EM structures of Mtb RbpA/\u03c3A-holo without DNA, with Fdx and without Fdx. Although the particles in the original cryo-EM datasets of Mtb RbpA/\u03c3A-holo were prone to oligomerization, we used 2D classification to isolate single particles and determined reconstructions of Mtb RbpA/\u03c3A-holo without DNA and with Fdx (overall 6.5 \u00c5 resolution from 21,000 particles, Figure 5A, Figure 5\u2014figure supplement 1A\u2013E) and without Fdx (overall 5.2 \u00c5 resolution from 88,000 particles; Figure 5A, Figure 5\u2014figure supplement 1F\u2013I). The cryo-EM density maps were of sufficient detail to visualize the bound antibiotic in the Fdx complex (Figure 5\u2014figure supplement 1E) and to determine the domain organization (including the clamp conformation) by rigid-body refinement (Figure 5A). Thus, we were able to compare the RNAP conformational states from four solution complexes of the same RNAP in the absence of crystal packing forces (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cryo-EM density maps and superimposed refined models for Mtb RbpA/\u03c3A-holo (5.2 \u00c5 resolution) and Mtb Fdx/RbpA/\u03c3A-holo (6.5 \u00c5 resolution). (B) RNAP clamp conformational changes for four cryo-EM structures determined in this work. The RbpA/RPo (Figure 2A) structure was used as a reference to superimpose the other structures via \u03b1-carbon atoms of the structural core module (Supplementary file 2), revealing a common core RNAP structure (shown as a gray molecular surface) but with large shifts in the clamp modules. The clamp modules are shown as backbone cartoons with cylindrical helices and color-coded (blue, closed clamp of RPo; green, relaxed clamp of RbpA/\u03c3Aholo; orange, open clamp of Fdx/RbpA/\u03c3A-holo/us-fork; red, open clamp of Fdx/RbpA/\u03c3A-holo). The clamp conformational changes can be characterized as rigid body rotations about a rotation axis perpendicular to the page (denoted). The angles of clamp opening for the different structures are shown (relative to the blue closed RPo clamp, 0\u00b0 opening). (C) The core RNAP from the 3.4 \u00c5 resolution Fdx/RbpA/\u03c3A-holo/us-fork structure is shown as a gray molecular surface but with the open clamp colored orange. The structure is sliced at the level of the Fdx binding pocket (the bound Fdx is shown in green). The boxed region is magnified below, showing the tight fit of the Fdx molecule in a narrow gap between the clamp and the rest of the RNAP. (D) The core RNAP from the 3.3 \u00c5 resolution RbpA/RPo structure is shown as a gray molecular surface but with the closed clamp colored blue. The structure is sliced at the level of the (empty) Fdx binding pocket. Fdx, modeled from the structure shown in (C), is shown in green. The boxed region is magnified below. Fdx cannot bind to RNAP with a closed clamp because clamp closure pinches off the Fdx binding site. Clamp closure is required for initiation and stabilization of the transcription bubble (Feklistov et al., 2017) and also for stable binding of nucleic acids in the RNAP cleft.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34823/elife-34823-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative micrograph of the Fdx/RbpA/\u03c3A-holo complex in vitreous ice. (B) The ten highest populated classes from cryoSPARC 2D classification. (C) Gold-standard FSC of the Mtb Holo/Fdx complex. The gold-standard FSC was calculated by comparing the two independently determined half-maps from cryoSPARC. The dotted line represents the 0.143 FSC cutoff which indicates a nominal resolution of 6.47 \u00c5. (D) Angular distribution calculated in cryoSPARC for Mtb Fdx/RbpA/\u03c3A-holo particle projections. Heat map shows number of particles for each viewing angle (less\u00a0=\u00a0blue, more\u00a0=\u00a0red). (E) Difference map showing Fdx is bound in 6.5 \u00c5 resolution structure. (F) Representative micrograph of the Mtb RbpA//\u03c3A-holo complex in vitreous ice. (G) The ten highest populated classes from cryoSPARC 2D classification. (H) Gold-standard FSC of the Mtb Holo complex. The gold-standard FSC was calculated by comparing the two independently determined half-maps from cryoSPARC. The dotted line represents the 0.143 FSC cutoff which indicates a nominal resolution of 5.15 \u00c5. (I) Angular distribution calculated in cryoSPARC for Mtb Holo particle projections. Heat map shows number of particles for each viewing angle (less\u00a0=\u00a0blue, more\u00a0=\u00a0red).\n\nThe four structures were superimposed by the structural core module (Supplementary file 2), comprising the \u03c9 subunit and highly conserved \u03b2 and \u03b2\u2032 regions in or near the active center that have not been observed to undergo significant conformational changes in dozens of RNAP structures. Using the RPo structure (Figure 2A) as a reference, the structures superimposed with rmsds\u00a0<\u00a00.4 \u00c5 over at least 898 aligned \u03b1-carbon (C\u03b1) atoms of the structural core module, but rmsds\u00a0>\u00a09 \u00c5 for 461 C\u03b1-atoms of the clamp modules (Supplementary file 2), indicating large shifts of the clamp module with respect to the rest of the RNAP in the different complexes.\n\nAlignment of the structures revealed that the clamp conformational changes could be characterized as rigid body rotations about a common rotation axis (Figure 5B). Assigning a clamp rotation angle of 0\u00b0 (closed clamp) to the RPo structure (blue, Figure 5B), the RbpA/\u03c3A-holo clamp is rotated open by about 12\u00b0 (green, Figure 5B). Because this complex is not interacting with any other ligands that might be expected to alter the clamp conformation (such as Fdx or DNA), we will refer to this as the 'relaxed' clamp conformation. The two Fdx-bound complexes, with or without us-fork DNA, show further opening of the clamp (14\u00b0 and 15\u00b0, respectively; orange and red in Figure 5B).\n\n### Fdx acts like a doorstop to stabilize the open-clamp conformation\n\nIn the high-resolution Fdx/TIC structure (Figure 1D), Fdx binds in a narrow gap between the open clamp module and the rest of the RNAP (Figure 5C). Examination of the high-resolution RPo (closed clamp) structure reveals that clamp closure pinches off the Fdx binding pocket (Figure 5D) - Fdx can only bind to the open-clamp conformation of RNAP. We thus conclude that Fdx acts like a doorstop, binding and stabilizing the open-clamp conformation.\n\n## Discussion\n\n### Fdx inhibits RNAP by trapping an open-clamp conformation\n\nClamp dynamics play multiple important roles in the transcription cycle. Motions of the clamp module and the role of the switch regions as hinges were first noted by comparing crystal structures of free RNAPs (Cramer et al., 2001; Zhang et al., 1999) with the crystal structure of an elongation complex containing template DNA and RNA transcript (Gnatt et al., 2001). Binding of the downstream duplex DNA and RNA/DNA hybrid in the RNAP active-site cleft was proposed to close the clamp around the nucleic acids, explaining the high processivity of the transcription elongation complex. Numerous subsequent crystal structures have supported the idea that stable, transcription-competent complexes of RNAP with nucleic acids, either RPo (Bae et al., 2015; Hubin et al., 2017b; Zuo and Steitz, 2015) or elongation complexes (Gnatt et al., 2001; Kettenberger et al., 2004; Vassylyev et al., 2007), correlate with the closed-clamp conformation. Effects of crystal packing forces on clamp conformation, however, cannot always be ruled out. Observations of clamp positions by solution FRET (Chakraborty et al., 2012), and more recently in cryo-EM structures (Bernecky et al., 2016; Hoffmann et al., 2015; Kang et al., 2017; Neyer et al., 2016) (in the absence of crystal packing forces) have confirmed the relationship between clamp closure and stable nucleic-acid complexes. Clamp motions have also been shown to play a critical role in the process of promoter melting to form the transcription bubble during RPo formation (Feklistov et al., 2017). Thus, the trapping of an open-clamp RNAP conformation by Fdx in unrestrained cryo-EM conditions (Figure 5C) suggests that Fdx inhibits transcription initiation by preventing clamp motions required for RPo formation, or by not allowing RNAP to form stable transcription-competent complexes with nucleic acids, or both (Figure 5C,D). These results are broadly consistent with mechanistic analyses of (Tupin et al., 2010) and (Morichaud et al., 2016) showing that Fdx blocks promoter melting at an early step but providing RNAP a pre-melted template overcomes the block. These authors proposed that Fdx likely prevented the clamp from closing, again consistent with our structural findings.\n\n### Summary\n\nOur results establish the molecular details of Fdx interactions with the bacterial RNAP (Figure 4A,B) and a mechanism of action for Fdx (Figure 5C,D). Crucially, the essential actinobacterial GTF RbpA is responsible for the high sensitivity of mycobacterial RNAP to Fdx both in vitro (Figure 4C) and in vivo (Figure 4D). This new knowledge provides a structural platform for the development of antimicrobials that target the Fdx binding determinant and underscores the need to define structure-activity relationships of drug leads using near-native states, in this case using cryo-EM with the RbpA/\u03c3A-holo complex to guide development of effective Mtb treatments.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Eco BL21(DE3)</td>\n      <td>EMD-Millipore (Novagen;\u00a0Darmstadt, \u00a0Germany)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mycobacterium  smegmatis mc2155)</td>\n      <td>MGM6029: Msm mc2155 rpoC:rpoC- ppx-10his hyg</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mycobacterium smegmatis mc2155)</td>\n      <td>MGM6234: Msm mc2155\u0394rbpA attB:: rbpA(28-114) kan</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC22</td>\n      <td>PMID: 24713321</td>\n      <td></td>\n      <td>pET28a derivative. Encodes M. bovis RNAP. \u03b2 contains a S450Y substitution (RifR) and a short N-terminal insertion at codon 2 (LEGCIL); \u03b2\u2032 has C-terminal His8 tag; \u03b2 and \u03b2\u2032 are fused with a short linker (LARHGGSGA)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pACYCDuet- 1_Ec_rpoZ</td>\n      <td>PMID: 23389035</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a-Eco\u03c370</td>\n      <td>PMID: 24218560</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pet21C-MsmRbpA</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pet21C-MtbRbpA</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28a</td>\n      <td>EMD-Millipore (Novagen)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-SUMO Msm\u03c3A</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-SUMO Mtb\u03c3A</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-SUMO MsmRbpA\u0394NTT</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET-SUMO MtbRbpA\u0394NTT</td>\n      <td>PMID: 28067618</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEMABC</td>\n      <td>PMID: 23389035</td>\n      <td>Addgene 45398</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMP55</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pAC22 derivative encoding Mtb RNAP with \u03b2 S450Y. Derived from pAC22 by P69R substitution, removal of the N-terminal \u03b2 insertion, and substitutions of increased predicted-strength RBSs for the rpoA, rpoZ, and rpoB::C RBSs.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMP57</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pMP55 with \u03b2 Q1054H. Fdx resistant.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMP61</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pMP55 with wild-type S450 in place of \u03b2 Y450.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMP62</td>\n      <td>this paper</td>\n      <td></td>\n      <td>pMP61 with \u03b2 S450L.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pRARE2</td>\n      <td>EMD-Millipore (Novagen)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUC57-AP3</td>\n      <td>PMID: 25510492</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fidaxomicin</td>\n      <td>VWR International, Inc.\u00a0(Radnor,\u00a0PA)</td>\n      <td>2832\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3-([3-cholamidopropyl]dimethylammonio)\u22122 -hydroxy-1-propanesulfonate (CHAPSO)</td>\n      <td>Sigma-Aldrich (St.\u00a0Louis,\u00a0MO)</td>\n      <td>C4695</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Blocres</td>\n      <td>PMID: 23954653</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>PMID: 15264254</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>PMID: 15572765</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CryoSPARC</td>\n      <td>PMID: 28165473</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EMAN2</td>\n      <td>PMID: 16859925</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gautomatch</td>\n      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf</td>\n      <td>PMID: 26592709</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Leginon</td>\n      <td>PMID: 20817100</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Molprobity</td>\n      <td>PMID: 20057044</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>PMID: 28250466</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>PMID: 20124702</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schr\u00f6dinger, LLC (New\u00a0York,\u00a0NY)</td>\n      <td>http://www.pymol.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION</td>\n      <td>PMID: 23000701</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Serial EM</td>\n      <td>PMID: 16182563</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Unblur</td>\n      <td>PMID: 26023829</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>C-flat CF-1.2/1.3 400 mesh gold grids</td>\n      <td>Electron Microscopy Sciences \u00a0(Hatfield,\u00a0PA)</td>\n      <td>CF413-100-Au</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nMtb RNAP overexpression plasmid. The overexpression plasmid (OEP) for Mtb RNAP was engineered from an existing OEP for M. bovis RNAP (Czyz et al., 2014), pAC22. Four modifications were made. First, a sequence in pAC22 that encodes an N-terminal 6-aa insertion at codon 2 of rpoB was removed. Second, a sequence upstream of rpoZ that included an ATG that potentially allowed an N-terminal extension on \u03c9 was removed. Third, to increase protein expression, the ribosome-binding sites (RBSs) for rpoA, rpoZ, and rpoB::C were re-engineered to encode stronger predicted RBSs using predicted translation initiation rates calculated using the Salis RBS strength calculator (https://salislab.net/software/) (Espah Borujeni et al., 2014). Finally, the single amino-acid difference between Mtb RNAP and Mbo RNAP at position 69 of \u03b2 was changed from Pro (Mbo) to Arg (Mtb) (P69R). The resulting plasmid, pMP55, encodes \u03b2 S450Y (RifR) Mtb RNAP. A wild-type derivative (RifS) was engineered by site-direct mutagenesis to give plasmid pMP61 that expresses the wild-type Mtb RNAP. A derivative of pMP55 encoding the \u03b2 Q1054H substitution that confers resistance to Fidaxomicin (Fdx) (Kurabachew et al., 2008) was constructed by site-directed mutagenesis.\n\nSamples for Cryo-EM grid preparation used Mtb His-tagged-\u03c3A and RbpA co-expressed and purified as previously described (Hubin et al., 2015; 2017a). To compare Fdx sensitivity of full-length RbpA and RbpA\u0394NTT, these proteins, and Mtb His-tagged-\u03c3A were expressed separately and purified as described previously (Hubin et al., 2015; 2017a). Briefly, Rosetta-2 cells\u00a0(EMD-Millipore/Novagen) were co-transformed with pET plasmids expressing Mtb \u03c3A(His-tagged) and RbpA and induced with 0.5 mM IPTG at 30\u00b0C for 4 hr. Clarified lysates was subjected to Ni2+ affinity, removal of the His-tag, a second Ni2+ affinity (collecting the flow through this time) and size exclusion chromatography.\n\nMtb RNAP was expressed and purified as previously described for Mbo and Msm RNAPs (Davis et al., 2015; Hubin et al., 2017a). Eco core RNAP, Eco \u03c370, Msm \u03c3A, Msm RbpA, and Msm core RNAP were expressed and purified as described (Davis et al., 2015; Hubin et al., 2015; 2017a).\n\n### In vitro transcription assays\n\nIn vitro abortive initiation transcription assays were performed using the WT AP3 (\u221287 to\u00a0+71) promoter at 37\u00b0C as described (Davis et al., 2015): Assays were performed in KCl assay buffer (10 mM Tris-HCl, pH 8.0, 50 mM KCl, 10 mM MgCl2, 0.1 mM EDTA, 0.1 mM DTT, 50 \u03bcg-/mL BSA). The IC50's of Fdx on the different holos were calculated as follows: Mtb and Msm RNAP holo were incubated with the cognate \u03c3A and RbpA-FL or RbpA\u2206NTT, and Eco RNAP (50 nM) was incubated with \u03c370, to form holos. Holos were incubated with Fdx for 10 min at 37\u00b0C prior to\u00a0addition of template DNA. DNA template was added (10 nM final) and the samples were incubated for 15 min at 37\u00b0C for open complex formation. Transcription was initiated with nucleotide mix, and stopped with a 2X Stop buffer (45 mM Tris-HCl, 45 mM Boric acid, 8 M Urea, 30 mM EDTA, 0.05% bromophenol blue, 0.05% xylene cyanol) after 10 min at 37\u00b0C. Transcription products were denatured by heating at 95\u00b0C for two minutes and visualized by polyacrylamide gel electrophoresis using phosphorimagery and quantified using ImageJ (Schneider et al., 2012).\n\n### Agar disk diffusion assay\n\nMsm strains MGM6232 (\u0394rbpA attB::rbpA kan) and MGM6234 (\u0394rbpA attB::rbpA(28-114) kan) (Hubin et al., 2017a) were grown overnight in LBsmeg (LB with 0.5% glycerol, 0.5% dextrose and 0.05% Tween80) and 2 mL were centrifuged and resuspended in 200 \u00b5L of residual media and then plated. Filter discs were placed on the plates and stock solutions of Fdx were prepared in 10% DMSO at different concentrations (50 \u03bcM, 100 \u03bcM, 250 \u03bcM and 500 \u03bcM). 10 \u03bcl of antibiotic from each stock solution was pipetted onto the disks. Streptomycin (0.5 mg/ml, 860 \u03bcM) and 10% DMSO were used as positive and negative controls, respectively. Plates were incubated at 37\u00b0C for 74 hr and the zone of inhibition around each disk was photographed and measured.\n\n### Preparation of Fdx/RbpA/\u03c3A-holo Complexes for Cryo-EM\n\nMtb RbpA/\u03c3A-holo (0.5 ml of 5 mg/ml) was injected into a Superose\u00a06 Increase column (GE Healthcare Life Sciences, Pittsburgh, PA) equilibrated with 20 mM Tris-HCl pH 8.0, 150 mM K-Glutamate, 5 mM MgCl2, 2.5 mM DTT. The peak fractions of the eluted protein were concentrated by centrifugal filtration (EMD-Millipore,\u00a0Darmstadt,\u00a0Germany) to 6 mg/mL protein concentration. Fdx (when used) was added at 100 \u03bcM and us-fork DNA (when used) was added to 20 \u03bcM. The samples were incubated on ice for 15 min and then 3-([3-cholamidopropyl]dimethylammonio)\u22122-hydroxy-1-propanesulfonate (CHAPSO) was added to the sample for a final concentration of 8 mM prior to grid preparation.\n\n### Cryo-EM grid preparation\n\nC-flat CF-1.2/1.3-4Au 400\u00a0mesh gold grids (Protochips, Morrisville, NC) were glow-discharged for 20 s prior to the application of 3.5 \u03bcl of the sample (4.0\u20136.0 mg/ml protein concentration). After blotting for 3\u20134.5 s, the grids were plunge-frozen in liquid ethane using an FEI Vitrobot Mark IV (FEI, Hillsboro, OR) with 100% chamber humidity at 22\u00b0C.\n\n### Cryo-EM data acquisition and processing\n\nStructural biology software was accessed through the SBGrid consortium (Morin et al., 2013).\n\nFdx/RbpA/\u03c3A-holo/us-fork. The grids were imaged using a 300 keV Titan Krios (FEI) equipped with a K2 Summit direct electron detector (Gatan,\u00a0Warrendale,\u00a0PA). Images were recorded with Leginon (Nicholson et al., 2010) in counting mode with a pixel size of 1.1 \u00c5 and a defocus range of 0.8 \u03bcm to 1.8 \u03bcm. Data were collected with a dose of 8 electrons/px/s. Images were recorded over a 10 s exposure with 0.2 s frames (50 total frames) to give a total dose of 66 electrons/\u00c52. Dose-fractionated subframes were aligned and summed using MotionCor2 (Zheng et al., 2017) and subsequent dose-weighting was applied to each image. The contrast transfer function was estimated for each summed image using Gctf (Zhang, 2016). From the summed images, Gautomatch (developed by K. Zhang, MRC Laboratory of Molecular Biology, Cambridge, UK, http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch) was used to pick particles with an auto-generated template. Autopicked particles were manually inspected, then subjected to 2D classification in cryoSPARC (Punjani et al., 2017) specifying 50 classes. Poorly populated and dimer classes were removed, resulting in a dataset of 582,169 particles. A subset of the dataset was used to generate an initial model of the complex in cryoSPARC (ab-initio reconstruction). Using the ab-initio model (low-pass filtered to 30 \u00c5-resolution), particles were 3D classified into two classes using cryoSPARC heterogenous refinement. CryoSPARC homogenous refinement was performed for each class using the class map and corresponding particles, yielding two structures with different clamp conformations: open (Fdx/RbpA/\u03c3A-holo/us-fork; Figure 1D) and closed [RbpA/\u03c3A-holo/(us-fork)2; Figure 2A]. Two rounds of heterogenous/homogeneous refinements were performed for each class to achieve the highest resolution. The open class (Fdx/RbpA/\u03c3A-holo/us-fork) contained 173,509 particles with an overall resolution of 3.38 \u00c5 (Figure 1\u2014figure supplement 3A) while the closed class [Mtb RNAP/\u03c3A/RbpA/(us-fork)2] contained 171,547 paricles with a overall resolution of 3.27 \u00c5 (Figure 2\u2014figure supplement 1A). Particle orientations of each class were plotted in cryoSPARC (Figure 1\u2014figure supplement 1C, Figure 2\u2014figure supplement 1C). FSC calculations (Figure 1\u2014figure supplement 1A, Figure 2\u2014figure supplement 1A) were performed in cryoSPARC and the half-map FSC (Figure 1\u2014figure supplement 1B, Figure 2\u2014figure supplement 1B) was calculated using EMAN2 (Tang et al., 2007). Local resolution calculations (Figures 1E and 2B) were performed using blocres (Cardone et al., 2013).\n\nMtb RbpA/\u03c3A-holo. The grids were imaged using a 200 keV Talos Arctica (FEI) equipped with a K2 Summit direct electron detector (Gatan). Images were recorded with Serial EM (Mastronarde, 2005) in super-resolution counting mode with a super-resolution pixel size of 0.75 \u00c5 and a defocus range of 0.8 \u03bcm to 2.4 \u03bcm. Data were collected with a dose of 8 electrons/px/s. Images were recorded over a 15 s exposure using 0.3 s subframes (50 total frames) to give a total dose of 53 electrons/\u00c52. Dose-fractionated subframes were 2 \u00d7 2 binned (giving a pixel size of 1.5 \u00c5), aligned and summed using Unblur (Grant and Grigorieff, 2015). The contrast transfer function was estimated for each summed image using Gctf (Zhang, 2016). From the summed images, Gautomatch (developed by K. Zhang, MRC Laboratory of Molecular Biology, Cambridge, UK, http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch) was used to pick particles with an auto-generated template. Autopicked particles were manually inspected, then subjected to 2D classification in RELION (Scheres, 2012) specifying 100 classes. Poorly populated classes were removed, resulting in a dataset of 289,154 particles. These particles were individually aligned across movie frames and dose-weighted using direct-detector-align_lmbfgs software to generate \u2018polished\u2019 particles (Rubinstein and Brubaker, 2015). A subset of the dataset was used to generate an initial model of the complex in cryoSPARC (ab-initio reconstruction). \u2018Polished\u2019 particles were 3D auto-refined in RELION using this ab-initio 3D template (low-pass filtered to 60 \u00c5-resolution). RELION 3D classification into two classes was performed on the particles using the refined map and alignment angles. Among the 3D classes, the best-resolved class, containing 87,657 particles, was 3D auto-refined and post-processed in RELION. The overall resolution of this class was 6.9 \u00c5 (before post-processing) and 5.2 \u00c5 (after post-processing). Subsequent 3D classification did not improve resolution of this class.\n\nFdx/RbpA/\u03c3A-holo. The same procedure as described above for Mtb RbpA/\u03c3A-holo was used. After RELION 2D classification, poorly populated classes were removed, resulting in a dataset of 63,839 particles. In the end, the best-resolved 3D class, containing 21,115 particles, was 3D auto-refined and post-processed in RELION. The overall resolution of this class was 8.1 \u00c5 (before post-processing) and 6.5 \u00c5 (after post-processing).\n\n### Model building and refinement\n\nTo build initial models of the protein components of the complex, Msm RbpA/\u03c3A-holo/us-fork structure (PDB ID 5TWI) (Hubin et al., 2017a) was manually fit into the cryo-EM density maps using Chimera (Pettersen et al., 2004) and real-space refined using Phenix (Adams et al., 2010). In the real-space refinement, domains of RNAP were rigid-body refined. For the high-resolution structures, the rigid-body refined models were subsequently refined with secondary structure restraints. A model of Fdx was generated from a crystal structure (Serra et al., 2017), edited in Phenix REEL, and refined into the cryo-EM density. Refined models were inspected and modified in Coot (Emsley and Cowtan, 2004) according to cryo-EM maps, followed by further real-space refinement with PHENIX.\n",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8ee29182-1ace-4115-8571-8341fde131cc",
+      "submission_id": "d9afea9f-959b-45ec-aa88-ba8eb6259ac5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34823.029](https://doi.org/10.7554/eLife.34823.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Fidaxomicin jams M. tuberculosis RNA polymerase motions needed for initiation via RbpA contacts\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gisela Storz as the Reviewing and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: William R Jacobs (Reviewer #1); Yuan He (Reviewer #2); Dong Wang (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nA critical challenge for tuberculosis (TB) treatment and other antimicrobial clinical practice is to develop novel antibiotics that can outcompete increasing drug resistance. Inhibition of bacteria RNA polymerase (RNAP) transcription and subsequent bacteria growth is a proven effective therapeutic strategy. Fidaxomicin (Fdx) is a narrow spectrum antibiotic that target Gram-positive anaerobes and mycobacteria (including Mtb) RNA polymerase (RNAP).\n\nIn this work, Campbell and colleagues build on previous studies reporting the first CryoEM structures of a complete M. tuberculosis RNAP holoenzyme in complex with Fdx at 3.4 A resolution. In fact, the authors reported a total of four cryoEM structures: Two fdx bound Mtb /RbpA/\u03c3A-holo complexes (with or without us-fork promoter DNA) and two fdx absence RbpA/\u03c3A -holo complexes (with or without us-fork promoter DNA). By comparing the different RNAP conformational states from four solution complexes of the same RNAP, authors are able to obtain several important structural insights into mechanism of action of Fdx.\n\nOverall the reviewers were in agreement that this paper summarizes an impressive amount of work and is easy to read.\n\nEssential revisions:\n\nThe reviewers had a limited number of suggestions that should be addressed in a revised version.\n\n1) Expand the discussion to suggest how understanding of the structure could apply to improving the poor bioactivity and the use of this drug to treat M. tuberculosis infections.\n\n2) The paper by Tupin et al., 2010, presented a nice and detailed mechanistic investigation of the inhibition of bacterial RNA polymerase by Lpm (Fdx). This is study should be cited and discussed.\n\n3) The section titled \"The RbpANTT is critical for Fdx potency against Mtb RNAP in vitro and in vivo\" is misleading since M. smegmatis was used for the growth inhibition assay. While M. smegmatis is a model organism to study M. tuberculosis, it is not M. tuberculosis. Suggest using M. tuberculosis safe strains to test the growth inhibition of M. tuberculosis by Fdx or avoid this direct implication.\n",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e5d1977-35be-4ce6-bcc4-24c62f331cbb",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C1",
+      "claim": "Fidaxomicin (Fdx) is an antimicrobial RNA polymerase (RNAP) inhibitor highly effective against Mycobacterium tuberculosis RNAP in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Fidaxomicin (Fdx) is an antimicrobial RNA polymerase (RNAP) inhibitor highly effective against Mycobacterium tuberculosis RNAP in vitro, but clinical use of Fdx is limited to treating Clostridium difficile intestinal infections due to poor absorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a direct assertion about Fdx's effectiveness against Mtb RNAP in vitro.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "58f5babd-ef13-4782-a219-c64d7827e588",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C2",
+      "claim": "Clinical use of Fdx is limited to treating Clostridium difficile intestinal infections due to poor absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Fidaxomicin (Fdx) is an antimicrobial RNA polymerase (RNAP) inhibitor highly effective against Mycobacterium tuberculosis RNAP in vitro, but clinical use of Fdx is limited to treating Clostridium difficile intestinal infections due to poor absorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of Fdx clinical use, drawing on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f4193063-85b4-400e-b928-6fd20a6746b6",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C3",
+      "claim": "The cryo-electron microscopy structure of a complete M. tuberculosis RNAP holoenzyme in complex with Fdx was determined at 3.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the structural determinants of Fdx binding to RNAP, we determined the 3.4 \u00c5 cryo-electron microscopy structure of a complete M. tuberculosis RNAP holoenzyme in complex with Fdx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the resolution of the structure determined in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "fde9b47f-3ea1-4a92-8c02-1e57bf5fcbae",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C4",
+      "claim": "The actinobacteria general transcription factor RbpA contacts fidaxomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the actinobacteria general transcription factor RbpA contacts fidaxomycin, explaining its strong effect on M. tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from the structural analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "a3acb622-5a60-43f6-8b53-c53186b82084",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C5",
+      "claim": "RbpA contact with fidaxomycin explains Fdx's strong effect on M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the actinobacteria general transcription factor RbpA contacts fidaxomycin, explaining its strong effect on M. tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural observation of RbpA-Fdx contacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "89b1b191-dfe3-4886-896d-3ffe56d1a2fa",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C6",
+      "claim": "Fdx acts like a doorstop to jam the enzyme in an open state, preventing the motions necessary to secure promoter DNA in the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The results establish that Fdx acts like a doorstop to jam the enzyme in an open state, preventing the motions necessary to secure promoter DNA in the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic conclusion is based on structural observations and comparisons of different conformational states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3edcefdc-492b-4fae-bc27-522720f5ed3c",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C7",
+      "claim": "The rifamycin (Rif) class of antibiotics is a lynchpin of modern tuberculosis (TB) treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The rifamycin (Rif) class of antibiotics, which inhibit RNAP function, is a lynchpin of modern tuberculosis (TB) treatment (Chakraborty and Rhee, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature on TB treatment.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f5806503-952f-4ce8-830f-1e6362e3a3d3",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C8",
+      "claim": "TB is responsible for almost 2 million deaths a year.",
+      "claim_type": "EXPLICIT",
+      "source": "TB, caused by the infectious agent Mycobacterium tuberculosis (Mtb), is responsible for almost 2 million deaths a year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of epidemiological fact, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "07dbb8a4-f3fd-4dd8-8501-445768909fec",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C9",
+      "claim": "It is estimated that one third of the world is infected with TB.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that one third of the world is infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an epidemiological estimate based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "6cf61b18-5535-4685-ad73-b9fd1291c08d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C10",
+      "claim": "Mortality from TB is increasing, partly due to the emergence of strains resistant to Rifs (RifR).",
+      "claim_type": "EXPLICIT",
+      "source": "Mortality from TB is increasing, partly due to the emergence of strains resistant to Rifs (RifR) (Zumla et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature on TB resistance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "64577ddb-d618-445f-b4f3-46e71db786b2",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C11",
+      "claim": "Fidaxomicin functions by inhibiting the bacterial RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fidaxomicin (Fdx; also known as Dificimicin, lipiarmycin, OPT-80, PAR-101, or tiacumicin), an antimicrobial in clinical use against Clostridium difficile (Cdf) infection (Venugopal and Johnson, 2012), functions by inhibiting the bacterial RNAP (Talpaert et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature establishing Fdx's mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f0cfa2d8-c5f0-44df-809f-7bb89937dadd",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C12",
+      "claim": "Fdx targets the RNAP 'switch region', a determinant for RNAP inhibition that is distinct from the Rif binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx targets the RNAP 'switch region', a determinant for RNAP inhibition that is distinct from the Rif binding pocket (Srivastava et al., 2011), and Fdx does not exhibit cross-resistance with Rif (Gualtieri et al., 2009, 2006; Kurabachew et al., 2008; O'Neill et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "85d82bd7-e2e1-49c3-9d79-57dc9031c83e",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C13",
+      "claim": "Fdx does not exhibit cross-resistance with Rif.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx targets the RNAP 'switch region', a determinant for RNAP inhibition that is distinct from the Rif binding pocket (Srivastava et al., 2011), and Fdx does not exhibit cross-resistance with Rif (Gualtieri et al., 2009, 2006; Kurabachew et al., 2008; O'Neill et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior resistance studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3ff1b5c1-a97c-4685-897c-a9c5c2596d40",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C14",
+      "claim": "The switch region sits at the base of the mobile RNAP clamp domain and controls motions of the clamp crucial for DNA loading into the RNAP active-site cleft and maintaining the melted DNA in the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch region sits at the base of the mobile RNAP clamp domain and, like a hinge, controls motions of the clamp crucial for DNA loading into the RNAP active-site cleft and maintaining the melted DNA in the channel (Chakraborty et al., 2012; Feklistov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural and mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "9bfd3da5-e3e7-4ea4-99a9-7e4247c6f3a7",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C15",
+      "claim": "Fdx is a narrow spectrum antibiotic that inhibits Gram-positive anaerobes and mycobacteria (including Mtb) much more potently than Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx is a narrow spectrum antibiotic that inhibits Gram-positive anaerobes and mycobacteria (including Mtb) much more potently than Gram-negative bacteria (Kurabachew et al., 2008; Srivastava et al., 2011), but the clinical use of Fdx is limited to intestinal infections due to poor bioavailability (Venugopal and Johnson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies on Fdx spectrum of activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8bdd024e-a731-4765-8c02-55ea8656d2bd",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C16",
+      "claim": "The clinical use of Fdx is limited to intestinal infections due to poor bioavailability.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx is a narrow spectrum antibiotic that inhibits Gram-positive anaerobes and mycobacteria (including Mtb) much more potently than Gram-negative bacteria (Kurabachew et al., 2008; Srivastava et al., 2011), but the clinical use of Fdx is limited to intestinal infections due to poor bioavailability (Venugopal and Johnson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "e58cabce-13c8-4e3f-b035-695741169a3d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C17",
+      "claim": "RbpA is an Actinobacteria-specific general transcription factor (GTF) that is crucial to the sensitivity of Mtb to Fdx.",
+      "claim_type": "EXPLICIT",
+      "source": "The results define the molecular interactions of Mtb RNAP with Fdx as well as the mechanistic basis of inhibition, and establish that RbpA, an Actinobacteria-specific general transcription factor (GTF), is crucial to the sensitivity of Mtb to Fdx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and functional data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "108ed77c-a56b-4b5c-ad51-8db78a850f8d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C18",
+      "claim": "Fdx has potent inhibitory activity against multi-drug-resistant Mtb cells and the in vivo target is the RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx has potent inhibitory activity against multi-drug-resistant Mtb cells and the in vivo target is the RNAP (Kurabachew et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work on Fdx activity against Mtb.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "cfb63f1f-a7b1-429d-a226-d0e4a8489cb6",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C19",
+      "claim": "RbpA is essential in Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "RbpA, essential in Mtb, is a component of transcription initiation complexes (TICs) that tightly binds the primary promoter specificity \u03c3A subunit of the RNAP holoenzyme (holo) (Bortoluzzi et al., 2013; Forti et al., 2011; Hubin et al., 2017a, 2015; Tabib-Salazar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior genetic and biochemical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "ec2ef5cb-cf69-469c-af93-4a2e3c4ede91",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C20",
+      "claim": "RbpA is a component of transcription initiation complexes (TICs) that tightly binds the primary promoter specificity \u03c3A subunit of the RNAP holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "RbpA, essential in Mtb, is a component of transcription initiation complexes (TICs) that tightly binds the primary promoter specificity \u03c3A subunit of the RNAP holoenzyme (holo) (Bortoluzzi et al., 2013; Forti et al., 2011; Hubin et al., 2017a, 2015; Tabib-Salazar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3fcdab24-4e59-4d5a-9da2-491b127c59de",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C21",
+      "claim": "Fdx inhibited Mtb and M. smegmatis (Msm) transcription at sub-\u03bcM concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx inhibited Mtb and M. smegmatis (Msm) transcription at sub-\u03bcM concentrations, whereas inhibition of an Mtb TIC containing Fdx-resistant (FdxR) RNAP (\u03b2Q1054H) (Kurabachew et al., 2008) required a nearly two orders of magnitude higher concentration of Fdx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the abortive initiation assay data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "e223a8de-497c-4104-9482-47069065fc06",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C22",
+      "claim": "Inhibition of an Mtb TIC containing Fdx-resistant (FdxR) RNAP (\u03b2Q1054H) required a nearly two orders of magnitude higher concentration of Fdx than wild-type Mtb RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx inhibited Mtb and M. smegmatis (Msm) transcription at sub-\u03bcM concentrations, whereas inhibition of an Mtb TIC containing Fdx-resistant (FdxR) RNAP (\u03b2Q1054H) (Kurabachew et al., 2008) required a nearly two orders of magnitude higher concentration of Fdx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the abortive initiation assay data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f35e6171-e411-48ba-951c-d9ca77742910",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C23",
+      "claim": "Eco RNAP was inhibited by Fdx even less effectively than FdxR Mtb RNAP by another order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Eco RNAP was inhibited even less effectively by another order of magnitude (Figure 1A, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the abortive initiation assay data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "08e0ad22-b807-43e1-84ba-5fb610220471",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C24",
+      "claim": "The cryo-EM density map of the Fdx/RbpA/\u03c3A-holo/us-fork complex was computed to a nominal resolution of 3.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM density map was computed to a nominal resolution of 3.4 \u00c5 (Figure 1D, Figure 1\u2014figure supplement 3, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by the FSC curve in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "d0c67ec3-4064-4741-ab7a-a1c1b9ee4410",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C25",
+      "claim": "The us-fork promoter fragment was bound outside the RNAP active site cleft with the \u221235 and \u221210 promoter elements engaged with the \u03c3A4 and \u03c3A2 domains, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The us-fork promoter fragment was bound outside the RNAP active site cleft, as expected, with the \u221235 and \u221210 promoter elements engaged with the \u03c3A4 and \u03c3A2 domains, respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "945134bf-5e8f-4fb1-b9a5-c5f551569752",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C26",
+      "claim": "The central core of the Fdx/RbpA/\u03c3A-holo/us-fork structure, including the Fdx binding determinant and the bound Fdx, was determined to 2.9\u20133.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Local resolution calculations (Cardone et al., 2013) indicated that the central core of the structure, including the Fdx binding determinant and the bound Fdx, was determined to 2.9\u20133.4 \u00c5 resolution (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on local resolution calculations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "bc9df305-5f31-4953-bbfe-dd64a681d6da",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C27",
+      "claim": "The second class comprised Mtb RbpA/\u03c3A-holo bound to two us-fork promoter fragments but without Fdx to a nominal resolution of 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The second class comprised Mtb RbpA/\u03c3A-holo bound to two us-fork promoter fragments but without Fdx to a nominal resolution of 3.3 \u00c5 (Figure 2A, Figure 2\u2014figure supplement 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by the FSC curve in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3632c8be-9db3-48db-a01b-aa3a8a2ea5b1",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C28",
+      "claim": "One us-fork promoter fragment bound upstream from the RNAP active site cleft while a second us-fork promoter fragment bound the RNAP downstream duplex DNA binding channel, with the 5-nucleotide 3'-overhang engaged with the RNAP active site as the template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "One us-fork promoter fragment bound upstream from the RNAP active site cleft as in the previous class, but a second us-fork promoter fragment bound the RNAP downstream duplex DNA binding channel, with the 5-nucleotide 3'-overhang (Figure 1C) engaged with the RNAP active site (as the template strand) like previously characterized 3'-tailed templates (Gnatt et al., 2001; Kadesch and Chamberlin, 1982).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 2A and supported by citations to prior work on tailed templates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "2c46ec92-079d-45ee-97e2-959d0bc934af",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C29",
+      "claim": "The central core of the RbpA/RPo mimic structure was determined to between 2.8\u20133.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Local resolution calculations (Cardone et al., 2013) indicated that the central core of the structure was determined to between 2.8\u20133.2 \u00c5 resolution (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on local resolution calculations shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "434d1a31-c1da-415d-bcb1-ca1b2f749466",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C30",
+      "claim": "The overall conformation of the RbpA/RPo mimic complex and its engagement with the upstream and downstream DNA fragments was very similar to the crystal structure of a full Msm open promoter complex (RPo).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall conformation of this protein complex and its engagement with the upstream and downstream DNA fragments was very similar to the crystal structure of a full Msm open promoter complex (RPo) (Hubin et al., 2017b) with one exception (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with a prior crystal structure cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "215ed0c6-f252-4cb6-85f8-63ae648dcbd7",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C31",
+      "claim": "RbpA comprises four structural elements: the N-terminal tail (NTT), the core domain (CD), the basic linker, and the sigma interacting domain (SID).",
+      "claim_type": "EXPLICIT",
+      "source": "RbpA comprises four structural elements, the N-terminal tail (NTT), the core domain (CD), the basic linker, and the sigma interacting domain (SID) (Bortoluzzi et al., 2013; Hubin et al., 2017a; Tabib-Salazar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies of RbpA.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f05e6a30-e5dd-45a1-86df-24afbaa8238a",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C32",
+      "claim": "Previous crystal structures of Msm TICs containing RbpA showed that the RbpASID interacts with the \u03c3A2 domain, the RbpABL establishes contacts with the promoter DNA phosphate backbone just upstream of the \u221210 element, and the RbpACD interacts with the RNAP \u03b2' Zinc-Binding-Domain (ZBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous crystal structures of Msm TICs containing RbpA showed that the RbpASID interacts with the \u03c3A2 domain, the RbpABL establishes contacts with the promoter DNA phosphate backbone just upstream of the \u221210 element, and the RbpACD interacts with the RNAP \u03b2' Zinc-Binding-Domain (ZBD) (Hubin et al., 2017a, 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "016ff3a8-ed4f-4268-8131-278cb1cc10ef",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C33",
+      "claim": "Density for the RbpANTT (RbpA residues 1\u201325) was never observed in the crystal structures and was presumed to be disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Density for the RbpANTT (RbpA residues 1\u201325) was never observed in the crystal structures and was presumed to be disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior crystal structures and their limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "773088e0-0811-427e-86e4-98f7d828141a",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C34",
+      "claim": "Both cryo-EM structures reveal density for the RbpANTT, which unexpectedly threads into the RNAP active site cleft between the ZBD and \u03c3A4 domains and snakes through a narrow channel towards the RNAP active site Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast to the crystal structures, both cryo-EM structures reveal density for the RbpANTT, which unexpectedly threads into the RNAP active site cleft between the ZBD and \u03c3A4 domains and snakes through a narrow channel towards the RNAP active site Mg2+ (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structures shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "97dff3aa-ff37-44ef-bf81-d4a31e9b4a24",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C35",
+      "claim": "Conserved residues of the RbpANTT interact with conserved residues of the \u03c3-finger (\u03c33.2-linker) on one wall of the channel, and with conserved residues of the ZBD and \u03b2'lid on the other wall.",
+      "claim_type": "EXPLICIT",
+      "source": "On its path, conserved residues of the RbpANTT interact with conserved residues of the \u03c3-finger (\u03c33.2-linker) on one wall of the channel, and with conserved residues of the ZBD and \u03b2'lid on the other wall (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "04c2811f-fae5-4a88-bfea-37cd26e24e39",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C36",
+      "claim": "The most N-terminal RbpA residues visible in the cryo-EM structures (A2 in the Fdx complex, R4 in the RPo) sit near the tip of the \u03c3-finger where it makes its closest approach to the RNAP active site, too far (25 \u00c5) to play a direct role in RNAP catalytic activity or substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The most N-terminal RbpA residues visible in the cryo-EM structures (A2 in the Fdx complex, R4 in the RPo) sit near the tip of the \u03c3-finger where it makes its closest approach to the RNAP active site, too far (25 \u00c5) to play a direct role in RNAP catalytic activity or substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on distance measurements from the cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "a4fb05a8-af2f-4bf6-aee1-cdead7c48065",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C37",
+      "claim": "The \u03c3-finger plays an indirect role in transcription initiation, stimulating de novo phosphodiester bond formation by helping to position the t-strand DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c3-finger plays an indirect role in transcription initiation, stimulating de novo phosphodiester bond formation by helping to position the t-strand DNA (Kulbachinskiy and Mustaev, 2006; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "e25c18e3-3afe-467a-b88e-814618816fca",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C38",
+      "claim": "The \u03c3-finger is a major determinant of abortive initiation, playing a direct role in initiation and promoter escape by physically blocking the path of the elongating RNA transcript before \u03c3 release.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c3-finger is also a major determinant of abortive initiation, playing a direct role in initiation and promoter escape by physically blocking the path of the elongating RNA transcript before \u03c3 release (Cashel et al., 2003; Murakami et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "17b7d436-393d-4fc9-b14a-feb9c9fd59e2",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C39",
+      "claim": "The intimate association of the RbpANTT with the \u03c3-finger suggests that the RbpANTT also plays a role in transcription initiation and promoter escape processes of Mtb RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The intimate association of the RbpANTT with the \u03c3-finger (Figure 3C) suggests that the RbpANTT also plays a role in these processes of Mtb RNAP initiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the structural observation of RbpANTT-\u03c3-finger interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "80f218a6-d22d-4655-b39b-a1caf411505b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C40",
+      "claim": "The RbpANTT does not strongly affect RPo formation but plays a significant role in in vivo gene expression in Msm.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our findings that the RbpANTT does not strongly affect RPo formation but plays a significant role in in vivo gene expression in Msm (Hubin et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "92ed7097-32cd-482f-b0b9-81b9f3329477",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C41",
+      "claim": "The location of the RbpANTT explains the high Fdx sensitivity of Mtb RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This location of the RbpANTT explains the high Fdx sensitivity of Mtb RNAP (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to the functional phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3bbc5d4f-c043-4ca3-8188-a04bdfb4e398",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C42",
+      "claim": "The reconstruction from the Fdx-bound class reveals unambiguous density for Fdx.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction from the Fdx-bound class (Figure 1D) reveals unambiguous density for Fdx (Figure 4A) and defines Fdx-interacting residues from four protein components of the complex, \u03b2, \u03b2', \u03c3A, and RbpA, including six water molecules, four of which mediate Fdx/RNAP interactions (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "98060262-221c-4309-8e1a-13623f36f9c1",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C43",
+      "claim": "Fdx-interacting residues come from four protein components of the complex: \u03b2, \u03b2', \u03c3A, and RbpA.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction from the Fdx-bound class (Figure 1D) reveals unambiguous density for Fdx (Figure 4A) and defines Fdx-interacting residues from four protein components of the complex, \u03b2, \u03b2', \u03c3A, and RbpA, including six water molecules, four of which mediate Fdx/RNAP interactions (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "a25a16c9-e96d-4e6b-87fe-2c1b48702c22",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C44",
+      "claim": "Six water molecules are involved in Fdx binding, four of which mediate Fdx/RNAP interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction from the Fdx-bound class (Figure 1D) reveals unambiguous density for Fdx (Figure 4A) and defines Fdx-interacting residues from four protein components of the complex, \u03b2, \u03b2', \u03c3A, and RbpA, including six water molecules, four of which mediate Fdx/RNAP interactions (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "82f44c46-d353-40a7-aa8a-8f08c2011f4f",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C45",
+      "claim": "Fdx binding to the TIC buries a large accessible surface area of 4,800 \u00c52 (\u03b2, 2,100 \u00c52; \u03b2', 2,000 \u00c52; \u03c3A, 300 \u00c52; RbpA, 330 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx binding to the TIC buries a large accessible surface area of 4,800 \u00c52 (\u03b2, 2,100 \u00c52; \u03b2', 2,000 \u00c52; \u03c3A, 300 \u00c52; RbpA, 330 \u00c52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "953855ac-8e96-4f10-8eae-4e68e0397a3a",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C46",
+      "claim": "Fdx forms direct hydrogen bonds with nine residues: \u03b2Q1054, \u03b2D1094, \u03b2T1096, \u03b2K1101, \u03b2'R84, \u03b2'K86, \u03b2'R89, \u03b2'E323, and \u03b2'R412.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx forms direct hydrogen bonds with nine residues (\u03b2Q1054, \u03b2D1094, \u03b2T1096, \u03b2K1101, \u03b2'R84, \u03b2'K86, \u03b2'R89, \u03b2'E323, and \u03b2'R412) and water-mediated interactions with four (\u03b2'R89, \u03b2'D404, \u03b2'Q415, and RbpA-E17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "d350d559-ba4b-42d5-9549-03f77c3e6f79",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C47",
+      "claim": "Fdx forms water-mediated interactions with four residues: \u03b2'R89, \u03b2'D404, \u03b2'Q415, and RbpA-E17.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx forms direct hydrogen bonds with nine residues (\u03b2Q1054, \u03b2D1094, \u03b2T1096, \u03b2K1101, \u03b2'R84, \u03b2'K86, \u03b2'R89, \u03b2'E323, and \u03b2'R412) and water-mediated interactions with four (\u03b2'R89, \u03b2'D404, \u03b2'Q415, and RbpA-E17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "e0b6513c-90cc-423c-ad5c-1c6475e1fddc",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C48",
+      "claim": "The Fdx/RNAP interaction is stabilized by two cation-\u03c0 interactions between \u03b2'R84 and the aromatic ring of the Fdx homodichloroorsellinic acid moiety and \u03b2'R89 and the conjugated double-bond system centered between C4 and C5 of the macrolide core.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the Fdx/RNAP interaction is stabilized by two cation-\u03c0 interactions between \u03b2'R84 and the aromatic ring of the Fdx homodichloroorsellinic acid moiety (Figure 1B) and \u03b2'R89 and the conjugated double-bond system centered between C4 and C5 of the macrolide core (Figures 1B and 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "60051ac6-13aa-4be5-9f13-1551512ddf3d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C49",
+      "claim": "Fdx interacts with residues from eight distinct structural elements of the initiation complex: \u03b2Sw3, \u03b2Sw4, \u03b2 residues belonging to the clamp, \u03b2'ZBD, \u03b2'lid, \u03b2'Sw2, the \u03c3-finger, and the RbpaNTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Fdx interacts with residues from eight distinct structural elements (Lane and Darst, 2010) of the initiation complex (\u03b2Sw3, \u03b2Sw4, \u03b2 residues belonging to the clamp, \u03b2'ZBD, \u03b2'lid, \u03b2'Sw2, the \u03c3-finger, and the RbpaNTT (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "9a953d8f-181d-41be-8d7f-e03d829a5eae",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C50",
+      "claim": "Amino-acid substitutions conferring FdxR have been identified in RNAP \u03b2 or \u03b2' subunits from Bacillus subtilis, Cdf, Enterococcus faecalis, and Mtb, corresponding to Mtb RNAP \u03b2 residues Q1054 (Sw3), V1100 and V1123 (clamp), and \u03b2' residues R89 (ZBD), P326 (lid), and R412 (Sw2).",
+      "claim_type": "EXPLICIT",
+      "source": "Amino-acid substitutions conferring FdxR have been identified in RNAP \u03b2 or \u03b2' subunits from Bacillus subtilis (Gualtieri et al., 2006), Cdf (Kuehne et al., 2017), Enterococcus faecalis (Gualtieri et al., 2009), and Mtb (Kurabachew et al., 2008), corresponding to Mtb RNAP \u03b2 residues Q1054 (Sw3), V1100 and V1123 (clamp), and \u03b2' residues R89 (ZBD), P326 (lid), and R412 (Sw2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior resistance studies in multiple organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3b15ae9f-95f9-4254-9495-fcd33b40865c",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C51",
+      "claim": "Each of the FdxR residues makes direct interactions with Fdx.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that each of these residues makes direct interactions with Fdx (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f3b1728a-c73f-4b6c-b832-72cef2fd1826",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C52",
+      "claim": "All five chemical moieties of Fdx interact with at least one RNAP residue that confers FdxR when mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "All five chemical moieties of Fdx (Figure 1B) interact with at least one RNAP residue that confers FdxR when mutated (Figure 4B), suggesting that each moiety may be important for Fdx action.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4B and leads to an inference about moiety importance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "c1b0608c-9188-4978-bb2b-20cf53b2d8c5",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C53",
+      "claim": "Each chemical moiety of Fdx may be important for Fdx action.",
+      "claim_type": "EXPLICIT",
+      "source": "All five chemical moieties of Fdx (Figure 1B) interact with at least one RNAP residue that confers FdxR when mutated (Figure 4B), suggesting that each moiety may be important for Fdx action.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that all moieties contact resistance residues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "35d724d5-dd73-4518-8e3c-b86b1adcb73b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C54",
+      "claim": "Fdx contacts residues from the \u03c3-finger (D424 and V445).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the \u03b2 and \u03b2' subunits, Fdx interacts with residues of the \u03c3-finger (D424 and V445; Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f8d5466e-24eb-4985-9146-9b24f52b3f7d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C55",
+      "claim": "Fdx contacts residues from the RbpANTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally and unexpectedly, Fdx contacts residues from the RbpANTT (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f132ff4d-f317-4509-b74b-a79638a20eab",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C56",
+      "claim": "Truncation of the RbpA-NTT caused a 35-fold increase in resistance to Fdx in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Truncation of the RbpA-NTT caused a 35-fold increase in resistance to Fdx (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured in the abortive initiation assay shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "d1f76651-99c5-4be6-ab60-a410f4b820b0",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C57",
+      "claim": "RbpA is essential in Mtb and Msm, but strains carrying RbpA\u0394NTT are viable.",
+      "claim_type": "EXPLICIT",
+      "source": "RbpA is essential in Mtb and Msm, but strains carrying RbpA\u0394NTT are viable (Hubin et al., 2017a), allowing us to test the role of the RbpANTT in Fdx growth inhibition of Msm cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "4309d008-c337-43d6-9d1b-7de968b6ee29",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C58",
+      "claim": "The Msm RbpA\u2206NTT strain grew considerably slower on plates, taking approximately twice the time as the wild-type Msm to reach confluency.",
+      "claim_type": "EXPLICIT",
+      "source": "The Msm RbpA\u2206NTT strain grew considerably slower on plates, taking approximately twice the time as the wild-type Msm to reach confluency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the zone of inhibition assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "1d72d3f1-b5b7-489d-aa71-7aacde0e3469",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C59",
+      "claim": "The RbpA\u0394NTT strain was significantly less sensitive to Fdx than the wild-type strain in zone of inhibition assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the growth defect, the RbpA\u0394NTT strain was significantly less sensitive to Fdx (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the zone of inhibition assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "4d85d818-b5a2-46b1-928a-f8db97d87cdf",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C60",
+      "claim": "Discs soaked with up to 250 \u03bcM Fdx did not produce inhibition zones with RbpA\u0394NTT but inhibition zones were apparent with RbpAwt.",
+      "claim_type": "EXPLICIT",
+      "source": "Discs soaked with up to 250 \u03bcM Fdx did not produce inhibition zones with RbpA\u0394NTT but inhibition zones were apparent with RbpAwt.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the zone of inhibition assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "2af971bc-82ca-4f3d-a84c-fd1053c87db9",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C61",
+      "claim": "At 500 \u03bcM Fdx, the inhibition zone for RbpA\u0394NTT was significantly smaller than for RbpAwt.",
+      "claim_type": "EXPLICIT",
+      "source": "At 500 \u03bcM Fdx, the inhibition zone for RbpA\u0394NTT was significantly smaller than for RbpAwt.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the zone of inhibition assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "b5d6f166-8b74-46e7-a808-c8e9f0c1822b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C62",
+      "claim": "860 \u03bcM streptomycin produced equal inhibition zones for the RbpAwt and RbpA\u0394NTT strains.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 860 \u03bcM streptomycin, a protein synthesis inhibitor, produced equal inhibition zones for the RbpAwt and RbpA\u0394NTT strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the zone of inhibition assays shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "7c17b1bc-823b-486a-b21f-7d829d2b0780",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C63",
+      "claim": "The essential role of RbpA in Mtb transcription is key to the relatively high sensitivity of Mtb cells to Fdx.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the essential role of RbpA in Mtb transcription is key to the relatively high sensitivity of Mtb cells to Fdx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vitro and in vivo functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "2e80bab1-9e01-4180-91f0-2ae9ac90cf12",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C64",
+      "claim": "The RNAP switch regions are thought to act as hinges connecting the mobile clamp domain to the rest of the RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNAP switch regions are thought to act as hinges connecting the mobile clamp domain to the rest of the RNAP (Gnatt et al., 2001; Lane and Darst, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "153ee2db-828f-43f8-98db-c1b7d40016cf",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C65",
+      "claim": "Bacterial RNAP inhibitors myxopyronin, corallopyronin, and ripostatin bind Sw1 and Sw2 and stabilize a closed-clamp conformation of the RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial RNAP inhibitors myxopyronin, corallopyronin, and ripostatin bind Sw1 and Sw2 and stabilize a closed-clamp conformation of the RNAP (Belogurov et al., 2009; Mukhopadhyay et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "eebb289d-b341-4116-8f2d-3c04882c9e78",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C66",
+      "claim": "The Fdx binding determinant does not overlap the sites for myxopyronin, corallopyronin, and ripostatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fdx binding determinant does not overlap the sites for these other inhibitors, but the Fdx interactions with the Sw2, Sw3, and Sw4 regions (Figure 4A,B) suggest that Fdx may influence the clamp conformation as well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observation of Fdx binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "80efd9af-19d7-45b4-96ea-df1eaf8da738",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C67",
+      "claim": "Fdx interactions with the Sw2, Sw3, and Sw4 regions suggest that Fdx may influence the clamp conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fdx binding determinant does not overlap the sites for these other inhibitors, but the Fdx interactions with the Sw2, Sw3, and Sw4 regions (Figure 4A,B) suggest that Fdx may influence the clamp conformation as well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the structural observation of Fdx contacts with switch regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "516e9af0-1b7d-4e19-ba5b-540d143ebb87",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C68",
+      "claim": "Cryo-EM structures of Mtb RbpA/\u03c3A-holo without DNA, with Fdx and without Fdx, were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the role of Fdx in clamp movement without the complication of DNA binding in the RNAP active site cleft, we determined cryo-EM structures of Mtb RbpA/\u03c3A-holo without DNA, with Fdx and without Fdx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "d803dc9b-8d9a-47af-840a-2571492e4f3d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C69",
+      "claim": "A reconstruction of Mtb RbpA/\u03c3A-holo without DNA and with Fdx was determined at overall 6.5 \u00c5 resolution from 21,000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the particles in the original cryo-EM datasets of Mtb RbpA/\u03c3A-holo were prone to oligomerization, we used 2D classification to isolate single particles and determined reconstructions of Mtb RbpA/\u03c3A-holo without DNA and with Fdx (overall 6.5 \u00c5 resolution from 21,000 particles, Figure 5A, Figure 5\u2014figure supplement 1A\u2013E) and without Fdx (overall 5.2 \u00c5 resolution from 88,000 particles; Figure 5A, Figure 5\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by the FSC curve in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "42afcf13-4358-4834-8db1-ae1abc1cab4e",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C70",
+      "claim": "A reconstruction of Mtb RbpA/\u03c3A-holo without DNA and without Fdx was determined at overall 5.2 \u00c5 resolution from 88,000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the particles in the original cryo-EM datasets of Mtb RbpA/\u03c3A-holo were prone to oligomerization, we used 2D classification to isolate single particles and determined reconstructions of Mtb RbpA/\u03c3A-holo without DNA and with Fdx (overall 6.5 \u00c5 resolution from 21,000 particles, Figure 5A, Figure 5\u2014figure supplement 1A\u2013E) and without Fdx (overall 5.2 \u00c5 resolution from 88,000 particles; Figure 5A, Figure 5\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by the FSC curve in Figure 5\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "27cf5dea-c478-40c5-b038-4e6760373934",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C71",
+      "claim": "The cryo-EM density maps were of sufficient detail to visualize the bound antibiotic in the Fdx complex and to determine the domain organization (including the clamp conformation) by rigid-body refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM density maps were of sufficient detail to visualize the bound antibiotic in the Fdx complex (Figure 5\u2014figure supplement 1E) and to determine the domain organization (including the clamp conformation) by rigid-body refinement (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "5f9ae24e-b6d2-4483-bf66-c054646bd0f0",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C72",
+      "claim": "Four solution complexes of the same RNAP in the absence of crystal packing forces were compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we were able to compare the RNAP conformational states from four solution complexes of the same RNAP in the absence of crystal packing forces (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological advantage of the cryo-EM approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "9e868720-15ae-45bc-a295-3a2f290807f2",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C73",
+      "claim": "The four structures were superimposed by the structural core module, comprising the \u03c9 subunit and highly conserved \u03b2 and \u03b2\u2032 regions in or near the active center that have not been observed to undergo significant conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The four structures were superimposed by the structural core module (Supplementary file 2), comprising the \u03c9 subunit and highly conserved \u03b2 and \u03b2\u2032 regions in or near the active center that have not been observed to undergo significant conformational changes in dozens of RNAP structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the methodological approach for structural comparison.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f9b69483-d3be-4860-bbe2-a7d53353b73b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C74",
+      "claim": "Using the RPo structure as a reference, the structures superimposed with rmsds < 0.4 \u00c5 over at least 898 aligned \u03b1-carbon atoms of the structural core module, but rmsds > 9 \u00c5 for 461 C\u03b1-atoms of the clamp modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the RPo structure (Figure 2A) as a reference, the structures superimposed with rmsds < 0.4 \u00c5 over at least 898 aligned \u03b1-carbon (C\u03b1) atoms of the structural core module, but rmsds > 9 \u00c5 for 461 C\u03b1-atoms of the clamp modules (Supplementary file 2), indicating large shifts of the clamp module with respect to the rest of the RNAP in the different complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from structural superposition analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "1e635688-72c4-402e-96d0-a6b4a9bbe120",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C75",
+      "claim": "Large shifts of the clamp module occur with respect to the rest of the RNAP in the different complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the RPo structure (Figure 2A) as a reference, the structures superimposed with rmsds < 0.4 \u00c5 over at least 898 aligned \u03b1-carbon (C\u03b1) atoms of the structural core module, but rmsds > 9 \u00c5 for 461 C\u03b1-atoms of the clamp modules (Supplementary file 2), indicating large shifts of the clamp module with respect to the rest of the RNAP in the different complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large rmsd values for the clamp modules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "6ada903d-7704-4827-b433-f0ad534bd473",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C76",
+      "claim": "Alignment of the structures revealed that the clamp conformational changes could be characterized as rigid body rotations about a common rotation axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment of the structures revealed that the clamp conformational changes could be characterized as rigid body rotations about a common rotation axis (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from structural analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "5dc4b050-5baa-4df3-8bc9-fcc3941af8e9",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C77",
+      "claim": "The RbpA/\u03c3A-holo clamp is rotated open by about 12\u00b0 relative to the closed RPo clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Assigning a clamp rotation angle of 0\u00b0 (closed clamp) to the RPo structure (blue, Figure 5B), the RbpA/\u03c3A-holo clamp is rotated open by about 12\u00b0 (green, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from structural analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "ea0503a8-c1b2-412d-8379-96f5e1992b7b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C78",
+      "claim": "The two Fdx-bound complexes, with or without us-fork DNA, show further opening of the clamp (14\u00b0 and 15\u00b0, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The two Fdx-bound complexes, with or without us-fork DNA, show further opening of the clamp (14\u00b0 and 15\u00b0, respectively; orange and red in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from structural analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "51483fe7-7114-4246-9c3c-9abe1406554c",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C79",
+      "claim": "In the high-resolution Fdx/TIC structure, Fdx binds in a narrow gap between the open clamp module and the rest of the RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high-resolution Fdx/TIC structure (Figure 1D), Fdx binds in a narrow gap between the open clamp module and the rest of the RNAP (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "29ec9252-df5d-473a-bc10-77a29a837cc1",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C80",
+      "claim": "Examination of the high-resolution RPo (closed clamp) structure reveals that clamp closure pinches off the Fdx binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the high-resolution RPo (closed clamp) structure reveals that clamp closure pinches off the Fdx binding pocket (Figure 5D) - Fdx can only bind to the open-clamp conformation of RNAP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by modeling Fdx into the closed clamp structure shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "668ff75b-9c51-4785-b75d-0fe6ae406e4d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C81",
+      "claim": "Fdx can only bind to the open-clamp conformation of RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the high-resolution RPo (closed clamp) structure reveals that clamp closure pinches off the Fdx binding pocket (Figure 5D) - Fdx can only bind to the open-clamp conformation of RNAP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observation that the closed clamp occludes the Fdx binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "01198054-df43-4326-b485-64fb4c98c77d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C82",
+      "claim": "Fdx acts like a doorstop, binding and stabilizing the open-clamp conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that Fdx acts like a doorstop, binding and stabilizing the open-clamp conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion drawn from the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "400e7807-1ffa-4f15-b370-6009ce830782",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C83",
+      "claim": "Motions of the clamp module and the role of the switch regions as hinges were first noted by comparing crystal structures of free RNAPs with the crystal structure of an elongation complex containing template DNA and RNA transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Motions of the clamp module and the role of the switch regions as hinges were first noted by comparing crystal structures of free RNAPs (Cramer et al., 2001; Zhang et al., 1999) with the crystal structure of an elongation complex containing template DNA and RNA transcript (Gnatt et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8185dac4-cc50-41ca-84d9-7c18ebb320e7",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C84",
+      "claim": "Binding of the downstream duplex DNA and RNA/DNA hybrid in the RNAP active-site cleft was proposed to close the clamp around the nucleic acids, explaining the high processivity of the transcription elongation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of the downstream duplex DNA and RNA/DNA hybrid in the RNAP active-site cleft was proposed to close the clamp around the nucleic acids, explaining the high processivity of the transcription elongation complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal from prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "c19b4202-2653-4a99-b116-330a54c0eac6",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C85",
+      "claim": "Numerous subsequent crystal structures have supported the idea that stable, transcription-competent complexes of RNAP with nucleic acids, either RPo or elongation complexes, correlate with the closed-clamp conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous subsequent crystal structures have supported the idea that stable, transcription-competent complexes of RNAP with nucleic acids, either RPo (Bae et al., 2015; Hubin et al., 2017b; Zuo and Steitz, 2015) or elongation complexes (Gnatt et al., 2001; Kettenberger et al., 2004; Vassylyev et al., 2007), correlate with the closed-clamp conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple prior crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "710e3744-e9ec-412a-bfee-15eb56a5120e",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C86",
+      "claim": "Observations of clamp positions by solution FRET and cryo-EM structures have confirmed the relationship between clamp closure and stable nucleic-acid complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Observations of clamp positions by solution FRET (Chakraborty et al., 2012), and more recently in cryo-EM structures (Bernecky et al., 2016; Hoffmann et al., 2015; Kang et al., 2017; Neyer et al., 2016) (in the absence of crystal packing forces) have confirmed the relationship between clamp closure and stable nucleic-acid complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior FRET and cryo-EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "6e176aa5-ffe9-4df9-a1a9-5d18adba78e8",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C87",
+      "claim": "Clamp motions have been shown to play a critical role in the process of promoter melting to form the transcription bubble during RPo formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Clamp motions have also been shown to play a critical role in the process of promoter melting to form the transcription bubble during RPo formation (Feklistov et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior mechanistic study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "fd02aef3-5bee-474d-963f-65dd7f14deb0",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C88",
+      "claim": "The trapping of an open-clamp RNAP conformation by Fdx in unrestrained cryo-EM conditions suggests that Fdx inhibits transcription initiation by preventing clamp motions required for RPo formation, or by not allowing RNAP to form stable transcription-competent complexes with nucleic acids, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the trapping of an open-clamp RNAP conformation by Fdx in unrestrained cryo-EM conditions (Figure 5C) suggests that Fdx inhibits transcription initiation by preventing clamp motions required for RPo formation, or by not allowing RNAP to form stable transcription-competent complexes with nucleic acids, or both (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic inference drawn from the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "ad04c6aa-642c-4455-93da-89c0dc93de71",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C89",
+      "claim": "The results are broadly consistent with mechanistic analyses showing that Fdx blocks promoter melting at an early step but providing RNAP a pre-melted template overcomes the block.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are broadly consistent with mechanistic analyses of (Tupin et al., 2010) and (Morichaud et al., 2016) showing that Fdx blocks promoter melting at an early step but providing RNAP a pre-melted template overcomes the block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "b67deb9d-5775-4d76-bc74-e98d2a002de0",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C90",
+      "claim": "Prior authors proposed that Fdx likely prevented the clamp from closing.",
+      "claim_type": "EXPLICIT",
+      "source": "These authors proposed that Fdx likely prevented the clamp from closing, again consistent with our structural findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior mechanistic proposals that are consistent with the current structural findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "ad32b9d6-0788-4b53-8431-351d1f648c29",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C91",
+      "claim": "The results establish the molecular details of Fdx interactions with the bacterial RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results establish the molecular details of Fdx interactions with the bacterial RNAP (Figure 4A,B) and a mechanism of action for Fdx (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the structural findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "51f83dd6-c021-49eb-a95d-78fc2a5c52e1",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C92",
+      "claim": "The results establish a mechanism of action for Fdx.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results establish the molecular details of Fdx interactions with the bacterial RNAP (Figure 4A,B) and a mechanism of action for Fdx (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the mechanistic findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "25267abc-3fcf-4fd1-9154-33fa312f9d14",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C93",
+      "claim": "The essential actinobacterial GTF RbpA is responsible for the high sensitivity of mycobacterial RNAP to Fdx both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the essential actinobacterial GTF RbpA is responsible for the high sensitivity of mycobacterial RNAP to Fdx both in vitro (Figure 4C) and in vivo (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the in vitro and in vivo functional data shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "2c927c05-dc20-4f57-b82b-4915dd6a8c3d",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C94",
+      "claim": "This new knowledge provides a structural platform for the development of antimicrobials that target the Fdx binding determinant.",
+      "claim_type": "EXPLICIT",
+      "source": "This new knowledge provides a structural platform for the development of antimicrobials that target the Fdx binding determinant and underscores the need to define structure-activity relationships of drug leads using near-native states, in this case using cryo-EM with the RbpA/\u03c3A-holo complex to guide development of effective Mtb treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the implications of the structural findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "68473e4a-aeee-480c-ba74-8bba3ffe476b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "claim_id": "C95",
+      "claim": "The results underscore the need to define structure-activity relationships of drug leads using near-native states, in this case using cryo-EM with the RbpA/\u03c3A-holo complex to guide development of effective Mtb treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "This new knowledge provides a structural platform for the development of antimicrobials that target the Fdx binding determinant and underscores the need to define structure-activity relationships of drug leads using near-native states, in this case using cryo-EM with the RbpA/\u03c3A-holo complex to guide development of effective Mtb treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7b924f6d-76c1-4e3b-863c-97428d12b272",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fidaxomicin (Fdx) is an antimicrobial that inhibits bacterial RNAP and is highly effective against Mycobacterium tuberculosis RNAP in vitro, but its clinical use is limited to treating Clostridium difficile intestinal infections due to poor bioavailability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C15, C16, and C18 are well-supported by citations to prior literature establishing Fdx's mechanism, spectrum of activity, and clinical limitations. These claims provide essential background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8d2fd686-954f-4417-95d0-147592943ccb",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tuberculosis is a major global health problem responsible for almost 2 million deaths annually, with one-third of the world infected. Mortality is increasing partly due to emergence of rifamycin-resistant strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are supported by citations to established epidemiological and clinical literature. These claims provide important context for the significance of developing new anti-TB therapeutics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "9f5439a8-b1fb-4d3a-9766-50e1362e871a",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fdx functions by inhibiting bacterial RNAP through targeting the 'switch region', which is distinct from the rifamycin binding pocket and does not exhibit cross-resistance with rifamycin. The switch region controls clamp motions crucial for DNA loading and maintaining melted DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are well-supported by multiple citations to prior structural and functional studies. These claims establish the known mechanism of Fdx action and provide essential background for the current structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "ef192224-4df3-41a4-b718-ee1c17241097",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RbpA is an essential Actinobacteria-specific transcription factor in Mtb that comprises four structural elements (NTT, CD, basic linker, and SID) and is a component of transcription initiation complexes. Prior crystal structures showed interactions of RbpA domains with RNAP and DNA but never observed density for the RbpA N-terminal tail (NTT).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, C31-C33 are supported by multiple citations to prior genetic, biochemical, and structural studies. These claims establish the known properties of RbpA and set up the novelty of observing the RbpANTT in the current cryo-EM structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "04a52e3b-0505-46a4-95eb-529502ab940b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vitro transcription assays demonstrate that Fdx inhibits Mtb and M. smegmatis transcription at sub-\u03bcM concentrations, while Fdx-resistant RNAP (\u03b2Q1054H) requires nearly 100-fold higher Fdx concentrations for inhibition, and E. coli RNAP is inhibited even less effectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are directly supported by the abortive initiation assay data shown in Figure 1A. The dose-response curves clearly demonstrate the differential sensitivity of different RNAPs to Fdx, with appropriate error bars and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3c0c2da0-3624-4011-9a9b-6f696aa02d67",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of the Fdx/RbpA/\u03c3A-holo/us-fork complex was determined at 3.4 \u00c5 overall resolution, with the central core including the Fdx binding site determined to 2.9-3.4 \u00c5 resolution. The us-fork promoter fragment binds outside the active site cleft with promoter elements engaged with \u03c3A domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C26 are well-supported by the cryo-EM data, FSC curves, and local resolution calculations shown in Figures 1D-E and supplementary figures. The resolution is appropriate for the detailed structural analysis presented, and the DNA binding mode is clearly visualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "067cd88c-4543-4890-87b4-be5d059ecf7e",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A second cryo-EM structure (RbpA/RPo mimic) was determined at 3.3 \u00c5 resolution showing Mtb RbpA/\u03c3A-holo bound to two us-fork promoter fragments without Fdx. One fragment binds upstream while a second binds the downstream DNA channel with its 3'-overhang engaged as template strand. The structure is very similar to a prior Msm RPo crystal structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by the cryo-EM data shown in Figure 2 and supplementary figures, with appropriate FSC curves and local resolution calculations. The comparison to prior crystal structures provides validation of the structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "25deef20-9ad9-401e-9e33-b8fbfff158f0",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both cryo-EM structures reveal density for the previously unobserved RbpANTT, which threads into the RNAP active site cleft and makes conserved interactions with the \u03c3-finger, ZBD, and \u03b2'lid. The RbpANTT location near the \u03c3-finger suggests it plays a role in transcription initiation and promoter escape, consistent with prior functional studies, and explains the high Fdx sensitivity of Mtb RNAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C39-C41 are well-supported by the cryo-EM density shown in Figure 3 and are consistent with prior functional studies (C40). The structural observations provide a clear molecular explanation for the functional role of RbpANTT, though the mechanistic inference (C39, C41) is reasonable but not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Fdx-bound structure reveals unambiguous density for Fdx and defines detailed molecular interactions with four protein components (\u03b2, \u03b2', \u03c3A, and RbpA), including direct hydrogen bonds with nine residues, water-mediated interactions with four residues, two cation-\u03c0 interactions, and contacts with eight distinct structural elements including the RbpANTT. Fdx binding buries 4,800 \u00c5\u00b2 of surface area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49, C54-C55 are directly supported by the high-resolution cryo-EM density shown in Figure 4A-B. The detailed molecular interactions are clearly visualized at 2.9-3.4 \u00c5 resolution in the binding pocket, and the quantitative measurements of buried surface area are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "08fd4aef-bc77-4d20-8beb-c6db16bce414",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Known Fdx-resistance mutations from multiple bacterial species map to residues that make direct interactions with Fdx in the structure. All five chemical moieties of Fdx interact with at least one resistance residue, suggesting each moiety may be important for Fdx action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are well-supported by the structural data and citations to prior resistance studies. The observation that all resistance mutations contact Fdx validates the structure. However, C53 is speculative - while reasonable, the importance of each moiety has not been directly tested through structure-activity relationship studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Truncation of the RbpA-NTT causes a 35-fold increase in Fdx resistance in vitro and significantly reduces Fdx sensitivity in vivo in M. smegmatis zone of inhibition assays, while not affecting sensitivity to streptomycin. This demonstrates that the essential actinobacterial transcription factor RbpA is responsible for the high sensitivity of mycobacterial RNAP to Fdx both in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C59-C63, C93 are well-supported by the in vitro transcription data (Figure 4C) and in vivo zone of inhibition assays (Figure 4D). The streptomycin control (C62) demonstrates specificity. The conclusion that RbpA is responsible for Fdx sensitivity is strongly supported by converging in vitro and in vivo evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cryo-EM structures of Mtb RbpA/\u03c3A-holo without DNA were determined both with Fdx (6.5 \u00c5 resolution) and without Fdx (5.2 \u00c5 resolution). The maps were sufficient to visualize bound Fdx and determine domain organization by rigid-body refinement, allowing comparison of four solution complexes of the same RNAP in the absence of crystal packing forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by the cryo-EM data shown in Figure 5 and supplementary figures. While the resolution is lower than the DNA-bound complexes, it is sufficient for the rigid-body analysis performed. The ability to compare multiple conformational states in solution is a key strength of the cryo-EM approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "e0607aa4-6214-4255-b5d2-60cab7229650",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Structural superposition reveals that the four structures align well on the core module (rmsd < 0.4 \u00c5) but show large shifts in the clamp module (rmsd > 9 \u00c5). The clamp conformational changes can be characterized as rigid body rotations about a common axis, with the RbpA/\u03c3A-holo clamp rotated open by ~12\u00b0 relative to the closed RPo clamp, and Fdx-bound complexes showing further opening (14-15\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 are well-supported by the quantitative structural analysis shown in Figure 5B and Supplementary file 2. The rmsd values and rotation angles provide clear quantitative evidence for clamp conformational changes. The analysis is rigorous and appropriate for the resolution of the structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "af88789e-f435-4f1b-bd0b-3a097feabb02",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In the high-resolution Fdx/TIC structure, Fdx binds in a narrow gap between the open clamp and the rest of RNAP. Examination of the closed RPo structure reveals that clamp closure pinches off the Fdx binding pocket, indicating Fdx can only bind to the open-clamp conformation. Thus, Fdx acts like a doorstop, binding and stabilizing the open-clamp conformation, preventing the motions necessary to secure promoter DNA in the active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82, C6 are well-supported by the structural observations shown in Figure 5C-D. The 'doorstop' mechanism is a clear and well-supported inference from the structural data showing Fdx binding in the gap and the incompatibility of Fdx binding with the closed clamp conformation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "cf7267a1-4dc4-4e5d-98cb-e1a9e5763f93",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The RNAP switch regions act as hinges connecting the mobile clamp domain to the rest of RNAP. Other bacterial RNAP inhibitors bind switch regions and stabilize a closed-clamp conformation. The Fdx binding site does not overlap these other inhibitor sites, but Fdx interactions with Sw2, Sw3, and Sw4 suggest Fdx may influence clamp conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by citations to prior structural studies and by the current structural data. The comparison to other inhibitors provides important context, and the inference that Fdx influences clamp conformation (C67) is validated by the subsequent structural analysis showing Fdx stabilizes the open clamp.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "44b19265-d2de-463d-892e-58f26d510b96",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior structural studies established that clamp motions play important roles in transcription, with stable transcription-competent complexes correlating with closed-clamp conformations. Clamp motions are critical for promoter melting during RPo formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are well-supported by multiple citations to prior crystal structures, FRET studies, and cryo-EM structures. These claims provide essential context from the literature for interpreting the current findings on Fdx mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "996dc5ff-134b-4606-a5f3-8e6cbcf36a55",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The trapping of an open-clamp RNAP conformation by Fdx in cryo-EM suggests that Fdx inhibits transcription initiation by preventing clamp motions required for RPo formation or by not allowing RNAP to form stable transcription-competent complexes with nucleic acids. This mechanism is consistent with prior mechanistic analyses showing Fdx blocks promoter melting at an early step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90, C92 present a mechanistic model that is well-supported by the structural data and consistent with prior biochemical studies (C89, C90). The proposed mechanism logically follows from the structural observations, though direct biochemical validation of the specific steps would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "6b522c36-c806-47b5-be6e-39dce5eebfdb",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The results establish the molecular details of Fdx interactions with bacterial RNAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is a summary statement that is well-supported by the high-resolution structural data showing detailed Fdx-RNAP interactions at 2.9-3.4 \u00c5 resolution in the binding pocket.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "b05ccf8a-3eb0-4617-a802-6e695398d20f",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The actinobacteria general transcription factor RbpA contacts fidaxomycin, and this contact explains Fdx's strong effect on M. tuberculosis. RbpA is crucial to the sensitivity of Mtb to Fdx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C17 are well-supported by the structural data showing RbpANTT-Fdx contacts and the functional data showing loss of Fdx sensitivity upon RbpANTT deletion. The structural and functional evidence converge to support this key conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "a8842b6b-934d-468d-9712-fa115f7444b5",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The structural findings provide a platform for developing antimicrobials targeting the Fdx binding determinant and underscore the need to define structure-activity relationships using near-native states such as cryo-EM with the RbpA/\u03c3A-holo complex to guide development of effective Mtb treatments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94 and C95 are forward-looking statements about potential applications and methodological recommendations. While the structural platform has been established, the actual development of new antimicrobials and validation of the recommended approach remain to be demonstrated. These are reasonable implications but represent future work rather than current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "a029509d-6385-4ed7-93a4-24bede92c69b",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The \u03c3-finger plays indirect and direct roles in transcription initiation, including stimulating de novo phosphodiester bond formation, positioning template DNA, and acting as a major determinant of abortive initiation by blocking the elongating RNA transcript path before \u03c3 release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C38 are well-supported by citations to prior mechanistic studies. These claims provide important functional context for understanding the significance of RbpANTT interactions with the \u03c3-finger.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    },
+    {
+      "id": "f0fbaad3-f09c-4ea4-bb54-74064f223559",
+      "content_id": "99a62259-0bb0-4dcb-a37c-7fd9979c6cbc",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "RbpA is essential in Mtb and Msm, but strains carrying RbpA\u0394NTT are viable, though the Msm RbpA\u0394NTT strain grows considerably slower than wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C58 are supported by citation to prior genetic studies (C57) and by observations from the current zone of inhibition assays (C58). The growth defect is an important control showing that RbpA\u0394NTT affects cellular function beyond just Fdx sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:31:18.131139Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0e5d1977-35be-4ce6-bcc4-24c62f331cbb",
+      "result_id": "7b924f6d-76c1-4e3b-863c-97428d12b272"
+    },
+    {
+      "claim_id": "58f5babd-ef13-4782-a219-c64d7827e588",
+      "result_id": "7b924f6d-76c1-4e3b-863c-97428d12b272"
+    },
+    {
+      "claim_id": "9bfd3da5-e3e7-4ea4-99a9-7e4247c6f3a7",
+      "result_id": "7b924f6d-76c1-4e3b-863c-97428d12b272"
+    },
+    {
+      "claim_id": "8bdd024e-a731-4765-8c02-55ea8656d2bd",
+      "result_id": "7b924f6d-76c1-4e3b-863c-97428d12b272"
+    },
+    {
+      "claim_id": "108ed77c-a56b-4b5c-ad51-8db78a850f8d",
+      "result_id": "7b924f6d-76c1-4e3b-863c-97428d12b272"
+    },
+    {
+      "claim_id": "3edcefdc-492b-4fae-bc27-522720f5ed3c",
+      "result_id": "8d2fd686-954f-4417-95d0-147592943ccb"
+    },
+    {
+      "claim_id": "f5806503-952f-4ce8-830f-1e6362e3a3d3",
+      "result_id": "8d2fd686-954f-4417-95d0-147592943ccb"
+    },
+    {
+      "claim_id": "07dbb8a4-f3fd-4dd8-8501-445768909fec",
+      "result_id": "8d2fd686-954f-4417-95d0-147592943ccb"
+    },
+    {
+      "claim_id": "6cf61b18-5535-4685-ad73-b9fd1291c08d",
+      "result_id": "8d2fd686-954f-4417-95d0-147592943ccb"
+    },
+    {
+      "claim_id": "64577ddb-d618-445f-b4f3-46e71db786b2",
+      "result_id": "9f5439a8-b1fb-4d3a-9766-50e1362e871a"
+    },
+    {
+      "claim_id": "f0cfa2d8-c5f0-44df-809f-7bb89937dadd",
+      "result_id": "9f5439a8-b1fb-4d3a-9766-50e1362e871a"
+    },
+    {
+      "claim_id": "85d82bd7-e2e1-49c3-9d79-57dc9031c83e",
+      "result_id": "9f5439a8-b1fb-4d3a-9766-50e1362e871a"
+    },
+    {
+      "claim_id": "3ff1b5c1-a97c-4685-897c-a9c5c2596d40",
+      "result_id": "9f5439a8-b1fb-4d3a-9766-50e1362e871a"
+    },
+    {
+      "claim_id": "cfb63f1f-a7b1-429d-a226-d0e4a8489cb6",
+      "result_id": "ef192224-4df3-41a4-b718-ee1c17241097"
+    },
+    {
+      "claim_id": "ec2ef5cb-cf69-469c-af93-4a2e3c4ede91",
+      "result_id": "ef192224-4df3-41a4-b718-ee1c17241097"
+    },
+    {
+      "claim_id": "215ed0c6-f252-4cb6-85f8-63ae648dcbd7",
+      "result_id": "ef192224-4df3-41a4-b718-ee1c17241097"
+    },
+    {
+      "claim_id": "f05e6a30-e5dd-45a1-86df-24afbaa8238a",
+      "result_id": "ef192224-4df3-41a4-b718-ee1c17241097"
+    },
+    {
+      "claim_id": "016ff3a8-ed4f-4268-8131-278cb1cc10ef",
+      "result_id": "ef192224-4df3-41a4-b718-ee1c17241097"
+    },
+    {
+      "claim_id": "3fcdab24-4e59-4d5a-9da2-491b127c59de",
+      "result_id": "04a52e3b-0505-46a4-95eb-529502ab940b"
+    },
+    {
+      "claim_id": "e223a8de-497c-4104-9482-47069065fc06",
+      "result_id": "04a52e3b-0505-46a4-95eb-529502ab940b"
+    },
+    {
+      "claim_id": "f35e6171-e411-48ba-951c-d9ca77742910",
+      "result_id": "04a52e3b-0505-46a4-95eb-529502ab940b"
+    },
+    {
+      "claim_id": "f4193063-85b4-400e-b928-6fd20a6746b6",
+      "result_id": "3c0c2da0-3624-4011-9a9b-6f696aa02d67"
+    },
+    {
+      "claim_id": "08e0ad22-b807-43e1-84ba-5fb610220471",
+      "result_id": "3c0c2da0-3624-4011-9a9b-6f696aa02d67"
+    },
+    {
+      "claim_id": "d0c67ec3-4064-4741-ab7a-a1c1b9ee4410",
+      "result_id": "3c0c2da0-3624-4011-9a9b-6f696aa02d67"
+    },
+    {
+      "claim_id": "945134bf-5e8f-4fb1-b9a5-c5f551569752",
+      "result_id": "3c0c2da0-3624-4011-9a9b-6f696aa02d67"
+    },
+    {
+      "claim_id": "bc9df305-5f31-4953-bbfe-dd64a681d6da",
+      "result_id": "067cd88c-4543-4890-87b4-be5d059ecf7e"
+    },
+    {
+      "claim_id": "3632c8be-9db3-48db-a01b-aa3a8a2ea5b1",
+      "result_id": "067cd88c-4543-4890-87b4-be5d059ecf7e"
+    },
+    {
+      "claim_id": "2c46ec92-079d-45ee-97e2-959d0bc934af",
+      "result_id": "067cd88c-4543-4890-87b4-be5d059ecf7e"
+    },
+    {
+      "claim_id": "434d1a31-c1da-415d-bcb1-ca1b2f749466",
+      "result_id": "067cd88c-4543-4890-87b4-be5d059ecf7e"
+    },
+    {
+      "claim_id": "773088e0-0811-427e-86e4-98f7d828141a",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "97dff3aa-ff37-44ef-bf81-d4a31e9b4a24",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "04c2811f-fae5-4a88-bfea-37cd26e24e39",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "17b7d436-393d-4fc9-b14a-feb9c9fd59e2",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "80f218a6-d22d-4655-b39b-a1caf411505b",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "92ed7097-32cd-482f-b0b9-81b9f3329477",
+      "result_id": "25deef20-9ad9-401e-9e33-b8fbfff158f0"
+    },
+    {
+      "claim_id": "3bbc5d4f-c043-4ca3-8188-a04bdfb4e398",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "98060262-221c-4309-8e1a-13623f36f9c1",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "a25a16c9-e96d-4e6b-87fe-2c1b48702c22",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "82f44c46-d353-40a7-aa8a-8f08c2011f4f",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "953855ac-8e96-4f10-8eae-4e68e0397a3a",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "d350d559-ba4b-42d5-9549-03f77c3e6f79",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "e0b6513c-90cc-423c-ad5c-1c6475e1fddc",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "60051ac6-13aa-4be5-9f13-1551512ddf3d",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "35d724d5-dd73-4518-8e3c-b86b1adcb73b",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "f8d5466e-24eb-4985-9146-9b24f52b3f7d",
+      "result_id": "8be8debe-7b52-4cb0-97da-39cdd8e019e1"
+    },
+    {
+      "claim_id": "9a953d8f-181d-41be-8d7f-e03d829a5eae",
+      "result_id": "08fd4aef-bc77-4d20-8beb-c6db16bce414"
+    },
+    {
+      "claim_id": "3b15ae9f-95f9-4254-9495-fcd33b40865c",
+      "result_id": "08fd4aef-bc77-4d20-8beb-c6db16bce414"
+    },
+    {
+      "claim_id": "f3b1728a-c73f-4b6c-b832-72cef2fd1826",
+      "result_id": "08fd4aef-bc77-4d20-8beb-c6db16bce414"
+    },
+    {
+      "claim_id": "c1b0608c-9188-4978-bb2b-20cf53b2d8c5",
+      "result_id": "08fd4aef-bc77-4d20-8beb-c6db16bce414"
+    },
+    {
+      "claim_id": "f132ff4d-f317-4509-b74b-a79638a20eab",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "1d72d3f1-b5b7-489d-aa71-7aacde0e3469",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "4d85d818-b5a2-46b1-928a-f8db97d87cdf",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "2af971bc-82ca-4f3d-a84c-fd1053c87db9",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "b5d6f166-8b74-46e7-a808-c8e9f0c1822b",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "7c17b1bc-823b-486a-b21f-7d829d2b0780",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "25267abc-3fcf-4fd1-9154-33fa312f9d14",
+      "result_id": "3884e7cc-81a3-470e-b1e8-d92ec1b64ecb"
+    },
+    {
+      "claim_id": "516e9af0-1b7d-4e19-ba5b-540d143ebb87",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "d803dc9b-8d9a-47af-840a-2571492e4f3d",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "42afcf13-4358-4834-8db1-ae1abc1cab4e",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "27cf5dea-c478-40c5-b038-4e6760373934",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "5f9ae24e-b6d2-4483-bf66-c054646bd0f0",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "9e868720-15ae-45bc-a295-3a2f290807f2",
+      "result_id": "5cb3b8d5-ce4e-4069-838e-be5cef58437f"
+    },
+    {
+      "claim_id": "f9b69483-d3be-4860-bbe2-a7d53353b73b",
+      "result_id": "e0607aa4-6214-4255-b5d2-60cab7229650"
+    },
+    {
+      "claim_id": "1e635688-72c4-402e-96d0-a6b4a9bbe120",
+      "result_id": "e0607aa4-6214-4255-b5d2-60cab7229650"
+    },
+    {
+      "claim_id": "6ada903d-7704-4827-b433-f0ad534bd473",
+      "result_id": "e0607aa4-6214-4255-b5d2-60cab7229650"
+    },
+    {
+      "claim_id": "5dc4b050-5baa-4df3-8bc9-fcc3941af8e9",
+      "result_id": "e0607aa4-6214-4255-b5d2-60cab7229650"
+    },
+    {
+      "claim_id": "ea0503a8-c1b2-412d-8379-96f5e1992b7b",
+      "result_id": "e0607aa4-6214-4255-b5d2-60cab7229650"
+    },
+    {
+      "claim_id": "51483fe7-7114-4246-9c3c-9abe1406554c",
+      "result_id": "af88789e-f435-4f1b-bd0b-3a097feabb02"
+    },
+    {
+      "claim_id": "29ec9252-df5d-473a-bc10-77a29a837cc1",
+      "result_id": "af88789e-f435-4f1b-bd0b-3a097feabb02"
+    },
+    {
+      "claim_id": "668ff75b-9c51-4785-b75d-0fe6ae406e4d",
+      "result_id": "af88789e-f435-4f1b-bd0b-3a097feabb02"
+    },
+    {
+      "claim_id": "01198054-df43-4326-b485-64fb4c98c77d",
+      "result_id": "af88789e-f435-4f1b-bd0b-3a097feabb02"
+    },
+    {
+      "claim_id": "89b1b191-dfe3-4886-896d-3ffe56d1a2fa",
+      "result_id": "af88789e-f435-4f1b-bd0b-3a097feabb02"
+    },
+    {
+      "claim_id": "2e80bab1-9e01-4180-91f0-2ae9ac90cf12",
+      "result_id": "cf7267a1-4dc4-4e5d-98cb-e1a9e5763f93"
+    },
+    {
+      "claim_id": "153ee2db-828f-43f8-98db-c1b7d40016cf",
+      "result_id": "cf7267a1-4dc4-4e5d-98cb-e1a9e5763f93"
+    },
+    {
+      "claim_id": "eebb289d-b341-4116-8f2d-3c04882c9e78",
+      "result_id": "cf7267a1-4dc4-4e5d-98cb-e1a9e5763f93"
+    },
+    {
+      "claim_id": "80efd9af-19d7-45b4-96ea-df1eaf8da738",
+      "result_id": "cf7267a1-4dc4-4e5d-98cb-e1a9e5763f93"
+    },
+    {
+      "claim_id": "400e7807-1ffa-4f15-b370-6009ce830782",
+      "result_id": "44b19265-d2de-463d-892e-58f26d510b96"
+    },
+    {
+      "claim_id": "8185dac4-cc50-41ca-84d9-7c18ebb320e7",
+      "result_id": "44b19265-d2de-463d-892e-58f26d510b96"
+    },
+    {
+      "claim_id": "c19b4202-2653-4a99-b116-330a54c0eac6",
+      "result_id": "44b19265-d2de-463d-892e-58f26d510b96"
+    },
+    {
+      "claim_id": "710e3744-e9ec-412a-bfee-15eb56a5120e",
+      "result_id": "44b19265-d2de-463d-892e-58f26d510b96"
+    },
+    {
+      "claim_id": "6e176aa5-ffe9-4df9-a1a9-5d18adba78e8",
+      "result_id": "44b19265-d2de-463d-892e-58f26d510b96"
+    },
+    {
+      "claim_id": "fd02aef3-5bee-474d-963f-65dd7f14deb0",
+      "result_id": "996dc5ff-134b-4606-a5f3-8e6cbcf36a55"
+    },
+    {
+      "claim_id": "ad04c6aa-642c-4455-93da-89c0dc93de71",
+      "result_id": "996dc5ff-134b-4606-a5f3-8e6cbcf36a55"
+    },
+    {
+      "claim_id": "b67deb9d-5775-4d76-bc74-e98d2a002de0",
+      "result_id": "996dc5ff-134b-4606-a5f3-8e6cbcf36a55"
+    },
+    {
+      "claim_id": "51f83dd6-c021-49eb-a95d-78fc2a5c52e1",
+      "result_id": "996dc5ff-134b-4606-a5f3-8e6cbcf36a55"
+    },
+    {
+      "claim_id": "ad32b9d6-0788-4b53-8431-351d1f648c29",
+      "result_id": "6b522c36-c806-47b5-be6e-39dce5eebfdb"
+    },
+    {
+      "claim_id": "fde9b47f-3ea1-4a92-8c02-1e57bf5fcbae",
+      "result_id": "b05ccf8a-3eb0-4617-a802-6e695398d20f"
+    },
+    {
+      "claim_id": "a3acb622-5a60-43f6-8b53-c53186b82084",
+      "result_id": "b05ccf8a-3eb0-4617-a802-6e695398d20f"
+    },
+    {
+      "claim_id": "e58cabce-13c8-4e3f-b035-695741169a3d",
+      "result_id": "b05ccf8a-3eb0-4617-a802-6e695398d20f"
+    },
+    {
+      "claim_id": "2c927c05-dc20-4f57-b82b-4915dd6a8c3d",
+      "result_id": "a8842b6b-934d-468d-9712-fa115f7444b5"
+    },
+    {
+      "claim_id": "68473e4a-aeee-480c-ba74-8bba3ffe476b",
+      "result_id": "a8842b6b-934d-468d-9712-fa115f7444b5"
+    },
+    {
+      "claim_id": "a4fb05a8-af2f-4bf6-aee1-cdead7c48065",
+      "result_id": "a029509d-6385-4ed7-93a4-24bede92c69b"
+    },
+    {
+      "claim_id": "e25c18e3-3afe-467a-b88e-814618816fca",
+      "result_id": "a029509d-6385-4ed7-93a4-24bede92c69b"
+    },
+    {
+      "claim_id": "d1f76651-99c5-4be6-ab60-a410f4b820b0",
+      "result_id": "f0fbaad3-f09c-4ea4-bb54-74064f223559"
+    },
+    {
+      "claim_id": "4309d008-c337-43d6-9d1b-7de968b6ee29",
+      "result_id": "f0fbaad3-f09c-4ea4-bb54-74064f223559"
+    }
+  ],
+  "comparisons": []
+}

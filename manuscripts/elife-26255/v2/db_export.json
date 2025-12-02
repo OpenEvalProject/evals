@@ -1,0 +1,1450 @@
+{
+  "submission": {
+    "id": "b268b14a-f0e8-42cf-bed9-02985dea7912",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:14:17.663091Z",
+    "updated_at": "2025-12-01T20:14:17.663091Z"
+  },
+  "content": [
+    {
+      "id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "submission_id": "b268b14a-f0e8-42cf-bed9-02985dea7912",
+      "content_type": "manuscript",
+      "content_text": "# Genome-wide identification of lineage and locus specific variation associated with pneumococcal carriage duration\n\n## Authors\n\n- John A Lees<sup>1</sup> ([ORCID: 0000-0001-5360-1254](https://orcid.org/0000-0001-5360-1254)) \u2020\n- Nicholas J Croucher<sup>2</sup> ([ORCID: 0000-0001-6303-8768](https://orcid.org/0000-0001-6303-8768))\n- David Goldblatt<sup>3</sup>\n- Fran\u00e7ois Nosten<sup>4</sup> ([ORCID: 0000-0002-7951-0745](https://orcid.org/0000-0002-7951-0745))\n- Julian Parkhill<sup>1</sup>\n- Claudia Turner<sup>4</sup>\n- Paul Turner<sup>4</sup> ([ORCID: 0000-0002-1013-7815](https://orcid.org/0000-0002-1013-7815))\n- Stephen D Bentley<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Infection Genomics Wellcome Trust Sanger Institute Hinxton United Kingdom\n2. Department of Infectious Disease Epidemiology St. Mary\u2019s Campus, Imperial College London London United Kingdom\n3. Institute of Child Health University College London London United Kingdom\n4. Shoklo Malaria Research Unit, Mahidol-Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine Mahidol University Mae Sot Thailand\n5. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nStreptococcus pneumoniae is a leading cause of invasive disease in infants, especially in low-income settings. Asymptomatic carriage in the nasopharynx is a prerequisite for disease, but variability in its duration is currently only understood at the serotype level. Here we developed a model to calculate the duration of carriage episodes from longitudinal swab data, and combined these results with whole genome sequence data. We estimated that pneumococcal genomic variation accounted for 63% of the phenotype variation, whereas the host traits considered here (age and previous carriage) accounted for less than 5%. We further partitioned this heritability into both lineage and locus effects, and quantified the amount attributable to the largest sources of variation in carriage duration: serotype (17%), drug-resistance (9%) and other significant locus effects (7%). A pan-genome-wide association study identified prophage sequences as being associated with decreased carriage duration independent of serotype, potentially by disruption of the competence mechanism. These findings support theoretical models of pneumococcal competition and antibiotic resistance.\n\n## Introduction\n\nStreptococcus pneumoniae is a human pathogen that can cause diseases such as pneumonia, otitis media and meningitis. Pneumococcal disease burden is highest in children (O'Brien et al., 2009). For disease to be caused pneumococci must first transmit to the host, colonise the nasopharynx and finally cross into a normally sterile site. The pneumococcus spends most of the transmission cycle in the nasopharynx, and so understanding and predicting the amount of time spent in this niche is critical for understanding this bacterium's epidemiology, and therefore controlling transmission (Abdullahi et al., 2012a; Melegaro et al., 2007).\n\nThe nasopharynx is a complex niche in which each pneumococcal genotype must tackle a wide range of factors including host immune defence (McCool et al., 2002), other bacterial species (Pericone et al., 2000), and other pneumococcal lineages (Auranen et al., 2010; Cobey and Lipsitch, 2012) in order to maintain the genotype's population. The average nasopharyngeal duration period is therefore affected by a large number of factors, which may, themselves, interact.\n\nOne factor that is known to strongly associate with carriage duration is serotype: as capsular polysaccharides are important in bacterial physiology and determining host immune response, different serotypes have different clearance and acquisition rates (Abdullahi et al., 2012a; Hill et al., 2010; H\u00f6gberg et al., 2007; Melegaro et al., 2004;\u00a0Turner et al., 2012). Additionally, a range of other proteins have been identified as critical to the colonisation process (Kadioglu et al., 2008), some of which exhibit similar levels of diversity to the capsule polysaccharide synthesis locus (Iannelli et al., 2002; Jedrzejas et al., 2001). However, the overall and relative contributions of these sequence variations to carriage rate have not yet been characterised. In addition variation of pathogen protein sequence, accessory genes and interaction effects between genetic elements may also have as yet unknown effects on carriage duration.\n\nChanges in average carriage duration have been shown to be linked with recombination rate (Chaguza et al., 2016), which has been found to correlate with antibiotic resistance (Hanage et al., 2009) and invasive potential (Chaguza et al., 2016). The carriage duration by different serotypes is widely used in models of pneumococcal epidemiology, and consequently is important in evaluating the efficacy of the pneumococcal conjugate vaccine (PCV) (Melegaro et al., 2007; Weinberger et al., 2011). Additionally, modelling work has proposed that if alleles exist which alter carriage duration, these explain the long standing puzzle of how antibiotic-resistant and sensitive strains stably coexist in the population (Lehtinen et al., 2017). Measurement of carriage duration and the analysis of its variance beyond the resolution of serotype will have important consequences for these models.\n\nWe sought to determine the overall importance of the pathogen genotype in carriage duration in a human population, and to identify and quantify the elements of the genome responsible for the variation in carriage duration. By combining epidemiological modelling of longitudinal swab data with and genome wide association study methods on the connected sequences\u00a0(Figure 1), we made heritability estimates for carriage duration. We further partitioned the heritability into contributions from lineage and locus effects (Earle et al., 2016) to quantify the variation caused by each individual factor.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig1-v2.jpg)\n\n**Figure 1.:** We start with serotype swab data on 598 children from two cohorts, taken every month after birth for two years. For all samples we fitted the transition and emission probabilities of a continuous time hidden Markov model for each serotype. Then, for each child, we used these parameters were then used to infer the most likely carriage durations. We matched carriage episodes with resistance and genomic data for 2157 episodes to draw conclusions on the basis of variation in this epidemiological parameter.\n\n## Results\n\n### Ascertainment of carriage episode duration using epidemiological modelling\n\nWe first estimated carriage duration from longitudinal swab data available for the study population. For 598 unvaccinated children up to 24 swabs taken over a two year period were available, an extension on the previous study (Turner et al., 2012, 2013a). We only considered swabs from infants in the study, as mothers did not have sufficient sampling resolution relative to their average length of carriage to determine carriage duration. Furthermore, the immune response of mothers to bacterial pathogens is different to children (Mar\u00f3di, 2006), leading to shorter carriage durations (Gritzfeld et al., 2014).\n\nTo estimate carriage duration from the longitudinal swab data we constructed a set of hidden Markov models (HMMs) with hidden states corresponding to whether a child was carrying a serotype at a given time point, and observed states corresponding to whether a positive swab was observed for this serotype at this time point.\n\nThe most general model for the swab data would be a vector with an entry of 0 or 1 for every possible serotype (of 56 observed in the population), corresponding to whether each serotype was observed in the swab at each time point. However, the number of parameters to estimate in this model (with over 6 million states) is much larger than the number of data points (around 14000), and in particular some serotypes have very few positive observations. Instead, we modelled each serotype separately.\n\nThe models fitted, and their permitted transitions and emissions are shown in Figure 2. In model one, observation $i$ emits state 2 if positively swabbed for the serotype, and state 1 otherwise. The unobserved states correspond to the child \u2018carrying\u2019 and being \u2018clear\u2019 of the serotype respectively. We assume swabs have a specificity of one, so do not show positive culture when the child is clear of the carried serotype; we therefore set the coefficient for the chance of observing positive culture when no bacteria are present to zero ($e_{21}=0$ in the emission matrix). Model two adds a third state of \u2018multiple carriage\u2019 which is occupied when the serotype and at least one other are being carried. Both models were compared with a version which allows the parameters to covary with whether the child has carried pneumococcus previously. Model three accounts for this explicitly by having separate states and emissions based on whether carriage has previously been observed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig2-v2.jpg)\n\n**Figure 2.:** We fitted three different models to the processed time-series data with states, allowed transitions and emissions as shown. We refitted each model allowing the transitions probabilities to covary with the age of the child and whether the child had carried pneumococcus previously. For the converged model the Akaike information criterion (AIC) is shown for the original fit, and when including these covariates (AICcovar).\n\nWe applied all the models to 19F carriage episodes, as these had the most data available, and calculated the Akaike information criterion (Akaike, 1974) for each model that converged. Only the simplest model (model one) converged, as judged by having a positive-definite Hessian and a converged BOBYQA run. The more complex models had lower log-likelihoods: as extensions of the simpler model they should have higher log-likelihoods, so this results was not consistent with model convergence. We tried fitting models two and three using a fixed false positive values slightly greater than zero, this lead to better log-likelihoods, but the models still didn\u2019t converge. This failure of the more complex models is probably because most children in the study immediately enter the carrying state, and episodes of dual carriage (when split up by serotype) are rare. Therefore there were not enough events between these carriage states to estimate to the transition and emission intensities, without sensitivity to initial conditions during the fitting.\n\nWe then fitted the best performing model in this test for all serotypes separately. 6A and 6C were treated as a single serotype, as they were not always distinguished in the course of the study. The models for 19F, 23F, 6A/C, 6B, 14 and non-typable (NT) converged, but other serotypes did not have enough observations to successfully fit the parameters of the model. For these less prevalent serotypes we used the transition and emission parameters from the 19F model fitted with the correct observations when reconstructing the most likely route taken through the hidden states. Results were inspected to ensure this did not cause systematic overestimation when compared with previous studies.\n\nWe found that the fit for NT swabs produced results which overestimated carriage duration when compared to previously reported estimates. The best fit to the model overestimated the $e_{21}$ parameter, which measures the false negative rate of swabbing, in favour of reduced transition intensities. We therefore fitted the model again, fixing this rate at 0.12. We based this figure on non-typable Streptococcus pneumoniae abundance as defined by 16S survey sequencing. At 1% proportional abundance in the sample, 12% came out as culture negative (Table 1).\n\n**Table 1.**\n Success of culturing unencapsulated S. pneumoniae.Based on having >1% abundance of 16S reads showing the bacteria as being present, 44/361 true positive swabs were not successfully cultured.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Abundance</th>\n      <th>Culture positive</th>\n      <th>Number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>&gt;1%</td>\n      <td>Cultured</td>\n      <td>361</td>\n    </tr>\n    <tr>\n      <td>&gt;1%</td>\n      <td>Not cultured</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>&lt;1%</td>\n      <td>Cultured</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <td>&lt;1%</td>\n      <td>Not cultured</td>\n      <td>54</td>\n    </tr>\n  </tbody>\n</table>\n\nFrom all the swab data, we estimated that there were a total of 4382 carriage episodes (7.3 per child), of which 2254 had a complete set of AMR data available (Figure\u00a03). After removing ten outlier observations from swabs taken accidentally during disease, we were able to match 2157 sequenced genomes with a carriage duration. Duration was positively skewed due to some observations of very long carriage times. We therefore took a monotonic transform of the carriage duration using warped-lmm to maximise the study's power to discover associations and estimate heritability (Figure 3). This uses a sum over three nonlinear step functions, plus a linear term, to transform the residuals into Gaussians (Snelson et al., 2004).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig3-v2.jpg)\n\n**Figure 3.:** Panel (a) shows a histogram of the inferred carriage duration, (b) shows this result after the natural logarithm is taken, and (c) after the warping function is applied.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Panel (a) shows prior to outlier removal, (b) after outlier removal as produced by plot.lm() in R. Points deviating from normal residuals (top right plot), and at high leverage (bottom right plot) were removed. These observations appeared to be due to swabs not taken at the prescribed monthly intervals.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Panel (a) the inferred carriage duration, (b) after the natural logarithm is taken, and (c) after the warping function is applied.\n\n### Overall heritability of carriage duration is high\n\nThe variation in carriage duration $\\sigma_{P}^{2}$ is partly caused by variance in pneumococcal genetics, and variance in other potentially unknown factors such as host age and host genetics. It is common to write this sum as two components: genetic effects $\\sigma_{G}^{2}$ and environmental effects $\\sigma_{E}^{2}$. The proportion of the overall variation which can be explained by the genetics of the bacterium is known as the broad-sense heritability $H^{2}=\\frac{\\sigma_{G}^{2}}{\\sigma_{G}^{2}+\\sigma_{E}^{2}}$. Variants which are directly associated with carriage duration independently of other variants (non-epistatic effects) contribute to the narrow-sense heritability $h^{2}$, which is smaller than the overall broad-sense heritability (Visscher et al., 2008).\n\n$H^{2}$ can be estimated by linear regression on the phenotype of donor-recipient pairs which nearly share their genetics (Fraser et al., 2014). However in this dataset we were only able to confidently identify five transmission events, which was not enough to apply this method. Alternatively, analysis of variance of the phenotype between pathogens with similar genetics can be used to estimate heritability (Anderson et al., 2010). By applying this to phylogenetically similar bacteria (Figure\u00a04), we estimated that $H^{2}=0.634$ (95% CI 0.592\u20130.686). This implies that the genetics of S. pneumoniae is an important factor in determining carriage duration in this population. If environmental conditions are associated with streptococcal genotype between populations (such as host vaccination status) the heritability estimate may differ.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig4-v2.jpg)\n\n**Figure 4.:** Using the carriage duration as a continuous trait, the ancestral state at every node of the rooted phylogeny was reconstructed. Red branches are carriage for a short time, blue for a long time. Clusters identified in previous analysis have been labelled.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** As Figure 4, but using the warped carriage duration. Blue branches are carriage for a short time, yellow for a long time.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** A cut-off for heritability estimation was chosen at 0.04, under which a clear second maxima corresponds to closely related isolates on the tree.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** For each of the three events analysed the subtree containing the switch is shown on the left. For each isolate within the subtree, carriage duration (on a roughly exponential scale), warped carriage duration (on a roughly linear scale) and serotype are shown as coloured bars aligned with the tip.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Panel a) shows the value of each predictor on the y-axis for different values of the $\u2113_{1}$ penalty $\\lambda$ on the x-axis, which increases from left to right. The labels along the top are the number of predictors remaining in the model for each $\\lambda$. Panel b) shows the results of leave-one-out cross validation on the mean-squared error, along the same x-scale. The $\\lambda$ at minimum error is shown by the left dashed line, and the $\\lambda$ within one standard error is shown by the right dashed line.\n\nA lower bound on $h^{2}$ can be calculated by fitting a linear mixed model through maximum likelihood to common SNPs ($h_{SNP}^{2}$) (Lee et al., 2011; Manolio et al., 2009). We used the model in warped-lmm (Fusi et al., 2014) to estimate $h_{SNP}^{2}$ for carriage duration data, yielding an estimate of 0.445, consistent with our estimate for $H^{2}$.\n\n### Serotype and drug resistance explain part of the narrow-sense heritability\n\nAfter calculating the overall heritability, we wished to determine the amount that the specific variation in the pathogen genome contributes to changing carriage duration. In the context of genome wide association studies (GWAS) in bacteria strong linkage-disequilibrium (LD) is present across the entire genome, making it difficult to pinpoint variants associated with carriage duration and not just present in the background of longer or shorter carried lineages (Chen and Shapiro, 2015). In S. pneumoniae, serotype and antibiogram are correlated with the overall genome sequence (Brueggemann et al., 2003; Chewapreecha et al., 2014a; Enright and Spratt, 1998). If these factors are associated with carriage duration, large sets of variants which define long-carried and short-carried lineages will be correlated with carriage duration in a naive association test (Chen and Shapiro, 2015; Read and Massey, 2014).\n\nA distinction has therefore been made between variants which evolve convergently and affect a phenotype independently of lineage \u2013 termed locus effects \u2013 to those which are collinear with a genotype which is associated with the phenotype, termed lineage effects (Earle et al., 2016). Locus effects may be associated with a change in carriage duration due to convergent evolution (which may occur through recombination between lineages). In such regions, the causal loci and corresponding phenotypic effects are easier to identify (Power et al., 2017). Linear mixed models can be used to find these variants which are associated with a bacterial phenotype independent of lineage; discovery of homoplasic and polygenic variation associated with the phenotype across the entire tree is well powered (Earle et al., 2016).\n\nWhile the high heritability suggests many pathogen variants do affect carriage duration, it does not give information on how many of these will be locus or lineage effects. We mapped carriage duration onto the phylogeny, reconstructing the ancestral state at each node. Consistent with the high heritability of carriage duration we found that carriage length was clearly stratified by lineage (Figure\u00a04): we calculated Pagel\u2019s lambda as 0.56 ($p<10^{-10}$). We also modelled the evolution of carriage duration along the tree using an Ornstein-Uhlenbeck model, and found that lineage genetics was significantly correlated with the trait (LRT\u00a0=\u00a0952; $p<10^{-10}$)\n\nWe first tested for the association of serotype with carriage duration using lasso regression and with a linear-mixed model (LMM). Serotype is correlated with sequence type (Croucher et al., 2011) and has previously been associated with differences in carriage duration (Abdullahi et al., 2012a; Turner et al., 2012). We also included resistance to six antibiotics, the causal element to some of which are known to be associated with specific lineages (Lees et al., 2016). These are therefore possible lineage effects which would be unlikely to be found associated under a model which adjusts for population structure (Chen and Shapiro, 2015).\n\nNot all serotypes and resistances may have an effect on carriage duration, or there may not be enough carriage episodes observed to reach significance. As including extra predictors in a linear regression always increases the variance explained, we first performed variable selection using lasso regression (Efron et al., 2004) to obtain a more reliable estimate of the amount of variation explained. Where a resistance and serotype are correlated and both associated with a change in carriage duration, this will produce a robust selection of the predictors (Hebiri and Lederer, 2012).\n\nThe selected predictors and their effect on carriage duration are shown in Table\u00a02. The total variance explained by these lineage factors was 0.19, 0.178 for serotype alone and 0.092 for resistance alone. When we used genomic partitioning of variance components these were instead estimated to be 0.253, 0.135 and 0.113, respectively. We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant ($\\alpha<0.05$) increase in carriage duration and being non-typable caused a significant decrease.\n\n**Table 2.**\n Coefficients from lasso regression model of carriage duration.The mean (intercept) corresponds to a sensitive 6A/C carriage episode, and different serotypes and resistances are perturbations about this mean. Positive effects are expected to have a greater magnitude, due to the positive skew of carriage duration. Rows in bold were significant predictors in the covariance test.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Factor</th>\n      <th>Effect on carriage duration (days)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mean (intercept)</td>\n      <td>59.5</td>\n    </tr>\n    <tr>\n      <td>Erythromycin resistance</td>\n      <td>+7.5</td>\n    </tr>\n    <tr>\n      <td>Tetracycline resistance</td>\n      <td>+3.0</td>\n    </tr>\n    <tr>\n      <td>Trimethoprim resistance</td>\n      <td>+2.9</td>\n    </tr>\n    <tr>\n      <td>Clindamycin resistance</td>\n      <td>+1.8</td>\n    </tr>\n    <tr>\n      <td>Penicillin intermediate resistance</td>\n      <td>+1.3</td>\n    </tr>\n    <tr>\n      <td>Serotype 19F</td>\n      <td>+46.9</td>\n    </tr>\n    <tr>\n      <td>Serotype 23F</td>\n      <td>+21.0</td>\n    </tr>\n    <tr>\n      <td>Serotype 6B</td>\n      <td>+16.2</td>\n    </tr>\n    <tr>\n      <td>Serotype 14</td>\n      <td>+7.2</td>\n    </tr>\n    <tr>\n      <td>Serotype 21</td>\n      <td>+1.6</td>\n    </tr>\n    <tr>\n      <td>Serotype 19B</td>\n      <td>\u22120.1</td>\n    </tr>\n    <tr>\n      <td>Serotype 18C</td>\n      <td>\u22121.9</td>\n    </tr>\n    <tr>\n      <td>Serotype 29</td>\n      <td>\u22124.3</td>\n    </tr>\n    <tr>\n      <td>Serotype 3</td>\n      <td>\u22124.5</td>\n    </tr>\n    <tr>\n      <td>Serotype 4</td>\n      <td>\u22127.2</td>\n    </tr>\n    <tr>\n      <td>Serotype 24F</td>\n      <td>\u22128.5</td>\n    </tr>\n    <tr>\n      <td>Non-typable (NT)</td>\n      <td>\u221212.3</td>\n    </tr>\n    <tr>\n      <td>Serotype 5</td>\n      <td>\u221218.6</td>\n    </tr>\n  </tbody>\n</table>\n\nPrevious studies have used isogenic strains to look for effects of serotype of colonisation and carriage duration independent of genetic background. Resistance to killing (Weinberger et al., 2009), growth phenotype (Hathaway et al., 2012) and resistance to complement (Melin et al., 2010) have all been shown to affect carriage through serotype rather than genetic background. Conversely, some bacterial genetic variation has been shown to be able to affect colonisation independent of serotype (Khan et al., 2014).\n\nWe therefore wished to test whether the detected effect of serotype and resistance on carriage duration was entirely mediated through their covariance with lineage, or whether they are independently associated with carriage duration. We first looked for differences in duration over three recent capsule gain/loss events; if there is an effect of serotype independent of genetic background, these would be predicted have the largest difference between serotypes while controlling for the relatedness of isolates. No significant difference in duration was seen between isolates with or without capsule within the same lineage ($p=0.39$; Figure\u00a04).\n\nHowever, as these events were limited in number, assumed genetic independence within the clade and occurred only in part of the population, we also performed the same regression as above while also including lineage (defined by discrete population clusters) as a predictor. This therefore allows serotypes which appear in different population clusters to distinguish whether lineage or serotype had a greater effect on carriage duration. The covariance test found that 19F, erythromycin resistance and being non-typable had significant effects on the model (in that order). As these terms enter the model before any lineage specific effect, this suggested these serotypes and resistances are associated with variation in carriage duration independent of background genotype\n\nThis lasso-based analysis may be vulnerable to confounding from unmeasured variables which may be associated with the explanatory variables (serotype and resistance). To fully account for the effect of the bacterial genome rather than relying on discrete clusters as covariates in the regression, we performed regression of these lineage effects under an LMM where the relatedness between strains was instead included as a random effect. The predictors had the same order of significance, but only serotype 19F reached genome-wide significance ($p=3.8\\times10^{\u22127}$).\n\nTogether, this suggests that the main lineage effect on carriage duration is the serotype, but only some serotypes (19F) have an association independent of genetic background. We also found that erythromycin resistance may be significantly associated with an increased carriage duration. While being a relatively uncommon treatment in this setting (3% of treatments captured), we did not find that other antibiotics were associated. This may be because erythromycin resistance would be expected to cause an almost four order magnitude increase in minimum inhibitory concentration (MIC), whereas other resistance acquisitions have a much smaller effect.\n\nAdditionally, we calculated the mean sojourn times (average length of time children are expected to remain in the carrying state of the model with the given serotype) and mean number of carriage episodes from the fit to the HMM for commonly carried serotypes (), which gave results similar to the regression performed above. These estimates are comparable to the previous analysis on a subset of these samples. The majority of carriage episodes were due to five of the seven paediatric serotypes (Shapiro and Austrian, 1994), or non-typeable isolates. The results show 19F, 23F and 14 were carried the longest, 6A/C and 6B for intermediate lengths, and NT the shortest.\n\n**Table 3.**\n Mean length of carriage, and expected number of carriage episodes within the first two years of life.Only serotypes with enough data for the HMM fit to converge are shown. Starred observations have a standard error which is larger than the estimated value, indicating low confidence in the estimate.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Serotype</th>\n      <th>Sojourn time (days)</th>\n      <th>Expected number of infections</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>292*</td>\n      <td>0.85</td>\n      <td>19F</td>\n    </tr>\n    <tr>\n      <td>112</td>\n      <td>0.83</td>\n      <td>23F</td>\n    </tr>\n    <tr>\n      <td>76.4</td>\n      <td>0.88</td>\n      <td>6A/C</td>\n    </tr>\n    <tr>\n      <td>114</td>\n      <td>0.75</td>\n      <td>6B</td>\n    </tr>\n    <tr>\n      <td>137*</td>\n      <td>0.58</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>40.6</td>\n      <td>2.05</td>\n      <td>NT</td>\n    </tr>\n  </tbody>\n</table>\n\nThe overall picture of the first two years of infant carriage is one containing one or two long (over 90 day) carriage episodes of a common serotype (6A/C, 6B, 14, 19F, 23F) and around two short (under a month) carriage episodes of non-typable S. pneumoniae. Colonisation by other serotypes seem to cause slightly shorter carriage episodes, though the relative rarity of these events naturally limits the confidence in this inference. That some serotypes are rarer and carried for shorter time periods may be evidence of competitive exclusion (Hardin, 1960; Trzci\u0144ski et al., 2015), as fitter serotypes quickly replace less fit serotypes thus leading to reduced carriage duration. The calculated mean carriage duration of NT pneumococci is similar to the minimum resolution we were able to measure by the study design, which suggests carriage episodes may actually be shorter than one month. Unfortunately the only existing study with higher resolution did not check for colonisation by NT pneumococci (Abdullahi et al., 2012a).\n\nThese estimates are similar to previous longitudinal studies in different populations (Hill et al., 2010; H\u00f6gberg et al., 2007; Melegaro et al., 2007), though against the Kilifi study our estimates are systematically larger. This may be due to the lower resolution swabbing we performed, or may be because the previous study was unable to resolve multiple carriage (11% of positive swabs). While our heritability estimates are specific to this population due to differences in host, vaccine deployment and transmission dynamics, the similarity of the estimates of serotype effect to those from different study populations suggests our results may be somewhat generalisable.\n\n### Additional loci identified by genome-wide association\n\nTo search for locus effects as discussed above, we applied an LMM to all the common SNPs and k-mers in the dataset. The results for SNPs are shown in Figure 5 and Table 4, with 14 loci reaching suggestive significance and two reaching genome-wide significance (top hit $\\beta=0.17$; $p=2.1\\times10^{\u22127}$; MAF = 1%). We also found that 424 k-mers reached genome-wide significance (top hit $\\beta=0.11$; $p=2.1\\times10^{\u221212}$; MAF = 2%), which we filtered to 321 k-mers over 20 bases long to remove low specificity sequences (Figure 5). To determine their function, we mapped these k-mers to the coordinates of reference sequences.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-v2.jpg)\n\n**Figure 5.:** The significance of each SNP\u2019s association with carriage duration against its position in the ATCC 700669 genome is shown. The red line denotes genome-wide significance ($\\alpha<0.05$ Bonferroni corrected with 92487 unique tests), and the blue line suggestive significance (2.3 orders of magnitude below significant, following convention). Loci reaching suggestive significance are labelled with their nearest annotation, as in Table\u00a04.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The SNPs and p-values as shown in Figure\u00a05, however the x-axis is now ordered by strength of association of lineage (defined by principal component) with carriage duration. The left most lineages are those most associated, those in black/grey were not significantly associated. SNPs are coloured by the lineage they are most associated with.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The lengths of those k-mers reaching significance in the LMM analysis. Lengths below 20 bases were filtered from downstream analysis, due to having low specificity.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** For fast-lmm results on (a) SNPs passing quality filters and (b) k-mers of all lengths passing quality filters.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** As in Figure\u00a05, but enlarging the phage region found to be significant. SNPs are coloured by their LD with the lead SNP (the highest P-value in the region plotted), and are crosses if they are predicted to cause a change in coding sequence. Panel (a) shows LD in relation to the lead SNP at position 1516350. Panel (b) plots genes in the region, with the start and end of the phage genes labelled. Panel (c) shows LD in relation to the second SNP signal at position 1517063.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Histogram of the length of top hits against a database of phage sequence by blastn. Isolates with\u00a0>5000 bp hits were defined as having phage present.\n\n**Table 4.**\n SNP Locus effects at genome-wide and suggestive significance.Co-ordinates are with respect to the ATCC 700669 reference genome, and are for the lead SNP in each locus after LD-pruning. Effect sizes are for the warped phenotype.Table 4\u2013source data 1.Association results for SNPs, from fast-lmm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Co-ordinate</th>\n      <th>Nearest annotation</th>\n      <th>Effect size</th>\n      <th>P-value</th>\n      <th>Significance level</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>6753</td>\n      <td>trcF</td>\n      <td>\u22120.12</td>\n      <td>6.2\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>254312</td>\n      <td>pepS</td>\n      <td>\u22120.11</td>\n      <td>6.4\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>303239</td>\n      <td>IS630-Spn1 transposase</td>\n      <td>0.078</td>\n      <td>9.2\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>333632</td>\n      <td>pbp1a</td>\n      <td>0.079</td>\n      <td>2.5\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>971849</td>\n      <td>SPRITE repeat region</td>\n      <td>0.078</td>\n      <td>9.4\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1013978</td>\n      <td>IS630-Spn1 transposase</td>\n      <td>0.11</td>\n      <td>3.7\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1073185</td>\n      <td>FM211187.3435 (pseudogene)</td>\n      <td>0.086</td>\n      <td>3.3\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1308604</td>\n      <td>aroA</td>\n      <td>\u22120.27</td>\n      <td>3.8\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1472933</td>\n      <td>Upstream of fms</td>\n      <td>\u22120.23</td>\n      <td>5.3\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1473700</td>\n      <td>putative glutathione S-transferase</td>\n      <td>\u22120.16</td>\n      <td>8.8\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1515497</td>\n      <td>hypothetical phage protein</td>\n      <td>\u22120.099</td>\n      <td>5.2\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1516293</td>\n      <td>putative phage Holliday junction resolvase</td>\n      <td>\u22120.10</td>\n      <td>5.1\u00d710-6</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1516350</td>\n      <td>putative phage Holliday junction resolvase</td>\n      <td>\u22120.12</td>\n      <td>2.1\u00d710-7</td>\n      <td>Genome-wide significant</td>\n    </tr>\n    <tr>\n      <td>1517063</td>\n      <td>phage protein</td>\n      <td>\u22120.11</td>\n      <td>3.3\u00d710-7</td>\n      <td>Genome-wide significant</td>\n    </tr>\n    <tr>\n      <td>1613197</td>\n      <td>pbp2b</td>\n      <td>\u22120.21</td>\n      <td>4.8\u00d710-5</td>\n      <td>Suggestive</td>\n    </tr>\n    <tr>\n      <td>1813192</td>\n      <td>thioesterase superfamily protein</td>\n      <td>\u22120.12</td>\n      <td>4.8\u00d710-6</td>\n      <td>Suggestive</td>\n    </tr>\n  </tbody>\n</table>\n\nThe only genome-wide significant SNP hits are synonymous changes (MAF\u00a0=\u00a01%)\u00a0in the replication module of the prophage in the ATCC 700669 genome\u00a0(Croucher et al., 2009), a highly variable component of the pneumococcal genome (Croucher et al., 2014a) (Figure\u00a05). The LD structure suggested there were two separate significant signals found in this region. We therefore performed another GWAS conditioning on the top hit to test if there was a second independent signal, but found that the second hit in this region was no longer significant (position 1526024; $p=2.2\\times10^{-4}$). The current data is therefore consistent with only a single significant hit to prophage.\n\nThe most significant k-mer hits were also located in phage sequence (MAF 2%) and were associated with a reduced duration of carriage. As these mobile genetic elements are less weakly population stratified than other regions of the genome, they are easier to find as locus effects. The LD in this region is less than in the rest of the genome, as prophage sequence is highly variable within S. pneumoniae lineages (Croucher et al., 2014a). Multiple independent phage variants may therefore affect carriage duration, which will increase their significance using a LMM. Indeed, the significant results from the LMM (top SNP $p=2.1\\times10^{-7}$; top k-mer $p=2.1\\times10^{-12}$) are not significant (top SNP $p=5.1\\times10^{-6}$; top k-mer $p=5.7\\times10^{-8}$) under a model of association using a linear regression with the first 30 principal components as fixed effects to control for population structure rather than random effects, and are strongly associated with the population structure components of the model (highest association $p=5.2\\times10^{-75}$ with PC 2).\n\nWe postulated that presence of any phage in the genome may cause a reduction in carriage duration. By using the presence of phage as a trait under the same linear mixed model, we however found no evidence of association when correcting for population structure (p=0.35). These results are therefore evidence that infection with a specific phage sequence is associated with a slight decrease in carriage duration. A similar result has previously been found in a genome-wide screen in Neisseria meningitidis, where a specific phage sequence was found to affect the virulence and epidemiology of strains (Bille et al., 2005; Bille et al., 2008). Additionally, previous in vivo tests have shown phage elements to cause a fitness decrease of S. pneumoniae during carriage (DeBardeleben et al., 2014).\n\nThe genetic polymorphisms in the prophage associated with changes in carriage duration, found in 2% of viral sequences, are found within coding sequences inside the phage replication module (Romero et al., 2009). It is unlikely the specific variants of these proteins cause a significant difference in cell phenotype, because they are only highly expressed after the prophage is activated, and cell lysis is typically imminent. One explanation for these results is that a subpopulation of prophage do not cause a significant decrease in their host bacterium's carriage duration, which could be due to beneficial \u2018cargo\u2019 genes. Yet previous surveys of pneumococcal prophage have found little evidence of these elements carrying such sequences (Croucher et al., 2014a; Romero et al., 2009). One phage protein that has been found to alter the bacterial phenotype is PblB, a phage structural protein that can also mediate bacterial adhesion to human cells (Loeffler and Fischetti, 2006). However, pblB is within the morphology module (Romero et al., 2009) and as an adhesin might be expected to increase carriage duration. Hence the detected association is unlikely to represent expression of viral machinery or cargo genes in the host cell while the prophage is dormant.\n\nAlternatively, the association with only a subset of prophage may be the consequence of sampling. Using a monthly swabbing approach, it was only possible to robustly infer changes in the carriage duration of genotypes that colonise hosts for long periods. Therefore any prophage locus that enhances a virus\u2019 ability to infect long carriage duration pneumococci may have an elevated correlation with the variation in the observed phenotype. As phage commonly exhibit high levels of strain specificity (Duplessis and Moineau, 2001), this is a plausible mechanism, although the role of the replication module in such host preference is unclear.\n\nAn additional mechanism by which prophage can affect host phenotype is by inserting into, and thereby disrupting, functional genes. Pneumococcal prophage frequently insert into comYC, thereby preventing the host cell undergoing transformation (Croucher et al., 2011; Croucher et al., 2014b). Using previous categorisation of the comYC gene in this collection into intact versus interrupted or missing (Croucher et al., 2016), we found that having an intact comYC gene (23% of isolates) was significantly associated with an increased carriage duration using the LMM ($\\beta=0.29$;\u00a0$p=1.4\\times10^{\u221244}$). The effect size is similar to the associated phage k-mers, but has at a higher allele frequency (hence the increased significance of the result). An interpretation consistent with these findings would be that the effect of phage k-mers is actually through interrupting comYC. The k-mers themselves were spread out to lower frequencies due to their sequence variability, and no references used allowed mapping to find the comYC interruption directly.\n\nSignals at the suggestive level include pbp1a and pbp2b, which suggest as above that penicillin resistance may slightly increase carriage duration, but there are not enough samples in this analysis to confirm or refute this. Other signals near genes at a suggestive level included SNPs in trcF (transcription coupled DNA repair), padR (repressor of phenolic acid stress response), pepS (aminopeptidase), aroA (aromatic amino acid synthesis), fms (peptide deformylase) and a thioesterase superfamily protein. K-mers from erythromycin resistance genes (ermB, mel, mef) were expected to reach significance from the above analysis, but did not: it has however previously been shown that the power to detect these elements in a larger sample set taken from the same population is limited due to the multiple resistance mechanisms and stratification of resistance with lineage (Lees et al., 2016).\n\nThe test statistic from fast-lmm roughly followed the null-hypothesis, with the exception of the significant phage k-mers (Figure\u00a05). However there is limited power to detect effects associated with both the lineage and phenotype. This effect has been previously noted, and while LMMs have improved power for detecting locus specific effects they lose power when detecting associated variants which segregate with background genotype (Earle et al., 2016).\n\nTo search for candidate regions which may be independently associated with both a lineage and increased carriage duration, we ran an association test using a set number of fixed effects as the population structure correction. This is expected to have higher power than an LMM for true associated variants on ancestral branches, but will also increase the number of false positives (variants co-occurring on these branches which do not directly affect the carriage duration themselves). We also tested SNPs for their association with those principal components which were themselves significantly associated with carriage duration, and therefore may be driving the lineage associations (Earle et al., 2016).\n\nThe most highly associated SNPs were in all three pbp regions associated with $\\beta$-lactam resistance, the capsule locus, recA (DNA repair and homologous recombination), bgaA (beta-galactosidase), phoH-like protein (phosphate starvation-inducible protein), ftsZ (cell division protein) and groEL (chaperonin). As 19F, the serotype most associated with carriage duration, is predominantly the $\\beta$-lactam resistant PMEN14 lineage the pbp association may be driven through strong LD between with this serotype. Figure 5\u2014figure supplement 1 shows the analysis of SNPs which may be driving significant lineage associations \u2013 this also suggested dnaB (DNA replication) may be associated with altered carriage duration. Associated k-mers were also found in phtD (host cell surface adhesion), mraY (cell wall biosynthesis), tlyA (rRNA methylase), zinT (zinc recruitment), adcA (zinc recruitment) and recJ (DNA repair). Additionally we found k-mers in the bacteriocin blpZ and immunity protein pncM (Bogaardt et al., 2015) to be associated with variability in carriage duration. This could be evidence that intra-strain competition occurs within host via this mechanism, consistent with previous in vitro mouse models (Dawid et al., 2007).\n\nIt is not possible to determine whether variation in these genes is associated with a change in carriage duration or if the variation is present in longer carried, generally more prevalent lineages. For example, $\\beta$-lactam resistance may appear associated as the long carried lineages 19F and 23F are more frequently resistant, or it may genuinely provide an advantage in the nasopharynx that extends carriage duration independent of other factors. Future studies of carriage duration, or further experimental evidence will be needed to determine which is the case for these regions.\n\nAntigenic variation in known regions (of pspA, pspC, zmpA or zmpB) may be expected to cause a change in carriage duration (Lipsitch and O'Hagan, 2007), however we found none of these to be associated with a change in carriage duration. This was likely due to stratification of variation in these regions with lineage, but may also be caused by a larger diversity of k-mers in the region reducing power to detect an association.\n\n### Child age independently affects variance in carriage duration\n\nFinally, we wished to determine the importance of two environmental factors which are known to contribute to variance in this phenotype: child age and whether the carriage episode is the first the child has been exposed to (Abdullahi et al., 2012a; Abdullahi et al., 2012b; Turner et al., 2012). These have been applied throughout the analysis as covariates, both in the estimation of carriage episodes and in associating genetic variation with change in carriage duration.\n\nWe applied linear regression to these factors while using the first 30 PCs to correct for the effect of the bacterial genome, which showed they were both significantly associated with carriage duration as expected (age $p=3.9\\times10^{-7}$; previous carriage $p=2.5\\times10^{-8}$). Using the linear mixed model to control for bacterial genotype both factors were again significant (LRT\u00a0=\u00a026.4; $p=1.8\\times10^{-6}$). Together, they explained 0.046 of variation in carriage duration. As found previously, increasing child age contributes to a decrease in the duration of carriage episodes. From a mean of 68 days long, we calculated a drop of 19 days after a year, and 32 days after two years. Extrapolating, this causes carriage episodes longer than two days to cease by age 11 (Figure\u00a06). Previous carriage of any serotype was estimated to cause an increase in the duration of future carriage episodes, though previous studies have found no overall effect (Weinberger et al., 2008). It has previously been shown that prior exposure to non-typables in this cohort make colonisation by another non-typable occur later, and for a shorter time (Turner et al., 2012). The positive effect observed in this analysis is therefore likely to be an artefact due to subsequent carriage episodes being more likely to be due to typable pneumococci.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26255/elife-26255-fig6-v2.jpg)\n\n**Figure 6.:** Fit is an exponential decay over the first two years of life, using the decay rate inferred from a linear regression of log(carriage duration).\n\nAdditional environmental factors that explain some of the remainder of the variance may include the variation of the host immune response and interaction with other infections or co-colonisation. In particular, co-infection influenza A was not recorded but is known to affect population dynamics within the nasopharynx (Kono et al., 2016). Fundamentally, imprecise inference of the carriage duration will limit our ability to fully explain its variance.\n\n## Discussion\n\nOther than serotype, the genetic determinants of pneumococcal carriage duration were previously unknown. By developing models for longitudinal swab data and combining the results with whole genome sequence data we have quantified and mapped the genetic contribution to the carriage duration of S. pneumoniae. We found that despite a range of other factors such as host age which are known to cause carriage duration to differ, sequence variation of the pneumococcal genome explains most of this variability (63%). Common serotypes and resistance to erythromycin cause some of this effect (19% total), as does the presence or absence of particular prophage sequence in the genome. Table\u00a05 summarise the sources we found to be significantly associated with variation in carriage duration.\n\n**Table 5.**\n Summary of variance of carriage duration explained by genetic and environmental factors.$H^{2}$ encompasses all rows, other than the measured environmental effects. For each variant component the method used to estimate it is reported: CPP - closest phylogenetic pairs; LMM - variance component using a linear mixed model with pathogen genotype as random effects; $R^{2}$ - linear regression using lasso to select predictors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Source</th>\n      <th>Of which is</th>\n      <th>Total variance explained</th>\n      <th>Proportion of total heritability explained</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total heritability (H2)</td>\n      <td></td>\n      <td>0.634 (CPP)</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Common SNP heritability (hSNP2)</td>\n      <td>0.438 (LMM)</td>\n      <td>0.691</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Serotype and resistance</td>\n      <td>0.190 (R2)/0.253 (LMM)</td>\n      <td>0.300 (R2)/0.399 (LMM)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Serotype only</td>\n      <td>0.178 (R2)/0.135 (LMM)</td>\n      <td>0.281 (R2)/0.213 (LMM)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Resistance only</td>\n      <td>0.092 (R2)/0.113 (LMM)</td>\n      <td>0.145 (R2)/0.178 (LMM)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Phage k-mers</td>\n      <td>0.067 (LMM)</td>\n      <td>0.106</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Intact comYC</td>\n      <td>0.127 (LMM)</td>\n      <td>0.201</td>\n    </tr>\n    <tr>\n      <td>Measured environmental effects</td>\n      <td>Age and previous carriage</td>\n      <td>0.046 (R2)</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nWe provide a quantitative estimate of how closely transmission pairs share their carriage duration, and show evidence for differences both between and within serotypes. The implication of phage as having a significant effect on carriage duration has interesting corollaries on pneumococcal genome diversification through frequent infection and loss of prophage, even during carriage episodes in this dataset.\n\nInvestigating a mechanism for the prophage association, we found that having an intact comYC gene, which is frequently interrupted by prophage causing loss of function of the competence system, was associated with increased carriage duration. While the competence system is observed to remain intact over the evolutionary history of the species, these disruptive mutations spread irreversibly through the population as competent bacteria can acquire the mutation, and non-competent bacteria can no longer reverse it through recombination (Croucher et al., 2014b). Selection must therefore maintain the function at this locus over short timescales, and an increased carriage duration may be evidence of this. We therefore hypothesise that the associated prophage sequences may affect carriage duration through disruption of the competence system, without which deleterious mutations will accumulate in the population due to Muller's ratchet.\n\nThe results presented here have important implications for the modelling of pneumococcal transmission and their response to perturbation of the population by vaccine. Importantly, our analysis of heritability shows that variants other than serotype affect carriage duration, consistent with recent theoretical work (Lehtinen et al., 2017). Here we have shown that these alleles do exist in a natural population, and also identified candidates for the loci which fulfil this role. Together these studies suggest that variants exist in the pneumococcal genome which alter carriage duration, which in turn is linked to antibiotic resistance.\n\nWe were not able to fully explain the basis for heritability of carriage duration for a number of reasons. The close association of the phenotype with lineage limited our power to fine-map lineage associated variants other than capsule type which may affect carriage duration. Meta-analysis with more large studies with higher resolution may help to resolve these issues: we are conducting a similar study in Cape Town, South Africa which will combine sequence data with two-weekly swabs and will be compared to these results in future. Additional environmental factors that explain some of the remainder of the variance may include the variation of the host immune response and interaction with other infections or co-colonisation. In particular, co-infection with influenza A was not recorded but is known to affect population dynamics within the nasopharynx (Kono et al., 2016).\n\nThis is a phenotype which would have been difficult to assay by traditional methods such as in an animal model due to the cohort size needed and the length of time experiments would need to be run for. By instead using genome-wide association study methods we have been able to quantitatively investigate a complex phenotype in a natural population. We believe that the analysis of heritability and variance explained in a phenotype of interest, as presented here, will be an important part analysis of complex bacterial traits in future studies.\n\n## Materials and methods\n\n### Sample collection\n\nThe study population was a subset of infants from the Maela longitudinal birth cohort (Turner et al., 2013a), and was split into two cohorts. In the \u2018routine\u2019 cohort, 364 infants were swabbed monthly from birth, 24 times in total. All swabs were cultured and serotyped using the latex sweep method (Turner et al., 2013b). In the \u2018immunology\u2019 cohort 234 infants were swabbed on the same time schedule, but cultured and serotyped following the World Health Organisation (WHO) method (Turner et al., 2012). Non-typable pneumococci were confirmed by bile solubility, optochin susceptibility and Omniserum Quellung negative. For both cohorts phenotypic drug resistance to six antibiotics was available (chloramphenicol, $\\beta$-lactams, clindamycin, erythromycin, trimethoprim and tetracycline). 3161 randomly selected pneumococcal positive swabs from the study population have been previously sequenced, 2175 of which were from these longitudinal infant samples (Chewapreecha et al., 2014a).\n\n### Converting swab data into a time series\n\nLatex sweeps could not differentiate 6A and 6C serotypes, so we treated these as a single serotype when detected by this method (in WHO serotyping PCR was used to differentiate these serotypes). 15B and 15C serotypes spontaneously interconvert, so were combined. We removed two duplicated swabs (08B09098 from the immunology cohort; 09B02164 from the routine observation cohort).\n\nTo get a good fit of the HMM, we normalised observation times for each sample. Defining infant birth as $t=0$, subsequent sampling times $t_{i}$ were measured in days, and normalised to have a variance of one. The actual (untransformed) carriage duration in days was used as initial phenotype $y$.\n\n### Hidden markov model of time series\n\nWe modelled the time series of swab data using a continuous-time HMM, as implemented in the R package msm (RRID:SCR_015500) (Jackson, 2011). Unobserved (true) states correspond to whether the child is carrying bacteria in their nasopharynx, and observed (emitted) states correspond to whether a positive swab was seen at each point. Transition probabilities between each state Q and the emission probabilities E are jointly estimated by maximum likelihood using the BOBYQA algorithm. We then constructed the most likely path through the unobserved states for each child using the Viterbi algorithm (Forney, 1973) with the observed data and estimated model parameters. Assuming that continuous occupation of the carried state corresponded to a single carriage episode, we calculated the duration for each such episode from the inferred true states.\n\n### Processing genetic data\n\nFor each isolate with an inferred carriage duration (N\u00a0=\u00a02175) we extracted SNPs from the previously generated alignment against the ATCC 700669 genome (Chewapreecha et al., 2014b). Consequences of SNPs were annotated with VEP (RRID:SCR_007931), using a manually prepared reference (McLaren et al., 2010). A phylogenetic tree was generated from this alignment using FastTree (RRID:SCR_015501) under the GTR\u00a0+gamma model (Price et al., 2009). The carriage duration was mapped on to this phylogeny using phytools (RRID:SCR_015502) (Revell, 2013). We then filtered the sites in the alignment to remove any where the major allele was an N, any sites with a minor allele frequency lower than 1%, and any sites where over 5% of calls were missing. This left 115210 sites for association testing and narrow-sense heritability estimation.\n\nWe counted 68M non-redundant k-mers with lengths 9\u2013100 from the de novo assemblies of the genomes using a distributed string mining algorithm (Seth et al., 2014; V\u00e4lim\u00e4ki and Puglisi, 2012). We filtered out low frequency variants removing any k-mers with a minor allele frequency below 2%, leaving 17M for association testing.\n\nWe identified the presence of phage by performing a blastn of the de novo assemblies against a reference database of phage sequence (Croucher et al., 2016). If the length of the top hit was over 5000 we defined the isolate as having phage present (Figure\u00a05).\n\n### Transformation of carriage duration phenotype\n\nAs we aimed to fit a multiple linear regression model to the carriage duration $y$ at each genetic locus $k$, we first ensured the data was appropriate for this model. The phenotype distribution was positively skewed, with an approximately exponential distribution (Figure\u00a03). Residuals were therefore non-normally distributed, potentially reducing power (McCulloch, 2003). In the regression setting, a monotonic function can be applied to transform the response variable to avoid this problem. We took the natural logarithm of the carriage duration\n\n$$\n\ud835\udc32^=ln\u2062(\ud835\udc32)\n$$\n\nwhich led to the residuals being much closer to being normally distributed (Figure\u00a03). We applied the same transformation to child age, when it was used as a covariate in association.\n\n### Estimation of heritability\n\nWe estimated broad sense heritability $H^{2}$ with the ANOVA-CPP method in the patherit R package (Mitov and Stadler, 2016), using a patristic distance cutoff of 0.04 (Figure\u00a04). To test the effect of lineage genetics we used the patherit package to fit an Ornstein-Uhlenbeck model of the warped carriage duration along the phylogeny. We compared the likelihood of the full fit to that with no genetic effect on the trait ($\\sigma_{G}^{2}=0$) using a likelihood ratio test (LRT) with one degree of freedom.\n\nTo estimate the SNP-based heritability $h_{SNP}^{2}$ we applied a linear mixed model, which uses the genomic relatedness matrix (as calculated from SNPs passing filtering) as random effects. We used the implementation in warped-lmm (RRID:SCR_015503) (Fusi et al., 2014), which learns a monotonic transform as it fits the model to the data to ensure residuals are normally distributed (Figure\u00a03). We therefore used the untransformed phenotype $y$ as the input. Child age and whether previous carriage had occurred were included as covariates. We also estimated $h_{SNP}^{2}$ using LDAK (RRID:SCR_015504) (Speed et al., 2012) with default settings, which gave an estimate of 0.437 (<1% difference from the warped-lmm estimate).\n\n### Association of antimicrobial resistance and serotype with carriage duration\n\nWe encoded all 56 observed serotypes (including non-typables) and resistance to the six antibiotics as dummy variables. We used 6A/C as the reference level, as this had a mean carriage duration close to the grand mean in previous analysis. Orthogonal polynomial coding was used for the latter four antibiotics, where resistance could be intermediate or full. We then regressed this design matrix X was against the transformed carriage duration $\ud835\udc32^$. We removed three observations with low carriage lengths due to a delayed initial swab, and seven observations with leverages of one (Figure\u00a03).\n\nWe performed variable selection using lasso regression (Efron et al., 2004), implemented in the R package glmnet (RRID:SCR_015505) (Friedman et al., 2010). We used leave-one-out cross-validation to choose a value for the $\u2113_{1}$ penalty; the value one standard error above the minimum cross-validated error (Tibshirani et al., 2001) was selected ($\\lambda=0.033$; Figure\u00a04). The 20 predictors with non-zero coefficients in the model at this value of $\\lambda$ (Table\u00a02) were used in a linear regression to calculate the multiple $R^{2}$, which corresponds to the proportion of variance explained by these predictors.\n\nTo estimate the variance components from serotype and resistance we used genomic partitioning (Yang et al., 2011), as implemented in LDAK. We used SNPs in the capsule locus to calculate a kinship matrix approximating the contribution from serotype variation. For antibiotic resistance we used SNPs in the pbp genes, dyr gene and ICE transposon to calculate a kinship matrix. Restricted maximum likelihood was used to estimate the variance explained by each of these components.\n\nCapsule switch events had been previously identified by first reconstructing of the ancestral state of the serotype at each node through maximum parsimony (Chewapreecha et al., 2014a). For each node involving loss or gain of the capsule, those with at least one child being a tip were selected to find recent switches (all were capsule gain). The carriage duration of all unencapsulated children of the identified node were used as the null distribution to calculate an empirical p-value for the switched isolate. P-values were combined using Fisher's method (Rosenthal, 1978).\n\n### Genome wide association of carriage duration\n\nWe used the linear mixed model implemented in fast-lmm (RRID:SCR_015506) (Lippert et al., 2011) to associate genetic elements with carriage duration, independent of overall lineage effects. We used the warped phenotype as the response, the kinship matrix (calculated from SNPs) as random effects, and variant presence, child age and previous carriage as fixed effects. For SNPs we used a Bonferroni correction with $\\alpha<0.05$ and an N of 92487 phylogenetically independent sites to derive a genome-wide significance cutoff of $p<5.4\\times10^{-7}$, and a suggestive significance cutoff (Lander and Kruglyak, 1995; Stranger et al., 2011) of $p=1.1\\times10^{-4}$. We tested pairwise LD between the significant SNPs by calculating the $R^{2}$ between them. We removed those with $R^{2}\u00a0>\u00a00.2$, assuming these represented the same underlying signal, to define the significant loci. To perform conditional analysis we used the pattern of the most significant SNP as a fixed-effect, removed it from the test and kinship estimation, and re-ran the mixed model on all other sites.\n\nFor k-mers we counted 5254876 phylogenetically independent sites, giving a genome wide significance cutoff of $9.5\\times10^{-9}$. We used blastn (RRID:SCR_001598) with default settings to map the significant k-mers to seven reference genomes (ATCC 700669, INV104B, OXC141, SPNA45, Taiwan19F, TIGR4 and NT_110_58), and the possible Tn916 sequences (Croucher et al., 2011).\n\nTo search for variants with some level of lineage independence we used SEER (RRID:SCR_015499) (Lees et al., 2016). To correct for population structure we used the patristic distances from the phylogenetic tree as the kinship matrix, which we then projected into 30 dimensions using metric multidimensional scaling. The coordinates of the samples in this space were used as covariates in SEER\u2019s linear regression. We performed association tests on SNPs and k-mers with MAF > 1% using multiple linear regression, and report the top hits with $p<10^{-14}$. Significant k-mers were mapped as above.\n\n### Code and data availability\n\nAll code used for analysis is available on github, along with inferred carriage duration for each sample (Lees, 2017).\u00a0A copy is archived at https://github.com/elifesciences-publications/carriage-duration.\n",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "705fafba-625a-4d5e-8631-f51cc58c5516",
+      "submission_id": "b268b14a-f0e8-42cf-bed9-02985dea7912",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarah Cobey, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26255.043](https://doi.org/10.7554/eLife.26255.043)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Genome-wide identification of lineage and locus specific variation associated with pneumococcal carriage duration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Daniel Wilson.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers agree that this is an interesting and novel analysis of an impressive data set. The study sheds light on an important problem in clinical microbiology, the genetic determinants of carriage duration in pneumococcus, and the work should thus appeal to modelers in bacterial genomics and epidemiology. The reviewers find the conclusions fairly convincing and note that the association between carriage duration and the presence of prophage is an especially intriguing result that could inspire future investigations.\n\nThe reviewers note, however, the statistical challenges inherent in this type of study. They provide several suggestions for how the statistics could be improved or clarified to carefully delineate the support for different conclusions. An overriding concern is that the limitations of the statistics, and especially the inability of associations to demonstrate causality, be accurately communicated. The reviewers also recommend discussing the potential biology of the phage association in more depth.\n\nEssential revisions and major points:\n\n1) Exploring the inclusion of some components (e.g. serotype, resistance, lineage), but not all components of genetic variation (i.e. the rest of the genome) on phenotype using a Lasso is fairly ad hoc, making it difficult to have confidence in the conclusions. Besides the uncertainty in distinguishing the effects of these loci from others not included, there is also the problem that unmeasured, heritable confounders may influence results, because population stratification may not be adequately controlled. Lasso can make arbitrary choices between approximately equally good variables even if all loci were included, making it good for predicting phenotype, but bad for identifying candidate causal loci. It would be appropriate to mention that in the Lasso analysis, there is less robustness to potential confounding with unmeasured variables that may be associated with the significant regressors. Inferences of causality (e.g. subsection \u201cSerotype and drug resistance explain part of the narrow-sense heritability\u201d, seventh paragraph) are therefore likely to be overstated. For more robust inference, I would suggest testing the significance of these explanatory variables over and above what is explained by, e.g. the top 30 PCs or (better) in a lineage mixed model. If these analyses do not support the same conclusions, that is important to highlight.\n\n2) The authors need to be more careful/speculative in their description of their findings, especially in the Abstract. For example, with respect to the role of host factors, this was far from exhaustive in this study, and there are many more host features, that were the data available could have accounted for more of the phenotype variation, so I believe it is more accurate to state \"We estimated that pneumococcal genomic variation accounted for 63% of the phenotype variation, whereas the host traits considered here accounted for less than 5%.\" (Clearly, the inclusion of epidemiological metadata, if any are available, would enrich the story.)\n\nThe second statement in the Abstract that is overstated is 'A pan-genome-wide association study identified prophage sequences as significantly decreasing carriage duration independent of serotype.' Whereas without any evidence of causation, I believe they can only state that they have \"identified prophage sequences that significantly associated with decreasing carriage duration independent of serotype.\" The same idea holds for the association of erithromycin resistance and carriage \u2013 the causality is not straightforward. Under the theory of Lehtinen et al. (2017), long durations drive resistance due to the sensitivity of strains with long carriage durations to the fitness effects of antibiotic use, not the other way around.\n\n3) The association of the polymorphic phage with carriage is intriguing and deserves more treatment. Phages likely affect the strain in very different ways, some potentially extending carriage duration with other others decreasing it. Can phages in the database be partitioned into categories based on predicted phenotypic impact and the association retested? What was the genetic polymorphism in the phage genes that associated with carriage duration? How many strains was this in, i.e., was it a large effect in a small number of samples or a small affect in a large number? What was the mean carriage duration for strains with and without it (similar to that shown for serotype in Table 2). Phage often encode specific virulence or immune evasion factors, does this phage carry these? (Ideally a lab-based assay could be performed on the clinical strains to provide some functional information about its potential effect, or a second collection of isolates could be used to validate the finding, but neither is required.)\n",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7de4549-3627-4f9c-addb-3a1bef378b2d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C1",
+      "claim": "Streptococcus pneumoniae is a leading cause of invasive disease in infants, especially in low-income settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Streptococcus pneumoniae is a leading cause of invasive disease in infants, especially in low-income settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about disease burden that draws from established scientific knowledge about pneumococcal disease epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "22305332-6557-4e26-b7e8-a1e9ebcb952a",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C2",
+      "claim": "Asymptomatic carriage in the nasopharynx is a prerequisite for disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymptomatic carriage in the nasopharynx is a prerequisite for disease, but variability in its duration is currently only understood at the serotype level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about pneumococcal pathogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "a51f06a5-62bc-4f4f-8b42-7ff1b9158024",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C3",
+      "claim": "Variability in carriage duration is currently only understood at the serotype level.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymptomatic carriage in the nasopharynx is a prerequisite for disease, but variability in its duration is currently only understood at the serotype level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature in the introduction and represents the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "9c8b792e-7931-4e68-9013-8ff6781255f4",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C4",
+      "claim": "Pneumococcal genomic variation accounted for 63% of the phenotype variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that pneumococcal genomic variation accounted for 63% of the phenotype variation, whereas the host traits considered here (age and previous carriage) accounted for less than 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the heritability analysis performed in the study using the ANOVA-CPP method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "bff682af-f8d2-4c7e-86e9-d9d920e7d13f",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C5",
+      "claim": "Host traits (age and previous carriage) accounted for less than 5% of phenotype variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that pneumococcal genomic variation accounted for 63% of the phenotype variation, whereas the host traits considered here (age and previous carriage) accounted for less than 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the regression analysis of host factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "507e9792-2190-4898-b455-3920ddb41818",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C6",
+      "claim": "Serotype accounts for 17% of variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We further partitioned this heritability into both lineage and locus effects, and quantified the amount attributable to the largest sources of variation in carriage duration: serotype (17%), drug-resistance (9%) and other significant locus effects (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the variance partitioning analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "70cbdf74-ca80-45d5-af75-c3450204a86d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C7",
+      "claim": "Drug-resistance accounts for 9% of variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We further partitioned this heritability into both lineage and locus effects, and quantified the amount attributable to the largest sources of variation in carriage duration: serotype (17%), drug-resistance (9%) and other significant locus effects (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the variance partitioning analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "5cda7c5c-2160-41db-82ce-776adfecc551",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C8",
+      "claim": "Other significant locus effects account for 7% of variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We further partitioned this heritability into both lineage and locus effects, and quantified the amount attributable to the largest sources of variation in carriage duration: serotype (17%), drug-resistance (9%) and other significant locus effects (7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "6c4a5d2c-46c3-4e23-852a-de332002e365",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C9",
+      "claim": "Prophage sequences are associated with decreased carriage duration independent of serotype.",
+      "claim_type": "EXPLICIT",
+      "source": "A pan-genome-wide association study identified prophage sequences as being associated with decreased carriage duration independent of serotype, potentially by disruption of the competence mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS analysis using linear mixed models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "a0529dfa-4475-4a05-897b-26a6c13e54ea",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C10",
+      "claim": "Prophage sequences may decrease carriage duration by disrupting the competence mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A pan-genome-wide association study identified prophage sequences as being associated with decreased carriage duration independent of serotype, potentially by disruption of the competence mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the association findings based on the comYC analysis.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "aeeb41d7-bfac-4dc3-aaea-55beaa6a2b0b",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C11",
+      "claim": "Pneumococcal disease burden is highest in children.",
+      "claim_type": "EXPLICIT",
+      "source": "Pneumococcal disease burden is highest in children (O'Brien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "4aa0fc9e-70f9-42f5-8279-bb6a0f39587b",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C12",
+      "claim": "Understanding and predicting the amount of time pneumococci spend in the nasopharynx is critical for understanding this bacterium's epidemiology and controlling transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The pneumococcus spends most of the transmission cycle in the nasopharynx, and so understanding and predicting the amount of time spent in this niche is critical for understanding this bacterium's epidemiology, and therefore controlling transmission (Abdullahi et al., 2012a; Melegaro et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "29a741ef-4826-40cd-b6d0-6c607167605a",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C13",
+      "claim": "Serotype strongly associates with carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "One factor that is known to strongly associate with carriage duration is serotype: as capsular polysaccharides are important in bacterial physiology and determining host immune response, different serotypes have different clearance and acquisition rates (Abdullahi et al., 2012a; Hill et al., 2010; H\u00f6gberg et al., 2007; Melegaro et al., 2004; Turner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "a06c8c53-70b7-4b5b-94db-b56b01b86423",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C14",
+      "claim": "Different serotypes have different clearance and acquisition rates.",
+      "claim_type": "EXPLICIT",
+      "source": "One factor that is known to strongly associate with carriage duration is serotype: as capsular polysaccharides are important in bacterial physiology and determining host immune response, different serotypes have different clearance and acquisition rates (Abdullahi et al., 2012a; Hill et al., 2010; H\u00f6gberg et al., 2007; Melegaro et al., 2004; Turner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "7879094b-6651-4d27-95aa-fc78b5517dac",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C15",
+      "claim": "Changes in average carriage duration have been shown to be linked with recombination rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in average carriage duration have been shown to be linked with recombination rate (Chaguza et al., 2016), which has been found to correlate with antibiotic resistance (Hanage et al., 2009) and invasive potential (Chaguza et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "8ff37320-d2f2-4afa-aec6-534731579cbd",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C16",
+      "claim": "Recombination rate has been found to correlate with antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in average carriage duration have been shown to be linked with recombination rate (Chaguza et al., 2016), which has been found to correlate with antibiotic resistance (Hanage et al., 2009) and invasive potential (Chaguza et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "2d9c22e5-83ab-427f-8cbf-65a731a21304",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C17",
+      "claim": "Recombination rate has been found to correlate with invasive potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in average carriage duration have been shown to be linked with recombination rate (Chaguza et al., 2016), which has been found to correlate with antibiotic resistance (Hanage et al., 2009) and invasive potential (Chaguza et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "59efd652-8c24-4587-a46e-c0f23bf7ae75",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C18",
+      "claim": "Carriage duration by different serotypes is widely used in models of pneumococcal epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "The carriage duration by different serotypes is widely used in models of pneumococcal epidemiology, and consequently is important in evaluating the efficacy of the pneumococcal conjugate vaccine (PCV) (Melegaro et al., 2007; Weinberger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "f79f3d95-94a8-4e0d-a7aa-31d37e04b1b7",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C19",
+      "claim": "Modelling work has proposed that if alleles exist which alter carriage duration, these explain how antibiotic-resistant and sensitive strains stably coexist in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, modelling work has proposed that if alleles exist which alter carriage duration, these explain the long standing puzzle of how antibiotic-resistant and sensitive strains stably coexist in the population (Lehtinen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "95127663-ffd1-4310-8d56-865d399e6a20",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C20",
+      "claim": "The study population consisted of 598 unvaccinated children with up to 24 swabs taken over a two year period.",
+      "claim_type": "EXPLICIT",
+      "source": "For 598 unvaccinated children up to 24 swabs taken over a two year period were available, an extension on the previous study (Turner et al., 2012, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "84e3c58b-132e-44aa-805f-b5844b99b52e",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C21",
+      "claim": "Only swabs from infants were considered because mothers did not have sufficient sampling resolution relative to their average length of carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "We only considered swabs from infants in the study, as mothers did not have sufficient sampling resolution relative to their average length of carriage to determine carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological decision based on data characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "4a061016-b898-4c4b-8f40-e0c8fabd683a",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C22",
+      "claim": "The immune response of mothers to bacterial pathogens is different to children, leading to shorter carriage durations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the immune response of mothers to bacterial pathogens is different to children (Mar\u00f3di, 2006), leading to shorter carriage durations (Gritzfeld et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "6264a3d2-1924-4fd6-b2ef-66248388244c",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C23",
+      "claim": "A total of 4382 carriage episodes were estimated (7.3 per child).",
+      "claim_type": "EXPLICIT",
+      "source": "From all the swab data, we estimated that there were a total of 4382 carriage episodes (7.3 per child), of which 2254 had a complete set of AMR data available (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the HMM analysis of swab data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "be88ca9a-99d0-477c-8676-d6304970b201",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C24",
+      "claim": "2254 carriage episodes had a complete set of AMR data available.",
+      "claim_type": "EXPLICIT",
+      "source": "From all the swab data, we estimated that there were a total of 4382 carriage episodes (7.3 per child), of which 2254 had a complete set of AMR data available (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data available for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "3a30af05-61d5-4816-a3e4-3e7a562ad3e8",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C25",
+      "claim": "2157 sequenced genomes were matched with a carriage duration after removing outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing ten outlier observations from swabs taken accidentally during disease, we were able to match 2157 sequenced genomes with a carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final dataset used for genetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "b5bc6172-bb69-46a0-8f30-766e7c3f1d12",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C27",
+      "claim": "The genetics of S. pneumoniae is an important factor in determining carriage duration in this population.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the genetics of S. pneumoniae is an important factor in determining carriage duration in this population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the high heritability estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "f7c70645-611c-4108-a740-587d5ccfbdc2",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C32",
+      "claim": "The total variance explained by serotype and resistance lineage factors was 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "The total variance explained by these lineage factors was 0.19, 0.178 for serotype alone and 0.092 for resistance alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the lasso regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "7dff5fea-8e28-4fa4-af5c-7de7ec6abfbb",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C33",
+      "claim": "Serotype alone explained 0.178 of variance in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The total variance explained by these lineage factors was 0.19, 0.178 for serotype alone and 0.092 for resistance alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the lasso regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "186a05f8-5ba5-43fa-9ab8-c7e278ec3416",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C34",
+      "claim": "Resistance alone explained 0.092 of variance in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The total variance explained by these lineage factors was 0.19, 0.178 for serotype alone and 0.092 for resistance alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the lasso regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "1756925f-1aa4-4d7e-98ba-cd6e6a130672",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C35",
+      "claim": "19F serotype caused significant increase in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant (\u03b1<0.05) increase in carriage duration and being non-typable caused a significant decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the covariance test on lasso regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "bb3175d3-dd32-4923-aa6a-e59f8beb4de7",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C36",
+      "claim": "Erythromycin resistance caused significant increase in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant (\u03b1<0.05) increase in carriage duration and being non-typable caused a significant decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the covariance test on lasso regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "b9daf101-e349-437e-b309-695e718c71c3",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C37",
+      "claim": "23F serotype caused significant increase in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant (\u03b1<0.05) increase in carriage duration and being non-typable caused a significant decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the covariance test on lasso regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "368cad40-0f51-49fb-9207-f02c1938b04a",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C38",
+      "claim": "6B serotype caused significant increase in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant (\u03b1<0.05) increase in carriage duration and being non-typable caused a significant decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the covariance test on lasso regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "a6f16a00-c26a-4ace-93d5-7d2d593fddb0",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C39",
+      "claim": "Being non-typable caused a significant decrease in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the covariance test (Lockhart et al., 2014) to determine which lineage effects were significantly associated with carriage duration and found that 19F, erythromycin resistance, 23F, 6B caused significant (\u03b1<0.05) increase in carriage duration and being non-typable caused a significant decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the covariance test on lasso regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "fb9936f5-8716-4314-8473-c99c5b2e5f61",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C40",
+      "claim": "No significant difference in duration was seen between isolates with or without capsule within the same lineage (p=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference in duration was seen between isolates with or without capsule within the same lineage (p=0.39; Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the analysis of capsule gain/loss events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "4cfa099c-776f-4672-8249-20ad1e998451",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C42",
+      "claim": "The main lineage effect on carriage duration is the serotype, but only some serotypes (19F) have an association independent of genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that the main lineage effect on carriage duration is the serotype, but only some serotypes (19F) have an association independent of genetic background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from multiple analyses including lasso regression and LMM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "17867141-717c-4258-ad7d-a0feb04a637f",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C43",
+      "claim": "Erythromycin resistance may be significantly associated with an increased carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that erythromycin resistance may be significantly associated with an increased carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the lasso regression and covariance test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "7b8b0374-a180-41ce-a0e0-d8615299175b",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C44",
+      "claim": "The majority of carriage episodes were due to five of the seven paediatric serotypes or non-typeable isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of carriage episodes were due to five of the seven paediatric serotypes (Shapiro and Austrian, 1994), or non-typeable isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the HMM analysis and descriptive statistics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "6c03ba7b-995c-41b9-92b4-84bce51edd5e",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C45",
+      "claim": "19F, 23F and 14 were carried the longest.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show 19F, 23F and 14 were carried the longest, 6A/C and 6B for intermediate lengths, and NT the shortest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the HMM analysis of mean sojourn times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "0543484d-6dab-4f19-94c5-dd5be23d413b",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C46",
+      "claim": "6A/C and 6B were carried for intermediate lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show 19F, 23F and 14 were carried the longest, 6A/C and 6B for intermediate lengths, and NT the shortest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the HMM analysis of mean sojourn times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "f732e46a-7118-43b6-a765-4948b02ca33e",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C47",
+      "claim": "NT (non-typeable) pneumococci were carried the shortest.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show 19F, 23F and 14 were carried the longest, 6A/C and 6B for intermediate lengths, and NT the shortest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the HMM analysis of mean sojourn times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "c5d60ed0-889b-488c-9b98-09da8d4a09c6",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C48",
+      "claim": "The overall picture of the first two years of infant carriage is one containing one or two long (over 90 day) carriage episodes of a common serotype and around two short (under a month) carriage episodes of non-typable S. pneumoniae.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall picture of the first two years of infant carriage is one containing one or two long (over 90 day) carriage episodes of a common serotype (6A/C, 6B, 14, 19F, 23F) and around two short (under a month) carriage episodes of non-typable S. pneumoniae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the HMM analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "74e576b7-0d50-4f73-93e2-17c38ac8ef03",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C53",
+      "claim": "The only genome-wide significant SNP hits are synonymous changes (MAF = 1%) in the replication module of the prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "The only genome-wide significant SNP hits are synonymous changes (MAF = 1%) in the replication module of the prophage in the ATCC 700669 genome (Croucher et al., 2009), a highly variable component of the pneumococcal genome (Croucher et al., 2014a) (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the GWAS analysis with annotation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "02b768bf-7841-4cba-89f2-e1786f53df59",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C54",
+      "claim": "The most significant k-mer hits were located in phage sequence (MAF 2%) and were associated with a reduced duration of carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant k-mer hits were also located in phage sequence (MAF 2%) and were associated with a reduced duration of carriage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the k-mer GWAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "1719de18-6e72-4796-8cbe-4bd89ad4bfc5",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C55",
+      "claim": "No evidence of association was found between presence of any phage in the genome and carriage duration when correcting for population structure (p=0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "By using the presence of phage as a trait under the same linear mixed model, we however found no evidence of association when correcting for population structure (p=0.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the LMM analysis of phage presence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "88196e97-461b-403c-891b-f65139ed5bbb",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C56",
+      "claim": "Infection with a specific phage sequence is associated with a slight decrease in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are therefore evidence that infection with a specific phage sequence is associated with a slight decrease in carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the GWAS results showing specific phage sequences but not general phage presence associated with carriage duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "21380d0c-aeac-4f3d-b590-09f408d5ba87",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C57",
+      "claim": "A similar result has previously been found in Neisseria meningitidis, where a specific phage sequence was found to affect the virulence and epidemiology of strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar result has previously been found in a genome-wide screen in Neisseria meningitidis, where a specific phage sequence was found to affect the virulence and epidemiology of strains (Bille et al., 2005; Bille et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "67fb3143-980e-44ef-8b76-ffb1e562357c",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C58",
+      "claim": "Previous in vivo tests have shown phage elements to cause a fitness decrease of S. pneumoniae during carriage.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, previous in vivo tests have shown phage elements to cause a fitness decrease of S. pneumoniae during carriage (DeBardeleben et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "0a3c6d6d-809e-4474-94aa-0e2678acb481",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C60",
+      "claim": "The effect of phage k-mers may be through interrupting comYC.",
+      "claim_type": "EXPLICIT",
+      "source": "An interpretation consistent with these findings would be that the effect of phage k-mers is actually through interrupting comYC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the association findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "1122748c-e427-472f-ab86-2b8e60f35565",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C63",
+      "claim": "Age and previous carriage together explained 0.046 of variation in carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, they explained 0.046 of variation in carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "ced39b9c-270f-4f98-b5d6-f09cdd26eb37",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C64",
+      "claim": "Increasing child age contributes to a decrease in the duration of carriage episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "As found previously, increasing child age contributes to a decrease in the duration of carriage episodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the regression analysis, consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "e7f6e6a2-7792-48cd-bddb-56b5fe988567",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C65",
+      "claim": "From a mean of 68 days long, carriage duration drops 19 days after a year, and 32 days after two years.",
+      "claim_type": "EXPLICIT",
+      "source": "From a mean of 68 days long, we calculated a drop of 19 days after a year, and 32 days after two years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the regression analysis of age effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "fde2bdc1-09c5-44dd-a851-aa1b649fad2e",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C66",
+      "claim": "Extrapolating, carriage episodes longer than two days cease by age 11.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolating, this causes carriage episodes longer than two days to cease by age 11 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an extrapolation from the regression model shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "dc2d403a-5bb6-4ef3-8e86-3310a3af0785",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C67",
+      "claim": "Previous carriage of any serotype was estimated to cause an increase in the duration of future carriage episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous carriage of any serotype was estimated to cause an increase in the duration of future carriage episodes, though previous studies have found no overall effect (Weinberger et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the regression analysis, though it contradicts previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "af409224-82a3-45b3-8bef-97d6a0ea0a91",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C68",
+      "claim": "The positive effect of previous carriage is likely to be an artefact due to subsequent carriage episodes being more likely to be due to typable pneumococci.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive effect observed in this analysis is therefore likely to be an artefact due to subsequent carriage episodes being more likely to be due to typable pneumococci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the finding based on previous observations in the cohort.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "9d589073-8aa4-43a6-87bf-064e7ec9d2d5",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C69",
+      "claim": "Sequence variation of the pneumococcal genome explains most of the variability in carriage duration (63%) despite other factors such as host age.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that despite a range of other factors such as host age which are known to cause carriage duration to differ, sequence variation of the pneumococcal genome explains most of this variability (63%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the heritability findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "25cb713e-9680-4340-a018-d40e3003b9a1",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C70",
+      "claim": "Common serotypes and resistance to erythromycin cause 19% of the effect on carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Common serotypes and resistance to erythromycin cause some of this effect (19% total), as does the presence or absence of particular prophage sequence in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the variance partitioning findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "edc96479-24fb-4321-96ed-2243d11a7410",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C71",
+      "claim": "The presence or absence of particular prophage sequence in the genome affects carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Common serotypes and resistance to erythromycin cause some of this effect (19% total), as does the presence or absence of particular prophage sequence in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the GWAS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "ab970cba-b3e7-44dc-894e-291bbcafff2e",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C72",
+      "claim": "Variants other than serotype affect carriage duration, consistent with recent theoretical work.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our analysis of heritability shows that variants other than serotype affect carriage duration, consistent with recent theoretical work (Lehtinen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the heritability analysis, supported by citation to theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "7a470d25-5f28-471f-89a4-9b3dd351804d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C73",
+      "claim": "Variants exist in the pneumococcal genome which alter carriage duration, which in turn is linked to antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these studies suggest that variants exist in the pneumococcal genome which alter carriage duration, which in turn is linked to antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference combining the current findings with previous theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "629e2ea2-414e-4f6c-842d-37aac5da3989",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C74",
+      "claim": "The close association of the phenotype with lineage limited power to fine-map lineage associated variants other than capsule type which may affect carriage duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The close association of the phenotype with lineage limited our power to fine-map lineage associated variants other than capsule type which may affect carriage duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the limitations of the study based on the observed data structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "b0d0dc2a-2263-43b2-b73e-50ee2f2da95d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C75",
+      "claim": "The study population was a subset of infants from the Maela longitudinal birth cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The study population was a subset of infants from the Maela longitudinal birth cohort (Turner et al., 2013a), and was split into two cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and population.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "045dd50f-73a3-4316-8497-262e94f8b854",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C76",
+      "claim": "In the 'routine' cohort, 364 infants were swabbed monthly from birth, 24 times in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'routine' cohort, 364 infants were swabbed monthly from birth, 24 times in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design for one cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "d9345913-52ce-4a5a-a1f9-3fccf45147bd",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C77",
+      "claim": "In the 'immunology' cohort 234 infants were swabbed on the same time schedule.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'immunology' cohort 234 infants were swabbed on the same time schedule, but cultured and serotyped following the World Health Organisation (WHO) method (Turner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design for the second cohort.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "a80e1e22-9d64-4394-8f85-bdd2b76b3462",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C78",
+      "claim": "3161 randomly selected pneumococcal positive swabs from the study population have been previously sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "3161 randomly selected pneumococcal positive swabs from the study population have been previously sequenced, 2175 of which were from these longitudinal infant samples (Chewapreecha et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genomic data available, citing previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "7727d5b0-514d-4b3c-92fa-eb305c08d3f9",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C79",
+      "claim": "2175 of the sequenced swabs were from longitudinal infant samples.",
+      "claim_type": "EXPLICIT",
+      "source": "3161 randomly selected pneumococcal positive swabs from the study population have been previously sequenced, 2175 of which were from these longitudinal infant samples (Chewapreecha et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genomic data available for the current analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "2b91f1d3-d5cd-4992-8099-4ea7ad6f19d9",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C80",
+      "claim": "The models for 19F, 23F, 6A/C, 6B, 14 and non-typable (NT) converged.",
+      "claim_type": "EXPLICIT",
+      "source": "The models for 19F, 23F, 6A/C, 6B, 14 and non-typable (NT) converged, but other serotypes did not have enough observations to successfully fit the parameters of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the HMM fitting process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "dd76cd63-fae2-4aa9-857e-17ca7810f3b7",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C81",
+      "claim": "Other serotypes did not have enough observations to successfully fit the parameters of the HMM model.",
+      "claim_type": "EXPLICIT",
+      "source": "The models for 19F, 23F, 6A/C, 6B, 14 and non-typable (NT) converged, but other serotypes did not have enough observations to successfully fit the parameters of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the HMM fitting process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "c9453271-6304-4df8-85a4-4880150eda1d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C82",
+      "claim": "At 1% proportional abundance in the sample, 12% of non-typable S. pneumoniae came out as culture negative.",
+      "claim_type": "EXPLICIT",
+      "source": "At 1% proportional abundance in the sample, 12% came out as culture negative (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the 16S sequencing analysis used to calibrate the false negative rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "244da300-092c-4f32-8cc9-c657b2073f34",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "claim_id": "C83",
+      "claim": "Based on having >1% abundance of 16S reads showing the bacteria as being present, 44/361 true positive swabs were not successfully cultured.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on having >1% abundance of 16S reads showing the bacteria as being present, 44/361 true positive swabs were not successfully cultured.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from Table 1 showing the false negative rate of culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "340ec5a4-d029-4941-a272-ea4af06ff60f",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected longitudinal swab data from 598 unvaccinated infants over two years with monthly sampling, yielding 4382 carriage episodes (7.3 per child), of which 2157 were matched with whole genome sequences after quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 and C75-C79 collectively describe the study design, sample collection, and data processing pipeline. The numbers are internally consistent and the methodological decisions (e.g., excluding mothers due to insufficient sampling resolution) are justified. The data flow from raw swabs to final analyzed episodes is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "41c1292f-4e50-4fd2-8817-73b4d2a5091b",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hidden Markov Models were successfully fitted for six serotypes (19F, 23F, 6A/C, 6B, 14, and NT) to infer carriage episodes from longitudinal swab data, with the false negative rate for non-typeable pneumococci calibrated at 12% using 16S sequencing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 describe the HMM modeling approach and calibration. The false negative rate estimation using 16S sequencing (C82-C83) provides empirical justification for fixing the emission parameter for NT isolates. The limitation that other serotypes had insufficient data for model convergence is appropriately acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "154ceaf0-3661-4ded-9ddc-6421f419591c",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pneumococcal genomic variation accounts for 63% (95% CI 0.592-0.686) of the phenotypic variation in carriage duration, while host factors (age and previous carriage) account for less than 5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C27, and C69 present the primary heritability finding using ANOVA-CPP method. The high heritability estimate is supported by multiple analytical approaches (also h\u00b2_SNP = 0.445 from LMM), and the confidence intervals are provided. The result is internally consistent and represents a major finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Variance partitioning analysis identified that serotype accounts for 17% of variation in carriage duration, drug-resistance for 9%, and other significant locus effects for 7%, totaling 19% of variance explained by lineage factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C32-C34 present consistent variance partitioning results from lasso regression. The percentages are internally consistent (17% + 9% \u2248 19% total for lineage factors, with some overlap). Alternative estimates from genomic partitioning (C32-C34: 0.253, 0.135, 0.113) provide convergent evidence, though with slightly different values due to methodological differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "4abf4130-cf6a-41e5-b477-1c44e82de998",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Specific serotypes (19F, 23F, 6B) and erythromycin resistance significantly increase carriage duration (\u03b1<0.05), while being non-typeable significantly decreases it, with only serotype 19F showing an association independent of genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 report covariance test results from lasso regression, while C42-C43 synthesize findings from multiple analyses (lasso, LMM, capsule switch analysis). The claim that only 19F has serotype-independent effects (C42) is supported by LMM analysis showing genome-wide significance (p=3.8\u00d710\u207b\u2077) and capsule switch analysis (C40), though the latter was non-significant (p=0.39) with limited power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "d2e3f6f5-46da-47e7-9bf6-4f077bc28315",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No significant difference in carriage duration was observed between isolates with or without capsule within the same lineage (p=0.39) across three capsule gain/loss events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C40 reports a non-significant result from capsule switch analysis. However, the authors acknowledge this analysis had limited power (only 3 events, all capsule gains). The non-significant result could reflect either true lack of effect or insufficient statistical power. This uncertainty is appropriately discussed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "06c44b9d-573e-402b-904d-d3fd36705e78",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The typical pattern of infant pneumococcal carriage in the first two years consists of one or two long episodes (>90 days) of common serotypes (19F, 23F, 14, 6A/C, 6B) and approximately two short episodes (<1 month) of non-typeable S. pneumoniae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 synthesize findings from HMM analysis of mean sojourn times. The characterization is consistent with the data presented in Table 3 and represents a reasonable summary of the carriage patterns observed. The inference about NT carriage being at the limit of detection is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "8e0863b8-3755-4105-8f23-853a287bade9",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genome-wide association analysis identified specific prophage sequences (MAF 1-2%) associated with decreased carriage duration independent of serotype, but general phage presence was not associated (p=0.35) when correcting for population structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C53-C56, and C71 describe GWAS findings for prophage. The distinction between specific phage sequences (significant in LMM) versus general phage presence (non-significant) is well-supported by the data. The genome-wide significant SNPs (p=2.1\u00d710\u207b\u2077) and k-mers (p=2.1\u00d710\u207b\u00b9\u00b2) in prophage regions provide convergent evidence. The interpretation that specific sequences rather than phage presence per se affect carriage is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "6649d538-90f3-471e-a902-f6a20719af95",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism by which prophage sequences decrease carriage duration may involve disruption of the competence system through interruption of comYC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10 and C60 present a mechanistic hypothesis linking prophage to competence disruption. While the association between intact comYC and increased carriage duration is strong (\u03b2=0.29; p=1.4\u00d710\u207b\u2074\u2074), the causal connection to the specific prophage sequences identified in GWAS is speculative. The authors appropriately use cautious language ('may be', 'potentially', 'interpretation consistent with'), but direct experimental validation is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "2b2137e0-28ad-42f9-82a3-dd36a96767a0",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Child age significantly affects carriage duration, with episodes decreasing from a mean of 68 days at birth by 19 days after one year and 32 days after two years, with extrapolation suggesting carriage episodes >2 days cease by age 11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 report regression results for age effects with specific quantitative estimates. The finding is consistent with previous literature (C64). However, C66's extrapolation to age 11 is problematic\u2014it extends far beyond the data range (0-2 years) and assumes linear decay continues, which is biologically implausible. This extrapolation should be treated with extreme caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "71530cc3-257c-437e-bed0-9dc3f91ff1e3",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous carriage was estimated to increase duration of future episodes, but this is likely an artifact due to subsequent episodes being more likely to involve typeable pneumococci rather than a true biological effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 report a finding that contradicts previous literature, then provide a plausible alternative explanation. The authors appropriately recognize this as likely artifactual based on known patterns in the cohort. This demonstrates good scientific reasoning in interpreting unexpected results in context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "38a9bca7-a017-4b5d-a240-7bc13d9521f6",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Variants other than serotype affect carriage duration, and these variants are linked to antibiotic resistance, consistent with recent theoretical models of pneumococcal competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 synthesize the study's findings with theoretical work (Lehtinen et al., 2017). The heritability analysis (63% total, with only 17% from serotype) provides strong evidence that non-serotype variants affect carriage. The connection to antibiotic resistance is supported by the erythromycin resistance findings (C36, C43) and cited theoretical work, making this a well-supported integrative conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "55069293-7601-4b06-9496-9ed4d8f691bc",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The close association of carriage duration with lineage limited the power to fine-map lineage-associated variants other than capsule type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 acknowledges a key limitation of the study. The high Pagel's lambda (0.56) and strong phylogenetic signal support this assessment. This is an appropriate recognition of the methodological challenges in distinguishing lineage from locus effects in bacterial GWAS, particularly for a highly structured population like S. pneumoniae.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that S. pneumoniae is a major cause of disease in children, that carriage duration varies by serotype and is linked to recombination rate, antibiotic resistance, and invasive potential, and that understanding carriage duration is critical for epidemiological modeling and vaccine evaluation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C11-C19 provide background context supported by citations to previous literature. These establish the scientific rationale for the study. While these are not novel findings from this work, they appropriately frame the research questions and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    },
+    {
+      "id": "43862b36-8856-479a-8c7a-ca416763d57c",
+      "content_id": "e0867bb2-a750-40f0-b549-41595cf494b2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Similar phage-mediated effects on bacterial phenotypes have been observed in other species, including Neisseria meningitidis where specific phage sequences affect virulence, and previous studies have shown pneumococcal phage elements decrease fitness during carriage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 cite previous literature to provide context for the prophage findings. These appropriately place the current results within the broader literature on phage-bacteria interactions and provide supporting evidence that phage can affect bacterial phenotypes in related systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:14:17.663091Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95127663-ffd1-4310-8d56-865d399e6a20",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "84e3c58b-132e-44aa-805f-b5844b99b52e",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "4a061016-b898-4c4b-8f40-e0c8fabd683a",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "6264a3d2-1924-4fd6-b2ef-66248388244c",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "be88ca9a-99d0-477c-8676-d6304970b201",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "3a30af05-61d5-4816-a3e4-3e7a562ad3e8",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "b0d0dc2a-2263-43b2-b73e-50ee2f2da95d",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "045dd50f-73a3-4316-8497-262e94f8b854",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "d9345913-52ce-4a5a-a1f9-3fccf45147bd",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "a80e1e22-9d64-4394-8f85-bdd2b76b3462",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "7727d5b0-514d-4b3c-92fa-eb305c08d3f9",
+      "result_id": "340ec5a4-d029-4941-a272-ea4af06ff60f"
+    },
+    {
+      "claim_id": "2b91f1d3-d5cd-4992-8099-4ea7ad6f19d9",
+      "result_id": "41c1292f-4e50-4fd2-8817-73b4d2a5091b"
+    },
+    {
+      "claim_id": "dd76cd63-fae2-4aa9-857e-17ca7810f3b7",
+      "result_id": "41c1292f-4e50-4fd2-8817-73b4d2a5091b"
+    },
+    {
+      "claim_id": "c9453271-6304-4df8-85a4-4880150eda1d",
+      "result_id": "41c1292f-4e50-4fd2-8817-73b4d2a5091b"
+    },
+    {
+      "claim_id": "244da300-092c-4f32-8cc9-c657b2073f34",
+      "result_id": "41c1292f-4e50-4fd2-8817-73b4d2a5091b"
+    },
+    {
+      "claim_id": "9c8b792e-7931-4e68-9013-8ff6781255f4",
+      "result_id": "154ceaf0-3661-4ded-9ddc-6421f419591c"
+    },
+    {
+      "claim_id": "bff682af-f8d2-4c7e-86e9-d9d920e7d13f",
+      "result_id": "154ceaf0-3661-4ded-9ddc-6421f419591c"
+    },
+    {
+      "claim_id": "b5bc6172-bb69-46a0-8f30-766e7c3f1d12",
+      "result_id": "154ceaf0-3661-4ded-9ddc-6421f419591c"
+    },
+    {
+      "claim_id": "9d589073-8aa4-43a6-87bf-064e7ec9d2d5",
+      "result_id": "154ceaf0-3661-4ded-9ddc-6421f419591c"
+    },
+    {
+      "claim_id": "507e9792-2190-4898-b455-3920ddb41818",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "70cbdf74-ca80-45d5-af75-c3450204a86d",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "5cda7c5c-2160-41db-82ce-776adfecc551",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "f7c70645-611c-4108-a740-587d5ccfbdc2",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "7dff5fea-8e28-4fa4-af5c-7de7ec6abfbb",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "186a05f8-5ba5-43fa-9ab8-c7e278ec3416",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "25cb713e-9680-4340-a018-d40e3003b9a1",
+      "result_id": "8b4aa2bc-c19f-4d52-b84e-2d26f9cec3b0"
+    },
+    {
+      "claim_id": "1756925f-1aa4-4d7e-98ba-cd6e6a130672",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "bb3175d3-dd32-4923-aa6a-e59f8beb4de7",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "b9daf101-e349-437e-b309-695e718c71c3",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "368cad40-0f51-49fb-9207-f02c1938b04a",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "a6f16a00-c26a-4ace-93d5-7d2d593fddb0",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "4cfa099c-776f-4672-8249-20ad1e998451",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "17867141-717c-4258-ad7d-a0feb04a637f",
+      "result_id": "4abf4130-cf6a-41e5-b477-1c44e82de998"
+    },
+    {
+      "claim_id": "fb9936f5-8716-4314-8473-c99c5b2e5f61",
+      "result_id": "d2e3f6f5-46da-47e7-9bf6-4f077bc28315"
+    },
+    {
+      "claim_id": "7b8b0374-a180-41ce-a0e0-d8615299175b",
+      "result_id": "06c44b9d-573e-402b-904d-d3fd36705e78"
+    },
+    {
+      "claim_id": "6c03ba7b-995c-41b9-92b4-84bce51edd5e",
+      "result_id": "06c44b9d-573e-402b-904d-d3fd36705e78"
+    },
+    {
+      "claim_id": "0543484d-6dab-4f19-94c5-dd5be23d413b",
+      "result_id": "06c44b9d-573e-402b-904d-d3fd36705e78"
+    },
+    {
+      "claim_id": "f732e46a-7118-43b6-a765-4948b02ca33e",
+      "result_id": "06c44b9d-573e-402b-904d-d3fd36705e78"
+    },
+    {
+      "claim_id": "c5d60ed0-889b-488c-9b98-09da8d4a09c6",
+      "result_id": "06c44b9d-573e-402b-904d-d3fd36705e78"
+    },
+    {
+      "claim_id": "6c4a5d2c-46c3-4e23-852a-de332002e365",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "74e576b7-0d50-4f73-93e2-17c38ac8ef03",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "02b768bf-7841-4cba-89f2-e1786f53df59",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "1719de18-6e72-4796-8cbe-4bd89ad4bfc5",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "88196e97-461b-403c-891b-f65139ed5bbb",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "edc96479-24fb-4321-96ed-2243d11a7410",
+      "result_id": "8e0863b8-3755-4105-8f23-853a287bade9"
+    },
+    {
+      "claim_id": "a0529dfa-4475-4a05-897b-26a6c13e54ea",
+      "result_id": "6649d538-90f3-471e-a902-f6a20719af95"
+    },
+    {
+      "claim_id": "0a3c6d6d-809e-4474-94aa-0e2678acb481",
+      "result_id": "6649d538-90f3-471e-a902-f6a20719af95"
+    },
+    {
+      "claim_id": "1122748c-e427-472f-ab86-2b8e60f35565",
+      "result_id": "2b2137e0-28ad-42f9-82a3-dd36a96767a0"
+    },
+    {
+      "claim_id": "ced39b9c-270f-4f98-b5d6-f09cdd26eb37",
+      "result_id": "2b2137e0-28ad-42f9-82a3-dd36a96767a0"
+    },
+    {
+      "claim_id": "e7f6e6a2-7792-48cd-bddb-56b5fe988567",
+      "result_id": "2b2137e0-28ad-42f9-82a3-dd36a96767a0"
+    },
+    {
+      "claim_id": "fde2bdc1-09c5-44dd-a851-aa1b649fad2e",
+      "result_id": "2b2137e0-28ad-42f9-82a3-dd36a96767a0"
+    },
+    {
+      "claim_id": "dc2d403a-5bb6-4ef3-8e86-3310a3af0785",
+      "result_id": "71530cc3-257c-437e-bed0-9dc3f91ff1e3"
+    },
+    {
+      "claim_id": "af409224-82a3-45b3-8bef-97d6a0ea0a91",
+      "result_id": "71530cc3-257c-437e-bed0-9dc3f91ff1e3"
+    },
+    {
+      "claim_id": "ab970cba-b3e7-44dc-894e-291bbcafff2e",
+      "result_id": "38a9bca7-a017-4b5d-a240-7bc13d9521f6"
+    },
+    {
+      "claim_id": "7a470d25-5f28-471f-89a4-9b3dd351804d",
+      "result_id": "38a9bca7-a017-4b5d-a240-7bc13d9521f6"
+    },
+    {
+      "claim_id": "629e2ea2-414e-4f6c-842d-37aac5da3989",
+      "result_id": "55069293-7601-4b06-9496-9ed4d8f691bc"
+    },
+    {
+      "claim_id": "a7de4549-3627-4f9c-addb-3a1bef378b2d",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "22305332-6557-4e26-b7e8-a1e9ebcb952a",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "a51f06a5-62bc-4f4f-8b42-7ff1b9158024",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "aeeb41d7-bfac-4dc3-aaea-55beaa6a2b0b",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "4aa0fc9e-70f9-42f5-8279-bb6a0f39587b",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "29a741ef-4826-40cd-b6d0-6c607167605a",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "a06c8c53-70b7-4b5b-94db-b56b01b86423",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "7879094b-6651-4d27-95aa-fc78b5517dac",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "8ff37320-d2f2-4afa-aec6-534731579cbd",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "2d9c22e5-83ab-427f-8cbf-65a731a21304",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "59efd652-8c24-4587-a46e-c0f23bf7ae75",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "f79f3d95-94a8-4e0d-a7aa-31d37e04b1b7",
+      "result_id": "cd319bf3-afe2-4fb6-8af4-7b20ba259d6d"
+    },
+    {
+      "claim_id": "21380d0c-aeac-4f3d-b590-09f408d5ba87",
+      "result_id": "43862b36-8856-479a-8c7a-ca416763d57c"
+    },
+    {
+      "claim_id": "67fb3143-980e-44ef-8b76-ffb1e562357c",
+      "result_id": "43862b36-8856-479a-8c7a-ca416763d57c"
+    }
+  ],
+  "comparisons": []
+}

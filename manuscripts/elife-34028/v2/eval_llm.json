@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C61",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The study developed a novel non-invasive MRI technique using ultra-long echo time (142 ms), low b-value diffusion-weighted imaging to visualize and assess perivascular fluid movement in the rat brain. The technique successfully identified fluid-filled perivascular spaces surrounding the middle cerebral artery (MCA) that were consistent with anatomical descriptions from prior invasive studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27, C33-C36, C61, C85-C93 collectively demonstrate successful development and validation of the imaging technique. The ultra-long TE design rationale is sound (C33, C87-C90), with appropriate signal decay calculations (C88). The observed bright tracts around the MCA (C34, C92) are consistent with perivascular spaces based on morphology and comparison with prior anatomical studies (C35, C36). The technical specifications are clearly described (C85-C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multi-direction diffusion-weighted imaging demonstrated significant directional dependence of the pseudo-diffusion coefficient (D*) in perivascular spaces, with D* parallel to PVS orientation significantly greater than perpendicular directions (p<0.01) in both left and right PVS across 10 subjects. Similar directional dependence was observed in subarachnoid CSF, consistent with known rostral-caudal CSF flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 provide strong experimental evidence with appropriate statistical analysis (n=10, p<0.01). The directional dependence of D* measurements (C38, C39) validates sensitivity to fluid movement (C40). The consistency with known CSF flow directions from prior invasive studies (C41, C42) provides external validation. Sample size appears adequate based on power analysis mentioned (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Diffusion tensor imaging (n=6) revealed that mean D* tensor ellipsoids in perivascular spaces aligned with MCA orientation, while subarachnoid space tensors aligned with the known caudal-rostral direction of CSF movement. Fractional anisotropy values were 0.44\u00b10.04 (right PVS), 0.36\u00b10.04 (left PVS), and 0.60\u00b10.02 (subarachnoid space).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C47-C50 demonstrate consistent tensor orientations matching expected anatomical flow patterns, supported by Figure 3. The quantitative FA and MD values (C47, C48) are reported with appropriate error estimates. The alignment with known CSF flow directions (C43) and vessel orientations (C44, C49) provides validation. Sample size (n=6) is modest but appears sufficient for this proof-of-concept demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Post-mortem measurements showed marked reduction in D* tensor magnitude within the perivascular region, demonstrating that D* measurements reflect physiologically-driven fluid movement rather than passive diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide important validation that the measured signal reflects active physiological processes. The post-mortem control (C45) is appropriate and the inference that D* reflects physiologically-driven movement (C46) is reasonable, though the authors acknowledge potential confounding from PVS collapse post-mortem. This control strengthens the interpretation of the technique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C70",
+      "C71",
+      "C72",
+      "C94"
+    ],
+    "result": "ECG-gated imaging (n=5) revealed that D* in perivascular spaces was approximately 300% greater during arterial pulsation compared to diastole when motion probing gradients were applied parallel to PVS orientation (p<0.01), demonstrating that the technique captures the mechanistic dependence of perivascular fluid movement on cerebral vascular pulsation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C59-C60, C70-C72, C94 demonstrate strong cardiac-gating effects with appropriate statistical significance (p<0.01). The ~300% increase during systole (C52, C72) is substantial and biologically plausible. The timing calculations based on pulse wave velocity (C94) appear reasonable. More moderate effects in subarachnoid CSF (C53, p=0.1) and minimal effects in third ventricle (C54, p=0.2) provide appropriate regional specificity. The concordance with prior invasive studies (C59, C70) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C73"
+    ],
+    "result": "Pharmacological modulation with dobutamine (n=6) increased heart rate from 354\u00b18 to 519\u00b117 bpm and produced a 65% increase in D* along perivascular channels (p<0.01), with minimal effects in subarachnoid space (p=0.39) or third ventricle (p=0.30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C73 demonstrate pharmacological validation with appropriate controls (vehicle group mentioned in C56). The heart rate increase (C55) confirms drug efficacy, and the selective increase in PVS D* (C56, p<0.01) with regional specificity (C57-C58) supports the mechanistic link to vascular pulsatility. Sample size (n=6 total, likely n=3 per group based on methods) is modest but adequate for this proof-of-concept experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C21",
+      "C22",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims establish that the glymphatic system is a CSF-mediated clearance pathway involving perivascular fluid movement, aquaporin-4 mediated parenchymal exchange, and clearance of molecules like amyloid beta, with aspects preserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C14, C21-C22, C62-C63 accurately represent established knowledge about the glymphatic system, supported by appropriate citations. These background claims provide necessary context but do not represent novel findings of this study. The characterization of the glymphatic pathway and its components is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C23",
+      "C26",
+      "C69"
+    ],
+    "result": "The study identifies methodological gaps in the field, noting the absence of non-invasive techniques for assessing glymphatic function in humans and ongoing controversies about the precise mechanisms of CSF-ISF exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C16, C23, C26, C69 accurately characterize gaps and controversies in the field. The assertion that no non-invasive techniques existed (C3, C16, C26) is supported by the cited literature showing only invasive methods (C26). The acknowledgment of mechanistic controversies (C23, C69) is appropriate and well-cited. These claims establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The rationale for using diffusion MRI is established based on prior evidence that perivascular channels are central to CSF-ISF exchange, cerebral arterial pulsation drives perivascular fluid movement, and diffusion MRI can detect both water dispersion and bulk flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C28-C32 provide appropriate scientific rationale supported by citations. The choice of diffusion MRI (C30-C31) is well-justified given uncertainty about whether perivascular movement involves bulk flow (C28) or dispersion (C29). The acknowledgment that the technique cannot distinguish between these mechanisms (C31) is appropriately transparent. The role of arterial pulsation (C32) is well-established in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors critically evaluate prior work and discuss limitations, noting that a previous MRI study of PVS in AD lacked validation of signal source, and that their technique may not be sensitive to AQP4-mediated modulation since AQP4 deletion affects parenchymal but not para-arterial tracer movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide appropriate critical assessment. The critique of prior work (C75) is fair and supported by citation. The discussion of AQP4 limitations (C76-C78) is scientifically sound, based on cited evidence that AQP4 deletion affects parenchymal but not para-arterial flow (C77), leading to the reasonable inference about technique sensitivity (C78). This demonstrates appropriate acknowledgment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C20",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors speculate about potential clinical applications including development of AD biomarkers, characterization of age-related clearance impairment, and broader utility in stroke and traumatic brain injury, while noting ongoing efforts toward clinical translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C17-C18, C20, C64, C66-C68, C74, C81-C82 are speculative about future applications. While the potential applications are reasonable given the technique's capabilities, they remain undemonstrated. The speculation is appropriately qualified with terms like 'may' and 'could,' but no validation data in disease models or clinical populations is provided. Claims about ongoing efforts (C81) and near-future translation (C82) lack supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C65",
+      "C79",
+      "C80"
+    ],
+    "result": "Background claims note that CSF-mediated clearance pathways become impaired with age, A\u03b2 accumulation in sporadic AD results from decreased clearance rather than increased production, and glymphatic inflow is linked to extracellular space volume and noradrenaline activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C65, C79-C80 accurately represent findings from cited prior research. These are well-established findings in the literature that provide context for the potential significance of the technique but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C91"
+    ],
+    "result": "Methodological details include regulatory compliance (UK Home Office Animals Act 1986), use of 27 male Sprague Dawley rats distributed across experiments, and power analysis for sample size determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C91 provide appropriate methodological transparency. Regulatory compliance is stated (C83), total animal numbers and distribution are clearly reported (C84), and power analysis for sample size is mentioned (C91). These represent standard methodological reporting rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

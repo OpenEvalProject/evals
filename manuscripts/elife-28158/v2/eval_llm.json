@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The XLFM system achieves whole-brain imaging of larval zebrafish at 77 Hz volume rate with near single-cell resolution (3.4 \u03bcm \u00d7 3.4 \u03bcm \u00d7 5 \u03bcm) over a volume of \u00d8800 \u03bcm \u00d7 400 \u03bcm. The system uses a customized lenslet array at the pupil plane, multifocal imaging with two groups of micro-lenses, and a novel reconstruction algorithm based on optical wave theory. Flashed excitation (200 \u03bcs) enables blur-free imaging during fish movement up to 10 mm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C10, C11 provide direct experimental specifications supported by figures and methods. Claims C15-C18 describe the optical design innovations that enable these capabilities, with supporting citations and figure references. The technical specifications are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "The XLFM imaging performance is limited by focal length variation in the micro-lenses, causing spatial variance of the PSF and degradation beyond \u00d8500 \u03bcm \u00d7 100 \u03bcm volume. While lateral resolution is preserved across \u00d8800 \u03bcm \u00d7 200 \u03bcm when measured from individual micro-lenses, reconstruction quality degrades at the edges. The authors suggest that reducing focal length variation to below 0.3% could preserve optimal resolution over the full designed volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 document observed limitations with supporting figure references (supplements 8-10). Claims C61-C62, C66 distinguish between theoretical capabilities and current implementation, appropriately noting that improvements are speculative. The characterization of limitations is thorough and honest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C33",
+      "C6",
+      "C67",
+      "C68"
+    ],
+    "result": "Through numerical simulation, the authors identified a critical sparseness index \u03c1c \u2248 0.11 (approximately 9,000 of 80,000 neurons active), below which individual neurons can be resolved at optimal resolution. Above this threshold, resolution degrades and a coarse-grained activity map is obtained. Simulations assumed 20,000 photons per neuron with 2.2% collection efficiency and properly considered Poisson noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32-C33 present simulation results with clear methodology (C67-C68) and supporting figures (supplement 11). The sparseness constraint is well-characterized and appropriately acknowledged as a fundamental limitation. The simulation parameters are explicitly stated, enabling reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The 3D tracking system compensates for fish movement at 300 Hz laterally (limited by stage response time) and 100 Hz axially (limited by piezo settling time of ~10 ms). The autofocus system has a closed-loop delay of ~5 ms. This enables retention of the fish head within the field of view during natural behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 state tracking speeds with figure support (3a). Claims C69-C71 identify rate-limiting factors with specific technical details. The system characterization is thorough and identifies bottlenecks clearly. The speeds are sufficient for the application as demonstrated in behavioral experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C22",
+      "C23"
+    ],
+    "result": "During visual stimulation in restrained zebrafish, different groups of neurons in forebrain, midbrain, and hindbrain were activated at different times, suggesting rapid sensorimotor transformation. During prey capture in freely behaving fish, neurons near the contralateral optical tectum were first activated when paramecium entered the visual field, consistent with prior studies identifying this as prey detection circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C22 present experimental observations with supporting figures (1e-f, 4b) and videos. Claim C23 appropriately contextualizes findings with prior literature (Semmelhack et al., 2014; Bianco and Engert, 2015). The neural dynamics are clearly documented and interpretations are conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Eyes converged rapidly when the fish entered the prey capture state, consistent with several earlier findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports a behavioral observation supported by Figure 3c and multiple citations (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013). This is a confirmatory finding that validates the tracking system's ability to capture known behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The tracking system's motion compensation significantly underestimates linear acceleration (vestibular feedback) but preserves angular acceleration during head orientation. Relative flow velocity along the fish body remains invariant and detectable by lateral line hair cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 acknowledge important limitations of the tracking approach with appropriate citations (C36: Coombs, 2014; Liao, 2010). The authors appropriately discuss which sensory modalities are preserved versus perturbed. This honest assessment of limitations strengthens the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Photobleaching reached ~50% after continuous imaging for ~100 min (>300,000 volumes) in zebrafish expressing pan-neuronal nucleus-labeled GCamp6f at 2.5 mW/mm\u00b2 excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 provides quantitative photobleaching characterization with supporting figure (supplement 12) and videos (2-3). The low excitation power and extended imaging duration demonstrate the system's suitability for long-term experiments. Sample size (n=5 fish) is stated in the figure legend.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The current implementation has technical limitations: the piezo scanner has limited axial travel range (400 \u03bcm) and the swimming chamber restrains zebrafish movement to two dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 honestly acknowledge hardware limitations of the current system. These are straightforward technical constraints that are clearly stated and could be addressed in future implementations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "XLFM overcomes critical limitations of conventional light field microscopy (low resolution) and light sheet microscopy (insufficient speed for tracking, difficult side-illumination geometry). XLFM allows simultaneous optimization of imaging volume, resolution, and speed, and can be combined with flashed excitation for blur-free imaging during rapid movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 state advantages with supporting citations. Claims C43-C47 accurately characterize limitations of alternative approaches with appropriate citations (Ahrens et al., 2013; Broxton et al., 2013; Prevedel et al., 2014; P\u00e9gard et al., 2016; N\u00f6bauer et al., 2017). The comparative assessment is fair and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The optical transfer function extends to spatial frequency ~1/3.4 \u03bcm\u207b\u00b9, consistent with designed resolution of 3.4 \u03bcm given the equivalent NA of 0.075 for individual micro-lenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide optical characterization with figure support (supplement 6). The OTF measurement validates the designed resolution, and the consistency between measured and theoretical values strengthens confidence in the system characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Due to blockage by the aluminum micro-lens housing, 16% of light after the 1.05 NA objective is collected by the camera, equivalent to using a 0.4 NA objective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 quantify light collection efficiency and provide an intuitive equivalence. This is an important practical limitation that affects signal-to-noise ratio. The calculation appears straightforward given the geometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "3D volume reconstruction takes approximately 4 minutes using a GPU (Nvidia Titan X), running ~20\u00d7 faster than CPU (Intel E5-2630v2) implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide computational performance benchmarks with specific hardware details. The reconstruction time is reasonable for post-hoc analysis but not real-time. The GPU acceleration factor is substantial and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Real-time behavioral analysis runs at ~120 fps (high magnification) and ~180 fps (low magnification).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 specify real-time analysis speeds for the behavioral tracking system. These speeds are sufficient for the tracking requirements (300 Hz lateral, 100 Hz axial) and demonstrate the system's capability for closed-loop experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Future improvements could include: higher precision machining to reduce focal length variation, more camera pixels to resolve denser samples and achieve higher resolution, recording electrical activity with improved voltage sensors, and using bioluminescent indicators to eliminate excitation light interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C42 propose future improvements and applications. While C39-C40 are reasonable engineering improvements, they remain speculative without implementation. Claims C41-C42 depend on future sensor development (with appropriate citations). These are appropriate forward-looking statements but do not constitute current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6"
+    ],
+    "result": "Larval zebrafish are an attractive model system with small brain size (~80,000 neurons), optical transparency, and rich behavioral repertoire. They can move at instantaneous velocities up to 50 mm/s and accelerations of 1 g (9.83 m/s\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C5-C6 provide background information about the model system with appropriate citations (Severi et al., 2014; Friedrich et al., 2010; Ahrens and Engert, 2015; Hill et al., 2003). These establish the motivation and technical requirements for the imaging system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior work establishes that sensory processing depends on locomotor state, self-motion sensing shapes neural dynamics, and neural activity is sparse. Immobilization perturbs vestibular and proprioceptive feedback, and key behavioral moments (e.g., successful prey capture) cannot be replicated in virtual reality. Current freely swimming zebrafish studies are limited to non-imaging or low-resolution approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C48-C50 provide literature context with extensive appropriate citations. These establish the scientific motivation for developing whole-brain imaging in freely behaving animals. The characterization of prior work limitations is fair and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Whole brain imaging in freely behaving animals has been reported in C. elegans using spinning-disk confocal microscopy with 2D tracking. Howard Berg pioneered 3D tracking microscopy for studying bacterial chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 cite relevant prior work (Venkatachalam et al., 2016; Nguyen et al., 2016; Berg, 1971) that established tracking microscopy approaches. This appropriately contextualizes the current work within the field's history.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C14"
+    ],
+    "result": "The imaging system is a customized upright microscope using a 488 nm, 100 mW laser for excitation, with total magnification ~4\u00d7 (one camera pixel = 6.5 \u03bcm corresponds to ~1.6 \u03bcm on sample). All reconstructions were performed over \u00d8800 \u03bcm \u00d7 400 \u03bcm volume to balance reconstruction time and brain coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C14 provide technical specifications of the imaging system. These are straightforward methodological details that are clearly stated and internally consistent. The choice of reconstruction volume (C14) represents a practical compromise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Zebrafish were raised at 28.5\u00b0C with 14/10 hr light/dark cycle and fed paramecium from 4 dpf. Restrained experiments used 4-6 dpf fish embedded in agarose; freely moving experiments used 7-11 dpf fish. Each experiment was repeated at least three times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe animal husbandry and experimental protocols. These are standard methodological details that are clearly stated. The statement of replicates (C78, n\u22653) is appropriate though minimal statistical detail is provided.",
+    "result_type": "MINOR"
+  }
+]

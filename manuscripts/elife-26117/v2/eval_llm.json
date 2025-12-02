@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "R1-R6 photoreceptors capture 2-4 times more information (610-850 bits/s) when responding to high-contrast bursts compared to Gaussian white noise (200-350 bits/s), with information transfer peaking at 100 Hz bursts. These bursts resemble light input from natural scenes during saccadic viewing, and the improvement results from interspersed fixation intervals that relieve photoreceptors from refractoriness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19-C24 provide quantitative experimental measurements with appropriate sample sizes (n=4-16 cells) and statistical comparisons. The signal-to-noise ratios (~6,000 maximum) and information rates are calculated using established Shannon formula methods. Model simulations (C7) provide mechanistic support for the refractoriness hypothesis. The correspondence between burst stimuli and natural saccadic viewing (C6) is demonstrated through stimulus analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A biophysically realistic photoreceptor model with 30,000 microvilli transferred 633\u00b120 bits/s for 100 Hz bursts, closely matching real R1-R6 performance. The ~200 bits/s difference between some recordings and model predictions is attributed to extra information from neighboring photoreceptors through neural superposition, with R6 photoreceptors receiving the most due to large rhabdomeres and gap-junctions to R8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides quantitative model results that match experimental data within reasonable bounds. Claims C26-C27 offer plausible explanations for the model-data discrepancy, supported by anatomical evidence (Figure 5) and citations to prior connectivity studies. However, the exact contribution of network information remains somewhat inferential, as the model lacks these connections and direct measurements of information flow through gap junctions are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Saccadic viewing of natural images transforms light input to resemble bursty high-contrast stimulation that maximizes photoreceptor information. Saccadic walks contained fixation periods with ~63% higher histogram peaks and ~18% higher flanks for large intensity differences compared to linear walks (p=3.65\u00d710\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide quantitative experimental findings with statistical validation. The transformation of natural scene viewing into burst-like stimulation is demonstrated through histogram analysis (Figure 6D) with appropriate statistical tests. Claim C28 establishes the behavioral context through cited literature. The connection between saccadic behavior and optimal photoreceptor stimulation is well-supported by converging evidence from multiple stimulus types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "R1-R6 photoreceptors resolved two fast-moving dots (6.8\u00b0 apart) as distinct peaks despite receptive field widths (\u0394\u03c1_dark=9.47\u00b11.57\u00b0, n=19; \u0394\u03c1_light=7.70\u00b11.27\u00b0, n=6) that should blur them according to classic Volterra models. This hyperacuity was intrinsic to photoreceptors, as hdcJK910 mutants lacking synaptic transmission resolved dots equally well as wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide quantitative measurements with appropriate sample sizes. The failure of classic models (C35-C36) is clearly demonstrated through direct comparison. The hdcJK910 mutant experiments (C37-C38) provide strong evidence that hyperacuity is intrinsic rather than network-dependent. However, the exact mechanism enabling this performance beyond classic predictions requires the photomechanical explanation developed in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "R1-R6 recordings showed phasic directional selectivity, with responses rising and decaying faster (2-10 ms lead at half-maximal values) to back-to-front than front-to-back moving dots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports a clear experimental observation shown in Figure 7G with quantitative timing differences. This directional selectivity is consistent with the photomechanical mechanism proposed later, though the claim itself is purely descriptive of the observed phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "High-speed video microscopy revealed that rhabdomeres moved 0.2-1.2 \u03bcm (up to half their width) in 8-20 ms after light flashes, reaching maxima in 70-200 ms. Movements occurred in back-to-front direction along the eye's equatorial plane. The ommatidium lens remained nearly stationary while rhabdomeres moved ~2 times more than the cone/pigment cell aperture and ~10 times more than the lens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C44-C46 provide quantitative measurements from high-speed video recordings with clear temporal and spatial resolution. The differential movement of optical components (C45-C46) is demonstrated through z-axis scanning (Figure 8F, Video 4). Claim C40 appropriately cites prior work establishing the photomechanical basis. The measurements are internally consistent and supported by multiple flies (n=5-21 depending on analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The microsaccadic sampling model incorporating photomechanical rhabdomere contractions closely predicted R1-R6 responses to two moving dots. Early behavioral experiments suggested similarly narrow acceptance angles (~3.5\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 demonstrates good correspondence between model predictions and experimental recordings (Figure 8I, Figure 8\u2014figure supplement 1). The model incorporates measured photomechanical movements and predicts light input modulation that drives realistic photoreceptor outputs. Claim C48 provides independent historical support from behavioral studies, though these are less direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The microsaccadic sampling model predicts that photoreceptors can resolve image details at 1\u00b0 resolution when moving at 10\u00b0/s, with 3\u00b0-apart dots visible at 5-100\u00b0/s and 4\u00b0-apart dots even during fast saccades (200-300\u00b0/s). Intracellular recordings corroborated these predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present model predictions shown in Figure 9A-B with clear speed-resolution relationships. Claim C51 provides experimental validation through intracellular recordings (Figure 9C, Figure 9\u2014figure supplement 1) that match model predictions. The correspondence between predictions and measurements supports the model's validity, though the exact boundaries of hyperacute vision depend on model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Optomotor behavior experiments demonstrated that every tested fly (n=9) responded consistently to hyperacute bar stimuli down to ~1\u00b0 resolution (<4.5\u00b0 interommatidial angle). Responses followed rotation direction changes (not aliasing) and declined with increasing speed as predicted, confirming that Drosophila see at least 4-fold finer detail than previously thought, even at saccadic speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide behavioral validation of the hyperacuity predictions. Every fly responded to hyperacute stimuli (C52), with responses following direction changes ruling out aliasing (C53). The speed-dependent decline (C55) matches model predictions (Figure 9A). The 4-fold improvement claim (C54, C56) is directly supported by the ~1\u00b0 behavioral resolution versus ~4.5\u00b0 optical limit. Sample size (n=9 flies) is adequate for behavioral consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The dynamic interplay between saccades and gaze fixation maintains and enhances vision at the photoreceptor level through four mechanisms: intracellular pupil (1-10 s), photomechanical rhabdomere contractions (0.01-1 s), refractory photon sampling, and network inputs. These mechanisms sharpen neural resolvability by ~4-fold below the theoretical optical limit with low noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 synthesize the major findings into a coherent mechanistic framework. The four mechanisms are each supported by experimental evidence presented earlier. The ~4-fold improvement (C60) is validated by behavioral experiments. The low noise of photomechanical modulations (C59) is shown in Figure 2\u2014figure supplement 2. This represents a well-supported integration of multiple experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "With microsaccadic sampling, a fly's behavioral decisions govern its visual information/acuity trade-off. Slow scanning during fixation maximizes spatial detail, while faster saccadic locomotion increases temporal information capture with minimal loss of spatial detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present logical conclusions from the experimental findings about speed-dependent resolution (Figure 9) and information transfer (Figures 1-2). The trade-off between temporal information and spatial acuity is demonstrated experimentally. However, these claims extend somewhat beyond direct measurements to predict optimal viewing strategies, making them partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The extraction of phasic stimulus features characterizing object boundaries and line elements begins during photon sampling and integration in microvilli, at the first processing stage rather than later in the retinal network or brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is a reasonable inference from the findings that photoreceptors themselves (not network processing) generate phasic responses to moving objects through intrinsic photomechanical mechanisms. The hdcJK910 experiments (C37-C38) support that this occurs without network feedback. However, this claim is more interpretive than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Optimal viewing strategy prediction: animals should fixate gaze on darker features to resensitize photoreceptors by relieving refractory sampling units, then rapidly move gaze across to brighter areas as saccadic crossings over high-contrast boundaries enhance information intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 present predictions about optimal viewing strategies based on the refractoriness findings. While these predictions are logical extensions of the experimental results, they are not directly tested. The manuscript provides no behavioral experiments demonstrating that flies actually employ these specific strategies or that such strategies are optimal in natural contexts. These remain plausible but unvalidated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "If information sampling biophysics in vertebrate rods and cones were matched to microsaccadic eye movements, this could explain how saccadic gaze fixation provides stable perception while curtailing motion blur effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is purely speculative, extending the Drosophila findings to vertebrate vision without any supporting data. While the hypothesis is interesting and the analogy reasonable given the prevalence of microsaccades across species, this represents speculation rather than a tested result. No experiments on vertebrate photoreceptors or comparisons of their biophysics to Drosophila are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background knowledge establishing Drosophila eye anatomy (~750 ommatidia with 8 photoreceptors each, \u0394\u03c6=4.5\u00b0), basic principles of visual acuity (requiring 3 photoreceptors for stationary objects, limited by integration time and receptive field for moving objects), and the prevalence of saccadic viewing behaviors across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C13-C18 present well-established background knowledge appropriately cited to prior literature. These provide necessary context for understanding the significance of the experimental findings. The anatomical facts (C1-C4) and visual acuity principles (C13-C15) are standard knowledge in the field. The behavioral context (C16-C18) is well-documented across species.",
+    "result_type": "MINOR"
+  }
+]

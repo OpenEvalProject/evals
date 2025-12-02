@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Ionic strength strongly affects formin dissociation rate but has limited impact on elongation rate. Higher KCl concentrations increase formin dissociation rates (C3, C37), while elongation rates remain relatively stable (C38). This effect is attributed to destabilization of FH2-barbed end interactions by ions (C74), confirming the importance of salt bridges in FH2-actin interactions predicted by molecular dynamics simulations (C75, C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C38 are directly supported by experimental data in Figure 2A,B showing dose-dependent effects of KCl on dissociation but not elongation. Claims C74, C76 provide mechanistic interpretation consistent with cited computational predictions (C75). The experimental design appropriately controls for ionic strength effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C77",
+      "C78"
+    ],
+    "result": "Alexa 488 labeling of actin on lysine 328 differentially affects formin-mediated versus formin-free elongation. Labeling has no measurable impact on formin-free barbed end elongation (C39) but significantly slows formin-mediated elongation (C40) and enhances formin dissociation rate (C41). This suggests FH2-actin lateral contacts are essential for formin processivity (C77, C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by experimental data in Figure 2C,D. The differential effect on formin-mediated versus formin-free elongation provides strong evidence for the mechanistic interpretation (C77, C78). The authors appropriately validated their findings using unlabeled actin controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Formin dissociation rate increases with actin concentration and elongation rate, but this relationship depends on profilin concentration. While elongation rate scales with actin concentration (C42), the formin dissociation rate also increases with actin concentration (C43, C4), with the amplitude of this increase depending significantly on profilin concentration (C44). Consequently, there is no universal scaling of dissociation rate with elongation rate (C45, C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are directly supported by experimental data in Figures 3A,C and Figure 3\u2014figure supplement 1. The inference that no universal scaling exists (C45, C46) logically follows from the observation that identical elongation rates can be achieved with different dissociation rates by varying actin and profilin concentrations. This challenges prior models proposing simple scaling relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Profilin decreases formin dissociation rate independently of its effect on elongation rate. The dissociation rate decreases with increasing profilin concentration (C47, C6), even in the lower profilin concentration range where elongation rate greatly increases (C48, C50). This indicates profilin itself reduces formin detachment independently of the barbed end elongation rate (C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C49 are supported by experimental data in Figure 3B,D showing biphasic effects of profilin on elongation but monotonic decrease in dissociation rate. The key observation (C50) that dissociation decreases even when elongation increases strongly supports the inference (C51) that profilin has an elongation-independent stabilizing effect. This is a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "FH1 polyproline tracks are responsible for profilin-mediated reduction in formin dissociation rate. A truncated mDia1 construct with only 2 polyproline tracks (FH1(2PP)-FH2-DAD) still shows reduced dissociation with profilin (C53) and enhanced elongation (C52), but has consistently higher dissociation rates than wild-type across all profilin concentrations (C54). This confirms dissociation rate does not generally scale with elongation rate (C55) and suggests FH1 polyproline tracks mediate the profilin-dependent stabilization (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by experimental data in Figure 3B. The truncation experiment provides strong evidence for the role of FH1 domains, as the truncated construct retains partial function but shows quantitatively different behavior. The inference (C56) is well-supported by the structure-function relationship demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "FH1 domains are required for profilin to decrease formin dissociation rate independently of elongation rate. Experiments with FH2-DAD dimers (lacking FH1) show that excess profilin reduces dissociation only by slowing elongation (C57, C58), indicating FH1 is required for the elongation-independent effect (C59). FH1 domains alone have no impact on processivity without profilin (C60, C61). Mutant profilin-R88E, which binds FH1 but not actin, has no impact on processivity (C62, C63), indicating profilin-actin/barbed end interaction is required (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by experimental data in Figure 3E comparing FH2-DAD and FH1-FH2-DAD constructs. Claims C62-C64 are supported by data in Figure 3\u2014figure supplement 2. The combination of domain deletion and point mutation experiments provides strong evidence for the mechanistic model requiring both FH1 and profilin-actin interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Profilin stabilizes formin processivity through a 'ring complex' mechanism involving FH1 domains. Since both FH1 domains and profilin-actin interactions are required (C79), the results support a model where FH1 delivers profilin-actin via a 'ring complex' where profilin simultaneously contacts the barbed end and FH1 polyproline tracks (C80). This configuration likely creates a steric obstacle to FH2 dissociation (C81, C82, C83). This confers a dual function to profilin: enabling rapid elongation while maintaining formin at the barbed end (C84, C85). Truncated FH1 constructs retain both functions (C86), consistent with prior work showing proximal polyproline tracks are sufficient (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are well-supported by the experimental data from domain deletion and mutant profilin experiments. Claims C81-C83 represent reasonable mechanistic speculation based on the ring complex model from cited literature (Vavylonis et al., 2006) and the experimental observations. Claims C84-C87 are supported by experimental data in Figure 3B and citations. The model is internally consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Piconewton tensile forces dramatically increase formin dissociation rate by orders of magnitude, largely overcoming profilin-mediated stabilization. Applied force increases dissociation rates exponentially (C7, C67), with ~74% of formins remaining functional after force application (C68). Differences in dissociation rates due to actin concentration converge under force (C69), and force increases dissociation similarly with or without profilin (C70, C8). Similar force-dependence is observed for FH2 dimers alone and FH1-FH2 dimers anchored via either domain (C71, C72), indicating FH1 domains do not participate in mechanical modulation (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C72 are strongly supported by experimental data in Figure 4B-F. The control experiment (C68, Figure 4\u2014figure supplement 1) validates that observed detachments represent formin-filament dissociation rather than formin detachment from the surface. The convergence of dissociation rates under force (C69, C70) and similar behavior across constructs (C71, C72) provide strong evidence for the inference (C73) that force acts primarily on FH2-actin interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C107",
+      "C108"
+    ],
+    "result": "Mechanical tension plays a dominant role in modulating formin processivity that cannot be easily compensated by biochemical factors. FH1-profilin-mediated stabilization does not resist pulling forces (C88), and mechanical tension plays a dominant role in processivity modulation (C107). The dramatic enhancement of dissociation upon piconewton force application appears difficult to compensate with actin and profilin concentrations (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C107 are well-supported by the experimental data showing force effects dominate over profilin effects (Figure 4C-F). Claim C108 is a reasonable inference from comparing the magnitude of force effects (orders of magnitude) versus biochemical effects (typically less than 10-fold). This represents a key conclusion about the relative importance of mechanical versus biochemical regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Different factors modulate formin processivity and filament length in distinct ways, with differences between mDia1 and mDia2. Increasing actin concentration increases elongation while reducing processivity, resulting in moderate filament length changes (C89). Increasing profilin efficiently generates longer filaments by increasing both processivity and elongation (C90). Applied tension drastically decreases filament length (C91), with typical 10-fold reduction every 3 pN for both formins (C92). mDia2 elongates more slowly but is far more processive than mDia1, producing much longer filaments (C93, C94), with differences reflecting FH2-DAD domain properties (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by experimental data in Figure 5A-C and Figure 4\u2014figure supplement 3. Claims C93-C95 are supported by comparative data throughout the study. The analysis appropriately integrates processivity and elongation rate to predict filament length, providing functional context for the measured kinetic parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C96",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A two-pathway dissociation model explains force-dependent formin processivity. The FH2 dimer goes through a transient, weakly bound transition state upon actin subunit addition (C96), allowing dissociation via two routes: from the open state during open-closed equilibrium (rate koffO) or from the transition state following subunit addition (rate koffT) (C102, C9). At zero force, koffT dominates as evidenced by strong actin concentration dependence (C103). Under force, dissociation rates for different actin concentrations converge (C104), consistent with koffO increasing more strongly with force than koffT and becoming dominant at high force (C105, C106, C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C102 describe the mathematical model developed in the paper. Claims C103-C106 represent model predictions that are consistent with experimental observations in Figures 3A,C and 4C,F. The model provides a mechanistic framework that unifies observations across different experimental conditions. While the model involves assumptions, it makes testable predictions that match the data qualitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on formin biology and prior knowledge. Formins are major regulators of actin networks (C1, C2) responsible for generating elongated, unbranched structures in cells (C11, C12) and linked to various pathologies (C13-C15). Formins function as homodimers (C16, C17) with FH1 and FH2 domains mediating barbed end tracking and elongation (C18-C22). Formin processivity, quantified by dissociation rate, determines functional outcomes (C23-C26). Prior work revealed isoform differences (C27), regulatory mechanisms (C28-C30), and proposed scaling with elongation velocity (C33, C34). The impact of pulling forces on processivity was an open question (C35, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature (C1-C2, C5, C11-C32) or identify the knowledge gap addressed by the study (C33-C36). All are appropriately cited or represent standard definitions. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior models of formin conformational dynamics. Structural studies led to proposals of open-closed equilibrium between elongation-competent and elongation-forbidding states (C97). The 'stair-stepping' model associates FH2 translocation with this equilibrium (C98), while the 'stepping-second' model proposes translocation occurs after subunit addition (C99). Prior work including the authors' suggests the open-closed equilibrium corresponds to one monomer working distance, consistent with stair-stepping (C100, C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe prior models from the literature (C97-C99) and cite relevant work (C100-C101). They provide theoretical context for interpreting the current results but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Implications for cellular formin function and future directions. In cells, filaments are likely tensed by myosin activity (C109), raising questions about how formins remain membrane-associated under force. Possible mechanisms include alternative anchoring strategies or reinforcement by other factors (C110), rapid rebinding in filament bundles (C111), or stabilization by regulatory proteins (C112, C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 represents established knowledge. Claims C110-C113 are speculations about cellular mechanisms that could explain the apparent paradox revealed by the in vitro findings. These are reasonable hypotheses for future investigation but lack experimental support in the current study. The speculation is appropriate for a Discussion section but does not constitute a supported result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "EPCAM is a cell surface marker that specifically identifies the pancreatic epithelial fraction in human fetal pancreas (7-12WD), which is enriched in PDX1+NKX6-1+ pancreatic progenitors, while the EPCAM- fraction represents mesenchymal cells lacking pancreatic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 provide converging evidence from immunohistochemistry (C17), flow cytometry (C18), and RT-qPCR (C19) demonstrating that EPCAM+ cells co-express pancreatic progenitor markers PDX1 and NKX6-1, while EPCAM- cells lack these markers. The data are internally consistent and supported by appropriate controls (CD45/CD31 exclusion). Claims C114-C116 provide supporting context from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C112"
+    ],
+    "result": "At 7WD, GP2 marks a multipotent pancreatic progenitor population (96\u00b11% of epithelial cells) that subsequently differentiates into four distinct populations based on GP2 and ECAD expression: GP2hi, GP2+, GP2-, and Elow, with temporal dynamics suggesting GP2+ cells give rise to either GP2hi (acinar) or GP2-/Elow (endocrine) lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 provide robust temporal flow cytometry data showing sequential emergence of populations with statistical significance (p<0.05). Claim C26 demonstrates reproducibility across samples. However, the multipotency claim (C1) is based on inference from temporal data and transcriptomic profiling rather than direct lineage tracing. The proposed differentiation trajectory (C32) is a reasonable inference but lacks definitive proof of lineage relationships. Claim C112 (45% express lower PDX1/NKX6-1) is inferred from Figure 1E showing 55% double-positive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The GP2hi population represents acinar-committed cells, as evidenced by enrichment of acinar markers (CEL, CELA3A, CTRC) and 85% overlap with adult acinar cell gene expression, while GP2 expression increases during acinar differentiation from 3\u00b11% at 9.4WD to 20\u00b15% at 12WD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36, and C38 provide converging evidence from GSEA, comparative transcriptomics with adult pancreas data, and RT-qPCR validation. The temporal increase in GP2hi frequency (C31, C2) with corresponding acinar marker enrichment supports the acinar lineage assignment. The 85% overlap with adult acinar genes (C36) provides strong validation, though the comparison relies on published single-cell data from Segerstolpe et al. (2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C90"
+    ],
+    "result": "Endocrine differentiation initiates in the GP2- population with NEUROG3 expression at 8.4WD, followed by maturation in the Elow population characterized by decreased ECAD levels and enrichment of endocrine transcription factors and hormones, with 98-100% of Elow-enriched genes overlapping with adult endocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 show temporal NEUROG3 expression data with appropriate controls. Claims C35, C37, and C40 provide transcriptomic validation with strong overlap to adult endocrine cells. The ECAD downregulation (C4, C88, C90) is supported by flow cytometry data showing emergence of Elow population at 8.6WD. However, the mechanistic link between ECAD downregulation and endocrine maturation is correlative rather than causative. The inference that endocrine progenitors 'differentiate' in GP2- and 'mature' in Elow (C43) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The GP2- population is heterogeneous, containing both ductal-like cells (78% CFTR+NEUROG3-) and endocrine progenitors (16% NEUROG3+), with 60% of NEUROG3+ cells co-expressing the ductal marker CFTR, suggesting endocrine progenitors may arise from ductal-like precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C63-C65 are supported by single-cell RT-qPCR data (Figure 6D) showing cellular heterogeneity. The co-expression of CFTR and NEUROG3 (C65) is particularly interesting, though the interpretation that endocrine cells arise from ductal precursors is speculative. The single-cell analysis provides strong evidence for heterogeneity but sample size (172 cells) may be limited for rare populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CD142 and SUSD2 further subdivide the GP2- and Elow populations into three subsets (CD142+SUSD2-, CD142-SUSD2-, CD142-SUSD2+), with temporal dynamics showing sequential downregulation of CD142 (95\u00b12% to 62\u00b12% in GP2-), followed by SUSD2 upregulation, and finally ECAD decrease during endocrine differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 provide detailed temporal flow cytometry data with statistical significance (p<0.05) and consistent patterns across developmental stages. The sequential marker expression changes (C55) represent a reasonable inference from the temporal data. However, the proposed linear progression is based on population-level dynamics rather than single-cell tracking, so alternative differentiation paths cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Endocrine progenitors first appear in the GP2-CD142-SUSD2- subset at 8.4WD expressing NEUROG3, then mature in the ElowCD142-SUSD2+ subset (74% NEUROG3+, 100% NEUROD1+, 83% NKX2-2+) at 8.6WD, with INS expression first detected in SUSD2+ cells and later in SUSD2- cells, suggesting progressive endocrine maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide RT-qPCR data showing temporal and spatial segregation of endocrine markers. Single-cell data (C66-C67) demonstrate that ElowCD142-SUSD2+ cells are highly enriched for co-expression of endocrine markers. The proposed maturation sequence (C61-C62) is well-supported by the temporal appearance of markers, though the interpretation assumes a linear progression. The ElowCD142+SUSD2- subset lacking endocrine markers (C56) serves as an appropriate control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In vitro differentiation of hPSCs into pancreatic endocrine cells recapitulates key in vivo developmental events, including the emergence of three populations (ECAD+CD142+, ECAD+CD142-, ECADlowCD142-) with similar marker expression patterns and temporal dynamics of CD142/SUSD2 expression as observed in human fetal pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide comparative flow cytometry and RT-qPCR data between hPSC-derived cells and fetal pancreas showing similar population structures and marker expression. The temporal dynamics (C72) show statistically significant changes (p<0.05) paralleling fetal development. However, the comparison is limited to stage 5 of differentiation and selected markers. The claim that hPSC differentiation 'mimics key in vivo events' (C5, C73) is supported but may overstate the similarity, as functional maturation and other aspects are not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C100"
+    ],
+    "result": "GP2+CD142+ pancreatic progenitors represent a bifurcation point that can differentiate into either GP2hiCD142+ acinar cells or enter the endocrine pathway by downregulating GP2 and CD142, allowing reconstruction of the pancreatic differentiation program using cell surface markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 represents a synthesis of the temporal marker expression data and transcriptomic profiling. While the bifurcation model is consistent with all presented data, it remains an inference rather than direct proof, as lineage tracing was not performed. Claim C100 accurately summarizes the achievement of using cell surface markers to isolate functionally enriched populations, which is well-supported by the combined flow cytometry, transcriptomic, and RT-qPCR data throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C13",
+      "C14",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C94",
+      "C95",
+      "C101"
+    ],
+    "result": "The manuscript addresses a significant gap in understanding human pancreatic development, which differs from rodent models in key aspects (NEUROG3 expression patterns, islet architecture, transcription factor expression), and is necessary for improving hPSC-derived beta cell generation for diabetes therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C74-C77 accurately cite published literature establishing the rationale for the study. Claims C13-C14 correctly identify limitations in human developmental studies. Claims C78-C79 and C94-C95 appropriately cite literature on limitations of current hPSC differentiation protocols. Claim C101 represents the authors' assessment of novelty, which appears justified given the comprehensive marker-based approach. All background claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C113"
+    ],
+    "result": "The manuscript accurately describes established knowledge of pancreatic anatomy, development, and the developmental timeline (7-13WD in human corresponding to E12.5-E17 in mouse), including the roles of PDX1, NKX6-1, NEUROG3, GP2, and ECAD based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C80-C85 describe well-established anatomical and developmental biology knowledge, appropriately supported by citations. Claim C113 provides comparative developmental timing between human and mouse. Claim C89 cites mouse data on ECAD function. All claims accurately represent prior knowledge and are appropriately cited. These provide necessary context but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior studies have identified GP2 as a marker of hPSC-derived pancreatic progenitors, ECAD as regulated during endocrine differentiation, CD142 as a pancreatic endodermal marker, SUSD2 as enriching for NEUROG3+ cells, and FACS-based approaches as successful in hematopoiesis, though CD49f/CD133 showed limited enrichment for NEUROG3+ cells in human fetal pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C91-C92 appropriately cite recent literature identifying these markers. Claims C96-C98 provide context for the FACS-based approach and acknowledge limitations of prior marker combinations. All claims are appropriately supported by citations and provide relevant background for the current study's marker selection strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "SUSD2 does not mark all NEUROG3+ cells but specifically marks a subset co-expressing NEUROD1 and NKX2-2, refining the understanding of SUSD2 as an endocrine progenitor marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is directly supported by single-cell RT-qPCR data (Figure 6D,E) showing NEUROG3+ cells in both SUSD2+ and SUSD2- subsets, with SUSD2+ cells showing higher co-expression of NEUROD1 and NKX2-2. This refines prior work by Liu et al. (2014) and represents an important clarification about the specificity of SUSD2 as a marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "At 7WD, GP2+ pancreatic progenitors express high levels of ECAD, and ECADlow cells first appear at 8.6WD with increasing frequency during development, paralleling the pattern observed in mouse and chick development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by flow cytometry data (Figure 2C,D) showing ECAD expression patterns. However, C86 is partially inferred from the data rather than directly measured at 7WD. The parallel to mouse/chick development provides biological plausibility but the human-specific timing and dynamics represent novel observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study used human fetal pancreases (7-13WD) obtained with appropriate ethical approval and three validated hPSC lines (SA121, SB Ad2.1, SB3.1) differentiated using a modified Rezania et al. protocol with CHIR99201 instead of MCX-928, MCDB131 instead of BLAR medium, and 2D culture throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 describe the materials and methods used in the study. Ethical approval is documented (C103), cell line characterization is described (C107), and protocol modifications are clearly stated (C108-C111). These methodological details are appropriately documented and appear sufficient for reproducibility, though some details (e.g., antibody validation, gating strategies) would benefit from additional documentation.",
+    "result_type": "MINOR"
+  }
+]

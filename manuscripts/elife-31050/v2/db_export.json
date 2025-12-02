@@ -1,0 +1,2175 @@
+{
+  "submission": {
+    "id": "9144a634-39b7-4739-970a-4c39f97cf0c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:11:56.001213Z",
+    "updated_at": "2025-12-01T22:11:56.001213Z"
+  },
+  "content": [
+    {
+      "id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "submission_id": "9144a634-39b7-4739-970a-4c39f97cf0c0",
+      "content_type": "manuscript",
+      "content_text": "# Computational modeling of spinal circuits controlling limb coordination and gaits in quadrupeds\n\n## Authors\n\n- Simon M Danner<sup>1</sup> ([ORCID: 0000-0002-4642-7064](https://orcid.org/0000-0002-4642-7064)) \u2020\n- Natalia A Shevtsova<sup>1</sup>\n- Alain Frigon<sup>2</sup>\n- Ilya A Rybak<sup>1</sup> ([ORCID: 0000-0003-3461-349X](https://orcid.org/0000-0003-3461-349X))\n\n### Affiliations\n\n1. Department of Neurobiology and Anatomy Drexel University College of Medicine Philadelphia United States\n2. Department of Pharmacology-Physiology Universit\u00e9 de Sherbrooke Sherbrooke Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nInteractions between cervical and lumbar spinal circuits are mediated by long propriospinal neurons (LPNs). Ablation of descending LPNs in mice disturbs left-right coordination at high speeds without affecting fore-hind alternation. We developed a computational model of spinal circuits consisting of four rhythm generators coupled by commissural interneurons (CINs), providing left-right interactions, and LPNs, mediating homolateral and diagonal interactions. The proposed CIN and diagonal LPN connections contribute to speed-dependent gait transition from walk, to trot, and then to gallop and bound; the homolateral LPN connections ensure fore-hind alternation in all gaits. The model reproduces speed-dependent gait expression in intact and genetically transformed mice and the disruption of hindlimb coordination following ablation of descending LPNs. Inputs to CINs and LPNs can affect interlimb coordination and change gait independent of speed. We suggest that these interneurons represent the main targets for supraspinal and sensory afferent signals adjusting gait.\n\n## Introduction\n\nTo effectively move in the environment, limbed animals use different gaits depending on the desired locomotor speed (Grillner, 1981; Hildebrand, 1989). Mice change gait from walk to trot followed by gallop and bound as locomotor speed increases (Clarke and Still, 1999; Herbin et al., 2004; Herbin et al., 2007; Bellardita and Kiehn, 2015; Lemieux et al., 2016). Each gait is characterized by a distinct pattern of limb movements (Hildebrand, 1989), which in turn is defined by neural interactions between spinal circuits controlling each limb.\n\nIt is generally accepted that each limb is controlled by a separate central pattern generator (CPGs), because cats are able to walk on split-belt treadmills with limbs stepping at different speeds (Forssberg et al., 1980; Halbertsma, 1983; Frigon et al., 2013, 2015; Thibaudier et al., 2013; Frigon, 2017). Hence, quadrupedal locomotion is controlled by four CPGs (one per limb) located in separate sections of the spinal cord, specifically on the left and right side in the lumbar and cervical enlargements (Kato, 1990; Ballion et al., 2001; Juvin et al., 2005; Juvin et al., 2012). Therefore, the central control of interlimb coordination and gait expression is defined by neurons and neuronal pathways that mediate interactions between circuits controlling each limb. These interlimb pathways are mediated by (a) short projecting commissural interneurons (CINs) that control left-right interactions at the lumbar and, presumably, cervical levels (Talpalar et al., 2013; Bellardita and Kiehn, 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016), and (b) descending (cervical-to-lumbar) and ascending (lumbar-to-cervical) long propriospinal neurons (LPNs) that control homolateral and diagonal cervical-lumbar interactions (Matsushita et al., 1979; Skinner et al., 1979, 1980; Men\u00e9trey et al., 1985; Nathan et al., 1996; Dutton et al., 2006; Brockett et al., 2013; Ruder et al., 2016; Flynn et al., 2017).\n\nThe role and speed-dependent involvement of genetically identified CINs, specifically V0V and V0D, in alternation and expression of different gaits have been experimentally investigated (Talpalar et al., 2013; Bellardita and Kiehn, 2015). Specifically, it was shown that mutants lacking V0V CINs selectively lose trot, and mutants lacking both V0V and V0D CINs can only bound at any speed (Bellardita and Kiehn, 2015; Kiehn, 2016). Using modeling (Danner et al., 2016), we presented a possible organization of the central pathways mediating interlimb coordination that exhibited speed-dependent gait expression and the correct loss of gaits after selective removal of V0V and both V0V and V0D CINs. These V0 interneurons may contain both short projecting CINs as well as diagonally projecting LPNs (Ruder et al., 2016).\n\nLPNs that directly couple the cervical and lumbar segments have been anatomically identified (Edinger, 1896; Nathan and Smith, 1959; Matsushita et al., 1979; Skinner et al., 1979; Skinner et al., 1980; Men\u00e9trey et al., 1985; Nathan et al., 1996; Dutton et al., 2006; Brockett et al., 2013; Flynn et al., 2017). Several studies in vitro found that LPNs can be involved in coordination of left-right and cervical-lumbar activities recorded from four ventral roots (Ballion et al., 2001; Juvin et al., 2005; Juvin et al., 2012; Cowley et al., 2010). However, their role in speed-dependent gait expression in vivo, remains poorly understood. Recently, Ruder et al. (2016) described axonal projections of different LPNs and their synaptic and genetic properties. These data differ from the connections proposed in our previous model (Danner et al., 2016). In addition, Ruder et al. (2016) have shown that deletion of descending (cervical-to-lumbar) LPNs causes a speed-dependent distortion of left-right coordination. These new findings provided us with the information needed to revise our model and investigate the role of different LPN pathways in interlimb coordination and gait control during locomotion.\n\nIn locomotion induced by stimulation of the mesencephalic locomotor region (MLR), increasing the intensity of stimulation causes an increase of locomotor speed accompanied by sequential gait transitions (Orlovski\u012d et al., 1966; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984; Grillner, 1985; Atsuta et al., 1990; Nicolopoulos-Stournaras and Iles, 2009). From these observations, we hypothesized that the same brainstem drive that controls speed by exciting the rhythm generators also affects interlimb coordination by acting on CINs or LPNs (Danner et al., 2016). This hypothesis is in accordance with multiple data confirming that different CINs and LPNs receive supraspinal inputs (Lloyd, 1942; Lloyd and McIntyre, 1948; Bannatyne et al., 2003; Jankowska et al., 2003; Cowley et al., 2010; Zaporozhets et al., 2011). However, the involvement of these neurons in mediating brainstem control of gait has not been demonstrated. Therefore, organization and role of brainstem inputs to these neurons can so far only be based on predictions derived from computational models.\n\nHere, we present a computational model of the spinal locomotor circuits and investigate the potential role of CINs and LPNs in the control of and transition between different locomotor gaits. The model reproduces the speed-dependent gait expression in intact and genetically transformed mice, lacking V2a, V0V, and all V0 neurons (Crone et al., 2009; Bellardita and Kiehn, 2015), as well as the disruption of hindlimb coordination following ablation of descending LPNs (Ruder et al., 2016). The model proposes the following roles for LPNs: diagonal V0D LPNs supports walk, diagonal V0V LPNs together with local V0V CINs stabilize trot, and homolateral LPNs ensure fore-hind alternation in all gaits. Finally, we show that additional external inputs to CINs and LPNs may affect interlimb coordination and gait expression independent of speed. We suggest that these spinal interneurons are the main targets of supraspinal and somatosensory afferents to adjust interlimb coordination and gait to different environmental and behavioral conditions.\n\n## Results\n\n### The model\n\nThe model consists of four rhythm generators (RGs), each controlling one limb (Figure 1). These RGs interact via several bidirectional pathways mediated by CINs (left-right) and LPNs (homolateral and diagonal). Neural populations were modeled with a simplified, 'activity-dependent\u2019 population model (see Materials\u00a0and\u00a0methods). Each RG consisted of a flexor (F) and extensor center (E) that mutually inhibited each other through intermediate inhibitory interneurons (InF and InE, respectively). Similar to our previous models (Rybak et al., 2006a, 2006b, 2013, 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016), both centers incorporated a slowly\u00a0inactivating, persistent sodium current ($I_{NaP}$), allowing each center to intrinsically generate rhythmic bursting under certain conditions defined by external tonic drives or level of excitation, which was consistent with experimental data (H\u00e4gglund et al., 2013). However, we followed the concept of asymmetric flexion-dominated CPG organization (Pearson and Duysens, 1976; Duysens, 1977; Zhong et al., 2012; Duysens et al., 2013; Machado et al., 2015). Based on this concept and our previous models (Rybak et al., 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Ausborn et al., 2017), we assumed that under normal conditions extensor centers receive relatively high drive that keeps them in the regime of tonic activity. Hence, they exhibited rhythmic bursting only due to rhythmic inhibition from the corresponding intrinsically oscillating flexor centers. In this case, the frequency of oscillation in the model was defined by the brainstem drive to flexor centers and was almost independent of the phasic interactions between RGs mediated by CINs and LPNs (Rybak et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig1-v2.jpg)\n\n**Figure 1.:** Each limb is controlled by a separate rhythm generator (RG). The local commissural neurons (CINs) as well as homolaterally and diagonally projecting (descending and ascending) long propriospinal neurons (LPNs) couple the four RGs. Brainstem drive acts on the RGs to control locomotor speed and on CINs and diagonal LPNs to control gaits.\n\nLeft-right CIN connections at cervical and lumbar levels (Figure 2A and Figure 3) are organized in accordance to our previous models (Rybak et al., 2015; Shevtsova et al., 2015; Danner et al., 2016): the inhibitory V0D CINs provide direct mutual inhibition between the left and right flexor centers, the excitatory V0V CINs also provide mutual inhibition between the flexor centers (receiving inputs from excitatory V2a and acting through inhibitory Ini neurons), the excitatory V3 CINs provide mutual excitation between the flexor centers, and the inhibitory CINi CINs provide inhibition from the extensor to the contralateral flexor centers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig2-v2.jpg)\n\n**Figure 2.:** (A) Connections between left and right rhythm generators (RG) within each girdle. (B) Connections from the fore to hind RGs via descending (cervical-to-lumbar) long propriospinal neurons (LPNs). (C) Connections from the hind to fore RGs via ascending (lumbar-to-cervical) LPNs. (D) Brainstem drive connections to the extensor and flexor centers, commissural interneurons, and LPNs. Spheres represent neural populations. Excitatory and inhibitory connections are marked by arrowheads and circles, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig3-v2.jpg)\n\n**Figure 3.:** Spheres represent neural populations and lines synaptic connections. Excitatory and inhibitory connections are marked by arrowheads and circles, respectively. RG, rhythm generator.\n\nConnections between the cervical and lumbar circuits are mediated through mono- and polysynaptic neural pathways. Here, we modeled them as LPN connections. Ruder et al. (2016) reported that there are excitatory and inhibitory descending LPNs, whereas ascending LPNs are only excitatory. Both descending and ascending LPNs project homolaterally and diagonally. There are more diagonal then homolateral excitatory LPNs, while the opposite is the case for inhibitory LPNs. The excitatory homolateral LPNs were identified as Shox2 and the excitatory diagonal LPNs as V0V neurons. We have hypothesized that diagonally projecting inhibitory LPNs are of V0D type.\n\nThe cervical-to-lumbar connections in our model (Figure 2B) are organized accordingly: the excitatory Shox2 neurons provide excitation from each cervical extensor to its homolateral lumbar flexor center, inhibitory LPNs of unidentified type (LPNi) provide inhibition from each cervical flexor to its homolateral lumbar flexor center, V0V LPNs provide excitation from each cervical flexor to its diagonal flexor center, and inhibitory V0D LPNs provide inhibition from each cervical flexor to its diagonal lumbar flexor center.\n\nLumbar-to-cervical connections (Figure 2C) mirror the excitatory cervical-to-lumbar connections but do not include inhibitory LPNs.\n\nFinally, there were two brainstem drives (Figure 2D): one that excited flexor centers and inhibited the local V0 CINs at cervical and lumbar levels and the descending diagonal V0D LPNs, promoting left-right and diagonal alternation between the corresponding RGs, and the other that provided constant excitatory drive to the extensor centers. The drive to the flexor centers, CINs, and LPNs was varied to influence locomotor speed and gait. Specifically, the drive to flexor centers defined the locomotor frequency. Based on our suggestion, this drive also inhibited V0 CINs and diagonal V0D LPNs changing the balance of excitatory and inhibitory interactions between the corresponding RGs. The full model schematic can be seen in Figure 3.\n\nThe model was used to analyze drive- and frequency-dependent changes in the locomotor phase durations and the expression of different gaits in an intact system and following the removal of particular neuron types.\n\n### Control of locomotor frequency and gait by brainstem drive\n\nWe investigated the model performance by changing the parameter $\\alpha$, which defined brainstem drive to flexor centers, CINs, and LPNs (see Materials\u00a0and\u00a0methods). The model generated oscillations when parameter $\\alpha$ was changed from 0 to 1.05. Within this range, an increase of $\\alpha$ led to an increase in locomotor frequency from 2 to 12 Hz (Figure 4A and B, top diagram). This increase in frequency occurred mostly due to shortening of the extension phase, while the flexion phase remained almost constant (Figure 4B, bottom diagram), which is a characteristic property of fictive and real locomotion across species (Halbertsma, 1983; Hildebrand, 1989; Frigon and Gossard, 2009; Danner et al., 2015; Shevtsova et al., 2015). The increased frequency in the model was accompanied by sequential gait changes from walk to trot to gallop and then bound (Figure 4A) consistent with experimental observations (Figure 4C, Bellardita and Kiehn, 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig4-v2.jpg)\n\n**Figure 4.:** (A) Gait changes during 6 s of simulation with increase of brainstem drive (parameter $\\alpha$) every second (shown at the bottom). Gait changes were subject to a brief transitional period (shown as transitional colors). (B) Dependency of frequency and phase durations on $\\alpha$. Vertical dashed lines (labeled as $x_{1}-x_{4}$) represent selected values of $\\alpha$ related to different gaits. Note that the blue line almost completely covers the red one (indicating increase and decrease of $\\alpha$, respectively) in the top diagram. (C) Frequency ranges in which gaits are observed in mice (created from data from Figure\u00a01E of Bellardita and Kiehn, 2015). (D\u2013G) Phase differences and step cycle compositions of four characteristic gaits produced by the model that correspond to the $\\alpha$-values ($x_{1}-x_{4}$) in B.\n\nThe expressed walking gait was a lateral-sequence walk (Figure 4A,D), in which flexion phases proceeded in the following order: hind-right, fore-right, hind-left and fore-left. This walk occurred at frequencies from 2 to 4 Hz (Figure 4B). At low frequencies, the extension phase was three to four times longer than the flexion phase duration, the RGs were in flexion sequentially, and the homolateral and diagonal phase differences were close to 0.25 and 0.75, respectively (Figure 4D).\n\nTrot (Figure 4A,E) was characterized by diagonal synchronization, left-right alternation and fore-hind alternation. It was expressed over a large range of frequencies (from 4 to 10.5 Hz; Figure 4B). At low frequencies, with longer extension than flexion phase durations, the gait constituted a walking trot and otherwise a running trot.\n\nGallops are characterized by synchronization or quasi-synchronization of the hind RGs and a non-zero phase difference between the fore RGs. In the model (Figure 4A,B,F), gallop was expressed at frequencies between 9 and 11 Hz (between 9 and 10.5 Hz both gallop and trot occurred). The sequence of flexion phases at cervical or lumbar levels could be either left-right or right-left but was always the same for both fore and hind RGs. Thus, transverse but not rotary gallops were expressed. The left-right phase difference of the hind RGs was always closer to synchronization than of the fore RGs. Some of the gallops exhibited an interval between the end of the hind extension and the beginning of the fore extension, in which all RGs were in flexion at the same time (Figure 4F). This corresponds to an aerial phase, characteristic for gallops.\n\nBound (Figure 4A,B,G) was characterized by left-right synchronization at cervical and lumbar levels, and homolateral and diagonal alternation. The fore extension phases were directly followed by hind extension phases, which were then followed by all RGs being in flexion (corresponding to an aerial phase). Bound was expressed at frequencies between 11 and 12 Hz. The flexion phase duration was always longer than the extension phase duration (Figure 4B, bottom diagram).\n\nThe frequency ranges, phase differences, and step cycle compositions (relative phase durations) of all gaits were consistent with mouse locomotion (Figure 4B\u2013G; Bellardita and Kiehn, 2015; see gait definitions in Materials\u00a0and\u00a0methods).\n\n### Walk and the transition to trot: diagonal V0D LPNs ensure stable walk\n\nTo investigate control of locomotion and gait transitions by brainstem drive, we used bifurcation diagrams reflecting normalized phase differences between oscillations in hind and fore left-right, homolateral and diagonal RGs with changing parameter $\\alpha$ that represented the brainstem drive and was used as bifurcation parameters (see examples in Figure 5). Normalized phase differences of 0.5 correspond to alternation, whereas phase differences of 0 or 1 correspond to synchronization. Gaits were operationally defined based on these phase differences (see Table 2 in Materials and methods) and are marked in the diagrams by colored areas. Blue and red lines indicate the stable phase differences with stepwise increase and decrease of $\\alpha$, respectively. Any discrepancies between the red and blue lines indicate regions of bi- or multistability. For these $\\alpha$ values two or more different stable gaits coexisted and could be expressed depending on the initial conditions. Bifurcations can be seen as abrupt changes of the stable phase differences. Figure 5A shows the bifurcation diagrams of the intact model.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig5-v2.jpg)\n\n**Figure 5.:** Normalized phase differences of 0.5 correspond to alternation, whereas phase differences of 0 or 1 correspond to synchronization. Blue and red lines indicate the stable phase differences with stepwise increase and decrease of the bifurcation parameter $\\alpha$, respectively. Colored areas indicate the expressed gait.\n\nAt the lowest values of brainstem drive, both left-right (local V0D and V0V CINs) and diagonal alternation (diagonal V0D LPNs) promoting pathways dominated. Together with three\u00a0to\u00a0four times longer extension than flexion phase durations (Figure 4B bottom diagram) and homolateral alternation (present over all frequencies), this ensured that only one RG was in flexion at any given time (Figure 4A,D and Figure 5A).\n\nWith increasing $\\alpha$, inhibitory brainstem drive caused the activity of the diagonally projecting V0D LPNs to decrease and the balance to shift from diagonal alternation (promoted by V0D) to diagonal synchronization (promoted by V0V). Together with a progressive decrease in the relative duration of the extension phase, this caused the flexion phases of the diagonal RGs to progressively overlap and the diagonal phase difference to move from a quarter-phase lag toward synchronization (Figure 5A). In parallel, the homolateral phase difference moved toward alternation and the left-right phase differences remained at a strict out-of-phase alternation (0.5 normalized phase difference). Together this constitutes a gradual transition from walk to trot.\n\nThe sequence of the flexion phases during walk was determined by the hypothetical CINi population that was introduced in our previous model (CINi2 in Danner et al., 2016) to ensure 0.5 normalized left-right phase difference during walk.\n\n### Trot and the transition to gallop and bound: diagonal V0V LPNs stabilize trot\n\nThe transition from trot to gallop and bound was governed by brainstem-drive-controlled speed-dependent changes in the left-right and diagonal pathways. The left-right alternation promoting local CINs (V0D and V0V) received inhibition from the brainstem that increased with speed, while the left-right synchronization promoting local CINs (V3 and CINi) did not receive brainstem inhibition (Figure 2D, Figure 3). Thus, with increasing brainstem drive (and frequency), the pathway promoting left-right synchronization became stronger than those promoting left-right alternation. This resulted in a transition from trot to gallop and then to bound (Figure 5A). The diagonally projecting V0V LPNs, promoting diagonal synchronization, acted synergistically with local V0V CINs.\n\nTwo sequential bifurcations occurred: when the gait switched from trot to gallop and then from gallop to bound (Figure 5A). The bifurcation from trot to gallop resembled a subcritical (backwards) pitchfork bifurcation in the hind (and fore) left-right phase differences. The transition exhibited hysteresis: perfect left-right alternation and quarter-phase lags (in either direction) were stable at the same $\\alpha$-values (blue and red lines show different stable left-right phase differences in the orange shaded area in Figure 5A). In other words, when drive was increasing (blue lines), the transition from trot to gallop occurred at a higher $\\alpha$-value than the transition from gallop to trot when drive was decreasing (red lines). Such a hysteresis is a common feature of gait transitions in quadrupeds (Heglund and Taylor, 1988). Stable gallops occurred because the decreasing V0V CINs and LPNs activities were accompanied by a decrease of the burst duration, while V3 and CINi CINs were active during the whole flexion or extension phase, respectively. Note, that the previous model (Danner et al., 2016) could not reproduce stable gallops; they only existed as a transitional regime. Therefore, the addition of diagonal LPNs in the present model was critical for stable gallop to exist. The bifurcation from trot to gallop occurred when V0V CINs and LPNs could not support left-right alternation and diagonal synchronization any more, but V3 and CINi CINs were not strong enough to cause perfect left-right synchronization. Therefore, stable states emerged around 0/1 normalized left-right phase differences. The deviation from synchronization was determined by the duration of the bursts of V0V CINs and LPNs. As the burst durations decreased further, the left-right phase differences transitioned towards synchronization (and the diagonal phase difference towards alternation) via a supercritical pitchfork bifurcation. This bifurcation provided the transition from gallop to bound without hysteresis (blue and red lines of the left-right phase differences in Figure 5A follow the same trajectory).\n\n### Gait expression following removal of different spinal interneuron types\n\nExperimental observations showed that mice lacking V0V neurons lose trot, mice lacking V0V and V0D only exhibit bound (Bellardita and Kiehn, 2015), and mice lacking V2a neurons transition to left-right synchronization at lower speeds compared to intact animals (Crone et al., 2009). Thus, to further validate the model, we removed several types of genetically identified neurons and compared the model performance with experimental results.\n\nWhen all V0V neurons were deleted (Figure 5B) only walk, gallop and bound were expressed; trot was selectively lost. Left-right synchronization promoting pathways became dominant at a lower $\\alpha$-value (lower frequency), and left-right alternation was only supported by V0D CINs. Deletion of V2a had the same effect as deletion of V0V, because V2a relayed all inputs to V0V CINs and LPNs.\n\nDeletion of only diagonally projecting V0V LPNs (and not V0V CINs) did not result in a loss of any gait, but caused the transition from trot to gallop to occur at a lower $\\alpha$-value and frequency (Figure 5C). Furthermore, an additional bifurcation in the left-right and diagonal phase differences occurred during trot. At low trot-frequencies and $\\alpha$-values, a strict out-of-phase left-right alternation (0.5 normalized phase difference) was stable, while at medium trot-frequencies, a pair of stable states near 0.5 normalized phase difference emerged that then transitioned via a region of multistability to a pair of stable states near 0/1 normalized phase difference (expression of gallop). This highlights how local V0V CINs and LPNs synergistically stabilize trot by providing left-right alternation and diagonal synchronization.\n\nDeletion of both V0V and V0D resulted in the removal of all left-right alternation promoting pathways and caused the loss of all alternating gaits (Figure 5D). Bound was stable over all frequencies.\n\n### Deletion of descending (cervical-to-lumbar) LPNs affects left-right coordination\n\nRuder et al. (2016) showed that deletion of descending LPNs influences left-right coordination: at low speeds both the fore and hind limbs were alternating, then at medium speeds the hind limbs, and at high speeds both the fore and hind limbs demonstrated disturbed coordination with both alternating and synchronized activities.\n\nIn our model, deletion of the cervical-to-lumbar LPNs resulted in the emergence of new stable states (Figure 6B). At low brainstem drive values walk remained the only stable state and with increasing drive it gradually transitioned towards trot. With further increase of $\\alpha$, trot was first the only stable gait (Figure 6B,C). Then, both trot and gallop were stable at the same $\\alpha$-values (Figure 6B,D1,D2,E1,E2) and finally bound became the single stable state (Figure 6B,F). During the gallop at low $\\alpha$-values, the hind RGs were close to synchronization while the fore RGs remained alternating (Figure 6B,D2). With increasing $\\alpha$, the fore left-right phase differences gradually transitioned towards synchronization, thus gallops at higher $\\alpha$-values exhibited fore and hind left-right phase differences close to synchronization (Figure 6B,E2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig6-v2.jpg)\n\n**Figure 6.:** Bifurcation diagrams, indicating the stable phase differences depending on the bifurcation parameter $\\alpha$ for the intact model (A) and after deletion of all cervical-to-lumbar LPNs (B). (C\u2013F) Extension phases of stable gaits (identified by vertical dashed lines in B labeled as $x_{1}-x_{4}$). At $\\alpha={x_{2},x_{3}}$ two different gaits were stable simultaneously (depicted in D1, D2 and E1, E2, respectively).\n\nThe introduced asymmetry by the deletion of pathways in only one direction (from cervical to lumbar but not from lumbar to cervical) caused bifurcations of higher codimension and resulted\u00a0in several bi- and multistabilities (Figure 6B). Interestingly, the stable states closely approximate the union of the stable states of the intact model Figure 6A and the model after deletion of all diagonally projecting V0V LPNs (Figure 5C). Thus, the disturbance of the fore and hind left-right phase differences was mainly caused by the deletion of diagonally projecting V0V LPNs. The remaining homolaterally projecting LPNs maintained fore-hind alternation after deletion. Local V0V CINs maintained the stable branch of left-right alternation.\n\n### Noise causes high step-to-step variability after deletion of cervical-to-lumbar LPNs\n\nIn the above section, we described that deletion of the cervical-to-lumbar LPNs resulted in the emergence of new, additional stable states at medium and high brainstem drive values. This means that two gaits were stable at the same $\\alpha$-values (e.g. see $x_{2}$ in Figure 6B and Figure 6D1,D2). To consider how these changes in the\u00a0number of steady states affect system behavior, such as step-to-step variability, we increased the noisy currents in all populations ($\\sigma_{Noise}$ from 0.005 pA to 1.75 pA). In the intact model, at medium brainstem drives (related to trot), the increased noise caused phase durations and phase differences to become more variable, but both, the fore and hind RGs remained alternating over all steps (Figure 7A). After deletion of cervical-to-lumbar LPNs, the applied noise caused spontaneous transitions between the steady states: the activity of hind RGs was spontaneously switching between synchronization and alternation while the fore RGs remained alternating (see dashed box in Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig7-v2.jpg)\n\n**Figure 7.:** (A,B) Exemplary extension phases of the intact model (A) and after removal of cervical-to-lumbar LPNs (B). The dashed box in B indicates synchronization of hind RGs that transiently occurred after removal of cervical-to-lumbar LPNs. (C\u2013E,C1\u2013E1) Phase differences categorized into three equally sized bins (gray: appropriate for trot, yellow: quarter phase difference off, red: antiphase) before and after ablation of cervical-to-lumbar LPNs for 1000 s simulation in the model (C\u2013E) and for experimental data pooled across animals (C1\u2013E1) at three different speeds and $\\alpha$-values. C1\u2013E1 were created from data extracted from Figure 5B,C and S5A,D of Ruder et al. (2016).\n\nA similar disruption of interlimb coordination has been described in mice after deletion of cervical-to-lumbar LPNs (Ruder et al., 2016). They reported random occurrences of clusters of misaligned steps and spontaneous transitions between alternation and synchronization, which were similar to those exhibited by our model. Furthermore, the model also reproduced the speed-dependent effect of changes in the proportion of appropriate and misaligned steps: at low speeds hind and fore limb coordination remained appropriate for trot, at medium speeds hind limb coordination was disturbed, and at high speeds both fore and hind limb coordination was affected (Figure 7C\u2013E). Thus, in the regions where both trot and gallop were stable, the applied noise caused spontaneous transitions between the stable states.\n\n### Gait changes by brainstem drive and by drive-independent inputs to CINs and LPNs\n\nMice usually switch gaits and locomotor speeds abruptly with few or no intermediary steps (Bellardita and Kiehn, 2015). To simulate the dynamics of gait transitions, we initialized the model with a constant $\\alpha$-value that defined a certain gait (and frequency) and then abruptly changed $\\alpha$ to a value characteristic of another gait. Transitions from walk to trot, from gallop to trot and from walk to gallop and back to walk (Figure 8A\u2013C) mirrored experimental observations closely (Figure 8D\u2013E; Bellardita and Kiehn, 2015): they usually required only one or two cycles to stabilize the new gait and locomotor frequency.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig8-v2.jpg)\n\n**Figure 8.:** (A\u2013C) Instantaneous frequency, extension phases before and after parameter $\\alpha$ was abruptly changed (bottom trace). Black vertical lines indicate the time\u00a0when $\\alpha$ was changed and the shaded green areas indicate the transitions periods. (A) Transition from walk to trot when $\\alpha$ was changed from 0.02 to 0.4. (B) Transition from gallop to trot when $\\alpha$ was changed from 0.85 to 0.6. (C) Transition from walk to gallop and back to walk when $\\alpha$ was changed from 0.02 to 0.9 and to 0.02. (D\u2013F) Experimentally observed instantaneous speed during gait changes in mice corresponding to A\u2013C (created from data extracted from Figure\u00a03A\u2013C\u00a0of Bellardita and Kiehn 2015). (G\u2013I) Instantaneous frequency and extension phases during gait changes caused by additional drives to CINs and LPNs. Bottom trace indicates time course of additional drives. (G) Additional inhibitory drive to all V0V CINs and LPNs ($m_{I}=0.0$, $b_{I}=0.2$) at $\\alpha=0.5$ and caused a transition from trot to bound. During the transitional period a gallop occurred. (H) An additional excitatory drive to local V0V CINs ($m_{E}=0.0$, $b_{E}=0.05$) at $\\alpha=0.925$ caused a transition from gallop to trot. (I) Additional excitatory drive to cervical, local V0V CINs ($m_{E}=0.0$, $b_{E}=0.1$) at $\\alpha=0.975$ caused the left-right phase difference of the fore RGs to change from almost synchronized to a quarter-phase lag during gallop.\n\nFinally, gait changes could also be induced by additional inputs to CINs and LPNs without changing the common brainstem drive controlling locomotor speed (frequency). For example, additional inhibition to V0V CINs and LPNs during trot induced a transition to bound without significantly affecting the frequency, resulting in a bound at a frequency characteristic of trot (Figure 8G). Excitatory drive to the local V0V CINs during gallop induced a transition to trot, again without significantly affecting speed (Figure 8H). Excitation of the local cervical V0V CINs during gallop caused the fore left-right phase differences to move farther from synchronization and the left and right extension phases of the fore RGs to overlap less, while the hind RG coordination remained almost unchanged (Figure 8I). Thus, tonic inputs to CINs and LPNs were able to alter interlimb coordination and gait almost independently of frequency.\n\n## Discussion\n\n### Control of locomotor speed and speed-dependent gait transitions\n\nCentral control of locomotor speed and speed-dependent gait expression involves many neural, biomechanical, metabolic, environmental and behavioral factors. Most of these factors are beyond the scope of the present study. Here, we focused on the potential role of central interactions between rhythm-generating circuits controlling each limb and their regulation by brainstem drives.\n\nIn our model, two such drives were considered: constant drive to the extensor centers and variable drive to the flexor centers and various CINs and LPNs. The drive to the extensor centers put them in a tonic activity regime if the flexor centers were not active. This drive may represent a separate descending supraspinal drive to extensor circuits operating through the medial reticulospinal or vestibulospinal tracts and/or inputs from cutaneous afferents and load receptors from extensor muscles (Hiebert and Pearson, 1999; Dietz and Duysens, 2000; Bouyer and Rossignol, 2003; Rossignol et al., 2006).\n\nThe brainstem drive to the flexor centers put them into a rhythmic bursting regime and strong inhibition between flexor and extensor centers mediated by inhibitory interneurons caused rhythmic flexor-extensor alternation (Zhang et al., 2014; Britz et al., 2015; Rybak et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Shevtsova and Rybak, 2016). Progressive increase of this drive increased locomotor frequency, in accordance with studies in decerebrate cats and rats, where stimulation of the MLR induced locomotor activity that increased in frequency (speed) with increasing stimulation (Orlovski\u012d et al., 1966; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984; Grillner, 1985; Atsuta et al., 1990; Nicolopoulos-Stournaras and Iles, 2009). In many of these studies, the increase in speed was accompanied by sequential changes in gait from walk to trot and to gallop and bound. The exact mechanisms for these speed-dependent gait transitions are currently unknown, but it is reasonable to suggest that these transitions are initiated and supported by inputs and drives from different excitatory and inhibitory neurons in the medullary and pontomedullary reticular formation that project to\u00a0the spinal cord and can directly affect different CINs and LPNs (Alstermark et al., 1987; Jankowska et al., 2003, 2005; Matsuyama et al., 2004; Mitchell et al., 2016; Ruder et al., 2016).\n\nFollowing our previous model (Danner et al., 2016), we suggest that gait transitions are caused by brainstem drives acting on neurons coupling the RGs and affecting the balance between the activities of pathways promoting synchronization and alternation. In the previous model, only homolateral LPNs and local CINs were considered. The transition from alternating (trot) to synchronized gaits (gallop and bound) resulted from excitatory drive to local V3 CINs, promoting left-right synchronization in both cervical and lumbar levels, so that with increasing drive the left-right interactions through these pathways overcame interactions via pathways supporting left-right alternation.\n\nIn the current model, the same conceptual idea was implemented by increasing inhibitory influence of the brainstem drive to local V0 CINs (V0D and V0V) and diagonal V0D LPNs (Figure 2D and Figure 3). This increasing inhibition influenced both the walk to trot and the trot to gallop and bound transitions: the walk to trot transition occurred when diagonal V0V became stronger than diagonal V0D LPNs, and the trot to gallop and bound transition occurred when local V3 became stronger than V0V CINs and LPNs. Additionally, this inhibitory drive allowed for stable solutions for gallop, which in the previous model only occurred as transient solutions (Danner et al., 2016).\n\nUnfortunately, there is no experimental evidence for or against brainstem excitation of V3 or inhibition of V0 CINs and LPNs. Either mechanisms could exist and operate in reality. Moreover, they could even coexist and cooperate in multiple ways. This issue can be resolved in future experiments by recording from identified CINs and LPNs and analyzing their response to MLR stimulation.\n\n### Long propriospinal neurons and the organization of interactions between rhythm-generating circuits\n\nThe left-right coordination in the present model is mediated by both the local CINs, coupling left and right RGs at cervical and lumbar levels, and the diagonal LPNs, that couple cervical and lumbar RGs. The local CIN interactions (Figure 2A and Figure 3) were implemented based on earlier experimental studies (Bellardita and Kiehn, 2015) and followed our previous computational model (Danner et al., 2016). The homolateral and diagonal LPN-mediated pathways (Figure 2B,C and Figure 3) were incorporated to be consistent with (Ruder et al., 2016). The bidirectional homolateral excitatory (from each extensor to the corresponding flexor center, mediated by Shox2 interneurons) and the descending inhibitory (between the flexor centers, mediated by LPNi interneurons) LPN pathways acted synergistically to ensure fore-hind alternation over all frequencies and gaits. The descending diagonal inhibitory LPNs (V0D) together with the local inhibitory V0D CINs ensured stable quarter-phase lags between homolateral and diagonal RGs during walk. The diagonal ascending and descending excitatory LPNs (V0V) promoted diagonal synchronization and (together with the inhibitory homolateral interactions) supported left-right alternation during trot.\n\nThe presence of only cervical-to-lumbar but not lumbar-to-cervical inhibitory LPNs (Ruder et al., 2016) and stronger lumbar-to-cervical excitatory influence than cervical-to-lumbar (Juvin et al., 2005; Brockett et al., 2013) introduced a fore-hind asymmetry. Thus, the dynamics of our model were consistent with left-right but not fore-hind interchange (Sch\u00f6ner et al., 1990; Golubitsky et al., 1999). The left-right symmetry (because of symmetric LPN and CIN interactions) resulted in stable normalized left-right phase differences of 0.5 (in walk and trot), or 0/1 (in bound), or pairs of steady states symmetric around 0.5 (in gallops). These symmetry properties resulted in the stability of both left and right leading gallops. The fore-hind asymmetry caused the lateral-sequence walk to be the only stable walk, which is the preferred walk of several quadrupeds, including mice, dogs, cats, and humans crawling (Patrick et al., 2009; Bellardita and Kiehn, 2015; Righetti et al., 2015; Frigon, 2017), as well as the correct extension phase sequences during gallop and bound. Afferent inputs to LPNs could potentially affect the symmetry properties and result in different stable solutions. For example, cats exhibit diagonal-sequence walk when walking on a split belt treadmill with the fore and hind limbs at a different speed (Thibaudier et al., 2013).\n\n### Role of genetically identified spinal interneurons in interlimb coordination\n\nWe used our model to simulate the effects of ablating some genetically\u00a0identified spinal interneurons on the speed-dependent expression and transition of different gaits. The removal of V0V neurons abolished trot (Figure 5B) and only bound could be expressed after the removal of both V0V and V0D (Figure 5D), which is fully consistent with the experimental data of Bellardita and Kiehn (2015). Also, because in our model V2a neurons mediate input to V0V neurons (Figure 2 and Figure 3; see Crone et al., 2008; Talpalar et al., 2013; Rybak et al., 2015; Shevtsova et al., 2015), removal of V2a had the same effect as removing V0V: transition to gallop and bound at a lower frequency, consistent with Crone et al. (2009).\n\nIt is necessary to note that the role of V0V neurons in the expression and support of trot in the present model significantly differs from our previous model (Danner et al., 2016). The previous model had been developed before the new data on LPN organization (Ruder et al., 2016) became available and only included homolateral LPNs and not diagonal ones. Therefore, in that model, the role of V0V neurons in supporting trot was entirely based on their involvement in support of left-right alternation. In the present model, both V0V CINs and LPNs support trot, by providing left-right alternation (CINs) and diagonal synchronization (LPNs). The model suggests that removal of one type of these pathways (e.g. the diagonal LPNs, Figure 5C) does not fully eliminate trot, but shifts transition to gallop to a lower locomotor frequency. Transition to gallop results from the increasing inhibitory influence of the brainstem drive to V0V neurons with increasing frequency. The predicted inhibitory influence of brainstem drive (e.g. from MLR) to identified V0V neurons (both local CINs and LPNs) awaits experimental testing.\n\n### Effect of ablation of the descending cervical-to-lumbar LPN pathways\n\nSimulating deletion of cervical-to-lumbar connections was performed for additional model validation in relation to the recent experimental data: Ruder et al. (2016) showed that deletion of these connections, did not affect interlimb coordination at low speeds, disturbed left-right coordination between hind limbs at medium speeds, exhibiting spontaneous switching to left-right synchronization, and caused the same disturbances in left-right coordination between both the fore and hind limbs at high speed. In the model, this deletion resulted in additional steady states with almost synchronous left-right activities of hind RGs at the medium drive values (frequencies) and slow migration of such additional steady states to left-right synchronization of fore RGs (Figure 6B).\n\nIntroduction of noise led to random transitions between these coexisting stable states, and resulted in spontaneous changes in phase relationships between hind RGs (including occasional synchronization) at medium frequencies and both hind and fore RGs at higher frequencies (Figure 7). This qualitatively corresponded to the experimental results on ablation of cervical-to-lumber connections (Ruder et al., 2016) and hence provided additional validation to our model.\n\n### Commissural and long propriospinal neurons can serve as main targets for supraspinal and sensory afferent signals controlling limb coordination\n\nAlthough limbed animals, including quadrupeds express gaits according to their speed, there are many other factors affecting selection of the appropriate gaits, including energetic/metabolic (Hoyt and Taylor, 1981), biomechanical (Alexander and Jayes, 1983; Biewener, 1990; Farley and Taylor, 1991; Fukuoka et al., 2015), environmental and behavioral factors. For example, animals need to maintain balance when maneuvering in dynamic environments, or when chasing prey or escaping from a predator. As locomotor activities are controlled by networks within the spinal cord, signals affecting interlimb coordination to accommodate these factors can be (a) common or specific supraspinal inputs or drives, reflecting additional visual, auditory, vestibular and different goal-directed factors, and/or (b) proprioceptive and cutaneous afferent feedbacks from the periphery that informs the spinal controller about various biomechanical constraints. The supraspinal control of gait transitions has been confirmed by multiple experiments during fictive or real locomotion controlled by brainstem stimulation (Orlovski\u012d et al., 1966; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984; Grillner, 1985; Atsuta et al., 1990; Nicolopoulos-Stournaras and Iles, 2009). At the same time, there are experimental data confirming the important role that proprioceptive and exteroceptive feedback plays in the control of interlimb coordination and gait (reviewed by Pearson, 1995; Pearson, 2004; Frigon, 2017).\n\nThe locomotor gait of quadrupeds is defined by the phase relationships of the movements of the different limbs. Assuming that each limb is controlled by a separate RG, each gait can be represented as a set of phase differences between the rhythmic activities generated by the RGs. In quadrupeds, all left-right interactions within the cervical and lumbar spinal cord, including interactions between left and right RG circuits, are mediated by local CINs, and all diagonal and homolateral interactions between the cervical and lumbar circuits, including interactions between the corresponding RGs, are mediated by LPNs with descending and ascending, diagonal and homolateral projections, respectively. Therefore, the activities of CINs and LPNs located within the four sections of the cord (left and right hemicords at cervical and lumbar levels) explicitly define interactions between the four rhythm-generating circuits (or RGs; Figure 9). An integrated pattern of activity of these neurons defines interlimb coordination and gait. Multiple studies confirm that spinal CINs and LPNs receive excitatory and inhibitory inputs from supraspinal structures (Skinner et al., 1979; Skinner et al., 1980; Alstermark et al., 1987; Bannatyne et al., 2003; Jankowska et al., 2003; Jankowska et al., 2005; Jankowska et al., 2006; Matsuyama et al., 2004; Cowley et al., 2008; Cowley et al., 2010; Jankowska, 2008; Szokol et al., 2011; Zaporozhets et al., 2011; Juvin et al., 2012; Mitchell et al., 2016; Ruder et al., 2016),\u00a0which could explicitly provide speed-dependent gait control as in our model. At the same time, as we showed in our simulations (Figure 8G\u2013I), inputs to CINs and LPNs other than supraspinal drives controlling locomotor frequency can also induce gait changes independent of speed. In particular, these inputs can come from sensory afferents. This is consistent with multiple experimental data showing that CINs and LPNs receive direct and indirect input from sensory afferents (Lloyd and McIntyre, 1948; Edgley et al., 2003; Bannatyne et al., 2006; Jankowska et al., 2009; Flynn et al., 2017). In accord with this is the notion that afferent feedback from each limb projects mostly to the spinal cord section controlling the same limb (Frigon, 2017) and hence its influence on spinal circuits and RGs controlling other limbs should be mostly mediated by CINs and LPNs located in this section.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/31050/elife-31050-fig9-v2.jpg)\n\n**Figure 9.:** (A) Circuits controlling four limbs. Each limb is controlled by its own rhythm generator (RG). Local CINs and homolateral and diagonal LPNs couple the RGs and coordinate their activities. Supraspinal signals and sensory feedbacks (directly or also indirectly through dorsal horn interneurons; not shown) provide inputs to the RGs, CINs and LPNs. Inputs to the RGs affect the locomotor frequency (speed), while inputs to CINs and LPNs affect interlimb coordination and gait expression. (B) A more detailed representation of local CINs and LPNs that are located in one cord section (here left cervical) and integrate the corresponding intraspinal and supraspinal inputs and sensory information (from the fore left limb) to mediate the effect of this limb\u2019s activity on spinal circuits controlling the other three limbs.\n\nTherefore, we suggest that CINs and LPNs represent the main neural targets for different local/intraspinal, supraspinal, and sensory inputs to control interlimb coordination and adjust gait to various internal and external conditions. Inputs to other neural structures, such as the RG centers, could also alter interlimb coordination by transsynaptically influencing the balance of the CIN and LPN pathways, but would also affect other parameters, such as locomotor frequency. Separate (independent of brainstem drives) signals to CINs and LPNs only (e.g. from sensory afferents) can affect limb coordination and change gait independent of speed (as shown in Figure 8G\u2013I). Figure 9 summarizes the neural circuitry within the spinal cord responsible for interlimb coordination and possible inputs from supraspinal and peripheral afferents. For simplicity, in this schematic, the same CIN and LPN populations receive all intraspinal, supraspinal and afferent inputs. In real cord, the effects of these inputs are rather mediated by separate or overlapping populations of CINs and LPNs, which may interact with each other (e.g. via presynaptic inhibition) competing for their influence on gait expression.\n\n### Model limitations\n\nIn this study, we focused only on central interactions, without considering biomechanical constraints and afferent feedbacks from the limbs. Mechanical coupling between the limbs and body can also influence interlimb coordination and interact with the neural control (Nishikawa et al., 2007). Moreover, gaits are not only characterized by the phase differences between the limbs but also by a change in kinematics and muscle activation patterns (Bellardita and Kiehn, 2015). Investigating these issues requires simulation of limb and body biomechanics in addition to the spinal circuits, which is outside the scope of the current study. We also did not consider spinal circuits operating below the RGs, such as pattern formation networks, circuits related to muscle afferent inputs, reflex circuits including Ia, and Ib interneurons, Renshaw cells and motoneurons (see Rybak et al., 2006a, 2006b; McCrea and Rybak, 2007, 2008; Zhong et al., 2012), which play an important role in controlling the limbs. Moreover, how inputs from various supraspinal structures interact with different spinal mechanisms and afferent feedback at different spinal levels in the context of controlling interlimb coordination remains largely unknown. All the above will be\u00a0the focus of our future investigations.\n\n## Materials\u00a0and\u00a0methods\n\n### Neuron model\n\nThe model consists of a network of interconnected populations of neurons. Each population was represented by a non-spiking, \u2018activity-based\u2019 model (Ermentrout, 1994) and described by\n\n$$\nC\u22c5d\u2062V/d\u2062t=-I_{NaP}-I_{L}-I_{SynE}-I_{SynI}-I_{Noise}\n$$\n\nfor flexor and extensor centers, and by\n\n$$\nC\u22c5d\u2062V/d\u2062t=-I_{L}-I_{SynE}-I_{SynI}-I_{Noise}\n$$\n\nfor all other populations. In Equations 1 and 2, $V$ represents the average membrane potential, $C$ the membrane capacitance, $I_{NaP}$ the persistent sodium current, $I_{L}$ the leakage current, $I_{SynE}$ and $I_{SynI}$ excitatory and inhibitory synaptic currents, respectively, and $I_{Noise}$ a noisy current.\n\nThe leakage current was described by\n\n$$\nI_{L}=g_{L}\u22c5(V-E_{L}),\n$$\n\nwhere $g_{L}$ is the leakage conductance and $E_{L}$ the leakage reversal potential.\n\nExcitatory and inhibitory synaptic currents ($I_{SynE}$ and $I_{SynI}$, respectively) of population $i$ were described by:\n\n$$\n(4)I_{SynE,i}=g_{SynE}\u22c5{\\sumj[S(w_{ji})\u22c5f(V_{j})]+D_{E,i}}\u22c5(V_{i}\u2212E_{SynE});(5)I_{SynI,i}=g_{SynI}\u22c5{\\sumj[S(\u2212w_{ji})\u22c5f(V_{j})]+D_{I,i}}\u22c5(V_{i}\u2212E_{SynI});\n$$\n\nwhere $g_{SynE}$ and $g_{SynI}$ are synaptic conductances, and $E_{SynE}$ and $E_{SynI}$ the reversal potentials of the excitatory and inhibitory synapses; $w_{j\u2062i}$ is the synaptic weight from population $j$ to $i$ ($w_{j\u2062i}>0$ for excitatory connections and $w_{j\u2062i}<0$ for inhibitory connections); and function $S$ is defined as\n\n$$\nS(x)={x,ifx\\geq00,otherwise.\n$$\n\nThe output function $f\u2062(V)$ translates $V$ into the integrated population activity or neural output and was defined by the linear piecewise function:\u00a0\n\n$$\nf(V)={0,ifV<V_{thr}(V\u2212V_{thr})/(V_{max}\u2212V_{thr}),ifV_{thr}\\leqV<V_{max}1,ifV\\geqV_{max}.\n$$\n\nExcitatory $D_{E,i}$ and inhibitory $D_{I,i}$ drives to population $i$ were modeled as a linear function of the free parameter $\\alpha$:\n\n$$\nD_{{E,I},i}\u2062(\\alpha)=m_{{E,I},i}\u22c5\\alpha+b_{{E,I},i},\n$$\n\nwhere $m_{{E,I},i}$ is the slope, and $b_{{E,I},i}$ the intercept. $\\alpha$ represents the value of the variable brainstem drive. If not otherwise specified, $m_{{E,I},i}$ and $b_{{E,I},i}$ were set to 0 (lack of drive input to the corresponding neuron population).\n\nThe persistent sodium current in the flexor and extensor centers of the RG was described by\n\n$$\nI_{NaP}=g\u00af_{NaP}\u22c5m\u22c5h\u22c5(V-E_{Na}),\n$$\n\nwhere $g\u00af_{NaP}$ is the maximal conductance, $m$ and $h$ activation and inactivation variables of $I_{NaP}$, respectively, and $E_{Na}$ the sodium reversal potential. Activation of the persistent sodium current was considered instant and was modeled by\u00a0\n\n$$\nm\u2062(V)={1+exp\u2061[(V-V_{1/2,m})/k_{m}]}^{-1}\n$$\n\nand slow inactivation obeyed the following differential equation\n\n$$\n\\tau_{h}\u2062(V)\u22c5d\u2062h/d\u2062t=h_{\u221e}\u2062(V)-h\n$$\n\nwith\n\n$$\n(12)h_{\u221e}(V)={1+exp\u2061[(V\u2212V_{1/2,h})/k_{h}]}^{\u22121};(13)\\tau_{h}(V)=\\tau_{0}+(\\tau_{max}\u2212\\tau_{o})/cosh\u2061[(V\u2212V_{1/2,\\tau})/k_{\\tau}].\n$$\n\nIn Equations 10\u201313, $V_{1/2}$ and $k$ represent half-voltage and slope of the corresponding variable, respectively, and $\\tau_{0}$ and $\\tau_{max}$ are the baseline and maximum of inactivation time constant $\\tau_{h}$, respectively.\n\nThe noisy current $I_{Noise}$ was described as an Ornstein-Uhlenbeck process\n\n$$\nd\u2062I_{Noise}/d\u2062t=-I_{Noise}/\\tau_{Noise}+\\sigma_{Noise}\u2062\\sqrt{2/\\tau_{Noise}}\u22c5\u03be_{i}\u2062(t)\n$$\n\nwhere $\\tau_{Noise}$ is the time constant, $\\sigma_{Noise}$ the standard deviation or strength of the noise, and $\u03be_{i}\u2062(t)$ (in $1/\\sqrt{s}$) was the population-specific normalized Gaussian noise.\n\n### Model parameters\n\nThe model parameters were adapted from our previous model (Danner et al., 2016): $C=10$ pF; $g_{L}=4.5$ nS for RG centers and $g_{L}=2.8$ nS for all other neurons; $g\u00af_{NaP}=4.5$ nS; $g_{SynE}=g_{SynI}=10.0$ nS; $E_{L}=-62.5$ mV for RG centers and $E_{L}=-60$ mV for all other neurons; $E_{Na}=50$ mV; $E_{SynE}=-10$ mV; $E_{SynI}=-75$ mV; $V_{thr}=-50$ mV; $V_{max}=0$ mV; $V_{1/2,m}=-40$ mV; $V_{1/2,h}=-45$ mV; $k_{m}=-6$ mV; $k_{h}=4$ mV; $\\tau_{0}=80$ ms; $\\tau_{max}=160$ ms; $V_{1/2,\\tau}=-35$ mV; $k_{\\tau}=15$ mV; and $\\tau_{Noise}=10$ ms.\n\nFollowing drive parameters were used: $m_{E}=0.0$ and $b_{E}=0.1$ for the extensor centers; $m_{E}=0.1$ and $b_{E}=0.0$ for the flexor centers; $m_{I}=0.75$ and $b_{I}=0.0$ for all V0D CINs; and $m_{I}=0.15$ and $b_{I}=0.0$ for the local homologous V0V CINs. Thus, the extensor centers received constant drive (independent of $\\alpha$) and the flexor centers and V0 CINs received variable drive whose changes were proportional to $\\alpha$. The connection weights are listed in Table 1. Weights of connections within the RGs were adapted from our previous model (Danner et al., 2016) and other weights were selected within their operating ranges and tuned to allow gait transitions to occur at experimentally observed locomotor frequencies (Bellardita and Kiehn, 2015). To test the robustness of the model, we simultaneously varied all connection weights; each weight was multiplied by a normally distributed random number with a mean of 1 and standard deviation $\\sigma_{p}$ of 0.01, 0.02, 0.05, and 0.10. For each $\\sigma_{p}$, 100 random models were created and bifurcation diagrams were calculated. With $\\sigma_{p}\\leq0.02$ all randomized models retained all stable regimes and their sequential transitions with changes of $\\alpha$, at $\\sigma_{p}=0.05$\u00a017% and at $\\sigma_{p}=0.10$\u00a040% of the models lost some stable solutions (gaits such as bound or trot). Thus, the final model represents a coarse system allowing parameter variations without dramatic (qualitative) changes in behavior. To simulate deletion of particular populations, their outputs were set to 0.\n\n**Table 1.**\n Connection weights.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Source</th>\n      <th>Target (wi\u2062j)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Within girdle and side of the cord</td>\n    </tr>\n    <tr>\n      <td>RG-F</td>\n      <td>i-Ini-F (0.40), i-V0D (0.70), i-V2a (1.00), i-V3 (0.35), i-V2a-diag (0.50)</td>\n    </tr>\n    <tr>\n      <td>f-RG-F</td>\n      <td>i-Ini-Hom (0.70), i-V0D-diag (0.50)</td>\n    </tr>\n    <tr>\n      <td>RG-E</td>\n      <td>i-Ini-E (0.40), i-CINi (0.40), i-Sh2-Hom (0.50)</td>\n    </tr>\n    <tr>\n      <td>Ini-F</td>\n      <td>i-RG-E (\u20131.00)</td>\n    </tr>\n    <tr>\n      <td>Ini-E</td>\n      <td>i-RG-F (\u20130.08)</td>\n    </tr>\n    <tr>\n      <td>V2a</td>\n      <td>i-V0V (1.00)</td>\n    </tr>\n    <tr>\n      <td>V2a-diag</td>\n      <td>i-V0V-diag (0.90)</td>\n    </tr>\n    <tr>\n      <td>IniV0V</td>\n      <td>i-RG-F (\u20130.07)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Between left and right homologous circuits</td>\n    </tr>\n    <tr>\n      <td>V0D</td>\n      <td>c-RG-F (\u20130.07)</td>\n    </tr>\n    <tr>\n      <td>V0V</td>\n      <td>c-IniV0V (0.60)</td>\n    </tr>\n    <tr>\n      <td>V3</td>\n      <td>c-RG-F (0.03)</td>\n    </tr>\n    <tr>\n      <td>CINi</td>\n      <td>c-RG-F (\u20130.03)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Between fore and hind homolateral circuits</td>\n    </tr>\n    <tr>\n      <td>f-Ini-Hom</td>\n      <td>h-RG-F (\u20130.01)</td>\n    </tr>\n    <tr>\n      <td>f-Sh2-Hom</td>\n      <td>h-RG-F (0.01)</td>\n    </tr>\n    <tr>\n      <td>h-Sh2-Hom</td>\n      <td>f-RG-F (0.125)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Between diagonal circuits</td>\n    </tr>\n    <tr>\n      <td>f-V0D-diag</td>\n      <td>dh-RG-F (\u20130.075)</td>\n    </tr>\n    <tr>\n      <td>f-V0V-diag</td>\n      <td>dh-RG-F (0.02)</td>\n    </tr>\n    <tr>\n      <td>h-V0V-diag</td>\n      <td>df-RG-F (0.065)</td>\n    </tr>\n  </tbody>\n</table>\n\n_i-, ipsilateral; c-, contralateral; f-, fore; h-, hind; d, diagonal. CINi, inhibitory commissural interneurons. Ini, regular inhibitory interneurons. RG-F, flexor center; RG-E, extensor center._\n\n### Computer simulations\n\nThe set of differential equations were solved using the odeint (Ahnert et al., 2011) implementation of the Runge-Kutta-Fehlberg 7\u20138 variable step-size solver of the boost C++\u00a0library (version 1.63.0). $I_{Noise}$\u00a0was calculated before the simulation with the Forward Euler method and for a fixed step size of 1 ms. The custom C++\u00a0code was compiled with clang 800.0.42.1 (Apple LLVM 8.0.0) for macOS 10.12.3. Simulation results were analyzed using Matlab 2016b. Source code and Matlab scripts for all simulations are available in ModelDB (McDougal et al., 2017) at\u00a0http://modeldb.yale.edu/234101.\n\n### Data analysis\n\nActivities of the flexor and extensor center were used to assess the model behavior. A RG was considered as being in flexion when $f\u2062(V)$ of its flexor center was greater or equal to 0.1, otherwise it was considered as being in extension. The locomotor period was defined as the duration between two consecutive onsets of the left hind flexor center; the frequency as the reciprocal of the period; extension and flexion phase durations as the duration between onset and offset of extension and flexion, respectively. Normalized phase differences were calculated as the delay between the onsets of the extension phases of a pair of rhythm generators divided by the locomotor period. Four normalized phase differences were calculated: hind left-right (right hind \u2013 left hind), fore left-right (right fore \u2013 left fore), homolateral (left fore \u2013 left hind) and diagonal (right fore \u2013 left hind). Gaits were operationally defined based on the phase differences (see Table 2).\n\n**Table 2.**\n Operational definition of gaits.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Normalized phase differences</th>\n    </tr>\n    <tr>\n      <th>Gait</th>\n      <th>Left-right hind</th>\n      <th>Homolateral</th>\n      <th>Diagonal</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Walk*</td>\n      <td>[0.25,0.75]</td>\n      <td>[0.1,0.4) and (0.6,0.9]</td>\n      <td>(0.1,0.4] and [0.6,0.9)</td>\n    </tr>\n    <tr>\n      <td>Trot</td>\n      <td>[0.25,0.75]</td>\n      <td>[0.25,0.75]</td>\n      <td>[0.0,0.1] and [0.9,1.0)</td>\n    </tr>\n    <tr>\n      <td>Gallop</td>\n      <td>(0.025,0.25] and [0.75,0.975)</td>\n      <td>[0.25,0.75]</td>\n      <td>[0.25,0.75]</td>\n    </tr>\n    <tr>\n      <td>Bound</td>\n      <td>[0.0,0.025] and [0.975,1.0)</td>\n      <td>[0.25,0.75]</td>\n      <td>[0.25,0.75]</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Classification of walk additionally required longer extension than flexion phase durations._\n\n### Analysis of model performance\n\nTo identify stable solutions of the model, bifurcation diagrams were built for the four normalized phase differences. To this end, $\\alpha$ was increased from 0.0 to 1.05 and then decreased back to 0.0 in 1000 equally spaced steps (step size of 0.00105). At each step, the simulation was run for 10 s and the final state was used as the initial condition for the next step. Circular statistics were evaluated for the last five locomotor cycles. At each step, the circular standard deviation of the normalized phase differences of the last five steps was smaller than 0.001. Thus, the mean phase differences can be regarded as the stable solutions. The sequential increase and decrease of $\\alpha$ was performed to uncover regions where multiple states are stable. An additional simulation run with stepwise change of $\\alpha$ in the opposite direction was initialized when a discrete change of phase differences between two $\\alpha$-values occurred, to uncover potentially missed stable trajectories. Initial conditions were randomized and multiple runs were evaluated. $\\sigma_{Noise}$ was set to 0.005 pA, making noisy currents several orders of magnitude smaller than any other current. The noise did not affect the model behavior other than to ensure that the system did not remain on an unstable trajectory.\n\nTo model step-to-step variability as presented in decabper, simulations with increased noisy currents ($\\sigma_{Noise}=1.75$ pA) were performed. The free parameter $\\alpha$ was set to 0.3, 0.6, and 0.75. At each value, the simulation was run for 1000 s. Phase differences were calculated and partitioned into three bins (cf.\u00a0Figure 7), depending on their appropriateness for trot and to ensure comparability with experimental data (Ruder et al., 2016). The counts per bin were then divided by the total number of locomotor cycles and multiplied by 100.\n\nTo model dynamics of gait transitions, extension phases and the instantaneous frequency are illustrate before and after an abrupt change in $\\alpha$-value or additionally introduced drives. To this end, the model was initialized with a predefined $\\alpha$-value and ten seconds of settling period were allowed before the abrupt parameter change. Parameters used are specified in the legend of Figure 8.\n",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "09a12fb9-29b4-4fa4-9c35-ce9ec4ed8150",
+      "submission_id": "9144a634-39b7-4739-970a-4c39f97cf0c0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31050.015](https://doi.org/10.7554/eLife.31050.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Long propriospinal neurons and gait expression in quadrupeds\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ronald L Calabrese (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephen Soffe (Reviewer #2); Rob Brownstone (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis modeling study uses the latest available data on spinal locomotor networks and behavior in mice and constructs a model to explore possible mechanisms of gait transitions. The model focuses on interneurons that interconnect limb CPGs both locally within the fore or hind limb enlargement and between the limb centers. It emphasizes the introduction of contralaterally projecting long propriospinal neurons (LPNs) as previous models from the same group did not include these recently described LPNs, but only short projecting commissural interneurons (CINs) and ipsilaterally projecting LPNs. Certain populations of LPNs and CINs are subject to changing descending excitatory drive that targets the flexor half-center of the limb CPGs. The model captures well speed-dependent gait expression based on this descending drive. The model is further constrained by testing its ability to capture changes in gait caused by genetic ablation of specific groups of spinal interneurons. In particular, it captures newly discovered disruption of hindlimb coordination following ablation of descending LPNs. They further show that inputs to CINs and LPNs can affect interlimb coordination and change gait independent of speed. The model makes the strong prediction that LPN and CINs interneurons represent the main targets for supraspinal and sensory afferent signals adjusting gait.\n\nSpinal networks controlling locomotion are a very active area of research and this model organizes the vast amount of available data on genetic identification, connectivity, genetic ablation, and behavior and presents testable scheme for the organization of interlimb coordination. We are impressed by the model and the way it has evolved from a previous version, and found the paper a very interesting read. It is an advance on the previous published version because it incorporates new data that endows the model with new explanatory and predictive power. As such, it should be of wide interest.\n\nThe work is carefully done and the illustrations are beautiful and helpful as well as presenting the necessary data.\n\nEssential revisions:\n\n1) Rather than being a fundamentally new approach, this paper presents an advance in a model that has been evolving: for example recently presented in their 2016 (J. Physiol) paper. This new version of the model presents a more sophisticated connectivity based on new physiological/behavioral data, i.e. it follow the availability of more detailed evidence on homolateral and crossed pathways between fore and hind-limb centers (Ruder et al., 2016). Interestingly, the 2016 version already presented a model within which control of descending drive to specific points in the spinal network produced changes in locomotor speed and concomitant gait changes. So what does the addition of further connectivity add? It\u2019s necessary to make clearer the relationship between the two models. Do the diagonal connections add something fundamentally different or are they there to fine tune coordination? It seems that they 'improve' some transitions between gaits (e.g. discussed briefly around paragraph four of the Discussion) but do they fill an important functional gap in the 2016 model? The Introduction should be a more thorough job of putting the model in the context of what is known in the field and what the major issues are.\n\nDoes the similarity in the capability of the 2016 and new model show a weakness of relatively unconstrained modelling if you can get similar functionality out of quite different levels of coupling? Some discussion along these lines would seem appropriate.\n\n2) The paper provides a clear story of how coordination could work through a balance of different influences. However we are concerned about how robust the model is in terms of choices of connection weights. The authors acknowledge, quite rightly, that direct experimental evidence is seriously lacking. How were the various strengths determined and how critical are they? A further addition to the previous model (as far as we can tell) is the element of descending inhibitory drive to V0Vs and V0Ds; is there experimental evidence to support this? It would be helpful to provide a clearer picture in this paper of some of the key history and limitations of the model.\n\n3) A major concern relates to the descending drive. The authors have justified why they have set it up as is (because it works). Whether there is a necessity for projection to the extensor centers (which receive \"relatively high drive\") is not clear (as it produces only tonic activity in them). It's not until the second paragraph of the Discussion that it becomes clear that there are 2 different (independent?) descending drives \u2013 clarity about this is important. Is there a physiological basis to this? It gets less clear in the third paragraph of the Discussion. Could the \"drive\" to extensors not be accomplished by simply an increase in excitability of the target neurons? Modulators, for example? Most importantly, though: \u03b1 is poorly defined. Furthermore, at times \u03b1 and locomotor frequency are used interchangeably. Is the relationship between the two the same in all conditions (the various knockouts)? As the drive forms the crux of the study, it is important to be crystal clear about it, how the values were assigned, what they mean, what is the physiological basis for these values, etc. Can Figure 2 be used to illustrate what happens when \u03b1 is changed? Finally, given the relative paucity in knowledge about descending drive, explicitly stating the predictions of its nature in the discussion would be helpful. A corollary concern relates to sensitivity of the model to changes in \u03b1. For example, in Figure 8 how dependent are the transitions in G-I on the exact \u03b1 value chosen? Why are 3 significant figures used to specify this parameter; is extreme precision needed?\n\n4) Variability, noise, and Figure 7. This is very difficult to follow. It is not clear what this means in terms of physiology \u2013 where is the increasing noise coming from? And given that the noise is increased to the degree that it is, can the reader assume that there is a high degree of tolerance of these circuits to noise? Or do they normally operate near this high limit and thus need to be very well tuned to prevent susceptibility to noise? Figure 7 is difficult to interpret.\n\n5) Afferent feedback is first mentioned early in the Introduction (in an odd sentence stating that the feedback projects to the limbs?). It then arises later in the Discussion. This topic appears tangential to the manuscript and not fully explored. The authors might want to consider leaving this for a subsequent manuscript devoted to the topic, exploring how sensory stimulation can alter circuit function. In any case, they might want to consider removing this topic from the current manuscript to gain on focus and clarity. (This would also mean Figure 9 isn't needed.) (Furthermore, even sensory input confined to fibres terminating in the dorsal horn (not included in this model) can affect gait. Presumably this would be via indirect pathways.) In fact, the authors say in subsection \u201cModel limitations\u201d that they aren't considering afferent input, so why are they?\n\n6) It might be interesting from a comparative biology point of view to consider scaling in the discussion. What happens as you move from mice to cats to horses, for example? Could there be a \"simple\" evolutionary process (in terms of these circuits) that changes the relationship between \u03b1 and locomotor frequency? And speaking of horses, there has been recent work on Dmrt3, which is expressed in a subset of spinal interneurons. Dmrt3 mutations lead to alterations in interlimb coordination (studies replicated in mice). How do these neurons (dI6?) fit into the picture? I came to this by looking at Figure 6D2, which is very close to an even, 4-beat gait as seen in the Icelandic horse t\u00f6lt. What would be needed for this circuit to produce a t\u00f6lt? Or to produce a pace, in which the two left limbs alternate with the two right limbs?\n\n7) The model. How were the values in Table 1 determined? Is there a physiological basis for them, or were they derived iteratively? Either way is okay, but we should know where the numbers come from. Furthermore, how robust is the model to changes in these values? Would the degree of robustness tell us anything about the circuits or their development?\n\n8) Several qualitative comparisons to experimental data are made. These should to the extent that is possible be made quantitative, e.g., the data of Figure 7 C-E vs. C1-E1.\n\n9) Not all readers interested in locomotor CPGs are well versed in bifurcation diagrams. While we concur with the authors that such diagrams convey a lot of information and insight succinctly, the crux is that they must be understood. The bifurcation diagrams are not explained adequately in the text. Help lead the reader through them by explicit reference to specific curves. In particular, describe what is multistability and how it appears in the diagrams. Be clear about the hysteresis and explain how it is uncovered and visualized in the diagrams. Help the reader through these diagrams (one example thoroughly explained will do); your work deserves to be understood.\n\n10) Materials and methods are not fully adequate. Give more details about the model, e.g., how many cells are in a population? Did all cells in a population have exactly the same parameters, inputs, noise? Beef up the sections on Analysis of model performance and Data analysis. Make the complete model and all the simulations available on ModelDB or similar site and on DRYAD or similar sites respectively. The model code etc. MUST be posted in a way that others have direct and complete access to it.\n",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b74ad558-cede-4a3d-acea-201a05dde8dd",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C1",
+      "claim": "Ablation of descending LPNs in mice disturbs left-right coordination at high speeds without affecting fore-hind alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of descending LPNs in mice disturbs left-right coordination at high speeds without affecting fore-hind alternation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work (Ruder et al., 2016) as referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3ac45f0b-070d-4f6a-b2e6-6e7c6f29fdf0",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C2",
+      "claim": "The proposed CIN and diagonal LPN connections contribute to speed-dependent gait transition from walk, to trot, and then to gallop and bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed CIN and diagonal LPN connections contribute to speed-dependent gait transition from walk, to trot, and then to gallop and bound",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model presented in the manuscript, supported by simulation data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4c3bb30e-9ac0-4aef-b599-04a85e5c249e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C3",
+      "claim": "The homolateral LPN connections ensure fore-hind alternation in all gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "the homolateral LPN connections ensure fore-hind alternation in all gaits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model, supported by simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "cb641fed-904b-4f95-879c-a836f07ffaeb",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C4",
+      "claim": "The model reproduces speed-dependent gait expression in intact and genetically transformed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The model reproduces speed-dependent gait expression in intact and genetically transformed mice and the disruption of hindlimb coordination following ablation of descending LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model simulations shown in Figures 4, 5, and comparison with experimental data from Bellardita and Kiehn, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3e45c68b-b014-42b4-b651-100f662f8b34",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C5",
+      "claim": "The model reproduces the disruption of hindlimb coordination following ablation of descending LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The model reproduces speed-dependent gait expression in intact and genetically transformed mice and the disruption of hindlimb coordination following ablation of descending LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figures 6 and 7, compared with experimental data from Ruder et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "58711ca9-ff58-4696-b32a-7938ecf9bfdb",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C6",
+      "claim": "Inputs to CINs and LPNs can affect interlimb coordination and change gait independent of speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Inputs to CINs and LPNs can affect interlimb coordination and change gait independent of speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by model simulations shown in Figure 8G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3f34d148-0082-4d85-9723-367df3d94cca",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C7",
+      "claim": "CINs and LPNs represent the main targets for supraspinal and sensory afferent signals adjusting gait.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that these interneurons represent the main targets for supraspinal and sensory afferent signals adjusting gait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on model predictions and supported by citations to experimental work showing these neurons receive such inputs.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "a5aff3a7-5e3a-47cc-9a45-5d7ba345203d",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C8",
+      "claim": "Mice change gait from walk to trot followed by gallop and bound as locomotor speed increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice change gait from walk to trot followed by gallop and bound as locomotor speed increases (Clarke and Still, 1999; Herbin et al., 2004; Herbin et al., 2007; Bellardita and Kiehn, 2015; Lemieux et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "27029166-096e-452a-908b-023a16c8e4bd",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C9",
+      "claim": "Each gait is characterized by a distinct pattern of limb movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Each gait is characterized by a distinct pattern of limb movements (Hildebrand, 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "47f21353-d2a8-4a21-89d6-ef138111921d",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C10",
+      "claim": "Each limb is controlled by a separate central pattern generator (CPG).",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted that each limb is controlled by a separate central pattern generator (CPGs), because cats are able to walk on split-belt treadmills with limbs stepping at different speeds (Forssberg et al., 1980; Halbertsma, 1983; Frigon et al., 2013, 2015; Thibaudier et al., 2013; Frigon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies and represents established scientific consensus.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "75d5fbe5-dc20-4c1b-b525-d552e84abe27",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C11",
+      "claim": "Quadrupedal locomotion is controlled by four CPGs (one per limb) located in separate sections of the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, quadrupedal locomotion is controlled by four CPGs (one per limb) located in separate sections of the spinal cord, specifically on the left and right side in the lumbar and cervical enlargements (Kato, 1990; Ballion et al., 2001; Juvin et al., 2005; Juvin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "e738c4b7-1cab-4e81-a6a2-2a7296c980d8",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C12",
+      "claim": "The central control of interlimb coordination and gait expression is defined by neurons and neuronal pathways that mediate interactions between circuits controlling each limb.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the central control of interlimb coordination and gait expression is defined by neurons and neuronal pathways that mediate interactions between circuits controlling each limb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the concept that each limb has its own CPG.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "1ea8dc47-1709-48d2-b1ae-4af4325d169b",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C13",
+      "claim": "Interlimb pathways are mediated by short projecting commissural interneurons (CINs) that control left-right interactions at the lumbar and cervical levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These interlimb pathways are mediated by (a) short projecting commissural interneurons (CINs) that control left-right interactions at the lumbar and, presumably, cervical levels (Talpalar et al., 2013; Bellardita and Kiehn, 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental and modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "631711fa-8811-4464-aa8c-5f0fa7c8ddf1",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C14",
+      "claim": "Interlimb pathways are mediated by descending and ascending long propriospinal neurons (LPNs) that control homolateral and diagonal cervical-lumbar interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "and (b) descending (cervical-to-lumbar) and ascending (lumbar-to-cervical) long propriospinal neurons (LPNs) that control homolateral and diagonal cervical-lumbar interactions (Matsushita et al., 1979; Skinner et al., 1979, 1980; Men\u00e9trey et al., 1985; Nathan et al., 1996; Dutton et al., 2006; Brockett et al., 2013; Ruder et al., 2016; Flynn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to anatomical and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "f52171fb-9ced-4dc3-b859-e12e63e729de",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C15",
+      "claim": "Mutants lacking V0V CINs selectively lose trot.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it was shown that mutants lacking V0V CINs selectively lose trot",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Bellardita and Kiehn, 2015; Kiehn, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d7eadb0d-508c-4910-b03e-5085f13b6955",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C16",
+      "claim": "Mutants lacking both V0V and V0D CINs can only bound at any speed.",
+      "claim_type": "EXPLICIT",
+      "source": "and mutants lacking both V0V and V0D CINs can only bound at any speed (Bellardita and Kiehn, 2015; Kiehn, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "7123b563-450b-4e34-a287-2068373c3932",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C17",
+      "claim": "LPNs that directly couple the cervical and lumbar segments have been anatomically identified.",
+      "claim_type": "EXPLICIT",
+      "source": "LPNs that directly couple the cervical and lumbar segments have been anatomically identified (Edinger, 1896; Nathan and Smith, 1959; Matsushita et al., 1979; Skinner et al., 1979; Skinner et al., 1980; Men\u00e9trey et al., 1985; Nathan et al., 1996; Dutton et al., 2006; Brockett et al., 2013; Flynn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3a1bfa4d-76e4-43d3-95e0-1dd983bde800",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C18",
+      "claim": "Deletion of descending (cervical-to-lumbar) LPNs causes a speed-dependent distortion of left-right coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ruder et al. (2016) have shown that deletion of descending (cervical-to-lumbar) LPNs causes a speed-dependent distortion of left-right coordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "94133013-4eeb-4db7-be6f-d7a5fe17071d",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C19",
+      "claim": "In locomotion induced by stimulation of the mesencephalic locomotor region (MLR), increasing the intensity of stimulation causes an increase of locomotor speed accompanied by sequential gait transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "In locomotion induced by stimulation of the mesencephalic locomotor region (MLR), increasing the intensity of stimulation causes an increase of locomotor speed accompanied by sequential gait transitions (Orlovski\u012d et al., 1966; Shik et al., 1966; Shik and Orlovsky, 1976; Skinner and Garcia-Rill, 1984; Grillner, 1985; Atsuta et al., 1990; Nicolopoulos-Stournaras and Iles, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "580babab-a374-4381-84df-d4e2aa8aba2b",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C20",
+      "claim": "The same brainstem drive that controls speed by exciting the rhythm generators also affects interlimb coordination by acting on CINs or LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "From these observations, we hypothesized that the same brainstem drive that controls speed by exciting the rhythm generators also affects interlimb coordination by acting on CINs or LPNs (Danner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on observations and previous modeling work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "571d496d-ec8b-4415-b70e-f7b55e0dd3fc",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C21",
+      "claim": "Different CINs and LPNs receive supraspinal inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is in accordance with multiple data confirming that different CINs and LPNs receive supraspinal inputs (Lloyd, 1942; Lloyd and McIntyre, 1948; Bannatyne et al., 2003; Jankowska et al., 2003; Cowley et al., 2010; Zaporozhets et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "174e1354-1f08-49b0-87d3-09e0461a37d6",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C22",
+      "claim": "The model consists of four rhythm generators (RGs), each controlling one limb.",
+      "claim_type": "EXPLICIT",
+      "source": "The model consists of four rhythm generators (RGs), each controlling one limb (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d8d40495-8876-40d9-9ffd-9afe48501a21",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C23",
+      "claim": "RGs interact via several bidirectional pathways mediated by CINs (left-right) and LPNs (homolateral and diagonal).",
+      "claim_type": "EXPLICIT",
+      "source": "These RGs interact via several bidirectional pathways mediated by CINs (left-right) and LPNs (homolateral and diagonal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4f92b266-d177-454c-83ab-28b49dd5fc26",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C24",
+      "claim": "Each RG consisted of a flexor (F) and extensor center (E) that mutually inhibited each other through intermediate inhibitory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Each RG consisted of a flexor (F) and extensor center (E) that mutually inhibited each other through intermediate inhibitory interneurons (InF and InE, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "c87d40ed-9761-48b5-a631-0778bce670c2",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C26",
+      "claim": "Under normal conditions extensor centers receive relatively high drive that keeps them in the regime of tonic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this concept and our previous models (Rybak et al., 2015; Molkov et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Ausborn et al., 2017), we assumed that under normal conditions extensor centers receive relatively high drive that keeps them in the regime of tonic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption based on previous modeling work and the concept of asymmetric flexion-dominated CPG organization.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "93cf0ce7-6c89-4d0e-8252-00813b3c4ec1",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C27",
+      "claim": "Extensor centers exhibited rhythmic bursting only due to rhythmic inhibition from the corresponding intrinsically oscillating flexor centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, they exhibited rhythmic bursting only due to rhythmic inhibition from the corresponding intrinsically oscillating flexor centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior based on the model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "534361eb-9f28-4f0e-954c-8c11c3f75e8e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C28",
+      "claim": "The frequency of oscillation in the model was defined by the brainstem drive to flexor centers and was almost independent of the phasic interactions between RGs mediated by CINs and LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the frequency of oscillation in the model was defined by the brainstem drive to flexor centers and was almost independent of the phasic interactions between RGs mediated by CINs and LPNs (Rybak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "5a4dc501-f624-41ae-9263-d87c408c2eba",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C29",
+      "claim": "The inhibitory V0D CINs provide direct mutual inhibition between the left and right flexor centers.",
+      "claim_type": "EXPLICIT",
+      "source": "the inhibitory V0D CINs provide direct mutual inhibition between the left and right flexor centers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figures 2A and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "215d4a7a-b548-408f-abd3-048323f7241e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C30",
+      "claim": "The excitatory V0V CINs provide mutual inhibition between the flexor centers (receiving inputs from excitatory V2a and acting through inhibitory Ini neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "the excitatory V0V CINs also provide mutual inhibition between the flexor centers (receiving inputs from excitatory V2a and acting through inhibitory Ini neurons)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figures 2A and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "0dba361c-9d2e-44d9-85ee-bcdd1dcaee94",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C31",
+      "claim": "The excitatory V3 CINs provide mutual excitation between the flexor centers.",
+      "claim_type": "EXPLICIT",
+      "source": "the excitatory V3 CINs provide mutual excitation between the flexor centers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figures 2A and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "103009c1-2e43-4cf7-94dd-caf0cc2ca55b",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C32",
+      "claim": "The inhibitory CINi CINs provide inhibition from the extensor to the contralateral flexor centers.",
+      "claim_type": "EXPLICIT",
+      "source": "and the inhibitory CINi CINs provide inhibition from the extensor to the contralateral flexor centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figures 2A and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "95e75220-786f-4970-afe6-e5f4d547e237",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C33",
+      "claim": "There are excitatory and inhibitory descending LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ruder et al. (2016) reported that there are excitatory and inhibitory descending LPNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4d03ae02-7f1d-4699-9ee8-81f068bf1901",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C34",
+      "claim": "Ascending LPNs are only excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas ascending LPNs are only excitatory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b7587877-0aff-46e2-b04c-de11f4b7dfb8",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C35",
+      "claim": "Both descending and ascending LPNs project homolaterally and diagonally.",
+      "claim_type": "EXPLICIT",
+      "source": "Both descending and ascending LPNs project homolaterally and diagonally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8a9852d7-b3e0-4f5a-9106-31b5ac456850",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C36",
+      "claim": "There are more diagonal than homolateral excitatory LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "There are more diagonal then homolateral excitatory LPNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "cb2ce73f-e9e4-4f42-825f-8e7262ec58e7",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C37",
+      "claim": "There are more homolateral than diagonal inhibitory LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "while the opposite is the case for inhibitory LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "91384572-cc92-4d26-81db-efd99e49a515",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C38",
+      "claim": "The excitatory homolateral LPNs were identified as Shox2.",
+      "claim_type": "EXPLICIT",
+      "source": "The excitatory homolateral LPNs were identified as Shox2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "f9da4a85-28a2-4690-89d1-0185a15fba56",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C39",
+      "claim": "The excitatory diagonal LPNs were identified as V0V neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and the excitatory diagonal LPNs as V0V neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work (Ruder et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "0189f04e-515e-404f-ad3c-4c4eb491e4af",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C40",
+      "claim": "Diagonally projecting inhibitory LPNs are of V0D type.",
+      "claim_type": "EXPLICIT",
+      "source": "We have hypothesized that diagonally projecting inhibitory LPNs are of V0D type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "7bf7e605-cb7e-40a7-b26e-bd8db7c3378a",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C41",
+      "claim": "The excitatory Shox2 neurons provide excitation from each cervical extensor to its homolateral lumbar flexor center.",
+      "claim_type": "EXPLICIT",
+      "source": "the excitatory Shox2 neurons provide excitation from each cervical extensor to its homolateral lumbar flexor center",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "25a23b37-32ba-4757-92f6-3c9c29c90731",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C42",
+      "claim": "Inhibitory LPNs of unidentified type (LPNi) provide inhibition from each cervical flexor to its homolateral lumbar flexor center.",
+      "claim_type": "EXPLICIT",
+      "source": "inhibitory LPNs of unidentified type (LPNi) provide inhibition from each cervical flexor to its homolateral lumbar flexor center",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "afcd541d-c3f8-4bda-9200-db93b73c9ea1",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C43",
+      "claim": "V0V LPNs provide excitation from each cervical flexor to its diagonal flexor center.",
+      "claim_type": "EXPLICIT",
+      "source": "V0V LPNs provide excitation from each cervical flexor to its diagonal flexor center",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8ee6dd61-fc32-4d35-a90c-24cb5aeae4b2",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C44",
+      "claim": "Inhibitory V0D LPNs provide inhibition from each cervical flexor to its diagonal lumbar flexor center.",
+      "claim_type": "EXPLICIT",
+      "source": "and inhibitory V0D LPNs provide inhibition from each cervical flexor to its diagonal lumbar flexor center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "6f14844b-06a9-4f58-8131-8410afe349cb",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C45",
+      "claim": "Lumbar-to-cervical connections mirror the excitatory cervical-to-lumbar connections but do not include inhibitory LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lumbar-to-cervical connections (Figure 2C) mirror the excitatory cervical-to-lumbar connections but do not include inhibitory LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "04c49929-431e-4790-86f5-ccf5df1cc95c",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C46",
+      "claim": "One brainstem drive excited flexor centers and inhibited the local V0 CINs at cervical and lumbar levels and the descending diagonal V0D LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, there were two brainstem drives (Figure 2D): one that excited flexor centers and inhibited the local V0 CINs at cervical and lumbar levels and the descending diagonal V0D LPNs, promoting left-right and diagonal alternation between the corresponding RGs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "dc5770d6-b9ac-41dc-a095-90f552a49794",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C47",
+      "claim": "Another brainstem drive provided constant excitatory drive to the extensor centers.",
+      "claim_type": "EXPLICIT",
+      "source": "and the other that provided constant excitatory drive to the extensor centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "c69fc3cb-b7ef-4bf0-9bf8-414a1949dc79",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C49",
+      "claim": "The increase in frequency occurred mostly due to shortening of the extension phase, while the flexion phase remained almost constant.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in frequency occurred mostly due to shortening of the extension phase, while the flexion phase remained almost constant (Figure 4B, bottom diagram)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4B, which is consistent with experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b474cf56-e6c8-4555-99ca-efeeaa2b4e6a",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C50",
+      "claim": "Shortening of extension phase while flexion phase remains constant is a characteristic property of fictive and real locomotion across species.",
+      "claim_type": "EXPLICIT",
+      "source": "which is a characteristic property of fictive and real locomotion across species (Halbertsma, 1983; Hildebrand, 1989; Frigon and Gossard, 2009; Danner et al., 2015; Shevtsova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "071a5c82-3c4d-452f-926a-99062bb04d1d",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C51",
+      "claim": "The increased frequency in the model was accompanied by sequential gait changes from walk to trot to gallop and then bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased frequency in the model was accompanied by sequential gait changes from walk to trot to gallop and then bound (Figure 4A) consistent with experimental observations (Figure 4C, Bellardita and Kiehn, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4A, consistent with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "908412a4-bac4-46cd-a181-623e59418f58",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C52",
+      "claim": "The expressed walking gait was a lateral-sequence walk.",
+      "claim_type": "EXPLICIT",
+      "source": "The expressed walking gait was a lateral-sequence walk (Figure 4A,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "1bf7e0d0-61c7-4ccc-913d-43ecc8a68d79",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C53",
+      "claim": "In lateral-sequence walk, flexion phases proceeded in the following order: hind-right, fore-right, hind-left and fore-left.",
+      "claim_type": "EXPLICIT",
+      "source": "in which flexion phases proceeded in the following order: hind-right, fore-right, hind-left and fore-left.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model behavior during walk.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "bd0bd412-0df1-499b-922e-4279a0e0d708",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C54",
+      "claim": "Walk occurred at frequencies from 2 to 4 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "This walk occurred at frequencies from 2 to 4 Hz (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "bb4a5584-ec9c-4595-852e-4186352457fe",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C55",
+      "claim": "At low frequencies during walk, the extension phase was three to four times longer than the flexion phase duration.",
+      "claim_type": "EXPLICIT",
+      "source": "At low frequencies, the extension phase was three to four times longer than the flexion phase duration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "37e3e7ab-454c-4a89-b816-082c2aab0236",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C56",
+      "claim": "During walk, the homolateral and diagonal phase differences were close to 0.25 and 0.75, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "and the homolateral and diagonal phase differences were close to 0.25 and 0.75, respectively (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "cd016e91-45ba-4324-b680-2030cc722eb3",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C57",
+      "claim": "Trot was characterized by diagonal synchronization, left-right alternation and fore-hind alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "Trot (Figure 4A,E) was characterized by diagonal synchronization, left-right alternation and fore-hind alternation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "9551d338-39c4-43a8-a6d2-d82a47a7b845",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C58",
+      "claim": "Trot was expressed over a large range of frequencies (from 4 to 10.5 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "It was expressed over a large range of frequencies (from 4 to 10.5 Hz; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "a093ba2c-eac2-4853-ba24-ca121cebb8ca",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C59",
+      "claim": "Gallops are characterized by synchronization or quasi-synchronization of the hind RGs and a non-zero phase difference between the fore RGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gallops are characterized by synchronization or quasi-synchronization of the hind RGs and a non-zero phase difference between the fore RGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of gallop characteristics based on model behavior.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d93a2111-6bad-4722-ba2f-784c777fea68",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C60",
+      "claim": "In the model, gallop was expressed at frequencies between 9 and 11 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model (Figure 4A,B,F), gallop was expressed at frequencies between 9 and 11 Hz",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8f390ad5-9dcc-4f7a-8c81-f4113e2d0af2",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C61",
+      "claim": "The model expressed transverse but not rotary gallops.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, transverse but not rotary gallops were expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "372c0e6e-2736-4259-bb05-b0524bcfbce1",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C62",
+      "claim": "Some of the gallops exhibited an interval between the end of the hind extension and the beginning of the fore extension, in which all RGs were in flexion at the same time, corresponding to an aerial phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the gallops exhibited an interval between the end of the hind extension and the beginning of the fore extension, in which all RGs were in flexion at the same time (Figure 4F). This corresponds to an aerial phase, characteristic for gallops.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "2e0969d4-c7cc-4e9a-95c5-e66e751e83d8",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C63",
+      "claim": "Bound was characterized by left-right synchronization at cervical and lumbar levels, and homolateral and diagonal alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bound (Figure 4A,B,G) was characterized by left-right synchronization at cervical and lumbar levels, and homolateral and diagonal alternation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "55051bec-ba64-411d-b087-3254449038a2",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C64",
+      "claim": "Bound was expressed at frequencies between 11 and 12 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Bound was expressed at frequencies between 11 and 12 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "f30c4f5a-69ab-48ec-bd70-9335210d48a5",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C65",
+      "claim": "During bound, the flexion phase duration was always longer than the extension phase duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexion phase duration was always longer than the extension phase duration (Figure 4B, bottom diagram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3858fb99-1850-4824-9108-2b5081d747b5",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C66",
+      "claim": "The frequency ranges, phase differences, and step cycle compositions of all gaits in the model were consistent with mouse locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency ranges, phase differences, and step cycle compositions (relative phase durations) of all gaits were consistent with mouse locomotion (Figure 4B\u2013G; Bellardita and Kiehn, 2015; see gait definitions in Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of model results with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "59842c29-3f1d-449f-a92a-7236a7d90ada",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C67",
+      "claim": "At the lowest values of brainstem drive, both left-right and diagonal alternation promoting pathways dominated.",
+      "claim_type": "EXPLICIT",
+      "source": "At the lowest values of brainstem drive, both left-right (local V0D and V0V CINs) and diagonal alternation (diagonal V0D LPNs) promoting pathways dominated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior at low drive values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "6c7017ed-b86d-4aa5-afcc-0843d65c396e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C69",
+      "claim": "The transition from trot to gallop and bound was governed by brainstem-drive-controlled speed-dependent changes in the left-right and diagonal pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from trot to gallop and bound was governed by brainstem-drive-controlled speed-dependent changes in the left-right and diagonal pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mechanism underlying gait transitions in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "705c7a35-fc60-49f5-badf-b5cae5183a4e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C70",
+      "claim": "The left-right alternation promoting local CINs (V0D and V0V) received inhibition from the brainstem that increased with speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The left-right alternation promoting local CINs (V0D and V0V) received inhibition from the brainstem that increased with speed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure and its effect on behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "a19a2399-bd78-43f3-b852-653b034c1817",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C71",
+      "claim": "The left-right synchronization promoting local CINs (V3 and CINi) did not receive brainstem inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "while the left-right synchronization promoting local CINs (V3 and CINi) did not receive brainstem inhibition (Figure 2D, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the model structure shown in Figures 2D and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "0c922cd7-506f-4ad8-b764-df1b1dcf99a1",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C72",
+      "claim": "With increasing brainstem drive (and frequency), the pathway promoting left-right synchronization became stronger than those promoting left-right alternation, resulting in a transition from trot to gallop and then to bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, with increasing brainstem drive (and frequency), the pathway promoting left-right synchronization became stronger than those promoting left-right alternation. This resulted in a transition from trot to gallop and then to bound (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of model behavior shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "055284b7-155c-4953-af5c-c4609fde7f20",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C73",
+      "claim": "The diagonally projecting V0V LPNs, promoting diagonal synchronization, acted synergistically with local V0V CINs.",
+      "claim_type": "EXPLICIT",
+      "source": "The diagonally projecting V0V LPNs, promoting diagonal synchronization, acted synergistically with local V0V CINs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b46ca1db-d0ed-47e8-9ee5-84971bd5497c",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C74",
+      "claim": "The bifurcation from trot to gallop resembled a subcritical (backwards) pitchfork bifurcation in the hind (and fore) left-right phase differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The bifurcation from trot to gallop resembled a subcritical (backwards) pitchfork bifurcation in the hind (and fore) left-right phase differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical characterization of the model behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b93b5988-1c64-40a5-9328-9bab29f82304",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C76",
+      "claim": "Hysteresis is a common feature of gait transitions in quadrupeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a hysteresis is a common feature of gait transitions in quadrupeds (Heglund and Taylor, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "df76dfa8-77d2-4276-ba91-f454ecc654b0",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C77",
+      "claim": "The addition of diagonal LPNs in the present model was critical for stable gallop to exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, that the previous model (Danner et al., 2016) could not reproduce stable gallops; they only existed as a transitional regime. Therefore, the addition of diagonal LPNs in the present model was critical for stable gallop to exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the previous model and a conclusion about the importance of diagonal LPNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "29aa0e52-7a1c-4d99-a3a3-573d319ec4b8",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C78",
+      "claim": "When all V0V neurons were deleted in the model, only walk, gallop and bound were expressed; trot was selectively lost.",
+      "claim_type": "EXPLICIT",
+      "source": "When all V0V neurons were deleted (Figure 5B) only walk, gallop and bound were expressed; trot was selectively lost.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "de955c5e-fcfa-45eb-b63e-755c25cbf54e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C79",
+      "claim": "Deletion of V2a had the same effect as deletion of V0V, because V2a relayed all inputs to V0V CINs and LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of V2a had the same effect as deletion of V0V, because V2a relayed all inputs to V0V CINs and LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations and an explanation based on model structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "12a7efc2-e06d-4a57-976a-70615f215142",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C81",
+      "claim": "Deletion of both V0V and V0D resulted in the removal of all left-right alternation promoting pathways and caused the loss of all alternating gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of both V0V and V0D resulted in the removal of all left-right alternation promoting pathways and caused the loss of all alternating gaits (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "0baae062-6f02-4097-8ee4-9d1f7fa56787",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C82",
+      "claim": "After deletion of both V0V and V0D, bound was stable over all frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Bound was stable over all frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations after deletion of V0V and V0D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "39dd4d17-cbf0-4c6b-9dea-8cd51b0cc8dd",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C83",
+      "claim": "Deletion of descending LPNs influences left-right coordination: at low speeds both the fore and hind limbs were alternating, then at medium speeds the hind limbs, and at high speeds both the fore and hind limbs demonstrated disturbed coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "Ruder et al. (2016) showed that deletion of descending LPNs influences left-right coordination: at low speeds both the fore and hind limbs were alternating, then at medium speeds the hind limbs, and at high speeds both the fore and hind limbs demonstrated disturbed coordination with both alternating and synchronized activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4f60927e-56f2-4043-a76b-4c9844b4b294",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C84",
+      "claim": "In the model, deletion of the cervical-to-lumbar LPNs resulted in the emergence of new stable states.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, deletion of the cervical-to-lumbar LPNs resulted in the emergence of new stable states (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "c92bb5b9-077e-4353-b9b6-55dda40f5b73",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C85",
+      "claim": "After deletion of cervical-to-lumbar LPNs, at low brainstem drive values walk remained the only stable state.",
+      "claim_type": "EXPLICIT",
+      "source": "At low brainstem drive values walk remained the only stable state and with increasing drive it gradually transitioned towards trot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations after deletion of cervical-to-lumbar LPNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "f0d7d443-33be-49a8-be86-1c032d2df8bf",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C87",
+      "claim": "The disturbance of the fore and hind left-right phase differences after deletion of cervical-to-lumbar LPNs was mainly caused by the deletion of diagonally projecting V0V LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the disturbance of the fore and hind left-right phase differences was mainly caused by the deletion of diagonally projecting V0V LPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing model results after different deletions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "cb4bb3ee-a48e-43a7-89d4-0b963ed4118c",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C88",
+      "claim": "The remaining homolaterally projecting LPNs maintained fore-hind alternation after deletion of cervical-to-lumbar LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining homolaterally projecting LPNs maintained fore-hind alternation after deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "1b7d7b95-0e13-41b4-a1af-0f83a9da4914",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C89",
+      "claim": "Local V0V CINs maintained the stable branch of left-right alternation after deletion of cervical-to-lumbar LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Local V0V CINs maintained the stable branch of left-right alternation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8320d77b-2080-41f2-a4e2-1c92e8fc0eb7",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C90",
+      "claim": "Deletion of cervical-to-lumbar LPNs resulted in the emergence of new, additional stable states at medium and high brainstem drive values.",
+      "claim_type": "EXPLICIT",
+      "source": "In the above section, we described that deletion of the cervical-to-lumbar LPNs resulted in the emergence of new, additional stable states at medium and high brainstem drive values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of results from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "5ae363cc-afe0-4806-bc9b-1e23d412db29",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C91",
+      "claim": "In the intact model with increased noise, at medium brainstem drives the increased noise caused phase durations and phase differences to become more variable, but both the fore and hind RGs remained alternating over all steps.",
+      "claim_type": "EXPLICIT",
+      "source": "In the intact model, at medium brainstem drives (related to trot), the increased noise caused phase durations and phase differences to become more variable, but both, the fore and hind RGs remained alternating over all steps (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations with noise shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "baeb9fe1-6d5e-4204-ae42-0f2ae8ae6002",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C92",
+      "claim": "After deletion of cervical-to-lumbar LPNs with increased noise, the applied noise caused spontaneous transitions between the steady states: the activity of hind RGs was spontaneously switching between synchronization and alternation while the fore RGs remained alternating.",
+      "claim_type": "EXPLICIT",
+      "source": "After deletion of cervical-to-lumbar LPNs, the applied noise caused spontaneous transitions between the steady states: the activity of hind RGs was spontaneously switching between synchronization and alternation while the fore RGs remained alternating (see dashed box in Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations with noise shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "0221032b-3918-4846-b2d4-977cab335a53",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C93",
+      "claim": "A similar disruption of interlimb coordination has been described in mice after deletion of cervical-to-lumbar LPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar disruption of interlimb coordination has been described in mice after deletion of cervical-to-lumbar LPNs (Ruder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "c07eaa98-3d36-44e9-aa7d-7a72594cbdb4",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C94",
+      "claim": "The model reproduced the speed-dependent effect of changes in the proportion of appropriate and misaligned steps after deletion of cervical-to-lumbar LPNs: at low speeds hind and fore limb coordination remained appropriate for trot, at medium speeds hind limb coordination was disturbed, and at high speeds both fore and hind limb coordination was affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the model also reproduced the speed-dependent effect of changes in the proportion of appropriate and misaligned steps: at low speeds hind and fore limb coordination remained appropriate for trot, at medium speeds hind limb coordination was disturbed, and at high speeds both fore and hind limb coordination was affected (Figure 7C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 7C-E, consistent with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b8b35d7c-41cf-4ac0-a99b-0ad70ca24fb9",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C95",
+      "claim": "Mice usually switch gaits and locomotor speeds abruptly with few or no intermediary steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice usually switch gaits and locomotor speeds abruptly with few or no intermediary steps (Bellardita and Kiehn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "bb7ecf12-e454-43a2-a392-aed648715746",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C96",
+      "claim": "Transitions from walk to trot, from gallop to trot and from walk to gallop and back to walk in the model usually required only one or two cycles to stabilize the new gait and locomotor frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions from walk to trot, from gallop to trot and from walk to gallop and back to walk (Figure 8A\u2013C) mirrored experimental observations closely (Figure 8D\u2013E; Bellardita and Kiehn, 2015): they usually required only one or two cycles to stabilize the new gait and locomotor frequency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 8A-C, consistent with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "2a2d9f7f-662e-4ce5-a5b3-6900fa55f8e2",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C97",
+      "claim": "Additional inhibitory drive to all V0V CINs and LPNs during trot induced a transition to bound without significantly affecting the frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, additional inhibition to V0V CINs and LPNs during trot induced a transition to bound without significantly affecting the frequency, resulting in a bound at a frequency characteristic of trot (Figure 8G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 8G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "06296b46-8042-4ea9-ade9-d72262455a94",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C98",
+      "claim": "Excitatory drive to the local V0V CINs during gallop induced a transition to trot, without significantly affecting speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory drive to the local V0V CINs during gallop induced a transition to trot, again without significantly affecting speed (Figure 8H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "98a619c4-16d8-46ba-b1f6-e8209c25b49b",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C99",
+      "claim": "Excitation of the local cervical V0V CINs during gallop caused the fore left-right phase differences to move farther from synchronization while the hind RG coordination remained almost unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitation of the local cervical V0V CINs during gallop caused the fore left-right phase differences to move farther from synchronization and the left and right extension phases of the fore RGs to overlap less, while the hind RG coordination remained almost unchanged (Figure 8I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations shown in Figure 8I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "31bca143-f845-49c0-b000-45c5fe09dfe6",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C100",
+      "claim": "Tonic inputs to CINs and LPNs were able to alter interlimb coordination and gait almost independently of frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, tonic inputs to CINs and LPNs were able to alter interlimb coordination and gait almost independently of frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations shown in Figure 8G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "ef16c90c-4833-4032-b820-1b3c57b63bb5",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C101",
+      "claim": "The drive to the extensor centers may represent a separate descending supraspinal drive to extensor circuits operating through the medial reticulospinal or vestibulospinal tracts and/or inputs from cutaneous afferents and load receptors from extensor muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "This drive may represent a separate descending supraspinal drive to extensor circuits operating through the medial reticulospinal or vestibulospinal tracts and/or inputs from cutaneous afferents and load receptors from extensor muscles (Hiebert and Pearson, 1999; Dietz and Duysens, 2000; Bouyer and Rossignol, 2003; Rossignol et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about what the model drive might represent, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "04c5e012-7009-404c-8a38-cb31114b5f17",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C102",
+      "claim": "The brainstem drive to the flexor centers put them into a rhythmic bursting regime.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem drive to the flexor centers put them into a rhythmic bursting regime",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "cfb7366e-2e3e-4d2f-8713-ab79d2a99d19",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C103",
+      "claim": "Strong inhibition between flexor and extensor centers mediated by inhibitory interneurons caused rhythmic flexor-extensor alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "and strong inhibition between flexor and extensor centers mediated by inhibitory interneurons caused rhythmic flexor-extensor alternation (Zhang et al., 2014; Britz et al., 2015; Rybak et al., 2015; Shevtsova et al., 2015; Danner et al., 2016; Shevtsova and Rybak, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "30f5064d-d44b-46e2-8e78-6b694179dcb9",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C104",
+      "claim": "Progressive increase of brainstem drive to flexor centers increased locomotor frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Progressive increase of this drive increased locomotor frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of model behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "039a3cb6-c0cb-4194-ac6a-79ea0d4b740a",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C105",
+      "claim": "Gait transitions are caused by brainstem drives acting on neurons coupling the RGs and affecting the balance between the activities of pathways promoting synchronization and alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "Following our previous model (Danner et al., 2016), we suggest that gait transitions are caused by brainstem drives acting on neurons coupling the RGs and affecting the balance between the activities of pathways promoting synchronization and alternation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the model and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b4f015cb-75d2-4127-b3f6-541dd399756a",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C106",
+      "claim": "Spinal CINs and LPNs receive excitatory and inhibitory inputs from supraspinal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies confirm that spinal CINs and LPNs receive excitatory and inhibitory inputs from supraspinal structures (Skinner et al., 1979; Skinner et al., 1980; Alstermark et al., 1987; Bannatyne et al., 2003; Jankowska et al., 2003; Jankowska et al., 2005; Jankowska et al., 2006; Matsuyama et al., 2004; Cowley et al., 2008; Cowley et al., 2010; Jankowska, 2008; Szokol et al., 2011; Zaporozhets et al., 2011; Juvin et al., 2012; Mitchell et al., 2016; Ruder et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "55a7d35e-6ca5-4879-a0fd-d3e61b6cb497",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C107",
+      "claim": "CINs and LPNs receive direct and indirect input from sensory afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with multiple experimental data showing that CINs and LPNs receive direct and indirect input from sensory afferents (Lloyd and McIntyre, 1948; Edgley et al., 2003; Bannatyne et al., 2006; Jankowska et al., 2009; Flynn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4336c2d2-0679-4d28-b43c-658f55435f75",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C108",
+      "claim": "Afferent feedback from each limb projects mostly to the spinal cord section controlling the same limb.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with this is the notion that afferent feedback from each limb projects mostly to the spinal cord section controlling the same limb (Frigon, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "17fba87c-986a-49f0-8738-ded7679cc4bb",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C109",
+      "claim": "The influence of afferent feedback on spinal circuits and RGs controlling other limbs should be mostly mediated by CINs and LPNs located in the section receiving the feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "and hence its influence on spinal circuits and RGs controlling other limbs should be mostly mediated by CINs and LPNs located in this section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the anatomical organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d630507d-cb82-4184-825e-51ff63979ee6",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C110",
+      "claim": "CINs and LPNs represent the main neural targets for different local/intraspinal, supraspinal, and sensory inputs to control interlimb coordination and adjust gait to various internal and external conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we suggest that CINs and LPNs represent the main neural targets for different local/intraspinal, supraspinal, and sensory inputs to control interlimb coordination and adjust gait to various internal and external conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on model predictions and anatomical/physiological data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "6f4a5a9b-7f44-457c-b01b-7b0c283a944f",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C111",
+      "claim": "Separate (independent of brainstem drives) signals to CINs and LPNs only (e.g. from sensory afferents) can affect limb coordination and change gait independent of speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Separate (independent of brainstem drives) signals to CINs and LPNs only (e.g. from sensory afferents) can affect limb coordination and change gait independent of speed (as shown in Figure 8G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from model simulations shown in Figure 8G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "40b63ac2-e89d-499d-8385-26b600d35459",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C112",
+      "claim": "Mechanical coupling between the limbs and body can influence interlimb coordination and interact with the neural control.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical coupling between the limbs and body can also influence interlimb coordination and interact with the neural control (Nishikawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "a3918e85-a46d-4580-b29d-de004786d150",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C113",
+      "claim": "Gaits are not only characterized by the phase differences between the limbs but also by a change in kinematics and muscle activation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, gaits are not only characterized by the phase differences between the limbs but also by a change in kinematics and muscle activation patterns (Bellardita and Kiehn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "e476611a-de3d-47b8-bcdb-96f6b15d54bb",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C114",
+      "claim": "Diagonal V0D LPNs ensure stable walk.",
+      "claim_type": "EXPLICIT",
+      "source": "Walk and the transition to trot: diagonal V0D LPNs ensure stable walk",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "b1228b43-040b-47db-af0b-b33df07d9cf7",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C115",
+      "claim": "Diagonal V0V LPNs stabilize trot.",
+      "claim_type": "EXPLICIT",
+      "source": "Trot and the transition to gallop and bound: diagonal V0V LPNs stabilize trot",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "4cbd1bae-f5ce-49d7-842a-50361faf0b70",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C116",
+      "claim": "Diagonal V0D LPNs support walk.",
+      "claim_type": "EXPLICIT",
+      "source": "The model proposes the following roles for LPNs: diagonal V0D LPNs supports walk",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "3003eecf-ed41-4aa0-bc18-41051c1f5cb6",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C117",
+      "claim": "Diagonal V0V LPNs together with local V0V CINs stabilize trot.",
+      "claim_type": "EXPLICIT",
+      "source": "diagonal V0V LPNs together with local V0V CINs stabilize trot",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d85bfe6f-bd2a-426f-8536-6050bd2ee51c",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C118",
+      "claim": "Homolateral LPNs ensure fore-hind alternation in all gaits.",
+      "claim_type": "EXPLICIT",
+      "source": "and homolateral LPNs ensure fore-hind alternation in all gaits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "ab9547f0-d579-4851-af9c-688e5da67744",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "claim_id": "C119",
+      "claim": "The lateral-sequence walk is the preferred walk of several quadrupeds, including mice, dogs, cats, and humans crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "which is the preferred walk of several quadrupeds, including mice, dogs, cats, and humans crawling (Patrick et al., 2009; Bellardita and Kiehn, 2015; Righetti et al., 2015; Frigon, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0bde24e3-e591-4b77-a231-fda121b4fd29",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The computational model consists of four rhythm generators (RGs) controlling each limb, coupled by commissural interneurons (CINs) mediating left-right interactions and long propriospinal neurons (LPNs) mediating homolateral and diagonal interactions. Each RG contains flexor and extensor centers with mutual inhibition, and the model incorporates specific neuronal populations (V0D, V0V, V3, CINi CINs and Shox2, LPNi, V0V, V0D LPNs) with defined connectivity patterns based on experimental data. The model receives two brainstem drives: one to flexor centers and inhibitory to V0 CINs/LPNs, and another constant drive to extensor centers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C47 describe the model architecture comprehensively, with structure shown in Figures 1-3. The model design is based on established concepts (asymmetric flexion-dominated CPG organization) and incorporates connectivity patterns consistent with experimental data from Ruder et al., 2016. The mathematical implementation is detailed in Materials and methods with specific equations and parameters provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "8658228f-80bc-4c6b-8908-712422b376d3",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model reproduces speed-dependent gait transitions from walk to trot to gallop to bound with increasing brainstem drive (parameter \u03b1 from 0 to 1.05, corresponding to frequencies 2-12 Hz). The model exhibits lateral-sequence walk at 2-4 Hz, trot at 4-10.5 Hz, gallop at 9-11 Hz, and bound at 11-12 Hz. Frequency increases primarily through shortening of extension phase while flexion phase remains constant. The frequency ranges, phase differences, and step cycle compositions match experimental observations in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C66 are well-supported by simulation data shown in Figure 4, with quantitative comparisons to experimental data from Bellardita and Kiehn, 2015. The model successfully reproduces the characteristic features of each gait including phase relationships and temporal patterns. The consistency between model predictions and experimental observations across multiple gait parameters provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model proposes that gait transitions are controlled by brainstem drive acting differentially on CINs and LPNs. At low drive, diagonal V0D LPNs dominate to ensure stable walk. With increasing drive, inhibition of V0 CINs/LPNs shifts the balance from alternation-promoting to synchronization-promoting pathways, causing transitions from walk to trot (when diagonal V0V LPNs become stronger than V0D) and from trot to gallop/bound (when V3/CINi overcome V0V). The trot-to-gallop transition exhibits hysteresis and resembles a subcritical pitchfork bifurcation. Diagonal V0V LPNs are critical for stable gallop, which was not present in the previous model lacking these connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C77, C114-C115 describe the mechanistic basis for gait transitions, supported by bifurcation analysis shown in Figure 5A and mathematical characterization of the dynamics. The comparison with the previous model (Danner et al., 2016) demonstrates the critical role of diagonal LPNs. The proposed mechanism is internally consistent with the model structure and produces behavior matching experimental observations including hysteresis in gait transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model reproduces experimental observations from genetically transformed mice: deletion of V0V neurons (or V2a which relays inputs to V0V) results in selective loss of trot while maintaining walk, gallop, and bound; deletion of both V0V and V0D neurons eliminates all alternating gaits, leaving only bound stable across all frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 are supported by model simulations shown in Figure 5B,D, which match experimental observations from Bellardita and Kiehn, 2015 (claims C15-C16). The model correctly predicts the specific gait deficits resulting from deletion of identified neuronal populations, providing strong validation of the proposed circuit organization and the roles of V0V and V0D neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deletion of cervical-to-lumbar LPNs in the model results in emergence of new stable states at medium and high drive values, causing speed-dependent disruption of left-right coordination. At low speeds, walk/trot remain stable; at medium speeds, both trot and gallop are stable with hind limbs showing disturbed coordination; at high speeds, both fore and hind limbs show coordination deficits. The disturbance is mainly caused by loss of diagonal V0V LPNs, while homolateral LPNs maintain fore-hind alternation and local V0V CINs maintain some left-right alternation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 are supported by bifurcation analysis and simulations shown in Figure 6. The model predictions match experimental observations from Ruder et al., 2016 (claims C1, C18, C83) regarding speed-dependent coordination deficits after LPN ablation. The mechanistic explanation identifying diagonal V0V LPNs as the primary source of disruption is a logical inference from comparing different deletion conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "792453d7-7815-4d97-842b-cd42484f3e35",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "With increased noise, the intact model shows increased variability but maintains alternation, while the model with deleted cervical-to-lumbar LPNs exhibits spontaneous transitions between stable states, with hind limbs switching between synchronization and alternation. The model reproduces the speed-dependent pattern of misaligned steps observed experimentally: coordination remains appropriate at low speeds, hind limb coordination is disturbed at medium speeds, and both fore and hind coordination is affected at high speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 are supported by simulations with noise shown in Figure 7. The model with increased noise and LPN deletion exhibits spontaneous state transitions consistent with experimental observations from Ruder et al., 2016 (claim C93). The quantitative comparison of step alignment proportions (Figure 7C-E vs C1-E1) shows good agreement with experimental data across different speeds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model demonstrates that gait transitions can occur rapidly (1-2 cycles) with changes in brainstem drive, matching experimental observations. Additionally, the model shows that inputs specifically to CINs and LPNs (independent of drive to RGs) can alter interlimb coordination and induce gait changes without significantly affecting locomotor frequency. Examples include: inhibition of V0V CINs/LPNs during trot inducing transition to bound, excitation of V0V CINs during gallop inducing transition to trot, and selective excitation of cervical V0V CINs altering fore limb coordination during gallop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100, C6, C111 are supported by simulations shown in Figure 8. The rapid gait transitions (Figure 8A-C) match experimental data from Bellardita and Kiehn, 2015 (Figure 8D-E). The demonstrations of frequency-independent gait changes through targeted inputs to CINs/LPNs (Figure 8G-I) are novel predictions from the model that are mechanistically consistent with the circuit architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "20c7af31-1488-4efa-8b96-4f6a28e88db0",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model proposes specific functional roles for different LPN populations: diagonal V0D LPNs support walk, diagonal V0V LPNs together with local V0V CINs stabilize trot, and homolateral LPNs ensure fore-hind alternation in all gaits. These CIN and diagonal LPN connections contribute to speed-dependent gait transitions from walk to trot to gallop and bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C116-C118 summarize the main functional conclusions from the model, which are supported by the collective evidence from simulations, bifurcation analyses, and deletion studies presented throughout the Results section. The proposed roles are consistent with the model's ability to reproduce experimental observations and represent testable predictions about the specific contributions of different neuronal populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "09fdcf3b-1753-4378-be0d-4267cf0f796b",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that CINs and LPNs represent the main targets for supraspinal and sensory afferent signals adjusting gait. This hypothesis is based on the model prediction that gait transitions are caused by brainstem drives acting on neurons coupling the RGs, combined with experimental evidence that CINs and LPNs receive supraspinal inputs and sensory afferent inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C20, C105, C110 are hypotheses/suggestions based on model predictions and literature citations (C21, C106, C107). While the model demonstrates that inputs to CINs/LPNs can control gait, and experimental evidence confirms these neurons receive supraspinal and sensory inputs, direct experimental validation that these are the 'main targets' for gait control is lacking. The hypothesis is plausible and supported by circumstantial evidence but requires experimental testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "e226f4d2-853c-43b1-a99f-21c46ffd7297",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript cites established knowledge about quadrupedal locomotion including: mice exhibit speed-dependent gait transitions; each limb is controlled by a separate CPG; interlimb coordination is mediated by CINs and LPNs; MLR stimulation causes speed-dependent gait changes; and anatomical/physiological properties of LPNs. These citations provide the experimental foundation and context for the computational model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14, C17, C19, C33-C39, C50, C76, C95, C108, C119 are supported by multiple citations to established experimental literature. These represent accurate summaries of prior work that provide the biological basis for the model. The citations are appropriate and the claims accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "5f5bb30f-60cc-465c-beed-bee6e884e9d4",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model reproduces speed-dependent gait expression in intact and genetically transformed mice (V2a, V0V, V0D deletions) and the disruption of hindlimb coordination following ablation of descending LPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are summary statements supported by the detailed results presented in Figures 4-7 and corresponding claims. The model successfully reproduces multiple experimental observations from Bellardita and Kiehn, 2015 and Ruder et al., 2016, providing comprehensive validation across different experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "454888b5-4ce4-41cc-8efb-a401cc55b2fe",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors hypothesize that diagonally projecting inhibitory LPNs are of V0D type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C40 is explicitly stated as a hypothesis by the authors. While it is consistent with the known properties of V0D neurons and the model successfully incorporates this assumption, direct experimental identification of these neurons as V0D type is lacking. This represents a testable prediction from the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "d60f100d-91f8-471e-84fb-b443f20727b8",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model implements two brainstem drives: constant drive to extensor centers (potentially representing reticulospinal/vestibulospinal inputs and/or sensory feedback) and variable drive to flexor centers that increases locomotor frequency through rhythmic bursting and flexor-extensor alternation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C104 describe the model's implementation of brainstem drives. C102-C104 are directly supported by the model structure and behavior. C101 is speculative about what the extensor drive might represent physiologically, but is appropriately qualified and supported by relevant citations. The model implementation is consistent with experimental observations of MLR-driven locomotion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    },
+    {
+      "id": "6495b4f3-0320-4713-93a3-13cba91c5ac3",
+      "content_id": "cb5753a4-66bf-44a4-a004-67251808ef4a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors note that afferent feedback influence on other limbs should be mediated by CINs and LPNs (logical inference from anatomy), that mechanical coupling can influence coordination, and that gaits involve changes in kinematics and muscle activation beyond phase relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is a logical inference from anatomical organization (C108) and is reasonable. Claims C112-C113 are supported by citations and represent acknowledged limitations of the current model, which focuses on central interactions without biomechanics or detailed muscle activation patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:11:56.001213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "174e1354-1f08-49b0-87d3-09e0461a37d6",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "d8d40495-8876-40d9-9ffd-9afe48501a21",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "4f92b266-d177-454c-83ab-28b49dd5fc26",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "c87d40ed-9761-48b5-a631-0778bce670c2",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "93cf0ce7-6c89-4d0e-8252-00813b3c4ec1",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "534361eb-9f28-4f0e-954c-8c11c3f75e8e",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "5a4dc501-f624-41ae-9263-d87c408c2eba",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "215d4a7a-b548-408f-abd3-048323f7241e",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "0dba361c-9d2e-44d9-85ee-bcdd1dcaee94",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "103009c1-2e43-4cf7-94dd-caf0cc2ca55b",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "7bf7e605-cb7e-40a7-b26e-bd8db7c3378a",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "25a23b37-32ba-4757-92f6-3c9c29c90731",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "afcd541d-c3f8-4bda-9200-db93b73c9ea1",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "8ee6dd61-fc32-4d35-a90c-24cb5aeae4b2",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "6f14844b-06a9-4f58-8131-8410afe349cb",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "04c49929-431e-4790-86f5-ccf5df1cc95c",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "dc5770d6-b9ac-41dc-a095-90f552a49794",
+      "result_id": "0bde24e3-e591-4b77-a231-fda121b4fd29"
+    },
+    {
+      "claim_id": "c69fc3cb-b7ef-4bf0-9bf8-414a1949dc79",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "b474cf56-e6c8-4555-99ca-efeeaa2b4e6a",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "071a5c82-3c4d-452f-926a-99062bb04d1d",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "908412a4-bac4-46cd-a181-623e59418f58",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "1bf7e0d0-61c7-4ccc-913d-43ecc8a68d79",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "bd0bd412-0df1-499b-922e-4279a0e0d708",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "bb4a5584-ec9c-4595-852e-4186352457fe",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "37e3e7ab-454c-4a89-b816-082c2aab0236",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "cd016e91-45ba-4324-b680-2030cc722eb3",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "9551d338-39c4-43a8-a6d2-d82a47a7b845",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "a093ba2c-eac2-4853-ba24-ca121cebb8ca",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "d93a2111-6bad-4722-ba2f-784c777fea68",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "8f390ad5-9dcc-4f7a-8c81-f4113e2d0af2",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "372c0e6e-2736-4259-bb05-b0524bcfbce1",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "2e0969d4-c7cc-4e9a-95c5-e66e751e83d8",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "55051bec-ba64-411d-b087-3254449038a2",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "f30c4f5a-69ab-48ec-bd70-9335210d48a5",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "3858fb99-1850-4824-9108-2b5081d747b5",
+      "result_id": "8658228f-80bc-4c6b-8908-712422b376d3"
+    },
+    {
+      "claim_id": "59842c29-3f1d-449f-a92a-7236a7d90ada",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "6c7017ed-b86d-4aa5-afcc-0843d65c396e",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "705c7a35-fc60-49f5-badf-b5cae5183a4e",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "a19a2399-bd78-43f3-b852-653b034c1817",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "0c922cd7-506f-4ad8-b764-df1b1dcf99a1",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "055284b7-155c-4953-af5c-c4609fde7f20",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "b46ca1db-d0ed-47e8-9ee5-84971bd5497c",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "b93b5988-1c64-40a5-9328-9bab29f82304",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "df76dfa8-77d2-4276-ba91-f454ecc654b0",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "e476611a-de3d-47b8-bcdb-96f6b15d54bb",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "b1228b43-040b-47db-af0b-b33df07d9cf7",
+      "result_id": "fb278ed2-dae7-4ce3-9592-a7d6e7b501e7"
+    },
+    {
+      "claim_id": "29aa0e52-7a1c-4d99-a3a3-573d319ec4b8",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "de955c5e-fcfa-45eb-b63e-755c25cbf54e",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "12a7efc2-e06d-4a57-976a-70615f215142",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "0baae062-6f02-4097-8ee4-9d1f7fa56787",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "f52171fb-9ced-4dc3-b859-e12e63e729de",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "d7eadb0d-508c-4910-b03e-5085f13b6955",
+      "result_id": "fafe22f0-ca90-42fe-b8e3-90dc12154c91"
+    },
+    {
+      "claim_id": "4f60927e-56f2-4043-a76b-4c9844b4b294",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "c92bb5b9-077e-4353-b9b6-55dda40f5b73",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "f0d7d443-33be-49a8-be86-1c032d2df8bf",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "cb4bb3ee-a48e-43a7-89d4-0b963ed4118c",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "1b7d7b95-0e13-41b4-a1af-0f83a9da4914",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "8320d77b-2080-41f2-a4e2-1c92e8fc0eb7",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "b74ad558-cede-4a3d-acea-201a05dde8dd",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "3a1bfa4d-76e4-43d3-95e0-1dd983bde800",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "39dd4d17-cbf0-4c6b-9dea-8cd51b0cc8dd",
+      "result_id": "6a6fd5d9-087f-4503-b763-a4965dce5f3e"
+    },
+    {
+      "claim_id": "5ae363cc-afe0-4806-bc9b-1e23d412db29",
+      "result_id": "792453d7-7815-4d97-842b-cd42484f3e35"
+    },
+    {
+      "claim_id": "baeb9fe1-6d5e-4204-ae42-0f2ae8ae6002",
+      "result_id": "792453d7-7815-4d97-842b-cd42484f3e35"
+    },
+    {
+      "claim_id": "0221032b-3918-4846-b2d4-977cab335a53",
+      "result_id": "792453d7-7815-4d97-842b-cd42484f3e35"
+    },
+    {
+      "claim_id": "c07eaa98-3d36-44e9-aa7d-7a72594cbdb4",
+      "result_id": "792453d7-7815-4d97-842b-cd42484f3e35"
+    },
+    {
+      "claim_id": "bb7ecf12-e454-43a2-a392-aed648715746",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "2a2d9f7f-662e-4ce5-a5b3-6900fa55f8e2",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "06296b46-8042-4ea9-ade9-d72262455a94",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "98a619c4-16d8-46ba-b1f6-e8209c25b49b",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "31bca143-f845-49c0-b000-45c5fe09dfe6",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "58711ca9-ff58-4696-b32a-7938ecf9bfdb",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "6f4a5a9b-7f44-457c-b01b-7b0c283a944f",
+      "result_id": "ed38af7f-4e0f-4728-9d56-e6c2507249f5"
+    },
+    {
+      "claim_id": "3ac45f0b-070d-4f6a-b2e6-6e7c6f29fdf0",
+      "result_id": "20c7af31-1488-4efa-8b96-4f6a28e88db0"
+    },
+    {
+      "claim_id": "4c3bb30e-9ac0-4aef-b599-04a85e5c249e",
+      "result_id": "20c7af31-1488-4efa-8b96-4f6a28e88db0"
+    },
+    {
+      "claim_id": "4cbd1bae-f5ce-49d7-842a-50361faf0b70",
+      "result_id": "20c7af31-1488-4efa-8b96-4f6a28e88db0"
+    },
+    {
+      "claim_id": "3003eecf-ed41-4aa0-bc18-41051c1f5cb6",
+      "result_id": "20c7af31-1488-4efa-8b96-4f6a28e88db0"
+    },
+    {
+      "claim_id": "d85bfe6f-bd2a-426f-8536-6050bd2ee51c",
+      "result_id": "20c7af31-1488-4efa-8b96-4f6a28e88db0"
+    },
+    {
+      "claim_id": "3f34d148-0082-4d85-9723-367df3d94cca",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "580babab-a374-4381-84df-d4e2aa8aba2b",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "571d496d-ec8b-4415-b70e-f7b55e0dd3fc",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "039a3cb6-c0cb-4194-ac6a-79ea0d4b740a",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "b4f015cb-75d2-4127-b3f6-541dd399756a",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "55a7d35e-6ca5-4879-a0fd-d3e61b6cb497",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "d630507d-cb82-4184-825e-51ff63979ee6",
+      "result_id": "09fdcf3b-1753-4378-be0d-4267cf0f796b"
+    },
+    {
+      "claim_id": "a5aff3a7-5e3a-47cc-9a45-5d7ba345203d",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "27029166-096e-452a-908b-023a16c8e4bd",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "47f21353-d2a8-4a21-89d6-ef138111921d",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "75d5fbe5-dc20-4c1b-b525-d552e84abe27",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "e738c4b7-1cab-4e81-a6a2-2a7296c980d8",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "1ea8dc47-1709-48d2-b1ae-4af4325d169b",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "631711fa-8811-4464-aa8c-5f0fa7c8ddf1",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "7123b563-450b-4e34-a287-2068373c3932",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "94133013-4eeb-4db7-be6f-d7a5fe17071d",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "95e75220-786f-4970-afe6-e5f4d547e237",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "4d03ae02-7f1d-4699-9ee8-81f068bf1901",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "b7587877-0aff-46e2-b04c-de11f4b7dfb8",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "8a9852d7-b3e0-4f5a-9106-31b5ac456850",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "cb2ce73f-e9e4-4f42-825f-8e7262ec58e7",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "91384572-cc92-4d26-81db-efd99e49a515",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "f9da4a85-28a2-4690-89d1-0185a15fba56",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "b474cf56-e6c8-4555-99ca-efeeaa2b4e6a",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "b93b5988-1c64-40a5-9328-9bab29f82304",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "b8b35d7c-41cf-4ac0-a99b-0ad70ca24fb9",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "4336c2d2-0679-4d28-b43c-658f55435f75",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "ab9547f0-d579-4851-af9c-688e5da67744",
+      "result_id": "e226f4d2-853c-43b1-a99f-21c46ffd7297"
+    },
+    {
+      "claim_id": "cb641fed-904b-4f95-879c-a836f07ffaeb",
+      "result_id": "5f5bb30f-60cc-465c-beed-bee6e884e9d4"
+    },
+    {
+      "claim_id": "3e45c68b-b014-42b4-b651-100f662f8b34",
+      "result_id": "5f5bb30f-60cc-465c-beed-bee6e884e9d4"
+    },
+    {
+      "claim_id": "0189f04e-515e-404f-ad3c-4c4eb491e4af",
+      "result_id": "454888b5-4ce4-41cc-8efb-a401cc55b2fe"
+    },
+    {
+      "claim_id": "ef16c90c-4833-4032-b820-1b3c57b63bb5",
+      "result_id": "d60f100d-91f8-471e-84fb-b443f20727b8"
+    },
+    {
+      "claim_id": "04c5e012-7009-404c-8a38-cb31114b5f17",
+      "result_id": "d60f100d-91f8-471e-84fb-b443f20727b8"
+    },
+    {
+      "claim_id": "cfb7366e-2e3e-4d2f-8713-ab79d2a99d19",
+      "result_id": "d60f100d-91f8-471e-84fb-b443f20727b8"
+    },
+    {
+      "claim_id": "30f5064d-d44b-46e2-8e78-6b694179dcb9",
+      "result_id": "d60f100d-91f8-471e-84fb-b443f20727b8"
+    },
+    {
+      "claim_id": "17fba87c-986a-49f0-8738-ded7679cc4bb",
+      "result_id": "6495b4f3-0320-4713-93a3-13cba91c5ac3"
+    },
+    {
+      "claim_id": "40b63ac2-e89d-499d-8385-26b600d35459",
+      "result_id": "6495b4f3-0320-4713-93a3-13cba91c5ac3"
+    },
+    {
+      "claim_id": "a3918e85-a46d-4580-b29d-de004786d150",
+      "result_id": "6495b4f3-0320-4713-93a3-13cba91c5ac3"
+    }
+  ],
+  "comparisons": []
+}

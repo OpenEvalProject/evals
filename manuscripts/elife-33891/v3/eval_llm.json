@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Developmental hearing loss (HL) impairs behavioral detection of fast amplitude modulation (AM) rates. HL animals showed significantly worse AM detection thresholds at 128, 256, and 512 Hz compared to control animals, but similar thresholds at 64 Hz. This deficit was characterized by steeper temporal modulation transfer function (TMTF) slopes in HL animals, indicating poorer temporal resolution at fast rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C28 provide converging statistical evidence from psychometric testing showing rate-specific behavioral deficits in HL animals. The significant interaction between hearing status and AM rate (C20), post-hoc comparisons at specific rates (C21-C24), and TMTF analysis (C25-C28) all support this result. The statistical tests are appropriate and multiple comparisons are corrected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The behavioral deficit in HL animals reflects a sensory processing impairment rather than general task performance deficits. Maximum d', false alarm rate, lapse rate, and response latencies did not differ significantly between HL and control groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 demonstrate that non-sensory performance metrics were equivalent between groups, supporting the interpretation that the AM detection deficits (C3, C20-C24) reflect sensory rather than motivational or motor impairments. The statistical tests are appropriate and the logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Animals were not using average sound level as a cue for AM detection. Performance did not vary with sound level when stimuli were roved across a 12 dB range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide experimental control data showing that linear fit slopes of d' versus sound level did not differ from zero. This validates that the behavioral task measured AM detection rather than level discrimination. The control experiment is well-designed and appropriately analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Auditory brainstem response (ABR) measurements showed elevated thresholds in HL animals but no correlation with behavioral AM detection performance. ABR amplitudes and latencies as a function of sensation level did not differ between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 demonstrate that while HL animals had elevated ABR thresholds (validating the hearing loss), ABR measures at matched sensation levels did not differ between groups and did not correlate with behavioral performance. This is well-supported by statistical analyses and appropriate for ruling out peripheral/brainstem contributions to the behavioral deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Envelope following response (EFR) measurements of brainstem temporal processing did not reveal HL-related impairments. EFR-based TMTFs were similar between groups, and for control animals, EFR and behavioral thresholds were similar. However, for HL animals, behavioral thresholds were significantly worse than EFR thresholds at 256 and 512 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C54 provide strong evidence that brainstem temporal processing (as measured by EFRs) cannot account for the behavioral deficits in HL animals. The dissociation between EFR and behavioral thresholds in HL animals (C51-C53) is particularly compelling. Statistical tests are appropriate with multiple comparison corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Auditory cortex (ACx) units from HL animals showed altered response properties compared to control animals. While driven firing rate differences may reflect sampling bias, spontaneous firing rate was significantly higher and coefficient of variation (CV) was significantly lower in control units, indicating that HL units had less reliable responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 provide comprehensive characterization of ACx unit properties with appropriate statistical controls including bootstrapping to account for unequal sampling across animals. The finding of increased response variability (lower CV) in HL units is robust and consistent across analyses. The acknowledgment of potential sampling bias for driven FR (C60, C63) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Single-unit neurometric analyses using firing rate or pattern classifiers did not fully account for HL-induced behavioral deficits. While the K-means classifier showed the best correlation with behavior, there was no significant interaction between control and HL groups across AM rates for unit-level thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 demonstrate that individual unit analyses, despite testing multiple metrics (FR, K-means, Rcorr, Van Rossum), failed to capture the group differences in behavior. This is well-supported by statistical analyses and motivates the population-level analysis. The comparison of multiple classifier approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C95",
+      "C107",
+      "C117"
+    ],
+    "result": "Population-level decoding of ACx activity revealed deficits in HL animals that matched behavioral performance. Decoder performance increased with unit count, and HL population responses showed inferior discrimination at lower AM depths near behavioral threshold for 256 and 512 Hz rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C74-C79, C82, C95, C107, C117 provide strong evidence that population-level ACx encoding accounts for behavioral deficits. The linear SVM decoder analysis is appropriate, and the finding that HL deficits emerge specifically at behaviorally-relevant AM depths (C79) is compelling. The resampling procedure (250 iterations) provides robust estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C104",
+      "C105"
+    ],
+    "result": "Monotonically decreasing units showed better decoder performance than monotonically increasing units at 128 and 256 Hz. Control monotonically decreasing units outperformed HL monotonically decreasing units across all AM depths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C104-C105 demonstrate differential contributions of unit subpopulations to population decoding. The analysis appropriately controls for subpopulation size through resampling. However, C105 is speculative about mechanism. The finding is interesting but the functional interpretation requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Greater trial-to-trial response variability in HL animals explains the degraded cortical population code. Population-level variability was significantly greater for HL versus control units across all AM rates and depths tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C83-C85, C124-C127 provide evidence linking increased neural variability to behavioral deficits. The population-level CV analysis (C85) with appropriate statistics supports this mechanism. However, C84 is speculative ('may account for'), and the causal relationship is not directly tested. The correlation is strong but causation is inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Choice probability (CP) analysis showed that recorded ACx units did not represent the animals' behavioral choices during task performance. CP values did not differ from chance in either time window analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 appropriately apply choice probability analysis to test whether ACx units encode decision-related signals. The null result is clearly reported with appropriate statistics. This finding suggests ACx may provide sensory information that is decoded elsewhere, which is consistent with the population decoding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C107",
+      "C111",
+      "C128"
+    ],
+    "result": "The perceptual limitations following early hearing loss are best explained by encoding deficits in auditory cortex rather than brainstem. HL-induced neural encoding deficits reflect changes at cortical population level, not at the brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C95, C107, C111, C128 synthesize the major findings: brainstem processing is intact (C4, C48-C54) while cortical population encoding is degraded (C5, C74-C79) in a manner that matches behavioral deficits. This hierarchical localization is well-supported by the combined evidence, though alternative explanations (e.g., subcortical deficits not captured by EFRs) are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Superior decoder performance at 256 Hz may reflect sampling bias, as experimenters initially searched for units driven by 256 or 512 Hz AM during electrode advancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 appropriately acknowledges a potential methodological confound. The authors transparently report their search strategy and recognize its potential impact on results. This is good scientific practice, though it does raise questions about generalizability of the 256 Hz findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The precise temporal structure of population-averaged responses is important for representing fast AM rates, as evidenced by improved decoder performance with smaller bin sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by the bin size analysis shown in Figure 7B, demonstrating that 1 ms bins yielded best performance. This suggests temporal precision matters even though individual units don't phase-lock. The analysis is appropriate and the interpretation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "ACx neurons encode fast AM rates (>100 Hz) through non-phase-locked firing rate changes rather than synchronized responses. This is consistent with established literature and the current data showing minimal phase-locking but significant firing rate information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 accurately summarize established knowledge (supported by extensive citations) and show consistency with current findings (C56, C100). The vector strength analysis appropriately demonstrates lack of phase-locking. This provides important context for interpreting the population coding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Neural populations may represent more information than is decoded during perception, potentially explaining discrepancies between decoder output and behavioral performance. Common population characteristics may also inflate decoding readouts relative to psychophysical sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 are speculative statements about general principles of neural coding. While conceptually reasonable, they are not directly tested in this study. These represent interpretive frameworks rather than empirical results. The speculation is appropriate for Discussion but should not be considered a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C120",
+      "C121"
+    ],
+    "result": "Population-level representation outperforms individual unit metrics for predicting behavior, consistent with previous studies across sensory cortices. This study provides experimental evidence for population coding contributions to sensory deprivation-related perceptual deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C120-C121 appropriately contextualize findings within broader literature (extensive citations) and highlight the novelty of applying population coding analysis to developmental deprivation. The comparison between single-unit and population analyses within the same animals is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "EFR measurements may not capture all brainstem deficits. Task engagement could differentially modulate EFRs in control versus HL animals, or subpopulation deficits could be masked by population-level measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 are speculative caveats about potential limitations of EFR measurements. While C109 cites relevant work on task modulation, neither possibility is directly tested. These are reasonable alternative explanations but remain uncertain without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Developmental HL disrupts ACx synaptic and membrane properties, potentially through reduced inhibition. The 'iceberg effect' suggests that reduced inhibition could diminish stimulus selectivity and explain behavioral impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 cite previous slice physiology work (C112) and propose a mechanistic explanation (C114-C116) for the observed variability increases. However, the current study does not directly measure inhibition or test the iceberg effect hypothesis. The speculation is reasonable but the mechanism remains uncertain without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Cortical population deficits may not produce behavioral deficits at slower modulation rates (64 Hz), possibly due to compensatory mechanisms at higher auditory processing levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 address an important caveat: cortical deficits are present but behavior is normal at 64 Hz. The speculation about higher-level compensation (C119) is reasonable but untested. This represents an important limitation of the cortical deficit explanation that requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Developmental plasticity can lead to improved encoding and perception, and with additional training, HL animals might perform at control levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 are speculative statements about potential plasticity and training effects. C122 cites one relevant study, but C123 is pure speculation. These possibilities are not tested in the current study and represent future directions rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Bilateral conductive hearing loss was induced at postnatal day 10, resulting in permanent ~40 dB threshold elevation. Behavioral testing used stimuli at matched sensation levels (45 dB louder for HL animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 describe the experimental methods for inducing hearing loss and controlling stimulus levels. These are validated by ABR measurements (C39) and are consistent with cited previous work. The matched sensation level approach is appropriate for isolating central processing deficits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Sensory deprivation during development induces lifelong CNS changes and perceptual impairments, but the relationship between neural and behavioral deficits is uncertain due to lack of simultaneous measurements and task engagement effects. No previous studies have simultaneously assessed neural and perceptual plasticity following early sensory deprivation in awake-behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C11, C89-C91 establish the background and motivation for the study. These are well-supported by extensive citations and accurately represent the state of the field. The identification of the gap in simultaneous neural-behavioral measurements (C2, C89) is valid and motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Children with early hearing loss show permanent CNS changes and diminished sensitivity to temporal features of sound. AM sensitivity shows prolonged developmental maturation and is impaired by developmental HL, particularly at fast rates. Developmental HL leads to cellular deficits in auditory cortex that could explain behavioral impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 provide clinical and experimental context from previous literature. These are well-supported by appropriate citations and establish the rationale for studying AM processing and focusing on auditory cortex. C19 is somewhat speculative ('could explain') but is appropriately framed as a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Developmental HL impairs behavioral detection of temporal envelope cues important for communication. These findings are consistent with clinical studies and point to a sensory processing deficit rather than general performance impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 summarize and contextualize the main behavioral findings. These are well-supported by the psychometric data (C3, C20-C28) and performance controls (C29-C35). The comparison to clinical literature (C93) appropriately validates the animal model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "EFRs have been used to assess brainstem temporal processing across a broad range of AM rates in humans and non-human species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a methodological statement supported by multiple citations. This establishes the validity of using EFRs to assess brainstem function and provides context for the EFR measurements in the current study.",
+    "result_type": "MINOR"
+  }
+]

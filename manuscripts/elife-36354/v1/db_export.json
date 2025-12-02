@@ -1,0 +1,1883 @@
+{
+  "submission": {
+    "id": "dc22358b-9a00-424e-8e75-d0ee93909f21",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:18:45.688093Z",
+    "updated_at": "2025-12-02T01:18:45.688093Z"
+  },
+  "content": [
+    {
+      "id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "submission_id": "dc22358b-9a00-424e-8e75-d0ee93909f21",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscale dysregulation of collagen structure-function disrupts mechano-homeostasis and mediates pulmonary fibrosis\n\n## Authors\n\n- Mark G Jones<sup>1</sup> ([ORCID: 0000-0001-6308-6014](https://orcid.org/0000-0001-6308-6014)) \u2020\n- Orestis G Andriotis<sup>2</sup>\n- James JW Roberts<sup>3</sup>\n- Kerry Lunn<sup>3</sup>\n- Victoria J Tear<sup>3</sup>\n- Lucy Cao<sup>4</sup>\n- Kjetil Ask<sup>5</sup>\n- David E Smart<sup>1</sup>\n- Alessandra Bonfanti<sup>6</sup>\n- Peter Johnson<sup>7</sup>\n- Aiman Alzetani<sup>1</sup>\n- Franco Conforti<sup>1</sup>\n- Regan Doherty<sup>10</sup>\n- Chester Y Lai<sup>1</sup>\n- Benjamin Johnson<sup>11</sup>\n- Konstantinos N Bourdakos<sup>7</sup>\n- Sophie V Fletcher<sup>1</sup>\n- Ben G Marshall<sup>1</sup>\n- Sanjay Jogai<sup>9</sup>\n- Christopher J Brereton<sup>1</sup> ([ORCID: 0000-0001-8302-702X](https://orcid.org/0000-0001-8302-702X))\n- Serena J Chee<sup>9</sup>\n- Christian H Ottensmeier<sup>11</sup> ([ORCID: 0000-0003-3619-1657](https://orcid.org/0000-0003-3619-1657))\n- Patricia Sime<sup>12</sup>\n- Jack Gauldie<sup>5</sup>\n- Martin Kolb<sup>5</sup>\n- Sumeet Mahajan<sup>7</sup>\n- Aurelie Fabre<sup>13</sup>\n- Atul Bhaskar<sup>6</sup>\n- Wolfgang Jarolimek<sup>4</sup>\n- Luca Richeldi<sup>1</sup>\n- Katherine MA O'Reilly<sup>15</sup>\n- Phillip D Monk<sup>3</sup>\n- Philipp J Thurner<sup>2</sup>\n- Donna E Davies<sup>1</sup> ([ORCID: 0000-0002-5117-2991](https://orcid.org/0000-0002-5117-2991)) \u2020\n\n### Affiliations\n\n1. NIHR Southampton Biomedical Research Centre, Clinical and Experimental Sciences Faculty of Medicine, University of Southampton Southampton United Kingdom\n2. Institute for Lightweight Design and Structural Biomechanics TU Wien Getreidemarkt Austria\n3. Synairgen Research Ltd Southampton United Kingdom\n4. Pharmaxis Ltd Frenchs Forest Australia\n5. Department of Medicine Firestone Institute for Respiratory Health, McMaster University and The Research Institute of St. Joe's Hamilton Hamilton Canada\n6. Aeronautics, Astronautics and Computational Engineering, Faculty of Engineering and the Environment University of Southampton Southampton United Kingdom\n7. Department of Chemistry, Faculty of Natural and Environmental Sciences University of Southampton Southampton United Kingdom\n8. Institute for Life Sciences University of Southampton Southampton United Kingdom\n9. University Hospital Southampton Southampton United Kingdom\n10. Biomedical Imaging Unit, Faculty of Medicine University of Southampton Southampton United Kingdom\n11. CRUK and NIHR Experimental Cancer Medicine Centre, Cancer Sciences, Faculty of Medicine University of Southampton Southampton United Kingdom\n12. Division of Pulmonary and Critical Care Medicine University of Rochester School of Medicine and Dentistry Rochester United States\n13. Department of Histopathology St. Vincent's University Hospital & UCD School of Medicine, University College Dublin Dublin Ireland\n14. Universit\u00e0 Cattolica del Sacro Cuore Fondazione Policlinico Universitario Agostino Gemelli IRCCS Rome Italy\n15. Mater Misericordiae University Hospital Dublin Ireland\n16. School of Medicine and Medical Science University College Dublin Dublin Ireland\n\n\u2020 Corresponding author\n\n## Abstract\n\nMatrix stiffening with downstream activation of mechanosensitive pathways is strongly implicated in progressive fibrosis; however, pathologic changes in extracellular matrix (ECM) that initiate mechano-homeostasis dysregulation are not defined in human disease. By integrated multiscale biomechanical and biological analyses of idiopathic pulmonary fibrosis lung tissue, we identify that increased tissue stiffness is a function of dysregulated post-translational collagen cross-linking rather than any collagen concentration increase whilst at the nanometre-scale collagen fibrils are structurally and functionally abnormal with increased stiffness, reduced swelling ratio, and reduced diameter. In ex vivo and animal models of lung fibrosis, dual inhibition of lysyl oxidase-like (LOXL) 2 and LOXL3 was sufficient to normalise collagen fibrillogenesis, reduce tissue stiffness, and improve lung function in vivo. Thus, in human fibrosis, altered collagen architecture is a key determinant of abnormal ECM structure-function, and inhibition of pyridinoline cross-linking can maintain mechano-homeostasis to limit the self-sustaining effects of ECM on progressive fibrosis.\n\n## Introduction\n\nFibrotic diseases are a major cause of morbidity and mortality worldwide and their prevalence is increasing with an ageing population. Within the lung, idiopathic pulmonary fibrosis (IPF) is considered the prototypic chronic progressive fibrotic disease (Raghu et al., 2011). Treatment options are limited, and with a median survival of less than 3 years from diagnosis, more effective therapies are urgently needed (Richeldi et al., 2017). Whilst the exact mechanisms of progressive lung fibrosis are uncertain, IPF is thought to result from repetitive micro-injuries to the alveolar epithelium promoting fibroblast differentiation into extracellular matrix (ECM)-producing myofibroblasts. Persistent myofibroblast activation results in ECM deposition which eventually destroys normal alveolar architecture and disrupts gas exchange (Kirk et al., 1986).\n\nExcessive deposition of fibrillar collagens is considered synonymous with fibrosis. Fibrillar collagens are a major component of lung ECM that form a scaffold to support tissue architecture and are a primary determinant of tissue stiffness (Senior et al., 1975; White, 2015). During biosynthesis, collagen molecules acquire several post-translational modifications, including lysine hydroxylation and oxidation that are critical to the structure and biological functions of this protein. Oxidative deamination of lysine or hydroxylysine initiates cross-linking reactions that are essential to stabilise the supramolecular assembly of collagen and produce stable collagen fibrils (Shoulders and Raines, 2009; Kadler et al., 1996). The lysyl oxidase (LOX) enzymes are a family of five secreted copper-dependent amine oxidases (LOX and LOX-like (LOXL) 1 to 4) that are responsible for post-translational modification of collagen in the ECM to initiate covalent cross-linking. LOX family members have been implicated as possible therapeutic targets in cancers and fibrosis (Trackman, 2016). The type of LOX/LOXL mediated collagen cross-link is determined by the hydroxylation of telopeptidyl and helical lysine residues in collagen prior to cross-link formation (Yamauchi and Sricholpech, 2012), with increased hydroxylation of telopeptide lysine residues by lysyl hydroxylase 2/procollagen lysine,2-oxoglutarate 5-dioxygenase 2 (LH2/PLOD2) proposed to be a general fibrotic phenomenon causing increased hydroxyallysine derived pyridinoline cross-links (Brinckmann et al., 1999; van der Slot et al., 2003).\n\nBoth ECM amount and altered post-translational modifications are postulated to increase matrix stiffness and this stiffening has been proposed to induce self-sustaining mesenchymal cell activation and progressive fibrosis in a positive feedback loop (Wipff et al., 2007; Liu et al., 2010; Zhou et al., 2013; Booth et al., 2012; Chen et al., 2016; Parker et al., 2014; Shi et al., 2011; Liu et al., 2015). Whilst there is a\u00a0growing understanding of mechanosensitive cellular pathways that are activated by increased ECM stiffness, the specific changes in ECM structure and function that disrupt mechano-homeostasis have not been defined in human fibrosis (Burgstaller et al., 2017; Tschumperlin et al., 2018; Herrera et al., 2018). To investigate this, we performed the first integrated multiscale structure-function analysis of human fibrosis tissue, and then extended our findings into mechanistic studies in vitro and in vivo. We identify that, at the time of diagnosis, in human lung fibrosis tissue altered collagen architecture rather than collagen concentration is a key determinant of abnormal ECM structure-function, and that targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and so prevent persistent mechanosensitive cellular activation and fibrosis progression.\n\n## Results\n\n### Increased mature collagen cross-linking but not total collagen content increases stiffness of IPF tissue\n\nWe performed an integrated biochemical and biomechanical characterisation comparing human IPF lung tissue with age-matched control lung tissue. We first used atomic force microscopy (AFM) cantilever-based microindentation to assess lung tissue stiffness at the micrometre-scale. IPF tissue was significantly stiffer than control tissue (Figure 1A), with spatially heterogeneous changes in stiffness in IPF tissue including highly localised areas of increased stiffness which were not present in control lung tissue (Figure 1B and C), consistent with the known histopathological heterogeneity of IPF tissue (Raghu et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig1-v1.jpg)\n\n**Figure 1.:** (A) Tissue stiffness of control (n\u00a0=\u00a08 donors, \u25cf) and IPF (n\u00a0=\u00a010 donors, \u25a0) lung tissue determined by micro-indentation atomic force microscopy (AFM). Data presented as mean stiffness of each donor determined from force-displacement curve measurements (n\u00a0=\u00a080\u2013150 measurements per donor). Bars are mean\u00a0\u00b1\u00a0s.e.m. *p<0.05 by Student's t-test with Welch\u2019s correction for unequal variances (two-tailed). (B, C) Representative elastograph images from AFM cantilever-based microindentation analyses of control and IPF lung tissue, respectively. Axis labels indicate spatial scale in micrometres and colour bars the indentation modulus in kPa. The coefficient of variation in (B) is 66.6% and in (C) is 74.6%. (D) Representative second harmonic generation images (SHG) of control or IPF lung tissue. Fibrillar collagen is visualised in yellow. Inset image shows histological staining of an adjacent section using hematoxylin and eosin with the SHG image overlaid. Scale bar\u00a0=\u00a0100 \u03bcm. (E) Total collagen content of control (n\u00a0=\u00a015) and IPF lung tissue (n\u00a0=\u00a017) normalised by dry weight. Bars are mean\u00a0\u00b1s.e.m. p=0.70 by Student's t-test (two-tailed). (F) Paired data from (A) and (E) were plotted to determine the dependency of mean tissue stiffness on collagen content (Spearman correlation coefficient: r\u00a0=\u00a00.16; p=0.52).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Total collagen content of control (n\u00a0=\u00a015) and IPF lung tissue (n\u00a0=\u00a017) normalised by total protein. Bars are mean\u00a0\u00b1s.e.m. p=0.70 by Student's t-test (two-tailed).\n\nWe then explored the relative contribution of collagen amount and/or post-translational modifications to these differences in stiffness. Whilst an increase in fibrillar collagen was suggested by second harmonic generation imaging of IPF lung tissue (Figure 1D), quantitation of total collagen concentration by hydroxyproline assay showed no difference in mean total collagen in IPF tissue relative to control tissue following normalisation to either dry weight or to total protein (Figure 1E and Figure 1\u2014figure supplement 1); in addition, no dependence of lung tissue stiffness on collagen concentration was found (Figure 1F). In contrast, differences in the expression of collagen cross-linking enzymes were identified in IPF tissue. Whilst mRNA expression levels of LOX and LOXL1 were unchanged (Figure 2A and B), there were significant increases in the relative expression of LOXL2, LOXL3, and LOXL4 (Figure 2C\u2013E). This was associated with detection of increased amine oxidase activity in IPF lung tissue sections (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013E) Expression of LOX, LOXL1, LOXL2, LOXL3 and LOXL4 was analysed in control (\u25cf) and IPF (\u25a0) lung tissue (n\u00a0=\u00a011 individual donors per group) using the \u2206\u2206Ct method. Bars indicate geometric means. LOX p=0.79; LOXL1 p=0.22 *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 by multiple t-test of log transformed data using the Holm-Sidak method to adjust for multiple comparisons (two-tailed). SD was not assumed to be consistent between groups. (F) Amine oxidase activity as measured in situ from control (n\u00a0=\u00a05 individual donors) or IPF lung tissue (n\u00a0=\u00a08 individual donors). Semi-quantitative analysis was performed using Fiji and normalised to one control sample. Bars are mean\u00a0\u00b1s.e.m. *p<0.05 by Student\u2019s t-test with Welch\u2019s correction for unequal variances (2-tailed).\n\nConsistent with previous reports of increased LH2 expression in fibrotic tissue (Brinckmann et al., 1999; van der Slot et al., 2003), we identified increased expression of LH2 in IPF tissue (Figure 3A and B) suggesting the potential for altered collagen cross-linking involving hydroxylysine residues. Therefore, we quantified immature (dihydroxylysinonorleucine (DHLNL) and hydroxylysinonorleucine (HLNL)) and mature trivalent (deoxypyridinoline (DPD) and pyridinoline (PYD)) hydroxyallysine-derived collagen cross-links. This revealed a significant increase in the density of immature divalent (Figure 3C) and mature trivalent (Figure 3D) cross-links in IPF tissue, with an increase in the relative ratio of immature to mature cross-links in IPF tissue (Figure 3E) consistent with increased collagen metabolism in IPF tissue and an increase in the DHLNL to HLNL ratio (Figure 3F) consistent with increased lysyl hydroxylase activity. No dependence of lung tissue stiffness on immature cross-link density was found (Figure 3G), although a trend towards a correlation with DHLNL cross-link density alone was observed (correlation 0.41 p=0.09). In contrast, mature pyridinoline collagen cross-link density was strongly and significantly associated with increasing lung tissue stiffness (correlation 0.72 p=0.0007) (Figure 3H). Together, these results identify that in IPF lung tissue, differential expression of LH2 and LOXL-family members is associated with increased hydroxyallysine-derived pyridinoline collagen cross-links and this, rather than collagen concentration, is a primary determinant of increased tissue stiffness.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Lysyl hydroxylase 2 (LH2A and LH2B) expression was analysed in control (\u25cf) and IPF (\u25a0) lung tissue (n\u00a0=\u00a011 donors per group) using the \u2206\u2206Ct method. Bars indicate geometric means. *p<0.05 by multiple t-test of log transformed data using the Holm-Sidak method to adjust for multiple comparisons (two-tailed). SD was not assumed to be consistent between groups. (C\u2013F) Hydroxyallysine-derived collagen cross-link analysis of IPF (n\u00a0=\u00a017 donors) and control (n\u00a0=\u00a015 donors) lung tissue, normalised to total collagen content, as determined by UHPLC-ESI-MS/MS. Each data point represents an individual donor. (C) Total immature divalent cross-links (DHLNL\u00a0+\u00a0HLNL); (D) Total mature trivalent cross-links (PYD\u00a0+\u00a0DPD); (E) Ratio of immature to mature cross links; (F) Ratio of DHLNL to HLNL immature divalent cross-links. Bars indicate median values. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 by Mann-Whitney t-test (two-tailed). (G, H) Scatterplots of paired data from Figure 1A and Figure 3C or Figure 3D showing dependency of mean tissue stiffness on total immature (r\u00a0=\u00a00.364, p=0.137) or total mature (r\u00a0=\u00a00.723, p=0.0007) collagen cross-link density, respectively (Multivariate correlation analysis including mean tissue stiffness, normalised collagen and immature and mature cross-links).\n\n### Individual collagen fibrils from IPF tissue have altered structural and mechanical properties\n\nGiven the finding of increased collagen cross-linking in IPF, the morphological and biomechanical properties of individual collagen fibrils were analysed by AFM cantilever-based nanoindentation, following enzymatic extraction using an established methodology (Andriotis et al., 2014) (Figure 4A and B). Overall, IPF collagen fibrils were stiffer but exhibited a greater range of stiffness measurements compared with control lung collagen fibrils (Figure 4C). They also showed a skewed size distribution with a significantly smaller median diameter (Figure 4D and E) and had a lower fibril swelling ratio (hydrated to air) (Figure 4F). These data identify that in human lung fibrosis perturbation of collagen homeostasis occurs at the nanometre-scale, with individual collagen fibrils being structurally and functionally abnormal.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig4-v1.jpg)\n\n**Figure 4.:** (A) Atomic force microscopy (AFM) height topography image of a collagen fibril and corresponding height topography long axis profile showing characteristic D-periodicity (~67 nm). (B) Force displacement curve (blue: loading, red: unloading) of an individual fibril tested using AFM cantilever-based nanoindentation. (C) Indentation modulus of collagen fibrils (3\u20137 fibrils per donor) from control (n\u00a0=\u00a042 fibrils from eight donors) or IPF lung tissue (n\u00a0=\u00a057 fibrils from 10 donors) under hydrated conditions; each data point represents the mean of 30 to 50 force-displacement curves per fibril. Bars are mean\u00a0\u00b1s.e.m of log transformed data. ****p<0.0001 by Student\u2019s t-test with Welch\u2019s correction for unequal variances of log transformed data (two-tailed). (D) Fibril diameter as determined by measurement of fibril height under hydrated conditions. Bars are median; ***p<0.001 by Mann-Whitney t-test (two-tailed). (E) Frequency distribution of hydrated collagen fibril diameters measured for control (light grey bars) and IPF lung tissue (black bars). (F) Fibril swelling as determined by the ratio of the diameters under hydrated and dry conditions. Bars are mean\u00a0\u00b1s.e.m of log transformed data. *p<0.05 by Student\u2019s t-test of log transformed data (two-tailed).\n\n### LOXL2/LOXL3-selective inhibition of collagen cross-linking reduces tissue stiffness\n\nTo explore the underlying mechanisms of altered fibrillogenesis and collagen structure-function in IPF, we first established a novel long-term 3D in vitro model of lung fibrosis using primary human lung fibroblasts treated with the pro-fibrotic cytokine TGF-\u03b21. We studied lung fibroblasts from patients with IPF given previous studies identifying aberrations in their fibrogenic responses (Ramos et al., 2001). An advantage of this model is that it allows\u00a0not only direct evaluation of cross-linking and its inhibition but also direct measurement of their influence upon tissue biomechanics. Over 6 weeks of culture, the model shows a progressive increase in collagen content and mature collagen cross-links in association with expression of all LOX/LOXL family members (Figure 5A\u2013D); histochemical staining of the resultant tissue construct showed fibrillar collagen deposition (Figure 5E) similar to that seen in fibroblastic foci, the site of active fibrogenesis in IPF (Figure 5F) (Jones et al., 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig5-v1.jpg)\n\n**Figure 5.:** We utilised a long-term 3D in vitro model of lung fibrosis using primary human lung fibroblasts from patients with IPF treated with the pro-fibrotic cytokine TGF-\u03b21 cultured for up to 6 weeks. (A\u2013C) Characterisation of (A) total collagen normalised to total protein, (B) immature divalent (DHLNL) and (C) mature trivalent (PYD and DPD) hydroxyallysine-derived collagen cross-links at the culture times indicated following addition of TGF-\u03b21. Bars are mean\u00a0+range (n\u00a0=\u00a02 IPF donors). (D) Relative gene expression analysis of LOX, LOXL1, LOXL2, LOXL3 and LOXL4 using the \u2206\u2206Ct method (n\u00a0=\u00a03 IPF donors, two experiments per donor). (E, F) Masson\u2019s trichrome stain of histological sections from (E) the in vitro model at 6 weeks and (F) IPF lung tissue including a fibroblastic focus. Blue staining identifies fibrillar collagen. Scale bars are 100 \u03bcm (main image) and 500 \u03bcm (inset, showing location of enlarged image).\n\nGiven our finding of differential LOXL enzyme expression, we evaluated the contribution of these enzymes to collagen cross-linking and tissue stiffness using haloallylamine based compounds which have previously been demonstrated to be amine oxidase inhibitors that show selectivity towards individual enzymes (Schilter et al., 2015; Chang et al., 2017). We tested a number of these compounds for inhibition of each LOX/LOXL family member, and identified that one of these inhibitors, PXS-S2A, which was previously reported as a LOXL2-selective inhibitor (Chang et al., 2017), is a dual LOXL2 and LOXL3-selective inhibitor. PXS-S2A irreversibly inhibits LOXL2 and LOXL3 (IC500.005 \u03bcM and 0.016 \u03bcM respectively) but is reversible and more than a hundred times less potent for inhibition of LOX and LOXL1 (Figure 6A). Using the inhibitor in the in vitro model, we observed a dose-dependent inhibition of collagen cross-links (Figure 6B\u2013D), with a greater than 50% reduction in mature pyridinoline cross-links (Figure 6D) with 0.1 \u03bcM PXS-S2A, a concentration which completely inhibits LOXL2 and LOXL3 but has minimal effects on LOX and LOXL1 (Figure 6A). At a pan LOX/LOXL inhibitory concentration of 10 \u03bcM, the reduction in cross-links was comparable to that observed with \u03b2-aminoproprionitrile (BAPN), a non-selective LOX/LOXL inhibitor (Trackman, 2016). No reduction in total collagen content was observed following treatment with PXS-S2A or BAPN (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig6-v1.jpg)\n\n**Figure 6.:** (A) PXS-S2A inhibition curves against LOXL2 and LOXL3 (upper panel), LOX, LOXL1, LOXL4 (middle panel), and all LOX/LOXL enzymes (lower panel). Downward arrows in (A\u2013E, G) identify LOXL2/LOXL3-selective dose. (B\u2013G) Lung fibroblasts from IPF patients (n\u00a0=\u00a03 donors, two experiments per donor) were used in the 3D model of fibrosis in the presence of 1 mM BAPN, PXS-S2A (at concentrations indicated) or vehicle control for 6 weeks. Bars are mean\u00a0+s.e.m. (B\u2013D) Hydroxyallysine-derived collagen cross-link analysis: (B) HLNL determined by LC-MS; (C) DHLNL determined by LC-MS; (D) Total mature (PYD\u00a0+DPD) cross-links determined by ELISA. *p<0.05; **p<0.01; ***p<0.001 by one-way repeated measures ANOVA with Dunnett\u2019s post-test. (E) Total collagen content determined by hydroxyproline assay. (F\u2013G) Parallel plate compression testing of the 3D culture of lung fibrosis. (F) Typical stress versus strain plots following treatment with LOXL2/LOXL3 inhibitor or BAPN. (G) Young\u2019s modulus. *p<0.05; **p<0.01 by one sample t-test. (H\u2013J) Scatterplots showing dependency of tissue stiffness on (H) collagen content (r\u00a0=\u00a0\u22120.0272; p=0.873), (I) immature (r\u00a0=\u00a00.532; p=0.0007) or (J) mature (r\u00a0=\u00a00.753; p<0.0001) collagen cross-link density following PXS-S2A treatment (Multivariate correlation including mean tissue stiffness, normalised collagen and immature and mature cross-links).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Output graphs of raw data from parallel plate compression testing: (A) force vs time, (B) displacement vs time, and (C) force vs displacement for the control, BAPN, or PXS-S2A-treated cultures.\n\nThe biomechanical consequence of inhibiting collagen cross-linking was then investigated with parallel plate compression testing. The LOXL2/LOXL3 inhibitor dose-dependently reduced tissue stiffness as measured by Young\u2019s modulus, achieving maximal inhibition of stiffness as compared with BAPN at a pan LOX/LOXL inhibitory concentration of 10 \u03bcM. However, almost 70% of maximal reduction in stiffness (as compared with BAPN) was already achieved at 0.1 \u03bcM PXS-S2A which is selective for LOXL2/LOXL3 (Figure 6F and G, Figure 6\u2014figure supplement 1, and Video 1), suggesting that inhibition of LOXL2/LOXL3 is sufficient to achieve a substantial reduction in tissue stiffness. Consistent with the IPF tissue findings, stiffness showed no dependency on collagen content (Figure 6H) whilst it correlated positively with collagen cross-link density including both immature (Figure 6I) and mature pyridinoline cross-links (Figure 6J). Together, these data identify pyridinoline cross-link density to be a significant determinant of tissue stiffness and identify LOXL2/LOXL3 enzyme activities as essential contributors to this process.\n\n![Video 1.](https://cdn.elifesciences.org/articles/36354/elife-36354-video1.mp4.jpg)\n\n### Selective LOXL2/LOXL3 inhibition normalises collagen fibril assembly\n\nWe next assessed the impact of selective LOXL2/LOXL3 inhibition upon collagen morphology in the in vitro fibrosis model. When visualised by polarised light Picrosirius red microscopy, highly organised collagen fibrils were evident in vehicle-treated fibrotic control cultures as well as in those treated with 0.1 \u03bcM PXS-S2A; this contrasted with the marked disorganisation observed with BAPN (Figure 7A). Based on these findings, we performed ultrastructural analysis of the collagen fibrils using electron microscopy (Figure 7B). At 0.1 \u03bcM PXS-S2A, a 12.3% mean increase in fibril diameter was observed (Figure 7C), comparable with the 18% difference in fibril size observed in our AFM analyses comparing control and IPF collagen fibrils. Increasing the concentration of PXS-S2A to 0.5 \u03bcM caused a further small increase in fibril diameter; however, with complete LOX/LOXL inhibition using BAPN there was a broadening of fibril diameter distribution and a marked dysregulation of fibril structure including irregular profiles (Figure 7B and C). In keeping with this, BAPN markedly increased collagen solubility, with only 14% of the total collagen remaining insoluble after proteolytic digestion, whilst with 0.1 \u03bcM PXS-S2A only a small increase in collagen solubility was observed suggesting that inhibition of LOXL2/LOXL3 did not significantly disrupt fibril stability (Figure 7D). Together, these results identify that LOX/LOXL activity is an essential regulator of collagen fibril assembly and that selective LOXL2/LOXL3 inhibition is sufficient to significantly reduce tissue stiffness and normalise collagen fibril architecture.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig7-v1.jpg)\n\n**Figure 7.:** IPF fibroblasts were grown for 6 weeks in the 3D in vitro model of fibrosis with vehicle control, concentrations of PXS-S2A or 1 mM BAPN, as indicated. (A) Representative images of histological sections stained with picrosirius red and viewed under plane polarised light, scale bar: 50 \u03bcm. (B) Representative transmission electron microscopy images of collagen fibrils in transverse (upper panel, scale bar 200 nm) and longitudinal (lower panel, scale bar 100 nm) cross-section. Images are representative of the mean fibril diameter. (C) Collagen fibril diameter measured in transverse section (300 fibrils per treatment measured by a blinded observer from one experiment). Data are representative of measurements from two independent experiments. Bars show the median value. ****p<0.0001 by non-parametric one-way ANOVA (Kruskal-Wallis test) with Dunn\u2019s multiple comparison test. (D) Collagen solubility of whole cultures assessed by sequential extractions using TBS, 0.5M acetic acid, and pepsin. Each fraction and the final insoluble residue were hydrolysed and assayed for hydroxyproline. Bars are mean\u00a0+range of two IPF donors.\n\n### Small molecule LOXL2/LOXL3-selective inhibition as a treatment for lung fibrosis\n\nTo extend our in vitro studies, the efficacy of an orally bioavailable small molecule inhibitor (PXS-S3B, IC500.008 \u03bcM and 0.020 \u03bcM for LOXL2 and LOXL3, compared with 0.118 \u03bcM, 1.130 \u03bcM and 1.710 \u03bcM for LOXL4, LOX and LOXL1 respectively) was then assessed at LOXL2/LOXL3-selective doses in an experimental animal model of lung fibrosis. Control experiments using the 3D in vitro model of fibrosis confirmed the effect of PXS-S3B on collagen cross-linking and tissue stiffness was comparable to PXS-S2A (Figure 8\u2014figure supplement 1).\n\nGiven the importance of TGF-\u03b2 as a driver of fibrosis, we used an in vivo model of lung fibrosis driven by transient overexpression of active TGF-\u03b21 by adenoviral vector gene transfer, which results in severe progressive fibrosis and recapitulates several features of pulmonary fibrosis in human disease (Sime et al., 1997). Rats received either a replication-defective adenoviral vector producing active TGF-\u03b21 (AdTGF-\u03b21) or vector only control (AdDL) on day 0, and then oral administration of PXS-S3B (15 or 30 mg/kg/day) from day 1 to day 28 at which point lung function was assessed before the animals were euthanised for biochemical and histological analysis of the lungs. There was no effect of PXS-S3B on total collagen content of the lungs (Figure 8A), but there was a significant reduction in fibrosis compared to vehicle-treated AdTGF-\u03b21 rats, as assessed by modified Ashcroft scores (Figure 8B and C), and a significant improvement in lung function (i.e. a reduction in lung stiffness as measured by pressure-driven pressure volume-loops and elastance) at day 28 (Figure 8D and E), reflecting our in vitro finding that LOXL2/LOXL3 inhibition reduces tissue stiffness. This was accompanied by a reduction in mature pyridinoline collagen cross-links compared with the AdTGF-\u03b2-treated rats (Figure 8F and G), as well as immature (DHLNL\u00a0+\u00a0HLNL) cross-links (Figure 8H). We also determined that the DHLNL:HLNL ratio was reduced in the treated rats suggesting a reduction in lysine hydroxylation (Figure 8I). Consistent with this, analysis of mRNA expression in the lungs of animals treated with LOXL2/LOXL3 inhibitor, revealed a decrease in LH2, which is required for telopeptide hydroxyallysine-derived cross-links. In addition, expression of other modulators of fibrillogenesis including collagen V, TGM2, dermatopontin, fibulin, fibrillin, and periostin (Figure 8J) were reduced. Thus, inhibition of LOXL2/LOXL3 not only modifies collagen cross-linking but also modulates fibrillar collagen homeostasis. No adverse effects of treatment with the LOXL2/LOXL3 inhibitor were evident in the model.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig8-v1.jpg)\n\n**Figure 8.:** Rats received either empty vector control (AdDL) (n\u00a0=\u00a06) on Day 0 or adenoviral vector producing active TGF-\u03b21 (AdTGF-\u03b21) to induce progressive pulmonary fibrosis. AdTGF-\u03b21 groups received either vehicle (PBS, n\u00a0=\u00a08) or PXS-S3B (15 mg/kg/day or 30 mg/kg/day, n\u00a0=\u00a09 per group) dosed daily orally from day 1 to day 28 when animals were sacrificed. (A) Total collagen content normalised to total protein content. (B) Fibrotic changes in left lung quantified by modified Ashcroft score. (C) Representative histological sections stained with H and E (left hand panel) or picrosirius red viewed under plane polarised light (fibrillar collagen, right hand panel) (Scale bar\u00a0=\u00a0100 \u03bcm). (D\u2013E) Day 28 lung function prior to sacrifice: (D) Representative lung pressure-volume loops. (E) Lung elastance. (F\u2013I) Hydroxyallysine-derived collagen cross-link analysis determined by LC-MS: (F) PYD cross-links, (G) DPD cross-links, (H) immature divalent (DHLNL\u00a0+HLNL) cross-links; (I) ratio of DHLNL to HLNL cross-links; Bars are mean\u00a0+s.e.m. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 by one-way ANOVA with Dunnett\u2019s multiple comparison test. (J) Transcriptional changes in fibrillogenesis genes in lung tissue shown in a heat map produced by treatment group supervised clustering.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36354/elife-36354-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Peripheral lung fibroblasts from IPF patients (n\u00a0=\u00a03 donors) were used in the in vitro model of fibrosis. Either 1 mM BAPN, PXS-S3B (at the concentrations indicated) or vehicle control (0.1% DMSO) were added to the medium after 24 hr of culture and the cells cultured in the presence of TGF-\u03b21 for 6 weeks. (A\u2013C) Hydroxyallysine-derived collagen cross-link analysis, normalised to total collagen content: (A) HLNL content determined by LC-MS; (B) DHLNL content determined by LC-MS; (C) Total mature (PYD\u00a0+DPD) cross-link content determined by ELISA. Bars are mean\u00a0+s.e.m. *p<0.05; **p<0.01; ***p<0.001 by one-way repeated measures ANOVA with Dunnett\u2019s post-test. (D) Total collagen content determined by hydroxyproline assay normalised by total protein. Bars are mean\u00a0+s.e.m. (E) Young\u2019s modulus determined by parallel plate compression testing of the 3D in vitro model of fibrosis. Bars are mean\u00a0+s.e.m of normalised data. *p<0.05; **p<0.01 by one sample t-test. The downward arrows in (A\u2013E) identify the LOXL2/LOXL3-selective dose.\n\n## Discussion\n\nOne of the critical issues in the pathobiology of fibrosis is an insufficient understanding of the structure-function relationship of the ECM in human disease. A major goal of this study was to perform an integrated biomechanical and biochemical characterisation of fibrillar collagen and its pathological role in human fibrosis. We demonstrate that dysregulated collagen fibrillogenesis is a key pathway of human lung fibrosis at the time of diagnosis, with structurally and functionally abnormal collagen \u2013 rather than collagen content - increasing lung tissue stiffness as a consequence of pathologic pyridinoline cross-linking. To advance our mechanistic understanding of these findings, we employed small molecule LOXL inhibitors and demonstrate that dual inhibition of LOXL2 and LOXL3 is sufficient to prevent accumulation of these pyridinoline cross-links. This normalises the structure and biomechanical properties of fibrillar collagen, and reduces tissue stiffness without the need to significantly disrupt fibril assembly. Our findings suggest that this targeted inhibition reduces the disruption of mechano-homeostasis to limit the self-sustaining effects of ECM on progressive fibrosis.\n\nA thought provoking finding of our studies is that total collagen concentration, as determined by measurement of hydroxyproline that quantifies all collagen irrespective of whether it is assembled into fibrils, was not significantly increased in IPF tissue. Whilst Selman et al identified an increase in collagen of fibrotic lung biopsy samples (Selman et al., 1986), other studies have reported no significant increase in collagen deposition (Nkyimbeng et al., 2013; Fulmer et al., 1980; Westergren-Thorsson et al., 2017), or have reported increased collagen deposition only in late stage disease at autopsy, but not in diagnostic lung biopsy samples (Kirk et al., 1986). This suggests that, at the time of diagnosis, any increase in collagen is paralleled by changes in other proteins (most likely other ECM and myofibroblastic cellular proteins), but that by late-stage fibrosis there may be a progressive increase in collagen accumulation, perhaps as the fibrotic tissue becomes more acellular and/or the collagen resists degradation. Furthermore, although we identified an increase in stiffness of IPF lung tissue using AFM micro-indentation, this was not related to collagen concentration. Rather, increased mature fibrillar collagen pyridinoline cross-linking secondary to dysregulated post-translational modification was a primary determinant of tissue stiffness.\n\nFibrillar collagen is a predominant component of the ECM which provides tissues with essential tensile strength by forming a hierarchical assembly of substructures dependent upon their cross-linking: tropocollagen molecules assemble into fibrils and the fibrils further assemble into fibres. Here, we identified that collagen hierarchical assembly is altered at the nanoscale/ultrastructural level in IPF. Collagen fibrils were structurally and functionally abnormal with reduced diameter and increased stiffness, suggesting that at a molecular level they have the potential to influence the microenvironment of individual cells to affect their biomechanical sensing. Covalent cross-links have been proposed to increase fibril stiffness by forming a lateral network of linkages (Bailey, 2001; Miles et al., 2005). In models of artificially cross-linked collagen fibrils, it was observed that by drawing the collagen molecules closer together there was a reduction in water between molecules; as a consequence, the density of collagen fibrils increased and this was proposed to affect their mechanical properties (Bailey, 2001; Miles et al., 2005). Whether a similar effect occurs after enzymatic cross-linking, especially pathological cross-linking involving pyridinoline cross-links, remains to be determined. However, the reduction in fibril diameter and lesser fibril swelling with hydration of IPF fibrils would be consistent with this concept. Whilst direct experimental evidence is required to determine whether collagen swelling is directly related to cross-linking, collagen hydration alone has been shown to significantly influence individual collagen fibril mechanics and the mechanism of molecular slippage and stretching within fibrils (Andriotis et al., 2018; Gautieri et al., 2011; Yang et al., 2008).\n\nSeveral different mechanisms have been proposed to contribute to alterations in tissue stiffness including LOX/LOXL and transglutaminase 2 (TGM2)-mediated enzymatic cross-linking and non-enzymatic glycation. Here we have focussed on the LOX and LOXL enzymes which play key roles in the process of fibrillar collagen production, with expression being tightly controlled in normal development (Trackman, 2016). Whilst LOXL2 has been proposed to have pathologic roles in cancer and fibrosis (Barker et al.; Barry-Hamilton et al., 2010), and increased LOXL2 expression in IPF stroma has been observed previously, less is understood regarding LOXL3. Previous studies have identified that it is expressed in human IPF lung tissue, has amine oxidase activity for collagens, is induced by fibroblast culture on IPF cell-derived ECM, and is an enhancer and key regulator of integrin signalling in myofibre formation (Kraft-Sheleg et al., 2016; Lee and Kim, 2006; Philp et al., 2018). Recently, both LOXL2 and LOXL3 were identified to be crucial for fibroblast-to-myofibroblast transition in in vitro models of lung fibrosis (Aumiller et al., 2017). In keeping with our finding of increased LOXL expression together with increased LH2 expression in IPF tissue, we identified an increase in mature hydroxyallysine-derived cross-links in IPF lung tissue, consistent with a previous report of an increase in mature DPD cross-links in fibrotic lung tissue (Last et al., 1990). The extent of lysine hydroxylation can vary from 15\u00a0to\u00a090% depending on the collagen types and, even within type I collagen, it varies significantly from tissue to tissue and under physiological or pathological conditions (Yamauchi and Sricholpech, 2012). Although it is unknown whether LOXL2 and/or LOXL3 have a substrate preference for hydroxylysine, the shift from a skin (allysine-derived) to a bone-type (hydroxyallysine-derived) of collagen cross-link appears of pathogenetic importance in IPF.\n\nVarious approaches have investigated the roles of collagen cross-linking by LOX/LOXL enzymes in fibrosis. Multiple studies have tested BAPN as a broad-spectrum LOX/LOXL inhibitor (Trackman, 2016), although this approach has no therapeutic potential as it does not enable specific enzyme targeting and has undesirable effects on LOX leading to unwanted vascular and skeletal side-effects (Wawzonek et al., 1955). A monoclonal antibody which binds and partially inhibits LOXL2, showed efficacy in the bleomycin mouse model of lung fibrosis (Barry-Hamilton et al., 2010). However, recently, a Phase 2 study in IPF of simtuzumab, the humanised version of this antibody, was terminated due to lack of efficacy (Raghu et al., 2017). Our finding of differential expression of LOXL2, LOXL3 and LOXL4 in IPF tissue suggests that therapeutic targeting of additional LOXL family members is required to inhibit pathologic collagen cross-linking. To investigate this finding, we used dual LOXL2 and LOXL3-selective inhibitors which irreversibly inhibit LOXL2 and LOXL3 but are reversible and more than a hundred times less potent for inhibition of LOX and LOXL1. Characterisation in a novel 3D in vitro model of human fibrosis enabled direct measurement of the influence of LOXL2/LOXL3 inhibition upon pathological changes in collagen structure-function.\n\nA key finding of our study is that approximately 70% of maximal reduction in tissue stiffness in vitro occurred following selective inhibition of only LOXL2/LOXL3 when pyridinoline cross-links were significantly reduced and fibril diameter was normalised, whilst fibril architecture was preserved and only a small increase in protease-sensitive collagen solubility was evident. Together our data suggest that in lung fibrosis reducing pathological collagen cross-linking normalises fibril architecture and is sufficient to reduce tissue stiffness without the need to completely disrupt fibril assembly. While LOXL4 was also increased in IPF, our dose-response findings from the parallel plate compression system suggest that it does not make a significant contribution to tissue stiffness. In comparison with selective LOXL2/LOXL3 inhibition in the current study, previous studies treating tendon constructs from days 14 to 21 with the pan LOX/LOXL inhibitor BAPN showed that collagen fibrils were irregular with widely dispersed diameters (Herchenhan et al., 2015) and we observed a similar effect of BAPN in the current study. Thus, while pan LOX/LOXL inhibition disrupts normal collagen fibrillogenesis, selective LOXL2/LOXL3 inhibition was sufficient to prevent pathological collagen crosslinking and restore fibrillar collagen homeostasis.\n\nAlthough reduction in hydroxyproline measurements of collagen is recommended as a primary measure of anti-fibrotic efficacy during preclinical animal model testing of putative therapeutics for lung fibrosis (ATS Assembly on Respiratory Cell and Molecular Biology et al., 2017), our data from human tissue obtained at time of diagnosis identifies that effects on collagen fibrillogenesis are more relevant pathogenic mechanisms with abnormal collagen cross-linking and increased tissue stiffness likely to precede any accumulation of collagen in late-stage human pulmonary fibrosis. Consistent with our proposal, in a rat carbon tetrachloride-induced model of liver injury, increased liver stiffness was associated with increased collagen cross-linking and this was proposed to prime the liver to respond quickly to injury via mechanical feed-forward mechanisms (Perepelyuk et al., 2013; Georges et al., 2007).\n\nThe relevance of LOXL2/LOXL3-selective inhibition was demonstrated in a TGF-\u03b2-driven rat model of lung fibrosis. The model leads to persistent and severe interstitial fibrosis and does not have the confounding robust inflammatory response observed in the commonly studied bleomycin induced mouse model of fibrosis so enabling direct assessment of fibrotic responses (Sime et al., 1997; ATS Assembly on Respiratory Cell and Molecular Biology et al., 2017). Selective targeting of LOXL2 and LOXL3 in this model reduced pyridinoline collagen cross-links, reduced fibrosis, and improved lung function without a significant effect on hydroxyproline content. Whilst this did not completely restore lung function back to normal, there was a significant beneficial effect even in this model of fibrosis which is very strongly driven by TGF-\u03b2. An interesting finding was that inhibition of LOXL2 and LOXL3 reduced expression of genes known to influence collagen fibrillogenesis including LH2, collagen V, TGM2, dermatopontin, fibulin, fibrillin, and periostin. As these genes, as well as LOXL2 and LH2 are induced by TGF-\u03b2, one possible explanation is that TGF-\u03b2 plays a causal role in fibrosis by disrupting collagen homeostasis to drive abnormal collagen cross-linking and promoting assembly of stiffer collagen fibrils. This change in stiffness initiates self-sustaining mechanosensory signalling pathways in a feed-forward mechanism to drive fibroblast activation and progressive fibrosis (Herrera et al., 2018; Tschumperlin et al., 2018). Given the important contribution of fibrillar collagen in forming a scaffold that supports tissue architecture, our data identify that normalising the biomechanical properties of fibrillar collagen in lung fibrosis may reset mechanosensitive cellular mechanisms and aid restoration of tissue function more effectively than approaches that promote extensive collagen degradation, since significant loss of ECM structure is itself pathological, as evidenced by the emphysematous lung.\n\nIn summary, this integrated study identifies that altered collagen architecture is a key determinant of abnormal ECM structure-function in human lung fibrosis at time of diagnosis. Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalises collagen morphology, reduces tissue stiffness, and improves lung function. Thus, targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and so prevent persistent mechanosensitive cellular activation and fibrosis progression.\n\n## Materials and methods\n\n### Lung tissue sampling\n\nAll human lung experiments were approved by the Southampton and South West Hampshire and the Mid and South Buckinghamshire Local Research Ethics Committees (ref 07/H0607/73), and all subjects gave written informed consent. Clinically indicated IPF lung biopsy tissue samples and age-matched non-fibrotic control tissue samples (macroscopically normal lung sampled remote from a cancer site in patients undergoing surgery for early stage lung cancer) deemed surplus to clinical diagnostic requirements were flash frozen and stored in liquid nitrogen. All IPF samples were from patients subsequently receiving a multidisciplinary diagnosis of IPF according to international consensus guidelines (Raghu et al., 2011). Unless otherwise indicated, serial 50 \u03bcm cryosections were utilised for: enzymatic extraction of collagen for AFM-based nanoindentation experiments (five sections), gene expression analysis (five sections), AFM-based microindentation experiments (two sections), hydrolysis for hydroxyproline and collagen cross-link quantification (approximately 1 mm3 of adjacent lung tissue following cryosection). For second harmonic generation imaging archived formalin-fixed paraffin-embedded samples from control and IPF donors were studied.\n\n### Atomic force microscopy (AFM) experiments\n\nAFM-based experiments were performed using a NanoWizard ULTRA Speed A AFM system (JPK Instruments AG, Berlin). For AFM-nanoindentation experiments, pyrex nitride cantilevers (NanoWorld AG, Switzerland) of 0.48 Nm-1 nominal spring constant were used and for microindentation experiments CSC38 cantilevers (\u03bcMasch, Innovative Solutions Bulgaria Ltd., Bulgaria) of 0.03 Nm-1 spring constant and a 15 \u03bcm diameter microsphere were used. The spring constant is defined as the ratio of the force affecting the spring to the displacement caused by it. During mechanical assessment samples were hydrated in phosphate buffered saline (pH7.4).\n\nAFM-based microindentation experiments were performed on 50 \u03bcm sections. By attaching a microsphere on to the end of the flexible AFM cantilever, microindentation enables assessment of the mechanics of larger structures, such as localised areas on tissue sections composed of hundreds of collagen fibrils\u00a0(Kain et al., 2018). The tip radius of these spheres was approximately 7.5 \u03bcm, giving a volume interaction between the sphere and the tissue in the order of 10\u2013100 \u03bcm3. Frozen cryosections were warmed to room temperature in PBS containing a protease inhibitor cocktail to minimise tissue degradation and between 80 and\u00a0150 force-displacement curve measurements were performed at 6 to 11 sites across each tissue section.\n\nFor nanoindentation, collagen was enzymatically extracted from tissue sections using 1 mg/ml bovine hyaluronidase and 1 mg/ml trypsin in 0.1 M Sorensen's phosphate buffer (pH 7.2) at 37\u00b0C for 24 hr (Stolz et al., 2009; Andriotis et al., 2014). After thorough washing with deionised water, the samples were smeared on to glass slides to reveal areas with individual fibrils. Samples were then left to dry overnight at 37\u00b0C and stored in a desiccating storage box with silica gels until analysis. Extracted collagen fibrils were assessed by employing a conical tip with tip radius of 7\u201310 nm at the end of a flexible cantilever, giving a volume interaction between the tip and collagen fibril of 0.1\u20131 nm3. AFM imaging prior to force-displacement acquisition of the dry sample enabled individual collagen fibrils to be identified from the characteristic 67 nm D periodicity. The sample was then hydrated in PBS and force-displacement data were recorded and subsequently analysed with the well-established mathematical Oliver-Pharr model (Oliver and Pharr, 2004), so enabling determination of the indentation modulus of the measured collagen fibril (Andriotis et al., 2014). For each tissue sample, a minimum of four collagen fibrils were studied, with 30 to 50 force-displacement curves measured per fibril. The total acquisition time was kept as low as possible to minimise thermal drift effects.\n\n### Reverse transcription quantitative polymerase chain reaction (RTqPCR)}\n\nRNA was isolated using a Savant FastPrep FP12 Ribolyser (Qbiogene, Cedex, France) and RNeasy Mini kits (Qiagen, Manchester, UK) according to the manufacturer\u2019s instructions. For the in vitro lung fibrosis model, RLT buffer also contained Proteinase K (Sigma, Poole, UK) to aid lysis. RNA was reverse transcribed to cDNA using a QuantiTect Reverse Transcription Kit or Precision nanoScript2 Reverse Transcription Kit (Primer design, Southampton, UK) according to manufacturer\u2019s instructions. Real-time quantitative polymerase chain reaction (RTqPCR) was performed using a BioRad CFX96 (BioRad, Watford, UK) or a NanoString (NanoString Technologies, Seattle, USA) system with a custom CodeSet. Primers and TaqMan probe sets were obtained from Primer Design. Changes in gene expression were compared to two or three constitutively expressed housekeeping genes (for human samples UBC/A2 and for rat samples Pgk1/Actab/Hprt1). Data were normalised to the mean of the housekeeping genes, and these data normalised to an appropriate baseline control sample.\n\n### Second harmonic imaging\n\nFormalin-fixed paraffin-embedded human lung tissue sections (5 \u03bcm) from control and IPF donors (n\u00a0=\u00a05 per group) were dewaxed and imaged using a custom laser scanning microscope (output of an Optical Parametric Oscillator (two picosecond pulses, at 80MHz repetition rate Levante Emerald OPO, pumped by Emerald engine, APE, Berlin) coupled into an inverted microscope (Ti-U, Nikon, Japan) via a galvanometric scanner and a short pass excitation dichroic (750 nm cut-off, Chroma 750spxrxt). Samples were excited at 800 nm and the epi-collected second harmonic signal was further filtered with a 442 nm dichroic mirror (Semrock, DI-02-R442) and a band pass filter centred at 400 nm (Thorlabs, FB400-40) and was finally detected with a photomultiplier tube (Hamamatsu 10722\u2013210). Samples were imaged with 20 mW of power measured at the sample using the same gain for each sample. For image co-registration, an adjacent 5 \u03bcm tissue section was H and E stained and imaged using a Dot-Slide scanning system (Olympus, Southend-on-Sea, UK). Image co-registration was performed in the Fiji distribution (Schindelin et al., 2012) (version 1.49 p) of ImageJ using landmark correspondences.\n\n### In situ analysis of amine oxidase activity\n\nAn in situ assay for the detection of amine oxidase activity in skin (Langton et al., 2013) was adapted for use on lung tissue. The assay is based on oxidation of the amine substrate, 1,4-diaminobutane and chemiluminescent detection of liberated H2O2 with horseradish peroxidase and luminol. Cryosections (5 \u03bcm) of non-fibrotic or IPF lung tissue were placed on glass slides and air dried for 10 min. The substrate/detection mixture was applied to each tissue section and incubated at 37\u00b0C for 5 min. After removal of excess substrate solution and covering the tissue section with a coverslip, each section was digitally imaged with chemiluminescence detection (Amersham Imager 600, GE Healthcare Life Sciences, Little Chalfont, UK). As a control to verify the contribution of LOX/LOXL to the amine oxidase activity in the tissue, a serial section was preincubated with the irreversible LOX/LOXL inhibitor, BAPN (300 \u03bcM) for 30 min prior to substrate addition. After imaging, semi-quantitative analysis was performed, with the mean grey scale value of each tissue area following background subtraction calculated using Fiji (version 1.49 p), with each sample normalised to the wet weight of 250 \u03bcm of adjacent cryosections.\n\n### Inhibition profiling of PXS-S2A and PXS-S3B towards the LOX/LOXL family enzymes\n\nBovine LOX and recombinant LOXL enzymes were tested in an Amplex Red assay using putrescine as substrate over a range of concentrations of inhibitors as previously described (Schilter et al., 2015; Chang et al., 2017). Putrescine was used at 10 mM for LOX and LOXL1, 5 mM for LOXL2 and 2 mM for LOXL3 and LOXL4 reflecting the different Km values for each enzyme. Bovine LOX was extracted from calf aorta (Schilter et al., 2015), recombinant LOXL2 and LOXL3 proteins were purchased from R and D systems, recombinant LOXL1 was stably expressed as a his-tagged protein in NIH-3T3 cells and purified from conditioned media using Nickel-Sepharose affinity purification; recombinant LOXL4 was partially purified from conditioned medium from HEK-293 stably transfected with human LOXL4 using size exclusion enrichment with Amicon 50 kDa centrifugal filter units. The LOXL4 cell line was provided by Dr Fernando Rodr\u00edguez Pascual, Universidad Aut\u00f3noma de Madrid, Spain. All proteins were initially characterised by western blotting and enzymatic activity, in order to confirm identity and to yield comparable Vmax across all assays.\n\n### 3D in vitro model of fibrosis\n\nPeripheral lung fibroblasts were obtained as outgrowths from surgical lung biopsy tissue (Davies et al., 2012) of patients (n\u00a0=\u00a03 donors) who were subsequently confirmed with a diagnosis of IPF. All primary cultures were tested and free of mycoplasma contamination. The fibroblasts were seeded in Transwell inserts in DMEM containing 10% FBS. After 24 hr, the media was replaced with DMEM/F12 containing 5% FBS, 10 \u03bcg/ml L-ascorbic acid-2-phosphate, 10 ng/ml EGF, and 0.5 \u03bcg/ml hydrocortisone with or without inhibitors, as indicated; each experiment included a vehicle control (0.1% DMSO). TGF-\u03b21 (3 ng/mL) was added to the cultures, and the medium replenished three times per week. After 6 weeks the spheroids were either harvested into RNAlater (Sigma) for RNA extraction, snap frozen for parallel-plate compression testing, analysis of cross-linking, and histochemical staining, or fixed using 4% paraformaldehyde for histochemistry or 3% glutaraldehyde in 0.1 M cacodylate buffer at pH 7.4 for electron microscopy.\n\n### Tinctorial stains\n\n4\u20137 \u03bcm sections were analysed using PicroSirius Red (Abcam, Cambridge, UK) or Masson\u2019s Trichrome (Sigma, Poole, UK) stain according to the manufacturers\u2019 instructions. Images were acquired using a Dot-Slide scanning system (Olympus, Southend-on-Sea, UK) with PicroSirius Red staining visualised under polarised light. PicroSirius Red images were converted to 16-bit and pseudo-coloured through application of the Yellow Lookup Table within Fiji (version 1\u00b749 c).\n\n### Protein, hydroxyproline and collagen cross-link analysis\n\nSamples were thawed and reduced with KBH4 before acid hydrolysis in 6M HCl at 102\u00b0C for 18 hr. Cooled hydrolysed samples were evaporated to dryness under vacuum and then resuspended in 200 \u03bcL HPLC-grade H2O. Total protein was quantified in the hydrolysed samples using a genipin-based amino acid assay (QuickZyme Biosciences, Leiden, The Netherlands), using standard hydrolysed bovine serum albumin as standard.\n\nTotal collagen content was estimated using either ultra-high performance liquid chromatography-electrospray ionisation tandem mass spectrometry (UHPLC-ESI-MS/MS) or by colorimetric assay of hydroxyproline (Hyp) based on the reaction of oxidized hydroxyproline with 4-(Dimethylamino)benzaldehyde, as per manufacturer\u2019s instruction (Sigma-Aldrich, Poole, UK). The molar content of collagen was estimated from hydroxyproline using a conversion factor of 300 hydroxyprolines per triple helix, and mass of collagen was estimated using a molecular weight of 300 kDa per triple helix (Miller et al., 1990).\n\nCollagen cross-links were determined using either UHPLC-ESI-MS/MS or ELISA as indicated in the figure legends. Total mature pyridinium cross-links (PYD\u00a0+DPD) were determined using enzyme-linked immunosorbent assay (ELISA; Quidel Corporation, San Diego, USA) according to manufacturer\u2019s instructions. For UHPLC-ESI-MS/MS analysis, cross-links were first extracted from the hydrolysate using an automated solid phase extraction system (Gilson GX-271 ASPECA system) employing reversed-phase C18-Aq columns (GracePure, ThermoFisher Scientific, Australia) followed by SCX strong cation exchange columns. After extraction and drying, the cross-links were converted into heptafluorobutyric acid (HFBA) salts for analysis by UHPLC-ESI-MS/MS on a Thermo Dionex UHPLC and TSQ Endura triple quad mass spectrometer. UHPLC separation of cross-links was achieved with an Agilent Rapid Resolution High Definition (RRHD) SB-C18 column. UHPLC was performed using a 12-min gradient flow of the mobile phase A (10 mM ammonium formate, 0.1% formic acid, 0.1% HFBA in H2O) from 96.2% to 0% and mobile phase B (10 mM ammonium formate, 0.1% formic acid, 0.1% HFBA in 80% MeOH) from 3.8% to 100% at a flow rate of 0.3 mL/min and with a column temperature of 40\u00b0C. Positive ESI-MS/MS with Selected Reaction Monitoring (SRM) mode was performed using the following parameters: Spray voltage 4000 V; sheath gas 35 (Arb); aux gas 20 (Arb); sweep gas 0 (Arb); ion transfer tube temperature 350\u00b0C; vaporiser temperature 300\u00b0C. Standards used for quantitation of collagen cross-links or total collagen in hydrolysates by UHPLC-ESI-MS/MS were: DHLNL (Thermo Fisher Scientific, Scoresby, Australia), HLNL (Toronto Research Chemicals, Toronto, Canada), PYD and DPD (Quidel Corporation, San Diego, USA) and hydroxyproline (Sigma-Aldrich, Poole, UK). Quantitation of the collagen cross-links and total collagen was achieved by comparing to a standard curve. Sample values were interpolated using GraphPad Prism seven software.\n\n### Parallel plate compression testing\n\nTo determine the stiffness characteristics (Young\u2019s modulus, E) of the 3D in vitro model of fibrosis, cultures were subjected to parallel plate compression testing using a CellScale MicroSquisher fitted with a round tungsten cantilever (thickness 406.4 nm) and accompanying SquisherJoy V5.23 software (CellScale, Ontario, Canada). The fluid bath test chamber was filled with sterile PBS, and the stage and optics calibrated following the manufacturer\u2019s instructions. Example test sequences are shown in Figure 6\u2014figure supplement 1 and Video 1. Samples were subjected to five testing cycles under hydrated conditions, each achieving 25% engineering strain (deformation) over a 15 s compression phase, followed by a 2 s hold, recovery over 15 s, and a 2 s resting period. The first four cycles allowed preconditioning of the tissue, and the resulting force vs time curves could be seen to have stabilised by the fifth compression cycle (Figure 6\u2014figure supplement 1a). Analysis of stress vs strain relationships was carried out using the compression phase of the fifth cycle from where sample stiffness can be inferred. Here, we restrict ourselves to the estimation of the Young\u2019s modulus of the biological material in hydrated state.\n\nForce and displacement data were transformed to engineering stress versus engineering strain plots using the horizontal cross-sectional diameter of the sample immediately before the start of each test. Young\u2019s modulus (E), a measure of stiffness, was calculated using a modified Hertzian half-space contact mechanics model for elastic spheres as previously described (Kim et al., 2010), averaging between values of E calculated for both the horizontal and vertical radii of the quasi-spherical cultures. This calculation requires the value of the Poisson\u2019s ratio $\u03bd$. Given the narrow range in which this value lies, the relative insensitivity of the calculations to this material parameter, and significant difficulty in their direct measurement for small biological samples, here we make use of estimated values taken as 0.5, which is realistic for a range of biological matter. All stress-strain curves show an initial 'toe' region, where the stress increases slowly, followed by a linear region, approximately between 10% and 20% strain. The stiffness of the tissue was obtained by averaging the computed values of E within this linear range.\n\n### Transmission electron microscopy\n\nSamples were post-fixed sequentially in osmium/ferrocyanide fixative, thiocarbohydrazide solution, osmium tetroxide, uranyl acetate and Walton\u2019s lead aspartate solution before dehydration in graded ethanol and acetonitrile. Samples were embedded in Spurr resin and 100 nm ultra-thin sections visualised using an FEI Tecnai 12 transmission electron microscope (FEI Company, Hillsboro, OR, USA). For measurement of fibril diameters images were acquired at 87,000x magnification. Measurements of fibril diameter from two independent experiments were made by two operators in parallel blinded to the treatment conditions using ImageJ (Schneider et al., 2012) (Version 1.50 g). The shortest axis of each fibril was measured with a total of 300 measurements per sample.\n\n### Collagen matrix solubility assay\n\nTo assess collagen solubility samples from the 3D in vitro model of lung fibrosis were subjected to sequential collagen extraction under increasingly stringent conditions as described previously (Liu et al., 2016). Briefly, samples were subjected to sequential overnight incubations in 1) neutral salt (Tris buffered saline containing protease inhibitors); 2) 0.5M acetic acid with protease inhibitors; and 3) 0.5M acetic acid containing 700 units/mL pepsin (Sigma, Poole, UK). Each fraction, and the remaining solid (insoluble highly cross-linked) fraction, was hydrolysed in 6M HCl at 102\u00b0C for 18 hr and the collagen content of each fraction determined by colorimetric hydroxyproline assay.\n\n### Adenovirus TGF-\u03b2 model\n\nStudies in rats were performed at McMaster University (Hamilton, Ontario, Canada) according to guidelines from the Canadian Council on Animal Care and approved by the Animal Research Ethics Board of McMaster University under protocol # 16-04-14. Sample sizes were based on previous studies in the laboratory where the studies were performed and were chosen to balance the ability to measure significant differences while reducing the number of animals used. Female Sprague Dawley rats (Charles River Laboratories, Montreal, Canada) were randomly assigned to receive 2.5 \u00d7 108 pfu of either a replication-deficient adenoviral vector carrying an active TGF-\u03b21 (AdTGF-\u03b21) expression construct to induce progressive pulmonary fibrosis (Sime et al., 1997) or vector only control (AdDL) on Day 0. Treatment groups received LOXL2/LOXL3 inhibitor (15 or 30 mg/kg/day dosed daily via the oral route) from day 1 to day 28; control groups received vehicle (PBS). On day 28, lung function was assessed using forced oscillation manoeuvres with a FlexiVent system (SCIREQ Scientific Respiratory Equipment, Montreal, Canada) to measure pressure-volume loops, resistance (R), compliance (C), and elastance (E) of the respiratory system. Animals were then euthanised and the left lung lobe inflated under constant pressure and fixed in 10% formalin for histological examination of tissue sections by staining with picrosirius red and viewing under polarised light. Fibrosis was assessed by six independent, trained individuals who were blinded to the treatment conditions using a modified Ashcroft score (Bonniaud et al., 2005). All right lung lobes were combined, flash frozen and ground into a fine powder under liquid nitrogen and stored for quantitation of collagen and its cross links, and for RNA analysis.\n\n### Statistics\n\nStatistical analyses were performed in GraphPad Prism v7.02 (GraphPad Software Inc., San Diego, CA) unless otherwise indicated. No data were excluded from the studies and for all experiments, all attempts at replication were successful. For each experiment, sample size reflects the number of independent biological replicates and is provided in the figure legend. Normality of distribution was assessed using the D\u2019Agostino-Pearson normality test. Statistical analyses of single comparisons of two groups utilised Student's t-test or Mann-Whitney U-test for parametric and non-parametric data respectively. Where appropriate, individual t-test results were corrected for multiple comparisons using the Holm-Sidak method. For multiple comparisons, one-way analysis of variance (ANOVA) with Dunnett\u2019s multiple comparison test or Kruskal-Wallis analysis with Dunn\u2019s multiple comparison test were used for parametric and non-parametric data, respectively. In the in vitro studies, repeated measures (RM) ANOVA was used in order to treat data from each donor as a matched set. Sphericity of the repeated measures was assumed since the experiments were designed as randomised blocks. Multivariate correlations were performed using JMP software v13.1.0 (SAS, Marlow, UK) applying the restricted maximum likelihood (REML) method to handle missing data. Results were considered significant if p<0.05, where *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "7bd1a86e-41b2-49d1-9e78-42dee146df4e",
+      "submission_id": "dc22358b-9a00-424e-8e75-d0ee93909f21",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordana Vunjak-Novakovic, Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36354.017](https://doi.org/10.7554/eLife.36354.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Nanoscale dysregulation of collagen structure-function disrupts mechano-homeostasis and mediates pulmonary fibrosis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Randy Schekman as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Bela Suki (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an excellent and very interesting manuscript that shows that the collagen structure and its mature cross-linking, rather than the collagen quantity, change during pulmonary fibrosis, leading to the disruption of mechanobiological homeostasis of the lung. It is clearly demonstrated that the fibrotic lung matrix is stiffer than normal lung matrix, and that this stiffness is secondary to changes in collagen nanostructure rather than in the collagen content. Although some of the conclusions reported here have been reached by some other authors using animal models, this manuscript is a more comprehensive study, with strong focus on the human lung. Notably, the authors also show that the selective inhibition of one set of LOX genes, LOXL2/LOXL3 may provide therapeutic benefits. The studies are rigorous and will be of major interest to the field.\n\nThe reviewers also raised some concerns that can be addressed through revisions of the manuscript, and in one instance by including some additional experimental data. We would encourage the authors to address these comments and further increase the already high value and impact of this manuscript.\n\nEssential revisions:\n\n1) It is intuitively difficult to see how there cannot be a difference in total collagen content, given the severely thickened interstitium in fibrotic lung tissue. Please clarify if this thickening can be fully explained by accumulation of mesenchymal cells, and if the hydroxyproline content is the only way (or the right way) to assess the collagen contents in this case. Also, It would be useful to better reconcile some of the data obtained here with previous publications that show clear evidence of increased collagen deposition.\n\n2) The major claim of the study is that it is not collagen deposition, but cross-linking that really matters in lung fibrosis. Related to this claim, total collagen concentration in Figure 1E showed no difference between normal and IPF lungs. However, the cellular behavior is affected by the what could matter is the local concentration of collagen, and the images in Figure 1 indicate that there is a heterogeneity in collagen density of collagen between different areas of the lung. Apparently, the AFM measurements were also taken in a single location. The heterogeneity of the diseased lung is an important factor, possibly even more important that the measured mean values. The authors should provide additional measurements that would address the issue of heterogeneity of the lung composition and stiffness.\n\n3) The authors downplayed the importance of immature as opposed to mature crosslinks on tissue stiffness. In Figure 3, it's surprising that the mature cross-links are so strongly associated with stiffness. Please explain and document if there is a relationship between stiffness and DHLNL alone. In Figure 5 I, J, immature crosslinks appear more important contributors to stiffness than the authors acknowledge in the text.\n\n4) Another important issue is collagen hydration, as it has large influence on both collagen stiffness (Yang et al., 2008) and collagen fibril diameter up to a max diameter after which it shows a plateau (Fratzl and Daxer. Biophys J 1993, 64, (4), 1210-4). The stress-strain curves of hydrated and dry fibrils are very different and the mechanism of molecular slippage and stretching within the fibrils depend on the hydration of the fibril (Gautieri et al., 2011). Thus, it is possible that the fibrotic lungs are dry compared to the normal lung which, next to cross-linking, also contributes significantly to the difference in stiffness. Notably, cross-linking could change collagen hydration and thereby have important contribution to stiffness. Even though hydration is touched upon in the discussion, it should be addressed in more detail.\n",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19aa74e8-d76c-4d4e-a9e8-dba513fa4e5d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C1",
+      "claim": "IPF tissue was significantly stiffer than control tissue at the micrometre-scale as measured by AFM cantilever-based microindentation.",
+      "claim_type": "EXPLICIT",
+      "source": "IPF tissue was significantly stiffer than control tissue (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AFM microindentation measurements comparing control (n=8) and IPF (n=10) donors shown in Figure 1A with statistical significance p<0.05",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "9a7b4501-1a18-4ee4-876c-3a9f0ec338ad",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C2",
+      "claim": "IPF tissue exhibits spatially heterogeneous changes in stiffness including highly localised areas of increased stiffness which were not present in control lung tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "with spatially heterogeneous changes in stiffness in IPF tissue including highly localised areas of increased stiffness which were not present in control lung tissue (Figure 1B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by elastograph images from AFM showing spatial variation in stiffness with coefficient of variation 74.6% in IPF vs 66.6% in control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "b95314fa-5fb0-44a9-8c63-732dfa383500",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C3",
+      "claim": "The spatial heterogeneity of stiffness in IPF tissue is consistent with the known histopathological heterogeneity of IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the known histopathological heterogeneity of IPF tissue (Raghu et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature on IPF histopathology",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "b61e4ef0-564a-4e8c-9d96-f8c054c62f2f",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C4",
+      "claim": "There was no significant difference in mean total collagen content between IPF and control tissue when normalized to dry weight.",
+      "claim_type": "EXPLICIT",
+      "source": "quantitation of total collagen concentration by hydroxyproline assay showed no difference in mean total collagen in IPF tissue relative to control tissue following normalisation to either dry weight or to total protein (Figure 1E and Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hydroxyproline assay data from control (n=15) and IPF (n=17) samples with p=0.70",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "c1b3fa02-1711-4b7e-a824-3df9ca91df8b",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C5",
+      "claim": "Lung tissue stiffness showed no dependence on collagen concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "no dependence of lung tissue stiffness on collagen concentration was found (Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing Spearman correlation coefficient r=0.16, p=0.52",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "b2b703ef-35cb-45e2-b309-f33717b9f49d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C6",
+      "claim": "mRNA expression levels of LOX and LOXL1 were unchanged in IPF tissue compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst mRNA expression levels of LOX and LOXL1 were unchanged (Figure 2A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from n=11 donors per group with LOX p=0.79 and LOXL1 p=0.22",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e0eb2352-e1e6-4853-9a8d-5cea183029e5",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C7",
+      "claim": "There were significant increases in the relative expression of LOXL2, LOXL3, and LOXL4 in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "there were significant increases in the relative expression of LOXL2, LOXL3, and LOXL4 (Figure 2C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from n=11 donors per group showing statistical significance p<0.05 for all three genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "0be5a695-6c63-4b3e-9579-3bc6fbe84708",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C8",
+      "claim": "Increased LOXL expression was associated with detection of increased amine oxidase activity in IPF lung tissue sections.",
+      "claim_type": "EXPLICIT",
+      "source": "This was associated with detection of increased amine oxidase activity in IPF lung tissue sections (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ amine oxidase activity assay data from control (n=5) and IPF (n=8) donors with p<0.05",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "112ce80d-3107-4268-a59c-0404229ddfff",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C9",
+      "claim": "Increased hydroxylation of telopeptide lysine residues by LH2/PLOD2 is proposed to be a general fibrotic phenomenon causing increased hydroxyallysine derived pyridinoline cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "with increased hydroxylation of telopeptide lysine residues by lysyl hydroxylase 2/procollagen lysine,2-oxoglutarate 5-dioxygenase 2 (LH2/PLOD2) proposed to be a general fibrotic phenomenon causing increased hydroxyallysine derived pyridinoline cross-links (Brinckmann et al., 1999; van der Slot et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on LH2/PLOD2 in fibrosis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "3ed27476-4085-47c2-8c61-c896caece485",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C10",
+      "claim": "There was increased expression of LH2 in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports of increased LH2 expression in fibrotic tissue (Brinckmann et al., 1999; van der Slot et al., 2003), we identified increased expression of LH2 in IPF tissue (Figure 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from n=11 donors per group with p<0.05, and consistent with cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "260f48b1-d4c4-4459-8029-af5e36944645",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C11",
+      "claim": "There was a significant increase in the density of immature divalent collagen cross-links in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a significant increase in the density of immature divalent (Figure 3C) and mature trivalent (Figure 3D) cross-links in IPF tissue",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by UHPLC-ESI-MS/MS analysis of DHLNL and HLNL from control (n=15) and IPF (n=17) donors with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "77fadaa2-b33e-4bb2-b08a-ab284202d3da",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C12",
+      "claim": "There was a significant increase in the density of mature trivalent collagen cross-links in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a significant increase in the density of immature divalent (Figure 3C) and mature trivalent (Figure 3D) cross-links in IPF tissue",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by UHPLC-ESI-MS/MS analysis of PYD and DPD from control (n=15) and IPF (n=17) donors with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "1b345712-02ee-4e19-a1e9-79dcf462a47a",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C13",
+      "claim": "There was an increase in the relative ratio of immature to mature cross-links in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "with an increase in the relative ratio of immature to mature cross-links in IPF tissue (Figure 3E) consistent with increased collagen metabolism in IPF tissue",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-link analysis data showing increased immature/mature ratio with statistical significance p<0.001",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a3d511ae-5938-42bb-8bcf-e7c81ef8ed3b",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C14",
+      "claim": "The increased ratio of immature to mature cross-links is consistent with increased collagen metabolism in IPF tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "with an increase in the relative ratio of immature to mature cross-links in IPF tissue (Figure 3E) consistent with increased collagen metabolism in IPF tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the interpretation that higher immature/mature ratio indicates active collagen turnover",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2fe2e7fe-951d-431a-a2fa-7c0a4004515d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C15",
+      "claim": "There was an increase in the DHLNL to HLNL ratio in IPF tissue consistent with increased lysyl hydroxylase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and an increase in the DHLNL to HLNL ratio (Figure 3F) consistent with increased lysyl hydroxylase activity",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-link analysis data showing increased DHLNL/HLNL ratio with p<0.001, interpreted as evidence of lysyl hydroxylase activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "feb295ec-b1b2-4c67-a079-476dbac2daad",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C16",
+      "claim": "Lung tissue stiffness showed no dependence on immature cross-link density.",
+      "claim_type": "EXPLICIT",
+      "source": "No dependence of lung tissue stiffness on immature cross-link density was found (Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing r=0.364, p=0.137",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "8c451c07-db12-404b-9b41-6e4292554ee5",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C17",
+      "claim": "A trend towards a correlation between tissue stiffness and DHLNL cross-link density alone was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "although a trend towards a correlation with DHLNL cross-link density alone was observed (correlation 0.41 p=0.09)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis showing borderline statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2201f9e0-f513-4b67-ac3b-3ccbf8fba467",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C18",
+      "claim": "Mature pyridinoline collagen cross-link density was strongly and significantly associated with increasing lung tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mature pyridinoline collagen cross-link density was strongly and significantly associated with increasing lung tissue stiffness (correlation 0.72 p=0.0007) (Figure 3H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing strong positive correlation r=0.72 with high statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "80076e56-b4c9-4bfe-9281-a41a490e17e1",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C19",
+      "claim": "In IPF lung tissue, differential expression of LH2 and LOXL-family members is associated with increased hydroxyallysine-derived pyridinoline collagen cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results identify that in IPF lung tissue, differential expression of LH2 and LOXL-family members is associated with increased hydroxyallysine-derived pyridinoline collagen cross-links and this, rather than collagen concentration, is a primary determinant of increased tissue stiffness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from combined gene expression and cross-link analysis data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "1bf8889e-7671-436c-9143-1a0fef2214d4",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C20",
+      "claim": "Increased hydroxyallysine-derived pyridinoline collagen cross-links, rather than collagen concentration, is a primary determinant of increased tissue stiffness in IPF.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results identify that in IPF lung tissue, differential expression of LH2 and LOXL-family members is associated with increased hydroxyallysine-derived pyridinoline collagen cross-links and this, rather than collagen concentration, is a primary determinant of increased tissue stiffness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on correlation analyses showing strong association between mature cross-links and stiffness but not between collagen content and stiffness",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e1021c99-8cf8-45cc-a05f-ff975a7cf04e",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C21",
+      "claim": "IPF collagen fibrils were stiffer than control lung collagen fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, IPF collagen fibrils were stiffer but exhibited a greater range of stiffness measurements compared with control lung collagen fibrils (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AFM nanoindentation data from control (n=42 fibrils from 8 donors) and IPF (n=57 fibrils from 10 donors) with p<0.0001",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "ad766d7a-7fdd-4862-9ca6-8827ddc9a259",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C22",
+      "claim": "IPF collagen fibrils exhibited a greater range of stiffness measurements compared with control lung collagen fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, IPF collagen fibrils were stiffer but exhibited a greater range of stiffness measurements compared with control lung collagen fibrils (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AFM nanoindentation data showing increased variance in IPF samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "17c79c57-a108-40ee-a3ba-a55e82c298ad",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C23",
+      "claim": "IPF collagen fibrils showed a skewed size distribution with a significantly smaller median diameter compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "They also showed a skewed size distribution with a significantly smaller median diameter (Figure 4D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AFM measurements of fibril diameter with p<0.001",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "ba79ae7c-308a-40d5-9423-861c07b435d5",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C24",
+      "claim": "IPF collagen fibrils had a lower fibril swelling ratio (hydrated to air) compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "and had a lower fibril swelling ratio (hydrated to air) (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AFM measurements comparing hydrated and dry fibril diameters with p<0.05",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e82fd76e-5e2a-4f14-a58c-fff8407552ad",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C25",
+      "claim": "In human lung fibrosis, perturbation of collagen homeostasis occurs at the nanometre-scale, with individual collagen fibrils being structurally and functionally abnormal.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify that in human lung fibrosis perturbation of collagen homeostasis occurs at the nanometre-scale, with individual collagen fibrils being structurally and functionally abnormal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on AFM nanoindentation data showing altered fibril stiffness, diameter, and swelling",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "5885fc82-1c9e-4e98-8a89-815ee46288b5",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C26",
+      "claim": "The 3D in vitro model shows a progressive increase in collagen content over 6 weeks of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 6 weeks of culture, the model shows a progressive increase in collagen content and mature collagen cross-links in association with expression of all LOX/LOXL family members (Figure 5A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hydroxyproline assay data at multiple time points from n=2 IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "5eb39abb-2e97-4d47-8e5a-95e8d33afcc4",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C27",
+      "claim": "The 3D in vitro model shows a progressive increase in mature collagen cross-links over 6 weeks of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 6 weeks of culture, the model shows a progressive increase in collagen content and mature collagen cross-links in association with expression of all LOX/LOXL family members (Figure 5A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-link analysis data at multiple time points from n=2 IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2e000108-852f-41ca-a8b4-ef9d465fd1e4",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C28",
+      "claim": "The 3D in vitro model shows expression of all LOX/LOXL family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 6 weeks of culture, the model shows a progressive increase in collagen content and mature collagen cross-links in association with expression of all LOX/LOXL family members (Figure 5A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data from n=3 IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "89be332a-6c7e-4f31-b83b-b8f213b95711",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C29",
+      "claim": "Histochemical staining of the 3D in vitro model tissue construct showed fibrillar collagen deposition similar to that seen in fibroblastic foci in IPF.",
+      "claim_type": "EXPLICIT",
+      "source": "histochemical staining of the resultant tissue construct showed fibrillar collagen deposition (Figure 5E) similar to that seen in fibroblastic foci, the site of active fibrogenesis in IPF (Figure 5F) (Jones et al., 2016)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Masson's trichrome staining images and citation to previous work on fibroblastic foci",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "bc58ee23-b97d-4ba9-8268-be7a0e087990",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C30",
+      "claim": "PXS-S2A is a dual LOXL2 and LOXL3-selective inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested a number of these compounds for inhibition of each LOX/LOXL family member, and identified that one of these inhibitors, PXS-S2A, which was previously reported as a LOXL2-selective inhibitor (Chang et al., 2017), is a dual LOXL2 and LOXL3-selective inhibitor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme inhibition assays showing IC50 values and comparison to previous literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f856d183-9058-4ad8-8384-a494367dbf2c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C31",
+      "claim": "PXS-S2A irreversibly inhibits LOXL2 and LOXL3 with IC50 values of 0.005 \u03bcM and 0.016 \u03bcM respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PXS-S2A irreversibly inhibits LOXL2 and LOXL3 (IC500.005 \u03bcM and 0.016 \u03bcM respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme inhibition assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "ef12a5b5-ad0d-4b53-8fc6-c4411cc3a559",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C32",
+      "claim": "PXS-S2A is reversible and more than a hundred times less potent for inhibition of LOX and LOXL1 compared to LOXL2 and LOXL3.",
+      "claim_type": "EXPLICIT",
+      "source": "but is reversible and more than a hundred times less potent for inhibition of LOX and LOXL1 (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme inhibition curves showing differential potency",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2b7524f7-bb17-49c1-8880-654a4584380c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C33",
+      "claim": "PXS-S2A caused a dose-dependent inhibition of collagen cross-links in the in vitro model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the inhibitor in the in vitro model, we observed a dose-dependent inhibition of collagen cross-links (Figure 6B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS and ELISA data from n=3 IPF donors showing dose-response relationship",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e42f4669-a848-4bfb-8a57-55d1d7b96c99",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C34",
+      "claim": "0.1 \u03bcM PXS-S2A caused a greater than 50% reduction in mature pyridinoline cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "with a greater than 50% reduction in mature pyridinoline cross-links (Figure 6D) with 0.1 \u03bcM PXS-S2A, a concentration which completely inhibits LOXL2 and LOXL3 but has minimal effects on LOX and LOXL1 (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ELISA data showing >50% reduction at LOXL2/LOXL3-selective dose",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "764e5e07-7c4d-4d24-bef4-5c00b7d6f825",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C35",
+      "claim": "At 10 \u03bcM, PXS-S2A achieved a reduction in cross-links comparable to BAPN.",
+      "claim_type": "EXPLICIT",
+      "source": "At a pan LOX/LOXL inhibitory concentration of 10 \u03bcM, the reduction in cross-links was comparable to that observed with \u03b2-aminoproprionitrile (BAPN), a non-selective LOX/LOXL inhibitor (Trackman, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-link analysis data comparing PXS-S2A at 10 \u03bcM to BAPN, with citation to BAPN literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "284b9557-e40c-4913-aace-c6b82e7a51dc",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C36",
+      "claim": "No reduction in total collagen content was observed following treatment with PXS-S2A or BAPN.",
+      "claim_type": "EXPLICIT",
+      "source": "No reduction in total collagen content was observed following treatment with PXS-S2A or BAPN (Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hydroxyproline assay data from n=3 IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "0618ced4-c6c1-4f91-8f77-07d4537b29c2",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C37",
+      "claim": "The LOXL2/LOXL3 inhibitor dose-dependently reduced tissue stiffness as measured by Young's modulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The LOXL2/LOXL3 inhibitor dose-dependently reduced tissue stiffness as measured by Young's modulus, achieving maximal inhibition of stiffness as compared with BAPN at a pan LOX/LOXL inhibitory concentration of 10 \u03bcM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by parallel plate compression testing data from n=3 IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "885392a2-9498-4bc8-9332-e0de09cdf1ec",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C38",
+      "claim": "Almost 70% of maximal reduction in stiffness was achieved at 0.1 \u03bcM PXS-S2A which is selective for LOXL2/LOXL3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, almost 70% of maximal reduction in stiffness (as compared with BAPN) was already achieved at 0.1 \u03bcM PXS-S2A which is selective for LOXL2/LOXL3 (Figure 6F and G, Figure 6\u2014figure supplement 1, and Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by parallel plate compression testing data showing substantial effect at LOXL2/LOXL3-selective dose",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "c75cfffe-cd83-4d70-a834-c658ff9683ad",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C39",
+      "claim": "Inhibition of LOXL2/LOXL3 is sufficient to achieve a substantial reduction in tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that inhibition of LOXL2/LOXL3 is sufficient to achieve a substantial reduction in tissue stiffness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the finding that 70% of maximal effect was achieved at LOXL2/LOXL3-selective dose",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a2ee3d08-14f9-4c12-847a-6a78c13f7119",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C40",
+      "claim": "In the in vitro model, tissue stiffness showed no dependency on collagen content.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the IPF tissue findings, stiffness showed no dependency on collagen content (Figure 6H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing r=-0.0272, p=0.873",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "483c0c49-4323-4e58-8658-2556f009604c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C41",
+      "claim": "In the in vitro model, tissue stiffness correlated positively with immature collagen cross-link density.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst it correlated positively with collagen cross-link density including both immature (Figure 6I) and mature pyridinoline cross-links (Figure 6J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing r=0.532, p=0.0007",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f31d5415-9d0a-4bf5-80ed-8932ac4d9124",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C42",
+      "claim": "In the in vitro model, tissue stiffness correlated positively with mature pyridinoline cross-link density.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst it correlated positively with collagen cross-link density including both immature (Figure 6I) and mature pyridinoline cross-links (Figure 6J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis showing r=0.753, p<0.0001",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "9ebee442-4873-4b31-af7b-b13f70fbc8e4",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C43",
+      "claim": "Pyridinoline cross-link density is a significant determinant of tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data identify pyridinoline cross-link density to be a significant determinant of tissue stiffness and identify LOXL2/LOXL3 enzyme activities as essential contributors to this process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on correlation analyses and inhibitor studies",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "50143f5d-8c57-4f4f-ab20-978f5f2bb5fd",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C44",
+      "claim": "LOXL2/LOXL3 enzyme activities are essential contributors to tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data identify pyridinoline cross-link density to be a significant determinant of tissue stiffness and identify LOXL2/LOXL3 enzyme activities as essential contributors to this process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on selective inhibitor studies showing substantial reduction in stiffness with LOXL2/LOXL3 inhibition",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "0078a00b-e786-4400-b53d-2989480e2ef0",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C45",
+      "claim": "At 0.1 \u03bcM PXS-S2A, a 12.3% mean increase in fibril diameter was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At 0.1 \u03bcM PXS-S2A, a 12.3% mean increase in fibril diameter was observed (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transmission electron microscopy measurements of 300 fibrils per treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "347125c0-b63f-4230-adb9-1695e1ed5912",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C46",
+      "claim": "The 12.3% increase in fibril diameter with 0.1 \u03bcM PXS-S2A is comparable with the 18% difference in fibril size observed comparing control and IPF collagen fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "comparable with the 18% difference in fibril size observed in our AFM analyses comparing control and IPF collagen fibrils",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference comparing the magnitude of effects between different experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d63b7e04-51c3-477d-99ba-731c60629830",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C47",
+      "claim": "Complete LOX/LOXL inhibition using BAPN caused a broadening of fibril diameter distribution and marked dysregulation of fibril structure including irregular profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "however, with complete LOX/LOXL inhibition using BAPN there was a broadening of fibril diameter distribution and a marked dysregulation of fibril structure including irregular profiles (Figure 7B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transmission electron microscopy images and diameter measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a135b378-5fa2-4b34-ba87-3df0d827852d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C48",
+      "claim": "BAPN markedly increased collagen solubility, with only 14% of the total collagen remaining insoluble after proteolytic digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with this, BAPN markedly increased collagen solubility, with only 14% of the total collagen remaining insoluble after proteolytic digestion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequential collagen extraction and hydroxyproline assay data from two IPF donors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "ee74facd-0c73-42b8-8dff-b23039093732",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C49",
+      "claim": "With 0.1 \u03bcM PXS-S2A only a small increase in collagen solubility was observed suggesting that inhibition of LOXL2/LOXL3 did not significantly disrupt fibril stability.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst with 0.1 \u03bcM PXS-S2A only a small increase in collagen solubility was observed suggesting that inhibition of LOXL2/LOXL3 did not significantly disrupt fibril stability (Figure 7D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by collagen solubility assay data and inference about fibril stability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "3906177c-24fd-4850-b1aa-82cac589e115",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C50",
+      "claim": "LOX/LOXL activity is an essential regulator of collagen fibril assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results identify that LOX/LOXL activity is an essential regulator of collagen fibril assembly and that selective LOXL2/LOXL3 inhibition is sufficient to significantly reduce tissue stiffness and normalise collagen fibril architecture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the effects of LOX/LOXL inhibition on fibril structure and stability",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "bcf716e3-d246-4cbf-9fc9-03ca13aad6f8",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C51",
+      "claim": "Selective LOXL2/LOXL3 inhibition is sufficient to significantly reduce tissue stiffness and normalise collagen fibril architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results identify that LOX/LOXL activity is an essential regulator of collagen fibril assembly and that selective LOXL2/LOXL3 inhibition is sufficient to significantly reduce tissue stiffness and normalise collagen fibril architecture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on combined data from stiffness measurements, fibril diameter analysis, and solubility assays",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "c72c23bd-ebf7-4da6-842f-ad71d923af08",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C52",
+      "claim": "PXS-S3B is an orally bioavailable small molecule inhibitor with IC50 values of 0.008 \u03bcM and 0.020 \u03bcM for LOXL2 and LOXL3.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend our in vitro studies, the efficacy of an orally bioavailable small molecule inhibitor (PXS-S3B, IC500.008 \u03bcM and 0.020 \u03bcM for LOXL2 and LOXL3, compared with 0.118 \u03bcM, 1.130 \u03bcM and 1.710 \u03bcM for LOXL4, LOX and LOXL1 respectively) was then assessed at LOXL2/LOXL3-selective doses in an experimental animal model of lung fibrosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme inhibition assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "12fb6b88-8673-48a4-8bf3-408738faa277",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C53",
+      "claim": "The effect of PXS-S3B on collagen cross-linking and tissue stiffness was comparable to PXS-S2A in the 3D in vitro model.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments using the 3D in vitro model of fibrosis confirmed the effect of PXS-S3B on collagen cross-linking and tissue stiffness was comparable to PXS-S2A (Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-link analysis and parallel plate compression testing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "98456fda-fd1a-43e4-adac-e9fc90e2ac65",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C54",
+      "claim": "There was no effect of PXS-S3B on total collagen content of the lungs in the AdTGF-\u03b21 rat model.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no effect of PXS-S3B on total collagen content of the lungs (Figure 8A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hydroxyproline assay data from rat lungs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d0791338-3303-48f7-ae63-95034c9412d8",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C55",
+      "claim": "PXS-S3B treatment resulted in a significant reduction in fibrosis compared to vehicle-treated AdTGF-\u03b21 rats, as assessed by modified Ashcroft scores.",
+      "claim_type": "EXPLICIT",
+      "source": "but there was a significant reduction in fibrosis compared to vehicle-treated AdTGF-\u03b21 rats, as assessed by modified Ashcroft scores (Figure 8B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological scoring data from rat lungs with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "6c01ec07-c780-4159-a01d-5924550803c9",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C56",
+      "claim": "PXS-S3B treatment resulted in a significant improvement in lung function at day 28.",
+      "claim_type": "EXPLICIT",
+      "source": "and a significant improvement in lung function (i.e. a reduction in lung stiffness as measured by pressure-driven pressure volume-loops and elastance) at day 28 (Figure 8D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FlexiVent lung function measurements showing reduced elastance with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "34ca23e7-da87-448a-8126-bbfabb44d1f0",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C57",
+      "claim": "The improvement in lung function with PXS-S3B treatment reflects the in vitro finding that LOXL2/LOXL3 inhibition reduces tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "reflecting our in vitro finding that LOXL2/LOXL3 inhibition reduces tissue stiffness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting in vivo and in vitro findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "5ee3be84-35a2-4003-81c0-cb6cd5fba6e6",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C58",
+      "claim": "PXS-S3B treatment was accompanied by a reduction in mature pyridinoline collagen cross-links compared with the AdTGF-\u03b2-treated rats.",
+      "claim_type": "EXPLICIT",
+      "source": "This was accompanied by a reduction in mature pyridinoline collagen cross-links compared with the AdTGF-\u03b2-treated rats (Figure 8F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS analysis of PYD and DPD cross-links from rat lungs with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "054b9a25-3a03-4460-a356-0248aa37780c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C59",
+      "claim": "PXS-S3B treatment resulted in a reduction in immature (DHLNL + HLNL) cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as immature (DHLNL + HLNL) cross-links (Figure 8H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS analysis from rat lungs with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "252e653a-5de1-4673-a578-18549c987d35",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C60",
+      "claim": "The DHLNL:HLNL ratio was reduced in the PXS-S3B treated rats suggesting a reduction in lysine hydroxylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also determined that the DHLNL:HLNL ratio was reduced in the treated rats suggesting a reduction in lysine hydroxylation (Figure 8I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LC-MS analysis and inference about lysine hydroxylation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d564233f-8de3-4b6c-bbdb-2aa13bb27a66",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C61",
+      "claim": "Analysis of mRNA expression in the lungs of animals treated with LOXL2/LOXL3 inhibitor revealed a decrease in LH2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, analysis of mRNA expression in the lungs of animals treated with LOXL2/LOXL3 inhibitor, revealed a decrease in LH2, which is required for telopeptide hydroxyallysine-derived cross-links",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis from rat lungs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "80d26074-0ebe-43d6-ba6c-1a2fe462898c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C62",
+      "claim": "Expression of modulators of fibrillogenesis including collagen V, TGM2, dermatopontin, fibulin, fibrillin, and periostin were reduced with LOXL2/LOXL3 inhibitor treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, expression of other modulators of fibrillogenesis including collagen V, TGM2, dermatopontin, fibulin, fibrillin, and periostin (Figure 8J) were reduced",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analysis shown in heat map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "472185e4-8cf3-4ccd-b63c-8fd9924dd0f1",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C63",
+      "claim": "Inhibition of LOXL2/LOXL3 not only modifies collagen cross-linking but also modulates fibrillar collagen homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inhibition of LOXL2/LOXL3 not only modifies collagen cross-linking but also modulates fibrillar collagen homeostasis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed changes in multiple fibrillogenesis-related genes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f68431d7-fd6d-4fbc-957b-407ad297e4d5",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C64",
+      "claim": "No adverse effects of treatment with the LOXL2/LOXL3 inhibitor were evident in the rat model.",
+      "claim_type": "EXPLICIT",
+      "source": "No adverse effects of treatment with the LOXL2/LOXL3 inhibitor were evident in the model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the animal study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f63f566d-0df1-49de-bdf9-cec12e5d8de7",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C65",
+      "claim": "Altered collagen architecture is a key determinant of abnormal ECM structure-function in human lung fibrosis at time of diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this integrated study identifies that altered collagen architecture is a key determinant of abnormal ECM structure-function in human lung fibrosis at time of diagnosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference based on the integrated findings from human tissue analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "3e75337c-dc4b-4da5-8659-046cd3e29f4a",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C66",
+      "claim": "Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalises collagen morphology, reduces tissue stiffness, and improves lung function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "50ce045f-a848-40be-b928-186916526eea",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C67",
+      "claim": "Dual inhibition of LOXL2 and LOXL3 normalises collagen morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalises collagen morphology, reduces tissue stiffness, and improves lung function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from electron microscopy and AFM studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "91ffd4cc-411a-4940-b0b3-d6d9295b4e09",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C68",
+      "claim": "Dual inhibition of LOXL2 and LOXL3 reduces tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalises collagen morphology, reduces tissue stiffness, and improves lung function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from parallel plate compression testing and in vivo lung function measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "1f94fb18-9b93-4be1-819b-6c9ccd84f45d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C69",
+      "claim": "Dual inhibition of LOXL2 and LOXL3 improves lung function.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalises collagen morphology, reduces tissue stiffness, and improves lung function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from in vivo rat model lung function measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "367e2533-8a96-4082-b629-e862d97e660a",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C70",
+      "claim": "Targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and prevent persistent mechanosensitive cellular activation and fibrosis progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and so prevent persistent mechanosensitive cellular activation and fibrosis progression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on the study findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d45156c9-2c3c-40f6-a935-61f3251a06fa",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C71",
+      "claim": "Matrix stiffening with downstream activation of mechanosensitive pathways is strongly implicated in progressive fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Matrix stiffening with downstream activation of mechanosensitive pathways is strongly implicated in progressive fibrosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established scientific understanding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "00ed1f88-464e-4371-9791-2bb55bf3cc1b",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C72",
+      "claim": "Pathologic changes in extracellular matrix (ECM) that initiate mechano-homeostasis dysregulation are not defined in human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "however, pathologic changes in extracellular matrix (ECM) that initiate mechano-homeostasis dysregulation are not defined in human disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement identifying a knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "26025db7-f35c-476e-aec5-f59195fa4e40",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C73",
+      "claim": "Increased tissue stiffness in IPF is a function of dysregulated post-translational collagen cross-linking rather than any collagen concentration increase.",
+      "claim_type": "EXPLICIT",
+      "source": "By integrated multiscale biomechanical and biological analyses of idiopathic pulmonary fibrosis lung tissue, we identify that increased tissue stiffness is a function of dysregulated post-translational collagen cross-linking rather than any collagen concentration increase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of key finding from the integrated analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2ff0ec2b-b878-458d-b2b0-2fda552bd69e",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C74",
+      "claim": "At the nanometre-scale collagen fibrils in IPF are structurally and functionally abnormal with increased stiffness, reduced swelling ratio, and reduced diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst at the nanometre-scale collagen fibrils are structurally and functionally abnormal with increased stiffness, reduced swelling ratio, and reduced diameter",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of AFM nanoindentation findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f688e95e-91c0-4b91-bb6b-9204e707003e",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C75",
+      "claim": "In ex vivo and animal models of lung fibrosis, dual inhibition of LOXL2 and LOXL3 was sufficient to normalise collagen fibrillogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In ex vivo and animal models of lung fibrosis, dual inhibition of lysyl oxidase-like (LOXL) 2 and LOXL3 was sufficient to normalise collagen fibrillogenesis, reduce tissue stiffness, and improve lung function in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "1b5c88e7-a9d2-4afe-9627-2052f21fc4ee",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C76",
+      "claim": "In ex vivo and animal models of lung fibrosis, dual inhibition of LOXL2 and LOXL3 was sufficient to reduce tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "In ex vivo and animal models of lung fibrosis, dual inhibition of lysyl oxidase-like (LOXL) 2 and LOXL3 was sufficient to normalise collagen fibrillogenesis, reduce tissue stiffness, and improve lung function in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from in vitro and in vivo studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "5aace124-df6e-411a-87f9-53eee37bbdd1",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C77",
+      "claim": "In ex vivo and animal models of lung fibrosis, dual inhibition of LOXL2 and LOXL3 was sufficient to improve lung function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In ex vivo and animal models of lung fibrosis, dual inhibition of lysyl oxidase-like (LOXL) 2 and LOXL3 was sufficient to normalise collagen fibrillogenesis, reduce tissue stiffness, and improve lung function in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from in vivo rat model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "1b69846d-a70d-4db6-b939-8111a7da911f",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C78",
+      "claim": "In human fibrosis, altered collagen architecture is a key determinant of abnormal ECM structure-function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in human fibrosis, altered collagen architecture is a key determinant of abnormal ECM structure-function, and inhibition of pyridinoline cross-linking can maintain mechano-homeostasis to limit the self-sustaining effects of ECM on progressive fibrosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the integrated study",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "bc8c1e4b-cfef-4a73-b7fe-9713825a057e",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C79",
+      "claim": "Inhibition of pyridinoline cross-linking can maintain mechano-homeostasis to limit the self-sustaining effects of ECM on progressive fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in human fibrosis, altered collagen architecture is a key determinant of abnormal ECM structure-function, and inhibition of pyridinoline cross-linking can maintain mechano-homeostasis to limit the self-sustaining effects of ECM on progressive fibrosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on the study findings about the therapeutic potential",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "4b0465cc-49df-49b4-956d-5ab13b8c7889",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C80",
+      "claim": "IPF is considered the prototypic chronic progressive fibrotic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the lung, idiopathic pulmonary fibrosis (IPF) is considered the prototypic chronic progressive fibrotic disease (Raghu et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established medical knowledge with citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a427dcb9-8f26-48bc-8e96-5fa2ea0ec009",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C81",
+      "claim": "IPF has a median survival of less than 3 years from diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment options are limited, and with a median survival of less than 3 years from diagnosis, more effective therapies are urgently needed (Richeldi et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of clinical prognosis with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "3354d78f-9367-4788-b801-3ce16db69dff",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C82",
+      "claim": "IPF is thought to result from repetitive micro-injuries to the alveolar epithelium promoting fibroblast differentiation into ECM-producing myofibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the exact mechanisms of progressive lung fibrosis are uncertain, IPF is thought to result from repetitive micro-injuries to the alveolar epithelium promoting fibroblast differentiation into extracellular matrix (ECM)-producing myofibroblasts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of current understanding of IPF pathogenesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "8ac2a8f1-0ce6-4f7a-9e95-637c10abe093",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C83",
+      "claim": "Persistent myofibroblast activation results in ECM deposition which eventually destroys normal alveolar architecture and disrupts gas exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent myofibroblast activation results in ECM deposition which eventually destroys normal alveolar architecture and disrupts gas exchange (Kirk et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of disease mechanism with citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d265ba19-479c-44e4-b62d-580dd2bfc8f8",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C84",
+      "claim": "Fibrillar collagens are a major component of lung ECM that form a scaffold to support tissue architecture and are a primary determinant of tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibrillar collagens are a major component of lung ECM that form a scaffold to support tissue architecture and are a primary determinant of tissue stiffness (Senior et al., 1975; White, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about collagen with citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "8bdc4928-6cd7-4735-8039-0b2668606f73",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C85",
+      "claim": "Oxidative deamination of lysine or hydroxylysine initiates cross-linking reactions that are essential to stabilise the supramolecular assembly of collagen and produce stable collagen fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidative deamination of lysine or hydroxylysine initiates cross-linking reactions that are essential to stabilise the supramolecular assembly of collagen and produce stable collagen fibrils (Shoulders and Raines, 2009; Kadler et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of biochemical mechanism with citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "81e56afb-ede1-47d8-b373-d2645c8d95be",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C86",
+      "claim": "The lysyl oxidase (LOX) enzymes are a family of five secreted copper-dependent amine oxidases (LOX and LOXL1 to 4) that are responsible for post-translational modification of collagen in the ECM to initiate covalent cross-linking.",
+      "claim_type": "EXPLICIT",
+      "source": "The lysyl oxidase (LOX) enzymes are a family of five secreted copper-dependent amine oxidases (LOX and LOX-like (LOXL) 1 to 4) that are responsible for post-translational modification of collagen in the ECM to initiate covalent cross-linking",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "142c3bd4-b6aa-4a72-8cc5-ab9e59b156ca",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C87",
+      "claim": "LOX family members have been implicated as possible therapeutic targets in cancers and fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "LOX family members have been implicated as possible therapeutic targets in cancers and fibrosis (Trackman, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of therapeutic potential with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "2360b99a-599d-470c-9523-d0e184b920a2",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C88",
+      "claim": "The type of LOX/LOXL mediated collagen cross-link is determined by the hydroxylation of telopeptidyl and helical lysine residues in collagen prior to cross-link formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The type of LOX/LOXL mediated collagen cross-link is determined by the hydroxylation of telopeptidyl and helical lysine residues in collagen prior to cross-link formation (Yamauchi and Sricholpech, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of biochemical mechanism with citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "f2278e78-e1a8-496c-ad56-90b40bda53ae",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C89",
+      "claim": "Both ECM amount and altered post-translational modifications are postulated to increase matrix stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ECM amount and altered post-translational modifications are postulated to increase matrix stiffness and this stiffening has been proposed to induce self-sustaining mesenchymal cell activation and progressive fibrosis in a positive feedback loop (Wipff et al., 2007; Liu et al., 2010; Zhou et al., 2013; Booth et al., 2012; Chen et al., 2016; Parker et al., 2014; Shi et al., 2011; Liu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of proposed mechanism with multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "c7b2005a-81b5-4b69-9534-8ac13f588d1f",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C90",
+      "claim": "Matrix stiffening has been proposed to induce self-sustaining mesenchymal cell activation and progressive fibrosis in a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ECM amount and altered post-translational modifications are postulated to increase matrix stiffness and this stiffening has been proposed to induce self-sustaining mesenchymal cell activation and progressive fibrosis in a positive feedback loop (Wipff et al., 2007; Liu et al., 2010; Zhou et al., 2013; Booth et al., 2012; Chen et al., 2016; Parker et al., 2014; Shi et al., 2011; Liu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of proposed mechanism with multiple citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e2f98a62-5f60-4276-8145-aeae990dcc44",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C91",
+      "claim": "The specific changes in ECM structure and function that disrupt mechano-homeostasis have not been defined in human fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst there is a growing understanding of mechanosensitive cellular pathways that are activated by increased ECM stiffness, the specific changes in ECM structure and function that disrupt mechano-homeostasis have not been defined in human fibrosis (Burgstaller et al., 2017; Tschumperlin et al., 2018; Herrera et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement identifying knowledge gap with citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "265d3929-8f72-468f-855c-6d85fe21ee07",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C92",
+      "claim": "At the time of diagnosis, in human lung fibrosis tissue altered collagen architecture rather than collagen concentration is a key determinant of abnormal ECM structure-function.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify that, at the time of diagnosis, in human lung fibrosis tissue altered collagen architecture rather than collagen concentration is a key determinant of abnormal ECM structure-function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the study findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e06a4aa8-1d3d-489a-ab93-bab72bf28647",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "claim_id": "C93",
+      "claim": "Targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and prevent persistent mechanosensitive cellular activation and fibrosis progression.",
+      "claim_type": "EXPLICIT",
+      "source": "and that targeting pathways which dysregulate collagen architecture may restore ECM homeostasis and so prevent persistent mechanosensitive cellular activation and fibrosis progression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion about therapeutic potential",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d36c2e29-9157-4e5e-8e73-80852e7f2595",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IPF tissue exhibits significantly increased stiffness at the micrometre-scale compared to control tissue, with spatially heterogeneous changes including highly localized areas of increased stiffness consistent with known IPF histopathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by AFM microindentation data from adequate sample sizes (n=8 control, n=10 IPF) with statistical significance (p<0.05), elastograph images showing spatial heterogeneity, and appropriate citation to established IPF histopathology literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "081a05be-f1e6-4934-8fd1-f2e1f2308975",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Total collagen content does not differ between IPF and control tissue, and tissue stiffness shows no dependence on collagen concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by hydroxyproline assay data from adequate sample sizes (n=15 control, n=17 IPF) with non-significant p-values (p=0.70) and correlation analysis showing no relationship between stiffness and collagen content (r=0.16, p=0.52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "8c7ca0c5-741c-4254-a468-3d203171c6bf",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IPF tissue shows differential expression of LOXL family members, with unchanged LOX and LOXL1 but significantly increased LOXL2, LOXL3, and LOXL4 expression, associated with increased amine oxidase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by qPCR data from n=11 donors per group with appropriate statistical testing and in situ amine oxidase activity assay data (n=5 control, n=8 IPF) showing significant differences (p<0.05).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "eb8992d1-20b5-4658-b4f0-88175369becc",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IPF tissue exhibits increased LH2 expression and elevated densities of both immature and mature hydroxyallysine-derived collagen cross-links, with increased immature/mature ratio and DHLNL/HLNL ratio consistent with increased collagen metabolism and lysyl hydroxylase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 are supported by qPCR data (n=11 per group), UHPLC-ESI-MS/MS cross-link analysis (n=15 control, n=17 IPF) with statistical significance, and appropriate citations to prior literature on LH2/PLOD2 in fibrosis. The interpretations about collagen metabolism and lysyl hydroxylase activity are reasonable inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mature pyridinoline collagen cross-link density, rather than collagen concentration or immature cross-links, is strongly and significantly associated with increased tissue stiffness in IPF, representing a primary determinant of tissue stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 are supported by correlation analyses showing no relationship with immature cross-links (r=0.364, p=0.137) but strong correlation with mature cross-links (r=0.72, p=0.0007). The conclusion that mature cross-links are a primary determinant is a reasonable inference from the combined data, though causality cannot be definitively established from correlation alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual collagen fibrils from IPF tissue are structurally and functionally abnormal at the nanometre-scale, exhibiting increased stiffness, greater range of stiffness measurements, smaller median diameter, and lower swelling ratio compared to control fibrils.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by AFM nanoindentation data from adequate sample sizes (n=42 control fibrils from 8 donors, n=57 IPF fibrils from 10 donors) with highly significant differences (p<0.0001 for stiffness, p<0.001 for diameter, p<0.05 for swelling). The conclusion about nanoscale perturbation is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "bef811f4-35f6-4112-807e-64d41e6e7181",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A 3D in vitro model using IPF fibroblasts shows progressive increases in collagen content and mature cross-links over 6 weeks, with expression of all LOX/LOXL family members and fibrillar collagen deposition similar to fibroblastic foci in IPF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26-C29 are based on limited sample sizes (n=2 IPF donors for collagen/cross-link data, n=3 for gene expression), which is insufficient to establish robust conclusions. While the model appears to recapitulate some features of IPF, the small sample size and lack of statistical testing for the time-course data limit confidence in these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "277085c7-2d2f-4f70-867e-9b619617d1d6",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PXS-S2A is a dual LOXL2 and LOXL3-selective inhibitor that irreversibly inhibits LOXL2 and LOXL3 with IC50 values of 0.005 \u03bcM and 0.016 \u03bcM respectively, but is reversible and >100-fold less potent for LOX and LOXL1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by enzyme inhibition assay data showing IC50 values and selectivity profiles. The characterization appears thorough with appropriate comparison to previous literature identifying PXS-S2A as LOXL2-selective, now extended to show LOXL2/LOXL3 dual selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "d2854ccc-f22e-4c52-bf0d-71c0ad4a1a87",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PXS-S2A causes dose-dependent inhibition of collagen cross-links in the in vitro model, with >50% reduction in mature pyridinoline cross-links at 0.1 \u03bcM (LOXL2/LOXL3-selective dose) and comparable reduction to BAPN at 10 \u03bcM, without affecting total collagen content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by LC-MS and ELISA data from n=3 IPF donors showing dose-response relationships with appropriate statistical testing. The finding that collagen content is unchanged while cross-links are reduced is important for interpreting the mechanism of action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "7dbf397b-2e36-47cf-afbd-d1d213c6b792",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LOXL2/LOXL3 inhibition dose-dependently reduces tissue stiffness in the in vitro model, with ~70% of maximal reduction achieved at 0.1 \u03bcM PXS-S2A (LOXL2/LOXL3-selective dose), suggesting that inhibition of LOXL2/LOXL3 is sufficient for substantial stiffness reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by parallel plate compression testing data from n=3 IPF donors. The conclusion that LOXL2/LOXL3 inhibition is sufficient is a reasonable inference from the dose-response data, though the small sample size (n=3) is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "345fdaaa-a683-4712-b17f-c27bb10559d6",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the in vitro model, tissue stiffness shows no dependency on collagen content but correlates positively with both immature and mature collagen cross-link density, identifying pyridinoline cross-link density and LOXL2/LOXL3 enzyme activities as significant determinants of tissue stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by correlation analyses showing no relationship with collagen content (r=-0.0272, p=0.873) but positive correlations with immature (r=0.532, p=0.0007) and mature (r=0.753, p<0.0001) cross-links. The conclusions are reasonable inferences from the combined inhibitor and correlation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a7223c7c-4a7d-4825-9499-83fbadcc7162",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Selective LOXL2/LOXL3 inhibition at 0.1 \u03bcM PXS-S2A increases fibril diameter by 12.3% (comparable to the 18% difference between control and IPF fibrils) with minimal effect on collagen solubility, while pan-LOX/LOXL inhibition with BAPN causes marked dysregulation of fibril structure and greatly increased collagen solubility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by transmission electron microscopy data (300 fibrils per treatment) and collagen solubility assays. The comparison between selective and pan-inhibition is informative, though the solubility data is from only two IPF donors, which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "7f9b91aa-1b4a-4d50-b522-430191b9beca",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LOX/LOXL activity is an essential regulator of collagen fibril assembly, and selective LOXL2/LOXL3 inhibition is sufficient to significantly reduce tissue stiffness and normalize collagen fibril architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are reasonable inferences from the combined data on fibril structure, stiffness, and solubility following selective versus pan-inhibition. The evidence supports the conclusion that selective LOXL2/LOXL3 inhibition can normalize fibril architecture while pan-inhibition disrupts it.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "fcbabef3-6c3a-4310-beb1-1d30df086c80",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PXS-S3B is an orally bioavailable LOXL2/LOXL3-selective inhibitor with IC50 values of 0.008 \u03bcM and 0.020 \u03bcM for LOXL2 and LOXL3, with effects on collagen cross-linking and tissue stiffness comparable to PXS-S2A in the 3D in vitro model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by enzyme inhibition assay data and in vitro model validation data. The characterization of PXS-S3B as comparable to PXS-S2A is important for translating the in vitro findings to the in vivo model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In the AdTGF-\u03b21 rat model of lung fibrosis, PXS-S3B treatment reduced fibrosis (by Ashcroft score), improved lung function, and reduced both mature and immature collagen cross-links without affecting total collagen content, accompanied by decreased expression of LH2 and other fibrillogenesis modulators, with no adverse effects observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C64 are supported by data from the rat model with adequate group sizes (n=6-9 per group), appropriate statistical testing, and multiple complementary endpoints (histology, lung function, cross-link analysis, gene expression). The findings are internally consistent and support the therapeutic potential of LOXL2/LOXL3 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "a60efca2-417d-4eaf-9259-3def869cdefa",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Altered collagen architecture is a key determinant of abnormal ECM structure-function in human lung fibrosis at diagnosis, and dual inhibition of LOXL2 and LOXL3 reduces pathological pyridinoline cross-links, normalizes collagen morphology, reduces tissue stiffness, and improves lung function, suggesting that targeting pathways dysregulating collagen architecture may restore ECM homeostasis and prevent fibrosis progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 represent summary conclusions from the integrated study. The evidence from human tissue analysis, in vitro models, and in vivo studies collectively supports these conclusions, though C70 is somewhat speculative about future therapeutic potential. The overall narrative is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "44a25902-6a04-455e-94c8-0a4e541e4bd4",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge claims about IPF pathogenesis, collagen biology, LOX/LOXL enzymes, and the role of matrix stiffening in fibrosis, including identification of knowledge gaps regarding specific ECM changes that disrupt mechano-homeostasis in human fibrosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C80-C91 represent established knowledge and identification of knowledge gaps, appropriately supported by citations to relevant literature. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    },
+    {
+      "id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e",
+      "content_id": "54bc6d61-f575-47e2-8713-cdf938b2590e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Summary claims that increased tissue stiffness in IPF is due to dysregulated collagen cross-linking rather than collagen concentration, that collagen fibrils are abnormal at the nanoscale, that dual LOXL2/LOXL3 inhibition is sufficient to normalize fibrillogenesis and improve function, and that targeting collagen architecture dysregulation may restore ECM homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79 and C92-C93 represent summary statements of the main findings. These are well-supported by the collective evidence from the study, though some statements (particularly C79 and C93) are somewhat speculative about therapeutic implications and future directions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:18:45.688093Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19aa74e8-d76c-4d4e-a9e8-dba513fa4e5d",
+      "result_id": "d36c2e29-9157-4e5e-8e73-80852e7f2595"
+    },
+    {
+      "claim_id": "9a7b4501-1a18-4ee4-876c-3a9f0ec338ad",
+      "result_id": "d36c2e29-9157-4e5e-8e73-80852e7f2595"
+    },
+    {
+      "claim_id": "b95314fa-5fb0-44a9-8c63-732dfa383500",
+      "result_id": "d36c2e29-9157-4e5e-8e73-80852e7f2595"
+    },
+    {
+      "claim_id": "b61e4ef0-564a-4e8c-9d96-f8c054c62f2f",
+      "result_id": "081a05be-f1e6-4934-8fd1-f2e1f2308975"
+    },
+    {
+      "claim_id": "c1b3fa02-1711-4b7e-a824-3df9ca91df8b",
+      "result_id": "081a05be-f1e6-4934-8fd1-f2e1f2308975"
+    },
+    {
+      "claim_id": "b2b703ef-35cb-45e2-b309-f33717b9f49d",
+      "result_id": "8c7ca0c5-741c-4254-a468-3d203171c6bf"
+    },
+    {
+      "claim_id": "e0eb2352-e1e6-4853-9a8d-5cea183029e5",
+      "result_id": "8c7ca0c5-741c-4254-a468-3d203171c6bf"
+    },
+    {
+      "claim_id": "0be5a695-6c63-4b3e-9579-3bc6fbe84708",
+      "result_id": "8c7ca0c5-741c-4254-a468-3d203171c6bf"
+    },
+    {
+      "claim_id": "112ce80d-3107-4268-a59c-0404229ddfff",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "3ed27476-4085-47c2-8c61-c896caece485",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "260f48b1-d4c4-4459-8029-af5e36944645",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "77fadaa2-b33e-4bb2-b08a-ab284202d3da",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "1b345712-02ee-4e19-a1e9-79dcf462a47a",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "a3d511ae-5938-42bb-8bcf-e7c81ef8ed3b",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "2fe2e7fe-951d-431a-a2fa-7c0a4004515d",
+      "result_id": "eb8992d1-20b5-4658-b4f0-88175369becc"
+    },
+    {
+      "claim_id": "feb295ec-b1b2-4c67-a079-476dbac2daad",
+      "result_id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d"
+    },
+    {
+      "claim_id": "8c451c07-db12-404b-9b41-6e4292554ee5",
+      "result_id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d"
+    },
+    {
+      "claim_id": "2201f9e0-f513-4b67-ac3b-3ccbf8fba467",
+      "result_id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d"
+    },
+    {
+      "claim_id": "80076e56-b4c9-4bfe-9281-a41a490e17e1",
+      "result_id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d"
+    },
+    {
+      "claim_id": "1bf8889e-7671-436c-9143-1a0fef2214d4",
+      "result_id": "d7ef6f31-df74-42f5-81bf-d3c9b3ae419d"
+    },
+    {
+      "claim_id": "e1021c99-8cf8-45cc-a05f-ff975a7cf04e",
+      "result_id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44"
+    },
+    {
+      "claim_id": "ad766d7a-7fdd-4862-9ca6-8827ddc9a259",
+      "result_id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44"
+    },
+    {
+      "claim_id": "17c79c57-a108-40ee-a3ba-a55e82c298ad",
+      "result_id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44"
+    },
+    {
+      "claim_id": "ba79ae7c-308a-40d5-9423-861c07b435d5",
+      "result_id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44"
+    },
+    {
+      "claim_id": "e82fd76e-5e2a-4f14-a58c-fff8407552ad",
+      "result_id": "6f8016f9-1e86-4210-a1b8-29c6e41ecb44"
+    },
+    {
+      "claim_id": "5885fc82-1c9e-4e98-8a89-815ee46288b5",
+      "result_id": "bef811f4-35f6-4112-807e-64d41e6e7181"
+    },
+    {
+      "claim_id": "5eb39abb-2e97-4d47-8e5a-95e8d33afcc4",
+      "result_id": "bef811f4-35f6-4112-807e-64d41e6e7181"
+    },
+    {
+      "claim_id": "2e000108-852f-41ca-a8b4-ef9d465fd1e4",
+      "result_id": "bef811f4-35f6-4112-807e-64d41e6e7181"
+    },
+    {
+      "claim_id": "89be332a-6c7e-4f31-b83b-b8f213b95711",
+      "result_id": "bef811f4-35f6-4112-807e-64d41e6e7181"
+    },
+    {
+      "claim_id": "bc58ee23-b97d-4ba9-8268-be7a0e087990",
+      "result_id": "277085c7-2d2f-4f70-867e-9b619617d1d6"
+    },
+    {
+      "claim_id": "f856d183-9058-4ad8-8384-a494367dbf2c",
+      "result_id": "277085c7-2d2f-4f70-867e-9b619617d1d6"
+    },
+    {
+      "claim_id": "ef12a5b5-ad0d-4b53-8fc6-c4411cc3a559",
+      "result_id": "277085c7-2d2f-4f70-867e-9b619617d1d6"
+    },
+    {
+      "claim_id": "2b7524f7-bb17-49c1-8880-654a4584380c",
+      "result_id": "d2854ccc-f22e-4c52-bf0d-71c0ad4a1a87"
+    },
+    {
+      "claim_id": "e42f4669-a848-4bfb-8a57-55d1d7b96c99",
+      "result_id": "d2854ccc-f22e-4c52-bf0d-71c0ad4a1a87"
+    },
+    {
+      "claim_id": "764e5e07-7c4d-4d24-bef4-5c00b7d6f825",
+      "result_id": "d2854ccc-f22e-4c52-bf0d-71c0ad4a1a87"
+    },
+    {
+      "claim_id": "284b9557-e40c-4913-aace-c6b82e7a51dc",
+      "result_id": "d2854ccc-f22e-4c52-bf0d-71c0ad4a1a87"
+    },
+    {
+      "claim_id": "0618ced4-c6c1-4f91-8f77-07d4537b29c2",
+      "result_id": "7dbf397b-2e36-47cf-afbd-d1d213c6b792"
+    },
+    {
+      "claim_id": "885392a2-9498-4bc8-9332-e0de09cdf1ec",
+      "result_id": "7dbf397b-2e36-47cf-afbd-d1d213c6b792"
+    },
+    {
+      "claim_id": "c75cfffe-cd83-4d70-a834-c658ff9683ad",
+      "result_id": "7dbf397b-2e36-47cf-afbd-d1d213c6b792"
+    },
+    {
+      "claim_id": "a2ee3d08-14f9-4c12-847a-6a78c13f7119",
+      "result_id": "345fdaaa-a683-4712-b17f-c27bb10559d6"
+    },
+    {
+      "claim_id": "483c0c49-4323-4e58-8658-2556f009604c",
+      "result_id": "345fdaaa-a683-4712-b17f-c27bb10559d6"
+    },
+    {
+      "claim_id": "f31d5415-9d0a-4bf5-80ed-8932ac4d9124",
+      "result_id": "345fdaaa-a683-4712-b17f-c27bb10559d6"
+    },
+    {
+      "claim_id": "9ebee442-4873-4b31-af7b-b13f70fbc8e4",
+      "result_id": "345fdaaa-a683-4712-b17f-c27bb10559d6"
+    },
+    {
+      "claim_id": "50143f5d-8c57-4f4f-ab20-978f5f2bb5fd",
+      "result_id": "345fdaaa-a683-4712-b17f-c27bb10559d6"
+    },
+    {
+      "claim_id": "0078a00b-e786-4400-b53d-2989480e2ef0",
+      "result_id": "a7223c7c-4a7d-4825-9499-83fbadcc7162"
+    },
+    {
+      "claim_id": "347125c0-b63f-4230-adb9-1695e1ed5912",
+      "result_id": "a7223c7c-4a7d-4825-9499-83fbadcc7162"
+    },
+    {
+      "claim_id": "d63b7e04-51c3-477d-99ba-731c60629830",
+      "result_id": "a7223c7c-4a7d-4825-9499-83fbadcc7162"
+    },
+    {
+      "claim_id": "a135b378-5fa2-4b34-ba87-3df0d827852d",
+      "result_id": "a7223c7c-4a7d-4825-9499-83fbadcc7162"
+    },
+    {
+      "claim_id": "ee74facd-0c73-42b8-8dff-b23039093732",
+      "result_id": "a7223c7c-4a7d-4825-9499-83fbadcc7162"
+    },
+    {
+      "claim_id": "3906177c-24fd-4850-b1aa-82cac589e115",
+      "result_id": "7f9b91aa-1b4a-4d50-b522-430191b9beca"
+    },
+    {
+      "claim_id": "bcf716e3-d246-4cbf-9fc9-03ca13aad6f8",
+      "result_id": "7f9b91aa-1b4a-4d50-b522-430191b9beca"
+    },
+    {
+      "claim_id": "c72c23bd-ebf7-4da6-842f-ad71d923af08",
+      "result_id": "fcbabef3-6c3a-4310-beb1-1d30df086c80"
+    },
+    {
+      "claim_id": "12fb6b88-8673-48a4-8bf3-408738faa277",
+      "result_id": "fcbabef3-6c3a-4310-beb1-1d30df086c80"
+    },
+    {
+      "claim_id": "98456fda-fd1a-43e4-adac-e9fc90e2ac65",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "d0791338-3303-48f7-ae63-95034c9412d8",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "6c01ec07-c780-4159-a01d-5924550803c9",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "34ca23e7-da87-448a-8126-bbfabb44d1f0",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "5ee3be84-35a2-4003-81c0-cb6cd5fba6e6",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "054b9a25-3a03-4460-a356-0248aa37780c",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "252e653a-5de1-4673-a578-18549c987d35",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "d564233f-8de3-4b6c-bbdb-2aa13bb27a66",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "80d26074-0ebe-43d6-ba6c-1a2fe462898c",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "472185e4-8cf3-4ccd-b63c-8fd9924dd0f1",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "f68431d7-fd6d-4fbc-957b-407ad297e4d5",
+      "result_id": "4cbc5ef7-1a0b-4fa0-bf88-bbdb18d2ac2c"
+    },
+    {
+      "claim_id": "f63f566d-0df1-49de-bdf9-cec12e5d8de7",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "3e75337c-dc4b-4da5-8659-046cd3e29f4a",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "50ce045f-a848-40be-b928-186916526eea",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "91ffd4cc-411a-4940-b0b3-d6d9295b4e09",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "1f94fb18-9b93-4be1-819b-6c9ccd84f45d",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "367e2533-8a96-4082-b629-e862d97e660a",
+      "result_id": "a60efca2-417d-4eaf-9259-3def869cdefa"
+    },
+    {
+      "claim_id": "d45156c9-2c3c-40f6-a935-61f3251a06fa",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "00ed1f88-464e-4371-9791-2bb55bf3cc1b",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "4b0465cc-49df-49b4-956d-5ab13b8c7889",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "a427dcb9-8f26-48bc-8e96-5fa2ea0ec009",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "3354d78f-9367-4788-b801-3ce16db69dff",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "8ac2a8f1-0ce6-4f7a-9e95-637c10abe093",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "d265ba19-479c-44e4-b62d-580dd2bfc8f8",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "8bdc4928-6cd7-4735-8039-0b2668606f73",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "81e56afb-ede1-47d8-b373-d2645c8d95be",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "142c3bd4-b6aa-4a72-8cc5-ab9e59b156ca",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "2360b99a-599d-470c-9523-d0e184b920a2",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "f2278e78-e1a8-496c-ad56-90b40bda53ae",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "c7b2005a-81b5-4b69-9534-8ac13f588d1f",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "e2f98a62-5f60-4276-8145-aeae990dcc44",
+      "result_id": "44a25902-6a04-455e-94c8-0a4e541e4bd4"
+    },
+    {
+      "claim_id": "26025db7-f35c-476e-aec5-f59195fa4e40",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "2ff0ec2b-b878-458d-b2b0-2fda552bd69e",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "f688e95e-91c0-4b91-bb6b-9204e707003e",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "1b5c88e7-a9d2-4afe-9627-2052f21fc4ee",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "5aace124-df6e-411a-87f9-53eee37bbdd1",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "1b69846d-a70d-4db6-b939-8111a7da911f",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "bc8c1e4b-cfef-4a73-b7fe-9713825a057e",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "265d3929-8f72-468f-855c-6d85fe21ee07",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    },
+    {
+      "claim_id": "e06a4aa8-1d3d-489a-ab93-bab72bf28647",
+      "result_id": "e9c8181a-d7ee-463d-aac0-9b8a97c8898e"
+    }
+  ],
+  "comparisons": []
+}

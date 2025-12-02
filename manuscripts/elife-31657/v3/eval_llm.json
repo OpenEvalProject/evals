@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C36"
+    ],
+    "result": "t-CyCIF is a highly multiplexed immunofluorescence imaging method that generates up to 60-plex images through iterative cycles of staining, imaging, and fluorophore bleaching. The method requires no specialized instruments or reagents, is compatible with super-resolution imaging, and can be performed on various existing fluorescence microscopes including slide scanners, confocal microscopes, and structured illumination microscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10, and C36 collectively establish the core technical capabilities of t-CyCIF. The manuscript provides direct evidence through demonstration of 60-plex imaging (C1), compatibility with standard equipment (C2, C10, C36), and super-resolution imaging (C3). The method's compatibility with multiple microscope types is demonstrated through actual imaging results shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C17",
+      "C18"
+    ],
+    "result": "Signal-to-noise ratio and dynamic range increase with cycle number in t-CyCIF due to progressive reduction in background fluorescence through repeated bleaching cycles. Background signal is reduced 10- to 100-fold with increasing bleaching cycles, and auto-fluorescent features gradually disappear. For some antibodies, staining intensity increases rather than decreases with cycle number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C17-C18 are supported by quantitative data shown in Figure 1 and Figure 1\u2014figure supplement 1, demonstrating the progressive reduction in background fluorescence and the counterintuitive increase in signal-to-noise ratio with cycle number. The 10- to 100-fold reduction in background is explicitly quantified in the figure supplement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Fluorophore inactivation efficiency varies with fluorophore type but minimally with the antibody to which it is coupled. Incubation for 60 minutes in bleaching conditions reduces fluorescence intensity by 10\u00b2 to 10\u00b3-fold, with Alexa Fluor 488 being inactivated more slowly than Alexa Fluor 570 or 647.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 are supported by experimental data shown in Figure 4B, Figure 4C, and Figure 4\u2014figure supplement 1, which demonstrate the differential bleaching kinetics of different fluorophores and quantify the extent of fluorescence reduction after 60 minutes of bleaching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Tissue integrity is the primary limitation on the number of t-CyCIF cycles that can be performed. Normal tonsil, skin, glioblastoma, ovarian cancer, pancreatic cancer, and melanoma can withstand >15 cycles with less than 25% cell loss. A melanoma specimen was successfully subjected to 20 cycles with good preservation of morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by data in Figure 4D-G showing quantitative cell loss measurements across different tissue types and cycle numbers. The manuscript provides specific examples including the 20-cycle melanoma specimen, demonstrating the practical limits of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C19"
+    ],
+    "result": "t-CyCIF demonstrates high repeatability and reproducibility. Repeated staining of the same specimen with the same antibodies shows high correlation (\u03c1 = 0.95 to 0.99 for PCNA), and the overlap in intensity distributions between adjacent tissue sections for the same antibodies and cycle number is high (>0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C19 are supported by quantitative correlation and overlap measurements shown in Figure 6A and described in the text. The manuscript provides specific correlation coefficients and overlap scores demonstrating both within-sample repeatability and between-sample reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "For eight antibodies, the overlap in intensity distributions was <0.6 when used in different cycles, indicating that cycle number significantly affects staining intensity for a subset of antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by data in Figure 6E showing quantitative overlap measurements for antibodies most sensitive to cycle number. This finding is important for understanding the limitations of the method and the need for careful experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In the PDAC specimen, E-cadherin, keratin, and \u03b2-catenin levels are highly correlated with each other, while vimentin and VEGFR2 receptor levels are anti-correlated, recapitulating the known epithelial-mesenchymal dichotomy. The levels of pERK(T202/Y204) and pS6(S235/S236) show high correlation (r = 0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by correlation analysis shown in Figure 7E. The manuscript provides specific correlation coefficients and relates these findings to known biological relationships between epithelial and mesenchymal markers and between components of signaling pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "CD45+ immune cells are more heavily infiltrated in the microenvironment of PDAC than in normal pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by observations from t-CyCIF imaging of PDAC and normal pancreas described in the text and shown in Figure 8. This demonstrates the method's ability to quantify differences in immune infiltration between diseased and normal tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In renal cell carcinoma, the \u03b1-SMAlow tumor domain shows fourfold enrichment of CD3+ or CD8+ lymphocytes and 13- to 20-fold higher prevalence of PD-1 and PD-L1-positive cells compared to the \u03b1-SMAhigh stromal domain. Co-localization of PD-1/PD-L1 was ~2.7-fold more likely in tumor than stroma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by quantitative measurements shown in Figure 9C and Figure 9\u2014figure supplement 1. The manuscript provides specific fold-enrichment values and co-localization probabilities, demonstrating the method's utility for analyzing tumor-immune interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "High-grade pancreatic and stomach cancers were intermingled in t-SNE space and could not be readily distinguished, recapitulating the known difficulty in distinguishing high-grade gastrointestinal tumors by histopathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by t-SNE clustering results shown in Figure 10F and is consistent with cited literature on the difficulty of distinguishing high-grade gastrointestinal tumors. This demonstrates the method's ability to recapitulate known histopathological challenges at the single-cell level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Semi-supervised clustering using EMGM modeling of GBM tumor cells yielded eight distinct clusters, four of which encompassed 85% of all cells. This finding is consistent with single-cell RNA-sequencing data from ~400 cells from five GBMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 are supported by clustering analysis shown in Figure 12A and Figure 12\u2014figure supplement 1, with comparison to published single-cell RNA-seq data. The manuscript provides detailed cluster composition and relates findings to prior genomic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "GBM exhibits extensive phenotypic heterogeneity at multiple spatial scales. Cell clusters show extensive intermixing at all spatial scales, with intermixing occurring on a scale of ~3-5 cell diameters within individual fields of view. The fraction of cells from each cluster varies dramatically across macroscopic tumor regions, suggesting GBM is phenotypically heterogeneous on a spatial scale of 5-1000 cell diameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by spatial mapping and quantitative analysis shown in Figure 12B-D. The manuscript provides detailed spatial analysis at multiple scales, from individual cell neighborhoods to macroscopic tumor regions, demonstrating the method's ability to reveal complex spatial heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Over 200 commercial antibodies have been shown to be compatible with t-CyCIF as judged by patterns of staining similar to those previously reported for IHC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 reports the number of antibodies tested but acknowledges that validation is limited to comparison with IHC staining patterns. The manuscript explicitly states this level of validation is insufficient for most studies, and more rigorous validation is needed. The claim is factually accurate but the level of validation is acknowledged as preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The Zenon antibody labeling method is effective with 30-40% of the primary antibodies tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by the manuscript's report of testing results with the Zenon method, shown in Figure 1\u2014figure supplement 2. However, the relatively low success rate (30-40%) indicates this is a supplementary approach rather than a primary labeling method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "IHC is primarily a single-channel method where imaging multiple antigens usually involves analysis of sequential tissue slices or harsh stripping protocols, and antibody detection via DAB precipitates is less quantitative than fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C5 accurately describe established limitations of IHC based on cited literature. These claims provide context for the development of t-CyCIF but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The manuscript cites established knowledge about cancer biology and limitations of existing methods, including KRAS mutations in PDAC, PD-L1 as a biomarker for immune checkpoint inhibitors, WNT pathway activation in PDAC, the role of the tumor microenvironment, and limitations of single-cell sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 accurately cite published literature to provide biological and technical context for the study. These are not novel findings but rather established knowledge used to motivate and interpret the t-CyCIF results.",
+    "result_type": "MINOR"
+  }
+]

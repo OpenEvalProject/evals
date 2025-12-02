@@ -1,0 +1,1738 @@
+{
+  "submission": {
+    "id": "c1ead47d-7e44-4eac-82a5-5b002611e422",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:23:18.562806Z",
+    "updated_at": "2025-12-01T22:23:18.562806Z"
+  },
+  "content": [
+    {
+      "id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "submission_id": "c1ead47d-7e44-4eac-82a5-5b002611e422",
+      "content_type": "manuscript",
+      "content_text": "# Live imaging of heart tube development in mouse reveals alternating phases of cardiac differentiation and morphogenesis\n\n## Authors\n\n- Kenzo Ivanovitch<sup>1</sup> ([ORCID: 0000-0003-4706-7686](https://orcid.org/0000-0003-4706-7686))\n- Susana Temi\u00f1o<sup>1</sup>\n- Miguel Torres<sup>1</sup> ([ORCID: 0000-0003-0906-4767](https://orcid.org/0000-0003-0906-4767)) \u2020\n\n### Affiliations\n\n1. Developmental Biology Program Centro Nacional de Investigaciones Cardiovasculares Madrid Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring vertebrate heart development, two progenitor populations, first and second heart fields (FHF, SHF), sequentially contribute to longitudinal subdivisions of the heart tube (HT), with the FHF contributing the left ventricle and part of the atria, and the SHF the rest of the heart. Here, we study the dynamics of cardiac differentiation and morphogenesis by tracking individual cells in live analysis of mouse embryos. We report that during an initial phase, FHF precursors differentiate rapidly to form a cardiac crescent, while limited morphogenesis takes place. In a second phase, no differentiation occurs while extensive morphogenesis, including splanchnic mesoderm sliding over the endoderm, results in HT formation. In a third phase, cardiac precursor differentiation resumes and contributes to SHF-derived regions and the dorsal closure of the HT. These results reveal tissue-level coordination between morphogenesis and differentiation during HT formation and provide a new framework to understand heart development.\n\n## Introduction\n\nThe heart is the first organ to form and function during embryonic development. At embryonic day (E) 7.5, cardiac precursors in the splanchnic mesoderm (mesoderm apposed to the endoderm) differentiate into cardiomyocytes by assembling the contractile sarcomere machinery (Tyser et al., 2016) and form a bilateral structure known as the cardiac crescent (cc) in the mouse. Concomitant with foregut invagination, the cc swings inwards to become placed underneath the developing head folds. By a complex morphogenetic process, the cc subsequently transforms into an early heart tube (HT) initially opened dorsally, which by E8.25 has transformed into a closed and beating linear HT, also known as the primitive HT (Evans et al., 2010; Kelly et al., 2014).\n\nThe cc and early HT mainly give rise to the left ventricle (Zaffran et al., 2004). The right ventricle (RV), the outflow tract and most of the atria derive instead from cardiac progenitors located dorso-medially to the cc in the splanchnic mesoderm, that are progressively recruited at the poles of the HT at subsequent developmental stages (Cai et al., 2003; Kelly et al., 2001; Mjaatvedt et al., 2001; Waldo et al., 2001; Galli et al., 2008). These findings led to the concept that cardiac mesodermal progenitors contain two populations of cells: the first heart field (FHF) precursors, recruited early in development to form the initial HT and mostly containing the LV primordium, and the second heart field (SHF), recruited later and elongating the HT (Buckingham et al., 2005).\n\nClonal analysis (Devine et al., 2014; Lescroart et al., 2014; Meilhac et al., 2004a) supports the idea that FHF and SHF precursors are two independent developmental fields with dedicated molecular pathways. Clonal analysis also showed that the SHF shares a common origin with the skeletal muscles of the head and neck within the pharyngeal mesoderm (Lescroart et al., 2010; Lescroart et al., 2015), further supporting differences between FHF and SHF populations. However, the existence of a common precursor between FHF and SHF was also reported in the early mouse embryo (Meilhac et al., 2004a) and other views suggest that the heart would form by a continuous differentiation process from a single population of cardiac precursors and only timing of recruitment would distinguish cells of the FHF and SHF (Abu-Issa et al., 2004; Moorman et al., 2007). In support of the latter, the typical marker of the SHF, Islet1 (Cai et al., 2003), is also transiently expressed in FHF precursors and must therefore be considered as widespread cardiac progenitor marker instead (Cai et al., 2003; Prall et al., 2007; Yuan and Schoenwolf, 2000). Whether the recruitment of cardiomyocytes from progenitors is a continuous process and how this coordinates with morphogenesis, however, has not been directly studied. This is partly because the spatial arrangement of progenitors and differentiated cardiomyocytes has so far been analyzed on fixed embryos (Cai et al., 2003; Sp\u00e4ter et al., 2013) and the expression dynamics of genes reporting differentiation together with cell movements during HT morphogenesis have not been captured so far (Abu-Issa, 2014).\n\nHere, we report the live-imaging and 3D+t cell tracking of HT formation in whole mouse embryos. Using this method, in conjunction with an Nkx2.5eGFP reporter line, which provides high level of GFP in differentiated cardiomyocytes, we studied the dynamics of cardiac field differentiation. During an initial phase, FHF cardiac precursors differentiate rapidly to form a cardiac crescent, while limited morphogenesis takes place. During a second phase, no differentiation events are detected and extensive morphogenesis, including splanchnic mesoderm sliding over the endoderm, results in HT formation. Finally, using an Isl1-Cre lineage-tracing assay combined with live-imaging, we show that during a third phase, cardiac precursor differentiation resumes and contributes not only to the known SHF-derived regions but also to the dorsal aspect of the HT. These results show essential properties of FHF and SHF contribution to heart development and reveal tissue-level coordination between alternating phases of differentiation and morphogenesis during HT formation.\n\n## Results\n\n### 3D\u00a0static analysis of mouse HT formation\n\nTo assess how the initial cardiogenic region transforms into a HT and differentiates, we first analyzed Nkx2.5cre/+; Rosa26Rtdtomato+/-embryos, in which both cardiac precursors and cardiomyocytes are labeled (Stanley et al., 2002). Before cc differentiation, at early head fold stage (EHF, ~E7.5), the cardiogenic region is visualized as a flat horse shoe-shaped tdtomato+ mesodermal layer at the rostral border of the embryo (Figure 1A,A\u2019, and Video 1). Figure 1\u2014figure supplement 1 shows the criteria for embryo staging (Downs and Davies, 1993; Lawson and Wilson, 2016). In the Nkx2.5cre/+; Rosa26Rtdtomato+/- embryos, tdtomato labeling is also observed in the endocardium and endothelial cells (Stanley et al., 2002) but not in the endoderm (Figure 1\u2014figure supplement 2A,A\u2019). We next studied the distribution of Cardiac troponin T (cTnnT), one of the first evident sarcomeric proteins to appear in the cardiac crescent (Tyser et al., 2016). At EHF stage (Figure 1B), while most embryos are negative for cTnnT expression, some embryos show weak cTnnT localization in subsets of cells (Figure 1\u2014figure supplement 3A,A\u2019). At a subsequent embryonic stage (~E7.7), cTnnT signal reveals the cc, which is folding inwards. During folding, the cTnnT signal increases. cTnnT+ cells are initially columnar epithelial cells and show apical localization of the tight junction component zona-occluden-1 (ZO-1) (Figure 1\u2014figure supplement 3B,B\u2019). During differentiation, cardiac precursors switch to a rounded shape (Linask et al., 1997) (Figure 1C,D) and separate from the endoderm, while maintaining a basal lamina at the endocardial side (inset in Figure 1D and Figure 2D). Morphogenetic changes starting at\u00a0~E8 subsequently lead to the formation of a hemi-tube whose major axis is transversal to the embryo A-P axis. We will refer to this stage as transversal HT (Figure 1E). Later, the tube adopts a more spherical shape, very similar to the linear HT but still open dorsally. We will refer to this stage as open HT (Figure 1F). The HT eventually closes dorsally (Figure 1G, red arrows in Figure 1G\u2019\u2019) and a prominent arterial pole (prospective RV) (Zaffran et al., 2004) becomes visible, completing linear HT formation by\u00a0~E8.25 (yellow arrows in Figure 1G\u2019\u2019, Figure 1H, see also Video 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig1-v2.jpg)\n\n**Figure 1.:** (A) Frontal view of an Nkx2.5cre/+; Rosa26Rtdtomato embryo at EHF stage. (A\u2019) 3D reconstruction of the tdtomato signal in the cardiogenic area. Signal from tdtomato+ endothelial cells identified by shape was manually masked. See also Video 1. (B\u2013G) Immunostaining for cTnnT (red) and Dapi (blue) showing six consecutive stages during cardiac differentiation (B\u2013D) and HT morphogenesis (E\u2013G). (B) At EHF cTnnt is initially not detectable. (C\u2013D) During early somitogenesis, cTnnT signal becomes detectable in the cc. Insets in (B\u2013D): magnification of single optical sections showing cTnnT localization and cell shape. (C\u2019\u2013G\u2019 and E\u2019\u2019\u2013G\u2019\u2019) Corresponding 3D renderings from cTnnT signal reconstruction. Red arrows in (E\u2019\u2013G\u2019) highlight the dorsal closure of the HT. Yellow arrow in G\u2019\u2019 highlights the arterial pole (prospective RV). See also Video 2. (H) Quantification of the arterial pole/RV length in the open HT (41.4\u00a0\u00b1\u00a014.0 \u03bcm, n\u00a0=\u00a05) and after dorsal closure (109\u00a0\u00b1\u00a043.44 \u03bcm, n\u00a0=\u00a07), mean\u00a0\u00b1SD, p=0.0025. (I) Quantification of the cardiac volume at the different stages of HT development. (Initial cc: 1.63.106 \u03bcm3\u00a0\u00b1\u00a00.13, n\u00a0=\u00a04, cc: 2.89.106\u00a0\u00b1\u00a00.37 \u03bcm3, n\u00a0=\u00a03, transversal HT: 3.367. 106 \u03bcm3\u00a0\u00b1\u00a00.95, n\u00a0=\u00a05, open HT: 4.29.106 \u03bcm3\u00a0\u00b1\u00a01.08, n\u00a0=\u00a06, linear HT: 6.37. 106 \u03bcm3\u00a0\u00b1\u00a01.01, n\u00a0=\u00a05, mean\u00a0\u00b1SD). p-Values are indicated on the graph. (J) Immunostaining of an Nkx2.5eGFP embryo for PH3 (red) and Dapi (blue) at HT stage, showing proliferative cells in the ventricle. Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We determined the developmental stage of embryos based on morphological landmarks (Downs and Davies, 1993; Lawson and Wilson, 2016). (A) At bud stage/E7, a small allantois bud is visible. At neural plate stage/E7.5, the allantois is larger and projects into the yolk sack cavity. The anterior neuroectoderm is enlarged. (B) At EHF/E7.5, the neural plate starts to form the head fold. During somitogenesis, a clearly visible foregut pocket appears and the head folds are located dorsally and anteriorly to the cardiac primordium. The cc has differentiated. It transforms successively into the transversal HT, the open HT and the linear HT closed dorsally and with a prominent arterial pole/RV. Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A, A\u2019) Nkx2.5cre/+; Rosa26Rtdtomato+/- embryo at EHF stage (same embryo as in Figure 1A. Here a single optical section is shown). Tdtomato labeling is detected in the cardiac progenitors, endothelial (yellow arrow) and endocardial cells (green arrows). No labeling is detected in the endoderm (gray arrow). (A\u2019\u2019) Segmentation of cardiac crescent progenitors (shown in dark green) used for the 3D reconstruction shown in Figure 1A\u2019 overlaid with the raw image and. Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) A Mesp1cre/+; Rosa26Rtdtomato+/- embryo at EHF stage showing mesodermal labeling (green)- immunostaining against cTnnT (red) and Dapi (blue). Note that the embryo is at a slightly more advanced developmental stage than those shown in (Figure 1B) because the foregut pocket is more invaginated. (A\u2019) White inset in (A). Faint cTnnT signal (red) in few mesodermal cells (arrows) can be detected. (B\u2013B\u2019) Mesp1cre/+; Rosa26Rtdtomato+/- embryo showing the mesoderm in red and immunostained against the tight junction component zona-occludens-1 (ZO-1) (green) and Dapi (blue). The cc cells (as seen in transversal sections) have an AB polarized epithelial morphology. fg: foregut, endo: endoderm, endoc: endocardium. Scale bars: 150 \u03bcm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013A\u2019\u2019) An Nkx2.5cre/+; Rosa26Rtdtomato+/- embryo immunostained for cTnnT (green) and Dapi (blue) showing cells of the Nkx2.5+ lineage populating both the FHF and SHF. (A\u2019 and A\u2019\u2019) Cross-sections in xz along the dotted lines 1 and 2 shown in (A), and corresponding schematics highlighting the endoderm (blue), FHF (green), SHF (red) and endocardium (yellow). Note that tdtomato signal is also detected in the endoderm and endocardium. (B) 3D reconstruction of the FHF (green) and SHF (red); (B\u2019) 3D drawing of the border between the FHF and SHF (in red) and the FHF and yolk sack (in green) (based on the embryo shown in (A). For SHF rendering, the tdtomato+ splanchnic mesoderm was depicted. The FHF was rendered using the cTnnT signal. See also Video 3. (C) Quantification of the cell roundness (rnd) index of cardiomyocytes at HT stage on single optical sections. Black bars indicate mean. Rnd index for cTnnT+ (green) cells is 0.71\u00a0\u00b1\u00a00.16 and for cTnnT- (red) cells is 0.38\u00a0\u00b1\u00a00.16, mean\u00a0\u00b1SD, exact p value\u00a0<\u00a00.0001. (D\u2013E) Membrane-GFP labeling of typical cTnnT\u00a0+FHF (D) and cTnnT-SHF (E) cells at longitudinal HT stage. The specimen is immunostained for cTnnT (blue), the basement membrane marker Laminin1 (red) and GFP (green). (F) Single optical section of the same embryo shown in (A, B). (F\u2019\u2013F\u2019\u2019\u2019) Inset: red arrows point to cells localizing weak cTnnT signal and have columnar cell shape in the SHF. White arrows point to cTnnT-negative SHF cells. splan. meso: splanchnic mesoderm, endo: endoderm, fg: foregut. In all the embryos immunostained for cTnnT, the yolk sack signal is non-specific background (indicated by an asterisks). Scale bars: 100 \u03bcm except in (D\u2013E): 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Single optical section of an Nkx2.5cre/+; Rosa26Rtdtomato+/- embryo immunostained for cTnnT (green) and Dapi (blue). Gray arrows highlight tdtomato signal in the endoderm (A\u2019) Segmentation of the FHF and SHF. Segmentation of the FHF (green) is based on the cTnnT signal while the segmentation of the SHF is based on the tdtomato positive and cTnnT negative signal (in red). tdtomato labeling in the endoderm and endocardium has been removed manually.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Maximum z-projection and (B, B\u2019) single optical section of an embryo immunostained for smooth muscle actin (SMA, labeling differentiated cardiomyocytes) (red), CD31 (labeling the endocardium) (green) and ZO-1 (blue). endo: endoderm, splan. meso: splanchnic mesoderm Scale bars: 150 \u03bcm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-video1.mp4.jpg)\n\n**Video 1.:** Related to Figure 1A.\n\n![Video 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-video2.mp4.jpg)\n\n**Video 2.:** Five representative stages are represented. Related to Figure 1C\u2013G.\n\nTo assess the overall growth of the forming HT, we measured cTnnT+ tissue volume in segmented z-stacks, at the stages described above (Figure 1I and Figure 1\u2014source data 1). During the first phase of cardiomyocyte differentiation, the cTnnT signal expands resulting in a cardiac crescent rapidly doubling in volume (Figure 1C\u2019, D\u2019, I). During the subsequent phase of morphogenesis, from cc to open HT stage, growth is less pronounced despite extensive morphological changes (Figure 1E\u2019, F\u2019, I). The volume of the HT appears to increase again upon addition of the RV primordium to the arterial pole and dorsal HT closure (Figure 1G\u2019, I). HT growth likely reflects an increase in cell number occurring during the formation of the heart tube. Cardiomyocytes are proliferative at this stage (de Boer et al., 2012), and we can indeed observe mitotic figures in the HT (Figure 1J). From this analysis, however, it is unclear how much of the growth observed is due to cardiomyocyte proliferation versus addition of new cardiomyocytes from cardiac progenitor cells located in the splanchnic mesoderm.\n\n### 3D analysis of cardiac progenitor differentiation\n\nTo visualize the boundary where cardiac progenitors abut differentiating cardiomyocytes during HT morphogenesis, we immunostained Nkx2.5cre/+Rosa26Rtdtomato+/- embryos at the transversal-HT stage with the differentiation marker cTnnT and acquired whole-mount images (Figure 2A). Cre activation of tdtomato was detected in both the FHF and SHF, as well as in the endoderm and endocardium (see optical sections in Figure 2A\u2019, A\u2019\u2019, F,F\u2019 and Figure 2\u2014figure supplement 1A) (Stanley et al., 2002). Cardiomyocytes are separated from the endoderm by the endocardium. In contrast, undifferentiated cardiac precursors lie medio-dorsally in direct contact with the endoderm in areas where endocardial cells are not detected (Figure 2A\u2019, A\u2019\u2019). This is confirmed by the absence of the endothelial marker CD31 (Figure 2\u2014figure supplement 2). We then rendered in 3D the Nkx2.5cre-labeled lineages, including both FHF and SHF, and the cTnnT\u00a0+tissues, including only the FHF/cc, which allowed visualizing the boundary between SHF and cc at the tissue level (Figure 2A,B,B\u2019, Figure 2\u2014figure supplement 1, Video 3 and see Materials and methods\u00a0\u2013\u00a0non-cardiac tdtomato signal was removed manually).\n\n![Video 3.](https://cdn.elifesciences.org/articles/30668/elife-30668-video3.mp4.jpg)\n\n**Video 3.:** Based on Nkx2.5cre/+Rosa26Rtdtomato+/- embryos immunostained for cTnnT. The border between cTnnT-negative and cTnnT-positive cells can be visualized at the interface between the red and green domains. Related to Figure 2B.\n\nTo identify the changes associated to cardiomyocyte differentiation at the cellular level, we labeled single cells with membrane-GFP (see Materials and methods). cTnnT- progenitors have an epithelial-like columnar cell shape, while the differentiated cTnnT+ cardiomyocytes are rounder and have lost the columnar epithelial organization (Figure 2C\u2013E and Figure 2\u2014source data 1). This is reminiscent of the cell shape transition observed in the distal outflow tract (OFT) at later stages of heart development, when SHF progenitor-to-cardiomyocyte differentiation takes place (Francou et al., 2014; Ramsbottom et al., 2014; Sinha et al., 2012). Interestingly, some cells at the boundary zone exhibit weak cTnnT localization and yet show columnar shapes typical of mesodermal cardiac precursors (Figure 2F\u2013F\u2019\u2019\u2019\u2019 and red arrows in Figure 2F\u2019\u2019\u2019, F\u2019\u2019\u2019\u2019). Unlike differentiated cardiomyocytes, these cells do not show rounded shapes, and therefore they may represent a transient state between progenitors and differentiated cardiomyocytes; however, the nature of such state cannot be addressed by static analysis. Differentiation of cardiac progenitors is thus accompanied by changes in cell shape and detachment from the endoderm.\n\nWe next assessed the expression pattern of the Nkx2.5eGFP enhancer reporter line, in which GFP expression is restricted to cardiomyocytes (Lien et al., 1999; Prall et al., 2007; Wu et al., 2006). To characterize this reporter line in detail, we immunostained Nkx2.5eGFP embryos against cTnnT,\u00a0(\u00a0)(Figure 3A,B\u00a0and Figure 3\u2014figure supplement 1A,B) and compared the relative intensities of cTnnT and GFP in manually\u00a0segmented single cells (Figure 3C,D Figure 3\u2014figure supplement 2A and Figure 3\u2014source data 1). We found that the GFP level varied linearly with cTnnT level (Figure 3D), although considerable variability of GPF levels was observed within each cTnnT+\u00a0and cTnnT- cell populations. Scoring of a large number of cells allowed to reproducibly identify the top 50% GFP-expressing cells as positive for cTnnT+ (Figure 3\u2014source data 1). Genetic tracing experiments using the Nkx2.5cre/+;Rosa26Rtdtomato+/- line, instead show strong tdtomato level in both the FHF and SHF (Figure 3\u2014figure supplement 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig3-v2.jpg)\n\n**Figure 3.:** (A) z-maximum projection of an Nkx2.5eGFP embryo at transversal HT stage immunostained for cTnnT (red) and Dapi (blue) showing high GFP level in differentiated cardiomyocytes. (B) Single optical section of an Nkx2.5eGFP embryo at transversal HT stage immunostained for cTnnT (red) and Dapi (blue). (B\u2019) Inset in (B): arrow points the transition between cTnnT+ and cTnnT- domains, corresponding to FHF and SHF, respectively. Dotted line represents the linescan measured in (D) (C) Example of manual segmentation based on Dapi nuclei in cells located in the splanchnic mesoderm and in the neural tube. (D) Linear mixed-effects model to find the relationship between the background-substracted GFP and cTnnT levels adjusted by embryo (GFP\u00a0=\u00a00.95*cTnnT). (E) GFP and cTnnT mean intensities measured within manually segmented cells along the boundary from SHF to cTnnT-positive FHF (B\u2019) (n\u00a0=\u00a0130 cells analysed in four independent embryos). Scale bar: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) z-maximum projection and yz view of a Nkx2.5eGFP embryo immunostained against cTnnT showing overlap between eGFP signal and cTnnT localisation along the z dimension. (B) z-maximum projection and optical sections at different z-level of an Nkx2.5eGFP embryo, immunostained for cTnnT (red) and Dapi (blue), showing overlapping expression of GFP and cTnnT signal. Scale bar: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A,B) Normalized GFP and cTnnT mean level for single segmented cell. Each dot represents a single segmented cell (A) located in the FHF and SHF and (B) located at the boundary zone between the FHF and SHF (n\u00a0=\u00a0130 cells analyzed from eight embryos). (C) Linear mixed-effects model to find the relationship between the background substracted GFP and cTnnT levels adjusted by embryo for cell located at the boundary between the FHF and SHF (GFP\u00a0=\u00a00.94*cTnnT, R2\u00a0=\u00a00.77, p<2.2e-16). Cells are being considered positive for cTnnT when their mean intensity value is above 0. Note that small GFP signal can be detected in the cTnnT-negative SHF cells.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The GFP expression of the Nkx2.5eGFP reporter does not fully overlap with tdtomato expression pattern in Nkx2.5cre/+; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryos at the level of the splanchnic mesoderm/SHF. Scale bar: 100 \u03bcm.\n\nWe next characterized the boundary between cardiomyocytes and cardiac precursors in transversal HT stage embryos of the Nkx2.5eGFP reporter line. We measured mean fluorescent intensity in manually segmented cells at the boundary zone and found that GFP level and cTnnT signals correlate at the individual-cell level (Figure 3B\u2019, E, Figure 3\u2014figure supplement 2B,C and Figure 3\u2014source data 1). Altogether, these results indicate that the Nkx2.5-eGFP reporter is suitable for tracking cardiomyocytes in live-imaging and reliably identifies the top 50% GFP-expressing cells as cTnnT-positive.\n\n### Two-photon live-imaging of early cardiac development in the mouse embryo reveals morphogenetic events leading to HT formation\n\nWe next established a live-imaging method to dynamically characterize the formation of the HT in the mouse embryo (Figure 4A) (Chen et al., 2014). We adapted a previously reported culture system (Nonaka, 2009; Nonaka et al., 2002) in which the whole mouse embryo is immobilized by inserting the extraembryonic region in a holder (Figure 4C). After culture, embryos showed normal morphology, their hearts were beating and circulation was initiated (Figure 4D,E and Video 4). This culture system in combination with two-photon microscopy enabled the generation of high-resolution 3D+t videos (Figure 4B and see Materials and methods). Maximum culture time and imaging achieved was 24 hr (Figure 4\u2014figure supplement 1A, n\u00a0=\u00a03). However, typical acquisition times varied in most cases between 3 and 13 hr. The rate of acquisition varied in most cases between 4 and 9 min, with some exceptions depending on the specific aim of the recording (see video legends).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of the set up for imaging live mouse embryos from EHF up to completion of HT formation. (B) Parameters xyzt during live-imaging. (C) An embryonic holder maintains the embryo still during live-imaging. (D\u2013E) After over 10 hr of ex-vivo culture inside the two-photon chamber, the embryo has grown and the cardiac crescent has transformed into a beating heart tube. Arrows in (E) point to the deformation of the heart ventricle due to heart beats. See also Video 4. (F\u2013F\u2019\u2019) Time-lapse video sequence of a Mesp1cre/+; Rosa26Rtdtomato+/- embryo \u2013reporting anterior mesoderm\u2013, showing the transition from cardiac crescent stage to heart tube stage. Note that at the initial time point, the foregut pocket is already visible. Arrows indicate the major tissue movements visible (folding of the cardiac crescent, medial movement of the splanchnic mesoderm). The differentiation of cardiomyocytes detaching from the endoderm is visible in (F\u2019). White arrows point to the endocardium. The formation of the endocardial lumen in the transversal HT is visible in F\u2019. By 8h35m, the open HT is fully formed and beating regularly. Yellow lines represent distances between the left and right splanchnic mesoderm. Images are z-max projection of 84 sections covering 180 \u03bcm (F) and 9 sections covering 36 \u03bcm (F\u2019) acquired every 4 \u03bcm. See also Videos 5\u20136. (G\u2013G\u2019\u2019) Time-lapse video of an Nkx2.5cre/+; Rosa26RmT/mG+/- embryo during the early stages of cardiac differentiation. Images are z-max projection of 87 sections acquired every 5 \u03bcm covering 437 \u03bcm. (G\u2019) shows in a single optical section how progenitors change in cell shape and move away from the endoderm during differentiation toward cardiomyocytes (from inset in (G)). (G\u2019\u2019) Cartoon depicting the change in cell shape taking place during cardiac differentiation. See also Video 7. (H) Time-lapse video sequences of Nkx2.5eGFP embryos from transversal HT showing low GFP level prior to cardiomyocyte differentiation and increase in GFP intensity level during the stages cardiomyocytes undergo differentiation. (H\u2019 and H\u2019\u2019), cardiomyocytes in single magnified optical sections. Images are z-maximum projections of 70 sections acquired every 6 \u03bcm covering 420 \u03bcm. See also Video 10. (I) Estimate of the timing between different heart tube development stages. fg: foregut cc: cardiac crescent, endoc: endocardium, ao: aorta, endo: endoderm. Scale bars: 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Nkx2.5eGFP; RERT+/-; Rosa26Rtdtomato+/- embryo. Starting culture at E7.5, by the end of the 25 hr ex-vivo culture, the HT has formed and looped (experiment repeated three times independently). The embryo was subsequently fixed and immunostained for cTnnT (red) and ZO-1 (blue). V: prospective left ventricle, A: prospective atria. Scale bars: 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) z-max projection of a Mesp1cre/+; Rosa26Rtdtomato+/- embryo at transversal HT stage. The yellow line indicates the distance between the left and right splanchnic mesoderm. (B) One example of the changes in left/right distance measured over time.\n\n![Video 4.](https://cdn.elifesciences.org/articles/30668/elife-30668-video4.mp4.jpg)\n\n**Video 4.:** Interval between frames: 1 s. Related to Figure 4E.\n\nImaging Mesp1cre/+; Rosa26Rtdtomato+/- embryos allowed tracking the anterior mesoderm (Saga et al., 1996; Saga et al., 1999), including cardiac lineages, from cc stage up to HT stage (Figure 4F,F\u2019 and Videos 5\u20136). The time-lapse analysis provided insight on the formation of the endocardial lumen (Figure 4F\u2019, F\u2019\u2019). The endocardium is initially observed as a bilayer of cells and eventually splits into dorsal and ventral layers, which move apart from each other allowing the lumen to become visible between the layers (see Videos 6 and 7 for confocal views and Video 8 for a bright field view). Thin cytoplasmic bridges between the endocardial layers persist and extend as the endocardial layers separate from each other (see white arrows in Figure 4F\u2019 and Video 6). Heartbeat becomes detectable around this stage and circulation in the embryo is then initiated.\n\n![Video 5.](https://cdn.elifesciences.org/articles/30668/elife-30668-video5.mp4.jpg)\n\n**Video 5.:** Interval between frames: 4 m 30\u00a0s. Duration of the video: 13 hr 16 m 30 s. Related to Figure 4F.\n\n![Video 6.](https://cdn.elifesciences.org/articles/30668/elife-30668-video6.mp4.jpg)\n\n**Video 6.:** Images are z-maximum projection of nine sections acquired every 4 \u03bcm covering 36 \u03bcm (h:mm:ss) and allows visualization of the inside of the cardiac lumen during HT formation. Interval between frames: 4 m 30 s. Duration of the video: 8 hr 10 m. Related to Figure 4F\u2019.\n\n![Video 7.](https://cdn.elifesciences.org/articles/30668/elife-30668-video7.mp4.jpg)\n\n**Video 7.:** Interval between frames: 22 m. Duration of the video: 4 hr 02 m. Related to Figure 4G\u2013G\u2019.\n\n![Video 8.](https://cdn.elifesciences.org/articles/30668/elife-30668-video8.mp4.jpg)\n\n**Video 8.:** Interval between frames: 1 m 03 s. Duration of the video: 6 hr 04 m 21 s. Representative analysis from two embryos.\n\nImaging Nkx2.5cre/+; Rosa26RmT/mG+/- embryos, in which Cre-recombined cells activate membrane-bound GFP, we could track cells during differentiation, as they transit from a columnar to a round shape and start contracting (Figure 4G\u2013G\u2019\u2019, Video 7 and bright-field Video 8). We found that the endocardial lumen started to appear while cc cells still remained columnar (compare time points 2 hr 13 m and 3 hr 48 m in Figure 4G\u2019). Cell rounding is therefore unlikely to initiate the formation of the cardiovascular lumen.\n\nInterestingly, this analysis also showed that the transformation of the cc into the HT involves the antero-medial displacement of the splanchnic mesoderm (white arrows in Figure 4F,F\u2019). This displacement promotes the folding of the cardiac crescent into a hemi-tube by bringing closer the future borders between the HT and the mesocardium (see yellow lines in Figure 4F\u2019 indicating the distance between the borders at different times). These borders coincide with the frontiers between cardiomyocytes and undifferentiated splanchnic mesoderm (see details in Videos 7, 17 and Figure 7A\u2019, A\u2019\u2019). Interestingly, the movement of the splanchnic mesoderm is not coherent with the endoderm but a relative displacement is detected between the two layers (Video 9). Estimation of splanchnic mesoderm displacement speed toward the midline from time-lapse analyses (Figure 4F\u2019, and Video 6) indicates a range of average speeds from 12 to 20 \u00b5m/hr (15.8\u00a0\u00b1\u00a02.4 \u00b5m/hr, mean\u00a0\u00b1SD, n\u00a0=\u00a03, Figure 4\u2014figure supplement 2 and Figure 4\u2014source data 1). These measurements estimate that midline convergence of the splanchnic mesoderm takes approximately 5\u20137 hr from the late cc stage until the open HT stage (Figure 4\u2014figure supplement 2).\n\n![Video 9.](https://cdn.elifesciences.org/articles/30668/elife-30668-video9.mp4.jpg)\n\n**Video 9.:** SHF cells (green arrows) displace antero-medially relative to the underlying endoderm (red arrow). In addition, SHF cells move apart from each other (distance between the green arrows increase from 61 to 83 \u03bcm over 3h12m). Related to Figure 6H.\n\nOur results show the feasibility of live time-lapse analysis of mouse HT formation and reveal that splanchnic mesoderm displacement, at least in part by sliding over the endoderm, is an essential aspect of HT morphogenesis.\n\n### Live tracking of cardiomyocyte differentiation in individual cells reveals cardiac crescent differentiation dynamics\n\nNext, to specifically track cardiac differentiation, we used the Nkx2.5eGFP live reporter. We first studied the general activation pattern of this reporter in live analysis. At E7/bud stage, a faint and scattered GFP signal is detected in proximity to the yolk sack, at the anterior border of the embryo (Figure 5\u2014figure supplement 1A). At neural plate stage, just prior to the ventral folding of the embryo, the GFP signal remains weak but spreads to delineate a crescent in the anterior region of the embryo (Figure 5\u2014figure supplement 1A and Video 10). During about 5\u20136 hr starting at the EHF stage, the GFP signal increases in intensity, which correlates with the previous observations on cTnnT activation (Figure 4H, Figure 1C and Video 11). From transversal to open HT (5\u20137 hr) and from the open HT to HT (2\u20133 hr) the GFP signal remains stable (Figure 5\u2014figure supplement 1B,B\u2019, C,C\u2019 and Video 12). We conclude that an increase in GFP level in Nkx2.5eGFP embryos reports cardiomyocyte differentiation. In addition, these results reveal the timing of the main phases of linear HT development; cc differentiation, formation of the open HT and dorsal closure (Figure 4I).\n\n![Video 10.](https://cdn.elifesciences.org/articles/30668/elife-30668-video10.mp4.jpg)\n\n**Video 10.:** (representative analysis from two embryos). Interval between frames: 12 m. Duration of the video: 7 hr 24 m Related to Figure 5\u2014figure supplement 1A.\n\n![Video 11.](https://cdn.elifesciences.org/articles/30668/elife-30668-video11.mp4.jpg)\n\n**Video 11.:** (representative analysis from three embryos). Interval between frames: 24 m. Duration of the video: 6 hr 48 m. Related to Figure 4H.\n\n![Video 12.](https://cdn.elifesciences.org/articles/30668/elife-30668-video12.mp4.jpg)\n\n**Video 12.:** Interval between frames: 8 m 09 s. Duration of the video: 5 hr 01 m 33 s. Related to Figure 5\u2014figure supplement 1B.\n\nWe next sought to track the trajectories and differentiation of individual cardiac precursors within the entire cardiogenic region by 3D+t live imaging. To this end, we used the Polr2aCreERT2 (RERT) allele (Guerra et al., 2003), which provides ubiquitous tamoxifen-inducible Cre activity in combination with a Rosa26Rtdtomato reporter. We then titrated the tamoxifen dose for a labeling density that would allow single cell tracking during prolonged time-lapse analysis and combined this with the Nkx2.5eGFP reporter (see materials and methods). Typically, for each video, we acquired z-slices every 3\u20135 \u03bcm achieving a total z-depth of 200 \u03bcm \u2013 with some variations depending on the stage considered- and manually tracked in 3D+t for several hours an initial population of\u00a0~50 to ~100 cells per video, which represents around 5\u201310% of the total number of cells present in the cc (de Boer et al., 2012).\n\nWe first tracked cells of the cardiac forming region starting at EHF stage \u2013\u00a0when cardiac precursors are undifferentiated\u00a0\u2013 up to stages in which cardiomyocytes have differentiated in the cc but the transversal HT stage has not been reached yet (Figure 5A and Figure 5\u2014source data 1). At the onset of cardiac differentiation, the cardiac crescent swings ventrally concomitant with foregut pocket formation. During this movement, we found that the relative positions of the cardiac progenitors are maintained from the initial stage through the differentiated cc (Video 13). Relative cell positions therefore remain mostly coherent as the embryonic tissues undergo this initial global movement. Differentiation events are detected in some of the tracked cells by cell shape change from columnar to rounded and by the increase in GFP signal (see example in Figure 5B,D and Figure 5\u2014source data 1). In contrast, other tracked cells located in the splanchnic mesoderm remain in contact with the endoderm, retain a columnar shape and show low GFP level throughout the videos (Figure 5C). These cells are likely to be SHF cardiac progenitors and not endocardial cells, which are not present in this area (Figure 2\u2014figure supplement 2A,B,B\u2019). Endocardial cells are instead present in the cardiac crescent and have typical elongated spindle-like shapes (Figure 4F and Figure 5\u2014figure supplement 2A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig5-v2.jpg)\n\n**Figure 5.:** (A) Time course of an Nkx2.5eGFP; RERTcre/+; Rosa26Rtdtomato+/- embryo during stages when cc differentiation takes place -from EHF onwards-. Images are z-maximum projection of 76 sections acquired every 3 \u03bcm covering 228 \u03bcm. A bright-field image of the EHF embryo at the initial time point is also shown. (i, ii and iii) Rationale of the expected evolution of GFP expression: since tracks carry information on reporter expression, if a cell acquires a high level of GFP, we predict that it is committed to differentiate. See also Video 12. (B\u2013D) Examples of time-lapse videos (B and C) and quantification of the GFP level (D) increasing in a single cell during differentiation (B) or remaining low in a cell located in the splanchnic mesoderm (C). A neural tube cell was additionally quantified (blue). Images are single optical sections. (E) Time course of individual cells tracked in the video shown in A. Cells with GFP levels above the median intensity value of all cells at the end of the recording are represented as green spheres and cells with lower GFP levels are shown as red spheres. (F) GFP level through time. Blue dotted line: median value (5249 a.u.). GFP level for each tracked cell was measured at five successive time points. Cell divisions are not represented for simplicity. (G) Normalized GFP level showing the relative increase in GFP levels for the GFP-positive cells at the end of the recording. Average increase: 2.77 fold\u00a0\u00b11.50, mean\u00a0\u00b1SD, n\u00a0=\u00a095 cells from three independent videos. (H) The position of cells that differentiate (green) and cells that do not is shown in the cc at the initial time point (EHF stage). (I) The lineage from cardiac precursors share differentiation fate. Lineages of dividing progenitors (n\u00a0=\u00a055 from three independent videos) were identified during early stages of cardiac differentiation. Two daughter cells are defined as sharing the same fate if their GFP intensity levels do not differ by more than 1.5-fold and/or both show levels above or below the threshold value defined. Scale bars: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Time-lapse video sequences of Nkx2.5eGFP embryos from Early Bud (A), cc (B) and open HT stage (C). Images are z-maximum projections of 75 sections acquired every 4 \u03bcm covering 300 \u03bcm in (A), 55 sections acquired every 6 \u03bcm covering 300 \u03bcm in (B) and 59 sections acquired every 5 \u03bcm covering 295 \u03bcm in (C). (B\u2019 and C\u2019): z-max projection covering 132 \u03bcm (B\u2019) and 60 \u03bcm (C\u2019) showing the dorsal opening and the dorsal closure of the HT at the end of the videos (representative of 3 embryos). See also Videos 9 and 11. Scale bars: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Single optical section of a tamoxifen-induced Nkx2.5eGFP; RERT+/-; Rosa26Rtdtomato+/- embryo showing a single endocardial labeled cell (white arrow). Scale bars: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A\u2013C) Time-lapse video of a dividing tdtomato+ cell. Images are single optical sections (same embryo as shown in Figure 4A). The dividing tdtomato+ cell and daughter cells are segmented and mean GFP level is measured. (D) Full 4D track of the dividing cell showing close localization of the progeny in the cardiac crescent. Scale bars: 100 \u03bcm.Moorman AF.\n\n![Video 13.](https://cdn.elifesciences.org/articles/30668/elife-30668-video13.mp4.jpg)\n\n**Video 13.:** Cells are represented as green spheres if considered GFP+\u00a0at the end of the time-lapse analysis and as red spheres when considered GFP-(representative analysis from three embryos). Interval between frames: 19 m 18 s Duration of the video: 5 hr 28 m 06 s. Related to Figure 5A.\n\nNext, in order to establish a fate map of the cardiac forming region at the EHF stage, we tracked back in time the population of cells that showed high GFP intensity (top 50%) at the end of the video (Figure 5F,H and Figure 5\u2014source data 1). According to our previous analysis (Figure 3D), these cells can reliably be assigned to cardiomyocytes. The initial location of this cell population fated to become cc cardiomyocytes delineates a crescent-shaped domain at EHF stage (Figure 5H). Cells retaining lower GFP intensity level throughout the video initially localize posteriorly and medially to this crescent. Most of the cells that have high GFP levels at the final time point show low GFP levels at the initial time point and increase their GFP level over time (Figure 5E\u2013G and Figure 5\u2014source data 1). These results suggest that cardiomyocytes of the cc differentiate during 5\u20136 hr starting at the EHF stage, which is consistent with the onset of detectable cTnnT at that stage (Figure 1B and Figure 1\u2014figure supplement 3).\n\nCells in the cardiac mesoderm do divide during the observation time, so we identified cell division events and tracked the descendant cells. 43% of the tracked cells underwent one division during the 4\u20135 hr videos. To determine whether cell fate (differentiation versus progenitor) is allocated in the cardiogenic mesoderm at the EHF stage, we tracked GFP levels in dividing cells and their descendants. We found that most sister cell pairs show matched high or low GFP intensity levels at the end of the observation period (38 out of 39, Figure 5I, Figure 5\u2014figure supplement 3A\u2013D and Figure 5\u2014source data 1). This observation suggests that commitment of cardiac precursors to differentiation is already established by the EHF stage and largely transmitted by lineage.\n\n### Cardiomyocyte differentiation is not detected during heart tube morphogenesis\n\nWe next studied cardiac differentiation dynamics during subsequent stages when the cc transforms into the HT by extensive morphogenesis. To do so, we tracked cells located in the splanchnic mesoderm and cc in Nkx2.5-eGFP embryos at successive periods of around 3 hr covering the 5\u20137 hr during which the transversal HT transforms into the open HT (Figure 6A,B,E, Video 14 and Figure 4\u2014source data 1). This analysis revealed that the trajectories of cc cells move apart from each other over time as the tissue expands during the transition from the transverse HT to the more spherical open HT. The HT starts to beat during the observation period, especially at the later stages, and therefore, in some cases, cardiomyocyte cell shape appears distorted in single optical sections (Figure 6F); however, the GFP level could be determined. As mentioned above, antero-medial movement of the splanchnic mesoderm can be observed concomitant with the transformation of the transversal HT into the open HT (visible also in Videos 5 and 12). We found that cells with high GFP level at the initial time points \u2013differentiated cardiomyocytes\u00a0\u2013 retain rather stable GFP levels (green tracks in Figure 6C,D,G and Figure 6\u2014source data 1). In addition, all cells that initially showed low GFP levels did not increase GFP intensity during time-lapse; thus new events of cardiac differentiation were not detectable by this approach (red tracks in Figure 6C,D). Tracking cells for longer periods of time, covering from cc differentiation continuously up to the open HT stage, confirmed that cc differentiation is followed by a period of time in which no differentiation events occur (Figure 6\u2014figure supplement 1, n\u00a0=\u00a019 cells tracked in one embryo).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) Initial and final time points of two time-lapse videos of tamoxifen-induced Nkx2.5eGFP; RERT+/-; Rosa26Rtdtomato+/- embryos covering the transformation of the transversal HT into the open HT. Images are z-maximum projections of 44 sections acquired every 5 \u03bcm covering 220 \u03bcm in (A) and of 46 sections acquired every 6 \u03bcm covering 276 \u03bcm in (B). See also Video 13. (C, D) GFP levels over time of the cells tracked in (A, B). GFP level for each tracked cell was measured at four successive time points. Green tracks represent cardiomyocytes with GFP intensity above the median intensity value of all the tracked cells at the last time point, while red tracks represent cells with lower GFP level. Blue dotted line represents the median intensity value (10748 a.u. in (C) and 12248a.u. in (D)). Note that when cells divide, only one of the two daughter cells was represented for simplicity. (E) Distribution of the tracked cells from the time-lapse video shown in (A) at the initial and final times of the tracking period. tdtomato+, GFP- cells are represented by red spheres and tdtomato+, GFP\u00a0+cells are represented by green spheres. (F) Example of tdtomato+ cardiomyocytes tracked in the beating ventricle. (G) Normalized progression of GFP level in cells classified as GFP+ showing stable GFP levels. Data collected from 125 tracked cells from four independent videos of 2h52m to 3h12m duration. Average increase: 1.1-fold\u00a0\u00b10.28, mean\u00a0\u00b1SD. (H) Magnification extracted from the video in A (yellow inset) of tdtomato+ cells in the boundary zone between the undifferentiated and differentiated cells. (I) Quantification of GFP level through time of the three segmented cells shown in (H). Cells show stable GFP levels and do not differentiate. Images are z-maximum projections of 6 sections acquired every 5 \u03bcm covering 30 \u03bcm. Scale bars: 100 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Initial and final images from a time-lapse video of a tamoxifen-induced RERT+/-; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo. Images are z-maximum projection of 44 sections acquired every 5 \u03bcm covering 220 \u03bcm. (B) GFP levels over time of the cells tracked in (A). GFP level for each tracked cell was measured at five successive time points. Green tracks represent cells with GFP intensity above the median intensity value of all the tracked cells at the last time point, while red tracks represent cells that maintain lower GFP levels. The blue dotted line represents the median intensity value. (C) Mean intensity value for all the green and red tracks and SD. Note that on average the GFP intensity of the green tracks becomes stable from around the transversal HT stage (around t\u00a0=\u00a0300 m). Scale bars: 100 \u03bcm.\n\n![Video 14.](https://cdn.elifesciences.org/articles/30668/elife-30668-video14.mp4.jpg)\n\n**Video 14.:** Cells are represented as green spheres if considered GFP+ at the end of the time-lapse analysis and as red spheres when considered GFP-(Representative analysis from three embryos). Interval between frames: 7 m 40 s. Duration of the video: 3 hr 12 m. Related to Figure 6A.\n\nTo confirm the absence of detectable cardiac differentiation events during this period, we next focused on the live analysis of cells located at the boundary between cardiomyocytes and undifferentiated splanchnic mesoderm. As expected, we observed GFP-low cells located adjacent to GFP-high cells in the boundary zone (Figure 6H and Video 14). Those cells retain stable GFP levels throughout the tracking time and did not increase their GFP level (Figure 6I, boundary imaged 20 times in different locations and in six independent embryos). Importantly, they retain a columnar shape typical of weak cTnnT+ and cTnnT- cells located at the boundary zone (see Figure 2F\u2019\u2019 and Figure 3B\u2019). Although these cells migrate antero-medially relative to the underlying more static endodermal cells (see endodermal cell highlighted by the red arrow from t\u00a0=\u00a069 m in Video 9), they do not contribute to the HT during the observation period. We confirmed this observation in longer time-lapse videos spanning 7 hr that covered the whole transition from transversal to open HT stage. Again, progenitors strictly respected the boundary with the HT throughout the entire time-lapse video (Figure 7A\u2013A\u2019\u2019\u2019 and Video 15, boundary imaged five times in different locations and in two independent embryos). All together, these data suggest that during the transformation of the cc into the dorsally open HT no cardiomyocytes are added to the HT from the SHF. These observations suggest two distinct phases of early HT formation: a first phase of differentiation of the FHF into the cc, lasting around 5 hr, and a second phase of HT morphogenesis in which the SHF progenitors remain undifferentiated, lasting around 5\u20137 hr. During this second phase, extensive remodeling of the cardiac crescent is concomitant with the antero-medial splanchnic mesoderm displacement.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013A\u2019\u2019) Images\u00a0from\u00a0time-lapse Video 15 of\u00a0a tamoxifen-induced RERT+/-; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo during the stages at which the transversal HT transforms into an open HT, showing cells located in the splanchnic mesoderm (white arrows in A\u2019 and A\u2019\u2019), respecting the boundary with the HT (yellow arrows in J\u2019 show two cells located in the HT). Lower doses of tamoxifen were injected in order to label only a very small proportion of cells in red. Images are z-maximum projection of 74 sections (A),\u00a0acquired every 4 \u03bcm covering 296 \u03bcm and (A\u2019) 7 sections covering 28 \u03bcm. (A\u2019\u2019) 3D reconstruction based of the Nkx2.5eGFP signal (green) and tdtomato\u00a0+cells located in the splanchnic mesoderm. See also Video 14. Scale bars: 100 \u03bcm. Splan. meso: splanchnic mesoderm.\n\n![Video 15.](https://cdn.elifesciences.org/articles/30668/elife-30668-video15.mp4.jpg)\n\n**Video 15.:** Interval between frames: 19 m 19 s. Duration of the video: 7 hr 24 m 35 s. (2nd half) 3D reconstruction at three time points based of the eGFP signal (green) and red-labeled cells located in the splanchnic mesoderm. Related to Figure 7A.\n\n### Imaging the Isl1-expressing cell lineage confirms absence of cardiac progenitor differentiation during early heart tube morphogenesis\n\nThe LIM domain transcription factor Islet1 (Isl1) is a cardiac progenitor marker. Its expression is transient in the precursors of the cc, while it remains expressed in SHF progenitors for an extended period (Brade et al., 2007; Prall et al., 2007; Yuan and Schoenwolf, 2000). Cells of the Isl1-expressing lineage detected with Cre reporters therefore contribute only scarcely to the cc, while extensively to the SHF and its derivatives (Cai et al., 2003; Ma et al., 2008). To test these observations in live imaging, we combined Nkx2.5eGFP with tracing of the Isl1 cell lineage using the Isl1cre driver and the Rosa26Rtdtomato reporter. We found that tdtomato labeling is first detectable in scarce isolated cells of the GFP+ cc during the period when the cc swings ventrally and differentiates (from t\u00a0=\u00a02 hr 36 m to t\u00a0=\u00a04 hr in Figure 8A,B). In contrast, a dense tdtomato labeling appears in the GFP-low cells of the splanchnic mesoderm as the cardiac crescent fully differentiates (from t\u00a0=\u00a02h24 m to t\u00a0=\u00a04 hr in Figure 8A and C and Video 16). tdtomato is as well detected in the endoderm and endocardium (not shown). Consistently with previous reports (Cai et al., 2003), Isl1cre-induced recombination detected in live analysis is thus low in the cc and complete in the SHF.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig8-v2.jpg)\n\n**Figure 8.:** (A) Image sequence from time-lapse Video 16 of an Isl1cre/+; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo showing that recombination driven by Islet1cre of the Rosa26 locus is complete in the splanchnic mesoderm and scarce in the FHF (n\u00a0=\u00a03 videos from cc up to open HT stage). (B) Inset from A (yellow frame). Two cells of the Isl1+ lineage located in the cc increase their tdtomato level over time. (C) Inset from A (Red frame); increase of the tdtomato intensity in the splanchnic mesoderm over time. Arrow shows the boundary between SHF and FHF and points to a single cell in the SHF that retains a low level of GFP and a columnar shape. Note that tdtomato signal is also detectable in the endoderm. Images are z-maximum projection of 45 sections acquired every 5 \u03bcm and covering 225 \u03bcm in (A) and of 6 sections covering 30 \u03bcm in (C). (D) Same embryo as in (A) post-fixed and immunostained against cTnnT after live-imaging, showing that the red cells located in the splanchnic mesoderm are undifferentiated. Scale bars: 100 \u03bcm.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A\u2013A\u2019\u2019) RERT+/-; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo at transversal HT stage. (A) z-maximum projection of 74 sections acquired every 4 \u03bcm and covering 296 \u03bcm. Same embryo as in Figure 6A. (A\u2019) Single optical z-section positioned at the white dotted line shown in (A). This z-section shows the green signal decay at deep z positions (z\u00a0=\u00a00 to \u2212274 \u03bcm). (A\u2019\u2019) An xy frame corresponding to a \u2212272 \u00b5m z-position (indicated by the red dotted line in (A\u2019) at different time points during the video. The white arrow indicates td-tomato+ cells.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Time course of a tamoxifen-induced RERT+/-; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo during linear HT formation. Images are z-maximum projection of 44 sections acquired every 5 \u03bcm covering 220 \u03bcm. (B) Time course of individual cells tracked within the yellow-framed region in video (A). (C) GFP levels over time of the cells tracked in (B) Cell 1 shows high GFP level throughout the video while cell 2 and 3 increase their GFP level over time. The blue line represents a neural tube cell. The dotted line marks the 1h30m time point. Scale bars100\u03bcm.\n\n![Video 16.](https://cdn.elifesciences.org/articles/30668/elife-30668-video16.mp4.jpg)\n\n**Video 16.:** Interval between frames: 6 m. Duration of the video: 7 hr 18 m. Related to Figure 8A.\n\nOnce the cc is formed, if cells of the SHF would continuously differentiate, then regions of the forming heart tube contributed by the SHF precursors should appear densely co-labeled with both GFP and tdtomato. Live imaging shows instead that tdtomato+ cells establish a boundary with GFP+ cells, confirming no signs of differentiation of SHF precursors during the observation period (Figure 8A,C and Video 17). The live imaging, however, did not allow to unambiguously identify all cells located deep inside the live tissue at the final stages recorded. The arterial pole in particular is located deep in the embryo. It is therefore challenging to accurately track cardiac differentiation by the increase of GFP levels there (Figure 8\u2014figure supplement 1A\u2013A\u2019\u2019, from around 200 \u03bcm depth, see next section). To overcome these limitations, we fixed and immunostained embryos against cTnnT after completion of the live-imaging experiments, and imaged them by 3D confocal microscopy. No solid domains containing double-labeled cells were detected, indicating that progenitors located in the SHF did not undergo differentiation in the boundary zone from cc to open HT stage (Figure 8D). These results are consistent with the single-cell tracking analysis and confirm that the SHF does not differentiate during linear HT morphogenesis.\n\n![Video 17.](https://cdn.elifesciences.org/articles/30668/elife-30668-video17.mp4.jpg)\n\n**Video 17.:** Related to Figure 8C.\n\n### Cardiac differentiation is detected during the late stages of HT development\n\nWe next wanted to determine when cardiac progenitors located in the SHF start to differentiate. In order to address the timing of SHF contribution to the arterial pole, we next fixed and optically cleared Nkx2.5eGFP; Ils1cre/+; Rosa26Rtdtomato+/- embryos at different stages from cc up to heart looping (n\u00a0=\u00a010) and assessed the appearance of GFP and tdtomato double-positive domains in the HT. In agreement with our previous observations, we found that SHF cells do not differentiate up to the open HT stage, when the dorsal seam of the heart is still open. In contrast, massive appearance of solid domains of double positive cells is observed subsequently in the fully closed HT, reinforcing our previous interpretation (Figure 9A,B and Videos 18,19). At this stage, the primordium of the RV has been added at the arterial pole (Zaffran et al., 2004; Laugwitz et al., 2005; Moretti et al., 2006) and is fully composed of double-positive cells. The dorsal seam of the HT is also densely populated by double-positive cells, indicating a contribution of precursors from the splanchnic mesoderm to the cardiomyocyte population that finalizes the dorsal closure of the linear HT.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig9-v2.jpg)\n\n**Figure 9.:** (A, B) Isl1cre/+; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryos showing no contribution of the Isl1 lineage to the transversal HT (A\u2013A\u2019\u2019) but contributing robustly to the arterial pole and dorsal aspect of the linear HT (B\u2013 B\u2019\u2019). The presence of double-positive cells in these areas reveals the differentiation of Isl1 lineage cells into cardiomyocytes (A, B). Images are 74 and 134 optical sections acquired every 2.5 \u03bcm and covering 195 \u03bcm and 335 \u03bcm, respectively. In (B, B\u2019) only the double-positive cells located in the linear HT are shown, while the tdtomato+ progenitors, located outside the linear HT are not shown. Lateral views are shown in (A\u2019, B\u2019) including 3D reconstructions. (A\u2019\u2019) Cross-sections in xy along the dotted lines shown in (A\u2019). Dorsal views are shown in (B\u2019\u2019) including the 3D reconstruction of the tdtomato+ cells located in the linear HT. White arrows show the dorsal (mesocardial) regions of the linear HT. (C) Snapshots of an Ils1cre/+; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryo at different time points during the third phase showing that the tdtomato+ SHF cells contribute to the arterial pole of the HT. Images are 52 optical sections acquired every 5 \u03bcm and covering 260 \u03bcm. The embryo was imaged continuously every 13 m for the first 6 hr of culture and then imaged once again at time point 9h30m. Note that at the last time point, the laser was increased at maximum power in order to reveal more clearly the red labeled cells at the arterial pole. The contrast had to be enhanced as well. (C\u2019) Images at time points 0, 4h48m and 9h30m. Images at time points 0 and 4h48m are z-maximum projection of 5 sections covering 25 \u03bcm. Image at 9h30m is a single optical section. at: arterial pole. endo: endoderm, splan meso: splanchnic mesoderm. Scale bars: 100 \u03bcm.\n\n![Video 18.](https://cdn.elifesciences.org/articles/30668/elife-30668-video18.mp4.jpg)\n\n**Video 18.:** Related to Figure 9A.\n\n![Video 19.](https://cdn.elifesciences.org/articles/30668/elife-30668-video19.mp4.jpg)\n\n**Video 19.:** Related to Figure 9B.\n\nIn order to capture the initiation of SHF contribution to the HT by live imaging, we first focused on the venous pole, as this region is more directly exposed than the rest of the HT and therefore more suitable for live-imaging. In videos that captured the transition from the open HT to the closed linear HT, some cells at the border between the FHF and SHF maintain low GFP levels during the first part of the recording and upregulate GFP to the level of the cardiomyocyte population as the HT forms (Figure 8\u2014figure supplement 2). We next aimed to live-track the activation of SHF differentiation at the arterial pole. Because of the imaging limitations in this area, quantitative analysis of the GFP signal was not possible and we instead used the qualitative detection of SHF cells addition to the HT. To achieve this, we imaged an Nkx2.5eGFP; Ils1cre/+; Rosa26Rtdtomato+/- embryo at successive time points throughout the transition from open to linear HT and tracked tdtomato+ cells incorporation to the HT at the arterial pole. This study further confirmed that SHF differentiation at the arterial pole is initiated when the HT is about to close dorsally but not before (Figure 9C). Thus, SHF cells do not differentiate during the 5\u20137 hr period when morphogenesis of the open HT takes place, but coordinately start differentiation at different regions of the HT during dorsal closure. Interestingly, these regions do not only include arterial and venous poles but also the dorsal seam of the HT.\n\n## Discussion\n\nHere, we established a whole-embryo live-imaging method based on two-photon microscopy that allows whole-tissue tracking at cellular resolution. By combining various genetic tracing tools, we labeled progenitor and differentiated cardiomyocytes and performed 3D cell tracking over time combined with 3D reconstruction of the HT at multiple stages. We report three distinct temporal phases of HT formation (Figure 10). During the first phase, the cc differentiates rapidly and morphogenesis, in terms of changes in the relative position of cells, is minimal. During the second phase, differentiation is not detected and morphogenetic remodeling gives rise to a dorsally open HT. During the third phase, cardiac precursor recruitment and differentiation resumes, contributing to the formation of the RV and the dorsal closure of the HT. Our results support the early establishment of distinct FHF and SHF cell populations and show that the morphogenetic changes that transform the cc into a HT largely take place in the absence of cardiac precursor differentiation. These observations indicate tissue-level coordination of differentiation and morphogenesis during early cardiogenesis in the mouse.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/30668/elife-30668-fig10-v2.jpg)\n\n**Figure 10.:** We propose that two distinct phases of cardiomyocyte differentiation take place during early heart development. At EHF stage the cc differentiates and starts folding. Cardiomyocytes round up and become contractile while the cardiac progenitors located in the splanchnic mesoderm remain undifferentiated. Subsequently, the cc. undergoes further morphogenesis to transform into a HT, initially open dorsally and no cardiomyocyte differentiation is detected during this transformation. Finally, cardiac differentiation resumes contributing new cardiomyocytes from the splanchnic mesoderm to the arterial pole (prospective RV) and the dorsal closure of the HT.\n\nThe series of 3D reconstructions from fixed embryos was important to establish a reference staging of HT formation. This allowed us to accurately stage embryos in live experiments based on morphology and it will also be useful in the future for gene expression mapping and accurate phenotypic analysis of mutant embryos. The tissue growth pattern observed in static 3D reconstructions was insightful to suggest variability in growth rates during different phases of HT formation. Growth of the differentiated cardiac tissue is relatively paused when the cc undergoes morphogenesis to form the open HT during the second phase. This is consistent with previous studies in mouse, chick and human models showing that proliferation drops in the differentiated myocardium of the forming HT, while proliferation remains high in the splanchnic mesoderm (van den Berg et al., 2009; de Boer et al., 2012; Sizarov et al., 2011). Our live analysis further showed that SHF cells do not contribute to the forming HT during the differentiation pause, which correlates with the growth rate reduction during this phase. This period coincides as well with the onset of cardiac contractility in the embryo (Tyser et al., 2016).\n\nFollowing the phase of differentiation pause, growth of the HT is reinitiated by incorporation of new cells as the HT closes dorsally and the RV precursors are added at the arterial pole during the third phase. During this third phase, similarities were found in the differentiation dynamics of SHF precursors and splanchnic precursors contributing to the dorsal regions of the linear HT. The dorsal aspect of the linear HT gives rise to the inner curvature of the looped heart, which has an important contribution to non-chamber myocardium, including atrio-ventricular canal and parts of the conduction system (Christoffels et al., 2000). Our results suggest that the late recruitment of progenitors to the dorsal HT could contribute to differences between inner curvature cardiomyocytes and the rest of the heart tube.\n\nWhile the live-imaging experiments were essential for the identification of the 5\u20137 hr hiatus between FHF and SHF differentiation, live imaging of the arterial pole during the SHF differentiation phase was challenging and was complemented by 3D reconstructions based on fixed and optically cleared embryos. These experiments confirmed the pause in differentiation during open HT formation and its reactivation during linear HT closure. In the future, it will be interesting to explore whether novel non-toxic index-matching media compatible with\u00a0embryo viability (Boothe et al., 2017) may alleviate the limitations for deep cardiac imaging during late HT formation.\n\nRegarding the specification of FHF and SHF populations, previous prospective clonal analyses showed that these lineages diverge around gastrulation (Devine et al., 2014; Lescroart et al., 2014). In agreement with this, our tracking of cell lineages in the cardiac forming region shows that sister cells share fates to either the cardiac crescent or the SHF. In addition, the fact that cells contributing to the SHF do not differentiate during the period when the cardiac crescent transforms into the primitive heart tube may contribute to the establishment of the sharp boundary observed between left and right ventricles later in development (Devine et al., 2014). Further studies will be required to assess how this temporal pause of cardiac differentiation is regulated. The molecular analyses of early FHF and SHF precursors suggest that intrinsic molecular differences between the two lineages appear around or shortly after gastrulation (Lescroart et al., 2014). These intrinsic differences may contribute to the regulation of the two distinct differentiation schedules described here. These studies and our observations, however, cannot discriminate whether this lineage allocation results from intrinsic differences between these lineages or it is due to their exposure to position-specific environments, especially as in our studies sister cells remain close neighbors. Environmental cues thus could also control the sequential differentiation of FHF and SHF precursors. The Wnt and BMP pathways are well known regulators of cardiac differentiation (Ai et al., 2007; Jain et al., 2015; Klaus et al., 2007; Kwon et al., 2007; Marvin et al., 2001; Qyang et al., 2007; Tirosh-Finkel et al., 2010; Ueno et al., 2007) and specific mechanisms affecting these pathways could be operating during the formation the HT, whereby the differentiation pathways could be temporally restrained. Finally, the endoderm may also play a key role in mediating FHF differentiation. Indeed cardiac mesoderm differentiation is affected in the absence of Sox17 -a transcription factor required for maintenance of the definitive endoderm- and this is accompanied by the formation of a morphologically abnormal HT (Pfister et al., 2011). It remains, however, unclear whether this effect is secondary to an initial defect in foregut development that is observed in this mutant.\n\nA recent study reported spontaneous calcium transients propagating laterally thought the cardiac crescent (Tyser et al., 2016). Left/Right (L/R) asymmetry therefore exists within the cardiac crescent, prior to any detectable cardiac contraction, and BMP/SMAD1 signaling in the lateral plate mesoderm may be involved in this asymmetry (Furtado et al., 2008). In our studies, however, we did not detect any L/R difference in cTnnT expression by whole-mount immunodetection or Nkx2.5GFP activation by live analysis in the cc.\n\nRegarding the possible conservation of the temporal differentiation sequence described here, elegant experiments in zebrafish using a cardiac myosin light chain reporter line and a Kaede photo-conversion assay, addressed the temporal order of cardiac differentiation in live embryos (de Pater et al., 2009; Liu and Stainier, 2012). Two distinct phases of cardiomyocyte differentiation were also observed. During a first phase, cardiomyocytes were recruited first into the ventricle and atria at the venous pole. During a second phase, cardiomyocyte differentiation was observed at the arterial pole of the HT. These pulse-chase experiments, however, do not address whether cardiac differentiation is continuous or includes a differentiation-paused phase, so further studies will be required to establish the conservation of the observations made here for the mouse embryo.\n\nFinally, an important question to address is the functional relevance of the three distinct phases described here; more specifically, what is the role of the observed differentiation pause. An interesting possibility is that this pause would be functionally related to the extensive morphogenetic events that transform the cardiac crescent into the HT. Our study demonstrates coordinated splanchnic mesoderm movements during this phase. These movements involve a very active antero-medial displacement of the splanchnic mesoderm surrounding the cc -mostly fated to the SHF-. This behavior of the splanchnic mesoderm appears essential for transforming the cc into a dorsally closed HT. Importantly, this displacement involves the sliding of the splanchnic layer over the endoderm, suggesting an active role of SHF precursors in this morphogenetic movement. Such displacement of the splanchnic mesoderm over the endoderm during cardiogenesis had been suggested by classical time-lapse studies in the chick embryo (Dehaan, 1963), and it is tempting to speculate that a similar phenomenon contributes to the incorporation of SHF cells to both poles of the HT at later stages of HT development (van den Berg et al., 2009; Kelly et al., 2001; Zaffran et al., 2004). These observations suggest that SHF cells do not represent just a reservoir of cardiac precursors but play a morphogenetic role essential for heart tube formation. The main consequence of the displacement of the splanchnic mesoderm layer over the endoderm is the medial convergence of the left and right frontiers between the cc and SHF to form the dorsal mesocardium and close the HT. An important consequence of the differentiation pause described here is the stability of the cc/SHF frontiers during these morphogenetic movements. This stability prevents further spreading of the differentiation wave from the cc into the SHF/splanchnic mesoderm, which could interfere the ability of the latter to efficiently displace over the endoderm. We therefore hypothesize that the stability of the cc/SHF frontiers \u2013\u00a0and thus the differentiation pause\u00a0\u2013 would be essential to allow the effective displacement of SHF/splanchnic mesoderm and elicit HT formation. The temporal allocation of the morphogenetic phase after cc differentiation allows the formation of the HT while simultaneously providing an incipient cardiac function essential for the organization of embryonic circulation. This hypothesis poses a functional basis for the alternation of differentiation and morphogenesis phases during HT formation.\n\nOur study applies whole-embryo live analysis of cardiac development at tissue level and with cellular resolution. We expect that extending this experimental approach will allow to further uncover unexpected and novel mechanisms of organogenesis. While limited attention had been paid so far to the temporal dynamics of differentiation during embryonic development, this is an essential aspect of organogenesis (Gogendeau et al., 2015; Parchem et al., 2015; Yang et al., 2015). Here, we show the relevance of differentiation timing regulation during heart tube formation and its coordination with morphogenesis at the tissue level. Further understanding of the molecular and cellular mechanisms underlying these phenomena will help us expanding pools of cardiac progenitors in vitro or directing them towards differentiation.\n\n## Materials and methods\n\n### Mouse strains\n\nMouse alleles used in the manuscript are listed including bibliographic references and allele identities at the \u2018Mouse Genome Informatics\u2019 data base (MGI, http://www.informatics.jax.org/). Mesp1cre (Saga et al., 1999, MGI:2176467), Isl1cre (Cai et al., 2003, MGI:3623159), Nkx2.5cre (Stanley et al., 2002, MGI:2448972), Rosa26Rtdtomato (Madisen et al., 2010, MGI:3809524), Rosa26RmTmG (Muzumdar et al., 2007, MGI:3716464), Nkx2.5eGFP (Wu et al., 2006, MGI:5788423), Polr2aCreERT2 (RERT) (Guerra et al., 2003, MGI:3772332) and C57BL/6 (Charles River). Mice were genotyped as previously described. All animal procedures were approved by the CNIC Animal Experimentation Ethics Committee, by the Community of Madrid (Ref. PROEX 220/15) and conformed to EU Directive 2010/63EU and Recommendation 2007/526/EC regarding the protection of animals used for experimental and other scientific purposes, enforced in Spanish law under Real Decreto 1201/2005.\n\n### Immunostaining and imaging\n\nEmbryos dissected in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Invitrogen) were fixed overnight in 2% PFA at 4C, then permeabilized in PBST (PBS containing 0.1% Triton X-100) and blocked (5% goat serum). Embryos were incubated overnight at 4\u00b0C with antibodies diluted in PBST: mouse anti-cTnnT (1:250, MS-295 Thermo Scientific), rabbit anti-PH3 (1:250, 06\u2013570 Millipore), CD31 (553370 BD Pharmingen clone MEC 13.3), SMA (C6198 Sigma) and rabbit anti-Laminin1 (1:500, Sigma, L9393). After washing in freshly prepared PBST at 4\u00b0C, embryos were incubated with secondary antibodies (Molecular Probes, A21121, A21141, A11035) coupled to 488, 549 or 649 fluorophores as required at 1:250 and DAPI at 1:500 (Molecular Probes, D3571) overnight at 4\u00b0C. Before imaging, embryos were washed in PBST at room temperature and cleared with focus clear (Cell Explorer, FC-101) to enhance the transparency of the embryo. Confocal images were obtained on a SP8 Leica confocal microscope with a 20X oil objective (0.7 NA) at a 1024\u00a0\u00d7\u00a01024 pixels dimension with a z-step of 2\u20134 \u03bcm. Embryos were systematically imaged throughout the entire heart tube from top to bottom.\n\n### 3D reconstruction and volumetric measurement\n\nFor 3D rendering, fluorescent signal in confocal z-stacks was first segmented by setting intensity thresholds using the trainable Weka segmentation tool plugin available in Fiji (Arganda-Carreras et al., 2017; Schindelin et al., 2012). The resulting z-stacks were then corrected manually on a slide-by-slide basis to eliminate segmentation mistakes. In case of the cTnnT immunofluorescence images (Figure 1), background signal from the yolk sack was manually masked. The volume of the cTnnT positive myocardium was then computed by multiplying the total segmented area by the z-stack interval using a custom Fiji macro. In the Nkx2.5cre/+; Rosa26tdtomato+/- and Nkx2.5eGFP embryos, fluorophore signal present in the endothelium, endocardium and endoderm cells was manually masked prior to segmentation (Figure 1A, Figure 1\u2014figure supplement 1, Figure 2B, Figure 2\u2014figure supplement 2A,A\u2019 and, Figure 6A\u2019\u2019). For 3D visualization of the 3D segmented image stacks, Imaris software (Bitplane) was used.\n\n### Embryo culture and two-photon live-imaging\n\nEmbryos were dissected at E7.5 in pre-equilibrated DMEM supplemented with 10% foetal bovine serum, 25 mM HEPES-NaOH (pH 7.2), penicillin (50\u03bcml21) and streptomycin (50mgml21). Embryos were staged on the basis of morphological criteria (supplementary Figure 1) (Downs and Davies, 1993; Lawson and Wilson, 2016), and those between the bud and early somitogenesis stages were used for culture and time-lapse imaging. To track the early phase of cardiac differentiation and subsequent phases of morphogenesis, we used embryos at EHF to transversal HT stage. Embryos were cultured in 50% fresh rat serum, 48% DMEM without phenol red, 1% N-2 neuronal growth supplement (100X, Invitrogen 17502\u2013048) and 1% B-27 supplement (50X Thermo Fisher Scientist 17504044) filter sterilised through a 0.2 mm filter. To hold embryos in position during time-lapse acquisition, we made special plastic holders with holes of different diameters (0.5\u20133 mm) to ensure a good fit of embryos similarly to the traps developed by Nonaka, 2009, Nonaka et al. (2002). Embryos were mounted with their anterior side facing up. To avoid evaporation, the medium was covered with mineral oil (Sigma-Aldrich; M8410). Before starting the time-lapse acquisition, embryos were first pre-cultured for at least 2 hr in the microscopy culture set up. The morphology of the embryo was then carefully monitored and if the embryos appeared unhealthy or rotate and move, they were discarded, otherwise, time-lapse acquisition was performed. For the acquisition, we used the Zeiss LSM780 equipped with a 5% CO2 incubator and a heating chamber maintaining 37\u00b0C. The objective lens used was a 20X(NA\u00a0=\u00a01) dipping objective, which allowed a long working distance for imaging mouse embryos and tissues. A MaiTai laser line at 1000 nm was used for two-channel two-photon imaging. Acquisition was done using Zen software (Zeiss). Typical image settings were: output power: 250 mW, pixel dwell time: 7\u03bcs, line averaging: two and image dimension: 610 \u00d7 610 \u03bcm (1024 \u00d7 1024 pixels). To maximize the chance of covering the entire heart tube during long-term time lapse videos, we allowed 150\u2013200 \u03bcm of free space between the objective and the embryo at the beginning of the recording.\n\n### Cell labeling, 3D tracking and GFP intensity measurement\n\nFor labeling single cells, tamoxifen was administered by oral gavage (2\u20134 mg/mL) in RERT;Rosa26R-tdtomato (cell tracking) or RERT;Rosa26RmTmG mice (cell shape study) at E7. Cell shape measurements were done on single cells, imaged in mosaic-labeled, fixed and immunostained embryos and analyzed with Fiji software (Figure 2D,E). Tracking of tdtomato-labeled cells was done on single cells located within the cardiogenic mesoderm -excluding endothelial, pericardial and endodermal cells- and their GFP intensity was measured over time. To track cells manually in 4D stacks, the MTrackJ Fiji plugin (Meijering et al., 2012) was used. A local square cursor (25 \u00d7 25 pixels) on the cell of interest snaps according to a bright centroid feature on a slice-by-slice basis. Only tracks lasting for the entire length of the video were kept. When an ambiguity arises in the tracking between consecutive time points, the track was discarded. Tracks split at cell divisions. A cell division event is normally clearly distinguishable over at least two time points. In case one of the two daughter cells is not tractable, the other daughter cell is still tracked. Each track is assigned an ID number and excel files with all the tracks coordinates in x, y, z and t was generated. Coordinates of each track were converted into 8-bit 4D images using a custom Fiji macro in which each cell was represented by a sphere of specific pixel intensity, from 1 to 255, while pixels corresponding to background were set to zero. The 4D images were then opened with Imaris to perform visualization of the 3D trajectories of each cell using the \u2018spots\u2019 tool, where each object were identified according to pixel intensity. GFP intensity measurement is performed by segmentation of cell shape. A Gaussian filter whose radius is adjusted to the typical size of a cell was first applied, followed by a Laplacian filter. The resulting 32 bits image was next converted to a mask by thresholding. When objects touched each other, a watershed on the binary mask and manual corrections was applied. Each segmented cell was checked and tracked manually for accuracy. In Figure 3B\u2019 nuclei segmentation was performed manually. The mean GFP signal intensity of the segmented objects was then measured using the \u2018analyze particle\u2019 tool in Fiji. To quantify the GFP level of tracked cells through time, four to five successive time points were arbitrarily chosen in each video (Figure 5F, Figure 6C,D and Figure 5\u2014figure supplement 1C) except in Figure 5D and Figure 6I, where GFP intensity level was measured in every time point. Background intensities were measured in neural tube cells, which are known to be negative for GFP and cTnnT. Tables containing ID number of tracked cells and GFP intensities were generated and plotted using Prism statistical software.\n\n### Statistical analysis\n\nFor comparisons of two groups, a Mann\u2013Whitney U-test was used using Prism statistical software. To find a correlation between GFP and cTnnT levels of 0.8 with an alpha-level f 0.05 and a power of 0.2 at least 10 cells per embryo were required (Figure 3D and Figure 3\u2014figure supplement 2C). Many more cells were computed for each experiment. The linear fit was done using \u2018lm\u2019 function from R statistical software (https://www.r-project.org/). To calculate the average speed of splanchnic mesoderm displacement, the shortest distance between the left and right splanchnic mesoderm was calculated in two z-level, using the measure tool in Fiji, and the variation in this distance by time unit was divided by 2, to determine the speed of movement of each sliding side of the splanchnic mesoderm.\n",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "fd3bae7c-fb98-4d05-a3fa-ac8cfd22bd14",
+      "submission_id": "c1ead47d-7e44-4eac-82a5-5b002611e422",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard P Harvey, Victor Chang Cardiac Research Institute Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30668.057](https://doi.org/10.7554/eLife.30668.057)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Live imaging of heart tube development in mouse reveals alternating phases of cardiac differentiation and morphogenesis\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Isabelle Migeotte (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an elegant paper that tracks in real time the movements and differentiation status of cells contributing to the heart, specifically discriminating between the behaviours of the first and second heart field. The study used fluorescent reporters and confocal microscopy to obtain high resolution 3 and 4D images of early mouse hearts, including highly informative time-lapse movies of heart tube formation in wildtype embryos. It brings together many disparate and mostly 2D findings into a more coherent concept and provides a way to visualise the formation of what is called the transverse heart tube. The authors careful observations make a number of new points, including defining distinct stages of heart tube morphogenesis based on detailed 3D reconstructions that will be extremely useful for staging embryos and defining gene expression and function. The most significant finding is the discovery of a differentiation hiatus during heart tube formation that corresponds to a phase of heart tube morphogenesis separating first and second heart progenitor cell differentiation. This pause also covers the onset of cardiac function. This is an important observation that further highlights the distinction between the early and late differentiating populations of cardiac progenitor cells. Although the authors did not investigate how this pause might be regulated, for example by studying heart tube formation in mutant embryos, their approach could be adapted for such analysis in the future, with the challenge of dealing with complex genetic crosses. The transition between progenitor and differentiation has been observed as an increase in the levels of Nkx2-5-GFP and cTnT. Importantly, this is not continuous and differentiation of FHF and SHF progenitors is separated by a time window of ~5-7 hours. This point has some considerable implications for conceptualising this transition in light of the various findings to date and the difficult issues surrounding the use of Cre reagents and Cre reporters of varying efficacy upon which the concept of FHF and SHF are in part built. How the situation in mouse relates to that in Zebrafish will remain unclear until more careful studies allow a more direct comparison between the two species. To our knowledge, live Imaging of mouse heart morphogenesis has never been performed for such long period with such high degree of cellular resolution and quantitative analysis of individual cells fate. The data nicely complement previous studies showing temporal waves of precursors at gastrulation corresponding to the FHF and SHF, and provides a credible explanation for the long period between the exit of those populations with different profiles from the streak, and their allocation to the proper anatomical position. The data is of high quality, and the health of the embryos is remarkable after quite a long imaging.\n\nEssential revisions:\n\n1) The data suggesting that FHF and SHF differentiation and morphogenetic behaviours are set within the cardiac crescent, does not formally address whether there are meaningful functional differences in lineage state between these populations. Geographical issues rather than lineage issues may determine the timing of differentiation and morphogenesis. This should be made very clear in the Discussion.\n\n2) Subsection \u201cImaging the Isl1-expressing cell lineage confirms absence of cardiac progenitor differentiation during early heart tube morphogenesis\u201d, first paragraph. With respect to the activation of the Isl1Cre x reporter, I think it is the efficacy of the Cre not the frequency of activation that is the issue. Please clarify.\n\n3) The reviewers disagree with the statement in the second paragraph of the Discussion that the contribution of the Isl1+ cells/SHF cells to the dorsal part of the primary HT will define these as non-chamber myocardium. This is not shown and lineage tracing by Christoffels with Tbx-Cre reagents show that non-working myocardium of the AVC and contribute significantly to chamber myocardium. Furthermore, it follows that the mosaic contribution of the SHF to the inflow/atrial region would also have to remain non-chamber myocardium. This is not shown and previous lineage tracing with Isl1 Cre and other reagents do not show exclusion form the atrial appendages (working myocardium). Please qualify appropriately.\n\n4) Technical information about the time period between frames would be useful.\n\n5) The Cre activation of Tomato also labels endoderm as can be seen in Figure 2A, especially in the sections. This should be commented on early in the Results, as it is later in the Isl1 section. Are endodermal cells also seen in Figure 1A? Have they been removed in the reconstructions? Please comment on the basis for the differences between the different Nkx2-5 alleles (Cre versus eGFP).\n\n6) The authors describe the major axis at the \"transversal\" hemitube stage as being transversal to the AP axis. The authors should clarify whether their data suggest that this axis is realigned or simply replaced by an AP axis during the transition to the linear HT.\n\n7) The authors are encouraged to elaborate in the Results section on what has been learnt from the dynamic imaging shown in Videos 5-8. For example, in the second paragraph of the subsection \u201c2-photon live-imaging of early cardiac development in the mouse embryo\u201d they state that this has provided information concerning the formation of the endocardium and lumen formation, yet they do not say what this information is. Similarly, can they expand on any new findings concerning the anterior movement of splanchnic mesoderm? Given that even the striking observation of the differentiation pause is validated using confocal imaging of fixed embryos it is important to highlight exactly what can be gained by time-lapse imaging. This clearly goes beyond concluding that increased Nkx2.5 expression reports cardiomyocyte differentiation (as stated as the conclusion of the next paragraph).\n\n8) The Discussion is short and could be extended, in part by elaborating on some of the points mentioned above. The observation that there is a growth pause coincident with the differentiation pause also merits discussion. The coincidence of this pause with the onset of cardiac function could also be further discussed. Also, in the Discussion, the authors state that addition of the SHF to the zebrafish heart is seen as a continuum. However this is unclear, and the original work of de Pater et al. suggest SHF addition demarcates a distinct late differentiation phase, not dissimilar to the authors' new observations in the mouse.\n\n9) Panel 4A explaining the live imaging set-up is slightly confusing. Was imaging of the second phase carried out by continuing imaging of embryos from the first phase or in separate experiments? Given the embryos can be cultured for 24 hours, were embryos imaged continuously through these two phases and if so were the results then the same for the second phase? Please clarify. It would be helpful to add a little more technical information to the first Results paragraph dealing with live imaging (subsection \u201c2-photon live-imaging of early cardiac development in the mouse embryo\u201d), mentioning maximal culture and imaging times and frequency of time-lapse acquisitions.\n\n10) Can the authors provide live imaging data of the third phase during which SHF cells initiate differentiation? This would be most interesting to document in time-lapse images and would significantly reinforce their hypothesis that this phase involves recovery from the differentiation hiatus.\n\n11) Concerning Figure 5, please clarify the significance of cells that remain columnar with low levels of GFP expression. Can the authors conclude that these are SHF cells versus endocardial cells?\n\n12) Making conclusions about lineage commitment by following the GFP status of sister cells seems a relatively weak argument. For example, do the authors envisage that cells would move from a GFP high to low state? It would potentially be more interesting to highlight that differentiation is not associated with a cell division event.\n\n13) It is unclear how the cells in Figure 2D and E were labeled. Please explain this more fully in the Results section.\n\n14) How do the authors consider that some of the tomato labeled cells in Figure 6H become further apart over time? Is it possible to generate a video of these views comparable to Video 16?\n",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a0ec9342-e5a0-4b64-a59d-ea4abc7ad656",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C1",
+      "claim": "During vertebrate heart development, two progenitor populations, first and second heart fields (FHF, SHF), sequentially contribute to longitudinal subdivisions of the heart tube.",
+      "claim_type": "EXPLICIT",
+      "source": "During vertebrate heart development, two progenitor populations, first and second heart fields (FHF, SHF), sequentially contribute to longitudinal subdivisions of the heart tube (HT), with the FHF contributing the left ventricle and part of the atria, and the SHF the rest of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in the field, supported by the manuscript's introduction and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f665835f-4064-4dd3-b5b5-0aea58ca6c06",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C2",
+      "claim": "The FHF contributes the left ventricle and part of the atria.",
+      "claim_type": "EXPLICIT",
+      "source": "During vertebrate heart development, two progenitor populations, first and second heart fields (FHF, SHF), sequentially contribute to longitudinal subdivisions of the heart tube (HT), with the FHF contributing the left ventricle and part of the atria, and the SHF the rest of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cited literature in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "a215cdf1-e957-4f4f-b222-37812433632a",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C3",
+      "claim": "The SHF contributes the rest of the heart (beyond left ventricle and part of atria).",
+      "claim_type": "EXPLICIT",
+      "source": "During vertebrate heart development, two progenitor populations, first and second heart fields (FHF, SHF), sequentially contribute to longitudinal subdivisions of the heart tube (HT), with the FHF contributing the left ventricle and part of the atria, and the SHF the rest of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "fdd5431b-7fc3-49f1-a2e4-5633ca5fd319",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C4",
+      "claim": "During an initial phase, FHF precursors differentiate rapidly to form a cardiac crescent, while limited morphogenesis takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that during an initial phase, FHF precursors differentiate rapidly to form a cardiac crescent, while limited morphogenesis takes place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by live imaging data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "d9c2396b-8ff9-43d0-87bd-f6a1d9514fdf",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C5",
+      "claim": "In a second phase, no differentiation occurs while extensive morphogenesis, including splanchnic mesoderm sliding over the endoderm, results in HT formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second phase, no differentiation occurs while extensive morphogenesis, including splanchnic mesoderm sliding over the endoderm, results in HT formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by live imaging and cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "27e7068b-5ac5-409b-a8ff-a5f4ae383020",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C6",
+      "claim": "In a third phase, cardiac precursor differentiation resumes and contributes to SHF-derived regions and the dorsal closure of the HT.",
+      "claim_type": "EXPLICIT",
+      "source": "In a third phase, cardiac precursor differentiation resumes and contributes to SHF-derived regions and the dorsal closure of the HT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by Isl1-Cre lineage tracing combined with live imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f33d67d2-3731-4798-887e-273e63729e05",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C7",
+      "claim": "At embryonic day (E) 7.5, cardiac precursors in the splanchnic mesoderm differentiate into cardiomyocytes by assembling the contractile sarcomere machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "At embryonic day (E) 7.5, cardiac precursors in the splanchnic mesoderm (mesoderm apposed to the endoderm) differentiate into cardiomyocytes by assembling the contractile sarcomere machinery (Tyser et al., 2016) and form a bilateral structure known as the cardiac crescent (cc) in the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tyser et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "382c6ead-d39a-404c-ac69-269705d14cb0",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C8",
+      "claim": "Cardiac precursors form a bilateral structure known as the cardiac crescent in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "At embryonic day (E) 7.5, cardiac precursors in the splanchnic mesoderm (mesoderm apposed to the endoderm) differentiate into cardiomyocytes by assembling the contractile sarcomere machinery (Tyser et al., 2016) and form a bilateral structure known as the cardiac crescent (cc) in the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "cd4519d2-dac2-4d37-8234-aeb788314db7",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C9",
+      "claim": "By E8.25, the heart tube has transformed into a closed and beating linear HT, also known as the primitive HT.",
+      "claim_type": "EXPLICIT",
+      "source": "By a complex morphogenetic process, the cc subsequently transforms into an early heart tube (HT) initially opened dorsally, which by E8.25 has transformed into a closed and beating linear HT, also known as the primitive HT (Evans et al., 2010; Kelly et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Evans et al., 2010 and Kelly et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6a3d2267-b282-4b01-bb6a-2b9fb47c00af",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C10",
+      "claim": "The cardiac crescent and early HT mainly give rise to the left ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "The cc and early HT mainly give rise to the left ventricle (Zaffran et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zaffran et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "7393e27d-0118-4630-8f3a-6816fd05cd93",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C11",
+      "claim": "The right ventricle, the outflow tract and most of the atria derive from cardiac progenitors located dorso-medially to the cardiac crescent in the splanchnic mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The right ventricle (RV), the outflow tract and most of the atria derive instead from cardiac progenitors located dorso-medially to the cc in the splanchnic mesoderm, that are progressively recruited at the poles of the HT at subsequent developmental stages (Cai et al., 2003; Kelly et al., 2001; Mjaatvedt et al., 2001; Waldo et al., 2001; Galli et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "921222cf-1c2a-4256-8446-694332f72c87",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C12",
+      "claim": "Clonal analysis supports the idea that FHF and SHF precursors are two independent developmental fields with dedicated molecular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal analysis (Devine et al., 2014; Lescroart et al., 2014; Meilhac et al., 2004a) supports the idea that FHF and SHF precursors are two independent developmental fields with dedicated molecular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clonal analysis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "9e8dfc94-b416-4dee-b907-412598ba0064",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C13",
+      "claim": "The SHF shares a common origin with the skeletal muscles of the head and neck within the pharyngeal mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal analysis also showed that the SHF shares a common origin with the skeletal muscles of the head and neck within the pharyngeal mesoderm (Lescroart et al., 2010; Lescroart et al., 2015), further supporting differences between FHF and SHF populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lescroart et al., 2010 and 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "498e5d22-16a3-4cf3-b64c-72e3fb071556",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C14",
+      "claim": "A common precursor between FHF and SHF was reported in the early mouse embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of a common precursor between FHF and SHF was also reported in the early mouse embryo (Meilhac et al., 2004a) and other views suggest that the heart would form by a continuous differentiation process from a single population of cardiac precursors and only timing of recruitment would distinguish cells of the FHF and SHF (Abu-Issa et al., 2004; Moorman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Meilhac et al., 2004a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "7399e103-7eb1-4236-9acb-d2cbd5a0783e",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C15",
+      "claim": "Islet1 is transiently expressed in FHF precursors and must be considered as a widespread cardiac progenitor marker.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the latter, the typical marker of the SHF, Islet1 (Cai et al., 2003), is also transiently expressed in FHF precursors and must therefore be considered as widespread cardiac progenitor marker instead (Cai et al., 2003; Prall et al., 2007; Yuan and Schoenwolf, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "8dba8ef3-b468-4ac5-90c6-b26e4049b18a",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C16",
+      "claim": "Before cardiac crescent differentiation, at early head fold stage (EHF, ~E7.5), the cardiogenic region is visualized as a flat horse shoe-shaped tdtomato+ mesodermal layer at the rostral border of the embryo in Nkx2.5cre/+; Rosa26Rtdtomato+/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Before cc differentiation, at early head fold stage (EHF, ~E7.5), the cardiogenic region is visualized as a flat horse shoe-shaped tdtomato+ mesodermal layer at the rostral border of the embryo (Figure 1A,A', and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f3273c2b-87ad-43cf-9f2c-e0e87ffc008e",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C17",
+      "claim": "In Nkx2.5cre/+; Rosa26Rtdtomato+/- embryos, tdtomato labeling is observed in the endocardium and endothelial cells but not in the endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Nkx2.5cre/+; Rosa26Rtdtomato+/- embryos, tdtomato labeling is also observed in the endocardium and endothelial cells (Stanley et al., 2002) but not in the endoderm (Figure 1\u2014figure supplement 2A,A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the data and supported by citation to Stanley et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c3b8cb11-d2cd-43f7-8cc1-9b88274f55f4",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C18",
+      "claim": "At EHF stage, most embryos are negative for cTnnT expression, though some embryos show weak cTnnT localization in subsets of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At EHF stage (Figure 1B), while most embryos are negative for cTnnT expression, some embryos show weak cTnnT localization in subsets of cells (Figure 1\u2014figure supplement 3A,A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in immunostaining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "3b9bbbb8-43d7-45a1-8f57-948f119bf049",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C19",
+      "claim": "During cardiac crescent differentiation, cardiac precursors switch from a columnar epithelial shape to a rounded shape.",
+      "claim_type": "EXPLICIT",
+      "source": "During differentiation, cardiac precursors switch to a rounded shape (Linask et al., 1997) (Figure 1C,D) and separate from the endoderm, while maintaining a basal lamina at the endocardial side (inset in Figure 1D and Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the imaging data and supported by citation to Linask et al., 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "b9f17f26-9149-444c-b761-3cfec055b696",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C20",
+      "claim": "Cardiac precursors separate from the endoderm during differentiation while maintaining a basal lamina at the endocardial side.",
+      "claim_type": "EXPLICIT",
+      "source": "During differentiation, cardiac precursors switch to a rounded shape (Linask et al., 1997) (Figure 1C,D) and separate from the endoderm, while maintaining a basal lamina at the endocardial side (inset in Figure 1D and Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f6117f9c-7d7c-4128-ab4e-2c6d9a2b9379",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C21",
+      "claim": "The arterial pole length increases from 41.4 \u00b1 14.0 \u03bcm in the open HT to 109 \u00b1 43.44 \u03bcm after dorsal closure (p=0.0025).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the arterial pole/RV length in the open HT (41.4 \u00b1 14.0 \u03bcm, n = 5) and after dorsal closure (109 \u00b1 43.44 \u03bcm, n = 7), mean \u00b1SD, p=0.0025.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from imaging data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "34ecc247-6329-4069-9ad8-d6ae54072996",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C22",
+      "claim": "During the first phase of cardiomyocyte differentiation, the cardiac crescent rapidly doubles in volume.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first phase of cardiomyocyte differentiation, the cTnnT signal expands resulting in a cardiac crescent rapidly doubling in volume (Figure 1C', D', I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from volumetric measurements shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6214b687-c3d9-42a6-b4e5-e933dc2df867",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C23",
+      "claim": "During the transformation from cardiac crescent to open HT stage, growth is less pronounced despite extensive morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "During the subsequent phase of morphogenesis, from cc to open HT stage, growth is less pronounced despite extensive morphological changes (Figure 1E', F', I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in volumetric measurements shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "382736c0-7899-47df-acf9-b33231cc7310",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C24",
+      "claim": "The volume of the HT increases upon addition of the RV primordium to the arterial pole and dorsal HT closure.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume of the HT appears to increase again upon addition of the RV primordium to the arterial pole and dorsal HT closure (Figure 1G', I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in volumetric measurements shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "cb6bb6f9-205c-44c5-8b97-974912e4e084",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C25",
+      "claim": "Cardiomyocytes are proliferative at the heart tube stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocytes are proliferative at this stage (de Boer et al., 2012), and we can indeed observe mitotic figures in the HT (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in imaging data and supported by citation to de Boer et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "3b1347dd-45c3-42b1-97a6-49bc18a62b44",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C26",
+      "claim": "Undifferentiated cardiac precursors lie medio-dorsally in direct contact with the endoderm in areas where endocardial cells are not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, undifferentiated cardiac precursors lie medio-dorsally in direct contact with the endoderm in areas where endocardial cells are not detected (Figure 2A', A'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in imaging data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "a78d69b3-b76c-4da1-89bc-b5c75182423c",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C27",
+      "claim": "cTnnT- progenitors have an epithelial-like columnar cell shape, while differentiated cTnnT+ cardiomyocytes are rounder and have lost the columnar epithelial organization.",
+      "claim_type": "EXPLICIT",
+      "source": "cTnnT- progenitors have an epithelial-like columnar cell shape, while the differentiated cTnnT+ cardiomyocytes are rounder and have lost the columnar epithelial organization (Figure 2C\u2013E and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from imaging data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "8e6ef909-f812-44d4-9b43-f5371f6fd92d",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C28",
+      "claim": "The roundness index for cTnnT+ cells is 0.71 \u00b1 0.16 and for cTnnT- cells is 0.38 \u00b1 0.16 (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Rnd index for cTnnT+ (green) cells is 0.71 \u00b1 0.16 and for cTnnT- (red) cells is 0.38 \u00b1 0.16, mean \u00b1SD, exact p value < 0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from imaging data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "2b219396-8de4-49b5-b4f5-a1c9f5344b6b",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C29",
+      "claim": "Some cells at the boundary zone exhibit weak cTnnT localization and yet show columnar shapes typical of mesodermal cardiac precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some cells at the boundary zone exhibit weak cTnnT localization and yet show columnar shapes typical of mesodermal cardiac precursors (Figure 2F\u2013F'''' and red arrows in Figure 2F''', F'''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in imaging data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "764ce0dc-b2d5-430b-83b3-ef0f57fe4af2",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C30",
+      "claim": "The GFP level in Nkx2.5eGFP embryos varies linearly with cTnnT level.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the GFP level varied linearly with cTnnT level (Figure 3D), although considerable variability of GPF levels was observed within each cTnnT+ and cTnnT- cell populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from imaging data and statistical analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "81037c5f-6dd1-4201-b31b-591af4ad9a1f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C31",
+      "claim": "The top 50% GFP-expressing cells in Nkx2.5eGFP embryos can be reproducibly identified as positive for cTnnT+.",
+      "claim_type": "EXPLICIT",
+      "source": "Scoring of a large number of cells allowed to reproducibly identify the top 50% GFP-expressing cells as positive for cTnnT+ (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from quantitative analysis of imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "848645f9-87eb-46e0-b850-67aabd74b176",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C32",
+      "claim": "After culture, embryos showed normal morphology, their hearts were beating and circulation was initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "After culture, embryos showed normal morphology, their hearts were beating and circulation was initiated (Figure 4D,E and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f36c426b-a118-41f5-9ee4-59121f2a10c4",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C33",
+      "claim": "Maximum culture time and imaging achieved was 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum culture time and imaging achieved was 24 hr (Figure 4\u2014figure supplement 1A, n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported from experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "66e6d54a-9171-4990-a27f-3c3264411ed6",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C34",
+      "claim": "The endocardium is initially observed as a bilayer of cells and eventually splits into dorsal and ventral layers, which move apart from each other allowing the lumen to become visible between the layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The endocardium is initially observed as a bilayer of cells and eventually splits into dorsal and ventral layers, which move apart from each other allowing the lumen to become visible between the layers (see Videos 6 and 7 for confocal views and Video 8 for a bright field view).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "4ac31bbb-8b44-466a-be7a-11c482115564",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C35",
+      "claim": "Thin cytoplasmic bridges between the endocardial layers persist and extend as the endocardial layers separate from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Thin cytoplasmic bridges between the endocardial layers persist and extend as the endocardial layers separate from each other (see white arrows in Figure 4F' and Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f2629a69-f2ff-473a-8cb9-f85179bc639f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C36",
+      "claim": "Heartbeat becomes detectable around the stage when endocardial layers separate and circulation in the embryo is then initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "Heartbeat becomes detectable around this stage and circulation in the embryo is then initiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "cdc20053-becc-428a-978a-1be1a3481d5e",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C37",
+      "claim": "The transformation of the cardiac crescent into the HT involves the antero-medial displacement of the splanchnic mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this analysis also showed that the transformation of the cc into the HT involves the antero-medial displacement of the splanchnic mesoderm (white arrows in Figure 4F,F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "3a703855-d316-4751-a3c7-14a33fcbc2f3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C38",
+      "claim": "The movement of the splanchnic mesoderm is not coherent with the endoderm but a relative displacement is detected between the two layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the movement of the splanchnic mesoderm is not coherent with the endoderm but a relative displacement is detected between the two layers (Video 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c9571741-d277-4df6-9631-40cd8bb0ccd0",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C39",
+      "claim": "The average speed of splanchnic mesoderm displacement toward the midline ranges from 12 to 20 \u00b5m/hr (15.8 \u00b1 2.4 \u00b5m/hr, mean \u00b1SD, n = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimation of splanchnic mesoderm displacement speed toward the midline from time-lapse analyses (Figure 4F', and Video 6) indicates a range of average speeds from 12 to 20 \u00b5m/hr (15.8 \u00b1 2.4 \u00b5m/hr, mean \u00b1SD, n = 3, Figure 4\u2014figure supplement 2 and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "b67b80ae-a909-4e8e-bba1-89a8d8800993",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C40",
+      "claim": "Midline convergence of the splanchnic mesoderm takes approximately 5\u20137 hr from the late cardiac crescent stage until the open HT stage.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements estimate that midline convergence of the splanchnic mesoderm takes approximately 5\u20137 hr from the late cc stage until the open HT stage (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is estimated from quantitative analysis of live imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "4c7cdc4f-078b-4a87-b2ad-83bebdde6c6f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C41",
+      "claim": "At E7/bud stage, a faint and scattered GFP signal is detected in proximity to the yolk sack, at the anterior border of the embryo in Nkx2.5eGFP embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "At E7/bud stage, a faint and scattered GFP signal is detected in proximity to the yolk sack, at the anterior border of the embryo (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "fac0169a-0835-4eac-83f0-5a3e3181c5cd",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C42",
+      "claim": "During about 5\u20136 hr starting at the EHF stage, the GFP signal increases in intensity in Nkx2.5eGFP embryos, which correlates with cTnnT activation.",
+      "claim_type": "EXPLICIT",
+      "source": "During about 5\u20136 hr starting at the EHF stage, the GFP signal increases in intensity, which correlates with the previous observations on cTnnT activation (Figure 4H, Figure 1C and Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "4dbc808d-0c41-4473-b8ce-9650eb4e72b0",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C43",
+      "claim": "From transversal to open HT (5\u20137 hr) and from the open HT to HT (2\u20133 hr) the GFP signal remains stable in Nkx2.5eGFP embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "From transversal to open HT (5\u20137 hr) and from the open HT to HT (2\u20133 hr) the GFP signal remains stable (Figure 5\u2014figure supplement 1B,B', C,C' and Video 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "121995e0-cc36-44af-8aa3-4083571c8ab6",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C44",
+      "claim": "An increase in GFP level in Nkx2.5eGFP embryos reports cardiomyocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that an increase in GFP level in Nkx2.5eGFP embryos reports cardiomyocyte differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between GFP and cTnnT levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "b0ed2189-d72d-42c5-a332-40987a310a87",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C45",
+      "claim": "During the initial global movement of cardiac crescent formation, the relative positions of the cardiac progenitors are maintained from the initial stage through the differentiated cardiac crescent.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of cardiac differentiation, the cardiac crescent swings ventrally concomitant with foregut pocket formation. During this movement, we found that the relative positions of the cardiac progenitors are maintained from the initial stage through the differentiated cc (Video 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6a29c6fd-6a95-49a4-9a6e-a4469b34051f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C46",
+      "claim": "43% of the tracked cells underwent one division during the 4\u20135 hr videos of cardiac crescent formation.",
+      "claim_type": "EXPLICIT",
+      "source": "43% of the tracked cells underwent one division during the 4\u20135 hr videos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "2a81bee2-147a-4c4b-a4f7-5d25d995a3cb",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C47",
+      "claim": "Most sister cell pairs (38 out of 39) show matched high or low GFP intensity levels at the end of the observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most sister cell pairs show matched high or low GFP intensity levels at the end of the observation period (38 out of 39, Figure 5I, Figure 5\u2014figure supplement 3A\u2013D and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "e8d28973-9ce9-4cd4-8b9a-2056da625b18",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C48",
+      "claim": "Commitment of cardiac precursors to differentiation is already established by the EHF stage and largely transmitted by lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that commitment of cardiac precursors to differentiation is already established by the EHF stage and largely transmitted by lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that sister cells share differentiation fates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "16658370-a98b-4eb0-a012-5e9b17c96fd6",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C49",
+      "claim": "Cells with high GFP level at the initial time points (differentiated cardiomyocytes) retain rather stable GFP levels during the transformation from transversal HT to open HT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells with high GFP level at the initial time points \u2013differentiated cardiomyocytes \u2013 retain rather stable GFP levels (green tracks in Figure 6C,D,G and Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "34a5ddbf-c9bc-4e8e-9706-afbd12fe0ce8",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C50",
+      "claim": "All cells that initially showed low GFP levels did not increase GFP intensity during the transformation from transversal HT to open HT; thus new events of cardiac differentiation were not detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all cells that initially showed low GFP levels did not increase GFP intensity during time-lapse; thus new events of cardiac differentiation were not detectable by this approach (red tracks in Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f68d50d3-2672-4064-8adf-59136c30a7a0",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C51",
+      "claim": "Cells located at the boundary between cardiomyocytes and undifferentiated splanchnic mesoderm retain stable GFP levels and did not increase their GFP level during the transformation from transversal HT to open HT.",
+      "claim_type": "EXPLICIT",
+      "source": "Those cells retain stable GFP levels throughout the tracking time and did not increase their GFP level (Figure 6I, boundary imaged 20 times in different locations and in six independent embryos).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c04f2bec-2d59-4721-ad49-a6fd57550c04",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C52",
+      "claim": "Progenitors at the boundary strictly respected the boundary with the HT throughout the entire time-lapse video spanning 7 hr covering the whole transition from transversal to open HT stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this observation in longer time-lapse videos spanning 7 hr that covered the whole transition from transversal to open HT stage. Again, progenitors strictly respected the boundary with the HT throughout the entire time-lapse video (Figure 7A\u2013A''' and Video 15, boundary imaged five times in different locations and in two independent embryos).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "e6ae5cc7-6e9a-4591-8c86-100f4f5c93ee",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C53",
+      "claim": "During the transformation of the cardiac crescent into the dorsally open HT no cardiomyocytes are added to the HT from the SHF.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these data suggest that during the transformation of the cc into the dorsally open HT no cardiomyocytes are added to the HT from the SHF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that no differentiation events are detected during this period.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6531f7b1-6434-4f85-833e-5286a9a26f54",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C54",
+      "claim": "Isl1cre-induced recombination detected in live analysis is low in the cardiac crescent and complete in the SHF.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with previous reports (Cai et al., 2003), Isl1cre-induced recombination detected in live analysis is thus low in the cc and complete in the SHF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in live imaging data and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "4260b065-e39d-420e-b6f6-d8a0e322ad10",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C55",
+      "claim": "tdtomato+ cells establish a boundary with GFP+ cells during cardiac crescent to open HT formation, confirming no signs of differentiation of SHF precursors during the observation period.",
+      "claim_type": "EXPLICIT",
+      "source": "Live imaging shows instead that tdtomato+ cells establish a boundary with GFP+ cells, confirming no signs of differentiation of SHF precursors during the observation period (Figure 8A,C and Video 17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data using Isl1-Cre lineage tracing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "5049a666-97f1-40d4-81b7-a3284918bcab",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C56",
+      "claim": "No solid domains containing double-labeled cells (tdtomato+ and cTnnT+) were detected in embryos fixed after live-imaging, indicating that progenitors located in the SHF did not undergo differentiation from cardiac crescent to open HT stage.",
+      "claim_type": "EXPLICIT",
+      "source": "No solid domains containing double-labeled cells were detected, indicating that progenitors located in the SHF did not undergo differentiation in the boundary zone from cc to open HT stage (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in post-fixation immunostaining after live imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6aaf4012-338b-4b54-bc88-b8ec6bbc14dd",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C57",
+      "claim": "SHF cells do not differentiate up to the open HT stage, when the dorsal seam of the heart is still open.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous observations, we found that SHF cells do not differentiate up to the open HT stage, when the dorsal seam of the heart is still open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in fixed and optically cleared embryos at different stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "2aa35cad-fcd6-46ba-9d00-71abe8ec6eb3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C58",
+      "claim": "Massive appearance of solid domains of double positive cells (GFP+ and tdtomato+) is observed in the fully closed HT.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, massive appearance of solid domains of double positive cells is observed subsequently in the fully closed HT, reinforcing our previous interpretation (Figure 9A,B and Videos 18,19).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in fixed and optically cleared embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "25202dfd-ae93-4faa-929b-849e29ad9832",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C59",
+      "claim": "The primordium of the RV is fully composed of double-positive cells (GFP+ and tdtomato+) at the linear HT stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, the primordium of the RV has been added at the arterial pole (Zaffran et al., 2004; Laugwitz et al., 2005; Moretti et al., 2006) and is fully composed of double-positive cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in imaging data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6ac83035-88a6-40e6-be61-371b5fc4e3b8",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C60",
+      "claim": "The dorsal seam of the HT is densely populated by double-positive cells (GFP+ and tdtomato+), indicating a contribution of precursors from the splanchnic mesoderm to the cardiomyocyte population that finalizes the dorsal closure of the linear HT.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal seam of the HT is also densely populated by double-positive cells, indicating a contribution of precursors from the splanchnic mesoderm to the cardiomyocyte population that finalizes the dorsal closure of the linear HT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "2fb5f91a-51d6-460c-95c4-bf14dba21629",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C61",
+      "claim": "Some cells at the border between the FHF and SHF maintain low GFP levels during the first part of the recording and upregulate GFP to the level of the cardiomyocyte population as the HT forms.",
+      "claim_type": "EXPLICIT",
+      "source": "In videos that captured the transition from the open HT to the closed linear HT, some cells at the border between the FHF and SHF maintain low GFP levels during the first part of the recording and upregulate GFP to the level of the cardiomyocyte population as the HT forms (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "920fe621-abc0-409c-9c35-af865ca5244b",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C62",
+      "claim": "SHF differentiation at the arterial pole is initiated when the HT is about to close dorsally but not before.",
+      "claim_type": "EXPLICIT",
+      "source": "This study further confirmed that SHF differentiation at the arterial pole is initiated when the HT is about to close dorsally but not before (Figure 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "cc0f0338-d7f1-43a1-9a33-ca70ffe636ef",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C63",
+      "claim": "SHF cells do not differentiate during the 5\u20137 hr period when morphogenesis of the open HT takes place, but coordinately start differentiation at different regions of the HT during dorsal closure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SHF cells do not differentiate during the 5\u20137 hr period when morphogenesis of the open HT takes place, but coordinately start differentiation at different regions of the HT during dorsal closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple observations in live imaging and fixed embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "36ed1575-cc27-45e0-8403-8a575e612ebd",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C64",
+      "claim": "Regions where SHF differentiation occurs during dorsal closure include arterial and venous poles as well as the dorsal seam of the HT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these regions do not only include arterial and venous poles but also the dorsal seam of the HT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "db23e69f-9476-42b7-86f8-6dddebd0603f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C65",
+      "claim": "The morphogenetic changes that transform the cardiac crescent into a HT largely take place in the absence of cardiac precursor differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support the early establishment of distinct FHF and SHF cell populations and show that the morphogenetic changes that transform the cc into a HT largely take place in the absence of cardiac precursor differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c1f531a6-fd3e-4194-9e22-236262675f77",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C66",
+      "claim": "There is tissue-level coordination of differentiation and morphogenesis during early cardiogenesis in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate tissue-level coordination of differentiation and morphogenesis during early cardiogenesis in the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "045bcbe1-962c-4178-ab7f-6c889b46a9f5",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C67",
+      "claim": "Growth of the differentiated cardiac tissue is relatively paused when the cardiac crescent undergoes morphogenesis to form the open HT during the second phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth of the differentiated cardiac tissue is relatively paused when the cc undergoes morphogenesis to form the open HT during the second phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from volumetric measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "ef82f11e-e72c-4b90-9174-f4f8937f17f6",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C68",
+      "claim": "Proliferation drops in the differentiated myocardium of the forming HT, while proliferation remains high in the splanchnic mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous studies in mouse, chick and human models showing that proliferation drops in the differentiated myocardium of the forming HT, while proliferation remains high in the splanchnic mesoderm (van den Berg et al., 2009; de Boer et al., 2012; Sizarov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "1be517a0-5276-48cf-b966-4fa974ef75e3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C69",
+      "claim": "SHF cells do not contribute to the forming HT during the differentiation pause, which correlates with the growth rate reduction during this phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our live analysis further showed that SHF cells do not contribute to the forming HT during the differentiation pause, which correlates with the growth rate reduction during this phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from live imaging observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "48298020-32fc-450b-9f0d-c8927fd8a4fc",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C70",
+      "claim": "The period of differentiation pause coincides with the onset of cardiac contractility in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "This period coincides as well with the onset of cardiac contractility in the embryo (Tyser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tyser et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "87f3b77f-d84f-4beb-94a1-34b5d1fe7a79",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C71",
+      "claim": "The dorsal aspect of the linear HT gives rise to the inner curvature of the looped heart, which has an important contribution to non-chamber myocardium, including atrio-ventricular canal and parts of the conduction system.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal aspect of the linear HT gives rise to the inner curvature of the looped heart, which has an important contribution to non-chamber myocardium, including atrio-ventricular canal and parts of the conduction system (Christoffels et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Christoffels et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c2911776-6d50-4bf8-8355-d313fbfe5ac3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C72",
+      "claim": "The late recruitment of progenitors to the dorsal HT could contribute to differences between inner curvature cardiomyocytes and the rest of the heart tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the late recruitment of progenitors to the dorsal HT could contribute to differences between inner curvature cardiomyocytes and the rest of the heart tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "41e3c414-76a2-4d89-8545-9db344d2edc0",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C73",
+      "claim": "Sister cells in the cardiac forming region share fates to either the cardiac crescent or the SHF.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, our tracking of cell lineages in the cardiac forming region shows that sister cells share fates to either the cardiac crescent or the SHF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "3c89cb97-9f10-48a5-9b40-11187f144cbb",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C74",
+      "claim": "The temporal pause of cardiac differentiation may contribute to the establishment of the sharp boundary observed between left and right ventricles later in development.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fact that cells contributing to the SHF do not differentiate during the period when the cardiac crescent transforms into the primitive heart tube may contribute to the establishment of the sharp boundary observed between left and right ventricles later in development (Devine et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the study's findings and supported by citation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "60d5370e-1563-4880-b5af-f548b98f59bb",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C75",
+      "claim": "Intrinsic molecular differences between FHF and SHF lineages appear around or shortly after gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular analyses of early FHF and SHF precursors suggest that intrinsic molecular differences between the two lineages appear around or shortly after gastrulation (Lescroart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lescroart et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "bb588e91-946e-4991-b8aa-33c8a290ff41",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C76",
+      "claim": "The Wnt and BMP pathways are well known regulators of cardiac differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wnt and BMP pathways are well known regulators of cardiac differentiation (Ai et al., 2007; Jain et al., 2015; Klaus et al., 2007; Kwon et al., 2007; Marvin et al., 2001; Qyang et al., 2007; Tirosh-Finkel et al., 2010; Ueno et al., 2007) and specific mechanisms affecting these pathways could be operating during the formation the HT, whereby the differentiation pathways could be temporally restrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "29f783c5-0eb7-427b-a610-c5a11cd3711a",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C77",
+      "claim": "The endoderm may play a key role in mediating FHF differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the endoderm may also play a key role in mediating FHF differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on known interactions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "6646f6bb-fe91-4ca1-b9b4-b0311a56dce5",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C78",
+      "claim": "Cardiac mesoderm differentiation is affected in the absence of Sox17, accompanied by the formation of a morphologically abnormal HT.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed cardiac mesoderm differentiation is affected in the absence of Sox17 -a transcription factor required for maintenance of the definitive endoderm- and this is accompanied by the formation of a morphologically abnormal HT (Pfister et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pfister et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "78d851d9-d5a7-4f8c-b811-395821298932",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C79",
+      "claim": "A recent study reported spontaneous calcium transients propagating laterally through the cardiac crescent.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported spontaneous calcium transients propagating laterally thought the cardiac crescent (Tyser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tyser et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "efaba56d-1af4-44e5-9cff-af5d18f9d790",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C80",
+      "claim": "Left/Right asymmetry exists within the cardiac crescent, prior to any detectable cardiac contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Left/Right (L/R) asymmetry therefore exists within the cardiac crescent, prior to any detectable cardiac contraction, and BMP/SMAD1 signaling in the lateral plate mesoderm may be involved in this asymmetry (Furtado et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Furtado et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "4692ae82-a683-4e40-82e8-801b3915dd10",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C81",
+      "claim": "No L/R difference in cTnnT expression was detected by whole-mount immunodetection or Nkx2.5GFP activation by live analysis in the cardiac crescent.",
+      "claim_type": "EXPLICIT",
+      "source": "In our studies, however, we did not detect any L/R difference in cTnnT expression by whole-mount immunodetection or Nkx2.5GFP activation by live analysis in the cc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "56b0709a-ff42-42cd-9d2d-1e9fdcb6989b",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C82",
+      "claim": "In zebrafish, two distinct phases of cardiomyocyte differentiation were observed: during a first phase, cardiomyocytes were recruited first into the ventricle and atria at the venous pole; during a second phase, cardiomyocyte differentiation was observed at the arterial pole of the HT.",
+      "claim_type": "EXPLICIT",
+      "source": "Elegant experiments in zebrafish using a cardiac myosin light chain reporter line and a Kaede photo-conversion assay, addressed the temporal order of cardiac differentiation in live embryos (de Pater et al., 2009; Liu and Stainier, 2012). Two distinct phases of cardiomyocyte differentiation were also observed. During a first phase, cardiomyocytes were recruited first into the ventricle and atria at the venous pole. During a second phase, cardiomyocyte differentiation was observed at the arterial pole of the HT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to de Pater et al., 2009 and Liu and Stainier, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "088266c7-4ff7-4105-912a-5d55ea459878",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C83",
+      "claim": "The displacement of the splanchnic mesoderm over the endoderm during cardiogenesis had been suggested by classical time-lapse studies in the chick embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Such displacement of the splanchnic mesoderm over the endoderm during cardiogenesis had been suggested by classical time-lapse studies in the chick embryo (Dehaan, 1963), and it is tempting to speculate that a similar phenomenon contributes to the incorporation of SHF cells to both poles of the HT at later stages of HT development (van den Berg et al., 2009; Kelly et al., 2001; Zaffran et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dehaan, 1963 and others.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "7fbd90aa-18d3-4c05-b180-63c93cc2373d",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C84",
+      "claim": "SHF cells play a morphogenetic role essential for heart tube formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that SHF cells do not represent just a reservoir of cardiac precursors but play a morphogenetic role essential for heart tube formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed active displacement of SHF cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "128757ed-dac7-4ce9-a91b-249449703ca2",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C85",
+      "claim": "The main consequence of the displacement of the splanchnic mesoderm layer over the endoderm is the medial convergence of the left and right frontiers between the cardiac crescent and SHF to form the dorsal mesocardium and close the HT.",
+      "claim_type": "EXPLICIT",
+      "source": "The main consequence of the displacement of the splanchnic mesoderm layer over the endoderm is the medial convergence of the left and right frontiers between the cc and SHF to form the dorsal mesocardium and close the HT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed morphogenetic movements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "10bc2078-a151-4022-b3e7-167b30c5d87e",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C86",
+      "claim": "The stability of the cardiac crescent/SHF frontiers prevents further spreading of the differentiation wave from the cardiac crescent into the SHF/splanchnic mesoderm, which could interfere with the ability of the latter to efficiently displace over the endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "An important consequence of the differentiation pause described here is the stability of the cc/SHF frontiers during these morphogenetic movements. This stability prevents further spreading of the differentiation wave from the cc into the SHF/splanchnic mesoderm, which could interfere the ability of the latter to efficiently displace over the endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is hypothesized based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "afb157b2-771e-4e08-a3df-f8c70a1ea776",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C87",
+      "claim": "The stability of the cardiac crescent/SHF frontiers would be essential to allow the effective displacement of SHF/splanchnic mesoderm and elicit HT formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesize that the stability of the cc/SHF frontiers \u2013 and thus the differentiation pause \u2013 would be essential to allow the effective displacement of SHF/splanchnic mesoderm and elicit HT formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is hypothesized based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "bc22c3f6-5382-4b05-be25-3af2f5276bd3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "claim_id": "C88",
+      "claim": "The temporal allocation of the morphogenetic phase after cardiac crescent differentiation allows the formation of the HT while simultaneously providing an incipient cardiac function essential for the organization of embryonic circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal allocation of the morphogenetic phase after cc differentiation allows the formation of the HT while simultaneously providing an incipient cardiac function essential for the organization of embryonic circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed timing of differentiation and morphogenesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes the established model of heart development in which two progenitor populations (FHF and SHF) sequentially contribute to different regions of the heart tube, with FHF contributing the left ventricle and part of atria, and SHF contributing the right ventricle, outflow tract, and most atria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C10-C11) represent well-established knowledge in the field and are supported by multiple citations to prior literature. The manuscript correctly summarizes the current understanding of cardiac development as background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "868a69af-8b1b-4e86-9586-508344b6978c",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During an initial phase lasting approximately 5-6 hours starting at EHF stage, FHF precursors rapidly differentiate to form the cardiac crescent with limited morphogenesis. The cardiac crescent doubles in volume during this phase, GFP signal increases correlating with cTnnT activation, relative cell positions are maintained, and sister cells share differentiation fates, suggesting commitment is established by EHF stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22, C42, C44-C48 are well-supported by multiple lines of evidence including live imaging (Videos 10-13), volumetric measurements (Figure 1I), cell tracking data (Figure 5), and correlation analysis between GFP and cTnnT (Figure 3D). The temporal dynamics, volumetric changes, and lineage analysis provide converging evidence for this first phase of differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "837a0964-9c94-4c8c-b08f-6dab06923cf4",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During a second phase lasting approximately 5-7 hours, no cardiac differentiation occurs while extensive morphogenesis transforms the cardiac crescent into the dorsally open heart tube. This morphogenesis involves splanchnic mesoderm sliding over the endoderm at speeds of 12-20 \u03bcm/hr, with cells at the FHF/SHF boundary maintaining stable GFP levels and respecting the boundary throughout this period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C23, C37-C40, C49-C53 are strongly supported by live imaging data (Figures 4F, 6, 7, Videos 5-6, 9, 14-15), cell tracking showing stable GFP levels in differentiated cardiomyocytes and no increase in GFP in boundary cells (Figure 6C-I), and quantitative measurements of tissue displacement. The convergence of multiple experimental approaches provides robust evidence for this differentiation pause during morphogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During a third phase occurring during dorsal closure of the heart tube (approximately 2-3 hours), cardiac precursor differentiation resumes and contributes to SHF-derived regions including the arterial pole (RV primordium), venous pole, and the dorsal seam of the heart tube. SHF differentiation is initiated when the HT is about to close dorsally but not before.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C24, C57-C64 are supported by multiple complementary approaches: Isl1-Cre lineage tracing combined with live imaging (Figure 8, Videos 16-17), fixed and optically cleared embryos at different stages (Figure 9, Videos 18-19), detection of double-positive cells (GFP+ and tdtomato+) in the closed but not open HT, and live tracking showing GFP upregulation at the boundary during HT closure (Figure 8\u2014figure supplement 2). The timing and spatial pattern of SHF differentiation are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "c54ceb76-e218-4f5d-a816-9c2a26e7938f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Isl1-Cre lineage tracing shows low recombination in the cardiac crescent and complete recombination in the SHF, with tdtomato+ cells establishing a boundary with GFP+ cells during cardiac crescent to open HT formation, confirming no differentiation of SHF precursors during this period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by live imaging of Isl1cre/+; Rosa26Rtdtomato+/-; Nkx2.5eGFP embryos (Figure 8A-D, Video 16-17) and post-fixation immunostaining showing no solid domains of double-labeled cells in the boundary zone from cardiac crescent to open HT stage. This provides independent validation of the differentiation pause using a different genetic approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "be3c8934-b816-46d8-b8b8-df6ae82504ee",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The morphogenetic changes that transform the cardiac crescent into a heart tube largely take place in the absence of cardiac precursor differentiation, indicating tissue-level coordination of differentiation and morphogenesis during early cardiogenesis in the mouse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 represent the primary conclusions of the study and are well-supported by the convergence of multiple experimental findings: the three-phase temporal pattern of development (C4-C6), the differentiation pause during morphogenesis (C49-C53), the active morphogenetic movements (C37-C40), and the coordinated resumption of differentiation during dorsal closure (C57-C64). The manuscript provides compelling evidence for temporal coordination at the tissue level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "bec20d31-7866-4b45-8816-c7c0b426c3e7",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Static 3D analysis reveals the spatial organization and cellular characteristics of cardiac progenitors and differentiated cardiomyocytes. At EHF stage, the cardiogenic region is a flat horseshoe-shaped layer. During differentiation, cardiac precursors switch from columnar epithelial shape (roundness 0.38\u00b10.16) to rounded shape (roundness 0.71\u00b10.16, p<0.0001) and separate from the endoderm. The arterial pole length increases significantly from 41.4\u00b114.0 \u03bcm to 109\u00b143.44 \u03bcm after dorsal closure (p=0.0025).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21, C26-C29 are supported by detailed 3D imaging and quantitative analysis (Figures 1-2). The morphological characterization, cell shape quantification, and measurements of arterial pole length are well-documented with appropriate statistical analysis. These provide important baseline characterization of the developmental stages studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "0818e4d3-fa4c-4dc3-af45-d688e243d4a9",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Nkx2.5eGFP reporter line shows GFP levels that vary linearly with cTnnT levels, and the top 50% GFP-expressing cells can be reproducibly identified as cTnnT-positive, validating this reporter for tracking cardiomyocyte differentiation in live imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C44 are supported by quantitative correlation analysis between GFP and cTnnT levels in manually segmented cells (Figure 3D-E, linear mixed-effects model showing GFP = 0.95*cTnnT). This validation is essential for interpreting the live imaging experiments and is appropriately documented with statistical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "0b91102c-7798-498e-9589-9d215cb54c7f",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript establishes a two-photon live-imaging method for whole mouse embryos that maintains normal embryo morphology, beating hearts, and circulation for up to 24 hours. The method reveals endocardial lumen formation through splitting of a bilayer into dorsal and ventral layers with persistent cytoplasmic bridges, coinciding with the onset of heartbeat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by live imaging data (Figure 4, Videos 4-8) showing normal embryo development, beating hearts, and detailed visualization of endocardial lumen formation. The technical achievement is well-documented and represents an important methodological advance, though the maximum 24-hour culture time (n=3) is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "5a47ae4e-1c2f-422b-a6f9-58136d05b2fa",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Growth of differentiated cardiac tissue is relatively paused during the morphogenetic phase when the cardiac crescent transforms into the open HT. This correlates with reduced proliferation in differentiated myocardium while proliferation remains high in splanchnic mesoderm, absence of SHF contribution during this phase, and coincides with onset of cardiac contractility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by volumetric measurements (Figure 1I) showing reduced growth during morphogenesis, citations to prior studies on proliferation patterns (C68), and the live imaging data showing no SHF contribution during this phase (C69). The correlation with contractility onset is supported by citation (C70). These observations provide functional context for the differentiation pause.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "997556f4-a1a3-4953-b0b8-54e739233fb6",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study proposes that sister cells share fates to either cardiac crescent or SHF, the differentiation pause may contribute to establishing sharp boundaries between left and right ventricles, SHF cells play an essential morphogenetic role in heart tube formation through active displacement, and the stability of the cardiac crescent/SHF frontier prevents spreading of differentiation that could interfere with morphogenetic movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74, C84-C88 include both supported observations (C73: sister cells sharing fates, supported by tracking data Figure 5I) and speculative interpretations (C74, C86-C88: hypotheses about functional significance). While the hypotheses are reasonable based on the data, they represent interpretations rather than directly demonstrated mechanisms. The proposed functional link between differentiation pause and morphogenetic efficiency (C86-C87) is plausible but not experimentally tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "da35b754-9186-4f40-8219-ee8479593715",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on cardiac development including timing of differentiation, formation of cardiac structures, clonal analysis supporting FHF/SHF as independent fields, molecular markers, and comparisons to other model systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C12-C15, C71, C75-C76, C78-C80, C82-C83 represent background knowledge and prior work that are appropriately cited. These claims accurately summarize established concepts in the field and provide necessary context for the current study. The citations appear appropriate and the characterizations of prior work are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "f5231413-b9c3-42e7-ba7b-7b3e194c8840",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cardiomyocytes are proliferative at the heart tube stage, with mitotic figures observed in the HT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by direct observation of mitotic figures (Figure 1J) and citation to de Boer et al., 2012. This observation is relevant for interpreting the volumetric growth measurements but is not a primary finding of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    },
+    {
+      "id": "265147d3-3948-4ad3-a24c-b0ba6756d379",
+      "content_id": "e7671193-d0ca-482b-b8bb-cdf0dca49ee5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The late recruitment of progenitors to the dorsal HT could contribute to differences between inner curvature cardiomyocytes and the rest of the heart tube. No left/right difference in cTnnT expression was detected in the cardiac crescent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is speculative but reasonable based on the observed late recruitment to the dorsal HT (C60, C64) and cited literature on inner curvature fate (Christoffels et al., 2000). Claim C81 is a negative result from the authors' observations that contrasts with some prior reports, appropriately noted in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:23:18.562806Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0ec9342-e5a0-4b64-a59d-ea4abc7ad656",
+      "result_id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3"
+    },
+    {
+      "claim_id": "f665835f-4064-4dd3-b5b5-0aea58ca6c06",
+      "result_id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3"
+    },
+    {
+      "claim_id": "a215cdf1-e957-4f4f-b222-37812433632a",
+      "result_id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3"
+    },
+    {
+      "claim_id": "6a3d2267-b282-4b01-bb6a-2b9fb47c00af",
+      "result_id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3"
+    },
+    {
+      "claim_id": "7393e27d-0118-4630-8f3a-6816fd05cd93",
+      "result_id": "0a7fd59f-399c-487b-81ce-b3a953ac57c3"
+    },
+    {
+      "claim_id": "fdd5431b-7fc3-49f1-a2e4-5633ca5fd319",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "34ecc247-6329-4069-9ad8-d6ae54072996",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "fac0169a-0835-4eac-83f0-5a3e3181c5cd",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "121995e0-cc36-44af-8aa3-4083571c8ab6",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "b0ed2189-d72d-42c5-a332-40987a310a87",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "6a29c6fd-6a95-49a4-9a6e-a4469b34051f",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "2a81bee2-147a-4c4b-a4f7-5d25d995a3cb",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "e8d28973-9ce9-4cd4-8b9a-2056da625b18",
+      "result_id": "868a69af-8b1b-4e86-9586-508344b6978c"
+    },
+    {
+      "claim_id": "d9c2396b-8ff9-43d0-87bd-f6a1d9514fdf",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "6214b687-c3d9-42a6-b4e5-e933dc2df867",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "cdc20053-becc-428a-978a-1be1a3481d5e",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "3a703855-d316-4751-a3c7-14a33fcbc2f3",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "c9571741-d277-4df6-9631-40cd8bb0ccd0",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "b67b80ae-a909-4e8e-bba1-89a8d8800993",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "16658370-a98b-4eb0-a012-5e9b17c96fd6",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "34a5ddbf-c9bc-4e8e-9706-afbd12fe0ce8",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "f68d50d3-2672-4064-8adf-59136c30a7a0",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "c04f2bec-2d59-4721-ad49-a6fd57550c04",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "e6ae5cc7-6e9a-4591-8c86-100f4f5c93ee",
+      "result_id": "837a0964-9c94-4c8c-b08f-6dab06923cf4"
+    },
+    {
+      "claim_id": "27e7068b-5ac5-409b-a8ff-a5f4ae383020",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "382736c0-7899-47df-acf9-b33231cc7310",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "6aaf4012-338b-4b54-bc88-b8ec6bbc14dd",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "2aa35cad-fcd6-46ba-9d00-71abe8ec6eb3",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "25202dfd-ae93-4faa-929b-849e29ad9832",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "6ac83035-88a6-40e6-be61-371b5fc4e3b8",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "2fb5f91a-51d6-460c-95c4-bf14dba21629",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "920fe621-abc0-409c-9c35-af865ca5244b",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "cc0f0338-d7f1-43a1-9a33-ca70ffe636ef",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "36ed1575-cc27-45e0-8403-8a575e612ebd",
+      "result_id": "aec2af9c-6df6-4df3-acef-4ef239b71e8c"
+    },
+    {
+      "claim_id": "6531f7b1-6434-4f85-833e-5286a9a26f54",
+      "result_id": "c54ceb76-e218-4f5d-a816-9c2a26e7938f"
+    },
+    {
+      "claim_id": "4260b065-e39d-420e-b6f6-d8a0e322ad10",
+      "result_id": "c54ceb76-e218-4f5d-a816-9c2a26e7938f"
+    },
+    {
+      "claim_id": "5049a666-97f1-40d4-81b7-a3284918bcab",
+      "result_id": "c54ceb76-e218-4f5d-a816-9c2a26e7938f"
+    },
+    {
+      "claim_id": "db23e69f-9476-42b7-86f8-6dddebd0603f",
+      "result_id": "be3c8934-b816-46d8-b8b8-df6ae82504ee"
+    },
+    {
+      "claim_id": "c1f531a6-fd3e-4194-9e22-236262675f77",
+      "result_id": "be3c8934-b816-46d8-b8b8-df6ae82504ee"
+    },
+    {
+      "claim_id": "8dba8ef3-b468-4ac5-90c6-b26e4049b18a",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "f3273c2b-87ad-43cf-9f2c-e0e87ffc008e",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "c3b8cb11-d2cd-43f7-8cc1-9b88274f55f4",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "3b9bbbb8-43d7-45a1-8f57-948f119bf049",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "b9f17f26-9149-444c-b761-3cfec055b696",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "f6117f9c-7d7c-4128-ab4e-2c6d9a2b9379",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "3b1347dd-45c3-42b1-97a6-49bc18a62b44",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "a78d69b3-b76c-4da1-89bc-b5c75182423c",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "8e6ef909-f812-44d4-9b43-f5371f6fd92d",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "2b219396-8de4-49b5-b4f5-a1c9f5344b6b",
+      "result_id": "bec20d31-7866-4b45-8816-c7c0b426c3e7"
+    },
+    {
+      "claim_id": "764ce0dc-b2d5-430b-83b3-ef0f57fe4af2",
+      "result_id": "0818e4d3-fa4c-4dc3-af45-d688e243d4a9"
+    },
+    {
+      "claim_id": "81037c5f-6dd1-4201-b31b-591af4ad9a1f",
+      "result_id": "0818e4d3-fa4c-4dc3-af45-d688e243d4a9"
+    },
+    {
+      "claim_id": "121995e0-cc36-44af-8aa3-4083571c8ab6",
+      "result_id": "0818e4d3-fa4c-4dc3-af45-d688e243d4a9"
+    },
+    {
+      "claim_id": "848645f9-87eb-46e0-b850-67aabd74b176",
+      "result_id": "0b91102c-7798-498e-9589-9d215cb54c7f"
+    },
+    {
+      "claim_id": "f36c426b-a118-41f5-9ee4-59121f2a10c4",
+      "result_id": "0b91102c-7798-498e-9589-9d215cb54c7f"
+    },
+    {
+      "claim_id": "66e6d54a-9171-4990-a27f-3c3264411ed6",
+      "result_id": "0b91102c-7798-498e-9589-9d215cb54c7f"
+    },
+    {
+      "claim_id": "4ac31bbb-8b44-466a-be7a-11c482115564",
+      "result_id": "0b91102c-7798-498e-9589-9d215cb54c7f"
+    },
+    {
+      "claim_id": "f2629a69-f2ff-473a-8cb9-f85179bc639f",
+      "result_id": "0b91102c-7798-498e-9589-9d215cb54c7f"
+    },
+    {
+      "claim_id": "045bcbe1-962c-4178-ab7f-6c889b46a9f5",
+      "result_id": "5a47ae4e-1c2f-422b-a6f9-58136d05b2fa"
+    },
+    {
+      "claim_id": "ef82f11e-e72c-4b90-9174-f4f8937f17f6",
+      "result_id": "5a47ae4e-1c2f-422b-a6f9-58136d05b2fa"
+    },
+    {
+      "claim_id": "1be517a0-5276-48cf-b966-4fa974ef75e3",
+      "result_id": "5a47ae4e-1c2f-422b-a6f9-58136d05b2fa"
+    },
+    {
+      "claim_id": "48298020-32fc-450b-9f0d-c8927fd8a4fc",
+      "result_id": "5a47ae4e-1c2f-422b-a6f9-58136d05b2fa"
+    },
+    {
+      "claim_id": "41e3c414-76a2-4d89-8545-9db344d2edc0",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "3c89cb97-9f10-48a5-9b40-11187f144cbb",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "7fbd90aa-18d3-4c05-b180-63c93cc2373d",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "128757ed-dac7-4ce9-a91b-249449703ca2",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "10bc2078-a151-4022-b3e7-167b30c5d87e",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "afb157b2-771e-4e08-a3df-f8c70a1ea776",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "bc22c3f6-5382-4b05-be25-3af2f5276bd3",
+      "result_id": "997556f4-a1a3-4953-b0b8-54e739233fb6"
+    },
+    {
+      "claim_id": "f33d67d2-3731-4798-887e-273e63729e05",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "382c6ead-d39a-404c-ac69-269705d14cb0",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "cd4519d2-dac2-4d37-8234-aeb788314db7",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "921222cf-1c2a-4256-8446-694332f72c87",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "9e8dfc94-b416-4dee-b907-412598ba0064",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "498e5d22-16a3-4cf3-b64c-72e3fb071556",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "7399e103-7eb1-4236-9acb-d2cbd5a0783e",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "87f3b77f-d84f-4beb-94a1-34b5d1fe7a79",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "60d5370e-1563-4880-b5af-f548b98f59bb",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "bb588e91-946e-4991-b8aa-33c8a290ff41",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "29f783c5-0eb7-427b-a610-c5a11cd3711a",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "6646f6bb-fe91-4ca1-b9b4-b0311a56dce5",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "78d851d9-d5a7-4f8c-b811-395821298932",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "efaba56d-1af4-44e5-9cff-af5d18f9d790",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "56b0709a-ff42-42cd-9d2d-1e9fdcb6989b",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "088266c7-4ff7-4105-912a-5d55ea459878",
+      "result_id": "da35b754-9186-4f40-8219-ee8479593715"
+    },
+    {
+      "claim_id": "cb6bb6f9-205c-44c5-8b97-974912e4e084",
+      "result_id": "f5231413-b9c3-42e7-ba7b-7b3e194c8840"
+    },
+    {
+      "claim_id": "c2911776-6d50-4bf8-8355-d313fbfe5ac3",
+      "result_id": "265147d3-3948-4ad3-a24c-b0ba6756d379"
+    },
+    {
+      "claim_id": "4692ae82-a683-4e40-82e8-801b3915dd10",
+      "result_id": "265147d3-3948-4ad3-a24c-b0ba6756d379"
+    }
+  ],
+  "comparisons": []
+}

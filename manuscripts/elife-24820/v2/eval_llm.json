@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A synthetic cell culture system was successfully established using HEK293 and MCF7 cells expressing Fat4-citrine and Ds1-mCherry fusion proteins. Western blotting confirmed expression of proteins at expected molecular weights (~500 kDa for Fat4-citrine, ~320 kDa for Ds1-mCherry). Co-culture experiments demonstrated strong accumulation of both proteins at heterotypic junctions but not at homotypic junctions or in monocultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide converging evidence for successful establishment of the synthetic system. Western blot validation (C39) confirms protein expression at expected sizes, and microscopy data (C40-C42) demonstrate the expected heterotypic interaction pattern across two cell lines (HEK293 and MCF7), with appropriate negative controls (homotypic junctions and monocultures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Trans-endocytosis of Ds1-mCherry into Fat4-citrine expressing cells was observed, representing the first evidence of trans-endocytosis in the Fat-Dachsous pathway. This process was unidirectional, with no trans-endocytosis of Fat4-citrine into Ds1-mCherry cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe a novel observation supported by microscopy data showing vesicles containing both proteins within Fat4-expressing cells. The unidirectional nature (C44) and novelty claim (C45) are clearly stated, though the mechanism and functional significance remain unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C58"
+    ],
+    "result": "Fat4-Ds1 complex accumulation at cell boundaries exhibits a threshold-like response to protein expression levels. Population-level analysis revealed a clear separation between accumulating and non-accumulating boundaries, with threshold levels remaining constant despite increased induction time. This behavior is consistent with a bistable localized feedback model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C53, and C58 collectively demonstrate threshold behavior through multiple lines of evidence: 2D distribution analysis showing clear separation (C51), constant threshold levels over time (C52), Hill coefficient n=2.2\u00b10.3 indicating non-linearity (referenced in text), and consistency with bistability predictions (C53). The large-scale automated analysis (11,600 cells/timepoint) provides statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Live cell imaging at the single-cell level confirmed threshold response dynamics. Ds1-mCherry localizes primarily to the membrane and total Ds1 levels are proportional to membrane levels. Boundary accumulation shows sharp threshold response and continues to increase non-linearly after accumulation begins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide single-cell validation of population-level observations. The proportionality between total and membrane Ds1 (C55) validates the measurement approach. The threshold response (C56) and non-linear accumulation (C57) are supported by time-lapse data, though the number of analyzed movies is limited (n=3 shown in supplementary data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Fat4 and Ds1 accumulation at boundaries are proportional to each other with high correlation (\u03c1=0.989 over two orders of magnitude), indicating formation of Fat4-Ds1 complexes with fixed stoichiometric ratio rather than independent accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 demonstrate stoichiometric complex formation through quantitative analysis of both time-lapse movies (C59) and snapshots (C60, n=31 boundaries). The high correlation coefficient and interpretation of fixed stoichiometry (C61) are well-supported, though the exact stoichiometric ratio is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "Fat4-Ds1 complexes exhibit dramatically slower dynamics than unbound proteins. FRAP experiments showed recovery times >25 min for complexes versus seconds for unbound proteins. Diffusion coefficients and exchange rates of complexes are more than two orders of magnitude smaller than unbound Fat4 and Ds1, supporting a model where complex stabilization via clustering serves as a mechanism for self-enhancing feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C69, and C72 provide strong quantitative evidence for enhanced stability through FRAP and FRAP-TIRF experiments. The dramatic difference in dynamics (>100-fold) is well-documented with appropriate sample sizes (n=10 for complexes, n=29-36 for unbound proteins). Statistical significance is reported (p<0.001). The interpretation linking stability to feedback mechanism (C72) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "N-cadherin complexes also exhibit significantly slower dynamics than unbound N-cadherin, consistent with cooperative binding and enhanced stabilization previously observed for E-cadherin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide comparative data showing that enhanced stability upon complex formation is not unique to Fat4-Ds1. The observation is supported by FRAP data (n=11 for N-cad complex, n=21 for unbound) and appropriately contextualized with prior E-cadherin literature. This serves as a positive control supporting the generality of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Unbound Fat4 exhibits significantly faster membrane diffusion than unbound Ds1 despite having higher molecular weight (500 kDa vs 320 kDa), suggesting either inhibited Ds1 diffusion or enhanced Fat4 surface dynamics through active transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 report an unexpected observation from FRAP data that contradicts simple predictions based on molecular weight. The observation is clearly documented (Figure 4E), but the interpretation (C74) is appropriately presented as speculative. This finding may have mechanistic implications but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "High-resolution imaging revealed a spatial gap (116\u00b163 nm, n=61) between Fat4-citrine and Ds1-mCherry fluorescence peaks at accumulating boundaries, termed the 'rainbow' feature. This gap is not due to chromatic aberration and is consistent with Fat4 and Ds1 bound in an extended linear form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe a novel structural observation supported by multiple imaging modalities (confocal, STED) and appropriate controls for chromatic aberration (C79). The quantitative analysis (C82) provides a tight distribution, and the interpretation (C83) is consistent with known cadherin ectodomain lengths (~4.5 nm \u00d7 34 repeats = 153 nm expected). The observation across different boundaries and cell types (C78, C80) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Co-expression of Fat4 and Ds1 in the same cells is sufficient to induce polarization of Fat4-Ds1 complexes. Rainbow features indicate strong directional bias on individual boundaries without domains of opposite polarity, consistent with mutual inhibition feedback between opposing complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C86-C90 demonstrate spontaneous polarization in cells expressing both proteins, a key prediction of localized feedback models. The observation of rainbows (C87) and coordinated alignment without opposing domains (C89) supports mutual inhibition (C90). However, the interpretation that 'direct interaction between opposing complexes is sufficient' (C90) is somewhat speculative as other mechanisms are not definitively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The direction of polarity varies between boundaries of the same cell and is biased by local expression gradients. When Fat4 and Ds1 gradients are opposed, polarity aligns with both gradients in 36/39 boundaries. When gradients are aligned, polarity follows either Fat4 or Ds1 gradient approximately equally. Live imaging confirmed that polarity emerges in the direction of pre-existing gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 provide comprehensive analysis of polarity direction relative to expression gradients (n=107 boundaries). The quantitative data (C98-C99) clearly show gradient-dependent polarity, and live imaging (C101) confirms temporal precedence of gradients. The interpretation that cell-to-cell variability creates local biasing gradients (C102) is well-supported. However, the difference from in vivo long-range coordination (C92) may also reflect absence of tissue-scale cues beyond just variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study provides direct evidence that localized feedbacks on Fat4-Ds1 complexes can give rise to PCP. Evidence for self-enhancing feedback comes from threshold response (first direct observation in a PCP system), and evidence for mutual inhibition comes from spontaneous polarization in co-expressing cells. The minimal synthetic system suggests no other pathway-specific proteins are required for feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C103-C107 represent the main conclusions synthesizing multiple experimental results. The evidence for self-enhancing feedback (threshold response, C104-C105) and mutual inhibition (spontaneous polarization, C106) is well-documented. However, the claim that 'no other proteins specific to this pathway are involved' (C107) is overstated\u2014the experiments show sufficiency but not necessity, and endogenous cellular machinery may still play roles. The conclusion is largely supported but contains some inferential leaps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C108"
+    ],
+    "result": "Enhanced stability of Fat4-Ds1 complexes, possibly through clustering, is proposed as an underlying mechanism for self-enhancing feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63, and C108 present a mechanistic interpretation of the FRAP data. While the enhanced stability is well-documented (see previous result), the specific mechanism of clustering and its role in feedback is speculative (appropriately qualified with 'possibly' and 'could at least in part'). The hypothesis is reasonable given prior cadherin literature but requires direct structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Alternative or additional mechanisms for localized feedbacks are discussed, including diffusion traps, directional trafficking, and cytoplasmic PCP components. Potential functional implications of extreme stability and trans-endocytosis for boundary remodeling are considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 are appropriately speculative discussions of alternative mechanisms and functional implications. These are not tested experimentally in the current work and represent hypotheses for future investigation. The speculation is reasonable and well-grounded in literature (C112-C113) but lacks direct supporting evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The observed extended conformation of Fat4-Ds1 complexes appears to contradict a recent study suggesting compact folding, though the source of this discrepancy is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117 acknowledge a potential conflict with prior literature (Tsukasaki et al., 2014) but appropriately note uncertainty about the source of discrepancy. The authors' data support extended conformation, but reconciliation with the cited compact structure study would require additional experiments. The acknowledgment of uncertainty is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The synthetic system demonstrates that Fat4 and Ds1 expression is sufficient for polarized boundaries, but polarity direction is locally independent unlike coordinated in vivo polarity. This difference is attributed to cell-to-cell expression variability creating local biasing gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 appropriately distinguish between sufficiency for polarization (well-supported) and coordination of polarity direction (absent in vitro). The explanation invoking expression variability (C120-C121) is reasonable and supported by the gradient analysis, though alternative explanations (e.g., absence of tissue-scale morphogen gradients) are not fully explored. The comparison to Drosophila denticles (C122) provides useful context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background and context claims establishing the biological importance of PCP, the Fat/Dachsous pathway, theoretical models for polarity establishment, and gaps in current knowledge that motivate the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C37 provide literature context and theoretical framework. These are appropriately cited and represent established knowledge or theoretical predictions. The gap in knowledge (C3, C25, C30) motivates the experimental work. These claims are well-supported by citations and serve to frame the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior literature on cadherin cooperative binding and enhanced stability is cited to support the proposed mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64, C109-C110 appropriately cite relevant prior work on E-cadherin and Drosophila Ft/Ds that supports the proposed stabilization mechanism. These citations are accurate and relevant to the interpretation of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Summary of gradient analysis results and broader implications for understanding membrane protein organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 summarize key findings about gradient-dependent polarity and place them in broader context. C123-C124 restate results already evaluated above. C125 makes a broad claim about general framework that is reasonable but somewhat aspirational given the specific focus on Fat4-Ds1.",
+    "result_type": "MINOR"
+  }
+]

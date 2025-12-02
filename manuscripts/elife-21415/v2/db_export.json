@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "27ebb8e0-9a2e-49be-a3b2-b210ccad1df6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:11:50.992553Z",
+    "updated_at": "2025-12-01T19:11:50.992553Z"
+  },
+  "content": [
+    {
+      "id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "submission_id": "27ebb8e0-9a2e-49be-a3b2-b210ccad1df6",
+      "content_type": "manuscript",
+      "content_text": "# Distributing tasks via multiple input pathways increases cellular survival in stress\n\n## Authors\n\n- Alejandro A Granados<sup>1</sup>\n- Matthew M Crane<sup>1</sup>\n- Luis F Montano-Gutierrez<sup>1</sup>\n- Reiko J Tanaka<sup>2</sup> ([ORCID: 0000-0002-0769-9382](https://orcid.org/0000-0002-0769-9382))\n- Margaritis Voliotis<sup>4</sup> ([ORCID: 0000-0001-6488-7198](https://orcid.org/0000-0001-6488-7198))\n- Peter S Swain<sup>1</sup> ([ORCID: 0000-0001-7489-8587](https://orcid.org/0000-0001-7489-8587)) \u2020\n\n### Affiliations\n\n1. SynthSys - Synthetic and Systems Biology University of Edinburgh Edinburgh United Kingdom\n2. Department of Bioengineering Imperial College London London United Kingdom\n3. School of Biological Sciences University of Edinburgh Edinburgh United Kingdom\n4. Department of Mathematics and Living Systems Institute, College of Engineering, Mathematics, and Physical Sciences University of Exeter Exeter United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nImproving in one aspect of a task can undermine performance in another, but how such opposing demands play out in single cells and impact on fitness is mostly unknown. Here we study budding yeast in dynamic environments of hyperosmotic stress and show how the corresponding signalling network increases cellular survival both by assigning the requirements of high response speed and high response accuracy to two separate input pathways and by having these pathways interact to converge on Hog1, a p38 MAP kinase. Cells with only the less accurate, reflex-like pathway are fitter in sudden stress, whereas cells with only the slow, more accurate pathway are fitter in increasing but fluctuating stress. Our results demonstrate that cellular signalling is vulnerable to trade-offs in performance, but that these trade-offs can be mitigated by assigning the opposing tasks to different signalling subnetworks. Such division of labour could function broadly within cellular signal transduction.\n\n## Introduction\n\nCells must adapt to changes in their environment and to do so specialise their response to the nature of the signal being detected. Improving performance in one task, however, often undermines performance in another (Pareto, 1896). In engineering, for example, it is well-known that fast responses have lower accuracy and that higher amplifications can cause overshooting and unintended oscillations (Astrom and Murray, 2008).\n\nAt the cellular level, we expect signal transduction has evolved to reduce such trade-offs because performance in, for example, both speed and accuracy are likely to be under selection (Shoval et al., 2012; Lan et al., 2012; Siggia and Vergassola, 2013). In particular, stress responses can not only be a life-and-death situation where a too slow response is fatal, but also often lead to the consumption of substantial cellular resources so that cells must accurately coordinate their response with the stress (L\u00f3pez-Maury et al., 2008; Perkins and Swain, 2009). To maintain accuracy, we can think of cells having to continuously match the degree of activation of signalling networks with both their internal state and with the magnitude and type of extracellular signals. By doing so, cells can then correctly \u2018interpret\u2019 the environment and launch and modify the appropriate response at the appropriate level.\n\nTo understand how cells mitigate trade-offs in signalling, we turned to one of the most studied eukaryotic stress responses: hyperosmotic stress in budding yeast. Following an abrupt increase in environmental osmolarity, yeast cells can shrink in seconds (Hohmann, 2002) and must therefore respond quickly. Their response though is metabolically costly, involving the synthesis of the osmoprotectant glycerol, and inaccurate hyperactivation of the signalling network can be highly deleterious (Tao et al., 1999; Mitchell et al., 2015).\n\nWhen the osmolarity of the environment increases, yeast activate a p38 kinase, Hog1, to launch the stress response. The Hyper-Osmolarity-Glycerol (HOG) network has a Y-shaped structure with two input pathways both converging on Pbs2, a MAP kinase kinase (Figure 1A). One branch of the Y, the Sln1 pathway, uses a two-component phosphorelay, analogous to those in bacteria, to propagate the signal (Posas et al., 1996; Posas and Saito, 1998); the other, the Sho1 branch, uses protein kinases, similar to signalling in higher organisms (Posas and Saito, 1997; Tatebayashi et al., 2006). Once activated, Pbs2 in turn activates Hog1 via phosphorylation (Brewster et al., 1993). Similarly to MAP kinases in mammalian cells, Hog1 can then translocate into the nucleus. Upon activation, Hog1 causes an increase in the intracellular concentration of glycerol, yeast\u2019s main osmoprotectant, in two ways (Saito and Posas, 2012): first, through cytosolic changes, such as diverting glycolysis towards synthesizing glycerol and closing channels that export glycerol, and, second, through altering gene expression to increase the numbers of enzymes involved in glycerol synthesis. As levels of intracellular glycerol increase, water returns to the cell, and the cellular volume expands. This increase in volume reduces signalling through the HOG network and the levels of activation of Hog1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two input branches regulate the activity of the Hog1 kinase. The Sln1 (green) branch is a bacterial-like phosphorelay. The Sho1 (red) branch is a MAP kinase cascade, which is tethered to the membrane by the sensors Sho1 and Msb2. (B) A schematic showing the operation of the ALCATRAS microfluidic device (Crane et al., 2014). Single cells are confined between PDMS traps (blue) and exposed to changes in osmolarity. To ensure all strains experience identical environments, they are loaded into separate chambers of the same device. (C) When exposed to hyperosmotic stress, cellular volume shrinks, Hog1 undergoes nuclear translocation, and cells arrest. Growth typically resumes once the volume has recovered. (D,E) A reduction in volume causes Hog1 to translocate within minutes and the recovery of the volume correlates with levels of nuclear Hog1. The average of the cell population ($n=356$) and three single-cell traces selected at random are shown.\n\nDespite these discoveries, the advantage of having two input pathways in the HOG network is still not understood (Tanaka et al., 2014; Brewster and Gustin, 2014). The two branches of the Y may sense stress differently (Reiser et al., 2003; Tanaka et al., 2014) and are known to operate at different time-scales (Maeda et al., 1995; Hersen et al., 2008): the Sln1 branch being faster than the Sho1 branch. These different response times imply that each pathway has the potential to respond distinctly to input signals (Behar et al., 2007) and hence generate distinct dynamics of volume recovery. Mutants that have only one branch of the Y have been created (Maeda et al., 1995; Reiser et al., 2003; Hersen et al., 2008; Macia et al., 2009; Schaber et al., 2012; English et al., 2015), but there is no reported phenotype for strains having only the Sln1 branch, and the Sho1 pathway is often considered redundant (Klipp et al., 2005; Muzzey et al., 2009).\n\nWe hypothesized that the Y-shaped structure could allow the cell to respond to stress with both speed and accuracy. Our approach was to characterize the behaviour of both Hog1 and cellular volume at the single-cell level in the wild-type and in mutants with only one of the input pathways. With both types of single-cell measurements, we can quantify accuracy by the statistical dependency between the dynamics of cellular volume and the dynamics of nuclear Hog1. We show that each input pathway specializes to a particular task and that by having the two pathways the wild-type is both fast and accurate over a wide range of dynamic environments.\n\n## Results\n\nTo understand how the HOG network might mitigate trade-offs in performance, we measured the extent of cellular stress by the reduction of the cellular volume and the extent of activation of the HOG network by the degree of nuclear localization of Hog1. The nuclear level of Hog1 has long been used as a read-out of the HOG network\u2019s response (Mettetal et al., 2008; Muzzey et al., 2009; Pelet et al., 2011; Babazadeh et al., 2013; Mitchell et al., 2015) and is strongly correlated with Hog1 phosphorylation (Reiser et al., 1999).\n\nWe measured the dynamics of Hog1 in the wild-type strain and in two established mutants (Hersen et al., 2008; English et al., 2015)\u2014a \u2018fast\u2019 mutant with only the Sln1 branch (deletion of Ste11) and a \u2018slow\u2019 mutant with only the Sho1 branch (deletion of Ssk1)\u2014at the same time and in stress with identical dynamics (Figure 1B) and quantified single-cell responses (Figure 1C\u2013E). To impose osmotic stress, we use sorbitol (Hersen et al., 2008), which unlike salts does not apply any additional stress from toxic cations (Posas et al., 2000).\n\n### Mutants with just one of the input pathways have different accuracy\n\nIn steps of hyperosmotic stress, by far the most common type of input so far investigated (Saito and Posas, 2012), the fast (Sln1 only) mutant has been reported to perform almost identically to wild-type. We first verified that the two mutants, each with one of the branches of the Y, behave as expected (Maeda et al., 1995; Hersen et al., 2008; Macia et al., 2009). Indeed, in steps, the mean response of Hog1 in the fast mutants is equivalent to wild-type cells, but the slow mutant has typically longer response times and a lower maximum level of nuclear\u00a0localization (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig2-v2.jpg)\n\n**Figure 2.:** (A) Characterization of the wild-type (WT) and mutant strains in response to a 1\u00a0M sorbitol step. Colours here and in all following figures: blue (WT); green (fast mutant\u2014ssk1$\u0394$); red (slow mutant\u2014ste11$\u0394$). Mean responses are shown and error bars are SEM. See also Video 1. (B) Normalized response from wild-type cells to illustrate the degree of matching between the time of adaptation of Hog1 (the time for nuclear Hog1 to undergo a 85% decrease from its maximum) and the time of volume recovery (the time for the volume to undergo a 85% increase from its minimum). (C) Accuracy is the correlation between the adaptation times and is lowest for the fast mutant in late stages of the volume recovery (data from six experiments with at least 500 cells per strain; Figure 2\u2014figure supplement 1). Error bars are 95% confidence intervals for the mean calculated by bootstrapping. (D) Adaptation of Hog1 in single cells becomes less sensitive to the magnitude of the stress in the fast mutant. The mutual information between the distributions of adaptation times of Hog1 and the magnitude of the steps from four experiments shows that the fast mutant becomes the least informative late in adaptation explaining the drop in correlation in C. Error bars are 95% credible intervals for the mean calculated by bootstrapping. Differences between strains are therefore at a 5% significance level when the error bars do not overlap.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Step data used in Figure 2C with the sorbitol concentrations given above each panel. Average and SEM error bars are shown. Numbers of cells are listed in order of wild-type, ste11\u2206, ssk1\u2206 for each experiment (n\u00a0=\u00a078, 112, 94 for 0.2\u00a0M; n\u00a0=\u00a0116, 140, 87 for 0.4\u00a0M; n\u00a0=\u00a0105, 123, 113 for 0.6\u00a0M ; n\u00a0=\u00a082, 81, 87 for 0.8\u00a0M; n\u00a0=\u00a0192, 148, 125 for 1.0\u00a0M; n\u00a0=\u00a0133, 89, 94 for 1.2\u00a0M). (B) Average volume traces for the experiments shown in A. Error bars are SEM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Single-cell distributions of the adaptation time of Hog1 (time to adapt to 85% of the maximum value) for step inputs of 0.6, 0.8, 1 and 1.2\u00a0M sorbitol. Adaptation times were found from the experiments of Figure 2\u2014figure supplement 1 and the distributions used to calculate the mutual information in Figure 2D.\n\n![Video 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-media1.mp4.jpg)\n\n**Video 1.:** Overlay of DIC and fluorescence microscopy images showing cells trapped between two pillars in the ALCATRAS microfluidics device.\n\nConsidering the reduction in cellular volume, the wild-type and fast response are again almost identical on average, and the longer response time of the slow mutant is reflected in a slower volume recovery (Figure 2A), particularly in larger steps (Figure 2\u2014figure supplement 1). In all strains, the mean volume and the mean level of nuclear Hog1 simultaneously go to zero (Figure 2A).\n\nAt the single-cell level, however, this picture changes (Figure 2B). We quantified the degree to which the cellular response matches the cellular volume\u2014the accuracy of the response\u2014by the statistical dependency (the Pearson correlation) between the time of adaptation of Hog1 and the time of adaptation of the volume. Cells differ in their internal states, for example in their intracellular levels of glycerol, and so the recovery of the volume reports the extent of the subjective stress experienced by each cell. To normalize between cells and for the magnitude of the step, the correlation is calculated for different fractions of the recovery of the volume (Figure 2C). Although the accuracy of all strains increases as the volume recovers, it is the wild-type and the slow mutant that behave similarly, and the correlation for the fast mutant remains consistently lower than the wild-type.\n\nThis discrepancy between the mean (Figure 2A) and the single-cell results (Figure 2C) implies that the Hog1 behaviour in the fast mutant during adaptation is more noisy than the wild-type. The variation can be quantified by the statistical dependency (the mutual information) between the adaptation times of Hog1 in single cells and the magnitude of the stress (Figure 2D). A higher mutual information implies that there is less overlap between the distributions of adaptation times for each stress (Figure 2\u2014figure supplement 2) and therefore that the adaptation time of a typical Hog1 response is different for different levels of stress. As Hog1 adapts, Hog1 in the fast mutant becomes less informative on the level of stress and its distribution of adaptation times is broader than the wild-type for some stresses.\n\nThe two pathways therefore have contrasting behaviors: the slow pathway has a slower mean response of Hog1 but is almost as accurate as the wild-type at long times, and the fast pathway although responding the same as the wild-type on average is inaccurate at the single-cell level. Our results suggest that maintaining accuracy is principally addressed by the slow pathway, which best correlates the dynamics of Hog1 with the dynamics of the cellular volume in individual cells.\n\n### Sensitivity to the system\u2019s negative integral feedback affects accuracy\n\nThe adaptation of Hog1 and the adaptation of the volume are connected by negative feedback (Muzzey et al., 2009). This feedback acts through intracellular glycerol. Higher intracellular concentration of glycerol cause water to move into the cell and the resulting increase in volume reduces the level of activation of the HOG network. The rate of increase in glycerol is expected to depend on the time-integral of nuclear Hog1 (Muzzey et al., 2009; English et al., 2015), and the feedback is therefore called integral feedback (Astrom and Murray, 2008).\n\nWe reasoned that if the slow mutant is able to gradually increase its accuracy (Figure 2C) then the slow pathway should be more sensitive to the integral feedback. Indeed, the slow pathway unlike the fast pathway is known to have multiple types of osmo-sensors (Tanaka et al., 2014) and so may better sense the increase in volume resulting from the increase in glycerol.\n\nTo determine the sensitivity of each pathway to the feedback, we exogenously perturbed the level of activation of the network to measure the extent to which each pathway can compensate for the perturbation. If Hog1 activity in the nucleus is reduced and the network is sensitive to the integral feedback, the system will compensate by increasing the time spent by Hog1 in the nucleus (Figure 3A) (Mettetal et al., 2008; Zi et al., 2010). We therefore expect the wild-type and the slow mutant, but not the fast, to maintain accuracy in compromised networks.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig3-v2.jpg)\n\n**Figure 3.:** (A) Before reaching Hog1, the signals from each pathway are transduced through Pbs2, and we perturb the HOG network by controlling PBS2 expression through a TET inducible promoter. Reduced induction of PBS2 compromises the network and decreases the maximum activity of Hog1. This reduction in activity should be compensated by the system\u2019s integral feedback lengthening the nuclear residence of Hog1 (box inset). (B) Measuring relative to unperturbed Pbs2, under-expression of Pbs2 reduces the amplitude of mean Hog1 nuclear localization, but increases its adaptation time on average in wild-type cells (1\u00a0M step; arrows indicate time for 85% adaptation). (C,D) Mean Hog1 dynamics for the slow and fast mutants show that only the slow mutant extends the adaptation time of Hog1 like the WT. Insets: Mean ratio for three experiments of the adaptation time of Hog1 to the adaptation time of the volume in single cells. Error bars are SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Average volume as a function of time in the three strains for different levels of Pbs2 repression. The time to recover the volume is extended in all strains for reduced levels of Pbs2. (B) Distributions of the ratio between the adaptation time of Hog1 and the adaptation time of the volume in single cells for different levels of Pbs2. Each distribution comprises at least 200 cells from three independent experiments (27 experiments in total). The median is indicated by a coloured line on the x-axis. For the fast mutant, reduced levels of Pbs2 result in premature adaptation of Hog1 relative to the volume recovery (p<10\u22126: two-sided Wilcoxon rank sum test for equal medians and indicated by asterisks). For wild-type and the slow mutant, the ratio of the time of adaptation of Hog1 adaptation to the time of adaptation of the volume is not significantly affected by reduced Pbs2 levels (p>0.1). (C) The correlation between adaptation time of Hog1 and the time for volume recovery as a percentage of volume recovery calculated by pooling together the data from B (cf. Figure 2C).\n\nBy exogenously decreasing levels of the MAP kinase kinase Pbs2, which lies downstream of both pathways (Figure 3A), we perturbed the network\u2019s activity and showed that the slow pathway is most sensitive to the integral feedback. Decreasing expression of PBS2 reduces the maximum level of Hog1 localization but increases its adaptation time in both the wild-type and slow mutant (Figure 3B and C). In contrast, for the fast pathway, there is little increase in the adaptation time (Figure 3D). Similarly, there is a corresponding change in the speed of the response of the slow, but not the fast, pathway indicating that the slow pathway is better coupled to the dynamics of the integral feedback. Both the ratio of adaptation time of Hog1 to the adaptation time of the volume and the accuracy decreases significantly only for the fast mutant (Figure 3D inset with p<10\u22126 using a two-sided Wilcoxon rank sum test for equal medians calculated by pooling distributions from single cells).\n\nTo reduce metabolic costs, cells should respond accurately to stress, matching the dynamics of their response with the dynamics of the stress and of their internal states. Our results are consistent with this task being principally performed by the slow pathway because of its stronger coupling to the system\u2019s integral feedback.\n\nThe insensitivity of the adaptation time of Hog1 and the sensitivity of the adaptation time of the volume for the fast mutant in these experiments (Figure 3D; Figure 3\u2014figure supplement 1) suggest the existence of a mechanism within the fast pathway that decreases signalling of Hog1 before the volume completely recovers. This additional adaptation within the pathway to a step of stress implies that the fast pathway has the potential to respond to the time-derivative of its input (Block et al., 1983; Behar et al., 2007; Alon, 2007). A derivative response, referred to as derivative action, is often used in engineering to improve performance by predicting the future behaviour of the input (Astrom and Murray, 2008).\n\n### Ramp inputs indicate derivative action within the fast pathway\n\nA system that only senses the time-derivative of an input should continually respond to an input that ramps linearly from low to high values because such an input has a constant time-derivative (Block et al., 1983). We therefore exposed cells to inputs where stress increases gradually (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig4-v2.jpg)\n\n**Figure 4.:** (A) The Hog1 trajectory in the fast mutant overshoots the Hog1 trajectories of both the wild-type and the slow mutant in ramp inputs (two examples with different slopes of approximately 0.03 M min$^{-1}$ and 0.06 M min$^{-1}$). The mean response is shown and error bars are SEM. (B) Distributions of response times relative to the wild-type for six different ramps (Figure 4\u2014figure supplement 1) shows that the fast mutant is even quicker than the wild-type on average ($p$-value $<10^{\u22126}$ using a t-test for distributions with at least 600 cells per strain). (C) The average amplitude of the Hog1 response for the fast mutant consistently overshoots the wild-type for ramp inputs, which responds linearly to the slope of the ramp. (D) An input with a fluctuating time-derivative shows the average Hog1 response of the fast mutant consistently over-shooting the wild-type. Errors are SEM. (E) The average of the single-cell cross-correlations of the trajectories of Hog1 with the trajectory of the (smoothed) time-derivative of the input shows that the high correlation of the wild-type comes from the fast and not the slow pathway (average of three independent experiments with fluctuating ramps and error bars as SD; $p$-value $<10^{\u22126}$ using a t-test on pooled single-cell data from the three experiments). (F) The mutual information between the time-derivative of the input in D and the level of Hog1 at each time point shows that the fast mutant best predicts the time-derivative (at 5% significance level calculated using credible intervals of the median).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Ramp data from Figure 2D showing the consistent overshoot of the wild-type Hog1 by the fast mutant. The sorbitol concentration was calculated from the fluorescent signal of the cy5 dye (black dotted lines and right y-axis) and a linear approximation is shown by the orange lines. Numbers of cells are listed in order of wild-type, ste11\u2206, ssk1\u2206 for each experiment (n\u00a0=\u00a0201, 195, 192 for 0.026\u00a0M/min; n\u00a0=\u00a0112, 198, 97 for 0.03\u00a0M/min; n\u00a0=\u00a0193, 226, 200 for 0.035\u00a0M/min; n\u00a0=\u00a0175, 164, 144 for 0.041\u00a0M/min; n\u00a0=\u00a0134, 86, 60 for 0.055\u00a0M/min; n\u00a0=\u00a0148, 187, 186 for 0.071\u00a0M/min). (B) The cross-correlation between the single-cell trajectories of Hog1 and the time-derivative of the input in the fluctuating ramp of Figure 4D. The derivative was smoothed using a first order filter and the correlation is plotted as a function of the smoothing parameter \u03b1. Cross-correlation for three experiments were calculated in total and the average is shown in Figure 4E.\n\nIn contrast to steps, ramp inputs reveal a substantial phenotypic difference between the fast mutant and the wild-type. We observe a systematic increase in the amplitude of Hog1 in the fast mutant over that of the wild-type and the mutant responds quicker (Figure 4A and B; Figure 4\u2014figure supplement 1). Indeed, the mean wild-type response is closer in amplitude to the slow mutant, particularly during adaptation (Figure 4A). The overshoot of the fast mutant (Figure 4C) is consistent with stronger derivative action in the fast pathway. Nevertheless, Hog1 in the fast mutant adapts despite the ramp in stress, and so the fast pathway must not only have derivative action but also respond to other aspects of the input. Indeed, linearizing a mathematical model of adaptation with negative feedback (Behar et al., 2007) shows that the network performs a time-derivative of the input in parallel with a proportional response.\n\nWe note that the wild-type response is generated by interactions between the two pathways and is not an average of their responses (Figure 4A): the maximum amplitude of the wild-type strain increases linearly with the gradient of the ramp although the response of strains with each individual pathway does not (Figure 4C).\n\nTo test further the existence of derivative action in the fast pathway, we exposed cells to fluctuating ramps, which have varying time-derivatives (Figure 4D), and determined if the response of Hog1 in each strain best correlated with either the input or the time-derivative of the input. As expected, both the fast mutant and the wild-type have the highest statistical dependency with the (smoothed) time-derivative (Figure 4E and F; Figure 4\u2014figure supplement 1).\n\nThe cellular response to osmotic stress should be sufficiently fast to enable survival. Our results are consistent with this task being addressed principally by the fast pathway, which initiates a \u2018knee-jerk\u2019, reflex-like response, partly through derivative action, that can overshoot and be too fast in comparison to the wild-type in ramps of stress.\n\n### Interactions between the two pathways enables the wild-type response\n\nTogether our results indicate contrasting roles for the two input pathways: the slow pathway provides accuracy at the expense of speed (Figure 3); the fast pathway provides speed at the expense of accuracy (Figure 4). Further, the response to ramps of stress implies the outputs of the two pathways do not always sum to give the wild-type response (Figure 4A).\n\nBuilding on previous work (Mettetal et al., 2008; Muzzey et al., 2009), we developed a modular mathematical model of the network with the aim of highlighting general principles governing how cells might balance two opposing tasks. Control theory is a natural framework to describe the modulation of cellular responses (Yi et al., 2000; El-Samad et al., 2005), and correspondingly we present the model as a block diagram (Figure 5A; Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig5-v2.jpg)\n\n**Figure 5.:** (A) A block diagram of a modular model of the HOG network. The slow pathway responds to the error, the difference between the intracellular and extracellular osmolarity; the fast pathway responds to both the error and the time-derivative of the input $u$ (the extracellular osmolarity). These pathways mutually inhibit each other and then activate Hog1. The rate of change of glycerol is determined by both the time-integral of Hog1 and by the level of activation of a Hog1-independent pathway that responds proportionally to the error. The accumulation of glycerol determines the intracellular osmolarity and the network\u2019s negative feedback. (B,C) Predictions of the wild-type and the two mutants in steps (0.6\u00a0M) and ramps (0.03 M min\u22121) of stress. The inset shows the contributions of the fast and slow pathways (dotted) to the wild-type response. Mutations remove cross-inhibition between the pathways causing the behaviour of the mutants to be different from the behaviour of the corresponding pathway in the wild-type. (D,E) Predictions of glycerol show that all strains initially over- or under-shoot the long-term behaviour (dotted black line). The fast mutants overshoots in both cases.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The slow pathway is modelled as a first-order filter of the error. The fast pathway also has a first-order filter of the error and derivative action: an amplified and filtered time-derivative of the input. Cross-inhibition between the two pathways consists of negative feedback of the filtered output of the slow pathway on the fast pathway and negative feedback of the filtered derivative action of the fast pathway on the slow pathway. Hog1 is the sum of the outputs of both pathways after the cross-inhibition and feeds into an integrator that is amplified and filtered before feeding into glycerol. The Hog1-independent pathway responds proportional to the error and directly feeds into glycerol. Glycerol negatively feeds back on the input to give the error. All parameter values are Figure 5\u2014figure supplement 1.\n\nWe modelled the Hog1 response as the output of the cell\u2019s \u2019controller\u2019 and the production of glycerol as the process being controlled. The integral feedback, which exists because glycerol affects the volume, makes the system a closed loop, and the network as whole acts to reduce the \u2018error\u2019\u2014the difference between the intracellular osmolarity (predominately determined by glycerol) and the extracellular osmolarity (the stress or input) (Klipp et al., 2005; Muzzey et al., 2009).\n\nThe slow pathway passes the error through a low-pass filter (the time-scale of this filter is determined by the adaptation time of the pathway) and then responds proportionally to the filtered error. Low-pass filtering in this pathway has been observed previously (Hersen et al., 2008).\n\nIn contrast, the activation of the fast pathway has two sources: it both responds to the error and to the time-derivative of the input. The error passes through a low-pass filter that has a higher cut-off frequency than the filter for the slow pathway (Hersen et al., 2008). The overall (zero-frequency) gain of the pathway is higher than the gain of the slow pathway, and the response of the pathway is therefore faster.\n\nTo generate the wild-type behaviour, the two input pathways inhibit each other (Figure 5A), but the model is agnostic to the biochemical details of this inhibition. A possible mechanism is competition between the pathways for Pbs2 (both pathways activate Pbs2 via phosphorylation of the same two residues [Hohmann, 2002]). For example, each pathway may be able to sequester Pbs2 from the other. This sequestering could potentially arise either from the different spatial locations of the receptors\u2014Sln1 is observed throughout the plasma membrane, but Sho1 localizes to sites of polarized growth (Raitt et al., 2000; Reiser et al., 2000)\u2014or from different allosteric states of Pbs2 (Monod et al., 1965). Indeed, from our data (Figure 3B), the amount of Pbs2 is limiting because the response of Hog1 changes if the levels of Pbs2 are reduced. Nevertheless, the inhibition could also be indirect: for example, the slow pathway could positively feedback on the fast pathway, which in turn inhibits the slow pathway.\n\nThe output of this biochemical controller is Hog1, whose activation is determined by the cross-inhibition between the input pathways. Hog1 feeds into an integrator, which determines the levels of glycerol and gives the system integral feedback (Muzzey et al., 2009). This integrator could be a long-lived gene product whose transcription is activated by Hog1 and whose levels are therefore proportional to the total amount of time that Hog1 spends in the nucleus.\n\nFinally, Hog1-independent mechanisms are know to regulate the early accumulation of glycerol (Brewster et al., 1993). For example, the Fps1 channels, which export glycerol through the plasma membrane, are not only controlled by Hog1, but also have additional regulation (Luyten et al., 1995; Ahmadpour et al., 2016). Their fast closure gives an initial boost of glycerol (Petelenz-Kurdziel et al., 2013), which is important in all three mutants because the glycerol produced from nuclear Hog1 accumulates relatively slowly, over the time-scale of the integrator. We include such mechanisms as an additional input pathway that responds proportionally to the error and directly controls glycerol (Muzzey et al., 2009). We note that if the error becomes negative, this pathway reduces intracellular glycerol and therefore partly describes the effects of open Fps1 channels.\n\nThe model captures the differences between the mutants and the wild-type we observe in both steps (Figure 5B) and ramps (Figure 5C) and provides insight into how two opposing tasks can be implemented in the network by having specialized subnetworks. Analogous specialization is believed to occur, for example, in the establishment of polarity in yeast where the speeds of activating and de-activating of the relevant signalling network are made distinct by having two separate positive feedbacks (Brandman et al., 2005).\n\n### The architecture of the HOG network enables both speed and accuracy\n\nUsing the model, we can understand the architecture of the HOG network as a means to provide both speed and accuracy. A fast response requires a high gain, but increasing gain typically comes with a reduction in structural stability (Astrom and Murray, 2008). Within the model (Figure 5D and E), this instability can manifest as the levels of glycerol overshooting and potentially oscillating (Schaber et al., 2012). Uncontrolled production of glycerol decreases the accuracy of the response by causing a mismatch between the dynamics of Hog1 and the dynamics of the volume.\n\nDerivative action is a well-known way to increase gain while maintaining structural stability (Astrom and Murray, 2008), and derivative action in the fast pathway enables that pathway\u2019s high gain. The derivative action is open loop, responding to the input not the error, and therefore reduces the coupling of the fast pathway to the integral feedback, undermining the network\u2019s accuracy. The intrinsic time-scale of the derivative action in the fast pathway is highlighted in the Pbs2 mutants where a reduction in Pbs2 decreases the gain of only those elements of the fast pathway that are sensitive to the error. Consequently, the derivative action principally determines the adaptation time of Hog1 (Figure 3D). A further signature of the intrinsic time-scale is also present in the non-monotonic character of the mutual information between the adaptation time of Hog1 and the level of stress in both the fast mutant and the wild-type (Figure 2D). This behaviour implies that the derivative action is typically strong enough to dominate the Hog1 response in steps and causes cells to adapt appropriately to the level of shock, at least early in the response.\n\nThe presence of the slow pathway allows the network to maintain accuracy despite the open-loop component of the fast pathway. The slow pathway has a lower gain and is therefore slower but more stable (Figure 3B and C). Further, it only responds to the error and can compensate for inaccuracies generated by the fast pathway because it is\u00a0more sensitive to the integral feedback.\n\nIn steps, the wild-type and the fast mutant are initially driven by the derivative action and the quicker response of the fast pathway allows inhibition of the slow pathway. Consequently, the fast pathway dominates the wild-type response (Figure 5B). At later times when the response from the derivative action falls, the differences between the accuracy of the wild-type, which benefits from the additional stabilising effects of the slow pathway, and the fast mutant become apparent. In ramps, the activation of the fast pathway by the derivative of the input is again important giving the overshoot observed in the fast mutant, but the maximum of its contribution is smaller and the initial inhibition of the slow pathway is lower (wild-type Hog1 begins as the average of the two mutants). Once the pathways activate further, they both inhibit each other and both control the response and can reduce the levels of Hog1 in the wild-type below either mutant (Figure 5C).\n\n### Each input pathway favours survival in distinct dynamic environments\n\nThe two mutants perform better at different tasks, responding at different speeds and with different levels of accuracy, and if these tasks are important for the cell we expect that the mutations may come with a fitness cost, although potentially only in particular environments. We therefore measured cell viability for stress with three different types of dynamics: steps, linear ramps, and fluctuating ramps.\n\nBulk fitness has been previously measured in the two mutants, and growth deficiencies for the slow mutant have been observed at high osmolarity (above approximately 0.3\u00a0M salt) (Macia et al., 2009). Such bulk measurements, based on monitoring optical density in liquid media, make varying the environmental dynamics challenging and miss single-cell events. Using ALCATRAS, we measure the number of cells that either die in the stress or never restart growth over five hours once the environment has stabilized. This direct measure allows the performance of individual cells to be evaluated (Figure 6A). All strains grow similarly in rich media and any change in fitness is therefore a consequence of the osmotic stress.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21415/elife-21415-fig6-v2.jpg)\n\n**Figure 6.:** A We measure failure to grow (inset) by the number of cells that either did not resume the cell cycle (arrested) or die over the 5 hr after the stress has stabilized for three different environments: a 1M step, a 0.03 M min$^{-1}$ linear ramp (of 40 min length), and 2 hr of a fluctuating ramp. Mean and SD of 2 experiments each comprising at least 300 cells per strain. The asterisks denote significance with a $p$-value $<10^{\u22126}$ calculated using a t-test and bootstrapping. See also Videos 2 and 3. B Together our results imply that a network with only one input pathway is subject to a speed-accuracy trade-off, which the two mutants satisfy in contrasting ways and we illustrate by showing the mutants lying on the extremes of a hypothetical Pareto front (dotted line). The wild-type by having two interacting pathways, each specializing to one aspect of the trade-off, escapes this constraint. Mean and 95% confidence intervals for response time and accuracy using data from Figure 2.\u00a0.\n\nQuantifying the number of unfit cells, we find that the selective advantage of having both input pathways is revealed by exposing cells to environments with a range of different dynamics: the fast mutant outperforms the slow mutant in steps of stress and the slow mutant outperforms the fast mutant in ramps of fluctuating stress (Figure 6A; Videos 2 and 3).\n\n![Video 2.](https://cdn.elifesciences.org/articles/21415/elife-21415-media2.mp4.jpg)\n\n**Video 2.:** A representative field of view (DIC channel) showing cells trapped in the ALCATRAS microfluidics device. White arrows indicate cells that are either arrested or dead.\n\n![Video 3.](https://cdn.elifesciences.org/articles/21415/elife-21415-media3.mp4.jpg)\n\n**Video 3.:** A representative field of view (DIC channel) showing cells trapped in the ALCATRAS microfluidics device. White arrows indicate cells that are either arrested or dead.\n\nFor steps, a fast response is a priority, and although the slow pathway is more accurate, the corresponding greater degree of overshoot of glycerol in the fast pathway, as expected by our model (Figure 5D), does not substantially affect survival of the fast mutant. In the model, the overshoot is counteracted by export through the Fps1 channels, and so the fast mutant pays a greater metabolic cost by exporting more glycerol. This cost does not affect survival but may change other correlates with fitness, such as lag time.\n\nIn ramps, where the environment continually changes, the derivative action in the fast pathway does not eventually decrease like it does in steps and the overshoot of glycerol correspondingly has a longer life-time in the fast mutant (Figure 5E) and is therefore likely to be more deleterious. An indication of deleterious effects in higher gradients can be seen in the amplitude of Hog1 (Figure 4C): although the amplitude of the wild-type Hog1 increases linearly with the gradient of the ramp and is therefore likely to be informative about this gradient, the saturating response of the fast mutant implies that its amplitude of Hog1 will often be similar, at least for inputs with higher gradients. Individual cells in the fast mutant may not then be able to match their response to the magnitude of the stress.\n\nIn the fluctuating ramps, accuracy is a priority. In the fast mutant, the derivative action depends only on the current value of the input and so the fast mutant responds almost anew each time the stress increases regardless of the cell\u2019s internal state (levels of glycerol). The resulting overshooting of glycerol is therefore compounded because of the long life-times of the overshoots and the ramp\u2019s greater duration. The slow mutant, in contrast, can modulate its response both by the cell\u2019s internal state and by the history of the stress because of its greater sensitivity to the integral feedback. With its two input pathways, the wild-type performs both tasks and is both fast and accurate, always having the highest probability of survival.\n\n## Discussion\n\nWe have thus shown that trade-offs in performance can undermine signalling in a single input pathway with either speed being sacrificed for accuracy or vice versa, but that by having two input pathways, each specializing to particular task, signalling networks can mitigate these trade-offs (Figure 6B).\n\nIn the HOG network, the Sln1 pathway is a fast reflex-like response that provides the speed necessary to survive sudden shocks but at the expense of accuracy, and alone can cause adaptation of Hog1 before recovery of the cellular volume. Consistent with this observation, Macia et al. report that fast mutants have a shorter duration of Hog1 phosphorylation compared to wild-type cells (Macia et al., 2009).\n\nIn contrast, the Sho1 pathway provides accuracy at the expense of speed and by specializing to sensing the integral feedback coming from volume recovery is more sensitive to the cell\u2019s internal state and the history of the extracellular stress. This behaviour is consistent with earlier speculations that the Sho1 branch primarily monitors osmotic changes during normal growth (Hohmann, 2002). If the integral feedback is to allow recovery of the volume, the network must remember the cellular volume before the stress (Astrom and Murray, 2008), and the Sho1 pathway interacts with the actin cytoskeleton (Tanaka et al., 2014), which might allow information from cell morphology and growth to be integrated with activation of Hog1.\n\nThe two input pathways have been reported to have different thresholds of activation (Macia et al., 2009), but our data and modelling points towards a re-interpretation in terms of different gains for the pathways. For all the steps and ramps of stress that we consider, we observe a response from both mutants, and so any differences in thresholds must be small (less than 0.2\u00a0M sorbitol in steps and 0.03 M min$^{-1}$ in ramps). The advantage of multiple thresholds might be to increase the network\u2019s dynamic range, but given that both thresholds can only be small, such an increase is unlikely to be substantial in the HOG network. Our data points towards it being the interaction between the two pathways that increases the dynamic range: we observe that only the wild-type response increases linearly with the gradient of a ramp of stress (Figure 4C).\n\nA potentially alternative architecture of the HOG signalling network is to have a single fast input pathway controlling the integral feedback. Such a network, however, would not only have structural instabilities in its dynamics because of the high gain necessary for high speed, but also would be more likely to become insensitive to the cell\u2019s internal state for sufficiently high stress. In large stress, all Hog1 molecules can become activated and the output of the HOG controller is then saturated. This saturation will happen for shocks of smaller magnitude for systems with high gain and causes a loss of accuracy because the system is then in open loop and is unable to exploit the integral feedback. Saturated activity of Hog1 should generate maximum production of glycerol and so faster recovery of cellular volume, but, once the volume has recovered, the level of glycerol synthesis will be too high for the level of stress and there will be a fitness cost. Having a slow pathway that inhibits the fast pathway helps prevent saturation of Hog1 activity and so increases sensitivity to the integral feedback for higher levels of stress.\n\nWe have developed a block diagram model of the HOG network, but a caveat is that, although the model is therefore modular, it is also agnostic to the biochemical details of both the interaction between the two input pathways and the mechanism allowing the fast pathway to respond to the time-derivative of the input. Competing for Pbs2 is one possible means of cross-inhibition between the pathways, but multiple feedbacks, both positive and negative, exist within the HOG network (Hao et al., 2007; Macia et al., 2009; Sharifian et al., 2015; English et al., 2015), and a feedback-based interaction is possible. That biochemistry can be used to measure a time-derivative on a time-scales as fast as seconds is well established (Block et al., 1983), and, in analogy with bacterial chemotaxis, we expect that upstream signalling in the fast pathway encodes a short-term memory of the level of the input to allow comparison of the current level to a value in the past.\n\nMore generally, our results confirm the importance of using inputs with varying dynamics to uncover the logic behind cellular signalling (Nurse, 2008; Alexander et al., 2009). In the wild, organisms are exposed to signals with a wider range of temporal behaviours then the constant inputs typically studied in the laboratory (L\u00f3pez-Maury et al., 2008), and signal transduction is likely to have evolved to allow organisms to differentiate between such signals or at least between classes of signals (Bowsher and Swain, 2014; Tka\u010dik and Bialek, 2016). Although such work is still in its infancy, dynamic inputs have been successfully used to understand signalling responses in, for example, bacteria (Young et al., 2013), yeast (Hao et al., 2013), and mammalian cells (Kellogg and Tay, 2015), and, with the ease of use of microfluidics (Bennett and Hasty, 2009), we believe should become commonplace.\n\nIn conclusion, we have shown that cellular signalling is vulnerable to fundamental trade-offs in performance, but that these vulnerabilities can be overcome by distributing tasks to different parts of the network and integrating together the outputs of this division of labour. We therefore expect such improvements in performance by the specialization of subnetworks to different tasks to exist broadly within cellular signal transduction.\n\n## Methods and materials\n\n### Strains used\n\nAll strains (Table 1) were constructed using PCR-based genomic integration and were validated by colony PCR. For inducible expression of PBS2, we used the Tet-off system (Bell\u00ed et al., 1998), for which doxycycline causes repression. We PCR-amplified the kanMX4-tTA-PtetO7 from plasmid pCM225 (Bell\u00ed et al., 1998) and inserted to substitute 200 bp upstream of the PBS2 ORF. Correct insertion was verified by colony PCR. The mutants showed equivalent growth from wild-type strains in XY media with 2% glucose over 24 hr (data not shown).\n\n**Table 1.**\n Saccharomyces cerevisiae strains used. All strains are in the S288C background.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Genotype</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BY4741</td>\n      <td>MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940</td>\n      <td>EUROSCARF</td>\n    </tr>\n    <tr>\n      <td>BY4742</td>\n      <td>MAT\u03b1 his3\u03941 leu2\u03940 lys2\u03940 ura3\u03940</td>\n      <td>EUROSCARF</td>\n    </tr>\n    <tr>\n      <td>SL364</td>\n      <td>MATa, leu2\u03940, lys2\u03940, HOG1-GFP::HIS3, HTB2-mCherry::URA3</td>\n      <td>gift - P. Hersen</td>\n    </tr>\n    <tr>\n      <td>SL373</td>\n      <td>MATa, met15\u03940, HOG1-GFP-HIS3, HTB2-mCherry::URA3, ste11::LEU2</td>\n      <td>gift - P. Hersen</td>\n    </tr>\n    <tr>\n      <td>SL268</td>\n      <td>MATa, leu2\u03940, lys2\u03940, HOG1-GFP-HIS3, HTB2-mCherry::URA3, ssk1::KANMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>SL395</td>\n      <td>MATa, leu2\u03940, lys2\u03940, HOG1-GFP::HIS3, HTB2-mCherry::URA3, P PBS2\u0394::KANMX4-tTA-P tetO7</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>SL396</td>\n      <td>MATa, met15\u03940, HOG1-GFP::HIS3, HTB2-mCherry::URA3, P PBS2\u0394::KANMX4-tTA-P tetO7, ste11::LEU2</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>SL442</td>\n      <td>MATa, lys2\u03940, HOG1-GFP-HIS3, HTB2-mCherry-URA3, P PBS2\u0394::kanMX4-tTA-P tetO7, ssk1::Hph</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Microscopy and microfluidics\n\n#### Cell preparation and loading ALCATRAS\n\nCells were grown at 30\u00b0C overnight in 2% glucose in synthetic complete (SC) media, diluted by a factor of 1/20 into fresh SC with 2% glucose next morning and incubated for 4 hr at 30\u00b0C. Cells were then loaded into the ALCATRAS chamber (Crane et al., 2014), which was already filled with SC with 2% glucose and 0.05% bovine serum albumin (BSA) to facilitate cell loading and reduce the formation of clumps of cells. Cells were allowed to rest for 1 hr in the microfluidic chamber before stress was applied.\n\nThe microfluidic chamber and syringe pumps were located inside an incubation chamber (Okolabs) that maintained a constant temperature of 30\u00b0C. We used a 60 \u00d7 1.4 NA oil immersion objective (Nikon). To ensure consistent focus over the experiment, the Nikon Perfect Focus System (PFS) was used. Fluorescence imaging was performed with an OptoLED light source (Cairn Research). Images were acquired using an Evolve 512 EMCCD (Photometrics).\n\n#### Dynamically changing extracellular stress\n\nTwo syringe pumps (Aladdin NE-1002X) were used to create dynamic environmental conditions. The first pump was loaded with SC and 2% glucose; the second pump was loaded with SC with 2% glucose and sorbitol. Both pumps infused media into a sterile metal T-junction in which media was mixed and then dispensed into the microfluidic chamber. We control the ratio of the two media entering the microfluidic chamber by setting the relative flow of each syringe pump. The total flow rate into the chamber was 4\u00a0$\\mu$L/min for all experiments.\n\nThe dye Cy5 was added to the syringe containing sorbitol and used to monitor the sorbitol dynamics. The concentration of sorbitol we report corresponds to the level of fluorescence from Cy5.\n\n#### Multi-strain experiments\n\nTo expose multiple strains to the same environmental conditions and to optimize data acquisition, we developed a multi-chamber version of ALCATRAS, which allows different strains to be loaded into distinct chambers but still be exposed to the same extracellular media. Polydimethylsiloxane (PDMS) barriers between strains ensure that there is no cross-contamination during loading. We correct for a delay of few seconds in image acquisition as the microscope moves between different positions.\n\n#### Image segmentation and quantification\n\nDuring each experiment, we acquired both DIC and fluorescence images. In the $z$-direction, fluorescence images were acquired in 0.75 micron steps over a range of six microns. The maximum projection of these images (the maximum pixel values across all the images) was used for quantification. In contrast, the Cy5 channel used to quantify the level of sorbitol in the media was acquired at a single focal plane.\n\nCells were segmented using the DIC images and custom Matlab code that used a support vector machine classifier to identify the centres of the cells. The size of each cell was first estimated with the circular Hough transform and then refined using an active contour method applied to the fluorescence images (Bakker et al., 2017; Bakker and Crane, 2017). A copy of the cell segmentation software is archived at https://github.com/elifesciences-publications/segmentation-software.\n\nThe volume of each cell was approximated from the total area of the cell in the fluorescence image (Gordon et al., 2007; Muzzey et al., 2009). We calculated the radius of the circle that has the same area as the cross-sectional area of the cell and used this radius to compute the volume assuming spherical cells. Our cell population is mostly young (as an inevitable result of exponential growth), and the majority of cells are approximately spherical.\n\n#### Quantifying nuclear accumulation\n\nWe quantified the nuclear accumulation of Hog1 by calculating the ratio between the average of the five brightest pixels within the cell and the median fluorescence of the whole cell. This measure is robust to bleaching of the fluorophore and has been widely used (Cai et al., 2008; Hao and O'Shea, 2011; Lin et al., 2015). Nevertheless, using a strain in which a histone was tagged with mCherry (Htb2), we validated the approach and observed no significant difference between the direct and indirect measures in agreement with an independent assessment (Uhlendorf et al., 2011). Furthermore, using a reporter for the nucleus creates a delay of a few seconds between acquiring the Hog1-GFP images and the mCherry nuclear tag, which can introduce errors when the cells shift between acquisitions, particularly during osmotic shocks.\n\n#### Numbers of cells\n\nWith our multi-strain experimental set-up, we can acquire on average 150 cells per strain with a sampling rate of 2 min. Therefore, experiments involving fluorescence imaging usually comprise 150 cells. Experiments with no fluorescence imaging, however, such as the fitness assays in Figure 6, comprise at least 300 cells per strain per condition (using a sampling rate of 5 min). Biological repeats (identical experimental conditions applied to different cultures of the same strain) were performed on different days.\n\n#### Comparing the Hog1 response of different strains\n\nWe did observe a dependence of the Hog1 response with the size of the cell, perhaps because of differences in age or pre-culture despite being treated identically. To control for these outliers, we used the unstressed wild-type cells for each experiment to determine a range of valid sizes: between the 20\u2019th and 80\u2019th wild-type percentiles. We excluded cells outside this range when visualizing Hog1.\n\n#### Response times\n\nSingle-cell time traces of Hog1 and volume were normalised by the pre-stimulation level (mean of the three time points prior to the shock). For accurate estimation of the response time, we interpolated the Hog1 traces of single cells. The Hog1 trajectories were then re-scaled such that the pre-shock level equals 0 and the extreme value equals 1. The response time distributions (Figure 4B) were computed from pooled data comprising multiple experiments (total cells: wild-type, 772; fast mutant, 833; slow mutant, 626; Figure 4\u2014figure supplement 1). For Figure 6B, we used 1 min sampling data for 0.6\u00a0M, 0.8\u00a0M and 1\u00a0M shocks (two repeats per experiment; total cells: wild-type, 458; fast mutant, 468; slow mutant, 350).\n\n#### Correlation of adaptation time of Hog1 and the recovery time of the volume\n\nTo calculate the adaptation times of Hog1 and cellular volume we smoothed the single-cell data using a moving average window (three time-points using smooth in Matlab). Hog1 and volume trajectories were re-scaled such that the pre-shock level equals 0 and the extreme value (either the maximum of the Hog1 response or the minimum of the cell volume) equals 1. Adaptation times to a given percentage of recovery were estimated from the scaled trajectories using linear interpolation.\n\nTo find the correlation between the adaptation time of Hog1 and the time of volume recovery (Figure 2C), we pooled data from six step experiments (Figure 2\u2014figure supplement 1) and used bootstrapping to estimate the 95$%$ confidence intervals for the correlation coefficient (bootci in Matlab). Our estimates are based on 2000 bootstrap samples and data points were weighted by experiment to correct for differing numbers of cells. Figure 3\u2014figure supplement 1C was calculated similarly from the data shown in Figure 3\u2014figure supplement 1.\n\nIn Figure 2D, we estimated the mutual information between the adaptation times of Hog1, $t_{Hog1}$, and the magnitude of the stress, $u$, using $MI(t;u)=H(t)-H(t|u)$. The first term, the entropy of the marginal distribution of adaptation times, was estimated by pooling data from the four step experiments with the highest stresses (Figure 2\u2014figure supplement 1). The distribution of adaptation times for low shocks have higher measurement errors because of the fast adaptation. The second term, the conditional entropy, was obtained by estimating the entropy of the distribution of adaption times for each step experiment and forming their weighted average based on the number of cells in each experiment. Estimates and error bars for all entropy terms were obtained using a Bayesian method (Nemenman et al., 2004) and shown as posterior means and standard deviations.\n\n#### Correlation and mutual information for the derivative of the input\n\nThe time-derivative of the fluctuating ramp input was filtered (using filter in Matlab) with the following discrete-time transfer function: $H\u2062(z)=1/(1-\\alpha/z)$. Trajectories, for both Hog1 and the input, were normalized to have a zero time-average, and the filtered derivative of the input was then cross-correlated with the single-cell Hog1 responses (using xcorr in Matlab). The maximum cross-correlation (across lags) was found for different values of the filter parameter $\\alpha$ (Figure 4\u2014figure supplement 1), and we show the highest correlation for all $\\alpha$ in Figure 4E.\n\nFor the estimation of the mutual information between the level of Hog1 and the time-derivative of the input (Figure 4F), an empirical distribution of input derivatives was obtained from the input trajectory of Figure 4D using 30 bins and ignoring negative values of the derivative. Assuming each time-point to be independent, the mutual information between the input derivatives and the levels of Hog1 was estimated for various lags (from 0 to 5 time-points) and the maximum value across lags is reported in Figure 4F.\n\n#### Fitness measurements\n\nCells were grown in the same conditions as above. Since the experiments were substantially longer, DIC images were acquired to avoid possible stress to the cells and fluorescence was used only to monitor the dynamics of sorbitol. The stress was applied as above, and we then identified cells that either did not resume the cell cycle or died over a window of 5 hr after the environment stabilized.\n\n### Perturbation of Pbs2 expression\n\n#### Design of the Tet-inducible PBS2 system\n\nTo control the levels of Pbs2, we used the Tet-off system (Bell\u00ed et al., 1998), for which doxycycline causes repression. The gene of interest is regulated by the Tet transactivator tTA, which consists of the tetO7-binding moiety plus the VP16 activator moiety and is unable to bind DNA when bound by doxycycline.\n\n#### Levels of doxycycline used and growth conditions\n\nFor each strain, we chose the concentration that affected the Hog1 amplitude in approximately the same fashion: the three strains respond differently to doxycycline (DOX). We defined three levels of Pbs2: (i) full induction (0 $\\mu$g/mL DOX for all strains); (ii) medium repression (Hog1 amplitude falls within 50\u201370% compared to full induction: 0.05 $\\mu$g/mL for wild-type; 0.03 $\\mu$g/mL for ste11$\u0394$; and 0.01 $\\mu$g/mL for ssk1$\u0394$); (iii) high repression (Hog1 amplitude is 20\u201340% of that in full induction: 0.1 $\\mu$g/mL for wild-type; 0.1$\\mu$ g/mL for ste11$\u0394$; 0.06\u00a0$u$g/mL for ssk1$\u0394$).\n\nFor each experiment, cells were grown for 4 hr in XY media with 2% glucose then diluted 1/100 into SC with 2% glucose and the indicated amount of doxycycline for overnight growth at 30\u00b0C so that Pbs2 reached steady-state levels of expression (cells were under constant selection).\n\n#### Hog1 and volume adaptation with decreased Pbs2\n\nFor comparing adaptation times of Hog1 and volume in single cells, we calculated the adaptation time of Hog1 from the time at which the nuclear level of Hog1 accumulation is maximum to the time of 85% recovery of the pre-shock state. The adaptation time of the volume was calculated equivalently, but using the minimum instead of the maximum value reached by the volume. We performed three independent experiments for each of the levels of PBS2 induction.\n\n### A mathematical model for the wild-type and mutants\n\nTo model the HOG network we adopted a modular approach based on control theory (Astrom and Murray, 2008) and used Matlab\u2019s modelling platform Simulink. The architecture of the model is shown in Figure 5\u2014figure supplement 1.\n\nBuilding on previous studies (Muzzey et al., 2009), we developed a linear model in which the different components of the system are first-order linear time-invariant systems characterized by a transfer function $\\frac{k}{\\tau\u2062s+1}$ with a zero-frequency gain of $k$ and a time-constant of $\\tau$. The error is defined as the difference between the external input, $u\u2062(t)$ (the extracellular osmolarity), and the internal state, $g$ (the intracellular concentration of glycerol). The slow pathway responds to the error; the fast pathway responds to the error and additionally has a derivative component that depends directly on the input $u\u2062(t)$. The two pathways inhibit each other at different time-scales: $\\tau_{fast}$ and $\\tau_{slow}$. The output of the two pathways, after the cross-inhibition, is added to generate the wild-type response of Hog1, which affects levels of glycerol through an integrator. Finally, the Hog1-independent pathway responds proportionally to the error and feeds directly into glycerol. To simulate the mutants, we remove one input pathway and the cross-inhibition between the pathways.\n\nTo parameterize the model, we used parameter optimization in the Simulink platform to simultaneously fit the response of the mutants to a step (0.6\u00a0M) and a ramp (0.03 M min$^{-1}$). We then incorporated the cross-inhibition between the two pathways and fitted the inhibition parameters, $\\tau_{fast}$ and $\\tau_{slow}$, to the wild-type response.\n\nA Simulink file is available as supplemental material.\n\n### Data availability\n\nData shown in the figures is freely accessible at dx.doi.org/10.7488/ds/2043.\n",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c7f94b6b-73cd-4735-8477-c088bb48c8fe",
+      "submission_id": "27ebb8e0-9a2e-49be-a3b2-b210ccad1df6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21415.019](https://doi.org/10.7554/eLife.21415.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multiple input pathways improve perception in a MAP kinase network by enabling distributed tasks\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior Editor and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Stefan Hohmann (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors use single-cell analysis to study the role of the two branches of the high osmolarity response in budding yeast. Following results of careful experiments, they suggest differential roles for the two branches: the Sln1 branch is fast and inaccurate and the Sho1 branch is slow but accurate. All reviewers found the work interesting and important.\n\nEssential revisions:\n\n1) Improve the writing. In particular, discuss the relation of the study with previous theoretical study (Brandman et al). In addition, the logical flow and rational for the different should be better described, so that the conclusions leading to the final model is easier to understand. Alternative explanations (e.g. extending dynamics range) should also be mentioned and discussed.\n\n2) Test a Pbs2 over-expression strain as a way to test the assumed key role of competition between the branches for limited Pbs2.\n\n3) Relate to the possible discrepancies mentioned in the reviews. This includes assumptions used in the model that may contrast data from literature, and possible inconsistencies between figures.\n\nReviewer #1:\n\n\"Multiple input pathways improve perception in a MAP kinase network by enabling distributed tasks\" by Granados et al. explores the role of the two branches of the high osmolarity response in budding yeast. The authors provide evidence and suggest a model that support differential roles for the two branches of the pathway \u2013 the Sln1 branch is fast and inaccurate and the Sho1 branch is slow but accurate. They perform a number of careful single cell observations in well-controlled dynamic environments to support these claims and then extend the work by show the ramification of these effects in physiologically plausible environments. On the whole I enjoyed this work and believe it is a worthwhile contribution towards understanding the design of signaling networks and the emergent properties that can result for certain network designs. I have several points that I would be interested in seeing the authors address.\n\n1) When I first read the Abstract of this paper I thought the authors were going to extend from the work of Brandman et al. (Science 2005). The claims in this paper are similar to the theoretical argument put forth by Brandman et al. for the potential behavior of interlinked negative feedback loops. While not emphasized, a critical feature for the Brandman paper was the need for saturation between the fast and noisy branch and the slow and accurate branch. This paper is a nice advance in that it provides a model and evidence for a practical implementation of this constraint. The authors should evaluate and discuss their contribution in relation to this paper.\n\n2) The authors focus on the kinetics and accuracy of the two responses. Maybe, naively, it seems to me that an equally plausible explanation for the results is that the Sln1 branch responds to large deviations, while the Sho1 branch responds to small deviations \u2013 the point of the two pathways is to extend the range of concentrations over which the pathway can work. I would like to see the authors address this alternate possibility and if possible provide evidence against this alternative possibility.\n\n3) Experimentally, it seems like the authors should be able to overexpress Pbs2. Overexpression should be able to eliminate the competition between the two branches of the pathway and the WT response would now become the linear addition of the two pathways.\n\n4) While out of scope of this paper, it would be interesting to see what kinase dead versions of each branch of the pathway did to the overall response.\n\nReviewer #2:\n\nThis single cell analysis of yeast HOG pathway osmostress signalling addresses the role and collaboration of the two branches that sense osmostress and signal to the MAPKK Pbs2 and eventually the MAPK Hog1. The two branches are controlled, respectively, by the Sln1 phosphorelay system and the Hkr1-Msb2-Sho1 complex. The authors define the different branches as fast but inaccurate and slow but accurate and they provide data from well-designed microfluidic experiments as well as simulations from mathematical modelling that support this notion.\n\nThe study seems to be well performed, both experimentally and in terms of mathematical modelling. Data analysis also seems to be well developed and appropriate. The results seem to be well documented. My comments mainly concern some conceptional considerations that at least should be discussed.\n\nThe role of the two branches has been studied previously and those papers are cited. The present study adds novel information, especially with respect to the above-mentioned idea of different tasks for quick responses to acute stress versus more accurate responses to gradual changes of external osmolarity.\n\nIt seems that the authors do not mention that it has been shown that the two branches seem to have different threshold levels for osmostress.\n\nThe study suffers from the same limitations as previous studies. One of those refers to the fact that the two branches are studied in isolation, i.e. when the other branch is inactivated by mutation. Probably the two branches behave differently in such a situation. This notion is supported by the data presented here. It is still not known how the two branches operate in wild type cells because reagents to monitor Pbs2 phosphorylation/activity do not exist; it appears in fact that the Sho1 branch contributes little if anything, at least under the scenarios so far studied. This is addressed by the authors in their ramp scenario as well as their mathematical model. But the relevance of the conclusions to the actual wild type situation remains elusive.\n\nAnother limitation concerns the fact that the activity of the Slt2 pathway, which responds to opposing osmotic stress treatments and may modulate intracellular glycerol levels, is ignored in the present study (see Talemi et al. 2016). While the HOG and Slt2 pathway do not seem to directly communicate they may do so via control of glycerol accumulation (see for instance Ahmadpour et al. 2016, Baltanas et al. 2013); the Slt2 pathway hence may affect the behaviour of HOG and especially the two branches when they operate in isolation.\n\nThe study is also based on some assumptions that do not seem to be supported by data reported in the literature. For instance (Introduction, seventh paragraph) it has been reported that HOG feedback coincides with the onset of volume recovery, i.e. as soon as the cells start to recover volume, the HOG signal falls rapidly back to basal. This implies, that the sensors sense changes in volume rather than absolute volume. See for instance Babazadeh et al. 2013.\n\nResults, first paragraph: there are additional single cell studies, some are cited elsewhere, some not: Schaber et al. 2012, Babazadeh et al. 2013, Sharifian et al. 2015 to name a few.\n\nIt appears that the authors do not explicitly mention that they chose sorbitol as osmostress agent. Most previous studies employed NaCl. The authors should justify their chose for the agent and the concentrations employed.\n\nReviewer #3:\n\nThe paper by Granados et al. fundamentally asks the question of how the two branches of the osmo-stress pathways coordinate to produce a rapid, yet accurate, response. The paper presents intriguing data that argues for temporal \"hand-over control\" from the fast (Sln1/Ssk1) branch to the slow (sho1) branch. As mentioned, the Sln1/Ssk1 is fast and dominates the early response through a bigger share of a common resource of the pathway (PBS2) and when this fast response weans away, PBS2 is liberated for the second branch, the slow one which is now handed the reins. Evidently, the presence of integral control in the slow branch is instrumental to this story, given that it is responsible for matching the perceived stress to the actual stress. As a result, this slow branch might be the major driver of response \"accuracy\", a hypothesis supported by some data in this manuscript.\n\nI will jump to the bottom line here: Above is the story that I extracted from the paper after reading it multiple times, trying to circumvent distractions to this narrative such as inter-spaced descriptions of step and ramp responses, and also a meager description of the computational modeling, which in my opinion should play a more prominent role in explaining the data. The data is not intuitively obvious, and the paper as written leaves the conclusion to the imagination of the reader. The narrative is ridden with jargon (\"accuracy\" is such a term), and crucial primary data is not shown (the volume time trajectories, rather a correlation plot between data features that the reader never sees is shown in a major figure that is actually the most important one of this work). There is obviously important information in these data not explicitly shown, since the correlation between volume recovery and Hog1 response seems to be changing with time and the Hog1 response shown for the ssk1 mutant has a rather intriguing biphasic recovery shape at high salt concentration (Figure 3 and accompanying supplementary figures). In light of these and other confusing elements, I found myself entranced by the narrative and model proposed by the authors, but confused as to 1) whether I am interpreting it correcting, or projecting my own partial understanding), 2) if I am understanding it correctly, then the data presented and explanations provided only partially corroborate this model and 3) I truly didn't know what to do with the ramp input data, was it there to make a point that supports the model or to argue that different branches of the pathway are instrumental in different conditions?. So, my rather unorthodox recommendations are:\n\n1) Rewrite the paper to focus on a clear narrative. What is exactly the model that the authors are proposing? Present that clearly (including why the computational model explains the data), and present the data in the order and logical sequence that actually support this model.\n\n2) Present all the data for volume recovery, the same as presenting the data for the Hog1 nuclear residence, not summary statistics of it.\n\n3) Bring the computational modeling to the forefront. For example, if the model I extracted out of the paper is correct, then I don't intuitively understand why the Ste11 mutant would have an identical Hog1 response to WT. I would have expected it to have the same initial response, maybe the same or similar Hog1 peak, but then the adaptation phase to be different. Why is it not? I am sure there is an explanation, but it is nowhere to be found in the manuscript. This is not a superficial point, this goes to 1) assessing the rigor and robustness of conclusions and 2) actually giving the reader information that they understand, and therefore trust.\n\nSuggestions above only give a partial list of changes that are needed. I intended to write those as a motivation for the authors to take a deeper look at their very intriguing and beautifully collected data, and extract the most robust story out of it.\n\nA few other concrete questions:\n\n1) In Figure 2A, the fast activation Hog1 localization is virtually indistinguishable from the WT; however, in Figure 3A, the fast mutant loses accuracy as the recovery continues. Since the fast mutant's nuclear import of Hog1 is virtually identical to the WT, and synthesis of Gpd1 and Gpp1 has been demonstrated to be the single most important factor towards recovery (Babazadeh et al., 2014), one would expect the resulting glycerol synthesis to be similar, but this argues differently. At what point in the stress perception does this \"knee-jerk\" reaction fail the cell? The authors use the recovery in volume as a proxy for actual stress recovery, but this is the secondary effect from Hog1's interaction with its binding partners and glyercol production. In addition to the change in volume, I would like to see a representative promoter's activity (e.g. pSTL1-YFP) to directly observe where the breakdown in cellular perception occurs. Given the argument that the slow mutant gains in accuracy over time, I would expect to see different promoter dynamics in the two mutants in their optimal environments. This could substantiate the author's claim of the two roles the pathways play.\n\n2) In Figure 5 (and Figure 5\u2014figure supplement 2), the authors demonstrate an osmostress terrain that should favor the pathway that is able to integrate better \u2013 and subsequently demonstrate the \"fast\" pathway's disadvantage. How were these terrains chosen? Both ramps loosely resemble (and therefore could be interpreted as) ramps, and it's surprising to find the \"fast\" mutant at nearly a 2X disadvantage (Figure 6A). This may be something more appropriate for the supplemental, but it would be nice to see a more examples of \"complex\" environments that are more distinct from a classical incline ramp to really cement the accuracy vs. speed argument. What are the corresponding volume (and promoter?) dynamics, and how to they correlate with the Hog1 localization shown in Figure 5D?\n\n3) Mitchell et al. (2015) touched upon how various waveforms are interpreted by the Hog1 pathway (i.e. high frequency is a single step; moderate frequency is a staircase; and low frequency is moderate staircase). This seems very relevant to the model the authors propose; How does the model proposed in Mitchell et al. and their work reconcile?\n\n4) In the Discussion, the authors state \"\u2026this 'passing on' of control occurs predominately through competition for Pbs2.\" This is a crucial aspect of the model proposed. While this was explicitly modeled, and the resulting Hog1 dynamics matched the predictions, the sharing model of Pbs2 was never experimentally tested. The authors propose that the different spatial localizations of Sho1 and Sln1 could aid in sequestering Pbs2. Since Sho1 localizes to the region of polarized growth, they should tag Pbs2 and Sho1 and observe co-localization at the onset of osmostress. If not possible within a reasonable timeframe, then the authors should spend some time providing evidence from literature supporting this aspect, or if none exists, state that explicitly in order to set the record straight.\n",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a87dc96d-7756-42ea-8add-76b6486744f3",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C1",
+      "claim": "Improving in one aspect of a task can undermine performance in another in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Improving in one aspect of a task can undermine performance in another, but how such opposing demands play out in single cells and impact on fitness is mostly unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement introducing the research problem, supported by the subsequent experimental findings in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "60bb050e-af9e-41fe-a3d0-4b1578eb7392",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C2",
+      "claim": "The HOG signaling network in budding yeast increases cellular survival by assigning high response speed and high response accuracy to two separate input pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we study budding yeast in dynamic environments of hyperosmotic stress and show how the corresponding signalling network increases cellular survival both by assigning the requirements of high response speed and high response accuracy to two separate input pathways and by having these pathways interact to converge on Hog1, a p38 MAP kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data throughout the manuscript showing differential performance of mutants with single pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "f18f33ee-2903-4671-b452-a2b219057f76",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C3",
+      "claim": "Cells with only the Sln1 pathway (fast mutant) are fitter in sudden stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with only the less accurate, reflex-like pathway are fitter in sudden stress, whereas cells with only the slow, more accurate pathway are fitter in increasing but fluctuating stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fitness measurements shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "f3f8ef19-af9b-4317-adcf-3345323c27f3",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C4",
+      "claim": "Cells with only the Sho1 pathway (slow mutant) are fitter in increasing but fluctuating stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with only the less accurate, reflex-like pathway are fitter in sudden stress, whereas cells with only the slow, more accurate pathway are fitter in increasing but fluctuating stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fitness measurements shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "3e470931-0ab8-4258-bad9-e82bc830407f",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C5",
+      "claim": "Fast responses have lower accuracy in engineering systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In engineering, for example, it is well-known that fast responses have lower accuracy and that higher amplifications can cause overshooting and unintended oscillations (Astrom and Murray, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to engineering literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8345a456-dff2-43bc-a5c0-e5039d63f6a8",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C6",
+      "claim": "Signal transduction has evolved to reduce trade-offs because performance in both speed and accuracy are likely under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, we expect signal transduction has evolved to reduce such trade-offs because performance in, for example, both speed and accuracy are likely to be under selection (Shoval et al., 2012; Lan et al., 2012; Siggia and Vergassola, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "a23d37df-5c52-4481-a1c1-6331c2c36984",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C7",
+      "claim": "Yeast cells can shrink in seconds following an abrupt increase in environmental osmolarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following an abrupt increase in environmental osmolarity, yeast cells can shrink in seconds (Hohmann, 2002) and must therefore respond quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4db30972-0080-4d91-a9bf-f9da34bbf01c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C8",
+      "claim": "The osmotic stress response in yeast is metabolically costly, involving the synthesis of glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "Their response though is metabolically costly, involving the synthesis of the osmoprotectant glycerol, and inaccurate hyperactivation of the signalling network can be highly deleterious (Tao et al., 1999; Mitchell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "256912ae-03f8-4ae3-8707-7d116a85148e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C9",
+      "claim": "The HOG network has a Y-shaped structure with two input pathways converging on Pbs2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hyper-Osmolarity-Glycerol (HOG) network has a Y-shaped structure with two input pathways both converging on Pbs2, a MAP kinase kinase (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the schematic in Figure 1A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5b155a93-be70-424d-84bb-ad450fa2b0b4",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C10",
+      "claim": "The Sln1 pathway uses a two-component phosphorelay analogous to those in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "One branch of the Y, the Sln1 pathway, uses a two-component phosphorelay, analogous to those in bacteria, to propagate the signal (Posas et al., 1996; Posas and Saito, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ab94d0eb-31ec-43ba-9bf8-5f136ea6b2df",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C11",
+      "claim": "The Sho1 pathway uses protein kinases similar to signalling in higher organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "the other, the Sho1 branch, uses protein kinases, similar to signalling in higher organisms (Posas and Saito, 1997; Tatebayashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c88b77ba-41bb-4766-9e13-d0bebfa25c17",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C12",
+      "claim": "Pbs2 activates Hog1 via phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated, Pbs2 in turn activates Hog1 via phosphorylation (Brewster et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "62ce07c6-7e94-4b3d-a8ed-a0f5d52761a4",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C13",
+      "claim": "Hog1 can translocate into the nucleus upon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to MAP kinases in mammalian cells, Hog1 can then translocate into the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knowledge of MAP kinase behavior and observed in the experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4b01cf5f-91a1-492e-b6a6-46552883e64c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C14",
+      "claim": "Hog1 increases intracellular glycerol concentration through cytosolic changes and altering gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation, Hog1 causes an increase in the intracellular concentration of glycerol, yeast's main osmoprotectant, in two ways (Saito and Posas, 2012): first, through cytosolic changes, such as diverting glycolysis towards synthesizing glycerol and closing channels that export glycerol, and, second, through altering gene expression to increase the numbers of enzymes involved in glycerol synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8350f029-b219-4f7a-9f78-fdb938258613",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C15",
+      "claim": "The Sln1 branch is faster than the Sho1 branch.",
+      "claim_type": "EXPLICIT",
+      "source": "The two branches of the Y may sense stress differently (Reiser et al., 2003; Tanaka et al., 2014) and are known to operate at different time-scales (Maeda et al., 1995; Hersen et al., 2008): the Sln1 branch being faster than the Sho1 branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "09313f3d-66ea-4ca9-b2be-d108a48e5459",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C16",
+      "claim": "There is no reported phenotype for strains having only the Sln1 branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants that have only one branch of the Y have been created (Maeda et al., 1995; Reiser et al., 2003; Hersen et al., 2008; Macia et al., 2009; Schaber et al., 2012; English et al., 2015), but there is no reported phenotype for strains having only the Sln1 branch, and the Sho1 pathway is often considered redundant (Klipp et al., 2005; Muzzey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "bc8504b0-2f52-432e-98de-4c4c6875064d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C17",
+      "claim": "The Sho1 pathway is often considered redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants that have only one branch of the Y have been created (Maeda et al., 1995; Reiser et al., 2003; Hersen et al., 2008; Macia et al., 2009; Schaber et al., 2012; English et al., 2015), but there is no reported phenotype for strains having only the Sln1 branch, and the Sho1 pathway is often considered redundant (Klipp et al., 2005; Muzzey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5e238d0a-eef3-4d4c-8b01-cf69cf6ac26e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C18",
+      "claim": "The nuclear level of Hog1 has long been used as a read-out of the HOG network's response.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear level of Hog1 has long been used as a read-out of the HOG network's response (Mettetal et al., 2008; Muzzey et al., 2009; Pelet et al., 2011; Babazadeh et al., 2013; Mitchell et al., 2015) and is strongly correlated with Hog1 phosphorylation (Reiser et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "88be0b72-fabc-4058-a53d-a0fd99ff7e28",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C19",
+      "claim": "Nuclear Hog1 is strongly correlated with Hog1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear level of Hog1 has long been used as a read-out of the HOG network's response (Mettetal et al., 2008; Muzzey et al., 2009; Pelet et al., 2011; Babazadeh et al., 2013; Mitchell et al., 2015) and is strongly correlated with Hog1 phosphorylation (Reiser et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "7200511a-1c91-4e39-afd2-da800e180e44",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C20",
+      "claim": "When exposed to hyperosmotic stress, cellular volume shrinks, Hog1 undergoes nuclear translocation, and cells arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to hyperosmotic stress, cellular volume shrinks, Hog1 undergoes nuclear translocation, and cells arrest. Growth typically resumes once the volume has recovered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "eceb86c7-6c18-459e-915b-344155d4d7df",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C21",
+      "claim": "A reduction in volume causes Hog1 to translocate within minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in volume causes Hog1 to translocate within minutes and the recovery of the volume correlates with levels of nuclear Hog1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D,E with population and single-cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4622dd8f-11d7-4ad5-8605-ee664f8477b1",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C22",
+      "claim": "The recovery of cellular volume correlates with levels of nuclear Hog1.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in volume causes Hog1 to translocate within minutes and the recovery of the volume correlates with levels of nuclear Hog1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D,E with population and single-cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "83a8e116-fb93-4e3e-b65c-1bd033e44319",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C23",
+      "claim": "In steps of hyperosmotic stress, the mean response of Hog1 in the fast mutants is equivalent to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in steps, the mean response of Hog1 in the fast mutants is equivalent to wild-type cells, but the slow mutant has typically longer response times and a lower maximum level of nuclear localization (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ab13125b-2e74-4c60-a9d5-739ca3632991",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C24",
+      "claim": "The slow mutant has typically longer response times and a lower maximum level of nuclear localization in steps of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in steps, the mean response of Hog1 in the fast mutants is equivalent to wild-type cells, but the slow mutant has typically longer response times and a lower maximum level of nuclear localization (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c2a0f5b8-5550-473f-9ce9-1cd192fc0176",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C25",
+      "claim": "The wild-type and fast mutant have almost identical mean volume responses in steps of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the reduction in cellular volume, the wild-type and fast response are again almost identical on average, and the longer response time of the slow mutant is reflected in a slower volume recovery (Figure 2A), particularly in larger steps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and Figure 2\u2014figure supplement 1 with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "2e80c55d-43c0-4283-8501-527736afca00",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C26",
+      "claim": "The slow mutant has a slower volume recovery, particularly in larger steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the reduction in cellular volume, the wild-type and fast response are again almost identical on average, and the longer response time of the slow mutant is reflected in a slower volume recovery (Figure 2A), particularly in larger steps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and Figure 2\u2014figure supplement 1 with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5cc743b0-eff3-41b6-8d68-da7e5e916cc7",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C27",
+      "claim": "In all strains, the mean volume and the mean level of nuclear Hog1 simultaneously go to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "In all strains, the mean volume and the mean level of nuclear Hog1 simultaneously go to zero (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "fd436304-5c32-4b98-9502-735822480ca3",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C28",
+      "claim": "The accuracy of the fast mutant remains consistently lower than the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the accuracy of all strains increases as the volume recovers, it is the wild-type and the slow mutant that behave similarly, and the correlation for the fast mutant remains consistently lower than the wild-type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C with correlation data from single cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c34d8af2-f690-4a93-bd5d-bba95f554dfd",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C29",
+      "claim": "The wild-type and slow mutant have similar accuracy in matching Hog1 adaptation to volume recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the accuracy of all strains increases as the volume recovers, it is the wild-type and the slow mutant that behave similarly, and the correlation for the fast mutant remains consistently lower than the wild-type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C with correlation data from single cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "35f96121-a7a1-4681-8004-64155c53dc3a",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C30",
+      "claim": "The Hog1 behaviour in the fast mutant during adaptation is more noisy than the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy between the mean (Figure 2A) and the single-cell results (Figure 2C) implies that the Hog1 behaviour in the fast mutant during adaptation is more noisy than the wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of mean and single-cell data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4049db9a-ad5e-407e-9dce-349a8e18580d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C31",
+      "claim": "As Hog1 adapts, Hog1 in the fast mutant becomes less informative on the level of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As Hog1 adapts, Hog1 in the fast mutant becomes less informative on the level of stress and its distribution of adaptation times is broader than the wild-type for some stresses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D with mutual information analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8650afd3-418e-4331-a0be-b6a1d16ac4f8",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C32",
+      "claim": "The slow pathway is more sensitive to the system's integral feedback than the fast pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that if the slow mutant is able to gradually increase its accuracy (Figure 2C) then the slow pathway should be more sensitive to the integral feedback. Indeed, the slow pathway unlike the fast pathway is known to have multiple types of osmo-sensors (Tanaka et al., 2014) and so may better sense the increase in volume resulting from the increase in glycerol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental perturbation data in Figure 3 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "07562b59-e171-49ed-909d-38b4f344b81e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C33",
+      "claim": "The slow pathway has multiple types of osmo-sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the slow pathway unlike the fast pathway is known to have multiple types of osmo-sensors (Tanaka et al., 2014) and so may better sense the increase in volume resulting from the increase in glycerol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ff3d41c9-9f3f-4f64-b742-8f0829be91af",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C34",
+      "claim": "Decreasing expression of PBS2 reduces the maximum level of Hog1 localization but increases its adaptation time in both the wild-type and slow mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing expression of PBS2 reduces the maximum level of Hog1 localization but increases its adaptation time in both the wild-type and slow mutant (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and C with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c1dfe0be-939a-4230-9278-457daf5886bf",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C35",
+      "claim": "For the fast pathway, there is little increase in the adaptation time when PBS2 is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for the fast pathway, there is little increase in the adaptation time (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "eeb8ee5c-9659-426f-8aa0-545f2adb8dee",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C36",
+      "claim": "The ratio of adaptation time of Hog1 to the adaptation time of the volume decreases significantly only for the fast mutant when PBS2 is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the ratio of adaptation time of Hog1 to the adaptation time of the volume and the accuracy decreases significantly only for the fast mutant (Figure 3D inset with p<10\u22126 using a two-sided Wilcoxon rank sum test for equal medians calculated by pooling distributions from single cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D inset with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "580261be-e32b-4f3c-8411-fd884aa2440c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C37",
+      "claim": "The fast pathway has the potential to respond to the time-derivative of its input.",
+      "claim_type": "EXPLICIT",
+      "source": "The insensitivity of the adaptation time of Hog1 and the sensitivity of the adaptation time of the volume for the fast mutant in these experiments (Figure 3D; Figure 3\u2014figure supplement 1) suggest the existence of a mechanism within the fast pathway that decreases signalling of Hog1 before the volume completely recovers. This additional adaptation within the pathway to a step of stress implies that the fast pathway has the potential to respond to the time-derivative of its input (Block et al., 1983; Behar et al., 2007; Alon, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental observations and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "58aaa4a5-b4c2-44d8-9dc4-4b76cf3ab23d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C39",
+      "claim": "The fast mutant responds quicker than the wild-type in ramp inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a systematic increase in the amplitude of Hog1 in the fast mutant over that of the wild-type and the mutant responds quicker (Figure 4A and B; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A and B with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "f4cb63a1-f092-490a-ae77-4ea4b4a96ed7",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C40",
+      "claim": "The mean wild-type response is closer in amplitude to the slow mutant during adaptation in ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mean wild-type response is closer in amplitude to the slow mutant, particularly during adaptation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "a72c6b9f-daa7-495e-8de2-457c133a2dd4",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C41",
+      "claim": "The overshoot of the fast mutant is consistent with stronger derivative action in the fast pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The overshoot of the fast mutant (Figure 4C) is consistent with stronger derivative action in the fast pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data in Figure 4C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "6f28b428-3af4-4098-a484-85d14cb43400",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C42",
+      "claim": "The wild-type response is generated by interactions between the two pathways and is not an average of their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the wild-type response is generated by interactions between the two pathways and is not an average of their responses (Figure 4A): the maximum amplitude of the wild-type strain increases linearly with the gradient of the ramp although the response of strains with each individual pathway does not (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A and C with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "3e34e45b-4e45-4004-b7d8-3d5be53ac59d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C43",
+      "claim": "Both the fast mutant and the wild-type have the highest statistical dependency with the smoothed time-derivative of the input in fluctuating ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both the fast mutant and the wild-type have the highest statistical dependency with the (smoothed) time-derivative (Figure 4E and F; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E and F with cross-correlation and mutual information analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "e9cfbed5-9fc9-441f-b2b3-58c7d584676d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C44",
+      "claim": "The slow pathway provides accuracy at the expense of speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our results indicate contrasting roles for the two input pathways: the slow pathway provides accuracy at the expense of speed (Figure 3); the fast pathway provides speed at the expense of accuracy (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "16800b0d-6aed-4501-989b-152d901c8652",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C45",
+      "claim": "The fast pathway provides speed at the expense of accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our results indicate contrasting roles for the two input pathways: the slow pathway provides accuracy at the expense of speed (Figure 3); the fast pathway provides speed at the expense of accuracy (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "20655219-d829-4a08-8eb1-26fe07c1d0ae",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C46",
+      "claim": "The outputs of the two pathways do not always sum to give the wild-type response.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the response to ramps of stress implies the outputs of the two pathways do not always sum to give the wild-type response (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ef53a42a-279b-40df-a140-2afeeebc73c0",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C47",
+      "claim": "The model captures the differences between the mutants and the wild-type in both steps and ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "The model captures the differences between the mutants and the wild-type we observe in both steps (Figure 5B) and ramps (Figure 5C) and provides insight into how two opposing tasks can be implemented in the network by having specialized subnetworks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B and C with model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "1d070165-7b22-463c-bacc-db68492b75c7",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C48",
+      "claim": "Derivative action is a way to increase gain while maintaining structural stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Derivative action is a well-known way to increase gain while maintaining structural stability (Astrom and Murray, 2008), and derivative action in the fast pathway enables that pathway's high gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to engineering literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "22601dc2-557d-4283-bd5f-66f36e6488fa",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C49",
+      "claim": "The derivative action in the fast pathway is open loop, responding to the input not the error.",
+      "claim_type": "EXPLICIT",
+      "source": "The derivative action is open loop, responding to the input not the error, and therefore reduces the coupling of the fast pathway to the integral feedback, undermining the network's accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model structure and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "223a408d-1da7-4822-a38c-1d0679cf1ae2",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C50",
+      "claim": "The slow pathway has a lower gain and is therefore slower but more stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow pathway has a lower gain and is therefore slower but more stable (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "d7ac3a3e-e2f4-456e-b746-8c0e04b2256e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C51",
+      "claim": "The fast mutant outperforms the slow mutant in steps of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying the number of unfit cells, we find that the selective advantage of having both input pathways is revealed by exposing cells to environments with a range of different dynamics: the fast mutant outperforms the slow mutant in steps of stress and the slow mutant outperforms the fast mutant in ramps of fluctuating stress (Figure 6A; Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A with fitness measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "36485af5-16fe-465d-9f36-eeeb1e0fbe1e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C52",
+      "claim": "The slow mutant outperforms the fast mutant in ramps of fluctuating stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying the number of unfit cells, we find that the selective advantage of having both input pathways is revealed by exposing cells to environments with a range of different dynamics: the fast mutant outperforms the slow mutant in steps of stress and the slow mutant outperforms the fast mutant in ramps of fluctuating stress (Figure 6A; Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A with fitness measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "f37284b7-f0c9-44c9-b191-ef9f4d03f036",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C53",
+      "claim": "The wild-type performs both speed and accuracy tasks and always has the highest probability of survival.",
+      "claim_type": "EXPLICIT",
+      "source": "With its two input pathways, the wild-type performs both tasks and is both fast and accurate, always having the highest probability of survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fitness data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "7a3d4825-7c90-4b90-bb7a-6a0cd1674b33",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C54",
+      "claim": "Trade-offs in performance can undermine signalling in a single input pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We have thus shown that trade-offs in performance can undermine signalling in a single input pathway with either speed being sacrificed for accuracy or vice versa, but that by having two input pathways, each specializing to particular task, signalling networks can mitigate these trade-offs (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "e9022ea4-fc84-4d91-9328-161c67638a7e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C55",
+      "claim": "By having two input pathways, each specializing to a particular task, signalling networks can mitigate trade-offs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have thus shown that trade-offs in performance can undermine signalling in a single input pathway with either speed being sacrificed for accuracy or vice versa, but that by having two input pathways, each specializing to particular task, signalling networks can mitigate these trade-offs (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "b009a921-d156-4ac1-8ad4-8183114d69d5",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C56",
+      "claim": "The Sln1 pathway is a fast reflex-like response that provides speed necessary to survive sudden shocks but at the expense of accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HOG network, the Sln1 pathway is a fast reflex-like response that provides the speed necessary to survive sudden shocks but at the expense of accuracy, and alone can cause adaptation of Hog1 before recovery of the cellular volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "7169acce-a24c-4885-9192-9a345ac18585",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C57",
+      "claim": "The Sln1 pathway alone can cause adaptation of Hog1 before recovery of the cellular volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HOG network, the Sln1 pathway is a fast reflex-like response that provides the speed necessary to survive sudden shocks but at the expense of accuracy, and alone can cause adaptation of Hog1 before recovery of the cellular volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "0579d5ca-f32f-4d3a-b923-2286cae1825c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C58",
+      "claim": "Fast mutants have a shorter duration of Hog1 phosphorylation compared to wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, Macia et al. report that fast mutants have a shorter duration of Hog1 phosphorylation compared to wild-type cells (Macia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "f7ebb1b4-dd8c-438d-8683-eb1b44d9979f",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C59",
+      "claim": "The Sho1 pathway provides accuracy at the expense of speed by specializing to sensing the integral feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Sho1 pathway provides accuracy at the expense of speed and by specializing to sensing the integral feedback coming from volume recovery is more sensitive to the cell's internal state and the history of the extracellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "0f34ead9-1b98-4a8d-9abe-131795fed6e2",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C60",
+      "claim": "The Sho1 pathway is more sensitive to the cell's internal state and the history of the extracellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Sho1 pathway provides accuracy at the expense of speed and by specializing to sensing the integral feedback coming from volume recovery is more sensitive to the cell's internal state and the history of the extracellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "1413a5a1-d74f-4e55-83a3-5714a4c6ec5e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C61",
+      "claim": "The Sho1 branch primarily monitors osmotic changes during normal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This behaviour is consistent with earlier speculations that the Sho1 branch primarily monitors osmotic changes during normal growth (Hohmann, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5e9be99c-7683-4c1a-b57b-0332e04c0e83",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C62",
+      "claim": "The Sho1 pathway interacts with the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "If the integral feedback is to allow recovery of the volume, the network must remember the cellular volume before the stress (Astrom and Murray, 2008), and the Sho1 pathway interacts with the actin cytoskeleton (Tanaka et al., 2014), which might allow information from cell morphology and growth to be integrated with activation of Hog1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "6e74b322-18f5-43d1-a718-c6afeaf099e4",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C63",
+      "claim": "The two input pathways have been reported to have different thresholds of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two input pathways have been reported to have different thresholds of activation (Macia et al., 2009), but our data and modelling points towards a re-interpretation in terms of different gains for the pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "32ec1c6b-df45-4d48-bc7f-98e4dcb9b59b",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C65",
+      "claim": "Only the wild-type response increases linearly with the gradient of a ramp of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data points towards it being the interaction between the two pathways that increases the dynamic range: we observe that only the wild-type response increases linearly with the gradient of a ramp of stress (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "85202d39-f468-43d7-ad81-220881dda929",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C66",
+      "claim": "A single fast input pathway controlling the integral feedback would have structural instabilities in its dynamics because of the high gain necessary for high speed.",
+      "claim_type": "EXPLICIT",
+      "source": "A potentially alternative architecture of the HOG signalling network is to have a single fast input pathway controlling the integral feedback. Such a network, however, would not only have structural instabilities in its dynamics because of the high gain necessary for high speed, but also would be more likely to become insensitive to the cell's internal state for sufficiently high stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument based on control theory principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "aca2d59e-3bcc-4acd-b6d2-6f7f3ad75345",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C67",
+      "claim": "In large stress, all Hog1 molecules can become activated and the output of the HOG controller is then saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "In large stress, all Hog1 molecules can become activated and the output of the HOG controller is then saturated. This saturation will happen for shocks of smaller magnitude for systems with high gain and causes a loss of accuracy because the system is then in open loop and is unable to exploit the integral feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument based on control theory principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "38a43ad7-239f-4f12-8dc0-25c2f2af7a49",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C68",
+      "claim": "Having a slow pathway that inhibits the fast pathway helps prevent saturation of Hog1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Having a slow pathway that inhibits the fast pathway helps prevent saturation of Hog1 activity and so increases sensitivity to the integral feedback for higher levels of stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "3041be40-a362-4be2-a25a-86c92160e9c5",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C69",
+      "claim": "Competing for Pbs2 is one possible means of cross-inhibition between the pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Competing for Pbs2 is one possible means of cross-inhibition between the pathways, but multiple feedbacks, both positive and negative, exist within the HOG network (Hao et al., 2007; Macia et al., 2009; Sharifian et al., 2015; English et al., 2015), and a feedback-based interaction is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "90a4ab3b-2293-42b7-846f-589051ff9865",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C70",
+      "claim": "Multiple feedbacks, both positive and negative, exist within the HOG network.",
+      "claim_type": "EXPLICIT",
+      "source": "Competing for Pbs2 is one possible means of cross-inhibition between the pathways, but multiple feedbacks, both positive and negative, exist within the HOG network (Hao et al., 2007; Macia et al., 2009; Sharifian et al., 2015; English et al., 2015), and a feedback-based interaction is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "55ffb09d-6773-4558-b3e3-7cef7b4da821",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C71",
+      "claim": "Biochemistry can be used to measure a time-derivative on time-scales as fast as seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "That biochemistry can be used to measure a time-derivative on a time-scales as fast as seconds is well established (Block et al., 1983), and, in analogy with bacterial chemotaxis, we expect that upstream signalling in the fast pathway encodes a short-term memory of the level of the input to allow comparison of the current level to a value in the past.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "9aee1200-ba41-413d-b95b-806919d12d89",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C72",
+      "claim": "Using inputs with varying dynamics is important to uncover the logic behind cellular signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our results confirm the importance of using inputs with varying dynamics to uncover the logic behind cellular signalling (Nurse, 2008; Alexander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental results and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "45726f10-bb52-4d35-93cb-949c369ab18a",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C73",
+      "claim": "In the wild, organisms are exposed to signals with a wider range of temporal behaviours than the constant inputs typically studied in the laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild, organisms are exposed to signals with a wider range of temporal behaviours then the constant inputs typically studied in the laboratory (L\u00f3pez-Maury et al., 2008), and signal transduction is likely to have evolved to allow organisms to differentiate between such signals or at least between classes of signals (Bowsher and Swain, 2014; Tka\u010dik and Bialek, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "2ba62445-6fa7-4f49-ba5a-a27c0a4a9398",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C74",
+      "claim": "Signal transduction is likely to have evolved to allow organisms to differentiate between different classes of signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild, organisms are exposed to signals with a wider range of temporal behaviours then the constant inputs typically studied in the laboratory (L\u00f3pez-Maury et al., 2008), and signal transduction is likely to have evolved to allow organisms to differentiate between such signals or at least between classes of signals (Bowsher and Swain, 2014; Tka\u010dik and Bialek, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "e79c239e-b49a-4199-97ac-d5a5fde6a577",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C75",
+      "claim": "Dynamic inputs have been successfully used to understand signalling responses in bacteria, yeast, and mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such work is still in its infancy, dynamic inputs have been successfully used to understand signalling responses in, for example, bacteria (Young et al., 2013), yeast (Hao et al., 2013), and mammalian cells (Kellogg and Tay, 2015), and, with the ease of use of microfluidics (Bennett and Hasty, 2009), we believe should become commonplace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "adc6793f-53c7-4a7f-b2ff-bcbf8517da5e",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C76",
+      "claim": "Cellular signalling is vulnerable to fundamental trade-offs in performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have shown that cellular signalling is vulnerable to fundamental trade-offs in performance, but that these vulnerabilities can be overcome by distributing tasks to different parts of the network and integrating together the outputs of this division of labour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "720d28fe-30f3-4d94-b0e6-66bbfda3a55b",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C77",
+      "claim": "Trade-off vulnerabilities can be overcome by distributing tasks to different parts of the network and integrating together the outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have shown that cellular signalling is vulnerable to fundamental trade-offs in performance, but that these vulnerabilities can be overcome by distributing tasks to different parts of the network and integrating together the outputs of this division of labour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "e976bfe4-9f50-4fad-80e5-ff579f2ec141",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C78",
+      "claim": "Improvements in performance by the specialization of subnetworks to different tasks exist broadly within cellular signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore expect such improvements in performance by the specialization of subnetworks to different tasks to exist broadly within cellular signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "420afbe3-05e7-46c4-81f6-246df60138ac",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C79",
+      "claim": "All strains used were constructed using PCR-based genomic integration and validated by colony PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains (Table 1) were constructed using PCR-based genomic integration and were validated by colony PCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to construct the strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "332beca5-e1af-40f9-b8f2-0eb2929bc832",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C80",
+      "claim": "The Tet-off system was used for inducible expression of PBS2.",
+      "claim_type": "EXPLICIT",
+      "source": "For inducible expression of PBS2, we used the Tet-off system (Bell\u00ed et al., 1998), for which doxycycline causes repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for gene expression control.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "3bae82f2-ff2b-4166-b71a-ea35704c3a8c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C81",
+      "claim": "The mutants showed equivalent growth from wild-type strains in XY media with 2% glucose over 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutants showed equivalent growth from wild-type strains in XY media with 2% glucose over 24 hr (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation about strain growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8ca31a9c-71cd-4e05-b3b6-99030e6cc835",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C82",
+      "claim": "Cells were grown at 30\u00b0C overnight in 2% glucose in synthetic complete media.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were grown at 30\u00b0C overnight in 2% glucose in synthetic complete (SC) media, diluted by a factor of 1/20 into fresh SC with 2% glucose next morning and incubated for 4 hr at 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell culture methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "0beb5cd4-75ca-426f-9255-566142715954",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C83",
+      "claim": "The ALCATRAS microfluidic device was used to trap and expose cells to osmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were then loaded into the ALCATRAS chamber (Crane et al., 2014), which was already filled with SC with 2% glucose and 0.05% bovine serum albumin (BSA) to facilitate cell loading and reduce the formation of clumps of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "01fb037d-6948-4e37-8c2c-64b64b9efa5a",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C84",
+      "claim": "Two syringe pumps were used to create dynamic environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Two syringe pumps (Aladdin NE-1002X) were used to create dynamic environmental conditions. The first pump was loaded with SC and 2% glucose; the second pump was loaded with SC with 2% glucose and sorbitol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "dd956359-d449-4a8f-9b29-eccea4f24234",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C85",
+      "claim": "The dye Cy5 was added to the syringe containing sorbitol and used to monitor the sorbitol dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The dye Cy5 was added to the syringe containing sorbitol and used to monitor the sorbitol dynamics. The concentration of sorbitol we report corresponds to the level of fluorescence from Cy5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4e47a064-67a4-4273-9d8d-3aaa37002bde",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C86",
+      "claim": "A multi-chamber version of ALCATRAS was developed to expose multiple strains to the same environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To expose multiple strains to the same environmental conditions and to optimize data acquisition, we developed a multi-chamber version of ALCATRAS, which allows different strains to be loaded into distinct chambers but still be exposed to the same extracellular media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "19028661-504b-4d24-98b7-fd9095ba5ba8",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C87",
+      "claim": "The volume of each cell was approximated from the total area of the cell in the fluorescence image.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume of each cell was approximated from the total area of the cell in the fluorescence image (Gordon et al., 2007; Muzzey et al., 2009). We calculated the radius of the circle that has the same area as the cross-sectional area of the cell and used this radius to compute the volume assuming spherical cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ab614737-f606-4b8b-8c82-5fe12cd3966c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "claim_id": "C88",
+      "claim": "Nuclear accumulation of Hog1 was quantified by calculating the ratio between the average of the five brightest pixels within the cell and the median fluorescence of the whole cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the nuclear accumulation of Hog1 by calculating the ratio between the average of the five brightest pixels within the cell and the median fluorescence of the whole cell. This measure is robust to bleaching of the fluorophore and has been widely used (Cai et al., 2008; Hao and O'Shea, 2011; Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "835be341-8a4c-4fd8-b889-258ef63df1a0",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HOG signaling network in budding yeast mitigates speed-accuracy trade-offs by assigning high response speed to the Sln1 pathway and high response accuracy to the Sho1 pathway. The fast mutant (Sln1 only) is fitter in sudden stress, while the slow mutant (Sho1 only) is fitter in fluctuating stress. The wild-type, with both pathways, achieves both speed and accuracy and has the highest survival probability across different dynamic environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C51-C55 collectively demonstrate the main finding with strong experimental support. Fitness measurements in Figure 6A show differential performance of mutants in different stress dynamics (C3, C4, C51, C52), and the wild-type consistently outperforms both mutants (C53). The mechanistic basis is established through extensive single-cell measurements of Hog1 dynamics and volume recovery across multiple experimental conditions (Figures 2-5). Statistical tests confirm significance (p<10^-6), and the results are consistent across biological replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In step inputs of hyperosmotic stress, the fast mutant (Sln1 only) shows mean Hog1 response equivalent to wild-type, while the slow mutant (Sho1 only) has longer response times and lower maximum nuclear localization. Volume recovery is similar between wild-type and fast mutant but slower in the slow mutant, particularly for larger steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are well-supported by experimental data in Figure 2A and Figure 2\u2014figure supplement 1. The measurements include both population averages and single-cell data across multiple sorbitol concentrations (0.2-1.2 M). Sample sizes are adequate (>500 cells per strain across experiments), and error bars (SEM) are provided. The observations are consistent with prior literature on these mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8d7e013e-85a0-4dc9-be57-d0cae1697699",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At the single-cell level, the fast mutant shows consistently lower accuracy than wild-type in matching Hog1 adaptation to volume recovery, while the slow mutant behaves similarly to wild-type. The fast mutant exhibits more noisy Hog1 behavior and becomes less informative about stress level during adaptation, as measured by mutual information analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by single-cell correlation analysis (Figure 2C) and mutual information calculations (Figure 2D) from six experiments with >500 cells per strain. The discrepancy between mean and single-cell results (C30) is a valid inference from the data. Statistical methods are appropriate (Pearson correlation, mutual information with Bayesian estimation), and 95% confidence intervals are provided. The finding that mean responses can mask single-cell heterogeneity is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The slow pathway is more sensitive to the system's integral feedback than the fast pathway. Perturbation experiments reducing PBS2 expression show that the slow mutant and wild-type increase Hog1 adaptation time to compensate, while the fast mutant does not. The fast mutant shows significantly decreased accuracy and ratio of Hog1 to volume adaptation time when PBS2 is reduced (p<10^-6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by systematic perturbation experiments (Figure 3) using a Tet-inducible PBS2 system. Three levels of PBS2 expression were tested across three independent experiments. The statistical test (two-sided Wilcoxon rank sum test, p<10^-6) is appropriate for comparing distributions of adaptation time ratios. The experimental design properly controls for pathway-specific effects by testing all three strains. The conclusion about differential sensitivity to integral feedback is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5ecfb29c-9d67-401f-a269-d02afce7a53c",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The fast pathway has derivative action, responding to the time-derivative of the input. In ramp inputs, the fast mutant responds quicker than wild-type and shows systematic overshoot. The wild-type response is generated by interactions between pathways and is not a simple average. Both fast mutant and wild-type show highest statistical dependency with the time-derivative of fluctuating inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C39-C43 are supported by experiments with six different ramp gradients (Figure 4, Figure 4\u2014figure supplement 1) and fluctuating ramps. The derivative action inference (C37) is supported by both the PBS2 perturbation data (Figure 3D) and the ramp responses, plus citations to control theory. Cross-correlation and mutual information analyses (Figure 4E-F) appropriately quantify statistical dependencies. Sample sizes are adequate (>600 cells per strain). The non-additive nature of pathway interactions (C42) is clearly demonstrated in Figure 4A and C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "22312756-6b4f-4310-a39b-42a21f54dfe1",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The two input pathways have contrasting specialized roles: the slow (Sho1) pathway provides accuracy at the expense of speed by sensing integral feedback and being sensitive to cell internal state and stress history; the fast (Sln1) pathway provides speed at the expense of accuracy through reflex-like response with derivative action, and can cause premature Hog1 adaptation before volume recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 and C56-C60 represent the synthesis of results from Figures 2-4. These conclusions are well-supported by the collective experimental evidence: single-cell correlation analysis (Figure 2C), PBS2 perturbation experiments (Figure 3), and ramp responses (Figure 4). The characterization of pathway specialization is consistent across multiple experimental approaches and stress dynamics. The claims appropriately distinguish between data-supported conclusions and mechanistic interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "786c9ab8-5b87-42af-a414-b28121f94008",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A mathematical model based on control theory captures the differences between mutants and wild-type in both steps and ramps. The model explains how derivative action in the fast pathway enables high gain while maintaining stability, but reduces accuracy by being open-loop. The slow pathway's lower gain provides stability. Having both pathways prevents saturation of Hog1 activity at high stress levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C66-C68 describe the mathematical model (Figure 5, Figure 5\u2014figure supplement 1). The model successfully recapitulates experimental observations in both steps and ramps (Figure 5B-C). The control theory principles cited (C48) are well-established. However, the model is modular and agnostic to biochemical details, which the authors acknowledge. The theoretical arguments about saturation (C66-C68) are logically sound based on control theory but lack direct experimental validation. The model provides mechanistic insight but should be considered a framework for understanding rather than a definitive biochemical mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "4d5eaa38-4911-4812-9d84-9dc842234b04",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cellular signaling is vulnerable to fundamental trade-offs in performance, but these vulnerabilities can be overcome by distributing tasks to different parts of the network and integrating the outputs through division of labor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 and C54-C55 represent the overarching conclusion of the manuscript. This conclusion is well-supported by the comprehensive experimental evidence showing: (1) single pathways exhibit speed-accuracy trade-offs (Figures 2-4), (2) the wild-type with both pathways overcomes these trade-offs (Figures 2-6), and (3) fitness consequences depend on environmental dynamics (Figure 6A). The generalization to cellular signaling broadly is reasonable given the fundamental nature of the trade-offs and the conservation of signaling architectures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "af3f5591-d2a7-4381-a194-17e3555f6ff9",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The HOG network has a Y-shaped architecture with two input pathways (Sln1 and Sho1) converging on Pbs2, which activates Hog1. The Sln1 pathway uses a bacterial-like phosphorelay and is faster; the Sho1 pathway uses protein kinases similar to higher organisms and is slower. Activated Hog1 translocates to the nucleus and increases intracellular glycerol through cytosolic changes and gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 describe established features of the HOG network supported by extensive prior literature (multiple citations provided). The Y-shaped architecture is shown in Figure 1A. These are well-characterized aspects of the system that provide necessary background for the study. The claims are appropriately supported by citations to primary literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5aec5484-ee02-4b17-9c55-ca923ba19417",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When exposed to hyperosmotic stress, cellular volume shrinks, Hog1 undergoes nuclear translocation within minutes, cells arrest, and growth resumes once volume recovers. The recovery of cellular volume correlates with levels of nuclear Hog1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 describe basic observations shown in Figure 1C-E with both population (n=356) and single-cell data. These are well-established responses to osmotic stress and serve as the foundation for the more detailed analyses. The correlation between volume recovery and Hog1 levels is clearly demonstrated and provides the basis for using these as coupled readouts of the stress response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "5a8d02d0-ca13-4f08-9f7a-fd066a5738d7",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The outputs of the two pathways do not always sum to give the wild-type response. Only the wild-type response increases linearly with the gradient of a ramp of stress, suggesting pathway interactions increase dynamic range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C65 are supported by experimental data in Figure 4A and C showing non-additive pathway interactions. The linear relationship between wild-type response amplitude and ramp gradient, absent in single-pathway mutants, is clearly demonstrated. This observation supports the conclusion that pathway interactions, rather than simple summation, generate the wild-type response. The data are consistent across multiple ramp gradients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study employed appropriate methods including PCR-based strain construction, the ALCATRAS microfluidic device for dynamic stress application, fluorescence microscopy for single-cell measurements, and established quantification methods for nuclear Hog1 and cell volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 describe the experimental methods. The methods are well-established and appropriately cited. The ALCATRAS device enables precise control of dynamic environments. The multi-chamber version allows direct comparison of strains under identical conditions. Volume estimation from 2D images assuming spherical cells is a standard approximation validated by prior work (citations provided). The nuclear Hog1 quantification method is widely used and was validated against direct nuclear labeling. Sample sizes are adequate (typically >150 cells per strain per experiment, >300 for fitness assays).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "d6e9cf49-209e-4685-b131-385913587178",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work establishes that fast responses have lower accuracy in engineering systems, signal transduction has evolved under selection for both speed and accuracy, yeast cells shrink rapidly in osmotic stress, the response is metabolically costly, and there is no reported phenotype for the Sln1-only mutant while the Sho1 pathway is often considered redundant. Nuclear Hog1 is an established readout correlated with phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C16-C19 summarize prior knowledge and literature. These are appropriately cited and provide context for the study. The claim that the Sho1 pathway is often considered redundant (C17) is particularly important as it motivates the study's investigation of pathway-specific functions. The citations are to appropriate primary literature and reviews.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work and related observations: fast mutants have shorter Hog1 phosphorylation duration; the Sho1 branch may monitor osmotic changes during normal growth; the Sho1 pathway interacts with the actin cytoskeleton; the pathways have been reported to have different activation thresholds; multiple feedbacks exist in the HOG network; and biochemistry can measure time-derivatives on second timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C61-C63, C70-C71 cite prior literature that provides context and support for the study's findings. These are appropriately cited and help connect the current results to existing knowledge. The claim about different thresholds (C63) is noted but the authors reinterpret this in terms of different gains, which is supported by their data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "531c9a3e-4231-4953-b3f5-c5c2db5a45d7",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Competing for Pbs2 is one possible mechanism of cross-inhibition between pathways, though feedback-based interactions are also possible given the multiple feedbacks in the HOG network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 proposes a mechanism for pathway cross-inhibition but acknowledges uncertainty. The model requires cross-inhibition to explain the data, but the biochemical mechanism is not definitively established. Competition for Pbs2 is plausible given that both pathways activate it, but the authors appropriately note that feedback-based mechanisms are also possible. This represents a hypothesis requiring further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "b1565bd8-8484-4986-aede-2dabcbb3f401",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Using inputs with varying dynamics is important for uncovering cellular signaling logic. In natural environments, organisms experience diverse temporal signal patterns, and signal transduction likely evolved to differentiate between signal classes. Dynamic inputs have been successfully used in bacteria, yeast, and mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 discuss the importance of dynamic inputs for understanding signaling, supported by the study's results and citations to prior work. The manuscript demonstrates this principle by showing that different input dynamics reveal distinct pathway functions not apparent with constant inputs. The citations to successful applications in other systems (C75) are appropriate. These claims provide important context for the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "053dff81-33de-483e-b27c-e7a9fc713215",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors expect that improvements in performance through specialization of subnetworks to different tasks exist broadly within cellular signal transduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is a speculation about the generality of the findings. While the principle of division of labor to overcome trade-offs is compelling and the HOG network provides a clear example, extending this to cellular signaling broadly requires additional evidence from other systems. The speculation is reasonable given the fundamental nature of speed-accuracy trade-offs and the conservation of multi-pathway signaling architectures, but remains to be tested experimentally in other contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    },
+    {
+      "id": "8c3f9e68-6d13-486a-ad99-a93ca6042c7d",
+      "content_id": "6f582cfe-a4c3-4398-8054-e4d08b9aef90",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Improving in one aspect of a task can undermine performance in another in single cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is the general principle demonstrated by the manuscript. The experimental results clearly show that the fast mutant achieves speed at the expense of accuracy (Figures 2-4) and the slow mutant achieves accuracy at the expense of speed. This trade-off is demonstrated at the single-cell level through correlation analysis and fitness measurements. The claim is well-supported by the comprehensive experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:11:50.992553Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "60bb050e-af9e-41fe-a3d0-4b1578eb7392",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "f18f33ee-2903-4671-b452-a2b219057f76",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "f3f8ef19-af9b-4317-adcf-3345323c27f3",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "d7ac3a3e-e2f4-456e-b746-8c0e04b2256e",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "36485af5-16fe-465d-9f36-eeeb1e0fbe1e",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "f37284b7-f0c9-44c9-b191-ef9f4d03f036",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "7a3d4825-7c90-4b90-bb7a-6a0cd1674b33",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "e9022ea4-fc84-4d91-9328-161c67638a7e",
+      "result_id": "835be341-8a4c-4fd8-b889-258ef63df1a0"
+    },
+    {
+      "claim_id": "83a8e116-fb93-4e3e-b65c-1bd033e44319",
+      "result_id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5"
+    },
+    {
+      "claim_id": "ab13125b-2e74-4c60-a9d5-739ca3632991",
+      "result_id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5"
+    },
+    {
+      "claim_id": "c2a0f5b8-5550-473f-9ce9-1cd192fc0176",
+      "result_id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5"
+    },
+    {
+      "claim_id": "2e80c55d-43c0-4283-8501-527736afca00",
+      "result_id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5"
+    },
+    {
+      "claim_id": "5cc743b0-eff3-41b6-8d68-da7e5e916cc7",
+      "result_id": "bc3f941c-63b9-41f6-a787-db3ce1513bd5"
+    },
+    {
+      "claim_id": "fd436304-5c32-4b98-9502-735822480ca3",
+      "result_id": "8d7e013e-85a0-4dc9-be57-d0cae1697699"
+    },
+    {
+      "claim_id": "c34d8af2-f690-4a93-bd5d-bba95f554dfd",
+      "result_id": "8d7e013e-85a0-4dc9-be57-d0cae1697699"
+    },
+    {
+      "claim_id": "35f96121-a7a1-4681-8004-64155c53dc3a",
+      "result_id": "8d7e013e-85a0-4dc9-be57-d0cae1697699"
+    },
+    {
+      "claim_id": "4049db9a-ad5e-407e-9dce-349a8e18580d",
+      "result_id": "8d7e013e-85a0-4dc9-be57-d0cae1697699"
+    },
+    {
+      "claim_id": "8650afd3-418e-4331-a0be-b6a1d16ac4f8",
+      "result_id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9"
+    },
+    {
+      "claim_id": "07562b59-e171-49ed-909d-38b4f344b81e",
+      "result_id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9"
+    },
+    {
+      "claim_id": "ff3d41c9-9f3f-4f64-b742-8f0829be91af",
+      "result_id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9"
+    },
+    {
+      "claim_id": "c1dfe0be-939a-4230-9278-457daf5886bf",
+      "result_id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9"
+    },
+    {
+      "claim_id": "eeb8ee5c-9659-426f-8aa0-545f2adb8dee",
+      "result_id": "ecdf9d47-121e-4451-a0bc-ac7bdf002bd9"
+    },
+    {
+      "claim_id": "580261be-e32b-4f3c-8411-fd884aa2440c",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "58aaa4a5-b4c2-44d8-9dc4-4b76cf3ab23d",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "f4cb63a1-f092-490a-ae77-4ea4b4a96ed7",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "a72c6b9f-daa7-495e-8de2-457c133a2dd4",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "6f28b428-3af4-4098-a484-85d14cb43400",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "3e34e45b-4e45-4004-b7d8-3d5be53ac59d",
+      "result_id": "5ecfb29c-9d67-401f-a269-d02afce7a53c"
+    },
+    {
+      "claim_id": "e9cfbed5-9fc9-441f-b2b3-58c7d584676d",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "16800b0d-6aed-4501-989b-152d901c8652",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "b009a921-d156-4ac1-8ad4-8183114d69d5",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "7169acce-a24c-4885-9192-9a345ac18585",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "f7ebb1b4-dd8c-438d-8683-eb1b44d9979f",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "0f34ead9-1b98-4a8d-9abe-131795fed6e2",
+      "result_id": "22312756-6b4f-4310-a39b-42a21f54dfe1"
+    },
+    {
+      "claim_id": "ef53a42a-279b-40df-a140-2afeeebc73c0",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "1d070165-7b22-463c-bacc-db68492b75c7",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "22601dc2-557d-4283-bd5f-66f36e6488fa",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "223a408d-1da7-4822-a38c-1d0679cf1ae2",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "85202d39-f468-43d7-ad81-220881dda929",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "aca2d59e-3bcc-4acd-b6d2-6f7f3ad75345",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "38a43ad7-239f-4f12-8dc0-25c2f2af7a49",
+      "result_id": "786c9ab8-5b87-42af-a414-b28121f94008"
+    },
+    {
+      "claim_id": "adc6793f-53c7-4a7f-b2ff-bcbf8517da5e",
+      "result_id": "4d5eaa38-4911-4812-9d84-9dc842234b04"
+    },
+    {
+      "claim_id": "720d28fe-30f3-4d94-b0e6-66bbfda3a55b",
+      "result_id": "4d5eaa38-4911-4812-9d84-9dc842234b04"
+    },
+    {
+      "claim_id": "7a3d4825-7c90-4b90-bb7a-6a0cd1674b33",
+      "result_id": "4d5eaa38-4911-4812-9d84-9dc842234b04"
+    },
+    {
+      "claim_id": "e9022ea4-fc84-4d91-9328-161c67638a7e",
+      "result_id": "4d5eaa38-4911-4812-9d84-9dc842234b04"
+    },
+    {
+      "claim_id": "256912ae-03f8-4ae3-8707-7d116a85148e",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "5b155a93-be70-424d-84bb-ad450fa2b0b4",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "ab94d0eb-31ec-43ba-9bf8-5f136ea6b2df",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "c88b77ba-41bb-4766-9e13-d0bebfa25c17",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "62ce07c6-7e94-4b3d-a8ed-a0f5d52761a4",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "4b01cf5f-91a1-492e-b6a6-46552883e64c",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "8350f029-b219-4f7a-9f78-fdb938258613",
+      "result_id": "af3f5591-d2a7-4381-a194-17e3555f6ff9"
+    },
+    {
+      "claim_id": "7200511a-1c91-4e39-afd2-da800e180e44",
+      "result_id": "5aec5484-ee02-4b17-9c55-ca923ba19417"
+    },
+    {
+      "claim_id": "eceb86c7-6c18-459e-915b-344155d4d7df",
+      "result_id": "5aec5484-ee02-4b17-9c55-ca923ba19417"
+    },
+    {
+      "claim_id": "4622dd8f-11d7-4ad5-8605-ee664f8477b1",
+      "result_id": "5aec5484-ee02-4b17-9c55-ca923ba19417"
+    },
+    {
+      "claim_id": "20655219-d829-4a08-8eb1-26fe07c1d0ae",
+      "result_id": "5a8d02d0-ca13-4f08-9f7a-fd066a5738d7"
+    },
+    {
+      "claim_id": "32ec1c6b-df45-4d48-bc7f-98e4dcb9b59b",
+      "result_id": "5a8d02d0-ca13-4f08-9f7a-fd066a5738d7"
+    },
+    {
+      "claim_id": "420afbe3-05e7-46c4-81f6-246df60138ac",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "332beca5-e1af-40f9-b8f2-0eb2929bc832",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "3bae82f2-ff2b-4166-b71a-ea35704c3a8c",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "8ca31a9c-71cd-4e05-b3b6-99030e6cc835",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "0beb5cd4-75ca-426f-9255-566142715954",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "01fb037d-6948-4e37-8c2c-64b64b9efa5a",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "dd956359-d449-4a8f-9b29-eccea4f24234",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "4e47a064-67a4-4273-9d8d-3aaa37002bde",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "19028661-504b-4d24-98b7-fd9095ba5ba8",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "ab614737-f606-4b8b-8c82-5fe12cd3966c",
+      "result_id": "b2c5a0c7-13b5-47cc-9c31-c506237b454a"
+    },
+    {
+      "claim_id": "3e470931-0ab8-4258-bad9-e82bc830407f",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "8345a456-dff2-43bc-a5c0-e5039d63f6a8",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "a23d37df-5c52-4481-a1c1-6331c2c36984",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "4db30972-0080-4d91-a9bf-f9da34bbf01c",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "09313f3d-66ea-4ca9-b2be-d108a48e5459",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "bc8504b0-2f52-432e-98de-4c4c6875064d",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "5e238d0a-eef3-4d4c-8b01-cf69cf6ac26e",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "88be0b72-fabc-4058-a53d-a0fd99ff7e28",
+      "result_id": "d6e9cf49-209e-4685-b131-385913587178"
+    },
+    {
+      "claim_id": "0579d5ca-f32f-4d3a-b923-2286cae1825c",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "1413a5a1-d74f-4e55-83a3-5714a4c6ec5e",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "5e9be99c-7683-4c1a-b57b-0332e04c0e83",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "6e74b322-18f5-43d1-a718-c6afeaf099e4",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "90a4ab3b-2293-42b7-846f-589051ff9865",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "55ffb09d-6773-4558-b3e3-7cef7b4da821",
+      "result_id": "c2fa93dc-0a35-4c08-a4f6-e5cb1953244f"
+    },
+    {
+      "claim_id": "3041be40-a362-4be2-a25a-86c92160e9c5",
+      "result_id": "531c9a3e-4231-4953-b3f5-c5c2db5a45d7"
+    },
+    {
+      "claim_id": "9aee1200-ba41-413d-b95b-806919d12d89",
+      "result_id": "b1565bd8-8484-4986-aede-2dabcbb3f401"
+    },
+    {
+      "claim_id": "45726f10-bb52-4d35-93cb-949c369ab18a",
+      "result_id": "b1565bd8-8484-4986-aede-2dabcbb3f401"
+    },
+    {
+      "claim_id": "2ba62445-6fa7-4f49-ba5a-a27c0a4a9398",
+      "result_id": "b1565bd8-8484-4986-aede-2dabcbb3f401"
+    },
+    {
+      "claim_id": "e79c239e-b49a-4199-97ac-d5a5fde6a577",
+      "result_id": "b1565bd8-8484-4986-aede-2dabcbb3f401"
+    },
+    {
+      "claim_id": "e976bfe4-9f50-4fad-80e5-ff579f2ec141",
+      "result_id": "053dff81-33de-483e-b27c-e7a9fc713215"
+    },
+    {
+      "claim_id": "a87dc96d-7756-42ea-8add-76b6486744f3",
+      "result_id": "8c3f9e68-6d13-486a-ad99-a93ca6042c7d"
+    }
+  ],
+  "comparisons": []
+}

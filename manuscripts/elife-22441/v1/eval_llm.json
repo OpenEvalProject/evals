@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "TRPA1 and RyR are required for ISC self-renewal and damage-induced proliferation. RNAi-mediated knockdown or CRISPR/Cas9-mediated knockout of either trpA1 or RyR in adult ISCs completely blocked proliferation induced by paraquat or bleomycin. The phenotype is not due to apoptosis and can be rescued by forced cytosolic calcium influx via SERCA RNAi, placing cytosolic calcium signaling genetically downstream of TRPA1 and RyR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C26 show complete blockade of damage-induced proliferation by trpA1/RyR RNAi or knockout with appropriate controls (C23, C24). The genetic epistasis with SERCA RNAi (C24, C25) provides strong evidence for the pathway relationship. Multiple independent methods (RNAi, CRISPR) and damage agents (paraquat, bleomycin) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Inhibition of ISC proliferation by trpA1 RNAi leads to midgut shortening, particularly following tissue damage. This phenotype is similar to that observed after ISC depletion by reaper expression, suggesting ISC activity is important for maintaining tissue size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 provide direct measurements of midgut length under different conditions. The comparison with rpr-induced ISC depletion (C30) provides supporting evidence for the interpretation. The phenotypic similarity strengthens the conclusion about ISC importance for tissue size maintenance (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TRPA1 is expressed in ISCs, with midgut-specific isoforms TRPA1-C and -D. Multiple lines of evidence including immunostaining, CRISPR/Cas9-mediated Gal4 knock-in, RT-qPCR after stem cell depletion, and functional calcium imaging demonstrate TRPA1 expression and function in ISCs. RyR appears ubiquitously expressed at low levels in the midgut epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (immunostaining C36, Gal4 knock-in C37, RT-qPCR C38, calcium imaging C41-C43) converge on TRPA1 expression in ISCs. Cell-type-specific RNAi experiments (C40) demonstrate functional requirement in ISCs. The isoform characterization (C32-C34) is well-documented. RyR expression pattern (C44) is supported by enhancer-Gal4 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ROS levels increase in the midgut following various types of tissue damage including oxidant treatment (paraquat, bleomycin), JNK pathway activation, and EC apoptosis. DHE staining confirms elevated ROS under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C50, C52, C53 provide direct DHE staining evidence for ROS increases under multiple damage conditions. The results are consistent with prior literature (C45-C47) and use appropriate methodology. Multiple damage paradigms strengthen the generality of the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The TRPA1-D isoform expressed in the midgut is sensitive to the oxidant paraquat, while TRPA1-C is not. Voltage clamp recordings show TRPA1-D responds to paraquat with a slow increase in current. Overexpression of TRPA1-D, but not TRPA1-C, rescues proliferation in trpA1 RNAi ISCs. TRPA1 is genetically downstream of ROS-sensing pathways, and increased TRPA1 signaling is sufficient to drive ISC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Voltage clamp data (C59, C60) directly demonstrate differential paraquat sensitivity between isoforms. Rescue experiments (C61) confirm functional relevance. Genetic epistasis with CncC RNAi (C62, C63) places TRPA1 downstream of ROS. Overexpression experiments (C64, C65) demonstrate sufficiency. Multiple lines of evidence converge on the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TRPA1 and RyR are required for both basal and ROS-induced cytosolic Ca2+ levels in ISCs. GCaMP6s imaging shows that trpA1 or RyR RNAi reduces basal Ca2+ and blocks paraquat-induced Ca2+ increases. Time-lapse imaging reveals distinct kinetics for paraquat (slow, continuous) versus AITC (sharp, transient) responses. TRIC reporter confirms these findings in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple calcium reporters (GCaMP6s C67-C69, GCaMP5G C75, TRIC C76-C77) consistently show TRPA1/RyR requirement for Ca2+ homeostasis. Time-lapse imaging (C71-C73) provides kinetic information consistent with channel properties. Control experiments with thapsigargin (C74) demonstrate specificity. The reduction is not due to ISC loss (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Cytosolic Ca2+ induces Ras/MAPK activity in ISCs. SERCA RNAi (which increases cytosolic Ca2+) induces MAPK activity (dpErk staining), and this is blocked by trpA1 or RyR RNAi. SERCA RNAi can override trpA1/RyR RNAi to activate MAPK. Ras1 RNAi, but not Yki RNAi, blocks SERCA-induced MAPK activity, suggesting Ras/MAPK is a direct target of Ca2+ rather than a consequence of cross-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "dpErk staining provides direct readout of MAPK activity (C79-C81). Genetic epistasis experiments (C82-C83, C86) demonstrate pathway relationships. The differential effects of Ras1 vs Yki RNAi (C84-C87) support the interpretation of direct Ca2+ effects on MAPK. Co-staining with TRIC reporter (C88-C89) links high Ca2+ cells to MAPK activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Src kinases may mediate the activation of Ras/MAPK by cytosolic Ca2+ in ISCs. Overexpression of Src42A or Src64B triggers MAPK activation and proliferation, even in the presence of trpA1 RNAi. Src64B RNAi significantly inhibits SERCA RNAi-induced ISC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Src overexpression experiments (C91) demonstrate sufficiency for MAPK activation and show epistasis to trpA1 RNAi. Src64B RNAi (C92) demonstrates requirement, though functional redundancy with Src42A limits interpretation. The results are consistent with known Ca2+-Src-MAPK signaling in neurons (C90). However, the mechanism remains incompletely characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "MAPK activity is both necessary and sufficient for high Ca2+-triggered ISC proliferation. Active Ras1, Raf, or secreted Spi are epistatic to trpA1 RNAi, while trpA1 RNAi blocks the mitogenic activity of active CanA1, CRTC, or CrebB. Ras1 RNAi, but not CanA1 or CrebB RNAi, suppresses SERCA RNAi-induced proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive genetic epistasis analysis (C95-C102) demonstrates that MAPK components act downstream of Ca2+ while CanA1/CRTC/CrebB components act upstream or in parallel. Multiple active forms and RNAi lines tested strengthen conclusions. The results are internally consistent and support the model that MAPK is the major effector of Ca2+ for proliferation (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MAPK activation by Ca2+ requires EGFR signaling. EGFR RNAi completely blocks SERCA RNAi-induced proliferation. RTK ligands spi and pvf1 are down-regulated by trpA1 RNAi and up-regulated by SERCA RNAi, suggesting positive RTK signaling feedback loops may amplify Ras/MAPK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EGFR requirement is demonstrated by complete blockade of SERCA-induced proliferation (C105). RT-qPCR data (C107-C109) show appropriate regulation of ligands by Ca2+ levels. The interpretation of feedback loops (C110) is reasonable given the data, though the mechanism is not fully elucidated. Prior literature (C104) supports EGFR requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C117",
+      "C118",
+      "C119",
+      "C140"
+    ],
+    "result": "The study identifies a mechanism by which ISCs sense oxidative stress: TRPA1 and RyR detect ROS and mediate increases in cytosolic Ca2+ to activate EGFR-Ras/MAPK signaling. Under homeostasis, basal TRPA1/RyR activity maintains Ca2+ for self-renewal. Under damage, increased ROS activates TRPA1 (especially the D isoform), and RyR amplifies the signal through CICR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a synthesis claim supported by the collective evidence from multiple results above. The model is well-supported by: (1) TRPA1-D paraquat sensitivity (C118), (2) Ca2+ requirement for proliferation (C67-C77), (3) MAPK as Ca2+ effector (C79-C103), (4) EGFR requirement (C104-C110), and (5) RyR amplification mechanism from literature (C113, C119). The model is illustrated in Figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Multiple mechanisms regulate cytosolic Ca2+ in ISCs, including mGluR and the ion channels TRPA1/RyR. However, TRPA1 and RyR have a much stronger influence on ISC Ca2+ levels than mGluR. The extent to which different inputs affect Ca2+ concentration correlates with the extent of ISC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior mGluR work (C114-C116) provides context. The RNAi screen results showing mGluR RNAi does not block damage response (C116) support the conclusion that mGluR is not a major player in damage repair. The synthesis claims (C123-C125) are reasonable inferences from the comparative data, though direct quantitative comparison of Ca2+ effects would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Cytosolic Ca2+ levels regulate Ras/MAPK activity in ISCs. trpA1/RyR RNAi blocks MAPK activation, while SERCA RNAi induces it. MAPK activation is an early event following Ca2+ increases. The CanA1/CRTC/CrebB pathway is not likely to play a major role in high Ca2+-induced ISC proliferation, as multiple RNAi lines targeting these components failed to suppress SERCA-induced proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by dpErk staining data (C127-C129) and genetic epistasis experiments (C131-C133). The timing argument (C129) is supported by observation of dpErk before massive expansion. The negative results with CanA1/CRTC/CrebB RNAi (C131) are strengthened by testing multiple RNAi lines and contrast with positive results for Ras1 RNAi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Multiple RTK ligands are regulated by Ca2+ levels in ISCs. High Ca2+ fails to induce proliferation without EGFR. spi is induced by EGFR-Ras/MAPK signaling and may be a direct target of downstream transcription factors, suggesting Spi acts as a positive feedback mechanism for EGFR-Ras/MAPK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data (C135) shows ligand regulation by Ca2+. EGFR requirement (C136) is demonstrated by genetic epistasis. The feedback model (C139) is supported by prior literature showing spi induction by EGFR-MAPK (C137) and DamID data suggesting spi is a direct target (C138). However, the feedback mechanism is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "TRPA1 and RyR are not critically required for midgut development, as flies expressing RNAi throughout development survive to adulthood on normal food. Expression of oxidant-insensitive TRPA1-C can induce proliferation, suggesting ROS may not be the only stimulus for TRPA1/RyR under physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental dispensability (C66) is demonstrated by survival to adulthood. The TRPA1-C result (C120) suggests additional activators exist, though the effect is modest. The speculation about other activators (C122) is reasonable but not directly tested. This result provides important context about the specificity of TRPA1/RyR function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The findings may have implications for understanding cation channel roles in stem cells and cancers, and could inspire pharmacological interventions for regeneration or tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about potential future applications (C142, C143). While the connection to cancer is supported by literature (C141), the translational potential is not demonstrated in this study. These represent reasonable discussion points but are not results of the current work.",
+    "result_type": "MINOR"
+  }
+]

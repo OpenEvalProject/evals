@@ -1,0 +1,1625 @@
+{
+  "submission": {
+    "id": "d48f33a8-1adb-4598-b0ed-0136bf6f0d7b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:12:03.036389Z",
+    "updated_at": "2025-12-02T00:12:03.036389Z"
+  },
+  "content": [
+    {
+      "id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "submission_id": "d48f33a8-1adb-4598-b0ed-0136bf6f0d7b",
+      "content_type": "manuscript",
+      "content_text": "# Glutamatergic drive along the septo-temporal axis of hippocampus boosts prelimbic oscillations in the neonatal mouse\n\n## Authors\n\n- Joachim Ahlbeck<sup>1</sup> ([ORCID: 0000-0002-4439-0798](https://orcid.org/0000-0002-4439-0798))\n- Lingzhen Song<sup>1</sup>\n- Mattia Chini<sup>1</sup> ([ORCID: 0000-0002-5782-9720](https://orcid.org/0000-0002-5782-9720))\n- Sebastian H Bitzenhofer<sup>1</sup>\n- Ileana L Hanganu-Opatz<sup>1</sup> ([ORCID: 0000-0002-4787-1765](https://orcid.org/0000-0002-4787-1765)) \u2020\n\n### Affiliations\n\n1. Developmental Neurophysiology, Institute of Neuroanatomy University Medical Center Hamburg-Eppendorf Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe long-range coupling within prefrontal-hippocampal networks that account for cognitive performance emerges early in life. The discontinuous hippocampal theta bursts have been proposed to drive the generation of neonatal prefrontal oscillations, yet the cellular substrate of these early interactions is still unresolved. Here, we selectively target optogenetic manipulation of glutamatergic projection neurons in the CA1 area of either dorsal or intermediate/ventral hippocampus at neonatal age to elucidate their contribution to the emergence of prefrontal oscillatory entrainment. We show that despite stronger theta and ripples power in dorsal hippocampus, the prefrontal cortex is mainly coupled with intermediate/ventral hippocampus by phase-locking of neuronal firing via dense direct axonal projections. Theta band-confined activation by light of pyramidal neurons in intermediate/ventral but not dorsal CA1 that were transfected by in utero electroporation with high-efficiency channelrhodopsin boosts prefrontal oscillations. Our data causally elucidate the cellular origin of the long-range coupling in the developing brain.\n\n## Introduction\n\nIn the adult rodent brain, coordinated patterns of oscillatory activity code in a frequency-specific manner for sensory and cognitive performance. For example, learning and memory critically depend on oscillations within theta frequency band (4\u201312 Hz) that functionally couple the medial prefrontal cortex (PFC) and hippocampus (HP) (Siapas and Wilson, 1998; Benchenane et al., 2010; Brincat and Miller, 2015; Backus et al., 2016; Eichenbaum, 2017; Wirt and Hyman, 2017). These frequency-tuned brain states are present already during early development, long before the memory and attentional abilities have fully matured. They have been extensively characterized and categorized according to their spatial and temporal structure (Lindemann et al., 2016). Network oscillations during development have a highly discontinuous and fragmented structure with bursts of activity alternating with \u2018silent\u2019 periods (Hanganu et al., 2006; Seelke and Blumberg, 2010; Shen and Colonnese, 2016; Luhmann and Khazipov, 2018). The most common oscillatory pattern, spindle bursts, synchronizes large cortical and subcortical networks within theta-alpha frequency range. It is accompanied by slow delta waves as well as by faster discharges (beta and gamma oscillations) that account for local activation of circuits (Brockmann et al., 2011; Yang et al., 2016).\n\nIn the absence of direct behavioral correlates, a mechanistic understanding of oscillatory rhythms in the developing brain is currently lacking. In sensory systems, spindle bursts have been proposed to act as a template facilitating the formation of cortical maps (Dupont et al., 2006; Hanganu et al., 2006; Tolner et al., 2012), whereas early gamma oscillations seem to control the organization of thalamocortical topography (Minlebaev et al., 2011; Khazipov et al., 2013). In limbic systems dedicated to mnemonic and executive abilities, the knowledge on the relevance of early network oscillations is even sparser. Few lesion studies, yet without selectivity for specific activity patterns, suggested that prefrontal-hippocampal communication during development might be necessary for the maturation of episodic memory (Kr\u00fcger et al., 2012). Temporal associations between the firing and synaptic discharges of individual neurons and network oscillations in different frequency bands gave first insights into the cellular substrate of coordinated activity in neonates. Whereas in sensory systems, endogenous activation of sensory periphery drives entrainment of local circuitry through gap junction coupling as well as glutamatergic and GABAergic transmission (Dupont et al., 2006; Hanganu et al., 2006; Minlebaev et al., 2009), in developing prefrontal-hippocampal networks, the excitatory drive from the HP has been proposed to activate a complex layer- and frequency-specific interplay in the PFC (Brockmann et al., 2011; Bitzenhofer and Hanganu-Opatz, 2014; Bitzenhofer et al., 2015).\n\nWhile most of this correlative evidence put forward the relevance of early oscillations beyond a simple epiphenomenal signature of developing networks, direct evidence for their causal contribution to circuit maturation is still missing. This is mainly due to the absence of a causal interrogation of developing networks, similarly to the investigations done in adult ones. Only recently the methodological difficulties related to area-, layer- and cell type-specific manipulations at neonatal age have been overcome (Bitzenhofer et al., 2017a; Bitzenhofer et al., 2017b). By these means, the local neuronal interplay generating beta-gamma oscillations in the PFC has been elucidated. However, the long-range coupling causing the activation of local prefrontal circuits is still unresolved. We previously proposed that the hippocampal CA1 area drives the oscillatory entrainment of PFC at neonatal age (Brockmann et al., 2011). Here, we developed a methodological approach to optically manipulate the neonatal HP along its septo-temporal axis. We provide causal evidence that theta frequency-specific activation of pyramidal neurons in the CA1 area of intermediate and ventral (i/vHP), but not of dorsal HP (dHP) elicits broad band oscillations in the PFC of neonatal mice via dense axonal projections.\n\n## Results\n\n### Neonatal dorsal and intermediate/ventral hippocampus are differently entrained in discontinuous patterns of oscillatory activity\n\nWhile different organization and function of dHP vs. i/vHP of adults have been extensively characterized (Thompson et al., 2008; Dong et al., 2009; Patel et al., 2013), their patterns of structural and functional maturation are still poorly understood. To fill this knowledge gap, we firstly examined the network oscillatory and firing activity of CA1 area of either dHP or i/vHP by performing extracellular recordings of the local field potential (LFP) and multiple unit activity (MUA) in neonatal [postnatal day (P) 8\u201310] non-anesthetized and urethane-anesthetized mice (n = 153). While urethane anesthesia led to an overall decrease of amplitude and power of oscillatory activity when compared to the non-anesthetized state of the same group of pups, the firing rate and timing as well as the synchrony and interactions within prefrontal-hippocampal networks were similar during both states (Figure 1\u2014figure supplement 1). Due to the close proximity and the absence of reliable anatomical and functional borders between iHP and vHP at neonatal age, data from the two areas were pooled and referred as from i/vHP. The entire investigation was performed at the age of initiation of coupling between HP and PFC, that is, P8-10 (Brockmann et al., 2011). Independent of the position along the dorsal-ventral axis, the CA1 area was characterized by discontinuous oscillations with main frequency in theta band (4\u201312 Hz) and irregular low amplitude beta-gamma band components, which have been previously categorized as theta oscillations (Brockmann et al., 2011). They were accompanied by prominent sharp-waves (SPWs) reversing across the pyramidal layer (str. pyr.) and by strong MUA discharge (Figure 1A and E). While the general patterns of activity were similar in dHP and i/vHP, their properties significantly differed between the sub-divisions. The theta bursts in i/vHP had significantly higher occurrence (i/vHP: 8.1 \u00b1 0.2 oscillations/min, n = 103 mice vs. dHP: 5.2 \u00b1 0.3 oscillations/min, n = 41 mice; p<0.001), larger amplitude (i/vHP:110.6 \u00b1 5.6 \u00b5V vs. dHP: 92.9 \u00b1 2.6 \u00b5V; p=0.015), and shorter duration (i/vHP: 3.5 \u00b1 0.1 s vs. dHP: 4.3 \u00b1 0.1 s, p<0.001) when compared with dHP (Figure 1B, Figure 1\u2014figure supplement 2A). Investigation of the spectral composition of theta bursts revealed significant differences within theta band with a stronger activation of dHP (relative power: dHP: 13.0 \u00b1 1.3, n = 41 mice; i/vHP: 10.3 \u00b1 0.5, n = 103 mice; p=0.026), whereas the faster frequency components were similar along the septo-temporal axis (relative power: 12\u201330 Hz: dHP, 15.0 \u00b1 1.6, n = 41 mice; i/vHP, 13.2 \u00b1 0.7 n = 103 mice, p=0.22; 30\u2013100 Hz: dHP, 6.3 \u00b1 0.6, n = 41 mice; i/vHP: 5.2 \u00b1 0.3, n = 103 mice; p=0.073) (Figure 1C, Figure 1\u2014figure supplement 2B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig1-v1.jpg)\n\n**Figure 1.:** (A) Characteristic theta burst activity recorded in the CA1 area of the dHP (left) and i/vHP (right) of a P9 mouse displayed after band-pass filtering (4\u2013100 Hz) and the corresponding MUA (500\u20135000 Hz). Color-coded frequency plots show the wavelet spectrum of LFP at identical time scale. (B) Bar diagram (mean\u00a0\u00b1SEM) displaying the occurrence of discontinuous theta bursts in dHP (n\u00a0=\u00a041 mice) and i/vHP (n\u00a0=\u00a0103 mice). (C) Power analysis of discontinuous oscillatory activity P(f) normalized to the non-oscillatory period P0(f) in dHP and i/vHP. (i) Power spectra (4\u2013100 Hz) averaged for all investigated mice. (ii) Bar diagrams quantifying the mean power within theta frequency band (4\u201312 Hz) in dHP (n\u00a0=\u00a041 mice) and i/vHP (n\u00a0=\u00a0103 mice) (D) Bar diagram displaying the SUA of dHP (n\u00a0=\u00a0158 units) and i/vHP (n\u00a0=\u00a0557 units) after clustering of spike shapes. (E) Characteristic SPWs and ripple events recorded in dHP (left) and i/vHP (right). (F) Bar diagrams (mean\u00a0\u00b1SEM) displaying the SPWs occurrence in dHP and i/vHP. (G) Characteristic SPW-ripple events recorded in dHP (left) and i/vHP (right). (H) Bar diagram displaying the mean power of ripples in dHP and i/vHP. (I) Spike trains from neurons in dHP (left) and i/vHP (right) aligned to SPWs. (J) Histograms of SUA aligned to SPWs (n\u00a0=\u00a0232 units for dHP, n\u00a0=\u00a0670 for i/vHP). Data are represented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Plots displaying the mean power of oscillatory events for theta, beta and gamma frequencies before and after urethane anesthesia (n\u00a0=\u00a09 mice). (B) Same as (A) for mean coherence between oscillatory events in i/vHP and PL. (C) Same as (A) for directed interactions between i/vHP and PL measured by mean gPDC in theta and beta frequency bands. (D) Impact of urethane anesthesia on the firing rate (i) and phase locking to theta, beta, and gamma oscillatory network activity. Each line corresponds to one investigated pup. Error bars represent SEM. *p<0.05, **p<0.01.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Bar diagrams displaying the amplitude and duration of discontinuous oscillatory events in dHP (n\u00a0=\u00a041 mice) and i/vHP (n\u00a0=\u00a0103 mice). (B) Bar diagrams displaying the power spectrum of discontinuous oscillatory activity P(f) normalized to the non-oscillatory period P0(f) when averaged for beta (12\u201330 Hz) and gamma (30\u2013100 Hz) frequency bands in dHP (left, n\u00a0=\u00a041 mice) and i/vHP (right, n\u00a0=\u00a0103 mice). (C) Histograms displaying the phase-locking of hippocampal spikes to ripple activity in dHP (left) and i/vHP (right). (D) Current source density analysis illustrating sink/sources in dHP (left) and i/vHP (right) during SPWs. Error bars represent SEM. **p<0.01, ***p<0.001.\n\nDifferences along the septo-temporal axis were detected both in hippocampal spiking and population events SPWs. Overall, pyramidal neurons in i/vHP fired at higher rates (0.45 \u00b1 0.01 Hz, n = 557 units from 103 mice) than in the dHP (0.35 \u00b1 0.02 Hz, n = 158 units from 41 mice; p=0.025) (Figure 1D). SPW in neonatal HP were more prominent in the dHP (712.8 \u00b1 31.5 \u00b5V, n = 41 mice) when compared with those occurring in the i/vHP (223.8 \u00b1 6.3 \u00b5V, n = 103 mice, p<0.001), yet their occurrence increased along the septo-temporal axis (dHP: 6.6 \u00b1 0.5, n = 41 mice; i/vHP: 8.6 \u00b1 0.2, n = 103 mice, p<0.001) (Figure 1E and F, Figure 1\u2014figure supplement 2D. In line with our previous results (Brockmann et al., 2011), SPWs were accompanied by prominent firing centered around the SPW peak (dHP, 232 units; i/vHP, 670 units) that were phase-locked to hippocampal ripples (Figure 1\u2014figure supplement 2C). The power of ripples decreased along the septo-temporal axis (relative power: dHP, 24.4 \u00b1 3.3, n = 41 mice; i/vHP, 6.1 \u00b1 0.60, n = 103 mice, p<0.001) (Figure 1G,H). Similarly, the ripple-related spiking was stronger in dHP when compared with i/vHP (peak firing: dHP: 1.13 \u00b1 0.09 Hz, n = 232 units; i/vHP 0.84 \u00b1 0.03, n = 670, p<0.001) (Figure 1I and J).\n\nThese data show that the activity patterns in the dorsal and intermediate/ventral CA1 area differ in their properties and spectral structure.\n\n### Theta activity within dorsal and intermediate/ventral hippocampus differently entrains the neonatal prelimbic cortex\n\nThe different properties of network and neuronal activity in dHP vs. i/vHP led us to question their outcome for the long-range coupling in the developing brain. Past studies identified tight interactions between HP and PFC, which emerge already at neonatal age (Brockmann et al., 2011; Hartung et al., 2016) and are in support of memory at adulthood (Kr\u00fcger et al., 2012; Spellman et al., 2015; Place et al., 2016). The discontinuous theta oscillations in HP have been proposed to drive the activation of local circuits in the PFC. To assess the coupling of dHP and i/vHP with PFC, we recorded simultaneously LFP and MUA in the corresponding hippocampal CA1 area and the prelimbic subdivision (PL) of the PFC of P8-10 mice. The entire investigation focused on PL, since in adults it is the prefrontal subdivision with the most dense innervation from HP (Jay and Witter, 1991; Vertes et al., 2007). In a first step, we examined the temporal correspondence of discontinuous oscillations recorded simultaneously in the PL and dHP, as well as in the PL and i/vHP. We previously characterized the network activity in the PL and showed that spindle-shaped oscillations switching between theta (4\u201312 Hz) and beta-gamma (12\u201340 Hz) frequency components alternate with periods of silence (Brockmann et al., 2011; Cichon et al., 2014; Bitzenhofer et al., 2015). The majority of prelimbic and hippocampal oscillations co-occurred within a narrow time window (Figure 2A). The temporal synchrony between prelimbic and hippocampal oscillations was assessed by performing spectral coherence analysis (Figure 2B). The results revealed a stronger coupling for PL-i/vHP (4\u201312 Hz: 0.17\u00a0\u00b1\u00a00.0069; 12\u201330 Hz: 0.31\u00a0\u00b1\u00a00.011; 30\u2013100 Hz: 0.11\u00a0\u00b1\u00a00.0069, n\u00a0=\u00a0103 mice) when compared with PL-dHP (4\u201312 Hz: 0.12\u00a0\u00b1\u00a00.0081; 12\u201330 Hz: 0.18\u00a0\u00b1\u00a00.0094; 30\u2013100 Hz: 0.084\u00a0\u00b1\u00a00.004, n\u00a0=\u00a041 mice). In line with previous investigations, this level of coherence is a genuine feature of investigated neonatal networks and not the result of non-specific and conduction synchrony, since we considered only the imaginary component of the coherence spectrum, which excludes zero time-lag synchronization (Nolte et al., 2004).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig2-v1.jpg)\n\n**Figure 2.:** (A) Simultaneous LFP recordings of discontinuous oscillatory activity in dHP and PL (top) and i/vHP and PL (bottom). (B) Long-range synchrony within prefrontal-hippocampal networks. (i) Average coherence spectra for simultaneously recorded oscillatory events in dHP and PL as well as i/vHP and PL. (ii) Bar diagrams (mean\u00a0\u00b1SEM) displaying the coherence in theta (4\u201312 Hz), beta (12\u201330 Hz), and gamma (30\u2013100 Hz) band when averaged for all investigated mice. (C) Directed interactions between PL and either dHP or i/vHP monitored by general Partial Directed Coherence (gPDC). Bar diagrams displaying the gPDC calculated for theta (4\u201312 Hz, left) and beta (12\u201330 Hz, right) frequency and averaged for all investigated animals (n\u00a0=\u00a041 mice for dHP and PL, n\u00a0=\u00a0103 mice for i/vHP and PL). (D) Histograms displaying the phase-locking of prelimbic spikes to theta oscillations in dHP (left) and i/vHP (right). Note the different proportion of spikes significantly locked along the septo-temporal axis (dHP, 3 of 46 units; i/vHP, 52 of 310 units). Data are represented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Error bars represent SEM.\n\nDue to the symmetric interdependence of coherence, it does not offer reliable insights into the information flow between two brain areas. Therefore, in a second step, we estimated the strength of directed interactions between PL and HP by calculating the generalized partial directed coherence (gPDC) (Baccala et al., 2007; Rodrigues and Baccala, 2016) (Figure 2C). The method bases on the notion of Granger causality (Granger, 1980) and avoids distorted connectivity results due to different scaling of data in HP and PL (Baccala et al., 2007; Taxidis et al., 2010). Independent of the position along the septo-temporal axis, the information flow in theta or beta frequency band from either dorsal or intermediate/ventral HP to PL was significantly stronger than in the opposite direction. However, mean gPDC values for i/vHP \u2192 PL were significantly (p<0.001) higher (0.069\u00a0\u00b1\u00a00.003, n\u00a0=\u00a0103 mice) when compared with those for dHP \u2192 PL (0.053\u00a0\u00b1\u00a00.003, n\u00a0=\u00a041 mice). Cross-correlation analysis confirmed these results (Figure 2\u2014figure supplement 1). The stronger information flow from i/vHP to PL was confined to theta frequency range and was not detected for 12\u201330 Hz frequencies (i/vHP \u2192 PL: 0.048\u00a0\u00b1\u00a00.001; dHP \u2192 PL: 0.043\u00a0\u00b1\u00a00.002, p=0.16). Correspondingly, the firing of individual prelimbic neurons was precisely timed by the phase of oscillations in i/vHP but not dHP (Figure 2D). Almost 20% of clustered units (52 out of 310 units) were locked to theta phase in i/vHP, whereas only 6.5% of units (3 out of 46 units) were timed by dHP. The low number of locked cells in dHP precluded the comparison of coupling strength between the two hippocampal sub-divisions.\n\nThese results indicate that the distinct activity patterns in dHP and i/vHP at neonatal age have different outcomes in their coupling with the PL. Despite higher power, theta oscillations in dHP do not substantially account for prelimbic activity. In contrast, i/vHP seems to drive neuronal firing and network entrainment in the PL.\n\n### SPWs-mediated output of intermediate/ventral but not dorsal hippocampus times network oscillations and spiking response in the neonatal prelimbic cortex\n\nSince SPWs and ripples in dHP significantly differ from those in i/vHP, they might have a distinct impact on the developing PFC. While abundant literature documented the contribution of SPWs-spindles complex to memory-relevant processing in downstream targets, such as PFC (Colgin, 2011; Buzs\u00e1ki, 2015; Colgin, 2016), it is unknown how these complexes affect the development of cortical activation. Simultaneous recordings from neonatal CA1 area either in dHP or i/vHP and PL showed that already at neonatal age, prefrontal oscillations are generated shortly (~100 ms) after hippocampal SPWs-ripples. This prelimbic activation is significantly stronger when induced by SPWs-ripples emerging in i/vHP than in dHP as reflected by the significantly higher power of oscillatory activity in theta (PL for dHP: 186.9\u00a0\u00b1\u00a012.5 \u00b5V2; PL for i/vHP: 249.5\u00a0\u00b1\u00a014.5 \u00b5V2, p=0.0088), beta (PL for dHP: 34.3\u00a0\u00b1\u00a03.3 \u00b5V2; PL for i/vHP: 48.1\u00a0\u00b1\u00a02.8 \u00b5V2, p=0.0049), and gamma (PL for dHP: 11.3\u00a0\u00b1\u00a00.9 \u00b5V2; PL for i/vHP: 17.4\u00a0\u00b1\u00a01.2 \u00b5V2, p=0.0026) frequency band (Figure 3A). The SPWs-ripple-induced oscillatory activity in the PL of neonatal mice was accompanied by augmentation of firing rates. While the induced firing in i/vHP peaked (\u224890 ms) after SPWs-ripples and remained significantly (p<0.001) elevated for several seconds, a less prominent peak was observed following SPW-ripples in dHP (Figure 3B and C). The phase-locking of prelimbic units was similar before and after SPWs (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig3-v1.jpg)\n\n**Figure 3.:** (A) Power changes in the PL during hippocampal SPWs. (i) Color-coded frequency plot showing the relative power in the PL aligned to the onset of SPWs detected in i/vHP when normalized to the power change caused in the PL by SPWs in the dHP. All other colors than green represent power augmentation (red) or decrease (blue). (ii) Bar diagrams displaying mean power changes of prelimbic activity in different frequency bands (left, theta; middle, beta; right, gamma) before (pre) and after (post) hippocampal SPWs in the dHP and i/vHP (n\u00a0=\u00a041 mice for dHP, n\u00a0=\u00a0103 mice for i/vHP). (B) Spike trains recorded in the PL before and after SPWs occurring either in the dHP (left) or i/vHP (right). (C) Histograms of prelimbic spiking in relationship with hippocampal SPWs (n\u00a0=\u00a0148 units for dHP, n\u00a0=\u00a0560 units for i/vHP). Data are represented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig3-figsupp1-v1.jpg)\n\nThese data reveal that SPWs-ripples from intermediate/ventral but less from the dorsal part of hippocampal CA1 correlate with pronounced neuronal firing and local entrainment in the PL of neonatal mice.\n\n### Pyramidal neurons in intermediate/ventral but not dorsal hippocampus densely project to the prefrontal cortex at neonatal age\n\nTo identify the anatomical substrate of different coupling strength between i/vHP - PL and dHP - PL, we monitored the projections that originate from the CA1 area in both hippocampal subdivisions and target the PFC. The direct unilateral projections from hippocampal CA1 area to PL have been extensively investigated in adult brain (Swanson, 1981; Jay and Witter, 1991; Vertes et al., 2007) and are present already at neonatal age (Brockmann et al., 2011; Hartung et al., 2016). We tested for sub-division-specific differences by using retrograde and anterograde tracing. First, we injected unilaterally small amounts of the retrograde tracer Fluorogold (FG) into the PL of P7 mice (n\u00a0=\u00a08 mice). Three days after FG injections, labeled cells were found in str. pyr. of CA1 in both dHP and i/vHP (Figure 4A). However, their density was significantly different (p<0.001); whereas in dHP very few cells were retrogradely labeled (0.15*103\u00a0\u00b1\u00a00.074*103 cells/mm2), a large proportion of pyramidal-shaped cells in the CA1 area of i/vHP projects to PL (3.29*103\u00a0\u00b1\u00a00.19*103 cells/mm2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig4-v1.jpg)\n\n**Figure 4.:** (A) Photomicrographs depicting dense retrogradely labelled neurons in the CA1 area of i/vHP (right) but not dHP (middle) after FG injection into PL at P1 (left). Bar diagram displays the overall density of retrogradely stained neurons when averaged for all investigated pups (n\u00a0=\u00a08 mice). (B) Photomicrographs depicting anterogradely labeled axons targeting the PL of a P10 mouse (right) after iontophoretic BDA injection into the CA1 area of i/vHP at P7 (left). The site of injection and the area with the highest axonal density are depicted at higher magnification. Data are represented as mean\u00a0\u00b1\u00a0SEM. ***p<0.001.\n\nSecond, the preferential innervation of PL by pyramidal neurons from CA1 area of i/vHP was confirmed by anterograde staining with BDA (n\u00a0=\u00a09 mice). Small amounts of BDA were injected into the CA1 area of i/vHP (Figure 4B). They led to labeling of the soma and arborized dendritic tree of pyramidal neurons in str. pyr. with the characteristic orientation of axons. In 7 out of 9 mice anterogradely-labeled axons were found in the PL, preferentially within its deep layers V and VI.\n\nThus, the dense axonal projections from CA1 area of i/vHP might represent the substrate of HP-induced oscillatory entrainment of prelimbic circuits.\n\n### Selective light manipulation of pyramidal neurons and interneurons in CA1 area of intermediate/ventral but not dorsal hippocampus causes frequency-specific changes in the oscillatory entrainment of neonatal prelimbic circuits\n\nThe tight coupling by synchrony and the directed information flow from hippocampal CA1 area to PL via direct axonal projections suggest that the HP acts already at neonatal age as a drive for prelimbic activation. Moreover, the differences identified between the dHP \u2013 PL and i/vHP \u2013 PL communication argue for prominent augmentation of driving force along the septo-temporal hippocampal axis. To causally confirm these correlative evidences, we selectively activated by light the pyramidal neurons in the CA1 area of either dHP or i/vHP that had been transfected with a highly efficient fast-kinetics double mutant ChR2E123T/T159C (ET/TC) (Berndt et al., 2011) and the red fluorescent protein tDimer2 by in utero electroporation (IUE) (Figure 5\u2014figure supplement 1A). This method enables stable area and cell type-specific transfection of neurons already prenatally without the need of cell-type specific promotors of a sufficiently small size (Baumgart and Grebe, 2015; Szczurkowska et al., 2016). To target neurons along the septo-temporal axis, distinct transfection protocols were used. When the IUE was performed with two paddles placed 25\u00b0 leftward angle from the midline and a 0\u00b0 angle downward from anterior to posterior, tDimer-positive neurons were mainly found in the CA1 area of the dHP, as revealed by the analysis of consecutive coronal sections from IUE-transfected P8-10 mice. Targeting of i/vHP succeeded only when three paddles were used, with both positive poles located at 90\u00b0 leftward angle from the midline and the third negative pole at 0\u00b0 angle downward from anterior to posterior (Figure 5A, S2B). Staining with NeuN showed that a substantial proportion of neurons in str. pyr. of CA1 area (dHP: 18.3 \u00b1 1.0%; n\u00a0=\u00a036 slices from 13 mice; i/vHP: 14.5 \u00b1 1.5%, n\u00a0=\u00a012 slices from 11 mice) were transfected by IUE. The shape of tDimer2-positive neurons, the orientation of primary dendrites, and the absence of positive staining for GABA confirmed that the light-sensitive protein ChR2(ET/TC) was integrated exclusively into cell lineages of pyramidal neurons (Figure 5A). Omission of ChR2(ET/TC) from the expression construct (i.e. opsin-free) yielded similar expression rates and distribution of tDimer2-positive neurons (Figure 5\u2014figure supplement 1C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig5-v1.jpg)\n\n**Figure 5.:** (A) Cell- and layer-specific transfection of dHP or i/vHP with CAG-ChR2(ET/TC)\u22122A-tDimer2 by site-directed IUE. (i) Photomicrographs depicting tDimer2-expressing pyramidal neurons (red) in the CA1 region of dHP (left) and i/vHP (right) when stained for NeuN (green, top panels) or GABA (green, bottom panels). (ii) Photomicrographs depicting the transfected hippocampal neurons when co-stained for NeuN and displayed at larger magnification. (iii) Photomicrographs depicting transfected hippocampal neurons when co-stained for GABA and displayed at larger magnification. (B) Optogenetic activation of pyramidal neurons in CA1 area along septo-temporal axis. (i) Representative raster plot and corresponding spike probability histogram for dHP (left) and i/vHP (right) in response to 30 sweeps of 8 Hz pulse stimulation (3 ms pulse length, 473 nm). (ii) Bar diagram displaying the efficacy of inducing spiking in dHP and i/vHP of different stimulation frequencies. (C) Characteristic light-induced discontinuous oscillatory activity in the PL of a P10 mouse after transfection of pyramidal neurons in the CA1 area of the dHP (left) or i/vHP (right) with ChR2(ET/TC) by IUE. The LFP is displayed after band-pass filtering (4\u2013100 Hz) together with the corresponding color-coded wavelet spectrum at identical time scale. Inset, individual (gray) and averaged (black) prelimbic LFP traces displayed at larger time scale in response to light stimulation in HP. (D) Power analysis of prelimbic oscillatory activity Pstim(f) after light stimulation of dHP (green) and i/v HP (orange) at different frequencies (4, 8, 16 Hz) normalized to the activity before stimulus Ppre(f). (i) Power spectra (0\u2013100 Hz) averaged for all investigated mice. (ii) Bar diagrams displaying mean power changes in PL during stimulation of either dHP (top panels) or i/vHP (bottom panels). Data are represented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Structure of the ChR2(ET/TC)-containing and opsin-free constructs. (B) Schematic drawing illustrating the orientation of electrode paddles for specific targeting of either (i) dHP or (ii) i/vHP pyramidal neurons. (C) Bar diagram displaying the mean number of embryos, electroporated embryos, surviving pups, and positively transfected pups when ChR2(ET/TC)-containing and opsin-free constructs for (i) dHP (n\u00a0=\u00a08 litters for opsin-containing group, n\u00a0=\u00a05 for opsin-free group) and (ii) i/vHP (n\u00a0=\u00a08 litters for opsin-containing group, n\u00a0=\u00a03 litters for opsin-free group). (D) Line plots displaying the developmental profile of somatic growth [body length, tail length, weight] and reflexes [vibrissa placing, cliff aversion and surface righting reflexes] of P2-8 pups expressing ChR2(ET/TC) or opsin-free constructs in (i) dHP (n\u00a0=\u00a017 for opsin-containing pups, n\u00a0=\u00a014 for opsin-free pups) and (ii) i/vHP (n\u00a0=\u00a09 for opsin-containing pups, n\u00a0=\u00a05 for opsin-free pups). Error bars represent SEM.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Bar diagrams displaying the power changes in PL during light stimulation of pyramidal neurons in the CA1 area of dHP (top panels) or i/vHP (bottom panels) when normalized to the values before hippocampal stimulation for opsin-free animals. Error bars represent SEM.\n\nTo exclude non-specific effects of transfection procedure by IUE on the overall development of mice, we assessed the developmental milestones and reflexes of electroporated opsin-expressing and opsin-free mice (Figure 5\u2014figure supplement 1D). While IUE caused significant reduction of litter size (non-electroporated 6.5\u00a0\u00b1\u00a00.7 pups/litter, electroporated: 4.5\u00a0\u00b1\u00a00.5 pups/litter, p=0.017), all investigated pups had similar body length, tail length, and weight during early postnatal period. Vibrissa placing, surface righting and cliff aversion reflexes were also not affected by IUE or transfection of neurons with opsins. These data indicate that the overall somatic development during embryonic and postnatal stage of ChR2(ET/TC)-transfected mice is unaltered.\n\nWe first assessed the efficiency of light stimulation in evoking action potentials in hippocampal pyramidal neurons in vivo. Blue light pulses (473 nm, 20\u201340 mW/mm2) at different frequencies (4, 8, 16 Hz) led shortly (<10 ms) after the stimulus to precisely timed firing of transfected neurons in both dHP and i/vHP. Our previous experimental data and modeling work showed that the used light power did not cause local tissue heating that might interfere with neuronal spiking (Stujenske et al., 2015; Bitzenhofer et al., 2017b). For both hippocampal sub-divisions the efficiency of firing similarly decreased with augmenting frequency (Figure 5B). For stimulation frequencies\u00a0>16 Hz, the firing lost the precise timing by light, most likely due to the immaturity of neurons and their projections.\n\nTo decide whether activation of HP boosts the entrainment of prelimbic circuits, we simultaneously performed multi-site recordings of LFP and MUA in PL and HP during pulsed light stimulation of CA1 area of dHP (n\u00a0=\u00a022 mice) or i/vHP (n\u00a0=\u00a09 mice) (Figure 5C). The firing in i/vHP timed by light at 8 Hz, but not at 4 Hz or 16 Hz, caused significant (theta: p=0.039, beta: p=0.030, gamma: p=0.0036) augmentation of oscillatory activity in all frequency bands as reflected by the higher power in the PL during the stimulation when compared with the time window before the train of pulses (Figure 5D, Table 1). In contrast, stimulation by light of dHP left the prelimbic activity unaffected. In opsin-free animals, stimulation of dHP and i/vHP led to no significant changes in the oscillatory activity (Figure 5\u2014figure supplement 2A, Table 1). Rhythmic firing of prelimbic neurons was not detected after light activation of hippocampal subdivisions, most likely because hippocampal axons were rather sparse.\n\n**Table 1.**\n Mean power changes in PL after light stimulation of dHP or i/vHP in ChR2(ET/TC)-containing and opsin-free animals. *p<0.05, **p<0.01.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">dHP</th>\n      <th colspan=\"3\">I/vHP</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Stimulation frequency</th>\n      <th colspan=\"3\">Stimulation frequency</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ChR2(ET/TC)</td>\n      <td>4 Hz</td>\n      <td>8 Hz</td>\n      <td>16 Hz</td>\n      <td>4 Hz</td>\n      <td>8 Hz</td>\n      <td>16 hz</td>\n    </tr>\n    <tr>\n      <td>Theta</td>\n      <td>0.97\u00a0\u00b1\u00a00.10</td>\n      <td>1.19\u00a0\u00b1\u00a00.19</td>\n      <td>1.0\u00a0\u00b1\u00a00.093</td>\n      <td>0.90\u00a0\u00b1\u00a00.15</td>\n      <td>1.89\u00a0\u00b1\u00a00.36 (*)</td>\n      <td>1.16\u00a0\u00b1\u00a00.08</td>\n    </tr>\n    <tr>\n      <td>Beta</td>\n      <td>0.91\u00a0\u00b1\u00a00.06</td>\n      <td>1.17\u00a0\u00b1\u00a00.15</td>\n      <td>1.06\u00a0\u00b1\u00a00.13</td>\n      <td>0.94\u00a0\u00b1\u00a00.12</td>\n      <td>1.72\u00a0\u00b1\u00a00.27 (*)</td>\n      <td>1.12\u00a0\u00b1\u00a00.08</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>1.0\u00a0\u00b1\u00a00.035</td>\n      <td>1.00\u00a0\u00b1\u00a00.19</td>\n      <td>1.04\u00a0\u00b1\u00a00.38</td>\n      <td>0.97\u00a0\u00b1\u00a00.06</td>\n      <td>1.26\u00a0\u00b1\u00a00.06 (**)</td>\n      <td>1.02\u00a0\u00b1\u00a00.06</td>\n    </tr>\n    <tr>\n      <td>Opsinfree</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Theta</td>\n      <td>1.11\u00a0\u00b1\u00a00.14</td>\n      <td>1.09\u00a0\u00b1\u00a00.19</td>\n      <td>1.14\u00a0\u00b1\u00a00.22</td>\n      <td>1.17\u00a0\u00b1\u00a00.27</td>\n      <td>1.17\u00a0\u00b1\u00a00.20</td>\n      <td>1.16\u00a0\u00b1\u00a00.12</td>\n    </tr>\n    <tr>\n      <td>Beta</td>\n      <td>1.13\u00a0\u00b1\u00a00.15</td>\n      <td>0.99\u00a0\u00b1\u00a00.16</td>\n      <td>1.11\u00a0\u00b1\u00a00.11</td>\n      <td>1.05\u00a0\u00b1\u00a00.22</td>\n      <td>0.95\u00a0\u00b1\u00a00.18</td>\n      <td>1.08\u00a0\u00b1\u00a00.13</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>1.08\u00a0\u00b1\u00a00.06</td>\n      <td>0.93\u00a0\u00b1\u00a00.04</td>\n      <td>1.03\u00a0\u00b1\u00a00.03</td>\n      <td>0.89\u00a0\u00b1\u00a00.09</td>\n      <td>0.94\u00a0\u00b1\u00a00.07</td>\n      <td>0.97\u00a0\u00b1\u00a00.04</td>\n    </tr>\n  </tbody>\n</table>\n\nTo confirm the driving role of i/vHP for the generation of oscillatory activity in PL, we selectively transfected Dlx5/6 positive interneurons with either ChETA or archaerhodopsin (ArchT). Blue light stimulation (473 nm) confined to i/vHP of Dlx5/6\u2013ChETA mice (n\u00a0=\u00a019) led to a significant reduction of hippocampal power in all frequency bands (theta: p=0.024, beta: p=0.018, gamma: p=0.044). Correspondingly, the oscillatory activity in PL diminished (theta: p=0.027, beta: p=0.077, gamma: p=0.019) (Figure 6A,B). Silencing of interneurons in Dlx5/6-ArchT mice (n\u00a0=\u00a013) by yellow light (600 nm) had an opposite effect and caused augmentation of oscillatory activity both within i/vHP (theta: p<0.001, beta: p=0.0012, gamma: p<0.001) and PL (theta: p<0.001, beta: p<0.001, gamma: p<0.001) (Figure 6A,C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33158/elife-33158-fig6-v1.jpg)\n\n**Figure 6.:** (A) Light-induced modulation of oscillatory activity in i/vHP and PL of a P9 mouse after transfection of interneurons in the CA1 area of the i/vHP with ChETA (i) or ArchT (ii). The LFP is displayed after band-pass filtering (4\u2013100 Hz) together with the corresponding color-coded wavelet spectrum at identical time scale. (B) Power of oscillatory activity in i/vHP and PL after optogenetic activation of interneurons in i/vHP (Pstim(f)) normalized to the activity before stimulus Ppre(f). (i) Power spectra (0\u2013100 Hz) averaged for all investigated mice. (ii) Bar diagrams displaying mean power changes in theta, beta, and gamma frequency bands for the oscillations recorded in i/vHP and PL during light stimulation in i/vHP. (C) Same as (B) for silencing of ArchT-transfected interneurons in i/vHP by yellow light. Data are shown as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01, ***p<0.001.\n\nTaken together, these data reveal the critical role of hippocampal activity for the oscillatory entrainment of PL and identify pyramidal neurons in CA1 area of of i/vHP but not dHP as drivers for the broad activation of local prelimbic circuits.\n\n## Discussion\n\nCombining selective optogenetic activation with extracellular recordings and tracing of projections in neonatal mice in vivo, we provide causal evidence that theta activity in the CA1 area of i/vHP but not dHP drives network oscillations within developing prefrontal cortex. Despite stronger theta power in the dHP, solely optical activation of the pyramidal neurons in i/vHP at theta frequency range (8 Hz) boosted the emergence of discontinuous oscillatory activity in theta and beta-gamma bands in the neonatal PFC. These data identify the cellular substrate of the directed interactions between neonatal hippocampus and prefrontal cortex and offer new perspectives for the interrogation of long-range coupling in the developing brain and its behavioral readout.\n\n### Distinct patterns of functional maturation in dorsal and intermediate/ventral hippocampus\n\nThe abundant literature dedicated to the adult hippocampus mainly deals with a single cortical module (Amaral et al., 2007). However, an increasing number of studies in recent years revealed distinct organization, processing mechanisms and behavioral relevance for dHP vs. i/vHP (Fanselow and Dong, 2010; Bannerman et al., 2014; Strange et al., 2014). For example, the dHP, which receives dense projections from the entorhinal cortex (Witter and Amaral, 2004), is mainly involved in spatial navigation (O'Keefe and Nadel, 1978; Moser et al., 1995; Moser et al., 1998). In contrast, the ventral part receives strong cholinergic and dopaminergic innervation (Witter et al., 1989; Pitk\u00e4nen et al., 2000) and contributes to processing of non-spatial information (Bannerman et al., 2003; Bast et al., 2009). Correspondingly, the network and neuronal activity changes along the septo-temporal axis. The power of the most prominent activity pattern in the adult HP, the theta oscillations, as well as the theta timing of the neuronal firing was found to be substantially reduced in the i/vHP when compared with dHP (Royer et al., 2010). By these means, the precise spatial representation deteriorates along the septo-temporal axis, since theta activity is directly linked to place cell representation (O'Keefe and Recce, 1993; Geisler et al., 2007). In contrast, SPWs are more frequent and ripples have higher amplitude and frequency in the ventral HP than in the dHP (Patel et al., 2013).\n\nOur data uncovered that some of these differences in the activity patterns along the septo-temporal axis emerge already during early neonatal development. Similar to findings from adult rodents, the power of theta bursts at neonatal age was higher in dHP than in i/vHP. The amplitude of SPWs and the power of ripples decreased along the septo-temporal axis. These findings give insights into the mechanisms underlying the early generation of activity patterns. It has been proposed that the differences in theta dynamics along the septo-temporal axis result from distinct innervation, on the one hand, and from specific intrinsic properties of hippocampal neurons, on the other hand. Cholinergic projections of different origin in the dHP and i/vHP (Stewart and Fox, 1990; Amaral et al., 2007) as well as maturational differences in the intrinsic resonant properties of hippocampal neurons and notable gradients of parvalbumin immunoreactivity along the septo-temporal axis (Honeycutt et al., 2016) may contribute to the observed differences.\n\nQuantification along the septo-temporal axis revealed that, similar to adults, the occurrence of SPWs was higher in the i/vHP and their amplitude was larger in the neonatal dHP (Patel et al., 2013). It is still an issue of debate when exactly ripples emerge in the developing hippocampus, although it is obvious that they appear later than theta bursts and SPWs, most likely towards the end of the first and during second postnatal week (Buhl and Buzs\u00e1ki, 2005; Brockmann et al., 2011). Their underlying mechanisms at neonatal age remain also largely unknown and need to be related to age-dependent changes in gap junctional coupling and GABA switch (Ben-Ari et al., 1989; Zhang et al., 1990; Yuste et al., 1995). The organization of SPWs and ripples is of particular relevance when considering their impact on the early activity of PFC. Already at neonatal age, the prelimbic firing and oscillatory entrainment is timed by SPWs-ripples. Of note, the degree of timing varies along the septo-temporal axis and is much higher for the i/vHP.\n\n### Optogenetic interrogation of long-range coupling in the developing brain\n\nAt adult age the communication between PFC and HP has been investigated in relationship with memory tasks both under physiological and disease-related conditions (Sirota et al., 2008; Adhikari et al., 2010; Sigurdsson et al., 2010; Eichenbaum, 2017). Depending on the phase of memory processing, the prefrontal-hippocampal coupling via oscillatory synchrony has been found to be either unidirectional from the HP to PFC or bidirectional (Siapas et al., 2005; Hallock et al., 2016; Place et al., 2016). Both theta and gamma network oscillations contribute to the functional long-range coupling. The model of prefrontal-hippocampal communication has been initially built based on experimental evidence correlating the temporal organization of neuronal and network activity in the two brain areas. The time delay between spike trains and oscillatory phase or between oscillations enabled to propose that the information flows in one direction or the other via mono- or polysynaptic axonal projections. More recently, a direct causal assessment of the coupling became possible through optogenetic interrogation of neural circuits. In a seminal study, Spellman and colleagues used light-driven inhibition of axonal terminals for dissecting the directionality of interactions between PFC and HP during different phases of memory retrieval (Spellman et al., 2015).\n\nWe previously showed that at neonatal age, long before full maturation of memory and attentional abilities, discontinuous theta bursts in i/vHP are temporally correlated to the network oscillations in the PFC and time the prefrontal firing (Brockmann et al., 2011; Hartung et al., 2016). Moreover, the temporal delay of 10\u201320 ms between prefrontal and hippocampal spike trains as well as the estimated directionality of information flow between the two areas suggested that hippocampal theta drives the oscillatory entrainment of the local circuits in the PFC. The present data directly prove this hypothesis, taking advantage of the recently developed protocol for optogenetic manipulation of neuronal networks at neonatal age (Bitzenhofer et al., 2017a, 2017b). We observed that prelimbic circuits were effectively entrained when the stimulation of paramidal neurons in i/vHP occurred at 8 Hz but not at 4 Hz or 16 Hz. Such frequency-specific effect might result from intrinsic resonance properties of neurons mediated through hyperpolarization-activated cyclic nucleotide-gated (HCN) channels (Hu et al., 2002; Stark et al., 2013). It has been previously proposed that oscillatory activity in cortical regions may be entrained due to the rhythmic theta-band output from the hippocampus (Stark et al., 2013; Colgin, 2016).\n\nSeveral considerations regarding the technical challenges of optogenetic manipulation of HP along the septo-temporal axis need to be made. Besides the inherent difficulties related to the specificity of promoters for selective transfection and the targeting procedure that are ubiquitary for all developing networks and have been addressed elsewhere (Bitzenhofer et al., 2017a), confinement of light-sensitive proteins to pyramidal neurons of either dHP or i/vHP required special attention. In a previous study (Bitzenhofer et al., 2017b), we developed a selective targeting protocol of neonatal neurons that relies on the combination of CAG promoter and IUE. By these means, the expression of light-sensitive proteins in the neurons located in the neocortical layer and area of interest was sufficiently high to ensure their reliable activation. Similarly, the expression of ChR2(ET/TC) in the pyramidal neurons of hippocampal CA1 area under the CAG promoter was sufficiently high to reliably cause network and neuronal activity. Taking into account that viral transduction, which usually requires 10\u201314 days for stable expression, is only of limited usability to investigate local network interactions during development, IUE seems to represent the method of choice for manipulating circuits at this early age. IUE enables targeting of precursor cells of neuronal and glial subpopulations, based on their distinct spatial and temporal patterns of generation in the ventricular zone (Tabata and Nakajima, 2001; Borrell et al., 2005; Niwa et al., 2010; Hoerder-Suabedissen and Moln\u00e1r, 2015). IUE based on two electrode paddles enabled selective targeting of pyramidal neurons in the CA1 area of dHP in more than half of the pups per litter (Figure 5\u2014figure supplement 1), but it completely failed (0 out of 32 mice) to target these neurons in i/vHP. Therefore, it was necessary to use a modified IUE protocol based on three electrodes. This protocol, although more complicated and time consuming, allows reliable transfection at brain locations that are only able to be sporadically targeted by two electrodes The IUE-induced expression of light sensitive proteins enables the reliable firing of neurons in both dHP and i/vHP in response to light pulses. One intriguing question is how many pyramidal neurons in str. pyr. of CA1 area must be synchronously activated to drive the oscillatory entrainment of prelimbic circuitry. Anterograde and retrograde tracing demonstrated the density increase along the septo-temporal axis of hippocampal axons targeting the PL. Light activation/inhibition of these axonal terminals paired with monitoring of network oscillations in the PFC might offer valuable insights into the patterns of coupling sufficient for activation.\n\n### Functional relevance of frequency-specific drive within developing prefrontal-hippocampal networks\n\nAbundant literature links theta frequency coupling within prefrontal-hippocampal networks to cognitive performance and emotional states of adults (Adhikari et al., 2010; Xu and S\u00fcdhof, 2013; Spellman et al., 2015; Hallock et al., 2016; Place et al., 2016; Ye et al., 2017). The early emergence of directed communication between PFC and i/vHP raises the question of functional relevance of this early coupling during development and at adulthood.\n\nThe maturation of cognitive abilities is a process even more protracted than sensory development and starts during second-third postnatal week (Hanganu-Opatz, 2010; Cirelli and Tononi, 2015). Some of these abilities, such as recognition memory, can be easily monitored at early age and seems to critically rely on structurally and functionally intact prefrontal-hippocampal networks (Kr\u00fcger et al., 2012). Direct assessment of the role of neonatal communication for memory performance as performed for adult circuits is impossible due to the temporal delay of the two processes. The alternative is to manipulate the activity of either PFC, HP or the connectivity between them during defined developmental time windows and monitor the juvenile and adult consequences at structural, functional and behavioral levels. The present data and optogenetic protocol represent the pre-requisite of this investigation, opening new perspectives for assessing the adult behavioral readout of long-range communication in the developing brain.\n\nOne question that remains to be addressed is how the hippocampal theta drive shapes the maturation of prefrontal-hippocampal networks. Following the general rules of activity-dependent plasticity (Hubel et al., 1977; Huberman et al., 2006; Xu et al., 2011; Yasuda et al., 2011), the precisely timed excitatory inputs from the i/vHP to the PL might facilitate the wiring of local prefrontal circuitry and enable the refinement of behaviorally relevant communication scaffold between the two regions. By these means, the prefrontal activity driven by projection neurons in the HP act as a template, having a pre-adaptive function that facilitates the tuning of circuits with regard to future conditions. This instructive role of theta activity for the prefrontal circuits needs to be proven by manipulation of temporal structure of the hippocampal drive without affecting the overall level of activity. Understanding the rules that govern the early organization of large-scale networks represents the pre-requisite for identifying the structural and functional deficits related to abnormal behavior and disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>antibody</td>\n      <td>mouse monoclonal Alexa Fluor-488 conjugated antibody against NeuN</td>\n      <td>Merck Millipore</td>\n      <td>MAB377X</td>\n      <td>1:200 dilution</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>rabbit polyclonal primary antibody against GABA</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2052</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Alexa Fluor-488 goat anti-rabbit IgG secondary antibody</td>\n      <td>Merck Millipore</td>\n      <td>A11008</td>\n      <td>1:500 dilution</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Isoflurane</td>\n      <td>Abbott</td>\n      <td>B506</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Urethane</td>\n      <td>Fluka analytical</td>\n      <td>94300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Fluorogold</td>\n      <td>Fluorochome, LLC</td>\n      <td>52\u20139400</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Biotinylated dextran amine, 10.000 MW</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>D1956</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>NucleoBond PC 100</td>\n      <td>Macherey-Nagel</td>\n      <td>740573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (mouse, both genders)</td>\n      <td>C57Bl/6J</td>\n      <td>Universit\u00e4tsklinikum Hamburg-Eppendorf \u2013 Animal facility</td>\n      <td>C57Bl/6J</td>\n      <td>https://www.jax.org/strain/008199</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (mouse, both genders)</td>\n      <td>Tg(dlx5a-cre)1Mekk/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Tg(dlx5a-cre)1Mekk/J</td>\n      <td>https://www.jax.org/strain/017455</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (mouse, both genders)</td>\n      <td>R26-CAG-LSL- 2XChETA-tdTomato</td>\n      <td>The Jackson Laboratory</td>\n      <td>R26-CAG-LSL-2XChETA- tdTomato</td>\n      <td>https://www.jax.org/strain/021188</td>\n    </tr>\n    <tr>\n      <td>strain, strain background (mouse, both genders)</td>\n      <td>Ai40(RCL-ArchT/EGFP)-D</td>\n      <td>The Jackson Laboratory</td>\n      <td>Ai40(RCL-ArchT/EGFP)-D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pAAV-CAG-ChR2 (E123T/T159C) \u22122AtDimer2</td>\n      <td>Provided by T. G. Oertner</td>\n      <td>pAAV-CAG-ChR2 (E123T/T159C) \u22122AtDimer2</td>\n      <td>http://www.oertner.com/</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pAAV-CAG-tDimer2</td>\n      <td>Provided by T. G. Oertner</td>\n      <td>pAAV-CAG-tDimer2</td>\n      <td>http://www.oertner.com/</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Matlab R2015a</td>\n      <td>MathWorks</td>\n      <td>Matlab R2015a</td>\n      <td>https://www.mathworks.com</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Offline Sorter</td>\n      <td>Plexon</td>\n      <td>Offline Sorter</td>\n      <td>http://www.plexon.com/</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>ImageJ 1.48 c</td>\n      <td>ImageJ</td>\n      <td>ImageJ 1.48 c</td>\n      <td>https://imagej.nih.gov/ij/</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>SPSS Statistics 21</td>\n      <td>IBM</td>\n      <td>SPSS Statistics 21</td>\n      <td>https://www.ibm.com/analytics/us/en/technology/spss/</td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Cheetah 6</td>\n      <td>Neuralynx</td>\n      <td>Cheetah 6</td>\n      <td>http://neuralynx.com/</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Arduino Uno SMD</td>\n      <td>Arduino</td>\n      <td>A000073</td>\n      <td>A000073</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Digital Lynx 4SX</td>\n      <td>Neuralynx</td>\n      <td>Digital Lynx 4SX</td>\n      <td>http://neuralynx.com/</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Diode laser (473 nm)</td>\n      <td>Omicron</td>\n      <td>LuxX 473\u2013100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Electroporation device</td>\n      <td>BEX</td>\n      <td>CUY21EX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Electroporation tweezer-type paddles</td>\n      <td>Protech</td>\n      <td>CUY650-P5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Recording electrode (1 shank, 16 channels)</td>\n      <td>Neuronexus</td>\n      <td>A1 \u00d7 16\u20133 mm-703-A16</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Recording optrode (1 shank, 16 channels)</td>\n      <td>Neuronexus</td>\n      <td>A1 \u00d7 16\u20135 mm-703-OA16LP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Digital midgard precision current source</td>\n      <td>Stoelting</td>\n      <td>51595</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model and subject details\n\n#### Mice\n\nAll experiments were performed in compliance with the German laws and the guidelines of the European Union for the use of animals in research and were approved by the local ethical committee (111/12, 132/12). Timed-pregnant C57Bl/6J mice from the animal facility of the University Medical Center Hamburg-Eppendorf were housed individually in breeding cages at a 12 hr light/12 hr dark cycle and fed ad libitum. The day of vaginal plug detection was defined E0.5, while the day of birth was assigned as P0. Both female and male mice underwent light stimulation and multi-site electrophysiological recordings at P8-10 after transfection with light-sensitive proteins by IUE at E15.5. For monitoring of projections, tracers were injected at P7 and monitored in their distribution along the axonal tracts at P10. For specifically addressing interneurons by light, the Dlx5/6-Cre drive line (Tg(dlx5a-cre)1Mekk/J, Jackson Laboratory) was crossed with either ArchT (Ai40(RCL-ArchT/EGFP)-D, Jackson Laboratory) or ChETA (R26-CAG-LSL-2XChETA-tdTomato, Jackson Laboratory) reporter line.\n\n### Methods details\n\n#### Surgical procedures\n\n##### In utero electroporation\n\nStarting one day before and until two days after surgery, timed-pregnant C57Bl/6J mice received on a daily basis additional wet food supplemented with 2\u20134 drops Metacam (0.5 mg/ml, Boehringer-Ingelheim, Germany). At E15.5 randomly assigned pregnant mice were injected subcutaneously with buprenorphine (0.05 mg/kg body weight) 30 min before surgery. The surgery was performed on a heating blanket and toe pinch and breathing were monitored throughout. Under isoflurane anesthesia (induction: 5%, maintenance: 3.5%) the eyes of the dam were covered with eye ointment to prevent damage before the uterine horns were exposed and moistened with warm sterile phosphate buffered saline (PBS, 37\u00b0C). Solution containing 1.25 \u00b5g/\u00b5l DNA [pAAV-CAG-ChR2(E123T/T159C)\u22122A-tDimer2, or pAAV-CAG-tDimer2)] (Figure 5\u2014figure supplement 1A) and 0.1% fast green dye at a volume of 0.75\u20131.25 \u00b5l were injected into the right lateral ventricle of individual embryos using pulled borosilicate glass capillaries with a sharp and long tip. Plasmid DNA was purified with NucleoBond (Macherey-Nagel, Germany). 2A encodes for a ribosomal skip sentence, splitting the fluorescent protein tDimer2 from the opsin during gene translation. Two different IUE protocols were used to target pyramidal neurons in CA1 area of either dHP or i/vHP. To target dHP, each embryo within the uterus was placed between the electroporation tweezer-type paddles (5 mm diameter, Protech, TX, USA) that were oriented at a 25\u00b0 leftward angle from the midline and a 0\u00b0 angle downward from anterior to posterior. Electrode pulses (35 V, 50 ms) were applied five times at intervals of 950 ms controlled by an electroporator (CU21EX, BEX, Japan) (Figure 5\u2014figure supplement 1B(i)) (Baumgart and Grebe, 2015). To target i/vHP, a tri-polar approach was used (Szczurkowska et al., 2016). Each embryo within the uterus was placed between the electroporation tweezer-type paddles (5 mm diameter, both positive poles, Protech, TX, USA) that were oriented at 90\u00b0 leftward angle from the midline and a 0\u00b0 angle downward from anterior to posterior. A third custom build negative pole was positioned on top of the head roughly between the eyes. Electrode pulses (30 V, 50 ms) were applied six times at intervals of 950 ms controlled by an electroporator (CU21EX, BEX, Japan). By these means, neural precursor cells from the subventricular zone, which radially migrate into the HP, were transfected. Uterine horns were placed back into the abdominal cavity after electroporation. The abdominal cavity was filled with warm sterile PBS (37\u00b0C) and abdominal muscles and skin were sutured individually with absorbable and non-absorbable suture thread, respectively. After recovery, pregnant mice were returned to their home cages, which were half placed on a heating blanket for two days after surgery.\n\n##### Retrograde and anterograde tracing\n\nFor retrograde tracing, mice were injected at P7 with Fluorogold (Fluorochrome, LLC, USA) unilaterally into the PFC using iontophoresis. The pups were placed in a stereotactic apparatus and kept under anesthesia with isoflurane (induction: 5%, maintenance: 2.5%) for the entire procedure. A 10 mm incision of the skin on the head was performed with small scissors. The bone above the PFC (0.5 mm anterior to bregma, 0.3 mm right to the midline) was carefully removed using a syringe. A glass capillary (\u224820 \u00b5m tip diameter) was filled with \u22481 \u00b5L of 5% Fluorogold diluted in sterile water by capillary forces, and a silver wire was inserted such that it was in contact with the Fluorogold solution. For anterograde tracing, mice were injected at P7 with the anterograde tracer biotinylated dextran amine (BDA) (Thermo Fisher Scientific, USA) unilaterally into i/vHP using iontophoresis and surgery protocols as described above. The bone above i/vHP (0.7 mm anterior to lambda, 2.3 mm right to the midline) was carefully removed using a syringe. A glass capillary (\u224830 \u00b5m tip diameter) was filled with \u22481 \u00b5L of 5% BDA diluted in 0.125 M phosphate buffer by capillary forces, and a silver wire was inserted such that it was in contact with the BDA solution. For both anterograde and retrograde tracing, the positive pole of the iontophoresis device was attached to the silver wire, the negative one was attached to the skin of the neck. The capillary was carefully lowered into the PFC (\u22481.5 mm dorsal from the dura) or HP (\u22481.5 mm dorsal from the dura). Iontophoretically injection by applying anodal current to the pipette (6 s on/off current pulses of 6 \u00b5A) was done for 5 min. Following injection, the pipette was left in place for at least 5 min and then slowly retracted. The scalp was closed by application of tissue adhesive glue and the pups were left on a heating pad for 10\u201315 min to fully recover before they were given back to the mother. The pups were perfused at P10.\n\n##### Surgical preparation for acute electrophysiological recording and light delivery\n\nFor recordings in non-anesthetized state, 0.5% bupivacain/1% lidocaine was locally applied on the neck muscles. For recordings under anesthesia, mice were injected i.p. with urethane (1 mg/g body weight; Sigma-Aldrich, MO, USA) prior to surgery. For both groups, under isoflurane anesthesia (induction: 5%, maintenance: 2.5%) the head of the pup was fixed into a stereotaxic apparatus using two plastic bars mounted on the nasal and occipital bones with dental cement. The bone above the PFC (0.5 mm anterior to bregma, 0.5 mm right to the midline for layer V/VI), hippocampus (2.0 mm posterior to bregma, 1.0 mm right to the midline for dHP, 3.5 mm posterior to bregma, 3.5 mm right to the midline for i/vHP) was carefully removed by drilling a hole of\u00a0<0.5 mm in diameter. After a 10\u201320 min recovery period on a heating blanket mice were moved to the setup for electrophysiological recording. Throughout the surgery and recording session the mouse was positioned on a heating pad with the temperature kept at 37\u00b0C.\n\n##### Perfusion\n\nMice were anesthetized with 10% ketamine (aniMedica, Germany)/2% xylazine (WDT, Germany) in 0.9% NaCl solution (10 \u00b5g/g body weight, i.p.) and transcardially perfused with Histofix (Carl Roth, Germany) containing 4% paraformaldehyde for 30\u201340 min. Brains were postfixed in 4% paraformaldehyde for 24 hr.\n\n### Behavioral testing\n\n#### Examination of developmental milestones\n\nMouse pups were tested for their somatic development and reflexes at P2, P5 and P8. Weight, body and tail length were assessed. Surface righting reflex was quantified as time (max 30 s) until the pup turned over with all four feet on the ground after being placed on its back. Cliff aversion reflex was quantified as time (max 30 s) until the pup withdrew after snout and forepaws were positioned over an elevated edge. Vibrissa placing was rated positive if the pup turned its head after gently touching the whiskers with a toothpick.\n\n### Electrophysiology\n\n#### Electrophysiological recording\n\nA one-shank electrode (NeuroNexus, MI, USA) containing 1 \u00d7 16 recording sites (0.4\u20130.8 M\u03a9 impedance, 100 mm spacing) was inserted into the layer V/VI of PFC. One-shank optoelectrodes (NeuroNexus, MI, USA) containing 1 \u00d7 16 recordings sites (0.4\u20130.8 M\u03a9 impedance, 50 mm spacing) aligned with an optical fiber (105 mm diameter) ending 200 \u03bcm above the top recording site was inserted into either dHP or i/vHP. A silver wire was inserted into the cerebellum and served as ground and reference electrode. A recovery period of 10 min following insertion of electrodes before acquisition of data was provided. Extracellular signals were band-pass filtered (0.1\u20139,000 Hz) and digitized (32 kHz) with a multichannel extracellular amplifier (Digital Lynx SX; Neuralynx, Bozeman, MO, USA) and the Cheetah acquisition software (Neuralynx). Spontaneous (i.e. not induced by light stimulation) activity was recorded for 15 min at the beginning and end of each recording session as baseline activity. Only the baseline prior to stimulation epochs was used for data analysis. The position of recording electrodes in PL and CA1 area of dHP or i/vHP was confirmed after histological assessment post-mortem. For the analysis of prelimbic LFP, the recording site centered in PL was used, whereas for the analysis of spiking activity two channels above and two channels below this site were additionally considered. Recording site in cingulate or infralimbic sub-divisions of the PL were excluded from analysis. For the analysis of hippocampal LFP, the recording site located in str pyr,where sharp-waves reverse (Bitzenhofer and Hanganu-Opatz, 2014), was used to minimize any non-stationary effects of the large amplitude events. For the analysis of hippocampal firing, two channels below and two channels above this site were additionally considered.\n\n#### Light stimulation\n\nPulsed (laser on-off) light or ramp (linearly increasing power) stimulations\u00a0were performed with an arduino uno (Arduino, Italy) controlled diode laser (473 nm or 600 nm; Omicron, Austria). Laser power was adjusted to trigger neuronal spiking in response to\u00a0>25% of 3-ms-long light pulses at 16 Hz. Resulting light power was in the range of 20\u201340 mW/mm2 at the fiber tip. For each frequency used (4, 8 and 16 Hz), stimuli (3 ms pulse length, 3 s stimulation duration, 6 s inter stimulation interval) were repeated (30 times) in a randomized order.\n\n### Histology\n\n#### Immunohistochemistry\n\nBrains were sectioned coronally at 50 \u00b5m. Free-floating slices were permeabilized and blocked with PBS containing 0.2% Triton X 100 (Sigma-Aldrich, MO, USA), 10% normal bovine serum (Jackson Immuno Research, PA, USA) and 0.02% sodium azide. Subsequently, slices were incubated overnight with mouse monoclonal Alexa Fluor-488 conjugated antibody against NeuN (1:200, MAB377X, Merck Millipore, MA, USA) or rabbit polyclonal primary antibody against GABA (1:1,000, A2052; Sigma-Aldrich), followed by 2 hr incubation with Alexa Fluor-488 goat anti-rabbit IgG secondary antibody (1:500, A11008; Merck Millipore). Slices were transferred to glass slides and covered with Fluoromount (Sigma-Aldrich, MO, USA).\n\nFor 3.3\u2019-diaminobenzidie (DAB) staining sections (prepared as described above) were rinsed in PBS (0.125 M, pH 7.4\u20137.6) for 10 min, treated with peroxide solution (3% peroxide, 10% methanol in 0.125 M PB) for 10 min to quench any endogenous peroxidases within the tissue, and rinsed again. Subsequently, the sections were washed in PBS containing 0.5% Triton-X and incubated with avidin biotinylated enzyme complex (ABC, VECTASTAIN ABC Kit, USA) at room temperature or overnight at 4\u00b0C. After rinsing in Tris-HCl (pH 7.4), the sections were further incubated with DAB working buffer (DAB peroxidase substrate kit, Vector Laboratories, USA) at room temperature for 2\u201310 min. After the signal was detected, all sections were rinsed with Tris-HCl.\n\n#### Imaging\n\nWide field fluorescence was performed to reconstruct the recording electrode position in brain slices of electrophysiologically investigated pups and to localize tDimer2 expression in pups after IUE. High magnification images were acquired with a confocal microscope (DM IRBE, Leica, Germany) to quantify tDimer2 expression and immunopositive cells (1\u20134 brain slices/investigated mouse). For DAB staining, brightfield images were obtained using Zeiss imager M1 microscope (Zeiss, Oberkochen, Germany) and enhanced using the National Institutes of Health (NIH) Image program.\n\n### Quantification and statistical analysis\n\n#### Immunohistochemistry quantification\n\nAll images were similarly analyzed with ImageJ. For quantification of fluorogold tracing automatic cell counting was done using custom-written tools. To quantify tDimer2, NeuN and GABA-positive neurons, manual counting was performed, since the high neuronal density in str. pyr. prevented reliable automatic counting.\n\n#### Spectral analysis of LFP\n\nData were imported and analyzed offline using custom-written tools in the Matlab environment (MathWorks). Data were processed as follows: band-pass filtered (500\u20135,000 Hz) to analyze MUA and low-pass filtered (<1,400 Hz) using a third-order Butterworth filter before downsampling to 3.2 kHz to analyze LFP. All filtering procedures were performed in a manner preserving phase information.\n\n#### Detection of oscillatory activity\n\nThe detection and of discontinuous patterns of activity in the neonatal PL and HP were performed using a modified version of the previously developed algorithm for unsupervised analysis of neonatal oscillations (Cichon et al., 2014) and confirmed by visual inspection. Briefly, deflections of the root mean square of band-pass filtered signals (1\u2013100 Hz) exceeding a variance-depending threshold were assigned as network oscillations. The threshold was determined by a Gaussian fit to the values ranging from 0 to the global maximum of the root-mean-square histogram. If two oscillations occurred within 200 ms of each other, they were considered as one. Only oscillations lasting\u00a0>1 s was included.\n\n#### Detection of sharpwaves\n\nSharpwaves were detected by subtracting the filtered signal (1\u2013300 Hz) from the recording sites 100 \u00b5m above and 100 \u00b5m below the recording site in str. pyr. Sharpwaves were then detected as peaks above five times the standard deviation of the subtracted signal.\n\n#### Power spectral density\n\nPower spectral density was calculated using the Welch\u2019s method. Briefly, segments of the recorded signal were glued together (1 s segments for oscillatory activity; 300 ms segments for sharpwave pre/post comparison; 100 ms segments for ripple comparison; 3 s for light evoked activity) and power were then calculated using non-overlapping windows. Time\u2013frequency plots were calculated by transforming the data using Morlet continuous wavelet.\n\n#### Coherence\n\nCoherence was calculated using the imaginary coherency method (Nolte et al., 2004). Briefly, the imaginary coherence was calculated by taking the imaginary component of the cross-spectral density between the two signals and normalized by the power spectral density of each. The computation of the imaginary coherence C over frequency (f) for the power spectral density P of signal X and Y was performed according to the formula:\n\n$$\nC_{XY}f=Im\\frac{P_{XY}(f)^{2}}{P_{XX}fP_{YY}(f)}\n$$\n\n#### General partial directed coherence\n\ngPDC is based on linear Granger causality measure. The method attempts to describe the causal relationship between multivariate time series based on the decomposition of multivariate partial coherences computed from multivariate autoregressive models. The LFP signal was divided into segments containing the oscillatory activity. Signal was de-noised using wavelets with the Matlab wavelet toolbox. After de-noising, gPDC was calculated using the gPDC algorithm previously described (Baccala et al., 2007).\n\n#### Single unit activity analysis\n\nSUA was detected and clustered using Offline Sorter (Plexon, TC, USA). 1\u20134 single units were detected at each recording site. Subsequently, data were imported and analyzed using custom-written tools in the Matlab software (MathWorks). The firing rate temporally related to SPWs was calculated by aligning all units to the detected SPWs. For assessing the phase locking of units to LFP, we firstly used the Rayleigh test for non-uniformity of circular data to identify the units significantly locked to network oscillations. The phase was calculated by extracting the phase component using the Hilbert transform of the filtered signal at each detected spike. Spikes occurring in a 15 ms-long time window after the start of a light pulse were considered to be light-evoked. Stimulation efficacy was calculated as the probability of at least one spike occurring in this period.\n\n#### Statistical analysis\n\nStatistical analyses were performed using SPSS Statistics 21 (IBM, NY, USA) or Matlab. Data were tested for normal distribution by the Shapiro\u2013Wilk test. Normally distributed data were tested for significant differences (*p<0.05, **p<0.01 and ***p<0.001) using paired t-test, unpaired t-test or one-way repeated-measures analysis of variance with Bonferroni-corrected post hoc analysis. Not normally distributed data were tested with the nonparametric Mann\u2013Whitney U-test. The circular statistics toolbox was used to test for significant differences in the phase locking data. Data are presented as mean\u00a0\u00b1SEM. No statistical measures were used to estimate sample size since effect size was unknown. Investigators were not blinded to the group allocation during the experiments. Unsupervised analysis software was used if possible to preclude investigator biases. Summary of performed statistical analysis is summarized in Supplementary file 1.\n",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "7709125d-aee1-48be-a239-dc54d5271304",
+      "submission_id": "d48f33a8-1adb-4598-b0ed-0136bf6f0d7b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, University of Freiburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33158.022](https://doi.org/10.7554/eLife.33158.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Glutamatergic drive along the septo-temporal axis of hippocampus boosts prelimbic oscillations in the neonatal mouse\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Jonas-Frederic Sauer (Reviewer #3). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Ahlbeck et al. examines the early postnatal development of long-range projections between the hippocampus and the prelimbic cortex, particularly their role in driving oscillatory activity patterns in the prelimbic cortex of young mice. In this study the authors apply a broad set of techniques including electrophysiological recordings of local field potentials as well as single units, axonal tracing and optogenetic applications to examine first, what activity patterns are expressed in the developing dorsal and ventral hippocampus and second, whether glutamatergic drive originating in the hippocampus influences the activity in the prelimbic area. The study shows that the ventral hippocampus is anatomically strongly coupled to the prelimbic area and drives theta- and \u03b2/\u03b3-modulated activity patterns in the prelimbic cortex. In contrast, the dorsal hippocampus shows locally higher theta power but is less involved in this drive.\n\nEssential revisions:\n\n1) All reviewers agreed that this is a very interesting study that nicely builds upon the authors previous work and provides strong evidence for a topographic drive for prefrontal activity located in the v/i portion of the neonatal hippocampus. However, one of the main criticisms was that the current set of experiments does not directly prove the hypothesis that 'theta in the HP drives the oscillatory entrainment of the local circuits in the PFC'. It is not entirely clear whether the number of optogenetically activated HP pyramidal cells reflects the number of cells active during a natural oscillation event. Furthermore, during optogenetic stimulation, the spikes might be more tightly synchronized compared to naturally occurring oscillations, which might favor downstream synchronization.\n\nRather, the manuscript shows that driving a substantial proportion of HP pyramidal neurons at theta frequency induces PFC oscillations. Thus, a causal proof requires additional experiments, such as specific silencing of the ventral hippocampus (optogenetically or pharmacologically). Without this experiment the relationships remain only correlational or modulatory.\n\n2) More details are required on where from the LFP recordings were made since the amplitude and waveforms are strongly dependent on cortical and hippocampal depth. The authors should perform CSD analysis to analyze the amplitude and the power of theta and ripple oscillations both in the hippocampus and the prefrontal cortex.\n\n3) Please provide averaged single optostimulus \u2013 triggered LFP/unit PETH in the PFC \u2013 as functional evidence for the connections.\n\n4) One of the emerging questions from the study is whether periodic ontogenetic activation of ventral hippocampal principal cells has a similar effect on the activity patterns in the prelimbic area than in the adult mice. Moreover, it remains unclear why the 8 Hz ontogenetic stimulation of hippocampal principal cells is more efficient than 4 and/or 16 Hz stimulation in driving prefrontal activity patterns? These questions can be addressed in the Discussion section of the revised manuscript.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Glutamatergic drive along the septo-temporal axis of hippocampus boosts prelimbic oscillations in the neonatal mouse\" for further consideration at eLife. Your revised article has been favorably evaluated by Gary Westbrook (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe figures and the main body of the text have been improved according to the comments, but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Error in the text, subsection \u201cTheta activity within dorsal and intermediate / ventral hippocampus differently entrains the neonatal prelimbic cortex\u201d, second paragraph: Figure 1\u2014figure supplement 2D and not Figure 2\u2014figure supplement 2D.\n\n2) There seems to be a confusion about the numbering of the Figure supplements. The included references to Figure 2\u2014figure supplement 2D (subsection \u201cTheta activity within dorsal and intermediate / ventral hippocampus differently entrains the neonatal prelimbic cortex\u201d, second paragraph) and Figure 3\u2014figure supplement 2E (subsection \u201cSPWs-mediated output of intermediate / ventral but not dorsal hippocampus times network oscillations and spiking response in the neonatal prelimbic cortex\u201d, first paragraph) both point to Figure 1\u2014figure supplement 2. To meet eLife\u2019s guidelines on figures that should be linked to a main figure, I would suggest to place the content of Figure 1\u2014figure supplement 2D in a new Figure 2\u2014figure supplement 1, and Figure 1\u2014figure supplement 2E in a new Figure 3\u2014figure supplement 1.\n\n3) References to 'Figure S2A' and 'Figure S2B' in the subsection \u201cNeonatal dorsal and intermediate / ventral hippocampus are differently entrained in discontinuous patterns of oscillatory activity\u201d should be corrected to 'Figure 1\u2014figure supplement 2A' and 2B', respectively.\n\n4) Detailed and rigorous statistical information should be supplied in an excel table.\n",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5949f79d-a58c-4e0d-a8b6-301b29e7030a",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C1",
+      "claim": "Theta bursts in i/vHP had significantly higher occurrence (8.1 \u00b1 0.2 oscillations/min, n = 103 mice) compared to dHP (5.2 \u00b1 0.3 oscillations/min, n = 41 mice; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The theta bursts in i/vHP had significantly higher occurrence (i/vHP: 8.1 \u00b1 0.2 oscillations/min, n = 103 mice vs. dHP: 5.2 \u00b1 0.3 oscillations/min, n = 41 mice; p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurements from extracellular recordings in neonatal mice showing statistically significant differences in theta burst occurrence between hippocampal subdivisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ec29afb0-dddf-4e56-9ed1-bf34256f3b9c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C2",
+      "claim": "Theta bursts in i/vHP had larger amplitude (110.6 \u00b1 5.6 \u00b5V) compared to dHP (92.9 \u00b1 2.6 \u00b5V; p=0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "The theta bursts in i/vHP had significantly higher occurrence (i/vHP: 8.1 \u00b1 0.2 oscillations/min, n = 103 mice vs. dHP: 5.2 \u00b1 0.3 oscillations/min, n = 41 mice; p<0.001), larger amplitude (i/vHP:110.6 \u00b1 5.6 \u00b5V vs. dHP: 92.9 \u00b1 2.6 \u00b5V; p=0.015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurements of theta burst amplitude from LFP recordings in both hippocampal subdivisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "134c5d40-7511-47e6-a1c3-ed5c7f314a2f",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C3",
+      "claim": "Theta bursts in i/vHP had shorter duration (3.5 \u00b1 0.1 s) compared to dHP (4.3 \u00b1 0.1 s, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "larger amplitude (i/vHP:110.6 \u00b1 5.6 \u00b5V vs. dHP: 92.9 \u00b1 2.6 \u00b5V; p=0.015), and shorter duration (i/vHP: 3.5 \u00b1 0.1 s vs. dHP: 4.3 \u00b1 0.1 s, p<0.001) when compared with dHP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal measurements of theta burst events showing statistically significant differences in duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "b2304ad7-e66b-47b3-b840-1d1a41f23604",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C4",
+      "claim": "Theta band power was significantly stronger in dHP (relative power: 13.0 \u00b1 1.3, n = 41 mice) compared to i/vHP (10.3 \u00b1 0.5, n = 103 mice; p=0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation of the spectral composition of theta bursts revealed significant differences within theta band with a stronger activation of dHP (relative power: dHP: 13.0 \u00b1 1.3, n = 41 mice; i/vHP: 10.3 \u00b1 0.5, n = 103 mice; p=0.026)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power spectral analysis of theta frequency oscillations showing statistically significant differences between hippocampal subdivisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f2d4203e-aba1-4453-aae1-b46999a313ba",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C5",
+      "claim": "Beta frequency power (12\u201330 Hz) was similar between dHP (15.0 \u00b1 1.6) and i/vHP (13.2 \u00b1 0.7, p=0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the faster frequency components were similar along the septo-temporal axis (relative power: 12\u201330 Hz: dHP, 15.0 \u00b1 1.6, n = 41 mice; i/vHP, 13.2 \u00b1 0.7 n = 103 mice, p=0.22",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power spectral analysis showing no statistically significant difference in beta band power.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "699801f3-4535-4a89-9faf-c2aff41fe90b",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C6",
+      "claim": "Gamma frequency power (30\u2013100 Hz) was similar between dHP (6.3 \u00b1 0.6) and i/vHP (5.2 \u00b1 0.3, p=0.073).",
+      "claim_type": "EXPLICIT",
+      "source": "30\u2013100 Hz: dHP, 6.3 \u00b1 0.6, n = 41 mice; i/vHP: 5.2 \u00b1 0.3, n = 103 mice; p=0.073)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power spectral analysis showing no statistically significant difference in gamma band power.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "32fae938-2531-4c15-8360-640f15b67961",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C7",
+      "claim": "Pyramidal neurons in i/vHP fired at higher rates (0.45 \u00b1 0.01 Hz, n = 557 units from 103 mice) than in dHP (0.35 \u00b1 0.02 Hz, n = 158 units from 41 mice; p=0.025).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, pyramidal neurons in i/vHP fired at higher rates (0.45 \u00b1 0.01 Hz, n = 557 units from 103 mice) than in the dHP (0.35 \u00b1 0.02 Hz, n = 158 units from 41 mice; p=0.025)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Single unit activity measurements showing statistically significant differences in firing rates between hippocampal subdivisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "affb8518-d938-433e-b69a-7a146e89be83",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C8",
+      "claim": "SPWs in neonatal HP were more prominent in dHP (712.8 \u00b1 31.5 \u00b5V, n = 41 mice) compared to i/vHP (223.8 \u00b1 6.3 \u00b5V, n = 103 mice, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "SPW in neonatal HP were more prominent in the dHP (712.8 \u00b1 31.5 \u00b5V, n = 41 mice) when compared with those occurring in the i/vHP (223.8 \u00b1 6.3 \u00b5V, n = 103 mice, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Amplitude measurements of sharp-wave events showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "fbb47681-95e7-4806-b7e4-e65eaf486d11",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C9",
+      "claim": "SPW occurrence increased along the septo-temporal axis with higher occurrence in i/vHP (8.6 \u00b1 0.2, n = 103 mice) compared to dHP (6.6 \u00b1 0.5, n = 41 mice, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "yet their occurrence increased along the septo-temporal axis (dHP: 6.6 \u00b1 0.5, n = 41 mice; i/vHP: 8.6 \u00b1 0.2, n = 103 mice, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency measurements of SPW events showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "bb0680bd-e56f-4139-8e38-fbdd568b9ee1",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C10",
+      "claim": "The power of ripples decreased along the septo-temporal axis with higher power in dHP (24.4 \u00b1 3.3, n = 41 mice) compared to i/vHP (6.1 \u00b1 0.60, n = 103 mice, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The power of ripples decreased along the septo-temporal axis (relative power: dHP, 24.4 \u00b1 3.3, n = 41 mice; i/vHP, 6.1 \u00b1 0.60, n = 103 mice, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power spectral analysis of ripple frequency oscillations showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "55d57e6a-7757-466e-9188-1e79dc664122",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C11",
+      "claim": "Ripple-related spiking was stronger in dHP (peak firing: 1.13 \u00b1 0.09 Hz, n = 232 units) compared to i/vHP (0.84 \u00b1 0.03, n = 670, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the ripple-related spiking was stronger in dHP when compared with i/vHP (peak firing: dHP: 1.13 \u00b1 0.09 Hz, n = 232 units; i/vHP 0.84 \u00b1 0.03, n = 670, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Single unit activity measurements aligned to ripple events showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f95c9de9-0fb8-4570-b420-f22e8da87ea5",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C12",
+      "claim": "The majority of prelimbic and hippocampal oscillations co-occurred within a narrow time window.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of prelimbic and hippocampal oscillations co-occurred within a narrow time window",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal analysis of simultaneous recordings from PL and HP showing temporal correspondence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "2a4e6037-b706-4531-9838-f8ca3f8be73d",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C13",
+      "claim": "PL-i/vHP coupling was stronger (4\u201312 Hz: 0.17 \u00b1 0.0069; 12\u201330 Hz: 0.31 \u00b1 0.011; 30\u2013100 Hz: 0.11 \u00b1 0.0069, n = 103 mice) compared to PL-dHP (4\u201312 Hz: 0.12 \u00b1 0.0081; 12\u201330 Hz: 0.18 \u00b1 0.0094; 30\u2013100 Hz: 0.084 \u00b1 0.004, n = 41 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed a stronger coupling for PL-i/vHP (4\u201312 Hz: 0.17 \u00b1 0.0069; 12\u201330 Hz: 0.31 \u00b1 0.011; 30\u2013100 Hz: 0.11 \u00b1 0.0069, n = 103 mice) when compared with PL-dHP (4\u201312 Hz: 0.12 \u00b1 0.0081; 12\u201330 Hz: 0.18 \u00b1 0.0094; 30\u2013100 Hz: 0.084 \u00b1 0.004, n = 41 mice)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Coherence analysis of simultaneous LFP recordings showing differences in coupling strength.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "1f649c80-0ac7-4b4e-b16e-d2074146655e",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C14",
+      "claim": "The information flow from either dorsal or intermediate/ventral HP to PL was significantly stronger than in the opposite direction, independent of the position along the septo-temporal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of the position along the septo-temporal axis, the information flow in theta or beta frequency band from either dorsal or intermediate/ventral HP to PL was significantly stronger than in the opposite direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Generalized partial directed coherence analysis showing directional information flow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "498d2edc-c254-4c2b-868e-f711620b27c2",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C15",
+      "claim": "Mean gPDC values for i/vHP \u2192 PL (0.069 \u00b1 0.003, n = 103 mice) were significantly higher (p<0.001) compared to dHP \u2192 PL (0.053 \u00b1 0.003, n = 41 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "However, mean gPDC values for i/vHP \u2192 PL were significantly (p<0.001) higher (0.069 \u00b1 0.003, n = 103 mice) when compared with those for dHP \u2192 PL (0.053 \u00b1 0.003, n = 41 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative gPDC analysis showing statistically significant differences in directed information flow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "eb9f874f-4255-461a-8616-f89f916a7e0b",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C16",
+      "claim": "The stronger information flow from i/vHP to PL was confined to theta frequency range and was not detected for 12\u201330 Hz frequencies (i/vHP \u2192 PL: 0.048 \u00b1 0.001; dHP \u2192 PL: 0.043 \u00b1 0.002, p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger information flow from i/vHP to PL was confined to theta frequency range and was not detected for 12\u201330 Hz frequencies (i/vHP \u2192 PL: 0.048 \u00b1 0.001; dHP \u2192 PL: 0.043 \u00b1 0.002, p=0.16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Frequency-specific gPDC analysis showing no significant difference in beta band.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8b5ef378-e421-4560-bd12-3ab67b6fd6a2",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C17",
+      "claim": "Almost 20% of clustered units (52 out of 310 units) were locked to theta phase in i/vHP, whereas only 6.5% of units (3 out of 46 units) were timed by dHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost 20% of clustered units (52 out of 310 units) were locked to theta phase in i/vHP, whereas only 6.5% of units (3 out of 46 units) were timed by dHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phase-locking analysis of prelimbic units to hippocampal theta oscillations showing differences in coupling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f03b7fad-c013-4d5e-8d39-686cc8c9f4c6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C18",
+      "claim": "Prelimbic activation induced by SPWs-ripples from i/vHP was significantly stronger than from dHP as reflected by higher power in theta (PL for dHP: 186.9 \u00b1 12.5 \u00b5V2; PL for i/vHP: 249.5 \u00b1 14.5 \u00b5V2, p=0.0088), beta (PL for dHP: 34.3 \u00b1 3.3 \u00b5V2; PL for i/vHP: 48.1 \u00b1 2.8 \u00b5V2, p=0.0049), and gamma (PL for dHP: 11.3 \u00b1 0.9 \u00b5V2; PL for i/vHP: 17.4 \u00b1 1.2 \u00b5V2, p=0.0026) frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "This prelimbic activation is significantly stronger when induced by SPWs-ripples emerging in i/vHP than in dHP as reflected by the significantly higher power of oscillatory activity in theta (PL for dHP: 186.9 \u00b1 12.5 \u00b5V2; PL for i/vHP: 249.5 \u00b1 14.5 \u00b5V2, p=0.0088), beta (PL for dHP: 34.3 \u00b1 3.3 \u00b5V2; PL for i/vHP: 48.1 \u00b1 2.8 \u00b5V2, p=0.0049), and gamma (PL for dHP: 11.3 \u00b1 0.9 \u00b5V2; PL for i/vHP: 17.4 \u00b1 1.2 \u00b5V2, p=0.0026) frequency band",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis of prelimbic oscillations aligned to hippocampal SPWs showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f2c21ea1-04b1-4afb-a826-f21ecc4aff5c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C19",
+      "claim": "The induced firing in i/vHP peaked (\u224890 ms) after SPWs-ripples and remained significantly (p<0.001) elevated for several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "While the induced firing in i/vHP peaked (\u224890 ms) after SPWs-ripples and remained significantly (p<0.001) elevated for several seconds, a less prominent peak was observed following SPW-ripples in dHP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal analysis of prelimbic firing rates aligned to hippocampal SPWs showing sustained elevation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "06a1cf3e-a5ed-45ee-9e34-2339276bde17",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C20",
+      "claim": "The density of retrogradely labeled cells in CA1 area of i/vHP projecting to PL (3.29*103 \u00b1 0.19*103 cells/mm2) was significantly higher (p<0.001) than in dHP (0.15*103 \u00b1 0.074*103 cells/mm2).",
+      "claim_type": "EXPLICIT",
+      "source": "However, their density was significantly different (p<0.001); whereas in dHP very few cells were retrogradely labeled (0.15*103 \u00b1 0.074*103 cells/mm2), a large proportion of pyramidal-shaped cells in the CA1 area of i/vHP projects to PL (3.29*103 \u00b1 0.19*103 cells/mm2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of retrogradely labeled neurons after Fluorogold injection showing statistically significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "87e8b1ef-35a5-4e51-baa8-ba718df23dff",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C21",
+      "claim": "In 7 out of 9 mice, anterogradely-labeled axons from i/vHP CA1 area were found in the PL, preferentially within its deep layers V and VI.",
+      "claim_type": "EXPLICIT",
+      "source": "In 7 out of 9 mice anterogradely-labeled axons were found in the PL, preferentially within its deep layers V and VI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Anterograde tracing with BDA showing anatomical projections from i/vHP to PL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "42cc1afb-02fe-45ec-8d8d-7c9b06f9e2b7",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C22",
+      "claim": "A substantial proportion of neurons in str. pyr. of CA1 area were transfected by IUE (dHP: 18.3 \u00b1 1.0%; n = 36 slices from 13 mice; i/vHP: 14.5 \u00b1 1.5%, n = 12 slices from 11 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify tDimer2, NeuN and GABA-positive neurons, manual counting was performed, since the high neuronal density in str. pyr. prevented reliable automatic counting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of tDimer2-positive neurons in histological sections after IUE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "201904f3-f9ee-4cc3-88a5-73217e1358c7",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C23",
+      "claim": "The shape of tDimer2-positive neurons, the orientation of primary dendrites, and the absence of positive staining for GABA confirmed that ChR2(ET/TC) was integrated exclusively into cell lineages of pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of tDimer2-positive neurons, the orientation of primary dendrites, and the absence of positive staining for GABA confirmed that the light-sensitive protein ChR2(ET/TC) was integrated exclusively into cell lineages of pyramidal neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunohistochemical analysis showing cell-type specificity of transfection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "6d9721bc-48ca-4d15-8b46-1279444dd519",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C24",
+      "claim": "IUE caused significant reduction of litter size (non-electroporated 6.5 \u00b1 0.7 pups/litter, electroporated: 4.5 \u00b1 0.5 pups/litter, p=0.017).",
+      "claim_type": "EXPLICIT",
+      "source": "While IUE caused significant reduction of litter size (non-electroporated 6.5 \u00b1 0.7 pups/litter, electroporated: 4.5 \u00b1 0.5 pups/litter, p=0.017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification of litter sizes showing statistically significant effect of IUE procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ff413ec3-6e1a-4216-9049-83a68019619a",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C25",
+      "claim": "All investigated pups had similar body length, tail length, and weight during early postnatal period regardless of IUE or opsin transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "all investigated pups had similar body length, tail length, and weight during early postnatal period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Developmental measurements showing no differences in somatic growth parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "29670ec1-f245-491d-96ee-ccb5711fc6a9",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C26",
+      "claim": "Vibrissa placing, surface righting and cliff aversion reflexes were not affected by IUE or transfection of neurons with opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "Vibrissa placing, surface righting and cliff aversion reflexes were also not affected by IUE or transfection of neurons with opsins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Behavioral reflex testing showing no differences between groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "dde0a309-6abf-4aa3-9a62-3be7dd1e2310",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C27",
+      "claim": "Blue light pulses (473 nm, 20\u201340 mW/mm2) at different frequencies (4, 8, 16 Hz) led shortly (<10 ms) after the stimulus to precisely timed firing of transfected neurons in both dHP and i/vHP.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light pulses (473 nm, 20\u201340 mW/mm2) at different frequencies (4, 8, 16 Hz) led shortly (<10 ms) after the stimulus to precisely timed firing of transfected neurons in both dHP and i/vHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Electrophysiological recordings showing light-evoked neuronal responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "c033f006-2d91-4d80-9731-b3e82aa51f72",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C28",
+      "claim": "For both hippocampal sub-divisions the efficiency of firing similarly decreased with augmenting frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "For both hippocampal sub-divisions the efficiency of firing similarly decreased with augmenting frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of spike probability at different stimulation frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8d4faf4b-f390-4916-b872-016dba646382",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C29",
+      "claim": "Firing in i/vHP timed by light at 8 Hz, but not at 4 Hz or 16 Hz, caused significant augmentation of oscillatory activity in all frequency bands (theta: p=0.039, beta: p=0.030, gamma: p=0.0036) in the PL.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing in i/vHP timed by light at 8 Hz, but not at 4 Hz or 16 Hz, caused significant (theta: p=0.039, beta: p=0.030, gamma: p=0.0036) augmentation of oscillatory activity in all frequency bands as reflected by the higher power in the PL during the stimulation when compared with the time window before the train of pulses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis of prelimbic oscillations during optogenetic stimulation showing frequency-specific effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "c2366c8d-58c2-48c9-b27d-5f6179f52f97",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C30",
+      "claim": "Stimulation by light of dHP left the prelimbic activity unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, stimulation by light of dHP left the prelimbic activity unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis showing no significant changes in prelimbic activity during dHP stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "498c1fa0-e7f3-4f6d-9fcd-01ca241b6fd6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C31",
+      "claim": "In opsin-free animals, stimulation of dHP and i/vHP led to no significant changes in the oscillatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In opsin-free animals, stimulation of dHP and i/vHP led to no significant changes in the oscillatory activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Control experiments showing specificity of optogenetic effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "65425a3d-8de4-4416-848e-094fb9fb4879",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C32",
+      "claim": "Blue light stimulation (473 nm) confined to i/vHP of Dlx5/6\u2013ChETA mice (n = 19) led to a significant reduction of hippocampal power in all frequency bands (theta: p=0.024, beta: p=0.018, gamma: p=0.044).",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light stimulation (473 nm) confined to i/vHP of Dlx5/6\u2013ChETA mice (n = 19) led to a significant reduction of hippocampal power in all frequency bands (theta: p=0.024, beta: p=0.018, gamma: p=0.044).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis during optogenetic activation of interneurons showing reduction in oscillatory activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "06c66a64-7c15-405c-8d51-27374da5f40b",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C33",
+      "claim": "Activation of interneurons in i/vHP caused oscillatory activity in PL to diminish (theta: p=0.027, beta: p=0.077, gamma: p=0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the oscillatory activity in PL diminished (theta: p=0.027, beta: p=0.077, gamma: p=0.019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis of prelimbic activity during interneuron activation showing reduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "2d5d28da-c788-4300-bc6f-4f10135e9072",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C34",
+      "claim": "Silencing of interneurons in Dlx5/6-ArchT mice (n = 13) by yellow light (600 nm) caused augmentation of oscillatory activity both within i/vHP (theta: p<0.001, beta: p=0.0012, gamma: p<0.001) and PL (theta: p<0.001, beta: p<0.001, gamma: p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of interneurons in Dlx5/6-ArchT mice (n = 13) by yellow light (600 nm) had an opposite effect and caused augmentation of oscillatory activity both within i/vHP (theta: p<0.001, beta: p=0.0012, gamma: p<0.001) and PL (theta: p<0.001, beta: p<0.001, gamma: p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Power analysis during optogenetic silencing of interneurons showing augmentation in oscillatory activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8a7dbac8-3664-403f-8798-7240ae51b386",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C35",
+      "claim": "The discontinuous hippocampal theta bursts have been proposed to drive the generation of neonatal prefrontal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "The discontinuous hippocampal theta bursts have been proposed to drive the generation of neonatal prefrontal oscillations, yet the cellular substrate of these early interactions is still unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous hypothesis in the field based on correlative evidence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "bf7d618d-65dc-4647-85cb-f92c818b9982",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C36",
+      "claim": "Despite stronger theta and ripples power in dorsal hippocampus, the prefrontal cortex is mainly coupled with intermediate/ventral hippocampus by phase-locking of neuronal firing via dense direct axonal projections.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that despite stronger theta and ripples power in dorsal hippocampus, the prefrontal cortex is mainly coupled with intermediate/ventral hippocampus by phase-locking of neuronal firing via dense direct axonal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of multiple experimental findings including power analysis, phase-locking analysis, and anatomical tracing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "acd10ca8-bd17-4b06-810c-0668c3c7bc92",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C37",
+      "claim": "Theta band-confined activation by light of pyramidal neurons in intermediate/ventral but not dorsal CA1 that were transfected by in utero electroporation with high-efficiency channelrhodopsin boosts prefrontal oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta band-confined activation by light of pyramidal neurons in intermediate/ventral but not dorsal CA1 that were transfected by in utero electroporation with high-efficiency channelrhodopsin boosts prefrontal oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of optogenetic manipulation experiments showing causal effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "1c1b2b3a-3faf-401b-b018-5c62e2c04770",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C38",
+      "claim": "Learning and memory critically depend on oscillations within theta frequency band (4\u201312 Hz) that functionally couple the medial prefrontal cortex (PFC) and hippocampus (HP) in adult rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, learning and memory critically depend on oscillations within theta frequency band (4\u201312 Hz) that functionally couple the medial prefrontal cortex (PFC) and hippocampus (HP) (Siapas and Wilson, 1998; Benchenane et al., 2010; Brincat and Miller, 2015; Backus et al., 2016; Eichenbaum, 2017; Wirt and Hyman, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "a56943cc-bc8f-4812-841f-ed9ffd1bd764",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C39",
+      "claim": "Network oscillations during development have a highly discontinuous and fragmented structure with bursts of activity alternating with 'silent' periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Network oscillations during development have a highly discontinuous and fragmented structure with bursts of activity alternating with 'silent' periods (Hanganu et al., 2006; Seelke and Blumberg, 2010; Shen and Colonnese, 2016; Luhmann and Khazipov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "bf6a5240-8db0-4d7a-a611-e7a183988006",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C40",
+      "claim": "Spindle bursts synchronize large cortical and subcortical networks within theta-alpha frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common oscillatory pattern, spindle bursts, synchronizes large cortical and subcortical networks within theta-alpha frequency range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about developmental oscillatory patterns based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "bba708c6-d0e4-4877-bb4c-100306a4b8a6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C41",
+      "claim": "Spindle bursts are accompanied by slow delta waves as well as by faster discharges (beta and gamma oscillations) that account for local activation of circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "It is accompanied by slow delta waves as well as by faster discharges (beta and gamma oscillations) that account for local activation of circuits (Brockmann et al., 2011; Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "46931a3f-f739-47ff-9f8c-5c96df2ceea5",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C42",
+      "claim": "In sensory systems, spindle bursts have been proposed to act as a template facilitating the formation of cortical maps.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory systems, spindle bursts have been proposed to act as a template facilitating the formation of cortical maps (Dupont et al., 2006; Hanganu et al., 2006; Tolner et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about proposed function supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "e1f78b71-974f-4fde-b8c3-ecccb54f1fe0",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C43",
+      "claim": "Early gamma oscillations seem to control the organization of thalamocortical topography.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas early gamma oscillations seem to control the organization of thalamocortical topography (Minlebaev et al., 2011; Khazipov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about proposed function supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "3413f519-4dac-42cd-94b8-cc08db7cdaee",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C44",
+      "claim": "Few lesion studies suggested that prefrontal-hippocampal communication during development might be necessary for the maturation of episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Few lesion studies, yet without selectivity for specific activity patterns, suggested that prefrontal-hippocampal communication during development might be necessary for the maturation of episodic memory (Kr\u00fcger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous findings supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f7d829e8-4cd7-4ebb-939e-784a47d51024",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C45",
+      "claim": "In sensory systems, endogenous activation of sensory periphery drives entrainment of local circuitry through gap junction coupling as well as glutamatergic and GABAergic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas in sensory systems, endogenous activation of sensory periphery drives entrainment of local circuitry through gap junction coupling as well as glutamatergic and GABAergic transmission (Dupont et al., 2006; Hanganu et al., 2006; Minlebaev et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about mechanisms supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8d667aed-9579-4ca5-ac40-960218271d69",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C46",
+      "claim": "In developing prefrontal-hippocampal networks, the excitatory drive from the HP has been proposed to activate a complex layer- and frequency-specific interplay in the PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "in developing prefrontal-hippocampal networks, the excitatory drive from the HP has been proposed to activate a complex layer- and frequency-specific interplay in the PFC (Brockmann et al., 2011; Bitzenhofer and Hanganu-Opatz, 2014; Bitzenhofer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "6b0fc3ef-a754-430a-a3ed-d7c34d6bcc13",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C47",
+      "claim": "The methodological difficulties related to area-, layer- and cell type-specific manipulations at neonatal age have been overcome only recently.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recently the methodological difficulties related to area-, layer- and cell type-specific manipulations at neonatal age have been overcome (Bitzenhofer et al., 2017a; Bitzenhofer et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about recent methodological advances supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "02c9edbb-b080-4015-9977-23827e797b4f",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C48",
+      "claim": "The local neuronal interplay generating beta-gamma oscillations in the PFC has been elucidated by recent methods.",
+      "claim_type": "EXPLICIT",
+      "source": "By these means, the local neuronal interplay generating beta-gamma oscillations in the PFC has been elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about recent findings based on cited methodological advances.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "0bdd5597-b858-41fa-9733-d0ab66558756",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C49",
+      "claim": "The hippocampal CA1 area drives the oscillatory entrainment of PFC at neonatal age.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously proposed that the hippocampal CA1 area drives the oscillatory entrainment of PFC at neonatal age (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous hypothesis from the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "47207074-4d96-4991-8a52-092b52863e38",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C50",
+      "claim": "Different organization and function of dHP vs. i/vHP of adults have been extensively characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "While different organization and function of dHP vs. i/vHP of adults have been extensively characterized (Thompson et al., 2008; Dong et al., 2009; Patel et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "6f2dfb18-2ceb-41dc-97b1-7a8b132ce864",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C51",
+      "claim": "The patterns of structural and functional maturation of dHP vs. i/vHP are still poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "their patterns of structural and functional maturation are still poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "2d33ea1d-7815-4de2-aded-109bca1c2bda",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C52",
+      "claim": "Urethane anesthesia led to an overall decrease of amplitude and power of oscillatory activity when compared to the non-anesthetized state.",
+      "claim_type": "EXPLICIT",
+      "source": "While urethane anesthesia led to an overall decrease of amplitude and power of oscillatory activity when compared to the non-anesthetized state of the same group of pups",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of recordings under different conditions showing effects of anesthesia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "54d5172d-9606-4d58-9725-f9d5ed59d95c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C53",
+      "claim": "The firing rate and timing as well as the synchrony and interactions within prefrontal-hippocampal networks were similar during both anesthetized and non-anesthetized states.",
+      "claim_type": "EXPLICIT",
+      "source": "the firing rate and timing as well as the synchrony and interactions within prefrontal-hippocampal networks were similar during both states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of multiple parameters between anesthetized and non-anesthetized states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ada59b97-8503-40e3-a2ae-a1656b12b9a2",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C54",
+      "claim": "The entire investigation was performed at the age of initiation of coupling between HP and PFC, that is, P8-10.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire investigation was performed at the age of initiation of coupling between HP and PFC, that is, P8-10 (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about experimental design based on previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "47b89bce-50aa-4250-bd3d-bf01ca39cc74",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C55",
+      "claim": "The CA1 area was characterized by discontinuous oscillations with main frequency in theta band (4\u201312 Hz) and irregular low amplitude beta-gamma band components, which have been previously categorized as theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of the position along the dorsal-ventral axis, the CA1 area was characterized by discontinuous oscillations with main frequency in theta band (4\u201312 Hz) and irregular low amplitude beta-gamma band components, which have been previously categorized as theta oscillations (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of observed activity patterns with reference to previous categorization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "448b5013-f700-4b56-a094-31621be77191",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C56",
+      "claim": "Theta oscillations were accompanied by prominent sharp-waves (SPWs) reversing across the pyramidal layer (str. pyr.) and by strong MUA discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "They were accompanied by prominent sharp-waves (SPWs) reversing across the pyramidal layer (str. pyr.) and by strong MUA discharge",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of observed activity patterns from recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8c27e825-2c8b-47c7-ae7c-d0d724692aa0",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C58",
+      "claim": "The power of theta oscillations in the adult HP was found to be substantially reduced in the i/vHP when compared with dHP.",
+      "claim_type": "EXPLICIT",
+      "source": "The power of the most prominent activity pattern in the adult HP, the theta oscillations, as well as the theta timing of the neuronal firing was found to be substantially reduced in the i/vHP when compared with dHP (Royer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings in adult animals supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "5d438a4b-7c94-4e4a-a908-7d5c91eb7858",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C59",
+      "claim": "The precise spatial representation deteriorates along the septo-temporal axis in adults, since theta activity is directly linked to place cell representation.",
+      "claim_type": "EXPLICIT",
+      "source": "By these means, the precise spatial representation deteriorates along the septo-temporal axis, since theta activity is directly linked to place cell representation (O'Keefe and Recce, 1993; Geisler et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about relationship between theta activity and spatial representation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "926b5715-6a89-49be-b600-4fa510a67ed6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C60",
+      "claim": "In adults, SPWs are more frequent and ripples have higher amplitude and frequency in the ventral HP than in the dHP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SPWs are more frequent and ripples have higher amplitude and frequency in the ventral HP than in the dHP (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings in adult animals supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "76e6a322-8907-4e89-96ea-5ff559e8c5ce",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C61",
+      "claim": "Cholinergic projections of different origin in the dHP and i/vHP may contribute to the observed differences in theta dynamics along the septo-temporal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic projections of different origin in the dHP and i/vHP (Stewart and Fox, 1990; Amaral et al., 2007) as well as maturational differences in the intrinsic resonant properties of hippocampal neurons and notable gradients of parvalbumin immunoreactivity along the septo-temporal axis (Honeycutt et al., 2016) may contribute to the observed differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on cited anatomical and physiological differences.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "08745013-a17e-4df0-a896-fb5286a04624",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C62",
+      "claim": "Maturational differences in the intrinsic resonant properties of hippocampal neurons and notable gradients of parvalbumin immunoreactivity along the septo-temporal axis may contribute to the observed differences in theta dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic projections of different origin in the dHP and i/vHP (Stewart and Fox, 1990; Amaral et al., 2007) as well as maturational differences in the intrinsic resonant properties of hippocampal neurons and notable gradients of parvalbumin immunoreactivity along the septo-temporal axis (Honeycutt et al., 2016) may contribute to the observed differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on cited physiological differences.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "374317d8-c217-42b1-85c7-68597dc2ddf9",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C63",
+      "claim": "It is still an issue of debate when exactly ripples emerge in the developing hippocampus, although it is obvious that they appear later than theta bursts and SPWs, most likely towards the end of the first and during second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still an issue of debate when exactly ripples emerge in the developing hippocampus, although it is obvious that they appear later than theta bursts and SPWs, most likely towards the end of the first and during second postnatal week (Buhl and Buzs\u00e1ki, 2005; Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ongoing debate in the field with citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "5d185b90-b339-4c01-9e0e-3c996904935e",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C64",
+      "claim": "The underlying mechanisms of ripples at neonatal age remain largely unknown and need to be related to age-dependent changes in gap junctional coupling and GABA switch.",
+      "claim_type": "EXPLICIT",
+      "source": "Their underlying mechanisms at neonatal age remain also largely unknown and need to be related to age-dependent changes in gap junctional coupling and GABA switch (Ben-Ari et al., 1989; Zhang et al., 1990; Yuste et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about knowledge gap with citations to relevant developmental mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "a7405e31-a6cf-4dab-b081-8084b2489edc",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C65",
+      "claim": "At adult age the communication between PFC and HP has been investigated in relationship with memory tasks both under physiological and disease-related conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "At adult age the communication between PFC and HP has been investigated in relationship with memory tasks both under physiological and disease-related conditions (Sirota et al., 2008; Adhikari et al., 2010; Sigurdsson et al., 2010; Eichenbaum, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "9164d877-06d1-42ef-90bd-96e4cb204b7d",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C66",
+      "claim": "Depending on the phase of memory processing, the prefrontal-hippocampal coupling via oscillatory synchrony has been found to be either unidirectional from the HP to PFC or bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the phase of memory processing, the prefrontal-hippocampal coupling via oscillatory synchrony has been found to be either unidirectional from the HP to PFC or bidirectional (Siapas et al., 2005; Hallock et al., 2016; Place et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "e13b6115-3dcd-4a09-8d3d-1ca7fa211feb",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C67",
+      "claim": "Both theta and gamma network oscillations contribute to the functional long-range coupling between PFC and HP in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Both theta and gamma network oscillations contribute to the functional long-range coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "89da967a-70b4-4cbc-a6f5-89a18ec7b927",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C68",
+      "claim": "The model of prefrontal-hippocampal communication has been initially built based on experimental evidence correlating the temporal organization of neuronal and network activity in the two brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of prefrontal-hippocampal communication has been initially built based on experimental evidence correlating the temporal organization of neuronal and network activity in the two brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the historical development of understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "bf318f81-bf9b-425f-b1bc-f55f0b214f61",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C69",
+      "claim": "Light-driven inhibition of axonal terminals has been used for dissecting the directionality of interactions between PFC and HP during different phases of memory retrieval in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In a seminal study, Spellman and colleagues used light-driven inhibition of axonal terminals for dissecting the directionality of interactions between PFC and HP during different phases of memory retrieval (Spellman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous methodological approach supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "b586e78d-56f6-4625-98bd-72d3641a328b",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C70",
+      "claim": "At neonatal age, discontinuous theta bursts in i/vHP are temporally correlated to the network oscillations in the PFC and time the prefrontal firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that at neonatal age, long before full maturation of memory and attentional abilities, discontinuous theta bursts in i/vHP are temporally correlated to the network oscillations in the PFC and time the prefrontal firing (Brockmann et al., 2011; Hartung et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about previous findings from the authors' work supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "03bb9134-3c19-4c32-8270-7f73b19b7961",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C71",
+      "claim": "The temporal delay of 10\u201320 ms between prefrontal and hippocampal spike trains suggested that hippocampal theta drives the oscillatory entrainment of the local circuits in the PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the temporal delay of 10\u201320 ms between prefrontal and hippocampal spike trains as well as the estimated directionality of information flow between the two areas suggested that hippocampal theta drives the oscillatory entrainment of the local circuits in the PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from temporal analysis of neuronal activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "d0e959ba-fc6b-4e82-8406-52dfdc5b6398",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C72",
+      "claim": "Frequency-specific effect of 8 Hz stimulation might result from intrinsic resonance properties of neurons mediated through hyperpolarization-activated cyclic nucleotide-gated (HCN) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such frequency-specific effect might result from intrinsic resonance properties of neurons mediated through hyperpolarization-activated cyclic nucleotide-gated (HCN) channels (Hu et al., 2002; Stark et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on cited literature about neuronal properties.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "b959d592-5dc3-437c-98ff-c0734ac26154",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C73",
+      "claim": "Oscillatory activity in cortical regions may be entrained due to the rhythmic theta-band output from the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously proposed that oscillatory activity in cortical regions may be entrained due to the rhythmic theta-band output from the hippocampus (Stark et al., 2013; Colgin, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "36f4fa77-b9fc-4966-8f15-f54f2643367f",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C74",
+      "claim": "Viral transduction, which usually requires 10\u201314 days for stable expression, is only of limited usability to investigate local network interactions during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking into account that viral transduction, which usually requires 10\u201314 days for stable expression, is only of limited usability to investigate local network interactions during development, IUE seems to represent the method of choice for manipulating circuits at this early age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological limitations based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "c8ad491a-4ae6-401d-95b9-3ed9c04a204e",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C75",
+      "claim": "IUE enables targeting of precursor cells of neuronal and glial subpopulations, based on their distinct spatial and temporal patterns of generation in the ventricular zone.",
+      "claim_type": "EXPLICIT",
+      "source": "IUE enables targeting of precursor cells of neuronal and glial subpopulations, based on their distinct spatial and temporal patterns of generation in the ventricular zone (Tabata and Nakajima, 2001; Borrell et al., 2005; Niwa et al., 2010; Hoerder-Suabedissen and Moln\u00e1r, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological capabilities supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "d435f752-bd85-4002-88a5-7f8887b46dff",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C76",
+      "claim": "IUE based on two electrode paddles enabled selective targeting of pyramidal neurons in the CA1 area of dHP in more than half of the pups per litter.",
+      "claim_type": "EXPLICIT",
+      "source": "IUE based on two electrode paddles enabled selective targeting of pyramidal neurons in the CA1 area of dHP in more than half of the pups per litter (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about methodological success rate with reference to supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "7e089447-aafb-4b59-bc9a-758291cb0e34",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C77",
+      "claim": "Two-electrode IUE completely failed (0 out of 32 mice) to target pyramidal neurons in i/vHP.",
+      "claim_type": "EXPLICIT",
+      "source": "but it completely failed (0 out of 32 mice) to target these neurons in i/vHP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological limitation based on experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "92ba0183-7ce3-473f-bf00-7ce016786ce1",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C78",
+      "claim": "The modified IUE protocol based on three electrodes allows reliable transfection at brain locations that are only able to be sporadically targeted by two electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol, although more complicated and time consuming, allows reliable transfection at brain locations that are only able to be sporadically targeted by two electrodes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological improvement based on experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "385bf7b5-6e6c-40c0-aa1c-0609dc318b83",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C79",
+      "claim": "Abundant literature links theta frequency coupling within prefrontal-hippocampal networks to cognitive performance and emotional states of adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Abundant literature links theta frequency coupling within prefrontal-hippocampal networks to cognitive performance and emotional states of adults (Adhikari et al., 2010; Xu and S\u00fcdhof, 2013; Spellman et al., 2015; Hallock et al., 2016; Place et al., 2016; Ye et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f756d255-538c-418f-a280-df834a807da2",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C80",
+      "claim": "The maturation of cognitive abilities is a process even more protracted than sensory development and starts during second-third postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "The maturation of cognitive abilities is a process even more protracted than sensory development and starts during second-third postnatal week (Hanganu-Opatz, 2010; Cirelli and Tononi, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about developmental timeline supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "a71cc912-af23-4d0e-884f-b11f4f3fb177",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C81",
+      "claim": "Recognition memory can be easily monitored at early age and seems to critically rely on structurally and functionally intact prefrontal-hippocampal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these abilities, such as recognition memory, can be easily monitored at early age and seems to critically rely on structurally and functionally intact prefrontal-hippocampal networks (Kr\u00fcger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about behavioral capabilities and their neural substrates supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "7b6114a1-e8e3-4322-a1e5-4f736c9262a3",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C82",
+      "claim": "Following the general rules of activity-dependent plasticity, the precisely timed excitatory inputs from the i/vHP to the PL might facilitate the wiring of local prefrontal circuitry and enable the refinement of behaviorally relevant communication scaffold between the two regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the general rules of activity-dependent plasticity (Hubel et al., 1977; Huberman et al., 2006; Xu et al., 2011; Yasuda et al., 2011), the precisely timed excitatory inputs from the i/vHP to the PL might facilitate the wiring of local prefrontal circuitry and enable the refinement of behaviorally relevant communication scaffold between the two regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on established principles of neural development supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8c578bfc-92d8-4c8a-a16b-072a6797a90c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C83",
+      "claim": "The prefrontal activity driven by projection neurons in the HP acts as a template, having a pre-adaptive function that facilitates the tuning of circuits with regard to future conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By these means, the prefrontal activity driven by projection neurons in the HP act as a template, having a pre-adaptive function that facilitates the tuning of circuits with regard to future conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed functional role based on inference from experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "d36eb569-60ec-4468-9b72-ef150a3d962c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C84",
+      "claim": "The dHP, which receives dense projections from the entorhinal cortex, is mainly involved in spatial navigation in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the dHP, which receives dense projections from the entorhinal cortex (Witter and Amaral, 2004), is mainly involved in spatial navigation (O'Keefe and Nadel, 1978; Moser et al., 1995; Moser et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about functional specialization in adults supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "7496b110-8cf7-4d6b-8d24-8e84d04f5139",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C85",
+      "claim": "The ventral part of HP receives strong cholinergic and dopaminergic innervation and contributes to processing of non-spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ventral part receives strong cholinergic and dopaminergic innervation (Witter et al., 1989; Pitk\u00e4nen et al., 2000) and contributes to processing of non-spatial information (Bannerman et al., 2003; Bast et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about anatomical connectivity and functional specialization supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "854ab13b-dbf8-45d9-b5fd-e73418cc72e3",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C86",
+      "claim": "The direct unilateral projections from hippocampal CA1 area to PL have been extensively investigated in adult brain and are present already at neonatal age.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct unilateral projections from hippocampal CA1 area to PL have been extensively investigated in adult brain (Swanson, 1981; Jay and Witter, 1991; Vertes et al., 2007) and are present already at neonatal age (Brockmann et al., 2011; Hartung et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about anatomical connectivity supported by citations to both adult and developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "b54c7787-630a-4fe6-869c-227e4ff1014b",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C87",
+      "claim": "The used light power did not cause local tissue heating that might interfere with neuronal spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous experimental data and modeling work showed that the used light power did not cause local tissue heating that might interfere with neuronal spiking (Stujenske et al., 2015; Bitzenhofer et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about control for potential confound supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "2aa0b92e-b433-467a-bcf1-c1787dfaa4c6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C88",
+      "claim": "For stimulation frequencies >16 Hz, the firing lost the precise timing by light, most likely due to the immaturity of neurons and their projections.",
+      "claim_type": "EXPLICIT",
+      "source": "For stimulation frequencies >16 Hz, the firing lost the precise timing by light, most likely due to the immaturity of neurons and their projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from optogenetic experiments with proposed explanation based on developmental considerations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "11161e32-7179-4848-a8a2-d25d62e32a9e",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C89",
+      "claim": "Rhythmic firing of prelimbic neurons was not detected after light activation of hippocampal subdivisions, most likely because hippocampal axons were rather sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhythmic firing of prelimbic neurons was not detected after light activation of hippocampal subdivisions, most likely because hippocampal axons were rather sparse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from optogenetic experiments with proposed explanation based on anatomical considerations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "90a36503-532d-46f5-9367-e2c49e86f61c",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C90",
+      "claim": "Already at neonatal age, prefrontal oscillations are generated shortly (~100 ms) after hippocampal SPWs-ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous recordings from neonatal CA1 area either in dHP or i/vHP and PL showed that already at neonatal age, prefrontal oscillations are generated shortly (~100 ms) after hippocampal SPWs-ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal analysis of simultaneous recordings showing time-locked relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "87d7709f-8f9e-481b-8bb1-1e8bf0ee12d4",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C91",
+      "claim": "The level of coherence between PL and HP is a genuine feature of investigated neonatal networks and not the result of non-specific and conduction synchrony, since only the imaginary component of the coherence spectrum was considered, which excludes zero time-lag synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous investigations, this level of coherence is a genuine feature of investigated neonatal networks and not the result of non-specific and conduction synchrony, since we considered only the imaginary component of the coherence spectrum, which excludes zero time-lag synchronization (Nolte et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological consideration to exclude confounds, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "f52845f5-9c4c-46d8-8315-ba498219d6c6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "claim_id": "C92",
+      "claim": "The investigation focused on PL, since in adults it is the prefrontal subdivision with the most dense innervation from HP.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire investigation focused on PL, since in adults it is the prefrontal subdivision with the most dense innervation from HP (Jay and Witter, 1991; Vertes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for experimental design based on anatomical knowledge from adult studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7324cb25-a307-4920-8118-5d848fa673e9",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Neonatal dorsal and intermediate/ventral hippocampus exhibit distinct patterns of theta burst activity. i/vHP shows higher occurrence (8.1\u00b10.2 vs 5.2\u00b10.3 oscillations/min, p<0.001), larger amplitude (110.6\u00b15.6 vs 92.9\u00b12.6 \u00b5V, p=0.015), and shorter duration (3.5\u00b10.1 vs 4.3\u00b10.1 s, p<0.001) of theta bursts compared to dHP. However, theta band power is stronger in dHP (13.0\u00b11.3 vs 10.3\u00b10.5, p=0.026), while beta and gamma band powers are similar between regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide comprehensive quantitative characterization of oscillatory activity differences along the septo-temporal axis with appropriate statistical testing (n=103 mice for i/vHP, n=41 for dHP). The findings are internally consistent and supported by spectral analysis data shown in Figure 1. Sample sizes are adequate and statistical significance is properly reported with p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "c49814c8-035c-46ca-a09d-c19c2ad73918",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sharp-wave and ripple activity differs along the hippocampal septo-temporal axis. Pyramidal neurons in i/vHP fire at higher rates (0.45\u00b10.01 vs 0.35\u00b10.02 Hz, p=0.025). SPWs are more prominent in dHP (712.8\u00b131.5 vs 223.8\u00b16.3 \u00b5V, p<0.001) but occur more frequently in i/vHP (8.6\u00b10.2 vs 6.6\u00b10.5, p<0.001). Ripple power and ripple-related spiking are stronger in dHP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 demonstrate consistent patterns of SPW-ripple differences with appropriate statistical testing. The inverse relationship between SPW amplitude (higher in dHP) and occurrence (higher in i/vHP) is well-documented with adequate sample sizes (n=557 units from i/vHP, n=158 from dHP for firing rates). All measurements include proper statistical comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ebbeae83-0b26-47be-aff3-c389a5e46089",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Intermediate/ventral hippocampus shows stronger functional coupling with prelimbic cortex than dorsal hippocampus. PL-i/vHP coherence is higher across all frequency bands compared to PL-dHP. Directed information flow (gPDC) from i/vHP to PL (0.069\u00b10.003) is significantly stronger than from dHP to PL (0.053\u00b10.003, p<0.001), specifically in theta frequency range. Phase-locking analysis shows 20% of prelimbic units locked to i/vHP theta versus only 6.5% to dHP theta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 provide converging evidence from multiple analytical approaches (coherence, gPDC, phase-locking) demonstrating stronger i/vHP-PL coupling. The use of imaginary coherence (C91) appropriately controls for volume conduction artifacts. Sample sizes are adequate and statistical tests are properly applied. The frequency-specific nature of the effect (theta but not beta, C16) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "0534ebeb-2e06-4b0d-9322-cd4e997f0270",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SPWs-ripples from i/vHP induce stronger prelimbic activation than those from dHP. Prelimbic oscillatory power increases significantly more after i/vHP SPWs across theta (249.5\u00b114.5 vs 186.9\u00b112.5 \u00b5V\u00b2, p=0.0088), beta (48.1\u00b12.8 vs 34.3\u00b13.3 \u00b5V\u00b2, p=0.0049), and gamma (17.4\u00b11.2 vs 11.3\u00b10.9 \u00b5V\u00b2, p=0.0026) bands. Prelimbic firing peaks ~90 ms after i/vHP SPWs and remains elevated for several seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C90 demonstrate temporal relationships between hippocampal SPWs and prelimbic responses with appropriate statistical testing. The ~100 ms delay is consistent with monosynaptic or short polysynaptic transmission. Power analysis across multiple frequency bands provides comprehensive characterization. Sample sizes are adequate (n=41 for dHP, n=103 for i/vHP).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "e0e6df8f-2c8d-4329-8543-37fbc80082e7",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anatomical tracing reveals dense direct projections from i/vHP CA1 to prelimbic cortex. Retrograde tracing shows significantly higher density of projection neurons in i/vHP (3.29\u00d710\u00b3\u00b10.19\u00d710\u00b3 cells/mm\u00b2) compared to dHP (0.15\u00d710\u00b3\u00b10.074\u00d710\u00b3 cells/mm\u00b2, p<0.001). Anterograde tracing confirms axonal projections from i/vHP to PL layers V and VI in 7 of 9 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 provide anatomical evidence supporting functional connectivity differences. Both retrograde (Fluorogold) and anterograde (BDA) tracing methods converge on the same conclusion. The >20-fold difference in projection neuron density is statistically robust. The success rate for anterograde tracing (7/9 mice) is reasonable for this technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In utero electroporation successfully transfects pyramidal neurons in hippocampal CA1 without affecting normal development. Transfection efficiency is 18.3\u00b11.0% in dHP and 14.5\u00b11.5% in i/vHP. Cell-type specificity is confirmed by morphology and absence of GABA staining. IUE reduces litter size (4.5\u00b10.5 vs 6.5\u00b10.7 pups/litter, p=0.017) but does not affect somatic growth parameters or reflexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 establish the validity of the optogenetic approach. Transfection efficiency is quantified with adequate sample sizes (n=36 slices from 13 mice for dHP, n=12 slices from 11 mice for i/vHP). Cell-type specificity is verified through multiple methods (morphology, GABA immunostaining). Developmental controls are appropriate, though the litter size reduction is a notable limitation that is properly reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic activation of i/vHP pyramidal neurons at 8 Hz, but not 4 or 16 Hz, causally drives prelimbic oscillations. Light stimulation (473 nm, 20-40 mW/mm\u00b2) evokes precisely timed firing (<10 ms latency) in both dHP and i/vHP. Only 8 Hz stimulation of i/vHP significantly increases prelimbic power across theta (p=0.039), beta (p=0.030), and gamma (p=0.0036) bands. dHP stimulation and opsin-free controls show no effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 provide causal evidence for i/vHP driving prelimbic activity with appropriate controls (dHP stimulation, opsin-free animals, multiple frequencies). The frequency-specificity (8 Hz but not 4 or 16 Hz) is a critical finding supported by statistical testing. Sample sizes are adequate (n=22 for dHP, n=9 for i/vHP). The lack of effect from dHP stimulation despite successful neuronal activation strengthens the conclusion about anatomical specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "8cb2eec3-eaa2-4976-966c-d139148d7625",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Interneuron manipulation in i/vHP bidirectionally modulates prelimbic activity. Optogenetic activation of Dlx5/6+ interneurons reduces oscillatory power in both i/vHP and PL across frequency bands. Conversely, silencing interneurons with ArchT increases power in both regions (all p<0.001 for i/vHP, p<0.001 for PL theta and gamma).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 demonstrate bidirectional control with appropriate genetic targeting (Dlx5/6-Cre line). The opposite effects of activation (ChETA) versus silencing (ArchT) provide strong evidence for specificity. Sample sizes are adequate (n=19 for ChETA, n=13 for ArchT). Statistical significance is properly reported, though beta band effect during activation is marginal (p=0.077).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "97f480f3-b5fb-4f27-90df-4429680d4546",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Urethane anesthesia reduces oscillatory amplitude and power but preserves network interactions. While anesthesia decreases overall activity levels, firing rate, timing, synchrony, and prefrontal-hippocampal interactions remain similar between anesthetized and non-anesthetized states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 address an important methodological consideration. The comparison between anesthetized and non-anesthetized states in the same animals (Figure 1\u2014figure supplement 1) provides appropriate validation. The preservation of network relationships despite reduced amplitude justifies the use of anesthesia for some experiments, though this is a limitation for interpreting absolute values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "fdeba987-20c7-41a8-a5c9-f3557ee2cbf0",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A modified three-electrode IUE protocol enables reliable transfection of i/vHP pyramidal neurons. Standard two-electrode IUE successfully targets dHP in >50% of pups but completely fails to target i/vHP (0/32 mice). The three-electrode configuration allows reliable i/vHP transfection, though it is more complex and time-consuming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 describe critical methodological development. The complete failure of two-electrode approach for i/vHP (0/32 mice) and success of three-electrode method is clearly documented. This technical advance was essential for the causal experiments. The acknowledgment of increased complexity is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "93654186-064f-4dbd-82ed-eda5cc89d801",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite stronger theta and ripple power in dorsal hippocampus, the prefrontal cortex is mainly coupled with intermediate/ventral hippocampus through phase-locking of neuronal firing via dense direct axonal projections. Theta band-confined optogenetic activation of i/vHP, but not dHP, pyramidal neurons boosts prefrontal oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 represent the main conclusions integrating multiple lines of evidence (electrophysiology, anatomy, optogenetics). The apparent paradox\u2014stronger theta in dHP but stronger coupling with i/vHP\u2014is resolved by demonstrating denser anatomical projections and causal optogenetic effects. This synthesis is well-supported by the grouped claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ef5e130e-a84d-4bf3-8b32-13d88c57e67e",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High-frequency optogenetic stimulation (>16 Hz) fails to evoke precisely timed firing, likely due to neuronal immaturity. Rhythmic prelimbic firing is not detected after hippocampal stimulation, possibly due to sparse axonal projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 describe negative findings with speculative explanations. While the observations are clearly stated, the proposed mechanisms (neuronal immaturity, sparse projections) are not directly tested. These are reasonable interpretations but remain speculative. The lack of rhythmic prelimbic firing is an important observation that constrains mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "682d84ca-9c4f-4b42-91bc-ed4ba86a8ab2",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Proposed mechanisms for observed differences include differential cholinergic innervation, maturational differences in intrinsic neuronal properties, parvalbumin gradients, and HCN channel-mediated resonance at 8 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61, C62, and C72 propose mechanisms based on cited literature but do not provide direct experimental evidence. These are reasonable hypotheses supported by prior work, but they remain speculative in the context of this study. The frequency-specificity of 8 Hz stimulation (C72) is an interesting observation that warrants further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    },
+    {
+      "id": "ffbad737-2651-4fdb-9978-f2b1d0641e30",
+      "content_id": "3ae03f6b-cfa5-4636-b697-5864a1ecc522",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that precisely timed excitatory inputs from i/vHP to PL facilitate wiring of prefrontal circuitry through activity-dependent plasticity, acting as a template with pre-adaptive function for future cognitive abilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83 present a developmental hypothesis based on general principles of activity-dependent plasticity. While conceptually appealing and grounded in established principles (cited references), this functional interpretation is not directly tested. The study demonstrates early coupling but does not assess long-term consequences for circuit maturation or behavior. This remains an important hypothesis requiring future testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:12:03.036389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5949f79d-a58c-4e0d-a8b6-301b29e7030a",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "ec29afb0-dddf-4e56-9ed1-bf34256f3b9c",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "134c5d40-7511-47e6-a1c3-ed5c7f314a2f",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "b2304ad7-e66b-47b3-b840-1d1a41f23604",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "f2d4203e-aba1-4453-aae1-b46999a313ba",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "699801f3-4535-4a89-9faf-c2aff41fe90b",
+      "result_id": "7324cb25-a307-4920-8118-5d848fa673e9"
+    },
+    {
+      "claim_id": "32fae938-2531-4c15-8360-640f15b67961",
+      "result_id": "c49814c8-035c-46ca-a09d-c19c2ad73918"
+    },
+    {
+      "claim_id": "affb8518-d938-433e-b69a-7a146e89be83",
+      "result_id": "c49814c8-035c-46ca-a09d-c19c2ad73918"
+    },
+    {
+      "claim_id": "fbb47681-95e7-4806-b7e4-e65eaf486d11",
+      "result_id": "c49814c8-035c-46ca-a09d-c19c2ad73918"
+    },
+    {
+      "claim_id": "bb0680bd-e56f-4139-8e38-fbdd568b9ee1",
+      "result_id": "c49814c8-035c-46ca-a09d-c19c2ad73918"
+    },
+    {
+      "claim_id": "55d57e6a-7757-466e-9188-1e79dc664122",
+      "result_id": "c49814c8-035c-46ca-a09d-c19c2ad73918"
+    },
+    {
+      "claim_id": "f95c9de9-0fb8-4570-b420-f22e8da87ea5",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "2a4e6037-b706-4531-9838-f8ca3f8be73d",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "1f649c80-0ac7-4b4e-b16e-d2074146655e",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "498d2edc-c254-4c2b-868e-f711620b27c2",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "eb9f874f-4255-461a-8616-f89f916a7e0b",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "8b5ef378-e421-4560-bd12-3ab67b6fd6a2",
+      "result_id": "ebbeae83-0b26-47be-aff3-c389a5e46089"
+    },
+    {
+      "claim_id": "f03b7fad-c013-4d5e-8d39-686cc8c9f4c6",
+      "result_id": "0534ebeb-2e06-4b0d-9322-cd4e997f0270"
+    },
+    {
+      "claim_id": "f2c21ea1-04b1-4afb-a826-f21ecc4aff5c",
+      "result_id": "0534ebeb-2e06-4b0d-9322-cd4e997f0270"
+    },
+    {
+      "claim_id": "90a36503-532d-46f5-9367-e2c49e86f61c",
+      "result_id": "0534ebeb-2e06-4b0d-9322-cd4e997f0270"
+    },
+    {
+      "claim_id": "06a1cf3e-a5ed-45ee-9e34-2339276bde17",
+      "result_id": "e0e6df8f-2c8d-4329-8543-37fbc80082e7"
+    },
+    {
+      "claim_id": "87e8b1ef-35a5-4e51-baa8-ba718df23dff",
+      "result_id": "e0e6df8f-2c8d-4329-8543-37fbc80082e7"
+    },
+    {
+      "claim_id": "42cc1afb-02fe-45ec-8d8d-7c9b06f9e2b7",
+      "result_id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79"
+    },
+    {
+      "claim_id": "201904f3-f9ee-4cc3-88a5-73217e1358c7",
+      "result_id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79"
+    },
+    {
+      "claim_id": "6d9721bc-48ca-4d15-8b46-1279444dd519",
+      "result_id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79"
+    },
+    {
+      "claim_id": "ff413ec3-6e1a-4216-9049-83a68019619a",
+      "result_id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79"
+    },
+    {
+      "claim_id": "29670ec1-f245-491d-96ee-ccb5711fc6a9",
+      "result_id": "a9378ca4-8fb8-43b3-b7d0-9c2d9819eb79"
+    },
+    {
+      "claim_id": "dde0a309-6abf-4aa3-9a62-3be7dd1e2310",
+      "result_id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6"
+    },
+    {
+      "claim_id": "c033f006-2d91-4d80-9731-b3e82aa51f72",
+      "result_id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6"
+    },
+    {
+      "claim_id": "8d4faf4b-f390-4916-b872-016dba646382",
+      "result_id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6"
+    },
+    {
+      "claim_id": "c2366c8d-58c2-48c9-b27d-5f6179f52f97",
+      "result_id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6"
+    },
+    {
+      "claim_id": "498c1fa0-e7f3-4f6d-9fcd-01ca241b6fd6",
+      "result_id": "acb9d1f5-8b92-464a-b4bc-7295fa3479c6"
+    },
+    {
+      "claim_id": "65425a3d-8de4-4416-848e-094fb9fb4879",
+      "result_id": "8cb2eec3-eaa2-4976-966c-d139148d7625"
+    },
+    {
+      "claim_id": "06c66a64-7c15-405c-8d51-27374da5f40b",
+      "result_id": "8cb2eec3-eaa2-4976-966c-d139148d7625"
+    },
+    {
+      "claim_id": "2d5d28da-c788-4300-bc6f-4f10135e9072",
+      "result_id": "8cb2eec3-eaa2-4976-966c-d139148d7625"
+    },
+    {
+      "claim_id": "2d33ea1d-7815-4de2-aded-109bca1c2bda",
+      "result_id": "97f480f3-b5fb-4f27-90df-4429680d4546"
+    },
+    {
+      "claim_id": "54d5172d-9606-4d58-9725-f9d5ed59d95c",
+      "result_id": "97f480f3-b5fb-4f27-90df-4429680d4546"
+    },
+    {
+      "claim_id": "d435f752-bd85-4002-88a5-7f8887b46dff",
+      "result_id": "fdeba987-20c7-41a8-a5c9-f3557ee2cbf0"
+    },
+    {
+      "claim_id": "7e089447-aafb-4b59-bc9a-758291cb0e34",
+      "result_id": "fdeba987-20c7-41a8-a5c9-f3557ee2cbf0"
+    },
+    {
+      "claim_id": "92ba0183-7ce3-473f-bf00-7ce016786ce1",
+      "result_id": "fdeba987-20c7-41a8-a5c9-f3557ee2cbf0"
+    },
+    {
+      "claim_id": "bf7d618d-65dc-4647-85cb-f92c818b9982",
+      "result_id": "93654186-064f-4dbd-82ed-eda5cc89d801"
+    },
+    {
+      "claim_id": "acd10ca8-bd17-4b06-810c-0668c3c7bc92",
+      "result_id": "93654186-064f-4dbd-82ed-eda5cc89d801"
+    },
+    {
+      "claim_id": "2aa0b92e-b433-467a-bcf1-c1787dfaa4c6",
+      "result_id": "ef5e130e-a84d-4bf3-8b32-13d88c57e67e"
+    },
+    {
+      "claim_id": "11161e32-7179-4848-a8a2-d25d62e32a9e",
+      "result_id": "ef5e130e-a84d-4bf3-8b32-13d88c57e67e"
+    },
+    {
+      "claim_id": "76e6a322-8907-4e89-96ea-5ff559e8c5ce",
+      "result_id": "682d84ca-9c4f-4b42-91bc-ed4ba86a8ab2"
+    },
+    {
+      "claim_id": "08745013-a17e-4df0-a896-fb5286a04624",
+      "result_id": "682d84ca-9c4f-4b42-91bc-ed4ba86a8ab2"
+    },
+    {
+      "claim_id": "d0e959ba-fc6b-4e82-8406-52dfdc5b6398",
+      "result_id": "682d84ca-9c4f-4b42-91bc-ed4ba86a8ab2"
+    },
+    {
+      "claim_id": "7b6114a1-e8e3-4322-a1e5-4f736c9262a3",
+      "result_id": "ffbad737-2651-4fdb-9978-f2b1d0641e30"
+    },
+    {
+      "claim_id": "8c578bfc-92d8-4c8a-a16b-072a6797a90c",
+      "result_id": "ffbad737-2651-4fdb-9978-f2b1d0641e30"
+    }
+  ],
+  "comparisons": []
+}

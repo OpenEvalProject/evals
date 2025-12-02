@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "A novel single-cell microscopy assay was developed to quantitatively measure long-range DSB end resection rates in living S. pombe cells. The assay uses a LacO/LacI-GFP array adjacent to an HO endonuclease cut site, where resection through the array causes progressive loss of GFP signal, while Rad52-mCherry loading marks DSB formation. The assay measures resection from ~100-300 nt (after initiation) through 13.9 kb at rates of 7.6 kb/hr (median) in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assay design is well-documented with multiple validation experiments (C37, C38, C42, C43, C48, C55) showing specificity, reproducibility, and minimal artifacts. Quantitative calibrations establish detection thresholds (C46, C47, C51), and the measured WT resection rate (C52) is consistent with prior studies while being somewhat faster, which is explained by the assay measuring only long-range resection after Rad52 loading (C53, C54). The assay's capabilities and limitations are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Exo1 is the primary nuclease responsible for long-range resection in WT S. pombe, with the Rqh1/Dna2 pathway playing a secondary role. Loss of Exo1 severely impairs resection, preventing completion through the 10.3 kb LacO array within 5 hours and causing defects in both early resection (~300 nt) and Rad52 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support Exo1's dominant role: exo1\u0394 cells show persistent LacO/LacI-GFP foci (C42), resection rates <2.8 kb/hr (C56), strong inhibition at 300 nt from the DSB (C57), and defective Rad52 loading (C58). These observations are consistent with prior knowledge (C40, C41) and demonstrate that the assay can distinguish between resection pathways. The conclusion that Exo1 is required for early post-initiation resection (C59) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of Crb2 (53BP1 orthologue) or Rev7 significantly increases long-range resection rates. Crb2\u0394 cells show median resection rates of 13.9 kb/hr with some cells reaching ~40 kb/hr, while rev7\u0394 cells show median rates of 10.4 kb/hr. This increased resection is independent of Rev7's role in translesion synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased resection rates in crb2\u0394 and rev7\u0394 cells are well-documented through both microscopy (C62, C63, C64, C65) and orthogonal qPCR validation (C69). The control showing Rev3 does not affect resection (C67) confirms this is a distinct function of Rev7. DSB induction is unaffected by Rev7 loss (C70), ruling out indirect effects. The quantitative measurements are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Crb2 and Rev7 specifically inhibit the RecQ helicase (Rqh1)-dependent resection pathway rather than Exo1-dependent resection. The rapid resection in crb2\u0394 or rev7\u0394 cells is entirely Exo1-independent but completely dependent on Rqh1, and can achieve rates >20 kb/hr\u2014approximately twice as fast as Exo1-dependent resection. This explains why Rqh1 plays only a minor role in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis analysis provides strong evidence: rapid resection in crb2\u0394 or rev7\u0394 cells is Exo1-independent (C71) but Rqh1-dependent (C72), and rev7\u0394 rescues the growth defect of exo1\u0394 cells (C73, C74). The hyper-resection rates >20 kb/hr (C78) demonstrate RecQ helicases are more capable than Exo1 (C79). The model that Crb2/Rev7 enforce Exo1-dependent resection by repressing Rqh1 (C77, C80, C81) is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The role of Rqh1 in rapid resection in crb2\u0394 cells is less clear than in rev7\u0394 cells. While the average resection rate in crb2\u0394 cells is not statistically different from crb2\u0394rqh1\u0394 cells (p=0.16), many crb2\u0394rqh1\u0394 cells show extended resection durations beyond the observation window, suggesting Rqh1 is still required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statistical analysis (C75) shows no significant difference when considering only precisely determined events, but this may be due to limited statistical power. The observation that many crb2\u0394rqh1\u0394 cells have incomplete resection (C76) suggests Rqh1 is required, but the incomplete data acquisition prevents definitive quantification. Additional experiments with longer observation times or alternative approaches would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92",
+      "C105"
+    ],
+    "result": "Crb2/Rad9/53BP1 and Rev7 act as specific inhibitors of RecQ helicase-mediated long-range resection, driving a mechanistic shift in resection pathway rather than simply modulating resection efficiency. Loss of these inhibitors changes both the efficiency and molecular mechanism of resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C88, C89, C105) is well-supported by the epistasis data showing pathway-specific effects. The model that these factors enforce Exo1-dependent resection to prevent RecQ helicase-mediated hyper-resection (C92) is consistent with prior studies in budding yeast and integrates the current findings effectively. The conclusion represents a mechanistic advance beyond previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C31",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The findings suggest a new mechanism for PARPi resistance in BRCA1-deficient cells: loss of 53BP1 or Rev7 allows 'rewiring' to employ an Exo1-independent, RecQ helicase-dependent hyper-resection pathway, compensating for compromised BRCA1/Exo1-dependent resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the S. pombe data clearly demonstrate pathway switching upon loss of Crb2/Rev7, the connection to PARPi resistance in mammalian BRCA1-deficient cells (C11, C31, C102) is speculative and based on indirect evidence. The prior model (C103, C104) is cited but not directly tested. The proposed mechanism is plausible given that BRCA1 is tied to Exo1-dependent resection (C30), but experimental validation in mammalian cells is needed. The claim represents an important hypothesis but requires additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The ability of Rev7 to antagonize RecQ helicase/Dna2-dependent resection is likely conserved in mammalian cells, with BLM/DNA2 as the probable pathway. Indirect evidence from prior studies shows Rev7 loss rescues resection in BRCA1-deficient cells and increases telomere overhangs, with only partial rescue by CtIP or Exo1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The conservation argument (C95) is speculative, though reasonable. The cited evidence (C96, C98, C99) from prior studies is indirect and does not directly test the RecQ helicase pathway. The hypothesis that BLM/DNA2 accounts for the partial rescue (C97, C100) is plausible but untested. The acknowledgment of alternative possibilities (C101) is appropriate. This represents a reasonable extrapolation but requires direct experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Derepression of RecQ helicases by loss of 53BP1 or Rev7 could cause extended ssDNA tracts several kb long, promoting genome instability. The data show a hyper-resection phenotype in crb2\u0394 or rev7\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hyper-resection phenotype is directly demonstrated by the resection rate data (C108, referencing Figure 2C showing rates >20 kb/hr). The speculation about genome instability consequences (C107) is reasonable given the in vitro capabilities of RecQ helicases (C106) and is supported by citations. While the genome instability consequences are not directly tested in this study, the hyper-resection phenotype itself is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "RecQ helicase inhibitors could potentially re-sensitize BRCA1-null cells to PARP inhibitors by making them deficient in both Exo1 and RecQ helicase pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a therapeutic speculation (C109, C110) based on the pathway switching mechanism demonstrated in S. pombe. While the logic is sound\u2014blocking both resection pathways should prevent resistance\u2014this has not been tested experimentally. The citations provided support the general concept but not this specific application. This represents a testable hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C87"
+    ],
+    "result": "The assay will provide access to information about variability in resection efficiency within cell populations and will be able to interrogate the role of intranuclear architecture on resection rates and pathways in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are forward-looking statements about potential future applications (C85, C87) rather than demonstrated results. While the assay does reveal individual resection rates (C84) and can track DSB location (C86), the claims about future capabilities are speculative. These represent reasonable expectations for future work but are not current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C36",
+      "C45",
+      "C60",
+      "C61",
+      "C66",
+      "C68",
+      "C90",
+      "C91"
+    ],
+    "result": "Background knowledge claims about DNA repair, PARPi resistance mechanisms, resection pathways, and the roles of 53BP1, Rev7, Exo1, and RecQ helicases in DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations. They provide necessary context for the study but are not novel findings. The claims accurately represent the current understanding and prior work, establishing the knowledge gap that this study addresses (C5, C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The resection rate measured by this assay (7.6 kb/hr) is somewhat faster than previous population-based assays (4-4.4 kb/hr), possibly because this assay isolates long-range resection after Rad52 loading rather than measuring both initiation and long-range resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior studies (C53) is accurate and appropriately cited. The explanation for the difference (C54) is reasonable speculation based on the assay design\u2014measuring only post-initiation long-range resection should yield faster rates than methods that include the initiation phase. This represents appropriate contextualization of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Loss of Rev7 restores viability of exo1\u0394 cells on camptothecin-containing media, suggesting that derepression of Rqh1 can substitute for loss of Exo1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The growth assay data (C93) directly demonstrate rescue of the exo1\u0394 growth defect by rev7\u0394. The interpretation that this reflects Rqh1 derepression (C94) is consistent with the resection rate data showing rapid Rqh1-dependent resection in rev7\u0394exo1\u0394 cells. This provides independent functional validation of the pathway switching mechanism.",
+    "result_type": "MAJOR"
+  }
+]

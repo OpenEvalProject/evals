@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors engineered a 'Locked-open' KcsA construct using disulfide bonds between cysteines at positions 28 and 118, which spontaneously forms a covalently linked tetramer that traps the activation gate in an open conformation. This construct displays similar biochemical properties to wild-type KcsA, is thermally stable, and exhibits functional properties consistent with an open activation gate, including low open probability with K+ and ion-specific gating transitions at the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 provide converging biochemical (disulfide bond formation, thermal stability), biophysical (size exclusion chromatography), and functional (single-channel recordings with K+ and Rb+) evidence that the Locked-open construct successfully traps KcsA with its activation gate open. The ion-specific changes in conductance and open probability support that gating transitions occur at the selectivity filter rather than the activation gate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The E71A mutation on the Locked-open KcsA background eliminates C-type inactivation and produces pH-independent high open probability, effectively sampling the O/O state, while the Y82A mutation strengthens C-type inactivation, producing pH-independent low open probability and sampling the O/I state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 demonstrate that combining the Locked-open scaffold with mutations known to modulate C-type inactivation (E71A eliminates it, Y82A enhances it) produces channels with predicted functional properties. The single-channel data showing high Po for E71A and low Po for Y82A, both pH-independent, support the interpretation that these constructs sample the O/O and O/I states respectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The crystal structure of Locked-open KcsA E71A at 2.25 \u00c5 resolution reveals the O/O state with an activation gate diameter of 22 \u00c5, a selectivity filter containing 4 K+ ions in canonical 1,3 and 2,4 configurations, and a partially dehydrated K+ ion in the central cavity coordinated by four water molecules. The selectivity filter conformation is nearly identical to the closed C/O state (0.26 \u00c5 RMSD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C48 present high-resolution crystallographic data (2.25 \u00c5, good R-factors) showing the structural features of the O/O state. The electron density maps support ion positions and water coordination. The structural similarity to the C/O state (low RMSD) is consistent with predictions that these states should be similar at the selectivity filter. The 22 \u00c5 gate opening agrees with physiologically relevant open conformations from other structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "B-factor analysis reveals that while the pore helix shows similar normalized B-factors in the C/O and O/O states, the selectivity filter residues show significant differences, suggesting that the strength of interaction between carbonyl groups and K+ ions differs between these states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present B-factor analysis comparing structures at the same resolution (2.25 \u00c5) using similar refinement parameters, which is methodologically sound. The divergence in B-factors specifically at the selectivity filter, while the pore helix remains similar, supports the interpretation of differential carbonyl-K+ interactions. This is consistent with prior observations of ion selectivity changes during activation gating (C51-C52).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The crystal structure of Locked-open KcsA Y82A at 2.4 \u00c5 resolution reveals the O/I state with a collapsed selectivity filter containing only 2 K+ ions at positions 1 and 4, with vacancies at positions 2 and 3. The Val-76 carbonyl flips out of the axis of symmetry, obliterating the S2 and S3 binding sites and forming hydrogen bonds with structural waters. The pore is collapsed at Gly-77 (6 \u00c5 diameter), and the pore helix pitch is shortened by ~0.5 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59-C73 present high-resolution crystallographic data (2.4 \u00c5, good R-factors) showing the structural features of the deep C-type inactivated state. The electron density maps support the collapsed filter conformation, ion positions, and water molecules. The structural changes (Val-76 flip, Gly-77 collapse, pore helix compression) are consistent with previous lower-resolution structures and provide mechanistic insight into the non-conductive state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The high-resolution O/I structure reveals a network of three 'inactivating waters' behind the selectivity filter in an 'inactivation cavity', which were previously predicted computationally. These waters form hydrogen bonds with the flipped Val-76 carbonyl and other selectivity filter residues, stabilizing the collapsed O/I conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 present electron density evidence for water molecules at high resolution (2.4 \u00c5) that validate prior computational predictions (C75). The detailed hydrogen bonding network described in C79 is supported by the structural data. The comparison with the conductive state (C80) strengthens the interpretation that these waters are specific to the inactivated conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Position Tyr-82 acts as a gatekeeper regulating water diffusion into the inactivation cavity, thereby controlling the rate and magnitude of C-type inactivation. The Y82A mutation creates a channel communicating the extracellular milieu with the inactivation cavity and increases solvation at the cavity entrance, as evidenced by additional crystallographic water molecules in the closed Y82A structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 integrate structural observations (C89-C91 showing increased water density in Y82A) with functional data from prior studies (C84-C86 showing Y82A accelerates inactivation). The mechanistic model (C87-C88) is well-supported by the structural evidence and consistent with the functional effects. The closed Y82A structure at 2.25 \u00c5 provides direct evidence for increased water accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The central cavity of the O/I state contains a putative K+ ion but lacks discernible coordinating water molecules, unlike the O/O state. However, numerous crystallographic water molecules are found in the cavity, likely associated with changes in surface polarity in the C-type inactivated conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe differences in the central cavity between O/O and O/I states based on electron density observations. The absence of coordinating waters around the ion (C95) contrasts with the O/O state (C45), and the presence of many other water molecules (C96) is supported by the structural data shown in Figure 7. The interpretation regarding surface polarity changes is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The mechanism of C-type inactivation in KcsA involves initial loss of K+ coordination at S2 due to narrowing at Gly-77, followed by further constriction leading to a collapsed selectivity filter with loss of both S2 and S3 sites. The high-resolution structures strongly support that the collapsed filter represents the deep C-type inactivated state, as the non-inactivating E71A mutant prevents filter collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 synthesize the structural observations with prior spectroscopic and computational studies (C99) to present a coherent mechanism. The key evidence is that the E71A mutant, which eliminates inactivation functionally, shows a non-collapsed filter structurally (C102), providing strong support for the collapsed filter hypothesis. This addresses prior controversy (C100) with direct structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors argue that time-dependent conductance changes in D-Ala semisynthetic constructs cannot refute the collapsed filter hypothesis, as computational analyses suggest the D-Ala filter could adopt alternative constricted conformations, and the conformational landscape may be more complex than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 present a rebuttal to alternative interpretations based on computational studies (C106) and spectroscopic data (C105). The argument is logical and supported by citations, though it relies on computational predictions rather than direct experimental evidence. The reasoning is sound but the support is indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Allosteric coupling between the activation gate and selectivity filter is the key driving force behind KcsA inactivation. To properly study C-type inactivation, channels must be trapped with the activation gate open, as the structural integrity of the selectivity filter is influenced by the gate conformation. This coupling influences ion-filter energetics and gating pKa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 present a methodological and mechanistic conclusion supported by the current structural data and multiple prior studies (C108). The experimental design (trapping the gate open) directly addresses this principle. The structural differences between C/O and O/O states (C49-C50) and the gate-dependent filter conformations provide evidence for this coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose a detailed mechanistic model for C-type inactivation: upon activation, the gate opens to 22 \u00c5, K+ ions enter the cavity and shed water before entering the filter. Allosteric coupling via Phe-103 clashing with the pore helix deforms the filter, causing Val-76 carbonyl flipping and loss of S2/S3 binding sites, leading to filter collapse. A network of inactivating waters stabilizes the collapsed state, with water diffusion into the inactivation cavity determining inactivation rate and magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C126 integrate the structural observations from both O/O and O/I states into a comprehensive mechanistic model. The model is well-supported by the high-resolution structures showing the specific conformational changes (gate opening, filter collapse, water networks) and is consistent with prior functional and spectroscopic data. The allosteric coupling mechanism is supported by structural evidence of Phe-103 interactions (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Upon stimulus termination, the activation gate closes (O/I to C/I transition) while the selectivity filter remains collapsed temporarily, with the duration likely determined by water exit rate from the inactivation cavity. The filter then resets to the conductive conformation (C/I to C/O), completing the gating cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 describe the recovery phase of the gating cycle based on the kinetic model and computational predictions (C128 cites Ostmeyer et al., 2013). While the current structures do not directly capture these transitions, the model is consistent with the structural snapshots obtained and prior computational work on water dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study provides atomic-resolution structures of KcsA's O/O and O/I states, completing the structural description of the gating cycle. These structures reveal the collapsed selectivity filter in the deep C-type inactivated state, interactions with structural waters, and allosteric coupling between activation and inactivation gating. Water diffusion into the inactivation cavity is identified as a key determinant of C-type inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C8, C130-C132 summarize the major contributions of the work. The high-resolution structures (2.25 \u00c5 and 2.4 \u00c5) with good refinement statistics provide unprecedented detail of the selectivity filter conformations. The structures complement existing C/O and C/I structures to complete the gating cycle. The identification of the water network and its role in inactivation is a novel mechanistic insight supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The gating cycle of K+ channels requires at least four kinetic states: C/O (closed gate, conductive filter), O/O (open gate, conductive filter), O/I (open gate, inactivated filter), and C/I (closed gate, inactivated filter). Transitions between these states involve activation, C-type inactivation, deactivation, and recovery, with allosteric coupling between the activation gate and selectivity filter driving C-type inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the established kinetic framework for K+ channel gating, supported by extensive prior literature (C9, C12, C13) and general knowledge. This framework provides the conceptual foundation for interpreting the structural snapshots obtained in this study. The allosteric coupling (C13) is well-established and supported by the current structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior structures of KcsA in high and low K+ (C/O and C/I states) and constitutively open mutants at modest resolution revealed initial structural changes during inactivation, including constriction at Gly-77 and loss of ion occupancy at S2 and S3. However, these structures lacked atomic detail of carbonyl positions due to limited resolution (~3.2 \u00c5) and conformational heterogeneity at the activation gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 accurately summarize prior structural work on KcsA, supported by appropriate citations. The limitations of previous structures (C24-C25) provide clear motivation for the current high-resolution study. The description of prior observations (C19-C21) is consistent with the cited literature and provides context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The Locked-open E71A structure represents a transient snapshot of the O/O state that is only briefly accessible during normal gating. While it likely reflects the filter conformation of the native O/O state, it may not capture dynamic changes due to ion flux or membrane potential, as it is stabilized by disulfide bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 appropriately acknowledge the limitations of the experimental approach. The structure is stabilized artificially (C55), which is a valid caveat. However, the functional data (high Po, pH-independence) and structural similarity to predictions support that it represents a physiologically relevant conformation (C53-C54). The citations to prior work on ion selectivity changes (C51-C52) provide context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The O/O state is metastable and transitions to the O/I state. The Y82A mutation accelerates C-type inactivation, favoring entry into the deep inactivated state with a collapsed selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe the rationale for using the Y82A mutant to capture the O/I state. The functional characterization (C57, supported by Figure 3 and citations) demonstrates accelerated inactivation. The interpretation that this favors the deep inactivated state (C58) is reasonable and supported by the subsequent structural data showing filter collapse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Prior computational and experimental studies have shown that recovery from C-type inactivation depends on occupancy of buried waters in the inactivation cavity, and that changing water activity at the extracellular side slows inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 cite prior work (Ostmeyer et al., 2013) that predicted and validated the role of water in inactivation. These claims provide important context for the current structural observations of the water network and support the mechanistic interpretation. The citation is appropriate and the claims are consistent with the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The allosteric coupling between activation and inactivation gating underlies hysteretic gating behavior in KcsA. The non-inactivating E71A structure, showing a non-collapsed filter in the open state, is consistent with the collapsed filter hypothesis of C-type inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 connect the structural findings to functional consequences. The citation to hysteretic behavior (C112) is appropriate. The logic in C113 is sound: if filter collapse causes inactivation, then a non-inactivating mutant should show a non-collapsed filter when open, which is exactly what is observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "A recent cryo-EM study of hERG suggested different structural changes during C-type inactivation compared to KcsA. Given hERG's distinctive inactivation process, it is not surprising that the structure-function correlation differs from KcsA and other voltage-gated K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 appropriately acknowledge that different K+ channels may have different inactivation mechanisms. The citation to the hERG study (C133) is appropriate, and the interpretation (C134) that different channels may have different mechanisms is reasonable and supported by known functional differences between hERG and other K+ channels.",
+    "result_type": "MINOR"
+  }
+]

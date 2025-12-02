@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The BB-model presents a systems-level computational framework integrating egocentric parietal representations with allocentric medial temporal lobe representations via a retrosplenial transformation circuit modulated by head direction cells. The model predicts novel cell types (egocentric and head-direction-modulated boundary- and object-vector cells) and explains how these populations interact to support spatial memory, scene construction, novelty detection, trace cells, and mental navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C12, C21-C31, and C82-C85 collectively describe the core architecture and theoretical contribution of the model. The model is explicitly described as extending prior work (C10), implementing bidirectional transformations between reference frames (C11-C12, C21-C26), and predicting new cell types (C2, C27-C30). The theoretical framework is well-articulated and internally consistent, spanning multiple levels of analysis (C83-C85). While this is a computational model rather than experimental validation, the theoretical claims are clearly stated and logically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C54",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model proposes object vector cells (OVCs) as allocentric representations of object locations that allow items to be remembered within spatial contexts defined by environmental boundaries. These predicted OVCs map onto recently discovered neuronal populations and are consistent with experimental findings on object-location binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C28, and C54 describe the OVC prediction, which is supported by citations to recent experimental discoveries (Deshmukh and Knierim, 2013; Hoydal et al., 2017). Claims C86-C88 provide additional experimental support from human neuropsychology studies. The convergence between model predictions and experimental observations strengthens this result, though the model's OVCs are theoretical constructs that await direct experimental validation of all predicted properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Grid cells in the model update viewpoint during mental navigation and planning by driving sequential place cell activity, supporting shortcutting across unexplored terrain and generating preplay-like activity patterns. This mechanism provides a neural-level account of scene construction and episodic future thinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, C46-C49, and C74-C78 describe the grid cell mechanism and its role in mental navigation. Claims C109-C114 extend this to human cognition. The model's grid cell implementation is supported by extensive citations to experimental literature (C46, C74-C76, C78) and recent human neuroimaging evidence (C75, C110). The simulation results (Figure 12-13, Videos 12-13) demonstrate the proposed mechanism. However, the model acknowledges limitations in capturing faster timescales of replay/preplay (C78), indicating incomplete coverage of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Simulated lesions to Papez' circuit (removing head direction input) produce anterograde and retrograde amnesia by preventing the transformation between egocentric and allocentric representations, consistent with clinical observations of amnesia following lesions to the fornix and mammillary bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 describe the lesion simulation and its effects. The simulation results (Figure 7, Videos 5-6) demonstrate the predicted deficits. The model's predictions align with well-established clinical findings (C56-C57, supported by multiple citations). The mechanistic explanation\u2014that head direction cells are necessary for the coordinate transformation\u2014is internally consistent with the model architecture. However, real lesions affect multiple systems beyond head direction cells, so the model captures only one aspect of the clinical syndrome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model successfully simulates object novelty detection tasks, showing that an intact hippocampus generates mismatch signals when objects are moved or presented in different contexts, while hippocampal lesions abolish this discrimination. The model is robust to firing rate noise up to 20% and maintains performance with up to 20% neuron loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe novelty detection simulations and robustness testing. The simulation results (Figures 8-9, Videos 7-8) demonstrate the predicted effects. The model's behavior matches experimental findings from rodent studies (C63, C66, C67, supported by citations to Mumby et al., 2002; Eacott and Norman, 2004; Langston and Wood, 2010). The robustness analysis (C61, Figure 8B-C) shows the model maintains high correlations between encoding and recall patterns despite perturbations. The quantitative correlation measures provide objective assessment of model performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model proposes that periodic modulation of top-down connectivity (potentially corresponding to theta rhythm) allows comparison between perceived and remembered representations, generating 'trace' responses for missing objects or boundaries. Nominally non-spatial perirhinal neurons can exhibit spatial trace firing fields when reactivated at encoding locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C102-C104 describe the trace cell mechanism. The simulation results (Figure 10, Videos 9-10) demonstrate trace responses in BVCs, OVCs, and perirhinal neurons. The model's predictions are compared to experimental findings (C70, C103, citing Tsao et al., 2013; O'Keefe, 1976). However, C104 notes a discrepancy: experimental trace cells fire only when objects are absent, while the model's mechanism differs. This suggests the model captures some but not all aspects of trace cell phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model implements sequential attention to objects during encoding to solve the binding problem, ensuring unique associations between object identities and locations. This attentional mechanism is crucial for unambiguous representations and may explain capacity limits in visual working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C105-C108 describe the attention mechanism and its necessity. The theoretical argument for why attention is needed (C42-C43) is logically sound\u2014without sequential sampling, multiple object-location conjunctions would be ambiguous. The implementation uses a fixed 600-time-unit cycle (C45), which is somewhat arbitrary but reasonable. Claims C106-C107 connect this to experimental literature on rhythmic sampling (VanRullen et al., 2007; Landau and Fries, 2012) and capacity limits (Lisman and Idiart, 1995; Bays and Husain, 2008). However, the attention mechanism is heuristically implemented rather than mechanistically modeled (C105), representing a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The model demonstrates that agents can sample multiple objects in imagery by shifting attention within the parietal window, allowing retrieval of object identities at different locations without changing the imagined viewpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe a well-known cognitive capability. The simulation (Figure 11, Video 11) demonstrates the mechanism: residual activity in the parietal window for non-cued objects can be boosted by attention, driving corresponding OVCs and ultimately retrieving object identity via learned OVC-to-perirhinal connections. This provides a mechanistic account of a known phenomenon, though the simulation is relatively simple (only 2 objects) and the attention mechanism remains heuristic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50"
+    ],
+    "result": "The model implements head direction cells as a ring attractor updated by angular velocity, and uses a 20-sublayer retrosplenial transformation circuit with directionally-modulated boundary vector cells. Connection strengths are modulated by neuromodulation to switch between bottom-up (perception) and top-down (imagery) modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 and C50 describe specific architectural and implementation details. The head direction ring attractor (C33-C34) is a standard model supported by citations (Skaggs et al., 1995; Zhang, 1996). The transformation circuit architecture (C35-C38) is clearly specified with 20 sublayers and reciprocal connections. The neuromodulatory switching mechanism (C39-C41) is supported by citation to Hasselmo, 2006, and implements a 95% reduction in non-active pathways. The Hebbian learning for grid-to-place connections (C50) is straightforward. These implementation details are internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C32",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "The model incorporates established cell types (place cells, head direction cells, boundary vector cells, grid cells) with known firing properties and anatomical locations, and proposes that egocentric parietal representations interface with these allocentric MTL representations during scene construction tasks that engage the full network in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 and C32 describe well-established cell types with extensive experimental support (multiple citations for each). Claims C51-C52 describe the network engagement during scene construction, supported by numerous human neuroimaging studies. Claim C53 notes that BVCs were predicted by earlier versions of this model (Hartley et al., 2000; Burgess et al., 2001a), establishing precedent. Claim C55 documents the anatomical connectivity between proposed brain regions. These claims provide the empirical foundation for the model and are well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Scene construction and episodic future thinking depend on the hippocampal system, and episodic recollection requires reconstruction of viewpoint-specific representations, placing strong spatial constraints on how episodic memory works.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C79-C81 establish the empirical and theoretical context for the model. These claims are supported by extensive citations to the scene construction and episodic memory literature (Tulving, 1985; Schacter et al., 2007; Hassabis et al., 2007; Buckner, 2010; O'Keefe and Nadel, 1978; etc.). The theoretical argument in C80-C81\u2014that episodic re-experiencing requires viewpoint consistency\u2014is conceptually sound and motivates the model's architecture. These are primarily contextual claims that frame the model's contribution rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model explains why place cells in open environments can associate with boundaries in all directions, why permanent landmarks evoke stronger retrosplenial responses, why head direction specifies viewing direction rather than movement direction, and how the encoding strategy supports object-cued recall and goal-directed navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe various explanatory capabilities of the model. Each claim provides a mechanistic account of known phenomena: direction-independent place cell firing (C89), landmark permanence effects (C90, citing Auger et al., 2012), head direction function (C91, citing Raudies et al., 2015; Maurer et al., 2014; Cei et al., 2014), recall mechanisms (C92), neural activity during imagery (C93, citing Burgess et al., 2001a; Hassabis et al., 2007; Schacter et al., 2007), and goal-directed navigation (C94, citing Bush et al., 2015; Burgess et al., 2002). These are theoretical explanations consistent with the model architecture and supported by relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model has explicit scope limitations: it does not address semantic memory, non-spatial item memory, or completely fictional scenes. It applies specifically to imagery for coherent spatial scenes necessary for episodic recollection. The model can be viewed as a generative model for scenes that predicts perceptual input and detects novelty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 explicitly acknowledge the model's limitations, which is appropriate for a computational model with specific scope. Claims C98-C99 describe the model's function as a generative/predictive system, supported by citation to K\u00e1li and Dayan, 2001. Claims C100-C101 discuss theta rhythm modulation, supported by multiple citations (Hasselmo et al., 1996; Burgess et al., 2001a; Hasselmo et al., 2002; Byrne et al., 2007; Douchamps et al., 2013; D\u00fczel et al., 2010). These claims appropriately contextualize the model's scope and relate it to broader theoretical frameworks.",
+    "result_type": "MINOR"
+  }
+]

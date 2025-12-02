@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C47",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "The Activin receptor Baboon (Babo) is necessary and sufficient for pale R8 photoreceptor subtype specification, requiring all three Activin ligands (dAct\u03b2, Daw, Myo) non-redundantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49, C50 demonstrate that Babo RNAi reduces pale R8 cells to 5% (similar to sev mutants lacking R7), while Babo* overexpression increases pale subtypes to 80%. Claims C53-C54 show all three Activin ligands are independently required. The data are internally consistent with appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The BMP receptor Thickveins (Tkv) is necessary and sufficient for pale R8 specification, acting through BMP ligands Dpp and Gbb but not Scw.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C71 show Tkv RNAi reduces pale R8 to 3% while Tkv* increases to 80%. Claim C72 confirms R8-specific effects without altering R7. Claims C74 demonstrate Dpp and Gbb requirement. The phenotypes parallel Babo results, supporting dual pathway involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Babo-a and Babo-b isoforms are each required non-redundantly for pale fate, while Babo-c is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide isoform-specific loss- and gain-of-function data showing Babo-a elimination (0% pale) and Babo-b reduction (16% pale), while Babo-c has no effect. However, C65 notes Babo-b RNAi may be weak, introducing uncertainty about the relative contributions. The conclusion (C64) is reasonable but the Babo-b data quality is questioned by the authors themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Epistasis experiments confirm Tkv signals through Dpp/Gbb and Babo signals through dAct\u03b2/Daw/Myo, with limited cross-pathway rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 show Babo* rescues Activin ligand loss but Tkv* cannot rescue dAct\u03b2/Myo loss (C94), while both receptors partially rescue BMP ligand loss. Claim C98 synthesizes these results appropriately. The incomplete rescues (C93, C96) are acknowledged and may reflect ligand heterodimerization requirements or incomplete pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "Activin ligands likely function as heterodimers (dAct\u03b2/Daw and Myo/Daw) to activate Babo, while BMP ligands Dpp and Gbb may heterodimerize to activate Tkv.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 show genetic interactions suggesting dAct\u03b2+Myo double knockdown is more severe than either with Daw, supporting the heterodimer model (C103). However, this is indirect genetic evidence without biochemical validation. Claim C106 is explicitly speculative. The model is plausible but requires direct demonstration of ligand dimerization and receptor binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Babo activates dSmad2 and Tkv activates Mad as canonical R-SMADs downstream of their respective receptors in pale R8 specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 show dSmad2 RNAi reduces pale R8 to 15% and remains low even with Babo* (23%), placing dSmad2 downstream of Babo. Claims C112-C114 show parallel results for Mad downstream of Tkv. Claim C115 confirms Med (co-SMAD) requirement. The epistasis logic is sound and consistent with canonical TGF\u03b2 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C128"
+    ],
+    "result": "Mad and dSmad2 cooperate to regulate the Wts/Melt bi-stable loop, with both TGF\u03b2 pathways acting upstream of Hippo signaling to specify pale R8 fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 establish Wts/Melt mutual exclusivity and epistasis. Claims C119-C123 show Babo* and Tkv* activate Melt and suppress Wts, with Melt required for this effect. Claim C124 shows Wts removal rescues dSmad2/Mad loss. Claim C128 confirms Yki epistasis. The epistasis experiments are well-designed and internally consistent, establishing clear pathway hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Babo, Tkv, Mad, and dSmad2 are required in R8 cells (not R7) to induce Rh5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 use cell-specific Gal4 drivers showing R8-specific requirement. Claim C131 uses Gal80 rescue to confirm R8 as the site of action. The cell-specific manipulations are appropriate and the conclusion (C132) is well-supported. This addresses a key mechanistic question about where receptors function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C190"
+    ],
+    "result": "TGF\u03b2 ligands (dAct\u03b2, Myo, Dpp) are expressed broadly in R7 cells and some outer photoreceptors, not specifically in pale R7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 show reporter expression in all R7 cells (both pale and yellow) and some outer photoreceptors. This is problematic for the model requiring pale-specific signaling, forcing reliance on post-transcriptional regulation. The expression data are clear but create a logical tension with the functional specificity observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C80",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The proprotein convertase Amon is expressed preferentially in pale R7 cells and regulates pale-specific TGF\u03b2 ligand processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C140 show Amon expression in pale R7 (9% average) vs. yellow R7 (1%), which is statistically significant (C144). However, C141 notes many pale R7 lack Amon, and C143 shows high spatial/temporal variability. Claim C142 invokes transient expression as explanation, but this is speculative. The functional requirement (C80) is clear, but the expression pattern is incomplete and doesn't fully explain pale specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "Ligand processing factors Fur2, Amon, and Tld are required for pale R8 specification, with Babo acting downstream of Fur2-processed ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 show Fur2 overexpression increases pale R8 (64%) and this requires Babo, establishing epistasis (C83). Claims C84-C85 show Amon is non-redundant with Fur2. Claim C90 shows Tld requirement. The epistasis experiment (C81-C82) is well-designed. However, the mechanism of Amon/Fur2 specificity remains unclear given broad ligand expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Activated Babo* and Tkv* can induce pale R8 subtypes even in sev mutants lacking R7 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 show Babo* and Tkv* rescue pale fate in sev mutants. This demonstrates sufficiency of receptor activation independent of R7 signaling. However, this uses constitutively active receptors which may bypass normal regulatory mechanisms. The result is technically sound but may not reflect endogenous signaling requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Parallel activity of both Babo/dSmad2 and Tkv/Mad pathways is required for pale subtype specification, with Babo capable of some Mad activation independent of Tkv.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 show complex epistasis: Tkv*+BaboRNAi fails (C146), TkvRNAi+Babo* succeeds (C147), Babo* cannot rescue MadRNAi (C148), but Tkv*+Babo* is synergistic (C149). Claim C151 interprets this as Babo\u2192Mad cross-activation, supported by literature. The epistasis is complex but the interpretation is reasonable. However, C151 relies on cited cross-activation that may not occur at physiological levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C158"
+    ],
+    "result": "The authors propose a 'double-check' mechanism where pale R7-specific ligand processing instructs non-redundant signaling by both TGF\u03b2 arms to ensure correct R7/R8 pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C153 synthesizes the findings into a model. However, this relies on incomplete Amon expression data (C141-C143) and speculative mechanisms (C154-C155, C158). The functional requirement for both pathways is clear, but the molecular mechanism of pale specificity and the rationale for dual pathway requirement remain incompletely resolved. The model is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C159",
+      "C160",
+      "C161",
+      "C172"
+    ],
+    "result": "This work reveals crosstalk between TGF\u03b2 and Hippo/Wts tumor suppressor pathways in cell fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C172 state the crosstalk finding, supported by epistasis data. Claim C159 notes this is the first evidence in Drosophila, though C160 cites mouse precedent. The novelty claim is appropriate and the finding is well-supported by the Wts/Melt epistasis experiments. This represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Cell fate may be regulated through localized processing of widely expressed TGF\u03b2 ligands, representing a novel mechanism for fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C162 proposes post-transcriptional regulation via localized processing. Claims C163-C164 note this would be the first example of convertase localization specifying fate (vs. gradient formation). However, this conclusion depends on the incomplete Amon expression data and doesn't fully explain the mechanism. The concept is novel but requires more complete characterization of processing factor expression and activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Dual pathway requirement may enable synergistic activation or serve as authentication to prevent mispairing errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C176 show Babo*+Tkv* (98% pale) exceeds either alone (~80%), suggesting synergy. Claim C177 cites vertebrate precedent for synergistic signaling. Claim C178 proposes authentication function. These are reasonable hypotheses but remain speculative. The synergy is demonstrated but the mechanistic basis and functional rationale require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C189"
+    ],
+    "result": "TGF\u03b2 pathways account for the entire instructive signal from R7 to R8, with residual pale cells in sev mutants potentially representing ancestral autonomous R8 specification or signaling from outer photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C179 shows TGF\u03b2 component removal reduces pale R8 to sev mutant levels (4%), supporting C180. However, C181 and C189 offer competing speculative explanations for residual pale cells. The functional data are solid but the interpretation of residual pale cells and evolutionary implications are speculative. Additional experiments would be needed to distinguish these hypotheses.",
+    "result_type": "MINOR"
+  }
+]

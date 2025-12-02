@@ -1,0 +1,1551 @@
+{
+  "submission": {
+    "id": "6d807603-29dd-4564-96f7-862a92f87668",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:27:28.199476Z",
+    "updated_at": "2025-12-02T00:27:28.199476Z"
+  },
+  "content": [
+    {
+      "id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "submission_id": "6d807603-29dd-4564-96f7-862a92f87668",
+      "content_type": "manuscript",
+      "content_text": "# Combinatorial programming of human neuronal progenitors using magnetically-guided stoichiometric mRNA delivery\n\n## Authors\n\n- Sayyed M Azimi<sup>1</sup>\n- Steven D Sheridan<sup>1</sup>\n- Mostafa Ghannad-Rezaie<sup>1</sup>\n- Peter M Eimon<sup>1</sup> ([ORCID: 0000-0003-0447-517X](https://orcid.org/0000-0003-0447-517X))\n- Mehmet Fatih Yanik<sup>1</sup> ([ORCID: 0000-0002-8963-2893](https://orcid.org/0000-0002-8963-2893)) \u2020\n\n### Affiliations\n\n1. Department of Electrical Engineering and Computer Science Massachusetts Institute of Technology Cambridge United States\n2. Center for Genomic Medicine Massachusetts General Hospital, Harvard Medical School Boston United States\n3. Department of Information Technology and Electrical Engineering Swiss federal Institute of Technology Zurich (ETH) Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nIdentification of optimal transcription factor expression patterns to direct cellular differentiation along a desired pathway presents significant challenges. We demonstrate massively combinatorial screening of temporally-varying mRNA transcription factors to direct differentiation of neural progenitor cells using a dynamically-reconfigurable magnetically-guided spotting technology for localizing mRNA, enabling experiments on millimetre size spots. In addition, we present a time-interleaved delivery method that dramatically reduces fluctuations in the delivered transcription factor copy numbers per cell. We screened combinatorial and temporal delivery of a pool of midbrain-specific transcription factors to augment the generation of dopaminergic neurons. We show that the combinatorial delivery of LMX1A, FOXA2 and PITX3 is highly effective in generating dopaminergic neurons from midbrain progenitors. We show that LMX1A significantly increases TH-expression levels when delivered to neural progenitor cells either during proliferation or after induction of neural differentiation, while FOXA2 and PITX3 increase expression only when delivered prior to induction, demonstrating temporal dependence of factor addition.\n\n## Introduction\n\nThe human nervous system contains at least hundreds of distinct subtypes of neurons that are necessary to create complex circuits. Generation of these specific neuronal cell types from progenitor cell populations in vitro is important for basic science, drug screening, and potentially for cell-based therapeutics.\n\nSignificant effort has shown that known extracellular trophic factor cocktails, although useful, do not enable sufficient control and specificity to efficiently reprogram progenitor populations to a desired differentiated state (Kriks et al., 2011; Maroof et al., 2013; Shi et al., 2012a; Shi et al., 2012b). It should be possible to systemically screen for transcription factor regimes that steer the fate of differentiating cells by ectopically introducing factors in a combinatorial manner. In fact, the pioneering work of Yamanaka demonstrated the potential of such an approach by reprogramming somatic cells to pluripotency (Takahashi and Yamanaka, 2006).\n\nAlthough neurons inherit the same genes, cell fate decisions during neurogenesis are mediated through the unique and highly coordinated temporal and spatial expression of hundreds of transcription factors. The efficiency of lineage-specific differentiation can likely be greatly increased if key transcription factor combinations are delivered to cells in a stoichiometrically and temporally optimized manner over the course of differentiation. For instance, while the expression of early genes is necessary for differentiation and expansion of neuronal progenitors, these same factors may lead to malformations if not silenced later. Similarly, terminal differentiation factors might have deleterious effects if introduced too early.\n\nOne could envision using plasmid or non-replicative viral vectors to deliver transcription factors transiently, relying on cell division to dilute out undesired factors with time. However, this approach has severe limitations: (1) it affords only crude temporal control over transcription factor levels and stoichiometries while depending on a proliferative cellular state, (2) the copy numbers delivered to the cells are highly variable, and (3) the use of any DNA or integrative viral vector entails the risk of integration-induced mutagenesis leading to functional genetic alterations. Any protocol based on such techniques could not be risk free or cost effectively translatable to clinical practice. Chemically inducible vectors such as doxycycline-regulated systems also face similar challenges.\n\nIn vitro synthesized mRNAs represent an important alternative to the use of DNA vectors (Karik\u00f3 et al., 2005; Karik\u00f3 and Weissman, 2007; Karik\u00f3 et al., 2008; Angel and Yanik, 2010; Karik\u00f3 et al., 2012; Kormann et al., 2011; Mandal and Rossi, 2013; Warren et al., 2010). By suppressing the innate immune response to reduce the toxicity of exogenous RNA, we have previously been able to achieve high expression levels of transcription factors in cells with repeated delivery while avoiding the risk of genomic insertion (Angel and Yanik, 2010). In addition, since the lifetime of mRNA is shorter than that of DNA-based vectors, the temporal availability of transfected RNAs can be much more precisely controlled over repeated delivery.\n\nAlthough several transcription factor libraries exist, and significant amounts of microarray and in situ hybridization data are now available, even for the relatively well-studied neuron types, testing all possible stoichiometries and temporal delivery patterns of transcription factors suspected to be involved in lineage specification would far exceed the capabilities of existing laboratories and technologies that use even large-scale formats such as 96- or 384- well plates.\n\nTo overcome this bottleneck, we developed a technology (Figure 1) that can massively parallelize the combinatorial transfection of nucleic acids in order to rapidly explore vast search spaces of transcription factor stoichiometries and validated it in an RNA-based screen on human neural progenitor cells (NPCs). By focusing transcription factors onto 1.5 mm spots using dynamically reconfigurable magnetic-field patterns, we significantly reduced the footprint of the experiments to enable screening of transcription factor cocktails over large combinatorial spaces. Importantly, with our technology the amount of RNA and transfection reagent required for a given transcription factor is proportional only to the number of spots actually transfected with that factor, rather than to the total number of possible spots in the array (i.e. to the surface area of transfected cells, not to the total surface area of the plate). This is possible because we focus almost all of the RNA in the medium to the target spots using an array of rare-earth magnets (Figure 1c). The number of cell medium changes we use also scale linearly with the number of transcription factors delivered, rather than growing exponentially with the number of combinatorial possibilities. For example, testing every possible combination of just 5 transcription factors results in 31 unique conditions (i.e. all 5 factors alone, 10 possible 2-factor cocktails, 10 possible 3-factor cocktails, 5 possible 4-factor cocktails, and 1 possible 5-factor cocktail) but requires only 5 medium changes when our platform is used.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of the template used for synthesis of transcription factor mRNAs. (b) Magnetic spotting configurations with single versus dual magnets. (c) Transfection of cultured neural progenitor cells with mRNA encoding green fluorescent protein (GFP) in the absence of a magnetic field (left) or delivered with a single (middle) versus dual (right) magnet setup. (d) Schematic diagram and operation of the automated spotting system. Arrows indicating steps 1 through 6 show the operation order and the movement directions of the system components as described in the text. Steps 1 and 2: Bottom plate resets the positions of bottom magnets to up. Steps 3 and 4: The pneumatic actuators program the positions of bottom magnets by pushing them down. Arrows 5 and 6: The cell-culture plate with top magnets is moved in for transfection and moved out. (e) Demonstration of localized GFP mRNA transfection with user-defined patterns. (f) GFP-transfected differentiating human neural progenitors remain localized the transfected spots at 1 day (i) and 7 days (ii) post-transfection. Scale bars, 1 mm.\n\nStandard transfection methods cause considerable fluctuations in the copy numbers of delivered genes, making it impossible to achieve maximal reprogramming efficiency even once optimal transcription factor combinations have been identified. Thus, we also demonstrate here an interleaved RNA transfection technique that dramatically reduces fluctuations in the delivered mRNA copy numbers and stoichiometries. Using our magnetically-guided spotting platform and interleaved transfection protocol, we evaluated the temporal contributions of transcription factor cocktails by treating human NPCs with them during the proliferative stage and/or during the induction of neurogenesis (i.e. after mitogen withdrawal) to generate human dopaminergic neurons with high purity.\n\n## Results\n\n### Modified mRNA constructs and magnetofection\n\nWe constructed mRNA expression vectors to address common issues in mRNA delivery and protein expression, such as vector instability, poor translation, and cytotoxicity (Figure 1a, see also Materials\u00a0and\u00a0methods). The mRNA template was constructed with a T7 promoter and was engineered with untranslated regions (UTRs) of highly stable Human \u03b2\u2013globin (Hbb) at both 5\u2019 and 3\u2019 ends (Angel and Yanik, 2010), since UTRs play a significant role in mRNA stability (Yu and Russell, 2001; Jiang et al., 2006). Polyadenylated transcripts with a cap-1 structure were synthesized with complete substitution of uridine and cytidine with the modified nucleosides pseudouridine-5-triphosphate (pseudo-UTP) and 5-methylcytidine-5\u2019-triphosphate (5-methyl-CTP), respectively to increase stability and reduce cytotoxicity by evading the innate immune system (Karik\u00f3 et al., 2005; Karik\u00f3 and Weissman, 2007; Karik\u00f3 et al., 2008; Stepinski et al., 2001; Jemielity et al., 2003; Motorin and Helm, 2011).\n\nMagnetofection has been used for DNA and RNA transfection of cultured cells and yields faster and higher transfection efficiencies than most lipid-based transfection methods, especially for hard-to-transfect cell types such as primary neurons (Sapet et al., 2011; Plank et al., 2011). Standard transfection approaches rely on stochastic diffusion and collision of transfection reagents with cells, which is a slow process that transfects cells non-specifically over the entire surface of the cell culture plate (leftmost panels in Figure 1b and Figure 1c). In magnetofection, transfection vehicles complexed with magnetic nanoparticles (e.g. CombiMag) are drawn towards the target cells using an external magnet positioned underneath the plate. However, due to the non-uniform nature of the magnetic field around a single magnet, magnetofection of cells is not spatially limited by the magnet's physical boundaries and therefore results in partial transfection of cells that lie outside the target area (middle panels in Figure 1b and Figure 1c). This is a significant limitation for a screening platform intended to precisely restrict transfection to isolated spots using a compact array of small magnets. Magnetotransfection has been traditionally used only in standard bench-top or low-throughput assays.\n\n### Focused delivery of magnetic nanoparticles by dual-magnetic array\n\nTo overcome these limitations, we first introduce a simple dual-magnet configuration which focuses the magnetic field to millimeter-size spots in between pairs of magnets positioned above and below the surface of the plate with opposite poles facing one another (rightmost panel in Figure 1b). This configuration enables spatially restricted transfection of cells with minimal background transfection outside the boundaries of the magnets (rightmost panels in Figure 1c). To make an array of such focused magnetic fields, we note that only the bottom magnets need to be small and spatially defined. Therefore, we use large top magnets that cover the entire wells of the plate (e.g.\u00a0~22 mm diameter magnets for a 12-well plate) (Figure 1d). This significantly reduces the complexity of setup, requiring us to program the spatial arrangement of only the bottom magnets.\n\nWe used neodymium (NdFeB) rare-earth magnets because of their high magnetic field strength compared to other types of magnets. They possess high magnetic anisotropy (i.e. they preferentially align their magnetic moment along an \u2018easy\u2019 axis) and high magnetic coercivity (the ability to resist demagnetisation under an external magnetic field). Both properties are highly desirable in our screening platform, where numerous small magnets are positioned in close proximity. In addition to NdFeB magnets, we tested Alnico five magnets and electromagnets and found both to be inadequate due to insufficient magnetic field (electromagnet; B\u00a0~\u00a010 mT) or failure to withstand demagnetisation (Alnico 5). The top magnetic plate is comprised of 12 large 22 mm diameter NdFeB disk magnets (Supplementary file 1) positioned in a 3\u00a0\u00d7\u00a04 matrix. The precise configuration and dimension of the top magnets is dictated by the desired cell culture plate format (standard 12-well cell culture plates are used in this study). The strength of the magnetic field was measured\u00a0~500 mT on the surface of top magnets. The bottom magnetic plate is a matrix of miniature 1.5 mm-diameter NdFeB disk magnets (Supplementary file 1) positioned in close proximity (3 mm center-to-center spacing) inside a compact array [an 8\u00a0\u00d7\u00a012 cm Teflon substrate accommodating a matrix of 25\u00a0\u00d7\u00a040 (i.e. 1000) magnets]. The magnetic field density on the surface of each magnet is B\u00a0~\u00a0300 mT in isolation and B\u00a0~\u00a0100 mT when inside the array.\n\n### Programming of the dual-magnet array\n\nIn order to drag the mRNA/Lipid/Magnetic particles onto user-defined spot patterns, we program the magnetic field pattern on the substrate by moving each bottom magnet independently closer to (\u2018active\u2019) or further away from (\u2018inactive\u2019) the bottom of the cell culture plate (Figure 1d, see also cross-section A-B there). To achieve this, all bottom magnets are first pushed upwards into the active position by a \u2018reset-plate\u2019 (via the pins mounted underneath each magnet) (Figure 1d, Step 1). Afterwards, the reset-plate retracts downwards (Figure 1d, Step 2). Since the pins move inside a teflon substrate filled with high viscosity grease, they remain in the elevated active position (5 mm above) after retraction of the reset-plate. Next, selected magnets are pushed down (away from the cell culture plate) using an array of pneumatic actuators located above the magnets (Figure 1d, Step 3). This eliminates the magnetic field of these bottom magnets and prevents the transfection of cells at these spots.\n\nThe top pneumatic head is comprised of 24 pneumatic actuators assembled in a 6\u00a0\u00d7\u00a04 matrix. The actuators are sub-miniature stainless steel 5 mm air cylinders (McMaster Carr) with 1 mm diameter piston pins, a 12 mm stroke length, and a spring return mechanism. By activating the actuator of each piston, the piston pin rapidly pushes the desired magnet down and retracts back. In order to initiate programming, the top pneumatic actuator arm moves down along z-axis until it is in close proximity with bottom magnetic plate (x-y stage sets the initial position of magnetic plate). The pneumatic actuators program (strike) 24 spots simultaneously and then move to the next x-y position. The process automatically proceeds through multiple cycles until all 1000 bottom magnets are programmed. When programming is complete, the top pneumatic actuator arm retracts to its rest position until the next programming event.\n\nPrior to programming the magnets as described above (Steps 1\u20134 in Figure 1d), the cell culture plate is kept off the platform stage in order allow the pneumatic actuators access to the bottom magnets. After programming, the cell-culture plate containing with the desired mRNA complex, along with the top magnets, is moved into the platform for transfection and afterwards moved out (Steps 5 and six in Figure 1d). Steps 1\u20136 are then repeated using a new mRNA complex until all transcription factors have been delivered to the specified spots. mRNA transfection of human NPCs under a user-defined pattern is shown in Figure 1e. With respect to cell mobility and cell-cell interactions, the spatial stability of the spots post-transfection and during differentiation could be of concern. However, Figure 1f shows that the GFP-transfected spots of proliferating and differentiating NPCs remain isolated from each other even after 7 days post-transfection and our results in the subsequent sections show the stability of differentiated cell spots even after 17 days (i.e. when the differentiation protocol is completed).\n\nBy focally localizing all transfection components (i.e. mRNA, lipid-based transfection reagent, and magnetic particles) onto a very small footprint, our magnetically-guided spotting platform achieves a significant savings in reagents relative to 96-well plate screens. Unless otherwise noted, we deliver 0.6 ng of mRNA per 1.5 mm diameter spot (total surface area per spot:\u00a0~1.8 mm2) for all of our experiments. Achieving a comparable level of transfection in a 96-well format (total surface area per well:\u00a0~32.2 mm2) requires\u00a0~18 fold more reagents. Although the reagent requirements for multiwell plate screens can be further reduced with 384- or 1536-well plate assays, these smaller formats suffer significantly from variation due to edge effects, which also cause problems for even 96-well screens (Lundholt et al., 2003). Our magnetically-guided spotting platform offers the space and reagent savings characteristic of small multiwell assays in larger-format plates, thus ensuring highly uniform culture conditions for accurate comparison of all combinatorial conditions.\u00a0Uniformity of delivered RNA copy-numbers and stoichiometries\n\nThe fact that cell fate decisions are highly dependent on the precise expression levels of a limited set of genes demands that each reprogramming factor in a given cocktail needs to be delivered with minimal cell-to-cell variation to achieve maximal efficiency. Variable expression and low overall efficiency remain major drawbacks of existing DNA transfection protocols, particularly when working with difficult to transfect cell types such as primary and postmitotic cells (Hansson et al., 2015; Landi et al., 2007). DNA-based delivery methods are most vulnerable to low/variable efficiency because transfected molecules must be transcribed in order to be effective and therefore must cross both the plasma membrane and the nuclear envelope. In contrast, mRNA-based methods tend to yield much higher transfection efficiencies since transfected molecules need to cross only the plasma membrane to be expressed. For example, a comparison of plasmid- and mRNA-based transfection approaches in human embryonic stem cell-derived retinal pigmented epithelial cells shows that DNA efficiency is only\u00a0~10% while RNA efficiency is\u00a0~90% (Hansson et al., 2015). Similarly, an extensive comparison of DNA and RNA transfection protocols using immature dendritic cells suggests that DNA-based approaches can achieve transfection efficiencies of 10\u201320% whereas RNA-based approaches can achieve efficiencies of 40\u201380% (Landi et al., 2007). Due to the low expression efficiency of DNA-based transfection methods, the stochastic noise in the expression is large. Higher expression results in correspondingly lower cell-to-cell variation as the Poisson distribution approaches a normal distribution. This is supported by the low variability of RNA transfection results with respect to DNA transfection (Hansson et al., 2015; Landi et al., 2007).\n\nHere, we use our magnetically-guided spotting platform to show that we are able to further reduce variation in the copy number of transfected mRNAs by breaking the transfection process into multiple temporally-segregated transfections, where each transfection is done using a reduced concentration of the transfection complex (Figure 2a). Human neural progenitor cells were cultured in 12-well plates and spotted with mRNAs encoding GFP (Green) or mCherry (Red) using either a standard single transfection process (32 ng of each mRNA) or a quadruple transfection protocol (four transfections consisting of 8 ng of each mRNA per transfection). In both cases the total amount of mRNA delivered to the spots was 64 ng and the medium was changed after each transfection. As shown in Figure 2b, although both methods result in a majority of all cells being transfected, cell-to-cell expression is considerably more variable when using the single-transfection method. To quantify co-localization efficiency, we compared the ratio of mCherry vs. GFP fluorescence intensity for each cell following single-step and multi-step (\u2018interleaved\u2019) transfection protocols using the Pearson correlation coefficient (PCC) and Mander\u2019s overlap coefficient (MOC) (Figure 2c) (Li et al., 2004; Manders et al., 1993). Although a single transfection results in co-localization (PCC\u00a0>0.5) with 79% overlap (MOC\u00a0=\u00a00.79), interleaved transfection improves the PCC to 0.85 and MOC to 0.92, which is indicative of highly uniform and co-localized transfection of cells with both mRNAs. While the interleaved protocol results in superior co-expression efficiency (i.e. transfection uniformity across all cells), the single-transfection method is more than adequate for large-scale screens where the priority is to compare the largest number of transcription factor combinations head-to-head under identical culture conditions while simultaneously minimizing the number of medium changes. The best performing mRNA combinations can then be retested using the interleaved protocol to precisely quantify their maximum efficiency.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic illustration of multiple interleaved transfections using GFP and mCherry mRNAs. Each mRNA is delivered in multiple interleaved rounds of transfection, as opposed to being delivered all at once in a single transfection. (b) Neural progenitor cells transfected with GFP and mCherry mRNA using a standard single transfection protocol (\u20181\u00a0\u00d7\u00a01\u2019; i.e. the full dose of each mRNA is applied in a single transfection) versus an interleaved transfection protocol (\u20184 \u00d7 \u00bc\"; i.e. one quarter doses of each mRNA are applied using four interleaved transfections). All images were acquired using automated software to prevent saturation. (c) Ratio of red (mCherry) to green (GFP) fluorescence intensity per cell for both single and interleaved transfection protocols. Image correlation analysis was performed on the images shown in (b) using WCIF plugin for ImageJ. Efficiency of interleaved transfection is calculated using Pearson\u2019s Correlation Coefficient (PCC) and Mander\u2019s Overlap Coefficient (MOC). PCC\u00a0=\u00a00.85 and MOC\u00a0=\u00a00.92 for interleaved transfections compared to PCC\u00a0=\u00a00.54 and MOC\u00a0=\u00a00.79 for single transfections (\u22121\u00a0< PCC < 1; 0\u00a0< MOC < 1). Both PCC and MOC represent average values from three independent experiments. (d) Precise RNA dosage control using the magnetically reconfigurable spotting platform. GFP mRNA was spotted in a 3\u00a0\u00d7\u00a03 matrix at three different dosages: right column (1x), middle column (2x) and left column (4x). mCherry mRNA was delivered to the same spots at three different dosages as follows: bottom row (1x), middle row (2x) and top row (4x). To generate this pattern, we delivered GFP and mCherry mRNAs using our interleaved transfection protocol to achieve highest co-transfection efficiency (this pattern is also reproducible using standard transfection protocols, although with reduced efficiency). In the process, 1x concentration of GFP (1.8 ng; 0.2 ng per spot) was delivered to the plate while all nine magnets were active. In the next step, another 1x concentration of GFP (1.2 ng; 0.2 ng per spot) was delivered to the cells while the 3 magnets of the rightmost column were inactive. Finally, 2x concentration of GFP (1.2 ng; 0.4 ng per spot) was delivered to the cells while the middle and the rightmost columns of 6 magnets were inactive. A similar process was repeated for the mCherry along the perpendicular direction (i.e. by activating/inactivating magnets along the horizontal rows rather than the vertical columns). Scale bars: 100 \u00b5m in (b), 1 mm in (d).\n\nPrecise dosage control and transfection gradients can be achieved as shown in Figure 2d where NPCs were spotted with GFP and mCherry mRNAs at three different dosages horizontally and vertically, respectively. This resulted in a matrix of spots with varying combinatorial dosages of two mRNAs ranging from 4x/4x (top left spot) to 1x/1x (bottom right spot).\n\n### Screening of transcription factors for dopaminergic neurons\n\nParkinson's disease is one of the most common neurodegenerative disorders resulting from the functional loss of dopaminergic neurons in substantia nigra pars compacta of midbrain (Lees et al., 2009). Dopamine replacement therapy and deep-brain stimulation can improve the quality of life, however the long-term shortcomings of these treatments make the alternative option of cellular replacement attractive. Therefore, deriving dopaminergic neurons in vitro from pluripotent stem cells or progenitors either for cell therapy or for basic research is of critical importance, since other cell resources are quite limited and unreliable. However, deriving sufficiently pure cultures of dopaminergic neurons remains a key challenge.\n\nTo directly assess the contributions of many exogenous gene expression cocktails on the efficiency of dopaminergic neuron differentiation, we performed a combinatorial screen of transcription factors delivered by modified mRNA. We used proliferative NPCs, due to their relative ease to expand and culture as monolayers in the presence of growth factor mitogens (bFGF and EGF), and conducted the screen using a pool of midbrain-specific transcription factors reported in the literature to be involved in either the fate specification, survival, or maintenance of ventral midbrain dopaminergic cells (OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, and PITX3) (Hegarty et al., 2013; Abeliovich and Hammond, 2007; Ang, 2006). While OTX2, ASCL1, and NGN2 are essential during early neural development for the correct positioning of isthmus organizer and the development of the midbrain (Martinez-Barbera et al., 2001; Puelles et al., 2003; Kele et al., 2006), FOXA2 and LMX1A are necessary for the correct positioning of dopaminergic cell types along the ventral-caudal axis of the midbrain (Nakatani et al., 2010). PITX3 has been shown to be expressed in all dopaminergic neurons in the CNS during maturation and, together with NURR1, is necessary for their survival and maintenance (Saucedo-Cardenas et al., 1998; Peng et al., 2011; Martinat et al., 2006). Based on these findings, we hypothesized that temporally controlled delivery of these transcription factor combinations might be important for dopaminergic neuron differentiation.\n\nWe used two different mediums: (1) an initial expansion medium containing the mitogens bFGF and EGF (proliferative NPC stage) and (2) a subsequent differentiation induction medium lacking the mitogens in order to induce neurogenesis (induction stage; Figure 3a). On day 4, the differentiation medium was supplemented with BDNF, GDNF, and ascorbic acid to improve cell survival, and also with dibutyryl-cAmp and TGF-\u03b23 to enhance differentiation. Neural differentiation media formulated with these supplements have been shown to support dopaminergic differentiation (Kriks et al., 2011; Maroof et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig3-v2.jpg)\n\n**Figure 3.:** (a) Timeline of the mRNA-induced differentiation process (proliferative NPC stage from day \u22122 to 0; early induction stage after day 0). Red arrows indicate time points of transfection before mitogen growth factor removal, transfection after growth factor removal (induction stage), and the final analysis at 17 days after growth factor removal. (b) Immunocytochemistry at day 17 for TH (green) showing upregulation of TH when FOXA2 is delivered to NPCs (FoN), when PITX3 is delivered to NPCs (PtN), and when LMX1A is delivered either to NPCs (LmN) or during induction (LmI). Combinations of these three conditions also increase the number TH+ neurons. (c) Double staining (MAP2+/TH+) results from cells transfected with the most effective combination (FoN\u00a0+PtN\u00a0+ LmI) compared to non-transfected cells (Diff. Medium). (d and e) Quantitative TH gene expression analysis at day 17 comparing all single factors delivered at NPC (N) and early induction (I) stages (d), and temporal transfection of the selected combinations of double and triple factors (e). All quantifications were done with n\u00a0=\u00a03 independent experiments (mean\u00a0\u00b1s.e.m), ***(p<0.001), **(p<0.01), *(p<0.05) (compared to control, Dunnett's test). Abbreviations: TH, tyrosine hydroxylase; Ot, OTX2; Lm, LMX1A, Fo, FOXA2; As, ASCL1; Ng, NGN2; Nr, NURR1; Pt, PITX3; Superscript \u2018N\u2019, proliferative NPC stage; Superscript \u2018I\u2019, induction stage after mitogen withdrawal. Scale bars: 1 mm in (b), 100 \u00b5m in (c).\n\nTranscription factors were delivered individually either during the proliferative NPC stage (Day \u22122, before mitogen removal) or the induction stage (Day 0, upon mitogen removal) as indicated by the superscripts N or I on each factor, respectively. Immunofluorescence results at day 17 indicated a significant increase in\u00a0tyrosine hydroxylase (TH)+ neuron yield only in spots transfected with LMX1A, FOXA2, or PITX3 (Figure 3b and d). Interestingly, among spots transfected during induction stage, LMX1A (LmI) was the only factor that significantly increased the yield of TH+ neurons on its own (p<0.01, 40 \u00b1 5% TH+/MAP2+ cells compared to the control, 22 \u00b1 4%). On the other hand, significantly more TH+ neurons were counted in spots transfected during the NPC stage with either FOXA2 (FoN) (TH+/MAP2+, 27 \u00b1 4%, p<0.05), PITX3 (PtN) (TH+/MAP2+, 35 \u00b1 3%, p<0.01), or LMX1A (LmN) (TH+/MAP2+, 32 \u00b1 3%, p<0.01), albeit with less effect than post-induction transfection with LMX1A (LmI) (Figure 3b). These results suggest that FOXA2 and PITX3 are more efficient when delivered to NPCs whereas LMX1A is more efficient when delivered during induction of differentiation after mitogen removal. Although OTX2, ASCL1, NGN2 are thought to play a role in dopaminergic differentiation, in our experiment their direct overexpression did not increase TH+ neurons. Since we used human NPCs, previous results reporting that ASCL1 enhances TH\u00a0+neurons derived from IPSCs (Theka et al., 2013)may indicate that ASCL1 is only required during pre- or immediate early-neurogenesis stages. OTX2 expression may also have a similar role, since it is known to be necessary for the early patterning of midbrain/hindbrain regional identity.\n\nWe next investigated the temporal requirement of the selected transcription factors using combinatorial screening (FoN, PtN and LmI). While FOXA2 (FoN) and PITX3 (PtN) were only used for pre-induction NPCs, post-induction was performed only with LMX1A (LmI) on differentiating cells. Although all dual combinations increased the number of converted cells, triple combination of these factors (FoN\u00a0+PtN\u00a0+ LmI) produced significantly more TH+ cells (p<0.001, 68 \u00b1 5% TH+/MAP2+) than any other combination (Figure 3c). Gene expression analysis at day 17 of differentiation (Figure 3e) confirms robust seven-fold over-expression of TH in response to the FoN\u00a0+PtN\u00a0+ LmI triple combination of factors when compared to non-transfected cells.\n\nWe then proceeded to characterize the identity of the TH+ cells derived from the FoN\u00a0+PtN\u00a0+ LmI combination in greater detail using gene expression analysis for selected mid-brain specific neuronal makers. We used standard lipid-based transfections (Stemfect reagent; 12-well microplates) for this experiment and performed parallel gene expression and immunocytochemical analysis (staining for DAPI, MAP2, FOXA2 and TH) (Figure 4a and b; a list of TaqMan assays used in this research is given in Supplementary file 2). Neuronal identity (MAP2+) was observed in\u00a0~98% of both FoN\u00a0+PtN\u00a0+ LmI transfected cells and the non-transfected controls. Double staining indicated robust expression of FOXA2 in both transfected (p<0.05, 95 \u00b1 2%, FOXA2+/DAPI+) and non-transfected (70 \u00b1 4%, FOXA2+/DAPI+) cells, suggesting the differentiated cells in both populations adopted a ventral midbrain identity (Figure 4b). However, transfected cells yielded significantly higher FOXA2+ neurons co-expressing TH (p<0.001, 75 \u00b1 4%, TH+/FOXA2+) compared to non-transfected cells (30 \u00b1 3% FOXA2+/TH+). Gene expression analysis also confirmed the robust up-regulation of numerous midbrain-specific markers compared to non-transfected controls (Figure 4c). Among the transfected transcription factors, LMX1A was up-regulated by eleven-fold, FOXA2 by nine-fold and PITX3 by five-fold 2 weeks after transfection with the FoN\u00a0+PtN\u00a0+ LmI combination. Surprisingly, two of the non-effective transcription factors used in our initial screen (OTX2 and NURR1) were also up-regulated by eight- and four-fold respectively. A well-known midbrain regional marker expressed in substantia nigra DA neuron sub-types (VMAT2) was also up-regulated by more than five-fold, further confirming that our optimized triple combination of transcription factors (FoN\u00a0+PtN\u00a0+ LmI) gives rise to dopaminergic neurons with midbrain identity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig4-v2.jpg)\n\n**Figure 4.:** (a) Immunocytochemistry at day 17 for TH (green), MAP2 (red), FOXA2 (red) and DAPI (blue) performed in microwell plates; comparing triple staining DAPI+/MAP2+/TH+ and DAPI+/FOXA2+/TH+ between non-transfected cells in differentiation medium alone (top) to FoN\u00a0+\u00a0PtN\u00a0+ LmI transfected cells (bottom). (b) Quantification of data presented in (a). The percentage of cells expressing FOXA2 increases from 72% in non-transfected cells to 95% in cells transfected with the combination of FoN\u00a0+\u00a0PtN\u00a0+ LmI (left panel, FOXA2/DAPI). The percentage of the FOXA2 positive cells that also co-express TH increases from 32% in non-transfected cells to 75% in cells transfected with the combination of FoN\u00a0+\u00a0PtN\u00a0+ LmI (right panel, TH/FOXA2). (c) Gene expression analysis at day 17 for the indicated midbrain specific markers. Quantifications were done with n\u00a0=\u00a03 independent experiments (mean\u00a0\u00b1\u00a0s.e.m), ***p<0.001, **p<0.01, *p<0.05 (compared to control, Student\u2019s t-test). Abbreviations: TH, tyrosine hydroxylase; Lm, LMX1A; Fo, FOXA2; Pt, PITX3; Superscript \u2018N\u2019, proliferative NPC stage; Superscript \u2018I\u2019, induction stage after mitogen withdrawal. Scale bars, 100 \u00b5m.\n\n## Discussion\n\nDuring the past decade, there have been significant efforts to generate different cell types, such as dopaminergic neurons, from human pluripotent stem cells (hPSCs) (Kriks et al., 2011; Theka et al., 2013; Friling et al., 2009; Lee et al., 2010), typically by supplementing the cell medium with various growth factors. In addition to growth factor-based differentiation protocols, exogenous overexpression of transcription factors (such as the single transcription factor LMX1A [Friling et al., 2009] or the combined overexpression of FOXA2 and NURR1 [Lee et al., 2010]) using DNA vectors can partially enhance the number of TH positive dopaminergic neurons during differentiation of pluripotent stem cells under various culture conditions. However, directly comparing differentiation efficiencies across laboratories has been impractical due to the differences in experimental protocols. Although various yields and purities of dopaminergic neural differentiation from hPSCs and/or mutipotent NPCs have been reported\u2014ranging from low (i.e. 10%) to high (80%)\u2014much of this variation can be attributed to differences in starting cell lines, growth factor cocktails, use of recombinant vs. purified proteins, cell purification procedures, and/or co-culture with other cells such as astrocytes (Engel et al., 2016). Our high-throughput magnetically-guided spotting platform, where many factors and conditions can be simultaneously tested side-by-side and compared under the same laboratory conditions, can in the future allow for more accurate and quantitative comparisons.\n\nOur high-throughput technology enables the rapid exploration of large combinatorial spaces of transcription factors by massively parallelizing the uniform delivery and transfection of mRNAs to unusually small spot sizes. In the present study, we demonstrate the combinatorial and temporal delivery of a pool of midbrain-specific transcription factors to generate dopaminergic neurons. We show that combinatorial delivery of LMX1A, FOXA2, and PITX3 is highly effective in generating dopaminergic neurons from neural progenitors, with LMX1A significantly increasing TH-expression levels when delivered during both the proliferating NPC stage and in the early neural induction stages upon mitogen withdrawal, while FOXA2 and PITX3 only exhibit high efficacy before neural induction.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>OTX2</td>\n      <td>NA</td>\n      <td>HGNC:8522</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>LMX1A</td>\n      <td>NA</td>\n      <td>HGNC:6653</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>FOXA2</td>\n      <td>NA</td>\n      <td>HGNC:5022</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>ASCL1</td>\n      <td>NA</td>\n      <td>HGNC:738</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>NGN2</td>\n      <td>NA</td>\n      <td>HGNC:13805</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>NURR1</td>\n      <td>NA</td>\n      <td>HGNC:7981</td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>PITX3</td>\n      <td>NA</td>\n      <td>HGNC:9006</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>hNP1</td>\n      <td>EMD Millipore</td>\n      <td>EMD Millipore:SCR055; RRID:CVCL_GS51</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FOXA2 (mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam:ab60721</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-MAP2 (chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam:ab5392</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Tyrosine Hydroxylase (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam:ab112</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>VMAT2 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs00996835_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GAPDH (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs02758991_g1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>OTX2 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs00222238_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PITX3 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs01013935_g1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>FOXA2 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:HS00232764_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LMX1A (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs00892663_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TH (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs0016594_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MAP2 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs00258900_m1</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NURR1 (TaqMan assay)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific:Hs00443062_g1</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nThe H9-derived human neural progenitor cell line (hNP1) was obtained from Aruna Biomedical (Athens, GA; now distributed as ENStem-A, EMD Millipore #SCR055). Each lot of ENStem-ATM Human Neural Progenitor Cells has been validated for high levels of expression of Nestin and Sox2 and low level expression of Oct4. The ability of ENStem-ATM cells to differentiate into multiple neuronal phenotypes and maintain a normal karyotype after multiple passages has been verified by the manufacturer, and the cells have been confirmed to be negative for mycoplasma. Cells were expanded on Matrigel-coated (Corning Inc., Corning, NY) six-well plates with the supplier\u2019s expansion medium. Starting from passage two, the expansion medium was gradually changed (25% medium replacement per passage) to N2/B27 in DMEM/F12 supplied with bFGF/EGF (20 ng/ml, Thermo Fisher Scientific, Waltham, MA). Cells were passaged at the split ratio of 1:2 by cell scraper. All experiments were done with cells in passages 7\u201311.\n\n### Synthesis of modified synthetic transcription factor mRNAs\n\nOur mRNA synthesis methodology has been previously described (Angel and Yanik, 2010). Briefly, dsDNA templates were linearized from cDNA clones in pCMV6 vectors for OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, PITX3, EGFP, and mCherry (OriGene, Rockville, MD). To maximize the stability of mRNA transcripts and increase protein translation, we added 5\u2019 and 3\u2019 untranslated regions from human Beta-globin gene (Hbb) to the templates by ligating with E. coli DNA ligase (New England Biolabs, Ipswich, MA). A T7 promoter was also added to the 5\u2019 UTR to facilitate in vitro transcription. Assembled templates were cloned into the pCR-Blunt II TOPO vector and inserted in TOP10 chemically competent E Coli to propagate using the Zero Blunt TOPO PCR Cloning Kit (Thermo Fisher Scientific). Plasmids were purified using EndoFree Plasmid Maxi Kit (Qiagen, Hilden, Germany). Templates were linearized from plasmids then amplified by high-fidelity PCR using KAPA HiFi PCR Kit (KAPA Biosystems, Wilmington, MA). PCR products were separated by agarose gel electrophoresis and purified using QIAquick Gel Extraction Kit (Qiagen). Cap 1-capped, poly(A) tailed mRNA was synthesized from the purified templates by in vitro transcription using the mScript mRNA Production Kit (CellScript, Madison, WI). All mRNAs were synthesized with complete substitution of uridine and cytidine with the modified nucleosides pseudouridine-5-triphosphate (pseudo-UTP) and 5-methylcytidine-5\u2019-triphosphate (5-methyl-CTP), respectively. The mRNAs were purified using an RNeasy Mini kit (Qiagen). To ensure the transcripts were produced with right poly(A) tail, we analysed the samples both before and after tailing using formaldehyde-agarose gel electrophoresis. SUPERase In RNase Inhibitor (Thermo Fisher Scientific) was added to mRNAs at concentration of 1 ug/20 ug.\n\n### RNA transfection and differentiation\n\nFor directed differentiation experiments without spotting, cells from passages 7\u201311 were plated on 12-well plates in expansion medium (DMEM/F12/N2/B27/bFGF/EGF). For temporal analysis, growth factors (bFGF and EGF) were kept in the medium for two additional days, which led us to seed the cells at the appropriate split ratio to reach the optimal surface confluency of 30\u201340% the next day and final cell density of 90% after removal of growth factors. For mRNA transfection, we used lipid-based Stemfect RNA transfection kit (Stemgent, Cambridge, MA) and complexed it with each RNA separately with 10 min of incubation. For all transfections, 100 ng total RNA was complexed with 1 \u00b5l Stemfect reagent in 20 \u00b5l Stemfect buffer. Cell culture medium was changed to N2/B27 without growth factors, and complexed RNA was resuspended in the medium followed by 4 hr of incubation. After transfection, for transfection at the proliferative NPCs stage (N), the medium was changed back to N2/B27/bFGF/EGF for two more days. For transfection post-induction (I), the medium was changed to B27 without growth factors 4 hr prior to transfection, and followed by the addition of RNA/lipid complex, 4 hr of incubation, and changing to fresh B27 medium. For both pre- and post-neural induction (with or without mitogens, respectively) transfection protocols, differentiation was started 72 hr after plating the cells by removing the growth factors and changing the medium to B27. The medium was changed every other day. On day 4, medium was supplemented with brain-derived neurotrophic factor (BDNF, 20 ng/ml; R and D\u00a0Systems,\u00a0Minneapolis, MN), glial-derived neurotrophic factor (GDNF, 20 ng/ml; R and D\u00a0Systems), ascorbic acid (0.2 mM; Tocris), dibutyryl cyclic adenosine monophosphate (Dc-Amp, 0.5 mM; Sigma-Aldrich, St. Louis, MO), and transforming growth factor type \u03b23 (TGF-\u03b23, 1 ng/ml; R and D Systems). Cells were cultured in this medium until they were ready for end-point assays at day 17 post-differentiation, and were either fixed for image analysis or collected for qRT-PCR analysis.\n\n### Magnetic spotting methodology\n\nFor magnetofection of cells with spotted synthetic mRNA, cells from passages 7\u201311 were transferred to 12-well glass-bottom plates (Cellvis, Mountain View, CA) at optimised density of 30\u201340% in expansion medium (DMEM/F12/N2/B27/bFGF/EGF). With the 12-well plate format, a total number of 36 magnetic hotspots could be accommodated under each well. In order to deliver the RNA to the magnetic hotspots, we used CombiMag magnetofection transfection reagent (OZBiosciences, Marseille, France). CombiMag contains magnetic nanoparticles that can be mixed with all transfection reagents and improves their efficiency by means of magnetic field. We mixed mRNA with magnetic nanoparticles and complexed it with Stemfect reagent during a 5\u201310 min incubation according to the manufacturers\u2019 recommended ratios. Localized transfection was initiated by replacing the medium in the wells with N2/B27 medium in which the complexed mRNA/lipid/nanoparticles had been resuspended. The concentration of the mRNA complex was adjusted based on the number of spots to be transfected per well (0.6 ng RNA per 1.5 mm diameter spot), ensuring that each spot received an equivalent amount of mRNA. Plates were then moved onto the spotting system with the desired magnetic patterns pre-programmed as described. The incubation time for magnetofection was 2 min per transfection. This transfection process was repeated for each mRNA factor until all desired combination were delivered to the spots. The medium was changed between each transfection with new N2/B27 containing the appropriate mRNA complex. The number of medium changes scale linearly with the number of transcription factors delivered to each well. For temporal transfection during the proliferative NPC stage, growth factors were added to the medium after the final round of spotting. For differentiation, the medium was changed to B27 with the remainder of the protocol similar to the standard differentiation protocols discussed in the previous section.\n\n### Immunocytochemistry\n\nCell were fixed in 4% paraformaldehyde in TBST for 15 min, permeabilized for 10 min in 0.2% Triton X-100, blocked with 1% casein for 60 min, and incubated overnight at 4\u00b0C with appropriate antibodies in 50/50 1% casein/TBST. Fixed cells were then incubated with secondary antibodies for 60 min (Alexa Fluor 488, 555 and 647 Dye, Molecular Probes, Eugene, OR). DAPI (Thermo Fisher Scientific) was used as nuclear counterstain. Antibodies used are as follows: mouse Foxa2 (ab60721, Abcam, Cambridge, MA), chicken MAP2 (ab5392, Abcam) and rabbit TH (ab112, Abcam)\n\n### Gene expression analysis (qRT-PCR)\n\nTotal RNA was collected and purified using an RNeasy Mini Kit (Qiagen), measured using a NanoDrop 1000 spectrophotometer (Thermo Fisher Scientific), and gene expression analysis was performed using commercially available TaqMan gene expression assay (Applied Biosystems, Foster City, CA; a list of TaqMan assays is given in Supplementary file 2). The qRT-PCR was done in one-step, 20 \u00b5l reactions with 15 min reverse transcription at 50\u00b0C, 2 min initial denaturing at 95\u00b0C followed by 40 cycles of 15 s/95\u00b0C and 1 min/60\u00b0C. Three individual samples with three replicates each were used for gene expression analysis, and the data were normalized to GAPDH.\n\n### Cell counting and statistical analysis\n\nFor image acquisition, we used a high-performance laser-based confocal imaging system (INCell 6000, GE Healthcare, Chicago, IL). For non-spotting experiments, a total of 27 random images were taken for each condition from three independent experiments. For spotting experiments, images were taken from spotted areas in three independent experiments. Cell counting was performed using CellProfiler (Carpenter et al., 2006). To count the cells, we first counted the number of DAPI-positive cells, followed by counting the number of cells expressing the marker of interest. Student's t-test (comparing two groups) was used for statistical analysis. Co-localization analysis was performed using the WCIF-ImageJ software package and the Image Correlation Analysis plugin (Schneider et al., 2012). The plugin uses Pearson\u2019s Correlation Coefficient (PCC) for quantifying the correlation between two channels, as well as calculating Mander\u2019s Overlap Coefficient (MOC).\n\n### Code availability\n\nLabView files for programming of the dual-magnet array are available online from GitHub (https://github.com/rezaie99/ELIFE-050518; copy archived at https://github.com/elifesciences-publications/Yanik_et_al_2018) (Ghannad-Rezaie, 2018).\n",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "dd12b160-8afc-41a9-8982-c5e46b10b267",
+      "submission_id": "6d807603-29dd-4564-96f7-862a92f87668",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31922.016](https://doi.org/10.7554/eLife.31922.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Combinatorial Programming of Human Neuronal Progenitors Using Magnetically-Guided Stoichiometric mRNA Delivery\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we wish to convey that we find the manuscript of potential interest for eLife, but we need to reject the manuscript in its present form because there are too many unresolved technical issues. These issues have been discussed separately in both reviews. Should you be able to address these substantial concern, we would be interested in receiving a revised version of the manuscript.\n\nReviewer #1:\n\nThe manuscript by Azimi et al. describes the development of a new technique for focused transfection of cultured cells that is compatible with combinatorial gene expression studies. They demonstrate the utility of this approach by testing combinations of transcription factors known to be involved in the specification of ventral midbrain dopaminergic neurons. They identified LMX1A, PITX3 and FOXA2 as the most optimal combination of factors and show that PITX3 and FOXA2 factors need to be delivered to dividing progenitors while LMX1A can be delivered to postmitotic neurons. While these three factors were previously shown to promote dopaminergic neuronal identity, this study adds by probing temporal requirements of individual factors.\n\nThe major concern with the described method is that it requires the preparation of transfection reagents in large volumes as the entire plate is filled with the solution while only few spots are being transfected. Besides being costly, it might be challenging to perform multiple complete media replacements for truly large scale combinatorial analysis of gene function without disturbing the plated cells. It is not immediately obvious what the principal advantages of the described assay are, compared to preforming the same experiment in a 96 well plate format. The manuscript seems more appropriate for methods journal than eLife.\n\n1) The magnetic transfection device and methods need to be described in a greater detail to allow reproduction of the experiments in other labs. For example, the types and provenance of magnets is not obvious. What magnetic fields were tested to achieve optimal transfections and focusing of magnetic particles? Are the top 20mm magnets circular? How does it affect focusing of the particles in the dots aligned with the centers vs spaces between these large magnets?\n\n2) The authors argue that mRNA transfection is superior to plasmid transfection as it allows for better temporal control of gene expression. However no data are provided measuring the kinetics of gene expression \u2013 analysis of destabilized GFP or short-lived proteins following magnetofection. Furthermore, the authors should complement their data with a direct comparison of the mRNA vs. plasmid delivery. Demonstrating the use of this technique for simple plasmid transfection is important as long term/stable gene expression might be preferable in many instances. Moreover, the simplicity of plasmid preparation compared to mRNA synthesis would make the technique more generally accessible and interesting to a broader audience.\n\n3) Uniformity of delivered RNA copy-numbers and stoichiometries: Figure 2B shows that the 4 pulses of transfection achieve higher level of GFP and RFP expression. The apparent increase of transfection homogeneity shown in Figure 2C could therefore simply be a consequence of higher reporter expression with more cells reaching saturation. The authors need to compensate the exposure to achieve comparable overall intensity and saturation (i.e. shorter exposure of the 4x experiment) and replot GFP:RFP ratios to more realistically determine whether better homogeneity of expression has been achieved.\n\n4) The authors should comment on the way they switch media between magnetofections \u2013 does 4x mean 4x change of media or 4x magnet application with the same media? Do media changes result in neuronal detachment and might that influence final cell counts? Overall it is not clear whether this tool, as described, could be used for \"massively combinatorial screening\". Experiments performed with few transcription factors do not demonstrate massive parallel screening and therefore references the language should be appropriately toned down.\n\n5) Related to point 2, how long are exogenous FOXA2 and PITX3 proteins detectable in transfected cells and at what point are endogenous factors induced? The authors should epitope tag transfected factors to distinguish them from the induced endogenous factors and probe kinetics of their expression.\n\n6) The text is in places too speculative and hard to follow, there are several typos and panel in Figure 3B does not agree with Figure 3D (see values for PtM vs. PtP, FoM vs. FoP) \u2013 very confusing\u2026\n\nReviewer #2:\n\nThis is an interesting technical development for the field. Transcription factors control cell differentiation during embryonic development, thus an appealing tool to guide in vitro cell differentiation for clinical applications. However, these transcription factors work not only in combination but also at different times during development. Thus, to achieve proper and precise in vitro cell differentiation guided by transcription factors it is not only necessary to express combinations of factors but also to do so at different differentiation stages. The method presented by Azimi and co-workers has the potential to accomplish both tasks. Moreover, it can do so in a scalable and multiplexing manner conducive for genetic screens. The value of this paper is the technology and its potential. Thus, I believe that it deserved a better description of the method. The proof of principle for generating TH positive neurons is extremely welcome and elevates the manuscript. However, it will require more experiment to convincingly show that these cells are actual midbrain dopaminergic that are beyond the main innovation presented here. However, a minimal extra quantification will elevate the claims.\n\n1) A better description of the magnet control is necessary for a general audience. Also, a picture or a more desirable video in supplementary data will help to visualize the device and its function. This is a key development and should be understandable by all possible future users.\n\n\"'inactivating' unwanted magnets via pushing them significantly down along the z-axis\". Pushing the top magnet down does not displace them away from the substrate. Unless this refers to the control of the bottom magnets before the plate is inserted, I am confused by this statement: \"The displacement of a magnet as little as 5 mm in z-axis away from the substrate surface is sufficient to eliminate the effect of magnet's magnetic field on the spotting field.\" Is there a single z-axis manipulator per bottom magnet? Or a single manipulator that moves in the x-y space pushes one magnet at the time? The figure suggests a big plate pushing all the pins.\n\n2) The transfection efficiency and consistency is a key factor in the success of this type of approaches. Thus, an important aspect of this technology to be scalable.\n\nIt is clear that a large fraction of the cells express both fluorescent proteins in the improved protocol (Figure 2B). It would be nice to complement Figure 2C with a quantification of the percentage of transfected cells. The authors mention \"90%\" in the text, thus I assume they have measured. Reporting the actual% over DAPI and its error will provide an estimation of the variability of the method. By the same token, is the PCC calculated from a single transfection or with data from multiple days?\n\n3) I could not find any experiment that validates the expression of other transcription factor other than an increase in FoxA2 over the already high percentage of cells that endogenously express it during differentiation. This manuscript will benefit from a simple validation of at least a couple of them with by antibody staining.\n\n4) This comment is related to the comment above. A potential transformative feature of this new technology is the ability to introduce transcription factors at different states of differentiation, in particular postmitotic stage. Since current methods have limitations, the ability to transfect postmitotic neuros at high efficiency is a highly desirable feature of any protocol. However, I see no evidence that this method actually transfects postmitic neurons. Thus, although the temporal claims in Figure 3 are supported by the experiment, the labeling between mitotic and postmitotic are not. There are very simple experiments to address this point.\n\n5) Dopaminergic neurons are characterized by the expression of several genes. Although required, TH expression by no means is indicative of dopaminergic fate. Thus, additional stainings such as TH in combination with Dbh or Tph2 will demonstrate better that these cells are DA neurons. Also, since the authors have the cDNA, qPCR quantification of other monoaminergic genes will enhance the claims of DA fate over other cell types (i.e. Gad1, Vglut, Sert, Dat, Net, Dbh, Tph).\n\n6) Figure 3B and Figure 3D do not agree. In Figure 3B Fom and Ptm increase TH staining while in Figure 3D Fop and Ptp increase TH. This discrepancy needs clarification since it concerns the conclusion of each factor's activity period to induce TH. I believe this discrepancy also extends to Lmx1b.\n\n7) Figure 2D is beautiful. Please add the concentration for each axis and describe the method. Is this with the single transfection per concentration or it requires interleaved (4x) per concentration? Or alternatively, 4x for GFP is 4x interleaved vs. 1x was a unique event?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Combinatorial Programming of Human Neuronal Progenitors Using Magnetically-Guided Stoichiometric mRNA Delivery\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and two reviewers, one of whom, Sacha B Nelson, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. In considering the nature of this contribution, we suggest this should be viewed as a Tools and Resources paper rather than in the category of a Research Article. That will not affect any aspect of the way this paper is published should the revised version be accepted by the Board.\n\nSummary:\n\nThe authors describe a new magnetic spotting technology that permits much more reproducible transfection of cultured cells. By directly transfecting mRNA, they greatly reduce the variability typically associated with plasmid transfection, and by using a device that permits simultaneous magnetotransfection in a multi well format they present a system suitable for high throughput studies. Using this system they demonstrate optimized combinations of transcription factors for generating dopaminergic neurons from stem cells. Although technical in nature, this seems an important development that will help put the field of stem cell biology on a more quantitative footing, a development that is sorely needed.\n\nEssential revisions:\n\n1) Both reviewers felt the comparison with standard transfection methods was unclear. There is no direct comparison to other methods. An image presented in the reply to reviewers makes the essential point, but this point is likely to be lost on most readers of the paper, even including many who routinely use transfection, but do not try to quantify its reproducibility. The correlation coefficients and MOC values obtained seem impressive, but many readers may have no idea how this compares to other methods. The authors should either use some of their own experiments to document the improvement that results from a) RNA over DNA transfection and b) magnetotransfection, or they should use some published data on reproducibility and then analyze their own data in such a manner as to allow comparison. I do not think it necessary to quantitatively assess the two components (RNA and the controllable magnets) separately, although some indication of their relative importance should be provided. Presumably the main reproducibility factor is the RNA and the magnets just allow the neat trick of multiplexing factors and/or dosages.\n\nThe fact that the RNA is more reproducible because it is not subject to the multiplicative effect of transcription was not made directly. The focus on numbers of molecules transfected is confusing, since as pointed out by one reviewer, plasmids are not so much larger than the modified RNA molecules.\n\nAlong the same lines, it would be helpful to provide benchmarks for readers unfamiliar with current state of the art in differentiating stem cells into dopamine neurons. How do the current results compare? How much of an improvement is this? This is very hard to glean without going through all of the cited papers and other relevant literature.\n\n2) There is not much in the way of consideration of limitations. Most notably, is the method known to be applicable to postmitotic cells? If not, the authors should be clearer on this point. The authors seem to imply that they do not really know if the cells are postmitotic or not when the \"postmitotic\" transfection is performed. Does the nuclear membrane need to break down for high efficiency? This won't affect experiments on stem cells and cell lines but the methods are potentially also applicable to differentiated cells and whether or not this is the case should be communicated. This point was also raised by a prior reviewer, but was not directly addressed.\n\nThe authors do not need to do additional experiments to address this point. They only need to state more clearly what they do and do not know about the transfection. If they have no existing data on truly post mitotic cells, they should take care not to imply that the cells they are transfecting are post mitotic unless they are sure that they are.\n\n[Editors\u2019 note: minor issues and corrections have not been included, so there is not an accompanying Author response.]\n\nThank you for submitting your article \"Combinatorial Programming of Human Neuronal Progenitors Using Magnetically-Guided Stoichiometric mRNA Delivery\" for consideration by eLife. Your article has been reviewed by a Reviewing Editor in consultation with a Senior Editor.\n\nThe many changes made in the manuscript adequately address all of the concerned raised in earlier reviews with one exception. The opening statement \"The human nervous system contains hundreds of distinct subtypes of neurons\" is in my opinion a vast underestimate and should minimally be qualified with \"at least\". In addition, the reference cited (#1) does not make any statement about the numbers of cell types in the human or any other nervous system, hence I believe citing it in this context is incorrect.\n",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "25ce4d91-fdfc-4c97-9a2a-4aea0416b6cd",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C1",
+      "claim": "The human nervous system contains at least hundreds of distinct subtypes of neurons that are necessary to create complex circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The human nervous system contains at least hundreds of distinct subtypes of neurons that are necessary to create complex circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the nervous system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ac966ac4-5a87-408e-a7ce-01f75131f289",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C2",
+      "claim": "Known extracellular trophic factor cocktails do not enable sufficient control and specificity to efficiently reprogram progenitor populations to a desired differentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant effort has shown that known extracellular trophic factor cocktails, although useful, do not enable sufficient control and specificity to efficiently reprogram progenitor populations to a desired differentiated state (Kriks et al., 2011; Maroof et al., 2013; Shi et al., 2012a; Shi et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "6605327c-f67f-4362-81f9-b014122f930a",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C3",
+      "claim": "Yamanaka demonstrated the potential of transcription factor-based reprogramming by reprogramming somatic cells to pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the pioneering work of Yamanaka demonstrated the potential of such an approach by reprogramming somatic cells to pluripotency (Takahashi and Yamanaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Yamanaka study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "3fd61274-d530-47bd-ae44-758d32caf01f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C4",
+      "claim": "Cell fate decisions during neurogenesis are mediated through the unique and highly coordinated temporal and spatial expression of hundreds of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neurons inherit the same genes, cell fate decisions during neurogenesis are mediated through the unique and highly coordinated temporal and spatial expression of hundreds of transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about neurogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "7efc6161-1263-4a8f-ae84-662ebc4d6771",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C5",
+      "claim": "Plasmid or non-replicative viral vectors afford only crude temporal control over transcription factor levels and stoichiometries while depending on a proliferative cellular state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach has severe limitations: (1) it affords only crude temporal control over transcription factor levels and stoichiometries while depending on a proliferative cellular state, (2) the copy numbers delivered to the cells are highly variable, and (3) the use of any DNA or integrative viral vector entails the risk of integration-induced mutagenesis leading to functional genetic alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known limitations of DNA-based delivery methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "2700cfe4-04cd-4aff-a48c-6cbca7f00b6b",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C6",
+      "claim": "The copy numbers delivered to cells by plasmid or non-replicative viral vectors are highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach has severe limitations: (1) it affords only crude temporal control over transcription factor levels and stoichiometries while depending on a proliferative cellular state, (2) the copy numbers delivered to the cells are highly variable, and (3) the use of any DNA or integrative viral vector entails the risk of integration-induced mutagenesis leading to functional genetic alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known limitations of DNA-based delivery methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "df0a4050-be2c-480c-b3e3-1e8370b21128",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C7",
+      "claim": "The use of DNA or integrative viral vectors entails the risk of integration-induced mutagenesis leading to functional genetic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach has severe limitations: (1) it affords only crude temporal control over transcription factor levels and stoichiometries while depending on a proliferative cellular state, (2) the copy numbers delivered to the cells are highly variable, and (3) the use of any DNA or integrative viral vector entails the risk of integration-induced mutagenesis leading to functional genetic alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known risks associated with DNA-based delivery methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "8e6ee316-4c56-4a6a-ab7c-1491419c8ccc",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C8",
+      "claim": "In vitro synthesized mRNAs represent an important alternative to the use of DNA vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro synthesized mRNAs represent an important alternative to the use of DNA vectors (Karik\u00f3 et al., 2005; Karik\u00f3 and Weissman, 2007; Karik\u00f3 et al., 2008; Angel and Yanik, 2010; Karik\u00f3 et al., 2012; Kormann et al., 2011; Mandal and Rossi, 2013; Warren et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "99f7d06d-67b2-4850-ac56-1cc675f99f7f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C9",
+      "claim": "Suppressing the innate immune response enables high expression levels of transcription factors in cells with repeated mRNA delivery while avoiding the risk of genomic insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "By suppressing the innate immune response to reduce the toxicity of exogenous RNA, we have previously been able to achieve high expression levels of transcription factors in cells with repeated delivery while avoiding the risk of genomic insertion (Angel and Yanik, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "0ebf2e35-cce3-45a7-a7cc-12b1be199a35",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C10",
+      "claim": "The lifetime of mRNA is shorter than that of DNA-based vectors, allowing more precise temporal control of transfected RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, since the lifetime of mRNA is shorter than that of DNA-based vectors, the temporal availability of transfected RNAs can be much more precisely controlled over repeated delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on known properties of mRNA versus DNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "373863fd-76d8-42ac-b7c4-934c0e846523",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C11",
+      "claim": "Testing all possible stoichiometries and temporal delivery patterns of transcription factors would far exceed the capabilities of existing laboratories using 96- or 384-well plate formats.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several transcription factor libraries exist, and significant amounts of microarray and in situ hybridization data are now available, even for the relatively well-studied neuron types, testing all possible stoichiometries and temporal delivery patterns of transcription factors suspected to be involved in lineage specification would far exceed the capabilities of existing laboratories and technologies that use even large-scale formats such as 96- or 384- well plates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combinatorial complexity of the problem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "b405f478-4e0b-45d8-9139-f5bcf1064547",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C12",
+      "claim": "The magnetically-guided spotting platform focuses transcription factors onto 1.5 mm spots using dynamically reconfigurable magnetic-field patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "By focusing transcription factors onto 1.5 mm spots using dynamically reconfigurable magnetic-field patterns, we significantly reduced the footprint of the experiments to enable screening of transcription factor cocktails over large combinatorial spaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "68899a22-52b8-4f73-b899-49a26577300d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C13",
+      "claim": "With the magnetically-guided spotting platform, the amount of RNA and transfection reagent required for a given transcription factor is proportional only to the number of spots actually transfected with that factor, rather than to the total number of possible spots in the array.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, with our technology the amount of RNA and transfection reagent required for a given transcription factor is proportional only to the number of spots actually transfected with that factor, rather than to the total number of possible spots in the array (i.e. to the surface area of transfected cells, not to the total surface area of the plate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the technology developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "1753fa25-e6a7-4f8b-8087-2065ac8c8be0",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C14",
+      "claim": "The number of cell medium changes scales linearly with the number of transcription factors delivered, rather than growing exponentially with the number of combinatorial possibilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cell medium changes we use also scale linearly with the number of transcription factors delivered, rather than growing exponentially with the number of combinatorial possibilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an efficiency advantage of the technology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "b516643a-46e3-4bcb-9c8a-3d43a1e320bc",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C15",
+      "claim": "Testing every possible combination of 5 transcription factors results in 31 unique conditions but requires only 5 medium changes when the magnetically-guided spotting platform is used.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, testing every possible combination of just 5 transcription factors results in 31 unique conditions (i.e. all 5 factors alone, 10 possible 2-factor cocktails, 10 possible 3-factor cocktails, 5 possible 4-factor cocktails, and 1 possible 5-factor cocktail) but requires only 5 medium changes when our platform is used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation demonstrating the efficiency of the platform.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "cdf07ef7-58b3-43c2-953d-ebb9a4eec7ef",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C16",
+      "claim": "The mRNA template was constructed with a T7 promoter and engineered with untranslated regions (UTRs) of highly stable Human \u03b2\u2013globin (Hbb) at both 5' and 3' ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA template was constructed with a T7 promoter and was engineered with untranslated regions (UTRs) of highly stable Human \u03b2\u2013globin (Hbb) at both 5' and 3' ends (Angel and Yanik, 2010), since UTRs play a significant role in mRNA stability (Yu and Russell, 2001; Jiang et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and is shown in Figure 1a. The rationale is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "1ce22b56-261a-4664-bf05-d19d5cad7d34",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C17",
+      "claim": "UTRs play a significant role in mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA template was constructed with a T7 promoter and was engineered with untranslated regions (UTRs) of highly stable Human \u03b2\u2013globin (Hbb) at both 5' and 3' ends (Angel and Yanik, 2010), since UTRs play a significant role in mRNA stability (Yu and Russell, 2001; Jiang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "f6e470c1-e84a-4e62-9f58-69e6bf1fbfaf",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C19",
+      "claim": "Magnetofection yields faster and higher transfection efficiencies than most lipid-based transfection methods, especially for hard-to-transfect cell types such as primary neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetofection has been used for DNA and RNA transfection of cultured cells and yields faster and higher transfection efficiencies than most lipid-based transfection methods, especially for hard-to-transfect cell types such as primary neurons (Sapet et al., 2011; Plank et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d430be6b-bc11-40b4-89d2-cbaa08f3c41b",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C20",
+      "claim": "Standard transfection approaches rely on stochastic diffusion and collision of transfection reagents with cells, which is a slow process that transfects cells non-specifically over the entire surface of the cell culture plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard transfection approaches rely on stochastic diffusion and collision of transfection reagents with cells, which is a slow process that transfects cells non-specifically over the entire surface of the cell culture plate (leftmost panels in Figure 1b and Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of standard methods and is illustrated in Figure 1b and 1c.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "246d1c82-fe06-4b50-befb-1168a490916d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C21",
+      "claim": "Standard magnetofection using a single magnet results in partial transfection of cells that lie outside the target area due to the non-uniform nature of the magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the non-uniform nature of the magnetic field around a single magnet, magnetofection of cells is not spatially limited by the magnet's physical boundaries and therefore results in partial transfection of cells that lie outside the target area (middle panels in Figure 1b and Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of standard magnetofection and is shown in Figure 1b and 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "c60aa3dd-b101-410e-a9f0-323cdded179a",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C22",
+      "claim": "The dual-magnet configuration enables spatially restricted transfection of cells with minimal background transfection outside the boundaries of the magnets.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these limitations, we first introduce a simple dual-magnet configuration which focuses the magnetic field to millimeter-size spots in between pairs of magnets positioned above and below the surface of the plate with opposite poles facing one another (rightmost panel in Figure 1b). This configuration enables spatially restricted transfection of cells with minimal background transfection outside the boundaries of the magnets (rightmost panels in Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a key innovation of the study and is demonstrated in Figure 1b and 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "a9f7de89-7bb7-46d4-a04d-3b5b550b1eb2",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C23",
+      "claim": "Neodymium (NdFeB) rare-earth magnets possess high magnetic anisotropy and high magnetic coercivity.",
+      "claim_type": "EXPLICIT",
+      "source": "They possess high magnetic anisotropy (i.e. they preferentially align their magnetic moment along an 'easy' axis) and high magnetic coercivity (the ability to resist demagnetisation under an external magnetic field).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known physical properties of NdFeB magnets.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "4828f370-d293-4058-a2bf-50210f27b3df",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C24",
+      "claim": "Alnico five magnets and electromagnets were found to be inadequate due to insufficient magnetic field or failure to withstand demagnetisation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to NdFeB magnets, we tested Alnico five magnets and electromagnets and found both to be inadequate due to insufficient magnetic field (electromagnet; B ~ 10 mT) or failure to withstand demagnetisation (Alnico 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental testing of alternative magnet types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "7c2ab771-dde3-4f95-8f14-5a75870c073f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C25",
+      "claim": "The strength of the magnetic field was measured ~500 mT on the surface of top magnets.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the magnetic field was measured ~500 mT on the surface of top magnets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "5bd299af-183b-428a-a10b-e7c1b8a69c73",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C26",
+      "claim": "The magnetic field density on the surface of each bottom magnet is B ~ 300 mT in isolation and B ~ 100 mT when inside the array.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetic field density on the surface of each magnet is B ~ 300 mT in isolation and B ~ 100 mT when inside the array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "2ed8da81-e8e3-43c1-a1a9-49592d4b5c0c",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C27",
+      "claim": "GFP-transfected spots of proliferating and differentiating NPCs remain isolated from each other even after 7 days post-transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Figure 1f shows that the GFP-transfected spots of proliferating and differentiating NPCs remain isolated from each other even after 7 days post-transfection and our results in the subsequent sections show the stability of differentiated cell spots even after 17 days (i.e. when the differentiation protocol is completed).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ae1e3d60-8e37-48e3-9b95-69ebe27a7739",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C28",
+      "claim": "The magnetically-guided spotting platform delivers 0.6 ng of mRNA per 1.5 mm diameter spot (total surface area per spot: ~1.8 mm2).",
+      "claim_type": "EXPLICIT",
+      "source": "Unless otherwise noted, we deliver 0.6 ng of mRNA per 1.5 mm diameter spot (total surface area per spot: ~1.8 mm2) for all of our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "416fe28e-55bf-47af-b330-3383b667c74e",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C29",
+      "claim": "Achieving a comparable level of transfection in a 96-well format requires ~18 fold more reagents than the magnetically-guided spotting platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Achieving a comparable level of transfection in a 96-well format (total surface area per well: ~32.2 mm2) requires ~18 fold more reagents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing reagent requirements between methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "928387dd-8019-4161-84d2-e497c888b60d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C30",
+      "claim": "Small multiwell assays (384- or 1536-well plates) suffer significantly from variation due to edge effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the reagent requirements for multiwell plate screens can be further reduced with 384- or 1536-well plate assays, these smaller formats suffer significantly from variation due to edge effects, which also cause problems for even 96-well screens (Lundholt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "70892dbd-514a-4e25-8ccb-705ae4c43ea3",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C31",
+      "claim": "DNA-based delivery methods are vulnerable to low/variable efficiency because transfected molecules must cross both the plasma membrane and the nuclear envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-based delivery methods are most vulnerable to low/variable efficiency because transfected molecules must be transcribed in order to be effective and therefore must cross both the plasma membrane and the nuclear envelope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on known biological mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "6aace97d-49c8-4dac-bfc9-9278c8cd2116",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C32",
+      "claim": "mRNA-based methods tend to yield much higher transfection efficiencies since transfected molecules need to cross only the plasma membrane to be expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mRNA-based methods tend to yield much higher transfection efficiencies since transfected molecules need to cross only the plasma membrane to be expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on known biological mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "b4fc4f3a-b01c-4ff2-80e7-d64f54f0fc19",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C33",
+      "claim": "A comparison of plasmid- and mRNA-based transfection approaches in human embryonic stem cell-derived retinal pigmented epithelial cells shows that DNA efficiency is only ~10% while RNA efficiency is ~90%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a comparison of plasmid- and mRNA-based transfection approaches in human embryonic stem cell-derived retinal pigmented epithelial cells shows that DNA efficiency is only ~10% while RNA efficiency is ~90% (Hansson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "b00562a7-5063-46b8-8046-2a49d68f948f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C34",
+      "claim": "An extensive comparison of DNA and RNA transfection protocols using immature dendritic cells suggests that DNA-based approaches can achieve transfection efficiencies of 10\u201320% whereas RNA-based approaches can achieve efficiencies of 40\u201380%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an extensive comparison of DNA and RNA transfection protocols using immature dendritic cells suggests that DNA-based approaches can achieve transfection efficiencies of 10\u201320% whereas RNA-based approaches can achieve efficiencies of 40\u201380% (Landi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "cecdfaca-d226-460e-a08a-0d600b3f7673",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C35",
+      "claim": "Interleaved transfection (four transfections of 8 ng each) results in more uniform cell-to-cell expression compared to single transfection (one transfection of 32 ng) when delivering the same total amount of mRNA (64 ng).",
+      "claim_type": "EXPLICIT",
+      "source": "Human neural progenitor cells were cultured in 12-well plates and spotted with mRNAs encoding GFP (Green) or mCherry (Red) using either a standard single transfection process (32 ng of each mRNA) or a quadruple transfection protocol (four transfections consisting of 8 ng of each mRNA per transfection). In both cases the total amount of mRNA delivered to the spots was 64 ng and the medium was changed after each transfection. As shown in Figure 2b, although both methods result in a majority of all cells being transfected, cell-to-cell expression is considerably more variable when using the single-transfection method.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "877b54d7-b8ea-4abd-b357-1b502b14e80e",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C36",
+      "claim": "Interleaved transfection improves the Pearson correlation coefficient (PCC) to 0.85 and Mander's overlap coefficient (MOC) to 0.92, compared to single transfection which results in PCC of 0.54 and MOC of 0.79.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a single transfection results in co-localization (PCC >0.5) with 79% overlap (MOC = 0.79), interleaved transfection improves the PCC to 0.85 and MOC to 0.92, which is indicative of highly uniform and co-localized transfection of cells with both mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the experiment shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "954a7bff-de7f-47fb-988b-fde459c9ff6f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C37",
+      "claim": "Precise dosage control and transfection gradients can be achieved using the magnetically-guided spotting platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise dosage control and transfection gradients can be achieved as shown in Figure 2d where NPCs were spotted with GFP and mCherry mRNAs at three different dosages horizontally and vertically, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "6f43d3c0-bb1d-4230-9582-b501a0862900",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C38",
+      "claim": "Parkinson's disease is one of the most common neurodegenerative disorders resulting from the functional loss of dopaminergic neurons in substantia nigra pars compacta of midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Parkinson's disease is one of the most common neurodegenerative disorders resulting from the functional loss of dopaminergic neurons in substantia nigra pars compacta of midbrain (Lees et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d72e1187-00e1-4782-95c9-e9fae297e376",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C39",
+      "claim": "Deriving sufficiently pure cultures of dopaminergic neurons remains a key challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deriving sufficiently pure cultures of dopaminergic neurons remains a key challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "2b9a7f5e-02ed-4c60-a2fc-2cb7accddb99",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C40",
+      "claim": "The study screened a pool of midbrain-specific transcription factors (OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, and PITX3) reported in the literature to be involved in either the fate specification, survival, or maintenance of ventral midbrain dopaminergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used proliferative NPCs, due to their relative ease to expand and culture as monolayers in the presence of growth factor mitogens (bFGF and EGF), and conducted the screen using a pool of midbrain-specific transcription factors reported in the literature to be involved in either the fate specification, survival, or maintenance of ventral midbrain dopaminergic cells (OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, and PITX3) (Hegarty et al., 2013; Abeliovich and Hammond, 2007; Ang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "9d889d88-0421-45a3-9068-d9bcd6af76fb",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C41",
+      "claim": "OTX2, ASCL1, and NGN2 are essential during early neural development for the correct positioning of isthmus organizer and the development of the midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "While OTX2, ASCL1, and NGN2 are essential during early neural development for the correct positioning of isthmus organizer and the development of the midbrain (Martinez-Barbera et al., 2001; Puelles et al., 2003; Kele et al., 2006), FOXA2 and LMX1A are necessary for the correct positioning of dopaminergic cell types along the ventral-caudal axis of the midbrain (Nakatani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "60816eeb-d619-4711-9335-4f3a91d02b41",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C42",
+      "claim": "FOXA2 and LMX1A are necessary for the correct positioning of dopaminergic cell types along the ventral-caudal axis of the midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "While OTX2, ASCL1, and NGN2 are essential during early neural development for the correct positioning of isthmus organizer and the development of the midbrain (Martinez-Barbera et al., 2001; Puelles et al., 2003; Kele et al., 2006), FOXA2 and LMX1A are necessary for the correct positioning of dopaminergic cell types along the ventral-caudal axis of the midbrain (Nakatani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "32fe9352-0a9c-4628-843c-c45266d33ea4",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C43",
+      "claim": "PITX3 has been shown to be expressed in all dopaminergic neurons in the CNS during maturation and, together with NURR1, is necessary for their survival and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "PITX3 has been shown to be expressed in all dopaminergic neurons in the CNS during maturation and, together with NURR1, is necessary for their survival and maintenance (Saucedo-Cardenas et al., 1998; Peng et al., 2011; Martinat et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "9aa356cc-c81e-4293-a042-e0f0f33f9aee",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C44",
+      "claim": "Among spots transfected during induction stage, LMX1A (LmI) was the only factor that significantly increased the yield of TH+ neurons on its own (p<0.01, 40 \u00b1 5% TH+/MAP2+ cells compared to the control, 22 \u00b1 4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, among spots transfected during induction stage, LMX1A (LmI) was the only factor that significantly increased the yield of TH+ neurons on its own (p<0.01, 40 \u00b1 5% TH+/MAP2+ cells compared to the control, 22 \u00b1 4%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 3b and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "4221c9e1-f1f6-4754-986f-376392e3ab67",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C45",
+      "claim": "Significantly more TH+ neurons were counted in spots transfected during the NPC stage with either FOXA2 (FoN) (TH+/MAP2+, 27 \u00b1 4%, p<0.05), PITX3 (PtN) (TH+/MAP2+, 35 \u00b1 3%, p<0.01), or LMX1A (LmN) (TH+/MAP2+, 32 \u00b1 3%, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, significantly more TH+ neurons were counted in spots transfected during the NPC stage with either FOXA2 (FoN) (TH+/MAP2+, 27 \u00b1 4%, p<0.05), PITX3 (PtN) (TH+/MAP2+, 35 \u00b1 3%, p<0.01), or LMX1A (LmN) (TH+/MAP2+, 32 \u00b1 3%, p<0.01), albeit with less effect than post-induction transfection with LMX1A (LmI) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "4c0993b0-4b25-4699-86d7-5c0e97f73cf8",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C46",
+      "claim": "FOXA2 and PITX3 are more efficient when delivered to NPCs whereas LMX1A is more efficient when delivered during induction of differentiation after mitogen removal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that FOXA2 and PITX3 are more efficient when delivered to NPCs whereas LMX1A is more efficient when delivered during induction of differentiation after mitogen removal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "e309f06e-4a4b-4a74-a49d-958d26d2d627",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C47",
+      "claim": "Direct overexpression of OTX2, ASCL1, or NGN2 did not increase TH+ neurons in the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although OTX2, ASCL1, NGN2 are thought to play a role in dopaminergic differentiation, in our experiment their direct overexpression did not increase TH+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ed516616-af93-4255-8da8-c1086e63df55",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C48",
+      "claim": "Triple combination of FoN +PtN + LmI produced significantly more TH+ cells (p<0.001, 68 \u00b1 5% TH+/MAP2+) than any other combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all dual combinations increased the number of converted cells, triple combination of these factors (FoN +PtN + LmI) produced significantly more TH+ cells (p<0.001, 68 \u00b1 5% TH+/MAP2+) than any other combination (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "028ddefc-be85-40e4-a30b-873f4c552f29",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C49",
+      "claim": "Gene expression analysis at day 17 of differentiation confirms robust seven-fold over-expression of TH in response to the FoN +PtN + LmI triple combination of factors when compared to non-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression analysis at day 17 of differentiation (Figure 3e) confirms robust seven-fold over-expression of TH in response to the FoN +PtN + LmI triple combination of factors when compared to non-transfected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "6281bbfc-6122-49e8-b978-cb6601e87961",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C50",
+      "claim": "Neuronal identity (MAP2+) was observed in ~98% of both FoN +PtN + LmI transfected cells and the non-transfected controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal identity (MAP2+) was observed in ~98% of both FoN +PtN + LmI transfected cells and the non-transfected controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "dbb38b7d-c802-46e1-a53b-b8a6d4a6abaf",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C51",
+      "claim": "Transfected cells yielded significantly higher FOXA2+ neurons co-expressing TH (p<0.001, 75 \u00b1 4%, TH+/FOXA2+) compared to non-transfected cells (30 \u00b1 3% FOXA2+/TH+).",
+      "claim_type": "EXPLICIT",
+      "source": "However, transfected cells yielded significantly higher FOXA2+ neurons co-expressing TH (p<0.001, 75 \u00b1 4%, TH+/FOXA2+) compared to non-transfected cells (30 \u00b1 3% FOXA2+/TH+).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "822f01e2-2ad4-4ed4-8a4b-93361a1893b8",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C52",
+      "claim": "Among the transfected transcription factors, LMX1A was up-regulated by eleven-fold, FOXA2 by nine-fold and PITX3 by five-fold 2 weeks after transfection with the FoN +PtN + LmI combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the transfected transcription factors, LMX1A was up-regulated by eleven-fold, FOXA2 by nine-fold and PITX3 by five-fold 2 weeks after transfection with the FoN +PtN + LmI combination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d91109c3-ff7f-402a-9df5-f44e055f523d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C53",
+      "claim": "Two of the non-effective transcription factors used in the initial screen (OTX2 and NURR1) were up-regulated by eight- and four-fold respectively after transfection with the FoN +PtN + LmI combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, two of the non-effective transcription factors used in our initial screen (OTX2 and NURR1) were also up-regulated by eight- and four-fold respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "648ada35-c54e-436d-ac00-0566c1370a3c",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C54",
+      "claim": "VMAT2, a well-known midbrain regional marker expressed in substantia nigra DA neuron sub-types, was up-regulated by more than five-fold after transfection with the FoN +PtN + LmI combination.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-known midbrain regional marker expressed in substantia nigra DA neuron sub-types (VMAT2) was also up-regulated by more than five-fold, further confirming that our optimized triple combination of transcription factors (FoN +PtN + LmI) gives rise to dopaminergic neurons with midbrain identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the study shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "dea945a9-9fd5-4753-8b41-ea7ea0709c5d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C55",
+      "claim": "The optimized triple combination of transcription factors (FoN +PtN + LmI) gives rise to dopaminergic neurons with midbrain identity.",
+      "claim_type": "EXPLICIT",
+      "source": "A well-known midbrain regional marker expressed in substantia nigra DA neuron sub-types (VMAT2) was also up-regulated by more than five-fold, further confirming that our optimized triple combination of transcription factors (FoN +PtN + LmI) gives rise to dopaminergic neurons with midbrain identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on marker expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "7e2035af-d48f-4335-8bee-46c5d57ddb3f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C56",
+      "claim": "Various yields and purities of dopaminergic neural differentiation from hPSCs and/or multipotent NPCs have been reported ranging from low (i.e. 10%) to high (80%).",
+      "claim_type": "EXPLICIT",
+      "source": "Although various yields and purities of dopaminergic neural differentiation from hPSCs and/or mutipotent NPCs have been reported\u2014ranging from low (i.e. 10%) to high (80%)\u2014much of this variation can be attributed to differences in starting cell lines, growth factor cocktails, use of recombinant vs. purified proteins, cell purification procedures, and/or co-culture with other cells such as astrocytes (Engel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of literature findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ca246402-0576-4492-aaf6-89b945848f92",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C57",
+      "claim": "Much of the variation in reported dopaminergic differentiation efficiency can be attributed to differences in starting cell lines, growth factor cocktails, use of recombinant vs. purified proteins, cell purification procedures, and/or co-culture with other cells such as astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although various yields and purities of dopaminergic neural differentiation from hPSCs and/or mutipotent NPCs have been reported\u2014ranging from low (i.e. 10%) to high (80%)\u2014much of this variation can be attributed to differences in starting cell lines, growth factor cocktails, use of recombinant vs. purified proteins, cell purification procedures, and/or co-culture with other cells such as astrocytes (Engel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the causes of variation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "256f9891-9f6b-49f5-a99b-96f1671821bc",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C58",
+      "claim": "The magnetically-guided spotting platform enables more accurate and quantitative comparisons by allowing many factors and conditions to be simultaneously tested side-by-side under the same laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our high-throughput magnetically-guided spotting platform, where many factors and conditions can be simultaneously tested side-by-side and compared under the same laboratory conditions, can in the future allow for more accurate and quantitative comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the potential future utility of the technology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d250f9c7-6c97-450d-a3b1-4e9783bbb6f7",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C59",
+      "claim": "Combinatorial delivery of LMX1A, FOXA2, and PITX3 is highly effective in generating dopaminergic neurons from neural progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that combinatorial delivery of LMX1A, FOXA2, and PITX3 is highly effective in generating dopaminergic neurons from neural progenitors, with LMX1A significantly increasing TH-expression levels when delivered during both the proliferating NPC stage and in the early neural induction stages upon mitogen withdrawal, while FOXA2 and PITX3 only exhibit high efficacy before neural induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "69304e8f-b61f-47cc-9cb1-4f81d5914851",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C60",
+      "claim": "LMX1A significantly increases TH-expression levels when delivered during both the proliferating NPC stage and in the early neural induction stages upon mitogen withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that combinatorial delivery of LMX1A, FOXA2, and PITX3 is highly effective in generating dopaminergic neurons from neural progenitors, with LMX1A significantly increasing TH-expression levels when delivered during both the proliferating NPC stage and in the early neural induction stages upon mitogen withdrawal, while FOXA2 and PITX3 only exhibit high efficacy before neural induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d34e4e11-5c75-4103-84fc-4f9c6dc8e4dd",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C61",
+      "claim": "FOXA2 and PITX3 only exhibit high efficacy before neural induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that combinatorial delivery of LMX1A, FOXA2, and PITX3 is highly effective in generating dopaminergic neurons from neural progenitors, with LMX1A significantly increasing TH-expression levels when delivered during both the proliferating NPC stage and in the early neural induction stages upon mitogen withdrawal, while FOXA2 and PITX3 only exhibit high efficacy before neural induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "6328021d-c4fd-4653-bdca-529df503a4a9",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C62",
+      "claim": "The H9-derived human neural progenitor cell line (hNP1) has been validated for high levels of expression of Nestin and Sox2 and low level expression of Oct4.",
+      "claim_type": "EXPLICIT",
+      "source": "Each lot of ENStem-ATM Human Neural Progenitor Cells has been validated for high levels of expression of Nestin and Sox2 and low level expression of Oct4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the cell line used, provided by the manufacturer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "c78579eb-47ec-4e93-8134-c232143438e6",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C63",
+      "claim": "The ability of ENStem-ATM cells to differentiate into multiple neuronal phenotypes and maintain a normal karyotype after multiple passages has been verified by the manufacturer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of ENStem-ATM cells to differentiate into multiple neuronal phenotypes and maintain a normal karyotype after multiple passages has been verified by the manufacturer, and the cells have been confirmed to be negative for mycoplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the cell line used, provided by the manufacturer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "97449ae7-7b94-41cc-8c26-e514479d8b2a",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C64",
+      "claim": "The dual-magnet configuration focuses the magnetic field to millimeter-size spots in between pairs of magnets positioned above and below the surface of the plate with opposite poles facing one another.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these limitations, we first introduce a simple dual-magnet configuration which focuses the magnetic field to millimeter-size spots in between pairs of magnets positioned above and below the surface of the plate with opposite poles facing one another (rightmost panel in Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical design of the system shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "f6027b42-e959-48d5-85e1-e7d683df3722",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C65",
+      "claim": "The incubation time for magnetofection was 2 min per transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "The incubation time for magnetofection was 2 min per transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "0387ceb3-65a6-4799-b226-89a72912882d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C66",
+      "claim": "The concentration of the mRNA complex was adjusted based on the number of spots to be transfected per well (0.6 ng RNA per 1.5 mm diameter spot), ensuring that each spot received an equivalent amount of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of the mRNA complex was adjusted based on the number of spots to be transfected per well (0.6 ng RNA per 1.5 mm diameter spot), ensuring that each spot received an equivalent amount of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "f206249f-006b-41d1-a15f-be051a74817e",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C67",
+      "claim": "The magnetically-guided spotting platform can massively parallelize the combinatorial transfection of nucleic acids to rapidly explore vast search spaces of transcription factor stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this bottleneck, we developed a technology (Figure 1) that can massively parallelize the combinatorial transfection of nucleic acids in order to rapidly explore vast search spaces of transcription factor stoichiometries and validated it in an RNA-based screen on human neural progenitor cells (NPCs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the capability of the technology developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "1c45f9ba-80d8-4421-9634-176aa756e361",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C68",
+      "claim": "The technology was validated in an RNA-based screen on human neural progenitor cells (NPCs).",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this bottleneck, we developed a technology (Figure 1) that can massively parallelize the combinatorial transfection of nucleic acids in order to rapidly explore vast search spaces of transcription factor stoichiometries and validated it in an RNA-based screen on human neural progenitor cells (NPCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation of the technology in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "9362fbb7-41d6-405e-a64e-9ce886d985c4",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C69",
+      "claim": "The interleaved RNA transfection technique dramatically reduces fluctuations in the delivered mRNA copy numbers and stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we also demonstrate here an interleaved RNA transfection technique that dramatically reduces fluctuations in the delivered mRNA copy numbers and stoichiometries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of one of the key findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "f0dae6b7-2764-49c9-9820-d8b6ee207d7e",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C70",
+      "claim": "The study evaluated the temporal contributions of transcription factor cocktails by treating human NPCs with them during the proliferative stage and/or during the induction of neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our magnetically-guided spotting platform and interleaved transfection protocol, we evaluated the temporal contributions of transcription factor cocktails by treating human NPCs with them during the proliferative stage and/or during the induction of neurogenesis (i.e. after mitogen withdrawal) to generate human dopaminergic neurons with high purity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "3312636d-f57d-486f-afaa-6b89cfb4b79b",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C71",
+      "claim": "The study generated human dopaminergic neurons with high purity using the magnetically-guided spotting platform and interleaved transfection protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our magnetically-guided spotting platform and interleaved transfection protocol, we evaluated the temporal contributions of transcription factor cocktails by treating human NPCs with them during the proliferative stage and/or during the induction of neurogenesis (i.e. after mitogen withdrawal) to generate human dopaminergic neurons with high purity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main outcome of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "1a907ca5-01a9-4f6e-8fed-cb86cad6807d",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C72",
+      "claim": "The top magnetic plate is comprised of 12 large 22 mm diameter NdFeB disk magnets positioned in a 3 \u00d7 4 matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The top magnetic plate is comprised of 12 large 22 mm diameter NdFeB disk magnets (Supplementary file 1) positioned in a 3 \u00d7 4 matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ffa1bf76-5916-442a-a8bd-721818b2fa23",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C73",
+      "claim": "The bottom magnetic plate is a matrix of miniature 1.5 mm-diameter NdFeB disk magnets positioned in close proximity (3 mm center-to-center spacing) inside a compact array accommodating a matrix of 25 \u00d7 40 (i.e. 1000) magnets.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom magnetic plate is a matrix of miniature 1.5 mm-diameter NdFeB disk magnets (Supplementary file 1) positioned in close proximity (3 mm center-to-center spacing) inside a compact array [an 8 \u00d7 12 cm Teflon substrate accommodating a matrix of 25 \u00d7 40 (i.e. 1000) magnets].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "fc5dfdd2-a054-4257-8b0a-d4dbbf83cfe3",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C74",
+      "claim": "With the 12-well plate format, a total number of 36 magnetic hotspots could be accommodated under each well.",
+      "claim_type": "EXPLICIT",
+      "source": "With the 12-well plate format, a total number of 36 magnetic hotspots could be accommodated under each well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capacity of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "e87bda83-51e8-4ceb-92cc-e08b5ce4e08f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C75",
+      "claim": "The top pneumatic head is comprised of 24 pneumatic actuators assembled in a 6 \u00d7 4 matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The top pneumatic head is comprised of 24 pneumatic actuators assembled in a 6 \u00d7 4 matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "4c3c4bb0-85db-4072-8ebc-5e39c85fc196",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C76",
+      "claim": "The pneumatic actuators program (strike) 24 spots simultaneously and then move to the next x-y position.",
+      "claim_type": "EXPLICIT",
+      "source": "The pneumatic actuators program (strike) 24 spots simultaneously and then move to the next x-y position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operation of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "a1b4a545-0096-4ada-a37b-2f902dce16e9",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C77",
+      "claim": "Exogenous overexpression of transcription factors using DNA vectors can partially enhance the number of TH positive dopaminergic neurons during differentiation of pluripotent stem cells under various culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to growth factor-based differentiation protocols, exogenous overexpression of transcription factors (such as the single transcription factor LMX1A [Friling et al., 2009] or the combined overexpression of FOXA2 and NURR1 [Lee et al., 2010]) using DNA vectors can partially enhance the number of TH positive dopaminergic neurons during differentiation of pluripotent stem cells under various culture conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "05942465-5360-48d5-ab59-a65ba618bf64",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "claim_id": "C78",
+      "claim": "Directly comparing differentiation efficiencies across laboratories has been impractical due to the differences in experimental protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "However, directly comparing differentiation efficiencies across laboratories has been impractical due to the differences in experimental protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "019c1b9f-fa9a-48a2-b322-6ca646921668",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a magnetically-guided spotting platform using a dual-magnet configuration that focuses transfection reagents onto 1.5 mm spots, enabling spatially restricted transfection with minimal background. The platform achieves significant reagent savings (18-fold compared to 96-well format) and scales linearly with the number of transcription factors rather than exponentially with combinatorial possibilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C22, C64, C67, C72-C76 collectively describe the technical design and demonstrate its capabilities through visual evidence (Figures 1b-f). The dual-magnet configuration is shown to achieve spatially restricted transfection, and the efficiency calculations are mathematically sound. The technical specifications are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "cef520ff-2b77-4aab-8ed1-f1938780d039",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors engineered modified mRNA constructs with T7 promoter and human \u03b2-globin UTRs at both ends for enhanced stability, and selected NdFeB rare-earth magnets for their high magnetic anisotropy and coercivity, achieving magnetic field strengths of ~500 mT (top magnets) and ~100-300 mT (bottom magnets).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C23-C26 describe the mRNA construct design and magnet selection with supporting citations and direct measurements. The rationale for UTR selection is supported by literature (C17), and the magnet testing (C24) provides empirical justification for NdFeB selection. The magnetic field measurements are quantitative and specific.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "62317a46-32e5-4778-95f1-f587260fd73e",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that interleaved transfection (multiple smaller doses) dramatically reduces cell-to-cell variation in mRNA delivery compared to single transfection, improving Pearson correlation coefficient from 0.54 to 0.85 and Mander's overlap coefficient from 0.79 to 0.92 for co-transfection of two mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C69 are supported by quantitative imaging data (Figure 2b-d) with appropriate statistical measures (PCC and MOC). The experimental design controls for total mRNA amount (64 ng in both conditions), isolating the effect of delivery method. The visual evidence clearly shows reduced variability with interleaved transfection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors show that LMX1A significantly increases TH+ neuron yield when delivered either during the NPC stage (32\u00b13%) or induction stage (40\u00b15%), while FOXA2 and PITX3 only increase TH+ neurons when delivered during the NPC stage (27\u00b14% and 35\u00b13%, respectively). OTX2, ASCL1, and NGN2 did not increase TH+ neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C60-C61 present temporal-specific effects with statistical significance (p<0.01 or p<0.05) and are supported by immunocytochemistry data (Figure 3b, 3d). The experimental design appropriately tests factors at different time points. However, the study lacks mechanistic explanation for why certain factors are stage-specific, and sample sizes (n=3) are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "250eac69-47c8-414e-a89a-af90dec5278a",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate that the triple combination of FOXA2 (delivered to NPCs), PITX3 (delivered to NPCs), and LMX1A (delivered during induction) produces significantly more TH+ cells (68\u00b15% TH+/MAP2+, p<0.001) than any other combination, with seven-fold TH overexpression confirmed by gene expression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C59 are supported by both immunocytochemistry (Figure 3c) and qRT-PCR data (Figure 3e) with strong statistical significance (p<0.001). The combinatorial screen systematically tested dual and triple combinations. However, the study does not test all possible temporal combinations of the three factors, which could potentially yield even better results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors characterize the FoN+PtN+LmI-derived neurons, showing ~98% MAP2+ neuronal identity, 75\u00b14% TH+/FOXA2+ co-expression (vs. 30\u00b13% in controls, p<0.001), and upregulation of midbrain markers including LMX1A (11-fold), FOXA2 (9-fold), PITX3 (5-fold), OTX2 (8-fold), NURR1 (4-fold), and VMAT2 (5-fold), confirming midbrain dopaminergic identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 provide comprehensive characterization through immunocytochemistry (Figure 4a-b) and gene expression analysis (Figure 4c) with appropriate statistical testing. The upregulation of multiple midbrain-specific markers provides convergent evidence for dopaminergic neuron identity. The unexpected upregulation of OTX2 and NURR1 (C53) is noted but not mechanistically explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "f0597206-b1c2-4f7e-b612-97bc4b0ddf77",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors demonstrate that transfected cell spots remain spatially isolated for at least 7 days post-transfection and through 17 days of differentiation, using 0.6 ng mRNA per 1.5 mm spot with 2-minute magnetofection incubation times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C65-C66 describe the spatial stability and protocol parameters with visual evidence (Figure 1f). The demonstration of spot stability over 7-17 days addresses a key concern about cell mobility during differentiation. The protocol parameters are clearly specified and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "e66cffb5-e7ce-45fa-8c05-3438f9a83655",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors demonstrate that standard magnetofection with a single magnet results in non-specific transfection outside target areas due to non-uniform magnetic fields, while standard transfection relies on slow stochastic diffusion that transfects cells non-specifically across the entire plate surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by visual evidence (Figure 1b-c) comparing three transfection methods and by citations to prior magnetofection literature (C19). The demonstration clearly shows the spatial limitation problem with single magnets that the dual-magnet system addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ada9a808-ce79-4ecd-820b-08786d1982df",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors calculate that their platform requires 18-fold less reagent than 96-well format and note that smaller multiwell formats (384- or 1536-well) suffer from edge effects that compromise uniformity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 present a straightforward calculation based on surface area ratios (1.8 mm\u00b2 vs. 32.2 mm\u00b2) and cite literature support for edge effect problems (C30). The calculation is mathematically correct, though it assumes equivalent transfection efficiency per unit area, which may not hold perfectly in practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "5224f532-f8c6-4c7c-a779-f9d915225af7",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors argue that mRNA-based transfection achieves higher efficiency (40-90%) than DNA-based methods (10-20%) because mRNA only needs to cross the plasma membrane while DNA must cross both plasma and nuclear membranes, citing comparative studies in retinal pigmented epithelial cells and dendritic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 present a mechanistic rationale (C31-C32) supported by two independent comparative studies (C33-C34). The biological reasoning is sound, though the cited efficiency ranges are broad and cell-type dependent. The authors appropriately acknowledge this is a general principle rather than a universal rule.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors screened seven midbrain-specific transcription factors (OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, PITX3) selected based on literature reports of their roles in dopaminergic neuron specification, survival, or maintenance, testing them at two temporal stages (NPC proliferation and differentiation induction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C68, C70 describe the experimental design with appropriate literature citations justifying factor selection. The temporal testing strategy is logical given the known developmental roles of these factors. However, the screen is limited to 7 factors and 2 time points, representing a small fraction of the potential search space mentioned in C11.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors establish the scientific context: the nervous system contains hundreds of neuron subtypes requiring precise transcription factor expression for specification, but existing methods (growth factors, DNA vectors) have limitations including poor temporal control, variable copy numbers, integration risks, and combinatorial complexity that exceeds current screening capabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 establish background knowledge and motivation supported by appropriate citations. The limitations of existing methods (C2, C5-C7) and advantages of mRNA (C8-C10) are well-documented in the literature. The combinatorial complexity argument (C11) is logical though somewhat speculative about what constitutes 'exceeding capabilities.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors contextualize dopaminergic neuron differentiation as important for Parkinson's disease research, noting that deriving pure cultures remains challenging, reported efficiencies vary widely (10-80%) due to protocol differences, and their platform could enable more accurate cross-laboratory comparisons in the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C39, C56-C58, C77-C78 provide field context with appropriate citations. However, C58 is speculative about future utility ('can in the future allow') without demonstration. The claim about enabling better comparisons is reasonable but unproven. The variation in reported efficiencies (C56-C57) is acknowledged but the authors don't directly compare their results to literature values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    },
+    {
+      "id": "b6499ace-1a7b-46bc-8a07-673e6e89435c",
+      "content_id": "c355414e-b237-44ef-87e0-5af2b828654a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors used H9-derived human neural progenitor cells (hNP1/ENStem-A) validated by the manufacturer for high Nestin/Sox2 expression, low Oct4 expression, multipotent differentiation capacity, normal karyotype, and mycoplasma-negative status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe the cell line characteristics based on manufacturer validation. While this is appropriate documentation, the authors did not independently verify these properties. The reliance on manufacturer validation is standard practice but represents a potential source of variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:27:28.199476Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b405f478-4e0b-45d8-9139-f5bcf1064547",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "68899a22-52b8-4f73-b899-49a26577300d",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "1753fa25-e6a7-4f8b-8087-2065ac8c8be0",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "b516643a-46e3-4bcb-9c8a-3d43a1e320bc",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "c60aa3dd-b101-410e-a9f0-323cdded179a",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "97449ae7-7b94-41cc-8c26-e514479d8b2a",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "f206249f-006b-41d1-a15f-be051a74817e",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "1a907ca5-01a9-4f6e-8fed-cb86cad6807d",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "ffa1bf76-5916-442a-a8bd-721818b2fa23",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "fc5dfdd2-a054-4257-8b0a-d4dbbf83cfe3",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "e87bda83-51e8-4ceb-92cc-e08b5ce4e08f",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "4c3c4bb0-85db-4072-8ebc-5e39c85fc196",
+      "result_id": "019c1b9f-fa9a-48a2-b322-6ca646921668"
+    },
+    {
+      "claim_id": "cdf07ef7-58b3-43c2-953d-ebb9a4eec7ef",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "1ce22b56-261a-4664-bf05-d19d5cad7d34",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "a9f7de89-7bb7-46d4-a04d-3b5b550b1eb2",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "4828f370-d293-4058-a2bf-50210f27b3df",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "7c2ab771-dde3-4f95-8f14-5a75870c073f",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "5bd299af-183b-428a-a10b-e7c1b8a69c73",
+      "result_id": "cef520ff-2b77-4aab-8ed1-f1938780d039"
+    },
+    {
+      "claim_id": "cecdfaca-d226-460e-a08a-0d600b3f7673",
+      "result_id": "62317a46-32e5-4778-95f1-f587260fd73e"
+    },
+    {
+      "claim_id": "877b54d7-b8ea-4abd-b357-1b502b14e80e",
+      "result_id": "62317a46-32e5-4778-95f1-f587260fd73e"
+    },
+    {
+      "claim_id": "954a7bff-de7f-47fb-988b-fde459c9ff6f",
+      "result_id": "62317a46-32e5-4778-95f1-f587260fd73e"
+    },
+    {
+      "claim_id": "9362fbb7-41d6-405e-a64e-9ce886d985c4",
+      "result_id": "62317a46-32e5-4778-95f1-f587260fd73e"
+    },
+    {
+      "claim_id": "9aa356cc-c81e-4293-a042-e0f0f33f9aee",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "4221c9e1-f1f6-4754-986f-376392e3ab67",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "4c0993b0-4b25-4699-86d7-5c0e97f73cf8",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "e309f06e-4a4b-4a74-a49d-958d26d2d627",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "69304e8f-b61f-47cc-9cb1-4f81d5914851",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "d34e4e11-5c75-4103-84fc-4f9c6dc8e4dd",
+      "result_id": "fb428ee6-f72e-4fbd-abfe-a9987399b6b8"
+    },
+    {
+      "claim_id": "ed516616-af93-4255-8da8-c1086e63df55",
+      "result_id": "250eac69-47c8-414e-a89a-af90dec5278a"
+    },
+    {
+      "claim_id": "028ddefc-be85-40e4-a30b-873f4c552f29",
+      "result_id": "250eac69-47c8-414e-a89a-af90dec5278a"
+    },
+    {
+      "claim_id": "d250f9c7-6c97-450d-a3b1-4e9783bbb6f7",
+      "result_id": "250eac69-47c8-414e-a89a-af90dec5278a"
+    },
+    {
+      "claim_id": "6281bbfc-6122-49e8-b978-cb6601e87961",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "dbb38b7d-c802-46e1-a53b-b8a6d4a6abaf",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "822f01e2-2ad4-4ed4-8a4b-93361a1893b8",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "d91109c3-ff7f-402a-9df5-f44e055f523d",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "648ada35-c54e-436d-ac00-0566c1370a3c",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "dea945a9-9fd5-4753-8b41-ea7ea0709c5d",
+      "result_id": "9d91ddad-5a6f-47a9-9673-94a18bcebe13"
+    },
+    {
+      "claim_id": "2ed8da81-e8e3-43c1-a1a9-49592d4b5c0c",
+      "result_id": "f0597206-b1c2-4f7e-b612-97bc4b0ddf77"
+    },
+    {
+      "claim_id": "ae1e3d60-8e37-48e3-9b95-69ebe27a7739",
+      "result_id": "f0597206-b1c2-4f7e-b612-97bc4b0ddf77"
+    },
+    {
+      "claim_id": "f6027b42-e959-48d5-85e1-e7d683df3722",
+      "result_id": "f0597206-b1c2-4f7e-b612-97bc4b0ddf77"
+    },
+    {
+      "claim_id": "0387ceb3-65a6-4799-b226-89a72912882d",
+      "result_id": "f0597206-b1c2-4f7e-b612-97bc4b0ddf77"
+    },
+    {
+      "claim_id": "f6e470c1-e84a-4e62-9f58-69e6bf1fbfaf",
+      "result_id": "e66cffb5-e7ce-45fa-8c05-3438f9a83655"
+    },
+    {
+      "claim_id": "d430be6b-bc11-40b4-89d2-cbaa08f3c41b",
+      "result_id": "e66cffb5-e7ce-45fa-8c05-3438f9a83655"
+    },
+    {
+      "claim_id": "246d1c82-fe06-4b50-befb-1168a490916d",
+      "result_id": "e66cffb5-e7ce-45fa-8c05-3438f9a83655"
+    },
+    {
+      "claim_id": "416fe28e-55bf-47af-b330-3383b667c74e",
+      "result_id": "ada9a808-ce79-4ecd-820b-08786d1982df"
+    },
+    {
+      "claim_id": "928387dd-8019-4161-84d2-e497c888b60d",
+      "result_id": "ada9a808-ce79-4ecd-820b-08786d1982df"
+    },
+    {
+      "claim_id": "70892dbd-514a-4e25-8ccb-705ae4c43ea3",
+      "result_id": "5224f532-f8c6-4c7c-a779-f9d915225af7"
+    },
+    {
+      "claim_id": "6aace97d-49c8-4dac-bfc9-9278c8cd2116",
+      "result_id": "5224f532-f8c6-4c7c-a779-f9d915225af7"
+    },
+    {
+      "claim_id": "b4fc4f3a-b01c-4ff2-80e7-d64f54f0fc19",
+      "result_id": "5224f532-f8c6-4c7c-a779-f9d915225af7"
+    },
+    {
+      "claim_id": "b00562a7-5063-46b8-8046-2a49d68f948f",
+      "result_id": "5224f532-f8c6-4c7c-a779-f9d915225af7"
+    },
+    {
+      "claim_id": "2b9a7f5e-02ed-4c60-a2fc-2cb7accddb99",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "9d889d88-0421-45a3-9068-d9bcd6af76fb",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "60816eeb-d619-4711-9335-4f3a91d02b41",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "32fe9352-0a9c-4628-843c-c45266d33ea4",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "1c45f9ba-80d8-4421-9634-176aa756e361",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "f0dae6b7-2764-49c9-9820-d8b6ee207d7e",
+      "result_id": "ab9593f8-6bdf-4c93-9d8b-3e5b2f5ad748"
+    },
+    {
+      "claim_id": "25ce4d91-fdfc-4c97-9a2a-4aea0416b6cd",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "ac966ac4-5a87-408e-a7ce-01f75131f289",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "6605327c-f67f-4362-81f9-b014122f930a",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "3fd61274-d530-47bd-ae44-758d32caf01f",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "7efc6161-1263-4a8f-ae84-662ebc4d6771",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "2700cfe4-04cd-4aff-a48c-6cbca7f00b6b",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "df0a4050-be2c-480c-b3e3-1e8370b21128",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "8e6ee316-4c56-4a6a-ab7c-1491419c8ccc",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "99f7d06d-67b2-4850-ac56-1cc675f99f7f",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "0ebf2e35-cce3-45a7-a7cc-12b1be199a35",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "373863fd-76d8-42ac-b7c4-934c0e846523",
+      "result_id": "d6c47e9a-cc5c-4979-b31e-2b5b73fd7efb"
+    },
+    {
+      "claim_id": "6f43d3c0-bb1d-4230-9582-b501a0862900",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "d72e1187-00e1-4782-95c9-e9fae297e376",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "7e2035af-d48f-4335-8bee-46c5d57ddb3f",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "ca246402-0576-4492-aaf6-89b945848f92",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "256f9891-9f6b-49f5-a99b-96f1671821bc",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "a1b4a545-0096-4ada-a37b-2f902dce16e9",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "05942465-5360-48d5-ab59-a65ba618bf64",
+      "result_id": "df59fa88-ea2e-45f2-89bf-000dd2a1d19f"
+    },
+    {
+      "claim_id": "6328021d-c4fd-4653-bdca-529df503a4a9",
+      "result_id": "b6499ace-1a7b-46bc-8a07-673e6e89435c"
+    },
+    {
+      "claim_id": "c78579eb-47ec-4e93-8134-c232143438e6",
+      "result_id": "b6499ace-1a7b-46bc-8a07-673e6e89435c"
+    }
+  ],
+  "comparisons": []
+}

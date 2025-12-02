@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors demonstrate that Hsf1 and Hsp70 constitute a two-component feedback loop regulating the yeast heat shock response. By severing the feedback loop (\u2206FBL strain), they show that transcriptional induction of Hsp70 is required for Hsf1 deactivation. The mathematical model predicted this behavior and was refined to quantitatively match experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 show experimental validation that \u2206FBL cells fail to deactivate Hsf1 as predicted by the model (C28). The model was updated (C34-C36) to better match experimental kinetics. Multiple lines of evidence including Western blots (C110-C112), growth assays (C37-C40), and proteostasis restoration assays (C41-C47) support the feedback loop mechanism. The convergence of modeling and experimental approaches provides strong support for this core result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "CE2 (conserved element 2) is identified as a discrete, necessary and sufficient Hsp70 binding site on Hsf1. CE2 binds Hsp70 with low affinity (Kd = 9 \u00b5M) in vitro, and removal of CE2 abolishes most Hsp70 binding to Hsf1 in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches support this result: scanning mutagenesis identified CE2 (C50-C51, C54-C57), IP/MS showed CE2 is necessary for Hsp70 binding (C76-C78), fluorescence polarization measured direct binding with appropriate affinity (C86-C87), and decoy assays demonstrated sufficiency (C88-C91). The convergence of necessity and sufficiency experiments with quantitative binding measurements provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C81",
+      "C82",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The affinity of CE2 for Hsp70 tunes the dynamics of Hsf1 activation and deactivation. Removal of CE2 increases basal activity and delays deactivation, while additional CE2 copies accelerate deactivation. Model simulations correctly predicted these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model predictions (C92-C93) were experimentally validated (C94-C95) showing that CE2 copy number modulates response dynamics. Point mutations in CE2 (C81) phenocopy deletion, and additional CE2 copies (C82) have opposite effects. The quantitative agreement between model and experiment across multiple perturbations strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C105",
+      "C106"
+    ],
+    "result": "The N-terminal region of Hsf1, particularly segments N1 and N2, negatively regulates DNA binding at select promoters. Deletion of these segments increases DNA binding and transcriptional activity under non-heat shock conditions in a context-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (C60-C61, C63, C66-C67) demonstrate that N-terminal deletions increase DNA binding at specific promoters (4xHSE, SSA4) but not others, supporting context-dependence (C68, C106). The correlation between increased DNA binding and increased transcription (C64) provides mechanistic support. The additive effect of N1/N2 deletions (C52-C53) indicates independent function. However, the mechanism (direct vs. indirect) remains uncertain (C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CE2 regulates Hsf1 transactivation but not DNA binding. Under heat shock conditions, all mutants show similar DNA binding despite different transcriptional outputs, indicating that CE2 affects transactivation capacity independently of DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP data (C69, C71) show that CE2 deletion does not affect DNA binding at any tested promoter under either condition. The observation that mutants with similar DNA binding show >16-fold differences in transcription (C72) directly supports the conclusion that CE2 regulates transactivation independently of DNA binding. This is consistent with CE2 being an Hsp70 binding site that occludes the C-terminal activation domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "\u2206FBL cells restore proteostasis as efficiently as wild-type cells despite sustained Hsf1 activation, indicating that prolonged Hsf1 activity results from a specific deactivation defect rather than failure to restore proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Hsp104-mKate foci dissolution kinetics are identical in WT and \u2206FBL cells (C41-C42), demonstrating equivalent proteostasis restoration. This observation, combined with sustained Hsf1 activity in \u2206FBL cells, supports the inference that the feedback loop is specifically required for deactivation (C44, C47). The logic is sound, though Hsp104 may not detect all classes of protein aggregates, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The \u2206FBL strain shows only modest growth defects despite inability to induce Hsp70 during heat shock, while deletion of SSA1/2 causes severe growth defects. Basal Hsp70 levels in \u2206FBL cells are constitutively elevated and sufficient for near-normal growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth assays (C37-C39) clearly show differential phenotypes between \u2206FBL and ssa1/2\u2206 strains. Western blots (C110-C112) confirm that \u2206FBL cells have elevated basal Hsp70 but cannot induce it further. The surprising finding that SSA3/4 deletion has modest effects (C40) is well-documented. These observations support the conclusion that basal Hsp70 is sufficient for most cellular functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Wild-type Hsf1 but not Hsf1\u2206CE2 can compete for Hsp70 binding in vitro, demonstrating that CE2 is required for direct Hsf1-Hsp70 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition assay (C83-C84) provides direct biochemical evidence that CE2 is necessary for Hsp70 binding. This complements the cellular IP/MS data and strengthens the conclusion that CE2 is a direct binding site. The use of purified recombinant proteins eliminates concerns about indirect effects through other cellular factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CE2 is sufficient to bind Hsp70 in cells. Tandem CE2 repeats fused to mKate activate Hsf1 in trans by titrating Hsp70, while ce2-mut repeats do not, demonstrating sequence-specific sufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decoy assay (C88-C90) elegantly demonstrates sufficiency by showing dose-dependent Hsf1 activation with increasing CE2 copy number, while mutant CE2 has no effect. This cellular assay complements the in vitro fluorescence polarization data and provides strong evidence for sufficiency. The use of a well-folded scaffold (mKate) controls for nonspecific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Residual Hsp70 binding to Hsf1\u2206CE2 is refractory to heat shock-dependent dissociation, suggesting this secondary interaction is not regulatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C79) directly shows that residual Hsp70 binding in \u2206CE2 mutants does not dissociate upon heat shock, unlike wild-type. The inference that this interaction is non-regulatory (C80) is reasonable given that regulatory interactions should be stress-responsive. However, the functional significance of this secondary interaction remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The weak affinity of CE2 for Hsp70 (9 \u00b5M) is likely necessary for stress-dependent dissociation given the high Hsp70:Hsf1 stoichiometry (>500:1) in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The measured affinity (C100) and cellular stoichiometry (C102) are well-documented. The inference that weak affinity is necessary for dissociation (C101) is logical and consistent with model requirements. However, this remains an inference rather than direct experimental demonstration. The argument is strengthened by the model's requirement for weak binding since its inception.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose a four-state model for Hsf1 regulation integrating DNA binding control and transactivation domain accessibility. These dual mechanisms enable precise quantitative control over Hsf1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The four-state model (C107) integrates the experimental findings on N-terminal regulation of DNA binding and CE2-mediated regulation of transactivation. The model is consistent with all experimental observations. The conclusion about quantitative control (C108) is supported by the data, though the proposed functional consequence (C109) is speculative. The model provides a useful framework for understanding Hsf1 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C45",
+      "C99",
+      "C103",
+      "C104",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background claims about the heat shock response, Hsf1 function, and prior work establish context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by citations to established literature and represent accepted knowledge in the field. They provide necessary context but are not novel findings of this study. Claims about prior work by the authors (C2, C25-C26) are appropriately cited. Speculative claims (C99, C103) are clearly identified as such.",
+    "result_type": "MINOR"
+  }
+]

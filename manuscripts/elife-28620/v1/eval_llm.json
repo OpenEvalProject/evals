@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C89",
+      "C90"
+    ],
+    "result": "Lhx2 and Ebf co-bind to Greek Islands within OR clusters at significantly higher rates than genome-wide, with strong ChIP-seq signals indicating binding in a large fraction of mOSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C15, C18-C22, C89-C90 collectively demonstrate that Lhx2 and Ebf co-bind to Greek Islands with high specificity and signal strength. The ChIP-seq data (Figure 1) shows 63 co-bound peaks within OR clusters with statistically significant enrichment (p=1.5e-15 and p=5.7e-9) compared to genome-wide rates, and motif analysis confirms antibody specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Genes proximal to Lhx2 and Ebf co-bound sites in mOSNs are enriched for olfactory transduction and axonogenesis functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by gene ontology analysis shown in Figure 1\u2014figure supplement 1 and is consistent with the known roles of these transcription factors in OSN differentiation cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Only 10 OR promoters show significant Ebf and Lhx2 binding within 500 bp of the TSS, and these ORs are expressed at median levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by ChIP-seq and RNA-seq data (Figure 1\u2014figure supplement 5). The finding that these 10 ORs are not highly expressed despite transcription factor binding supports the authors' argument that Greek Islands, not promoter binding, drive OR expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "OR promoters are accessible only in cells expressing that OR, while Greek Islands show broad accessibility across different OSN populations, with few exceptions like Kimolos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are supported by ATAC-seq data from three OR-specific populations (Figure 2). The data clearly show differential accessibility at OR promoters versus Greek Islands, with Kimolos being a notable exception showing 10-fold increased signal in Olfr151+ cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A composite Lhx2/Ebf motif with stereotypically positioned binding sites is highly enriched in Greek Islands and shows evidence of in vivo occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 are supported by comprehensive motif analysis (Figure 3). The composite motif is found in 61/63 Greek Islands and shows significant enrichment compared to OR promoters and genome-wide co-bound sites. ATAC-seq footprinting (Figure 3C) confirms in vivo occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Conditional deletion of Lhx2 in mOSNs results in loss of Ebf binding to Greek Islands, reduced chromatin accessibility, and widespread downregulation of OR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by multiple orthogonal datasets from Lhx2 KO mice (Figure 4). Immunofluorescence confirms protein loss, RNA-seq verifies gene deletion, and ChIP-seq/ATAC-seq demonstrate loss of Ebf binding and accessibility at Greek Islands. The uniform OR downregulation regardless of promoter motifs supports Greek Island-mediated regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A fusion protein containing Lhx2 and Ebf DNA binding domains specifically recognizes the composite motif in vitro with sensitivity to stereotypic spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by EMSA data (Figure 5A-C). The fusion protein binds the composite motif but not individual sites, and competition experiments demonstrate exquisite sensitivity to motif spacing, with even 2 bp insertions impairing binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Overexpression of the fusion protein in mOSNs reduces Greek Island accessibility and causes widespread OR downregulation without affecting non-OR genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by ATAC-seq and RNA-seq from fusion protein-expressing mice (Figure 5). The data show specific reduction of Greek Island accessibility and OR transcription (482/500 most downregulated genes are ORs, p<1e-313), while genes with Ebf/Lhx2-bound promoters are unaffected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Greek Island inhibition by Lhx2 deletion or fusion protein expression causes uniform OR downregulation regardless of Greek Island presence in the cluster, distance to Greek Islands, or promoter motif content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by comprehensive RNA-seq analysis (Figure 6). Both genetic manipulations show uniform OR downregulation across all genomic contexts, including ORs in clusters without Greek Islands and those on different chromosomes, supporting trans-acting enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Insertion of a 5-Greek Island array (LSCHR) next to Rhodes increases expression frequency of Rhodes-linked ORs without significantly increasing Lhx2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by ChIP-qPCR, qRT-PCR, and RNA FISH data from LSCHR knock-in mice (Figure 7). ChIP-qPCR shows similar Lhx2 binding when normalized to input, while qRT-PCR demonstrates strong upregulation of Rhodes cluster ORs (up to 8-fold in homozygotes). RNA FISH confirms this represents increased choice frequency, not transcription rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The olfactory system exhibits singular OR expression through heterochromatic silencing, Lsd1-mediated de-silencing, and Greek Island enhancers that form interchromosomal hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background supported by multiple citations. These claims describe the known regulatory framework for OR gene choice and are not novel findings of this study, but provide essential context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Interchromosomal interactions are generally rare but have been implicated in specific biological contexts including OR gene choice, though previous evidence was correlative or had confounding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C84 provide literature context supported by citations. These claims establish the controversial nature of interchromosomal interactions in gene regulation and justify the need for the current study's genetic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The composite Lhx2/Ebf motif structure resembles heterodimeric motifs and enhanceosomes with rigid motif grammar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by comparison to published data (Jolma et al., 2015; Long et al., 2016; Panne et al., 2007; Thanos and Maniatis, 1995). These comparisons provide mechanistic context for the cooperative binding observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Low-level OR co-expression is detected in immature OSNs and in Lbr-expressing mOSNs where heterochromatin is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citations to single-cell RNA-seq studies and prior work. These observations support the authors' model that strict thresholding mechanisms enforce singular OR choice in mature OSNs.",
+    "result_type": "MINOR"
+  }
+]

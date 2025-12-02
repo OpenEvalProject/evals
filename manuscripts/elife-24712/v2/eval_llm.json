@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors performed gene co-expression analysis on 94 heterogeneous proximal incisor samples from 6-week-old female CD1 mice using Illumina microarrays, identifying 24 modules of co-expressed genes with hierarchical clustering revealing distinct subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe the experimental design, sample collection, microarray platform, and analytical approach. The methodology is clearly stated with appropriate sample size (n=94), specific tissue region, and validated analytical framework (WGCNA with citations). The hierarchical clustering and module identification are standard approaches for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Module A represents a transcriptional signature of ameloblasts, containing known ameloblast markers (Lamb3, Lamc2, Enam, Ambn, Amelx) and novel markers (Tmem108, SOX21, StarD10) validated by in situ hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C42 establish Module A as ameloblast-specific through convergent evidence: (1) enrichment of known ameloblast markers with literature support (C30-C33), (2) ISH validation of novel markers showing ameloblast-specific expression (C39-C41), and (3) direct experimental confirmation (C42). The combination of computational prediction and experimental validation strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Module C represents a transcriptional signature of odontoblasts, containing known odontoblast markers (Bglap1/2, Phex, Dspp, Kazald1) and novel markers (Sag, Lox) validated by expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C46 establish Module C as odontoblast-specific through similar logic to Module A: enrichment of known markers (C35-C38) and ISH validation (C43-C45). The observation that Lox shows additional expression in T-A regions (C45) is appropriately noted and does not invalidate the overall odontoblast signature. The conclusion (C46) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The expression signatures captured by Modules A and C are both sensitive and specific, with canonical markers showing high kME values for appropriate modules and the majority of high-ranking genes being uncharacterized in these lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide quantitative validation of module specificity through Z-score distributions and kME rankings. The observation that known markers segregate appropriately (C47-C48) validates the approach, while the finding that most high-ranking genes are uncharacterized (C49) highlights the discovery potential. This is a logical conclusion from the computational analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Gene co-expression analysis identified modules corresponding to other differentiated cell types including Schwann cells (Module J) and skeletal muscle cells (Module S), with the latter likely resulting from tissue contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate the method's ability to detect diverse cell types through enrichment analysis with validated marker sets (p<10\u207b\u2078 and p<10\u207b\u00b9\u00b2, respectively). The interpretation that Module S represents contamination (C54) is reasonable given that skeletal muscle is not expected in incisor tissue. This validates the sensitivity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Multiple co-expression modules (U, V, W, X, N-R) represent transit-amplifying cell signatures, with Modules T-X enriched for M-phase genes and Modules N-R enriched for interphase biosynthetic processes, suggesting temporal segregation of cell cycle processes in T-A cell subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 establish T-A cell signatures through: (1) functional enrichment for cell cycle genes (C58, p=3.1\u00d710\u207b\u00b2\u2074), (2) ISH validation showing expression in BrdU-positive proliferating cells in both epithelium and mesenchyme (C59-C64), and (3) differential enrichment patterns suggesting cell cycle phase segregation (C65-C66). The inference about temporal segregation (C67-C68) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Known stem cell markers showed variable detection: Ptch1 (Gli1 surrogate) associated with Module L, Sox2 with Module H, while Bmi1 was detected but not module-associated and Lgr5 was not detected, likely due to microarray sensitivity limitations for rare cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 honestly report both successful and unsuccessful detection of known stem cell markers. The association of Ptch1 and Sox2 with specific modules (C69-C70) is data-driven, while the lack of module association for Bmi1 (C71) and non-detection of Lgr5 (C72) are appropriately attributed to technical limitations (C73). This transparent reporting strengthens credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Modules G, H, and I form a cluster of highly correlated modules representing epithelial progenitor signatures, with genes (Tbx1, Epha1, Prom2, Scnn1b, p63, Nkx2-3, Isl1, Pitx2) showing expression in the laCL and epithelial T-A regions, though notably absent from the liCL for most markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C86 establish epithelial progenitor modules through: (1) module correlation structure (C78), (2) ISH validation of multiple genes showing overlapping expression in laCL and T-A regions (C75-C77, C80-C83), and (3) consistent absence from liCL (C84). The exception of Shh (C85) is noted. The spatial restriction pattern (C86) is well-documented across multiple genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Modules K, L, and M form a highly correlated cluster enriched for periodontal markers, with genes (Gpx3, Fbln1, Igfbp4, Pecam1, Igfbp5, Lrig1) expressed in the proximal mesenchyme and periodontium, including label-retaining cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 establish periodontal modules through: (1) module correlation (C87), (2) ISH validation showing proximal mesenchyme/periodontal expression (C88-C89, C91), (3) co-localization with LRCs (C90), and (4) enrichment of known periodontal markers from literature (C92). The inference about stem cell marker enrichment (C93) is reasonable given the LRC co-localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Lineage tracing using Igfbp5-iCreERT2 demonstrates that Igfbp5-expressing cells contribute to epithelial and periodontal tissue renewal but not to the dental pulp compartment, with increased RFP-positive cells observed 14 days post-induction in mesenchyme and epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 provide lineage tracing evidence: (1) initial labeling in periodontium, liCL, and laCL (C95), (2) expansion of labeled cells by 14 days (C96-C97), and (3) persistent absence from dental pulp (C98). The conclusion about tissue-specific contribution (C99) is directly supported by the spatial restriction of labeled progeny. This is strong functional validation of the co-expression predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Lrig1, a known stem cell marker in intestine and skin, is expressed in the proximal incisor mesenchyme and laCL epithelium, including label-retaining cells, with the mesenchymal LRC population divided into Lrig1-negative inner and Lrig1-positive proximal subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 establish Lrig1 expression pattern through: (1) literature context (C100), (2) ISH showing restricted expression (C101), (3) co-localization with LRCs (C102), and (4) spatial subdivision of mesenchymal LRCs (C103). The Lrig1-CreERT2 allele faithfully reports endogenous expression (C104). This provides strong anatomical foundation for subsequent lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Lrig1 expression largely overlaps with Gli1 in the laCL epithelium but is more restricted in the stellate reticulum and absent from the apical Gli1-positive domain; in mesenchyme, Lrig1-positive cells are sparse and do not co-localize with Gli1 in dental pulp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 compare Lrig1 and Gli1 expression domains using double-labeling experiments. The partial overlap in laCL (C106-C107) and lack of co-localization in mesenchyme (C108) are directly observed. The conclusion that Lrig1 marks a subdomain of Gli1 cells in epithelium but not mesenchyme (C109) is well-supported by the spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Long-term lineage tracing (1-6 months) demonstrates that Lrig1 marks long-lived, relatively quiescent stem cells in the laCL that give rise to all epithelial lineages, with delayed appearance of labeled progeny compared to Gli1/Sox2/Bmi1 lineage tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide time-course lineage tracing evidence: (1) delayed labeling of T-A and differentiated cells at 1 month (C110), (2) extensive labeling by 6 months (C111), and (3) contribution to all epithelial lineages (C112). The comparison with other markers (C113) supports the quiescence interpretation. This is strong functional evidence for stem cell identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Lrig1 marks two distinct stem cell pools: epithelial stem cells in the laCL and mesenchymal stem cells in the proximal periodontium, with the latter showing faster turnover and no contribution to dental pulp, demonstrating that periodontium and dental pulp are maintained by separate progenitor pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 synthesize lineage tracing data to demonstrate: (1) faster mesenchymal turnover (C114-C115), (2) spatial restriction to periodontium (C116), (3) dual stem cell pools (C117), and (4) separation of periodontal and pulp progenitors (C118). This is a major discovery supported by consistent spatial restriction across all time points and represents a novel finding about incisor tissue organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Acta2, a Module L gene, is expressed by periodontal progenitors in the incisor, with expression in periodontal mesenchyme including BrdU-LRCs but absent from a band of cells surrounding the laCL that is Lrig1-positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 establish Acta2 as a periodontal progenitor marker through: (1) module membership (C119), (2) prior molar data (C120), (3) ISH validation (C121), (4) LRC co-localization (C122), (5) spatial gap in expression (C123), (6) complementarity with Lrig1 (C124), and (7) lineage tracing confirmation (C125). The spatial complementarity with Lrig1 suggests distinct progenitor subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Lineage tracing demonstrates spatial segregation of periodontal progenitors: Lrig1-expressing cells contribute to inner periodontium (near tooth) while Acta2-expressing cells contribute to outer periodontium (near bone), identifying distinct subpopulations that renew different periodontal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 provide compelling evidence for spatial segregation through complementary lineage tracing: (1) Lrig1 progeny absent from outer periodontium (C126-C128), (2) Acta2 progeny absent from inner periodontium (C129), and (3) spatial partitioning (C130-C131). This is a novel finding about periodontal tissue organization supported by reciprocal lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study demonstrates that correlated gene expression patterns are driven by variation in cell type abundance, with detection sensitivity depending on multiple factors including cell abundance, transcriptome distinctiveness, and technical parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 provide a conceptual framework validated by the results: (1) general principle (C132), (2) factors affecting detection (C133), (3) variable signal-to-noise (C134), and (4) examples of abundant (ameloblasts/odontoblasts) vs. rare but distinctive (Schwann cells) cell types (C135-C136). This interpretation is well-supported by the diverse modules identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The co-expression approach identified novel progenitor markers, with Lrig1 discriminating subpopulations of Gli1-positive epithelial progenitors with different capacities for organ replenishment, and optimization through RNA-seq could improve sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is directly supported by the Lrig1 lineage tracing data showing delayed kinetics compared to Gli1, indicating functional heterogeneity within Gli1+ cells. Claim C137 about future improvements is speculative but reasonable. The discovery of functional heterogeneity within a known stem cell population is a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Gene co-expression analysis of bulk tissue and single-cell methods are complementary approaches, with bulk analysis being simpler and more efficient for revealing major transcriptional building blocks, while identified cell-surface protein genes facilitate subsequent single-cell isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 provide a balanced discussion of methodological trade-offs. The limitations of single-cell methods (C139) and advantages of bulk analysis (C140) are fairly stated. The complementarity argument (C141) is reasonable, and the practical benefit for downstream single-cell work (C142) is a valid point supported by the identification of surface markers in modules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The microarray platform used has limitations in dynamic range and coverage of non-coding transcripts, suggesting that the full complexity of incisor gene expression is likely greater than described, with future RNA-seq approaches expected to provide more comprehensive characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 honestly acknowledge technical limitations of the microarray platform (C143), appropriately temper conclusions (C144), and suggest reasonable future directions (C145). This transparent discussion of limitations strengthens the credibility of the work and appropriately frames the results as an initial characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Both Lrig1 and Igfbp5, known stem cell markers in other tissues, divide the mesenchymal LRC population into inner and outer subdomains, with lineage tracing demonstrating for the first time that inner mesenchyme (dental pulp) and periodontal tissue are maintained by separate progenitor pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 synthesize key findings: (1) literature context for both markers (C146-C147), (2) spatial subdivision of LRCs (C148), (3) lineage tracing evidence (C149), and (4) novelty of the discovery (C150). This represents a major conceptual advance in understanding incisor tissue organization, supported by convergent evidence from multiple markers and lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The spatial restriction of Lrig1-expressing mesenchymal cells to periodontium parallels findings in skin dermis, and the absence of a specific periodontal T-A population indicates relatively slow tissue turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 draw appropriate comparisons to other systems (C151-C152) and make reasonable inferences about tissue dynamics (C153). The parallel with skin (C151) is interesting and suggests conserved Lrig1 function in mesenchymal tissue organization. The inference about slow turnover (C153) is supported by the lineage tracing kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Multiple progenitor pools facilitate coordinated tissue renewal in the incisor, with T-A cells serving as a coordination checkpoint (all T-A module genes expressed in both epithelium and mesenchyme), and SHH signaling likely mediating coordination through Gli1 expression in all stem cell niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C161 build a model of coordinated renewal: (1) general principle from other organs (C154-C156), (2) historical data on synchronized movement (C157), (3) T-A checkpoint hypothesis supported by dual expression (C158-C159), and (4) SHH as coordinating signal (C160-C161). The T-A checkpoint inference (C158) is well-supported by the consistent dual expression pattern (C159), while the SHH model (C160-C161) is supported by prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Different stem cell markers show distinct spatial patterns: Bmi1 and Gli1 mark stem cells in all incisor niches, while Sox2 and Lrig1 mark restricted compartments, with Lrig1-expressing cells in the laCL having different properties and giving rise to unique fates in mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 synthesize marker expression patterns to reveal organizational principles: (1) ubiquitous markers (C162), (2) restricted markers (C163), (3) functional heterogeneity (C164), and (4) Lrig1 specifics (C165-C166). This comparative analysis is well-supported by the expression and lineage tracing data and reveals important organizational principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The gene co-expression approach advances the incisor as a model for stem cell-based tissue renewal and provides a general framework for understanding organ biology, with potential applications in comparative biology, identifying conserved mechanisms, and bioengineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C174 discuss broader implications: (1) advancing the incisor model (C169), (2) general applicability (C170), (3) comparative potential (C171), (4) evolutionary insights from prior work (C172), and (5) future applications (C173-C174). These are reasonable extrapolations from the demonstrated success of the approach, though claims about future applications (C173-C174) are speculative.",
+    "result_type": "MINOR"
+  }
+]

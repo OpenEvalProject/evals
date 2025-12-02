@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C73"
+    ],
+    "result": "Bioinformatic analysis of 2,671,763 tRNA sequences reveals that bacterial tRNAGly, tRNAHis, and tRNACys uniquely contain pyrimidine at position N73, while most other tRNAs (including tRNAAla) have purine at this position. This represents a deviation from the predominant purine-based discriminator code observed across all three domains of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C73 are well-supported by comprehensive bioinformatic analysis of over 2.6 million tRNA sequences presented in Figure 1c and Table 1. The data clearly demonstrate the unusual pyrimidine discriminator base in bacterial tRNAGly and establish the broader context of purine predominance at N73.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Biochemical assays demonstrate that bacterial DTD (EcDTD) exhibits ~100-fold higher activity on Gly-tRNAGly mutants with purine at position 73 (U73A or U73G) compared to wild-type Gly-tRNAGly with U73. The U73C mutant shows activity similar to wild-type, establishing that N73 identity is a key determinant of DTD efficiency, with purine as the preferred base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are strongly supported by systematic biochemical data in Figure 2a-d showing clear concentration-dependent differences in DTD activity based on N73 identity. The experiments appropriately test all four possible bases at position 73, and the results consistently demonstrate the ~100-fold effect of purine versus pyrimidine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The double mutant Gly-tRNAGly(U73A/C70U) is deacylated by EcDTD with efficiency comparable to Gly-tRNAAla and ~1000-fold higher than wild-type Gly-tRNAGly, demonstrating that N73 and G3\u2022U70 have additive effects on DTD activity. These two point mutations in the acceptor stem are necessary and sufficient to completely switch tRNA specificity from tRNAGly to tRNAAla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are well-supported by biochemical data in Figure 2e-f showing the double mutant achieves the full 1000-fold effect, which equals the sum of individual contributions (~100-fold from N73, ~10-fold from G3\u2022U70). This additivity and the complete specificity switch with only two mutations provide strong evidence that DTD interactions are confined to the acceptor stem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Competition experiments between EF-Tu and DTD reveal that EF-Tu provides only ~10-fold protection to Gly-tRNAGly regardless of N73 identity, while the 100-fold difference in DTD activity based on N73 is maintained even in EF-Tu's presence. This demonstrates that EF-Tu has no preference for N73 and that DTD's differential activity predominantly determines substrate fate, with EF-Tu augmenting the protection primarily conferred by U73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by competition experiments in Figure 3a-b showing consistent ~10-fold protection by EF-Tu for both wild-type and U73A mutant. The maintenance of the 100-fold activity difference in the presence of EF-Tu clearly demonstrates that N73-based discrimination is primarily a DTD property, not an EF-Tu property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Northern blotting analysis shows that overexpression of wild-type DTD causes complete depletion of cellular Gly-tRNAGly levels, while overexpression of catalytically inactive DTD (A112F mutant) maintains ~80% aminoacylated tRNAGly similar to empty vector control. This suggests that DTD overexpression toxicity is linked to Gly-tRNAGly depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by northern blotting data in Figure 3\u2014figure supplement 1 showing clear differences between wild-type and mutant DTD overexpression. The use of a catalytically inactive mutant as a control strengthens the conclusion that enzymatic activity, not protein expression per se, causes tRNAGly depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C60"
+    ],
+    "result": "Bioinformatic analysis reveals that both tRNAGly and tRNAAla in Archaea and Eukarya harbor A73, lacking the N73 dichotomy observed in bacteria where tRNAGly has pyrimidine and tRNAAla has purine at position 73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C60 are supported by bioinformatic analysis presented in Figure 1c showing the discriminator base distribution across domains of life. The data clearly demonstrate the absence of N73 differentiation between tRNAGly and tRNAAla in eukaryotes and archaea.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Biochemical assays with mouse DTD (MmDTD) show it acts on Gly-(Mm)tRNAGly and Gly-(Mm)tRNAAla at 100 nM and 10 nM respectively, demonstrating ~10-fold discrimination. This establishes that G3\u2022U70 recognition is conserved in eukaryotic DTD and is the only available tRNA element for distinguishing eukaryotic tRNAGly from tRNAAla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by biochemical data in Figure 3c-d showing clear concentration-dependent activity differences for MmDTD on mouse tRNAs. The ~10-fold discrimination is consistent with G3\u2022U70 being the sole distinguishing feature, given that both eukaryotic tRNAs have A73.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MmDTD shows 100-fold higher activity on U73-containing bacterial Gly-tRNAGly compared to the U73A mutant, demonstrating that eukaryotic DTD has inverted N73 specificity compared to bacterial DTD\u2014preferring pyrimidine over purine at position 73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are strongly supported by biochemical data in Figure 3e-f showing the opposite N73 preference for eukaryotic versus bacterial DTD. The use of bacterial tRNAs with mouse DTD provides a clean test of N73 specificity independent of other sequence differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A GFP-based reporter assay demonstrates that in the absence of DTD, glycine mischarged on tRNAAla is misincorporated into proteins, with fluorescence increasing dose-dependently with glycine supplementation. This establishes that DTD prevents alanine-to-glycine misincorporation in proteins rather than merely recycling mischarged tRNAAla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are well-supported by the clever GFP reporter assay shown in Figure 4b-c, where the non-fluorescent G67A mutant regains fluorescence only in dtd knockout cells supplemented with glycine. The dose-dependent response and appropriate controls (presence/absence of DTD) provide strong evidence for in vivo misincorporation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22"
+    ],
+    "result": "The discriminator base (N73) predominantly accounts for the 1000-fold activity difference between DTD on Gly-tRNAAla and Gly-tRNAGly, with N73 having stronger influence (~100-fold) than G3\u2022U70 (~10-fold). U73 serves as a negative determinant preventing Gly-tRNAGly misediting by DTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C22 are supported by the systematic mutagenesis and biochemical data showing N73 contributes ~100-fold discrimination while G3\u2022U70 contributes ~10-fold. The multiplicative effect reaching ~1000-fold with both elements present confirms N73 as the predominant factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C83"
+    ],
+    "result": "The study reveals that DTD exerts strong evolutionary selection pressure on bacterial tRNAGly to retain U73, stronger than other factors like RNase P and CCA-adding enzyme that favor purines. This N73 dichotomy between bacterial tRNAGly and tRNAAla maintains 'glycine fidelity' during translation by preventing both Gly-tRNAGly misediting and glycine misincorporation in proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C80, and C83 are supported by the combination of bioinformatic data showing invariant U73 in bacterial tRNAGly despite general purine preference, biochemical data demonstrating the functional importance of U73 for DTD discrimination, and in vivo data showing consequences of DTD absence. The evolutionary inference is well-reasoned given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "Eukaryotic DTD has co-evolved with changes in tRNA discriminator base usage, switching its N73 specificity from purine (bacterial) to pyrimidine (eukaryotic) as eukaryotes evolved mechanisms that relieved the selection pressure to maintain U73 in tRNAGly during the evolutionary transition from bacteria to eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C81, C82, and C86 are supported by the demonstration of inverted N73 specificity in eukaryotic DTD (C45-C47) combined with the bioinformatic observation that eukaryotic tRNAGly has A73 rather than U73 (C39). The co-evolution inference is logical, though the specific mechanisms that relieved selection pressure remain unknown as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C14"
+    ],
+    "result": "Previous work (Pawar et al., 2017) established that DTD clears Gly-tRNAAla with 1000-fold higher efficiency than Gly-tRNAGly, and that G3\u2022U70 enhances DTD activity by only ~10-fold, leaving a 100-fold difference unaccounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C14 are supported by appropriate citations to prior work. These claims establish the context and motivation for the current study, which successfully identifies N73 as accounting for the previously unexplained 100-fold difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C21"
+    ],
+    "result": "The second base pair position in the acceptor stem is not conserved among different tRNAs (tRNAPhe/Tyr/Trp/Asp) on which DTD acts with similar efficiency, and all reported DTD substrates (D-Tyr-tRNATyr, D-Phe-tRNAPhe, D-Trp-tRNATrp, D-Asp-tRNAAsp) have purine as N73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C21 are supported by sequence analysis in Figure 1\u2014figure supplement 1 and Figure 1c, along with appropriate citations to previous studies identifying DTD substrates. This analysis strengthens the conclusion that N73, not other acceptor stem positions, is the key discriminatory element.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "DTD must use tRNA elements in a major way to discriminate between two cellular substrates carrying the same amino acid (achiral glycine)\u2014one essential for protein synthesis (Gly-tRNAGly) and the other a misaminoacylated species (Gly-tRNAAla).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the comprehensive demonstration that N73 and G3\u2022U70 together provide 1000-fold discrimination. This represents a well-supported synthesis of the major findings regarding tRNA-based substrate discrimination by DTD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C67"
+    ],
+    "result": "Other mechanisms beyond G3\u2022U70 discrimination are possibly operating in eukaryotes to enhance discrimination between Gly-tRNAGly and Gly-tRNAAla, such as spatiotemporal regulation of expression and cellular compartmentalization of DTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44 and C67 are speculative suggestions based on the limited (~10-fold) discrimination provided by G3\u2022U70 alone in eukaryotes. While the speculation is reasonable given the data, no direct evidence for these alternative mechanisms is provided. The citation of human DTD nuclear envelope enrichment (C68) provides some support but is insufficient to confirm the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The high efficiency of bacterial DTD in clearing Gly-tRNAAla is the plausible reason why it shows significant activity on Gly-tRNAGly, pointing to an interesting trade-off between speed and accuracy in DTD's proofreading activity that makes DTD uniquely distinct from other editing enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C66 present an interesting interpretation of the data, but this remains speculative. While the observation of DTD acting on both cognate and non-cognate substrates with different efficiencies is well-documented, the characterization of this as a unique 'trade-off' and the causal explanation for why DTD acts on Gly-tRNAGly are inferences rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C88"
+    ],
+    "result": "In the primordial scenario, U73 could have been the only factor ensuring glycine utilization for protein synthesis by precluding DTD-like factor activity, and the choice of discriminator base must have played a crucial role during early evolution of the translational apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85 and C88 are speculative extrapolations to early evolution. While the importance of N73 in modern systems is well-established, and theories about early tRNA evolution are cited (C87), direct evidence for these primordial scenarios is inherently unavailable. These remain plausible but unverified hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C27",
+      "C28",
+      "C40",
+      "C51",
+      "C52",
+      "C54",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Background knowledge claims about DTD function, editing importance, EF-Tu binding, discriminator hypothesis, and various tRNA processing factors are established through appropriate citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10, C11, C12, C13, C27, C28, C40, C51, C52, C54, C61, C62, C68, C69, C71, C72, C74, C75, C76, C77, C78, C87, C89, C90, C92, C93) appropriately cite previous literature to establish background knowledge and context. The citations appear relevant and properly used to support the stated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "N73 mutation in tRNAGly is not expected to alter the binding affinity of Gly-tRNAGly to EF-Tu because EF-Tu binds the T\u03a8C arm, not the discriminator base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is a reasonable inference based on established knowledge (C28) that EF-Tu binds the T\u03a8C arm. The experimental data (C31-C32) showing consistent EF-Tu protection regardless of N73 identity confirms this expectation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Bacterial DTD and A/G73-containing tRNAGly or eukaryotic DTD and U/C73-containing tRNAGly are likely to be incompatible based on the inverted N73 specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a logical inference from the demonstrated inverted N73 specificities of bacterial and eukaryotic DTD. The cross-species experiments with MmDTD on bacterial tRNAs (C45) provide direct support for this incompatibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "A stronger selection pressure is required to deviate from a purine-based discriminator code, as demonstrated by factors like RNase P and CCA-adding enzyme that favor purines at N73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the cited evidence (C74, C78) showing multiple factors favor purine at N73, combined with the bioinformatic observation (C73) that purine predominates at N73 across life. The rarity of pyrimidine at N73 supports the inference that strong selection pressure is needed to maintain it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C94"
+    ],
+    "result": "DTD is not expected to interact beyond tRNA's acceptor stem based on its ability to act on T1 RNase-digested tRNA. For non-proteinogenic Gly-tRNAGly, U73 is the only means of preventing DTD misediting since these tRNAs don't interact with EF-Tu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C94 are supported by citation to early biochemical work (C90) and recent studies on non-proteinogenic tRNA functions (C92, C93). The inference that U73 is the sole protective mechanism for non-proteinogenic tRNAs is logical given the absence of EF-Tu interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Abstract-level summary claims about EF-Tu augmentation, eukaryotic DTD inverted specificity, use of G3\u2022U70 for discrimination, and prevention of misincorporation are high-level statements of the main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C7, and C8 are abstract-level summaries that are supported by the detailed experimental results presented in the manuscript. These represent accurate high-level characterizations of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C36",
+      "C48",
+      "C50"
+    ],
+    "result": "Cellular DTD levels must be tightly regulated due to overexpression toxicity. Mild overexpression of eukaryotic DTD (PfDTD) creates more toxicity than bacterial DTD. The physiological consequence of inverted N73 specificity in eukaryotes remains unclear since U/C73-containing eukaryotic tRNAs are not known to be mischarged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C48, and C50 are supported by appropriate citations and logical reasoning. C36 and C48 cite previous work on DTD toxicity, while C50 acknowledges a knowledge gap regarding the physiological relevance of eukaryotic DTD's inverted specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "DTD is not just a recycler of Gly-tRNAAla, unlike its role in recycling D-aminoacyl-tRNAs, as demonstrated by the GFP reporter assay showing prevention of misincorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by the GFP reporter data (C55-C57) showing in vivo misincorporation in the absence of DTD, combined with citation to previous work on D-aminoacyl-tRNA recycling. This establishes a functional distinction between DTD's roles with different substrates.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2052 @@
+{
+  "submission": {
+    "id": "ced4ffc8-30cf-4e8e-9da4-4b184df4cf48",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:23:55.225232Z",
+    "updated_at": "2025-12-01T21:23:55.225232Z"
+  },
+  "content": [
+    {
+      "id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "submission_id": "ced4ffc8-30cf-4e8e-9da4-4b184df4cf48",
+      "content_type": "manuscript",
+      "content_text": "# Site-specific monoubiquitination downregulates Rab5 by disrupting effector binding and guanine nucleotide conversion\n\n## Authors\n\n- Donghyuk Shin<sup>1</sup> ([ORCID: 0000-0002-8272-6133](https://orcid.org/0000-0002-8272-6133))\n- Wooju Na<sup>1</sup>\n- Ji-Hyung Lee<sup>1</sup>\n- Gyuhee Kim<sup>1</sup>\n- Jiseok Baek<sup>1</sup>\n- Seok Hee Park<sup>1</sup>\n- Cheol Yong Choi<sup>1</sup>\n- Sangho Lee<sup>1</sup> ([ORCID: 0000-0003-3886-4579](https://orcid.org/0000-0003-3886-4579)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Sungkyunkwan University Suwon Korea\n\n\u2020 Corresponding author\n\n## Abstract\n\nRab GTPases, which are involved in intracellular trafficking pathways, have recently been reported to be ubiquitinated. However, the functions of ubiquitinated Rab proteins remain unexplored. Here we show that Rab5 is monoubiquitinated on K116, K140, and K165. Upon co-transfection with ubiquitin, Rab5 exhibited abnormalities in endosomal localization and EGF-induced EGF receptor degradation. Rab5 K140R and K165R mutants restored these abnormalities, whereas K116R did not. We derived structural models of individual monoubiquitinated Rab5 proteins (mUbRab5s) by solution scattering and observed different conformational flexibilities in a site-specific manner. Structural analysis combined with biochemical data revealed that interactions with downstream effectors were impeded in mUbRab5K140, whereas GDP release and GTP loading activities were altered in mUbRab5K165. By contrast, mUbRab5K116 apparently had no effect. We propose a regulatory mechanism of Rab5 where monoubiquitination downregulates effector recruitment and GDP/GTP conversion in a site-specific manner.\n\n## Introduction\n\nRab GTPases, the largest family of small GTPases, regulate various vesicular trafficking processes such as endocytosis, exocytosis, and ER to Golgi transport (Hutagalung and Novick, 2011). Rab GTPases are activated by GTP binding and inactivated by the hydrolysis of GTP to GDP (Pfeffer, 2005). This regulatory cycle of Rab is facilitated by other regulators. A GDP dissociation inhibitor (GDI) stabilizes GDP-bound Rab in the inactive state. Binding of a GDI displacement factor (GDF) to the GDI:GDP-Rab complex releases GDI, freeing GDP:Rab for subsequent activation. A guanidine nucleotide exchange factor (GEF) binds to GDP:Rab5 and catalyzes GDP release and GTP loading for Rab. The activated GTP-bound Rab exerts its effects by binding to various effector proteins. Inactivation of GTP:Rab is aided by a GTPase activating protein (GAP) (Cherfils and Zeghouf, 2013), rendering the Rab GTPase ready for another cycle.\n\nUbiquitination, a major post translational modification, is associated with various cellular processes, including vesicular trafficking (Hochstrasser, 2009; Komander and Rape, 2012). Both the number of ubiquitin moieties and their chain linkage types, such as polyubiquitination and monoubiquitination, can provide the molecular bases for the regulation of diverse cellular activities. Two representative polyubiquitination linkages have been studied extensively. K48-linked polyubiquitination guides the substrate to the proteasome, resulting in degradation of the substrate (Komander and Rape, 2012; Hochstrasser, 2009; Akutsu et al., 2016). By contrast, K63-linked polyubiquitination regulates cellular signaling pathways (Bhoj and Chen, 2009). Monoubiquitination modulates histone modification, virus budding, and endocytosis (Hicke, 2001). Although ubiquitination in endocytosis is well-documented (Piper et al., 2014), little is known about ubiquitination of Rab GTPases, the master regulators of endocytic trafficking (Hutagalung and Novick, 2011; Mizuno-Yamasaki et al., 2012).\n\nEvidence is mounting that ubiquitination can alter the functional consequences of small GTPases, which has been well documented for Ras GTPases. Site-specific monoubiquitination of K147 of Ras leads to activation of signaling by impairing its interaction with GAP (Baker et al., 2013a; Baker et al., 2013b; Sasaki et al., 2011). In contrast, monoubiquitination of K117 of Ras facilitates GDP release from Ras, independent of a GEF (Baker et al., 2013b). Ubiquitination of Rab has also been recently reported. HACE1, a HECT-type E3 ubiquitin ligase, ubiquitinates Rab6A, Rab8A, and Rab11A in conjunction with the \u03b22-adrenergic receptor (\u03b22AR) (Lachance et al., 2014). Ubiquitination of K145 of Rab11A activates Rab11A. Atypical serine ubiquitination through the formation of a phosphodiester bond independent of E1 and E2 enzymes has been reported for Rab (Qiu et al., 2016; Bhogaraju et al., 2016; Bhogaraju and Dikic, 2016). Rab33b is monoubiquitinated through this atypical serine ubiquitination by SdeA, a pathogenic effector protein of Legionella pneumophila. However, the molecular mechanisms by which ubiquitination of Rab regulates Rab function remain largely unexplored.\n\nRab5 regulates formation of early endosomes and maturation to late endosomes (Hutagalung and Novick, 2011). Three isoforms of mammalian Rab5 - Rab5a, Rab5b and Rab5c regulate endocytosis in a co-operative manner (Bucci et al., 1995). However, recent studies suggest that these three isoforms may have differential roles. Rab5a is required for EGF-induced EGFR degradation while Rab5b and Rab5c are not (Barbieri et al., 2000; Chen et al., 2009). Rab5c is involved in cell migration whereas Rab5a and Rab5b are not (Chen et al., 2014a). Proteomic studies have suggested that the Rab5 isoforms can be differentially ubiquitinated in cells (Chen et al., 2014b; Wagner et al., 2011; Wagner et al., 2012). Since Rab5a has been extensively studied for its involvement in endosomal fusion (Bucci et al., 1992; Gorvel et al., 1991; Barbieri et al., 2000; Hoffenberg et al., 1995; Rybin et al., 1996; Stenmark et al., 1994), we decided to focus on Rab5a for our studies (hereafter referred to as \u2018Rab5\u2019). Here, we identified monoubiquitination sites of Rab5 in cultured cells. Moreover, a modified chemical conjugation method enabled us to produce pure monoubiquitinated Rab5 proteins (mUbRab5s) in large quantities. Structural information about the mUbRab5s obtained from small-angle X-ray scattering and biochemical studies revealed that mUbRabs have different functions according to the site of ubiquitination. This research sheds light on how ubiquitination can regulate the function of Rab GTPases.\n\n## Results\n\n### Rab5 undergoes monoubiquitination at multiple sites\n\nTo determine whether Rab5 is ubiquitinated in cells as proteomics studies have suggested, we performed ubiquitination assays using HEK 293T cells. Rab5 was predominantly monoubiquitinated when FLAG-Rab5 was overexpressed with HA-ubiquitin in HEK 293T cells (Figure 1a). Because Rab5 is not known to be ubiquitinated by certain E3 ubiquitin ligases that can ubiquitinate other Rab proteins, such as the \u03b22AR-HACE complex (Lachance et al., 2014) and the bacterial effector protein SdeA (Qiu et al., 2016; Bhogaraju et al., 2016; Bhogaraju and Dikic, 2016), monoubiquitination of Rab5 is likely to be performed by an as yet unidentified E3 ligase(s). Monoubiquitinated Rab5 migrated in a gel as doublet bands, implying that monoubiquitination of Rab5 can occur at multiple sites. Appearance of doublet bands from monoubiquitination was previously noted for caveolin-1 (Ritz et al., 2011; Kirchner et al., 2013; Hayer et al., 2010). To explore the possibility that double bands might have been caused by prenylation of Rab5 (Xu and Nagy, 2016; Wojtkowiak et al., 2011), we treated cells with a geranylgeranyl transferase inhibitor (GGTI-198) and then conducted ubiquitination assays (Figure 1b). Double bands from the monoubiquitinated Rab5 remained unchanged in cells treated with GGTI-198, demonstrating that the double bands are the result of monoubiquitination of Rab5 at multiple sites. These double bands were not observed when a high percentage polyacrylamide gel (12%) was used (Figure 1c,e\u2013f). Next, we examined whether ubiquitination is dependent on the nucleotide binding state of Rab5. Ubiquitination assays with GDP- and GTP-bound forms of Rab5 mutants (S34N and Q79L, respectively) revealed that the monoubiquitination of Rab5 is not dependent on the nucleotide binding state of Rab5 (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig1-v1.jpg)\n\n**Figure 1.:** (a) Monoubiquitination of FLAG-Rab5 in HEK 293T cells. FLAG-Rab5 was co-transfected with HA-ubiquitin or HA vector and immunoprecipitated from total cell lysates (TCL). Immunoblotting was performed with the indicated antibodies. (b) Cells were treated with a geranylgeranyl transferase inhibitor (GGTI-298) or DMSO. After 24 hr of treatment, cells were harvested and subjected to ubiquitination assay. Short and long refer to exposure time during immunoblotting (c) GDP/GTP-bound mutants of Rab5 (S34N, Q79L) were examined by the ubiquitination assay (d) Each of 13 lysine (K) residues was mutated to arginine (R), and all single mutants were subjected to ubiquitination assay. (e) A 13KR (no lysine) mutant of Rab5 was generated and subjected to the ubiquitination assay. (f) FLAG-Rab5 was co-transfected with HA-ubiquitin or HA vector and subjected to ubiquitination assay in HeLa cells. (g) Immunofluorescence assay of 13KR, 12KR (13KR with R33K or R134K), and 11KR (13KR with R33/134K) mutants. FLAG-Rab5 WT and mutants were transfected into HeLa cells that were then stained with FLAG-mouse-IgG/rhodamine (red). Scale bar, 10 \u03bcm. (h) Ubiquitination assay of single lysine mutants in HEK 293T cells. The 11KR mutant was used as a negative control. Each of 11 arginine (R) residues was mutated back to lysine residues as indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Putative lysine residues responsible for Rab5 ubiquitination are depicted in the crystal structures of Rab5:GDP and Rab5:GTP complexes (PDB ID: 1TU4 and 3MJH, respectively). (b, c) Structural analysis of lysine residues as putative ubiquitination sites based on the crystal structures of Rab5:GDP and Rab5:GTP (PDB ID: 1TU4 and 3MJH, respectively). Lysine residues and guanine nucleotides are shown as stick models. Polar interactions are shown as yellow dotted lines with distances shown. This figure was prepared in PyMOL (Schr\u0151dinger).\n\nProteomic studies reported the following ubiquitination sites for Rab5: K116 in human Rab5 (Wagner et al., 2011; Chen et al., 2014b) and K134 and K140 in mouse Rab5 (Wagner et al., 2012; Chen et al., 2014b) (Table 1). To verify whether those ubiquitination sites are monoubiquitinated and to examine if other lysine residues of Rab5 can be ubiquitinated, we mutated each of the 13 lysine (K) residues of Rab5 to arginine (R) and repeated the ubiquitination assay for each K-to-R mutant in HEK 293T cells. We found that the upper band of the doublet was completely abolished in the K140R mutant, while the monoubiquitination bands of Rab5 were not altered in the other K-to-R mutants (Figure 1d). This result suggests that K140 is a major monoubiquitination site of Rab5, and that at least two or more sites are responsible for the lower band.. To identify the ubiquitination sites on Rab5 comprehensively, we prepared a lysine zero mutant in which all 13 lysine residues of Rab5 were mutated to arginine (13KR). However, the 13KR mutant was not expressed in HEK 293T cells (Figure 1e).We reasoned that this was due to mutation of both K33 and K134 based on previous structural studies of Ras and EF-Tu GTPases (Pai et al., 1989; Br\u00fcnger et al., 1990; Jurnak, 1985; Berchtold et al., 1993). Two lysine residues, the P-loop lysine in the GxxxGKS/T motif and the invariant lysine in the NKxD motif, are crucial because they form direct contacts with the guanine nucleotide. Similarly, for Rab5, K33 and K134 form direct contacts with both GDP and GTP molecules (Figure 1\u2014figure supplement 1b and c, PDB ID: 1TU4 and 3MJH, respectively). K33, which sits in the nucleotide-binding site, performs two polar interactions with GDP/GTP: the N\u03b6 atom and amide nitrogen interact with the O\u03b2 and O\u03b3 atoms of guanine nucleotides (2.7\u20133.4 \u00c5 for GDP; 2.8\u20133.5 \u00c5 for GTP; Figure 1\u2014figure supplement 1b and c). K134 also contacts GDP/GTP through two interactions: N\u03b6 atom interacts with O4\u2019 of the ribose ring (3.3 \u00c5 for GDP and 3.0 \u00c5 for GTP), and the amide nitrogen interacts with O6 of the guanine base (3.4 \u00c5 for both cases). Subsequently, we generated an 11KR mutant with intact K33 and K134 and examined its function by observing Rab5-positive endosome puncta in HeLa cells to visualize Rab5-positive endosomes more efficiently (Miaczynska et al., 2004; Borg et al., 2014; Kajiho et al., 2003). First, we checked whether Rab5 is monoubiquitinated in HeLa cells (Figure 1f). Rab5 was monoubiquitinated in HeLa cells, confirming that ubiquitination of Rab5 is conserved in the two cell lines. Whereas Rab5 puncta were not observed for the 13KR and the two 12KR mutants, puncta were formed as clearly in 11KR mutant cells as in WT cells (Figure 1g), suggesting that the functionality of the 11KR mutant is preserved. No monoubiquitinated Rab5 band was detected for the 11KR mutant in the ubiquitination assay (Figure 1h), suggesting that K33 and K134 are not responsible for monoubiquitination of Rab5. Considering that K134 was previously reported to be ubiquitinated by proteomic studies (Chen et al., 2014b; Wagner et al., 2011; Wagner et al., 2012), it is plausible that K134 may undergo polyubiquitination. Given the crucial role of K134 in the structural integrity of Rab5 (Figure 1\u2014figure supplement 1b and c), we hypothesized that ubiquitination of K134 might be related to disruption/degradation of Rab5, thereby preventing us from observing ubiquitination of K134 in the current experimental conditions.\n\n**Table 1.**\n Putative ubiquitination sites of Rab5A based on published studies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Lysine site</th>\n      <th>Peptide from mass spectrometry</th>\n      <th>Predicted protein</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>116</td>\n      <td>RAKNWVKELQRQA</td>\n      <td>hRab5a (K116/215)(Chen et al., 2014b; Wagner et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>134</td>\n      <td>IALSGNKADLANK</td>\n      <td>mRab5a (K134/215)(Chen et al., 2014b; Wagner et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>140</td>\n      <td>KADLANKRAVDFQ</td>\n      <td>mRab5a (K140/215)(Chen et al., 2014b; Wagner et al., 2012)</td>\n    </tr>\n  </tbody>\n</table>\n\nUsing the 11KR mutant as a negative control, we introduced single R-to-K back-mutations in the background of the 11KR mutant and performed ubiquitination assays. Monoubiquitination bands were present for R116K, R140K, and R165K mutants in contrast to the 11KR mutant (Figure 1h). These results verified the previously known ubiquitination sites (K116 and K140) and revealed a novel ubiquitination site (K165). Interestingly, K165 corresponds to K147 of a Ras GTPase whose monoubiquitination activates Ras signaling (Baker et al., 2013a). Notably, R22K, R112K, and R183K mutants exhibited polyubiquitination patterns. Because no such polyubiquitination patterns were present in the WT (Figure 1a\u2013f), these polyubiquitination patterns are likely artifacts from using the 11KR mutant as the background.\n\nWe analyzed these putative ubiquitination sites using the crystal structures of Rab5:GDP and Rab5:GTP (PDB ID: 1TU4 and 3MJH, respectively). None of the three lysine residues are located in the Rab5 switch regions (SW I and SW II; Figure 1\u2014figure supplement 1a). In addition, all of the lysine residues are surface-exposed and accessible to ubiquitin (Figure 1\u2014figure supplement 1a). Taken together, these findings indicate that, among the three lysine residues known to be ubiquitination sites of Rab5, K116 and K140 are monoubiquitinated, while K134 is not. We also identified K165 as a novel monoubiquitination site of Rab5.\n\n### Monoubiquitination of K140 and K165 of Rab5 plays a negative role in the endocytic pathway\n\nTo elucidate the consequences of monoubiquitinated Rab5, we examined the effects of monoubiquitination on the formation of Rab5-positive puncta, because Rab5 itself is widely used as an early endosome marker protein (Zhang et al., 2015; Liu et al., 2015; Alexopoulou et al., 2016). We performed immunofluorescence assays in HeLa cells to examine the formation of endogenous Rab5-positivie puncta upon overexpression of ubiquitin (Figure 2a\u2013b). Upon transfection of ubiquitin into HeLa cells, endogenous Rab5-positive puncta diffused to the cytosol and failed to co-localize with early endosome antigen-1 (EEA1) protein, another early endosome marker protein (Figure 2a). These results raise two possibilities: (i) monoubiquitinated Rab5 failed to be recruited to endosomal membranes or (ii) monoubiquitinated Rab5 disrupt Rab5-positive endosomal formation while it localized on the endosomal membranes. To distinguish between these two possibilities, we conducted a fractionation assay followed by immunoprecipitation to enrich for mUbRab5 in cytosolic and membrane fractions (Figure 2c). We observed that the monoubiquitinated Rab5 was predominantly localized in the membrane fraction. These results prompted us to hypothesize that monoubiquitinated Rab5 could disrupt Rab5-positive endosomal formation while it was localized on the membrane. Together with the immunofluorescence assay results (Figure 2a\u2013b), these findings strongly suggest that ubiquitination of Rab5 has negative effects on the regulatory cycle of Rab5.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig2-v1.jpg)\n\n**Figure 2.:** (a) HeLa cells were transfected with HA-ubiquitin or HA vector. Endogenous Rab5 and EEA1 were immunostained with Rab5-mouse-IgG/rhodamine (red) and EEA1-rabbit-IgG/Alexa-fluor-488 (green). Images were obtained by confocal microscopy. Scale bar, 10 \u03bcm. (b) Quantification of immunofluorescence results in b. Number of Rab5 positive puncta co-localized with EEA1 is counted per cell (n\u00a0=\u00a045). p-value is calculated by t-test. (c) Fractionation assay. Cytosol and membrane fractions were subjected to immunoprecipitation and analyzed by immunoblotting as indicated. (d) EGF-induced EGF receptor (EGFR) degradation was monitored in HeLa cells. Cells were treated with EGF, harvested at the indicated time points, and analyzed by immunoblotting. (e) FLAG-Rab5 WT and K-to-R mutants were transfected with or without HA-ubiquitin into HeLa cells as indicated. (f) FLAG-Rab5 K11R and indicated 11KR/single R-to-K mutants were transfected with or without HA-ubiquitin into HeLa cells. Cells were immunostained with FLAG-mouse-IgG/Rhodamine (red) and HA-rabbit-IgG/Alexa-fluor-488 (green). Images were obtained by confocal microscopy. Scale bar, 10 \u03bcm. (g, h) Quantification of immunofluorescence results in f and g, respectively. Number of cells with Rab5-positive endosomes were counted from 100 cells transfected with ubiquitin. Data are presented as mean\u00a0\u00b1\u00a0S.D (n\u00a0=\u00a03, *p\u00a0<\u00a00.1, ***p\u00a0<\u00a00.001, by one-way ANOVA).\n\nNext, we investigated whether the three putative ubiquitination sites (K116, K140, and K165) of Rab5 are involved in the endocytic pathway. We conducted EGF-induced EGF receptor (EGFR) degradation assays to examine the effects of monoubiquitinated Rab5 on the endocytic trafficking pathway (Hoeller et al., 2006; Balaji et al., 2012; Smith et al., 2013). EGFR was gradually degraded in EGF-treated HeLa cells, and complete degradation was observed after 90 min of EGF treatment (Figure 2d upper-left panel). Overexpression of Rab5 apparently facilitated EGF-induced EGFR degradation, as judged by earlier complete degradation after 60 min of EGF treatment (Figure 2d upper-right panel). Interestingly, overexpression of ubiquitin and Rab5 attenuated the degradation of EGFR, supported by the retention of some EGFR after 90 min of EGF treatment (Figure 2d middle-left panel). These results are consistent with the disruption of endosomal localization of Rab5 under ubiquitin overexpression (Figure 2a\u2013b). Thus, ubiquitination of Rab5 is likely to play a negative role in the Rab5-mediated endocytic pathway. When the K140R mutant was overexpressed with ubiquitin EGFR degradation was completely restored and no attenuation was observed and almost all of the EGFR were degraded after 90 min of EGF treatment (Figure 2d lower-left panel), while the other mutants (K116R and K165R) still possesses such attenuation. This result suggests that ubiquitination of K140 of Rab5 has a crucial role in downregulating the Rab5-mediated endocytic pathway. To examine the effects of the three putative ubiquitination sites in the endosomal localization of Rab5, we conducted immunofluorescence assays. Consistent with the results obtained using endogenous Rab5 (Figure 2a\u2013b), Rab5-positive endosomal puncta were abolished when Flag-Rab5 WT was co-transfected with HA-ubiquitin (Figure 2e,g). Similarly, no puncta were observed for the K116R mutant upon co-transfection with HA-ubiquitin (Figure 2e,g), indicating that monoubiquitination of K116 does not affect Rab5-positive endosomal formation. By contrast, Rab5-positive endosomal puncta were detectable when either K140R or K165R mutants were co-transfected with HA-ubiquitin (Figure 2e,g). These observations suggest that monoubiquitination of K140 or K165 inhibits the Rab5-positive endosomal formation. To further investigated, we performed immunofluorescent assays using Rab5-11KR and three single-K-mutants (11KR-R116K, 11KR-R140K, and 11KR-R165K). Rab5-11KR mutant still displayed Rab5-positive endosomal puncta when it was co-transfected with HA-ubiquitin (Figure 2f). 11KR-R116K also showed Rab5-positive endosomal formation consistent with the previous finding that ubiquitination of K116 does not have an adverse effect on Rab5 function (Figure 2e\u2013h). However, no endosomal puncta were observed for either 11KR-R140K or 11KR-R165K mutants upon co-transfection with HA-ubiquitin (Figure 2f,h). These results confirm the inhibitory role of monoubiquitination of either K140 or K165. These observations indicate that Rab5 monoubiquitination has functional consequences opposite those of Ras monoubiquitination (Baker et al., 2013a; Baker et al., 2013b): monoubiquitination of Rab5 on either K140 or K165 disrupts its function, whereas that of Ras on either K117 or K147 activates it. Taken together, our data demonstrate that monoubiquitination of K140 and K165 downregulates Rab5-mediated endocytic pathway, establishing monoubiquitination at specific sites of Rab5 as inhibitory signals, while monoubiquitination of K116 has no apparent effect.\n\n### Modified chemical ubiquitination with iterative ubiquitin addition to obtain fully monoubiquitinated Rab5 protein\n\nTo understand how monoubiquitinated Rab5s negatively affect the Rab5 regulatory cycle at molecular level, we undertook biochemical studies of monoubiquitinated Rab5s. Structural, biophysical, and biochemical characterization of monoubiquitinated Rab5 proteins requires a large quantity of sample of the highest purity. Among the previously reported methods for generating ubiquitin-protein covalent linkages (Merkley et al., 2005; McGinty et al., 2008; Freudenthal et al., 2010; Virdee et al., 2011; R\u00f6sner et al., 2015), we adopted a chemical conjugation method where a disulfide bond is formed in place of the isopeptide bond, using K-to-C mutants of Rab5 (K116C, K140C and K165C) and the C-terminal G-to-C mutant of ubiquitin (G76C). A known problem with existing chemical conjugation methods is the incompleteness of conjugation. Because Rab5 and monoubiquitinated Rab5s have similar molecular masses and isoelectric points (25 kDa and pI 7.81 for Rab5; 34 kDa and pI 7.72 for monoubiquitinated Rab5), the presence of unmodified Rab5 would prevent separation of the two species by either size exclusion chromatography or ion exchange chromatography. Therefore, we modified the published methods (Merkley et al., 2005; Baker et al., 2013a) to overcome incomplete monoubiquitination of Rab5 by introducing iterative ubiquitinG76C addition (Figure 3a). First, we altered four native cysteine residues in Rab5 to prevent non-specific disulfide bond formation: two cysteine residues on the surface of Rab5 were mutated to serine (C19S and C63S), and four C-terminal residues, including two cysteine residues (CCSN; residues 213\u2013216), were removed, inspired by a previous study (Baker et al., 2013a). GEF assays confirmed that the engineered Rab5 Del_Cys (C19S/C63S/\u0394213\u2013216) had the similar functionality as WT Rab5 (Figure 3\u2014figure supplement 1a,b). The production of chemically conjugated monoubiquitinated Rab5 (hereafter referred to as \u2018mUbRab5\u2019) at a specific lysine residue by iterative addition of ubiquitinG76C at regular intervals was monitored by SDS-AGE under reducing (R) and non-reducing (NR) conditions. Increments in mUbRab5 and decrements in Rab5 band intensities were observed as more cycles of ubiquitinG76C addition were completed (Figure 3b and Figure 3\u2014figure supplement 1c,d). Size exclusion chromatography successfully separated fractions containing only mUbRab5 (Figure 3c and Figure 3\u2014figure supplement 1c,d). Finally, we obtained chemically synthesized mUbRab5K116, mUbRab5K140, and mUbRab5K165 (Figure 3d). This simple modification resulted in significant improvement of mUbRab5 production and enabled us to perform structural and biochemical studies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic diagram of the chemical ubiquitination of Rab5 by iterative addition of ubiquitinG76C. (b) Production of mUbRab5K140 was monitored by SDS-PAGE under reducing (R) or non-reducing (NR) conditions. Intervals between addition of ubiquitinG76C (Ub) are indicated. O/N, overnight. Data for the production of mUbRab5K116 and mUbRab5K165 are shown in Figure 3\u2014figure supplement 1c,d. (c) A representative size exclusion chromatography chromatogram of the final reaction mixture for mUbRab5K140 synthesis. (Inset) Fractions were analyzed by SDS-PAGE. White arrowhead indicates a fraction containing pure mUbRab5K140. (d) Final products of chemically synthesized mUbRab5K116, mUbRab5K140, and mUbRab5K165.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Rab5 WT and Rab5 Del_Cys mutant (C19S/C63S/deletion of C-terminal four amino acids) were subjected to MANT-GDP release assay with (green) or without a\u00a0GEF (orange; Rabex-5132-393). Raw data and fitted one-phase exponential dissociation curves are shown. (b) Dissociation rates of MANT-GDP with or without the\u00a0GEF are shown as mean\u00a0\u00b1\u00a0S.D (n\u00a0=\u00a03). (c, d) Chemical synthesis of mUbRab5K116 and mUbRab5K165, respectively. (Left) Reaction was monitored by SDS-PAGE under reducing (R) or non-reducing (NR) conditions. (Middle) Size exclusion chromatography chromatogram of final reaction mixture for mUbRab5K140 synthesis. (Right) Fractions were analyzed by SDS-PAGE.\n\n### Structural models of mUbRab5s derived by solution scattering\n\nDespite the great interest in ubiquitinated proteins, very few structures of ubiquitinated proteins have been reported (Merkley et al., 2005; Zhang et al., 2012; Freudenthal et al., 2010). This might be due to the difficulties in purifying ubiquitinated proteins and the dynamics of the ubiquitin moiety; the ubiquitin moiety in ubiquitinated proteins has been reported to be able to adopt multiple conformations (Baker et al., 2013a; Ye et al., 2012). Consistently, structural simulations of ubiquitin moieties of mUbRas have predicted flexibility of these moieties (Baker et al., 2013a). Because of the inherent flexibility of the ubiquitin moiety of ubiquitinated proteins, we opted to employ small-angle X-ray scattering (SAXS). Three mUbRab5s (mUbRab5K116, mUbRab5K140, and mUbRab5K165) were subjected to dynamic light scattering to evaluate whether the chemically synthesized mUbRab5s were stable and monodisperse in solution. All three mUbRab5s were monodisperse in solution (polydispersity\u00a0<12%; Figure 4\u2014figure supplement 1a). To conduct SAXS experiment mUbRab5K116, mUbRab5K140, and mUbRab5K165 were concentrated up to 2.9, 7.3, and 2.6 mg/ml, respectively, and subjected to SAXS measurements (Table 2). All three mUbRab5s showed linear Guinier regions at low q, leading to determination of reliable values for a radius of gyration (Rg) (Svergun, 1992). To check whether the ubiquitin moieties of Rab5 are flexible, we performed flexibility analysis using the Porod-Debye method (Rambo and Tainer, 2011). SAXS curves from the three mUbRab5s did not have a plateau in the Porod-Debye plot, implying that all of the mUbRab5s were flexible in solution (Figure 4\u2014figure supplement 1b). To understand the conformational dynamics of the mUbRab5s, we analyzed SAXS data using an ensemble-optimized method (EOM) (Tria et al., 2015). EOM was originally designed for multi-domain proteins with a flexible linker. Input files for EOM are a single linear protein sequence covering entire protein, atomic coordinates for each domain, and SAXS data (Tria et al., 2015). Because ubiquitinated proteins are not single polypeptides but branched ones, we generated the sequences and atomic coordinates of mUbRab5s as described in the Materials and methods. A pool of 10,000 independent models was generated based on the sequence and structural information from SAXS curve by RANCH (embedded in EOM, ATSAS package). Then, a genetic algorithm for the selection of an ensemble was performed by GAJOE with 100 times (embedded in EOM, ATSAS package). Finally, the best ensemble matched with the SAXS curve with lowest \u03c72 was selected. Distribution of conformational ensembles of mUbRab5K140 was clearly distinct from those of mUbRab5K116 and mUbRab5K165. Two distinct populations of conformational ensembles were evident for mUbRab5K140, with a radius-of-gyration (Rg) of 23 and 27 \u00c5, respectively, and maximum distance (Dmax) of 75 and 90 \u00c5 (Figure 4b,e). By contrast, mUbRab5K116 and mUbRab5K165 comprised a single population with an Rg of 25 \u00c5 and Dmax of 80 \u00c5 (Figure 4a,d and and c,f). These results strongly suggest that monoubiquitination at these three lysine sites has different functional consequences. EOM-derived structural models of mUbRab5s revealed specific orientations of the ubiquitin moiety. Three major conformations were derived for mUbRab5K140 (Figure 4h) and two conformations for each of mUbRab5K116 and mUbRab5K165 (Figure 4g,i). This was in contrast to K147-monoubiquitinated Ras (mUbRasK147) that exhibited different orientations of the ubiquitin moiety in the top 10 lowest-energy models from simulations (Baker et al., 2013a). The number of relative orientations of the ubiquitin moiety appears to be less than that of the major conformations derived: essentially, two orientations for mUbRab5K140 and a single orientation each for mUbRab5K116 and mUbRab5K165. This indicates that the ubiquitin moiety on K140 is more flexible than those on K116 and K165. Our results suggest that the ubiquitin moieties on multiple lysine residues of Rab5 can assume different conformations, resulting in different modes of regulation. Similar to the molecular dynamics simulation of mUbRas (Baker et al., 2013a), none of the ubiquitin molecules from the EOM models were located proximal to Rab5. This raises the possibility that monoubiquitination of Rab5 can regulate its function by altering its interactions with partner proteins such as GEF, GAP, and downstream effectors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig4-v1.jpg)\n\n**Figure 4.:** (a, b, c) Radius of gyration (Rg) and (d, e, f) maximum inter-atomic distance (Dmax) plots of the randomly generated pool (solid black) and EOM-selected model (orange) are shown for mUbRab5K116, mUbRab5K140, and mUbRab5K165, respectively. (g, h, i) (Upper) Final ensemble models of mUbRab5K116, mUbRab5K140, and mUbRab5K165. Each EOM-selected ensemble and switch I and II regions of Rab5 (SW I and SW II) are labeled. Rab5 is colored in cyan and ubiquitin is colored in series of red. (Lower) Raw data with the calculated SAXS curve for each model are plotted.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Polydispersity of chemically synthesized mUbRab5s was measured by dynamic light scattering. (b) Flexibility analysis of mUbRab5s was performed by Sc\u212btter (http://www.biosis.net) using the SAXS data. Kratky-Debye plot reveals a plateau, while the Porod-Debye plot showed loss of the plateau. This result suggests that all mUbRab5s are flexible in solution.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Ensemble models of mUbRab5K116, mUbRab5K140, and mUbRab5K165 derived by SAXS were superimposed with the crystal structures of (a, b, c) Rab5:Rabex-5 (a GEF) complex (PDB ID: 4DQU).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Ensemble models of mUbRab5K116, mUbRab5K140, and mUbRab5K165\u00a0derived by SAXS were superimposed with the crystal structures\u00a0of\u00a0(a, b, c) Rab5:Rabaptin5 (an effector) complex (PDB ID: 1TU3),\u00a0and (d, e, f) Rab5:EEA1 (an effector) complex (PDB ID: 3MJH)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Ensemble models of mUbRab5K116, mUbRab5K140, and mUbRab5K165\u00a0derived by SAXS were superimposed with the crystal structures of\u00a0(a, b, c) Rab1B:RabGAP-5 (a GAP) (PDB ID: 4HLQ).\n\n**Table 2.**\n SAXS data collection and analysis statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>mUbRab5K116</th>\n      <th>mUbRab5K140</th>\n      <th>mUbRab5K165</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data-collection parameters</td>\n      <td colspan=\"3\"></td>\n    </tr>\n    <tr>\n      <td>Synchrotron beamlines</td>\n      <td colspan=\"3\">PAL-4C</td>\n    </tr>\n    <tr>\n      <td>Beam geometry</td>\n      <td colspan=\"3\">Capillary</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td colspan=\"3\">1.24</td>\n    </tr>\n    <tr>\n      <td>Exposure time (sec)</td>\n      <td colspan=\"3\">10</td>\n    </tr>\n    <tr>\n      <td>Concentration range (mg/ml)</td>\n      <td>0.4\u20132.9</td>\n      <td>0.9\u20137.3</td>\n      <td>1.0\u20132.6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sample parameters</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Polydispersity (%, by DLS)</td>\n      <td>10.9</td>\n      <td>11.6</td>\n      <td>11.8</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Structural parameters</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>I(0) (cm\u22121) [from Guinier]</td>\n      <td>0.73\u00a0\u00b1\u00a00.01</td>\n      <td>4.29\u00a0\u00b1\u00a00.03</td>\n      <td>10.69\u00a0\u00b1\u00a00.05</td>\n    </tr>\n    <tr>\n      <td>Rg (\u00c5) [from Guinier]</td>\n      <td>25.54\u00a0\u00b1\u00a00.24</td>\n      <td>23.38\u00a0\u00b1\u00a00.34</td>\n      <td>27.23\u00a0\u00b1\u00a00.34</td>\n    </tr>\n    <tr>\n      <td>I(0) (cm\u22121) [from P(r)]</td>\n      <td>0.73</td>\n      <td>4.35</td>\n      <td>10.74</td>\n    </tr>\n    <tr>\n      <td>Rg (\u00c5) [from P(r)]</td>\n      <td>26.55</td>\n      <td>24.61</td>\n      <td>27.81</td>\n    </tr>\n    <tr>\n      <td>Dmax (\u00c5)</td>\n      <td>86.56</td>\n      <td>83.51</td>\n      <td>93.69</td>\n    </tr>\n    <tr>\n      <td>Porod volume estimate (\u00c53)</td>\n      <td>44428.4</td>\n      <td>32040.2</td>\n      <td>46685.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software employed</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Primary data reduction</td>\n      <td colspan=\"3\">RAW</td>\n    </tr>\n    <tr>\n      <td>Dara processing</td>\n      <td colspan=\"3\">PRIMUS</td>\n    </tr>\n    <tr>\n      <td>Ensemble analysis</td>\n      <td colspan=\"3\">EOM and FoXS MES</td>\n    </tr>\n    <tr>\n      <td>Three-dimensional representations</td>\n      <td colspan=\"3\">PyMOL</td>\n    </tr>\n  </tbody>\n</table>\n\nTo determine if monoubiquitination affected the interaction of Rab5 with its partners, we superimposed our mUbRab5 models with known complex structures of Rab5:Rabex-5 (a GEF), RabGAP-5 (a GAP), and Rabaptin5 and EEA1 (effector proteins). In the mUbRab5:Rabex-5 complex models obtained by superpositioning of mUBRab5 and the Rab5:Rabex-5 structure (PDB ID: 4DQU) (Zhang et al., 2014), none of the ubiquitin moieties of mUbRab5s appeared to clash with Rabex-5 (Figure 4\u2014figure supplement 2). We speculated that the ubiquitin moieties might not interfere with activities related to a GEF, such as GDP release and GTP loading. Next, we generated structural models of mUbRab5:Rabaptin5 and mUbRab5:EEA1 by superposition on Rab5:Rabaptin5 and Rab5:EEA1 structures (PDB IDs: 1TU3 and 3MJH, respectively). The ubiquitin moieties of mUbRab5K116 and mUbRab5K165 were far from both Rabaptin5 and EEA1 (Figure 4\u2014figure supplement 3). However, the switch I (SWI) region of Rab5 was juxtaposed with the flexible ubiquitin moiety of mUbRab5K140, raising the possibility that a flexible ubiquitin moiety could cause a conformational change in the SWI. Because this conformational change of SWI is required for activation of Rab5 through interactions with downstream effector proteins, potential interruption of the SWI by mUbRab5K140 could have a severe impact on the Rab5 regulatory cycle. Finally, we generated a structural model for mUbRab5:RabGAP-5 by superposition to a known Rab:GAP structure (PDB ID: 4HLQ). The ubiquitin moiety of mUbRab5K116 did not clash sterically with RabGAP-5 (Figure 4\u2014figure supplement 4a). Both mUbRab5K140 and mUbRab5K165 seemingly bring the ubiquitin moieties close to RabGAP-5 (Figure 4\u2014figure supplement 4b,c), suggesting that neither mUbRab5K140 nor mUbRab5K165 would have enhanced interactions with RabGAP-5. Taken together, our structural analyses of mUbRab5s with partner proteins such as GEF, GAP, and effector proteins strongly suggest that the inhibitory effects of some mUbRab5s are highly likely to be caused by impedance of interactions with effector proteins.\n\n### mUbRab5s retain GEF-mediated guanine nucleotide conversion\n\nTo dissect the inhibitory role of mUbRab5s at the molecular level, we examined whether monoubiquitination of Rab5 could interfere with guanine nucleotide conversion, because the major regulatory mechanism of Rab GTPase is the conversion between a GDP-bound state (inactive) and GTP-bound state (active) (Novick, 2016; Mizuno-Yamasaki et al., 2012; Cherfils and Zeghouf, 2013). Rab5 guanidine nucleotide exchange factor (Rabex-5) mediates the conversion from GDP to GTP for Rab5 (Zhang et al., 2014; Thomas and Strutt, 2014; Aikawa et al., 2012). We measured GDP dissociation and GTP association rates of the mUbRab5s in the presence and absence of a GEF (Rabex-5132-393). Guanine nucleotide analogues 2\u2019-(or-3\u2019)-O-(N-methyl-anthraniloyl) GDP (MANT-GDP) and MANT-GTP were used to detect the interaction between guanine nucleotides and Rab5. GDP release from either Rab5 or mUbRab5 was measured by monitoring the decrease in the amount of fluorescence from MANT-GDP when non-fluorescent GDP was added in the presence and absence of Rabex-5, a GEF (Figure 5a,b and Table 3). Both mUbRab5K116 and mUbRab5K140 showed similar GDP-release activities to WT Rab5 in the presence of Rabex-5, indicating that monoubiquitination of K116 and K140 does not interfere with the GEF function (Figure 5a,b). Notably, mUbRab5K165 exhibited reduced GDP release in the presence of GEF, and the curve could not be fitted by a one-phase decay linear regression model. Next, GTP loading was monitored using MANT-GTP and Rabex-5. Again, mUbRab5K116 and mUbRab5K140 showed similar levels of GTP loading to Rab5 (Figure 5c,d). However, the fluorescence signal from mUbRab5K165 decreased continuously after it reached a maximum. This observation indicates that monoubiquitination of K165 does not block GTP loading of Rab5, but can weaken the interaction between GTP and Rab5. Our data support the structural analyses that predicted that monoubiquitination of Rab5s would have no effect on the Rab5-GEF interaction (Figure 4\u2014figure supplement 2a\u2013c). Taken together, these findings suggest that monoubiquitination of Rab5 on K116 and K140 does not affect GEF activity, while monoubiquitination of K165 interferes with the GEF-mediated conversion cycle, as indicated by this protein\u2019s reduced response to GDP release and leakage during GTP loading.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig5-v1.jpg)\n\n**Figure 5.:** (a) MANT-GDP release assay with (green) or without a\u00a0GEF (orange; Rabex-5132-393). Raw data and fitted one-phase exponential dissociation curves are shown. (b) Dissociation rates of MANT-GDP with or without\u00a0the GEF are shown as mean\u00a0\u00b1\u00a0standard deviation (S.D.; n\u00a0=\u00a03). (c) MANT-GTP loading was monitored by fluorescence emission at different time points. GEF was added to the reaction mixture to facilitate the GTP loading at the indicated time (gray arrow). (d) Association rates of MANT-GTP with\u00a0the\u00a0GEF are shown as mean\u00a0\u00b1\u00a0S.D. (n\u00a0=\u00a03). Raw data and fitted one-phase exponential association curves are shown. (b, d) Dissociation and association rates of mUbRab5K165 with GEF were not determined (labeled \u2018N.D.\u201d) because the data could not be fitted to one-phase exponential dissociation and association curves.\n\n**Table 3.**\n GDP dissociation and GTP association rates for Rab5 and mUbRab5s.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">GDP dissociation rate\u00a0\u00b1\u00a0SD* (10\u22124 s\u22121)</th>\n      <th colspan=\"2\">GTP association rate\u00a0\u00b1\u00a0SD (10\u22124 s\u22121)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Without GEF</th>\n      <th colspan=\"2\">With GEF</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rab5</td>\n      <td>5.8\u00a0\u00b1\u00a00.2</td>\n      <td colspan=\"2\">20.2\u00a0\u00b1\u00a00.3</td>\n      <td>6.2\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K116</td>\n      <td>8.6\u00a0\u00b1\u00a00.2</td>\n      <td colspan=\"2\">18.8\u00a0\u00b1\u00a00.1</td>\n      <td>8.2\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K140</td>\n      <td>5.3\u00a0\u00b1\u00a00.2</td>\n      <td colspan=\"2\">13.6\u00a0\u00b1\u00a00.2</td>\n      <td>9.8\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K165</td>\n      <td>1.7\u00a0\u00b1\u00a00.2</td>\n      <td colspan=\"2\">ND\u2020</td>\n      <td>ND\u2020</td>\n    </tr>\n  </tbody>\n</table>\n\n_* SD, standard deviation\u2020 ND, not determined._\n\n### Monoubiquitination of K140 of Rab5 decreases its binding affinity to effector proteins\n\nOur data demonstrate that endosome localization of Rab5 is downregulated by monoubiquitination of either K140 or K165, while monoubiquitination on K116 is not important for localization. Notably, we found that mUbRab5K165 showed reduced GDP release activity and weakened GTP loading. However, the GEF activity of mUbRab5K140 remained unchanged relative to WT. We then conducted downstream effector protein binding assays with Rab5 and mURab5s. Several studies have reported that monoubiquitination of a target protein can alter its interactions with other proteins (Lin et al., 2016; Lau et al., 2015; Duan et al., 2016). Previous studies of Ras monoubiquitination have revealed that monoubiquitinated Ras has different binding affinities to its effector proteins compared to WT Ras (Sasaki et al., 2011). This prompted us to examine the interactions between mUbRabs and effector proteins. We determined the dissociation constants (Kd) of Rab5 and mUbRab5s for two Rab5 effector proteins, Rabaptin5 and EEA1 (Mishra et al., 2010; Zhu et al., 2004), using bio-layer interferometry (Figure 6). Each of the Rab5 binding domains of Rabaptin5 and EEA1 (Rabaptin5551-862 and EEA136-91) was highly purified as a GST fusion protein (Figure 6a). Rabaptin5, a well-characterized Rab5 effector protein, has been widely used to study biochemical and biophysical mechanisms involved in Rab5-mediated endocytosis (Zhu et al., 2007; Zhu et al., 2004; Zhang et al., 2014). Surprisingly, the Kd value of mUbRab5K140 for Rabaptin5 was five-fold higher than that of unmodified Rab5 (37.7\u00a0\u00b1\u00a04.9 \u03bcM vs. 8.0\u00a0\u00b1\u00a03.4 \u03bcM; Figure 6b,c and Table 4), indicating the reduced affinity of mUbRab5K140 for Rabaptin5. However, mUbRab5K116 and mUbRab5K165 showed little change in the Kd values: 8.0\u00a0\u00b1\u00a00.6 \u03bcM and 4.4\u00a0\u00b1\u00a00.2 \u03bcM, respectively. These results strongly suggest that monoubiquitination of K140 of Rab5 inhibits its binding to downstream effector proteins. Because effector proteins bind to Rab5 via similar binding modes (Mishra et al., 2010), it is plausible that mUbRab5K140 can inhibit interactions with other Rab5 effector proteins. To evaluate this possibility, we determined the Kd values of Rab5 and mUbRab5s for early endosome antigen-1 (EEA1), another well-known Rab5 effector protein. EEA1 recognizes phosphatidylinositol 3-phosphate-positive membranes and recruits Rab5 (Christoforidis et al., 1999; Rubino et al., 2000; Murray et al., 2016). mUbRabK140 exhibited an approximately 20-fold increase in Kd for EEA1 compared to unmodified Rab5 (108.0\u00a0\u00b1\u00a022.0 \u03bcM vs. 5.8\u00a0\u00b1\u00a00.3 \u03bcM, respectively; Figure 6d,e and Table 4). The Kd value of unmodified Rab5 for EEA1 was similar to that reported previously (5.8\u00a0\u00b1\u00a00.3 \u03bcM vs. 2.4\u00a0\u00b1\u00a00.23 \u03bcM) (Mishra et al., 2010). mUbRab5K116 showed a modest increase in Kd value for EEA1 (18.4\u00a0\u00b1\u00a00.8 \u03bcM), while mUbRab5K165 showed virtually no change (4.7\u00a0\u00b1\u00a00.5 \u03bcM) in Kd value relative to that of unmodified Rab5. These data are consistent with the structural models, which suggested a possible clash of mUbRabK140 with effector proteins but no such clash for mUbRabK116 and mUbRabK165 (Figure 4\u2014figure supplement 2d\u2013i). Our results collectively establish that monoubiquitination of K140 of Rab5 disrupts its interactions with down-stream effector proteins, while monoubiquitination of K116 only has a minor effect on these interactions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig6-v1.jpg)\n\n**Figure 6.:** (a) Highly purified GST-tagged Rabaptin5551-862, GST-EEA136-91, and GST proteins were prepared. (b, d) Bio-layer interferometry assay was performed to determine dissociation constants (Kd) for mUbRab5K140 and either Rabpatin-5 or EEA1. Several concentrations of Rab5 or mUbRab5s were used as indicated. (c, e) Dissociation constants were calculated by global binding fitting. Kd values are shown as mean\u00a0\u00b1\u00a0S.E.M.\n\n**Table 4.**\n Binding kinetics of Rab5 and mUbRab5s to Rabaptin5551-862 and EEA136-91.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Rabaptin5</th>\n      <th colspan=\"3\">EEA1</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>kon\u00a0\u00b1\u00a0SEM* (102 M\u22121s\u22121)</th>\n      <th>koff\u00a0\u00b1\u00a0SEM (10 \u22123s\u22121)</th>\n      <th>Kd \u00b1SEM (\u03bcM)</th>\n      <th>kon \u00b1SEM (102 M\u22121s\u22121)</th>\n      <th>koff\u00a0\u00b1\u00a0SEM (10 \u22123s\u22121)</th>\n      <th>Kd \u00b1SEM (\u03bcM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rab5</td>\n      <td>6.6\u00a0\u00b1\u00a02.8</td>\n      <td>2.2\u00a0\u00b1\u00a00.2</td>\n      <td>8.0\u00a0\u00b1\u00a03.4</td>\n      <td>4.5\u00a0\u00b1\u00a00.2</td>\n      <td>2.6\u00a0\u00b1\u00a00.1</td>\n      <td>5.8\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K116</td>\n      <td>2.4\u00a0\u00b1\u00a00.1</td>\n      <td>1.9\u00a0\u00b1\u00a00.1</td>\n      <td>8.0\u00a0\u00b1\u00a00.6</td>\n      <td>1.9\u00a0\u00b1\u00a00.2</td>\n      <td>5.0\u00a0\u00b1\u00a00.2</td>\n      <td>18.4\u00a0\u00b1\u00a00.8</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K140</td>\n      <td>13.9\u00a0\u00b1\u00a01.8</td>\n      <td>52.3\u00a0\u00b1\u00a01.4</td>\n      <td>37.7\u00a0\u00b1\u00a04.9</td>\n      <td>1.8\u00a0\u00b1\u00a00.4</td>\n      <td>19.7\u00a0\u00b1\u00a00.8</td>\n      <td>108.0\u00a0\u00b1\u00a022.0</td>\n    </tr>\n    <tr>\n      <td>mUbRab5K165</td>\n      <td>3.2\u00a0\u00b1\u00a00.1</td>\n      <td>1.4\u00a0\u00b1\u00a00.1</td>\n      <td>4.4\u00a0\u00b1\u00a00.2</td>\n      <td>1.9\u00a0\u00b1\u00a00.8</td>\n      <td>0.9\u00a0\u00b1\u00a00.1</td>\n      <td>4.7\u00a0\u00b1\u00a00.5</td>\n    </tr>\n  </tbody>\n</table>\n\n_* SEM, standard error of the mean_\n\n## Discussion\n\nRab GTPases have recently been revealed to be ubiquitinated (Lachance et al., 2014; Qiu et al., 2016). However, the functional roles of ubiquitinated Rab GTPases have not been explored yet. Here, we demonstrated that Rab5 is monoubiquitinated at K116, K140, and K165 in two different cell lines (HEK 293T and HeLa). We also obtained structural ensemble models of the mUbRab5s by solution scattering. While the ubiquitin molecule on mUbRab5K140 was flexible, it was not flexible from the other two mUbRab5s. mUbRab5K140 shows decreased binding affinity to downstream effectors such as Rabaptin5 and EEA1, but its GEF-mediated GDP release and GTP loading activities were not changed. Through GDP release and association assays, we found that mUbRab5K165 had altered binding to GDP/GTP. Based on our data, we propose a molecular mechanism for how site-specific monoubiquitination of Rab5 acts as an inhibitory signal (Figure 7). The canonical regulatory mechanism of Rab5 involves a GEF- and GAP-mediated GDP/GTP conversion cycle and interaction between activated Rab5 and downstream effector proteins (Figure 7a). Monoubiquitination of K116 of Rab5 does not interfere with any part of the functional cycle (Figure 7b). By contrast, monoubiquitination of either K140 or K165 of Rab5 negatively regulates the functional cycle by either reducing the interaction of Rab5 with downstream effector proteins (K140 monoubiquitination; Figure 7c) or altering the intrinsic GDP/GTP conversion cycle (Figure 7d).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig7-v1.jpg)\n\n**Figure 7.:** (a) Canonical Rab5 regulatory cycle. Inactive GDP-bound Rab5 is activated by a guanine nucleotide exchange factor (GEF such as Rabex-5) through the exchange of GDP to GTP. The activated GTP-bound Rab5 interacts with various effector proteins to form early endosomes. Activated Rab5 is switched-off by a GTPase activating protein (GAP) through the hydrolysis of GTP to GDP. (b) Monoubiquitination on K116 has no effect on the regulatory cycle. Thus, mUbRab5K116 is regulated in the same way as unmodified Rab5. (c) Monoubiquitination of K140 causes the ubiquitin moiety to impair the interaction of Rab5 with its effector proteins. Therefore, mUbRab5K140 cannot form early endosomes. (d) Monoubiquitination of K165 alters the GDP/GTP conversion cycle by interfering with the activities of GEF, thus lowering affinity to GTP. mUbRab5K165 cannot form early endosomes.\n\nOur proposed model for the role of monoubiquitination in the functional cycle of Rab5 is clearly distinct from the case of Ras (Baker et al., 2013a), where monoubiquitination interferes with GAP activity, leading to activation of Ras signaling. Therefore, monoubiquitination seems to play different roles in Rab and Ras GTPases: monoubiquitination in Rab5 serves as an inhibitory signal, whereas it serves as a stimulatory or activating signal in Ras. It will be interesting to determine the ubiquitination sites of other Rab GTPases and to investigate how ubiquitination alters the intrinsic functions of these proteins. Proteomics studies to screen for ubiquitination sites of Rab5 have also indicated that other Rab GTPases are ubiquitinated. As Rab5 monoubiquitination is different from Ras monoubiquitination, other Rab GTPases might be regulated differently by site-specific ubiquitination. For these studies, the optimized chemical ubiquitination method described here will be useful. Recently, atypical serine ubiquitination was reported for Rab33b (Qiu et al., 2016; Bhogaraju et al., 2016; Bhogaraju and Dikic, 2016), but the underlying molecular mechanism has not been clarified. Our chemical ubiquitination method can be used to determine the functional role of serine ubiquitination in Rab\u00a0GTPases. Further investigation is required to evaluate the diversity of roles of monoubiquitination among different small GTPase super families and/or among members of the same superfamily.\n\nAdvances in proteomic techniques have revealed the ubiquitination sites of a small number of Rab proteins. Analysis of published proteomics data revealed that 28 of 63 human Rab GTPases (including isoforms) are ubiquitinated in cells. When we compiled ubiquitination sites of Rab proteins reported by proteomic studies, we found that ubiquitination sites of Rab5 found in the current study - K116 and K140 - are located in non-conserved regions, while K165 is in the conserved G5 motif (xxxETSx\u2019K\u2019) (Figure 8a). It is plausible that ubiquitination of non-conserved lysine residues in Rab proteins and possibly small GTPases in general exhibits different functionalities. We noticed ubiquitination of K33 and K134 (numbering based on the Rab5 sequence) in some Rab proteins; both of these residues are critical for structural integrity (Figure 1e,g, Figure 1\u2014figure supplement 1). Analysis of Rab5 proteins from eukaryotic species revealed different degrees of conservation of the three ubiquitination sites discovered in this study: both K116 and K165 are strictly conserved from yeast to human, whereas K140 is less conserved (Figure 8b). K140 is replaced by isoleucine in Drosophila and glutamate in yeast, implying that K140 might be a point of functional differentiation in these organisms. In contrast to eukaryotic Rab5 proteins, the three ubiquitination sites were not conserved in Rab5 homologue from Acanthamoeba polyphaga mimivirus (APMV). Recent crystal structure of APMV Rab5 revealed that K165 of hRab5a is substituted to F152 in APMV Rab5 and plays a\u00a0major role for binding to GTP molecule (Ku et al., 2017). Therefore, it seems that monoubiquitination of Rab5 is a\u00a0subsidiary signal for its regulation in eukaryotic cells. It is also intriguing that ubiquitination of a conserved site can have different functional consequences in Rab and Ras GTPase proteins. Monoubiquitination of K165 of Rab5 has an inhibitory effect, whereas ubiquitination of the corresponding K147 of Ras has a stimulatory effect (Baker et al., 2013a; Baker et al., 2013b). Therefore, monoubiquitination appears to be a versatile modification tool.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/29154/elife-29154-fig8-v1.jpg)\n\n**Figure 8.:** Rab GTPases in the ubiquitination database (mUbSiDa [Chen et al., 2014b]) were obtained, and their sequences were aligned to human Rab5A (this study) using Clustal X2 (Larkin et al., 2007). The graphical representation of the aligned sequences was prepared using BoxShade (ExPASy server). Ubiquitination sites from proteomic studies are indicated with the letter \u2018K\u2019 in the red background (K). Ubiquitination sites and structural key lysine residues revealed from this study are marked as inverse triangles in black () and green (), respectively. \u2018h\u2019 and \u2018m\u2019 refer to human and mouse, respectively. (b) Rab5 GTPases from different species were aligned to human Rab5A. Ubiquitination sites from this study are indicated with the letter \u2018K\u2019 on a red background (K).\n\nOxidative conjugation of a ubiquitin moiety to a cysteine residue of a target protein has been widely used for chemical synthesis of ubiquitinated proteins. Despite the relative simplicity of this method in comparison with enzymatic conjugation, oxidative conjugation often suffers from incompleteness of the process, rendering subsequent separation of the ubiquitinated protein from unreacted protein very challenging (Baker et al., 2013b; Merkley et al., 2005). Such an inseparable mixture can obscure correct interpretation of biochemical and structural data. Here, we modified a pre-existing method by iterative addition of ubiquitinG76C to drive the chemical synthesis to completion. Our optimized method for chemical synthesis of ubiquitinated proteins will facilitate studies on the effects of protein ubiquitination at the molecular level when no identified E3 ubiquitin ligase is available or a large quantity of ubiquitinated protein is desired.\n\nIn this study, we found that monoubiquitination of Rab5 had an inhibitory effect on the regulatory cycle of Rab5. However, we did not find a stimulus signal or E3 ligase(s) responsible for monoubiquitination of Rab5. As result, only a small portion of Rab5 could be ubiquitinated when ubiquitin was overexpressed. These results suggest that ubiquitination of Rab5 occurs rarely in cells under basal conditions and may\u00a0explain why the ubiquitination of Rab GTPases has not been studied until recently (de la Vega et al., 2011). Despite the small population of monoubiquitinated Rab5, the effects of monoubiquitination of Rab5 were strong. We observed dramatic failure of localization of Rab5 to the endosome and EGFR degradation pathway. This suggests that monoubiquitination of Rab5 is tightly regulated in the cell through specific E3 ligase or DUB enzymes. It will be of great interest to determine how monoubiquitination of Rab5 is regulated in cells.\n\n## Materials and methods\n\n### Plasmids and cell culture\n\nThe pCDNA-GFP-Rab5 clone was provided by Dr. Yoshikatsu Aikawa at Doshisha University, Japan. The pGEX-EEA136-91 clone was obtained from Dr. Bonsu Ku at the Korea Research Institute of Bioscience and Biotechnology (KRIBB). cDNA clones of Rabaptin5 and Rabex-5 were purchased from Open Biosystems. The Rab7 gene was chemically synthesized (Bioneer). Each gene was amplified and cloned into bacterial expression vectors (parallel-His, parallel-GST (Sheffield et al., 1999), and pQE30) or mammalian expression vectors (pCDNA-FLAG and pCDNA-HA). Human embryonic kidney 293T (HEK\u00a0293T) and HeLa cells were purchased from American Type Culture Collection (RRID: CVCL_0063 and CVCL_0030, respectively) and maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum (heat-inactivated). Plasmids were transfected into cells using Lipofectamine 2000 (Invitrogen) for HeLa cells and PEI 25000 (23966, Polysciences) for HEK 293T cells. Mycoplasma detection kit (LT07-318, Lonza,\u00a0Switzerland) was regularly used to check absence of mycoplasma.\n\n### Protein expression and purification\n\nGST-ubiquitin G76C, His-Rab5 (WT and mutants), and His-Rabex-5132-393 were expressed in E. coli BL21(DE3) cells. GST-Rabaptin5551-862 and GST-EEA136-91 were expressed in E. coli Rosetta2 (DE3) cells. Cells were inoculated and grown to an OD600 of 0.6\u20130.8 at 37 \u02daC. To induce protein expression, 0.5 mM isopropyl d-thiogalactoside (IPTG) was added to the cultures, and they were incubated at 20 \u02daC overnight. Induced cells were harvested by centrifugation at 4,000 rpm. Cells were resuspended in buffer A (50 mM Tris-HCl pH 7.5 and 150 mM NaCl). For GST-Ub G76C and His-Rab5 K-to-C mutants, 2 mM TCEP was added during the purification procedure. Resuspended cells were lysed by sonication and centrifuged at 13,000 rpm. The supernatant was applied to glutathione-S-sepharose resin (GE HealthCare) for GST fusion proteins and Ni-NTA-agarose resin (Qiagen) for His-tagged proteins. Non-specific proteins were washed out with buffer B (50 mM Tris-HCl pH 7.5 and 500 mM NaCl) for GST fusion proteins and buffer C (50 mM Tris-HCl pH 7.5, 500 M NaCl, and 20 mM imidazole) for His-tagged proteins. To elute target proteins, buffer D (50 mM Tris-HCl pH 8.0 and 50 mM NaCl, supplemented with 15 mM reduced glutathione) was used for GST-fusion proteins, and buffer E (50 mM Tris-HCl pH 7.5, 300 mM imidazole, and 500 mM NaCl) was used for His-tagged proteins. GST and the His-tag were cleaved from the fusion proteins using GFP-tagged tobacco etch virus protease in cleavage buffer (25 mM Tris-HCl pH 7.5, 75 mM NaCl, and 0.5 mM EDTA) (Wu et al., 2009). Cleaved samples were applied to glutathione-S-sepharose or Ni-NTA-agarose to remove the released His- or GST- tags. Proteins were further purified by size exclusion chromatography on a Superdex 75 or 200 prep grade 16/60 column (GE HealthCare). Fractions were analyzed by SDS-PAGE, and samples were pooled and concentrated by centrifugal concentrators (Amicon Ultra 3, 10, or 30 kDa, Millipore). Final concentration was determined by either absorbance at 280 nm or Bradford assay.\n\n### Ubiquitination assay\n\nUbiquitinated Rab5 was detected based on previously described methods (Choo and Zhang, 2009; Jung et al., 2013). HA-ubiquitin and FLAG-Rab5 were co-transfected into HEK 293T cells. After 24 hr, cells were washed with ice-cold phosphate-buffered saline (PBS) twice and lysed with lysis buffer LA (2% SDS, 150 mM NaCl, 10 mM Tris-HCl, pH 8.0, 2 mM sodium ortho-vanadate, 50 mM sodium fluoride, and a protease inhibitor cocktail from Roche). Lysed cells were transferred into a tube and boiled for 10 min at 95 \u02daC. The boiled sample was then sonicated (microtip 40% amplitude, pulse 1 s on/1 s off, 20 s, VC 750) and diluted with dilution buffer (150 mM NaCl, 10 mM Tris-HCl, pH 8.0, 2 mM EDTA, and 1% Triton X-100). After centrifugation at 16,200 g for 10 min, the resulting supernatant was pre-cleared with mouse IgG and protein G-beads (GeneDepot). Pre-cleared lysates were immuno-precipitated with FLAG antibody (F1804, Sigma Aldrich, RRID:AB_262044) and immunoblotted with HA-HRP (3F10, Roche, RRID:AB_2314622) or FLAG-IgG-rabbit (F7425, Sigma Aldrich, RRID:AB_439687) followed by Rabbit-IgG-HRP (ADI-SAB-300-J, Enzo Life Sciences, RRID:AB_11179983). For the geranylgeranyl transferase inhibitor assay, 20 \u03bcM GGTI-298 (G5169, Sigma) was added for 6 hr after transfection. Twenty-four hours after GGTI treatment, cells were harvested and subjected to ubiquitination assay. These experiments were repeated three times.\n\n### Cytosol/membrane fractionation assay\n\nCytosol/membrane fractionation assay was performed according to a previously described method (Baghirova et al., 2015). Briefly, HEK 293T cells were harvested by trypsin treatment and washed with ice-cold PBS. Fractionation buffer FA (150 mM NaCl, 50 mM HEPES pH 7.4, 100 \u03bcg/ml digitonin (D141, Sigma), and 1 M hexylene glycol) supplemented with 1x protease inhibitor cocktail (P8340, Sigma, 100x stock solution) was added to the harvested cells to release cytosolic proteins. After incubation for 15 min on an end-to-end rotator at 4 \u02daC, samples were centrifuged at 2,000 g for 10 min. The resulting supernatant was transferred and marked as cytosolic proteins. Fractionation buffer FB (150 mM NaCl, 50 mM HEPES pH 7.4, 1% (v/v) Nonidet-P40, and 1 M hexylene glycol) supplemented with 1x protease inhibitor cocktail (P8430, Sigma, 100x stock solution) was added to the resulting cell pellets to release membrane proteins. After incubation for 30 min on ice, samples were centrifuged at 7,000 g for 10 min. The resulting supernatant was transferred and marked as membrane proteins. Both cytosolic and membrane fractions were further immunoprecipitated using a FLAG-M2-affinity gel (A2220, Sigma, RRID:AB_10063035) and analyzed by immunoblotting. These experiments were repeated twice.\n\n### EGF-induced EGFR degradation assay\n\nEGFR degradation was assessed based on previously described methods (Hoeller et al., 2006; Balaji et al., 2012; Smith et al., 2013). Briefly, HeLa cells were transfected with FLAG-Rab5 WT, K116R, K140R, or K165R with HA-ubiquitin. After 24 hr of transfection, cells were treated with EGF (20 ng/ml, final concentration) and harvested at the indicated time points after treatment. Harvested cells were lysed with lysis buffer LB (50 mM Tris-HCl pH 7.5, 1% (v/v) NP-40, 150 mM NaCl, and 10% (v/v) glycerol) supplemented with a protease inhibitor cocktail (05-056-489-001, Roche) and subjected to immunoblotting with anti-EGFR antibody (SC-03-rabbit, Santa Cruz, RRID:AB_631420). These experiments were repeated three times.\n\n### Chemical ubiquitination of Rab5\n\nChemical ubiquitination of Rab5 by formation of a disulfide bond between ubiquitin and a specific lysine residue of Rab5 was based on previously published studies (Baker et al., 2013a; Baker et al., 2013b; Merkley et al., 2005). Purified ubiquitin G76C and a Rab5 K-to-C mutant (K116C, K140C, or K165C) were stored in reducing buffer (2 mM TCEP, 50 mM Tris-HCl pH 7.5, and 150 mM NaCl). The proteins were then mixed at a 1:5 molar ratio (Rab5: ubiquitin) and dialyzed with oxidizing buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 5 mM MgCl2, and 20 \u03bcM CuCl2). During dialysis, ubiquitin G76C was added to the dialysis bag at regular intervals. Iterative additions of ubiquitin resulted in 95% yield of monoubiquitinated Rab5 (mUbRab5). Production of mUbRab5 was monitored by SDS-PAGE under non-reducing conditions. Finally, mUbRab5 was purified by size-exclusion chromatography on a Superdex 75 16/60 prep grade column (GE HealthCare) pre-equilibrated with buffer F (50 mM Tris-HCl pH 7.5, 150 mM NaCl, and 10 mM MgCl2).\n\n### Small angle X-ray scattering (SAXS) measurement and data processing\n\nProtein samples were concentrated in Amicon ultra centrifugal devices (3 kDa cut-off). Final concentrations were measured by absorbance at 280 nm. Buffer F was used to record the reference buffer scattering profile. Each sample was measured six times and monitored for radiation damage. Samples were also diluted (two-, four-, and eight-fold) with buffer F to check for concentration dependency. Scattering profile was generated using in-house software of the Pohang Accelerator Laboratory. Rg (radius of gyration) and I(0) from the Guinier plot were calculated using AUTORG (Svergun, 1992). GNOM was used to calculate the pair distribution function and Porod volume (Svergun, 1992). Molecular ensembles were generated by EOM (Tria et al., 2015). Final ensemble models were cross-validated with the FoXS server minimal ensemble search MES (Pelikan et al., 2009). Since EOM accepted only single polypeptide chain with multiple domains, we generated the sequences and atomic coordinates of the mUbRab5s in the following four steps. Firstly, the input sequence started with the ubiquitin sequence followed by the partial Rab5 sequence which covered from the target lysine of Rab5 to the C-terminus and then the remaining Rab5 sequence ranging from the N-terminus to the residue before the target lysine of Rab5. For example, the input sequence for mUbRab5K140 was as follows: (N-[Ubiquitin residues 1\u201376]-[K140-C-term of Rab5]-[N-term to residue 139 of Rab5]-C). Using this sequence, we were able to use EOM to analyze the ubiquitin moiety of mUbRab5 as a domain of a single polypeptide chain. Secondly, the input coordinates were prepared following the same way as in the preparation of the input sequences. Crystal structures of ubiquitin and Rab5 were used as the coordinates for domains 1 and 2, respectively (PDB ID: 1UBQ, 3MJH). The residues of Rab5 were re-numbered so that the new numbering was the same as the numbering of the prepared sequence. For example, K140 of Rab5 was re-numbered K77. Thirdly, we determined how many residues in the C-terminal region of ubiquitin should be allowed to be flexible. To define flexible residues in ubiquitin, we analyzed crystal/NMR structures of ubiquitin (PDB IDs: 1UBQ and 1D3Z). In both cases, the C-terminal five residues of ubiquitin (residues 72\u201376) after the \u03b23 strand were not assigned to secondary structures, which imply that those residues are flexible. Since Arg 72 of ubiquitin is juxtaposed at the end of the \u03b23 strand, Arg 72 was retained in the input coordinate file. Subsequently, four residues of ubiquitin (residues 73\u201376) were allowed to be flexible and removed in the input coordinate file. These C-terminal four residues of ubiquitin were used for flexibility analysis through EOM in our previous study on linear ubiquitin chains (Thach et al., 2016). Finally, we used the native isopeptide linkage for ensemble model calculations in EOM since a disulfide bond linkage is known to resemble the native ubiquitination linkage (Baker et al., 2013a).\n\n### GEF-mediated GDP release and GTP loading assays\n\nGDP release from Rab5 or mUbRab5 was measured using 2\u2019-(or-3\u2019)-O-(N-methylanthraniloyl) (MANT)-GDP (Molecular Probes) (Delprato and Lambright, 2007; Baker et al., 2013a). One micromolar Rab5 or mUbRab5 was loaded with 1 \u03bcM MANT-GDP for 30 min at room temperature in buffer F in the presence or absence of 1 \u03bcM Rabex-5132-391. To initiate MANT-GDP release, 1 mM GDP was added to the solution. Fluorescence intensities were measured (excitation at 360 nm and emission at 450 nm) on a TECAN M200 multi-plate reader, analyzed, and fitted to a one-phase exponential decay curve with GraphPad Prism software. GTP loading was measured using MANT-GTP. Two micromolar Rab5 or mUbRab5 was mixed with 1 \u03bcM of MANT-GTP in buffer F and stabilized for 10 min. To facilitate GTP loading by GEF, 1 \u03bcM Rabex-5132-391 was added to the solution. Fluorescence intensities were measured (excitation at 360 nm and emission at 450 nm) on a TECAN M200 multi-plate reader, analyzed, and fitted to a one-phase exponential association curve using GraphPad Prism software. These experiments were repeated three times.\n\n### Effector protein binding assay by biolayer interferometry (BLI)\n\nBLI experiments were performed on a BLitz system (ForteBio). For this, 0.5 \u00b5M GST-Rabaptin5551-862 or GST-EEA136-91 was immobilized on anti-GST sensors. After baseline stabilization with reaction buffer (50 mM Tris-HCl, 150 mM NaCl, 10 mM MgCl2, and 1 mM 5'-guanylyl imidodiphosphate, a non-hydrolysable GTP analog (GppNHP, Jena\u00a0Bioscience,\u00a0Germany)), GppNHP-loaded Rab5 or mUbRab5 at different concentrations was loaded until signal saturation, and this experiment was repeated twice. To initiate dissociation, the sensor was then placed into in reaction buffer again. Association rate constant (kon), dissociation rate constant (koff), and SEM (standard error of mean) values were calculated by BLItz Pro (ForteBio) based on sensorgram results. Dissociation constants (Kd) and SEMs of dissociation constants were calculated by the following equation:\n\n$$\nK_{d}=K_{off}/K_{on},\n$$\n\n\n\n$$\n\u0394K_{d}=K_{d}\\sqrt{(\\frac{\u0394k_{on}}{k_{on}})^{2}+(\\frac{\u0394k_{off}}{k_{off}})^{2}}\n$$\n\nwhere \u0394 refers to the SEMs of Kd, kon, and koff, respectively.\n\n### Immunofluorescence\n\nAfter transfection, cells were rinsed in PBS and fixed for 10 min at room temperature with 3% paraformaldehyde. Cells were then permeabilized with 0.1% Triton X-100 in PBS for 5 min and blocked with 2% bovine serum in PBS for 1 hr at room temperature. For immunostaining, cells were incubated with antibodies diluted in 2% bovine serum at room temperature for 1 hr, then rinsed with PBS and incubated with either anti-rabbit-Rhodamine or anti-mouse-Alexa-Fluor-633-conjugated secondary antibodies (R6394;RRID:AB_1500693, A11001;RRID:AB_2534069, respectively, Life Technologies,) for 30 min at room temperature. Cells were washed three times for 5 min with PBS. Images were obtained using a LSM-700 (Zeiss).\n",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "99c29da4-b74c-4ff0-89a4-db294adb6ed6",
+      "submission_id": "ced4ffc8-30cf-4e8e-9da4-4b184df4cf48",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29154.028](https://doi.org/10.7554/eLife.29154.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Site\u2013specific monoubiquitination downregulates Rab5 by disturbing effector binding and guanine nucleotide conversion\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Ivan Dikic as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marino Zerial (Reviewer #2); David Lambright (Reviewer #3).\n\nYou will see that the reviewers believe that the work is potentially suitable for presentation in eLife. However, they describe a number of aspects that need to be fully addressed and they noted that the manuscript needs rewriting, perhaps with help from a native English speaker. I enclose the full reviews to help in recrafting this story for submission and re\u2013evaluation for presentation in eLife. We hope you find the comments constructive; note that the ubiquitination of Rab5 is already reported in PhosphoSite Plus mass spec database (when you respond to reviewer 3); the Rab7 story can be omitted.\n\nReviewer #1\n\nThis is an interesting paper reporting the consequences of Rab5 and Rab7 monoubiquitynation on Rab protein function. The authors try to combine cell biological assays and biochemical analysis with SAXS structural analysis, the kind of broad mix of approaches that eLife would like to present. They present a method for efficient in vitro generation of pure mono\u2013ubiquitin conjugates. It is likely that the authors have shown that mono\u2013ubiquitination decreases Rab activity when driven in cells by artificial expression of extra HA\u2013ubiquitin. This is shown with direct binding assays for Rab5 effectors and some light microscopy.\n\nUnfortunately, it appears that the figures were photographs of drawings and are of too poor resolution for publication and in some cases even for reviewer evaluation. This reviewer cannot see any EEA1 staining for example, as the images are out of focus or off too low a resolution to see even blown up on a computer screen. Also, the language is difficult to understand and the manuscript will need significant editing and rewriting for clarity. The EGFR degradation needs to be presented graphically so that half times for degradation relative to time zero can be compared.\n\nI will await the other referee comments and hope that this story can be presented more clearly so that its findings can be appreciated by the scientific community and brought up to the standard required for presentation in eLife.\n\n(Please use photoshop, high resolution and a drawing program to label figures such as Adobe Illustrator)\n\nQuantitation of the cell biology data is missing\n\nReviewer #2\n\nIn this study, the authors employ a range of techniques to investigate Rab5 monoubiquitination both functionally and structurally, culminating in a model of how differential monoubiquitination of Rab5 has different effects on the downstream Rab5 machinery and dynamics at the early endosome. While the premise of this manuscript is highly interesting and is in the scope of eLife, I do not believe that the manuscript in the current form meets the standards of this journal. With sufficient revisions, however, this could be a conceptually novel and compelling paper.\n\nIn general, the story presented here is not very coherent. The authors have performed all the right experiments to present a good case for their model. However, the experiments are often poorly described and presented in an order that is only logical if you already know the outcome of later experiments. The authors should take care to present their story in a stepwise and logical manner and to explain in detail both the experimental approaches and underlying logic.\n\nGeneral points:\n\n1) It is essential to be clear about which cell lines are used and also provide the rationale for using two different cell lines for the biochemistry and microscopy experiments. This approach is not coherent. Similarly, the change from cell work to recombinant proteins is not made explicit in the text.\n\n2) The authors should go through the manuscript carefully to fix grammatical mistakes. Especially in the case of subsection \u201cMonoubiquitination on K140 of Rab5 decreases its binding affinity to effector prot\u201d, grammatical errors may confuse the message the authors are trying to convey.\n\nThere are several Rab5 isoforms and it must be made clear from the start which one is being used and provide a sound rationale for using that specific isoform alone, as the three isoforms show differential ubiquitination patterns.\n\nNext, the authors use GGTI\u2013198, a GGTase inhibitor, to rule out prenylation as the source of the double bands upon ubiquitination. However, this experiment is not sufficiently described in the figure legend or in the text. What are the two different IP FLAG plots in Figure 1B, what do the labels short and long mean?\n\nImportantly, it is not clear to the reader why out of all lysines in Rab5, K33 and K165 were chosen in addition to the known K116, K134 and K140 sites from protEOMics. There is some explanation for K165 in sequence homology to K147 in Ras, but otherwise the authors make no effort to explain their rationale. This section should be reordered to make it more logical. I would suggest reordering the first part of the manuscript: the story would flow better if the validation of protEOMics hits preceded the investigation of the now proven ubiquitination sites. For example, instead of starting with candidate ubiquitination sites and an analysis of crystal structures in subsection \u201cRab5 undergoes monoubiquitination at multiple sites\u201d, it would be more logical to begin the experiments presented in Figure 1D as a validation of published protEOMics data. From there the story can then focus on the relevant monoubiquitination sites and their location on the Rab5 structure (Figure 1\u2014figure supplement 1A).\n\nFurthermore, the experiments done with K to E mutations and protein expression are not essential and should be moved to the supplement or left out entirely so as not to distract from the more sophisticated K to R mutation experiments.\n\nIn Figure 2C, the authors show that monoubiquitinated Rab5 (mUbRab5) localises to membranes. This raises many questions: mUbRab5 is a very small percentage of total membrane Rab5, why do the authors observe such a dramatic effect on recycling/degradation? This would seem to be a highly significant result but is not addressed at all. In addition to this, Figure 2B shows a dramatic removal of Rab5 from EEA1 positive endosomes upon ubiquitination and indeed in the text the authors refer to this as 'diffusing to cytosol' which would not agree with the results presented in Figure 2C.\n\nIf K134 mutations are not viable, how has this been identified as a ubiquitination site in vivo? The authors should comment on this.\n\nThe authors introduce the immunofluorescence of Rab5 endosomes and justify the use of HeLa cells in subsection \u201cMonoubiquitination on K140 and K165 of Rab5 plays negative roles in endocytic pathway\u201d, but results from these experiments had already been shown in subsection \u201cRab5 undergoes monoubiquitination at multiple sites\u201d without explanation of what Rab5 puncta are or what cell line was used.\n\nIn Figure 2A and C, UbRab5 does not appear as a double band as in other blots, why is this?\n\nSubsection \u201cMonoubiquitination on K140 and K165 of Rab5 plays negative roles in endocytic pathway\u201d is a bit of a reach of interpretation at this point in the manuscript and are only logical in hindsight, knowing the results that are still to come.\n\nFrom the SAXS analysis the authors derive that mUbRab5K140 features two conformations while mUbRab5K116 and mUbRab5K165 have only one conformation. However, the authors also state in the text that mUbRab5 is structurally very flexible, contradicting the existence of distinct conformations. To better evaluate the data, the authors need to explain in detail how distinct conformations were extracted from the data using ensemble\u2013optimized methods (EOM) and how the final models were derived (Figure 4G, H and I). Furthermore, the authors need to show the shape of the particle derived from the SAXS data, not only the model. In general, the unprocessed SAXS data are missing and the reader is presented immediately with something highly processed. For a more coherent story, the intermediate stages of deriving these structural models must be presented.\n\nFrom structural models the authors derive that the close proximity of the ubiquitin moieties in mUbRab5K140 to the switch I region of Rab5 might disturb Rabaptin\u20135 and EEA1 binding, while interaction of Rab5 with GEF (Rabex\u20135) and GAP (RabGAP\u20135) is unchanged. This especially needs clarification, because the switch I region is involved in nucleotide binding as well, and hence prone to be influenced by changes in nucleotide state. Knowing the outcome of the binding experiments described later, this conclusion makes sense, but when reading this manuscript for this first time this appears a somewhat illogical conclusion.\n\nReviewer #3\n\nThis manuscript describes experiments examining monoubiquitination of Rab5 when overexpressed with ubiquitin and affects of monoubiquitination of the specific\u2013lysine residues on Rab5 structure, localization, EGFR degradation, intrinsic and Rabex\u20135 catalyzed nucleotide exchange, and binding of effectors (Rabaptin5 and EEA1). Similar cell\u2013based experiments were performed to examine Rab7 ubiquitination. The identification of putative monoubiquitination sites, the characterization of homogenously monoubiquitinated Rab5 by SAXS, and the effects of monoubiquitination on GEF activity, effector binding affinity, localization, and EGFR degradation suggest that monoubiquitination of at least two lysines could potentially roles regulate Rab5 and Rab7 functions.\n\nAll of the experiments involve either purified proteins or transfections of cell lines. There are no experiments assessing whether the endogenous Rab proteins are monoubiquinated (i.e. without ubiquitin overexpression) and under what conditions. This limitation should be discussed, and conclusions about the potential biological significance appropriately qualified.\n\nSubsection \u201cRab5 undergoes monoubiquitination at multiple sites\u201d, K33 and K134 are indeed crucial but this is already known, indeed from the very first structures of EF\u2013Tu and Ras. K33 is the P\u2013loop lysine in the GxxxxGKS/T motif; K134 is the invariant lysine in the NKxD G4 motif. The role and interactions of these residues in GTPases in general has been extensively documented. Its not clear why these invariant residues were chosen for mutational analysis. Expression in inclusion bodies in bacteria isn't particularly informative or unexpected. The rationale for generating lysine\u2013to\u2013glutamate mutations is also unclear as these mutations don't mimic ubiquitination.\n\nHow can anything be concluded about inhibition of Rab5 activation (subsection \u201cMonoubiquitination on K140 and K165 of Rab5 plays negative roles in endocytic pathway\u201d) from the IF and fractionation experiments in Figure 2B and 2C? These experiments do not indicate whether ubiquitination affects the nucleotide status of Rab5. Perhaps the authors meant inhibition of a Rab5 function rather than activation of Rab5 per se. Needs clarification.\n\nOverexpression of ubiquitin presumably affects the function of many targets including proteins other than Rab5 that are also important for endocytic trafficking. Does overexpression of ubiquitin alone have any effects on (for example) EGFR degration?\n\nThe cell-based experiments lack quantification and analysis of statistical significance.\n\nThe resolution of the images in the PDF is low, making it difficult to evaluate the quality of these experiments.\n\nThe buffer\u2013subtracted SAXS curves should be shown somewhere in the main or supplemental figures. Accurate modeling of SAXS data, in particular by ensemble approaches, requires data with high signal to noise that typically extends to a high resolution cutoff near the first Porod minimum. The data and calculated curves in Figure 4 are truncated in the Kratky region and the signal\u2013to\u2013noise does not appear to be very high. Are the data of sufficient quality for ensemble modeling?\n\nNo details are provided regarding the EOM modeling. For example, how many residues we're allowed to be flexible and what criteria where to determine which residues show be flexible? Do the results change if additional residues are allowed to be flexible? A narrow selected distribution near the high Rg and Dmax tails of the pools in Figure 4 suggest that the number of flexible residues used to generate the pool might not be adequate to represent the flexibility in solution. Also unclear is how the linkage between Rab5 and ubiquitin is modeled. Does the EOM model disulfide linkages? If not, how was the linkage modeled? The details of the modeling are important and how they affect the results needs to be evaluated and discussed.\n\n\"Interestingly, none of the EOM\u2013derived structural models for mUbRab5s implicates any direct interaction between ubiquitin and Rab5\" (subsection \u201cStructural models of mUbRab5s derived by solution scattering\u201d). Is EOM capable of producing models with direct interactions? Even if it could, what would it mean at the low resolution of SAXS?\n\nFigure 4\u2014figure supplement 1: Kratky\u2013Debye and Porod\u2013Debye plots indicate how extended a molecule is. Flexibility is inferred. Presumably the same results would be obtained from the calculated EOM curves that fit the data. The question is whether the SAXS data can distinguish flexible vs. extended. The interpretation should be more nuanced.\n",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4fe872e4-e67d-4753-aca6-8c7d99c1b27f",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C1",
+      "claim": "Rab5 is predominantly monoubiquitinated when FLAG-Rab5 was overexpressed with HA-ubiquitin in HEK 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab5 was predominantly monoubiquitinated when FLAG-Rab5 was overexpressed with HA-ubiquitin in HEK 293T cells (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1a demonstrating monoubiquitination bands in immunoblotting experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "1a4aa221-738a-43b4-bc02-6f5efddb85aa",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C2",
+      "claim": "Monoubiquitinated Rab5 migrated in a gel as doublet bands, implying that monoubiquitination of Rab5 can occur at multiple sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoubiquitinated Rab5 migrated in a gel as doublet bands, implying that monoubiquitination of Rab5 can occur at multiple sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of doublet bands in gel electrophoresis experiments provides direct experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "4cd0412b-242c-470d-8c3e-589c8838d084",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C3",
+      "claim": "Appearance of doublet bands from monoubiquitination was previously noted for caveolin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Appearance of doublet bands from monoubiquitination was previously noted for caveolin-1 (Ritz et al., 2011; Kirchner et al., 2013; Hayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on caveolin-1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "f6e02cf9-4018-44ff-8df8-12db34ff42e4",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C4",
+      "claim": "Double bands from the monoubiquitinated Rab5 remained unchanged in cells treated with GGTI-198, demonstrating that the double bands are the result of monoubiquitination of Rab5 at multiple sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Double bands from the monoubiquitinated Rab5 remained unchanged in cells treated with GGTI-198, demonstrating that the double bands are the result of monoubiquitination of Rab5 at multiple sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from GGTI-198 treatment shown in Figure 1b demonstrates that prenylation is not responsible for doublet bands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "19c620fb-a867-4c6a-a32b-8ccbdf7114cf",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C5",
+      "claim": "The monoubiquitination of Rab5 is not dependent on the nucleotide binding state of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination assays with GDP- and GTP-bound forms of Rab5 mutants (S34N and Q79L, respectively) revealed that the monoubiquitination of Rab5 is not dependent on the nucleotide binding state of Rab5 (Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from ubiquitination assays with GDP- and GTP-bound mutants shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "961fff59-c757-4acb-ad53-b608d2383ff1",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C6",
+      "claim": "K140 is a major monoubiquitination site of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the upper band of the doublet was completely abolished in the K140R mutant, while the monoubiquitination bands of Rab5 were not altered in the other K-to-R mutants (Figure 1d). This result suggests that K140 is a major monoubiquitination site of Rab5, and that at least two or more sites are responsible for the lower band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from K-to-R mutant ubiquitination assays shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "65dbe28e-ca2c-4023-a78e-d836b679415b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C7",
+      "claim": "K33 and K134 form direct contacts with both GDP and GTP molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for Rab5, K33 and K134 form direct contacts with both GDP and GTP molecules (Figure 1\u2014figure supplement 1b and c, PDB ID: 1TU4 and 3MJH, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis based on crystal structures shown in Figure 1\u2014figure supplement 1b and c.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "90334b6d-0648-4407-baa2-16b0876b2c9f",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C8",
+      "claim": "K33 and K134 are not responsible for monoubiquitination of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "No monoubiquitinated Rab5 band was detected for the 11KR mutant in the ubiquitination assay (Figure 1h), suggesting that K33 and K134 are not responsible for monoubiquitination of Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from ubiquitination assay of 11KR mutant shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "2cff8373-ee0c-4308-8187-770f4e95a71c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C9",
+      "claim": "K116, K140, and K165 are monoubiquitination sites of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoubiquitination bands were present for R116K, R140K, and R165K mutants in contrast to the 11KR mutant (Figure 1h). These results verified the previously known ubiquitination sites (K116 and K140) and revealed a novel ubiquitination site (K165).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from R-to-K back-mutation ubiquitination assays shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d1ec604c-9157-42ad-a2f7-4c112d3d8f4c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C10",
+      "claim": "K165 of Rab5 corresponds to K147 of a Ras GTPase whose monoubiquitination activates Ras signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K165 corresponds to K147 of a Ras GTPase whose monoubiquitination activates Ras signaling (Baker et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study on Ras monoubiquitination.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "9f2e45f3-ff7a-4fef-8d7f-c0694646e2c8",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C11",
+      "claim": "None of the three lysine residues (K116, K140, K165) are located in the Rab5 switch regions (SW I and SW II).",
+      "claim_type": "EXPLICIT",
+      "source": "None of the three lysine residues are located in the Rab5 switch regions (SW I and SW II; Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "4b44476c-194c-4a4b-b879-f3802ad3905e",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C12",
+      "claim": "All of the lysine residues (K116, K140, K165) are surface-exposed and accessible to ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all of the lysine residues are surface-exposed and accessible to ubiquitin (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "e046d021-63c2-4432-b54d-59528f3c2f03",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C13",
+      "claim": "Upon transfection of ubiquitin into HeLa cells, endogenous Rab5-positive puncta diffused to the cytosol and failed to co-localize with early endosome antigen-1 (EEA1) protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon transfection of ubiquitin into HeLa cells, endogenous Rab5-positive puncta diffused to the cytosol and failed to co-localize with early endosome antigen-1 (EEA1) protein, another early endosome marker protein (Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "24966878-a79a-4721-8254-2ec41b7d5861",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C14",
+      "claim": "Monoubiquitinated Rab5 was predominantly localized in the membrane fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the monoubiquitinated Rab5 was predominantly localized in the membrane fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Fractionation assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "0fc1186f-24e3-4673-8d73-2b4bf96900d8",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C15",
+      "claim": "Monoubiquitinated Rab5 could disrupt Rab5-positive endosomal formation while it was localized on the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results prompted us to hypothesize that monoubiquitinated Rab5 could disrupt Rab5-positive endosomal formation while it was localized on the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on fractionation and immunofluorescence data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ac6bc45f-41a7-4638-b4e9-006ef2654588",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C16",
+      "claim": "Ubiquitination of Rab5 has negative effects on the regulatory cycle of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the immunofluorescence assay results (Figure 2a\u2013b), these findings strongly suggest that ubiquitination of Rab5 has negative effects on the regulatory cycle of Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on immunofluorescence and fractionation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "3bb0a04f-131c-4cd8-9290-8ab78410c0a0",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C17",
+      "claim": "Overexpression of Rab5 apparently facilitated EGF-induced EGFR degradation, as judged by earlier complete degradation after 60 min of EGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of Rab5 apparently facilitated EGF-induced EGFR degradation, as judged by earlier complete degradation after 60 min of EGF treatment (Figure 2d upper-right panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EGFR degradation assay data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "35b667cc-867b-47fa-b9e0-0c56bfa6ed13",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C18",
+      "claim": "Overexpression of ubiquitin and Rab5 attenuated the degradation of EGFR, supported by the retention of some EGFR after 90 min of EGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of ubiquitin and Rab5 attenuated the degradation of EGFR, supported by the retention of some EGFR after 90 min of EGF treatment (Figure 2d middle-left panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EGFR degradation assay data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "170341a2-e757-4769-bc49-9d5a4e31c4dd",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C19",
+      "claim": "When the K140R mutant was overexpressed with ubiquitin EGFR degradation was completely restored and no attenuation was observed and almost all of the EGFR were degraded after 90 min of EGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "When the K140R mutant was overexpressed with ubiquitin EGFR degradation was completely restored and no attenuation was observed and almost all of the EGFR were degraded after 90 min of EGF treatment (Figure 2d lower-left panel), while the other mutants (K116R and K165R) still possesses such attenuation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EGFR degradation assay data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "6a7bb7d9-919f-448f-9c84-6724588575cd",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C20",
+      "claim": "Ubiquitination of K140 of Rab5 has a crucial role in downregulating the Rab5-mediated endocytic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that ubiquitination of K140 of Rab5 has a crucial role in downregulating the Rab5-mediated endocytic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on EGFR degradation assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ab75cb33-4a0f-403b-b9b6-261453a84d28",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C21",
+      "claim": "Rab5-positive endosomal puncta were abolished when Flag-Rab5 WT was co-transfected with HA-ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained using endogenous Rab5 (Figure 2a\u2013b), Rab5-positive endosomal puncta were abolished when Flag-Rab5 WT was co-transfected with HA-ubiquitin (Figure 2e,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2e,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "e024aff9-c0a2-4007-a124-f8a1223cf264",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C22",
+      "claim": "Monoubiquitination of K116 does not affect Rab5-positive endosomal formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, no puncta were observed for the K116R mutant upon co-transfection with HA-ubiquitin (Figure 2e,g), indicating that monoubiquitination of K116 does not affect Rab5-positive endosomal formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2e,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ef624c13-e1ad-4ec7-9295-c1aa30b75053",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C23",
+      "claim": "Rab5-positive endosomal puncta were detectable when either K140R or K165R mutants were co-transfected with HA-ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Rab5-positive endosomal puncta were detectable when either K140R or K165R mutants were co-transfected with HA-ubiquitin (Figure 2e,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2e,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "62028d87-2479-4403-b2f5-47a8fb315674",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C24",
+      "claim": "Monoubiquitination of K140 or K165 inhibits the Rab5-positive endosomal formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that monoubiquitination of K140 or K165 inhibits the Rab5-positive endosomal formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "54dc1cd6-e521-4a05-9e1e-af19f4fa5f9c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C25",
+      "claim": "No endosomal puncta were observed for either 11KR-R140K or 11KR-R165K mutants upon co-transfection with HA-ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no endosomal puncta were observed for either 11KR-R140K or 11KR-R165K mutants upon co-transfection with HA-ubiquitin (Figure 2f,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 2f,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "7407067f-d9a7-4342-ae77-874c5926cfac",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C26",
+      "claim": "Monoubiquitination of Rab5 on either K140 or K165 disrupts its function, whereas that of Ras on either K117 or K147 activates it.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that Rab5 monoubiquitination has functional consequences opposite those of Ras monoubiquitination (Baker et al., 2013a; Baker et al., 2013b): monoubiquitination of Rab5 on either K140 or K165 disrupts its function, whereas that of Ras on either K117 or K147 activates it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited studies on Ras monoubiquitination.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "de5eb38a-a5da-4132-9f16-025b4b9f3829",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C27",
+      "claim": "Monoubiquitination of K140 and K165 downregulates Rab5-mediated endocytic pathway, establishing monoubiquitination at specific sites of Rab5 as inhibitory signals, while monoubiquitination of K116 has no apparent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data demonstrate that monoubiquitination of K140 and K165 downregulates Rab5-mediated endocytic pathway, establishing monoubiquitination at specific sites of Rab5 as inhibitory signals, while monoubiquitination of K116 has no apparent effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from multiple assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "5db27f44-ba9f-4c16-92b6-b18b469c42b8",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C28",
+      "claim": "The engineered Rab5 Del_Cys (C19S/C63S/\u0394213\u2013216) had the similar functionality as WT Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "GEF assays confirmed that the engineered Rab5 Del_Cys (C19S/C63S/\u0394213\u2013216) had the similar functionality as WT Rab5 (Figure 3\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GEF assay data shown in Figure 3\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "f797eee4-a494-430e-ad50-556d8f087420",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C29",
+      "claim": "Iterative addition of ubiquitinG76C resulted in 95% yield of monoubiquitinated Rab5 (mUbRab5).",
+      "claim_type": "EXPLICIT",
+      "source": "Iterative additions of ubiquitin resulted in 95% yield of monoubiquitinated Rab5 (mUbRab5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from chemical ubiquitination procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "63c39f9e-6f87-4d07-ab8f-5d9ee36810aa",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C30",
+      "claim": "All three mUbRab5s were monodisperse in solution (polydispersity <12%).",
+      "claim_type": "EXPLICIT",
+      "source": "All three mUbRab5s were monodisperse in solution (polydispersity <12%; Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Dynamic light scattering data shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "949e848c-f787-4127-92dc-317b03be30dc",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C31",
+      "claim": "All of the mUbRab5s were flexible in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "SAXS curves from the three mUbRab5s did not have a plateau in the Porod-Debye plot, implying that all of the mUbRab5s were flexible in solution (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "SAXS flexibility analysis shown in Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "8c6af7b4-c0a3-4a85-a053-5310d5bcdf4d",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C32",
+      "claim": "Distribution of conformational ensembles of mUbRab5K140 was clearly distinct from those of mUbRab5K116 and mUbRab5K165.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of conformational ensembles of mUbRab5K140 was clearly distinct from those of mUbRab5K116 and mUbRab5K165.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EOM analysis of SAXS data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "dd807f5a-69a7-46bf-b230-a4b113fa6807",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C33",
+      "claim": "Two distinct populations of conformational ensembles were evident for mUbRab5K140, with a radius-of-gyration (Rg) of 23 and 27 \u00c5, respectively, and maximum distance (Dmax) of 75 and 90 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinct populations of conformational ensembles were evident for mUbRab5K140, with a radius-of-gyration (Rg) of 23 and 27 \u00c5, respectively, and maximum distance (Dmax) of 75 and 90 \u00c5 (Figure 4b,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EOM analysis of SAXS data shown in Figure 4b,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "9c5212af-0bc5-46c3-918c-1479bbc0f75b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C34",
+      "claim": "mUbRab5K116 and mUbRab5K165 comprised a single population with an Rg of 25 \u00c5 and Dmax of 80 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mUbRab5K116 and mUbRab5K165 comprised a single population with an Rg of 25 \u00c5 and Dmax of 80 \u00c5 (Figure 4a,d and and c,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EOM analysis of SAXS data shown in Figure 4a,d and c,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "447cd1e7-5d4f-49c7-8a18-eea46792b771",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C35",
+      "claim": "Monoubiquitination at these three lysine sites has different functional consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that monoubiquitination at these three lysine sites has different functional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on SAXS structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "6780365f-a701-43cf-8f36-1285e6839f2d",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C36",
+      "claim": "The ubiquitin moiety on K140 is more flexible than those on K116 and K165.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the ubiquitin moiety on K140 is more flexible than those on K116 and K165.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on EOM structural models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "dd1248a5-1488-47f8-bca8-7de1c7c8982f",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C37",
+      "claim": "None of the ubiquitin molecules from the EOM models were located proximal to Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the molecular dynamics simulation of mUbRas (Baker et al., 2013a), none of the ubiquitin molecules from the EOM models were located proximal to Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural analysis of EOM models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "c91c8f08-595f-4b0b-abd4-af2a2c4bab76",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C38",
+      "claim": "Monoubiquitination of Rab5 can regulate its function by altering its interactions with partner proteins such as GEF, GAP, and downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that monoubiquitination of Rab5 can regulate its function by altering its interactions with partner proteins such as GEF, GAP, and downstream effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "4495a22a-c1b4-4dfb-9449-f6b3229ed583",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C39",
+      "claim": "None of the ubiquitin moieties of mUbRab5s appeared to clash with Rabex-5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mUbRab5:Rabex-5 complex models obtained by superpositioning of mUBRab5 and the Rab5:Rabex-5 structure (PDB ID: 4DQU) (Zhang et al., 2014), none of the ubiquitin moieties of mUbRab5s appeared to clash with Rabex-5 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural modeling shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "6181beff-bbdc-45ca-ae8b-702887791ea0",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C40",
+      "claim": "The ubiquitin moieties might not interfere with activities related to a GEF, such as GDP release and GTP loading.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that the ubiquitin moieties might not interfere with activities related to a GEF, such as GDP release and GTP loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural modeling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ae8e9ff4-874b-435b-bd63-98e3c0932221",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C41",
+      "claim": "The ubiquitin moieties of mUbRab5K116 and mUbRab5K165 were far from both Rabaptin5 and EEA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin moieties of mUbRab5K116 and mUbRab5K165 were far from both Rabaptin5 and EEA1 (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural modeling shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ad371b86-f647-416d-b769-78d304593191",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C42",
+      "claim": "The switch I (SWI) region of Rab5 was juxtaposed with the flexible ubiquitin moiety of mUbRab5K140.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the switch I (SWI) region of Rab5 was juxtaposed with the flexible ubiquitin moiety of mUbRab5K140, raising the possibility that a flexible ubiquitin moiety could cause a conformational change in the SWI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural modeling and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "e508d457-0434-493e-bae1-ff8861472086",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C43",
+      "claim": "Potential interruption of the SWI by mUbRab5K140 could have a severe impact on the Rab5 regulatory cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this conformational change of SWI is required for activation of Rab5 through interactions with downstream effector proteins, potential interruption of the SWI by mUbRab5K140 could have a severe impact on the Rab5 regulatory cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural modeling and known function of SWI.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "8ecdbb1c-570a-4f9f-a3ca-868815616cc4",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C44",
+      "claim": "The ubiquitin moiety of mUbRab5K116 did not clash sterically with RabGAP-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin moiety of mUbRab5K116 did not clash sterically with RabGAP-5 (Figure 4\u2014figure supplement 4a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural modeling shown in Figure 4\u2014figure supplement 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "b33fb024-e08d-475f-b320-d1252e655e25",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C45",
+      "claim": "Both mUbRab5K140 and mUbRab5K165 seemingly bring the ubiquitin moieties close to RabGAP-5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mUbRab5K140 and mUbRab5K165 seemingly bring the ubiquitin moieties close to RabGAP-5 (Figure 4\u2014figure supplement 4b,c), suggesting that neither mUbRab5K140 nor mUbRab5K165 would have enhanced interactions with RabGAP-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural modeling shown in Figure 4\u2014figure supplement 4b,c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "85a48698-18dd-413f-bd97-de6604452d7a",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C46",
+      "claim": "The inhibitory effects of some mUbRab5s are highly likely to be caused by impedance of interactions with effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our structural analyses of mUbRab5s with partner proteins such as GEF, GAP, and effector proteins strongly suggest that the inhibitory effects of some mUbRab5s are highly likely to be caused by impedance of interactions with effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural modeling of mUbRab5s with various partner proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "124ea3d0-91c5-4515-92c2-23182ce644c4",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C47",
+      "claim": "Both mUbRab5K116 and mUbRab5K140 showed similar GDP-release activities to WT Rab5 in the presence of Rabex-5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mUbRab5K116 and mUbRab5K140 showed similar GDP-release activities to WT Rab5 in the presence of Rabex-5, indicating that monoubiquitination of K116 and K140 does not interfere with the GEF function (Figure 5a,b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GDP release assay data shown in Figure 5a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "558bc4d8-4bdb-408b-83d0-589d25b0f2cd",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C48",
+      "claim": "mUbRab5K165 exhibited reduced GDP release in the presence of GEF.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, mUbRab5K165 exhibited reduced GDP release in the presence of GEF, and the curve could not be fitted by a one-phase decay linear regression model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GDP release assay data shown in Figure 5a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "cc938a87-f363-4f58-bf7a-4c57abdd2f85",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C49",
+      "claim": "mUbRab5K116 and mUbRab5K140 showed similar levels of GTP loading to Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, mUbRab5K116 and mUbRab5K140 showed similar levels of GTP loading to Rab5 (Figure 5c,d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GTP loading assay data shown in Figure 5c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d0b24086-dc9b-41d2-95cf-ad10838c0ad8",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C50",
+      "claim": "The fluorescence signal from mUbRab5K165 decreased continuously after it reached a maximum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fluorescence signal from mUbRab5K165 decreased continuously after it reached a maximum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GTP loading assay data shown in Figure 5c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "62437313-40cb-46df-9dbc-463a756c279a",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C51",
+      "claim": "Monoubiquitination of K165 does not block GTP loading of Rab5, but can weaken the interaction between GTP and Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that monoubiquitination of K165 does not block GTP loading of Rab5, but can weaken the interaction between GTP and Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on GTP loading assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "6ee6fdf9-e10b-4af6-be6d-40faba1c1dff",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C52",
+      "claim": "Monoubiquitination of Rab5 on K116 and K140 does not affect GEF activity, while monoubiquitination of K165 interferes with the GEF-mediated conversion cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that monoubiquitination of Rab5 on K116 and K140 does not affect GEF activity, while monoubiquitination of K165 interferes with the GEF-mediated conversion cycle, as indicated by this protein's reduced response to GDP release and leakage during GTP loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of GDP release and GTP loading assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "0023a153-b79d-4ae7-8740-7cb181e9e2d0",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C53",
+      "claim": "The Kd value of mUbRab5K140 for Rabaptin5 was five-fold higher than that of unmodified Rab5 (37.7 \u00b1 4.9 \u03bcM vs. 8.0 \u00b1 3.4 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the Kd value of mUbRab5K140 for Rabaptin5 was five-fold higher than that of unmodified Rab5 (37.7 \u00b1 4.9 \u03bcM vs. 8.0 \u00b1 3.4 \u03bcM; Figure 6b,c and Table 4), indicating the reduced affinity of mUbRab5K140 for Rabaptin5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Bio-layer interferometry data shown in Figure 6b,c and Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "dc19574c-e92f-4c3a-aa1c-e9e86d8db80f",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C54",
+      "claim": "mUbRab5K116 and mUbRab5K165 showed little change in the Kd values for Rabaptin5: 8.0 \u00b1 0.6 \u03bcM and 4.4 \u00b1 0.2 \u03bcM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mUbRab5K116 and mUbRab5K165 showed little change in the Kd values: 8.0 \u00b1 0.6 \u03bcM and 4.4 \u00b1 0.2 \u03bcM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Bio-layer interferometry data shown in Figure 6b,c and Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "241fb7ea-8be0-4d36-98bf-afce8c6d99c8",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C55",
+      "claim": "Monoubiquitination of K140 of Rab5 inhibits its binding to downstream effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that monoubiquitination of K140 of Rab5 inhibits its binding to downstream effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on bio-layer interferometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "bd018f6e-5da0-4b1f-b74e-15cac824d803",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C56",
+      "claim": "mUbRabK140 exhibited an approximately 20-fold increase in Kd for EEA1 compared to unmodified Rab5 (108.0 \u00b1 22.0 \u03bcM vs. 5.8 \u00b1 0.3 \u03bcM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "mUbRabK140 exhibited an approximately 20-fold increase in Kd for EEA1 compared to unmodified Rab5 (108.0 \u00b1 22.0 \u03bcM vs. 5.8 \u00b1 0.3 \u03bcM, respectively; Figure 6d,e and Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Bio-layer interferometry data shown in Figure 6d,e and Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "fb8bf535-4bd7-4249-b5ef-acdf1e00d745",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C57",
+      "claim": "The Kd value of unmodified Rab5 for EEA1 was similar to that reported previously (5.8 \u00b1 0.3 \u03bcM vs. 2.4 \u00b1 0.23 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd value of unmodified Rab5 for EEA1 was similar to that reported previously (5.8 \u00b1 0.3 \u03bcM vs. 2.4 \u00b1 0.23 \u03bcM) (Mishra et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "b5569132-0321-4253-ad0e-1e041511a89b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C58",
+      "claim": "mUbRab5K116 showed a modest increase in Kd value for EEA1 (18.4 \u00b1 0.8 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "mUbRab5K116 showed a modest increase in Kd value for EEA1 (18.4 \u00b1 0.8 \u03bcM), while mUbRab5K165 showed virtually no change (4.7 \u00b1 0.5 \u03bcM) in Kd value relative to that of unmodified Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Bio-layer interferometry data shown in Figure 6d,e and Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "06c4c6ef-06fc-43ce-b95e-b86c3374b121",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C59",
+      "claim": "Monoubiquitination of K140 of Rab5 disrupts its interactions with down-stream effector proteins, while monoubiquitination of K116 only has a minor effect on these interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results collectively establish that monoubiquitination of K140 of Rab5 disrupts its interactions with down-stream effector proteins, while monoubiquitination of K116 only has a minor effect on these interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of bio-layer interferometry data for both Rabaptin5 and EEA1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d557d40b-12cf-47ca-8fff-94e253685edc",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C60",
+      "claim": "Monoubiquitination of Rab5 had an inhibitory effect on the regulatory cycle of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that monoubiquitination of Rab5 had an inhibitory effect on the regulatory cycle of Rab5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "b8dc0320-c863-4c8d-9aa5-61e096761db3",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C61",
+      "claim": "Monoubiquitination seems to play different roles in Rab and Ras GTPases: monoubiquitination in Rab5 serves as an inhibitory signal, whereas it serves as a stimulatory or activating signal in Ras.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, monoubiquitination seems to play different roles in Rab and Ras GTPases: monoubiquitination in Rab5 serves as an inhibitory signal, whereas it serves as a stimulatory or activating signal in Ras.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited studies on Ras monoubiquitination.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "9e1da565-34a3-430a-976e-f3b7932fcb1c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C62",
+      "claim": "28 of 63 human Rab GTPases (including isoforms) are ubiquitinated in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of published proteomics data revealed that 28 of 63 human Rab GTPases (including isoforms) are ubiquitinated in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of published proteomic data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "efc83bb6-590a-4971-a5c9-a7aaa1d71d41",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C63",
+      "claim": "K116 and K140 are located in non-conserved regions, while K165 is in the conserved G5 motif (xxxETSx'K').",
+      "claim_type": "EXPLICIT",
+      "source": "When we compiled ubiquitination sites of Rab proteins reported by proteomic studies, we found that ubiquitination sites of Rab5 found in the current study - K116 and K140 - are located in non-conserved regions, while K165 is in the conserved G5 motif (xxxETSx'K') (Figure 8a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequence alignment analysis shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d3f6c40f-e32d-46a5-86ab-1c5a42142eb1",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C64",
+      "claim": "Both K116 and K165 are strictly conserved from yeast to human, whereas K140 is less conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Rab5 proteins from eukaryotic species revealed different degrees of conservation of the three ubiquitination sites discovered in this study: both K116 and K165 are strictly conserved from yeast to human, whereas K140 is less conserved (Figure 8b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequence alignment analysis shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "c17196fd-ed9e-420a-9d82-aaca6121288e",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C65",
+      "claim": "K140 is replaced by isoleucine in Drosophila and glutamate in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "K140 is replaced by isoleucine in Drosophila and glutamate in yeast, implying that K140 might be a point of functional differentiation in these organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequence alignment analysis shown in Figure 8b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "dbe0f9ee-8b9a-499a-bc7f-6dadf781a920",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C66",
+      "claim": "The three ubiquitination sites were not conserved in Rab5 homologue from Acanthamoeba polyphaga mimivirus (APMV).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to eukaryotic Rab5 proteins, the three ubiquitination sites were not conserved in Rab5 homologue from Acanthamoeba polyphaga mimivirus (APMV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequence alignment analysis shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d09e90e1-f517-463d-bd33-f7b12bdd5a31",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C67",
+      "claim": "K165 of hRab5a is substituted to F152 in APMV Rab5 and plays a major role for binding to GTP molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent crystal structure of APMV Rab5 revealed that K165 of hRab5a is substituted to F152 in APMV Rab5 and plays a major role for binding to GTP molecule (Ku et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited structural study of APMV Rab5.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "899dd4ad-e2ca-4c4a-9632-4faffb2ee714",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C68",
+      "claim": "Monoubiquitination of Rab5 is a subsidiary signal for its regulation in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it seems that monoubiquitination of Rab5 is a subsidiary signal for its regulation in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on sequence conservation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "376a6086-e8b2-4649-962b-048400073daa",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C69",
+      "claim": "Ubiquitination of a conserved site can have different functional consequences in Rab and Ras GTPase proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also intriguing that ubiquitination of a conserved site can have different functional consequences in Rab and Ras GTPase proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of findings with cited Ras studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "5e3a8ecf-4165-493b-b311-36ede21ac508",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C70",
+      "claim": "Monoubiquitination of K165 of Rab5 has an inhibitory effect, whereas ubiquitination of the corresponding K147 of Ras has a stimulatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoubiquitination of K165 of Rab5 has an inhibitory effect, whereas ubiquitination of the corresponding K147 of Ras has a stimulatory effect (Baker et al., 2013a; Baker et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited Ras studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "269347d7-ddca-4b50-9406-92f673f30a5a",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C71",
+      "claim": "Monoubiquitination appears to be a versatile modification tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, monoubiquitination appears to be a versatile modification tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of Rab5 and Ras monoubiquitination effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "c6b65b9c-ea67-4901-9014-b07235fbd681",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C72",
+      "claim": "Oxidative conjugation of a ubiquitin moiety to a cysteine residue of a target protein has been widely used for chemical synthesis of ubiquitinated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidative conjugation of a ubiquitin moiety to a cysteine residue of a target protein has been widely used for chemical synthesis of ubiquitinated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about chemical ubiquitination methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "cf54dfa8-1e7e-4f49-88d4-f490881464bd",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C73",
+      "claim": "Oxidative conjugation often suffers from incompleteness of the process, rendering subsequent separation of the ubiquitinated protein from unreacted protein very challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relative simplicity of this method in comparison with enzymatic conjugation, oxidative conjugation often suffers from incompleteness of the process, rendering subsequent separation of the ubiquitinated protein from unreacted protein very challenging (Baker et al., 2013b; Merkley et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous studies on chemical ubiquitination methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "4cae0d75-ab12-4b2b-8c95-bb9d5c88274c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C74",
+      "claim": "The optimized method for chemical synthesis of ubiquitinated proteins will facilitate studies on the effects of protein ubiquitination at the molecular level when no identified E3 ubiquitin ligase is available or a large quantity of ubiquitinated protein is desired.",
+      "claim_type": "EXPLICIT",
+      "source": "Our optimized method for chemical synthesis of ubiquitinated proteins will facilitate studies on the effects of protein ubiquitination at the molecular level when no identified E3 ubiquitin ligase is available or a large quantity of ubiquitinated protein is desired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the utility of the developed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "155cb3de-2601-4430-8ec6-76ccbcb801aa",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C75",
+      "claim": "Only a small portion of Rab5 could be ubiquitinated when ubiquitin was overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find a stimulus signal or E3 ligase(s) responsible for monoubiquitination of Rab5. As result, only a small portion of Rab5 could be ubiquitinated when ubiquitin was overexpressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from ubiquitination assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "e942e0dc-52d8-4f1c-9b07-b7abf962e88d",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C76",
+      "claim": "Ubiquitination of Rab5 occurs rarely in cells under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ubiquitination of Rab5 occurs rarely in cells under basal conditions and may explain why the ubiquitination of Rab GTPases has not been studied until recently (de la Vega et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d0b9c121-d33b-4792-8607-43b342e56aaa",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C77",
+      "claim": "The effects of monoubiquitination of Rab5 were strong.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the small population of monoubiquitinated Rab5, the effects of monoubiquitination of Rab5 were strong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "11e0268a-5b59-4b82-b22e-40c29990adbe",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C78",
+      "claim": "Monoubiquitination of Rab5 is tightly regulated in the cell through specific E3 ligase or DUB enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that monoubiquitination of Rab5 is tightly regulated in the cell through specific E3 ligase or DUB enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the strong effects despite low abundance of monoubiquitinated Rab5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "bedbca85-bcb8-4585-8377-e0aedfaffd42",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C79",
+      "claim": "Rab GTPases regulate various vesicular trafficking processes such as endocytosis, exocytosis, and ER to Golgi transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab GTPases, the largest family of small GTPases, regulate various vesicular trafficking processes such as endocytosis, exocytosis, and ER to Golgi transport (Hutagalung and Novick, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "5c59be88-dba6-4c14-82c8-2928c4c8fc9a",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C80",
+      "claim": "Rab GTPases are activated by GTP binding and inactivated by the hydrolysis of GTP to GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab GTPases are activated by GTP binding and inactivated by the hydrolysis of GTP to GDP (Pfeffer, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "83e6fed3-7d0b-45a5-8428-38a42b222c85",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C81",
+      "claim": "A GDP dissociation inhibitor (GDI) stabilizes GDP-bound Rab in the inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "A GDP dissociation inhibitor (GDI) stabilizes GDP-bound Rab in the inactive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Rab GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "a404ff35-917f-41b4-8c6b-1a4de780254e",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C82",
+      "claim": "A guanidine nucleotide exchange factor (GEF) binds to GDP:Rab5 and catalyzes GDP release and GTP loading for Rab.",
+      "claim_type": "EXPLICIT",
+      "source": "A guanidine nucleotide exchange factor (GEF) binds to GDP:Rab5 and catalyzes GDP release and GTP loading for Rab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Rab GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "10e949cf-cc4e-4462-b9cc-6d13f6530d13",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C83",
+      "claim": "The activated GTP-bound Rab exerts its effects by binding to various effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The activated GTP-bound Rab exerts its effects by binding to various effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Rab GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "689e8eb2-5249-430d-bbb7-c260f9d0d370",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C84",
+      "claim": "Inactivation of GTP:Rab is aided by a GTPase activating protein (GAP).",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of GTP:Rab is aided by a GTPase activating protein (GAP) (Cherfils and Zeghouf, 2013), rendering the Rab GTPase ready for another cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ba7614df-ebba-4101-adba-4c0f68b1ca91",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C85",
+      "claim": "K48-linked polyubiquitination guides the substrate to the proteasome, resulting in degradation of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "K48-linked polyubiquitination guides the substrate to the proteasome, resulting in degradation of the substrate (Komander and Rape, 2012; Hochstrasser, 2009; Akutsu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "66fe7379-8db7-4337-9d9a-b376112797d4",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C86",
+      "claim": "K63-linked polyubiquitination regulates cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, K63-linked polyubiquitination regulates cellular signaling pathways (Bhoj and Chen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "7f7e49e9-d3e6-45a1-9963-c86b23973808",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C87",
+      "claim": "Monoubiquitination modulates histone modification, virus budding, and endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoubiquitination modulates histone modification, virus budding, and endocytosis (Hicke, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "20f1cf1a-994f-4244-bc44-1d6a6f24a71c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C88",
+      "claim": "Site-specific monoubiquitination of K147 of Ras leads to activation of signaling by impairing its interaction with GAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Site-specific monoubiquitination of K147 of Ras leads to activation of signaling by impairing its interaction with GAP (Baker et al., 2013a; Baker et al., 2013b; Sasaki et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous studies on Ras monoubiquitination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "293e3883-b9c6-4c3b-b1d3-1f06857ea829",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C89",
+      "claim": "Monoubiquitination of K117 of Ras facilitates GDP release from Ras, independent of a GEF.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, monoubiquitination of K117 of Ras facilitates GDP release from Ras, independent of a GEF (Baker et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous study on Ras monoubiquitination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "4d38f05a-a651-42bd-85a5-aea49d97c984",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C90",
+      "claim": "HACE1, a HECT-type E3 ubiquitin ligase, ubiquitinates Rab6A, Rab8A, and Rab11A in conjunction with the \u03b22-adrenergic receptor (\u03b22AR).",
+      "claim_type": "EXPLICIT",
+      "source": "HACE1, a HECT-type E3 ubiquitin ligase, ubiquitinates Rab6A, Rab8A, and Rab11A in conjunction with the \u03b22-adrenergic receptor (\u03b22AR) (Lachance et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous study on Rab ubiquitination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d0d413d9-1a28-45c5-91ff-f1c520d06006",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C91",
+      "claim": "Ubiquitination of K145 of Rab11A activates Rab11A.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination of K145 of Rab11A activates Rab11A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous study on Rab11A ubiquitination.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "46102246-509a-44e6-878d-67e8ca3667a1",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C92",
+      "claim": "Rab33b is monoubiquitinated through atypical serine ubiquitination by SdeA, a pathogenic effector protein of Legionella pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab33b is monoubiquitinated through this atypical serine ubiquitination by SdeA, a pathogenic effector protein of Legionella pneumophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous studies on atypical serine ubiquitination of Rab33b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "2787a65c-f171-441f-84e9-63fe8b79f073",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C93",
+      "claim": "Rab5 regulates formation of early endosomes and maturation to late endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab5 regulates formation of early endosomes and maturation to late endosomes (Hutagalung and Novick, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "5dcc889d-a757-4f94-b70c-03657a399d92",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C94",
+      "claim": "Three isoforms of mammalian Rab5 - Rab5a, Rab5b and Rab5c regulate endocytosis in a co-operative manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Three isoforms of mammalian Rab5 - Rab5a, Rab5b and Rab5c regulate endocytosis in a co-operative manner (Bucci et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous study on Rab5 isoforms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "81d42d4e-a1cc-47e1-b31a-266d86898f5b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C95",
+      "claim": "Rab5a is required for EGF-induced EGFR degradation while Rab5b and Rab5c are not.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab5a is required for EGF-induced EGFR degradation while Rab5b and Rab5c are not (Barbieri et al., 2000; Chen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous studies on Rab5 isoform functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "8d2071fc-ec16-4786-aabb-aa584cbf33a1",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C96",
+      "claim": "Rab5c is involved in cell migration whereas Rab5a and Rab5b are not.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab5c is involved in cell migration whereas Rab5a and Rab5b are not (Chen et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited previous study on Rab5 isoform functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "66ae1bb1-46ce-44d0-b9bc-35109c492135",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C97",
+      "claim": "Proteomic studies have suggested that the Rab5 isoforms can be differentially ubiquitinated in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic studies have suggested that the Rab5 isoforms can be differentially ubiquitinated in cells (Chen et al., 2014b; Wagner et al., 2011; Wagner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited proteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "1c06314a-33ce-4676-9660-e910f87c520f",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C98",
+      "claim": "Rab5 is monoubiquitinated in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we checked whether Rab5 is monoubiquitinated in HeLa cells (Figure 1f). Rab5 was monoubiquitinated in HeLa cells, confirming that ubiquitination of Rab5 is conserved in the two cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "ef63347d-fc20-424c-a607-11913c1ee6bd",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C99",
+      "claim": "Ubiquitination of Rab5 is conserved in HEK 293T and HeLa cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Rab5 was monoubiquitinated in HeLa cells, confirming that ubiquitination of Rab5 is conserved in the two cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from both cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "00ab38f4-4d9f-4d4e-a621-dd982933ea96",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C100",
+      "claim": "The functionality of the 11KR mutant is preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Rab5 puncta were not observed for the 13KR and the two 12KR mutants, puncta were formed as clearly in 11KR mutant cells as in WT cells (Figure 1g), suggesting that the functionality of the 11KR mutant is preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d08551a0-77a4-421f-9123-f4549764cba5",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C101",
+      "claim": "K134 may undergo polyubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that K134 was previously reported to be ubiquitinated by proteomic studies (Chen et al., 2014b; Wagner et al., 2011; Wagner et al., 2012), it is plausible that K134 may undergo polyubiquitination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on proteomic data and structural analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "087532dd-b9f3-45ed-bd9e-99d0be934666",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "claim_id": "C102",
+      "claim": "Ubiquitination of K134 might be related to disruption/degradation of Rab5.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the crucial role of K134 in the structural integrity of Rab5 (Figure 1\u2014figure supplement 1b and c), we hypothesized that ubiquitination of K134 might be related to disruption/degradation of Rab5, thereby preventing us from observing ubiquitination of K134 in the current experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on structural analysis and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e52b434-60f7-4453-ae5a-82315af6fe91",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rab5 is predominantly monoubiquitinated in cells, appearing as doublet bands in gel electrophoresis, which represent monoubiquitination at multiple sites. This monoubiquitination is independent of the nucleotide binding state of Rab5 and is not due to prenylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging experimental evidence from ubiquitination assays (C1), gel electrophoresis showing doublet bands (C2, C4), GGTI-198 treatment ruling out prenylation (C4), and GDP/GTP-bound mutant assays (C5). The doublet band observation is also supported by precedent in caveolin-1 (C3). The experimental data consistently support monoubiquitination at multiple sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "K116, K140, and K165 are identified as monoubiquitination sites of Rab5, with K140 being a major site. These lysine residues are surface-exposed, accessible to ubiquitin, and located outside the switch regions of Rab5. K33 and K134 are not responsible for monoubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, and C9 provide direct experimental evidence from K-to-R mutant and R-to-K back-mutation ubiquitination assays identifying the three sites. Claims C11 and C12 provide structural validation showing these residues are appropriately positioned for ubiquitination. The convergence of mutagenesis data and structural analysis strongly supports the identification of these specific sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "cd3f0ac5-3a4d-4ee6-adbc-3fa80340750b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "K33 and K134 form direct contacts with GDP and GTP molecules and are critical for Rab5 structural integrity. The 11KR mutant (preserving K33 and K134) maintains functionality, while K134 may undergo polyubiquitination related to Rab5 disruption/degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C100 provide structural and functional evidence for the importance of K33 and K134. The structural data (C7) shows direct contacts with nucleotides, and functional data (C100) demonstrates preserved functionality when these residues are intact. Claims C101 and C102 provide reasonable speculation about K134 polyubiquitination based on proteomic data and structural considerations, though this remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "f2ee47b6-df6d-4dfa-8304-8b9a13e48f0b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Monoubiquitinated Rab5 is predominantly localized in the membrane fraction and disrupts Rab5-positive endosomal formation while remaining membrane-associated. This suggests ubiquitination has negative effects on the Rab5 regulatory cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 provide complementary evidence from immunofluorescence (C13) and fractionation assays (C14) showing loss of endosomal puncta and membrane localization of monoubiquitinated Rab5. The hypothesis (C15) and conclusion (C16) are well-supported by the experimental observations, establishing an inhibitory role for ubiquitination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "7352668b-078f-4813-af08-5acb1841cb16",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ubiquitination of K140 of Rab5 has a crucial role in downregulating the Rab5-mediated endocytic pathway, as demonstrated by EGFR degradation assays. The K140R mutant restores EGFR degradation when co-expressed with ubiquitin, while K116R and K165R mutants do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 provide systematic evidence from EGFR degradation assays showing that overexpression of Rab5 facilitates EGFR degradation (C17), co-expression with ubiquitin attenuates this (C18), and the K140R mutant specifically restores degradation (C19). This site-specific rescue experiment (C19) provides strong evidence for the crucial role of K140 ubiquitination (C20).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "5777ab4f-eed5-4303-b97e-6a362e9779a0",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Monoubiquitination of K140 or K165 inhibits Rab5-positive endosomal formation, while monoubiquitination of K116 has no effect. This is demonstrated through immunofluorescence assays with K-to-R mutants and single-K-mutants in the 11KR background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 provide comprehensive immunofluorescence data showing site-specific effects of monoubiquitination. The K-to-R mutant experiments (C21-C24) and the single-K-mutant experiments in the 11KR background (C25) provide converging evidence that K140 and K165 ubiquitination inhibits endosomal formation, while K116 ubiquitination does not.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "48483cd5-d299-4bdf-9d46-d7dbf1a16b5d",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Monoubiquitination of Rab5 on K140 and K165 downregulates the Rab5-mediated endocytic pathway, establishing monoubiquitination as an inhibitory signal. This is opposite to Ras monoubiquitination, which serves as an activating signal, demonstrating that monoubiquitination plays different roles in Rab and Ras GTPases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, C60, and C61 synthesize the experimental findings and compare them to Ras monoubiquitination. The comparison with Ras (C26, C61) is well-supported by citations and the experimental data showing opposite functional consequences. The overall conclusion (C27, C60) is strongly supported by the multiple lines of evidence from endosomal localization, EGFR degradation, and site-specific mutagenesis experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An optimized chemical ubiquitination method using iterative addition of ubiquitinG76C achieves 95% yield of monoubiquitinated Rab5. This method overcomes the incompleteness problem of traditional oxidative conjugation and will facilitate studies on protein ubiquitination at the molecular level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide experimental validation of the method, showing preserved functionality of the engineered Rab5 (C28) and high yield (C29). Claims C72-C74 provide context about existing methods and their limitations (C72-C73) and the utility of the new method (C74). The experimental data support the technical advancement, though the broader utility claim (C74) is prospective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "06c4a47e-030d-44ca-9936-2044322c7372",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SAXS analysis reveals that all three mUbRab5s are monodisperse and flexible in solution, with mUbRab5K140 showing a distinct conformational ensemble distribution compared to mUbRab5K116 and mUbRab5K165. The ubiquitin moiety on K140 is more flexible than those on K116 and K165, suggesting site-specific functional consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 provide comprehensive SAXS data including dynamic light scattering (C30), flexibility analysis (C31), and EOM analysis (C32-C34) showing distinct conformational distributions. The inference about differential flexibility (C36) and functional consequences (C35) is well-supported by the structural data showing two distinct populations for mUbRab5K140 versus single populations for the other two variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural modeling of mUbRab5s with partner proteins suggests that monoubiquitination regulates Rab5 function by altering interactions with partner proteins. The ubiquitin moieties do not clash with GEF (Rabex-5) or GAP (RabGAP-5) in most cases, but the flexible ubiquitin moiety of mUbRab5K140 is juxtaposed with the switch I region, potentially disrupting effector protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C46 provide systematic structural modeling analysis with GEF, GAP, and effector proteins. The modeling shows no clashes with GEF (C39) and differential positioning relative to effector proteins (C41-C42). The inference about impedance of effector interactions (C46) is well-supported by the structural models, particularly for mUbRab5K140 where the ubiquitin moiety is positioned near the switch I region (C42-C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Monoubiquitination of K116 and K140 does not affect GEF-mediated GDP release and GTP loading activities, while monoubiquitination of K165 interferes with the GEF-mediated conversion cycle, showing reduced GDP release and weakened GTP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 provide comprehensive biochemical data from GDP release and GTP loading assays. The data show that mUbRab5K116 and mUbRab5K140 behave similarly to WT Rab5 (C47, C49), while mUbRab5K165 shows altered behavior (C48, C50). The interpretation that K165 ubiquitination weakens GTP interaction (C51) is well-supported by the continuous decrease in fluorescence signal after reaching maximum (C50).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "15160148-a039-49a4-88fc-c792af4fe18b",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Monoubiquitination of K140 of Rab5 significantly reduces its binding affinity to downstream effector proteins Rabaptin5 (5-fold increase in Kd) and EEA1 (20-fold increase in Kd), while monoubiquitination of K116 has only a minor effect and K165 shows little change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 provide quantitative bio-layer interferometry data showing site-specific effects on effector binding. The dramatic increase in Kd for mUbRab5K140 with both Rabaptin5 (C53) and EEA1 (C56) provides strong evidence for disrupted effector interactions. The validation against published values (C57) and the differential effects of the three sites (C54, C58) support the site-specific mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analysis of Rab5 ubiquitination sites across species reveals that K116 and K165 are strictly conserved from yeast to human, while K140 is less conserved. K165 is in the conserved G5 motif, while K116 and K140 are in non-conserved regions. The ubiquitination sites are not conserved in viral Rab5, suggesting monoubiquitination is a subsidiary regulatory signal in eukaryotic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 provide sequence alignment analysis across species showing differential conservation of the three ubiquitination sites (C63-C65). The observation that these sites are not conserved in viral Rab5 (C66-C67) supports the inference that monoubiquitination is a subsidiary signal (C68). The proteomic data showing 28 of 63 human Rab GTPases are ubiquitinated (C62) provides broader context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "79322f5f-93cd-41e9-b02e-26397c4caf3c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Ubiquitination of conserved sites can have different functional consequences in Rab and Ras GTPases. Monoubiquitination of K165 of Rab5 has an inhibitory effect, whereas ubiquitination of the corresponding K147 of Ras has a stimulatory effect, demonstrating that monoubiquitination is a versatile modification tool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 synthesize the comparison between Rab5 and Ras monoubiquitination. The comparison is well-supported by the experimental data from this study and cited Ras studies (C70). The conclusion that monoubiquitination is versatile (C71) is a reasonable inference based on the opposite functional consequences in these related GTPases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "cfe0c41f-3fcb-4002-8cac-d2aceab1324e",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Only a small portion of Rab5 is ubiquitinated under basal conditions when ubiquitin is overexpressed, suggesting ubiquitination occurs rarely in cells. Despite the small population, the effects of monoubiquitination are strong, suggesting tight regulation through specific E3 ligase or DUB enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 provide observations about the low abundance of monoubiquitinated Rab5 (C75-C76) and the strong functional effects despite low abundance (C77). The inference about tight regulation (C78) is reasonable given the strong effects from a small population. However, the lack of identified E3 ligase or stimulus signal is a limitation acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "K165 of Rab5 corresponds to K147 of Ras, but monoubiquitination at these corresponding sites has opposite functional consequences: inhibitory in Rab5 versus stimulatory in Ras.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C26, C61, C69, and C70 establish the correspondence between K165 of Rab5 and K147 of Ras and document the opposite functional effects. The comparison is well-supported by citations to Ras studies and the experimental data from this study showing inhibitory effects of K165 ubiquitination in Rab5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "fabc7a3c-7709-41bc-bb57-35944a144a9a",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information on Rab GTPases, ubiquitination, and prior studies on Ras and Rab ubiquitination establishes the context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C97 provide established scientific knowledge and citations to prior work. These claims establish the biological context and prior knowledge that motivated the current study. They are well-supported by appropriate citations and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    },
+    {
+      "id": "c52f92d4-2885-4816-a532-d3ef2c8833df",
+      "content_id": "b3e134cf-a572-427b-a6e0-aa6853405752",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Rab5 monoubiquitination is conserved between HEK 293T and HeLa cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98 and C99 provide experimental validation that the monoubiquitination observed in HEK 293T cells is also present in HeLa cells, demonstrating conservation across cell lines. This is supported by direct experimental data (Figure 1f).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:23:55.225232Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4fe872e4-e67d-4753-aca6-8c7d99c1b27f",
+      "result_id": "7e52b434-60f7-4453-ae5a-82315af6fe91"
+    },
+    {
+      "claim_id": "1a4aa221-738a-43b4-bc02-6f5efddb85aa",
+      "result_id": "7e52b434-60f7-4453-ae5a-82315af6fe91"
+    },
+    {
+      "claim_id": "4cd0412b-242c-470d-8c3e-589c8838d084",
+      "result_id": "7e52b434-60f7-4453-ae5a-82315af6fe91"
+    },
+    {
+      "claim_id": "f6e02cf9-4018-44ff-8df8-12db34ff42e4",
+      "result_id": "7e52b434-60f7-4453-ae5a-82315af6fe91"
+    },
+    {
+      "claim_id": "19c620fb-a867-4c6a-a32b-8ccbdf7114cf",
+      "result_id": "7e52b434-60f7-4453-ae5a-82315af6fe91"
+    },
+    {
+      "claim_id": "961fff59-c757-4acb-ad53-b608d2383ff1",
+      "result_id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c"
+    },
+    {
+      "claim_id": "90334b6d-0648-4407-baa2-16b0876b2c9f",
+      "result_id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c"
+    },
+    {
+      "claim_id": "2cff8373-ee0c-4308-8187-770f4e95a71c",
+      "result_id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c"
+    },
+    {
+      "claim_id": "9f2e45f3-ff7a-4fef-8d7f-c0694646e2c8",
+      "result_id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c"
+    },
+    {
+      "claim_id": "4b44476c-194c-4a4b-b879-f3802ad3905e",
+      "result_id": "f6f2f105-5765-4e15-950b-d5b586b8fc9c"
+    },
+    {
+      "claim_id": "65dbe28e-ca2c-4023-a78e-d836b679415b",
+      "result_id": "cd3f0ac5-3a4d-4ee6-adbc-3fa80340750b"
+    },
+    {
+      "claim_id": "00ab38f4-4d9f-4d4e-a621-dd982933ea96",
+      "result_id": "cd3f0ac5-3a4d-4ee6-adbc-3fa80340750b"
+    },
+    {
+      "claim_id": "d08551a0-77a4-421f-9123-f4549764cba5",
+      "result_id": "cd3f0ac5-3a4d-4ee6-adbc-3fa80340750b"
+    },
+    {
+      "claim_id": "087532dd-b9f3-45ed-bd9e-99d0be934666",
+      "result_id": "cd3f0ac5-3a4d-4ee6-adbc-3fa80340750b"
+    },
+    {
+      "claim_id": "e046d021-63c2-4432-b54d-59528f3c2f03",
+      "result_id": "f2ee47b6-df6d-4dfa-8304-8b9a13e48f0b"
+    },
+    {
+      "claim_id": "24966878-a79a-4721-8254-2ec41b7d5861",
+      "result_id": "f2ee47b6-df6d-4dfa-8304-8b9a13e48f0b"
+    },
+    {
+      "claim_id": "0fc1186f-24e3-4673-8d73-2b4bf96900d8",
+      "result_id": "f2ee47b6-df6d-4dfa-8304-8b9a13e48f0b"
+    },
+    {
+      "claim_id": "ac6bc45f-41a7-4638-b4e9-006ef2654588",
+      "result_id": "f2ee47b6-df6d-4dfa-8304-8b9a13e48f0b"
+    },
+    {
+      "claim_id": "3bb0a04f-131c-4cd8-9290-8ab78410c0a0",
+      "result_id": "7352668b-078f-4813-af08-5acb1841cb16"
+    },
+    {
+      "claim_id": "35b667cc-867b-47fa-b9e0-0c56bfa6ed13",
+      "result_id": "7352668b-078f-4813-af08-5acb1841cb16"
+    },
+    {
+      "claim_id": "170341a2-e757-4769-bc49-9d5a4e31c4dd",
+      "result_id": "7352668b-078f-4813-af08-5acb1841cb16"
+    },
+    {
+      "claim_id": "6a7bb7d9-919f-448f-9c84-6724588575cd",
+      "result_id": "7352668b-078f-4813-af08-5acb1841cb16"
+    },
+    {
+      "claim_id": "ab75cb33-4a0f-403b-b9b6-261453a84d28",
+      "result_id": "5777ab4f-eed5-4303-b97e-6a362e9779a0"
+    },
+    {
+      "claim_id": "e024aff9-c0a2-4007-a124-f8a1223cf264",
+      "result_id": "5777ab4f-eed5-4303-b97e-6a362e9779a0"
+    },
+    {
+      "claim_id": "ef624c13-e1ad-4ec7-9295-c1aa30b75053",
+      "result_id": "5777ab4f-eed5-4303-b97e-6a362e9779a0"
+    },
+    {
+      "claim_id": "62028d87-2479-4403-b2f5-47a8fb315674",
+      "result_id": "5777ab4f-eed5-4303-b97e-6a362e9779a0"
+    },
+    {
+      "claim_id": "54dc1cd6-e521-4a05-9e1e-af19f4fa5f9c",
+      "result_id": "5777ab4f-eed5-4303-b97e-6a362e9779a0"
+    },
+    {
+      "claim_id": "7407067f-d9a7-4342-ae77-874c5926cfac",
+      "result_id": "48483cd5-d299-4bdf-9d46-d7dbf1a16b5d"
+    },
+    {
+      "claim_id": "de5eb38a-a5da-4132-9f16-025b4b9f3829",
+      "result_id": "48483cd5-d299-4bdf-9d46-d7dbf1a16b5d"
+    },
+    {
+      "claim_id": "d557d40b-12cf-47ca-8fff-94e253685edc",
+      "result_id": "48483cd5-d299-4bdf-9d46-d7dbf1a16b5d"
+    },
+    {
+      "claim_id": "b8dc0320-c863-4c8d-9aa5-61e096761db3",
+      "result_id": "48483cd5-d299-4bdf-9d46-d7dbf1a16b5d"
+    },
+    {
+      "claim_id": "5db27f44-ba9f-4c16-92b6-b18b469c42b8",
+      "result_id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b"
+    },
+    {
+      "claim_id": "f797eee4-a494-430e-ad50-556d8f087420",
+      "result_id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b"
+    },
+    {
+      "claim_id": "c6b65b9c-ea67-4901-9014-b07235fbd681",
+      "result_id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b"
+    },
+    {
+      "claim_id": "cf54dfa8-1e7e-4f49-88d4-f490881464bd",
+      "result_id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b"
+    },
+    {
+      "claim_id": "4cae0d75-ab12-4b2b-8c95-bb9d5c88274c",
+      "result_id": "f512a0b2-7e51-40cc-b767-2a1b4a4f466b"
+    },
+    {
+      "claim_id": "63c39f9e-6f87-4d07-ab8f-5d9ee36810aa",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "949e848c-f787-4127-92dc-317b03be30dc",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "8c6af7b4-c0a3-4a85-a053-5310d5bcdf4d",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "dd807f5a-69a7-46bf-b230-a4b113fa6807",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "9c5212af-0bc5-46c3-918c-1479bbc0f75b",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "447cd1e7-5d4f-49c7-8a18-eea46792b771",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "6780365f-a701-43cf-8f36-1285e6839f2d",
+      "result_id": "06c4a47e-030d-44ca-9936-2044322c7372"
+    },
+    {
+      "claim_id": "dd1248a5-1488-47f8-bca8-7de1c7c8982f",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "c91c8f08-595f-4b0b-abd4-af2a2c4bab76",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "4495a22a-c1b4-4dfb-9449-f6b3229ed583",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "6181beff-bbdc-45ca-ae8b-702887791ea0",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "ae8e9ff4-874b-435b-bd63-98e3c0932221",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "ad371b86-f647-416d-b769-78d304593191",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "e508d457-0434-493e-bae1-ff8861472086",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "8ecdbb1c-570a-4f9f-a3ca-868815616cc4",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "b33fb024-e08d-475f-b320-d1252e655e25",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "85a48698-18dd-413f-bd97-de6604452d7a",
+      "result_id": "b71c5274-2de2-46d5-ad48-4f64d1d859c6"
+    },
+    {
+      "claim_id": "124ea3d0-91c5-4515-92c2-23182ce644c4",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "558bc4d8-4bdb-408b-83d0-589d25b0f2cd",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "cc938a87-f363-4f58-bf7a-4c57abdd2f85",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "d0b24086-dc9b-41d2-95cf-ad10838c0ad8",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "62437313-40cb-46df-9dbc-463a756c279a",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "6ee6fdf9-e10b-4af6-be6d-40faba1c1dff",
+      "result_id": "91ad924c-7bce-4d72-9509-1b9c6b788ea5"
+    },
+    {
+      "claim_id": "0023a153-b79d-4ae7-8740-7cb181e9e2d0",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "dc19574c-e92f-4c3a-aa1c-e9e86d8db80f",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "241fb7ea-8be0-4d36-98bf-afce8c6d99c8",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "bd018f6e-5da0-4b1f-b74e-15cac824d803",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "fb8bf535-4bd7-4249-b5ef-acdf1e00d745",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "b5569132-0321-4253-ad0e-1e041511a89b",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "06c4c6ef-06fc-43ce-b95e-b86c3374b121",
+      "result_id": "15160148-a039-49a4-88fc-c792af4fe18b"
+    },
+    {
+      "claim_id": "9e1da565-34a3-430a-976e-f3b7932fcb1c",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "efc83bb6-590a-4971-a5c9-a7aaa1d71d41",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "d3f6c40f-e32d-46a5-86ab-1c5a42142eb1",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "c17196fd-ed9e-420a-9d82-aaca6121288e",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "dbe0f9ee-8b9a-499a-bc7f-6dadf781a920",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "d09e90e1-f517-463d-bd33-f7b12bdd5a31",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "899dd4ad-e2ca-4c4a-9632-4faffb2ee714",
+      "result_id": "d0ece60c-e63f-4ceb-bb67-9f52bf779bbe"
+    },
+    {
+      "claim_id": "376a6086-e8b2-4649-962b-048400073daa",
+      "result_id": "79322f5f-93cd-41e9-b02e-26397c4caf3c"
+    },
+    {
+      "claim_id": "5e3a8ecf-4165-493b-b311-36ede21ac508",
+      "result_id": "79322f5f-93cd-41e9-b02e-26397c4caf3c"
+    },
+    {
+      "claim_id": "269347d7-ddca-4b50-9406-92f673f30a5a",
+      "result_id": "79322f5f-93cd-41e9-b02e-26397c4caf3c"
+    },
+    {
+      "claim_id": "155cb3de-2601-4430-8ec6-76ccbcb801aa",
+      "result_id": "cfe0c41f-3fcb-4002-8cac-d2aceab1324e"
+    },
+    {
+      "claim_id": "e942e0dc-52d8-4f1c-9b07-b7abf962e88d",
+      "result_id": "cfe0c41f-3fcb-4002-8cac-d2aceab1324e"
+    },
+    {
+      "claim_id": "d0b9c121-d33b-4792-8607-43b342e56aaa",
+      "result_id": "cfe0c41f-3fcb-4002-8cac-d2aceab1324e"
+    },
+    {
+      "claim_id": "11e0268a-5b59-4b82-b22e-40c29990adbe",
+      "result_id": "cfe0c41f-3fcb-4002-8cac-d2aceab1324e"
+    },
+    {
+      "claim_id": "d1ec604c-9157-42ad-a2f7-4c112d3d8f4c",
+      "result_id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c"
+    },
+    {
+      "claim_id": "7407067f-d9a7-4342-ae77-874c5926cfac",
+      "result_id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c"
+    },
+    {
+      "claim_id": "b8dc0320-c863-4c8d-9aa5-61e096761db3",
+      "result_id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c"
+    },
+    {
+      "claim_id": "376a6086-e8b2-4649-962b-048400073daa",
+      "result_id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c"
+    },
+    {
+      "claim_id": "5e3a8ecf-4165-493b-b311-36ede21ac508",
+      "result_id": "fa8f779b-2a6c-49ce-bea2-62d809cd283c"
+    },
+    {
+      "claim_id": "bedbca85-bcb8-4585-8377-e0aedfaffd42",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "5c59be88-dba6-4c14-82c8-2928c4c8fc9a",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "83e6fed3-7d0b-45a5-8428-38a42b222c85",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "a404ff35-917f-41b4-8c6b-1a4de780254e",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "10e949cf-cc4e-4462-b9cc-6d13f6530d13",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "689e8eb2-5249-430d-bbb7-c260f9d0d370",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "ba7614df-ebba-4101-adba-4c0f68b1ca91",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "66fe7379-8db7-4337-9d9a-b376112797d4",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "7f7e49e9-d3e6-45a1-9963-c86b23973808",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "20f1cf1a-994f-4244-bc44-1d6a6f24a71c",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "293e3883-b9c6-4c3b-b1d3-1f06857ea829",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "4d38f05a-a651-42bd-85a5-aea49d97c984",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "d0d413d9-1a28-45c5-91ff-f1c520d06006",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "46102246-509a-44e6-878d-67e8ca3667a1",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "2787a65c-f171-441f-84e9-63fe8b79f073",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "5dcc889d-a757-4f94-b70c-03657a399d92",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "81d42d4e-a1cc-47e1-b31a-266d86898f5b",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "8d2071fc-ec16-4786-aabb-aa584cbf33a1",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "66ae1bb1-46ce-44d0-b9bc-35109c492135",
+      "result_id": "fabc7a3c-7709-41bc-bb57-35944a144a9a"
+    },
+    {
+      "claim_id": "1c06314a-33ce-4676-9660-e910f87c520f",
+      "result_id": "c52f92d4-2885-4816-a532-d3ef2c8833df"
+    },
+    {
+      "claim_id": "ef63347d-fc20-424c-a607-11913c1ee6bd",
+      "result_id": "c52f92d4-2885-4816-a532-d3ef2c8833df"
+    }
+  ],
+  "comparisons": []
+}

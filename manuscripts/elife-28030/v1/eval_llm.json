@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "DnaK binds to at least four distinct sites on hTRF1 (Leu 30, Leu 31, Val 18, and Val 41), as demonstrated by methyl-TROSY NMR spectroscopy showing multiple conformations of the DnaK-hTRF1 complex. These binding sites were identified through mutagenesis experiments and NOESY data linking specific hTRF1 residues to DnaK binding pocket residues Ile 401 and Ile 438.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C24, C31-C36 provide converging experimental evidence from NMR spectroscopy (multiple peaks for Ile 29), diffusion measurements confirming bound states, NOESY data linking substrate and chaperone residues, and mutagenesis experiments definitively assigning four binding sites. The data is internally consistent and well-supported by multiple independent experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "A fraction of hTRF1 molecules bind two DnaK molecules simultaneously, with the 'c' state (Val 41 at position 0) showing 2:1 DnaK:hTRF1 stoichiometry based on NMR titration data, while states 'a', 'b', and 'd' show 1:1 stoichiometry. This demonstrates that even a small 53-residue substrate can accommodate multiple chaperone molecules at equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C39, C41 are supported by systematic NMR titration experiments showing distinct maxima at different [DnaK]T/[hTRF1]T ratios (1:1 for states a, b, d and 2:1 for state c). The interpretation is validated by mathematical modeling (Figure 5\u2014figure supplement 1) demonstrating that these titration profiles are consistent with the proposed stoichiometries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The DnaK binding pocket exhibits considerable flexibility, with Ile 401 and Ile 438 rotamer distributions varying substantially across different bound conformations. The binding pocket topology is influenced not only by the identity of the substrate residue at position 0 but also by other factors, as evidenced by different rotamer populations for states 'a' and 'b' despite both having Leu at position 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by quantitative analysis of 13C chemical shifts (Table 1) showing rotamer distributions ranging from 42-99% gauche- for Ile 401 and 0-100% for Ile 438. The observation that Ile 438 trans population changes from 28% to 54% between states 'a' and 'b' (both with Leu at position 0) provides direct evidence that factors beyond residue identity govern binding pocket topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The interconversion between multiple DnaK-bound states is slow, with substrate off-rate (koff) less than 0.3 s\u207b\u00b9, as determined by magnetization exchange experiments showing no exchange crosspeaks at 300 ms mixing time. This is consistent with previously measured slow substrate release rates from DnaK/ADP (~0.001 s\u207b\u00b9 at 25\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by direct experimental evidence (absence of exchange crosspeaks in magnetization exchange experiments) and simulations establishing the upper limit for koff. The consistency with previously published kinetic measurements strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Multiple DnaK-bound conformations are observed with peptide fragments (hTRF1\u2082\u2083\u208b\u2083\u2088 and hTRF1\u2083\u2084\u208b\u2084\u2089) and with DnaK/ATP (where the lid is less interactive), demonstrating that conformational heterogeneity does not require the full-length substrate or specific lid-substrate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by experimental data showing multiple peaks in HMQC spectra for both peptide-DnaK complexes (Figure 2\u2014figure supplement 2A) and DnaK/ATP-hTRF1 complexes (Figure 2\u2014figure supplement 2B). These control experiments effectively rule out alternative explanations for the observed heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The relative binding affinities of the three 1:1 complexes differ, with Kd ratios of 1:2.6:20.1 for states 'a':'b':'d' (corresponding to free energy differences of 0:0.6:1.8 kcal/mol at 35\u00b0C), as estimated from peak intensity ratios at [DnaK]T/[hTRF1]T = 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 provides quantitative binding affinity estimates based on peak intensities. However, the authors acknowledge this is only approximate due to potential differential relaxation effects (13% maximum variation noted). While 1H and 13C linewidths are reported as similar, the assumption that intensities directly reflect concentrations may introduce systematic errors. The relative trends are likely valid, but absolute values should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C47",
+      "C50"
+    ],
+    "result": "Conformational heterogeneity in Hsp70-client complexes is a general feature, as demonstrated by similar multiple conformations observed with human Hsc70 binding to hTRF1. The conserved topology of the substrate binding site across the Hsp70 family suggests this promiscuity is widespread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C47, C50 are supported by experimental data showing at least four peaks for Ile 29 in Hsc70-hTRF1 complexes (Figure 6), combined with structural conservation arguments and citations to studies showing heterogeneity with other substrates (\u03b2-sheet proteins). The generalization is appropriately cautious and evidence-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "This is the first study demonstrating that a Val residue can occupy the central (0) position in a DnaK-substrate complex, expanding the known repertoire of residues that can bind in the central pocket beyond Ile, Leu, Met, Pro, and cyclohexylalanine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by the mutagenesis and labeling experiments definitively assigning Val 18 and Val 41 to positions 0 in states 'd' and 'c'. The novelty claim is appropriately qualified ('to the best of our knowledge') and contextualized with citations to known binding residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C64"
+    ],
+    "result": "The DnaK-hTRF1 complex is a 'fuzzy complex' characterized by static disorder (multiple binding modes with slow exchange) and dynamic disorder (rapidly interconverting states in regions distal to binding site). This heterogeneity enables substrate molecules to explore different starting conformations upon release, potentially allowing them to circumvent kinetic traps and sample different folding pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C53-C55, C61, C64 present a mechanistic model based on the experimental observations. While the characterization of the complex as 'fuzzy' with static and dynamic disorder is well-supported by data (C54, C59-C60, C69), the functional implications (C53, C55, C61, C64) regarding kinetic trap avoidance and folding pathway sampling are speculative inferences. The model is plausible and consistent with the data, but lacks direct experimental validation of the proposed folding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The proposed mechanism is expected to be particularly beneficial for proteins with rugged energy landscapes, where multiple binding cycles increase folding efficiency. Slower folding with Hsp70 has been observed for some proteins (RNase H) but is predicted to be negligible for fast-folding proteins like hTRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57, C70-C72 extend the mechanistic model to make predictions about different protein classes. While C57 provides supporting evidence from literature and simulations for hTRF1, the broader predictions (C56, C70-C71) remain speculative. The logic is sound and the model is testable, but experimental validation for proteins with rugged landscapes is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Hsp70 mechanism differs from GroEL/ES and other chaperones (SecB, trigger factor) in that Hsp70 can generate different starting conformations in each binding cycle through promiscuous binding, while using minimal substrate contacts (4-5 residues) that allow conformational exploration, rather than extensive wrapping around the chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C65-C68 make comparative mechanistic arguments supported by citations to structural and functional studies of other chaperones. The distinction between Hsp70's minimal contact strategy versus the extensive wrapping by SecB/trigger factor is well-established in the literature. The inference that this enables different functional mechanisms is logical and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Methyl-TROSY NMR spectroscopy enabled detection of residues at the DnaK binding site (residues 27-39) that were invisible in conventional 1H-15N TROSY experiments due to slow tumbling of the ~80 kDa complex and conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe the methodological approach and its rationale. The limitation of 1H-15N experiments is documented (C21), and the advantages of methyl-TROSY are well-established in the literature (C22). The successful detection of multiple conformations validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background context on Hsp70 function and structure: Hsp70 is critical for cellular proteostasis, performs diverse ATP-dependent functions, recognizes clients with broad conformational range, yet has a simple binding site architecture where peptides bind in extended conformations with minimal contacts. The binding pocket may possess considerable flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C14 provide established background knowledge supported by multiple citations to previous structural and functional studies. These claims appropriately contextualize the study and identify the knowledge gap (C3) that the work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The model substrate hTRF1 is a marginally stable 53-residue three-helix bundle with one predicted strong DnaK binding site (Leu 31) and two weak sites. Previous studies showed DnaK-bound hTRF1 is globally unfolded but retains ~40% secondary structure in regions distal to the binding site, with disrupted tertiary interactions, and this conformation is maintained throughout the DnaK nucleotide cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the substrate properties and previous findings, all supported by appropriate citations to prior work by the authors and others. This establishes the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The current findings provide insight into previously observed conformational heterogeneity in other DnaK-substrate complexes (SH3 domain) and establish that multiple binding modes observed in crystal structures can exist at equilibrium in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 connect the current findings to previous observations in the literature. The inference that DnaK can bind the SH3 domain in different ways (C73) is reasonable given the current results, and the demonstration that crystal structure heterogeneity reflects solution equilibria (C75) is directly supported by the NMR data.",
+    "result_type": "MINOR"
+  }
+]

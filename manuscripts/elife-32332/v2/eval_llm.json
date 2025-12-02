@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors screened five published transcriptome datasets from fetal human neocortex for protein-coding genes preferentially expressed in cortical neural progenitor cells (cNPCs). This analysis yielded 3458 human genes with preferential expression in cNPCs found in at least two of the five gene sets, with 562 genes found in all five datasets and substantial overlap (32-60%) between pairwise comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 describe a systematic bioinformatics screen across multiple independent datasets using different methodologies (RNA-Seq, microarray, single-cell RNA-seq) and isolation strategies (LCM, FACS). The substantial overlap between datasets (C23) and identification of 562 core genes (C24) and 3458 total cNPC-enriched genes (C25) provide strong convergent evidence. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The 3458 cNPC-enriched genes include canonical markers of cNPCs and known molecular players in radial glia function, intermediate progenitor function, cell proliferation, Notch signaling, and extracellular matrix signaling. GO term enrichment analysis revealed that these genes preferentially encode proteins involved in cell division and mitotic machinery, with the most enriched terms being 'cell cycle phase and mitotic cell cycle phase', 'mitotic prometaphase', 'chromosome centromeric region', and 'kinetochore'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 validate the gene set through two complementary approaches: (1) presence of known cNPC markers supported by multiple citations (C26), and (2) unbiased GO term enrichment analysis showing enrichment for cell cycle and mitotic processes (C27-C28). The inference that these genes encode proteins involved in cell division (C29) is well-supported by the GO analysis results. This provides strong biological validation of the computational screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors identified 50 primate-specific genes among the 3458 cNPC-enriched genes through ortholog analysis and manual inspection of genomic alignments. Of these, 25 genes predate the ape ancestor (14 encoding zinc finger proteins), and 15 are human-specific, arising after the split from the chimpanzee lineage approximately 5-7 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 describe a systematic phylogenetic analysis combining automated ortholog detection with manual curation of genomic alignments. The reduction from 77 candidates to 50 truly primate-specific genes (C30-C31) demonstrates careful validation. The phylogenetic dating is supported by cited paleontological evidence (C35) and the identification of specific gene classes (zinc finger proteins, C33) adds biological context. The methodology is rigorous and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Among the 15 human-specific genes, ARHGAP11B and 13 others were present in Neandertal and Denisovan genomes and arose before the split from these archaic humans (~500,000 years ago), while SMN2 is the only gene that arose after this divergence, being specific to modern humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are based on analysis of archaic human genome sequences, which are well-established resources. The temporal dating is supported by cited research (C37) and the identification of SMN2 as unique to modern humans (C38) is based on published work (Dennis et al., 2017). This provides important evolutionary context for understanding when these genes emerged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C112",
+      "C113"
+    ],
+    "result": "Analysis of gene emergence rates relative to neutral substitution rates revealed disproportionately high rates of appearance of new cNPC-enriched genes in two phylogenetic branches: the branch leading to Catarrhini (34% of genes, 17/50) and the branch leading to human (30% of genes, 15/50). These percentages are higher than expected from a constant rate of gene emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C112-C113 describe a quantitative analysis comparing observed gene emergence rates to neutral substitution rates. The identification of two outlier branches (Figure 2B) and the statistical comparison to expected rates under a constant model (C113) provide strong evidence for non-uniform gene emergence. The percentages are clearly stated and the inference of elevated rates is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors analyzed evolutionary mechanisms giving rise to primate-specific genes. MICA arose by duplication of MICB in the Catarrhini ancestor, exemplifying gene duplication as a driving force of genome evolution. KIF4B evolved in the Simiiformes ancestor by retroposition of the ancestral KIF4A gene, involving reverse transcription of spliced mRNA followed by genomic insertion as an intronless copy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe well-characterized evolutionary mechanisms supported by genomic analysis and extensive citations. The MICA example (C42-C43) is supported by multiple prior studies on gene duplication. The KIF4B retroposition mechanism (C44-C46) is clearly demonstrated by the intronless structure and is consistent with established knowledge of retroposition. The phylogenetic timing is shown in Figure 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PTTG2 arose by retroposition of PTTG1 mRNA into intron 2 of TBC1D1 in the Simiiformes ancestor. The gene underwent divergent evolution: in non-Hominoidea Simiiformes it accumulated inactivating mutations (frameshifts and stop codons), while in Hominoidea the reading frame remained open. In great apes, a 1 bp insertion caused a frameshift resulting in a novel 13-amino acid C-terminal sequence lacking acidic residues found in PTTG1. In gibbon, an additional 22 bp deletion caused another frameshift, replacing the C-terminal 25 amino acids with an 18-amino acid sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide detailed molecular evidence for PTTG2 evolution based on comparative genomic sequence analysis (Figure 3A-B). The retroposition mechanism is clearly demonstrated (C47-C49), the divergent evolutionary trajectories are well-documented through sequence comparisons across multiple species (C52-C53), and the specific mutations and their consequences are precisely described (C54-C56). This represents a thorough characterization of a complex evolutionary history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 15 human-specific cNPC-enriched genes evolved through diverse mechanisms: 12 arose by complete gene duplication, one (ARHGAP11B) by partial duplication, one (ZNF492) by exon duplication creating a chimeric protein with ZNF492 repressor domain and ZNF98 DNA binding domain, and one (FAM182B) by removal of a stop codon through a single T\u2192G substitution. NOTCH2NL arose from duplication of NBPF7, ADAM30, and NOTCH2, followed by deletion of duplicated ADAM30 and most of duplicated NOTCH2, leaving only a short splice variant encoding part of the NOTCH2 ectodomain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 systematically describe the evolutionary origins of all 15 human-specific genes based on detailed genomic analysis (Figure 4A-D). Each mechanism is supported by specific evidence: complete duplications (C57), partial duplication of ARHGAP11B (C62), the complex NOTCH2NL evolution (C58-C61), the chimeric ZNF492 (C64), and the FAM182B stop codon removal (C65-C67). The conclusion (C68) is well-supported by the comprehensive analysis. The diversity of mechanisms is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Genomic qPCR validated the human-specific nature of gene duplications, showing two-fold increase for ARHGAP11 (confirming ARHGAP11B duplication), four-fold increase for FAM72 (ancestral FAM72A plus three human-specific paralogs), three-fold increase for GTF2H2 (ancestral plus two human-specific paralogs), and two-fold increase for SMN (ancestral SMN1 plus human-specific SMN2) in human compared to chimpanzee and bonobo. Deep sequencing of PCR amplicons confirmed high specificity (97.2-99.8% alignment) and validated copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe rigorous experimental validation of computational predictions using genomic qPCR (Figure 4E) with independent confirmation by deep sequencing (Figure 4\u2014figure supplement 2). The high specificity of PCR reactions (C73) and correspondence between sequencing read counts and qPCR-determined copy numbers (C74) provide strong orthogonal validation. This addresses a key concern about genome assembly quality in non-human primates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In situ hybridization analysis of 13 human-specific genes and selected ancestral paralogs in 13 wpc human fetal neocortex revealed diverse spatial expression patterns across germinal zones (VZ, iSVZ, oSVZ) and cortical plate (CP). Notable findings include: ARHGAP11B expression restricted to germinal zones versus ARHGAP11A also in IZ/CP with specific basal surface localization; NOTCH2NL restricted to VZ similar to ancestral NOTCH2; and various patterns for other genes including VZ-restricted (ANKRD20A1-4), VZ/iSVZ-enriched (FAM72A-D, SMN1-2), and broader expression (DHRS4L2, ZNF492, GTF2H2C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C91 describe comprehensive ISH analysis with clear spatial patterns documented in Figures 5 and 6. The comparison between human-specific genes and ancestral paralogs (C80-C84) is particularly valuable, revealing both conserved (NOTCH2/NOTCH2NL) and divergent (ARHGAP11A/B) expression patterns. The specific observation of ARHGAP11A basal surface localization (C81) is supported by citations to prior work on mRNA localization. The diversity of expression patterns is well-documented across multiple genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Kallisto analysis of RNA-Seq data from aRG, bRG, and neurons revealed that most human-specific genes show markedly different total mRNA expression levels compared to ancestral paralogs (reduced: ARHGAP11B, CBWD6, FAM72B/C/D, GTF2H2C, SMN2; increased: ANKRD20A2, ANKRD20A4, DHRS4L2, ZNF492), with NOTCH2NL being the exception. Additionally, several genes showed altered cell-type specificity: ZNF492 lower in bRG vs aRG (opposite to ZNF98), while ARHGAP11B, DHRS4L2, GTF2H2C, and SMN2 higher in bRG vs aRG (opposite to ancestral paralogs). The increase in ARHGAP11B in bRG is consistent with its known function in basal progenitor amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 describe sophisticated computational analysis using Kallisto (Figure 7A-B) to distinguish highly similar paralogs, validated by qPCR (Figure 7\u2014figure supplement 1) and paralog-specific read counting (Figure 7\u2014figure supplement 2). The identification of both quantitative (C92-C94) and qualitative (C95-C97) expression differences is well-supported. The connection between ARHGAP11B expression pattern and function (C98) provides biological validation. The conclusion about regulatory evolution (C99) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In utero electroporation of NOTCH2NL in E13.5 mouse embryos increased cycling basal progenitors (PCNA+ and Ki67+) in SVZ and IZ but not VZ at 48 hours post-electroporation. This increase involved Tbr2+ intermediate progenitors rather than Sox2+ basal radial glia, was accompanied by decreased cell cycle exit in SVZ, and showed increased abventricular but not ventricular mitoses. These results demonstrate that forced expression of human-specific NOTCH2NL promotes basal progenitor proliferation in mouse embryonic neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe a well-controlled functional experiment with multiple complementary readouts (Figure 9A-K): proliferation markers (PCNA, Ki67), cell-type markers (Tbr2, Sox2), cell cycle exit (BrdU/Ki67), and mitotic index (PH3). The specificity for basal progenitors (C100-C101) is clearly demonstrated, and the multiple lines of evidence converge on the same conclusion (C104). Statistical significance is indicated. This provides strong functional validation of NOTCH2NL's role in progenitor proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Different mechanisms contributed to the origin of human-specific and primate-specific cNPC-enriched genes. While entire or partial gene duplications gave rise to the vast majority, other mechanisms include exon duplications creating chimeric genes (ZNF492), removal of translational stop codons creating new open reading frames (FAM182B), and retroposition of reverse transcribed spliced mRNA (KIF4B, PTTG2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 provide a comprehensive summary of evolutionary mechanisms identified in the study, supported by detailed genomic analyses presented earlier. The statement is consistent with prior research (C106) while also identifying novel mechanisms (C107-C108). The diversity of mechanisms is well-documented throughout the manuscript with specific examples for each category.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "PTTG2 was inactivated during evolution of non-Hominoidea Simiiformes but remained intact in Hominoidea, raising the possibility that PTTG2 may exert a role in neocortex development of apes and humans but not New-World and Old-World monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is well-supported by comparative genomic sequence analysis (Figure 3B). However, claim C111 is explicitly speculative ('raises the possibility') and lacks functional validation. While the evolutionary pattern is intriguing and the speculation is reasonable given PTTG1's known role in cell proliferation, no experimental evidence is provided to test PTTG2 function in neocortex development. This remains a hypothesis requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors speculate that the increased appearance of new cNPC-enriched genes in the Catarrhini branch may be related to increased gyrencephaly, and in the human branch may be related to increased brain size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 are explicitly presented as speculation ('one may speculate') without supporting evidence. While the temporal correlation between gene emergence and morphological changes is noted, no causal relationship is established or tested. These are reasonable hypotheses for future investigation but remain unsupported speculations in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The majority of human-specific genes show marked differences not only in expression levels but also in cNPC-type specificity compared to ancestral paralogs, suggesting that after gene duplication, these genes underwent specific changes in regulatory elements at the transcriptional and/or post-transcriptional level during human evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is well-supported by the comprehensive expression analysis (ISH and RNA-Seq) presented in the manuscript. Claim C117 is a reasonable inference from the observed expression differences, though the specific regulatory changes are not directly identified. The inference is logical given that expression differences must arise from regulatory changes, but the mechanism remains to be determined. The conclusion is appropriately cautious in suggesting transcriptional and/or post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Expressing human-specific NOTCH2NL in mouse embryonic neocortex increased cycling basal progenitors, a hallmark of developing human neocortex. The NOTCH2NL protein studied is predicted to lack a signal peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is strongly supported by the in utero electroporation experiments (C100-C104) and connects the finding to established knowledge about human neocortical development. Claim C119 is based on protein sequence analysis and raises important mechanistic questions about NOTCH2NL secretion and function that are appropriately noted in the Discussion but not resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The human-specific function of ARHGAP11B arose by a single-nucleotide substitution generating a new splice donor site, presumably occurring relatively recently after the partial gene duplication ~5 million years ago. An ARHGAP11B splice variant is specifically expressed in human bRG and contains only a short 3'-UTR lacking predictable microRNA binding sites, in contrast to another splice variant with a long 3'-UTR with predicted microRNA binding sites predominantly expressed in aRG. This suggests ARHGAP11B mRNAs may be subject to differential microRNA-mediated regulation depending on function in aRG-to-bRG lineage progression versus bRG amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are based on prior work by the authors and are appropriately cited. Claims C122-C123 present new splice variant analysis data (Figure 8) showing bRG-specific expression and differential 3'-UTR structure. The inference about differential microRNA regulation (C124) is reasonable given the known role of 3'-UTR sequences in microRNA-mediated regulation, though direct experimental validation of microRNA regulation is not provided. The connection between expression pattern and known function is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study is motivated by established understanding that neocortical expansion during primate and human evolution provides the basis for cognitive abilities and reflects increased proliferative capacity and duration of proliferative/neurogenic/gliogenic phases of cortical neural progenitor cells, including apical radial glia (aRG) and basal radial glia (bRG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 establish the scientific rationale and background for the study, supported by extensive citations to prior research. These represent well-established knowledge in the field rather than novel findings of this study. The characterization of aRG and bRG (C9-C10) is based on cited prior work including the authors' own previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work by the authors identified 263 protein-coding human genes highly expressed in human bRG and aRG compared to neurons, of which 207 have mouse orthologs not expressed in mouse cNPCs and 56 lack mouse orthologs. Among the latter, ARHGAP11B was identified as a human-specific gene with highest specificity of expression in bRG and aRG, capable of basal progenitor amplification in embryonic mouse neocortex, likely contributing to evolutionary expansion of human neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 summarize prior work by the authors (Florio et al., 2015, 2016) that provides context for the current study. These are appropriately cited and represent established findings from previous publications. The characterization of ARHGAP11B (C14-C16) is based on the authors' prior functional studies and is relevant background for the current comprehensive analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C35",
+      "C39",
+      "C40",
+      "C43",
+      "C45",
+      "C48",
+      "C50",
+      "C63"
+    ],
+    "result": "The manuscript includes several claims based on cited prior knowledge: the human-chimpanzee split occurred ~5-7 Mya; SMN2 can alleviate spinal muscular atrophy caused by SMN1 mutations and can be regarded as an inefficient SMN1 backup specific to modern humans; gene duplication is a well-known driving force of genome evolution; KIF4A has near-ubiquitous occurrence in the animal kingdom; PTTG1 encompasses five protein-coding exons conserved in reptiles, birds and mammals; TBC1D1 encodes a Rab-GTPase activating protein; and ARHGAP11B evolution has been analyzed previously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C39-C40, C43, C45, C48, C50, and C63 represent established knowledge from prior research, appropriately cited. These provide important context for interpreting the new findings but are not novel results of this study. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  }
+]

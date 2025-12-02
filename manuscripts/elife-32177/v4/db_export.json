@@ -1,0 +1,1735 @@
+{
+  "submission": {
+    "id": "9a05d422-eaeb-493a-a375-a6f5a989ad22",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:25:43.289576Z",
+    "updated_at": "2025-12-01T22:25:43.289576Z"
+  },
+  "content": [
+    {
+      "id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "submission_id": "9a05d422-eaeb-493a-a375-a6f5a989ad22",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule studies contrast ordered DNA replication with stochastic translesion synthesis\n\n## Authors\n\n- Gengjing Zhao<sup>1</sup>\n- Emma S Gleave<sup>1</sup>\n- Meindert Hugo Lamers<sup>1</sup> ([ORCID: 0000-0002-4205-1338](https://orcid.org/0000-0002-4205-1338)) \u2020\n\n### Affiliations\n\n1. MRC laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh fidelity replicative DNA polymerases are unable to synthesize past DNA adducts that result from diverse chemicals, reactive oxygen species or UV light. To bypass these replication blocks, cells utilize specialized translesion DNA polymerases that are intrinsically error prone and associated with mutagenesis, drug resistance, and cancer. How untimely access of translesion polymerases to DNA is prevented is poorly understood. Here we use co-localization single-molecule spectroscopy (CoSMoS) to follow the exchange of the E. coli replicative DNA polymerase Pol IIIcore with the translesion polymerases Pol II and Pol IV. We find that in contrast to the toolbelt model, the replicative and translesion polymerases do not form a stable complex on one clamp but alternate their binding. Furthermore, while the loading of clamp and Pol IIIcore is highly organized, the exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.\n\n## Introduction\n\nTo ensure faithful replication of the genomic DNA, replicative DNA polymerases have a narrow active site that limits the incorporation of incorrect nucleotides. In addition, rare nucleotide mis-incorporations into the primer strand prevent further DNA synthesis and a 3'\u22125' exonuclease is required to remove the misincorporated nucleotides (Kunkel, 2004). In contrast, when the polymerase encounters a lesion on the template strand in the form of a modified base caused by diverse chemicals, reactive oxygen species, or UV light (Liu et al., 2016; Lindahl, 1996), the high-fidelity replicative DNA polymerases are stalled. To bypass these replication blocks, all cells harbor multiple specialized translesion DNA polymerases (Goodman and Woodgate, 2013) that have more open active sites and are therefore able to accommodate bulky DNA adducts and continue DNA synthesis. As a result of their more open active sites, the translesion polymerases are error prone and consequently associated with increased mutagenesis, drug resistance, and cancer (Fuchs and Fujii, 2013; Lange et al., 2011). Therefore, the access of the translesion polymerases to DNA needs to be tightly controlled, but how this is achieved has been the subject of debate.\n\nThe 'toolbelt' model (Indiani et al., 2005) predicts that in E. coli the replicative DNA polymerase Pol III\u03b1 and the translesion DNA polymerase Pol IV bind simultaneously to the DNA sliding clamp \u03b2, a dimeric, ring-shaped protein that encircles the DNA and provides processivity to the replicative DNA polymerases (Johnson and O'Donnell, 2005). This way, the translesion polymerase functions in a manner analogous to the proofreading exonuclease: when the replicative polymerase inserts an incorrect nucleotide into the nascent strand, it will be removed by the proofreading exonuclease, whereas when the polymerase encounters a lesion on the template strand, the DNA is transferred to the translesion polymerase that can bypass the lesion. Thus both the exonuclease and translesion polymerase act as 'tools' that enable the replicative polymerase to overcome potential roadblocks to DNA replication. The toolbelt model, which was originally based on steady-state F\u00f6rster Energy Resonance Transfer (FRET) experiments that showed the simultaneous binding of the replicative and translesion polymerases to the \u03b2-clamp, has found support in several subsequent studies (Indiani et al., 2009; Furukohri et al., 2008; Heltzel et al., 2012). However, all these studies used bulk studies that due to the asynchronous nature cannot separate out the sequential steps during a reaction (Robinson and van Oijen, 2013). More recently, single molecule approaches have also been used (Kath et al., 2014, 2016), but in these experiments the exchange of polymerases was inferred indirectly through the change in speed of DNA synthesis and therefore it cannot be determined whether the polymerases bind simultaneously. In addition, recent studies reveal that during DNA replication in E. coli the two binding pockets of the dimeric \u03b2-clamp are occupied by the replicative DNA polymerase Pol III\u03b1 and the associated proofreading exonuclease \u03b5 (Toste R\u00eago et al., 2013; Jergic et al., 2013). The cryo-EM structure of the trimeric Pol III-exonuclease-clamp (\u03b1, \u03b5, \u03b2) complex (Fernandez-Leiro et al., 2015) also shows that most of the clamp is covered, leaving no space for a second polymerase. Therefore, it remains controversial whether the replicative and translesion polymerases can co-localize on a single clamp.\n\nConsequently, an alternative view to the toolbelt model is that the translesion DNA polymerases compete for binding to clamp-DNA through 'mass action', as evidenced by the fact that the bypass of a N2-acetylaminofluorene guanine adduct by Pol V or Pol II depends on the relative concentrations of the two polymerases (Becherel and Fuchs, 2001; Fujii and Fuchs, 2004), and that the concentrations of Pol IV and Pol V are dramatically increased during the bacterial SOS DNA damage response (Sutton, 2010).\n\nRegardless of the model, the DNA sliding clamp plays a pivotal role in controlling access of the translesion polymerases to the DNA. However, the control for access to the clamp-DNA is complicated by the fact that on the lagging strand, DNA synthesis is discontinuous and every\u00a0~1000 base pairs a new clamp is loaded, followed by the binding of the replicative DNA polymerase. Due to its closed circular shape, the clamp must be loaded and unloaded onto the DNA by the dedicated clamp loader complex (\u03b3/\u03c4-complex in bacteria, RFC in archaea and eukaryotes) (Hedglin et al., 2013; Kelch et al., 2012). Once the clamp is loaded onto primed DNA, the replicative polymerase associates and initiates DNA synthesis. How the repeated loading and unloading of the clamp and replicative polymerase Pol III\u03b1 on the lagging strand is coordinated, while simultaneously preventing the untimely association of the translesion polymerases has not been studied so far.\n\nHere, we use co-localization single molecule spectroscopy (CoSMoS) (Friedman et al., 2006) to directly visualize the loading of the E. coli clamp loader (\u03b3/\u03c4-complex), the DNA sliding clamp \u03b2, the replicative DNA polymerase Pol III\u03b1, the proofreading exonuclease \u03b5, as well as the exchange with the translesion polymerases Pol II and Pol IV. The multi-color CoSMoS experiments enable us to follow the binding and dissociation of multiple proteins in real-time on a single DNA molecule, which makes it the most suitable method to discriminate between simultaneous or sequential binding of different molecules on a DNA substrate. Our work shows that the translesion polymerases Pol II and Pol IV do not form a stable complex with the replicative polymerase Pol III\u03b1 on the clamp-DNA and therefore the clamp does not function as a molecular toolbelt. Furthermore, we find that the sequential activities of the replication proteins clamp loader, clamp, and Pol III\u03b1 are highly organized while the exchange with the translesion polymerases Pol II and Pol IV is disordered and determined by mass action through concentration-dependent competition for the hydrophobic groove on the surface of the \u03b2-clamp. Hence, our results provide a unique insight into the temporal organization of the events in DNA replication and translesion synthesis, and contrast the highly organized replication events with stochastic polymerase exchange during translesion synthesis.\n\n## Results\n\n### Preparation of DNA substrates and fluorescently labeled proteins\n\nThe ring-shaped E. coli \u03b2-clamp is capable of threading and unthreading itself on free DNA ends and therefore we attached a primer-template DNA substrate to a glass surface and blocked its free end with monovalent streptavidin (Figure 1A). Subsequently, the binding of fluorescently labeled proteins to DNA was followed by two- or three-color total internal reflection fluorescence microscopy (see Materials and methods) with a frame rate of 0.44 and 0.66 s (s), respectively, on\u00a0~800 well separated DNA molecules per field of view (Figure 1B\u2013C). Proteins were fluorescently labeled via maleimide-cysteine crosslinking or enzymatically via an N-terminal Ybbr tag (Yin et al., 2006), and the fluorescently labeled proteins retained wild-type activity as indicated by polymerase processivity assay (Figure 1\u2014figure supplement 1A\u2013C). For detection of Pol IIIcore (\u03b1, \u03b5, \u03b8), we fluorescently labeled the \u03b1 subunit. For the clamp loader complexes (\u03b33\u03b4\u03b4' and \u03c43\u03b4\u03b4'), the fluorescent label was placed on the \u03b4' subunit. The lifetime of the each of the fluorophores was measured individually on DNA-bound clamps (Atto 488 274.4\u00a0\u00b1\u00a016.5 s, Atto 565: 145.7\u00a0\u00b1\u00a07.5 s, Atto 647N: 93.0\u00a0\u00b1\u00a07.4 s) (Figure 1\u2014figure supplement 1D\u2013F). In most experiments, after initial detection of the DNA molecules, the fluorophore (Atto 488) on the DNA was bleached so that the same color could be re-used on one of the proteins. The bleaching of the DNA fluorophore has no effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on without bleaching 18.1\u00a0\u00b1\u00a01.6, \u03c4on with bleaching 16.8\u00a0\u00b1\u00a01.8) (Figure 1\u2014figure supplement 1G\u2013H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig1-v4.jpg)\n\n**Figure 1.:** (A) Schematic representation of the experimental setup. DNA molecules are attached to a PEGylated glass slide via a biotin-streptavidin layer, and end-blocked with monovalent streptavidin. Fluorescently labeled proteins will be detected when bound to the DNA molecules (B) Schematic representation of the three fluorescent channels from a single image (out of an 1000 image series) showing the presence of different molecules. (C) Schematic representation of kymographs from single position in the image series, revealing the binding and release of different proteins to the DNA at that position.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) \u03d5X174 phage DNA (5.4 kb) primer extension assays, showing the activity of fluorescently labeled and unlabeled proteins. In the labeled reactions, fluorescently labeled clamp, labeled clamp loader, and labeled polymerase (Pol IIIcore, Pol II, or Pol IV) were used. Reaction were quenched at 0, 0.5, 1, 2, and 5 min. The increased background in the \u2018Pol IIIcore Fluo label +\" lanes is caused by the presence of \u03b1Atto488, whose fluorescent signal overlaps with that of the fluorescein label on the DNA primer (B) Coomassie stained SDS-page showing unlabeled and labeled proteins (marked with *). (C) Three-wavelength fluorescent scan of the same gel shown in B (before coomassie staining) revealing the presence of the labeled proteins. (D\u2013F) Lifetimes of fluorescent dyes Atto 488, Atto 565, and Atto 674N under experimental conditions. The dyes were attached to the \u03b2-clamp that was loaded onto the DNA substrate used in the experiments. (G\u2013F) Lifetime of Pol IIIcore on clamp-DNA before and after photobleaching of the Atto 488 fluorophore on the DNA substrate. All values represent mean lifetime/lag time\u00a0\u00b1s.e.m.\n\n### Clamp loading and unloading are distinct processes\n\nThe isolated \u03b2-clamp shows no interaction with the end-blocked DNA (Figure 2\u2014figure supplement 1A\u2013B) When combined with the \u03b3 clamp loader complex (\u03b33\u03b41\u03b4'1), frequent clamp loading events are observed where the loader and clamp arrive at the DNA simultaneously or in two adjacent frames (Figure 2A\u2013B), due to the sequential data acquisition of the three laser channels (further explained in Figure 2\u2014figure supplement 1C\u2013E). Therefore, the loader and clamp bind DNA as a pre-formed complex. Shortly after DNA binding, the loader dissociates while the clamp remains bound to the DNA for the remainder of the data acquisition (Figure 2A). As the two lifetimes of the loader and clamp are vastly different it was not possible to accurately measure both in one experiment. Therefore, for the clamp lifetime, we first loaded the clamp, washed away the loader and then started data collection using 10 s intervals between measurements to avoid bleaching of the fluorophore. The clamps remain bound for more than 23 min (\u03c4on = 1429.7 \u00b1 177.0 s; Figure 2C), excluding the time it takes to load the clamps, wash away the loader, and start data collection (~3 min). In contrast, the lifetime of the loader is very short lived. To accurately measure the loader lifetime, only one fluorescent channel was used to decrease the frame rate to 0.086 s. The lifetime of the isolated loader on DNA is 1.20\u00a0\u00b1\u00a00.05 s, which is shortened to 0.41\u00a0\u00b1\u00a00.01 s in the presence of the clamp (Figure 2D). The rapid release of the loader from clamp-DNA is dependent on ATP hydrolysis as evidenced by the fact that in the presence of the poorly hydrolysable analog ATP\u03b3S, the loader and clamp still bind to the DNA together but also release together (Figure 2E). The loader and clamp bind to the DNA briefly (\u03c4on = 2.7 \u00b1 0.2 s; Figure 2F), which contrasts with the long lifetimes for the loaded clamps on DNA (Figure 2C). Taken together, our analysis is in agreement with the model that the clamp holds the loader in a conformation that suppresses ATPase activity and subsequent DNA binding triggers ATP hydrolysis and the release of the loader from clamp and DNA (Hedglin et al., 2013; Kelch et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig2-v4.jpg)\n\n**Figure 2.:** (A) Representative trace showing a clamp loading event on DNA in the presence of ATP. (B) Histogram showing the simultaneous arrival of loader and clamp on DNA (see also Figure 2\u2014figure supplement 1C\u2013E). (C) The distribution of lifetimes for the clamp on DNA after removal of the clamp loader (D) Lifetime of the clamp loader on DNA in the absence (blue bars) and presence (grey bars) of the clamp. (E) Representative trace showing the simultaneous arrival and release of loader and clamp on DNA in the presence of ATP\u03b3S. (F) The distribution of lifetimes for the loader and clamp on DNA in the presence of ATP\u03b3S. (G) Representative trace showing clamp loading and unloading by the loader in the presence of ATP. (H) The distribution of lifetimes for the loader on DNA during unloading. (I) The distribution of lag times between the arrival of the loader and the release of the clamp. (J) Representative trace showing unloading of a pre-loaded clamp in absence of ATP. (K) The distribution of lifetimes for the loader during clamp unloading in the absence of ATP. The first column (in dark grey) has been excluded from the fitting. The lower numbers in this column are possibly caused by the clamp that needs to be removed first before the loader can release. (L) The distribution of lag times between the arrival of the loader and the release of the clamp in the absence of ATP. All values represent mean lifetime/lag time\u00a0\u00b1s.e.m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Self-loading and unloading of clamp on open-ended DNA. (B) Lack of self-loading of clamp on end-blocked DNA. (C) Histogram showing the simultaneous arrival of loader and clamp on DNA (same as main Figure 2B) (D) Schematic representation of how the simultaneous arrival of two proteins can be recorded in a single image or (E) on two sequential images. (F) Representative trace showing sequentially an unsuccessful and a successful clamp unloading event. (G) The distribution of lifetimes for the unsuccessful unloading attempts by the clamp loader. All values represent mean lifetime\u00a0\u00b1s.e.m.\n\nDuring DNA replication, the clamps on the lagging strand need to be unloaded and recycled to allow for continuous DNA synthesis (Yao et al., 1996). We observe a different temporal organization for unloading events compared to the loading events: the loader arrives at the loaded clamp, releases the clamp within 4.1\u00a0\u00b1\u00a00.4 s of its arrival but remains bound for a total time of 10.8\u00a0\u00b1\u00a01.2 s (Figure 2G\u2013I). Furthermore, unlike clamp loading, the unloading of a clamp does not require ATP hydrolysis: the nucleotide requirement of the unloading process was tested by first loading clamps onto DNA and then washing away the ATP and free proteins. Next, the loader was re-introduced in the absence of ATP, resulting in many unloading events with similar kinetics to those observed in the presence of ATP (Figure 2J\u2013L). About half (53%) of the binding events of the loader to the pre-loaded clamp do not result in unloading of the clamp. These events last shorter (\u03c4on = 2.5 \u00b1 0.1 s) than the unloading events (\u03c4on = 10.8 \u00b1 1.2 s) (Figure 2\u2014figure supplement 1F\u2013G). Taken together, the data indicates that the loading and unloading of a clamp are not forward and backward reactions of the same mechanism but that they are separate processes, each with a distinct organization, possibly to prevent unwanted clamp unloading at the replication fork.\n\n### Pol IIIcore has an intrinsic lifetime on DNA that is independent of its activity\n\nOnce the clamp is loaded onto DNA, the replicative DNA polymerase Pol IIIcore will associate with the clamp and initiate DNA replication (Johnson and O'Donnell, 2005). Pol IIIcore is a stable trimeric complex containing the polymerase subunit \u03b1, the exonuclease \u03b5 and the accessory subunit \u03b8 (McHenry and Crow, 1979). Using a single fluorescent channel, we find that Pol IIIcore alone binds DNA very briefly for one image frame (0.086 s) or less, resembling more a collisions-like interaction rather than true binding events (Figure 3A\u2013B). These short-lived collisions are in agreement with previous studies that show that Pol III\u03b1 is a poor enzyme in isolation (Fay et al., 1981) that has a low affinity for DNA (Fernandez-Leiro et al., 2015; McCauley et al., 2008). The collisions of Pol IIIcore contrasts with the well-studied E. coli DNA polymerase I Klenow fragment, which is known to have a high affinity for DNA (Kuchta et al., 1987) and consequently shows a lifetime of 42.2\u00a0\u00b1\u00a01.8 s (Figure 3C\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig3-v4.jpg)\n\n**Figure 3.:** (A) Representative trace showing Pol IIIcore collisions with DNA in the absence of clamp. (B) The distribution of lifetimes for Pol IIIcore on DNA. (C) Representative trace showing Pol I binding on DNA. (D) The distribution of lifetimes for Pol I on DNA. (E) Representative trace showing Pol IIIcore binding to clamp-DNA shortly after the release of loader. (F) The distribution of lifetimes for Pol IIIcore on clamp-DNA in absence of dNTPs. (G) The distribution of lifetimes for Pol IIIcore binding events on clamp-DNA in the presence of dATP/dTTP. (H) Loading of clamp and polymerase by the \u03c4 clamp loader complex. (I) Lifetime of the \u03c4 clamp loader complex and Pol IIIcore on clamp-DNA (J) Cartoon of the binding sequence of the \u03c4 clamp loader - Pol IIIcore complex on clamp-DNA. All values represent mean lifetime\u00a0\u00b1s.e.m.\n\nThe behavior of Pol IIIcore is dramatically altered in the presence of the clamp. Shortly after the clamp is loaded onto DNA, Pol IIIcore associates with the clamp-DNA, producing long lasting binding events (Figure 3E\u2013G) with a lifetime of 15.7\u00a0\u00b1\u00a01.1 s (Figure 3E\u2013F). During DNA replication, the E. coli replisome synthesizes DNA with up to 100,000 base pairs per binding event (Yao et al., 2009; Tanner et al., 2009), which contrasts with the relatively short binding times of Pol IIIcore we measure on clamp-DNA. Therefore, we tested the effect of nucleotides on the lifetime of Pol IIIcore on DNA, using only two of the four nucleotides to prevent the Pol IIIcore from extending the primer strand and dissociating at the end the DNA substrate. The omission of two nucleotides is often used in DNA replication assays to induce 'polymerase idling' at a primer terminus as a result of opposing polymerase and exonuclease activities. To our surprise however, addition of dATP and dTTP (0.5 mM each), has no significant effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on = 16.1 \u00b1 1.0 s, Figure 3G). This is also in agreement with the observation that an actively synthesizing Pol IIIcore has a lifetime of\u00a0~10 s in the presence of all four nucleotides on a 48.5 kb \u03bb DNA substrate (Jergic et al., 2013; Tanner et al., 2008). Together, this shows that Pol IIIcore has a similar lifetime on clamp-DNA regardless of whether it is stationary, idling or actively synthesizing DNA.\n\nDuring DNA replication, Pol IIIcore is tethered to the rest of the replisome via the clamp loader protein \u03c4 (Studwell-Vaughan and O'Donnell, 1991). Thus far, to separate clamp loading from polymerase loading, we have used a clamp loader complex comprising the subunits \u03b3, \u03b4, an \u03b4' (\u03b33\u03b41\u03b4'1). \u03b3 is a shorter product of \u03c4 that is fully active in clamp loading, but does not interact with the polymerase (Dallmann et al., 1995, 2000). To measure the effect of full length \u03c4 on clamp loading and polymerase loading, we also measured clamp and polymerase loading with the \u03c4 clamp loader complex (\u03c43\u03b41\u03b4'1), in which each of the three \u03c4 proteins had a Pol IIIcore complex bound (see Material and Methods). Here, we find that clamp, loader, and Pol IIIcore arrive at the DNA together (Figure 3H). Unlike the \u03b3 clamp loader complex, the \u03c4 clamp loader complex does not dissociate immediately, as it remains bound for\u00a0~15 s and now leaves together with Pol IIIcore (\u03c4on = 14.8 \u00b1 0.9 s, Figure 3H\u2013I). We believe this is a result of the \u03c4 clamp loader complex and Pol IIIcore trading places on the clamp-DNA (Figure 3J). The presence of the \u03c4, however, does not affect the lifetime of Pol IIIcore on clamp-DNA, as the lifetime of the \u03c4 clamp loader - Pol IIIcore complex is similar to that of Pol IIIcore alone.\n\nHowever, during the simultaneous synthesis of leading and lagging strand, the polymerases on either strand are linked together by the multiple \u03c4 proteins of the clamp loader complex, which prevents the polymerase from diffusing away and enables it to quickly resume DNA synthesis. This may explain the higher processivity measured for the replisome (Yao et al., 2009; Tanner et al., 2009) compared to the bursts of activity from a single Pol IIIcore (Jergic et al., 2013; Tanner et al., 2008).\n\n### Pol IIIcore and Pol IV alternate binding to clamp-DNA\n\nDuring DNA replication the replisome may encounter DNA adducts caused by diverse chemicals, reactive oxygen species or UV-light that form barriers to the high-fidelity replicative DNA polymerases. To overcome these replication blocks, the replicative DNA polymerases temporarily trade places with the error-prone translesion DNA polymerases (Goodman and Woodgate, 2013). To study the molecular mechanism of polymerase switching, we directly visualized the binding of Pol IIIcore and the translesion DNA polymerase Pol IV on clamp-DNA. At equal concentration of Pol IIIcore and Pol IV (30 nM each), we record a large majority of events (92%) that show alternating binding of the two polymerases on clamp-DNA, with Pol IIIcore binding first in 70%, and Pol IV binding first in 22%, of events (Figure 4A and C, Table 1). Similar to the lifetime of Pol IIIcore alone on clamp-DNA, this competition is unaffected by addition of nucleotides (dATP/dTTP, 0.5 mM each) (Pol IIIcore to Pol IV switch: 72%, Pol IV to Pol IIIcore switch 21%). In the polymerase switching events, there is a significant lag time between the release of Pol IIIcore and Pol IV arrival that decreases with increased protein concentrations (Table 1, Figure 4\u2014figure supplement 1A\u2013D). The lifetime of Pol IIIcore on the clamp-DNA remains unchanged at all protein concentrations (Table 1, Figure 4\u2014figure supplement 1E\u2013H), suggesting that Pol IV binding does not cause the release of Pol IIIcore and therefore the two polymerases bind independently.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-v4.jpg)\n\n**Figure 4.:** (A) Representative trace showing alternating binding of Pol IIIcore and Pol IV on clamp-DNA. (B) Lifetime of Pol IV on clamp-DNA. (C) Cartoon showing the frequency of different polymerase switching events. (D) Representative trace showing the independent arrival and release of Pol IIIcore and Pol IV on clamp-DNA during co-localization events. (E) Lifetime of the co-localization of Pol IIIcore on Pol IV on clamp-DNA. (F) Representative trace showing the simultaneous arrival and release of Pol IIIcore \u03b1 subunit (polymerase) and Pol IIIcore \u03b5 subunit (exonuclease) on clamp-DNA. (G) Lifetime of the co-localization of the Pol IIIcore \u03b1 subunit and Pol IIIcore \u03b5 subunit. (H) Representative trace showing alternating binding of Pol IIIcore and Pol II on clamp-DNA. (I) Lifetime of Pol II on clamp-DNA. All values represent mean lifetime\u00a0\u00b1s.e.m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Histograms of the lag time between Pol IIIcore release from clamp-DNA and binding of Pol IV at increasing protein concentrations. (E\u2013H) Histograms of the lifetime of Pol IIIcore on clamp-DNA at all four protein concentrations. See also Table 1. All values represent mean lifetime/lag time\u00a0\u00b1s.e.m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Lifetime of Pol IIIcore with a reduced \u03b2-binding motif in the \u03b5 subunit. (B) Lifetime of Pol IIIcore with an improved \u03b2-binding motif in the \u03b5 subunit. (C) Lifetime of Pol IV with a mutated \u03b2-groove binding motif. (D) Lifetime of Pol IV with a mutated \u03b2-rim binding motif. (E) Lifetime of Pol II with a mutated \u03b2-groove binding motif. All values represent mean lifetime\u00a0\u00b1s.e.m.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig4-figsupp3-v4.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The distribution of lifetimes for Pol IIIcore binding on the clamp on matched, (B) lesion, and (C) mismatched DNA. (D) The distribution of lifetimes for Pol IIIcore binding on clamp-DNA in the presence of dATP and dTTP on matched, (E) lesion, and (F) mismatched DNA. (G) All values represent mean lifetime\u00a0\u00b1s.e.m.\n\n**Table 1.**\n Competition of Pol IIIcore and Pol IV\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Concentration (nM)</th>\n      <th colspan=\"3\">Polymerase exchange (%)*</th>\n      <th>Lag time (s)\u2020</th>\n      <th>Lifetime (s)\u2021</th>\n    </tr>\n    <tr>\n      <th>Competition</th>\n      <th>Pol IIIcore</th>\n      <th>Pol IV</th>\n      <th>III\u2192IV</th>\n      <th>IV \u2192III</th>\n      <th>III\u00a0+\u00a0IV</th>\n      <th>III\u2192IV</th>\n      <th>Pol IIIcore</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pol IIIcore - Pol IV</td>\n      <td>30</td>\n      <td>6</td>\n      <td>81</td>\n      <td>12</td>\n      <td>7</td>\n      <td>32.5\u00a0\u00b1\u00a04.6</td>\n      <td>16.3\u00a0\u00b1\u00a01.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>30</td>\n      <td>30</td>\n      <td>70</td>\n      <td>22</td>\n      <td>9</td>\n      <td>20.3\u00a0\u00b1\u00a03.5</td>\n      <td>15.7\u00a0\u00b1\u00a01.1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>30</td>\n      <td>150</td>\n      <td>63</td>\n      <td>20</td>\n      <td>15</td>\n      <td>5.9\u00a0\u00b1\u00a00.5</td>\n      <td>16.6\u00a0\u00b1\u00a01.7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>150</td>\n      <td>150</td>\n      <td>51</td>\n      <td>24</td>\n      <td>26</td>\n      <td>3.5\u00a0\u00b1\u00a00.2</td>\n      <td>16.0\u00a0\u00b1\u00a00.9</td>\n    </tr>\n    <tr>\n      <td>\u03c4-complex\u00a7 - Pol IV</td>\n      <td>30#</td>\n      <td>30</td>\n      <td>95</td>\n      <td>0</td>\n      <td>5</td>\n      <td>11.3\u00a0\u00b1\u00a01.3</td>\n      <td>14.8\u00a0\u00b1\u00a00.9</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Polymerase exchange observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV (III\u2192IV), Pol IV to Pol IIIcore (IV\u2192III), or co-localization of Pol IIIcore and Pol IV (III\u00a0+\u00a0IV).\u2020Time between Pol IIIcore release and Pol IV arrival.\u2021Lifetime on clamp-DNA.\u00a7\u03c4-complex consists of \u03c4 clamp loader (\u03c43\u03b41\u03b4'1) and three Pol IIIcore complexes (\u03b1, \u03b5, \u03b8).#Concentration of Pol IIIcore._\n\nIn addition to the switching events, we also observe a small number of co-localization events of the two polymerases on clamp-DNA (9%), which become more frequent at higher protein concentrations (Figure 4C, Table 1) but are unaffected by addition of nucleotides (7% with dATP/dTTP). In all events where Pol IIIcore and Pol IV co-localize on the clamp-DNA, the polymerases arrive and leave independently of one another (Figure 4D). This is different from the true binding partner exonuclease \u03b5 that arrives and leaves with Pol III\u03b1 (Figure 4F). In addition, the co-localization time of Pol IIIcore and Pol IV (\u03c4colocalize = 8.2 \u00b1 0.6, Figure 4E) is shorter than that of Pol IIIcore alone (\u03c4on = 15.8 \u00b1 0.9 s, Figure 4G). This therefore shows that Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA and that the clamp does not function as a molecular toolbelt, but that the two polymerases compete for the binding of the clamp-DNA in a concentration-dependent manner. This competition is strongly favored towards Pol IIIcore in the presence of the \u03c4 clamp loader complex (Table 1) as it is directly tethered to Pol IIIcore and ensures that Pol IIIcore is immediately bound upon clamp loading (Figure 3H). The presence of the \u03c4 clamp loader complex does not alter the frequency of co-localization between Pol IIIcore and Pol IV (Table 1). This suggests that during replication, Pol IV may be able to frequently access the clamp-DNA, especially as the estimated cellular concentration of Pol IV is\u00a0~10 fold higher than that of Pol IIIcore\u00a0(Sutton, 2010).\n\nFinally, a second E. coli translesion polymerase, Pol II (Paz-Elizur et al., 1996) also competes with Pol IIIcore for access to the clamp but shows no co-localization with Pol IIIcore (Figure 4H\u2013I, Table 2), possibly because of its large size (90 kDa vs. 40 kDa for Pol IV) that may prevent it from simultaneous binding to the clamp with Pol IIIcore.\n\n**Table 2.**\n Lifetime of \u03b2-clamp binding mutants of Pol IIIcore, Pol IV and Pol II\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"3\">Polymerase exchange (%) *</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Polymerase</td>\n      <td>Mutation</td>\n      <td>Lifetime (s)\u2020</td>\n      <td>III\u2192IV</td>\n      <td>IV \u2192III</td>\n      <td>III\u00a0+\u00a0IV</td>\n    </tr>\n    <tr>\n      <td>Pol IIIcore</td>\n      <td>WT</td>\n      <td>15.7\u00a0\u00b1\u00a01.1</td>\n      <td>70</td>\n      <td>22</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b5 (\u03b2-)</td>\n      <td>7.9\u00a0\u00b1\u00a01.2</td>\n      <td>70</td>\n      <td>26</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b5 (\u03b2+)</td>\n      <td>40.2\u00a0\u00b1\u00a08.7</td>\n      <td>71</td>\n      <td>24</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Pol IV</td>\n      <td>WT</td>\n      <td>14.2\u00a0\u00b1\u00a01.8</td>\n      <td>70</td>\n      <td>22</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b2 groove\u2021</td>\n      <td>2.7\u00a0\u00b1\u00a00.2</td>\n      <td>40</td>\n      <td>60</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b2 rim</td>\n      <td>14.9\u00a0\u00b1\u00a01.7</td>\n      <td>66</td>\n      <td>29</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Polymerase</td>\n      <td>Mutation</td>\n      <td>Lifetime (s)\u2020</td>\n      <td>III\u2192II</td>\n      <td>II \u2192III</td>\n      <td>III\u00a0+\u00a0II</td>\n    </tr>\n    <tr>\n      <td>Pol II</td>\n      <td>WT</td>\n      <td>10.4\u00a0\u00b1\u00a01.3</td>\n      <td>71</td>\n      <td>29</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b2 groove</td>\n      <td>4.4\u00a0\u00b1\u00a00.8</td>\n      <td>63</td>\n      <td>37</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Polymerase exchange observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV or Pol II, Pol IV or Pol II to Pol IIIcore, or co-localization of Pol IIIcore and Pol IV or Pol II.\u2020Lifetime on clamp-DNA.\u2021The Pol IV \u03b2 cleft mutant was measured at high concentrations\u00a0(90nM) in an attempt to catch co-localization events._\n\n### Polymerases compete for binding to the hydrophobic groove of the clamp\n\nTo further investigate the competition between the different polymerases and their access to the clamp, we created a series of polymerase mutants. Most clamp interacting proteins, including Pol IIIcore, Pol IV, and Pol II, bind to a hydrophobic groove on the surface of the \u03b2-clamp using the canonical sequence Qxx(L/M)xF (Dalrymple et al., 2001). The \u03b2-clamp is dimeric and thus has two binding grooves. Interestingly, Pol IIIcore contains two \u03b2-binding sequences: one in the polymerase subunit \u03b1 (QADMF, residues 920\u2013924) that is absolutely required for clamp binding (Dohrmann and McHenry, 2005), and a second sequence in the exonuclease subunit \u03b5 (QTSMAF, residues 182\u2013187) that stabilizes the Pol IIIcore complex and stimulates processive DNA synthesis and exonuclease activity (Toste R\u00eago et al., 2013; Jergic et al., 2013). To demonstrate that the \u03b5 \u03b2-binding motif also contributes to the lifetime of Pol IIIcore on the clamp, we made two variants of the exonuclease \u03b5, one with a weakened the \u03b2-binding motif (QTSMAF to QTSAAA [Toste R\u00eago et al., 2013]) and one with an enhanced \u03b2-binding motif (QTSMAF to QTSLPL [Fernandez-Leiro et al., 2015]). Indeed, the lifetime of Pol IIIcore is decreased\u00a0~2 fold by the weak \u03b2-binding motif, while it is increased\u00a0~2 fold by the enhanced \u03b2-binding sequence (Table 2, Figure 4\u2014figure supplement 2A\u2013B), showing that Pol III core occupies both binding grooves of the dimeric clamp.\n\nIn Pol IV, two \u03b2-clamp interacting motifs have been described: a canonical QLVLGL motif (residues 346\u2013351) that binds the hydrophobic groove, and a rim binding sequence (VWP, residues 301\u2013304) that interacts with the side of the clamp (Becherel et al., 2002; Bunting et al., 2003; Heltzel et al., 2009). Mutation of the groove binding motif in Pol IV was reported to inhibit clamp-dependent DNA synthesis, while mutation of the rim contacts resulted in loss of polymerase switching (Heltzel et al., 2009). In our experiments, mutation of the groove binding sequence (QLVLGL to QLVAGA, residues 346\u2013351) results in a drastic reduction in the lifetime of binding to the clamp (Table 2, Figure 4\u2014figure supplement 2C), and consequently no co-localization between Pol IV and Pol IIIcore are observed, even at elevated concentrations of Pol IV (Table 2). In contrast mutation of the rim binding motif (VWP to AGA, residues 303\u2013305) shows little effect on the lifetime of Pol IV on the clamp, or on the co-localization frequency with Pol IIIcore (Table 2, Figure 4\u2014figure supplement 2D). Finally, also mutation of the groove binding motif in Pol II (QLGLF to QLGAA, residues 779\u2013783) leads to a reduced lifetime of binding to the \u03b2-clamp (Table 2, Figure 4\u2014figure supplement 2E).\n\nThis therefore shows that all three polymerases compete for the same binding groove on the clamp, and that the isolated polymerases compete with similar lifetimes on the clamp-DNA. This equilibrium is directly influenced by the concentration of the polymerases, or by physically tethering the polymerase to the clamp loader, as is observed for the \u03c4 clamp loader complex and Pol IIIcore (Table 1, Figure 3H\u2013J)\n\n### DNA lesions do not affect the recruitment of translesion polymerases\n\nThe apparent lack of organization for the switching of the two polymerases raises the question of how Pol IV is recruited to the site of a lesion. We therefore wondered whether the lifetime of Pol IIIcore is affected by the nature of the DNA substrate. For this, we compared the lifetimes on three different DNA substrates: a matched, a mismatched, and a substrate containing a N2-furfuryl-dG lesion (Jarosz et al., 2006). These three DNA substrates should elicit very different outcomes, i.e. extension on a matched DNA substrate, mismatch removal by the exonuclease \u03b5 on a mismatched substrate, or polymerase switching on a DNA lesion. Surprisingly, the lifetime of Pol IIIcore on clamp-DNA is not altered by the presence of either a mismatch or the lesion (Table 3, Figure 4\u2014figure supplement 3A\u2013C). This indicates that Pol IIIcore does not 'discriminate' between the different DNA substrates. This is also observed in the presence of the two nucleotides dATP and dTTP (0.5 mM each), which give little change in the lifetime of Pol IIIcore on all three DNA substrates (Table 3, Figure 4\u2014figure supplement 3D\u2013F). Likewise, the exchange of Pol IIIcore to Pol IV is similar on all three substrates, (Table 3). Hence, Pol IIIcore dissociation is unaffected by mismatches or DNA lesions and the exchange between Pol IIIcore and Pol IV is not driven by the state of the DNA, but instead is a direct competition between the replicative and translesion polymerases.\n\n**Table 3.**\n DNA lesion and mismatches do not affect the lifetime of Pol IIIcore on clamp-DNA or its competition with Pol IV\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Lifetime (s)</th>\n      <th colspan=\"3\">Polymerase exchange\u2020 (%)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>No dNTP</th>\n      <th>dATP/dTTP</th>\n      <th>III \u2192 IV</th>\n      <th>IV \u2192 III</th>\n      <th>III\u00a0+\u00a0IV</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Matched</td>\n      <td>15.7\u00a0\u00b1\u00a01.1</td>\n      <td>16.1\u00a0\u00b1\u00a01.0</td>\n      <td>73</td>\n      <td>14</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Lesion*</td>\n      <td>17.6\u00a0\u00b1\u00a02.1</td>\n      <td>16.4\u00a0\u00b1\u00a01.4</td>\n      <td>58</td>\n      <td>24</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Mismatched*</td>\n      <td>19.0\u00a0\u00b1\u00a01.4</td>\n      <td>17.5\u00a0\u00b1\u00a00.5</td>\n      <td>64</td>\n      <td>23</td>\n      <td>13</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Lesion DNA: N2-furfuryl-dG, mismatched DNA: G-T.\u2020Polymerase exchange on observed on clamp-DNA showing the exchange from Pol IIIcore to Pol IV (III\u2192IV), Pol IV to Pol IIIcore (IV\u2192III), or co-localization of Pol IIIcore and Pol IV (III\u00a0+\u00a0IV). Exchange rates measured in the absence of nucleotides_\n\n## Discussion\n\nIn this work we use co-localization single molecule studies to show that the replication proteins of the clamp loader, clamp, and Pol IIIcore are a highly organized in their sequential actions, ensuring that DNA replication occurs in an efficient manner (Figure 5). In contrast, the translesion polymerases appear to gain access to the DNA in a more stochastic, concentration dependent manner. This implies that the cell needs a mechanism in order to tune the outcome of this competition towards the replicative polymerases during normal DNA synthesis and the translesion polymerases in the presence of DNA damage. Indeed, during DNA synthesis, two or three Pol IIIcores are tethered to the replisome (McInerney et al., 2007; Reyes-Lamothe et al., 2010), increasing the effective concentration of the replicative polymerase at the replication fork. Importantly, the Pol IIIcores are directly tethered to the clamp loader via the flexible linker of the clamp loader protein \u03c4 (Dallmann et al., 2000; Gao and McHenry, 2001), which ensures that as soon as a clamp is loaded, a Pol IIIcore will associate with the clamp (see Figure 3H\u2013J). Secondly, during the SOS-response, a bacterial reaction to DNA damage, the cellular levels of the translesion DNA polymerases Pol II, Pol IV, and Pol V are increased (Bonner et al., 1988; Woodgate and Ennis, 1991; Kim et al., 2001), thus shifting the equilibrium of the polymerase competition in favor the translesion polymerases. Furthermore, it has been proposed that the recombinase RecA may favor the translesion polymerases by having opposing effects on the Pol III and translesion replisomes, albeit by a yet unknown mechanism (Indiani et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32177/elife-32177-fig5-v4.jpg)\n\n**Figure 5.:** The DNA replication cycle consists of a sequence of carefully arranged steps of clamp loading, polymerase loading, DNA synthesis, polymerase release, and clamp unloading. In contrast, translesion DNA synthesis over DNA adducts shows no coordinated sequence of events, but is instead a direct competition between the replicative DNA polymerase Pol IIIcore, and the translesion DNA polymerases Pol II and Pol IV. DNA replication will resume once the lesion has been bypassed by one of the translesion DNA polymerases.\n\nSuch a concentration-dependent exchange between the replicative and translesion polymerases is consistent with the discontinuous DNA synthesis by isolated Pol IIIcore (Jergic et al., 2013; Tanner et al., 2008), showing that individual Pol IIIcores can exchange. Recent studies (Lewis et al., 2017; Beattie et al., 2017) have also shown that in the context of the intact replisome, Pol IIIcore exchanges in a concentration-dependent manner during processive DNA replication. Taken together, these studies demonstrate that E. coli DNA synthesis is highly dynamic and utilizes a concentration-dependent mechanism to achieve a fine balance between stability and flexibility where the exchange of factors is determined by their availability.\n\nInterestingly, in higher eukaryotes the access of the eukaryotic translesion polymerases to DNA shows a higher degree of coordination through ubiquitination of PCNA and the translesion polymerases (Chun and Jin, 2010), as well as formation of polymerase bridges through Rev1 (Pustovalova et al., 2016; Sale, 2013). However, given that there are up to 15 DNA polymerases to coordinate in eukaryotes (Plosky and Woodgate, 2004), the ubiquitination of PCNA and the interactions between the polymerases may not be sufficient to coordinate the specific recruitment of individual translesion polymerases, implying that in eukaryotes too, the translesion process may occur at least in part by a concentration-dependent mechanism, which is supported by studies showing that the intracellular levels of several human translesion polymerases (Pol \u03b7, Pol \u03ba, and Pol \u03b9) are increased upon DNA damage (Zhu et al., 2010; Zhu et al., 2012; Tomicic et al., 2014).\n\n## Materials and methods\n\n### Materials\n\nAll chemicals were purchased from Sigma-Aldrich\u00a0(Gillingham, United Kingdom), unless stated otherwise. All chromatography columns were purchased from GE healthcare (Little Chalfont, United Kingdom) .\n\n### Cloning of protein expression vectors\n\nGenes for E. coli \u03b2 (dnaN), \u03b5 (dnaQ), \u03b8 (holE), \u03b3 (dnaX) and Bacillus subtilis Sfp phosphopantetheinyl transferase were cloned into pET28a vectors, and genes for \u03b4 (holA) and single cysteine \u03b4' (holB) K83C/C217S/C294S(Goedken et al., 2004) were cloned into pET3d vectors. The sequence for Pol I (polA) Klenow fragment (residues 324\u2013928) was cloned into a pETNKI-His-3C-LIC (Luna-Vargas et al., 2011) vector. For labeling purposes the Ybbr sequence DSLEFIASKLA (Yin et al., 2005) was added N-terminally to the following proteins during cloning into their respective vectors: Pol III\u03b1 (dnaE) was cloned into a pETNKI-His-3C-LIC vector, Pol II (polB) and Pol IV (dinB) were cloned into pET11 vectors, and the gene for \u03b5 (dnaQ) was cloned into a pET28a vector. The plasmids for streptavidin 'alive' (biotin-binding) and streptavidin 'dead' (not biotin-binding) (Howarth et al., 2006) were generous gifts from M. Howarth (Univ. of Oxford).\n\nClamp binding mutants of \u03b5, Pol IV, and Pol II were generated through site directed mutagenesis. The following sequences were changed: \u03b5 (\u03b2-) residues 182\u2013187: QTSMAF to QTSAAA, \u03b5 (\u03b2+) residues 182\u2013187: QTSMAF to QTSLPL, Pol IV (\u03b2 groove) residues 346\u2013351: QLVLGL to QLVAGA, Pol IV (\u03b2 rim) residues 303\u2013305 VWP to AGA, Pol II (\u03b2 groove), residues 779\u2013783: QLGLF to QLGAA.\n\n### Protein purification\n\nUnless otherwise stated, protein purifications were performed with the following gradients: nickel affinity (25\u2013500 mM Imidazole gradient in the presence of 500 mM NaCl), ion exchange (0\u20131 M NaCl gradient), hydrophobic interaction chromatography (2\u20130 M ammonium sulfate gradient) and gel filtration (150 mM NaCl). Pol III\u03b1-NYbbr was purified in 20 mM Hepes pH 7.5 and 2 mM DTT by nickel affinity, ion exchange and gel filtration. Pol I Klenow fragment was purified in 20 mM Tris pH 8.0 and 2 mM DTT by nickel affinity, anion exchange, hydrophobic interaction chromatography and and gel filtration. Pol IV-NYbbr was purified in 20 mM Hepes pH 7.5 and 2 mM DTT by ion exchange, hydrophobic chromatography and gel filtration. Pol II-NYbbr was purified in 20 mM Tris pH 8.0, 0.5 mM EDTA and 2 mM DTT by two steps of ion exchange separated by a step of hydrophobic chromatography, followed by gel filtration. \u03b5-NYbbr was purified in 25 mM Hepes pH 8.2 and 2 mM DTT by nickel affinity under denaturing conditions (in the presence of 6 M Urea), followed by refolding overnight at 4\u00b0C in 25 mM Hepes pH 8.2 and 10 mM DTT and ion exchange. \u03b2, \u03b5, \u03b8 and Sfp were purified in 20 mM Hepes pH 7.5 and 2 mM DTT by nickel affinity, ion exchange and gel filtration. \u03b4 and \u03b4' K83C/C217S/C294S were purified in 50 mM Hepes pH 7.5, 0.1 mM EDTA and 2 mM DTT by hydrophobic chromatography and ion exchange, and \u03b3/\u03c4 was purified in the same buffer by nickel affinity chromatography. The \u03b33\u03b41\u03b4'1 and \u03c43\u03b41\u03b4'1 complexes were assembled at a 1:2:1 ratio of \u03b3/\u03c4:\u03b4:\u03b4' and separated by ion exchange. To fully occupy all Pol IIIcore binding site, a 5-fold excess of Pol IIIcore was added to the \u03c43\u03b41\u03b4'1 complex, and then purified by gel filtration. Streptavidin alive and dead were purified and prepared as described (Howarth et al., 2006).\n\n### Protein labeling\n\nPol III\u03b1, Pol IV, Pol II and \u03b5 exonuclease subunit were enzymatically labeled by Sfp, which conjugates CoA-linked Atto dyes to their N-terminal Ybbr tags (Yin et al., 2006). The labeled proteins were Pol III\u03b1-Atto 488, Pol IV-Atto 565, Pol II-Atto 647N, and \u03b5-Atto 565. The \u03b2 clamp and Pol I Klenow fragment were labeled on a single cysteine residue with maleimide-Atto647N. The \u03b3-complex (\u03b4\u03b33\u03b4') was labeled at the \u03b4' subunit with the mutations K83C/C217S/C294S (Goedken et al., 2004) with maleimide-Atto 565 before complex assembly. All labeled proteins were purified away from the free dye by gel filtration. The labeling efficiencies of the proteins were determined using the protein and fluorophore absorption ratios, with the free fluorophore absorption at 280 nm subtracted from the protein absorption at 280 nm. The labeling efficiency was 85% for the \u03b3- and \u03c4-complexes, 68% for the \u03b2 clamp monomer, 100% for Pol I Klenow fragment, 60% for Pol III\u03b1, 78% for \u03b5, 62% for Pol IV and 66% for Pol II. In addition, the labeling efficiencies for Pol III\u03b1 and \u03b5 were verified at the single molecule level by measuring the co-localization frequencies between Pol III\u03b1 and \u03b5 on clamp-DNA, where each co-localization event was scored as having labeled Pol III\u03b1 only, labeled \u03b5 only, or both labeled proteins. This way, the labeling efficiencies were 67% for Pol III\u03b1 and 71% for \u03b5, which are similar to the efficiencies measured by absorption.\n\n### \u03c6X174 primer extension assays\n\nProtein activity was tested using single stranded \u03d5X174 phage DNA (New England Biolabs, Hitchin, United Kingdom), primed with a 5' fluorescein labeled primer (sequence: 5' FAM-ACCAACATAAACATTATTGCCCGGCGTACpG, where lowercase 'p' indicates the non-cleavable phosphothioate bond). Reactions were performed in 20 mM Tris pH 7.5, 2 mM DTT, 50 mM potassium glutamate, 8 mM magnesium acetate, and 0,05 mg/ml BSA. Each reaction contained 5 nM primed \u03d5X174 phage DNA, 50 nM \u03b2 clamp, 10 nM \u03b3 clamp loader complex (\u03b33\u03b41\u03b4'1), and 30 nM polymerase (Pol IIIcore, Pol II, or Pol IV). Reactions were quenched at 0, 0.5, 1, 2 and 5 min with 75 mM EDTA and 0.6% (W/V) SDS and stored on ice before separated on a alkaline agarose gel (0.8% agarose, 30 mM NaOH, 2 mM EDTA) for 15 hr at 14 V. Gels were scanned at 488 nM using a Amersham Typhoon (GE Healthcare)\n\n### DNA substrates\n\nAll DNA oligos were ordered from IDT\u00a0(Leuven,\u00a0Belgium), with the exception of the furfuryl-modified oligo that was purchased from Eurogentec\u00a0(Seraing,\u00a0Belgium). The following DNA substrates were used. A 33-nt template DNA: 5' Bio-CATAATATCCATGCTTCACC[amino-dT]TCATCCAAATCC for the matched and mismatched substrates or 5' Bio-CATAA[N2-furfuryl-dG]ATCCATGCTTCACC[amino-dT]TCATCCAAATCC for the lesion substrate. A 27-nt primer DNA: 5' Bio-GGATTTGGATGAAGGTGAAGCATGGApT for the matched and lesion substrates (where lowercase 'p' indicates the non-cleavable phosphothioate bond) or a 25-nt 5' Bio-GGATTTGGATGAAGGTGAAGCATGpT for the mismatched substrate. The template DNA was labeled on the internal amino-modified thymine with NHS-Atto 488 and purified away from the free dye by gel filtration. The labeled template DNA was subsequently bound to monovalent streptavidin and purified by gel filtration, before annealing to the primer DNA and binding to the glass cover slip for imaging. See Figure 1A for cartoon representation of final DNA substrate.\n\n### Preparation of slides\n\nGlass slides and cover slips were washed in 3 M NaOH and Piranha solution (3:2 concentrated sulfuric acid: 30% hydrogen peroxide) and then silanized and pegylated essentially as described in (Ha et al., 2002). The imaging chamber (15 \u03bcL) was assembled by creating a sandwich between the cover slip and glass slide using double adhesive tape, and it was further passivated using 4 mg/ml PLL-PEG (SuSoS,\u00a0D\u00fcbendorf,\u00a0Switzerland), 1% (W/V) pluronic F127 (Sigma) and 10 mg/ml BSA (New England Biolabs). Streptavidin (1 mg/ml) (New England Biolabs) was added last to bind the biotin-DNA.\n\n### CoSMoS microscopy\n\nAll single-molecule measurements were performed at 23 (\u00b11) \u00b0C in 20 mM Tris-HCl pH 7.5, 50 mM potassium glutamate, 8 mM MgCl2, 4% glycerol, 2 mM DTT, 0.1%\u00a0Tween20 and 1 mM Trolox. The protein concentrations used were: 15 nM \u03b22 clamp; 15 nM \u03b33\u03b41\u03b4'1 complex; 30 nM or 150 nM Pol IIIcore; 6 nM, 30 nM, or 150 nM Pol IV; and 30 nM Pol II. Movies were acquired using Micromanager software on a Nikon (Kingston Upon Thames, United Kingdom) Eclipse Ti-E microscope with ApoTirf 100X/1.49 Oil, 0.13\u20130.20 WD 0.12 objective. The lasers used were 150 mW 488 nm, 150 mW 561 nm (both Coherent Sapphire Ely, United Kingdom) and 100 mW 638 nm (Coherent Cube) controlled by an acousto-optic tunable filter (Gooch and Housego, Ilminster, United Kingdom). Movies were acquired on an Andor (Belfast, United Kingdom) iXon (EM)\u00a0+\u00a0CCD camera at 20\u201340 mW laser power and an exposure of 50 millisecond (ms) per frame for a thousand frames with rapid alternation between the three laser channels (180 ms/change). Thus the frame rate is 660 ms for a 3-color experiment, 440 ms for a 2-color experiment, and 86 ms for a single color experiment (as there is no need to change the laser channels). The total duration of the movies for a 3-color experiment was 650\u2013670 s, which gives an acquisition rate of 220 milliseconds per frame when the lag in the filter wheel was taken into consideration. Each field of view (54 \u03bcm\u00a0\u00d7\u00a054 \u03bcm, pixel size 105\u00a0\u00d7\u00a0105 nm) had an average density of 5900 DNA molecules of which 700\u2013900 molecules were well separated and picked for analysis. The DNA-Atto 488 signal was bleached in order for this channel to be re-used for Pol III\u03b1-Atto 488.\n\n### Data analysis\n\nThe acquired movies were fed into the Imscroll analysis GUI developed by Jeff Gelles and Larry Friedman (Friedman and Gelles, 2015) to find the individual landing events and their dwell times. Histograms were plotted in Igor Pro and the data was fitted with an one-parameter exponential using a bin size\u00a0~1/2 the lifetime of the molecule. The decay constant \u03c4 represents the mean dwell time and the error in \u03c4 represents the error in the mean dwell time.\n",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "191d4a82-f1e5-4c8f-94f5-39ddabc2f36d",
+      "submission_id": "9a05d422-eaeb-493a-a375-a6f5a989ad22",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32177.019](https://doi.org/10.7554/eLife.32177.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Single-molecule studies contrast ordered DNA replication with chaotic translesion synthesis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers agreed that your approach is novel and the messages touch about timely topics of broad interest. However, three major issues were raised. (1) Controls showing that the labeled components are functional in DNA synthesis are missing. (2) Bolstering their claims by adding much more data and analysis, instead of just showing one or few example time traces, is also a must. (3) Many more additional experiments are needed, for example including clamp loader that bridges pol III and clamp, and measurements that demonstrate the necessity of clamp interaction.\n\nYour paper is being rejected because we do not feel that you would be able to perform all requested additional experiments (most critically point 3 above) that the reviewers found essential in two months, which is the time scale of additional work that eLife considers reasonable. However, if you are able to perform key experiments requested, I will be happy to consult the same reviewers with the new submission.\n\nReviewer #1:\n\nZhao et al. investigate the binding of E. coli DNA polymerases to the sliding clamp using single-molecule co-localization microscopy. The authors argue that replicative and translesion polymerase do not simultaneously interact with the clamp (toolbelt model), but exchange on the clamp in a concentration-dependent manner. This manuscript addresses a critical question in the field, albeit with a rather limited scope. Most importantly, clamp loader (with and without \u03c4) is omitted from the polymerase co-localization experiments. \u03a4 bridges clamp and polIII, and may further stabilize the \"dual-polymerase\" clamp complex in vivo. This will be a critical addition to the manuscript. Second, there are no biochemical controls indicating activity of fluorescently tagged enzymes. Statistical analysis is also lacking and in a few cases the key results are argued based on a single CosMoS trace. Overall, the manuscript feels more like the start of an interesting paper than a significant contribution to the field. I recommend that the authors make the following major edits to be considered for publication in eLife.\n\n1) Include biochemical controls to confirm that clamp loader and polymerases are not perturbed by the fluorescent tag.\n\n2) Include experiments with clamp loader, pol III and pol IV. Compare clamp loader with and without \u03c4. Are more \"dual polymerase\" species seen with \u03c4? There is growing evidence for multi-\u03c4 clamp loaders in vivo (from Sherratt lab and others).\n\n3) Figure 1C: Clamp on-rates (~0.6 s) are limited by the experimental resolution (0.6 s / frame). The underlying rates may be significantly faster; the authors may be measuring slow events. Time resolution needs to be increased to make any claims here.\n\n4) Once a clamp is loaded, clamp loader can catalyze unloading (e.g., Figure 1G,J). Does every clamp loader binding event result in clamp unloading (as suggested in Figures 1G,J)? Clamp unloading probabilities should be characterized and reported. If unloading is rare, more representative traces shown in Figure 1.\n\n5) In the experiments detailing matched, mismatched, and lesion template, the authors investigate the lifetime without dNTPs and with dCTP/dGTP. If I understood the oligo table correctly, the next nucleotide to be incorporated is dATP or dTTP. Including these nucleotides may show changes in how the polymerase interacts with the templates.\n\n6) Do changes in competing polymerase (Pol II or Pol IV) concentration affect the lifetime of Pol III core on the clamp? This has been suggested previously (PMCID: PMC4040570).\n\n7) Does an increase in polymerase concentration increase the co-association of Pol III core and Pol IV?\n\n8) What are the relevant concentrations of these polymerases in cells before and after SOS induction? These concentration ranges (or at least the relative polymerase ratios) should be investigated here.\n\n9) A separation-of-function Pol III mutant that lacks interaction with the clamp will be useful to confirm that specific interactions are responsible for the increase in lifetime.\n\n10) Controls with weakened clamp-pol IV interactions will also confirm the observed lifetimes and polymerase exchange dynamics (e.g., PMCID: PMC4040570).\n\n11) Authors make a sweeping claim that all three polymerases \"compete equally\" for the clamp based on a single trace (Figure 3G). This is a shaky and unclear claim. Elaborate with more statistical analysis, and with wt and mutant proteins that weaken interactions.\n\nReviewer #2:\n\nThis paper uses co-localization microscopy with labeled DNA polymerases to determine the sequence of events of the binding of components of the replisome and different DNA polymerases to DNA. Clamp loading and unloading was observed, as well as association times of pol IIIcore and pol IV or pol II, which supports a model of stochastic binding of pol IV or pol II compared to a more ordered assembly of pol III components.\n\nA major question is: are the tagged DNA polymerases active? The clamp loader and clamp clearly are competent for loading, but polymerization activity (and proofreading) by the tagged polymerases should be demonstrated.\n\n\"The shorter lifetimes recorded for the clamp are not caused by early release [\u2026] are instead due to the late loading of the clamps during the course of the experiment.\" Is this because this is observed near the end of the acquisition time? This should be explained.\n\nFigure 2, were these experiments carried out with labeled \u03b1 or labeled \u03b5 subunit? This question holds in every instance that specifies only \"pol III core\".\n\nSubsection \u201cPol IIIcore has an intrinsic lifetime on DNA that is independent of its activity\u201d, last paragraph and Table 1, what is the concentration of dGTP and dCTP used in these experiments?\n\n\"Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA [\u2026] and there is a significant time lag between the release of Pol IIIcore and Pol IV arrival\" However, it appears that sometimes Pol IIIcore and Pol IV do stably associate on the clamp (Figure 3C shows a significant amount of time in which the two pols are co-localized). And, top \"rare co-localization events.\" How rare are these? Table 1 shows this to be 13-18% of total events, but what about the time of co-localization? It would seem prudent to include the co-localized times in the analysis as well and present those results here. In the representative trace shown, the co-localized time appears to exceed most of the association lifetimes of either polymerase alone on DNA. It would be of interest to conduct this experiment without \u03b2 clamp. Also, does the percentage of co-localization change with nucleotides?\n\nSubsection \u201cProtein purification\u201d, more information and/or references should be given describing the protein purification, including buffer compositions.\n\nSubsection \u201cCoSMoS microscopy\u201d, the 488 label on DNA was photobleached before imaging pol IIIcore-\u03b1-488. What controls were done to ensure the photobleaching doesn't damage the DNA?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Single-molecule studies contrast ordered DNA replication with chaotic translesion synthesis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Marletta as the Senior Editor. The reviewers have opted to remain anonymous.\n\nYour revised manuscript has been seen by the original reviewers. They generally agreed that the manuscript has improved significantly but made several important suggestions that should be helpful in improving rigor and clarity. Please revise your manuscript accordingly. No new experiments are required.\n\nReviewer #2:\n\nThis version of the manuscript is improved, but there are still some areas to address.\n\nIn the response, the authors state that the only report of polymerase concentrations in E. coli is Sutton 2009 BBA, which is a review article. This paper cites four other primary research articles, where the levels of polymerases are actually measured. I understand the desire to keep papers a reasonable length, and so cite a review when appropriate, but it is just not true that Sutton 2009 is the only report of polymerase levels. In addition, if one reads this paper and the cited references, it becomes clear that the levels of pol IV are well above those of pol III even without SOS induction, and therefore statements about \"low intracellular levels\" of pol IV under \"normal\" (non-SOS induced?) conditions (Discussion, first paragraph) need to be revisited.\n\nIn the first paragraph of the Introduction: \"When the errors occur on the template DNA strand, in the form of DNA lesions [\u2026]\" is misleading. DNA lesions that arise from chemicals, etc., are not replication errors. The wording should be revised.\n\nIn the Introduction, studies supporting the toolbelt model \"all [\u2026] use bulk studies that due to the asynchronous nature cannot separate out the sequential steps.\" While this statement is true, it seems to ignore the fact that steady-state FRET experiments support the idea that two pols can bind \u03b2 simultaneously (Indiani 2005 Mol Cell).\n\nIn the last paragraph of the Discussion, ordered vs. stochastic, the manuscript doesn't seem to be entirely convincing on this point. The exchange between two different pol III cores (two different labels) should be examined as a direct comparison to the other two-polymerase experiments. Either the experiments can be conducted to or it would be sufficient to revise the discussion, the general interpretation of experiments, and to change the title of manuscript.\n\nTables 1 and 2 are confusing. Why is pol II in Table 1? In Table 2, it is not clear what is being compared in each case. The last column gives co-localization, and the heading is \"III+IV/II\"; which is reported in the values for pol III (first 4 entries), pol II or pol IV?\n",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd51e8b4-21c7-422b-87d2-d4f53788b900",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C1",
+      "claim": "High fidelity replicative DNA polymerases are unable to synthesize past DNA adducts that result from diverse chemicals, reactive oxygen species or UV light.",
+      "claim_type": "EXPLICIT",
+      "source": "High fidelity replicative DNA polymerases are unable to synthesize past DNA adducts that result from diverse chemicals, reactive oxygen species or UV light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the limitations of replicative DNA polymerases when encountering DNA damage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "08c180fe-1a0e-4951-a979-a97184aa72e0",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C2",
+      "claim": "Translesion DNA polymerases are intrinsically error prone and associated with mutagenesis, drug resistance, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "To bypass these replication blocks, cells utilize specialized translesion DNA polymerases that are intrinsically error prone and associated with mutagenesis, drug resistance, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about translesion polymerases cited in the introduction with references to Fuchs and Fujii, 2013; Lange et al., 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "54f2aa80-f6e2-46b6-9aad-8987b66820e1",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C3",
+      "claim": "The replicative and translesion polymerases do not form a stable complex on one clamp but alternate their binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that in contrast to the toolbelt model, the replicative and translesion polymerases do not form a stable complex on one clamp but alternate their binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CoSMoS experiments showing alternating binding patterns between Pol IIIcore and translesion polymerases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "154d856b-149d-4163-ba1e-dd554fc669d3",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C4",
+      "claim": "The loading of clamp and Pol IIIcore is highly organized.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the loading of clamp and Pol IIIcore is highly organized, the exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the CoSMoS experiments showing sequential and organized binding of clamp loader, clamp, and Pol IIIcore.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "03089b91-4bb2-478b-880b-8db3956dc3bf",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C5",
+      "claim": "The exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the loading of clamp and Pol IIIcore is highly organized, the exchange with the translesion polymerases is stochastic and is not determined by lesion-recognition but instead a concentration-dependent competition between the polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from experiments showing that polymerase exchange depends on concentration and is unaffected by DNA lesions or mismatches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "ae850e9d-544a-4024-a11d-a7c3c1c0b515",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C6",
+      "claim": "Replicative DNA polymerases have a narrow active site that limits the incorporation of incorrect nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure faithful replication of the genomic DNA, replicative DNA polymerases have a narrow active site that limits the incorporation of incorrect nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structural basis for replicative polymerase fidelity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "70ba65a4-3de5-45a6-98e5-4be6b2f02b3e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C7",
+      "claim": "Rare nucleotide mis-incorporations into the primer strand prevent further DNA synthesis and a 3'\u22125' exonuclease is required to remove the misincorporated nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, rare nucleotide mis-incorporations into the primer strand prevent further DNA synthesis and a 3'\u22125' exonuclease is required to remove the misincorporated nucleotides (Kunkel, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA polymerase proofreading mechanisms, supported by citation to Kunkel, 2004.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "9172fca0-2c51-4197-be53-3d0a45c8332d",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C8",
+      "claim": "Translesion DNA polymerases have more open active sites and are therefore able to accommodate bulky DNA adducts and continue DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To bypass these replication blocks, all cells harbor multiple specialized translesion DNA polymerases (Goodman and Woodgate, 2013) that have more open active sites and are therefore able to accommodate bulky DNA adducts and continue DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about translesion polymerase structure and function, supported by citation to Goodman and Woodgate, 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "28e21dd6-cb99-42ab-b696-36a5f567c4c4",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C9",
+      "claim": "The toolbelt model predicts that in E. coli the replicative DNA polymerase Pol III\u03b1 and the translesion DNA polymerase Pol IV bind simultaneously to the DNA sliding clamp \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'toolbelt' model (Indiani et al., 2005) predicts that in E. coli the replicative DNA polymerase Pol III\u03b1 and the translesion DNA polymerase Pol IV bind simultaneously to the DNA sliding clamp \u03b2, a dimeric, ring-shaped protein that encircles the DNA and provides processivity to the replicative DNA polymerases (Johnson and O'Donnell, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model from the literature, supported by citations to Indiani et al., 2005 and Johnson and O'Donnell, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "9a763a8e-603d-4fb7-a1a3-8b116c22abc9",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C10",
+      "claim": "The toolbelt model was originally based on steady-state F\u00f6rster Energy Resonance Transfer (FRET) experiments that showed the simultaneous binding of the replicative and translesion polymerases to the \u03b2-clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "The toolbelt model, which was originally based on steady-state F\u00f6rster Energy Resonance Transfer (FRET) experiments that showed the simultaneous binding of the replicative and translesion polymerases to the \u03b2-clamp, has found support in several subsequent studies (Indiani et al., 2009; Furukohri et al., 2008; Heltzel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental basis for the toolbelt model from the literature, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "e978b947-1386-41ef-9fd8-acd21102748a",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C11",
+      "claim": "Bulk studies cannot separate out the sequential steps during a reaction due to their asynchronous nature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all these studies used bulk studies that due to the asynchronous nature cannot separate out the sequential steps during a reaction (Robinson and van Oijen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation of bulk studies, supported by citation to Robinson and van Oijen, 2013.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "7a01ad00-866b-4387-86ee-1b217a8c7115",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C12",
+      "claim": "During DNA replication in E. coli the two binding pockets of the dimeric \u03b2-clamp are occupied by the replicative DNA polymerase Pol III\u03b1 and the associated proofreading exonuclease \u03b5.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent studies reveal that during DNA replication in E. coli the two binding pockets of the dimeric \u03b2-clamp are occupied by the replicative DNA polymerase Pol III\u03b1 and the associated proofreading exonuclease \u03b5 (Toste R\u00eago et al., 2013; Jergic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from recent structural studies, supported by citations to Toste R\u00eago et al., 2013 and Jergic et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "181dc9e6-247c-4fb8-8233-3dc316855787",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C13",
+      "claim": "The cryo-EM structure of the trimeric Pol III-exonuclease-clamp (\u03b1, \u03b5, \u03b2) complex shows that most of the clamp is covered, leaving no space for a second polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structure of the trimeric Pol III-exonuclease-clamp (\u03b1, \u03b5, \u03b2) complex (Fernandez-Leiro et al., 2015) also shows that most of the clamp is covered, leaving no space for a second polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is structural evidence from cryo-EM studies, supported by citation to Fernandez-Leiro et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "117318ec-31d9-4c11-bdc4-6b6a01bff9e7",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C14",
+      "claim": "The bypass of a N2-acetylaminofluorene guanine adduct by Pol V or Pol II depends on the relative concentrations of the two polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, an alternative view to the toolbelt model is that the translesion DNA polymerases compete for binding to clamp-DNA through 'mass action', as evidenced by the fact that the bypass of a N2-acetylaminofluorene guanine adduct by Pol V or Pol II depends on the relative concentrations of the two polymerases (Becherel and Fuchs, 2001; Fujii and Fuchs, 2004), and that the concentrations of Pol IV and Pol V are dramatically increased during the bacterial SOS DNA damage response (Sutton, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is evidence from the literature supporting the mass action model, with citations to Becherel and Fuchs, 2001 and Fujii and Fuchs, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "b65a1ba9-94c7-45b1-a3c8-3c751abf11ca",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C15",
+      "claim": "The concentrations of Pol IV and Pol V are dramatically increased during the bacterial SOS DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, an alternative view to the toolbelt model is that the translesion DNA polymerases compete for binding to clamp-DNA through 'mass action', as evidenced by the fact that the bypass of a N2-acetylaminofluorene guanine adduct by Pol V or Pol II depends on the relative concentrations of the two polymerases (Becherel and Fuchs, 2001; Fujii and Fuchs, 2004), and that the concentrations of Pol IV and Pol V are dramatically increased during the bacterial SOS DNA damage response (Sutton, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the SOS response, supported by citation to Sutton, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "aca98a27-48b4-4642-b16d-35cbb2a0fdff",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C16",
+      "claim": "On the lagging strand, DNA synthesis is discontinuous and every ~1000 base pairs a new clamp is loaded, followed by the binding of the replicative DNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the control for access to the clamp-DNA is complicated by the fact that on the lagging strand, DNA synthesis is discontinuous and every ~1000 base pairs a new clamp is loaded, followed by the binding of the replicative DNA polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lagging strand DNA replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "2569a105-eeb8-4376-ad5f-70692b1e28fd",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C17",
+      "claim": "The clamp must be loaded and unloaded onto the DNA by the dedicated clamp loader complex due to its closed circular shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its closed circular shape, the clamp must be loaded and unloaded onto the DNA by the dedicated clamp loader complex (\u03b3/\u03c4-complex in bacteria, RFC in archaea and eukaryotes) (Hedglin et al., 2013; Kelch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about clamp loading mechanisms, supported by citations to Hedglin et al., 2013 and Kelch et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "2483db5f-0e44-4da6-9b09-c17d63eb0ce6",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C18",
+      "claim": "The isolated \u03b2-clamp shows no interaction with the end-blocked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated \u03b2-clamp shows no interaction with the end-blocked DNA (Figure 2\u2014figure supplement 1A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule observations shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "62333fc9-f7de-4445-8651-e3811feb4b31",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C19",
+      "claim": "The loader and clamp bind DNA as a pre-formed complex.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with the \u03b3 clamp loader complex (\u03b33\u03b41\u03b4'1), frequent clamp loading events are observed where the loader and clamp arrive at the DNA simultaneously or in two adjacent frames (Figure 2A\u2013B), due to the sequential data acquisition of the three laser channels (further explained in Figure 2\u2014figure supplement 1C\u2013E). Therefore, the loader and clamp bind DNA as a pre-formed complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from experimental data showing simultaneous arrival of loader and clamp, as shown in Figure 2A\u2013B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "511e2efe-8145-4120-8160-ece70747fa10",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C20",
+      "claim": "The clamps remain bound for more than 23 min (\u03c4on = 1429.7 \u00b1 177.0 s).",
+      "claim_type": "EXPLICIT",
+      "source": "The clamps remain bound for more than 23 min (\u03c4on = 1429.7 \u00b1 177.0 s; Figure 2C), excluding the time it takes to load the clamps, wash away the loader, and start data collection (~3 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a89ba419-a284-4920-94b1-e003ac04d3ba",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C21",
+      "claim": "The lifetime of the isolated loader on DNA is 1.20 \u00b1 0.05 s, which is shortened to 0.41 \u00b1 0.01 s in the presence of the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of the isolated loader on DNA is 1.20 \u00b1 0.05 s, which is shortened to 0.41 \u00b1 0.01 s in the presence of the clamp (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "07a39d54-bf2e-41d6-ae79-da887516699e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C22",
+      "claim": "In the presence of the poorly hydrolysable analog ATP\u03b3S, the loader and clamp still bind to the DNA together but also release together.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid release of the loader from clamp-DNA is dependent on ATP hydrolysis as evidenced by the fact that in the presence of the poorly hydrolysable analog ATP\u03b3S, the loader and clamp still bind to the DNA together but also release together (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with ATP\u03b3S shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "56ab94aa-d7c3-4765-aeba-54ff4928379d",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C23",
+      "claim": "The loader and clamp bind to the DNA briefly (\u03c4on = 2.7 \u00b1 0.2 s) in the presence of ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "The loader and clamp bind to the DNA briefly (\u03c4on = 2.7 \u00b1 0.2 s; Figure 2F), which contrasts with the long lifetimes for the loaded clamps on DNA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with ATP\u03b3S shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8e2b30bf-ca78-4a64-a7c5-a056d140c6dd",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C24",
+      "claim": "The clamp holds the loader in a conformation that suppresses ATPase activity and subsequent DNA binding triggers ATP hydrolysis and the release of the loader from clamp and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our analysis is in agreement with the model that the clamp holds the loader in a conformation that suppresses ATPase activity and subsequent DNA binding triggers ATP hydrolysis and the release of the loader from clamp and DNA (Hedglin et al., 2013; Kelch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data that agrees with models from the literature, supported by citations to Hedglin et al., 2013 and Kelch et al., 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "af48cf18-fd19-4dda-9616-20c466c5f75f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C25",
+      "claim": "The loader arrives at the loaded clamp, releases the clamp within 4.1 \u00b1 0.4 s of its arrival but remains bound for a total time of 10.8 \u00b1 1.2 s during unloading events.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a different temporal organization for unloading events compared to the loading events: the loader arrives at the loaded clamp, releases the clamp within 4.1 \u00b1 0.4 s of its arrival but remains bound for a total time of 10.8 \u00b1 1.2 s (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements of clamp unloading shown in Figure 2G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "4771648a-60f2-45ef-8928-703cc631acbb",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C26",
+      "claim": "The unloading of a clamp does not require ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, unlike clamp loading, the unloading of a clamp does not require ATP hydrolysis: the nucleotide requirement of the unloading process was tested by first loading clamps onto DNA and then washing away the ATP and free proteins. Next, the loader was re-introduced in the absence of ATP, resulting in many unloading events with similar kinetics to those observed in the presence of ATP (Figure 2J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements of clamp unloading in the absence of ATP shown in Figure 2J\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "2f7bc7b6-72c9-4cff-ae2c-a039d9d5792b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C27",
+      "claim": "About half (53%) of the binding events of the loader to the pre-loaded clamp do not result in unloading of the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "About half (53%) of the binding events of the loader to the pre-loaded clamp do not result in unloading of the clamp. These events last shorter (\u03c4on = 2.5 \u00b1 0.1 s) than the unloading events (\u03c4on = 10.8 \u00b1 1.2 s) (Figure 2\u2014figure supplement 1F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 2\u2014figure supplement 1F\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8fcce321-99c0-4452-8aaf-ec20a758f923",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C28",
+      "claim": "The loading and unloading of a clamp are not forward and backward reactions of the same mechanism but are separate processes, each with a distinct organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data indicates that the loading and unloading of a clamp are not forward and backward reactions of the same mechanism but that they are separate processes, each with a distinct organization, possibly to prevent unwanted clamp unloading at the replication fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data showing different kinetics and ATP requirements for loading versus unloading.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "fb660094-25c0-45d3-8548-5dc1c78a36bb",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C29",
+      "claim": "Pol IIIcore alone binds DNA very briefly for one image frame (0.086 s) or less, resembling more a collisions-like interaction rather than true binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a single fluorescent channel, we find that Pol IIIcore alone binds DNA very briefly for one image frame (0.086 s) or less, resembling more a collisions-like interaction rather than true binding events (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 3A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "1bf4a47b-f94c-4ec8-9c9b-d1df4ec65f1f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C30",
+      "claim": "Pol III\u03b1 is a poor enzyme in isolation that has a low affinity for DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These short-lived collisions are in agreement with previous studies that show that Pol III\u03b1 is a poor enzyme in isolation (Fay et al., 1981) that has a low affinity for DNA (Fernandez-Leiro et al., 2015; McCauley et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Fay et al., 1981; Fernandez-Leiro et al., 2015; and McCauley et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "d8253658-72f2-4ef3-8744-59a5eddb7e66",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C31",
+      "claim": "E. coli DNA polymerase I Klenow fragment has a high affinity for DNA and shows a lifetime of 42.2 \u00b1 1.8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The collisions of Pol IIIcore contrasts with the well-studied E. coli DNA polymerase I Klenow fragment, which is known to have a high affinity for DNA (Kuchta et al., 1987) and consequently shows a lifetime of 42.2 \u00b1 1.8 s (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 3C\u2013D, compared with established knowledge from Kuchta et al., 1987.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "d459515b-6ab5-48d8-b127-557f1471275c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C32",
+      "claim": "Pol IIIcore associates with clamp-DNA shortly after the clamp is loaded, producing long lasting binding events with a lifetime of 15.7 \u00b1 1.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior of Pol IIIcore is dramatically altered in the presence of the clamp. Shortly after the clamp is loaded onto DNA, Pol IIIcore associates with the clamp-DNA, producing long lasting binding events (Figure 3E\u2013G) with a lifetime of 15.7 \u00b1 1.1 s (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 3E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "9365ea94-0df4-4e0f-9d43-83302a2e2f4b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C33",
+      "claim": "The E. coli replisome synthesizes DNA with up to 100,000 base pairs per binding event.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA replication, the E. coli replisome synthesizes DNA with up to 100,000 base pairs per binding event (Yao et al., 2009; Tanner et al., 2009), which contrasts with the relatively short binding times of Pol IIIcore we measure on clamp-DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Yao et al., 2009 and Tanner et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "c37fd47f-dcc3-4068-9510-969c6eada906",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C34",
+      "claim": "Addition of dATP and dTTP (0.5 mM each) has no significant effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on = 16.1 \u00b1 1.0 s).",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise however, addition of dATP and dTTP (0.5 mM each), has no significant effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on = 16.1 \u00b1 1.0 s, Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with nucleotides shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8997b265-a498-43e4-bdb6-82912265907f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C35",
+      "claim": "An actively synthesizing Pol IIIcore has a lifetime of ~10 s in the presence of all four nucleotides on a 48.5 kb \u03bb DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also in agreement with the observation that an actively synthesizing Pol IIIcore has a lifetime of ~10 s in the presence of all four nucleotides on a 48.5 kb \u03bb DNA substrate (Jergic et al., 2013; Tanner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Jergic et al., 2013 and Tanner et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "618fe100-7547-4364-abf7-14a0d476db3b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C36",
+      "claim": "Pol IIIcore has a similar lifetime on clamp-DNA regardless of whether it is stationary, idling or actively synthesizing DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this shows that Pol IIIcore has a similar lifetime on clamp-DNA regardless of whether it is stationary, idling or actively synthesizing DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data showing similar lifetimes under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "450c6af7-9b25-40ce-b1e5-cae0cdac5501",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C37",
+      "claim": "During DNA replication, Pol IIIcore is tethered to the rest of the replisome via the clamp loader protein \u03c4.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA replication, Pol IIIcore is tethered to the rest of the replisome via the clamp loader protein \u03c4 (Studwell-Vaughan and O'Donnell, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citation to Studwell-Vaughan and O'Donnell, 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "895ba709-95d2-413c-8c4a-8dc5d7689d00",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C38",
+      "claim": "With the \u03c4 clamp loader complex, clamp, loader, and Pol IIIcore arrive at the DNA together.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the effect of full length \u03c4 on clamp loading and polymerase loading, we also measured clamp and polymerase loading with the \u03c4 clamp loader complex (\u03c43\u03b41\u03b4'1), in which each of the three \u03c4 proteins had a Pol IIIcore complex bound (see Material and Methods). Here, we find that clamp, loader, and Pol IIIcore arrive at the DNA together (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with the \u03c4 complex shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "aa747315-7498-4ecb-a634-65c56fdf973a",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C39",
+      "claim": "The \u03c4 clamp loader complex does not dissociate immediately but remains bound for ~15 s and leaves together with Pol IIIcore (\u03c4on = 14.8 \u00b1 0.9 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the \u03b3 clamp loader complex, the \u03c4 clamp loader complex does not dissociate immediately, as it remains bound for ~15 s and now leaves together with Pol IIIcore (\u03c4on = 14.8 \u00b1 0.9 s, Figure 3H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with the \u03c4 complex shown in Figure 3H\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "278dc2b1-e379-4573-a52c-b50693f0443f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C40",
+      "claim": "The \u03c4 clamp loader complex and Pol IIIcore trade places on the clamp-DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe this is a result of the \u03c4 clamp loader complex and Pol IIIcore trading places on the clamp-DNA (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data showing coordinated arrival and departure, illustrated in Figure 3J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8899fcdd-60db-4084-b1ca-4732c9f91c16",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C41",
+      "claim": "The presence of \u03c4 does not affect the lifetime of Pol IIIcore on clamp-DNA, as the lifetime of the \u03c4 clamp loader - Pol IIIcore complex is similar to that of Pol IIIcore alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the \u03c4, however, does not affect the lifetime of Pol IIIcore on clamp-DNA, as the lifetime of the \u03c4 clamp loader - Pol IIIcore complex is similar to that of Pol IIIcore alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data comparing lifetimes with and without \u03c4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a6806ca7-49e4-49df-a7cc-f38992ec735e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C42",
+      "claim": "During the simultaneous synthesis of leading and lagging strand, the polymerases on either strand are linked together by the multiple \u03c4 proteins of the clamp loader complex, which prevents the polymerase from diffusing away and enables it to quickly resume DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during the simultaneous synthesis of leading and lagging strand, the polymerases on either strand are linked together by the multiple \u03c4 proteins of the clamp loader complex, which prevents the polymerase from diffusing away and enables it to quickly resume DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional role of \u03c4 in the replisome based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a34168af-c378-4b26-930b-b2f0e0fead9e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C43",
+      "claim": "The tethering of polymerases by \u03c4 may explain the higher processivity measured for the replisome compared to the bursts of activity from a single Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain the higher processivity measured for the replisome (Yao et al., 2009; Tanner et al., 2009) compared to the bursts of activity from a single Pol IIIcore (Jergic et al., 2013; Tanner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the experimental observations to literature data, supported by citations to Yao et al., 2009; Tanner et al., 2009; Jergic et al., 2013; and Tanner et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a6aee303-e28b-4dcd-9a00-bb66b0775c4b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C44",
+      "claim": "At equal concentration of Pol IIIcore and Pol IV (30 nM each), a large majority of events (92%) show alternating binding of the two polymerases on clamp-DNA, with Pol IIIcore binding first in 70%, and Pol IV binding first in 22%, of events.",
+      "claim_type": "EXPLICIT",
+      "source": "At equal concentration of Pol IIIcore and Pol IV (30 nM each), we record a large majority of events (92%) that show alternating binding of the two polymerases on clamp-DNA, with Pol IIIcore binding first in 70%, and Pol IV binding first in 22%, of events (Figure 4A and C, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4A, C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "588cd25e-9116-4e37-bba3-04fe2ad7ac93",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C45",
+      "claim": "The competition between Pol IIIcore and Pol IV is unaffected by addition of nucleotides (dATP/dTTP, 0.5 mM each).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the lifetime of Pol IIIcore alone on clamp-DNA, this competition is unaffected by addition of nucleotides (dATP/dTTP, 0.5 mM each) (Pol IIIcore to Pol IV switch: 72%, Pol IV to Pol IIIcore switch 21%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from single-molecule measurements with nucleotides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "76367162-da3a-447f-8cdb-10bcff02abe7",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C46",
+      "claim": "There is a significant lag time between the release of Pol IIIcore and Pol IV arrival that decreases with increased protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the polymerase switching events, there is a significant lag time between the release of Pol IIIcore and Pol IV arrival that decreases with increased protein concentrations (Table 1, Figure 4\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements at different concentrations shown in Table 1 and Figure 4\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "be417215-4ce7-48a2-b0e2-b569edaedaf2",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C47",
+      "claim": "The lifetime of Pol IIIcore on the clamp-DNA remains unchanged at all protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of Pol IIIcore on the clamp-DNA remains unchanged at all protein concentrations (Table 1, Figure 4\u2014figure supplement 1E\u2013H), suggesting that Pol IV binding does not cause the release of Pol IIIcore and therefore the two polymerases bind independently.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements at different concentrations shown in Table 1 and Figure 4\u2014figure supplement 1E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "37ad0faf-c2fe-427b-9d1a-1247e945757b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C48",
+      "claim": "Pol IV binding does not cause the release of Pol IIIcore and therefore the two polymerases bind independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of Pol IIIcore on the clamp-DNA remains unchanged at all protein concentrations (Table 1, Figure 4\u2014figure supplement 1E\u2013H), suggesting that Pol IV binding does not cause the release of Pol IIIcore and therefore the two polymerases bind independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing constant Pol IIIcore lifetime regardless of Pol IV concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "202f27cf-5c7f-4f85-b5e8-0ca7941dd32c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C49",
+      "claim": "A small number of co-localization events of Pol IIIcore and Pol IV on clamp-DNA (9%) are observed, which become more frequent at higher protein concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the switching events, we also observe a small number of co-localization events of the two polymerases on clamp-DNA (9%), which become more frequent at higher protein concentrations (Figure 4C, Table 1) but are unaffected by addition of nucleotides (7% with dATP/dTTP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f5de912b-a252-4205-8ce2-7ee22735921a",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C50",
+      "claim": "In all events where Pol IIIcore and Pol IV co-localize on the clamp-DNA, the polymerases arrive and leave independently of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In all events where Pol IIIcore and Pol IV co-localize on the clamp-DNA, the polymerases arrive and leave independently of one another (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "fa1a8087-d0f7-4431-bf14-239c7f1d4353",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C51",
+      "claim": "The exonuclease \u03b5 arrives and leaves with Pol III\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This is different from the true binding partner exonuclease \u03b5 that arrives and leaves with Pol III\u03b1 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "bc9aa922-7791-4e50-b45e-62b77dd614ce",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C52",
+      "claim": "The co-localization time of Pol IIIcore and Pol IV (\u03c4colocalize = 8.2 \u00b1 0.6 s) is shorter than that of Pol IIIcore alone (\u03c4on = 15.8 \u00b1 0.9 s).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the co-localization time of Pol IIIcore and Pol IV (\u03c4colocalize = 8.2 \u00b1 0.6, Figure 4E) is shorter than that of Pol IIIcore alone (\u03c4on = 15.8 \u00b1 0.9 s, Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4E and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "4736434a-f717-4ff3-ab1c-7a3ed791206c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C53",
+      "claim": "Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA and the clamp does not function as a molecular toolbelt.",
+      "claim_type": "EXPLICIT",
+      "source": "This therefore shows that Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA and that the clamp does not function as a molecular toolbelt, but that the two polymerases compete for the binding of the clamp-DNA in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data showing independent arrival/departure and concentration-dependent competition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a8f7dfb9-24a6-46b3-b4d4-ddb67b18dee1",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C54",
+      "claim": "The two polymerases compete for the binding of the clamp-DNA in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This therefore shows that Pol IIIcore and Pol IV do not form a stable complex on clamp-DNA and that the clamp does not function as a molecular toolbelt, but that the two polymerases compete for the binding of the clamp-DNA in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data showing concentration-dependent lag times and co-localization frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "e5eab09e-cc1e-4e44-8b72-f279830b71a1",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C55",
+      "claim": "The presence of the \u03c4 clamp loader complex strongly favors competition towards Pol IIIcore as it is directly tethered to Pol IIIcore and ensures that Pol IIIcore is immediately bound upon clamp loading.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition is strongly favored towards Pol IIIcore in the presence of the \u03c4 clamp loader complex (Table 1) as it is directly tethered to Pol IIIcore and ensures that Pol IIIcore is immediately bound upon clamp loading (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Table 1 and Figure 3H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "6f361e29-bbc7-454c-9568-31c00560a656",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C56",
+      "claim": "The presence of the \u03c4 clamp loader complex does not alter the frequency of co-localization between Pol IIIcore and Pol IV.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the \u03c4 clamp loader complex does not alter the frequency of co-localization between Pol IIIcore and Pol IV (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "ce830783-6a44-466c-9667-c85a27247470",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C57",
+      "claim": "During replication, Pol IV may be able to frequently access the clamp-DNA, especially as the estimated cellular concentration of Pol IV is ~10 fold higher than that of Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that during replication, Pol IV may be able to frequently access the clamp-DNA, especially as the estimated cellular concentration of Pol IV is ~10 fold higher than that of Pol IIIcore (Sutton, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations and literature data on cellular concentrations from Sutton, 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "0663c5a3-6f45-439e-a9a0-1b4d58719af7",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C58",
+      "claim": "Pol II competes with Pol IIIcore for access to the clamp but shows no co-localization with Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a second E. coli translesion polymerase, Pol II (Paz-Elizur et al., 1996) also competes with Pol IIIcore for access to the clamp but shows no co-localization with Pol IIIcore (Figure 4H\u2013I, Table 2), possibly because of its large size (90 kDa vs. 40 kDa for Pol IV) that may prevent it from simultaneous binding to the clamp with Pol IIIcore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Figure 4H\u2013I and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "0d01bd4a-f25f-4ab6-be2a-220c64138e05",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C59",
+      "claim": "Pol II's large size (90 kDa vs. 40 kDa for Pol IV) may prevent it from simultaneous binding to the clamp with Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a second E. coli translesion polymerase, Pol II (Paz-Elizur et al., 1996) also competes with Pol IIIcore for access to the clamp but shows no co-localization with Pol IIIcore (Figure 4H\u2013I, Table 2), possibly because of its large size (90 kDa vs. 40 kDa for Pol IV) that may prevent it from simultaneous binding to the clamp with Pol IIIcore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observation of no co-localization and the known size difference between Pol II and Pol IV.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "7f128500-8ae5-4b59-b849-13171382142f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C60",
+      "claim": "Pol IIIcore contains two \u03b2-binding sequences: one in the polymerase subunit \u03b1 (QADMF, residues 920\u2013924) that is absolutely required for clamp binding, and a second sequence in the exonuclease subunit \u03b5 (QTSMAF, residues 182\u2013187) that stabilizes the Pol IIIcore complex and stimulates processive DNA synthesis and exonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pol IIIcore contains two \u03b2-binding sequences: one in the polymerase subunit \u03b1 (QADMF, residues 920\u2013924) that is absolutely required for clamp binding (Dohrmann and McHenry, 2005), and a second sequence in the exonuclease subunit \u03b5 (QTSMAF, residues 182\u2013187) that stabilizes the Pol IIIcore complex and stimulates processive DNA synthesis and exonuclease activity (Toste R\u00eago et al., 2013; Jergic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Dohrmann and McHenry, 2005; Toste R\u00eago et al., 2013; and Jergic et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "39896020-6368-40f0-a272-50483eab4e0c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C61",
+      "claim": "The lifetime of Pol IIIcore is decreased ~2 fold by a weak \u03b2-binding motif in \u03b5 (QTSMAF to QTSAAA), while it is increased ~2 fold by an enhanced \u03b2-binding sequence (QTSMAF to QTSLPL).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the lifetime of Pol IIIcore is decreased ~2 fold by the weak \u03b2-binding motif, while it is increased ~2 fold by the enhanced \u03b2-binding sequence (Table 2, Figure 4\u2014figure supplement 2A\u2013B), showing that Pol III core occupies both binding grooves of the dimeric clamp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with mutant proteins shown in Table 2 and Figure 4\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "5715e35d-710a-4ae1-9f03-90122c6986d1",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C62",
+      "claim": "Pol IIIcore occupies both binding grooves of the dimeric clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the lifetime of Pol IIIcore is decreased ~2 fold by the weak \u03b2-binding motif, while it is increased ~2 fold by the enhanced \u03b2-binding sequence (Table 2, Figure 4\u2014figure supplement 2A\u2013B), showing that Pol III core occupies both binding grooves of the dimeric clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing that both \u03b2-binding motifs in Pol IIIcore contribute to its lifetime on the clamp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "c825f049-07df-4d6b-9acd-312f90a2ae9c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C63",
+      "claim": "In Pol IV, two \u03b2-clamp interacting motifs have been described: a canonical QLVLGL motif (residues 346\u2013351) that binds the hydrophobic groove, and a rim binding sequence (VWP, residues 301\u2013304) that interacts with the side of the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pol IV, two \u03b2-clamp interacting motifs have been described: a canonical QLVLGL motif (residues 346\u2013351) that binds the hydrophobic groove, and a rim binding sequence (VWP, residues 301\u2013304) that interacts with the side of the clamp (Becherel et al., 2002; Bunting et al., 2003; Heltzel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Becherel et al., 2002; Bunting et al., 2003; and Heltzel et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f0521389-9125-4d9e-afa8-712eaa858492",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C64",
+      "claim": "Mutation of the groove binding motif in Pol IV (QLVLGL to QLVAGA) results in a drastic reduction in the lifetime of binding to the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, mutation of the groove binding sequence (QLVLGL to QLVAGA, residues 346\u2013351) results in a drastic reduction in the lifetime of binding to the clamp (Table 2, Figure 4\u2014figure supplement 2C), and consequently no co-localization between Pol IV and Pol IIIcore are observed, even at elevated concentrations of Pol IV (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with mutant Pol IV shown in Table 2 and Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "d73eab09-eefc-4762-bd12-72b5672aaa5f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C65",
+      "claim": "Mutation of the rim binding motif in Pol IV (VWP to AGA) shows little effect on the lifetime of Pol IV on the clamp, or on the co-localization frequency with Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast mutation of the rim binding motif (VWP to AGA, residues 303\u2013305) shows little effect on the lifetime of Pol IV on the clamp, or on the co-localization frequency with Pol IIIcore (Table 2, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with mutant Pol IV shown in Table 2 and Figure 4\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "94b01353-4fa6-4b53-b49e-0e67a4b0c57c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C66",
+      "claim": "Mutation of the groove binding motif in Pol II (QLGLF to QLGAA) leads to a reduced lifetime of binding to the \u03b2-clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, also mutation of the groove binding motif in Pol II (QLGLF to QLGAA, residues 779\u2013783) leads to a reduced lifetime of binding to the \u03b2-clamp (Table 2, Figure 4\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with mutant Pol II shown in Table 2 and Figure 4\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "cabba70b-904d-4fe1-9481-fec00e91265e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C67",
+      "claim": "All three polymerases compete for the same binding groove on the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "This therefore shows that all three polymerases compete for the same binding groove on the clamp, and that the isolated polymerases compete with similar lifetimes on the clamp-DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing that groove binding motif mutations affect all three polymerases similarly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "e93201f9-1fa9-4cb1-9434-8e77cc9f7936",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C68",
+      "claim": "The isolated polymerases compete with similar lifetimes on the clamp-DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This therefore shows that all three polymerases compete for the same binding groove on the clamp, and that the isolated polymerases compete with similar lifetimes on the clamp-DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing similar lifetimes for Pol IIIcore, Pol IV, and Pol II on clamp-DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "0ae21d06-f312-4d78-8f4c-aeae456cc943",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C69",
+      "claim": "The equilibrium between polymerases is directly influenced by the concentration of the polymerases, or by physically tethering the polymerase to the clamp loader.",
+      "claim_type": "EXPLICIT",
+      "source": "This equilibrium is directly influenced by the concentration of the polymerases, or by physically tethering the polymerase to the clamp loader, as is observed for the \u03c4 clamp loader complex and Pol IIIcore (Table 1, Figure 3H\u2013J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data showing concentration-dependent competition and the effect of \u03c4 tethering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "846c896c-a589-4889-bcaa-fd0dad6fe5af",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C70",
+      "claim": "The lifetime of Pol IIIcore on clamp-DNA is not altered by the presence of either a mismatch or a N2-furfuryl-dG lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the lifetime of Pol IIIcore on clamp-DNA is not altered by the presence of either a mismatch or the lesion (Table 3, Figure 4\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements on different DNA substrates shown in Table 3 and Figure 4\u2014figure supplement 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "59e82e19-5c07-4746-9b24-0807be53a81b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C71",
+      "claim": "Pol IIIcore does not 'discriminate' between matched, mismatched, and lesion-containing DNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Pol IIIcore does not 'discriminate' between the different DNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing similar lifetimes on all three DNA substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f129e4ca-c69f-43ba-accc-b4b14ee7b0d6",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C72",
+      "claim": "The lifetime of Pol IIIcore on all three DNA substrates shows little change in the presence of dATP and dTTP (0.5 mM each).",
+      "claim_type": "EXPLICIT",
+      "source": "This is also observed in the presence of the two nucleotides dATP and dTTP (0.5 mM each), which give little change in the lifetime of Pol IIIcore on all three DNA substrates (Table 3, Figure 4\u2014figure supplement 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements with nucleotides on different DNA substrates shown in Table 3 and Figure 4\u2014figure supplement 3D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "49e2f887-7f0b-4cf8-8911-d46008623c28",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C73",
+      "claim": "The exchange of Pol IIIcore to Pol IV is similar on matched, lesion, and mismatched DNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the exchange of Pol IIIcore to Pol IV is similar on all three substrates, (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from single-molecule measurements shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "a6ba821a-6ce9-43fc-8ad9-a429ee5f485c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C74",
+      "claim": "Pol IIIcore dissociation is unaffected by mismatches or DNA lesions and the exchange between Pol IIIcore and Pol IV is not driven by the state of the DNA, but instead is a direct competition between the replicative and translesion polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Pol IIIcore dissociation is unaffected by mismatches or DNA lesions and the exchange between Pol IIIcore and Pol IV is not driven by the state of the DNA, but instead is a direct competition between the replicative and translesion polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data showing no effect of DNA substrate on polymerase lifetimes or exchange.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f9079514-681b-41a7-8cb9-b8bb4d6c4376",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C75",
+      "claim": "The replication proteins of the clamp loader, clamp, and Pol IIIcore are highly organized in their sequential actions, ensuring that DNA replication occurs in an efficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we use co-localization single molecule studies to show that the replication proteins of the clamp loader, clamp, and Pol IIIcore are a highly organized in their sequential actions, ensuring that DNA replication occurs in an efficient manner (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion from the experimental data showing organized sequential binding of replication proteins, illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "56fb3ad4-58a4-44df-a7c9-b9d72588a4f8",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C76",
+      "claim": "The translesion polymerases appear to gain access to the DNA in a more stochastic, concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the translesion polymerases appear to gain access to the DNA in a more stochastic, concentration dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the experimental data showing concentration-dependent competition and lack of organized recruitment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "d56683e4-85c9-41f4-b6c3-caf1ab6279c4",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C77",
+      "claim": "During DNA synthesis, two or three Pol IIIcores are tethered to the replisome, increasing the effective concentration of the replicative polymerase at the replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, during DNA synthesis, two or three Pol IIIcores are tethered to the replisome (McInerney et al., 2007; Reyes-Lamothe et al., 2010), increasing the effective concentration of the replicative polymerase at the replication fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to McInerney et al., 2007 and Reyes-Lamothe et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "abd0235f-e769-4b4c-8b07-e5a8ce98d9c4",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C78",
+      "claim": "The Pol IIIcores are directly tethered to the clamp loader via the flexible linker of the clamp loader protein \u03c4, which ensures that as soon as a clamp is loaded, a Pol IIIcore will associate with the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the Pol IIIcores are directly tethered to the clamp loader via the flexible linker of the clamp loader protein \u03c4 (Dallmann et al., 2000; Gao and McHenry, 2001), which ensures that as soon as a clamp is loaded, a Pol IIIcore will associate with the clamp (see Figure 3H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge from the literature combined with experimental observations, supported by citations to Dallmann et al., 2000 and Gao and McHenry, 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "eb98c955-435e-491b-9a62-c60c8c097401",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C79",
+      "claim": "During the SOS-response, the cellular levels of the translesion DNA polymerases Pol II, Pol IV, and Pol V are increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, during the SOS-response, a bacterial reaction to DNA damage, the cellular levels of the translesion DNA polymerases Pol II, Pol IV, and Pol V are increased (Bonner et al., 1988; Woodgate and Ennis, 1991; Kim et al., 2001), thus shifting the equilibrium of the polymerase competition in favor the translesion polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Bonner et al., 1988; Woodgate and Ennis, 1991; and Kim et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "8e140a50-b842-4962-a648-177e7009fcb9",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C80",
+      "claim": "The increased levels of translesion polymerases during SOS response shift the equilibrium of the polymerase competition in favor of the translesion polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, during the SOS-response, a bacterial reaction to DNA damage, the cellular levels of the translesion DNA polymerases Pol II, Pol IV, and Pol V are increased (Bonner et al., 1988; Woodgate and Ennis, 1991; Kim et al., 2001), thus shifting the equilibrium of the polymerase competition in favor the translesion polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concentration-dependent competition mechanism observed experimentally and the known increase in translesion polymerase levels during SOS.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "1858b83a-7a1d-4c0e-a1af-2f9e553182b8",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C81",
+      "claim": "It has been proposed that the recombinase RecA may favor the translesion polymerases by having opposing effects on the Pol III and translesion replisomes, albeit by a yet unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been proposed that the recombinase RecA may favor the translesion polymerases by having opposing effects on the Pol III and translesion replisomes, albeit by a yet unknown mechanism (Indiani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal from the literature, supported by citation to Indiani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "12d62d02-577e-491c-b2a3-13fa928e5288",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C82",
+      "claim": "A concentration-dependent exchange between the replicative and translesion polymerases is consistent with the discontinuous DNA synthesis by isolated Pol IIIcore.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a concentration-dependent exchange between the replicative and translesion polymerases is consistent with the discontinuous DNA synthesis by isolated Pol IIIcore (Jergic et al., 2013; Tanner et al., 2008), showing that individual Pol IIIcores can exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the experimental observations to literature data, supported by citations to Jergic et al., 2013 and Tanner et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "44c31b35-ca3a-41a3-a0ee-314dd75f6718",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C83",
+      "claim": "In the context of the intact replisome, Pol IIIcore exchanges in a concentration-dependent manner during processive DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies (Lewis et al., 2017; Beattie et al., 2017) have also shown that in the context of the intact replisome, Pol IIIcore exchanges in a concentration-dependent manner during processive DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from recent literature, supported by citations to Lewis et al., 2017 and Beattie et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "ad6207a6-06ec-4087-9e6c-366bc1329038",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C84",
+      "claim": "E. coli DNA synthesis is highly dynamic and utilizes a concentration-dependent mechanism to achieve a fine balance between stability and flexibility where the exchange of factors is determined by their availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these studies demonstrate that E. coli DNA synthesis is highly dynamic and utilizes a concentration-dependent mechanism to achieve a fine balance between stability and flexibility where the exchange of factors is determined by their availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings and literature data into a general conclusion about E. coli DNA synthesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f3e183c8-8147-4bef-8ae0-3d82c15bfd77",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C85",
+      "claim": "In higher eukaryotes the access of the eukaryotic translesion polymerases to DNA shows a higher degree of coordination through ubiquitination of PCNA and the translesion polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in higher eukaryotes the access of the eukaryotic translesion polymerases to DNA shows a higher degree of coordination through ubiquitination of PCNA and the translesion polymerases (Chun and Jin, 2010), as well as formation of polymerase bridges through Rev1 (Pustovalova et al., 2016; Sale, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Chun and Jin, 2010; Pustovalova et al., 2016; and Sale, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "3eff54ff-1c49-47c9-8186-214d4f19c4bb",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C86",
+      "claim": "There are up to 15 DNA polymerases to coordinate in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that there are up to 15 DNA polymerases to coordinate in eukaryotes (Plosky and Woodgate, 2004), the ubiquitination of PCNA and the interactions between the polymerases may not be sufficient to coordinate the specific recruitment of individual translesion polymerases, implying that in eukaryotes too, the translesion process may occur at least in part by a concentration-dependent mechanism, which is supported by studies showing that the intracellular levels of several human translesion polymerases (Pol \u03b7, Pol \u03ba, and Pol \u03b9) are increased upon DNA damage (Zhu et al., 2010; Zhu et al., 2012; Tomicic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citation to Plosky and Woodgate, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "9ed9e903-9e9c-4379-a71c-51a86cd358eb",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C87",
+      "claim": "In eukaryotes, the translesion process may occur at least in part by a concentration-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that there are up to 15 DNA polymerases to coordinate in eukaryotes (Plosky and Woodgate, 2004), the ubiquitination of PCNA and the interactions between the polymerases may not be sufficient to coordinate the specific recruitment of individual translesion polymerases, implying that in eukaryotes too, the translesion process may occur at least in part by a concentration-dependent mechanism, which is supported by studies showing that the intracellular levels of several human translesion polymerases (Pol \u03b7, Pol \u03ba, and Pol \u03b9) are increased upon DNA damage (Zhu et al., 2010; Zhu et al., 2012; Tomicic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings in E. coli and literature data on eukaryotic systems, supported by citations to Zhu et al., 2010; Zhu et al., 2012; and Tomicic et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "bfe2cedc-97a8-468f-b1a8-c19b3ec6a241",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C88",
+      "claim": "The intracellular levels of several human translesion polymerases (Pol \u03b7, Pol \u03ba, and Pol \u03b9) are increased upon DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that there are up to 15 DNA polymerases to coordinate in eukaryotes (Plosky and Woodgate, 2004), the ubiquitination of PCNA and the interactions between the polymerases may not be sufficient to coordinate the specific recruitment of individual translesion polymerases, implying that in eukaryotes too, the translesion process may occur at least in part by a concentration-dependent mechanism, which is supported by studies showing that the intracellular levels of several human translesion polymerases (Pol \u03b7, Pol \u03ba, and Pol \u03b9) are increased upon DNA damage (Zhu et al., 2010; Zhu et al., 2012; Tomicic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature, supported by citations to Zhu et al., 2010; Zhu et al., 2012; and Tomicic et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "940c8628-0dc2-4113-9e39-e8bad3605baa",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C89",
+      "claim": "Fluorescently labeled proteins retained wild-type activity as indicated by polymerase processivity assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins were fluorescently labeled via maleimide-cysteine crosslinking or enzymatically via an N-terminal Ybbr tag (Yin et al., 2006), and the fluorescently labeled proteins retained wild-type activity as indicated by polymerase processivity assay (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from processivity assays shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "92998097-afc9-4a79-aa4e-c17d61138ebb",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C90",
+      "claim": "The lifetime of each fluorophore was measured individually on DNA-bound clamps: Atto 488 274.4 \u00b1 16.5 s, Atto 565: 145.7 \u00b1 7.5 s, Atto 647N: 93.0 \u00b1 7.4 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of the each of the fluorophores was measured individually on DNA-bound clamps (Atto 488 274.4 \u00b1 16.5 s, Atto 565: 145.7 \u00b1 7.5 s, Atto 647N: 93.0 \u00b1 7.4 s) (Figure 1\u2014figure supplement 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from fluorophore lifetime measurements shown in Figure 1\u2014figure supplement 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "f877bfd5-3e79-424c-9534-0439e1f04ea6",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "claim_id": "C91",
+      "claim": "The bleaching of the DNA fluorophore has no effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on without bleaching 18.1 \u00b1 1.6, \u03c4on with bleaching 16.8 \u00b1 1.8).",
+      "claim_type": "EXPLICIT",
+      "source": "The bleaching of the DNA fluorophore has no effect on the lifetime of Pol IIIcore on clamp-DNA (\u03c4on without bleaching 18.1 \u00b1 1.6, \u03c4on with bleaching 16.8 \u00b1 1.8) (Figure 1\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from control experiments shown in Figure 1\u2014figure supplement 1G\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a29f9a5-a963-407f-8db6-eb9b5194effc",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Clamp loading is a highly organized process where the loader and clamp bind DNA as a pre-formed complex, followed by rapid ATP-dependent release of the loader while the clamp remains stably bound for >23 minutes. The clamp holds the loader in a conformation that suppresses ATPase activity until DNA binding triggers ATP hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 provide converging experimental evidence from single-molecule measurements showing simultaneous arrival of loader and clamp (C19), long clamp lifetime (C20), short loader lifetime that depends on ATP hydrolysis (C21-C23), and agreement with established mechanistic models (C24). The data are internally consistent and supported by appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "352f5a71-efdf-4f5d-a68e-ee97364d80b5",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Clamp unloading is mechanistically distinct from loading: the loader arrives at pre-loaded clamps, releases them within ~4 seconds but remains bound for ~11 seconds total, and this process does not require ATP hydrolysis. About half of loader binding events do not result in unloading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present experimental data showing different temporal organization and nucleotide requirements for unloading versus loading. The ATP-independence of unloading (C26) is demonstrated by direct experiment, and the interpretation that loading and unloading are separate processes (C28) is well-supported by the kinetic differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "824ea771-c725-474d-942b-db701442761c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pol IIIcore alone shows only transient collision-like interactions with DNA (<0.086 s), but in the presence of the clamp exhibits stable binding with a lifetime of ~16 seconds that is independent of whether the polymerase is stationary, idling, or actively synthesizing DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32, C34, and C36 provide experimental data showing the dramatic effect of the clamp on Pol IIIcore binding. The finding that nucleotides do not affect lifetime (C34) is surprising but well-documented, and the conclusion about activity-independent lifetime (C36) is supported by comparison with literature data (C35). The use of Klenow fragment as a positive control (C31) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "40430ffb-a810-4cef-967e-2a2ddcad7323",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The \u03c4 clamp loader complex tethers Pol IIIcore to the replisome, resulting in coordinated arrival of loader, clamp, and polymerase at DNA, with the \u03c4 complex and Pol IIIcore trading places on the clamp. This tethering may explain the higher processivity of the intact replisome compared to isolated Pol IIIcore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 combine experimental observations (C38-C39) with mechanistic interpretation (C40-C41) and functional speculation (C42-C43). The experimental data showing coordinated arrival and departure are clear, though the interpretation of 'trading places' (C40) is somewhat speculative. The connection to replisome processivity (C43) is reasonable inference supported by literature citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "97fd4d3a-030d-4f38-856d-2ed010603e42",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pol IIIcore and Pol IV do not form a stable toolbelt complex but instead alternate their binding to clamp-DNA in a concentration-dependent manner. The two polymerases bind independently, with a lag time between exchanges that decreases at higher concentrations. A small fraction (9%) of co-localization events occur where polymerases arrive and leave independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44-C54 provide the central finding contradicting the toolbelt model. The experimental evidence is strong: alternating binding patterns (C44), concentration-dependent lag times (C46), constant Pol IIIcore lifetime regardless of Pol IV concentration (C47-C48), and independent arrival/departure during rare co-localization events (C49-C50). The shorter co-localization time (C52) further supports independent binding. This is a well-supported major conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "160f817b-f843-4c31-a84a-0dced2e358ab",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The \u03c4 clamp loader complex strongly favors Pol IIIcore in the competition with Pol IV by directly tethering Pol IIIcore, ensuring immediate binding upon clamp loading. However, Pol IV may still frequently access clamp-DNA during replication given its ~10-fold higher cellular concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by experimental data in Table 1 showing altered competition ratios with the \u03c4 complex. The speculation about Pol IV access during replication (C57) is reasonable given the concentration-dependent mechanism demonstrated experimentally, though it remains somewhat speculative about in vivo conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "63980a5c-bdfc-41ab-adc6-341b6035e19c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pol II competes with Pol IIIcore for clamp access but shows no co-localization, possibly due to its larger size (90 kDa vs. 40 kDa for Pol IV) preventing simultaneous binding with Pol IIIcore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 presents experimental data showing competition without co-localization. The size-based explanation (C59) is reasonable speculation but lacks direct experimental support. The result is supported but the mechanistic interpretation is uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All three polymerases (Pol IIIcore, Pol IV, Pol II) compete for the same hydrophobic groove on the \u03b2-clamp. Pol IIIcore occupies both binding grooves of the dimeric clamp through two \u03b2-binding motifs (in \u03b1 and \u03b5 subunits), while the groove-binding motif is critical for Pol IV and Pol II but the rim-binding motif of Pol IV has little effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C68 present systematic mutagenesis data showing the importance of groove-binding motifs for all three polymerases. The finding that Pol IIIcore occupies both grooves (C62) is well-supported by the ~2-fold changes in lifetime with \u03b5 mutations (C61). The differential effects of groove vs. rim mutations in Pol IV (C64-C65) provide clear mechanistic insight. This is strong experimental work supporting the competition model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "bb0b022d-1492-44cf-9878-2387af733d2f",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Polymerase exchange is not driven by DNA lesion recognition: Pol IIIcore lifetime on clamp-DNA is unaffected by mismatches or N2-furfuryl-dG lesions, and exchange between Pol IIIcore and Pol IV is similar on matched, mismatched, and lesion-containing DNA. Exchange is instead driven by direct competition between polymerases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C70-C74 present a surprising finding that challenges expectations about lesion-directed polymerase switching. The experimental data are clear and consistent across multiple DNA substrates (Table 3), both with and without nucleotides. This strongly supports the concentration-dependent competition model over a lesion-recognition model. This is a major mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "00520d33-755d-4488-aea6-1916aca13369",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNA replication exhibits a dichotomy: the loading of clamp loader, clamp, and Pol IIIcore is highly organized and sequential, while translesion polymerase access is stochastic and concentration-dependent. E. coli DNA synthesis utilizes this concentration-dependent mechanism to balance stability and flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C75-C76, and C84 synthesize the major findings into an overarching model. The contrast between organized replication and stochastic translesion synthesis is well-supported by the experimental data throughout the paper. This represents the central conceptual advance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "cbca5a5d-abc3-426e-a506-f6f58de82d1e",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cell tunes polymerase competition through two mechanisms: (1) tethering 2-3 Pol IIIcores to the replisome via \u03c4 increases local concentration of replicative polymerase, and (2) during SOS response, increased levels of translesion polymerases shift the equilibrium toward translesion synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 connect the experimental findings to cellular regulation. The tethering mechanism (C77-C78) is supported by experimental data and literature. The SOS response connection (C79-C80) is well-established in the literature and provides a logical regulatory framework for the concentration-dependent mechanism. This is reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "9f73ca77-cf5a-4dee-aa9b-0d7a36d3e46c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In eukaryotes, despite higher coordination through PCNA ubiquitination and polymerase bridges, the translesion process may occur at least partly by concentration-dependent mechanisms, supported by increased levels of human translesion polymerases upon DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C88 extend the E. coli findings to eukaryotes. While the speculation is reasonable and supported by literature on increased polymerase levels upon damage (C88), this remains largely speculative extrapolation from the bacterial system. The complexity of eukaryotic regulation (C85-C86) is acknowledged but not experimentally addressed. This is interesting speculation but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "3ceaf73b-0683-4d80-9864-755e2042b602",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fluorescently labeled proteins retain wild-type activity, fluorophore lifetimes on DNA-bound clamps are sufficient for the experiments (93-274 seconds), and DNA fluorophore bleaching does not affect Pol IIIcore lifetime measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 present essential methodological controls. The activity assays (C89), fluorophore lifetime measurements (C90), and bleaching controls (C91) demonstrate that the labeling and imaging approaches do not artifactually affect the biological measurements. These are important validation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "b3ec60d6-7108-46fe-8388-daf57b92c6d0",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The equilibrium between polymerases is directly influenced by polymerase concentration or by physical tethering to the clamp loader.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 summarizes the key mechanistic principle demonstrated throughout the paper. This is well-supported by the concentration-dependent lag times (C46), the effect of \u03c4 tethering (C55), and the overall competition data. This is a well-supported conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    },
+    {
+      "id": "727eb645-d61b-412e-be59-fcb58f31287c",
+      "content_id": "aecde486-ebd4-40db-90c2-4524f9247507",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The concentration-dependent exchange mechanism is consistent with discontinuous DNA synthesis by isolated Pol IIIcore and recent findings that Pol IIIcore exchanges in a concentration-dependent manner during processive replication in the intact replisome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 connect the current findings to prior literature. The consistency with earlier observations of discontinuous synthesis and recent single-molecule studies of the intact replisome strengthens the biological relevance of the findings. This is appropriate contextualization of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:25:43.289576Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2483db5f-0e44-4da6-9b09-c17d63eb0ce6",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "62333fc9-f7de-4445-8651-e3811feb4b31",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "511e2efe-8145-4120-8160-ece70747fa10",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "a89ba419-a284-4920-94b1-e003ac04d3ba",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "07a39d54-bf2e-41d6-ae79-da887516699e",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "56ab94aa-d7c3-4765-aeba-54ff4928379d",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "8e2b30bf-ca78-4a64-a7c5-a056d140c6dd",
+      "result_id": "6a29f9a5-a963-407f-8db6-eb9b5194effc"
+    },
+    {
+      "claim_id": "af48cf18-fd19-4dda-9616-20c466c5f75f",
+      "result_id": "352f5a71-efdf-4f5d-a68e-ee97364d80b5"
+    },
+    {
+      "claim_id": "4771648a-60f2-45ef-8928-703cc631acbb",
+      "result_id": "352f5a71-efdf-4f5d-a68e-ee97364d80b5"
+    },
+    {
+      "claim_id": "2f7bc7b6-72c9-4cff-ae2c-a039d9d5792b",
+      "result_id": "352f5a71-efdf-4f5d-a68e-ee97364d80b5"
+    },
+    {
+      "claim_id": "8fcce321-99c0-4452-8aaf-ec20a758f923",
+      "result_id": "352f5a71-efdf-4f5d-a68e-ee97364d80b5"
+    },
+    {
+      "claim_id": "fb660094-25c0-45d3-8548-5dc1c78a36bb",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "1bf4a47b-f94c-4ec8-9c9b-d1df4ec65f1f",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "d8253658-72f2-4ef3-8744-59a5eddb7e66",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "d459515b-6ab5-48d8-b127-557f1471275c",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "c37fd47f-dcc3-4068-9510-969c6eada906",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "618fe100-7547-4364-abf7-14a0d476db3b",
+      "result_id": "824ea771-c725-474d-942b-db701442761c"
+    },
+    {
+      "claim_id": "450c6af7-9b25-40ce-b1e5-cae0cdac5501",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "895ba709-95d2-413c-8c4a-8dc5d7689d00",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "aa747315-7498-4ecb-a634-65c56fdf973a",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "278dc2b1-e379-4573-a52c-b50693f0443f",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "8899fcdd-60db-4084-b1ca-4732c9f91c16",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "a6806ca7-49e4-49df-a7cc-f38992ec735e",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "a34168af-c378-4b26-930b-b2f0e0fead9e",
+      "result_id": "40430ffb-a810-4cef-967e-2a2ddcad7323"
+    },
+    {
+      "claim_id": "54f2aa80-f6e2-46b6-9aad-8987b66820e1",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "a6aee303-e28b-4dcd-9a00-bb66b0775c4b",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "588cd25e-9116-4e37-bba3-04fe2ad7ac93",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "76367162-da3a-447f-8cdb-10bcff02abe7",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "be417215-4ce7-48a2-b0e2-b569edaedaf2",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "37ad0faf-c2fe-427b-9d1a-1247e945757b",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "202f27cf-5c7f-4f85-b5e8-0ca7941dd32c",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "f5de912b-a252-4205-8ce2-7ee22735921a",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "bc9aa922-7791-4e50-b45e-62b77dd614ce",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "4736434a-f717-4ff3-ab1c-7a3ed791206c",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "a8f7dfb9-24a6-46b3-b4d4-ddb67b18dee1",
+      "result_id": "97fd4d3a-030d-4f38-856d-2ed010603e42"
+    },
+    {
+      "claim_id": "e5eab09e-cc1e-4e44-8b72-f279830b71a1",
+      "result_id": "160f817b-f843-4c31-a84a-0dced2e358ab"
+    },
+    {
+      "claim_id": "6f361e29-bbc7-454c-9568-31c00560a656",
+      "result_id": "160f817b-f843-4c31-a84a-0dced2e358ab"
+    },
+    {
+      "claim_id": "ce830783-6a44-466c-9667-c85a27247470",
+      "result_id": "160f817b-f843-4c31-a84a-0dced2e358ab"
+    },
+    {
+      "claim_id": "0663c5a3-6f45-439e-a9a0-1b4d58719af7",
+      "result_id": "63980a5c-bdfc-41ab-adc6-341b6035e19c"
+    },
+    {
+      "claim_id": "0d01bd4a-f25f-4ab6-be2a-220c64138e05",
+      "result_id": "63980a5c-bdfc-41ab-adc6-341b6035e19c"
+    },
+    {
+      "claim_id": "7f128500-8ae5-4b59-b849-13171382142f",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "39896020-6368-40f0-a272-50483eab4e0c",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "5715e35d-710a-4ae1-9f03-90122c6986d1",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "c825f049-07df-4d6b-9acd-312f90a2ae9c",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "f0521389-9125-4d9e-afa8-712eaa858492",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "d73eab09-eefc-4762-bd12-72b5672aaa5f",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "94b01353-4fa6-4b53-b49e-0e67a4b0c57c",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "cabba70b-904d-4fe1-9481-fec00e91265e",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "e93201f9-1fa9-4cb1-9434-8e77cc9f7936",
+      "result_id": "ca2ce086-8d4a-4e44-942f-ad9c45821a0b"
+    },
+    {
+      "claim_id": "03089b91-4bb2-478b-880b-8db3956dc3bf",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "846c896c-a589-4889-bcaa-fd0dad6fe5af",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "59e82e19-5c07-4746-9b24-0807be53a81b",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "f129e4ca-c69f-43ba-accc-b4b14ee7b0d6",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "49e2f887-7f0b-4cf8-8911-d46008623c28",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "a6ba821a-6ce9-43fc-8ad9-a429ee5f485c",
+      "result_id": "bb0b022d-1492-44cf-9878-2387af733d2f"
+    },
+    {
+      "claim_id": "154d856b-149d-4163-ba1e-dd554fc669d3",
+      "result_id": "00520d33-755d-4488-aea6-1916aca13369"
+    },
+    {
+      "claim_id": "f9079514-681b-41a7-8cb9-b8bb4d6c4376",
+      "result_id": "00520d33-755d-4488-aea6-1916aca13369"
+    },
+    {
+      "claim_id": "56fb3ad4-58a4-44df-a7c9-b9d72588a4f8",
+      "result_id": "00520d33-755d-4488-aea6-1916aca13369"
+    },
+    {
+      "claim_id": "ad6207a6-06ec-4087-9e6c-366bc1329038",
+      "result_id": "00520d33-755d-4488-aea6-1916aca13369"
+    },
+    {
+      "claim_id": "d56683e4-85c9-41f4-b6c3-caf1ab6279c4",
+      "result_id": "cbca5a5d-abc3-426e-a506-f6f58de82d1e"
+    },
+    {
+      "claim_id": "abd0235f-e769-4b4c-8b07-e5a8ce98d9c4",
+      "result_id": "cbca5a5d-abc3-426e-a506-f6f58de82d1e"
+    },
+    {
+      "claim_id": "eb98c955-435e-491b-9a62-c60c8c097401",
+      "result_id": "cbca5a5d-abc3-426e-a506-f6f58de82d1e"
+    },
+    {
+      "claim_id": "8e140a50-b842-4962-a648-177e7009fcb9",
+      "result_id": "cbca5a5d-abc3-426e-a506-f6f58de82d1e"
+    },
+    {
+      "claim_id": "f3e183c8-8147-4bef-8ae0-3d82c15bfd77",
+      "result_id": "9f73ca77-cf5a-4dee-aa9b-0d7a36d3e46c"
+    },
+    {
+      "claim_id": "3eff54ff-1c49-47c9-8186-214d4f19c4bb",
+      "result_id": "9f73ca77-cf5a-4dee-aa9b-0d7a36d3e46c"
+    },
+    {
+      "claim_id": "9ed9e903-9e9c-4379-a71c-51a86cd358eb",
+      "result_id": "9f73ca77-cf5a-4dee-aa9b-0d7a36d3e46c"
+    },
+    {
+      "claim_id": "bfe2cedc-97a8-468f-b1a8-c19b3ec6a241",
+      "result_id": "9f73ca77-cf5a-4dee-aa9b-0d7a36d3e46c"
+    },
+    {
+      "claim_id": "940c8628-0dc2-4113-9e39-e8bad3605baa",
+      "result_id": "3ceaf73b-0683-4d80-9864-755e2042b602"
+    },
+    {
+      "claim_id": "92998097-afc9-4a79-aa4e-c17d61138ebb",
+      "result_id": "3ceaf73b-0683-4d80-9864-755e2042b602"
+    },
+    {
+      "claim_id": "f877bfd5-3e79-424c-9534-0439e1f04ea6",
+      "result_id": "3ceaf73b-0683-4d80-9864-755e2042b602"
+    },
+    {
+      "claim_id": "0ae21d06-f312-4d78-8f4c-aeae456cc943",
+      "result_id": "b3ec60d6-7108-46fe-8388-daf57b92c6d0"
+    },
+    {
+      "claim_id": "12d62d02-577e-491c-b2a3-13fa928e5288",
+      "result_id": "727eb645-d61b-412e-be59-fcb58f31287c"
+    },
+    {
+      "claim_id": "44c31b35-ca3a-41a3-a0ee-314dd75f6718",
+      "result_id": "727eb645-d61b-412e-be59-fcb58f31287c"
+    }
+  ],
+  "comparisons": []
+}

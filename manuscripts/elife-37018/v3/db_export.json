@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "ba38edbb-481c-4bd6-a995-f0e875dcd869",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:46:54.812802Z",
+    "updated_at": "2025-12-02T00:46:54.812802Z"
+  },
+  "content": [
+    {
+      "id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "submission_id": "ba38edbb-481c-4bd6-a995-f0e875dcd869",
+      "content_type": "manuscript",
+      "content_text": "# The ER membrane protein complex interacts cotranslationally to enable biogenesis of multipass membrane proteins\n\n## Authors\n\n- Matthew J Shurtleff<sup>1</sup> ([ORCID: 0000-0001-9846-3051](https://orcid.org/0000-0001-9846-3051))\n- Daniel N Itzhak<sup>2</sup>\n- Jeffrey A Hussmann<sup>1</sup>\n- Nicole T Schirle Oakdale<sup>1</sup>\n- Elizabeth A Costa<sup>1</sup> ([ORCID: 0000-0001-8365-0436](https://orcid.org/0000-0001-8365-0436))\n- Martin Jonikas<sup>1</sup>\n- Jimena Weibezahn<sup>1</sup>\n- Katerina D Popova<sup>1</sup>\n- Calvin H Jan<sup>1</sup>\n- Pavel Sinitcyn<sup>2</sup> ([ORCID: 0000-0002-2653-1702](https://orcid.org/0000-0002-2653-1702))\n- Shruthi S Vembar<sup>4</sup>\n- Hilda Hernandez<sup>5</sup>\n- J\u00fcrgen Cox<sup>2</sup>\n- Alma L Burlingame<sup>5</sup>\n- Jeffrey L Brodsky<sup>4</sup>\n- Adam Frost<sup>3</sup> ([ORCID: 0000-0003-2231-2577](https://orcid.org/0000-0003-2231-2577))\n- Georg HH Borner<sup>2</sup> ([ORCID: 0000-0002-3166-3435](https://orcid.org/0000-0002-3166-3435)) \u2020\n- Jonathan S Weissman<sup>1</sup> ([ORCID: 0000-0003-2445-670X](https://orcid.org/0000-0003-2445-670X)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Department of Proteomics and Signal Transduction Max Planck Institute of Biochemistry Martinsried Germany\n3. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n4. Department of Biological Sciences University of Pittsburgh Pittsburgh United States\n5. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n6. Chan Zuckerberg Biohub San Francisco United States\n7. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endoplasmic reticulum (ER) supports biosynthesis of proteins with diverse transmembrane domain (TMD) lengths and hydrophobicity. Features in transmembrane domains such as charged residues in ion channels are often functionally important, but could pose a challenge during cotranslational membrane insertion and folding. Our systematic proteomic approaches in both yeast and human cells revealed that the ER membrane protein complex (EMC) binds to and promotes the biogenesis of a range of multipass transmembrane proteins, with a particular enrichment for transporters. Proximity-specific ribosome profiling demonstrates that the EMC engages clients cotranslationally and immediately following clusters of TMDs enriched for charged residues. The EMC can remain associated after completion of translation, which both protects clients from premature degradation and allows recruitment of substrate-specific and general chaperones. Thus, the EMC broadly enables the biogenesis of multipass transmembrane proteins containing destabilizing features, thereby mitigating the trade-off between function and stability.\n\n## Introduction\n\nAs the primary site of transmembrane protein synthesis, insertion, and folding, the endoplasmic reticulum (ER) must accommodate a diverse range of transmembrane proteins destined for locations throughout the cell. Individual transmembrane domains (TMDs) of multipass proteins are cotranslationally inserted into the lipid bilayer, and this step can often be energetically costly (Cymer et al., 2015). Some features of diverse transmembrane proteins present a particular challenge for their insertion into and stabilization within the ER membrane. First, the length of the TMD may not match the thickness of the lipid bilayer in the ER due to differences in membrane composition between the ER and the protein\u2019s final destination (Sharpe et al., 2010). Additionally, many TMDs contain features that are destabilizing during membrane protein insertion and biosynthesis but are necessary for function. Transporters, transmembrane ATPases, and solute carriers, for example, contain polar and/or charged residues within membrane spanning domains that form aqueous channels within the plane of the membrane (Tector and Hartl, 1999). Yet, during biogenesis, these charged helices enter the lipid bilayer unshielded by the remainder of the protein.\n\nFaced with these challenges, membrane protein folding is subject to failure both in normal and disease settings. Misfolded membrane proteins underlie a host of diseases, including cystic fibrosis (due to mutations in the cystic fibrosis conductance regulator \u2013 CFTR), Charcot-Marie-Tooth disease (PMP22 and Connexin 32), diabetes insipidis (Aquaporin), retinitis pigmentosa (Rhodopsin), Niemann-Pick disease (NPC1) (Gelsthorpe et al., 2008) and others. Disease-associated mutations often cluster within transmembrane helices (Sanders and Myers, 2004) and are biased towards missense mutations, resulting in the addition of polar or charged residues within transmembrane helices (Partridge et al., 2002). The disease-associated CFTR mutations illustrate the challenges and opportunities associated with membrane protein biogenesis. Even in healthy cells under normal conditions, less than 50% of newly synthesized CFTR folds properly and traffics out of the ER (Kopito, 1999). Small molecule enhancers of folding have emerged as a promising therapeutic strategy for disease-associated misfolded proteins. Indeed, the treatment for the most common form of cystic fibrosis (CFTR\u2206F508) employs a drug combination including a \u2018folding corrector\u2019 to allow increased ER exit and transport to the cell surface and a \u2018potentiator\u2019 to increase chloride transport activity (Boyle et al., 2014). Understanding the full complement of machinery used by the ER to ensure membrane protein synthesis, folding and transport is a fundamental problem with clear biomedical implications.\n\nAlthough the ER has machinery for stabilizing, sensing and degrading misfolded proteins, how proteins with destabilizing features within transmembrane helices are stabilized during and immediately following synthesis remains poorly understood. The ER membrane protein complex (EMC) has emerged as an intriguing player in membrane protein biogenesis in the ER. The EMC was first described in yeast as a complex of 6 co-purifying and conserved proteins (Emc1-6) with strongly correlated phenotypes in a double mutant genetic modifier map of the unfolded protein response (Jonikas et al., 2009). The pattern of EMC genetic interactions strongly resembles the pattern of other factors whose loss leads to the accumulation of misfolded membrane proteins, including the overexpression of a misfolded membrane protein (Sec61-2), and these insights first suggested that the EMC may be a TMD protein chaperone (Jonikas et al., 2009). The mammalian EMC orthologues were subsequently identified in a mammalian physical interaction map of ER-associated degradation (ERAD) components (Christianson et al., 2011). In vivo experiments have shown that loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1) (Louie et al., 2012; Bircham et al., 2011), D. melanogoster (rhodopsin) (Satoh et al., 2015), C. elegans (acetylcholine receptors) (Richard et al., 2013) and mice (ABCA3) (Tang et al., 2017), and that knockdown of an EMC component compromised biogenesis of mutant CFTR expressed in HeLa cells (Louie et al., 2012). In addition, the EMC has been implicated in autophagy (Shen et al., 2016; Li et al., 2013), lipid transfer and tethering between the ER and mitochondria (Lahiri et al., 2014), and flavivirus replication (Zhang et al., 2016; Savidis et al., 2016; Marceau et al., 2016; Ma et al., 2015; Krishnan et al., 2008). Finally, the EMC was recently shown to act as a posttranslational insertase into the ER membrane for the sterol biosynthesis enzyme, squalene synthase (SQS/FDFT1) and a subset of other tail-anchored (TA) proteins. These TA substrates have moderately hydrophobic TMDs rendering them unable to interact with TRC40/Get3, the cytosolic receptor that delivers TA proteins to the dominant ER insertase, GET1/2 (24).\n\nDespite its clear importance, many questions regarding EMC function remain: Is the effect on multipass transmembrane protein biogenesis direct or indirect (e.g. due to changes in lipid composition)? If direct, what is the EMC substrate range and does the EMC physically interact with clients? Lastly, at which stage(s) does the EMC act: insertion into the membrane (Guna et al., 2018), co- or post-translationally, during folding, or, finally, during ER export?\n\nHere, we used systematic and unbiased in vivo approaches to identify client proteins and to explore the principles of EMC action with minimal perturbations in both yeast and human cells. Our studies reveal three conserved principles of EMC function: (1) The EMC interacts with and stabilizes a range of client proteins consisting, with a few exceptions, of multipass transmembrane proteins biased towards transporters. (2) The EMC can initiate client interactions cotranslationally and stabilizes newly synthesized, client proteins after initial ER targeting to prevent premature degradation. (3) The EMC can engage client proteins following clusters of TMDs, and client TMDs are enriched in uncommon transmembrane amino acids (especially charged and bulky residues). Thus, the EMC enables the biogenesis and folding of a subset of multipass membrane proteins which present challenges for the canonical membrane protein synthesis and insertion machineries and thereby expands the functional repertoire of the membrane protein proteome.\n\n## Results\n\n### The EMC physically interacts with multipass transmembrane proteins transiting the ER and substrate-specific chaperones\n\nWe initially sought to define the range of proteins that interact with the EMC in the budding yeast Saccharomyces cerevisiae. To evaluate EMC interaction partners, we endogenously tagged EMC3 with 3xFLAG epitope at its C-terminus. To maximize retention of interacting partners, we recovered Emc3 using a one-step affinity purification in the presence of digitonin. Following SDS-PAGE analysis, prominent bands were excised and analyzed by mass spectrometry to identify Emc3-interacting proteins (Figure 1A). As expected, we identified roughly stoichiometric quantities of all core EMC components (Emc1, Emc2, Emc4, Emc5 and Emc6) and the accessory proteins Sop4 and Emc10 (Jonikas et al., 2009). Although Sop4 is a near-stoichiometric interactor with the EMC, it shares only a subset of the characteristic genetic interactions of other core components (Jonikas et al., 2009), suggesting that, in contrast to the six core EMC components (Emc1-6), the full function of the EMC complex does not depend on Sop4, and it may play a role distinct from the core complex. In addition to EMC components, Emc3 interacted with several large, multi-pass membrane proteins (Pma1, Fks1, Spf1) and Ilm1, a poorly characterized ER-localized protein (Lockshon et al., 2007)\u00a0(Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig1-v3.jpg)\n\n**Figure 1.:** (A) SDS-PAGE gel of Emc3-3xFLAG co-immunoprecipitated proteins. Proteins identified from excised bands are indicated. (B) SILAC ratios for proteins identified by mass spectrometry for Emc3-3xFLAG (heavy) and ORM1-3xFLAG (light) immunoprecipitations. The most Emc3-3xFLAG enriched proteins are shown. (C) SDS-PAGE gel of Ilm1-3xFLAG co-immunoprecipitated proteins. Proteins identified from excised bands are indicated. (D) 10-fold serial dilutions of log phase cultures of the indicated strains were plated on YEPD, YEPD containing calcofluor white at the indicated concentrations and incubated at 30\u00b0C for 24 hr.\n\nTo confirm that these interactions were specific to the EMC, we performed stable isotope labeling with amino acids in cell culture (SILAC) for\u00a0Emc3-3xFLAG or N-terminally 3xFLAG tagged Orm1 yeast strains. The Orm complex is an unrelated ER resident complex that serves as a control for specific interactions with the EMC. This quantitative analysis verified interactions with all core (Emc1-6) and accessory EMC components (Sop4 and Emc10), and demonstrated specific interactions between the EMC, multipass membrane proteins (Spf1, Fks1, and Pma1) and Ilm1 (Figure 1B). We also detected specific interaction with Erg9, the yeast homolog of a TA protein recently shown to be inserted into the ER in an EMC-dependent manner (Guna et al., 2018). Therefore, this approach detects both stable and transient interactions between the EMC and binding partners.\n\n### The EMC interacts with specialized membrane protein chaperones\n\nIn addition to interacting with putative client transmembrane proteins, our pulldown results implicate the EMC as interacting with membrane protein substrate-specific chaperones, including Sop4 and Gsf2 (Figure 1B). Sop4 was previously shown to be a specialized chaperone/transport factor required for the biogenesis of the yeast plasma membrane ATPase (Pma1), (Luo et al., 2002), and Gsf2 plays a role in the biogenesis and export of hexose transporter 1 (Hxt1) from the ER (Sherwood and Carlson, 1999).\n\nSeveral considerations suggested to us that the resident ER protein Ilm1 could also act as substrate-specific chaperone for the cell wall synthesis enzyme, Fks1. ILM1 deletion results in enhanced oleic acid sensitivity, likely due to a cell wall defect (Lockshon et al., 2007) and showed increased sensitivity to caspofungin, similar to the deletion phenotype for FKS1 (Markovich et al., 2004). To explore if Ilm1 functioned as an Fks1 chaperone, we generated yeast expressing Ilm1-3xFLAG and performed pulldowns to identify Ilm1 interacting proteins. We observed a near stoichiometric interaction between Ilm1 and Fks1 (Figure 1C). Since mature Fks1 localizes to the plasma membrane and Ilm1 is exclusively in the ER, this likely represents an interaction between Ilm1 and transiting, newly synthesized Fks1. Other prominent bands were identified as components of the EMC (Emc1 and Emc2), ER oxidoreductase 1 (Ero1) and general chaperone proteins (Ssa1, Ssb1 and Kar2). The near stoichiometric interaction between Ilm1 and Fks1 and interactions with chaperone proteins further suggested a role for Ilm1 as a co-chaperone for Fks1.\n\nAs the catalytic subunit of the 1,3-beta-D-glucan synthase cell wall biosynthesis enzyme, FKS1 deletion results in hypersensitivity to compounds, such as calcofluor white, that affect cell wall assembly (Ram et al., 1995). If Ilm1 acts as a co-chaperone for Fks1, we hypothesized that a \u2206ilm1 strain would show a calcofluor white hypersensitive phenotype. Indeed, we found profound sensitivity with growth decreased at 3 \u00b5g/ml and completely inhibited at 6 \u00b5g/ml calcofluor white in the \u2206ilm1 background (Figure 1D). We also noted increased sensitivity compared to wild type for \u2206emc2 at 6 \u00b5g/ml, further supporting a role for the EMC in maintaining cell wall integrity, possibly by promoting the biosynthesis of Fks1.\n\n### EMC interacts with transmembrane protein clients independent of substrate specific chaperones\n\nWe first hypothesized that the EMC might directly interact with client-specific membrane protein chaperones, which act to bridge the EMC and multipass membrane protein clients. We tested this hypothesis by performing quantitative mass spectrometry of Emc3-3xFlag interacting proteins in wild type, \u2206sop4 or \u2206ilm1 strains (Figure 2A). Rather than a decrease in the interaction between the EMC and multipass proteins, as predicted by the bridging model, we observed a prominent increase in EMC association with Fks1 and the functionally redundant paralog, Gsc2, in the \u2206ilm1 background as well as Elo2, Pma1 and Mrh1 in the \u2206sop4 background (Figure 2B). Interestingly, Mrh1 was previously shown to be dependent on the EMC for its biosynthesis and cell surface localization (Bircham et al., 2011). Consistent with a role for Ilm1 and Sop4 as membrane protein-specific chaperones, we observed a decrease in general chaperone proteins (Ssa1, Ssb1, and Kar2) and an increase in ribosomal proteins associated with EMC3-3xFLAG in strains missing these factors (Figure 2B). Together, these pulldown experiments showed that the EMC interacts with multipass membrane proteins transiting through the ER, membrane protein specific co-chaperones, general chaperones, and the ribosome. The presence of client-specific co-chaperones (Ilm1 and Sop4) enhances the interaction between the EMC and general chaperones and decreases the association with both multipass transmembrane clients and the ribosome (Figure 2C). These observations suggest that the EMC interacts directly with multipass transmembrane client proteins early during their synthesis, insertion or folding independent of and possibly prior to chaperone engagement.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic showing SILAC strategy for comparative analysis of EMC3-3xFLAG interactions in wildtype (WT - light) and \u2206ilm1 (heavy) and \u2206sop4 (heavy) cells. IP \u2013 immunoprecipitation, MS \u2013 mass spectrometry. (B) Log2 SILAC ratios for all proteins identified in EMC3-FLAG expressing strains (top - \u2206sop4 and WT, bottom - \u2206ilm1 and WT). Enriched multipass proteins and strongly depleted proteins are indicated. (C) Schematic showing a summary of physical interactions based on pull downs presented in Figures 1\u00a0and\u00a02.\n\n### The EMC cotranslationally interacts with folding-challenged multipass client proteins\n\nThe observed physical interaction between the EMC and Fks1 as well as the increased association of the EMC with ribosomal proteins following chaperone deletion suggested that the EMC may interact with client proteins cotranslationally. To explore this possibility, we performed proximity-specific ribosome profiling (Jan et al., 2014) in yeast expressing a fusion protein of an EMC component with biotin ligase (Emc5-BirA) and ribosomes incorporating an AviTag (the substrate of the biotin ligase). Avi-Tagged ribosomes that contact the EMC are biotinylated upon pulse-labelling with biotin. Following streptavidin-based isolation of the biotinylated ribosomes, deep sequencing of the mRNA fragments protected by affinity-purified ribosomes and comparison to the total pool of ribosomes allows identification of messages translated in the proximity of the EMC (Figure 3A). In particular, the ratio of pulldown-to-total footprint reads across a message provides a codon-resolution measurement of when translating ribosomes are most accessible to Emc5-BirA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic for strategy to examine the role of the EMC (Emc5-BirA) in cotranslational interaction with clients using proximity-specific ribosome profiling. (B) Positional enrichment plots showing footprint reads across the full-length mRNAs of the genes indicated for Emc5-BirA, BirA-Ubc6-TA and Ssh1-BirA expressing strains. Transmembrane domains (TMDs) are indicated in gray. (C) As in (B), except comparing Emc5-BirA and Sec63-BirA expressing strains. (D) Mean enrichments of all TMD-containing genes and EMC clients (N\u00a0=\u00a051) following start of first TMD for two independent replicates of Emc5-BirA, Sec63-BirA, BirA-Ssh1 and BirA-Ubc6-TA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Scatterplot of maximum 101-codon enrichment windows for each gene represented in two independent replicates of Emc5-BirA ribosome profiling. (B) List of genes above the 90th percentile in both replicates.\n\nThe profile of this ratio across FKS1 and GSC2 revealed prominent increases in EMC-ribosome proximity immediately following the translation of clusters of TMDs (Figure 3B). This enrichment pattern was not observed in strains with two other ER-localized BirA fusions (BirA-Ubc6-TA and BirA-Ssh1), suggesting that the EMC specifically interacts with these nascent chains shortly after synthesis of TMD clusters by the ribosome. The positional enrichment pattern observed for FKS1 and GSC2 motivated a systematic search for other nascent chains cotranslationally engaged by the EMC. To do this, we computed the ratio of total Emc5-BirA enrichment to total BirA-Ubc6-TA enrichment in a sliding window of 101 codons across all genes We then ranked genes according to the highest enrichment ratio attained anywhere in the gene. In addition to the most enriched genes (FKS1 and GSC2), we identified 51 genes that reproducibly showed localized peaks of Emc5-specific enrichment (defined as being in the top 10% of eligible genes in each of two biological replicates; see Materials\u00a0and\u00a0methods) (Figure 3\u2014figure supplement 1). This list of putative EMC client proteins includes two genes for which the EMC was previously implicated in their biogenesis (PMA1 and YOR1) (Louie et al., 2012; Luo et al., 2002). Emc5-BirA positional enrichment for client proteins typically was triggered following synthesis of a cluster of TMDs (Figure 3\u2014source data 1). We also performed the same analysis on data from a BirA fusion to Sec63, a component of the Sec translocon, produced for an earlier study (Aviram et al., 2016). Intriguingly, patterns of enrichment for Sec63-BirA mirrored some, but not all, of the localized Emc5-BirA peaks (Figure 3C).\n\nTo gain further insight into the timing of cotranslational engagement of the EMC with client nascent chains, we compared the average enrichments around the first TMD for the various ER localized BirAs (i.e. Emc5, Sec63, Ssh1, and Ubc6-TA). For this analysis, we focused on the set of EMC clients defined above and compared their enrichment to the full set of TMD containing proteins (see TMD annotation in Materials\u00a0and\u00a0methods) (Figure 3D). Consistent with previous observations (Jan et al., 2014), we observed that all of the ER-localized BirAs showed an initial enrichment\u00a0~60 codons after the first TMD which likely represents the recruitment of the translating message to the ER by the signal recognition particle (SRP). With the exception of the EMC clients when monitored by Emc5-BirA, this enrichment then levels off or decreases modestly (Figure 3D). By contrast, for Emc5-BirA, the EMC clients, but not the full set of TMDs, showed a continued increase in enrichment such that the maximum was achieved following synthesis of an additional\u00a0~100 amino acids. These results further indicate that cotranslational EMC association with clients continues after initial targeting, and generally following synthesis of clusters of TMDs (Figure 3D and Figure 3\u2014source data 1).\n\nSince EMC-specific enrichment peaks followed TMD clusters, we analyzed the number and amino acid composition of TMDs in the 51 putative client proteins. Strikingly, the full list of EMC clients was strongly enriched for multipass proteins (Figure 4A) and EMC-interacting TMDs were enriched for charged amino acids and depleted for hydrophobic amino acids, including aliphatic residues common in TMDs (Figure 4B). Gene ontology term enrichment on the set of putative EMC clients showed enrichment for terms related to transporters; indeed, a majority of clients are classified as transporters (Figure 4C). Notably, integral membrane glycosyltransferases (which must overcome the challenge of transferring hydrophilic sugars onto membrane-associated substrates), including beta-glucan synthase genes (FSK1 and GSC2) defined a second class of putative EMC clients (Figure 4C). Together, these results suggest that the EMC cotranslationally engages certain multipass membrane proteins and that these clients are enriched for biochemical features and functions that pose a challenge to the general membrane protein biogenesis machinery of the ER.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig4-v3.jpg)\n\n**Figure 4.:** (A) Histogram showing the proportion of proteins containing the given number of TMDs for all proteins that enter the secretory pathway (Uniprot annotations) and EMC clients. (B) Fraction of amino acids with the given properties in TMDs from EMC client proteins compared to all secretory proteins. Proportion of EMC TMD amino acids/all TMDs for each property is shown by a blue line. Blue boxes indicate 95% confidence ranges defined by 10,000 random sub-samplings of total TMDs with a pool size equal to EMC TMDs (N\u00a0=\u00a051). (C) Top non-redundant over-represented GOMF terms calculated from PANTHER (FDR\u00a0<\u00a00.05; redundant terms removed by REViGO). Inset: PANTHER protein classifications pie chart for all clients (N\u00a0=\u00a051).\n\n### Select multipass membrane proteins are EMC clients in mammalian cells\n\nHaving identified EMC clients and characterized their properties in yeast, we used an orthogonal approach to identify potential EMC clients in mammalian cells. We reasoned that the EMC may play a role in stabilizing select multipass membrane proteins during synthesis until substrate-specific and general chaperones along with select binding partners, are recruited. This ensemble might then be required to achieve a structure competent for export or function in the ER. We therefore hypothesized that depletion of the EMC in mammalian cells would result in destabilization and degradation of clients, which could be quantified by global mass spectrometry. Accordingly, we used unbiased quantitative SILAC proteomics to identify putative EMC clients on a proteome-wide scale. Using the CRISPRi system (Qi et al., 2013; Gilbert et al., 2013), we generated two independent EMC-depleted cell lines in which the expression of either EMC2 or EMC4 was strongly reduced. Whereas EMC2 depletion affects the abundance of all detected members of the EMC complex, depletion of EMC4 has no effect on other EMC members (Figure 5A). We thus infer that EMC2 but not EMC4 is structurally integral to the formation of the EMC complex. However, based on the strong similarity in the spectrum of genetic interactions in yeast, EMC2 and EMC4 deleted yeast strains, it is likely that the function of the EMC depends on both EMC2 and EMC4 (9).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig5-v3.jpg)\n\n**Figure 5.:** (A) SILAC quantification of EMC components, comparing their expression level in cells with guide RNAs targeting EMC2 or EMC4 with those expressing non-targeting GAL4 guide RNA. PARK7 is shown as a control (Wi\u015bniewski and Mann, 2016). (B) Full proteome comparison scatter plot of protein abundance change in cells expressing EMC2 guide RNA against abundance change in cells expressing EMC4 guide. Expression is relative to non-targeting GAL4 guide RNA. Proteins colored red are significantly upregulated in both EMC2 and EMC4 cells. Proteins colored green are significantly downregulated in both EMC2 and EMC4 cells (Log2\u00a0>0.5). EMC components are colored blue. (C) Comparison of translation change by ribosome profiling with proteome change. (D) Histogram showing the proportion of proteins containing the given number of TMDs for all proteins that enter the secretory pathway (as defined in Uniprot) and EMC clients. (E) Fraction of amino acids with the given properties in TMDs from EMC client proteins compared to all secretory proteins. Proportion of EMC TMD amino acids/all TMDs for each property is shown by a blue line. Blue boxes indicate 95% confidence ranges defined by 10,000 random sub-samplings of total TMDs with a pool size equal to EMC TMDs (N\u00a0=\u00a037). (F) Top non-redundant over-represented GOMF terms calculated from PANTHER (FDR\u00a0<\u00a00.05; redundant terms removed by REViGO). Inset: Protein classifications pie chart for EMC client proteins (N\u00a0=\u00a037).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Each point relates to a GO term whose corresponding protein or RNA expression values are significantly skewed in their distribution compared to the global distribution of the values for all proteins. The position on the plot relates to how the distribution is skewed, for\u00a0example point one is concordantly upregulated at both the RNA and protein level in EMC2 knockdown cells.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A,B) Weblogos of amino acid frequencies at positions along transmembrane domains of EMC clients (A) and transmembrane domains in the total human proteome (B).\n\nProteomic changes in these two EMC-depleted cell lines were measured against a control cell line expressing a non-targeting guide RNA (GAL4). Except for EMC components, almost all observed changes were strongly correlated between the EMC2 and EMC4 knockdown cell lines (Figure 5B). This supports the notion that depletion of EMC2 and concomitant depletion of the rest of the complex has few additional effects relative to depletion of EMC4 alone, beyond affecting the complex. The identified depleted proteins represent potential EMC client proteins that are destabilized and degraded in the absence of the EMC. To confirm that these clients do not arise from a decreased rate of synthesis, we performed ribosome profiling on EMC2-depleted and control cells, and compared changes in the rate of protein synthesis to changes in steady state proteome abundance (Figure 5C). This analysis revealed that the translation rate of the vast majority of potential client proteins is unaffected (with the notable exception of ATP6V0A1, which is decreased at both the translational and protein level), consistent with post-translational degradation. By contrast, proteins that are upregulated at the protein level are also upregulated at the translational level, indicating transcriptional and/or translational induction. As expected from EMC genetic interactions, 2D annotation enrichment (Cox and Mann, 2012) shows that proteins upregulated at the translatome and proteome-level are enriched for gene ontology terms related to the unfolded protein response (Figure 5\u2014figure supplement 1) (Jonikas et al., 2009). By contrast, analysis of the proteins degraded upon EMC-depletion reveals an enrichment for proteins that enter the secretory pathway (Supplementary File 1). Moreover, of the 11 proteins decreased by 2-fold or more in both EMC2- and EMC4-depleted cells, 10 have at least one transmembrane domain. Additionally, only 8 of the 37 total hits are soluble proteins with the majority of soluble proteins (5) being localized to the lysosome, and thus likely secondary to depletion of the multipass subunit of the V-ATPase (ATP6V0A1) (Supplementary file 1). Confirming a role for the EMC in TA protein insertion (Guna et al., 2012018), the levels of mammalian squalene synthase (FDFT1) and TREX1 (35) decreased upon EMC depletion. However, similar to that seen in yeast, the cohort of putative EMC client proteins is strongly enriched for multipass transmembrane proteins (Figure 5D) and, like the yeast clients, are more likely to contain charged and aromatic residues distributed throughout the TMD (Figure 5E and Figure 5\u2014figure supplement 2). Further mirroring the yeast EMC client profile, GO terms associated with the identified human clients were enriched for transporter related terms which constituted the largest class of proteins whose abundance decreased upon EMC depletion (Figure 5F).\n\nTogether, these data support a conserved role for the EMC in facilitating the biogenesis of multipass membrane proteins with destabilizing membrane spanning sequences. Depletion of the EMC renders some client proteins unable to attain normal expression levels.\n\n## Discussion\n\nOur work establishes that the predominant function of the EMC is to ensure the biogenesis of a subset of multipass membrane proteins. These studies are consistent with a model in which the EMC cotranslationally interacts with nascent polypeptides. Following synthesis, the EMC stabilizes clients and enables recruitment of substrate-specific and general chaperones to achieve a conformation that is competent for function in the ER or for transport to the Golgi (Figure 6). In the absence of the EMC, newly synthesized client proteins are likely extracted from the membrane for degradation by the UPS (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37018/elife-37018-fig6-v3.jpg)\n\n**Figure 6.:** See text for details. Unstable transmembrane domains are shown in orange. Note, while the EMC is depicted here as cooperating with the translocon following insertion, our data do not exclude the possibility that the EMC acts as an insertase for some substrates.\n\nOur studies reveal three principles of the EMC\u2019s action. First, the EMC directly interacts with and stabilizes a range of client proteins consisting primarily of multipass transmembrane proteins. Several observations support this conclusion. The EMC physically associates with multipass proteins in yeast (Figure 1 A and B). Deletion of an EMC component and dedicated membrane protein chaperone (SOP4) results in increased interaction with several multipass membrane proteins that transit the ER, including a previously identified Sop4 substrate (Pma1)\u00a0(Luo et al., 2002) and a membrane protein previously shown to require the EMC to localize to the cell surface (Mrh1) (Bircham et al., 2011) (Figure 2B). In addition, we show that the poorly characterized ER resident protein Ilm1 acts as a substrate-specific chaperone for Fks1 (Figure 1 C and D), and ILM1 deletion results in increased interactions between the EMC and Fks1 (Figure 2B). These yeast studies show that the EMC directly interacts with multipass protein clients early in biosynthesis independent of, and likely prior to, engagement by their dedicated chaperones. Multipass proteins are also selectively destabilized in human cells depleted of the EMC by CRISPRi (Figure 5), further demonstrating that the biogenesis/chaperoning of multipass membrane proteins is a conserved feature of EMC function.\n\nSecond, the EMC can begin to interact cotranslationally and subsequently stabilize newly synthesized client proteins, likely preventing premature degradation by ERAD. Proximity-specific ribosome profiling in yeast revealed that a common feature of the EMC is cotranslational engagement of multipass client proteins (Figure 3). The presence of full-length multipass membrane proteins in our pulldown analyses in yeast (Figures 1 and 2) indicate that the EMC can engage clients cotranslationally and remain bound after completion of protein synthesis for at least a subset of client proteins. Although the EMC was recently shown to act as a TA protein insertase (Guna et al., 2018), our results suggest that the EMC interacts with multipass proteins during synthesis and remains associated post-ER targeting (Figure 3D). In addition, all of the EMC clients identified in yeast are dependent on SRP, a factor that cotranslationally delivers substrates to the ER surface, and are cotranslationally targeted to the ER (Costa et al., 2018). Similarly, all of the mammalian multipass protein EMC substrates were previously found to be cotranslationally targeted to the ER by proximity-specific ribosome profiling studies (Jan et al., 2014). These results, however, do not exclude the possibility that the EMC acts to insert or facilitate flipping of individual helices of multipass membanes proteins following initial targeting to the ER, or that the EMC acts during the initial insertion for a subset of the newly identified client proteins. Overall, our results support a model in which the EMC can engage client proteins cotranslationally, perhaps following insertion via the translocon into the ER membrane, likely acting to stabilize folding intermediates and to forestall degradation.\n\nThird, the EMC engages transporters and other client proteins enriched for sub-optimal residues in transmembrane helices. Our proximity-specific ribosome profiling results indicate that the EMC typically engages transporters and other membrane proteins enriched for charged residues in TMDs (Figure 4 B and C) following synthesis of TMD clusters (Figure 3B). In addition, membrane proteins that were destabilized in human cells were also enriched for transporters (Figure 5F), and human EMC clients were enriched for charged and bulky residues in TMDs (Figure 5E). These observed features of EMC clients are inter-related, multipass membrane proteins are more likely to have sub-optimal helices and are enriched for transporter related functions. Indeed, many transporters contain polar and charged residues within TMDs, which are necessary for solute delivery across the lipid bilayer. While our studies in HeLa cells primarily identified solute carriers and transmembrane ATPases as clients, the EMC was previously implicated in the biogenesis of cell-type specific multimeric channel proteins that also contain TMDs with charged residues (Richard et al., 2013). Thus, we propose that the EMC promotes the biogenesis of a wide range of human multipass client proteins by stabilizing transmembrane regions during biosynthesis and prior to completion of folding.\n\nHow does the EMC act both as a cotranslational TMD chaperone, following ER targeting, and as a post-translational insertase for a subset of TA proteins (Guna et al., 2018)? We suggest that these phenomena reflect a common biochemical property of the EMC: the ability to interact with transmembrane helices with low hydrophobicity. This property is consistent with the previously reported role for the TMD of EMC1 in binding to and stabilizing a destabilized, ER membrane embedded SV40 virion (Bagchi et al., 2016). Therefore, we propose that a unifying function of the EMC is to accommodate and stabilize the wide diversity of membrane spanning sequences by directly interacting with select membrane proteins with destabilizing features in TMDs. Interestingly, EMC3 may share a common ancestry with the universally conserved YidC/Oxa1/Alb3 protein family in bacteria and mitochondria (Anghel et al., 2017). YidC also plays a dual role in both the insertion of membrane proteins (Samuelson et al., 2000) and the stabilization of membrane proteins inserted via the translocon by direct interaction with SecYEG (Nagamori et al., 2004).\n\nBeyond its role in engaging atypical TMDs, our studies point to a broader role for the EMC as a nexus of TMD folding, which requires chaperone recruitment and protection from the ERAD machinery. The EMC is a large protein complex with significant predicted mass integral to the membrane, as well as soluble mass in the cytosol and lumen. It is counterintuitive that such mass is necessary to act solely as a transmembrane chaperone and insertase. For example, members of the YidC/Oxa1/Alb3 membrane protein family in bacteria and mitochondria act as insertases and transmembrane chaperones, but they function as smaller monomers without appended soluble domains (Nagamori et al., 2004). Indeed, we find that in yeast the EMC also recruits substrate-specific chaperones including Ilm1, Sop4 and Gsf2, as well as general cytoplasmic and lumenal chaperones and oxidoreductases. We propose that, in analogy to the recently described function of the Slp1-Emp65 complex for soluble lumenal ER proteins (Zhang et al., 2017), the EMC may also hold folding intermediates in a privileged, ERAD-protected state until the recruitment of substrate-specific chaperones and/or general chaperones to complete folding and allow ER export. Thus, the EMC may compartmentalize multiple functions necessary for membrane protein biogenesis: transmembrane stabilization, recruitment of folding factors and protection of folding intermediates from recognition and degradation by the ER quality control machinery.\n\n## Materials and methods\n\n### Yeast strains and plasmids\n\nStrains BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) and W303 (ade2-1 leu2-3 his3-11,15 trp1-1 ura3-1 can1-100) were used as wild-type parental strains. Genomic knockouts and knockins were generated by one-step gene replacement as described\u00a0(Rothstein, 1991). Generation of EMC3-3X-FLAG (BY4741: EMC3-FLAG-NatR) was described previously\u00a0(Jonikas et al., 2009). To generate FLAG-tagged Ilm1p, the ILM1 coding sequence including the open reading frame and\u00a0~350 base pairs of the 3\u2019-UTR was amplified from genomic DNA extracted from BY4742 wild-type yeast. The resulting PCR products were inserted into a plasmid immediately upstream of an in-frame fusion with 3X-FLAG and the NATMX6 coding sequence. Next, a 3XFLAG epitope was introduced at the 3\u2019 end of the ILM1 open reading frame in pILM1-UTR-NAT using a modified site-directed mutagenesis protocol\u00a0(Wang and Malcolm, 1999). For homologous recombination, the resulting ILM1-3XFLAG-UTR-NAT sequence was amplified and transformed into BY4741. Positive clones were selected on yeast extract-peptone-dextrose (YEPD) medium supplemented with nourseothricin and analyzed for FLAG-tagged Ilm1p expression by immunoblotting with anti-FLAG antibodies (Santa Cruz Biotechnology).\n\n### Immunoprecipitation from microsomes\n\nImmunoprecipitations of Emc3-3xFLAG and Ilm1-3xFLAG were performed as described previously\u00a0(Denic and Weissman, 2007). Yeast were grown in 3L YEPD, harvested and resuspendend in 2 ml lysis buffer (50 mM HEPES-KOH pH 6.8). Resuspended yeast pellets were frozen drop-wise in liquid nitrogen and subsequently disrupted by bead beating. 15 ml lysis buffer was added to the frozen yeast powder lysis was performed by 10 strokes in a Dounce homogenizer. The homogenate was centrifuged at 1000Xg for 10 min at 4\u00b0C. The supernatant was transferred to a new tube and the centrifugation was repeated. The supernatant was then transferred to a 50.2 Ti ultracentrifuge tube (Beckman Coulter) and centrifuged at 22,000 RPM for 16 min at 4\u00b0C. The microsome pellet was resuspended in 0.5 ml lysis buffer, flash frozen in liquid nitrogen and stored at \u221280\u00b0C until use.\n\nMicrosomes were solubilized in 15 ml immunoprecipitation buffer (100 mM HEPES-KOH pH 6.8, 300 mM KOAc, 4 mM MgOAc, 2 mM CaCl2, 30% glycerol) for 1 hr at 4\u00b0C. Detergent extracted microsomes were centrifuged for at 22,000 RPM for 16 min at 4\u00b0C. 150 \u00b5l of anti-FLAG bead slurry was added the supernatant and incubated for 2 hr at 4\u00b0C. Beads were pelleted at 1,000Xg for 1 min and washed 4 times in 10 ml wash buffer (immunoprecipitation buffer with 0.1% digitonin). Beads were eluted with 150 \u00b5l of 2 mg/ml FLAG peptide in was buffer. Eluates were stored at \u221280\u00b0C until use.\n\n### In-gel tryptic digestion and mass spectrometry\n\nImmunoprecipitation eluates were separated by SDS-PAGE and single bands were excised, or alternatively, gels were cut along the lanes in 11 to 13 pieces. Proteins were subjected to in-gel digestion (University of California San Francisco Mass Spectrometry Facility protocol) with trypsin (porcine, side-chain protected, Promega). The extracted digests were vacuum evaporated and resuspended in 0.1% formic acid in water. The digests were analyzed by capillary HPLC-tandem mass spectrometry. The separation was performed with a C18 PepMap 75 \u03bcm\u00a0\u00d7\u00a0150 mm column (LC Packings, Sunnyvale, CA) used on either an Ultimate HPLC system linked with a FAMOS autosampler (LC Packings, San Francisco, CA) or an Agilent 1100 series HPLC system equipped with an autosampler (Agilent Technologies, Palo Alto, CA). The column effluent was directed to either a QSTAR-Pulsar or QSTAR-Elite tandem mass spectrometer (Applied Biosystems/MDS Sciex, Toronto, Canada). Throughout the chromatographic separation, a 1 s MS acquisition was followed by a 3 s CID acquisition for computer-selected precursor ions in information-dependent acquisition mode. The collision energy was set according to the m/z value and charge state of the precursor ion.\n\nData was analyzed with Analyst QS 1.1 software (Applied Biosystems/MDS Sciex) and peak lists were generated using the mascot.dll script (Mascot.dll 1.6b18, Applied Biosystems). Precursor mass tolerance for grouping was set to 0.2 amu. MS centroiding parameters were 50% peak height and 0.02 amu merge distance. MS/MS centroiding parameters were 50% peak height and 0.05 amu merge distance.\n\nThe peak lists were searched in in-house Protein Prospector version 5.3.0 (a public version is available on line). Peptides containing one miscleavage were allowed. The number of modifications was limited to two per peptide. Carbamidomethylation modification of cysteine; acetylation of the N terminus of the protein; oxidation of methionine; and formation of pyro-Glu from N-term Gln were allowed as variable modifications. Mass tolerance for was 150 ppm for precursor and 0.2 Da for fragment ions.\n\n### Proximity-Specific ribosome profiling\n\nProximity-based ribosome profiling was performed essentially as previously described\u00a0(McGlincy and Ingolia, 2017).\n\n#### Strain construction\n\nThe endogenous copies of RPL10a were C-terminally tagged with an engineered HA-TEV-AviTag sequence to allow for detection by western blot, biotinylation, and specific elution after streptavidin pulldown via TEV protease cleavage. BirA fusion proteins EMC5 and SSH1 were endogenously tagged at the C-terminus (EMC5) or N-terminus (SSH1), respectively with a BirA (biotin ligase), allowing the specific biotinylation and streptavidin pull-down of ribosomes in close proximity to the EMC specifically or to the ER. Generation of Sec63-Bir was previously described\u00a0(Jan et al., 2014).\n\n#### Media and growth conditions\n\nYeast were grown in biotin-free, synthetic defined media (1.7 g/L YNB-Biotin [Sunrise Science Products], 5 g/L Ammonium sulfate, 20 g/L dextrose, complete amino acids) supplemented with d-biotin (Sigma) to a final concentration of 0.125 ng/mL, at 30\u00b0C with vigorous shaking. Twenty milliliters of an overnight culture was used to inoculate a 300 ml culture at an OD600 of 0.05\u20130.1, and biotin induction was performed at mid-log phase with an OD600 of 0.5\u20130.6 as in (Jan et al., 2014).\n\n#### Biotin induction and harvesting\n\nCyclohexamide (CHX) was added to media 2 min prior to the addition of biotin, at a final concentration of 100 \u03bcg/mL. To induce biotinylation, D-biotin was added to the media to a final concentration of 10 nM and biotinylation was allowed to proceed for 2 min at 30\u00b0C while shaking. After 2 min, cells were harvested by filtration onto 0.45 \u03bcm pore size nitrocellulose filters (Whatman), scraped from the membrane, and immediately submerged in liquid nitrogen.\n\nFor western-blot quantification, 1 mL aliquots were taken from uninduced cultures and placed into pre-chilled, 1.5 mL siliconized microcentrifuge tubes. Samples were then spun at 20,000 x g at 4\u00b0C for 30 s, the supernatant removed, and the pellet-containing tubes immediately placed in liquid nitrogen. For levels of biotin induction quantification, a small patch of induced, filtered cells were scraped from the nitrocellulose filters.\n\n#### Western blotting and biotinylation quantification\n\nLysates were prepared from pelleted induced and uninduced yeast by resuspending frozen pellets in 30\u201350 \u03bcL Laemmli buffer, followed by denaturation at 95\u00b0C for 5 min, and clarification at room temperature by spinning at 20,000 x g for 10 min.\n\nLysates were run on 4\u201312% Bis-tris gels in MOPS buffer, transferred to nitrocellulose membrane using the BioRad Transfer system (BioRad) according to the manufacturer\u2019s instructions, blocked with Odyssey blocking buffer, and subsequently probed. The HA epitope tag was detected using a mouse a high-affinity rat anti-HA antibody at a 1:1000 dilution (Roche 3F10). IR800 anti-rat (Rockland) secondary antibody was then used at 1:5000 dilution. Biotin was detected directly using Streptavidin AlexaFluor 680 (Molecular Probes) at a 1:5000 dilution in TBS-T and a 10 min incubation period after incubation in secondary antibody. All blots were visualized using the Licor (Odyssey) system.\n\nPercent biotinylation was quantified by probing for HA in a streptavidin shift assay, in which clarified lysates were mixed with excess unlabeled streptavidin (Rockland) prior to electrophoresis and immunoblotting. Biotinylated AviTags shift to a higher molecular weight than the corresponding, non-biotinylated AviTags, and percent biotinylation was quantified from the fraction of total signal that was shifted (Algire et al., 2002).\n\n#### Yeast lysis, lysate desalting and monosome isolation\n\n650 \u03bcL of polysome lysis buffer (20 mM Tris pH 8.0, 140 mM KCl, 1.5 mM MgCl2, 100 \u03bcg/mL CHX, 1% Triton X-100) was dripped into a 50 mL conical tube filled with and immersed in liquid nitrogen, containing the harvested yeast strip/pellet from a mid-log phase 300 mL biotin-induced culture. The frozen cell-buffer mixture was cryogenically pulverized for a minute in a freezer mill. Pulverized cells were thawed and centrifuged for 2 min at 4\u00b0C and 20,000 x g. The supernatant was immediately loaded onto pre-chilled, 2 mL Zeba de-salt spin column previously equilibrated with polysome gradient buffer (20 mM Tris pH 8.0, 140 mM KCl, 5 mM MgCl2, 100 \u03bcg/mL CHX, 0.5 mM DTT) according to the manufacturer\u2019s instructions. Aliquots of this extract were flash-frozen in liquid nitrogen and stored at \u221280\u00b0C, typically yielding 0.5\u20131 mL of extract with A260 of 100\u2013300. A 200\u2013500 \u03bcL aliquot of the above lysate was treated with 750 U RNaseI (Ambion) per 50 A260 units of lysate (or 15 U RNaseI per 40 \u03bcg RNA, where 1 A260 unit corresponds to 40 \u03bcg RNA), and incubated for 1 hr at room temperature on an overhead roller. Reactions were then quenched with 10 \u03bcL SUPERase-In RNase inhibitor (Ambion) and stored on ice until loaded onto sucrose density gradients (10\u201350% w/v) prepared with the polysome gradient buffer described above. Gradients were made in Sw-41 ultracentrifuge tubes (Seton Scientific) using a BioComp Gradient Master (BioComp Instruments) according to the manufacturer\u2019s instructions. Samples were spun for 3 hr at 4\u00b0C and 35,000 rpm in an Sw-41 rotor (Beckmann Coulter). Fractionation was performed on the Gradient Master using a BioRad EM-1 Econo UV monitor to continually monitored A260 values. Monosome peaks were collected, flash-frozen in liquid nitrogen, and stored at \u221280\u00b0C. Typical yields were 2\u20133 mL of monosomes with A260 of 2\u20135.\n\n#### Streptavidin pulldown of biotinylated ribosomes\n\nBiotinylated ribosomes were isolated from the total monosome fraction using MyOne streptavidin C1 magnetic DynaBeads (Invitrogen). The volume of beads used per pulldown was scaled based on 187 \u03bcL (1.87 mg) beads per 15 pmol of biotinylated ribosomes, as estimated from the manufacturer\u2019s instructions. The pmol of biotinylated ribosomes in a given volume was calculated from (i) the fraction of biotinylated ribosomes as estimated from a streptavidin shift assay and (ii) the total concentration of 80S ribosomes in the fraction (Jan et al., 2014). Prior to binding, beads were washed twice with one volume (equal to the initial bead volume) of Buffer A (100 mM NaOH, 50 mM NaCl), once with one volume of Buffer B (100 mM NaCl), and once with one volume of low-salt binding Buffer C (20 mM Tris pH 8.0, 140 mM KCl, 5 mM MgCl2, 100 \u03bcg/mL CHX, 0.5 mM DTT, 0.1% Triton X-100). Triton X-100 was added to monosome fractions containing 15 pmol of biotinylated ribosomes, to a final concentration of 0.01%. This solution was added to washed beads, mixed well, and the pulldown was allowed to proceed on an overhead roller for 1 hr at 4\u00b0C. The supernatant was removed and the beads were washed three times with 1 mL high-salt wash Buffer D (20 mM Tris pH 8.0, 500 mM KCl, 5 mM MgCl2, 100 \u03bcg/mL CHX, 0.5 mM DTT, 0.1% Triton X-100), each for 20 min at 4\u00b0C. After the third wash, beads were re-equilibrated in low-salt Buffer C by resuspension in 1 mL, then transferred to a new tube and resuspended in a smaller volume (200 \u03bcL) of Buffer C in preparation for elution by TEV protease cleavage. Cleavage was performed by incubation on a nutator with in-house TEV protease for 1 hr at room temperature. Three volumes of Trizol LS (Ambion) were added to both the TEV eluate and a separate, matched input sample consisting of 10\u201320 pmol of total monosomes.\n\n#### Library generation\n\nTen-twenty pmol of monosomes in Trizol LS were extracted using 200 \u03bcL chloroform per 750 \u03bcL Trizol LS. RNA was precipitated for at least 1 hr at \u221230\u00b0C (or 30 mins at \u221280) using GlycoBlue (Invitrogen) and an equal volume of isopropanol, pelleted, resuspended in 11 \u03bcL (input) or 5 ul (pulldown) 10 mM Tris pH 7.0, and resolved on a 15% TBE-urea gel. Samples were denatured in 2X TBE-Urea loading buffer at 80\u00b0C for 2 min. Gel was run at 200V for 60 min and visualized after 5 min incubation with SYBR Gold (Invitrogen). Oligoribonucleotide size standard in neighboring lanes was used to excise roughly 28 nt ribosome footprints. Footprints were passively eluted on a tube nutator overnight at 4\u00b0C in 420 \u03bcL 0.3 M NaCl after crushing gel slices. After overnight RNA elution from gel, ribosome footprints were then precipitated with GlycoBlue and 2.5 volumes ethanol, resuspended directly in a dephosphorylation master mix containing 8 \u03bcL 1.25x T4 polynucleotide kinase (PNK) buffer (New England Biolabs, NEB), and dephosphorylated with 2 \u03bcL PNK for 1 hr at 37\u02daC. This solution was used directly for ligation to 0.5 \u03bcg 3\u2019 miRNA cloning linker 1 (Integrated DNA Technologies) upon addition of 8 \u03bcL 50% PEG (NEB), 1 \u03bcL 10x truncated T4 RNA ligase 2 K227Q (rnl2) buffer (NEB), and in-house rnl2 enzyme as in (Kopito, 1999)\u00a0(or 3.5 ul 50% PEG, 0.5 ul \u03bcL 10x T4 RNA ligase buffer, 0.5ul T4 RNA ligase rnl2, and 0.05 ul 1M DTT, and a sample-specific barcode linker as in [McGlincy and Ingolia, 2017]). Ligation proceeded for 3 hr at 25\u00b0C at which point RNA was precipitated for at least 1 hr at \u221230\u00b0C, purified on a 10% TBE-urea gel, eluted, and precipitated as above.\n\nrRNA contaminants were removed from ligation products using antisense biotinylated oligos as described\u00a0(Brar et al., 2012). rRNA-depleted ligation products were then reverse-transcribed in a 16.7 \u03bcL reaction using SuperScript III (Invitrogen) for 30 min at 48\u00b0C. RNA template was hydrolyzed for 20 min at 98\u00b0C after addition of 1/10 vol 1 M NaOH. Equi-molar HCl was added to quench the reaction and cDNAs were precipitated at \u221230\u00b0C for at least 1 hr and subsequently purified on a 10% TBE-urea gel, eluted overnight, precipitated, and resuspended in 15 \u03bcL nuclease-free water.\n\ncDNAs were circularized using CircLigase (Epicentre) in a 20 \u03bcL reaction for 1.5 hr at 60\u00b0C according to the manufacturer\u2019s instructions. Circularized products were amplified by 8\u201316 cycles of PCR using oNTI231 and any of several Illumina indexing primers (IDT) using Phusion polymerase (Finnzymes) in a 17 \u03bcL reaction. PCR amplicons were gel purified on 8% non-denaturing TBE gels, eluted, precipitated, resuspended in 10 \u03bcL EB, and quantified using the Bioanalyzer High Sensitivity DNA assay (Agilent Technologies). 2 nM dilutions were multiplexed as needed and sequenced via a single-end run on an Illumina HiSeq sequencer.\n\n### Identification of co-translationally engaged regions\n\nSequencing reads were trimmed of adaptor sequences and aligned to yeast coding sequences as previously described (Hussmann et al., 2015). To compute the efficiency with which ribosomes translating a particular region of a coding sequence were labeled by a BirA fusion, for each codon position in each coding sequence, for both pulldown and input samples, we calculated the sum of ribosome profiling reads in a 50 codon window on either side (i.e. 101 total codons) of the position normalized to the total number of mapped reads for the sample, then computed the enrichment ratio of pulldown reads to input reads in the window. To quantify the extent to which a gene has any region for which ribosomes translating that region are more efficiently labeled by Emc5-fused BirA than a BirA fused with the tail-anchor from Ubc6 (BirA-Ubc6-TA), we computed the maximum value of the ratio of (pulldown/total enrichment for Emc5-BirA) to (pulldown/total enrichment for BirA-Ubc6-TA) for each position in the gene.\n\nThe following filters were applied to restrict the set of relevant genes:\n\nAmongst genes passing these filters, we identified potential EMC clients as those genes whose maximum positional enrichment ratio was in the top 10% of all genes in both biological replicates of the Emc5-BirA ribosome profiling.\n\n#### Transmembrane domain annotations\n\nAnnotated transmembrane domains were collected from two sources: domains predicted by TMHMM in yeast were downloaded from SGD (date stamp on file: 8/23/2017), and domains annotated in UniProt for yeast and human were extracted from Uniprot (Reviewed Swiss-Prot) databases in xml format (file names uniprot-reviewed%3Ayes\u00a0+\u00a0taxonomy%3A4932.xml for yeast and uniprot-reviewed%3Ayes\u00a0+\u00a0taxonomy%3A9606.xml for human). For yeast, the sets of domains from both sources were merged, and when a TMHMM prediction overlapped with a domain in Uniprot, the Uniprot domain was chosen. Domains in mitochondrially encoded genes, dubious ORFs, and pseudogenes were excluded. Final sets of transmembrane domains considered are shown in Supplementary file 2.\n\n#### Amino acid composition of TMDs\n\nTo evaluate biochemical properties of TMDs in potential EMC clients, the set of all amino acids in all TMDs of EMC clients was collected, and the fraction of such amino acids that were aliphatic, aromatic, charged, hydrophobic, or polar was calculated. The same calculations were carried out for all annotated TMDs, and the ratio of fraction in TMDs in EMC clients to fraction in all TMDs was computed for each property. To assess statistical significance, random subsets of the same number of TMDs as in the total EMC client set were drawn from the set of all TMDs and the same ratio of fractions was computed. This process was repeated for 10,000 random subsets and the fifth and 95th percentile of the 10,000 ratios produced were recorded.\n\n### Targeted downregulation of gene expression by CRISPRi\n\nCRISPRi HeLa cell lines were generated by transducing with pHR-SFFV-dCas9-BFP-KRAB (Addgene ID: 46911) and sorting for BFP positive cells\u00a0(Gilbert et al., 2013). EMC2 (GAGTACGCGTCCGGGCCAA), EMC4 (GTCATTTCCGCCCTGGAAAT) and negative control Gal4-4 (GAACGACTAGTTAGGCGTGTA) protospacers were cloned into a lentiviral expression plasmid expressing guides from a mouse-derived U6 promoter, BFP and puromycin (pU6-sgRNA EF1-Alpha-puro-T2A-BFP; Addgene ID: 60955). HeLa CRISPRi cells were transduced with guide RNA expression plasmids, selected in puromycin for 72 hr and either directly used for experiments or expanded for SILAC labeling. HeLa cell lines were confirmed by STR analysis and tested as free from mycoplasma contamination.\n\n### Mammalian ribosome profiling\n\nRibosome profiling was performed for HeLa-dCas9-KRAB cells, and HeLa-dCas9-KRAB cells expressing EMC2 or Gal4-4 control guide RNAs. Cells were cultured in 15 cm plates with Dulbecco modified eagle medium (DMEM) with 10% fetal bovine serum (Gibco) until ~80% confluency. Cells were treated with 100 ug/ml CHX for 2 min and then lysed using 500 \u00b5l per polysome lysis buffer (20 mM Tris pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1% Triton x-100, 1 mM DTT, 8% glycerol, 100 \u00b5g/ml CHX, 24 U/ml Turbo DNase) per plate using a rubber cell scraper to facilitate lysis. Lysate was centrifuged for at 20,000 x g for 2 min at 4\u00baC and the remaining cleared polysome-containing lysate was flash frozen by immersion in liquid nitrogen and stored at -80\u00baC until digestion. CaCl2 was added to polysome-containing lysate to a final concentration of 5 mM and 30 \u00b5g was digested to monosomes using micrococcal nuclease (8 U/\u00b5g) for 1 hr at room temperature and the reaction was terminated by the addition of EGTA (6.25 mM). Digested lysates were equilibrated to 500 \u00b5l with polysome gradient buffer (20 mM Tris pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1% Triton x-100, 1 mM DTT, 100 \u00b5g/ml CHX) and loaded on top of a sucrose cushion (polysome buffer containing 1.65 M sucrose) and ultracentrifuged in a TLA-110 rotor (Beckman Coulter) for 4 hours at 4\u00baC. The monosome-containing pellet was resuspended in 700 \u00b5l Trizol (Life Technologies). Total RNA was extracted and libraries were prepared as described for proximity-based ribosome profiling.\n\n### Quantitative SILAC mass spectrometry\n\n#### Cell culture and harvesting\n\nAll cell culture reagents were obtained from Gibco unless otherwise stated. Cells were cultured for at least seven doublings in SILAC DMEM supplemented with 10% Dialyzed FBS, 20 Units/mL Penicilin, 20 \u00b5g/ml Streptomycin, 1 mM Sodium Pyruvate, 10%, and 2 mM L-alanyl-L-glutamine dipeptide and either; 42 mg/L 13C6,15N4-L-Arginine HCl (Silantes) together with 73 mg/L 13C6,15N2-L-Lysine HCl (Silantes), or 42 mg/L Arginine HCl and 73 mg/L Lysine HCl with standard isotopic constituents (Sigma). Cells were harvested by rinsing twice in ice-cold PBS excluding Calcium Chloride and Magnesium Chloride. Cells from 1 \u00d7 10 cm dish were scraped in 1 ml of ice-cold PBS and transferred to a 1.5 mL Eppendorf tube, for centrifugation at 300 x g at 4\u00b0C. The PBS was aspirated and cells were resuspended in lysis buffer (4% SDS, 100 mM DTT in 100 mM Tris-HCl, pH 7.6 at room temperature) and heated to 95\u00b0C for 5 min. Samples were sonicated for 15 \u00d7 30 s cycles using a Bioruptor to reduce viscosity of the lysate. Protein concentrations were determined via tryptophan assay.\n\n#### Filter-aided sample preparation (FASP)\n\nPeptides were generated essentially as described (Zielinska et al., 2010). Protein lysate from Gal4 SILAC heavy-labelled cells and EMC2 or EMC4 SILAC light-labelled cells were mixed 1:1, and 100 \u00b5g of sample plus 250 \u00b5L Urea Buffer (8M urea, 100 mM Tris pH 8.5) was loaded onto Microcon 30 kDa MWCO centrifugal filters. Loaded filters were centrifuged at 10,000 x g at 18\u00b0C for 20 min. Filters were centrifuged a further two times with 250 \u00b5L Urea Buffer. Samples were alkylated at room temperature for 15 min by incubation with 50 mM Iodoacetamide in Urea Buffer. Samples were centrifuged a further three times for 15 min each with 150 \u00b5L Urea Buffer, before two times centrifugation with 150 \u00b5L digestion buffer (40 mM NH4HCO3). Finally 2 \u00b5g trypsin (Sigma) or 6.25 \u00b5g GluC (NEB) in 40 \u00b5L digestion buffer was added to the filters and incubated overnight at 37\u00b0C. Peptides were collected by centrifugation followed by a further two washes with elution buffer (1 mM CaCl2, 1 mM MnCl2, 500 mM NaCl in 20 mM TrisHCl, pH 7.3).\n\n#### Peptide purification\n\nPeptides were acidified with 1% (v/v) TFA, and assuming 50% recovery, 20 \u00b5g peptides were loaded directly onto SDB-RPS stage tips. Stage tips were washed twice with 0.1% (v/v) TFA, and sequentially eluted with 20 \u00b5L SDB-RPS1 (100 mM Ammonium formate, 40% (v/v) Acetonitrile, 0.5% (v/v) Formic acid), followed by 20 \u00b5L SDB-RPS2 (150 mM Ammonium formate, 60% (v/v) Acetonitrile 0.5% (v/v) Formic acid), then 30 \u00b5L SDB-RPS3 (1% (v/v) TFA, 80% Acetonitrile). Tryptic peptides were dried to completion in a centrifugal vacuum concentrator (Concentrator 5301, Eppendorf), and volumes were restored to 10 \u00b5L with buffer A* (0.1% (v/v) TFA, 2% (v/v) Acetonitrile).\n\n#### Liquid chromatography coupled to tandem mass spectrometry\n\nLC-MS/MS was performed exactly as described previously (Itzhak et al., 2016), with the exception that the LC was coupled to a Q Exactive HF-X Hybrid Quadropole-Orbitrap mass spectrometer, which boasts improved ion transfer (Kelstrup et al., 2018).\n\n#### Processing of mass spectrometry .RAW files\n\nMass spectrometry .RAW files were processed in MaxQuant (Tyanova et al., 2016; Cox and Mann, 2008), version 1.5.5.2. RAW files were organized into two parameter groups to separate trypsin and GluC digested peptides. For both groups, multiplicity for was set to two, with Lys8 and Arg10 selected as heavy labels, re-quantify was turned on, with matching enabled between adjacent peptide fractions with the same enzyme. The Fasta file Homo_sapiens.GRCh38.pep.all.fa was downloaded from Ensembl.\n",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "71c48692-2caa-4e35-ad1e-3059cbdd3bf1",
+      "submission_id": "ba38edbb-481c-4bd6-a995-f0e875dcd869",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Ron, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37018.022](https://doi.org/10.7554/eLife.37018.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The ER membrane protein complex interacts cotranslationally to enable biogenesis of multipass membrane proteins\" for consideration by eLife. Your article has been favorably evaluated by a Vivek Malhotra (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Gunnar von Heijne (Reviewer #2); Ari Helenius (Reviewer #3). The complete, un-redacted comments of all three are posted below.\n\nWe have discussed the reviews with one another and have drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study addresses an important question related to multipass membrane protein maturation and quality control in the ER. Although it has been previously shown that the EMC complexes interact with such proteins, the mechanisms and detailed functions have not been analyzed. Here, elegant and extensive studies reveal not only a spectrum of client proteins in yeast and human cells but also describe important aspects related to molecular mechanism. The EMC complex associates with cargo molecules already co-translationally following the synthesis of clusters of transmembrane domains (TMDs) with specific properties shared by many transporters.\n\nThe findings in this paper are conceptually important and they are of wide-reaching significance. The overall mechanism with a direct interaction of nascent-growing client polypeptides with EMC modulated by client-specific co-chaperones and general folding factors is intriguing. The experiments are elegant, the documentation convincing, the text well-written, and the Discussion interesting and balanced. Therefore, we find the paper acceptable for publication, subject to some revision.\n\nEssential revisions:\n\nReviewer's 1 and 2 raised concerns in regards to Figure 6, addressing the role of the EMC in biogenesis of the multipass protein BCAP31. Both the strength of the evidence that EMC deletion affects the fate of BCAP31 directly and the strength of the evidence that the rescued BCAP31 is a membrane associated species are questioned. Therefore we feel that these limitations need to be addressed in the revised manuscript. As options, we suggest eliminating the figure altogether, or if you have some other more creative approach to the problem, please feel free to incorporate it into the revised version.\n\nReviewer #1:\n\nThis paper significantly advances the notion that the EMC is implicated in the biogenesis of multipass transmembrane proteins whose mature folded structure places heavy constrains on their stability during biogenesis. While this idea has been in circulation for some time; essentially since the discovery of the EMC, the experimental support for this notion has to date not been strong.\n\nProximity-based profiling of the mRNA associated with ribosomes found in proximity to the EMC reveals these to be enriched for sequences encoding the aforementioned class of special multi-pass TM proteins. The resolution of the proximity-based profiling is such that one may conclude that the ribosome-nascent chain complex encoding multipass transmembrane proteins whose mature folded structure places heavy constrains on their stability during biogenesis associate with the EMC around the time the challenging segment is synthesized and remains associated with the EMC until completion of synthesis. These findings, reported on in Figures 3 and 4 are the hard core of the paper, but they are nicely buttressed by correlative findings concerning the phenotype of EMC loss in yeast and mammalian cells as well as information on the protein contingents of the EMC.\n\nThis reviewer, who is not an expert in the area, found this paper easy to read and was persuaded by the novelty and importance of the findings in the paper as is.\n\nReviewer #2:\n\nThe EMC has recently emerged as an important ER complex, functioning in the biogenesis of membrane proteins, whose functions and mode of operation are largely uncharacterized. In this manuscript, Shurtleff et al. use several high-throughput techniques to better define the complex components, its clientele and time of engagement by the EMC. The use of MS-based approaches helps revealing which proteins interact with the EMC in yeast and which putative client proteins get destabilized by its depletion in human cells. Most convincingly, proximity ribosome profiling in yeast provides clear evidence for cotranslational interaction of the EMC with its clients and helps in directly identifying them. The work reveals a major role in cotranslational chaperoning of multi-spanning membrane proteins that likely continues also post-translationally. Overall this well written manuscript describes work that represents an important step in our understanding of this important complex. As such, I recommend its publication without delay.\n\n1) In the last section of the paper (Figure 6), the authors try to better characterize the mechanism of the EMC by zeroing in on BCAP31 as a 'model' EMC substrate. This part feels premature, primarily because it is not completely clear if BCAP31 represents a true substrate. Its degradation upon EMC depletion might suggest it to be a substrate, but this can also be a secondary effect. The authors themselves see some probable secondarily-degraded proteins, containing no TM, in their analysis of the human proteome. While the authors rule out a secondary effect of FDFT1 in BCAP31 degradation, it could still be a secondary effect that depends on another protein. In any case this part does not provide much mechanistic insight. Since most EMC substrates have multiple TMs and are targeted by the SRP \u2013 it is pretty clear that even in the absence of the EMC they will be inserted (at least some of their TMs) and not completely cytosolic. I therefore believe that this part can be omitted from the paper without compromising the rest of the work reported in the other sections.\n\n2) The parts that discuss the post-translational interaction of the EMC with its clients need to be written with more caution since there is insufficient information about this in the work reported, except for a few full-length protein clients identified in Figure 1A.\n\nReviewer #3:\n\nThis study addresses an important question related to multipass membrane protein maturation and quality control in the ER. Although it has been previously shown that the EMC complexes interact with such proteins, the mechanisms and detailed functions have not been analyzed. Here, elegant and extensive studies reveal not only a spectrum of client proteins in yeast and human cells but also describe important aspects related to molecular mechanism. The EMC complex associates with cargo molecules already co-translationally following the synthesis of clusters of transmembrane domains (TMDs) with specific properties shared by many transporters.\n\nThe findings in this paper are conceptually important and they are of wide-reaching significance. The overall mechanism with a direct interaction of nascent-growing client polypeptides with EMC modulated by client-specific co-chaperones and general folding factors is intriguing. The experiments are elegant, the documentation convincing, the text well-written, and the Discussion interesting and balanced. Therefore, I find the paper fully acceptable for publication.\n\nThere is one interesting aspect that could be discussed more deeply. It has to do with client specificity. A large family of multipass-proteins, the channel proteins, do not seem to be represented. Why is that? Channel proteins also have TMDs that contain charged residues but they are oligomers. Could the EMC association correlate with the oligomeric state of the mature clients?\n",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9f0c0411-b4d3-4237-80ad-dda75cdc2288",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C1",
+      "claim": "The ER membrane protein complex (EMC) was first described in yeast as a complex of 6 co-purifying and conserved proteins (Emc1-6) with strongly correlated phenotypes in a double mutant genetic modifier map of the unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMC was first described in yeast as a complex of 6 co-purifying and conserved proteins (Emc1-6) with strongly correlated phenotypes in a double mutant genetic modifier map of the unfolded protein response (Jonikas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jonikas et al., 2009, which is the original study describing the EMC complex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "141cbf3f-d9e6-4ac1-87bb-ef657cf45e5b",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C2",
+      "claim": "The pattern of EMC genetic interactions strongly resembles the pattern of other factors whose loss leads to the accumulation of misfolded membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of EMC genetic interactions strongly resembles the pattern of other factors whose loss leads to the accumulation of misfolded membrane proteins, including the overexpression of a misfolded membrane protein (Sec61-2), and these insights first suggested that the EMC may be a TMD protein chaperone (Jonikas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jonikas et al., 2009, which provided genetic interaction data suggesting the EMC's role in membrane protein folding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "87415d9a-8eb3-4e86-8c6e-ab7cb55a84e8",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C3",
+      "claim": "The mammalian EMC orthologues were identified in a mammalian physical interaction map of ER-associated degradation (ERAD) components.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian EMC orthologues were subsequently identified in a mammalian physical interaction map of ER-associated degradation (ERAD) components (Christianson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Christianson et al., 2011, which identified mammalian EMC components.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "a44d1af7-adbe-486f-8a9e-a54fe30eec05",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C4",
+      "claim": "Loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1).",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo experiments have shown that loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1) (Louie et al., 2012; Bircham et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Louie et al., 2012 and Bircham et al., 2011, which demonstrated EMC's role in specific membrane protein biogenesis in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "c9cb4cde-8949-4138-a1b5-bc56684a7b5a",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C5",
+      "claim": "Loss of the EMC compromises synthesis, stabilization and/or trafficking of rhodopsin in D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo experiments have shown that loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1) (Louie et al., 2012; Bircham et al., 2011), D. melanogoster (rhodopsin) (Satoh et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Satoh et al., 2015, which showed EMC's role in rhodopsin biogenesis in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "840cbddf-6a6a-4ffa-af99-adea4290505f",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C6",
+      "claim": "Loss of the EMC compromises synthesis, stabilization and/or trafficking of acetylcholine receptors in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo experiments have shown that loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1) (Louie et al., 2012; Bircham et al., 2011), D. melanogoster (rhodopsin) (Satoh et al., 2015), C. elegans (acetylcholine receptors) (Richard et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Richard et al., 2013, which demonstrated EMC's role in acetylcholine receptor biogenesis in C. elegans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "4189e5ef-b10a-4017-8808-619d3b9b4571",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C7",
+      "claim": "Loss of the EMC compromises synthesis, stabilization and/or trafficking of ABCA3 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo experiments have shown that loss of the EMC compromises synthesis, stabilization and/or trafficking of specific multipass membrane proteins in S. cerevisiae (a Yor1 mutant which mimicked a common disease allele of CFTR, and Mrh1) (Louie et al., 2012; Bircham et al., 2011), D. melanogoster (rhodopsin) (Satoh et al., 2015), C. elegans (acetylcholine receptors) (Richard et al., 2013) and mice (ABCA3) (Tang et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tang et al., 2017, which showed EMC's role in ABCA3 biogenesis in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "0b7dde93-bc63-41bd-9185-24d588d10db7",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C8",
+      "claim": "Knockdown of an EMC component compromised biogenesis of mutant CFTR expressed in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and that knockdown of an EMC component compromised biogenesis of mutant CFTR expressed in HeLa cells (Louie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Louie et al., 2012, which demonstrated EMC's role in CFTR biogenesis in mammalian cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "1d867336-d9ba-4598-91e2-2de1d71dfd1f",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C9",
+      "claim": "The EMC has been implicated in autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the EMC has been implicated in autophagy (Shen et al., 2016; Li et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Shen et al., 2016 and Li et al., 2013, which implicated EMC in autophagy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "2a9c4643-e0d2-4f8e-afea-82a5fac65a8a",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C10",
+      "claim": "The EMC has been implicated in lipid transfer and tethering between the ER and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the EMC has been implicated in autophagy (Shen et al., 2016; Li et al., 2013), lipid transfer and tethering between the ER and mitochondria (Lahiri et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lahiri et al., 2014, which implicated EMC in ER-mitochondria interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "cb898149-550a-4e7e-85e5-937041f045dc",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C11",
+      "claim": "The EMC has been implicated in flavivirus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "and flavivirus replication (Zhang et al., 2016; Savidis et al., 2016; Marceau et al., 2016; Ma et al., 2015; Krishnan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Zhang et al., 2016; Savidis et al., 2016; Marceau et al., 2016; Ma et al., 2015; Krishnan et al., 2008) that implicated EMC in flavivirus replication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "6b36d66d-998f-42aa-8d0d-c7a2f1d9c908",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C12",
+      "claim": "The EMC acts as a posttranslational insertase into the ER membrane for the sterol biosynthesis enzyme, squalene synthase (SQS/FDFT1) and a subset of other tail-anchored (TA) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the EMC was recently shown to act as a posttranslational insertase into the ER membrane for the sterol biosynthesis enzyme, squalene synthase (SQS/FDFT1) and a subset of other tail-anchored (TA) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as a recent finding in the manuscript, referring to the EMC's role as a TA protein insertase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "315f3ccd-4316-420c-9990-ea662731d302",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C13",
+      "claim": "EMC TA substrates have moderately hydrophobic TMDs rendering them unable to interact with TRC40/Get3, the cytosolic receptor that delivers TA proteins to the dominant ER insertase, GET1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "These TA substrates have moderately hydrophobic TMDs rendering them unable to interact with TRC40/Get3, the cytosolic receptor that delivers TA proteins to the dominant ER insertase, GET1/2 (24).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation (24) describing the properties of EMC TA substrates and their inability to use the TRC40/Get3 pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "378d5272-bdbf-4adb-85c7-0447d6ae797c",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C14",
+      "claim": "Emc3 interacts with roughly stoichiometric quantities of all core EMC components (Emc1, Emc2, Emc4, Emc5 and Emc6) and the accessory proteins Sop4 and Emc10.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we identified roughly stoichiometric quantities of all core EMC components (Emc1, Emc2, Emc4, Emc5 and Emc6) and the accessory proteins Sop4 and Emc10 (Jonikas et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data from Emc3-3xFLAG pulldowns, with reference to Jonikas et al., 2009 for the identification of EMC components.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "65424c7a-e88f-4e5e-b84f-506d7f92adb9",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C15",
+      "claim": "Emc3 interacts with several large, multi-pass membrane proteins (Pma1, Fks1, Spf1) and Ilm1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to EMC components, Emc3 interacted with several large, multi-pass membrane proteins (Pma1, Fks1, Spf1) and Ilm1, a poorly characterized ER-localized protein (Lockshon et al., 2007) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data from Emc3-3xFLAG pulldowns shown in Figure 1A, with a citation to Lockshon et al., 2007 for Ilm1 localization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "d0ea6db3-e3c9-404a-b764-9cff4260df10",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C16",
+      "claim": "SILAC analysis verified specific interactions between the EMC and multipass membrane proteins (Spf1, Fks1, and Pma1) and Ilm1.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantitative analysis verified interactions with all core (Emc1-6) and accessory EMC components (Sop4 and Emc10), and demonstrated specific interactions between the EMC, multipass membrane proteins (Spf1, Fks1, and Pma1) and Ilm1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative SILAC mass spectrometry data comparing Emc3-3xFLAG and Orm1-3xFLAG pulldowns, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "0468d020-e1fc-43fa-b23b-a095aaed1da8",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C17",
+      "claim": "The EMC specifically interacts with Erg9, the yeast homolog of a TA protein recently shown to be inserted into the ER in an EMC-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected specific interaction with Erg9, the yeast homolog of a TA protein recently shown to be inserted into the ER in an EMC-dependent manner (Guna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SILAC data detecting Erg9 interaction with EMC, with a citation to Guna et al., 2018 for the EMC-dependent insertion of this TA protein.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "00c65546-663f-467e-b0e4-c54c78f223c1",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C18",
+      "claim": "Sop4 is a specialized chaperone/transport factor required for the biogenesis of the yeast plasma membrane ATPase (Pma1).",
+      "claim_type": "EXPLICIT",
+      "source": "Sop4 was previously shown to be a specialized chaperone/transport factor required for the biogenesis of the yeast plasma membrane ATPase (Pma1), (Luo et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Luo et al., 2002, which demonstrated Sop4's role as a Pma1 chaperone.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "06785677-3856-4620-b2d8-ecd1cb09eb23",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C19",
+      "claim": "Gsf2 plays a role in the biogenesis and export of hexose transporter 1 (Hxt1) from the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "and Gsf2 plays a role in the biogenesis and export of hexose transporter 1 (Hxt1) from the ER (Sherwood and Carlson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sherwood and Carlson, 1999, which demonstrated Gsf2's role in Hxt1 biogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "23928a76-d68f-455d-bc8d-04c575bffa02",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C20",
+      "claim": "ILM1 deletion results in enhanced oleic acid sensitivity, likely due to a cell wall defect.",
+      "claim_type": "EXPLICIT",
+      "source": "ILM1 deletion results in enhanced oleic acid sensitivity, likely due to a cell wall defect (Lockshon et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lockshon et al., 2007, which reported the oleic acid sensitivity phenotype of ILM1 deletion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f7b2b2de-7927-445e-bc59-3ed23c691ab8",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C21",
+      "claim": "ILM1 deletion showed increased sensitivity to caspofungin, similar to the deletion phenotype for FKS1.",
+      "claim_type": "EXPLICIT",
+      "source": "and showed increased sensitivity to caspofungin, similar to the deletion phenotype for FKS1 (Markovich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Markovich et al., 2004, which reported the caspofungin sensitivity phenotype of FKS1 deletion, and implies comparison with ILM1 deletion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "fe6ba727-bf10-4da3-b3de-84c73356e3ed",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C22",
+      "claim": "Ilm1 shows a near stoichiometric interaction with Fks1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a near stoichiometric interaction between Ilm1 and Fks1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data from Ilm1-3xFLAG pulldowns shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "30e98dcb-e564-4ac1-ade4-b73cbea9e65a",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C23",
+      "claim": "Ilm1 interacts with components of the EMC (Emc1 and Emc2), ER oxidoreductase 1 (Ero1) and general chaperone proteins (Ssa1, Ssb1 and Kar2).",
+      "claim_type": "EXPLICIT",
+      "source": "Other prominent bands were identified as components of the EMC (Emc1 and Emc2), ER oxidoreductase 1 (Ero1) and general chaperone proteins (Ssa1, Ssb1 and Kar2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data from Ilm1-3xFLAG pulldowns identifying these interacting proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "23038a0a-85de-4a7c-b530-7d5388e24723",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C24",
+      "claim": "FKS1 deletion results in hypersensitivity to compounds, such as calcofluor white, that affect cell wall assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "As the catalytic subunit of the 1,3-beta-D-glucan synthase cell wall biosynthesis enzyme, FKS1 deletion results in hypersensitivity to compounds, such as calcofluor white, that affect cell wall assembly (Ram et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ram et al., 1995, which reported the calcofluor white sensitivity phenotype of FKS1 deletion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "571e2b77-6fca-4b5a-93d2-3fc5f5693ced",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C25",
+      "claim": "The \u2206ilm1 strain shows profound sensitivity to calcofluor white with growth decreased at 3 \u00b5g/ml and completely inhibited at 6 \u00b5g/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found profound sensitivity with growth decreased at 3 \u00b5g/ml and completely inhibited at 6 \u00b5g/ml calcofluor white in the \u2206ilm1 background (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing calcofluor white sensitivity of \u2206ilm1 strain, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "602858c7-8f3c-44d2-9e7d-54a82c8e2541",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C26",
+      "claim": "The \u2206emc2 strain shows increased sensitivity to calcofluor white at 6 \u00b5g/ml compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted increased sensitivity compared to wild type for \u2206emc2 at 6 \u00b5g/ml, further supporting a role for the EMC in maintaining cell wall integrity, possibly by promoting the biosynthesis of Fks1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing calcofluor white sensitivity of \u2206emc2 strain, with inference about EMC's role in cell wall integrity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "67549f1b-54ba-4e32-ac1f-e37b75429c41",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C27",
+      "claim": "Deletion of Ilm1 results in a prominent increase in EMC association with Fks1 and the functionally redundant paralog, Gsc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than a decrease in the interaction between the EMC and multipass proteins, as predicted by the bridging model, we observed a prominent increase in EMC association with Fks1 and the functionally redundant paralog, Gsc2, in the \u2206ilm1 background",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative mass spectrometry data comparing EMC3-3xFlag interactions in wild type and \u2206ilm1 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "bdefa0d1-f232-40ea-8fa1-ce81eebfa5f4",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C28",
+      "claim": "Deletion of Sop4 results in increased EMC association with Elo2, Pma1 and Mrh1.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as Elo2, Pma1 and Mrh1 in the \u2206sop4 background (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative mass spectrometry data comparing EMC3-3xFlag interactions in wild type and \u2206sop4 strains, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "d95903f7-afe1-4c2a-b67d-f17c616d9d3d",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C29",
+      "claim": "Mrh1 was previously shown to be dependent on the EMC for its biosynthesis and cell surface localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Mrh1 was previously shown to be dependent on the EMC for its biosynthesis and cell surface localization (Bircham et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bircham et al., 2011, which demonstrated EMC's role in Mrh1 biogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "a984ddf0-f4ea-4c1d-9222-08da6b061325",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C30",
+      "claim": "Deletion of Ilm1 or Sop4 results in a decrease in general chaperone proteins (Ssa1, Ssb1, and Kar2) associated with EMC3-3xFLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Ilm1 and Sop4 as membrane protein-specific chaperones, we observed a decrease in general chaperone proteins (Ssa1, Ssb1, and Kar2) and an increase in ribosomal proteins associated with EMC3-3xFLAG in strains missing these factors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative mass spectrometry data comparing EMC3-3xFlag interactions in wild type, \u2206ilm1, and \u2206sop4 strains, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "75d993f6-22fa-423f-adb9-bc7cbc14d755",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C31",
+      "claim": "Deletion of Ilm1 or Sop4 results in an increase in ribosomal proteins associated with EMC3-3xFLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Ilm1 and Sop4 as membrane protein-specific chaperones, we observed a decrease in general chaperone proteins (Ssa1, Ssb1, and Kar2) and an increase in ribosomal proteins associated with EMC3-3xFLAG in strains missing these factors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative mass spectrometry data comparing EMC3-3xFlag interactions in wild type, \u2206ilm1, and \u2206sop4 strains, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "122d7085-b22d-4aee-85d0-95ce98602a68",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C32",
+      "claim": "The EMC interacts with multipass membrane proteins transiting through the ER, membrane protein specific co-chaperones, general chaperones, and the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these pulldown experiments showed that the EMC interacts with multipass membrane proteins transiting through the ER, membrane protein specific co-chaperones, general chaperones, and the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the pulldown experiments described in Figures 1 and 2, supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "ac843bb1-9e33-4411-811a-45cf1fa1f15c",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C33",
+      "claim": "The presence of client-specific co-chaperones (Ilm1 and Sop4) enhances the interaction between the EMC and general chaperones and decreases the association with both multipass transmembrane clients and the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of client-specific co-chaperones (Ilm1 and Sop4) enhances the interaction between the EMC and general chaperones and decreases the association with both multipass transmembrane clients and the ribosome (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative mass spectrometry data comparing EMC interactions in the presence and absence of Ilm1 and Sop4, summarized in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "e6bc8918-d055-4e0d-9b67-9f06aad79ee6",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C34",
+      "claim": "The EMC interacts directly with multipass transmembrane client proteins early during their synthesis, insertion or folding independent of and possibly prior to chaperone engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the EMC interacts directly with multipass transmembrane client proteins early during their synthesis, insertion or folding independent of and possibly prior to chaperone engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that deletion of co-chaperones increases EMC-client interactions and decreases EMC-chaperone interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "45eb8767-1d05-47f9-8112-f8c4168243bf",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C35",
+      "claim": "The profile of the ratio of pulldown-to-total footprint reads across FKS1 and GSC2 revealed prominent increases in EMC-ribosome proximity immediately following the translation of clusters of TMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "The profile of this ratio across FKS1 and GSC2 revealed prominent increases in EMC-ribosome proximity immediately following the translation of clusters of TMDs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data for FKS1 and GSC2, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "5e905b5f-e194-4c8d-a2df-bd7841fb6f30",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C36",
+      "claim": "The enrichment pattern for FKS1 and GSC2 was not observed in strains with two other ER-localized BirA fusions (BirA-Ubc6-TA and BirA-Ssh1).",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment pattern was not observed in strains with two other ER-localized BirA fusions (BirA-Ubc6-TA and BirA-Ssh1), suggesting that the EMC specifically interacts with these nascent chains shortly after synthesis of TMD clusters by the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data comparing Emc5-BirA with BirA-Ubc6-TA and BirA-Ssh1, demonstrating specificity of EMC engagement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "e7cdb690-7cac-41b5-b9f2-627321245284",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C37",
+      "claim": "51 genes reproducibly showed localized peaks of Emc5-specific enrichment (defined as being in the top 10% of eligible genes in each of two biological replicates).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the most enriched genes (FKS1 and GSC2), we identified 51 genes that reproducibly showed localized peaks of Emc5-specific enrichment (defined as being in the top 10% of eligible genes in each of two biological replicates; see Materials and methods) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by systematic analysis of proximity-specific ribosome profiling data, with the list of 51 genes shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "38c92e1f-5e4f-4d3c-8f57-2a6f01b1afdb",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C38",
+      "claim": "The list of putative EMC client proteins includes two genes for which the EMC was previously implicated in their biogenesis (PMA1 and YOR1).",
+      "claim_type": "EXPLICIT",
+      "source": "This list of putative EMC client proteins includes two genes for which the EMC was previously implicated in their biogenesis (PMA1 and YOR1) (Louie et al., 2012; Luo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data identifying PMA1 and YOR1 as EMC clients, with citations to Louie et al., 2012 and Luo et al., 2002 for previous evidence of EMC involvement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "86e9c8fc-7e5c-4462-afa6-8e79c91366fe",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C39",
+      "claim": "Emc5-BirA positional enrichment for client proteins typically was triggered following synthesis of a cluster of TMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Emc5-BirA positional enrichment for client proteins typically was triggered following synthesis of a cluster of TMDs (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of proximity-specific ribosome profiling data for EMC clients, with detailed data in Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "7cb61af3-7d3a-4260-acc6-75cfe43204c2",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C40",
+      "claim": "For Emc5-BirA, the EMC clients showed a continued increase in enrichment such that the maximum was achieved following synthesis of an additional ~100 amino acids after the first TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, for Emc5-BirA, the EMC clients, but not the full set of TMDs, showed a continued increase in enrichment such that the maximum was achieved following synthesis of an additional ~100 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of average enrichments around the first TMD for EMC clients compared to all TMD-containing proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "4677d92b-e323-4103-8afb-fe617cf2a652",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C41",
+      "claim": "The full list of EMC clients was strongly enriched for multipass proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the full list of EMC clients was strongly enriched for multipass proteins (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of the number of TMDs in EMC clients compared to all secretory proteins, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "488326f6-7d9c-46a2-a630-360c49eca7e5",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C42",
+      "claim": "EMC-interacting TMDs were enriched for charged amino acids and depleted for hydrophobic amino acids, including aliphatic residues common in TMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "and EMC-interacting TMDs were enriched for charged amino acids and depleted for hydrophobic amino acids, including aliphatic residues common in TMDs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by amino acid composition analysis of TMDs in EMC clients compared to all TMDs, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "0e7bf1cd-68a0-4a18-bf5b-62d92c8e9c71",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C43",
+      "claim": "Gene ontology term enrichment on the set of putative EMC clients showed enrichment for terms related to transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology term enrichment on the set of putative EMC clients showed enrichment for terms related to transporters; indeed, a majority of clients are classified as transporters (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis of EMC clients, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "82b3fe83-0a93-4578-9b26-3081b1029e4d",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C44",
+      "claim": "Integral membrane glycosyltransferases, including beta-glucan synthase genes (FSK1 and GSC2) defined a second class of putative EMC clients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, integral membrane glycosyltransferases (which must overcome the challenge of transferring hydrophilic sugars onto membrane-associated substrates), including beta-glucan synthase genes (FSK1 and GSC2) defined a second class of putative EMC clients (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis of EMC clients, shown in Figure 4C, with inference about the functional challenges these proteins face.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "fda37a0c-42b5-4f27-90c1-f6878ecc5432",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C45",
+      "claim": "EMC2 depletion affects the abundance of all detected members of the EMC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas EMC2 depletion affects the abundance of all detected members of the EMC complex, depletion of EMC4 has no effect on other EMC members (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SILAC proteomics data comparing EMC2 and EMC4 depletion, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "3a694a1c-3ea3-417e-8008-19181d263907",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C46",
+      "claim": "Depletion of EMC4 has no effect on other EMC members.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas EMC2 depletion affects the abundance of all detected members of the EMC complex, depletion of EMC4 has no effect on other EMC members (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SILAC proteomics data comparing EMC2 and EMC4 depletion, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "ab255e54-8d02-4c4d-8252-f7c4bdeaac16",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C47",
+      "claim": "EMC2 but not EMC4 is structurally integral to the formation of the EMC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus infer that EMC2 but not EMC4 is structurally integral to the formation of the EMC complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that EMC2 depletion affects all EMC members while EMC4 depletion does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "52d9bb0d-7aa4-4606-91d9-056a8b6ccc5a",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C48",
+      "claim": "Proteomic changes in EMC2 and EMC4 knockdown cell lines were strongly correlated, except for EMC components.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic changes in these two EMC-depleted cell lines were measured against a control cell line expressing a non-targeting guide RNA (GAL4). Except for EMC components, almost all observed changes were strongly correlated between the EMC2 and EMC4 knockdown cell lines (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SILAC proteomics data comparing EMC2 and EMC4 depletion, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f4597ffa-75ab-4ccf-9d95-a3241beebb60",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C49",
+      "claim": "The translation rate of the vast majority of potential client proteins is unaffected by EMC2 depletion, with the notable exception of ATP6V0A1.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the translation rate of the vast majority of potential client proteins is unaffected (with the notable exception of ATP6V0A1, which is decreased at both the translational and protein level), consistent with post-translational degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ribosome profiling data comparing translation rates in EMC2-depleted and control cells, shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "4adb216a-f109-492e-9352-67622f25e0d0",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C50",
+      "claim": "Proteins that are upregulated at the protein level in EMC-depleted cells are also upregulated at the translational level, indicating transcriptional and/or translational induction.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, proteins that are upregulated at the protein level are also upregulated at the translational level, indicating transcriptional and/or translational induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of ribosome profiling and proteomics data in EMC-depleted cells, with inference about the mechanism of upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "ba581523-303a-41fe-9eb9-f8be3e063fe0",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C51",
+      "claim": "Proteins upregulated at the translatome and proteome-level in EMC-depleted cells are enriched for gene ontology terms related to the unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from EMC genetic interactions, 2D annotation enrichment (Cox and Mann, 2012) shows that proteins upregulated at the translatome and proteome-level are enriched for gene ontology terms related to the unfolded protein response (Figure 5\u2014figure supplement 1) (Jonikas et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 2D annotation enrichment analysis of proteins upregulated in EMC-depleted cells, shown in Figure 5\u2014figure supplement 1, with citations to Cox and Mann, 2012 for the method and Jonikas et al., 2009 for EMC genetic interactions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "e27e6e41-bd97-44cc-bb06-6234181b1b73",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C52",
+      "claim": "Analysis of the proteins degraded upon EMC-depletion reveals an enrichment for proteins that enter the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, analysis of the proteins degraded upon EMC-depletion reveals an enrichment for proteins that enter the secretory pathway (Supplementary File 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of proteins decreased in EMC-depleted cells, with detailed data in Supplementary File 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "8be4aeb5-28b3-4d97-b8d2-c513a2dbe1c1",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C53",
+      "claim": "Of the 11 proteins decreased by 2-fold or more in both EMC2- and EMC4-depleted cells, 10 have at least one transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, of the 11 proteins decreased by 2-fold or more in both EMC2- and EMC4-depleted cells, 10 have at least one transmembrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of proteins significantly decreased in EMC-depleted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "af9722ac-d814-41d6-b437-87b63d311ef7",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C54",
+      "claim": "The levels of mammalian squalene synthase (FDFT1) and TREX1 decreased upon EMC depletion, confirming a role for the EMC in TA protein insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming a role for the EMC in TA protein insertion (Guna et al., 2012018), the levels of mammalian squalene synthase (FDFT1) and TREX1 (35) decreased upon EMC depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proteomics data showing decreased levels of FDFT1 and TREX1 in EMC-depleted cells, with a citation to Guna et al., 2018 for the EMC's role in TA protein insertion.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "a03f2189-45b2-410d-b8c7-68a15e1e6bc6",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C55",
+      "claim": "The cohort of putative EMC client proteins in human cells is strongly enriched for multipass transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar to that seen in yeast, the cohort of putative EMC client proteins is strongly enriched for multipass transmembrane proteins (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of the number of TMDs in human EMC clients compared to all secretory proteins, shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "337cbb78-668a-41df-8a9f-1daab17ff678",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C56",
+      "claim": "Human EMC clients are more likely to contain charged and aromatic residues distributed throughout the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "and, like the yeast clients, are more likely to contain charged and aromatic residues distributed throughout the TMD (Figure 5E and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by amino acid composition analysis of TMDs in human EMC clients, shown in Figure 5E and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "07cf1fb9-cb11-4aa4-9f7d-5c4fcb460483",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C57",
+      "claim": "GO terms associated with the identified human clients were enriched for transporter related terms which constituted the largest class of proteins whose abundance decreased upon EMC depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mirroring the yeast EMC client profile, GO terms associated with the identified human clients were enriched for transporter related terms which constituted the largest class of proteins whose abundance decreased upon EMC depletion (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis of human EMC clients, shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "dac98252-dac0-4ec7-9ccf-76ae4fe5da39",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C58",
+      "claim": "The predominant function of the EMC is to ensure the biogenesis of a subset of multipass membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work establishes that the predominant function of the EMC is to ensure the biogenesis of a subset of multipass membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary conclusion based on all the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "b6ea7f9e-66c4-4b3d-8af7-3eb565cce5a7",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C59",
+      "claim": "The EMC cotranslationally interacts with nascent polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies are consistent with a model in which the EMC cotranslationally interacts with nascent polypeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data showing EMC engagement during translation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "776e0e4f-4501-4940-93c8-a1459dbfb4aa",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C60",
+      "claim": "Following synthesis, the EMC stabilizes clients and enables recruitment of substrate-specific and general chaperones to achieve a conformation that is competent for function in the ER or for transport to the Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Following synthesis, the EMC stabilizes clients and enables recruitment of substrate-specific and general chaperones to achieve a conformation that is competent for function in the ER or for transport to the Golgi (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a model based on the observation that EMC interacts with clients, chaperones, and co-chaperones, and that clients are destabilized in EMC-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "cad5e864-877f-4972-a169-7d135ce519e8",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C61",
+      "claim": "In the absence of the EMC, newly synthesized client proteins are likely extracted from the membrane for degradation by the UPS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the EMC, newly synthesized client proteins are likely extracted from the membrane for degradation by the UPS (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that client proteins are destabilized and degraded in EMC-depleted cells, with speculation about the degradation mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "14710251-2853-40bd-aa21-c856c396992e",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C62",
+      "claim": "The EMC directly interacts with and stabilizes a range of client proteins consisting primarily of multipass transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the EMC directly interacts with and stabilizes a range of client proteins consisting primarily of multipass transmembrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pulldown experiments in yeast and proteomics in human cells showing EMC interactions with multipass proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "7ebecf92-cc6d-4c03-9f42-88596ae06ff3",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C63",
+      "claim": "The EMC can begin to interact cotranslationally and subsequently stabilize newly synthesized client proteins, likely preventing premature degradation by ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the EMC can begin to interact cotranslationally and subsequently stabilize newly synthesized client proteins, likely preventing premature degradation by ERAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data showing cotranslational EMC engagement and proteomics data showing client destabilization in EMC-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "d6bd1be4-e92c-4bba-b491-98304e432add",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C64",
+      "claim": "The EMC engages transporters and other client proteins enriched for sub-optimal residues in transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the EMC engages transporters and other client proteins enriched for sub-optimal residues in transmembrane helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by amino acid composition analysis of TMDs in EMC clients and gene ontology analysis showing enrichment for transporters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "fd40d73a-778a-48c7-a025-16c0bd548ffa",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C65",
+      "claim": "The EMC typically engages transporters and other membrane proteins enriched for charged residues in TMDs following synthesis of TMD clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proximity-specific ribosome profiling results indicate that the EMC typically engages transporters and other membrane proteins enriched for charged residues in TMDs (Figure 4 B and C) following synthesis of TMD clusters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by proximity-specific ribosome profiling data showing EMC engagement following TMD clusters and amino acid composition analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "eb84c11a-2870-4240-b5ec-51364fce3adf",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C66",
+      "claim": "All of the EMC clients identified in yeast are dependent on SRP and are cotranslationally targeted to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all of the EMC clients identified in yeast are dependent on SRP, a factor that cotranslationally delivers substrates to the ER surface, and are cotranslationally targeted to the ER (Costa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Costa et al., 2018, which characterized the targeting mechanism of EMC clients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "a03c2c54-c07a-49f2-833c-17850c522bfc",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C67",
+      "claim": "All of the mammalian multipass protein EMC substrates were previously found to be cotranslationally targeted to the ER by proximity-specific ribosome profiling studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, all of the mammalian multipass protein EMC substrates were previously found to be cotranslationally targeted to the ER by proximity-specific ribosome profiling studies (Jan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jan et al., 2014, which characterized the targeting mechanism of mammalian EMC clients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f29ad3b0-a487-49b3-b54e-25383c46aedd",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C68",
+      "claim": "The EMC can engage client proteins cotranslationally, perhaps following insertion via the translocon into the ER membrane, likely acting to stabilize folding intermediates and to forestall degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results support a model in which the EMC can engage client proteins cotranslationally, perhaps following insertion via the translocon into the ER membrane, likely acting to stabilize folding intermediates and to forestall degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a model based on proximity-specific ribosome profiling data and proteomics data, with speculation about the mechanism of EMC action.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "af05dd3a-0e94-4c77-9149-0ecc66a637c2",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C69",
+      "claim": "The EMC promotes the biogenesis of a wide range of human multipass client proteins by stabilizing transmembrane regions during biosynthesis and prior to completion of folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the EMC promotes the biogenesis of a wide range of human multipass client proteins by stabilizing transmembrane regions during biosynthesis and prior to completion of folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a proposed model based on the observation that EMC clients have destabilizing features in TMDs and are destabilized in EMC-depleted cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "445599f8-5921-4947-8099-8db1a0cf65ca",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C70",
+      "claim": "A unifying function of the EMC is to accommodate and stabilize the wide diversity of membrane spanning sequences by directly interacting with select membrane proteins with destabilizing features in TMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that a unifying function of the EMC is to accommodate and stabilize the wide diversity of membrane spanning sequences by directly interacting with select membrane proteins with destabilizing features in TMDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a proposed unifying model based on the observation that EMC acts on both multipass proteins and TA proteins with low hydrophobicity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "d055ba03-e16c-4f28-801d-a39c657c1e1f",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C71",
+      "claim": "The TMD of EMC1 was previously shown to bind to and stabilize a destabilized, ER membrane embedded SV40 virion.",
+      "claim_type": "EXPLICIT",
+      "source": "This property is consistent with the previously reported role for the TMD of EMC1 in binding to and stabilizing a destabilized, ER membrane embedded SV40 virion (Bagchi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bagchi et al., 2016, which demonstrated EMC1's role in SV40 virion stabilization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "3477c55d-d7e2-48c1-8841-a27925b9e804",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C72",
+      "claim": "EMC3 may share a common ancestry with the universally conserved YidC/Oxa1/Alb3 protein family in bacteria and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EMC3 may share a common ancestry with the universally conserved YidC/Oxa1/Alb3 protein family in bacteria and mitochondria (Anghel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Anghel et al., 2017, which proposed the evolutionary relationship between EMC3 and YidC/Oxa1/Alb3.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "7a34bd1b-8f2a-4c44-ae9d-f7aabe030f70",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C73",
+      "claim": "YidC plays a dual role in both the insertion of membrane proteins and the stabilization of membrane proteins inserted via the translocon by direct interaction with SecYEG.",
+      "claim_type": "EXPLICIT",
+      "source": "YidC also plays a dual role in both the insertion of membrane proteins (Samuelson et al., 2000) and the stabilization of membrane proteins inserted via the translocon by direct interaction with SecYEG (Nagamori et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Samuelson et al., 2000 and Nagamori et al., 2004, which demonstrated YidC's dual role in membrane protein biogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "7331fd2c-e0ca-4146-8356-1bec40b4189e",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C74",
+      "claim": "The EMC recruits substrate-specific chaperones including Ilm1, Sop4 and Gsf2, as well as general cytoplasmic and lumenal chaperones and oxidoreductases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that in yeast the EMC also recruits substrate-specific chaperones including Ilm1, Sop4 and Gsf2, as well as general cytoplasmic and lumenal chaperones and oxidoreductases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pulldown experiments showing EMC interactions with these chaperones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "5b6a17e7-0af1-4a98-a880-b4339bfef5ce",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C75",
+      "claim": "The EMC may hold folding intermediates in a privileged, ERAD-protected state until the recruitment of substrate-specific chaperones and/or general chaperones to complete folding and allow ER export.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that, in analogy to the recently described function of the Slp1-Emp65 complex for soluble lumenal ER proteins (Zhang et al., 2017), the EMC may also hold folding intermediates in a privileged, ERAD-protected state until the recruitment of substrate-specific chaperones and/or general chaperones to complete folding and allow ER export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a proposed model based on the observation that EMC interacts with clients and chaperones, with analogy to the Slp1-Emp65 complex cited from Zhang et al., 2017.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "6588cbe1-0eac-4e3f-8e7f-0bb2d1ddb9a5",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C76",
+      "claim": "The EMC may compartmentalize multiple functions necessary for membrane protein biogenesis: transmembrane stabilization, recruitment of folding factors and protection of folding intermediates from recognition and degradation by the ER quality control machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the EMC may compartmentalize multiple functions necessary for membrane protein biogenesis: transmembrane stabilization, recruitment of folding factors and protection of folding intermediates from recognition and degradation by the ER quality control machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a proposed model summarizing the multiple functions of the EMC based on all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "086d79b4-5972-48be-84c7-5729b90cf4bc",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C77",
+      "claim": "Less than 50% of newly synthesized CFTR folds properly and traffics out of the ER in healthy cells under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in healthy cells under normal conditions, less than 50% of newly synthesized CFTR folds properly and traffics out of the ER (Kopito, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kopito, 1999, which reported the folding efficiency of CFTR.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f5303248-fecf-4739-9543-1c113eba2302",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C78",
+      "claim": "The treatment for the most common form of cystic fibrosis (CFTR\u2206F508) employs a drug combination including a 'folding corrector' to allow increased ER exit and transport to the cell surface and a 'potentiator' to increase chloride transport activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the treatment for the most common form of cystic fibrosis (CFTR\u2206F508) employs a drug combination including a 'folding corrector' to allow increased ER exit and transport to the cell surface and a 'potentiator' to increase chloride transport activity (Boyle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Boyle et al., 2014, which described the therapeutic strategy for cystic fibrosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f75cac96-b9b6-4b05-81af-f6450c30b81c",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C79",
+      "claim": "Disease-associated mutations often cluster within transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease-associated mutations often cluster within transmembrane helices (Sanders and Myers, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sanders and Myers, 2004, which reported the clustering of disease mutations in TMDs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "991df273-c570-4f9a-9532-bcee6e93645b",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C80",
+      "claim": "Disease-associated mutations are biased towards missense mutations, resulting in the addition of polar or charged residues within transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "and are biased towards missense mutations, resulting in the addition of polar or charged residues within transmembrane helices (Partridge et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Partridge et al., 2002, which reported the bias towards missense mutations in TMDs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "8dcac6ad-cab9-4abb-8592-d095931dd08b",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C81",
+      "claim": "Individual transmembrane domains (TMDs) of multipass proteins are cotranslationally inserted into the lipid bilayer, and this step can often be energetically costly.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual transmembrane domains (TMDs) of multipass proteins are cotranslationally inserted into the lipid bilayer, and this step can often be energetically costly (Cymer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cymer et al., 2015, which discussed the energetics of TMD insertion.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "0932bd94-9989-4879-bf6f-d7478921302b",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C82",
+      "claim": "The length of the TMD may not match the thickness of the lipid bilayer in the ER due to differences in membrane composition between the ER and the protein's final destination.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the length of the TMD may not match the thickness of the lipid bilayer in the ER due to differences in membrane composition between the ER and the protein's final destination (Sharpe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sharpe et al., 2010, which discussed TMD length mismatch with ER membrane thickness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "6c9f44b1-a86d-4340-b970-f40af0a941c9",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C83",
+      "claim": "Transporters, transmembrane ATPases, and solute carriers contain polar and/or charged residues within membrane spanning domains that form aqueous channels within the plane of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Transporters, transmembrane ATPases, and solute carriers, for example, contain polar and/or charged residues within membrane spanning domains that form aqueous channels within the plane of the membrane (Tector and Hartl, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tector and Hartl, 1999, which discussed the presence of charged residues in transporter TMDs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "074f312f-a08c-458d-8ee6-b3f7e2cca188",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C84",
+      "claim": "Sop4 is a near-stoichiometric interactor with the EMC, but shares only a subset of the characteristic genetic interactions of other core components.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Sop4 is a near-stoichiometric interactor with the EMC, it shares only a subset of the characteristic genetic interactions of other core components (Jonikas et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data showing Sop4 interaction with EMC and a citation to Jonikas et al., 2009 for genetic interaction data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "7919b5b9-0de5-4871-8e00-dc7ca932115f",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C85",
+      "claim": "The full function of the EMC complex does not depend on Sop4, and it may play a role distinct from the core complex.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that, in contrast to the six core EMC components (Emc1-6), the full function of the EMC complex does not depend on Sop4, and it may play a role distinct from the core complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that Sop4 has different genetic interactions than core EMC components.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "1186964e-fac5-41a1-a494-54b8f619d30c",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "claim_id": "C86",
+      "claim": "Ilm1 is a poorly characterized ER-localized protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and Ilm1, a poorly characterized ER-localized protein (Lockshon et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lockshon et al., 2007, which characterized Ilm1 localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established the EMC as a conserved ER complex implicated in membrane protein biogenesis, autophagy, lipid transfer, flavivirus replication, and tail-anchored protein insertion across multiple organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize prior literature on EMC function and are all supported by appropriate citations to published work (C1-C13). The authors accurately represent the state of knowledge before their study, providing proper context for their investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "f4b7b07a-1cb9-4627-b9a8-234b5e83c48d",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The EMC physically interacts with multipass membrane proteins (Pma1, Fks1, Spf1), the ER protein Ilm1, and the tail-anchored protein Erg9 in yeast, as demonstrated by FLAG-tagged Emc3 pulldowns and SILAC mass spectrometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are supported by complementary experimental approaches: initial FLAG pulldowns (Figure 1A) and quantitative SILAC validation (Figure 1B). The use of Orm1 as a control strengthens the specificity claims. The detection of both stable EMC components and transient client interactions is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ilm1 functions as a substrate-specific co-chaperone for Fks1, showing near-stoichiometric interaction with Fks1 and interactions with EMC components and general chaperones; deletion of ILM1 causes severe calcofluor white sensitivity similar to FKS1 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of Ilm1 as an Fks1 co-chaperone is well-supported by multiple lines of evidence: near-stoichiometric Ilm1-Fks1 interaction (C22, Figure 1C), interactions with EMC and chaperones (C23), and functional validation through calcofluor white sensitivity (C25, Figure 1D). Prior literature citations (C18-C21, C24) appropriately contextualize the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deletion of substrate-specific co-chaperones (Ilm1 or Sop4) increases EMC association with multipass membrane protein clients and ribosomes while decreasing association with general chaperones, suggesting the EMC directly engages clients early during synthesis prior to chaperone recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 present a coherent model supported by quantitative SILAC data (Figure 2B). The observation that co-chaperone deletion increases rather than decreases EMC-client interactions effectively refutes a simple bridging model and supports direct EMC-client engagement. The increased ribosome association (C31) further supports cotranslational engagement. The inference about timing (C34) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Proximity-specific ribosome profiling reveals that the EMC cotranslationally engages 51 client proteins, with enrichment occurring immediately following synthesis of TMD clusters and continuing for ~100 amino acids after the first TMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 describe a sophisticated proximity-specific ribosome profiling approach with appropriate controls (BirA-Ubc6-TA, BirA-Ssh1, Sec63-BirA). The identification of 51 reproducible clients using a top 10% threshold in two biological replicates (C37) is methodologically sound. The temporal pattern of engagement (C35, C39, C40) is clearly demonstrated in Figure 3B and 3D. The inclusion of previously known clients (PMA1, YOR1) validates the approach (C38).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "bb304714-efcc-4597-954c-8676ebf4cf6c",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EMC clients in yeast are strongly enriched for multipass membrane proteins, particularly transporters and glycosyltransferases, with TMDs enriched for charged amino acids and depleted for hydrophobic residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 characterize the properties of EMC clients through systematic analysis. The enrichment for multipass proteins (C41, Figure 4A), unusual TMD composition (C42, Figure 4B), and functional enrichment for transporters (C43, Figure 4C) are all supported by appropriate statistical analyses with confidence intervals. The identification of glycosyltransferases as a second client class (C44) is supported by gene ontology analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "d2cca27f-97b2-4813-bac6-17c7bc6028cd",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In human cells, EMC2 depletion affects all EMC complex members while EMC4 depletion does not, indicating EMC2 is structurally integral to complex formation; however, both depletions produce highly correlated proteomic changes in non-EMC proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by SILAC proteomics data (Figure 5A-B). The differential effects of EMC2 vs EMC4 depletion on complex stability (C45-C46) are clearly shown, and the inference about structural roles (C47) is reasonable. The strong correlation of downstream effects (C48) supports the conclusion that both perturbations affect EMC function despite different effects on complex stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EMC depletion in human cells causes post-translational degradation of client proteins (translation rates unchanged) while inducing the unfolded protein response; depleted proteins are enriched for secretory pathway proteins, particularly transmembrane proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 integrate ribosome profiling and proteomics data to distinguish transcriptional/translational from post-translational effects. The observation that client protein levels decrease without changes in translation rates (C49, Figure 5C) supports post-translational degradation. The UPR induction (C51) is expected and validated by gene ontology analysis. The enrichment for transmembrane proteins among depleted proteins (C53) and confirmation of TA protein clients (C54) are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "52212e3c-65cf-4ec4-98fa-af53cdd4acac",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Human EMC clients mirror yeast clients in being strongly enriched for multipass transmembrane proteins, particularly transporters, with TMDs containing charged and aromatic residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 demonstrate conservation of EMC function between yeast and human cells. The parallel enrichments for multipass proteins (C55, Figure 5D), unusual TMD composition (C56, Figure 5E), and transporter function (C57, Figure 5F) are all supported by appropriate analyses. This conservation strengthens the overall conclusions about EMC function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "fdc7592d-73a4-45f0-b63f-9aae4dcc73b0",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The EMC's predominant function is ensuring biogenesis of multipass membrane proteins through cotranslational engagement, client stabilization, chaperone recruitment, and protection from degradation; in EMC absence, clients are degraded by the ubiquitin-proteasome system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 synthesize the major findings into a coherent model. The predominant function claim (C58) is supported by the breadth of data across both organisms. Cotranslational engagement (C59) is demonstrated by proximity profiling. Client stabilization and chaperone recruitment (C60) are supported by pulldown and proteomics data. The degradation mechanism (C61) is reasonably inferred from the post-translational loss of clients, though the specific involvement of UPS is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Three conserved principles of EMC action are: (1) direct interaction with and stabilization of multipass clients, (2) cotranslational engagement preventing premature ERAD, and (3) engagement of transporters with suboptimal TMD residues following TMD cluster synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 articulate the three main principles supported by the study. Direct interaction (C62) is shown by pulldowns and proteomics. Cotranslational engagement (C63, C65) is demonstrated by proximity profiling. The substrate specificity (C64, C65) is supported by compositional and functional analyses. The citations to prior work on SRP-dependence (C66-C67) appropriately contextualize the findings. The model (C68) reasonably integrates the data, though some mechanistic details remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The EMC's unifying function is accommodating and stabilizing diverse membrane-spanning sequences with destabilizing features, analogous to YidC/Oxa1/Alb3 family proteins that also perform dual insertion and stabilization roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 propose a unifying model for EMC function. The stabilization of destabilizing TMD features (C69-C70) is well-supported by the compositional analyses and functional data. The comparison to EMC1's role in SV40 virion stabilization (C71) and the evolutionary connection to YidC/Oxa1/Alb3 (C72-C73) are appropriately cited and provide useful conceptual frameworks, though the mechanistic parallels remain somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "471bacbf-65ac-49b5-add8-a61a6386aec9",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The EMC recruits substrate-specific and general chaperones and may hold folding intermediates in an ERAD-protected state, compartmentalizing multiple functions: TMD stabilization, chaperone recruitment, and protection from quality control machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 extend the model to include chaperone recruitment and ERAD protection. The recruitment of various chaperones (C74) is directly demonstrated by pulldown data. The ERAD protection model (C75-C76) is reasonably inferred from the observation that clients are degraded upon EMC depletion and the analogy to the Slp1-Emp65 complex, though direct evidence for ERAD protection is limited. The multi-functional model (C76) effectively synthesizes the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context: Membrane protein folding is challenging due to energetic costs of TMD insertion, TMD length mismatches with ER membrane thickness, and functional requirements for charged residues in transporters; disease mutations often add polar/charged residues to TMDs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 provide important background context from prior literature, all appropriately cited. These claims establish the biological significance of the EMC's function in accommodating challenging membrane protein features. The citations are accurate representations of the referenced work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    },
+    {
+      "id": "e5069899-0846-4ff8-b487-35cab2c9b171",
+      "content_id": "c9acb455-e079-4213-a29b-2d897996d098",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sop4 is a near-stoichiometric EMC interactor but has distinct genetic interactions from core components, suggesting it may play a specialized role; Ilm1 is a poorly characterized ER-localized protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 provide important context about accessory EMC components. The observation about Sop4's distinct genetic interactions (C84-C85) is appropriately cited and helps interpret its role. The characterization of Ilm1 (C86) is accurate based on prior literature and motivates the authors' investigation of its function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:46:54.812802Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f0c0411-b4d3-4237-80ad-dda75cdc2288",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "141cbf3f-d9e6-4ac1-87bb-ef657cf45e5b",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "87415d9a-8eb3-4e86-8c6e-ab7cb55a84e8",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "a44d1af7-adbe-486f-8a9e-a54fe30eec05",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "c9cb4cde-8949-4138-a1b5-bc56684a7b5a",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "840cbddf-6a6a-4ffa-af99-adea4290505f",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "4189e5ef-b10a-4017-8808-619d3b9b4571",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "0b7dde93-bc63-41bd-9185-24d588d10db7",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "1d867336-d9ba-4598-91e2-2de1d71dfd1f",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "2a9c4643-e0d2-4f8e-afea-82a5fac65a8a",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "cb898149-550a-4e7e-85e5-937041f045dc",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "6b36d66d-998f-42aa-8d0d-c7a2f1d9c908",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "315f3ccd-4316-420c-9990-ea662731d302",
+      "result_id": "637704d0-ffa8-4826-a6a8-37e2a128e7ef"
+    },
+    {
+      "claim_id": "378d5272-bdbf-4adb-85c7-0447d6ae797c",
+      "result_id": "f4b7b07a-1cb9-4627-b9a8-234b5e83c48d"
+    },
+    {
+      "claim_id": "65424c7a-e88f-4e5e-b84f-506d7f92adb9",
+      "result_id": "f4b7b07a-1cb9-4627-b9a8-234b5e83c48d"
+    },
+    {
+      "claim_id": "d0ea6db3-e3c9-404a-b764-9cff4260df10",
+      "result_id": "f4b7b07a-1cb9-4627-b9a8-234b5e83c48d"
+    },
+    {
+      "claim_id": "0468d020-e1fc-43fa-b23b-a095aaed1da8",
+      "result_id": "f4b7b07a-1cb9-4627-b9a8-234b5e83c48d"
+    },
+    {
+      "claim_id": "00c65546-663f-467e-b0e4-c54c78f223c1",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "06785677-3856-4620-b2d8-ecd1cb09eb23",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "23928a76-d68f-455d-bc8d-04c575bffa02",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "f7b2b2de-7927-445e-bc59-3ed23c691ab8",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "fe6ba727-bf10-4da3-b3de-84c73356e3ed",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "30e98dcb-e564-4ac1-ade4-b73cbea9e65a",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "23038a0a-85de-4a7c-b530-7d5388e24723",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "571e2b77-6fca-4b5a-93d2-3fc5f5693ced",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "602858c7-8f3c-44d2-9e7d-54a82c8e2541",
+      "result_id": "51a92da5-c8ec-48d1-9f6d-9cd86570fd0d"
+    },
+    {
+      "claim_id": "67549f1b-54ba-4e32-ac1f-e37b75429c41",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "bdefa0d1-f232-40ea-8fa1-ce81eebfa5f4",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "d95903f7-afe1-4c2a-b67d-f17c616d9d3d",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "a984ddf0-f4ea-4c1d-9222-08da6b061325",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "75d993f6-22fa-423f-adb9-bc7cbc14d755",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "122d7085-b22d-4aee-85d0-95ce98602a68",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "ac843bb1-9e33-4411-811a-45cf1fa1f15c",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "e6bc8918-d055-4e0d-9b67-9f06aad79ee6",
+      "result_id": "a0f4a501-f7e7-40c1-b71e-c2e7bb55c939"
+    },
+    {
+      "claim_id": "45eb8767-1d05-47f9-8112-f8c4168243bf",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "5e905b5f-e194-4c8d-a2df-bd7841fb6f30",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "e7cdb690-7cac-41b5-b9f2-627321245284",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "38c92e1f-5e4f-4d3c-8f57-2a6f01b1afdb",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "86e9c8fc-7e5c-4462-afa6-8e79c91366fe",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "7cb61af3-7d3a-4260-acc6-75cfe43204c2",
+      "result_id": "c0f909d4-7961-4608-a6aa-d4aea91ec78b"
+    },
+    {
+      "claim_id": "4677d92b-e323-4103-8afb-fe617cf2a652",
+      "result_id": "bb304714-efcc-4597-954c-8676ebf4cf6c"
+    },
+    {
+      "claim_id": "488326f6-7d9c-46a2-a630-360c49eca7e5",
+      "result_id": "bb304714-efcc-4597-954c-8676ebf4cf6c"
+    },
+    {
+      "claim_id": "0e7bf1cd-68a0-4a18-bf5b-62d92c8e9c71",
+      "result_id": "bb304714-efcc-4597-954c-8676ebf4cf6c"
+    },
+    {
+      "claim_id": "82b3fe83-0a93-4578-9b26-3081b1029e4d",
+      "result_id": "bb304714-efcc-4597-954c-8676ebf4cf6c"
+    },
+    {
+      "claim_id": "fda37a0c-42b5-4f27-90c1-f6878ecc5432",
+      "result_id": "d2cca27f-97b2-4813-bac6-17c7bc6028cd"
+    },
+    {
+      "claim_id": "3a694a1c-3ea3-417e-8008-19181d263907",
+      "result_id": "d2cca27f-97b2-4813-bac6-17c7bc6028cd"
+    },
+    {
+      "claim_id": "ab255e54-8d02-4c4d-8252-f7c4bdeaac16",
+      "result_id": "d2cca27f-97b2-4813-bac6-17c7bc6028cd"
+    },
+    {
+      "claim_id": "52d9bb0d-7aa4-4606-91d9-056a8b6ccc5a",
+      "result_id": "d2cca27f-97b2-4813-bac6-17c7bc6028cd"
+    },
+    {
+      "claim_id": "f4597ffa-75ab-4ccf-9d95-a3241beebb60",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "4adb216a-f109-492e-9352-67622f25e0d0",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "ba581523-303a-41fe-9eb9-f8be3e063fe0",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "e27e6e41-bd97-44cc-bb06-6234181b1b73",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "8be4aeb5-28b3-4d97-b8d2-c513a2dbe1c1",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "af9722ac-d814-41d6-b437-87b63d311ef7",
+      "result_id": "22ce2cfc-4f4b-4849-9ddf-0746d01546e2"
+    },
+    {
+      "claim_id": "a03f2189-45b2-410d-b8c7-68a15e1e6bc6",
+      "result_id": "52212e3c-65cf-4ec4-98fa-af53cdd4acac"
+    },
+    {
+      "claim_id": "337cbb78-668a-41df-8a9f-1daab17ff678",
+      "result_id": "52212e3c-65cf-4ec4-98fa-af53cdd4acac"
+    },
+    {
+      "claim_id": "07cf1fb9-cb11-4aa4-9f7d-5c4fcb460483",
+      "result_id": "52212e3c-65cf-4ec4-98fa-af53cdd4acac"
+    },
+    {
+      "claim_id": "dac98252-dac0-4ec7-9ccf-76ae4fe5da39",
+      "result_id": "fdc7592d-73a4-45f0-b63f-9aae4dcc73b0"
+    },
+    {
+      "claim_id": "b6ea7f9e-66c4-4b3d-8af7-3eb565cce5a7",
+      "result_id": "fdc7592d-73a4-45f0-b63f-9aae4dcc73b0"
+    },
+    {
+      "claim_id": "776e0e4f-4501-4940-93c8-a1459dbfb4aa",
+      "result_id": "fdc7592d-73a4-45f0-b63f-9aae4dcc73b0"
+    },
+    {
+      "claim_id": "cad5e864-877f-4972-a169-7d135ce519e8",
+      "result_id": "fdc7592d-73a4-45f0-b63f-9aae4dcc73b0"
+    },
+    {
+      "claim_id": "14710251-2853-40bd-aa21-c856c396992e",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "7ebecf92-cc6d-4c03-9f42-88596ae06ff3",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "d6bd1be4-e92c-4bba-b491-98304e432add",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "fd40d73a-778a-48c7-a025-16c0bd548ffa",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "eb84c11a-2870-4240-b5ec-51364fce3adf",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "a03c2c54-c07a-49f2-833c-17850c522bfc",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "f29ad3b0-a487-49b3-b54e-25383c46aedd",
+      "result_id": "6fd3ea50-c074-43b9-9627-ecb274c8c5e8"
+    },
+    {
+      "claim_id": "af05dd3a-0e94-4c77-9149-0ecc66a637c2",
+      "result_id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb"
+    },
+    {
+      "claim_id": "445599f8-5921-4947-8099-8db1a0cf65ca",
+      "result_id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb"
+    },
+    {
+      "claim_id": "d055ba03-e16c-4f28-801d-a39c657c1e1f",
+      "result_id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb"
+    },
+    {
+      "claim_id": "3477c55d-d7e2-48c1-8841-a27925b9e804",
+      "result_id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb"
+    },
+    {
+      "claim_id": "7a34bd1b-8f2a-4c44-ae9d-f7aabe030f70",
+      "result_id": "e2d3a986-9a4c-4373-a52a-1a4522201dcb"
+    },
+    {
+      "claim_id": "7331fd2c-e0ca-4146-8356-1bec40b4189e",
+      "result_id": "471bacbf-65ac-49b5-add8-a61a6386aec9"
+    },
+    {
+      "claim_id": "5b6a17e7-0af1-4a98-a880-b4339bfef5ce",
+      "result_id": "471bacbf-65ac-49b5-add8-a61a6386aec9"
+    },
+    {
+      "claim_id": "6588cbe1-0eac-4e3f-8e7f-0bb2d1ddb9a5",
+      "result_id": "471bacbf-65ac-49b5-add8-a61a6386aec9"
+    },
+    {
+      "claim_id": "086d79b4-5972-48be-84c7-5729b90cf4bc",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "f5303248-fecf-4739-9543-1c113eba2302",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "f75cac96-b9b6-4b05-81af-f6450c30b81c",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "991df273-c570-4f9a-9532-bcee6e93645b",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "8dcac6ad-cab9-4abb-8592-d095931dd08b",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "0932bd94-9989-4879-bf6f-d7478921302b",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "6c9f44b1-a86d-4340-b970-f40af0a941c9",
+      "result_id": "cb5d62db-0c7e-4c76-90c1-a22c4566ac27"
+    },
+    {
+      "claim_id": "074f312f-a08c-458d-8ee6-b3f7e2cca188",
+      "result_id": "e5069899-0846-4ff8-b487-35cab2c9b171"
+    },
+    {
+      "claim_id": "7919b5b9-0de5-4871-8e00-dc7ca932115f",
+      "result_id": "e5069899-0846-4ff8-b487-35cab2c9b171"
+    },
+    {
+      "claim_id": "1186964e-fac5-41a1-a494-54b8f619d30c",
+      "result_id": "e5069899-0846-4ff8-b487-35cab2c9b171"
+    }
+  ],
+  "comparisons": []
+}

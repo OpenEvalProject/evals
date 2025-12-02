@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors successfully expressed and purified high-quality recombinant proteins including YcgC, YcgC S200A, CobB, CobB H110Y, and site-specifically acetylated RutR variants (AcK52 and AcK62) using genetic code expansion. All proteins showed >95% purity, similar oligomeric states by SEC, and quantitative site-specific acetylation was confirmed by immunoblotting, ESI-MS, and UPLC-MS/MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C46 collectively demonstrate rigorous protein production and characterization. Multiple orthogonal methods (SDS-PAGE, SEC, immunoblotting, ESI-MS, UPLC-MS/MS) confirm protein quality, purity, and site-specific acetylation. The construction of the \u0394ycgC\u0394cobB strain (C37) provides appropriate controls to prevent endogenous deacetylation. The data in Figures 1A-D provide strong visual evidence supporting these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C53",
+      "C54",
+      "C87"
+    ],
+    "result": "YcgC does not exhibit deacetylase activity toward site-specifically acetylated RutR AcK52 or AcK62. Both immunoblotting with anti-acetyl-lysine antibodies and ESI-MS analysis showed no reduction in acetylation levels after YcgC treatment, and no proteolytic cleavage of RutR was observed in the presence of YcgC prepared by the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C50, C53, C54, and C87 are strongly supported by convergent evidence from immunoblotting (Figure 2A) and ESI-MS (Figure 2B, Figure 2\u2014figure supplement 1). The use of site-specifically acetylated substrates eliminates ambiguity about acetylation stoichiometry. Both the catalytically inactive mutant YcgC S200A and wild-type YcgC showed identical lack of activity, further supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "CobB strongly deacetylates RutR AcK52 (>60% deacetylation) but only marginally deacetylates RutR AcK62, as demonstrated by immunoblotting and ESI-MS showing a 42 Da mass shift consistent with acetyl group removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are well-supported by both immunoblotting (Figure 2A) and ESI-MS data (Figure 2B, Figure 2\u2014figure supplement 1). The differential activity of CobB toward the two acetylation sites is clearly demonstrated, and the 42 Da mass shift is consistent with established knowledge of acetyl group mass. The use of the catalytically inactive CobB H110Y mutant as a negative control strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The anti-acetyl-lysine antibody CST9441 used by Tu et al. lacks specificity for acetylated RutR, detecting both acetylated and non-acetylated RutR proteins and failing to detect CobB-catalyzed deacetylation. In contrast, the abcam ab21263 antibody specifically detects only site-specifically acetylated RutR and shows appropriate signal reduction upon CobB treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by comparative immunoblotting experiments (Figure 3A-B) using both antibodies. The CST9441 antibody's detection of non-acetylated RutR (C56) and failure to detect CobB-mediated deacetylation (C58) demonstrate its unsuitability for these assays. The authors provide two plausible explanations: detection of trace non-enzymatic acetylation (C59) or cross-reactivity (C60). ESI-MS data (C62) showing no additional acetylations supports the inference that any additional acetylation is at very low stoichiometry (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Treatment with YcgC prepared by Tu et al., but not YcgC prepared by the authors or YcgC S200A from Tu et al., causes N-terminal proteolytic cleavage of RutR. Importantly, the cleaved RutR proteins remain acetylated at AcK52 and AcK62, demonstrating that proteolytic cleavage is not preceded by deacetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are well-supported by immunoblotting data (Figure 3A, Figure 3\u2014figure supplement 1). The differential effects of different YcgC preparations (C64) strongly suggest contamination in the Tu et al. preparation (C65). The inference that cleavage occurs from the N-terminus (C66) is supported by His6-tag staining patterns. Critically, the observation that cleaved RutR remains acetylated (C67) directly contradicts the Tu et al. model and is supported by anti-acetyl-lysine antibody staining (C68). The ability to express full-length non-acetylated RutR (C69) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C92"
+    ],
+    "result": "LC-MS/MS analysis revealed that the YcgC preparation from Tu et al. contains multiple protein contaminants including several proteases and peptidases (both metallo- and serine proteases), notably including Lon protease, which were absent from both the YcgC S200A preparation from Tu et al. and the authors' YcgC preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C92 are supported by LC-MS/MS data presented in Supplementary files 1 and 2. The identification of multiple proteases, particularly Lon protease (C72), provides a plausible explanation for the observed proteolytic cleavage of RutR. The specificity of contamination to only the wild-type YcgC preparation from Tu et al. (C70) strengthens the conclusion that the observed effects are due to contaminants rather than YcgC activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89"
+    ],
+    "result": "LC-MS/MS analysis of RutR from Tu et al. revealed that it is not quantitatively acetylated as reported, but rather has only ~1% overall acetylation occupancy. The highest acetylation site is K150 (~0.7%), followed by K21 (~0.3%), K95 (~0.06%), and K52 (~0.02%). Critically, K62, which Tu et al. identified as the most functionally important site, was not acetylated at all despite being detectable in the non-acetylated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 and C89 are strongly supported by comprehensive LC-MS/MS analysis with 90% sequence coverage (C78). The quantitative analysis of acetylation occupancy (C77, C79, C81-C84) is based on MS intensity data, which the authors justify by citing that acetylated and non-acetylated peptides show similar ionization efficiencies (C80). The complete absence of acetylation at K62 (C85), despite its detectability, is particularly significant as it directly contradicts the central claim of Tu et al. regarding this site's functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C86",
+      "C88",
+      "C91"
+    ],
+    "result": "The authors conclude that YcgC is not a deacetylase, CobB is the only deacetylase in E. coli, YcgC should not be annotated as a deacetylase in databases, and the model presented by Tu et al. needs to be revised. Specifically, RutR autoproteolysis is not preceded by YcgC-catalyzed deacetylation at AcK52 and/or AcK62.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C32, C86, C88, and C91 represent the major conclusions of the manuscript and are well-supported by the collective experimental evidence. The lack of YcgC deacetylase activity is demonstrated by multiple orthogonal methods (immunoblotting, ESI-MS). The contamination of the Tu et al. YcgC preparation with proteases explains the observed proteolytic effects. The low acetylation occupancy of RutR from Tu et al., particularly the absence of K62 acetylation, undermines the functional significance claimed by Tu et al. The conclusion that CobB is the only deacetylase (C31) is reasonable given the evidence, though it relies on the assumption that no other uncharacterized deacetylases exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors note that Lon protease, detected in the Tu et al. YcgC preparation, is normally deleted from commercial expression strains and has the HTH LuxR-type transcriptional regulator RscA as a well-characterized substrate. They speculate that the HTH TetR-type transcriptional repressor RutR might also be a Lon protease substrate, though this requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 include both established knowledge (C73, C74) and speculation (C75). While the detection of Lon protease is supported by LC-MS/MS data (C72), the hypothesis that RutR is a Lon substrate (C75) is explicitly stated as speculation requiring further investigation. The structural similarity between RscA and RutR provides a plausible basis for this hypothesis, but no direct experimental evidence is provided to test it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Threading analysis of YcgC using iTASSER revealed no obvious homologies to enzymes with deacetylase or protease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by computational analysis using iTASSER (Supplementary file 4). This negative result is consistent with the experimental findings that YcgC lacks deacetylase activity. However, the absence of obvious homology does not definitively rule out novel enzymatic activities, as the authors acknowledge by stating 'no obvious homologies' rather than claiming no homology exists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The introduction provides established background knowledge on lysine acetylation, deacetylases across different organisms, and the known properties of YcgC and CobB, drawing on published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 represent background knowledge and literature review that contextualizes the study. These claims are appropriately supported by citations to published work and represent established scientific knowledge. They provide necessary context for understanding the significance of the experimental findings but do not constitute novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C36",
+      "C42"
+    ],
+    "result": "The authors accurately cite the claims made by Tu et al. (2015) regarding YcgC as a novel deacetylase family, its mechanism involving serine residue S200, its deacetylation of RutR at K52 and K62, and the reported quantitative acetylation of RutR expressed in E. coli W3110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C29, C36, and C42 accurately represent the prior work by Tu et al. that this manuscript seeks to refute. These are appropriately cited and provide the necessary context for the contradictory findings presented in this study. The accuracy of these attributions is important for the validity of the rebuttal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The authors cite Cho et al. (2016) to support the claim that acetylated and non-acetylated peptides show similar ionization efficiencies, allowing MS intensities to be used for quantification of acetylation occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is appropriately supported by citation to Cho et al., 2016. This methodological justification is important for the quantitative analysis of acetylation occupancy presented in claims C77-C85. However, the authors acknowledge limitations by stating they 'cannot determine precise RutR-acetylation stoichiometries by LC-MS/MS without performing a standard curve' (C79), which appropriately qualifies their quantitative conclusions.",
+    "result_type": "MINOR"
+  }
+]

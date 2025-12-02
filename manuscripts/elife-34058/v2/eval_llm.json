@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors generated a developmental transcriptomics resource by performing mRNA-Seq with at least two biological replicates across eight time points of Drosophila flight muscle development. Mfuzz clustering identified 40 distinct genome-wide clusters (155-703 genes each), which were validated by confirming that protein expression dynamics of indicator genes (Twist, Salm, Aret, Kon, \u03b2Tub60D, \u03b2PS-Integrin, Talin) matched their mRNA expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 collectively establish a well-validated transcriptomics resource. The use of biological replicates (C11), systematic clustering (C12-C13), and extensive validation with antibody staining and GFP fusion proteins (C14-C25) provide strong convergent evidence. The close correlation between mRNA and protein dynamics for multiple indicator genes across different developmental stages supports the reliability of the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Two late up-regulated clusters (13 and 22) show strong enrichment for sarcomeric genes. Members of these clusters become detectable at 30 hr APF or later at 48 hr APF, with strong up-regulation from 30 hr to 72 hr APF confirmed at both mRNA and protein levels. Four late up-regulated clusters (3, 28, 39, and 22) show enrichment for mitochondrial genes, and these clusters are also enriched for 'salm-core genes' that are highly expressed in flight muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 are well-supported by the clustering analysis, GO enrichment data (Figure 3), and protein validation experiments (Figure 2, Figure 5\u2014figure supplement 1). The convergence of mRNA-Seq data, GO enrichment analysis, and protein localization studies provides strong evidence for the temporal coordination of sarcomeric and mitochondrial gene expression during late muscle development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PCA analysis reveals that developmental time is the major source of variance in the transcriptome, with a notable transition after 30 hr APF. Between 30 and 72 hr APF, many sarcomeric genes are strongly up-regulated, while GO-terms related to cell proliferation, cell cycle, and Notch signaling are down-regulated. Genes up-regulated during this period are enriched for sarcomeric proteins, 'salm core genes', and mitochondrial/sarcomeric clusters 13 and 22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are strongly supported by multiple complementary analyses including PCA (Figure 4A), differential expression analysis (Figure 4B-D), GO enrichment (Figure 4E), and cluster enrichment (Figure 4F). The convergence of these independent analytical approaches provides robust evidence for a major transcriptional transition after 30 hr APF focused on sarcomeric and mitochondrial gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Quantitative morphometric analysis reveals three sequential phases of sarcomere morphogenesis: (1) sarcomere assembly at ~30 hr APF with constant sarcomere length (~2.0 \u03bcm) and width (~0.5 \u03bcm); (2) sarcomere addition from 34-48 hr APF, increasing from ~100 to ~230 sarcomeres per myofibril; (3) sarcomere maturation after 48 hr APF with myofibril diameter growing 3-fold (0.46 to 1.43 \u03bcm) and fiber cross-sectional area growing 4-fold. Critically, the total number of myofibrils remains constant at ~2000 per fiber throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are well-supported by systematic quantitative measurements using the custom MyofibrilJ plugin (Figure 5, Supplementary file 3). The measurements are internally consistent and define clear developmental phases. The finding that myofibril number remains constant (C49) while individual myofibrils grow is particularly well-documented and supports the conclusion that no new myofibrils are added after initial assembly (C50). Sample sizes (N>10) and statistical analyses are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Different sarcomeric proteins show distinct temporal incorporation patterns during myofibril maturation. Some proteins (Unc-89/Obscurin, Myosin heavy chain) are present in regular patterns from 30 hr APF, while others (Flightin, Myofilin, Strn-Mlck) are only incorporated from 48 hr APF onward, supporting the concept of sequential sarcomere maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by immunofluorescence imaging data (Figure 5\u2014figure supplement 1). The differential timing of protein incorporation is clearly documented and consistent with the mRNA-Seq data showing late up-regulation of these genes. This provides molecular evidence for the proposed sequential maturation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Immature myofibrils spontaneously contract starting at 30 hr APF, with contractions increasing in strength and frequency until 48 hr APF, then ceasing by 72 hr APF. This demonstrates that immature contractile myofibrils are generated during sarcomere assembly and likely acquire stretch-sensitivity as they mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by live imaging and quantification of spontaneous contractions (Figure 5I-J, Figure 5\u2014video 1). The temporal pattern of contractions correlates well with the morphological phases of sarcomere development. However, C58's inference about stretch-sensitivity acquisition is reasonable but not directly demonstrated\u2014it would require functional testing of stretch-activation at different developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sarcomeric clusters 13 and 22 are enriched for 'salm-core genes'. In salmIR flight muscles, there is strong down-regulation of sarcomeric and mitochondrial gene expression at 24, 30, and particularly 72 hr APF. Members of cluster 22 are not only down-regulated at 72 hr APF but also show reduced induction from 30 to 72 hr APF in salmIR compared to wild type, suggesting Salm (along with other factors) is required for the transcriptional boost of sarcomeric proteins after 30 hr APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are well-supported by comparative mRNA-Seq analysis between wild-type and salmIR muscles (Figure 6A-D, Figure 6\u2014figure supplements). The enrichment analysis, volcano plots, and violin plots provide strong quantitative evidence. The caveat that 'other factors' are also required (C63) is appropriately stated, as the transcriptional transition still partially occurs in salm absence (C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Using Act88F-GAL4 to knock down salm after 18 hr APF reduces Salm protein levels at 24 hr APF to undetectable levels by 72 hr APF. This late salm knock-down results in strongly reduced levels of Strn-Mlck, Fln, and Mhc proteins at 90 hr APF compared to controls, suggesting Salm contributes to the transcriptional boost of sarcomeric proteins after 30 hr APF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by the experimental design using temporal control of knock-down (C64-C65, Figure 6\u2014figure supplement 2) and quantitative live imaging of GFP fusion proteins normalized to fluorescent beads (C66, Figure 6D-H). The approach successfully separates late requirements from early fate determination functions. The conclusion (C67) is appropriately cautious, stating Salm 'contributes to' rather than 'is solely responsible for' the transcriptional transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Act88F >> salmIR myofibrils show actin accumulations at broadened Z-discs (a landmark of nemaline myopathies) at 72-90 hr APF and in adults, without significant changes in myofibril width. However, sarcomeres display a strong defect in length growth after 48 hr APF, reaching only 2.8 \u03bcm in adults instead of the normal 3.2 \u03bcm, demonstrating that Salm (along with other factors) is required for normal sarcomere maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are well-supported by quantitative morphometric analysis (Figure 7A-J, Supplemental File 3). The measurements show clear defects in sarcomere length growth while myofibril width remains normal, indicating a specific defect in the maturation phase. The statistical analysis (Tukey's multiple comparison, p<0.001) is appropriate. The connection to nemaline myopathies (C69) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Act88F >> salmIR flies are flightless and show rupturing of adult muscle fibers within 1 day after eclosion, demonstrating the importance of proper sarcomere maturation for preventing muscle atrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by flight tests (Figure 7\u2014figure supplement 1A) and imaging of muscle fiber integrity (Figure 7\u2014figure supplement 1B-G). The causal link between defective sarcomere maturation and muscle atrophy (C75) is reasonably inferred from the temporal sequence and phenotypic correlation, though it remains somewhat inferential without rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "At 48 hr APF, Act88F >> salmIR fibers twitch less frequently than controls and lack double twitches. At 72 hr APF, salmIR fibers fail to stop contracting and show frequent uncoordinated spontaneous contractions with different myofibril bundles twitching at different times, demonstrating disrupted sarcomere maturation with the likely consequence that myofibrils fail to acquire normal stretch-activation sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by live imaging and quantification of spontaneous contractions (Figure 7K-O, Figure 7\u2014videos 1-2). The persistence of contractions at 72 hr APF when wild-type muscles have ceased contracting provides strong evidence for disrupted maturation. The inference about failed stretch-activation acquisition (C78) is reasonable given the functional context, though direct measurement of stretch-activation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Strn-Mlck, expressed only after 30 hr APF and incorporated during sarcomere maturation, exemplifies a gene regulated during the transcriptional transition. In Strn-Mlck mutants, sarcomere morphology is initially normal, but sarcomeres overgrow to >3.5 \u03bcm at 80 hr APF, then appear to hyper-contract resulting in short, thick sarcomeres in 1-day adults. These mutants are flightless and display ruptured fibers during the first days of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by expression analysis (Figure 5\u2014figure supplement 1E, Figure 6\u2014figure supplement 3E) and quantitative morphometric measurements (Figure 8). The Strn-Mlck mutant phenotype provides strong genetic evidence that precise transcriptional control is required for proper sarcomere size regulation. The overgrowth followed by hyper-contraction is clearly documented, and the flightless phenotype with fiber rupture is consistent with the salm knock-down results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Sarcomere maturation must be precisely controlled at the transcriptional level to enable precise growth of sarcomeres to their final mature size, ensuring lifelong function of the contractile apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 represent the major conclusion synthesized from the salm knock-down and Strn-Mlck mutant experiments. The evidence from both genetic perturbations showing defects in sarcomere size control, followed by muscle atrophy and fiber rupture, strongly supports this conclusion. However, C87's claim about 'lifelong function' is somewhat overstated given that observations only extend to a few days post-eclosion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Drosophila IFMs develop from adult muscle precursors (AMPs) through a well-characterized sequence: myoblast fusion (8-24 hr APF), myotube attachment (12-16 hr APF), myofibril assembly (30 hr APF with 1.8 \u03bcm sarcomeres), and growth to ~1 mm fibers with 3.2 \u03bcm sarcomeres by adulthood. The flight muscle selector gene spalt major is activated after myoblast fusion and controls expression of >700 flight muscle-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the developmental context and are well-supported by citations to prior literature (Bate et al., 1991; Dutta et al., 2004; Fernandes et al., 1991; Weitkunat et al., 2014; Orfanos et al., 2015; Reedy and Beall, 1993; Sch\u00f6nbauer et al., 2011; Syme and Josephson, 2002; Spletter and Schnorrer, 2014; Spletter et al., 2015). These claims provide essential background but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sarcomeres are conserved force-producing structures in striated muscles, consisting of actin, myosin, and titin filaments arranged in pseudo-crystalline order with stereotyped sizes (3.0-3.4 \u03bcm in human skeletal muscle, 1.6 \u03bcm myosin filaments). This conservation across evolution validates Drosophila IFMs as a model system for studying sarcomere biogenesis and maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 establish the rationale for using Drosophila as a model system and are well-supported by citations to the literature (Gautel and Djinovi\u0107-Carugo, 2016; Lange et al., 2006; Ehler and Gautel, 2008; Llewellyn et al., 2008; Regev et al., 2011; Gokhin and Fowler, 2013; Tskhovrebova and Trinick, 2003; Lemke and Schnorrer, 2017; Vigoreaux, 2006; Sch\u00f6nbauer et al., 2011; Spletter et al., 2015). These represent established knowledge providing context rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Prior studies established that immature myofibrils (~0.5 \u03bcm width, ~4 thick filaments) expand dramatically after 48 hr APF to mature width (~1.5 \u03bcm, ~35 thick filaments, ~800 thick filaments per sarcomere). A mid-developmental Mhc isoform switch coincides with the transcriptional transition identified in this study. The formin Fhos, required for actin filament elongation and myofibril diameter growth after 48 hr APF, is a member of the induced cluster 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 integrate prior findings (Weitkunat et al., 2014; Reedy and Beall, 1993; Loison et al., 2018; Gajewski and Schulz, 2010; R\u00f6per et al., 2005; Orfanos and Sparrow, 2013; Shwartz et al., 2016) with the current transcriptomics data. The connection between the Mhc isoform switch timing and the transcriptional transition (C105) and the placement of Fhos in cluster 28 (C107-C108) represent new integrative insights, though they build heavily on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Mature IFMs use stretch-activated contraction (requiring both Ca\u00b2\u207a and mechanical stretch), unlike cross-striated muscles that contract synchronously with Ca\u00b2\u207a. Spontaneous contractions are important for cross-striated pattern formation across species. Flight muscles have a fibrillar organization with non-aligned myofibrils, likely related to their stretch-activated mechanism, and gain stretch-activatability during maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C117 synthesize prior knowledge about stretch-activation (Bullard and Pastore, 2011; Josephson, 2006), the role of spontaneous contractions in muscle development (Mazelet et al., 2016; Weitkunat et al., 2017; Asano et al., 2015), and fibrillar muscle organization (Josephson, 2006; Sch\u00f6nbauer et al., 2011) with the current findings about developmental contractions. The speculation about mechanisms preventing myofibril alignment (C115) is appropriately cautious. These provide important functional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Large-scale transcriptional changes during muscle maturation are conserved across species (mouse, chicken, pig, fish). General myogenic factors (Mef2) and tissue-specific factors (CF2, E2F) continuously regulate muscle differentiation. Spalt major is required for flight muscle-specific gene expression and, as demonstrated here, is continuously required for sarcomere morphogenesis. Salm may act by modifying Mef2-E2F cooperation or changing chromatin states, but cannot be solely responsible for the transcriptional transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C129 integrate extensive prior literature (Brinegar et al., 2017; Zheng et al., 2009; Zhao et al., 2015; Montfort et al., 2016; Warren et al., 2007; Sandmann et al., 2006; Soler et al., 2012; Hinits and Hughes, 2007; Kelly et al., 2002; Potthoff et al., 2007; Stronach et al., 1999; Gajewski and Schulz, 2010; Garc\u00eda-Zaragoza et al., 2008; Tanaka et al., 2008; Zappia and Frolov, 2016; Sch\u00f6nbauer et al., 2011; Spletter et al., 2015; Yang, 2018; Zhang et al., 2015) with the current findings about Salm's continuous requirement. The speculation about mechanisms (C127) is appropriately tentative. The acknowledgment that Salm is not solely responsible (C129) is important and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Evidence from other Drosophila muscles, zebrafish, mouse, and human suggests that ordered sarcomere morphogenesis (assembly followed by growth) may be a general mechanism. Changes in sarcomere morphology correlate with myosin heavy chain isoform switches during development and regeneration. The sequential sarcomere morphogenesis model may apply broadly to vertebrate skeletal and heart muscles. Possible feedback mechanisms from the assembling cytoskeleton to transcription factors are speculated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C139 draw on comparative evidence from multiple species (Perez-Moreno et al., 2014; Weitkunat et al., 2017; Sanger et al., 2017; Sanger et al., 2009; Du et al., 2008; Racca et al., 2016; Schiaffino et al., 2015; Toydemir et al., 2006; Ciciliot and Schiaffino, 2010) to argue for conservation of the mechanism. While the comparative evidence is suggestive, the generalization to vertebrate muscles (C139) remains a hypothesis requiring direct testing in those systems. The speculation about feedback mechanisms (C140) is appropriately presented as speculation but lacks supporting evidence. These represent important discussion points but extend beyond what the current data directly support.",
+    "result_type": "MINOR"
+  }
+]

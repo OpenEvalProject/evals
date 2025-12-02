@@ -1,0 +1,480 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C57",
+      "C92"
+    ],
+    "result": "The MukF N-terminal domain contains a 4-helix bundle (specifically helices 8 and 9, with helix 9 being essential) that interacts functionally with the MukB neck region. This interaction does not compromise MukF dimerization and is equivalent to similar interactions observed in other characterized SMC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 provide systematic deletion analysis demonstrating that helices 8-9 are sufficient and helix 9 is essential for MukB neck binding. SEC-MALS data (C57) confirms MukF remains dimeric when bound. The interaction is validated by pull-down assays (Figure 2B), SEC-MALS (Figure 3), and comparison with other SMC complexes (C92). Multiple independent experimental approaches converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The MukF N-terminal domain interaction with the MukB neck is required for MukBEF function in vivo. Mutations in MukF helix 9 (FN2m2, FN2m3) and MukB neck residues (MukBm1, MukBm3) that impair this interaction result in loss of ATPase activation in vitro and failure to complement temperature-sensitive growth defects in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by convergent in vitro and in vivo data. ATPase assays (C78, C82-C87) show reduced activity with mutants, binding assays (C79, C88) confirm loss of interaction, and complementation assays (C80-C81, C89-C91) demonstrate functional importance. The correlation between biochemical defects and in vivo phenotypes strengthens the conclusion. However, the mutagenesis strategy relies on structural modeling which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C123"
+    ],
+    "result": "The MukF N-terminal and C-terminal domains independently and additively stimulate MukB ATPase activity. FN2 activates ~33% of maximal activity, FC2 activates ~60%, and together they restore wild-type levels (~100%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide direct experimental evidence from ATPase assays (Figure 4) showing independent activation by each domain and additive effects when combined. The quantitative measurements are consistent across experiments. This is a key mechanistic finding that distinguishes MukBEF from other SMC complexes and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MukF dimerization is preserved during interaction with the MukB neck. SEC-MALS analysis shows that FN2 remains dimeric when bound to MukBHN, forming complexes with stoichiometry of one or two MukBHN molecules per FN2 dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC-MALS data (Figure 3A, C54-C56) directly demonstrate that FN2 maintains its dimeric state when bound to MukBHN monomers. The molecular mass measurements are consistent with the proposed stoichiometries. This is critical for understanding how MukF directs formation of dimer-of-dimer complexes. The data are clear and the interpretation is straightforward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "MukF dimerization directs the formation of dimer-of-dimer MukBEF complexes observed previously in vivo. The preservation of MukF dimerization during neck interaction validates previous in vivo stoichiometry measurements and supports the 'rock climber' model for MukBEF transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference (C7, C42) that MukF dimerization directs dimer-of-dimer formation is well-supported by the SEC-MALS data showing preserved dimerization (C6, C41) combined with previous in vivo stoichiometry measurements (cited as Badrinarayanan et al., 2012a). The logical connection between preserved dimerization and dimer-of-dimer formation is sound. However, this relies partially on prior work rather than being demonstrated de novo in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Impairment of MukF-MukB interactions through overexpression of FN2 or FC5 fragments leads to ATP hydrolysis-dependent release of MukBEF complexes from chromosomes. FN2 overexpression causes more rapid loss (t\u00bd ~10 min) than FC5 (t\u00bd ~45 min), and this effect requires ATP hydrolysis as it does not occur in MukBEQ mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo microscopy data (Figure 8, C112-C115) clearly show loss of MukBEF foci upon fragment overexpression in wild-type but not MukBEQ cells, demonstrating ATP hydrolysis dependence. The differential effects of FN2 vs FC5 (C118-C119) suggest the neck interaction is more dynamic. The experimental design with the MukBEQ control is strong. However, alternative explanations (e.g., fragment-induced complex disruption rather than competitive inhibition) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C93",
+      "C94",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MukE inhibits MukB ATPase activity stimulated by either the MukF N-terminal or C-terminal domains in a concentration-dependent manner. This inhibition requires the presence of MukE binding sites on the MukF fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATPase assays (Figures 6-7, C93-C94, C99-C101) demonstrate MukE inhibition of both FN10/FC2-activated ATPase but not FN2/FC5 (which lack MukE binding sites). The requirement for MukE binding sites provides specificity. The concentration dependence (C94) supports a direct interaction mechanism. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "DNA relieves MukE-mediated inhibition of MukB ATPase. At 5-10-fold excess of DNA over MukB, ATPase activity is restored to ~50% of levels without MukE. This may reflect competition between MukE and DNA for binding to the MukB head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATPase assays (Figure 6B, C105-C106) clearly show DNA-dependent relief of MukE inhibition. The effect is specific to fragments with MukE binding sites (C109). The proposed competition mechanism (C111) is reasonable given structural considerations (C110) but remains speculative. The data support the phenomenon but the mechanism requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C116",
+      "C132",
+      "C133"
+    ],
+    "result": "The MukF-MukB interaction (both N-terminal/neck and C-terminal/cap) is established and broken during cycles of ATP binding and hydrolysis, as inferred from ATP hydrolysis-dependent loss of MukBEF foci upon fragment overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the ATP hydrolysis-dependent loss of foci (C9, C112-C115) is well-demonstrated, the inference that this reflects normal cycling of the interaction (C38, C116, C132-C133) is indirect. The overexpression experiments show that disrupting the interaction causes ATP-dependent release, but do not directly demonstrate that the interaction normally cycles during ATP hydrolysis. Direct measurements of interaction dynamics would be needed to confirm this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C62"
+    ],
+    "result": "Both FN2 and FC2 can bind simultaneously to a single monomer of MukBHN, suggesting that a MukB dimer with unengaged heads bound to a MukF dimer may be stabilized by MukF interactions to both the MukB head and neck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC analysis (Figure 3C, C62) shows larger complexes when both FN2 and FC2 are present with MukBHN compared to FN2 alone, supporting simultaneous binding (C63). The inference about stabilization of unengaged-head complexes (C64) is reasonable but somewhat speculative. The data support the binding observation but the functional implications are less certain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "MukF N-terminal and C-terminal domains bind MukB with similar affinities (Kd 9-26 nM range). FN10, which includes the middle region, binds more tightly than FN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "FCS and FPA measurements (Figure 3\u2014figure supplement 3, C66-C67) provide quantitative binding affinity data. The similar affinities for N- and C-terminal domains are well-documented. The tighter binding of FN10 vs FN2 (C67) is consistent with additional contacts from the middle region. The measurements appear technically sound with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MukB dimers alone have negligible ATPase activity, but addition of MukF leads to robust ATPase with a steady-state rate of ~21 ATP molecules hydrolyzed/min/MukB dimer under conditions of MukF excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATPase assays (Figure 4, C68-C70) clearly demonstrate MukF-dependent activation of MukB ATPase. The quantitative rate measurement (C70) is well-defined. This is consistent with previous reports (C68 cites Petrushenko et al., 2005; Woo et al., 2009). The data establish baseline activity levels for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "MukF fragments containing the middle region (FN10, FC2) show 50-60% of wild-type activation activity, while those lacking it (FN2, FC5) show 25-33%, implicating the middle region in stabilizing or directing a conformation that optimizes ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATPase assays (Figure 7B, C95-C96) show clear differences in activation efficiency between fragments with and without the middle region. The inference about the middle region's role (C97) is reasonable given the data. Both the head-binding fragment and MukE-binding segment contribute to optimal activity (C98). The data support the conclusion though the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MukF C-terminal derivatives (FC1, FC2) interact with all MukB derivatives including MukBH, while FN2 does not interact with MukBH. Addition of ATP does not significantly alter complex formation with MukBHN fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pull-down assays (Figure 2B, C43) and SEC-MALS (Figure 3A, C59) demonstrate the differential binding patterns. The lack of ATP effect (C60) is consistent with MukBHN being unable to form stable heads-engaged dimers (C61). These are straightforward binding observations that establish the specificity of interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "FN6, lacking helices 8 and 9, does not stimulate MukB ATPase, consistent with its failure to interact with the MukB neck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATPase assays (Figure 4\u2014figure supplement 1D, C76) show no activation by FN6, which is consistent with the binding data showing FN6 does not interact with MukBHN (C48). This negative control strengthens the conclusion that helices 8-9 are required for both binding and functional activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "FN1, containing only the WHD dimerization domain, does not interact with MukB derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pull-down assays (C45) show no interaction between FN1 and MukB derivatives. This negative result helps define the minimal binding region and shows that the WHD alone is insufficient for MukB interaction. This is a straightforward negative control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The MukF-MukB neck interaction leads to formation of an asymmetric tripartite complex similar to other SMC complexes. In the engaged-heads complex, MukF C- and N-terminal domains likely bind separate MukB monomers (trans configuration), though a cis configuration cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposal of asymmetry (C5, C124) is based on comparison with the crystal structure of H. ducreyi MukBEF (C125-C128) and other SMC complexes (C129). The trans configuration (C130) is proposed by analogy but not directly demonstrated. The cis alternative (C131) is acknowledged as possible. The current study does not provide direct structural evidence for the proposed asymmetric complex with the N-terminal domain bound, making this inference uncertain despite being reasonable by analogy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Impairment of MukF-MukB interactions leads to ATP hydrolysis-dependent loss of MukBEF from chromosomes, indicating that opening of at least one MukB-MukF interface allows DNA release from the 'bottom ring chamber.' This supports a conserved DNA exit gate mechanism at the SMC neck-kleisin interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo data (C134, from C9, C112-C115) clearly demonstrate ATP hydrolysis-dependent release. The inference about DNA release through the bottom chamber (C135) is reasonable given the topological model. The comparison with other SMC complexes (C137-C138) strengthens the conclusion. However, direct demonstration of DNA release through this specific interface is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The independent and additive regulation of MukB ATPase by MukF C- and N-terminal domains may reflect asymmetry in the two ATPase sites resulting from asymmetric heads-engaged complexes, with each domain activating a separate ATPase site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is proposed as a mechanism (C146-C147, C149) to explain the independent and additive ATPase activation, but remains speculative. The crystal structure shows no differences in the two ATPase active sites (C148), and the current study provides no direct evidence for differential activation of the two sites. While the proposal is reasonable, it requires further experimental validation such as single-turnover kinetics or asymmetric labeling experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "At least one MukF C-terminal domain-MukB cap interface must be broken in each activity cycle to allow formation of an asymmetric heads-engaged complex where only one MukB monomer can bind a MukF C-terminus due to steric occlusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C120) is well-supported by the crystal structure showing steric occlusion in the asymmetric complex (cited as Shin et al., 2009; Woo et al., 2009). The logic is sound: if the symmetric complex has two C-terminal domains bound and the asymmetric engaged-heads complex can only accommodate one, then at least one must dissociate during the transition. This is a reasonable structural inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "ATP hydrolysis by MukBEF is required for both loading and unloading onto DNA. One plausible explanation is that the MukB neck-kleisin interaction acts in DNA unloading while the head-kleisin interaction functions in loading, similar to proposed mechanisms in yeast cohesin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The requirement for ATP hydrolysis in loading and unloading (C152) is stated as a previous finding (Nolivos et al., 2016). The proposed division of labor between neck and head interactions (C153) is explicitly stated as speculation ('one plausible explanation'). While the comparison with yeast cohesin (C154) provides support by analogy, the current study does not directly test this hypothesis. This remains an interesting but unvalidated model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "MukE inhibition of MukB ATPase could arise from stabilizing a particular MukBF conformation or from MukE playing a regulatory role during transitions between activity cycle stages. MukE depletion in vivo mimics the ATP hydrolysis-impaired MukBEQ phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed mechanisms for MukE inhibition (C155-C156) are explicitly speculative. The observation that MukE depletion mimics MukBEQ (C158) is cited from previous work and suggests MukE has regulatory importance, but the mechanism remains unclear. The current study demonstrates MukE inhibition and DNA relief but does not definitively establish the mechanism or physiological role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "DNA relief of MukE inhibition could result from competition between MukE and DNA for binding to the MukB head, consistent with previous studies showing MukEF-DNA competition and a positively charged DNA-binding patch on the MukB head surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The competition mechanism (C159) is proposed as speculation ('could result from'). Supporting evidence from previous studies (C160-C162) shows MukEF-DNA competition and identifies a DNA-binding region, but the current study does not directly demonstrate competition. The structural proximity of binding sites (C110) supports the possibility, but direct competition assays would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background information on SMC complexes and MukBEF: SMC complexes have conserved architecture with roles in chromosome management across all domains of life. MukBEF is the E. coli SMC complex with distinctive features including MukF dimerization through its N-terminal domain, unlike other kleisins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C36) represent established background knowledge from the literature, properly cited throughout. They provide context for the study but are not new findings. The information is accurate and well-supported by the cited references. This is standard introduction material establishing the field's current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Simultaneous binding of kleisin N- and C-terminal domains to a single SMC molecule was also observed with B. subtilis SMC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison (C65) is cited from B\u00fcrmann et al., 2013 and provides important context showing that the phenomenon observed with MukBEF (C63-C64) is not unique. This strengthens the interpretation of the MukBEF data by showing it fits a broader pattern in SMC biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C137",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Discussion of potential DNA entry and exit gates in SMC complexes: The kleisin-neck interface has been proposed as a DNA exit gate in multiple SMC complexes. Other interfaces including the hinge might also serve as gates, and the two proteinaceous chambers (upper and lower) could each have their own gates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C121, C137-C145) represent discussion and speculation about DNA gates in SMC complexes. While the kleisin-neck exit gate is well-supported by multiple studies (C121, C137), the proposals about alternative gates (C139-C141, C143) and specific mechanisms (C144-C145) are more speculative. The current study provides some support for the neck-kleisin gate but does not directly test the other proposals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C163",
+      "C164"
+    ],
+    "result": "Comparison with other ATPase systems: Asymmetric ATPase mechanisms have been demonstrated in ABC transporters and eukaryotic heterodimeric SMC complexes. All SMC complexes share distinctive architectures and similar basic mechanisms involving modulated ATP binding and hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These comparative statements (C150-C151, C163-C164) are well-supported by the cited literature and provide important context for interpreting the MukBEF results. They establish that asymmetric ATPase regulation is not unprecedented and that SMC complexes share fundamental mechanistic features despite structural variations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "The 'rock climber' model assumes dimers of MukBEF dimers are a minimal functional unit with coordinated capture and processing of DNA segments. Staggered cycles of ATP binding/hydrolysis and DNA trapping/release could coordinate activity within partner dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C168-C169) describe a previously proposed model (Badrinarayanan et al., 2012a) and speculate about coordination mechanisms. While the current study provides support for dimer-of-dimer formation (C165-C167), it does not directly test the coordination mechanisms proposed in C169. This remains a model requiring further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

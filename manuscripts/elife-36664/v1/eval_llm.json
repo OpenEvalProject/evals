@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The EC-tTA x tetO-ArchT-GFP mouse line drives ArchT expression almost exclusively in stellate cells of MEC layer II. In situ hybridization and immunostaining show that 97.2% of ArchT-expressing cells express reelin (a stellate marker) while only ~1% express calbindin (a pyramidal marker). ArchT-expressing cells project to the dentate gyrus and CA3 regions of the hippocampus, consistent with stellate cell projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 provide converging anatomical, molecular, and projection evidence that the transgenic line targets stellate cells. The quantitative overlap data (C28-C30) are compelling, showing 97.2% reelin co-expression and minimal calbindin co-expression. The projection data (C33) and histological confirmation (C23) further validate the specificity. The only caveat is that not all stellate cells express ArchT (32.5% of reelin+ cells), which the authors acknowledge but does not undermine the conclusion that ArchT+ cells are stellate cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Optogenetic tagging identified 75 stellate cells from 578 recorded cells (~13%). Among tagged stellate cells, 25.3% were grid cells, 12% were head direction cells, 16% were speed cells, 1.3% were border cells, and 56% were unclassified. Most tagged cells showed near-zero millisecond latencies to inhibition (median = 0.85 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 present the core functional characterization data. The short latencies (C36) support direct optogenetic inhibition rather than network effects. The functional classification percentages (C37-C41) are clearly stated and based on standard shuffling procedures described in methods. The finding that ~25% of stellate cells are grid cells is the central result and appears well-supported by the tagging approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The untagged cell population (likely containing pyramidal cells, non-expressing stellates, and possibly layer III cells) showed different functional properties than tagged stellate cells. Untagged cells had significantly higher grid scores (p=0.0037), lower head direction scores (p=0.003), and lower spatial information content (p=0.036) compared to tagged cells. No significant differences were found in border or speed scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 provide statistical comparisons between tagged and untagged populations using appropriate non-parametric tests. The significant differences in grid scores, head direction scores, and spatial information are clearly stated with p-values. However, the interpretation is complicated by the heterogeneous nature of the untagged population, which the authors acknowledge includes multiple cell types. The statistical tests are appropriate but the biological interpretation requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Re-evaluation of the Tang et al. theta phase classifier on an extended dataset of 1332 cells showed that the classifier correctly identified 81.3% of tagged stellate cells. Contrary to Tang et al., putative stellate cells had higher grid scores than putative pyramidal cells (p=0.0003), with ~32% of putative stellates being grid cells compared to ~23% of putative pyramidal cells. The preferred firing phase showed two peaks (near peak and trough of theta oscillation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 present a systematic re-evaluation of a published classifier with a much larger dataset. The 81.3% correct classification rate (C52) indicates the classifier has limitations, which the authors acknowledge. The finding that stellate cells have higher grid scores (C57-C58) directly contradicts Tang et al. and is supported by appropriate statistics. The larger sample size (1332 cells vs. Tang's smaller dataset) strengthens these conclusions. The theta phase distribution (C55-C56) is well-documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Grid cells showed significantly less theta modulation than non-grid cells (p=9.28\u00d710\u207b\u2075), with a weak negative correlation between theta modulation and grid score (r=-0.15, p=6\u00d710\u207b\u2078). Among pure functional cell types, grid cells had less theta modulation than speed cells (p=0.0002) and more than head direction cells (p=0.003), but were not significantly different from border cells (p=0.087). The large diversity in theta modulation within cell types makes theta oscillation relationship a poor predictor of functional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C66 provide comprehensive statistical analysis of theta modulation across functional cell types. The statistics are appropriate (Mann-Whitney U tests, Pearson correlation) and the p-values are clearly reported. The weak correlation (r=-0.15, accounting for only ~2% of variance) supports the conclusion that theta modulation is a poor predictor of cell type (C66). The comparison across pure cell types (C62-C64) appropriately avoids pseudoreplication by excluding mixed cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Approximately one in four stellate cells are grid cells, suggesting that stellate cells contribute to path-integration-based representation of self-location but also have other functions. The data support the view that grid cells are not the sole determinant of place cell firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C83-C85 represent the main conclusions of the study. The ~25% grid cell proportion among stellate cells (C65, C83) is directly supported by the optogenetic tagging data (C37). The inference that stellate cells have multiple functions (C84) logically follows from the finding that 75% are not grid cells and include other functional types. The conclusion about place cell firing (C85) is a reasonable interpretation given that stellate cells provide the main MEC input to hippocampal regions but only 25% are grid cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The actual proportion of grid cells among stellate cells may be larger than 25% due to spike sorting errors, boundary-induced distortions, and cells with large inter-field spacing. However, the majority of stellate cells are probably not grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculative about potential underestimation of grid cell proportion, citing known methodological limitations. While the cited reasons are plausible, no data are provided to quantify these effects. Claim C68 (majority are not grid cells) is a logical inference from the 25% finding, but depends on whether C67's concerns substantially affect the estimate. The uncertainty about the true proportion makes this result uncertain rather than definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "There is no 1:1 relationship between morphological and functional cell types in layer II of the MEC. This conclusion is consistent with heterogeneity observed in vitro and with observations in visual cortex where morphology does not straightforwardly predict functional class. The diversity of functional types in stellate cells is consistent with grid cells contributing to, but not being the sole determinant of, place cell firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present interpretive conclusions well-supported by the data. The lack of 1:1 correspondence (C73) follows from finding multiple functional types within the stellate population. The supporting citations to in vitro heterogeneity (C74) and visual cortex analogy (C75) appropriately contextualize the findings. The inference about place cell formation (C76) is reasonable given the data, though it remains somewhat speculative about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The findings are consistent with developmental and lesion studies showing that place cells can function without fully mature grid cells. Border cells and other MEC cell types may contribute to hippocampal spatial representations. Combined with evidence that stellate cells are required for path integration behaviors, the data implicate grid cells in path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 integrate the current findings with prior literature. The citations to developmental studies (C77), lesion studies (C78), and border cell properties (C79-C80) are appropriate. The inference about grid cells in path integration (C82) combines the current data (stellate cells include grid cells) with prior work showing stellate cells are required for path integration (C81). This is a reasonable synthesis, though the causal link between grid cells specifically and path integration remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Layer II of MEC contains two principal cell types (stellate and pyramidal) with distinct molecular markers, morphologies, connectivity patterns, and projection targets. Stellate cells express reelin, have large sag potentials and superficially branching dendrites, and project to DG/CA3/CA2. Pyramidal cells express calbindin, form tight clusters, and do not project to DG/CA3/CA2 but project to CA1 and contralateral MEC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 summarize established prior knowledge about MEC cell types, all supported by appropriate citations. These provide essential background context for the study but represent prior work rather than new findings. The claims are well-documented in the literature and accurately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previous studies using intracellular recordings and imaging found that both stellate and pyramidal cells could be grid cells, but one study using theta phase classification found only ~3% of putative stellate cells were grid cells (near chance levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 accurately summarize conflicting prior findings that motivated the current study. The citations are appropriate and the contradiction between studies is clearly stated. This provides important context for why the current study was needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PV+ interneurons are preferentially connected with grid cells and manipulations of PV+ networks alter grid cell firing, though effects are not limited to grid cells alone. Grid cells are likely present among both stellate and pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 summarize relevant prior work on interneuron connectivity and discuss implications. The citations are appropriate. Claim C72 (grid cells in pyramidal cells) is an inference based on prior imaging/recording studies, which is reasonable but cannot be directly tested with the current approach due to incomplete ArchT expression in stellate cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Background claims about MEC functional cell types, their developmental trajectories, and technical properties of optogenetic tools used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 provide background information and technical validation from prior literature. All are appropriately cited. These are contextual claims rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

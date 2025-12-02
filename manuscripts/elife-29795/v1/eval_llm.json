@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "A 7.0 \u00c5 resolution cryo-EM structure of a WRC-Rac1 complex reveals Rac1 bound to a site on Sra1 approximately 120 \u00c5 distant from the previously predicted binding location. The structure shows both Switch I and Switch II of Rac1 making direct contact with a conserved surface on Sra1 (residues 957-979).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure determination is well-documented with appropriate resolution assessment (FSC=0.143 criterion), and the density map unambiguously accommodates the Rac1 crystal structure including secondary structure elements. The structural claims are directly supported by the density map and fitting procedures, with validation through conservation analysis and structural features consistent with GTPase-effector interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The cryo-EM structure identifies Rac1 binding at a 'D Site' (Distant Site) on Sra1, distinct from the previously characterized 'A Site' (Adjacent Site) near the VCA-binding region. Both sites show evolutionary conservation, though the A Site is more highly conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural identification of the D Site is unambiguous from the EM density. The distinction from the A Site is clearly demonstrated, and conservation analysis supports functional significance of both sites. Previous mutagenesis data (C45) from cited work provides independent validation of the A Site's functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutagenesis combined with GST pull-down and membrane recruitment assays demonstrates that Rac1 binds to both the A Site and D Site. Mutations at the D Site (particularly Y967A) have stronger effects on binding than A Site mutations (C179R), while the S969F mutation enhances binding and recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (pull-downs under different conditions, membrane recruitment) consistently show both sites contribute to Rac1 binding. The differential effects of mutations are reproducible across assays. Controls with GDP-bound Rac1 (C50) confirm specificity for active GTPase. The experimental design appropriately tests individual site contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multi-signal sedimentation velocity analytical ultracentrifugation demonstrates that two Rac1 molecules can simultaneously bind a single WRC with 2:1 stoichiometry. Site-specific mutants show reduced stoichiometry: the A Site mutant (C179R) reaches only 1:1, while the D Site mutant (Y967A) reaches 0.6:1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MSSV-AUC approach provides direct, quantitative measurement of binding stoichiometry by tracking both components independently. The concentration-dependent shifts in sedimentation coefficient and the differential behavior of site-specific mutants provide strong evidence for bivalent binding. The methodology is rigorous and appropriate for determining stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Equilibrium pull-down assays reveal the D Site has approximately 40-fold higher affinity for Rac1 (KD,D = 0.169 \u00b1 0.008 \u03bcM) compared to the A Site alone (KD,A = 11.52 \u00b1 0.11 \u03bcM). Positive cooperativity is observed, with the A Site showing enhanced affinity (KD,A(D) = 0.262 \u00b1 0.044 \u03bcM) when the D Site is occupied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The equilibrium pull-down methodology is appropriate for KD determination, with multiple independent experiments and statistical model comparison (F-test, p=5.45\u00d710\u207b\u2079 favoring two-site model). The ~40-fold affinity difference is clearly demonstrated. However, the cooperativity interpretation should be cautious as the authors note this may reflect avidity effects from GST dimerization rather than true allosteric cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C74"
+    ],
+    "result": "Actin assembly assays demonstrate that both Rac1 binding sites are required for WRC activation. Mutations at either the D Site (Y967A) or A Site (C179R) completely abolish activation, and engagement of a single site is insufficient to drive activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pyrene-actin assembly assays provide clear functional readout, with appropriate controls (VCA peptide, WRC alone). The complete loss of activation with single-site mutations provides strong evidence for the requirement of both sites. The analysis correlating activation with WRC-(Rac1)\u2082 concentration (C72) further supports the bivalent activation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C78",
+      "C79"
+    ],
+    "result": "The S969F mutation in Sra1, buried beneath the D Site, enhances Rac1 binding and increases WRC sensitivity to activation, requiring only 3 \u03bcM Rac1 for full activation compared to 10 \u03bcM for wild-type WRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The S969F mutation effects are consistently observed across binding assays (membrane recruitment) and functional assays (actin assembly). The structural location of S969 beneath the D Site provides mechanistic context. This result has translational relevance given the equivalent mutation in mouse Cyfip2 affects neuronal phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The WRC is activated by simultaneous engagement of two Rac1 molecules at sites with ~40-fold different affinity, suggesting a mechanism for cells to sense Rac1 density at membranes. At low Rac1 density, the high-affinity D Site is preferentially occupied, priming but not activating the complex; activation occurs only when Rac1 density enables binding to both sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model is well-supported by the combination of stoichiometry data (2:1 binding), affinity measurements (40-fold difference), and functional data (requirement for both sites). The model logically integrates all experimental observations. However, the authors appropriately note they could not experimentally test the non-linear activation behavior at low Rac1 densities on membranes due to technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37"
+    ],
+    "result": "The meander region of WAVE1 shows weak and disordered density in the EM map compared to the crystal structure of inhibited mini-WRC, suggesting that removal of the VCA destabilizes this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of weak/missing density for the meander region is clearly documented in the EM map. The interpretation that VCA removal destabilizes the meander is reasonable given previous structural data showing direct interactions between the meander and VCA. This supports the reciprocal stabilization model for WRC autoinhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "The A and D Sites likely cooperate to trigger conformational changes releasing the VCA. The requirement for both sites may explain why major conformational changes were not observed in the current structure where only the D Site is occupied. S969 may be part of the conformational propagation pathway, and excessive WRC activation might explain phenotypes associated with the S968F mutation in mouse Cyfip2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable mechanistic hypotheses based on the data, but remain speculative. The lack of observed conformational changes could have alternative explanations (resolution limitations, inherent flexibility). The S969 pathway role and Cyfip2 mutation effects are plausible but require direct experimental validation. The authors appropriately present these as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The WRC has distinct basic and acidic faces, suggesting a membrane orientation where the basic face contacts the negatively charged membrane. In this orientation, both Rac1 binding sites can position bound GTPases to insert prenylated tails into the bilayer, and the VCA can be released to interact with Arp2/3 complex in the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The charge distribution observation is based on previous structural work (cited). The proposed membrane orientation is a logical inference that satisfies multiple geometric and biochemical constraints: membrane charge complementarity, Rac1 prenylation requirements, VCA accessibility, and WIRS receptor reach. While not directly demonstrated, the model is well-reasoned and testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The engineered \u0394WRC230-Rac1 construct with tethered Rac1(Q61L/P29S) binds the WRC in a physiologically relevant manner, as demonstrated by competition assays. The Q61L mutation maintains GTP-bound state, and the P29S melanoma-associated mutation increases affinity for the WRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition pull-down assay (C23) validates that the tethered Rac1 binds physiologically. The Q61L effect is well-established in the literature. The P29S mutation effect on WRC binding is directly demonstrated by pull-down and actin assembly assays, extending previous observations with PAK1 and MLK3. This construct design is well-justified for structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Activation of the WRC at membranes is likely non-linear with respect to Rac1 density, a behavior that could be harnessed by cells to precisely control where and when to activate actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the bivalent binding model with differential affinities logically predicts non-linear activation, the authors explicitly state they could not test this experimentally due to technical limitations with low Rac1 density on membranes. The prediction is reasonable but remains unvalidated. The biological significance, while plausible, is speculative without cellular validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background and context claims establishing the biological importance of the Rac1-WRC-Arp2/3 pathway in actin dynamics, the composition and structure of the WRC, and mechanisms of WASP family protein regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the statements accurately reflect current understanding of the field.",
+    "result_type": "MINOR"
+  }
+]

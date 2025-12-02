@@ -1,0 +1,1889 @@
+{
+  "submission": {
+    "id": "8d4187dd-1a64-46c4-a7cd-db65a2aa58b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:35:36.532794Z",
+    "updated_at": "2025-12-01T19:35:36.532794Z"
+  },
+  "content": [
+    {
+      "id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "submission_id": "8d4187dd-1a64-46c4-a7cd-db65a2aa58b6",
+      "content_type": "manuscript",
+      "content_text": "# Reciprocal regulation of ARPP-16 by PKA and MAST3 kinases provides a cAMP-regulated switch in protein phosphatase 2A inhibition\n\n## Authors\n\n- Veronica Musante<sup>1</sup> ([ORCID: 0000-0001-5244-9158](https://orcid.org/0000-0001-5244-9158))\n- Lu Li<sup>2</sup> ([ORCID: 0000-0002-6199-522X](https://orcid.org/0000-0002-6199-522X))\n- Jean Kanyo<sup>3</sup>\n- Tukiet T Lam<sup>3</sup>\n- Christopher M Colangelo<sup>3</sup>\n- Shuk Kei Cheng<sup>4</sup>\n- A Harrison Brody<sup>4</sup>\n- Paul Greengard<sup>4</sup>\n- Nicolas Le Nov\u00e8re<sup>2</sup> ([ORCID: 0000-0002-6309-7327](https://orcid.org/0000-0002-6309-7327))\n- Angus C Nairn<sup>1</sup> ([ORCID: 0000-0002-7075-0195](https://orcid.org/0000-0002-7075-0195)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry Yale University School of Medicine New Haven United States\n2. The Babraham Institute Cambridge United Kingdom\n3. W.M. Keck Biotechnology Resource Laboratory Yale University School Medicine New Haven United states\n4. Laboratory of Molecular and Cellular Neuroscience The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nARPP-16, ARPP-19, and ENSA are inhibitors of protein phosphatase PP2A. ARPP-19 and ENSA phosphorylated by Greatwall kinase inhibit PP2A during mitosis. ARPP-16 is expressed in striatal neurons where basal phosphorylation by MAST3 kinase inhibits PP2A and regulates key components of striatal signaling. The ARPP-16/19 proteins were discovered as substrates for PKA, but the function of PKA phosphorylation is unknown. We find that phosphorylation by PKA or MAST3 mutually suppresses the ability of the other kinase to act on ARPP-16. Phosphorylation by PKA also acts to prevent inhibition of PP2A by ARPP-16 phosphorylated by MAST3. Moreover, PKA phosphorylates MAST3 at multiple sites resulting in its inhibition. Mathematical modeling highlights the role of these three regulatory interactions to create a switch-like response to cAMP. Together, the results suggest a complex antagonistic interplay between the control of ARPP-16 by MAST3 and PKA that creates a mechanism whereby cAMP mediates PP2A disinhibition.\n\n## Introduction\n\nARPP-16 and ARPP-19 were originally identified together with DARPP-32 and ARPP-21 as a group of cAMP-regulated phosphoproteins (ARPPs) enriched in striatal neurons (Walaas et al., 1983; Girault et al., 1990; Horiuchi et al., 1990). ARPP-16 and ARPP-19 are alternatively spliced variants, with ARPP-19 containing 16 additional amino acids at its N-terminus. ARPP-16/19 are also related to endosulfine (ENSA or ARPP-19e), a distinct gene product that shares high identity with the common region of ARPP-16/19 but contains a unique N-terminal region (Horiuchi et al., 1990; Peyrollier et al., 1996; Heron et al., 1998; Dulubova et al., 2001). ARPP-16 is present only in the\u00a0brain and is highly expressed in medium spiny neurons (MSNs) in striatum (Girault et al., 1990). In contrast, ARPP-19 is ubiquitously expressed with low levels in striatum (possibly also in non-neuronal cells). ENSA is expressed in all tissues, is widely distributed in the\u00a0brain, and represents the predominant proportion of the 19 kDa forms of the ARPP-19/ENSA proteins found in striatum (Dulubova et al., 2001).\n\nThe ARPP-16/19/ENSA proteins have become the focus of many studies in the past few years as a result of their discovery as potent inhibitors of the serine/threonine protein phosphatase, PP2A. PP2A exists in eukaryotic cells as a heterotrimer of a catalytic C subunit, a scaffolding A subunit, and a variable B subunit that serves to influence the substrate specificity of the phosphatase (Janssens and Goris, 2001; Shi, 2009). PP2A heterotrimers play critical roles in diverse signaling pathways including regulation of the cell cycle, cell proliferation, and neuronal signalling, and deficits in PP2A function are implicated in many human diseases including cancer, Alzheimer\u2019s disease and major depressive disorder (Sontag and Sontag, 2014; Network and Pathway Analysis Subgroup of Psychiatric Genomics Consortium, 2015; Sangodkar et al., 2016). Studies of cell cycle regulation in frog oocytes had found that PP2A including the B55 subunit directly dephosphorylates Cdk substrates upon mitotic exit and that inhibition of PP2A-B55 by a mechanism involving Greatwall (Gwl) kinase was required during mitosis (Castilho et al., 2009; Mochida et al., 2009; Vigneron et al., 2009). Subsequent work revealed that ARPP-19 and ENSA when phosphorylated by Gwl act as critical PP2A inhibitors (Gharbi-Ayachi et al., 2010; Mochida et al., 2010).\n\nIn mammalian cells, MASTL (for microtubule-associated serine/threonine kinase like) is functionally equivalent to Gwl (Voets and Wolthuis, 2010), and Gwl/MASTL are now known to play an important role in mitotic progression in several model systems, including Drosophila melanogaster, Xenopus laevis and mammalian cell lines (Yu et al., 2004, 2006; Archambault et al., 2007; Burgess et al., 2010; Voets and Wolthuis, 2010; Glover, 2012; Lorca and Castro, 2012; \u00c1lvarez-Fern\u00e1ndez et al., 2013; Wang et al., 2013). Additional functions have also been reported for ENSA/ARPP-19 proteins. Genetic studies in flies and biochemical studies in Xenopus suggest that ARPP-19 is also involved in meiotic division (Von Stetina et al., 2008; Rangone et al., 2011; Wang et al., 2011; Dupr\u00e9 et al., 2013). In budding yeast, inhibition of PP2A-B55 by Igo1/2 (the equivalent of the ARPP proteins) leads to an increased phosphorylation of Gis1, a transcription factor important for cellular quiescence after glucose deprivation (Bontron et al., 2013). We have also recently identified ARPP-16 as a PP2A inhibitor in mammalian brain when phosphorylated at Ser46 by MAST3 kinase (Andrade et al., 2017), a homolog of MASTL/Gwl, which is active in post-mitotic neurons and is highly expressed in striatum (Garland et al., 2008). Conditional knockout of ARPP-16 in mouse forebrain has functional effects on dopaminergic signaling via DARPP-32 and ERK/MAPK, and leads to altered behavioral responses (Andrade et al., 2017).\n\nTogether, these various studies clearly identify ARPP-16, ARPP-19 and ENSA as important components of cellular signaling in a variety of cell types and organisms. However, several important questions remain to be answered. Our studies in striatal neurons indicate that Ser46 is phosphorylated to a high basal stoichiometry by MAST3 (Andrade et al., 2017), which is opposite to that found in non-mitotic phases in dividing cells (Dupr\u00e9 et al., 2013, 2014). Notably, the function of phosphorylation of the ARPP/ENSA proteins by PKA is not known. In striatal cell preparations, activation of PKA leads to increased phosphorylation of Ser88 of ARPP-16, but concomitantly to substantial dephosphorylation at Ser46 of ARPP-16 (and also the equivalent Ser62 of ENSA) (Andrade et al., 2017). These results suggest that rather than regulate ARPP-16 activity directly, cAMP-dependent signaling may serve to attenuate phosphorylation of Ser46 leading to disinhibition of PP2A. Related to this possibility, ARPP-19 phosphorylated by PKA was found to be a key element for maintaining prophase arrest (Dupr\u00e9 et al., 2014).\n\nIn the current study, we investigated the regulatory roles of ARPP-16 phosphorylation by MAST3 and PKA using a combination of biochemical and modeling methods. The results indicate that a mutually antagonistic relationship exists between phosphorylation of Ser46 by MAST3 and Ser88 by PKA that serves as a potential toggle switch mechanism. Moreover, PKA is able to phosphorylate MAST3 leading to its inhibition. The complex interplay likely serves to underlie the balance of signaling pathways that act via ARPP/ENSA and PP2A in distinct ways in either dividing cells or non-dividing neurons.\n\n## Results\n\n### Mutually antagonistic relationship between ARPP-16 phospho-sites Ser46 and Ser88 in vitro\n\nWe initially examined in in vitro assays if prior phosphorylation of either Ser46 by MAST3 or Ser88 by PKA influenced the ability of ARPP-16 to be phosphorylated by the alternative kinase. Recombinant ARPP-16 was first phosphorylated at Ser88 by PKA to a maximal stoichiometry and then used as substrate for MAST3 (Figure 1). Prior phosphorylation of Ser88 slowed the phosphorylation of Ser46 by MAST3 (Figure 1a). Kinetic analysis indicated that the prior phosphorylation at Ser88 reduced the enzyme Vmax and increased the Km, effectively reducing the \u2018catalytic efficiency\u2019 by a factor of 3 (Figure 1b and Table 1). A similar reduction in the efficiency of phosphorylation of Ser46 by MAST3 was observed when a phospho-mimetic version or ARPP-16, S88D-ARPP-16, was used as a substrate (Figure 1\u2014figure supplement 1). We also performed the converse analysis where ARPP-16 was first maximally phosphorylated by MAST3 at Ser46 and then used as substrate for PKA (Figure 1c,d). The prior phosphorylation of Ser46 resulted in slower phosphorylation of Ser88 by PKA, which was reflected in\u00a0~7 fold reduction in Vmax, although notably there was a\u00a0~2 fold decrease in Km. (Table 1). There was no difference in the ability of PKA to phosphorylate Ser88 in S46D-ARPP-16 (data not shown), indicating that the S46D mutation did not act as a phospho-mimetic.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig1-v2.jpg)\n\n**Figure 1.:** (a) Recombinant purified ARPP-16 or P-S88-ARPP-16 (100 nM) were incubated with ATP-\u03b3-32P and MAST3 (overexpressed in HEK293T cells and immunoprecipitated), for various times; proteins were separated by SDS-PAGE and phosphorylation of Ser46 was measured by autoradiography. The resulting values for phosphorylation are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of five independent experiments. (b) Assays were carried out as in a. but with increasing concentrations (10\u2013500 nM) of ARPP-16 or P-S88-ARPP-16 for 2 min. Kinetic parameters, determined from double-reciprocal plots, of the data are indicated in Table 1. (c) Recombinant purified ARPP-16 or P-S46-ARPP-16 were incubated with ATP-\u03b3-32P and PKA for various times; proteins were analyzed as described in panel a. The resulting values for phosphorylation are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of five independent experiments. (d) Assays were carried out as in c. with increasing concentrations (10\u2013500 nM) of ARPP-16 or P-S46-ARPP-16. Kinetic parameters, determined from double-reciprocal plots, of the data are presented in Table 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Recombinant purified ARPP-16 or the phosphomimetic S88A-ARPP-16 (100 nM) were incubated with ATP-\u03b3-32P and MAST3 for various times; the proteins were separated by SDS-PAGE and phosphorylation of Ser46 was measured by autoradiography. The resulting values for phosphorylation at Ser46 site are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of three independent experiments. (b) Assays were carried out as in a. with increasing concentrations (10\u2013500 nM) of ARPP-16 or of the phosphomimetic S88A-ARPP-16 for 2 min. Kinetic parameters, determined from double-reciprocal plots, of the data are presented in Table 1.\n\n**Table 1.**\n Summary of kinetic analysis of ARPP-16 phosphorylation by MAST3 and PKA.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">MAST3</th>\n      <th>Vm</th>\n      <th>Km</th>\n      <th>Catalytic efficiency</th>\n    </tr>\n    <tr>\n      <th>32P-incorporation/minute</th>\n      <th>nM</th>\n      <th>Vm/Km</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1b</td>\n      <td>ARPP-16</td>\n      <td>1388\u00a0\u00b1\u00a027</td>\n      <td>90\u00a0\u00b1\u00a05</td>\n      <td>15.4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>P-S88-ARPP-16</td>\n      <td>866\u00a0\u00b1\u00a059</td>\n      <td>158\u00a0\u00b1\u00a026</td>\n      <td>5.5</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 1</td>\n      <td>ARPP-16</td>\n      <td>1391\u00a0\u00b1\u00a034</td>\n      <td>92\u00a0\u00b1\u00a06</td>\n      <td>15.1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>P-S88D-ARPP-16</td>\n      <td>465\u00a0\u00b1\u00a032</td>\n      <td>138\u00a0\u00b1\u00a024</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td rowspan=\"2\">PKA</td>\n      <td>Vm</td>\n      <td>Km</td>\n      <td>Catalytic efficiency</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>32P-incorporation/minute</td>\n      <td>nM</td>\n      <td>Vm/Km</td>\n    </tr>\n    <tr>\n      <td>Figure 1d</td>\n      <td>ARPP-16</td>\n      <td>6999\u00a0\u00b1\u00a0127</td>\n      <td>1685\u00a0\u00b1\u00a051</td>\n      <td>4.1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>P-S46-ARPP-16</td>\n      <td>1027\u00a0\u00b1\u00a039</td>\n      <td>870\u00a0\u00b1\u00a047</td>\n      <td>1.2</td>\n    </tr>\n  </tbody>\n</table>\n\n### cAMP-dependent regulation of ARPP-16 phosphorylation on Ser46 and Ser88 in intact cells\n\nARPP-16 is only highly expressed in striatum, where its levels are low at birth and continue to rise postnatally for several weeks (Girault et al., 1990). MAST3 is also selectively expressed in striatum (Garland et al., 2008). To further investigate the regulation of ARPP-16 phosphorylation in intact cells, we considered the use of various preparations including acutely isolated striatal slices, primary cultures enriched for striatal neurons, or cell culture. Acutely prepared striatal slices are an ex vivo preparation that are useful for studies that involve pharmacological manipulation (Andrade et al., 2017) but are not easily amenable to molecular manipulation. In primary neuronal cultures, there was no detectable expression of ARPP-16 and only low levels of expression of ENSA compared to that found in adult striatum (not shown). Similarly, the expression of MAST3 was very low in cultured striatal neurons compared to adult striatum (not shown).\n\nWe therefore decided to\u00a0generate a cell-based model using HEK293T cells in which ARPP-16 and MAST3 were expressed at levels similar to that found in adult striatum. Using the HEK293T cell model, we first investigated the interaction of the Ser46 and Ser88 phosphorylation sites. Under basal conditions, the phosphorylation of Ser46 was low (Figure 2, panel a,\u00a0lane 1) reflecting low activity of endogenous MAST-related kinases. The phosphorylation of Ser88 was also very low reflecting low basal cAMP levels (lane 1). Forskolin treatment led to a marked increase in phosphorylation of Ser88 (lane 2). Expression of HA-MAST3 led to a marked increase in phosphorylation of Ser46 (lane 3). However, the phosphorylation of Ser46 in the presence of MAST3 expression was significantly reduced by forskolin treatment compared to untreated, but MAST3-expressing cells (lane 4). There was a small but not statistically significant effect of MAST3 expression on the level of phosphorylation of Ser88 following forskolin treatment (lane 4). We also expressed separately S46D-ARPP-16 and S88D-ARPP-16. The increase in phosphorylation of Ser88 observed in the presence of forskolin was unaffected in the S46D-ARPP-16 mutant (lanes 5 and 6). However, there was no increase in phosphorylation of Ser46 in S88D-ARPP-16 when MAST3 was over-expressed (lanes 7 and 8). These results are consistent with the in vitro studies shown in Figure 1, and together, indicate that PKA-mediated phosphorylation of Ser88 suppresses Ser46-phosphorylation by MAST3, while MAST3-mediated phosphorylation of Ser46 suppresses PKA-mediated phosphorylation of Ser88.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig2-v2.jpg)\n\n**Figure 2.:** (a) ARPP-16-HA (WT) or the phosphomutants S46D-ARPP-16 or S88D-ARPP-16 were expressed in HEK293T cells alone or in the presence of MAST3-HA kinase. Cells were incubated without or with 10 \u03bcM forskolin (FSK) for 30 min. Levels of phosphorylation for Ser46 and Ser88 were measured by immunoblotting with phospho-specific antibodies on SDS-PAGE-resolved cell lysates. Phospho-site signals were normalized for total ARPP-16-HA expression assayed by immunoblotting using anti-HA antibody (A16\u2013HA). For P-S88-ARPP-16 the signal for total ARPP-16-HA was quantified from a separate blot of the same samples. (b) Graph of summary data shows phosphorylation at the different sites expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of six independent experiments, and analyzed using a one-way ANOVA, multiple comparison test (post-hoc test Tukey). For P-S46-ARPP-16: ****p<0.001, ARPP-16/MAST3 vs ARPP-16 ctrl; $$$ p<0.005, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK; $$$$p<0.001 ARPP-16/MAST3 vs ARPP-16-S88D/MAST3. For P-S88-ARPP-16: ####p<0.001, ARPP-16/FSK vs ARPP-16 ctrl; ####p<0.001, S46D-ARPP-16/FSK vs ARPP-16 ctrl.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Striatal slices were treated with forskolin (10 \u03bcM) (panel a and b), SKF-81297 (panel c and d) or DMSO (as control, panel a, b, c and d) for 15 min. Phosphorylation of ARPP-16 at Ser46 and Ser88 (and GluA1 at Ser845, DARPP-32 at Thr34, assayed as controls) were determined by immunoblotting using phosphorylation\u00a0state-specific antibodies. Quantitation of phosphorylation was calculated for GluA1-Ser845, DARPP-32-Thr34, ARPP-16-Ser46 and ARPP-16-Ser88 and normalized to total GluA1, DARPP-32, or ARPP-16, respectively. Total proteins were also normalized to GAPDH (panel b. and d.). Graphs represent means \u00b1 SEM for 6\u20138 experiments compared with control slices; **p=0.0011, ***p=0.0006, ****p<0.0001; unpaired T test.\n\n### Mathematical modeling supports a switch-like inhibition of PP2A by ARPP-16\n\nTo investigate whether mutual inhibition between the two phosphorylation sites on ARPP-16 is capable of producing a switch-like response to cAMP level changes, we set up a mathematical model focusing on the reciprocal inhibition of MAST3 and PKA by mutually antagonist phosphorylation sites in ARPP-16 (see Materials and methods and Appendix 1\u2014the mutual inhibition model). Steady-state levels of P-S46 and P-S88 ARPP-16 were studied in a two-variable phase-plane (Figure 3a). The ensemble of all the system states where a variable does not change over time form a curve called a nullcline. Whenever the P-S46 nullcline intersects the P-S88 one at a given cAMP concentration, both phosphorylation sites are at steady states. As a result of the mutual inhibition, high phosphorylation of Ser46 was associated with low phosphorylation on Ser88 and vice versa (P-S46 nullcline, blue curve). However, the shape of the P-S88 nullcline (red curves) depends on cAMP concentration. An increase of cAMP concentration activates PKA and shifts the nullcline of P-S88 to the right. At low cAMP, there is only one stable steady state corresponding to the full phosphorylation at Ser46 and close to zero phosphorylation at Ser88, as Ser46 phosphorylation suppresses basal PKA activity. At highest cAMP concentration, only one stable steady state exists where ARPP-16 is almost fully phosphorylated at Ser88 with only sub-micromolar phosphorylation at Ser46. A bistable situation arises at intermediate cAMP concentrations, the two stable states co-existing with an unstable one.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-v2.jpg)\n\n**Figure 3.:** (a) Nullclines of P-S46-ARPP-16 and P-S88-ARPP-16. The steady states of P-S46-ARPP-16 (blue) and P-S88-ARPP-16 (red) are plotted as functions of the concentrations of each other. The intersections of the red and blue curve define the steady states of the system at different cAMP concentrations. Filled circles represent stable steady states, whereas the empty circle indicates an unstable state. (b) Antagonism between P-S46-ARPP-16 and P-S88-ARPP-16 creates a switch-like cAMP response. The figure shows bifurcation diagrams of P-S46-ARPP-16 (blue) and P-S88-ARPP-16 (red) plotted as functions of cAMP concentration. Solid lines show stable steady state solutions whereas dashed lines indicate unstable state values.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Thin black dashed lines show an example range of cAMP concentrations required for bistability. LP: limit points.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp5-v2.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Thin black dash lines show an example range of cAMP concentrations required for bistability. LP: limit points.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** (LP: limit points corresponding to Figure 3\u2014figure supplement 6).\n\nBifurcation plots of both Ser88 and Ser46 in response to cAMP also showed two qualitatively different states that overlap at intermediate levels of cAMP, indicating bistability within this range of cAMP concentration (Figure 3b). When cAMP concentration increases to more than 3.5 \u03bcM, Ser46 phosphorylation abruptly drops whereas Ser88 phosphorylation suddenly increases. In the opposite direction, when cAMP decreases the switch occurs below 1.5 \u00b5M creating a hysteresis. Based on the mutually antagonistic relationship between the phosphorylation sites on ARPP-16, our model predicts a switch-like behavior of their phosphorylation states in response to changes in cAMP level.\n\nThis switch-like response to cAMP concentration change was also detected in experiments where mouse striatal brain slices, an ex vivo model, were used to assess the effect of stimulation of PKA in a more physiological context. In striatal slices, ARPP-16 and ENSA were phosphorylated at high basal levels by MAST3 (Figure 2\u2014figure supplement 1). Stimulation with SKF81297 (a D1 receptor agonist), like forskolin, led to an increase in Ser88 phosphorylation which was accompanied by decreased phosphorylation of Ser46.\n\n### PKA phosphorylates and regulates MAST3 kinase\n\nThe above studies with HEK293T cells and the in vitro assays indicate that MAST3 is basally active. We next investigated if PKA might be able to phosphorylate and regulate MAST3. MAST3-HA was expressed in HEK293T cells and isolated by immunoprecipitation. MAST3-HA was incubated with PKA in the presence of 32P-ATP. PKA phosphorylated MAST3 rapidly reached a plateau after\u00a0~10 min (Figure 4a). We then examined the effect of PKA-dependent phosphorylation on MAST3 activity using ARPP-16 as substrate for MAST3. PKA-phosphorylated MAST3 was much less active than control MAST3 (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig4-v2.jpg)\n\n**Figure 4.:** (a) MAST3-HA kinase (overexpressed in HEK293T cells and immunoprecipitated), was incubated with ATP-\u03b3-32P and PKA for various times; proteins were separated by SDS-PAGE and phosphorylation of MAST3-HA was measured by autoradiography (upper panel). Summary data (lower panel) are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of five independent experiments. (b) MAST3-HA was pre-incubated without (MAST3) or with PKA (P-MAST3) and ATP for 30 min. Recombinant purified ARPP-16 (100 nM) was incubated with P-MAST3 or MAST3 in the presence of ATP-\u03b3-32P, for various times; proteins were analyzed as described in panel a. The resulting values for phosphorylation are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of three independent experiments. (c) The domain structure of MAST3 is illustrated. The position of the four phosphorylation sites studied are indicated. MAST3-HA was overexpressed in HEK293T cells and incubated in the absence or presence of 10 \u03bcM forskolin (FSK) for 30 min. MAST3-HA was isolated by immunoprecipitation and the samples analyzed by LC-MS/MS. The fold-change increase in phosphorylation of S512, T628 and S747 was assessed by different proteomic methods, namely LABEL FREE or SWATH, on different mass spectrometers. Data are presented as \u2013fold change in peptide phosphorylation in response to forskolin compared to control. *T389: Phosphorylation of T389 was identified but not quantitated.\n\nTo investigate the regulation of MAST3 further, and identify directly sites of phosphorylation, we expressed MAST3-HA in HEK293T cells and incubated them without or with forskolin. MAST3-HA was then immunoprecipitated, samples digested, phospho-peptides enriched with TiO2, and peptides identified by LC-MS/MS (Supplementary file 1). A total of 12 phospho-sites were identified under control conditions. Of these, 6 were found also in the forskolin samples, while an additional 7 phospho-sites were found only in the samples incubated with forskolin. Notably, inspection of the amino acid sequence of MAST3 using bioinformatics tools KinasePhos (Huang et al., 2005), PhosphoNet (Safaei et al., 2011), NetPhos 3.1 (Blom et al., 2004) also identified Thr389 (RHRDT[389]RQR) as a potential PKA site. Although MS/MS analysis of a chymotryptic digest of MAST3-HA showed the presence of a phospho-peptide containing T389 the level of this peptide was very low and we did not observe the presence of this phosphorylated site in any tryptic digestion. We then assessed the effects of forskolin on the phosphorylation of Ser512, Thr628 and Ser747 in different experiments. We used a label-free approach to reanalyze some of the initial samples, and found a 4.8-fold increase in Ser512, 47-fold increase in Thr628, and 15-fold increase in Ser747 (Figure 4c). In a second set of experiments, the data-independent SWATH MS/MS technique was used to quantify the effect of incubation with forskolin. An increase in phosphorylation of Ser512, Thr628 and Ser747 of 1.2\u20132.5 fold was found (average of two separate experiments). Finally, using a label-free approach in a new set of samples, increases of 1.6-fold in Thr628, and 7.1-fold in Ser747 were observed, although Ser512 was recovered in low amounts and no significant changes were observed. Together, the results suggest that MAST3 is phosphorylated at multiple sites by PKA.\n\n### cAMP/PKA-dependent regulation of MAST3 kinase in intact cells\n\nWe investigated the potential role of phosphorylation of four sites, Thr389, Ser512, Thr628 and Ser747 through expression of WT MAST3-HA, and mutants in which each site was mutated to either alanine or aspartate to mimic non-phosphorylatable or potential phosphomimetic forms, respectively. We focused first on the effect of Thr389 phosphorylation. We immunoprecipitated WT, T389D-MAST3 and T389A-MAST3 from HEK293T cells, and carried out in vitro assays to directly assess the effects of PKA-dependent phosphorylation on MAST3 activity (Figure 5a). Equivalent levels of MAST3 were recovered by immunoprecipitation. However, the T389D-MAST3-HA mutant was much less active than WT-MAST3-HA. In contrast, even after pre-incubation with PKA and ATP, the T389A-MAST3-HA mutant was only slightly less active than WT MAST3-HA. We next expressed ARPP-16 in HEK293T cells in combination with WT-, T389D- or T389A-MAST3 and incubated without or with forskolin (Figure 5b,c). As shown in Figure 2 for WT MAST3-HA, forskolin treatment led to an increase in Ser88 phosphorylation and a decrease in Ser46 phosphorylation. Cells expressing T389D-MAST3 exhibited a large reduction in the phosphorylation of Ser46 compared to WT-MAST3. In cells expressing T389A-MAST3 in the absence of forskolin, phosphorylation of Ser46 was similar to WT MAST3-HA. In comparison to WT MAST3-HA, addition of forskolin resulted in a smaller reduction in Ser46 phosphorylation. Phosphorylation of Ser88 was increased following incubation with forskolin for either WT or T389A-MAST3-HA.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig5-v2.jpg)\n\n**Figure 5.:** (a) WT MAST3-HA and the unphosphorylable T389A-MAST3-HA or the phosphomimetic T389D-MAST3-HA were expressed in HEK293T cells and isolated by immunoprecipitation. Upper panel shows immunoblotting of WT and mutant MAST-HA proteins. T389A-MAST3 was pre-incubated for 20 min with PKA prior to the assay with ARPP-16. All MAST3 proteins were then incubated with ARPP-16 in the presence of ATP-\u03b3-32P for different times. The proteins were resolved by SDS-PAGE and phosphorylation of Ser46 was measured by autoradiography. The results are expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of three independent experiments. (b) ARPP-16-HA was expressed in HEK293T cells alone or with WT MAST3-HA and the phospho-mutants T389D orT389A-MAST3-HA. Cells were treated without or with 10 \u03bcM forskolin (FSK) for 30 min. Phosphorylation at Ser46 or Ser88 ARPP-16 were measured by immunoblotting with phospho-specific antibodies. Phospho-site signals were normalized for total ARPP-16-HA expression and then to MAST3-HA proteins, each measured by immunoblotting. (c) Graph of summary data shows quantification of phosphorylation on P-S46- and P-S88-ARPP-16 sites expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of three independent experiments. A one-way ANOVA, multiple comparison test (post-hoc test Tukey) was used for data analysis. P-S46-ARPP-16: ****p<0.001 ARPP-16/MAST3 vs ARPP-16/MAST3/FSK;\u00a0****p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-T389D; $$$$ p<0.001, ARPP-16/MAST3-T389A vs ARPP-16/MAST3-T389A/FSK. P-S88-ARPP-16: ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK, ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-T389A/FSK. The effect of FSK on MAST3 activity was significantly greater than that of the effect of FSK on T389A-MAST3A, two-tailed T test p=0.0146 (not shown).\n\nPhosphorylation of Ser46 was reduced for the S512D mutant but not as dramatically as for the T389D mutant (Figure 6a,b). For the S512A mutant the effect of forskolin on Ser46 phosphorylation was similar to that observed for WT MAST3-HA. Ser88 phosphorylation was stimulated by forskolin to a similar level for the S512A mutant. For the T628 mutants, phosphorylation of Ser46 was low for the T628D mutant (Figure 6c,d) but not as low as for the T389D mutant. Addition of forskolin resulted in a reduction in Ser46 phosphorylation to a level comparable to WT MAST3-HA. Phosphorylation of Ser88 was increased following incubation with forskolin for either WT or T628A-MAST3-HA. In contrast, mutation of Ser747 to aspartate had no significant effect on Ser46 phosphorylation (Figure 6c,d). Moreover, mutation to alanine did not prevent the ability of forskolin to reduce phosphorylation of Ser46.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig6-v2.jpg)\n\n**Figure 6.:** ARPP-16-HA was expressed in HEK293T cells with WT MAST3-HA or the mutants S512D- or S512A-MAST3-HA, T628D- or T628A-MAST3-HA, or S747D- or S747A-MAST3-HA. Cells were incubated without or with 10 \u03bcM forskolin (FSK) for 30 min. (a and c) Phosphorylation at Ser46 and Ser88 were measured by immunoblotting. Phospho-site signals were normalized for total ARPP-HA and then to MAST3-HA proteins. (b and d) Graphs of summary data show phosphorylation on the different sites expressed in arbitrary densitometric units (a.u.) as mean \u00b1 SE of four (S512) or five independent experiments (T628, S747), one-way ANOVA, multiple comparison test (post-hoc test Tukey). Panel b: P-S46-ARPP-16: ****p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK, ****p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-S512D; $$$$p<0.001, ARPP-16/MAST3-S512A vs ARPP-16/MAST3-S512A/FSK. Panel b: P-S88-ARPP-16: ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK, ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-S512A/FSK. Panel d: P-S46-ARPP-16: ****p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK; ****p<0.001 ARPP-16/MAST3-T628D vs ARPP-16/MAST3; $$$p<0.005 ARPP-16/MAST3-T628A vs ARPP-16/MAST3-T628A/FSK; $$$p<0.005 ARPP-16/MAST3-S747A vs ARPP-16/MAST3-S747A/FSK. Panel d: P-S88-ARPP-16: ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3/FSK; ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-T628A/FSK; ####p<0.001, ARPP-16/MAST3 vs ARPP-16/MAST3-S747A/FSK.\n\nTaken together, these results supported the conclusion that MAST3 is regulated by phosphorylation at three of the four sites analyzed, namely Thr389, Ser512 and Thr628. The in vitro and intact cell experiments indicated that phosphorylation of Thr389 had the most robust effect on MAST3 activity. Mutation to alanine largely prevented the effect of PKA in the in vitro assay and mutation to a phospho-mimetic residue decreased phosphorylation of ARPP-16 to a very low level at Ser46 in the intact cell experiments. In the intact cell experiments, mutation of Ser512 or Thr628 to aspartate had lesser effects on Ser46 phosphorylation than the T389D mutation. Moreover, the Ser512 or Thr628 to alanine mutants had no effect, presumably because of the predominant effect of Thr389 phosphorylation.\n\nWe then studied how this direct PKA regulation of MAST3 might affect the switch control over PP2A activity, by extending the mathematical model and examining the dynamic behaviour (see Materials and methods and Appendix 1\u2014the mutual inhibition plus PKA inhibits MAST3 model). The P-S46-ARPP-16 bifurcation diagram indicated that the cAMP concentration range for bistability becomes narrower and shifts towards lower cAMP levels compared with the mutual antagonism scenario alone (Figure 3\u2014figure supplement 1). In addition, with this regulation, P-S46-ARPP-16 is dephosphorylated to a much lower level at higher cAMP concentration, therefore, the disinhibition of PP2A at a high cAMP level is more potent (Figure 3\u2014figure supplement 2).\n\n### Phosphorylation of ARPP-16 at Ser88 influences the inhibition of PP2A by phospho-Ser46\n\nOur previous in vitro studies have shown that phosphorylation of ARPP-16 at Ser88 has no effect on PP2A activity. We further analyzed in vitro the influence of Ser88 phosphorylation on the ability of P-S46-ARPP-16 to inhibit PP2A. Recombinant ARPP-16 was thiophosphorylated in vitro at Ser46 to avoid dephosphorylation by PP2A (Gharbi-Ayachi et al., 2010; Mochida, 2014; Andrade et al., 2017). The activity of immunoprecipitated PP2A-B55\u03b1 complex was measured using a phospho-peptide substrate and the malachite green assay method. As shown previously, P-S46-ARPP-16 inhibited PP2A-B55\u03b1 (Figure 7). Addition of an equimolar amount of dephospho-ARPP-16 had no effect on the ability of P-S46-ARPP-16 to inhibit PP2A. However, addition of an equimolar amount of P-S88-ARPP-16 blocked the inhibitory effect of P-S46-ARPP-16. Addition of an equimolar amount of the S88D-ARPP-16 mutant partially attenuated the effect of P-S46-ARPP-16. These results suggest that in addition to antagonizing the ability of MAST3 to phosphorylate ARPP-16 at Ser46, phospho-Ser88-ARPP-16 may act in a \u2018dominant-negative\u2019 manner to antagonize the inhibition of PP2A by phospho-Ser46-ARPP-16.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig7-v2.jpg)\n\n**Figure 7.:** Recombinant Flag-B\u03b1 was expressed in HEK293T cells and the B\u03b1-PP2A heterotrimer isolated by immunoprecipitation using anti-Flag antibody. PP2A-B\u03b1 activity was measured in the presence of thiophosphorylated P-\u03b3-S46-ARPP-16, or a mixture of P-\u03b3-S46-ARPP-16 plus ARPP-16, plus P-S88-ARPP-16, or plus S88D-ARPP-16 (200 nM for each protein). Phosphatase activity was detected using a malachite green assay kit (Millipore). Results are expressed as percent activity with respect to PP2A-B\u03b1 activity measured in the absence of any inhibitor (black bar). Data were analyzed by one-way ANOVA multiple comparison test (post-hoc test Tukey) (error bars show SEM). ****p<0.001 P-S46-ARPP-16 vs PP2A control; ****p<0.001 P-S46-ARPP-16 + ARPP-16 vs PP2A control; ####p<0.001, P-S46-ARPP-16 + /P-S88-ARPP-16 vs P-S46-ARPP-16. ##p<0.01, P-S46-ARPP-16\u00a0+\u00a0S88D-ARPP-16 vs P-S46-ARPP-16; *p<0.05, P-S46-ARPP-16\u00a0+\u00a0S88D-ARPP-16 vs PP2A control.\n\nUsing the mathematical model, we asked how this \u2018dominant-negative\u2019 regulation affects the switch-like control over PP2A activity. We first added this regulation directly into the mutual-antagonism model, assuming that P-S88-ARPP-16 weakens the binding between P-S46-ARPP-16 and PP2A (see Materials and methods and Appendix 1\u2014the mutual inhibition plus PKA inhibits MAST3 and dominant negtive model with modifications in red). The bifurcation diagram of P-S46-ARPP-16 showed that by adding this \u2018dominant-negative\u2019 mode of regulation, the cAMP concentration range required for bistability shifts towards higher cAMP levels (Figure 3\u2014figure supplement 1). Indeed, by interfering with PP2A binding, P-S88-ARPP-16 prevents P-S46-ARPP-16 dephosphorylation. Therefore, higher cAMP concentrations are required for both switching off and switching on Ser46 phosphorylation. As P-S88-ARPP-16 antagonizes the inhibition of PP2A, and by doing so preventing P-S46-ARPP-16 dephosphorylation, PP2A disinhibition is reduced to a greater extent than the level of Ser46 dephosphorylation (Figure 3\u2014figure supplement 2).\n\nWe then added the direct regulation of PKA on MAST3 back into the model. The switch-like control of cAMP over PP2A activity was intact. However, combining all three modes of regulation together resulted in only slight modification of PP2A disinhibition, compared to the model with only mutual antagonism and PKA inhibiting MAST3 (Figure 3\u2014figure supplements 1 and 2). Based on the data we have and the assumptions we made, this would indicate that the direct regulation from PKA to MAST3 has a much potent effect on controlling PP2A activity than the \u2018dominant-negative\u2019 effect of P-S88-ARPP-16 on PP2A inhibition.\n\n## Discussion\n\nRecent studies have identified the ARPP/ENSA proteins as important regulators of protein phosphatase PP2A (Gharbi-Ayachi et al., 2010; Mochida et al., 2010; Dupr\u00e9 et al., 2013; Andrade et al., 2017). The ARPP/ENSA proteins are remarkably conserved in plants, fungi, yeast, flies, worms and mammals (Dulubova et al., 2001; Labandera et al., 2015) suggesting a primal origin and conserved function to control PP2A activity. However, the precise role of the ARPP/ENSA proteins varies in different cellular contexts, and the proteins are subject to variable modes of regulation. In frog oocytes, ARPP-19 is highly phosphorylated at the PKA site (Ser109, the site equivalent to Ser88 in ARPP-16) during prophase arrest while phosphorylation of Ser67 by Gwl is very low (Dupr\u00e9 et al., 2013, 2014). Upon resumption of meiosis, reduced PKA activity and dephosphorylation of Ser109 is required, following which Ser67 phosphorylation by Gwl acts within an amplification mechanism, converting ARPP-19 in to a potent inhibitor of PP2A (Dupr\u00e9 et al., 2013, 2014). In contrast, in non-dividing neurons in striatum, MAST3 activity is basally active leading to high phosphorylation of Ser46 of ARPP-16, and constitutive inhibition of PP2A (Andrade et al., 2017). Correspondingly, phosphorylation of Ser88 in ARPP-16 is low in neurons, but in response to cAMP-dependent activation of PKA, Ser88 phosphorylation is increased while Ser46 phosphorylation decreases, leading to dis-inhibition of PP2A (Andrade et al., 2017). That the same conserved signaling module is used in such distinct roles, where the signaling mechanism is essentially inverted, suggests a complex series of interactions between the protein kinases and phosphatases that regulate the phosphorylation of ARPP/ENSA proteins. The results from the current in vitro, cell-based, and modelling studies of ARPP-16, indicate that there is a mutually antagonistic relationship between the phosphorylation of the PKA and MAST3 sites that contribute to a switch-like process that likely controls PP2A regulation in distinct ways in dividing and non-dividing cells (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/24998/elife-24998-fig8-v2.jpg)\n\n**Figure 8.:** (a) Phosphorylation of ARPP-16 at Ser88 by PKA suppresses the phosphorylation of Ser46 by MAST3, while conversely phosphorylation of Ser46 by MAST3 acts in a reciprocal manner to suppress phosphorylation of Ser88 by PKA. (b) The balance of MAST3 kinase and PKA activities determines the state of phosphorylation of Ser46 and Ser88, and subsequent regulation of PP2A heteromers. SBGN Process Description (Le Nov\u00e8re et al., 2009) map showing ARPP-16 phosphorylations by MAST3 and PKA and the different direct and indirect effects of PKA on the modulation of PP2A by ARPP-16. Phosphorylation of ARPP-16 at Ser88 inhibits its phosphorylation at Ser46, phosphorylation of MAST3 inhibits its activity towards S46-ARPP-16, and dominant-negative effect of P-S88-ARPP-16, precluding binding of P-S46-ARPP-16 to PP2A.\n\nIn vitro kinetic analyses indicate that prior phosphorylation of either Ser46 or Ser88 in ARPP-16 acts to suppress the phosphorylation of the other site by its respective kinase, MAST3 or PKA. Studies in intact cells were consistent with the in vitro results. Mutation of Ser88 to aspartate acted as a phospho-mimetic, generating a substrate that was phosphorylated\u00a0~5 fold less efficiently by MAST3 in vitro and in intact cells. In contrast, mutation of Ser46 to aspartate did not create a phospho-mimetic in terms of phosphorylation of Ser88 by PKA, consistent with the fact that a Ser46 to aspartate mutation in ARPP-16 failed to inhibit PP2A (Musante unpublished results). The in vitro kinetic assays revealed that prior phosphorylation of either Ser88 or Ser46 influenced both the Km and Vmax parameters by MAST3 or PKA, respectively. ARPP-16, ARPP-19 and ENSA, like DARPP-32 and ARPP-21 are heat-stable proteins that contain little secondary structure and are likely to be highly flexible (Huang et al., 2001; Dancheck et al., 2008). Presumably, phosphorylation of either Ser46 or Ser88 in ARPP-16 has the ability to constrain the structure(s) of the protein to negatively influence the binding that is reflected in the altered kinetic parameters measured for MAST3 or PKA. Interestingly, injection of a S109D-ARPP-19 protein into intact frog oocytes could not be phosphorylated by Gwl at Ser67 and arrested oocytes in prophase (Dupr\u00e9 et al., 2014). This suggests that the mechanism of action of PKA phosphorylation of ARPP/ENSA proteins may be common to both MAST3 and Gwl.\n\nThough initially described as a microtubule-associated protein, little is known about the function or regulation of the MAST family of protein kinases (Walden and Cowan, 1993; Zhou et al., 2004; Valiente et al., 2005; Wang et al., 2006). In addition to a conserved kinase domain, MAST1-4 contain a PDZ domain of unknown function, as well as other potential regions that may influence cellular localization or action. In the current study, we found that PKA directly phosphorylates MAST3, leading to inhibition of enzyme activity. Mass spectrometry identified numerous phosphorylation sites including Thr389, Ser512 and Thr628, that contribute to inhibition of MAST3 to different extents, with Thr389 having the largest effect. These 3 sites are all within the kinase domain (residues 367\u2013640 of MAST3) and may influence enzyme activity via direct or allosteric effects.\n\nThr389 (MAST1, 2, 3, 4), Ser512 (MAST1, 2, 3, 4 and MASTL) and Thr628 (MAST2, 3, 4) are present in other MAST kinase isoforms suggesting conserved modes of regulation of other family members by PKA. In mammals, MASTL kinase is likely widely distributed in dividing cells where it regulates cell cycle progression via the inhibition of ENSA/ARPP-19 (Voets and Wolthuis, 2010). Phosphorylation of MASTL by PKA might allow for cAMP-dependent regulation of cell division (see (Dupr\u00e9 et al., 2014) for discussion). MAST1-4 exhibit variable patterns of expression in mammalian organs and tissues (Garland et al., 2008), where they presumably phosphorylate ENSA/ARPP-19/ARPP-16, and potentially other substrates. In particular, the different MAST kinase isoforms show distinct patterns of expression in the brain, where they could be regulated by different G protein-coupled receptors that modulate cAMP/PKA signalling (Gainetdinov et al., 2004). It will be important to further investigate how MAST3 and the other MAST kinases are regulated by PKA and other phosphorylation events. Currently, there is nothing known about the identity of any of the phosphatase(s) responsible for dephosphorylation of MAST3. Recent studies of Gwl and MASTL have identified specific roles of both PP1 and PP2A in their regulation (Heim et al., 2015; Ma et al., 2016; Rogers et al., 2016; Wang et al., 2016). Modeling studies also support a potential role for phosphatase action upon Gwl as part of a negative feedback process that could contribute to its regulation (Vinod and Novak, 2015)(see also below). MAST3 and the other MAST kinase isoforms are also likely to be subject to variable modes of regulation at different sites by specific protein phosphatases.\n\nAs different MAST kinase isoforms, expressed in distinct patterns in the brain, could regulate the inhibitory effect of ARPP-16/ARPP-19/ENSA on PP2A, we used the model to test how different concentrations of total MAST3 might affect the switch-like control over PP2A inhibition, in response to cAMP concentration changes. Varying total MAST3 concentration in the mathematical model with all three layers of regulation does not affect the general switch-like response to cAMP concentration changes (Figure 3\u2014figure supplement 3). In fact, at a fixed cAMP level, bistability exists over a range of MAST3 concentrations (Figure 3\u2014figure supplement 4). A two-variable bifurcation diagram reveals wide dynamic ranges for joint MAST3 and cAMP concentrations where bistability exists (Figure 3\u2014figure supplement 5).\n\nThe structural details of how ARPP-16/ARPP-19/ENSA interact with and inhibit PP2A are not known. ARPP-19/ENSA phosphorylated by Gwl (Gharbi-Ayachi et al., 2010; Mochida et al., 2010; Mochida, 2014) or ARPP-16 phosphorylated by MAST3 (Andrade et al., 2017) act as specific inhibitors of heterotrimeric but not AC dimeric forms of PP2A. Studies in Xenopus oocytes suggest a preference for binding of phospho-S67-ENSA to the B55-containing form of the phosphatase (Castilho et al., 2009; Mochida et al., 2010), while phospho-S46-ARPP-16 can inhibit both B55\u03b1 and B56\u03b4-containing PP2A heterotrimers (Andrade et al., 2017). The interaction of phospho-S46/S67-ARPP-16/19/ENSA with PP2A likely involves some sort of pseudosubstrate interaction with the active site of the C subunit (Mochida et al., 2010; Williams et al., 2014). Preliminary structure-function analysis and crosslinking studies indicate that a central region of ENSA containing phospho-Ser67 inhibits PP2A and can bind to both the C and B55 subunit (Mochida, 2014). Studies of ARPP-16 indicate that it can bind to sub-regions of the A subunit in an unphosphorylated state (Andrade et al., 2017). The ARPP/ENSA proteins therefore are likely to be able to interact through a number of different regions with PP2A heterotrimers. Our studies of the PKA-phosphorylated form of ARPP-16 indicates that it could act in a dominant-negative manner and antagonize the inhibitory actions of phospho-S46-ARPP-16 on PP2A. Perhaps the phospho-S88/S88D forms of ARPP-16 bind favourably to the A or B subunits in a way that competes with the phospho-Ser46 form. The ability of the PKA-phosphorylated ARPP-16 to act as a dominant negative might also provide part of the explanation for the studies carried out in intact Xenopus oocytes which showed that increasing amounts of phospho-S109-ARPP-19 resulting from endogenous PKA activity, or introduction of an Ser109 to aspartate phospho-mimetic form of ARPP-19, blocked the effect of phospho-S67-ARPP-19 on progesterone-induced meiotic maturation (Dupr\u00e9 et al., 2014).\n\nBistability and switch-like behaviour have been considered as basic building blocks in molecular biology and explored both computationally and experimentally (Gardner et al., 2000; Kellershohn and Laurent, 2001; Cross et al., 2002). The discontinuous, two-way switch is often referred to as a toggle switch, in which a system can be switched on or off based on quantitatively different signal thresholds, therefore preventing premature activation or inactivation (Tyson et al., 2003). The ARPP/ENSA/Gwl system has been shown to produce a toggle switch response to Cdk1 activity, based on the antagonism between Cdk1 and PP2A (Mochida et al., 2010; Vinod and Novak, 2015). However, there is so far no model that explores the antagonistic effect between the two phosphorylation sites on ENSA/ARPP. To model PP2A inhibition by ARPP-16, we adapted the mechanism proposed by Vinod and Novak (2015) for the inhibition by ENSA. In addition, we focused on the reciprocal relationship between phospho-Ser46 and phospho-Ser88 mediated by inhibition of PKA and MAST3, and demonstrated that ARPP-16 is capable of switching its phosphorylation states depending on different cAMP concentration thresholds, therefore dynamically controlling PP2A activity. The additional layers of PKA regulation, including directly inhibiting MAST3 and dominant negative antagonism of PP2A inhibition, reduce and almost equalize the two cAMP thresholds for switching on or off PP2A inhibition. These regulations together produce an ultra-sensitive system in response to cAMP at micromolar-range concentrations and deepen the release of PP2A inhibition. The micromolar-range cAMP concentrations required for bi-stable states provide sensitive thresholds in most subcellular neuronal compartments, given the fast diffusion coefficient of cAMP (Hempel et al., 1996; Chen et al., 1999), and the likely very high activity of cAMP phosphodiesterase activity in striatal neurons (Sharma et al., 2015). However, the network we studied here is relatively small, and the antagonistic inhibition exerted by ARPP-16's MAST3 phosphorylation site to its PKA site could be strengthened by the feedback loop from PP2A inhibition to PKA inhibition, via for example, phospho-Thr75-DARPP-32 (Bibb et al., 1999). As shown in the two-parameter bifurcation diagrams (Figure 3\u2014figure supplements 6 and 7), the stronger phospho-Ser46 antagonizes Ser88 phosphorylation, the wider the difference between two cAMP thresholds becomes, therefore the more hysteresis appears. Future modeling work will be useful to understand the complex interrelationship between the abundant PKA substrates, ARPP-16/ENSA, DARPP-32 and ARPP-21/RCS, all of which play important roles in striatal neurons (Walaas et al., 2011).\n\nThrough in vitro analysis, cell-based studies and molecular modeling, the current study supports a complex inter-relationship between the functional effects of the MAST3 and PKA sites in ARPP-16, and the presence of additional regulatory mechanisms that couple changes in cAMP levels to generate a switch-like control over PP2A activity. Elements of the switch-like process are summarized in the two schematic illustrations shown in Figure 8. Phosphorylation of ARPP-16 at Ser88 by PKA suppresses the phosphorylation of Ser46 phosphorylation by MAST3, while conversely phosphorylation of Ser46 by MAST3 acts in a reciprocal manner to suppress phosphorylation of Ser88 by PKA (Figure 8a). In turn, the balance of MAST3 kinase and PKA activities determines the state of phosphorylation of Ser46 and Ser88. For example, under basal conditions in neurons in striatum, MAST3 activity is high and PKA activity is low, resulting in high levels of phospho-Ser46 and inhibition of specific heterotrimeric forms of PP2A (Figure 8b, left panel). Following its activation by cAMP, PKA acts at three different levels to prevent the inhibition of PP2A isoforms. Phosphorylation of Ser88 suppresses the ability of MAST3 to phosphorylate Ser46. PKA also phosphorylates MAST3 at multiple sites to inhibit its activity (Figure 8b, upper right panel). Finally, phospho-Ser88-ARPP-16 acts in a dominant-negative manner to prevent inhibition of PP2A by ARPP-16 phosphorylated at Ser46 (Figure 8b, lower right panel). The complex interplay likely serves to underlie the balance of signaling pathways that act via ARPP-16 and PP2A in distinct ways in neurons and other cell types. While the current study and the work of others has elucidated many details of the regulation of PP2A by ARPP-16/19/ENSA, several important questions remain. The identity of the phosphatase(s) that dephosphorylate ARPP-16/19/ENSA at the PKA site, as well as of phosphatases that dephosphorylate various sites in MAST3, are not known. Regulation of these and other phosphatases would potentially add further complexity to this signaling hub. Additional structural analyses will also be needed to elucidate the molecular details related to how GwL/MAST-phosphorylated ARPP-16/19/ENSA inhibit PP2A.\n\n## Materials and methods\n\n### Materials\n\npET28-ARPP-16, pET28-S46D-ARPP-16, pET28-S88D-ARPP-16, and pCMV-HA-ARPP16, pCMV-HA-S88D-ARPP16, pCMV-HA-S46D-ARPP16, pCMV-HA-MAST3 (sequence corresponding from aa313 to aa1021 of the human protein, all the other mutant constructs are variation of the same sequence, aa1-1021), pCMV-HA-MAST3-FL (human MAST3 full length sequence), pCMV-HA-T389D-MAST3, pCMV-HA-T389A-MAST3, pCMV-HA-S512D-MAST3, pCMV-HA-S512A-MAST3, pCMV-HA-T628A-MAST3, pCMV-HA-T628D-MAST3, pCMV-HA-S747A-MAST3 and CMV-HA-S747D-MAST3 were prepared using standard procedures (see below). Antibodies used for these studies include: anti-rabbit total ARPP-16 (1:1000 G153, [Horiuchi et al., 1990]), anti-rabbit P-S46-ARPP-16 (1:1000 RU1102, [Andrade et al., 2017]), anti-rabbit P-S88-ARPP-16 (1:500 G446 [Dulubova et al., 2001]), anti-HA antibody (catalog #05\u2013904 RRID:AB_11213751; 1:1000 Cell Signaling Technology, Inc), anti-HA antibody (Novus Biological) used for immunoprecipitation, anti-FLAG (catalog #F1804 RRID:AB_262044; Sigma-Aldrich), anti-GAPDH antibody (catalog CB1001-500UG RRID:AB_2107426; 1:3000, EMD Millipore, anti-MAST3 antibody (catalog #BS5790, AB_2661882; 1:1000, Bioworld Technology, Inc), anti-total GluR1 antibody (catalog #04\u2013855 RRID:AB_1977216; 1:1000, EMD Millipore), anti-pS845 on GluR1 antibody (catalog #p1160-845 RRID:AB_2492128; 1:1000, PhosphoSolutions), monoclonal total DARPP-32 (1:5000 6a [Ouimet et al., 1984]), anti-rabbit pT34 on DARPP-32 (1:1000 cc500 [Stipanovich et al., 2008]). Recombinant PKA was from Millipore). Forskolin and Okadaic Acid were from Abcam. R(+)-SKF-81297 hydrobromide (catalog S179-5MG) was from Sigma-Aldrich.\n\n### Site-directed mutagenesis of ARPP-16 and MAST3\n\nMutations of ARPP-16 Ser46 and Ser88 and of each potential PKA phosphorylation site for MAST3 were performed using the QuikChange XL site-directed mutagenesis kit according to the manufacturer's instructions (Stratagene). Briefly, 50 ng of pET28-ARPP-16, pCMV-HA ARPP-16, pCMV-HA MAST3 were used as a template with the following mutant nucleotide primers: for ARPP-16, S46A forward primer 5\u2019-tgcagaaagggcaaaagtattttgatgctggggattacaac-3\u2019, S46A reverse primer 5\u2019- gttgtaatccccagcatcaaaatacttttgccctttctgca-3\u2019, S46D forward primer 5\u2019- aaaagattgcagaaagggcaaaagtattttgatgatggggattacaacatgg-3\u2019, S46D reverse primer 5\u2019- ccatgttgtaatccccatcatcaaaatacttttgccctttctgcaatctttt-3\u2019, S88A forward primer 5\u2019- cctccctcagcggaaaccagccctggttgc-3\u2019, S88A reverse primer 5\u2019- gcaaccagggctggtttccgctgagggagg-3\u2019, S88D forward primer 5\u2019- ctccctcagcggaaaccagacctggttgctagc-3\u2019, S88D reverse primer 5\u2019- gctagcaaccaggtctggtttccgctgagggag-3\u2019; for MAST3, T389A forward primer 5\u2019-gcggcaccgtgacgcccggcagcgctttg-3\u2019, T389A reverse primer 5\u2019-caaagcgctgccgggcgtcacggtgccgc-3\u2019, T389D forward primer 5\u2019-gtgcggcaccgtgacgaccggcagcgctttgcc-3\u2019, T389D reverse primer 5\u2019-ggcaaagcgctgccggtcgtcacggtgccgcac-3\u2019, S512A forward primer 5'-ggacttcggcctggccaagatcggcct-3', S512A reverse primer 5'-aggccgatcttggccaggccgaagtcc-3', S512D forward primer 5'-cacggacttcggcctggacaagatcggcctcatg-3', S512D reverse primer 5'-catgaggccgatcttgtccaggccgaagtccgtg-3', T628A forward primer 5'-accgtctgggcgctggtggcaccc-3', T68A reverse primer 5'-gggtgccaccagcgcccagacggt-3', T628D forward primer 5'-ggaccgtctgggcgatggtggcacccac-3', T628D reverse primer 5'-gtgggtgccaccatcgcccagacggtcc-3', S747A forward primer 5'-tggccgccggctggctgctgacatccgg-3', S747A reverse primer 5'-ccggatgtcagcagccagccggcggcca-3', S747D forward primer 5'-tggccgccggctggatgctgacatccgg-3', S747D reverse primer 5'-ccggatgtcagcatccagccggcggcca-3'.\n\nDNA sequencing identified appropriate clones.\n\n### Expression of recombinant proteins\n\n6xHis-ARPP-16, 6xHis-S46D-ARPP-16 and 6xHis-S88D-ARPP-16 proteins were overexpressed in BL21 (DE3) cells, lysed using sonication in 300 mM NaCl, 50 mM potassium phosphate, 1% Triton X-100 pH 8.0 and immobilized on Profinity IMAC Ni2+ charged resin (Bio-Rad, Hercules, CA). The resin was washed 3 times in 300 mM NaCl, 50 mM potassium phosphate, 10 mM imidazole, pH 8.0. Proteins were eluted using a buffer containing 300 mM NaCl, 50 mM potassium phosphate, 250 mM imidazole, pH 8.0. Buffer exchange (150 mM NaCl, 25 mM TrisHCl pH 7.4), used PD10 desalting columns (GE Healthcare Life Science), 1 ml fractions were collected, and protein content was determined using SDS-PAGE.\n\n### HEK293T protein expression\n\n293T/17 [HEK 293T/17] (ATCC CRL11268) were purchased from AMERICAN TYPE CULTURE COLLECTION (ATCC) (lot number 58483269, cell species identity has been confirmed by COI assay (intraspecies) and STR assay (interspecies); cells tested negative for mycoplasma). Cells were cultured to 60\u201370% confluence in 10% FBS-DMEM. Expression plasmids (HA-ARPP-16, HA-S46D-ARPP-16, HA-S88D-ARPP-16, HA-MAST3 [aa from 332 to 1014], HA-T389D-MAST3, HA-T389A-MAST3, HA-S512D-MAST3, HA-S512A-MAST3, HA-T628A-MAST3, HA-T628D-MAST3 and HA-S747A-MAST3 were expressed in HEK293T cells in 10 cm plates using Lipofectamine 2000 transfection (Invitrogen). Immunoblotting for ARPP-16 or MAST3 was routinely used to control for levels of protein expression. Expression levels of ARPP-16 plus endogenous ARPP-19, or MAST3, were approximately equal to that of ARPP-16 plus ENSA, or MAST3, in adult striatum. Twenty-four hours after transfection, cells were lysed in a buffer containing 25 mM Tris, pH 8.0, 150 mM NaCl, 0.1% Triton X-100, protease and phosphatase inhibitors cocktails, followed by centrifugation at 16,000 x g, 10 min. Supernatants were subjected to immunoprecipitation or immunoblotting as described below.\n\n### Striatal slice preparation\n\nMale C57BL/6 mice at 6\u20138 weeks old were purchased from Charles River. All mice used in this study were handled in accordance with the Yale University Animal Care and Use Committee (IACUC) and NIH Guide for the Care and Use of Laboratory Animals. Male C57BL/6 mice were sacrificed by decapitation. The brains were rapidly removed and placed in ice-cold, oxygenated Krebs-HCO3- buffer (124 mM NaCl, 4 mM KCl, 26 mM NaHCO3, 1.5 mM CaCl2, 1.25 mM KH2PO4, 1.5 mM MgSO4 and 10 mM D-glucose, pH 7.4). Coronal slices (350 \u03bcm) were prepared using a vibrating blade microtome (VT1000S, Leica Microsystems, Nussloch, Germany), as described previously (Nishi et al., 2005). From each mouse, six striatal slices were dissected from the coronal slices in ice-cold Krebs-HCO3\u2212 buffer. Each slice was placed in a polypropylene incubation tube with 2 ml fresh Krebs-HCO3- buffer containing adenosine deaminase (10 \u03bcg/ml). The slices were preincubated at 30\u02daC under constant oxygenation with 95% O2/5% CO2 for 60 min. The buffer was replaced with fresh Krebs-HCO3- buffer after 30 min of preincubation. Each slice was treated with drug as specified in each experiment. After drug treatment, slices were transferred to Eppendorf tubes, frozen on dry ice, and stored at \u201380\u02daC until assayed. Frozen tissue samples were sonicated in boiling 1% sodium dodecyl sulfate (SDS) and boiled for an additional 10 min. Total lysate (equal volume for each sample) was analyzed by SDS-PAGE and immunoblotting as described below.\n\n### Immunoblotting\n\nCell lysates were separated by SDS-PAGE (Novex 10\u201320% or 4\u201320% gradient gels (Invitrogen)) and transferred onto nitrocellulose membranes, 0.2 \u03bcm (Bio-Rad). The membranes were blocked for 1 hr at room temperature (5% nonfat dry milk in PBS, 0.1% Tween 20) and immunoblotted overnight at 4\u00b0C, with specific antibodies as indicated. Antibody binding was detected using IRDye800-conjugated anti-mouse IgG (catalog #610-102-041 RRID:AB_2614830; 1:10.000; Rockland) or IRDye680-conjugated anti-rabbit IgG (catalog #926\u201368021 RRID:AB_10706309; 1:10.000 LI-COR, Bioscience). Blots were analyzed and quantified using an Odyssey Infrared Imaging System (LI-COR Bioscience, Image Studio Lite version 3.1, RRID:SCR_013715). Anti-rabbit pS88 (G446), and anti-rabbit pS46 (RU1102) for ARPP-16 were detected using peroxidase-conjugated secondary antibody (catalog #PI-1000 RRID:AB_2336198; 1:300, Vector Laboratories,Inc.) coupled with a chemiluminescence detection system (Pierce, ThermoScientific).\n\n### ARPP-16 in vitro phosphorylation\n\nFor Ser46 phosphorylation, purified 6xHis-ARPP-16 proteins (100 \u03bcM) were incubated with immunoprecipitated MAST3 kinase in the presence of 200 \u03bcM ATP or thio-ATP (Sigma) in phosphorylation assay buffer (50 mM Hepes, pH 7.4, 10 mM MgCl2) at 30\u00b0C for different times. For Ser88 phosphorylation, purified 6xHis-ARPP-16 proteins (100 \u03bcM) were incubated with recombinant PKA in the presence of 200 \u03bcM ATP or thio-ATP in phosphorylation assay buffer (50 mM Hepes, pH 7.4, 10 mM MgCl2, 1 mM EGTA) at 30\u00b0C for different times. Phospho-ARPP-16 preparations were isolated (where needed) by ion-exchange chromatography using an FPLC.\n\n### Immunoprecipitation and phosphatase assay\n\nPP2A-B\u03b1 subunit was expressed in HEK293T cells and cells lysed as described above. Lysates were incubated with 50 \u03bcl (50% slurry) of anti-FLAG conjugated agarose beads for 2 hr at 4\u00b0C. Immunocomplexes were washed 3 times in lysis buffer without phosphatase inhibitors and 2 times in PP2A reaction buffer (pNPP Ser/Thr Assay Buffer, Phosphatase Assay Kit, Millipore). The PP2A-B\u03b1 trimer immunocomplex was resuspended in 100 \u03bcl of PP2A reaction buffer and incubated without or with thio-phosphorylated P-S46-ARPP-16, or P-S46-ARPP-16 plus: ARPP-16, or P-S88-ARPP-16, or S88D-ARPP-16 (200 nM each) for 10 min at 37\u00b0C in the presence of 500 \u03bcM phosphopeptide (K-R-pT-I-R-R). Phosphatase activity was measured using a malachite green assay kit (Millipore).\n\n### MAST3 immunoprecipitation and phosphorylation\n\nMAST3-HA, T389A-MAST3-HA, or T389A-MAST3-HA were expressed in HEK293 and cells lysed as described above. Lysates were incubated with 50 \u03bcl (50% slurry) of anti-HA conjugated agarose beads for 2 hr at 4\u00b0C. Immunocomplexes were washed 3 times in RIPA buffer and 3 times in a buffer without detergents (150 mM MgCl2, 25 mM Tris-HCl pH 7.4) and resuspended in PKA reaction buffer (50 mM Hepes, pH 7.4, 10 mM MgCl2, 1 mM EGTA). The immunoprecipitated kinases were incubated with PKA in the presence of 200 \u03bcM [\u03b3\u221232P] ATP at 30\u00b0C for different times. In the experiments that examined the effect of PKA-dependent phosphorylation on MAST3 activity, MAST3 immunocomplexes were incubated without or with PKA for 30 min together with ATP, washed twice with kinase buffer, then incubated with ARPP-16 as described above.\n\n### Quantification and statistical analysis\n\nImmunoblots and 32P autoradiograms were analyzed by Fiji ImageJ (http://fiji.sc/wiki/index.php/Fiji) or Image Studio (Licor Bioscience, Lincoln, NE, USA). Graphical presentations and statistical analyses were made using Graph Pad Prism (RRID:SCR_002798; Graph Pad Software).\n\n### Mass spectrometry\n\nSamples were processed in three different ways. (1) In initial studies, phosphopeptides were enriched and subsequently analyzed by liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis using a LTQ Orbitrap Elite instrument. Label-free quantitation was carried out retrospectively using Progenesis QI software; (2) Information Dependent Acquisition (IDA) and SWATH acquisitions were carried using an AB SCIEX Triple TOFTM 5600 instrument; (3) In later experiments where phosphopeptides were not enriched, samples were analyzed using a Q-Exactive Plus. Label-free quantitation was carried out using Progenesis QI software.\n\n(i)\u00a0Sample preparation: HEK293T cells were transiently transfected with HA-tagged wild-type MAST3 using Lipofectamine 2000 for 24 hr and then either mock treated with DMSO or treated with 10 \u03bcM FSK for 30 min. The cells were lysed and MAST3-HA was immunoprecipitated as described above. For (1) and (3), immunoprecipitated MAST3-HA was subjected to SDS-PAGE, and Coomassie stained gel bands corresponding to the MAST3-HA protein were in-gel digested. For (2), samples analysed by SWATH were not subjected to SDS-PAGE. Samples were digested with Lys C, chymotrypsin, LysC/trypsin, or chymotrypsin/trypsin in attempts to maximize coverage of the protein (see Supplementary file 1). Digestions were carried out at 1:10 ratio of enzyme:protein at 37\u00b0C for 16 hr. In the later experiments (3), samples were digested with trypsin (MS grade Promega; incubation at 37\u00b0C overnight), peptides were extracted utilizing an 80% acetonitrile solution containing 0.1% formic acid, and dried. Dried extracted peptides were reconstituted in Buffer A (100% water, 0.1% formic acid, and analyzed).\n\n(ii)\u00a0Phosphopeptide enrichment: Phosphopeptides present in initial digested samples were enriched using an in-house titanium oxide (TiO2) enrichment method with Glycen TopTips (Glycen Corporation, Columbia, MD [according to the manufacturer\u2019s manual]. Briefly, the samples were acidified with 0.5% trifluoroacetic acid (TFA)\u201350% acetonitrile and loaded onto TopTips (Glygen Corp.), followed by washing three times with 100% acetonitrile, 0.2 M sodium phosphate buffer (pH 7.0), 0.5% TFA, and then 50% acetonitrile. Phosphopeptides were eluted from the TopTip using 28% ammonium hydroxide, dried in a SpeedVac, and then redried from water. Samples were resuspended in 70% formic acid and then immediately diluted to 0.1% TFA for mass spectrometry analysis. Both the flow-through (FT) from the washes and the eluted enriched (EN) fractions were analyzed by high resolution LC-MS/MS on a LTQ-Orbitrap MS system. Quantitation of phosphopeptide levels was carried out retrospectively using Progenesis QI software.\n\n(iii)\u00a0Mass spectrometry and data analysis: (1) Samples were analyzed by LC-MS/MS using an LTQ Orbitrap Elite equipped with a Waters nanoACQUITY ultra-performance liquid chromatography (UPLC) system using a Waters Symmetry C18180 \u03bcm x 20 mm trap column and a 1.7 \u03bcm (75 \u03bcm inner-diameter x 250 mm) nanoACQUITY UPLC column (35\u00b0C) for peptide separation. Trapping was done at 15 \u03bcl/min with 99% buffer A (100% water, 0.1% formic acid) for 1 min. Peptide separation was performed at 300 nl/min with buffer A and buffer B (100% CH3CN containing 0.1% formic acid). A linear gradient (51 min) was run with 5% buffer B at initial conditions, 50% buffer B at 50 min, and 85% buffer B at 51 min, and re-equilibration was carried out for 20 min. Blank injections runs were implemented in between sample injections to ensure no carryover. Mass spectral data were acquired in the Orbitrap using 1 microscan and a maximum inject time of 900\u00a0\u03bcs followed by data-dependent MS/MS acquisitions in the ion trap (via collision-induced dissociation [CID]) and in the high-energy collision dissociation (HCD) cell. Neutral loss scans were also obtained for 98.0, 49.0, and 32.7 atomic mass units (amu). The data were analyzed using Mascot Distiller and the Mascot search algorithm.\n\n(2)\u00a0Information Dependent Acquisition (IDA) and SWATH acquisitions were carried out on an AB SCIEX Triple TOFTM 5600 coupled with a Waters nanoACQUITY UPLC system. Digests were loaded onto a Waters Symmetry C18180 \u00b5m x 20 mm trap column and separated on a nanoACQUITY 1.7 \u03bcm BEH300 C18 (75 \u00b5m x 150 mm) column. Peptide separations were performed at 500 nl/min with Buffer A (0.1% formic acid) and Buffer B (CH3CN containing 0.1% formic acid). A linear gradient (70 min) was run with 1% buffer B at initial conditions, 35% buffer B at 70 min, 95% buffer B at 70.33 min, and column re-equilibration for 20 min. IDA runs were carried out at high sensitivity with resolution\u00a0~16\u201318K in the MS/MS (w/max of 30 MS/MS per cycle) at 0.05 s/scan and TOFMS scan of 0.25 s. SWATH acquisition was carried out over the mass range of 400\u20131250 with setting at 26 Da scan window with 1 Da overlap (i.e.\u00a0400\u2013425, 424\u2013450, etc.) for a total of 34 SWATH windows per cycle. Acquired LC MS/MS data were analyzed using Analyst (v.2.5) and PeakView (v.2.0, AB SCIEX). Protein identification and site modification assignment utilized MASCOT (Matrix Science) searches; modification sites of interest were manually verified. Skyline (MacLean et al., 2010) was utilized to obtain precursor ion quantitation from SWATH data on the various modification sites.\n\n(3)\u00a0Samples were isolated from HEK293T cells essentially as described above. Four control and four forskolin-treated samples were analyzed, each as a technical duplicate. Samples were analysed using a Q-Exactive Plus (Thermo Fisher Scientific) LC MS/MS system equipped with a Waters nanoAcquity UPLC system, that used a Waters Symmetry C18180 \u00b5m x 20 mm trap column and a 1.7 \u00b5m (75 \u00b5m x 250 mm) nanoACQUITY UPLC column (37\u00b0C) for peptide separation. Trapping was done at 5 \u00b5l/min, 99% Buffer A for 3 min. Peptide separation was performed with a linear gradient over 140 min at a flow rate of 300 nL/min. Precursor mass scans (300 to 1500 m/z range, target value 3E6, maximum ion injection times 45 ms) were acquired and followed by HCD based fragmentation (normalized collision energy 28). A resolution of 70,000 at m/z 200 was used for MS1 scans, and up to 20 dynamically chosen, most abundant, precursor ions were fragmented (isolation window 1.7 m/z). The tandem MS/MS scans were acquired at a resolution of 17,500 at m/z 200 (target value 1E5, maximum ion injection times 100 ms).\n\nRelative changes in phosphopeptide levels were calculated based on the detected abundances of the precursor mass utilizing Progenesis QI (v. 3.0). Raw mass spectral data were first aligned based on their retention time, then peaks are picked based on a \u2018co-detection\u2019 scheme where ion detection was performed once on a single aggregate run, and multiple isotopic forms of the same ion were grouped to provide the abundance of that ion (the precursor mass) across the various runs. The protein level quantitation of MAST3 was then normalized (based on total abundance method) across all runs to correct for experimental (4 biological replicates) or technical (2 technical replicates) variations. The normalization was then attributed to the quantitation of the precursor mass corresponding phosphopeptide identified in previous runs. The differential analysis used to generate the Anova p value takes into account the mean difference and the variance and also the sample size. Thus small differences with small variance were considered significant (hence low p-values).\n\n### Computational modelling\n\nMathematical models were written to describe the mutually antagonistic effect of Ser46 and Ser88 phosphorylation on PKA and MAST3, respectively, as well as the direct inhibition from PKA to MAST3, and the \u2018dominant-negative\u2019 role of P-S88-ARPP-16 on PP2A inhibition. In these models, upon phosphorylation at Ser46 by MAST3, ARPP-16 becomes a stoichiometric inhibitor with high affinity binding, as well as being a substrate of PP2A. This results in low catalytic efficiency of PP2A. We hypothesized that P-S46-ARPP-16 inhibits PKA activity and lowers PKA catalytic efficiency, whereas P-S88-ARPP-16 inhibits MAST3 and weakens its catalytic efficiency as well. Our preliminary experimental results indicate that phospho-Ser88 is not dephosphorylated by PP2A, and for the model we assumed that dephosphorylation at Ser88 was catalyzed by PP1. For modeling the direct inhibition from PKA to MAST3, we assumed that PKA not only inactivates MAST3, but inactivated MAST3 also interferes with active MAST3 phosphorylation of ARPP-16. Finally, we hypothesized that P-S88-ARPP-16 antagonizes PP2A inhibition by weakening the binding between P-S46-ARPP-16 and PP2A.\n\nAll phosphorylation and dephosphorylation reactions were modelled following Michaelis-Menten kinetics (see additional details in Appendix 1). The activation of PKA followed the Hill equation and the parameters were validated against published experimental data (Zawadzki and Taylor, 2004) (see Appendix 1\u2014figure 7). Other regulations were modelled following laws of mass action. Inhibition of PP2A by P-S46-ARPP-16 and dephosphorylation of P-S46-ARPP-16 was modelled as described (Vinod and Novak, 2015). Parameters for PP1 were as described (Hayer and Bhalla, 2005). The total concentrations of each protein were estimated to correspond to their relative expression levels in striatum and were calculated relative to DARPP-32 abundance based on a recent mouse brain proteomic study (Sharma et al., 2015) (see Appendix 1\u2014table 2). We derived the values of the kinetic constant Km for Ser46 and Ser88 phosphorylation based on double reciprocal plots of data from Figure 1b and d. Kinetic constants (kcatPKA and kcatMAST3) and inhibitor constants (k88, k46, a and b) were estimated using the Particle Swam method implemented in the software COPASI (Hoops et al., 2006) and based on the data presented in Figure 1a-d (see Appendix 1\u2014the mutual inhibition model and Table 1). Parameters for PKA inactivation of MAST3 (kPKA) and how inactivated MAST3 interferes with catalytic efficiency of active MAST3 (r) were estimated as above, based on data presented in Figure 4b (see Appendix 1\u2014the mutual inhibition plus PKA inhibits MAST3 model and Table 1). The parameter representing how P-S88-ARPP-16 antagonizing PP2A binding to P-S46-ARPP-16 (v) was estimated and validated by comparing simulation results with experimental data (see Appendix 1\u2014the mutual inhibition plus PKA inibits MAST3 and dominant negative model and Table 1). Parameter estimation was performed using the SBPIPE package (Dalle Pezze and Le Nov\u00e8re, 2017). The optimum estimation results from five hundred trials were displayed for every possible pair of parameters under the 95% confidence interval of the best values (see Appendix 1\u2014the first two models). The local minima reached in these estimations indicate that these parameters are identifiable for the given experimental data. Model equations and parameters are listed in Appendix 1. Bifurcation analysis was conducted with XPP-Aut (Ermentrout, 2002). The models are available in the\u00a0BioModels Database (Juty et al., 2015)(MODEL1707020000, MODEL1707020001, MODEL1707020002).\n",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "9106b8e9-de36-40cb-b3bd-3a15addd7eca",
+      "submission_id": "8d4187dd-1a64-46c4-a7cd-db65a2aa58b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roger J Davis, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24998.034](https://doi.org/10.7554/eLife.24998.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Regulation of ARPP-16 by PKA and MAST3 kinases provides a cAMP-regulated switch in phosphatase PP2A inhibition\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: John D Scott (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission..\n\nSummary:\n\nThis is an interesting manuscript that describes a study that was designed to examine the interplay between MAST3 and PKA signaling in the regulation of PP2A by ARRP-16.\n\nPrevious studies have established that ARPP-19 is phosphorylated and inhibited by PKA (Dupre et al., 2014) and that PKA phosphorylation of ARPP-16/19 on Ser88 is associated with dephosphorylation of ARPP-16/19 phosphorylation on the MAST3 site Ser46 that mediates PP2A inhibition (Andrade et al., in revision).\n\nThe present study seeks to identify mechanisms that mediate the inhibitory actions of PKA on MAST3-regulated PP2A activity. Three different mechanisms are described. First, ARPP-16 phosphorylated more slowly by PKA and MAST3, if either Ser46 or Ser88, respectively, is already phosphorylated. This is an elegant mechanism of cross-regulation, presumably induced by changes in substrate conformation. Second, PKA phosphorylates and inhibits MAST3. Third, phosphorylation of ARPP-16 at Ser88 can inhibit the effects of phosphoSer46 ARPP-16 on PP2A inhibition by a dominant-negative mechanism in trans. Collectively, these data indicate that there are multiple levels of cross-regulation of MAST3 signaling to ARPP-16 by PKA.\n\nEssential revisions:\n\n1) While three different forms of cross-regulation by PKA are identified, this is not apparent in the abstract of the manuscript. Moreover, the computational model presented does not capture this complexity. Furthermore, this complexity is not illustrated in the final cartoon model presented in Figure 8.\n\n2) The Supplementary Materials support the mathematical model written and employed, with respect to adequate fitting of time-course data and cAMP-dependence of PKA activity. The model itself appears to be satisfactory under various assumptions essentially setting other cell biochemistry processes irrelevant. The steady-state bifurcation analysis described is appropriate. However, as noted above, the model does not take account of MAST3 inhibition by PKA or the dominant-negative effects of ARPP-16 phosphorylation. The importance of the model comes from predictions derived from the model that can be experimentally tested. For example, what happens if one tests the hypothesis upon stimulation with isoproterenol, dopamine or epinephrine?. Or inhibits PKA with H89 or PKI peptides? Also, are the results skewed upon deletion or silencing MAST3. This latter experiment is important to establish if other kinases compliment for MAST3 activity inside cells.\n\n3) The biochemical studies in Figure 1 are well performed and provide the first evidence for the model proposed by the authors. However, the next phase of the analyses uses overexpression of proteins in HEK293 cells. While this is a slightly more physiologically significant system it would be prudent to include data showing the phenomena in primary cultures of neurons.\n\n4) Another weakness of the experiments in Figure 2 is that forskolin (a direct activator of Adenylyl cyclases) is used as a means to over stimulate cAMP synthesis. This creates a situation where cells accumulate cAMP at levels that are 15-20 fold above the normal physiological range. Can experiments be done in HEK293 cells with more natural agonists such as isoproterenol, dopamine or epinephrine.\n\n5) The cross-inhibitory effects of Ser46 and Ser88 phosphorylation on subsequent ARPP-16 phosphorylation and PP2A inhibition are interesting. These observations raise questions concerning whether dual phosphorylated endogenous ARPP-16 is found in vivo. This could be tested by immunoprecipitation/western blot analysis using phospho-specific antibodies.\n\n6) PKA phosphorylates and inhibits MAST3 in in vitro (Figure 4). Does cAMP signaling in vivo inhibit endogenous MAST3 activity?\n\n7) PKA appears to inhibit MAST3 activity in HEK transfection assays using ARPP-16 Ser46 as a read-out (Figure 5 and 6). Studies using phosphorylation site mutations are unclear. Presumably, if the phosphorylation sites were important for MAST3 activity, there should be major differences MAST3 activity between the WT and Ser/Ala mutants in the presence of activated PKA signaling. However, the data presented shows that the WT and mutated MAST3 proteins cause similar Ser46 ARPP-16 phosphorylation in each case. Please clarify.\n\n8) The ability of Ser88 phosphorylated ARPP-16 to act as a dominant inhibitor of Ser64 phosphorylated ARPP-16 is intriguing. This suggests that the two ARPP-16 proteins might compete for binding to PP2A and that pSer88 ARP-16 has a higher affinity for PP2A than pSer64 ARPP-16. Alternatively, the binding may be non-competitive and pSer88 ARPP-16 may have dominant activity. Other mechanisms are also possible. Studies to evaluate mechanism are required, including the determination of binding affinity and binding competition.\n",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "935cf0a9-b396-4f4c-bf45-a541e6010c60",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C1",
+      "claim": "ARPP-16, ARPP-19, and ENSA are inhibitors of protein phosphatase PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16, ARPP-19, and ENSA are inhibitors of protein phosphatase PP2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "de0fa855-5aec-40c2-b4b2-59aa1022c019",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C2",
+      "claim": "ARPP-19 and ENSA phosphorylated by Greatwall kinase inhibit PP2A during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-19 and ENSA phosphorylated by Greatwall kinase inhibit PP2A during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e3365f83-0d22-4004-bd8d-d2adf1edc702",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C3",
+      "claim": "ARPP-16 is expressed in striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16 is expressed in striatal neurons where basal phosphorylation by MAST3 kinase inhibits PP2A and regulates key components of striatal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "a3e546b8-0bef-40cc-9243-dc4fffb36ba9",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C4",
+      "claim": "Basal phosphorylation of ARPP-16 by MAST3 kinase inhibits PP2A in striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16 is expressed in striatal neurons where basal phosphorylation by MAST3 kinase inhibits PP2A and regulates key components of striatal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a key finding from prior work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "bb020d34-b2b2-442d-bc6c-7d727fa05370",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C5",
+      "claim": "The ARPP-16/19 proteins were discovered as substrates for PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARPP-16/19 proteins were discovered as substrates for PKA, but the function of PKA phosphorylation is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract with reference to historical discovery.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "690d0f04-798e-4e3d-bd04-137c1e273e60",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C6",
+      "claim": "The function of PKA phosphorylation of ARPP-16/19 proteins is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARPP-16/19 proteins were discovered as substrates for PKA, but the function of PKA phosphorylation is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e08abff2-1600-4eb9-ae7b-c0a9c497edf9",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C7",
+      "claim": "Phosphorylation by PKA suppresses the ability of MAST3 to phosphorylate ARPP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that phosphorylation by PKA or MAST3 mutually suppresses the ability of the other kinase to act on ARPP-16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8ebbe44c-484d-4390-9e10-e725a6fe970c",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C8",
+      "claim": "Phosphorylation by MAST3 suppresses the ability of PKA to phosphorylate ARPP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that phosphorylation by PKA or MAST3 mutually suppresses the ability of the other kinase to act on ARPP-16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "50f8d2e8-da0a-42bd-a316-906c4126e107",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C9",
+      "claim": "Phosphorylation by PKA prevents inhibition of PP2A by ARPP-16 phosphorylated by MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation by PKA also acts to prevent inhibition of PP2A by ARPP-16 phosphorylated by MAST3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "bfb91d5b-8f46-43a4-9a5a-34e2c3fb33e0",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C10",
+      "claim": "PKA phosphorylates MAST3 at multiple sites resulting in its inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PKA phosphorylates MAST3 at multiple sites resulting in its inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mass spectrometry and functional assays in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2b078790-f1e6-4d16-a2ef-8f2d6bf379d0",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C11",
+      "claim": "Mathematical modeling highlights the role of three regulatory interactions to create a switch-like response to cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical modeling highlights the role of these three regulatory interactions to create a switch-like response to cAMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by modeling results in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "cc6de43e-caf2-4e8f-905f-6b2d93a82e18",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C12",
+      "claim": "cAMP mediates PP2A disinhibition through a complex antagonistic interplay between ARPP-16 control by MAST3 and PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the results suggest a complex antagonistic interplay between the control of ARPP-16 by MAST3 and PKA that creates a mechanism whereby cAMP mediates PP2A disinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, synthesizing all experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "b8ee35c2-5cca-49e4-8666-0f48fe88cf66",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C13",
+      "claim": "ARPP-16 and ARPP-19 were originally identified together with DARPP-32 and ARPP-21 as a group of cAMP-regulated phosphoproteins enriched in striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16 and ARPP-19 were originally identified together with DARPP-32 and ARPP-21 as a group of cAMP-regulated phosphoproteins (ARPPs) enriched in striatal neurons (Walaas et al., 1983; Girault et al., 1990; Horiuchi et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2d1fb539-d183-47c3-9b0d-e0c1dede3285",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C14",
+      "claim": "ARPP-16 and ARPP-19 are alternatively spliced variants, with ARPP-19 containing 16 additional amino acids at its N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16 and ARPP-19 are alternatively spliced variants, with ARPP-19 containing 16 additional amino acids at its N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a structural fact about these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "eaecd7b7-e517-406d-b07a-0f998b18b5c8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C15",
+      "claim": "ARPP-16 is present only in the brain and is highly expressed in medium spiny neurons in striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16 is present only in the brain and is highly expressed in medium spiny neurons (MSNs) in striatum (Girault et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "98c0f46a-071d-4973-a937-b937336412a5",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C16",
+      "claim": "ARPP-19 is ubiquitously expressed with low levels in striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ARPP-19 is ubiquitously expressed with low levels in striatum (possibly also in non-neuronal cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a contrast to ARPP-16 expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "caf81522-e7a0-4219-9d0b-b5344cce424b",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C17",
+      "claim": "ENSA is expressed in all tissues and is widely distributed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "ENSA is expressed in all tissues, is widely distributed in the brain, and represents the predominant proportion of the 19 kDa forms of the ARPP-19/ENSA proteins found in striatum (Dulubova et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "5a812220-1242-42c7-b99b-8022cd9b45d3",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C18",
+      "claim": "PP2A exists in eukaryotic cells as a heterotrimer of a catalytic C subunit, a scaffolding A subunit, and a variable B subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A exists in eukaryotic cells as a heterotrimer of a catalytic C subunit, a scaffolding A subunit, and a variable B subunit that serves to influence the substrate specificity of the phosphatase (Janssens and Goris, 2001; Shi, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations describing PP2A structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "6ba6e8a3-0d95-4f8a-8668-7698b2468465",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C19",
+      "claim": "PP2A heterotrimers play critical roles in diverse signaling pathways including regulation of the cell cycle, cell proliferation, and neuronal signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A heterotrimers play critical roles in diverse signaling pathways including regulation of the cell cycle, cell proliferation, and neuronal signalling, and deficits in PP2A function are implicated in many human diseases including cancer, Alzheimer's disease and major depressive disorder (Sontag and Sontag, 2014; Network and Pathway Analysis Subgroup of Psychiatric Genomics Consortium, 2015; Sangodkar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "eb91fc84-e385-4bcf-b4ba-0e6432d35154",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C20",
+      "claim": "ARPP-19 and ENSA when phosphorylated by Gwl act as critical PP2A inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work revealed that ARPP-19 and ENSA when phosphorylated by Gwl act as critical PP2A inhibitors (Gharbi-Ayachi et al., 2010; Mochida et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "a1a32245-2615-4484-9aff-d59affdec0c9",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C21",
+      "claim": "In mammalian cells, MASTL is functionally equivalent to Gwl.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, MASTL (for microtubule-associated serine/threonine kinase like) is functionally equivalent to Gwl (Voets and Wolthuis, 2010), and Gwl/MASTL are now known to play an important role in mitotic progression in several model systems, including Drosophila melanogaster, Xenopus laevis and mammalian cell lines (Yu et al., 2004, 2006; Archambault et al., 2007; Burgess et al., 2010; Voets and Wolthuis, 2010; Glover, 2012; Lorca and Castro, 2012; \u00c1lvarez-Fern\u00e1ndez et al., 2013; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "67cfe4a2-8c7f-4cb0-a7c5-72909fdc3423",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C22",
+      "claim": "ARPP-16 is a PP2A inhibitor in mammalian brain when phosphorylated at Ser46 by MAST3 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also recently identified ARPP-16 as a PP2A inhibitor in mammalian brain when phosphorylated at Ser46 by MAST3 kinase (Andrade et al., 2017), a homolog of MASTL/Gwl, which is active in post-mitotic neurons and is highly expressed in striatum (Garland et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations to the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "4cfb078a-fa3d-4f76-bbf1-ac7e7c207ac8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C23",
+      "claim": "Conditional knockout of ARPP-16 in mouse forebrain has functional effects on dopaminergic signaling via DARPP-32 and ERK/MAPK, and leads to altered behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional knockout of ARPP-16 in mouse forebrain has functional effects on dopaminergic signaling via DARPP-32 and ERK/MAPK, and leads to altered behavioral responses (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "9b4264a0-4a4a-41ac-888e-c5cfedca7e26",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C24",
+      "claim": "Ser46 of ARPP-16 is phosphorylated to a high basal stoichiometry by MAST3 in striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies in striatal neurons indicate that Ser46 is phosphorylated to a high basal stoichiometry by MAST3 (Andrade et al., 2017), which is opposite to that found in non-mitotic phases in dividing cells (Dupr\u00e9 et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e41da140-31c5-4f27-95ac-61faa6d74ebd",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C25",
+      "claim": "Activation of PKA leads to increased phosphorylation of Ser88 of ARPP-16 in striatal cell preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "In striatal cell preparations, activation of PKA leads to increased phosphorylation of Ser88 of ARPP-16, but concomitantly to substantial dephosphorylation at Ser46 of ARPP-16 (and also the equivalent Ser62 of ENSA) (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "46380eb5-a8f4-4189-b21f-0dffbcd504c4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C26",
+      "claim": "Activation of PKA leads to substantial dephosphorylation at Ser46 of ARPP-16 in striatal cell preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "In striatal cell preparations, activation of PKA leads to increased phosphorylation of Ser88 of ARPP-16, but concomitantly to substantial dephosphorylation at Ser46 of ARPP-16 (and also the equivalent Ser62 of ENSA) (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8e447dc2-738c-4a2b-aca2-6587d398a0e7",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C27",
+      "claim": "Prior phosphorylation of Ser88 by PKA slowed the phosphorylation of Ser46 by MAST3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior phosphorylation of Ser88 slowed the phosphorylation of Ser46 by MAST3 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8858264b-66aa-45e7-97f8-fc9a939853c4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C28",
+      "claim": "Prior phosphorylation at Ser88 reduced the enzyme Vmax and increased the Km for MAST3 phosphorylation of ARPP-16, reducing the catalytic efficiency by a factor of 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic analysis indicated that the prior phosphorylation at Ser88 reduced the enzyme Vmax and increased the Km, effectively reducing the 'catalytic efficiency' by a factor of 3 (Figure 1b and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by kinetic data in Figure 1b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "7641cb21-7e8b-4074-8361-f997a9b720a5",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C29",
+      "claim": "A similar reduction in the efficiency of phosphorylation of Ser46 by MAST3 was observed when a phospho-mimetic version S88D-ARPP-16 was used as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar reduction in the efficiency of phosphorylation of Ser46 by MAST3 was observed when a phospho-mimetic version or ARPP-16, S88D-ARPP-16, was used as a substrate (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "d57632fd-9e47-44e4-bea5-3b9378b06dbf",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C30",
+      "claim": "Prior phosphorylation of Ser46 by MAST3 resulted in slower phosphorylation of Ser88 by PKA, reflected in ~7 fold reduction in Vmax and ~2 fold decrease in Km.",
+      "claim_type": "EXPLICIT",
+      "source": "The prior phosphorylation of Ser46 resulted in slower phosphorylation of Ser88 by PKA, which was reflected in ~7 fold reduction in Vmax, although notably there was a ~2 fold decrease in Km. (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by kinetic data in Figure 1c,d and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "7cd09d19-9958-4515-9c13-758bae2f35fe",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C31",
+      "claim": "There was no difference in the ability of PKA to phosphorylate Ser88 in S46D-ARPP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in the ability of PKA to phosphorylate Ser88 in S46D-ARPP-16 (data not shown), indicating that the S46D mutation did not act as a phospho-mimetic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "479f2e67-f85a-4c66-a4b8-5add22f0c66d",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C32",
+      "claim": "The S46D mutation did not act as a phospho-mimetic for ARPP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in the ability of PKA to phosphorylate Ser88 in S46D-ARPP-16 (data not shown), indicating that the S46D mutation did not act as a phospho-mimetic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "f25fdc49-f4af-4c19-aab6-9f1e3c78e7c8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C33",
+      "claim": "Expression of MAST3 led to a marked increase in phosphorylation of Ser46 in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of HA-MAST3 led to a marked increase in phosphorylation of Ser46 (lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "a17dba0c-167e-4a64-8db5-9ad63714520b",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C34",
+      "claim": "The phosphorylation of Ser46 in the presence of MAST3 expression was significantly reduced by forskolin treatment in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the phosphorylation of Ser46 in the presence of MAST3 expression was significantly reduced by forskolin treatment compared to untreated, but MAST3-expressing cells (lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "71cf98b9-1e6c-460b-9daa-7b8c8a927412",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C35",
+      "claim": "There was no increase in phosphorylation of Ser46 in S88D-ARPP-16 when MAST3 was over-expressed in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no increase in phosphorylation of Ser46 in S88D-ARPP-16 when MAST3 was over-expressed (lanes 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "0b5f5b2a-3f92-4c14-b2a6-56ef5d08f912",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C36",
+      "claim": "PKA-mediated phosphorylation of Ser88 suppresses Ser46-phosphorylation by MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the in vitro studies shown in Figure 1, and together, indicate that PKA-mediated phosphorylation of Ser88 suppresses Ser46-phosphorylation by MAST3, while MAST3-mediated phosphorylation of Ser46 suppresses PKA-mediated phosphorylation of Ser88.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the HEK293T cell experiments and in vitro assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "4379d489-1afe-400d-a710-f52840bd156b",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C37",
+      "claim": "MAST3-mediated phosphorylation of Ser46 suppresses PKA-mediated phosphorylation of Ser88.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the in vitro studies shown in Figure 1, and together, indicate that PKA-mediated phosphorylation of Ser88 suppresses Ser46-phosphorylation by MAST3, while MAST3-mediated phosphorylation of Ser46 suppresses PKA-mediated phosphorylation of Ser88.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the HEK293T cell experiments and in vitro assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8ea4895a-aae5-40ae-828f-6234386dee31",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C38",
+      "claim": "Mutual inhibition between the two phosphorylation sites on ARPP-16 is capable of producing a switch-like response to cAMP level changes.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether mutual inhibition between the two phosphorylation sites on ARPP-16 is capable of producing a switch-like response to cAMP level changes, we set up a mathematical model focusing on the reciprocal inhibition of MAST3 and PKA by mutually antagonist phosphorylation sites in ARPP-16 (see Materials and methods and Appendix 1\u2014the mutual inhibition model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by mathematical modeling results in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "0d8e2a37-b6e3-4de5-8b49-4065f42499b2",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C39",
+      "claim": "At low cAMP, there is only one stable steady state corresponding to full phosphorylation at Ser46 and close to zero phosphorylation at Ser88.",
+      "claim_type": "EXPLICIT",
+      "source": "At low cAMP, there is only one stable steady state corresponding to the full phosphorylation at Ser46 and close to zero phosphorylation at Ser88, as Ser46 phosphorylation suppresses basal PKA activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "1b5b3584-a68d-41cf-8fc2-2e74c2c444af",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C40",
+      "claim": "At highest cAMP concentration, only one stable steady state exists where ARPP-16 is almost fully phosphorylated at Ser88 with only sub-micromolar phosphorylation at Ser46.",
+      "claim_type": "EXPLICIT",
+      "source": "At highest cAMP concentration, only one stable steady state exists where ARPP-16 is almost fully phosphorylated at Ser88 with only sub-micromolar phosphorylation at Ser46.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "74a34bf8-3d15-4389-a970-4a265a18e9c2",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C41",
+      "claim": "A bistable situation arises at intermediate cAMP concentrations, with two stable states co-existing with an unstable one.",
+      "claim_type": "EXPLICIT",
+      "source": "A bistable situation arises at intermediate cAMP concentrations, the two stable states co-existing with an unstable one.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "1873271b-f7a8-4083-90bf-a5f1eaf61e4d",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C42",
+      "claim": "When cAMP concentration increases to more than 3.5 \u03bcM, Ser46 phosphorylation abruptly drops whereas Ser88 phosphorylation suddenly increases.",
+      "claim_type": "EXPLICIT",
+      "source": "When cAMP concentration increases to more than 3.5 \u03bcM, Ser46 phosphorylation abruptly drops whereas Ser88 phosphorylation suddenly increases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2babd588-c85c-4ed2-9f0a-65814a6a564f",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C43",
+      "claim": "When cAMP decreases the switch occurs below 1.5 \u00b5M creating a hysteresis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the opposite direction, when cAMP decreases the switch occurs below 1.5 \u00b5M creating a hysteresis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "fb468ec1-f8f9-47f0-8f6a-889d123283c8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C44",
+      "claim": "Stimulation with SKF81297 (a D1 receptor agonist) led to an increase in Ser88 phosphorylation accompanied by decreased phosphorylation of Ser46 in striatal slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation with SKF81297 (a D1 receptor agonist), like forskolin, led to an increase in Ser88 phosphorylation which was accompanied by decreased phosphorylation of Ser46.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "beefa1e0-1c0c-473a-8e3e-6eef0f15d78a",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C45",
+      "claim": "PKA phosphorylated MAST3 rapidly and reached a plateau after ~10 min in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA phosphorylated MAST3 rapidly reached a plateau after ~10 min (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "1ea46793-b6d5-4ee5-bb5f-877b968c6e82",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C46",
+      "claim": "PKA-phosphorylated MAST3 was much less active than control MAST3 using ARPP-16 as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA-phosphorylated MAST3 was much less active than control MAST3 (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "54232394-d010-4cae-ab09-6bb8d9e0c5dd",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C47",
+      "claim": "Mass spectrometry identified Thr389, Ser512, Thr628, and Ser747 as phosphorylation sites on MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 12 phospho-sites were identified under control conditions. Of these, 6 were found also in the forskolin samples, while an additional 7 phospho-sites were found only in the samples incubated with forskolin. Notably, inspection of the amino acid sequence of MAST3 using bioinformatics tools KinasePhos (Huang et al., 2005), PhosphoNet (Safaei et al., 2011), NetPhos 3.1 (Blom et al., 2004) also identified Thr389 (RHRDT[389]RQR) as a potential PKA site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by mass spectrometry data in Figure 4c and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "ca4e5515-65a9-4a63-a0f6-12c2d63501b4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C48",
+      "claim": "Forskolin treatment increased phosphorylation of Ser512, Thr628, and Ser747 on MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assessed the effects of forskolin on the phosphorylation of Ser512, Thr628 and Ser747 in different experiments. We used a label-free approach to reanalyze some of the initial samples, and found a 4.8-fold increase in Ser512, 47-fold increase in Thr628, and 15-fold increase in Ser747 (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by mass spectrometry data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "72ff203a-08e0-4f4e-842a-94bff27a4c30",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C49",
+      "claim": "MAST3 is phosphorylated at multiple sites by PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the results suggest that MAST3 is phosphorylated at multiple sites by PKA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from mass spectrometry experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "0221b4d7-29fc-4c3f-8725-e7a04197d420",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C50",
+      "claim": "The T389D-MAST3 mutant was much less active than WT-MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the T389D-MAST3-HA mutant was much less active than WT-MAST3-HA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "079e5357-77a0-47b3-b39d-1a4d07978c43",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C51",
+      "claim": "Even after pre-incubation with PKA and ATP, the T389A-MAST3 mutant was only slightly less active than WT MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, even after pre-incubation with PKA and ATP, the T389A-MAST3-HA mutant was only slightly less active than WT MAST3-HA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2faabcf1-7d5d-4dd9-ac81-8e51b56b15c4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C52",
+      "claim": "Cells expressing T389D-MAST3 exhibited a large reduction in the phosphorylation of Ser46 compared to WT-MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing T389D-MAST3 exhibited a large reduction in the phosphorylation of Ser46 compared to WT-MAST3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "15f1ca59-94d4-4cf4-866a-5297a97c5805",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C53",
+      "claim": "In cells expressing T389A-MAST3, addition of forskolin resulted in a smaller reduction in Ser46 phosphorylation compared to WT MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to WT MAST3-HA, addition of forskolin resulted in a smaller reduction in Ser46 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "f9e594f2-9373-4762-8031-885e7eab7ed6",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C54",
+      "claim": "Phosphorylation of Ser46 was reduced for the S512D mutant but not as dramatically as for the T389D mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of Ser46 was reduced for the S512D mutant but not as dramatically as for the T389D mutant (Figure 6a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "ddc8e868-ec1b-4922-80b8-6c2a32613acc",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C55",
+      "claim": "Phosphorylation of Ser46 was low for the T628D mutant but not as low as for the T389D mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "For the T628 mutants, phosphorylation of Ser46 was low for the T628D mutant (Figure 6c,d) but not as low as for the T389D mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "9103dbd2-a44f-4a5d-ac49-f4cfafb677cf",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C56",
+      "claim": "Mutation of Ser747 to aspartate had no significant effect on Ser46 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutation of Ser747 to aspartate had no significant effect on Ser46 phosphorylation (Figure 6c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "eb508478-3cf7-478f-a317-c52885fba6c3",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C57",
+      "claim": "MAST3 is regulated by phosphorylation at Thr389, Ser512 and Thr628.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results supported the conclusion that MAST3 is regulated by phosphorylation at three of the four sites analyzed, namely Thr389, Ser512 and Thr628.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the mutant analysis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8cce986f-c51f-4a1e-80f7-8c35cb1ab9a4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C58",
+      "claim": "Phosphorylation of Thr389 had the most robust effect on MAST3 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vitro and intact cell experiments indicated that phosphorylation of Thr389 had the most robust effect on MAST3 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from comparing effects of different mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "fc048e2c-c9a7-4fb1-b93c-e5005125d1eb",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C59",
+      "claim": "The cAMP concentration range for bistability becomes narrower and shifts towards lower cAMP levels when PKA directly regulates MAST3.",
+      "claim_type": "EXPLICIT",
+      "source": "The P-S46-ARPP-16 bifurcation diagram indicated that the cAMP concentration range for bistability becomes narrower and shifts towards lower cAMP levels compared with the mutual antagonism scenario alone (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e943f286-dd2f-4901-837a-b79c6b1d23f7",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C60",
+      "claim": "With PKA regulation of MAST3, P-S46-ARPP-16 is dephosphorylated to a much lower level at higher cAMP concentration, making the disinhibition of PP2A at high cAMP more potent.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, with this regulation, P-S46-ARPP-16 is dephosphorylated to a much lower level at higher cAMP concentration, therefore, the disinhibition of PP2A at a high cAMP level is more potent (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "79d3465c-7c91-45a7-9d73-18d47ce096e7",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C61",
+      "claim": "Addition of an equimolar amount of P-S88-ARPP-16 blocked the inhibitory effect of P-S46-ARPP-16 on PP2A in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, addition of an equimolar amount of P-S88-ARPP-16 blocked the inhibitory effect of P-S46-ARPP-16.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "c866219c-ce9b-4f0b-8e8a-18eaf3f4962c",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C62",
+      "claim": "Addition of an equimolar amount of the S88D-ARPP-16 mutant partially attenuated the effect of P-S46-ARPP-16 on PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of an equimolar amount of the S88D-ARPP-16 mutant partially attenuated the effect of P-S46-ARPP-16.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "9a6e941b-7c52-4194-91c0-784c23995904",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C63",
+      "claim": "Phospho-Ser88-ARPP-16 may act in a 'dominant-negative' manner to antagonize the inhibition of PP2A by phospho-Ser46-ARPP-16.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that in addition to antagonizing the ability of MAST3 to phosphorylate ARPP-16 at Ser46, phospho-Ser88-ARPP-16 may act in a 'dominant-negative' manner to antagonize the inhibition of PP2A by phospho-Ser46-ARPP-16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the PP2A inhibition assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "538f2598-6842-42fd-b39f-fa0cec277cb2",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C64",
+      "claim": "By adding the 'dominant-negative' mode of regulation, the cAMP concentration range required for bistability shifts towards higher cAMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The bifurcation diagram of P-S46-ARPP-16 showed that by adding this 'dominant-negative' mode of regulation, the cAMP concentration range required for bistability shifts towards higher cAMP levels (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling results in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "05870e88-78ea-4a1c-b1d8-3970c02e6711",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C65",
+      "claim": "The direct regulation of PKA on MAST3 has a much more potent effect on controlling PP2A activity than the 'dominant-negative' effect of P-S88-ARPP-16 on PP2A inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the data we have and the assumptions we made, this would indicate that the direct regulation from PKA to MAST3 has a much potent effect on controlling PP2A activity than the 'dominant-negative' effect of P-S88-ARPP-16 on PP2A inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from comparing different modeling scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "786becc2-d80b-40ba-b559-0f227aae6277",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C66",
+      "claim": "The ARPP/ENSA proteins are remarkably conserved in plants, fungi, yeast, flies, worms and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARPP/ENSA proteins are remarkably conserved in plants, fungi, yeast, flies, worms and mammals (Dulubova et al., 2001; Labandera et al., 2015) suggesting a primal origin and conserved function to control PP2A activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "a4c313db-7942-4a37-94fe-c1efedea0401",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C67",
+      "claim": "In frog oocytes, ARPP-19 is highly phosphorylated at the PKA site (Ser109) during prophase arrest while phosphorylation of Ser67 by Gwl is very low.",
+      "claim_type": "EXPLICIT",
+      "source": "In frog oocytes, ARPP-19 is highly phosphorylated at the PKA site (Ser109, the site equivalent to Ser88 in ARPP-16) during prophase arrest while phosphorylation of Ser67 by Gwl is very low (Dupr\u00e9 et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "f1f6a715-5fc7-4b28-a94f-466db5fc3bb8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C68",
+      "claim": "Upon resumption of meiosis in frog oocytes, reduced PKA activity and dephosphorylation of Ser109 is required, following which Ser67 phosphorylation by Gwl acts within an amplification mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon resumption of meiosis, reduced PKA activity and dephosphorylation of Ser109 is required, following which Ser67 phosphorylation by Gwl acts within an amplification mechanism, converting ARPP-19 in to a potent inhibitor of PP2A (Dupr\u00e9 et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "dfd6a9ca-4d2f-465a-a250-523dc1845400",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C69",
+      "claim": "In non-dividing neurons in striatum, MAST3 activity is basally active leading to high phosphorylation of Ser46 of ARPP-16, and constitutive inhibition of PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in non-dividing neurons in striatum, MAST3 activity is basally active leading to high phosphorylation of Ser46 of ARPP-16, and constitutive inhibition of PP2A (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2e604f3c-2b15-45cc-84b1-37847491689f",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C71",
+      "claim": "Mutation of Ser88 to aspartate acted as a phospho-mimetic, generating a substrate that was phosphorylated ~5 fold less efficiently by MAST3 in vitro and in intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of Ser88 to aspartate acted as a phospho-mimetic, generating a substrate that was phosphorylated ~5 fold less efficiently by MAST3 in vitro and in intact cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "67a34513-19ee-4e8f-bd43-1bcef54859eb",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C72",
+      "claim": "Mutation of Ser46 to aspartate did not create a phospho-mimetic in terms of phosphorylation of Ser88 by PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutation of Ser46 to aspartate did not create a phospho-mimetic in terms of phosphorylation of Ser88 by PKA, consistent with the fact that a Ser46 to aspartate mutation in ARPP-16 failed to inhibit PP2A (Musante unpublished results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "798d139c-92b6-41ec-ad13-3aa890745579",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C73",
+      "claim": "ARPP-16, ARPP-19 and ENSA, like DARPP-32 and ARPP-21 are heat-stable proteins that contain little secondary structure and are likely to be highly flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "ARPP-16, ARPP-19 and ENSA, like DARPP-32 and ARPP-21 are heat-stable proteins that contain little secondary structure and are likely to be highly flexible (Huang et al., 2001; Dancheck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "9205d381-0e36-4fd3-8c50-18a129b28da3",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C74",
+      "claim": "Injection of a S109D-ARPP-19 protein into intact frog oocytes could not be phosphorylated by Gwl at Ser67 and arrested oocytes in prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, injection of a S109D-ARPP-19 protein into intact frog oocytes could not be phosphorylated by Gwl at Ser67 and arrested oocytes in prophase (Dupr\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "15fc2596-613a-4501-a2ca-1233326a4ceb",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C75",
+      "claim": "The mechanism of action of PKA phosphorylation of ARPP/ENSA proteins may be common to both MAST3 and Gwl.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the mechanism of action of PKA phosphorylation of ARPP/ENSA proteins may be common to both MAST3 and Gwl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the frog oocyte data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8826bf1c-aeda-4d25-ac35-3016f51f2d4f",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C76",
+      "claim": "Thr389, Ser512, and Thr628 are all within the kinase domain (residues 367\u2013640) of MAST3 and may influence enzyme activity via direct or allosteric effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These 3 sites are all within the kinase domain (residues 367\u2013640 of MAST3) and may influence enzyme activity via direct or allosteric effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the phosphorylation site locations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "b0927f5c-b4ee-40b1-a6a8-2745aacb6a21",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C77",
+      "claim": "Thr389, Ser512, and Thr628 are present in other MAST kinase isoforms suggesting conserved modes of regulation of other family members by PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thr389 (MAST1, 2, 3, 4), Ser512 (MAST1, 2, 3, 4 and MASTL) and Thr628 (MAST2, 3, 4) are present in other MAST kinase isoforms suggesting conserved modes of regulation of other family members by PKA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from sequence conservation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "105a8746-8185-4fd3-b451-77b136f93d90",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C78",
+      "claim": "Varying total MAST3 concentration in the mathematical model with all three layers of regulation does not affect the general switch-like response to cAMP concentration changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying total MAST3 concentration in the mathematical model with all three layers of regulation does not affect the general switch-like response to cAMP concentration changes (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by modeling results in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "59214cf9-605b-470a-b708-4cd891361d83",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C79",
+      "claim": "At a fixed cAMP level, bistability exists over a range of MAST3 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, at a fixed cAMP level, bistability exists over a range of MAST3 concentrations (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by modeling results in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "309916df-3eb8-4c35-bb0a-8fe5063a7d4e",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C80",
+      "claim": "Studies in Xenopus oocytes suggest a preference for binding of phospho-S67-ENSA to the B55-containing form of the phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in Xenopus oocytes suggest a preference for binding of phospho-S67-ENSA to the B55-containing form of the phosphatase (Castilho et al., 2009; Mochida et al., 2010), while phospho-S46-ARPP-16 can inhibit both B55\u03b1 and B56\u03b4-containing PP2A heterotrimers (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "d7448abe-c853-4ef0-8484-eb07fc57b14e",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C81",
+      "claim": "Phospho-S46-ARPP-16 can inhibit both B55\u03b1 and B56\u03b4-containing PP2A heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in Xenopus oocytes suggest a preference for binding of phospho-S67-ENSA to the B55-containing form of the phosphatase (Castilho et al., 2009; Mochida et al., 2010), while phospho-S46-ARPP-16 can inhibit both B55\u03b1 and B56\u03b4-containing PP2A heterotrimers (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "d6101179-7386-4215-aca6-44c7e6a38c8c",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C82",
+      "claim": "The interaction of phospho-S46/S67-ARPP-16/19/ENSA with PP2A likely involves some sort of pseudosubstrate interaction with the active site of the C subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of phospho-S46/S67-ARPP-16/19/ENSA with PP2A likely involves some sort of pseudosubstrate interaction with the active site of the C subunit (Mochida et al., 2010; Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2e6dda79-2d3f-4912-b317-06ba989f445b",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C83",
+      "claim": "A central region of ENSA containing phospho-Ser67 inhibits PP2A and can bind to both the C and B55 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary structure-function analysis and crosslinking studies indicate that a central region of ENSA containing phospho-Ser67 inhibits PP2A and can bind to both the C and B55 subunit (Mochida, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e192943d-21d6-4a81-bb63-bc04f290dea4",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C84",
+      "claim": "ARPP-16 can bind to sub-regions of the A subunit in an unphosphorylated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of ARPP-16 indicate that it can bind to sub-regions of the A subunit in an unphosphorylated state (Andrade et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "e928bb2e-63b8-4384-932c-386feec9bb60",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C85",
+      "claim": "The ARPP/ENSA proteins are likely to be able to interact through a number of different regions with PP2A heterotrimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARPP/ENSA proteins therefore are likely to be able to interact through a number of different regions with PP2A heterotrimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from structural studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "21fcec6b-be0b-40e3-aef7-6bea7a52e1d0",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C86",
+      "claim": "The phospho-S88/S88D forms of ARPP-16 may bind favourably to the A or B subunits in a way that competes with the phospho-Ser46 form.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the phospho-S88/S88D forms of ARPP-16 bind favourably to the A or B subunits in a way that competes with the phospho-Ser46 form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a speculative explanation for the dominant-negative effect.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "6b1d4bce-8536-4039-9af6-14c1aa78f13c",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C87",
+      "claim": "Increasing amounts of phospho-S109-ARPP-19 resulting from endogenous PKA activity blocked the effect of phospho-S67-ARPP-19 on progesterone-induced meiotic maturation in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of the PKA-phosphorylated ARPP-16 to act as a dominant negative might also provide part of the explanation for the studies carried out in intact Xenopus oocytes which showed that increasing amounts of phospho-S109-ARPP-19 resulting from endogenous PKA activity, or introduction of an Ser109 to aspartate phospho-mimetic form of ARPP-19, blocked the effect of phospho-S67-ARPP-19 on progesterone-induced meiotic maturation (Dupr\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "b39a05f9-45bd-45d7-b2ce-955a81958484",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C88",
+      "claim": "The ARPP/ENSA/Gwl system produces a toggle switch response to Cdk1 activity, based on the antagonism between Cdk1 and PP2A.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARPP/ENSA/Gwl system has been shown to produce a toggle switch response to Cdk1 activity, based on the antagonism between Cdk1 and PP2A (Mochida et al., 2010; Vinod and Novak, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "89ee5b0d-00bb-45d9-bfb7-c251efca72bf",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C89",
+      "claim": "ARPP-16 is capable of switching its phosphorylation states depending on different cAMP concentration thresholds, therefore dynamically controlling PP2A activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we focused on the reciprocal relationship between phospho-Ser46 and phospho-Ser88 mediated by inhibition of PKA and MAST3, and demonstrated that ARPP-16 is capable of switching its phosphorylation states depending on different cAMP concentration thresholds, therefore dynamically controlling PP2A activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the modeling studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "66107d79-198e-4853-8471-7d1aafcefec8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C90",
+      "claim": "The additional layers of PKA regulation reduce and almost equalize the two cAMP thresholds for switching on or off PP2A inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional layers of PKA regulation, including directly inhibiting MAST3 and dominant negative antagonism of PP2A inhibition, reduce and almost equalize the two cAMP thresholds for switching on or off PP2A inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the modeling studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "302e0748-9d0f-49ef-a6fc-705cebb39c23",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C91",
+      "claim": "These regulations together produce an ultra-sensitive system in response to cAMP at micromolar-range concentrations and deepen the release of PP2A inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These regulations together produce an ultra-sensitive system in response to cAMP at micromolar-range concentrations and deepen the release of PP2A inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the modeling studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "ab9e84d3-f7e8-4d09-ba9f-f256772373ea",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C92",
+      "claim": "The micromolar-range cAMP concentrations required for bi-stable states provide sensitive thresholds in most subcellular neuronal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The micromolar-range cAMP concentrations required for bi-stable states provide sensitive thresholds in most subcellular neuronal compartments, given the fast diffusion coefficient of cAMP (Hempel et al., 1996; Chen et al., 1999), and the likely very high activity of cAMP phosphodiesterase activity in striatal neurons (Sharma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "7b7cde6a-534e-47d4-9f3f-d6c9797cde1d",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C93",
+      "claim": "The antagonistic inhibition exerted by ARPP-16's MAST3 phosphorylation site to its PKA site could be strengthened by the feedback loop from PP2A inhibition to PKA inhibition, via phospho-Thr75-DARPP-32.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the network we studied here is relatively small, and the antagonistic inhibition exerted by ARPP-16's MAST3 phosphorylation site to its PKA site could be strengthened by the feedback loop from PP2A inhibition to PKA inhibition, via for example, phospho-Thr75-DARPP-32 (Bibb et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "8cc624c3-55cb-4781-b945-df7aa21bf4da",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "claim_id": "C94",
+      "claim": "The stronger phospho-Ser46 antagonizes Ser88 phosphorylation, the wider the difference between two cAMP thresholds becomes, therefore the more hysteresis appears.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the two-parameter bifurcation diagrams (Figure 3\u2014figure supplements 6 and 7), the stronger phospho-Ser46 antagonizes Ser88 phosphorylation, the wider the difference between two cAMP thresholds becomes, therefore the more hysteresis appears.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by modeling results in Figure 3\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91602b76-b1f9-4f2f-9464-727dc619ae8d",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phosphorylation of ARPP-16 at Ser88 by PKA and at Ser46 by MAST3 exhibit mutual antagonism. Prior phosphorylation at one site reduces the efficiency of phosphorylation at the other site, as demonstrated by in vitro kinetic analyses and cell-based experiments with phosphomimetic mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C27-C32, C36-C37, and C71-C72 collectively demonstrate mutual antagonism through multiple lines of evidence: in vitro kinetic data showing reduced Vmax and increased Km (C28), phosphomimetic mutant studies (C29, C71), and intact cell experiments (C33-C37). The convergence of biochemical and cellular data strongly supports this reciprocal regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "05a139db-b4e1-46e2-8f88-7ac00b89c9e3",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In HEK293T cells expressing ARPP-16 and MAST3, forskolin treatment (activating PKA) significantly reduces Ser46 phosphorylation, and the S88D phosphomimetic mutant prevents MAST3-mediated Ser46 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by immunoblotting data in Figure 2 showing that forskolin reduces Ser46 phosphorylation in MAST3-expressing cells and that the S88D mutant blocks Ser46 phosphorylation. These cell-based results corroborate the in vitro findings and demonstrate physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrates that mutual inhibition between Ser46 and Ser88 phosphorylation sites creates a bistable, switch-like response to cAMP concentration changes, with hysteresis between ~1.5 and 3.5 \u03bcM cAMP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 and C11 are supported by bifurcation analysis shown in Figure 3. The modeling demonstrates bistability at intermediate cAMP concentrations with distinct switching thresholds. However, the model relies on estimated parameters and assumptions about kinetic constants that may not fully capture in vivo complexity. The qualitative prediction of switch-like behavior is well-supported, though quantitative thresholds should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "3c34a7b0-1326-404b-a1a5-20bc77ae0202",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In striatal slices, stimulation with SKF81297 (D1 receptor agonist) increases Ser88 phosphorylation and decreases Ser46 phosphorylation, similar to forskolin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by immunoblotting data in Figure 2\u2014figure supplement 1 showing reciprocal changes in phosphorylation at both sites following D1 receptor stimulation. This validates the model in a more physiologically relevant ex vivo system and demonstrates that the mechanism operates through endogenous signaling pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "ed44dade-faf9-4b82-bb6f-1d8e324c875c",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PKA directly phosphorylates MAST3 at multiple sites, resulting in reduced MAST3 kinase activity toward ARPP-16.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C10, and C49 are supported by in vitro phosphorylation assays (Figure 4a-b) and mass spectrometry identification of phosphorylation sites. The functional consequence of reduced MAST3 activity is clearly demonstrated. This represents a second layer of PKA regulation beyond the direct effects on ARPP-16.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "1956632a-084e-441b-9d93-d76bbd01f687",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mass spectrometry identified Thr389, Ser512, Thr628, and Ser747 as phosphorylation sites on MAST3, with forskolin treatment increasing phosphorylation at Ser512, Thr628, and Ser747.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by multiple mass spectrometry approaches (label-free, SWATH) shown in Figure 4c and Supplementary file 1. However, the magnitude of fold-changes varies considerably between methods (e.g., 47-fold vs 1.2-fold for Thr628), suggesting technical variability. The identification of sites is robust, but quantitative changes should be interpreted with caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "64998345-0837-445b-a31f-0950457dfd1e",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Thr389 is the primary PKA phosphorylation site regulating MAST3 activity. The T389D phosphomimetic mutant shows greatly reduced activity, while the T389A mutant is resistant to PKA-mediated inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53, C57-C58 are supported by in vitro kinase assays (Figure 5a) and intact cell experiments (Figure 5b-c). The T389D mutant shows the most dramatic reduction in activity compared to other phosphomimetic mutants, and the T389A mutant shows reduced sensitivity to forskolin. This identifies Thr389 as the dominant regulatory site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "3dee1b96-4013-4910-bb37-c6ed0a073703",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ser512 and Thr628 phosphorylation also contribute to MAST3 regulation, though less dramatically than Thr389, while Ser747 phosphorylation has no significant effect on MAST3 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by phosphomimetic mutant analysis in Figure 6. The S512D and T628D mutants show intermediate effects on Ser46 phosphorylation, while S747D has no effect. This establishes a hierarchy of regulatory sites, though the alanine mutants show limited effects, possibly due to the dominant role of Thr389.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "aa15442f-ea2a-4645-8a2a-612fdc3f6ef8",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mathematical modeling shows that direct PKA inhibition of MAST3 narrows the bistability range, shifts it to lower cAMP levels, and enhances PP2A disinhibition at high cAMP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by extended modeling results in Figure 3\u2014figure supplements 1-2. The addition of PKA\u2192MAST3 regulation to the model produces more potent PP2A disinhibition. However, the model parameters for this regulation are estimated from limited experimental data, introducing uncertainty in the quantitative predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "f4639994-5fef-4a8e-a206-3611cf3acb07",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Phosphorylation of ARPP-16 at Ser88 acts in a dominant-negative manner to antagonize PP2A inhibition by phospho-Ser46-ARPP-16. Addition of P-S88-ARPP-16 blocks the inhibitory effect of P-S46-ARPP-16 on PP2A activity in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C9 are supported by in vitro PP2A activity assays in Figure 7. The data clearly show that equimolar P-S88-ARPP-16 blocks P-S46-ARPP-16 inhibition, while the S88D mutant has a partial effect. This represents a third mechanism by which PKA regulates PP2A activity. However, the molecular mechanism of this dominant-negative effect remains speculative (C86).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "4fd31f9e-2315-47d1-95bf-52427b549738",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mathematical modeling indicates that the dominant-negative effect of P-S88-ARPP-16 shifts the bistability range to higher cAMP levels, but direct PKA inhibition of MAST3 has a more potent effect on PP2A control than the dominant-negative mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 are based on modeling results in Figure 3\u2014figure supplements 1-2, but the authors explicitly state this conclusion depends on 'the data we have and the assumptions we made.' The relative contributions of these mechanisms are model-dependent and lack direct experimental validation. The parameter for the dominant-negative effect (v) is estimated rather than directly measured.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "2bfa411f-6aaa-494c-9c11-b6a330c3d629",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mathematical modeling shows that varying total MAST3 concentration does not affect the general switch-like response to cAMP, and bistability exists over a range of MAST3 concentrations at fixed cAMP levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by modeling results in Figure 3\u2014figure supplements 3-5. The robustness analysis demonstrates that the switch-like behavior is maintained across a range of MAST3 concentrations, suggesting the mechanism is not overly sensitive to expression levels. This strengthens the biological plausibility of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "64018a03-d6ac-423a-9cda-0c4b24097b40",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The three layers of PKA regulation (mutual antagonism, direct MAST3 inhibition, and dominant-negative effect) together create an ultra-sensitive, switch-like system that mediates PP2A disinhibition in response to cAMP at micromolar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 and C12 represent the integrated conclusion from all experimental and modeling results. The combination of in vitro biochemistry, cell-based assays, and mathematical modeling provides strong support for this multi-layered regulatory mechanism. However, the relative contributions of each layer and the precise quantitative behavior in vivo remain to be fully validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "d501b41e-7f7b-487c-b754-a873689beb26",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The micromolar-range cAMP concentrations required for bistable states provide sensitive thresholds in subcellular neuronal compartments, given cAMP diffusion and phosphodiesterase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 is based on modeling predictions and literature citations about cAMP diffusion and phosphodiesterase activity, but lacks direct experimental validation in the current study. The physiological relevance of the predicted cAMP thresholds in actual striatal neurons remains to be demonstrated. This represents an important prediction requiring future experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background and context: ARPP-16/19 and ENSA are PP2A inhibitors when phosphorylated by MAST3/Gwl kinases. ARPP-16 is highly expressed in striatal neurons where it is basally phosphorylated by MAST3 at Ser46, inhibiting PP2A. PKA activation leads to increased Ser88 phosphorylation and decreased Ser46 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C26 establish the background context from prior literature and the authors' previous work. These are well-supported by citations and provide the foundation for the current study. The prior observation that PKA activation reduces Ser46 phosphorylation (C25-C26) motivated the mechanistic investigation in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of evolutionary conservation and comparison with other systems: ARPP/ENSA proteins are conserved across species and function differently in dividing cells versus post-mitotic neurons. In frog oocytes, PKA phosphorylation prevents Gwl-mediated activation, while in striatal neurons, MAST3 is basally active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69, C73-C75, C80-C85, C87-C88 synthesize literature findings to contextualize the current results. These comparisons are well-supported by citations and highlight how the same molecular components are used in distinct regulatory contexts. The discussion appropriately acknowledges both similarities and differences between systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "17069012-abe8-4574-96d7-56a656495501",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The three regulatory phosphorylation sites (Thr389, Ser512, Thr628) are located within the MAST3 kinase domain and are conserved in other MAST family members, suggesting conserved PKA regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by sequence analysis and the experimental characterization of these sites. The conservation across MAST family members suggests broader biological significance. However, functional validation in other MAST isoforms is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "73fe2ad3-61f3-4779-b45a-a60d84980b9f",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Speculation on mechanism: The phospho-S88/S88D forms of ARPP-16 may bind favorably to PP2A A or B subunits in a way that competes with the phospho-Ser46 form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is explicitly speculative ('Perhaps...') and lacks experimental support. While it provides a plausible molecular explanation for the dominant-negative effect, structural or binding studies would be needed to validate this hypothesis. The authors appropriately present this as speculation rather than conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    },
+    {
+      "id": "4059490e-dcf2-4e89-b688-9b62c6d158a2",
+      "content_id": "08c059a7-9dec-4441-8198-8b095d4daa5c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The antagonistic inhibition could be strengthened by feedback from PP2A to PKA via phospho-Thr75-DARPP-32. Stronger antagonism increases hysteresis in the system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C94 discuss potential extensions of the model to include additional feedback loops. While C94 is supported by modeling results in Figure 3\u2014figure supplements 6-7, C93 is speculative and not tested experimentally. These represent predictions for future work rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:35:36.532794Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e08abff2-1600-4eb9-ae7b-c0a9c497edf9",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "8ebbe44c-484d-4390-9e10-e725a6fe970c",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "8e447dc2-738c-4a2b-aca2-6587d398a0e7",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "8858264b-66aa-45e7-97f8-fc9a939853c4",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "7641cb21-7e8b-4074-8361-f997a9b720a5",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "d57632fd-9e47-44e4-bea5-3b9378b06dbf",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "7cd09d19-9958-4515-9c13-758bae2f35fe",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "479f2e67-f85a-4c66-a4b8-5add22f0c66d",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "0b5f5b2a-3f92-4c14-b2a6-56ef5d08f912",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "4379d489-1afe-400d-a710-f52840bd156b",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "2e604f3c-2b15-45cc-84b1-37847491689f",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "67a34513-19ee-4e8f-bd43-1bcef54859eb",
+      "result_id": "91602b76-b1f9-4f2f-9464-727dc619ae8d"
+    },
+    {
+      "claim_id": "f25fdc49-f4af-4c19-aab6-9f1e3c78e7c8",
+      "result_id": "05a139db-b4e1-46e2-8f88-7ac00b89c9e3"
+    },
+    {
+      "claim_id": "a17dba0c-167e-4a64-8db5-9ad63714520b",
+      "result_id": "05a139db-b4e1-46e2-8f88-7ac00b89c9e3"
+    },
+    {
+      "claim_id": "71cf98b9-1e6c-460b-9daa-7b8c8a927412",
+      "result_id": "05a139db-b4e1-46e2-8f88-7ac00b89c9e3"
+    },
+    {
+      "claim_id": "8ea4895a-aae5-40ae-828f-6234386dee31",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "0d8e2a37-b6e3-4de5-8b49-4065f42499b2",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "1b5b3584-a68d-41cf-8fc2-2e74c2c444af",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "74a34bf8-3d15-4389-a970-4a265a18e9c2",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "1873271b-f7a8-4083-90bf-a5f1eaf61e4d",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "2babd588-c85c-4ed2-9f0a-65814a6a564f",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "2b078790-f1e6-4d16-a2ef-8f2d6bf379d0",
+      "result_id": "2625b24a-7ddb-422d-98c9-7006e4fb7c56"
+    },
+    {
+      "claim_id": "fb468ec1-f8f9-47f0-8f6a-889d123283c8",
+      "result_id": "3c34a7b0-1326-404b-a1a5-20bc77ae0202"
+    },
+    {
+      "claim_id": "beefa1e0-1c0c-473a-8e3e-6eef0f15d78a",
+      "result_id": "ed44dade-faf9-4b82-bb6f-1d8e324c875c"
+    },
+    {
+      "claim_id": "1ea46793-b6d5-4ee5-bb5f-877b968c6e82",
+      "result_id": "ed44dade-faf9-4b82-bb6f-1d8e324c875c"
+    },
+    {
+      "claim_id": "bfb91d5b-8f46-43a4-9a5a-34e2c3fb33e0",
+      "result_id": "ed44dade-faf9-4b82-bb6f-1d8e324c875c"
+    },
+    {
+      "claim_id": "72ff203a-08e0-4f4e-842a-94bff27a4c30",
+      "result_id": "ed44dade-faf9-4b82-bb6f-1d8e324c875c"
+    },
+    {
+      "claim_id": "54232394-d010-4cae-ab09-6bb8d9e0c5dd",
+      "result_id": "1956632a-084e-441b-9d93-d76bbd01f687"
+    },
+    {
+      "claim_id": "ca4e5515-65a9-4a63-a0f6-12c2d63501b4",
+      "result_id": "1956632a-084e-441b-9d93-d76bbd01f687"
+    },
+    {
+      "claim_id": "0221b4d7-29fc-4c3f-8725-e7a04197d420",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "079e5357-77a0-47b3-b39d-1a4d07978c43",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "2faabcf1-7d5d-4dd9-ac81-8e51b56b15c4",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "15f1ca59-94d4-4cf4-866a-5297a97c5805",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "eb508478-3cf7-478f-a317-c52885fba6c3",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "8cce986f-c51f-4a1e-80f7-8c35cb1ab9a4",
+      "result_id": "64998345-0837-445b-a31f-0950457dfd1e"
+    },
+    {
+      "claim_id": "f9e594f2-9373-4762-8031-885e7eab7ed6",
+      "result_id": "3dee1b96-4013-4910-bb37-c6ed0a073703"
+    },
+    {
+      "claim_id": "ddc8e868-ec1b-4922-80b8-6c2a32613acc",
+      "result_id": "3dee1b96-4013-4910-bb37-c6ed0a073703"
+    },
+    {
+      "claim_id": "9103dbd2-a44f-4a5d-ac49-f4cfafb677cf",
+      "result_id": "3dee1b96-4013-4910-bb37-c6ed0a073703"
+    },
+    {
+      "claim_id": "fc048e2c-c9a7-4fb1-b93c-e5005125d1eb",
+      "result_id": "aa15442f-ea2a-4645-8a2a-612fdc3f6ef8"
+    },
+    {
+      "claim_id": "e943f286-dd2f-4901-837a-b79c6b1d23f7",
+      "result_id": "aa15442f-ea2a-4645-8a2a-612fdc3f6ef8"
+    },
+    {
+      "claim_id": "79d3465c-7c91-45a7-9d73-18d47ce096e7",
+      "result_id": "f4639994-5fef-4a8e-a206-3611cf3acb07"
+    },
+    {
+      "claim_id": "c866219c-ce9b-4f0b-8e8a-18eaf3f4962c",
+      "result_id": "f4639994-5fef-4a8e-a206-3611cf3acb07"
+    },
+    {
+      "claim_id": "9a6e941b-7c52-4194-91c0-784c23995904",
+      "result_id": "f4639994-5fef-4a8e-a206-3611cf3acb07"
+    },
+    {
+      "claim_id": "50f8d2e8-da0a-42bd-a316-906c4126e107",
+      "result_id": "f4639994-5fef-4a8e-a206-3611cf3acb07"
+    },
+    {
+      "claim_id": "538f2598-6842-42fd-b39f-fa0cec277cb2",
+      "result_id": "4fd31f9e-2315-47d1-95bf-52427b549738"
+    },
+    {
+      "claim_id": "05870e88-78ea-4a1c-b1d8-3970c02e6711",
+      "result_id": "4fd31f9e-2315-47d1-95bf-52427b549738"
+    },
+    {
+      "claim_id": "105a8746-8185-4fd3-b451-77b136f93d90",
+      "result_id": "2bfa411f-6aaa-494c-9c11-b6a330c3d629"
+    },
+    {
+      "claim_id": "59214cf9-605b-470a-b708-4cd891361d83",
+      "result_id": "2bfa411f-6aaa-494c-9c11-b6a330c3d629"
+    },
+    {
+      "claim_id": "89ee5b0d-00bb-45d9-bfb7-c251efca72bf",
+      "result_id": "64018a03-d6ac-423a-9cda-0c4b24097b40"
+    },
+    {
+      "claim_id": "66107d79-198e-4853-8471-7d1aafcefec8",
+      "result_id": "64018a03-d6ac-423a-9cda-0c4b24097b40"
+    },
+    {
+      "claim_id": "302e0748-9d0f-49ef-a6fc-705cebb39c23",
+      "result_id": "64018a03-d6ac-423a-9cda-0c4b24097b40"
+    },
+    {
+      "claim_id": "cc6de43e-caf2-4e8f-905f-6b2d93a82e18",
+      "result_id": "64018a03-d6ac-423a-9cda-0c4b24097b40"
+    },
+    {
+      "claim_id": "ab9e84d3-f7e8-4d09-ba9f-f256772373ea",
+      "result_id": "d501b41e-7f7b-487c-b754-a873689beb26"
+    },
+    {
+      "claim_id": "935cf0a9-b396-4f4c-bf45-a541e6010c60",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "de0fa855-5aec-40c2-b4b2-59aa1022c019",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "e3365f83-0d22-4004-bd8d-d2adf1edc702",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "a3e546b8-0bef-40cc-9243-dc4fffb36ba9",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "b8ee35c2-5cca-49e4-8666-0f48fe88cf66",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "2d1fb539-d183-47c3-9b0d-e0c1dede3285",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "eaecd7b7-e517-406d-b07a-0f998b18b5c8",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "98c0f46a-071d-4973-a937-b937336412a5",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "caf81522-e7a0-4219-9d0b-b5344cce424b",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "5a812220-1242-42c7-b99b-8022cd9b45d3",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "6ba6e8a3-0d95-4f8a-8668-7698b2468465",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "eb91fc84-e385-4bcf-b4ba-0e6432d35154",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "a1a32245-2615-4484-9aff-d59affdec0c9",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "67cfe4a2-8c7f-4cb0-a7c5-72909fdc3423",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "4cfb078a-fa3d-4f76-bbf1-ac7e7c207ac8",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "9b4264a0-4a4a-41ac-888e-c5cfedca7e26",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "e41da140-31c5-4f27-95ac-61faa6d74ebd",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "46380eb5-a8f4-4189-b21f-0dffbcd504c4",
+      "result_id": "7acf6f0a-3ee6-4137-8c85-b04675a85ff1"
+    },
+    {
+      "claim_id": "786becc2-d80b-40ba-b559-0f227aae6277",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "a4c313db-7942-4a37-94fe-c1efedea0401",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "f1f6a715-5fc7-4b28-a94f-466db5fc3bb8",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "dfd6a9ca-4d2f-465a-a250-523dc1845400",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "798d139c-92b6-41ec-ad13-3aa890745579",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "9205d381-0e36-4fd3-8c50-18a129b28da3",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "15fc2596-613a-4501-a2ca-1233326a4ceb",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "309916df-3eb8-4c35-bb0a-8fe5063a7d4e",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "d7448abe-c853-4ef0-8484-eb07fc57b14e",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "d6101179-7386-4215-aca6-44c7e6a38c8c",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "2e6dda79-2d3f-4912-b317-06ba989f445b",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "e192943d-21d6-4a81-bb63-bc04f290dea4",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "e928bb2e-63b8-4384-932c-386feec9bb60",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "6b1d4bce-8536-4039-9af6-14c1aa78f13c",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "b39a05f9-45bd-45d7-b2ce-955a81958484",
+      "result_id": "4972fcc9-79ac-4db1-9d8f-37e0d20293b3"
+    },
+    {
+      "claim_id": "8826bf1c-aeda-4d25-ac35-3016f51f2d4f",
+      "result_id": "17069012-abe8-4574-96d7-56a656495501"
+    },
+    {
+      "claim_id": "b0927f5c-b4ee-40b1-a6a8-2745aacb6a21",
+      "result_id": "17069012-abe8-4574-96d7-56a656495501"
+    },
+    {
+      "claim_id": "21fcec6b-be0b-40e3-aef7-6bea7a52e1d0",
+      "result_id": "73fe2ad3-61f3-4779-b45a-a60d84980b9f"
+    },
+    {
+      "claim_id": "7b7cde6a-534e-47d4-9f3f-d6c9797cde1d",
+      "result_id": "4059490e-dcf2-4e89-b688-9b62c6d158a2"
+    },
+    {
+      "claim_id": "8cc624c3-55cb-4781-b945-df7aa21bf4da",
+      "result_id": "4059490e-dcf2-4e89-b688-9b62c6d158a2"
+    }
+  ],
+  "comparisons": []
+}

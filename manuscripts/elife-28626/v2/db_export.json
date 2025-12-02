@@ -1,0 +1,1753 @@
+{
+  "submission": {
+    "id": "0ba3a112-255c-4a45-82c3-a530f33052a6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:21:41.569497Z",
+    "updated_at": "2025-12-01T22:21:41.569497Z"
+  },
+  "content": [
+    {
+      "id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "submission_id": "0ba3a112-255c-4a45-82c3-a530f33052a6",
+      "content_type": "manuscript",
+      "content_text": "# Conformational dynamics in TRPV1 channels reported by an encoded coumarin amino acid\n\n## Authors\n\n- Ximena Steinberg<sup>1</sup>\n- Marina A Kasimova<sup>2</sup>\n- Deny Cabezas-Bratesco<sup>1</sup>\n- Jason D Galpin<sup>3</sup>\n- Ernesto Ladron-de-Guevara<sup>4</sup>\n- Federica Villa<sup>5</sup> ([ORCID: 0000-0002-9840-0269](https://orcid.org/0000-0002-9840-0269))\n- Vincenzo Carnevale<sup>2</sup> ([ORCID: 0000-0002-1918-8280](https://orcid.org/0000-0002-1918-8280))\n- Leon Islas<sup>4</sup>\n- Christopher A Ahern<sup>3</sup> ([ORCID: 0000-0002-7975-2744](https://orcid.org/0000-0002-7975-2744))\n- Sebastian E Brauchi<sup>1</sup> ([ORCID: 0000-0002-8494-9912](https://orcid.org/0000-0002-8494-9912)) \u2020\n\n### Affiliations\n\n1. Physiology Department, Faculty of Medicine Universidad Austral de Chile Valdivia Chile\n2. Institute for Computational Molecular Science Temple University Philadelphia United States\n3. Department of Molecular Physiology and Biophysics University of Iowa Iowa City United States\n4. Departamento de Fisiolog\u00eda, Facultad de Medicina Universidad Nacional Aut\u00f3noma de M\u00e9xico Ciudad de M\u00e9xico Mexico\n5. Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) Politecnico di Milano (POLIMI) Milano Italy\n6. Millennium Nucleus of Ion Channels-associated Diseases (MiNICAD) Iniciativa Cientifica Milenio Santiago Chile\n\n\u2020 Corresponding author\n\n## Abstract\n\nTRPV1 channels support the detection of noxious and nociceptive input. Currently available functional and structural data suggest that TRPV1 channels have two gates within their permeation pathway: one formed by a \u2032bundle-crossing\u2032 at the intracellular entrance and a second constriction at the selectivity filter. To describe conformational changes associated with channel gating, the fluorescent non-canonical amino acid coumarin-tyrosine was genetically encoded at Y671, a residue proximal to the selectivity filter. Total internal reflection fluorescence microscopy was performed to image the conformational dynamics of the channels in live cells. Photon counts and optical fluctuations from coumarin encoded within TRPV1 tetramers correlates with channel activation by capsaicin, providing an optical marker of conformational dynamics at the selectivity filter. In agreement with the fluorescence data, molecular dynamics simulations display alternating solvent exposure of Y671 in the closed and open states. Overall, the data point to a dynamic selectivity filter that may serve as a gate for permeation.\n\n## Introduction\n\nCation channels from the TRPV family are functional tetramers with a central pore domain that is shaped by TM5 and TM6 transmembrane segments from each of the four subunits (Ramsey et al., 2006) (Figure 1a). As in Shaker-related tetrameric ion channels, the pore domain houses the ion selectivity filter and an intracellular \u2018bundle crossing\u2019 formed by the \u03b1-helical S6 segments. Functional and structural data suggest that the selectivity filter and inner bundle crossing have the potential to control the flux of ions according to the electrochemical gradient (Cao et al., 2013; Gao et al., 2016; Salazar et al., 2009). The lower constriction is highly conserved (Palovcak et al., 2015) and associated to the canonical gate (Cao et al., 2013; Steinberg et al., 2014), but\u00a0less is known about the putative role of the upper constriction at the ionic selectivity filter, possibly due to the functionally sensitive nature of this region to side-chain mutagenesis. Nevertheless, high-resolution structures of TRPV1 suggest that the upper constriction undergoes structural changes in the presence of DkTx (Gao et al., 2016), a spider toxin that increases the open probability of the channel (Siemens et al., 2006). Moreover, the inhibition of the unitary conductance of TRPV1 channels by protons suggests that the selectivity filter region is flexible and is capable of adopting multiple, functionally distinct conformational states (Liu et al., 2009; Wen et al., 2016). However, it is not known if such conformational dynamics at the selectivity filter might be coupled to channel activation by agonists, such as capsaicin, and if filter gating is sufficient or acts in concert with the lower bundle crossing to control the ionic conductance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Top-down and lateral view of the pore region of rTRPV1 tetramers. Dashed lines denote the positions of putative gates, a canonical gate at I679 and a secondary constriction within the pore at Y671 (green shade). The different subunits are shown in different colors. (b) Epifluorescence images obtained from transiently transfected HEK-293T cells. Cells were co-transfected with wild-type rTRPV1-YPF and\u00a0with rTRPV1-Y671coum. The\u00a0scale\u00a0bar corresponds to 10 \u00b5m. Images correspond to the average of 50 frames. (c) Representative traces obtained from transiently transfected HEK-293T cells subjected to voltage steps from \u2212180 mV to\u00a0+180 mV, in 20 mV increments, for the three different conditions indicated. No TRPV1 currents were seen from expressed Y671TAG channels co-expressed with the coumarin Rs and tRNA but lacking the supplemented amino acid in the culture media. (d) Conductance-voltage relation for the wild-type rTRPV1 (black) and the two different coumarin-containing channels (TRPV1-coumarin alone in red; 1xTRPV1coumarin\u00a0+7xTRPV1wt in blue). Curves were fitted to a Boltzmann distribution of the form I\u00a0=\u00a0Imax/(1\u00a0+\u00a0exp([zF(V-V0.5)/RT]), where z is the voltage dependency, V0.5 is the half-activation voltage, and Imax is the maximum current. Each curve represents the average of at least six different experiments performed at 20\u00b0C. Error bars correspond to standard errors of the mean (SEM). The structure of coumarin and tyrosine are depicted in wireframe. (e) Ten thousand frames were averaged and a threshold was set on the averaged image in order to define regions of interest (arrow indicates ROI). The\u00a0scale\u00a0bar corresponds to 5 \u00b5m. (f) The photon count was extracted from the original set of frames. Capsaicin incubation promotes a higher photon count distribution.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cells were co-transfected with wild-type rTRPV1-YPF and rTRPV1-Y671coum. Scale\u00a0bars correspond to 10 \u00b5m. Images correspond to the average of 40 frames (upper set) and 50 frames (lower set).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a)\u00a010, individual frames were taken with the 64\u00a0\u00d7\u00a032 single-photon avalanche diode\u00a0(SPAD) camera. (b) Images were averaged to identify cell area and regions of interest (ROIs). Scale bar represents 5 \u03bcm. (c) Raw traces of photon count recordings in the absence and presence of capsaicin. (d) Zoomed raw traces comparing background and coumarin-stimulated signals.\n\nOrganic dyes with environmentally\u00a0sensitive fluorescence have been used for nearly 20 years to describe membrane protein conformational changes and ion channel motions (Mannuzzu et al., 1996). The voltage-clamp fluorometry (VCF)\u00a0approach relies on the covalent attachment of such fluorophores, usually via introduced cysteine residues, and allows for the simultaneous recording of fluorescence signals and voltage-clamped ionic currents from expressed ion channels, often in the Xenopus oocyte (Cha and Bezanilla, 1997). This technique has proven to be useful for the real-time description of subtle, and in some cases electrophysiologically silent, conformational changes in voltage- and ligand-gated ion channels (Cha et al., 1999; Islas and Zagotta, 2006; Pless and Lynch, 2009). However, excessive background labeling of intracellular sites, at endogenous cysteine residues for instance, and the prerequisite for solvent accessibility of the labeling site serve to limit the utility of the technique substantially\u00a0for the study of intracellular or solvent-restricted residues. A possible solution to these limitations is the use of genetically encoded fluorophores in the form of non-canonical amino acids (f-ncAA) (Drabkin et al., 1996). Such strategies employ an orthogonal suppressor tRNA and an evolved tRNA synthetase (RS), which can be used to encode the ncAA at any site in the reading frame of the target gene (Drabkin et al., 1996; Sakamoto et al., 2002). This approach has been used for site-specific incorporation of fluorescent ncAAs on soluble proteins in prokaryotic systems (Summerer et al., 2006; Wang et al., 2006), membrane proteins expressed in Xenopus oocytes (Kalstrup and Blunck, 2013;), and proteins expressed in mammalian cells (Chatterjee et al., 2013; Luo et al., 2014; Shen et al., 2011; Steinberg et al., 2016; Zagotta et al., 2016). The f-ncAA coumarin has potential for the study of expressed protein conformational dynamics because of its small size and its exquisite sensitivity to environmental polarity (Liu et al., 2015; Wagner, 2009; Wang et al., 2006). This\u00a0sensitivity can be exploited to report on variations (i.e.\u00a0dielectric\u00a0changes)\u00a0in the surroundings of the incorporated f-ncAA and, in turn, it can be interpreted as a signature of a protein conformational change. Notable examples include the use of coumarin and the amber codon suppression technique to report on peptide binding to viral proteins (Ugwumba et al., 2011), on\u00a0the photoregulation of firefly luciferase and\u00a0on the subcellular localization of proteins in living mammalian cells (Luo et al., 2014), as well as onstructural rearrangements in isolated NaK channels (Liu et al., 2015).\n\nHere, the spectral dynamics of an encoded hydroxy-coumarin were determined in individual live cells with total internal reflection (TIRF) microscopy and rapid imaging of single emitters to study the conformational changes occurring within the pore of the capsaicin receptor TRPV1 during activation.\n\n## Results\n\n### Expression of Tyr-coumarin at genetically encoded positions\n\nPrevious cysteine accessibility experiments showed that Y671C residues\u00a0define\u00a0the boundary for both\u00a0silver (Ag+) state-dependent accessibility and disulphide bond formation in the closed state (Salazar et al., 2009). Thus, we reasoned that a genetically encoded coumarin residue at position Y671 (Y671Coum) would be functionally tolerated and if so, could potentially be well positioned to report on local structural rearrangements occurring within the pore during gating (Figure 1a). As expected for cells\u00a0containing\u00a0an encoded fluorescent probe, HEK-293T cells heterologously expressing both TRPV1-YFP and amber codon-containing TRPV1 mutants (TRPV1YFP/TRPV1TAG) exhibit coumarin\u2013YFP colocalization (Figure 1b; Figure 1\u2014figure supplement 1) consistent with the presence of coumarin and YFP co-fluorescence. Whole-cell patch-clamp electrophysiological recordings performed at room temperature (22\u00b0C) demonstrate the functional expression of the coumarin-containing TRPV1 channels (TRPV1TAG) when expressed alone or at 1:7 molar ratio (TRPV1TAG:TRPV1\u2013YFP) (Figure 1c). The later condition was chosen to simplify the imaging of single emitters (i.e. one coumarin molecule per channel tetramer or cluster of tetramers). Both macroscopic channel kinetics and the conductance-voltage (G-V) relationship were similar between wild\u00a0type\u00a0(WT) and coumarin-containing channels (Figure 1c). The G-V relationship from wild\u00a0type and coumarin channels were well fit by a Boltzmann function with a half-maximal activation voltage (V0.5) near\u00a0+100 mV (Figure 1d). Thus, the data suggest that position Y671 in TRPV1 is amenable to nonsense suppression and encoding of f-ncAA coumarin.\n\n### Optical recordings of capsaicin-induced changes in solvation\n\nIn order to demonstrate the ability of the genetically encoded hydroxy-coumarin side chain to act as a\u00a0reporter for protein activity in live cells, HEK Y671-coumarin TRPV1 expressing cells were imaged within the evanescent field in total internal reflection fluorescence\u00a0(TIRF) microscopy, with a single-photon counting avalanche diode (SPAD) camera (64\u00a0\u00d7\u00a032 pixels array with in-pixel counters) (Bronzi et al., 2014; Michalet et al., 2013). Specifically, photon counts of the emission signal were examined to determine the effect of capsaicin, the canonical agonist of the TRPV1 channel (Figure 1e and f; Figure 1\u2014figure supplement 2). The photon count distribution showed clear differences between pixels representing background and pixels from fluorescent spots, which presumably arise from fluorescent channel subunits (Figure 1f). Further, when the cell is exposed to a maximal concentration of capsaicin (3 \u03bcM), the photon counting rate further shifted to higher values (Figure 1f). The modes observed for these populations showed significant differences (n\u00a0=\u00a04; p<0.05). One interpretation of the capsaicin-induced increase in photon emission counts is that it stems from local changes in the immediate environment of the dye. To simplify the analysis and interpretation of the optical data, we set out to\u00a0measure the fluctuations of the fluorescence signal emitted from a single diffraction-limited emitter\u00a0directly. Given the large pixel size and the low fill-factor of the SPAD array used (Bronzi et al., 2014; Michalet et al., 2013), the precise localization of a diffraction-limited signal is not possible under the condition of overexpression of membrane proteins in living cells. Therefore, steady state fluctuations of fluorescence were recoded by an\u00a0electron-multiplying\u00a0charge coupled device (EM-CCD) camera to resolve changes in the optical properties of the dye (Blunck et al., 2008).\n\nAs in the electrophysiological experiments, cDNAs encoding for both wild-type channels (TRPV1) and amber-codon-containing mutants were mixed in 7:1 ratio to promote the formation of uneven channel tetramers. This strategy results in a small yet discrete number of diffraction-limited coumarin-emitting spots as observed by TIRF microscopy (Figure 2a). The coumarin signal colocalizes well with the YFP signal corresponding to wild-type YFP-tagged channel subunits (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig2-v2.jpg)\n\n**Figure 2.:** (a) Representative TIRF images of the 7:1 transfected cells. Images correspond to the average of 100 frames. Colocalization of coumarin diffraction-limited puncta with YFP signal is marked by colored squares. Scale\u00a0bar corresponds to 2 \u00b5m. (b) Representative traces of photobleaching coumarin-positive spots. Top images correspond to the ROIs depicted in (a). Color-coded traces depict the time course of the fluorescence signal used later for the identification of individual spots that bleach on a single step. (c)\u00a0Ensemble average of the signal recorded from multiple spots from the cell\u2019s membrane shown\u00a0in the inset. The\u00a0image corresponds to the average of 80 frames taken on the coumarin channel (ex405nm/em450nm).\n\nClose examination of these fluorescent spots by photobleaching showed a stepwise behavior allowing for ex-post identification of spots containing a single emitter (Figure 2b). A clear change in fluorescence was evidenced by the ensemble average of several diffraction-limited spots once the cell is exposed to capsaicin (3 \u03bcM; Figure 2c). The ensemble recording showed not only\u00a0an increase of fluorescence after agonist treatment but also increases in the standard deviation of the signal\u2019s mean value (Figure 2c).\n\n### Activation kinetics obtained from the optical signal\n\nGiven the Y671 position within the TRPV1 selectivity filter, we reasoned that the environmental sensitivity of coumarin may well provide kinetic information on channel gating. Stationary noise analysis was performed on the basis of the autocorrelation (C(\u2206t)) of the fluorescence signal (Figure 3a). The autocovariance function can be used to calculate the correlation between values of a noisy signal taken at increasing time intervals, \u2206t. In this regard, C(\u2206t) will be higher for small values of \u2206t (i.e. for\u00a0data points close to each other) and this function rapidly decays as \u2206t become larger. In the present example, this analysis allows for the identification of a characteristic time constant (\u03c4) of the exponential decay, which describes the autocorrelation of the fluorescent signal originating from single emitters. The obtained \u03c4 has an inverse relationship to the rates defining the equilibrium of the reaction between open and closed states (Anderson and Stevens, 1973; Zingsheim and Neher, 1974). The calculated autocorrelation function discriminates well between the three conditions tested (i.e background, no capsaicin, and\u00a0capsaicin present in the media). The background signal is obtained from cells that\u00a0have the coumarin amino acid but lack the expressed TRPV1TAG cDNA. This condition generated noise with a single, fast time constant (\u03c4\u00a0=\u00a08.5 ms) that was easily separated from the\u00a0double exponential decay time constants observed in the signal originating from the encoded coumarin conditions. In the absence of capsaicin, the coumarin signal autocorrelation had two time constants with corresponding values of 12\u00a0\u00b1\u00a06 ms and 78\u00a0\u00b1\u00a022 ms. Incubations with saturating capsaicin concentrations (3 \u00b5M) changed these time constants to 13\u00a0\u00b1\u00a04 ms and 148\u00a0\u00b1\u00a038 ms (n\u00a0=\u00a07; Figure 3a), consistent with the possibility that the encoded coumarin is reporting on an agonist-induced increase in \u03c4. Such a result can be interpreted as an stabilization of the bright state after ligand binding (i.e. longer bursts of activity) either alone or in combination with the destabilization of the dark or non-emitting state, a possibility consistent with the previously determined distribution of closed and open states in TRPV1 channels when activated by capsaicin (Hui et al., 2003).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig3-v2.jpg)\n\n**Figure 3.:** (a) Stationary noise of single spots, with\u00a0each curve corresponding to the averaged fitted curves for the indicated conditions (n\u00a0=\u00a07, paired). The\u00a0autocorrelation function was obtained for background (gray), capsaicin free (blue), and 3 \u03bcM capsaicin (orange). (b) Analysis of fluorescence fluctuations. Superimposed traces of capsaicin (blue) and background (red). The threshold for level one is highlighted (2.5 standard\u00a0deviations\u00a0[SD], dotted line). The gray box indicates the zoomed-in portion of the recording presented in the inset below,\u00a0with\u00a0the dotted lines indicating background average.. An idealization is shown in black. (c) Semi-log plot of the amplitude versus dwell-time shows a shortening of mean time L0. (d) Plot summarizing datasets of amplitude versus dwell time at 0 and 3 \u03bcM capsaicin (n\u00a0=\u00a05, paired). Error bars correspond to SEM. (e) Dose\u2013response curve showing changes in the probability of level 1 (PL1), calculated from non-corrected fluorescence fluctuations, for the two positions tested for the indicated channel types expressing coumarin. (f) Normalized dose\u2013response curves for background subtracted fluorescence fluctuations (orange) and whole-cell electrophysiological response (purple). The electrophysiological response was tested at \u221270 mV in the presence of the indicated concentrations of capsaicin. Error bars correspond to SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Two lateral views showing the relative position of W426, located on\u00a0the pre-TM1 region, outside the membrane. The different regions of the monomer are color coded as indicated. The image on the right depicts two subunits and the relative position of the channel with respect to the plasma membrane (diffuse gray). (b) Representative traces obtained from transiently transfected HEK-293T cells subjected to voltage steps from \u2212180 mV to\u00a0+180 mV in 20 mV increments. Traces correspond to non-stimulated and capsaicin-incubated conditions. (c) Current\u2013voltage relationship for the conditions in b. (d) Raw traces of photon-count recordings in the absence and presence of capsaicin. (e) Capsaicin incubation does not affect photon-count distribution on\u00a0426coummutants. (f) Fluorescence fluctuations at\u00a0426coum. A signal trace is depicted and the background average indicated (red dashed line). The threshold for a single transition is highlighted (2.5 SD, green dashed line). (g) The purple-shaded box on panel f marks the zoomed-in portion of the recording shown\u00a0here. Lines indicate background average and threshold. Time corresponds to the full zoomed signal inside the box.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig3-figsupp2-v2.jpg)\n\nIn order to begin to distinguish between these possibilities, we examined unitary transitions in the optical data (Figure 3b; see Materials\u00a0and\u00a0methods). To do so, we inferred that the signal minima (i.e. L0) would correspond to the magnitude of background signal and would\u00a0corroborate that fluorescence transitions drop from a given maxima (L1) to the observed minima (L0) as expected (Figure 3b, inset). We analyzed the signal in the presence of capsaicin using a threshold-crossing criterion, where the threshold was chosen as 2.5 times the standard deviation of the mean amplitude of background fluctuations (see Materials\u00a0and\u00a0methods). This strategy produced an idealized recording, similar to the analysis of single ion channel current idealization trace (Figure 3b). An analysis of this record shows that the agonist does not affect the amplitude of the fluorescence fluctuations, but rather it promotes a shortening of the mean dwell-time of the bright state, which we defined as L1, going from 398\u00a0\u00b1\u00a0133 ms to 156\u00a0\u00b1\u00a052 ms (n\u00a0=\u00a05; Figure 3c and d). On the other hand, capsaicin increases the probability of being in the bright state (Figure 3). Taken together, these two observations support the notion that capsaicin increases the burst length of transitions to the bright state. This is in agreement with the autocorrelation data, which show that capsaicin increases the time constant, and consistent with an increased burst length of bright events. The data from single emitters also supports previous data showing that the main gating effect of capsaicin is increasing the burst-length of openings by shortening the closed state, instead of prolonging the duration of the open state (Hui et al., 2003).\n\nOverall, the fluorescence data is consistent with the possibility that coumarin at position Y671 reports on the transition between open and closed states of the channel. Further, given the physicochemical properties of coumarin (i.e. that it is quenched in an aqueous environment), the data suggest that position Y671 is more water-exposed and thus has\u00a0decreased in fluorescent output, in the closed state\u00a0compared to the open state (Wagner, 2009). By comparison, the available TRPV1 structural data place W426 in an apparently invariant solvent-exposed region (Figure 3\u2014figure supplement 1a), thus, the open-closed transition would not be expected to induce evident changes in local solvation (Gao et al., 2016). In order to investigate the specificity of the spectral effects measured at Y671 with coumarin, a second site, W426, was examined in parallel. Electrophysiological analysis confirmed that W426coum is a functional channel (Figure 3\u2014figure supplement 1b and c), and the photon-count analysis suggests that the fluorescence signal from this position is insensitive to capsaicin administration (Figure 3\u2014figure supplement 1d and e). Further, the fluctuations of coumarin fluorescence at 426coum are unresponsive to capsaicin treatment, as determined by the calculated bright state probability, PL1 (Figure 3e; Figure 3\u2014figure supplement 1f and g). Conversely, the PL1 of position 671coum reported capsaicin dose-dependent fluorescent changes which are well fitted\u00a0by the capsaicin dose-response curve obtained from capsaicin-activated currents at \u221270 mV (Figure 3e; Figure 3\u2014figure supplement 2). Lastly, when the fluorescence data from Y671coum was normalized and compared with the electrophysiological data taken from whole-cell macroscopic recordings, we observed a close match between the calculated Ec50 for optical and electrophysiological data, 0.33 \u00b5M versus 0.43 \u00b5M, respectively (Figure 3f). Taken together, the data and biophysical analysis suggest a continuum of coordinated motions within the pore, with the Y671coum optical data reporting on a transition to the open conducting conformation in the selectivity filter.\n\n### Rearrangements of tyrosine 671 during closed-open transition\n\nTo relate the changes in coumarin fluorescence to possible structural transitions experienced by the channel during gating, we analyzed\u00a0the molecular dynamics (MD) trajectories of wild-type and 671coum TRPV1 channels in the closed and open states (about 750 ns each). First, we compared the conformations that Y671 adopts in the closed and open states of TRPV1 (Figure 4a and b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig4-v2.jpg)\n\n**Figure 4.:** Molecular dynamics\u00a0(MD) simulations of TRPV1 channels in the open (a) and closed (b) states. The upper and lower panels correspond to the side and top views of the S6 helices bundle (white), respectively. The pore helices (ph) are shown in blue. Y671 residues are represented as yellow sticks. In the open state, four Y671 residues create a ring oriented parallel to the membrane plane (perpendicular to the pore principal axis); whereas in the closed state, three of these residues do not interact with each other and are oriented perpendicular to the membrane plane (parallel to the pore principal axis). (c)\u00a0Hydration of the channel central pore. Panel c shows the time evolution of the density profile (of water oxygens) along the pore. Specifically, at each time frame, the water oxygen atoms number density (i.e. the\u00a0number of particles per unit of length) is calculated as a function of z (the axis of the pore). This quantity is shown using a color scale. Note that the units are \u00c5\u22121 (the number density for a linear system has the dimensions of the inverse of a length). The left and right panels correspond to the closed and open states, respectively. The y-axis of the plot denotes the z-axis of the system (parallel to the channel central pore). The origin of the axis is set at the center of the pore domain transmembrane part. The Y671 residues are located at\u00a0~2.5 \u00c5. Note that in the open state, the water density is often interrupted starting from\u00a0~280 ns, whereas\u00a0in the closed state, this density is continuous. (d) Solvent-accessible surface area (SASA) of Y671. Black and red curves correspond, respectively, to SASA over time for the open (black) and closed (red) states as indicated. In the closed state, the Y671 SASA is approximately twice as large as that in the open state starting from\u00a0~300 ns. (e) The panels show zoomed view of the Y671 in the closed (left) and open (right) states. In the open state, Y671 establishes a hydrogen bond with the\u00a0Y671 of the adjacent subunit; whereas in the closed state, this residue interacts with the backbone of F640 located at the pore helix. The backbone of the selectivity filter (SF) is shown\u00a0using a stick representation.\n\nIn the closed state, the representative conformation shows that three out of four phenyl moieties are approximately perpendicular to the membrane and do not contact each other (Figure 4a).\u00a0In this conformation, phenyl moieties\u00a0create transient hydrogen bonds with the main-chain of F640 of the selectivity filter. In the open state, the planar groups of the four tyrosine residues instead adopt a parallel orientation to the membrane, forming a ring around the central pore (Figure 4b). These opposing orientations in the closed and open conformations predicts an increase in the hydration of the central pore, with the four Y671 moieties being more hydrated in the closed state (Figure 4c). Surprisingly, the open state shows an intermittent occupancy by water molecules of the region surrounded by the four Y671 side chains. Despite being somewhat counterintuitive, this observation is not in contradiction with the conductive nature of the open state: even when devoid of water\u00a0molecules, the environment provided by the ring of hydroxyl groups from Y671 is highly polar and does not impede ion permeation. In spite of these water density fluctuations, the pore is, on average, continuously hydrated only in the open state (Figure 5a).\u00a0Na+-permeation events in our simulations (in the\u00a0absence of any applied external field) were observed in the open\u00a0state, but not in the closed state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig5-v2.jpg)\n\n**Figure 5.:** (a) Representation of the channel structures in the closed (left) and open (right) states. For clarity, only S6 (white) and pore helix (red) are shown for three subunits. The side chains of Y671 (at the upper gate) and I679, I675 (bottom gate) are highlighted using a stick representation and the permeant Na+ ions are shown as purple spheres. Blue shades show the average density of water molecules calculated along the MD trajectory. Note how the water density forms a continuum throughout the pore\u00a0only when\u00a0in the open state. (b) Proposed mechanism for\u00a0the opening and closing of the upper gate: the rearrangement of the four planar groups of residue 671 from the \u2018vertical\u2019 to the \u2018horizontal ring\u2019 configuration is accompanied by a change in\u00a0the tilt (with respect to the membrane plane) of the N-terminus section of S6 and of the pore-helix. In particular, the motion of the pore-helix regulates the effective pore radius at the level of the selectivity filter. The outward motion of both the\u00a0pore helix and the aromatic at position 671 cause a reduction in water and ion accessibility. (c) Molecular structure sampled along the MD trajectory of the coumarin mutant in the closed and open states. For clarity, only S6 and the pore helix are shown with two of the four subunits rendered as gray shading. The coumarin moieties are highlighted using a space-filling representation. Left: closed state. The hydroxyl group of coumarin is able to establish the same H-bonding interactions with the carbonyl group of the pore-helix observed in the wild type. Right: open state. A permeant Na+ ion (yellow sphere) is shown together with its first solvation shell (sticks). Note how the hydroxyl groups from coumarin contribute to the shell of neighbors of the ion.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28626/elife-28626-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Side view of the closed state. Note how the hydroxyl group of coumarin H-bonds a carbonyl oxygen from the adjacent subunit. (b) Top view of the open state highlighting the \u2018horizontal\u2019 configuration of the coumarin moieties.\n\nAn additional insight provided by the simulations is that the hydration of Y671 is different in the two conformations: in the open channel, one face of the phenyl ring is exposed and the adjacent ring is partially buried by F640 and M644, whereas in the closed state, both faces of the Y671 side chain are exposed to water. To describe hydration of Y671 quantitatively,\u00a0we calculated the corresponding solvent accessible surface area (SASA) in the open and closed conformations. The evolution of the Y671 SASA reveals that the two MD trajectories start to diverge quite early: in particular, in both conformations, the Y671 SASA drops down from\u00a0~35% to\u00a0~20% at the beginning of the equilibration; then, after\u00a0~30 ns, in the closed and open states, respectively, the SASA either increases up to\u00a0~30% or continues to decrease until it reaches an equilibrium value of\u00a0~15% (Figure 4d). Further, it can be observed that although the open state displays the side chains of Y671 residues engaged in mutual hydrogen bonding interactions, they establish vdW interactions with nearby residues F640 and M644, whose side chains are in between the selectivity filter backbone groups of two adjacent subunits (Figure 4e). In the closed state, F640 and M644 residues still interact with Y671 as in the open state; however, the different orientation of the side chain phenyl groups allows for a rigid displacement of the pore helix toward the extracellular side of the pore, narrowing the diameter of the selectivity filter (Figure 4a and e and Figure 5a and b).\n\nTo explore the plausibility of this hypothetical gating mechanism, we performed additional simulations in whichfour coumarin moieties\u00a0were\u00a0modeled in the\u00a0place of the side chains of Y671. The rationale for these additional calculations was to ascertain whether the bulkier coumarin moiety (as\u00a0compared to tyrosine phenyl group) can accommodate configurations similar to those accomodated by the wild type. In particular, would the \u2018ring configuration\u2019 in the open state allow ion permeation in the case of coumarin? Is coumarin in the \u2018vertical configuration\u2019 able to establish H-bonds with and thus promote the displacement of the pore helix in the closed state? Although the length of the simulations performed on the coumarin mutant would need to be extended in order to establish a more quantitative comparison with the experimental data, these\u00a0cursory calculations suggest that the proposed gating mechanism is not incompatible with the molecular size of the\u00a0coumarin moiety (Figure 5c; Figure 5\u2014figure supplement 1).\n\n## Discussion\n\nIon channel gating occurs in the range of hundreds of \u00b5s and it is one of the fastest protein-dependent processes occurring\u00a0within cells (Hille, 2001). This rapid time-frame imposes intrinsic technical barriers in the detection of a limited number of photons coming from few emitting molecules and\u00a0a consequent low signal-to-noise ratio under these conditions (Ha, 2014). Given the design of our imaging setups and our experimental conditions (i.e. transient overexpression), we are bound to either the low (64\u00a0\u00d7\u00a032 pixel) spatial resolution of the ns-time-scale sampling of the SPAD imager (which\u00a0does\u00a0not allow us to discriminate single emitters) or to a low signal-to-noise ratio restricting us to image at a maximum of 500 Hz (ms-time scale) for the individual diffraction-limited spots observed by an EM-CCD camera. As reported previously (Blunck et al., 2008), we observed that the latter approach is useful for conformational transitions in the order of 2\u20135 ms, thus barring optical access to the fast intra-burst channel activity that\u00a0occurs in tens of \u00b5s. Therefore, the unitary transition analysis presented here was limited to the description of each burst as a single opening at the expense of missing activity during short openings. None the less, such an analysis, although lacking detail on unitary transitions, is a valid approach for\u00a0estimating\u00a0the duration of the mean open and closed state for a ligand-gated channel such as TRPV1, which has an open transition lasting for several hundreds of ms (Hui et al., 2003). The ideal experimental system would allow for sparse distribution (every\u00a0~1 micrometer) of the emitter-expressing receptors at the plasma membrane, so that the photon-count profile of individual molecules can be obtained with the SPAD imager with nanosecond resolution. However, in the absence of such technical advances, standard biophysical approaches are in place to provide insights on unitary gating events from an expressed population of channels. Interestingly, the similar rate constants obtained by noise analysis of the optical signal and from the subsequent modeling of the unitary transitions, suggest a strong internal consistency of data. Another limitation to consider in the analysis is the intrinsic blinking of the dye. In the present case, this represents roughly 12% of the PL1 transitions and therefore obfuscates efforts to obtain absolute values for the open probability. Our solution to bypass this issue was to linearly subtract this \u2018background open probability\u2019 post-hoc and to\u00a0normalize the data to its maximal theoretical response. Still, even with this coarse approximation, the optical data is in surprising agreement with whole-cell electrophysiological recording of channel gating. Further, this approach allowed for the direct measurement of the steady-state activity of membrane receptors undergoing fast molecular rearrangements. Specifically, from our fluorescence recordings, we reasoned that Y671coum experiences a change of environment as part of the process of pore rearrangement associated to channel\u2019s opening. This possibility is supported by the dynamic range for the optical measurements presented here, and closely overlaps with the dynamic range of burst activity observed in single-channel recordings of TRPV1 in response to capsaicin (i.e. 0.1 to 1 \u03bcM) (Hui et al., 2003).\n\nThe molecular dynamics simulations showed that Y671 could undergo three significant conformational changes during the\u00a0channel\u2019s transition from the conducting to the non-conducting conformation: (i) a side chain re-orientation with respect to the pore and pore helix, (ii) increased water exposure, and (iii) a reshaping of the H-bond interaction network. The spectral properties of coumarin are highly sensitive to changes in solvation and/or to changes in the coordination of the hydroxyl group of the dye (Wagner, 2009). Therefore, any of the modifications detected on MD simulations performed for the wild-type channel can potentially explain the observed changes in fluorescence. As a consequence, a detailed structural interpretation at the level of side-chain dynamics for the fluorescence fluctuations remains out of reach. Moreover, the data presented\u00a0here\u00a0do not prove a causal relationship between the motion of the aromatic side chain and the state of the pore helix.\n\n## Materials\u00a0and\u00a0methods\n\n### Cell culture\n\nHEK293T cells (ATCC Cat# CRL-3216, RRID:CVCL_0063) were cultured in DMEM (Gibco Inc.) supplied with 10% FBS (Gibco Inc.). Plasmocin (Sigma) was used following the\u00a0provider\u2019s instructions to maintain the cell culture free of mycoplasma contamination. Cells were tested for mycoplasma by standard PCR. Cells were prepared at (60\u201370)% confluence and transfected with lipofectamine 2000, (Life technologies). The target gene was transfected 2\u20133 hr after the initial transfection of the pair tRNAtag/CoumRS. The ncAA was added to the\u00a0cell culture to produce\u00a0a final concentration of\u00a0between 0.5 and 1 \u03bcM at the time of the second transfection procedure. Under these transfection conditions, the efficiency of incorporation of non-natural amino acid was as low as 12%, with readthrough calculated to be about 4% (Steinberg et al., 2016). Imaging: to simplify the analysis of the optical data, we transfected a mixture of TRPV1YFP/TRPV1TAG in a 7:1 ratio in an attempt to drive the system to incorporate as few coumarin molecules per tetramer as possible. The ratio of expression was not controlled as we concentrated efforts on single emitters identified ex-post. 24 hr after transfection of the target gene, cells were disaggregated and plated on poly-L-lysine treated glass covers. The f-ncAA-containing media was removed at least 12 hr prior\u00a0to the experiment, allowing cells to clear the soluble ncAA. Generally, the cells were recorded 36\u201348 hr after the second transfection. Electrophysiology: cells were plated 2\u20133 hr before patching, and incubated with normal media lacking the supplemented coumarin.\n\n### Synthesis of TyrCoum\n\nL-(7-hydroxycoumarin-4-yl) ethylglycine was obtained as described before (Wang et al., 2006).\n\n### Solutions\n\nRinger solution for imaging experiments contained: 140 mM NaCl, 8 mM KCl, 8 mM HEPES, and 1 mM MgCl2 at pH 7.4. External\u00a0electrophysiology solutions contained 145 mM NaCl, 2 mM CaCl2, 5 mM KCl, 10 mM HEPES\u00a0and 10 mM glucose, pH 7.4; internal electrophysiology solutions contained 135 mM CsF, 5 mM KCl, 2 mM MgCl2, 1 mM CaCl2, 4 mM EGTA\u00a0and\u00a020 mM HEPES, pH 7.4.\n\n### Molecular modeling\n\nTo analyze Y671 hydration at the atomic level, we used the molecular dynamics\u00a0trajectories obtained in our previous work (Kasimova et al., 2017). These trajectories were generated starting from the cryo-EM structure of the TRPV1 capsaicin-bound state (Cao et al., 2013). In one simulation, we initialized the system by inserting several water molecules (from 4 to 6) inside the channel peripheral cavities (located between the S4\u2013S5 linker and the S6 C-terminus); in the second simulation, we left these cavities empty. During the equilibration (about 750 ns), the molecular structures converged, respectively, to the closed and open states. To estimate water density along the central pore, we implemented the following strategy. First, using HOLE software (Smart et al., 1996), we calculated the pore radius profile for each instantaneous configuration along the trajectory with a stride of 1 ns. Then, for the same set of frames, we calculated the three-dimensional histograms of water occupancy using the Volmap tool of VMD (RRID:SCR_001820) (Humphrey et al., 1996). Finally, we integrated the water occupancy in the XY plane (perpendicular to the channel central pore) using the pore radius profile as a boundary of the integration domain. The solvent accessible surface area (SASA) of Y671 in the closed and open states was estimated using the following procedure. From the MD trajectories, we extracted a set of sub-trajectories, each containing 10 frames taken with a stride of 0.2 ns. For each sub-trajectory, we computed the three-dimensional histogram of atomic occupancy (for all the atoms except water) using the Volmap tool of VMD (Humphrey et al., 1996). We then used this map to define a molecular surface. To this end, we first discretized the map by assigning a value of 1 or 0, depending on whether or not the local occupancy is larger than a preset threshold. We considered all the bins with a value of 1 and located 1.5 \u00c5 away from a bin with a value of 0. Finally, the Y671 SASA was calculated as the overlap between the solvent-accessible surface and the Y671 residue. Note that the SASA was normalized to the Y671 maximal surface area. Molecular dynamics simulations were performed in the open and closed states of the\u00a0TRPV1 coumarin mutant. The force-field parameters for coumarin were obtained from the CHARMM general force field (Vanommeslaeghe and MacKerell, 2012, Vanommeslaeghe et al., 2012). Simulations were performed using NAMD2.10 (RRID:SCR_014894) (Phillips et al., 2005) at constant temperature and pressure (one atm) using the Langevin piston approach. For the vdW interactions, we used a cutoff of 11 \u00c5 with a switching function between 8 \u00c5\u00a0and 11 \u00c5. The long-range component of electrostatic interactions was calculated using the Particle Mesh Ewald approach using a cutoff for the short-range component of 11 \u00c5. The equations of motion were integrated using a multiple time-step algorithm, with a time step of 2 fs and long-range interactions calculated every other step. Trajectories were collected for 100 ns.\n\n### Optical recordings\n\nCells were imaged using an inverted Olympus IX71 microscope main body and through-the-objective TIRF mode. Both 405 nm and 473 nm solid-state lasers (Coherent, Santa Clara, CA) were used to excite coumarin and YFP, respectively. Laser beams were focused to the backplane of a high-numerical aperture objective (Olympus 60X, N.A. 1.49, oil) by a combination of focusing lens. Fluorescence emission was collected by an Andor iXonEM\u00a0+\u00a0860 EM-CCD camera (Andor/Oxford Instruments,\u00a0Belfast,\u00a0UK), after passing through an emission filter for each acquisition wavelength band of interest (coumarin:\u00a0450/70 nm; YFP:540/40 nm; Semrock, US). The light coming to the sample was controlled by a 12 mm mechanical shutter (Vincent associates, Rochester,\u00a0NY), all measurements were performed under continuous light. All imaging experiments were done at room temperature (20\u201322\u00b0C). For localization and co-localization, images were recorded\u00a0at\u00a010\u2013100 ms intervals (100\u201310 Hz). For autocorrelation and unitary fluctuation analysis, images were acquired at 2 ms intervals (500 Hz) under constant illumination at 405 nm (75% laser power equivalent to 8 mW s2 mm2). Laser and focus control was performed using micromanager. Acquisition and digitalization was done with Andor Solis software (Andor/Oxford Instruments, Ireland). Photon counts were made\u00a0using a single-photon avalanche diode (SPAD) photon-counting camera (64\u00a0\u00d7\u00a032 pixels array), which is space correlated with the EM-CCD camera, thus allowing for the location of limiting diffraction puncta. A continuous light stimulation of 1 \u00b5s duration was used to excite coumarin emitters and photons were collected during that period. Laser TTL triggering and piezoelectric focus control (PIFOC-721, PI, Germany) was performed using Micro-Manager software (Vale Lab, UCSD, US). Acquisition and digitalization was done through a custom code written in C++ (SPADlab at POLIMI; http://www.everyphotoncounts.com/). The code used to readout the SPAD array is provided as source code in Dryad repository (https://doi.org/10.5061/dryad.1kc2c).\n\n### Image analysis\n\nFor localization and co-localization, the set of frames was averaged to increase the signal-to-noise ratio (SNR=\u03bc/\u03c3), which is usually less than two for the single frame at 75% laser illumination. Noise analysis of the steady-state signal by autocorrelation was performed as employed in the past to investigate the kinetic properties of ion channel unitary events from recordings with low signal-to-noise ratios (Anderson and Stevens, 1973; Zingsheim and Neher, 1974). For autocorrelation,\u00a0a\u00a0post-acquisition Gaussian digital filter was used at one\u00a0fourth of the acquisition frequency. The background signal was averaged and the standard deviation (SD) calculated. Unitary fluctuation analysis:\u00a0when\u00a0analyzing the fluctuations of fluorescence, we aim to avoid false-positive signals\u00a0and\u00a0therefore defined 2.5 SD (\u03bc\u00a0\u00b12.5 \u03c3\u00a0=\u00a00.987) of the background signal (or the equivalent base level) as a threshold to discriminate the two regimes (Peterson and Harris, 2010), basal level (L0) and higher signal level (L1). We reasoned that fluorescence fluctuations, intrinsic to the probe, might interfere with our calculations; Soluble coumarin deposited on a\u00a0glass coverslip\u00a0showed12% of positive transitions, a value we linearly subtracted from all the individual points taken from the recorded mutants (Y671coum or W426coum), so\u00a0that\u00a0a new corrected dataset having the apparent PL1 was obtained after subtraction. The fluorescence of the single emitter bleaches in less than 1 min of continuous illumination at 75% laser power. Normalization of optical data was performed by dividing signal amplitude by the maximal signal obtained (F/Fmax). Autocorrelation, idealization, and the analysis of unitary transitions was performed with pClamp 8.0 software (RRID:SCR_011323).\n\n### HEK-293T electrophysiology\n\nWhole-cell currents were obtained from transiently transfected HEK-293T cells. Gigaseals were formed by using 2\u20134 M\u03a9 borosilicate pipettes (Warner Instruments, Hamden, CT). Junction potentials (6\u20138 mV) were corrected for CsF/NaCl solutions. Seal resistance was 2\u20133 G\u03a9 in all cases. Series resistance and cell capacitance were analogically compensated for\u00a0directly on the amplifier. The mean maximum voltage drop was about 4 mV. Whole-cell voltage clamp was performed, and macroscopic currents from voltage steps were acquired at 20 kHz and filtered at 10 kHz.\u00a0Ramp protocols were acquired at 10 kHz and filtered at 5 kHz. Currents are presented in terms of densities. Data were\u00a0acquired using an Axopatch 200B and a digidata 1320 (Molecular Devices Inc.,\u00a0Sunnyvale, CA). The acquisition and basic analysis of the data were performed with pClamp 8.0 software.\n\n### Statistics\n\nSingle photon counting. Individual cells on one day of transfection contribute with several puncta, which\u00a0are\u00a0considered as\u00a0replicates. Therefore the histogram presented in Figure 1g corresponds to n\u00a0=\u00a01 but comes from the average of several individual histograms (in this case, five on each curve). The final statistical procedure was done by comparing the mode of the different populations, n\u00a0=\u00a04 for each condition. A p-value of 0.05 was considered significant when comparing the modes of the photon count (Mann-Whitney test). Idealization and unitary transitions. The idealization was performed first by checking that the base level was similar to the background noise, then setting a defined threshold on two standard deviations of background noise average. The comparison between the dwell times was performed in paired experiments (0 versus 3 uM, n\u00a0=\u00a011). The full data set for the\u00a0dose-response curve was analyzed using one-way ANOVA. In general, when averaged, data are shown with the correspondent SEM. The statistical analysis was computed in Microcal OriginPro ver9 (OriginLab) (RRID:SCR_002815). Figures were prepared using Microcal OriginPro ver9. VMD (structural data), and ImageJ (RRID:SCR_003070). Source data is available through the\u00a0Dryad repository (https://doi.org/10.5061/dryad.1kc2c)\n",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b1873c48-c282-46e1-a734-3c71f93df005",
+      "submission_id": "0ba3a112-255c-4a45-82c3-a530f33052a6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28626.sa1](https://doi.org/10.7554/eLife.28626.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Conformational dynamics in TRPV1 channels reported by an encoded coumarin amino acid\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, L\u00e1szl\u00f3 Csan\u00e1dy (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a highly ambitious study pioneering in two techniques: exploiting engineered unnatural aminoacids as a means for targeted introduction of a small fluorescent probe into a protein, and using single-molecule imaging to track in real time conformational changes of a membrane protein in a living cell. The authors apply these techniques to address potential gating-associated motions of a residue (Y671) in the vicinity of the selectivity filter of the TRPV1 cation channel. By incorporating hydroxyl-coumarin into position 671 the authors show that this residue is exposed to a different local environment in the presence of the activating ligand capsaicin and interpret this to indicate that Y671 is more water exposed (dimmer) in the closed state. They conclude that channel opening is accompanied by a conformational change of the Y671 side chain, which decreases its solvent exposure. The results suggest that the TRPV1 selectivity filter plays a role in gating, and illustrate the power of optical recordings for studying protein conformational dynamics at a single-molecule level.\n\nThe experiments are carefully designed and carried out, and seem to mostly support the conclusions. However, there are a number of conceptually important points in the manuscript that are unclear to the reviewers. These will need to be clarified before the manuscript can be published. Specific guidelines are provided below.\n\nEssential revisions:\n\n1) Autocorrelation time constant:\n\n\"changed the slow time constant from 1360+/-287 ms to 580+/-182 ms [\u2026] reporting on an agonist-induced increase in tau. Such a result can be interpreted in multiple ways: i) the stabilization of the open state after ligand binding (i.e. longer bursts of activity)\u2026\"\n\nThere is double confusion here. First, tau decreases, rather than increases, upon agonist addition. Second, the autocorrelation time constant is the inverse of the sum of the opening and closing rate (for a two-state channel tau=1/(kco+koc)). Therefore, a lengthening of open times (i.e., a decrease in koc) would prolong, rather than shorten this time constant. Also, please comment on how the autocorrelation time constant in the presence of capsaicin (>500 ms, Figure 3C) agrees with the current activation time constant seen in electrophysiological measurements (t1/2 of capsaicin activation is on the order of 100 ms according to Yao, Liu and Qin, BJ, 2010). Is the component (1364ms) at 0 cap due to spontaneous openings? If so, how does this value correlate with the spontaneous gating kinetics of TRPV1.\n\n2) Dwell-time analysis:\n\nPlease comment on the reliability of the threshold analysis shown in Figure 3B. The choice of a threshold at 2.5 SD of the background signal seems arbitrary. It appears that if the threshold had been chosen at e.g., 2.3 SD, then many additional \"openings\" would have been identified (although for a Gaussian-distributed background noise the area under the tail beyond 2.3 SD would still be expected only ~1%). Is there anything to be said about an optimal choice of the threshold, and about the specificity vs. sensitivity of the threshold approach?\n\n3) Figure 3E-F:\n\nPlease clarify what the difference is between the plot shown with black symbols in Figure 3E and the plot shown with gray symbols in Figure 3F (both fitted with orange lines), apart from normalization? The plot in 3E reports a less-than-2-fold, that in 3F an ~3-fold, stimulation by saturating capsaicin concentrations.\n\nHow can the only 2x (3x?) increase in PL1 upon exposure to saturating capsaicin, suggested by the analysis of the optical recordings (Figure 3E-F, plots fitted with orange lines), be reconciled with the ~10x increase in Po measured in electrophysiological recordings (Figure 3F, plot fitted with blue line)? Is the PL1 of ~0.2 in the absence of capsaicin related to the \"intrinsic blinking\" of the dye (Discussion, third paragraph)? But there it is said that this \"background open probability\" was subtracted from the data. Do the plots shown in Figures 3E-F represent such corrected, or uncorrected data? \u2013 This should be clearly indicated in the figure legend.\n\n4) Electrophysiology:\n\nWhy was the capsaicin concentration dependence of TRPV1 currents (Figure 3F) obtained at +140 mV, whereas the optical measurements on intact cells clearly reflect behaviour at negative (physiological) membrane potentials? Given the voltage dependence of TRPV1 gating, the EC50 for capsaicin activation is expected to be dramatically different at +140 mV vs. Vm<0.\n\n5) The fluorescence data traces for the control W426 control position are not shown. Please make these control traces and photon counts a prominent part of the main paper so the reader can compare the behavior of control positions with both types of imaging.\n\n6) The molecular simulation was done with wild-type, not coumarin-carrying channels. Y671 is a critical residue (e.g., cysteine replacement severely disrupts channel function), so it is hard to predict how the local pore structure might be perturbed by the coumarin -> Tyr substitution. For that reason, it is uncertain to what extent the simulation results can be extrapolated to mutant channels. Thus, this part might be better positioned in the Discussion section.\n\n7) It should be pointed out that the proposed hydration model is not conclusive: the data support a change in the local environment around Y671, but many other factors could be involved that may contribute to these changes by perturbing local polarity, including movement of the pore helix with associated changes in the direction of its dipole moment. A more thorough discussion of this issue would improve the paper.\n\n8) The methodology (coumarin incorporation and optical measurement) should be described in more detail. For example, what is the efficiency of incorporation of non-natural amino acid? How about the specificity (i.e., off-target incorporation)? How bright is the fluorescence (relative to conventional dyes or FPs)? How is the 7/1 expression ratio controlled? How long does the dye last for recording before it is bleached in the single-molecule recording mode?\n",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "271ffc4a-3706-4aeb-8970-937981e52aa5",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C1",
+      "claim": "TRPV1 channels support the detection of noxious and nociceptive input.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPV1 channels support the detection of noxious and nociceptive input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about TRPV1 channel function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "d43df78b-eade-4845-bdab-1d80fc47db98",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C2",
+      "claim": "TRPV1 channels have two gates within their permeation pathway: one formed by a 'bundle-crossing' at the intracellular entrance and a second constriction at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently available functional and structural data suggest that TRPV1 channels have two gates within their permeation pathway: one formed by a \u2032bundle-crossing\u2032 at the intracellular entrance and a second constriction at the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to available functional and structural data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b762e2f4-451e-4ba0-befd-d8deb9831887",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C3",
+      "claim": "The fluorescent non-canonical amino acid coumarin-tyrosine was genetically encoded at Y671, a residue proximal to the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "To describe conformational changes associated with channel gating, the fluorescent non-canonical amino acid coumarin-tyrosine was genetically encoded at Y671, a residue proximal to the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "75bb2d72-c86b-4741-a087-4decc1ea510a",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C4",
+      "claim": "Photon counts and optical fluctuations from coumarin encoded within TRPV1 tetramers correlates with channel activation by capsaicin.",
+      "claim_type": "EXPLICIT",
+      "source": "Photon counts and optical fluctuations from coumarin encoded within TRPV1 tetramers correlates with channel activation by capsaicin, providing an optical marker of conformational dynamics at the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "639a8055-8b73-4616-be63-f492a2b92332",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C5",
+      "claim": "Molecular dynamics simulations display alternating solvent exposure of Y671 in the closed and open states.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the fluorescence data, molecular dynamics simulations display alternating solvent exposure of Y671 in the closed and open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational modeling data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "70e414de-cc06-402a-96bd-75722cc93330",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C6",
+      "claim": "The selectivity filter may serve as a gate for permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the data point to a dynamic selectivity filter that may serve as a gate for permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental and computational data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "03479d7e-99aa-41a8-a620-be85952842fa",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C7",
+      "claim": "Cation channels from the TRPV family are functional tetramers with a central pore domain that is shaped by TM5 and TM6 transmembrane segments from each of the four subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Cation channels from the TRPV family are functional tetramers with a central pore domain that is shaped by TM5 and TM6 transmembrane segments from each of the four subunits (Ramsey et al., 2006) (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior work and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "f1b4e502-a639-468a-8fe3-848d3514856a",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C8",
+      "claim": "The pore domain houses the ion selectivity filter and an intracellular 'bundle crossing' formed by the \u03b1-helical S6 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Shaker-related tetrameric ion channels, the pore domain houses the ion selectivity filter and an intracellular 'bundle crossing' formed by the \u03b1-helical S6 segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about TRPV channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "9d428b27-c089-4c2d-bace-e2593b866378",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C9",
+      "claim": "The selectivity filter and inner bundle crossing have the potential to control the flux of ions according to the electrochemical gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional and structural data suggest that the selectivity filter and inner bundle crossing have the potential to control the flux of ions according to the electrochemical gradient (Cao et al., 2013; Gao et al., 2016; Salazar et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior functional and structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "45af5f0c-0eca-489b-b167-8f5eea1684d2",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C10",
+      "claim": "The lower constriction is highly conserved and associated to the canonical gate.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower constriction is highly conserved (Palovcak et al., 2015) and associated to the canonical gate (Cao et al., 2013; Steinberg et al., 2014), but less is known about the putative role of the upper constriction at the ionic selectivity filter, possibly due to the functionally sensitive nature of this region to side-chain mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies on channel structure and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a173290d-7adf-4d8f-96c4-10af2f63c13d",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C11",
+      "claim": "High-resolution structures of TRPV1 suggest that the upper constriction undergoes structural changes in the presence of DkTx.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, high-resolution structures of TRPV1 suggest that the upper constriction undergoes structural changes in the presence of DkTx (Gao et al., 2016), a spider toxin that increases the open probability of the channel (Siemens et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8a8b80de-a9b9-49fd-9ac6-f79374b2d608",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C12",
+      "claim": "DkTx is a spider toxin that increases the open probability of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, high-resolution structures of TRPV1 suggest that the upper constriction undergoes structural changes in the presence of DkTx (Gao et al., 2016), a spider toxin that increases the open probability of the channel (Siemens et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work on DkTx.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "3993da27-9a28-4ffd-9a33-68dc6794880b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C13",
+      "claim": "The inhibition of the unitary conductance of TRPV1 channels by protons suggests that the selectivity filter region is flexible and is capable of adopting multiple, functionally distinct conformational states.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the inhibition of the unitary conductance of TRPV1 channels by protons suggests that the selectivity filter region is flexible and is capable of adopting multiple, functionally distinct conformational states (Liu et al., 2009; Wen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "e40096e5-98e3-4624-aa76-d93061d7a0d8",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C14",
+      "claim": "It is not known if conformational dynamics at the selectivity filter might be coupled to channel activation by agonists, such as capsaicin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not known if such conformational dynamics at the selectivity filter might be coupled to channel activation by agonists, such as capsaicin, and if filter gating is sufficient or acts in concert with the lower bundle crossing to control the ionic conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "ccc3617a-3d3a-49b5-a1f9-3e770073adaa",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C15",
+      "claim": "Y671C residues define the boundary for both silver (Ag+) state-dependent accessibility and disulphide bond formation in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous cysteine accessibility experiments showed that Y671C residues define the boundary for both silver (Ag+) state-dependent accessibility and disulphide bond formation in the closed state (Salazar et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "e618a8db-2d37-43b9-b789-8fc077ab99a7",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C16",
+      "claim": "A genetically encoded coumarin residue at position Y671 would be functionally tolerated and could potentially be well positioned to report on local structural rearrangements occurring within the pore during gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reasoned that a genetically encoded coumarin residue at position Y671 (Y671Coum) would be functionally tolerated and if so, could potentially be well positioned to report on local structural rearrangements occurring within the pore during gating (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on prior experimental data and reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a84be5cd-ff10-4e7a-a479-d24ed3866504",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C17",
+      "claim": "HEK-293T cells heterologously expressing both TRPV1-YFP and amber codon-containing TRPV1 mutants exhibit coumarin\u2013YFP colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for cells containing an encoded fluorescent probe, HEK-293T cells heterologously expressing both TRPV1-YFP and amber codon-containing TRPV1 mutants (TRPV1YFP/TRPV1TAG) exhibit coumarin\u2013YFP colocalization (Figure 1b; Figure 1\u2014figure supplement 1) consistent with the presence of coumarin and YFP co-fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental imaging data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "1dee5638-661f-4cc5-a4ed-72c8fcf890b8",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C18",
+      "claim": "Whole-cell patch-clamp electrophysiological recordings demonstrate the functional expression of the coumarin-containing TRPV1 channels when expressed alone or at 1:7 molar ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell patch-clamp electrophysiological recordings performed at room temperature (22\u00b0C) demonstrate the functional expression of the coumarin-containing TRPV1 channels (TRPV1TAG) when expressed alone or at 1:7 molar ratio (TRPV1TAG:TRPV1\u2013YFP) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b5f658b9-220c-4754-9b35-fe3c537a891b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C19",
+      "claim": "Both macroscopic channel kinetics and the conductance-voltage (G-V) relationship were similar between wild type and coumarin-containing channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both macroscopic channel kinetics and the conductance-voltage (G-V) relationship were similar between wild type (WT) and coumarin-containing channels (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "60789157-a421-4042-871d-7f00a698ca3e",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C20",
+      "claim": "The G-V relationship from wild type and coumarin channels were well fit by a Boltzmann function with a half-maximal activation voltage (V0.5) near +100 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-V relationship from wild type and coumarin channels were well fit by a Boltzmann function with a half-maximal activation voltage (V0.5) near +100 mV (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of electrophysiological data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "754b5085-f4ad-4189-8d00-4e1f59c3a3be",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C21",
+      "claim": "Position Y671 in TRPV1 is amenable to nonsense suppression and encoding of f-ncAA coumarin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the data suggest that position Y671 in TRPV1 is amenable to nonsense suppression and encoding of f-ncAA coumarin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the functional expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a548dc0f-777f-4fb7-9bf8-c98aac909feb",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C22",
+      "claim": "The photon count distribution showed clear differences between pixels representing background and pixels from fluorescent spots.",
+      "claim_type": "EXPLICIT",
+      "source": "The photon count distribution showed clear differences between pixels representing background and pixels from fluorescent spots, which presumably arise from fluorescent channel subunits (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photon counting data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8408301e-0a65-4c8f-84c6-72c5f3ee12e1",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C23",
+      "claim": "When the cell is exposed to a maximal concentration of capsaicin (3 \u03bcM), the photon counting rate shifted to higher values.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, when the cell is exposed to a maximal concentration of capsaicin (3 \u03bcM), the photon counting rate further shifted to higher values (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photon counting data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "448d1287-4a7b-47ab-bf34-554da2cda6ea",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C24",
+      "claim": "The modes observed for photon count populations showed significant differences (n = 4; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The modes observed for these populations showed significant differences (n = 4; p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the photon counting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "0e99c4ca-4ee7-4855-a368-7541347b4e90",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C25",
+      "claim": "The capsaicin-induced increase in photon emission counts stems from local changes in the immediate environment of the dye.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation of the capsaicin-induced increase in photon emission counts is that it stems from local changes in the immediate environment of the dye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "d0dafffa-80cf-4fa9-8c22-b2051131b02c",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C26",
+      "claim": "The coumarin signal colocalizes well with the YFP signal corresponding to wild-type YFP-tagged channel subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The coumarin signal colocalizes well with the YFP signal corresponding to wild-type YFP-tagged channel subunits (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "9f05797c-fdb1-4bf9-892e-9f15257fb765",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C27",
+      "claim": "Close examination of fluorescent spots by photobleaching showed a stepwise behavior allowing for ex-post identification of spots containing a single emitter.",
+      "claim_type": "EXPLICIT",
+      "source": "Close examination of these fluorescent spots by photobleaching showed a stepwise behavior allowing for ex-post identification of spots containing a single emitter (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photobleaching data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8218c7bd-8d0a-45d6-9ac6-11767e8c70fa",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C28",
+      "claim": "A clear change in fluorescence was evidenced by the ensemble average of several diffraction-limited spots once the cell is exposed to capsaicin (3 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "A clear change in fluorescence was evidenced by the ensemble average of several diffraction-limited spots once the cell is exposed to capsaicin (3 \u03bcM; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ensemble fluorescence data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "96695e64-dc74-4f07-b2f4-fcc3a8d27d38",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C29",
+      "claim": "The ensemble recording showed not only an increase of fluorescence after agonist treatment but also increases in the standard deviation of the signal's mean value.",
+      "claim_type": "EXPLICIT",
+      "source": "The ensemble recording showed not only an increase of fluorescence after agonist treatment but also increases in the standard deviation of the signal's mean value (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ensemble fluorescence data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "90e07c3a-d75c-4f2d-9788-a910b02a8ea2",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C30",
+      "claim": "The environmental sensitivity of coumarin may provide kinetic information on channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the Y671 position within the TRPV1 selectivity filter, we reasoned that the environmental sensitivity of coumarin may well provide kinetic information on channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the properties of coumarin and the position of Y671.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b69bd203-3b71-486b-943b-208041779416",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C31",
+      "claim": "In the absence of capsaicin, the coumarin signal autocorrelation had two time constants with corresponding values of 12 \u00b1 6 ms and 78 \u00b1 22 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of capsaicin, the coumarin signal autocorrelation had two time constants with corresponding values of 12 \u00b1 6 ms and 78 \u00b1 22 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by autocorrelation analysis of the fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "ff232012-dfd1-4b49-b456-dc4b3cc745ab",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C32",
+      "claim": "Incubations with saturating capsaicin concentrations (3 \u00b5M) changed the autocorrelation time constants to 13 \u00b1 4 ms and 148 \u00b1 38 ms (n = 7).",
+      "claim_type": "EXPLICIT",
+      "source": "Incubations with saturating capsaicin concentrations (3 \u00b5M) changed these time constants to 13 \u00b1 4 ms and 148 \u00b1 38 ms (n = 7; Figure 3a), consistent with the possibility that the encoded coumarin is reporting on an agonist-induced increase in \u03c4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autocorrelation analysis of the fluorescence data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "def28775-ae26-48be-92cc-08aa11fdf645",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C33",
+      "claim": "The encoded coumarin is reporting on an agonist-induced increase in \u03c4, consistent with a stabilization of the bright state after ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubations with saturating capsaicin concentrations (3 \u00b5M) changed these time constants to 13 \u00b1 4 ms and 148 \u00b1 38 ms (n = 7; Figure 3a), consistent with the possibility that the encoded coumarin is reporting on an agonist-induced increase in \u03c4. Such a result can be interpreted as an stabilization of the bright state after ligand binding (i.e. longer bursts of activity) either alone or in combination with the destabilization of the dark or non-emitting state, a possibility consistent with the previously determined distribution of closed and open states in TRPV1 channels when activated by capsaicin (Hui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the autocorrelation data, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "6712fd7e-0c88-4d04-8197-15c6bdba2a61",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C34",
+      "claim": "Capsaicin does not affect the amplitude of the fluorescence fluctuations, but rather it promotes a shortening of the mean dwell-time of the bright state.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of this record shows that the agonist does not affect the amplitude of the fluorescence fluctuations, but rather it promotes a shortening of the mean dwell-time of the bright state, which we defined as L1, going from 398 \u00b1 133 ms to 156 \u00b1 52 ms (n = 5; Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of fluorescence fluctuation data shown in Figures 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "4ac05ead-f7cc-425c-9a97-1e7e9e4e373e",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C35",
+      "claim": "Capsaicin increases the probability of being in the bright state.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, capsaicin increases the probability of being in the bright state (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of fluorescence fluctuation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "1c44bc1a-eda0-438d-b787-5275075047d0",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C36",
+      "claim": "Capsaicin increases the burst length of transitions to the bright state.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these two observations support the notion that capsaicin increases the burst length of transitions to the bright state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the fluorescence fluctuation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "613bbd8f-9f47-4d57-b46c-d7d642ee7616",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C37",
+      "claim": "The main gating effect of capsaicin is increasing the burst-length of openings by shortening the closed state, instead of prolonging the duration of the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with the autocorrelation data, which show that capsaicin increases the time constant, and consistent with an increased burst length of bright events. The data from single emitters also supports previous data showing that the main gating effect of capsaicin is increasing the burst-length of openings by shortening the closed state, instead of prolonging the duration of the open state (Hui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "46ddd450-c26d-4ea4-a0ff-2cf8d70e262d",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C38",
+      "claim": "The fluorescence data is consistent with the possibility that coumarin at position Y671 reports on the transition between open and closed states of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the fluorescence data is consistent with the possibility that coumarin at position Y671 reports on the transition between open and closed states of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the fluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "2a8948e4-f440-4467-9ac1-e08cb6860da3",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C39",
+      "claim": "Position Y671 is more water-exposed and thus has decreased fluorescent output in the closed state compared to the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, given the physicochemical properties of coumarin (i.e. that it is quenched in an aqueous environment), the data suggest that position Y671 is more water-exposed and thus has decreased in fluorescent output, in the closed state compared to the open state (Wagner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fluorescence data and the known properties of coumarin, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a927a68f-dfb2-4790-a1a6-bb6efffe7778",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C40",
+      "claim": "The available TRPV1 structural data place W426 in an apparently invariant solvent-exposed region.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, the available TRPV1 structural data place W426 in an apparently invariant solvent-exposed region (Figure 3\u2014figure supplement 1a), thus, the open-closed transition would not be expected to induce evident changes in local solvation (Gao et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data and citation, shown in Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "c44f88ff-a97d-4cd4-b8dd-91d30e728a15",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C41",
+      "claim": "W426coum is a functional channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological analysis confirmed that W426coum is a functional channel (Figure 3\u2014figure supplement 1b and c), and the photon-count analysis suggests that the fluorescence signal from this position is insensitive to capsaicin administration (Figure 3\u2014figure supplement 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data shown in Figure 3\u2014figure supplement 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "3f3bd870-65c6-4626-bae0-0d3198647f58",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C42",
+      "claim": "The fluorescence signal from W426coum is insensitive to capsaicin administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological analysis confirmed that W426coum is a functional channel (Figure 3\u2014figure supplement 1b and c), and the photon-count analysis suggests that the fluorescence signal from this position is insensitive to capsaicin administration (Figure 3\u2014figure supplement 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photon-count analysis shown in Figure 3\u2014figure supplement 1d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "daeb0156-6d26-489c-93b9-aef6626585df",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C43",
+      "claim": "The fluctuations of coumarin fluorescence at 426coum are unresponsive to capsaicin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the fluctuations of coumarin fluorescence at 426coum are unresponsive to capsaicin treatment, as determined by the calculated bright state probability, PL1 (Figure 3e; Figure 3\u2014figure supplement 1f and g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence fluctuation analysis shown in Figure 3e and Figure 3\u2014figure supplement 1f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "0cc1a56d-e5c6-4f61-b481-7f0ea3cf2f60",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C44",
+      "claim": "The PL1 of position 671coum reported capsaicin dose-dependent fluorescent changes which are well fitted by the capsaicin dose-response curve obtained from capsaicin-activated currents at \u221270 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the PL1 of position 671coum reported capsaicin dose-dependent fluorescent changes which are well fitted by the capsaicin dose-response curve obtained from capsaicin-activated currents at \u221270 mV (Figure 3e; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response analysis shown in Figure 3e and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8a5fa15a-7199-491b-b835-f11f5317a9e2",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C45",
+      "claim": "The calculated Ec50 for optical data from Y671coum is 0.33 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, when the fluorescence data from Y671coum was normalized and compared with the electrophysiological data taken from whole-cell macroscopic recordings, we observed a close match between the calculated Ec50 for optical and electrophysiological data, 0.33 \u00b5M versus 0.43 \u00b5M, respectively (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response analysis shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "6e0d5444-a6d4-4402-9840-047800ecf9b4",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C46",
+      "claim": "The calculated Ec50 for electrophysiological data is 0.43 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, when the fluorescence data from Y671coum was normalized and compared with the electrophysiological data taken from whole-cell macroscopic recordings, we observed a close match between the calculated Ec50 for optical and electrophysiological data, 0.33 \u00b5M versus 0.43 \u00b5M, respectively (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response analysis shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "303fe1fa-242a-4916-90c1-2caaaa3b3bbe",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C47",
+      "claim": "The data and biophysical analysis suggest a continuum of coordinated motions within the pore, with the Y671coum optical data reporting on a transition to the open conducting conformation in the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data and biophysical analysis suggest a continuum of coordinated motions within the pore, with the Y671coum optical data reporting on a transition to the open conducting conformation in the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined optical and electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "6cbb7580-c31d-4652-84e9-21cc52346a3f",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C48",
+      "claim": "In the closed state, three out of four Y671 phenyl moieties are approximately perpendicular to the membrane and do not contact each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed state, the representative conformation shows that three out of four phenyl moieties are approximately perpendicular to the membrane and do not contact each other (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "3383572f-c7d7-41f9-8d53-9c2561f9677b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C49",
+      "claim": "In the closed state, Y671 phenyl moieties create transient hydrogen bonds with the main-chain of F640 of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In this conformation, phenyl moieties create transient hydrogen bonds with the main-chain of F640 of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "cc8a0296-3761-4440-bcb2-4176f4955874",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C50",
+      "claim": "In the open state, the planar groups of the four Y671 tyrosine residues adopt a parallel orientation to the membrane, forming a ring around the central pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open state, the planar groups of the four tyrosine residues instead adopt a parallel orientation to the membrane, forming a ring around the central pore (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "58130c12-fb2a-467f-b944-c2acfe79e4e3",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C51",
+      "claim": "The opposing orientations of Y671 in the closed and open conformations predicts an increase in the hydration of the central pore, with the four Y671 moieties being more hydrated in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "These opposing orientations in the closed and open conformations predicts an increase in the hydration of the central pore, with the four Y671 moieties being more hydrated in the closed state (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on molecular dynamics simulation data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8d71bf5b-a328-4f9c-bebb-436adc7445d1",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C52",
+      "claim": "The open state shows an intermittent occupancy by water molecules of the region surrounded by the four Y671 side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the open state shows an intermittent occupancy by water molecules of the region surrounded by the four Y671 side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "46bbdc3f-0894-419d-8c1d-d66833071476",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C53",
+      "claim": "Even when devoid of water molecules, the environment provided by the ring of hydroxyl groups from Y671 is highly polar and does not impede ion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being somewhat counterintuitive, this observation is not in contradiction with the conductive nature of the open state: even when devoid of water molecules, the environment provided by the ring of hydroxyl groups from Y671 is highly polar and does not impede ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "1c2b403c-e119-4445-b368-8e030fa4aec5",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C54",
+      "claim": "The pore is, on average, continuously hydrated only in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of these water density fluctuations, the pore is, on average, continuously hydrated only in the open state (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a2bf678e-0be2-4025-ad6d-da58b27b1ece",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C55",
+      "claim": "Na+-permeation events were observed in the open state, but not in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Na+-permeation events in our simulations (in the absence of any applied external field) were observed in the open state, but not in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "c92278cc-023e-4fff-b47a-cf09de820bdb",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C56",
+      "claim": "In the open channel, one face of the Y671 phenyl ring is exposed and the adjacent ring is partially buried by F640 and M644.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional insight provided by the simulations is that the hydration of Y671 is different in the two conformations: in the open channel, one face of the phenyl ring is exposed and the adjacent ring is partially buried by F640 and M644, whereas in the closed state, both faces of the Y671 side chain are exposed to water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "2695d1c8-a4f0-4f7e-b1f2-d6b2367eed73",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C57",
+      "claim": "In the closed state, both faces of the Y671 side chain are exposed to water.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional insight provided by the simulations is that the hydration of Y671 is different in the two conformations: in the open channel, one face of the phenyl ring is exposed and the adjacent ring is partially buried by F640 and M644, whereas in the closed state, both faces of the Y671 side chain are exposed to water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "19d318fa-eef1-4535-b349-f34c7848db88",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C58",
+      "claim": "In the closed and open states, the Y671 SASA either increases up to ~30% or continues to decrease until it reaches an equilibrium value of ~15%.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of the Y671 SASA reveals that the two MD trajectories start to diverge quite early: in particular, in both conformations, the Y671 SASA drops down from ~35% to ~20% at the beginning of the equilibration; then, after ~30 ns, in the closed and open states, respectively, the SASA either increases up to ~30% or continues to decrease until it reaches an equilibrium value of ~15% (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SASA analysis of molecular dynamics simulation data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "9c6c4e81-f1b9-44c2-95e3-5e3543192c6f",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C59",
+      "claim": "In the open state, Y671 residues are engaged in mutual hydrogen bonding interactions and establish vdW interactions with nearby residues F640 and M644.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, it can be observed that although the open state displays the side chains of Y671 residues engaged in mutual hydrogen bonding interactions, they establish vdW interactions with nearby residues F640 and M644, whose side chains are in between the selectivity filter backbone groups of two adjacent subunits (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "2960ac78-3379-4af1-ad47-f54f3539dc6b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C60",
+      "claim": "In the closed state, F640 and M644 residues still interact with Y671 as in the open state; however, the different orientation of the side chain phenyl groups allows for a rigid displacement of the pore helix toward the extracellular side of the pore, narrowing the diameter of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed state, F640 and M644 residues still interact with Y671 as in the open state; however, the different orientation of the side chain phenyl groups allows for a rigid displacement of the pore helix toward the extracellular side of the pore, narrowing the diameter of the selectivity filter (Figure 4a and e and Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figures 4a, 4e, 5a, and 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "1e330dfb-6fad-493e-8183-218b1d18c664",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C61",
+      "claim": "The bulkier coumarin moiety can accommodate configurations similar to those accommodated by the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the length of the simulations performed on the coumarin mutant would need to be extended in order to establish a more quantitative comparison with the experimental data, these cursory calculations suggest that the proposed gating mechanism is not incompatible with the molecular size of the coumarin moiety (Figure 5c; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data on the coumarin mutant shown in Figure 5c and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a2db3ccd-d2b9-4f8a-b848-f5cda455400e",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C62",
+      "claim": "Ion channel gating occurs in the range of hundreds of \u00b5s and it is one of the fastest protein-dependent processes occurring within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion channel gating occurs in the range of hundreds of \u00b5s and it is one of the fastest protein-dependent processes occurring within cells (Hille, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "cdbcdc6e-b880-44c7-9a17-dcc92fb10eb0",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C63",
+      "claim": "The rapid time-frame of ion channel gating imposes intrinsic technical barriers in the detection of a limited number of photons coming from few emitting molecules and a consequent low signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid time-frame imposes intrinsic technical barriers in the detection of a limited number of photons coming from few emitting molecules and a consequent low signal-to-noise ratio under these conditions (Ha, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical consideration supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "054edf3f-da66-4d86-9a64-0ffb6b4be323",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C64",
+      "claim": "The unitary transition analysis presented is limited to the description of each burst as a single opening at the expense of missing activity during short openings.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the unitary transition analysis presented here was limited to the description of each burst as a single opening at the expense of missing activity during short openings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the analysis approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "cc578e26-1f9d-43be-88cf-cc1074d97e20",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C65",
+      "claim": "The analysis approach is valid for estimating the duration of the mean open and closed state for a ligand-gated channel such as TRPV1, which has an open transition lasting for several hundreds of ms.",
+      "claim_type": "EXPLICIT",
+      "source": "None the less, such an analysis, although lacking detail on unitary transitions, is a valid approach for estimating the duration of the mean open and closed state for a ligand-gated channel such as TRPV1, which has an open transition lasting for several hundreds of ms (Hui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification of the analysis approach, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "971ec14c-85c2-4432-ba04-9457708d2fb2",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C66",
+      "claim": "The similar rate constants obtained by noise analysis of the optical signal and from the subsequent modeling of the unitary transitions suggest a strong internal consistency of data.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the similar rate constants obtained by noise analysis of the optical signal and from the subsequent modeling of the unitary transitions, suggest a strong internal consistency of data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the consistency between different analytical approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "4da0c2fa-6071-4819-935a-964cb7293d59",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C67",
+      "claim": "The intrinsic blinking of the dye represents roughly 12% of the PL1 transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation to consider in the analysis is the intrinsic blinking of the dye. In the present case, this represents roughly 12% of the PL1 transitions and therefore obfuscates efforts to obtain absolute values for the open probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantification of a technical limitation in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "c81c21ea-2b9a-4a61-ae5e-44f687d69a72",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C68",
+      "claim": "The optical data is in surprising agreement with whole-cell electrophysiological recording of channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, even with this coarse approximation, the optical data is in surprising agreement with whole-cell electrophysiological recording of channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between optical and electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "ca71592b-5633-4c25-81f7-fe4749f630d7",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C69",
+      "claim": "Y671coum experiences a change of environment as part of the process of pore rearrangement associated to channel's opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this approach allowed for the direct measurement of the steady-state activity of membrane receptors undergoing fast molecular rearrangements. Specifically, from our fluorescence recordings, we reasoned that Y671coum experiences a change of environment as part of the process of pore rearrangement associated to channel's opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the fluorescence recordings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8b089691-c39c-40b1-b9f7-95b208020ee5",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C70",
+      "claim": "The dynamic range for the optical measurements closely overlaps with the dynamic range of burst activity observed in single-channel recordings of TRPV1 in response to capsaicin (i.e. 0.1 to 1 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is supported by the dynamic range for the optical measurements presented here, and closely overlaps with the dynamic range of burst activity observed in single-channel recordings of TRPV1 in response to capsaicin (i.e. 0.1 to 1 \u03bcM) (Hui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current optical data and prior single-channel recordings, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "1252ddca-a2e8-43ec-aed3-88b39ebb9473",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C71",
+      "claim": "Y671 could undergo three significant conformational changes during the channel's transition from the conducting to the non-conducting conformation: (i) a side chain re-orientation with respect to the pore and pore helix, (ii) increased water exposure, and (iii) a reshaping of the H-bond interaction network.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular dynamics simulations showed that Y671 could undergo three significant conformational changes during the channel's transition from the conducting to the non-conducting conformation: (i) a side chain re-orientation with respect to the pore and pore helix, (ii) increased water exposure, and (iii) a reshaping of the H-bond interaction network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "7db6cbe6-c832-4adf-98f1-148f42827c27",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C72",
+      "claim": "The spectral properties of coumarin are highly sensitive to changes in solvation and/or to changes in the coordination of the hydroxyl group of the dye.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral properties of coumarin are highly sensitive to changes in solvation and/or to changes in the coordination of the hydroxyl group of the dye (Wagner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about coumarin properties, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "6844fb45-5d26-4469-b569-cad0f4349ecf",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C73",
+      "claim": "Any of the modifications detected on MD simulations performed for the wild-type channel can potentially explain the observed changes in fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, any of the modifications detected on MD simulations performed for the wild-type channel can potentially explain the observed changes in fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation linking simulation results to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "f793b0d6-02f9-4b92-b286-4e4a1efa485a",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C74",
+      "claim": "A detailed structural interpretation at the level of side-chain dynamics for the fluorescence fluctuations remains out of reach.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, a detailed structural interpretation at the level of side-chain dynamics for the fluorescence fluctuations remains out of reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "5f98c1ea-f089-4cbe-acf6-1f6abdf3be17",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C75",
+      "claim": "The data presented do not prove a causal relationship between the motion of the aromatic side chain and the state of the pore helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the data presented here do not prove a causal relationship between the motion of the aromatic side chain and the state of the pore helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in establishing causality from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "3bcec67e-34a0-4359-bd33-8c8b73708fd3",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C76",
+      "claim": "Organic dyes with environmentally sensitive fluorescence have been used for nearly 20 years to describe membrane protein conformational changes and ion channel motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Organic dyes with environmentally sensitive fluorescence have been used for nearly 20 years to describe membrane protein conformational changes and ion channel motions (Mannuzzu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "58d20e18-3a18-499b-9cb0-ad938901457b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C77",
+      "claim": "The voltage-clamp fluorometry (VCF) approach relies on the covalent attachment of fluorophores, usually via introduced cysteine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage-clamp fluorometry (VCF) approach relies on the covalent attachment of such fluorophores, usually via introduced cysteine residues, and allows for the simultaneous recording of fluorescence signals and voltage-clamped ionic currents from expressed ion channels, often in the Xenopus oocyte (Cha and Bezanilla, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the VCF technique, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "30c36b5b-fe29-41d4-85a5-43819f5cf540",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C78",
+      "claim": "VCF has proven to be useful for the real-time description of subtle, and in some cases electrophysiologically silent, conformational changes in voltage- and ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has proven to be useful for the real-time description of subtle, and in some cases electrophysiologically silent, conformational changes in voltage- and ligand-gated ion channels (Cha et al., 1999; Islas and Zagotta, 2006; Pless and Lynch, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the utility of VCF, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "d6451e87-0216-4be6-8893-e6b82d9dd04c",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C79",
+      "claim": "Excessive background labeling of intracellular sites and the prerequisite for solvent accessibility of the labeling site serve to limit the utility of VCF substantially for the study of intracellular or solvent-restricted residues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, excessive background labeling of intracellular sites, at endogenous cysteine residues for instance, and the prerequisite for solvent accessibility of the labeling site serve to limit the utility of the technique substantially for the study of intracellular or solvent-restricted residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of limitations of the VCF technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "c3a88fc1-b4bb-4a1d-9257-f976eba2e6f9",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C80",
+      "claim": "A possible solution to the limitations of VCF is the use of genetically encoded fluorophores in the form of non-canonical amino acids (f-ncAA).",
+      "claim_type": "EXPLICIT",
+      "source": "A possible solution to these limitations is the use of genetically encoded fluorophores in the form of non-canonical amino acids (f-ncAA) (Drabkin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed solution supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "53cc5d53-6176-431d-a43f-dcea071f2d1c",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C81",
+      "claim": "The f-ncAA approach employs an orthogonal suppressor tRNA and an evolved tRNA synthetase (RS), which can be used to encode the ncAA at any site in the reading frame of the target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Such strategies employ an orthogonal suppressor tRNA and an evolved tRNA synthetase (RS), which can be used to encode the ncAA at any site in the reading frame of the target gene (Drabkin et al., 1996; Sakamoto et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the f-ncAA approach, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "cc874470-18f2-4d3b-a635-773e9c2926bf",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C82",
+      "claim": "The f-ncAA approach has been used for site-specific incorporation of fluorescent ncAAs on soluble proteins in prokaryotic systems, membrane proteins expressed in Xenopus oocytes, and proteins expressed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has been used for site-specific incorporation of fluorescent ncAAs on soluble proteins in prokaryotic systems (Summerer et al., 2006; Wang et al., 2006), membrane proteins expressed in Xenopus oocytes (Kalstrup and Blunck, 2013;), and proteins expressed in mammalian cells (Chatterjee et al., 2013; Luo et al., 2014; Shen et al., 2011; Steinberg et al., 2016; Zagotta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about applications of the f-ncAA approach, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "7da1fafb-87db-4fc8-bfad-9e2ee48ef39b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C83",
+      "claim": "The f-ncAA coumarin has potential for the study of expressed protein conformational dynamics because of its small size and its exquisite sensitivity to environmental polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The f-ncAA coumarin has potential for the study of expressed protein conformational dynamics because of its small size and its exquisite sensitivity to environmental polarity (Liu et al., 2015; Wagner, 2009; Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of coumarin, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "9cc6ffc1-64b1-45e9-a4f1-88b8f78f1f1a",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C84",
+      "claim": "Coumarin's sensitivity to environmental polarity can be exploited to report on variations in the surroundings of the incorporated f-ncAA and can be interpreted as a signature of a protein conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "This sensitivity can be exploited to report on variations (i.e. dielectric changes) in the surroundings of the incorporated f-ncAA and, in turn, it can be interpreted as a signature of a protein conformational change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how coumarin's properties can be used to study protein conformational changes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b1d9ec9f-e83c-4ee3-b91c-a3b306638673",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "claim_id": "C85",
+      "claim": "Coumarin and the amber codon suppression technique have been used to report on peptide binding to viral proteins, on the photoregulation of firefly luciferase, on the subcellular localization of proteins in living mammalian cells, and on structural rearrangements in isolated NaK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable examples include the use of coumarin and the amber codon suppression technique to report on peptide binding to viral proteins (Ugwumba et al., 2011), on the photoregulation of firefly luciferase and on the subcellular localization of proteins in living mammalian cells (Luo et al., 2014), as well as onstructural rearrangements in isolated NaK channels (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about prior applications of coumarin, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9451793d-3b1c-4149-a184-294014f7fa0b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Coumarin-tyrosine was successfully genetically encoded at position Y671 in TRPV1 channels, producing functional channels with electrophysiological properties similar to wild-type. The coumarin-containing channels showed proper membrane localization, functional expression, and preserved voltage-dependent gating characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C21 collectively demonstrate successful incorporation of coumarin at Y671 with preserved channel function. The colocalization data (C17), electrophysiological recordings (C18-C20), and Boltzmann fitting (C20) provide converging evidence that the modification is functionally tolerated. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "82bb57a9-02f3-4a71-a57d-ac9025edef28",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Capsaicin activation of TRPV1 channels containing coumarin at Y671 produces a significant increase in photon emission counts, with statistical significance (p<0.05, n=4). This increase is interpreted as reflecting local environmental changes around the fluorophore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 provide direct experimental evidence with appropriate statistical testing. The photon count distributions show clear separation between background, baseline, and capsaicin-treated conditions. However, C25 is interpretive and the mechanism remains uncertain. The statistical analysis appears sound though sample size is modest (n=4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "5c7eb9ac-2969-4320-97bd-1082a4ae7389",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-emitter analysis of coumarin-labeled TRPV1 channels shows that capsaicin treatment increases both the mean fluorescence and the standard deviation of fluorescence fluctuations. Photobleaching analysis confirmed identification of single emitters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 describe complementary single-molecule imaging approaches. The photobleaching stepwise behavior (C27) validates single-emitter identification, and ensemble averaging (C28-C29) shows consistent capsaicin-induced changes. The methods are appropriate for the experimental goals, though temporal resolution limitations are acknowledged elsewhere.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Autocorrelation analysis of coumarin fluorescence reveals that capsaicin increases the slower time constant from 78\u00b122 ms to 148\u00b138 ms (n=7), consistent with stabilization of the bright state and increased burst length of channel openings. This agrees with prior single-channel recordings showing capsaicin increases burst length by shortening closed states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C36-C37 present internally consistent kinetic analysis. The autocorrelation approach is appropriate for noisy single-molecule data, and the interpretation (C33) is supported by citation to prior work (C37). The sample size (n=7) is adequate and the results align with established TRPV1 gating mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "8c52e2a8-227a-4ca7-ac14-d60cffa2e5da",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of fluorescence fluctuations shows that capsaicin does not affect the amplitude of fluctuations but shortens the mean dwell-time of the bright state (L1) from 398\u00b1133 ms to 156\u00b152 ms (n=5) and increases the probability of being in the bright state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide complementary analysis of fluorescence fluctuations using threshold-crossing methods. The findings are consistent with the autocorrelation results and support the interpretation of increased burst activity. However, the apparent contradiction between 'shortening' dwell time (C34) and 'increasing' burst length (C36) requires careful interpretation in context of burst vs. individual opening kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "4ce34daf-def0-45a1-8919-8fa4283b63a3",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The fluorescence data from Y671coum reports on the open-closed transition of TRPV1 channels, with Y671 being more water-exposed (and thus less fluorescent) in the closed state compared to the open state. The optical data reports on conformational transitions at the selectivity filter associated with channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C47, C69 synthesize the experimental findings into a mechanistic interpretation. The conclusion is well-supported by the dose-response correlation (C44-C46), the position-specific effects (C40-C43), and the known quenching properties of coumarin (C72). The interpretation is appropriately cautious, acknowledging it as a 'possibility' and 'consistent with' rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "a883e386-c91c-4e10-a3d7-703456d9a7e0",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control experiments with coumarin at position W426 show that this position produces functional channels but the fluorescence signal is insensitive to capsaicin, consistent with W426 being in a solvent-exposed region that does not change during gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 provide essential negative control data. The structural prediction (C40) is supported by citation, and the experimental data (C41-C43) confirm the prediction. This control strengthens the interpretation that Y671 fluorescence changes are specific to gating-related conformational changes rather than non-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "75c9d369-8afc-4c02-980b-efc4f5cb769a",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The dose-response relationship for fluorescence changes at Y671coum closely matches electrophysiological measurements, with EC50 values of 0.33 \u00b5M (optical) and 0.43 \u00b5M (electrophysiological) for capsaicin activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 demonstrate strong correlation between optical and electrophysiological readouts. The close agreement in EC50 values provides validation that the fluorescence signal reports on channel activation. The comparison is appropriate and strengthens confidence in the optical measurements as a proxy for channel gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations show that Y671 adopts different orientations in closed vs. open states: in the closed state, Y671 residues are perpendicular to the membrane and more water-exposed (SASA ~30%), while in the open state they form a parallel ring with reduced water exposure (SASA ~15%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C56-C58 describe consistent structural predictions from MD simulations (~750 ns each). The SASA analysis (C58) provides quantitative support for differential hydration. The simulations are appropriately long and the findings align with the experimental fluorescence data. However, MD simulations have inherent limitations in force field accuracy and sampling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "7c91cb14-6d70-44fb-ad31-63526ccac8da",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MD simulations reveal that the open state shows intermittent water occupancy at Y671 but maintains continuous pore hydration on average, with Na+ permeation observed only in the open state. The polar environment from Y671 hydroxyl groups does not impede ion permeation even when water is transiently absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe nuanced hydration dynamics from MD simulations. The observation of ion permeation only in the open state (C55) validates the functional relevance of the simulated conformations. The interpretation (C53) appropriately addresses the counterintuitive finding of intermittent water occupancy in the conducting state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "bfbae6e9-3f80-4000-a2a9-f8b6b715c146",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MD simulations show that Y671 interacts with F640 and M644 in both states, but the different Y671 orientations allow rigid displacement of the pore helix in the closed state, narrowing the selectivity filter diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 propose a specific gating mechanism involving pore helix displacement. The structural analysis is supported by the simulation data shown in multiple figures. This provides a plausible molecular mechanism linking Y671 conformation to selectivity filter gating, though the causal relationship is not experimentally proven (acknowledged in C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "7d88db5c-6e1e-4cbf-836f-122fcd7874a6",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Preliminary MD simulations of the Y671coum mutant suggest that the bulkier coumarin moiety can accommodate configurations similar to wild-type Y671, supporting compatibility of the proposed gating mechanism with the coumarin substitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is explicitly described as preliminary ('cursory calculations') and the authors acknowledge that longer simulations would be needed for quantitative comparison. While the data suggest compatibility, the limited simulation time and lack of detailed analysis make this result uncertain. This is appropriately presented as supporting evidence rather than definitive proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "aa403ad7-2d24-43d2-951e-0359af1031df",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study acknowledges technical limitations including temporal resolution constraints (ms vs. \u00b5s timescales), intrinsic dye blinking (~12% of transitions), and inability to resolve fast intra-burst activity. Despite these limitations, the optical and electrophysiological data show surprising agreement, and different analytical approaches yield consistent rate constants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 provide transparent discussion of methodological limitations and validation of the analytical approach. The acknowledgment of limitations (C63-C64, C67) is appropriate, and the internal consistency checks (C66, C68) strengthen confidence in the results despite acknowledged constraints. The justification for the analytical approach (C65) is supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "b2a0364b-c743-43e9-a6f6-006ba01d597b",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dynamic range of optical measurements (0.1 to 1 \u00b5M capsaicin) overlaps with the range of burst activity in prior single-channel recordings, supporting that the fluorescence reports on channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 provides additional validation by comparing to prior work. The agreement in concentration ranges strengthens the interpretation that fluorescence changes reflect gating transitions. This cross-validation with established literature is appropriate and well-supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study identifies three potential conformational changes at Y671 during gating (side chain reorientation, water exposure, H-bond network changes) that could explain fluorescence changes given coumarin's sensitivity to solvation. However, detailed structural interpretation and causal relationships remain uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 appropriately synthesize findings while acknowledging interpretive limitations. The identification of multiple potential mechanisms (C71) is supported by MD data, and the acknowledgment that detailed interpretation 'remains out of reach' (C74) and causality is not proven (C75) demonstrates appropriate scientific caution. The reasoning is sound given coumarin's known properties (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "d81a99a7-d8b4-4c9d-9f2f-5ec1078db499",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The data point to a dynamic selectivity filter that may serve as a gate for permeation in TRPV1 channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 represents the main conclusion, appropriately stated as speculative ('may serve'). This is supported by the convergence of optical data showing Y671 environmental changes during activation, MD simulations showing conformational changes at the selectivity filter, and the correlation between optical and electrophysiological measurements. The conclusion is warranted but appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "2d223ade-3e69-4a7b-ae78-ea307518757e",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on TRPV1 structure and function, including the two-gate hypothesis, prior structural and functional studies, and the rationale for studying Y671.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background knowledge appropriately supported by citations. These claims set up the scientific context and rationale for the study. The prior work is accurately represented based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on fluorescence approaches for studying protein conformational changes, including voltage-clamp fluorometry (VCF) and genetically encoded fluorescent non-canonical amino acids (f-ncAA), with emphasis on coumarin's properties and prior applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C85 provide methodological background appropriately supported by multiple citations. The description of VCF limitations (C79) and f-ncAA advantages (C80-C84) establishes the rationale for the chosen approach. The prior applications (C85) demonstrate feasibility. This background is accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    },
+    {
+      "id": "211d86e6-fc3a-49ef-ac5d-5999d56b7a19",
+      "content_id": "70f4749d-2bd5-421a-a400-b3b7abd0693d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study hypothesized that coumarin at Y671 would be functionally tolerated and positioned to report on gating-related conformational changes, potentially providing kinetic information on channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C30 state the central hypothesis of the study, which is reasonable based on prior cysteine accessibility data (C15) and coumarin's properties. The hypothesis is clearly stated and appropriately tested by the subsequent experiments. These are well-founded predictions rather than results per se.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:21:41.569497Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b762e2f4-451e-4ba0-befd-d8deb9831887",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "a84be5cd-ff10-4e7a-a479-d24ed3866504",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "1dee5638-661f-4cc5-a4ed-72c8fcf890b8",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "b5f658b9-220c-4754-9b35-fe3c537a891b",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "60789157-a421-4042-871d-7f00a698ca3e",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "754b5085-f4ad-4189-8d00-4e1f59c3a3be",
+      "result_id": "9451793d-3b1c-4149-a184-294014f7fa0b"
+    },
+    {
+      "claim_id": "a548dc0f-777f-4fb7-9bf8-c98aac909feb",
+      "result_id": "82bb57a9-02f3-4a71-a57d-ac9025edef28"
+    },
+    {
+      "claim_id": "8408301e-0a65-4c8f-84c6-72c5f3ee12e1",
+      "result_id": "82bb57a9-02f3-4a71-a57d-ac9025edef28"
+    },
+    {
+      "claim_id": "448d1287-4a7b-47ab-bf34-554da2cda6ea",
+      "result_id": "82bb57a9-02f3-4a71-a57d-ac9025edef28"
+    },
+    {
+      "claim_id": "0e99c4ca-4ee7-4855-a368-7541347b4e90",
+      "result_id": "82bb57a9-02f3-4a71-a57d-ac9025edef28"
+    },
+    {
+      "claim_id": "d0dafffa-80cf-4fa9-8c22-b2051131b02c",
+      "result_id": "5c7eb9ac-2969-4320-97bd-1082a4ae7389"
+    },
+    {
+      "claim_id": "9f05797c-fdb1-4bf9-892e-9f15257fb765",
+      "result_id": "5c7eb9ac-2969-4320-97bd-1082a4ae7389"
+    },
+    {
+      "claim_id": "8218c7bd-8d0a-45d6-9ac6-11767e8c70fa",
+      "result_id": "5c7eb9ac-2969-4320-97bd-1082a4ae7389"
+    },
+    {
+      "claim_id": "96695e64-dc74-4f07-b2f4-fcc3a8d27d38",
+      "result_id": "5c7eb9ac-2969-4320-97bd-1082a4ae7389"
+    },
+    {
+      "claim_id": "b69bd203-3b71-486b-943b-208041779416",
+      "result_id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1"
+    },
+    {
+      "claim_id": "ff232012-dfd1-4b49-b456-dc4b3cc745ab",
+      "result_id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1"
+    },
+    {
+      "claim_id": "def28775-ae26-48be-92cc-08aa11fdf645",
+      "result_id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1"
+    },
+    {
+      "claim_id": "1c44bc1a-eda0-438d-b787-5275075047d0",
+      "result_id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1"
+    },
+    {
+      "claim_id": "613bbd8f-9f47-4d57-b46c-d7d642ee7616",
+      "result_id": "7e9fecce-9718-48ce-abf2-e0d7e1254ac1"
+    },
+    {
+      "claim_id": "6712fd7e-0c88-4d04-8197-15c6bdba2a61",
+      "result_id": "8c52e2a8-227a-4ca7-ac14-d60cffa2e5da"
+    },
+    {
+      "claim_id": "4ac05ead-f7cc-425c-9a97-1e7e9e4e373e",
+      "result_id": "8c52e2a8-227a-4ca7-ac14-d60cffa2e5da"
+    },
+    {
+      "claim_id": "46ddd450-c26d-4ea4-a0ff-2cf8d70e262d",
+      "result_id": "4ce34daf-def0-45a1-8919-8fa4283b63a3"
+    },
+    {
+      "claim_id": "2a8948e4-f440-4467-9ac1-e08cb6860da3",
+      "result_id": "4ce34daf-def0-45a1-8919-8fa4283b63a3"
+    },
+    {
+      "claim_id": "303fe1fa-242a-4916-90c1-2caaaa3b3bbe",
+      "result_id": "4ce34daf-def0-45a1-8919-8fa4283b63a3"
+    },
+    {
+      "claim_id": "ca71592b-5633-4c25-81f7-fe4749f630d7",
+      "result_id": "4ce34daf-def0-45a1-8919-8fa4283b63a3"
+    },
+    {
+      "claim_id": "a927a68f-dfb2-4790-a1a6-bb6efffe7778",
+      "result_id": "a883e386-c91c-4e10-a3d7-703456d9a7e0"
+    },
+    {
+      "claim_id": "c44f88ff-a97d-4cd4-b8dd-91d30e728a15",
+      "result_id": "a883e386-c91c-4e10-a3d7-703456d9a7e0"
+    },
+    {
+      "claim_id": "3f3bd870-65c6-4626-bae0-0d3198647f58",
+      "result_id": "a883e386-c91c-4e10-a3d7-703456d9a7e0"
+    },
+    {
+      "claim_id": "daeb0156-6d26-489c-93b9-aef6626585df",
+      "result_id": "a883e386-c91c-4e10-a3d7-703456d9a7e0"
+    },
+    {
+      "claim_id": "0cc1a56d-e5c6-4f61-b481-7f0ea3cf2f60",
+      "result_id": "75c9d369-8afc-4c02-980b-efc4f5cb769a"
+    },
+    {
+      "claim_id": "8a5fa15a-7199-491b-b835-f11f5317a9e2",
+      "result_id": "75c9d369-8afc-4c02-980b-efc4f5cb769a"
+    },
+    {
+      "claim_id": "6e0d5444-a6d4-4402-9840-047800ecf9b4",
+      "result_id": "75c9d369-8afc-4c02-980b-efc4f5cb769a"
+    },
+    {
+      "claim_id": "6cbb7580-c31d-4652-84e9-21cc52346a3f",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "3383572f-c7d7-41f9-8d53-9c2561f9677b",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "cc8a0296-3761-4440-bcb2-4176f4955874",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "58130c12-fb2a-467f-b944-c2acfe79e4e3",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "c92278cc-023e-4fff-b47a-cf09de820bdb",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "2695d1c8-a4f0-4f7e-b1f2-d6b2367eed73",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "19d318fa-eef1-4535-b349-f34c7848db88",
+      "result_id": "ed342a62-7c60-40a2-bee5-dad8a2ea02f9"
+    },
+    {
+      "claim_id": "8d71bf5b-a328-4f9c-bebb-436adc7445d1",
+      "result_id": "7c91cb14-6d70-44fb-ad31-63526ccac8da"
+    },
+    {
+      "claim_id": "46bbdc3f-0894-419d-8c1d-d66833071476",
+      "result_id": "7c91cb14-6d70-44fb-ad31-63526ccac8da"
+    },
+    {
+      "claim_id": "1c2b403c-e119-4445-b368-8e030fa4aec5",
+      "result_id": "7c91cb14-6d70-44fb-ad31-63526ccac8da"
+    },
+    {
+      "claim_id": "a2bf678e-0be2-4025-ad6d-da58b27b1ece",
+      "result_id": "7c91cb14-6d70-44fb-ad31-63526ccac8da"
+    },
+    {
+      "claim_id": "9c6c4e81-f1b9-44c2-95e3-5e3543192c6f",
+      "result_id": "bfbae6e9-3f80-4000-a2a9-f8b6b715c146"
+    },
+    {
+      "claim_id": "2960ac78-3379-4af1-ad47-f54f3539dc6b",
+      "result_id": "bfbae6e9-3f80-4000-a2a9-f8b6b715c146"
+    },
+    {
+      "claim_id": "1e330dfb-6fad-493e-8183-218b1d18c664",
+      "result_id": "7d88db5c-6e1e-4cbf-836f-122fcd7874a6"
+    },
+    {
+      "claim_id": "a2db3ccd-d2b9-4f8a-b848-f5cda455400e",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "cdbcdc6e-b880-44c7-9a17-dcc92fb10eb0",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "054edf3f-da66-4d86-9a64-0ffb6b4be323",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "cc578e26-1f9d-43be-88cf-cc1074d97e20",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "971ec14c-85c2-4432-ba04-9457708d2fb2",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "4da0c2fa-6071-4819-935a-964cb7293d59",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "c81c21ea-2b9a-4a61-ae5e-44f687d69a72",
+      "result_id": "aa403ad7-2d24-43d2-951e-0359af1031df"
+    },
+    {
+      "claim_id": "8b089691-c39c-40b1-b9f7-95b208020ee5",
+      "result_id": "b2a0364b-c743-43e9-a6f6-006ba01d597b"
+    },
+    {
+      "claim_id": "1252ddca-a2e8-43ec-aed3-88b39ebb9473",
+      "result_id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c"
+    },
+    {
+      "claim_id": "7db6cbe6-c832-4adf-98f1-148f42827c27",
+      "result_id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c"
+    },
+    {
+      "claim_id": "6844fb45-5d26-4469-b569-cad0f4349ecf",
+      "result_id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c"
+    },
+    {
+      "claim_id": "f793b0d6-02f9-4b92-b286-4e4a1efa485a",
+      "result_id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c"
+    },
+    {
+      "claim_id": "5f98c1ea-f089-4cbe-acf6-1f6abdf3be17",
+      "result_id": "00aa3ae0-4fed-4a1e-9d82-0ac5f1ce9a9c"
+    },
+    {
+      "claim_id": "70e414de-cc06-402a-96bd-75722cc93330",
+      "result_id": "d81a99a7-d8b4-4c9d-9f2f-5ec1078db499"
+    },
+    {
+      "claim_id": "271ffc4a-3706-4aeb-8970-937981e52aa5",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "d43df78b-eade-4845-bdab-1d80fc47db98",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "03479d7e-99aa-41a8-a620-be85952842fa",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "f1b4e502-a639-468a-8fe3-848d3514856a",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "9d428b27-c089-4c2d-bace-e2593b866378",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "45af5f0c-0eca-489b-b167-8f5eea1684d2",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "a173290d-7adf-4d8f-96c4-10af2f63c13d",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "8a8b80de-a9b9-49fd-9ac6-f79374b2d608",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "3993da27-9a28-4ffd-9a33-68dc6794880b",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "e40096e5-98e3-4624-aa76-d93061d7a0d8",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "ccc3617a-3d3a-49b5-a1f9-3e770073adaa",
+      "result_id": "2d223ade-3e69-4a7b-ae78-ea307518757e"
+    },
+    {
+      "claim_id": "3bcec67e-34a0-4359-bd33-8c8b73708fd3",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "58d20e18-3a18-499b-9cb0-ad938901457b",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "30c36b5b-fe29-41d4-85a5-43819f5cf540",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "d6451e87-0216-4be6-8893-e6b82d9dd04c",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "c3a88fc1-b4bb-4a1d-9257-f976eba2e6f9",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "53cc5d53-6176-431d-a43f-dcea071f2d1c",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "cc874470-18f2-4d3b-a635-773e9c2926bf",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "7da1fafb-87db-4fc8-bfad-9e2ee48ef39b",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "9cc6ffc1-64b1-45e9-a4f1-88b8f78f1f1a",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "b1d9ec9f-e83c-4ee3-b91c-a3b306638673",
+      "result_id": "6017675e-548c-4c6a-9ef1-8989f4cc45bf"
+    },
+    {
+      "claim_id": "e618a8db-2d37-43b9-b789-8fc077ab99a7",
+      "result_id": "211d86e6-fc3a-49ef-ac5d-5999d56b7a19"
+    },
+    {
+      "claim_id": "90e07c3a-d75c-4f2d-9788-a910b02a8ea2",
+      "result_id": "211d86e6-fc3a-49ef-ac5d-5999d56b7a19"
+    }
+  ],
+  "comparisons": []
+}

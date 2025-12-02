@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior work established that Msp1 is a conserved AAA ATPase localized to mitochondria and peroxisomes that prevents accumulation of mistargeted TA proteins, including Pex15. Deletion of Msp1 leads to accumulation of mistargeted TA proteins at mitochondria and synthetic sick interactions with GET pathway deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C19-C29 collectively describe established background knowledge from prior studies (Chen et al., 2014b; Okreglak and Walter, 2014). These claims are appropriately cited and provide the foundation for the current work. The authors correctly attribute these findings to prior publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "De novo induction of Msp1 activity clears fully membrane-integrated Pex15\u0394C30 from mitochondria. Protease protection assays confirm that Pex15\u0394C30 is fully integrated into the mitochondrial outer membrane prior to Msp1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data in Figures 1 and 2, including time-lapse microscopy showing enhanced YFP signal decay upon Msp1 induction and protease protection assays demonstrating membrane integration. The use of orthogonal drug-inducible systems for Pex15 and Msp1 expression provides temporal control that addresses limitations of prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Msp1 induction enhances turnover of overexpressed peroxisomal Pex15. This turnover is dependent on Pex15 overexpression, as natively-expressed Pex15 levels are unchanged in msp1\u0394 cells, while natively-expressed Pex15\u0394C30 accumulates at mitochondria in msp1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are supported by microscopy data (Figures 3A-C), immunoblotting (Figure 3D), and quantitative comparisons of overexpressed versus native Pex15 levels (Figure 3E and supplements). The observation that native peroxisomal Pex15 is unaffected by Msp1 deletion while overexpressed Pex15 is turned over is well-documented and provides key evidence for the overexpression-dependent phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Mitochondrial Pex15 displays simple exponential decay kinetics that are equally well-fit by 1-state and 2-state models. In contrast, peroxisomal Pex15 exhibits non-exponential decay with faster and slower kinetic components, with nascent Pex15 decaying ~4-fold faster than mature Pex15. Model fitting reveals that the 2-state model better explains peroxisomal Pex15 turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54 are supported by high temporal resolution microscopy data (Figure 4) and mathematical modeling comparing 1-state versus 2-state decay models. The area between fit curves quantitatively demonstrates that the 2-state model is necessary for peroxisomal but not mitochondrial Pex15. The fit parameters and residual sum of squares are provided in Figure 4\u2014figure supplement 1A, supporting the statistical rigor of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using tandem fluorescent timer (tFT) technology, the authors demonstrate that Msp1 overexpression does not alter the mean age of peroxisomal Pex15 molecules, consistent with the 2-state model prediction. This supports the existence of a maturation process that converts newly-synthesized Pex15 from an Msp1-sensitive to Msp1-resistant state at peroxisomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by experimental data in Figure 5 showing that the mCherry:sfYFP ratio remains constant despite Msp1 overexpression, matching the 2-state model prediction. The theoretical simulations (Figure 5B) and experimental measurements (Figure 5C) are in strong agreement. This provides independent validation of the 2-state model through a protein age-based approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Pex15 interacts with the peroxisomal membrane protein Pex3, which protects Pex15 from Msp1-dependent turnover. Acute depletion of Pex3 using the auxin-inducible degron system immediately increases Msp1-dependent turnover of endogenous Pex15, unmasking it as a latent substrate. Pex3 overexpression blunts Msp1-dependent turnover of overexpressed Pex15. This protection is specific to Pex15, as Pex11 and Pex12 are not destabilized by Pex3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C74 are supported by co-immunoprecipitation data (Figure 6A), auxin-inducible degron experiments (Figure 6B-C and supplements), and Pex3 overexpression experiments (Figure 6D-E). The use of the AID system to acutely deplete Pex3 while maintaining peroxisome integrity is a strength. The specificity controls with Pex11 and Pex12 (Figure 6\u2014figure supplement 1I-J) strengthen the conclusion that Pex3 specifically protects Pex15.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Msp1 chimeras with transmembrane segments from Tom70 or Pex22 demonstrate that Msp1 localization determines substrate clearance. Tom70TMS-Msp1 localizes primarily to mitochondria and complements msp1\u0394 phenotypes, while Pex22TMS-Msp1 localizes exclusively to peroxisomes and cannot complement msp1\u0394 but efficiently clears peroxisomal Pex15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by localization data (Figure 7B), complementation assays (Figure 7C), and turnover experiments (Figure 7D-E). The chimera experiments demonstrate that Msp1's AAA domain can function at either organelle when properly localized. However, claim C82 is speculative about the mechanism of substrate binding and should be tested further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C59",
+      "C74"
+    ],
+    "result": "The authors conclude that Msp1 selects substrates based on their solitary membrane existence, as Pex3 binding converts Pex15 from an Msp1-sensitive to Msp1-resistant state at peroxisomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C59, and C74 represent the main conclusion of the manuscript. This conclusion is well-supported by the collective evidence showing: (1) exponential decay of mitochondrial Pex15 (no binding partners), (2) two-state decay of peroxisomal Pex15 (binding partners present), (3) Pex3 interaction with Pex15, and (4) immediate Msp1 sensitivity upon Pex3 depletion. The logic is sound and the data are consistent with this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on TA protein biology: TA proteins have a single C-terminal transmembrane segment and are targeted to different organelles by distinct mechanisms. The GET pathway delivers most TA proteins to the ER, while mitochondrial and peroxisomal TA proteins use poorly defined insertion mechanisms. GET pathway deletions cause growth defects, mistargeting, and aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide established background knowledge appropriately cited to prior work. These are accurate representations of the field and provide necessary context for understanding the significance of Msp1's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior work suggested that native mitochondrial TA proteins are inefficient Msp1 substrates, raising the question of whether substrates contain intrinsic recognition determinants or whether native proteins are protected by extrinsic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 accurately frame the central question addressed by this manuscript. The speculation about extrinsic factors (C84-C85) is appropriately presented as a hypothesis that the current work tests and supports.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Calculation of residual PEX15 mRNA after DOX washout: Based on the ~31 min mRNA half-life, approximately 7.3% of PEX15 mRNAs remain when imaging begins, though this likely overestimates persistence due to cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide a calculation based on published mRNA half-life data (Geisberg et al., 2014). The calculation is mathematically sound and the authors appropriately note the caveat about cell division. This supports the interpretation that the observed Pex15 decay is primarily due to protein turnover rather than continued synthesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The tandem fluorescent timer uses sfYFP (t1/2 ~10 min) and mCherry (t1/2 ~40 min) maturation kinetics to report protein age, with the mCherry:sfYFP ratio being a hyperbolic function of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe the established tandem fluorescent timer methodology with appropriate citations (Hansen and O'Shea, 2013; Khmelinskii et al., 2012). The theoretical relationship is shown in Figure 5\u2014figure supplement 1B and is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Msp1 is expressed at low levels and its prolonged overexpression causes growth defects, possibly due to hypervigilant clearance of immature complex subunits. The authors hypothesize that native mitochondrial TA proteins may be latent substrates protected by mitochondria-specific maturation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is supported by citation (Ghaemmaghami et al., 2003). Claim C93 is based on unpublished data ('data not shown'), which cannot be evaluated. Claims C94 and C95 are speculative hypotheses presented in the discussion. While these are reasonable extensions of the work, they require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors discuss alternative explanations for Pex3's role, including the possibility that Pex3 loss indirectly affects another protective protein, or that Pex3 physically occludes Msp1 binding sites. They acknowledge that other Pex15 binding partners might also confer protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 represent appropriate discussion of alternative mechanisms and caveats. The authors provide three reasons why indirect effects are unlikely (co-IP data, immediate effect of Pex3 depletion, specificity for Pex15). This demonstrates scientific rigor in considering alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The authors conclude that Msp1 joins other proteostasis pathways that degrade excess subunits of protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by the data showing that excess (overexpressed) Pex15 is degraded while stoichiometric (Pex3-bound) Pex15 is protected. This is appropriately placed in the context of other quality control pathways with relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "A complementary structure-function analysis of Msp1 was published during review (Wohlever et al., 2017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is a factual statement about a concurrent publication. This is appropriately noted and cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "C. elegans exhibits efficient directional choice during 2-nonanone avoidance, with 78.4% of runs initiated away from the odor source and 83.5% of ongoing runs directed away. This efficiency exceeds salt-taxis (59.3%) and is comparable to Drosophila larvae odor-taxis (73.9%). Animals choose appropriate directions through multiple exploratory migrations during pirouettes, which contain significantly more turns (5.2) than salt-taxis pirouettes (2.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging behavioral evidence from multi-worm tracking experiments (n=100 animals) with appropriate statistical tests (Mann-Whitney, p<0.001). The directional choice percentages are well-documented in Figure 1B, and comparisons to salt-taxis and Drosophila are supported by both new data and appropriate citations. The 'pivot-and-go' strategy is clearly distinguished from random walk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Behavioral states (pirouettes vs. runs) correlate with temporal changes in odor concentration (dCworm/dt). During pirouettes, dCworm/dt is mostly positive (animals stationary while odor increases), while during runs dCworm/dt is mostly negative (animals migrate down gradient). The relationship between responsiveness and dCworm/dt differs significantly between states, indicating they are physiologically distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by quantitative odor gradient measurements (Figure 2, Figure 2\u2014figure supplement 1) and behavioral tracking data. The correlation analysis in Figure 2D demonstrates distinct responsiveness patterns. The odor gradient measurement methodology is rigorous with gas chromatography calibration and multiple replicates (7-9 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Two distinct sensory pathways regulate odor avoidance behavior opposingly: AWB neurons respond to odor decreases by gradually activating over 90s and suppressing turns when optogenetically activated, while ASH neurons respond to odor increases and promote turns when active. Optogenetic inactivation of ASH during odor increases significantly suppresses turning rate increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 are supported by calcium imaging data (Figure 3C, 3E) and optogenetic manipulation experiments (Figure 3D, 3F) using the OSB2 system. Statistical significance is demonstrated (p<0.01 for AWB ChR2, p<0.05 for ASH Arch). The opposing regulation model is a reasonable inference from the combined data, though the neural circuit mechanisms downstream remain incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C39"
+    ],
+    "result": "ASH neurons compute time-differential responses to odor concentration increases. Responses peak rapidly after odor-up phase onset and can be approximated by dC/dt. This enables rapid, reflex-like behavioral responses to unfavorable odor changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C39 are supported by calcium imaging data across multiple dC/dt rates (Figure 4A) with mathematical modeling (Table 1). The time-differential model fits the data reasonably well, though the authors acknowledge some aspects (e.g., decay kinetics) are not perfectly captured. The rapid behavioral response correlation is demonstrated by turning rate exceeding 99% prediction intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "AWB neurons compute time-integral responses to odor concentration decreases via a leaky integrator mechanism. Calcium accumulation is gradual with rate-dependent delays (estimated basal [Ca2+]i ~60-90 nM), correlating with behavioral transitions from high- to low-turning states. The timing of behavioral transitions depends on dC/dt rate, with faster decreases causing shorter delays. This temporal integration represents 'evidence accumulation' for decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C37-C38, C40 are supported by calcium imaging across multiple dC/dt rates (Figure 4B), mathematical modeling with leaky integrator equations (Tables 2-3), and calcium concentration estimation (Figure 4\u2014figure supplement 2). The correlation between AWB activity and behavioral transitions is demonstrated with 99% prediction intervals. The BIC analysis (Table 3) shows leaky integrator fits better than simple differentiation. The 'evidence accumulation' interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Computer simulations demonstrate that temporal integration of dC/dt produces appropriate directional choice similar to real animals, while simple differentiation significantly worsens directional choice (p<0.001, Mardia-Watson-Wheeler test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by computational modeling (Figure 5) with appropriate statistical comparison. The simulation parameters are based on measured behavioral statistics. However, the model is simplified (e.g., sinusoidal head movement is less complex than reality), and the authors acknowledge this limitation. The result supports the functional importance of temporal integration but doesn't prove it's the only mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Temporal integration in AWB neurons occurs within the neuron itself and does not require recurrent synaptic circuits, as demonstrated by preserved AWB responses in unc-13 and unc-31 mutants that abolish synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by calcium imaging in unc-13 and unc-31 mutants (Figure 6A, Table 2) showing responses fitted by the same leaky integrator equations as wild-type. This is a critical mechanistic finding distinguishing single-cell from circuit-based integration. The genetic approach is appropriate, though the authors note these mutations affect 'most, if not all' neurons, leaving some uncertainty about completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C41"
+    ],
+    "result": "ODR-3 G\u03b1 protein plays a time-differential role in AWB sensory signaling. In odr-3 mutants, the time-differential property is degraded (\u0394t >60s vs 1s in wild-type) while time-integral property is preserved. ODR-3 is homologous to inhibitory G\u03b1i proteins and may function in an inhibitory feed-forward loop to compute time-differentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C41 are supported by calcium imaging in two odr-3 alleles (Figure 6B, Figure 6\u2014figure supplement 1A) with mathematical modeling showing better fits with long \u0394t (Table 2, Table 4). The inhibitory feed-forward loop model is speculative but reasonable given ODR-3's homology to G\u03b1i (cited to Bargmann 2006 and Alon 2007). The finding that time-integral property is preserved while time-differential is lost is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Calcium accumulation in AWB neurons depends primarily on influx through EGL-19 L-type VGCCs. The egl-19 reduction-of-function mutation and EGL-19 antagonist Nemadipine-A significantly affect AWB responses, while mutations in unc-2 (N-type), itr-1 (IP3R), or unc-68 (RyR) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by genetic and pharmacological experiments (Figure 7A, 7C). The selective requirement for EGL-19 is demonstrated by multiple approaches. Statistical significance is shown (p<0.001, Kruskal-Wallis with Steel-Dwass). However, the claim that calcium accumulation 'mostly depends' on EGL-19 is an inference from loss-of-function data; quantitative contribution is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ASH response consists of fast and slow components. EGL-19 suppression affects the later phase but not the initial response. The fast component is not mediated by typical VGCCs (unc-2, cca-1 mutations have no effect) but may involve unidentified calcium channels. Both components are amplified by CICR via ITR-1 and UNC-68, which partially affect magnitude but not temporal pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by genetic and pharmacological experiments (Figure 7B, 7C, 7D). The two-component model is supported by mathematical reconstruction (Figure 7D). However, the 'unidentified calcium channels' for the fast component remain speculative\u2014the negative results with unc-2 and cca-1 don't prove other channels are involved. The CICR amplification is well-supported by multiple approaches (itr-1, unc-68 mutations and dantrolene).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C43"
+    ],
+    "result": "C. elegans olfactory behavior comprises discrete behavioral choice based on dC/dt (pirouette vs. run states), analogous to evidence accumulation in mammalian perceptual decision-making. Both involve temporal integration of sensory information for decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C43 synthesize the behavioral and neural findings into a decision-making framework. The discrete state transitions are well-documented (C9-C10, Figure 2D). The analogy to mammalian decision-making is supported by appropriate citations (Gold and Shadlen 2007, Schall 2001) and is conceptually reasonable given the temporal integration mechanism. However, this remains an interpretive framework rather than direct evidence of homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "L-type VGCCs are activated continuously during depolarization, unlike N/P/Q-type or T-type VGCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by citation to established knowledge (Hille 2001). This is accurate general knowledge about VGCC biophysics that supports the authors' model for how EGL-19 mediates gradual calcium accumulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C52",
+      "C53"
+    ],
+    "result": "In higher animals, temporally integrating neural activity for decision-making and working memory is generally considered to be mediated by recurrent neural circuits, though intracellular mechanisms (NMDA receptors, CAN channels, VGCCs) have been proposed theoretically but not demonstrated experimentally prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C52-C53 accurately represent the state of the field based on appropriate citations (Gold and Shadlen 2007, Wang 2008, Curtis and Lee 2010, Major and Tank 2004). This contextualizes the novelty of the authors' finding of single-cell temporal integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Background knowledge and prior work establishing: C. elegans odor avoidance behavior and navigation strategies; decision-making mechanisms in mammals and invertebrates; AWB and ASH neuron functions; calcium signaling mechanisms; GCaMP3 properties; genetic tools (unc-13, unc-31, odr-3, calcium channel genes); and general neuroscience principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C94 represent background knowledge, prior work, and established facts that are appropriately cited and accurately represented. These provide essential context for interpreting the current findings. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  }
+]

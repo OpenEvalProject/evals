@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study used 38 household surveys from 24 sub-Saharan African countries (2006-2014), comprising 155,369 observations of two-week fever prevalence and RDT diagnostic outcomes for P. falciparum in children from 10,606 locations. RDT-based diagnostics were chosen over microscopy to better capture two-week infection status due to persistence of histidine-rich protein II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C68-C72 provide clear documentation of data sources, sample sizes, and methodological rationale for using RDT over microscopy. The choice is justified by citation (C71) and the data aggregation procedure is explicitly described. This forms a solid foundation for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Two key covariates were developed: PfPR0-5 (derived from existing Malaria Atlas Project data with age-standardization and RDT transformation) and a novel environmental suitability surface for background fever constructed using a boosted regression tree (BRT) model with 174 non-collinear predictor variables from an initial set of 986 environmental and sociodemographic covariates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 describe a methodologically sound covariate construction process with appropriate citations for existing methods, clear description of the BRT approach, and reasonable procedures for handling collinearity (correlation >0.7). The novelty of the background fever suitability surface (C74) is explicitly stated and the modeling approach is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A hierarchical Bayesian multinomial model was developed using GMRF approximation with spatial leave-one-out cross-validation on 75% of data (7,954 points) and holdout validation on 25% (2,652 points). Model validation using probability integral transform diagnostics showed good calibration with uniform histogram distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 describe appropriate model validation procedures with spatial holdout selection to avoid clustering bias. The use of probability integral transform diagnostics (C90-C91) with visual confirmation (Figure 1\u2014figure supplement 1) provides evidence of model calibration. The GMRF approximation and TMB fitting are standard approaches properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C92"
+    ],
+    "result": "All-cause fever prevalence in 2014 was 31.0% across stable P. falciparum transmission zones, increasing from 27.0% in 2006. Country-level estimates showed substantial heterogeneity, with Niger (53.4%), Gabon (44.9%), and Nigeria (42.8%) having highest prevalence, while Swaziland (4.60%), Eritrea (5.3%), and Somalia (10.1%) had lowest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 present model-derived estimates with specific numerical values and temporal trends. The mapped predictions (C92, Figure 1) provide visual confirmation of spatial heterogeneity. However, no confidence intervals or uncertainty estimates are provided in the text for these point estimates, which limits assessment of precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C93",
+      "C94"
+    ],
+    "result": "In 2014, only 28.0% of fevers in P. falciparum-infected children under five were causally attributable to malaria (down from 36.1% in 2006), meaning most fevers among malaria-positive children are caused by non-malaria illnesses. Geographic variation was substantial, with attribution fractions ranging from 14.7% (Niger) to 86.9% (Swaziland).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C36-C37 present the core finding that malaria attribution is much lower than malaria positivity. The temporal decline and geographic heterogeneity (supported by Figures 2-3, C93-C94) are well-documented. The inference that most malaria-positive fevers are non-malarial (C37) follows logically from the 28% attribution fraction, though co-infections complicate simple causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C60",
+      "C61",
+      "C95"
+    ],
+    "result": "Age significantly affects malaria-attributable fever probability. For all children under five, MAF probability increases with PfPR0-5 but with decreasing gradient. Children under two years show linear increase with PfPR0-5, while older children (2-4 years) show lower probability at high PfPR (>30%), likely due to acquired immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C60-C61 describe age-stratified relationships supported by Figure 4 (C95). The differential patterns by age are plausible and the immunity explanation (C61) is appropriately cited. However, the model specification for age effects is not fully detailed in the methods, and the claim about linear vs. non-linear relationships would benefit from statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C96"
+    ],
+    "result": "In 2014, 35.7% of all fevers were accompanied by RDT-patent P. falciparum infection (declining from 48.5% in 2006). Country variation ranged from 1.4% (Ethiopia) to 71.0% (Central African Republic). This contrasts sharply with the 10.0% of all fevers causally attributable to malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 document malaria-positive fever prevalence with clear temporal trends and geographic variation. The key insight (C96, Figure 5) highlighting the disparity between malaria-positive (35.7%) and malaria-attributable (10.0%) fevers is central to the paper's argument about surveillance bias. The estimates are internally consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C97"
+    ],
+    "result": "Non-malarial febrile illness (NMFI) comprised 90.0% of all fevers in 2014 (up from 82.5% in 2006), with substantial country variation. In 2014, approximately 1 in 4 children experienced NMFI in a two-week period, compared to only 1 in 32 with malaria-attributable fever. Malaria-coincident fevers within NMFI declined from 37.6% (2006) to 28.6% (2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 present comprehensive NMFI estimates with temporal trends and geographic variation (Figure 6, C97). The 1-in-4 vs. 1-in-32 comparison (C45-C46) effectively communicates the relative burden. The breakdown of NMFI into malaria-coincident and truly malaria-negative fevers (C41-C43) adds important nuance, though the causal interpretation of coincident fevers remains complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C67"
+    ],
+    "result": "Current RDT-based malaria burden estimates may overestimate morbidity by up to two-thirds, with substantial country-level heterogeneity. Countries like Niger, Gabon, and Nigeria (where <21% of malaria-positive fevers are attributable) may be substantially overestimating malaria burden. Current WHO IMCI guidelines are likely suboptimal for non-malarial fever treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C67 present important public health implications logically derived from the core findings. The two-thirds overestimation follows from the 28% attribution fraction among malaria-positive fevers. However, these are inferences about policy implications rather than direct empirical findings, and the claim about IMCI being 'suboptimal' (C67) is somewhat speculative without direct evidence of treatment outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Model estimates of MAF prevalence are comparable to transmission model predictions of clinical incidence over 2-4 weeks (rather than 0-2 weeks), consistent with observed average fever duration of 5.38 days in survey data. Malaria-positive fevers declined from 48.5% (2006) to 35.7% (2014), linked to declining PfPR0-5, except in Gabon which showed increases in both metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide important validation against external models (Cameron et al., 2015) and internal consistency checks. The fever duration data (C51) helps explain the temporal mismatch between model estimates and transmission models. The Gabon exception (C53-C54) is appropriately noted. However, the comparison to transmission models (C50) is somewhat qualitative without formal statistical comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "This novel approach uses household survey two-week fever recall data to estimate malaria causality, though it has limitations including recall bias (varying by time, frequency, family economics, and child sex) and exclusion of P. vivax (classified as NMFI). P. vivax exclusion is unlikely to substantially affect results due to high Duffy negativity and low stable transmission in most of Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 appropriately acknowledge methodological novelty (C55) and limitations. Recall bias concerns (C56) are properly cited, and the P. vivax exclusion (C57-C58) is justified with appropriate citations about Duffy negativity and transmission patterns. These represent honest limitations that don't fundamentally undermine the findings but do affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The low prevalence of malaria-positive fevers at all endemicity levels suggests passive case detection alone may be insufficient to halt transmission. Despite universal policy adoption of parasite-based diagnosis, 35% of suspected cases in 2014 still did not receive diagnostic testing (down from 64% in 2005), primarily due to resource limitations in rural clinics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C62-C64 discuss implications for malaria control policy. The inference about passive case detection limitations (C59) is reasonable given the data on afebrile infections, though the claim is somewhat speculative. The diagnostic testing gap data (C62-C63) are properly cited to WHO sources, and the resource limitation explanation (C64) is appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "WHO 2010 guidelines increased RDT use before antimalarial treatment, but in highly endemic areas where asymptomatic malaria infections are common, fever and parasitemia are often not causally related. This leads to systematic over-reporting of clinical malaria and under-reporting of non-malarial febrile illness in surveillance systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the study's motivation through properly cited background on WHO guidelines (C1, C4) and asymptomatic infections (C2). The logical inferences about surveillance bias (C5-C6) are sound and set up the study rationale. These are primarily literature-based contextual claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Co-infections can simultaneously cause fever and modulate parasite loads and fever severity. Many non-malarial febrile illnesses have non-specific symptoms similar to malaria (e.g., pneumonia, meningitis), and routine diagnostic tests are not commonplace for many of these diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide important clinical context about co-infections and diagnostic challenges, all properly supported by citations. These establish why distinguishing malaria-attributable from coincident fevers is challenging and clinically important. However, the study does not directly address co-infections in the modeling framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior approaches to estimating malaria-attributable fractions include case-control arithmetic methods and logistic regression based on parasite density (demonstrated in Kenya, Burkina Faso, and Mozambique), as well as computational transmission simulations. Fever associated with malaria declined by half between 1986-2007, likely due to declining malaria prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide comprehensive literature review of prior methodological approaches, all properly cited. The temporal trend (C11) and speculative explanation (C12) are appropriately qualified. These establish the methodological context and novelty of the current approach but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "WWARN collects clinical evidence of NMFI from case studies across malaria-endemic regions. A review of 146 Southeast Asian case studies showed misdiagnosis and mistreatment were common outcomes for individuals co-infected with malaria and other diseases with overlapping symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 cite external evidence about NMFI diagnostic challenges and co-infection complications, properly referenced to WWARN and Acestor et al. These provide important context about the clinical significance of the study's findings but are not results of the current work.",
+    "result_type": "MINOR"
+  }
+]

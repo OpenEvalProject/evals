@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes background knowledge about transcription initiation, TSS selection variability, and the scrunching/anti-scrunching hypothesis. These claims describe the established framework and hypothesis that the study aims to test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 accurately represent established knowledge and prior hypotheses about transcription initiation and TSS selection. C1 and C2 describe well-established processes, while C3 correctly frames the scrunching/anti-scrunching hypothesis from prior work that this study tests experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TSS selection in vivo exhibits the first hallmark of scrunching: replacing a GGG discriminator with CCT causes a 2 bp downstream shift in TSS and RNAP leading-edge position without changing trailing-edge position, with exact correspondence between in vitro and in vivo crosslinking patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are well-supported by experimental data in Figure 1B showing identical crosslinking patterns in vitro and in vivo. The use of a mutationally inactivated RNAP derivative (C54-C55) to trap RPo in vivo is appropriately controlled. The data clearly demonstrate differential movement of leading vs. trailing edges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "TSS selection exhibits the second hallmark of scrunching: the 2 bp difference in RNAP-dependent DNA unwinding between CCT and GGG discriminators corresponds exactly to the 2 bp difference in TSS selection, demonstrating transcription bubble expansion/contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by single-molecule DNA nanomanipulation data in Figure 2. The deconvolution of unwinding and compaction effects using both positively and negatively supercoiled DNA is methodologically sound. The exact correspondence between unwinding differences (2 bp) and TSS differences (2 bp) provides strong evidence for the second hallmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Using primer-programmed TSS selection across a full range of positions (6-9 bp from -10 element), successive single-base-pair changes in TSS are matched by single-base-pair changes in both RNAP leading-edge position and DNA unwinding, including positions requiring anti-scrunching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are well-supported by data in Figures 3-4. The primer-programming approach elegantly tests the scrunching hypothesis across multiple TSS positions. The single-bp resolution achieved by reducing DNA fragment length (C56-C57) is appropriately validated. Critically, the data include anti-scrunching (position 6), establishing bidirectionality of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The combined protein-DNA photocrosslinking and DNA-nanomanipulation results definitively demonstrate the scrunching/anti-scrunching hypothesis for TSS selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is a justified conclusion based on the convergent evidence from multiple experimental approaches (C16-C32). Both hallmarks of scrunching are demonstrated across a range of TSS positions in vitro and in vivo, with appropriate controls and single-bp resolution. The use of complementary techniques strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Quantitative energetic analysis reveals that scrunching by 1 bp requires 0.7 kcal/mol, scrunching by 2 bp requires 1.7 kcal/mol, and anti-scrunching by 1 bp requires 1.8 kcal/mol, representing the first experimental determination of scrunching energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by primer concentration-dependence data in Figures 5-6. The coupled equilibria model (Figure 6A-C) is appropriate, and fitting procedures are described. The energetic values are internally consistent (approximately linear with bp number for scrunching). Statistical analysis with SEM is provided. The novelty claim (C38) appears justified given the literature context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The measured \u0394Gscrunch values (0-1.8 kcal/mol for positions 6-9) account for the observed range and relative utilization of TSS positions in bacterial transcription, as these values are within thermal energy fluctuations (\u22643kBT), and Boltzmann-distribution predictions match observed TSS probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are well-supported by the energetic data and comparison to genome-wide TSS distributions (C45, Figure 6F). The thermodynamic reasoning is sound: energies \u22643kBT are accessible via thermal fluctuations, while higher energies would be rare. The predicted TSS probabilities (3%, 70%, 23%, 4%) reasonably match observed values (8%, 55%, 29%, 7%) from prior comprehensive analysis, though not perfectly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors hypothesize that similar energetic costs (~0.7-1.8 kcal/mol per bp) apply to scrunching during initial transcription, potentially yielding ~7-18 kcal/mol total stress that could drive promoter escape by breaking RNAP-promoter and RNAP-initiation-factor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C41 are explicitly speculative hypotheses extending the TSS selection findings to initial transcription. While the reasoning is plausible and the energy scales are compared to known interaction energies, no direct experimental evidence for initial transcription scrunching energetics is provided. This represents an interesting but untested proposal for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors propose that TSS selection by archaeal and eukaryotic RNAPs (except S. cerevisiae RNAP II) involves scrunching/anti-scrunching driven by thermal energy, while S. cerevisiae RNAP II scanning involves additional ATP-dependent energy from TFIIH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C53 are speculative proposals based on similarities in TSS position ranges across organisms (C49, supported by citations) and known TFIIH activity (C52-C53, supported by citations). However, no direct experimental evidence for scrunching mechanisms in these other systems is provided. These are reasonable hypotheses for future testing but remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study establishes that bacterial TSS selection exhibits both hallmarks of scrunching/anti-scrunching in vitro and in vivo, defines the energetics of these processes, establishes the mechanism for bacterial RNAP, and suggests a general mechanism for all RNAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately summarize the main findings supported by the experimental data (C16-C48). C7 is a more speculative extension to other RNAP systems, which is appropriately framed as a suggestion rather than a definitive conclusion. The core bacterial RNAP mechanism is well-established by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18"
+    ],
+    "result": "The manuscript reviews established knowledge about the four promoter-sequence determinants of TSS selection, the influence of NTP concentrations and DNA topology, and prior work showing the first hallmark of scrunching in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 and C18 accurately represent prior knowledge supported by extensive citations. These provide appropriate context for the current study. C15 correctly references the authors' own prior work demonstrating the first hallmark in vitro, which the current study extends to in vivo and adds the second hallmark.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The scrunching/anti-scrunching hypothesis predicts that TSS selection at the modal position involves neither process, downstream selection involves scrunching, and upstream selection involves anti-scrunching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 accurately represents the hypothesis from prior work that the current study tests. This hypothesis is well-supported by citations and provides the conceptual framework for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The mutationally inactivated RNAP derivative \u03b2'D460A lacks the catalytic metal ion binding residue and remains trapped in RPo in vitro with the same crosslinking pattern as wild-type RNAP, enabling in vivo analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are well-supported by control experiments in Figure 1\u2014figure supplement 2. The validation that the mutant RNAP exhibits the same crosslinking pattern as wild-type in the absence of NTPs is critical for interpreting the in vivo results. This methodological development is appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Reduction of DNA fragment length from 2.0 to 1.3 kb reduces noise and enables single-bp resolution (SEM = 0.5 bp for n=30) in single-molecule DNA nanomanipulation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by data in Figure 4\u2014figure supplement 1 showing improved resolution with shorter DNA fragments. The SEM calculation and demonstration of single-bp resolution are appropriate for the primer-programmed TSS selection experiments requiring fine discrimination.",
+    "result_type": "MINOR"
+  }
+]

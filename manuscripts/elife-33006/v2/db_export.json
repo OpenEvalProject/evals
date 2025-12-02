@@ -1,0 +1,1929 @@
+{
+  "submission": {
+    "id": "6e702565-eda7-4fed-b4bd-3dfc45ab9ce5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:43:08.708557Z",
+    "updated_at": "2025-12-01T23:43:08.708557Z"
+  },
+  "content": [
+    {
+      "id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "submission_id": "6e702565-eda7-4fed-b4bd-3dfc45ab9ce5",
+      "content_type": "manuscript",
+      "content_text": "# Adult-born neurons facilitate olfactory bulb pattern separation during task engagement\n\n## Authors\n\n- Wankun L Li<sup>1</sup> ([ORCID: 0000-0002-2809-039X](https://orcid.org/0000-0002-2809-039X))\n- Monica W Chu<sup>1</sup>\n- An Wu<sup>1</sup> ([ORCID: 0000-0002-6593-3181](https://orcid.org/0000-0002-6593-3181))\n- Yusuke Suzuki<sup>3</sup>\n- Itaru Imayoshi<sup>4</sup> \u2020\n- Takaki Komiyama<sup>1</sup> ([ORCID: 0000-0001-9609-4600](https://orcid.org/0000-0001-9609-4600)) \u2020\n\n### Affiliations\n\n1. Neurobiology Section,\u00a0Center for Neural Circuits and Behavior University of California,\u00a0San Diego San Diego United States\n2. Department of Neurosciences University of California,\u00a0San Diego San Diego United States\n3. Medical Innovation Center/SK Project,\u00a0Graduate School of Medicine Kyoto University Kyoto Japan\n4. Graduate School of Biostudies Kyoto University Kyoto Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe rodent olfactory bulb incorporates thousands of newly generated inhibitory neurons daily throughout adulthood, but the role of adult neurogenesis in olfactory processing is not fully understood. Here we adopted a genetic method to inducibly suppress adult neurogenesis and investigated its effect on behavior and bulbar activity. Mice without young adult-born neurons (ABNs) showed normal ability in discriminating very different odorants but were impaired in fine discrimination. Furthermore, two-photon calcium imaging of mitral cells (MCs) revealed that the ensemble odor representations of similar odorants were more ambiguous in the ablation animals. This increased ambiguity was primarily due to a decrease in MC suppressive responses. Intriguingly, these deficits in MC encoding were only observed during task engagement but not passive exposure. Our results indicate that young olfactory ABNs are essential for the enhancement of MC pattern separation in a task engagement-dependent manner, potentially functioning as a gateway for top-down modulation.\n\n## Introduction\n\nThe brain remains plastic throughout life. A dramatic example of neural circuit plasticity during adulthood comes in the form of adult neurogenesis (Altman and Das, 1965). The subventricular zone (SVZ) is one of the two main loci in the rodent brain where adult neurogenesis takes place (Zhao et al., 2008). In the SVZ, many thousands of new neurons are produced each day throughout adulthood, and these new neurons migrate through the rostral migratory stream to the olfactory bulb (Lois and Alvarez-Buylla, 1994), the first olfactory center of the brain. Once in the olfactory bulb, about 95% of the adult-born neurons (ABNs) differentiate into granule cells (GCs) and the majority of the remaining differentiate into periglomerular cells (Lledo et al., 2006), both of which are GABAergic local inhibitory neurons. GCs inhibit mitral cells (MCs), the principal neurons of the olfactory bulb, through their dendrodendritic reciprocal connections (Isaacson and Strowbridge, 1998; Rall et al., 1966; Shepherd, 1963). This inhibition of MCs can sparsen odor representations and enhance the signal-to-noise ratio (Koulakov and Rinberg, 2011; Yokoi et al., 1995; Yu et al., 2014). Consistent with this idea, general activation of bulbar inhibitory neurons can accelerate learning (Abraham et al., 2010), while suppression of inhibitory neuron activity can increase the excitability of MCs and reduce MC pattern separation (Gschwend et al., 2015). Thus, local inhibitory neurons in the olfactory bulb, including ABNs, likely control olfactory perception by providing inhibition onto MCs.\n\nAs ABNs integrate into local circuits, they display higher levels of morphological and functional plasticity during the first ~8 weeks after their birth compared to their later mature stage (Kelsch et al., 2009; Mizrahi, 2007; Nissant et al., 2009; Sailor et al., 2016). Furthermore, the spine dynamics, synaptic plasticity, sensory response pattern, as well as survival rate of ABNs are influenced by olfactory experience during this early period (Alonso et al., 2006; Lemasson et al., 2005; Lepousez et al., 2014; Livneh et al., 2014; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Quast et al., 2017; Rochefort et al., 2002; Yamaguchi and Mori, 2005). These unique and plastic features of young ABNs make it likely that they play a unique role in the processing of the complex and dynamic olfactory environment. Indeed, some studies have shown that ABNs are essential for certain olfactory behaviors such as odor discrimination and association reversal learning (Alonso et al., 2012; Bath et al., 2008; Enwere et al., 2004; Gheusi et al., 2000; Moreno et al., 2009; Sakamoto et al., 2014). However, other studies have found little effects of ABN manipulation on odor discrimination (Breton-Provencher et al., 2009; Imayoshi et al., 2008; Lazarini et al., 2009). Thus, ABNs are not essential for all olfactory processing. Instead, the inconsistencies between these results raise the possibility that the impact of ABNs may depend on the behavioral context.\n\nConsistent with the idea that the functions of ABNs are context-dependent, local inhibitory neurons in the olfactory bulb including ABNs receive abundant glutamatergic centrifugal inputs from higher brain areas such as anterior olfactory nucleus, piriform cortex and entorhinal cortex (Balu et al., 2007; Boyd et al., 2015, 2012; Chapuis et al., 2013; Kiselycznyk et al., 2006; Markopoulos et al., 2012; Nunez-Parra et al., 2013; Otazu et al., 2015; Rothermel et al., 2014). Inhibitory neurons also express a variety of neuromodulator receptors, which provide additional avenues for top-down modulation (Castillo et al., 1999; Devore and Linster, 2012; Ma and Luo, 2012; Moreno et al., 2012; Rothermel et al., 2014; Shipley et al., 1985). Furthermore, anesthesia inactivates feedback fibers and reduces GC activity while increasing MC activity (Kato et al., 2012; Rothermel and Wachowiak, 2014). Thus, bulbar inhibitory neurons may function as a mediator of feedback regulation to shape MC odor encoding (Markopoulos et al., 2012). Consistent with this notion, it has been reported that cortical feedback can decorrelate MC odor representations (Otazu et al., 2015). Similarly, neuromodulatory projections can modulate MC activity (Rothermel and Wachowiak, 2014) and improve perceptual learning (Ma and Luo, 2012). However, the role of young ABNs in mediating context-dependent modulation of MC activity has not been fully explored.\n\nTo assess the role of ABNs in the olfactory bulb, we adopted a genetic method to inducibly suppress adult neurogenesis. We reasoned that this chronic ablation allows us to probe for the functions of ABNs which cannot be compensated for by other inhibitory neurons. Behavioral experiments showed that ABN ablation animals were impaired in fine, but not coarse, odor discrimination. Neither suppression of hippocampal ABNs alone nor non-selective ablation of a comparable number of bulbar neurons caused the same behavioral deficit, highlighting the unique importance of young ABNs. Two-photon calcium imaging revealed that the behavioral deficit was accompanied by a decreased separation of MC ensemble responses to similar odorants in ablation animals. This decreased separation was largely due to a reduction in suppressive odorant responses by MCs. Interestingly, this difference in suppressive responses was only observed when animals were actively engaged in the task.\n\n## Results\n\n### Ablation of adult-born neurons\n\nTo investigate the role of adult neurogenesis in olfactory processing, we adopted the transgenic mouse line Gfap-tk (Snyder et al., 2011). In this line, herpes simplex virus Thymidine Kinase (TK) is expressed under the Glial Fibrillary Acidic Protein (GFAP) promoter, rendering mitotic neural stem cells sensitive to the antiviral drug Valganciclovir (VGCC) (Figure 1A). This gives us a means to specifically suppress adult neurogenesis in an inducible manner.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig1-v2.jpg)\n\n**Figure 1.:** (A) Pharmacogenetic ablation of ABNs. Valganciclovir (VGCC) induces apoptosis of Gfap-expressing mitotic neural stems cells, blocking the generation of ABNs. (B) Experimental timeline. Adult mice underwent 8 weeks of VGCC treatment before starting the behavioral task and imaging. (C,D) VGCC administration results in a near-complete ablation of ABNs in the olfactory bulbs of Gfap-tk+ (ablation) mice. (C) BrdU labeling of olfactory bulbs of Gfap-tk- (control) and ablation mice administered with VGCC. Green: BrdU; Blue: DAPI; MCL: mitral cell layer; GCL: granule cell layer; EPL: external plexiform layer. Right: quantification of the BrdU-labeled cell density in control (n = 4, black) and ablation (n = 4, red) (p<0.0001, Wilcoxon rank sum test). Asterisks represent means. (D) Doublecortin (DCX) labeling of immature neurons in the olfactory bulbs showed similar results to BrdU labeling. Green: DCX; Blue: DAPI. (E) VGCC administration in ablation mice does not affect the density of GFAP astrocytes in the olfactory bulb. Left: GFAP immunostaining of astrocytes in the olfactory bulbs of control mice (left panel) and ablation mice (right panel) after 8 weeks of continuous treatment of VGCC. Arrows show examples of GFAP astrocyte cell bodies. Green: GFAP; Blue: DAPI. Right: No significant difference in the density of GFAP astrocytes in VGCC-administered control mice (n = 3, black) and ablation mice (n = 3, red) (mean \u00b1S.E.M.; p=0.9911, Wilcoxon rank sum test). Asterisks represent means. (F) Open field test shows no deficiency in mobility in ablation mice (n = 8, red) compared to controls (n = 8, black). All error bars: mean \u00b1S.E.M. Left: average speed (cm/s) (p=1.0000, Wilcoxon rank sum test). Right: fraction of time spent in the center area (p=0.7984, Wilcoxon rank sum test).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Left: GFAP immunostaining of astrocytes in the dentate gyrus of control mice (upper panel) and ablation mice (lower panel) after 8 weeks of continuous treatment of VGCC. Arrowheads show examples of GFAP astrocyte cell bodies. Green: GFAP; Blue: DAPI. Right: No significant difference in the density of GFAP astrocytes in VGCC-administered control mice (n = 3, black) and ablation mice (n = 3, red) (mean \u00b1S.E.M.; p=0.1359, Wilcoxon rank sum test). Asterisks represent means.\n\nWe sought to investigate the consequences of eliminating young ABNs that are 8 weeks old and younger. To achieve this, we treated Gfap-tk mice with VGCC, starting 8 weeks prior to the beginning of the behavioral experiments and continuing throughout the duration of the experiments (Figure 1B). Hereafter we refer to these animals as the \u2018ablation\u2019 animals. The ablation of adult neurogenesis in the olfactory bulb was nearly complete, shown by post-hoc BrdU labeling (p<0.0001, Wilcoxon rank sum test, Gfap-tk+ vs. Gfap-tk-; Figure 1C) as well as immunostaining for Doublecortin, a marker for immature neurons (Figure 1D). Importantly, there was no difference in the density of GFAP-positive astrocytes in VGCC-treated Gfap-tk+ and Gfap-tk- mice in the olfactory bulb (p=0.9911, Wilcoxon rank sum test; Figure 1E) nor in the hippocampus dentate gyrus (p=0.1359, Wilcoxon rank sum test), consistent with a previous report (Snyder et al., 2011). Another previous report also showed that regeneration of olfactory sensory neurons is intact in this mouse line (Cummings et al., 2014). Ablation mice showed no obvious general health impairment, and demonstrated mobility and anxiety levels comparable to control mice in an open field test (average speed: p=1.0000, center time fraction: p=0.7984, Wilcoxon rank sum test; Figure 1F).\n\n### ABN ablation impairs fine odor discrimination\n\nEquipped with this effective and specific method of inducible adult neurogenesis ablation, we explored how the absence of young ABNs could affect olfactory behavior. We compared the behavioral performance of the ablation animals and littermate controls (control: n = 22; ablation: n = 23). Both groups were treated identically including VGCC administration, and experimenters were blind to their genotypes during experiments. Mice were trained in a two-alternative-choice olfactory discrimination task under head-fixation. In this task, a certain odorant was delivered in each trial for 4 s, followed by an answer period of 2 s during which mice were required to lick -either the left or right port according to the odorant cue to receive a water reward (Figure 2A). Mice were trained daily, one session per day, and each session consisted of 144.4 \u00b1 17.4 trials for the control group and 146.4 \u00b1 13.8 trials for the ablation group.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig2-v2.jpg)\n\n**Figure 2.:** (A) Trial structure. (B) Easy discrimination task. Mice are trained to lick left in response to H80E20 (a mixture of 80% heptanal and 20% ethyl-tiglate) and lick right to H20E80. (C) Number of sessions required to reach expertise (>80% success rate) in the easy discrimination task. There is no significant difference between control (n = 22) and ablation (n = 23) groups (p=0.4523, Wilcoxon rank sum test). Learning curves are not shown since each animal was trained until expertise, resulting in varying durations of training. (D) Difficult discrimination task. One of the eight mixtures is presented pseudorandomly in each trial. (E) Fraction of correct trials over 10 sessions in the difficult discrimination task. Ablation animals exhibit impaired learning compared to control animals (p(group)<0.0001, p(session)<0.0001, two-way ANOVA). Both groups had equal and chance-level success rate in the test session with identical H50E50 mixtures, indicating that they were using odorants to guide their choice (described in Results). (F) Fraction of trials with answers (correct or incorrect) throughout the difficult task sessions. There is no difference between control and ablation (p=0.4101, two-way ANOVA). (G) Control and ablation had comparable lick rates during reward consumption (p=0.1036, two-way ANOVA). All error bars: mean \u00b1S.E.M.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Easy 8-odorant discrimination task. One of the eight mixtures is presented pseudorandomly in each trial. (B) Fraction of correct trials out of answered trials in the last session with the easy 2-odorant discrimination and the first session with the easy 8-odorant discrimination. There is no difference between two sessions for both control and ablation (control: n = 7, p=0.5350, ablation: n = 6, p=0.2229, Wilcoxon rank sum test; mean \u00b1S.E.M.), and the overall performance in the easy 8-odorant discrimination task is significantly better than in the difficult 8-odorant discrimination task (p(task)<0.0001, three-way ANOVA).\n\nAfter the initial pre-training period (Materials and methods), mice were trained in a relatively easy discrimination task in which mice were required to discriminate between conspicuously different binary mixtures (Left lick: 80% heptanal and 20% ethyl-tiglate (80H20E); right lick: 20% heptanal and 80% ethyl-tiglate (20H80E), all mixture percentages are of a total concentration of 100 ppm; Figure 2B). Both ablation and control animals achieved expertise in this task (defined as >80% success rate) in equivalent durations of training (number of sessions, control: 4.18 \u00b1 0.21, ablation: 4.39 \u00b1 0.25, mean \u00b1S.E.M; p=0.4523, Wilcoxon rank sum test; Figure 2C). Thus, we conclude that young ABNs are not required for the performance of this easy discrimination task.\n\nGiven these results, we asked whether finer discrimination would reveal a deficit caused by ABN ablation. To address this question, we devised a difficult discrimination task in which 1 of 8 very similar mixtures, each with slightly varying ratios of ethyl-tiglate and heptanal, was presented in each trial. Four of the eight mixtures signaled left lick trials, while the other four mixtures signaled right lick trials (Figure 2D). After mice achieved expertise in the easy discrimination task, they were trained with this difficult discrimination task over 10 sessions. Although the performance of control animals was initially at chance level, it consistently improved over 10 sessions to achieve a success rate of 0.760 \u00b1 0.017 in session 10. In contrast, ablation animals showed slower learning (comparison of linear regression slopes in individual animals, p=0.0100, Wilcoxon rank sum test), and their performance was significantly lower than that of the control animals (p(group)<0.0001, p(session)<0.0001, two-way ANOVA; Figure 2E).\n\nThe deficits observed in ablation animals were unlikely due to problems in motivation or licking ability, as both groups had the comparable fractions of answered trials (control vs. ablation, p(group)\u00a0=\u00a00.4101, two-way ANOVA; Figure 2F) and the comparable licking rates during reward consumption (control vs. ablation, p(group)\u00a0=\u00a00.1036, two-way ANOVA; Figure 2G). To confirm that mice were performing the task by using odorant stimuli as the cues and not other cues (such as potential differences in sounds of different odorant valves), we performed an additional session after the 10th session. In this test session, all odorants were replaced with the same 50H50E mixture while the contingency between odorant valves and correct lick side was maintained. The performance of both groups dropped to chance level in the test session (control: p=0.7241, ablation: p=0.6925, t test with chance level (0.5); Figure 2E, \u201850:50\u2019), indicating that they were indeed relying on odorants as the cue. As an additional control, we trained a separate cohort of mice (control: n = 7; ablation: n = 6). After the pre-training with easy 2-odorant discrimination, these mice were trained with another version of 8-odorant discrimination task in which we used eight highly distinct mixture ratios (\u2018easy 8-odorant discrimination\u2019; Figure 2\u2014figure supplement 1A). On the first day of training with the easy 8-odorant discrimination task, both control and ablation animals performed similarly, at the level equivalent to the easy 2-odorant discrimination (control: p=0.5350, ablation: p=0.2229, Wilcoxon rank sum test), which was significantly better than the first session of difficult 8-odorant discrimination (p(task)<0.0001, 3-way ANOVA; Figure 2\u2014figure supplement 1B). Therefore, the deficits of ablation animals in the difficult 8-odorant discrimination were due to the requirement of fine discrimination and not due to the complexity of 8 different mixtures. In conclusion, mice without young ABNs are impaired in the difficult discrimination task requiring fine odorant discrimination.\n\n### Suppression of hippocampal postnatally-born neurons alone or random ablation of GCs did not impair fine discrimination\n\nThe results above suggest that ABNs in the olfactory bulb are critical for fine odorant discrimination. However, the dentate gyrus (DG) of hippocampus is the other major niche for adult neurogenesis (Gon\u00e7alves et al., 2016; Ming and Song, 2011), and the Gfap-tk method suppresses adult neurogenesis in both the SVZ and DG. To address this issue, we adopted another transgenic method previously described that could specifically suppress postnatally-born DG neurons (mGfap-Cre::Slc17a7-LoxP-STOP-LoxP-tetanus neurotoxin (LSL-TeNT), hereafter referred to as \u2018DG suppression\u2019, Slc17a7 is also known as vGlut1, which is expressed in excitatory DG granule cells but not in inhibitory OB GCs) (Sakamoto et al., 2014). As ABNs are a subset of postnatally-born DG neurons, this DG suppression method targeted a much larger fraction (more than one third) of DG neurons (Figure 3\u2014figure supplement 1a and b). Supporting the effective expression of TeNT in a large fraction of DG granule cells, immunostaining signal for VAMP2 in the mossy fiber terminals in CA3 was significantly reduced in the DG suppression mice (Figure 3\u2014figure supplement 1c). These results are consistent with the idea that the \u2018DG suppression\u2019 strategy effectively suppressed most, if not all, of postnatally-born DG granule cells including DG ABNs, even though it is difficult to directly demonstrate the inhibition of synaptic release from all DG ABNs.\n\nDuring the same easy and difficult discrimination tasks described in Figure 2, the DG suppression mice showed comparable performance to the control group in both easy and difficult discrimination tasks (control vs. DG suppression; easy discrimination: number of sessions to reach expertise, p=0.8407, Wilcoxon rank sum test; difficult discrimination: p(group)=0.2663, p(session)<0.0001, 2-way ANOVA; mean \u00b1S.E.M.; Figure 3A,B). These results indicate that DG postnatally-born neurons that include ABNs are not essential for fine olfactory discrimination and the behavioral impairment in Gfap-tk+ ablation group was primarily caused by the absence of ABNs in the olfactory bulb. We do note, however, that a formal possibility remains that a small fraction of DG ABNs that may have been spared in the \u2018DG suppression\u2019 method may partially contribute to the behavioral deficits of the Gfap-tk+ ablation group.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig3-v2.jpg)\n\n**Figure 3.:** (A,B) Behavioral performance of control (black) vs. hippocampal DG postnatally-born neuron suppression (red) groups. (A) Number of sessions required to reach expertise (>80% success rate) for the easy discrimination task. There is no significant difference between control (n = 7) and DG suppression (n = 8) groups (p=0.8047, Wilcoxon rank sum test). (B) Fraction of correct trials over 10 sessions in the difficult discrimination task. There is no significant difference between control (n = 7) and DG suppression groups (n = 8; p(group)=0.2663, two-way ANOVA). (C,D) Quantification of GCL neuron reduction after VGCC treatment. (C) Post hoc DAPI (blue) labeling shows that after ~2 months of VGCC treatment, Gfap-tk+ (right) ablation group have a lower cell density in the GCL compared to Gfap-tk- (left) controls. (D) GCL cell density in control (n = 3, black) and ablation (n = 4, red). Asterisks represent means. On average, density (ablation)/density (control) = 89.98%, indicating that there was a 10.02% reduction in cell density. (E,F,G) Random cell ablation in GCL by injecting a combination of AAV2/1-CMV-Cre and AAV2/1-EF1a-FLEX-taCasp viruses caused a reduction in cell density, without changing the GCL size or affecting olfactory adult neurogenesis. (E) DAPI labeling 10 days after right OB unilateral injection shows a reduced cell density in GCL of the injected right OB (right) compared to the uninjected left OB (left). Blue: DAPI. (F) Post hoc quantification of GCL DAPI signal density 1.5 months after 300 nl (n = 4, dark blue) or 500 nl (n = 7, light blue) viral cocktail bilateral injection compared to uninjected control (n = 7) (injected vs. unjected control: p<0.0001; Wilcoxon rank sum test). Asterisks represent means. (G) There is no difference in GCL width with or without viral ablation (injected vs. uninjected control: p=0.9499; Wilcoxon rank sum test). Asterisks represent means.. (H,I) Random ablation method did not affect olfactory adult neurogenesis. (H) Doublecortin (DCX) labeling of immature neurons in uninjected (left) or injected (right) OBs 10 days after right OB unilateral injection. Green: DCX. (I) Average DCX signal intensity of RMS-periRMS area in the OB. There is no difference between un-injected and injected OBs (p=0.9015, Wilcoxon rank sum test), indicating that the injections did not affect subsequent adult neurogenesis. Dark blue: 300 nl injection; light blue: 500 nl injection. (J,K) Behavioral performance of random GCL cell ablation group (blue, n = 11), compared to control (black) and ABN ablation (red) groups shown in Figure 2C,E. (J) Number of sessions required to reach expertise (>80% success rate) for the easy discrimination task. There is no significant difference between random ablation group and control or ABN ablation groups (random ablation vs. control: p=0.4430; random ablation vs. ABN ablation: p=0.9846; Wilcoxon rank sum test). (K) Fraction of correct trials in the difficult discrimination task. For all 10 sessions, random ablation group is significantly different from other two groups (random ablation vs. control, p<0.0001; random ablation vs. ABN ablation, p<0.0001). For sessions 1\u20135, random ablation is worse than control (p=0.0124), but not different from ABN ablation (p=0.2528); for sessions 6\u201310, random ablation is better than ABN ablation (p<0.0001), but not different from control (p=0.2575). Mean \u00b1S.E.M., two-way ANOVA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Hippocampal section of a mGfap-Cre::R26-CAG-LoxP-HA-mTFP1 mouse (Imayoshi et al., 2012). Targeted neurons are labeled with mTFP1. Green: mTFP1; red: NeuN. Left: hippocampus; right: DG granule cell layer. (B) The fractions of targeted neurons in control (mGfap-Cre::R26-CAG-LoxP-HA-mTFP1) and suppression (mGfap-Cre::vGlut1-LSL-TeNT::R26-CAG-LoxP-HA-mTFP1) groups are comparable (p=0.6012, Student's t-test; mean \u00b1S.E.M.), with both much higher than that of ABN ablation. Our ABN ablation lasts no more than 3 months (Figure 1B), with an estimation of <10% cell loss in the DG (Imayoshi et al., 2008). (C) Hippocampal sections of control and suppression mice stained for VAMP2 antibody. Arrows indicate the mossy fibers in CA3 which consist of DG granule cell axons. The suppression mouse shows a marked decrease in VAMP2 staining, indicating the functional expression of TeNT in many DG granule cells.\n\nNext we considered two alternative possibilities underlying the behavioral deficit in the ablation animals. First, it is possible that ablation of any inhibitory neurons in the olfactory bulb may lead to similar deficits. Second, olfactory fine discrimination may be particularly sensitive to ABN ablation. To distinguish these possibilities, we sought to ablate a random subset of GCs regardless of their age. To this goal, we first estimated the degree of neuron loss in the ABN ablation animals by quantifying cell density in the granule cell layer (GCL) using DAPI labeling. This indicated a 10.02% reduction of total cell numbers through ABN ablation by the end of the behavioral tasks (control: n = 3, ablation: n = 4; Figure 3C,D). To achieve a similar level of neuron ablation without specifically targeting ABNs (\u2018random ablation\u2019), we bilaterally injected a mixture of diluted AAV2/1-CMV-Cre and AAV2/1-EF1a-FLEX-taCaspase3 (Yang et al., 2013) into the center of the olfactory bulb. Post hoc DAPI staining and quantification ~1 month after injections revealed a 19.66% reduction in GCL cell density compared with un-injected animals (injected (n = 11) vs. un-injected control (n = 7): p<0.0001, Wilcoxon rank sum test; Figure 3E,F), with no significant change in the width of GCL (injected vs. un-injected control: p=0.9499, Wilcoxon rank sum test; Figure 3G). Thus, our random ablation eliminated a larger number of cells than our ABN ablation. Importantly, we found no change in Doublecortin immunostaining, indicating that our random ablation did not affect subsequent adult neurogenesis (injected (n = 7) vs. uninjected (n = 7) control, p=0.9015, Wilcoxon rank sum test; Figure 3H,I). We trained these random ablation animals starting at 1 month after the injections. Random ablation animals exhibited normal performance in the easy discrimination task (control vs. random ablation, number of sessions to reach expertise, p=0.4430, Wilcoxon rank sum test; mean \u00b1S.E.M., Figure 3J). In the difficult discrimination task, the random ablation group initially showed slower learning than the control group, but they eventually reached the performance level that was statistically indistinguishable from the controls and significantly better than ABN ablation animals (Sessions 1\u201310: random ablation (n = 11) vs. control (n = 22), p=0.0034, random ablation vs. ABN ablation, p<0.0001; Sessions 1\u20135: random ablation vs. control, p=0.0039, random ablation vs. ABN ablation, p=0.4405; Sessions 6\u201310: random ablation vs. control, p=0.2028, random ablation vs. ABN ablation, p<0.0001; 2-way ANOVA; mean \u00b1S.E.M.; Figure 3K). Together with the observation that the random ablation eliminated more cells than in ABN ablation, these results support the notion that young ABNs have a privileged role in mediating fine olfactory discrimination.\n\n### ABN ablation affects MC population coding during difficult discrimination\n\nTo investigate the neural basis of the impaired discrimination in ABN ablation animals, we monitored the activity of MCs in ablation and control animals using two-photon calcium imaging. We utilized the transgenic mouse line Cdhr1-Cre (Cdhr1 is also known as Pcdh21), which expresses Cre specifically in the olfactory bulb principal neurons. We injected AAV1-hsyn-FLEX-GCaMP6f in the right olfactory bulb of Gfap-tk+/-::Cdhr1-Cre (ablation) or Gfap-tk-/-::Cdhr1-Cre (control, littermates) animals to specifically express GCaMP6f in mitral/tufted cells (Figure 4A). After training with the easy discrimination task, these mice were trained with the difficult discrimination task while we imaged the ensemble activity of MCs (control: n = 12, ablation: n = 10; Figure 4B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of the olfactory bulb. AAV2/1-flex-GCaMP6f was injected into the olfactory bulb to express GCaMP6f in mitral/tufted cells in both control (Gfap-tk-/-::Cdhr1-Cre) and ablation (Gfap-tk+/-::Cdhr1-Cre) animals. VGCC was administered continuously to both groups, resulting in ABN ablation in the ablation group (right) but not control group (left). (B) Imaging timeline. After the pretraining period, mice were trained with the easy discrimination task until they reached expertise (>80% fraction correct within a session). The mice were then trained to perform the 8-odorant difficult discrimination task for 10 sessions with two-photon imaging on sessions 1, 3, 5, 7 and 9. (C) A field of the same mitral cell (MC) population on first day of imaging (left) and 8 days later (right). (D) Odorant responses (mean \u00b1S.E.M.) of six example MCs during the first day of the difficult discrimination task. Pink areas denote the 4 s odorant period. Red and blue dots indicate significant excitatory and suppressive responses respectively. (E) Population decoder accuracy during the difficult discrimination task in ablation animals (n = 10) is significantly worse than control animals (n = 12) (mean \u00b1S.E.M., p<0.05, two-way ANOVA). Black broken line indicates the chance level (0.125). (F) Table of contrast values between odorant pairs for the eight odorants used in the difficult discrimination task. Different color shades in the boxes match with the binning of the contrast values in G. (G) Pairwise decoder accuracy during the difficult discrimination task plotted as a function of binned odorant pair contrasts (mean \u00b1S.E.M.). Control is significantly better than ablation for smaller contrasts (\u22643, p<0.001, two-way ANOVA) but not for larger contrasts (>3, p=0.2530, two-way ANOVA). (H) Behavioral performance in session 9 correlates with decoder accuracy of the session (mean \u00b1S.E.M., p<0.05, Pearson correlation).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pairwise decoder accuracy during the difficult discrimination task plotted as a function of binned odorant pair contrasts (see Figure 4F and G). Odorant pairs are further separated into the pairs associated with the same (solid lines) or different (broken lines) lick sides (mean \u00b1S.E.M.). The decoder performance was not affected by whether the two odorants were associated with the same or different lick sides (control: p=0.4727, ablation: p=1.0000, same vs. different associations in the bin \u2018contrast = 2\u20133\u2019, Wilcoxon rank sum test).\n\nIndividual MCs showed odorant-specific responses with an increase or decrease in GCaMP6f fluorescence (Figure 4D). To quantify the discriminability of the eight mixtures by the MC ensembles, we performed decoder analysis (Chu et al., 2016) which attempts to decode the odorant on each trial based on the population activity of individual MCs during the odorant period (Materials and methods). If the decoded odorant matched the actual odorant, the trial was scored as correct. We found that decoder accuracy was significantly better than chance (0.125) in both control and ablation groups (control: p<0.001, ablation: p<0.001, Student\u2019s t-test; Figure 4E). However, the decoder accuracy was higher in control animals than in ablation animals (control vs. ablation, p(group)<0.05, two-way ANOVA; Figure 4E). These results indicate that MC responses to different mixtures are more ambiguous in ablation animals than in control. Next we asked whether the separation of mitral cell odor representations is sensitive to the similarity of odor mixtures. To address this, we performed a pairwise decoder analysis in which we built a decoder to decode the mixture identity for each pair of the eight mixtures. Here we defined the \u2018contrast\u2019 between each pair of mixtures as the difference in the percentage of heptanal (Figure 4F). For example, the contrast between 52H48E and 48.5H51.5E is 3.5 (=52\u201348.5). We found that within each of the control and ablation groups, there was a positive correlation between pairwise decoder accuracy and the contrast between the mixtures (control: r = 0.1862, p<0.01, ablation: r = 0.3029, p<0.0001, Pearson correlation; Figure 4G). Although the decoder performance of the control group was generally better than the ablation group, the difference was more prominent in mixture pairs with smaller contrasts (\u22643) (control vs. ablation, pairs with contrasts \u22643: p(group)<0.001, pairs with contrasts >3: p(group)=0.2530, two-way ANOVA; Figure 4G). These results suggest that ABN ablation causes the separation of MC population responses to similar odorants to be less robust, possibly underlying the behavioral deficits in fine discrimination. Consistent with this notion, the decoder accuracy of individual animals positively correlated with their behavioral performance (p<0.05, Pearson correlation; Figure 4H).\n\nWe next asked whether the categorical associations with the left or right lick side influenced the MC population responses. To investigate this, we analyzed the decoder performance based on the difference (\u2018contrast\u2019) between the two odorants and whether the two odorants were associated with the same or different lick sides (Figure 4\u2014figure supplement 1). The decoder performance was better when the two odorants were more distinct. However, the decoder performance was not affected by whether the two odorants were associated with the same or different lick sides (control: p=0.4727, ablation: p=1.0000, same vs. different associations in the bin \u2018contrast = 2\u20133\u2019, Wilcoxon rank sum test; Figure 4\u2014figure supplement 1). Thus, in our dataset, we found no evidence that MC responses categorized odorants based on the associated choices.\n\n### ABNs are essential for suppressive responses of mitral cells\n\nTo investigate the basis for the decreased decoder accuracy in ABN ablation animals, we analyzed the responses of individual mitral cells to the eight mixtures. We quantified two measures; the first is the fraction of MCs that responded to at least one mixture, and the second is the fraction of responsive MC-odorant pairs out of all MC-odorant pairs. We found that the fraction of MCs responsive to at least one mixture and the fraction of responsive MC-odorant pairs were both consistently lower in ablation animals compared to control (control vs. ablation, fraction of cells: p<0.001, fraction of cell-odorant pairs: p<0.01, two-way ANOVA; Figure 5A). As a MC can respond to an odorant with increased or decreased activity, we next quantified excitatory and suppressive responses separately. This analysis showed that the excitatory response fraction was not significantly affected by ABN ablation (control vs. ablation, fraction of cells: p=0.0813, fraction of cell-odorant pairs: p=0.6039, two-way ANOVA; Figure 5B). Instead, the decreased responses in ablation animals were primarily due to decreases in suppressive responses (control vs. ablation, fraction of cells: p<0.0001, fraction of cell-odorant pairs: p<0.0001, two-way ANOVA; Figure 5C), suggesting that the net effect of ABNs on MC ensembles is inhibitory.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig5-v2.jpg)\n\n**Figure 5.:** Control: n = 12; ablation: n = 10. Mean \u00b1S.E.M. (A) MCs with either excitatory or suppressive responses. Fraction of MCs: p<0.001; fraction of MC-odorant pairs: p<0.01. (B) MCs with excitatory responses. Fraction of MCs: p=0.0813; fraction of MC-odorant pairs: p=0.6039. (C) MCs with suppressive responses. Fraction of MCs: p<0.0001; fraction of MC-odorant pairs: p<0.0001. All p values are for two-way ANOVA, control vs. ablation. Note that a given MC can have excitatory responses to some odorants and suppressive responses to others, and thus the total response is not necessarily a sum of excitatory and suppressive.\n\nThe decrease in suppressive but not excitatory responses of MCs in ablation animals raises the possibility that the decreased suppressive responses may underlie the reduced decoder accuracy in ablation animals. Therefore we explored the relationships of excitatory and suppressive MC responses with decoder accuracy and behavior. We found that the fraction of total (excitatory and suppressive) responses positively correlates with decoder accuracy (fraction of cells: p<0.01, fraction of cell-odorant pairs: p<0.01, Pearson correlation) and behavioral performance (cells: p<0.01; cell-odorant pairs: p<0.05; Figure 6A,B). When we only included excitatory responses, however, this relationship was not significant (decoder accuracy, cells: p=0.2089, cell-odorant pairs: p=0.1272; performance, cells: p<0.05, cell-odorant pairs: p=0.1459; Figure 6C left and Figure 6D left). Instead, the fraction of suppressive responses significantly correlated with both decoder accuracy and behavioral performance (decoder accuracy, cells: p<0.01, cell-odorant pairs: p<0.01; performance, cells: p<0.05, cell-odorant pairs: p<0.05; Figure 6C right and Figure 6D right). Together these results suggest that young ABNs are essential for high levels of suppressive responses of MCs, which significantly contribute to odorant discriminability by MC population responses.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig6-v2.jpg)\n\n**Figure 6.:** (A) Session 9 decoder accuracy correlates with fraction of responsive MCs (left, p<0.01, Pearson correlation) and MC-odorant pairs (right, p<0.01, Pearson correlation). (B) Session 9 behavioral performance correlates with fraction of responsive MCs (left, p<0.01, Pearson correlation) and MC-odorant pairs (right, p<0.05, Pearson correlation). (C) Session 9 decoder accuracy correlates with suppressive but not excitatory MC responses. Top left: excitatory MCs, p=0.2089; bottom left: excitatory MC-odorant pairs, p=0.1272; top right: suppressive MCs, p<0.01; bottom right: suppressive MC-odorant pairs, p<0.01, Pearson correlation. (D) Session 9 behavioral performance correlates with MC suppressive responses. Top left: excitatory MCs, p<0.05; bottom left: excitatory MC-odorant pairs, p=0.1459; top right: suppressive MCs, p<0.05; bottom right: suppressive MC-odorant pairs, p<0.05, Pearson correlation.\n\n### The necessity of ABNs depends on task engagement\n\nInhibitory neurons in the olfactory bulb, including ABNs, are major targets of extensive glutamatergic and neuromodulatory projections from higher brain areas. These centrifugal projections are suggested to be sensitive to brain states (Gilbert and Sigman, 2007; Rothermel and Wachowiak, 2014). Therefore it is tempting to hypothesize that the impact of ABN functions is sensitive to behavioral states such as task engagement. We reasoned that, if this is the case, the differences in the MC responses of control and ablation animals described above would be less pronounced when the mice were not engaged in the task.\n\nTo test this idea, we performed a new experiment in which another cohort of mice were passively exposed to odorants (control passive: n = 10; ablation passive: n = 7). Except for the lack of task engagement, all the other conditions were kept identical to the task condition, including VGCC treatment, water restriction, odorant stimulation protocol, and odorant identity (4 sessions of 2 \u2018easy discrimination\u2019 odorants followed by 10 sessions of 8 \u2018difficult discrimination\u2019 odorants). Imaging was performed during the passive experience of the eight difficult discrimination odorants that are identical to the task condition. Strikingly, in this passive condition, the fractions of MCs showing excitatory and suppressive responses were no longer statistically distinguishable between ablation and control animals (control passive vs. ablation passive, fraction of cells: total, p=0.6162; excitatory, p=0.7625, suppressive, p=0.2620; fraction of cell-odorant pairs: total, p=0.2043; excitatory, p=0.8691, suppressive, p=0.0625, two-way ANOVA; Figure 7A\u2013C). These results suggest that MC responses, mainly suppressive responses, are increased in a task engagement-dependent manner. We further tested this notion with a linear regression model (Materials and methods). The interaction term for the genotype (control vs. ablation) and the condition (task vs. passive) was statistically significant for suppressive (fraction of cells: p=0.0101; fraction of cell-odorant pairs: p=0.0239), but not excitatory (fraction of cells: p=0.1162; fraction of cell-odorant pairs: p=0.7509) responses. This result indicates that the effect of task engagement on suppressive, but not excitatory, responses is significantly larger in control animals than in ablation animals, supporting a role for young ABNs in enhancing suppressive responses in a task engagement-dependent manner.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013C) Fraction of responsive MCs (top) and responsive MC-odorant pairs (bottom) during passive exposure. Control passive: n = 10; ablation passive: n = 7. Mean \u00b1S.E.M. (A) MCs with either excitatory or suppressive responses. Fraction of MCs: p=0.6162; fraction of MC-odorant pairs: p=0.2043. (B) MCs with excitatory responses. Fraction of MCs: p=0.7625; fraction of MC-odorant pairs: p=0.8691. (C) MCs with suppressive responses. Fraction of MCs: p=0.2620; fraction of MC-odorant pairs: p=0.0625. All p values are for two-way ANOVA, control passive vs. ablation passive.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33006/elife-33006-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Control behavior: n = 12; ablation behavior: n = 10; Control passive: n = 10; ablation passive: n = 7. (A) Overlay of Figures 5A\u2013Cand7A\u2013C. Mean \u00b1S.E.M. (B) P values of comparisons between each pair of groups for total, excitatory and suppressive response fractions. P values: two-way ANOVA, group effect. Green indicates statistical significance.\n\nBased on these observations, we propose that behavioral states strongly modulate MC activity and in particular suppressive responses, facilitating olfactory discrimination during task engagement. Importantly, this state-dependent enhancement of suppressive responses during task engagement requires young ABNs.\n\n## Discussion\n\nIn this study, we ablated young ABNs in adult mice and investigated the consequences on their behavior and MC activity to probe the functional significance of adult neurogenesis. To our knowledge, this is the first study to record MC activity in ABN ablation animals during a behavioral task that reveals their impaired discrimination ability. The results provide a glimpse of the specific functions of ABNs.\n\n### Behavioral consequences of adult neurogenesis ablation\n\nPrevious studies on the effect of ABN ablation on olfactory behavior have reported inconsistent results. These discrepancies may be due to differences in ablation methods as well as task demands. In this study, we adopted an inducible, genetic ablation method and we confirmed that this method almost completely eliminated ABNs. We and others also have found no evidence of non-specific effects on other cell types (Cummings et al., 2014; Snyder et al., 2011). Thus, this method can ablate young ABNs with high specificity and efficiency, allowing us to investigate its consequences on olfactory behavior and odor representations.\n\nWe established an olfactory discrimination two alternative choice task with two levels of difficulty. The operant and symmetric nature of the task allowed us to focus on the discrimination ability of individual animals, as opposed to spontaneous discrimination or asymmetric go/no-go tasks in which motivational states are difficult to control. Ablation mice were perfectly capable of discriminating conspicuously different odorants in this task, indicating that young ABNs are not necessary for basic odor processing, consistent with many previous studies. For difficult discrimination, we used eight binary mixtures of similar ratios applied pseudorandomly in each trial. Previous studies showed that tasks involving multiple similar odorants (Rinberg et al., 2006; Uchida and Mainen, 2003) delivered randomly (Zariwala et al., 2013) are more difficult than two-odorant tasks. This difficult condition revealed a robust impairment of ABN ablation animals in odor discrimination.\n\nImportantly, our ablation method affects adult neurogenesis in both SVZ and hippocampus DG. However, DG-only suppression of ABNs did not produce the deficits in olfactory discrimination. Therefore, we conclude that young ABNs in the olfactory bulb are essential for fine discrimination of odorants.\n\nAblation of any neurons in the olfactory bulb may be expected to lead to deficits in olfactory behaviors. We find that ABNs less than 10\u201312 weeks old constitute ~10% of all GCs, consistent with a previous report (Imayoshi et al., 2008). When we ablated a larger fraction (~20%) of GCs randomly without regard to their age, majority of which were presumably mature GCs, the behavioral impairment was much more subtle. These results support the notion that young ABNs have a unique role in fine olfactory discrimination. However, we acknowledge an important caveat of the random ablation experiments in that the ablation was probably concentrated closer to the injection site and largely spared periglomerular cells, while the Gfap-tk method targeted ABNs in both GC and glomerular layers.\n\n### Incorporation of inhibitory ABNs facilitate olfactory bulb pattern separation\n\nTo explore the potential neural basis underlying the behavioral impairment of ABN ablation animals, we used two-photon imaging to record the activity of populations of MCs (Kato et al., 2012) during the task performance, and analyzed data within the entire 4 s stimulus period. We are aware of the previous reports demonstrating the importance of finer time-scale dynamics of MC responses (Abraham et al., 2004; Resulaj and Rinberg, 2015; Rinberg et al., 2006; Uchida and Mainen, 2003; Wachowiak, 2011), which is not accessible with the temporal resolution of our approach. In fact, in certain reaction time tasks, the responses within the first 100 ms of odorant onset are sufficient for discrimination. However, we argue that it is unlikely that the responses within the first 100 ms of odorant onset explain the entirety of odor representations important for odor perception. This may especially be the case in conditions such as the task used here in which mice are not encouraged to react as quickly as possible. Furthermore, our approach affords a unique opportunity to record the activity of a few dozens of MCs longitudinally, allowing us to assess MC ensemble coding in ablation and control animals.\n\nWe performed MC calcium imaging during the difficult discrimination task to explore the potential neural basis underlying the behavioral impairment in ablation animals. This experiment revealed that the behavioral impairment in ablation animals accompanied a reduced separation of representations of similar odorants by MC ensembles as shown by the decoder analysis. Moreover, we found that the reduced separation of odor representations in ablation animals involved a preferential reduction of MC suppressive responses. The degree of reduction is related to the decoder performance, as the fraction of MC suppressive responses significantly correlated with the decoder accuracy and behavioral performance, supporting the importance of MC suppressive responses. Considering that ABNs exert inhibitory modulation onto MCs, these results together suggest that the ablation of ABNs caused a reduction in MC suppressive responses, which in turn affected the discriminability of MC ensembles. In normal animals, excitatory inputs from sensory neurons combined with local inhibitory control would allow MCs to respond to odorants in both excitatory and suppressive manners (Yokoi et al., 1995). The bidirectionality of responses effectively increases the dynamic range of MC responses and would contribute to an enhanced separation of representations of similar odors.\n\nConsistently, a modeling study simulated the effect of adult neurogenesis on the olfactory bulb circuitry with excitatory sensory inputs, local GC inhibition and MC outputs and predicted that a constant arrival and activity-dependent survival of ABNs are sufficient to separate MC representations of very similar odorants in an experience-dependent manner (Cecchi et al., 2001). A continuous recruitment of new ABNs allows the bulb to adapt to changes in the olfactory environment. Our current results indicate that such a mechanism is particularly sensitive to behaviorally significant experience such as engagement in difficult discrimination.\n\nA prediction of our model is that MC suppressive responses and discriminability would be less affected (more similar to control animals) in the random ablation animals than in the ABN ablation animals. We made a great effort to test this possibility, but our effort to image MC activity in random ablation animals has so far been unsuccessful. Therefore this remains a question to be addressed in the future.\n\nWe note that the decoder performance was relatively stable throughout imaging, in contrast to our recent report in which the decoder performance improved during difficult discrimination learning and correlated with behavioral choice on a trial-by-trial basis (Chu et al., 2016). The apparent discrepancy likely stems from the fact that Chu et al. investigated changes of representations of novel odorants over time, while in the current study, mice had already been familiarized with the odorants, albeit at different mixture ratios, during the easy discrimination task prior to imaging. Despite the stable decoder accuracy in our current study, the degree of separation of mitral cell responses predicted the final behavioral performance, which is consistent with a previous report (Gschwend et al., 2015). It is also noteworthy that we did not detect an effect of categorical associations with lick sides on the degree of pattern separation (Figure 4\u2014figure supplement 1). One interpretation of these results is that the olfactory bulb performs pattern separation based on the statistics of the olfactory environment (Chu et al., 2016) and not associations. The downstream areas (e.g. cortex) may be able to perform sensory-motor associations more efficiently when olfactory bulb outputs are more decorrelated. Another implication of these results is that there are likely multiple circuit origins of behavioral errors. When MC discriminability is a limiting factor for behavior, MC decoder accuracy may correlate with behavioral choice on each trial. However, in the current task, the downstream areas (e.g. olfactory cortex) and their ability to associate MC outputs with behavioral choice may be a main source of behavioral variability.\n\n### Olfactory bulb as a state-dependent filter of odorant information\n\nWe found that the abundance of MC suppressive responses is highly sensitive to behavioral states. MC suppressive responses are increased during wakefulness compared to anesthetized states, and task engagement further enhances suppressive responses. This is consistent with a previous report stating that suppressive responses in MCs became more prominent during task engagement as opposed to passive exposure (Fuentes et al., 2008). Our results further extend these findings and demonstrate that the task engagement-dependent enhancement of suppressive responses is facilitated by young ABNs. During task engagement, ABN ablation animals have fewer suppressive responses than control animals. This difference in suppressive responses was absent during passive exposure. The sensitivity to task engagement may explain the findings from a previous study that broad GC inactivation has only mild effects on MC responses under anesthesia and passive wakefulness (Fukunaga et al., 2014). It is known that ABNs receive centrifugal synaptic and neuromodulatory inputs from multiple brain areas, and these inputs can vary depending on brain states. Thus, the state-dependence of the functional role of ABNs can be better appreciated considering previously reported phenomena that synaptic inputs onto developing ABNs within different dendritic compartments formed in a sequential manner (Kelsch et al., 2008), with the formation of centrifugal inputs preceding local dendrodendritic inputs (Whitman and Greer, 2007). It has been shown that the survival rate of ABNs is sensitive to sensory experiences, which then are reflected by neuronal activities. Therefore, we postulate that ABNs that are strongly activated by centrifugal inputs may have a higher chance to survive, which can explain the state-dependent requirement of ABNs for MC suppressive responses that we have observed.\n\nThe activity of inhibitory circuits has been shown to be sensitive to behavioral states in various brain areas. Intracellular recordings from excitatory neurons in the primary visual cortex revealed that inhibitory inputs are more prevalent in the awake state than in anesthesia (Haider et al., 2013). In the primary auditory cortex, task engagement suppresses sound-evoked responses and sharpens the tuning of excitatory neurons (Lee and Middlebrooks, 2011; Otazu et al., 2009). This effect is mediated by subtype-specific modulation of local inhibitory neurons (Kuchibhotla et al., 2017). In the olfactory bulb, anesthesia suppresses local inhibitory neurons (Kato et al., 2012; Wachowiak et al., 2013). Together with the current study, these results suggest that state-dependent engagement of inhibitory circuits and suppression of excitatory responses may be a common principle conserved across brain areas.\n\nWe also note that task engagement does not only affect suppressive responses of MCs. In passive exposure, excitatory responses were also reduced compared to the task condition, although this effect was insensitive to ABN ablation (Figure 7\u2014figure supplement 1). Therefore, it appears that there are additional, ABN-independent mechanisms modulating MC responses in a state-dependent manner. These probably include various feedback systems, which can modulate MC activity and olfactory behavior (Castillo et al., 1999; Chaudhury et al., 2009; Escanilla et al., 2010; Kapoor et al., 2016; Linster et al., 2001; Ma and Luo, 2012; Nunez-Parra et al., 2013; Rothermel et al., 2014). It is likely that some of the functions of these systems are independent of ABNs.\n\nTaken together, we propose a model that task engagement increases the dynamic range of MC responses through top-down modulation from higher brain areas, which acts at least partially through young ABNs. Consistent with this notion, inactivation of piriform cortex, a main source of feedback projections to the olfactory bulb, enhances excitatory MC responses (Otazu et al., 2015), supporting the inhibitory role of cortical feedback. These dynamics of ABNs may underlie the observations that experience and learning profoundly shape the representations of odorant stimuli by olfactory bulb principal neurons (Chu et al., 2016, 2017; Doucette and Restrepo, 2008; Gschwend et al., 2015; Kato et al., 2012; Yamada et al., 2017). Thus, the olfactory bulb functions as a dynamic, adaptive filter for incoming odorant information depending on behavioral demands, and adult neurogenesis is essential for this adaptive role of the olfactory bulb.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background</td>\n      <td>Gfap-tk, ICR</td>\n      <td>PMID: 21814201</td>\n      <td></td>\n      <td>Cameron Lab</td>\n    </tr>\n    <tr>\n      <td>strain, strain background</td>\n      <td>Cdhr1-Cre, C57Bl/6</td>\n      <td>RIKEN Brain Research Center</td>\n      <td>ID_source:RBRC02189</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background</td>\n      <td>mGfap-Cre, C57Bl/6</td>\n      <td>PMID: 15494728</td>\n      <td></td>\n      <td>Sofroniew Lab</td>\n    </tr>\n    <tr>\n      <td>strain, strain background</td>\n      <td>Slc17a7-LoxP-TeNT, C57Bl/6</td>\n      <td>PMID: 24760839</td>\n      <td></td>\n      <td>Imayoshi Lab</td>\n    </tr>\n    <tr>\n      <td>transfected constrct</td>\n      <td>AAV2.1 hsyn-FLEX-GCaMP6f</td>\n      <td>Upenn Vector Core</td>\n      <td>ID_source:CS1165</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected constrct</td>\n      <td>AAV2.1-EF1a-FLEX-taCasp3-TEVp</td>\n      <td>Upenn Vector Core</td>\n      <td>ID_source:V3734TI-S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected constrct</td>\n      <td>AAV2.1-CMV-PI-Cre-rBG</td>\n      <td>Upenn Vector Core</td>\n      <td>ID_source:CS1235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>rat anti-BrdU</td>\n      <td>AbD serotec</td>\n      <td>ID_source:OBT0030</td>\n      <td>Dilution: 1:500</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>goat anti-rat Alexa 488</td>\n      <td>Thermo Fisher</td>\n      <td>ID_source:RRID:AB_2534074</td>\n      <td>Dilution: 1:1000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>goat anti-Doublecortin</td>\n      <td>Santa Cruz</td>\n      <td>ID_source:SC8066</td>\n      <td>Dilution: 1:400</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>donkey anti-goat Alexa 488</td>\n      <td>Thermo Fisher</td>\n      <td>ID_source:RRID:AB_2534102</td>\n      <td>Dilution: 1:1000</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>goat anti-GFAP</td>\n      <td>Santa Cruz</td>\n      <td>ID_source:SC6170</td>\n      <td>Dilution: 1:400</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>mouse anti-NeuN</td>\n      <td>Millipore</td>\n      <td>ID_source:MAB377</td>\n      <td>Dilution: 1:400</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>rabbit anti-VAMP2</td>\n      <td>Synaptic Systems</td>\n      <td>ID_source:104_202</td>\n      <td>Dilution: 1:500</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>DAPI</td>\n      <td>Vector Labs</td>\n      <td>ID_source:H1200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Valganciclovir</td>\n      <td>Genentech</td>\n      <td>ID_source:NDC 0004-0039-09</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>heptanal</td>\n      <td>Sigma</td>\n      <td>ID_source:111-71-7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>ethyl-tiglate</td>\n      <td>Sigma</td>\n      <td>ID_source:5837-78-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Matlab</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td>ID_source:RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Subjects\n\nAll procedures were in accordance with protocols approved by the Institutional Animal Care and Use Committee at UCSD or Kyoto University and guidelines of the National Institute of Health.\n\nFor all experiments, mice were housed in plastic cages with standard bedding in a room with a reversed light cycle (12 hr-12hr), and all experiments were performed during the dark period.\n\nAll experiments except suppression of hippocampal postnatally-born neurons were performed at UCSD. Gfap-tk mice were generous gifts from H. Cameron with ICR background. Cdhr1-Cre mice were originally acquired from RIKEN Brain Research Center and backcrossed at least four generations to C57Bl/6. Only male mice were used. All littermates were used for experiments, roughly 50% of which were positive for Gfap-tk, and the mice negative for Gfap-tk served as control. The experimenters were blinded to the genotype of each mouse until the end of the experiments. The genotypes were confirmed by both PCR and post hoc Doublecortin immunostaining, which were always consistent with each other (PCR negative mice always showed Doublecortin signals and vice versa).\n\nSuppression of hippocampal postnatally-born neurons was performed at Kyoto University. mGfap-Cre mice (Garcia et al., 2004) were crossed with Slc17a7-LSL-TeNT mice (Sakamoto et al., 2014). Both strains were maintained on the C57Bl/6 background. The experimenters were blind to the genotype of each mouse during the experiments, after which double transgenic mice were identified by PCR. Slc17a7-LSL-TeNT single transgenic mice served as control. No behavioral abnormalities were observed in the mGfap-Cre and Slc17a7-LSL-TeNT single transgenic mice. All behavioral tests were carried out with 3-months-old male mice.\n\n### Valganciclovir (VGCC) treatment\n\nVGCC (Genentech) was dissolved in drinking water at 0.63 mg/ml before water restriction, and mixed with powdered food (Harlan, Indianapolis, IN) at 0.44 mg/g during water restriction, to achieve approximately 0.1 mg/g body weight/day. Mice were 10\u201312 weeks old at the beginning of VGCC treatment.\n\n### Surgeries\n\nAfter 6 weeks of continuous VGCC treatment, mice were anesthetized with isoflurane (3% induction, 0.7\u20132% maintenance) and surgeries were performed as previously described (Kato et al., 2012). Briefly, a stainless-steel custom headplate was secured onto the skull with cyanoacrylate glue, and an optical glass window (1 \u00d7 2 mm, oval) was implanted above the right olfactory bulb craniotomy and was secured by dental cement.\n\n### Viral injection\n\nTo express GCaMP6f in mitral cells, a viral vector containing a Cre-dependent, GCaMP6f-expressing construct (AAV2.1 hsyn-FLEX-GCaMP6f, UPenn Vector Core, 1:11 diluted in saline) was injected into the craniotomy (20 nl / site, four sites, 250 \u03bcm depth).\n\nTo ablate a random subset of cells in GCL, a mixture of viruses containing Cre-expressing construct (AAV2.1-CMV-PI-Cre-rBG, UPenn Vector Core, 1:10 dilution in saline) and Cre-dependent modified Caspase3 (Yang et al., 2013), AAV2.1-EF1a-FLEX-taCasp3-TEVp, custom prep by UPenn Vector Core, 1:1 dilution in saline) was injected into the olfactory bulb (300 nl or 500 nl, one site, 0.75 mm M-L, 0.8 mm anterior from the inferior cerebral vein, 1.5 mm D-V, injection speed: 100 nl / min) through a small craniotomy. For all behavioral experiments and a subset of histology experiments, the injections were bilateral. For the other histology experiments, the injections were unilateral and the uninjected hemisphere served as control.\n\n### BrdU treatment\n\nTo validate the effectiveness of adult neurogenesis ablation, after 6 weeks of continuous VGCC treatment, mice (six control, six ablation) were treated with BrdU for three consecutive days, and were sacrificed 7 days later for immunostaining. BrdU powder was dissolved in drinking water at 1 mg/ml to achieve approximately 0.2 mg/g body weight/day.\n\n### Immunostaining and cell counting\n\n30 \u03bcm-thick olfactory bulb coronal sections were prepared with a microtome (Thermo Fisher) and mounted on pre-coated slides. Immunostaining was then performed with overnight primary antibody and 2 hr secondary antibody incubation. For BrdU staining, sections were incubated at 37\u00b0C in HCl (6% in water) for 30 min, and neutralized by borate acid buffer (0.5 M) for 10 min prior to incubation with the primary antibody. Both primary and secondary antibodies were diluted in blocking buffer (0.3% TritonX-100, 1% serum from the same species as secondary antibody, 0.1% bovine serum albumin, 0.1 M ph7.4 PBS). BrdU: primary (rat, AbD serotec, Oxford, UK, RRID: AB_10015293), 1:500, secondary (goat, Alexa 488, Thermo Fisher, Waltham, MA, RRID: AB_2534074), 1:1000. Doublecortin: primary (goat, Santa Cruz, Dallas, TX), 1:400, secondary (donkey, Alexa 488, Thermo Fisher, Waltham, MA, RRID: AB_2534102), 1:1000. GFAP: primary (goat, Santa Cruz, Dallas, TX), 1:400, secondary (same as doublecortin). NeuN: primary (mouse, Millipore, Temecula, CA), 1:400, secondary (goat, Alexa 488, Thermo Fisher, Waltham, MA, RRID: AB_2633275), 1:1000. DAPI: 1:10,000 (Invitrogen, Carlsbad, CA) for Figure 1C,D,E, and Vectashield mounting medium (Vector Labs, Burlingame, CA) for Figure 3C,E.\n\nGFAP, BrdU, NeuN and DAPI quantification was performed manually using ImageJ. Representative sections (~4 for each animal) were chosen, and in each section, four rectangle areas were selected for counting, each encompassing the entire depth of the GC layer from dorsal, ventral, medial and lateral sides where signals were relatively homogenous. For GFAP signals, only complete structures containing soma were counted. For BrdU, all clearly visible puncta were included. To measure GCL width, 3\u20134 coronal sections from the widest segment of each OB were selected, and the distances between the central line of ventricle to the mitral cell layer on both medial and lateral sides were measured using ImageJ, and then averaged.\n\n### Odorant delivery\n\nOdorants (Sigma) were diluted in mineral oil (Thermo Fisher, Waltham, MA) to a calculated vapor pressure of 200 ppm. A custom-built olfactometer mixed saturated odorant vapor 1:1 with filtered, humidified air for a final concentration of 100 ppm. Air flow rate was controlled at 1 L / min by a mass flow controller (Aalborg, Orangeburg, NY). Heptanal and Ethyl-tiglate were selected based on their structural dissimilarity and strong odorant-evoked responses in dorsal olfactory bulb.\n\n### Behavior\n\nWater restriction started ~1 week after surgery and 14\u201318 days prior to the start of behavioral training. Mice were given at least 1 ml of water per day to maintain the body weight \u226580% of the initial value. The behavioral program was controlled by a real-time system (C. Brody). Two lick ports with infrared beam detector were available for left and right licks. A correct trial (determined by the first lick during the answer period) was rewarded with ~6 \u03bcl of water. Each daily training session consisted of 150 trials unless mice disengaged earlier.\n\n#### Pre-training\n\nIn the first session, mice were rewarded for both left and right licks during a 2 s answer time. The inter-trial interval (ITI) was increased from 1 s to 3 s. In the second session, 80% Heptanal 20% Ethyl-tiglate (80H20E) mixture was delivered for 4 s in each trial, followed by a 2 s answer period during which a left lick was rewarded. Right lick during the answer period would terminate the trial without reward or punishment. ITI was increased by 3 s every ~20 trials up to 15 s and was fixed at 15 s for all the following sessions. In the following session, 20% Heptanal 80% Ethyl-tiglate (20H80E) mixture was delivered in each trial to train right licks.\n\n#### Easy discrimination\n\nOnce mice could perform correctly for >90% of 60 consecutive trials in both the left- and right-lick pre-training sessions, we began the easy discrimination task in which 80H20E and 20H80E were pseudo-randomly delivered in each trial with no more than three successive trials of the same mixture. 80H20E and 20H80E signaled left and right lick trials, respectively. Incorrect responses terminated the trials without reward or punishment. Mice were trained with this easy discrimination task until they achieved >80% success rate in an entire session.\n\n#### Difficult discrimination\n\nIn each trial, one of the eight mixtures (left lick: 54H46E, 52H48E, 51.5H48.5E and 51H49E; right lick: 49H51E, 48.5H51.5E, 48H52E, 46H54E) was pseudo-randomly delivered so that no consecutive trials were of the same mixture and each mixture was delivered at about the same frequency. Mice were trained with this difficult discrimination task for 10 sessions.\n\n#### Passive exposure\n\nA separate cohort of mice went through a passive experience paradigm, where they experienced the same odorants through the same timeline (pre-training, easy discrimination to difficult discrimination) with the same trial structure and session duration (150 trials) passively without task engagement. The number of easy discrimination sessions (4) was determined based on the median of session numbers during the task engagement experiment.\n\n#### Open field test\n\nAn open field test was performed on a subset of mice who had completed the behavioral training. An enclosed cubic box (edge: 40 cm) made with black acrylic boards was used as the open field. Each mouse was placed in the center of the box floor, and was allowed to explore freely for 5 min. An infrared camera (29 frames/s) was secured at the center of the box ceiling to record the location of the mouse. Speed, distance and location were analyzed on a frame-by-frame basis using custom code in MATLAB (RRID: SCR_001622). The center area was defined as the 20 \u00d7 20 cm area in the center of the floor.\n\n### Image acquisition\n\nTwo-photon imaging was performed with a commercial microscope (B-scope, Thorlabs, Newton, NJ) with 925 nm laser excitation (Mai-Tai, Spectra-physics, Santa Clara, CA) at the frame rate of 26\u201328 Hz. Each frame was 512 \u00d7 512 pixels with the average field of view of 546 \u00d7 467 \u03bcm. Imaging was performed continuously within each of 4000-frame (~44 s) segments, which were separated by a 6 s inter-segment interval. Trials that overlapped with these intervals were discarded. The average image from the first imaging session was used as a template to identify the same imaging field in the following sessions.\n\n### Data analysis\n\nThe image time series were first processed for full-frame motion correction with a custom program in MATLAB.\n\n#### ROIs\n\nRegions of Interest (ROIs) were manually drawn around each mitral cell with a custom MATLAB program on the average image of each session. ROIs were added or removed by comparing across all imaging sessions to make sure all analyzed cells were visible and appeared healthy in every session. A background ROI was also manually drawn in an area adjacent to each cell body ROI without cellular structures. The values of the pixels within each cell body and background ROI were averaged to generate two fluorescence time series (F). For each trial, (F(background) - mean(F(background)) was subtracted from F(cell body) to derive the final cell activity trace. The 5 s period before odorant onset was used as baseline for each trial and the activity trace for each trial was normalized to the mean of the baseline period to calculate F/F0 and dF/F. The total number of mitral cells and mice imaged were: control: 703 cells in 12 mice; ablation: 540 cells in 10 mice; control passive: 416 cells in 10 mice; ablation passive: 298 cells in seven mice.\n\n#### Defining responsive cells\n\nResponsive mitral cells were defined in each session as previously described (Chu et al., 2016) using trial traces smoothed with MATLAB 'smooth' function (smooth factor = 6). A mitral cell was classified as responsive to a given odorant mixture if both of the following criteria were met:\n\n##### Criterion 1\n\nF/F0 is significantly different by Wilcoxon rank sum test (p<0.05) between each time point (frame) of all trials and baseline frames of all trials for at least 75% of the time points within any 0.5 s time window during the 4 s odorant period.\n\n##### Criterion 2\n\nThe difference between trial-averaged F/F0 and the grand average of baseline frames of all trials exceeds 0.20 in at least one frame during the 0.5 s window that meets Criterion 1.\n\n#### Decoder analysis\n\nMitral cell population response in each trial was expressed as a population activity vector by averaging F/F0 values 0\u20132 s and 2\u20134 s of odorant period for each cell and concatenating these two values across all cells. For each mouse, every decoding process ran 100 iterations. For decoding using all mitral cells, 20 cells were randomly selected from all cells in each iteration. This number (20 cells) was decided based on the mouse with the smallest number of imaged mitral cells. \u20188-odorant decoding\u2019: in each iteration, centroids for all eight odorants were calculated by averaging activity vectors of all trials for each respective odorant excluding the test trial. Euclidian distances between the test trial and all centroids were calculated using the MATLAB function 'pdist', and the centroid with the shortest distance defined the decoded odorant. If the decoded odorant matches the actual odorant delivered for that trial, the trial was considered correctly decoded. The final decoder accuracy of each mouse was the result of averaging fraction of correctly decoded trials across 100 iterations. \u2018Pairwise decoding\u2019 (Figure 4G): the same decoder analysis was also performed in a pairwise fashion for every pair of the eight odorants in the difficult discrimination.\n\n#### Calculating correlation coefficients\n\nTo calculate correlation coefficients between behavioral performance, decoder accuracy and response level described in Figures 4Hand6, the MATLAB function 'corrcoef' was used.\n\n#### Linear regression model\n\nTo test whether the effect of task engagement on mitral cell responses is different between control vs. ablation animals, matrices (number of mice \u00d7 number of sessions) of responsive fractions for control task, ablation task, control passive and ablation passive were constructed and fit with the linear model: Responsive fraction = a \u00d7  genotype (control/ablation)\u00a0\u00a0b \u00d7  condition (task/passive)\u00a0\u00a0c \u00d7  session\u00a0\u00a0d \u00d7  genotype\u00d7condition \u00a0  e using Matlab function 'fitlm'.\n",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1d573188-0daf-47ca-ab0c-51d3b21f3021",
+      "submission_id": "6e702565-eda7-4fed-b4bd-3dfc45ab9ce5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33006.016](https://doi.org/10.7554/eLife.33006.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Adult-born neurons facilitate olfactory bulb pattern separation during task engagement\" for consideration byeLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom, Naoshige Uchida (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Florin Albeanu (Reviewer #2). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nLi and colleagues examined the role of adult neurogenesis in olfactory discrimination. The authors used transgenic mice expressing herpes simplex virus thymidine kinase (TK) under control of the glial fibrillary acidic protein (GFAP) promotor (GFAP-TK mice). TK renders mitotic cells sensitive to the antiviral drug (Valganciclovir, VGCC) while post-mitotic cells remained intact. This allowed the authors to ablate adult born neurons (ABNs) in an inducible manner while keeping other cells, such as glial cell which expresses GFAP, remained unaffected (Snyder et al., 2011). Indeed, the authors were able to suppress ABNs in the olfactory bulb (OB) almost completely.\n\nUsing this method, the authors first demonstrate that ABN ablation impaired the mice's performance in fine, but not coarse, discrimination. Interestingly, ABN ablations in the hippocampus or ablation of a similar or even greater number of random OB neurons did not affect odor discrimination performance. To link changes in neuronal responses in the OB and behavioral performance, the authors then imaged calcium signals from mitral cells (MCs) in the OB during odor discrimination performance. The authors' analysis shows that inhibitory responses of mitral cells were reduced in ABN ablation mice, and the extent of this reduction was correlated with the discriminability of population neuronal activities and the behavioral impairment in fine odor discrimination. These results together support the role of ABN neurons in refining odor representation in the OB, predominantly shaping inhibitory responses in mitral cells. The authors further present the results indicating that the requirement for ABNs is context-dependent \u2013 the relevant context is whether the animals are engaged in the task or not.\n\nIt has been proposed that adult neurogenesis plays important roles in olfactory functions, but the exact role and the mechanism underlying it remains debated and largely unknown. This study addresses these important questions, and provides very interesting results. The experiments combine a novel technique of cell ablation, two-photon calcium imaging and behavior. The results are presented and discussed in a careful manner. The manuscript was well-written and easy to follow. Together this study advances our understanding of the importance of adult neurogenesis in an olfactory function, and its neural mechanism. Although all the reviewers were very positive about the study, they raised a number of concerns and suggestions, to which we would like to see your response.\n\nEssential revisions:\n\n1) The authors performed a control experiment to ablate hippocampal ABNs to support the importance of ABNs in the OB, rather than hippocampus. It is important to demonstrate that this control experiment ablated ABNs in the hippocampus in a similar or a greater extent compared to the original experiment. Currently, no data was presented.\n\n2) Can the authors show that post-mitotic, GFAP-positive glial cells are not reduced by the manipulation?\n\n3) If the authors have imaged from mitral cells in animals where ~20% of the random GCs were ablated, this information would be useful. Specifically, it would be important to determine what is the performance of the decoders based on the MC ensemble activity in the random ablation group compared to the control. Is there a decay in the decoder accuracy, and if so, is it substantially lower compared to the ABN ablation group?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Adult-born neurons facilitate olfactory bulb pattern separation during task engagement\" for further consideration ateLife. Your revised article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The authors have addressed most of the previous concerns, and the manuscript has improved. However, the reviewers pointed out some remaining issues that should be addressed before publication as follows:\n\n1) The ablation method in the main experiment using gfap-TK ablates adult-born neurons (ABNs) not only in the olfactory bulb (OB), but also in the hippocampus. It is critical for the authors to show that the deficit in fine odor discrimination results from ABN ablation in the OB and not the hippocampus. The authors performed a new experiment to address this by inactivating neurons in the hippocampus with tetanus toxin (TeNT) in a Cre-dependent manner inmGfap-Cremice using a transgenic approach. This approach means that inactivation is not specific to ABNs but includes all postnatally-born neurons. The authors should compare the extent of ablation/inactivation focusing on ABNs, for example, by using BrdU labeling. In the OB, they were able to ablate almost all ABNs using gfap-TK. If this is true in the hippocampus, it appears very difficult to achieve comparable inactivation through their TeNT approach.\n\nThis raises two issues. First, the characterization of the control experiments without focusing on ABNs is problematic. Second, there may be a fundamental technical difficulty in achieving near complete inactivation of ABNs in the hippocampus (i.e. performing an ideal control experiment) using an available technique. If the latter is true, a viable approach would be to clarify the limitation of the control experiments explicitly in text, and carefully interpret the results. The reviewers agree that, given the significance of main results, this issue should not prevent the authors from publishing this work, provided that the authors discuss the limitation of the control experiments that they performed.\n\nAdditionally, please explain the method of this control experiment more explicitly. For instance, please spell out and explain 'LSL' and 'TeNT'. Currently, it is difficult to know what was done just by reading the main text.\n\n2) The authors show that the discriminability of odor-evoked activities in the OB correlates with behavioral performance in fine odor discrimination. This is a very interesting result and one of the core results. The reviewers previously asked the authors to perform a similar experiment in a control condition where they ablated a random population of OB neurons. Despite the authors' effort to collect this data, their experiment did not go well. The reviewers noted that this is still a salient point, and we request that the authors discuss that this issue needs to be addressed in the future.\n\n3) Although the behavioral performance keeps increasing during training, decoder accuracy does not improve. Izumi points out some potential discrepancy with their previous work (Chu et al., 2016). It is indeed possible that behavioral training induces changes in other parts of the brain, which may account for the improvement in performance during the training period. However, in Chu et al. 2016, there seems to be a clear distinction in the OB representation between correct rejection trials vs. false alarm trials. Why do they not see a consequence of behavioral improvement here? Please clarify this point.\n",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd8f8859-d338-487a-b3eb-fff96c33bff0",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C1",
+      "claim": "The rodent olfactory bulb incorporates thousands of newly generated inhibitory neurons daily throughout adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The rodent olfactory bulb incorporates thousands of newly generated inhibitory neurons daily throughout adulthood, but the role of adult neurogenesis in olfactory processing is not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by general scientific knowledge about adult neurogenesis in the olfactory bulb.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9a9542b1-165a-4c54-a164-a4cadbae1613",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C2",
+      "claim": "Mice without young adult-born neurons showed normal ability in discriminating very different odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice without young adult-born neurons (ABNs) showed normal ability in discriminating very different odorants but were impaired in fine discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data presented in Figure 2C showing no significant difference between control and ablation groups in easy discrimination task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "0eeefb52-d62c-47f5-91fd-ed936b4b66b4",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C3",
+      "claim": "Mice without young adult-born neurons were impaired in fine discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice without young adult-born neurons (ABNs) showed normal ability in discriminating very different odorants but were impaired in fine discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data in Figure 2E showing significantly lower performance in ablation animals during difficult discrimination task (p(group)<0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "37827794-94ef-4d4c-9bec-548c844731c7",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C4",
+      "claim": "Two-photon calcium imaging of mitral cells revealed that ensemble odor representations of similar odorants were more ambiguous in ablation animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two-photon calcium imaging of mitral cells (MCs) revealed that the ensemble odor representations of similar odorants were more ambiguous in the ablation animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by decoder analysis data in Figure 4E showing lower decoder accuracy in ablation animals (p(group)<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9d19d649-7039-4a10-b7bb-9b5c2b183d0c",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C5",
+      "claim": "The increased ambiguity in odor representations was primarily due to a decrease in MC suppressive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased ambiguity was primarily due to a decrease in MC suppressive responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 5C showing significantly reduced suppressive responses in ablation animals (p<0.0001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "075e56ff-0eec-4319-913f-3da442917bed",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C6",
+      "claim": "Deficits in MC encoding were only observed during task engagement but not passive exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, these deficits in MC encoding were only observed during task engagement but not passive exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 7A-C showing no significant differences between control and ablation during passive exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "a4616387-70ee-4c17-b408-38648d4258ae",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C7",
+      "claim": "Young olfactory ABNs are essential for the enhancement of MC pattern separation in a task engagement-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that young olfactory ABNs are essential for the enhancement of MC pattern separation in a task engagement-dependent manner, potentially functioning as a gateway for top-down modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined behavioral and imaging data showing task-dependent effects of ABN ablation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d6f526bb-09d3-4f72-b872-ab68ec337c57",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C8",
+      "claim": "Young olfactory ABNs potentially function as a gateway for top-down modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that young olfactory ABNs are essential for the enhancement of MC pattern separation in a task engagement-dependent manner, potentially functioning as a gateway for top-down modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the task-dependent effects and known centrifugal inputs to ABNs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9a6be7d8-19a5-42dd-8fe6-fc16a71adfa8",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C9",
+      "claim": "The subventricular zone (SVZ) is one of the two main loci in the rodent brain where adult neurogenesis takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "The subventricular zone (SVZ) is one of the two main loci in the rodent brain where adult neurogenesis takes place (Zhao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "81971e61-f329-43a8-ae28-92e99e98e689",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C10",
+      "claim": "New neurons produced in the SVZ migrate through the rostral migratory stream to the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SVZ, many thousands of new neurons are produced each day throughout adulthood, and these new neurons migrate through the rostral migratory stream to the olfactory bulb (Lois and Alvarez-Buylla, 1994), the first olfactory center of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lois and Alvarez-Buylla, 1994.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "766d559a-baa4-4115-b449-5527059ff58e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C11",
+      "claim": "About 95% of adult-born neurons differentiate into granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in the olfactory bulb, about 95% of the adult-born neurons (ABNs) differentiate into granule cells (GCs) and the majority of the remaining differentiate into periglomerular cells (Lledo et al., 2006), both of which are GABAergic local inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lledo et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "0549c9ae-4c91-424a-852e-b978284b16eb",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C12",
+      "claim": "The majority of the remaining adult-born neurons differentiate into periglomerular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in the olfactory bulb, about 95% of the adult-born neurons (ABNs) differentiate into granule cells (GCs) and the majority of the remaining differentiate into periglomerular cells (Lledo et al., 2006), both of which are GABAergic local inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lledo et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "7ba66000-1bd7-4eab-b487-ee67aec9c71d",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C13",
+      "claim": "Both granule cells and periglomerular cells are GABAergic local inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in the olfactory bulb, about 95% of the adult-born neurons (ABNs) differentiate into granule cells (GCs) and the majority of the remaining differentiate into periglomerular cells (Lledo et al., 2006), both of which are GABAergic local inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the neurotransmitter phenotype of these cell types.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "bbb95ca6-253c-47f9-a88e-c2f816d2916f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C14",
+      "claim": "Granule cells inhibit mitral cells through dendrodendritic reciprocal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "GCs inhibit mitral cells (MCs), the principal neurons of the olfactory bulb, through their dendrodendritic reciprocal connections (Isaacson and Strowbridge, 1998; Rall et al., 1966; Shepherd, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Isaacson and Strowbridge, 1998; Rall et al., 1966; Shepherd, 1963.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "574463cf-e329-4ec0-9f33-57317ab78e55",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C15",
+      "claim": "Inhibition of MCs can sparsen odor representations and enhance the signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibition of MCs can sparsen odor representations and enhance the signal-to-noise ratio (Koulakov and Rinberg, 2011; Yokoi et al., 1995; Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koulakov and Rinberg, 2011; Yokoi et al., 1995; Yu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "537dcd64-407e-489d-b7e4-92e38dc315b5",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C16",
+      "claim": "General activation of bulbar inhibitory neurons can accelerate learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, general activation of bulbar inhibitory neurons can accelerate learning (Abraham et al., 2010), while suppression of inhibitory neuron activity can increase the excitability of MCs and reduce MC pattern separation (Gschwend et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Abraham et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "789ce8fe-9920-415c-872b-c4894850b038",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C17",
+      "claim": "Suppression of inhibitory neuron activity can increase the excitability of MCs and reduce MC pattern separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, general activation of bulbar inhibitory neurons can accelerate learning (Abraham et al., 2010), while suppression of inhibitory neuron activity can increase the excitability of MCs and reduce MC pattern separation (Gschwend et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gschwend et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "36ab4919-3a1f-4f57-a68b-2e759795983f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C18",
+      "claim": "ABNs display higher levels of morphological and functional plasticity during the first ~8 weeks after their birth compared to their later mature stage.",
+      "claim_type": "EXPLICIT",
+      "source": "As ABNs integrate into local circuits, they display higher levels of morphological and functional plasticity during the first ~8 weeks after their birth compared to their later mature stage (Kelsch et al., 2009; Mizrahi, 2007; Nissant et al., 2009; Sailor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelsch et al., 2009; Mizrahi, 2007; Nissant et al., 2009; Sailor et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8b042289-3686-414e-821b-8f1662221880",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C19",
+      "claim": "The spine dynamics, synaptic plasticity, sensory response pattern, and survival rate of ABNs are influenced by olfactory experience during the early period.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the spine dynamics, synaptic plasticity, sensory response pattern, as well as survival rate of ABNs are influenced by olfactory experience during this early period (Alonso et al., 2006; Lemasson et al., 2005; Lepousez et al., 2014; Livneh et al., 2014; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Quast et al., 2017; Rochefort et al., 2002; Yamaguchi and Mori, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies showing experience-dependent plasticity of ABNs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "93f302cf-5ab1-4fa2-b82b-0c2e0db54ebe",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C20",
+      "claim": "Some studies have shown that ABNs are essential for certain olfactory behaviors such as odor discrimination and association reversal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, some studies have shown that ABNs are essential for certain olfactory behaviors such as odor discrimination and association reversal learning (Alonso et al., 2012; Bath et al., 2008; Enwere et al., 2004; Gheusi et al., 2000; Moreno et al., 2009; Sakamoto et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "20480ba2-b1b0-4d9f-9f48-792a7508507f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C21",
+      "claim": "Other studies have found little effects of ABN manipulation on odor discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have found little effects of ABN manipulation on odor discrimination (Breton-Provencher et al., 2009; Imayoshi et al., 2008; Lazarini et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing minimal effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "aa8ff2f9-a798-44af-a2ff-46e24e96879c",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C22",
+      "claim": "ABNs are not essential for all olfactory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ABNs are not essential for all olfactory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the inconsistent results in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "e301af8a-4a7f-4c5a-8a2c-e1c435d24a2c",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C23",
+      "claim": "The impact of ABNs may depend on the behavioral context.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the inconsistencies between these results raise the possibility that the impact of ABNs may depend on the behavioral context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain inconsistent findings in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "29bfbfee-d452-4f21-88c3-a9eda5465f09",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C24",
+      "claim": "Local inhibitory neurons in the olfactory bulb including ABNs receive abundant glutamatergic centrifugal inputs from higher brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that the functions of ABNs are context-dependent, local inhibitory neurons in the olfactory bulb including ABNs receive abundant glutamatergic centrifugal inputs from higher brain areas such as anterior olfactory nucleus, piriform cortex and entorhinal cortex (Balu et al., 2007; Boyd et al., 2015, 2012; Chapuis et al., 2013; Kiselycznyk et al., 2006; Markopoulos et al., 2012; Nunez-Parra et al., 2013; Otazu et al., 2015; Rothermel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting centrifugal inputs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "72cb1484-b6fd-48c2-a89e-7c3978e90196",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C25",
+      "claim": "Inhibitory neurons express a variety of neuromodulator receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons also express a variety of neuromodulator receptors, which provide additional avenues for top-down modulation (Castillo et al., 1999; Devore and Linster, 2012; Ma and Luo, 2012; Moreno et al., 2012; Rothermel et al., 2014; Shipley et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing neuromodulator receptor expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c350ccf4-06a8-4326-9e3f-0cec18e3ed38",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C26",
+      "claim": "Anesthesia inactivates feedback fibers and reduces GC activity while increasing MC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, anesthesia inactivates feedback fibers and reduces GC activity while increasing MC activity (Kato et al., 2012; Rothermel and Wachowiak, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kato et al., 2012; Rothermel and Wachowiak, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "24fafcce-4e8d-48e2-8dde-06bb3342b3d8",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C27",
+      "claim": "Bulbar inhibitory neurons may function as a mediator of feedback regulation to shape MC odor encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, bulbar inhibitory neurons may function as a mediator of feedback regulation to shape MC odor encoding (Markopoulos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to Markopoulos et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c69c0c0f-08eb-4f2d-b54f-529237c26e31",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C28",
+      "claim": "Cortical feedback can decorrelate MC odor representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, it has been reported that cortical feedback can decorrelate MC odor representations (Otazu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Otazu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b93fe2f6-8921-4064-8d7e-0f73b1a14b11",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C29",
+      "claim": "Neuromodulatory projections can modulate MC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, neuromodulatory projections can modulate MC activity (Rothermel and Wachowiak, 2014) and improve perceptual learning (Ma and Luo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rothermel and Wachowiak, 2014; Ma and Luo, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c5365abf-48bc-4b5c-b0b8-d3d7fd3be156",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C30",
+      "claim": "Neuromodulatory projections can improve perceptual learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, neuromodulatory projections can modulate MC activity (Rothermel and Wachowiak, 2014) and improve perceptual learning (Ma and Luo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ma and Luo, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "416ae797-81a7-42c8-b4ac-bd8023d6e50f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C31",
+      "claim": "VGCC administration results in a near-complete ablation of ABNs in the olfactory bulbs of Gfap-tk+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The ablation of adult neurogenesis in the olfactory bulb was nearly complete, shown by post-hoc BrdU labeling (p<0.0001, Wilcoxon rank sum test, Gfap-tk+ vs. Gfap-tk-; Figure 1C) as well as immunostaining for Doublecortin, a marker for immature neurons (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU and Doublecortin immunostaining data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "6059d3f0-04cb-434b-9ab3-c5f6a4cf99bb",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C32",
+      "claim": "There was no difference in the density of GFAP-positive astrocytes in VGCC-treated Gfap-tk+ and Gfap-tk- mice in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no difference in the density of GFAP-positive astrocytes in VGCC-treated Gfap-tk+ and Gfap-tk- mice in the olfactory bulb (p=0.9911, Wilcoxon rank sum test; Figure 1E) nor in the hippocampus dentate gyrus (p=0.1359, Wilcoxon rank sum test), consistent with a previous report (Snyder et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GFAP immunostaining data in Figure 1E and citation to Snyder et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1cdc8f48-ba0a-4379-a7fc-7b497ce594b4",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C33",
+      "claim": "There was no difference in the density of GFAP-positive astrocytes in VGCC-treated Gfap-tk+ and Gfap-tk- mice in the hippocampus dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no difference in the density of GFAP-positive astrocytes in VGCC-treated Gfap-tk+ and Gfap-tk- mice in the olfactory bulb (p=0.9911, Wilcoxon rank sum test; Figure 1E) nor in the hippocampus dentate gyrus (p=0.1359, Wilcoxon rank sum test), consistent with a previous report (Snyder et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test result and citation to Snyder et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "45b9135e-c77d-4b93-abb8-7c7f85e53d33",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C34",
+      "claim": "Regeneration of olfactory sensory neurons is intact in the Gfap-tk mouse line.",
+      "claim_type": "EXPLICIT",
+      "source": "Another previous report also showed that regeneration of olfactory sensory neurons is intact in this mouse line (Cummings et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cummings et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1f735eda-f815-4af8-913b-790d494e5acd",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C35",
+      "claim": "Ablation mice showed no obvious general health impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation mice showed no obvious general health impairment, and demonstrated mobility and anxiety levels comparable to control mice in an open field test (average speed: p=1.0000, center time fraction: p=0.7984, Wilcoxon rank sum test; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by open field test data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "4fca76bc-409f-48b3-924e-728c17d12de5",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C36",
+      "claim": "Ablation mice demonstrated mobility and anxiety levels comparable to control mice in an open field test.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation mice showed no obvious general health impairment, and demonstrated mobility and anxiety levels comparable to control mice in an open field test (average speed: p=1.0000, center time fraction: p=0.7984, Wilcoxon rank sum test; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by open field test data in Figure 1F showing no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c0317437-0fce-418e-895e-d8a852165ab9",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C37",
+      "claim": "Both ablation and control animals achieved expertise in the easy discrimination task in equivalent durations of training.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ablation and control animals achieved expertise in this task (defined as >80% success rate) in equivalent durations of training (number of sessions, control: 4.18 \u00b1 0.21, ablation: 4.39 \u00b1 0.25, mean \u00b1S.E.M; p=0.4523, Wilcoxon rank sum test; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 2C showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "bb2bf346-e484-4ffb-ac23-21c9bf73db01",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C38",
+      "claim": "Young ABNs are not required for the performance of the easy discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that young ABNs are not required for the performance of this easy discrimination task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral data showing equivalent performance in easy discrimination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "64c3cec8-28fd-4323-87c3-6b93844d93f1",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C39",
+      "claim": "Ablation animals showed slower learning in the difficult discrimination task compared to control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the performance of control animals was initially at chance level, it consistently improved over 10 sessions to achieve a success rate of 0.760 \u00b1 0.017 in session 10. In contrast, ablation animals showed slower learning (comparison of linear regression slopes in individual animals, p=0.0100, Wilcoxon rank sum test), and their performance was significantly lower than that of the control animals (p(group)<0.0001, p(session)<0.0001, two-way ANOVA; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 2E showing significantly different learning curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "997d9c86-320f-46fa-8e69-340e402cb296",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C40",
+      "claim": "The performance of ablation animals was significantly lower than that of control animals in the difficult discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the performance of control animals was initially at chance level, it consistently improved over 10 sessions to achieve a success rate of 0.760 \u00b1 0.017 in session 10. In contrast, ablation animals showed slower learning (comparison of linear regression slopes in individual animals, p=0.0100, Wilcoxon rank sum test), and their performance was significantly lower than that of the control animals (p(group)<0.0001, p(session)<0.0001, two-way ANOVA; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 2E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "21ff778e-e3e9-4223-9d6e-3725d5c42062",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C41",
+      "claim": "Both control and ablation groups had comparable fractions of answered trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The deficits observed in ablation animals were unlikely due to problems in motivation or licking ability, as both groups had the comparable fractions of answered trials (control vs. ablation, p(group) = 0.4101, two-way ANOVA; Figure 2F) and the comparable licking rates during reward consumption (control vs. ablation, p(group) = 0.1036, two-way ANOVA; Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2F showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "abf34639-750b-4d3f-af1b-45a3d8cca9a4",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C42",
+      "claim": "Both control and ablation groups had comparable licking rates during reward consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The deficits observed in ablation animals were unlikely due to problems in motivation or licking ability, as both groups had the comparable fractions of answered trials (control vs. ablation, p(group) = 0.4101, two-way ANOVA; Figure 2F) and the comparable licking rates during reward consumption (control vs. ablation, p(group) = 0.1036, two-way ANOVA; Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2G showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d07278f5-245c-4fe9-a095-89e0b0820704",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C43",
+      "claim": "Mice were relying on odorants as the cue in the discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of both groups dropped to chance level in the test session (control: p=0.7241, ablation: p=0.6925, t test with chance level (0.5); Figure 2E, '50:50'), indicating that they were indeed relying on odorants as the cue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by test session data in Figure 2E where performance dropped to chance when all odorants were replaced with the same mixture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "70a0e066-6dc5-4a7e-9739-dc043ec44091",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C44",
+      "claim": "The deficits of ablation animals in the difficult 8-odorant discrimination were due to the requirement of fine discrimination and not due to the complexity of 8 different mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the deficits of ablation animals in the difficult 8-odorant discrimination were due to the requirement of fine discrimination and not due to the complexity of 8 different mixtures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison with the easy 8-odorant discrimination task shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "21e9758f-25f7-40e2-ad0b-9686b9cd8664",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C45",
+      "claim": "Mice without young ABNs are impaired in the difficult discrimination task requiring fine odorant discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, mice without young ABNs are impaired in the difficult discrimination task requiring fine odorant discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b1bbc04e-763b-4d65-be8b-2a3fa82f8616",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C46",
+      "claim": "The DG suppression mice showed comparable performance to the control group in both easy and difficult discrimination tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "During the same easy and difficult discrimination tasks described in Figure 2, the DG suppression mice showed comparable performance to the control group in both easy and difficult discrimination tasks (control vs. DG suppression; easy discrimination: number of sessions to reach expertise, p=0.8407, Wilcoxon rank sum test; difficult discrimination: p(group)=0.2663, p(session)<0.0001, 2-way ANOVA; mean \u00b1S.E.M.; Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 3A,B showing no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9916985f-79ed-40bb-9c67-435a08d4f421",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C47",
+      "claim": "DG postnatally-born neurons that include ABNs are not essential for fine olfactory discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that DG postnatally-born neurons that include ABNs are not essential for fine olfactory discrimination and the behavioral impairment in Gfap-tk+ ablation group was primarily caused by the absence of ABNs in the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the DG suppression behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "82f2fecf-93ac-47e9-a443-9435ed5ed82f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C48",
+      "claim": "The behavioral impairment in Gfap-tk+ ablation group was primarily caused by the absence of ABNs in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that DG postnatally-born neurons that include ABNs are not essential for fine olfactory discrimination and the behavioral impairment in Gfap-tk+ ablation group was primarily caused by the absence of ABNs in the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing Gfap-tk ablation with DG-specific suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "ea3ca681-53fc-488e-9ded-7b4e39e79b6d",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C49",
+      "claim": "After ~2 months of VGCC treatment, Gfap-tk+ ablation group have a 10.02% reduction in GCL cell density compared to Gfap-tk- controls.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated a 10.02% reduction of total cell numbers through ABN ablation by the end of the behavioral tasks (control: n = 3, ablation: n = 4; Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by DAPI quantification data in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "afb6f624-3432-460e-a356-5c1f9a4e0310",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C50",
+      "claim": "Random ablation eliminated a 19.66% reduction in GCL cell density compared with un-injected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc DAPI staining and quantification ~1 month after injections revealed a 19.66% reduction in GCL cell density compared with un-injected animals (injected (n = 11) vs. un-injected control (n = 7): p<0.0001, Wilcoxon rank sum test; Figure 3E,F), with no significant change in the width of GCL (injected vs. un-injected control: p=0.9499, Wilcoxon rank sum test; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by DAPI quantification data in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "14ab6238-bf59-4dbd-bc2c-c3d11e05492e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C51",
+      "claim": "Random ablation did not affect subsequent adult neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found no change in Doublecortin immunostaining, indicating that our random ablation did not affect subsequent adult neurogenesis (injected (n = 7) vs. uninjected (n = 7) control, p=0.9015, Wilcoxon rank sum test; Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Doublecortin immunostaining data in Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "07bf5773-3d3c-4519-946d-6b3fcf312e21",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C52",
+      "claim": "Random ablation animals exhibited normal performance in the easy discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Random ablation animals exhibited normal performance in the easy discrimination task (control vs. random ablation, number of sessions to reach expertise, p=0.4430, Wilcoxon rank sum test; mean \u00b1S.E.M., Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b0cec15a-2c87-4bf2-a38f-c6e22833bac9",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C53",
+      "claim": "The random ablation group initially showed slower learning than the control group in the difficult discrimination task, but eventually reached performance level statistically indistinguishable from controls and significantly better than ABN ablation animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the difficult discrimination task, the random ablation group initially showed slower learning than the control group, but they eventually reached the performance level that was statistically indistinguishable from the controls and significantly better than ABN ablation animals (Sessions 1\u201310: random ablation (n = 11) vs. control (n = 22), p=0.0034, random ablation vs. ABN ablation, p<0.0001; Sessions 1\u20135: random ablation vs. control, p=0.0039, random ablation vs. ABN ablation, p=0.4405; Sessions 6\u201310: random ablation vs. control, p=0.2028, random ablation vs. ABN ablation, p<0.0001; 2-way ANOVA; mean \u00b1S.E.M.; Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data in Figure 3K with detailed statistical comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "6713d479-004c-47d8-bbc2-c357b5b055e6",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C54",
+      "claim": "Young ABNs have a privileged role in mediating fine olfactory discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the observation that the random ablation eliminated more cells than in ABN ablation, these results support the notion that young ABNs have a privileged role in mediating fine olfactory discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing ABN ablation with random ablation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8fdad89e-6fa8-4af9-b5a9-1c297fadfd65",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C55",
+      "claim": "Decoder accuracy was significantly better than chance in both control and ablation groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decoder accuracy was significantly better than chance (0.125) in both control and ablation groups (control: p<0.001, ablation: p<0.001, Student's t-test; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoder analysis data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "3d70c1f6-5c8e-4c0e-9c9c-5dad5f23df5a",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C56",
+      "claim": "The decoder accuracy was higher in control animals than in ablation animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the decoder accuracy was higher in control animals than in ablation animals (control vs. ablation, p(group)<0.05, two-way ANOVA; Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoder analysis data in Figure 4E showing significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9694eb4e-bd05-46c3-9efc-a4f2e30e6806",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C57",
+      "claim": "MC responses to different mixtures are more ambiguous in ablation animals than in control.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that MC responses to different mixtures are more ambiguous in ablation animals than in control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the decoder accuracy results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "40a47ad8-5a69-4c3a-941d-f82d22c4906b",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C58",
+      "claim": "Within each of the control and ablation groups, there was a positive correlation between pairwise decoder accuracy and the contrast between the mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that within each of the control and ablation groups, there was a positive correlation between pairwise decoder accuracy and the contrast between the mixtures (control: r = 0.1862, p<0.01, ablation: r = 0.3029, p<0.0001, Pearson correlation; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pairwise decoder analysis data in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "2fbc7c2c-4dc4-490b-8934-a77085eba9da",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C59",
+      "claim": "The difference in decoder performance between control and ablation was more prominent in mixture pairs with smaller contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the decoder performance of the control group was generally better than the ablation group, the difference was more prominent in mixture pairs with smaller contrasts (\u22643) (control vs. ablation, pairs with contrasts \u22643: p(group)<0.001, pairs with contrasts >3: p(group)=0.2530, two-way ANOVA; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pairwise decoder analysis data in Figure 4G showing contrast-dependent differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8726bba6-3e1f-4c6c-97a5-2daa7b0a4607",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C60",
+      "claim": "ABN ablation causes the separation of MC population responses to similar odorants to be less robust.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ABN ablation causes the separation of MC population responses to similar odorants to be less robust, possibly underlying the behavioral deficits in fine discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the decoder analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "241a69c7-3311-4c89-8491-b73ed84daae1",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C61",
+      "claim": "The decoder accuracy of individual animals positively correlated with their behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, the decoder accuracy of individual animals positively correlated with their behavioral performance (p<0.05, Pearson correlation; Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d51657aa-9747-4720-8539-db5162f0337f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C62",
+      "claim": "The decoder performance was not affected by whether the two odorants were associated with the same or different lick sides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the decoder performance was not affected by whether the two odorants were associated with the same or different lick sides (control: p=0.4727, ablation: p=1.0000, same vs. different associations in the bin 'contrast = 2\u20133', Wilcoxon rank sum test; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by decoder analysis data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c04da52f-7a0e-4418-9719-b4ea0ba45b09",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C63",
+      "claim": "The fraction of MCs responsive to at least one mixture was consistently lower in ablation animals compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of MCs responsive to at least one mixture and the fraction of responsive MC-odorant pairs were both consistently lower in ablation animals compared to control (control vs. ablation, fraction of cells: p<0.001, fraction of cell-odorant pairs: p<0.01, two-way ANOVA; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by response fraction data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "a059fa34-710a-4cb9-9077-2ca55c3ac98a",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C64",
+      "claim": "The fraction of responsive MC-odorant pairs was consistently lower in ablation animals compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of MCs responsive to at least one mixture and the fraction of responsive MC-odorant pairs were both consistently lower in ablation animals compared to control (control vs. ablation, fraction of cells: p<0.001, fraction of cell-odorant pairs: p<0.01, two-way ANOVA; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by response fraction data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "48d6425e-c624-4a91-b78c-fb0fd3d1144e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C65",
+      "claim": "The excitatory response fraction was not significantly affected by ABN ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that the excitatory response fraction was not significantly affected by ABN ablation (control vs. ablation, fraction of cells: p=0.0813, fraction of cell-odorant pairs: p=0.6039, two-way ANOVA; Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by excitatory response data in Figure 5B showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "2665e1d6-cbf2-4428-9949-d40db624db4e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C66",
+      "claim": "The decreased responses in ablation animals were primarily due to decreases in suppressive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the decreased responses in ablation animals were primarily due to decreases in suppressive responses (control vs. ablation, fraction of cells: p<0.0001, fraction of cell-odorant pairs: p<0.0001, two-way ANOVA; Figure 5C), suggesting that the net effect of ABNs on MC ensembles is inhibitory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by suppressive response data in Figure 5C showing significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c288a03b-89a7-4d6f-a680-2106d8a42137",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C67",
+      "claim": "The net effect of ABNs on MC ensembles is inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the decreased responses in ablation animals were primarily due to decreases in suppressive responses (control vs. ablation, fraction of cells: p<0.0001, fraction of cell-odorant pairs: p<0.0001, two-way ANOVA; Figure 5C), suggesting that the net effect of ABNs on MC ensembles is inhibitory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that suppressive responses are reduced in ablation animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8f187578-0ca5-4fb1-beee-69893534f01b",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C68",
+      "claim": "The fraction of total responses positively correlates with decoder accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of total (excitatory and suppressive) responses positively correlates with decoder accuracy (fraction of cells: p<0.01, fraction of cell-odorant pairs: p<0.01, Pearson correlation) and behavioral performance (cells: p<0.01; cell-odorant pairs: p<0.05; Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "120f8579-7bb9-4d40-97a8-cc8d86360589",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C69",
+      "claim": "The fraction of total responses positively correlates with behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fraction of total (excitatory and suppressive) responses positively correlates with decoder accuracy (fraction of cells: p<0.01, fraction of cell-odorant pairs: p<0.01, Pearson correlation) and behavioral performance (cells: p<0.01; cell-odorant pairs: p<0.05; Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b6d8b65e-6c09-4d8b-9a7a-dd6e757ffa01",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C70",
+      "claim": "When only excitatory responses were included, the relationship with decoder accuracy was not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "When we only included excitatory responses, however, this relationship was not significant (decoder accuracy, cells: p=0.2089, cell-odorant pairs: p=0.1272; performance, cells: p<0.05, cell-odorant pairs: p=0.1459; Figure 6C left and Figure 6D left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "69311d9a-90e2-45cb-9ad8-7bb5f7eb0829",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C71",
+      "claim": "The fraction of suppressive responses significantly correlated with both decoder accuracy and behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the fraction of suppressive responses significantly correlated with both decoder accuracy and behavioral performance (decoder accuracy, cells: p<0.01, cell-odorant pairs: p<0.01; performance, cells: p<0.05, cell-odorant pairs: p<0.05; Figure 6C right and Figure 6D right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis data in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "7395cf39-d108-4381-bf48-3343d43cde1f",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C72",
+      "claim": "Young ABNs are essential for high levels of suppressive responses of MCs, which significantly contribute to odorant discriminability by MC population responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that young ABNs are essential for high levels of suppressive responses of MCs, which significantly contribute to odorant discriminability by MC population responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analyses showing the importance of suppressive responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "402de737-921c-4f30-939c-9d7b09a55d20",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C73",
+      "claim": "In the passive condition, the fractions of MCs showing excitatory and suppressive responses were no longer statistically distinguishable between ablation and control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in this passive condition, the fractions of MCs showing excitatory and suppressive responses were no longer statistically distinguishable between ablation and control animals (control passive vs. ablation passive, fraction of cells: total, p=0.6162; excitatory, p=0.7625, suppressive, p=0.2620; fraction of cell-odorant pairs: total, p=0.2043; excitatory, p=0.8691, suppressive, p=0.0625, two-way ANOVA; Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by passive exposure data in Figure 7A-C showing no significant differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "bfe7e23e-2388-4c94-91a3-7a14020ad67e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C74",
+      "claim": "MC responses, mainly suppressive responses, are increased in a task engagement-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that MC responses, mainly suppressive responses, are increased in a task engagement-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing task and passive conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "8889aebb-b205-4339-a442-4bbcf7763298",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C75",
+      "claim": "The interaction term for genotype and condition was statistically significant for suppressive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction term for the genotype (control vs. ablation) and the condition (task vs. passive) was statistically significant for suppressive (fraction of cells: p=0.0101; fraction of cell-odorant pairs: p=0.0239), but not excitatory (fraction of cells: p=0.1162; fraction of cell-odorant pairs: p=0.7509) responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear regression model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d0277557-1308-40fe-b024-3582664c35fe",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C76",
+      "claim": "The effect of task engagement on suppressive responses is significantly larger in control animals than in ablation animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the effect of task engagement on suppressive, but not excitatory, responses is significantly larger in control animals than in ablation animals, supporting a role for young ABNs in enhancing suppressive responses in a task engagement-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the linear regression model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "52e6669e-69ac-4c3b-8b2f-51fc0b550c5a",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C77",
+      "claim": "Young ABNs enhance suppressive responses in a task engagement-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the effect of task engagement on suppressive, but not excitatory, responses is significantly larger in control animals than in ablation animals, supporting a role for young ABNs in enhancing suppressive responses in a task engagement-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of task and passive conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1ed736cf-0b06-43f5-aa59-a2cd94263e0e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C78",
+      "claim": "Task engagement increases the dynamic range of MC responses through top-down modulation from higher brain areas, which acts at least partially through young ABNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we propose a model that task engagement increases the dynamic range of MC responses through top-down modulation from higher brain areas, which acts at least partially through young ABNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "ac024e66-72c8-4859-b660-91997ea2dd2b",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C79",
+      "claim": "Inactivation of piriform cortex enhances excitatory MC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, inactivation of piriform cortex, a main source of feedback projections to the olfactory bulb, enhances excitatory MC responses (Otazu et al., 2015), supporting the inhibitory role of cortical feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Otazu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "10a476a4-eca4-4bcb-b6ea-51a62aa901fe",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C80",
+      "claim": "Experience and learning profoundly shape the representations of odorant stimuli by olfactory bulb principal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics of ABNs may underlie the observations that experience and learning profoundly shape the representations of odorant stimuli by olfactory bulb principal neurons (Chu et al., 2016, 2017; Doucette and Restrepo, 2008; Gschwend et al., 2015; Kato et al., 2012; Yamada et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies showing experience-dependent plasticity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "e0a210a6-a402-40ad-9bb4-9d9946d12c30",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C81",
+      "claim": "The olfactory bulb functions as a dynamic, adaptive filter for incoming odorant information depending on behavioral demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the olfactory bulb functions as a dynamic, adaptive filter for incoming odorant information depending on behavioral demands, and adult neurogenesis is essential for this adaptive role of the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b8912b44-ec4d-4ab4-84a1-65c138ea56b1",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C82",
+      "claim": "Adult neurogenesis is essential for the adaptive role of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the olfactory bulb functions as a dynamic, adaptive filter for incoming odorant information depending on behavioral demands, and adult neurogenesis is essential for this adaptive role of the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c20bc262-975b-4245-aeb2-4703c7241046",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C83",
+      "claim": "Bidirectionality of MC responses effectively increases the dynamic range of MC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The bidirectionality of responses effectively increases the dynamic range of MC responses and would contribute to an enhanced separation of representations of similar odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of both excitatory and suppressive responses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "5284325e-8f07-4682-8771-73c9e325a1db",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C84",
+      "claim": "A constant arrival and activity-dependent survival of ABNs are sufficient to separate MC representations of very similar odorants in an experience-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, a modeling study simulated the effect of adult neurogenesis on the olfactory bulb circuitry with excitatory sensory inputs, local GC inhibition and MC outputs and predicted that a constant arrival and activity-dependent survival of ABNs are sufficient to separate MC representations of very similar odorants in an experience-dependent manner (Cecchi et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cecchi et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "158717fd-a827-47e9-a90e-8ddf726d5d56",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C85",
+      "claim": "MC suppressive responses became more prominent during task engagement as opposed to passive exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a previous report stating that suppressive responses in MCs became more prominent during task engagement as opposed to passive exposure (Fuentes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fuentes et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "ae2fda33-17d7-485c-b95e-46bc679e5ab8",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C86",
+      "claim": "Broad GC inactivation has only mild effects on MC responses under anesthesia and passive wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity to task engagement may explain the findings from a previous study that broad GC inactivation has only mild effects on MC responses under anesthesia and passive wakefulness (Fukunaga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fukunaga et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "ff96193d-dfd6-476d-bfe5-4ccc95cd5d93",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C87",
+      "claim": "Synaptic inputs onto developing ABNs within different dendritic compartments formed in a sequential manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the state-dependence of the functional role of ABNs can be better appreciated considering previously reported phenomena that synaptic inputs onto developing ABNs within different dendritic compartments formed in a sequential manner (Kelsch et al., 2008), with the formation of centrifugal inputs preceding local dendrodendritic inputs (Whitman and Greer, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelsch et al., 2008; Whitman and Greer, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c393b767-7579-4d6c-ac2b-951ca8273d25",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C88",
+      "claim": "The formation of centrifugal inputs precedes local dendrodendritic inputs in developing ABNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the state-dependence of the functional role of ABNs can be better appreciated considering previously reported phenomena that synaptic inputs onto developing ABNs within different dendritic compartments formed in a sequential manner (Kelsch et al., 2008), with the formation of centrifugal inputs preceding local dendrodendritic inputs (Whitman and Greer, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Whitman and Greer, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "b5567766-e6d9-4534-a769-6ff0e60edf4a",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C89",
+      "claim": "The survival rate of ABNs is sensitive to sensory experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the survival rate of ABNs is sensitive to sensory experiences, which then are reflected by neuronal activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of adult neurogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "fecce527-cf94-4da2-924d-77ec1e34ca1c",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C90",
+      "claim": "ABNs that are strongly activated by centrifugal inputs may have a higher chance to survive.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we postulate that ABNs that are strongly activated by centrifugal inputs may have a higher chance to survive, which can explain the state-dependent requirement of ABNs for MC suppressive responses that we have observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the state-dependent effects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "7c7bd170-ebb2-49f3-b3d7-5c1355cb5c59",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C91",
+      "claim": "Intracellular recordings from excitatory neurons in the primary visual cortex revealed that inhibitory inputs are more prevalent in the awake state than in anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular recordings from excitatory neurons in the primary visual cortex revealed that inhibitory inputs are more prevalent in the awake state than in anesthesia (Haider et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Haider et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1a727c53-c7c0-4ca3-99f7-cf47c009aff0",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C92",
+      "claim": "In the primary auditory cortex, task engagement suppresses sound-evoked responses and sharpens the tuning of excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primary auditory cortex, task engagement suppresses sound-evoked responses and sharpens the tuning of excitatory neurons (Lee and Middlebrooks, 2011; Otazu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee and Middlebrooks, 2011; Otazu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "944172be-67ab-4540-a5f3-9abcc5ec171e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C93",
+      "claim": "The effect of task engagement on excitatory neuron tuning in auditory cortex is mediated by subtype-specific modulation of local inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is mediated by subtype-specific modulation of local inhibitory neurons (Kuchibhotla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kuchibhotla et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "39cd25df-0327-41d2-b15d-b55f304a5c76",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C94",
+      "claim": "Anesthesia suppresses local inhibitory neurons in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "In the olfactory bulb, anesthesia suppresses local inhibitory neurons (Kato et al., 2012; Wachowiak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kato et al., 2012; Wachowiak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "037f5341-a710-4c46-a599-ac4501ce34f4",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C95",
+      "claim": "State-dependent engagement of inhibitory circuits and suppression of excitatory responses may be a common principle conserved across brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the current study, these results suggest that state-dependent engagement of inhibitory circuits and suppression of excitatory responses may be a common principle conserved across brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing findings across different brain areas.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c8753e38-9435-47c0-9ce5-4c5e46c3c34c",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C96",
+      "claim": "In passive exposure, excitatory responses were also reduced compared to the task condition, although this effect was insensitive to ABN ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that task engagement does not only affect suppressive responses of MCs. In passive exposure, excitatory responses were also reduced compared to the task condition, although this effect was insensitive to ABN ablation (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9aa085d7-ff0e-47ce-8eb7-d899f1e4ae48",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C97",
+      "claim": "There are additional, ABN-independent mechanisms modulating MC responses in a state-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it appears that there are additional, ABN-independent mechanisms modulating MC responses in a state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that excitatory responses are also modulated by task engagement independently of ABNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "5e6e5c27-31bc-4b4a-bada-f089ec4278d7",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C98",
+      "claim": "Various feedback systems can modulate MC activity and olfactory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These probably include various feedback systems, which can modulate MC activity and olfactory behavior (Castillo et al., 1999; Chaudhury et al., 2009; Escanilla et al., 2010; Kapoor et al., 2016; Linster et al., 2001; Ma and Luo, 2012; Nunez-Parra et al., 2013; Rothermel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on feedback modulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "304d2df3-7e4f-4a20-a969-f2fc699e41c9",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "claim_id": "C99",
+      "claim": "Some of the functions of feedback systems are independent of ABNs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that some of the functions of these systems are independent of ABNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of ABN-independent modulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "34e5472a-23bd-4334-bf04-5331e980fc5e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Gfap-tk genetic ablation method with VGCC treatment effectively and specifically ablates adult-born neurons (ABNs) in the olfactory bulb without affecting astrocytes, olfactory sensory neuron regeneration, or general health and behavior of mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide converging evidence from multiple validation approaches (BrdU, Doublecortin, GFAP immunostaining, open field test) demonstrating the specificity and effectiveness of the ablation method. The data show near-complete ABN ablation (p<0.0001) with no off-target effects on astrocytes or general behavior, establishing a valid experimental model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "af46a091-43cf-4ba8-a366-11d5464c81a0",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Young ABNs are not required for easy olfactory discrimination of highly distinct odorants, as both control and ablation animals achieved equivalent performance in discriminating 80:20 vs 20:80 heptanal:ethyl-tiglate mixtures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, and C38 are supported by behavioral data showing no significant difference between groups (p=0.4523) in the easy discrimination task. This establishes a baseline that ABNs are not necessary for all olfactory processing, providing important context for the fine discrimination deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "9c0399ec-9ad8-494d-a5aa-f595f8062821",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Young ABNs are essential for fine olfactory discrimination. Ablation animals showed significantly impaired learning and performance in discriminating similar odorant mixtures (8 mixtures with small ratio differences) compared to controls, and this deficit was specifically due to the requirement for fine discrimination rather than task complexity or motivational factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C45 provide comprehensive behavioral evidence with appropriate controls. The statistical significance (p(group)<0.0001), control experiments ruling out motivational confounds (C41-C42), odorant-dependence verification (C43), and comparison with easy 8-odorant task (C44) collectively support that ABN ablation specifically impairs fine discrimination ability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "1ac37f76-786f-4131-8547-77010211a304",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Suppression of hippocampal dentate gyrus (DG) postnatally-born neurons does not impair fine olfactory discrimination, indicating that the behavioral deficits in Gfap-tk+ ablation animals are primarily caused by the absence of ABNs in the olfactory bulb rather than the hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by behavioral data showing no significant difference between DG suppression and control groups in both easy (p=0.8407) and difficult (p(group)=0.2663) discrimination tasks. This control experiment effectively localizes the critical ABN population to the olfactory bulb, though a caveat exists that complete DG ABN suppression cannot be definitively confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "58f9940a-489f-4e35-bb56-7e655833170e",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Random ablation of a larger proportion of granule cells (~20%) than ABN-specific ablation (~10%) produces less severe behavioral deficits in fine discrimination, supporting that young ABNs have a privileged role in mediating fine olfactory discrimination beyond simply contributing to the total granule cell population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 provide strong evidence through quantitative comparison of cell loss and behavioral outcomes. The random ablation group eventually reached control-level performance (sessions 6-10: p=0.2028 vs control) despite eliminating twice as many cells as ABN ablation, while ABN ablation showed persistent deficits (p<0.0001 vs random ablation). This supports the unique functional importance of young ABNs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d587213f-2f09-4b0f-9451-5c95baf684db",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ABN ablation causes mitral cell (MC) ensemble representations of similar odorants to be more ambiguous, as demonstrated by reduced decoder accuracy in ablation animals. This effect is most pronounced for odorant pairs with smaller contrasts and correlates with behavioral performance deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C55-C61 are supported by two-photon calcium imaging and decoder analysis showing significantly lower decoder accuracy in ablation animals (p(group)<0.05), particularly for similar odorants (contrasts \u22643: p<0.001). The correlation between decoder accuracy and behavioral performance (p<0.05, C61) strengthens the link between neural representations and behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "873def36-8ae7-4c53-bb11-ff73eb7665e6",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The increased ambiguity in odor representations in ABN ablation animals is primarily due to a decrease in MC suppressive responses rather than excitatory responses, suggesting that the net effect of young ABNs on MC ensembles is inhibitory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C63-C67 are supported by systematic analysis of MC responses showing that suppressive responses are significantly reduced in ablation animals (p<0.0001 for both cells and cell-odorant pairs, C66) while excitatory responses are not significantly affected (p=0.0813 and p=0.6039, C65). This provides a mechanistic explanation for the reduced pattern separation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "63e25c4f-0b6c-4af5-a271-d2b57859e809",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Young ABNs are essential for high levels of suppressive responses of MCs, and these suppressive responses (but not excitatory responses) significantly contribute to odorant discriminability by MC population responses and behavioral performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by correlation analyses showing that suppressive response fractions significantly correlate with both decoder accuracy (p<0.01) and behavioral performance (p<0.05), while excitatory responses do not show significant correlations with decoder accuracy (p=0.2089 and p=0.1272, C70). This establishes the functional importance of ABN-mediated suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The deficits in MC encoding caused by ABN ablation are only observed during task engagement but not passive exposure. Young ABNs enhance suppressive responses in a task engagement-dependent manner, as demonstrated by significant genotype \u00d7 condition interaction for suppressive (but not excitatory) responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C73-C77 are supported by comparison of task and passive conditions showing no significant differences between control and ablation during passive exposure (all p>0.05, C73), but significant differences during task engagement. The linear regression model showing significant interaction for suppressive responses (p=0.0101 for cells, p=0.0239 for pairs, C75) provides statistical support for state-dependent ABN function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "7dec4ebf-c399-4895-ab10-5284c6407598",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Young olfactory ABNs are essential for the enhancement of MC pattern separation in a task engagement-dependent manner, potentially functioning as a gateway for top-down modulation from higher brain areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C78 represent the main conclusions integrating behavioral and imaging findings. The task-dependent requirement for ABNs in enhancing MC suppressive responses and pattern separation is well-supported by the data. However, the 'gateway for top-down modulation' interpretation (C8, C78) is more speculative, based on known anatomy rather than direct demonstration in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "64af63e3-0fac-4668-9844-d7d1d93ecdef",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Task engagement also modulates MC excitatory responses in an ABN-independent manner, suggesting additional feedback mechanisms beyond ABNs contribute to state-dependent modulation of MC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 are supported by data showing that excitatory responses are reduced in passive vs task conditions regardless of ABN ablation (Figure 7\u2014figure supplement 1, C96). This identifies ABN-independent mechanisms, though the specific systems involved are not directly tested and remain speculative (C98-C99).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "63db79c5-d530-4f6f-a84c-629dc100719a",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MC population decoder performance is not affected by whether odorants are associated with the same or different behavioral choices (lick sides), suggesting that MC representations are based on odorant identity rather than categorical associations with actions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by decoder analysis showing no significant difference between same vs different lick side associations (control: p=0.4727, ablation: p=1.0000). This addresses an important alternative explanation and supports that MC pattern separation is driven by sensory rather than motor associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the context of adult neurogenesis in the olfactory bulb, including the generation, migration, differentiation of ABNs, their circuit integration, plasticity, and the inconsistent prior findings regarding their behavioral importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C30 represent well-established background knowledge supported by appropriate citations. These claims provide necessary context but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    },
+    {
+      "id": "c25db6d9-57d0-4075-b874-d621d579d4b9",
+      "content_id": "1edc3bc2-5ade-4c9e-9106-a9cb22fc342a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims contextualizing the findings within broader literature on cortical feedback, state-dependent modulation, experience-dependent plasticity, and cross-regional principles of inhibitory circuit engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C95 represent discussion points supported by appropriate citations to prior work. These claims integrate the current findings with existing literature and propose mechanistic interpretations (e.g., C90 regarding survival of ABNs activated by centrifugal inputs). While speculative elements exist (C90, C95), they are appropriately framed as hypotheses and interpretations rather than demonstrated facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:43:08.708557Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "416ae797-81a7-42c8-b4ac-bd8023d6e50f",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "6059d3f0-04cb-434b-9ab3-c5f6a4cf99bb",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "1cdc8f48-ba0a-4379-a7fc-7b497ce594b4",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "45b9135e-c77d-4b93-abb8-7c7f85e53d33",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "1f735eda-f815-4af8-913b-790d494e5acd",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "4fca76bc-409f-48b3-924e-728c17d12de5",
+      "result_id": "34e5472a-23bd-4334-bf04-5331e980fc5e"
+    },
+    {
+      "claim_id": "9a9542b1-165a-4c54-a164-a4cadbae1613",
+      "result_id": "af46a091-43cf-4ba8-a366-11d5464c81a0"
+    },
+    {
+      "claim_id": "c0317437-0fce-418e-895e-d8a852165ab9",
+      "result_id": "af46a091-43cf-4ba8-a366-11d5464c81a0"
+    },
+    {
+      "claim_id": "bb2bf346-e484-4ffb-ac23-21c9bf73db01",
+      "result_id": "af46a091-43cf-4ba8-a366-11d5464c81a0"
+    },
+    {
+      "claim_id": "0eeefb52-d62c-47f5-91fd-ed936b4b66b4",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "64c3cec8-28fd-4323-87c3-6b93844d93f1",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "997d9c86-320f-46fa-8e69-340e402cb296",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "21ff778e-e3e9-4223-9d6e-3725d5c42062",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "abf34639-750b-4d3f-af1b-45a3d8cca9a4",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "d07278f5-245c-4fe9-a095-89e0b0820704",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "70a0e066-6dc5-4a7e-9739-dc043ec44091",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "21e9758f-25f7-40e2-ad0b-9686b9cd8664",
+      "result_id": "9c0399ec-9ad8-494d-a5aa-f595f8062821"
+    },
+    {
+      "claim_id": "b1bbc04e-763b-4d65-be8b-2a3fa82f8616",
+      "result_id": "1ac37f76-786f-4131-8547-77010211a304"
+    },
+    {
+      "claim_id": "9916985f-79ed-40bb-9c67-435a08d4f421",
+      "result_id": "1ac37f76-786f-4131-8547-77010211a304"
+    },
+    {
+      "claim_id": "82f2fecf-93ac-47e9-a443-9435ed5ed82f",
+      "result_id": "1ac37f76-786f-4131-8547-77010211a304"
+    },
+    {
+      "claim_id": "ea3ca681-53fc-488e-9ded-7b4e39e79b6d",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "afb6f624-3432-460e-a356-5c1f9a4e0310",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "14ab6238-bf59-4dbd-bc2c-c3d11e05492e",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "07bf5773-3d3c-4519-946d-6b3fcf312e21",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "b0cec15a-2c87-4bf2-a38f-c6e22833bac9",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "6713d479-004c-47d8-bbc2-c357b5b055e6",
+      "result_id": "58f9940a-489f-4e35-bb56-7e655833170e"
+    },
+    {
+      "claim_id": "37827794-94ef-4d4c-9bec-548c844731c7",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "8fdad89e-6fa8-4af9-b5a9-1c297fadfd65",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "3d70c1f6-5c8e-4c0e-9c9c-5dad5f23df5a",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "9694eb4e-bd05-46c3-9efc-a4f2e30e6806",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "40a47ad8-5a69-4c3a-941d-f82d22c4906b",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "2fbc7c2c-4dc4-490b-8934-a77085eba9da",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "8726bba6-3e1f-4c6c-97a5-2daa7b0a4607",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "241a69c7-3311-4c89-8491-b73ed84daae1",
+      "result_id": "d587213f-2f09-4b0f-9451-5c95baf684db"
+    },
+    {
+      "claim_id": "9d19d649-7039-4a10-b7bb-9b5c2b183d0c",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "c04da52f-7a0e-4418-9719-b4ea0ba45b09",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "a059fa34-710a-4cb9-9077-2ca55c3ac98a",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "48d6425e-c624-4a91-b78c-fb0fd3d1144e",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "2665e1d6-cbf2-4428-9949-d40db624db4e",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "c288a03b-89a7-4d6f-a680-2106d8a42137",
+      "result_id": "873def36-8ae7-4c53-bb11-ff73eb7665e6"
+    },
+    {
+      "claim_id": "8f187578-0ca5-4fb1-beee-69893534f01b",
+      "result_id": "63e25c4f-0b6c-4af5-a271-d2b57859e809"
+    },
+    {
+      "claim_id": "120f8579-7bb9-4d40-97a8-cc8d86360589",
+      "result_id": "63e25c4f-0b6c-4af5-a271-d2b57859e809"
+    },
+    {
+      "claim_id": "b6d8b65e-6c09-4d8b-9a7a-dd6e757ffa01",
+      "result_id": "63e25c4f-0b6c-4af5-a271-d2b57859e809"
+    },
+    {
+      "claim_id": "69311d9a-90e2-45cb-9ad8-7bb5f7eb0829",
+      "result_id": "63e25c4f-0b6c-4af5-a271-d2b57859e809"
+    },
+    {
+      "claim_id": "7395cf39-d108-4381-bf48-3343d43cde1f",
+      "result_id": "63e25c4f-0b6c-4af5-a271-d2b57859e809"
+    },
+    {
+      "claim_id": "075e56ff-0eec-4319-913f-3da442917bed",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "402de737-921c-4f30-939c-9d7b09a55d20",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "bfe7e23e-2388-4c94-91a3-7a14020ad67e",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "8889aebb-b205-4339-a442-4bbcf7763298",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "d0277557-1308-40fe-b024-3582664c35fe",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "52e6669e-69ac-4c3b-8b2f-51fc0b550c5a",
+      "result_id": "a384e8b1-5ac3-48b5-b541-0a7c75712c45"
+    },
+    {
+      "claim_id": "a4616387-70ee-4c17-b408-38648d4258ae",
+      "result_id": "7dec4ebf-c399-4895-ab10-5284c6407598"
+    },
+    {
+      "claim_id": "d6f526bb-09d3-4f72-b872-ab68ec337c57",
+      "result_id": "7dec4ebf-c399-4895-ab10-5284c6407598"
+    },
+    {
+      "claim_id": "1ed736cf-0b06-43f5-aa59-a2cd94263e0e",
+      "result_id": "7dec4ebf-c399-4895-ab10-5284c6407598"
+    },
+    {
+      "claim_id": "c8753e38-9435-47c0-9ce5-4c5e46c3c34c",
+      "result_id": "64af63e3-0fac-4668-9844-d7d1d93ecdef"
+    },
+    {
+      "claim_id": "9aa085d7-ff0e-47ce-8eb7-d899f1e4ae48",
+      "result_id": "64af63e3-0fac-4668-9844-d7d1d93ecdef"
+    },
+    {
+      "claim_id": "5e6e5c27-31bc-4b4a-bada-f089ec4278d7",
+      "result_id": "64af63e3-0fac-4668-9844-d7d1d93ecdef"
+    },
+    {
+      "claim_id": "304d2df3-7e4f-4a20-a969-f2fc699e41c9",
+      "result_id": "64af63e3-0fac-4668-9844-d7d1d93ecdef"
+    },
+    {
+      "claim_id": "d51657aa-9747-4720-8539-db5162f0337f",
+      "result_id": "63db79c5-d530-4f6f-a84c-629dc100719a"
+    },
+    {
+      "claim_id": "fd8f8859-d338-487a-b3eb-fff96c33bff0",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "9a6be7d8-19a5-42dd-8fe6-fc16a71adfa8",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "81971e61-f329-43a8-ae28-92e99e98e689",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "766d559a-baa4-4115-b449-5527059ff58e",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "0549c9ae-4c91-424a-852e-b978284b16eb",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "7ba66000-1bd7-4eab-b487-ee67aec9c71d",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "bbb95ca6-253c-47f9-a88e-c2f816d2916f",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "574463cf-e329-4ec0-9f33-57317ab78e55",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "537dcd64-407e-489d-b7e4-92e38dc315b5",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "789ce8fe-9920-415c-872b-c4894850b038",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "36ab4919-3a1f-4f57-a68b-2e759795983f",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "8b042289-3686-414e-821b-8f1662221880",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "93f302cf-5ab1-4fa2-b82b-0c2e0db54ebe",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "20480ba2-b1b0-4d9f-9f48-792a7508507f",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "aa8ff2f9-a798-44af-a2ff-46e24e96879c",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "e301af8a-4a7f-4c5a-8a2c-e1c435d24a2c",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "29bfbfee-d452-4f21-88c3-a9eda5465f09",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "72cb1484-b6fd-48c2-a89e-7c3978e90196",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "c350ccf4-06a8-4326-9e3f-0cec18e3ed38",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "24fafcce-4e8d-48e2-8dde-06bb3342b3d8",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "c69c0c0f-08eb-4f2d-b54f-529237c26e31",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "b93fe2f6-8921-4064-8d7e-0f73b1a14b11",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "c5365abf-48bc-4b5c-b0b8-d3d7fd3be156",
+      "result_id": "d6616c7f-4299-4f59-9c52-4f0cd5dd0f1d"
+    },
+    {
+      "claim_id": "ac024e66-72c8-4859-b660-91997ea2dd2b",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "10a476a4-eca4-4bcb-b6ea-51a62aa901fe",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "e0a210a6-a402-40ad-9bb4-9d9946d12c30",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "b8912b44-ec4d-4ab4-84a1-65c138ea56b1",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "c20bc262-975b-4245-aeb2-4703c7241046",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "5284325e-8f07-4682-8771-73c9e325a1db",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "158717fd-a827-47e9-a90e-8ddf726d5d56",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "ae2fda33-17d7-485c-b95e-46bc679e5ab8",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "ff96193d-dfd6-476d-bfe5-4ccc95cd5d93",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "c393b767-7579-4d6c-ac2b-951ca8273d25",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "b5567766-e6d9-4534-a769-6ff0e60edf4a",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "fecce527-cf94-4da2-924d-77ec1e34ca1c",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "7c7bd170-ebb2-49f3-b3d7-5c1355cb5c59",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "1a727c53-c7c0-4ca3-99f7-cf47c009aff0",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "944172be-67ab-4540-a5f3-9abcc5ec171e",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "39cd25df-0327-41d2-b15d-b55f304a5c76",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    },
+    {
+      "claim_id": "037f5341-a710-4c46-a599-ac4501ce34f4",
+      "result_id": "c25db6d9-57d0-4075-b874-d621d579d4b9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C42",
+      "C43",
+      "C44",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Structured coalescent analysis of 174 human and 100 camel MERS-CoV genomes demonstrates that long-term viral evolution occurs exclusively in camels, with humans acting as transient, terminal hosts. The analysis estimated a median of 56 camel-to-human transmissions (95% HPD: 48\u201363) and negligible human-to-camel transmission (median 3, 95% HPD: 0\u201312, with zero migrations in the maximum clade credibility tree). Human viral clusters appear as terminal branches nested within camel viral diversity, exhibiting classic source-sink dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12\u2013C14, C17, C42\u2013C44, C66\u2013C71 collectively provide strong convergent evidence from structured coalescent modeling (Figure 1), showing asymmetric migration rates, distinct effective population sizes between hosts (camel Ne\u03c4 = 3.49 years vs. human Ne\u03c4 = 0.24 years), and phylogenetic patterns consistent with camel reservoir and human dead-end infections. The finding is robust to prior choice (C66, Figure 1\u2014figure supplement 2) and supported by multiple lines of phylogenetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "MERS-CoV introductions into humans show seasonal variation, with increased odds during April\u2013July and decreased odds during August, September, November, and December. This seasonality may be linked to camel calving season (October\u2013February) and subsequent decline in maternal antibodies in calves, potentially leading to viral sweeps through susceptible camel populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18\u2013C19 present statistical evidence for seasonality from modeling of introduction times (Figure 2), with specific months showing significantly altered odds ratios. Claims C20\u2013C22 provide biological context from cited literature on camel reproduction and a plausible mechanistic hypothesis linking calving season to increased human spillover risk. The temporal association is statistically supported, though the mechanistic link remains somewhat speculative (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "No correlation exists between introduction date and outbreak cluster size (Spearman \u03c1=0.06, p=0.68), and no temporal trend in human sequence cluster sizes was observed, suggesting MERS-CoV outbreaks in humans are neither growing nor shrinking over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23\u2013C25 present consistent statistical evidence (Spearman correlation tests with non-significant p-values) from analysis of introduction dates and cluster sizes shown in Figure 2B. The inference that outbreaks are stable in size (C25) logically follows from the lack of temporal trend (C24), and is consistent with the terminal host hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C45",
+      "C48"
+    ],
+    "result": "Monte Carlo simulations matching empirical MERS-CoV sequence cluster patterns estimate R0 for human transmission at 0.72 (95% percentiles 0.57\u20130.90), well below the epidemic threshold of 1.0. These simulations suggest hundreds of unobserved zoonotic introductions have occurred (median 592, 95% percentiles 311\u2013811), far exceeding the ~50 introductions identified directly from sequence data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26\u2013C28, C45, C48 are supported by Monte Carlo simulations (Figure 3) that match empirical sequence cluster statistics. The methodology accounts for sampling bias toward large hospital outbreaks (Figure 3\u2014figure supplement 1) and uses branching process theory (Equation 1) with dispersion parameter \u03c9=0.1 based on prior coronavirus studies (C64). The R0 estimate is consistent with the structured coalescent finding of humans as terminal hosts, and the large number of estimated introductions is a logical extrapolation from the low R0.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Human MERS-CoV infections are likely more common than currently recognized, with most transmission chains being exceedingly short and limited to mild primary cases that escape surveillance. The combination of frequent spillover and occasional hospital-based outbreak amplification via poor hygiene practices appears sufficient to explain observed MERS-CoV epidemiological patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57\u2013C59 represent reasonable inferences from the low R0 estimates (C26\u2013C27), large number of estimated introductions (C28, C45), and cited evidence of hospital outbreaks (C60). The interpretation is consistent with the phylogenetic data showing many small clusters and is supported by epidemiological citations (Assiri et al., 2013b; Chen et al., 2017). However, direct evidence for mild undetected cases is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Without unprecedented evolution of host tropism, MERS-CoV is unlikely to become endemic in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a reasonable conclusion based on the R0 estimates well below 1.0 (C26\u2013C27) and the finding that humans are terminal hosts (C2\u2013C3). However, this is fundamentally a predictive statement about future evolution that cannot be definitively proven from current data. The conclusion is supported by the presented evidence but involves speculation about future evolutionary trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Recombination is detectable in MERS-CoV genomes using PHI and 3Seq methods, particularly in the phylogenetic backbone. However, human outbreak clusters remain largely consistent and well-supported across different genomic fragments, and source-sink dynamics between camels and humans are preserved in trees from separate genome regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29\u2013C33 are supported by recombination detection analyses (Figure 4\u2014figure supplement 1) and comparison of phylogenies from genome fragments (Figure 4A, 4B). The finding that human clusters are robust to recombination (C31\u2013C32) is important for validating the main conclusions. The consistency of source-sink dynamics across fragments (C33) strengthens confidence in the primary structured coalescent results despite recombination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Discrete trait analysis produces results contradicting the structured coalescent, identifying humans as a major source of camel infections. The authors argue this discrete trait reconstruction is likely false due to biased sampling (174 human vs. 100 camel sequences) and the model's inability to account for vastly different coalescence rates between hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53\u2013C56 present a critical comparison between methods. The discrete trait analysis result (C53, Figure 1\u2014figure supplement 3) contradicts epidemiological evidence (C54) including seroprevalence data and lack of sustained human transmission outside Arabia. The authors' explanation (C55) regarding sampling bias (C56) and model limitations is reasonable and highlights an important methodological consideration. This strengthens confidence in the structured coalescent approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "The ratio of expected to empirical Ne\u03c4 for MERS-CoV (80.3, range 64.0\u2013103.5) is less than that for human measles virus and consistent with neutral evolutionary dynamics plus transmission heterogeneity and seasonal prevalence troughs. The ladder-like phylogenetic tree appearance can be explained by demographic factors rather than selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37\u2013C38 provide demographic parameters from cited literature used to calculate expected Ne\u03c4. Claims C40\u2013C41 compare this to empirical estimates and interpret the ratio. The calculation is transparent and the comparison to measles (Bedford et al., 2011) provides context. The conclusion that demography rather than selection explains tree topology (C41) is reasonable given the Ne\u03c4 ratio, though alternative explanations are not exhaustively ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C46",
+      "C47",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background epidemiological context for MERS-CoV is established, including its zoonotic nature, discovery in 2012, case counts (>2000 infections, >700 deaths), demographic risk factors, seroprevalence patterns in camels and exposed workers, hospital outbreaks, and comparison to SARS-CoV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6\u2013C11, C46\u2013C47, C60\u2013C63 provide established background information supported by appropriate citations to WHO data, epidemiological studies, and prior literature. These claims establish context but do not represent novel findings of this study. All are well-documented facts from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C64",
+      "C65"
+    ],
+    "result": "The study dataset comprised 174 human and 100 camel MERS-CoV genomes. Monte Carlo simulations used dispersion parameter \u03c9=0.1 based on prior coronavirus studies. Camel sequences first appear in the dataset in November 2013, representing a data limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C64\u2013C65 describe methodological details and data characteristics. C49 clearly states the dataset composition. C64 justifies the choice of dispersion parameter with appropriate citation (Lloyd-Smith et al., 2005). C65 acknowledges a temporal limitation in camel sampling that could affect early phylogenetic inferences. These are straightforward descriptive claims supported by the methods section.",
+    "result_type": "MINOR"
+  }
+]

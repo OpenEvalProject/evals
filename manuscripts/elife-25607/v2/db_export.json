@@ -1,0 +1,2269 @@
+{
+  "submission": {
+    "id": "51e956b9-4b92-4157-86ed-25554b308ca4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:52:12.362720Z",
+    "updated_at": "2025-12-01T20:52:12.362720Z"
+  },
+  "content": [
+    {
+      "id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "submission_id": "51e956b9-4b92-4157-86ed-25554b308ca4",
+      "content_type": "manuscript",
+      "content_text": "# lncRNA requirements for mouse acute myeloid leukemia and normal differentiation\n\n## Authors\n\n- M Joaquina Del\u00e1s<sup>1</sup> ([ORCID: 0000-0001-9727-9068](https://orcid.org/0000-0001-9727-9068))\n- Leah R Sabin<sup>2</sup>\n- Egor Dolzhenko<sup>3</sup>\n- Simon RV Knott<sup>1</sup>\n- Ester Munera Maravilla<sup>1</sup>\n- Benjamin T Jackson<sup>1</sup>\n- Sophia A Wild<sup>1</sup>\n- Tatjana Kovacevic<sup>1</sup>\n- Eva Maria Stork<sup>1</sup> ([ORCID: 0000-0002-9629-8950](https://orcid.org/0000-0002-9629-8950))\n- Meng Zhou<sup>3</sup> ([ORCID: 0000-0003-1487-5484](https://orcid.org/0000-0003-1487-5484))\n- Nicolas Erard<sup>1</sup>\n- Emily Lee<sup>2</sup>\n- David R Kelley<sup>5</sup>\n- Mareike Roth<sup>6</sup>\n- Ine\u0302s AM Barbosa<sup>6</sup>\n- Johannes Zuber<sup>6</sup> ([ORCID: 0000-0001-8810-6835](https://orcid.org/0000-0001-8810-6835))\n- John L Rinn<sup>5</sup>\n- Andrew D Smith<sup>3</sup> \u2020\n- Gregory J Hannon<sup>1</sup> ([ORCID: 0000-0003-4021-3898](https://orcid.org/0000-0003-4021-3898)) \u2020\n\n### Affiliations\n\n1. Cancer Research UK Cambridge Institute, Li Ka Shing Centre, University of Cambridge Cambridge United Kingdom\n2. Watson School of Biological Sciences Howard Hughes Medical Institute, Cold Spring Harbor Laboratory New York United States\n3. Molecular and Computational Biology University of Southern California Los Angeles United States\n4. German Cancer Research Center Heidelberg Germany\n5. Department of Stem Cell and Regenerative Biology Harvard University Cambridge United States\n6. Research Institute of Molecular Pathology, Vienna Biocenter Vienna Austria\n7. New York Genome Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA substantial fraction of the genome is transcribed in a cell-type-specific manner, producing long non-coding RNAs (lncRNAs), rather than protein-coding transcripts. Here, we systematically characterize transcriptional dynamics during hematopoiesis and in hematological malignancies. Our analysis of annotated and de novo assembled lncRNAs showed many are regulated during differentiation and mis-regulated in disease. We assessed lncRNA function via an in vivo RNAi screen in a model of acute myeloid leukemia. This identified several lncRNAs essential for leukemia maintenance, and found that a number act by promoting leukemia stem cell signatures. Leukemia blasts show a myeloid differentiation phenotype when these lncRNAs were depleted, and our data indicates that this effect is mediated via effects on the MYC oncogene. Bone marrow reconstitutions showed that a lncRNA expressed across all progenitors was required for the myeloid lineage, whereas the other leukemia-induced lncRNAs were dispensable in the normal setting.\n\n## Introduction\n\nLong noncoding RNAs (lncRNAs) have emerged as an additional layer of regulation of gene expression (Rinn and Chang, 2012). Although their definition is rather arbitrary \u2013 transcripts longer than 200 bp with little or no evidence of protein coding capacity \u2013 their reported functions are essential and diverse (Wang and Chang, 2011). A number of different roles have been ascribed to lncRNAs during differentiation (Fatica and Bozzoni, 2014) yet the function of most lncRNAs remains unexplored. Their cell-type-specific expression has encouraged the study of lncRNA function during development, where lncRNAs important for dendritic cell specification, epidermal, and cardiac differentiation have been identified (Grote et al., 2013; Klattenhoff et al., 2013; Kretz et al., 2013; Wang et al., 2014). Several recent large-scale cataloging efforts have highlighted how lncRNAs are also differentially expressed in human cancers (Du et al., 2013; Iyer et al., 2015; Yan et al., 2015), with a few being the subject of more detailed mechanistic studies. In breast cancer models, HOTAIR has been shown to promote metastasis through re-location of PRC2 (Gupta et al., 2010), and PVT1 expression correlates with MYC protein levels and influences its stability (Tseng et al., 2014). In T cell acute lymphoblastic leukemia (T-ALL), expression analysis revealed many Notch-regulated lncRNAs. Amongst them, LUNAR was shown to act as an enhancer-like RNA, activating expression of IGF1R (Trimarchi et al., 2014).\n\nDevelopment of T-ALL is not the only aspect of hematopoiesis regulated by lncRNAs. lncRNA-EPS promotes survival and inhibits apoptosis in murine fetal erythroblasts (Hu et al., 2011) and represses key immune genes in macrophages to restrain inflammation in vivo (Atianand et al., 2016). In humans, lncRNA-DC is required for dendritic cell differentiation through its binding to STAT3 (Wang et al., 2014). Global analyses showed GENCODE-annotated lncRNAs to be regulated in mouse early hematopoietic progenitors (Cabezas-Wallscheid et al., 2014). Further studies have carried out de novo assemblies of the lncRNA repertoire in murine erythroid (Alvarez-Dominguez et al., 2014), erythro-megakaryocytic differentiation (Paralkar et al., 2014), and hematopoietic stem cells (HSCs), where two novel lncRNAs were characterized and found to regulate HSC function (Luo et al., 2015).\n\nA comprehensive analysis of lncRNA dynamics through normal and malignant hematopoiesis has yet to be reported. The murine hematopoietic system is a very well characterized model of stem and progenitor cell differentiation. Decades of research have provided information on many of the genes that govern the maintenance of HSCs, as well as downstream differentiation events. Many of the same transcription factors required for progenitor self renewal and specification are involved in malignant transformation (Krivtsov et al., 2006). This makes hematopoiesis an excellent context for a systematic comparison of lncRNA function in normal development and cancer.\n\nWe sought to identify de novo the lncRNAs expressed during the differentiation of both the myeloid and lymphoid hematopoietic lineages, as well as those lncRNAs that are characteristic of transformed cells, using models of acute myeloid leukemia (AML) and B-cell lymphoma. This transcriptome analysis revealed a large number of lncRNAs that are tightly regulated during hematopoietic cell-fate choices. As a first approach to identify functionally relevant lncRNAs, we decided to focus on an in vivo model of murine AML.\n\nAML is often driven by fusion transcription factors or chromatin modifiers, such as MLL-AF9, that maintain an aberrant transcriptional landscape in transformed cells. Consequently, interfering with these chromatin-modifying complexes can lead to a substantial reduction in proliferation of these cancer cells (Dawson et al., 2011; Roe et al., 2015; Shi et al., 2013; Zuber et al., 2011c). Interestingly, one of the reported functions for lncRNAs is the regulation of gene activity through interactions on chromatin. For example, lncRNAs HOTTIP and HoxBLinc, have been shown to activate expression of Hox genes by mediating recruitment of histone methyltransferase complexes WDR5-MLL and Setd1a/MLL1, respectively (Deng et al., 2016; Wang et al., 2011), and HOTAIR regulates the chromatin landscape via recruitment of PRC2 and the LSD1/CoREST/REST complexes (Rinn et al., 2007; Tsai et al., 2010). As lncRNAs have been associated with chromatin regulation, it seemed possible that these might play a role in enforcing the aberrant transcriptional landscape in AML.\n\nOur systematic analysis of lncRNA transcription in hematopoietic differentiation and AML revealed large numbers of lncRNAs misregulated in diseased or shared between AML and normal cell types. To test whether lncRNAs could regulate the disease state, we used the MLL-AF9-driven AML model to perform an in vivo shRNA screen. We chose a set of 120 lncRNAs with varying expression patterns and levels, and identified several lncRNAs required for maintaining leukemia proliferation in vitro and in vivo. Silencing of several lncRNAs needed for AML proliferation in vitro resulted in patterns of differentiation that mimicked those that occurred upon reduction in the activity of well-established oncogenic drivers. We performed bone marrow reconstitutions for the three lncRNAs showing this phenotype and found that the lncRNA with expression across multiple hematopoietic progenitors to be required for the myeloid lineage, while the two leukemia-induced lncRNAs were dispensable in the normal setting. Collectively, this study serves as a framework for further mechanistic studies of the roles of lncRNAs in hematological malignancies and normal differentiation.\n\n## Results\n\n### A comprehensive catalog of lncRNAs in the hematopoietic system\n\nTo characterize the lncRNA repertoire and assess how different non-coding transcripts are regulated during hematopoietic differentiation and disease, we produced a comprehensive catalog of murine hematopoietic lncRNAs. We performed deep RNA sequencing (RNAseq) using 11 cell types representing different stages of hematopoietic differentiation, ranging from long-term hematopoietic stem cells (LT-HSC) to differentiated cell types and blood cancers (Figure 1A). Each library was sequenced and mapped to the mm10 genome assembly, with an average of 100 million uniquely mapped reads. We performed de novo transcriptome assembly for each library using cufflinks (Trapnell et al., 2010), with the GENCODE annotation (Harrow et al., 2006) as a reference transcriptome. Assembled gene models that overlapped with GENCODE coding gene models in the same orientation were discarded. Within each gene model, we required each transcript isoform to be independently assembled from two different libraries, and we filtered based on coding potential (Figure 1B, Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of analyzed cell types. Sorting plots can be found in Figure 1\u2014figure supplement 2. (B) Pipeline for assembling the lncRNA catalog. See Materials and methods for full description. (C) Overlap of this study\u2019s lncRNA catalog with previously published non-coding annotations. Overlap is based on coordinates annotation of lncRNA exons. (D) ATAC-seq signal intensity, as a proxy for open chromatin, around the aggregated TSSs of our lncRNA catalog or the aggregated start sites of the second exons for the cell types indicated (ATAC-seq data from [Lara-Astiaso et al., 2014]). (E) Principal component analysis based on the most variable 500 protein coding genes (left) or catalog lncRNA genes (right). Each dot represents a biological replicate.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Pie chart representing the number of lncRNAs that falls in each of the category depending on their relationship with their closest coding gene. ATACseq signal around the TSS for each of those relationships.\u00a0(B) Expression heat maps for published microarray data (Gazit et al., 2013) is plotted for genes upregulated in the cell types indicated based on our RNAseq data.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Flow cytometry sorting plots used to isolate LT-HSC (A), CLP (B), CMP, MEP and GMP (C), Gr1 and B cells (D) and PreB and ProB cells (E) for RNAseq library preparations.\n\nWe observed a substantial overlap between our lncRNA genes and GENCODE lncRNAs, as well as the lncRNA catalogs from megakaryocyte-erythroid progenitors (MEP) differentiated in vitro (Paralkar et al., 2014), erythrocyte differentiation (Alvarez-Dominguez et al., 2014), and HSC, B cells, and Gr1 myeloid cells (Luo et al., 2015). This validated our assembly pipeline. Interestingly, over half of the lncRNAs assembled were unique to our study, likely due to our sequencing depth and the number of new cell types included (Figure 1C). We next used ATACseq data to assess chromatin accessibility at these lncRNA loci. These datasets included some of the same cell types that we analyzed, including the oligopotent myeloid progenitors, hematopoietic stem and progenitor cells (LSK) fraction (less pure than our LT-HSC), and differentiated cell types from both myeloid and lymphoid lineages (Lara-Astiaso et al., 2014). A meta analysis of transcriptional start sites (TSSs) within our full lncRNA catalog revealed a correlated open chromatin signal in every cell type with ATACseq data. The number of lncRNAs in our catalog that showed enrichment varied between cell types (Figure 1D), which is to be expected given that each expresses only a subset of lncRNAs. We performed the same analysis for the start of the second exon as a control region, and no signal above background was observed.\n\nLncRNAs can have a number of different relationships to their neighboring protein coding genes. They can fall in intergenic regions, be divergently or convergently transcribed, they can overlap in antisense orientation (interspersed), or they can have the same orientation as the neighboring gene, upstream or downstream. To address the possibility that the open chromatin signatures we observed were exclusively the result of regulatory regions being shared between lncRNAs and neighboring protein-coding genes, we performed our analysis independently for each category of lncRNA defined above. Irrespective of their relationship to surrounding protein-coding genes, our assembled lncRNAs showed enrichment in ATACseq signal at their presumed TSS in at least one cell type (Figure 1\u2014figure supplement 1\ufeff).\n\nUsing DESeq2 (Love et al., 2014), we performed principal component analysis (PCA) based on the 500 most variable protein-coding genes or lncRNAs from our catalog. The lymphoid differentiated cell types CD3, PreB, and ProB clustered together and clearly separated from the myeloid differentiated cell type Gr1 and the progenitors. Despite having very different functional properties, oligopotent progenitors and long-term repopulating hematopoietic stem cells (LT-HSCs) are found in close proximity, indicating that they share some transcriptional programs. Interestingly, the closest progenitors to the lymphoid differentiated cluster were the common lymphoid progenitors (CLPs). The acute myeloid leukemia samples, both in vivo (AML) and in vitro (RN2 cell line), clustered closest to the granulocyte macrophage progenitor (GMP)\u00a0population, consistent with previous reports for this AML model (Krivtsov et al., 2006) (Figure 1E, left). PCA based on lncRNA rather than coding gene expression replicated all the aforementioned features, indicating that lncRNA expression patterns are overall very similar to those of coding genes (Figure 1E, right). To confirm the identity of our sorted progenitor populations, we additionally compared the expression signatures from our data with previously published microarray data for these same cell types (Gazit et al., 2013) (Figure 1\u2014figure supplement 1B). In general, our data was in substantial agreement with prior microarray datasets with the exception of those from CLPs. Notably, CLPs were the one cell type where our staining strategy and isolation protocols\u00a0(Figure 1\u2014figure supplement 2B)\u00a0differed from those used in the previous report. Overall, we have produced a comprehensive catalog of lncRNAs in the hematopoietic system that can serve as a foundation for understanding non-coding RNA function in these very well characterized cell types.\n\n### lncRNAs and coding genes show similar expression patterns across hematopoietic differentiation\n\nTo understand the dynamics of lncRNA expression during hematopoietic development, we performed expression module analysis based on our RNAseq datasets. We identified differentially expressed lncRNAs and protein-coding genes that showed the same expression patterns. The modules followed expected groupings, with enriched expression in either myeloid, lymphoid, or progenitor compartments. When representing the 15% most variable lncRNAs within each module and the same number of coding genes, we identify many genes that are well-established drivers of hematopoietic differentiation and progenitor maintenance (Figure 2A). Among the genes with enriched expression in LT-HSCs, we noted the MDS1 and EVI1 complex locus (Mecom). These are known to regulate hematopoietic stem cell self-renewal (Yuasa et al., 2005). Hoxa9 and Meis1, landmarks of MLL-AF9\u00a0AML self renewal (Krivtsov et al., 2006), are found in the module corresponding to genes enriched in both progenitors and our AML samples. Key regulators in lymphoid development such as Rag1/2, Ebf1 and Cd38 appear in the lymphoid-enriched module, while Csf3r and Itgam, also known as CD11b, part of the Mac-1 receptor, are in the module enriched for Gr1 expression (Figure 2A). These expression patterns are therefore consistent with the published literature and underscore the robustness of our data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig2-v2.jpg)\n\n**Figure 2.:** (A) Expression data heatmap of the 15% most variable lncRNAs in each co-expression cluster, and the same number of most variable coding genes. Key hematopoietic genes are highlighted. (B) Density plot of correlation of expression for lncRNAs and their fifth closest coding genes. The density of the closest gene is categorized by genomic organization (right). As a comparison, correlation of genes and their closest genes is shown. Interspersed lncRNAs are not included in the main plot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Heat maps for ChIPseq read density for the indicated histone modifications and transcription factors around the TSS of our lncRNA catalog genes or GENCODE\u2019s coding genes.\n\nWe wondered whether these coordinated lncRNA-gene expression patterns were a consequence of RNAs being produced from a bidirectional promoter leading to divergent lncRNA transcripts. Expression correlation of lncRNAs with a divergent transcript has been reported in embryonic stem cell differentiation (Dinger et al., 2008; Sigova et al., 2013) and human B and T cell lineages (Casero et al., 2015). A general model has even been proposed, whereby divergent lncRNAs regulate the expression of the associated coding gene during differentiation (Luo et al., 2016). When we examined expression levels across cell types between lncRNAs and their closest gene neighbors, we indeed detected some level of correlation (Figure 2B). However, this correlation was not exclusive to divergent transcripts, as a similar level of correlation was observed for other genomic organizations\u00a0(Figure 2B). In the AML datasets, we observed enriched binding of transcription factors known to play a role in maintaining the transcriptional landscape of this model of leukemia (Roe et al., 2015) around the TSS of lncRNAs in our catalog (Figure 2\u2014figure supplement 1). This suggests that lncRNA expression through development and disease is regulated by the same mechanisms as coding genes, hence leading to generally similar expression patterns.\n\n### lncRNAs are specific to distinct hematopoietic cell types and to AML\n\nOur gene co-expression analysis highlighted the existence of lncRNAs that are expressed in the same cell types, and with the same level of specificity, as the known master regulators of hematopoietic development. This raised the hypothesis that some of these lncRNAs, whose expression is tightly regulated during differentiation, could be key regulators of cell fate choice. To explore this possibility, we performed differential expression analysis and identified lncRNAs that were enriched in hematopoietic stem cells, shared by the progenitor populations while showing lower expression in differentiated cell types, or enriched exclusively in the lymphoid compartment (Figure 3A, Supplementary file 2). This produced a list of candidates that could potentially function during self-renewal or differentiation (Supplementary file 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig3-v2.jpg)\n\n**Figure 3.:** (A) Genome Browser plots showing RNAseq coverage for representative lncRNA gene models in each of the indicated expression profiles along with the corresponding number of differentially expressed genes. (B) Heatmap of expression for lncRNAs differentially regulated between AML and relevant myeloid cell types. lncRNAs included in the in vivo AML screen are highlighted by black lines.\n\nWe also noticed many lncRNAs with enriched expression in AML, as well as shared expression between AML and other cell types. In our efforts to identify lncRNAs that are functionally relevant in the hematopoietic system, we focused on this AML model, given its ease of manipulation in vitro and in vivo and the availability of rapid in vitro and in vivo phenotypic assays. We selected a set of lncRNAs with varying levels of expression and a range of expression patterns for a pilot shRNA screen to test the effects of lncRNA depletion in a transplantable model of MLL-AF9/NRASG12D AML (Figure 3B).\n\n### An in vivo shRNA screen identifies lncRNAs required for leukemia development\n\nFor our screen, we selected a set of 120 lncRNAs that spanned the entire range of expression levels and included a diversity of expression patterns. For example, we chose lncRNAs that were AML specific or shared between AML and progenitors, as well as a variety of other patterns (Figure 3B). We also chose lncRNAs with different relative expression levels ranging from abundant to lowly expressed. We used the shERWOOD algorithm (Knott et al., 2014) to predict highly potent shRNAs targeting each lncRNA candidate. Because of the high isoform complexity in our assembled lncRNA catalog, a common characteristic of lncRNA assemblies, we could not simply predict on each individual transcript model assembled by our pipeline. We reasoned that targeting the regions of highest RNAseq coverage would maximize our chances of silencing the most abundant isoforms for each candidate. We also wanted the shRNA resource that we built to be applicable for studies beyond AML. Given the cell-type specificity observed in our data, we therefore decided to combine all reads for each lncRNA across libraries prior to coverage calculations, so as to focus our predictions on the most highly included exons.\n\nWe designed, cloned and sequence verified a library containing at least four hairpins per lncRNA into a doxycycline-inducible retroviral vector. As controls, we included hairpins against Renilla luciferase and Replication Protein A3 (Rpa3). MLL-AF9/NRASG12D AML cells were infected at low multiplicity to minimize the probability of double infection, and were Neomycin-selected to eliminate non-infected cells. Infected AML cells were transplanted into mice, and hairpin expression was subsequently induced. To ensure a good representation of every hairpin during the 14 days that the cells proliferate in vivo, we performed virus production, infections and injections using pools of 50 shRNAs (Figure 4B). This number was based on previous experiments where cells were infected with a retrovirus carrying a neutral random nucleotide sequence (barcode), and the same experimental set up was followed to quantify representation of individual barcodes in tumors arising from populations infected with pools of different complexities (data not shown). shRNA representation was determined by high-throughput sequencing of hairpins amplified from genomic DNA extracted from the pre-injection pools and bone marrow samples taken 14 days post engraftment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig4-v2.jpg)\n\n**Figure 4.:** (A) Expression profile for the lncRNAs included in the screen. (B) Screen outline: murine MLL-AF9/NRASG12D AML cells were infected at low MOI with retrovirus-encoded pools of 50 shRNAs against candidate lncRNAs. Cells were selected to 100% infection and injected into sub-lethally irradiated mice (3\u20134 mice per pool, 1 million cells per mice). Hairpin abundance was estimated by high-throughput sequencing of genomic DNA from the initial injection pools and from whole bone marrow 14 days post-injection. (C) Fold change between final and injection time points for each hairpin in the screen. Renilla luciferase and Rpa3 hairpins are highlighted in green and red, respectively. Hairpins of lncRNAs identified as hits are highlighted in yellow. (D) Scatterplot of mean lncRNA expression across two biological replicates in sorted bone marrow AML cells and in vitro culture AML cells. Screened lncRNA and hits are highlighted in blue and red, respectively. (E) One-by-one in vitro competition assay. AML cells were infected with a retrovirus constitutively expressing a single shRNA targeting the indicated lncRNA candidate. The percentage of zsGreen-positive cells relative to day 2 post-infection was followed over the course of 14 days. Bar graphs for controls and two representative lncRNAs (with two hairpins per lncRNA) are shown on the left. Values are the average of four biological replicates; error bars show s.e.m. A summary of the in vivo fold change and the percentage of zsGreen at the latest time point in vitro for all lncRNA hits are shown on the right displayed as a heat map.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Percentage of fluorescence cells is normalized to day 2 after infection. Hairpins that produced over 50% depletion are highlighted in red. Values are the mean of four biological replicates, error bars represent s.e.m.\n\nAs expected, most shRNAs for Rpa3 were depleted by the final time point. We did find an outlier, most likely a result of transcriptional silencing of the Rpa3 hairpin, one of the known caveats of this sequencing-based readout. Importantly, most hairpins targeting Renilla luciferase, which is not expressed in the MLL-AF9 leukemia cells and serves as a negative control, were not significantly changed during the 2-week time course. In order for a particular lncRNA to be selected for more detailed follow-up, we required at least two hairpins to be significantly depleted at day 14 as compared to day 0 (FDR\u00a0<\u00a00.05) or one hairpin significantly depleted and a second hairpin depleted more than twofold (Figure 4C). This produced a list of 20 primary hits that were potentially required for leukemia maintentenance in vivo. These lncRNA candidates were prioritized for further study in an MLL-AF9/NRASG12D AML cell-culture model.\n\nTo validate our in vivo screen and to assess whether AML cells were also dependent on these lncRNAs in cell culture, we performed competitive proliferation assays for all primary screen hits with two independent hairpins using a constitutive vector (Figure 4E). The shRNA-containing cells also expressed a green fluorescent protein (zsGreen), which we tracked over time to determine the ability of lncRNA-depleted cells to proliferate as compared to their uninfected counterparts. 14 of our 20 lncRNA candidates showed a depletion of over 50% for both hairpins over the 14-day time course, which represents a 70% validation rate of the initial hits (Figure 4E). Both our primary and validated hits displayed a range of different expression levels (Figure 4D). We selected 9 out of these 14 lncRNAs for follow up experiments based on the severity of the proliferation phenotype and its consistency across independent knockdowns (Figure 4E). We also included lncRNAs in a variety of arrangements with respect to their neighboring protein coding genes.\n\n### lncRNAs are required for leukemia proliferation in vivo and in vitro\n\nIn order to study the effects of lncRNA knockdown, both at the level of global gene expression and at the level of protein abundance, we required a population of lncRNA-depleted cells with relatively homogeneous knock-down properties. To circumvent the proliferation defect caused by lncRNA knock down, we subcloned our constructs into an inducible retroviral vector, where hairpin expression was under the control of the TRE3G dox-inducible promoter. We then isolated two clonal lines for each hairpin to avoid any phenotypes linked to specific integration sites.\n\nWe assessed knockdown efficiency after 2 days of doxycycline induction by testing each sample with two independent primer pairs corresponding to each lncRNA. For four of our selected lncRNAs, we observed over 70% knockdown efficiency in at least one of the clonal lines for both primers and both hairpins. Additionally, two others had a more modest (~60%) but consistent knockdown across hairpins and primer pairs. We also examined the relationships between lncRNAs and their closest genes, with a particular interest in whether down-regulation of the lncRNA would lead to any expression changes. We did not observe any consistent trend, with most lncRNA knockdowns failing to induce any reproducible change of expression in either of their two flanking coding genes (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig5-v2.jpg)\n\n**Figure 5.:** (A) Summary qPCR data shown as log2 fold change expression relative to Renilla Luciferase knockdown. Average values shown as a heatmap from three biological replicates (independent dox inductions) and two independent clonal cell lines. Relative expression was calculated as delta delta Cq using Gapdh as reference. For each lncRNA knockdown (rows), relative expression for the lncRNA itself, and its upstream and downstream genes are shown (columns). (B) Enrichment for Macrophage Differentiation (Ingenuity Pathway Analysis gene set) and Leukemia Stem cell Signature (Krivtsov et al., 2006) gene sets upon lncRNA knockdown was performed using Gene Set Enrichment Analysis. (C) Flow cytometry analysis of cKit and CD11b (Mac-1) surface markers upon lncRNA or Renilla knockdown. A representative plot per lncRNA is shown on the left. Geometric Mean fold change relative to Renilla knockdown is shown as the average of four biological replicates. Error bars represent s.e.m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative proliferation assays bar plots for AML and breast cancer cell lines\u00a0(left). Heat map representing normalized depletion by day 14 after infection for the nine lncRNAs that were further analyzed\u00a0(right).\n\nTwo of our candidate lncRNAs are divergently transcribed with respect to their neighboring genes (lncRNA_041249 and lncRNA_097790) and one lncRNA annotation overlaps, in the antisense direction, with its closest coding neighbor (lnc_166788). We looked particularly at whether these might function by controlling the level of expression of their linked divergent coding transcript, as previously reported for ES cell differentiation (Luo et al., 2016). Knockdown of the two divergent lncRNAs, lncRNA_041249 and lncRNA_097790, did not cause any changes in the divergent coding transcripts, Srsf5 and Rmb27, respectively (corresponding to \u2018Upstream gene\u2019 in Figure 5A). The only case where we found depletion of a lncRNA to affect its closest neighboring gene was lnc_166788. This lncRNA is predicted to overlap with a Gata2 isoform in a head-to-head configuration, although our libraries did not show much support for such an overlapping configuration. Our data indicate that this lncRNA might be involved in promoting Gata2 expression and hence its depletion reduces Gata2 mRNA levels. Although this is a very attractive possibility given the key role Gata2 plays in hematopoietic progenitor maintenance, further experimentation will be required to understand the precise nature of any such interaction.\n\n### lncRNAs promote leukemia survival by maintaining leukemia stem cell signatures\n\nWe next aimed to understand how lncRNA expression promoted tumorigenesis in AML. Gene expression and immunophenotyping revealed that three of the lncRNAs that scored in our screen promoted a leukemic stem cell state, since depletion of any of these activated a default myeloid differentiation program. Gene Set Enrichment Analysis (GSEA) showed an enrichment for Macrophage Differentiation genes (Ingenuity Pathway Analysis list) upon knockdown of lnc_071255 (already annotated as Pvt1), lnc_104449, or lnc_177417, while leukemia stem cell signatures (Krivtsov et al., 2006) showed enrichment in the control knockdown (Figure 5B). Additionally, depletion of these same lncRNAs led to the upregulation of the myeloid differentiation cell surface marker CD11B (also known as Mac-1) and downregulation of the stem cell marker c-Kit, as shown by flow cytometry (Figure 5C). This resembles the phenotype observed upon withdrawal of the oncogenic MLL-AF9 fusion protein (Zuber et al., 2011b) and suggests at least some degree of leukemia-specific dependency for these three lncRNAs.\n\nTo ask whether the nine lncRNAs we identified to be required for AML could be playing a general role in other highly proliferative cell types, we used the murine breast cancer cell line, 4T1, in a the same cell culture competition assay we used for AML hit validation (Figure 4E, Figure 5\u2014figure supplement 1). While Rpa3 was required for proliferation of 4T1 cells in vitro, none of our lncRNAs showed depletion even after 14 days in culture (Figure 5\u2014figure supplement 1), indicating that these lncRNAs are not required for general cell or tumor survival and growth, but rather are specifically required for leukemia maintenance.\n\nOne of the main drivers of AML proliferation is the proto-oncogene, Myc. We therefore examined whether Myc levels were affected by lncRNA depletion in our AML model. Indeed, we observed a strong reduction of Myc protein levels upon lnc_071255/Pvt1, lnc_104449, or lnc_177417 knockdown. Intriguingly, the mRNA levels of Myc were not reduced in a comparable manner to the protein levels for the lnc_071255/Pvt1 and lnc_104449 as compared to lnc_177417. Due to their expression and genomic position, we named lnc_177417 Lilam (leukemia-induced LncRNAaffecting Myc) and lnc_10449 Pilna (progenitor-induced lncRNA neighboring Ak3). lnc_071255, which corresponds to the previously annotated lncRNA Pvt1, was recently shown to correlate with MYC protein, but not Myc mRNA levels. In human breast cancer, Pvt1 has been proposed to act by stabilizing MYC protein (Tseng et al., 2014). We also examined whether MYC target genes were affected by depletion of our lncRNA candidates using GSEA and found that knockdown of any of the lncRNAs that induced a myeloid differentiation phenotype resulted in a decrease in a Myc target gene-expression signature (Figure 6\u2014figure supplement 1).\n\nTo understand whether MYC and its target genes were mediating the proliferation and differentiation phenotypes caused by reduction in lncRNA levels, we expressed the Myc gene in the context of lncRNA knockdown. Expression of Myc rescued the proliferation phenotypes for Pvt1 and Lilam knockdown, as shown by a growth competition assay. To exclude a general growth effect, we specifically looked at the stem cell marker cKit and myeloid marker CD11b by immunophenotyping, as well as at the morphological phenotype by Giemsa staining after inducing knockdown with or without Myc co-expression for 48 hr. Both datasets were consistent with Myc expression rescuing the differentiation phenotype observed upon knockdown for each of these three lncRNAs (Figure 6, Figure 6\u2014figure supplement 1). This strongly suggests an epistatic relationship between our lncRNAs and Myc and indicates that Pvt1, Lilam and Pilna exert their functions through Myc in this context.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig6-v2.jpg)\n\n**Figure 6.:** (A) Relative MYC mRNA and MYC protein. Values represent the mean across three biological replicates, error bars represent s.e.m. (B) A representative western blot from (A). (C) Percentage of cells co-expressing either a constitutive shRNA vector (zsGreen) and a MSCV-based vector expressing mCherry and either Myc or empty. Data is relative to day 2 after infection. Average values across three replicates shown, error bars represent s.e.m. (D) Immunophenotyping of AML cells expressing either an inducible Renilla shRNA vector, co-expressing lncRNA Pvt1 knockdown and MYC or lncRNA knockdown without MYC (empty). On the right, quantification of the relative expression compared to Renilla is shown as fold change of the geometric mean for each fluorophore. Data obtained from three biological replicates. (E) Wright-Giemsa staining of cytospun cells expressing the indicated inducible shRNA vectors with or without MYC.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) GSEA for Myc target genes in lncRNA versus control knockdown transcriptome data.\u00a0(B) Flow cytometry plots for immunophenotyping of AML cells expressing the indicated knockdowns with or without MYC. (C) Wright-Giemsa staining for cells expressing the indicated constructs.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Proliferation assays in two other AML models for our three most characterized lncRNAs (Lilam, Pilna and Pvt1) (A) and two additional lncRNAs from our validated set (B).\n\nWe additionally examined the role of these lncRNAs in two other AML models (Figure 6\u2014figure supplement 2). We observe depletion of all five tested lncRNAs (Lilam, Pilna, Pvt1 plus two validated lncRNA hits with consistent knockdown) in the MLL/ENL model (similar to the MLL/AF9). In a different model, where Myc is one of the drivers, we observed a less striking phenotype. This is unsurprising since enforced Myc expression rescues the phenotype of Lilam, Pilna and Pvt1 (Figure 6\u2014figure supplement 2). This further supports an AML role for these lncRNAs.\n\n### lncRNA Pilna is required for myeloid differentiation\n\nThe three lncRNAs, upon which we had focused, could exert effects specifically in tumors, or they could play broader roles, also affecting normal development. Their impact on Myc could suggest a more pervasive effect. However, previous studies have shown that chemical inhibition of Brd4, which also leads to Myc downregulation, has little or no effect for mouse hematopoiesis (Zuber et al., 2011c).\n\nWe performed competitive bone marrow transplantations with shRNA-expressing HSCs on lethally irradiated mice and monitored hematopoietic reconstitution via peripheral blood analysis. The shRNAs were sub-cloned into a lentiviral vector that also expressed the fluorescent protein, zsGreen, under the SFFV promoter, to ensure expression in the early progenitors and allow for identification of transduced cells. To distinguish donor from recipient cells, we took advantage of the syngeneic mouse strains CD45.2 and CD45.1. We used a combination of CD11b and Ly6G antibodies as a broad gate for all myeloid cells and we monitored the zsGreen percentage within the donor cells for this compartment (Figure 7A). If an shRNA targeted a gene that is required at some stage of myeloid differentiation, we would observe a reduction in the percentage of zsGreen-expressing cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25607/elife-25607-fig7-v2.jpg)\n\n**Figure 7.:** (A) Outline of the peripheral blood analysis following bone marrow transplantation. (B) Relative zsGreen percentage to week 4 values. Values of zsGreen represent percentage within donor (CD45.2 +) for the myeloid compartment. Average log2 fold change shown, error bars represent s.e.m. Statistical significance was calculated using the Mann-Whitney/Wilcoxon Rank Sum Test (* p-value<0.05). (C) Relative expression of lncRNAs between leukemia cells (RN2) and two normal progenitor cells types, GMP (left) and LT-HSC (right) versus normalized read counts. Log2 fold change and normalized read counts obtained using DESeq2. Blue dots depict differentially expressed lncRNAs (FDR\u00a0<\u00a00.05), lncRNAs of interest are highlighted in red.\n\nWe observed a significant depletion of zsGreen-expressing cells over time with either hairpin targeting Pilna as compared to Renilla knockdown, while little or no effect was observed for Pvt1 and Lilam shRNAs (Figure 7B). When we examined the expression of these three lncRNAs, we observed that both Pvt1 and Lilam were highly upregulated in leukemia cells (RN2) as compared to their most similar normal progenitors, GMPs, or HSCs (Figure 7C). On the other hand, Pilna is broadly expressed across hematopoietic progenitors. Our results suggest a more general role in hematopoiesis for Pilna, while lncRNAs that show leukemia-enriched expression, Pvt1 and Lilam, could be dispensable for myeloid differentiation. This resource and the defined cohorts of leukemia-enriched lncRNAs could be further used to identify other lncRNA with potential leukemia-specific roles.\n\n## Discussion\n\nLong non-coding RNAs are emerging as a recently recognized class of regulators that have broad impact in biology. To enable the study of this impact and breadth of function in a well-characterized developmental model, we have produced a de novo catalog of lncRNAs from a representative sampling of cell types throughout the hematopoietic lineage and from two models of hematological malignancies. To globally characterize the likely impact of lncRNAs in normal and malignant hematopoiesis, we chose a subset of RNAs with a range of expression levels and patterns and tested whether these had a function in a murine model of AML. We performed a loss-of-function screen of 120 candidates and found that 20 of these were required for in vivo leukemia progression. We further characterized nine lncRNAs, all of which were required for leukemia cell proliferation in vitro but were dispensable in at least one other unrelated cancer model. A subset of these lncRNAs functioned in maintaining leukemia stem cell signatures; the leukemic blasts acquired a myeloid differentiated phenotype upon lncRNA knockdown. Amongst such lncRNAs was Pvt1, which has been shown previously to act via the transcription factor MYC (Tseng et al., 2014). This also appeared true in our model, as enforced expression of MYC rescued the proliferation and differentiation phenotypes observed upon depletion of Pvt1. Although the same phenotype, including Myc-mediated rescue, was also observed for two other lncRNAs (Lilam and Pilna) in leukemia, only Pilna showed an effect in normal reconstitution of the myeloid lineage. This is consistent with the progenitor-wide expression of Pilna and suggests a general role in hematopoiesis for this lncRNA. Expression of lncRNAs Pvt1 and Lilam is highly induced in the leukemia context and they could, on the other hand, be dispensable for normal myelogenesis.\n\n### Regulation of lncRNA expression\n\nExpression analysis of our annotated lncRNAs revealed that differential regulation between cell types and at different stages of differentiation. Much attention has been focused on noncoding RNAs transcribed in the opposite orientation from the same promoter region as coding transcripts, known as divergent transcripts. This raises questions regarding whether these noncoding transcripts are truly functional, or whether they are simply a byproduct of transcription from an activated promoter. Expression of divergent lncRNAs has been shown to correlate with their corresponding protein-coding counterparts, and even to regulate their counterparts in pluripotent stem cells (Casero et al., 2015; Dinger et al., 2008; Luo et al., 2016; Sigova et al., 2013).\n\nWe indeed find a correlation between lncRNA expression and that of the closest protein-coding gene; however, this is not an exclusive property of divergent transcripts. We also observe correlation for other lncRNA-gene genomic orientations, as well as for gene-gene pairs. We therefore hypothesize that this correlation in expression arises from shared regulatory mechanisms or common regulatory environments. For the two divergent lncRNAs amongst the ones we characterized, we did not find evidence for cis regulation of their corresponding divergent gene.\n\n### lncRNA dependencies in AML\n\nWe probed the functional relevance of lncRNAs using AML as a model. By performing an shRNA screen targeting 120 lncRNAs, we identified 20 lncRNAs whose expression confers a proliferative advantage to leukemia cells in vivo. This was striking particularly because we did not solely target AML-enriched lncRNAs but rather cast our net broadly. Thus, our findings emphasize the general importance for lncRNAs in leukemia and possibly normal hematopoiesis. We tested whether the lncRNAs that impacted AML were also required for proliferation of the breast cancer cell line 4T1. In this model, we observed no significant effect of knockdown. This could be due to cell type-restricted expression or function but can be taken as support for the specificity of the effects observed in AML.\n\nThree lncRNAs emerged as candidates required for leukemia progression, as their depletion led to leukemic blast differentiation. Amongst these was Pvt1, a lncRNA previously reported to be a marker of poor prognosis in colorectal cancer (Takahashi et al., 2014) and shown to be required in MYC-driven cancers (Tseng et al., 2014). The mechanism for human PVT1 function, as shown in breast cancer, involves PVT1 stabilization of the MYC protein. We observe a similar effect in our leukemia model, with MYC protein levels being disproportionately reduced when PVT1 is depleted.\n\nEnforced expression Myc rescued the effects of Pvt1, as well as Lilam and Pilna, knockdown in MLL-AF9 leukemia cells. This suggests that these lncRNAs have a direct or indirect functional relationship with Myc, an oncogene upon which this AML model heavily depends. This finding adds a layer to the already complex regulatory landscape of AML, and fits in with published results that have shown similar phenotypes when Myc levels are reduced by disturbing bromodomain containing 4 (Brd4) (Zuber et al., 2011c) or the Myc superhancer (Shi et al., 2013). lncRNA Pilna, but not Pvt1 and Lilam are required for the myeloid lineage during bone marrow reconstitution. This is consistent with the pan-progenitor expression of this lncRNA in contrast with the AML-specific nature of Pvt1 and Lilam. Further studies will be required to determine the breadth of lncRNA roles in the hematopoietic system, though this gives us reason to believe that the normal setting, just like AML, will be heavily dependent on these non-coding transcripts.\n\nConsidered as a whole, we have produced an extensive resource of lncRNA expression in the hematopoietic system and demonstrated that a substantial percentage of these are functional, at least in a model of malignant development. One of these lncRNAs, expressed across most hematopoietic progenitors, is additionally required in myeloid reconstitution. The data and tools that we have produced should serve a useful purpose in promoting studies in both the normal and leukemic context.\n\n## Materials and methods\n\n### Animal work\n\nTissue extraction for transcriptome studies and the in vivo shRNA screen were performed in Cold Spring Harbor Laboratories (NY, USA). RNAseq libraries for transcriptomic assembly and differential expression were prepared from female C57BL/6 (6\u201312 weeks old) purchased from Charles River (Wilmington MA). For the in vivo shRNA screen, female B6.SJL-Ptprca/BoAiTac (also known as LY5.1, 8\u201312 weeks old) were purchased from Taconic (Hudson, NY). All these experiments were approved by the Cold Spring Harbor Animal Care and Use Committee.\n\nBone marrow transplantations of modified HSCs and subsequent analysis of peripheral blood from these mice were performed at the Cancer Research UK Cambridge Institute (Cambridge, UK). C57BL6J (6\u201312 weeks old) were purchased from Charles River (Kent, England). C57BL/6-LY5.1 females were purchased from Charles River (Kent, England) and used at 9\u201312 weeks old. These animal procedures were conducted in accordance with project and personal licenses issued under the United Kingdom Animals (Scientific Procedures) Act, 1986.\n\n### Low input RNAseq library preparation for transcriptome assembly and differential expression\n\nLow input libraries were prepared from C57BL6 mice for all normal hematopoietic cell types depicted in Figure 1A. Femurs and tibias were flushed with Hanks Balanced Salt Solution (Gibco) supplemented with 1% heat inactivated Fetal Bovine Serum (HyClone). For lineage depletion, the Mouse Lineage depletion kit (Milteny Biotec 130-090-858,\u00a0Germany) was used. To preserve RNA integrity, the procedure was carried out at 4\u00b0C. Cells were sorted following previously published gating strategies, shown in Figure 1\u2014figure supplement 2 and RNA was extracted using NucleoSpin RNA XS (Machery Nagel,\u00a0Bethlehem, PA), including DNase treatment. Between 3000 and 10,000 cells were used as library input using Clontech\u2019s SMARTer Ultra Low input RNA Sequencing Kit (Cat. No. 634823, Clontech, Mountain View, CA). cDNA was sheared to 300 bp on a Covaris LE220 and used as input for Clontech\u2019s low input library preparation for Illumina Sequencing kit (Cat. no. 634947). Libraries were sequenced paired-end 100 bp on an Illumina HiSeq2500. Due to the low percentage that HSCs represent in the bone marrow, the libraries were prepared form low numbers of cells as stated above and two biological replicates were produced for each library.\n\n### RNAseq library preparation for transcriptome assembly\n\nRNAseq libraries enriched for low-abundance transcripts were prepared for AML cell lines, lymphomas, and FACS-sorted PreB and ProB cells as follows. RNA was extracted using Trizol reagent (Thermo\u00a0Fisher\u00a0Scientific), DNase-treated, then polyadenylated transcripts were isolated using the Dynabead mRNA purification kit (Thermo\u00a0Fisher\u00a0Scientific). Purified mRNA was fragmented by heating to 98\u00b0C for 30 min in RNA storage buffer (Ambion), then converted to cDNA with random primers using the Superscript III RT kit (Invitrogen). Second-strand synthesis was performed in the presence of dUTP, then Illumina adapters were ligated onto the dsDNA fragments. To preserve strand identity, the uracil-containing cDNA strand was digested using USER enzyme (NEB), then cDNA was amplified using adapter-specific PCR primers and purified using Agencourt AMPure XP beads (Beckman Coulter). The samples were subsequently enriched for low-abundance transcripts by Duplex-Specific Nuclease (DSN) treatment (Illumina) followed by low-cycle PCR, then gel-purified and cleaned up using Agencourt AMPure XP beads (Beckman Coulter,\u00a0Brea,\u00a0CA). Libraries were sequenced by paired-end 76 bp on an Illumina HiSeq2500.\n\n### RNASeq data processing and catalog assembly\n\nRNAseq libraries were mapped with STAR aligner (Dobin et al., 2013) against the mm10 mouse genome assembly using default parameters. Duplicate alignments were removed from the resulting BAM files with Picard (http://broadinstitute.github.io/picard). Transcriptome assembly was performed individually for each library with cufflinks (Trapnell et al., 2010) utilizing GENCODE Release M4 annotations. Individual transcriptome assemblies were merged with program cuffmerge (Trapnell et al., 2010). The resulting merged assembly was filtered by removing transcripts (a) consisting of a single exon or spanning fewer than 200 bp, (b) overlapping a coding exon in the same orientation, (c) having FPKM below 0.3, (d) having at least one exon supported by fewer than 40 reads in each library, (e) overlapping genes annotated as IG*, (f) having a coding probability estimated by CPAT below 0.5 (Wang et al., 2013). We also required that an intron-exon structure of a transcript was supported in at least two libraries. The intron-exon structure similarity of two transcripts was measured using Jacquard index of genomic intervals defined by their introns. A Jaccard index cutoff of 0.2 was used. In order to calculate the number of fragments mapping to each transcript in each library overlapping catalog genes were merged together. The fragment counting itself was performed with the program htseq-counts (Anders et al., 2015). These merged annotations were used for subsequent expression analyses.\n\n### Cell culture maintanance\n\nMLL-AF9;NRASG12D AML cells were obtained from the Lowe laboratory (Zuber et al., 2011a) and cultured in RPMI-1640 with GlutaMax (Gibco), supplemented with 10% heat-inactivated FBS (HyClone) and 1% Penicillin/Streptomycin (Gibco) under 7.5% CO2 culture conditions. The cell line established from this model is also known as RN2. MLL-ENL;NRASG12D and Myc;NRASG12D;p53 null were kind gifts from Johannes Zuber (unpublished) and were kept in the same culture conditions as RN2. Platinum-A packaging (purchased from Cell Biolabs Inc, San Diego, CA) were cultured in DMEM containing 4.5 g/L glucose, 4 nM L-Glutamine and 110 mg/L Sodium Pyruvate, supplemented with 10% FBS (HyCLone) and 1% Penicillin/Streptomycin (Gibco) under 5% CO2 culture conditions. 293 FT (purchased from Thermo Fisher Scientific) were cultured as per manufacturer\u2019s instructions. The mouse mammary tumour cell line 4T1 (purchased from ATCC,\u00a0Manassas,\u00a0VA) was cultured in DMEM high glucose (Life Technologies) supplemented with 5% fetal bovine serum (HyCLone), 5% fetal calf serum (HyCLone), non-essential amino acids (Life Technologies) and penicillin-streptomycin (Life Technologies). All cell lines tested negative for mycoplasma contamination RNA-capture ELISA.\n\n### shRNA design and cloning\n\nshRNAs were predicted using the shERWOOD computation algorithm (Knott et al., 2014). To select the best 4\u20135 shRNAs against each lncRNA with all its isoforms, we pooled the RNAseq data for the hematopoietic cell types and prioritized the regions of highest coverage. shRNAs were cloned into the appropriate vectors, with ultramiR backbone: TRMPV-Neo (AML screen), ultramiR-zsGreen-NeoR (validation one-by-one knockdown), T3GRUMPV-Neo (clonal inducible cell lines) or ZIP-Neo (bone marrow transplantations), as previously described (Knott et al., 2014).\n\n### Virus production\n\nVirus production for was performed as previously described (Wagenblast et al., 2015). In brief, for MSCV-based retroviruses, Platinum-A packaging cells (Cell Biolabs) were plated on 10 cm dishes and transfected at\u00a0~70% confluency. A transfection mixture of with 20 \u03bcg of shRNA vector, 2.5 \u03bcg of VSV-G, 66.8 \u03bcl of 20 \u03bcm Pasha siRNA (Qiagen,\u00a0Germantown, MD) and 62.5 \u03bcl 2M CaCl2 was prepared and brought to 500 \u03bcl with H2O. This mixture was vigorously bubbled into 500 \u03bcl of 2X HBS solution (50 mM HEPES, 280 mM NaCl, 1.5 mM Na2P04, 12 mM Glucose,10 mM KCl) for 30\u201360 s and added to cells in 9 ml of supplemented DMEM. After 16 hr, media was changed to supplemented RPMI and then collected 24 hr, 36 hr and 48 hr after media change and filter through a 0.45-\u03bcm filter (EMD Millipore). When necessary, virus was concentrated using Retro-X concentrator (Clontech).\n\nFor third generation lentiviruses, virus was prepared in 15 cm dishes using 293FT cells (Thermo Fisher Scientific). The transfection mixture contained 32 \u03bcg of DNA vector, 12.5 \u03bcg of pMDL, 6.25 \u03bcg of CMV-Rev, 9 \u03bcg of VSV-G, 200 \u03bcg of Pasha siRNA, 125 2.5M of CaCl2 brought to 1250 \u03bcl with H2O and bubbled into 1250 \u03bcl 2X HBS. Media was changed to IMDM supplemente with 10% heat-inactivated FBS right before transfection and collected in 16 ml of the same media. 38 ml of viral supernant was ultracentrifuged for 2.5 hr at 25,000 rpm at 4\u00b0C, and resuspended in 100 \u03bcl of D-PBS (Gibco).\n\n### Pooled shRNA screening in vivo\n\nPools of 50 shRNA vectors were used to produce virus and transduce AML cells at a low multiplicity of infection to minimize double infections. Cells were treated with 500 \u03bcg ml\u22121 G-418 (Roche Applied Science,\u00a0Penzberg, Germany) from 2 days after infection until fully selected. 1 \u00d7 106 fully selected AML cells were injected in the tail vein of sublethally irradiated (4.5 Gy, 24 hr before injection) B6.SJL (CD45.1) female mice 6\u20138 weeks of age. For shRNA induction, animals were treated with doxycycline in the food (625 mg kg\u22121, Harlan Laboratories/Envigo, South Easton, MA). Leukemic mice were euthanized 14 days after transplantation, at terminal disease stage, by CO2. Cells were extracted from the bone marrow by flushing tibias and femurs and filtered (0.45 \u03bcm) to obtain a single cell suspension. For each pool, we required a minimum of three mice at the 14-day timepoint.\n\n### shRNA library processing and analysis\n\nLibrary preparation was performed as previously described (Knott et al., 2014). In brief, genomic DNA was extracted from the pre-injection pool and the bone marrow cell suspensions using the QIAamp Blood DNA Maxi Kit (Qiagen). For each sample, shRNA hairpins were extracted from genomic DNA in 96 separate 25-cycle PCR reactions where 2 \u03bcg of input DNA was included in each reaction. Following this initial PCR, Illumina adapters were added via PCR, and samples were processed on the Illumina MiSeq platform. Reads were extracted and mapped to the shRNAs of the corresponding pool using bowtie (allowing 0 mismatches). To analyze the depletion between the final timepoint and input, DESeq was used with Fit type \u2018local\u2019. For follow up in vitro culture studies, we selected lncRNAs with at least two hairpins significantly depleted (FDR\u00a0<\u00a00.05) or one hairpin significantly depleted and another with at least twofold depletion.\n\n### Cell culture competition assays\n\nCells cells were transduced with retroviral supernatant. Infection was assessed by flow cytometry analysis of a fluorescent reporter and kept to\u00a0<30%. The percentage of cells expressing the fluorescent reporter over time was used to determine whether cells harboring the shRNA were being outcompeted by their uninfected counterparts.\n\n### Immunophenotyping\n\nRN2 cells harboring inducible shRNAs were cultured in complete media containing 1 \u03bcg/mL doxycycline (Clontech) for 4 days. Cells were stained in MACS Buffer (Miltenyi Biotech) with CD11b/Mac-1 PE-Cy7 and cKit APC for 30 min on ice and analyzed by flow cytometry. Plots were produced using FlowJo software and Geometric Mean of the appropriate channel was extracted for fold change calculations.\n\n### Wright-Giemsa staining on cytospun cells\n\nCells were resuspended to 50,000 cells in 100 \u03bcl in MACS Buffer (Miltenyi Biotec). Of this buffer, 100\u00a0\u03bcl\u00a0was first spun on the slides, followed by spinning of the cells for 5 min at 500 RPM. Slides were stained using the Kwik-Diff three step stain (Fixative; Eosin; Methylene Blue) from Thermo Fisher Scientific and imaged using the Aperio XT system at 40X.\n\n### Relative mRNA quantification by RT-qPCR\n\nAnalysis of knockdown efficiency and relative gene expression changes was performed after inducing shRNA expression for 2 days. RNA was extracted using the RNeasy Mini Kit (Qiagen), including treatment with the DNase Set (Qiagen). Reverse transcription was performed using Superscript II (ThermoFisher Scientific), with 4 \u03bcg of RNA and 1 ul of 50 \u03bcM oligo(dT)20. Primers were designed using IDT PrimerQuest tool or chosen from IDT\u2019s pre-designed set when available. Fast SYBR Green (ThermoFisher Scientific) was used for qPCR. Primer pair efficiency was assessed using serial dilutions of cDNA from untreated RN2 cells, and melting curves were examined to ensure the presence of only one amplicon. Gapdh was used as a housekeeping normalization control in the delta-delta-Ct analysis. For lnc_104449, we did not obtain a CT value upon knockdown with sh4 (sh1\u00a0in\u00a0the\u00a0heatmap) in 14 out of the 18 technical replicates after 40 cycles of qPCR. Therefore, we set those values to 40, if at all underestimating the actual knockdown with this hairpin.\n\n### RNAseq from lncRNA-depleted AML and data analysis\n\nGene expression analysis was performed on RN2 cells harboring an inducible shRNA, treated with doxycycline for 2 days. RNA was extracted using TRIzol (Thermo Fisher Scientific). RNA sequencing libraries were prepared using TruSeq Stranded Total RNA Library Prep Kit (Illumina) and run on an Illumina HiSeq 2000. Reads were mapped to the mm10 genome assembly yielding at least 106 aligned reads per sample. HTSeq-count (Anders et al., 2015) was used to calculate gene counts and subsequently input them into DESeq2 (Love et al., 2014) for quality control analysis, size normalization and variance dispersion corrections. Gene Set Enrichment Analysis (GSEA) was performed on variance-stabilized data.\n\n### MYC western blotting\n\nWhole cell lysates were prepared by resuspending cell pellets in SDS-PAGE loading buffer and run in a NuPAGE Novex 4\u201312% Bris-Tris Protein Gel. Transfer was performed using iBlot2.0 into PVDF membranes. Membranes were incubated with primary antibodies against MYC (Abcam AB32072 [Y69],\u00a0UK) and b-actin (Abcam Ab6276) and secondary LiCor fluorescent antibodies. Membranes were imaged using the semi-quantitative LiCor Odyssey CLx system. MYC values are internally normalized to the B-ACTIN within each lane.\n\n### Isolation, infection and short-term culture and transplantation of HSCs\n\nBone marrow from C57BL6 mice was extract by flushing, filtered through a 0.30 \u03bcm filter and lineage depleted (Mouse Lineage depletion kit, Milteny Biotec 130-090-858). Cells were stained with EPCR-PE, CD45-APC, CD150-PE/Cy7 and CD48-FITC. DAPI or LIVE/DEAD Fixable Violet Dead Cell Stain Kit (Thermo Scientific L34963) was used for dead cell exclusion. Sorting of highly pure E-SLAM HSC and sort-term (<24 hr) culture was performed as previously described (Kent et al., 2009). In short, 1000 alive EPCR\u00a0+CD45+CD150+CD48- lineage negative cells were sorted in 100 \u03bcl of media: Iscove modified Dulbecco medium supplemented with 10 mg/mL bovine serum albumin, 10 \u03bcg/mL insulin, and 200 g/mL transferrin, 100 U/mL penicillin, 100 \u03bcg/mL streptomycin [purchased as BIT from StemCell Technologies], and 10\u22124 M \u03b2\u2013mercaptoethanol (Gibco) plus 20 ng/mL interleukin-11 (IL-11; R and D Systems) and 300 ng/mL Steel factor (R&D Systems)). Ultracentrifuged viral supernatant was added aiming at a final concentration of\u00a0~2\u00d7107 IU/ml following the sorting. Each well was used to inject four animals; cells were washed prior to injecting to remove remaining viral particles.\n\n### Peripheral blood extract and flow cytometry analysis\n\nBlood was analyzed starting from 4 weeks after transplantation and every 4 weeks thereafter. 50\u201375 \u03bcl of blood was extracted from the animals\u2019 tail vein into heparin coated capillary tubes. Red blood cell lysis was performed using Ammonium Chloride Solution (Stem Cell Technologies). Samples were then stained with a pre-mix antibody cocktail and analysed in a LSR Fortessa (BD Biosciences). Flow data analysis was performed using FlowJo and statistical analysis using R Studio.\n\n### Antibodies used for flow cytometry analysis and sorting\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Antigen</th>\n      <th>Company</th>\n      <th>Clone</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sca1 PE</td>\n      <td>Ly-6A/E (Sca-1)</td>\n      <td>eBioscience</td>\n      <td>D7</td>\n    </tr>\n    <tr>\n      <td>cKit APC</td>\n      <td>cKit/CD117</td>\n      <td>eBioscience</td>\n      <td>2B8</td>\n    </tr>\n    <tr>\n      <td>CD150 PE-Cy7</td>\n      <td>CD150</td>\n      <td>Biolegend</td>\n      <td>TC15-12F12.2</td>\n    </tr>\n    <tr>\n      <td>CD48 FITC</td>\n      <td>CD48</td>\n      <td>Biolegend</td>\n      <td>HM48-1</td>\n    </tr>\n    <tr>\n      <td>IL7Ra/CD127 PerCP-Cy5.5</td>\n      <td>CD127 (IL7Ra)</td>\n      <td>eBioscience</td>\n      <td>A7R34</td>\n    </tr>\n    <tr>\n      <td>cKit APC-Cy7</td>\n      <td>cKit/CD117</td>\n      <td>Biolegend</td>\n      <td>2B8</td>\n    </tr>\n    <tr>\n      <td>CD34 eFluor450</td>\n      <td>CD34</td>\n      <td>eBioscience</td>\n      <td>RAM34</td>\n    </tr>\n    <tr>\n      <td>FgRg FITC</td>\n      <td>CD16/CD32 (FcgRII/III)</td>\n      <td>eBioscience</td>\n      <td>clone 93</td>\n    </tr>\n    <tr>\n      <td>CD3 Pacific Blue</td>\n      <td>CD3</td>\n      <td>Biolegend</td>\n      <td>17A2</td>\n    </tr>\n    <tr>\n      <td>Gr1 Alexa Fluor 700</td>\n      <td>Ly-6G/Ly-6C (Gr-1)</td>\n      <td>Biolegend</td>\n      <td>RB6-8C5</td>\n    </tr>\n    <tr>\n      <td>IgM eFluor450</td>\n      <td>IgM</td>\n      <td>eBioscience</td>\n      <td>eB121-15F9</td>\n    </tr>\n    <tr>\n      <td>B220 Alexa Fluor 700</td>\n      <td>CD45R (B220)</td>\n      <td>Biolegend</td>\n      <td>RA3-6B2</td>\n    </tr>\n    <tr>\n      <td>CD43 FITC</td>\n      <td>CD43</td>\n      <td>eBioscience</td>\n      <td>eBioR2/60</td>\n    </tr>\n    <tr>\n      <td>CD11b/Mac-1 PE-Cy7</td>\n      <td>CD11b (Mac-1)</td>\n      <td>Biolegend</td>\n      <td>M1/70</td>\n    </tr>\n    <tr>\n      <td>EPCR-PE</td>\n      <td>EPCR</td>\n      <td>Stem Cell Tech</td>\n      <td>RMEMPCR1560</td>\n    </tr>\n    <tr>\n      <td>CD45-APC</td>\n      <td>CD45</td>\n      <td>eBiosciences</td>\n      <td>30-F11</td>\n    </tr>\n    <tr>\n      <td>Ly6G-APC/Cy7</td>\n      <td>Ly6G</td>\n      <td>eBiosciences</td>\n      <td>1A8</td>\n    </tr>\n    <tr>\n      <td>CD45.1-PE</td>\n      <td>CD45.1</td>\n      <td>eBiosciences</td>\n      <td>A20</td>\n    </tr>\n    <tr>\n      <td>CD45.2-BV421</td>\n      <td>CD45.2</td>\n      <td>eBiosciences</td>\n      <td>104</td>\n    </tr>\n  </tbody>\n</table>\n\n### ATAC-seq data processing\n\nATAC-seq libraries (Lara-Astiaso et al., 2014) were first adaptor trimmed with trim-galore (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). The resulting FASTQ files were mapped with bowtie2 (Langmead and Salzberg, 2012) aligner against mm10 mouse assembly using default parameters. Duplicate alignments were removed with Picard (http://broadinstitute.github.io/picard); alignments to mitochondrial chromosome and unplaced contigs were also removed. The coverages were calculated with bedtools (Quinlan, 2014).\n\n### ChIP-seq data processing\n\nChIP-seq libraries (Roe et al., 2015) were mapped the same way as ATAC-seq. The heatmaps were generated with deeptools, using computeMatrix and plotHeatmap programs (Ram\u00edrez et al., 2016).\n\n### Gene co-expression modules\n\nThe read counts were first transformed variance-stabilizing transformation in DESeq2 (Love et al., 2014). The modules themselves were obtained with WGCNA R package (Langfelder and Horvath, 2008). WGCNA analysis was performed using blockwiseModules function. Signed correlation networks were used and the power for soft-thresholding was selected according to scale-free topology criterion. The minimum co-expression module size was set to 300 and merge cut parameter to 0.25.\n\n### Differential expression analysis\n\nDifferential-expression analysis was performed with voom/limma (Law et al., 2014; Ritchie et al., 2015) utilizing empirical Bayes method (Smyth, 2004). Prior to differential-expression analysis, genes that did not attain counts-per-million of at least two in more than two libraries were filtered out.\n\n### Correlation analysis\n\nSpearman correlation was calculated for relevant pairs of genes using variance-stabilized expression values (Love et al., 2014) across libraries.\n",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "0e053476-7380-4532-b6e1-436e16d44c15",
+      "submission_id": "51e956b9-4b92-4157-86ed-25554b308ca4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Juan Valc\u00e1rcel, Centre de Regulaci\u00f3 Gen\u00f2mica (CRG), Barcelona Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25607.030](https://doi.org/10.7554/eLife.25607.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"lncRNA requirements for mouse acute myeloid leukemia and normal differentiation\" for consideration by eLife. Your article has been favorably evaluated by Fiona Watt (Senior Editor) and three reviewers, one of whom, Juan Valc\u00e1rcel (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Jan-Henning Klusmann (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nJoint review:\n\nIn their study, Delas et al. systematically characterize lncRNAs expression during mouse hematopoiesis and in a well-established mouse model for AML (MLL-AF9/NRAS G12D). Their analysis of previously annotated and de novo assembled lncRNAs led them to uncover several lncRNAs with a specific expression pattern during differentiation and in AML. To investigate the function of 120 lncRNAs with such a specific expression pattern they performed a shRNA in vivo screening, using the same MLL-AF9/NRAS G12D mouse model. They identified 20 lncRNAs whose knock down by at least two hairpins reduces leukemia cell proliferation in vivo, possibly related to the maintenance of a leukemic stem cell state (and inhibition of a myeloid differentiated phenotype). 14 out of these were further validated in one cell line in in vitro competition assays. Mechanistically they linked the function of three of their candidate lncRNAs (Pilna, Pvt1 and Lilam) to the expression of MYC.\n\nThese data provide a useful resource for scientists working on hematopoiesis, leukemias and lncRNA biology and provide a proof of principle that specific lncRNAs can play distinct roles in leukemia cell maintenance, in addition to more general functions during hematopoiesis. There have been of course previous efforts to map lncRNAs in both AML and hematopoietic stem cells, as well as reports arguing for a crucial regulatory role for pvt1 in MYC-driven cancers, affecting novelty of some of the data. Nevertheless, the study remains relevant, as it can facilitate understanding the function of lncRNAs in normal and malignant hematopoiesis, which is to date poorly understood. Technically the in vivo screening was thoroughly conducted (including the use of pools of 50 shRNAs) and the candidates well chosen.\n\nMajor points:\n\nThe manuscript will benefit from addressing issues of validation and generality of the results and from additional functional characterization of the lncRNAs. Specifically:\n\n1) Validation issues.a) Previous studies have demonstrated that lncRNA prediction based on de novo assembly of RNAseq data has a high frequency of false predictions. A recent study showed that the accuracy greatly improved by combining the RNAseq data with CAGE data (Hon et al. Nature 2017). Thus, alignment of the newly identified lncRNAs with the CAGE signals would greatly increase the confidence of their resource.\n\nb) A major caveat for shRNA targeting of lncRNAs is the inefficiency for targeting nuclear lncRNAs due to the fact that the RNAi machinery is mostly cytoplasmic. It would be important to further document the general validity of their shRNA approach to efficiently knockdown nuclear lncRNAs (e.g. are most of the lncRNA candidates biased towards cytoplasmic lncRNA function compared to nuclear roles?). Given the high isoform complexity, the authors should comment to what extent the levels of different regions/isoforms of key lncRNAs are depleted when targeted by shRNAs directed against regions of highest RNAseq coverage.\n\nc) As suggested previously, RNAi has some disadvantages in knocking down lncRNAs, and relying on a single methodology for all the experiments increases the likelihood of false positives. Therefore, the authors should provide an alternative approach to validate the loss of function of these lncRNA candidates, for example antisense oligonucleotides, CRISPRi and paired-guide RNA CRISPR-Cas9 (see Liu et al. Science 2017 and Zhu et al. Nat Biotech 2016).\n\n2) Generality issues.a) They only utilized a single murine cell line model, and it will be beneficial to include another murine AML cell line to exclude cell line-specific bias in these studies. Also, in this paper, the authors claim that Lilam and Pvt1 are AML-specific but have only demonstrated the specificity with one breast cancer cell line; however other groups have shown crucial roles of Pvt1 in ovarian, cervical and colorectal cancer. To claim specificity, the authors should test if knockdown of Lilam and PVT1 is required in other hematopoietic lineages or cell types.\n\nb) PVT1, as previously mentioned is also annotated in human cancers and it would be great to see if this phenomenon is translated into human AMLs (e.g. targeting PVT1 or/and the other lncRNAs in a panel of human MLL-AF9 cell lines).\n",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "56efecee-deac-469a-b54a-84a3b046ba1a",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C1",
+      "claim": "A substantial fraction of the genome is transcribed in a cell-type-specific manner, producing long non-coding RNAs (lncRNAs), rather than protein-coding transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial fraction of the genome is transcribed in a cell-type-specific manner, producing long non-coding RNAs (lncRNAs), rather than protein-coding transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about genome transcription that draws from established scientific knowledge about lncRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "aae0d269-20d4-44ee-b5fe-f41dc0ecdd62",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C2",
+      "claim": "The analysis of annotated and de novo assembled lncRNAs showed many are regulated during differentiation and mis-regulated in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of annotated and de novo assembled lncRNAs showed many are regulated during differentiation and mis-regulated in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the transcriptome analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "b5c6bc4e-37b8-4c32-9d09-5a4d07bbd9e1",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C3",
+      "claim": "An in vivo RNAi screen in a model of acute myeloid leukemia identified several lncRNAs essential for leukemia maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed lncRNA function via an in vivo RNAi screen in a model of acute myeloid leukemia. This identified several lncRNAs essential for leukemia maintenance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental screen results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "3023ec14-0d6f-47ec-84b4-3d647dbef391",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C4",
+      "claim": "A number of lncRNAs act by promoting leukemia stem cell signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified several lncRNAs essential for leukemia maintenance, and found that a number act by promoting leukemia stem cell signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GSEA analysis and immunophenotyping data showing enrichment of leukemia stem cell signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "eade6e04-d2a3-4f0e-b61f-a715dc7cd0f3",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C5",
+      "claim": "Leukemia blasts show a myeloid differentiation phenotype when these lncRNAs were depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Leukemia blasts show a myeloid differentiation phenotype when these lncRNAs were depleted",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data showing upregulation of CD11b and downregulation of c-Kit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "d5f315ba-9153-43a0-bfcf-7c06051ff411",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C6",
+      "claim": "The myeloid differentiation effect upon lncRNA depletion is mediated via effects on the MYC oncogene.",
+      "claim_type": "EXPLICIT",
+      "source": "our data indicates that this effect is mediated via effects on the MYC oncogene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MYC rescue experiments showing that enforced MYC expression rescues the differentiation phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "52a12e94-be0c-41c6-a4c8-300d82c91dc2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C7",
+      "claim": "A lncRNA expressed across all progenitors was required for the myeloid lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone marrow reconstitutions showed that a lncRNA expressed across all progenitors was required for the myeloid lineage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bone marrow transplantation experiments showing depletion of Pilna-expressing cells in the myeloid compartment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "70f7bd67-80f2-4d8b-abac-eeffe3e831f4",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C8",
+      "claim": "The leukemia-induced lncRNAs were dispensable in the normal setting.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the other leukemia-induced lncRNAs were dispensable in the normal setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bone marrow transplantation experiments showing no effect of Pvt1 and Lilam knockdown on normal hematopoiesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "726a297f-ce20-4312-9465-3f1d5a5bc025",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C9",
+      "claim": "lncRNAs have emerged as an additional layer of regulation of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Long noncoding RNAs (lncRNAs) have emerged as an additional layer of regulation of gene expression (Rinn and Chang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "cbc405ef-8c4b-46d9-86d3-f631e99cd3f7",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C10",
+      "claim": "lncRNAs are defined as transcripts longer than 200 bp with little or no evidence of protein coding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their definition is rather arbitrary \u2013 transcripts longer than 200 bp with little or no evidence of protein coding capacity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in the field based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "cd8c442a-c80d-47ac-bf63-3c64cde8afaf",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C11",
+      "claim": "lncRNAs have essential and diverse reported functions.",
+      "claim_type": "EXPLICIT",
+      "source": "their reported functions are essential and diverse (Wang and Chang, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "d49fcb8e-953b-4b28-b8fc-833dcd3a828e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C12",
+      "claim": "lncRNAs have been identified as important for dendritic cell specification, epidermal, and cardiac differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNAs important for dendritic cell specification, epidermal, and cardiac differentiation have been identified (Grote et al., 2013; Klattenhoff et al., 2013; Kretz et al., 2013; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c460dfff-15fc-48a5-acfb-f5983708062f",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C13",
+      "claim": "lncRNAs are differentially expressed in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent large-scale cataloging efforts have highlighted how lncRNAs are also differentially expressed in human cancers (Du et al., 2013; Iyer et al., 2015; Yan et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "d21c4f18-ced1-4583-894e-24db50d6ad88",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C14",
+      "claim": "HOTAIR promotes metastasis in breast cancer through re-location of PRC2.",
+      "claim_type": "EXPLICIT",
+      "source": "In breast cancer models, HOTAIR has been shown to promote metastasis through re-location of PRC2 (Gupta et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "2647975d-a9a6-4bb9-8cd9-573e7fc457f4",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C15",
+      "claim": "PVT1 expression correlates with MYC protein levels and influences its stability.",
+      "claim_type": "EXPLICIT",
+      "source": "PVT1 expression correlates with MYC protein levels and influences its stability (Tseng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "534387cd-b177-45c8-ae6d-e6d71175e607",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C16",
+      "claim": "LUNAR acts as an enhancer-like RNA, activating expression of IGF1R in T-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst them, LUNAR was shown to act as an enhancer-like RNA, activating expression of IGF1R (Trimarchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "231fce3c-be7f-47c7-b252-407fd18f9e0f",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C17",
+      "claim": "lncRNA-EPS promotes survival and inhibits apoptosis in murine fetal erythroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNA-EPS promotes survival and inhibits apoptosis in murine fetal erythroblasts (Hu et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "e7a652d8-a6d1-4f13-9043-d9d6ebaa4419",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C18",
+      "claim": "lncRNA-EPS represses key immune genes in macrophages to restrain inflammation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "and represses key immune genes in macrophages to restrain inflammation in vivo (Atianand et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7db57257-a7ee-49e3-85cc-fd96725559d7",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C19",
+      "claim": "lncRNA-DC is required for dendritic cell differentiation through its binding to STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, lncRNA-DC is required for dendritic cell differentiation through its binding to STAT3 (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "090df307-9666-4291-8e97-d82003ab322b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C20",
+      "claim": "GENCODE-annotated lncRNAs are regulated in mouse early hematopoietic progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Global analyses showed GENCODE-annotated lncRNAs to be regulated in mouse early hematopoietic progenitors (Cabezas-Wallscheid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "12e1006e-7cc0-4886-86f6-e2e59c7d4716",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C21",
+      "claim": "Two novel lncRNAs were characterized and found to regulate HSC function.",
+      "claim_type": "EXPLICIT",
+      "source": "hematopoietic stem cells (HSCs), where two novel lncRNAs were characterized and found to regulate HSC function (Luo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "6172f1b5-e3e0-4f7e-aa40-524ce57d0a73",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C22",
+      "claim": "A comprehensive analysis of lncRNA dynamics through normal and malignant hematopoiesis has yet to be reported.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive analysis of lncRNA dynamics through normal and malignant hematopoiesis has yet to be reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature at the time of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "34b7544b-616a-493e-9ff9-5b98b42afc63",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C23",
+      "claim": "The murine hematopoietic system is a very well characterized model of stem and progenitor cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The murine hematopoietic system is a very well characterized model of stem and progenitor cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about the hematopoietic system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "b696d974-17ae-43ab-a8db-c8dbcab3c30a",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C24",
+      "claim": "Many of the same transcription factors required for progenitor self renewal and specification are involved in malignant transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the same transcription factors required for progenitor self renewal and specification are involved in malignant transformation (Krivtsov et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "f69ec9ee-28f7-4883-83bf-3008d8ac01d6",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C25",
+      "claim": "AML is often driven by fusion transcription factors or chromatin modifiers, such as MLL-AF9.",
+      "claim_type": "EXPLICIT",
+      "source": "AML is often driven by fusion transcription factors or chromatin modifiers, such as MLL-AF9, that maintain an aberrant transcriptional landscape in transformed cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about AML.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "91fa2f4a-7ebb-450f-a2f5-c82f7d2099a5",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C26",
+      "claim": "Interfering with chromatin-modifying complexes can lead to a substantial reduction in proliferation of AML cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, interfering with these chromatin-modifying complexes can lead to a substantial reduction in proliferation of these cancer cells (Dawson et al., 2011; Roe et al., 2015; Shi et al., 2013; Zuber et al., 2011c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "f3f7e306-bfa8-49eb-bccc-fcb17f60d642",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C27",
+      "claim": "One of the reported functions for lncRNAs is the regulation of gene activity through interactions on chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one of the reported functions for lncRNAs is the regulation of gene activity through interactions on chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about lncRNA functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "e3778ef9-2679-4bb9-9b75-3de746046300",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C28",
+      "claim": "HOTTIP activates expression of Hox genes by mediating recruitment of histone methyltransferase complex WDR5-MLL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lncRNAs HOTTIP and HoxBLinc, have been shown to activate expression of Hox genes by mediating recruitment of histone methyltransferase complexes WDR5-MLL and Setd1a/MLL1, respectively (Deng et al., 2016; Wang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7ebce799-daf6-43da-977a-ead35fca0272",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C29",
+      "claim": "HoxBLinc activates expression of Hox genes by mediating recruitment of histone methyltransferase complex Setd1a/MLL1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lncRNAs HOTTIP and HoxBLinc, have been shown to activate expression of Hox genes by mediating recruitment of histone methyltransferase complexes WDR5-MLL and Setd1a/MLL1, respectively (Deng et al., 2016; Wang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "448a3b4b-5112-48cc-b2ce-bddad693efab",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C30",
+      "claim": "HOTAIR regulates the chromatin landscape via recruitment of PRC2 and the LSD1/CoREST/REST complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "and HOTAIR regulates the chromatin landscape via recruitment of PRC2 and the LSD1/CoREST/REST complexes (Rinn et al., 2007; Tsai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "43bfd8c1-1608-4697-843f-ea6b02dbdbed",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C31",
+      "claim": "Deep RNA sequencing was performed using 11 cell types representing different stages of hematopoietic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed deep RNA sequencing (RNAseq) using 11 cell types representing different stages of hematopoietic differentiation, ranging from long-term hematopoietic stem cells (LT-HSC) to differentiated cell types and blood cancers (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "38ddb936-d071-45df-8d85-eb6da58de707",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C32",
+      "claim": "Each library was sequenced and mapped to the mm10 genome assembly, with an average of 100 million uniquely mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Each library was sequenced and mapped to the mm10 genome assembly, with an average of 100 million uniquely mapped reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing depth achieved in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "ac5dc136-40d7-4219-b24e-76f91902a2d6",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C33",
+      "claim": "De novo transcriptome assembly was performed for each library using cufflinks.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed de novo transcriptome assembly for each library using cufflinks (Trapnell et al., 2010), with the GENCODE annotation (Harrow et al., 2006) as a reference transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for transcriptome assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9cee4fb2-fc99-42d3-8f57-4f25b0cd0bec",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C34",
+      "claim": "Over half of the lncRNAs assembled were unique to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, over half of the lncRNAs assembled were unique to our study, likely due to our sequencing depth and the number of new cell types included (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the overlap analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "aea53683-2b35-43a2-a837-fd0edeae87b6",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C35",
+      "claim": "A meta analysis of transcriptional start sites within the full lncRNA catalog revealed a correlated open chromatin signal in every cell type with ATACseq data.",
+      "claim_type": "EXPLICIT",
+      "source": "A meta analysis of transcriptional start sites (TSSs) within our full lncRNA catalog revealed a correlated open chromatin signal in every cell type with ATACseq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ATAC-seq analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "0dd229ff-f4fd-40b7-8843-9223115b5874",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C36",
+      "claim": "The number of lncRNAs in the catalog that showed enrichment varied between cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of lncRNAs in our catalog that showed enrichment varied between cell types (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ATAC-seq analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "18ea862e-7ebd-45c8-ba4f-016b1ba8c082",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C37",
+      "claim": "No signal above background was observed at the start of the second exon as a control region.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the same analysis for the start of the second exon as a control region, and no signal above background was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a negative control analysis for the ATAC-seq signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9685e77f-a7a9-4097-b6ca-4acd4689d2d5",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C38",
+      "claim": "Assembled lncRNAs showed enrichment in ATACseq signal at their presumed TSS in at least one cell type irrespective of their relationship to surrounding protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of their relationship to surrounding protein-coding genes, our assembled lncRNAs showed enrichment in ATACseq signal at their presumed TSS in at least one cell type (Figure 1\u2014figure supplement 1\ufeff).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ATAC-seq analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "50785868-0024-4185-ac8c-8538b2dee50d",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C39",
+      "claim": "PCA based on the 500 most variable protein-coding genes showed that lymphoid differentiated cell types clustered together and separated from myeloid differentiated cell types and progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The lymphoid differentiated cell types CD3, PreB, and ProB clustered together and clearly separated from the myeloid differentiated cell type Gr1 and the progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the PCA analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8fbd7863-c193-4442-8807-46e7ba2ee23e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C40",
+      "claim": "Oligopotent progenitors and long-term repopulating hematopoietic stem cells are found in close proximity in PCA, indicating that they share some transcriptional programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite having very different functional properties, oligopotent progenitors and long-term repopulating hematopoietic stem cells (LT-HSCs) are found in close proximity, indicating that they share some transcriptional programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the PCA results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "91627c6e-d396-4a6b-8eaf-f639a00e1f37",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C41",
+      "claim": "The acute myeloid leukemia samples clustered closest to the granulocyte macrophage progenitor (GMP) population.",
+      "claim_type": "EXPLICIT",
+      "source": "The acute myeloid leukemia samples, both in vivo (AML) and in vitro (RN2 cell line), clustered closest to the granulocyte macrophage progenitor (GMP) population, consistent with previous reports for this AML model (Krivtsov et al., 2006) (Figure 1E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA analysis shown in Figure 1E and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "58181add-4a4f-4a4e-afea-ceefafec7a95",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C42",
+      "claim": "PCA based on lncRNA expression patterns replicated all the features observed with protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA based on lncRNA rather than coding gene expression replicated all the aforementioned features, indicating that lncRNA expression patterns are overall very similar to those of coding genes (Figure 1E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA analysis shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "abd75eca-cd12-4618-8468-c3379e375b63",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C43",
+      "claim": "The expression signatures from the study's data were in substantial agreement with prior microarray datasets with the exception of CLPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, our data was in substantial agreement with prior microarray datasets with the exception of those from CLPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published microarray data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "e17bcd28-3209-4089-857d-b7cee8873951",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C44",
+      "claim": "The staining strategy and isolation protocols for CLPs differed from those used in the previous report.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CLPs were the one cell type where our staining strategy and isolation protocols (Figure 1\u2014figure supplement 2B) differed from those used in the previous report.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains the discrepancy observed with CLP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "99338904-9958-4de8-94f1-cb806b81101e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C45",
+      "claim": "Expression module analysis identified differentially expressed lncRNAs and protein-coding genes that showed the same expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified differentially expressed lncRNAs and protein-coding genes that showed the same expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the co-expression analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "0a91cbbb-f81d-4a9f-b13c-0f0705e4dca0",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C46",
+      "claim": "The expression modules followed expected groupings, with enriched expression in either myeloid, lymphoid, or progenitor compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The modules followed expected groupings, with enriched expression in either myeloid, lymphoid, or progenitor compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression module analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "5a053cbc-0bad-499d-99fd-e09a792a3c9b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C47",
+      "claim": "The MDS1 and EVI1 complex locus (Mecom) is known to regulate hematopoietic stem cell self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the genes with enriched expression in LT-HSCs, we noted the MDS1 and EVI1 complex locus (Mecom). These are known to regulate hematopoietic stem cell self-renewal (Yuasa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "83678349-8c4d-427f-b156-0cca86bdc91b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C48",
+      "claim": "Hoxa9 and Meis1 are landmarks of MLL-AF9 AML self renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Hoxa9 and Meis1, landmarks of MLL-AF9 AML self renewal (Krivtsov et al., 2006), are found in the module corresponding to genes enriched in both progenitors and our AML samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "5bca306b-638d-47ff-be42-ef84d9d138a8",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C49",
+      "claim": "Rag1/2, Ebf1 and Cd38 are key regulators in lymphoid development.",
+      "claim_type": "EXPLICIT",
+      "source": "Key regulators in lymphoid development such as Rag1/2, Ebf1 and Cd38 appear in the lymphoid-enriched module",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about lymphoid development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c55eaf80-f722-46cd-9b3a-5e17e3370d71",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C50",
+      "claim": "Csf3r and Itgam (CD11b) are in the module enriched for Gr1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "while Csf3r and Itgam, also known as CD11b, part of the Mac-1 receptor, are in the module enriched for Gr1 expression (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression module analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "ada99e95-ddbd-4441-9563-3bd5b2fa412c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C51",
+      "claim": "Some level of correlation was detected between lncRNAs and their closest gene neighbors when examining expression levels across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined expression levels across cell types between lncRNAs and their closest gene neighbors, we indeed detected some level of correlation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "4b79b946-e791-43cc-a400-87820378a401",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C52",
+      "claim": "The correlation between lncRNAs and their closest genes was not exclusive to divergent transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this correlation was not exclusive to divergent transcripts, as a similar level of correlation was observed for other genomic organizations (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c06ae36d-ed80-4b9e-8881-149214e168e0",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C53",
+      "claim": "Enriched binding of transcription factors known to play a role in maintaining the transcriptional landscape of AML was observed around the TSS of lncRNAs in the catalog.",
+      "claim_type": "EXPLICIT",
+      "source": "In the AML datasets, we observed enriched binding of transcription factors known to play a role in maintaining the transcriptional landscape of this model of leukemia (Roe et al., 2015) around the TSS of lncRNAs in our catalog (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq analysis shown in Figure 2\u2014figure supplement 1 and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "18f0e48f-c57b-4241-8845-7f8a44bbc304",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C54",
+      "claim": "lncRNA expression through development and disease is regulated by the same mechanisms as coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that lncRNA expression through development and disease is regulated by the same mechanisms as coding genes, hence leading to generally similar expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the transcription factor binding and expression correlation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "01147f5e-862c-4920-bd90-42373b7f3723",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C55",
+      "claim": "Differential expression analysis identified lncRNAs that were enriched in hematopoietic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore this possibility, we performed differential expression analysis and identified lncRNAs that were enriched in hematopoietic stem cells, shared by the progenitor populations while showing lower expression in differentiated cell types, or enriched exclusively in the lymphoid compartment (Figure 3A, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the differential expression analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "a6d0eaf6-8c3f-485e-bf60-b713f91bfecb",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C56",
+      "claim": "Many lncRNAs with enriched expression in AML were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed many lncRNAs with enriched expression in AML, as well as shared expression between AML and other cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differential expression analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "511bef6d-f9d5-4b42-97df-5af8670f8f78",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C58",
+      "claim": "The shERWOOD algorithm was used to predict highly potent shRNAs targeting each lncRNA candidate.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the shERWOOD algorithm (Knott et al., 2014) to predict highly potent shRNAs targeting each lncRNA candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for shRNA design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "fcb53d66-ff55-4aa3-853e-ee18aeb45b50",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C59",
+      "claim": "A library containing at least four hairpins per lncRNA was designed, cloned and sequence verified into a doxycycline-inducible retroviral vector.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed, cloned and sequence verified a library containing at least four hairpins per lncRNA into a doxycycline-inducible retroviral vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach for the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "4c3b6699-8dd3-4083-95eb-a3ddb51dd23c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C60",
+      "claim": "Virus production, infections and injections were performed using pools of 50 shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure a good representation of every hairpin during the 14 days that the cells proliferate in vivo, we performed virus production, infections and injections using pools of 50 shRNAs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design of the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7ef583ab-0534-4a26-9ea9-df34434d31ea",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C61",
+      "claim": "Most shRNAs for Rpa3 were depleted by the final time point.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, most shRNAs for Rpa3 were depleted by the final time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "75c72983-bdcf-4b44-956d-7f02c4fd42e2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C62",
+      "claim": "Most hairpins targeting Renilla luciferase were not significantly changed during the 2-week time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, most hairpins targeting Renilla luciferase, which is not expressed in the MLL-AF9 leukemia cells and serves as a negative control, were not significantly changed during the 2-week time course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "ac066938-e9f0-472f-b5f1-2abcebe2e1a7",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C63",
+      "claim": "20 primary hits were identified as potentially required for leukemia maintenance in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This produced a list of 20 primary hits that were potentially required for leukemia maintentenance in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "2415537b-bdc5-4003-a927-3bdb093ef653",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C64",
+      "claim": "14 of the 20 lncRNA candidates showed a depletion of over 50% for both hairpins over the 14-day time course in competitive proliferation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "14 of our 20 lncRNA candidates showed a depletion of over 50% for both hairpins over the 14-day time course, which represents a 70% validation rate of the initial hits (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation assays shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "86f681f0-4aa7-467b-9f29-b174144474f2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C65",
+      "claim": "Both primary and validated hits displayed a range of different expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both our primary and validated hits displayed a range of different expression levels (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "695d2e14-d7b5-476c-9f98-376e7091cbb9",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C66",
+      "claim": "9 out of 14 lncRNAs were selected for follow up experiments based on the severity of the proliferation phenotype and its consistency across independent knockdowns.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected 9 out of these 14 lncRNAs for follow up experiments based on the severity of the proliferation phenotype and its consistency across independent knockdowns (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the selection criteria for further analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "edeb3aee-9790-458c-a81c-468b5d683228",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C67",
+      "claim": "For four of the selected lncRNAs, over 70% knockdown efficiency was observed in at least one of the clonal lines for both primers and both hairpins.",
+      "claim_type": "EXPLICIT",
+      "source": "For four of our selected lncRNAs, we observed over 70% knockdown efficiency in at least one of the clonal lines for both primers and both hairpins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "a57df5d5-c1f5-44d0-9eba-8373919551ab",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C68",
+      "claim": "Two lncRNAs had a more modest (~60%) but consistent knockdown across hairpins and primer pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, two others had a more modest (~60%) but consistent knockdown across hairpins and primer pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7deb254c-debb-4b30-a1e8-0ffd1855eb4e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C69",
+      "claim": "Most lncRNA knockdowns failed to induce any reproducible change of expression in either of their two flanking coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any consistent trend, with most lncRNA knockdowns failing to induce any reproducible change of expression in either of their two flanking coding genes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "451e599b-b802-43f6-8018-755233e33e4b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C70",
+      "claim": "Knockdown of the two divergent lncRNAs, lncRNA_041249 and lncRNA_097790, did not cause any changes in the divergent coding transcripts, Srsf5 and Rmb27, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of the two divergent lncRNAs, lncRNA_041249 and lncRNA_097790, did not cause any changes in the divergent coding transcripts, Srsf5 and Rmb27, respectively (corresponding to 'Upstream gene' in Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "dd1690d5-b4bd-4fd1-8ac1-e2224715557d",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C71",
+      "claim": "Depletion of lnc_166788 affects its closest neighboring gene Gata2.",
+      "claim_type": "EXPLICIT",
+      "source": "The only case where we found depletion of a lncRNA to affect its closest neighboring gene was lnc_166788.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8ab85b8d-8b87-4210-b65b-a46ff676e378",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C72",
+      "claim": "lnc_166788 might be involved in promoting Gata2 expression and hence its depletion reduces Gata2 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that this lncRNA might be involved in promoting Gata2 expression and hence its depletion reduces Gata2 mRNA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the qPCR data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "16911e30-5f82-4b66-8058-18936ae96a47",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C73",
+      "claim": "Gene Set Enrichment Analysis showed an enrichment for Macrophage Differentiation genes upon knockdown of lnc_071255 (Pvt1), lnc_104449, or lnc_177417.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Set Enrichment Analysis (GSEA) showed an enrichment for Macrophage Differentiation genes (Ingenuity Pathway Analysis list) upon knockdown of lnc_071255 (already annotated as Pvt1), lnc_104449, or lnc_177417",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the GSEA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "0e2cf96d-7ed4-4aa6-bd7b-24db0372a6ab",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C74",
+      "claim": "Leukemia stem cell signatures showed enrichment in the control knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "while leukemia stem cell signatures (Krivtsov et al., 2006) showed enrichment in the control knockdown (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GSEA analysis shown in Figure 5B and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c2a5fe79-e311-40a9-8cf1-22f55a9756f3",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C75",
+      "claim": "Depletion of lnc_071255 (Pvt1), lnc_104449, or lnc_177417 led to the upregulation of the myeloid differentiation cell surface marker CD11B and downregulation of the stem cell marker c-Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, depletion of these same lncRNAs led to the upregulation of the myeloid differentiation cell surface marker CD11B (also known as Mac-1) and downregulation of the stem cell marker c-Kit, as shown by flow cytometry (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the flow cytometry data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "a61cc860-9781-4054-80e3-212e87cf8e9b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C76",
+      "claim": "The phenotype upon lncRNA depletion resembles the phenotype observed upon withdrawal of the oncogenic MLL-AF9 fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This resembles the phenotype observed upon withdrawal of the oncogenic MLL-AF9 fusion protein (Zuber et al., 2011b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "71ed89d6-a2f0-4e01-bc17-f68a3ed07a79",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C77",
+      "claim": "None of the nine lncRNAs required for AML showed depletion in 4T1 breast cancer cells even after 14 days in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "While Rpa3 was required for proliferation of 4T1 cells in vitro, none of our lncRNAs showed depletion even after 14 days in culture (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the competition assay data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "2912db7a-2919-4603-9ba0-ebe659487776",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C78",
+      "claim": "The lncRNAs are not required for general cell or tumor survival and growth, but rather are specifically required for leukemia maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that these lncRNAs are not required for general cell or tumor survival and growth, but rather are specifically required for leukemia maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the 4T1 cell line data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "71d4b8ed-17e6-4baf-960d-66a5626243b2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C79",
+      "claim": "A strong reduction of Myc protein levels was observed upon lnc_071255/Pvt1, lnc_104449, or lnc_177417 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed a strong reduction of Myc protein levels upon lnc_071255/Pvt1, lnc_104449, or lnc_177417 knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the western blot data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "498738b9-fc69-42ac-b146-ad2dbed78fb3",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C80",
+      "claim": "The mRNA levels of Myc were not reduced in a comparable manner to the protein levels for lnc_071255/Pvt1 and lnc_104449 as compared to lnc_177417.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the mRNA levels of Myc were not reduced in a comparable manner to the protein levels for the lnc_071255/Pvt1 and lnc_104449 as compared to lnc_177417.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the qPCR and western blot data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "53ce249f-11bf-45f4-805c-7f673c67ff2a",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C81",
+      "claim": "Pvt1 has been proposed to act by stabilizing MYC protein in human breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "lnc_071255, which corresponds to the previously annotated lncRNA Pvt1, was recently shown to correlate with MYC protein, but not Myc mRNA levels. In human breast cancer, Pvt1 has been proposed to act by stabilizing MYC protein (Tseng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "bf3c584a-85e5-4c92-8060-79e7a499fcb0",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C82",
+      "claim": "Knockdown of any of the lncRNAs that induced a myeloid differentiation phenotype resulted in a decrease in a Myc target gene-expression signature.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined whether MYC target genes were affected by depletion of our lncRNA candidates using GSEA and found that knockdown of any of the lncRNAs that induced a myeloid differentiation phenotype resulted in a decrease in a Myc target gene-expression signature (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GSEA analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "bd4331bc-79df-4ff9-b675-6b98b2a03622",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C83",
+      "claim": "Expression of Myc rescued the proliferation phenotypes for Pvt1 and Lilam knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Myc rescued the proliferation phenotypes for Pvt1 and Lilam knockdown, as shown by a growth competition assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the competition assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "283ccd74-8869-4b86-b463-ea063c153c83",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C84",
+      "claim": "Myc expression rescued the differentiation phenotype observed upon knockdown for each of the three lncRNAs (Pvt1, Lilam, Pilna).",
+      "claim_type": "EXPLICIT",
+      "source": "Both datasets were consistent with Myc expression rescuing the differentiation phenotype observed upon knockdown for each of these three lncRNAs (Figure 6, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the immunophenotyping and Giemsa staining data shown in Figure 6D-E and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "3894a536-4231-46b8-8cd4-f0ddc68e2bc7",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C85",
+      "claim": "There is an epistatic relationship between the lncRNAs (Pvt1, Lilam, Pilna) and Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests an epistatic relationship between our lncRNAs and Myc and indicates that Pvt1, Lilam and Pilna exert their functions through Myc in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MYC rescue experiments shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "cc21a7b1-8819-4054-989a-9407f93f5265",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C86",
+      "claim": "Depletion of all five tested lncRNAs was observed in the MLL/ENL model.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe depletion of all five tested lncRNAs (Lilam, Pilna, Pvt1 plus two validated lncRNA hits with consistent knockdown) in the MLL/ENL model (similar to the MLL/AF9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the proliferation assay data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "77728561-aebf-4e10-89c1-0204a175a81e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C87",
+      "claim": "A less striking phenotype was observed in a model where Myc is one of the drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "In a different model, where Myc is one of the drivers, we observed a less striking phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the proliferation assay data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "93befdca-a58c-4ecd-aa89-fbccaf5d03b2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C88",
+      "claim": "Enforced Myc expression rescues the phenotype of Lilam, Pilna and Pvt1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unsurprising since enforced Myc expression rescues the phenotype of Lilam, Pilna and Pvt1 (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the MYC rescue experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "58acd5ec-c5fb-4f65-abda-336ec54b3986",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C89",
+      "claim": "Chemical inhibition of Brd4, which leads to Myc downregulation, has little or no effect for mouse hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies have shown that chemical inhibition of Brd4, which also leads to Myc downregulation, has little or no effect for mouse hematopoiesis (Zuber et al., 2011c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "57af6669-906c-4f06-9124-05e7884dee2e",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C90",
+      "claim": "A significant depletion of zsGreen-expressing cells over time was observed with either hairpin targeting Pilna as compared to Renilla knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant depletion of zsGreen-expressing cells over time with either hairpin targeting Pilna as compared to Renilla knockdown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bone marrow transplantation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9c3ababa-9bcb-4492-aa3a-3edc3c44cf3f",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C91",
+      "claim": "Little or no effect was observed for Pvt1 and Lilam shRNAs in bone marrow transplantation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "while little or no effect was observed for Pvt1 and Lilam shRNAs (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bone marrow transplantation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "cd73c744-2a44-4cd0-ae7a-ac1ba702f8bf",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C92",
+      "claim": "Both Pvt1 and Lilam were highly upregulated in leukemia cells (RN2) as compared to their most similar normal progenitors, GMPs, or HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the expression of these three lncRNAs, we observed that both Pvt1 and Lilam were highly upregulated in leukemia cells (RN2) as compared to their most similar normal progenitors, GMPs, or HSCs (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the expression analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "1767f587-35e1-42a7-98fc-fe321efff96b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C93",
+      "claim": "Pilna is broadly expressed across hematopoietic progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Pilna is broadly expressed across hematopoietic progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "2d3da553-1deb-4493-8c4b-37295828c43c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C94",
+      "claim": "Pilna has a more general role in hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a more general role in hematopoiesis for Pilna",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the bone marrow transplantation and expression data shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "2a1ed69e-5dda-4767-8534-82787c074015",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C95",
+      "claim": "lncRNAs that show leukemia-enriched expression, Pvt1 and Lilam, could be dispensable for myeloid differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "while lncRNAs that show leukemia-enriched expression, Pvt1 and Lilam, could be dispensable for myeloid differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the bone marrow transplantation and expression data shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7c7ac3f4-afc6-48bf-b719-4ca1d45c8af9",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C96",
+      "claim": "A correlation between lncRNA expression and that of the closest protein-coding gene was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed find a correlation between lncRNA expression and that of the closest protein-coding gene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "36b41cda-5d8e-4ffc-a653-882b9230c804",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C97",
+      "claim": "The correlation in expression between lncRNAs and their closest genes arises from shared regulatory mechanisms or common regulatory environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesize that this correlation in expression arises from shared regulatory mechanisms or common regulatory environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "d5975d22-ad00-409e-9c07-b167ceaeec2c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C98",
+      "claim": "20 lncRNAs whose expression confers a proliferative advantage to leukemia cells in vivo were identified by the shRNA screen.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing an shRNA screen targeting 120 lncRNAs, we identified 20 lncRNAs whose expression confers a proliferative advantage to leukemia cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c9752a4d-b587-4d25-8f3a-2627869dad82",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C99",
+      "claim": "Three lncRNAs emerged as candidates required for leukemia progression, as their depletion led to leukemic blast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Three lncRNAs emerged as candidates required for leukemia progression, as their depletion led to leukemic blast differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the GSEA and flow cytometry data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "a7640b38-237d-4e4c-a93e-ba06c0e474f5",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C100",
+      "claim": "Pvt1 is a marker of poor prognosis in colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these was Pvt1, a lncRNA previously reported to be a marker of poor prognosis in colorectal cancer (Takahashi et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9580eeac-78ba-491b-aad9-772ccaddca7b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C101",
+      "claim": "Pvt1 is required in MYC-driven cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and shown to be required in MYC-driven cancers (Tseng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "bfda26d8-05bf-4d31-8bd0-86a42c4235b9",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C102",
+      "claim": "The mechanism for human PVT1 function in breast cancer involves PVT1 stabilization of the MYC protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism for human PVT1 function, as shown in breast cancer, involves PVT1 stabilization of the MYC protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior literature about PVT1 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "574da34e-ac37-4907-a2c5-aff74143f58a",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C103",
+      "claim": "A similar effect of PVT1 on MYC protein levels is observed in the leukemia model.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a similar effect in our leukemia model, with MYC protein levels being disproportionately reduced when PVT1 is depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the western blot data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "f970bcd6-21c4-41c0-aa77-ae4d7b1b6519",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C104",
+      "claim": "Pvt1, Lilam and Pilna have a direct or indirect functional relationship with Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these lncRNAs have a direct or indirect functional relationship with Myc, an oncogene upon which this AML model heavily depends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MYC rescue experiments shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "0f3d0e51-e724-4c46-b9f3-20f9c2a8598d",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C105",
+      "claim": "Similar phenotypes have been shown when Myc levels are reduced by disturbing bromodomain containing 4 (Brd4).",
+      "claim_type": "EXPLICIT",
+      "source": "This finding adds a layer to the already complex regulatory landscape of AML, and fits in with published results that have shown similar phenotypes when Myc levels are reduced by disturbing bromodomain containing 4 (Brd4) (Zuber et al., 2011c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "96640582-802f-4a10-83aa-bcae67ea1e75",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C106",
+      "claim": "Similar phenotypes have been shown when Myc levels are reduced by disturbing the Myc superenhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "or the Myc superhancer (Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "dfafcea9-b463-4705-85f5-fdca62dc924f",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C107",
+      "claim": "Pilna is required for the myeloid lineage during bone marrow reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNA Pilna, but not Pvt1 and Lilam are required for the myeloid lineage during bone marrow reconstitution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bone marrow transplantation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "930646a1-022d-44cb-8cb9-10b2126beb53",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C108",
+      "claim": "Pvt1 and Lilam are not required for the myeloid lineage during bone marrow reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNA Pilna, but not Pvt1 and Lilam are required for the myeloid lineage during bone marrow reconstitution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bone marrow transplantation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "49fbccd3-e321-4817-9055-1c0432be3854",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C109",
+      "claim": "The pan-progenitor expression of Pilna is consistent with its requirement for myeloid lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the pan-progenitor expression of this lncRNA in contrast with the AML-specific nature of Pvt1 and Lilam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression and bone marrow transplantation data shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "053f2064-6573-44c9-a2a8-68812288ca5c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C110",
+      "claim": "The normal setting, just like AML, will be heavily dependent on lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies will be required to determine the breadth of lncRNA roles in the hematopoietic system, though this gives us reason to believe that the normal setting, just like AML, will be heavily dependent on these non-coding transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7321c72b-4475-44dd-8af0-56209c67606f",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C111",
+      "claim": "An extensive resource of lncRNA expression in the hematopoietic system has been produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Considered as a whole, we have produced an extensive resource of lncRNA expression in the hematopoietic system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the catalog and expression data generated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "3717456b-0a8e-4b87-8311-476c32146336",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C112",
+      "claim": "A substantial percentage of lncRNAs are functional, at least in a model of malignant development.",
+      "claim_type": "EXPLICIT",
+      "source": "and demonstrated that a substantial percentage of these are functional, at least in a model of malignant development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results showing 20 out of 120 lncRNAs are required for AML.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "442410e0-46a5-4577-b14e-54e4a4eb6251",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C113",
+      "claim": "One lncRNA expressed across most hematopoietic progenitors is required in myeloid reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these lncRNAs, expressed across most hematopoietic progenitors, is additionally required in myeloid reconstitution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bone marrow transplantation data for Pilna shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "f7ff154f-5daf-4e47-8928-df6de00230d3",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "claim_id": "C114",
+      "claim": "The data and tools produced should serve a useful purpose in promoting studies in both the normal and leukemic context.",
+      "claim_type": "EXPLICIT",
+      "source": "The data and tools that we have produced should serve a useful purpose in promoting studies in both the normal and leukemic context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f6e9b11b-6632-4d08-a45e-01e966de8848",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a comprehensive lncRNA catalog for the hematopoietic system through deep RNA sequencing of 11 cell types, de novo transcriptome assembly using Cufflinks, and filtering for non-coding transcripts. Over half of the assembled lncRNAs were unique to this study, and ATAC-seq analysis confirmed open chromatin signals at lncRNA transcriptional start sites across multiple cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 and C111 describe a well-documented experimental pipeline with appropriate sequencing depth (100M reads), validated assembly methods, and orthogonal chromatin accessibility data. The ATAC-seq validation (C35-C38) provides independent confirmation of transcriptional activity at predicted lncRNA loci, and appropriate negative controls were included (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "eaff84d5-975d-474f-9a68-b1981a37f264",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Principal component analysis based on both protein-coding genes and lncRNAs showed that lncRNA expression patterns recapitulate hematopoietic cell type relationships, with lymphoid and myeloid lineages separating clearly, AML samples clustering with GMPs, and oligopotent progenitors clustering near LT-HSCs despite functional differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are directly supported by PCA analysis shown in Figure 1E. The observation that lncRNA-based PCA replicates coding gene patterns (C42) is well-demonstrated. The discrepancy with CLP data (C43-C44) is appropriately acknowledged and explained by methodological differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8ea2b282-7cb9-4bed-a384-395862c5e957",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Expression module analysis identified co-regulated lncRNAs and protein-coding genes with expected cell-type-specific patterns, including known hematopoietic regulators such as Mecom in LT-HSCs, Hoxa9/Meis1 in AML/progenitors, lymphoid regulators (Rag1/2, Ebf1) in lymphoid cells, and myeloid markers (Csf3r, Itgam) in granulocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 describe co-expression analysis supported by Figure 2A. The identification of well-established hematopoietic regulators in appropriate modules (C47-C50, supported by citations) validates the analysis approach and demonstrates biological coherence of the lncRNA catalog.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9abd9e09-e1a3-4b9c-a166-e551084028e0",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "lncRNAs show expression correlation with their closest protein-coding genes, but this correlation is not exclusive to divergent transcripts and extends to other genomic arrangements. The authors hypothesize this reflects shared regulatory mechanisms rather than specific functional relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C96 are supported by correlation analysis in Figure 2B showing similar correlation levels across different genomic organizations. However, C97 is explicitly labeled as a hypothesis and C54 as an inference, appropriately reflecting the speculative nature of the mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "721e894f-295c-4433-ad4c-41566a68bdc6",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transcription factors known to maintain the AML transcriptional landscape show enriched binding around lncRNA transcriptional start sites, suggesting lncRNA expression is regulated by the same mechanisms as coding genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by ChIP-seq analysis in Figure 2\u2014figure supplement 1 with appropriate citation to prior work. Claim C54 represents a reasonable inference from the combined expression correlation and transcription factor binding data, though it remains somewhat speculative about causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "efb30b22-87aa-4585-92f9-a2882d7fa083",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Differential expression analysis identified lncRNAs enriched in specific hematopoietic compartments (HSCs, progenitors, lymphoid cells) and many lncRNAs with enriched or shared expression in AML compared to normal cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are directly supported by differential expression analysis shown in Figures 3A-B. The analysis appropriately identifies cell-type-specific lncRNAs that could be functionally relevant, providing the foundation for the functional screen.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "57a89b61-581c-4c2b-9e80-289b98482e98",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An in vivo shRNA screen targeting 120 lncRNAs in MLL-AF9/NRASG12D AML identified 20 lncRNAs required for leukemia maintenance. The screen used pools of 50 shRNAs with appropriate positive (Rpa3) and negative (Renilla) controls, with shRNA representation tracked by high-throughput sequencing over 14 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 and C98 describe a well-designed screen with appropriate controls. Positive control Rpa3 showed expected depletion (C61), negative control Renilla showed no significant change (C62), and 20 hits were identified using stringent criteria (C63). The experimental design with pooled shRNAs (C60) is justified and validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8a0da0f9-153e-4ba7-a932-8e0689b1529a",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In vitro validation of the 20 primary screen hits showed that 14 lncRNAs (70% validation rate) caused >50% depletion with both hairpins in competitive proliferation assays. The validated hits spanned a range of expression levels, and 9 were selected for detailed follow-up based on phenotype severity and consistency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by validation data in Figure 4E. The 70% validation rate is substantial and the selection criteria for follow-up (severity and consistency) are appropriate. The observation that hits span different expression levels (C65) indicates the screen was not biased toward highly expressed lncRNAs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Knockdown efficiency assessment using inducible shRNA clonal lines showed >70% knockdown for four lncRNAs and ~60% for two others. Most lncRNA knockdowns did not affect expression of flanking genes, including two divergent lncRNAs that did not regulate their divergent coding partners. Only lnc_166788 knockdown affected its neighbor Gata2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 are supported by qPCR data in Figure 5A using multiple primer pairs and clonal lines. The finding that most lncRNAs don't regulate neighboring genes (C69-C70) challenges simple cis-regulatory models. The Gata2 case (C71-C72) is appropriately presented as a potential exception requiring further study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Three lncRNAs (Pvt1, lnc_104449/Pilna, lnc_177417/Lilam) promote leukemia stem cell signatures, as their depletion led to enrichment of macrophage differentiation genes by GSEA, upregulation of the myeloid marker CD11b, and downregulation of the stem cell marker c-Kit by flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75, C4-C5, and C99 are well-supported by complementary data: GSEA showing macrophage differentiation enrichment and depletion of LSC signatures (Figure 5B), and flow cytometry showing marker changes (Figure 5C). The phenotype resembles MLL-AF9 withdrawal (C76), providing biological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "9aa64ab9-0c4f-4942-9aa0-da9c86e1f119",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The nine lncRNAs required for AML showed no depletion in 4T1 breast cancer cells over 14 days, while the positive control Rpa3 was required, indicating these lncRNAs are specifically required for leukemia maintenance rather than general cell proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by competition assay data in Figure 5\u2014figure supplement 1. The specificity test in an unrelated cancer cell line is appropriate, though testing in normal hematopoietic cells would strengthen the conclusion. The inference of leukemia-specific function (C78) is reasonable but could benefit from additional cell line testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Knockdown of Pvt1, Pilna, or Lilam caused strong reduction in MYC protein levels, with Pvt1 and Pilna showing disproportionate protein reduction relative to mRNA levels. MYC target gene signatures were decreased upon knockdown of any lncRNA inducing myeloid differentiation, consistent with prior reports of PVT1 stabilizing MYC protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 are supported by western blot (Figure 6A-B), qPCR, and GSEA data (Figure 6\u2014figure supplement 1). The differential effect on protein vs. mRNA (C80) is intriguing and consistent with post-transcriptional regulation. Citation to prior PVT1 work (C81) provides appropriate context, though the mechanism in this system requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "c1b736db-17ca-4e79-af9f-51adde47b966",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Enforced MYC expression rescued both proliferation and differentiation phenotypes caused by Pvt1, Lilam, and Pilna knockdown, demonstrating an epistatic relationship where these lncRNAs function through MYC in the AML context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85, C88, and C104 are strongly supported by MYC rescue experiments shown in Figure 6C-E. The rescue of both proliferation (competition assays) and differentiation markers (flow cytometry, Giemsa staining) provides compelling evidence for epistasis. The conclusion is appropriately limited to this AML context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "5c3afca6-6d57-4b9f-94f3-7697c660f8c8",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The five tested lncRNAs showed depletion in the MLL/ENL AML model, but a less striking phenotype was observed in a Myc-driven AML model, consistent with the epistatic relationship between these lncRNAs and MYC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by proliferation assay data in Figure 6\u2014figure supplement 2. The reduced phenotype in the Myc-driven model (C87) is logically consistent with the rescue experiments and supports the proposed mechanism, though the authors appropriately note this is unsurprising given the MYC overexpression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "677bd60e-c625-4364-ad34-2d5867b34c38",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bone marrow transplantation experiments showed that Pilna knockdown caused significant depletion of transduced cells in the myeloid compartment over time, while Pvt1 and Lilam knockdown had little or no effect, indicating Pilna is required for normal myeloid differentiation but the leukemia-induced lncRNAs are dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 and C107-C108 are supported by bone marrow transplantation data in Figure 7B with appropriate statistical analysis. The differential requirement (Pilna but not Pvt1/Lilam) in normal hematopoiesis is a key finding distinguishing leukemia-specific from general hematopoietic functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "98110c88-7938-4e24-9127-e86f7283d08b",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Expression analysis showed Pvt1 and Lilam are highly upregulated in AML compared to normal progenitors (GMPs, HSCs), while Pilna is broadly expressed across hematopoietic progenitors, consistent with Pilna having a general role in hematopoiesis and Pvt1/Lilam being dispensable for normal myeloid differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 are directly supported by expression data in Figure 7C. The inferences about functional roles (C94-C95, C109) are well-supported by integrating expression patterns with the bone marrow transplantation results, though they remain somewhat speculative about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "44fabc2b-ce37-4237-b8f3-70be11f2f734",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A substantial fraction of the genome produces cell-type-specific long non-coding RNAs. Analysis of the hematopoietic lncRNA catalog showed many lncRNAs are regulated during differentiation and misregulated in disease, and an in vivo RNAi screen identified several lncRNAs essential for leukemia maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is general knowledge appropriately contextualized. Claims C2-C3 accurately summarize the major findings supported by the transcriptome analysis and functional screen described throughout the manuscript. These represent the core conclusions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "26248087-31b9-4b3d-bacb-ec14b0dd834d",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The introduction establishes that lncRNAs are an additional layer of gene regulation with diverse functions in development and cancer, including roles in hematopoiesis and chromatin regulation. The murine hematopoietic system is well-characterized for studying differentiation and malignant transformation, but a comprehensive analysis of lncRNA dynamics through normal and malignant hematopoiesis had not been reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C30 provide appropriate background context supported by citations to prior literature (C9-C21, C24, C26, C28-C30) and established knowledge (C10, C22-C23, C25, C27). These claims accurately represent the state of the field and justify the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "163f0000-e762-4137-9526-393c51802869",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The findings fit within the broader AML regulatory landscape, where similar differentiation phenotypes occur upon reducing MYC levels through BRD4 inhibition or MYC superenhancer disruption. PVT1 has been reported as a poor prognosis marker in colorectal cancer and required in MYC-driven cancers through MYC protein stabilization, with similar effects observed in this leukemia model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89, C100-C102, C105-C106 appropriately contextualize findings within prior literature through citations. Claim C103 connects prior PVT1 mechanism to current observations with supporting western blot data. The integration of current findings with published work is appropriate and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "d7d2b237-8b2a-4170-8c62-fa88f6b09797",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors hypothesize that lncRNA-gene expression correlation arises from shared regulatory mechanisms, speculate that normal hematopoiesis will be heavily dependent on lncRNAs like AML, and suggest their data and tools will promote future studies in both normal and leukemic contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C110, and C114 are explicitly speculative (labeled as hypothesis/speculation in evidence_type). While C97 is a reasonable hypothesis based on the correlation data, C110 extrapolates beyond the current evidence, and C114 is a forward-looking statement about potential impact rather than a scientific finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    },
+    {
+      "id": "8cab3adb-d4ac-4986-a7e6-4b2e414f0d53",
+      "content_id": "67fc3e96-9999-4e1c-914b-feae586021df",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study demonstrates that a substantial percentage of lncRNAs (20 of 120 screened, ~17%) are functional in AML, and one lncRNA (Pilna) expressed across hematopoietic progenitors is required for myeloid reconstitution in normal hematopoiesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 accurately summarize key quantitative findings from the screen (20/120 hits) and bone marrow transplantation experiments (Pilna requirement). These represent important conclusions about the functional prevalence of lncRNAs in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:52:12.362720Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "43bfd8c1-1608-4697-843f-ea6b02dbdbed",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "38ddb936-d071-45df-8d85-eb6da58de707",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "ac5dc136-40d7-4219-b24e-76f91902a2d6",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "9cee4fb2-fc99-42d3-8f57-4f25b0cd0bec",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "aea53683-2b35-43a2-a837-fd0edeae87b6",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "0dd229ff-f4fd-40b7-8843-9223115b5874",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "18ea862e-7ebd-45c8-ba4f-016b1ba8c082",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "9685e77f-a7a9-4097-b6ca-4acd4689d2d5",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "7321c72b-4475-44dd-8af0-56209c67606f",
+      "result_id": "f6e9b11b-6632-4d08-a45e-01e966de8848"
+    },
+    {
+      "claim_id": "50785868-0024-4185-ac8c-8538b2dee50d",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "8fbd7863-c193-4442-8807-46e7ba2ee23e",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "91627c6e-d396-4a6b-8eaf-f639a00e1f37",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "58181add-4a4f-4a4e-afea-ceefafec7a95",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "abd75eca-cd12-4618-8468-c3379e375b63",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "e17bcd28-3209-4089-857d-b7cee8873951",
+      "result_id": "eaff84d5-975d-474f-9a68-b1981a37f264"
+    },
+    {
+      "claim_id": "99338904-9958-4de8-94f1-cb806b81101e",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "0a91cbbb-f81d-4a9f-b13c-0f0705e4dca0",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "5a053cbc-0bad-499d-99fd-e09a792a3c9b",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "83678349-8c4d-427f-b156-0cca86bdc91b",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "5bca306b-638d-47ff-be42-ef84d9d138a8",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "c55eaf80-f722-46cd-9b3a-5e17e3370d71",
+      "result_id": "8ea2b282-7cb9-4bed-a384-395862c5e957"
+    },
+    {
+      "claim_id": "ada99e95-ddbd-4441-9563-3bd5b2fa412c",
+      "result_id": "9abd9e09-e1a3-4b9c-a166-e551084028e0"
+    },
+    {
+      "claim_id": "4b79b946-e791-43cc-a400-87820378a401",
+      "result_id": "9abd9e09-e1a3-4b9c-a166-e551084028e0"
+    },
+    {
+      "claim_id": "7c7ac3f4-afc6-48bf-b719-4ca1d45c8af9",
+      "result_id": "9abd9e09-e1a3-4b9c-a166-e551084028e0"
+    },
+    {
+      "claim_id": "36b41cda-5d8e-4ffc-a653-882b9230c804",
+      "result_id": "9abd9e09-e1a3-4b9c-a166-e551084028e0"
+    },
+    {
+      "claim_id": "18f0e48f-c57b-4241-8845-7f8a44bbc304",
+      "result_id": "9abd9e09-e1a3-4b9c-a166-e551084028e0"
+    },
+    {
+      "claim_id": "c06ae36d-ed80-4b9e-8881-149214e168e0",
+      "result_id": "721e894f-295c-4433-ad4c-41566a68bdc6"
+    },
+    {
+      "claim_id": "18f0e48f-c57b-4241-8845-7f8a44bbc304",
+      "result_id": "721e894f-295c-4433-ad4c-41566a68bdc6"
+    },
+    {
+      "claim_id": "01147f5e-862c-4920-bd90-42373b7f3723",
+      "result_id": "efb30b22-87aa-4585-92f9-a2882d7fa083"
+    },
+    {
+      "claim_id": "a6d0eaf6-8c3f-485e-bf60-b713f91bfecb",
+      "result_id": "efb30b22-87aa-4585-92f9-a2882d7fa083"
+    },
+    {
+      "claim_id": "511bef6d-f9d5-4b42-97df-5af8670f8f78",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "fcb53d66-ff55-4aa3-853e-ee18aeb45b50",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "4c3b6699-8dd3-4083-95eb-a3ddb51dd23c",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "7ef583ab-0534-4a26-9ea9-df34434d31ea",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "75c72983-bdcf-4b44-956d-7f02c4fd42e2",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "ac066938-e9f0-472f-b5f1-2abcebe2e1a7",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "d5975d22-ad00-409e-9c07-b167ceaeec2c",
+      "result_id": "57a89b61-581c-4c2b-9e80-289b98482e98"
+    },
+    {
+      "claim_id": "2415537b-bdc5-4003-a927-3bdb093ef653",
+      "result_id": "8a0da0f9-153e-4ba7-a932-8e0689b1529a"
+    },
+    {
+      "claim_id": "86f681f0-4aa7-467b-9f29-b174144474f2",
+      "result_id": "8a0da0f9-153e-4ba7-a932-8e0689b1529a"
+    },
+    {
+      "claim_id": "695d2e14-d7b5-476c-9f98-376e7091cbb9",
+      "result_id": "8a0da0f9-153e-4ba7-a932-8e0689b1529a"
+    },
+    {
+      "claim_id": "edeb3aee-9790-458c-a81c-468b5d683228",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "a57df5d5-c1f5-44d0-9eba-8373919551ab",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "7deb254c-debb-4b30-a1e8-0ffd1855eb4e",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "451e599b-b802-43f6-8018-755233e33e4b",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "dd1690d5-b4bd-4fd1-8ac1-e2224715557d",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "8ab85b8d-8b87-4210-b65b-a46ff676e378",
+      "result_id": "70df7ec8-d5e3-4819-bb97-fd96885e98dd"
+    },
+    {
+      "claim_id": "16911e30-5f82-4b66-8058-18936ae96a47",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "0e2cf96d-7ed4-4aa6-bd7b-24db0372a6ab",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "c2a5fe79-e311-40a9-8cf1-22f55a9756f3",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "3023ec14-0d6f-47ec-84b4-3d647dbef391",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "eade6e04-d2a3-4f0e-b61f-a715dc7cd0f3",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "c9752a4d-b587-4d25-8f3a-2627869dad82",
+      "result_id": "7f0e2ce9-4b3b-4265-bc3f-8cf336b793f2"
+    },
+    {
+      "claim_id": "71ed89d6-a2f0-4e01-bc17-f68a3ed07a79",
+      "result_id": "9aa64ab9-0c4f-4942-9aa0-da9c86e1f119"
+    },
+    {
+      "claim_id": "2912db7a-2919-4603-9ba0-ebe659487776",
+      "result_id": "9aa64ab9-0c4f-4942-9aa0-da9c86e1f119"
+    },
+    {
+      "claim_id": "71d4b8ed-17e6-4baf-960d-66a5626243b2",
+      "result_id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c"
+    },
+    {
+      "claim_id": "498738b9-fc69-42ac-b146-ad2dbed78fb3",
+      "result_id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c"
+    },
+    {
+      "claim_id": "53ce249f-11bf-45f4-805c-7f673c67ff2a",
+      "result_id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c"
+    },
+    {
+      "claim_id": "bf3c584a-85e5-4c92-8060-79e7a499fcb0",
+      "result_id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c"
+    },
+    {
+      "claim_id": "d5f315ba-9153-43a0-bfcf-7c06051ff411",
+      "result_id": "8d51c1ec-0f46-4f76-a2a2-2e9f9ee1223c"
+    },
+    {
+      "claim_id": "bd4331bc-79df-4ff9-b675-6b98b2a03622",
+      "result_id": "c1b736db-17ca-4e79-af9f-51adde47b966"
+    },
+    {
+      "claim_id": "283ccd74-8869-4b86-b463-ea063c153c83",
+      "result_id": "c1b736db-17ca-4e79-af9f-51adde47b966"
+    },
+    {
+      "claim_id": "3894a536-4231-46b8-8cd4-f0ddc68e2bc7",
+      "result_id": "c1b736db-17ca-4e79-af9f-51adde47b966"
+    },
+    {
+      "claim_id": "93befdca-a58c-4ecd-aa89-fbccaf5d03b2",
+      "result_id": "c1b736db-17ca-4e79-af9f-51adde47b966"
+    },
+    {
+      "claim_id": "f970bcd6-21c4-41c0-aa77-ae4d7b1b6519",
+      "result_id": "c1b736db-17ca-4e79-af9f-51adde47b966"
+    },
+    {
+      "claim_id": "cc21a7b1-8819-4054-989a-9407f93f5265",
+      "result_id": "5c3afca6-6d57-4b9f-94f3-7697c660f8c8"
+    },
+    {
+      "claim_id": "77728561-aebf-4e10-89c1-0204a175a81e",
+      "result_id": "5c3afca6-6d57-4b9f-94f3-7697c660f8c8"
+    },
+    {
+      "claim_id": "57af6669-906c-4f06-9124-05e7884dee2e",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "9c3ababa-9bcb-4492-aa3a-3edc3c44cf3f",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "dfafcea9-b463-4705-85f5-fdca62dc924f",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "930646a1-022d-44cb-8cb9-10b2126beb53",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "52a12e94-be0c-41c6-a4c8-300d82c91dc2",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "70f7bd67-80f2-4d8b-abac-eeffe3e831f4",
+      "result_id": "677bd60e-c625-4364-ad34-2d5867b34c38"
+    },
+    {
+      "claim_id": "cd73c744-2a44-4cd0-ae7a-ac1ba702f8bf",
+      "result_id": "98110c88-7938-4e24-9127-e86f7283d08b"
+    },
+    {
+      "claim_id": "1767f587-35e1-42a7-98fc-fe321efff96b",
+      "result_id": "98110c88-7938-4e24-9127-e86f7283d08b"
+    },
+    {
+      "claim_id": "2d3da553-1deb-4493-8c4b-37295828c43c",
+      "result_id": "98110c88-7938-4e24-9127-e86f7283d08b"
+    },
+    {
+      "claim_id": "2a1ed69e-5dda-4767-8534-82787c074015",
+      "result_id": "98110c88-7938-4e24-9127-e86f7283d08b"
+    },
+    {
+      "claim_id": "49fbccd3-e321-4817-9055-1c0432be3854",
+      "result_id": "98110c88-7938-4e24-9127-e86f7283d08b"
+    },
+    {
+      "claim_id": "56efecee-deac-469a-b54a-84a3b046ba1a",
+      "result_id": "44fabc2b-ce37-4237-b8f3-70be11f2f734"
+    },
+    {
+      "claim_id": "aae0d269-20d4-44ee-b5fe-f41dc0ecdd62",
+      "result_id": "44fabc2b-ce37-4237-b8f3-70be11f2f734"
+    },
+    {
+      "claim_id": "b5c6bc4e-37b8-4c32-9d09-5a4d07bbd9e1",
+      "result_id": "44fabc2b-ce37-4237-b8f3-70be11f2f734"
+    },
+    {
+      "claim_id": "726a297f-ce20-4312-9465-3f1d5a5bc025",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "cbc405ef-8c4b-46d9-86d3-f631e99cd3f7",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "cd8c442a-c80d-47ac-bf63-3c64cde8afaf",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "d49fcb8e-953b-4b28-b8fc-833dcd3a828e",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "c460dfff-15fc-48a5-acfb-f5983708062f",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "d21c4f18-ced1-4583-894e-24db50d6ad88",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "2647975d-a9a6-4bb9-8cd9-573e7fc457f4",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "534387cd-b177-45c8-ae6d-e6d71175e607",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "231fce3c-be7f-47c7-b252-407fd18f9e0f",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "e7a652d8-a6d1-4f13-9043-d9d6ebaa4419",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "7db57257-a7ee-49e3-85cc-fd96725559d7",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "090df307-9666-4291-8e97-d82003ab322b",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "12e1006e-7cc0-4886-86f6-e2e59c7d4716",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "6172f1b5-e3e0-4f7e-aa40-524ce57d0a73",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "34b7544b-616a-493e-9ff9-5b98b42afc63",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "b696d974-17ae-43ab-a8db-c8dbcab3c30a",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "f69ec9ee-28f7-4883-83bf-3008d8ac01d6",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "91fa2f4a-7ebb-450f-a2f5-c82f7d2099a5",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "f3f7e306-bfa8-49eb-bccc-fcb17f60d642",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "e3778ef9-2679-4bb9-9b75-3de746046300",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "7ebce799-daf6-43da-977a-ead35fca0272",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "448a3b4b-5112-48cc-b2ce-bddad693efab",
+      "result_id": "26248087-31b9-4b3d-bacb-ec14b0dd834d"
+    },
+    {
+      "claim_id": "58acd5ec-c5fb-4f65-abda-336ec54b3986",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "a7640b38-237d-4e4c-a93e-ba06c0e474f5",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "9580eeac-78ba-491b-aad9-772ccaddca7b",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "bfda26d8-05bf-4d31-8bd0-86a42c4235b9",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "574da34e-ac37-4907-a2c5-aff74143f58a",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "0f3d0e51-e724-4c46-b9f3-20f9c2a8598d",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "96640582-802f-4a10-83aa-bcae67ea1e75",
+      "result_id": "163f0000-e762-4137-9526-393c51802869"
+    },
+    {
+      "claim_id": "36b41cda-5d8e-4ffc-a653-882b9230c804",
+      "result_id": "d7d2b237-8b2a-4170-8c62-fa88f6b09797"
+    },
+    {
+      "claim_id": "053f2064-6573-44c9-a2a8-68812288ca5c",
+      "result_id": "d7d2b237-8b2a-4170-8c62-fa88f6b09797"
+    },
+    {
+      "claim_id": "f7ff154f-5daf-4e47-8928-df6de00230d3",
+      "result_id": "d7d2b237-8b2a-4170-8c62-fa88f6b09797"
+    },
+    {
+      "claim_id": "3717456b-0a8e-4b87-8311-476c32146336",
+      "result_id": "8cab3adb-d4ac-4986-a7e6-4b2e414f0d53"
+    },
+    {
+      "claim_id": "442410e0-46a5-4577-b14e-54e4a4eb6251",
+      "result_id": "8cab3adb-d4ac-4986-a7e6-4b2e414f0d53"
+    }
+  ],
+  "comparisons": []
+}

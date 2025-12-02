@@ -1,0 +1,1450 @@
+{
+  "submission": {
+    "id": "10bf93f4-476b-4705-a478-0890052755f3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:33:45.884510Z",
+    "updated_at": "2025-12-02T01:33:45.884510Z"
+  },
+  "content": [
+    {
+      "id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "submission_id": "10bf93f4-476b-4705-a478-0890052755f3",
+      "content_type": "manuscript",
+      "content_text": "# Tunable molecular tension sensors reveal extension-based control of vinculin loading\n\n## Authors\n\n- Andrew S LaCroix<sup>1</sup> ([ORCID: 0000-0003-0117-4785](https://orcid.org/0000-0003-0117-4785))\n- Andrew D Lynch<sup>1</sup>\n- Matthew E Berginski<sup>1</sup>\n- Brenton D Hoffman<sup>1</sup> ([ORCID: 0000-0003-2296-1331](https://orcid.org/0000-0003-2296-1331)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering Duke University Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecular tension sensors have contributed to a growing understanding of mechanobiology. However, the limited dynamic range and inability to specify the mechanical sensitivity of these sensors has hindered their widespread use in diverse contexts. Here, we systematically examine the components of tension sensors that can be altered to improve their functionality. Guided by the development of a first principles model describing the mechanical behavior of these sensors, we create a collection of sensors that exhibit predictable sensitivities and significantly improved performance in cellulo. Utilized in the context of vinculin mechanobiology, a trio of these new biosensors with distinct force- and extension-sensitivities reveal that an extension-based control paradigm regulates vinculin loading in a variety of mechanical contexts. To enable the rational design of molecular tension sensors appropriate for diverse applications, we predict the mechanical behavior, in terms of force and extension, of additional 1020 distinct designs.\n\n## Introduction\n\nThe ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in many fundamentally important biological processes, including migration (Doyle et al., 2009; Lo et al., 2000; Pelham and Wang, 1997), proliferation (Chen et al., 1997; Provenzano and Keely, 2011), differentiation (Engler et al., 2006; Heo et al., 2016; McBeath et al., 2004), and morphogenesis (Heisenberg and Bella\u00efche, 2013; Wozniak and Chen, 2009). While the mechanosensitive signaling pathways enabling these responses are poorly understood, most are thought to have a common basis: the mechanical deformation of load-bearing proteins (Cost et al., 2015; Hoffman et al., 2011; Ju et al., 2016). As such, several technologies for measuring the loads borne by specific proteins in living cells have emerged (Freikamp et al., 2016; Hoffman, 2014; LaCroix et al., 2015b; Liu et al., 2017; Polacheck and Chen, 2016). These biosensors, collectively referred to as molecular tension sensors, leverage the distance-dependence of F\u00f6rster Resonance Energy Transfer (FRET) to measure the extension of and, if properly calibrated, the forces across a specific protein of interest (Austen et al., 2013; Freikamp et al., 2017; Hoffman, 2014; LaCroix et al., 2015a). For example, using this approach, the tension across vinculin was shown to regulate a mechanosensitive switch governing the assembly/disassembly dynamics of focal adhesions (FAs) (Grashoff et al., 2010). While this and several other FRET-based molecular tension sensors provide a critical view into mechanosensitive processes (Cost et al., 2015; Jurchenko and Salaita, 2015), fundamental questions regarding the nature and the degree of the mechanical loading of proteins remain. A key limitation has been the inability to create tension sensors with diverse mechanical sensitivities suitable for a wide variety of biological applications (Freikamp et al., 2017).\n\nTo date, genetically-encoded molecular tension sensor modules (TSMods), which are incorporated into various proteins to form distinct tension sensors (Figure 1A), have been created without a priori knowledge of their mechanical sensitivity. TSMod development has largely relied on a biologically-inspired \u2018guess-and-check\u2019 design approach using naturally-occurring extensible polypeptides or protein domains as deformable elements in the FRET-based tension sensors. Furthermore, despite the use of these sensors to study intracellular processes, calibration measurements of their mechanical sensitivity are typically performed in vitro using highly precise single molecule techniques. Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015). However, it is unclear if these ranges are sufficient for diverse mechanobiological studies, and the applicability of these in vitro calibrations to sensors that are utilized in cellulo has not been verified.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic depiction of a generic TSMod and inverse relationship between FRET and force for molecular tension sensors under tensile loading. (B-D) TSMod function depends on the F\u00f6rster radius of the chosen FRET pair (B) as well as the length (C) and stiffness (D) of the extensible polypeptide domain. (E) Representative images of soluble mTFP1-Venus and Clover-mRuby2 TSMods expressed in Vin-/- MEFs. (F) Quantification of unloaded FRET efficiency for mTFP1-Venus and Clover-mRuby2 TSMods; (n = 53 and 92 cells, respectively); red filled circle denotes sample mean; **** p < 0.0001, Student\u2019s t-test, two-tailed, assuming unequal variances. (G) Quantification of FRET-polypeptide length relationship for minimal Clover-mRuby2 TSMods in vitro; each point represents data from at least 5 independent experiments; lines represent model fits where $L_{P}$ is the only unconstrained parameter. (H) Quantification of FRET-polypeptide length relationship for minimal Clover-mRuby2 based TSMods in cellulo; each point represents at least n = 48 cells from three independent experiments; lines represent model fits where $L_{P}$ is the only unconstrained parameter. All error bars, s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantification of FRET-polypeptide length relationship for (GPGGA)n extensible domains flanked by full-length Clover-mRuby2 FPs (containing unstructured residues, orange) as compared to model fit of the same module containing \u2018minimal\u2019 FPs (from Figure 1H); each point represents at least n\u00a0=\u00a047 cells pooled from three independent experiments; difference in slope of FRET-length relationship indicates that the unstructured residues in full-length FPs change the effective mechanics of the extensible domain, especially at short polypeptide lengths, an undesirable property in tension sensor modules. (B) Quantification of FRET-polypeptide length relationship for \u2018minimal\u2019 Clover-mRuby2 based TSMods in cellulo either live or fixed; each point represents at least n\u00a0=\u00a09 cells per experiment from three independent experiments; analysis of covariance (ANCOVA) was used to provide a model-independent assessment of statistical differences; ANCOVA interaction term p>0.05 indicates that the relationship between FRET efficiency and polypeptide length is not significantly different (n.s.) between live and fixed conditions; error bars, s.e.m. (C) FRET efficiency measurements as a function of mean acceptor intensity (brightness) for fixed cells expressing TSMods consisting of the \u2018minimal\u2019 Clover-mRuby2 FRET pair and (GGSGGS)2,5,9 extensible domains (R2\u00a0=\u00a00.06, 0.01, 0.03 and n\u00a0=\u00a074, 86, 48 cells, respectively; data pooled from three independent experiments).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A, B) Representative images of quantitative spectral analysis of mTFP1-Venus (A) and Clover-mRuby2 (B) TSMod fluorescence in cell lysates using the (ratio)A method (Majumdar et al., 2005). (C) Quantification of unloaded FRET efficiency for mTFP1-Venus and Clover-mRuby2 TSMods with (GPGGA)8 extensible domain; (n\u00a0=\u00a09 and 4 independent experiments, respectively); red filled circle denotes sample mean; ****p<0.0001, Student\u2019s t-test, two-tailed, assuming unequal variances.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic of donor and acceptor FPs highlighting 11 C-terminal residues (donor FP) and 2 N-terminal residues (acceptor FP), which do not contribute to beta barrel structure, but are highly conserved between various FPs; residues not appearing in crystal structures are faded (PDB 2HQK and 1MYW for donor and acceptor FPs, respectively); residues that were removed are underlined. (B, C) Normalized excitation (B) and emission (C) spectra for full length and \u2018minimal\u2019 versions of mTFP1, Venus, Clover, and mRuby2.\n\nWe sought to overcome these limitations by creating new TSMods that do not rely on naturally occurring extensible domains or in vitro calibration schemes. These new TSMods consist of a Clover-mRuby2 FRET pair connected by unstructured polypeptide extensible domains of various lengths. As the entropy-driven mechanical resistance of unstructured polypeptides can be accurately predicted by established models of polymer extension (Becker et al., 2010), the force- and extension-sensitivities can be determined independently of in vitro calibration experiments. Using these advancements, we generate a variety of new tension sensors for the FA protein vinculin. These include a version optimized for sensitivity, which shows a nearly 3-fold increase in performance, as well as a suite of sensors with distinct mechanical sensitivities capable of determining if vinculin loading is subject to extension-based or force-based control. Lastly, we computationally predict the mechanical behavior expected for a variety of unstructured polypeptide-based tension sensors for several common FRET pairs. This resource should allow for the expedited creation and rational design of molecular tension sensors suited for use in diverse contexts, alleviating a significant limitation in the study of mechanobiology.\n\n## Results\n\n### Creation of TSMods based on synthetic unstructured polypeptides\n\nTSMods for intracellular use consist of two fluorescent proteins (FPs) connected by an extensible domain (Figure 1A). To enable the creation of tension sensors with diverse mechanical sensitivities, we constructed a variety of TSMods using FPs with distinct photophysical properties connected by unstructured polypeptides of various lengths and mechanical properties, as each of these characteristics critically determine the behavior of these sensors (Figure 1B\u2013D). We based our designs on the first calibrated TSMod (Grashoff et al., 2010), which is comprised of the mTFP1-Venus FRET pair connected by a flagelliform silk-based polypeptide with the repeated sequence (GPGGA)8, and has been used in a variety of tension sensors (Cost et al., 2015; Jurchenko and Salaita, 2015).\n\nFirst, we evaluated the role of the FPs in TSMod function. Reasoning that increases in the unloaded FRET efficiency could potentially increase the dynamic range of the sensor as well as alleviate technical issues with measuring small FRET signals, we sought to increase the FRET efficiency in this state (Figure 1B). To do so, we replaced mTFP1-Venus with the green-red FRET pair Clover-mRuby2 (Lam et al., 2012), which exhibits stronger FRET at a given separation distance (F\u00f6rster radius ($R_{0}$) of 5.7 and 6.3 nm, respectively). This simple substitution yielded a 12% higher baseline (unloaded) FRET efficiency that was observed in fixed (Figure 1E, F) and live cells (Figure 1\u2014figure supplement 1), as well as cell lysates (Figure 1\u2014figure supplement 2). While the benefits of the improved photophysical properties of Clover-mRuby2 are established (Lam et al., 2012), we probed the effect of the physical structure of the FPs on their performance in TSMods. Although commonly identified by a characteristic beta-barrel structure, FPs also contain short unstructured regions at their termini that likely contribute to the effective mechanical properties of the extensible domains used in TSMods (Figure 1\u2014figure supplement 1) (Ohashi et al., 2007). Previous work, and our data (Figure 1\u2014figure supplement 3), have shown that \u2018minimal\u2019 Clover (residues 1 \u2013 227) and mRuby2 (residues 3 \u2013 236) exhibit absorbance and emission spectra indistinguishable from their full-length counterparts (Austen et al., 2015; Li et al., 1997; Ohashi et al., 2007; Ouyang et al., 2008; Shimozono et al., 2006). Therefore, to mitigate concerns about FPs affecting the mechanical properties of the extensible domains and further increase the unloaded FRET efficiency, minimal versions of Clover and mRuby2 were used in the construction of all TSMods.\n\nRecent evidence suggests that both the mechanical properties (Austen et al., 2013; Ringer et al., 2017) and the length (Brenner et al., 2016) of the extensible domain provide viable means by which to tune the mechanical sensitivity of TSMods (Figure 1C,D). Towards this end, we created a variety of TSMods containing extensible domains comprised of either the flagelliform-based (GPGGA)n, which is thought to be relatively stiff (Becker et al., 2003), or the synthetic (GGSGGS)n which has been characterized as an unstructured polypeptide and has previously been employed as a tunable linker in biochemical sensors (Evers et al., 2006). Analysis of TSMods in cell lysates showed that those with (GGSGGS)n extensible domains exhibit higher FRET efficiencies than those with (GPGGA)n extensible domains of the same length (Figure 1G), suggesting that (GPGGA)n-based polypeptides are indeed stiffer, and thus force the FPs apart more readily, than (GGSGGS)n-based polypeptides. However, when (GPGGA)n and (GGSGGS)n TSMods were evaluated in cellulo, the FRET efficiency versus length relationships were indistinguishable, suggesting the polypeptides are exhibiting identical mechanical properties (Figure 1H). Together, these data demonstrate that factors dictating sensor functionality in the absence of applied load can be environmentally sensitive, and that the behavior of TSMods observed in vitro may not reflect their behavior in cellulo. As such, these results raise concerns about the applicability of calibrations of FRET-based tension sensors performed in vitro to sensors that are used in intracellular environments (further discussed in Appendix 1).\n\n### A quantitative model describing the mechanical sensitivity of TSMods\n\nAs an alternative to TSMod calibration through in vitro approaches, we pursued a modeling-based approach for describing the mechanical sensitivities of TSMods. Given that FPs linked by (GGSGGS)n polypeptides are well-described by established models of polymer physics in unloaded conditions (Evers et al., 2006), we developed an analogous model to predict TSMod behavior under load. Briefly, the proposed calibration model incorporates three main aspects of TSMods: (1) the photophysical properties of the FRET pair (F\u00f6rster radius, $R_{0}$), (2) the radii of the FPs ($R_{FP}$), and (3) the mechanical response of the extensible domain, which is well-described as a semi-flexible polymer by a persistence length ($L_{P}$) and a contour length ($L_{C}$) in the framework of the worm-like chain model (Becker et al., 2010). This modeling-based approach enables the prediction of the in cellulo mechanical response of FRET-based tension sensors by leveraging separate measurements of the in cellulo $L_{P}$ of the unstructured polypeptide used as the extensible domain. A detailed description of the development and implementation of the model, as well as comparison to other estimates of TSMod behavior are presented in Appendix 1, which refers to data presented in Figure 2\u2014figure supplement 1,2 and Supplementary file 1.\n\nTo validate this model, we first investigated its ability to describe the behavior of several types of TSMods in terms of the relationship between FRET and the length of the extensible domain in unloaded conditions. These measurements are critical in that they are used to estimate the mechanics of the extensible domain in terms of its persistence length $L_{P}$. To do so, estimates of $R_{0}$ and $R_{FP}$ were obtained from the literature, $L_{C}$ was directly calculated from the number of amino acids comprising the extensible domain, and $L_{P}$ was used as the single adjustable parameter. With only $L_{P}$ left unconstrained, the model accurately describes the behavior of TSMods containing (GPGGA)n and (GGSGGS)n extensible domains in unloaded conditions in in vitro (Figure 1G) and in cellulo (Figure 1H) environments with physically reasonable estimates of $L_{P}$. Model fits and 95% confidence intervals confirm that $L_{P}$ estimates for (GPGGA)n and (GGSGGS)n polypeptides are significantly different in vitro ($0.74\\pm0.05$ and $0.33\\pm0.05nm$, respectively), and collapse to one intermediate value in cellulo ($0.50\\pm0.02$ and $0.48\\pm0.05nm$, respectively). Also, to demonstrate that the literature estimates of $R_{0}$ and $R_{FP}$ were appropriate, we performed a sensitivity analysis, leaving either $R_{FP}$ or $R_{0}$ unconstrained. We observe negligible improvement in fit quality and achieve similar estimates of $L_{P}$ (Figure 2\u2014figure supplement 3 and 4), validating our approach. Overall, these results demonstrate the functionality of the model to measure the $L_{P}$ of TSMod extensible domains in unloaded conditions and also suggest that the observed mechanics of the extensible domain can change in different environments, although less-so for (GGSGGS)n polypeptides.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Model descriptions, at various persistence lengths ($L_{P}$), of FRET-polypeptide length relationship (A) and FRET-force responses (B) of Cy3 and Cy5 dyes linked by SMCC linker + cysteine modified (GPGGA)n polypeptides; data was digitized based on histograms from (Brenner et al., 2016); model parameters $R_{0}=5.4nm$, $R_{FP}=0.95nm$, $L_{P}=1.05nm$ (range $1.00$ to $1.15nm$); error bars, s.d. (C) Model predictions of force sensitivity of TSMods comprised of Clover-mRuby2 FRET pair and (GGSGGS)n extensible domains in comparison to the original TSMod (Grashoff et al., 2010); model parameters $R_{0}=6.3nm$, $R_{FP}=2.3nm$, $L_{P}=0.48nm$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-C) Mechanical sensitivity of FRET-based TSMods depends on the mechanical properties and length of the extensible domain (A), the physical separation of the chromophores within the FPs (B), and the relative orientation and timescale of rotation of the FPs (C). (D-F) Similarly, the mechanical sensitivity of FRET-based TSMod-like constructs which utilize Cy3 and Cy5 as the fluorescent moiety depends on the mechanical properties and the length of the extensible domain (D), the physical separation of the organic dyes (E), and the relative orientation and timescale of rotation of the dyes (F). Note when modeling large FP-based TSMods, the static isotropic regime of energy transfer is valid, while FRET between organic dyes is more appropriately described by the dynamic isotropic assumption of the classical F\u00f6rster equation (Vogel et al., 2014).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Probability distributions of polypeptide end-to-end distance ($r_{e}$), normalized to contour length ($L_{C}$) such that $r=r_{e}/L_{C}$ calculated using the second Daniels approximation (Daniels, 1952; Yamakawa and Stockmayer, 1972), simulations from (Wilhelm and Frey, 1996), and an ansatz approximation used in the proposed model based on (Becker et al., 2010) that smoothly bridges between various mechanical regimes. (B) Demonstration that the numerical ansatz predicts the standard length $r_{e}~N^{1/2}$ scaling behavior characteristic of unstructured polypeptides. (C) Under load, the average extension ($r_{z}$) of the polypeptide extensible domain predicted by the (Becker et al., 2010) ansatz closely follows the previous prediction of the force-extension curve for a worm-like chain (Bouchiat et al., 1999). (D) Possible approaches to estimate the chromophore separation distance ($r_{c}$), from polypeptide end-to-end distance ($r_{e}$). Note that some approaches predict unphysical overlap of the FPs at short linker lengths, which is highlighted in red for the extreme condition of infinitesimal linker length. (E, F) The proposed model includes a dimensionless group (determined by the applied load, the rest length of the construct, and thermal energy) that heuristically accounts for the effects of rotational entropy. This results in a reduced amount of force transferred through FPs to the polypeptide at low applied force (E); this difference between the force causing extension of the polypeptide ($F_{z}$) and applied force ($F$) manifests in a plateau in the FRET-force relationship at very small loads (F).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Parameter constraint has minimal effects on measurement of polypeptide persistence length ($L_{P}$) in vitro.(A, B) Heatmaps of chi-squared error of model fits to in vitro \u2018minimal\u2019 Clover-mRuby2 based TSMod FRET-length measurements for various $R_{FP}$ and $L_{P}$ for (GPGGA)n (A) and (GGSGGS)n (B) extensible domains; literature estimate of $R_{FP}$ used for parameter constraint highlighted with green bar; $R_{0}$ is constrained to 6.3 nm. (C, D) As in panels (A and B), except various $R_{0}$ and $L_{P}$ parameters were examined; green bar highlights $R_{0}$ parameter estimate; $R_{FP}$ is constrained to 2.3 nm. (E, F) Model fits to in vitro FRET-length relationships for \u2018minimal\u2019 Clover-mRuby2 based TSMods containing the (GPGGA)n (E) or (GGSGGS)n (F) extensible domain are equally accurate with either a single unconstrained (unc.) parameter ($L_{P}$) or two unconstrained parameters.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Parameter constraint has minimal effects on measurement of polypeptide persistence length ($L_{P}$) in cellulo.(A, B) Heatmaps of chi-squared error of model fits to in cellulo \u201cminimal\u201d Clover-mRuby2 based TSMod FRET-length measurements for various $R_{FP}$ and $L_{P}$ for (GPGGA)n (A) and (GGSGGS)n (B) extensible domains; literature estimate of $R_{FP}$ used for parameter constraint highlighted with green bar; $R_{0}$ is constrained to 6.3 nm. (C, D) As in panels (A and B), except various $R_{0}$ and $L_{P}$ parameters were examined; green bar highlights $R_{0}$ parameter estimate; $R_{FP}$ is constrained to 2.3 nm. (E, F) Model fits to in cellulo FRET-length relationships for \u2018minimal\u2019 Clover-mRuby2 based TSMods containing the (GPGGA)n (E) or (GGSGGS)n (F) extensible domain are equally accurate with either a single unconstrained (unc.) parameter ($L_{P}$) or two unconstrained parameters.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Parameter constraint has minimal effects on measurement of polypeptide persistence length ($L_{P}$) for TSMod-like constructs in unloaded or loaded conditions.(A, B) Heatmaps of chi-squared error of model fits to published fluorescence-force spectroscopy measurements of (GPGGA)5,8,10 extensible domains flanked by Cy3 and Cy5 fluorescent dyes in unloaded (A) and loaded (B) conditions; literature estimate of $R_{FP}$ used for parameter constraint highlighted with green bar; $R_{0}$ is constrained to 5.4 nm. (C, D) As in panels (A and B), except various $R_{0}$ and $L_{P}$ parameters were examined; green bar highlights $R_{0}$ parameter estimate; $R_{FP}$ is constrained to 0.95 nm. (E, F) Model fits to published fluorescence-force spectroscopy data of TSMod-like constructs in unloaded (E) and loaded (F) conditions are equally accurate with either a single unconstrained (unc.) parameter ($L_{P}$) or two unconstrained parameters.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Measured relationship between average polypeptide end-to-end distance $r_{e}$ as a function of the number of residues in the (GPGGA)n extensible domain $N$ shows $r_{e}~N^{1/2}$ behavior characteristic of unstructured polypeptides; data transformed from Figure 2A using the proposed model of TSMod mechanical sensitivity. (B) After simulating unstructured polypeptides of various lengths in the context of the WLC model, calculation of $r_{e}$ using the approach put forth by (Brenner et al., 2016) yields an artificial $r_{e}~N^{1}$ behavior. Note that plots are logarithmic on both axis such that power-law relationships appear as straight lines.\n\nNext, we sought to investigate the generalizability of the model as well as validate the ability of the model to describe the behavior of TSMods subject to tensile loads. Therefore, we examined model fits to published fluorescence-force spectroscopy measurements of Cy3-Cy5 dyes linked by (GPGGA)n extensible domains (Brenner et al., 2016). Again, with only $L_{P}$ unconstrained, the model accurately describes the behavior of these TSMod-like constructs in both unloaded conditions (Figure 2A) and under tensile loads (Figure 2B). Importantly, each of these datasets is well-described by the same persistence length ($L_{P}=1.05nm$) indicating that the same mechanical model is appropriate for describing the behavior of unstructured polypeptides in both unloaded and loaded conditions when both measurements are determined in the same environment. For comparison, we show fits for a range of $L_{P}$ values from $1.0$ to $1.15nm$ (lines in Figure 2A, shaded region in Figure 2B). The robustness of these fits to various parameter constraints was also verified (Figure 2\u2014figure supplement 5). It is important to note that these differences in the $L_{P}$ of (GPGGA)n polypeptides in various environments (Figure 2G,H, Figure 2A) support the idea that in vitro calibrations should be applied to sensors used in living cells, or in different in vitro environments, with caution.\n\n### A novel approach for predicting the in cellulo calibration of TSMods\n\nTogether these results suggest a simple model-based calibration scheme by which measurements of extensible domain mechanics ($L_{P}$) in unloaded conditions are utilized to predict TSMod behavior under tensile loading. While our modeling efforts indicate that both (GPGGA)n and (GGSGGS)n polypeptide mechanics are consistent with unstructured polypeptides (Figure 2\u2014figure supplement 6), we only generate calibration predictions for TSMods containing (GGSGGS)n extensible domains because they are also less sensitive to environmental changes. In the context of the model, the in cellulo persistence length of the (GGSGGS)n extensible domain ($L_{P}=0.48nm$, Figure 1H) is combined with literature estimates of the radii (Hink et al., 2000) and photophysical properties (Lam et al., 2012) of Clover and mRuby2 to predict the response of (GGSGGS)n-based TSMods under applied loads (Figure 2C). This model-based calibration scheme uniquely overcomes the environmental sensitivity of the extensible domain (compare Figure 1G and H) by allowing for in cellulo measurements of $L_{P}$ to be used to estimate the mechanical sensitivity of TSMods.\n\n### Optimized tension sensor reveals gradients of vinculin tension across FAs\n\nTo determine which extensible domain length will be optimal for measuring tension across vinculin, we evaluated TSMod mechanical sensitivity across different force regimes by calculating the derivative along the FRET-force curve (Freikamp et al., 2017) (Figure 2C, Figure 3\u2014figure supplement 1). Given the original vinculin tension sensor (VinTS) reported average loads of\u00a0~2.5 pN across vinculin that varied from 1 to 6 pN (Grashoff et al., 2010), we choose to further investigate the performance of the TSMod containing the nine-repeat extensible domain, as it exhibits the highest sensitivity in this force regime and is capable of capturing the distribution of the loads on vinculin (Figure 3\u2014figure supplement 1A). This nine-repeat linker also provides a good balance between FRET dynamic range and peak sensitivity (Figure 3\u2014figure supplement 1B,C). An optimized VinTS (opt-VinTS) was created by genetically inserting this TSMod into vinculin at same site, after amino acid 883, as in the original VinTS design (Grashoff et al., 2010).\n\nWe assessed the performance of opt-VinTS by evaluating its ability to detect changes in vinculin loading across both subcellular and FA length scales. Vin-/- MEFs expressing either VinTS or opt-VinTS showed indistinguishable cell and FA morphologies (Figure 3A,A\u2019, C,C\u2019, Figure 3\u2014figure supplement 2). Furthermore, line scans of acceptor intensity across single FAs indicated similar localization of each sensor (Figure 4\u2014figure supplement 3A\u2019\u2019, A\u2019\u2019\u2019, C\u2019\u2019, C\u2019\u2019\u2019). These findings indicate that the two sensors exhibit identical biologically functionality. At a subcellular length scale, consistent with our previous findings (Rothenberg et al., 2015), both VinTS and opt-VinTS report highest loads (lowest FRET efficiency) in the cell periphery, and no appreciable tensile loading of vinculin in the cell center (Figure 3B,D). Based on previous reports of gradients of vinculin loading within individual FAs (Sarangi et al., 2017) and a skewed distribution of mechanical stresses at the cell-substrate interface (Blakely et al., 2014; Legant et al., 2013; Morimatsu et al., 2015; Plotnikov et al., 2012), we expected to see similar distally-skewed vinculin tensions. Such gradients are difficult to discern in peripheral FAs of cells expressing the original tension sensor (Figure 3B\u2019, B\u2019\u2019, B\u2019\u2019\u2019). However, striking gradients of vinculin tension across single FAs were clearly visible in peripheral FAs of cells expressing opt-VinTS (Figure 3D\u2019, D\u2019\u2019, D\u2019\u2019\u2019). To quantitatively gauge performance, we quantified the FRET efficiency change across length-normalized FAs (slope, Figure 3B\u2019\u2019\u2019, D\u2019\u2019\u2019). This analysis revealed an almost 3-fold improvement in the performance opt-VinTS (slope\u00a0=\u00a015.0%/FA) when compare the original design (slope\u00a0=\u00a05.5%/FA). In total, these results show that, as predicted by the model, opt-VinTS is significantly more sensitive than the original VinTS.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig3-v1.jpg)\n\n**Figure 3.:** (panels A and B) Representative images of subcellular distribution of VinTS (Grashoff et al., 2010) (A, A\u2019) along with representative (A\u2019\u2019) and aggregate (A\u2019\u2019\u2019) line scans of single FAs of size\u00a0>0.5 \u03bcm2 and axis ratio\u00a0>1.5; corresponding masked FRET images (B, B\u2019) and line scans (B\u2019\u2019, B\u2019\u2019\u2019); n\u00a0=\u00a055 FAs from n\u00a0=\u00a011 cells from three independent experiments; averaged intensity and FRET profiles in red. (panels C and D) As in panels (A and B), but with optimized opt-VinTS construct; n\u00a0=\u00a049 FAs from n\u00a0=\u00a010 cells from three independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Predicted force sensitivities of TSMods containing \u201cminimal\u201d Clover-mRuby2 FRET pair and (GGSGGS)n extensible domains (n =1 to 16).\u00a0(B) Schematic of metrics used to quantify and compare different aspects of TSMod mechanical sensitivity, which describe sensor sensitivity ($\u0394FRET$, top; Peak Sensitivity, bottom) and functional force measurement regimes (Force at 5% FRET noise floor, top; Force at Peak Sensitivity, bottom) (C) Graphical comparison of TSMod mechanical sensitivity properties; green indicates favorable value for a given metric. Nine-repeat (GGSGGS)n extensible domain shows similar force range as original TSMod (columns 2, 4) as well as a good balance between $\u0394FRET$ (column 1) and Peak Sensitivity (column 3), which are inversely proportional.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A-F) Vin-/- MEFs expressing various version of VinTS show indistinguishable FA area (A), FA axis ratio (B), subcellular distributions of FAs quantified as normalized distance from cell edge (C), cell perimeter (D), cell axis ratio (E), number of FAs normalized by cell area (F). Different versions of the tension sensor include those constructed with minimal Clover-mRuby2 modules containing three distinct extensible domains, namely (GGSGGS)5 (n\u00a0=\u00a098 cells), (GGSGGS)7 (n\u00a0=\u00a079 cells), (GGSGGS)9 (n\u00a0=\u00a063 cells), along with the original TSMod containing a (GPGGA)8 extensible domain (n\u00a0=\u00a048 cells), each from at least three independent experiments; n.s. not significant (p\u22650.05), ANOVA. See Supplementary file 4 for exact p-values.\n\n### Vinculin loading is subject to an extension-based control mechanism\n\nA central premise of mechanotransduction, the process by which cells sense and respond to mechanical stimuli, is that applied loads induce conformational changes in mechanosensitive proteins, leading to biochemically distinct functions. However, it is unknown whether the forces or the extensions experienced by proteins mediate the activation of mechanosensitive signaling pathways. Experimental evaluation of this molecular-scale question has been challenging because force and extension are inherently linked. For example, in the case of molecular tension sensors, the force-extension relationship for the extensible domain is monotonic, so any given force corresponds to a unique extension (Figure 4\u2014figure supplement 1). Note that extension refers to the change in the average length ($r_{z}$, Appendix 1, Equation 6), not the separation distance of the FPs ($r_{c}$) in the construct. Importantly, $r_{z}$ is independent of the size of the extensible domain.\n\nTo determine whether conserved forces or extensions mediate vinculin loading, we created a trio of vinculin tension sensors with extensible domains comprised of five, seven, or nine repeats of (GGSGGS)n. As each sensor has a unique force-extension curve, the application of equivalent forces to the three constructs will result in three distinct extensions, and vice versa (Figure 4\u2014figure supplement 1). Cells expressing equivalent amounts of each sensor spread and formed FAs normally (Figure 4A\u2013D, Figure 3\u2014figure supplement 2). Using the in cellulo calibration predictions described above (shown in Figure 2C), measured FRET efficiencies (Figure 4E\u2013H) were converted to sensor forces (Figure 4I\u2013L) and extensions (Figure 4M\u2013P). Intriguingly, we observed similar distributions of extension (Figure 4P), and distinct distributions of tensile forces (Figure 4L) in FAs formed in cells expressing the various sensors. Furthermore, highly loaded FAs in the cell periphery exhibit conserved gradients in extension rather than force (Figure 4\u2014figure supplement 2). To test whether vinculin is exclusively regulated by an extension-based paradigm, we conducted three additional control paradigm experiments. First, treatment of cells with the Y-27632 showed that vinculin extension-control is robust to short-term inhibition of ROCK-mediated cytoskeletal contractility (Figure 4\u2014figure supplements 3 and 4). Secondly, vinculin extension-control does not require vinculin-talin interactions, as assessed through the introduction of a point mutation (A50I) in the three versions of VinTS (Figure 4\u2014figure supplements 5 and 6). Finally, we observed that extension-based control still occurs on substrates of physiologically-relevant 10 kPa stiffness (Figure 4\u2014figure supplements 7 and 8). Together, these results strongly suggest that loads across vinculin are exclusively governed by an extension-based control rather than the more commonly assumed force-based control paradigm.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-v1.jpg)\n\n**Figure 4.:** (A-C) Representative images of the localization of a trio of vinculin tension sensors to FAs.\u00a0(D) Normalized histograms of acceptor intensities at FAs are indistinguishable between the three sensors. (E-G) Representative images of masked FRET efficiency and (H) normalized histograms of average FA FRET reported by each sensor. (I-K) Representative images of forces and (L) normalized histograms of average vinculin force in FAs reported by each sensor. (M-O) Representative images of extension and (P) normalized histograms of average vinculin extension in FAs reported by each sensor. Note that\u00a0~12% of FAs exhibited negative forces/extensions and were excluded from the analysis in panels (L and P). All normalized histograms depict data from individual FAs; n\u00a0=\u00a098, 79, 63 cells and n\u00a0=\u00a011900, 9461, 7569 FAs for (GGSGGS)5,7,9 extensible domains, respectively; data pooled from six independent experiments; ****p<0.0001, n.s. not significant (p\u22650.05), ANOVA. See Supplementary file 4 for exact p-values and multiple comparisons test details.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) A force-control paradigm cannot be detected if only a single sensor is used (A), but can be discerned if multiple sensors report the same forces, but distinct extensions (B). (C, D) An extension-control paradigm also cannot be detected if a single sensor is utilized (C), but can be uncovered if multiple sensors report the same extension and therefore distinct forces across a protein of interest (D). Curves are predictions of the force-extension curve of the WLC model with persistence lengths of 0.5 nm and contour lengths corresponding to the (GGSGGS)5,7,9 linkers utilized in this study (orange, green, and blue, respectively).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A-D) Line scans of single FAs of size\u00a0>0.5 \u03bcm2 and axis ratio\u00a0>1.5 were compiled and averaged to quantify the spatial distribution of acceptor intensity (A), as well as corresponding FRET efficiencies (B), forces (C), and extensions (D) reported by each of the three distinct tension sensors; shaded region depicts 95% confidence interval for averaged spatial profile; n\u00a0=\u00a046, 45, 50 FAs from n\u00a0=\u00a09, 9, 10 cells from three independent experiments.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A-C) Representative images of the localization of a trio of vinculin tension sensors to FAs formed in cells treated with Y-27632. (D) Normalized histograms of acceptor intensities at FAs are indistinguishable between the three sensors. (E-G) Representative images of masked FRET efficiency and (H) normalized histograms of average FA FRET reported by each sensor. (I-K) Representative images of forces and (L) normalized histograms of average vinculin force in FAs reported by each sensor. (M-O) Representative images of extension and (P) normalized histograms of average vinculin extension in FAs reported by each sensor. Note that\u00a0~10% of FAs exhibited negative forces/extensions and were excluded from the analysis in panels (L and P). All normalized histograms depict data from individual FAs; n\u00a0=\u00a050, 40, 42 cells and n\u00a0=\u00a08623, 6944, 7839 FAs for (GGSGGS)5,7,9 extensible domains, respectively; data pooled from three independent experiments; ****p<0.0001, n.s. not significant (p\u22650.05), ANOVA. (Q) Quantification of cell-average FRET efficiency in control compared to Y-27632-treated VinTS-expressing cells; data represents\u00a0\u226540 cells per condition, pooled from three independent experiments; red filled circle denotes sample mean; ****p<0.0001, Student\u2019s t-test, two-tailed, assuming unequal variances. See Supplementary file 4 for exact p-values and multiple comparisons test details.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A-F) Vin-/- MEFs expressing various version of VinTS, treated with Y-27632, show indistinguishable FA area (A), FA axis ratio (B), subcellular distributions of FAs quantified as normalized distance from cell edge (C), cell perimeter (D), cell axis ratio (E), number of FAs normalized by cell area (F). Different versions of the tension sensor were constructed with minimal Clover-mRuby2 modules flanking three distinct extensible domains, namely (GGSGGS)5 (n\u00a0=\u00a050 cells), (GGSGGS)7 (n\u00a0=\u00a040 cells), (GGSGGS)9 (n\u00a0=\u00a042 cells), pooled from three independent experiments; n.s. not significant (p\u22650.05), ANOVA. See Supplementary file 4 for exact p-values.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A-C) Representative images of the localization of a trio of vinculin tension sensors containing A50I mutations to FAs. (D) Normalized histograms of acceptor intensities at FAs are indistinguishable between the three sensors. (E-G) Representative images of masked FRET efficiency and (H) normalized histograms of average FA FRET reported by each sensor. (I-K) Representative images of forces and (L) normalized histograms of average vinculin force in FAs reported by each sensor. (M-O) Representative images of extension and (P) normalized histograms of average vinculin extension in FAs reported by each sensor. Note that\u00a0~16% of FAs exhibited negative forces/extensions and were excluded from the analysis in panels (L and P). All normalized histograms depict data from individual FAs; n\u00a0=\u00a060, 58, 62 cells and n\u00a0=\u00a04759, 3393, 4147 FAs for (GGSGGS)5,7,9 extensible domains, respectively; data pooled from three independent experiments; ****p<0.0001, n.s. not significant (p\u22650.05), ANOVA. (Q) Quantification of cell-average FRET efficiency in control VinTS-expressing compared to VinTS-A50I -expressing cells; data represents\u00a0\u226558 cells per condition, pooled from three independent experiments; red filled circle denotes sample mean; ****p<0.0001, Student\u2019s t-test, two-tailed, assuming unequal variances. See Supplementary file 4 for exact p-values and multiple comparisons test details.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A-F) Vin-/- MEFs expressing various version of VinTS-A50I show indistinguishable FA area (A), FA axis ratio (B), subcellular distributions of FAs quantified as normalized distance from cell edge (C), cell perimeter (D), cell axis ratio (E), number of FAs normalized by cell area (F). Different versions of the tension sensor were constructed with minimal Clover-mRuby2 modules flanking three distinct extensible domains, namely (GGSGGS)5 (n\u00a0=\u00a060 cells), (GGSGGS)7 (n\u00a0=\u00a058 cells), (GGSGGS)9 (n\u00a0=\u00a062 cells), pooled from three independent experiments; n.s. not significant (p\u22650.05), ANOVA. See Supplementary file 4 for exact p-values.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** (A-C) Representative images of the localization of a trio of vinculin tension sensors to FAs formed in cells plated on fibronectin-coated 10 kPa gels.\u00a0(D) Normalized histograms of acceptor intensities at FAs are indistinguishable between the three sensors. (E-G) Representative images of masked FRET efficiency and (H) normalized histograms of average FA FRET reported by each sensor. (I-K) Representative images of forces and (L) normalized histograms of average vinculin force in FAs reported by each sensor. (M-O) Representative images of extension and (P) normalized histograms of average vinculin extension in FAs reported by each sensor. Note that\u00a0~8% of FAs exhibited negative forces/extensions and were excluded from the analysis in panels L and P. All normalized histograms depict data from individual FAs; n\u00a0=\u00a025, 25, 14 cells and n\u00a0=\u00a02569, 3251, 1800 FAs for (GGSGGS)5,7,9 extensible domains, respectively; data pooled from three independent experiments; ***p<0.001, n.s. not significant (p\u22650.05), ANOVA. (Q) Quantification of cell-average FRET efficiency in VinTS-expressing cells plated on glass compared to 10 kPa gels; data represents\u00a0\u226514 cells per condition, pooled from three independent experiments; red filled circle denotes sample mean; n.s. not significant (p\u22650.05), Student\u2019s t-test, two-tailed, assuming unequal variances. See Supplementary file 4 for exact p-values and multiple comparisons test details.\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp8-v1.jpg)\n\n**Figure 4\u2014figure supplement 8.:** (A-F) Vin-/- MEFs expressing various version of VinTS plated on 10 kPa gels show indistinguishable FA area (A), FA axis ratio (B), subcellular distributions of FAs quantified as normalized distance from cell edge (C), cell perimeter (D), cell axis ratio (E), number of FAs normalized by cell area (F). Different versions of the tension sensor were constructed with minimal Clover-mRuby2 modules flanking three distinct extensible domains, namely (GGSGGS)5 (n\u00a0=\u00a025 cells), (GGSGGS)7 (n\u00a0=\u00a025 cells), (GGSGGS)9 (n\u00a0=\u00a014 cells), pooled from three independent experiments; n.s. not significant (p\u22650.05), ANOVA. See Supplementary file 4 for exact p-values.\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig4-figsupp9-v1.jpg)\n\n**Figure 4\u2014figure supplement 9.:** (A) FA structural model consists of two parallel layers of proteins, which can be conceptualized as either \u2018sensor\u2019 (blue) or \u2018linker\u2019 (orange) elements. (B) Mimicking what was done in experiments (Figure 4), simulations involved three sensor elements with distinct stiffnesses ($k_{S1}$, $k_{S2}$, $k_{S3}$), arranged in a stratified fashion with a single linker element (stiffness $k_{L}$), loaded by a bulk extension (or force) input. The forces and the extensions experienced by each sensor element were calculated, and a $Control\u00a0Metric$ relating the relative variation in forces to the variation in extensions was calculated (see Appendix\u00a02 for details). (C) Schematic depiction of parameter space examined using this simple structural model of FAs, wherein the relative number of the sensor and linker element is varied (x-axis) along with their relative stiffness (y-axis); thicker springs indicate stiffer mechanics. (D) Summary of results from simulations quantifying force-controlled versus extension-controlled loading of the sensor element. $Control\u00a0Metric$ describes the ratio of variation in forces to the variation in extensions experienced by the sensor elements and will be positive for extension-controlled situations and negative for force-controlled situations. Following a bulk extension input, force-controlled loading of the sensor element occurs when the sensor element is stiff and in relatively high abundance, while extension-controlled loading of the sensor element occurs when the sensor element is soft and/or in relatively low abundance. Dashed contour lines are depicted that correspond to the measured $Control\u00a0Metric$ for VinTS, VinTS + Y-27632, VinTS-A50I, and VinTS on 10 kPa gels ($Control\u00a0Metric=3.2,\u00a03.1,\u00a02.6,\u00a01.7$, respectively). (E-F) FA structural model predictions of the relationship between sensor element stiffness (spring constant) and force (E) or extension (F). Dashed contour lines in panel (D) correspond to force-stiffness relationships in (E) and extension-stiffness relationships in (F).\n\nTo gain insight into the physical origins of force- versus extension-controlled loading of proteins within FAs, we examined how forces and extensions propagate through a simple structural model of a FA (see Appendix\u00a02 for details and more comprehensive discussion of model results). Briefly, the structural model is comprised of various numbers of two distinct elements, which can be thought of as mechanically-dominant proteins or protein complexes within FAs. A sensor element (subscript \u2018S\u2019) and an alternative linker element (subscript \u2018L\u2019) are arranged in two layers (Figure 4\u2014figure supplement 9A) meant to simulate the stratified organization of FAs (Kanchanawong et al., 2010). By comparing the relative variances in forces and extensions observed across sensor elements within various arrangements (Figure 4\u2014figure supplement 9B), we examined whether a force-controlled or extension-controlled loading of the sensor element would be observed following a bulk force or extension input to the entire structure, and whether this depended on either the relative molecular abundance or the relative stiffness of each element (Figure 4\u2014figure supplement 9C).\n\nRegardless of the relative abundance of the elements or their respective stiffness, a force input to the entire structure always resulted in force-based control within the sensor elements. In contrast, an extension input to the entire structure, as might arise due to defined myosin motor step size (Murphy et al., 2001) or actin polymerization (Peskin et al., 1993), gave rise to both extension-controlled and force-controlled regimes in the sensor elements. The extension-controlled loading of the sensor element is more strongly observed when the sensor element is relatively soft and/or in low abundance, otherwise a force-controlled system is predicted (Figure 4\u2014figure supplement 9D). Furthermore, in the extension-controlled regime, this simple model also predicts the linear relationship between sensor element stiffness and the force borne by the three sensor elements that was observed in all control paradigm experiments (Figure 4\u2014figure supplement 9E). Together, these results demonstrate that protein extension, instead of applied force, might be a key mechanical variable in some mechanosensitive processes.\n\n### Roadmap for future TSMod design\n\nBy expanding the simulated parameter space, the calibration model can also be used to predict the in cellulo mechanical sensitivity of a wide variety of potential TSMod designs. Specifically, as each model parameter corresponds to an alterable variable in sensor design ($R_{0}=$ FRET pair, $L_{P}=$ composition of extensible domain, $N=$ length of extensible domain), we can bypass the need to iteratively \u2018guess and check\u2019 the performance of new sensors, and, instead, predict the performance of unstructured polypeptide-based tension sensors in silico. Since our measurements and modeling efforts indicate that both force and extension might be key mechanical variables in different contexts, we report the predicted mechanical responses for simulated sensors in terms of both force and extension. The predicted relationships between force, extension, and FRET for a single sensor can be concisely described by three metrics as depicted in Figure 5A\u2013C: (1) a FRET dynamic range ($\u0394FRET$), which is defined as the change in FRET efficiency from an unloaded state to an experimentally-determined 5% noise floor; (2) a target force ($F_{target}$), which indicates the midpoint of force range a sensor is functional, and is defined as $F_{target}=\u0394F/2$; and (3) a target extension ($r_{z,target}$), which is analogous to target force. Examining the predicted $\u0394FRET$, $F_{target}$, and $r_{z,target}$ for a variety of Clover-mRuby2 TSMods containing extensible domains of various lengths and compositions, we generate a \u2018roadmap\u2019 for future Clover-mRuby2 sensor design (Figure 5D\u2013F, see Supplementary file 1 for a list of reported polypeptide mechanical properties justifying the range over which simulations were performed). Additional roadmaps were generated for other commonly used FRET pairs (Figure 5\u2014figure supplement 1). With these roadmaps as a guide, the rational design and implementation of future tension sensors with diverse and a priori specified properties is now possible.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig5-v1.jpg)\n\n**Figure 5.:** (A-C) Representative plots of relationships between FRET efficiencies, forces, and extensions reported by a single sensor, highlighting $\u0394FRET$ (A), $\u0394Force$ (B), and polypeptide extension $r_{z}$ (C) required to stretch a sensor from its resting state to the 5% FRET noise floor. (D-F) Parameter space highlighting the predicted $\u0394FRET$ at the 5% noise floor (D) as well as the target force $F_{target}$ (E) and target extension $r_{z,target}$ (F) predicted for a variety of Clover-mRuby2-based sensors with a variety of polypeptide lengths (x-axis), and polypeptide mechanical properties (y-axis). Each point represents a single potential TSMod design.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33927/elife-33927-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Parameter space highlighting the predicted $\u0394FRET$ at the 5% FRET noise floor (A, D, G), as well as corresponding target force, $F_{target}$ (B, E, H), and target extensions $r_{z,target}$ (C, F, I), for a variety of Cy3-Cy5 (A-C), Venus-mCherry or mTurquoise2-Venus (which have identical $R_{0}$) (D-F), and mTFP1-Venus (G-I), based sensors with a variety of polypeptide lengths (x-axis), and mechanical properties (y-axis). Each point represents a single potential tension sensor design.\n\n## Discussion\n\nMolecular tension sensors provide insight into the mechanical loading of individual proteins inside cells but have been limited by small dynamic ranges and an inability to tune their mechanical sensitivities. In this work, we leveraged the predictable mechanical responses of unstructured polypeptides to create and characterize a suite of TSMods with improved, specified, and tunable mechanical properties. These new modules were used to create a sensor optimized for the detection of loads across vinculin, as well as a suite of sensors that revealed an extension-control paradigm mediating vinculin loading. Additionally, we used the model to predict the mechanical response of over 1000 distinct sensors, enabling the rational design of future molecular tension sensors for diverse applications.\n\nThrough a systematic examination of the individual components of TSMods, we identified increased F\u00f6rster distance, the use of FPs that lack unstructured residues, and extensible domains comprised of tunable unstructured polypeptides as key to the rational design of the next generation of tension sensors. Surprisingly, we observed context-dependent mechanical behaviors in TSMods, as responses for the same constructs were mechanically distinct in in vitro and in cellulo experiments. Differences in many aspects of these environments, including ionic strength, pH, and crowding, could explain the variety of reported mechanics. However, we surmise that crowding effects are less likely for two reasons. First, previous work has shown that crowding effects are more prominent at longer linker lengths (Ohashi et al., 2007). Additionally, in our in vitro and in cellulo systems, we observed that (GPGGA)n-based polypeptides exhibit higher FRET in vitro, while (GGSGGS)n polypeptides exhibited lower FRET in these conditions. These divergent behaviors are not readily explained by crowding effects, which should increase FRET in both constructs (Ohashi et al., 2007). While we do not establish the origin of these environmental factors in this work, these results raise potential concerns about the applicability of in vitro (single molecule-based) calibrations to sensors that are almost exclusively utilized in cellulo.\n\nTo circumvent the need for in vitro calibrations, we developed and validated a first-principles model which predicts TSMod mechanical sensitivity using in cellulo measurements of the mechanical properties of unstructured polypeptides used as the extensible domain. As quantitatively identical and physically meaningful parameters described the behavior of TSMods in both unloaded and loaded conditions, measurements of the in cellulo behavior of soluble TSMods can be used to predict the in cellulo behavior of tension sensors under load. In future tension sensor studies, this model could be paired with in cellulo measurements of $L_{P}$ to (1) help identify in vitro conditions that suitably match in cellulo systems, (2) re-calibrate sensors in new systems with distinct environmental properties (cell types, subcellular compartments), or (3) detect, and account for, changes in TSMod function following biological treatments or through time.\n\nTo demonstrate both the predictive power of the model and the improvements to these new in cellulo calibrated TSMods, we generated a variety of new vinculin tension sensors, the first of which was optimized to detect the 1\u20136 pN forces thought to be borne by vinculin (Grashoff et al., 2010). This optimized sensor exhibited a marked increase in the ability to detect asymmetric distributions of molecular tension within single FAs. Similar tension asymmetries have been observed external to the cell using both high resolution traction force microscopy (Legant et al., 2013; Plotnikov et al., 2012) and extracellular tension sensors (Blakely et al., 2014; Morimatsu et al., 2015). Intracellularly, gradients in vinculin tension have been reported in cells adhered to micropost arrays, although tension asymmetries were mainly attributed to the presence of discontinuous substrates (Sarangi et al., 2017). We show that these asymmetric molecular loads are detectable without the need for super-resolution imaging and are transmitted through vinculin even on continuous substrates.\n\nLeveraging a suite of in cellulo calibrated vinculin tension sensors with distinct mechanical properties, we investigated a question that was previously technically inaccessible: are the forces across or extensions of proteins subject to cellular control? We observed exclusively extension-control in vinculin, and showed it is robust to a reduction in cell contractility, ablation of vinculin-talin interactions, and plating cells on substrates with physiologically-relevant stiffness. Simulations of FA structures suggested extension-control paradigms were likely due to discrete extensions from the cytoskeleton. Such discrete displacements could arise due to the step-like activities of molecular motors (myosin II) or actin polymerization, suggesting a critical role for the cytoskeleton in these processes. Furthermore, these structural simulations indicate that force-control and extension-control are sensitive to the relative abundance and stiffness of various proteins within the bulk structure. Thus, in addition to extension-controlled protein loading, it is possible that other load-bearing proteins might be subject to either type of control or that a specific protein in distinct cellular contexts could switch control modalities. A key question for future study is how proteins with multiple repeated domains that exhibit non-monotonic force-extension curves, such as talin (Yao et al., 2016) and filamin (Furuike et al., 2001), are mechanically regulated in cells.\n\nThe results of this study provide an updated picture of vinculin function at FAs. Specifically, once vinculin is activated through interactions with talin and/or actin (Bakolitsa et al., 2004; Bois et al., 2006; Chen et al., 2006a), it is pulled until a given extension is achieved, not a set force. Thus, the load-dependent maintenance of vinculin activation (Dumbauld et al., 2013) may be determined by vinculin extension, rather than force. More broadly, extension may be the most pertinent biophysical variable governing the initiation of vinculin-dependent and possibly other mechanosensitive signaling pathways. We note this picture is consistent with recent results that show VinTS FRET does not change on gels (Kumar et al., 2016) and that vinculin is still subject to mechanical load following the ablation of vinculin-talin interactions or partial ROCK-inhibition (Rothenberg et al., 2018c). Extrapolated to longer length scales, this extension-control paradigm agrees well with reports that cells induce similar strains within extracellular environments of differing stiffness (Lin et al., 2018; Saez et al., 2005) and that strain determines the activation of touch-sensitive channels in in vivo models (Eastwood et al., 2015).\n\nTo enable the rational design of future unstructured polypeptide-based sensors, we simulated the parameter space defined by the previously reported polypeptide mechanics ($0.1<L_{P}<10\u00a0nm$) and lengths ($<100$ residues) not likely to adversely affect protein function for several commonly used FRET-pairs. The prediction of more than 1000 possible tension sensor designs should allow for the creation of tension sensors suitable for most experiments in either extension- or force-based control paradigms. However, we note that measurements of force in an extension-control regime will be dependent on the stiffness of the sensor design. We speculate that this could be one possible reason for a variety of forces reported by different sensor designs for the same protein (Erickson, 2017).\n\nIn total, this work provides the biophysical foundation for understanding molecular tension sensor function and delivers a suite of in cellulo-calibrated sensors whose distinct and predictable mechanical sensitivities can be leveraged to gain unique molecular understanding of the role of mechanical forces and extensions in biological systems. These advancements should expedite deployment of molecular tension sensors in diverse biological contexts where mechanical cues and cellular force generation have long been thought to play critical, but unexplored, roles.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>Vinculin -/- mouse embryonic fibroblast</td>\n      <td>PMID: 20181946</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293, Human embryonic kidney cells</td>\n      <td>ATCC Cat# CRL-1573</td>\n      <td>RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>pcDNA3.1(+)</td>\n      <td>Invitrogen, Carlsbad, CA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>VinculinTS</td>\n      <td>Addgene, Cambridge, MA; PMID: 20613844</td>\n      <td>Plasmid #26019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>tCRMod-GGSGGS5</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111760</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>tCRMod-GGSGGS7</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111761</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>tCRMod-GGSGGS9</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111762</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>VinTS- tCRMod-GGSGGS5</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111763</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>VinTS- tCRMod-GGSGGS7</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111764</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>VinTS- tCRMod-GGSGGS9</td>\n      <td>Addgene, Cambridge, MA; this work</td>\n      <td>Plasmid #111765</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Oligonucleotides detailed in Supplementary file 2</td>\n      <td>this work</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Y-27632</td>\n      <td>Sigma Aldrich, St. Louis, MO</td>\n      <td>Y0503; PubChem Substance ID 24277699</td>\n      <td>Used at 25 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>US National Institutes of Health, Bethesda, MD</td>\n      <td>RRID:SCR_003070</td>\n      <td>http://imagej.nih.gov/ij/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image Corrections</td>\n      <td>PMID: 25640429; doi.org/ 10.1007/s12195-015-0404-9</td>\n      <td>NA</td>\n      <td>https://gitlab.oit.duke.edu/HoffmanLab- Public/image-preprocessing (Rothenberg et al., 2018b; copy archived at https://github.com/elifesciences-publications/HoffmanLab-image-preprocessing)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FRET calculations from 3-cube imaging</td>\n      <td>PMID: 16815904; doi.org/ 10.1007/s12195-015-0404-9</td>\n      <td>NA</td>\n      <td>https://gitlab.oit.duke.edu/HoffmanLab- Public/fret-analysis (Rothenberg et al., 2018a; copy archived at https://github.com/elifesciences-publications/HoffmanLab-fret-analysis)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FRET calculations from spectrofluorometry</td>\n      <td>PMID: 16055154</td>\n      <td>NA</td>\n      <td>https://gitlab.oit.duke.edu/HoffmanLab- Public/fluorimetry-fret (LaCroix et al., 2018c;\u00a0copy archived at https://github.com/elifesciences-publications/HoffmanLab-fluorimetry-fret)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TSMod calibration model</td>\n      <td>this work</td>\n      <td>NA</td>\n      <td>https://gitlab.oit.duke.edu/HoffmanLab- Public/tsmod-calibration-model (LaCroix et al., 2018b; copy archived at https://github.com/elifesciences-publications/HoffmanLab-tsmod-calibration-model)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FA structural model</td>\n      <td>this work</td>\n      <td>NA</td>\n      <td>https://gitlab.oit.duke.edu/HoffmanLab- Public/FA-structural-model (LaCroix and Hoffman, 2018a; copy archived at https://github.com/elifesciences-publications/HoffmanLab-FA-structural-model)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and transfection\n\nVinculin -/- MEFs (kindly provided by Dr. Ben Fabry and Dr. Wolfgang H. Goldmann (Mierke et al., 2010), Friedrich-Alexander-Universitat Erlangen-Nurnberg) were maintained in high-glucose DMEM with sodium pyruvate (D6429, Sigma Aldrich, St. Louis, MO) supplemented with 10% FBS (HyClone, Logan, UT), 1% v/v non-essential amino acids (Invitrogen, Carlsbad, CA), and 1% v/v antibiotic-antimycotic solution (Sigma Aldrich). Vinculin knockout was confirmed by western blot and immunofluorescent staining with mouse anti-vinculin antibody (V9131, Sigma Aldrich, dil. 1:5000, 1:500, respectively). Mycoplasma testing of this cell line by Duke Cell Culture Facility was negative. HEK293 cells were maintained in high-glucose DMEM (D5796, Sigma Aldrich) supplemented with 10% FBS (HyClone) and 1% v/v antibiotic-antimycotic solution (Sigma Aldrich). Cells were grown at 37\u00b0C in a humidified 5% CO2 atmosphere. Cells were transfected at 50\u201375% confluence in 6-well tissue culture plates using Lipofectamine 2000 (Invitrogen) following the manufacturer\u2019s instructions.\n\n### Generation of TSMods and vinculin tension sensor constructs\n\nConstructs were created from the previously generated pcDNA3.1 mTFP1 (Ai et al., 2006; Grashoff et al., 2010) and pcDNA3.1 Venus (A206K) (Grashoff et al., 2010; Nagai et al., 2002) as well as pcDNA3.1 Clover (Addgene 40259) and pcDNA3.1 mRuby2 (Addgene 40260) (Lam et al., 2012). Minimal versions of single FPs were generated via Polymerase Chain Reaction (PCR) and inserted into pcDNA3.1 via EcoRI/NotI digestion and subsequent ligation (T4 DNA Ligase, NEB, Ipswich, MA). Specifically, creation of minimal FPs involved deletion of the 11 C-terminal residues in mTFP1 and Clover, and the first and second N-terminal residues in Venus and mRuby2 after the start codon. Oligonucleotide primers used to generate full-length and minimal versions of mTFP1, Venus A206K, Clover, and mRuby2 are detailed in Supplementary file 2.\n\nThe FP component fragments of the mTFP1-Venus and Clover-mRuby2 TSMods were derived from pcDNA3.1 TS module (Grashoff et al., 2010) and pcDNA3.1-Clover-mRuby2 (Addgene 49089) or the minimal FP variants described above. The extensible (GPGGA)n and (GGSGGS)n extensible domains were derived from pcDNA3.1 TS module (Grashoff et al., 2010) and pET29CLY9 (Addgene 21769) (Evers et al., 2006), respectively. Gibson assembly was used to construct TSMods containing a given FRET pair and extensible domain from three fragments: (1) vector backbone and donor FP (complementary regions: 5\u2019-ampicillin gene, 3\u2019-donor FP), (2) extensible domain region (complementary regions: 5'-donor FP, 3\u2019-acceptor FP), and (3) vector backbone and acceptor FP (complementary regions: 5\u2019-acceptor FP, 3\u2019-ampicillin gene). Primers used to generate the extensible domain region in this reaction scheme were designed to nonspecifically target the repetitive extensible domain sequence, thereby generating extensible domains of various lengths. Following assembly and transformation into DH5\u03b1 competent cells, single colonies were assayed for extensible domain length by DNA sequencing. Oligonucleotide primers used to generate TSMods are detailed in Supplementary file 2.\n\nAll variants of the vinculin tension sensor were derived from pcDNA3.1 Vinculin TS (Grashoff et al., 2010). In a cloning strategy analogous to that described above for the TSMods, Gibson assembly techniques were used to assemble vinculin tension sensors containing various minimal Clover-mRuby2 TSMods based on three fragments: (1) vector backbone and vinculin head domain residues 1\u2013883 (complementary regions: 5\u2019-ampicillin gene, 3\u2019-Clover), (2) TSMod with desired (GGSGGS)n extensible domain (complementary regions: 5\u2019-Clover, 3\u2019-mRuby2), and (3) vector backbone and vinculin tail domain residues 884\u20131066 (complementary regions: 5\u2019-mRuby2, 3\u2019-ampicillin gene). Again, the assembled DNA fragments were transformed into DH5\u03b1 competent cells and extensible domain length was verified for single colonies by DNA sequencing. Oligonucleotide primers used to generate vinculin tension sensors are detailed in Supplementary file 2. To generate A50I versions of the vinculin tension sensors, PCR was used to generate a fragment of the vinculin head domain containing the A50I mutation using forward primer 5\u2019-AAT AAG CTT GCC ATG CCC GTC TTC CAC AC-3\u2019, reverse primer 5\u2019-GCC GGA TCC GCA AGC CAG TTC-3\u2019, and template pEGFP-C1/GgVcl 1\u2013851 A50I mutant (Addgene 46269). The product was insert into Clover-mRuby2-based vinculin tension sensors using 5'-HindIII/3'-BamHI. Plasmids will be distributed through Addgene (http://addgene.org).\n\n### Cell seeding and preparation of glass and polyacrylamide substrates\n\nFor cell imaging on glass, no. 1.5 coverslips (Bioptechs, Butler, PA) placed in reusable metal dishes (Bioptechs) were coated overnight at 4\u00b0C with 10 \u03bcg/mL fibronectin (Fisher Scientific, Pittsburgh, PA). Transfected vinculin -/- MEFs expressing a given tension sensor construct were then trypsinized, transferred to the prepared glass-bottom dishes at a density 50,000 cells per dish, and allowed to spread to 4 hr in growth media. For fixed experiments, samples were then rinsed quickly with PBS, and fixed for 10 min with 3.7% methanol-free paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA). For live experiments, growth media was exchanged, at least 1 hr before imaging, for imaging media - Medium 199 (Life Technologies, 11043) supplemented with 10% FBS (HyClone), 1% v/v non-essential amino acids (Invitrogen), and 1% v/v antibiotic-antimytotic solution (Sigma Aldrich). Live cell imaging was performed for up to 30 min at 37\u00b0C (Stable Z system, Bioptechs).\n\nPolyacrylamide gels with elastic moduli of approximately 10 kPa (Tse and Engler, 2010) were created by mixing 10% acrylamide, 0.1% bis-acrylamide (BioRad, Hercules, CA) and 0.1% acrylic acid-NHS (Sigma Aldrich, to permit ECM functionalization), with polymerization initiated via addition of 0.1% ammonium persulfate and 0.05% N,N,N\u00b4,N\u00b4-tetramethylethylenediamine (Sigma Aldrich). Gels were cast between amino-silanated (Tse and Engler, 2010) and hydrophobic (Rain-X treated) coverslips (18 mm diameter, 40 \u03bcL gel solution per coverslip). Following gel polymerization (15 min), the top (hydrophobic) coverslip was removed, gels were rinsed thoroughly in HEPES buffer (50 mM, pH 8.5), then incubated overnight with fibronectin (10 \u03bcg/mL in HEPES buffer) at 4\u00b0C. ECM-coated gels were rinsed thoroughly with PBS prior to cell seeding. Transfected vinculin -/- MEFs expressing a given tension sensor construct were trypsinized, transferred to the ECM-coated gels at a density 50,000 cells per dish, and allowed to spread to 4 hr in growth media. Samples were then fixed for 10 min with 3.7% methanol-free paraformaldehyde (Electron Microscopy Sciences), then rinsed thoroughly in PBS. Finally, cells on gels were inverted onto bare no. 1.5 coverslips (Bioptechs) in reusable dishes (Bioptechs) and imaged.\n\n### ROCK inhibitor (Y-27632) experiments\n\nTo inhibit Rho kinase (ROCK)-mediated myosin activity, cells were allowed to spread for 4 hr and treated with 25 \u03bcM Y-27632 (Sigma Aldrich), diluted from a 10 mM stock solution in deionized H2O, 20 min before fixation. This treatment duration was the shortest capable of resulting in statistically significant loss of loading across vinculin (Figure 4\u2014figure supplement 3Q), as has been shown in previous work (Rothenberg et al., 2018c).\n\n### FRET imaging\n\nAll imaging was performed on an Olympus IX83 inverted epifluorescent microscope (Olympus, Center Valley, PA) equipped with a LambdaLS 300W ozone-free xenon bulb (Sutter Instruments, Novato, CA), a sCMOS ORCA-Flash4.0 V2 camera (Hamamatsu, Japan), motorized filter wheels (Sutter Instruments 10\u20133), and automated stage (H117EIX3, Prior Scientific, Rockland, MA). Image acquisition was controlled by MetaMorph Advanced software (Olympus). Samples were imaged at 60X magnification (Olympus, UPlanSApo 60X/NA1.35 objective, 108 nm/pix), using a three-image sensitized emission acquisition sequence (Chen et al., 2006b). The filter set for FRET imaging of mTFP1-Venus sensors includes mTFP1 excitation (ET450/30x, Chroma, Bellows Falls, VT), mTFP1 emission (Chroma, ET485/20 m), Venus excitation (Chroma, ET514/10x), and Venus emission (FF01-571/72, Semrock, Rochester, NY) filters, and a dichroic mirror (Chroma T450/514rpc). Images of mTFP1-Venus sensors were acquired in, sequentially, the acceptor channel (Venus excitation, Venus emission, 1000 ms exposure), FRET channel (mTFP1 excitation, Venus emission, 1500 ms exposure), and donor channel (mTFP1 excitation, mTFP1 emission, 1500 ms exposure). For Clover-mRuby2 sensors, we utilized the FITC and TRITC filters from the DA/FI/TR/Cy5\u22124 \u00d7 4 M-C Brightline Sedat filter set (Semrock), which provided efficient Clover excitation (FF02-485/20), Clover emission (FF01-525/30), mRuby2 excitation (FF01-560/25), and mRuby2 emission (FF01-607/36) filters, and appropriate dichroic mirror (FF410/504/582/669-Di01) for FRET imaging. Images of Clover-mRuby2 sensors were acquired in, sequentially, the acceptor channel (mRuby2 excitation, mRuby2 emission, 1500 ms exposure), FRET channel (Clover excitation, mRuby2 emission, 1500 ms exposure), and donor channel (Clover excitation, Clover emission, 1500 ms exposure).\n\n### Quantitative FRET efficiency measurements from 3-cube FRET imaging\n\nFRET was detected through measurement of sensitized emission (Chen et al., 2006b) and subsequent calculations were performed on a pixel-by-pixel basis using custom written code in MATLAB (Mathworks, Natick, MA) (https://gitlab.oit.duke.edu/HoffmanLab-Public/image-preprocessing) (Rothenberg et al., 2015; copy archived at https://github.com/elifesciences-publications/HoffmanLab-image-preprocessing). Prior to FRET calculations, all images were first corrected for uneven illumination, registered, and background-subtracted. Spectral bleed-through coefficients were determined through FRET-imaging of donor-only and acceptor-only samples (i.e. cells expressing a single donor or acceptor FP). Donor bleed-through coefficients ($dbt$) were calculated for mTFP1 and Clover as:\n\n$$\ndbt=\\frac{I_{f}}{I_{d}}\n$$\n\nwhere $I_{f}$ is the intensity in the FRET-channel, $I_{d}$ is the intensity in the donor-channel, and data were binned by donor-channel intensity. Similarly, acceptor bleed-through coefficients ($abt$) were calculated for Venus and mRuby2 as:\n\n$$\nabt=\\frac{I_{f}}{I_{a}}\n$$\n\nwhere $I_{a}$ is the intensity in the acceptor-channel, and data were binned by acceptor-channel intensity. To correct for spectral bleed-through in experimental data, corrected FRET images ($F_{c}$) were generated following the equation:\n\n$$\nF_{c}=I_{f}-dbt*I_{d}-abt*I_{a}\n$$\n\nAfter bleed-through correction, FRET efficiency was calculated following the equation:\n\n$$\nE=\\frac{I_{d}+\\frac{F_{c}}{G}}{I_{a}}\n$$\n\nwhere $G$ is a proportionality constant that describes the increase in acceptor intensity (due to sensitized emission) relative to the decrease in donor intensity (due to quenching) (Chen et al., 2006b). This constant depends on the specific FRET pair used, imaging system, and image acquisition settings, and was calculated for both mTFP1-Venus and Clover-mRuby2 biosensors through imaging donor-acceptor fusion constructs of differing but constant FRET efficiencies. See Supplementary file 3 for bleed-through and $G$ coefficients.\n\nWherever possible, image analysis was standardized using custom-written Matlab software. Analysis parameters (Supplementary file 3) and thresholds for image segmentation were maintained across multiple days of experiments of the same type. For all TSMod and VinTS constructs, only cells with an average acceptor intensity within a pre-specified range were analyzed. This range was set to [1000 40000] for mTFP1-Venus-based sensors or [600 24000] for Clover-mRuby2-based sensors, resulting in exclusion of\u00a0<10% of cells. Finally, for VinTS constructs, cells that were not fully spread were also excluded from analysis.\n\n### Segmentation and analysis of VinTS in FAs\n\nPost-processing of FRET images to segment and quantify the characteristics of individual FAs was performed using custom-written code in MATLAB (Mathworks). Briefly, FAs were identified and segmented on the acceptor channel using the water algorithm (Zamir et al., 1999). The resultant mask was applied across all images for ease of data visualization and quantification. For each identified FA, parameters describing its brightness in the acceptor channel, morphology, and molecular loading (FRET) were determined. To identify single cells, closed boundaries were drawn by the user based on the unmasked acceptor-channel image. From these cell outlines, parameters describing cell morphology and FA subcellular location were also determined.\n\nLine scans of single FAs were performed using ImageJ software (US National Institutes of Health, Bethesda, MD; http://imagej.nih.gov/ij/). Specifically, the line tool was used to visualize the acceptor channel intensity profile across single, large FAs in the cell periphery. The coordinates of these lines, drawn axially starting from the tip of FAs distal to the cell body, were then transferred to masked FRET efficiency images. Acceptor intensity and FRET efficiency profiles from single FAs were saved as text files for subsequent analysis.\n\n### FRET efficiency calculations from spectrofluorometry\n\nHypotonic lysates were prepared from HEK293 cells as previously described (Chen et al., 2005). In addition to experimental samples, lysates from an equal number of untransfected cells were harvested and used as a reference background. Spectrofluorometric measurements were made with a Fluorolog-3 (FL3-22, HORIBA Scientific Jobin Yvon, Edison, NJ) spectrofluorometer with 1 nm step size, 0.2 s integration time, and 3 nm excitation and emission slit widths for all samples. For FRET measurements of mTFP1-Venus sensors, spectra were traced from 472 to 650 nm following donor excitation ($\\lambda_{Dex}$) at 458 nm, and from 520 to 650 nm following acceptor excitation ($\\lambda_{Aex}$) at 505 nm. For Clover-mRuby2 sensors, spectra were traced from 520 to 700 nm following donor excitation at 505 nm, and from 590 to 700 nm following acceptor excitation at 575 nm. The same settings were used to measure the emission spectra of full length and minimal FPs to confirm their spectral properties individually. Custom-written code in MATLAB (Mathworks) was used to calculate FRET efficiency via the (ratio)A method (Majumdar et al., 2005) as:\n\n$$\nE=\\frac{\\epsilon_{A}\\lambda_{Aex}}{\\epsilon_{D}\\lambda_{Dex}}(\\frac{I_{f}\\lambda_{Aem}}{I_{a}\\lambda_{Aem}}\u2212\\frac{\\epsilon_{A}\\lambda_{Dex}}{\\epsilon_{A}\\lambda_{Aex}})\n$$\n\nwhere $I_{f}$ and $I_{a}$ are the intensities, at peak acceptor emission wavelength ($\\lambda_{Aem}$, 530 nm for Venus, 610 nm for mRuby2), of the sample excited at donor and acceptor wavelengths, respectively. Donor and acceptor molar extinction coefficients ($\\epsilon_{D}$ and $\\epsilon_{A}$, respectively) were calculated from absorbance spectra measured on the same Fluorolog-3 spectrofluorometer in absorbance mode (1 nm step size, 0.1 s integration time, 2 nm excitation and emission slit widths) using previously-measured maximal extinction coefficients: 64,000 M\u22121cm\u22121 for mTFP1 (Ai et al., 2006), 93,000 M\u22121cm\u22121 for Venus (Nagai et al., 2002), 111,000 M\u22121cm\u22121 for Clover (), and 113,000 M\u22121cm\u22121 for mRuby2 (Lam et al., 2012). This approach was also used to confirm the absorbance spectra of the minimal FPs were unaltered as compared to the parent version.\n\n### Statistics, bootstrapping, and data digitization\n\nAll statistical analyses, except numerical bootstrapping, were performed using JMP Pro 12 software (SAS, Cary, NC). ANOVAs were used to determine if statistically significant differences (p<0.05) were present between groups. If statistical differences were detected, Tukey\u2019s HSD post-hoc testing was used to perform multiple comparisons and assess statistical differences between individual groups (see Supplementary file 4 for exact p-values and multiple comparisons test details). Box-and-whisker diagrams (Figure 1F, Figure 1\u2014figure supplement 2C) display the following elements: center line, median; box limits, upper and lower quartiles; whiskers, 1.5x interquartile range; red filled circle, mean; open circles, outliers.\n\nNumerical bootstrapping using the built-in Matlab (Mathworks) function bootstrp.m was used to calculate 95% confidence intervals for measurements of $L_{P}$. Specifically, for each of 200 bootstrapped samples, drawn with replacement from the pertinent dataset, the $L_{P}$ that best reflected that sample was calculated by chi-squared error minimization. Fluorescence-force spectroscopy data (Brenner et al., 2016) was digitized using the digitize2.m function in Matlab (Mathworks). To recapitulate the uncertainty in these published unloaded FRET and FRET-force datasets, random sets of 100 data points obeying a Gaussian distribution with the reported mean and standard deviation were used.\n\nFor FRET efficiency measurements, numerical bootstrapping of pilot data was used to determine the sample size required to estimate FRET efficiency to within 1% of the true population mean. This was determined to be 10\u201320 cells from three independent experiments for in cellulo measurements, or five independent samples for in vitro spectral FRET characterization. For fluorescent protein absorbance/emission spectra characterization, sample size was not pre-determined. Rather, the reproduction of data from independent experiments was deemed sufficient to draw conclusions about changes in the fluorescent protein spectral properties.\n\n### Code availability\n\nAll code developed and utilized in this study is publically available at https://gitlab.oit.duke.edu/HoffmanLab-Public. Code used to measure and correct for chromatic aberration, uneven illumination, darkfield noise, and background intensities can be found in the \u2018image-preprocessing\u2019 repository https://gitlab.oit.duke.edu/HoffmanLab-Public/image-preprocessing (copy archived at https://github.com/elifesciences-publications/HoffmanLab-image-preprocessing). Code used to analyze FRET-based tension sensor data, including FRET corrections, object segmentation, object analysis, and cell segmentation can be found in the \u2018fret-analysis\u2019 repository https://gitlab.oit.duke.edu/HoffmanLab-Public/fret-analysis (copy archived at https://github.com/elifesciences-publications/HoffmanLab-fret-analysis). Code to perform spectral FRET analysis on in vitro fluorometric FRET experimental data can be found in the \u2018fluorimetry-fret\u2019 repository https://gitlab.oit.duke.edu/HoffmanLab-Public/fluorimetry-fret (copy archived at https://github.com/elifesciences-publications/HoffmanLab-fluorimetry-fret). Source code for the computational TSMod calibration model, which allows the user to simulate the mechanical response of molecular tension sensor modules, can be found in the \u2018tsmod-calibration-model\u2019 repository https://gitlab.oit.duke.edu/HoffmanLab-Public/tsmod-calibration-model (copy archived at https://github.com/elifesciences-publications/HoffmanLab-tsmod-calibration-model). Source code for the structural model of FA molecules, used to explore the physical limits of extension-control, can be found in the \u2018FA-structural-model\u2019 repository https://gitlab.oit.duke.edu/HoffmanLab-Public/FA-structural-model (copy archived at https://github.com/elifesciences-publications/HoffmanLab-FA-structural-model).\n",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "55e473da-6a37-400e-bc60-c192a8eb40af",
+      "submission_id": "10bf93f4-476b-4705-a478-0890052755f3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Wollongong Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33927.056](https://doi.org/10.7554/eLife.33927.056)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Tunable molecular tension sensors reveal extension-based control of vinculin loading\" for consideration by eLife. Apologies for the delay in getting back to you with this decision letter. Your article has been favorably evaluated by Anna Akhmanova (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Khalid Salaita (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes the design of molecular tension sensor modules that, in combination with FRET, provide a much more controlled and calibrated manner to access intracellular forces and tensions. Particularly, the authors used unstructured synthetic domains as tension sensors and modeled their extension behavior as random coils to predict extension versus force. They use three of these sensors to measure and characterize vinculin loading. Based on these experiments, they design a large number of sensor elements that will find broad applicability in mechanobiology. All three reviewers commented on the high quality of the work and the significant methodological advance that the work represents.\n\nEssential revisions:\n\nThe main biological conceptual advance, the finding that the activation of vinculin mechanotransduction signaling is governed by protein extension rather than force, is of significant interest but not convincingly supported by data. Performing every experiment described in the points below is outside the scope of the current study. However, to strengthen the central mechanistic claim in the work, additional experimental data are needed and some of the suggestions immediately below will need to be implemented.\n\n- While cells do induce similar strains within environments of different stiffness within certain stiffness regimes, it has been well described that the same cell type may exhibit sustained traction or sustained strain within distinct environmental stiffness regimes. For the vinculin experiments described here, the environmental force input is fibronectin-coated glass. The supraphysiologic stiffness of glass certainly will simulate the maximal extreme of \"linker abundance and stiffness\" in the authors FA structural model and therefore predictively result in an extension-based vinculin activation. To further strengthen the model and the biological conclusions on vinculin mechanotransduction, the authors should conduct additional vinculin loading experiments with their trio of sensors on a range of substrates of physiologic stiffness to test whether vinculin is exclusively regulated by an extension-based paradigm, or if its activation can be also force-based.\n\n- It is unclear how the authors' conclusions on the extension-based loading mechanism relate to native vinculin and the other mechanosensing proteins within the focal adhesion. If the force is reduced to maintain extension, then the other mechanosensitive proteins would not be adequately activated. Also, the innate auto-inhibited vinculin would not be fully activated if the force level is reduced (considering the work published by Garcia et al., 2013 \"How vinculin regulates force transmission\"). Finally, if this is true, then it seems likely that the genetically encoded tension sensors likely perturb the focal adhesion function and also mechanosensing as a whole since the differing linker lengths will perturb extension sensing. Perhaps there is another way to interpret this conclusion or to better describe the meaning of the results?\n\nThe \"FA force slope\" (Figure 3) should be applied across the different linker lengths to probe whether the force gradient or the gradient of extension is similar across the different probes. Another interesting metric would be to analyze time lapse videos of the cells with differing linker lengths to determine whether there are differences in the FRET (force) dynamics across the different linkers. It seems reasonable to suspect that both of these pieces of data are already available and it simply requires further analysis. The last suggestion is not absolutely essential but it would be very interesting to test whether the total cell traction forces are different as a function of the vinculin linker length. This is essentially an internal validation to test whether linker length influences traction forces and cell traction output.\n",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c8baf7c-076f-43d8-a23c-aca3e75cd275",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C1",
+      "claim": "Molecular tension sensors have contributed to a growing understanding of mechanobiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular tension sensors have contributed to a growing understanding of mechanobiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the existence and use of these sensors as described throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "4534c398-5a8b-4767-88aa-eeabe3f9d301",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C2",
+      "claim": "The limited dynamic range and inability to specify the mechanical sensitivity of molecular tension sensors has hindered their widespread use in diverse contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the limited dynamic range and inability to specify the mechanical sensitivity of these sensors has hindered their widespread use in diverse contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by the motivation for the study and discussion of limitations in the introduction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "9af17b13-0129-4f0a-b910-9b8953f106f7",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C3",
+      "claim": "A first principles model describing the mechanical behavior of tension sensors was developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by the development of a first principles model describing the mechanical behavior of these sensors, we create a collection of sensors that exhibit predictable sensitivities and significantly improved performance in cellulo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The development of the model is described in the Results section and Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "a3e13154-2a92-4773-8b7b-8b49119050cd",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C4",
+      "claim": "A collection of sensors with predictable sensitivities and significantly improved performance in cellulo was created.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by the development of a first principles model describing the mechanical behavior of these sensors, we create a collection of sensors that exhibit predictable sensitivities and significantly improved performance in cellulo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the creation and testing of multiple vinculin tension sensors with different extensible domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "3f05ebc0-9dfa-4b53-8b9e-5c2df25f5922",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C5",
+      "claim": "A trio of biosensors with distinct force- and extension-sensitivities reveal that an extension-based control paradigm regulates vinculin loading in a variety of mechanical contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilized in the context of vinculin mechanobiology, a trio of these new biosensors with distinct force- and extension-sensitivities reveal that an extension-based control paradigm regulates vinculin loading in a variety of mechanical contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 4 and supplementary figures showing conserved extensions but distinct forces across different sensors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "8f68bd71-aa0c-445d-9337-f648d8d247f6",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C6",
+      "claim": "The mechanical behavior of 1020 distinct tension sensor designs was predicted in terms of force and extension.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable the rational design of molecular tension sensors appropriate for diverse applications, we predict the mechanical behavior, in terms of force and extension, of additional 1020 distinct designs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 5 and Figure 5\u2014figure supplement 1 showing parameter space predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "09aa3847-aed4-4807-8e39-3b2e42a4535d",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C7",
+      "claim": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in many fundamentally important biological processes, including migration (Doyle et al., 2009; Lo et al., 2000; Pelham and Wang, 1997), proliferation (Chen et al., 1997; Provenzano and Keely, 2011), differentiation (Engler et al., 2006; Heo et al., 2016; McBeath et al., 2004), and morphogenesis (Heisenberg and Bella\u00efche, 2013; Wozniak and Chen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "cd051643-8358-4949-8800-be99a9771ce5",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C8",
+      "claim": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in many fundamentally important biological processes, including migration (Doyle et al., 2009; Lo et al., 2000; Pelham and Wang, 1997), proliferation (Chen et al., 1997; Provenzano and Keely, 2011), differentiation (Engler et al., 2006; Heo et al., 2016; McBeath et al., 2004), and morphogenesis (Heisenberg and Bella\u00efche, 2013; Wozniak and Chen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "a71cbbaa-b22c-4bfd-b17c-600a9c428512",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C9",
+      "claim": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in many fundamentally important biological processes, including migration (Doyle et al., 2009; Lo et al., 2000; Pelham and Wang, 1997), proliferation (Chen et al., 1997; Provenzano and Keely, 2011), differentiation (Engler et al., 2006; Heo et al., 2016; McBeath et al., 2004), and morphogenesis (Heisenberg and Bella\u00efche, 2013; Wozniak and Chen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "aa43345c-4fea-4a34-bac5-d00b0f0b7c0a",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C10",
+      "claim": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of cells to generate and respond to mechanical loads is increasingly recognized as a critical driver in many fundamentally important biological processes, including migration (Doyle et al., 2009; Lo et al., 2000; Pelham and Wang, 1997), proliferation (Chen et al., 1997; Provenzano and Keely, 2011), differentiation (Engler et al., 2006; Heo et al., 2016; McBeath et al., 2004), and morphogenesis (Heisenberg and Bella\u00efche, 2013; Wozniak and Chen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "44d1c58a-6be3-423c-81ef-71f27bfe8b42",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C11",
+      "claim": "Most mechanosensitive signaling pathways are thought to have a common basis: the mechanical deformation of load-bearing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mechanosensitive signaling pathways enabling these responses are poorly understood, most are thought to have a common basis: the mechanical deformation of load-bearing proteins (Cost et al., 2015; Hoffman et al., 2011; Ju et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "0bd55001-7180-4116-9cdd-cc08e868ebe8",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C12",
+      "claim": "Molecular tension sensors leverage the distance-dependence of F\u00f6rster Resonance Energy Transfer (FRET) to measure the extension of and forces across a specific protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "These biosensors, collectively referred to as molecular tension sensors, leverage the distance-dependence of F\u00f6rster Resonance Energy Transfer (FRET) to measure the extension of and, if properly calibrated, the forces across a specific protein of interest (Austen et al., 2013; Freikamp et al., 2017; Hoffman, 2014; LaCroix et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how molecular tension sensors work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "8af59af3-02c4-4db2-bd30-df626f697e27",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C13",
+      "claim": "The tension across vinculin was shown to regulate a mechanosensitive switch governing the assembly/disassembly dynamics of focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, using this approach, the tension across vinculin was shown to regulate a mechanosensitive switch governing the assembly/disassembly dynamics of focal adhesions (FAs) (Grashoff et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "960af788-db9e-42fd-ad74-39561dbf3854",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C14",
+      "claim": "A key limitation of FRET-based molecular tension sensors has been the inability to create tension sensors with diverse mechanical sensitivities suitable for a wide variety of biological applications.",
+      "claim_type": "EXPLICIT",
+      "source": "A key limitation has been the inability to create tension sensors with diverse mechanical sensitivities suitable for a wide variety of biological applications (Freikamp et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and serves as motivation for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "d04d2344-4101-42ac-800a-2ab7d84c43b8",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C15",
+      "claim": "Genetically-encoded molecular tension sensor modules (TSMods) have been created without a priori knowledge of their mechanical sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, genetically-encoded molecular tension sensor modules (TSMods), which are incorporated into various proteins to form distinct tension sensors (Figure 1A), have been created without a priori knowledge of their mechanical sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current state of the field and is supported by the subsequent discussion of design approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "d37b44b4-853d-4a9b-af71-7546a330187d",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C16",
+      "claim": "TSMod development has largely relied on a biologically-inspired 'guess-and-check' design approach using naturally-occurring extensible polypeptides or protein domains as deformable elements.",
+      "claim_type": "EXPLICIT",
+      "source": "TSMod development has largely relied on a biologically-inspired 'guess-and-check' design approach using naturally-occurring extensible polypeptides or protein domains as deformable elements in the FRET-based tension sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the historical approach to TSMod design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "ffd0fbd2-c493-42bd-9738-512692277ae7",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C17",
+      "claim": "Calibration measurements of TSMod mechanical sensitivity are typically performed in vitro using highly precise single molecule techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, despite the use of these sensors to study intracellular processes, calibration measurements of their mechanical sensitivity are typically performed in vitro using highly precise single molecule techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the typical calibration approach for TSMods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1378d829-6778-4b82-9981-d710a9c3430f",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C18",
+      "claim": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published calibration studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "8f318df6-0353-4376-9641-7b29cc2557b9",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C19",
+      "claim": "Reported force sensitivities of several in vitro calibrated TSMods are 2\u201311 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published calibration studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1599c2a5-bae5-49a9-b562-4d7d0c341aa3",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C20",
+      "claim": "Reported force sensitivities of several in vitro calibrated TSMods are 3\u20135 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published calibration studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "bacf93b9-b7e8-4ebf-8f6a-3a0432b99efb",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C21",
+      "claim": "Reported force sensitivities of several in vitro calibrated TSMods are 6\u20138 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published calibration studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "43854986-5c3e-4343-a634-a80d74265a13",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C22",
+      "claim": "Reported force sensitivities of several in vitro calibrated TSMods are 9\u201311 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported force sensitivities of several in vitro calibrated TSMods are 1\u20136 pN (Grashoff et al., 2010), 2\u201311 pN (Brenner et al., 2016), 3\u20135 pN (Ringer et al., 2017), 6\u20138 pN (Austen et al., 2015), or 9\u201311 pN (Austen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published calibration studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "ac1a6a45-6b1b-46a4-b714-e26600b32d9e",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C23",
+      "claim": "It is unclear if the reported force ranges of in vitro calibrated TSMods are sufficient for diverse mechanobiological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear if these ranges are sufficient for diverse mechanobiological studies, and the applicability of these in vitro calibrations to sensors that are utilized in cellulo has not been verified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This expresses uncertainty about the adequacy of current TSMod force ranges.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "726f5433-be6b-4c77-b9f9-ce241ba40320",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C24",
+      "claim": "The applicability of in vitro calibrations to sensors that are utilized in cellulo has not been verified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear if these ranges are sufficient for diverse mechanobiological studies, and the applicability of these in vitro calibrations to sensors that are utilized in cellulo has not been verified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "ebb3b7c7-c186-41c8-897a-b26e55529286",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C25",
+      "claim": "TSMod function depends on the F\u00f6rster radius of the chosen FRET pair.",
+      "claim_type": "EXPLICIT",
+      "source": "TSMod function depends on the F\u00f6rster radius of the chosen FRET pair (B) as well as the length (C) and stiffness (D) of the extensible polypeptide domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "bf973efc-11d6-4211-93ea-b4cadde06d29",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C26",
+      "claim": "TSMod function depends on the length of the extensible polypeptide domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TSMod function depends on the F\u00f6rster radius of the chosen FRET pair (B) as well as the length (C) and stiffness (D) of the extensible polypeptide domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "204daab6-c826-46e6-9cd3-42f6587cbc76",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C27",
+      "claim": "TSMod function depends on the stiffness of the extensible polypeptide domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TSMod function depends on the F\u00f6rster radius of the chosen FRET pair (B) as well as the length (C) and stiffness (D) of the extensible polypeptide domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "dd14b3d7-f031-49cc-a158-d3ec088912f2",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C28",
+      "claim": "Clover-mRuby2 TSMods exhibit 12% higher baseline (unloaded) FRET efficiency than mTFP1-Venus TSMods in fixed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple substitution yielded a 12% higher baseline (unloaded) FRET efficiency that was observed in fixed (Figure 1E, F) and live cells (Figure 1\u2014figure supplement 1), as well as cell lysates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "0bd4325e-d959-485a-82b5-e1ed5df373df",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C29",
+      "claim": "Clover-mRuby2 TSMods exhibit 12% higher baseline (unloaded) FRET efficiency than mTFP1-Venus TSMods in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple substitution yielded a 12% higher baseline (unloaded) FRET efficiency that was observed in fixed (Figure 1E, F) and live cells (Figure 1\u2014figure supplement 1), as well as cell lysates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "3629f885-951b-4048-ae56-cbaddb2cbbba",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C30",
+      "claim": "Clover-mRuby2 TSMods exhibit 12% higher baseline (unloaded) FRET efficiency than mTFP1-Venus TSMods in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple substitution yielded a 12% higher baseline (unloaded) FRET efficiency that was observed in fixed (Figure 1E, F) and live cells (Figure 1\u2014figure supplement 1), as well as cell lysates (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "907032cc-60c3-4c62-9764-6bffba78504b",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C31",
+      "claim": "Minimal versions of Clover (residues 1 \u2013 227) and mRuby2 (residues 3 \u2013 236) exhibit absorbance and emission spectra indistinguishable from their full-length counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work, and our data (Figure 1\u2014figure supplement 3), have shown that 'minimal' Clover (residues 1 \u2013 227) and mRuby2 (residues 3 \u2013 236) exhibit absorbance and emission spectra indistinguishable from their full-length counterparts (Austen et al., 2015; Li et al., 1997; Ohashi et al., 2007; Ouyang et al., 2008; Shimozono et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1\u2014figure supplement 3 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "6c21f6f9-32e5-49e2-852d-10d0542738b8",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C32",
+      "claim": "TSMods with (GGSGGS)n extensible domains exhibit higher FRET efficiencies than those with (GPGGA)n extensible domains of the same length in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of TSMods in cell lysates showed that those with (GGSGGS)n extensible domains exhibit higher FRET efficiencies than those with (GPGGA)n extensible domains of the same length (Figure 1G), suggesting that (GPGGA)n-based polypeptides are indeed stiffer, and thus force the FPs apart more readily, than (GGSGGS)n-based polypeptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1f93ef32-f51a-4289-b00a-935db9619f04",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C33",
+      "claim": "(GPGGA)n-based polypeptides are stiffer than (GGSGGS)n-based polypeptides in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of TSMods in cell lysates showed that those with (GGSGGS)n extensible domains exhibit higher FRET efficiencies than those with (GPGGA)n extensible domains of the same length (Figure 1G), suggesting that (GPGGA)n-based polypeptides are indeed stiffer, and thus force the FPs apart more readily, than (GGSGGS)n-based polypeptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the FRET efficiency data in Figure 1G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1e6636cc-8e1d-431f-86f9-63aa94e245ce",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C34",
+      "claim": "When (GPGGA)n and (GGSGGS)n TSMods were evaluated in cellulo, the FRET efficiency versus length relationships were indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when (GPGGA)n and (GGSGGS)n TSMods were evaluated in cellulo, the FRET efficiency versus length relationships were indistinguishable, suggesting the polypeptides are exhibiting identical mechanical properties (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "e0a2b67e-0e0f-4938-bdd2-ffcf0611a6ba",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C35",
+      "claim": "(GPGGA)n and (GGSGGS)n polypeptides exhibit identical mechanical properties in cellulo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when (GPGGA)n and (GGSGGS)n TSMods were evaluated in cellulo, the FRET efficiency versus length relationships were indistinguishable, suggesting the polypeptides are exhibiting identical mechanical properties (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the indistinguishable FRET-length relationships shown in Figure 1H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "9683acff-62c5-4869-888f-a4df758565fc",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C36",
+      "claim": "Factors dictating sensor functionality in the absence of applied load can be environmentally sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that factors dictating sensor functionality in the absence of applied load can be environmentally sensitive, and that the behavior of TSMods observed in vitro may not reflect their behavior in cellulo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differences observed between in vitro and in cellulo measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "ddfb9675-a970-4b27-b473-6c3077ddd0e1",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C37",
+      "claim": "The behavior of TSMods observed in vitro may not reflect their behavior in cellulo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that factors dictating sensor functionality in the absence of applied load can be environmentally sensitive, and that the behavior of TSMods observed in vitro may not reflect their behavior in cellulo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differences observed between in vitro and in cellulo measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "51dc3876-810f-43ad-b98b-4c4981f5b460",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C52",
+      "claim": "Both (GPGGA)n and (GGSGGS)n polypeptide mechanics are consistent with unstructured polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "While our modeling efforts indicate that both (GPGGA)n and (GGSGGS)n polypeptide mechanics are consistent with unstructured polypeptides (Figure 2\u2014figure supplement 6), we only generate calibration predictions for TSMods containing (GGSGGS)n extensible domains because they are also less sensitive to environmental changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1003d298-6915-4415-aa79-dff69dcb3f0b",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C53",
+      "claim": "(GGSGGS)n extensible domains are less sensitive to environmental changes than (GPGGA)n extensible domains.",
+      "claim_type": "EXPLICIT",
+      "source": "While our modeling efforts indicate that both (GPGGA)n and (GGSGGS)n polypeptide mechanics are consistent with unstructured polypeptides (Figure 2\u2014figure supplement 6), we only generate calibration predictions for TSMods containing (GGSGGS)n extensible domains because they are also less sensitive to environmental changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that L_P values for (GGSGGS)n are more consistent across environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "fa34396e-33e1-4ac4-852b-1bdf4d9e8b6f",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C55",
+      "claim": "The original vinculin tension sensor (VinTS) reported average loads of ~2.5 pN across vinculin that varied from 1 to 6 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the original vinculin tension sensor (VinTS) reported average loads of ~2.5 pN across vinculin that varied from 1 to 6 pN (Grashoff et al., 2010), we choose to further investigate the performance of the TSMod containing the nine-repeat extensible domain, as it exhibits the highest sensitivity in this force regime and is capable of capturing the distribution of the loads on vinculin (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previously published data cited from Grashoff et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "f5323907-5c6b-4fbb-9740-a75d7c4a6014",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C56",
+      "claim": "The TSMod containing the nine-repeat extensible domain exhibits the highest sensitivity in the 1-6 pN force regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the original vinculin tension sensor (VinTS) reported average loads of ~2.5 pN across vinculin that varied from 1 to 6 pN (Grashoff et al., 2010), we choose to further investigate the performance of the TSMod containing the nine-repeat extensible domain, as it exhibits the highest sensitivity in this force regime and is capable of capturing the distribution of the loads on vinculin (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sensitivity analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "36ffb2c9-256e-43f3-beca-8eab4dffa1c8",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C57",
+      "claim": "Vin-/- MEFs expressing either VinTS or opt-VinTS showed indistinguishable cell and FA morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Vin-/- MEFs expressing either VinTS or opt-VinTS showed indistinguishable cell and FA morphologies (Figure 3A,A', C,C', Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "dcfb6bfd-2e50-442b-9a81-920f18d38c62",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C58",
+      "claim": "VinTS and opt-VinTS exhibit similar localization within focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, line scans of acceptor intensity across single FAs indicated similar localization of each sensor (Figure 4\u2014figure supplement 3A'', A''', C'', C''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by line scan data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "58a9c2b2-8c4f-4fdb-9d8c-8431246c5361",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C59",
+      "claim": "VinTS and opt-VinTS exhibit identical biological functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the two sensors exhibit identical biologically functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the indistinguishable morphologies and localization patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "2777910f-bcf1-41f5-a83d-817089e87491",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C60",
+      "claim": "Both VinTS and opt-VinTS report highest loads (lowest FRET efficiency) in the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "At a subcellular length scale, consistent with our previous findings (Rothenberg et al., 2015), both VinTS and opt-VinTS report highest loads (lowest FRET efficiency) in the cell periphery, and no appreciable tensile loading of vinculin in the cell center (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET images shown in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "8bb368ac-dd55-40f6-984e-adcfb56b03fe",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C61",
+      "claim": "Both VinTS and opt-VinTS report no appreciable tensile loading of vinculin in the cell center.",
+      "claim_type": "EXPLICIT",
+      "source": "At a subcellular length scale, consistent with our previous findings (Rothenberg et al., 2015), both VinTS and opt-VinTS report highest loads (lowest FRET efficiency) in the cell periphery, and no appreciable tensile loading of vinculin in the cell center (Figure 3B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET images shown in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "74b179fa-91d6-4745-a322-640ba2f5fc5f",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C62",
+      "claim": "Striking gradients of vinculin tension across single FAs were clearly visible in peripheral FAs of cells expressing opt-VinTS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, striking gradients of vinculin tension across single FAs were clearly visible in peripheral FAs of cells expressing opt-VinTS (Figure 3D', D'', D''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by images and line scans shown in Figure 3D', D'', D'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "e4c9db7c-9fd8-4acc-a8ba-bedfaca3a23b",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C63",
+      "claim": "opt-VinTS exhibits an almost 3-fold improvement in performance compared to the original VinTS (slope = 15.0%/FA vs 5.5%/FA).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed an almost 3-fold improvement in the performance opt-VinTS (slope = 15.0%/FA) when compare the original design (slope = 5.5%/FA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of FRET efficiency changes across FAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1b33b2c8-120e-46fd-bbcc-2c72ee3c44f1",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C64",
+      "claim": "opt-VinTS is significantly more sensitive than the original VinTS.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results show that, as predicted by the model, opt-VinTS is significantly more sensitive than the original VinTS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the 3-fold improvement in performance and is consistent with model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "ae35e253-63ff-44cb-952e-59a86c03e2f9",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C65",
+      "claim": "Similar distributions of extension were observed in FAs formed in cells expressing the three different vinculin tension sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed similar distributions of extension (Figure 4P), and distinct distributions of tensile forces (Figure 4L) in FAs formed in cells expressing the various sensors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "b97a969f-41c2-4bd5-b814-f3131bf9c91a",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C66",
+      "claim": "Distinct distributions of tensile forces were observed in FAs formed in cells expressing the three different vinculin tension sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed similar distributions of extension (Figure 4P), and distinct distributions of tensile forces (Figure 4L) in FAs formed in cells expressing the various sensors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "d4c48e49-b5a4-4818-9bba-537c8c8cd093",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C67",
+      "claim": "Highly loaded FAs in the cell periphery exhibit conserved gradients in extension rather than force.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, highly loaded FAs in the cell periphery exhibit conserved gradients in extension rather than force (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by line scan data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "7c8836f3-64ae-4496-8919-fe60650981ce",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C68",
+      "claim": "Vinculin extension-control is robust to short-term inhibition of ROCK-mediated cytoskeletal contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "First, treatment of cells with the Y-27632 showed that vinculin extension-control is robust to short-term inhibition of ROCK-mediated cytoskeletal contractility (Figure 4\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "284d1939-a40d-4e90-a9b4-1ddd6ec01f6a",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C69",
+      "claim": "Vinculin extension-control does not require vinculin-talin interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, vinculin extension-control does not require vinculin-talin interactions, as assessed through the introduction of a point mutation (A50I) in the three versions of VinTS (Figure 4\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplements 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "757a1b5b-576f-4ad7-bb29-8a38257682c3",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C70",
+      "claim": "Extension-based control still occurs on substrates of physiologically-relevant 10 kPa stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that extension-based control still occurs on substrates of physiologically-relevant 10 kPa stiffness (Figure 4\u2014figure supplements 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplements 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "356c27e5-e5ed-4e67-b1f2-9dafbf62c289",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C71",
+      "claim": "Loads across vinculin are exclusively governed by an extension-based control rather than a force-based control paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results strongly suggest that loads across vinculin are exclusively governed by an extension-based control rather than the more commonly assumed force-based control paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the consistent observation of conserved extensions and distinct forces across multiple experimental conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "90e6b76e-6d2b-4979-b515-f2ef2f4bffc1",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C72",
+      "claim": "A force input to the entire FA structure always resulted in force-based control within the sensor elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the relative abundance of the elements or their respective stiffness, a force input to the entire structure always resulted in force-based control within the sensor elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulations using the FA structural model described in Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "1ea4f895-fb1a-4543-bbf6-29bc073eeb23",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C73",
+      "claim": "An extension input to the entire FA structure gave rise to both extension-controlled and force-controlled regimes in the sensor elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an extension input to the entire structure, as might arise due to defined myosin motor step size (Murphy et al., 2001) or actin polymerization (Peskin et al., 1993), gave rise to both extension-controlled and force-controlled regimes in the sensor elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulations using the FA structural model and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "a9662a30-0037-4036-81d4-965fb2b93a34",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C74",
+      "claim": "Extension-controlled loading of the sensor element is more strongly observed when the sensor element is relatively soft and/or in low abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The extension-controlled loading of the sensor element is more strongly observed when the sensor element is relatively soft and/or in low abundance, otherwise a force-controlled system is predicted (Figure 4\u2014figure supplement 9D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulations shown in Figure 4\u2014figure supplement 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "c5973169-1879-4b34-a22d-5c92e5bced9b",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C75",
+      "claim": "In the extension-controlled regime, the FA structural model predicts a linear relationship between sensor element stiffness and the force borne by the three sensor elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the extension-controlled regime, this simple model also predicts the linear relationship between sensor element stiffness and the force borne by the three sensor elements that was observed in all control paradigm experiments (Figure 4\u2014figure supplement 9E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on simulations shown in Figure 4\u2014figure supplement 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "54f5bda6-1a60-4eb1-b290-d5016612b725",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C76",
+      "claim": "Protein extension, instead of applied force, might be a key mechanical variable in some mechanosensitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that protein extension, instead of applied force, might be a key mechanical variable in some mechanosensitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "f757a112-74b7-45c4-bc1a-4e24685ad5a4",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C79",
+      "claim": "The rational design and implementation of future tension sensors with diverse and a priori specified properties is now possible.",
+      "claim_type": "EXPLICIT",
+      "source": "With these roadmaps as a guide, the rational design and implementation of future tension sensors with diverse and a priori specified properties is now possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the availability of the roadmaps and calibration model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "7f798b45-afae-4170-ae0e-f2ab857e17bc",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C80",
+      "claim": "Context-dependent mechanical behaviors were observed in TSMods, as responses for the same constructs were mechanically distinct in in vitro and in cellulo experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed context-dependent mechanical behaviors in TSMods, as responses for the same constructs were mechanically distinct in in vitro and in cellulo experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the differences in L_P values measured in different environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "799a6cbe-6357-43f0-bf95-41e3bbacfc49",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C81",
+      "claim": "Crowding effects are less likely to explain the variety of reported mechanics in TSMods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we surmise that crowding effects are less likely for two reasons. First, previous work has shown that crowding effects are more prominent at longer linker lengths (Ohashi et al., 2007). Additionally, in our in vitro and in cellulo systems, we observed that (GPGGA)n-based polypeptides exhibit higher FRET in vitro, while (GGSGGS)n polypeptides exhibited lower FRET in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed patterns of FRET differences and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "38dbcfd8-f7f4-41ee-b9cc-fca25cf180a0",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C85",
+      "claim": "The optimized vinculin sensor exhibited a marked increase in the ability to detect asymmetric distributions of molecular tension within single FAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This optimized sensor exhibited a marked increase in the ability to detect asymmetric distributions of molecular tension within single FAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the improved performance shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "96b05e62-ec2d-4782-a555-ea81ea1b8654",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C86",
+      "claim": "Similar tension asymmetries have been observed external to the cell using high resolution traction force microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar tension asymmetries have been observed external to the cell using both high resolution traction force microscopy (Legant et al., 2013; Plotnikov et al., 2012) and extracellular tension sensors (Blakely et al., 2014; Morimatsu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "55874ff6-2a54-4bca-919c-20d38065fc72",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C87",
+      "claim": "Similar tension asymmetries have been observed external to the cell using extracellular tension sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar tension asymmetries have been observed external to the cell using both high resolution traction force microscopy (Legant et al., 2013; Plotnikov et al., 2012) and extracellular tension sensors (Blakely et al., 2014; Morimatsu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "48a427a1-fee6-483a-8d2b-8149b1c929ef",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C88",
+      "claim": "Gradients in vinculin tension have been reported in cells adhered to micropost arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellularly, gradients in vinculin tension have been reported in cells adhered to micropost arrays, although tension asymmetries were mainly attributed to the presence of discontinuous substrates (Sarangi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "bcf6a6aa-9bb7-45d2-9bc7-ff26bc0373cc",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C89",
+      "claim": "Asymmetric molecular loads are detectable without the need for super-resolution imaging and are transmitted through vinculin even on continuous substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that these asymmetric molecular loads are detectable without the need for super-resolution imaging and are transmitted through vinculin even on continuous substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 3 using conventional microscopy on glass substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "51e47749-e744-42b3-bcfe-2f3974eaef8e",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C90",
+      "claim": "Once vinculin is activated through interactions with talin and/or actin, it is pulled until a given extension is achieved, not a set force.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, once vinculin is activated through interactions with talin and/or actin (Bakolitsa et al., 2004; Bois et al., 2006; Chen et al., 2006a), it is pulled until a given extension is achieved, not a set force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the extension-control paradigm observed in the experiments and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "4f631f30-9ccd-45c0-b8f4-cb702282f160",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C91",
+      "claim": "The load-dependent maintenance of vinculin activation may be determined by vinculin extension, rather than force.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the load-dependent maintenance of vinculin activation (Dumbauld et al., 2013) may be determined by vinculin extension, rather than force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the extension-control paradigm and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "6affea02-02f0-4ba4-960d-ac9c25487b6a",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C92",
+      "claim": "Extension may be the most pertinent biophysical variable governing the initiation of vinculin-dependent and possibly other mechanosensitive signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, extension may be the most pertinent biophysical variable governing the initiation of vinculin-dependent and possibly other mechanosensitive signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the extension-control paradigm observed for vinculin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "615eb4f7-3c8a-4c60-bb5b-f59ae6cf7c29",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C93",
+      "claim": "The extension-control paradigm is consistent with reports that cells induce similar strains within extracellular environments of differing stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolated to longer length scales, this extension-control paradigm agrees well with reports that cells induce similar strains within extracellular environments of differing stiffness (Lin et al., 2018; Saez et al., 2005) and that strain determines the activation of touch-sensitive channels in in vivo models (Eastwood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "84bd7635-716f-407e-93cd-0bb0b4c1c559",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C94",
+      "claim": "The extension-control paradigm is consistent with reports that strain determines the activation of touch-sensitive channels in in vivo models.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolated to longer length scales, this extension-control paradigm agrees well with reports that cells induce similar strains within extracellular environments of differing stiffness (Lin et al., 2018; Saez et al., 2005) and that strain determines the activation of touch-sensitive channels in in vivo models (Eastwood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "931efb04-d21f-489b-8f2c-6b02074cf4dc",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C95",
+      "claim": "Measurements of force in an extension-control regime will be dependent on the stiffness of the sensor design.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that measurements of force in an extension-control regime will be dependent on the stiffness of the sensor design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the extension-control paradigm and the force-extension relationship.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "9c62d883-6cdb-4027-a079-17ab019c0888",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "claim_id": "C96",
+      "claim": "Sensor stiffness dependence could be one possible reason for a variety of forces reported by different sensor designs for the same protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this could be one possible reason for a variety of forces reported by different sensor designs for the same protein (Erickson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "799bfc98-4a7d-496d-a18f-82b1d349e038",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior to this work, molecular tension sensors had limited dynamic range and unpredictable mechanical sensitivities, hindering their widespread use. TSMods were created without a priori knowledge of their mechanical sensitivity using a 'guess-and-check' approach, and the applicability of in vitro calibrations to in cellulo use had not been verified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C14-C16 establish the motivation for the study by documenting limitations of existing tension sensors. Claims C23-C24 identify specific gaps in knowledge. These claims are well-supported by citations to prior work and represent an accurate assessment of the field's state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TSMod function depends on the F\u00f6rster radius of the FRET pair, the length and stiffness of the extensible domain. Replacing mTFP1-Venus with Clover-mRuby2 yielded 12% higher baseline FRET efficiency across multiple experimental conditions. Minimal versions of Clover and mRuby2 exhibit spectral properties indistinguishable from full-length counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 establish the theoretical basis for TSMod design, supported by Figure 1B-D. Claims C28-C30 report quantitative improvements with the new FRET pair, supported by data in Figures 1E-F and supplements. Claim C31 validates the minimal FP approach with spectral data and citations. All claims are well-supported by experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In vitro, (GPGGA)n polypeptides appear stiffer than (GGSGGS)n polypeptides based on FRET efficiency measurements. However, in cellulo, the two polypeptide types exhibit indistinguishable mechanical properties. This demonstrates that TSMod behavior observed in vitro may not reflect behavior in cellulo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by FRET-length relationship data in Figures 1G-H showing environment-dependent differences in polypeptide mechanics. Claims C36-C37 draw appropriate conclusions about environmental sensitivity. This is a critical finding that challenges the validity of in vitro calibrations for in cellulo applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "e8b7e7b6-97d2-439c-8c0e-e083511204a4",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A first principles model describing TSMod mechanical behavior was developed. The model indicates both (GPGGA)n and (GGSGGS)n polypeptides are consistent with unstructured polypeptides, but (GGSGGS)n domains are less sensitive to environmental changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by detailed model development in Results and Appendix 1. Claims C52-C53 are supported by modeling data in Figure 2\u2014figure supplement 6 and persistence length measurements across environments. The model successfully describes TSMod behavior in both unloaded and loaded conditions with physically reasonable parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "3d376d40-4822-4d52-b148-36d19970fc12",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An optimized vinculin tension sensor (opt-VinTS) with a nine-repeat (GGSGGS)n extensible domain was created based on model predictions. This sensor exhibits nearly 3-fold improved performance compared to the original VinTS, with enhanced ability to detect asymmetric tension distributions within single focal adhesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 justify the design choice based on prior force measurements and sensitivity analysis (Figure 3\u2014figure supplement 1). Claims C57-C61 demonstrate that opt-VinTS maintains biological functionality while improving measurement capability. Claims C62-C64 and C85 quantify the performance improvement (slope 15.0%/FA vs 5.5%/FA) supported by data in Figure 3. The improvement is substantial and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "5e8e8512-1232-44f4-ac8b-851bbce31aad",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Three vinculin tension sensors with distinct mechanical properties reveal that vinculin loading is governed by an extension-based rather than force-based control paradigm. This extension-control is robust to ROCK inhibition, does not require vinculin-talin interactions, and occurs on physiologically-relevant substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 present the key finding of conserved extensions but distinct forces across sensors (Figure 4L,P and supplements). Claims C68-C70 demonstrate robustness across multiple perturbations with supporting data in Figure 4 supplements 3-8. Claim C71 draws the appropriate conclusion. The experimental design cleverly exploits sensors with different force-extension relationships to distinguish between control paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "f59bf3c7-646a-4680-8a92-2d7794e608c3",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A structural model of focal adhesions predicts that force inputs result in force-based control, while extension inputs can produce extension-controlled regimes depending on sensor stiffness and abundance. The model predicts the linear relationship between sensor stiffness and force observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 describe simulation results from the FA structural model (Appendix 2, Figure 4\u2014figure supplement 9). The model successfully recapitulates experimental observations and provides mechanistic insight into the physical basis of extension-control. Claim C76 draws an appropriate broader conclusion. The modeling complements and explains the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "3b11d9b6-454a-4e12-b2df-f72c3be98f31",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanical behavior of 1020 distinct tension sensor designs was predicted in terms of force and extension, enabling rational design of future sensors with diverse and specified properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C79 are supported by the roadmaps presented in Figure 5 and Figure 5\u2014figure supplement 1, which systematically explore parameter space for multiple FRET pairs. The predictions are based on the validated calibration model and provide a practical resource for the field. This represents a significant advance in sensor design capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "a0563488-84bf-46b6-88e4-4ff30ce0f72c",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Context-dependent mechanical behaviors were observed in TSMods, with the same constructs exhibiting mechanically distinct responses in vitro versus in cellulo. Crowding effects are unlikely to explain these differences based on the observed patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by differences in persistence length measurements across environments. Claim C81 provides reasoning against crowding as the primary explanation, supported by citation and observed FRET patterns. The discussion appropriately acknowledges uncertainty about the exact mechanisms while ruling out one hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "35d29b28-f990-4156-9b98-179978b19551",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Asymmetric molecular loads detected by opt-VinTS are consistent with tension asymmetries previously observed using traction force microscopy and extracellular tension sensors. These asymmetries are detectable without super-resolution imaging and occur on continuous substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 place the findings in context of prior work through appropriate citations. Claim C89 highlights the advantages of the new sensor, supported by data in Figure 3 using conventional microscopy on glass. The comparison to prior work is appropriate and the claims about detection capabilities are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The extension-control paradigm suggests that vinculin is pulled to a given extension rather than a set force, and that extension may be the key biophysical variable governing mechanosensitive signaling. This paradigm is consistent with reports of strain-based cellular responses at multiple length scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 draw mechanistic conclusions from the extension-control findings, appropriately supported by the experimental data and citations. Claims C93-C94 connect the findings to broader literature on strain-based cellular responses through appropriate citations. The extrapolation from molecular to cellular scales is reasonable and well-contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    },
+    {
+      "id": "269b220e-ce5a-4ec6-8aee-becab6c66885",
+      "content_id": "0eccc18e-d3be-44ed-a5fc-b28451099a9d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In an extension-control regime, force measurements will depend on sensor stiffness, which could explain variability in forces reported by different sensor designs for the same protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is a logical inference from the extension-control paradigm and force-extension relationships. Claim C96 appropriately presents this as speculation while citing relevant literature. This is an important implication of the findings that could reconcile discrepancies in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:45.884510Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c8baf7c-076f-43d8-a23c-aca3e75cd275",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "4534c398-5a8b-4767-88aa-eeabe3f9d301",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "960af788-db9e-42fd-ad74-39561dbf3854",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "d04d2344-4101-42ac-800a-2ab7d84c43b8",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "d37b44b4-853d-4a9b-af71-7546a330187d",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "ac1a6a45-6b1b-46a4-b714-e26600b32d9e",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "726f5433-be6b-4c77-b9f9-ce241ba40320",
+      "result_id": "799bfc98-4a7d-496d-a18f-82b1d349e038"
+    },
+    {
+      "claim_id": "ebb3b7c7-c186-41c8-897a-b26e55529286",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "bf973efc-11d6-4211-93ea-b4cadde06d29",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "204daab6-c826-46e6-9cd3-42f6587cbc76",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "dd14b3d7-f031-49cc-a158-d3ec088912f2",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "0bd4325e-d959-485a-82b5-e1ed5df373df",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "3629f885-951b-4048-ae56-cbaddb2cbbba",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "907032cc-60c3-4c62-9764-6bffba78504b",
+      "result_id": "c7fe198e-9a41-40c8-a53f-a07a097e8a08"
+    },
+    {
+      "claim_id": "6c21f6f9-32e5-49e2-852d-10d0542738b8",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "1f93ef32-f51a-4289-b00a-935db9619f04",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "1e6636cc-8e1d-431f-86f9-63aa94e245ce",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "e0a2b67e-0e0f-4938-bdd2-ffcf0611a6ba",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "9683acff-62c5-4869-888f-a4df758565fc",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "ddfb9675-a970-4b27-b473-6c3077ddd0e1",
+      "result_id": "c6af16d0-f96a-4c9f-af1a-9629baed0de3"
+    },
+    {
+      "claim_id": "9af17b13-0129-4f0a-b910-9b8953f106f7",
+      "result_id": "e8b7e7b6-97d2-439c-8c0e-e083511204a4"
+    },
+    {
+      "claim_id": "51dc3876-810f-43ad-b98b-4c4981f5b460",
+      "result_id": "e8b7e7b6-97d2-439c-8c0e-e083511204a4"
+    },
+    {
+      "claim_id": "1003d298-6915-4415-aa79-dff69dcb3f0b",
+      "result_id": "e8b7e7b6-97d2-439c-8c0e-e083511204a4"
+    },
+    {
+      "claim_id": "fa34396e-33e1-4ac4-852b-1bdf4d9e8b6f",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "f5323907-5c6b-4fbb-9740-a75d7c4a6014",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "36ffb2c9-256e-43f3-beca-8eab4dffa1c8",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "dcfb6bfd-2e50-442b-9a81-920f18d38c62",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "58a9c2b2-8c4f-4fdb-9d8c-8431246c5361",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "2777910f-bcf1-41f5-a83d-817089e87491",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "8bb368ac-dd55-40f6-984e-adcfb56b03fe",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "74b179fa-91d6-4745-a322-640ba2f5fc5f",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "e4c9db7c-9fd8-4acc-a8ba-bedfaca3a23b",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "1b33b2c8-120e-46fd-bbcc-2c72ee3c44f1",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "38dbcfd8-f7f4-41ee-b9cc-fca25cf180a0",
+      "result_id": "3d376d40-4822-4d52-b148-36d19970fc12"
+    },
+    {
+      "claim_id": "ae35e253-63ff-44cb-952e-59a86c03e2f9",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "b97a969f-41c2-4bd5-b814-f3131bf9c91a",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "d4c48e49-b5a4-4818-9bba-537c8c8cd093",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "7c8836f3-64ae-4496-8919-fe60650981ce",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "284d1939-a40d-4e90-a9b4-1ddd6ec01f6a",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "757a1b5b-576f-4ad7-bb29-8a38257682c3",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "356c27e5-e5ed-4e67-b1f2-9dafbf62c289",
+      "result_id": "5e8e8512-1232-44f4-ac8b-851bbce31aad"
+    },
+    {
+      "claim_id": "90e6b76e-6d2b-4979-b515-f2ef2f4bffc1",
+      "result_id": "f59bf3c7-646a-4680-8a92-2d7794e608c3"
+    },
+    {
+      "claim_id": "1ea4f895-fb1a-4543-bbf6-29bc073eeb23",
+      "result_id": "f59bf3c7-646a-4680-8a92-2d7794e608c3"
+    },
+    {
+      "claim_id": "a9662a30-0037-4036-81d4-965fb2b93a34",
+      "result_id": "f59bf3c7-646a-4680-8a92-2d7794e608c3"
+    },
+    {
+      "claim_id": "c5973169-1879-4b34-a22d-5c92e5bced9b",
+      "result_id": "f59bf3c7-646a-4680-8a92-2d7794e608c3"
+    },
+    {
+      "claim_id": "54f5bda6-1a60-4eb1-b290-d5016612b725",
+      "result_id": "f59bf3c7-646a-4680-8a92-2d7794e608c3"
+    },
+    {
+      "claim_id": "8f68bd71-aa0c-445d-9337-f648d8d247f6",
+      "result_id": "3b11d9b6-454a-4e12-b2df-f72c3be98f31"
+    },
+    {
+      "claim_id": "f757a112-74b7-45c4-bc1a-4e24685ad5a4",
+      "result_id": "3b11d9b6-454a-4e12-b2df-f72c3be98f31"
+    },
+    {
+      "claim_id": "7f798b45-afae-4170-ae0e-f2ab857e17bc",
+      "result_id": "a0563488-84bf-46b6-88e4-4ff30ce0f72c"
+    },
+    {
+      "claim_id": "799a6cbe-6357-43f0-bf95-41e3bbacfc49",
+      "result_id": "a0563488-84bf-46b6-88e4-4ff30ce0f72c"
+    },
+    {
+      "claim_id": "96b05e62-ec2d-4782-a555-ea81ea1b8654",
+      "result_id": "35d29b28-f990-4156-9b98-179978b19551"
+    },
+    {
+      "claim_id": "55874ff6-2a54-4bca-919c-20d38065fc72",
+      "result_id": "35d29b28-f990-4156-9b98-179978b19551"
+    },
+    {
+      "claim_id": "48a427a1-fee6-483a-8d2b-8149b1c929ef",
+      "result_id": "35d29b28-f990-4156-9b98-179978b19551"
+    },
+    {
+      "claim_id": "bcf6a6aa-9bb7-45d2-9bc7-ff26bc0373cc",
+      "result_id": "35d29b28-f990-4156-9b98-179978b19551"
+    },
+    {
+      "claim_id": "51e47749-e744-42b3-bcfe-2f3974eaef8e",
+      "result_id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c"
+    },
+    {
+      "claim_id": "4f631f30-9ccd-45c0-b8f4-cb702282f160",
+      "result_id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c"
+    },
+    {
+      "claim_id": "6affea02-02f0-4ba4-960d-ac9c25487b6a",
+      "result_id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c"
+    },
+    {
+      "claim_id": "615eb4f7-3c8a-4c60-bb5b-f59ae6cf7c29",
+      "result_id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c"
+    },
+    {
+      "claim_id": "84bd7635-716f-407e-93cd-0bb0b4c1c559",
+      "result_id": "2993e38e-26c7-4ce2-9f29-59d8df8cb60c"
+    },
+    {
+      "claim_id": "931efb04-d21f-489b-8f2c-6b02074cf4dc",
+      "result_id": "269b220e-ce5a-4ec6-8aee-becab6c66885"
+    },
+    {
+      "claim_id": "9c62d883-6cdb-4027-a079-17ab019c0888",
+      "result_id": "269b220e-ce5a-4ec6-8aee-becab6c66885"
+    }
+  ],
+  "comparisons": []
+}

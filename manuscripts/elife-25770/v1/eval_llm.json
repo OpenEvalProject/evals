@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes that NPY/AgRP neurons are orexigenic (hunger-signaling) and POMC neurons are anorexigenic (satiety-signaling), and that both are key components of energy homeostasis circuits in the ARH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C12 represent well-established background knowledge supported by appropriate citations. These claims provide the foundational context for the study and are consistently supported in the neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Noradrenalin has opposite effects on NPY/AgRP and POMC neurons: it depolarizes and increases firing frequency in NPY/AgRP neurons (from 2.0\u00b10.9 Hz to 5.0\u00b11.0 Hz, p=0.0012) while hyperpolarizing and decreasing firing in POMC neurons (from 3.5\u00b11.1 to 0.7\u00b10.7 Hz, p=0.0156).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C38-C42 are well-supported by perforated patch clamp recordings shown in Figure 1. The data demonstrate statistically significant opposite effects with appropriate statistical tests (Wilcoxon matched pairs signed rank test, n=8 for each cell type). The effects were rapid and reversible, supporting direct modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "NA excites NPY/AgRP neurons in a concentration-dependent manner starting at 100 nM, with maximal effects at 10 \u00b5M (firing increased from 2.2\u00b10.8 to 4.7\u00b10.8 Hz, membrane depolarized by 5.1\u00b11.0 mV). The effect is mediated by cell-intrinsic adrenergic receptors as demonstrated by synaptic isolation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by comprehensive concentration-response data in Figure 2 with appropriate EC50 determinations (1.9 \u00b5M for depolarization, 1.5 \u00b5M for firing frequency). Synaptic isolation experiments (Figure 2D,E) convincingly demonstrate that effects are cell-intrinsic and not mediated by presynaptic inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "NA inhibits POMC neurons in a concentration-dependent manner starting at 100 nM, with maximal effects at 10 \u00b5M (hyperpolarization of 18.6\u00b13.2 mV, conductance increase from 647\u00b1106 to 1546\u00b1266 pS). The effect is predominantly cell-intrinsic with a small (~16%) presynaptic contribution likely from NA-excited NPY/AgRP neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are well-supported by concentration-response data in Figure 3 with appropriate EC50 values (0.9 \u00b5M for hyperpolarization, 1.3 \u00b5M for conductance). The synaptic isolation experiments (Figure 3D,E) appropriately demonstrate predominantly direct effects with a modest presynaptic component. The inference about NPY/AgRP contribution (C61) is reasonable given known circuit connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cell type-specific transcriptomics reveals differential expression of adrenergic receptors: NPY/AgRP neurons express all AR subtypes except \u03b11D and \u03b12B, while POMC neurons only express \u03b11A and \u03b12A receptors at lower levels. RNA in situ hybridization confirms Adra1a and Adra2a expression in both cell types, with Adrb1 and Adrb2 expressed only in NPY/AgRP neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C73 are supported by transcriptomic analysis (4482 differentially expressed genes, FC\u22652, p\u22640.01) and validated by RNA in situ hybridization (Figure 4). The 147-fold enrichment of Pomc validates cell sorting. However, the lack of statistical significance for Npy/Agrp enrichment (C64) is a minor concern for sorting validation, though the biological interpretation remains sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pharmacological experiments demonstrate that NA excitation of NPY/AgRP neurons is predominantly mediated by \u03b11A-ARs, with possible co-activation of \u03b2-ARs in some neurons. The \u03b11A-AR agonist A-61603 mimics NA effects, while the \u03b11A-AR antagonist WB4101 abolishes excitation. Functional \u03b12A-ARs and \u03b2-ARs are also present but their inhibitory/excitatory effects are masked by dominant \u03b11A-AR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C89 are well-supported by systematic pharmacological dissection using selective agonists and antagonists (Figures 5-6). The data show that \u03b11/\u03b12 blockade eliminated excitation in 44% and attenuated it ~60% in 55% of neurons (C74-C75), supporting heterogeneity. The \u03b11A-AR specificity is convincingly demonstrated by A-61603 mimicking NA and WB4101 blocking it, while CEC (\u03b11B,D antagonist) had no effect. The unmasking of \u03b12A-AR inhibition by WB4101 (C83-C84) provides strong evidence for receptor co-expression and functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "NA inhibition of POMC neurons is mediated solely by \u03b12A-ARs, as demonstrated by blockade with BRL44408 but not ARC239 (\u03b12B antagonist). Functional \u03b11-ARs are also present but their excitatory effects are masked by dominant \u03b12A-AR inhibition, as revealed when \u03b12-ARs are blocked with yohimbine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are well-supported by pharmacological experiments in Figure 7. The \u03b12A-AR specificity is convincingly shown by BRL44408 blocking inhibition while ARC239 (\u03b12B antagonist) has no effect. The unmasking of \u03b11-AR-mediated excitation by yohimbine (C94), which is then blocked by prazosine (C95), provides strong evidence for functional \u03b11-ARs. However, the p-value for prazosine blockade (p=0.2467, C95) indicates no significant difference, which contradicts the claim that excitation was 'completely abolished.' This is a statistical inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C98",
+      "C99",
+      "C101",
+      "C106",
+      "C107",
+      "C122"
+    ],
+    "result": "The coordinated differential modulation of NPY/AgRP and POMC neurons by NA\u2014excitation via \u03b11A/\u03b2-ARs and inhibition via \u03b12A-ARs respectively\u2014generates a strong orexigenic drive, assigning NA an important role in promoting feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C98-C99, C101, C106-C107, and C122 represent the main conclusions integrating electrophysiological, transcriptomic, and pharmacological data. The opposite effects on functionally antagonistic neurons are well-documented and reproducible across virtually all recorded neurons (C99), which is notable compared to other modulators that affect only subpopulations. The inference of orexigenic drive (C8, C101, C122) is logical given the coordinated activation of hunger-promoting and inhibition of satiety-promoting neurons, though direct behavioral validation is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior work establishes that multiple metabolic factors (insulin, leptin, glucose) modulate POMC/AgRP neurons, and that noradrenergic projections from hindbrain and LC to ARH exist in rats. Manipulation of noradrenergic systems affects feeding behavior in site-specific ways, though the direct effects of NA on identified ARH neurons were not well defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C28 represent background knowledge appropriately supported by citations. These establish the rationale for the current study by documenting that while NA's role in feeding is known from lesion and injection studies, direct cellular mechanisms in identified ARH neurons were undefined (C16). The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C122"
+    ],
+    "result": "Based on primate studies, the LC is hypothesized to mobilize energy for anticipated physical challenges, with LC activity related to energetic need. NA release in the ARH may promote compensatory energy intake in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 and C122 represent a hypothesis from cited primate work (Bouret and Richmond, 2015; Varazzani et al., 2015) that is used to contextualize the findings. While the current data on NA effects are consistent with this model, the study does not directly test LC activation or behavioral outcomes. The connection between the cellular findings and this systems-level hypothesis remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "NA and adrenalin activate three major classes of GPCRs (\u03b11, \u03b12, \u03b2-ARs) with distinct signaling properties: \u03b11-ARs couple to Gq/11 (excitatory), \u03b12-ARs couple to Gi/o (inhibitory), and \u03b2-ARs couple to Gs (excitatory).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 represent established knowledge about adrenergic receptor signaling, appropriately cited (Hein, 2006; Marzo et al., 2009). This provides necessary background for interpreting the pharmacological experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Most NPY/AgRP and POMC neurons are spontaneously active under control conditions, as previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by multiple citations to previous work and are consistent with the baseline recordings shown in the figures. This establishes the normal physiological state of these neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The current findings are contextualized by comparison to other modulators (insulin, leptin, glucose, oleic acid, UDP) that typically affect only subpopulations of these neurons, and are consistent with previous behavioral studies showing NA injections increase food intake with \u03b12-AR involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C102-C105 appropriately contextualize the findings within existing literature. The comparison to other modulators (C100) highlights the unusual consistency of NA effects across neurons. The consistency with behavioral studies (C102-C103) strengthens the physiological relevance, though these are correlative rather than direct validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The discussion contextualizes findings by noting that simultaneous expression of excitatory and inhibitory ARs has been found in other neuron types (LC, cerebellar dentate neurons), where receptor balance can change developmentally or provide compartmentalized regulation. Similar developmental changes might occur in POMC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 appropriately cite precedents for co-expression of excitatory and inhibitory ARs in other systems. The speculation about developmental changes in POMC neurons (C112) is reasonable given the LC precedent and evidence for developmental changes in leptin responses in NPY/AgRP neurons (C113), though this remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The discussion addresses the source of NA, noting evidence that catecholamines may cross the blood-brain barrier in the hypothalamus, though site-specific effects of lesions and injections suggest local neuronal release. Specific deletion of ventrolateral medulla projections eliminates glucoprivation-induced increases in AgRP/NPY expression and decreases homeostatic feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 and C123 appropriately cite evidence about NA sources and their functional relevance. The discussion balances evidence for peripheral vs. central sources while acknowledging that site-specific effects favor neuronal release. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The discussion notes that insulin decreases \u03b12-AR expression in ARH while leptin inhibits NA release, both augmenting anorexigenic signaling. Leptin-deficient ob/ob mice show increased hypothalamic NA levels, further decreasing anorexigenic signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 appropriately cite interactions between metabolic hormones and the noradrenergic system. The inference that both insulin and leptin effects would augment anorexigenic signaling (C126, C128) is logical given the demonstrated mechanisms, though these represent correlations from different studies rather than integrated experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study is motivated by the need to understand cellular mechanisms for developing specific pharmacological strategies for obesity treatment. Current anti-obesity drugs acting on monoaminergic systems often cause side effects due to poorly defined targets. The current findings revealing cell type-specific pathways might help define specific targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C129-C131 represent the translational motivation and potential application of the findings. While the rationale is sound and the cellular mechanisms are well-defined, the claim that findings 'might help to better define specific targets' (C131) is speculative. No drug development, target validation, or behavioral studies are presented to support therapeutic potential. This represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

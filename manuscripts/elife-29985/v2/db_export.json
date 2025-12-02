@@ -1,0 +1,1768 @@
+{
+  "submission": {
+    "id": "8b804445-7966-4945-ab09-85428f2f796e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:25:46.054255Z",
+    "updated_at": "2025-12-01T21:25:46.054255Z"
+  },
+  "content": [
+    {
+      "id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "submission_id": "8b804445-7966-4945-ab09-85428f2f796e",
+      "content_type": "manuscript",
+      "content_text": "# Structure of PINK1 and mechanisms of Parkinson's disease-associated mutations\n\n## Authors\n\n- Atul Kumar<sup>1</sup> ([ORCID: 0000-0001-6839-2299](https://orcid.org/0000-0001-6839-2299))\n- Jevgenia Tamjar<sup>2</sup>\n- Andrew D Waddell<sup>2</sup>\n- Helen I Woodroof<sup>2</sup>\n- Olawale G Raimi<sup>1</sup> ([ORCID: 0000-0003-2782-7318](https://orcid.org/0000-0003-2782-7318))\n- Andrew M Shaw<sup>2</sup>\n- Mark Peggie<sup>3</sup>\n- Miratul MK Muqit<sup>2</sup> ([ORCID: 0000-0001-9733-2404](https://orcid.org/0000-0001-9733-2404)) \u2020\n- Daan MF van Aalten<sup>1</sup> ([ORCID: 0000-0002-1499-6908](https://orcid.org/0000-0002-1499-6908)) \u2020\n\n### Affiliations\n\n1. Division of Gene Regulation and Expression University of Dundee Dundee United Kingdom\n2. MRC Protein Phosphorylation and Ubiquitylation Unit University of Dundee Dundee United Kingdom\n3. Division of Signal Transduction Therapy School of Life Sciences, University of Dundee Dundee United Kingdom\n4. School of Medicine University of Dundee Dundee United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in the human kinase PINK1 (hPINK1) are associated with autosomal recessive early-onset Parkinson's disease (PD). hPINK1 activates Parkin E3 ligase activity, involving phosphorylation of ubiquitin and the Parkin ubiquitin-like (Ubl) domain via as yet poorly understood mechanisms. hPINK1 is unusual amongst kinases due to the presence of three loop insertions of unknown function. We report the structure of Tribolium castaneum PINK1 (TcPINK1), revealing several unique extensions to the canonical protein kinase fold. The third insertion, together with autophosphorylation at residue Ser205, contributes to formation of a bowl-shaped binding site for ubiquitin. We also define a novel structural element within the second insertion that is held together by a distal loop that is critical for TcPINK1 activity. The structure of TcPINK1 explains how PD-linked mutations that lie within the kinase domain result in hPINK1 loss-of-function and provides a platform for the exploration of small molecule modulators of hPINK1.\n\n## Introduction\n\nAutosomal recessive inherited loss-of-function mutations in human PTEN-induced kinase 1 (hPINK1), represent the second most frequent cause of early-onset Parkinson\u2019s disease (PD) (Valente et al., 2004). hPINK1 has been proposed to act as a master regulator of mitochondrial quality control, promoting the elimination of damaged mitochondria via autophagy known as mitophagy (McWilliams and Muqit, 2017). In response to mitochondrial depolarisation, hPINK1 is activated and phosphorylates ubiquitin at Serine65 (Ser65). Ser65-phosphorylated ubiquitin then binds to the ubiquitin E3 ligase Parkin with high affinity, serving to prime Parkin for phosphorylation by hPINK1 at an equivalent Ser65 residue that lies within its N-terminal ubiquitin-like domain (Ubl) (Kondapalli et al., 2012; Kazlauskaite et al., 2014; Kane et al., 2014; Koyano et al., 2014). This chain of phosphorylation events stimulates maximal activation of Parkin E3 ligase activity, resulting in ubiquitylation of multiple substrates at the outer mitochondrial membrane and represents a critical upstream step in the induction of mitophagy (McWilliams and Muqit, 2017). The molecular mechanisms of hPINK1 activation and substrate recognition are poorly understood. hPINK1 is distinct from other protein kinases due to the presence of three unique insertions (Ins1, Ins2 and Ins3) within the kinase domain and a C-terminal extension (CTE) of unknown function that bears no homology to any known protein domain (Figure 1A). Nearly, 30 missense and nonsense hPINK1 mutations have been reported in patients worldwide (Deas et al., 2009), located predominantly within the kinase domain or predicted to truncate the CTE. However, the molecular mechanism by which they disrupt hPINK1 catalysis and/or recognition of its physiological substrates ubiquitin and Parkin is unknown. We have previously identified a hPINK1 orthologue in Tribolium castaneum (TcPINK1), which in contrast to human hPINK1, almost entirely lacks the first kinase domain insertion (Woodroof et al., 2011) (Figure 1A). TcPINK1 exhibits constitutive catalytic activity towards ubiquitin, Parkin and generic substrates in vitro (Woodroof et al., 2011; Kazlauskaite et al., 2015). Furthermore, the motor defects of Drosophila PINK1 null flies can be efficiently rescued in vivo by crossing lines that over-express TcPINK1 (Woodroof et al., 2011). Herein, we report the crystal structure of TcPINK1, revealing structural insights into the CTE and kinase domain loop insertions. In particular, we show that the third insertion contributes to formation of a bowl-shaped binding site for ubiquitin that is critical for either TcPINK1 or hPINK1 mediated ubiquitin and Parkin Ubl phosphorylation. Furthermore, we have elaborated an important regulatory role for TcPINK1 autophosphorylation of Serine205 (Ser205), which together with the third insertion, aids in physiological substrate recognition. Overall, these findings provide molecular insights into the mechanisms of hPINK1 kinase activity, ubiquitin substrate recognition, and define the molecular basis of Parkinson\u2019s disease-causing mutations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain architecture of TcPINK1 showing kinase domain (150-486); location of Ins2, Ins3, catalytic motif (HRD) and activation loop motifs (DFG; APE) and CTE (487-570). The location of hPINK1 Ins1, which is largely absent in TcPINK1, is indicated. CTE, C-terminal extension; Ins, insertion. Created with IBS (Liu et al., 2015). The boundaries of the crystallisation construct with the mutations introduced is also shown, lower panel. (B) Overall structure of TcPINK1 showing the canonical N-lobe and C-lobe (grey). Catalytic and activation loop motifs are shown in magenta sticks and Mg2+ is shown as a black sphere. Ins2, Ins3 and CTE of TcPINK1 are coloured as in Figure 1A; disordered regions of PINK1 are shown in dashed line; Ins1 of hPINK1 is also shown as part of disordered loop in TcPINK1. (C) Topology diagram of the TcPINK1 structure. Core kinase domain secondary structure elements are shown in grey and indicated with numbers (\u03b2-sheet) and letters (\u03b1-helices) according to the nomenclature in (Hanks and Hunter, 1995). Non-canonical secondary structure elements (CTE, C-terminal extension; Ins, insertion) are indicated with Roman numerals for Ins2 (cyan), Ins3 (green) and numbering for CTE (blue). Created with TopDraw (Bond, 2003). (D) Ubiquitin phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), and ATP-binding pocket mutations A194D, K196A and E217K. 2 \u03bcg of indicated enzyme was incubated with 2 \u03bcM ubiquitin (K63-linked tetraubiquitin) and [\u03b3-32P] ATP for 10 min. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (upper panel) followed by Cerenkov counting of substrate bands for quantification (right panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) ATP (orange sticks) was modeled in the TcPINK1 structure using superposed coordinates of cAMP-dependent protein kinase in complex with ATP (pdb id:1ATP), TcPINK1 residues involving interactions with ATP are shown in grey sticks, remaining features of TcPINK1 are colored as in Figure 1B. (B) Parkin Ubl phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), and ATP-binding pocket mutants A194D, K196A and E217K. 30 ng of indicated enzyme was incubated in the presence of 2 \u03bcM Ubl domain of Parkin (1-76) and [y-32P] ATP for 10 min. Reactions were terminated by addition of SDS sample buffer and separated by SDS-PAGE. [\u03b3-32P] incorporation visualised by autoradiography (upper panel), followed by Cerenkov counting of substrate bands for quantification (top panel), western blot against TcPINK1 (lower panel) and Coomassie stained gels showing UBL (middle panel) are used as loading control.\n\n## Results and discussion\n\n### The TcPINK1 kinase fold is decorated with unique structural features\n\nThe crystal structure of a catalytically active fragment of TcPINK1 was solved and refined to 2.78 \u00c5 using E. coli expression of a cDNA construct encompassing the kinase domain and CTE (Ser150 - Asp570), and possessing mutations to reduce surface entropy (Glu527Ala and Lys528Ala), a 10 amino acid deletion in a large loop (\u0394261\u2013270), and a phospho-mimetic mutation (Ser205Glu) (Figure 1A). The crystal structure of TcPINK1 reveals core secondary structure elements of a typical protein kinase domain (Hanks and Hunter, 1995) (Figure 1B,C). As described previously (Woodroof et al., 2011), the N-lobe of the TcPINK1 kinase domain contains three insertions: Lys182\u2013Pro192 (Ins1), Glu221\u2013Ala253 (Ins2), and Leu260\u2013Met288 (Ins3) and in contrast to hPINK1, Ins1 exists as a loop remnant in TcPINK1 (Figure 1A,B). Ins2 forms a small domain containing a \u03b2i-strand (222-226) and an \u03b1i-helix (231-242) followed by a loop (243-253). Ins3 is disordered and is not included in the final model (Figure 1B,C). Finally, the majority of the TcPINK1 CTE (Ala487\u2013Leu556) is \u03b1-helical in nature (Figure 1B,C), and rather than forming a separate domain, is tightly packed on the E, G and H \u03b1-helices of the C-lobe of the kinase domain (3747 \u00c52 buried surface area), supporting previous data on the importance of this region for catalysis (Woodroof et al., 2011). A DALI structure similarity search revealed that Ins2 and the CTE structural elements are unique to TcPINK1 and not found in the almost thousand kinase structures solved to date. Although TcPINK1 was crystallised without ATP, the kinase domain appears to adopt an active, closed conformation, based on the positioning of the \u03b1C helix, activation segment conformation, and the \u2018in\u2019 position of the DFG motif (Hari et al., 2013; Huse and Kuriyan, 2002; Nolen et al., 2004) (Figure 1B). A model of the ATP was included by superposition with the conformationally similar cAMP dependent protein kinase-ATP complex (RMSD 3.2 \u00c5 on 252 equivalent C\u03b1 atoms). This suggested that residues Ala194, Lys196, Leu344, Tyr297 and Glu217 are critical for ATP binding (Figure 1\u2014figure supplement 1A). In agreement with this, biochemical analysis revealed that the Ala194Asp, Lys196Ala and Glu217Lys TcPINK1 mutants prevented phosphorylation of its physiological substrates, ubiquitin and the Parkin Ubl domain (Figure 1D,\u00a0Figure 1\u2014figure supplement 1B). Furthermore, inspection of the structure indicates that the conformation of residues forming two conserved hydrophobic networks (the \u2018R-spine\u2019 comprising residues Ile253, Val219, Phe360, His335 and Asp410, and the \u2018C-spine\u2019 residues Val176, Leu301, Leu343, Leu344, Leu345, ILe421 and Ile417) is compatible with an active conformation (Kornev et al., 2006, 2008).\n\n### Ins3 forms the ubiquitin binding pocket\n\nhPINK1-dependent phosphorylation of Ser65 on ubiquitin and the Ubl domain of Parkin is critical for maximal Parkin activation (Wauer et al., 2015; Kumar et al., 2017). However, the regions of hPINK1 that recognize and bind its substrates remain unknown. Via DALI structure similarity search, we identified the LIM kinase-cofilin complex (Hamill et al., 2016) as being conformationally similar to TcPINK1 (RMSD 2.8 \u00c5 on 298 equivalenced C\u03b1 atoms). Using the phosphopeptide in this complex as an anchor (Figure 2A), we superimposed Ser65 of ubiquitin onto the TcPINK1 active site, resulting in a model of the TcPINK1-ubiquitin complex, free of steric clashes (Figure 2B). Using this model, we explored the key structural elements in TcPINK1 that may contribute to recognition of ubiquitin. Although Ins3 in the TcPINK1 kinase domain is mostly disordered and could not be built as part of the structure; its predicted location places it proximal to the ubiquitin in the model of the complex and therefore we hypothesized that it is likely to contribute a critical role towards substrate recognition and binding. To test this, we deleted 10 residues (residues 261\u2013270, equivalent to the deletion used in the crystallisation construct) of Ins3 and measured TcPINK1 catalytic activity using multiple physiological readouts, including TcPINK1 catalysed phosphorylation of ubiquitin and the Parkin Ubl domain, and transphosphorylation of a kinase-inactive (D359A) TcPINK1 fragment (residues 125\u2013570; His-SUMO cleaved) (Figure 2C,D,\u00a0Figure 2\u2014figure supplement 1A). Strikingly, deletion of Ins3 resulted in complete loss of ubiquitin or Parkin Ubl phosphorylation, while preserving transphosphorylation activity towards kinase-inactive TcPINK1 (Figure 2C,D,\u00a0Figure 2\u2014figure supplement 1A). We also found that mutation of key residues Leu371, Tyr375, Lys382 and Lys435 within the canonical substrate binding pocket of kinases resulted in loss of activity against ubiquitin (Figure 2B,\u00a0Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig2-v2.jpg)\n\n**Figure 2.:** (A) Crystal structure of the LIM kinase substrate complex (pdb id: 5HVK, 18) showing LIM kinase (coloured as TcPINK1 in Figure 1B) and bound substrate cofilin (yellow) with Ser3 (yellow stick) poised in acceptor position. (B) Ubiquitin (yellow) was modelled in TcPINK1 (coloured as in Figure 1B) by superposing Ser3 of cofilin with Ser65 (shown as sticks) of ubiquitin after superposing the TcPINK1 and LIM kinase domains; disordered Ins3 is marked by dashed green line; 2Fo-Fc map, contoured at 1.5\u03c3, corresponding to phosphorylated Ser207 region is shown highlighting the Glu205 position in respect to Asn287 (tail of disordered Ins3), inset. (C) Ubiquitin phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), insertion three deletion mutant (\u0394261\u2013270), S205A and/or S207A mutants in the autophosphorylation sites. 2 \u00b5M ubiquitin (K63-linked tetraubiquitin) was used as substrate; assay conditions were similar to Figure 1D. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (middle panel) followed by Cerenkov counting of substrate bands for quantification (upper panel). (D) TcPINK1 transphosphorylation assay with full-length TcPINK1 (WT) or various mutants as in Figure 2C. 2 \u00b5M of kinase inactive TcPINK1 (125-end) was used as substrate; assay conditions were similar to Figure 1D. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (middle panel) followed by Cerenkov counting of substrate bands for quantification (upper panel).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Parkin Ubl phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), Ins3 deletion (\u2206261\u2013270), S205A, S207A and S205A/S207A. 30 ng of indicated enzyme was incubated in the presence of 2 \u03bcM Ubl domain of Parkin (1-76) and [y-32P] ATP for 10 min. Reactions were terminated by addition of SDS sample buffer and separated by SDS-PAGE. [\u03b3-32P] incorporation visualised by autoradiography (upper panel), followed by Cerenkov counting of substrate bands for quantification (top panel), Western blot against TcPINK1 (lower panel) and Coomassie-stained gels showing Ubl (middle panel) are used as loading control. (B) Ubiquitin phosphorylation assay with TcPINK1 (WT), kinase-inactive D359A mutant (KI), and canonical substrate-binding mutants L371A, Y375A, K382A, and K435A. 2 \u03bcg of indicated enzyme was incubated in the presence of 2 \u03bcM ubiquitin (K63-linked tetraubiquitin), and [\u03b332-P] ATP for 10 min. Reactions were terminated by addition of SDS sample buffer and separated by SDS-PAGE. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (middle panel), followed by Cerenkov counting of substrate bands for quantification (upper panel).\n\nWe have previously identified multiple autophosphorylation sites for TcPINK1 by mass spectrometry, including Ser205 (equivalent to Ser228 in hPINK1) and Ser207 (equivalent to Ser230 in hPINK1) (Woodroof et al., 2011). Ser207 phosphorylation was also observed in the crystal structure (Figure 2B). Inspection of the structure revealed that Glu205 (the phosphomimetic of Ser205) lies only 4 \u00c5 away from the tail (Asn287) of the disordered Ins3 (Figure 2B). We therefore hypothesized that autophosphorylation of Ser205 may influence and/or contribute to ubiquitin recognition and binding mediated by Ins3. Therefore, to test the effect of Ser205 phosphorylation in substrate recognition, we performed parallel assays with ubiquitin, Parkin Ubl domain and transphosphorylation of kinase-inactive TcPINK1 as performed for the Ins3 deletion. Critically Ser205Ala, but not Ser207Ala, prevented ubiquitin and Parkin Ubl phosphorylation while preserving transphosphorylation activity towards kinase-inactive TcPINK1 (Figure 2C,D,\u00a0Figure 2\u2014figure supplement 1A). Overall, these findings indicate that Ins3, unique to the PINK1 kinases, together with autophosphorylation at Ser205, is critical for ubiquitin and Parkin Ubl phosphorylation and may form part of the ubiquitin/Ubl fold recognition pocket.\n\n### Role of novel regulatory features of TcPINK1 catalysis\n\nMultiple lines of evidence suggest that hPINK1 is autoinhibited under basal conditions, including lack of significant activity of hPINK1 in vitro (Woodroof et al., 2011) and the detection of robust activity of hPINK1 in cells only under conditions of mitochondrial depolarization triggering hPINK1 activation via an unknown mechanism (Kondapalli et al., 2012). In contrast to hPINK1, insect orthologues isolated from Drosophila melanogaster, Pediculus humanus corporis and Tribolium castaneum exhibit constitutive catalytic activity in vitro (Woodroof et al., 2011; Wauer et al., 2015). Since the TcPINK1 kinase domain adopts an active conformation in our crystal structure, we sought to exploit this knowledge to probe possible mechanisms of hPINK1 activation. Activation loop phosphorylation is the most common mechanism of protein kinase activation (Hanks and Hunter, 1995), with phosphorylation stabilising the active conformation via electrostatic interaction between the phospho-serine/threonine residue and a basic pocket consisting of the arginine in the HRD motif (Nolen et al., 2004). Previous mass spectrometry analysis of TcPINK1 did not identify activation loop phosphorylation, and furthermore, alanine mutation of a candidate T-loop phosphorylation site residue, Ser377, did not impair TcPINK1 catalytic activity (Woodroof et al., 2011). Consistent with this, we do not observe phosphorylation of Ser377 in the TcPINK1 structure and furthermore, Ser377 is located too distant (12.2 \u00c5) from Arg336 of the HRD motif to form an electrostatic interaction (Figure 3A). Instead the TcPINK1 structure reveals that a highly conserved aspartate (Asp381) within the activation loop, an arginine residue (Arg336) of the HRD motif and an arginine residue (Arg216) in the \u03b1C-helix, form an equivalent interaction (Figure 3A), which is further stabilized via interaction with basic residues (Lys212 on the \u03b1C-helix; Arg240 and Arg241 in Ins2) and another conserved aspartate (Asp366). To explore which residues were important for TcPINK1 catalysed phosphorylation of its substrates, we investigated point mutants of residues lying within this region. The Asp366Ala TcPINK1 mutant was unstable under our expression conditions and was not assessed. Importantly, our data revealed that mutants in this region, particularly the Asp381Ala and Arg240Ala mutants, were associated with a significant reduction in TcPINK1 catalytic kinase activity towards ubiquitin (Figure 3B). Although Asp381 and Asp366 are conserved in hPINK1, Lys212 and Arg216 form a basic patch on the \u03b1C-helix that is conserved among the insect orthologues but not in hPINK1, where the equivalent residues are Asn235 and Gln239. Furthermore, Arg240 and Arg241 of TcPINK1 are replaced by Gly264 and Pro265 in hPINK1, respectively (Figure 3\u2014figure supplement 1A). We hypothesized that these differences in basic residues between TcPINK1 and hPINK1 could explain the lack of recombinant hPINK1 activity. To test this, we generated a mutant of hPINK1 incorporating Asn235Lys/Gln239Arg/Gly264Arg/Pro265Arg substitutions, however, this did not lead to any significant enhancement in hPINK1 activity (data not shown).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig3-v2.jpg)\n\n**Figure 3.:** (A) Close up view of active site of TcPINK1 (coloured as in Figure 1B) showing key ionic interactions involving Asp381 of the activation loop with Arg336 of the HRD motif and Arg216 of the \u03b1C helix; and Asp366 with Lys212 of the \u03b1C helix and Arg240 of Ins2. (B) Ubiquitin phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), D381A, R216A, K212A and R240A mutants. 2 \u00b5M of Ubiquitin (K63-linked tetraubiquitin) was used as substrate; conditions were similar to Figure 1D. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (upper panel) followed by Cerenkov counting of substrate bands for quantification (right panel). (C) Structural comparison of TcPINK1 and the CDK-Cyclin complex (pdb id: 5IF1) showing intramolecular interactions between Ins2 (cyan) and \u03b1C helix (grey) of TcPINK1 that resemble the intermolecular interactions between CDK (grey) and Cyclin (cyan). The salt bridge between Glu and Lys (shown in sticks) for kinase activation is represented by a dashed line. Interactions between the C-lobe and the distal Ins2 loop are highlighted (Inset). (D) Ubiquitin phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI) and TcPINK1 Ins2 mutants with \u03b2i-strand and \u03b1i-helix deletion (\u2206222\u2013242), \u03b1i-helix deletion (\u2206231\u2013242), or distal loop deletion (\u2206243\u2013253). 2 \u00b5M of Ubiquitin (K63-linked tetraubiquitin) was used as substrate, conditions were similar to Figure 1D. Gels were analysed by Coomassie staining (lower panel) and [\u03b3-32P] incorporation visualised by autoradiography (middle panel) followed by Cerenkov counting of substrate bands for quantification (upper panel).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Multiple sequence alignment of PINK1 kinases showing conservation of important residues/regions highlighted in Figure 3. Secondary structure elements are included based on TcPINK1 structure; elements numbering is consistent with Figure 1C. Numbering of residues is according to TcPINK1 sequence; marked arrows represent residues highlighted in catalytic cleft of TcPINK1 in Figure 3. Two different regions in the alignment are separated by dashed line. (B) Parkin Ubl phosphorylation assay with full-length TcPINK1 (WT), kinase-inactive D359A mutant (KI), PINK1 Ins2 mutants with \u03b2i-strand and \u03b1i-helix deletion (\u2206222\u2013242) or \u03b1i-helix deletion (\u2206231\u2013242) or distal loop deletion (\u2206243\u2013253) in Ins2. Ubl was used as substrate under the same conditions as Figure 1\u2014figure supplement 1.\n\nInspection of the TcPINK1 structure suggests another potential regulatory mechanism of activation through interaction of Ins2 with the \u03b1C-helix (1120 \u00c52 buried surface area) (Figure 3C). This interaction is reminiscent of the activation mechanism of cyclin dependent kinases (CDKs), whereby intermolecular stabilization of the CDK \u03b1C-helix occurs due to interactions with the cyclin \u03b15-helix (Figure 3C) (Jeffrey et al., 1995). The TcPINK1 \u03b1i-helix (residues 231\u2013242) of Ins2 (residues 221\u2013253) occupies a similar position to cyclin, inducing a displacement of the \u03b1C-helix and allowing formation of the key salt bridge between the conserved Glu217 on the \u03b1C-helix and the conserved Lys196 on the N-lobe, maintaining the kinase in an active conformation (Figure 3C). Akin to the intermolecular CDK-cyclin interaction, the TcPINK1 \u03b1C-helix-\u03b1i-helix intramolecular interface also consists of hydrophobic interactions (Figure 3C). Whilst the overall conservation of Ins2 (residues 221\u2013253) is low, the C-terminal/distal region (243-253) of Ins2 remains highly conserved (Figure 3\u2014figure supplement 1A), forming a loop (Ins2 loop) which tethers the proximal region of Ins2 (\u03b2i-strand and \u03b1i-helix) with the rest of the C-lobe mediated by interactions between His247 and Asn249 of Ins2 and Ser545 of CTE and Gln320 of the C-lobe, respectively. Furthermore, a hydrophobic core is formed between Leu244 and Ile250 of Ins2 with Phe360 of the \u2018DFG motif\u2019 and Ile357 (Figure 3C). Interestingly, deletion of the \u03b1i-helix (residues 231\u2013242) alone or in combination with the \u03b2i-strand (residues 222\u2013242) region of Ins2 does not affect the catalytic activity of TcPINK1. However, deletion of the Ins2 loop (residues 243\u2013253) abolishes the kinase activity of TcPINK1 (Figure 3D,\u00a0Figure 3\u2014figure supplement 1B). Therefore, our analysis suggests a critical role for the Ins2 loop (243-253) as an anchor, to maintaining the kinase domain in an active state, although the function of the proximal region of Ins2 (222-242) remains to be fully elucidated.\n\n### Translating structural insights to hPINK1\n\nSequence alignment of hPINK1 and TcPINK1 reveals an overall high degree of conservation with the exception of the relative absence of Ins1 in TcPINK1 (Figure 4\u2014figure supplement 1). Therefore, we next explored the structural and functional conservation between insect and human PINK1 in cells expressing hPINK1 whose kinase activity can be stimulated by carbonyl cyanide m-cholorophenylhydrazone (CCCP) that induces mitochondrial depolarization (Kazlauskaite et al., 2015). We transiently expressed wild type hPINK1 or mutants of key ATP-binding residues predicted from the TcPINK1 structure (Figure 1D,\u00a0Figure 1\u2014figure supplement 1A) into HeLa hPINK1 knockout cells generated by TALEN technology (Narendra et al., 2013). Cells were treated with 10 \u03bcM CCCP or DMSO for 3 hr and extracts immunoblotted with phospho-specific antibodies raised against hPINK1 substrates Ser65 Parkin and Ser65 ubiquitin. Consistent with our analysis of TcPINK1 (Figure 1D), we found that Parkin and ubiquitin phosphorylation was abolished in cells expressing mutant A217D, K219A, E240K and L369P forms of hPINK1 upon CCCP stimulation (Figure 4A). This indicates that the ATP-binding pocket is well conserved between TcPINK1 and hPINK1. We next explored whether Ins3, which is well conserved between TcPINK1 and higher species, is critical for ubiquitin and Parkin Ubl recognition by hPINK1. Consistent with TcPINK1, we observed abrogation of phosphorylation of ubiquitin and Parkin in cells expressing hPINK1 harbouring a deletion of Ins3 (\u0394285\u2013294 \u2013 corresponding to deletion in TcPINK1 \u0394261\u2013270) in striking contrast to cells expressing hPINK1 containing a deletion in Ins1 (\u0394180\u2013209) or a deletion in the proximal region of Ins2 (\u0394245\u2013265 - corresponding to \u03b2i-strand and \u03b1i-helix of TcPINK1). Overall, these findings indicate that hPINK1 and TcPINK1 share similar mechanisms for substrate recognition and kinase activity, suggesting that the TcPINK1 structure will provide an important framework to direct future studies aimed at structural studies of the hPINK1 enzyme.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig4-v2.jpg)\n\n**Figure 4.:** (A) hPINK1 knock out HeLa cells transiently co-expressing WT human Parkin and 3xFLAG tagged hPINK1 WT, KI or hPINK1 ATP-binding mutants A217D, K219A, E240K, L369P. A217, K219, E240 and L369 correspond to A194, K196, E217 and L344 of TcPINK1, respectively. Cells were stimulated with 10 \u03bcM CCCP or DMSO for 3 hr. Lysates were subjected to immunoblotting as follows: pSer65 Parkin (anti-phospho-Parkin); Parkin (anti-Parkin), pSer65 ubiquitin (anti-phospho-ubiquitin), hPINK1 (anti-FLAG), OPA1 (anti-OPA1) and GAPDH (anti-GAPDH). (B) hPINK1 knock out HeLa cells transiently co-expressing WT human Parkin and 3xFLAG tagged hPINK1 WT, KI or hPINK1 Ins mutants \u2206Ins1 (180\u2013209 deletion), \u2206Ins2 (245\u2013265 deletion), \u2206Ins3 (285-294). Cells were stimulated with 10 \u03bcM CCCP or DMSO for 3 hr. Lysates were subjected to immunoblotting as follows: pSer65 Parkin (anti-phospho-Parkin); Parkin (anti-Parkin), pSer65 ubiquitin (anti-phospho-ubiquitin), hPINK1 (anti-FLAG), OPA1 (anti-OPA1) and GAPDH (anti-GAPDH).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Secondary structure elements are included based on TcPINK1 structure. Elements numbering is consistent with Figure 1C; numbering of residues is according to the TcPINK1 sequence. ATP-binding residues shown in Figure 1 are marked with *. Locations of loop insertions are coloured according to Figure 1.\n\n### Molecular mechanisms of inactivating Parkinsonism mutations in hPINK1\n\nMutations in hPINK1 are a leading cause of familial early-onset PD and whilst previous studies have demonstrated that mutations disrupt hPINK1-dependent activity and mitophagy in cells (McWilliams and Muqit, 2017; Deas et al., 2009), very little is known about how these impact hPINK1 structure. Of the approximately thirty reported homozygous or compound heterozygous pathogenic mutations (Deas et al., 2009), twenty are conserved in TcPINK1 (Supplementary file 1). Mapping of these pathogenic mutations onto the structure of TcPINK1 (Figure 5,\u00a0Supplementary file 1), reveals that they cluster within functionally distinct regions of hPINK1. A major group of PD-associated mutations lie within the ATP-binding pocket including Ala217Asp, Glu240Lys, Ala244Gly and Leu369Pro and perturb interactions with ATP. A second group of mutations that lie in the catalytic motif or activation loop include Gly386Ala, Pro416Arg/Leu and Glu417Gly (Figure 5A,C) result in catalytically inactive hPINK1 (Deas et al., 2009). The His271Gln mutation lies within the critical distal Ins2 loop of hPINK1 (Figure 5A,C), that anchors the proximal Ins2 to the C-lobe (Figure 3C), and has previously been found to abolish catalytic activity in vitro (Woodroof et al., 2011) as well as hPINK1 activity in cells (Okatsu et al., 2012). In contrast, the Gly309Asp (G309D) PD mutation located within Ins3 (Figure 2) would be predicted to perturb hPINK1 and substrate (ubiquitin/Ubl domain of Parkin) interaction as our analysis suggests that Ins3 is required for ubiquitin phosphorylation (Figure 2C,\u00a0Figure 2\u2014figure supplement 1A). Consistent with this, a previous study showed that the G309D hPINK1 mutant fails to phosphorylate Parkin Ubl in cells (Iguchi et al., 2013) whereas the equivalent TcPINK1 G285D mutant continues to exhibit catalytic activity towards generic and peptide substrates in vitro (Woodroof et al., 2011). The remainder of mutations mainly affects residues critical for structural integrity of hPINK1. In particular, the CTE of TcPINK1 forms a hydrophobic core against the E, G and H helices of the C-lobe (Figure 5B), and a cluster of PD mutations in hPINK1 including Leu539Phe, Leu347Pro and Leu489Pro located in this vicinity suggest the importance of this hydrophobic core (Figure 5B). Attempts to purify soluble protein for a number of point mutants targeting this hydrophobic interface were unsuccessful, underscoring the importance of this hydrophobic core which explains loss of kinase activity of TcPINK1 upon CTE deletion in previous studies (Woodroof et al., 2011). Although it has previously been suggested that CTE may be important for dimerization (Okatsu et al., 2013), we did not find evidence for a functional dimer in our TcPINK1 purification procedures or crystal structure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29985/elife-29985-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mapping of PD mutations onto the TcPINK1 structure (coloured as in Figure 1B). Pathogenic hPINK1 disease mutant residues are shown in red sticks; disease mutants in the disordered region (represented by dashed line) of Ins3 are labelled in red characters. (B) Interface of the CTE and C-lobe of TcPINK1 showing the hydrophobic core (shown in grey or blue) of the TcPINK1 kinase domain. hPINK1 PD mutations in the vicinity of the hydrophobic core are shown in red sticks. (C) Location of hPINK1 PD mutations (marked with red lines) on the primary TcPINK1 sequence. hPINK1 mutations are shown in parenthesis.\n\nOverall the TcPINK1 structure provides molecular insights into the structural regulation of hPINK1 and in particular defines functional roles for its unique loop insertions in ubiquitin substrate recognition and catalytic activity. The structure provides clarity on the impact of loss of function disease-associated mutations, which may stimulate future drug discovery efforts for both familial and idiopathic PD.\n\n## Materials and methods\n\n### Protein expression, purification and crystallography\n\nBL21 codon plus (DES) RIPL (Stratagene) were transformed with pET15 6HIS SUMO TcPINK1S150-D570\u00a0\u0394I261-L270\u00a0S205E E527A K528A (available from MRC PPU Reagents and Services: http://mrcppureagents.dundee.ac.uk). For overexpression, 1 L of Terrific broth (TB) medium was inoculated with 10 ml of overnight culture. Cultures were propagated in a shaking incubator (Infors HT) at 37\u00b0C and 200 rpm until OD600\u00a0~0.6\u20130.8. Temperature was then reduced to 16\u00b0C upon which cultures were supplemented with 100 \u00b5M IPTG and grown overnight. Cells were harvested by centrifugation at 4000 rpm for 25 min (Beckman coulter J6-Mi centrifuge). Cell pellets were carefully resuspended in\u00a0~4\u00a0\u00d7 cell volume of lysis buffer (50 mM EPPS pH 8.6, 500 mM NaCl, 5% glycerol, 3% sucrose, 5 mM imidazole) at 12\u00b0C by gentle shaking (150 rpm). Before lysis, 0.5 mM TCEP pH 7.5 (from Apollo Scientific,\u00a0United\u00a0Kingdom), 0.1 mM Pefabloc (Sigma Aldrich,\u00a0United\u00a0Kingdom), and 10 \u00b5M Leupeptin (Apollo Scientific) were added to the mixture. Cells were then lysed by sonication (6 \u00d7 10 s pulses at 10 s intervals, 45% amplitude) and to remove the cell debris, the cell lysates were centrifuged at 28,000 rpm for 25 min at 4\u00b0C (Beckman Avanti J-30 I centrifuge).\n\nFor protein purification, the supernatant was incubated with Nickel sepharose beads previously equilibrated with 10 CV binding buffer (50 mM EPPS pH 8.6, 500 mM NaCl, 5% glycerol, 3% sucrose, 5 mM imidazole, 0.5 mM TCEP, pH 7.5) for 1 hr at 4\u00b0C on a roller. Thereafter, the beads were collected by filtration and washed thoroughly (800 ml \u22121 L) with binding buffer containing 30 mM imidazole. The protein was then eluted from the beads using the elution buffer (50 mM EPPS pH 8.6, 500 mM NaCl, 5% glycerol, 3% sucrose, 400 mM imidazole, 0.5 mM TCEP, pH 7.5). The eluted protein was mixed with His-SENP1 protease (1 mg of His-SENP1 per 25 mg of TcPINK1) to cleave off the SUMO tag and dialyzed into 30 mM HEPES pH 7.5, 500 mM NaCl, 5% glycerol, 3% sucrose, 0.25 mM TCEP, pH 7.5 at 4\u00b0C overnight (using 3.5 kDa SnakeSkin dialysis tubing; Thermo Fisher). The dialyzed mixture was subjected to negative pull down using Nickel sepharose resin to remove the His-SUMO and TcPINK1 was concentrated to\u00a0~5 ml. Reductive methylation of lysine residues was then performed (as described in Hampton Research Protocols) before loading onto a gel filtration column (HiLoad Superdex 16/600, GE Healthcare), previously equilibrated with the gel filtration buffer (25 mM HEPES, pH 7.5, 300 mM NaCl, 5% glycerol, 3% sucrose, 2 mM TCEP, pH 7.5). Following gel filtration, methylated TcPINK1 was concentrated to 9 mg/ml flash frozen in liquid nitrogen and stored at \u221280\u00b0C for further use. For overexpression, purification and methylation of selenomethionine (SeMet) TcPINK1 derivatives, an identical protocol was used (using MD12-500 kit from Molecular Dimensions to incorporate selenomethionine). Native and selenomethionine derivatised TcPINK1 was crystallised using 5 mg/ml of protein mixing with 200 mM MgCl2, 100 mM HEPES pH 7.0, 20% PEG 6000 and 200 mM MgCl2 or 100 mM HEPES pH 7.5, 25% PEG 3350 and 200 mM MgCl2, respectively, under vapor diffusion sitting drop method. Crystals were flash frozen using 20% of glycerol with mother liquor. Data were collected at ESRF, with a SeMet anomalous data set collected at the selenium absorption edge. Selenomethionine-incorporated and native crystals diffracted to 3.4 \u00c5 and 2.8 \u00c5, respectively. Data were processed using XDS (Kabsch, 2014) and AIMLESS (Winn et al., 2011). SAD phasing was performed on the anomalous data set using CRANK2 in the CCP4 program suite. Phases were improved by iterative cycles of manual model building and refinement using Coot (Emsley and Cowtan, 2004) and Refmac (Winn et al., 2011), respectively (Table 1). Ramachandran values were calculated using MolProbity (Chen et al., 2010) with 94% of residues in the most favored regions.\n\n**Table 1.**\n Diffraction data and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>TcPINK1 (Native)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P1 21 1</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>84.92 116.74 179.34</td>\n    </tr>\n    <tr>\n      <td>\u03b1, b, g (\u00b0)</td>\n      <td>90.00 94.29 90.00</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>178.84\u20132.78 (2.83\u20132.78)*</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>8.5 (122.4)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>13.0 (1.4)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>99.9 (59.4)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.9 (99.8)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>6.7 (6.8)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>178.84 (2.78)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>83545</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>20.6/24.5</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>16722</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>B factors</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>80.8</td>\n    </tr>\n    <tr>\n      <td>Ligand/ion</td>\n      <td>81.6</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>70.9</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.8</td>\n    </tr>\n  </tbody>\n</table>\n\n_Single crystals were used for structure determination.*Values in parentheses are for highest-resolution shell._\n\n### Protein purification from E. coli for kinase assays\n\nFull length wild-type and mutant TcPINK1 were expressed in E. coli (BL21-codonplus) as maltose-binding protein fusion proteins. Cells were grown at 37\u00b0C, induced with 250 \u03bcM IPTG at OD600 0.6 and were further grown at 16\u00b0C for 16 hr. Cells were pelleted at 4000 r.p.m., and then lysed by sonication in lysis buffer. Lysates were clarified by centrifugation at 30 000 g for 30 min at 4\u00b0C followed by incubation with 1 ml per litre of culture of amylose resin for 1.5 hr at 4\u00b0C. The resin was washed thoroughly in wash buffer, then equilibration buffer, and proteins were then eluted. Proteins were dialysed overnight at 4\u00b0C into storage buffer, snap-frozen and stored at \u221280\u00b0C until use. Kinase assay substrates (ubiquitin, Parkin Ubl, and TcPINK1 125-end D359A) were expressed as 6His-SUMO fusion proteins using the same conditions. Cleared lysate was incubated with 1 ml Ni2+-NTA resin/litre of culture for 1.5 hr at 4\u00b0C. The resin was washed thoroughly in wash buffer, then equilibration buffer, and proteins were then eluted. Proteins were dialysed overnight at 4\u00b0C into storage buffer. 6His-SUMO tags were cleaved by the addition of SENP1 at a ratio of 1:10 protease:tagged-protein. Tag-cleaved protein was purified by thorough incubation with Ni2+-NTA resin, and then snap-frozen and stored at \u221280\u00b0C until further use.\n\n### Kinase assays\n\nReactions were set up in a volume of 40 \u03bcl, using 2 \u03bcg/30 ng of E. coli-expressed TcPINK1 and 2 \u03bcM of substrate, in 50 mM Tris\u2013HCl (pH 7.5), 0.1 mM EGTA, 10 mM MgCl2, 2 mM DTT and 0.1 mM [\u03b3-32P] ATP (approx. 500 cpm pmol\u22121). Assays were incubated at 30\u00b0C with shaking at 1050 r.p.m. and terminated after 10 min by addition of SDS sample loading buffer. The reaction mixtures were then resolved by SDS\u2013PAGE. Proteins were detected by Coomassie staining, and gels were imaged using an Epson scanner and dried completely using a gel dryer (Bio-Rad). Incorporation of [\u03b3-32P] ATP into substrates was analysed by autoradiography using Amersham hyperfilm. Quantification of [\u03b3-32P] incorporation into substrates was performed by Cerenkov counting of respective SDS-PAGE gel bands.\n\n### Buffers for E. coli protein purification for activity assays\n\nTcPINK1 and indicated mutants were expressed as maltose-binding protein fusion proteins: lysis buffer contained 50 mM Tris\u2013HCl (pH 7.5), 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 5% (v/v) glycerol, 1% (v/v) Triton X-100, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Wash buffer contained 50 mM Tris\u2013HCl (pH 7.5), 500 mM NaCl, 0.1 mM EGTA, 5% (v/v) glycerol, 0.03% (v/v) Brij-35, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Equilibration buffer contained 50 mM Tris\u2013HCl (pH 7.5), 150 mM NaCl, 0.1 mM EGTA, 5% (v/v) glycerol, 0.03% (v/v) Brij-35, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Elution buffer was equilibration buffer with the addition of 12 mM maltose. Storage buffer was equilibration buffer with the addition of 0.27 M sucrose, and glycerol,\u00a0PMSF and benzamidine were omitted.\n\nUbiquitin K63 tetramer was expressed as previously described (Kristariyanto et al., 2015). Lysis buffer contained 50 mM Tris\u2013HCl (pH 7.5), 150 mM NaCl, 5% (v/v) glycerol, 20 mM imidazole, 1% (v/v) Triton X-100, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Wash buffer contained 50 mM Tris\u2013HCl (pH 7.5), 500 mM NaCl, 5% (v/v) glycerol, 20 mM imidazole, 0.03% (v/v) Brij-35, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Equilibration buffer contained 50 mM Tris\u2013HCl (pH 7.5), 150 mM NaCl, 5% (v/v) glycerol, 0.03% (v/v) Brij-35, 0.1% (v/v) 2-mercaptoethanol, 1 mM benzamidine and 0.1 mM PMSF. Elution buffer was equilibration buffer with the addition of 200 mM imidazole. Storage buffer was equilibration buffer with the addition of 0.27 M sucrose, and glycerol\u2013PMSF and benzamidine were omitted.\n\n### Cell culture\n\nHeLa hPINK1 knockout cell lines were obtained from Richard Youle (NIH) and were cultured using DMEM (Dulbecco's modified Eagle's medium) supplemented with 10% FBS (foetal bovine serum), 2 mM L-glutamine, 100 U/mL penicillin and 0.1 mg/mL streptomycin. Cells were transiently transfected with WT Parkin and 3xFLAG tagged PINK1 using polyethylene method. Mitochondria were uncoupled using 10 \u03bcM CCCP (Sigma) dissolved in DMSO for 3 hr. 1% Triton solubilized lysates were resolved on SDS-PAGE, and wet transferred onto nitrocellulose membranes. Membranes were blocked with 5% BSA followed by overnight incubation with the indicated antibodies in 5% BSA or milk in TBST at four degrees. Membranes were incubated with HRP-conjugated secondary antibodies diluted (1: 10,000) in 1X TBST with 5% BSA for 1 hr at room temperature followed by exposure with ECL, pSer65 Parkin membranes were incubated with secondary antibodies conjugated with LI-COR IRDye at 1:10,000 dilution in 1X TBST with 5% BSA. List of antibodies used in the present study are mentioned in Supplementary file\u00a02.\n",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "f5af3487-1638-4581-a031-39fbd70a57a8",
+      "submission_id": "8b804445-7966-4945-ab09-85428f2f796e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Hunter, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29985.018](https://doi.org/10.7554/eLife.29985.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structure and activation mechanism of the Parkinson's disease kinase PINK1\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Tony Hunter as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Kalle Gehring (Reviewer #1); Stefan Knapp (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers all found this description of a first structure of a member of the PINK1 family of kinases to represent an exciting advance in the field, but had a number of suggestions for improvement and reorganization.\n\nThe main points to be taken into account in a revised version are as follows:\n\n1) You need to stress in the title, Abstract and throughout the paper that the structure is that of TcPINK1. Otherwise, the reader may be led to believe that the paper describes the structure of the human PINK1 catalytic domain. In addition, since you have not established the mechanism of activation of human PINK1, \"activation mechanism\" should be removed from the title.\n\n2) Since TcPINK1 is constitutively active, you should be more cautious about what this catalytic domain structure tells us about the activation mechanism of human PINK1, i.e. you need to state/discuss more explicitly what regulatory mechanisms derived from the structure of TcPINK1 are relevant to hPINK1 and what aspects of hPINK1 regulation might be different.\n\n3) Your proposal that Ins2 activates the catalytic domain through a cyclin-like interaction with the C-helix is intriguing and novel, but, although you carried out mutagenesis experiments to define the ATP-binding pocket, you did not conduct any direct mutagenesis experiments to verify that an interaction between Ins2 and the C-helix is important for activity of the catalytic domain. As you indicate, you have previously reported that the H271Q mutation, which lies in Ins2, reduces TcPINK1 kinase activity (Woodroof et al., 2011), but there is no discussion of why this mutation should be deleterious, and the H271 residue and its contacts are not shown in Figure 4. Ideally, you need to analyze the effects of mutating a C-helix interface residue in Ins2 predicted by your structure to be inactivating to bolster the conclusion that Ins2 activates TcPINK1 by a cyclin-like contact with the C-helix.\n\n4) Both human and TcPINK1 have been shown to be activated by phosphorylation of Ser228 (human)/Ser205 (TcPINK1), but this site is not discussed at all. Instead, you describe the contacts and supposed regulatory importance of the Ins2 region but with no indication of how those contacts would be modified as part of a regulatory mechanism. The argument in the Results and Discussion that human PINK1 is regulated and TcPINK1 constitutive is unproven. An equally plausible explanation is that the human protein is unstable when purified and/or inherently less active. Related to this, the statement that the authors were \"we were unable to confirm [\u2026] by mutagenesis\" the significance of the amino acid differences between human and TcPINK1 (subsection \u201cMechanisms of PINK1 autoactivation\u201d) needs to be better explained. Was it a negative result or was the experiment unsuccessful?\n\neLife revise decision letters normally do not provide the full reviews, but only a summary of the main issues that need to be addressed. However, in this case, we have decided to provide the three reviews in full so that you can see all the concerns, and revise the paper accordingly.\n\nReviewer 1:\n\nKumar and colleagues report the structure of PINK1, a kinase involved in mitochondrial autophagy and a recessive early-onset form of Parkinson's disease. The discovery three years ago of phosphorylation of ubiquitin by PINK1 has generated intense interest in the kinase and its potential as a drug target. The authors have determined the structure of an insect orthologue and modeled its interaction with its substrates, ubiquitin and ATP. Using the structure, they have generated a mutant that is defective for ubiquitin phosphorylation but retains activity for autophosphorylation and myelin basic protein.\n\nThe main problem with the manuscript is its presentation. The figures are poorly conceived and repetitive and the order of presentation of the results is confusing. From a scientific standpoint, the article is outstanding and a significant, major contribution to the field.\n\n1) The presentation of the structure in Figure 1 will be more easily understood by the large kinase community if the standard orientation is used: the N-lobe above the C-lobe and the activation loop toward the reader. The activation loop should be indicated in the figure and the model of ATP binding derived from the LIM kinase structure removed. I suggest moving Figure 2A to Figure 1. While I understand the authors' motivation for showing the ATP in Figure 1, it is a bit confusing since i) it is a model and not part of the crystal structure determined and ii) the DALI search that identifies the LIM kinase structure isn't presented until much later in the paper. To add to the confusion, the figure does not show AMP-PNP. Instead, there appears to be a sulfur on the \u03b3 phosphate. (As an aside, I'll point out that given that it is a model, there is no reason to show AMP-PNP rather than ATP. The authors should also make sure that the font sizes are consistent across the different panels and aim to keep the figures as simple and easy to interpret as possible.)\n\n2) As an alternative to the current organization, the authors might consider putting all of the enzymatic kinase assays into a single figure. My suggestion would be the structure in Figure 1 with location of PD mutations, Figure 3\u2014figure supplement 1A, and possibly the modeled ATP. Figure 2 could be the kinase assays and Figure 3 could present the comparison with LIMK1 and docking of ubiquitin. This should help to remove some of the duplications. For example, Figure 1A and 4C would be combined and only shown once.\n\n3) Move Table 1 to the supplemental material and Figure S3 should be part of the kinase activity figure in the main manuscript.\n\n4) Add paragraph breaks to the Introduction to improve the legibility.\n\n5) The text in the Results and Discussion should explain the use S205E phosphomimetic referencing the Woodroof 2011 paper. I found it curious that there was no discussion of the importance of this residue for kinase activity when it reportedly has a greater effect on activity than loss of S207. E205 is shown in the example electron density but no reference is made to its interactions with other residues. S207 and E205 might be hidden somewhere in Figure 1/2 but I couldn't find them.\n\n6) The explanation of the activation of PINK1 in the subsection \u201cMechanisms of PINK1 autoactivation\u201d was confusing. Since the TcPINK1 kinase domain adopts an active conformation, it wasn't clear how to interpret the intermolecular interactions listed. Do the authors expect that these will be lost in human PINK1? If so, how is human PINK1 activated? The kinase assays show TcPINK1 autophosphorylates. Where is the phosphorylation site? Does this regulate its activity or is TcPINK1 constitutively active?\n\n7) The authors should expand the discussion of the relationship of PINK1 to other kinases. Sequence analysis (BLAST) shows much greater similarity to calmodulin kinases than LIMK1 so the observation of LIMK1 as the top hit is unexpected. What were the other DALI hits? Is LIMK1 really the best model for positioning of the ATP?\n\n8) In the figure legend for Figure 4C, it isn't clear which are confirmed effects of the mutations and which are predicted.\n\nReviewer 2:\n\nThe paper by Kumar et al. entitled \"Structure and activation mechanism of the Parkinson's disease kinase PINK1\"reports the crystal structure of the catalytic and C-terminal domain of Tribolium castaneum homologue of the kinase PINK1. The structure revealed a canonical catalytic domain fold with a helical C-terminal domain. From the three inserts present in human PINK1 the first insert is missing in TcPINK1, the second insert was deleted and the third insert was present but unstructured. The authors report that similar to the cyclin interaction in CDKs an \u03b1 helical motif stabilizes the active state. In addition, the disordered third insert motif seems to be important for substrate recognition (ubiquitin) and a molecular model of the PINK1 substrate interaction was constructed based on the recently published LIMK substrate (cofilin) complex. Finally the authors analyze the effect of mutations found in PD revealing that many mutations are in positions that are important for PINK1 catalytic function such as the ATP binding pocket.\n\nHuman PINK1 is a structurally very diverse kinase with a strong link to the development of PD. To date structural studies on the human enzyme have been hampered due to difficulties expressing stable and large amounts of this unusual kinase. A structural model that provides insights into the regulation of PINK1, the role of its unusual inserts and the consequences of PD mutations is therefore very welcome and informative. However, I had to read until the end of the Introduction to find out that the presented structure is actually based on the TcPINK1 sequence. I think therefore that this should be highlighted in the title, Abstract and impact statement. Also a more detailed sequence comparison would be helpful to judge how this model can help to provide insight on the regulation of the human enzyme (maybe as supplemental material). How high is the overall sequence homology? In addition, the deletion of loop regions and mutations aiding crystallization should be annotated in Figure 1.\n\nIt seems that there are clear differences in the activation of TcPINK and human PINK1. For instance the first large insert is missing. Is this insert required for human PINK1 function? In addition, TcPINK1 is constitutively active whereas the human enzyme may require activation. While certain aspects of PINK1 regulation (e.g. the substrate recognition) may be shared between TcPINK1 and hPINK1 there seems to be clear differences in the regulation of this enzyme in higher eukaryotes. Despite these limitations I think however that the presented structural data are very useful and informative and based on the interested in the role of PINK1 in PD the article may trigger functional studies on the human enzyme and it will be widely read. My recommendation is therefore to simply make the paper more transparent and to highlight the limitation of the current structural model more clearly in the revised version.\n\nReviewer 3:\n\nThis manuscript reports the crystal structure of PINK1, a Ser/Thr protein kinase involved in regulation (phosphorylation) of ubiquitin. The authors crystallized a T. castaneum orthologue of human PINK1 (TcPINK1 and hPINK1), the construct of which included, in addition to the kinase domain, N-terminal domains Ins2 and Ins3 and C-terminal domain CTE. The structure was determined at 2.8 \u00c5 resolution (not 2.7 \u00c5, as reported in Results) and reveals the structure of the kinase domain, Ins2, and the CTE. The kinase domain is observed to be in an active state, with the alphaC-beta3 salt bridge intact and a DFG-in activation loop configuration. Ins2 and the CTE make interactions with the kinase domain that are probably important for kinase regulation.\n\nMajor concern:\n\nContrary to their claim in the Title and Abstract, the authors do not really reveal the activation mechanisms of hPINK1. They state that TcPINK1 is active in vitro (the crystal structure evidently shows why), but hPINK1 is not active in vitro. Why hPINK1 is not active and how it becomes activated are not explored.\n\nOther substantive concerns:\n\n1) The authors speculate from the TcPINK1 crystal structure that Ins2 activates the kinase domain via a cyclin-CDK mechanism (involving \u03b1C). While this seems quite plausible based on the structure (and is arguably the most important feature of the structure), the authors did not perform any mutagenesis experiments to verify this.\n\n2) The authors speculate that Ins3, which is just upstream of the kinase domain and which is disordered in their crystal structure, interacts with ubiquitin to provide substrate specificity. To test this, they make a 10-residue deletion construct of Ins3 in TcPINK1 and show that ubiquitin phosphorylation is abrogated, whereas MBP phosphorylation (non-specific substrate, negative control) is less affected. As shown in Figure 3B, though, MBP phosphorylation is down over 5-fold, indicating that the Ins3 deletion is probably affecting PINK1 stability, in addition to affecting (possibly) specific ubiquitin phosphorylation. A generic peptide substrate might serve as a better negative control.\n",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79cb731f-7266-4bc9-9f6f-7e269ae67c3d",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C1",
+      "claim": "Mutations in the human kinase PINK1 (hPINK1) are associated with autosomal recessive early-onset Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the human kinase PINK1 (hPINK1) are associated with autosomal recessive early-onset Parkinson's disease (PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the citation (Valente et al., 2004) in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "c77168db-7b68-42d7-893e-e0557f8dabbd",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C2",
+      "claim": "hPINK1 activates Parkin E3 ligase activity, involving phosphorylation of ubiquitin and the Parkin ubiquitin-like (Ubl) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "hPINK1 activates Parkin E3 ligase activity, involving phosphorylation of ubiquitin and the Parkin ubiquitin-like (Ubl) domain via as yet poorly understood mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Kondapalli et al., 2012; Kazlauskaite et al., 2014; Kane et al., 2014; Koyano et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "82df2847-f61b-457e-a874-e5262f29fbe0",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C3",
+      "claim": "hPINK1 is unusual amongst kinases due to the presence of three loop insertions of unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "hPINK1 is unusual amongst kinases due to the presence of three loop insertions of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and elaborated in the introduction with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "fd3d7de9-bc8d-4622-9f34-f82e1df2b5bf",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C4",
+      "claim": "The structure of Tribolium castaneum PINK1 (TcPINK1) reveals several unique extensions to the canonical protein kinase fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the structure of Tribolium castaneum PINK1 (TcPINK1), revealing several unique extensions to the canonical protein kinase fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the crystal structure data presented in Figure 1B,C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b135614a-df93-4734-9a5f-17ad35459a4b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C5",
+      "claim": "The third insertion, together with autophosphorylation at residue Ser205, contributes to formation of a bowl-shaped binding site for ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "The third insertion, together with autophosphorylation at residue Ser205, contributes to formation of a bowl-shaped binding site for ubiquitin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by structural modeling (Figure 2B) and biochemical assays (Figure 2C,D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "13131001-49b8-4162-9108-e0b6ace31ea2",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C6",
+      "claim": "A novel structural element within the second insertion is held together by a distal loop that is critical for TcPINK1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also define a novel structural element within the second insertion that is held together by a distal loop that is critical for TcPINK1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis (Figure 3C) and deletion mutagenesis experiments (Figure 3D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "780cbc9c-fc51-4a37-a8e3-ee63c033188c",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C7",
+      "claim": "The structure of TcPINK1 explains how PD-linked mutations that lie within the kinase domain result in hPINK1 loss-of-function.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of TcPINK1 explains how PD-linked mutations that lie within the kinase domain result in hPINK1 loss-of-function and provides a platform for the exploration of small molecule modulators of hPINK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mapping PD mutations onto the TcPINK1 structure (Figure 5) and functional analysis in cells (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "e9342003-60ac-4ada-9d81-f7a4277c8339",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C8",
+      "claim": "Autosomal recessive inherited loss-of-function mutations in human PTEN-induced kinase 1 (hPINK1), represent the second most frequent cause of early-onset Parkinson's disease (PD) (Valente et al., 2004).",
+      "claim_type": "EXPLICIT",
+      "source": "Autosomal recessive inherited loss-of-function mutations in human PTEN-induced kinase 1 (hPINK1), represent the second most frequent cause of early-onset Parkinson's disease (PD) (Valente et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Valente et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "2ee115c7-92a1-4632-8dc8-9ebf2c23c59f",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C9",
+      "claim": "hPINK1 has been proposed to act as a master regulator of mitochondrial quality control, promoting the elimination of damaged mitochondria via autophagy known as mitophagy (McWilliams and Muqit, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "hPINK1 has been proposed to act as a master regulator of mitochondrial quality control, promoting the elimination of damaged mitochondria via autophagy known as mitophagy (McWilliams and Muqit, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McWilliams and Muqit, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "03485b4f-c18d-4a9e-be3f-1cce6cb9f208",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C10",
+      "claim": "In response to mitochondrial depolarisation, hPINK1 is activated and phosphorylates ubiquitin at Serine65 (Ser65).",
+      "claim_type": "EXPLICIT",
+      "source": "In response to mitochondrial depolarisation, hPINK1 is activated and phosphorylates ubiquitin at Serine65 (Ser65).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by subsequent citations (Kondapalli et al., 2012; Kazlauskaite et al., 2014; Kane et al., 2014; Koyano et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "81a0f195-9ac7-47dc-b5c1-62c5b1e79ccd",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C11",
+      "claim": "Ser65-phosphorylated ubiquitin then binds to the ubiquitin E3 ligase Parkin with high affinity, serving to prime Parkin for phosphorylation by hPINK1 at an equivalent Ser65 residue that lies within its N-terminal ubiquitin-like domain (Ubl) (Kondapalli et al., 2012; Kazlauskaite et al., 2014; Kane et al., 2014; Koyano et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Ser65-phosphorylated ubiquitin then binds to the ubiquitin E3 ligase Parkin with high affinity, serving to prime Parkin for phosphorylation by hPINK1 at an equivalent Ser65 residue that lies within its N-terminal ubiquitin-like domain (Ubl) (Kondapalli et al., 2012; Kazlauskaite et al., 2014; Kane et al., 2014; Koyano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "50153407-a207-494a-8add-708fb03d6eff",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C12",
+      "claim": "This chain of phosphorylation events stimulates maximal activation of Parkin E3 ligase activity, resulting in ubiquitylation of multiple substrates at the outer mitochondrial membrane and represents a critical upstream step in the induction of mitophagy (McWilliams and Muqit, 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "This chain of phosphorylation events stimulates maximal activation of Parkin E3 ligase activity, resulting in ubiquitylation of multiple substrates at the outer mitochondrial membrane and represents a critical upstream step in the induction of mitophagy (McWilliams and Muqit, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McWilliams and Muqit, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b4b92e4f-2806-45e8-b0df-b2993ab5240b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C13",
+      "claim": "The molecular mechanisms of hPINK1 activation and substrate recognition are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms of hPINK1 activation and substrate recognition are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "34056c9d-8410-4e9c-b892-4ee3b6e07a44",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C14",
+      "claim": "hPINK1 is distinct from other protein kinases due to the presence of three unique insertions (Ins1, Ins2 and Ins3) within the kinase domain and a C-terminal extension (CTE) of unknown function that bears no homology to any known protein domain (Figure 1A).",
+      "claim_type": "EXPLICIT",
+      "source": "hPINK1 is distinct from other protein kinases due to the presence of three unique insertions (Ins1, Ins2 and Ins3) within the kinase domain and a C-terminal extension (CTE) of unknown function that bears no homology to any known protein domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1A showing the domain architecture.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "dffa7d4c-ac58-48a3-9d11-4b2f819c5cfc",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C15",
+      "claim": "Nearly, 30 missense and nonsense hPINK1 mutations have been reported in patients worldwide (Deas et al., 2009), located predominantly within the kinase domain or predicted to truncate the CTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly, 30 missense and nonsense hPINK1 mutations have been reported in patients worldwide (Deas et al., 2009), located predominantly within the kinase domain or predicted to truncate the CTE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Deas et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "a667f38f-b29f-4716-80e0-83b01648e163",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C16",
+      "claim": "TcPINK1 almost entirely lacks the first kinase domain insertion compared to hPINK1 (Woodroof et al., 2011) (Figure 1A).",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously identified a hPINK1 orthologue in Tribolium castaneum (TcPINK1), which in contrast to human hPINK1, almost entirely lacks the first kinase domain insertion (Woodroof et al., 2011) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Woodroof et al., 2011 and Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "c45b6a8b-7c41-4593-aeba-d9e4451a2a18",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C17",
+      "claim": "TcPINK1 exhibits constitutive catalytic activity towards ubiquitin, Parkin and generic substrates in vitro (Woodroof et al., 2011; Kazlauskaite et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "TcPINK1 exhibits constitutive catalytic activity towards ubiquitin, Parkin and generic substrates in vitro (Woodroof et al., 2011; Kazlauskaite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Woodroof et al., 2011 and Kazlauskaite et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "c784eef8-bff1-450b-a44f-b796b0da9f3a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C18",
+      "claim": "The motor defects of Drosophila PINK1 null flies can be efficiently rescued in vivo by crossing lines that over-express TcPINK1 (Woodroof et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the motor defects of Drosophila PINK1 null flies can be efficiently rescued in vivo by crossing lines that over-express TcPINK1 (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b3eaafa6-ce7a-49d8-b96f-3d4d80732b6b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C19",
+      "claim": "The crystal structure of TcPINK1 was solved and refined to 2.78 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of a catalytically active fragment of TcPINK1 was solved and refined to 2.78 \u00c5 using E. coli expression of a cDNA construct encompassing the kinase domain and CTE (Ser150 - Asp570), and possessing mutations to reduce surface entropy (Glu527Ala and Lys528Ala), a 10 amino acid deletion in a large loop (\u0394261\u2013270), and a phospho-mimetic mutation (Ser205Glu) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b4ba7a57-ae6b-49e2-9016-3d0c51698342",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C20",
+      "claim": "The crystal structure of TcPINK1 reveals core secondary structure elements of a typical protein kinase domain (Hanks and Hunter, 1995) (Figure 1B,C).",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of TcPINK1 reveals core secondary structure elements of a typical protein kinase domain (Hanks and Hunter, 1995) (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1B,C and citation to Hanks and Hunter, 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "a2b7f3ce-fb2b-4d0d-b4e3-5ac31f896d37",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C21",
+      "claim": "The N-lobe of the TcPINK1 kinase domain contains three insertions: Lys182\u2013Pro192 (Ins1), Glu221\u2013Ala253 (Ins2), and Leu260\u2013Met288 (Ins3).",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously (Woodroof et al., 2011), the N-lobe of the TcPINK1 kinase domain contains three insertions: Lys182\u2013Pro192 (Ins1), Glu221\u2013Ala253 (Ins2), and Leu260\u2013Met288 (Ins3) and in contrast to hPINK1, Ins1 exists as a loop remnant in TcPINK1 (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data in Figure 1A,B and citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "dd9f9835-0c67-4a07-83c0-439cc2e90435",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C22",
+      "claim": "Ins2 forms a small domain containing a \u03b2i-strand (222-226) and an \u03b1i-helix (231-242) followed by a loop (243-253).",
+      "claim_type": "EXPLICIT",
+      "source": "Ins2 forms a small domain containing a \u03b2i-strand (222-226) and an \u03b1i-helix (231-242) followed by a loop (243-253).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "8af4a15b-65b3-4564-95e4-a9d4a75dae5e",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C23",
+      "claim": "Ins3 is disordered and is not included in the final model.",
+      "claim_type": "EXPLICIT",
+      "source": "Ins3 is disordered and is not included in the final model (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "d64e5923-05fb-4274-951d-33e5be51ee3a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C24",
+      "claim": "The majority of the TcPINK1 CTE (Ala487\u2013Leu556) is \u03b1-helical in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the majority of the TcPINK1 CTE (Ala487\u2013Leu556) is \u03b1-helical in nature (Figure 1B,C), and rather than forming a separate domain, is tightly packed on the E, G and H \u03b1-helices of the C-lobe of the kinase domain (3747 \u00c52 buried surface area), supporting previous data on the importance of this region for catalysis (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "59d3bef1-7228-43a4-a682-694e46766c89",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C25",
+      "claim": "The CTE is tightly packed on the E, G and H \u03b1-helices of the C-lobe of the kinase domain (3747 \u00c52 buried surface area).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the majority of the TcPINK1 CTE (Ala487\u2013Leu556) is \u03b1-helical in nature (Figure 1B,C), and rather than forming a separate domain, is tightly packed on the E, G and H \u03b1-helices of the C-lobe of the kinase domain (3747 \u00c52 buried surface area), supporting previous data on the importance of this region for catalysis (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "9a12ae66-4928-4de3-b08e-59463b33c715",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C26",
+      "claim": "A DALI structure similarity search revealed that Ins2 and the CTE structural elements are unique to TcPINK1 and not found in the almost thousand kinase structures solved to date.",
+      "claim_type": "EXPLICIT",
+      "source": "A DALI structure similarity search revealed that Ins2 and the CTE structural elements are unique to TcPINK1 and not found in the almost thousand kinase structures solved to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational structure comparison using DALI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "2b1f113c-5a67-404d-8c8e-c65e092ff109",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C27",
+      "claim": "TcPINK1 was crystallised in an active, closed conformation, based on the positioning of the \u03b1C helix, activation segment conformation, and the 'in' position of the DFG motif (Hari et al., 2013; Huse and Kuriyan, 2002; Nolen et al., 2004) (Figure 1B).",
+      "claim_type": "EXPLICIT",
+      "source": "Although TcPINK1 was crystallised without ATP, the kinase domain appears to adopt an active, closed conformation, based on the positioning of the \u03b1C helix, activation segment conformation, and the 'in' position of the DFG motif (Hari et al., 2013; Huse and Kuriyan, 2002; Nolen et al., 2004) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and comparison with known active kinase conformations, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "7275f0b8-3cdd-464b-a3b1-dc856caa8af6",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C28",
+      "claim": "Residues Ala194, Lys196, Leu344, Tyr297 and Glu217 are critical for ATP binding in TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "A model of the ATP was included by superposition with the conformationally similar cAMP dependent protein kinase-ATP complex (RMSD 3.2 \u00c5 on 252 equivalent C\u03b1 atoms). This suggested that residues Ala194, Lys196, Leu344, Tyr297 and Glu217 are critical for ATP binding (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural modeling and supported by biochemical data in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "79430e8a-4491-4563-8757-11908eff4d8b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C29",
+      "claim": "The Ala194Asp, Lys196Ala and Glu217Lys TcPINK1 mutants prevented phosphorylation of ubiquitin and the Parkin Ubl domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, biochemical analysis revealed that the Ala194Asp, Lys196Ala and Glu217Lys TcPINK1 mutants prevented phosphorylation of its physiological substrates, ubiquitin and the Parkin Ubl domain (Figure 1D, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "cc1b4489-82c7-4635-a39e-eb29e3bf253b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C30",
+      "claim": "The conformation of residues forming two conserved hydrophobic networks (the 'R-spine' comprising residues Ile253, Val219, Phe360, His335 and Asp410, and the 'C-spine' residues Val176, Leu301, Leu343, Leu344, Leu345, ILe421 and Ile417) is compatible with an active conformation (Kornev et al., 2006, 2008).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inspection of the structure indicates that the conformation of residues forming two conserved hydrophobic networks (the 'R-spine' comprising residues Ile253, Val219, Phe360, His335 and Asp410, and the 'C-spine' residues Val176, Leu301, Leu343, Leu344, Leu345, ILe421 and Ile417) is compatible with an active conformation (Kornev et al., 2006, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and comparison with known active kinase conformations, supported by citations to Kornev et al., 2006, 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "53257fa4-0077-49ef-9815-8aa8c1d3f073",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C31",
+      "claim": "hPINK1-dependent phosphorylation of Ser65 on ubiquitin and the Ubl domain of Parkin is critical for maximal Parkin activation (Wauer et al., 2015; Kumar et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "hPINK1-dependent phosphorylation of Ser65 on ubiquitin and the Ubl domain of Parkin is critical for maximal Parkin activation (Wauer et al., 2015; Kumar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wauer et al., 2015 and Kumar et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "ff99ccb7-2885-4ac7-b25e-2f8bab0a46d0",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C32",
+      "claim": "The regions of hPINK1 that recognize and bind its substrates remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the regions of hPINK1 that recognize and bind its substrates remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "5be9603e-46bd-4129-88e0-ffd729b48ac3",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C33",
+      "claim": "The LIM kinase-cofilin complex (Hamill et al., 2016) is conformationally similar to TcPINK1 (RMSD 2.8 \u00c5 on 298 equivalenced C\u03b1 atoms).",
+      "claim_type": "EXPLICIT",
+      "source": "Via DALI structure similarity search, we identified the LIM kinase-cofilin complex (Hamill et al., 2016) as being conformationally similar to TcPINK1 (RMSD 2.8 \u00c5 on 298 equivalenced C\u03b1 atoms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational structure comparison using DALI and citation to Hamill et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "29c4727e-c32b-44c4-81b3-8387c154c957",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C34",
+      "claim": "A model of the TcPINK1-ubiquitin complex was generated by superimposing Ser65 of ubiquitin onto the TcPINK1 active site using the LIM kinase-cofilin complex as an anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the phosphopeptide in this complex as an anchor (Figure 2A), we superimposed Ser65 of ubiquitin onto the TcPINK1 active site, resulting in a model of the TcPINK1-ubiquitin complex, free of steric clashes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural modeling shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "6e314c71-83c7-4770-a5e5-7de1fad65312",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C35",
+      "claim": "Deletion of 10 residues (residues 261\u2013270) of Ins3 resulted in complete loss of ubiquitin or Parkin Ubl phosphorylation, while preserving transphosphorylation activity towards kinase-inactive TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, deletion of Ins3 resulted in complete loss of ubiquitin or Parkin Ubl phosphorylation, while preserving transphosphorylation activity towards kinase-inactive TcPINK1 (Figure 2C,D, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,D and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "3615da6b-e63d-4e33-9551-0756b1dda338",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C36",
+      "claim": "Mutation of key residues Leu371, Tyr375, Lys382 and Lys435 within the canonical substrate binding pocket of kinases resulted in loss of activity against ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that mutation of key residues Leu371, Tyr375, Lys382 and Lys435 within the canonical substrate binding pocket of kinases resulted in loss of activity against ubiquitin (Figure 2B, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "90829dd1-0390-4d1a-93c4-a66644ee7dfc",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C37",
+      "claim": "Multiple autophosphorylation sites for TcPINK1 have been identified by mass spectrometry, including Ser205 (equivalent to Ser228 in hPINK1) and Ser207 (equivalent to Ser230 in hPINK1) (Woodroof et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously identified multiple autophosphorylation sites for TcPINK1 by mass spectrometry, including Ser205 (equivalent to Ser228 in hPINK1) and Ser207 (equivalent to Ser230 in hPINK1) (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "c33ac0af-d474-4e4d-8270-86c6feff0674",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C38",
+      "claim": "Ser207 phosphorylation was observed in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Ser207 phosphorylation was also observed in the crystal structure (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "feb14a4c-3864-4281-99af-fbd2dc3d7cb3",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C39",
+      "claim": "Glu205 (the phosphomimetic of Ser205) lies only 4 \u00c5 away from the tail (Asn287) of the disordered Ins3.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the structure revealed that Glu205 (the phosphomimetic of Ser205) lies only 4 \u00c5 away from the tail (Asn287) of the disordered Ins3 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b8277f09-f50a-4677-a05b-a3ea33b7f5e1",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C40",
+      "claim": "Ser205Ala, but not Ser207Ala, prevented ubiquitin and Parkin Ubl phosphorylation while preserving transphosphorylation activity towards kinase-inactive TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically Ser205Ala, but not Ser207Ala, prevented ubiquitin and Parkin Ubl phosphorylation while preserving transphosphorylation activity towards kinase-inactive TcPINK1 (Figure 2C,D, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,D and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "fd5cb50d-7a75-4177-8646-4d48655feb75",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C41",
+      "claim": "Ins3, unique to the PINK1 kinases, together with autophosphorylation at Ser205, is critical for ubiquitin and Parkin Ubl phosphorylation and may form part of the ubiquitin/Ubl fold recognition pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings indicate that Ins3, unique to the PINK1 kinases, together with autophosphorylation at Ser205, is critical for ubiquitin and Parkin Ubl phosphorylation and may form part of the ubiquitin/Ubl fold recognition pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "164daf60-b74f-40af-9c77-85ed087e274e",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C42",
+      "claim": "Multiple lines of evidence suggest that hPINK1 is autoinhibited under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple lines of evidence suggest that hPINK1 is autoinhibited under basal conditions, including lack of significant activity of hPINK1 in vitro (Woodroof et al., 2011) and the detection of robust activity of hPINK1 in cells only under conditions of mitochondrial depolarization triggering hPINK1 activation via an unknown mechanism (Kondapalli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Woodroof et al., 2011 and Kondapalli et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "1b3062ca-45f0-42bd-b425-1656c8c2b44b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C43",
+      "claim": "Insect orthologues isolated from Drosophila melanogaster, Pediculus humanus corporis and Tribolium castaneum exhibit constitutive catalytic activity in vitro (Woodroof et al., 2011; Wauer et al., 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to hPINK1, insect orthologues isolated from Drosophila melanogaster, Pediculus humanus corporis and Tribolium castaneum exhibit constitutive catalytic activity in vitro (Woodroof et al., 2011; Wauer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Woodroof et al., 2011 and Wauer et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "7bcf39ed-c931-4472-87a5-df9177583ca8",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C44",
+      "claim": "Previous mass spectrometry analysis of TcPINK1 did not identify activation loop phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous mass spectrometry analysis of TcPINK1 did not identify activation loop phosphorylation, and furthermore, alanine mutation of a candidate T-loop phosphorylation site residue, Ser377, did not impair TcPINK1 catalytic activity (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "fc71b01b-3363-4ed6-999a-879cb3201a31",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C45",
+      "claim": "Phosphorylation of Ser377 is not observed in the TcPINK1 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we do not observe phosphorylation of Ser377 in the TcPINK1 structure and furthermore, Ser377 is located too distant (12.2 \u00c5) from Arg336 of the HRD motif to form an electrostatic interaction (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "170a75e3-cb40-46b7-988b-b28f1994326b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C46",
+      "claim": "Ser377 is located too distant (12.2 \u00c5) from Arg336 of the HRD motif to form an electrostatic interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we do not observe phosphorylation of Ser377 in the TcPINK1 structure and furthermore, Ser377 is located too distant (12.2 \u00c5) from Arg336 of the HRD motif to form an electrostatic interaction (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "18a8023f-116c-4a4c-8531-ed8cb9cc4994",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C47",
+      "claim": "A highly conserved aspartate (Asp381) within the activation loop, an arginine residue (Arg336) of the HRD motif and an arginine residue (Arg216) in the \u03b1C-helix, form an equivalent interaction to the typical activation loop phosphorylation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead the TcPINK1 structure reveals that a highly conserved aspartate (Asp381) within the activation loop, an arginine residue (Arg336) of the HRD motif and an arginine residue (Arg216) in the \u03b1C-helix, form an equivalent interaction (Figure 3A), which is further stabilized via interaction with basic residues (Lys212 on the \u03b1C-helix; Arg240 and Arg241 in Ins2) and another conserved aspartate (Asp366).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "334af050-d26e-4cf9-beb8-34d4c990dc0f",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C48",
+      "claim": "The Asp381Ala and Arg240Ala mutants were associated with a significant reduction in TcPINK1 catalytic kinase activity towards ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data revealed that mutants in this region, particularly the Asp381Ala and Arg240Ala mutants, were associated with a significant reduction in TcPINK1 catalytic kinase activity towards ubiquitin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "6ae9b672-0e9b-4536-9d3b-aa1197c1a4ec",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C49",
+      "claim": "Lys212 and Arg216 form a basic patch on the \u03b1C-helix that is conserved among the insect orthologues but not in hPINK1, where the equivalent residues are Asn235 and Gln239.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Asp381 and Asp366 are conserved in hPINK1, Lys212 and Arg216 form a basic patch on the \u03b1C-helix that is conserved among the insect orthologues but not in hPINK1, where the equivalent residues are Asn235 and Gln239.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "e2f555b7-51b2-43e5-b00b-00e667632273",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C50",
+      "claim": "Arg240 and Arg241 of TcPINK1 are replaced by Gly264 and Pro265 in hPINK1, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Arg240 and Arg241 of TcPINK1 are replaced by Gly264 and Pro265 in hPINK1, respectively (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "38976125-fb58-4276-bc4a-0625b74dc86c",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C51",
+      "claim": "A mutant of hPINK1 incorporating Asn235Lys/Gln239Arg/Gly264Arg/Pro265Arg substitutions did not lead to any significant enhancement in hPINK1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that these differences in basic residues between TcPINK1 and hPINK1 could explain the lack of recombinant hPINK1 activity. To test this, we generated a mutant of hPINK1 incorporating Asn235Lys/Gln239Arg/Gly264Arg/Pro265Arg substitutions, however, this did not lead to any significant enhancement in hPINK1 activity (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data (not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "0a5adb8f-86ce-4049-bd04-74dba9f4e42a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C52",
+      "claim": "The interaction of Ins2 with the \u03b1C-helix is reminiscent of the activation mechanism of cyclin dependent kinases (CDKs), whereby intermolecular stabilization of the CDK \u03b1C-helix occurs due to interactions with the cyclin \u03b15-helix (Jeffrey et al., 1995).",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the TcPINK1 structure suggests another potential regulatory mechanism of activation through interaction of Ins2 with the \u03b1C-helix (1120 \u00c52 buried surface area) (Figure 3C). This interaction is reminiscent of the activation mechanism of cyclin dependent kinases (CDKs), whereby intermolecular stabilization of the CDK \u03b1C-helix occurs due to interactions with the cyclin \u03b15-helix (Figure 3C) (Jeffrey et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 3C and citation to Jeffrey et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "5d66626c-32ae-4a37-8022-fca9c08f80bd",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C53",
+      "claim": "The TcPINK1 \u03b1i-helix (residues 231\u2013242) of Ins2 occupies a similar position to cyclin, inducing a displacement of the \u03b1C-helix and allowing formation of the key salt bridge between the conserved Glu217 on the \u03b1C-helix and the conserved Lys196 on the N-lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The TcPINK1 \u03b1i-helix (residues 231\u2013242) of Ins2 (residues 221\u2013253) occupies a similar position to cyclin, inducing a displacement of the \u03b1C-helix and allowing formation of the key salt bridge between the conserved Glu217 on the \u03b1C-helix and the conserved Lys196 on the N-lobe, maintaining the kinase in an active conformation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "d6c11902-1334-4f7d-964e-07f9d8bd2628",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C54",
+      "claim": "The C-terminal/distal region (243-253) of Ins2 remains highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the overall conservation of Ins2 (residues 221\u2013253) is low, the C-terminal/distal region (243-253) of Ins2 remains highly conserved (Figure 3\u2014figure supplement 1A), forming a loop (Ins2 loop) which tethers the proximal region of Ins2 (\u03b2i-strand and \u03b1i-helix) with the rest of the C-lobe mediated by interactions between His247 and Asn249 of Ins2 and Ser545 of CTE and Gln320 of the C-lobe, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in Figure 3\u2014figure supplement 1A and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "eb9dd9e3-6770-41f7-90dc-0d1bbcd58781",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C55",
+      "claim": "The Ins2 loop forms a hydrophobic core between Leu244 and Ile250 of Ins2 with Phe360 of the 'DFG motif' and Ile357.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a hydrophobic core is formed between Leu244 and Ile250 of Ins2 with Phe360 of the 'DFG motif' and Ile357 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "76ee46f3-651e-4fe7-b690-6443c204a6e5",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C56",
+      "claim": "Deletion of the \u03b1i-helix (residues 231\u2013242) alone or in combination with the \u03b2i-strand (residues 222\u2013242) region of Ins2 does not affect the catalytic activity of TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deletion of the \u03b1i-helix (residues 231\u2013242) alone or in combination with the \u03b2i-strand (residues 222\u2013242) region of Ins2 does not affect the catalytic activity of TcPINK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "78a25b83-3ab4-42b2-95e5-77757c4460e9",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C57",
+      "claim": "Deletion of the Ins2 loop (residues 243\u2013253) abolishes the kinase activity of TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deletion of the Ins2 loop (residues 243\u2013253) abolishes the kinase activity of TcPINK1 (Figure 3D, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "d6aa0342-7c85-4859-ba6c-35226c282fed",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C58",
+      "claim": "The Ins2 loop (243-253) plays a critical role as an anchor, maintaining the kinase domain in an active state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our analysis suggests a critical role for the Ins2 loop (243-253) as an anchor, to maintaining the kinase domain in an active state, although the function of the proximal region of Ins2 (222-242) remains to be fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "e0932675-f938-441e-85cb-92458c87bb2c",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C59",
+      "claim": "Sequence alignment of hPINK1 and TcPINK1 reveals an overall high degree of conservation with the exception of the relative absence of Ins1 in TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of hPINK1 and TcPINK1 reveals an overall high degree of conservation with the exception of the relative absence of Ins1 in TcPINK1 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "9a8778d8-3027-4694-bf75-bf28dc8ecda3",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C60",
+      "claim": "Parkin and ubiquitin phosphorylation was abolished in cells expressing mutant A217D, K219A, E240K and L369P forms of hPINK1 upon CCCP stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our analysis of TcPINK1 (Figure 1D), we found that Parkin and ubiquitin phosphorylation was abolished in cells expressing mutant A217D, K219A, E240K and L369P forms of hPINK1 upon CCCP stimulation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "d3917920-5423-4b3c-b609-187163d374f8",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C61",
+      "claim": "The ATP-binding pocket is well conserved between TcPINK1 and hPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the ATP-binding pocket is well conserved between TcPINK1 and hPINK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "490a84af-52b0-41df-a983-8b994101ded7",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C62",
+      "claim": "Phosphorylation of ubiquitin and Parkin was abrogated in cells expressing hPINK1 harbouring a deletion of Ins3 (\u0394285\u2013294).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with TcPINK1, we observed abrogation of phosphorylation of ubiquitin and Parkin in cells expressing hPINK1 harbouring a deletion of Ins3 (\u0394285\u2013294 \u2013 corresponding to deletion in TcPINK1 \u0394261\u2013270) in striking contrast to cells expressing hPINK1 containing a deletion in Ins1 (\u0394180\u2013209) or a deletion in the proximal region of Ins2 (\u0394245\u2013265 - corresponding to \u03b2i-strand and \u03b1i-helix of TcPINK1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "3c1bc5a7-e81d-4f1c-9431-4ccbaace377f",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C63",
+      "claim": "hPINK1 and TcPINK1 share similar mechanisms for substrate recognition and kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings indicate that hPINK1 and TcPINK1 share similar mechanisms for substrate recognition and kinase activity, suggesting that the TcPINK1 structure will provide an important framework to direct future studies aimed at structural studies of the hPINK1 enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b8896ba0-3ed7-4f1f-9451-51490561a1a0",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C64",
+      "claim": "Of the approximately thirty reported homozygous or compound heterozygous pathogenic mutations (Deas et al., 2009), twenty are conserved in TcPINK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the approximately thirty reported homozygous or compound heterozygous pathogenic mutations (Deas et al., 2009), twenty are conserved in TcPINK1 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of mutations and citation to Deas et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "ed350dbb-7670-446c-a5af-c2b251a6446c",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C65",
+      "claim": "A major group of PD-associated mutations lie within the ATP-binding pocket including Ala217Asp, Glu240Lys, Ala244Gly and Leu369Pro and perturb interactions with ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping of these pathogenic mutations onto the structure of TcPINK1 (Figure 5, Supplementary file 1), reveals that they cluster within functionally distinct regions of hPINK1. A major group of PD-associated mutations lie within the ATP-binding pocket including Ala217Asp, Glu240Lys, Ala244Gly and Leu369Pro and perturb interactions with ATP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping mutations onto the structure shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "dbbed74e-3ffd-416f-9ed3-ff45a71ac740",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C66",
+      "claim": "A second group of mutations that lie in the catalytic motif or activation loop include Gly386Ala, Pro416Arg/Leu and Glu417Gly result in catalytically inactive hPINK1 (Deas et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "A second group of mutations that lie in the catalytic motif or activation loop include Gly386Ala, Pro416Arg/Leu and Glu417Gly (Figure 5A,C) result in catalytically inactive hPINK1 (Deas et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping mutations onto the structure shown in Figure 5A,C and citation to Deas et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "7c1704fe-4b47-4cc3-88fd-734f704bda17",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C67",
+      "claim": "The His271Gln mutation lies within the critical distal Ins2 loop of hPINK1 and has previously been found to abolish catalytic activity in vitro (Woodroof et al., 2011) as well as hPINK1 activity in cells (Okatsu et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "The His271Gln mutation lies within the critical distal Ins2 loop of hPINK1 (Figure 5A,C), that anchors the proximal Ins2 to the C-lobe (Figure 3C), and has previously been found to abolish catalytic activity in vitro (Woodroof et al., 2011) as well as hPINK1 activity in cells (Okatsu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping the mutation onto the structure and citations to Woodroof et al., 2011 and Okatsu et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "0989fbb0-4d5c-4bfc-9d1c-a5e5ac8a75ee",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C68",
+      "claim": "The Gly309Asp (G309D) PD mutation located within Ins3 would be predicted to perturb hPINK1 and substrate (ubiquitin/Ubl domain of Parkin) interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Gly309Asp (G309D) PD mutation located within Ins3 (Figure 2) would be predicted to perturb hPINK1 and substrate (ubiquitin/Ubl domain of Parkin) interaction as our analysis suggests that Ins3 is required for ubiquitin phosphorylation (Figure 2C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the experimental data showing Ins3 is required for ubiquitin phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "90aefc76-82c6-45d1-80cf-62d0a58f8fbf",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C69",
+      "claim": "The G309D hPINK1 mutant fails to phosphorylate Parkin Ubl in cells (Iguchi et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a previous study showed that the G309D hPINK1 mutant fails to phosphorylate Parkin Ubl in cells (Iguchi et al., 2013) whereas the equivalent TcPINK1 G285D mutant continues to exhibit catalytic activity towards generic and peptide substrates in vitro (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Iguchi et al., 2013 and Woodroof et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "ce2bc874-ecaf-4917-bad6-7fd6a547936a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C70",
+      "claim": "The equivalent TcPINK1 G285D mutant continues to exhibit catalytic activity towards generic and peptide substrates in vitro (Woodroof et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a previous study showed that the G309D hPINK1 mutant fails to phosphorylate Parkin Ubl in cells (Iguchi et al., 2013) whereas the equivalent TcPINK1 G285D mutant continues to exhibit catalytic activity towards generic and peptide substrates in vitro (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "0b9ae8d9-9fa9-46e7-bc4d-f3e58abc8e25",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C71",
+      "claim": "The CTE of TcPINK1 forms a hydrophobic core against the E, G and H helices of the C-lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the CTE of TcPINK1 forms a hydrophobic core against the E, G and H helices of the C-lobe (Figure 5B), and a cluster of PD mutations in hPINK1 including Leu539Phe, Leu347Pro and Leu489Pro located in this vicinity suggest the importance of this hydrophobic core (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "fab26cba-2ce1-421c-8eda-2e2dffc06aa7",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C72",
+      "claim": "A cluster of PD mutations in hPINK1 including Leu539Phe, Leu347Pro and Leu489Pro located in the vicinity of the CTE-C-lobe hydrophobic core suggest the importance of this hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the CTE of TcPINK1 forms a hydrophobic core against the E, G and H helices of the C-lobe (Figure 5B), and a cluster of PD mutations in hPINK1 including Leu539Phe, Leu347Pro and Leu489Pro located in this vicinity suggest the importance of this hydrophobic core (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mapping mutations onto the structure shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "b89c9005-f12c-416c-ba6c-84b61bc8d1c6",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C73",
+      "claim": "Attempts to purify soluble protein for a number of point mutants targeting the CTE-C-lobe hydrophobic interface were unsuccessful.",
+      "claim_type": "EXPLICIT",
+      "source": "Attempts to purify soluble protein for a number of point mutants targeting this hydrophobic interface were unsuccessful, underscoring the importance of this hydrophobic core which explains loss of kinase activity of TcPINK1 upon CTE deletion in previous studies (Woodroof et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental attempts and citation to Woodroof et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "c53b7479-3301-468d-bfde-fd025ed6df80",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C74",
+      "claim": "No evidence for a functional dimer was found in TcPINK1 purification procedures or crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has previously been suggested that CTE may be important for dimerization (Okatsu et al., 2013), we did not find evidence for a functional dimer in our TcPINK1 purification procedures or crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and citation to Okatsu et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "3c7e035a-ee6d-4815-af00-d6f861dc2a2f",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C75",
+      "claim": "The TcPINK1 structure provides molecular insights into the structural regulation of hPINK1 and defines functional roles for its unique loop insertions in ubiquitin substrate recognition and catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall the TcPINK1 structure provides molecular insights into the structural regulation of hPINK1 and in particular defines functional roles for its unique loop insertions in ubiquitin substrate recognition and catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "22f3a23f-51aa-4e1e-a6c5-670a5a5781f6",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C76",
+      "claim": "The structure provides clarity on the impact of loss of function disease-associated mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure provides clarity on the impact of loss of function disease-associated mutations, which may stimulate future drug discovery efforts for both familial and idiopathic PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the mutation mapping and analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "d7f7a302-c759-4de8-b705-95d96459b029",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C77",
+      "claim": "The TcPINK1 structure may stimulate future drug discovery efforts for both familial and idiopathic PD.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure provides clarity on the impact of loss of function disease-associated mutations, which may stimulate future drug discovery efforts for both familial and idiopathic PD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "25c63d15-0200-4991-b2a1-42a7d1e87ae2",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C78",
+      "claim": "TcPINK1 was crystallized using 5 mg/ml of protein mixing with 200 mM MgCl2, 100 mM HEPES pH 7.0, 20% PEG 6000 and 200 mM MgCl2 or 100 mM HEPES pH 7.5, 25% PEG 3350 and 200 mM MgCl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Native and selenomethionine derivatised TcPINK1 was crystallised using 5 mg/ml of protein mixing with 200 mM MgCl2, 100 mM HEPES pH 7.0, 20% PEG 6000 and 200 mM MgCl2 or 100 mM HEPES pH 7.5, 25% PEG 3350 and 200 mM MgCl2, respectively, under vapor diffusion sitting drop method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "5b99d43f-683d-46fc-956d-d7c4c1f26df7",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C79",
+      "claim": "Selenomethionine-incorporated crystals diffracted to 3.4 \u00c5 and native crystals diffracted to 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Selenomethionine-incorporated and native crystals diffracted to 3.4 \u00c5 and 2.8 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "20561b0f-bec2-4cb0-89a8-6e5c617edbca",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C80",
+      "claim": "SAD phasing was performed on the anomalous data set using CRANK2 in the CCP4 program suite.",
+      "claim_type": "EXPLICIT",
+      "source": "SAD phasing was performed on the anomalous data set using CRANK2 in the CCP4 program suite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "4f0b6895-73a1-48b5-be48-4da1f8e5b8f7",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C81",
+      "claim": "94% of residues are in the most favored regions according to Ramachandran analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ramachandran values were calculated using MolProbity (Chen et al., 2010) with 94% of residues in the most favored regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality metric for the crystal structure, supported by citation to Chen et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "01e4df12-59bf-4136-8e94-d4a4c6f37fcb",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C82",
+      "claim": "The TcPINK1 kinase domain adopts an active conformation based on the positioning of the \u03b1C helix, activation segment conformation, and the 'in' position of the DFG motif.",
+      "claim_type": "IMPLICIT",
+      "source": "Although TcPINK1 was crystallised without ATP, the kinase domain appears to adopt an active, closed conformation, based on the positioning of the \u03b1C helix, activation segment conformation, and the 'in' position of the DFG motif (Hari et al., 2013; Huse and Kuriyan, 2002; Nolen et al., 2004) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural features and comparison with known active kinase conformations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "0bdb0eae-4e9d-437c-845a-654760a4e565",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C83",
+      "claim": "Ins3 is likely to contribute a critical role towards substrate recognition and binding.",
+      "claim_type": "IMPLICIT",
+      "source": "Although Ins3 in the TcPINK1 kinase domain is mostly disordered and could not be built as part of the structure; its predicted location places it proximal to the ubiquitin in the model of the complex and therefore we hypothesized that it is likely to contribute a critical role towards substrate recognition and binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "ec87981b-190a-429e-93ae-dfba661db7bb",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C84",
+      "claim": "Autophosphorylation of Ser205 may influence and/or contribute to ubiquitin recognition and binding mediated by Ins3.",
+      "claim_type": "IMPLICIT",
+      "source": "Inspection of the structure revealed that Glu205 (the phosphomimetic of Ser205) lies only 4 \u00c5 away from the tail (Asn287) of the disordered Ins3 (Figure 2B). We therefore hypothesized that autophosphorylation of Ser205 may influence and/or contribute to ubiquitin recognition and binding mediated by Ins3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on structural proximity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "61e2e8d4-3f56-4302-8e32-1020dcc69c21",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C85",
+      "claim": "Differences in basic residues between TcPINK1 and hPINK1 could explain the lack of recombinant hPINK1 activity.",
+      "claim_type": "IMPLICIT",
+      "source": "We hypothesized that these differences in basic residues between TcPINK1 and hPINK1 could explain the lack of recombinant hPINK1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that was tested but not supported by the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "7dde66cc-dbca-40c1-bc72-67cb657de14f",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C86",
+      "claim": "The interaction of Ins2 with the \u03b1C-helix represents a potential regulatory mechanism of TcPINK1 activation.",
+      "claim_type": "IMPLICIT",
+      "source": "Inspection of the TcPINK1 structure suggests another potential regulatory mechanism of activation through interaction of Ins2 with the \u03b1C-helix (1120 \u00c52 buried surface area) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "33235e37-e6e0-499a-8cf2-ce2d35b31c0b",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C87",
+      "claim": "The function of the proximal region of Ins2 (222-242) remains to be fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our analysis suggests a critical role for the Ins2 loop (243-253) as an anchor, to maintaining the kinase domain in an active state, although the function of the proximal region of Ins2 (222-242) remains to be fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement acknowledging a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "3965eb67-a509-4acf-adfe-0b8d0fcfb843",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "claim_id": "C88",
+      "claim": "The TcPINK1 structure will provide an important framework to direct future studies aimed at structural studies of the hPINK1 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings indicate that hPINK1 and TcPINK1 share similar mechanisms for substrate recognition and kinase activity, suggesting that the TcPINK1 structure will provide an important framework to direct future studies aimed at structural studies of the hPINK1 enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the structure for future research.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of TcPINK1 was solved at 2.78 \u00c5 resolution, revealing a canonical kinase fold with unique structural features including three insertions (Ins1, Ins2, Ins3) and a C-terminal extension (CTE). Ins2 forms a small domain with a \u03b2i-strand, \u03b1i-helix, and loop; Ins3 is disordered; and the CTE is \u03b1-helical and tightly packed against the C-lobe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C19-C26, C79-C81 collectively describe the crystal structure determination and structural features of TcPINK1. The crystallographic data (Table 1, Figure 1B,C) with good resolution (2.78 \u00c5) and quality metrics (94% residues in favored regions) support the structural observations. The unique insertions and CTE are clearly visualized and described with specific residue ranges and secondary structure elements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "cab79994-7d74-467e-87ed-516b26b2cbf8",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TcPINK1 adopts an active kinase conformation based on structural features (\u03b1C helix positioning, activation segment, DFG motif) and conserved hydrophobic networks (R-spine and C-spine). ATP-binding residues (Ala194, Lys196, Glu217) were identified by modeling, and mutations in these residues abolished kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30, C82 are supported by structural analysis (Figure 1B) compared to known active kinase conformations and validated by mutagenesis experiments (Figure 1D, Figure 1\u2014figure supplement 1B). The ATP-binding model is reasonable given the structural similarity to cAMP-dependent protein kinase, and the functional validation with mutants provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ins3, together with autophosphorylation at Ser205, forms a bowl-shaped ubiquitin binding site critical for substrate recognition. Deletion of Ins3 or mutation of Ser205 abolished ubiquitin and Parkin Ubl phosphorylation while preserving transphosphorylation activity. Mutations in the canonical substrate binding pocket also reduced ubiquitin phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C33-C41, C83-C84 are supported by structural modeling (Figure 2A,B) based on similarity to LIM kinase-cofilin complex and validated by comprehensive mutagenesis experiments (Figure 2C,D, Figure 2\u2014figure supplement 1A,B). The differential effects on ubiquitin/Parkin Ubl versus TcPINK1 transphosphorylation provide strong evidence for substrate specificity. However, Ins3 is disordered in the structure, so the model relies on inference from the LIM kinase complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "f2327873-8522-464b-8793-b2bbbab9103d",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The distal loop of Ins2 (residues 243-253) is critical for TcPINK1 activity, anchoring the kinase in an active state through interactions with the C-lobe and CTE. The proximal region of Ins2 (\u03b1i-helix) interacts with the \u03b1C-helix in a manner reminiscent of CDK-cyclin activation. Deletion of the Ins2 loop abolished activity, while deletion of the proximal region did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C48, C52-C58, C86 are supported by structural analysis (Figure 3C) showing specific interactions and validated by deletion mutagenesis (Figure 3D, Figure 3\u2014figure supplement 1B). The differential effects of deleting the proximal versus distal regions of Ins2 provide strong evidence for the critical role of the loop. The comparison to CDK-cyclin is structurally reasonable but remains somewhat speculative regarding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "22d0fe87-3d10-47b4-b806-73fa9975df2a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TcPINK1 does not require activation loop phosphorylation for activity. Instead, Asp381 in the activation loop forms ionic interactions with Arg336 (HRD motif) and Arg216 (\u03b1C-helix), stabilized by additional basic residues (Lys212, Arg240, Arg241) and Asp366. Mutations in these residues reduced activity. Differences in these basic residues between TcPINK1 and hPINK1 do not explain the lack of recombinant hPINK1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51, C85 are supported by structural analysis (Figure 3A), sequence alignment (Figure 3\u2014figure supplement 1A), and mutagenesis (Figure 3B). The absence of Ser377 phosphorylation in the structure and mass spectrometry data, combined with the structural observation of alternative stabilizing interactions, provides strong evidence. The negative result with the hPINK1 quadruple mutant (C51) appropriately refutes the hypothesis in C85.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "hPINK1 and TcPINK1 share similar mechanisms for substrate recognition and kinase activity. Mutations in ATP-binding residues and deletion of Ins3 in hPINK1 abolished Parkin and ubiquitin phosphorylation in cells, consistent with TcPINK1 results. Deletions of Ins1 or the proximal region of Ins2 did not affect activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63, C88 are supported by sequence alignment (Figure 4\u2014figure supplement 1) and cellular assays (Figure 4A,B). The conservation of functional effects between TcPINK1 in vitro and hPINK1 in cells provides strong evidence for shared mechanisms. The differential effects of different insertion deletions are consistent with the structural findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TcPINK1 structure explains how PD-linked mutations result in hPINK1 loss-of-function. Twenty conserved pathogenic mutations cluster in functionally distinct regions: ATP-binding pocket, catalytic/activation loop, Ins2 loop, Ins3, and the CTE-C-lobe hydrophobic interface. Mutations in these regions disrupt ATP binding, catalysis, substrate recognition, or structural integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C64-C73, C75-C76 are supported by mapping mutations onto the structure (Figure 5, Supplementary file 1) and integration with prior functional studies (citations to Deas et al., 2009; Woodroof et al., 2011; Okatsu et al., 2012; Iguchi et al., 2013). The structural rationalization of mutation effects is consistent with the functional data. The inability to purify CTE-C-lobe interface mutants (C73) provides additional support for the importance of this region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "8ac61a74-9efc-40fe-b47a-58cb6ca6861e",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "No evidence for a functional TcPINK1 dimer was found in purification procedures or the crystal structure, despite prior suggestions that the CTE may be important for dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by experimental observations during purification and structural analysis. The negative result appropriately addresses a prior hypothesis (Okatsu et al., 2013) and is consistent with the structural data showing the CTE packed against the C-lobe rather than forming a dimerization interface.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "8baacb11-3ca6-46f5-be70-b896b9f315d2",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background and motivation: hPINK1 mutations cause Parkinson's disease. hPINK1 phosphorylates ubiquitin and Parkin Ubl to activate Parkin E3 ligase activity and mitophagy. hPINK1 has three unique insertions and a CTE of unknown function. The mechanisms of hPINK1 activation and substrate recognition are poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C15, C31-C32 provide established background knowledge supported by multiple citations to prior work. These claims accurately represent the state of the field and motivate the current study. They are not novel findings but are appropriately cited and contextualized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "abc4cef7-ec2f-41a6-a6a6-bbf96145b6c7",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TcPINK1 is a suitable model system: it lacks Ins1, exhibits constitutive catalytic activity in vitro, and can rescue Drosophila PINK1 null flies in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by citations to prior work (Woodroof et al., 2011; Kazlauskaite et al., 2015). These claims establish the rationale for using TcPINK1 as a model system and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "f08614c5-db68-458a-8828-a81ec38e12b0",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "hPINK1 is autoinhibited under basal conditions, while insect PINK1 orthologues exhibit constitutive activity in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by citations to prior work (Woodroof et al., 2011; Kondapalli et al., 2012; Wauer et al., 2015). These claims provide important context for interpreting the structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "012d9201-a741-4bc1-8e04-b4d119490919",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "hPINK1 is unusual amongst kinases due to the presence of three loop insertions of unknown function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by the structural data (Figure 1A) and the DALI search showing these insertions are unique to PINK1 (C26). This is a key observation motivating the structural study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "64912311-dfdc-4d76-b6ef-1c0a89c68d4a",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The TcPINK1 structure may stimulate future drug discovery efforts for both familial and idiopathic PD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is speculative about future applications. While the structure provides a platform for drug discovery, no drug discovery efforts are presented or validated in this study. This is a reasonable speculation but not a supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "34a8c726-e81f-4a6c-bf7b-4f615cd9b9bf",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details: TcPINK1 was crystallized using specific conditions and SAD phasing was performed using CRANK2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C80 describe methodological details that are standard for crystallography and are appropriately documented in the Materials and methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    },
+    {
+      "id": "40650384-aa63-4773-b6fe-f7eeda687512",
+      "content_id": "9e7e320f-21ac-404f-88ec-c5d527527a7e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The function of the proximal region of Ins2 (222-242) remains to be fully elucidated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 acknowledges a knowledge gap based on the observation that deletion of this region does not affect activity (C56), despite its structural similarity to cyclin. This is an appropriate acknowledgment of uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:25:46.054255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fd3d7de9-bc8d-4622-9f34-f82e1df2b5bf",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "b3eaafa6-ce7a-49d8-b96f-3d4d80732b6b",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "b4ba7a57-ae6b-49e2-9016-3d0c51698342",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "a2b7f3ce-fb2b-4d0d-b4e3-5ac31f896d37",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "dd9f9835-0c67-4a07-83c0-439cc2e90435",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "8af4a15b-65b3-4564-95e4-a9d4a75dae5e",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "d64e5923-05fb-4274-951d-33e5be51ee3a",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "59d3bef1-7228-43a4-a682-694e46766c89",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "9a12ae66-4928-4de3-b08e-59463b33c715",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "5b99d43f-683d-46fc-956d-d7c4c1f26df7",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "20561b0f-bec2-4cb0-89a8-6e5c617edbca",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "4f0b6895-73a1-48b5-be48-4da1f8e5b8f7",
+      "result_id": "ffb7f8d7-2961-4fbb-ace3-69d1ec923878"
+    },
+    {
+      "claim_id": "2b1f113c-5a67-404d-8c8e-c65e092ff109",
+      "result_id": "cab79994-7d74-467e-87ed-516b26b2cbf8"
+    },
+    {
+      "claim_id": "7275f0b8-3cdd-464b-a3b1-dc856caa8af6",
+      "result_id": "cab79994-7d74-467e-87ed-516b26b2cbf8"
+    },
+    {
+      "claim_id": "79430e8a-4491-4563-8757-11908eff4d8b",
+      "result_id": "cab79994-7d74-467e-87ed-516b26b2cbf8"
+    },
+    {
+      "claim_id": "cc1b4489-82c7-4635-a39e-eb29e3bf253b",
+      "result_id": "cab79994-7d74-467e-87ed-516b26b2cbf8"
+    },
+    {
+      "claim_id": "01e4df12-59bf-4136-8e94-d4a4c6f37fcb",
+      "result_id": "cab79994-7d74-467e-87ed-516b26b2cbf8"
+    },
+    {
+      "claim_id": "b135614a-df93-4734-9a5f-17ad35459a4b",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "5be9603e-46bd-4129-88e0-ffd729b48ac3",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "29c4727e-c32b-44c4-81b3-8387c154c957",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "6e314c71-83c7-4770-a5e5-7de1fad65312",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "3615da6b-e63d-4e33-9551-0756b1dda338",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "90829dd1-0390-4d1a-93c4-a66644ee7dfc",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "c33ac0af-d474-4e4d-8270-86c6feff0674",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "feb14a4c-3864-4281-99af-fbd2dc3d7cb3",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "b8277f09-f50a-4677-a05b-a3ea33b7f5e1",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "fd5cb50d-7a75-4177-8646-4d48655feb75",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "0bdb0eae-4e9d-437c-845a-654760a4e565",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "ec87981b-190a-429e-93ae-dfba661db7bb",
+      "result_id": "a14e2e0f-9a6a-4827-ace9-365e63b5fb8a"
+    },
+    {
+      "claim_id": "13131001-49b8-4162-9108-e0b6ace31ea2",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "18a8023f-116c-4a4c-8531-ed8cb9cc4994",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "334af050-d26e-4cf9-beb8-34d4c990dc0f",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "0a5adb8f-86ce-4049-bd04-74dba9f4e42a",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "5d66626c-32ae-4a37-8022-fca9c08f80bd",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "d6c11902-1334-4f7d-964e-07f9d8bd2628",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "eb9dd9e3-6770-41f7-90dc-0d1bbcd58781",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "76ee46f3-651e-4fe7-b690-6443c204a6e5",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "78a25b83-3ab4-42b2-95e5-77757c4460e9",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "d6aa0342-7c85-4859-ba6c-35226c282fed",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "7dde66cc-dbca-40c1-bc72-67cb657de14f",
+      "result_id": "f2327873-8522-464b-8793-b2bbbab9103d"
+    },
+    {
+      "claim_id": "7bcf39ed-c931-4472-87a5-df9177583ca8",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "fc71b01b-3363-4ed6-999a-879cb3201a31",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "170a75e3-cb40-46b7-988b-b28f1994326b",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "18a8023f-116c-4a4c-8531-ed8cb9cc4994",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "334af050-d26e-4cf9-beb8-34d4c990dc0f",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "6ae9b672-0e9b-4536-9d3b-aa1197c1a4ec",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "e2f555b7-51b2-43e5-b00b-00e667632273",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "38976125-fb58-4276-bc4a-0625b74dc86c",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "61e2e8d4-3f56-4302-8e32-1020dcc69c21",
+      "result_id": "22d0fe87-3d10-47b4-b806-73fa9975df2a"
+    },
+    {
+      "claim_id": "e0932675-f938-441e-85cb-92458c87bb2c",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "9a8778d8-3027-4694-bf75-bf28dc8ecda3",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "d3917920-5423-4b3c-b609-187163d374f8",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "490a84af-52b0-41df-a983-8b994101ded7",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "3c1bc5a7-e81d-4f1c-9431-4ccbaace377f",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "3965eb67-a509-4acf-adfe-0b8d0fcfb843",
+      "result_id": "1cbd9526-1c0f-46d5-bd2e-ead3034c5a9d"
+    },
+    {
+      "claim_id": "780cbc9c-fc51-4a37-a8e3-ee63c033188c",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "b8896ba0-3ed7-4f1f-9451-51490561a1a0",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "ed350dbb-7670-446c-a5af-c2b251a6446c",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "dbbed74e-3ffd-416f-9ed3-ff45a71ac740",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "7c1704fe-4b47-4cc3-88fd-734f704bda17",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "0989fbb0-4d5c-4bfc-9d1c-a5e5ac8a75ee",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "90aefc76-82c6-45d1-80cf-62d0a58f8fbf",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "ce2bc874-ecaf-4917-bad6-7fd6a547936a",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "0b9ae8d9-9fa9-46e7-bc4d-f3e58abc8e25",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "fab26cba-2ce1-421c-8eda-2e2dffc06aa7",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "b89c9005-f12c-416c-ba6c-84b61bc8d1c6",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "3c7e035a-ee6d-4815-af00-d6f861dc2a2f",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "22f3a23f-51aa-4e1e-a6c5-670a5a5781f6",
+      "result_id": "6a38c4e5-ed9f-4fd5-a019-10af4fe11550"
+    },
+    {
+      "claim_id": "c53b7479-3301-468d-bfde-fd025ed6df80",
+      "result_id": "8ac61a74-9efc-40fe-b47a-58cb6ca6861e"
+    },
+    {
+      "claim_id": "79cb731f-7266-4bc9-9f6f-7e269ae67c3d",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "c77168db-7b68-42d7-893e-e0557f8dabbd",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "e9342003-60ac-4ada-9d81-f7a4277c8339",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "2ee115c7-92a1-4632-8dc8-9ebf2c23c59f",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "03485b4f-c18d-4a9e-be3f-1cce6cb9f208",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "81a0f195-9ac7-47dc-b5c1-62c5b1e79ccd",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "50153407-a207-494a-8add-708fb03d6eff",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "b4b92e4f-2806-45e8-b0df-b2993ab5240b",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "34056c9d-8410-4e9c-b892-4ee3b6e07a44",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "dffa7d4c-ac58-48a3-9d11-4b2f819c5cfc",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "53257fa4-0077-49ef-9815-8aa8c1d3f073",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "ff99ccb7-2885-4ac7-b25e-2f8bab0a46d0",
+      "result_id": "8baacb11-3ca6-46f5-be70-b896b9f315d2"
+    },
+    {
+      "claim_id": "a667f38f-b29f-4716-80e0-83b01648e163",
+      "result_id": "abc4cef7-ec2f-41a6-a6a6-bbf96145b6c7"
+    },
+    {
+      "claim_id": "c45b6a8b-7c41-4593-aeba-d9e4451a2a18",
+      "result_id": "abc4cef7-ec2f-41a6-a6a6-bbf96145b6c7"
+    },
+    {
+      "claim_id": "c784eef8-bff1-450b-a44f-b796b0da9f3a",
+      "result_id": "abc4cef7-ec2f-41a6-a6a6-bbf96145b6c7"
+    },
+    {
+      "claim_id": "164daf60-b74f-40af-9c77-85ed087e274e",
+      "result_id": "f08614c5-db68-458a-8828-a81ec38e12b0"
+    },
+    {
+      "claim_id": "1b3062ca-45f0-42bd-b425-1656c8c2b44b",
+      "result_id": "f08614c5-db68-458a-8828-a81ec38e12b0"
+    },
+    {
+      "claim_id": "82df2847-f61b-457e-a874-e5262f29fbe0",
+      "result_id": "012d9201-a741-4bc1-8e04-b4d119490919"
+    },
+    {
+      "claim_id": "d7f7a302-c759-4de8-b705-95d96459b029",
+      "result_id": "64912311-dfdc-4d76-b6ef-1c0a89c68d4a"
+    },
+    {
+      "claim_id": "25c63d15-0200-4991-b2a1-42a7d1e87ae2",
+      "result_id": "34a8c726-e81f-4a6c-bf7b-4f615cd9b9bf"
+    },
+    {
+      "claim_id": "20561b0f-bec2-4cb0-89a8-6e5c617edbca",
+      "result_id": "34a8c726-e81f-4a6c-bf7b-4f615cd9b9bf"
+    },
+    {
+      "claim_id": "33235e37-e6e0-499a-8cf2-ce2d35b31c0b",
+      "result_id": "40650384-aa63-4773-b6fe-f7eeda687512"
+    }
+  ],
+  "comparisons": []
+}

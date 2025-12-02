@@ -1,0 +1,541 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "iPSC-derived cardiomyocytes (CMs) are a valid model system for studying cardiovascular gene regulation. The CMs were 86-94% pure based on cardiac Troponin T expression, exhibited spontaneous beating, and showed transcriptional and epigenetic profiles that clustered with primary cardiac tissues (left ventricle and fetal heart) rather than with non-cardiac tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 provide converging evidence from multiple orthogonal assays (flow cytometry, functional beating assays, RNA-seq clustering, ChIP-seq peak overlap, and differential gene expression) that collectively validate the CM model. The data show both purity metrics and functional/molecular similarity to primary cardiac cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "High-resolution promoter capture Hi-C (PCHi-C) maps were generated in iPSCs and CMs. Using the MboI restriction enzyme (generating 422 bp fragments), libraries were sequenced to ~413M reads per replicate, yielding 350,062 promoter interactions in iPSCs and 401,098 in CMs after filtering for interactions significant in at least 2/3 replicates and separated by \u226510 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C47 describe the experimental methodology and quantitative outcomes in detail. The use of MboI for high resolution, the sequencing depth, filtering criteria, and final interaction counts are all explicitly stated with specific numbers. The methodology is standard for PCHi-C studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Promoter interactions show both cell-type specificity and shared features. Approximately 55% of interactions were shared between iPSCs and CMs, ~20% were promoter-promoter interactions, and most interactions were promoter-distal with a median distance of ~170 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide quantitative characterization of the interaction landscape. The percentages and distances are explicitly stated with reference to figures. These basic descriptive statistics are well-supported by the data presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PCHi-C interactions show expected relationships with TAD structure. The majority (73-77%) of interactions occurred within TADs. Inter-TAD interactions had distinct properties: more promoter-promoter contacts, greater enrichment for CTCF sites, lower CHiCAGO scores, longer genomic distances, and preferential location near TAD boundaries, with higher expression levels particularly in CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe the relationship between PCHi-C interactions and TAD structure with specific percentages and statistical comparisons. The observations are consistent with prior knowledge (C59 cites Dixon et al. 2012) and the data are presented with appropriate statistical tests in the referenced figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The GATA4 locus exemplifies cell-type-specific promoter interactions. PCHi-C identified increased interaction frequencies between the GATA4 promoter and H3K27ac-marked regions in CMs, including four in vivo validated heart enhancers, coincident with GATA4 upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 present a specific example with validation from external data (Vista enhancer browser). The interaction data are shown in figures and the enhancers have independent functional validation, providing strong support for this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Promoter-distal interacting sequences are enriched for tissue-specific transcription factor motifs. CTCF was the most enriched motif in both cell types. iPSC-specific interactions were enriched for pluripotency factors (OCT4-SOX2-TCF-NANOG, SOX2), while CM-specific interactions were enriched for cardiac factors (TBX20, ESRRB, MEIS1). Both cell types showed enrichment for AP-1 motifs in cell-type-specific interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 present motif enrichment analysis with specific transcription factors identified. The biological relevance of these factors is supported by citations (C65-C66). Claim C68 is speculative about AP-1 as a genome organizing complex, but the enrichment data itself (C67) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Promoter interactions are enriched for histone modifications that correlate with gene expression. Promoter-distal interacting fragments showed enrichment for H3K4me1, H3K27ac, and H3K27me3. Enrichment for active marks (H3K27ac, H3K4me1) increased with expression level, while H3K27me3 enrichment decreased with expression in CMs but not iPSCs. Correlation analysis showed positive correlations for active marks (\u03c1=0.22-0.24) and negative correlation for H3K27me3 in CMs (\u03c1=-0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 present histone modification enrichment analysis with specific correlation coefficients and p-values. The data are presented with appropriate statistical tests and the trends are consistent with known biology of active and repressive chromatin marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cell-type-specific interactions show preferential but not exclusive enrichment for matched chromatin features. Cell-type-specific interactions preferentially involved H3K27ac peaks from the matched cell type and were depleted for non-matched marks. However, the strongest enrichment was for cell-type-specific interactions to overlap chromatin features present in both cell types, and shared interactions were most enriched for shared features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe chromatin feature enrichment patterns with reference to Figure 3E. The finding that cell-type-specific interactions preferentially contact shared chromatin features is somewhat counterintuitive but clearly stated and supported by the data presentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The NPPA locus exemplifies cell-type-specific interactions with validated enhancers. NPPA, specifically expressed in heart atrium and upregulated in CMs, makes cell-type-specific interactions to a distal region marked with active chromatin only in CMs, which corresponds to an in vivo validated heart enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present a specific example with external validation. The interaction data are shown in Figure 3F and the enhancer validation is cited (Visel et al. 2007), providing strong support for this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PCHi-C data can accurately identify A/B compartments. A/B compartments identified from PCHi-C data showed 97% correspondence with whole-genome Hi-C data, demonstrating that PCHi-C contains sufficient information to identify broadly active and inactive genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 compare compartment calling between whole-genome and PCHi-C data with a specific concordance metric (97%). The high correspondence validates the use of PCHi-C for compartment analysis, though the interpretation (C87) is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Dynamic A/B compartment switching during differentiation involves cardiac-specific genes. The CAMK2D gene switched from inactive (B) to active (A) compartment during iPSC-CM differentiation, coincident with upregulation. Globally, genes in A compartments showed higher expression than B compartment genes, and compartment switching correlated with expression changes. GO analysis of 1008 genes switching B\u2192A revealed cardiac terms, while A\u2192B genes related to non-cardiac processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 present compartment analysis with specific examples, global trends, and GO enrichment. The data show clear relationships between compartment status and gene expression. Claim C94 is somewhat speculative about mechanism but the data supporting compartmentalization are solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C8",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CM PCHi-C interactions link CVD-associated SNPs to target genes. Starting with 524 lead SNPs for cardiac arrhythmias, heart failure, and myocardial infarction, expanded to 10,475 LD SNPs (r\u00b2>0.9), 1999 (19%) were located in promoter-distal fragments interacting with 347 target genes. The majority (89%) of SNP-target pairs were within the same TAD with median distance 185 kb. Importantly, 90.4% of interactions skipped at least one gene and 42% of SNPs contacted \u22652 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 describe the GWAS analysis pipeline with specific numbers at each step. The finding that most interactions skip the nearest gene is a key result. The methodology for LD expansion and interaction mapping is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Multiple lines of evidence validate that CM PCHi-C identifies disease-relevant target genes. Target genes showed GO enrichment for cardiac functions (membrane repolarization, cardiac conduction). A significant proportion (22.4%, p=1\u00d710\u207b\u2075) caused cardiovascular phenotypes in mouse knockouts. LD SNPs in interactions were enriched for LV eQTLs (20.5% vs 12.2%, p<0.00001). Genome-wide, LV eQTLs in CM interactions were significantly more likely to loop to their associated gene (p<0.00001) compared to iPSC interactions (p=0.035).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 provide multiple orthogonal validation approaches (GO analysis, mouse phenotypes, eQTL enrichment) with specific statistics and p-values. The convergence of evidence from independent datasets strongly supports the biological relevance of the identified target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Gene expression level alone is insufficient to identify CVD-relevant target genes. While target genes were moderately overexpressed in CMs (median log2FC=1.08, p=0.12 NS), 27% of target genes with cardiovascular knockout phenotypes were actually overexpressed in iPSCs rather than CMs, indicating that expression level is not a reliable predictor of disease relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 present expression analysis showing that target genes are not uniformly highly expressed in CMs. The finding that 27% of functionally validated genes are higher in iPSCs (C110) directly supports the conclusion that expression alone is insufficient (C111-C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "PCHi-C identifies both known and novel CVD candidate genes. TBX5, a known cardiac arrhythmia gene, and LITAF, which had no obvious cardiac role until recently identified as a regulator of cardiac excitation in zebrafish, both formed long-range interactions to arrhythmia GWAS SNPs, exemplifying how the approach identifies diverse candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 present two contrasting examples with appropriate citations. TBX5 serves as a positive control (C115 cites prior work), while LITAF represents a novel candidate recently validated (C117 cites Moshal et al. 2017). The examples effectively illustrate the utility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Disease-specific GO enrichment varies by CVD subtype. Cardiac arrhythmia SNPs drove the majority of cardiac GO term enrichment (cardiac conduction system terms), while myocardial infarction and heart failure analyses showed slight enrichment for regulation of growth and morphogenesis, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe disease-specific GO analysis with reference to Figure 7A-C. The finding that arrhythmia SNPs show the strongest cardiac enrichment is expected given the CM model, while the weaker enrichment for MI and HF is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The SORT1 locus exemplifies how CM interactions can validate target genes for non-cardiac disease mechanisms. The myocardial infarction-associated 1p13 locus, previously shown to affect SORT1 expression and cholesterol metabolism in liver, shows multiple promoter interactions with SORT1 in CMs, directly implicating SORT1 and supporting prior experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 present the SORT1 example with appropriate citations to prior work (Musunuru et al. 2010). The finding that CM interactions recapitulate a validated enhancer-promoter connection from a different tissue supports the utility of the CM map even for non-cardiac mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The ACTA2 locus exemplifies long-range interactions to disease-relevant genes. ACTA2, encoding smooth muscle actin and implicated in coronary artery disease, is located 220 kb from the heart failure GWAS locus but shows chromatin interactions providing evidence for its role as a putative causal gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 present the ACTA2 example with appropriate citations for gene function (C125-C126). The interaction data support ACTA2 as a candidate despite its distance from the GWAS locus, though the interpretation (C127) is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The CM interaction map is useful for both cardiac-specific and non-cardiac CVD mechanisms. The map is useful for diseases directly related to cardiomyocytes (cardiac arrhythmias) and also aids interpretation of target genes that may act in non-cardiac tissues (myocardial infarction, heart failure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 summarize the utility of the CM map based on the disease-specific analyses. The conclusion is supported by the examples presented (SORT1 for MI, ACTA2 for HF) showing that the map provides value even for diseases with non-cardiac mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C133",
+      "C137"
+    ],
+    "result": "PCHi-C maps are validated by enrichment for tissue-specific regulatory features. Promoters preferentially contact distal sequences enriched for tissue-specific transcription factor motifs and chromatin marks that correlate with dynamic gene expression changes, providing important validation of the functional relevance of the interaction maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C133, and C137 describe validation approaches showing that interactions are enriched for expected regulatory features. The convergence of motif enrichment and histone mark correlation provides strong validation of the maps' biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Long-range chromatin interactions are critical for interpreting GWAS loci. More than 90% of SNP-target gene interactions did not involve the nearest gene, and 40% of SNPs interacted with at least two genes, demonstrating the importance of considering long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 present key quantitative findings about the non-linearity of SNP-gene relationships. These percentages are explicitly stated and represent a major conclusion about the necessity of chromatin interaction data for GWAS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "High resolution of the interaction maps is attributed to the use of MboI. The 4 bp cutter MboI generates 422 bp fragments, and this increased specificity likely leads to better resolution of enhancer sequences and increased power to detect transcription factor binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 states a fact about fragment size, but C139 is speculative ('likely leads to') about the mechanism for improved motif detection. While plausible, this explanation is not directly tested and represents an inference rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The relationship between gene expression and histone mark enrichment may be explained by genomic compartmentalization. Highly expressed genes are more likely to contact active chromatin regions, and local increases in active/repressive chromatin may drive expression-dependent associations between promoters and cis-regulatory elements, potentially through phase separation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C140 summarizes prior work, C141 presents an interpretation of the data, and C142 is speculative about mechanism (phase separation model). While the correlation data are solid, the mechanistic explanation is not directly tested and represents a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Despite limitations of iPSC-derived CMs, they provide a valid model for CVD genetics. While iPSC-CMs are relatively immature, the difficulty of obtaining pure primary cardiomyocytes necessitates their use. The high purity and molecular similarity to primary cells enabled confident integration with GWAS data, assigning ~20% of LD SNPs to 347 target genes, with strongest relevance for cardiac arrhythmias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 acknowledge limitations (C143) while justifying the model choice (C144) and demonstrating its validity (C145-C147). The discussion appropriately balances limitations with demonstrated utility, and the quantitative results support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "CM interactions can identify target genes for diseases involving non-cardiac cell types, potentially reflecting tissue-invariant genome architecture. Interactions were identified for myocardial infarction and heart failure loci (e.g., SORT1), which may represent stable genome organization across tissues rather than CM-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C148 presents data, but C150 is speculative about 'tissue-invariant architecture.' While C151 cites prior work about genome stability, the interpretation that these specific interactions represent invariant architecture rather than CM-specific features is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "PCHi-C maps have important technical limitations. There are likely many false negatives due to under-sampling, hybridization efficiency, and distance-dependent effects on ligation frequency. CHiCAGO may slightly underestimate intra-TAD interactions, though the strong correspondence between TADs and PCHi-C interactions suggests this effect is marginal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 honestly discuss technical limitations of the approach. C157 provides data (strong TAD correspondence) that partially mitigates concerns about C156. The discussion appropriately acknowledges limitations while providing context about their likely impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "Interactions involving inactive genes may represent either silencing mechanisms or pre-formed loops. Long-range interactions may contribute to gene silencing (supported by H3K27me3 enrichment), or silent genes may contact inactive regulatory elements representing 'pre-formed' loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C159 present alternative interpretations for interactions with silent genes. While C158 has some data support (H3K27me3 enrichment), both explanations are speculative and not directly tested. This represents an important consideration but not a resolved result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Despite limitations, the identified interactions are high confidence. The datasets contain ~350,000 and ~400,000 interactions in iPSCs and CMs respectively. Identified interactions should be considered high confidence as they were independently identified in \u22652 biological replicates and show strong enrichment for known genomic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 summarize the quality of the datasets. The requirement for replication in 2/3 replicates and the demonstrated enrichments for expected features (shown throughout the paper) support the high confidence assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The promoter interaction maps are provided as a resource for the research community. The maps represent important resources for investigating gene regulatory mechanisms in CVD, with candidate variants and target genes serving as entry points for experimental testing. Data are hosted at the WashU EpiGenome Browser and provided in Supplementary Materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 describe data availability and utility. The provision of data through public browsers and supplementary files is clearly stated. The assessment of utility (C162-C163) is supported by the validation analyses presented throughout the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C130",
+      "C131"
+    ],
+    "result": "The study addresses a major challenge in translating GWAS findings to disease biology. Over 500 CVD-associated loci have been identified, mostly in gene-distal non-coding regions with unknown target genes. Disease variants likely disrupt regulatory elements located kilobases from target genes, and incomplete understanding of long-range regulation is a major roadblock in GWAS interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C13, C24-C27, C130-C131 establish the biological context and problem being addressed. These are well-established facts in the field, appropriately cited, and accurately describe the motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work established Hi-C and PCHi-C as approaches for mapping chromatin interactions, with cell-type specificity of interactions. Hi-C enables genome-wide mapping of chromatin contacts but most datasets have limited resolution (>40 kb). PCHi-C greatly increases power to detect promoter interactions and has revealed cell-type-specific architecture. Previous studies in blood cells and with HiChIP identified thousands of target genes for immune diseases, with cell-type-specific SNP-gene interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 summarize prior work with appropriate citations. These establish the methodological foundation and precedent for the current study. The claims accurately represent the cited literature and establish the rationale for applying PCHi-C to cardiovascular cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135"
+    ],
+    "result": "The study generated high-resolution promoter interaction maps in iPSCs and CMs to link CVD SNPs to target genes. The maps identified 1,999 CVD-associated SNPs linked to putative target genes, including both validated and potentially novel genes important for CVD biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C134, C135 summarize the overall approach and main findings. These are well-supported by the detailed results presented throughout the paper and represent accurate summaries of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "Gene regulation by distant regulatory elements involves chromatin looping mechanisms that bridge linearly separated DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 states an established principle of gene regulation with appropriate citation (Spitz and Furlong, 2012). This provides the conceptual framework for interpreting the interaction data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C152"
+    ],
+    "result": "Any identified interaction between a promoter and disease-associated region provides important evidence for gene prioritization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 presents a recommendation for using the data. This is a reasonable inference based on the validation analyses showing enrichment for functional features (eQTLs, mouse phenotypes, GO terms) among interacting genes.",
+    "result_type": "MINOR"
+  }
+]

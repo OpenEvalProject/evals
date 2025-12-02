@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C82"
+    ],
+    "result": "Extracellular acidification strongly and reversibly inhibits BK channel activation, shifting the conductance-voltage relationship by more than +100 mV at pH 4. This inhibition involves both reduced single channel conductance (50% at -120 mV, 20% at +60 mV) and a large positive shift in voltage-dependent gating. The gating shift is the primary contributor to reduced BK activation over physiologically relevant voltages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C27-C40, and C82 are well-supported by comprehensive electrophysiological data shown in Figure 1, including macroscopic current recordings, G-V relationships, single channel conductance measurements, and kinetic analysis. The quantitative measurements are consistent across multiple experiments with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C79"
+    ],
+    "result": "The primary mechanism of BK inhibition by extracellular H+ is inhibition of voltage-sensor domain (VSD) activation. Gating current measurements show that the half-activation voltage of the VSD shifts from 190 mV to 309 mV when pH changes from 7 to 4, and the effective gating charge is moderately reduced from 0.46e to 0.39e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C54, and C79 are strongly supported by direct gating current measurements shown in Figure 3, which provide the most direct evidence for VSD inhibition. The Boltzmann fits of Q-V relationships are quantitative and reproducible across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C80"
+    ],
+    "result": "Extracellular H+ induces a moderate change in the closed-open (C-O) equilibrium of BK channels, reducing the equilibrium constant L to about 1/3 of control values. However, Horrigan-Aldrich model simulations show this change accounts for only ~20 mV of the observed gating shift, indicating it cannot fully explain the inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C80 are supported by limiting nPO measurements at negative voltages (Figure 2A-B) combined with H-A model simulations (Figure 2C-D). The modeling appropriately demonstrates that C-O equilibrium changes alone are insufficient to explain the full gating shift, supporting the conclusion that VSD inhibition is the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C91",
+      "C122"
+    ],
+    "result": "Three acidic residues (D133, D147, D153) on the extracellular side of the BK VSD are involved in H+ inhibition, with D153 being the most critical. The D153A mutation almost completely abolishes the pH-dependent gating shift, reducing the free energy change from 2.8 kcal/mol (WT) to only 0.3 kcal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C68, C91, and C122 are strongly supported by systematic mutagenesis data in Figure 5. The D153A mutation shows the largest effect, with G-V shifts of <10 mV compared to >100 mV for WT channels. The free energy calculations provide quantitative support for the critical role of D153.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "D133 and D147 also contribute to BK inhibition by extracellular acidification, though less strongly than D153. D133A and D147A mutations each reduce the pH-dependent free energy change by >1 kcal/mol. The double mutant D133A/D147A shows a coupling energy of 1.2 kcal/mol, suggesting these residues do not act independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by mutagenesis data in Figure 5C-H and thermodynamic cycle analysis. The coupling energy calculation using double-cycle mutation analysis is appropriate and indicates functional interaction between D133 and D147.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Alanine substitution of the three key acidic residues (D133, D147, D153) induces positive gating shifts at pH 7, and the free energy changes from mutation (\u0394G0MUT) and pH changes (\u0394G0pH) are inversely related, indicating a common mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by the correlation analysis in Figure 5J showing an inverse relationship between \u0394G0MUT and \u0394G0pH. This provides strong evidence that protonation of these residues and their neutralization by mutation affect gating through the same mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C118"
+    ],
+    "result": "The key acidic residues D133, D147, and D153 are highly conserved among members of the voltage-dependent cation channel superfamily, with all four VSD acidic residues conserved between BK and Kv channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C58, C59, and C118 are supported by the multiple sequence alignment shown in Figure 4B, which clearly demonstrates conservation of these residues across BK, Kv, Nav, and Cav channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Structural analysis using homology models based on Aplysia BK structures reveals that D153 is located at the bottom of a crevice with minimal displacement between conformations, while D133 remains close to R207 in both structures, and D147 undergoes larger horizontal displacement but remains surface-exposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 and C106-C115 are based on homology models rather than direct experimental structures of mouse BK channels. While the models are based on reasonable templates (Aplysia BK cryo-EM structures), homology modeling has inherent uncertainties, especially for side chain positions and interactions. The structural interpretations should be considered hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C109",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that D153 and D133 stabilize the VSD in transitional conformations by interacting with S4 basic residues, and that extracellular acidification inhibits VSD activation by weakening these interactions. D147 may participate through altering the local electric field rather than direct interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C104, C109, C116, and C117 are speculative mechanistic proposals based on structural models and functional data. While plausible and consistent with the data, these specific molecular mechanisms have not been directly tested. Additional experiments such as electrostatic calculations, molecular dynamics simulations, or direct measurement of residue interactions would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C85",
+      "C89",
+      "C121"
+    ],
+    "result": "The mechanism of BK inhibition by extracellular acidification might be applicable to other members of the voltage-dependent cation channel superfamily, including Kv channels, based on conservation of key acidic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C85, C89, and C121 are speculative extrapolations based on sequence conservation. While C90 cites evidence that Kv1.5 shows similar pH-dependent shifts, the generalization to the entire superfamily requires direct experimental testing in other channel types. The speculation is reasonable but not yet demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C123"
+    ],
+    "result": "The gating shift induced by extracellular H+ is independent of intracellular Ca2+ concentration. The IC50 of the pH-dependent gating shift is approximately pH 3.8, and the shallow slope of the dose-response curve suggests multiple sites with different pKa values may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C123 are supported by experimental data. C41 is supported by Figure 3C showing comparable shifts at different Ca2+ concentrations. C42 is supported by the dose-response curve in Figure 1E. C123 is a reasonable inference from the shallow Hill slope, though the claim about multiple sites remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "There are eight acidic residues on the extracellular side of each BK \u03b1-subunit: four in the VSD (D133, E139, D147, D153) and four in the PGD (E257, E264, E276, D292). Only E276 and D292 in the pore-loop are conserved between BK and Kv channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C60 are supported by the structural model in Figure 4A and sequence alignment in Figure 4B. The identification of extracellular acidic residues is straightforward from structure and sequence analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The D292N mutation in human BK channels causes only a moderate positive shift in G-V, making it unlikely that protonation of D292 is the main cause of the large gating shift induced by extracellular acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by citation to prior work (Haug et al., 2004a) and represent a reasonable inference that excludes D292 as the primary pH sensor. This is consistent with the finding that the key residues are in the VSD rather than the pore.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "There is direct pore inhibition by extracellular protons through reduced single channel conductance, but this effect is of minor impact compared to the large gating shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the single channel conductance data in Figure 1C showing voltage-dependent reduction in conductance. The conclusion that this is a minor contributor is supported by the quantitative comparison showing that conductance changes cannot account for the full current reduction at physiological voltages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "D153 was previously identified as a voltage-sensing residue, with D153C reducing the gating charge by 40%. In the current study, the gating charge is reduced by only 15% at pH 4, suggesting D153 remains partially charged at pH 4. The gating shift from pH change is less than that from D153A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by citation to prior work (Ma et al., 2006) and gating current measurements in Figure 3B. The inference that D153 remains partially charged at pH 4 is reasonable given the modest reduction in gating charge. The comparison with D153A mutation (Figure 5B) supports C96.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C110",
+      "C111",
+      "C119",
+      "C120"
+    ],
+    "result": "Prior studies show that D153 and R207 are required for Cu2+ coordination in resting BK VSD, D133 is also involved in Cu2+ coordination, and similar acidic residues in Kv channels interact with La3+ and S4 basic residues during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C105, C110, C111, C119, and C120 accurately represent findings from cited prior studies. These provide important context for interpreting the current results but are not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The pKa of Asp and Glu can vary substantially depending on local environment. The three identified acidic residues may have different pKa values, and another residue with higher pKa (possibly H254) might be involved in pH regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 include both established knowledge (C124, supported by citations) and speculation (C125-C127). The speculation about multiple pKa values is reasonable given the shallow dose-response curve, but the specific suggestion of H254 as an additional sensor is purely hypothetical and untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C139"
+    ],
+    "result": "BK channels are expressed in lysosomes with their extracellular side facing the acidified lumen (pH 4.2-4.7), and in kidney where urinary pH can vary from 4.5-8.0. The basal activity of lysosomal BK channels is expected to be low due to luminal acidification, though lysosomal pH is heterogeneous. These findings require consideration of pH regulation in understanding lysosomal BK function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C24, C129-C135, and C139 are primarily based on citations to prior literature establishing BK localization and pH ranges in these compartments. The inference that lysosomal BK activity would be low (C133) and regulated by pH (C135, C139) is well-supported by the current experimental findings showing strong pH sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C44",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "Prior studies show that Kv channels are sensitive to pH 5-7, primarily through effects on the pore region causing inactivation. The current study shows that strong acidification below pH 5 additionally inhibits BK VSD activation, and similar effects have been observed in Kv1.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C44, C86, C87, C88, and C90 accurately represent prior literature on Kv channel pH sensitivity and appropriately contextualize the current findings. The distinction between moderate pH effects on the pore versus strong acidification effects on the VSD is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "BK channels are also sensitive to intracellular H+, which can enhance activity in the absence of Ca2+ but inhibit during Ca2+ elevations. BK channels in chromaffin cells show extracellular H+ sensitivity with different IC50 and kinetics than observed here, possibly reflecting intracellular acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 are based on citations to prior studies. The comparison with chromaffin cell data (C140-C143) appropriately notes differences in IC50 and kinetics, and the speculation that chromaffin cell effects may involve intracellular acidification (C143) is reasonable given the kinetic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C128"
+    ],
+    "result": "BK channels are widely expressed, regulated by Ca2+ and voltage through three linked modules (PGD, VSD, CTD), show functional diversity across cell types despite single gene encoding, and can be regulated by various mechanisms including alternative splicing, accessory subunits, phosphorylation, and intracellular ligands. Little is known about extracellular regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C18, and C128 represent established background knowledge about BK channels, appropriately cited to prior literature. These provide essential context for the study but are not new findings.",
+    "result_type": "MINOR"
+  }
+]

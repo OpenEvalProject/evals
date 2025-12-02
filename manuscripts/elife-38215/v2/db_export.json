@@ -1,0 +1,2134 @@
+{
+  "submission": {
+    "id": "e4c5824b-5cd3-48e5-985b-8c960eece9c9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:15:13.677166Z",
+    "updated_at": "2025-12-02T02:15:13.677166Z"
+  },
+  "content": [
+    {
+      "id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "submission_id": "e4c5824b-5cd3-48e5-985b-8c960eece9c9",
+      "content_type": "manuscript",
+      "content_text": "# Adaptation after vastus lateralis denervation in rats demonstrates neural regulation of joint stresses and strains\n\n## Authors\n\n- Cristiano Alessandro<sup>1</sup> ([ORCID: 0000-0003-0655-4189](https://orcid.org/0000-0003-0655-4189)) \u2020\n- Benjamin A Rellinger<sup>2</sup>\n- Filipe Oliveira Barroso<sup>1</sup> ([ORCID: 0000-0003-0228-6447](https://orcid.org/0000-0003-0228-6447))\n- Matthew C Tresch<sup>1</sup> ([ORCID: 0000-0001-9994-3989](https://orcid.org/0000-0001-9994-3989)) \u2020\n\n### Affiliations\n\n1. Department of Physiology Northwestern University Chicago United States\n2. Department of Biomedical Engineering Northwestern University Evanston United States\n3. Department of Physical Medicine and Rehabilitation Northwestern University Chicago United States\n4. Shirley Ryan AbilityLab Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn order to produce movements, muscles must act through joints. The translation from muscle force to limb movement is mediated by internal joint structures that permit movement in some directions but constrain it in others. Although muscle forces acting against constrained directions will not affect limb movements, such forces can cause excess stresses and strains in joint structures, leading to pain or injury. In this study, we hypothesized that the central nervous system (CNS) chooses muscle activations to avoid excessive joint stresses and strains. We evaluated this hypothesis by examining adaptation strategies after selective paralysis of a muscle acting at the rat\u2019s knee. We show that the CNS compromises between restoration of task performance and regulation of joint stresses and strains. These results have significant implications to our understanding of the neural control of movements, suggesting that common theories emphasizing task performance are insufficient to explain muscle activations during behaviors.\n\n## Introduction\n\nThe question of how the central nervous system (CNS) determines motor commands is usually answered in terms of task performance (Todorov and Jordan, 2002; Guigon et al., 2007; Scott, 2004): the CNS activates muscles according to how they contribute to task goals such as grasping an object or escaping a predator. Additional criteria based on energetics (Todorov and Jordan, 2002; Izawa et al., 2008; Kurtzer et al., 2006), dynamics (Uno et al., 1989), or kinematics (Flash and Hogan, 1985) can further constrain muscle activations, and the specific criteria used by the CNS to specify muscle activations underlying behavior has been the topic of considerable research (Scott, 2004; Todorov, 2004; Alessandro, 2016; Kistemaker et al., 2014; Prilutsky, 2000).\n\nThis previous work, however, has generally ignored another critical aspect of muscle actions: how muscles act on internal joint structures such as ligaments or articular cartilage between bones (Herzog et al., 2003). Although muscle actions on internal joint structures have been considered in clinical biomechanics or sports medicine in the context of injuries (Farrokhi et al., 2013; Pal et al., 2012; Felson, 2013; Konrath et al., 2017), their more general role in the context of the neural control of movement and how they are balanced with task goals remains poorly understood. We examine these issues in this study, evaluating the hypothesis that the nervous system chooses muscle activations to achieve task performance while minimizing internal joint stresses and strains.\n\nEvaluating whether the CNS regulates stresses and strains within internal joint structures is challenging, primarily because of the complexity of joint mechanics. Since muscles can only affect task performance by acting through joint structures (Herzog et al., 2003), any manipulation affecting joint structures will usually also affect task performance. For example, damage to a ligament (Gutierrez et al., 2009; Needle et al., 2014; O'Connor et al., 1993) will alter both the distribution of stresses and strains within the joint (Chen et al., 2017; Gardinier et al., 2013) as well as how muscle forces are transmitted across the joint (Boeth et al., 2013). Similarly, although removal of sensory feedback from joint structures might compromise neural control of joint stresses and strains (O'Connor et al., 1993; O'Connor et al., 1992; Salo et al., 2002; Solomonow, 2006; Solomonow and Krogsgaard, 2001; Johansson et al., 1991), this sensory feedback can also provide information about task performance (Ferrell et al., 1985; Sj\u00f6lander et al., 2002). These challenges have made it difficult to reach clear conclusions as to whether the CNS controls internal joint stresses and strains.\n\nIn the experiments reported here, we overcome these challenges by taking advantage of the unique properties of the rat knee joint (Figure 1a). Activation of the quadriceps muscles vastus lateralis (VL) and vastus medialis (VM) in the rat produces very similar forces at the distal tibia and so will produce similar joint torques (Sandercock et al., 2018). These muscles therefore have redundant contributions to task performance. On the other hand, VL and VM produce opposing mediolateral forces on the patella (Sandercock et al., 2018; Lin et al., 2004; Wilson and Sheehan, 2010). In the rat, these mediolateral patellar forces are not transmitted to the tibia but are balanced by contact forces between the patella and the femur within the trochlear groove (Sandercock et al., 2018). To avoid overloading patellofemoral contact forces and prevent joint pain or injury, the CNS should therefore balance activation of VM and VL to minimize net mediolateral forces on the patella while producing the knee torque necessary to achieve task goals. Since VM and VL in the rat have redundant contributions to task performance but opposing contributions to joint stresses, we can use the rat knee joint to design tractable experiments to evaluate whether the CNS regulates joint stresses and strains.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig1-v2.jpg)\n\n**Figure 1.:** The left schematic in (a) illustrates the anatomical organization of the quadriceps muscles; VI is indicated in gray because it is located underneath RF. The right schematics depict the force directions produced by each of these muscles on the patella (top), the corresponding joint torques (middle), and the mediolateral patellar forces produced by VM and VL (bottom). Note that RF produces torques at both the hip and knee, and produces negligible mediolateral force on the patella. VM and VL have redundant contributions to knee torque (task variables), and opposite contributions to mediolateral patellar forces (internal joint variables). Panel (b) illustrates alternate adaptation strategies for compensating to paralysis of VL. The left column shows the consequences of an adaptation strategy prioritizing regulation of task performance variables: increasing VM activation restores joint torques and therefore joint kinematics, but would create an unbalanced mediolateral force on the patella. The middle column shows the consequences of an adaptation strategy prioritizing regulation of internal joint state variables: increasing RF activation and reducing VM activation eliminates mediolateral forces on the patella, but would create aberrant joint torques at the hip. The right column shows the consequences of an adaptation strategy that considers both task performance and internal joint state, preferentially increasing RF to minimize mediolateral patellar forces while maintaining VM activation to limit deviations in joint torques.\n\nWe examined neural adaptation strategies following paralysis of VL (Figure 1b). If the CNS prioritizes task performance, the easiest adaptation strategy would be to increase activation of VM. Because VM and VL have redundant contributions to task performance, this strategy would restore joint kinematics without requiring changes in other muscle activations. This straightforward restoration of task performance, however, would come at the cost of unbalanced mediolateral patellar forces. On the other hand, if the CNS prioritizes joint integrity, it should decrease activation of VM and increase activation of rectus femoris (RF) since RF produces minimal mediolateral force on the patella. This strategy to minimize joint stresses, however, would come at the cost of a more complex, potentially incomplete restoration of task performance: increased activation of RF will restore the knee torque lost by VL paralysis but will also introduce an additional hip flexion torque. This strategy will therefore either require compensatory activity in hip extensor muscles or introduce residual deviations in joint kinematics. Finally, if the CNS considers both task performance and internal joint stresses, it might preferentially increase RF activation while maintaining activation of VM. This strategy would minimize mediolateral forces on the patella while also limiting deviations of joint kinematics, reflecting a compromise between control of task performance and internal joint state. Observing either of the last two strategies would demonstrate that the CNS considers internal joint stresses since the preferential increase of RF activation reflects minimization of mediolateral patellar forces. Note that vastus intermedius (VI) is very small in the rat and so is unlikely to contribute substantially to the adaptation following VL paralysis. Our results show that rats compensated for the loss of VL by preferentially increasing activation of RF, consistent with the hypothesis that the CNS chooses muscle activations to minimize stresses and strains to internal joint structures.\n\n## Results\n\n### Paralysis of VL by peripheral nerve cut\n\nCutting the branch of the quadriceps nerve innervating VL abolished the large majority of VL activation during locomotion, as illustrated in Figure 2a\u2013b. The loss of EMG persisted over the 7 week adaptation period, demonstrating the absence of VL reinnervation. Consistent with this loss of activation, the mass of the denervated VL measured at the end of the experiment (i.e. 8 weeks after nerve cut) was significantly lower (p<0.001) than the mass of the intact contralateral VL (Figure 2c), reflecting atrophy of the paralyzed muscle. These results demonstrate that our nerve cut procedures effectively paralyzed VL.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig2-v2.jpg)\n\n**Figure 2.:** Panel (a) illustrates EMGs from VL and tibialis\u00a0anterior\u00a0(TA) during treadmill locomotion in one rat before (base), immediately after (week 1), and several weeks after (week 7) VL denervation. The vertical dashed lines in each plot indicate the onset of TA activity, and the horizontal thick bars at the bottom indicate the stance phase. VL activity was largely abolished after nerve cut, while that of other muscles (indicated here by TA) persisted. The small residual activity in VL was likely due to motion artifact or low-level cross talk. The averaged EMG\u00a0envelope of VL over many strides (95% confidence interval for the mean, Ns\u00a0=\u00a0104, 102, 88 for base, week 1 and week\u00a07 respectively) confirms this result (b). The mass of the denervated VL, measured 8 weeks after nerve cut, was significantly lower for all animals as compared to the mass of the intact VL in the contralateral hindlimb. Bars are averages\u00a0\u00b1\u00a0standard deviations (s.d.) across animals; N\u00a0=\u00a06 for each bar (c). ***p<0.001.\n\n### Preferential increase in RF activation following VL paralysis\n\nParalysis of VL will cause a reduced ability to balance the medial forces on the patella produced by VM, resulting in aberrant mechanical stresses within the knee joint. As illustrated in Figure 1b, we predicted that if the CNS acts to minimize these internal joint stresses, it should compensate for VL paralysis by preferentially increasing activation of RF. An example of RF and VM activations before and after VL paralysis is shown in Figure 3a\u2013b for one animal. In the first week after nerve cut, there was a large increase of the activation of both RF and VM during stance. Over subsequent weeks of adaptation, the activation of both muscles decreased. By 7 weeks after the nerve cut, the activation of VM during stance returned to levels similar to those observed in baseline conditions. At this same time point, however, the activation of RF remained elevated as compared to baseline conditions, consistent with our predictions based on the neural control of internal joint stresses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig3-v2.jpg)\n\n**Figure 3.:** Panel (a) illustrates locomotor activity in RF and VM before (base) and after (week 1, week 2 and week 7) VL denervation for one animal. Activation of TA is shown to indicate the onset of each gait cycle (dashed vertical lines), and the horizontal thick bars at the bottom indicate the stance phase of locomotion. In the first week after VL denervation, activity of both RF and VM increased. At later weeks, activity in VM reduced to levels similar to baseline, whereas activation of RF remained elevated. Panel (b) illustrates the EMG envelopes of RF, VM and TA in this same animal (95% confidence interval for the mean activity, Ns\u00a0=\u00a0104, 102, 96,\u00a088 strides for base, week 1,\u00a0week\u00a02, and week 7 respectively), and confirms the results shown in (a). The shaded region indicates the stance phase for the baseline condition. Panel (c) reports the integrated activity during stance of RF and VM before (base) and after VL paralysis (week 1, 2, 7) for all animals (averages\u00a0\u00b1\u00a0s.d. across animals), expressed as a multiple of the integrated activity observed in baseline conditions. Note that RF activation was larger than VM activation at each week after VL paralysis. For RF: N\u00a0=\u00a05, 4, 5, and 3\u00a0animals contributed to the bars at base, week 1, week 2, and week 7, with an average number of strides of Ns\u00a0=\u00a065, 94, 64 and 99 respectively. Note that because of exclusion criteria (see Materials\u00a0and\u00a0methods), not every animal contributed data to each bar. For VM: N\u00a0=\u00a05, 4, 5, and 4\u00a0animals, and Ns\u00a0=\u00a074, 98, 53, 93 strides contributed to the same time points. Significance levels: **p<0.01; ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Conventions are the same as in Figure 3. Panel (a) depicts the averaged EMG envelopes (Ns\u00a0=\u00a0104, 102, 96, 88 strides for base, week\u00a01, week\u00a02\u00a0and week\u00a07 respectively) from the same animal as shown in Figure 3. Activation of BFp and SM decreased initially after VL paralysis but recovered to activation levels similar to baseline after 7 weeks. Activation of GRc remained lower than baseline even at 7 weeks after VL paralysis. Bars in (b) show average integrated activity related to the stance phase for each muscle, expressed as a multiple of the baseline values. Bars are averages\u00a0\u00b1\u00a0s.d. across animals. BFp: pweek1\u00a0=\u00a00.595, pweek2\u00a0<0.001, pweek7\u00a0=\u00a01; N\u00a0=\u00a05, 4, 5, 4 animals contributed to base, week\u00a01, week\u00a02 and week\u00a07, with an average number of strides of Ns\u00a0=\u00a070, 70, 48, 78 respectively. SM: pweek1\u00a0=\u00a00.007, pweek2\u00a0=\u00a00.491, pweek7\u00a0=\u00a00.313; N\u00a0=\u00a04, 4, 4, 3 animals, and Ns\u00a0=\u00a079, 97, 73, 103 strides. GRc: pweek1\u00a0<0.001, pweek2\u00a0=\u00a00.001, pweek7\u00a0=\u00a00.001; N\u00a0=\u00a03, 3, 3, 2 animals, and Ns\u00a0=\u00a075, 97, 77, 89 strides.\n\nThis preferential increase in RF activation during stance was consistent across animals, as illustrated in Figure 3c. While the activity of VM was not significantly different from baseline at any time after VL nerve cut (pweek1\u00a0=\u00a01, pweek2\u00a0=\u00a01, pweek7\u00a0=\u00a00.154), RF activity was significantly increased at all time points (pweek1\u00a0=\u00a00.007, pweek2\u00a0<\u00a00.001, pweek7\u00a0<\u00a00.001). More importantly, the change in RF activation was significantly larger than the change in VM activation at all time points (pweek1\u00a0<\u00a00.001, pweek2\u00a0<\u00a00.001, pweek7\u00a0<\u00a00.001). These results demonstrate that the CNS preferentially increased activation of RF following VL paralysis, consistent with the neural regulation of internal joint stresses.\n\n### Selective increase in RF muscle mass following VL paralysis\n\nThe persistent increased activation of RF that we observed following nerve cut should induce use-dependent muscle growth. To evaluate this possibility, we measured quadriceps muscle masses 8 weeks after VL paralysis (Figure 4). We found that there was a significant increase in RF muscle mass in the affected limb as compared to the mass of RF in the unaffected limb (p=0.047). In contrast, the masses of VM and VI were not significantly different between the two limbs (VM: p=1; VI: p=1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig4-v2.jpg)\n\n**Figure 4.:** At the end of the experiment, we measured the mass of RF, VM and VI both in the hindlimb affected by VL denervation (ipsi), and in the contralateral limb (contra). There was a significant increase in the mass of the ipsilateral RF (p<0.05), and no significant difference in the mass of VM or VI. Bars are averages\u00a0\u00b1\u00a0s.d. across animals; N\u00a0=\u00a06 for each bar.\n\n### Adaptation in overall\u00a0joint kinematics following VL paralysis\n\nVL paralysis caused initial changes in overall joint kinematics that were compensated for over the subsequent weeks of adaptation. Figure 5b shows the average joint angle trajectories for one animal before and after VL paralysis. There was an initial reduction in the stance phase duration and in the range of motion at the knee, consistent with the reduction of knee extensor torque during stance caused by VL paralysis. The range of motion at the ankle, on the other hand, increased. In this animal, the range of motion at the hip was minimally affected. At later time points, all of these measures of overall joint kinematics recovered to levels similar to those observed before VL paralysis, although there were persistent differences in the specific joint angle trajectories (see below).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig5-v2.jpg)\n\n**Figure 5.:** Panel (a) illustrates the joint angle conventions used for these analyses. For each angle, smaller numbers indicate greater flexion (i.e. the gray angles in the figure are smaller for flexed angles). Panel (b) shows the joint angle trajectories at the hip, knee, and ankle during baseline (blue), week 1 (red), and week 7 (orange) after VL paralysis for one animal (hip and knee: Ns\u00a0=\u00a072, 31 and 50 strides for base, week\u00a01 and week 7; ankle: Ns\u00a0=\u00a049, 13, 36). The bars at the top of each plot indicate the periods of stance phase for each time point\u00a0of\u00a0adaptation. Panel (c) reports the percentage of stance and the range of motion for each joint angle before and after VL paralysis for all animals (averages\u00a0\u00b1\u00a0s.d. across animals). Stance percentage: N\u00a0=\u00a06, 4, 5, 5 animals for base, week\u00a01, week\u00a02 and week\u00a07, and an average number of strides of Ns\u00a0=\u00a048, 41, 34, 59 respectively. Hip ROM: N\u00a0=\u00a05, 4, 4, 4 animals, and Ns\u00a0=\u00a058, 47, 50, 93 strides. Knee ROM: N\u00a0=\u00a06, 5, 4, 5 animals, and Ns\u00a0=\u00a064, 57, 50, 86 strides. Ankle ROM: N\u00a0=\u00a06, 4, 4, 5 animals and Ns\u00a0=\u00a059, 55, 44, 82 strides. **p<0.01; ***p<0.001.\n\nThe changes in these measures of overall joint kinematics, averaged across all animals, are shown in Figure 5c. The duration of the stance phase, expressed as a percentage of the entire gait cycle, was significantly reduced in the first week after VL paralysis (pweek1\u00a0<0.001), but at later time points returned to levels that were not significantly different from baseline (pweek2\u00a0=\u00a00.457; pweek7\u00a0=\u00a00.192). The ranges of motion of the hip and knee were significantly smaller in the first week after VL paralysis (hip: pweek1\u00a0=\u00a00.008; knee: pweek1\u00a0<0.001), while the range of motion at the ankle was significantly larger (pweek1\u00a0<0.001). At week 2, the hip and the knee ROM remained significantly lower than baseline (hip: pweek2\u00a0=\u00a00.007; knee: pweek2\u00a0<0.001) whereas the ankle was no longer significantly increased (pweek2\u00a0=\u00a00.059). By week 7, the ROM of the hip and ankle joints were not significantly different from baseline (hip: pweek7\u00a0=\u00a00.502; ankle: pweek7\u00a0=\u00a00.781) but there was a modest, though significant, decrease in the knee range of motion (pweek7\u00a0=\u00a00.009). These results show that overall joint kinematics are initially impaired following VL paralysis. Over the subsequent weeks of adaptation, these deficits largely disappear and overall locomotor function is restored to baseline levels, although there is a persistent deficit in knee function.\n\n### Persistent changes in joint kinematics following VL paralysis\n\nThe preferential increase in RF activation shown in Figure 3 introduces an extra flexion torque at the hip. If the CNS preserves individual joint angles, this extra torque should be compensated by increased activation of hip extensor muscles (e.g. BFp, SM, and GRc). However, we found no evidence for increased hip extensor muscle activation at any point of the adaptation (Figure 3\u2014figure supplement 1), suggesting that the CNS does not preserve individual joint angle trajectories. To evaluate this possibility more directly, we examined the detailed joint kinematics through the adaptation period.\n\nThe effects of increased RF activity on joint kinematics should be most apparent at the end of the stance phase since quadriceps muscle activations are largest in late stance (Figures 2 and 3). As illustrated in Figure 6a\u2013b, the hip angle was significantly decreased after the first week (i.e. more flexed; pweek1\u00a0=\u00a01, pweek2\u00a0=\u00a00.003, pweek7\u00a0=\u00a00.032), and the ankle angle was significantly increased at all time points (i.e. more extended; pweek1\u00a0=\u00a00.030, pweek2\u00a0=\u00a00.004, pweek7\u00a0=\u00a00.038) as compared to baseline. On the other hand, although the knee angle was significantly reduced in the first two weeks after VL paralysis (pweek1\u00a0<0.001, pweek2\u00a0=\u00a00.031), it was not significantly different from baseline at 7 weeks (pweek7\u00a0=\u00a00.167). We found equivalent results for joint angles measured earlier in the stance phase (Figure 6\u2014figure supplement 1), at another point within the quadriceps burst. These results show that increased activation of RF, although compensating for the knee extension lost after VL paralysis, introduced persistent deviations at other joints. In particular, the increased hip flexion is consistent with the extra hip flexor torque produced by RF.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig6-v2.jpg)\n\n**Figure 6.:** Panel (a) illustrates limb configurations at the end of the stance phase at baseline (black), week 1 (red), week 2 (green), and week 7 (orange) after VL paralysis. For ease of comparison, thin black lines indicating the baseline limb configuration are overlaid on the limb configurations shown for weeks 1, 2, 7. Joint angles were averaged across animals and used to plot the configurations shown in the figure. Panel (b) shows the angles at the hip, knee, and ankle averaged across animals before and after VL paralysis (averages\u00a0\u00b1\u00a0s.d. across animals). Hip: N\u00a0=\u00a05, 4, 4, 5\u00a0animals for base, week 1, week 2 and week 7, and an average number of strides of Ns\u00a0=\u00a054, 47, 44, 74 strides. Knee: N\u00a0=\u00a06, 5, 5, 5\u00a0animals, and Ns\u00a0=\u00a058, 51, 36, 74 strides. Ankle: N\u00a0=\u00a06, 4, 5, 5\u00a0animals, and Ns\u00a0=\u00a054, 51, 34, 73 strides. Panel (c) shows the global kinematic parameters limb angle and limb length averaged across animals before and after VL paralysis (averages\u00a0\u00b1\u00a0s.d. across animals). Limb length: N\u00a0=\u00a06, 4, 5, 5\u00a0animals, and Ns\u00a0=\u00a059, 52, 34, 74 strides. Limb angle: N\u00a0=\u00a05, 3, 4, 5\u00a0animals, and Ns\u00a0=\u00a054, 48, 42, 74 strides. *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38215/elife-38215-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Conventions are the same as in Figure 6. Panel (a) illustrates limb configurations at mid-stance at baseline (black), week 1 (red), week 2 (green), and week 7 (orange) after VL paralysis. Panel (b) shows the angles at the hip, knee, and ankle averaged across animals before and after VL paralysis (averages\u00a0\u00b1\u00a0s.d. across animals). Hip: pweek1\u00a0=\u00a01, pweek2\u00a0=\u00a00.027, pweek7\u00a0=\u00a00.011; N\u00a0=\u00a05, 5, 4, 5 animals for base, week 1, week 2 and week 7, and an average number of strides of Ns\u00a0=\u00a053, 42, 44, 74 strides. Knee: pweek1\u00a0<0.001, pweek2\u00a0=\u00a00.395, pweek7\u00a0=\u00a00.140; N\u00a0=\u00a06, 5, 5, 5 animals, and Ns\u00a0=\u00a059, 50, 41, 74 strides. Ankle: pweek1\u00a0<0.001, pweek2\u00a0=<\u00a00.001, pweek7\u00a0=\u00a00.038; N\u00a0=\u00a06, 4, 5, 5 animals, and Ns\u00a0=\u00a055, 49, 39, 73 strides. Panel (c) shows the global kinematic parameters limb angle and limb length averaged across animals before and after VL paralysis (averages\u00a0\u00b1\u00a0s.d. across animals). Limb length: pweek1\u00a0=\u00a00.060, pweek2\u00a0=\u00a01, pweek7\u00a0=\u00a01; N\u00a0=\u00a06, 4, 5, 5 animals, and Ns\u00a0=\u00a059, 51, 40, 74 strides. Limb angle: pweek1\u00a0<0.001, pweek2\u00a0=\u00a00.015, pweek7\u00a0=\u00a01; N\u00a0=\u00a05, 4, 4, 5 animals, and Ns\u00a0=\u00a054, 41, 42, 74 strides. *p<0.05; **p<0.01; ***p<0.001.\n\n### Restoration of global limb kinematics following VL paralysis\n\nAlthough the results of Figure 6a\u2013b demonstrate persistent changes in local joint kinematics, the CNS might restore global features of limb kinematics such as overall limb length or limb angle. As illustrated in Figure 6c, both limb length and limb angle measured at the end of stance were initially altered after VL paralysis (limb length: pweek1\u00a0<0.001; limb angle: pweek1\u00a0=\u00a00.002). However, these alterations disappeared over the adaptation period so that these measures were not significantly different from baseline levels (limb length: pweek2\u00a0=\u00a00.142, pweek7\u00a0=\u00a01; limb angle: pweek2\u00a0=\u00a00.141, pweek7\u00a0=\u00a01). We found equivalent results for global kinematics measured earlier in the stance phase (Figure 6\u2014figure supplement 1). These results suggest that the CNS adopts a control strategy that limits internal joint stresses and restores global aspects of locomotion.\n\n## Discussion\n\nWe hypothesized that the CNS activates muscles to minimize internal joint stresses while achieving task requirements. We found that animals compensated for VL paralysis by increasing activation of RF while maintaining the activation of VM at levels similar to those observed before the perturbation. This strategy restores the knee extension torque lost after VL paralysis while causing minimal additional mediolateral patellar forces. The increased RF activation resulted in a persistent perturbation in joint kinematics due to the extra hip flexor torque from RF, but global aspects of limb kinematics were restored. These results suggest that the CNS considers internal joint stresses and strains when choosing muscle activations.\n\nThe main result of this study is the observation that animals compensated for VL paralysis by preferentially increasing activation of RF. If one only considers muscle contributions to task performance, this adaptation strategy is counterintuitive; because VM and VL have redundant contributions to knee extension movements (Sandercock et al., 2018), restoring task performance would be most easily accomplished by increasing activation of VM (Figure 1b). This strategy would restore the same joint kinematics observed before VL paralysis without requiring any additional compensation. In contrast, increased activation of RF, while restoring the knee extension torque lost by VL paralysis, also introduces an additional flexion torque at the hip (Johnson et al., 2008; Greene, 1963) (Figure 1). Thus, this strategy would either require additional changes in other muscles across the limb, or introduce residual deviations in joint kinematics. The increased activation of RF we observed is therefore difficult to reconcile with strategies for muscle coordination focused solely on considerations of task performance.\n\nThis strategy is consistent, however, with the hypothesis that the CNS takes into account the effect of muscle activity on the stresses and strains within a joint. Increasing activation of RF restores knee extension function while producing negligible additional mediolateral forces on the patella (Figure 1). On the other hand, higher activation of VM would increase the medial force on the patella and cause excess patellofemoral loading. Hence, our results suggest that the CNS considers these mediolateral forces when selecting muscle activations to compensate for\u00a0VL paralysis.\n\nWe also observed a selective increase in the mass of RF that likely reflects a use-dependent strengthening of that muscle, although we did not confirm this by measuring peak forces or myosin content (Blaauw et al., 2013). This result indirectly confirms the preferential increase of RF activity after VL paralysis. Furthermore, it suggests that at late time points of the adaptation, the loss of VL was compensated both by higher neural activity and by additional force generating capability of RF. Finally, this result suggests that the increased RF activation was not specific to treadmill locomotion, but was also used in behaviors we did not measure here; if there was increased VM or VI activation in other behaviors, we would have observed an increase in the mass of those muscles. The observation of no change in the mass of VI also suggests that there was no consistent change in the activation of this muscle during the adaptation period, though we did not record from VI in these experiments due its small size and inaccessibility for implantation.\n\nWe did not observe a complete silencing of VM, even after 7 weeks of adaptation: VM activation levels were on average similar to those observed before VL paralysis. This implies that a residual medial force on the patella persisted throughout the adaptation period. Such residual VM activity might reflect a compromise between unbalanced mediolateral patellar forces and perturbations in joint kinematics caused by the increased activation of RF. In the context of optimization approaches to motor control (Todorov and Jordan, 2002; Scott, 2004), this result suggests a cost function that includes terms for task performance as well as internal joint stresses. Alternatively, the residual activation of VM might reflect habitual persistence of the strategy used by the CNS prior to VL paralysis (de Rugy et al., 2012; Loeb, 2012). Although our study cannot distinguish between these two explanations, in either case the fact that RF and not VM activity was increased demonstrates the influence of criteria related to the state of internal joint structures.\n\nThe particular aspects of task performance that drive adaptation are potentially complex. Although muscle paralysis caused persistent changes at individual joint kinematics, we observed restoration of global limb kinematics. This result is consistent with ideas such as those used in uncontrolled manifold analyses (Latash et al., 2007) and with previous results examining adaptation following paralysis of triceps surae in rats and cats (Chang et al., 2009; Bauman and Chang, 2013). In this context, our results suggest a hierarchical control of movement, in which higher level variables related to task goals (i.e. global limb variables) are preserved after VL paralysis while lower level variables related to task execution (i.e. individual joint angles) are allowed to vary.\n\nMany criteria have been proposed to influence the activation of muscles during behavior (Alessandro, 2016; Prilutsky, 2000), but they generally do not consider the internal state of joints. Although some of these criteria might indirectly minimize joint stresses and strains (e.g. minimum jerk [Flash and Hogan, 1985] or torque change [Uno et al., 1989]), they would not predict the selective increase in RF activation observed here. Including criteria that explicitly consider the consequences of muscle activation on joint stresses and strains might improve the predictions of such optimization approaches.\n\nAlternatively, minimization of internal joint stresses and strains in intact subjects might be accomplished without explicit control. The co-evolution of neural control and musculoskeletal anatomy (Valero-Cuevas, 2015) might result in a neuromechanical system such that muscle activations optimizing task performance criteria also optimize internal joint state criteria. For example, when VM and VL are intact, a criterion that minimizes muscle metabolism (Kistemaker et al., 2014; Prilutsky, 2000), or that considers signal dependent variability (Harris and Wolpert, 1998; Haruno and Wolpert, 2005) would predict a distributed activation of VM and VL. This distributed activation of VM and VL might result from optimization over evolutionary time scales (Giszter, 2015) and be implemented in coordinative structures such as muscle synergies (Tresch and Jarc, 2009; Alessandro et al., 2013a; Alessandro et al., 2013b) within the spinal cord (Levine et al., 2014; Hart and Giszter, 2010; Takei et al., 2017) or other brain regions (Overduin et al., 2015). This distributed activation could in turn balance net mediolateral patellar forces, even though such a balance was not explicitly considered. After injuries that alter limb properties (Gutierrez et al., 2009; O'Connor et al., 1993), this implicit regulation of internal joint state might be compromised (Needle et al., 2014). In these situations, the CNS might be forced into a solution that requires a tradeoff between task performance and internal joint stresses and strains, such as that observed in our experiments.\n\nThese results have implications to clinical syndromes affecting joint health, such as knee osteoarthritis (Felson, 2013; Mahmoudian et al., 2017) and patellofemoral pain (Smith et al., 2018) (PFP) in humans. Although many factors have been shown to contribute to PFP (Smith et al., 2018; Fagan and Delahunt, 2008), one common suggestion is that PFP results from an imbalance in mediolateral patellar forces (Pal et al., 2012). Our results show that although the CNS regulates these mediolateral forces, this regulation is imperfect since VM activation persisted after VL paralysis. PFP might result from similarly imperfect regulation of patellar forces, potentially reflecting a compromise between criteria related to task performance and internal joint states. More broadly, our experiments highlight the importance of considering the consequences of rehabilitation on internal joint stresses and strains following injuries (Farrokhi et al., 2013; Shull et al., 2013; Simic et al., 2011), rather than solely focusing on restoration of task performance (Hollands et al., 2012).\n\nRegulation of internal joint stresses and strains, either in intact subjects or following injury, might be accomplished by feedforward or feedback mechanisms. Sensory receptors in the joint can convey information about strains in ligaments or stresses between bones. Activity in these receptors can be conveyed to spinal interneuronal populations (Solomonow et al., 1987; Iles et al., 1990) and other areas (Sj\u00f6lander et al., 2002) to drive rapid feedback control of muscles (Ferrell, 1980) or longer term adaptation of muscle activations in order to avoid potential injury. The CNS could also derive information about internal joint structures indirectly from muscle proprioceptors (Wilmink and Nichols, 2003), combining information about muscle forces and lengths with \u2018internal\u2019 models of muscle anatomy to estimate joint stresses and strains. Similarly, predictive models of muscle actions, combined with efference copy of motor commands, could be used to make feedforward predictions of internal joint stresses and strains. The strong coherence between VM and VL across frequencies (Laine et al., 2015) observed in humans is consistent with the importance of coordinated activation of these muscles (Br\u00f8chner Nielsen et al., 2017), whether by feedforward or feedback processes. This coordinated muscle activation is also similar to ideas of muscle synergies (Tresch and Jarc, 2009; Alessandro et al., 2013a; Alessandro et al., 2013b), so that the balanced activation of muscles within a synergy would reflect regulation of joint stresses and strains. Note that neural control of internal joint states might be relatively coarse, only responding to large deviations in joint states inducing discomfort or pain (Grigg and Greenspan, 1977). Such a coarse control of joint state might reflect the \u2018good enough\u2019 habitual strategy (de Rugy et al., 2012) described above, potentially resulting in the residual activation of VM observed in our experiments.\n\nFurther experiments will be necessary to better understand the neural control of joint stresses and strains. Although the muscle paralysis by denervation used in these experiments has been used in many studies to examine neural adaptation strategies (Bauman and Chang, 2013; Dambreville et al., 2016; Frigon and Rossignol, 2007; Bennett et al., 2012; Bouyer et al., 2001; Maas et al., 2007), the loss of sensory information from the paralyzed muscle might contribute to the observed changes in muscle activation (Akay et al., 2014). Perturbations directly manipulating patellar forces or paralyzing VM or RF might provide complementary experiments to further evaluate this hypothesis. Cutting the nerves to VM and RF selectively, however, is difficult because they branch extensively immediately after leaving the common quadriceps nerve, making them hard to isolate (Greene, 1963). The nerve to VL was simpler to cut because it persists as a single trunk for a long distance from the common quadriceps nerve.\n\nOur experiments exploited the unique mechanical properties of the rat knee joint: the clear distinction between muscle contributions to task performance and to patellar forces in the rat allowed us to make simple predictions about adaptation strategies consistent or inconsistent with neural regulation of internal joint stresses and strains. Such distinctions are more difficult to make in humans because the patellar mobility at extended knee angles complicates how quadriceps muscles affect both patellar mechanics and limb kinematics (Farahmand et al., 1998). The rat knee joint might therefore provide a tractable experimental model to examine the neural control of joint stresses and strains in both healthy subjects and following injury.\n\n## Materials and methods\n\n### Ethical approval\n\nWe performed experiments on female Sprague Dawley rats (n\u00a0=\u00a06). All the procedures were approved by the Animal Care Committee of Northwestern University.\n\n### Experimental protocol\n\nWe first trained rats to maintain a stable gait pattern during treadmill locomotion. We then implanted chronic EMG electrodes in multiple hindlimb muscles and allowed animals to recover for at least 10 days following implantation. We recorded kinematic and EMG activity during treadmill locomotion before (baseline) and at different times after VL paralysis: within one week after the procedure (week 1), within the second week (week 2), and within the seventh week (week 7). At the end of data collection, animals were euthanized, muscle masses weighed, and electrode location verified. The EMG channels corresponding to misplaced electrodes were not included in the analysis.\n\n### Implantation of EMG electrodes\n\nWe anesthetized animals with isoflurane (3% in O2\u00a0~\u00a02 l/min), and prepared them for aseptic surgery. We implanted pairs of electrodes in seven muscles: vastus lateralis (VL), vastus medialis (VM), rectus femoris (RF), semimembranosus (SM), biceps femoris posterior (BFp), tibialis anterior (TA), and caudal gracilis (GRc). Knots placed on either side of the muscle secured the exposed electrode sites within the muscle belly. The electrode leads were tunneled subcutaneously to a connector on the back of the animal. These methods have been described in more details previously (Tysseling et al., 2013).\n\n### Paralysis of VL\n\nDuring aseptic surgery (isoflurane, 3% in O2\u00a0~\u00a02 l/min), we exposed the quadriceps nerve plexus, and isolated the branch to VL. We anesthetized this branch with lidocaine, tied it off in two locations with silk suture to prevent re-innervation, and then cut between the sutures.\n\n### EMGs and kinematics during locomotion\n\nBefore each recording session, we applied retro-reflective markers on the shaved skin (see Data acquisition and processing) under brief isoflurane anesthesia (2\u20133% in O2\u00a0~\u00a02 l/min). Markers were placed on bony landmarks on the hindlimb skin (rostral and caudal tips of the pelvis, hip, knee, ankle and first digit, see Figure 5a). The EMG connector was attached via cable to the amplifier, and the animal placed on the treadmill. We waited at least 30 min after anesthesia before collecting behavioral data. Each recording session consisted of two minutes of locomotion at the maximum comfortable speed (12\u201315 m/min) and incline (usually\u00a0+25%) to induce strong quadriceps activations. One animal was unable to walk at an incline of\u00a0+25%, and so for that animal we recorded data from level treadmill walking.\n\n### Data acquisition and processing\n\nThe 3D position of markers was tracked using a motion capture system (Vicon) at a frequency of 200 Hz. These signals were low-pass filtered offline at a cut-off frequency of 10 Hz (5th order Butterworth). In order to reduce errors due to differential movements of the skin (Filipe et al., 2006; Bauman and Chang, 2010), we estimated the 3D position of the knee by triangulation, using the lengths of the femur and the tibia (Bauman and Chang, 2010). Differential EMG signals were amplified (1000X), band-pass filtered (30\u20131000 Hz) and notch filtered (60 Hz), and then digitalized (5000 Hz). The digitalized signals were further band-pass filtered offline to remove motion artifacts (5\u2013500 Hz, 4th order Butterworth), rectified, and envelopes were computed from the rectified signals.\n\nWe segmented both kinematic and EMG envelopes into separate strides, defining the beginning of each stride as the onset of activation of TA during bouts of stable walking. To obtain a consistent dataset that reflected the behavioral condition of the experiment, we only considered strides with durations within 1.5 standard deviations from the mean. We also excluded strides with clear EMG artifacts that could occur when the cable hit the side of the treadmill, as identified using Tukey outlier analysis (i.e. identifying EMG values that were 1.5 interquartiles above the upper quartile of the maxima across steps). Further, we discarded strides that had more than 20% of missing values in the kinematic signals due to malfunctioning of the acquisition system or due to occlusions of the retro-reflective markers. Application of these inclusion criteria resulted in data sets with, on average, 65 strides for each recording session. Strides were then time-normalized to 100 samples for further analysis.\n\nWe characterized each stride by means of several kinematic and EMG features. For kinematic analysis, we calculated the percentage of stance (i.e. duration of the stance\u00a0phase divided by the duration of the entire stride, with stance\u00a0phase defined as the interval between foot-strike and foot-off). We calculated local joint angles (hip, knee, and ankle) as illustrated in Figure 5a. Furthermore, we calculated more global features describing overall limb kinematics as illustrated in Figure 6c: the length of the global limb vector (defined as the vector from the hip to the toe), and the limb angle (defined as the angle between the limb vector and the vector from the hip to the rostral pelvis). Finally, we calculated the range of motion of each joint (ROM, i.e. the difference between maximum and minimum joint angles for each stride). All angles were calculated using the projections of the markers onto the sagittal plane of the treadmill, and were defined such that zero degrees reflected complete joint flexion and increasing angles reflected increasing amounts of extension. For the EMG analysis, we computed the integral of the EMG envelopes\u2019 extension burst (i.e. muscle activity related to the preparation and the execution of the stance phase), which represents the muscle activity contributing to limb extension. We normalized this measure to the pre-paralysis mean integrated activity for each muscle and subject, obtaining the relative change of activation with respect to this baseline.\n\n### Statistical analyses\n\nWe employed Linear Mixed Effect Models (LMEM) to analyze both kinematic and EMG data using the nlme package (Pinheiro et al., 2017) in the R environment. The use of LMEMs allows us to exploit the fact that we have large numbers of observations for each animal across the adaptation period, obtaining the maximal statistical power from a relatively small number of animals. LMEMs also allow us to analyze samples of different size (e.g. unequal numbers of strides across days and animals), to cope with missing data (potentially due to the inclusion criteria described above), and to take into account variability at different levels of the dataset (e.g. across strides, across days, and across subjects). To confirm that our dataset met the assumption of Gaussian distribution and independence of residuals and random effects (Pinheiro and Bates, 2000), we visually inspected the distributions using qq-plots and histograms. After fitting the LMEMs, we tested our specific hypotheses of interest by performing post-hoc tests on the model parameters and using Bonferroni corrections to adjust the obtained p-values. Note that because of this correction, the adjusted p-values can be equal to 1. We considered tests to be statistically significant if their p-values were lower than the 0.05 significance level.\n\nFor the kinematic analysis, we fit a LMEM for each measure, using the value of the feature as the dependent variable and the timing after VL paralysis as the independent variable. In order to take inter-subject variability into account, we considered subject as a random effect on both slope and intercept (Pinheiro and Bates, 2000). This method is essentially a more powerful version of a repeated measures ANOVA, and it has been proven effective at estimating degrees of freedom and standard errors, hence enabling accurate statistical tests (Barr et al., 2013). We then performed post-hoc tests to evaluate whether the values of the features at a given week were different from their baseline values.\n\nTo analyze muscle activity, we initially log-transformed the data to reduce the skewness of EMG features. This rendered the distribution of the dataset more symmetrical and the distribution of residuals approximately Gaussian. For the comparison between VM and RF, we fit a LMEM with normalized integrated EMG as the dependent variable, and the timing after VL paralysis as well as muscle identity (i.e. whether the muscle was VM or RF) as independent variables, including in the model also an interaction term between these independent variables. We considered subject as a random effect on both intercept and slope, and we nested the variability across strides within each subject and recording session. We performed post-hoc tests to evaluate: (1) whether the normalized activity in RF at any week after VL paralysis was greater than the activity in VM; and (2) whether the normalized activity of each muscle at a given week was different from its baseline value. For the analysis of the other muscles (Figure 3\u2014figure supplement 1), we fit a LMEM for each signal using the normalized integrated EMG as the dependent variable, the timing after VL paralysis as the independent variable, and considering subject as a random effect on both slope and intercept. Then, we used post-hoc tests to evaluate whether the normalized activity at a given week was different from its baseline value.\n\nTo compare the masses of the quadriceps in the denervated limb to those in the intact limb, we performed paired t-tests for each muscle, and we adjusted the obtained p-values with Bonferroni corrections.\n",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "ec74be5a-fae7-47e6-afab-0e34a1b960c1",
+      "submission_id": "e4c5824b-5cd3-48e5-985b-8c960eece9c9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Nichols, Georgia Tech United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38215.020](https://doi.org/10.7554/eLife.38215.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Adaptation after vastus lateralis denervation in rats demonstrates neural regulation of joint stresses and strains\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Richard Nichols as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michel A Lemay (Reviewer #2) and Simon Giszter (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this novel and important study, evidence was obtained that altered muscular recruitment patterns following denervation of one of a group of synergistic muscles reflect a balance between meeting kinematic requirements and minimizing stress on the articular surfaces. The findings are significant in revealing previously underappreciated factors that determine how muscles in redundant groups are recruited. The issue of muscle selection in redundant systems has been considered of major significance in motor control research, and the results of this study provide an important hypothesis in this regard.\n\nEssential revisions:\n\n1) It was suggested that the authors might amplify the Discussion by referring to sensory pathways from the joint capsule that could potentially mediate the adaptation to the unbalanced forces within the joint.\n\n2) An interesting point worthy of discussion is that the mechanisms underlying the observed adaptation might be predictive, since the damage to the joint would develop over time after the injury.\n\n3) Consider addressing the idea of Young-Hui Chang that stabilization of task-level variables (e.g. whole limb length) might be relevant in the selection process due to the multi-joint actions of some muscles.\n\n4) Figure 3B, subsection \u201cPreferential increase in RF activation following VL paralysis\u201d: Please clarify whether the EMG was integrated across the whole step cycle, since the activity of RF exhibited two peaks, one in each phase.\n\n5) Figure 6: It appears that total limb length observed in controls was preserved following the denervation, at least after 7 weeks. Was this a general finding (see point 3)? Feedback of limb length might be part of the mechanism of adaptation.\n\n6) Subsection \u201cData acquisition and processing\u201d, first paragraph: Note that Bauman and Chang (2010) made a direct comparison of kinematics using skin markers and x-ray images to show the inaccuracies resulting from the use of skin markers.\n",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5cf7a78d-7ed0-4d17-9d88-acbbbf55509b",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C1",
+      "claim": "Activation of the quadriceps muscles vastus lateralis (VL) and vastus medialis (VM) in the rat produces very similar forces at the distal tibia and so will produce similar joint torques.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the quadriceps muscles vastus lateralis (VL) and vastus medialis (VM) in the rat produces very similar forces at the distal tibia and so will produce similar joint torques (Sandercock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sandercock et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4cdd8484-b78c-497d-b326-ecbba0fd1449",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C2",
+      "claim": "VL and VM have redundant contributions to task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "These muscles therefore have redundant contributions to task performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the previous statement about VL and VM producing similar joint torques, which is supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1ba94c61-34c7-4df2-a01d-fe215f9fa804",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C3",
+      "claim": "VL and VM produce opposing mediolateral forces on the patella.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, VL and VM produce opposing mediolateral forces on the patella (Sandercock et al., 2018; Lin et al., 2004; Wilson and Sheehan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sandercock et al., 2018; Lin et al., 2004; Wilson and Sheehan, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "49bac964-e394-49e5-a59f-0c802d3e9341",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C4",
+      "claim": "In the rat, mediolateral patellar forces are not transmitted to the tibia but are balanced by contact forces between the patella and the femur within the trochlear groove.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rat, these mediolateral patellar forces are not transmitted to the tibia but are balanced by contact forces between the patella and the femur within the trochlear groove (Sandercock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sandercock et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7f2d699a-2269-416a-966f-4f7522fa085c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C5",
+      "claim": "Cutting the branch of the quadriceps nerve innervating VL abolished the large majority of VL activation during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cutting the branch of the quadriceps nerve innervating VL abolished the large majority of VL activation during locomotion, as illustrated in Figure 2a\u2013b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "8a84a4d7-981b-4c1f-b0a6-bc2b405016e5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C6",
+      "claim": "The loss of VL EMG persisted over the 7 week adaptation period, demonstrating the absence of VL reinnervation.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of EMG persisted over the 7 week adaptation period, demonstrating the absence of VL reinnervation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the persistent loss of EMG activity observed in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c712e0fb-7bdf-496b-bdb7-b7a8ac3a61b5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C7",
+      "claim": "The mass of the denervated VL measured at the end of the experiment (i.e. 8 weeks after nerve cut) was significantly lower (p<0.001) than the mass of the intact contralateral VL.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this loss of activation, the mass of the denervated VL measured at the end of the experiment (i.e. 8 weeks after nerve cut) was significantly lower (p<0.001) than the mass of the intact contralateral VL (Figure 2c), reflecting atrophy of the paralyzed muscle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2c with statistical significance p<0.001.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "72b3e574-4d76-490a-9589-81dd8f7a382b",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C8",
+      "claim": "The reduced mass of denervated VL reflects atrophy of the paralyzed muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this loss of activation, the mass of the denervated VL measured at the end of the experiment (i.e. 8 weeks after nerve cut) was significantly lower (p<0.001) than the mass of the intact contralateral VL (Figure 2c), reflecting atrophy of the paralyzed muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge that denervated muscles undergo atrophy.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "932817e7-d43d-4e26-8a8d-305060920aa5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C9",
+      "claim": "In the first week after VL nerve cut, there was a large increase of the activation of both RF and VM during stance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first week after nerve cut, there was a large increase of the activation of both RF and VM during stance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e08d0cb7-bf8e-42c5-82b2-44006f3efd88",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C10",
+      "claim": "By 7 weeks after the nerve cut, the activation of VM during stance returned to levels similar to those observed in baseline conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By 7 weeks after the nerve cut, the activation of VM during stance returned to levels similar to those observed in baseline conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "22ac9a3e-3f4d-475c-a4f2-e79b4ffab4a7",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C11",
+      "claim": "At 7 weeks after VL nerve cut, the activation of RF remained elevated as compared to baseline conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "At this same time point, however, the activation of RF remained elevated as compared to baseline conditions, consistent with our predictions based on the neural control of internal joint stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1bdecbcc-37d2-4f59-b78d-08db0d0edc6f",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C12",
+      "claim": "VM activity was not significantly different from baseline at any time after VL nerve cut (pweek1 = 1, pweek2 = 1, pweek7 = 0.154).",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of VM was not significantly different from baseline at any time after VL nerve cut (pweek1 = 1, pweek2 = 1, pweek7 = 0.154), RF activity was significantly increased at all time points (pweek1 = 0.007, pweek2 < 0.001, pweek7 < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "435f297a-11a6-4db4-9bd9-867216eec17c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C13",
+      "claim": "RF activity was significantly increased at all time points after VL nerve cut (pweek1 = 0.007, pweek2 < 0.001, pweek7 < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of VM was not significantly different from baseline at any time after VL nerve cut (pweek1 = 1, pweek2 = 1, pweek7 = 0.154), RF activity was significantly increased at all time points (pweek1 = 0.007, pweek2 < 0.001, pweek7 < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c7c9c77d-2afa-4ed8-8c5b-9cfa068b8481",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C14",
+      "claim": "The change in RF activation was significantly larger than the change in VM activation at all time points after VL nerve cut (pweek1 < 0.001, pweek2 < 0.001, pweek7 < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the change in RF activation was significantly larger than the change in VM activation at all time points (pweek1 < 0.001, pweek2 < 0.001, pweek7 < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b064857c-2571-41bf-8127-15f0af085728",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C15",
+      "claim": "There was a significant increase in RF muscle mass in the affected limb as compared to the mass of RF in the unaffected limb (p=0.047).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there was a significant increase in RF muscle mass in the affected limb as compared to the mass of RF in the unaffected limb (p=0.047).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4 with statistical significance p=0.047.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "d86037dc-6589-4ef3-9174-2596cd477bdb",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C16",
+      "claim": "The masses of VM and VI were not significantly different between the affected and unaffected limbs (VM: p=1; VI: p=1).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the masses of VM and VI were not significantly different between the two limbs (VM: p=1; VI: p=1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b0d0a2d4-1df4-4e2f-b8be-bdb2cddf056a",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C17",
+      "claim": "VL paralysis caused an initial reduction in the stance phase duration.",
+      "claim_type": "EXPLICIT",
+      "source": "There was an initial reduction in the stance phase duration and in the range of motion at the knee, consistent with the reduction of knee extensor torque during stance caused by VL paralysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a7d63303-adfd-45a8-bd94-0df568aa11e0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C18",
+      "claim": "VL paralysis caused an initial reduction in the range of motion at the knee.",
+      "claim_type": "EXPLICIT",
+      "source": "There was an initial reduction in the stance phase duration and in the range of motion at the knee, consistent with the reduction of knee extensor torque during stance caused by VL paralysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b3f5fcff-3be5-4888-89ed-c25b9bc8e8db",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C19",
+      "claim": "The range of motion at the ankle increased after VL paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of motion at the ankle, on the other hand, increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "42db4238-eab0-4f36-ba95-bc0127191465",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C20",
+      "claim": "The duration of the stance phase was significantly reduced in the first week after VL paralysis (pweek1 <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of the stance phase, expressed as a percentage of the entire gait cycle, was significantly reduced in the first week after VL paralysis (pweek1 <0.001), but at later time points returned to levels that were not significantly different from baseline (pweek2 = 0.457; pweek7 = 0.192).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "dfb53d67-f9c9-417f-8ff1-bb0050d21b50",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C21",
+      "claim": "At later time points (week 2 and week 7), stance phase duration returned to levels that were not significantly different from baseline (pweek2 = 0.457; pweek7 = 0.192).",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of the stance phase, expressed as a percentage of the entire gait cycle, was significantly reduced in the first week after VL paralysis (pweek1 <0.001), but at later time points returned to levels that were not significantly different from baseline (pweek2 = 0.457; pweek7 = 0.192).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "9f547da7-2e76-411f-92e6-3823fc843990",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C22",
+      "claim": "The ranges of motion of the hip and knee were significantly smaller in the first week after VL paralysis (hip: pweek1 = 0.008; knee: pweek1 <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The ranges of motion of the hip and knee were significantly smaller in the first week after VL paralysis (hip: pweek1 = 0.008; knee: pweek1 <0.001), while the range of motion at the ankle was significantly larger (pweek1 <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4330f1f7-b37e-4376-ad23-4efdfa2da292",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C23",
+      "claim": "The range of motion at the ankle was significantly larger in the first week after VL paralysis (pweek1 <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The ranges of motion of the hip and knee were significantly smaller in the first week after VL paralysis (hip: pweek1 = 0.008; knee: pweek1 <0.001), while the range of motion at the ankle was significantly larger (pweek1 <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "cdbc8ee8-2ec3-42eb-a24a-bbb6f1b4f67f",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C24",
+      "claim": "At week 2, the hip and the knee ROM remained significantly lower than baseline (hip: pweek2 = 0.007; knee: pweek2 <0.001) whereas the ankle was no longer significantly increased (pweek2 = 0.059).",
+      "claim_type": "EXPLICIT",
+      "source": "At week 2, the hip and the knee ROM remained significantly lower than baseline (hip: pweek2 = 0.007; knee: pweek2 <0.001) whereas the ankle was no longer significantly increased (pweek2 = 0.059).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "cc85fc1d-bdcb-4654-a38b-c0da749105f0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C25",
+      "claim": "By week 7, the ROM of the hip and ankle joints were not significantly different from baseline (hip: pweek7 = 0.502; ankle: pweek7 = 0.781) but there was a modest, though significant, decrease in the knee range of motion (pweek7 = 0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "By week 7, the ROM of the hip and ankle joints were not significantly different from baseline (hip: pweek7 = 0.502; ankle: pweek7 = 0.781) but there was a modest, though significant, decrease in the knee range of motion (pweek7 = 0.009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "cbb97302-cfc4-4544-83ac-b9f07db7339a",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C26",
+      "claim": "The hip angle was significantly decreased after the first week (i.e. more flexed; pweek1 = 1, pweek2 = 0.003, pweek7 = 0.032).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6a\u2013b, the hip angle was significantly decreased after the first week (i.e. more flexed; pweek1 = 1, pweek2 = 0.003, pweek7 = 0.032), and the ankle angle was significantly increased at all time points (i.e. more extended; pweek1 = 0.030, pweek2 = 0.004, pweek7 = 0.038) as compared to baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "6aa63ff3-18a7-47f6-a391-84ebd06c2477",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C27",
+      "claim": "The ankle angle was significantly increased at all time points (i.e. more extended; pweek1 = 0.030, pweek2 = 0.004, pweek7 = 0.038) as compared to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6a\u2013b, the hip angle was significantly decreased after the first week (i.e. more flexed; pweek1 = 1, pweek2 = 0.003, pweek7 = 0.032), and the ankle angle was significantly increased at all time points (i.e. more extended; pweek1 = 0.030, pweek2 = 0.004, pweek7 = 0.038) as compared to baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "59cafcb8-99fa-4da3-bd99-83d869dfcf89",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C28",
+      "claim": "The knee angle was significantly reduced in the first two weeks after VL paralysis (pweek1 <0.001, pweek2 = 0.031), but was not significantly different from baseline at 7 weeks (pweek7 = 0.167).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, although the knee angle was significantly reduced in the first two weeks after VL paralysis (pweek1 <0.001, pweek2 = 0.031), it was not significantly different from baseline at 7 weeks (pweek7 = 0.167).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b66e69a7-7c57-47ab-bd06-64b61b19dc46",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C29",
+      "claim": "Both limb length and limb angle measured at the end of stance were initially altered after VL paralysis (limb length: pweek1 <0.001; limb angle: pweek1 = 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6c, both limb length and limb angle measured at the end of stance were initially altered after VL paralysis (limb length: pweek1 <0.001; limb angle: pweek1 = 0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7b34776e-ec76-4221-8875-627f49cadb1c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C30",
+      "claim": "Limb length and limb angle alterations disappeared over the adaptation period so that these measures were not significantly different from baseline levels (limb length: pweek2 = 0.142, pweek7 = 1; limb angle: pweek2 = 0.141, pweek7 = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "However, these alterations disappeared over the adaptation period so that these measures were not significantly different from baseline levels (limb length: pweek2 = 0.142, pweek7 = 1; limb angle: pweek2 = 0.141, pweek7 = 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "18fe4319-19cb-4051-aa6d-fcba24a12cfe",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C31",
+      "claim": "Animals compensated for VL paralysis by increasing activation of RF while maintaining the activation of VM at levels similar to those observed before the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that animals compensated for VL paralysis by increasing activation of RF while maintaining the activation of VM at levels similar to those observed before the perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1ddea059-a367-4b55-9fdc-c018ddee99ee",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C32",
+      "claim": "The increased RF activation strategy restores the knee extension torque lost after VL paralysis while causing minimal additional mediolateral patellar forces.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy restores the knee extension torque lost after VL paralysis while causing minimal additional mediolateral patellar forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known mechanical properties of RF and the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "2dc2ca7b-a895-4f40-aa08-c4b3ea8a2d62",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C33",
+      "claim": "The increased RF activation resulted in a persistent perturbation in joint kinematics due to the extra hip flexor torque from RF.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased RF activation resulted in a persistent perturbation in joint kinematics due to the extra hip flexor torque from RF, but global aspects of limb kinematics were restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b5a37c6b-7553-4ad1-95fc-0d8e2eb77077",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C34",
+      "claim": "Global aspects of limb kinematics were restored after VL paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased RF activation resulted in a persistent perturbation in joint kinematics due to the extra hip flexor torque from RF, but global aspects of limb kinematics were restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "6e114ae4-0a0d-4875-8b66-f6c388b54d33",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C35",
+      "claim": "The CNS considers internal joint stresses and strains when choosing muscle activations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the CNS considers internal joint stresses and strains when choosing muscle activations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing preferential increase in RF activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "59f41406-84c6-46c8-9bd5-9539efdda4be",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C36",
+      "claim": "Increased activation of RF introduces an additional flexion torque at the hip.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increased activation of RF, while restoring the knee extension torque lost by VL paralysis, also introduces an additional flexion torque at the hip (Johnson et al., 2008; Greene, 1963) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Johnson et al., 2008 and Greene, 1963, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4c0c5ba6-c094-4887-9163-ac346aacb40f",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C37",
+      "claim": "Increasing activation of RF restores knee extension function while producing negligible additional mediolateral forces on the patella.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing activation of RF restores knee extension function while producing negligible additional mediolateral forces on the patella (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the known mechanical properties of RF illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e2d60e11-b783-4844-8f39-0e6efa7245c6",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C38",
+      "claim": "Higher activation of VM would increase the medial force on the patella and cause excess patellofemoral loading.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, higher activation of VM would increase the medial force on the patella and cause excess patellofemoral loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanical properties of VM and inference about the consequences of increased activation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e78a3570-63b2-4055-82ff-c7a53ec655c4",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C39",
+      "claim": "The selective increase in RF mass likely reflects a use-dependent strengthening of that muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a selective increase in the mass of RF that likely reflects a use-dependent strengthening of that muscle, although we did not confirm this by measuring peak forces or myosin content (Blaauw et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about use-dependent muscle adaptation, with a citation to Blaauw et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a31e712a-092d-4581-86c3-9b31184dffca",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C40",
+      "claim": "The increased RF mass suggests that at late time points of the adaptation, the loss of VL was compensated both by higher neural activity and by additional force generating capability of RF.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it suggests that at late time points of the adaptation, the loss of VL was compensated both by higher neural activity and by additional force generating capability of RF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed increase in RF mass and activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "79923d95-aed6-472e-8aee-b8f3e4ff9c6b",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C41",
+      "claim": "The increased RF activation was not specific to treadmill locomotion, but was also used in behaviors not measured in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this result suggests that the increased RF activation was not specific to treadmill locomotion, but was also used in behaviors we did not measure here; if there was increased VM or VI activation in other behaviors, we would have observed an increase in the mass of those muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the selective increase in RF mass and the absence of mass increase in VM and VI.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "f6add7a0-91ed-43d7-b47b-c7dafc018761",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C42",
+      "claim": "There was no consistent change in the activation of VI during the adaptation period.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of no change in the mass of VI also suggests that there was no consistent change in the activation of this muscle during the adaptation period, though we did not record from VI in these experiments due its small size and inaccessibility for implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of mass change in VI.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e4e34e30-7c72-45f3-a2b0-c51ae71837ae",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C43",
+      "claim": "VM activation levels were on average similar to those observed before VL paralysis, even after 7 weeks of adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a complete silencing of VM, even after 7 weeks of adaptation: VM activation levels were on average similar to those observed before VL paralysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4a3f3dd3-0134-4f7a-aa07-380cfa517277",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C44",
+      "claim": "A residual medial force on the patella persisted throughout the adaptation period.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that a residual medial force on the patella persisted throughout the adaptation period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the persistent VM activation and the known mechanical properties of VM.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1c80d732-4a53-4f7c-9dfc-976977880de0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C45",
+      "claim": "Residual VM activity might reflect a compromise between unbalanced mediolateral patellar forces and perturbations in joint kinematics caused by the increased activation of RF.",
+      "claim_type": "EXPLICIT",
+      "source": "Such residual VM activity might reflect a compromise between unbalanced mediolateral patellar forces and perturbations in joint kinematics caused by the increased activation of RF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the possible explanation for the observed residual VM activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "60d099ea-b45a-48db-84ac-0f8a97207da2",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C46",
+      "claim": "Muscle paralysis caused persistent changes at individual joint kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle paralysis caused persistent changes at individual joint kinematics, we observed restoration of global limb kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "5b662ab0-1f53-4284-a4de-34f63368f787",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C47",
+      "claim": "Global limb kinematics were restored after VL paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle paralysis caused persistent changes at individual joint kinematics, we observed restoration of global limb kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "bdfe4649-7d32-40af-8b70-de5d2703c348",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C48",
+      "claim": "The results are consistent with ideas such as those used in uncontrolled manifold analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with ideas such as those used in uncontrolled manifold analyses (Latash et al., 2007) and with previous results examining adaptation following paralysis of triceps surae in rats and cats (Chang et al., 2009; Bauman and Chang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Latash et al., 2007; Chang et al., 2009; Bauman and Chang, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "137772e8-c3a4-4b14-a0f5-f7e1ab9dda86",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C49",
+      "claim": "The results suggest a hierarchical control of movement, in which higher level variables related to task goals (i.e. global limb variables) are preserved after VL paralysis while lower level variables related to task execution (i.e. individual joint angles) are allowed to vary.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, our results suggest a hierarchical control of movement, in which higher level variables related to task goals (i.e. global limb variables) are preserved after VL paralysis while lower level variables related to task execution (i.e. individual joint angles) are allowed to vary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations of restored global kinematics but persistent changes in individual joint angles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b57667aa-8ff6-4c96-900b-138b6fb3ce81",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C50",
+      "claim": "Many criteria have been proposed to influence the activation of muscles during behavior, but they generally do not consider the internal state of joints.",
+      "claim_type": "EXPLICIT",
+      "source": "Many criteria have been proposed to influence the activation of muscles during behavior (Alessandro, 2016; Prilutsky, 2000), but they generally do not consider the internal state of joints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Alessandro, 2016 and Prilutsky, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4059329a-09fc-4872-af63-33d9b80e5071",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C51",
+      "claim": "Some criteria might indirectly minimize joint stresses and strains (e.g. minimum jerk or torque change), but they would not predict the selective increase in RF activation observed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some of these criteria might indirectly minimize joint stresses and strains (e.g. minimum jerk [Flash and Hogan, 1985] or torque change [Uno et al., 1989]), they would not predict the selective increase in RF activation observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known properties of these optimization criteria, with citations to Flash and Hogan, 1985 and Uno et al., 1989.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7eabc514-cae6-45ad-8a0e-392169cd7fed",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C52",
+      "claim": "Including criteria that explicitly consider the consequences of muscle activation on joint stresses and strains might improve the predictions of optimization approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Including criteria that explicitly consider the consequences of muscle activation on joint stresses and strains might improve the predictions of such optimization approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how to improve motor control models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b71dcee0-02f7-4885-bba9-7af672404e4c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C53",
+      "claim": "The co-evolution of neural control and musculoskeletal anatomy might result in a neuromechanical system such that muscle activations optimizing task performance criteria also optimize internal joint state criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-evolution of neural control and musculoskeletal anatomy (Valero-Cuevas, 2015) might result in a neuromechanical system such that muscle activations optimizing task performance criteria also optimize internal joint state criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary mechanisms, with a citation to Valero-Cuevas, 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "86c8fb00-a356-48c1-b03d-71cf083815e0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C54",
+      "claim": "When VM and VL are intact, a criterion that minimizes muscle metabolism or that considers signal dependent variability would predict a distributed activation of VM and VL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when VM and VL are intact, a criterion that minimizes muscle metabolism (Kistemaker et al., 2014; Prilutsky, 2000), or that considers signal dependent variability (Harris and Wolpert, 1998; Haruno and Wolpert, 2005) would predict a distributed activation of VM and VL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established motor control theories, with citations to Kistemaker et al., 2014; Prilutsky, 2000; Harris and Wolpert, 1998; Haruno and Wolpert, 2005.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "9a6b0a2d-a44c-4bca-9676-c048529699f4",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C55",
+      "claim": "Distributed activation of VM and VL might result from optimization over evolutionary time scales and be implemented in coordinative structures such as muscle synergies within the spinal cord or other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This distributed activation of VM and VL might result from optimization over evolutionary time scales (Giszter, 2015) and be implemented in coordinative structures such as muscle synergies (Tresch and Jarc, 2009; Alessandro et al., 2013a; Alessandro et al., 2013b) within the spinal cord (Levine et al., 2014; Hart and Giszter, 2010; Takei et al., 2017) or other brain regions (Overduin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary and neural mechanisms, with multiple citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a5ebf86c-9bf3-48a1-86d6-ee99e8cb4717",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C56",
+      "claim": "Distributed activation of VM and VL could balance net mediolateral patellar forces, even though such a balance was not explicitly considered.",
+      "claim_type": "EXPLICIT",
+      "source": "This distributed activation could in turn balance net mediolateral patellar forces, even though such a balance was not explicitly considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how implicit regulation might occur.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "d38fd86c-dbd7-488b-bd9a-d692eb4b2dfd",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C57",
+      "claim": "After injuries that alter limb properties, implicit regulation of internal joint state might be compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "After injuries that alter limb properties (Gutierrez et al., 2009; O'Connor et al., 1993), this implicit regulation of internal joint state might be compromised (Needle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on citations to Gutierrez et al., 2009; O'Connor et al., 1993; Needle et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "6297ec31-4715-4b97-9d01-72eadb622555",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C58",
+      "claim": "After injuries, the CNS might be forced into a solution that requires a tradeoff between task performance and internal joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In these situations, the CNS might be forced into a solution that requires a tradeoff between task performance and internal joint stresses and strains, such as that observed in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the consequences of injury, based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e744550f-e8ff-415e-aa5b-84c3cd086c17",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C59",
+      "claim": "One common suggestion is that patellofemoral pain (PFP) results from an imbalance in mediolateral patellar forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many factors have been shown to contribute to PFP (Smith et al., 2018; Fagan and Delahunt, 2008), one common suggestion is that PFP results from an imbalance in mediolateral patellar forces (Pal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Smith et al., 2018; Fagan and Delahunt, 2008; Pal et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "0767a0f4-bcd9-428e-b2c7-1dc081e97ebc",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C60",
+      "claim": "The CNS regulates mediolateral patellar forces, but this regulation is imperfect since VM activation persisted after VL paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that although the CNS regulates these mediolateral forces, this regulation is imperfect since VM activation persisted after VL paralysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observation of persistent VM activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "8bf69fff-63f9-45ee-a7f8-ecb06f6983c8",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C61",
+      "claim": "PFP might result from imperfect regulation of patellar forces, potentially reflecting a compromise between criteria related to task performance and internal joint states.",
+      "claim_type": "EXPLICIT",
+      "source": "PFP might result from similarly imperfect regulation of patellar forces, potentially reflecting a compromise between criteria related to task performance and internal joint states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the etiology of PFP based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1506be2d-08d9-49c1-85b4-027247d5ce74",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C62",
+      "claim": "The experiments highlight the importance of considering the consequences of rehabilitation on internal joint stresses and strains following injuries, rather than solely focusing on restoration of task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, our experiments highlight the importance of considering the consequences of rehabilitation on internal joint stresses and strains following injuries (Farrokhi et al., 2013; Shull et al., 2013; Simic et al., 2011), rather than solely focusing on restoration of task performance (Hollands et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about clinical implications, with citations to Farrokhi et al., 2013; Shull et al., 2013; Simic et al., 2011; Hollands et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "2a57553e-2638-4f80-80d3-90047b5e305b",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C63",
+      "claim": "Sensory receptors in the joint can convey information about strains in ligaments or stresses between bones.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory receptors in the joint can convey information about strains in ligaments or stresses between bones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about joint sensory receptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "cbb95684-d972-4561-b882-db46eee457a0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C64",
+      "claim": "Activity in joint sensory receptors can be conveyed to spinal interneuronal populations and other areas to drive rapid feedback control of muscles or longer term adaptation of muscle activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity in these receptors can be conveyed to spinal interneuronal populations (Solomonow et al., 1987; Iles et al., 1990) and other areas (Sj\u00f6lander et al., 2002) to drive rapid feedback control of muscles (Ferrell, 1980) or longer term adaptation of muscle activations in order to avoid potential injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Solomonow et al., 1987; Iles et al., 1990; Sj\u00f6lander et al., 2002; Ferrell, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "104ed069-aed1-4481-9995-0b5ec4a77fda",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C65",
+      "claim": "The CNS could derive information about internal joint structures indirectly from muscle proprioceptors, combining information about muscle forces and lengths with 'internal' models of muscle anatomy to estimate joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNS could also derive information about internal joint structures indirectly from muscle proprioceptors (Wilmink and Nichols, 2003), combining information about muscle forces and lengths with 'internal' models of muscle anatomy to estimate joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms, with a citation to Wilmink and Nichols, 2003.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a54e9e01-0cbd-43d0-857b-8e47bbc18634",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C66",
+      "claim": "Predictive models of muscle actions, combined with efference copy of motor commands, could be used to make feedforward predictions of internal joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, predictive models of muscle actions, combined with efference copy of motor commands, could be used to make feedforward predictions of internal joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7623b5c2-2b3e-4de1-9507-fffef9f5b24e",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C67",
+      "claim": "The strong coherence between VM and VL across frequencies observed in humans is consistent with the importance of coordinated activation of these muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong coherence between VM and VL across frequencies (Laine et al., 2015) observed in humans is consistent with the importance of coordinated activation of these muscles (Br\u00f8chner Nielsen et al., 2017), whether by feedforward or feedback processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Laine et al., 2015 and Br\u00f8chner Nielsen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "0671f321-3a32-4935-b2cf-b34de0b5b9b9",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C68",
+      "claim": "Coordinated muscle activation is similar to ideas of muscle synergies, so that the balanced activation of muscles within a synergy would reflect regulation of joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This coordinated muscle activation is also similar to ideas of muscle synergies (Tresch and Jarc, 2009; Alessandro et al., 2013a; Alessandro et al., 2013b), so that the balanced activation of muscles within a synergy would reflect regulation of joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the relationship between muscle synergies and joint stress regulation, with citations to Tresch and Jarc, 2009; Alessandro et al., 2013a; Alessandro et al., 2013b.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "1c259bba-af7e-49a5-93db-f92d1ac6785d",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C69",
+      "claim": "Neural control of internal joint states might be relatively coarse, only responding to large deviations in joint states inducing discomfort or pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that neural control of internal joint states might be relatively coarse, only responding to large deviations in joint states inducing discomfort or pain (Grigg and Greenspan, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation with a citation to Grigg and Greenspan, 1977.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "740ee9f3-7da9-4c44-8ed0-c301d913f29c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C70",
+      "claim": "Coarse control of joint state might reflect the 'good enough' habitual strategy, potentially resulting in the residual activation of VM observed in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a coarse control of joint state might reflect the 'good enough' habitual strategy (de Rugy et al., 2012) described above, potentially resulting in the residual activation of VM observed in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation with a citation to de Rugy et al., 2012.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "85b17bd3-70fb-44c6-bc31-a484ab344a5e",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C71",
+      "claim": "The loss of sensory information from the paralyzed muscle might contribute to the observed changes in muscle activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the muscle paralysis by denervation used in these experiments has been used in many studies to examine neural adaptation strategies (Bauman and Chang, 2013; Dambreville et al., 2016; Frigon and Rossignol, 2007; Bennett et al., 2012; Bouyer et al., 2001; Maas et al., 2007), the loss of sensory information from the paralyzed muscle might contribute to the observed changes in muscle activation (Akay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential confound, with multiple citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "bc75ec64-add8-4c62-bf69-12414d8a8637",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C72",
+      "claim": "The rat knee joint might provide a tractable experimental model to examine the neural control of joint stresses and strains in both healthy subjects and following injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The rat knee joint might therefore provide a tractable experimental model to examine the neural control of joint stresses and strains in both healthy subjects and following injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the utility of the rat model based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a6795e12-4278-4f85-bcf5-d00cb74e51d2",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C73",
+      "claim": "Experiments were performed on female Sprague Dawley rats (n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed experiments on female Sprague Dawley rats (n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "89b21fc8-8fc9-4357-81de-89752d3ebaf5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C74",
+      "claim": "All procedures were approved by the Animal Care Committee of Northwestern University.",
+      "claim_type": "EXPLICIT",
+      "source": "All the procedures were approved by the Animal Care Committee of Northwestern University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c0e2e424-aa90-4288-9b94-012dc1d7a79c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C75",
+      "claim": "Chronic EMG electrodes were implanted in multiple hindlimb muscles including VL, VM, RF, SM, BFp, TA, and GRc.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted pairs of electrodes in seven muscles: vastus lateralis (VL), vastus medialis (VM), rectus femoris (RF), semimembranosus (SM), biceps femoris posterior (BFp), tibialis anterior (TA), and caudal gracilis (GRc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "96e0ab53-0fea-44d1-a505-ebe4bbb3f7fc",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C76",
+      "claim": "During VL paralysis surgery, the quadriceps nerve plexus was exposed, the branch to VL was isolated, anesthetized with lidocaine, tied off in two locations with silk suture, and then cut between the sutures.",
+      "claim_type": "EXPLICIT",
+      "source": "During aseptic surgery (isoflurane, 3% in O2 ~ 2 l/min), we exposed the quadriceps nerve plexus, and isolated the branch to VL. We anesthetized this branch with lidocaine, tied it off in two locations with silk suture to prevent re-innervation, and then cut between the sutures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "fa178662-3d58-4569-844f-ba3c492f435f",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C77",
+      "claim": "Each recording session consisted of two minutes of locomotion at the maximum comfortable speed (12\u201315 m/min) and incline (usually +25%).",
+      "claim_type": "EXPLICIT",
+      "source": "Each recording session consisted of two minutes of locomotion at the maximum comfortable speed (12\u201315 m/min) and incline (usually +25%) to induce strong quadriceps activations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "f3c00a25-9cc0-481b-b514-b03a072eb393",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C78",
+      "claim": "The 3D position of markers was tracked using a motion capture system (Vicon) at a frequency of 200 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D position of markers was tracked using a motion capture system (Vicon) at a frequency of 200 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "3d287389-6ba9-44e5-971c-325e902562cc",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C79",
+      "claim": "Kinematic signals were low-pass filtered offline at a cut-off frequency of 10 Hz (5th order Butterworth).",
+      "claim_type": "EXPLICIT",
+      "source": "These signals were low-pass filtered offline at a cut-off frequency of 10 Hz (5th order Butterworth).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "689d26f8-d3f6-4e8d-8d9e-1610a6693f8a",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C80",
+      "claim": "The 3D position of the knee was estimated by triangulation, using the lengths of the femur and the tibia, to reduce errors due to differential movements of the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to reduce errors due to differential movements of the skin (Filipe et al., 2006; Bauman and Chang, 2010), we estimated the 3D position of the knee by triangulation, using the lengths of the femur and the tibia (Bauman and Chang, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data processing methods, with citations to Filipe et al., 2006 and Bauman and Chang, 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "f72284ff-f6a9-4fad-8140-f4499a28e111",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C81",
+      "claim": "Differential EMG signals were amplified (1000X), band-pass filtered (30\u20131000 Hz) and notch filtered (60 Hz), and then digitalized (5000 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Differential EMG signals were amplified (1000X), band-pass filtered (30\u20131000 Hz) and notch filtered (60 Hz), and then digitalized (5000 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "77e6af3a-b942-4915-9c20-46f571d9fee5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C82",
+      "claim": "The digitalized EMG signals were further band-pass filtered offline to remove motion artifacts (5\u2013500 Hz, 4th order Butterworth), rectified, and envelopes were computed from the rectified signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The digitalized signals were further band-pass filtered offline to remove motion artifacts (5\u2013500 Hz, 4th order Butterworth), rectified, and envelopes were computed from the rectified signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "0662503c-1a8e-4708-ac3b-c1dd261597cf",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C83",
+      "claim": "Linear Mixed Effect Models (LMEM) were employed to analyze both kinematic and EMG data using the nlme package in the R environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed Linear Mixed Effect Models (LMEM) to analyze both kinematic and EMG data using the nlme package (Pinheiro et al., 2017) in the R environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical methods, with a citation to Pinheiro et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e5943e73-8ce2-4e84-8151-41d07e5c8a58",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C84",
+      "claim": "The use of LMEMs allows exploitation of large numbers of observations for each animal across the adaptation period, obtaining maximal statistical power from a relatively small number of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of LMEMs allows us to exploit the fact that we have large numbers of observations for each animal across the adaptation period, obtaining the maximal statistical power from a relatively small number of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the rationale for the statistical approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "861b83f0-8e00-4d60-ac92-d7b56ea2a950",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C85",
+      "claim": "LMEMs allow analysis of samples of different size, coping with missing data, and taking into account variability at different levels of the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "LMEMs also allow us to analyze samples of different size (e.g. unequal numbers of strides across days and animals), to cope with missing data (potentially due to the inclusion criteria described above), and to take into account variability at different levels of the dataset (e.g. across strides, across days, and across subjects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the statistical approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "6ba89d3b-9ccd-439e-9686-04557600aaee",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C86",
+      "claim": "Tests were considered statistically significant if their p-values were lower than the 0.05 significance level.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered tests to be statistically significant if their p-values were lower than the 0.05 significance level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "51e1c831-8f72-4725-82f0-81dfff04d75c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C87",
+      "claim": "To compare the masses of the quadriceps in the denervated limb to those in the intact limb, paired t-tests were performed for each muscle, and the obtained p-values were adjusted with Bonferroni corrections.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the masses of the quadriceps in the denervated limb to those in the intact limb, we performed paired t-tests for each muscle, and we adjusted the obtained p-values with Bonferroni corrections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c863da9e-d756-41c3-bfe9-f4dd087a4bdd",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C88",
+      "claim": "Muscles must act through joints to produce movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to produce movements, muscles must act through joints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of biomechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "dd6ed924-e361-478e-8a82-5355c6a14a83",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C89",
+      "claim": "The translation from muscle force to limb movement is mediated by internal joint structures that permit movement in some directions but constrain it in others.",
+      "claim_type": "EXPLICIT",
+      "source": "The translation from muscle force to limb movement is mediated by internal joint structures that permit movement in some directions but constrain it in others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of joint mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "06638565-e28e-4dad-bf6e-7b8121be28a5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C90",
+      "claim": "Muscle forces acting against constrained directions will not affect limb movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle forces acting against constrained directions will not affect limb movements, such forces can cause excess stresses and strains in joint structures, leading to pain or injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of joint mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "2a88af51-929f-4c12-bae2-f81ecd1b7ac9",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C91",
+      "claim": "Muscle forces acting against constrained directions can cause excess stresses and strains in joint structures, leading to pain or injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle forces acting against constrained directions will not affect limb movements, such forces can cause excess stresses and strains in joint structures, leading to pain or injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of joint mechanics and clinical observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "5a680149-15e7-45c6-a8e9-01c059512550",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C92",
+      "claim": "The CNS chooses muscle activations to avoid excessive joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we hypothesized that the central nervous system (CNS) chooses muscle activations to avoid excessive joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "9ec5bfc4-4205-4059-bb6c-d7e922f64b5d",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C93",
+      "claim": "The CNS compromises between restoration of task performance and regulation of joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the CNS compromises between restoration of task performance and regulation of joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "557c92c6-6f37-439a-9884-4fb1f49dc7b5",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C94",
+      "claim": "Common theories emphasizing task performance are insufficient to explain muscle activations during behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have significant implications to our understanding of the neural control of movements, suggesting that common theories emphasizing task performance are insufficient to explain muscle activations during behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "34511a43-a208-4405-8627-d69c91e496ce",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C95",
+      "claim": "The question of how the CNS determines motor commands is usually answered in terms of task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "The question of how the central nervous system (CNS) determines motor commands is usually answered in terms of task performance (Todorov and Jordan, 2002; Guigon et al., 2007; Scott, 2004): the CNS activates muscles according to how they contribute to task goals such as grasping an object or escaping a predator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Todorov and Jordan, 2002; Guigon et al., 2007; Scott, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "a0ce301c-9f38-4bb4-9782-8d9cd71684e3",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C96",
+      "claim": "Additional criteria based on energetics, dynamics, or kinematics can further constrain muscle activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional criteria based on energetics (Todorov and Jordan, 2002; Izawa et al., 2008; Kurtzer et al., 2006), dynamics (Uno et al., 1989), or kinematics (Flash and Hogan, 1985) can further constrain muscle activations, and the specific criteria used by the CNS to specify muscle activations underlying behavior has been the topic of considerable research (Scott, 2004; Todorov, 2004; Alessandro, 2016; Kistemaker et al., 2014; Prilutsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "b955f9d5-15de-48bc-bfd8-2858468ecbed",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C97",
+      "claim": "Previous work on motor control has generally ignored how muscles act on internal joint structures such as ligaments or articular cartilage between bones.",
+      "claim_type": "EXPLICIT",
+      "source": "This previous work, however, has generally ignored another critical aspect of muscle actions: how muscles act on internal joint structures such as ligaments or articular cartilage between bones (Herzog et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Herzog et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c03fd299-49c9-448c-81e3-a2d06ef8c338",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C98",
+      "claim": "Muscle actions on internal joint structures have been considered in clinical biomechanics or sports medicine in the context of injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle actions on internal joint structures have been considered in clinical biomechanics or sports medicine in the context of injuries (Farrokhi et al., 2013; Pal et al., 2012; Felson, 2013; Konrath et al., 2017), their more general role in the context of the neural control of movement and how they are balanced with task goals remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Farrokhi et al., 2013; Pal et al., 2012; Felson, 2013; Konrath et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e4d1c9e6-2168-486a-b031-71cc1a337fab",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C99",
+      "claim": "The more general role of muscle actions on internal joint structures in the context of neural control of movement and how they are balanced with task goals remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although muscle actions on internal joint structures have been considered in clinical biomechanics or sports medicine in the context of injuries (Farrokhi et al., 2013; Pal et al., 2012; Felson, 2013; Konrath et al., 2017), their more general role in the context of the neural control of movement and how they are balanced with task goals remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "fc49e196-4942-441c-a445-ae4dbf9bb4f4",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C100",
+      "claim": "Evaluating whether the CNS regulates stresses and strains within internal joint structures is challenging, primarily because of the complexity of joint mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating whether the CNS regulates stresses and strains within internal joint structures is challenging, primarily because of the complexity of joint mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in studying this topic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "9d6503cb-cbe8-4f0f-97c7-3f1a46c36096",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C101",
+      "claim": "Since muscles can only affect task performance by acting through joint structures, any manipulation affecting joint structures will usually also affect task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Since muscles can only affect task performance by acting through joint structures (Herzog et al., 2003), any manipulation affecting joint structures will usually also affect task performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge with a citation to Herzog et al., 2003.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "fca2d2fe-b9c0-4d7e-9531-83bd020d940c",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C102",
+      "claim": "Damage to a ligament will alter both the distribution of stresses and strains within the joint as well as how muscle forces are transmitted across the joint.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, damage to a ligament (Gutierrez et al., 2009; Needle et al., 2014; O'Connor et al., 1993) will alter both the distribution of stresses and strains within the joint (Chen et al., 2017; Gardinier et al., 2013) as well as how muscle forces are transmitted across the joint (Boeth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "403e2664-64bf-42ff-80da-c8b7b2268b5f",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C103",
+      "claim": "Removal of sensory feedback from joint structures might compromise neural control of joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, although removal of sensory feedback from joint structures might compromise neural control of joint stresses and strains (O'Connor et al., 1993; O'Connor et al., 1992; Salo et al., 2002; Solomonow, 2006; Solomonow and Krogsgaard, 2001; Johansson et al., 1991), this sensory feedback can also provide information about task performance (Ferrell et al., 1985; Sj\u00f6lander et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "f037d417-5bf2-4cc6-abe1-a78b71d379c1",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C104",
+      "claim": "Sensory feedback from joint structures can provide information about task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, although removal of sensory feedback from joint structures might compromise neural control of joint stresses and strains (O'Connor et al., 1993; O'Connor et al., 1992; Salo et al., 2002; Solomonow, 2006; Solomonow and Krogsgaard, 2001; Johansson et al., 1991), this sensory feedback can also provide information about task performance (Ferrell et al., 1985; Sj\u00f6lander et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ferrell et al., 1985 and Sj\u00f6lander et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "ebadde2a-e2a9-4e39-a15b-78a7c5127cee",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C105",
+      "claim": "These challenges have made it difficult to reach clear conclusions as to whether the CNS controls internal joint stresses and strains.",
+      "claim_type": "EXPLICIT",
+      "source": "These challenges have made it difficult to reach clear conclusions as to whether the CNS controls internal joint stresses and strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "497fd322-77b4-4c77-aa1f-ca694f7c47b3",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C106",
+      "claim": "Vastus intermedius (VI) is very small in the rat and so is unlikely to contribute substantially to the adaptation following VL paralysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that vastus intermedius (VI) is very small in the rat and so is unlikely to contribute substantially to the adaptation following VL paralysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on anatomical knowledge of the rat.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "77bc22a4-ae30-4619-84f2-ea8e6f38a9ea",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C107",
+      "claim": "Rats compensated for the loss of VL by preferentially increasing activation of RF.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that rats compensated for the loss of VL by preferentially increasing activation of RF, consistent with the hypothesis that the CNS chooses muscle activations to minimize stresses and strains to internal joint structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "e98c9790-bfe5-4f4a-b21a-40cedb531c22",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "claim_id": "C108",
+      "claim": "The preferential increase in RF activation is consistent with the hypothesis that the CNS chooses muscle activations to minimize stresses and strains to internal joint structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that rats compensated for the loss of VL by preferentially increasing activation of RF, consistent with the hypothesis that the CNS chooses muscle activations to minimize stresses and strains to internal joint structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02ac6a5f-e67d-4422-9ab1-f96fb4d58a60",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VL denervation successfully abolished VL activation during locomotion, with persistent loss of EMG activity over 7 weeks and significant muscle atrophy (p<0.001) at 8 weeks post-denervation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 provide converging evidence from EMG recordings (Figure 2a-b) and muscle mass measurements (Figure 2c) that VL was effectively paralyzed. The persistent loss of activation and significant atrophy with appropriate statistical support demonstrate successful denervation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "8ecec763-6b40-44b9-a11c-47725125b1a9",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Following VL paralysis, rats preferentially increased RF activation while maintaining VM activation at baseline levels. RF activity was significantly elevated at all time points (p<0.007 at week 1, p<0.001 at weeks 2 and 7), while VM activity was not significantly different from baseline at any time point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 and C31 are well-supported by EMG data in Figure 3 with appropriate statistical tests. The differential response between RF and VM is statistically significant at all time points (p<0.001), providing strong evidence for preferential RF recruitment. The sample sizes and statistical methods (LMEM with Bonferroni corrections) are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "f14e3598-d5c7-4f29-893d-ae7d3951150a",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RF muscle mass increased significantly in the affected limb (p=0.047) while VM and VI masses remained unchanged, suggesting use-dependent hypertrophy of RF and indicating that increased RF activation was not specific to treadmill locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by muscle mass measurements (Figure 4) with appropriate statistical tests (paired t-tests with Bonferroni corrections). However, the p-value for RF (p=0.047) is marginally significant with n=6 animals. Claims C39-C42 are reasonable inferences from the selective mass increase, though the authors acknowledge they did not measure peak forces or myosin content to confirm hypertrophy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "VL paralysis initially reduced stance phase duration and hip/knee range of motion while increasing ankle range of motion. By week 7, most kinematic parameters recovered to baseline levels, though a modest but significant decrease in knee ROM persisted (p=0.009).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 are supported by kinematic data in Figure 5 with appropriate statistical analysis using LMEMs. The temporal progression of recovery is well-documented with multiple time points. The persistent knee ROM deficit at week 7 is statistically significant but modest, suggesting incomplete recovery of local joint kinematics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "fe57286f-4941-41a6-9aa1-f055517cb7c2",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Individual joint angles showed persistent alterations after VL paralysis: hip angle remained more flexed (p=0.032 at week 7), ankle angle remained more extended (p=0.038 at week 7), while knee angle recovered by week 7 (p=0.167).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C33, and C46 are supported by detailed kinematic analysis in Figure 6a-b. The persistent changes in hip and ankle angles are consistent with the extra hip flexor torque from increased RF activation (C33). Statistical support is appropriate with LMEMs and multiple comparisons corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "52ab3497-2cd9-4f8e-bac2-c6e058fdad24",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Global limb kinematics (limb length and limb angle) were initially altered after VL paralysis but recovered to baseline levels by weeks 2-7, despite persistent changes in individual joint angles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30, C34, and C47 are supported by data in Figure 6c showing restoration of global kinematic parameters. This demonstrates that the CNS prioritizes global task-level variables over individual joint angles, consistent with hierarchical motor control theories. The statistical evidence is strong with appropriate corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "0d6282f7-e916-4e9f-826b-052395ec2a6b",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The preferential increase in RF activation restores knee extension torque while minimizing mediolateral patellar forces, demonstrating that the CNS considers internal joint stresses when choosing muscle activations and compromises between task performance and joint stress regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C35, C93, C107-C108 represent the main conclusion of the study. The preferential RF recruitment (supported by C9-C14) over VM is consistent with minimizing mediolateral patellar forces while restoring knee extension. This interpretation is well-supported by the experimental data, though it relies on established biomechanical knowledge about muscle actions (C1-C4, C36-C38) rather than direct measurement of patellar forces.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "bbade510-1e61-47b5-a637-5d5b0ae66974",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VM activation persisted at baseline levels throughout the 7-week adaptation period, implying residual medial patellar forces and imperfect regulation of joint stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C60 are supported by EMG data (Figure 3). The persistent VM activation demonstrates incomplete optimization of patellar forces. Claim C45 is speculative about the reasons for this persistence, but the observation itself is well-documented. This finding is important for understanding the limits of neural adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "46b9ac73-e16e-48b8-8948-f64835ff74da",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results suggest hierarchical motor control where global limb variables (task goals) are preserved while individual joint angles (task execution) are allowed to vary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is a reasonable inference from the observation that global kinematics recovered (C29-C30, C47) while individual joint angles showed persistent changes (C26-C28, C46). This interpretation is consistent with motor control theories and supported by citations (C48), though it remains an inference rather than a directly tested hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7defe634-d36a-48bb-b058-1e06a7a5d952",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the rat knee, VL and VM produce similar joint torques (redundant for task performance) but opposing mediolateral patellar forces, while RF produces knee extension with minimal mediolateral patellar forces but introduces hip flexion torque.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C36-C38 establish the biomechanical foundation for the study and are supported by multiple citations (Sandercock et al., 2018; Lin et al., 2004; Wilson and Sheehan, 2010; Johnson et al., 2008; Greene, 1963). These claims are critical for interpreting the experimental results but are based on prior work rather than new measurements in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used 6 female Sprague Dawley rats with chronic EMG electrodes in 7 hindlimb muscles, VL denervation by nerve cut, kinematic tracking at 200 Hz, and Linear Mixed Effect Models for statistical analysis with p<0.05 significance threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C87 describe the experimental methods and are directly stated in the Materials and Methods section. The methods are generally appropriate, though the small sample size (n=6) is a limitation. The use of LMEMs is well-justified (C84-C85) for handling repeated measures with unequal sample sizes. The statistical approach with Bonferroni corrections is appropriate for multiple comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "191a8783-4583-4c9c-bb07-2ddd41b4de43",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Common motor control theories emphasizing task performance (e.g., minimum jerk, torque change) do not consider internal joint states and would not predict the selective RF increase observed, suggesting these theories are insufficient to explain muscle activations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C94 are supported by citations to motor control literature and represent a reasonable critique based on the experimental findings. The preferential RF recruitment is indeed inconsistent with simple task-performance optimization that would predict VM recruitment. Claim C52 is a reasonable suggestion for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "258a3ccb-982f-4422-b70f-17474f3c4c76",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The co-evolution of neural control and musculoskeletal anatomy might result in implicit regulation of joint stresses through distributed muscle activation patterns (e.g., muscle synergies), which may be compromised after injury, forcing tradeoffs between task performance and joint stress regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C58 are speculative (as acknowledged by evidence_type: SPECULATION) about evolutionary mechanisms and implicit regulation. While these are interesting hypotheses consistent with the data, they are not directly tested in this study. The speculation is reasonable and well-cited, but represents future directions rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "3012a7d2-95fb-44ad-91e0-eb9d869a25ee",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings have clinical implications for patellofemoral pain (PFP) and rehabilitation, suggesting that imperfect regulation of patellar forces may contribute to PFP and that rehabilitation should consider internal joint stresses rather than solely focusing on task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59, C61-C62 extend the findings to clinical contexts. While C59 is supported by citations about PFP etiology, C61 is speculative about applying the rat findings to human PFP. C62 is a reasonable inference about rehabilitation implications, but the rat model may not directly translate to human clinical practice. These represent important potential applications but require validation in clinical populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Neural control of joint stresses could be mediated by joint sensory receptors, muscle proprioceptors, or feedforward predictions, potentially implemented through coordinated muscle activation or synergies, though this control may be relatively coarse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C70 discuss potential neural mechanisms for joint stress regulation. C63-C64 are supported by citations about joint receptors, while C65-C66 and C68-C70 are speculative about mechanisms. C67 cites human coherence data consistent with coordinated VM-VL activation. These claims represent plausible mechanisms but are not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "66b7ec2a-c69f-43ea-aebc-068ed698bb94",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The loss of sensory information from the denervated VL muscle might contribute to the observed changes in muscle activation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 acknowledges a potential confound in the experimental design. Denervation eliminates both motor output and sensory feedback from VL, making it difficult to isolate the contribution of each. This is an important limitation that could affect interpretation of the results, though the authors appropriately acknowledge it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "7b6f488e-aa60-4dad-86a0-c0ca9d865284",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The rat knee joint provides a tractable experimental model for studying neural control of joint stresses due to the clear distinction between task performance and patellar force contributions of quadriceps muscles, and VI is unlikely to contribute substantially due to its small size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C106 are reasonable assessments based on the experimental findings and anatomical knowledge. The rat model did allow clear predictions about adaptation strategies (Figure 1b), and the results support its utility. C106 is based on anatomical knowledge and is a reasonable assumption, though VI was not directly recorded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    },
+    {
+      "id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0",
+      "content_id": "50c6145b-a899-4e5f-b110-0c5fe871e250",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The introduction establishes that muscles act through joints, which can cause internal joint stresses; previous motor control work has generally ignored internal joint structures; and evaluating CNS regulation of joint stresses is challenging because manipulations affecting joints also affect task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C105 establish the background and rationale for the study. These are well-supported by citations to biomechanics and motor control literature. The claims accurately represent the state of the field and identify the gap that this study addresses. The challenge described in C100-C105 justifies the experimental approach using the rat knee model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:15:13.677166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f2d699a-2269-416a-966f-4f7522fa085c",
+      "result_id": "02ac6a5f-e67d-4422-9ab1-f96fb4d58a60"
+    },
+    {
+      "claim_id": "8a84a4d7-981b-4c1f-b0a6-bc2b405016e5",
+      "result_id": "02ac6a5f-e67d-4422-9ab1-f96fb4d58a60"
+    },
+    {
+      "claim_id": "c712e0fb-7bdf-496b-bdb7-b7a8ac3a61b5",
+      "result_id": "02ac6a5f-e67d-4422-9ab1-f96fb4d58a60"
+    },
+    {
+      "claim_id": "72b3e574-4d76-490a-9589-81dd8f7a382b",
+      "result_id": "02ac6a5f-e67d-4422-9ab1-f96fb4d58a60"
+    },
+    {
+      "claim_id": "932817e7-d43d-4e26-8a8d-305060920aa5",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "e08d0cb7-bf8e-42c5-82b2-44006f3efd88",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "22ac9a3e-3f4d-475c-a4f2-e79b4ffab4a7",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "1bdecbcc-37d2-4f59-b78d-08db0d0edc6f",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "435f297a-11a6-4db4-9bd9-867216eec17c",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "c7c9c77d-2afa-4ed8-8c5b-9cfa068b8481",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "18fe4319-19cb-4051-aa6d-fcba24a12cfe",
+      "result_id": "8ecec763-6b40-44b9-a11c-47725125b1a9"
+    },
+    {
+      "claim_id": "b064857c-2571-41bf-8127-15f0af085728",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "d86037dc-6589-4ef3-9174-2596cd477bdb",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "e78a3570-63b2-4055-82ff-c7a53ec655c4",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "a31e712a-092d-4581-86c3-9b31184dffca",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "79923d95-aed6-472e-8aee-b8f3e4ff9c6b",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "f6add7a0-91ed-43d7-b47b-c7dafc018761",
+      "result_id": "f14e3598-d5c7-4f29-893d-ae7d3951150a"
+    },
+    {
+      "claim_id": "b0d0a2d4-1df4-4e2f-b8be-bdb2cddf056a",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "a7d63303-adfd-45a8-bd94-0df568aa11e0",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "b3f5fcff-3be5-4888-89ed-c25b9bc8e8db",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "42db4238-eab0-4f36-ba95-bc0127191465",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "dfb53d67-f9c9-417f-8ff1-bb0050d21b50",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "9f547da7-2e76-411f-92e6-3823fc843990",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "4330f1f7-b37e-4376-ad23-4efdfa2da292",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "cdbc8ee8-2ec3-42eb-a24a-bbb6f1b4f67f",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "cc85fc1d-bdcb-4654-a38b-c0da749105f0",
+      "result_id": "c51a1f11-e8a8-48e3-a4db-8a20106b99dd"
+    },
+    {
+      "claim_id": "cbb97302-cfc4-4544-83ac-b9f07db7339a",
+      "result_id": "fe57286f-4941-41a6-9aa1-f055517cb7c2"
+    },
+    {
+      "claim_id": "6aa63ff3-18a7-47f6-a391-84ebd06c2477",
+      "result_id": "fe57286f-4941-41a6-9aa1-f055517cb7c2"
+    },
+    {
+      "claim_id": "59cafcb8-99fa-4da3-bd99-83d869dfcf89",
+      "result_id": "fe57286f-4941-41a6-9aa1-f055517cb7c2"
+    },
+    {
+      "claim_id": "2dc2ca7b-a895-4f40-aa08-c4b3ea8a2d62",
+      "result_id": "fe57286f-4941-41a6-9aa1-f055517cb7c2"
+    },
+    {
+      "claim_id": "60d099ea-b45a-48db-84ac-0f8a97207da2",
+      "result_id": "fe57286f-4941-41a6-9aa1-f055517cb7c2"
+    },
+    {
+      "claim_id": "b66e69a7-7c57-47ab-bd06-64b61b19dc46",
+      "result_id": "52ab3497-2cd9-4f8e-bac2-c6e058fdad24"
+    },
+    {
+      "claim_id": "7b34776e-ec76-4221-8875-627f49cadb1c",
+      "result_id": "52ab3497-2cd9-4f8e-bac2-c6e058fdad24"
+    },
+    {
+      "claim_id": "b5a37c6b-7553-4ad1-95fc-0d8e2eb77077",
+      "result_id": "52ab3497-2cd9-4f8e-bac2-c6e058fdad24"
+    },
+    {
+      "claim_id": "5b662ab0-1f53-4284-a4de-34f63368f787",
+      "result_id": "52ab3497-2cd9-4f8e-bac2-c6e058fdad24"
+    },
+    {
+      "claim_id": "1ddea059-a367-4b55-9fdc-c018ddee99ee",
+      "result_id": "0d6282f7-e916-4e9f-826b-052395ec2a6b"
+    },
+    {
+      "claim_id": "6e114ae4-0a0d-4875-8b66-f6c388b54d33",
+      "result_id": "0d6282f7-e916-4e9f-826b-052395ec2a6b"
+    },
+    {
+      "claim_id": "9ec5bfc4-4205-4059-bb6c-d7e922f64b5d",
+      "result_id": "0d6282f7-e916-4e9f-826b-052395ec2a6b"
+    },
+    {
+      "claim_id": "77bc22a4-ae30-4619-84f2-ea8e6f38a9ea",
+      "result_id": "0d6282f7-e916-4e9f-826b-052395ec2a6b"
+    },
+    {
+      "claim_id": "e98c9790-bfe5-4f4a-b21a-40cedb531c22",
+      "result_id": "0d6282f7-e916-4e9f-826b-052395ec2a6b"
+    },
+    {
+      "claim_id": "e4e34e30-7c72-45f3-a2b0-c51ae71837ae",
+      "result_id": "bbade510-1e61-47b5-a637-5d5b0ae66974"
+    },
+    {
+      "claim_id": "4a3f3dd3-0134-4f7a-aa07-380cfa517277",
+      "result_id": "bbade510-1e61-47b5-a637-5d5b0ae66974"
+    },
+    {
+      "claim_id": "1c80d732-4a53-4f7c-9dfc-976977880de0",
+      "result_id": "bbade510-1e61-47b5-a637-5d5b0ae66974"
+    },
+    {
+      "claim_id": "0767a0f4-bcd9-428e-b2c7-1dc081e97ebc",
+      "result_id": "bbade510-1e61-47b5-a637-5d5b0ae66974"
+    },
+    {
+      "claim_id": "137772e8-c3a4-4b14-a0f5-f7e1ab9dda86",
+      "result_id": "46b9ac73-e16e-48b8-8948-f64835ff74da"
+    },
+    {
+      "claim_id": "5cf7a78d-7ed0-4d17-9d88-acbbbf55509b",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "4cdd8484-b78c-497d-b326-ecbba0fd1449",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "1ba94c61-34c7-4df2-a01d-fe215f9fa804",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "49bac964-e394-49e5-a59f-0c802d3e9341",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "59f41406-84c6-46c8-9bd5-9539efdda4be",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "4c0c5ba6-c094-4887-9163-ac346aacb40f",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "e2d60e11-b783-4844-8f39-0e6efa7245c6",
+      "result_id": "7defe634-d36a-48bb-b058-1e06a7a5d952"
+    },
+    {
+      "claim_id": "a6795e12-4278-4f85-bcf5-d00cb74e51d2",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "89b21fc8-8fc9-4357-81de-89752d3ebaf5",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "c0e2e424-aa90-4288-9b94-012dc1d7a79c",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "96e0ab53-0fea-44d1-a505-ebe4bbb3f7fc",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "fa178662-3d58-4569-844f-ba3c492f435f",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "f3c00a25-9cc0-481b-b514-b03a072eb393",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "3d287389-6ba9-44e5-971c-325e902562cc",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "689d26f8-d3f6-4e8d-8d9e-1610a6693f8a",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "f72284ff-f6a9-4fad-8140-f4499a28e111",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "77e6af3a-b942-4915-9c20-46f571d9fee5",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "0662503c-1a8e-4708-ac3b-c1dd261597cf",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "e5943e73-8ce2-4e84-8151-41d07e5c8a58",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "861b83f0-8e00-4d60-ac92-d7b56ea2a950",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "6ba89d3b-9ccd-439e-9686-04557600aaee",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "51e1c831-8f72-4725-82f0-81dfff04d75c",
+      "result_id": "63bdb049-2e50-45c6-a88a-d6a21e534e5d"
+    },
+    {
+      "claim_id": "b57667aa-8ff6-4c96-900b-138b6fb3ce81",
+      "result_id": "191a8783-4583-4c9c-bb07-2ddd41b4de43"
+    },
+    {
+      "claim_id": "4059329a-09fc-4872-af63-33d9b80e5071",
+      "result_id": "191a8783-4583-4c9c-bb07-2ddd41b4de43"
+    },
+    {
+      "claim_id": "7eabc514-cae6-45ad-8a0e-392169cd7fed",
+      "result_id": "191a8783-4583-4c9c-bb07-2ddd41b4de43"
+    },
+    {
+      "claim_id": "557c92c6-6f37-439a-9884-4fb1f49dc7b5",
+      "result_id": "191a8783-4583-4c9c-bb07-2ddd41b4de43"
+    },
+    {
+      "claim_id": "b71dcee0-02f7-4885-bba9-7af672404e4c",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "86c8fb00-a356-48c1-b03d-71cf083815e0",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "9a6b0a2d-a44c-4bca-9676-c048529699f4",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "a5ebf86c-9bf3-48a1-86d6-ee99e8cb4717",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "d38fd86c-dbd7-488b-bd9a-d692eb4b2dfd",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "6297ec31-4715-4b97-9d01-72eadb622555",
+      "result_id": "258a3ccb-982f-4422-b70f-17474f3c4c76"
+    },
+    {
+      "claim_id": "e744550f-e8ff-415e-aa5b-84c3cd086c17",
+      "result_id": "3012a7d2-95fb-44ad-91e0-eb9d869a25ee"
+    },
+    {
+      "claim_id": "8bf69fff-63f9-45ee-a7f8-ecb06f6983c8",
+      "result_id": "3012a7d2-95fb-44ad-91e0-eb9d869a25ee"
+    },
+    {
+      "claim_id": "1506be2d-08d9-49c1-85b4-027247d5ce74",
+      "result_id": "3012a7d2-95fb-44ad-91e0-eb9d869a25ee"
+    },
+    {
+      "claim_id": "2a57553e-2638-4f80-80d3-90047b5e305b",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "cbb95684-d972-4561-b882-db46eee457a0",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "104ed069-aed1-4481-9995-0b5ec4a77fda",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "a54e9e01-0cbd-43d0-857b-8e47bbc18634",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "7623b5c2-2b3e-4de1-9507-fffef9f5b24e",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "0671f321-3a32-4935-b2cf-b34de0b5b9b9",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "1c259bba-af7e-49a5-93db-f92d1ac6785d",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "740ee9f3-7da9-4c44-8ed0-c301d913f29c",
+      "result_id": "4d4d46d8-1b25-4362-ab85-fbcb3f2cf204"
+    },
+    {
+      "claim_id": "85b17bd3-70fb-44c6-bc31-a484ab344a5e",
+      "result_id": "66b7ec2a-c69f-43ea-aebc-068ed698bb94"
+    },
+    {
+      "claim_id": "bc75ec64-add8-4c62-bf69-12414d8a8637",
+      "result_id": "7b6f488e-aa60-4dad-86a0-c0ca9d865284"
+    },
+    {
+      "claim_id": "497fd322-77b4-4c77-aa1f-ca694f7c47b3",
+      "result_id": "7b6f488e-aa60-4dad-86a0-c0ca9d865284"
+    },
+    {
+      "claim_id": "c863da9e-d756-41c3-bfe9-f4dd087a4bdd",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "dd6ed924-e361-478e-8a82-5355c6a14a83",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "06638565-e28e-4dad-bf6e-7b8121be28a5",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "2a88af51-929f-4c12-bae2-f81ecd1b7ac9",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "5a680149-15e7-45c6-a8e9-01c059512550",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "34511a43-a208-4405-8627-d69c91e496ce",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "a0ce301c-9f38-4bb4-9782-8d9cd71684e3",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "b955f9d5-15de-48bc-bfd8-2858468ecbed",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "c03fd299-49c9-448c-81e3-a2d06ef8c338",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "e4d1c9e6-2168-486a-b031-71cc1a337fab",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "fc49e196-4942-441c-a445-ae4dbf9bb4f4",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "9d6503cb-cbe8-4f0f-97c7-3f1a46c36096",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "fca2d2fe-b9c0-4d7e-9531-83bd020d940c",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "403e2664-64bf-42ff-80da-c8b7b2268b5f",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "f037d417-5bf2-4cc6-abe1-a78b71d379c1",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    },
+    {
+      "claim_id": "ebadde2a-e2a9-4e39-a15b-78a7c5127cee",
+      "result_id": "603e496a-7ecf-4fd3-8728-1fa4e482a8b0"
+    }
+  ],
+  "comparisons": []
+}

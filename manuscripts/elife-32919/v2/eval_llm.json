@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C115"
+    ],
+    "result": "Tumor-associated macrophages (TAMs) in B16 melanoma tumors specifically express the NKG2D ligand RAE-1\u03b4, but not other NKG2D ligands. This expression is specific to TAMs within the tumor microenvironment and not observed in macrophages from other tissues in tumor-bearing mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C32, and C115 collectively demonstrate RAE-1\u03b4 expression on TAMs in B16 tumors through flow cytometry data (Figure 1A-B), with specificity confirmed by RAE-1-KO mice (C30) and absence in non-tumor macrophages (C31). The gating strategy (C115) and multiple independent experiments provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RAE-1\u03b4 expression on TAMs varies across different tumor models. Expression is consistent across tumor growth stages in B16 tumors, robust in KP sarcomas, but negligible in RMA-S lymphomas and TRAMP prostate tumors, indicating tumor microenvironment-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by flow cytometry data across multiple tumor models (Figure 1C and supplements). The differential expression patterns across tumor types are clearly demonstrated, though the mechanistic basis for these differences is not explored in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A soluble factor produced by B16 and KP tumor cells is sufficient to induce RAE-1\u03b4 expression on macrophages ex vivo, as demonstrated by conditioned medium experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by conditioned medium experiments (Figure 2A-B) showing robust RAE-1\u03b4 induction. The experimental design with appropriate controls (fresh medium vs. conditioned medium) provides clear evidence for a soluble inducing factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C57",
+      "C86",
+      "C91"
+    ],
+    "result": "CSF-1 is sufficient to induce RAE-1\u03b4 expression on macrophages in a dose-dependent manner (3-10 ng/ml), acting through CSF-1R. CSF-1 specifically upregulates RAE-1\u03b4 but not other NKG2D ligands, and induces Raet1d mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49, C57, C86, and C91 are strongly supported by multiple lines of evidence: recombinant CSF-1 induces RAE-1\u03b4 (Figure 2C), CSF-1R blockade prevents induction (C43), dose-response data (C45), qPCR shows mRNA upregulation (C44), and specificity for RAE-1\u03b4 over other ligands (C46-C47). The cytokine screen (Table 1) confirms CSF-1 specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "B16 and KP tumor cells secrete substantial CSF-1, while RMA-S cells do not. Intratumoral CSF-1 concentrations in B16 tumors are significantly higher than in RMA-S tumors and exceed serum CSF-1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by ELISA data (Figure 3A-B and supplements) showing differential CSF-1 production by tumor cell lines and elevated intratumoral CSF-1 in B16 tumors. The correlation between CSF-1 production and RAE-1\u03b4 induction on TAMs strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "CSF-1 is necessary for macrophage RAE-1\u03b4 induction by B16 and KP tumor cell supernatants in vitro, as demonstrated by complete abrogation of induction upon CSF-1R blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C58 are supported by antibody blockade experiments (Figure 3C-D) showing complete prevention of RAE-1\u03b4 induction by CSF-1R blocking antibody. This establishes necessity of the CSF-1/CSF-1R axis for the observed effect in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Short-term (2-day) antibody blockade of CSF-1 or CSF-1R substantially reduces RAE-1\u03b4 expression on TAMs in B16 and KP tumors in vivo without affecting macrophage numbers, while longer treatment (5+ days) depletes TAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by in vivo antibody blockade experiments (Figure 4A-B and supplements) with appropriate time-course analysis. The temporal separation of RAE-1\u03b4 downregulation (2 days) from TAM depletion (5+ days) is well-documented and strengthens the conclusion that CSF-1 directly regulates RAE-1\u03b4 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Tumor-derived CSF-1 is necessary and sufficient for RAE-1\u03b4 expression on TAMs in vivo, as demonstrated by CRISPR/Cas9 knockout of Csf1 in B16 cells (reducing TAM RAE-1\u03b4), rescue by Csf1 re-expression, and gain-of-function in RMA-S cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are strongly supported by genetic manipulation experiments (Figure 5A-D). The use of two independent Csf1-KO clones (C64-C65), rescue experiment (C66), and gain-of-function in RMA-S cells (C67) provide compelling evidence for tumor-derived CSF-1 as the driver of TAM RAE-1\u03b4 expression. This represents decisive genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C88"
+    ],
+    "result": "PI3K p110\u03b1 activity is required for CSF-1-induced RAE-1\u03b4 expression on macrophages. CSF-1 stimulation activates PI3K signaling (S6 phosphorylation), and specific p110\u03b1 inhibitors prevent RAE-1\u03b4 induction at both protein and mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 and C88 are supported by pharmacological inhibitor studies (Figure 6A-C) showing isoform-specific effects of PI3K inhibitors, with p110\u03b1 inhibitors effective at low concentrations. S6 phosphorylation data (C69) confirms pathway activation. However, C71 acknowledges that high concentrations of other isoform inhibitors also block induction, likely due to off-target effects, which is appropriately noted as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CSF-1-induced RAE-1\u03b4 on macrophages functionally engages NKG2D on NK cells, leading to receptor internalization, as demonstrated by NKG2D downregulation in co-culture experiments with RAE-1\u03b4-expressing macrophages or B16 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by co-culture experiments (Figure 7A-B) showing NKG2D downregulation with appropriate controls (RAE-1-KO macrophages, parental B16 cells). This demonstrates functional receptor-ligand interaction, though the biological consequence of this interaction in vivo remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C105"
+    ],
+    "result": "Short-term co-culture of NK cells with CSF-1-stimulated RAE-1\u03b4-expressing macrophages or B16-RAE-1\u03b4 cells primes NK cells for augmented functional responses to subsequent NKp46 stimulation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C105 are supported by in vitro functional assays (Figure 7C-D) showing enhanced NK cell degranulation and IFN\u03b3 production after co-culture with RAE-1\u03b4-expressing cells. However, the manuscript acknowledges this in vitro priming effect may not reflect in vivo function, as discussed in claims C107-C112.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C109"
+    ],
+    "result": "RAE-1\u03b4 expression on TAMs does not affect TAM numbers in B16 tumors, and NKG2D does not select against TAMs with high RAE-1\u03b4 expression, as shown by similar TAM frequencies and RAE-1\u03b4 levels in WT vs. RAE-1-KO or NKG2D-KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C109 are supported by flow cytometry analysis in knockout mice (Figure 7\u2014figure supplement 1A-B). These negative results are important for ruling out certain mechanisms (e.g., NK cell-mediated TAM killing) and are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C83"
+    ],
+    "result": "The CSF-1/CSF-1R/PI3K\u03b1 signaling pathway represents a novel mechanism for NKG2D ligand expression on tumor-associated macrophages, integrating tumor-derived signals with macrophage immunoregulatory molecule expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C83 represent the overarching conclusion synthesizing the experimental findings. This is well-supported by the collective data from multiple experimental approaches (conditioned medium, recombinant cytokine, antibody blockade, genetic manipulation, and pharmacological inhibition). The novelty claim is supported by the discussion (C90, C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on NKG2D receptor, its ligands, signaling mechanisms, and regulation in various cellular contexts, establishing the foundation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C23 represent established knowledge from the literature, appropriately cited. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior studies have documented NKG2D ligand expression on various immune cells including macrophages, dendritic cells, and tumor-associated cells in different contexts, providing precedent for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C92-C94 summarize relevant prior literature with appropriate citations. These establish that NKG2D ligand expression on non-tumor cells is not unprecedented, but the specific CSF-1-mediated mechanism is novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "The specificity of NKG2D ligand induction is striking: only macrophages and monocytes among hematopoietic cells express NKG2D ligands in the studied tumor models, and expression is limited to RAE-1\u03b4, suggesting tight and specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 and C87 represent interpretive conclusions from the experimental data (particularly Figure 1). The specificity is well-documented, though the molecular basis for this specificity remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C97",
+      "C103"
+    ],
+    "result": "CSF-1 signaling and PI3K p110\u03b1 have been previously implicated in macrophage biology and NKG2D ligand regulation in other contexts, providing mechanistic precedent for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C97, and C103 cite relevant prior literature establishing that the signaling components identified here have precedent in related biological contexts. This strengthens the plausibility of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C95"
+    ],
+    "result": "This study is the first to identify CSF-1 as an inducer of NKG2D ligands and represents a novel molecular signature linked to NKG2D ligand induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C95 assert novelty of the findings. This is supported by the literature review in the discussion and the lack of prior reports of CSF-1-mediated NKG2D ligand induction. The novelty claim is appropriately qualified ('to our knowledge').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C98"
+    ],
+    "result": "RAE-1\u03b4 expression does not fit within the classical M1/M2 macrophage polarization paradigm, as classical M1 (IFN\u03b3) and M2 (IL-4) cytokines failed to induce RAE-1\u03b4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C98 are supported by the cytokine screen data (Table 1) and discussion. This negative result is important for contextualizing the findings within macrophage biology, though the M1/M2 paradigm is acknowledged as controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "RAE-1\u03b4 induction requires elevated CSF-1 levels beyond those needed for macrophage survival and maintenance, suggesting macrophages may sense elevated CSF-1 as an indicator of local homeostatic disturbance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by the dose-response data (Figure 2\u2014figure supplement 1B) and comparison of tumor vs. serum CSF-1 levels (Figure 3\u2014figure supplement 1B). Claim C102 is appropriately labeled as speculation, representing an interesting hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "Speculative discussion of potential biological roles and contexts for macrophage RAE-1\u03b4 expression, including tumor adaptation, context-dependent NK cell modulation, and effects on macrophage biology or other NKG2D-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C110-C112, and C114 are explicitly speculative (appropriately labeled in evidence_type). These represent reasonable hypotheses for future investigation but are not supported by data in the current manuscript. They are appropriately presented as speculation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C113"
+    ],
+    "result": "Prior studies have shown varied effects of RAE-1 expression on myeloid cells and NK cell function, with context-dependent outcomes including both stimulatory effects in vitro and desensitization in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 and C113 cite relevant prior literature, including the authors' own recent work (Thompson et al., 2017), showing that RAE-1 effects on NK cells are complex and context-dependent. This provides important context for interpreting the current in vitro functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Monocytes in B16 tumors are identified by the surface marker profile CD45+CD11b-hiLy6G-negF4/80-lowLy6C-hi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 describes the gating strategy for monocytes, supported by Figure 1\u2014figure supplement 3A. This is a methodological detail necessary for interpreting the data showing weak RAE-1\u03b4 expression on monocytes (C29).",
+    "result_type": "MINOR"
+  }
+]

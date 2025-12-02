@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "3bfcd2aa-7110-40ca-ad10-eb5d90a0d43e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:41:39.479580Z",
+    "updated_at": "2025-12-01T19:41:39.479580Z"
+  },
+  "content": [
+    {
+      "id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "submission_id": "3bfcd2aa-7110-40ca-ad10-eb5d90a0d43e",
+      "content_type": "manuscript",
+      "content_text": "# A large gene family in fission yeast encodes spore killers that subvert Mendel\u2019s law\n\n## Authors\n\n- Wen Hu<sup>1</sup> ([ORCID: 0000-0002-0604-2119](https://orcid.org/0000-0002-0604-2119))\n- Zhao-Di Jiang<sup>1</sup>\n- Fang Suo<sup>1</sup>\n- Jin-Xin Zheng<sup>1</sup>\n- Wan-Zhong He<sup>1</sup>\n- Li-Lin Du<sup>1</sup> ([ORCID: 0000-0002-1028-7397](https://orcid.org/0000-0002-1028-7397)) \u2020\n\n### Affiliations\n\n1. National Institute of Biological Sciences Beijing China\n2. PTN Graduate Program, School of Life Sciences Tsinghua University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpore killers in fungi are selfish genetic elements that distort Mendelian segregation in their favor. It remains unclear how many species harbor them and how diverse their mechanisms are. Here, we discover two spore killers from a natural isolate of the fission yeast Schizosaccharomyces pombe. Both killers belong to the previously uncharacterized wtf gene family with 25 members in the reference genome. These two killers act in strain-background-independent and genome-location-independent manners to perturb the maturation of spores not inheriting them. Spores carrying one killer are protected from its killing effect but not that of the other killer. The killing and protecting activities can be uncoupled by mutation. The numbers and sequences of wtf genes vary considerably between S. pombe isolates, indicating rapid divergence. We propose that wtf genes contribute to the extensive intraspecific reproductive isolation in S. pombe, and represent ideal models for understanding how segregation-distorting elements act and evolve.\n\n## Introduction\n\nMendel\u2019s law of equal segregation stipulates that paternal and maternal alleles of a gene should have an equal chance of being transmitted to progenies. This law guarantees a fair competition between different alleles and enables beneficial ones to prevail during natural selection. Meiotic drivers, a type of selfish genetic element, break Mendel\u2019s law by skewing transmission ratios to their advantage, and thus can spread in a population even when having a deleterious effect on organismal fitness (Lindholm et al., 2016; Werren, 2011). The term \u2018meiotic drive\u2019 was initially coined to describe segregation distortion resulting from preferential inclusion in the gamate during asymmetric female meiosis but has now been used more broadly to include biased transmission caused by postmeiotic mechanisms. In fact, some of the best-known meiotic drivers, such as Segregation Distorter in Drosophila and the t haplotype in mouse (Lyon, 2003; Larracuente and Presgraves, 2012), act postmeiotically to disable male gametes (sperms) that do not inherit them. This type of meiotic driver, called gamete killer, exists in animals, plants, and fungi (Burt and Trivers, 2006). Fungal gamete killers, or spore killers, have been found in several filamentous ascomycetes, most notably Neurospora and Podospora anserina (Dalstra et al., 2003; Grognet et al., 2014; Hammond et al., 2012; Turner and Perkins, 1979). It is unclear how widespread spore killers are among fungal species.\n\nThe fission yeast Schizosaccharomyces pombe is a prominent model organism for molecular and cell biology and has been increasingly used to study natural variation and genome evolution (Brown et al., 2011; Hu et al., 2015; Jeffares et al., 2015; Rhind et al., 2011). S. pombe natural isolates, which are nearly all haploids and have pair-wise nucleotide differences of less than 1% (Jeffares et al., 2015; Rhind et al., 2011), can readily mate with each other to form hybrid diploids, but the viability of spores derived from inter-isolate crosses is often below 5% and in many instances under 1% (Gutz and Doe, 1975; Kondrat\u2019'eva and Naumov, 2001; Naumov et al., 2015). This is in stark contrast to Saccharomyces cerevisiae, whose natural isolates have a similar level of nucleotide diversity but much better spore viability when inter-crossed (Hou et al., 2014). One explanation for the within-species hybrid sterility in S. pombe is chromosomal rearrangement (Avelar et al., 2013; Brown et al., 2011; Zanders et al., 2014). However, because one rearrangement reduces spore viability at most by half (Avelar et al., 2013; Hou et al., 2014), other factors are likely in play. It was shown recently that when the S. pombe laboratory strain, which was isolated from French grape juice (Hu et al., 2015; Osterwalder, 1924), was crossed to a strain isolated from fermented tea (initially called Schizosaccharomyces kambucha [Singh and Klar, 2003], later renamed S. pombe var. kambucha [Rhind et al., 2011]), at least three spore killers contributed to hybrid sterility (Bomblies, 2014; Zanders et al., 2014), but the identities of the killer genes were unknown.\n\nIn this study, through investigating the causes of intraspecific hybrid sterility of fission yeast, we uncovered the molecular identities of two active spore killers, which both belong to the wtf gene family. We analyzed their killing behaviors in both native and non-native genomic contexts. Furthermore, we performed comparative genomic analysis of wtf genes and revealed interesting patterns of divergence among\u00a0them.\n\n## Results\n\nWe have previously studied CBS5557, an S. pombe strain isolated from grapes in Spain (Hu et al., 2015; Rankine and Fornachon, 1964). Like most S. pombe isolates, CBS5557 differs from the laboratory strain, whose genome is the S. pombe reference genome, in a 2.23 Mb pericentric inversion on chromosome I (Brown et al., 2011). After introducing the same inversion into the laboratory strain (Hu et al., 2015), the viability of spores derived from the cross between the laboratory strain and CBS5557 increased from 14% to 22% (Figure 1\u2014figure supplement 1 and Supplementary file 1). To uncover the causes of the remaining sterility, we performed next-generation sequencing (NGS)-assisted bulk segregant analysis (Hu et al., 2015) and found that among the viable progenies from the cross, SNP alleles of the laboratory strain (reference alleles) on chromosome III were markedly under-represented (Figure 1A). Two broad transmission distortion peaks, one on the left arm (hereafter referred to as the left peak) and one on the right arm (hereafter referred to as the right peak), were observed, suggesting that there are at least two spore killer genes on chromosome III of CBS5557.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig1-v1.jpg)\n\n**Figure 1.:** (A) NGS-assisted bulk segregant analysis of viable progenies from a cross between DY9974, a heterothallic derivative of CBS5557, and DY8531, a laboratory strain harboring the 2.23 Mb chromosome I inversion (Hu et al., 2015). Reference allele frequencies at SNP positions are plotted as dots. Red trend lines are based on a rolling median calculation. Two vertical dashed lines denote the positions of cw9 and cw27 genes on chromosome III. Black triangles mark the positions of centromeres. (B and C) Bulk segregant analysis of viable progenies from crosses between a laboratory strain and the backcrossed-1 strain, and between a laboratory strain and the backcrossed-2 strain, respectively. Blue and orange colored segments in the diagrams and on the X-axes of the plots denote chromosome III regions with reference genome sequence and those with CBS5557 genome sequence, respectively, in the two backcrossed strains. (D and E) Schematics of the regions surrounding cw9 and cw27 in the CBS5557 genome and the corresponding regions in the reference genome. Gene structures of cw9 and cw27 were predicted using the AUGUSTUS web server (Stanke et al., 2008). Solo LTRs were annotated based on BLAST analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative tetrads from a cross between LD775, an h- laboratory strain, and DY9974, an h+ derivative of CBS5557. (B) Representative tetrads from a cross between DY8531, an h- laboratory strain harboring the 2.23 Mb chromosome I inversion (Hu et al., 2015), and DY9974. (C) Quantitation of spore viability assessed by tetrad analysis. p-value was calculated using Fisher\u2019s exact test. Numerical data are provided in Supplementary file 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The sequences were aligned using MAFFT via Jalview (Katoh et al., 2002; Waterhouse et al., 2009). Identical bases are indicated by blue background. Red and green boxes denote the first and second predicted protein coding exons, respectively. Predicted start codons are highlighted with red letters. Gene structure of cw9 was predicted using the AUGUSTUS web server (Stanke et al., 2008).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The reference genome LTR was referred\u00a0to\u00a0as PCRW_055 or C3_1895301 in Bowen et al. (2003). According to the classification proposed in Bowen et al., these three LTR sequences belong to the \u03b6 clade. The sequences were aligned using MAFFT via Jalview. Identical bases are indicated by grey background. 7-nt-long homology at the breakpoint is highlighted in red. Matched sequences upstream and downstream of the breakpoint are colored in green.\n\nTo narrow down the genomic regions containing the spore killer genes, we performed multiple rounds of backcross and obtained strains with only a portion of chromosome III originating from CBS5557 and the rest of the genome coming from the laboratory strain (see 'Materials and methods'). We selected two backcrossed strains that retained the ability to skew inheritance of markers inserted in the left and right peak regions, respectively. These two strains, referred to as backcrossed-1 and backcrossed-2, respectively, were crossed to the laboratory strain and viable progenies were subjected to NGS-assisted bulk segregant analysis, which revealed the locations of the CBS5557 genomic segments present in the two backcrossed strains and confirmed the allele transmission bias (left-side plots in Figure 1B and C).\n\nThrough inspecting the Illumina and PacBio sequencing data of the CBS5557 genome, we discovered that, within the CBS5557 genomic segments in the two backcrossed strains, sequences most divergent from the reference genome are those containing wtf family genes (Figure 1D and E). wtf (for with Tf LTRs) genes were so named because they are often in close proximity to solo long terminal repeats (LTRs) derived from Tf retrotransposons (Bowen et al., 2003; Wood et al., 2002). wtf genes are predicted to contain multiple introns and encode multi-transmembrane proteins and have been shown to be highly up-regulated transcriptionally during meiosis and sporulation by large-scale analyses (Bowen et al., 2003). No homologs of wtf genes have been found in any other species, including other Schizosaccharomyces species (Rhind et al., 2011). We deleted from the backcrossed-1 strain a wtf gene locating at the position of wtf9 in the reference genome but exhibiting a\u00a0low\u00a0sequence identity (42%) to wtf9 in the 5\u2019 portion (Figure 1D and Figure 1\u2014figure supplement 2) and found that the deletion notably reduced the segregation distortion (right-side plot in Figure 1B), suggesting that this wtf gene, which we named cw9 (the nomenclature of wtf genes in the\u00a0CBS5557 genome will be explained later in this paper), is a spore killer. The residual allele frequency bias is probably due to additional spore killer gene(s) in the CBS5557 genomic segments present in the backcrossed-1 strain. Within the CBS5557 genomic segment in the backcrossed-2 strain, we found a wtf gene absent in the reference genome, possibly owing to a deletion event mediated by homologous recombination between LTRs (Figure 1E and Figure 1\u2014figure supplement 3). Removing this wtf gene, which we named cw27, from the backcrossed-2 strain completely abolished segregation distortion (right-side plot in Figure 1C).\n\nTo determine how cw9 and cw27 behave in their native strain background, we generated h+/h- CBS5557 diploid strains containing homozygous or heterozygous deletion of cw9 or cw27, and performed tetrad analysis to evaluate spore viability (Figure 2A and Supplementary file 1). Homozygous deletion of cw9 or cw27 had no effect on spore viability (Figure 2A and Figure 2\u2014figure supplement 1). In contrast, heterozygous deletion of either cw9 or cw27 caused a significant reduction of spore viability, which resulted mainly from the death of spores carrying the deletion (Figure 2B). When cw9 and cw27 were both in the heterozygous state, a more severe loss of spore viability was observed, with the double deletion mutant spores suffering a particularly high level of death (Figure 2A and B, and Supplementary file 1). These data indicate that cw9 and cw27 can act as spore killers in the self-cross of CBS5557 when either of them is in the heterozygous state, and inheriting one killer can prevent its killing effect but not that of the other killer.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heterozygous deletion but not homozygous deletion of cw9 or cw27 in CBS5557 h+/h- diploid caused spore viability loss. Spore viability was measured using tetrad analysis. Representative tetrads are shown in Figure 2\u2014figure supplement 1 and in panel B. p-values were calculated using Fisher\u2019s exact test. Numerical data are provided in Supplementary file 1. (B) Among the spores derived from CBS5557 diploids with heterozygous deletion, loss of viability mainly occurred to spores with deletion. Asterisks indicate significant deviation from 50% (p=1.94E-7 and 1.42E-11 for cw9\u2206 spores from cw9\u2206/cw9+ diploid and cw27\u2206 spores from cw27\u2206/cw27+ diploid, respectively, exact binomial test). Numerical data are provided in Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig2-figsupp1-v1.jpg)\n\nTo determine whether cw9 and cw27 can cause spore killing in a non-native genomic context, we constructed integrating plasmids carrying cw9 or cw27, integrated the plasmids at various genomic locations in the laboratory strain, and subjected the resulting strains to crosses. In crosses where only one of the parental strains harbored cw9 or cw27, spores inheriting the killer had normal viability, whereas spores not inheriting the killer suffered significant loss of viability, regardless of the genomic location of the killer (Figure 3A and Figure 3\u2014figure supplement 1). We then performed crosses in which both parental strains harbored a killer at the leu1 locus (Figure 3B and Figure 3\u2014figure supplement 2). When both parental strains contained the same killer, spore viability was normal. In contrast, when one parental strain had cw9 and the other parental strain had cw27, spores inheriting either cw9 or cw27 experienced a dramatic loss of viability. These results demonstrate that cw9 and cw27 can act independently of genomic context and confirm that they do not exhibit mutual resistance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig3-v1.jpg)\n\n**Figure 3.:** (A) In crosses of laboratory strains, when only one parental strain had an insertion of cw9 or cw27 at his3, lys1, or leu1 locus, spores without the insertion suffered viability loss. Representative tetrads are shown in Figure 3\u2014figure supplement 1. p-values were calculated using Fisher\u2019s exact test. Numerical data are provided in Supplementary file 1. (B) In crosses of laboratory strains, when both parental strains had an insertion of cw9 or cw27 at the leu1 locus, spore viability was normal when parents had the same killer, but was severely low when parents had different killers. The two parental alleles were distinguished by leu1-linked antibiotic resistance markers. Representative tetrads are shown in Figure 3\u2014figure supplement 2. Numerical data are provided in Supplementary file 1. (C) Electron microscopy analysis of laboratory-background h+/h- diploid cells undergoing synchronous meiosis and sporulation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** kanMX and hphMX markers were inserted between the coordinates 1963090 and 1963096 on chromosome II so that they are tightly linked to leu1.\n\nTo observe the ultrastructural details of the spore killing process, we performed electron microscopy analysis on laboratory-background h+/h- diploid cells undergoing synchronous meiosis and sporulation induced by a shift to a nitrogen-free synthetic sporulation medium (SSL-N medium) (Figure 3C). Two diploid strains were used: a strain heterozygous for a cw27-containing plasmid integrated at the his3 locus and a control strain heterozygous for an empty vector integrated at the same locus. 12 hr after the shift, cw27-containing cells formed four-spored asci indistinguishable from those formed by the control cells. At this time point, organelles inside spores were clearly visible. 18 hr after the shift, the cytoplasm of spores derived from the control cells became electron-dense and organelles were no longer discernable, owing to a little-understood spore maturation process (Yoo et al., 1973). Interestingly, at the same time point, asci derived from the cw27-containing cells often exhibited a 2:2 pattern of spore morphology: two spores in an ascus looked like the matured spores in the control sample, whereas the other two spores exhibited cytoplasm with a lower electron density and visible organelles, an electron-lucent spore wall, and frequently a non-spherical shape. These data suggest that killer-affected spores fail to undergo a proper maturation process.\n\ncw9 and cw27 are both flanked by solo LTRs, and upstream of their predicted start codons they share a nearly identical 288-bp-long sequence (hereafter referred to as the conserved_up sequence) (Figure 4\u2014figure supplement 1), which is also conserved upstream of the coding sequences of many other wtf genes (Bowen et al., 2003). To determine whether these and other sequence features are important for spore killing, we performed truncation analysis (Figure 4A and Figure 4\u2014figure supplement 2). The truncated versions were named Ta, Tb, Tc, Td, and Te. Their effects on spore viability in a heterozygous cross of laboratory strains were examined. The Ta versions, which lack the LTRs, caused spore killing phenotypes similar to those caused by longer constructs containing the flanking LTRs, indicating that the LTRs are not important. Interestingly, the Tb versions missing the sequence between the upstream LTR and the conserved_up sequence caused spores containing the killer to suffer a moderate viability loss, suggesting that these truncated killer genes partially lost the ability to protect killer-containing spores from being harmed. Removing from the Ta versions, the sequence downstream of the predicted stop codon (Tc versions) did not have a notable effect. Removing from the Tc versions, the last 10 amino-acid-coding codons (Td versions) greatly diminished spore killing, whereas removing from the Tc versions the sequences upstream of the start codons (Te versions) resulted in more indiscriminate killing than that caused by the Tb versions. These results suggest that intact C termini are important for the killing activity, and the upstream sequences are important for the protecting activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig4-v1.jpg)\n\n**Figure 4.:** (A) Truncation analysis to assess the involvement of the 5\u2019 and 3\u2019 sequences of cw9 and cw27 in spore killing. In the diagrams on top, blue arrows represent LTRs and yellow bars represent the conserved_up sequence. Representative tetrads are shown in Figure 4\u2014figure supplement 1. p-values were calculated using Fisher\u2019s exact test. Numerical data are provided in Supplementary file 1. (B) The Td versions of cw9 and cw27 are able to effectively protect against killing despite their lack of killing activity. Representative tetrads are shown in Figure 4\u2014figure supplement 2. p-values were calculated using Fisher\u2019s exact test. Numerical data are provided in Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The starting positions of these two sequences correspond to those of the Ta truncations. The sequences were aligned using MAFFT via Jalview. Identical bases are indicated by blue background. Yellow and red boxes denote the conserved_up sequence and the first predicted protein coding exon, respectively. Predicted start codons are highlighted with red letters.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig4-figsupp2-v1.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig4-figsupp3-v1.jpg)\n\nTo determine whether the Td versions, which are largely devoid of the killing activity, can still protect, we performed crosses in which a strain with a Td-version-containing plasmid integrated at the ars1 locus was crossed to a strain with a Tc-version-containing plasmid integrated at the leu1 locus, and found that the Td versions of both cw9 and cw27 can effectively protect spores harboring them from being killed by the respective Tc-version killers (Figure 4B and Figure 4\u2014figure supplement 3). Thus, perturbing the C termini resulted in separation-of-function mutants that retain the protecting activity but can no longer kill. Such kind of mutants, if present in natural populations, would behave similarly to the resistant alleles of other previously studied gamete killers, and may also represent an intermediate state toward the extinction of a killer (Burt and Trivers, 2006).\n\nIn the reference genome, there are 25 wtf genes at 20 locations (15 singletons and five tandem pairs) (Bowen et al., 2003) (Figure 5A and B). Using PacBio sequencing, we found that in the CBS5557 genome, these 20 locations are occupied by 29 wtf genes (12 singletons, seven pairs, and one triplet), with four locations containing an extra wtf gene compared to the reference genome (Figure 5A and B). We systematically named these 29 genes according to their syntenic relationship with the 25 wtf genes in the reference genome, with each name consisting of the prefix cw, a number (from 1 to 25), and a suffix for genes at locations where extra genes exist in the CBS5557 genome (Figure 5A and B). In addition, there are three CBS5557 singleton wtf genes without syntenic counterparts in the reference genome and we named them cw26, cw27, and cw28 according to their order in the genome (Figure 5A). Like cw27, cw26 and cw28 also appeared to have been lost in the laboratory strain through LTR-mediated recombination (Figure 5\u2014figure supplement 1), suggesting that this is a common mode of wtf gene turnover.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-v1.jpg)\n\n**Figure 5.:** (A) Genomic locations of wtf genes in the reference genome and in the CBS5557 genome. The 25 wtf genes in the reference genome have been named according to their order in the genome (Bowen et al., 2003). Their locations are depicted as 20 blue vertical bars, including five thick bars denoting five tandem pairs. Our PacBio sequencing analysis revealed that in the CBS5557 genome, there are 32 wtf genes, whose locations are depicted as 23 vertical bars, including three thin red bars at locations where no wtf genes exist in the reference genome and four thick red bars at locations where compared to the reference genome one extra wtf gene is found. The wtf genes in the CBS5557 genome are named with the prefix cw and a number from the name of the syntenic gene in the reference genome. Two genes of a tandem pair corresponding to a singleton in the reference genome are distinguished using the suffixes a and b. Among the three genes of the triplet, two are named cw11 and cw12 based on their homology to wtf11 and wtf12, respectively, and the gene situated between cw11 and cw12 is named cw11x. Genes at new locations are named cw26, cw27, and cw28. Chromosome lengths are not drawn to scale. (B) Diagrams depicting the eight genomic locations with more than one wtf gene in at least one of the two genomes. Genes are shown as arrows. Introns are not shown. wtf17 is depicted not according to its annotation at PomBase, with its 5\u2019 boundary revised based on sequence alignment. (C) Maximum likelihood phylogenetic tree of 57 wtf genes of the reference genome and the CBS5557 genome. DNA sequences including the conserved_up regions, predicted coding sequences, and associated introns were aligned using the L-INS-i iterative refinement algorithm of MAFFT (Katoh and Standley, 2014) (Figure 5\u2014source data 1). Maximum likelihood analysis was performed using IQ-TREE (Nguyen et al., 2015). The tree was rooted by midpoint rooting (Hess and De Moraes Russo, 2007). Red dots on nodes indicate IQ-tree-calculated ultrafast bootstrap (UFBoot) support values\u00a0<\u00a095%. Colored rectangles highlight phylogenetic neighbors. Two genes are considered phylogenetic neighbors if they are separated by a single internal node with a support value\u00a0>=\u00a095%. Green rectangles indicate the 11 pairs of neighbors each composed of a reference wtf gene and a syntenic CBS5557 wtf gene. Yellow rectangles indicate the five pairs each composed of two wtf genes locating at different genomic positions. Magenta brackets denote the 12 genes that share a 150 bp sequence within the predicted intron 1 (see Figure 5\u2014figure supplement 3). These 12 genes are divided into two subtypes, Intron-1-ATG genes and Exon-2-ATG genes, based on the locations of the first ATG codons downstream of the 150-bp-long sequence. The brown dashed box indicates genes with six exons. Scale bar, 0.1 nucleotide substitutions per nucleotide site.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Shown at the bottom of each diagram is the breakpoint junction sequence with 100% identity between the two directly oriented LTRs flanking the CBS5557-only singleton wtf gene and its position in the reference genome.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Genes are shown as maroon arrows. Introns are not shown. Sequence alignment was performed using MAFFT via Jalview. Pair-wise identity was calculated by dividing the numbers of identical bases by the alignment length.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Red boxes denote the 150 bp sequence. The transcription start site of a short wtf23 isoform identified by the Iso-Seq method (Kuang et al., 2017) is situated closely downstream of this 150 bp sequence, and at an optimal distance from a canonical TATA box (TATAAA) (Li et al., 2015). The first ATG codons downstream of the 150 bp sequence are located within the predicted intron 1 of the top five genes, which we call Intron-1-ATG genes, and within the predicted exon 2 of the bottom 7 genes, which we call Exon-2-ATG genes. These ATG codons are all in frame with the predicted coding sequences. Proteins initiated from these ATG codons correspond to the poison isoforms in the model proposed by Nuckolls et al., 2017). Sequence coordinates and alignment are based on the MAFFT-aligned DNA sequences in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Alignment is based on the MAFFT-aligned protein sequences in Figure 5\u2014source data 3. Protein products of wtf8, wtf22, wtf24, and cw16, which belong to the 6-exon group but appear to have suffered pseudogenizing mutations, are not shown. Green brackets denote the eight transmembrane helices predicted by PolyPhobius (http://phobius.sbc.su.se/poly.html) (K\u00e4ll et al., 2005). Helices 3 and 8 are indicated with light green brackets, because the former is absent in some of the aligned sequences, and the latter has low residue-wise posterior probabilities in the PolyPhobius prediction.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/26057/elife-26057-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Alignment is based on the MAFFT-aligned protein sequences in Figure 5\u2014source data 3. Protein products of the\u00a0eight most divergent genes (wtf7, wtf11, wtf14, wtf15, cw7, cw11, cw14, and cw15) and eight genes that appear to have suffered pseudogenizing mutations (wtf1, wtf2, wtf3, wtf6, wtf12, wtf17, cw3, and cw12) are not shown. Green brackets denote the five transmembrane helices predicted by PolyPhobius. Helix three is indicated with a light green bracket, because it is absent in some of the aligned sequences.\n\nAmong the 12 CBS5557 singleton wtf genes with syntenic counterparts in the reference genome, cw9 and five others exhibit exceptionally high DNA sequence diversity (<85% identity) from their counterparts in the reference genome (Figure 1D, Figure 1\u2014figure supplement 2, and Figure 5\u2014figure supplement 2). Given that the genome-wide nucleotide difference between CBS5557 and the laboratory strain is only 3.1 SNPs/kb (Hu et al., 2015), wtf genes must have diverged at a much faster pace than average genes.\n\nTo examine the phylogenetic relationship among all 57 wtf genes of the two genomes, we performed a maximum likelihood analysis (Figure 5C). In the resulting phylogenetic tree, we used colored rectangles to highlight 16 pairs of genes, with each pair consisting of phylogenetic neighbors, defined as two genes separated by a single internal node that has an ultrafast bootstrap support value\u00a0>=\u00a095% (Figure 5C). Interestingly, only 11 of these 16 pairs conform to typical orthologous relationship where two members of a pair are syntenic (highlighted by green rectangles in Figure 5C), whereas the five other pairs each consist of two genes that are non-syntenic (highlighted by yellow rectangles in Figure 5C). This pattern suggests that ectopic gene conversion (also called non-allelic or interlocus gene conversion) may contribute to the inter-isolate difference of wtf genes (Chen et al., 2007; Petes and Hill, 1988). Interestingly, genes belonging to the same gene cluster (pair or triplet), despite being subject more strongly to the homogenizing effect of gene conversion due to their physical proximity, are without exception very distinct from each other. One possible explanation is that diversifying selection may have prevented sequence homogenization within gene clusters.\n\nThe substantial difference in the numbers and sequences of wtf gene between the laboratory strain and CBS5557 suggests that rapid sequence divergence and independent loss/gain of wtf genes have resulted in different S. pombe natural isolates harboring distinct sets of active spore killers, which become reproductive barriers during inter-isolate crosses and contribute to the extensive and severe hybrid sterility within this species.\n\n## Discussion\n\nOnly a small number of gamete killers have been characterized at the molecular level. Two well-studied gamete killers in animals, Segregation Distorter in Drosophila and the t haplotype in mouse, both contain at least two key loci, a killer locus and a target locus (Lyon, 2003; Burt and Trivers, 2006; Larracuente and Presgraves, 2012; Lindholm et al., 2016; Bauer et al., 2012). In fungi, spore killers of Neurospora also appear to comprise of two genes, rsk (resistant to Spore killer) and a yet-to-be-identified killer gene, which are proposed to act together in a fashion similar to the toxin-antitoxin (TA) systems of bacterial plasmids, in which a stable toxin and a labile antitoxin together ensure that bacterial cells cannot lose the plasmid expressing them (Hammond et al., 2012; McLaughlin and Malik, 2017; Saupe, 2012). The involvement of more than one gene renders these gamete killer systems vulnerable to recombination that may separate the component genes, and as a consequence, they have all evolved recombination-suppressing features such as chromosomal inversions (Burt and Trivers, 2006; Harvey et al., 2014). On the other hand, two types of single-gene spore killers, [Het-s] prion and the Spok genes, have been found in the filamentous fungus Podospora anserina (Dalstra et al., 2003; Grognet et al., 2014). The killing activity of the [Het-s] prion requires the presence of the HET-S protein, whereas the Spok genes can act autonomously. Fission yeast wtf killers share two prominent features with the Spok killers: being composed of a single predicted coding sequence and acting in a self-sufficient manner. These features arguably make wtf and spok killers the most compact and efficient forms of gamete killers.\n\nDespite the similarities they share, wtf and spok killers are very different entities. Firstly, wtf genes only exist in a single fission yeast species S. pombe, indicating that they probably have arisen after the divergence of S. pombe from its closest relatives S. octosporus and S. cryophilus around 120 million years ago (Rhind et al., 2011), and have not jumped across the species barriers. In contrast, Spok family genes have a patchy but widespread distribution among Pezizomycotina species (Grognet et al., 2014), whose last common ancestor dates to 400 million years ago (Prieto and Wedin, 2013), suggesting that Spok killers have originated much earlier than wtf killers or have been especially prone to transfer horizontally across species. Secondly, spok family genes encode soluble proteins with a C-terminal kinase-like domain (InterPro:IPR011009), whereas wtf genes are predicted to encode multi-transmembrane proteins, suggesting that the detailed molecular mechanisms of these two types of killers are likely to be quite distinct.\n\nThe single-gene nature of wtf killers begs the question: how does a single gene encode both the killing and the protecting activities? Our findings on the mutations that can disrupt one but not the other activity suggest the possibility that more than one type of expression products can be generated from a wtf killer gene. Consistent with this idea, Nuckolls et al. showed that the wtf4 gene from the S. pombe var. kambucha strain (Sk wtf4) acts as a spore killer by expressing two overlapping transcripts, with the shorter transcript encoding a spore-killing poison and the longer transcript encoding an antidote that protects the spores from the killing effect of the poison (Nuckolls et al., 2017). This dual-transcript model can satisfactorily explain why the Tb and Te forms of cw9 and cw27 lost protecting activities but not killing activities (Figure 4A). Presumably, the transcription of the longer isoforms, which encode antidote proteins initiated from a start codon in the predicted exon 1, partially relies on the sequence between the upstream LTR and the conserved_up sequence and absolutely requires the conserved_up sequence; in contrast, the transcription of the shorter isoforms, which encode poison proteins initiated from a downstream alternative start codon, is not affected by removing the upstream sequences.\n\nWe hypothesized that the transcription of the poison isoforms may depend on a special promoter residing within the predicted intron 1 of cw9 and cw27. Indeed, through inspecting the DNA sequence alignment (Figure 5\u2014source data 1), we found that cw9, cw27, and 10 other wtf genes in the reference genome and the CBS5557 genome share a 150 bp conserved sequence in the predicted intron 1, and this sequence is closely upstream of the transcription start site of a shorter-than-predicted wtf23 transcript isoform uncovered by the Iso-Seq long-read RNA sequencing method (Figure 5\u2014figure supplement 3) (Kuang et al., 2017). These 12 genes can be classified into two subtypes, which we call Intron-1-ATG genes (wtf4, wtf13, cw4, cw18, and cw23) and Exon-2-ATG genes (wtf19, wtf23, cw8a, cw9, cw21, cw22, and cw27), based on the locations of the first ATG codons downstream of the 150 bp sequence (Figure 5C and Figure 5\u2014figure supplement 3). These ATG codons are all in frame with the predicted coding sequences. The within-intron-1 ATG codons in the 5 Intron-1-ATG genes are only 7 bp away from the predicted exon 2, and if used as start codons, would result in proteins beginning with three intron-1-coded amino acids (Met, Leu, and Ser). The two active spore killer genes found in the S. pombe var. kambucha strain by Nuckolls et al., Sk wtf4 and Sk wtf28, also possess this 150 bp sequence and can be classified as an Intron-1-ATG gene and an Exon-2-ATG gene, respectively. We propose that this 150 bp sequence is a hallmark of the \u2018poison-and-antidote\u2019 genes that can, at least potentially, generate both poison and antidote isoforms according to the dual-transcript model proposed by Nuckolls et al.\n\nThe other 45 wtf genes in the reference genome and the CBS5557 genome lack this 150 bp sequence. In addition, except for the eight most divergent genes (wtf7, cw7, wtf11, cw11, wtf14, cw14, wtf15, and cw15), they do not have an in-frame ATG codon in intron one or in the 5\u2019-section of exon 2, suggesting that most of these genes are not able to generate a shorter isoform according to the dual-transcript model, and are thus \u2018antidote-only\u2019 genes. Alternatively, it is possible that they may generate two different protein products using other mechanisms, such as alternative splicing (Kuang et al., 2017), overlapping proteins translated in different frames (Duncan and Mata, 2014), and post-translational processing and modification.\n\nFive wtf genes in the reference genome, wtf1, wtf2, wtf3, wtf22, and wtf24, are annotated by PomBase as pseudogenes (McDowall et al., 2015). Our analysis of the gene structures of the 57 wtf genes in the reference genome and the CBS5557 genome showed that in addition to these five genes, four other wtf genes in the reference genome (wtf6, wtf8, wtf12, and wtf17), and three wtf genes in the CBS5557 genome (cw3, cw12, and cw16), appear to have suffered pseudogenizing mutations (see Materials and methods and Figure 5\u2014source data 2), which include loss of start codons (wtf3 and cw3), premature stop codons (wtf1, wtf12, cw12, and cw16), frameshifting indels (wtf6, wtf8, wtf22, and wtf24), and segmental deletions (wtf2 and wtf17). These \u2018dead\u2019 wtf genes presumably are not able to generate either antidote or poison proteins.\n\nMost of the wtf genes in the reference genome and the CBS5557 genome are predicted to contain either 5 or 6 exons. Interestingly, the 6-exon genes, including cw9, cw27, and all but one of the other ten 150-bp-sequence-containing genes, clustered together in the DNA sequence-based phylogenetic tree (Figure 5C), and their protein products are predicted to be longer and contain two or three more transmembrane helices than the protein products of 5-exon genes (Figure 5\u2014source data 3, Figure 5\u2014figure supplement 4, and Figure 5\u2014figure supplement 5). For each of the 12 150-bp-sequence-containing genes, the antidote protein product is approximately 50 amino acids longer than the poison protein product at the N-terminal soluble region. The 10 C-terminal amino acids missing from the protein products of the Td forms of cw9 and cw27 are downstream of the last transmembrane helix, and are strongly conserved among the predicted protein products of 6-exon genes (Figure 5\u2014figure supplement 4), indicating that Td-like mutations do not occur naturally to a significant extent.\n\nHow do transmenbrane proteins act as killers? In the prokaryotic toxin-antitoxin (TA) systems, many toxins are transmembrane proteins and kill cells by damaging cellular membranes (Schuster and Bertram, 2013). The best-known examples include the type I TA toxins Hok and TisB, and the type V TA toxin GhoT (Cheng et al., 2014; Gerdes et al., 1986; Unoson and Wagner, 2008). We speculate that Wtf proteins may also possess abilities to disrupt the integrity of certain cellular membranes.\n\nwtf genes were named after their association with the solo LTRs of the Tf retrotransposons (Wood et al., 2002). It was initially hypothesized that retrotransposition may aid the expansion of the wtf gene family (Wood et al., 2002). However, the presence of introns in wtf genes and the lack of sequence similarity between wtf-flanking LTRs indicate that wtf genes have not been retrotransposed (Bowen et al., 2003). Bowen et al. have put forward an explanation for the enrichment of LTRs near wtf genes: the regions flanking wtf genes may have been favored insertion targets of Tf retrotransposons, perhaps owing to the high transcription levels of wtf genes during meiosis and sporulation (Bowen et al., 2003). Our findings that LTRs flanking cw9 and cw27 are dispensable for spore killing support the idea that the wtf-LTR association does not benefit wtf genes but may rather reflect an exploitation of wtf genes by Tf retrotransposons for their own expression and/or inheritance benefit. Furthermore, we show that three singleton wtf genes (cw26, cw27, and cw28) appear to have been lost in the laboratory strain due to LTR-mediated recombination, suggesting that the wtf-LTR association promotes wtf gene loss and is detrimental to the long-term persistence of wtf genes. In addition, it may not be coincidental that both cw9 and cw27 require an approximately 90-bp-long sequence between the upstream LTR and the conserved_up sequence for the full protecting activity, raising the possibility that some wtf genes that lack such an intervening sequence (e.g. wtf4 and cw4) may have suffered functional loss due to a Tf insertion too close to the conserved_up sequence or may have become functionally dependent on the upstream LTR.\n\nIn terms of the number of genes per genome, wtf genes are probably the most evolutionarily successful gamete killers known to date. During a relatively short evolutionary time span, wtf gene family has emerged and become the largest species-specific gene family in S. pombe (Lespinet et al., 2002). The compactness (minimal sizes of fully functional cw9 and cw27 are both around 1.9 kb) and the self-sufficiency of the wtf killers likely have been advantageous to its family size expansion. Furthermore, given the dramatic divergence of wtf genes between the reference genome and the CBS5557 genome, and the mutual-killing behaviors of cw9 and cw27, it is possible that two identical copies of a wtf gene generated by a gene duplication event can undergo relatively rapid sequence diversification to become mutually non-resistant, so that their selective advantage is not diminished by resistance. Ectopic gene conversion is known to play a causal role in the sequence diversification of animal major histocompatibility complex (MHC) genes (Ohta, 1991; Takuno et al., 2008), plant disease-resistance genes (R genes) (Mondragon-Palomino and Gaut, 2005), and Plasmodium falciparum var genes (Claessens et al., 2014). Our phylogenetic analysis suggests that ectopic gene conversion may also contribute to the historical expansion and the ongoing dynamic change of the wtf gene family.\n\nIt is intriguing that most of the wtf genes locate on chromosome III, the smallest of the three fission yeast chromosomes. To explain this phenomenon, Bowen et al. proposed that the laboratory strain may have inherited only chromosome III but not the other two chromosomes from an ancestor strain in which wtf genes were abundant on all three chromosomes (Bowen et al., 2003). Our finding here of the same kind of chromosomal distribution bias in CBS5557, whose nucleotide diversity from the laboratory strain is higher on chromosome III than on the other two chromosomes (Hu et al., 2015), makes this explanation less likely. The only type of viable aneuploidy in fission yeast is chromosome III disomy (Niwa et al., 2006; Niwa and Yanagida, 1985), which occurs at a frequency of\u00a0>1% during normal meiosis (Molnar et al., 1995). We speculate that the tolerance of chromosome III disomy may in some way be advantageous to the expansion of the wtf gene family on this chromosome.\n\nSpore killers and other meiotic drivers, despite having only been found in a small number of taxa, are believed to exist in a wide range of species, where they are an important force influencing genome organization, gametogenesis, and speciation (Burt and Trivers, 2006; Lindholm et al., 2016; Werren, 2011). The molecular basis of their action and the evolutionary mechanisms behind their birth, spread, and extinction are scarcely known. The unveiling of the molecular identities of spore killers in S. pombe by this study and that of Nuckolls et al. (Nuckolls et al., 2017), promises to bring the power of a highly tractable model organism to the pursuit of the many mysteries of these evolutionary wonders.\n\n## Materials and methods\n\n### Strains\n\nFission yeast strains used in this study are listed in Supplementary file 2 in Microsoft Word format. Genetic methods and composition of media are as described (Forsburg and Rhind, 2006). Gene deletion was constructed by PCR-based gene targeting. Integrating plasmids were based on pDUAL and related vectors (Matsuyama et al., 2004, Matsuyama et al., 2008). A pDUAL-based plasmid was linearized with NotI digestion and integrated at the leu1 locus, or linearized with MluI digestion and integrated at the ars1 replication origin region upstream of the hus5 gene.\n\nTo convert homothallic strains to heterothallic and to mark the mating type locus, we created the mat1\u039417 mutation (Arcangioli and Klar, 1991), by replacing a 140 bp sequence between the H1 homology box at the mat1 locus and the nearby SspI restriction site with an antibiotic resistance marker using PCR-based gene targeting. h+/h- diploid strains were constructed by mating on SPAS medium h+ and h- strains with different antibiotic resistance markers inserted at the mat1 locus, and a few hours later restreaking the mating mixture onto YES medium containing two types of antibiotics.\n\nTo construct strains with only a portion of chromosome III originating from CBS5557 and the rest of the genome coming from the laboratory strain, we first introduced rec12\u2206 mutation, which blocks meiotic recombination, into the laboratory strain and CBS5557, respectively. Through crossing the two resultant strains with each other, we obtained a strain whose chromosome I and II are from the laboratory strain and whose chromosome III is from CBS5557. This strain was then crossed to a rec12+ laboratory-background strain carrying an antibiotic resistance marker at a locus on the left arm of chromosome III (mug123:hphMX) and another antibiotic resistance marker at a locus on the right arm of chromosome III (rps2802:natMX) (first backcross). Progeny strains with only one of the loci marked were kept. They were then crossed to laboratory-background strains with the other locus marked by kanMX (second backcross). By scoring the marker segregation ratios of the second backcross, we selected those first-backcross progenies that conferred strong segregation distortion at the kanMX-marked locus. Their second-backcross progenies that harbored the kanMX marker were tested by crossing, and those that conferred segregation distortion at the kanMX-marked locus were selected. One of the second-backcross progenies that conferred segregation distortion at the mug123 locus is the backcrossed-1 strain used in the bulk segregant analysis shown in Figure 1B. Two chromosome III genomic regions from CBS5557, one between coordinates 247743 and 568805, and the other between coordinates 814348 and 1711635, are present in the backcrossed-1 strain. Another second-backcross progeny that conferred segregation distortion at the rps2802 locus underwent additional rounds of backcross to yield the backcrossed-2 strain used in the bulk segregant analysis shown in Figure 1C. The CBS5557 chromosome III genomic region present in the backcrossed-2 strain is between coordinates 1839246 and 1916857.\n\n### Bulk segregant analysis\n\nFor Illumina sequencing-assisted bulk segregant analysis,\u00a0>150 viable progeny colonies derived from random spore analysis were pooled together. Genomic DNA extraction, sequencing libraries construction, and Illumina sequencing were performed as described (Hu et al., 2015). Sequencing data were deposited at NCBI SRA under the following accession numbers: viable progenies from CBS5557 \u00d7 laboratory strain (DY9974 \u00d7 DY8531), SRR5131575; viable progenies from backcrossed-1 \u00d7 laboratory strain (cross-derived diploid strain was named DY26097), SRR5131578; viable progenies from backcrossed-1 cw9\u2206 \u00d7 laboratory strain (cross-derived diploid strain was named DY26100), SRR5131579; viable progenies from backcrossed-2 strain \u00d7 laboratory strain (cross-derived diploid strain was named DY26095), SRR5131577; viable progenies from backcrossed-2 cw27\u2206 strain \u00d7 laboratory strain (cross-derived diploid strain was named DY26092), SRR5131576. Sequencing reads were mapped to the reference genome using BWA-MEM (version 0.7.15-r1140, RRID:SCR_010910). SAM files were converted to BAM files and duplicates were removed using SAMtools (version 0.1.19\u201344428 cd, RRID:SCR_002105). The average read depths were 14.9\u00d7 for DY9974 \u00d7 DY8531, 10.4\u00d7 for DY26097, 18.4\u00d7 for DY26100, 16.2\u00d7 for DY26095, and 23.1\u00d7 for DY26092. The software bam-readcount version 0.7.4 was run with the option -q 60 -b 35 (-q 60 -b 27 for DY26097, which had lower depth coverage and lower sequencing quality) to obtain the read counts of four different bases at each of the 38783 SNP positions identified previously (Hu et al., 2015). Reference allele frequency at each SNP position was calculated by dividing the read count of the reference base by the sum of the read counts of the reference base and the variant base. Only SNP positions with the sum of the read counts of the reference base and the variant base\u00a0>=\u00a010 (>\u00a0=\u00a07 for DY26097) were used in the plots. A trend line was drawn in each plot by calculating a rolling median of reference allele frequencies at 45 consecutive SNP positions using the rollapply function of R\u2019s zoo package (version 1.7\u201313).\n\n### PacBio sequencing\n\nFor PacBio sequencing of CBS5557 genome, we prepared genomic DNA from DY9971, an h- derivative of CBS5557, by first grinding cells in liquid nitrogen and then extracting DNA using the Maxi Column Fungal DNAOUT kit (Tiandz, Beijing, China). Sequencing library construction and sequencing on the PacBio RS II platform using P6C4 chemistry were performed by BGI (Shenzhen, China). After filtering out low-quality reads and removing adaptor sequences, we obtained 91,333 subreads no shorter than 1000 bp (mean length 7370 bp). These reads were used for de novo assembly by the SMRT Analysis software. The assembly was polished using Pilon version 1.21 (RRID:SCR_014731) together with our previously published CBS5557 Illumina sequencing data (Hu et al., 2015; Walker et al., 2014). PacBio sequencing data were deposited at NCBI SRA under the accession number SRR5133273.\n\n### Electron microscopy analysis\n\nFor the induction of synchronous meiosis and sporulation, h+/h- diploid strains were pre-grown in liquid YES medium to log phase, cultured in SSL+N synthetic liquid medium for 10 hr, and then shifted to nitrogen-free SSL-N medium (Egel and Egel-Mitani, 1974). Four-spored asci represented about half of the cells 10 hr after shifting to SSL-N (Olson et al., 1978). Electron microscopy was performed as described (Sun et al., 2013).\n\n### Spore viability analysis\n\nSpore viability was assessed by tetrad analysis using a TDM50 tetrad dissection microscope (Micro Video Instruments, Avon, USA). At least 40 tetrads (160 spores) were analyzed for each cross. Based on empirical evidence, such a sample size is large enough for reliably assessing spore viability. Numerical data of the tetrad analysis in Excel format are provided as Supplementary file 1. For statistical analysis of the spore viability data, Fisher\u2019s exact test and exact binomial test of goodness-of-fit were performed using Excel spreadsheets downloaded from http://www.biostathandbook.com/fishers.html and http://www.biostathandbook.com/exactgof.html, respectively (McDonald, 2014).\n\n### Sequence and phylogenetic analysis\n\nExcept for the phylogenetic analysis, DNA sequences were aligned using MAFFT via Jalview (Katoh et al., 2002; Waterhouse et al., 2009). Pair-wise identity was calculated by dividing the numbers of identical bases by the alignment length using the Sequence Manipulation Suite web server (http://www.bioinformatics.org/sms2/ident_sim.html) (Stothard, 2000).\n\nFor the phylogenetic analysis shown in Figure 5C, an alignment of DNA sequences containing the conserved_up regions, the coding sequences, and the associated introns was generated using the L-INS-i algorithm of MAFFT version 7.310 for Mac OS X (RRID:SCR_011811) with the command line option --localpair --maxiterate 16 --reorder (Katoh and Standley, 2014), and manually adjusted to correct an obvious misalignment of the wtf2 sequence. The final alignment of 57 wtf genes of the reference and CBS5557 genome in FASTA format is provided as Figure 5\u2014source data 1. Maximum likelihood analysis was performed using IQ-TREE version 1.5.3 for Mac OS X with the command line option -m TEST -alrt 1000 -bb 1000 (Nguyen et al., 2015). The tree was rooted by midpoint rooting using FigTree version 1.4.2 (http://tree.bio.ed.ac.uk/software/figtree/) and was visualized using Phylo.io (Robinson et al., 2016).\n\nGene structures of the 57 wtf genes were predicted using the AUGUSTUS web server (version 3.2.3, RRID:SCR_008417) with the parameter settings --genemodel=exactlyone --sample=100 --keep_viterbi=true --alternatives-from-sampling=true --minexonintronprob=0.08 --minmeanexonintronprob=0.3 --maxtracks=20 (Stanke et al., 2008). When multiple predications were made for a gene, we manually inspected the predictions and selected the one that best conforms to conserved patterns of intron positions. For the majority of genes, the selected prediction is the top-scoring prediction, and for 10 genes (wtf6, wtf7, wtf14, wtf24, cw6a, cw7, cw12, cw14, cw16, cw25), the selected prediction is the one with the second best score. The final predictions for all 57 genes in plain text format are provided as Figure 5\u2014source data 2, which can be loaded into Jalview as an annotation file for the DNA sequence alignment in Figure 5\u2014source data 1. The failure to predict an exon flanked by conserved intron-exon junction sequences is an indication that pseudogenizing mutation(s) exist. Among the predicted protein sequences obtained based on these gene structure predictions, the sequences of Wtf4, Wtf6, Wtf7, Wtf12, Wtf13, Wtf15, Wtf17, and Wtf18 are different from those annotated at PomBase. A MAFFT (L-INS-i algorithm)-generated alignment of the 57 predicted protein sequences in FASTA format is provided as Figure 5\u2014source data 3.\n\n### Data availability\n\nIllumina and PacBio sequencing data reported in this paper are available at the Sequence Read Archive (SRA) under the accession number SRP095878 (BioProject PRJNA358837) (Hu et al., 2017). The DNA sequences and annotations of the 32 wtf genes of the CBS5557 genome have been deposited at GenBank under the accession numbers KY926712-KY926743.\n",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "457456bb-11f8-47a6-a450-9d3070a20725",
+      "submission_id": "3bfcd2aa-7110-40ca-ad10-eb5d90a0d43e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonis Rokas, Vanderbilt University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26057.029](https://doi.org/10.7554/eLife.26057.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A large gene family in fission yeast encodes spore killers that subvert Mendel's law\" for consideration by eLife. Your article has been favorably evaluated by Diethard Tautz (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Nick Rhind (Reviewer #2); Michael Lichten (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nHu et al. have identified, in the genome of S. pombe strain CBS5557 two members of the wtf repeated gene family that serve as meiotic drive elements when crossed to the reference strain. Using deletions of the two loci, they show that the protective function can be separated from the killing function, and show that the C-terminus of the putative open-reading frame is important for killing but not for protection. In addition, they show that the two genes actually kill their sister spores, using both viability and EM-based assays. They then analyze the ensemble of wtf/cw loci in CBS5557 and show that these elements appear to frequently \"move\" by ectopic gene conversion. Combined with Nuckolls et al., this paper makes an intriguing and interesting story.\n\nEssential revisions:\n\n1) The switch in nomenclature, from k1wtf and k2wtf to cw9 and cw27, is needlessly confusing. Why not simply call these loci cw9 and cw27 from the start, and just say that the reasons for doing so will be presented below? Along similar lines, the wtf nomenclature depicted in Figure 5 seems unnecessarily complicated. In situations in which similarity and synteny make homology unambiguous, ambiguous nomenclature is not useful. For instance, cw[3-4]a and cw[3-4]b should be named cw3 and cw4, respectively, likewise the homologs of wtf11, 12, 14, 15, 17 and 18 are unambiguous.\n\n2) Figure 1B/C is confusing, especially since it hides the fact that there actually are no SNPs segregating in the regions where the red line is at 1. Why not simply display the rolling median for regions where there actually are SNPs? The first and last 40 SNPs will not be displayed, but there appear to be so many that this will not materially affect the presentation. The terms \"left-peak\" and \"right-peak\" strain are also confusing; we suggest adding a panel that shows a chr 3 map for the two strains with the reference and CBS5557-introgressed sequences in different colors, and including that color code on the X-axis of the plots in panel B.\n\n3) It's not clear why k1wft\u2206 does not restore reference allele recovery to 50% in the left-peak strain x laboratory strain cross (Figure 1B). Is it possible that cw[11-12]c also has drive activity?\n\n4) Figure 5, panel C would be considerably more useful if it contained a horizontal scale, to roughly indicate the extent of divergence between different alleles. Criteria for considering two alleles to be paired should also be indicated; for example, it's not clear why cw8a and cw24 are considered to be a homeologous pair, but wtf24 and cw6b are not. Furthermore, the phylogeny should be shown as an unrooted tree \u2013 the authors reconstructed the phylogeny as unrooted and they should depict it that way too.\n\n5) For readers interested in further numerical analysis, it would be useful if the actual numerical data underlying all of the bar graphs were included in a supplementary file. For example, we were wondering if the loss of spore viability in k1\u2206 k2\u2206 double mutant spores (Figure 2) is greater than what one would expect on an additive basis of spore viability loss in the two single mutant spore types-it looks as if it is, but with the current presentation it's impossible to check.\n\n6) It would be useful to use the translation start site-criterion outlined in Nuckolls et al. for whether the cw loci are \"dead\", \"antidote-only\", or \"antidote-toxin\". Similarly, since the C-termini of cw9 and cw27 appear to be important for toxin activity, is this region more conserved among the wtf loci than other parts of the protein? In \"antidote-only\" or in \"antidote-toxin\" loci?\n\n7) It is not clear why the variation of allele frequency depicted in Figure 1 is so large. If over 150 segregants were sequenced, how can some loci in regions that segregate 50:50 (e.g. on the left end of Chromosome I) be represented by only one allele?\n\n8) The authors should extend the discussion of their findings and take into account the findings of Nuckolls et al. In particular:\n\nWhat do the other wtf genes do? Could they be acting as rescuers but not as killers? Could they have assumed other unrelated functions?\n\nFigure 5A shows an unusual concentration of wtf genes in chr III. Why is that the case? (Could it have to do with the fact that it is the only chromosome where disomy is tolerated?)\n\nOn the second page of the Discussion, the authors speculate as to how one locus could produce both a toxin and an antidote. It should be possible to eliminate, or at least deprioritize, one or more of the proposed mechanisms by inspecting the sequence of the loci and perhaps publicly available RNA-seq data. It would be of great interest to have some speculation on how a putative trans-membrane protein could function in a toxin-antidote system.\n",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3b7a3106-94a3-446b-ac3b-1635024dcc50",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C1",
+      "claim": "The fission yeast Schizosaccharomyces pombe harbors two spore killers from a natural isolate (CBS5557).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discover two spore killers from a natural isolate of the fission yeast Schizosaccharomyces pombe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the discovery of two spore killers from CBS5557, and this is supported throughout the manuscript with experimental data from bulk segregant analysis, tetrad analysis, and genetic manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "911c42d2-d477-4944-92cf-64e8bbe69a79",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C2",
+      "claim": "Both spore killers belong to the wtf gene family.",
+      "claim_type": "EXPLICIT",
+      "source": "Both killers belong to the previously uncharacterized wtf gene family with 25 members in the reference genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides sequence analysis and structural characterization showing that cw9 and cw27 are members of the wtf gene family.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "48be642a-aee7-481f-8cfc-933f9a096679",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C3",
+      "claim": "The wtf gene family has 25 members in the reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Both killers belong to the previously uncharacterized wtf gene family with 25 members in the reference genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and confirmed by the authors' own genomic analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "62f79319-1515-4f66-a011-b949086d2df0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C4",
+      "claim": "The two killers act in a strain-background-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These two killers act in strain-background-independent and genome-location-independent manners to perturb the maturation of spores not inheriting them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3 shows experimental data demonstrating that cw9 and cw27 cause spore killing when integrated at various genomic locations in the laboratory strain background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "43c1cd3d-4543-4028-9d58-3caa7ee3e8e0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C5",
+      "claim": "The two killers act in a genome-location-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These two killers act in strain-background-independent and genome-location-independent manners to perturb the maturation of spores not inheriting them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 3A and Figure 3\u2014figure supplement 1 show that cw9 and cw27 cause spore killing regardless of their genomic location (his3, lys1, or leu1 locus).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "f68e67fd-2a7f-42ea-b9e1-5d6243f21faf",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C6",
+      "claim": "The killers perturb the maturation of spores not inheriting them.",
+      "claim_type": "EXPLICIT",
+      "source": "These two killers act in strain-background-independent and genome-location-independent manners to perturb the maturation of spores not inheriting them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Electron microscopy analysis in Figure 3C shows that killer-affected spores fail to undergo proper maturation, exhibiting lower electron density cytoplasm and visible organelles at 18 hours.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "520b4ef7-7889-4df6-b921-30b12b5d2cfd",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C7",
+      "claim": "Spores carrying one killer are protected from its killing effect but not that of the other killer.",
+      "claim_type": "EXPLICIT",
+      "source": "Spores carrying one killer are protected from its killing effect but not that of the other killer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2 and Figure 3B show that spores inheriting cw9 are protected from cw9 but not cw27, and vice versa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "5bd46399-4656-4a6a-9996-fbf7ad5014ce",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C8",
+      "claim": "The killing and protecting activities of wtf killers can be uncoupled by mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The killing and protecting activities can be uncoupled by mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 4 shows that Td truncation versions lack killing activity but retain protecting activity, demonstrating separation of function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "f589564a-a04f-48f1-b559-da7226372047",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C9",
+      "claim": "The numbers of wtf genes vary considerably between S. pombe isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers and sequences of wtf genes vary considerably between S. pombe isolates, indicating rapid divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5 shows that the reference genome has 25 wtf genes at 20 locations while CBS5557 has 32 wtf genes at 23 locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c61104bb-0d19-4175-88ba-7f117090b7c9",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C10",
+      "claim": "The sequences of wtf genes vary considerably between S. pombe isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers and sequences of wtf genes vary considerably between S. pombe isolates, indicating rapid divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1D, Figure 1\u2014figure supplement 2, and Figure 5\u2014figure supplement 2 show that some syntenic wtf genes between CBS5557 and the reference genome exhibit less than 85% identity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "2d3f2cd4-97f7-43dd-9381-62fed7c8a5e8",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C11",
+      "claim": "wtf genes contribute to extensive intraspecific reproductive isolation in S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that wtf genes contribute to the extensive intraspecific reproductive isolation in S. pombe, and represent ideal models for understanding how segregation-distorting elements act and evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the observation that different isolates have different sets of wtf killers that cause mutual killing, combined with the known severe hybrid sterility in S. pombe.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "1a8189be-9c7b-44f8-abf5-776566e4cfb0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C12",
+      "claim": "Meiotic drivers break Mendel's law by skewing transmission ratios to their advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic drivers, a type of selfish genetic element, break Mendel's law by skewing transmission ratios to their advantage, and thus can spread in a population even when having a deleterious effect on organismal fitness (Lindholm et al., 2016; Werren, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to established literature on meiotic drivers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "da0b1dcf-1aa2-4ab4-9697-c4bf8c8c111e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C13",
+      "claim": "Meiotic drivers can spread in a population even when having a deleterious effect on organismal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Meiotic drivers, a type of selfish genetic element, break Mendel's law by skewing transmission ratios to their advantage, and thus can spread in a population even when having a deleterious effect on organismal fitness (Lindholm et al., 2016; Werren, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical and empirical work on selfish genetic elements.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "7c4836a4-dfc4-4542-9714-f291faf66f18",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C14",
+      "claim": "Segregation Distorter in Drosophila acts postmeiotically to disable male gametes that do not inherit it.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, some of the best-known meiotic drivers, such as Segregation Distorter in Drosophila and the t haplotype in mouse (Lyon, 2003; Larracuente and Presgraves, 2012), act postmeiotically to disable male gametes (sperms) that do not inherit them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on Segregation Distorter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "9176dd97-89c4-4210-9706-f93e992b1e8e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C15",
+      "claim": "The t haplotype in mouse acts postmeiotically to disable male gametes that do not inherit it.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, some of the best-known meiotic drivers, such as Segregation Distorter in Drosophila and the t haplotype in mouse (Lyon, 2003; Larracuente and Presgraves, 2012), act postmeiotically to disable male gametes (sperms) that do not inherit them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on the t haplotype.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "d144eb4d-42ae-4b5b-add8-29160f0ff4c9",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C16",
+      "claim": "Fungal gamete killers (spore killers) have been found in several filamentous ascomycetes, most notably Neurospora and Podospora anserina.",
+      "claim_type": "EXPLICIT",
+      "source": "Fungal gamete killers, or spore killers, have been found in several filamentous ascomycetes, most notably Neurospora and Podospora anserina (Dalstra et al., 2003; Grognet et al., 2014; Hammond et al., 2012; Turner and Perkins, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published research on fungal spore killers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "efefb003-8814-48a9-ad50-6002a05845e5",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C17",
+      "claim": "S. pombe natural isolates have pair-wise nucleotide differences of less than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "S. pombe natural isolates, which are nearly all haploids and have pair-wise nucleotide differences of less than 1% (Jeffares et al., 2015; Rhind et al., 2011), can readily mate with each other to form hybrid diploids, but the viability of spores derived from inter-isolate crosses is often below 5% and in many instances under 1% (Gutz and Doe, 1975; Kondrat''eva and Naumov, 2001; Naumov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genomic studies of S. pombe natural isolates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "0afa8493-a8d5-44aa-ad5d-a85f6d7181d2",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C18",
+      "claim": "The viability of spores derived from S. pombe inter-isolate crosses is often below 5% and in many instances under 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "S. pombe natural isolates, which are nearly all haploids and have pair-wise nucleotide differences of less than 1% (Jeffares et al., 2015; Rhind et al., 2011), can readily mate with each other to form hybrid diploids, but the viability of spores derived from inter-isolate crosses is often below 5% and in many instances under 1% (Gutz and Doe, 1975; Kondrat''eva and Naumov, 2001; Naumov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies documenting hybrid sterility in S. pombe.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "3e3ce7ef-26b1-459b-bf85-a3ce9044feaa",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C19",
+      "claim": "S. cerevisiae natural isolates have a similar level of nucleotide diversity to S. pombe but much better spore viability when inter-crossed.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to Saccharomyces cerevisiae, whose natural isolates have a similar level of nucleotide diversity but much better spore viability when inter-crossed (Hou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a comparative study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "835170cd-9e82-499b-8c74-6a1609a9968a",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C20",
+      "claim": "One chromosomal rearrangement reduces spore viability at most by half.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because one rearrangement reduces spore viability at most by half (Avelar et al., 2013; Hou et al., 2014), other factors are likely in play.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on the effects of chromosomal rearrangements on spore viability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "81fb6e1d-9089-498e-9ad5-005c06a32ec2",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C21",
+      "claim": "At least three spore killers contributed to hybrid sterility when the S. pombe laboratory strain was crossed to S. pombe var. kambucha.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown recently that when the S. pombe laboratory strain, which was isolated from French grape juice (Hu et al., 2015; Osterwalder, 1924), was crossed to a strain isolated from fermented tea (initially called Schizosaccharomyces kambucha [Singh and Klar, 2003], later renamed S. pombe var. kambucha [Rhind et al., 2011]), at least three spore killers contributed to hybrid sterility (Bomblies, 2014; Zanders et al., 2014), but the identities of the killer genes were unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on hybrid sterility between these strains.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "20b3a16b-9802-4b10-9932-4937b21781e5",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C22",
+      "claim": "Introducing a 2.23 Mb pericentric inversion on chromosome I into the laboratory strain increased spore viability in crosses with CBS5557 from 14% to 22%.",
+      "claim_type": "EXPLICIT",
+      "source": "After introducing the same inversion into the laboratory strain (Hu et al., 2015), the viability of spores derived from the cross between the laboratory strain and CBS5557 increased from 14% to 22% (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "cac9586c-b5f3-4ad1-bfdd-807eece620c5",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C23",
+      "claim": "NGS-assisted bulk segregant analysis revealed that SNP alleles of the laboratory strain on chromosome III were markedly under-represented among viable progenies from the cross with CBS5557.",
+      "claim_type": "EXPLICIT",
+      "source": "To uncover the causes of the remaining sterility, we performed next-generation sequencing (NGS)-assisted bulk segregant analysis (Hu et al., 2015) and found that among the viable progenies from the cross, SNP alleles of the laboratory strain (reference alleles) on chromosome III were markedly under-represented (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A shows the reference allele frequency data demonstrating under-representation on chromosome III.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "8f63f856-3bfa-4e54-b239-cfa9967b3eb9",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C24",
+      "claim": "Two broad transmission distortion peaks were observed on chromosome III, suggesting at least two spore killer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two broad transmission distortion peaks, one on the left arm (hereafter referred to as the left peak) and one on the right arm (hereafter referred to as the right peak), were observed, suggesting that there are at least two spore killer genes on chromosome III of CBS5557.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1A shows two distinct peaks of transmission distortion on chromosome III.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "04adf72e-dcdb-42bf-acf2-8ff309f78fa6",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C25",
+      "claim": "Deletion of cw9 from the backcrossed-1 strain notably reduced segregation distortion.",
+      "claim_type": "EXPLICIT",
+      "source": "We deleted from the backcrossed-1 strain a wtf gene locating at the position of wtf9 in the reference genome but exhibiting a low sequence identity (42%) to wtf9 in the 5' portion (Figure 1D and Figure 1\u2014figure supplement 2) and found that the deletion notably reduced the segregation distortion (right-side plot in Figure 1B), suggesting that this wtf gene, which we named cw9 (the nomenclature of wtf genes in the CBS5557 genome will be explained later in this paper), is a spore killer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows bulk segregant analysis data demonstrating reduced transmission distortion upon cw9 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "8f281ac1-6dac-460d-81e1-6f1fa28d73e4",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C26",
+      "claim": "Removing cw27 from the backcrossed-2 strain completely abolished segregation distortion.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the CBS5557 genomic segment in the backcrossed-2 strain, we found a wtf gene absent in the reference genome, possibly owing to a deletion event mediated by homologous recombination between LTRs (Figure 1E and Figure 1\u2014figure supplement 3). Removing this wtf gene, which we named cw27, from the backcrossed-2 strain completely abolished segregation distortion (right-side plot in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C shows bulk segregant analysis data demonstrating complete abolishment of transmission distortion upon cw27 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "444fcbc8-26da-49e6-9126-a3dbc2b2f0c6",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C27",
+      "claim": "cw27 appears to have been lost in the laboratory strain through a deletion event mediated by homologous recombination between LTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the CBS5557 genomic segment in the backcrossed-2 strain, we found a wtf gene absent in the reference genome, possibly owing to a deletion event mediated by homologous recombination between LTRs (Figure 1E and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1E and Figure 1\u2014figure supplement 3 show sequence analysis supporting LTR-mediated recombination as the mechanism of deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "fea08600-0fdd-445b-b4fa-b596e071e283",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C28",
+      "claim": "Homozygous deletion of cw9 or cw27 in CBS5557 had no effect on spore viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous deletion of cw9 or cw27 had no effect on spore viability (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows tetrad analysis data demonstrating normal spore viability with homozygous deletions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "47b5126f-7127-43a9-bc32-f0bd03054bcc",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C29",
+      "claim": "Heterozygous deletion of cw9 or cw27 in CBS5557 caused a significant reduction of spore viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, heterozygous deletion of either cw9 or cw27 caused a significant reduction of spore viability, which resulted mainly from the death of spores carrying the deletion (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A and 2B show tetrad analysis data demonstrating reduced spore viability with heterozygous deletions, with deletion-carrying spores predominantly affected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "70131c0f-2436-4d8e-8a28-e8e7ff082669",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C30",
+      "claim": "When cw9 and cw27 were both heterozygous in CBS5557, double deletion mutant spores suffered a particularly high level of death.",
+      "claim_type": "EXPLICIT",
+      "source": "When cw9 and cw27 were both in the heterozygous state, a more severe loss of spore viability was observed, with the double deletion mutant spores suffering a particularly high level of death (Figure 2A and B, and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A and 2B show tetrad analysis data demonstrating severe spore viability loss when both killers are heterozygous.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "11d005af-629d-401d-a625-bb1f43405e0c",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C31",
+      "claim": "In crosses of laboratory strains where only one parent harbored cw9 or cw27, spores not inheriting the killer suffered significant loss of viability regardless of genomic location.",
+      "claim_type": "EXPLICIT",
+      "source": "In crosses where only one of the parental strains harbored cw9 or cw27, spores inheriting the killer had normal viability, whereas spores not inheriting the killer suffered significant loss of viability, regardless of the genomic location of the killer (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows tetrad analysis data from crosses with killers at different genomic locations (his3, lys1, leu1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "acda0b2c-c931-4347-80a9-aa7a06a2a85a",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C32",
+      "claim": "When both parental laboratory strains contained the same killer at the leu1 locus, spore viability was normal.",
+      "claim_type": "EXPLICIT",
+      "source": "When both parental strains contained the same killer, spore viability was normal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3B shows tetrad analysis data demonstrating normal spore viability when both parents have the same killer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b8f04f6f-2c24-4eb9-94c1-20ebc0a42341",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C33",
+      "claim": "When one parental laboratory strain had cw9 and the other had cw27 at the leu1 locus, spores inheriting either killer experienced dramatic loss of viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when one parental strain had cw9 and the other parental strain had cw27, spores inheriting either cw9 or cw27 experienced a dramatic loss of viability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3B and Figure 3\u2014figure supplement 2 show tetrad analysis data demonstrating mutual killing between cw9 and cw27.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "178508c5-d622-494e-ab57-09a254d98527",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C34",
+      "claim": "Killer-affected spores fail to undergo a proper maturation process.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that killer-affected spores fail to undergo a proper maturation process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C shows electron microscopy images demonstrating that killer-affected spores at 18 hours retain visible organelles and lower electron density cytoplasm, unlike properly matured control spores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "0067da3b-91a7-420b-ae20-8c423b9230f2",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C35",
+      "claim": "At 18 hours after shift to sporulation medium, asci derived from cw27-containing cells often exhibited a 2:2 pattern of spore morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at the same time point, asci derived from the cw27-containing cells often exhibited a 2:2 pattern of spore morphology: two spores in an ascus looked like the matured spores in the control sample, whereas the other two spores exhibited cytoplasm with a lower electron density and visible organelles, an electron-lucent spore wall, and frequently a non-spherical shape.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C shows electron microscopy images demonstrating the 2:2 pattern of spore morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "da518278-8a29-401e-966f-ae6ce1445be0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C36",
+      "claim": "cw9 and cw27 share a nearly identical 288-bp-long conserved_up sequence upstream of their predicted start codons.",
+      "claim_type": "EXPLICIT",
+      "source": "cw9 and cw27 are both flanked by solo LTRs, and upstream of their predicted start codons they share a nearly identical 288-bp-long sequence (hereafter referred to as the conserved_up sequence) (Figure 4\u2014figure supplement 1), which is also conserved upstream of the coding sequences of many other wtf genes (Bowen et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4\u2014figure supplement 1 shows sequence alignment demonstrating the conserved_up sequence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "69778ad9-bb57-4efc-9ab6-0f154bd9866e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C37",
+      "claim": "The flanking LTRs of cw9 and cw27 are not important for spore killing.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ta versions, which lack the LTRs, caused spore killing phenotypes similar to those caused by longer constructs containing the flanking LTRs, indicating that the LTRs are not important.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows tetrad analysis data demonstrating that Ta versions without LTRs retain killing activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "4542f7c8-c7fc-4b2c-bf96-36bd5f657473",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C38",
+      "claim": "The Tb versions of cw9 and cw27 partially lost the ability to protect killer-containing spores from being harmed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Tb versions missing the sequence between the upstream LTR and the conserved_up sequence caused spores containing the killer to suffer a moderate viability loss, suggesting that these truncated killer genes partially lost the ability to protect killer-containing spores from being harmed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows tetrad analysis data demonstrating reduced protection by Tb versions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c4868aac-17ca-46ce-9050-c3bbf16a5a69",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C39",
+      "claim": "Removing the last 10 amino-acid-coding codons from the Tc versions (Td versions) greatly diminished spore killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing from the Tc versions, the last 10 amino-acid-coding codons (Td versions) greatly diminished spore killing, whereas removing from the Tc versions the sequences upstream of the start codons (Te versions) resulted in more indiscriminate killing than that caused by the Tb versions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows tetrad analysis data demonstrating that Td versions have greatly reduced killing activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "567b2d02-b855-4860-906b-389bc8ec7f2c",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C40",
+      "claim": "Intact C termini are important for the killing activity of wtf killers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that intact C termini are important for the killing activity, and the upstream sequences are important for the protecting activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the truncation analysis data showing that Td versions lacking the last 10 amino acids have greatly diminished killing activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "8e578c52-183a-406b-9981-55f3d8ddb1af",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C41",
+      "claim": "The upstream sequences of wtf killers are important for the protecting activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that intact C termini are important for the killing activity, and the upstream sequences are important for the protecting activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the truncation analysis data showing that Tb and Te versions with altered upstream sequences have reduced protecting activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "1cbe2424-8f3f-4561-9801-31bbbf121424",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C42",
+      "claim": "The Td versions of cw9 and cw27 can effectively protect spores harboring them from being killed by the respective Tc-version killers.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the Td versions, which are largely devoid of the killing activity, can still protect, we performed crosses in which a strain with a Td-version-containing plasmid integrated at the ars1 locus was crossed to a strain with a Tc-version-containing plasmid integrated at the leu1 locus, and found that the Td versions of both cw9 and cw27 can effectively protect spores harboring them from being killed by the respective Tc-version killers (Figure 4B and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4B shows tetrad analysis data demonstrating effective protection by Td versions against Tc-version killers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c550f78e-1336-4cfc-a970-49de018e070d",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C43",
+      "claim": "In the reference genome, there are 25 wtf genes at 20 locations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the reference genome, there are 25 wtf genes at 20 locations (15 singletons and five tandem pairs) (Bowen et al., 2003) (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A and B show the genomic locations and organization of wtf genes in the reference genome, supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "10ecc59f-6ae0-438d-b76f-adee49ff07ed",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C44",
+      "claim": "In the CBS5557 genome, there are 32 wtf genes at 23 locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using PacBio sequencing, we found that in the CBS5557 genome, these 20 locations are occupied by 29 wtf genes (12 singletons, seven pairs, and one triplet), with four locations containing an extra wtf gene compared to the reference genome (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A shows that CBS5557 has 32 wtf genes total (29 at syntenic locations plus 3 at new locations: cw26, cw27, cw28).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "22bcc8cb-dbb9-4014-8e77-8d77cc4209a3",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C45",
+      "claim": "cw26 and cw28 appeared to have been lost in the laboratory strain through LTR-mediated recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Like cw27, cw26 and cw28 also appeared to have been lost in the laboratory strain through LTR-mediated recombination (Figure 5\u2014figure supplement 1), suggesting that this is a common mode of wtf gene turnover.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 1 shows sequence analysis supporting LTR-mediated recombination as the mechanism of deletion for cw26 and cw28.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "3323b539-2361-4a16-893c-0d81d21ddf2b",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C46",
+      "claim": "LTR-mediated recombination is a common mode of wtf gene turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Like cw27, cw26 and cw28 also appeared to have been lost in the laboratory strain through LTR-mediated recombination (Figure 5\u2014figure supplement 1), suggesting that this is a common mode of wtf gene turnover.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that three singleton wtf genes (cw26, cw27, cw28) all appear to have been lost through the same LTR-mediated mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "2e17034f-93a9-4f92-afa9-5fbec3a06ca4",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C47",
+      "claim": "Six CBS5557 singleton wtf genes exhibit exceptionally high DNA sequence diversity (<85% identity) from their counterparts in the reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 CBS5557 singleton wtf genes with syntenic counterparts in the reference genome, cw9 and five others exhibit exceptionally high DNA sequence diversity (<85% identity) from their counterparts in the reference genome (Figure 1D, Figure 1\u2014figure supplement 2, and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 2 shows sequence identity data for syntenic wtf gene pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "521fc4c9-85a6-4d3c-8bd6-08719c11d652",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C48",
+      "claim": "wtf genes have diverged at a much faster pace than average genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the genome-wide nucleotide difference between CBS5557 and the laboratory strain is only 3.1 SNPs/kb (Hu et al., 2015), wtf genes must have diverged at a much faster pace than average genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the high sequence divergence of wtf genes (<85% identity for some) to the low genome-wide divergence (3.1 SNPs/kb).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "d5076be2-d55a-4741-af3f-4f621bf654ea",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C49",
+      "claim": "Only 11 of 16 phylogenetic neighbor pairs conform to typical orthologous relationship where two members are syntenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only 11 of these 16 pairs conform to typical orthologous relationship where two members of a pair are syntenic (highlighted by green rectangles in Figure 5C), whereas the five other pairs each consist of two genes that are non-syntenic (highlighted by yellow rectangles in Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5C shows the phylogenetic tree with colored rectangles highlighting syntenic and non-syntenic phylogenetic neighbor pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "6322b921-7534-41c1-915a-dee0ee27217f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C50",
+      "claim": "Ectopic gene conversion may contribute to the inter-isolate difference of wtf genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern suggests that ectopic gene conversion (also called non-allelic or interlocus gene conversion) may contribute to the inter-isolate difference of wtf genes (Chen et al., 2007; Petes and Hill, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic pattern showing non-syntenic genes as phylogenetic neighbors, supported by citations to literature on ectopic gene conversion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "bafaa602-631a-4099-8e04-f1adba6893b3",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C51",
+      "claim": "Genes belonging to the same wtf gene cluster are very distinct from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, genes belonging to the same gene cluster (pair or triplet), despite being subject more strongly to the homogenizing effect of gene conversion due to their physical proximity, are without exception very distinct from each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the phylogenetic tree in Figure 5C where clustered genes do not group together phylogenetically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "4fa3c6ab-f39c-4ff9-bb6d-18e20ace25b2",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C52",
+      "claim": "Diversifying selection may have prevented sequence homogenization within wtf gene clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that diversifying selection may have prevented sequence homogenization within gene clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed high divergence within gene clusters.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "5e12ccdb-4900-4a53-bf6a-09c73f94df87",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C53",
+      "claim": "Segregation Distorter in Drosophila contains at least two key loci: a killer locus and a target locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Two well-studied gamete killers in animals, Segregation Distorter in Drosophila and the t haplotype in mouse, both contain at least two key loci, a killer locus and a target locus (Lyon, 2003; Burt and Trivers, 2006; Larracuente and Presgraves, 2012; Lindholm et al., 2016; Bauer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on Segregation Distorter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "964289f2-8cc6-4268-b4b0-fa9b58789b64",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C54",
+      "claim": "The t haplotype in mouse contains at least two key loci: a killer locus and a target locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Two well-studied gamete killers in animals, Segregation Distorter in Drosophila and the t haplotype in mouse, both contain at least two key loci, a killer locus and a target locus (Lyon, 2003; Burt and Trivers, 2006; Larracuente and Presgraves, 2012; Lindholm et al., 2016; Bauer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on the t haplotype.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "d1b2ae05-ee17-4139-a2d8-178ca69bc579",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C55",
+      "claim": "Spore killers of Neurospora appear to comprise two genes: rsk and a yet-to-be-identified killer gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In fungi, spore killers of Neurospora also appear to comprise of two genes, rsk (resistant to Spore killer) and a yet-to-be-identified killer gene, which are proposed to act together in a fashion similar to the toxin-antitoxin (TA) systems of bacterial plasmids, in which a stable toxin and a labile antitoxin together ensure that bacterial cells cannot lose the plasmid expressing them (Hammond et al., 2012; McLaughlin and Malik, 2017; Saupe, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on Neurospora spore killers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "132af492-5db2-4ce7-b363-66a0c8e720ab",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C56",
+      "claim": "Two types of single-gene spore killers, [Het-s] prion and the Spok genes, have been found in Podospora anserina.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, two types of single-gene spore killers, [Het-s] prion and the Spok genes, have been found in the filamentous fungus Podospora anserina (Dalstra et al., 2003; Grognet et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on Podospora anserina spore killers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "27fc04ef-c146-4bc8-931c-94130627602f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C57",
+      "claim": "The killing activity of the [Het-s] prion requires the presence of the HET-S protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The killing activity of the [Het-s] prion requires the presence of the HET-S protein, whereas the Spok genes can act autonomously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the [Het-s] prion system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b4c98ed6-be6f-4703-bfbb-ac28a8de134e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C58",
+      "claim": "Spok genes can act autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "The killing activity of the [Het-s] prion requires the presence of the HET-S protein, whereas the Spok genes can act autonomously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Spok genes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "f2dbcbf6-f80a-4f69-9d3e-6e5cdeeb1a8b",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C59",
+      "claim": "wtf killers share two prominent features with Spok killers: being composed of a single predicted coding sequence and acting in a self-sufficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast wtf killers share two prominent features with the Spok killers: being composed of a single predicted coding sequence and acting in a self-sufficient manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural and functional characterization of wtf killers presented in the manuscript and comparison to published work on Spok killers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "fbb27121-ad36-49ab-832c-036cf3c96611",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C60",
+      "claim": "wtf genes only exist in S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, wtf genes only exist in a single fission yeast species S. pombe, indicating that they probably have arisen after the divergence of S. pombe from its closest relatives S. octosporus and S. cryophilus around 120 million years ago (Rhind et al., 2011), and have not jumped across the species barriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to comparative genomic studies and the absence of wtf homologs in other species.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "2d563e79-56d3-4fe4-b0de-6e736c80d253",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C61",
+      "claim": "wtf genes probably arose after the divergence of S. pombe from S. octosporus and S. cryophilus around 120 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, wtf genes only exist in a single fission yeast species S. pombe, indicating that they probably have arisen after the divergence of S. pombe from its closest relatives S. octosporus and S. cryophilus around 120 million years ago (Rhind et al., 2011), and have not jumped across the species barriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the species-specific distribution of wtf genes and citation to phylogenetic studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "3f9ef6c7-8df4-4a48-b70a-063b69d77573",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C62",
+      "claim": "Spok family genes have a patchy but widespread distribution among Pezizomycotina species.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Spok family genes have a patchy but widespread distribution among Pezizomycotina species (Grognet et al., 2014), whose last common ancestor dates to 400 million years ago (Prieto and Wedin, 2013), suggesting that Spok killers have originated much earlier than wtf killers or have been especially prone to transfer horizontally across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on Spok gene distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "e39edbc7-e37e-4ebb-b9bb-97ba3e486d8b",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C63",
+      "claim": "spok family genes encode soluble proteins with a C-terminal kinase-like domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, spok family genes encode soluble proteins with a C-terminal kinase-like domain (InterPro:IPR011009), whereas wtf genes are predicted to encode multi-transmembrane proteins, suggesting that the detailed molecular mechanisms of these two types of killers are likely to be quite distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on protein domain analysis and established knowledge about Spok proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c85c02c4-2010-4175-ad82-073d673a6843",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C64",
+      "claim": "wtf genes are predicted to encode multi-transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, spok family genes encode soluble proteins with a C-terminal kinase-like domain (InterPro:IPR011009), whereas wtf genes are predicted to encode multi-transmembrane proteins, suggesting that the detailed molecular mechanisms of these two types of killers are likely to be quite distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational prediction of protein structure shown in Figure 5\u2014figure supplement 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "9df8aff2-b64e-4a77-84eb-345622ddb7da",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C65",
+      "claim": "Nuckolls et al. showed that the wtf4 gene from S. pombe var. kambucha acts as a spore killer by expressing two overlapping transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, Nuckolls et al. showed that the wtf4 gene from the S. pombe var. kambucha strain (Sk wtf4) acts as a spore killer by expressing two overlapping transcripts, with the shorter transcript encoding a spore-killing poison and the longer transcript encoding an antidote that protects the spores from the killing effect of the poison (Nuckolls et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Nuckolls et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "7f8e69a6-2de9-4e24-a466-d475cb229c3f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C66",
+      "claim": "In the wtf4 dual-transcript model, the shorter transcript encodes a spore-killing poison and the longer transcript encodes an antidote.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, Nuckolls et al. showed that the wtf4 gene from the S. pombe var. kambucha strain (Sk wtf4) acts as a spore killer by expressing two overlapping transcripts, with the shorter transcript encoding a spore-killing poison and the longer transcript encoding an antidote that protects the spores from the killing effect of the poison (Nuckolls et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Nuckolls et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "5d9ccabf-bb67-4a76-a4d5-9547ca567e8e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C67",
+      "claim": "cw9, cw27, and 10 other wtf genes share a 150 bp conserved sequence in the predicted intron 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, through inspecting the DNA sequence alignment (Figure 5\u2014source data 1), we found that cw9, cw27, and 10 other wtf genes in the reference genome and the CBS5557 genome share a 150 bp conserved sequence in the predicted intron 1, and this sequence is closely upstream of the transcription start site of a shorter-than-predicted wtf23 transcript isoform uncovered by the Iso-Seq long-read RNA sequencing method (Figure 5\u2014figure supplement 3) (Kuang et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 3 shows the alignment of the 150 bp conserved sequence and its relationship to the wtf23 transcript start site.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "ac3cf4b3-57fa-4705-aaba-30884dfdec59",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C68",
+      "claim": "The 150 bp conserved sequence is closely upstream of the transcription start site of a shorter wtf23 transcript isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, through inspecting the DNA sequence alignment (Figure 5\u2014source data 1), we found that cw9, cw27, and 10 other wtf genes in the reference genome and the CBS5557 genome share a 150 bp conserved sequence in the predicted intron 1, and this sequence is closely upstream of the transcription start site of a shorter-than-predicted wtf23 transcript isoform uncovered by the Iso-Seq long-read RNA sequencing method (Figure 5\u2014figure supplement 3) (Kuang et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Iso-Seq data and shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "0bfceb2e-924f-46f9-a429-062b9bc989bb",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C69",
+      "claim": "The 12 genes containing the 150 bp sequence can be classified into Intron-1-ATG genes and Exon-2-ATG genes based on the locations of the first ATG codons downstream of the 150 bp sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These 12 genes can be classified into two subtypes, which we call Intron-1-ATG genes (wtf4, wtf13, cw4, cw18, and cw23) and Exon-2-ATG genes (wtf19, wtf23, cw8a, cw9, cw21, cw22, and cw27), based on the locations of the first ATG codons downstream of the 150 bp sequence (Figure 5C and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5C and Figure 5\u2014figure supplement 3 show the classification and locations of ATG codons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "57d0ecc5-63e5-4966-9019-f217767f4418",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C70",
+      "claim": "The 150 bp sequence is a hallmark of 'poison-and-antidote' genes that can potentially generate both poison and antidote isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this 150 bp sequence is a hallmark of the 'poison-and-antidote' genes that can, at least potentially, generate both poison and antidote isoforms according to the dual-transcript model proposed by Nuckolls et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the association of the 150 bp sequence with known dual-transcript killers and its position relative to alternative start codons.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "aa5b1f30-3d30-4c90-b9cc-ff017159d957",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C71",
+      "claim": "Most wtf genes lacking the 150 bp sequence are 'antidote-only' genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, except for the eight most divergent genes (wtf7, cw7, wtf11, cw11, wtf14, cw14, wtf15, and cw15), they do not have an in-frame ATG codon in intron one or in the 5'-section of exon 2, suggesting that most of these genes are not able to generate a shorter isoform according to the dual-transcript model, and are thus 'antidote-only' genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence analysis showing the absence of alternative in-frame ATG codons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "79964150-4a4b-42fb-9767-d5d93e0cd3ac",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C72",
+      "claim": "Nine wtf genes in the reference genome appear to have suffered pseudogenizing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the gene structures of the 57 wtf genes in the reference genome and the CBS5557 genome showed that in addition to these five genes, four other wtf genes in the reference genome (wtf6, wtf8, wtf12, and wtf17), and three wtf genes in the CBS5557 genome (cw3, cw12, and cw16), appear to have suffered pseudogenizing mutations (see Materials and methods and Figure 5\u2014source data 2), which include loss of start codons (wtf3 and cw3), premature stop codons (wtf1, wtf12, cw12, and cw16), frameshifting indels (wtf6, wtf8, wtf22, and wtf24), and segmental deletions (wtf2 and wtf17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene structure analysis detailed in Materials and methods and Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c75b3a3a-ed80-42e5-a05f-0233b4a218e1",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C73",
+      "claim": "Most wtf genes are predicted to contain either 5 or 6 exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the wtf genes in the reference genome and the CBS5557 genome are predicted to contain either 5 or 6 exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene structure predictions shown in Figure 5\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "d6a6b803-cf74-4406-813d-15598d59e4ba",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C74",
+      "claim": "The 6-exon genes clustered together in the DNA sequence-based phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 6-exon genes, including cw9, cw27, and all but one of the other ten 150-bp-sequence-containing genes, clustered together in the DNA sequence-based phylogenetic tree (Figure 5C), and their protein products are predicted to be longer and contain two or three more transmembrane helices than the protein products of 5-exon genes (Figure 5\u2014source data 3, Figure 5\u2014figure supplement 4, and Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5C shows the phylogenetic clustering of 6-exon genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "bb000cb7-a58f-40e2-b09c-2ec7a428f67d",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C75",
+      "claim": "Protein products of 6-exon genes are predicted to contain two or three more transmembrane helices than protein products of 5-exon genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 6-exon genes, including cw9, cw27, and all but one of the other ten 150-bp-sequence-containing genes, clustered together in the DNA sequence-based phylogenetic tree (Figure 5C), and their protein products are predicted to be longer and contain two or three more transmembrane helices than the protein products of 5-exon genes (Figure 5\u2014source data 3, Figure 5\u2014figure supplement 4, and Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 4 and 5 show transmembrane helix predictions for different wtf protein products.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "1dcb52ab-f44d-4985-9aef-a50e62c0a0cb",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C76",
+      "claim": "For each of the 12 150-bp-sequence-containing genes, the antidote protein product is approximately 50 amino acids longer than the poison protein product at the N-terminal soluble region.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the 12 150-bp-sequence-containing genes, the antidote protein product is approximately 50 amino acids longer than the poison protein product at the N-terminal soluble region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the positions of alternative start codons shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "65683fbf-9e16-46b0-903c-2e7d821c041c",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C77",
+      "claim": "The 10 C-terminal amino acids missing from the Td forms are strongly conserved among predicted protein products of 6-exon genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The 10 C-terminal amino acids missing from the protein products of the Td forms of cw9 and cw27 are downstream of the last transmembrane helix, and are strongly conserved among the predicted protein products of 6-exon genes (Figure 5\u2014figure supplement 4), indicating that Td-like mutations do not occur naturally to a significant extent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5\u2014figure supplement 4 shows the conservation of C-terminal amino acids among 6-exon genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "4bb94149-b0ec-49ae-8d76-fd47174edca0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C78",
+      "claim": "wtf genes were named after their association with solo LTRs of Tf retrotransposons.",
+      "claim_type": "EXPLICIT",
+      "source": "wtf genes were named after their association with the solo LTRs of the Tf retrotransposons (Wood et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original naming publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "cceea118-e11b-46e3-a6be-4b14b9c27e0f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C79",
+      "claim": "The presence of introns in wtf genes and lack of sequence similarity between wtf-flanking LTRs indicate that wtf genes have not been retrotransposed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of introns in wtf genes and the lack of sequence similarity between wtf-flanking LTRs indicate that wtf genes have not been retrotransposed (Bowen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous analysis and the structural features of wtf genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "bd3a72ac-fba0-4030-ac1f-6648a5d201af",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C80",
+      "claim": "The regions flanking wtf genes may have been favored insertion targets of Tf retrotransposons due to high transcription levels of wtf genes during meiosis and sporulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bowen et al. have put forward an explanation for the enrichment of LTRs near wtf genes: the regions flanking wtf genes may have been favored insertion targets of Tf retrotransposons, perhaps owing to the high transcription levels of wtf genes during meiosis and sporulation (Bowen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b258c507-27ba-4ab5-8a8f-5d5e58ce5a7e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C81",
+      "claim": "The wtf-LTR association promotes wtf gene loss and is detrimental to the long-term persistence of wtf genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that three singleton wtf genes (cw26, cw27, and cw28) appear to have been lost in the laboratory strain due to LTR-mediated recombination, suggesting that the wtf-LTR association promotes wtf gene loss and is detrimental to the long-term persistence of wtf genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple wtf genes were lost through LTR-mediated recombination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "6ab5cdf3-e1b6-47b2-bd66-5ed6a9d5f663",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C82",
+      "claim": "Most wtf genes locate on chromosome III.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intriguing that most of the wtf genes locate on chromosome III, the smallest of the three fission yeast chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A shows the chromosomal distribution of wtf genes with most on chromosome III.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "8780fa92-e6dc-46eb-8bfb-cb80052e5b4a",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C83",
+      "claim": "The only type of viable aneuploidy in fission yeast is chromosome III disomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The only type of viable aneuploidy in fission yeast is chromosome III disomy (Niwa et al., 2006; Niwa and Yanagida, 1985), which occurs at a frequency of >1% during normal meiosis (Molnar et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on fission yeast aneuploidy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b8ffeb50-bdf0-4011-a571-f8192fa9788e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C84",
+      "claim": "Chromosome III disomy occurs at a frequency of >1% during normal meiosis in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The only type of viable aneuploidy in fission yeast is chromosome III disomy (Niwa et al., 2006; Niwa and Yanagida, 1985), which occurs at a frequency of >1% during normal meiosis (Molnar et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b82a1e58-840e-45c4-963f-0810f36fac44",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C85",
+      "claim": "The tolerance of chromosome III disomy may be advantageous to the expansion of the wtf gene family on this chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the tolerance of chromosome III disomy may in some way be advantageous to the expansion of the wtf gene family on this chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the chromosomal distribution bias of wtf genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "e15d7d8b-9507-42f7-a484-0cb2f8d27b99",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C86",
+      "claim": "wtf genes are the largest species-specific gene family in S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "During a relatively short evolutionary time span, wtf gene family has emerged and become the largest species-specific gene family in S. pombe (Lespinet et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on gene family sizes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "9c92f7f1-4047-4aec-add6-0bd52f933e47",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C87",
+      "claim": "The minimal sizes of fully functional cw9 and cw27 are both around 1.9 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The compactness (minimal sizes of fully functional cw9 and cw27 are both around 1.9 kb) and the self-sufficiency of the wtf killers likely have been advantageous to its family size expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the truncation analysis showing that Ta versions of approximately 1.9 kb retain full killing and protecting activities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "c7c3fe46-b5e4-404e-b3f8-fbd3c7988ae3",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "claim_id": "C88",
+      "claim": "Ectopic gene conversion may contribute to the historical expansion and ongoing dynamic change of the wtf gene family.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic gene conversion is known to play a causal role in the sequence diversification of animal major histocompatibility complex (MHC) genes (Ohta, 1991; Takuno et al., 2008), plant disease-resistance genes (R genes) (Mondragon-Palomino and Gaut, 2005), and Plasmodium falciparum var genes (Claessens et al., 2014). Our phylogenetic analysis suggests that ectopic gene conversion may also contribute to the historical expansion and the ongoing dynamic change of the wtf gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic patterns and supported by citations to examples of ectopic gene conversion in other gene families.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6964a0a-dfee-470e-a350-69d9d809224c",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two spore killer genes, cw9 and cw27, belonging to the wtf gene family were identified in the CBS5557 strain of S. pombe through NGS-assisted bulk segregant analysis and genetic deletion experiments. Both genes cause transmission distortion when present, with deletion of cw9 reducing segregation distortion and deletion of cw27 completely abolishing it in backcrossed strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide converging genetic evidence from bulk segregant analysis (Figure 1A-C) showing transmission distortion on chromosome III, which is reduced or abolished upon deletion of cw9 or cw27. The experimental design includes appropriate controls (backcrossed strains) and the statistical significance of transmission bias is demonstrated. The identification is well-supported by multiple independent lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "7c5c5ca8-e394-4b32-a512-f8000a3fb8b0",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The spore killers cw9 and cw27 act in a strain-background-independent and genome-location-independent manner, causing spore killing when integrated at various genomic locations (his3, lys1, leu1) in laboratory strain backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 3A and Figure 3\u2014figure supplement 1 demonstrate that cw9 and cw27 cause significant spore viability loss regardless of their genomic location in laboratory strain crosses. The experiments test multiple integration sites with appropriate controls, and statistical significance is reported (p-values via Fisher's exact test). The sample sizes (n=160-328 spores) are adequate for the conclusions drawn.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "d40aab59-6854-4c3a-8070-93198f106f25",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Killer-affected spores fail to undergo proper maturation, as demonstrated by electron microscopy showing that at 18 hours post-sporulation, affected spores exhibit lower electron density cytoplasm, visible organelles, electron-lucent spore walls, and often non-spherical shapes in a 2:2 pattern within asci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 3C provides direct ultrastructural evidence through electron microscopy at multiple time points (12h and 18h). The 2:2 pattern of spore morphology in cw27-containing cells is consistent with Mendelian segregation of the killer allele. The comparison to control cells at the same time points provides appropriate controls for the maturation phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "25b4052a-6c80-4473-b8a1-db46cd573e14",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spores carrying one killer are protected from its own killing effect but not from the other killer, demonstrating killer-specific protection. Heterozygous deletion of cw9 or cw27 causes significant spore viability loss affecting primarily deletion-carrying spores, while homozygous deletions have no effect. When both killers are present in different parents, mutual killing occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 2 and Figure 3B provide comprehensive tetrad analysis data demonstrating the protection and mutual killing phenotypes. The experiments include appropriate genetic controls (homozygous vs heterozygous deletions) and statistical analysis (Fisher's exact test, exact binomial test). The sample sizes are adequate (n=160-328 spores per cross) and the results show clear statistical significance (p-values ranging from 1.94E-7 to 2.63E-23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "0f183112-2f70-4500-9836-8f055f6ad24f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The killing and protecting activities of wtf killers can be uncoupled by mutation. Truncation analysis reveals that intact C-termini are important for killing activity while upstream sequences are important for protecting activity. Td versions lacking the last 10 amino acids retain protecting activity but lose killing activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 4 provides systematic truncation analysis with multiple constructs (Ta, Tb, Tc, Td, Te) tested in crosses. The separation-of-function is clearly demonstrated by Td versions that protect but do not kill (Figure 4B). Statistical significance is reported for all comparisons. However, the mechanistic basis for this separation remains unclear and would benefit from molecular characterization of the protein products.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "68931490-f657-401d-98c5-48cd1e1405ed",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The numbers and sequences of wtf genes vary considerably between S. pombe isolates. The reference genome has 25 wtf genes at 20 locations while CBS5557 has 32 wtf genes at 23 locations. Six CBS5557 singleton wtf genes exhibit exceptionally high sequence diversity (<85% identity) from their reference genome counterparts, indicating that wtf genes have diverged at a much faster pace than average genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 5 and supplementary figures provide comprehensive genomic analysis based on PacBio sequencing. The comparison of wtf gene divergence (<85% identity for some genes) to genome-wide divergence (3.1 SNPs/kb) clearly demonstrates accelerated evolution. The phylogenetic analysis and sequence alignments support the conclusions about rapid divergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "3239a309-a589-45ed-8948-0fbbd75e74d9",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Three singleton wtf genes (cw26, cw27, cw28) appear to have been lost in the laboratory strain through LTR-mediated recombination, suggesting this is a common mode of wtf gene turnover. The wtf-LTR association promotes gene loss and is detrimental to long-term persistence of wtf genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 1E, Figure 1\u2014figure supplement 3, and Figure 5\u2014figure supplement 1 provide sequence analysis showing evidence of LTR-mediated recombination at the breakpoint junctions. The identification of three independent instances of the same mechanism supports the claim that this is a common mode of turnover. However, the claim about detriment to long-term persistence is somewhat speculative as it's based on observation of loss events without direct evidence of fitness consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "a669f32b-8425-4629-84c3-dff2eadf54de",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that only 11 of 16 phylogenetic neighbor pairs are syntenic, while 5 pairs consist of non-syntenic genes, suggesting ectopic gene conversion contributes to inter-isolate differences. Genes within the same cluster are highly distinct from each other, possibly due to diversifying selection preventing sequence homogenization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 5C shows the phylogenetic tree with appropriate bootstrap support values (\u226595%) for defining neighbor pairs. The pattern of non-syntenic phylogenetic neighbors is consistent with ectopic gene conversion, supported by citations to similar phenomena in other gene families. However, the claim about diversifying selection (C52) is speculative and lacks direct evidence. The phylogenetic analysis appears sound but would benefit from additional tests for selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b72f2885-2853-4250-8d33-af4d7609ff3f",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Twelve wtf genes (including cw9 and cw27) share a 150 bp conserved sequence in predicted intron 1, closely upstream of the transcription start site of a shorter wtf23 transcript isoform. These genes can be classified as Intron-1-ATG or Exon-2-ATG genes based on the location of the first ATG codon downstream of the 150 bp sequence. This sequence is proposed as a hallmark of 'poison-and-antidote' genes that can potentially generate both poison and antidote isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 5\u2014figure supplement 3 shows the sequence alignment and relationship to the wtf23 transcript start site identified by Iso-Seq. The classification into two subtypes is clearly demonstrated. However, the proposal that this is a hallmark of poison-and-antidote genes (C70) is somewhat speculative, based on association with known dual-transcript killers rather than direct experimental evidence. The claim about 'antidote-only' genes (C71) is an inference from the absence of alternative ATG codons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "258a8efa-b5ef-444c-9a6e-3435831e5b4e",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Introducing a 2.23 Mb pericentric inversion on chromosome I into the laboratory strain increased spore viability in crosses with CBS5557 from 14% to 22%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 1\u2014figure supplement 1 and Supplementary file 1 provide tetrad analysis data with appropriate sample sizes (n=240 and n=236 tetrads). Statistical significance is demonstrated (p=0.042, Fisher's exact test). This result establishes that chromosomal rearrangements contribute to but do not fully explain hybrid sterility, motivating the search for additional factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "28492738-96d5-4634-92e1-355c082dafbc",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "cw9 and cw27 share a nearly identical 288-bp-long conserved_up sequence upstream of their predicted start codons, which is also conserved upstream of many other wtf genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 4\u2014figure supplement 1 shows sequence alignment demonstrating the conserved_up sequence. This is supported by citation to previous work (Bowen et al., 2003) that identified this conserved element. The sequence conservation is clearly demonstrated and forms the basis for subsequent truncation analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "f79200de-ccf9-46bf-bce6-910951f696a1",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gene structure analysis reveals that 12 wtf genes appear to have suffered pseudogenizing mutations. Most wtf genes are predicted to contain either 5 or 6 exons, with 6-exon genes clustering together phylogenetically and encoding proteins with 2-3 more transmembrane helices than 5-exon gene products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 5\u2014source data 2 and 3, and Figure 5\u2014figure supplements 4 and 5 provide comprehensive gene structure predictions and protein structure analysis. The AUGUSTUS predictions are described with appropriate parameter settings. The phylogenetic clustering of 6-exon genes (Figure 5C) and transmembrane helix predictions support the structural distinctions. However, these are computational predictions that would benefit from experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "277eedf5-8b47-4975-acdb-72c290f4c21d",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For the 12 genes containing the 150 bp sequence, the antidote protein product is approximately 50 amino acids longer than the poison product at the N-terminal region. The 10 C-terminal amino acids missing from Td forms are strongly conserved among 6-exon genes, indicating Td-like mutations do not occur naturally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are inferred from sequence analysis shown in Figure 5\u2014figure supplement 3 and 4. The conservation of C-terminal amino acids is clearly demonstrated in the alignment. The inference about natural occurrence of Td-like mutations is reasonable based on the strong conservation, though it remains an inference rather than direct observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "2c632de5-1552-408b-9610-f232c58e6f10",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "wtf genes contribute to extensive intraspecific reproductive isolation in S. pombe and represent ideal models for understanding how segregation-distorting elements act and evolve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a proposal based on the observation that different isolates have different sets of wtf killers causing mutual killing, combined with known severe hybrid sterility in S. pombe. While the mutual killing between cw9 and cw27 is well-demonstrated, the claim about contribution to reproductive isolation requires testing with additional natural isolates and quantification of the relative contribution of wtf genes versus other factors (like chromosomal rearrangements). The claim about being ideal models is subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "deb008ff-b302-4321-b945-2d177f379cf8",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The wtf gene family has 25 members in the reference genome and is the largest species-specific gene family in S. pombe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The count of 25 wtf genes is supported by Figure 5 and citation to previous work (Bowen et al., 2003). The claim about being the largest species-specific family is supported by citation to Lespinet et al., 2002. These are well-established facts in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "b60a713d-e055-48ce-a02b-e9bcf747bad5",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Most wtf genes locate on chromosome III, the smallest fission yeast chromosome and the only chromosome that tolerates disomy (occurring at >1% frequency during normal meiosis). The tolerance of chromosome III disomy may be advantageous to wtf gene family expansion on this chromosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Figure 5A clearly shows the chromosomal distribution bias toward chromosome III. The facts about chromosome III disomy are supported by citations (Niwa et al., 2006; Molnar et al., 1995). However, the proposed connection between disomy tolerance and wtf gene expansion (C85) is speculative without mechanistic evidence or direct testing of this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "6d393321-d0ae-49da-9950-5a1cb2b0f0aa",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The minimal sizes of fully functional cw9 and cw27 are both around 1.9 kb, and this compactness along with self-sufficiency likely has been advantageous to wtf gene family size expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The size estimate is based on truncation analysis (Figure 4) showing that Ta versions of approximately 1.9 kb retain full killing and protecting activities. However, the claim about advantage to family expansion is speculative, though reasonable. The connection between compactness and evolutionary success is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "2564e3f3-1dac-45b3-9a03-8575f6367684",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about meiotic drivers, gamete killers in other organisms, S. pombe natural isolate characteristics, and wtf gene evolutionary origin and distribution are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations to published literature and represent established knowledge in the field. They provide necessary context for the current work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "9f755452-5769-4044-8373-e7bafae86046",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "wtf killers share features with Spok killers (single coding sequence, self-sufficient action) but encode multi-transmembrane proteins. A concurrent study by Nuckolls et al. showed wtf4 acts via a dual-transcript mechanism with poison and antidote isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to Spok killers is supported by the functional characterization in this study and citations. The transmembrane protein prediction is shown in Figure 5\u2014figure supplements 4 and 5. The citation to Nuckolls et al., 2017 is appropriate for the dual-transcript model, which provides a mechanistic framework for interpreting the truncation analysis results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    },
+    {
+      "id": "27d3a19a-1834-4319-a56b-d4c3669b725d",
+      "content_id": "29fdf418-9bf1-4289-b620-c4e71df4d55d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "wtf genes were named for their association with Tf retrotransposon LTRs, but the presence of introns and lack of LTR sequence similarity indicate wtf genes have not been retrotransposed. The wtf-LTR association may reflect exploitation of wtf genes by Tf retrotransposons for insertion targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to previous work (Wood et al., 2002; Bowen et al., 2003) and the structural features of wtf genes demonstrated in this study. The hypothesis about Tf exploitation (C80) is from cited literature and remains speculative but plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:41:39.479580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b7a3106-94a3-446b-ac3b-1635024dcc50",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "911c42d2-d477-4944-92cf-64e8bbe69a79",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "cac9586c-b5f3-4ad1-bfdd-807eece620c5",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "8f63f856-3bfa-4e54-b239-cfa9967b3eb9",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "04adf72e-dcdb-42bf-acf2-8ff309f78fa6",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "8f281ac1-6dac-460d-81e1-6f1fa28d73e4",
+      "result_id": "b6964a0a-dfee-470e-a350-69d9d809224c"
+    },
+    {
+      "claim_id": "62f79319-1515-4f66-a011-b949086d2df0",
+      "result_id": "7c5c5ca8-e394-4b32-a512-f8000a3fb8b0"
+    },
+    {
+      "claim_id": "43c1cd3d-4543-4028-9d58-3caa7ee3e8e0",
+      "result_id": "7c5c5ca8-e394-4b32-a512-f8000a3fb8b0"
+    },
+    {
+      "claim_id": "11d005af-629d-401d-a625-bb1f43405e0c",
+      "result_id": "7c5c5ca8-e394-4b32-a512-f8000a3fb8b0"
+    },
+    {
+      "claim_id": "f68e67fd-2a7f-42ea-b9e1-5d6243f21faf",
+      "result_id": "d40aab59-6854-4c3a-8070-93198f106f25"
+    },
+    {
+      "claim_id": "178508c5-d622-494e-ab57-09a254d98527",
+      "result_id": "d40aab59-6854-4c3a-8070-93198f106f25"
+    },
+    {
+      "claim_id": "0067da3b-91a7-420b-ae20-8c423b9230f2",
+      "result_id": "d40aab59-6854-4c3a-8070-93198f106f25"
+    },
+    {
+      "claim_id": "520b4ef7-7889-4df6-b921-30b12b5d2cfd",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "fea08600-0fdd-445b-b4fa-b596e071e283",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "47b5126f-7127-43a9-bc32-f0bd03054bcc",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "70131c0f-2436-4d8e-8a28-e8e7ff082669",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "acda0b2c-c931-4347-80a9-aa7a06a2a85a",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "b8f04f6f-2c24-4eb9-94c1-20ebc0a42341",
+      "result_id": "25b4052a-6c80-4473-b8a1-db46cd573e14"
+    },
+    {
+      "claim_id": "5bd46399-4656-4a6a-9996-fbf7ad5014ce",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "69778ad9-bb57-4efc-9ab6-0f154bd9866e",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "4542f7c8-c7fc-4b2c-bf96-36bd5f657473",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "c4868aac-17ca-46ce-9050-c3bbf16a5a69",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "567b2d02-b855-4860-906b-389bc8ec7f2c",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "8e578c52-183a-406b-9981-55f3d8ddb1af",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "1cbe2424-8f3f-4561-9801-31bbbf121424",
+      "result_id": "0f183112-2f70-4500-9836-8f055f6ad24f"
+    },
+    {
+      "claim_id": "f589564a-a04f-48f1-b559-da7226372047",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "c61104bb-0d19-4175-88ba-7f117090b7c9",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "c550f78e-1336-4cfc-a970-49de018e070d",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "10ecc59f-6ae0-438d-b76f-adee49ff07ed",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "2e17034f-93a9-4f92-afa9-5fbec3a06ca4",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "521fc4c9-85a6-4d3c-8bd6-08719c11d652",
+      "result_id": "68931490-f657-401d-98c5-48cd1e1405ed"
+    },
+    {
+      "claim_id": "444fcbc8-26da-49e6-9126-a3dbc2b2f0c6",
+      "result_id": "3239a309-a589-45ed-8948-0fbbd75e74d9"
+    },
+    {
+      "claim_id": "22bcc8cb-dbb9-4014-8e77-8d77cc4209a3",
+      "result_id": "3239a309-a589-45ed-8948-0fbbd75e74d9"
+    },
+    {
+      "claim_id": "3323b539-2361-4a16-893c-0d81d21ddf2b",
+      "result_id": "3239a309-a589-45ed-8948-0fbbd75e74d9"
+    },
+    {
+      "claim_id": "b258c507-27ba-4ab5-8a8f-5d5e58ce5a7e",
+      "result_id": "3239a309-a589-45ed-8948-0fbbd75e74d9"
+    },
+    {
+      "claim_id": "d5076be2-d55a-4741-af3f-4f621bf654ea",
+      "result_id": "a669f32b-8425-4629-84c3-dff2eadf54de"
+    },
+    {
+      "claim_id": "6322b921-7534-41c1-915a-dee0ee27217f",
+      "result_id": "a669f32b-8425-4629-84c3-dff2eadf54de"
+    },
+    {
+      "claim_id": "bafaa602-631a-4099-8e04-f1adba6893b3",
+      "result_id": "a669f32b-8425-4629-84c3-dff2eadf54de"
+    },
+    {
+      "claim_id": "4fa3c6ab-f39c-4ff9-bb6d-18e20ace25b2",
+      "result_id": "a669f32b-8425-4629-84c3-dff2eadf54de"
+    },
+    {
+      "claim_id": "c7c3fe46-b5e4-404e-b3f8-fbd3c7988ae3",
+      "result_id": "a669f32b-8425-4629-84c3-dff2eadf54de"
+    },
+    {
+      "claim_id": "5d9ccabf-bb67-4a76-a4d5-9547ca567e8e",
+      "result_id": "b72f2885-2853-4250-8d33-af4d7609ff3f"
+    },
+    {
+      "claim_id": "ac3cf4b3-57fa-4705-aaba-30884dfdec59",
+      "result_id": "b72f2885-2853-4250-8d33-af4d7609ff3f"
+    },
+    {
+      "claim_id": "0bfceb2e-924f-46f9-a429-062b9bc989bb",
+      "result_id": "b72f2885-2853-4250-8d33-af4d7609ff3f"
+    },
+    {
+      "claim_id": "57d0ecc5-63e5-4966-9019-f217767f4418",
+      "result_id": "b72f2885-2853-4250-8d33-af4d7609ff3f"
+    },
+    {
+      "claim_id": "aa5b1f30-3d30-4c90-b9cc-ff017159d957",
+      "result_id": "b72f2885-2853-4250-8d33-af4d7609ff3f"
+    },
+    {
+      "claim_id": "20b3a16b-9802-4b10-9932-4937b21781e5",
+      "result_id": "258a8efa-b5ef-444c-9a6e-3435831e5b4e"
+    },
+    {
+      "claim_id": "da518278-8a29-401e-966f-ae6ce1445be0",
+      "result_id": "28492738-96d5-4634-92e1-355c082dafbc"
+    },
+    {
+      "claim_id": "79964150-4a4b-42fb-9767-d5d93e0cd3ac",
+      "result_id": "f79200de-ccf9-46bf-bce6-910951f696a1"
+    },
+    {
+      "claim_id": "c75b3a3a-ed80-42e5-a05f-0233b4a218e1",
+      "result_id": "f79200de-ccf9-46bf-bce6-910951f696a1"
+    },
+    {
+      "claim_id": "d6a6b803-cf74-4406-813d-15598d59e4ba",
+      "result_id": "f79200de-ccf9-46bf-bce6-910951f696a1"
+    },
+    {
+      "claim_id": "bb000cb7-a58f-40e2-b09c-2ec7a428f67d",
+      "result_id": "f79200de-ccf9-46bf-bce6-910951f696a1"
+    },
+    {
+      "claim_id": "1dcb52ab-f44d-4985-9aef-a50e62c0a0cb",
+      "result_id": "277eedf5-8b47-4975-acdb-72c290f4c21d"
+    },
+    {
+      "claim_id": "65683fbf-9e16-46b0-903c-2e7d821c041c",
+      "result_id": "277eedf5-8b47-4975-acdb-72c290f4c21d"
+    },
+    {
+      "claim_id": "2d3f2cd4-97f7-43dd-9381-62fed7c8a5e8",
+      "result_id": "2c632de5-1552-408b-9610-f232c58e6f10"
+    },
+    {
+      "claim_id": "48be642a-aee7-481f-8cfc-933f9a096679",
+      "result_id": "deb008ff-b302-4321-b945-2d177f379cf8"
+    },
+    {
+      "claim_id": "e15d7d8b-9507-42f7-a484-0cb2f8d27b99",
+      "result_id": "deb008ff-b302-4321-b945-2d177f379cf8"
+    },
+    {
+      "claim_id": "6ab5cdf3-e1b6-47b2-bd66-5ed6a9d5f663",
+      "result_id": "b60a713d-e055-48ce-a02b-e9bcf747bad5"
+    },
+    {
+      "claim_id": "8780fa92-e6dc-46eb-8bfb-cb80052e5b4a",
+      "result_id": "b60a713d-e055-48ce-a02b-e9bcf747bad5"
+    },
+    {
+      "claim_id": "b8ffeb50-bdf0-4011-a571-f8192fa9788e",
+      "result_id": "b60a713d-e055-48ce-a02b-e9bcf747bad5"
+    },
+    {
+      "claim_id": "b82a1e58-840e-45c4-963f-0810f36fac44",
+      "result_id": "b60a713d-e055-48ce-a02b-e9bcf747bad5"
+    },
+    {
+      "claim_id": "9c92f7f1-4047-4aec-add6-0bd52f933e47",
+      "result_id": "6d393321-d0ae-49da-9950-5a1cb2b0f0aa"
+    },
+    {
+      "claim_id": "1a8189be-9c7b-44f8-abf5-776566e4cfb0",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "da0b1dcf-1aa2-4ab4-9697-c4bf8c8c111e",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "7c4836a4-dfc4-4542-9714-f291faf66f18",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "9176dd97-89c4-4210-9706-f93e992b1e8e",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "d144eb4d-42ae-4b5b-add8-29160f0ff4c9",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "efefb003-8814-48a9-ad50-6002a05845e5",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "0afa8493-a8d5-44aa-ad5d-a85f6d7181d2",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "3e3ce7ef-26b1-459b-bf85-a3ce9044feaa",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "835170cd-9e82-499b-8c74-6a1609a9968a",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "81fb6e1d-9089-498e-9ad5-005c06a32ec2",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "5e12ccdb-4900-4a53-bf6a-09c73f94df87",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "964289f2-8cc6-4268-b4b0-fa9b58789b64",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "d1b2ae05-ee17-4139-a2d8-178ca69bc579",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "132af492-5db2-4ce7-b363-66a0c8e720ab",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "27fc04ef-c146-4bc8-931c-94130627602f",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "b4c98ed6-be6f-4703-bfbb-ac28a8de134e",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "fbb27121-ad36-49ab-832c-036cf3c96611",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "2d563e79-56d3-4fe4-b0de-6e736c80d253",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "3f9ef6c7-8df4-4a48-b70a-063b69d77573",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "e39edbc7-e37e-4ebb-b9bb-97ba3e486d8b",
+      "result_id": "2564e3f3-1dac-45b3-9a03-8575f6367684"
+    },
+    {
+      "claim_id": "f2dbcbf6-f80a-4f69-9d3e-6e5cdeeb1a8b",
+      "result_id": "9f755452-5769-4044-8373-e7bafae86046"
+    },
+    {
+      "claim_id": "c85c02c4-2010-4175-ad82-073d673a6843",
+      "result_id": "9f755452-5769-4044-8373-e7bafae86046"
+    },
+    {
+      "claim_id": "9df8aff2-b64e-4a77-84eb-345622ddb7da",
+      "result_id": "9f755452-5769-4044-8373-e7bafae86046"
+    },
+    {
+      "claim_id": "7f8e69a6-2de9-4e24-a466-d475cb229c3f",
+      "result_id": "9f755452-5769-4044-8373-e7bafae86046"
+    },
+    {
+      "claim_id": "4bb94149-b0ec-49ae-8d76-fd47174edca0",
+      "result_id": "27d3a19a-1834-4319-a56b-d4c3669b725d"
+    },
+    {
+      "claim_id": "cceea118-e11b-46e3-a6be-4b14b9c27e0f",
+      "result_id": "27d3a19a-1834-4319-a56b-d4c3669b725d"
+    },
+    {
+      "claim_id": "bd3a72ac-fba0-4030-ac1f-6648a5d201af",
+      "result_id": "27d3a19a-1834-4319-a56b-d4c3669b725d"
+    }
+  ],
+  "comparisons": []
+}

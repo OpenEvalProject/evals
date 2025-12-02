@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors designed and constructed synthetic hormone-activated Cas9-based repressors (HACRs) in Arabidopsis thaliana that respond to auxin, gibberellins, and jasmonates. The HACR design fuses dCas9 to hormone-sensitive degrons and a TOPLESS repressor domain, enabling hormone-triggered relief of transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C36-C41 describe the HACR design and mechanism, supported by detailed molecular descriptions (C38-C40) and methodological details (C99-C106). The design is based on prior work in yeast (C37) and uses well-characterized components with appropriate citations. The construction methods are clearly described with sufficient detail for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C107"
+    ],
+    "result": "HACRs respond to exogenous hormone treatments in a dose-dependent and hormone-specific manner. Auxin treatment increased reporter fluorescence with a significant spike peaking at ~80 min (p<0.001, n=10), while a stabilized degron control showed significantly reduced response (p=0.01, n=10). HACR variants with jasmonate and gibberellin degrons also showed significant hormone-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide quantitative data with statistical significance and appropriate sample sizes (n=10). The stabilized degron control (C44) is a critical negative control demonstrating specificity. Claims C46-C47 extend the modularity to other hormones with supporting data in Figure 1. The experimental design (C107) indicates multiple independent lines were tested, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HACRs are sensitive to local differences in endogenous hormone levels during development. A ratiometric auxin HACR recapitulated known auxin distribution patterns including the reverse fountain pattern in root tips, higher vasculature signal, and accumulation in lateral root primordia and embryonic tissues. GA and JA HACRs showed expected patterns in endosperm and wounded leaves, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate that HACR-reported auxin distributions match established patterns from prior reporters (DII-VENUS, R2D2), with appropriate citations to Band et al., 2014 and Liao et al., 2015. The ratiometric design (C49) controls for differential promoter activity. GA HACR patterns (C55) match GA biosynthesis enzyme expression. JA HACR response to mechanical damage (C58) aligns with known JA biology. The convergence of multiple hormone systems and developmental contexts strongly supports endogenous hormone sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Deploying a HACR to modulate auxin-induced expression of PIN1 decreased shoot branching by approximately half in the strongest lines and reduced phyllotactic noise. A mathematical model predicted dampened PIN1 dose-response, which was confirmed by qPCR showing reduced PIN1 expression that could be rescued by exogenous auxin. A stabilized degron control showed no branching phenotype, indicating the effect requires auxin-responsive degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe model predictions validated by qPCR data (Figure 3\u2014figure supplement 1D). The branching phenotype (C79-C80) is supported by data from multiple independent lines across different HACR backgrounds (C108-C110) with appropriate sample sizes (n=5 in T2, n>20 in T3). The stabilized degron control (C81-C82) is critical for demonstrating that the phenotype results from modulating feedback strength rather than simple repression. The convergence of modeling, molecular data, and phenotypic analysis across multiple lines provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C111",
+      "C112"
+    ],
+    "result": "Plants with a HACR targeting PIN1 showed a significant reduction in co-initiations of lateral organs, consistent with model predictions that reduced feedback strength increases inhibition zone size. This was characterized in T2 (n=5) and T3 (n=25) generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 reports a significant reduction in co-initiations supported by data in Figure 3G and Figure 3\u2014figure supplement 4. The hypothesis (C88) is grounded in established models (Refahi et al., 2016; Bennett et al., 2014) described in C83-C87. The experimental design (C111-C112) includes appropriate replication across generations. However, the manuscript does not report p-values for the co-initiation phenotype, which is a minor weakness compared to the branching data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mathematical models predict that feedback strength\u2014the degree to which auxin promotes its own polar transport\u2014is a key parameter controlling branching and phyllotaxy. One mechanism contributing to this feedback is auxin-induced PIN1 expression, but it has been impossible to tune this transcriptional feedback strength until now.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are well-supported by citations to established models (Bennett et al., 2014; Vieten et al., 2005). Claims C73-C76 accurately describe the Prusinkiewicz et al. model. Claim C66 correctly identifies a gap in the field. The hypothesis (C77-C78) that transcriptional feedback modulation would have similar effects to post-translational feedback is reasonable but represents an extrapolation from existing models, which is appropriately framed as a hypothesis to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The HACR platform enables exploration of previously inaccessible parameter regimes by modulating transcriptional feedback strength rather than simply altering gene expression. The modular design allows independent tuning of hormone sensitivity, repression strength, and tissue-specificity. This represents one of the first examples of using synthetic signaling systems to re-engineer multicellular organism morphology in a model-driven manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a reasonable inference from the demonstrated capabilities (C71, C79-C82). Claim C91 is supported by citation to prior work (Khakhar et al., 2016) demonstrating modularity. Claim C92 is a logical inference from the modular design. Claim C93 is appropriately qualified as \"among the first examples\" and supported by citation to Nishimura et al., 2009 regarding AID system extensibility. These claims synthesize the significance of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Plant developmental programs sculpt morphology and have been manipulated for agricultural productivity. Hormones coordinate these programs through chemical circuitry that has been represented in mathematical models, but model-guided engineering has been limited by lack of tools. Mathematical models highlight the importance of subtle parameters like feedback loop strength in determining morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C13-C23 provide background context supported by appropriate citations to established literature (Doebley et al., 1997; Khush, 2001; Vanstraelen and Benkov\u00e1, 2012; Refahi et al., 2016; Prusinkiewicz et al., 2009; Weijers and Wagner, 2015/2016). These claims establish the motivation and context for the work. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Native hormone signaling pathways are complex, redundant, and embedded in cross-regulatory networks, making them difficult to manipulate. Existing approaches (altering expression of native components or using chimeric promoters) have significant limitations. There is a need for tools that can predictably alter how specific hormones regulate genes of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 accurately describe the complexity of native hormone signaling with appropriate citations (Weijers and Wagner, 2015/2016; Koltai, 2015; Naseem et al., 2015). Claims C31-C35 identify limitations of existing approaches with supporting citations (Voytas and Gao, 2014; Ulmasov, 1997; Rushton et al., 2002). Claim C30 articulates the need addressed by this work. These claims effectively establish the problem and justify the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Shoot architecture is an agronomically important trait with well-established connections to auxin. Fewer branches enable higher density planting, and more regular phyllotaxy facilitates mechanized harvest. The molecular mechanisms controlling these traits have been mathematically modeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide context for the choice of shoot architecture as a test case, with appropriate citations (Khush, 2001; Burks et al., 2005; Refahi et al., 2016; Prusinkiewicz et al., 2009). These claims establish the agricultural relevance and modeling foundation for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The HACR strategy should be extensible to diverse organisms given the success of AID systems in eukaryotes. HACRs could be used to create inducible traits by connecting existing agricultural hormone treatments with gene expression, and could be extended to other degradation-based hormone signaling systems. HACRs have the capacity to reprogram developmental traits in a broad range of crop species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 are speculative about future applications and extensibility. While C94 is supported by citation to Nishimura et al., 2009 regarding AID system success, and C95 correctly notes existing agricultural practices, claims C96-C98 are projections about potential applications without experimental validation. These are reasonable speculations based on the demonstrated proof-of-concept, but remain to be tested.",
+    "result_type": "MINOR"
+  }
+]

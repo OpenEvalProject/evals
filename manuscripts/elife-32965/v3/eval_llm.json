@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Beta-cell proliferation in zebrafish declines with advancing age, from 1.53% at 35 dpf to 0.15% at 3 mpf and 0.06% at 1 ypf in primary islets, with a similar decline observed in secondary islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide quantitative measurements of beta-cell proliferation across three age groups using the FUCCI system, showing a statistically significant age-dependent decline (p<0.05). The data are internally consistent and supported by both primary and secondary islet measurements, with appropriate sample sizes (n=5-10) and statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Adult beta-cells in zebrafish primary islets at 3 mpf are functional and glucose-responsive, as demonstrated by calcium influx upon glucose stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by calcium imaging experiments using GCaMP6s showing dose-dependent calcium responses to increasing glucose concentrations (2.5 mM to 16.7 mM) and KCl depolarization. This validates that the aging beta-cells studied retain functional glucose-sensing capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "RNA-sequencing analysis revealed 74 differentially expressed genes (61 upregulated, 13 downregulated) between 3 mpf and 1 ypf beta-cells, with upregulated genes enriched for negative regulation of growth-factor signaling, ER stress, diabetes risk factors, and inflammatory/cytokine-mediated signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 present RNA-seq data with appropriate statistical thresholds (1.5-log2fold, p<0.05) and are supported by gene ontology analysis using DAVID. The identification of specific genes and pathways is consistent with the biological interpretation of aging-related changes. However, the manuscript does not provide information about RNA-seq technical replicates or batch effects, which represents a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Single-cell RT-qPCR validation confirmed increased proportions of beta-cells expressing NF-\u03baB pathway components (tnfrsf1b, ikbaa, tnf\u03b1) in older animals, while beta-cell marker expression (insulin, islet1, neurod1) remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 provide single-cell validation of RNA-seq findings using appropriate statistical testing (Pearson's Chi-Square, p<0.01-0.001). The stable expression of beta-cell markers serves as an important control demonstrating that changes are specific to inflammatory genes rather than reflecting altered cell identity or sorting artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mosaic overexpression of tnfrsf1b in beta-cells induces NF-\u03baB signaling, with 32.2% of tnfrsf1b-injected beta-cells expressing the NF-\u03baB:GFP reporter compared to 2.4% in controls at 5 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 demonstrate functional validation that tnfrsf1b can activate NF-\u03baB signaling in beta-cells. The large difference between experimental and control groups provides strong evidence, though the high standard deviation in the experimental group (\u00b132.07%) suggests substantial variability in mosaic expression efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "NF-\u03baB reporter activity in beta-cells increases with age, being undetectable at 1 mpf, showing heterogeneous salt-and-pepper expression at 3 mpf, and nearly universal expression at 1 ypf, with both increased proportion of GFP-positive cells and increased GFP intensity per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe the temporal progression of NF-\u03baB activation using both imaging and flow cytometry (n=10). The progression from undetectable to heterogeneous to widespread expression is well-documented with appropriate quantification. The heterogeneous pattern at 3 mpf is particularly important for establishing the proliferation-NF-\u03baB relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The increase in NF-\u03baB:GFP reporter activity reflects increased transcription, with approximately 50% higher GFP mRNA levels in 1 ypf versus 3 mpf beta-cells and a positive correlation (R\u00b2=0.28) between GFP mRNA and fluorescence intensity at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 address the important control that increased GFP fluorescence reflects active transcription rather than protein accumulation. The RT-qPCR data (n=5 biological replicates) and index sorting correlation provide complementary evidence. The modest R\u00b2 value (0.28) is reasonable given biological variability and the technical challenges of correlating mRNA with protein levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Innate immune cells, specifically macrophages (not neutrophils), infiltrate zebrafish islets during late juvenile stages (45 dpf) but are absent during larval stages (15-21 dpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 document the developmental timing of immune cell infiltration using L-plastin immunostaining and transgenic reporter lines (Tg(mpeg1:mCherry) for macrophages, Tg(lyz2:GFP) for neutrophils). The cell-type specificity is well-established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C92",
+      "C93"
+    ],
+    "result": "Approximately 25% and 17% of intra-islet L-plastin-positive cells express tnf\u03b1 at 3 mpf and 1 ypf respectively (p>0.05), with these tnf\u03b1-expressing cells confirmed as macrophages, though total numbers of tnf\u03b1-positive and L-plastin-positive cells show increasing trends with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C92-C93 quantify tnf\u03b1 expression in islet-resident immune cells. While the proportion of tnf\u03b1-expressing macrophages does not significantly differ between ages, the increasing trends in absolute numbers suggest accumulation of inflammatory cells. The lack of statistical significance may reflect limited sample size (n=5) or high variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Mosaic overexpression of tnf\u03b1 in beta-cells is sufficient to induce NF-\u03baB:GFP reporter activity at 5 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 demonstrates that tnf\u03b1 alone can activate NF-\u03baB signaling in beta-cells, establishing a potential mechanistic link between macrophage-derived tnf\u03b1 and beta-cell NF-\u03baB activation. The experimental design using mosaic expression provides cell-autonomous evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Beta-cells with high NF-\u03baB signaling (GFP-high) proliferate significantly less than GFP-low neighbors, as measured by both EdU incorporation over 2 days and PCNA staining, with GFP fluorescence remaining stable over the experimental period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 establish the key inverse relationship between NF-\u03baB activity and proliferation using two independent proliferation markers (EdU and PCNA) with appropriate statistical significance (p<0.05). The stability control (C39) addresses the important concern that GFP levels might change during the 2-day EdU incorporation period. Sample sizes are adequate (n=9 for EdU, n=13 for PCNA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Among candidate age-related genes, socs2 shows more than 2.5-fold higher expression in NF-\u03baB:GFP-high versus GFP-low beta-cells at 3 mpf, while other tested genes (cish, spry4, trib3, rapgef4) do not show significantly elevated expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 identifies socs2 as specifically enriched in high-NF-\u03baB cells through bulk RT-qPCR of sorted populations (n=4 biological replicates, 1000 cells per condition). The specificity of socs2 upregulation among tested candidates strengthens the mechanistic link to proliferation inhibition. Statistical testing confirms significance (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Mosaic overexpression of socs2 in beta-cells cell-autonomously inhibits proliferation, with only 1.08% of socs2-expressing (CFP-positive) beta-cells proliferating compared to 8.44% of non-expressing neighbors at 23-25 dpf, while control constructs (CFP alone, rapgef4, spry4) do not affect proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide functional validation that socs2 can inhibit beta-cell proliferation using mosaic overexpression with the FUCCI system. The large effect size (~8-fold reduction) and appropriate negative controls (C45) strengthen the conclusion. Sample size (n=9) is adequate and the developmental stage chosen (23-25 dpf) has higher baseline proliferation, facilitating detection of inhibitory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Aging zebrafish islets exhibit chronic inflammation characterized by tnf\u03b1-expressing macrophage recruitment and heterogeneous NF-\u03baB activation in beta-cells, with NF-\u03baB-high cells showing premature upregulation of the age-related proliferation inhibitor socs2, marking the asynchronous decline in beta-cell proliferation with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 synthesize the major findings into a coherent model of age-related islet inflammation and its relationship to proliferative decline. The claims are well-supported by the collective experimental evidence from multiple complementary approaches (imaging, flow cytometry, gene expression, functional validation). The heterogeneity of NF-\u03baB activation provides a mechanistic explanation for asynchronous aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript correctly describes established biological knowledge about tnfrsf1b function, NF-\u03baB signaling, TSQ labeling of beta-cells, zebrafish islet development, the FUCCI system, and cd74 as NF-\u03baB pathway members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C86-C90 represent accurate statements of established biological knowledge supported by appropriate citations. These provide necessary context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91"
+    ],
+    "result": "The introduction and discussion appropriately cite prior work on aging, beta-cell proliferation, heterogeneity, inflammation, and related mechanisms in various model systems and humans, establishing context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C83, C91 represent accurate summaries of prior literature with appropriate citations. These establish the scientific context and rationale for the study. The citations appear accurate based on the claims made, though detailed verification of each cited work is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript proposes that aging beta-cells may experience higher ER stress leading to NF-\u03baB activation, and that elevated socs2 in NF-\u03baB-high cells could contribute to proliferative heterogeneity based on NF-\u03baB signaling strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 represent speculative mechanistic proposals that extend beyond the direct experimental evidence. While plausible and supported by cited literature on ER stress-NF-\u03baB connections (C83), these specific mechanisms were not directly tested in the current study. The speculation is appropriately qualified with language like 'may' and 'could contribute.'",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1900 @@
+{
+  "submission": {
+    "id": "205d38a5-d13a-4455-b058-a215360384a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:10:12.800238Z",
+    "updated_at": "2025-12-02T00:10:12.800238Z"
+  },
+  "content": [
+    {
+      "id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "submission_id": "205d38a5-d13a-4455-b058-a215360384a5",
+      "content_type": "manuscript",
+      "content_text": "# Multivalency of NDC80 in the outer kinetochore is essential to track shortening microtubules and generate forces\n\n## Authors\n\n- Vladimir A Volkov<sup>1</sup> ([ORCID: 0000-0002-5407-3366](https://orcid.org/0000-0002-5407-3366))\n- Pim J Huis in 't Veld<sup>2</sup> ([ORCID: 0000-0003-0234-6390](https://orcid.org/0000-0003-0234-6390))\n- Marileen Dogterom<sup>1</sup> \u2020\n- Andrea Musacchio<sup>2</sup> ([ORCID: 0000-0003-2362-8784](https://orcid.org/0000-0003-2362-8784)) \u2020\n\n### Affiliations\n\n1. Department of Bionanoscience, Faculty of Applied Sciences Delft University of Technology Delft Netherlands\n2. Department of Mechanistic Cell Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPresence of multiple copies of the microtubule-binding NDC80 complex is an evolutionary conserved feature of kinetochores, points of attachment of chromosomes to spindle microtubules. This may enable multivalent attachments to microtubules, with implications that remain unexplored. Using recombinant human kinetochore components, we show that while single NDC80 complexes do not track depolymerizing microtubules, reconstituted particles containing the NDC80 receptor CENP-T bound to three or more NDC80 complexes do so effectively, as expected for a kinetochore force coupler. To study multivalency systematically, we engineered modules allowing incremental addition of NDC80 complexes. The modules\u2019 residence time on microtubules increased exponentially with the number of NDC80 complexes. Modules with two or more complexes tracked depolymerizing microtubules with increasing efficiencies, and stalled and rescued microtubule depolymerization in a force-dependent manner when conjugated to cargo. Our observations indicate that NDC80, rather than through biased diffusion, tracks depolymerizing microtubules by harnessing force generated during microtubule disassembly.\n\n## Introduction\n\nMultivalency plays a crucial role in a myriad of macromolecular interactions, often through the formation of condensates at membranes or in the cytosol (Banani et al., 2017; Banjade and Rosen, 2014; Li et al., 2012; Su et al., 2016). While it is well established that multivalent ligands may have increased binding affinity for multimeric targets in comparison to equivalent monovalent ligands, the quantitative effects of multivalency for macromolecular interactions cannot be easily predicted (Jencks, 1981), and needs therefore to be determined experimentally.\n\nKinetochores are multiprotein assemblies built on the centromeres of chromosomes (Musacchio and Desai, 2017). Their ability to hold on to the ends of microtubules, dynamic polymers that alternate between phases of growth and shrinkage, is crucial for the segregation of replicated chromosomes (sister chromatids) to the daughter cells during cell division. This event does not require molecular motors, and chromosome propulsion is mediated by the ability of kinetochores to remain attached to depolymerizing microtubules (Grishchuk and McIntosh, 2006; Tanaka et al., 2007). With hundreds of different proteins assembled on a chromosome\u2019s centromeric region, kinetochores are the epitome of a multivalent proteinaceous platform, but how the stoichiometry and the modular organization of kinetochore components contribute to microtubule end-coupling remains poorly understood.\n\nThe 4-subunit NDC80 complex (NDC80, for nuclear division cycle 80 complex) provides the crucial link between kinetochores and microtubules. In vitro reconstitution reveals that a single NDC80 complex is unable to follow dynamic microtubules (Powers et al., 2009; Schmidt et al., 2012). Microtubule end-tracking activity is conferred to NDC80 by the presence of Dam1 or Ska complexes, which provide additional binding sites to microtubule walls and dynamic ends (Tien et al., 2010; Lampert et al., 2010; Schmidt et al., 2012). NDC80 was also shown to gain tip-tracking properties in the presence of factors that trigger multimerization, such as the functionalized surface of beads (McIntosh et al., 2008) or the presence of an antibody (Powers et al., 2009). These observations were interpreted as being supporting a model for NDC80 interaction with depolymerizing microtubules known as biased-diffusion (Powers et al., 2009). Biased diffusion models assume that a connected ensemble of diffusive, low-affinity microtubule binding elements undergoes directional Brownian motion on a shortening microtubule if it can maximize its binding energy by retaining as many as possible of the binding elements bound to the microtubule lattice. If the lattice is shrinking, this will in turn act against detachment and will promote depolymerization-connected motion (Asbury et al., 2011; Grishchuk, 2017).\n\nAn alternative to biased diffusion models is a category of models in which kinetochores harness the energy released by a depolymerizing microtubule end to move together with it. In opposition to the biased-diffusion models, these models predict that the microtubule binding elements of the kinetochore are poorly diffusive and high-affinity, and that a considerable part of the energy released during microtubule depolymerization must be used to translate the kinetochore binders along the lattice (Asbury et al., 2011; Grishchuk, 2017). This, in turn, is predicted to slow down microtubule depolymerization, a feature that biased-diffusion models do not predict. Until now, none of the predictions that would allow distinguishing which of these model classes best applies to the NDC80 complex has been rigorously tested.\n\nHow NDC80 is recruited to the kinetochore is well understood. First, NDC80 binds the 4-subunit MIS12 complex, whose kinetochore recruitment, in turn, depends on the chromatin proximal kinetochore subunits CENP-C and CENP-T (Huis In 't Veld et al., 2016; Petrovic et al., 2016; Przewloka et al., 2011; Screpanti et al., 2011). Second, NDC80 is recruited by direct binding to two phosphorylated motifs near the N-terminus of CENP-T (Huis In 't Veld et al., 2016; Gascoigne et al., 2011; Kim and Yu, 2015; Suzuki et al., 2015; Malvezzi et al., 2013; Nishino et al., 2012). In agreement with these multiple binding modes, quantitative fluorescence microscopy and bottom-up reconstitutions indicated that kinetochores contain multiple NDC80 complexes, with recent estimates converging on eight complexes per microtubule-binding site (Huis In 't Veld et al., 2016; Suzuki et al., 2015; Weir et al., 2016). In humans, a single kinetochore contains a molecular lawn of approximately 200 NDC80 complexes that bind 15\u201320 microtubules (Suzuki et al., 2015; Wendell et al., 1993). In principle, this distribution appears ideally suited to exploit the potential of multivalency, because multiple NDC80 complexes may bind concomitantly to the same microtubule. However, how the stoichiometry and modular organization of NDC80 contribute to the coupling of kinetochores to microtubules remains unclear. To address the role of multivalency at the kinetochore-microtubule interface quantitatively, we reconstituted kinetochore modules with multiple NDC80 complexes bound to phosphorylated CENP-T or to a streptavidin-based multimerization system. The multivalency of NDC80 modules is essential for these modules to interact with dynamic microtubules. We report the forces generated when shortening microtubules pull on these assemblies and illustrate how tension might modulate microtubules dynamics. Collectively, our results strongly suggest that NDC80 harnesses the energy of depolymerizing microtubules.\n\n## Results\n\n### Multivalent NDC80 binding to CENP-T:MIS12 promotes motility with microtubule ends\n\nWe have previously shown that CENP-T that is phosphorylated by CDK1:Cyclin-B can recruit NDC80 complexes to p-Thr11 and p-Thr85 and a MIS12:NDC80 complex to p-Ser201 (Huis In 't Veld et al., 2016). To test how phosphorylated CENP-T2-373, hereafter called CENP-T, that is associated with multiple NDC80 complexes interacts with dynamic microtubules, protein complexes labeled with single fluorophores were imaged on dynamic microtubules using TIRF microscopy (Figure 1A). Consistent with previous findings (Powers et al., 2009; Schmidt et al., 2012), monomeric NDC80 complexes briefly interacted with the microtubule lattice but did not follow the ends of depolymerizing microtubules (Figure 1B). In contrast, tip-tracking events were observed for CENP-TAlexa488:NDC80 and CENP-TAlexa488:MIS12:NDC80 complexes that were purified by size-exclusion chromatography and then added to dynamic microtubules (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2A). As predicted, this binding strictly depended on the presence of NDC80; a similarly prepared stoichiometric complex of MIS12 and phosphorylated CENP-TAlexa488 did not bind microtubules over a 35-fold range of concentrations (Figure 1C and Figure 1\u2014figure supplement 2B). When we combined NDC80TMR and CENP-TAlexa488:MIS12, co-localization of fluorescence that prevailed at the end of shortening microtubules was observed (Figure 1D and Figure 1\u2014figure supplement 3A). In a significant number of cases, we observed tip-tracking NDC80TMR that apparently lacked CENP-TAlexa488:MIS12. Since monomeric NDC80TMR under similar conditions did not result in tip-tracking (Figure 1B), we suspect that this tip-tracking subset contains bleached CENP-TAlexa488:MIS12. In order to assess the composition of CENP-TAlexa488:MIS12:NDC80TMR, we normalized the intensities of Alexa488 and TMR signals to the intensity of a single fluorophore, as determined from photobleaching events (Figure 1E). Tip-tracking assemblies contained 1.5\u00a0\u00b1\u00a00.7 CENP-T molecules (mean and SD), 5\u00a0\u00b1\u00a02 NDC80 molecules (n\u00a0=\u00a027), and most complexes contained three NDC80 complexes per CENP-T:MIS12, a number that is in agreement with the biochemically determined number of NDC80 binding sites on phosphorylated CENP-T:MIS12. (Figure 1F). These assemblies were formed when CENP-T:MIS12 was added in a 100-fold molar excess over NDC80. When we added both complexes at the equimolar N/TM ratio, assemblies with a larger number of NDC80 complexes and an increased tendency to aggregate were observed (Figure 1\u2014figure supplement 3B\u2013C). Collectively, these results indicate that the combination of multiple NDC80 complexes on the CENP-T:MIS12 platform and the abundance of binding sites for the NDC80 complex on the microtubule lattice promote the formation of multivalent complexes. A confounding factor emerging from our analysis, however, is that the number of NDC80 complexes in the CENP-T:MIS12 assemblies appeared to vary significantly between complexes (Figure 1F and Figure 1\u2014figure supplement 3), complicating our attempts to perform a rigorous analysis of the role of multivalency in kinetochore-microtubule attachment. While the reconstituted CENP-TAlexa488:MIS12:NDC80TMR complexes have very well defined stoichiometry at the typical low micromolar concentrations of our biochemical analyses (Huis In 't Veld et al., 2016), variability of stoichiometry at the picomolar concentrations required to observe these complexes on microtubules at single-molecule level may reflect the absence of additional (and currently unknown) stabilizing interactions or post-translational modifications.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of Alexa-488-labeled, phosphorylated CENP-T:MIS12 and TMR-labeled NDC80 in a single-molecule TIRF setup with dynamic microtubules. (b) Monomeric NDC80 at 200 pM does not follow microtubule shortening. (c) MIS12-CENP-T at 2 nM does not bind to microtubules and does not follow microtubule shortening. (d) MIS12:CENP-TAlexa488 (2 nM, yellow) and NDC80TMR (20 pM, green) mixed in the flow-chamber, co-localize in a particle that follows the shortening end of a microtubule. (e) Left: time traces showing photobleaching of NDC80TMR (green) and CENP-TAlexa488 particles (yellow). Note that the CENP-T particle initially bleaches two fluorophores simultaneously. Right: distributions containing all bleaching traces (n\u00a0=\u00a013 for TMR and n\u00a0=\u00a020 for Alexa488). Arrows show intensities of 1, 2 and 3 fluorophores. See Materials and methods for details. (f) Euler diagram of tip-tracking particles produced by mixing NDC80 and MIS12:CENP-T (top). Distributions of initial, unbleached fluorescence intensities (expressed as the number of fluorophores) of NDC80TMR (green) and MIS12:CENP-TAlexa488 (yellow) in the tip-tracking particles containing both signals (bottom left). Black bars show ratio of NDC80 to CENP-T (bottom right). Scale bars: 5 \u00b5m (horizontal), 60 s (vertical).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) CENP-T2-373 labelled with Alexa-488 was separated from the excess of GGGGC-Alexa488 peptide by size-exclusion chromatography. (b) SDS-PAGE analysis to demonstrate the phosphorylation of CENP-T by CDK1:Cyclin-B and to compare the input for size-exclusion chromatography shown in panel C. (c) MIS12 and NDC80 bind phosphorylated CENP-T. Size-exclusion chromatography traces (top) and SDS-PAGE analysis (bottom) of TMN (green), TN (blue) and TM (black). The two shaded fractions were pooled for single-molecule TIRF experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) TMN and TN (both at 0.4 nM) follow shortening microtubules in a single-molecule TIRF experiment. (b) TM does not bind to microtubules and does not follow microtubule shortening in a concentration range from 0.2 to 7 nM. Scale bars: 5 \u00b5m (horizontal), 60 s (vertical).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Two example kymographs as in Figure 1D. (b) Example kymograph of co-localizing NDC80TMR and CENP-TAlexa488:MIS12 on the microtubule lattice and at the shortening microtubule end in a flow chamber with a 1:1 N/TM (both added at 200 pM). The white arrow indicates a CENP-T bleaching event. (c) Quantification of tip-tracking events as in Figure 1F for particles containing initially both TMR and Alxa488 signal at 200 pM of both NDC80TMR and CENP-TAlexa488:MIS12. 5 \u00b5m (horizontal), 60 s (vertical).\n\n### Incremental addition of NDC80 results in hyperstable microtubule binding\n\nTherefore, in order to control stoichiometry more precisely, we set out to engineer a scaffold that can covalently bind a defined number of NDC80 complexes. Traptavidin (T), a streptavidin variant with a biotin dissociation constant in the low femtomolar range (Chivers et al., 2010), and a biotin-binding deficient streptavidin variant tagged with a SpyCatcher module (S). T and S were folded into tetramers with stoichiometries varying from T4S0 to T0S4 and separated from each other by ion-exchange chromatography (Fairhead et al., 2014; Zakeri et al., 2012) (Figure 2\u2014figure supplements 1 and 2). Purified TS tetramers were covalently coupled to NDC80 complexes with SPC25TMR and SPC24SpyTag (Figure 2A). Assemblies containing one, two, three, or four NDC80 complexes were subsequently separated by size-exclusion chromatography and analyzed by SDS-PAGE. Note that the TS tetramers only denature in SDS-containing sample buffer after extensive boiling (Figure 2\u2014figure supplement 1). Inspection of the purified TS-NDC80 modules by electron microscopy after glycerol spraying and low-angle metal shadowing confirmed the integration of the highly elongated (~60 nm) NDC80 tethers (Ciferri et al., 2008; Huis In 't Veld et al., 2016; Wei et al., 2005) on a central TS density (Figure 2B\u2013C). The overall appearance of these artificial particles, including the flexible orientation of the NDC80 complexes, is highly reminiscent of the multiple NDC80 complexes bound to CENP-T:MIS12 (Figure 2D) (Huis In 't Veld et al., 2016). We thus reconstituted a proxy of the outer kinetochore with precise control over the number of incorporated NDC80 complexes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig2-v2.jpg)\n\n**Figure 2.:** (a) NDC80SPY-SORT was fluorescently labelled and covalently bound to TS assemblies. The cartoon shows the formation of T1S3[NDC80]3 assemblies. Size-exclusion chromatography and SDS-PAGE analysis are shown in Figure 1\u2014figure supplement 1. (b) T1S3[NDC80]3 assemblies were analysed by electron microscopy after low-angle rotary shadowing. Three flexible NDC80 complexes of approximately 60 nm originate from central T1S3 densities (white arrows in the field of view) Scale bar 50 nm. (c) Representative micrographs of CENP-T:MIS12:[NDC80]3 as analysed previously (Huis In 't Veld et al., 2016). (d) Side-by-side comparison of NDC80 coupled to T3S1, T2S2, T1S3, and T0S4. Cartoons represent the approximate orientation of assemblies in the upper row of micrographs. Scale bar 50 nm. (e) Residence time of quantized NDC80 assemblies on taxol-stabilized microtubules as determined experimentally (dots) and as predicted by a series of 1000 simulations (box and whiskers plot; box: 25\u201375%, horizontal line: median, whiskers: 5\u201395%). NDC80 complexes of a microtubule-bound TS-NDC80 assembly attach to and detach from microtubules with rates of kon and koff, respectively. The residence time of an oligomer is defined as the time between the association of its first NDC80 tether and the detachment of all NDC80 tethers.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) TySx variants were separated by ion-exchange chromatography based on the pI difference of T (5.1) and S (4.5). Collected assemblies were analyzed by SDS-PAGE as tetramers (not-boiled) or in a denatured form (boiled). (b) SDS-PAGE analysis (samples not-boiled) to monitor the formation of S-SPC24SPY complexes. NDC80 complexes without added T0S4 or without a SPY-tag were analysed as a control. The boxed area is shown at larger magnification on the right. (c) Samples before (t0) and after (t20) the reaction were analysed by SDS-PAGE (samples not-boiled) to monitor coupling of SPC24SPY to T1S3 tetramers and fluorescent labelling of SPC25SORT. Size-exclusion chromatography was used to separate T1S3[NDC80]3 assemblies from sortase and from the excess of unreacted NDC80 and free peptide. The lower panels show the GGGGKTMR and SPC25TMR in-gel fluorescence.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Samples before (t0) and after (t18) the reaction were analysed by SDS-PAGE (samples not-boiled) to monitor coupling of SPC24SPY to TySx tetramers and fluorescent labelling of SPC25SORT. Size-exclusion chromatography was used to separate TySx[NDC80]x assemblies from sortase and from the excess of unreacted NDC80 and free peptide. Fractions a, b, and c, indicate the front, middle, and tail of the peak as in panel C.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Kymographs of mono-, di-, tri-, and tetravalent NDC80 complexes binding to taxol stabilized microtubules. Scale bar 5 \u00b5m. (b) Brightness distribution of TS-NDC80 assemblies on taxol-stabilized microtubules. (c) Residence time of co-purified CENP-T:NDC80 on taxol-stabilized microtubules, grouped by initial intensity of CENP-TAlexa488 fluorescence (left). Box: 25\u201375%, whiskers: min-max. Right: residence time of simulated NDC80 monomers, dimers, trimers and tetramers (see also Figure 2E). Box: 25\u201375%, whiskers: 5\u201395%.\n\nTo test at a single-molecule level how assemblies with a precisely defined NDC80 stoichiometry interact with microtubules, we measured the residence time of TS-NDC80 modules on taxol-stabilized microtubules using total internal reflection fluorescence (TIRF) microscopy (Figure 2E and Figure 2\u2014figure supplement 3). The residence time of these assemblies on microtubules increased more than ten-fold for every additional NDC80 complex (Figure 2E). The residence time of CENP-T:NDC80 assemblies (Figure 1\u2014figure supplement 1) under similar conditions ranged from multiple seconds to multiple minutes (Figure 2\u2014figure supplement 3). This is comparable with divalent and trivalent NDC80 TS-modules and supports the idea that NDC80 that is bound to TS modules and NDC80 that is bound to CENP-T interact with microtubules in a similar manner.\n\nTo simulate the binding of TS-NDC80 assemblies to microtubules in silico, we assumed transitions between the number of microtubule-bound NDC80 tethers based on the kon and koff rates of each individual NDC80. The initial landing rate of an assembly on a microtubule was ignored so that each simulation started with a single NDC80 bound to a microtubule and stopped after detachment of all NDC80s. Using the reciprocal of the residence time of T3S1[NDC80]1 as koff, stochastic simulations of the residence times of mono-, di-, tri-, and tetravalent assemblies were used to determine kon (Figure 2E). A fit to the data resulted in a kon of 2.6 s\u22121. Assuming a TS-NDC80 assembly as a sphere, one NDC80 inside the sphere has a local concentration of 1.7 \u00b5M. This predicts a concentration-dependent association rate of 1.5 \u00b5M\u22121s\u22121, a value that falls well within the published range of kon for free NDC80 binding to microtubules (Powers et al., 2009; Tien et al., 2010; Zaytsev et al., 2015). Taken together, this demonstrates that all NDC80 complexes in TS-NDC80 modules can interact with one microtubule and illustrates how NDC80 multivalency stabilizes microtubule binding.\n\n### NDC80 multivalency promotes cargo motility at shortening microtubules\n\nWe next used dynamic microtubules to compare CENP-T- and TS-based oligomerization strategies for the assembly of tip-tracking oligomers of NDC80. Di-, tri-, as well as tetravalent TS-NDC80 assemblies tracked shortening microtubule tips and each additional NDC80 increased the fraction of tip-tracking assemblies (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A\u2013D). Free microtubules in the same flow chamber shortened faster than the ones with TS-NDC80 at the tip (Figure 3D). CENP-T- and CENP-T:MIS12-mediated oligomers of NDC80 slowed down microtubule shortening in a similar way (Figure 3\u2014figure supplement 1E\u2013F). The ability of a single particle to slow down microtubule depolymerization suggests that tip-tracking NDC80 oligomers form a direct connection to the shortening microtubule ends.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic representation of the experimental setup. (b) Kymographs showing NDC80 (green) assembled on T2S2, T1S3, or T0S4 tracking a depolymerizing microtubule (red). An example of a T1S3[NDC80]3 complex that detached from the tip of shortening microtubule is also included. Scale bar 5 \u00b5m. See Figure 3\u2014figure supplement 1 and Video 1. (c) The fraction of NDC80 assemblies that track depolymerizing microtubules. (d) Comparison between microtubule depolymerization in the presence and absence of TS-NDC80 following the shortening tips. Data are shown as mean\u00a0\u00b1\u00a0SEM. e) Biotinylated glass beads or nanogold particles can be conjugated to traptavidin in TS-NDC80C assemblies. Nanogold particles coated with T1S3[NDC80]3 bound to microtubules as observed by negative-staining EM (see also Figure 3\u2014figure supplement 2). Scale bar 100 nm. (f\u2013g) Examples of glass beads coated with T1S3[NDC80]3 tracking depolymerizing microtubules. The bead in panel g follows the growing microtubule after a rescue event until it detaches during a second depolymerization phase. White arrows indicate the dynamic microtubule tips. Scale bar 5 \u03bcm. (h) Fluorescence-based quantification of the number of complexes on glass beads coated with increasing amounts of PLL-PEG-biotin. (i) The fraction of beads coated with various TS-NDC80 assemblies that track depolymerizing microtubules as a function of the amount of biotin-PEG added to the beads.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Brightness distribution of TS-NDC80 assemblies on dynamic microtubules. b) Distance travelled by TS-NDC80 modules moving with the tips of the shortening microtubules. (c\u2013d) Presence of 25\u201350 mM KCl in the motility buffer does not prevent TS-NDC80 assemblies from tip-tracking and slowing down the microtubule shortening. (e) Histograms of initial intensities of TN and TMN spots following the shortening ends of the microtubules. (f) Pre-assembled TN and TMN, as well as TM mixed with N in the flow-chamber, slow down microtubule shortening (left, see also Figure 1D,F) to the same extent as TS-NDC80 modules (see also Figure 3B,D). Data are shown as mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Boxed areas in the upper micrograph are shown below at a higher magnification. The orange line marks the micrograph shown in main Figure 2E. Scale bars 100 nm.\n\n![Video 1.](https://cdn.elifesciences.org/articles/36764/elife-36764-video1.mp4.jpg)\n\n**Video 1.:** 35 pM of T0S4[NDC80TMR]4 (green) in the presence of 8 \u00b5M tubulin labelled with HiLyte-642 (red) and in the absence of KCl. The two-channel images were acquired every 1.1 s (shown at 30 fps). Top left corner shows time in min:sec. White arrows mark tip-tracking events. Scale bar 5 \u00b5m.\n\nTo test if cargo-bound assemblies retain their ability to bind microtubules, we prepared biotinylated nanogold particles conjugated to trivalent TS-NDC80. These particles localized on or in between microtubules, indicating that biotinylated cargo was coupled to microtubules via TS-NDC80 modules (Figure 3E and Figure 3\u2014figure supplement 2). To test if TS-NDC80 can couple forces generated by the protofilament depolymerization to the movement of cargo, we attached a biotinylated glass bead amenable to optical trapping to the biotin-binding traptavidin (T) of TS-NDC80 modules (Figure 3E). Binding of TS-NDC80 resulted in beads that were able to track shortening (Figure 3F) or -in rare cases- growing (Figure 3G) microtubule ends.\n\nTo control the number of TS-NDC80 assemblies on the beads, we coated beads with a mixture of poly-L-lysine-polyethylene glycol (PLL-PEG) and PLL-PEG-biotin. Using the fluorescence of NDC80CTMR or NDC80CFAM as a readout, we observed that the number of complexes on a bead\u2019s surface increased linearly from\u00a0<2 complexes at 0.01% PEG-biotin to several thousand complexes at 10% PEG-biotin (Figure 3H). With a diameter of 1 \u00b5m, coating of a glass bead with 0.01\u20130.03% biotin-PEG predicts a single TS-NDC80 module interacting with a microtubule: even at the higher estimate of 5 TS modules per bead at 0.03% biotin-PEG (Figure 3H), the linear distance between complexes is approximately 775 nm. At biotin-PEG concentrations above 0.07% (average densities of 10\u201350 TS modules per bead \u2013 see Figure 3H), the linear distance between adjacent complexes is 500\u2013250 nm and multiple modules could reside in the proximity of one microtubule (see also Powers et al., 2009) for calculations). The presence of multiple NDC80 tethers in the proximity of a single microtubule resulted in beads that followed dynamic microtubule tips for trivalent T1S3[NDC80]3 (13/45 cases), but occasionally also for monovalent T3S1[NDC80]1 (2/30 cases) (Figure 3I and Figure 3\u2014source data 1). This is consistent with the reported tip-tracking of beads that are densely decorated with monomeric NDC80 (McIntosh et al., 2008; Powers et al., 2009). Beads with the lowest biotin densities coated with monovalent T3S1[NDC80]1 or divalent T2S2[NDC80]2 were unable to follow microtubule tips (0/50 cases). The same coating densities for T1S3[NDC80]3 resulted in 5/70 beads following dynamic microtubule tips (Figure 3I and Figure 3\u2014source data 1). This suggests that a single trivalent T1S3[NDC80]3 assembly is sufficient to couple microtubule shortening to cargo transport.\n\n### Multivalent NDC80 stalls and rescues microtubule shortening under force\n\nWe next set out to probe the force-coupling properties of TS-NDC80 assemblies with an optical trap. For this purpose, a bead coated with TS-NDC80 was positioned near the end of a dynamic microtubule, confirmed to bind the microtubule with the trap switched off, and monitored with the trap switched on while the tip of the shortening microtubule reached the bead (Figure 4A). Displacement of the bead from the centre of the trap was recorded with a quadrant photo detector (QPD). A peak in the QPD signal along the microtubule\u2019s direction indicates that the force generated by the depolymerizing microtubule is converted into the displacement of the bead coated with TS-NDC80 (Figure 4B and Video 2). After initial movement with the shortening microtubule tips, the beads stalled for an average of 1.5\u00a0\u00b1\u00a00.2 s (mean and SEM, n\u00a0=\u00a091). We interpreted these stalls as the time in which the microtubule-generated force is counterbalanced by the force acting to return the bead to the centre of the trap, thus reducing the depolymerization speed to zero. Beads at the ends of stalled microtubules either detached from the microtubule and snapped back into the centre of the trap, or rescued microtubule depolymerization and gradually moved back to the centre of the trap along with the growing microtubule (Figure 4C and Video 3). In 13 out of 104 traces the bead detached from the microtubule before stalling; these traces were not analysed further.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig4-v2.jpg)\n\n**Figure 4.:** (a) The displacement of an optically trapped glass bead can be used to determine the force exerted by a shortening microtubule on a bead-bound TS-NDC80 oligomer. (b) Example of a trapped glass bead that is displaced along the microtubule axis as it holds on to a depolymerizing microtubule (248 s). Arrows point to the dynamic microtubule tip before (210 s) and after (270 s) the force development. The graph on the right shows unfiltered QPD signal along and across the microtubule axis. (c) Examples of unfiltered QPD signals recorded during microtubule shortening. Stalling of microtubule depolymerization by the coupled bead in the optical trap is followed by detachment of the bead (left) or a rescue of microtubule growth (right). (d) Average forces at which differently coated beads stall shortening microtubules. Data are shown as mean\u00a0\u00b1SEM. (e) Distribution of stalling forces that were followed by bead detachment from the microtubule (grey bars) or microtubule rescue (black bars). These distributions were used to calculate the fraction of events leading to a force-induced rescue (right).\n\n![Video 2.](https://cdn.elifesciences.org/articles/36764/elife-36764-video2.mp4.jpg)\n\n**Video 2.:** A bead coated with 3% PLL-PEG-biotin and then saturated with T2S2[NDC80TMR]2 was attached to a microtubule with a trap (see also Figure 3B for still images and a complete QPD trace of this signal). Images were acquired at eight fps in DIC, background subtracted, and each 10 consecutive frames averaged (see Materials and methods). The timer at the bottom left corner shows elapsed time in seconds. The microtubule continues growing until about 230 s, when it switches to shortening and pulls on the bead at 248 s (evident from the bead\u2019s brief displacement in the direction of microtubule disassembly). From 265 s till 290 s the microtubule end is seen disassembling to the left of the bead. Scale bar 5 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/36764/elife-36764-video3.mp4.jpg)\n\n**Video 3.:** A bead coated with 0.3% PLL-PEG-biotin and then saturated with T1S3[NDC80FAM]3 was attached to a microtubule with a trap. The microtubule experiences dynamic instability, but its shortening is five times in a row rescued at the attached bead (at 2, 9, 24, 47 and 60 min from the start of the experiment, see timer in the top left corner). Note that each rescue is preceded by a displacement of the bead along the microtubule axis in the direction of disassembly. After 63 min, the trap stiffness is increased from initial 0.03 pN/nm to 0.13 pN/nm to manually remove the bead from the microtubule. The microtubule without the attached bead depolymerizes without stalling or rescue events. Scale bar 5 \u00b5m.\n\nWe next tested the relation between the number of bead-bound TS-NDC80 modules and the stalling forces. Single trivalent T1S3[NDC80]3 stalled microtubule depolymerization at about 1.5 piconewton (pN). Stalling forces increased to maximal values of 5\u20136 pN with 100\u20131000 T1S3[NDC80]3 modules per bead, but did not increase further with thousands of such assemblies on a single bead (Figure 4D). A bead with 100\u20131000 TS modules on the surface has an estimated minimum of 4 T1S3[NDC80]3 modules in the proximity of a microtubule end. This organization might be optimal to couple the energy from microtubule depolymerization into cargo movement: increasing the local NDC80C concentration on the beads beyond that did not result in higher stalling forces.\n\nPooling of stall forces from beads coated with varying surface densities of T1S3[NDC80]3 and T2S2[NDC80]2 resulted in 51 detachment events (71%) and 21 rescue events (29%) and revealed a striking correlation between the amplitude of the stalling force and the probability of a rescue event (Figure 4E). Interestingly, even a very dense coating of monovalent T3S1[NDC80]1 on the beads did not generate stalling forces higher than 3 pN (Figure 4D) and never produced rescue events. Taken together, these results show that the multivalent NDC80 modules promote efficient coupling of microtubule-generated force as well as force-dependent rescue of microtubule shortening.\n\n### The linkage between NDC80 oligomers and the microtubule end stiffens during depolymerization stalls\n\nThe ability of TS-NDC80 modules to slow down, stall, and rescue microtubule depolymerization suggests that they interact with the very end of the shortening microtubule. To further assess the mechanical properties of this interaction, we analysed the thermal fluctuations of trapped beads before and during contact with the tip of the microtubule. For a trapped bead in solution, these fluctuations are limited by the stiffness of the trap. For a trapped bead attached to a microtubule, these fluctuations additionally reflect the mechanical properties of the microtubule-bead linkage. During stalling, fluctuations along the microtubule were dampened compared to the signal across the microtubule and compared to fluctuations before and after the microtubule pulled on the bead (Figure 5A). This demonstrates an effective stiffening of the link between the bead and the microtubule under force. To test if pulling on microtubules and NDC80 also altered fluctuations of beads that do not interact with the depolymerizing ends, we attached beads decorated with T1S3[NDC80]3 assemblies either to the lattice of a microtubule away from the dynamic end, or to the stabilized end of a microtubule with a GMP-CPP cap (Figure 5A). Force in these experiments was exerted by pulling on the coverslip-attached microtubule seed using the piezo stage in the same direction as a depolymerizing microtubule would pull. Stiffening of the bead-microtubule link under force was observed in all cases, but was on average two times higher during stalls produced by TS-NDC80 modules interacting with depolymerizing microtubules (Figure 5B). Apparently, force-induced stiffening of the link provided by TS-NDC80 modules is enhanced when NDC80 molecules are interacting with depolymerizing, presumably flared protofilaments, compared to when they are interacting with straight protofilaments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig5-v2.jpg)\n\n**Figure 5.:** (a) Experimental setup to compare forces generated by shortening microtubules (red box) with forces generating by a moving stage while a bead with T1S3[NDC80]3 is attached laterally to a dynamic microtubule (blue box), or end-on to a stabilized microtubule (green box). Examples of unfiltered QPD signals recorded during force generation are shown on the right. (b) Effective stiffness of the link between the bead and the microtubule increases with force.\n\n## Discussion\n\nProductive coupling of microtubule-generated force to kinetochore motion is achieved by balancing the strength of the coupler\u2019s binding to the microtubule and the amount of energy the microtubule spends to move the coupler (Efremov et al., 2007). We show here that at the typical picomolar concentrations of single-molecule analyses, monomeric NDC80 complexes bind weakly to the microtubules and have no detectable effect on microtubule dynamics. Instead, the integration of two NDC80 molecules in a single module is sufficient to track the tip of a shortening microtubule and to slow down microtubule depolymerization (Figure 3D). A similar effect on microtubule disassembly had been previously observed using very high concentrations of monomeric NDC80 that resulted in complete decoration of the microtubule lattice with NDC80 (Umbreit et al., 2012).\n\nModels of kinetochore-microtubule attachment during microtubule disassembly can be classified under two fundamental categories: (1) attachments that do not directly harness the energy liberated by a depolymerizing microtubule to generate movement, and (2) attachments that do. The \u2018biased diffusion\u2019 mechanism of attachment to a depolymerizing microtubule belongs to the first category. By assuming that weakly bound couplers diffuse to explore the surface of the microtubule by steps that are driven by thermal energy, this model predicts that net kinetochore movement is not linked to an energy expenditure by the depolymerizing microtubule. Consequently, this type of attachment does not stall microtubule disassembly and is expected to have negligible effects on the speed of microtubule shortening (Efremov et al., 2007; Powers et al., 2009).\n\nModels in the second category, on the other hand, predict that a fraction of the force generated by a depolymerizing microtubule is harnessed to move a non-diffusive or poorly diffusive, tightly bound coupler to the next position on the microtubule lattice. This type of coupling is expected to result in reduced microtubule disassembly rates. For instance, this phenomenon has been observed in presence of oligomers of Dam1 (DASH) complexes, which bind tightly to the microtubule wall and may form microtubule-encircling rings (Westermann et al., 2005; Miranda et al., 2005; Grishchuk et al., 2008). In the model known as \u2018forced walk\u2019, tubulin power strokes generated at the base of the curls of disassemblying microtubules are necessary to move the ring into the next position of the lattice. The assembly of rings around the microtubule, however, is not a necessary condition for the exploitation of the energy of a depolymerizing microtubule, and other models, including models based on independent tight binders, have been proposed (Asbury et al., 2011; Grishchuk, 2017). For tightly bound couplers, therefore, a fraction of the microtubule-generated force is spent to move the coupler until the microtubule shortening is stalled by a combination of coupler\u2019s \u2018friction\u2019 and the opposing force (Efremov et al., 2007; Grishchuk et al., 2008).\n\nSeveral observations indicate that the multivalent NDC80 modules, rather than undergoing biased diffusion as previously proposed (Powers et al., 2009), generate attachments that belong to the second category. The multivalent NDC80 modules generated a coupler that bound the microtubule tightly with residence in the range of hours (Figure 2), and that decreased microtubule depolymerization rates (Figure 3). In contrast, and consistent with previous studies (Alushin et al., 2010; Schmidt et al., 2012), monomeric NDC80 and monovalent T3S1[NDC80]1 did not follow or modulate microtubule shortening (Figure 1B, 3BC). The stall forces produced by multivalent NDC80 modules saturated at 5\u20136 pN and increased the chance of microtubule rescue (Figure 4). Comparing these values to the theoretical maximum of 13\u201370 pN that a microtubule can generate (Molodtsov et al., 2005; Vichare et al., 2013), we speculate that a significant amount of microtubule-generated energy is spent to break the bonds between the TS-NDC80 assemblies and the microtubule. These observations suggest a direct interaction between multivalent NDC80 assemblies and the microtubule tip, and make us suggest that these assemblies exploit the force of depolymerizing microtubules (Figure 6). This conclusion is consistent with recent experiments in vivo showing that kinetochore-oligomerized NDC80 is a friction element that slows down the speed of kinetochore movements in mitosis (Long et al., 2017).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36764/elife-36764-fig6-v2.jpg)\n\n**Figure 6.:** A graphical recapitulation of the kinetochore-microtubule interfaces reconstituted and characterised in this study and their occurrence in vivo.\n\nProtofilaments at growing microtubule ends are less bent than at shortening ends, and force-induced straightening of protofilament flares has been suggested as a mechanism to convert the energy of microtubule depolymerization into cargo transport (McIntosh et al., 2008). Externally applied opposing force also slows down microtubule shortening (Franck et al., 2007), presumably through suppressed bending of depolymerizing protofilaments (Grishchuk et al., 2005). Thus, the reduced depolymerization rate of microtubules carrying TS-NDC80 assemblies supports a direct binding of multivalent NDC80 to flaring protofilaments (Figure 3D). We therefore propose that the correlation between the magnitude of the TS-NDC80 mediated stalling forces and the probability to reverse microtubule depolymerization into growth is a direct consequence of force-induced protofilament straightening. Kinetochore-associated fibrils that modulate the shape of depolymerizing microtubule ends at attached kinetochores have previously been identified in vivo using electron tomography (McIntosh et al., 2008), but their molecular identity has remained unclear. While our studies suggest that the fibrils might consist of oligomers of NDC80 complexes, further analyses will be required for a detailed molecular dissection. Importantly, previous structural analyses of an engineered version of the NDC80 complex (NDC80Bonsai, Ciferri et al., 2008) identified this complex on the microtubule lattice (Alushin et al., 2010). However, until now it has been impossible to define the position of NDC80 complexes on a depolymerizing microtubule end under force, and therefore the question remains open.\n\nStabilization of kinetochore-microtubule attachments in vivo is tension-dependent (Cane et al., 2013; Nicklas and Ward, 1994). Here we reconstituted this behavior in vitro using dynamic microtubules and optically trapped modules with a defined NDC80 stoichiometry. The multivalency of NDC80 at the outer kinetochore thus likely directly contributes to the tension-dependent stabilization of kinetochore-microtubule in vivo. Stabilization of kinetochore-microtubule interactions by tension has also been recapitulated in vitro with purified kinetochore particles from Saccharomyce cerevisiae (Akiyoshi et al., 2010). These purified kinetochore particles, whose homogeneity and stoichiometry of microtubule binders has not been precisely defined, lose their connection to the microtubule ends under an externally applied force of several pN (Akiyoshi et al., 2010; Miller et al., 2016; Sarangapani et al., 2014). The force-coupling observed for the purified kinetochore particles appears to be crucially dependent on the Dam1 complex (Akiyoshi et al., 2010), an additional microtubule binder that contributes to the efficient force coupling at the microtubule plus-end in Saccharomyce cerevisiae. Dam1, as well as the functionally analogous human Ska complex, also confer plus-end tracking activity in vitro to monomeric NDC80 (Janczyk et al., 2017; Lampert et al., 2010; Schmidt et al., 2012; Tien et al., 2010; Welburn et al., 2009; Helgeson et al., 2018).\n\nIn conclusion, our work highlights that recapitulating stoichiometry and spatial arrangement of macromolecular assemblies is crucial for the bottom-up reconstitution and biophysical analysis of the kinetochore. The organization of NDC80 in multivalent modules is -at least partially- sufficient to recapitulate tension-dependent stabilization of cargo-microtubule coupling in vitro. How the constrained stoichiometry and spatial arrangement of NDC80, post-translational modifications, and additional cargo-couplers collectively modulate microtubule dynamics remains to be addressed in vivo and in vitro.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB</td>\n      <td>Peters laboratory,Weissmann et al., 2016</td>\n      <td></td>\n      <td>addgene plasmid 80610</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1A</td>\n      <td>Peters laboratory,Weissmann et al., 2016</td>\n      <td></td>\n      <td>addgene plasmid 80611</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB NDC80</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB NUF2</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB SPC25-HIS</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB SPC24</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1A with NDC80C (SPC25-HIS)</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td>combined by biGBac cloning (Weissmann et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB SPC25-SORT-HIS</td>\n      <td>Musacchio laboratory, this study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLIB SPC24-SPY</td>\n      <td>Musacchio laboratory, this study</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1A with NDC80C (SPC25-SORT-HIS)</td>\n      <td>Musacchio laboratory, this study</td>\n      <td></td>\n      <td>combined by biGBac cloning (Weissmann et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1A with NDC80C (SPC25-SORT-HIS SPC24-SPY)</td>\n      <td>Musacchio laboratory, this study</td>\n      <td></td>\n      <td>combined by biGBac cloning (Weissmann et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX-6P GST-CENP-T2\u2013373 SORT</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBIG1A CDK1-GST:Cyclin-B1-HIS</td>\n      <td>Musacchio laboratory,Huis In 't Veld et al., 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a Core Traptavidin</td>\n      <td>Howarth laboratory,Chivers et al. (2010)</td>\n      <td></td>\n      <td>addgene plasmid 26054</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a Dead Strepatavidin SpyCatcher</td>\n      <td>Howarth laboratory,Fairhead et al. (2014)</td>\n      <td></td>\n      <td>addgene plasmid 59547</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MIS12C (DSN1-d100-109)</td>\n      <td>Musacchio laboratory,Petrovic et al. (2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Sortase 5M and Sortase 7M</td>\n      <td>Ploegh laboratory, seeHirakawa et al. (2015)</td>\n      <td></td>\n      <td>addgene plasmids 51140 and 51141</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GGGGC-Alexa488</td>\n      <td>ThermoFisher</td>\n      <td></td>\n      <td>peptide for C-terminal sortase labeling</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GGGGK-TMR</td>\n      <td>GenScript</td>\n      <td></td>\n      <td>peptide for C-terminal sortase labeling</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>GGGGK-FAM</td>\n      <td>GenScript</td>\n      <td></td>\n      <td>peptide for C-terminal sortase labeling</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kymo.m</td>\n      <td>Dogterom laboratory, this study</td>\n      <td></td>\n      <td>Matlab script to trace fluorescent particles in kymographs</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nStandard Gibson assembly or restriction-ligation dependent cloning techniques were used to generate pLIB vectors with NDC80, SPC25SORT-HIS, SPC24, and SPC24SPY. Expression cassettes were combined on pBIG1 vectors using Gibson assembly as described (Weissmann et al., 2016). Baculoviruses were generated in Sf9 insect cells and used for protein expression in Tnao38 insect cells. Between 60 and 72 hr post-infection, cells were washed in PBS (10 mM Na2HPO4, 1.8 mM KH2PO4, 2.7 mM KCl, 137 mM NaCl, pH 7.4) and stored at \u221280\u00b0C. All subsequent steps were performed on ice or at 4\u00b0C. Thawed cells were resuspended in buffer A (50 mM Hepes, pH 8.0, 200 mM NaCl, 5% v/v glycerol, 1 mM TCEP) supplemented with 20 mM imidazole, 0.5 mM PMSF, and protease-inhibitor mix HP Plus (Serva, Germany), lysed by sonication and cleared by centrifugation at 108,000 g for 30 min. The cleared lysate was filtered (0.8 \u03bcM) and applied to a 5 ml HisTrap FF (GE Healthcare, Chicago, IL) equilibrated in buffer A with 20 mM imidazole. The column was washed with approximately 50 column volumes of buffer A with 20 mM imidazole and bound proteins were eluted in buffer A with 300 mM imidazole. Relevant fractions were pooled, diluted 5-fold with buffer A with 25 mM NaCl and applied to a 6 ml ResourceQ column (GE Healthcare) equilibrated in the same buffer. Bound proteins were eluted with a linear gradient from 25 mM to 400 mM NaCl in 30 column volumes. Relevant fractions were concentrated in 30 kDa molecular mass cut-off Amicon concentrators (Millipore, Burlington, MA) in the presence of additional 200 mM NaCl and applied to a Superose 6 10/300 column (GE Healthcare) equilibrated in 50 mM Hepes, pH 8.0, 250 mM NaCl, 5% v/v glycerol, 1 mM TCEP. Size-exclusion chromatography was performed under isocratic conditions at recommended flow rates and the relevant fraction were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at \u221280\u00b0C.\n\nGST-CENP-T2-373 with a C-terminal -LPETGG extension was expressed in E. coli BL21(DE3)-Codon-plus-RIL cells and purified as described by PreScission cleavage from a GSTrap resin followed by Heparin affinity and size-exclusion chromatography (Huis In 't Veld et al., 2016). Purified CENP-T was C-terminally labeled using a sortase 5M mutant (Hirakawa et al., 2015) and GGGGC-Alexa488 (ThermoFisher,\u00a0Waltham,\u00a0MA) peptide and separated from sortase and the unreacted peptide by size-exclusion chromatography using a Superdex 200 10/300 column (GE Healthcare). CDK1:Cyclin-B1 was prepared and used as described (Huis In 't Veld et al., 2016) to phosphorylate the Alexa488-labeled CENP-T. Phosphorylated CENP-T was incubated with NDC80 and a truncated version of MIS12 that lacks the Dsn1100-109 region (see Petrovic et al., 2016) and purified by size-exclusion chromatography using a superose 6 increase 5/150 column (GE Healthcare) equilibrated in 20 mM TRIS pH 8.0, and 200 mM NaCl, 2% v/v glycerol, and 2 mM TCEP. Fractions of 80 \u00b5L were collected, analyzed by SDS-PAGE followed by in-gel fluorescence and coomassie staining, and selected for further use as illustrated in Figure 1\u2014figure supplement 1.\n\nCore Traptavidin (T; addgene plasmid #26054) and Dead Streptavidin-SpyCatcher (S; addgene plasmid # 59547) were gifts from Mark Howarth (Chivers et al., 2010; Fairhead et al., 2014) and expressed in E. coli BL21 [DE3] RIPL (Stratagene, San Diego, CA). Expression was induced in cultures with an OD600 of 0.9 by adding 0.5 mM IPTG for 4 hr at 37\u00b0C. Cells were washed in PBS and stored at \u221280\u00b0C. All subsequent steps were performed on ice or at 4\u00b0C. Cells were thawed in 1,5 volumes of lysis buffer (PBS with 10 mM EDTA, 1 mM PMSF, 1% Triton X-100, 0.1 mg/ml lysozyme), incubated for 60 min, lysed by sonication, and centrifuged at 10000 g for 30 min. The supernatant was discarded and pelleted material was resuspended in PBS with 10 mM EDTA and 1% Triton X-100, centrifuged as above, resuspended in PBS with 10 mM EDTA, and centrifuged again. Washed inclusion bodies were resuspended in 6M Guanidine hydrochloride pH 1.0 and cleared at 21130 g for 10 min in 2 ml eppendorf tubes. Protein concentrations were determined using absorbance at 280 nm and the denatured T and S subunits were mixed in an approximate 1:2 molar ratio. Refolding into TxSy tetramers was accomplished by dropwise dilution and an overnight incubation in a 100x volume of stirring PBS with 10 mM EDTA. This mixture was supplemented with 300 gr (NH4)2SO4 per liter and crudely filtered using paper towels. TxSy tetramers were precipitated by doubling the amount of added (NH4)2SO4 and pelleted at 15000 g or 17000 g using a JA-14 or JA-10 rotor, respectively. The precipitate was resuspended in 50 mM Boric Acid, 300 mM NaCl, pH 11.0 and dialysed to 20 mM Tris pH 8.0 using a SnakeSkin membrane with a 7 kDa molecular mass cut-off (ThermoFisher). The TxSy mixture was loaded onto a 25 ml Source 15Q anion-exchange resin and eluted in 20 mM Tris pH 8.0 with a linear gradient from 100 mM to 600 mM NaCl in eight column volumes at a flow rate of 1 ml/min. Relevant fractions were pooled, analyzed by SDS-PAGE followed by coomassie staining (boiled and not-boiled), and further purified if required by size-exclusion chromatography using a Superdex 200 10/300 column (GE Healthcare) equilibrated in 20 mM TRIS pH 8.0, and 200 mM NaCl, 2% v/v glycerol, 1 mM TCEP. Purified TS tetramers were concentrated using 10 kDa molecular mass cut-off Amicon concentrators (Millipore), flash-frozen in liquid nitrogen, and stored at \u221280\u00b0C.\n\n### Assembly of TS-NDC80 modules\n\nA mixture of NDC80 and TxSy with a 3\u20134 fold molar excess of NDC80 per S subunit was incubated for 12\u201320 hr at 10\u00b0C in the presence of PMSF (1 mM) and protease inhibitor mix (Serva). The formation of TxSy-SPC24SPYy was monitored using SDS-PAGE followed by coomassie staining (samples not boiled). We either used a sortase-labeled fluorescent NDC80 complex or included GGGGK-TMR peptide and a sortase 7M mutant (Hirakawa et al., 2015) in the overnight spy-coupling reaction. In the latter case, molar ratios of approximately 20 and 0.2 compared to NDC80 were used. Reaction mixtures were applied to a Superose 6 increase 10/300 or a Superose 6 increase 5/150 column (GE Healthcare) equilibrated in 20 mM TRIS pH 8.0, 200 mM NaCl, 2% v/v glycerol, 2 mM TCEP. Size-exclusion chromatography was performed at 4\u00b0C under isocratic conditions at recommended flow rates and the relevant fractions were pooled and concentrated using 30 kDa molecular mass cut-off Amicon concentrators (Millipore), flash-frozen in liquid nitrogen, and stored at \u221280\u00b0C.\n\n### Low-angle metal shadowing and electron microscopy\n\nTS-NDC80 assemblies were diluted 1:1 with spraying buffer (200 mM ammonium acetate and 60% glycerol) and air-sprayed as described (Baschong and Aebi, 2006; Huis In 't Veld et al., 2016) onto freshly cleaved mica pieces of approximately 2 \u00d7 3 mm (V1 quality, Plano GmbH,\u00a0Germany). Specimens were mounted and dried in a MED020 high-vacuum metal coater (Bal-tec,\u00a0Canonsburg,\u00a0PA). A Platinum layer of approximately 1 nm and a 7 nm Carbon support layer were evaporated subsequently onto the rotating specimen at angles of 6\u20137\u00b0 and 45\u00b0 respectively. Pt/C replicas were released from the mica on water, captured by freshly glow-discharged 400-mesh Pd/Cu grids (Plano GmbH), and visualized using a LaB6 equipped JEM-1400 transmission electron microscope (JEOL,\u00a0Japan) operated at 120 kV. Images were recorded at a nominal magnification of 60,000x on a 4k \u00d7 4 k CCD camera F416 (TVIPS), resulting in 0.18 nm per pixel. Particles were manually selected using EMAN2 (Tang et al., 2007).\n\n### Negative staining and electron microscopy\n\nTaxol-stabilized microtubules were made by polymerizing 20 \u00b5M tubulin in the presence of 1 mM GTP at 37\u00b0C. Taxol was added to concentrations of 0.2, 2, and 20 \u00b5M after 10, 20, and 30 min respectively. Stabilized microtubules were sedimented over a warm MRB80 gradient with 40% glycerol, 1 mM DTT, and 20 \u00b5M taxol and were resuspended in MRB80 with 20 \u00b5M taxol. Microtubules were incubated for 15 min at room temperature with 10 nm biotin-nanogold (Cytodiagnostics,\u00a0Burlington,\u00a0ON) and T1S3[NDC80]3. The 10 \u00b5L mixture with tubulin at 2 \u00b5M, T1S3[NDC80]3 at 0.4 \u00b5M, and biotin-nanogold at 0.05 OD (520 nm maximum absorbance; 1000x diluted from the stock) was thereafter applied for 45 s to freshly glow-discharged 400 mesh copper grids (G2400C, Plano GmbH) with a continuous carbon film. Grids were washed three times with MRB80 buffer, once with freshly prepared 0.75% uranyl formate (SPI Supplies, West Chester, PA), and then stained with the uranyl formate for 45 s. Excess staining solution was removed by blotting and the specimen was air-dried. Presented micrographs were recorded as described above.\n\n### Tubulin and microtubules\n\nDigoxigenin-labelled tubulin was produced by cycling of porcine brain extract in high-molarity PIPES (Castoldi and Popov, 2003) followed by labelling according to published protocols (Hyman et al., 1991). All other tubulins were purchased from Cytoskeleton Inc. GMPCPP-stabilized seeds were made by two rounds of polymerization to remove any residual GDP. 25 \u00b5M tubulin (40% dig-tubulin) supplemented with 1 mM GMPCPP (Jena Biosciences,\u00a0Germany) were polymerized for 30 min at 37\u00b0C, spun down in Beckman Airfuge (5 min at 30 psi), resuspended in 75% of the initial volume of MRB80 (80 mM K-Pipes pH 6.9 with 4 mM MgCl2 and 1 mM EGTA) and depolymerized on ice for 20 min. After that the solution was supplemented with 1 mM GMPCPP and polymerized again for 30 min at 37\u00b0C. Microtubule seeds were sedimented again, resuspended in 50 \u00b5L of MRB80 with 10% glycerol, aliquoted and snap-frozen in liquid nitrogen for storage at \u221280C for up to 2\u20133 months.\n\nTaxol-stabilized microtubules were made by polymerizing 50 \u00b5M tubulin (8% dig-tubulin, 3\u20136% Hilyte-647 tubulin) in the presence of 1 mM GTP 30 min at 37\u00b0C, then 10\u201325 \u00b5M taxol was added for another 30\u201360 min. Polymerized tubulin was then sedimented in Beckman Airfuge (3 min at 14 psi) and resuspended in 50 \u00b5L MRB80 supplemented with 10 \u00b5M taxol.\n\n### TIRF microscopy\n\nCoverslips were cleaned in oxygen plasma and silanized as described (Volkov et al., 2014). Flow chambers were constructed by a glass slide, double-sided tape (3M) and silanized coverslip and perfused using a pipet. The chambers were first incubated with\u00a0~0.2 \u00b5M anti-DIG antibody (Roche,\u00a0Switzerland) and passivated with 1% Pluronic F-127 (experiments with TS-NDC80) or 1% tween-20 (experiments with CENP-T-oligomerized NDC80). Then taxol-stabilized microtubules (300 \u00b5L diluted 1:30-1:600) were introduced followed by the reaction mix and the chambers were sealed with valap. The reaction mix contained MRB80 buffer with 1 mg/ml \u03ba-casein, 10 \u00b5M taxol, 4 mM DTT, 0.2 mg/ml catalase, 0.4 mg/ml glucose oxidase and 20 mM glucose, supplemented with 10\u201335 pM of TS-NDC80. For experiments with dynamic microtubules the taxol microtubules were substituted with GMPCPP-stabilized microtubule seeds, and the reaction mix (short of taxol) was supplemented with 8 \u00b5M tubulin (4\u20136% labeled with HiLyte-647), 1 mM GTP and 0.1% methylcellulose. In all experiments the reaction mix was centrifuged in Beckman Airfuge for 5 min at 30 psi before adding to the chamber.\n\nImaging was performed at 30\u00b0C using Nikon Ti-E microscope (Nikon,\u00a0Japan) with the perfect focus system (Nikon) equipped with a Plan Apo 100 \u00d7 1.45 NA TIRF oil-immersion objective (Nikon), iLas2 ring TIRF module (Roper Scientific) and a Evolve 512 EMCCD camera (Roper Scientific,\u00a0Germany). Images were acquired with MetaMorph 7.8 software (Molecular Devices, San Jose, CA). The final resolution was 0.16 \u00b5m/pixel. The objective was heated to 34\u00b0C by a custom-made collar coupled with a thermostat, resulting in the flow chamber being heated to 30\u00b0C.\n\n### Image analysis\n\nAll images were analysed using Fiji (Schindelin et al., 2012). Kymographs were produced by a custom macro that creates an average projection perpendicular to a selected line through a reslice operation. Resulting kymographs were then analysed using a custom script in MatLab R2013b (MathWorks, Natwick, MA). Each horizontal line of the kymograph was fitted with a Gaussian function, with its peak being the central position of the fluorescent spot, and the area under the curve being the spot intensity (Volkov, 2018; copy archived at https://github.com/elifesciences-publications/kymo). Fluorescence intensity of the spot before the first bleach event was averaged to obtain the initial intensity of the spot. Height of the individual bleach event was determined by obtaining the bleaching traces of TS-NDC80 modules or CENP-T-Alexa488 molecules diffusing on taxol-stabilized microtubules, then smoothing these traces with the Chung-Kennedy filter as described (Chung and Kennedy, 1991; Reuel et al., 2012). Resulting smoothed traces were then used to build the histograms of all intensities that occurred during bleaching (Figure 1E) and further analysed as described (Grishchuk et al., 2008). Lifetime measurements were performed by calculating the time difference between the landing and detaching events in kymographs. For chambers containing trivalent and tetravalent TS-[NDC80] modules or pre-assembled TN complexes, in which the oligomers were bound to the microtubules immediately after addition to the chamber, the amount of time between addition of the oligomer and start of imaging (1\u20133 min) was neglected, and spots already present on the microtubules in the first frame were considered as just landed.\n\n### Preparation of beads coated with TS-NDC80 modules\n\n1 \u00b5m glass COOH-functionalized beads (Bangs Laboratories,\u00a0Fishers,\u00a0IN) were suspended by sonication as 1% w/v in MES buffer (25 mM MES pH 5 supplemented with 0.05% tween-20), washed by centrifugation at 16 kG for 1 min, and then activated with EDC and Sulfo-NHS, each at 10 mg/ml, for 30 min at 23\u00b0C with vortexing. After three washes the beads were allowed to bind a mixture of 2 mg/ml PLL-PEG (Poly-L-lysine (20 kDa) grafted with polyethyleneglycole (2 kDa), SuSoS AG,\u00a0Switzerland) with 0\u201310% v/v of PLL-PEG-biotin for 30 min at 23C. The reaction was quenched by adding 200 mM glycine. The beads were washed three times, resuspended at 0.2% w/v and stored at 4C.\n\nBefore each experiment, 10 \u00b5L of PLL-PEG-coated beads were washed using washing buffer (MRB80 with 2 mM DTT and 0.4 mg/ml casein), resuspended in 10 \u00b5L and mixed with 10 \u00b5L of NDC80C oligomer in the same buffer. Incubation was performed for 1 hr on ice with frequent pipetting, then the beads were washed three times and resuspended in 30 \u00b5L of washing buffer. Flow chambers with GMPCPP-stabilized seeds were prepared as described above, the reaction mix contained MRB80 buffer with 10\u201312 \u00b5M tubulin, 1 mM GTP, 1 mg/ml \u03ba-casein, 4 mM DTT, 0.2 mg/ml catalase, 0.4 mg/ml glucose oxidase and 20 mM glucose. This reaction mix was centrifuged in Beckman Airfuge for 5 min at 30 psi, and then 1 \u00b5L of beads suspension was added to 14 \u00b5L of the reaction mix, added to the chamber and the chamber was sealed with valap. The final concentration of the beads was 0.004% w/v (80 fM, without losses).\n\nTo measure bead brightness, the beads were washed twice in MRB80 buffer, resuspended in 10 \u00b5L and a 4 \u00b5L drop was placed on a plasma-cleaned coverslip. The coverslip was then put on top of the slide and sealed with valap. Beads were imaged using brightfield and laser epifluorescence to get the positions and fluorescence intensities of all beads, respectively. Fluorescence intensity of a single fluorophore for normalization of bead fluorescence was obtained as described (Volkov et al., 2014).\n\n### Laser tweezers and experiments with the beads\n\nDIC microscopy and laser tweezers experiments were performed using a custom-built instrument described elsewhere (Baclayon et al., 2017). Images were captured using Andor (Ireland)\u00a0Luca R or QImaging (Canada)\u00a0Retiga Electro CCD cameras and MicroManager 1.4 software. At the start of each experiment 50 frames of bead-free fields of view in the chamber were captured, averaged, and used later for on-the-fly background correction. The images were acquired at eight frames per second, subjected to background substraction and each 10 consecutive frames were averaged.\n\nCalibration of quadrant photo-detector (QPD) response was performed by sweeping the trapping 1064 nm beam with the trapped bead across the tracking 633 nm beam with acousto-optic deflector (AOD) over the distance of\u00a0\u00b1400 nm in two orthogonal directions. The central\u00a0\u00b1200 nm region of the resulting voltage-displacement curve was then fitted with a linear fit to determine the conversion factor. Stiffness calibration was performed by fitting the power spectral density as described (Toli\u0107-N\u00f8rrelykke et al., 2004) with correction for the proximity of the coverslip (Nicholas et al., 2014). The axial position of the free bead in a trap was adjusted to leave 100\u2013200 nm between the surfaces of the bead and the coverslip, while having the coverslip-associated microtubules in the focal plane of the objective. QPD signal was sampled at 100 or 10 kHz without additional filtering. All experiments were performed at 0.2\u20130.4W of the 1064 nm laser resulting in a typical trap stiffness of 0.015\u20130.033 pN/nm.\n\nForce signals were analysed in MatLab R2013b. Direction of the force development was checked for consistency with video recording for each signal. Signals with ambiguous direction of the force, or beads attached to more than one microtubule were discarded. X and Y coordinates from the QPD recordings were then rotated to correspond to the directions along and across the microtubule. A portion of the signal corresponding to microtubule pulling was downsampled to 1 kHz and smoothed with a Chung-Kennedy filter (Chung and Kennedy, 1991; Reuel et al., 2012). The stall force was determined as the difference between the stall level and the free bead level in the smoothed signal along the microtubule multiplied by trap stiffness, corrected for the nonlinear increase of the force as a function of the distance from the trap center (Simmons et al., 1996).\n\nTo calculate the effective stiffness of the link between the bead and the microtubule, we have measured the variance <var > of the signal along the microtubule during stall (for microtubules pulling on the bead), or during a pause in the piezo-stage motion (for control experiments). Stiffness was then calculated as kBT/<var\u00a0>\u00a0. In control experiments for Figure 4, the tension was generated by first selecting the microtubule that was oriented along the Y-axis of the piezo-stage (parallel to the long side of the flow chamber), attaching the bead to the microtubule and then manual stepping in 10- or 100 nm steps with the piezo stage in the direction of the seed.\n\n### Computer simulation of lifetimes\n\nSimulations were performed using Gillespie algorithm (Gillespie, 1977) in MatLab R2013b. Each simulation run started with an oligomer with N binding sites with only one binding site being attached. In the case of N\u00a0=\u00a01 the only event that can occur afterwards is detachment with a fixed rate koff determined as 1/(average lifetime of T3S1x[NDC80C]1)=0.62 s\u22121. If N\u00a0>\u00a01, detachment of each \u2018attached\u2019 binding site happens at a rate koff, and attachment of each available site inside the oligomer happens at a rate kon. Simulation stopped when all binding sites in an oligomer transitioned to the \u2018detached\u2019 state. The time elapsed until the next event was determined by calculating the propensity towards this event using pre-generated random numbers.\n",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "7dc7ab88-4046-437c-b5e4-198c0e86e55a",
+      "submission_id": "205d38a5-d13a-4455-b058-a215360384a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36764.023](https://doi.org/10.7554/eLife.36764.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"NDC80 clustering modulates microtubule dynamics under force\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bungo Akiyoshi (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers and the Reviewing Editor. Based on these discussions we regret to inform you that your work will not be considered for publication in eLife at this stage.\n\nThe reviewers and Reviewing Editor all agreed that the application of SpyTag/SpyCatcher to produce defined multivalencies of Ndc80 was technically strong and will be an important system for studying kinetochore function. However, the consensus was that the paper is currently somewhat confirmatory and needs additional extensions of this system to merit publication in eLife.\n\nThe reviewers identified avenues to explore that they considered would make the paper suitable and these are given in the reviews below. It was felt that a minimal step would be to compare your Ndc80 clusters with a natural cluster formed downstream of CENP-T (point 1 of reviewer 1). The reviewers would expect you to do this in the various assays to compare their properties. As an alternative it would also be appropriate to investigate other aspects of Ndc80 function that go beyond the extensive prior literature (as discussed by reviewer 2).\n\nThe reviewers and Reviewing Editor debated whether to ask for these experiments during revision of the manuscript, but decided it was better to reject the paper at this stage. They would welcome a new submission if you can extend your assay to address the next level of complexity.\n\nReviewer #1:\n\nAlthough it has been well established that multimerization of Ndc80 complexes is essential for their tip-tracking ability (e.g. McIntosh et al., 2008, Powers et al., 2009), no study systematically analyzed the role of multivalency. Taking advantage of a SpyTag/SpyCatcher system, the authors elegantly reconstituted well-defined modules containing 1, 2, 3, or 4 copies of Ndc80 complexes and analyzed their microtubule-binding activity and microtubule dynamics in TIRF and laser tweezer assays. They showed that at least two copies of Ndc80 complexes were required for tip tracking on disassembling microtubules, and also revealed a relationship between stall force and rescue frequency. Although many of the results reported in this manuscript are rather confirmatory, the application of the SpyTag/SpyCatcher system to examine the role of multivalency in biological systems is highly novel and important. I therefore support its publication in eLife if my following concerns can be addressed.\n\nEssential revisions:\n\n1) Although the use of SpyTag/SpyCatcher is an elegant way of reconstituting defined numbers of Ndc80 complexes, it is inevitably artificial. Given that the authors recently reconstituted a more physiological module containing two Ndc80 complexes on one CENP-T molecule (Huis in 't Veld et al., 2016), can they test this module and compare the result with T2S2?\n\n2) Previous work reported much higher stall force (8-16 pN by (Driver et al., 2017), or ~25 pN by (Volkov et al., 2013)), compared to this manuscript (1.5 \u2013 6 pN). It would be helpful if the authors could give clarification or possible explanation for why such a lower force stalled microtubule depolymerization in their assay.\n\n3) Discussion section: I got an impression that the authors were arguing as if their data are inconsistent with the biased-diffusion model. However, their data could be interpreted as a support for the biased-diffusion model because, as they confirmed, Ndc80 requires multivalent attachment for tracking disassembling microtubules (which is an essence of the biased-diffusion model). In any case, it would be important to mention that forced walk and biased-diffusion models are not mutually exclusive.\n\n4) Discussion section: \"direct binding of clustered NDC80 to flaring protofilaments\": This statement seems inconsistent with the authors' previous study (Alushin, 2010) that proposed preferential binding of Ndc80 to microtubule lattice rather than flaring protofilaments. A clarification would be helpful.\n\nReviewer #2:\n\nThis paper investigates the behavior of the kinetochore Ndc80 complex for its interactions with dynamic microtubules. Using an elegant strategy, the authors create conditions in which they can control the multimerization of the Ndc80 complex to test its behavior in the presence of 1, 2, 3, or 4 molecules. They find that increased Ndc80 numbers locally concentrated in this way result in the ability to track with depolymerizing microtubules and the production of modest forces. This paper is technically strong and is carefully conducted. However, the present manuscript essentially reproduces work from the Asbury lab (Powers et al., 2009) in which the authors artificially clustered Ndc80 molecules on beads. The prior work was not as carefully controlled for the precise numbers but came to the same overall conclusions for this behavior. Since then, this model of avidity has been the dominant way in which people have considered Ndc80 function. Thus, although the current paper is nicely executed, it does not provide conceptual advances that rise to the level that I consider for eLife. In their Introduction and Discussion section, the authors highlight multiple additional features of the kinetochore that are relevant to the binding, force, and movement behavior of the Ndc80 complex. This includes its upstream targeting factors and other associated proteins (such as the Dam or Ska complexes). There is also an extensive prior literature on regulatory modifications, and there has been a debate on the relative organization of Ndc80 molecules on microtubules. If the authors were able to build on their existing system and assay to evaluate these less well-defined features and properties of kinetochore-microtubule interactions, this would represent a more substantive advance.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Multivalency of NDC80 in the outer kinetochore is essential to track shortening microtubules and generate forces\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bungo Akiyoshi (Reviewer #2).\n\nThe manuscript has been improved, but a few concerns remain. For your reference, we include the reviewers' comments below. Although there was some difference of opinion between the reviewers, both agreed that your paper makes a strong technical advance. Upon discussion they both came to the consensus that it should be eventually accepted. Before doing so, we would like you to address the two comments from reviewer #2. (There will be no need to review the work again.)\n\nReviewer #2:\n\nIn the revised manuscript, Volkov and colleagues addressed many of my concerns. Especially, they used more physiological complexes that consist of Ndc80 and CENP-T (with or without Mis12) and found a similar effect as the SpyCatcher-based experiment. Although the presented data are, as the authors admit, not of highest quality, it shows the importance of a better controlled system to analyze multivalency in single molecule experiments. I fully recommend the publication of this manuscript in eLife.\n\n1) The experiment in Figure 1D is not controlled properly. Figure 1C should be repeated at 2 nM to exclude the possibility that the CENP-T:Mis12 complexes bind microtubules on their own at the concentration used in Figure 1D.\n\n2) Figure 1\u2014figure supplement 1D: What are the concentrations of TMN, TN, TM used in these TIRF experiments?\n\nReviewer #3:\n\nThis paper represents a careful technical execution and the creation of improved methods to test whether multimerizing the Ndc80 complex improves its microtubule tracking and force generating capabilities. The revised paper extends on the previous version where the authors used artificial oligomerization with defined Ndc80 numbers to oligomerize Ndc80 through its upstream receptor CENP-T. In this case, they similarly find improved properties when multiple Ndc80 complexes are closely associated. The authors have also revised aspects of the text in an attempt to better highlight their models and ideas.\n\nAlthough I continue to find the level of experimentation impressive, I remain unconvinced that this paper represents a strong conceptual advance or new insights into the mechanisms of kinetochore-microtubule interactions. I do not believe that this paper is sufficient to resolve a debate between biased-diffusion or forced-walk models, or that it substantially alters the way that diverse researchers are considering the activities and properties of the Ndc80 complex. There have been a variety of both single molecule and force-based studies on Ndc80 behavior from the Asbury, Davis, Grishchuk, and Westermann labs (and many others). For example, the recent Davis lab paper (Helgeson et al.,) tests some related ideas on Ndc80 force and microtubule binding behavior, but also combining this with the Ska complex. In this current paper, the authors are unable to test the force properties of a single multimer, as they also need to attach these to beads.\n\nI fully appreciate the incredible technical challenges required to conduct these type of experiments (as the authors highlight in their response letter). In this case, they may wish to publish a more methods-focused paper as a building step for a more extended work using this strategy to test various models and additional interacting factors as would be required to generate a more robust conceptual advance.\n",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef36b051-633f-42c7-b030-849c7bd31d94",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C1",
+      "claim": "Kinetochores contain multiple copies of the microtubule-binding NDC80 complex as an evolutionary conserved feature.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of multiple copies of the microtubule-binding NDC80 complex is an evolutionary conserved feature of kinetochores, points of attachment of chromosomes to spindle microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known feature of kinetochores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "7b0675d2-1857-4fd3-b30e-7b0ca4f024ef",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C2",
+      "claim": "Single NDC80 complexes do not track depolymerizing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "while single NDC80 complexes do not track depolymerizing microtubules, reconstituted particles containing the NDC80 receptor CENP-T bound to three or more NDC80 complexes do so effectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6f583673-b7d6-48cf-b878-02c6013f0e6e",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C3",
+      "claim": "Reconstituted particles containing CENP-T bound to three or more NDC80 complexes effectively track depolymerizing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "while single NDC80 complexes do not track depolymerizing microtubules, reconstituted particles containing the NDC80 receptor CENP-T bound to three or more NDC80 complexes do so effectively, as expected for a kinetochore force coupler.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "9f7dce5f-e5b7-42ea-ab7c-50db18710b13",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C4",
+      "claim": "The residence time of modules on microtubules increases exponentially with the number of NDC80 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The modules' residence time on microtubules increased exponentially with the number of NDC80 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "46107536-b864-40f8-bc9f-2f6611dbcf2d",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C5",
+      "claim": "Modules with two or more NDC80 complexes track depolymerizing microtubules with increasing efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Modules with two or more complexes tracked depolymerizing microtubules with increasing efficiencies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "42d680c8-6f01-4efc-96b8-a35fa348dff1",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C6",
+      "claim": "Modules with two or more NDC80 complexes stalled microtubule depolymerization in a force-dependent manner when conjugated to cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Modules with two or more complexes tracked depolymerizing microtubules with increasing efficiencies, and stalled and rescued microtubule depolymerization in a force-dependent manner when conjugated to cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "951c1d73-2533-4a6b-bd77-bb2da11eaea2",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C7",
+      "claim": "Modules with two or more NDC80 complexes rescued microtubule depolymerization in a force-dependent manner when conjugated to cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Modules with two or more complexes tracked depolymerizing microtubules with increasing efficiencies, and stalled and rescued microtubule depolymerization in a force-dependent manner when conjugated to cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "7222ea2c-c45c-402e-96fd-0fb4d04c3691",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C8",
+      "claim": "NDC80 tracks depolymerizing microtubules by harnessing force generated during microtubule disassembly rather than through biased diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations indicate that NDC80, rather than through biased diffusion, tracks depolymerizing microtubules by harnessing force generated during microtubule disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f4043382-7533-4e6d-a0de-9be1489a57b1",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C9",
+      "claim": "Multivalent ligands may have increased binding affinity for multimeric targets compared to equivalent monovalent ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well established that multivalent ligands may have increased binding affinity for multimeric targets in comparison to equivalent monovalent ligands, the quantitative effects of multivalency for macromolecular interactions cannot be easily predicted (Jencks, 1981), and needs therefore to be determined experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Jencks, 1981.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "976de49e-eccf-4cab-9542-724e892b2b46",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C10",
+      "claim": "The quantitative effects of multivalency for macromolecular interactions cannot be easily predicted and need to be determined experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is well established that multivalent ligands may have increased binding affinity for multimeric targets in comparison to equivalent monovalent ligands, the quantitative effects of multivalency for macromolecular interactions cannot be easily predicted (Jencks, 1981), and needs therefore to be determined experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Jencks, 1981.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "13721d79-e0f3-4492-8822-6acdbcd08db7",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C11",
+      "claim": "Kinetochores are multiprotein assemblies built on the centromeres of chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochores are multiprotein assemblies built on the centromeres of chromosomes (Musacchio and Desai, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "1eee5e6b-0146-4b88-b1e6-88dacb7be4f8",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C12",
+      "claim": "The ability of kinetochores to hold on to the ends of microtubules is crucial for the segregation of replicated chromosomes during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Their ability to hold on to the ends of microtubules, dynamic polymers that alternate between phases of growth and shrinkage, is crucial for the segregation of replicated chromosomes (sister chromatids) to the daughter cells during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about kinetochore function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8fb4aa5f-696d-4692-be04-4605b2ee15e7",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C13",
+      "claim": "Chromosome propulsion during cell division does not require molecular motors.",
+      "claim_type": "EXPLICIT",
+      "source": "This event does not require molecular motors, and chromosome propulsion is mediated by the ability of kinetochores to remain attached to depolymerizing microtubules (Grishchuk and McIntosh, 2006; Tanaka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "443e3e4e-c4fb-4382-a00c-382b9158c7dd",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C14",
+      "claim": "Chromosome propulsion is mediated by the ability of kinetochores to remain attached to depolymerizing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "This event does not require molecular motors, and chromosome propulsion is mediated by the ability of kinetochores to remain attached to depolymerizing microtubules (Grishchuk and McIntosh, 2006; Tanaka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "395e2568-8073-4362-9dab-4ccf2b98be8b",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C15",
+      "claim": "A single NDC80 complex is unable to follow dynamic microtubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro reconstitution reveals that a single NDC80 complex is unable to follow dynamic microtubules (Powers et al., 2009; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "bf3e3dc2-315f-4f70-933d-89d8d00a21e9",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C16",
+      "claim": "Microtubule end-tracking activity is conferred to NDC80 by the presence of Dam1 or Ska complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule end-tracking activity is conferred to NDC80 by the presence of Dam1 or Ska complexes, which provide additional binding sites to microtubule walls and dynamic ends (Tien et al., 2010; Lampert et al., 2010; Schmidt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "575d1fb9-67c9-48c9-a3e5-b06b0e8632bd",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C17",
+      "claim": "NDC80 gains tip-tracking properties in the presence of factors that trigger multimerization, such as functionalized bead surfaces or antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "NDC80 was also shown to gain tip-tracking properties in the presence of factors that trigger multimerization, such as the functionalized surface of beads (McIntosh et al., 2008) or the presence of an antibody (Powers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "4378e9e9-79bb-4c0a-8a18-eac514d12871",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C18",
+      "claim": "NDC80 binds the 4-subunit MIS12 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "First, NDC80 binds the 4-subunit MIS12 complex, whose kinetochore recruitment, in turn, depends on the chromatin proximal kinetochore subunits CENP-C and CENP-T (Huis In 't Veld et al., 2016; Petrovic et al., 2016; Przewloka et al., 2011; Screpanti et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "838e6e43-6229-4123-acb1-0fc7b0fde6eb",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C19",
+      "claim": "MIS12 complex kinetochore recruitment depends on CENP-C and CENP-T.",
+      "claim_type": "EXPLICIT",
+      "source": "First, NDC80 binds the 4-subunit MIS12 complex, whose kinetochore recruitment, in turn, depends on the chromatin proximal kinetochore subunits CENP-C and CENP-T (Huis In 't Veld et al., 2016; Petrovic et al., 2016; Przewloka et al., 2011; Screpanti et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "67d5cbfe-f7b1-4c7e-9b69-c0737b6abfc6",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C20",
+      "claim": "NDC80 is recruited by direct binding to two phosphorylated motifs near the N-terminus of CENP-T.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, NDC80 is recruited by direct binding to two phosphorylated motifs near the N-terminus of CENP-T (Huis In 't Veld et al., 2016; Gascoigne et al., 2011; Kim and Yu, 2015; Suzuki et al., 2015; Malvezzi et al., 2013; Nishino et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "544428dd-1ae7-4e2c-ba84-cd772ecb923d",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C21",
+      "claim": "Kinetochores contain approximately eight NDC80 complexes per microtubule-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these multiple binding modes, quantitative fluorescence microscopy and bottom-up reconstitutions indicated that kinetochores contain multiple NDC80 complexes, with recent estimates converging on eight complexes per microtubule-binding site (Huis In 't Veld et al., 2016; Suzuki et al., 2015; Weir et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "a2340ee4-ad3d-44bb-9586-32422a59eff5",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C22",
+      "claim": "A single human kinetochore contains approximately 200 NDC80 complexes that bind 15-20 microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, a single kinetochore contains a molecular lawn of approximately 200 NDC80 complexes that bind 15\u201320 microtubules (Suzuki et al., 2015; Wendell et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "41bc8064-0ba3-472e-b030-b1bb5536f291",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C23",
+      "claim": "Monomeric NDC80 complexes briefly interact with the microtubule lattice but do not follow the ends of depolymerizing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Powers et al., 2009; Schmidt et al., 2012), monomeric NDC80 complexes briefly interacted with the microtubule lattice but did not follow the ends of depolymerizing microtubules (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations and supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "69b82e13-72c0-4e69-9b15-1f807d48e455",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C24",
+      "claim": "Tip-tracking events were observed for CENP-T:NDC80 and CENP-T:MIS12:NDC80 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tip-tracking events were observed for CENP-TAlexa488:NDC80 and CENP-TAlexa488:MIS12:NDC80 complexes that were purified by size-exclusion chromatography and then added to dynamic microtubules (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "ab4af8ba-62a4-4424-b381-f49c0d32e2d3",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C25",
+      "claim": "A stoichiometric complex of MIS12 and phosphorylated CENP-T does not bind microtubules over a 35-fold range of concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, this binding strictly depended on the presence of NDC80; a similarly prepared stoichiometric complex of MIS12 and phosphorylated CENP-TAlexa488 did not bind microtubules over a 35-fold range of concentrations (Figure 1C and Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1C and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "e2d7edb3-0480-4ab1-967f-f1ef464936f3",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C26",
+      "claim": "Tip-tracking assemblies contained 1.5 \u00b1 0.7 CENP-T molecules and 5 \u00b1 2 NDC80 molecules (mean and SD, n = 27).",
+      "claim_type": "EXPLICIT",
+      "source": "Tip-tracking assemblies contained 1.5 \u00b1 0.7 CENP-T molecules (mean and SD), 5 \u00b1 2 NDC80 molecules (n = 27)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on quantification of fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "ac507a6b-54d3-41e1-8263-45e87a701f8d",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C27",
+      "claim": "Most CENP-T:MIS12:NDC80 complexes contained three NDC80 complexes per CENP-T:MIS12.",
+      "claim_type": "EXPLICIT",
+      "source": "most complexes contained three NDC80 complexes per CENP-T:MIS12, a number that is in agreement with the biochemically determined number of NDC80 binding sites on phosphorylated CENP-T:MIS12. (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "018662bd-16a9-4d18-b0f6-84715a26e7cc",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C28",
+      "claim": "The residence time of TS-NDC80 modules on taxol-stabilized microtubules increased more than ten-fold for every additional NDC80 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The residence time of these assemblies on microtubules increased more than ten-fold for every additional NDC80 complex (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8464dca9-2f5f-4f46-a938-d058ef8e2fed",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C29",
+      "claim": "Di-, tri-, and tetravalent TS-NDC80 assemblies tracked shortening microtubule tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Di-, tri-, as well as tetravalent TS-NDC80 assemblies tracked shortening microtubule tips and each additional NDC80 increased the fraction of tip-tracking assemblies (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6939c528-9e9b-4410-ae02-351ca72861ba",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C30",
+      "claim": "Each additional NDC80 complex increased the fraction of tip-tracking assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Di-, tri-, as well as tetravalent TS-NDC80 assemblies tracked shortening microtubule tips and each additional NDC80 increased the fraction of tip-tracking assemblies (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "a8b7341b-221e-4f2c-9a80-7a81d6a15a30",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C31",
+      "claim": "Free microtubules shortened faster than microtubules with TS-NDC80 at the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Free microtubules in the same flow chamber shortened faster than the ones with TS-NDC80 at the tip (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "5611a344-6df7-492f-ad9b-1f0734d0e982",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C32",
+      "claim": "CENP-T- and CENP-T:MIS12-mediated oligomers of NDC80 slowed down microtubule shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "CENP-T- and CENP-T:MIS12-mediated oligomers of NDC80 slowed down microtubule shortening in a similar way (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3\u2014figure supplement 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "d6e8b578-fbc8-4ea7-88c4-1822d03e6995",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C33",
+      "claim": "A single trivalent T1S3[NDC80]3 assembly is sufficient to couple microtubule shortening to cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a single trivalent T1S3[NDC80]3 assembly is sufficient to couple microtubule shortening to cargo transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental data on bead tracking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "528ca2d6-a560-4093-bd3a-d696ee231fa9",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C34",
+      "claim": "Beads coated with TS-NDC80 assemblies stalled for an average of 1.5 \u00b1 0.2 s (mean and SEM, n = 91) after initial movement with shortening microtubule tips.",
+      "claim_type": "EXPLICIT",
+      "source": "After initial movement with the shortening microtubule tips, the beads stalled for an average of 1.5 \u00b1 0.2 s (mean and SEM, n = 91).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on quantification of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "2a6e8018-3983-4f27-84bb-b1baed654616",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C35",
+      "claim": "Single trivalent T1S3[NDC80]3 stalled microtubule depolymerization at about 1.5 piconewton.",
+      "claim_type": "EXPLICIT",
+      "source": "Single trivalent T1S3[NDC80]3 stalled microtubule depolymerization at about 1.5 piconewton (pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "1084cf4b-b676-428d-ab2c-78ac72f01b82",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C36",
+      "claim": "Stalling forces increased to maximal values of 5-6 pN with 100-1000 T1S3[NDC80]3 modules per bead.",
+      "claim_type": "EXPLICIT",
+      "source": "Stalling forces increased to maximal values of 5\u20136 pN with 100\u20131000 T1S3[NDC80]3 modules per bead, but did not increase further with thousands of such assemblies on a single bead (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "011dc648-e788-4f73-b15b-929a0d9e1dab",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C37",
+      "claim": "Stalling forces did not increase beyond 5-6 pN with thousands of T1S3[NDC80]3 assemblies on a single bead.",
+      "claim_type": "EXPLICIT",
+      "source": "Stalling forces increased to maximal values of 5\u20136 pN with 100\u20131000 T1S3[NDC80]3 modules per bead, but did not increase further with thousands of such assemblies on a single bead (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8d251778-cce6-4ad1-8e00-adf2112246a4",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C38",
+      "claim": "There is a correlation between the amplitude of the stalling force and the probability of a rescue event.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling of stall forces from beads coated with varying surface densities of T1S3[NDC80]3 and T2S2[NDC80]2 resulted in 51 detachment events (71%) and 21 rescue events (29%) and revealed a striking correlation between the amplitude of the stalling force and the probability of a rescue event (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "5cebe1eb-a9b2-41d5-8ae7-83db59087958",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C39",
+      "claim": "A very dense coating of monovalent T3S1[NDC80]1 on beads did not generate stalling forces higher than 3 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even a very dense coating of monovalent T3S1[NDC80]1 on the beads did not generate stalling forces higher than 3 pN (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "906df5a3-b0cd-427b-adc9-2b770a6770aa",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C40",
+      "claim": "Monovalent T3S1[NDC80]1 never produced rescue events.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even a very dense coating of monovalent T3S1[NDC80]1 on the beads did not generate stalling forces higher than 3 pN (Figure 4D) and never produced rescue events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6b956252-d0d2-4458-b479-6f977723bf70",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C41",
+      "claim": "Multivalent NDC80 modules promote efficient coupling of microtubule-generated force.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that the multivalent NDC80 modules promote efficient coupling of microtubule-generated force as well as force-dependent rescue of microtubule shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8c4eea74-03e7-4118-8e14-fa04d118f080",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C42",
+      "claim": "Multivalent NDC80 modules promote force-dependent rescue of microtubule shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that the multivalent NDC80 modules promote efficient coupling of microtubule-generated force as well as force-dependent rescue of microtubule shortening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6f6fc848-2f11-4fc3-bda3-7d860d77a8ce",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C43",
+      "claim": "During stalling, fluctuations along the microtubule were dampened compared to the signal across the microtubule and compared to fluctuations before and after the microtubule pulled on the bead.",
+      "claim_type": "EXPLICIT",
+      "source": "During stalling, fluctuations along the microtubule were dampened compared to the signal across the microtubule and compared to fluctuations before and after the microtubule pulled on the bead (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "afe76df6-a414-40aa-a1d5-9db792c056c5",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C44",
+      "claim": "Stiffening of the bead-microtubule link under force was on average two times higher during stalls produced by TS-NDC80 modules interacting with depolymerizing microtubules compared to interactions with straight protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Stiffening of the bead-microtubule link under force was observed in all cases, but was on average two times higher during stalls produced by TS-NDC80 modules interacting with depolymerizing microtubules (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "cb6d56ab-bdb5-4c7e-95a2-758f79735e91",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C45",
+      "claim": "Force-induced stiffening of the link provided by TS-NDC80 modules is enhanced when NDC80 molecules are interacting with depolymerizing, presumably flared protofilaments, compared to straight protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, force-induced stiffening of the link provided by TS-NDC80 modules is enhanced when NDC80 molecules are interacting with depolymerizing, presumably flared protofilaments, compared to when they are interacting with straight protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "37dfc4a4-40a1-4fd5-84b4-87b29f901cf0",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C46",
+      "claim": "At typical picomolar concentrations of single-molecule analyses, monomeric NDC80 complexes bind weakly to microtubules and have no detectable effect on microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that at the typical picomolar concentrations of single-molecule analyses, monomeric NDC80 complexes bind weakly to the microtubules and have no detectable effect on microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "9c9831ab-62cc-43e9-b432-cc2c0b61ea41",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C47",
+      "claim": "The integration of two NDC80 molecules in a single module is sufficient to track the tip of a shortening microtubule and to slow down microtubule depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the integration of two NDC80 molecules in a single module is sufficient to track the tip of a shortening microtubule and to slow down microtubule depolymerization (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "82f4b2bd-2294-4671-98cd-8ac83b37fc7c",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C48",
+      "claim": "Very high concentrations of monomeric NDC80 that result in complete decoration of the microtubule lattice produce a similar effect on microtubule disassembly as multivalent NDC80 modules.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect on microtubule disassembly had been previously observed using very high concentrations of monomeric NDC80 that resulted in complete decoration of the microtubule lattice with NDC80 (Umbreit et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "11335fef-6b91-4303-b746-c840dfff241f",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C49",
+      "claim": "Biased diffusion models assume that a connected ensemble of diffusive, low-affinity microtubule binding elements undergoes directional Brownian motion on a shortening microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Biased diffusion models assume that a connected ensemble of diffusive, low-affinity microtubule binding elements undergoes directional Brownian motion on a shortening microtubule if it can maximize its binding energy by retaining as many as possible of the binding elements bound to the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of biased diffusion models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "c85fc1fd-6a17-43b5-8270-196d887be7f8",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C50",
+      "claim": "Biased diffusion models predict that net kinetochore movement is not linked to an energy expenditure by the depolymerizing microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "By assuming that weakly bound couplers diffuse to explore the surface of the microtubule by steps that are driven by thermal energy, this model predicts that net kinetochore movement is not linked to an energy expenditure by the depolymerizing microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction of biased diffusion models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "19d3a579-b900-49e8-80df-5f48ef24cd6a",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C51",
+      "claim": "Biased diffusion models predict that attachments do not stall microtubule disassembly and have negligible effects on the speed of microtubule shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this type of attachment does not stall microtubule disassembly and is expected to have negligible effects on the speed of microtubule shortening (Efremov et al., 2007; Powers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction of biased diffusion models with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "9dbfc0cb-d1fa-4f44-b7ee-92ff9c76cfd7",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C52",
+      "claim": "Models in the second category predict that a fraction of the force generated by a depolymerizing microtubule is harnessed to move a non-diffusive or poorly diffusive, tightly bound coupler to the next position on the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Models in the second category, on the other hand, predict that a fraction of the force generated by a depolymerizing microtubule is harnessed to move a non-diffusive or poorly diffusive, tightly bound coupler to the next position on the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the second category of models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "0eca01fb-9a45-4a37-930f-37f80bee9cb3",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C53",
+      "claim": "The second category of models predicts reduced microtubule disassembly rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of coupling is expected to result in reduced microtubule disassembly rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction of the second category of models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "79ae5367-82fc-4167-b91d-572b19876ddf",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C54",
+      "claim": "Oligomers of Dam1 (DASH) complexes bind tightly to the microtubule wall and may form microtubule-encircling rings.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, this phenomenon has been observed in presence of oligomers of Dam1 (DASH) complexes, which bind tightly to the microtubule wall and may form microtubule-encircling rings (Westermann et al., 2005; Miranda et al., 2005; Grishchuk et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "93f64dc5-08c6-4377-b0cd-481cc7f96f1f",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C55",
+      "claim": "The multivalent NDC80 modules bound the microtubule tightly with residence in the range of hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The multivalent NDC80 modules generated a coupler that bound the microtubule tightly with residence in the range of hours (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "af31dcfd-b117-4969-a7e0-841d9fad82e7",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C56",
+      "claim": "The multivalent NDC80 modules decreased microtubule depolymerization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The multivalent NDC80 modules generated a coupler that bound the microtubule tightly with residence in the range of hours (Figure 2), and that decreased microtubule depolymerization rates (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "2c005941-ac2b-4683-ab1b-c988d4037ae3",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C57",
+      "claim": "Monomeric NDC80 and monovalent T3S1[NDC80]1 did not follow or modulate microtubule shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and consistent with previous studies (Alushin et al., 2010; Schmidt et al., 2012), monomeric NDC80 and monovalent T3S1[NDC80]1 did not follow or modulate microtubule shortening (Figure 1B, 3BC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations and supported by data in Figures 1B and 3BC.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6c00e0b6-3d1e-4f47-a594-85fe71e9d1ad",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C58",
+      "claim": "The stall forces produced by multivalent NDC80 modules saturated at 5-6 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The stall forces produced by multivalent NDC80 modules saturated at 5\u20136 pN and increased the chance of microtubule rescue (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "20563310-4022-4f35-b536-6aed2e7001a4",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C59",
+      "claim": "The stall forces produced by multivalent NDC80 modules increased the chance of microtubule rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "The stall forces produced by multivalent NDC80 modules saturated at 5\u20136 pN and increased the chance of microtubule rescue (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "37031e28-24bb-4451-9092-683976b01dd0",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C60",
+      "claim": "A significant amount of microtubule-generated energy is spent to break the bonds between the TS-NDC80 assemblies and the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing these values to the theoretical maximum of 13\u201370 pN that a microtubule can generate (Molodtsov et al., 2005; Vichare et al., 2013), we speculate that a significant amount of microtubule-generated energy is spent to break the bonds between the TS-NDC80 assemblies and the microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation based on comparison with theoretical values from cited studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6cb19f99-798f-4b94-93aa-537cd5f1a045",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C61",
+      "claim": "Multivalent NDC80 assemblies exploit the force of depolymerizing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest a direct interaction between multivalent NDC80 assemblies and the microtubule tip, and make us suggest that these assemblies exploit the force of depolymerizing microtubules (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion from the observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f1049b2a-2d43-4126-850e-026f24e957ac",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C62",
+      "claim": "Kinetochore-oligomerized NDC80 is a friction element that slows down the speed of kinetochore movements in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is consistent with recent experiments in vivo showing that kinetochore-oligomerized NDC80 is a friction element that slows down the speed of kinetochore movements in mitosis (Long et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "1f338683-0333-46be-b2b1-ae2ee45d340a",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C63",
+      "claim": "Protofilaments at growing microtubule ends are less bent than at shortening ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Protofilaments at growing microtubule ends are less bent than at shortening ends, and force-induced straightening of protofilament flares has been suggested as a mechanism to convert the energy of microtubule depolymerization into cargo transport (McIntosh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "bbf54b81-b248-4f65-847b-b572086988de",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C64",
+      "claim": "Force-induced straightening of protofilament flares has been suggested as a mechanism to convert the energy of microtubule depolymerization into cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Protofilaments at growing microtubule ends are less bent than at shortening ends, and force-induced straightening of protofilament flares has been suggested as a mechanism to convert the energy of microtubule depolymerization into cargo transport (McIntosh et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f256c783-b2d7-4470-ae83-bbbd73386aa6",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C65",
+      "claim": "Externally applied opposing force slows down microtubule shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "Externally applied opposing force also slows down microtubule shortening (Franck et al., 2007), presumably through suppressed bending of depolymerizing protofilaments (Grishchuk et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "1e7978ef-c5b5-4e59-ad19-3d7e2861284f",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C66",
+      "claim": "The reduced depolymerization rate of microtubules carrying TS-NDC80 assemblies supports a direct binding of multivalent NDC80 to flaring protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the reduced depolymerization rate of microtubules carrying TS-NDC80 assemblies supports a direct binding of multivalent NDC80 to flaring protofilaments (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "008296a8-ffcb-4b41-8aae-2ffeac94a328",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C67",
+      "claim": "The correlation between the magnitude of the TS-NDC80 mediated stalling forces and the probability to reverse microtubule depolymerization into growth is a direct consequence of force-induced protofilament straightening.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the correlation between the magnitude of the TS-NDC80 mediated stalling forces and the probability to reverse microtubule depolymerization into growth is a direct consequence of force-induced protofilament straightening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "88ab45cc-ab10-4245-a007-45d1d1087093",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C68",
+      "claim": "Kinetochore-associated fibrils that modulate the shape of depolymerizing microtubule ends at attached kinetochores have been identified in vivo using electron tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore-associated fibrils that modulate the shape of depolymerizing microtubule ends at attached kinetochores have previously been identified in vivo using electron tomography (McIntosh et al., 2008), but their molecular identity has remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "be8a4cd5-6f15-4e6e-b952-61a8b590c51d",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C69",
+      "claim": "The fibrils that modulate the shape of depolymerizing microtubule ends at attached kinetochores might consist of oligomers of NDC80 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While our studies suggest that the fibrils might consist of oligomers of NDC80 complexes, further analyses will be required for a detailed molecular dissection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "c70ab589-326c-4795-830e-28e79d67b871",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C70",
+      "claim": "Stabilization of kinetochore-microtubule attachments in vivo is tension-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization of kinetochore-microtubule attachments in vivo is tension-dependent (Cane et al., 2013; Nicklas and Ward, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "79c46d76-d7f9-44e7-8b7a-b1f5e0724840",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C71",
+      "claim": "The multivalency of NDC80 at the outer kinetochore likely directly contributes to the tension-dependent stabilization of kinetochore-microtubule interactions in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The multivalency of NDC80 at the outer kinetochore thus likely directly contributes to the tension-dependent stabilization of kinetochore-microtubule in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "2011bc3c-6095-4f32-a508-0253eec674a1",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C72",
+      "claim": "Stabilization of kinetochore-microtubule interactions by tension has been recapitulated in vitro with purified kinetochore particles from Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization of kinetochore-microtubule interactions by tension has also been recapitulated in vitro with purified kinetochore particles from Saccharomyce cerevisiae (Akiyoshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "27b86eb5-dfc4-4c1a-bc6a-a722915b509e",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C73",
+      "claim": "Purified kinetochore particles from Saccharomyces cerevisiae lose their connection to the microtubule ends under an externally applied force of several pN.",
+      "claim_type": "EXPLICIT",
+      "source": "These purified kinetochore particles, whose homogeneity and stoichiometry of microtubule binders has not been precisely defined, lose their connection to the microtubule ends under an externally applied force of several pN (Akiyoshi et al., 2010; Miller et al., 2016; Sarangapani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "9d8cb0ce-31a4-4607-9bc7-c3def172a025",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C74",
+      "claim": "The force-coupling observed for purified kinetochore particles from Saccharomyces cerevisiae appears to be crucially dependent on the Dam1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The force-coupling observed for the purified kinetochore particles appears to be crucially dependent on the Dam1 complex (Akiyoshi et al., 2010), an additional microtubule binder that contributes to the efficient force coupling at the microtubule plus-end in Saccharomyce cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "c0d245f5-ac22-44f3-80a5-b1a74860a6ca",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C75",
+      "claim": "Dam1 and the functionally analogous human Ska complex confer plus-end tracking activity in vitro to monomeric NDC80.",
+      "claim_type": "EXPLICIT",
+      "source": "Dam1, as well as the functionally analogous human Ska complex, also confer plus-end tracking activity in vitro to monomeric NDC80 (Janczyk et al., 2017; Lampert et al., 2010; Schmidt et al., 2012; Tien et al., 2010; Welburn et al., 2009; Helgeson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "b85ff22a-d121-4f9a-a33b-1aaa7d64e340",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C76",
+      "claim": "The organization of NDC80 in multivalent modules is at least partially sufficient to recapitulate tension-dependent stabilization of cargo-microtubule coupling in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our work highlights that recapitulating stoichiometry and spatial arrangement of macromolecular assemblies is crucial for the bottom-up reconstitution and biophysical analysis of the kinetochore. The organization of NDC80 in multivalent modules is -at least partially- sufficient to recapitulate tension-dependent stabilization of cargo-microtubule coupling in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "c5ba39ec-580c-43dc-b197-728fba95e60b",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C77",
+      "claim": "Recapitulating stoichiometry and spatial arrangement of macromolecular assemblies is crucial for the bottom-up reconstitution and biophysical analysis of the kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our work highlights that recapitulating stoichiometry and spatial arrangement of macromolecular assemblies is crucial for the bottom-up reconstitution and biophysical analysis of the kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "ed743fc5-5490-4e82-b15e-333389a795bc",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C78",
+      "claim": "Phosphorylated CENP-T can recruit NDC80 complexes to p-Thr11 and p-Thr85 and a MIS12:NDC80 complex to p-Ser201.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that CENP-T that is phosphorylated by CDK1:Cyclin-B can recruit NDC80 complexes to p-Thr11 and p-Thr85 and a MIS12:NDC80 complex to p-Ser201 (Huis In 't Veld et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "32b3f405-1e43-4c72-aa0c-25b27da16073",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C79",
+      "claim": "A stoichiometric complex of MIS12 and phosphorylated CENP-T did not bind microtubules in a concentration range from 0.2 to 7 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "TM does not bind to microtubules and does not follow microtubule shortening in a concentration range from 0.2 to 7 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "987072e4-e268-4e7e-98f1-8958d355d54a",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C80",
+      "claim": "The residence time of CENP-T:NDC80 assemblies on taxol-stabilized microtubules ranged from multiple seconds to multiple minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The residence time of CENP-T:NDC80 assemblies (Figure 1\u2014figure supplement 1) under similar conditions ranged from multiple seconds to multiple minutes (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "d6845809-fa1a-4fa5-b91f-5cf58a186289",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C81",
+      "claim": "The residence time of CENP-T:NDC80 assemblies is comparable with divalent and trivalent NDC80 TS-modules.",
+      "claim_type": "EXPLICIT",
+      "source": "This is comparable with divalent and trivalent NDC80 TS-modules and supports the idea that NDC80 that is bound to TS modules and NDC80 that is bound to CENP-T interact with microtubules in a similar manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the comparison of residence times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f9eca4bf-2a7c-4f16-9ea3-1c0af6b9b3fa",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C82",
+      "claim": "Using the reciprocal of the residence time of T3S1[NDC80]1 as koff, stochastic simulations determined kon to be 2.6 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the reciprocal of the residence time of T3S1[NDC80]1 as koff, stochastic simulations of the residence times of mono-, di-, tri-, and tetravalent assemblies were used to determine kon (Figure 2E). A fit to the data resulted in a kon of 2.6 s\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text based on simulation results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f1e0301b-d5ac-406d-9dee-5b9c2bb31f28",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C83",
+      "claim": "Assuming a TS-NDC80 assembly as a sphere, one NDC80 inside the sphere has a local concentration of 1.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a TS-NDC80 assembly as a sphere, one NDC80 inside the sphere has a local concentration of 1.7 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation based on the geometry of the assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "6b09a2cd-fa1e-4a8e-a04f-c8ddf3c3f0dc",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C84",
+      "claim": "The predicted concentration-dependent association rate is 1.5 \u00b5M\u22121s\u22121, which falls within the published range of kon for free NDC80 binding to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "This predicts a concentration-dependent association rate of 1.5 \u00b5M\u22121s\u22121, a value that falls well within the published range of kon for free NDC80 binding to microtubules (Powers et al., 2009; Tien et al., 2010; Zaytsev et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f8116910-a529-4011-8112-5e32cf13aaf4",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C85",
+      "claim": "All NDC80 complexes in TS-NDC80 modules can interact with one microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this demonstrates that all NDC80 complexes in TS-NDC80 modules can interact with one microtubule and illustrates how NDC80 multivalency stabilizes microtubule binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the simulation and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "92218ce8-e3d0-495c-893d-3b179ce99822",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C86",
+      "claim": "NDC80 multivalency stabilizes microtubule binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this demonstrates that all NDC80 complexes in TS-NDC80 modules can interact with one microtubule and illustrates how NDC80 multivalency stabilizes microtubule binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "d7ac432b-6f1a-4419-a392-66389db10591",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C87",
+      "claim": "The ability of a single particle to slow down microtubule depolymerization suggests that tip-tracking NDC80 oligomers form a direct connection to the shortening microtubule ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of a single particle to slow down microtubule depolymerization suggests that tip-tracking NDC80 oligomers form a direct connection to the shortening microtubule ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "966f7cc9-e33b-43b4-94fb-ef81211030db",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C88",
+      "claim": "Beads with the lowest biotin densities coated with monovalent T3S1[NDC80]1 or divalent T2S2[NDC80]2 were unable to follow microtubule tips (0/50 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Beads with the lowest biotin densities coated with monovalent T3S1[NDC80]1 or divalent T2S2[NDC80]2 were unable to follow microtubule tips (0/50 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "2e3a846c-6284-44f9-8402-bb945763ec74",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C89",
+      "claim": "The lowest coating densities for T1S3[NDC80]3 resulted in 5/70 beads following dynamic microtubule tips.",
+      "claim_type": "EXPLICIT",
+      "source": "The same coating densities for T1S3[NDC80]3 resulted in 5/70 beads following dynamic microtubule tips (Figure 3I and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "964a7a9c-de19-49f9-9280-19e5e023a65e",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C90",
+      "claim": "Beads at the ends of stalled microtubules either detached from the microtubule and snapped back into the centre of the trap, or rescued microtubule depolymerization and gradually moved back to the centre of the trap along with the growing microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Beads at the ends of stalled microtubules either detached from the microtubule and snapped back into the centre of the trap, or rescued microtubule depolymerization and gradually moved back to the centre of the trap along with the growing microtubule (Figure 4C and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 4C and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "41d75c34-d00f-474b-bb42-e0a0eb5e8844",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C91",
+      "claim": "In 13 out of 104 traces the bead detached from the microtubule before stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In 13 out of 104 traces the bead detached from the microtubule before stalling; these traces were not analysed further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "a4c1e148-a053-4614-aa0e-c05b1fe36d03",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C92",
+      "claim": "A bead with 100-1000 TS modules on the surface has an estimated minimum of 4 T1S3[NDC80]3 modules in the proximity of a microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "A bead with 100\u20131000 TS modules on the surface has an estimated minimum of 4 T1S3[NDC80]3 modules in the proximity of a microtubule end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation based on the geometry of the bead and module distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "d143206b-d984-447b-bf7f-e97caf6c34a1",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C93",
+      "claim": "The organization with 4 T1S3[NDC80]3 modules in the proximity of a microtubule end might be optimal to couple the energy from microtubule depolymerization into cargo movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization might be optimal to couple the energy from microtubule depolymerization into cargo movement: increasing the local NDC80C concentration on the beads beyond that did not result in higher stalling forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental observation that stalling forces did not increase beyond a certain density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "7893e750-8c13-4954-b7d9-283cabba1ded",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "claim_id": "C94",
+      "claim": "Pooling of stall forces from beads coated with varying surface densities of T1S3[NDC80]3 and T2S2[NDC80]2 resulted in 51 detachment events (71%) and 21 rescue events (29%).",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling of stall forces from beads coated with varying surface densities of T1S3[NDC80]3 and T2S2[NDC80]2 resulted in 51 detachment events (71%) and 21 rescue events (29%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text based on quantification of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4a702d2a-9321-4996-8fe8-98215a746374",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Monomeric NDC80 complexes do not track depolymerizing microtubules or affect microtubule dynamics at picomolar concentrations used in single-molecule analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C23, C46, and C57 consistently demonstrate through experimental data (Figure 1B, Figure 3BC) and citations to prior work that single NDC80 complexes bind weakly and transiently to microtubules without tracking depolymerizing ends or modulating dynamics. The evidence is direct, reproducible, and consistent with previous studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "3d407612-b026-43bf-8122-fa1672f1ae30",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CENP-T:MIS12:NDC80 complexes with three or more NDC80 molecules effectively track depolymerizing microtubule tips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C26, and C27 are supported by experimental data showing tip-tracking behavior of CENP-T-based assemblies (Figure 1), with quantification indicating most complexes contain ~3 NDC80 per CENP-T:MIS12. The stoichiometry determination via fluorescence intensity is appropriate and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "0eb2ee15-94b7-4e4c-8f10-232863319d20",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CENP-T:MIS12 complexes without NDC80 do not bind microtubules, demonstrating that NDC80 is required for microtubule binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C79 provide negative control data showing that CENP-T:MIS12 alone does not bind microtubules over a wide concentration range (0.2-7 nM), confirming the necessity of NDC80 for microtubule interaction. This is a critical control that strengthens the interpretation of the positive results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "54413a09-1dee-49f4-ba2a-ef594d39513f",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The residence time of NDC80 modules on microtubules increases exponentially with the number of NDC80 complexes, demonstrating that multivalency stabilizes microtubule binding through avidity effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28, C55, C80-C82, C84-C86 are supported by experimental measurements (Figure 2E) and stochastic simulations that fit the data well. The exponential increase in residence time with NDC80 number is quantified, and the derived kon value (2.6 s\u207b\u00b9) is consistent with published values for monomeric NDC80. The simulation approach appropriately models the multivalent binding kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "3dc9763f-783f-4334-afbe-8aa46ae87f7c",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two or more NDC80 complexes in a module are sufficient for tracking depolymerizing microtubule tips with increasing efficiency as NDC80 number increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C29, C30, and C47 are supported by experimental data (Figure 3A-C) showing that divalent, trivalent, and tetravalent TS-NDC80 assemblies track shortening tips with increasing frequency. The threshold of two NDC80 complexes for tip-tracking is clearly demonstrated and represents a key finding about the minimal requirements for this activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "21ad9fef-77e0-466b-87b6-2da7506f190e",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multivalent NDC80 modules slow down microtubule depolymerization, suggesting direct binding to flaring protofilaments at the microtubule tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, C56, C66, and C87 are supported by experimental data (Figure 3D, Figure 3\u2014figure supplement 1E-F) showing reduced depolymerization rates in the presence of TS-NDC80 assemblies. The inference that this reflects direct binding to depolymerizing ends is reasonable given the single-particle effect and is consistent with the force-coupling data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "f52328cf-844c-485f-848b-ec94b85a30f4",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A single trivalent T1S3[NDC80]3 assembly is sufficient to couple microtubule shortening to cargo transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C88, and C89 are supported by bead-tracking experiments at low coating densities where geometric considerations indicate single modules can interact with microtubules. The observation that 5/70 beads with lowest T1S3 coating tracked tips, while 0/50 beads with monovalent or divalent modules did not, provides strong evidence for this threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "9c07e9cf-3b19-4fec-804f-da3581046c2b",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multivalent NDC80 modules stall microtubule depolymerization in a force-dependent manner, with forces saturating at 5-6 pN, and can rescue microtubule growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C34-C37, C58-C59, and C90-C91 are supported by optical trapping experiments (Figure 4) showing force-dependent stalling with quantified stall forces. The saturation at 5-6 pN with 100-1000 modules and the observation of rescue events are well-documented. The experimental design with appropriate controls and quantification supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "e1778949-a606-4b21-8821-c5d4d70d15dd",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is a strong correlation between stalling force magnitude and the probability of microtubule rescue, suggesting force-induced protofilament straightening as the mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C67, and C94 are supported by pooled data from optical trapping experiments (Figure 4E) showing that higher stalling forces correlate with increased rescue probability. The mechanistic interpretation involving protofilament straightening is reasonable given the biophysical context, though it remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "cd5e3732-de4d-4ca3-83d6-98ee6c297214",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Monovalent T3S1[NDC80]1 modules, even at high density, do not generate stalling forces above 3 pN and never produce rescue events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 are supported by experimental data (Figure 4D) showing that dense coating with monovalent modules produces lower forces and no rescues. This provides an important control demonstrating that multivalency, not just high local NDC80 concentration, is required for effective force coupling and rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "5febed58-5884-4e69-b371-2eb3dc13f92a",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multivalent NDC80 modules promote efficient coupling of microtubule-generated force and exploit the energy of depolymerizing microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, and C61 represent the main conclusions synthesized from the force-coupling and rescue data. These are well-supported by the collective experimental evidence showing force generation, force-dependent rescue, and the distinction from biased diffusion models. The conclusion that NDC80 harnesses depolymerization energy is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "8829311b-33c9-4499-9932-1bb4f7a67fed",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Force-induced stiffening of the NDC80-microtubule linkage is enhanced during interaction with depolymerizing microtubules compared to straight protofilaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by analysis of thermal fluctuations during stalling (Figure 5A-B). The two-fold higher stiffening during depolymerization compared to lateral or end-on attachment to stable microtubules suggests enhanced interaction with flared protofilaments. The experimental design with appropriate controls strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "e0716367-d044-4407-8fd6-b00c2c91dab0",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The experimental observations support a force-harnessing mechanism rather than biased diffusion for NDC80 tip-tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C49-C53 contrast the two mechanistic models and argue that the data (reduced depolymerization rates, force generation, tight binding) are inconsistent with biased diffusion predictions but consistent with force-harnessing models. The logic is sound and the experimental evidence clearly distinguishes between these mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "4ac294a9-2de4-4043-958a-c7d63f766d32",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A significant amount of microtubule-generated energy is spent breaking bonds between TS-NDC80 assemblies and the microtubule.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is explicitly stated as speculation based on comparison of measured forces (5-6 pN) to theoretical maximum forces (13-70 pN). While the reasoning is plausible, this remains speculative without direct measurements of energy dissipation or bond-breaking dynamics. The claim appropriately acknowledges its speculative nature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "27699839-4266-4c26-b742-19572bcd424b",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Kinetochore-associated fibrils observed in vivo might consist of oligomers of NDC80 complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is stated as a suggestion requiring further analysis. While the in vitro reconstitution data are consistent with this possibility, direct identification of the molecular composition of the in vivo fibrils is lacking. The authors appropriately acknowledge this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "5a96d024-ca18-4e28-93ee-d115c83f1572",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The multivalency of NDC80 at the outer kinetochore likely contributes to tension-dependent stabilization of kinetochore-microtubule interactions in vivo, and recapitulating stoichiometry is crucial for reconstitution studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C76, and C77 represent the broader implications of the work. The in vitro demonstration of tension-dependent stabilization through multivalency provides strong support for this mechanism operating in vivo. The conclusion about the importance of stoichiometry for reconstitution is well-justified by the systematic approach taken in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establish the context for kinetochore function, NDC80 recruitment, and existing models of microtubule coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C22, C48, C54, C62-C65, C68, C70, C72-C75, and C78 represent established knowledge from prior work, appropriately cited. These provide the necessary context for interpreting the current results and are accurately represented based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    },
+    {
+      "id": "c9b603dd-6e2e-4ba4-9175-580a39d95a8b",
+      "content_id": "8043b669-cbb0-4026-ab7b-6767b295f130",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Geometric calculations estimate local NDC80 concentrations within assemblies and the number of modules near microtubule ends on beads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C92, and C93 involve geometric calculations to estimate local concentrations and module numbers. These calculations are reasonable given the known dimensions of the components and provide useful context for interpreting the kinetic and force measurements. The inference about optimal organization (C93) is appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:10:12.800238Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7b0675d2-1857-4fd3-b30e-7b0ca4f024ef",
+      "result_id": "4a702d2a-9321-4996-8fe8-98215a746374"
+    },
+    {
+      "claim_id": "41bc8064-0ba3-472e-b030-b1bb5536f291",
+      "result_id": "4a702d2a-9321-4996-8fe8-98215a746374"
+    },
+    {
+      "claim_id": "37dfc4a4-40a1-4fd5-84b4-87b29f901cf0",
+      "result_id": "4a702d2a-9321-4996-8fe8-98215a746374"
+    },
+    {
+      "claim_id": "2c005941-ac2b-4683-ab1b-c988d4037ae3",
+      "result_id": "4a702d2a-9321-4996-8fe8-98215a746374"
+    },
+    {
+      "claim_id": "6f583673-b7d6-48cf-b878-02c6013f0e6e",
+      "result_id": "3d407612-b026-43bf-8122-fa1672f1ae30"
+    },
+    {
+      "claim_id": "69b82e13-72c0-4e69-9b15-1f807d48e455",
+      "result_id": "3d407612-b026-43bf-8122-fa1672f1ae30"
+    },
+    {
+      "claim_id": "e2d7edb3-0480-4ab1-967f-f1ef464936f3",
+      "result_id": "3d407612-b026-43bf-8122-fa1672f1ae30"
+    },
+    {
+      "claim_id": "ac507a6b-54d3-41e1-8263-45e87a701f8d",
+      "result_id": "3d407612-b026-43bf-8122-fa1672f1ae30"
+    },
+    {
+      "claim_id": "ab4af8ba-62a4-4424-b381-f49c0d32e2d3",
+      "result_id": "0eb2ee15-94b7-4e4c-8f10-232863319d20"
+    },
+    {
+      "claim_id": "32b3f405-1e43-4c72-aa0c-25b27da16073",
+      "result_id": "0eb2ee15-94b7-4e4c-8f10-232863319d20"
+    },
+    {
+      "claim_id": "9f7dce5f-e5b7-42ea-ab7c-50db18710b13",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "018662bd-16a9-4d18-b0f6-84715a26e7cc",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "93f64dc5-08c6-4377-b0cd-481cc7f96f1f",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "987072e4-e268-4e7e-98f1-8958d355d54a",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "d6845809-fa1a-4fa5-b91f-5cf58a186289",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "f9eca4bf-2a7c-4f16-9ea3-1c0af6b9b3fa",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "6b09a2cd-fa1e-4a8e-a04f-c8ddf3c3f0dc",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "f8116910-a529-4011-8112-5e32cf13aaf4",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "92218ce8-e3d0-495c-893d-3b179ce99822",
+      "result_id": "54413a09-1dee-49f4-ba2a-ef594d39513f"
+    },
+    {
+      "claim_id": "46107536-b864-40f8-bc9f-2f6611dbcf2d",
+      "result_id": "3dc9763f-783f-4334-afbe-8aa46ae87f7c"
+    },
+    {
+      "claim_id": "8464dca9-2f5f-4f46-a938-d058ef8e2fed",
+      "result_id": "3dc9763f-783f-4334-afbe-8aa46ae87f7c"
+    },
+    {
+      "claim_id": "6939c528-9e9b-4410-ae02-351ca72861ba",
+      "result_id": "3dc9763f-783f-4334-afbe-8aa46ae87f7c"
+    },
+    {
+      "claim_id": "9c9831ab-62cc-43e9-b432-cc2c0b61ea41",
+      "result_id": "3dc9763f-783f-4334-afbe-8aa46ae87f7c"
+    },
+    {
+      "claim_id": "a8b7341b-221e-4f2c-9a80-7a81d6a15a30",
+      "result_id": "21ad9fef-77e0-466b-87b6-2da7506f190e"
+    },
+    {
+      "claim_id": "5611a344-6df7-492f-ad9b-1f0734d0e982",
+      "result_id": "21ad9fef-77e0-466b-87b6-2da7506f190e"
+    },
+    {
+      "claim_id": "af31dcfd-b117-4969-a7e0-841d9fad82e7",
+      "result_id": "21ad9fef-77e0-466b-87b6-2da7506f190e"
+    },
+    {
+      "claim_id": "1e7978ef-c5b5-4e59-ad19-3d7e2861284f",
+      "result_id": "21ad9fef-77e0-466b-87b6-2da7506f190e"
+    },
+    {
+      "claim_id": "d7ac432b-6f1a-4419-a392-66389db10591",
+      "result_id": "21ad9fef-77e0-466b-87b6-2da7506f190e"
+    },
+    {
+      "claim_id": "d6e8b578-fbc8-4ea7-88c4-1822d03e6995",
+      "result_id": "f52328cf-844c-485f-848b-ec94b85a30f4"
+    },
+    {
+      "claim_id": "966f7cc9-e33b-43b4-94fb-ef81211030db",
+      "result_id": "f52328cf-844c-485f-848b-ec94b85a30f4"
+    },
+    {
+      "claim_id": "2e3a846c-6284-44f9-8402-bb945763ec74",
+      "result_id": "f52328cf-844c-485f-848b-ec94b85a30f4"
+    },
+    {
+      "claim_id": "42d680c8-6f01-4efc-96b8-a35fa348dff1",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "951c1d73-2533-4a6b-bd77-bb2da11eaea2",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "528ca2d6-a560-4093-bd3a-d696ee231fa9",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "2a6e8018-3983-4f27-84bb-b1baed654616",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "1084cf4b-b676-428d-ab2c-78ac72f01b82",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "011dc648-e788-4f73-b15b-929a0d9e1dab",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "6c00e0b6-3d1e-4f47-a594-85fe71e9d1ad",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "20563310-4022-4f35-b536-6aed2e7001a4",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "964a7a9c-de19-49f9-9280-19e5e023a65e",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "41d75c34-d00f-474b-bb42-e0a0eb5e8844",
+      "result_id": "9c07e9cf-3b19-4fec-804f-da3581046c2b"
+    },
+    {
+      "claim_id": "8d251778-cce6-4ad1-8e00-adf2112246a4",
+      "result_id": "e1778949-a606-4b21-8821-c5d4d70d15dd"
+    },
+    {
+      "claim_id": "008296a8-ffcb-4b41-8aae-2ffeac94a328",
+      "result_id": "e1778949-a606-4b21-8821-c5d4d70d15dd"
+    },
+    {
+      "claim_id": "7893e750-8c13-4954-b7d9-283cabba1ded",
+      "result_id": "e1778949-a606-4b21-8821-c5d4d70d15dd"
+    },
+    {
+      "claim_id": "5cebe1eb-a9b2-41d5-8ae7-83db59087958",
+      "result_id": "cd5e3732-de4d-4ca3-83d6-98ee6c297214"
+    },
+    {
+      "claim_id": "906df5a3-b0cd-427b-adc9-2b770a6770aa",
+      "result_id": "cd5e3732-de4d-4ca3-83d6-98ee6c297214"
+    },
+    {
+      "claim_id": "6b956252-d0d2-4458-b479-6f977723bf70",
+      "result_id": "5febed58-5884-4e69-b371-2eb3dc13f92a"
+    },
+    {
+      "claim_id": "8c4eea74-03e7-4118-8e14-fa04d118f080",
+      "result_id": "5febed58-5884-4e69-b371-2eb3dc13f92a"
+    },
+    {
+      "claim_id": "6cb19f99-798f-4b94-93aa-537cd5f1a045",
+      "result_id": "5febed58-5884-4e69-b371-2eb3dc13f92a"
+    },
+    {
+      "claim_id": "6f6fc848-2f11-4fc3-bda3-7d860d77a8ce",
+      "result_id": "8829311b-33c9-4499-9932-1bb4f7a67fed"
+    },
+    {
+      "claim_id": "afe76df6-a414-40aa-a1d5-9db792c056c5",
+      "result_id": "8829311b-33c9-4499-9932-1bb4f7a67fed"
+    },
+    {
+      "claim_id": "cb6d56ab-bdb5-4c7e-95a2-758f79735e91",
+      "result_id": "8829311b-33c9-4499-9932-1bb4f7a67fed"
+    },
+    {
+      "claim_id": "7222ea2c-c45c-402e-96fd-0fb4d04c3691",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "11335fef-6b91-4303-b746-c840dfff241f",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "c85fc1fd-6a17-43b5-8270-196d887be7f8",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "19d3a579-b900-49e8-80df-5f48ef24cd6a",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "9dbfc0cb-d1fa-4f44-b7ee-92ff9c76cfd7",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "0eca01fb-9a45-4a37-930f-37f80bee9cb3",
+      "result_id": "e0716367-d044-4407-8fd6-b00c2c91dab0"
+    },
+    {
+      "claim_id": "37031e28-24bb-4451-9092-683976b01dd0",
+      "result_id": "4ac294a9-2de4-4043-958a-c7d63f766d32"
+    },
+    {
+      "claim_id": "be8a4cd5-6f15-4e6e-b952-61a8b590c51d",
+      "result_id": "27699839-4266-4c26-b742-19572bcd424b"
+    },
+    {
+      "claim_id": "79c46d76-d7f9-44e7-8b7a-b1f5e0724840",
+      "result_id": "5a96d024-ca18-4e28-93ee-d115c83f1572"
+    },
+    {
+      "claim_id": "b85ff22a-d121-4f9a-a33b-1aaa7d64e340",
+      "result_id": "5a96d024-ca18-4e28-93ee-d115c83f1572"
+    },
+    {
+      "claim_id": "c5ba39ec-580c-43dc-b197-728fba95e60b",
+      "result_id": "5a96d024-ca18-4e28-93ee-d115c83f1572"
+    },
+    {
+      "claim_id": "ef36b051-633f-42c7-b030-849c7bd31d94",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "f4043382-7533-4e6d-a0de-9be1489a57b1",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "976de49e-eccf-4cab-9542-724e892b2b46",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "13721d79-e0f3-4492-8822-6acdbcd08db7",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "1eee5e6b-0146-4b88-b1e6-88dacb7be4f8",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "8fb4aa5f-696d-4692-be04-4605b2ee15e7",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "443e3e4e-c4fb-4382-a00c-382b9158c7dd",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "395e2568-8073-4362-9dab-4ccf2b98be8b",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "bf3e3dc2-315f-4f70-933d-89d8d00a21e9",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "575d1fb9-67c9-48c9-a3e5-b06b0e8632bd",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "4378e9e9-79bb-4c0a-8a18-eac514d12871",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "838e6e43-6229-4123-acb1-0fc7b0fde6eb",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "67d5cbfe-f7b1-4c7e-9b69-c0737b6abfc6",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "544428dd-1ae7-4e2c-ba84-cd772ecb923d",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "a2340ee4-ad3d-44bb-9586-32422a59eff5",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "82f4b2bd-2294-4671-98cd-8ac83b37fc7c",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "79ae5367-82fc-4167-b91d-572b19876ddf",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "f1049b2a-2d43-4126-850e-026f24e957ac",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "1f338683-0333-46be-b2b1-ae2ee45d340a",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "bbf54b81-b248-4f65-847b-b572086988de",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "f256c783-b2d7-4470-ae83-bbbd73386aa6",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "88ab45cc-ab10-4245-a007-45d1d1087093",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "c70ab589-326c-4795-830e-28e79d67b871",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "2011bc3c-6095-4f32-a508-0253eec674a1",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "27b86eb5-dfc4-4c1a-bc6a-a722915b509e",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "9d8cb0ce-31a4-4607-9bc7-c3def172a025",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "c0d245f5-ac22-44f3-80a5-b1a74860a6ca",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "ed743fc5-5490-4e82-b15e-333389a795bc",
+      "result_id": "4e1ed6fd-ee2b-4cf8-b21e-33a565f8a614"
+    },
+    {
+      "claim_id": "f1e0301b-d5ac-406d-9dee-5b9c2bb31f28",
+      "result_id": "c9b603dd-6e2e-4ba4-9175-580a39d95a8b"
+    },
+    {
+      "claim_id": "a4c1e148-a053-4614-aa0e-c05b1fe36d03",
+      "result_id": "c9b603dd-6e2e-4ba4-9175-580a39d95a8b"
+    },
+    {
+      "claim_id": "d143206b-d984-447b-bf7f-e97caf6c34a1",
+      "result_id": "c9b603dd-6e2e-4ba4-9175-580a39d95a8b"
+    }
+  ],
+  "comparisons": []
+}

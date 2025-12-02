@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Metazoan signaling pathways are limited in number (<20 classes), evolved prior to the Cambrian, and remain highly conserved across animal phyla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts in the field, supported by appropriate citations (Gerhart, 1999; Pires-daSilva and Sommer, 2003). These provide important context for the study's focus on conserved pathway architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Different signaling pathways exhibit distinct architectural features that give rise to specific signaling capabilities: all-or-none response in MAPK/ERK, oscillations in NF\u03baB, and asymmetrical signaling in Notch/Delta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are well-documented phenomena in the literature, supported by appropriate citations. These establish the precedent that pathway architecture determines signaling behavior, motivating the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The Wnt, ERK, and Tgf\u03b2 pathways have distinct core transmission architectures: futile cycle in Wnt, phosphorylation cascade with feedbacks in ERK, and nucleocytoplasmic shuttling in Tgf\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 accurately describe established features of these pathways, supported by multiple citations. These descriptions provide the foundation for understanding how different architectures can converge on similar behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Mathematical models of the Wnt, ERK, and Tgf\u03b2 pathways have successfully predicted systems-level behaviors across multiple biological contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 establish the validity and predictive power of the models used in this study, supported by appropriate citations. This justifies the authors' analytical approach to these established models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The Wnt, ERK, and Tgf\u03b2 models consist of 7, 26, and 10 coupled nonlinear ODEs with 22, 46, and 13 parameters, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide factual descriptions of model complexity, directly stated in the text and consistent with cited sources. This establishes the challenge of analytical treatment that the authors address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C41",
+      "C42",
+      "C43",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mathematical analysis reveals that the Wnt, ERK, and Tgf\u03b2 pathways behave as linear signal transmitters within physiologically relevant parameter regimes, with linearity arising through different mechanisms in each pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C24-C27, C41-C43, C59-C62 collectively demonstrate the central theoretical finding. The analytical derivations are mathematically sound, parameter values are based on measurements (C20-C22, C55-C57), and numerical simulations confirm the analytical solutions. The conditions for linearity are clearly specified for each pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In the Wnt pathway, measured parameters indicate \u03b1\u224866, \u03b3\u22481.4, and u\u22486.0 at maximal stimulation, satisfying the condition \u03b1/u\u226b1+\u03b3 that enables linear signal transmission through rapid destruction complex action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide specific parameter values from Appendix 1-table 1 that satisfy the analytical conditions for linearity. The rapid action of the destruction complex (C23) is supported by multiple citations and is consistent with the parameter regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In the ERK pathway, parameter groups remain constant during signaling, strong negative feedback inhibits a significant fraction of Raf, and ERK phosphorylation is ultrasensitive to pRaf levels, with negative feedback maintaining constant pRaf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 establish the key features enabling linearity in the ERK pathway. C36 is verified numerically (Figure 2-supplement 1), C37-C38 are supported by citations, C39 is demonstrated by simulations, and C40 is derived analytically. These collectively support the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "The predicted linearity in the ERK pathway extends beyond the analytical approximation (50% activation) to 93% of ERK activation and holds for both sustained and pulsatile responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C47 demonstrate the robustness of linearity in the ERK pathway through numerical verification (Figure 2-supplements 1-2). The extension to pulsatile responses using a larger model (Schoeberl et al., 2002) strengthens the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In the Tgf\u03b2 pathway, nuclear Smad4 concentration is constant (within 2%), measured parameters indicate \u03b2\u224846, \u03b1\u00b7u\u22481.5, \u03b3\u00b7u\u22480.7, and phosphorylated Smad2 comprises only 36% of the pool at maximal stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 establish the parameter regime for linearity in the Tgf\u03b2 pathway. C54 is verified numerically (Figure 2-supplement 3), C55-C57 are based on measured parameters (Appendix 1-table 3), and C58 is supported by citations. These satisfy the condition \u03b2\u226b\u03b1+\u03b3\u00b7u for linearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Linearity in the Tgf\u03b2 pathway holds for a larger model that includes receptor desensitization and produces pulsatile Smad responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 demonstrates robustness of the linearity prediction through numerical verification using an extended model (Viz\u00e1n et al., 2013) shown in Figure 2-supplement 3. This extends the finding beyond the simplified model analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In RKO cells, \u03b2-catenin increases linearly with phosphorylated LRP5/6 over a 4.4-fold input range until saturation, with continued \u03b2-catenin activation at high Wnt3A doses despite LRP saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide direct experimental validation of linearity in the Wnt pathway (Figure 3A, N=66 from 7 experiments). The observation of continued \u03b2-catenin activation beyond LRP saturation (C68) is explained by LRP-independent activation (C69), consistent with literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In H1299 cells, dpERK increases linearly with EGF dose over at least 12-fold activation, with linearity extending upstream to extracellular ligand and graded single-cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide direct experimental validation of linearity in the ERK pathway (Figure 3B, N=30 from 5 experiments). Single-cell analysis (C74, Figure 3-supplement 4) confirms graded rather than bimodal responses. The upstream linearity (C75) is more extensive than in the Wnt pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Inhibiting GSK3\u03b2 with CHIR99021 reduces the linear range in the Wnt pathway from 4.4-fold to 2.8-fold and decreases maximal phosphorylated LRP by 50%, consistent with GSK3\u03b2's dual function in regulating both \u03b2-catenin and LRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 provide experimental validation of the model's prediction that decreasing \u03b1 breaks linearity (Figure 3C, N=59 from 5 experiments). The unexpected finding of reduced LRP phosphorylation (C79) is explained by GSK3\u03b2's dual function (C80, supported by Zeng et al. 2005, 2008) and incorporated into an extended model (Figure 2-supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Weakening negative feedback by expressing Raf S289/296/301A causes nonlinear dpERK response to EGF, while WT Raf-1 overexpression maintains linearity, confirming that strong negative feedback is critical for linear transmission in the ERK pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 provide experimental validation of the model's prediction that weakening feedback breaks linearity (Figure 3D, N=15 from 3 experiments). The control with WT Raf-1 overexpression (C84, Figure 3-supplement 5) and additional mutant (C85, Figure 3-supplement 6) strengthen the conclusion. Model fitting with AICc analysis supports nonlinearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Linearity is a robust property of the Wnt, ERK, and Tgf\u03b2 pathways that occurs over a considerable range of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by parameter sensitivity analysis shown in Figure 2-supplements 5 and 6. This demonstrates that linearity is not restricted to a narrow parameter regime but is a general property of these pathway architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Linear signal transmission appears to be a convergent property across independently evolving signaling pathways, including NF-\u03baB and yeast pheromone sensing, with linearity arising through different mechanisms in each system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 extend the findings beyond the three main pathways studied. C90 is supported by numerical simulations (Figure 2-supplement 7), C91-C92 by citation to Yu et al. 2008, and C89 by data in Appendix 1-table 4. The convergence argument (C93) is a reasonable inference from these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Linearity enables superposition of multiple signals, allowing faithful independent transmission and processing, a property that is also a desired goal in synthetic biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe well-established engineering principles of linear systems, supported by appropriate citations (Nevozhay et al., 2009; Del Vecchio et al., 2016). Claim C97 is speculative but reasonable, illustrated in Figure 4A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Linearity naturally gives rise to dose-response alignment and facilitates fold-change detection, with both phenomena observed experimentally in the Wnt, ERK, and Tgf\u03b2 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 connect linearity to two important biological phenomena. The logical connections are sound (C98, C100-C101 illustrated in Figures 4B-C), and experimental observations (C99, C102) are supported by multiple citations. The inference that selecting for linearity confers these benefits (C103) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Natural pathways exhibit linearity over only one order of magnitude (their dynamic range), which may enable continual adaptation and maintained sensitivity when combined with receptor-level fold-change detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by the experimental data and contrasts with synthetic circuits (Nevozhay et al., 2009, 2013). Claims C105-C106 provide speculative but reasonable explanation for this limited range, with C106 citing Olsman and Goentoro, 2016.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Complexity in signaling pathways may afford tunability for different contexts and is necessary to produce linearity from inherently nonlinear biochemical processes, analogous to engineered systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 address why complex pathways produce simple linear behavior. C108 is supported by citations showing context-dependent ERK responses. C109-C110 describe engineering and biochemical principles. C111 summarizes the study's findings about how complexity enables linearity. C112 is speculative but well-reasoned based on the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The ERK pathway transmits signals through a phosphorylation cascade that exhibits ultrasensitivity and can show either all-or-none or graded responses depending on negative feedback incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide established background on ERK pathway architecture and behavior, supported by appropriate citations. These establish the context for understanding how the pathway can exhibit linearity despite ultrasensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The Tgf\u03b2 pathway transmits signals through continual nucleocytoplasmic shuttling of Smads, with the general architecture conserved across all five R-Smads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide established background on Tgf\u03b2 pathway architecture, supported by appropriate citations. These establish the context for understanding how nucleocytoplasmic shuttling enables linearity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The ligand-receptor module is relatively plastic across organisms, with flies having one EGF receptor while humans have four.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is a well-established fact supported by citation to Citri et al., 2003. This justifies the authors' focus on the conserved core pathway rather than the ligand-receptor module.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The ERK pathway shows pulsatile responses in some contexts, attributed to receptor desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by citation to Schoeberl et al., 2002. This context is important for understanding the generality of the linearity finding across different response dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "\u03b2-catenin can be activated independently of LRP receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by citation to Rotherham and El Haj, 2015. This explains the observation of continued \u03b2-catenin activation at high Wnt doses despite LRP saturation (C68).",
+    "result_type": "MINOR"
+  }
+]

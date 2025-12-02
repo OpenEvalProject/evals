@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Comparative transcriptome analysis of infant and adult lung endothelial cells identified 2,216 differentially expressed genes (722 induced, 1,494 repressed) with enrichment of immune regulation, metabolism, and cell cycle pathways. EdU incorporation assays confirmed near-complete arrest of proliferation in adult EC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 provide converging evidence from RNA-seq data, functional annotation, and proliferation assays. The technical quality metrics (C54-C56) support data reliability. The findings are internally consistent and appropriately validated by qPCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C34"
+    ],
+    "result": "TGF\u03b2 family signaling was identified as the most concordantly downregulated pathway during acquisition of vascular quiescence, with upstream analysis revealing TGF\u03b21 as the most significantly inhibited growth factor. Smad6 and Smad7 showed the largest intragenic clusters of hypomethylated DMRs and significant induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C34 converge on TGF\u03b2 pathway inhibition through multiple independent analyses (differential expression, pathway analysis, upstream regulator prediction, and epigenetic profiling). The consistency across analytical approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C57"
+    ],
+    "result": "DNA methylation analysis revealed a global increase in CpG methylation in adult EC, with 1.4M differentially methylated CpGs giving rise to 18,333 DMRs. At 10% threshold, 54% of DMRs showed gain and 46% showed loss of methylation, with validation by MassARRAY confirming high reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 present comprehensive methylation profiling with appropriate statistical testing and independent validation (C57). The technical quality and reproducibility are well-documented, supporting the quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "DMRs were depleted at transcription start sites but enriched 10-100 kb distant from TSS, with significant enrichment in introns (OR 2.65, p<0.0001). Hypomethylated DMRs overlapped with putative enhancer regions (H3K4me1, EPU, DNase hypersensitive sites) but not with TSS markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the genomic distribution of DMRs with statistical support and overlap analysis with published regulatory features. The findings are internally consistent and appropriately reference external datasets for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C30"
+    ],
+    "result": "Functional annotation of genes near hypomethylated DMRs revealed enrichment for semaphorin and TGF\u03b2 family signaling pathways. 94% of hypomethylated DMRs affecting these pathways were intragenic with 8 DMRs/gene average, and >36% showed DMR clustering (>5 DMRs/gene), particularly in Smad6, Smad7, and Sema6a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C30 demonstrate pathway-specific enrichment of clustered DMRs using the GREAT tool and enrichment analysis. The quantitative characterization of DMR distribution is well-supported by the data presented in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In contrast to hypomethylated DMRs, hypermethylated DMRs showed different distribution patterns: 56% were intragenic with only 2 DMRs/gene average, only 5.3% of genes harbored \u22655 hypermethylated DMRs, and genes near gain-of-methylation DMRs were annotated as NOTCH signaling genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide quantitative contrast to the hypomethylated DMR patterns, demonstrating distinct regulatory mechanisms for gain versus loss of methylation. The functional annotation to NOTCH signaling is appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C33"
+    ],
+    "result": "Analysis of DMR clustering revealed that 10% of affected genes contained >5 intragenic DMRs (corresponding to 44% of all intragenic DMRs), with 68% showing loss of methylation. An increasing overlap between transcriptome and epigenome was observed when scoring genes based on intragenic DMRs and especially clustered DMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C33 quantify the relationship between DMR clustering and gene expression changes. The correlation analysis (C33) provides important functional validation of the epigenetic changes, though the mechanistic link requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Gene set enrichment analysis revealed that genes with hypomethylated DMRs were enriched among genes induced in adult EC, while genes with hypermethylated DMRs were overrepresented among genes upregulated in infant EC, independent of DMR genomic location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate correlation between methylation direction and expression changes using GSEA. This provides important validation of the functional relevance of the methylation changes, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "R-SMAD phosphorylation was strongly decreased in adult lung, brain, and heart tissues, while TGF\u03b2 family ligands were consistently higher in adult organs. This indicates that vascular quiescence regulation is achieved through cell-intrinsic blocking of downstream signaling machinery via receptor downregulation and inhibitory SMAD upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide multi-tissue validation of TGF\u03b2 pathway inhibition through immunoblot and ELISA. The inference about cell-intrinsic regulation (C39) is well-supported by the paradoxical increase in ligands despite decreased signaling, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Forced expression of SMAD6 or SMAD7 in cultured EC reduced SMAD2/3 and SMAD1/5/8 phosphorylation upon ligand stimulation. Cells overexpressing both SMAD6 and SMAD7 showed reduced viability, proliferation, and migration, confirming their anti-angiogenic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide functional validation through gain-of-function experiments in HUVEC. The results are consistent across multiple assays (immunoblot, MTT, EdU incorporation, scratch assay), though loss-of-function experiments showed no effect, limiting mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "About 10% of chromatin modifying enzymes were differentially expressed with the majority being repressed in adult EC, including the de novo DNA methyltransferase Dnmt3a and four additional DNA methylation modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by RNA-seq analysis of chromatin modifying enzymes. The finding provides context for the observed methylation changes, though the functional significance of individual enzyme changes is not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C83"
+    ],
+    "result": "VEGF pathway molecules were not significantly differentially regulated transcriptionally or epigenetically during EC quiescence. Vegfa was higher in adult EC, Flt1/Vegfr1 was increased (below 1.75x threshold), Kdr/Vegfr2 was unchanged, resulting in increased VEGFR1/VEGFR2 ratio. This suggests VEGF signaling undergoes specific, situation-dependent dynamic regulation rather than dominant regulation during quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 and C83 describe complex VEGF pathway regulation with support from RNA-seq data and literature citations. The interpretation (C71) is reasonable given the data, though the functional significance of the VEGFR1/VEGFR2 ratio change is not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "This study established for the first time the transcriptomic and epigenetic landscape of vascular quiescence in primary lung EC, revealing comprehensive regulation at both transcriptional and DNA methylation levels converging on TGF\u03b2 family signaling inhibition. The acquisition of quiescence is accompanied by a dynamic balance of activating and inhibiting pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are summary conclusions well-supported by the comprehensive data presented. Claim C75 is speculative about future utility but reasonable given the scope of the dataset. The novelty claim (C72) appears justified based on the literature review presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background claims establishing the importance of endothelial quiescence for health, the reversibility of EC quiescence, its role in disease, and the current state of knowledge regarding molecular mechanisms and epigenetic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C43-C53 are background statements supported by appropriate citations to established literature. These provide context and justification for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SMAD6 and SMAD7 were originally identified as vascular SMADs induced by laminar shear stress. Previous studies showed Smad6 acts anti-angiogenic in sprouting assays and Smad7 inhibits peritoneal angiogenesis. Genetic deletion of either gene leads to cardiovascular defects and reduced viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 summarize prior literature on SMAD6/7 with appropriate citations. These provide important context for interpreting the current findings but represent prior work rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous studies in EC showed that proximal promoter DNA methylation regulates gene expression, flow-dependent methylation changes are enriched in GC-rich and exonic regions, and atherosclerosis progression is associated with gain of methylation. The role of intragenic methylation in alternative promoter usage or splicing has been suggested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 summarize prior literature on DNA methylation in EC with appropriate citations. These provide important context for the novelty of the current findings regarding intragenic DMR clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The study highlights the important role of epigenetic modifications in EC function regulation and identified distinct genomic regions with crucial regulatory potential that will serve as a foundation for further functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are concluding statements about the significance and future utility of the findings. C81 is well-supported by the data, while C82 is somewhat speculative but reasonable given the comprehensive dataset generated.",
+    "result_type": "MINOR"
+  }
+]

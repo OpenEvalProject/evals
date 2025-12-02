@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "030234b6-2ec6-486a-aa1e-552b38e945c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:44:39.600949Z",
+    "updated_at": "2025-12-02T01:44:39.600949Z"
+  },
+  "content": [
+    {
+      "id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "submission_id": "030234b6-2ec6-486a-aa1e-552b38e945c6",
+      "content_type": "manuscript",
+      "content_text": "# Non-invasive imaging of CSF-mediated brain clearance pathways via assessment of perivascular fluid movement with diffusion tensor MRI\n\n## Authors\n\n- Ian F Harrison<sup>1</sup> ([ORCID: 0000-0003-1250-4911](https://orcid.org/0000-0003-1250-4911))\n- Bernard Siow<sup>1</sup>\n- Aisha B Akilo<sup>1</sup>\n- Phoebe G Evans<sup>1</sup>\n- Ozama Ismail<sup>1</sup>\n- Yolanda Ohene<sup>1</sup>\n- Payam Nahavandi<sup>1</sup>\n- David L Thomas<sup>3</sup> ([ORCID: 0000-0003-1491-1641](https://orcid.org/0000-0003-1491-1641))\n- Mark F Lythgoe<sup>1</sup>\n- Jack A Wells<sup>1</sup> ([ORCID: 0000-0002-4171-3539](https://orcid.org/0000-0002-4171-3539)) \u2020\n\n### Affiliations\n\n1. UCL Centre for Advanced Biomedical Imaging, Division of Medicine University College London London United Kingdom\n2. The Francis Crick Institute London United Kingdom\n3. Neuroradiological Academic Unit, Department of Brain Repair and Rehabilitation UCL Institute of Neurology London United Kingdom\n4. Leonard Wolfson Experimental Neurology Centre UCL Institute of Neurology London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe glymphatics system describes a CSF-mediated clearance pathway for the removal of potentially harmful molecules, such as amyloid beta, from the brain. As such, its components may represent new therapeutic targets to alleviate aberrant protein accumulation that defines the most prevalent neurodegenerative conditions. Currently, however, the absence of any non-invasive measurement technique prohibits detailed understanding of glymphatic function in the human brain and in turn, it\u2019s role in pathology. Here, we present the first non-invasive technique for the assessment of glymphatic inflow by using an ultra-long echo time, low b-value, multi-direction diffusion weighted MRI sequence to assess perivascular fluid movement (which represents a critical component of the glymphatic pathway) in the rat brain. This novel, quantitative and non-invasive approach may represent a valuable biomarker of CSF-mediated brain clearance, working towards the clinical need for reliable and early diagnostic indicators of neurodegenerative conditions such as Alzheimer\u2019s disease.\n\n## Introduction\n\nThe recent identification of the glymphatic system and the dural lymphatic network provide exciting new perspectives on waste clearance mechanisms within the central nervous system (CNS) (Louveau et al., 2015; Iliff et al., 2012). According to the glymphatics hypothesis, cerebrospinal fluid (CSF) crosses from the subarachnoid space into the periarterial space where it swiftly flows towards the brain tissue. Fluid then passes into the parenchyma from the perivascular space, a transition mediated by aquaporin-4 (AQP4) channels that reside on the end feet of astrocytes. This periarterial inflow creates a convective flux of fluid across the parenchyma that exits via perivenous channels, carrying with it \u2018waste products\u2019 of brain metabolism. As such, the glymphatic pathway has been proposed to function as a \u2018cleaning system\u2019 of the brain. The exchange of CSF with interstitial fluid (ISF) is an established mechanism underlying the clearance of amyloid beta (A\u03b2), recognised as a leading molecular candidate to initiate Alzheimer\u2019s disease (AD) (Iliff et al., 2012; Weller et al., 2008; Bakker et al., 2016; Xu et al., 2015; Tarasoff-Conway et al., 2015; Hawkes et al., 2014).\n\nDespite evidence that aspects of the glymphatic pathway are preserved across species (Goulay et al., 2017; Ringstad et al., 2017; Dobson et al., 2017), key questions remain on the anatomy and function in the human brain and to what extent it contributes to pathology. Currently, however, these questions cannot be answered because there are no non-invasive techniques for assessment. The development of non-invasive methods to image CSF-mediated brain clearance pathways, such as the glymphatic system, would enable repeated and practical measurement to investigate this system in the human brain and the intact animal skull. This, in turn, may help fully characterise impairment of CSF-mediated clearance pathways with age (Kress et al., 2014), as well as the contribution to A\u03b2 accumulation in AD. Ultimately, such methods could address the pressing clinical need for reliable and early biomarkers of AD, by identifying patients at risk of A\u03b2 accumulation due to failing clearance mechanisms.\n\nThe perivascular space is a fluid filled compartment that surrounds selected blood vessels in the brain (Huffman et al., 2016). Perivascular channels form a central component of the glymphatic pathway that is said to drive rapid CSF-ISF exchange. Although the precise routes and fluid dynamics that underlie CSF-ISF exchange remain controversial (Holter et al., 2017; Hladky and Barrand, 2014; Brinker et al., 2014; Smith et al., 2017), several independent groups have identified perivascular channels as central to this pathway (Iliff et al., 2012; Bedussi et al., 2015; Lochhead et al., 2015; Rennels et al., 1985). As such, the perivascular space represents a promising target for non-invasive imaging biomarkers of CSF-ISF exchange. To date, perivascular function has been studied using only invasive methods: ex-vivo microscopy (Bedussi et al., 2015), two-photon imaging (Iliff et al., 2012) and contrast-enhanced MRI following intra-cranial/lumbar injection (Iliff et al., 2013a; Yang et al., 2013). In this work we introduce the first non-invasive method for the assessment of perivascular function using contrast-free MRI, and demonstrate use of the method in the rodent brain.\n\nDespite recognition that the perivascular space facilitates CSF-ISF exchange, the nature of fluid movement within this channel is yet to be unambiguously determined. Broadly, the glymphatics hypothesis describes perivascular fluid movement as possessing coherent, bulk flow (Iliff et al., 2012). However, this has been questioned by other studies which propose that the fast distribution of CSF-tracers along the perivascular space can be explained by rapid dispersion of fluid/tracers via mechanical pulsations, with little bulk flow (Hladky and Barrand, 2014; Asgari et al., 2016). Given the current uncertainty, when considering non-invasive MRI techniques for assessment, diffusion MRI represents a prime candidate for initial application owing to its established sensitivity to water dispersion, together with evidence of sensitivity to bulk flow (non-plug e.g. laminar flow) from prior studies of the cerebral vasculature (Wells et al., 2017). That is, irrespective of whether perivascular fluid movement is dominated by bulk flow or rapid dispersion with little bulk flow, diffusion MRI sequences, if appropriately tuned, should yield sensitive and quantitative correlates of fluid movement, albeit non-specific to flow coherence.\n\nIn this study, we apply ultra-long echo time (TE), diffusion weighted MRI sequences to assess fluid movement within perivascular channels surrounding the middle cerebral artery (MCA) of the healthy rat brain. In addition, given evidence that cerebral arterial pulsation is a key mechanism that drives PVS fluid movement (Rennels et al., 1985; Iliff et al., 2013b), we investigate the dependence of the technique on vascular pulsatility through cardiac gating and modulation by the adrenoceptor agonist, dobutamine. This technique represents the first non-invasive biomarker of perivascular action, working towards new translational techniques to assess CSF mediated brain clearance pathways and their role in disease.\n\n## Results\n\n### Non-Invasive imaging of perivascular channels\n\nThe ultra-long TE MRI sequence presented here is designed to attenuate the measured signal from the blood and parenchyma that immediately surround the perivascular space in order to minimise partial volume effects, which represent a potential confounder for assessment by MRI given the small size of this compartment. Figure 1A shows a b0 image of the axial slice through the ventral aspect of the rat brain. The subarachnoid CSF that bathes the Circle of Willis (CoW) can be clearly observed, with marked contrast between the blood vessels within the CoW and surrounding CSF. Bright tracts appear either side of both MCA branches (Figure 1A) which, due to the ultra-long echo time, must derive from fluid filled compartments of similar composition to the CSF in the subarachnoid space. This observation, together with the characteristic morphology that runs alongside and parallel to the MCA, is consistent with the description of the perivascular space as a fluid filled compartment that surrounds major blood vessels feeding the brain (Huffman et al., 2016). Indeed, the location of this compartment is highly consistent with direct assessment from a previous study (Figure 1B, adapted from Lochhead et al., [Lochhead et al., 2015]).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Example b0 MRI image. The position and orientation of the imaging slice is adjusted to optimally visualize the perivascular space (PVS) around both branches of the MCA. Bright signal can be observed from fluid filled compartments: CSF in the subarachnoid space around the Circle of Willis (CoW); fluid in the perivascular space that surrounds the MCA; the ventral aspect of the third ventricle. (B) Photograph of the ventral aspect of the rat brain surface illustrating a putative PVS surrounding the middle cerebral artery (MCA) (reproduced with permission from Lochhead et al., 2015).\n\nThe precise definition of the perivascular (and \u2018paravascular\u2019) space is somewhat unclear, as highlighted in a number of recent articles (Hladky and Barrand, 2014; Brinker et al., 2014; Bedussi et al., 2017). Whether the fluid filled tracts around the MCA that we observe (Figure 1A) occupy a physically and functionally distinct \u2018paravascular\u2019 space as described by Iliff et al., (Iliff et al., 2012) forms a more continuous pathway with subarachnoid CSF as described by Bedussi et al (Bedussi et al., 2017)., or are well described by a perivascular space as proposed by Lochhead et al., (Lochhead et al., 2015) remains unknown. Irrespective of the precise anatomical bordering of the fluid filled tracts identified in this work, and despite these semantic differences, all the aforementioned studies have highlighted the movement of fluid that surrounds subarachnoid arteries as a key site of CSF-tracer inflow towards the parenchyma. Hence non-invasive assessment of fluid movement within this compartment represents a meaningful measure of CSF-ISF exchange pathway function.\n\n### Assessment of fluid movement using Multi-Direction diffusion weighted imaging\n\nApplication of a motion probing gradient (MPG) along the principle direction of the perivascular tracts located around the MCA was observed to markedly attenuate the signal from these tracts relative to when the MPG was applied perpendicular to their principle orientation (Figure 2A). Accordingly, across the 10 subjects, within the right perivascular space, the pseudo-diffusion coefficient (D*) parallel to PVS orientation was significantly greater than D* in either perpendicular direction (p<0.01 respectively). In a similar fashion, D* (parallel to principle direction of left PVS) was significantly greater than D* in either perpendicular direction [p<0.01]. (Figure 2B). These data demonstrate that the MRI sequence employed here can detect the directional dependence of fluid movement within the perivascular space (the principal directionality of which is parallel to their orientation), which verifies that they are sensitised to the movement of fluid within this compartment. Within the CSF in the subarachnoid space, it was observed that D* when the MPGs were applied in the in-plane orientation (i.e. parallel to the left or right branch of the MCA) were both significantly greater than D* in the through plane orientation [p<0.01]. This is consistent with the known direction of CSF movement in the rostral-caudal direction within this region from prior invasive studies (Iliff et al., 2013a; Lee et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Example bO and \u2018diffusion weighted\u2019 images acquired with the motion probing gradients applied in 3 orthogonal directions respectively. (B) The mean D* calculated within ROIs [see insert] in the right perivascular space (red), left perivascular space (blue), subarachnoid space (green) with the motion probing gradients applied in three orthogonal directions (\u00b1SEM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A), left perivascular space (B), subarachnoid space (C) with the motion probing gradients applied in three orthogonal directions (x-axis).\u00a0Each line represents an individual animal (n\u00a0=\u00a010).\n\n### Diffusion tensor imaging of CSF/Perivascular Fluid Movement\n\nHaving verified the sensitivity of the MRI sequence to fluid movement within the perivascular and subarachnoid space, MPGs were then applied in six different directions to generate a pseudo diffusion tensor image that reflects the directionality and magnitude of subarachnoid CSF and perivascular fluid movement.\n\nFigure 3 illustrates that, for the subarachnoid space ROI, the mean D* tensor ellipsoid (n\u00a0=\u00a06) was well aligned with the known principle direction of CSF movement (caudal-rostral, observed in several invasive studies of the rodent brain [Iliff et al., 2013a; Lee et al., 2018]). Likewise, Figure 3 illustrates that the principle direction of the mean D* tensor of the left and right perivascular space, respectively, was aligned with the orientation of the respective branch of the MCA. The D* tensors for each of the individual animals are shown in Figure 2\u2014figure supplement 1, which show reasonable consistency with the directionality of the mean tensors shown in Figure 3. The magnitude of the D* tensors within this region were markedly reduced post-mortem, which demonstrates that a large component of the D* measurements reflects fluid movement driven by physiological perturbations such as cardiac and respiratory pulsation and secretion from the choroid plexus (Figure 3\u2014figure supplement 1). This may also partially reflect the reported collapse of the PVS post mortem [1] (indeed visual inspection of the b0 images indicates a reduction in signal intensity within this region [data not shown]). Fractional anisotropy (SEM) within the right and left perivascular space and the subarachnoid space was 0.44 (\u00b10.04), 0.36 (\u00b10.04) and 0.6 (\u00b10.02) respectively with mean diffusivity (SEM) calculated to be 0.0042 (\u00b10.0003), 0.0052 (\u00b10.0003), 0.0065 (\u00b10.0007) mm2/s. Figure 3E shows a map of pseudo diffusion tensors for a single subject. The principal direction of the D* tensors in the perivascular tracts that surround the left and right MCA respectively can be seen to run parallel to the orientation of the MCA. Likewise, the principal orientation of the individual voxel D* tensors can be seen to run rostral-caudal in the mid-section of the CoW.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0bO image with ROIs in the right and left PVS and subarachnoid space highlighted in blue, red and green respectively. The mean pseudo-diffusion tensor ellipsoid within the subarachnoid space ROI (B) and right (C) and left (D) PVS respectively across the six rats. The pseudo-diffusion tensors for each individual animal are shown in Figure 3\u2014figure supplement 1. (E) Example map of pseudo-diffusion tensor ellipsoids with corresponding b0 image (insert).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The corresponding D* tensor for the dead brain is also shown.\n\n### Cerebral arterial pulsation drives Non-invasive measures of perivascular fluid movement\n\nPrevious studies have identified cerebral vascular pulsation to play a prominent role in perivascular fluid propulsion. To investigate this mechanism, MRI data were captured during both cerebral arterial pulsation and diastole using ECG gating with variable delays to image capture (36 ms and 116 ms from the r-wave to the centre of \u2018diffusion\u2019 weighting respectively). The results are shown in Figure 4, where a striking and highly directional dependence of D* on cerebral vascular pulsation was observed in the PVS [Figure 4]. D* in the PVS was\u00a0~300% greater during arterial pulsation relative to diastole when motion probing gradients were applied parallel to the principle orientation (p<0.01). We recorded a more moderate dependence (p=0.1) on the r-wave delay within the CSF ROI at the mid-section of the CoW (although visual inspection of the D* maps suggests that other regions within the subarachnoid CSF appeared to show greater changes with the r-wave delay). Minimal dependence of the D* measures on the r-wave delay was observed in the third ventricle (p=0.2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0b0 image (first column) and D* maps during arterial pulsation (second and third column) and during diastole (fourth and fifth column) from a single animal [the white arrows represent the direction of the applied MPGs]. (B) The mean D* during arterial pulsation and diastole respectively within the three ROIs for MPGs applied parallel (black line) and perpendicular to (grey dashed line) PVS orientation. (C) The mean D* at baseline and after dobutamine (black line) or vehicle (grey dashed line) within the same ROIs (non-gated).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34028/elife-34028-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0The individual animal D* during arterial pulsation and diastole respectively within the three ROIs for MPGs applied parallel (black line) and perpendicular to (grey dashed line) PVS orientation. (B)\u00a0The mean D* at baseline and after dobutamine (black line) or vehicle (grey dashed line) within the same ROIs (non-gated). Each line represents an individual animal.\n\nAdministration of the adrenoceptor agonist, dobutamine, increased heart rate from (354\u00a0\u00b1\u00a08 to 519\u00a0\u00b1\u00a017 bpm). A 65% increase in D* along PV channels was recorded (p<0.01) following dobutamine with comparatively little change after vehicle (Figure 4C). No significant changes were observed in the subarachnoid space ROI at the mid-section of the CoW following dobutamine (p=0.39, although visual inspection of the data suggests other regions within the subarachnoid CSF did show marked increases in D*). Dobutamine had minimal effect on D* within the third ventricle (p=0.30).\n\nTogether these data are concordant with previous invasive measures demonstrating that perivascular fluid movement is driven by cerebral vascular pulsation and that we are now able to capture this mechanistic dependence non-invasively using the techniques introduced here.\n\n## Discussion\n\nIn this study, we introduce a novel MRI method to measure a distinct feature of brain physiology that, to date, has only be assessed using invasive methods \u2013 the movement of fluid in the perivascular space. The perivascular space serves as a preferential pathway for CSF-ISF exchange, an important mechanism supporting the clearance of potentially harmful molecules, such as A\u03b2, from the CNS. This non-invasive and translational method may have utility in AD research given evidence that A\u03b2 accumulation (in late stage, sporadic AD) occurs not because of increased A\u03b2 production but because of decreased rates of A\u03b2 clearance (Mawuenyega et al., 2010). Thus, this technique may expedite greater understanding of how A\u03b2 clearance mechanisms become impaired with ageing (Kress et al., 2014) and in turn reveal a new window in early AD pathogenesis in which to target future diagnostic and treatment strategies. The technique may have broader utility to a range of neurological conditions given reported associations between glymphatic function in, for example, stroke (Gaberel et al., 2014) and traumatic brain injury (Iliff et al., 2014).\n\nThe precise mechanisms that underlie CSF-ISF exchange are yet to be fully defined and this remains an active area of research. Accumulative evidence, however, has established cerebral vascular pulsation as an important mechanism underlying perivascular fluid movement (Rennels et al., 1985; Iliff et al., 2013b). Here, we have captured the action of cerebral arterial pulsation to drive perivascular fluid movement using non-invasive techniques (Figure 4). The measured D* showed a remarkable dependence on vascular pulsation with a\u00a0~300% increase recorded during arterial pulsation relative to diastole (Figure 4). Moreover, D* (non-gated) was found to markedly increase following adrenoceptor agonist, dobutamine. The non-invasive nature of this technique may enable future studies to investigate the mechanistic link between vascular pulsatility and PVS fluid movement in the healthy human brain, and its modulation by pathology as well as novel therapy.\n\nIn this study, D* estimates were captured using a b0 image and then with motion probing gradients applied at a single b-value, in different directions. Future studies may wish to examine the behaviour of the PVS signal over a greater range of b-values (and different values of \u03b4 and \u0394) to examine whether, in combination with more advanced signal modelling, this may reveal more detailed insight into PVS fluid movement. Of note, a previous study aimed to correlate MRI measures of water diffusivity from the PVS to AD severity (Taoka et al., 2017). However, this earlier work presents limited evidence as to the contribution of the perivascular space to the measured MRI signal and hence that the parameters extracted from their measurements provide meaningful correlates of PVS fluid movement.\n\nThe expression of AQP4 appears to be mechanistically important in CSF-ISF exchange (Smith et al., 2017; Mestre, 2017). However, although genetic deletion of AQP4 was found to markedly decrease rates of small molecular weight tracer inflow from the CSF into the brain, it did not appear to affect the movement of tracers along para-arterial channels (Iliff et al., 2012). Thus, by extension, as the technique here is targeted to PVS fluid movement, it may not be sensitive to AQP4 related modulation of CSF-ISF exchange through genetic deletion of AQP4 in the rodent brain. Hence, future studies are required to fully elucidate the relationship between para/perivascular fluid movement, CSF-ISF exchange and AQP4 expression (Brinker et al., 2014). Furthermore, rates of glymphatic inflow have been linked to changes in extracellular space volume (Xie et al., 2013) and central noradrenaline activity (Benveniste et al., 2017) and how these factors may modulate measures of D* captured using the techniques presented here would be an interesting avenue of further study. Moreover, how the technique introduced here may be influenced by pathology is an important consideration. For example, the composition of the CSF and PV fluid may change in disease, in turn altering the relaxation times of this compartment (for example the presence of iron could reduce PVS T2). Whilst this may not confound measures of D*, as relaxation time changes will be accounted for by the acquisition of a b0 image at identical TR and TE, this may change contrast between the PVS and surrounding tissue and potentially lessen the SNR of the measurements. MR relaxometry studies targeted to the normal and enlarged PVS may be an interesting avenue of future investigation leading to novel biomarkers of PVS composition. Efforts are ongoing to investigate the sensitivity of the method to detect dysfunction of perivascular fluid movement associated with ageing and models of pathological conditions, with the knowledge that clinical translation of this non-invasive approach may be practically achievable in the near future.\n\n## Materials and methods\n\nAll experiments were performed in accordance with the UK Home Office\u2019s Animals (Scientific Procedures) Act (1986). In total, 27 male Sprague Dawley rats were used in these experiments (n\u00a0=\u00a010 for multi-direction diffusion weighted imaging, n\u00a0=\u00a06 for diffusion tensor imaging, n\u00a0=\u00a05 for ECG gating, n\u00a0=\u00a06 for dobutamine). Anaesthesia was induced using 4% isoflurane in 0.4 L/min medical air and 0.1 L/min O2 and was maintained at 2% isoflurane whilst the animal was placed on a MRI compatible plastic probe. The head was secured using ear bars, a bite bar and a nose cone to minimise motion during the data acquisition. Once the probe was fixed in the scanner, isoflurane concentration was reduced to 1.75% in 0.4 L/min medical air and 0.1 L/min O2. Core body temperature was measured throughout using a rectal thermometer (Small Animal Instruments Inc.) and maintained at 37 \u00b1 0.5\u00b0C using heated water tubing during the preparation and heated water tubing and warm air flow during the data acquisition period. Breathing rate was monitored throughout the acquisitions using a respiration pillow sensor (Small Animal Instruments Inc.). A scavenger pump was fixed inside the magnet bore to prevent build-up of isoflurane. For the multiple direction diffusion weighting, power analysis based on pilot data was used to estimate the number of animal required to detect a significant difference in D* when motion probing gradients are applied parallel to the perivascular tracts relative to D* when motion probing gradients are applied perpendicular to the perivascular tracts (assuming a normal distribution).\n\n### Magnetic resonance imaging\n\nAll imaging was performed using a 9.4T VNMRS horizontal bore scanner (Agilent Inc., Palo Alto, CA). A 72 mm inner diameter volume coil was used for RF transmission and signal was received using a 4 channel array head coil (Rapid Biomedical). The imaging gradient hardware was calibrated using a custom designed structural phantom, as previously described (O'Callaghan et al., 2014).\n\nA key aspect of the MRI sequence was the use of a long TE to attenuate the signal from the surrounding arterial blood and tissue (T2\u00a0~30 and 38 ms respectively at 9.4T [Wells et al., 2013]) relative to the MRI signal from CSF in the subarachnoid space and fluid in perivascular channels (T2\u00a0~111 ms [Kuo et al., 2005]). In order to achieve this, a fast spin echo (FSE) sequence was employed (180\u00b0 refocusing pulses) with an echo train length of 16 giving an effective echo time of 142 ms (thus the ultra-long TE is compatible with a multiple echo train FSE readout for SNR efficiency). Therefore, at this echo time, the signal from the grey matter tissue, blood and CSF will have decayed to\u00a0~2, 1 and 28% of the theoretical signal at TE\u00a0=\u00a00 respectively. In addition, the use of an ultra-long TE permits a long echo train per excitation (16 echoes) to increase the SNR efficiency of the acquisition (i.e. SNR per unit time). Finally, the use of a relatively long TR (5000 ms), further weights the measured MRI signal from CSF/interstitial fluid relative to surrounding blood/tissue. It should be noted that, as part of the FSE readout, phase encoding lines will be acquired at a range of different TEs and thus the eventual contrast in the image may deviate from that predicted by assuming a constant TEeff across all phase-encoding steps. Simulations (data not shown) indicate that this effect was minimal in the current study but future applications should consider this aspect of MRI image capture.\n\nIn this study, four separate sets of experiments were performed, that can be divided into \u2018multiple direction diffusion weighted imaging\u2019 (n\u00a0=\u00a010), \u2018diffusion tensor imaging\u2019 (n\u00a0=\u00a06), \u2018ECG-gating (n\u00a0=\u00a05)\u2019 and\u2019 Dobutamine (n\u00a0=\u00a06)\u2019.\n\n### Multiple direction diffusion weighted imaging (n\u00a0=\u00a010)\n\nAn axial slice was positioned at the ventral aspect of the brain at the level of the Circle of Willis (CoW - see Figure 1). A series of scout images were acquired with the slice orientation and position manually altered in an iterative manner in order that the perivascular space around the MCA could be optimally visualised.\n\nThe angular orientation of the image was then changed so that the animals right perivascular tracts (surrounding the MCA in the axial slice) was aligned with the orientation of the frequency encoding (FE) imaging gradients. In doing so, the animals left perivascular tracts then become approximately aligned with the phase encoding (PE) imaging gradients (see Figure 2). This ensured that, when applying diffusion (or motion probing) gradients along the FE direction, the direction of diffusion weighting was parallel to the right perivascular tract and perpendicular to the left tract; and vice versa when applying diffusion gradients along the PE direction. As a result, the sensitivity for measuring differences in fluid movement along and across both tracts was maximised.\n\nA fast-spin echo imaging sequence was acquired with the following sequence parameters: TR\u00a0=\u00a05 s, Echo Train Length\u00a0=\u00a016, effective TE\u00a0=\u00a0142 ms, echo spacing\u00a0=\u00a010 ms, FOV\u00a0=\u00a025\u00a0\u00d7\u00a025 mm, matrix size\u00a0=\u00a0128\u00a0\u00d7\u00a0128, slice thickness\u00a0=\u00a00.8 mm or 1 mm, number of averages\u00a0=\u00a012. A b\u00a0=\u00a00 image was acquired with minimal diffusion weighting (b0) and then with separate acquisitions with the motion probing gradients applied in three principle directions (X, Y, Z) with a b-value of 107 s/mm2 (\u03b4\u00a0=\u00a05 ms, \u0394\u00a0=\u00a026 ms, G\u00a0=\u00a04.2 G/cm).\n\nRegions of interest were manually drawn around the perivascular tracts surrounding the left and right MCA, as well as within the CSF of the subarachnoid space in the mid-section of the CoW from the b0 images. The subarachnoid space ROI was chosen because previous invasive measures have demonstrated rapid caudal-rostral CSF-tracer movement in this region (Gaberel et al., 2014; Mesquita et al., 2015). As such, data from this ROI can provide a degree of validation for the technique if the directionality of fluid movement is found to be consistent with the established caudal-rostral fluid movement. The pseudo-diffusion coefficient (D*) was then calculated for each direction of the applied motion probing gradients using the following equation:\n\n$$\nS=S0exp(\u2212bD^{\u2217})\n$$\n\nwhere S is the measured signal at b\u00a0=\u00a0107 s/mm2, S0 is the signal taken from the b0 image. In this work we choose to report the exponential decay coefficient as the pseudo diffusion coefficient (D*) since this is analogous to the Intra-voxel Incoherent Motion (IVIM) literature where in-vivo D* estimates reflect an unknown contribution from relatively coherent flow in large and/or directionally ordered vessels and isotropic fluid motion derived from randomly orientated vessels within a MRI voxel.\n\nA paired t-test was applied to investigate (i) if D* was greater when the motion probing gradient was applied parallel to the principle direction of the perivascular tracts, relative to application in each of the orthogonal planes for the left and right perivascular channels respectively; (ii) if D* in the subarachnoid space ROI was significantly greater in the FE and PE directions than in the through plane slice selection direction.\n\n### Diffusion tensor imaging (n\u00a0=\u00a06)\n\nImages were acquired with no \u2018diffusion weighting\u2019 (b0) and then using motion probing gradients applied in 6 different directions (\u03b4\u00a0=\u00a07.5 ms, \u0394\u00a0=\u00a052 ms, G\u00a0=\u00a01.5 G/cm, b value\u00a0~100 s/mm2) respectively with the following sequence parameters: TR\u00a0=\u00a05 s, Echo Train Length\u00a0=\u00a016, effective TE\u00a0=\u00a0142 ms, FOV\u00a0=\u00a030\u00d715 mm, matrix size\u00a0=\u00a0128\u00d764, slice thickness\u00a0=\u00a01 mm, number of averages\u00a0=\u00a024.\n\nPseudo-Diffusion tensors were generated using a calculated b-matrix that incorporated the \u2018diffusion\u2019 weighting introduced by the imaging gradients. As described above, ROIs were drawn around the perivascular tracts that surround the animal\u2019s left and right MCA, as well as the CSF in the subarachnoid space that resides in the mid-section of the Circle of Willis. For visualisation purposes, pseudo-diffusion tensor ellipsoids were generated using the fanDTasia routines in Matlab (Barmpoutis et al., 2007). For pseudo-diffusion tensor mapping, images were smoothed using an edge preserving filter and thresholded based on signal intensity, to remove signals that did not principally derive from fluid filled compartments and images were generated using the Explore DTI toolbox (Leemans et al., 2009). Maps were colour coded according to their principle orientation. In one animal, the diffusion tensor sequence was applied to the brain immediately post-mortem.\n\n### ECG gating (n\u00a0=\u00a05)\n\nIn these experiments, a three lead electrode was used to measure ECG signals in the bore of the magnet. The diffusion weighted sequence was acquired with the following parameters: TR\u00a0=\u00a05 s, Echo Train Length\u00a0=\u00a016, effective TE\u00a0=\u00a0142 ms, echo spacing\u00a0=\u00a010 ms, FOV\u00a0=\u00a025\u00a0\u00d7\u00a025 mm, matrix size\u00a0=\u00a0128\u00a0\u00d7\u00a0128, slice thickness\u00a0=\u00a01 mm, number of averages\u00a0=\u00a012, \u03b4\u00a0=\u00a05 ms, \u0394\u00a0=\u00a026 ms, diffusion gradient amplitude\u00a0=\u00a02.3 G/cm, b value\u00a0~45 s/mm2, diffusion gradients applied in two directions (in plane, parallel to the PVS around the left and right MCA respectively).\n\nImage capture was gated to the ECG signal and image acquisition began either directly after the r-wave or with an 80 ms delay. Given that the diffusion weighting is applied during the first echo time at 72 ms, this results in a delay of 36 ms from the r-wave to the centre of diffusion weighting (i.e. the first 180\u00b0 refocusing pulse) or 116 ms with the additional 80 ms delay. As \u0394 was 26 ms in these acquisitions, the \u2018diffusion weighting\u2019 was therefore applied between 23 and 49 ms from the r-wave and 103 and 129 ms from the r-wave respectively. Given previous recordings of pulse wave velocity in the mouse brain of 2.69 m/s (Di Lascio et al., 2014) and given an approximate distance from the heart to the MCA of 10 cm in\u00a0~400 g rats (together with the separation between adjacent r-waves to be\u00a0~150 ms) we define the separate acquisitions to therefore take place during cerebral arterial pulsation or diastole. It should be noted that due to the ECG gating employed in these experiments, the TR will vary slightly between successive echo trains, but given the minimum TR was 5 s and that the r-r interval in the rat is\u00a0~150 ms, this should introduce relatively little variation into the measured MRI signal. ROIs were drawn around the left and right PVS and within the mid-section of the subarachnoid space as before. In addition, ROIS were drawn within the third ventricle to examine the r-wave delay dependence on measures of D* within ventricular CSF. The average D* in the PVS (MPGs applied parallel and perpendicular to PVS orientation respectively) was taken for each rat and a paired t-test was used to investigate if D* (MPGs parallel to PVS orientation) was greater during arterial pulsation relative to diastole for each region.\n\n### Dobutamine (n\u00a0=\u00a06)\n\nData were acquired in 6 male Sprague Dawley rats using the identical MRI sequence approach described above (\u2018ECG gating\u2019) but with no ECG gating. Dobutamine (n\u00a0=\u00a03 subcutaneous bolus, 2 mg/kg (Buttrick et al., 1988) in saline\u00a0~0.6\u20130.8 ml) or saline vehicle (n\u00a0=\u00a03) was then delivered and the same acquisitions were performed after bolus infusion.\n",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a9679449-ab23-42ba-bfed-f487ea098dd7",
+      "submission_id": "030234b6-2ec6-486a-aa1e-552b38e945c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas W Okell\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34028.015](https://doi.org/10.7554/eLife.34028.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Non-invasive imaging of CSF-mediated brain clearance pathways via assessment of perivascular fluid movement with DTI MRI\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sabine Kastner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Matthias van Osch (Reviewer #2); Maiken Nedergaard (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper the authors discuss a novel non-invasive MRI-based technique for studying the flow of fluid in perivascular channels using a long echo time diffusion-weighted approach. They show data consistent with the motion of fluid in the expected directions along channels close to the circle of Willis in the rat brain. This method could potentially be used to study disruption of the flow of fluid along perivascular channels, with implications for the functioning of the glymphatics system. This is especially pertinent with respect to the recent interest in the clearing capacity of various substances (e.g. amyloid) from the brain in diseases such as in Alzheimer's and cerebral amyloid angiopathy. This could make it an important tool in studying a range of neurodegenerative diseases: its non-invasive nature would make it suitable for use in longitudinal studies, both in animal models and potentially in living humans.\n\nThe reviewers felt that generally the paper is well written and discusses an interesting idea with significant potential for studying this system, which has previously only been observed directly using invasive methods. However, the reviewers have a number of concerns that should be addressed prior to publication. Please note that if addressing these points will require taking the manuscript considerably beyond the 2,000 words allowed for a short report then the authors should request that the manuscript type be changed to a research article.\n\nEssential revisions:\n\n1) There is some concern about whether the proposed MRI-based metrics may be sensitive to changes other than glymphatic function (e.g. differences in cardiac pulsatility) which could potentially confound the measurement. It would be useful to see some additional data showing the dependence of the signal on the cardiac (and ideally also respiratory) cycles to help the reader interpret the data being presented here.\n\n2) The claim that the derived diffusion metrics relate to glymphatic function would be significantly strengthened by the addition of experimental data showing an example of where these metrics are modified. This could be through a negative example such as a cisterna magna puncture or AQP4 inhibition. It would also be beneficial to combine the diffusion-based measurements with contrast-enhanced MRI to anatomically identify the perivascular space of the MCA, and thereby confirm the anatomical location. If the authors feel such experiments are not possible within the revision period, then additional discussion of signal interpretation, potential confounding effects and future experiments that could help confirm the sensitivity of the proposed method to glymphatic function would be required.\n\n3) It would be informative for the authors to discuss how this method would perform in pathology. Especially, whether the T2 of CSF in perivascular spaces would be lower due to increased level of waste products including iron. Furthermore, the authors leave it quite open how they would apply this technique to study pathology. Would they focus more on FA or on the apparent diffusion coefficients? It feels that the current approach focuses a lot on the orientation of CSF-flow, which is perhaps only interesting as proof-of-concept evidence. Moreover, one might argue that fluctuations in CSF mobility in the perivascular spaces would be even more interesting than the mean diffusivity. A more elaborate discussion on this topic would be worthwhile.\n",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8723cdf7-5da7-4f2e-85d5-ec276b2308e0",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C1",
+      "claim": "The glymphatic system describes a CSF-mediated clearance pathway for the removal of potentially harmful molecules, such as amyloid beta, from the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The glymphatics system describes a CSF-mediated clearance pathway for the removal of potentially harmful molecules, such as amyloid beta, from the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the glymphatic system's function that draws from established scientific understanding of this system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "374609cb-c017-4fbb-824c-7118d849445b",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C2",
+      "claim": "The glymphatic system components may represent new therapeutic targets to alleviate aberrant protein accumulation that defines the most prevalent neurodegenerative conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, its components may represent new therapeutic targets to alleviate aberrant protein accumulation that defines the most prevalent neurodegenerative conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications based on the function of the glymphatic system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "88c112d4-85f6-47a0-a6ca-72591437c8dd",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C3",
+      "claim": "There is currently an absence of any non-invasive measurement technique for glymphatic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, however, the absence of any non-invasive measurement technique prohibits detailed understanding of glymphatic function in the human brain and in turn, it's role in pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement asserts a gap in current methodology based on the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "5a8dc2c3-e5b0-40e5-a7a7-1d60fb58dd34",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C4",
+      "claim": "This study presents the first non-invasive technique for the assessment of glymphatic inflow.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the first non-invasive technique for the assessment of glymphatic inflow by using an ultra-long echo time, low b-value, multi-direction diffusion weighted MRI sequence to assess perivascular fluid movement (which represents a critical component of the glymphatic pathway) in the rat brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the study supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "4b5cd60a-c88f-4125-9adc-cbe5728b4a45",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C5",
+      "claim": "The technique uses an ultra-long echo time, low b-value, multi-direction diffusion weighted MRI sequence to assess perivascular fluid movement in the rat brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the first non-invasive technique for the assessment of glymphatic inflow by using an ultra-long echo time, low b-value, multi-direction diffusion weighted MRI sequence to assess perivascular fluid movement (which represents a critical component of the glymphatic pathway) in the rat brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "9ef2f4e1-486b-4264-a22b-718f9785f026",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C6",
+      "claim": "Perivascular fluid movement represents a critical component of the glymphatic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the first non-invasive technique for the assessment of glymphatic inflow by using an ultra-long echo time, low b-value, multi-direction diffusion weighted MRI sequence to assess perivascular fluid movement (which represents a critical component of the glymphatic pathway) in the rat brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established understanding of the glymphatic system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "efa4ce79-c2c7-4a88-afb3-aea393e53636",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C7",
+      "claim": "The glymphatic system and dural lymphatic network provide new perspectives on waste clearance mechanisms within the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent identification of the glymphatic system and the dural lymphatic network provide exciting new perspectives on waste clearance mechanisms within the central nervous system (CNS) (Louveau et al., 2015; Iliff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "87b65e9f-de13-4ca3-bcbd-b7b1f077d6fb",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C8",
+      "claim": "According to the glymphatics hypothesis, CSF crosses from the subarachnoid space into the periarterial space where it swiftly flows towards the brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the glymphatics hypothesis, cerebrospinal fluid (CSF) crosses from the subarachnoid space into the periarterial space where it swiftly flows towards the brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the glymphatic hypothesis based on established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "95a48a2e-c86a-468a-a836-12d4171375b7",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C9",
+      "claim": "Fluid passes into the parenchyma from the perivascular space, a transition mediated by aquaporin-4 (AQP4) channels that reside on the end feet of astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluid then passes into the parenchyma from the perivascular space, a transition mediated by aquaporin-4 (AQP4) channels that reside on the end feet of astrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a mechanism of the glymphatic system based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "f51c2df4-d096-44ff-9238-7c1e54774bda",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C10",
+      "claim": "Periarterial inflow creates a convective flux of fluid across the parenchyma that exits via perivenous channels, carrying with it 'waste products' of brain metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "This periarterial inflow creates a convective flux of fluid across the parenchyma that exits via perivenous channels, carrying with it 'waste products' of brain metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the proposed mechanism of the glymphatic pathway based on established literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "198a150c-fbfa-4477-a25c-aa65b7c1b6e6",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C11",
+      "claim": "The glymphatic pathway has been proposed to function as a 'cleaning system' of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the glymphatic pathway has been proposed to function as a 'cleaning system' of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the glymphatic pathway based on its proposed function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "47f01b8b-c7d7-4232-8bc3-32e64dee519a",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C12",
+      "claim": "The exchange of CSF with interstitial fluid (ISF) is an established mechanism underlying the clearance of amyloid beta (A\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "The exchange of CSF with interstitial fluid (ISF) is an established mechanism underlying the clearance of amyloid beta (A\u03b2), recognised as a leading molecular candidate to initiate Alzheimer's disease (AD) (Iliff et al., 2012; Weller et al., 2008; Bakker et al., 2016; Xu et al., 2015; Tarasoff-Conway et al., 2015; Hawkes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "05f81115-656f-4547-9760-d65c283f624c",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C13",
+      "claim": "Amyloid beta is recognised as a leading molecular candidate to initiate Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The exchange of CSF with interstitial fluid (ISF) is an established mechanism underlying the clearance of amyloid beta (A\u03b2), recognised as a leading molecular candidate to initiate Alzheimer's disease (AD) (Iliff et al., 2012; Weller et al., 2008; Bakker et al., 2016; Xu et al., 2015; Tarasoff-Conway et al., 2015; Hawkes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "25e52df9-101f-4680-9a2e-b6cb97f7c1ea",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C14",
+      "claim": "Aspects of the glymphatic pathway are preserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite evidence that aspects of the glymphatic pathway are preserved across species (Goulay et al., 2017; Ringstad et al., 2017; Dobson et al., 2017), key questions remain on the anatomy and function in the human brain and to what extent it contributes to pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "d3252917-93c2-48d9-98ea-cf07160fa4a3",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C15",
+      "claim": "Key questions remain on the anatomy and function of the glymphatic pathway in the human brain and to what extent it contributes to pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite evidence that aspects of the glymphatic pathway are preserved across species (Goulay et al., 2017; Ringstad et al., 2017; Dobson et al., 2017), key questions remain on the anatomy and function in the human brain and to what extent it contributes to pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies gaps in current knowledge based on the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "55fc50f0-a965-4c4a-bdf5-0b5f138eaddf",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C16",
+      "claim": "There are currently no non-invasive techniques for assessment of the glymphatic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, however, these questions cannot be answered because there are no non-invasive techniques for assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This asserts a methodological gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3479703b-0c56-4cd9-b3ea-01280fa45d43",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C17",
+      "claim": "Non-invasive methods to image CSF-mediated brain clearance pathways would enable repeated and practical measurement to investigate this system in the human brain and the intact animal skull.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of non-invasive methods to image CSF-mediated brain clearance pathways, such as the glymphatic system, would enable repeated and practical measurement to investigate this system in the human brain and the intact animal skull.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the potential benefits of developing non-invasive methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "2697bdff-79e4-4f7e-a692-4f09774f5985",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C18",
+      "claim": "Non-invasive methods may help fully characterise impairment of CSF-mediated clearance pathways with age.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, may help fully characterise impairment of CSF-mediated clearance pathways with age (Kress et al., 2014), as well as the contribution to A\u03b2 accumulation in AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, with a citation supporting the age-related impairment.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "bb7093ea-d29e-412c-9c42-04baacf3e903",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C19",
+      "claim": "CSF-mediated clearance pathways become impaired with age.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, may help fully characterise impairment of CSF-mediated clearance pathways with age (Kress et al., 2014), as well as the contribution to A\u03b2 accumulation in AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "6f2d9145-a99f-434f-a8a6-6d9e6e977ece",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C20",
+      "claim": "Non-invasive methods could address the pressing clinical need for reliable and early biomarkers of AD by identifying patients at risk of A\u03b2 accumulation due to failing clearance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, such methods could address the pressing clinical need for reliable and early biomarkers of AD, by identifying patients at risk of A\u03b2 accumulation due to failing clearance mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "637a14a1-856f-4416-b3bc-712581ae41e8",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C21",
+      "claim": "The perivascular space is a fluid filled compartment that surrounds selected blood vessels in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The perivascular space is a fluid filled compartment that surrounds selected blood vessels in the brain (Huffman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "d67a7869-ee4c-4249-991c-5819593229eb",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C22",
+      "claim": "Perivascular channels form a central component of the glymphatic pathway that is said to drive rapid CSF-ISF exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Perivascular channels form a central component of the glymphatic pathway that is said to drive rapid CSF-ISF exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established understanding of the glymphatic pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "e071407d-7dcc-4cce-b753-a8c7f414b9f6",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C23",
+      "claim": "The precise routes and fluid dynamics that underlie CSF-ISF exchange remain controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the precise routes and fluid dynamics that underlie CSF-ISF exchange remain controversial (Holter et al., 2017; Hladky and Barrand, 2014; Brinker et al., 2014; Smith et al., 2017), several independent groups have identified perivascular channels as central to this pathway (Iliff et al., 2012; Bedussi et al., 2015; Lochhead et al., 2015; Rennels et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations indicating ongoing debate in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "d636a433-fb67-4de1-80a0-e8601aa10ea4",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C24",
+      "claim": "Several independent groups have identified perivascular channels as central to the CSF-ISF exchange pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the precise routes and fluid dynamics that underlie CSF-ISF exchange remain controversial (Holter et al., 2017; Hladky and Barrand, 2014; Brinker et al., 2014; Smith et al., 2017), several independent groups have identified perivascular channels as central to this pathway (Iliff et al., 2012; Bedussi et al., 2015; Lochhead et al., 2015; Rennels et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "ac96e733-61c6-43eb-b640-1c5ed6945be7",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C25",
+      "claim": "The perivascular space represents a promising target for non-invasive imaging biomarkers of CSF-ISF exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the perivascular space represents a promising target for non-invasive imaging biomarkers of CSF-ISF exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the central role of perivascular channels in CSF-ISF exchange.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "31accded-f71d-47b3-9a8e-156daf974f7b",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C26",
+      "claim": "To date, perivascular function has been studied using only invasive methods: ex-vivo microscopy, two-photon imaging and contrast-enhanced MRI following intra-cranial/lumbar injection.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, perivascular function has been studied using only invasive methods: ex-vivo microscopy (Bedussi et al., 2015), two-photon imaging (Iliff et al., 2012) and contrast-enhanced MRI following intra-cranial/lumbar injection (Iliff et al., 2013a; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "7bf44db7-0e37-499b-9d49-35481d8a1130",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C27",
+      "claim": "This work introduces the first non-invasive method for the assessment of perivascular function using contrast-free MRI.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we introduce the first non-invasive method for the assessment of perivascular function using contrast-free MRI, and demonstrate use of the method in the rodent brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the study supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "b44196d0-0ea2-42d6-b4c6-0c0b17d95dab",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C28",
+      "claim": "The glymphatics hypothesis describes perivascular fluid movement as possessing coherent, bulk flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, the glymphatics hypothesis describes perivascular fluid movement as possessing coherent, bulk flow (Iliff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "abf754b6-3e42-4215-b886-20ca54535317",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C29",
+      "claim": "Some studies propose that the fast distribution of CSF-tracers along the perivascular space can be explained by rapid dispersion of fluid/tracers via mechanical pulsations, with little bulk flow.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this has been questioned by other studies which propose that the fast distribution of CSF-tracers along the perivascular space can be explained by rapid dispersion of fluid/tracers via mechanical pulsations, with little bulk flow (Hladky and Barrand, 2014; Asgari et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to alternative hypotheses in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a0bb7284-7a10-49a0-9a80-4bd65b6ce32b",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C30",
+      "claim": "Diffusion MRI represents a prime candidate for initial application owing to its established sensitivity to water dispersion and evidence of sensitivity to bulk flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the current uncertainty, when considering non-invasive MRI techniques for assessment, diffusion MRI represents a prime candidate for initial application owing to its established sensitivity to water dispersion, together with evidence of sensitivity to bulk flow (non-plug e.g. laminar flow) from prior studies of the cerebral vasculature (Wells et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and draws from established knowledge of diffusion MRI capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a3fc284b-4d60-46e2-9492-07c5cb8f9605",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C31",
+      "claim": "Diffusion MRI sequences, if appropriately tuned, should yield sensitive and quantitative correlates of fluid movement, irrespective of whether perivascular fluid movement is dominated by bulk flow or rapid dispersion.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, irrespective of whether perivascular fluid movement is dominated by bulk flow or rapid dispersion with little bulk flow, diffusion MRI sequences, if appropriately tuned, should yield sensitive and quantitative correlates of fluid movement, albeit non-specific to flow coherence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known capabilities of diffusion MRI.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "56d9e822-c6fe-4590-9c26-5fc45d0dc5b9",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C32",
+      "claim": "Cerebral arterial pulsation is a key mechanism that drives PVS fluid movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, given evidence that cerebral arterial pulsation is a key mechanism that drives PVS fluid movement (Rennels et al., 1985; Iliff et al., 2013b), we investigate the dependence of the technique on vascular pulsatility through cardiac gating and modulation by the adrenoceptor agonist, dobutamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "fdd6d0f2-f995-4209-af04-c5747cc35fc7",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C33",
+      "claim": "The ultra-long TE MRI sequence is designed to attenuate the measured signal from the blood and parenchyma that immediately surround the perivascular space to minimise partial volume effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultra-long TE MRI sequence presented here is designed to attenuate the measured signal from the blood and parenchyma that immediately surround the perivascular space in order to minimise partial volume effects, which represent a potential confounder for assessment by MRI given the small size of this compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design rationale of the MRI sequence used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "640d519e-e19c-4fab-b215-f5221f0ab837",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C34",
+      "claim": "Bright tracts appear either side of both MCA branches in the b0 image, which must derive from fluid filled compartments of similar composition to the CSF in the subarachnoid space due to the ultra-long echo time.",
+      "claim_type": "EXPLICIT",
+      "source": "Bright tracts appear either side of both MCA branches (Figure 1A) which, due to the ultra-long echo time, must derive from fluid filled compartments of similar composition to the CSF in the subarachnoid space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the MRI signal characteristics and the sequence parameters, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "1d64b33e-3f1c-43ba-a3b7-4d7b40c6c58c",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C35",
+      "claim": "The bright tracts observed in the MRI images are consistent with the description of the perivascular space as a fluid filled compartment that surrounds major blood vessels feeding the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, together with the characteristic morphology that runs alongside and parallel to the MCA, is consistent with the description of the perivascular space as a fluid filled compartment that surrounds major blood vessels feeding the brain (Huffman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation and the observed MRI characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "794173fe-1d6e-4ed7-9ab7-df1570d3c8e9",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C36",
+      "claim": "The location of the observed compartment is highly consistent with direct assessment from a previous study by Lochhead et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the location of this compartment is highly consistent with direct assessment from a previous study (Figure 1B, adapted from Lochhead et al., [Lochhead et al., 2015]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with a cited prior study and Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "f4195fd9-cb10-467e-b5c9-b578e6d426fc",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C37",
+      "claim": "Application of a motion probing gradient along the principle direction of the perivascular tracts markedly attenuated the signal relative to when the MPG was applied perpendicular to their principle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of a motion probing gradient (MPG) along the principle direction of the perivascular tracts located around the MCA was observed to markedly attenuate the signal from these tracts relative to when the MPG was applied perpendicular to their principle orientation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "6fa13d70-1022-4a18-8d6b-12625bc58885",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C38",
+      "claim": "Within the right perivascular space, the pseudo-diffusion coefficient (D*) parallel to PVS orientation was significantly greater than D* in either perpendicular direction (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, across the 10 subjects, within the right perivascular space, the pseudo-diffusion coefficient (D*) parallel to PVS orientation was significantly greater than D* in either perpendicular direction (p<0.01 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "28c924d2-0509-4e08-87aa-4945789b6063",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C39",
+      "claim": "D* parallel to principle direction of left PVS was significantly greater than D* in either perpendicular direction (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In a similar fashion, D* (parallel to principle direction of left PVS) was significantly greater than D* in either perpendicular direction [p<0.01]. (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "f602df1d-d680-4112-8282-4e622681330e",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C40",
+      "claim": "The MRI sequence can detect the directional dependence of fluid movement within the perivascular space.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the MRI sequence employed here can detect the directional dependence of fluid movement within the perivascular space (the principal directionality of which is parallel to their orientation), which verifies that they are sensitised to the movement of fluid within this compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing directional dependence of D*.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "dede5aea-2af7-4aec-99df-874d3f1ebf04",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C41",
+      "claim": "Within the CSF in the subarachnoid space, D* when the MPGs were applied in the in-plane orientation were both significantly greater than D* in the through plane orientation (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the CSF in the subarachnoid space, it was observed that D* when the MPGs were applied in the in-plane orientation (i.e. parallel to the left or right branch of the MCA) were both significantly greater than D* in the through plane orientation [p<0.01].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a2a1a323-19ea-485a-a2db-4abb9ef738b1",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C42",
+      "claim": "The directional dependence of D* in the subarachnoid space is consistent with the known direction of CSF movement in the rostral-caudal direction within this region from prior invasive studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the known direction of CSF movement in the rostral-caudal direction within this region from prior invasive studies (Iliff et al., 2013a; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "d6494f73-d530-4837-949d-62a7e114fc0d",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C43",
+      "claim": "The mean D* tensor ellipsoid for the subarachnoid space ROI was well aligned with the known principle direction of CSF movement (caudal-rostral).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 illustrates that, for the subarachnoid space ROI, the mean D* tensor ellipsoid (n = 6) was well aligned with the known principle direction of CSF movement (caudal-rostral, observed in several invasive studies of the rodent brain [Iliff et al., 2013a; Lee et al., 2018]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3 and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "67c34ebe-e85d-4ecf-b873-ed72b5a70181",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C44",
+      "claim": "The principle direction of the mean D* tensor of the left and right perivascular space was aligned with the orientation of the respective branch of the MCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Figure 3 illustrates that the principle direction of the mean D* tensor of the left and right perivascular space, respectively, was aligned with the orientation of the respective branch of the MCA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "561d69d9-609e-4e93-aef4-fc28b3ef4676",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C45",
+      "claim": "The magnitude of the D* tensors within the perivascular region were markedly reduced post-mortem.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the D* tensors within this region were markedly reduced post-mortem, which demonstrates that a large component of the D* measurements reflects fluid movement driven by physiological perturbations such as cardiac and respiratory pulsation and secretion from the choroid plexus (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "4e7d9b4c-d40c-4cd5-872b-71dee3693036",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C46",
+      "claim": "A large component of the D* measurements reflects fluid movement driven by physiological perturbations such as cardiac and respiratory pulsation and secretion from the choroid plexus.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the D* tensors within this region were markedly reduced post-mortem, which demonstrates that a large component of the D* measurements reflects fluid movement driven by physiological perturbations such as cardiac and respiratory pulsation and secretion from the choroid plexus (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the post-mortem reduction in D* measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "872ec327-3344-466f-ae4d-2fc75d835957",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C47",
+      "claim": "Fractional anisotropy within the right and left perivascular space and the subarachnoid space was 0.44 (\u00b10.04), 0.36 (\u00b10.04) and 0.6 (\u00b10.02) respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractional anisotropy (SEM) within the right and left perivascular space and the subarachnoid space was 0.44 (\u00b10.04), 0.36 (\u00b10.04) and 0.6 (\u00b10.02) respectively with mean diffusivity (SEM) calculated to be 0.0042 (\u00b10.0003), 0.0052 (\u00b10.0003), 0.0065 (\u00b10.0007) mm2/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8e8b2e30-f695-4d16-8df5-4aeafdfea20f",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C48",
+      "claim": "Mean diffusivity within the right and left perivascular space and the subarachnoid space was calculated to be 0.0042 (\u00b10.0003), 0.0052 (\u00b10.0003), 0.0065 (\u00b10.0007) mm2/s respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractional anisotropy (SEM) within the right and left perivascular space and the subarachnoid space was 0.44 (\u00b10.04), 0.36 (\u00b10.04) and 0.6 (\u00b10.02) respectively with mean diffusivity (SEM) calculated to be 0.0042 (\u00b10.0003), 0.0052 (\u00b10.0003), 0.0065 (\u00b10.0007) mm2/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8fcd0fce-08db-4814-996a-06ecf0c91871",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C49",
+      "claim": "The principal direction of the D* tensors in the perivascular tracts surrounding the left and right MCA run parallel to the orientation of the MCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3E shows a map of pseudo diffusion tensors for a single subject. The principal direction of the D* tensors in the perivascular tracts that surround the left and right MCA respectively can be seen to run parallel to the orientation of the MCA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "92501a66-0e12-44eb-a179-ca3cf55fb4f7",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C50",
+      "claim": "The principal orientation of the individual voxel D* tensors run rostral-caudal in the mid-section of the CoW.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the principal orientation of the individual voxel D* tensors can be seen to run rostral-caudal in the mid-section of the CoW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "dbde3e0e-3ff1-4f9d-8922-c61e04b2d9c8",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C51",
+      "claim": "Previous studies have identified cerebral vascular pulsation to play a prominent role in perivascular fluid propulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have identified cerebral vascular pulsation to play a prominent role in perivascular fluid propulsion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "b9fec6a7-31bd-44c6-bfbe-4cb6bf8e9446",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C52",
+      "claim": "D* in the PVS was ~300% greater during arterial pulsation relative to diastole when motion probing gradients were applied parallel to the principle orientation (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "D* in the PVS was ~300% greater during arterial pulsation relative to diastole when motion probing gradients were applied parallel to the principle orientation (p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3733b64d-6678-4e9b-a969-73e1083fbb1f",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C53",
+      "claim": "A more moderate dependence (p=0.1) on the r-wave delay was recorded within the CSF ROI at the mid-section of the CoW.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded a more moderate dependence (p=0.1) on the r-wave delay within the CSF ROI at the mid-section of the CoW (although visual inspection of the D* maps suggests that other regions within the subarachnoid CSF appeared to show greater changes with the r-wave delay).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "c27c0f2c-4b31-4b34-a76a-b0006caa2645",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C54",
+      "claim": "Minimal dependence of the D* measures on the r-wave delay was observed in the third ventricle (p=0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal dependence of the D* measures on the r-wave delay was observed in the third ventricle (p=0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a5ccc764-d290-47e4-b4a0-4a09d3f33c59",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C55",
+      "claim": "Administration of dobutamine increased heart rate from 354 \u00b1 8 to 519 \u00b1 17 bpm.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of the adrenoceptor agonist, dobutamine, increased heart rate from (354 \u00b1 8 to 519 \u00b1 17 bpm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "177fefbd-c6b0-449a-9f0d-e2de4d2e2468",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C56",
+      "claim": "A 65% increase in D* along PV channels was recorded following dobutamine (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "A 65% increase in D* along PV channels was recorded (p<0.01) following dobutamine with comparatively little change after vehicle (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "6ea2c39a-73b6-44b7-b4bb-6d5d740c2b7b",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C57",
+      "claim": "No significant changes were observed in the subarachnoid space ROI at the mid-section of the CoW following dobutamine (p=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant changes were observed in the subarachnoid space ROI at the mid-section of the CoW following dobutamine (p=0.39, although visual inspection of the data suggests other regions within the subarachnoid CSF did show marked increases in D*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "85b5fd83-8d10-40bf-ba5b-3c5c93f716df",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C58",
+      "claim": "Dobutamine had minimal effect on D* within the third ventricle (p=0.30).",
+      "claim_type": "EXPLICIT",
+      "source": "Dobutamine had minimal effect on D* within the third ventricle (p=0.30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "87f9838b-3605-4d3b-83f7-c445980c7496",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C59",
+      "claim": "The data are concordant with previous invasive measures demonstrating that perivascular fluid movement is driven by cerebral vascular pulsation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data are concordant with previous invasive measures demonstrating that perivascular fluid movement is driven by cerebral vascular pulsation and that we are now able to capture this mechanistic dependence non-invasively using the techniques introduced here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results and comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "667e4958-5481-4c19-926c-65fd163e3f2b",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C60",
+      "claim": "The techniques introduced here are able to capture the mechanistic dependence of perivascular fluid movement on cerebral vascular pulsation non-invasively.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data are concordant with previous invasive measures demonstrating that perivascular fluid movement is driven by cerebral vascular pulsation and that we are now able to capture this mechanistic dependence non-invasively using the techniques introduced here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing the relationship between vascular pulsation and D* measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3be9e17f-7de1-4f00-9ec5-c18e272bedf0",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C61",
+      "claim": "This study introduces a novel MRI method to measure the movement of fluid in the perivascular space.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we introduce a novel MRI method to measure a distinct feature of brain physiology that, to date, has only be assessed using invasive methods \u2013 the movement of fluid in the perivascular space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the study supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8b892c49-085c-4a51-a9cc-e27b7b6bfbaa",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C62",
+      "claim": "The perivascular space serves as a preferential pathway for CSF-ISF exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The perivascular space serves as a preferential pathway for CSF-ISF exchange, an important mechanism supporting the clearance of potentially harmful molecules, such as A\u03b2, from the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established knowledge of the perivascular space function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a859290d-f175-4801-8849-ee7157fee3f5",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C63",
+      "claim": "CSF-ISF exchange is an important mechanism supporting the clearance of potentially harmful molecules, such as A\u03b2, from the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "The perivascular space serves as a preferential pathway for CSF-ISF exchange, an important mechanism supporting the clearance of potentially harmful molecules, such as A\u03b2, from the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established knowledge of CSF-ISF exchange function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "880304b7-a6be-40ef-8bbe-cc738a86914e",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C64",
+      "claim": "This non-invasive method may have utility in AD research given evidence that A\u03b2 accumulation in late stage, sporadic AD occurs because of decreased rates of A\u03b2 clearance rather than increased A\u03b2 production.",
+      "claim_type": "EXPLICIT",
+      "source": "This non-invasive and translational method may have utility in AD research given evidence that A\u03b2 accumulation (in late stage, sporadic AD) occurs not because of increased A\u03b2 production but because of decreased rates of A\u03b2 clearance (Mawuenyega et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "cd14e6fd-c334-439a-a45e-043ad8f940af",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C65",
+      "claim": "A\u03b2 accumulation in late stage, sporadic AD occurs not because of increased A\u03b2 production but because of decreased rates of A\u03b2 clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "This non-invasive and translational method may have utility in AD research given evidence that A\u03b2 accumulation (in late stage, sporadic AD) occurs not because of increased A\u03b2 production but because of decreased rates of A\u03b2 clearance (Mawuenyega et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "805ca2bd-96d3-4443-8f50-114000cbceee",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C66",
+      "claim": "This technique may expedite greater understanding of how A\u03b2 clearance mechanisms become impaired with ageing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this technique may expedite greater understanding of how A\u03b2 clearance mechanisms become impaired with ageing (Kress et al., 2014) and in turn reveal a new window in early AD pathogenesis in which to target future diagnostic and treatment strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, with a citation supporting the age-related impairment.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "9fa8619f-d9b0-4b93-b4b7-9b277eade767",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C67",
+      "claim": "The technique may reveal a new window in early AD pathogenesis in which to target future diagnostic and treatment strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this technique may expedite greater understanding of how A\u03b2 clearance mechanisms become impaired with ageing (Kress et al., 2014) and in turn reveal a new window in early AD pathogenesis in which to target future diagnostic and treatment strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3c230d56-df5c-4656-ba0c-4a13878a3e00",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C68",
+      "claim": "The technique may have broader utility to a range of neurological conditions given reported associations between glymphatic function in stroke and traumatic brain injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The technique may have broader utility to a range of neurological conditions given reported associations between glymphatic function in, for example, stroke (Gaberel et al., 2014) and traumatic brain injury (Iliff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a234fd05-cfa5-43b9-9269-c4544299acea",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C69",
+      "claim": "The precise mechanisms that underlie CSF-ISF exchange are yet to be fully defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise mechanisms that underlie CSF-ISF exchange are yet to be fully defined and this remains an active area of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "08f18646-9b0e-473c-9046-72414c2c0e2e",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C70",
+      "claim": "Accumulative evidence has established cerebral vascular pulsation as an important mechanism underlying perivascular fluid movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulative evidence, however, has established cerebral vascular pulsation as an important mechanism underlying perivascular fluid movement (Rennels et al., 1985; Iliff et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "2bba2dd4-9fa7-46c1-b047-cbd35a6dad0c",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C71",
+      "claim": "This study has captured the action of cerebral arterial pulsation to drive perivascular fluid movement using non-invasive techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have captured the action of cerebral arterial pulsation to drive perivascular fluid movement using non-invasive techniques (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "0b86c6ee-ffc3-476c-9179-442508f804ad",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C72",
+      "claim": "The measured D* showed a remarkable dependence on vascular pulsation with a ~300% increase recorded during arterial pulsation relative to diastole.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured D* showed a remarkable dependence on vascular pulsation with a ~300% increase recorded during arterial pulsation relative to diastole (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "4e82613d-02c8-4bd2-b6c8-e3c93ba8c6aa",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C73",
+      "claim": "D* (non-gated) was found to markedly increase following adrenoceptor agonist, dobutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, D* (non-gated) was found to markedly increase following adrenoceptor agonist, dobutamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "038f733b-8783-4bf6-b849-5aadac3d46ba",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C74",
+      "claim": "The non-invasive nature of this technique may enable future studies to investigate the mechanistic link between vascular pulsatility and PVS fluid movement in the healthy human brain, and its modulation by pathology as well as novel therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-invasive nature of this technique may enable future studies to investigate the mechanistic link between vascular pulsatility and PVS fluid movement in the healthy human brain, and its modulation by pathology as well as novel therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "94e055ff-811e-41f3-b922-14a53c7b79fb",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C75",
+      "claim": "A previous study aimed to correlate MRI measures of water diffusivity from the PVS to AD severity but presents limited evidence as to the contribution of the perivascular space to the measured MRI signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a previous study aimed to correlate MRI measures of water diffusivity from the PVS to AD severity (Taoka et al., 2017). However, this earlier work presents limited evidence as to the contribution of the perivascular space to the measured MRI signal and hence that the parameters extracted from their measurements provide meaningful correlates of PVS fluid movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior work supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "9348802e-907c-4ea9-a2a6-606484d5f63c",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C76",
+      "claim": "The expression of AQP4 appears to be mechanistically important in CSF-ISF exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of AQP4 appears to be mechanistically important in CSF-ISF exchange (Smith et al., 2017; Mestre, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "6c80e812-42c6-442f-a02a-a67f34ffa0b4",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C77",
+      "claim": "Genetic deletion of AQP4 markedly decreased rates of small molecular weight tracer inflow from the CSF into the brain but did not appear to affect the movement of tracers along para-arterial channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although genetic deletion of AQP4 was found to markedly decrease rates of small molecular weight tracer inflow from the CSF into the brain, it did not appear to affect the movement of tracers along para-arterial channels (Iliff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "24cb545e-648c-4875-911b-e0956eb60ce8",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C78",
+      "claim": "The technique may not be sensitive to AQP4 related modulation of CSF-ISF exchange through genetic deletion of AQP4 in the rodent brain since it is targeted to PVS fluid movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by extension, as the technique here is targeted to PVS fluid movement, it may not be sensitive to AQP4 related modulation of CSF-ISF exchange through genetic deletion of AQP4 in the rodent brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the prior finding about AQP4 deletion and the target of the technique.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "475e78cc-b622-4b10-844f-62faa12d8f4d",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C79",
+      "claim": "Rates of glymphatic inflow have been linked to changes in extracellular space volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rates of glymphatic inflow have been linked to changes in extracellular space volume (Xie et al., 2013) and central noradrenaline activity (Benveniste et al., 2017) and how these factors may modulate measures of D* captured using the techniques presented here would be an interesting avenue of further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "298761b9-d2d3-4f04-9bd9-1c2e2fe26b9d",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C80",
+      "claim": "Rates of glymphatic inflow have been linked to central noradrenaline activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rates of glymphatic inflow have been linked to changes in extracellular space volume (Xie et al., 2013) and central noradrenaline activity (Benveniste et al., 2017) and how these factors may modulate measures of D* captured using the techniques presented here would be an interesting avenue of further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3b1449e8-cdb7-49ec-ba9e-6e42dc99dc6f",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C81",
+      "claim": "Efforts are ongoing to investigate the sensitivity of the method to detect dysfunction of perivascular fluid movement associated with ageing and models of pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts are ongoing to investigate the sensitivity of the method to detect dysfunction of perivascular fluid movement associated with ageing and models of pathological conditions, with the knowledge that clinical translation of this non-invasive approach may be practically achievable in the near future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes ongoing work and future directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8c983b20-bfad-4dee-8c8e-0f14fc30c65f",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C82",
+      "claim": "Clinical translation of this non-invasive approach may be practically achievable in the near future.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts are ongoing to investigate the sensitivity of the method to detect dysfunction of perivascular fluid movement associated with ageing and models of pathological conditions, with the knowledge that clinical translation of this non-invasive approach may be practically achievable in the near future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future translation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "64f90c54-4428-4d86-a7ca-c8f0b393e8f3",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C83",
+      "claim": "All experiments were performed in accordance with the UK Home Office's Animals (Scientific Procedures) Act (1986).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in accordance with the UK Home Office's Animals (Scientific Procedures) Act (1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about regulatory compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "eed8c62e-0111-488a-b523-4b5bda03924e",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C84",
+      "claim": "In total, 27 male Sprague Dawley rats were used in these experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 27 male Sprague Dawley rats were used in these experiments (n = 10 for multi-direction diffusion weighted imaging, n = 6 for diffusion tensor imaging, n = 5 for ECG gating, n = 6 for dobutamine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "2c0b144f-f9b8-4c6c-86bf-f903609054ed",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C85",
+      "claim": "All imaging was performed using a 9.4T VNMRS horizontal bore scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "All imaging was performed using a 9.4T VNMRS horizontal bore scanner (Agilent Inc., Palo Alto, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "cb49ba2e-4c9a-43ae-8475-b69184fac172",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C86",
+      "claim": "A 72 mm inner diameter volume coil was used for RF transmission and signal was received using a 4 channel array head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "A 72 mm inner diameter volume coil was used for RF transmission and signal was received using a 4 channel array head coil (Rapid Biomedical).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging equipment used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "be4ff5c1-4fd2-414e-b0f5-eeafea02d989",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C87",
+      "claim": "A key aspect of the MRI sequence was the use of a long TE to attenuate the signal from the surrounding arterial blood and tissue relative to the MRI signal from CSF in the subarachnoid space and fluid in perivascular channels.",
+      "claim_type": "EXPLICIT",
+      "source": "A key aspect of the MRI sequence was the use of a long TE to attenuate the signal from the surrounding arterial blood and tissue (T2 ~30 and 38 ms respectively at 9.4T [Wells et al., 2013]) relative to the MRI signal from CSF in the subarachnoid space and fluid in perivascular channels (T2 ~111 ms [Kuo et al., 2005]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design rationale of the MRI sequence, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "4fc4dea0-68ec-4f42-a6ea-0fe0d39e4b3a",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C88",
+      "claim": "At the effective echo time of 142 ms, the signal from grey matter tissue, blood and CSF will have decayed to ~2, 1 and 28% of the theoretical signal at TE = 0 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, at this echo time, the signal from the grey matter tissue, blood and CSF will have decayed to ~2, 1 and 28% of the theoretical signal at TE = 0 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on known T2 values and the chosen echo time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "f1e82548-2346-40b8-a0f9-fefa20bb054c",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C89",
+      "claim": "The use of an ultra-long TE permits a long echo train per excitation (16 echoes) to increase the SNR efficiency of the acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of an ultra-long TE permits a long echo train per excitation (16 echoes) to increase the SNR efficiency of the acquisition (i.e. SNR per unit time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical advantage of the sequence design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8bd51d21-63c8-4152-8d85-c5c947bb01ef",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C90",
+      "claim": "The use of a relatively long TR (5000 ms) further weights the measured MRI signal from CSF/interstitial fluid relative to surrounding blood/tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the use of a relatively long TR (5000 ms), further weights the measured MRI signal from CSF/interstitial fluid relative to surrounding blood/tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical aspect of the sequence design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "df7b5c7c-34e4-4d37-8bc8-6063a7b05a88",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C91",
+      "claim": "Power analysis based on pilot data was used to estimate the number of animals required to detect a significant difference in D* when motion probing gradients are applied parallel versus perpendicular to the perivascular tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "For the multiple direction diffusion weighting, power analysis based on pilot data was used to estimate the number of animal required to detect a significant difference in D* when motion probing gradients are applied parallel to the perivascular tracts relative to D* when motion probing gradients are applied perpendicular to the perivascular tracts (assuming a normal distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical approach used to determine sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "233a68e8-024a-4e40-b53b-661df64cb7cb",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C92",
+      "claim": "Bright signal can be observed from fluid filled compartments including CSF in the subarachnoid space around the Circle of Willis, fluid in the perivascular space that surrounds the MCA, and the ventral aspect of the third ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "Bright signal can be observed from fluid filled compartments: CSF in the subarachnoid space around the Circle of Willis (CoW); fluid in the perivascular space that surrounds the MCA; the ventral aspect of the third ventricle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observations from Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "40c5004b-a8ff-4b6f-940a-bc58faa3759f",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C93",
+      "claim": "The position and orientation of the imaging slice is adjusted to optimally visualize the perivascular space around both branches of the MCA.",
+      "claim_type": "EXPLICIT",
+      "source": "The position and orientation of the imaging slice is adjusted to optimally visualize the perivascular space (PVS) around both branches of the MCA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "68d09c0d-6eda-459c-ba71-0caf6ca3c629",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "claim_id": "C94",
+      "claim": "Pulse wave velocity in the mouse brain has been previously recorded as 2.69 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Given previous recordings of pulse wave velocity in the mouse brain of 2.69 m/s (Di Lascio et al., 2014) and given an approximate distance from the heart to the MCA of 10 cm in ~400 g rats (together with the separation between adjacent r-waves to be ~150 ms) we define the separate acquisitions to therefore take place during cerebral arterial pulsation or diastole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4825ee3a-9f2b-4743-8368-782085e829f9",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study developed a novel non-invasive MRI technique using ultra-long echo time (142 ms), low b-value diffusion-weighted imaging to visualize and assess perivascular fluid movement in the rat brain. The technique successfully identified fluid-filled perivascular spaces surrounding the middle cerebral artery (MCA) that were consistent with anatomical descriptions from prior invasive studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C27, C33-C36, C61, C85-C93 collectively demonstrate successful development and validation of the imaging technique. The ultra-long TE design rationale is sound (C33, C87-C90), with appropriate signal decay calculations (C88). The observed bright tracts around the MCA (C34, C92) are consistent with perivascular spaces based on morphology and comparison with prior anatomical studies (C35, C36). The technical specifications are clearly described (C85-C86).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "a808f281-d63e-4781-a186-0daf4b19f61a",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multi-direction diffusion-weighted imaging demonstrated significant directional dependence of the pseudo-diffusion coefficient (D*) in perivascular spaces, with D* parallel to PVS orientation significantly greater than perpendicular directions (p<0.01) in both left and right PVS across 10 subjects. Similar directional dependence was observed in subarachnoid CSF, consistent with known rostral-caudal CSF flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 provide strong experimental evidence with appropriate statistical analysis (n=10, p<0.01). The directional dependence of D* measurements (C38, C39) validates sensitivity to fluid movement (C40). The consistency with known CSF flow directions from prior invasive studies (C41, C42) provides external validation. Sample size appears adequate based on power analysis mentioned (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Diffusion tensor imaging (n=6) revealed that mean D* tensor ellipsoids in perivascular spaces aligned with MCA orientation, while subarachnoid space tensors aligned with the known caudal-rostral direction of CSF movement. Fractional anisotropy values were 0.44\u00b10.04 (right PVS), 0.36\u00b10.04 (left PVS), and 0.60\u00b10.02 (subarachnoid space).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C47-C50 demonstrate consistent tensor orientations matching expected anatomical flow patterns, supported by Figure 3. The quantitative FA and MD values (C47, C48) are reported with appropriate error estimates. The alignment with known CSF flow directions (C43) and vessel orientations (C44, C49) provides validation. Sample size (n=6) is modest but appears sufficient for this proof-of-concept demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "786ae629-495f-478c-9343-6575b67ddcee",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Post-mortem measurements showed marked reduction in D* tensor magnitude within the perivascular region, demonstrating that D* measurements reflect physiologically-driven fluid movement rather than passive diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide important validation that the measured signal reflects active physiological processes. The post-mortem control (C45) is appropriate and the inference that D* reflects physiologically-driven movement (C46) is reasonable, though the authors acknowledge potential confounding from PVS collapse post-mortem. This control strengthens the interpretation of the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "230e4a34-af01-4884-918b-b22a85072965",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ECG-gated imaging (n=5) revealed that D* in perivascular spaces was approximately 300% greater during arterial pulsation compared to diastole when motion probing gradients were applied parallel to PVS orientation (p<0.01), demonstrating that the technique captures the mechanistic dependence of perivascular fluid movement on cerebral vascular pulsation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C59-C60, C70-C72, C94 demonstrate strong cardiac-gating effects with appropriate statistical significance (p<0.01). The ~300% increase during systole (C52, C72) is substantial and biologically plausible. The timing calculations based on pulse wave velocity (C94) appear reasonable. More moderate effects in subarachnoid CSF (C53, p=0.1) and minimal effects in third ventricle (C54, p=0.2) provide appropriate regional specificity. The concordance with prior invasive studies (C59, C70) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "54e488f0-3c69-4238-9cb9-82fc39041f22",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pharmacological modulation with dobutamine (n=6) increased heart rate from 354\u00b18 to 519\u00b117 bpm and produced a 65% increase in D* along perivascular channels (p<0.01), with minimal effects in subarachnoid space (p=0.39) or third ventricle (p=0.30).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C73 demonstrate pharmacological validation with appropriate controls (vehicle group mentioned in C56). The heart rate increase (C55) confirms drug efficacy, and the selective increase in PVS D* (C56, p<0.01) with regional specificity (C57-C58) supports the mechanistic link to vascular pulsatility. Sample size (n=6 total, likely n=3 per group based on methods) is modest but adequate for this proof-of-concept experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "dadcd348-29f6-4edf-8a73-eb5be2861041",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background claims establish that the glymphatic system is a CSF-mediated clearance pathway involving perivascular fluid movement, aquaporin-4 mediated parenchymal exchange, and clearance of molecules like amyloid beta, with aspects preserved across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C14, C21-C22, C62-C63 accurately represent established knowledge about the glymphatic system, supported by appropriate citations. These background claims provide necessary context but do not represent novel findings of this study. The characterization of the glymphatic pathway and its components is consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study identifies methodological gaps in the field, noting the absence of non-invasive techniques for assessing glymphatic function in humans and ongoing controversies about the precise mechanisms of CSF-ISF exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15-C16, C23, C26, C69 accurately characterize gaps and controversies in the field. The assertion that no non-invasive techniques existed (C3, C16, C26) is supported by the cited literature showing only invasive methods (C26). The acknowledgment of mechanistic controversies (C23, C69) is appropriate and well-cited. These claims establish the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "ec020402-2c64-4693-9592-b749115f8de5",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The rationale for using diffusion MRI is established based on prior evidence that perivascular channels are central to CSF-ISF exchange, cerebral arterial pulsation drives perivascular fluid movement, and diffusion MRI can detect both water dispersion and bulk flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C28-C32 provide appropriate scientific rationale supported by citations. The choice of diffusion MRI (C30-C31) is well-justified given uncertainty about whether perivascular movement involves bulk flow (C28) or dispersion (C29). The acknowledgment that the technique cannot distinguish between these mechanisms (C31) is appropriately transparent. The role of arterial pulsation (C32) is well-established in cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "00557b64-8052-4cfa-b0af-20b0942bfa87",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors critically evaluate prior work and discuss limitations, noting that a previous MRI study of PVS in AD lacked validation of signal source, and that their technique may not be sensitive to AQP4-mediated modulation since AQP4 deletion affects parenchymal but not para-arterial tracer movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 provide appropriate critical assessment. The critique of prior work (C75) is fair and supported by citation. The discussion of AQP4 limitations (C76-C78) is scientifically sound, based on cited evidence that AQP4 deletion affects parenchymal but not para-arterial flow (C77), leading to the reasonable inference about technique sensitivity (C78). This demonstrates appropriate acknowledgment of limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate about potential clinical applications including development of AD biomarkers, characterization of age-related clearance impairment, and broader utility in stroke and traumatic brain injury, while noting ongoing efforts toward clinical translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2, C17-C18, C20, C64, C66-C68, C74, C81-C82 are speculative about future applications. While the potential applications are reasonable given the technique's capabilities, they remain undemonstrated. The speculation is appropriately qualified with terms like 'may' and 'could,' but no validation data in disease models or clinical populations is provided. Claims about ongoing efforts (C81) and near-future translation (C82) lack supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "3f3a4536-35f5-4568-99f5-a04673412b28",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims note that CSF-mediated clearance pathways become impaired with age, A\u03b2 accumulation in sporadic AD results from decreased clearance rather than increased production, and glymphatic inflow is linked to extracellular space volume and noradrenaline activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C65, C79-C80 accurately represent findings from cited prior research. These are well-established findings in the literature that provide context for the potential significance of the technique but do not represent novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    },
+    {
+      "id": "b1f201ce-5633-4caa-833a-0683112520a5",
+      "content_id": "276c7b9e-8459-44de-be80-2db69e459b7b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details include regulatory compliance (UK Home Office Animals Act 1986), use of 27 male Sprague Dawley rats distributed across experiments, and power analysis for sample size determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84, C91 provide appropriate methodological transparency. Regulatory compliance is stated (C83), total animal numbers and distribution are clearly reported (C84), and power analysis for sample size is mentioned (C91). These represent standard methodological reporting rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:44:39.600949Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a8dc2c3-e5b0-40e5-a7a7-1d60fb58dd34",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "4b5cd60a-c88f-4125-9adc-cbe5728b4a45",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "7bf44db7-0e37-499b-9d49-35481d8a1130",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "fdd6d0f2-f995-4209-af04-c5747cc35fc7",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "640d519e-e19c-4fab-b215-f5221f0ab837",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "1d64b33e-3f1c-43ba-a3b7-4d7b40c6c58c",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "794173fe-1d6e-4ed7-9ab7-df1570d3c8e9",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "3be9e17f-7de1-4f00-9ec5-c18e272bedf0",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "2c0b144f-f9b8-4c6c-86bf-f903609054ed",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "cb49ba2e-4c9a-43ae-8475-b69184fac172",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "be4ff5c1-4fd2-414e-b0f5-eeafea02d989",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "4fc4dea0-68ec-4f42-a6ea-0fe0d39e4b3a",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "f1e82548-2346-40b8-a0f9-fefa20bb054c",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "8bd51d21-63c8-4152-8d85-c5c947bb01ef",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "233a68e8-024a-4e40-b53b-661df64cb7cb",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "40c5004b-a8ff-4b6f-940a-bc58faa3759f",
+      "result_id": "4825ee3a-9f2b-4743-8368-782085e829f9"
+    },
+    {
+      "claim_id": "f4195fd9-cb10-467e-b5c9-b578e6d426fc",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "6fa13d70-1022-4a18-8d6b-12625bc58885",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "28c924d2-0509-4e08-87aa-4945789b6063",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "f602df1d-d680-4112-8282-4e622681330e",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "dede5aea-2af7-4aec-99df-874d3f1ebf04",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "a2a1a323-19ea-485a-a2db-4abb9ef738b1",
+      "result_id": "a808f281-d63e-4781-a186-0daf4b19f61a"
+    },
+    {
+      "claim_id": "d6494f73-d530-4837-949d-62a7e114fc0d",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "67c34ebe-e85d-4ecf-b873-ed72b5a70181",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "872ec327-3344-466f-ae4d-2fc75d835957",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "8e8b2e30-f695-4d16-8df5-4aeafdfea20f",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "8fcd0fce-08db-4814-996a-06ecf0c91871",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "92501a66-0e12-44eb-a179-ca3cf55fb4f7",
+      "result_id": "c7d403bd-0f6f-4a77-8e9e-8069d92aaa40"
+    },
+    {
+      "claim_id": "561d69d9-609e-4e93-aef4-fc28b3ef4676",
+      "result_id": "786ae629-495f-478c-9343-6575b67ddcee"
+    },
+    {
+      "claim_id": "4e7d9b4c-d40c-4cd5-872b-71dee3693036",
+      "result_id": "786ae629-495f-478c-9343-6575b67ddcee"
+    },
+    {
+      "claim_id": "dbde3e0e-3ff1-4f9d-8922-c61e04b2d9c8",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "b9fec6a7-31bd-44c6-bfbe-4cb6bf8e9446",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "3733b64d-6678-4e9b-a969-73e1083fbb1f",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "c27c0f2c-4b31-4b34-a76a-b0006caa2645",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "87f9838b-3605-4d3b-83f7-c445980c7496",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "667e4958-5481-4c19-926c-65fd163e3f2b",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "08f18646-9b0e-473c-9046-72414c2c0e2e",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "2bba2dd4-9fa7-46c1-b047-cbd35a6dad0c",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "0b86c6ee-ffc3-476c-9179-442508f804ad",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "68d09c0d-6eda-459c-ba71-0caf6ca3c629",
+      "result_id": "230e4a34-af01-4884-918b-b22a85072965"
+    },
+    {
+      "claim_id": "a5ccc764-d290-47e4-b4a0-4a09d3f33c59",
+      "result_id": "54e488f0-3c69-4238-9cb9-82fc39041f22"
+    },
+    {
+      "claim_id": "177fefbd-c6b0-449a-9f0d-e2de4d2e2468",
+      "result_id": "54e488f0-3c69-4238-9cb9-82fc39041f22"
+    },
+    {
+      "claim_id": "6ea2c39a-73b6-44b7-b4bb-6d5d740c2b7b",
+      "result_id": "54e488f0-3c69-4238-9cb9-82fc39041f22"
+    },
+    {
+      "claim_id": "85b5fd83-8d10-40bf-ba5b-3c5c93f716df",
+      "result_id": "54e488f0-3c69-4238-9cb9-82fc39041f22"
+    },
+    {
+      "claim_id": "4e82613d-02c8-4bd2-b6c8-e3c93ba8c6aa",
+      "result_id": "54e488f0-3c69-4238-9cb9-82fc39041f22"
+    },
+    {
+      "claim_id": "8723cdf7-5da7-4f2e-85d5-ec276b2308e0",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "9ef2f4e1-486b-4264-a22b-718f9785f026",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "efa4ce79-c2c7-4a88-afb3-aea393e53636",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "87b65e9f-de13-4ca3-bcbd-b7b1f077d6fb",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "95a48a2e-c86a-468a-a836-12d4171375b7",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "f51c2df4-d096-44ff-9238-7c1e54774bda",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "198a150c-fbfa-4477-a25c-aa65b7c1b6e6",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "47f01b8b-c7d7-4232-8bc3-32e64dee519a",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "05f81115-656f-4547-9760-d65c283f624c",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "25e52df9-101f-4680-9a2e-b6cb97f7c1ea",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "637a14a1-856f-4416-b3bc-712581ae41e8",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "d67a7869-ee4c-4249-991c-5819593229eb",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "8b892c49-085c-4a51-a9cc-e27b7b6bfbaa",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "a859290d-f175-4801-8849-ee7157fee3f5",
+      "result_id": "dadcd348-29f6-4edf-8a73-eb5be2861041"
+    },
+    {
+      "claim_id": "88c112d4-85f6-47a0-a6ca-72591437c8dd",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "d3252917-93c2-48d9-98ea-cf07160fa4a3",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "55fc50f0-a965-4c4a-bdf5-0b5f138eaddf",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "e071407d-7dcc-4cce-b753-a8c7f414b9f6",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "31accded-f71d-47b3-9a8e-156daf974f7b",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "a234fd05-cfa5-43b9-9269-c4544299acea",
+      "result_id": "8ba8c3ff-4817-4f45-bec9-6a7e721e05cd"
+    },
+    {
+      "claim_id": "d636a433-fb67-4de1-80a0-e8601aa10ea4",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "b44196d0-0ea2-42d6-b4c6-0c0b17d95dab",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "abf754b6-3e42-4215-b886-20ca54535317",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "a0bb7284-7a10-49a0-9a80-4bd65b6ce32b",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "a3fc284b-4d60-46e2-9492-07c5cb8f9605",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "56d9e822-c6fe-4590-9c26-5fc45d0dc5b9",
+      "result_id": "ec020402-2c64-4693-9592-b749115f8de5"
+    },
+    {
+      "claim_id": "94e055ff-811e-41f3-b922-14a53c7b79fb",
+      "result_id": "00557b64-8052-4cfa-b0af-20b0942bfa87"
+    },
+    {
+      "claim_id": "9348802e-907c-4ea9-a2a6-606484d5f63c",
+      "result_id": "00557b64-8052-4cfa-b0af-20b0942bfa87"
+    },
+    {
+      "claim_id": "6c80e812-42c6-442f-a02a-a67f34ffa0b4",
+      "result_id": "00557b64-8052-4cfa-b0af-20b0942bfa87"
+    },
+    {
+      "claim_id": "24cb545e-648c-4875-911b-e0956eb60ce8",
+      "result_id": "00557b64-8052-4cfa-b0af-20b0942bfa87"
+    },
+    {
+      "claim_id": "374609cb-c017-4fbb-824c-7118d849445b",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "3479703b-0c56-4cd9-b3ea-01280fa45d43",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "2697bdff-79e4-4f7e-a692-4f09774f5985",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "6f2d9145-a99f-434f-a8a6-6d9e6e977ece",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "880304b7-a6be-40ef-8bbe-cc738a86914e",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "805ca2bd-96d3-4443-8f50-114000cbceee",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "9fa8619f-d9b0-4b93-b4b7-9b277eade767",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "3c230d56-df5c-4656-ba0c-4a13878a3e00",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "038f733b-8783-4bf6-b849-5aadac3d46ba",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "3b1449e8-cdb7-49ec-ba9e-6e42dc99dc6f",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "8c983b20-bfad-4dee-8c8e-0f14fc30c65f",
+      "result_id": "dc878aab-edc0-4eb1-9416-1f98d381d1d1"
+    },
+    {
+      "claim_id": "bb7093ea-d29e-412c-9c42-04baacf3e903",
+      "result_id": "3f3a4536-35f5-4568-99f5-a04673412b28"
+    },
+    {
+      "claim_id": "cd14e6fd-c334-439a-a45e-043ad8f940af",
+      "result_id": "3f3a4536-35f5-4568-99f5-a04673412b28"
+    },
+    {
+      "claim_id": "475e78cc-b622-4b10-844f-62faa12d8f4d",
+      "result_id": "3f3a4536-35f5-4568-99f5-a04673412b28"
+    },
+    {
+      "claim_id": "298761b9-d2d3-4f04-9bd9-1c2e2fe26b9d",
+      "result_id": "3f3a4536-35f5-4568-99f5-a04673412b28"
+    },
+    {
+      "claim_id": "64f90c54-4428-4d86-a7ca-c8f0b393e8f3",
+      "result_id": "b1f201ce-5633-4caa-833a-0683112520a5"
+    },
+    {
+      "claim_id": "eed8c62e-0111-488a-b523-4b5bda03924e",
+      "result_id": "b1f201ce-5633-4caa-833a-0683112520a5"
+    },
+    {
+      "claim_id": "df7b5c7c-34e4-4d37-8bc8-6063a7b05a88",
+      "result_id": "b1f201ce-5633-4caa-833a-0683112520a5"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1479 @@
+{
+  "submission": {
+    "id": "88eb6df1-1da2-4dc6-bf68-fcbe6ef25ff6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:37:10.419520Z",
+    "updated_at": "2025-12-02T01:37:10.419520Z"
+  },
+  "content": [
+    {
+      "id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "submission_id": "88eb6df1-1da2-4dc6-bf68-fcbe6ef25ff6",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of gene dosage on the Z-chromosome of schistosome parasites\n\n## Authors\n\n- Marion A L Picard<sup>1</sup> ([ORCID: 0000-0002-8101-2518](https://orcid.org/0000-0002-8101-2518))\n- Celine Cosseau<sup>2</sup>\n- Sabrina Ferr\u00e9<sup>3</sup>\n- Thomas Quack<sup>4</sup>\n- Christoph G Grevelding<sup>4</sup>\n- Yohann Cout\u00e9<sup>3</sup> ([ORCID: 0000-0003-3896-6196](https://orcid.org/0000-0003-3896-6196))\n- Beatriz Vicoso<sup>1</sup> ([ORCID: 0000-0002-4579-8306](https://orcid.org/0000-0002-4579-8306)) \u2020\n\n### Affiliations\n\n1. Institute of Science and Technology Austria Klosterneuburg Austria\n2. University of Perpignan Via Domitia, IHPE UMR 5244, CNRS, IFREMER, University Montpellier Perpignan France\n3. Universit\u00e9 Grenoble Alpes, CEA, Inserm, BIG-BGE Grenoble France\n4. Institute for Parasitology, Biomedical Research Center Seltersberg Justus-Liebig-University Giessen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nXY systems usually show chromosome-wide compensation of X-linked genes, while in many ZW systems, compensation is restricted to a minority of dosage-sensitive genes. Why such differences arose is still unclear. Here, we combine comparative genomics, transcriptomics and proteomics to obtain a complete overview of the evolution of gene dosage on the Z-chromosome of Schistosoma parasites. We compare the Z-chromosome gene content of African (Schistosoma mansoni and S. haematobium) and Asian (S. japonicum) schistosomes and describe lineage-specific evolutionary strata. We use these to assess gene expression evolution following sex-linkage. The resulting patterns suggest a reduction in expression of Z-linked genes in females, combined with upregulation of the Z in both sexes, in line with the first step of Ohno's classic model of dosage compensation evolution. Quantitative proteomics suggest that post-transcriptional mechanisms do not play a major role in balancing the expression of Z-linked genes.\n\n## Introduction\n\nIn species with separate sexes, genetic sex determination is often present in the form of differentiated sex chromosomes (Bachtrog et al., 2014). A sex-specific chromosome can be carried by the male (such as the Y of mammals and fruit flies, in male heterogamety) or by the female (such as the W of birds, in female heterogamety). These sex chromosomes originally arise from pairs of autosomes, which stop recombining after they acquire a sex-determining region (Charlesworth, 1991; Charlesworth et al., 2005). The loss of recombination between X/Z and Y/W chromosomes is likely driven by selective pressures to link the sex-determining gene and alleles with sexually antagonistic effects, and often occurs through inversions on the sex-specific chromosome (Rice, 1987; Bergero and Charlesworth, 2009). The inverted Y/W-linked region stops recombining entirely, which hampers the efficacy of selection and leads to its genetic degeneration (Charlesworth et al., 2005; Engelst\u00e4dter, 2008). The appearance of further sexually antagonistic mutations can restart the process and select for new non-recombining regions, creating sex chromosome \u2018strata\u2019 of different ages (Ellegren, 2011; Wang et al., 2012; Vicoso et al., 2013a; Vicoso et al., 2013b). Eventually, this suppression of recombination can extend to most of the chromosome, leading to gene-poor, mostly heterochromatic sex chromosomes such as the Y chromosome of mammals (Lemaitre et al., 2009).\n\nThe loss of one gene copy on the Y/W is predicted to result in a two-fold reduction of expression in the heterogametic sex, as gene expression is correlated with gene copy number (Guo et al., 1996). This can cause imbalances in gene networks composed of both X/Z-linked and autosomal genes (Wijchers and Festenstein, 2011). Such imbalances can drive the appearance of dosage compensation mechanisms, which target X/Z chromosomes and regulate their expression to restore optimal dosage (Ohno, 1967; Gartler, 2014). While X/Z upregulation in the heterogametic sex is required to re-establish balanced levels of expression, global downregulation in the homogametic sex is also observed (e.g. X-inactivation in mammals). Ohno suggested a two-step mechanism, in which the initial upregulation of expression is not sex-specific. This leads to an excess of dosage in the homogametic sex, and secondarily selects for further repressing mechanisms (\u2018Ohno\u2019s hypothesis\u2019 of dosage compensation Ohno, 1967]). How relevant this model is to the evolution of mammalian dosage compensation is still under debate (e.g. Gu and Walters, 2017; Lin et al., 2012; Nguyen and Disteche, 2006; Vicoso and Bachtrog, 2009a; Mank, 2013). Independent of the underlying mechanisms, balanced gene expression between males and females in species with differentiated sex chromosomes was used as diagnostic of a chromosome-wide (also referred to as \u2018global\u2019, or \u2018complete\u2019) mechanism of dosage compensation in many different clades (Vicoso and Bachtrog, 2009a; Mank, 2013; Gu and Walters, 2017).\n\nIn ZW systems, the loss of genes on the sex-specific W chromosome is generally accompanied by unequal expression levels of the Z-chromosome between ZZ males and ZW females, as well as reduced expression of the Z relative to the autosomes in females. This has generally been interpreted as a lack of chromosome-wide dosage compensation (also referred to as \u2018partial\u2019, or \u2018incomplete\u2019), with individual dosage-sensitive genes being independently regulated instead. Incomplete dosage compensation was described in a wide range of species, including birds (Itoh et al., 2007; Ellegren et al., 2007; Arnold et al., 2008; Wolf and Bryk, 2011), fishes (Chen et al., 2014) and snakes (Vicoso et al., 2013a). So far, Lepidoptera are the only exception to this observation (Gu and Walters, 2017; Huylmans et al., 2017). Why many ZW systems should fail to acquire a global mechanism of dosage compensation is not entirely clear, although several and non-mutually exclusive hypotheses have been put forward (see Discussion, and Gu and Walters [2017] for a review). Another possibility is that the male-bias of the Z is instead caused by an accumulation of genes with male functions due to the male-biased transmission of the Z, which may favor the fixation of sexually antagonistic male-beneficial mutations on this chromosome.\n\nWhile the direct comparison of male and female expression of X/Z-linked and autosomal genes has provided an overview of dosage compensation in many clades, it suffers from several drawbacks (Gu and Walters, 2017). First, chromosome-wide dosage compensation can lead to strongly sex-biased expression, if only the initial upregulation of expression in both sexes has occurred (but not the secondary downregulation of Ohno's hypothesis [Ohno, 1967]). This has been suggested for the flour beetle (Prince et al., 2010) and for the young sex chromosomes of the threespine stickleback (Schulthei\u00df et al., 2015). Biases in expression levels between sexes and/or chromosomes may also have been present ancestrally, before the present sex-chromosomes evolved, and using a proxy for ancestral expression can yield insights into the direct consequences of sex-linkage (Julien et al., 2012; Vicoso and Bachtrog, 2015; Gu et al., 2017). Finally, the vast majority of studies relied only on microarray or RNA-seq data and did not consider any post-transcriptional regulation that might affect gene dosage at the protein level, but not at the transcript level (whereas protein dosage is in most cases the functionally relevant measure). For instance, a proteomic analysis in birds found that several genes appeared to be partially equalized at the protein level despite being strongly male-biased at the transcript level (Uebbing et al., 2015). In humans, post-transcriptional regulation does not appear to play a major role in dosage compensation (Chen and Zhang, 2015).\n\nHere, we combine comparative genomics, transcriptomics and quantitative proteomics to obtain a complete overview of the evolution of gene dosage on the Z-chromosome of parasites of the genus Schistosoma. Schistosomes are a group of blood parasites that can cause schistosomiasis in humans (Chitsulo et al., 2004). Their complex life cycle is characterized by a phase of clonal multiplication in an intermediate mollusk host, and a phase of sexual reproduction in the final warm-blooded host. Unlike the other 20,000 species of hermaphroditic platyhelminths, schistosomes have separate sexes: sexual reproduction occurs immediately after the primary development of\u00a0males and females in their definitive host, and mating is compulsory for the sexual maturation of females (Loker and Brant, 2006; Kunz, 2001). Sex determination is genetic, and relies on a pair of cytogenetically well-differentiated ZW chromosomes (Grossman et al., 1981a). All schistosomes are thought to share the same ancestral pair of ZW sex chromosomes, but differences in their morphology and in the extent of heterochromatization of the W suggest that different strata were acquired independently by different lineages (Grossman et al., 1981a; Lawton et al., 2011).\n\nThe model blood fluke Schistosoma mansoni was one of the first ZW clades to be evaluated for the presence of global dosage compensation, through the comparison of male and female microarray data derived from several tissues (Vicoso and Bachtrog, 2011). It showed reduced expression of Z-linked genes in females relative (i) to the autosomes and (ii) to males, consistent with a lack of chromosome-wide dosage compensation. Interestingly, the reduction of Z-expression in females was less than two-fold, and the Z:autosome ratio of expression was slightly, but consistently, greater than one in males. Our combined genomic, transcriptomic, and proteomic approaches allow us to fully probe the evolution of the male-biased expression of the Z, and suggest a more complex scenario than previously proposed. We discuss this in light of the different hypotheses put forward to account for the evolution of gene dosage on Z chromosomes.\n\n## Results\n\n### Genomic differentiation of ZW sex chromosomes in Asian and African lineages\n\nThe difference in morphology of the ZW pair in African and Asian schistosomes suggests that the two lineages may differ in their gene content (Grossman et al., 1981a). We compared the gene content of the Z-chromosomes of three different species: S. mansoni and Schistosoma haematobium, which belong to African schistosomes, and Schistosoma japonicum, an Asian schistosome (Figure 1). We first identified syntenic blocks between the S. mansoni genome and the S. haematobium and S. japonicum scaffolds. To this end, we mapped all S. mansoni protein coding sequences to the genome assemblies of the two other species and selected only the hits with the highest scores, yielding 9504 S. mansoni/S. haematobium orthologs and 8555 S. mansoni/S. japonicum orthologs (Table 1). Scaffolds were then assigned to one of the S. mansoni chromosomes, based on their ortholog content (Figure 1\u2014source data 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig1-v2.jpg)\n\n**Figure 1.:** The phylogeny of the three species is represented on the left. The female:male (F:M) ratio of coverage (y-axis) along the Z-chromosome of S. mansoni (x-axis) is shown for S. japonicum scaffolds (A) and S. mansoni 10 kb windows (B). Female coverage is shown for S. haematobium scaffolds (C). All species share an ancestral Z-linked stratum S0 (marked in orange). The stratum S1jap (in green) is specific to the Asian lineage represented by S. japonicum. The stratum S1mans (in blue) is specific to the African lineage, represented by S. mansoni and S. haematobium. Dot color is attributed depending on the window/scaffold location within each species: Z-specific regions in orange, pseudoautosomal regions in grey, and ambiguous regions in beige.\n\n**Table 1.**\n Number of orthologs assigned as Z-linked and autosomal in S. mansoni, S. haematobium and S. japonicum,\u00a0based on the female:male (or female for S. haematobium) coverage patterns.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\" colspan=\"2\">Categories</th>\n      <th colspan=\"4\">Schistosoma japonicum</th>\n      <th colspan=\"4\">Schistosoma haematobium</th>\n    </tr>\n    <tr>\n      <th>Z-specific</th>\n      <th>Autosomal</th>\n      <th>Ambiguous</th>\n      <th>Not covered</th>\n      <th>Z-specific</th>\n      <th>Autosomal</th>\n      <th>Ambiguous</th>\n      <th>Not covered</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">Schistosoma mansoni</td>\n      <td>Z-specific</td>\n      <td colspan=\"2\">476 (S0)</td>\n      <td>306 (S1mans)</td>\n      <td>20</td>\n      <td>3</td>\n      <td>847</td>\n      <td>36</td>\n      <td>23</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Autosomal</td>\n      <td colspan=\"2\">137 (S1jap)</td>\n      <td>7062</td>\n      <td>91</td>\n      <td>13</td>\n      <td>216</td>\n      <td>7462</td>\n      <td>262</td>\n      <td>105</td>\n    </tr>\n    <tr>\n      <td>Excluded</td>\n      <td colspan=\"2\">57</td>\n      <td>383</td>\n      <td>4</td>\n      <td>3</td>\n      <td>105</td>\n      <td>411</td>\n      <td>20</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Orthologs total</td>\n      <td colspan=\"5\">8555</td>\n      <td colspan=\"4\">9504</td>\n    </tr>\n  </tbody>\n</table>\n\nWe further performed a comparative coverage analysis to define the Z-specific regions of the three species. Z-derived sequences are expected to display half the genomic coverage in ZW females as in ZZ males, and as the autosomes. We thus mapped male and female genomic reads (or only female reads in the case of S. haematobium) to the reference genome of each species (Protasio et al., 2012a; Criscione et al., 2009; Young et al., 2012; Zhou et al., 2009). Publicly available raw reads were used for S. mansoni and S. haematobium (Wellcome Trust Sanger Institute Bioprojects PREJB2320 and PREJB2425), whereas male and female S. japonicum were sequenced for this study. We then estimated the per base genomic coverage. Median coverage values were 18.40 and 18.99 for S. mansoni male and female libraries; 23.5 and 7.43 for S. haematobium female#1 and female#2 libraries; 23.77 and 20.53 for S. japonicum male and female libraries. Z-specific genomic regions were defined by a maximum value of the female:male ratio of coverage (S. mansoni: log2(female:male)=\u22120.4; S. japonicum: log2(female:male)=\u22120.84), or a maximum value of female coverage (S. haematobium: log2(female)=4.41). Details of how these cutoff values were obtained are provided in the Materials\u00a0and\u00a0methods and Appendix 1. This analysis resulted in 285 newly described Z-specific genes in S. mansoni that were previously located on 19 unplaced scaffolds longer than 50 kb, and to a refined pseudoautosomal/Z-specific structure of the published ZW linkage group (Protasio et al., 2012a; Criscione et al., 2009) (Figure 1\u2014source data 2). It further allowed us to define 379 Z-specific scaffolds (containing 1409 annotated genes with orthologs in S. mansoni) in S. haematobium (Figure 1\u2014source data 3 for exhaustive list) and 461 Z-specific scaffolds (containing 706 annotated orthologs) in S. japonicum (Figure 1\u2014source data 4 for exhaustive list).\n\nWhile the content of the Z was largely shared between the African S. mansoni and S. haematobium (Table 1, Figure 1), large differences were found between the African and Asian lineages: only 476 Z-specific genes were shared by S. mansoni and S. japonicum, while 306 were only Z-specific in S. mansoni and 137 only in S. japonicum (Table 1). Of all these Z-specific genes, 613 were already mapped to the S. mansoni ZW linkage group (Protasio et al., 2012a; Criscione et al., 2009) and, when plotted along the Z-chromosome, outlined three different evolutionary strata: one shared ancestral stratum (S0: 367 genes) and two lineage-specific strata (S1mans, specific to the African schistosomes, with 180 genes; and S1jap, specific to S. japonicum, with 66 genes) (Table 1, Figure 1, and Figure 1\u2014source data 1). The presence of pseudoautosomal regions throughout the S0 (Figure 1) is likely due to errors in the genome assembly. All further analyses were run using all newly identified Z-specific genes, but hold when only Z-specific genes that were previously mapped to the ZW linkage group are considered (Appendix 1).\n\n### Consistent patterns of expression in S. mansoni and S. japonicum\n\nIn order to test for dosage compensation, the median expression of Z-specific genes in ZW females can be compared to the median autosomal expression (Z:AA ratio) and/or to the Z-specific gene expression in ZZ males (F:M ratio). Z:AA or F:M ratio of\u00a0~1 supports global dosage compensation, while a ratio between 0.5 and 1 suggests partial or local dosage compensation. We performed this analysis in S. mansoni and in S. japonicum, using publicly available RNA-seq reads derived from a sexually undifferentiated stage (schistosomula, [Picard et al., 2016; Wang et al., 2017]) and a sexually mature stage (adults, Wellcome Trust Sanger Institute Bioproject PRJEB1237, [Wang et al., 2017]). The inclusion of a sexually undifferentiated stage\u00a0(which lack\u00a0primary spermatocytes or eggs) is important, as much of the expression obtained from adults will necessarily come from their well-developed gonads.\u00a0Sex-linked genes are often sex-biased in the germline, even in organisms that have chromosome-wide dosage compensation (e.g. due to sex-chromosome inactivation during gametogenesis), and the inclusion of gonad expression has led to inconsistent assessments of the status of dosage compensation in other clades (Gu and Walters, 2017; Huylmans et al., 2017). Reads were mapped to their respective genomes, and expression values in Reads Per Kilobase Million (RPKM) were calculated for each gene (Figure 2, Figure 2\u2014source data 1 and 2); only genes with a minimum RPKM of 1 in both sexes were considered.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-v2.jpg)\n\n**Figure 2.:** Z-linked and autosomal gene expression patterns are shown for S. japonicum (A-D) and S. mansoni (E-H), in undifferentiated schistosomula and sexually mature adults. In panels A, C, E, and G, Fem-Z and Male-Z refer to the expression of Z-linked genes in females and males, respectively, and Fem-A and Male-A to the expression of the autosomal genes in females and males. In panels B, D, F, and H, Z refers to Z-linked genes and A to autosomal genes. In all conditions, a strong male bias is observed for the Z-linked genes (B, D, F, H). This male-biased expression of the Z-linked genes is accompanied by both an under-expression in females and an over-expression in males, compared to the level of autosomal expression (A, C, E, G). The level of significance of each comparison (Wilcoxon rank sum test with continuity correction) is indicated by asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes previously mapped to the ZW linkage group were assigned to each Z-chromosome stratum based on their coverage patterns (stringent classification); only genes with RPKM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes previously mapped to the ZW linkage group were assigned to each Z-chromosome stratum based on their coverage patterns (stringent classification); only genes with RPKM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>0 were used. This figure differs from Figure 2-figure supplement 1\u00a0as the Wormbase Parasite list 1:1 orthologs was used instead of our own reciprocal best hit results.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with TPM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with TPM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** The distribution of expression values is shown\u00a0for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp10-v2.jpg)\n\n**Figure 2\u2014figure supplement 10.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes previously mapped to the ZW linkage group were assigned to each Z-chromosome stratum based on their coverage patterns (stringent classification); only genes with RPKM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp11-v2.jpg)\n\n**Figure 2\u2014figure supplement 11.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes previously mapped to the ZW linkage group were assigned to each Z-chromosome stratum based on their coverage patterns (stringent classification); only genes with RPKM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp12-v2.jpg)\n\n**Figure 2\u2014figure supplement 12.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with RPKM\u00a0>0 were used. This figure differs from Figure 2\u2014figure supplement 8\u00a0as the Wormbase Parasite list 1:1 orthologs was used instead of our own reciprocal best hit results.\n\n![Figure 2\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp13-v2.jpg)\n\n**Figure 2\u2014figure supplement 13.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with TPM\u00a0>1 were used.\n\n![Figure 2\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp14-v2.jpg)\n\n**Figure 2\u2014figure supplement 14.:** The distribution of expression values is shown for (A) S. mansoni females, (B) S. mansoni males, (C) S. mansoni female:male, (D) S. japonicum females, (E) S. japonicum males, (F) S. japonicum female:male, (G) Female expression in S. japonicum divided by female expression in S. mansoni, (H) Male expression in S. japonicum divided by male expression in S. mansoni, (I) female:male ratio of expression in S. japonicum divided by female:male ratio of expression in S. mansoni. Asterisks represent levels of significance of comparisons to the control autosomal genes (*p-value<0.05, **p-value<0.001, ***p-value<0.0001). Genes were assigned to each Z-chromosome stratum based only on their coverage patterns; only genes with TPM\u00a0>0 were used.\n\n![Figure 2\u2014figure supplement 15.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp15-v2.jpg)\n\n**Figure 2\u2014figure supplement 15.:** The Z-linked and autosomal gene expression patterns are shown in S. japonicum and S. mansoni. Different filters were applied: a minimum threshold of expression of 1 RPKM in all libraries (A\u2013D), a minimum threshold of expression of 3 RPKM in all libraries (E\u2013H), or a minimum threshold of expression of 1 RPKM per stage (as in the main manuscript), together with a filter on fold change to account for strong sex-biases (FC\u00a0<2 for female:male ratio and male:female ratio) (I-L). Z refers to the female:male ratio of expression in the Z-specific region and A refers to the female:male ratio of expression on autosomes. The level of significance of each comparison is denoted with asterisks: ***p-value<0.0001.\n\n![Figure 2\u2014figure supplement 16.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp16-v2.jpg)\n\n**Figure 2\u2014figure supplement 16.:** The Z-linked and autosomal gene expression patterns are shown for S. japonicum and S. mansoni. Different filters were applied: a minimum threshold of expression of 1 RPKM in all libraries (A\u2013D), a minimum threshold of expression of 3 RPKM in all libraries (E\u2013H), or a minimum threshold of expression of 1 RPKM per stage (as in the main manuscript), together with a filter on fold change to account for strong sex biases (FC\u00a0<2 for female:male ratio and male:female ratio) (I-L). Fem-Z and Male-Z refers to the female:male ratio of expression in the Z-specific region and Fem-A and Male-A refers to the female:male ratio of expression on autosomes, in female and male, respectively. The level of significance of each comparison is denoted with asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001.\n\n![Figure 2\u2014figure supplement 17.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig2-figsupp17-v2.jpg)\n\n**Figure 2\u2014figure supplement 17.:** The Z-linked and autosomal gene expression patterns are shown for schistosomula and adults, in S. japonicum (A\u2013B) and S. mansoni (C\u2013D). We considered only genes with minimum level of expression RPKM\u00a0>1 in all stages, did not take into account the ancestral state of expression, and used the \u2018exhaustive strata\u2019 set of genes. -PPIs and\u00a0+PPIs refer to the female:male ratio of expression in the lineage-specific Z-linked strata S1jap and S1mans, respectively. The level of significance of each comparison is denoted with asterisks: ***p-value<0.0001.\n\nWe consistently observed a strong male bias in the expression of Z-specific genes in both stages and species (F:M ratio between 0.58 and 0.69, Figure 2 and Supplementary file 1), consistent with local or incomplete dosage compensation. While this was generally supported by the lower expression levels of Z-specific genes in females when compared to the autosomes (Z:AA ratio between 0.73 and 0.85; Figure 2, Supplementary file 1), this difference was only apparent for some filtering procedures (Figure 2\u2014figure supplement 1 to Figure 2\u2014figure supplement 14), and even then was not sufficient to fully account for the strong male-bias of the Z. Instead, the higher expression of the male Z in both stages and species (ZZ:AA ratio between 1.25 and 1.46, Supplementary file 1) appeared to also contribute to the male-bias of Z-linked genes. These patterns were qualitatively robust to changes in the methods used to estimate expression (RPKM or TPM [Transcripts Per Kilobase Million]), in the filtering procedure (RPKM\u00a0>\u00a00, RPKM\u00a0>\u00a01, TPM\u00a0>0 or TPM\u00a0>1), and when only genes that were previously mapped to the ZW linkage group were considered. These analyses were further performed independently in the S0, S1mans and S1jap strata, which showed no significant difference in the extent of their male bias. All the resulting plots are shown in Figure 2\u2014figure supplement 1 to Figure 2\u2014figure supplement 14. Finally, Z-specific genes were found to be male-biased even when only genes with broad expression were considered (RPKM\u00a0>\u00a01 and RPKM\u00a0>\u00a03 in all samples, and when genes with strong sex-biases in expression were excluded (M:F\u00a0>\u00a02 or F:M\u00a0>\u00a02, Figure 2\u2014figure supplement 15 and Figure 2\u2014figure supplement 16, I\u2013L panels), confirming that this pattern does not appear to be driven simply by the presence of genes with sex-specific functions on the Z-chromosome. No further influence of known protein-protein interactions was detected (Figure 2\u2014figure supplement 17, Appendix 1).\n\n### Convergent upregulation of the Z in both sexes\n\nThe previous patterns are consistent with an upregulation of the Z-chromosome in both sexes after the degeneration of the W-specific region, and could represent the intermediate step in the evolution of dosage compensation originally postulated by Ohno. However, they could also be due to high expression of the ancestral proto-Z in both sexes, before sex chromosome divergence. To exclude this, we identified one-to-one orthologs between genes annotated in both species using a reciprocal best hit approach (7382 orthologs, Figure 3\u2014source data 1). All genes that were classified as Z-specific in one species but as autosomal in the other were considered to be part of the S1 strata (S1jap if they were Z-specific in S. japonicum or S1mans if they were Z-specific in S. mansoni). We then used the pseudoautosomal expression of these lineage-specific strata as a proxy for the ancestral level of expression. For instance, in S. japonicum, we estimated the S1jap:AA ratio, after normalizing the expression data by their respective (pseudo)autosomal level in S. mansoni (Figure 3A and B). The reversed analysis was performed for S1mans (Figure 3C and D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig3-v2.jpg)\n\n**Figure 3.:** The Z-linked and autosomal gene expression patterns (normalized by ancestral pseudoautosomal or autosomal expression, to show changes since the appearance of the two S1 strata) are shown for S1jap in S. japonicum (A-D) and S1mans in S. mansoni (E-F). Fem-S1j and Male-S1j refer to the normalized expression levels of genes in the stratum S1jap in females and males, Fem-S1m and Male-S1m refer to the normalized expression levels in S1mans, and Fem-A and Male-A refer to the normalized expression levels of autosomal genes in females and in males, respectively. The level of significance of each comparison (Wilcoxon rank sum test with continuity correction) is denoted with asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The Z-linked and autosomal gene expression patterns (normalized by ancestral pseudoautosomal or autosomal expression, to show changes since the appearance of the two S1 strata) are shown for S1jap in S. japonicum and S1mans in S. mansoni. Different filters were applied: a minimum threshold of expression of 1 RPKM in all libraries (A\u2013D), a minimum threshold of expression of 3 RPKM in all libraries (E\u2013H), or a minimum threshold of expression of 1 RPKM per stage (as in the main manuscript), together with a filter on fold change to account for strong sex biases (FC<2 for female:male ratio and male:female ratio)\u00a0(I-L). S1jap and S1mans refer to the female:male ratio of expression in the lineage specific Z-linked strata S1jap and S1mans, respectively. The level of significance of each comparison is denoted with asterisks: ***p-value<0.0001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The Z-linked and autosomal gene expression patterns (normalized by ancestral pseudoautosomal or autosomal expression, to show changes since the appearance of the two S1 strata) are shown for S1jap in S. japonicum and S1mans in S. mansoni. Different filters were applied: a minimum threshold of expression of 1 RPKM in all libraries (A\u2013D), a minimum threshold of expression of 3 RPKM in all libraries (E\u2013H), or a minimum threshold of expression of 1 RPKM per stage (as in the main manuscript), together with a filter on fold change to account for strong sex biases (FC\u00a0<2 for female:male ratio and male:female ratio) (I\u00ac-L). Fem-S1j and Male-S1j refer to the normalized expression levels of genes in the stratum S1jap in females and males, Fem-S1m and Male-S1m refer to the normalized expression levels in S1mans, and Fem-A and Male-A refer to the normalized expression levels of autosomal genes in females and in males, respectively. The level of significance of each comparison is denoted with asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001.\n\nFigure 3 confirms that the male-biased expression of Z-specific genes is a consequence of their sex-linkage, and that the Z-chromosome has become under-expressed in females relative to the ancestral expression. However, a full two-fold reduction in female expression is not observed, consistent with partial upregulation, and/or full upregulation of a subset of dosage-sensitive genes (Z:AA ranging from 0.68 to 0.83, Supplementary file 1)(Sangrithi et al., 2017; Pessia et al., 2012). Figure 3 also generally supports an increase in expression in males (ZZ:AA ranging from 0.98 to 1.35, Supplementary file 1). Male adults of S. japonicum are the exception, with a ZZ:AA of 0.98. However, given that an excess of expression is observed when (i) we do not take into account the ancestral expression (Figure 2), (ii) we focus on genes previously mapped to the ZW pair (Figure 2\u2014figure supplements 3, 4, 10 and 11), and (iiii) we consider the schistosomula stage (with or without the ancestral expression and independent of the classification), this is likely due to noise in the sample and not to a true biological difference (only 58 genes were tested). Figure 3 shows the distributions for all genes with a minimum RPKM value of 1 in males and females of both species. We repeated the analysis using the same filters as before (minimum RPKM of 0, TPM of 0, TPM of 1), and with a publicly available list of 1:1 orthologs (obtained from the Wormbase Biomart, see Methods). The resulting plots are shown in Figure 2\u2014figure supplement 1 to Figure 2\u2014figure supplement 14, and Figure 3\u2014figure supplements 1 and 2. Gene expression values for the orthologs of each species are provided in Figure 3\u2014source data 2 and 3.\n\n### Male-biased protein dosage of Z-specific genes\n\nWe tested for putative post-transcriptional mechanisms by assessing the dosage compensation pattern at the proteomic level in adult S. mansoni, using a somatic tissue (head region) as well as the gonads; three replicates were used for each tissue and sex. Heads and gonads were chosen as they allowed us to compare Z-specific gene dosage in tissues with widespread functional sex-specificity (ovary and testis), and in a tissue where most dosage imbalances are likely to be deleterious. We used a label-free quantitative mass spectrometry approach to obtain a relative quantification of the protein levels in each tissue depending of the sex (Figure 4\u2014source data 1 to 5). Post-transcriptional dosage compensation mechanisms would be detectable by (i) an equalization of the Z expression between sexes at the protein level (F:M close to one for both the Z and the autosomes); (ii) a different correlation between F:M obtained from mRNA and from proteins for Z-linked and autosomal genes. We used publicly available head and gonad microarray data (Nawaratna et al., 2011) as the transcriptomic reference (Figure 4\u2014source data 6). A significant and positive correlation was found between the F:M ratio derived from the microarray and from the proteomic data (Figure 4), and between transcript and protein dosage levels in both males and females (Figure 4\u2014figure supplements 1 and 2), confirming the validity of the comparison.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig4-v2.jpg)\n\n**Figure 4.:** (A), (B) The female:male (F:M) ratio of protein dosage in S. mansoni heads (A) and gonads (B), for Z-specific (Z), pseudoautosomal (PSA) or autosomal (A) genes. The dotted line shows the autosomal median of F:M expression. The level of significance of each comparison (Wilcoxon rank sum test with continuity correction) is denoted with asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001. (C), (D) Pearson correlation between the female:male ratio of expression obtained by proteomics (y-axes) and by microarrays (x-axes) in S.mansoni heads (C) and gonads (D). A positive correlation (coefficients \u03c1) is observed for Z-linked (Z, in orange), pseudoautosomal (PSA, in grey) and autosomal genes (A, in darkgrey). The level of significance of each correlation is denoted by asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001, N.S. p-value>0.05. No significant difference was found between the correlation obtained for Z-linked and autosomal genes in either tissue (using a Fisher r-to-z transformation).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A positive correlation (coefficients R) is observed for Z-linked (Z, in light blue), pseudo-autosomal (PSA, in grey) and autosomal genes (A, in dark blue). The level of significance of each correlation is denoted by asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001. No significant difference was found between the correlations obtained for Z-linked and autosomal genes in either tissue (using a Fisher r-to-z transformation).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** A positive correlation (coefficients R) is observed for Z-linked (Z, in light pink), pseudo-autosomal (PSA, in grey) and autosomal genes (A, in dark pink. The level of significance of each correlation is denoted by asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001. No significant difference was found between the correlations obtained for Z-linked and autosomal genes in either tissue (using a Fisher r-to-z transformation).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35684/elife-35684-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** A positive correlation (coefficients R) is observed for Z-linked (Z, in orange), pseudo-autosomal (PSA, in grey) and autosomal genes (A, in darkgrey). The level of significance of each correlation is denoted by asterisks: *p-value<0.05, **p-value<0.001, ***p-value<0.0001, N.S. p-value>0.05. No significant difference was found between the correlations obtained for Z-linked and autosomal genes in either tissue (using a Fisher r-to-z transformation).\n\nSimilar to what was observed using RNA-seq, the expression of Z-specific genes was strongly male-biased compared to that of autosomal genes in both heads (F:M of 0.68 for the Z chromosome versus 0.92 for the autosomes; Figure 4A, Supplementary\u00a0file 1) and gonads (F:M of 0.78 versus 0.99; Figure 4B, Supplementary file 1). These F:M ratios are closer to each other than in our RNA-seq analysis (Figure 2, Supplementary file 1), or than the microarray data (Supplementary file 1), which could suggest a potential contribution of post-transcriptional regulation to dosage equalization. However, Figure 4B shows that Z-linked and autosomal genes show a similar correlation between the F:M ratios found for mRNAs and proteins (p>0.05 with a Fisher r-to-z transformation of the correlation coefficients, Figure 4C and D), which argues against a major role of post-transcriptional regulation to balance expression. This similarity between Z-linked and autosomal genes holds when only genes with male-biased expression in the microarray data are considered (Figure 4\u2014figure supplement 3), and when the transcript and protein dosage of Z-linked autosomal genes are compared within each sex (Figure 4\u2014figure supplements 1 and 2).\n\n## Discussion\n\n### Schistosome sex chromosome evolution in the age of genomics\n\nS. mansoni, S. haematobium and S. japonicum are the main species responsible for human schistosomiasis and have been the subject of many molecular and genomic studies. Despite the availability of extensive genomic and transcriptomic resources (e.g. a genome assembly at the near-chromosome level for S. mansoni (Protasio et al., 2012a; Criscione et al., 2009), or sex- and stage-specific transcriptomes (Picard et al., 2016; Lu et al., 2016; Grevelding et al., 2018; Lu et al., 2017), many basic questions remain regarding their reproduction and biology. For instance, the master sex-determining gene (and whether it is located on the W or Z) is still a mystery (Lepesant et al., 2012; Portela et al., 2010). This is partly due to the inherent challenges of assembling genomes from sequencing data, especially for regions rich in heterochromatin and repetitive sequences, such as sex chromosomes. For instance, 416 scaffolds, including 3893 genes (29% of the annotated nuclear genes), are still unplaced. By basing our analysis on genomic coverage, we were able to detect a further 285 Z-specific genes in S. mansoni; their role in sex determination can be investigated further. Our comparative approach can also reduce the number of candidates, as any gene involved in sex determination should in principle be found in the ancestral Z-specific stratum; similar analyses in other species can in the future refine the candidate region. Another advantage of basing our Z-assignment purely on coverage patterns is that our results should be largely independent of potential biases in the current version of the genome. It should, however, be noted that many genes are likely still missing from the current assembly (which has a BUSCO score of 76% complete plus fragmented genes; https://parasite.wormbase.org/index.html [Howe et al., 2016;\u00a0Howe et al., 2017]) and that repeating these analyses using future improved assemblies will be necessary to obtain the full set of sex-linked genes.\n\nA gradient of ZW heteromorphism between schistosome species was revealed by cytogenetic studies (Grossman et al., 1981a; Grossman et al., 1981b; Short and Grossman, 1981); in particular, African schistosomes were found to have much more extensive ZW differentiation and W heterochromatinization than Asian species (Hirai et al., 2000). Our results generally support these cytogenetic data: we confirm the acquisition of independent evolutionary strata in the sex chromosomes of S. mansoni and S. japonicum, and detect a larger number of Z-specific genes in the African species (8% to 11% of all annotated orthologs, respectively, in S. mansoni and S. haematobium) than in S. japonicum (5.5% of all annotated orthologs). Interestingly, although the sex chromosomes of the African S. mansoni and S. haematobium differ morphologically, they are largely similar in their gene content (Figure 1), consistent with their much closer phylogenetic relationship (the median synonymous divergence between the two species is around 17%, compared to 65% for S. mansoni/S. japonicum, Appendix 1). This may be comparable to snakes, where ZW pairs with vastly different morphologies were all equally differentiated at the genomic level (Vicoso et al., 2013a), and highlights the contribution of other factors, such as differential transposable element accumulation, to the large-scale morphology of sex chromosomes.\n\n### ZW systems and incomplete dosage compensation: gene-by-gene or partial shift?\n\nZW systems (aside from Lepidoptera) consistently show male-biased expression of the Z chromosome (Gu and Walters, 2017). While female-biased expression of the X occurs in a few young XY systems (Gu and Walters, 2017; Schulthei\u00df et al., 2015; Howe et al., 2017; Grossman et al., 1981b; Short and Grossman, 1981; Hirai et al., 2000; Mank and Ellegren, 2009), well-established X chromosomes generally show full equalization of gene expression between the sexes. This difference has often been framed as the acquisition of global mechanisms of dosage compensation, which affects the whole X/Z, versus the acquisition of local compensation, in which dosage-sensitive genes become individually regulated (Mank and Ellegren, 2009). Several parameters should influence this, and favor local compensation in ZW systems: (i) The speed of the heterochromosome degeneration: when only a few genes are lost at a time (because the region of suppressed recombination is small, or because degeneration is slow), the establishment of a gene-by-gene dosage compensation may be favored; on the other hand, the loss of many genes at once could favor global mechanisms of dosage compensation (Gu and Walters, 2017; Vicoso and Charlesworth, 2009b). Since more mutations occur during spermatogenesis than oogenesis, female-specific W chromosomes will generally have lower mutation and degeneration rates than male-specific Ys, favoring local compensation; (ii) The effective population size of Z (NeZ): NeZ is decreased when the variance in reproductive success of ZZ males is larger than that of ZW females (e.g. in the presence of strong sexual selection). This will impair the adaptive potential of the Z (Mank, 2009; Mullon et al., 2015), such that only strongly dosage-sensitive genes can become upregulated in the heterogametic sex, while the others remain uncompensated; (iii) More efficient purging of mutations that are deleterious to males: strong sexual selection can also increase the strength of purifying selection on males, by preventing all but the fittest males from contributing to the next generations. If mutations that compensate for the loss of Y/W-linked genes overexpress the X/Z copy in both sexes, they will be under negative selection in the homogametic sex, and may be more efficiently selected against when males are the homogametic sex (Mullon et al., 2015).\n\nSchistosomes are unusual among female-heterogametic clades in that they appear to have a chromosome-wide upregulation of the Z in both sexes; such an increase in males was not detected in birds (Julien et al., 2012) or snakes (Vicoso et al., 2013a), even when ancestral expression was taken into account. They therefore likely represent an intermediate between ZW species with true local compensation, and the chromosome-wide compensation of the ZW Lepidoptera. These results further show that, even if mutations that upregulate gene expression in both sexes are more easily fixed on an evolving X-chromosome than on an evolving Z (Mullon et al., 2015), this is not an absolute barrier to the evolution of global dosage compensation. It is however still unclear why the evolutionary dynamics appear to differ between schistosomes and most other ZW clades, as the demographic and population genetics parameters of this group are largely unknown. The observed male biased sex-ratio in adults, combined with a largely monogamous mating system (Beltran and Boissier, 2009; Beltran and Boissier, 2008), may increase the reproductive variance of males and could reduce the effective population size of the Z. This should also lead to stronger sexual selection in males than in females (Beltran and Boissier, 2008; Steinauer et al., 2009), suggesting similar evolutionary dynamics as in other ZW systems. A detailed characterization of the population genetics of the Z chromosome and autosomes will therefore be crucial for understanding what may have driven the evolution of this unusual system.\n\n### The relevance of the Ohno\u2019s hypothesis in the high-throughput sequencing era\n\nOhno\u2019s hypothesis predicts that the heterochromosome is initially overexpressed in both sexes, then secondarily downregulated in the homogametic sex (Ohno, 1967). This theoretical scenario was first formulated to account for the inactivation of the X in mammals. Since then, similar molecular mechanisms to downregulate the X/Z chromosome have been characterized in nematodes and moths (Kiuchi et al., 2014; Meyer, 2010). If an initial upregulation of the X did occur in both sexes, then inactivation in the homogametic sex should simply restore the ancestral expression levels, a hypothesis that has been tested in many empirical studies in mammals. Most of them assumed that the X and autosomes must have had similar ancestral levels of expression, and simply compared their expression (Julien et al., 2012; Nguyen and Disteche, 2006; Xiong et al., 2010; Gu and Walters, 2017; Chen and Zhang, 2015; Graves, 2016; Deng et al., 2011; Kharchenko et al., 2011; Yildirim et al., 2011; Lin et al., 2012; Pessia et al., 2014). These yielded mixed results, with some (Xiong et al., 2010) finding reduced expression of the X, while others (e.g. Deng et al., 2011; Kharchenko et al., 2011; Yildirim et al., 2011) found similar levels of expression for X-linked and autosomal genes, in agreement with Ohno\u2019s predictions. Taking ancestral gene expression into account, Julien et al. (2012) found evidence of an Ohno-like mechanism in the marsupials but not in placental mammals (Julien et al., 2012). Pessia et al. (2012) recently found that while individual dosage-sensitive genes do show evidence of upregulation, the majority does not. The evolution of X-inactivation may therefore have involved a complex scenario under which a few dosage-sensitive genes first became individually upregulated in both sexes (gene-by-gene compensation), followed by the establishment of a chromosome-wide mechanism to downregulate expression in females (global compensation) (Sangrithi et al., 2017; Pessia et al., 2012).\n\nOur results, which consider ancestral expression and do not indicate a major influence of post-transcriptional regulation, suggest a scenario closer to Ohno\u2019s original hypothesis, with the male Z showing a consistent increase in expression. A similar pattern has\u00a0been observed in Tribolium castaneum (Coleoptera, Prince et al., 2010), where the female X has\u00a0been found to be over-expressed relative to the autosomes, and to the male X-chromosome. However, an RNA-seq analysis in the same species did not detect this (Mahajan and Bachtrog, 2015), so it is at this point unclear whether it truly represents an example of Ohno\u2019s model in action. The youngest evolutionary stratum of the young XY pair of threespine sticklebacks also shows overexpression in females (Schulthei\u00df et al., 2015), even when ancestral expression is accounted for (White et al., 2015). However, the interpretation of these patterns is complicated by the fact that such an overexpression is also detected for the pseudoautosomal region, and that the oldest evolutionary stratum appears to lack dosage compensation altogether. Schistosomes may therefore not only represent an ideal system in which to investigate the evolution of dosage compensation in a ZW system, but also an unparalleled system for understanding the relevance of the model and predictions originally made by Ohno.\n\n## Materials and methods\n\nA detailed description of the computational analyses, as well as all the scripts that were used, are provided in Appendix 1.\n\n### DNA sequencing of S. japonicum males and females\n\nMale and female worms preserved in ethanol of S. japonicum were provided by Lu Dabing from Soochow University (Suzhou, China). DNA was extracted from 28 pooled males and 33 pooled females. The worms were lysed using the Tissue Lyser II kit (QIAGEN) and DNA was isolated using the DNeasy Blood and Tissue Kit (QIAGEN). DNA was then sheared with Covaris Focused-ultrasonicator. Library preparation and sequencing (HiSeq 2500 v4 Illumina, 125 bp paired-end reads) were performed at the Vienna Biocenter Next Generation sequencing facility (Austria). Reads have been deposited at the NCBI Short Reads Archive under accession number SRP135770.\n\n### Publicly available DNA reads and genome assemblies\n\nS. mansoni DNA libraries (100 bp paired-end reads) were downloaded from the NCBI Sequence Read Archive, under the accession numbers ERR562989 (~6000 male pooled cercariae) and ERR562990 (~6000 female pooled cercariae). Female S. haematobium DNA libraries (80 bp paired-end reads) were found under accession numbers ERR037800 and ERR036251. No male S. haematobium library was available. The reference genome assemblies of S. mansoni (PRJEA36577, [Protasio et al., 2012b]), S. haematobium (PRJNA78265, [Young et al., 2012]) and S. japonicum (PRJEA34885, [Zhou et al., 2009]) were obtained from the WormBase parasite database (https://parasite.wormbase.org/index.html [Howe et al., 2016; Howe et al., 2017]).\n\n### Orthology and assignment to the S. mansoni chromosomes\n\nS. mansoni coding sequences and their respective chromosomal locations were obtained from the WormBase Parasite database (https://parasite.wormbase.org/index.html, [Howe et al., 2016; Howe et al., 2017]). This gene set was mapped to the S. haematobium and S. japonicum genome assemblies using Blat (Kent, 2002) with a translated query and dataset (-dnax option), and a minimum mapping score of 50; only the genome location with the best score was kept for each. When more than one gene overlapped by more than 20 base pairs, only the gene that had the highest mapping score was kept. Finally, each scaffold was assigned to one of the S. mansoni chromosomes, depending on the majority location of the genes that mapped to it, or on their total mapping scores if the same number of genes mapped to two separate chromosomes. The final chromosomal assignments are provided in Figure 1\u2014source data 1.\n\n### DNA read mapping and estimation of genomic coverage\n\nFor the S. japonicum DNA reads, adaptors were removed using Cutadapt (v1.9.1 [Martin, 2011]) and the quality of the reads was assessed using FastQC (v0.11.2, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/); no further quality trimming was deemed necessary. For the S. mansoni and S. haematobium reads, potential adaptors were systematically removed, and reads were trimmed and filtered depending on their quality, using Trimmomatic (v0.36 [Bolger et al., 2014]). The resulting read libraries of each species were mapped separately to their reference genomes using Bowtie2 (--end-to-end --sensitive mode, v2.2.9 [Langmead and Salzberg, 2012]). The resulting alignments were filtered to keep only uniquely mapped reads, and the male and female coverages were estimated from the filtered SAM files with SOAPcoverage (v2.7.7., http://soap.genomics.org.cn/index.html). Coverage values were calculated for each scaffold in S. haematobium and S. japonicum, and for each 10 kb non-overlapping window in S. mansoni. The coverage values for each library are provided in Figure 1\u2014source data 3 and 4.\n\n### Detection of Z-specific sequences\n\nFor each species, we calculated the log2(female:male) coverage of each scaffold or, in the case of S. mansoni, of each 10 Kb window along the genome. Since only female DNA data was available for S. haematobium, the log2(female1\u00a0+female2) was used instead for this species.\n\nIn order to determine the 95% and 99% percentile of log2(female:male) of Z-linked sequences, which we use as cutoff values for assignment to Z-specific regions, we first excluded scaffolds/windows that fit an autosomal profile. To do so, the 1st and 5th percentile of log2(female:male) were estimated using all 10 kb windows found on the annotated autosomes of S. mansoni (Protasio et al., 2012b); in S. haematobium and S. japonicum, all scaffolds that mapped to the S. mansoni autosomes were used for this purpose.\n\nBy plotting the distribution of log2(female:male) for the scaffolds/windows that map to each chromosome (Appendix 1), we determined that: (i) for S. mansoni the 1st percentile (log2(female:male)=\u22120.26) discriminates effectively between autosomal and Z-specific windows; (ii) for S. haematobium and S. japonicum, which have noisier coverage, the 1st percentile included a significant fraction of Z-derived genes, and the 5st percentile was used instead (respectively log2(female)\u00a0=\u00a04.57 and log2(female:male)=\u22120.40). All scaffolds with higher log2(female:male) or log2(female) were excluded.\n\nThe 95th and 99th quantiles of coverage were then calculated for the remaining, putatively Z-linked, sequences. By plotting all the coverage values along the S. mansoni Z-chromosome (Appendix 1 and Figure 1), we determined that: (i) for S. mansoni and S. haematobium, the 95th quantile (log2(female:male)=\u22120.4 and log2(female)\u00a0=\u00a04.41, respectively) was an effective cut-off for discriminating pseudoautosomal and Z-specific sequences; (ii) for S. japonicum, using the 95th percentile lead to the exclusion of many genes in Z-specific regions, and the 99st percentile (log2(F:M)=\u22120.84) was used instead. The Z-specific or autosome assignation was finally attributed as follows: (i) in S. mansoni, windows were classified as Z-linked if they displayed log2(F:M)<\u22120.4 and as autosomal if log2(F:M)>\u22120.4; (ii) for S. haematobium, scaffolds with log2(femalesum)\u00a0<4.41 were classified as Z-linked, scaffolds with log2(femalesum)\u00a0>4.57 as autosomal, and all others as ambiguous; (iii) for S. japonicum, scaffolds with log2(F:M)<\u22120.84 were classified as Z-linked, scaffolds with log2(F:M)>\u22120.40 as autosomal, and all others as ambiguous. For S. haematobium and S. japonicum, we considered only scaffolds with at least a coverage of 1 in each library (n.a.). In S. mansoni, unplaced scaffolds shorter than 50 kb were excluded; five consecutive 10 kb windows with consistent coverage patterns were required for a region to be classified as either Z-specific or autosomal. Smaller regions, as well as the two 10 Kb windows surrounding them, were excluded (see Appendix 1). The final classifications for the three species are provided in Figure 1\u2014source data 2, 3 and 4, and summarized for orthologs in Figure 1\u2014source data 1.\n\n### Definition of Z-specific strata in S. mansoni and S. japonicum\n\nThe Z-specific gene content of S. mansoni and S. japonicum was compared in order to define Z-chromosome strata. Genes that were located on Z-specific scaffolds/windows in both species were assigned to the shared stratum \u2018S0\u2019. Genes that were assigned to Z-specific regions in one species but not in the other were assigned to lineage-specific strata: \u2018S1mans\u2019 genes were Z-specific in S. mansoni and autosomal in S. japonicum, while \u2018S1jap\u2019 genes were Z-specific in S. japonicum and autosomal in S. mansoni. While the main figures consider all the genes that were classified as Z-linked or autosomal based on coverage (referred to as the \u2018exhaustive classification\u2019 in Appendix 1 and Figures), independent of their original genomic location, we repeated the analyses using only the Z-specific genes that were already assigned to the ZW linkage map of S. mansoni (the \u2018stringent classification\u2019 in Appendix 1). All genes belonging to the categories \u2018excluded\u2019, \u2018ambiguous\u2019, \u2018n.a.\u2019 or that did not have orthologs on S. japonicum scaffolds were not further considered (Table 1). \u2018PSA_shared\u2019 and \u2018Aut_shared\u2019 are common to the two classifications and correspond to genes that were classified as autosomal in both species using coverage and that were previously mapped to the ZW linkage group or to the autosomes of S. mansoni, respectively (Protasio et al., 2012b).\n\n### Publicly available RNA reads and estimation of gene expression\n\nS. mansoni and S. japonicum RNA-seq libraries were obtained from SRA (NCBI). Accession numbers are: S. mansoni adult females: ERR506076, ERR506083, ERR506084; S. mansoni adult males: ERR506088, ERR506082, ERR506090; S. mansoni schistosomula females: SRR3223443, SRR3223444; S. mansoni schistosomula males: SRR3223428, SRR3223429; S.\u00a0japonicum adult females: SRR4296944, SRR4296942, SRR4296940; S.\u00a0japonicum adult males: SRR4296945, SRR4296943, SRR4296941; S. japonicum schistosomula females: SRR4279833, SRR4279491, SRR4267990; S. japonicum schistosomula males: SRR4279840, SRR4279496, SRR4267991. Raw reads were cleaned using trimmomatic (v 0.36\u00a0[Bolger et al., 2014]), and the quality of the resulting reads was assessed using FastQC (v0.11.2, https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Reads were mapped to their respective reference genomes used Tophat2 (Trapnell et al., 2009). Read counts were obtained with H (Anders et al., 2015) and expression values (in Reads Per Kilobase of transcript per Millionmapped reads, RPKM) were calculated for each gene in each of the RNA-seq libraries (Figure 2\u2014source data 1). TPM (Transcripts Per Kilobase Million) values were also calculated using Kallisto (Bray et al., 2016) against set of coding sequences of the respective species. All expression values are provided in Figure 3\u2014source data 2 and 3. A Loess Normalization (R library Affy) was performed on the schistosomulum data and on the adult data separately and all analyses were performed using different thresholds (RPKM\u00a0>\u00a00, RPKM\u00a0>\u00a01, TPM\u00a0>0 or TPM\u00a0>1 in all the libraries of the studied stage). The Loess normalization was applied to all conditions at once when we filtered for minimum expression in all stages and sexes (RPKM\u00a0>\u00a01 and RPKM\u00a0>\u00a03, Figure 2\u2014figure supplements 15\u201317, Figure 3\u2014figure supplements 1 and 2). Correlation analyses were performed for each developmental stage, considering libraries from both males and females, and both species. As shown in Appendix 1, two S. mansoni libraries (ERR506076 and ERR506082) were not well correlated with the other samples, and were excluded from our study. Expression values were averaged for each stage and sex. The significance of differences between medians of expression was tested with Wilcoxon rank sum tests with continuity correction.\n\n### Detection of S. mansoni and S. japonicum one-to-one orthologs\n\nS. japonicum coding DNA sequences and their respective location on the genome scaffolds were obtained from the WormBase Parasite database (https://parasite.wormbase.org/index.html [Howe et al., 2016; Howe et al., 2017]). The S. mansoni set of coding sequences (see above) was mapped to the S. japonicum gene set using Blat (Kent, 2002) with a translated query and dataset (-dnax option), and a minimum mapping score of 50; only reciprocal best hits were kept. This reciprocal best hit ortholog list is provided in Figure 3\u2014source data 1 and 2. A second list of orthologs was obtained from the Biomart of WormBase Parasite, excluding paralogues, and requiring a gene stable ID for both S. mansoni (PRJEA36577) and S. japonicum (PRJEA34885) (in Figure 3\u2014source data 1 and 3). In subsequent transcriptomic analyses, each list was used independently to ensure that the results were independent of the method used to assign orthology.\n\n### Microarray analysis\n\nMicroarray data for male and female heads and gonads (Nawaratna et al., 2011) were obtained from the Gene Expression Omnibus (GEO) database (NCBI, ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE23nnn/GSE23942/matrix/). A Loess Normalization (R library Affy) was performed on the head and gonad data separately. When different probes corresponded to one gene, their expression values were averaged. Gene expression was available for a total of 6925 genes. The normalized data are available in Figure 4\u2014source data 6.\n\n### Protein extraction and proteomic analysis\n\nMale and female adult S. mansoni gonads were sampled using the whole-organ isolation approach described previously (Hahnel et al., 2013). Twenty ovaries and 20 testes, as well as five heads of each sex, were sampled, in triplicate, from paired worms. All biological samples were resuspended in Laemmli buffer, denatured and frozen at \u221220\u00b0C until further processing. Subsequent protein treatment and analyses were performed at the \u2018EDyP-service\u2019 \u2013 proteomic platform (Grenoble, France). The extracted proteins were digested by modified trypsin (Promega, sequencing grade). The resulting peptides were analyzed by nanoLC-MS/MS (Ultimate 3000 RSLCnano system coupled to Q-Exactive Plus, both Thermo Fisher Scientific). Separation was performed on a 75\u00a0\u00b5m x 250\u00a0mm C18 column (ReproSil-Pur 120 C18-AQ 1.9 \u00b5m, Dr. Maisch GmbH) after a pre-concentration and desalting step on a 300 \u00b5m\u00a0\u00d7\u00a05 mm C18 precolumn (Pepmap, Thermo Fisher Scientific).\n\nMS and MS2 data were acquired using Xcalibur (Thermo Fisher Scientific). Full-scan (MS) spectra were obtained from 400 to 1600 m/z at a 70,000 resolution (200 m/z). For each full-scan, the most intense ions (top 10) were fragmented in MS2 using high-energy collisional dissociation (HCD). The obtained data were processed in MaxQuant 1.5.8.3 against the database loaded from Uniprot (taxonomy Schistosoma mansoni, October 26th, 2017, 13.521 entries) and the MaxQuant embedded database of frequently observed contaminants. The resulted iBAQ values (Tyanova et al., 2016) were loaded into ProStaR (Wieczorek et al., 2017) for statistical analysis. Contaminant and reverse proteins were removed and only the proteins with three quantified values in at least one condition were taken into account.\n\nAfter log2 transformation, the iBAQ values were normalized by overall-wise median centering followed by imputation using detQuantile algorithm with quantile set to 1 (Figure 4\u2014source data 1 and 2). An alternative set of data without imputed values is available in Figure 4\u2014source data 3 and 4. 1988 and 2750 Schistosoma mansoni proteins were identified in heads and in gonads, respectively (see Figure 4\u2014source data 1 and 2 for statistical testing of differential abundance between male and female samples). Among them, 1741 and 2516 could be attributed unambiguously to a Schistosoma mansoni gene and were represented by more than one peptide; these were subsequently analyzed (See Figure 4\u2014source data 5).\n\n### Data\u00a0availability\n\nDNA reads of male and female S. japonicum are available on the SRA database under study number SRP135770. Sex and tissue-specific S. mansoni label-free proteomic data are provided in Figure 4\u2014source data 1 to Figure 4\u2014source data 4.\n\n### Code availability\n\nThe full bioinformatic pipeline used in this study is provided in Appendix 1.\n",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "65954815-26e9-4405-9e42-26d6bd627e26",
+      "submission_id": "88eb6df1-1da2-4dc6-bf68-fcbe6ef25ff6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Asifa Akhtar, Max Planck Institute for Immunobiology and Epigenetics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35684.065](https://doi.org/10.7554/eLife.35684.065)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Evolution of gene dosage on the Z-chromosome of schistosome parasites: a snapshot of Ohno's hypothesis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nVicoso and colleagues analyse dosage compensation status of the Z chromosome in ZW females and ZZ males in three schistosome species and propose that the Z-linked genes are upregulated in both sexes in addition to reduced expression of Z-linked genes in females indicating that their results are consistent with Ohno's original hypothesis. Reviewers agreed that studying evolution of sex chromosome is an important topic and that authors provide interesting evidence for dosage compensation regulation in schistosome. However, a number of concerns were raised regarding the analysis of the genomewide data set for scoring dosage compensation status. These points need to be addressed in a thoroughly revised version before we make a final decision on the manuscript.\n\nWe would like you to especially address the following concerns.\n\nReviewers discussed that authors should pay close attention to, and describe in detail, how they calculate X:A ratios. They should take into consideration the expression of house-keeping genes and sex bias expression. This is an important point to address as it could significantly change the interpretations regarding the status of dosage compensation in schistosomes.\n\nThis primary concern is described in more detail in the reviewers' original comments, so their full reviews are appended below.\n\nReviewer #1:\n\nHere, Picard et al. examine the gene content and dosage compensation status of the Z chromosome in ZW female and ZZ male African and Asian schistosomes. Dosage compensation is assayed by comparing Z expression between the sexes (F:M ratio) and by calculating Z versus autosomal expression within each sex (Z:AA ratio). Both ratios are expected to = 1.0 if dosage compensation is \"complete\". They find that the F:M ratio falls below 1.0, suggesting greater Z expression in males than females. Z:AA ratios in females fall between 0.5 and 1.0, while in males they exceed 1.0. The conclusion is that some degree of Z-upregulation, or \"incomplete\" dosage compensation, occurs in both sexes, consistent with the first evolutionary step as proposed by Ohno. Analysis of microarray and proteomic data reveals concordance between RNA and protein levels, suggesting that post-transcriptional mechanisms do not kick in to provide \"full\" Z dosage compensation.\n\nThis manuscript addresses an important biological question. However, I'm not sure the analyses currently support the proposed Z dosage compensation status in schistosomes.\n\nStudying Z/X upregulation is complex, and several previous studies are flawed because they have not paid attention to several important factors. In the current submission the authors have considered most of these factors: they have set an appropriate lower cut-off for gene expression (RPKM >1), and have compared expression of extant with ancestral Z-genes. However, the issue of dosage-sensitive housekeeping genes is not considered. As proposed by Birchler and demonstrated by Pessia (cited in the first paragraph of the subsection \u201cThe relevance of the Ohno\u2019s hypothesis in the high-throughput sequencing era\u201d), upregulation preferentially affects this specific class of genes. Pessia et al. showed that when all expressed genes are included in X:AA calculations, X:AA ratios in XY males fall between 0.5 and 1.0, suggesting that X-upregulation is \"incomplete\". However, when only housekeeping genes are considered, X:AA ratios equal 1.0, showing that X-upregulation is actually \"complete\". A similar approach by Sangrithi et al. (2017) (not cited here) validated and refined this approach, identifying housekeeping genes by virtue of ubiquitous expression. Thus, the status of upregulation will vary depending on which genes are assayed. Also related to this point is whether the authors are studying the same expressed genes across different sexes and tissues. This is the most appropriate comparison.\n\nTo address the effect of post-transcriptional regulation on Z dosage compensation, the authors then compare microarray and proteomics data on schistosome heads and gonads. It's not clear to me why the tissues used for this analysis are distinct from those in the RNA-seq analysis; this makes the manuscript a bit awkward. However, setting this aside, the issue of gene choice once again becomes important. Many studies have shown that the mammalian X chromosome is enriched in genes with CNS functions and gonadal functions; the presence of these highly expressed genes artificially elevates X:AA ratios. Is there evidence for such gonadal and neural specialisation of schistosome Z chromosomes? Related to this point, the authors should address whether Z:AA ratios are influenced by imposition of upper expression cut-offs. Such cut-offs affect X:AA ratios in the CNS and gonads (see Sangrithi et al. and studies from Disteche).\n\nReviewer #2:\n\nThe authors use depth of coverage from whole genome sequencing to identify Z-linked genes in three schistosome species (one from Asia and two from Africa). Although the Z chromosome is homologous across all three species, there are differences in the evolutionary strata between species from different continents, suggesting that the lineages differ is some pseudoautosomal regions. When looking at gene expression, several patterns emerge: (i) the Z has lower expression than the autosomes in females, (ii) the Z has higher expression than the autosomes in males, (iii) the Z has strongly male-biased expression. The authors interpret these results as being in agreement with the early stage of Ohno's classic model for the evolution of dosage compensation in which the Z is upregulated in both sexes in order to compensate for its reduced dosage in females. Similar patterns are seen at the level of protein abundance, suggesting that post-transcriptional regulation does not play a major role in the evolution of dosage compensation in these species.\n\nThis paper is very well-written and the figures do a good job of illustrating the main results. The authors have made a convincing case and have gone an extra step beyond most previous studies of this type by including proteomic data. I think that this work makes an important contribution to the field. I don't see any major flaws.\n\nReviewer #3:\n\nThe genomics of sex chromosome function and evolution has been under intense study for the last 15 years. These studies, along with work that augments the genetics of dosage compensation, have enriched our understanding of selective pressures and evolution of sex chromosomes. Having additional models is always useful. The current work examines a lineage which allows a comparison of expression sex chromosome linked genes in various stages of being made hemizygous in a ZW system. As the authors note, X0/XY and ZW systems appear to follow different rules for sex chromosomes dosage compensation. The current work confirms these differences in a well written, but under-detailed manuscript.\n\n1) The ortholog mapping and projection of scaffolds onto the Z chromosomes appears robust. This will provide a valuable map for future use of these species in sex chromosome studies as well as for other uses in the genomic parasitology field. It would be useful if these mappings were available. I understand that the TPA has rigorous steps for getting such information into a public repository, but maybe there are other options, such as adding a table in the supplement.\n\n2) There are many confounding factors in using median expression in females and males to measure dosage compensation, none of which appear to be taken into consideration. The sexes of schistosoma are highly dimorphic and are enriched in gonad compared to most organisms that have been examined for sex chromosome dosage compensation. This creates analytical complexities. For example, extensive sex-biased expression, differences in the distribution of genes showing sex-biased expression, differences in cell-type composition between the sexes, or MSCI could all complicate the analysis. Looking at the sexually undifferentiated stages may take care of some of these concerns, but the authors do not explain any of the complexities and workarounds to the reader, whom might not be well acquainted with the field. I would very much like to see the sex-bias profiles, some attempt to examine the expression of more housekeeping genes, and a generally deeper look at the data.\n\n3) That there is not a highly robust translational compensation response is a nice addition to the literature. However, it is important to demonstrate that the proteomics has the sensitivity to make any claims about the contribution of post-transcriptional control to dosage compensation (or lack thereof). The correlations with expression data are positive, but it seems imprudent to extend too far from the primary data showing that F/M ratio for proteins encoded by Z-linked genes is reduced.\n",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6be94c72-31fb-40a3-981e-ef93bc8e0528",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C1",
+      "claim": "XY systems usually show chromosome-wide compensation of X-linked genes",
+      "claim_type": "EXPLICIT",
+      "source": "XY systems usually show chromosome-wide compensation of X-linked genes, while in many ZW systems, compensation is restricted to a minority of dosage-sensitive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about XY systems presented in the abstract without specific data from this study, but is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "7b0f5699-a971-4af0-bdec-8be6c375de83",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C2",
+      "claim": "In many ZW systems, compensation is restricted to a minority of dosage-sensitive genes",
+      "claim_type": "EXPLICIT",
+      "source": "XY systems usually show chromosome-wide compensation of X-linked genes, while in many ZW systems, compensation is restricted to a minority of dosage-sensitive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ZW systems presented in the abstract, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "5b0ac9ce-aa29-434b-b062-ecfc544cc1b7",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C3",
+      "claim": "African schistosomes (Schistosoma mansoni and S. haematobium) and Asian schistosomes (S. japonicum) have lineage-specific evolutionary strata on their Z-chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "We compare the Z-chromosome gene content of African (Schistosoma mansoni and S. haematobium) and Asian (S. japonicum) schistosomes and describe lineage-specific evolutionary strata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative genomic analysis and coverage data presented in the Results section and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "3176a96d-a197-47d0-9076-55e5a0f5abb1",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C4",
+      "claim": "Z-linked genes show a reduction in expression in females in schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting patterns suggest a reduction in expression of Z-linked genes in females, combined with upregulation of the Z in both sexes, in line with the first step of Ohno's classic model of dosage compensation evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptomic data presented in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "214df672-4639-48c7-909c-be6f7919f7e0",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C5",
+      "claim": "Z-linked genes show upregulation in both sexes in schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting patterns suggest a reduction in expression of Z-linked genes in females, combined with upregulation of the Z in both sexes, in line with the first step of Ohno's classic model of dosage compensation evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptomic data presented in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "21df8ee6-2c56-4f9a-a877-bbd1997b1b77",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C6",
+      "claim": "Post-transcriptional mechanisms do not play a major role in balancing the expression of Z-linked genes in schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative proteomics suggest that post-transcriptional mechanisms do not play a major role in balancing the expression of Z-linked genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a1726df7-6ce1-4ea4-b387-32143c52baa2",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C7",
+      "claim": "Sex chromosomes originally arise from pairs of autosomes which stop recombining after they acquire a sex-determining region",
+      "claim_type": "EXPLICIT",
+      "source": "These sex chromosomes originally arise from pairs of autosomes, which stop recombining after they acquire a sex-determining region (Charlesworth, 1991; Charlesworth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about sex chromosome evolution supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "1dfa1cc1-d1c9-437f-b3c4-b91ca05d1eb3",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C8",
+      "claim": "The loss of recombination between X/Z and Y/W chromosomes is likely driven by selective pressures to link the sex-determining gene and alleles with sexually antagonistic effects",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of recombination between X/Z and Y/W chromosomes is likely driven by selective pressures to link the sex-determining gene and alleles with sexually antagonistic effects, and often occurs through inversions on the sex-specific chromosome (Rice, 1987; Bergero and Charlesworth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "bf6f50bf-56bd-4d54-9558-2bba2f8ac567",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C9",
+      "claim": "Loss of recombination on Y/W chromosomes hampers the efficacy of selection and leads to genetic degeneration",
+      "claim_type": "EXPLICIT",
+      "source": "The inverted Y/W-linked region stops recombining entirely, which hampers the efficacy of selection and leads to its genetic degeneration (Charlesworth et al., 2005; Engelst\u00e4dter, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "eb864fad-85d7-4bfd-9a99-bf1ebc1bdba4",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C10",
+      "claim": "The loss of one gene copy on the Y/W is predicted to result in a two-fold reduction of expression in the heterogametic sex",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of one gene copy on the Y/W is predicted to result in a two-fold reduction of expression in the heterogametic sex, as gene expression is correlated with gene copy number (Guo et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "646fbdf7-ef09-4d43-bdb7-51f8db28f943",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C11",
+      "claim": "Gene expression is correlated with gene copy number",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of one gene copy on the Y/W is predicted to result in a two-fold reduction of expression in the heterogametic sex, as gene expression is correlated with gene copy number (Guo et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "0ecd1590-cf65-4b7b-9947-d196ff271ed3",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C12",
+      "claim": "Dosage imbalances can drive the appearance of dosage compensation mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Such imbalances can drive the appearance of dosage compensation mechanisms, which target X/Z chromosomes and regulate their expression to restore optimal dosage (Ohno, 1967; Gartler, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "9e47c16b-f373-44bd-939b-b57de7733dcf",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C13",
+      "claim": "Ohno suggested a two-step mechanism for dosage compensation in which initial upregulation of expression is not sex-specific, leading to excess dosage in the homogametic sex, which secondarily selects for repressing mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Ohno suggested a two-step mechanism, in which the initial upregulation of expression is not sex-specific. This leads to an excess of dosage in the homogametic sex, and secondarily selects for further repressing mechanisms ('Ohno's hypothesis' of dosage compensation Ohno, 1967]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Ohno's hypothesis supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a7cc57c1-c3fc-49c6-b56c-1fe2fedaff5a",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C14",
+      "claim": "Incomplete dosage compensation was described in birds",
+      "claim_type": "EXPLICIT",
+      "source": "Incomplete dosage compensation was described in a wide range of species, including birds (Itoh et al., 2007; Ellegren et al., 2007; Arnold et al., 2008; Wolf and Bryk, 2011), fishes (Chen et al., 2014) and snakes (Vicoso et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "fb00e3ab-5007-4ee0-8fe6-171e5766cc83",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C15",
+      "claim": "Incomplete dosage compensation was described in fishes",
+      "claim_type": "EXPLICIT",
+      "source": "Incomplete dosage compensation was described in a wide range of species, including birds (Itoh et al., 2007; Ellegren et al., 2007; Arnold et al., 2008; Wolf and Bryk, 2011), fishes (Chen et al., 2014) and snakes (Vicoso et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "01c632ba-bca5-4f07-b91e-9d37c51cfa58",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C16",
+      "claim": "Incomplete dosage compensation was described in snakes",
+      "claim_type": "EXPLICIT",
+      "source": "Incomplete dosage compensation was described in a wide range of species, including birds (Itoh et al., 2007; Ellegren et al., 2007; Arnold et al., 2008; Wolf and Bryk, 2011), fishes (Chen et al., 2014) and snakes (Vicoso et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "4bf0e6a6-c480-401b-8dc3-bd627f0d99df",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C17",
+      "claim": "Lepidoptera are the only exception to incomplete dosage compensation among ZW systems",
+      "claim_type": "EXPLICIT",
+      "source": "So far, Lepidoptera are the only exception to this observation (Gu and Walters, 2017; Huylmans et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "14fb69c5-dcef-430f-813d-932c5a3de6cc",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C18",
+      "claim": "476 Z-specific genes were shared by S. mansoni and S. japonicum",
+      "claim_type": "EXPLICIT",
+      "source": "only 476 Z-specific genes were shared by S. mansoni and S. japonicum, while 306 were only Z-specific in S. mansoni and 137 only in S. japonicum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a196eec6-b284-4beb-9bbb-8a4093b0b9c1",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C19",
+      "claim": "306 genes were only Z-specific in S. mansoni",
+      "claim_type": "EXPLICIT",
+      "source": "only 476 Z-specific genes were shared by S. mansoni and S. japonicum, while 306 were only Z-specific in S. mansoni and 137 only in S. japonicum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "2145633e-18ea-40b9-b4a9-35bb098704c6",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C20",
+      "claim": "137 genes were only Z-specific in S. japonicum",
+      "claim_type": "EXPLICIT",
+      "source": "only 476 Z-specific genes were shared by S. mansoni and S. japonicum, while 306 were only Z-specific in S. mansoni and 137 only in S. japonicum (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "f8a7e0c1-16ba-47aa-8b4d-a5cbb13cf197",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C21",
+      "claim": "Three different evolutionary strata were identified on the schistosome Z-chromosome: one shared ancestral stratum (S0) and two lineage-specific strata (S1mans and S1jap)",
+      "claim_type": "EXPLICIT",
+      "source": "when plotted along the Z-chromosome, outlined three different evolutionary strata: one shared ancestral stratum (S0: 367 genes) and two lineage-specific strata (S1mans, specific to the African schistosomes, with 180 genes; and S1jap, specific to S. japonicum, with 66 genes) (Table 1, Figure 1, and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "b1254a9c-21fa-4819-8e3f-1c898276a685",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C22",
+      "claim": "The ancestral stratum S0 contains 367 genes",
+      "claim_type": "EXPLICIT",
+      "source": "when plotted along the Z-chromosome, outlined three different evolutionary strata: one shared ancestral stratum (S0: 367 genes) and two lineage-specific strata (S1mans, specific to the African schistosomes, with 180 genes; and S1jap, specific to S. japonicum, with 66 genes) (Table 1, Figure 1, and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "39922a44-c8ac-455b-bd64-cc602dc62a18",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C23",
+      "claim": "The stratum S1mans contains 180 genes",
+      "claim_type": "EXPLICIT",
+      "source": "when plotted along the Z-chromosome, outlined three different evolutionary strata: one shared ancestral stratum (S0: 367 genes) and two lineage-specific strata (S1mans, specific to the African schistosomes, with 180 genes; and S1jap, specific to S. japonicum, with 66 genes) (Table 1, Figure 1, and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "3884a9d6-4aae-404b-bdfc-1be414a4fa74",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C24",
+      "claim": "The stratum S1jap contains 66 genes",
+      "claim_type": "EXPLICIT",
+      "source": "when plotted along the Z-chromosome, outlined three different evolutionary strata: one shared ancestral stratum (S0: 367 genes) and two lineage-specific strata (S1mans, specific to the African schistosomes, with 180 genes; and S1jap, specific to S. japonicum, with 66 genes) (Table 1, Figure 1, and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "5cce4ba2-2f90-49bc-94fe-4adefd5e82e9",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C25",
+      "claim": "A strong male bias in the expression of Z-specific genes was consistently observed in both stages and species",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observed a strong male bias in the expression of Z-specific genes in both stages and species (F:M ratio between 0.58 and 0.69, Figure 2 and Supplementary file 1), consistent with local or incomplete dosage compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Figure 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "dfa787cf-0f52-4cb7-b90e-93a6355550db",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C26",
+      "claim": "The F:M ratio of Z-specific gene expression was between 0.58 and 0.69 in schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "We consistently observed a strong male bias in the expression of Z-specific genes in both stages and species (F:M ratio between 0.58 and 0.69, Figure 2 and Supplementary file 1), consistent with local or incomplete dosage compensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Figure 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "4719053c-86b3-4a9d-aeb7-520d0635958b",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C27",
+      "claim": "Z-specific genes showed lower expression levels in females when compared to the autosomes (Z:AA ratio between 0.73 and 0.85)",
+      "claim_type": "EXPLICIT",
+      "source": "While this was generally supported by the lower expression levels of Z-specific genes in females when compared to the autosomes (Z:AA ratio between 0.73 and 0.85; Figure 2, Supplementary file 1), this difference was only apparent for some filtering procedures (Figure 2\u2014figure supplement 1 to Figure 2\u2014figure supplement 14), and even then was not sufficient to fully account for the strong male-bias of the Z.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Figure 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "194b2a06-0143-4268-8663-c100ded2a954",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C28",
+      "claim": "The male Z showed higher expression in both stages and species (ZZ:AA ratio between 1.25 and 1.46)",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the higher expression of the male Z in both stages and species (ZZ:AA ratio between 1.25 and 1.46, Supplementary file 1) appeared to also contribute to the male-bias of Z-linked genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "81064a97-8462-4caf-b922-7b4c3cc9bc6f",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C29",
+      "claim": "The male-biased expression of Z-specific genes is a consequence of their sex-linkage",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 confirms that the male-biased expression of Z-specific genes is a consequence of their sex-linkage, and that the Z-chromosome has become under-expressed in females relative to the ancestral expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of lineage-specific strata presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "1d1ecffd-ba44-41a8-9c69-d150170894ac",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C30",
+      "claim": "The Z-chromosome has become under-expressed in females relative to the ancestral expression",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 confirms that the male-biased expression of Z-specific genes is a consequence of their sex-linkage, and that the Z-chromosome has become under-expressed in females relative to the ancestral expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of lineage-specific strata presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a6df85b4-ab6f-4cbe-a19e-86f6f78033b7",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C31",
+      "claim": "A full two-fold reduction in female expression is not observed in schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "However, a full two-fold reduction in female expression is not observed, consistent with partial upregulation, and/or full upregulation of a subset of dosage-sensitive genes (Z:AA ranging from 0.68 to 0.83, Supplementary file 1)(Sangrithi et al., 2017; Pessia et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "c49db0b5-67d4-4970-86cc-596c0a999347",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C32",
+      "claim": "The expression of Z-specific genes was strongly male-biased compared to that of autosomal genes in both heads (F:M of 0.68 for the Z chromosome versus 0.92 for the autosomes) and gonads (F:M of 0.78 versus 0.99) at the protein level",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed using RNA-seq, the expression of Z-specific genes was strongly male-biased compared to that of autosomal genes in both heads (F:M of 0.68 for the Z chromosome versus 0.92 for the autosomes; Figure 4A, Supplementary file 1) and gonads (F:M of 0.78 versus 0.99; Figure 4B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomic data presented in Figure 4 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "006b8701-d8f5-499b-ae33-87ef66b82c87",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C33",
+      "claim": "Z-linked and autosomal genes show a similar correlation between the F:M ratios found for mRNAs and proteins",
+      "claim_type": "EXPLICIT",
+      "source": "However, Figure 4B shows that Z-linked and autosomal genes show a similar correlation between the F:M ratios found for mRNAs and proteins (p>0.05 with a Fisher r-to-z transformation of the correlation coefficients, Figure 4C and D), which argues against a major role of post-transcriptional regulation to balance expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomic and microarray data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "52b5fdd4-0fb2-4e4d-aa69-3f3191f423ed",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C34",
+      "claim": "285 newly described Z-specific genes in S. mansoni were previously located on 19 unplaced scaffolds longer than 50 kb",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis resulted in 285 newly described Z-specific genes in S. mansoni that were previously located on 19 unplaced scaffolds longer than 50 kb, and to a refined pseudoautosomal/Z-specific structure of the published ZW linkage group (Protasio et al., 2012a; Criscione et al., 2009) (Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coverage analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "fd3dddc6-1ab3-45b9-8b91-ffe0ed3c694a",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C35",
+      "claim": "379 Z-specific scaffolds (containing 1409 annotated genes with orthologs in S. mansoni) were defined in S. haematobium",
+      "claim_type": "EXPLICIT",
+      "source": "It further allowed us to define 379 Z-specific scaffolds (containing 1409 annotated genes with orthologs in S. mansoni) in S. haematobium (Figure 1\u2014source data 3 for exhaustive list) and 461 Z-specific scaffolds (containing 706 annotated orthologs) in S. japonicum (Figure 1\u2014source data 4 for exhaustive list).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coverage analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "70e0ad9b-13c2-45ed-9fba-92106f21f54b",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C36",
+      "claim": "461 Z-specific scaffolds (containing 706 annotated orthologs) were defined in S. japonicum",
+      "claim_type": "EXPLICIT",
+      "source": "It further allowed us to define 379 Z-specific scaffolds (containing 1409 annotated genes with orthologs in S. mansoni) in S. haematobium (Figure 1\u2014source data 3 for exhaustive list) and 461 Z-specific scaffolds (containing 706 annotated orthologs) in S. japonicum (Figure 1\u2014source data 4 for exhaustive list).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coverage analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "d5184228-0af6-4a7c-8a2c-a963d0731b1f",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C37",
+      "claim": "The content of the Z was largely shared between the African S. mansoni and S. haematobium",
+      "claim_type": "EXPLICIT",
+      "source": "While the content of the Z was largely shared between the African S. mansoni and S. haematobium (Table 1, Figure 1), large differences were found between the African and Asian lineages",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "3ca540c1-807c-4dd3-a1f2-80cda025e17f",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C38",
+      "claim": "Large differences in Z-chromosome content were found between the African and Asian lineages",
+      "claim_type": "EXPLICIT",
+      "source": "While the content of the Z was largely shared between the African S. mansoni and S. haematobium (Table 1, Figure 1), large differences were found between the African and Asian lineages",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "b7b0cb18-28c7-4b58-b281-dafe73accb00",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C39",
+      "claim": "African schistosomes have much more extensive ZW differentiation and W heterochromatinization than Asian species",
+      "claim_type": "EXPLICIT",
+      "source": "A gradient of ZW heteromorphism between schistosome species was revealed by cytogenetic studies (Grossman et al., 1981a; Grossman et al., 1981b; Short and Grossman, 1981); in particular, African schistosomes were found to have much more extensive ZW differentiation and W heterochromatinization than Asian species (Hirai et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to cytogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "2c1b8091-a044-4808-ae03-50f86aa68718",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C40",
+      "claim": "A larger number of Z-specific genes was detected in the African species (8% to 11% of all annotated orthologs in S. mansoni and S. haematobium) than in S. japonicum (5.5% of all annotated orthologs)",
+      "claim_type": "EXPLICIT",
+      "source": "Our results generally support these cytogenetic data: we confirm the acquisition of independent evolutionary strata in the sex chromosomes of S. mansoni and S. japonicum, and detect a larger number of Z-specific genes in the African species (8% to 11% of all annotated orthologs, respectively, in S. mansoni and S. haematobium) than in S. japonicum (5.5% of all annotated orthologs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "b46dfff7-828d-40df-ad63-f3da470d2588",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C41",
+      "claim": "The sex chromosomes of the African S. mansoni and S. haematobium are largely similar in their gene content",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the sex chromosomes of the African S. mansoni and S. haematobium differ morphologically, they are largely similar in their gene content (Figure 1), consistent with their much closer phylogenetic relationship (the median synonymous divergence between the two species is around 17%, compared to 65% for S. mansoni/S. japonicum, Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative genomic analysis presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "2fde8dfc-c745-4cc5-a134-94a8333e63c0",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C42",
+      "claim": "The median synonymous divergence between S. mansoni and S. haematobium is around 17%",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the sex chromosomes of the African S. mansoni and S. haematobium differ morphologically, they are largely similar in their gene content (Figure 1), consistent with their much closer phylogenetic relationship (the median synonymous divergence between the two species is around 17%, compared to 65% for S. mansoni/S. japonicum, Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis presented in Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "4a45b7f4-28a9-4716-abf5-f369319ef53d",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C43",
+      "claim": "The median synonymous divergence between S. mansoni and S. japonicum is around 65%",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the sex chromosomes of the African S. mansoni and S. haematobium differ morphologically, they are largely similar in their gene content (Figure 1), consistent with their much closer phylogenetic relationship (the median synonymous divergence between the two species is around 17%, compared to 65% for S. mansoni/S. japonicum, Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis presented in Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "fb18ed21-8ffb-4acf-a415-6a07541d06db",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C44",
+      "claim": "Schistosomes have a chromosome-wide upregulation of the Z in both sexes",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes are unusual among female-heterogametic clades in that they appear to have a chromosome-wide upregulation of the Z in both sexes; such an increase in males was not detected in birds (Julien et al., 2012) or snakes (Vicoso et al., 2013a), even when ancestral expression was taken into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptomic data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "162d51f0-4ca8-4fff-b043-b2c7839bed42",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C45",
+      "claim": "An increase in Z expression in males was not detected in birds even when ancestral expression was taken into account",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes are unusual among female-heterogametic clades in that they appear to have a chromosome-wide upregulation of the Z in both sexes; such an increase in males was not detected in birds (Julien et al., 2012) or snakes (Vicoso et al., 2013a), even when ancestral expression was taken into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "efdc3753-a10e-4329-94f4-580ed0b29676",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C46",
+      "claim": "An increase in Z expression in males was not detected in snakes even when ancestral expression was taken into account",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosomes are unusual among female-heterogametic clades in that they appear to have a chromosome-wide upregulation of the Z in both sexes; such an increase in males was not detected in birds (Julien et al., 2012) or snakes (Vicoso et al., 2013a), even when ancestral expression was taken into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "01cf6836-ef68-482c-bb59-5c2b256e30d2",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C47",
+      "claim": "Schistosomes likely represent an intermediate between ZW species with true local compensation and the chromosome-wide compensation of the ZW Lepidoptera",
+      "claim_type": "EXPLICIT",
+      "source": "They therefore likely represent an intermediate between ZW species with true local compensation, and the chromosome-wide compensation of the ZW Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e95fadbc-b07c-4fd3-97c0-2add7e40e6db",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C48",
+      "claim": "Schistosomes are a group of blood parasites that can cause schistosomiasis in humans",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we combine comparative genomics, transcriptomics and quantitative proteomics to obtain a complete overview of the evolution of gene dosage on the Z-chromosome of parasites of the genus Schistosoma. Schistosomes are a group of blood parasites that can cause schistosomiasis in humans (Chitsulo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "b1c82e20-f5fe-4f81-888a-ee34abc97136",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C49",
+      "claim": "Schistosomes have a complex life cycle characterized by a phase of clonal multiplication in an intermediate mollusk host and a phase of sexual reproduction in the final warm-blooded host",
+      "claim_type": "EXPLICIT",
+      "source": "Their complex life cycle is characterized by a phase of clonal multiplication in an intermediate mollusk host, and a phase of sexual reproduction in the final warm-blooded host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosome biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "3d433757-44e9-4ca8-af84-3a3486be6e69",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C50",
+      "claim": "Schistosomes have separate sexes unlike the other 20,000 species of hermaphroditic platyhelminths",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the other 20,000 species of hermaphroditic platyhelminths, schistosomes have separate sexes: sexual reproduction occurs immediately after the primary development of males and females in their definitive host, and mating is compulsory for the sexual maturation of females (Loker and Brant, 2006; Kunz, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "aa96e401-8979-40f6-a166-c063a5a16306",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C51",
+      "claim": "Mating is compulsory for the sexual maturation of female schistosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the other 20,000 species of hermaphroditic platyhelminths, schistosomes have separate sexes: sexual reproduction occurs immediately after the primary development of males and females in their definitive host, and mating is compulsory for the sexual maturation of females (Loker and Brant, 2006; Kunz, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "09129059-c2e8-4f84-9e11-c10227c23466",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C52",
+      "claim": "Sex determination in schistosomes is genetic and relies on a pair of cytogenetically well-differentiated ZW chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "Sex determination is genetic, and relies on a pair of cytogenetically well-differentiated ZW chromosomes (Grossman et al., 1981a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "c53fc54b-a52f-4498-a4e4-934b6b89fd27",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C53",
+      "claim": "All schistosomes are thought to share the same ancestral pair of ZW sex chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "All schistosomes are thought to share the same ancestral pair of ZW sex chromosomes, but differences in their morphology and in the extent of heterochromatization of the W suggest that different strata were acquired independently by different lineages (Grossman et al., 1981a; Lawton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "1c13d001-a1d7-4a60-aba8-a426525d4f8e",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C54",
+      "claim": "Differences in the morphology and extent of heterochromatization of the W chromosome suggest that different strata were acquired independently by different schistosome lineages",
+      "claim_type": "EXPLICIT",
+      "source": "All schistosomes are thought to share the same ancestral pair of ZW sex chromosomes, but differences in their morphology and in the extent of heterochromatization of the W suggest that different strata were acquired independently by different lineages (Grossman et al., 1981a; Lawton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "58c68817-8d6d-4f71-b292-f73aea5ef466",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C55",
+      "claim": "S. mansoni showed reduced expression of Z-linked genes in females relative to the autosomes and to males, consistent with a lack of chromosome-wide dosage compensation",
+      "claim_type": "EXPLICIT",
+      "source": "The model blood fluke Schistosoma mansoni was one of the first ZW clades to be evaluated for the presence of global dosage compensation, through the comparison of male and female microarray data derived from several tissues (Vicoso and Bachtrog, 2011). It showed reduced expression of Z-linked genes in females relative (i) to the autosomes and (ii) to males, consistent with a lack of chromosome-wide dosage compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "dea23b31-0010-44e6-8b42-674c3303b514",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C56",
+      "claim": "The reduction of Z-expression in females was less than two-fold in S. mansoni",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the reduction of Z-expression in females was less than two-fold, and the Z:autosome ratio of expression was slightly, but consistently, greater than one in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "c2cbb903-fa81-4686-8558-02a0e031f2cf",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C57",
+      "claim": "The Z:autosome ratio of expression was slightly, but consistently, greater than one in males in S. mansoni",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the reduction of Z-expression in females was less than two-fold, and the Z:autosome ratio of expression was slightly, but consistently, greater than one in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "7606630b-941d-47f6-8f3d-07b5a0ad3254",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C58",
+      "claim": "Median coverage values were 18.40 and 18.99 for S. mansoni male and female libraries",
+      "claim_type": "EXPLICIT",
+      "source": "Median coverage values were 18.40 and 18.99 for S. mansoni male and female libraries; 23.5 and 7.43 for S. haematobium female#1 and female#2 libraries; 23.77 and 20.53 for S. japonicum male and female libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the genomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e649bc76-aef1-4a6a-8629-ec921dea735a",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C59",
+      "claim": "Median coverage values were 23.5 and 7.43 for S. haematobium female#1 and female#2 libraries",
+      "claim_type": "EXPLICIT",
+      "source": "Median coverage values were 18.40 and 18.99 for S. mansoni male and female libraries; 23.5 and 7.43 for S. haematobium female#1 and female#2 libraries; 23.77 and 20.53 for S. japonicum male and female libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the genomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "9da30c10-6cef-43c9-b3b9-0a8e594f5ae1",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C60",
+      "claim": "Median coverage values were 23.77 and 20.53 for S. japonicum male and female libraries",
+      "claim_type": "EXPLICIT",
+      "source": "Median coverage values were 18.40 and 18.99 for S. mansoni male and female libraries; 23.5 and 7.43 for S. haematobium female#1 and female#2 libraries; 23.77 and 20.53 for S. japonicum male and female libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the genomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "40569a3e-750d-47d6-8c34-0ae44f9e1cbe",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C61",
+      "claim": "1988 Schistosoma mansoni proteins were identified in heads by proteomics",
+      "claim_type": "EXPLICIT",
+      "source": "1988 and 2750 Schistosoma mansoni proteins were identified in heads and in gonads, respectively (see Figure 4\u2014source data 1 and 2 for statistical testing of differential abundance between male and female samples).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "17feec14-3c8c-43c2-b89c-fac2a91dd1f0",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C62",
+      "claim": "2750 Schistosoma mansoni proteins were identified in gonads by proteomics",
+      "claim_type": "EXPLICIT",
+      "source": "1988 and 2750 Schistosoma mansoni proteins were identified in heads and in gonads, respectively (see Figure 4\u2014source data 1 and 2 for statistical testing of differential abundance between male and female samples).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "08932ab2-45f1-4062-9caa-93d9a7abade6",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C63",
+      "claim": "1741 proteins in heads could be attributed unambiguously to a Schistosoma mansoni gene and were represented by more than one peptide",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 1741 and 2516 could be attributed unambiguously to a Schistosoma mansoni gene and were represented by more than one peptide; these were subsequently analyzed (See Figure 4\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a1b31fac-ebad-4539-a8be-a2cd2a2e8273",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C64",
+      "claim": "2516 proteins in gonads could be attributed unambiguously to a Schistosoma mansoni gene and were represented by more than one peptide",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 1741 and 2516 could be attributed unambiguously to a Schistosoma mansoni gene and were represented by more than one peptide; these were subsequently analyzed (See Figure 4\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "c30748be-2f98-4fec-b37d-316be8d3e34d",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C65",
+      "claim": "ZW systems consistently show male-biased expression of the Z chromosome (aside from Lepidoptera)",
+      "claim_type": "EXPLICIT",
+      "source": "ZW systems (aside from Lepidoptera) consistently show male-biased expression of the Z chromosome (Gu and Walters, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "2261fab0-324d-423a-9326-850979011153",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C66",
+      "claim": "Well-established X chromosomes generally show full equalization of gene expression between the sexes",
+      "claim_type": "EXPLICIT",
+      "source": "While female-biased expression of the X occurs in a few young XY systems (Gu and Walters, 2017; Schulthei\u00df et al., 2015; Howe et al., 2017; Grossman et al., 1981b; Short and Grossman, 1981; Hirai et al., 2000; Mank and Ellegren, 2009), well-established X chromosomes generally show full equalization of gene expression between the sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "d304ac20-b50a-434a-9ef0-544a0a99aa4c",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C67",
+      "claim": "Female-biased expression of the X occurs in a few young XY systems",
+      "claim_type": "EXPLICIT",
+      "source": "While female-biased expression of the X occurs in a few young XY systems (Gu and Walters, 2017; Schulthei\u00df et al., 2015; Howe et al., 2017; Grossman et al., 1981b; Short and Grossman, 1981; Hirai et al., 2000; Mank and Ellegren, 2009), well-established X chromosomes generally show full equalization of gene expression between the sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a5c9057a-cc57-4849-949f-85ab5ef9c122",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C68",
+      "claim": "Female-specific W chromosomes will generally have lower mutation and degeneration rates than male-specific Ys because more mutations occur during spermatogenesis than oogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Since more mutations occur during spermatogenesis than oogenesis, female-specific W chromosomes will generally have lower mutation and degeneration rates than male-specific Ys, favoring local compensation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on known biological principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e069d24f-55fc-455b-bc3e-f09c6b517096",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C69",
+      "claim": "The effective population size of Z (NeZ) is decreased when the variance in reproductive success of ZZ males is larger than that of ZW females",
+      "claim_type": "EXPLICIT",
+      "source": "The effective population size of Z (NeZ): NeZ is decreased when the variance in reproductive success of ZZ males is larger than that of ZW females (e.g. in the presence of strong sexual selection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e49ce3e7-d170-471f-874b-8e50ae11bb3d",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C70",
+      "claim": "A proteomic analysis in birds found that several genes appeared to be partially equalized at the protein level despite being strongly male-biased at the transcript level",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a proteomic analysis in birds found that several genes appeared to be partially equalized at the protein level despite being strongly male-biased at the transcript level (Uebbing et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "c37dcd64-116c-4a37-9bca-b1e9a8547aa5",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C71",
+      "claim": "In humans, post-transcriptional regulation does not appear to play a major role in dosage compensation",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, post-transcriptional regulation does not appear to play a major role in dosage compensation (Chen and Zhang, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "f210ff07-6590-49a5-a8da-fde87d3ac6ba",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C72",
+      "claim": "S. mansoni, S. haematobium and S. japonicum are the main species responsible for human schistosomiasis",
+      "claim_type": "EXPLICIT",
+      "source": "S. mansoni, S. haematobium and S. japonicum are the main species responsible for human schistosomiasis and have been the subject of many molecular and genomic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about schistosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "5bee7f9c-92b9-4286-8f9a-cb6169a1dad4",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C73",
+      "claim": "The master sex-determining gene in schistosomes and whether it is located on the W or Z is still unknown",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the master sex-determining gene (and whether it is located on the W or Z) is still a mystery (Lepesant et al., 2012; Portela et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "f9b6448c-9670-437f-8094-38c2e4bdcb12",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C74",
+      "claim": "416 scaffolds, including 3893 genes (29% of the annotated nuclear genes), are still unplaced in the S. mansoni genome",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 416 scaffolds, including 3893 genes (29% of the annotated nuclear genes), are still unplaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the S. mansoni genome assembly.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "a7a040ad-3ec8-44e0-ba79-9d7769f188ff",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "claim_id": "C75",
+      "claim": "The current S. mansoni genome assembly has a BUSCO score of 76% complete plus fragmented genes",
+      "claim_type": "EXPLICIT",
+      "source": "It should, however, be noted that many genes are likely still missing from the current assembly (which has a BUSCO score of 76% complete plus fragmented genes; https://parasite.wormbase.org/index.html [Howe et al., 2016; Howe et al., 2017])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality of the genome assembly.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Comparative genomic analysis reveals lineage-specific evolutionary strata on schistosome Z-chromosomes. African schistosomes (S. mansoni and S. haematobium) share a largely similar Z-chromosome content with one ancestral stratum (S0, 367 genes) and an African-specific stratum (S1mans, 180 genes), while Asian S. japonicum has an independent stratum (S1jap, 66 genes). African species have more extensive Z-chromosome differentiation (8-11% of genes) than Asian species (5.5%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C24, C34-C38, C40-C43 collectively provide strong genomic evidence from coverage analysis and comparative genomics (Table 1, Figure 1) demonstrating lineage-specific evolutionary strata. The data on gene numbers, coverage patterns, and phylogenetic divergence consistently support the identification of distinct strata and differences between African and Asian lineages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "73ceb487-47b5-461e-93ac-874581da877f",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Z-linked genes show male-biased expression in schistosomes due to reduced expression in females and increased expression in males. The F:M ratio ranges from 0.58-0.69, with female Z:AA ratios of 0.73-0.85 and male ZZ:AA ratios of 1.25-1.46. This pattern is a consequence of sex-linkage, with the Z becoming under-expressed in females relative to ancestral expression, though not showing a full two-fold reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25-C31 are strongly supported by RNA-seq data across multiple developmental stages and species (Figure 2, Figure 3, Supplementary file 1). The consistent patterns across different filtering procedures and the use of ancestral expression as a control (via lineage-specific strata) provide robust evidence for the male-biased expression pattern and its mechanistic basis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "5f6e8b2b-0233-4dd6-a3cd-4de4d32696f9",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Schistosomes exhibit chromosome-wide upregulation of the Z in both sexes, representing an intermediate between ZW species with local compensation and Lepidoptera with complete chromosome-wide compensation. This pattern is unusual among female-heterogametic clades and consistent with the first step of Ohno's model of dosage compensation evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44, C47 are supported by transcriptomic data showing elevated Z expression in both males (ZZ:AA 1.25-1.46) and females (Figures 2-3). The comparison with ancestral expression via lineage-specific strata (Figure 3) confirms this is due to upregulation rather than ancestral high expression. The interpretation as an intermediate state is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "ab0a4b7c-62e6-46a3-ac07-0857144a4a75",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Post-transcriptional mechanisms do not play a major role in balancing Z-linked gene expression in schistosomes. Proteomic analysis shows Z-linked genes remain male-biased at the protein level (F:M 0.68 in heads, 0.78 in gonads), and Z-linked and autosomal genes show similar correlations between mRNA and protein F:M ratios (p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C32, C33 are supported by quantitative proteomics data (Figure 4) showing persistent male bias at the protein level and similar mRNA-protein correlations for Z-linked and autosomal genes. The statistical test (Fisher r-to-z transformation, p>0.05) appropriately addresses whether post-transcriptional regulation differs between Z-linked and autosomal genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "General patterns of dosage compensation differ between XY and ZW systems. XY systems typically show chromosome-wide compensation, while ZW systems (except Lepidoptera) show incomplete compensation restricted to dosage-sensitive genes. Well-established X chromosomes show full equalization between sexes, while ZW systems consistently show male-biased Z expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C14-C17, C65-C67 represent established knowledge in the field supported by multiple citations. These provide the necessary context for interpreting the schistosome results but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Theoretical framework for sex chromosome evolution and dosage compensation. Sex chromosomes arise from autosomes that stop recombining, leading to degeneration of the sex-specific chromosome (Y/W). Loss of gene copies is predicted to cause two-fold expression reduction in the heterogametic sex, potentially driving dosage compensation mechanisms. Ohno's hypothesis proposes a two-step mechanism with initial non-sex-specific upregulation followed by secondary repression in the homogametic sex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 represent well-established theoretical models supported by citations. These provide the conceptual framework for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work on dosage compensation in ZW systems and schistosomes. Cytogenetic studies showed African schistosomes have more extensive ZW differentiation than Asian species. Previous microarray analysis of S. mansoni showed reduced Z expression in females with less than two-fold reduction and slightly elevated Z:autosome ratios in males. Birds and snakes lack detectable Z upregulation in males even when ancestral expression is considered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C45, C46, C55-C57, C70, C71 accurately represent prior published work supported by appropriate citations. These establish the context and prior state of knowledge for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Biological background on schistosomes. Schistosomes are blood parasites causing schistosomiasis with a complex life cycle involving clonal multiplication in mollusks and sexual reproduction in warm-blooded hosts. Unlike other platyhelminths, they have separate sexes with genetic sex determination via ZW chromosomes. All schistosomes share ancestral ZW chromosomes, but morphological differences suggest independent acquisition of strata. The master sex-determining gene remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54, C72, C73 provide accurate biological background supported by citations. These are established facts about schistosome biology rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Technical measurements from genomic and proteomic analyses. Median genomic coverage values were 18.40-18.99 for S. mansoni, 23.5-7.43 for S. haematobium, and 23.77-20.53 for S. japonicum libraries. Proteomic analysis identified 1988 proteins in heads and 2750 in gonads, with 1741 and 2516 respectively attributed unambiguously to genes and represented by multiple peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 represent direct measurements from the data with appropriate quality control. These technical details support the validity of downstream analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "e9ad7f6e-e9ac-4a2c-a366-5ce7a0ec5908",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Theoretical factors influencing dosage compensation evolution in ZW systems. Female-specific W chromosomes should have lower mutation and degeneration rates than male-specific Y chromosomes due to lower mutation rates during oogenesis. The effective population size of Z is decreased when variance in male reproductive success exceeds that of females, which can impair adaptive potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 represent theoretical predictions based on population genetics principles, supported by citations. These provide context for interpreting differences between XY and ZW systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    },
+    {
+      "id": "1c876f1a-20a0-4ab8-bedf-4cc886557b46",
+      "content_id": "58a12f1b-95bb-46c5-8a0f-037d5d6634a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current limitations of the S. mansoni genome assembly. The assembly has 416 unplaced scaffolds containing 3893 genes (29% of annotated nuclear genes) and a BUSCO score of 76% complete plus fragmented genes, indicating many genes are likely still missing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 accurately describe the current state and limitations of the genome assembly, providing important context for interpreting the results and acknowledging potential sources of incompleteness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:37:10.419520Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b0ac9ce-aa29-434b-b062-ecfc544cc1b7",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "14fb69c5-dcef-430f-813d-932c5a3de6cc",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "a196eec6-b284-4beb-9bbb-8a4093b0b9c1",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "2145633e-18ea-40b9-b4a9-35bb098704c6",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "f8a7e0c1-16ba-47aa-8b4d-a5cbb13cf197",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "b1254a9c-21fa-4819-8e3f-1c898276a685",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "39922a44-c8ac-455b-bd64-cc602dc62a18",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "3884a9d6-4aae-404b-bdfc-1be414a4fa74",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "52b5fdd4-0fb2-4e4d-aa69-3f3191f423ed",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "fd3dddc6-1ab3-45b9-8b91-ffe0ed3c694a",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "70e0ad9b-13c2-45ed-9fba-92106f21f54b",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "d5184228-0af6-4a7c-8a2c-a963d0731b1f",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "3ca540c1-807c-4dd3-a1f2-80cda025e17f",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "2c1b8091-a044-4808-ae03-50f86aa68718",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "b46dfff7-828d-40df-ad63-f3da470d2588",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "2fde8dfc-c745-4cc5-a134-94a8333e63c0",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "4a45b7f4-28a9-4716-abf5-f369319ef53d",
+      "result_id": "23ea1bfb-fe60-4afa-82d3-dfbbb0afc5d9"
+    },
+    {
+      "claim_id": "3176a96d-a197-47d0-9076-55e5a0f5abb1",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "5cce4ba2-2f90-49bc-94fe-4adefd5e82e9",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "dfa787cf-0f52-4cb7-b90e-93a6355550db",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "4719053c-86b3-4a9d-aeb7-520d0635958b",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "194b2a06-0143-4268-8663-c100ded2a954",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "81064a97-8462-4caf-b922-7b4c3cc9bc6f",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "1d1ecffd-ba44-41a8-9c69-d150170894ac",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "a6df85b4-ab6f-4cbe-a19e-86f6f78033b7",
+      "result_id": "73ceb487-47b5-461e-93ac-874581da877f"
+    },
+    {
+      "claim_id": "214df672-4639-48c7-909c-be6f7919f7e0",
+      "result_id": "5f6e8b2b-0233-4dd6-a3cd-4de4d32696f9"
+    },
+    {
+      "claim_id": "fb18ed21-8ffb-4acf-a415-6a07541d06db",
+      "result_id": "5f6e8b2b-0233-4dd6-a3cd-4de4d32696f9"
+    },
+    {
+      "claim_id": "01cf6836-ef68-482c-bb59-5c2b256e30d2",
+      "result_id": "5f6e8b2b-0233-4dd6-a3cd-4de4d32696f9"
+    },
+    {
+      "claim_id": "21df8ee6-2c56-4f9a-a877-bbd1997b1b77",
+      "result_id": "ab0a4b7c-62e6-46a3-ac07-0857144a4a75"
+    },
+    {
+      "claim_id": "c49db0b5-67d4-4970-86cc-596c0a999347",
+      "result_id": "ab0a4b7c-62e6-46a3-ac07-0857144a4a75"
+    },
+    {
+      "claim_id": "006b8701-d8f5-499b-ae33-87ef66b82c87",
+      "result_id": "ab0a4b7c-62e6-46a3-ac07-0857144a4a75"
+    },
+    {
+      "claim_id": "6be94c72-31fb-40a3-981e-ef93bc8e0528",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "7b0f5699-a971-4af0-bdec-8be6c375de83",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "a7cc57c1-c3fc-49c6-b56c-1fe2fedaff5a",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "fb00e3ab-5007-4ee0-8fe6-171e5766cc83",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "01c632ba-bca5-4f07-b91e-9d37c51cfa58",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "4bf0e6a6-c480-401b-8dc3-bd627f0d99df",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "c30748be-2f98-4fec-b37d-316be8d3e34d",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "2261fab0-324d-423a-9326-850979011153",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "d304ac20-b50a-434a-9ef0-544a0a99aa4c",
+      "result_id": "37ad384f-708d-4ae4-94cd-9f59e0a0ae87"
+    },
+    {
+      "claim_id": "a1726df7-6ce1-4ea4-b387-32143c52baa2",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "1dfa1cc1-d1c9-437f-b3c4-b91ca05d1eb3",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "bf6f50bf-56bd-4d54-9558-2bba2f8ac567",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "eb864fad-85d7-4bfd-9a99-bf1ebc1bdba4",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "646fbdf7-ef09-4d43-bdb7-51f8db28f943",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "0ecd1590-cf65-4b7b-9947-d196ff271ed3",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "9e47c16b-f373-44bd-939b-b57de7733dcf",
+      "result_id": "d02ec1cc-bafe-4915-b4f7-5e68a9e6bcc8"
+    },
+    {
+      "claim_id": "b7b0cb18-28c7-4b58-b281-dafe73accb00",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "162d51f0-4ca8-4fff-b043-b2c7839bed42",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "efdc3753-a10e-4329-94f4-580ed0b29676",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "58c68817-8d6d-4f71-b292-f73aea5ef466",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "dea23b31-0010-44e6-8b42-674c3303b514",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "c2cbb903-fa81-4686-8558-02a0e031f2cf",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "e49ce3e7-d170-471f-874b-8e50ae11bb3d",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "c37dcd64-116c-4a37-9bca-b1e9a8547aa5",
+      "result_id": "7175a5aa-073f-42a4-9c8b-3da46cb1551a"
+    },
+    {
+      "claim_id": "e95fadbc-b07c-4fd3-97c0-2add7e40e6db",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "b1c82e20-f5fe-4f81-888a-ee34abc97136",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "3d433757-44e9-4ca8-af84-3a3486be6e69",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "aa96e401-8979-40f6-a166-c063a5a16306",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "09129059-c2e8-4f84-9e11-c10227c23466",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "c53fc54b-a52f-4498-a4e4-934b6b89fd27",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "1c13d001-a1d7-4a60-aba8-a426525d4f8e",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "f210ff07-6590-49a5-a8da-fde87d3ac6ba",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "5bee7f9c-92b9-4286-8f9a-cb6169a1dad4",
+      "result_id": "e46aba87-5fc7-4bcc-a6ee-320580c4951f"
+    },
+    {
+      "claim_id": "7606630b-941d-47f6-8f3d-07b5a0ad3254",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "e649bc76-aef1-4a6a-8629-ec921dea735a",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "9da30c10-6cef-43c9-b3b9-0a8e594f5ae1",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "40569a3e-750d-47d6-8c34-0ae44f9e1cbe",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "17feec14-3c8c-43c2-b89c-fac2a91dd1f0",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "08932ab2-45f1-4062-9caa-93d9a7abade6",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "a1b31fac-ebad-4539-a8be-a2cd2a2e8273",
+      "result_id": "5ae11ad8-78eb-447e-9106-87d5e42cdecc"
+    },
+    {
+      "claim_id": "a5c9057a-cc57-4849-949f-85ab5ef9c122",
+      "result_id": "e9ad7f6e-e9ac-4a2c-a366-5ce7a0ec5908"
+    },
+    {
+      "claim_id": "e069d24f-55fc-455b-bc3e-f09c6b517096",
+      "result_id": "e9ad7f6e-e9ac-4a2c-a366-5ce7a0ec5908"
+    },
+    {
+      "claim_id": "f9b6448c-9670-437f-8094-38c2e4bdcb12",
+      "result_id": "1c876f1a-20a0-4ab8-bedf-4cc886557b46"
+    },
+    {
+      "claim_id": "a7a040ad-3ec8-44e0-ba79-9d7769f188ff",
+      "result_id": "1c876f1a-20a0-4ab8-bedf-4cc886557b46"
+    }
+  ],
+  "comparisons": []
+}

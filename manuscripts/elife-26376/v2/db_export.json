@@ -1,0 +1,2165 @@
+{
+  "submission": {
+    "id": "3ee6e3cd-4c30-4317-8130-8f4fe11699b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:21:21.687934Z",
+    "updated_at": "2025-12-01T20:21:21.687934Z"
+  },
+  "content": [
+    {
+      "id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "submission_id": "3ee6e3cd-4c30-4317-8130-8f4fe11699b2",
+      "content_type": "manuscript",
+      "content_text": "# Microtubule-dependent ribosome localization in C. elegans neurons\n\n## Authors\n\n- Kentaro Noma<sup>1</sup> ([ORCID: 0000-0002-6487-8037](https://orcid.org/0000-0002-6487-8037))\n- Alexandr Goncharov<sup>1</sup>\n- Mark H Ellisman<sup>3</sup>\n- Yishi Jin<sup>1</sup> ([ORCID: 0000-0002-9371-9860](https://orcid.org/0000-0002-9371-9860)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences, Neurobiology Section University of California, San Diego San Diego United States\n2. Howard Hughes Medical Institute, University of California, San Diego San Diego United States\n3. National Center for Research in Biological Systems, Department of Neurosciences, School of Medicine University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSubcellular localization of ribosomes defines the location and capacity for protein synthesis. Methods for in vivo visualizing ribosomes in multicellular organisms are desirable in mechanistic investigations of the cell biology of ribosome dynamics. Here, we developed an approach using split GFP for tissue-specific visualization of ribosomes in Caenorhabditis elegans. Labeled ribosomes are detected as fluorescent puncta in the axons and synaptic terminals of specific neuron types, correlating with ribosome distribution at the ultrastructural level. We found that axonal ribosomes change localization during neuronal development and after axonal injury. By examining mutants affecting axonal trafficking and performing a forward genetic screen, we showed that the microtubule cytoskeleton and the JIP3 protein UNC-16 exert distinct effects on localization of axonal and somatic ribosomes. Our data demonstrate the utility of tissue-specific visualization of ribosomes in vivo, and provide insight into the mechanisms of active regulation of ribosome localization in neurons.\n\n## Introduction\n\nLocalization of organelles defines the local environment and functionality of cells. Ribosome localization determines the local capacity for protein synthesis, which is particularly important in polarized cells, such as neurons. The observation of polysomes in the base of dendritic spines in rat dentate gyrus neurons provided crucial early evidence for local translation in neurons (Steward and Levy, 1982). Aberrant local protein synthesis disrupts neuronal plasticity in models for neurodevelopmental disorders, such as Tuberous sclerosis (TSC) and Fragile X syndrome (FXS) (Auerbach et al., 2011). Furthermore, the importance of local translation is highlighted by unique localization of specific mRNAs. For example, Ca2+/calmodulin-dependent protein kinase II \u03b1(CaMKII\u03b1) mRNA is localized to dendrites via a cis regulatory element in its 3\u2019-UTR, and removal of this element impairs long-term potentiation (LTP) and spatial memory (Miller et al., 2002); \u03b2-actin mRNA is localized to the growing tip of an axon, the growth cone, where its polarized translation is important for growth cone turning towards an attractant (Leung et al., 2006; Yao et al., 2006). Despite their potential impact on local translation, mechanisms underlying ribosome localization in vivo are largely unexplored, partly due to the limited tools to visualize ribosomes in live multicellular organisms. One striking example of ribosome localization is that dendritic ribosomes associated with the netrin receptor, Deleted in Colorectal Cancer (DCC), are stalled and inactive, and released upon netrin signaling (Tcherkezian et al., 2010).\n\nElectron microscopy (EM) studies have long provided essential evidence for ribosomes, beginning with the discovery of\u00a0~20 nm diameter electron-dense particles rich in nucleic acids (Palade, 1955). Individual ribosomes (monosomes) are attached to the endoplasmic reticulum (ER) or free in the cytosol, while mRNA-bound polysomes appear as beaded strings in EM images. To support the identity of ribosomes, EM analyses are often complemented by electron spectroscopic imaging (ESI) of ribosomal RNA (rRNA) phosphorus (Koenig and Martin, 1996; Korn et al., 1983), nucleic acid-binding dyes (Glazer and Rye, 1992; Koenig and Martin, 1996), ribosomal RNA antibodies (Koenig et al., 2000; Lerner et al., 1981), ribosomal protein antibodies (Elkon et al., 1985), or antibodies for proteins involved in translation, such as the eukaryotic translation initiation factor (Tcherkezian et al., 2010). These methods have been used to identify clustered ribosomes, often termed plaques, in squid neurons (Martin et al., 1998), goldfish Mauthner cell axons (Koenig and Martin, 1996), and mammalian peripheral axons (Koenig et al., 2000). The limitation of the aforementioned studies on ribosome localization is that they required tissues and/or cells to be fixed and therefore limited in their ability to address the mechanism of ribosome localization.\n\nUntil now, in vivo live imaging studies of functional ribosomes remain limited because labeling ribosomal proteins with a fluorescent protein presents challenges, compared to other organelles. First, as dozens of ribosomal proteins assemble into an RNA-rich macromolecule complex, there are limited sites for fluorescent protein tagging without interfering with ribosome function. Second, the expression level of ribosomal proteins is tightly controlled. Methodologies for live imaging of ribosomes largely rely on overexpression of ribosomal proteins tagged with fluorescence proteins (Buxbaum et al., 2014; Rolls et al., 2002), which can cause cellular defects (Warner and McIntosh, 2009). For example, overexpression of ribosomal subunit S29 causes apoptosis in primary cultured thymocytes of rats (Khanna et al., 2000). Moreover, overexpressed ribosomal proteins may not be incorporated into endogenous ribosomes, generating artifactual signals. Tagging ribosomal proteins at endogenous loci can solve this issue, but has been reported only in unicellular organisms. In bacteria, endogenous ribosomal protein S2 has been labeled with YFP (Bakshi et al., 2012). In yeasts, endogenous loci of ribosomal proteins have been tagged with GFP (Huh et al., 2003). For multicellular organisms, such as mice, knock-in of HA-tagged RPL22 (Sanz et al., 2009) or BAC transgenic expression of eGFP-tagged RPL10a (Heiman et al., 2008) has been used for ribosomal profiling of translational status. However, these reagents do not allow direct visualization of endogenous ribosomes in living tissues. A third challenge is the abundance of ribosomes in all tissues, potentially interfering with visualization of ribosomes in specific subcellular compartments, such as axons and dendrites. Thus, methods to visualize endogenous ribosomes in specific tissues in multicellular organisms have not been established and, as a result, few studies have addressed mechanisms controlling ribosome localization.\n\nCaenorhabditis elegans (C. elegans) is ideally suited for visualizing protein and organelle localization in vivo because it is transparent and genetically tractable. Furthermore, candidate and forward genetic screens allow dissection of regulatory mechanisms. Here, we developed an approach using split GFP to visualize endogenous ribosomes in a tissue-specific manner. In C. elegans neurons, we found that ribosome localization is compartmentalized and displays dynamic changes during development and after axon injury. Loss of function of the Uncoordinated-16 (unc-16), encoding JNK-interacting protein 3 (JIP3), causes mislocalization of ribosomes. We further performed a forward genetic screen for mutants altering ribosome localization. Our analysis revealed roles of neuronal tubulins and the mec-15 (mechanosensory abnormality-15) encoding a F-box protein that functions as a regulator of tubulins, for proper ribosome localization. These findings support the utility of our approach for visualizing ribosomes in specific tissues and suggest that UNC-16/JIP3 and microtubules have specific roles in neuronal ribosome localization.\n\n## Results\n\n### Visualization of ribosomes using functional GFP-tagged ribosomal proteins\n\nTo visualize ribosomes in vivo, we selected ribosomal proteins whose N- and/or C-termini are on the surface of ribosomes, based on structural studies (Ben-Shem et al., 2011). We initially used standard multi-copy transgenes to overexpress GFP-tagged ribosomal proteins (see Materials and Methods). However, we noticed that such overexpression caused a variety of cellular defects, such as abnormal morphologies of axons and cell bodies (Figure 1\u2014figure supplement 1A), and aggregates of ribosomal proteins in the nucleus (Figure 1\u2014figure supplement 2A). Reasoning that tagged ribosomal proteins should be functional and expressed at the levels comparable to endogenous ones, we then focused on ribosomal small subunit protein 18 (rps-18) or large subunit protein 29 (rpl-29), for which genetic null mutations were available. Homozygous rps-18(ok3353) mutants (rps-18(0), Figure 1A) exhibited early larval arrest. On the other hand, homozygous rpl-29(tm3555) mutants (rpl-29(0), Figure 1\u2014figure supplement 2B) were superficially wild type, reflecting a possible non-essential role of rpl-29 in ribosome function. We generated strains consisting of a single copy transgene expressing GFP-tagged rps-18 or rpl-29 fragment in the respective genetic null mutant background (Material and methods, Supplementary file 1). Our single-copy transgene juSi83[Prps-18-GFP::rps-18] (Figure 1A) rescued the rps-18(0) early larval arrest, but did not rescue sterility (Figure 1\u2014figure supplement 1C), despite visible GFP expression in the germline (Figure 1\u2014figure supplement 1B, gonad). Tagging with other fluorescent tags, such as mEOS, Dendra, and mini Singlet Oxygen Generator (miniSOG), also failed to fully rescue rps-18(0) phenotypes (data not shown), suggesting that large tags partly impaired RPS-18 function.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematics of endogenous rps-18 locus on chromosome IV and single-copy transgenes on chromosome II. Black box: exon, Grey box: untranslated region, Red box: deletion. (B) Schematic of RIBOS for mechanosensory neurons. The rps-18 fused to the smaller part of split GFP (GFP11) is replaced to the endogenous rps-18 (juSi94[GFP11::rps-18]; rps-18(0), left). The larger part of split GFP (GFP1-10) is overexpressed using a high-copy transgene in a targeted tissue (middle). After crossing these strains, GFP1-10 binds to the GFP11::RPS-18 in the targeted tissue and visualize RPS-18 (right). (C) Epidermis-specific Pcol-19-RIBOS (juSi94[GFP11::rps-18]; rps-18(0); juEx5375[Pcol-19-GFP1-10]). The RIBOS signals were excluded from the nuclei (Left panel, arrowheads) and reticular structures (magnified image). Although GFP11::RPS-18 is expressed in the intestine, it had no signals. The negative control only expressed GFP1-10 (juEx5375) in the epidermis. Scale bars: 20 \u00b5m. (D) Diffuse IFE-2 expression visualized by juEx5809[Pcol-19-IFE-2::GFP]. (E) Representative images of the FRAP experiment using Pcol-19-RIBOS. The fluorophore was bleached in the area (arrowheads) at 0 s. Scale bars: 2 \u00b5m. (F) Fluorescent recovery after photobleaching was plotted for juEx5809[Pcol-19-IFE-2::GFP], juEx5811[Pcol-19-IFE-4::GFP], Pcol-19-RIBOS, and juSi123[RPL-29::GFP]; rpl-29(0). The line represents the one-phase fit to an exponential function for each plot. The inset shows the magnified graph for IFE-2::GFP and IFE-4::GFP. Error bars indicate S.E.M. (G and H) t1/2 and mobile fraction calculated from (F). n=\u00a05\u00a0or\u00a06.\u00a0Error bar indicates S.E.M., Statistics: One-way ANOVA, ns: p>0.05, p**<0.01, p****<0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) RPS-18 overexpression in mechanosensory neurons with juEx5815[Pmec-4-RPS-18] caused abnormal axon (left panels) and soma (middle panels) morphologies. ALM neurons were visualized by muIs32[Pmec-7-GFP]. Scale bars: 20 and 10 \u00b5m in left and right panels, respectively. (B) Representative images of the indicated regions of juSi83[GFP::rps-18]-expressing worms in rps-18(0)/nT1 background at the young adult stage. All images were taken from the live animals except for the gonad, which was dissected out from the body. The magnified image in the middle shows the cell bodies of motor neurons. Scale bars: 20 \u00b5m, 10 \u00b5m in the magnified image. (C) Brood size of worms for genotypes indicated. Single-copy transgenes, juSi83[GFP::rps-18] or juSi94[GFP11::rps-18], were used to rescue the sterility of rps-18(0). N: numbers of parental worms. Error bars: S.E.M. Statistics: 1-way ANOVA, compared to the wild type. ns: not significant (p>0.05), p***<0.001. (D) Differential interference contrast (DIC) and fluorescent images of juSi83-expressing worms at the L3 stage in the wild-type, heterozygous (rps-18(0)/nT1), or homozygous (rps-18(0)) background. Arrowhead: pharyngeal GFP in the nT1 balancer. (E) Quantification of fluorescence intensity of juSi83-carrying worms in the indicated backgrounds. Numbers of worms are shown in the bars.\u00a0Error bars indicate S.E.M. Statistics: One way ANOVA, ***p<0.001.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Pan-neuronal RPL-29 overexpression with juEx5243[Prgef-1-RPL-29::GFP] caused abnormal aggregates of RPL-29 in the nucleus. Head ganglia and mechanosensory ALM neurons are shown. Scale bars: 20 \u00b5m (left); 10 \u00b5m (right). (B) Schematics of the rpl-29 locus and a transgene. Black box: exon, Grey box: untranslated region, Red box: deletion. (C and D) The juSi123[rpl-29::GFP]; rpl-29(tm3555) strain showed the expression of RPL-29 in the cytosol (D, scale bar\u00a0=\u00a020 \u00b5m) throughout development (C, scale bar\u00a0=\u00a0200 \u00b5m). (E) Quantification of the fluorescence intensity in the indicated genetic background. Error bars indicate S.E.M. Statistics: Student\u2019s t-test, ***p<0.001.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Ribosome distribution in muscles visualized by Pmyo-3-RIBOS (juSi94[GFP11::rps-18]; rps-18(0); juEx5377[Pmyo-3-GFP1-10]). Ventral nerve cord runs horizontally in the middle of the image. Ribosomes in muscle arms are shown by arrows. Arrowheads indicate autofluorescence in the intestine. Scale bar: 20 \u00b5m. (B) Electron micrographs of the ventral nerve cord and muscle arm. Right panel is the enlarged muscle arm (dotted square in the middle panel), filled with ribosomes detected as 20 nm electron-dense structures (white arrowheads). Black arrowheads indicate microtubules in neurons, which have a similar diameter to ribosomes. Scale bar: 400 nm; 200 nm in the magnified image.\n\nIn the rescued somatic tissues, we observed GFP::RPS-18 in the cytosol, appearing as reticular structures (Figure 1\u2014figure supplement 1B). RPL-29::GFP expressed from a single-copy transgene (juSi123[Prpl-29-rpl-29::GFP]) in the rpl-29(0) background showed a similar pattern (Figure 1\u2014figure supplement 2C and D). The similarity in localization of these large and small subunit proteins suggests that most of the signals represent assembled ribosomes as opposed to unassembled proteins or subunits. Importantly, the expression from these single-copy transgenes caused no detectable defects (data not shown) unlike the overexpression of rps-18 or rpl-29.\n\nWe observed that the fluorescence intensity of Prps-18-GFP::RPS-18 was significantly lower in the rps-18(+)/rps-18(+) or rps-18(+)/rps-18(0) background than in homozygous rps-18(0)/rps-18(0) mutants (Figure 1\u2014figure supplement 1D and E). Similarly, Prpl-29-GFP::rpl-29 signal intensity depended on the endogenous rpl-29 locus (Figure 1\u2014figure supplement 2E). These results suggest that negative feedback regulation eliminates excess ribosomal proteins, similar to that previously reported in bacteria (Kaczanowska and Ryd\u00e9n-Aulin, 2007). Therefore, the null mutant background is necessary to obtain sufficiently bright signals for visualization of GFP-tagged ribosomal proteins.\n\n### Tissue-specific Ribosome Imaging Based On Split GFP (RIBOS)\n\nThe ubiquitous expression of GFP::RPS-18 in all tissues precluded analysis of ribosome localization in individual cells or cellular compartments. Moreover, tagging with relatively large fluorescent proteins, such as GFP, might interfere with the function of ribosomal proteins. To circumvent these challenges, we devised a strategy using self-assembling split GFP; when the first ten \u03b2-strands (GFP1-10) and the last \u03b2-strand (GFP11) coexist, they irreversibly assemble and produce green fluorescence (Cabantous et al., 2005). We reasoned that GFP11-tagged endogenous proteins could be visualized by expressing GFP1-10 under the control of a tissue-specific promoter (Figure 1B). Importantly, we found that a single-copy expression of GFP11::RPS-18 (juSi94[GFP11::rps-18]) completely rescued larval arrest and sterility of rps-18(0)\u00a0(Figure 1\u2014figure supplement 1C). This is probably because GFP11 is much smaller (16 amino acids), compared to GFP (237 amino acids), supporting our interpretation for partial impaired function of the GFP::RPS-18. We then expressed GFP1-10 in specific tissues, such as epidermis, muscles, or neurons to visualize GFP11::RPS-18 expression in the juSi94; rps-18(0) background (Figure 1B and see below). Since the binding between GFP11 and GFP1-10 is irreversible, it is possible that the reconstituted GFP::RPS-18 is not fully functional in contexts where ribosome activity is locally required or sensitive to dosage. Nonetheless, the subcellular fluorescence pattern revealed by this split-GFP transgenic approach was similar to that from the single-copy expression of GFP::RPS-18 or of RPL-29::GFP. Here, we call this approach Ribosome Imaging Based On Split GFP (RIBOS). We denote tissue-specific RIBOS, namely, juSi94[GFP11::rps-18]; rps-18(0); juEx or juIs[Pgene-GFP1-10], where Pgene is a tissue-specific promoter, as \u2018Pgene-RIBOS\u2019 for simplicity.\n\nWe first evaluated RIBOS signals in non-neuronal tissues. In adult epidermis-specific Pcol-19-RIBOS, we observed signals in the epidermal cytosol excluded from reticular structures (Figure 1C, Epidermis). Although RPS-18 is expressed in the whole body, fluorescence was not observed in any other tissues, such as intestine (Figure 1C, Intestine), suggesting that GFPP11::RPS-18 did not have fluorescence. Worms expressing Pcol-19-GFP1-10 transgene alone also did not show fluorescent signals compared to Pcol-19-RIBOS (Figure 1C and Materials and Methods). To address whether GFP11::RPS-18 was incorporated into endogenous ribosomes, we measured Fluorescence Recovery After Photobleaching (FRAP) of Pcol-19-RIBOS (Figure 1E). If GFP11::RPS-18 is incorporated into a large organelle or complex, such as the ribosome, the half time of fluorescence recovery (t1/2) should be larger, and the mobile fraction should be smaller than those of a free cytosolic protein (Lippincott-Schwartz et al., 2001). We used GFP-tagged Initiation Factor 4E (eIF4E) homologs, IFE-2::GFP (Song et al., 2010) and IFE-4::GFP (Dinkova et al., 2005), as controls because their diffuse distribution implied lack of association to specific protein complex or organelle (Figure 1D). Photobleached GFP11::RPS-18 showed a longer recovery time and smaller mobile fraction than IFE-2::GFP and IFE-4::GFP (Figure 1F\u20131H). Furthermore, the recovery curve, t1/2, and mobile fraction of GFP11::RPS-18 were comparable to that of the ribosomal large subunit, RPL-29::GFP (Figure 1F\u20131H), suggesting that fluorescence recovery was not affected by splitting GFP, and that RPS-18 and RPL-29 were incorporated into a complex with a similar mobility, likely the ribosome.\n\nBody wall muscle-specific Pmyo-3-RIBOS revealed that besides strong somatic signals, fluorescence was observed in the muscle arm (Figure 1\u2014figure supplement 3A), an elaborate postsynaptic structure extending to the nerve cord to receive inputs from presynaptic neurons (Dixon and Roy, 2005). Such RIBOS signals were consistent with the distribution of ribosomes in muscle arms as found in electron micrographs (Figure 1\u2014figure supplement 3B). These data suggest that RIBOS is suitable for visualizing ribosome localization in a specific tissue. Below, we refer to RIBOS signals as ribosomes.\n\n### Developmental changes of ribosome localization in neurons\n\nWe next examined ribosome localization in neurons. Pan-neuronal Prgef-1-RIBOS showed that ribosomes were mostly restricted to the soma (Figure 2A\u2013C). In contrast to the restricted signals of ribosomes, initiation factors IFE-2::GFP and IFE-4::GFP were diffuse in cell bodies and nerve processes in the ventral nerve cord (Figure 2C). We also examined the neuronal localization of two putative components of RNA granules, which have been suggested to contain ribosomes (Elvira et al., 2006). STAU-1 (LeGendre et al., 2013), an ortholog of Staufen, formed two foci in the soma; AIN-1 (ALG-1-interacting protein-1), an ortholog of GW182 (Ding et al., 2005), formed puncta in the soma and along the neuronal processes (Figure 2C). Neither the initiation factors nor the RNA granule components showed localization similar to ribosomes, implying that protein translation-related components might be differentially regulated in their localization.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) Pan-neuronal Prgef-1-RIBOS visualizing ribosomes (juSi94[GFP11::rps-18]; rps-18(0) juIs409[Prgef-1-GFP1-10]) in head neurons (A) and tail neurons (B). Negative controls only expressed GFP1-10 (juIs409[Prgef-1-GFP1-10]). An arrowhead in (B) indicates ribosomes in the intestine due to the leak expression of GFP1-10. Scale bars: 20 \u00b5m; 10 \u00b5m in the magnified images. (C) Fluorescent images and a schematic of motor neurons in the ventral nerve cord. Prgef-1-RIBOS is shown in the upper left panel. Initiation factors (IFE-2::GFP and IFE-4::GFP) and putative components of RNA granules (AIN-1::GFP and STAU-1::GFP) were expressed under the control of the rgef-1 promoter using extrachromosomal arrays (see Supplementary file 2 for the transgenes). Scale bar: 20 \u00b5m.\n\nTo examine ribosomes in axonal or dendritic processes of specific neurons, we used the neuronal subtype-specific promoters, as the abundance of ribosomal signals using a pan-neuronal promoter hindered data analysis. Punc-25-RIBOS labeled ribosomes in the GABAergic dorsal D-type (DD) and ventral D-type (VD) motor neurons. In the first larval (L1) stage, we found that ribosomes colocalized with presynaptic markers, RAB-3, in the ventral cord, corresponding to the presynaptic terminals of DD motor neurons (Figure 3A). At late L1 to L2 stage DD neurons remodel their pre-synaptic specializations from the ventral cord to the dorsal cord, in a phenomenon known as DD remodeling (White et al., 1978). Concurrent with DD remodeling, the VD neurons form presynaptic specializations along the ventral cord. From L2 to older larvae, we observed Punc-25-RIBOS signals in the ventral cord, which were excluded from VD presynaptic terminals (Figure 3A). DD neuron-specific Pflp-13-RIBOS showed similar localization (Figure 3B), suggesting that ribosome localization was changed from presynaptic to postsynaptic compartments in the DD neurons. Consistent with RIBOS, reconstruction of serial EM sections showed that the number of ribosomes in DD axonal profiles was higher at the L1 stage than the adult stage (Figure 3C). In the adult presynaptic terminals, the evidence of ribosome localization has been limited (Akins et al., 2009). Here, we observed ribosomes in the presynaptic terminals of adult VD neurons in serial EM sections (Figure 3C). Using electron tomography, we further confirmed the existence of ribosomes in the presynaptic terminals of those neurons (Figure 3D and E), based on the following criteria: ribosomes in neurons had spherical shapes with 20 nm diameter, and resembled ribosomes in muscles (Figure 3E\u2013H). We were unable to detect RIBOS signals in the ventral cord colocalized with presynaptic markers at the adult stage, likely due to the number of ribosomes being below that of light microscopy detection threshold.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrates GABAergic motor neurons at the L1 or adult stage, in which dotted squares indicate imaged regions. As VD neurons are born, DD neurons change the innervation. GABAergic motor neuron-specific Punc-25-RIBOS (green arrowheads) and a presynaptic marker Punc-25-mCherry-RAB-3 (red arrowheads) were colocalized at the L1 stage (yellow arrowheads) but not at the adult stage. Scale bars: 20 \u00b5m. (B) DD-neuron specific Pflp-13-RIBOS showed punctate signals in the ventral cord (green arrowheads). Scale bar: 20 \u00b5m. (C) The number of ribosomes were counted in the axonal profiles of serially reconstructed electron micrographs for GABAergic motor neurons. Numbers of axonal profiles are indicated. Statistics: Student\u2019s t-test, ***p<0.001. (D) A representative presynaptic volume reconstructed from EM tomograms of the adult motor neurons in the ventral cord, showing that presynaptic terminals contain ribosomes. Purple objects: ribosomes, blue: active zones, light blue: microtubules, green: endosomes. (E) Representative electron tomograms of presynaptic terminal of a motor neuron in the ventral nerve cord of an adult animal with 12 nm intervals. The active zone is surrounded by synaptic vesicles and dense core vesicles. White arrowheads indicate ribosomes in muscles (M). White boxes mark microtubules, which have a similar diameter as a ribosome; black boxes ribosomes. (F\u2013H) Electron tomograms with 1.2 nm intervals for a ribosome in muscle (F), and a ribosome (G) and a microtubule (H) in the presynaptic terminal, showing that a microtubule and a ribosome have a similar diameter, but microtubule is continuous in z-direction unlike ribosome.\n\nTo examine a different type of neurons, we observed the developmental changes of ribosome distribution in mechanosensory neurons. We used Pmec-4-RIBOS labeling Anterior and Posterior Lateral Microtubule cells (ALM and PLM, respectively), in which local translation (Yan et al., 2009) and axonal ribosome localization (Topalidou et al., 2012) have been reported. In these neurons, we observed ribosomes in the soma and the proximal axon (~20 \u00b5m from the soma, Figure 4A). Ribosomes also formed puncta along the axon and puncta density decreased from L1 to adult stage in PLM neurons (Figure 4A\u20134C). At the L1 stage, but not at the adult stage, these puncta were associated with the junction of the synaptic branch of PLM neurons (Figure 4B and D). These data indicate that ribosomal localization changes during the neuronal development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig4-v2.jpg)\n\n**Figure 4.:** Mechanosensory neuron-specific Pmec-4-RIBOS (juSi94[GFP11::rps-18] juIs438[Pmec-4-GFP1\u221210+Pmec-4-tagRFP]; rps-18(0)). (A) ALM neurons at the adult stage. Negative control strain expressing only GFP1-10 had weak signals in the nucleus. Ribosomes form puncta along the ALM axon (arrowheads). Scale bars: 20 \u00b5m. (B) Comparison of RIBOS signals between L1 and adult stages around the synaptic branch of PLM neurons. Arrows and arrowheads indicate synaptic branches and RIBOS signals, respectively. Scale bar: 20 \u00b5m. (C) Number of puncta per 100 \u00b5m axon around the PLM branch. Statistics: Student\u2019s t-test, ***p<0.001. N: number of worms. (D) Fraction of worms with ribosomes associated with PLM branch point at indicated developmental stages. Statistics: Fisher\u2019s exact test, compared to the L1 stage. **p<0.01, ***p<0.001. N: number of worms.\n\n### Ribosomes accumulate at the tip of the proximal axon after axon injury\n\nIn C. elegans mechanosensory neurons, local translation in axons is induced after axon injury (Yan et al., 2009). Therefore, we next asked if neuronal ribosome localization in adult animals was altered after axon injury. We severed the proximal axonal process of PLM mechanosensory neurons by laser axotomy (Wu et al., 2007). Around 6 hr after axotomy, microtubules are reorganized, leading to the formation of a growth cone, and severed axons start regrowing around the same time, resulting in average regrowth about\u00a0~100 \u00b5m after 24 hr (Chen et al., 2011; Ghosh-Roy et al., 2012). Axon regrowth partly depended on new protein synthesis because treatment with cycloheximide, which blocks protein synthesis, inhibited this regrowth (Figure 5\u2014figure supplement 1). One hour after axon injury, ribosome accumulation began at the injured site of the proximal axon and appeared to plateau after three hours (Figure 5A and B). We also observed weak RIBOS signals in the regrowing tip (Figure 5A). Negative controls involving no wounding or laser wounding without severing the axon did not induce ribosome accumulation (Figure 5B). Consistent with RIBOS, reconstruction of EM serial sections showed accumulation of electron-dense monosomes at the cutting site six hours after axotomy (Figure 5D and E). We also observed mitochondria around the cutting site in the EM images (Figure 5D and E). The uninjured axon contained no ribosomes or mitochondria (Figure 5C). This is consistent with the previous observation showing few ribosomes in mechanosensory axons (Topalidou et al., 2012). These results suggest that axonal ribosomes at the adult stage can alter their localization after axon injury.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig5-v2.jpg)\n\n**Figure 5.:** (A) Pmec-4-RIBOS three or twelve hours after axon injury or wounding. For negative control, worms were wounded by laser without damaging the axon. Right panels are magnified images of the black square regions. Arrowheads indicate laser illumination site. An arrow indicates the tip of the regrowing axon. Scale bar: 20 \u00b5m; 10 \u00b5m in the magnified image. (B) Quantification of fluorescent intensity at the proximal axons indicated by boxes in (A). Numbers of worms were shown in the bars. Statistics: One-way ANOVA, **p<0.01, ***p<0.001, compared to the wounded condition. (C) Electron micrograph of PLM axon without axon injury. The uninjured PLM on the right side was used as a control from the same worm as in (D). Black arrowheads: microtubules. Scale bar: 200 nm. (D and E) The tip of the PLM axon on the left side six hours after axon injury. (D) Two serial electron micrographs corresponding to two sections in (E). White arrowheads: monosome-like electron dense particles; Mito: mitochondria. Scale bar: 200 nm. (E) Serial reconstruction EM, corresponding to forty-two sections with 50 nm thickness (2.1 \u00b5m in length). Black arrowhead indicates the presumable cutting site and white arrowhead the regrowing tip. Ribosome (purple dots) and mitochondria (black) accumulated around the cutting site, which lacks microtubules (light-blue lines).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative images showing the axon regrowth 24 hr after axotomy with a translation inhibitor, cycloheximide\u00a0(CHX), or with DMSO as a negative control. Arrowheads indicate the cutting sites. Scale bar: 20 \u00b5m. (B and C) Quantification of total axon regrowth 24 hr after axotomy using two different GFP markers, zdIs5 and muIs32. Numbers of worms are indicated. Statistics: Student\u2019s t-test, **p<0.01, ***p<0.001.\n\n### The JIP3 protein UNC-16 affects ribosome distribution in presynaptic terminals\n\nTo investigate mechanisms underlying neuronal ribosome distribution, we examined mutants of select candidate genes for ribosome distribution using mechanosensory neuron-specific Pmec-4-RIBOS. Since ribosomes are mostly observed in the neuronal soma, we focused on proteins which might prevent ribosomes entering neuronal processes. In mammals, large molecules are excluded from the axons of mature neurons by the axon initial segment (Song et al., 2009). Knockdown of a key regulator of the axon initial segment, ankyrin-G, allows somatodendritic components to move into the axon (Hedstrom et al., 2008; Song et al., 2009). \u03b2-spectrin is another component of the axon initial segment and binds ankyrin-G (Komada and Soriano, 2002). We found normal ribosome distribution in the soma and axon in loss-of-function mutants of C. elegans orthologs for ankyrin (unc-44) and its putative binding partner spectrin (unc-70) (Figure 6), indicating that these genes may not play a role in restricting ribosomes in the soma. The JNK-interacting protein 3 (JIP3) ortholog, UNC-16, has been shown to prevent endosomal organelles from exiting out of the soma (Edwards et al., 2013). In PLM neurons of unc-16 mutants, ribosomes were decreased in the proximal axon and increased in the presynaptic terminals without affecting somatic distribution (Figure 6), suggesting that UNC-16 acted as a gatekeeper for ribosomes in mechanosensory neurons.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig6-v2.jpg)\n\n**Figure 6.:** Mechanosensory neuron-specific Pmec-4-RIBOS with free tagRFP. (A) Representative images of ALM neurons in the indicated genetic backgrounds. unc-16 mutants showed reduced ribosomes in the proximal axon (arrows). Scale bar: 20 \u00b5m. (B) RIBOS fluorescence intensity in the proximal axon (20 \u00b5m from the soma). Numbers of worms are shown in the bars. Statistics: One-way ANOVA, ns: p>0.05, *p<0.05, **p<0.01, ***p<0.001. (C) PLM presynaptic terminals in the ventral cord, highlighted in the schematic. unc-16 mutants showed more ribosomes. (D) Ratio of RIBOS to tagRFP in the presynaptic terminals. Numbers of worms were shown in the bars. Statistics: One-way ANOVA, ns: p>0.05, ***p<0.001.\n\n### A forward genetic screen identified roles for tubulins in ribosome distribution\n\nOur identification of unc-16 by the candidate approach gave us the confidence to identify additional ribosomal regulators by unbiased forward genetic screens. Thus, we performed a genetic screen using Pmec-4-RIBOS and found eight mutants displaying aberrant ribosomal distribution (see Materials and methods). Ribosomes in these mutants accumulated in the cell cortex and around the nucleus, compared to the relatively diffused distribution in the wild type, and increased in the proximal axon with partial penetrance (Figure 7A and B). In addition to these ribosome defects, all mutants had misshapen mechanosensory neuron cell bodies, and insensitivity to gentle touch. Based on complementation tests and sequencing, we found that all mutations affect tubulin or tubulin regulatory genes, previously isolated as mechanosensory abnormality (mec) genes (Table 1). The ALM and PLM mechanosensory neurons are filled with unique 15-protofilament microtubules (Chalfie and Sulston, 1981), which consist of \u03b1- and \u03b2-tubulins encoded by mec-12 (Fukushige et al., 1999) and mec-7 genes (Savage et al., 1989), respectively. Four recessive mutations (ju1286, ju1287, ju1294, and ju1298) and a dominant mutation ju1297 affecting ribosome localization were found to be substitution mutations in mec-7 (Table 1 and Figure 7\u2014figure supplement 1A). All four recessive mutations are located in the exchangeable GDP/GTP-binding site of the dimer-dimer interface of \u03b1- and \u03b2-tubulins (Figure 7\u2014figure supplement 1D, magenta). In contrast, the dominant mutation is located in the non-exchangeable GTP-binding site of the monomer-monomer interface (Figure 7\u2014figure supplement 1D, cyan). One dominant allele, ju1295, was mapped to mec-12 (Figure 7\u2014figure supplement 1B) and caused a Glu to Ser substitution on the exchangeable GDP/GTP-binding site in the dimer-dimer interface (Figure 7\u2014figure supplement 1D, light green). A deletion allele mec-7(u443) and a recessive loss-of-function allele of mec-12(e1607) (Figure 7\u2014figure supplement 1D, light blue) exhibited comparable ribosome distribution defects (Figure 7D), suggesting that the identified mutations were causative. Interestingly, dominant alleles, mec-7(ju1297) and mec-12(ju1295) showed lower penetrance of ribosome defects than recessive alleles of mec-7 only in the axons (Figure 7B). This result suggests that axonal and somatic ribosomes might be differentially regulated. Two recessive mutations, ju1288 and ju1289, were mapped to the E3 ubiquitin ligase homolog, mec-15 (Figure 7\u2014figure supplement 1C), which regulates expression of mec-7 and mec-12 genes (Bounoutas et al., 2009b; Gu et al., 1996). We then tested a mutant of the \u03b1-tubulin acetyltransferase, mec-17 (Akella et al., 2010), and found that it showed similar ribosome distribution defects (Figure 7D). These results suggest that tubulin genes and their regulation are important for ribosome distribution.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig7-v2.jpg)\n\n**Figure 7.:** (A) Ribosome distribution in the ALM soma and proximal axon using Pmec-4-RIBOS in the indicated backgrounds. Brightness was adjusted in the middle panels to show the puncta in the proximal axons in the mec-7 and mec-15 mutants (white arrowheads). TagRFP intensity was decreased in the mec-7 and mec-15 mutants (bottom panels), consistent with a previous report (Bounoutas et al., 2011). Scale bar: 5 \u00b5m. (B and D) The fraction of worms showing the ribosome distribution defects in the soma or in the axon of ALM neurons in the indicated genetic backgrounds. # indicates dominant mutants. 50\u201370 worms were analyzed. Statistics: Fisher\u2019s exact test, compared to the wild type control, ns: p>0.05, **p<0.01, ***p<0.001. (C) Schematic of mechanotransduction components in C. elegans. Representative proteins of each component are shown in brackets. ECM: extracellular matrix; MT: microtubules.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013C) Gene structures of mec-7, mec-12, and mec-15 with alleles and corresponding amino acid changes. Black boxes indicate exons; Grey bars untranslated regions. (D) Three-dimensional structure models of \u03b1- and \u03b2-tubulins generated by Swiss-Model (Biasini et al., 2014) and a schematic of a tubulin dimer. Non-exchangeable GTP is shown in yellow. MEC-7 model generated with pig \u03b2-tubulin (PDB: 1IA0) as a template. Magenta indicates recessive mutants (ju1286, ju1287, ju1294, and ju1297) close to the exchangeable GTP/GDP-binding site; cyan dominant mutant (ju1297). MEC-12 model generated with bovine \u03b1-tubulin (PDB: 4I50) as a template. Cyan indicates dominant mutant (ju1295); light green recessive mutant (e1607).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26376/elife-26376-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The fraction of worms showing the ribosome distribution defects in the soma or in the axon of ALM neurons. (A) Microtubule destabilizing drug (1 mM colchicine) treatment at different stages with a negative control (NC). (B) Time course of ribosome distribution defects in the\u00a0wild type or mec-7 mutants during development. The corresponding developmental stages are indicated.\n\n**Table 1.**\n Mutants with abnormal ribosome distributions\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Protein</th>\n      <th>Allele</th>\n      <th>NT change</th>\n      <th>AA change</th>\n      <th>Inheritance</th>\n      <th>Primers</th>\n      <th>Note</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>mec-7</td>\n      <td>\u03b2-tubulin</td>\n      <td>ju1286</td>\n      <td>G722A</td>\n      <td>G144R</td>\n      <td>Recessive</td>\n      <td>YJ11867/YJ12057</td>\n      <td>Exchangeable GTP/GDP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-7</td>\n      <td>\u03b2-tubulin</td>\n      <td>ju1287</td>\n      <td>C705T</td>\n      <td>S138L</td>\n      <td>Recessive</td>\n      <td>YJ11867/YJ12057</td>\n      <td>Exchangeable GTP/GDP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-7</td>\n      <td>\u03b2-tubulin</td>\n      <td>ju1294</td>\n      <td>G717A</td>\n      <td>G142D</td>\n      <td>Recessive</td>\n      <td>YJ11867/YJ12057</td>\n      <td>Exchangeable GTP/GDP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-7</td>\n      <td>\u03b2-tubulin</td>\n      <td>ju1298</td>\n      <td>G603A</td>\n      <td>G104E</td>\n      <td>Recessive</td>\n      <td>YJ11867/YJ12057</td>\n      <td>Exchangeable GTP/GDP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-7</td>\n      <td>\u03b2-tubulin</td>\n      <td>ju1297</td>\n      <td>G121A</td>\n      <td>R2H</td>\n      <td>Dominant</td>\n      <td>YJ12136/YJ12137</td>\n      <td>Non-exchangeable GTP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-12</td>\n      <td>\u03b1-tubulin</td>\n      <td>ju1295</td>\n      <td>G7197A</td>\n      <td>G354E</td>\n      <td>Dominant</td>\n      <td>YJ12134/YJ12135</td>\n      <td>Non-exchangeable GTP-binding site</td>\n    </tr>\n    <tr>\n      <td>mec-15</td>\n      <td>E3 ligase</td>\n      <td>ju1288</td>\n      <td>G327A</td>\n      <td>W91X</td>\n      <td>Recessive</td>\n      <td>YJ11668/YJ11669</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>mec-15</td>\n      <td>E3 ligase</td>\n      <td>ju1289</td>\n      <td>G217A G1661A</td>\n      <td>(Splice acceptor) R342Q</td>\n      <td>Recessive</td>\n      <td>YJ11668/YJ11669 YJ12138/YJ12139</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nIn addition to tubulins, the mec class includes genes encoding mechanosensory channels (mec-4, mec-6, and mec-10), extracellular matrix (mec-1, mec-5, and mec-9), and an adaptor protein (mec-2) as schematized in Figure 7C. In contrast to the tubulin genes, mec-4 and mec-2 mutants did not show ribosome distribution defects (Figure 7D). Furthermore, mec-12(e1605) mutants, which are mechanosensory defective but have intact microtubules (Bounoutas et al., 2009a), did not show ribosome distribution defects (Figure 7D). Together, these results suggest that ribosome distribution defects are not a direct consequence of mechanosensory defects.\n\nTo distinguish between roles of filamentous microtubules and globular tubulins in ribosome distribution, we treated worms with colchicine, which disrupts filamentous microtubules in mechanosensory neurons (Chalfie and Thomson, 1982). Chronic treatment from eggs induced ribosome distribution defects similar to mec-7 or mec-12 mutants, suggesting that filamentous microtubules, but not globular tubulins, were important (Figure 7\u2014figure supplement 2A, Egg). Acute treatment at the L4 or young adult stage altered ribosome somatic distribution (Figure 7\u2014figure supplement 2A). Also, somatic defects emerged at the adult stage in mec-7 mutants (Figure 7\u2014figure supplement 2B). These results suggest that microtubules are important for the maintenance of ribosome distribution in the soma. In contrast, axonal defects were not induced by acute colchicine treatment (Figure 7\u2014figure supplement 2A) and emerged at the larval stage in the mec-7 mutants (Figure 7\u2014figure supplement 2B), suggesting that microtubules might be important for the generation of a barrier in the proximal axon.\n\n## Discussion\n\nHere, we established an approach using split GFP to visualize endogenous ribosomes in specific cells in live animals, and demonstrated the utility of such reporters in genetic screens. Fluorescent signals representing ribosomes were punctate in the neuronal processes in motor and mechanosensory neurons, and change during development or after axon injury. Furthermore, our analyses revealed roles for JIP3/unc-16 and microtubules in regulating ribosome distribution in neurons.\n\n### Endogenous protein labeling in specific tissues\n\nWe have developed a reliable method to label endogenous proteins in specific tissues using split GFP. Our studies highlight the importance of maintaining ribosomal protein expression at levels close to endogenous. C. elegans ribosome biogenesis seems to be tightly regulated so that the total amount of ribosomal proteins is balanced as in E. coli (Kaczanowska and Ryd\u00e9n-Aulin, 2007) because copy numbers of endogenous rps-18 or rpl-29 affected the expression level of single-copy-inserted GFP-tagged ribosomal proteins. This regulation likely exists because imbalanced expression of ribosomal proteins results in cellular defects, as we showed using high-copy transgenes. Overexpression of tagged proteins can also cause signal artifacts, which are a common concern for visualizing proteins in live cells. For example, to avoid the artifact by overexpressing PSD-95, a postsynaptic protein (El-Husseini et al., 2000), recombinant antibody-like proteins called FingRs have been developed (Gross et al., 2013). Tissue-specific expression of GFP-tagged FingRs can visualize an endogenous protein without tagging. However, this method requires the generation of optimal FingRs with mRNA display; moreover, excess GFP-FingRs can produce background signals. The advantage of split GFP is that neither GFP1-10 nor GFP11 is fluorescent. In contrast to antibody-based methods, however, the split GFP method requires genetic alteration of the endogenous locus. With recent advances in genome engineering with the Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) method, it is feasible to tag the endogenous locus with a fluorescent protein in various organisms (Hsu et al., 2014). To avoid interfering with the function of endogenous proteins, it is desirable to keep the tag as small as possible. GFP11 satisfies this requirement because it has only 16 amino-acids. Endogenous protein labeling brings another challenge in that widespread endogenous expression in many tissues might prevent visualization in a tissue of interest, as is the case for the ribosomal proteins. GFP11 can also provide tissue specificity.\n\nTo maximize RIBOS signals, we found it necessary to introduce the rps-18(0) background and to saturate GFP11::RPS-18 with excess GFP1-10. The saturation could be achieved by using multi-copy GFP1-10 transgenes because we found that decreasing the copy number of integrated GFP1-10 transgenes did not change the intensity of RIBOS signals (data not shown). Given that rps-18 is an abundant ribosomal protein, we expect that we should be able to saturate most GFP11-tagged endogenous proteins using multi-copy expression of GFP1-10. To further increase the signals, a tandem GFP11 tag might be used. This is a similar idea to the SunTag approach, in which fluorescently tagged antibodies recognize tandem peptide tags in a targeted protein (Tanenbaum et al., 2014). A tandem split GFP approach may have an advantage over SunTag because an excess amount of split GFP does not produce background, unlike fluorescently tagged antibodies. Recently, split GFP has been used as a versatile tool for endogenous protein visualization in cultured cells (Kamiyama et al., 2016). In multicellular organisms, it provides the additional advantage of tissue- or cell-specificity as demonstrated in this study. Thus, the split-GFP-based approach can be broadly applied to visualize any endogenous protein in specific cells.\n\n### Dynamic and cell-specific ribosome localization\n\nIn non-neuronal tissues, ribosomes existed throughout the cytosol even in a fine structure like muscle arms. In contrast, ribosomes were mostly restricted in the soma in neurons. Moreover, neuronal ribosomes showed distinct localization, such as at the branch point of PLM mechanosensory neurons and at presynaptic terminals of motor neurons at the L1 stage animals. Moreover, we found that ribosome localization changed during development. These distribution patterns were different from other protein translation-related components, such as initiation factors and RNA granules. Together, our results suggest that neuronal ribosome localization is actively regulated.\n\nUsing electron microscopy, we have further demonstrated the presence of ribosomes at the presynaptic terminals of motor neurons in adult C. elegans. In contrast to postsynapses and axons, the evidence of the existence of ribosomes at presynaptic terminals has been limited. However, some studies have shown the functional importance of local translation at presynaptic terminals (Beaumont et al., 2001; Martin et al., 1997). In squid synaptosomal fractions and optic nerve endings, ribosomes have been observed by electron energy loss spectroscopic microscopy and conventional EM (Crispino et al., 1997; Martin et al., 1998). In C. elegans ribosome-like black dots were occasionally observed in the presynaptic terminals in the ventral nerve cord (Rolls et al., 2002). Our study provided more definitive morphological evidence for the existence of ribosomes at mature presynaptic terminals by using electron tomography, in which three-dimensional morphologies are more clearly visualized than conventional EM studies. RIBOS markers only visualized ribosomes in the presynaptic terminals at the L1 stage but not at the adult stage, probably because the low density (a few ribosomes per synapse) was below the detection limit for a fluorescent protein.\n\nSince a low abundance of ribosomes at presynaptic terminals could not be detected by RIBOS, the punctate signals observed along the mechanosensory axon were likely to be clusters of ribosomes. This cluster resembles the plaque-like ribosomes in the vertebrate axons (Koenig, 2009), suggesting that clustering of ribosomes may be a common feature throughout evolution. The ribosome puncta did not seem to be associated with transported vesicles because they were static over periods of a few minutes. However, ribosome distribution changed during development and after axon injury. This suggests that ribosome localization may rely on slow axonal transport, known to control the distribution of many cytoskeletal components and cytosolic proteins (Brown, 2003).\n\nIn C. elegans mechanosensory neurons, mRNA of a transcription factor, CCAAT/enhancer-binding proteins (cebp-1), is localized to the axon and locally translated in an axon-injury-dependent manner (Yan et al., 2009). Consistent with this, we observed RIBOS signals and monosomes in the electron micrographs after axon injury. Although monosomes have been thought to be translationally inactive, recent ribosome profiling data suggest that they can be active (Heyer and Moore, 2016). In rat dentate gyrus, the number of the spines associated with polysomes increased several days after lesion (Steward, 1983). Increased number of axonal ribosomes after injury is also shown in rat motor axons of ventral spinal roots (Zheng et al., 2001) and sciatic nerve axons in the Wallerian degeneration slow mouse (Court et al., 2008). These studies highlight that the dynamic nature of ribosome distribution after nerve injury may be conserved throughout evolution.\n\nIn this study, we focused on RPS-18 as a representative protein for the ribosome function because we could rely on the rescue of the rps-18(0) mutant phenotypes as a proxy to assess the in vivo activity of the functional protein. Recent work in mice has shown tissue-type heterogeneity of ribosome composition (Simsek et al., 2017). Rpl38 knock-out mice show tissue-specific patterning defects, due to selective reduction on translation of mRNAs for some Hox genes (Kondrashov et al., 2011; Xue et al., 2015). It is possible that in C. elegans not all ribosomes contain RPS-18, and therefore, that our approach may tag only a subset of ribosomes. Future studies will improve and extend the RIBOS approach to address this issue by systematically tagging different ribosomal proteins with GFP11 using CRISPR-based knock-in to endogenous locus of ribosome genes.\n\n### Ribosomes distribution is regulated by unc-16 and microtubules\n\nThrough candidate and forward genetic screens, we have\u00a0identified UNC-16 and microtubules as regulators of ribosome distribution in C. elegans mechanosensory neurons.\n\nUNC-16 is a member of the conserved JIP3 proteins (Byrd et al., 2001). These proteins act as an adaptor between cargos, for example mitogen-activated protein kinase (MAPK) components, and kinesin (Koushika, 2008; Whitmarsh, 2006). In C. elegans, unc-16 was originally isolated by its uncoordinated movement and later shown to display mislocalized synaptic vesicles (Byrd et al., 2001). In cholinergic motor neurons, UNC-16 was found to restrict membranous organelles, such as Golgi and endosomes to cell bodies (Edwards et al., 2013). Our data show that UNC-16 regulates distribution of a large molecular complex, ribosomes. In contrast to the increased axonal endosomes and Golgi in unc-16 mutants, ribosomes were increased in the presynaptic terminals and decreased along the proximal axon. Since UNC-16 localizes to the proximal axon in mechanosensory neurons (Edwards et al., 2013), these results might imply that UNC-16 restricts the ribosomes into the soma at the proximal axon.\n\nAlthough both ribosomes and microtubules are well characterized cellular components, the connection between them has not been well appreciated. Both EM studies and biochemical evidences show that ribosomes can interact with microtubules (Suprenant, 1993; Suprenant et al., 1989). Microtubule disruption by nocodazole treatment makes ribosomes move into the neurites in chicken sensory neuronal cultures (Baas et al., 1987). We observed ribosomes at the cutting site after axon injury. This might be because an altered state of microtubule after axon injury (Chisholm, 2013) allowed ribosomes to move into the axon. In C. elegans mechanosensory neurons, the number of growing microtubules increases three hours after axon injury, followed by consistent microtubule growth (Ghosh-Roy et al., 2012). We also observed fewer numbers of microtubules at the injury site by EM. Mitochondria observed at the cutting site may locally supply energy for translation and microtubule dynamics. These data are consistent with a hypothesis that microtubules restrict the ribosomes into the neuronal soma in unstressed conditions in mature neurons. We observed that ribosome distribution in the soma was also disrupted in the microtubule mutants. In neuronal soma, ribosomes are dynamically exchanged between two states: free in the cytosol or bound to the ER (Jan et al., 2014). This compartmentalized protein synthesis ensures the efficient targeting of transmembrane and secreted proteins to the ER. The balance between ER-bound and free ribosomes is important because in nascent polypeptide-associated complex (NAC) mutants in C. elegans, ribosomes are mistargeted to the ER, resulting in disrupted protein homeostasis (Gamerdinger et al., 2015). Mislocalization of ribosomes in microtubule mutants may suggest that microtubules are components to prevent mistargeting ribosomes in the soma.\n\n## Materials and methods\n\n### Transgene design and rescue\n\nTo label ribosomal proteins, we chose several candidates whose N- or C- terminus is exposed to the surface of ribosomes based on the eukaryotic ribosome structure (Ben-Shem et al., 2011). We first generated multi-copy transgenic lines for rpl-1, rpl-4, rpl-29, rpl-30 and rps-18. Homologs of rpl-1 and rpl-4 were used for labeling ribosomes in mice (Court et al., 2008; Heiman et al., 2008). However, the overexpression of these proteins in mechanosensory neurons caused abnormal axon and soma morphologies. We suspect that such defects could be due to overexpression. We then focused on rpl-30 and rps-18, null mutations in which caused larval arrest. Extrachromosomal arrays over-expressing N-terminally tagged rps-18 partially rescued rps-18(0) larval arrest, whereas C-terminally tagged rps-18 or rpl-30 did not. In addition, we used rpl-29 as a component of the ribosome large subunit; rpl-29 null mutants (tm3555) did not have any behavioral or morphological phenotypes.\n\n### Plasmids and strains\n\nC. elegans strains were maintained as previously described on Nematode Growth Medium (NGM) plates at 22.5\u00b0C unless otherwise noted (Brenner, 1974). Strains, plasmids, and primers are summarized in Supplementary files 1, 2, and 3, respectively. Plasmids were constructed using standard techniques including restriction enzyme digestion and ligation, QuikChange site-directed mutagenesis (Agilent Technologies, Santa Clara, CA), Gateway cloning (Invitrogen, Carlsbad, CA), and Gibson assembly (NEB). An rps-18 genomic fragment including 567 bp upstream and 162 bp downstream of the coding sequence was cloned into pCR8 vector (Invitrogen). GFP was inserted using the BglII and PstI sites to generate the GFP::rps-18 vector, which contains a three amino-acid (AAG) linker between GFP and RPS-18. GFP::rps-18 in pCR8 vector was recombined with a pCFJ150-based MosSCI backbone vector to generate pCZGY3178 using Gateway LR clonase (Invitrogen). pCZGY3178 plasmid was injected at 50 ng/\u00b5l with other plasmids into EG4322 ttTi5605; unc-119(ed9) to generate a single-copy-inserted transgene juSi83[GFP::rps-18+Cb-unc-119(+)] II using a standard MosSCI insertion method (Fr\u00f8kjaer-Jensen et al., 2008). GFP11 was cloned from MVC3 (pSM_nlg-1_GFP11) and inserted into the genomic rps-18 in pCR8 vector using the BglII and PstI sites to generate pCZGY3163, which contains 15 amino-acid linker (ELGSGSGSGSGSSAG) between GFP11 and RPS-18. GFP11::rps-18 from pCZGY3163 was cloned into MosSCI vector with a multi cloning site (pCFJ151) to generate pCZ946. pCZ946 plasmid was used to generate a single-copy-inserted transgene juSi94[GFP11::rps-18 + Cb-unc-119] II as described above. RIBOS strains were made by injecting the corresponding plasmids to CZ17515 juSi94; rps-18(ok3353) using Pttx-3-RFP as a co-injection marker labeling AIY neurons (see Supplementary file 1). Integrated transgenic lines were made using the UV/TMP method and outcrossed several times before analyses.\n\n### Fluorescence microscopy and FRAP\n\nFor imaging or scoring phenotypes or expression pattern with microscopes, worms were immobilized with 25%(v/v) of 50 nm polystyrene beads (Polysciences, Inc.) in M9. Ribosome defects in mechanosensory neurons were visualized by Pmec-4-RIBOS in mutant backgrounds and scored under a Zeiss Axioplan 2 microscope equipped with Chroma HQ \ufb01lters and a 63x (NA=1.4) objective lens. For drug treatment, colchicine plates were prepared by spreading 1 mM colchicine (Sigma) solution on NGM plates and spotting concentrated OP50 bacteria. For developmental time course experiment, worms were synchronized by letting parental worms lay eggs for one hour and keeping the progeny at 20\u00b0C. Representative images of fluorescent reporters except for juSi83 and juSi123 were collected using a Zeiss LSM710 confocal microscope equipped with a 63x (NA=1.4) or 100\u00d7 (NA=1.46) objective lens. juSi83[GFP::rps-18] and juSi123[GFP::rpl-29] strains were imaged using a Zeiss Axioplan 2 microscope equipped with Chroma HQ \ufb01lters and a 10x (NA=0.3) objective lens. The zoom function of Zeiss ZEN software was used for the mechanosensory neuron cell body and FRAP. Images shown are single-plane images or maximum-intensity-projections obtained from a few z-sections (0.5 \u00b5m/section) using Zeiss ZEN software. Note that signals in the cell body were saturated to take images of subcellular components, such as muscle arms and axons. Without GFP11::rps-18, faint fluorescence due to GFP1-10 was detected in some nuclei and was negligible compared to the reconstituted GFP signals in RIBOS. Intensities were analyzed after subtracting background signals using FIJI software(Schindelin et al., 2012).\n\nFRAP analysis was performed using an LSM710 with the 63x objective lens (NA=1.4) and young adult worms. For the photobleach, 10 and 5 scanning iterations were performed for a 1 \u00b5m region of interest in the basal region of epidermis and ALM cell body, respectively. Time series of a single plane were collected at 5 s and 0.4 s intervals for ribosomes and initiation factors, respectively. Percent of recovery after photobleaching was calculated after background subtraction and correction for \ufb02uorescence loss during image acquisition. The data points were plotted and fitted with one-phase decay function to calculate half recovery time (t1/2) and mobile fractions using GraphPad Prism v5.0 software (GraphPad Software, La Jolla, CA).\n\n### Axotomy\n\nAxotomy experiments were performed by cutting axons 40\u201350 \u00b5m away from the soma using a near infrared Ti-Sapphire laser as previously described (Wu et al., 2007). For cycloheximide treatment, worms were kept on NGM plates without drugs before axotomy, and PLM axons visualized by muIs32[Pmec-7-GFP] or zdIs5[Pmec-4-GFP] were severed at the L4 stage. Worms were recovered on the NGM plates containing 1 mM cycloheximide or DMSO, and imaged 24 hr after axotomy using LSM710 as described above. Regrowth was calculated by subtracting the axonal length immediately after axotomy from the length 24 hr after axotomy using FIJI software (Schindelin et al., 2012). For RIBOS analysis after axotomy, ALM axons visualized by Pmec-4-tagRFP in juIs438 were severed, imaged for RIBOS signals using the LSM710, and analyzed using FIJI software.\n\n### Electron microscopy for serial reconstructions\n\nL1 or young adult N2 worms were used for analyzing motor neurons. CZ10175 zdIs5[Pmec-4-GFP] worms were axotomized at the L4 stage as described above and used six hours after axotomy. Worms were frozen under high pressure at \u2212176\u00b0C with a high-pressure freezer HPM 010 (BAL-TEC) and then freeze substituted in 2% osmium tetroxide and 0.1% uranyl acetate in acetone for 4 d at \u221290\u00b0C and for 16 hr at \u221220\u00b0C with a freeze-substitution apparatus EM AFS2 (Leica). After infiltration and embedding in Durcupan ACM resin blocks were polymerized at 60\u00b0C for 48 hr. Fifty nanometer-thick serial sections were cut with a diamond knife from anterior part of worm after posterior pharyngeal bulb with an ultramicrotome ULTRACUT UCT (Leica), collected onto pioloform coated slot grids and stained for 5 min in 70% methanol with 2.5% uranyl acetate, followed by washing for 3 min in Reynold\u2019s lead citrate. Serial images from dorsal and ventral nerve cords were collected with a digital camera with 2688\u00d72672 pixel resolution (Gatan) and DigitalMicrograph acquisition software (Gatan) on a transmission electron microscope JEOL-1200 EX (JEOL) at magnification of 10,000 \u00d7 at an accelerating voltage of 80 kV. All digital images were imported into the series with Reconstruct 3D reconstruction software and realigned for accurate 3D measurements and visualizations. Ribosomes were defined as electron-dense objects with an approximately 20 nm diameter, which are not continuous on serial sections. Information about membranes, microtubules, mitochondria, and ribosomes, was created by manually tracing the profiles of the same objects on the serial image sections with Graphire3 Pen Tablet input hardware (Wacom). After tracing the profiles on the sections, the 3D scenes were rendered and saved as a 360-degree bitmap images.\n\n### Electron tomography\n\nResin blocks containing N2 young adult worms were prepared as described above. The 300\u2013350 nm-thick sections from anterior part of worm were cut with a diamond knife and an ultramicrotome ULTRACUT UCT (Leica), collected onto copper folding mesh grids without a supporting film, and stained on both sides for 10 min in 70% methanol with 2.5% uranyl acetate, followed by washing for 5 min in Reynold\u2019s lead citrate. Colloidal gold particles (15 nm in diameter) were deposited on both sides of the sections for 5 min to serve as fiducial cues. For stability in the beam, the sections were coated with carbon on both sides. Series of images from synapses in the ventral nerve cord were collected with a digital camera with 3488\u00d73488 pixel-resolution (GATAN) and Serial EM acquisition software on an intermediate-voltage electron microscope JEOL-4000 EX (JEOL) at magnification of 25,000\u00d7at an accelerating voltage of 400\u00a0kV. To minimize shrinkage of the sections during the tilt series and reduce the effects of within-tilt-series variation on the subsequent back projection, the sections were pre-irradiated for 15 s at each tilt angle before image acquisition. Series of 61 images were acquired by rotating the sample from \u221260 to\u00a0+60 degrees around an axis perpendicular to the optical axis of the microscope in 2-degree increment with a computer-controlled goniometer. The grid was then rotated 90 degrees in plane and another tilt series was collected. Pixel size of the tilt series acquisition images was 0.607 nm per pixel. The tilt-series images were aligned using IMOD software. Then, IMOD or TxBR software was used to create the final alignments and back projections resulting in three-dimensional volumes (tomograms). The tomograms were opened in IMOD software and saved as snapshot images. Objects were traced by the same method as for serial reconstruction.\n\n### Genetic screen and mapping\n\nThe forward genetic screens to look for ribosome distribution defects were carried out using Pmec-4-RIBOS strain with glo-4 mutant background (CZ19298), which was introduced for better visualization of the fluorescent signals for the screen by reducing gut autofluorescence (Hermann et al., 2005). After treating worms with 50 mM EMS using a standard protocol (Brenner, 1974), one or four F1 animals were transferred to individual plates. F2 animals were mounted on slides using M9 and subjected to visual inspection under the Zeiss Axioplan 2 as described above. Eight mutant worms were recovered from 1400 haploid genomes. After determining inheritance and complementation, we mapped mutants by sequencing known mechanosensory (mec) genes.\n\n### Statistical analysis\n\nWe used Student\u2019s t-test for comparisons of two samples, and one-way ANOVA with Bonferroni's multiple comparison test for the others in GraphPad Prism 5.0 (GraphPad Software, La Jolla, CA)\n",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8ec95d85-cf25-47fe-8aa1-3869769acfae",
+      "submission_id": "3ee6e3cd-4c30-4317-8130-8f4fe11699b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26376.020](https://doi.org/10.7554/eLife.26376.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Microtubule-dependent ribosome localization in C. elegans neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn their manuscript, Yishi Jin and colleagues introduce an elegant method to observe ribosome localization in vivo: RIBOS. In RIBOS, one GFP \u03b2-sheet is fused to a ribosomal protein subunit and complemented with the remainder of the split GFP, which is expressed in a tissue-specific manner. The observed axonal localizations are validated using electron microscopic tomography. The authors demonstrate the usefulness of their approach by studying axon injury, which recruits ribosomes as expected, and by characterizing transport factors necessary for ribosomal localization in a small candidate screen, as well as an unbiased EMS screen. While the latter can certainly be enlarged \u2013 which would go beyond the scope of this paper \u2013 it clearly shows the power of the approach. Importantly, evidence of ribosome localization in axons of mature brain has been limited and therefore this manuscript indirectly strengthens the importance of axonal protein synthesis in matured axons. In addition, the authors provide evidence that microtubules might be important for the generation of a barrier in the proximal axon.\n\nThis is an original method that meets a demand for techniques to study ribosome localization in vivo. The experiments are carefully conducted and analyzed, and the Materials and methods section is detailed enough to allow other researchers to adopt RIBOS for their work.\n\nEssential revisions:\n\n1) The authors use only indirect methods to demonstrate that GFP11::RPS-18 is incorporated into ribosomes. A biochemical approach, such as polysome profiling, should be performed to answer this question more directly, and to determine how much (if any) GFP11::RPS-18 is or is not part of ribosomes, leading to false positive RIBOS signals.\n\nFurthermore, the authors need to at least discuss one potential pitfall of the method: in the target cells, the investigated ribosomal protein is irreversibly reconstituted to contain a full GFP tag. The sterility of the GFP-tagged strain suggests that the fusion protein does not function for some special purposes. Therefore, it is possible that some (local?) translation is inhibited also by the reconstituted GFP fusion, or that ribosomal protein molecules that have been recruited to that particular function cannot be reconstituted with GFP, i.e., this special translation cannot be observed.\n\n2) Ribosome composition is regulated developmentally and differs between tissues. Any method that relies on ribosomal protein tagging will necessarily only label a subset of ribosomes. An analysis of how many ribosomes in the studied C. elegans neurons contain RPS-18 is needed to determine how representative for total -as opposed to RPS-18 containing- ribosome localization RIBOS is. The same issue should at least be discussed in relation to the reported developmental and injury induced changes in the axonal RIBOS signal.\n\n3) Although differences in recovery times of the FRAP experiments (Figure 1F/G) seem obvious, statistical analysis should be provided to assess those differences. Additionally, recovery curves in Figure 1F and G should be plotted together to better appreciate the difference between rpS18 and eIF4E (IFE-2 and IFE-4) mobility. Finally, it needs to be discussed that the mobile fraction/phase is rather different between rpS18 and eIF4E.\n\n4) In Figure 4, panels A and C show only one of the developmental stages analyzed. The authors should provide representative images of both larva and adult stages for comparison.\n\n5) In Figure 5 there is an increase in RIBOS signal distal to the injury site at 12 h (pointed out with an arrow in 5). Is this the regrowing axon \u2013 the text states that the axons regrow only at 24h \u2013 or is it the severed distal part of the axon?\n\n6) Statistical analysis for Figures 7B, D and F should be added.\n\n7) The increase in co-localisation in Figure 7E is not so evident. If the authors think this point is important (I think it can be deleted without any important loss for the paper), the% co-localization should be quantified.\n\n8) The decrease in fluorescence intensity of the free RFP cannot be taken as an indication of reduced translation (subsection \u201cA forward genetic screen identified roles for tubulins in ribosome distribution\u201d, last paragraph; Figure 7A). There are too many other factors influencing this read-out. Please revise the text accordingly.\n",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "952f1d02-bb44-418a-b9f9-f0e63692a9f1",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C1",
+      "claim": "Homozygous rps-18(ok3353) mutants exhibited early larval arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous rps-18(ok3353) mutants (rps-18(0), Figure 1A) exhibited early larval arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the text describing the phenotype of the mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f7ca2a1e-e463-4061-ab7e-2bb83bcaa02d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C2",
+      "claim": "Homozygous rpl-29(tm3555) mutants were superficially wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, homozygous rpl-29(tm3555) mutants (rpl-29(0), Figure 1\u2014figure supplement 2B) were superficially wild type, reflecting a possible non-essential role of rpl-29 in ribosome function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation of mutant phenotype reported in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6b4f0cdd-6fbb-44a8-9fc7-bc2db234395b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C3",
+      "claim": "Single-copy transgene juSi83[Prps-18-GFP::rps-18] rescued the rps-18(0) early larval arrest but did not rescue sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "Our single-copy transgene juSi83[Prps-18-GFP::rps-18] (Figure 1A) rescued the rps-18(0) early larval arrest, but did not rescue sterility (Figure 1\u2014figure supplement 1C), despite visible GFP expression in the germline (Figure 1\u2014figure supplement 1B, gonad).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data showing partial rescue of mutant phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "13cc37d8-a95c-4e63-827e-b62121029f01",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C4",
+      "claim": "Large fluorescent tags partly impaired RPS-18 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Tagging with other fluorescent tags, such as mEOS, Dendra, and mini Singlet Oxygen Generator (miniSOG), also failed to fully rescue rps-18(0) phenotypes (data not shown), suggesting that large tags partly impaired RPS-18 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from failure to rescue phenotypes with various fluorescent tags.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "c895cdf0-e4f7-45f2-8897-1a2a8530fd13",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C5",
+      "claim": "GFP::RPS-18 was observed in the cytosol appearing as reticular structures in rescued somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rescued somatic tissues, we observed GFP::RPS-18 in the cytosol, appearing as reticular structures (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct microscopy observation reported in text and shown in figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "85b3bf34-d234-44e3-bcba-c227199439d5",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C6",
+      "claim": "RPL-29::GFP expressed from a single-copy transgene showed a similar localization pattern to GFP::RPS-18.",
+      "claim_type": "EXPLICIT",
+      "source": "RPL-29::GFP expressed from a single-copy transgene (juSi123[Prpl-29-rpl-29::GFP]) in the rpl-29(0) background showed a similar pattern (Figure 1\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of localization patterns between two ribosomal proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8f07591e-2e32-4c84-aee2-b0cfd90361c2",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C7",
+      "claim": "Most of the GFP::RPS-18 and RPL-29::GFP signals represent assembled ribosomes as opposed to unassembled proteins or subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in localization of these large and small subunit proteins suggests that most of the signals represent assembled ribosomes as opposed to unassembled proteins or subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on similar localization patterns of large and small ribosomal subunit proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "9c85889e-f576-42c5-8381-efd9e0281e74",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C8",
+      "claim": "Expression from single-copy transgenes of GFP::RPS-18 or RPL-29::GFP caused no detectable defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the expression from these single-copy transgenes caused no detectable defects (data not shown) unlike the overexpression of rps-18 or rpl-29.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation that single-copy expression does not cause phenotypic defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "de08b3c0-f87f-4e4e-a86e-c6d036a15fdb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C9",
+      "claim": "The fluorescence intensity of Prps-18-GFP::RPS-18 was significantly lower in the rps-18(+)/rps-18(+) or rps-18(+)/rps-18(0) background than in homozygous rps-18(0)/rps-18(0) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the fluorescence intensity of Prps-18-GFP::RPS-18 was significantly lower in the rps-18(+)/rps-18(+) or rps-18(+)/rps-18(0) background than in homozygous rps-18(0)/rps-18(0) mutants (Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative fluorescence intensity measurements across different genetic backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "1fe0fb95-9ab4-449e-8897-29fcad9f1421",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C10",
+      "claim": "Prpl-29-GFP::rpl-29 signal intensity depended on the endogenous rpl-29 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Prpl-29-GFP::rpl-29 signal intensity depended on the endogenous rpl-29 locus (Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data showing signal intensity varies with endogenous gene copy number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "803d7e41-1c78-4ef7-a3af-44ff07f1c5cf",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C11",
+      "claim": "Negative feedback regulation eliminates excess ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that negative feedback regulation eliminates excess ribosomal proteins, similar to that previously reported in bacteria (Kaczanowska and Ryd\u00e9n-Aulin, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from expression data and comparison to known bacterial mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "39686c09-929b-4b27-bd7c-bb2ab90dd8a2",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C12",
+      "claim": "The null mutant background is necessary to obtain sufficiently bright signals for visualization of GFP-tagged ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the null mutant background is necessary to obtain sufficiently bright signals for visualization of GFP-tagged ribosomal proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from fluorescence intensity data in different genetic backgrounds.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "97a5f6b5-e527-43f2-b8bb-033893d48f07",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C13",
+      "claim": "A single-copy expression of GFP11::RPS-18 (juSi94[GFP11::rps-18]) completely rescued larval arrest and sterility of rps-18(0).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that a single-copy expression of GFP11::RPS-18 (juSi94[GFP11::rps-18]) completely rescued larval arrest and sterility of rps-18(0) (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data showing complete rescue of mutant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "7239c5a2-4a50-45cb-8aac-3c1dc022aaec",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C14",
+      "claim": "GFP11 is much smaller (16 amino acids) compared to GFP (237 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "This is probably because GFP11 is much smaller (16 amino acids), compared to GFP (237 amino acids), supporting our interpretation for partial impaired function of the GFP::RPS-18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about the sizes of GFP11 and GFP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "4a7c06ef-7046-43b8-ba6b-aae5f2e67068",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C15",
+      "claim": "The subcellular fluorescence pattern revealed by the split-GFP transgenic approach was similar to that from the single-copy expression of GFP::RPS-18 or of RPL-29::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the subcellular fluorescence pattern revealed by this split-GFP transgenic approach was similar to that from the single-copy expression of GFP::RPS-18 or of RPL-29::GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of fluorescence patterns between different labeling approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b20cab01-e53f-4abd-9ad3-bd23680ccbef",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C16",
+      "claim": "In adult epidermis-specific Pcol-19-RIBOS, signals were observed in the epidermal cytosol excluded from reticular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult epidermis-specific Pcol-19-RIBOS, we observed signals in the epidermal cytosol excluded from reticular structures (Figure 1C, Epidermis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct microscopy observation of RIBOS signals in epidermis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "3627b869-54f3-4e2d-b41b-0df436bc4349",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C17",
+      "claim": "Although RPS-18 is expressed in the whole body, fluorescence was not observed in any other tissues such as intestine in Pcol-19-RIBOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RPS-18 is expressed in the whole body, fluorescence was not observed in any other tissues, such as intestine (Figure 1C, Intestine), suggesting that GFPP11::RPS-18 did not have fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation that fluorescence is tissue-specific despite ubiquitous expression of GFP11::RPS-18.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "4845db9a-770c-4ee1-8537-f8c76750d2c5",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C18",
+      "claim": "Worms expressing Pcol-19-GFP1-10 transgene alone did not show fluorescent signals compared to Pcol-19-RIBOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms expressing Pcol-19-GFP1-10 transgene alone also did not show fluorescent signals compared to Pcol-19-RIBOS (Figure 1C and Materials and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Negative control experiment showing GFP1-10 alone does not produce fluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "44ca6b19-c23b-419d-bf86-4b804b96aabb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C19",
+      "claim": "Photobleached GFP11::RPS-18 showed a longer recovery time and smaller mobile fraction than IFE-2::GFP and IFE-4::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Photobleached GFP11::RPS-18 showed a longer recovery time and smaller mobile fraction than IFE-2::GFP and IFE-4::GFP (Figure 1F\u20131H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FRAP experimental data comparing recovery kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "9c342c03-3169-4140-bcbd-4431949f11fb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C20",
+      "claim": "The recovery curve, t1/2, and mobile fraction of GFP11::RPS-18 were comparable to that of the ribosomal large subunit, RPL-29::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the recovery curve, t1/2, and mobile fraction of GFP11::RPS-18 were comparable to that of the ribosomal large subunit, RPL-29::GFP (Figure 1F\u20131H), suggesting that fluorescence recovery was not affected by splitting GFP, and that RPS-18 and RPL-29 were incorporated into a complex with a similar mobility, likely the ribosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FRAP data comparison between small and large ribosomal subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "bde729f6-6f06-4155-a8c2-3b2701883a7e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C21",
+      "claim": "Body wall muscle-specific Pmyo-3-RIBOS revealed that fluorescence was observed in the muscle arm besides strong somatic signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Body wall muscle-specific Pmyo-3-RIBOS revealed that besides strong somatic signals, fluorescence was observed in the muscle arm (Figure 1\u2014figure supplement 3A), an elaborate postsynaptic structure extending to the nerve cord to receive inputs from presynaptic neurons (Dixon and Roy, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of RIBOS signals in muscle tissue.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "44971c4a-5345-45e5-b877-427eb62b1900",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C22",
+      "claim": "RIBOS signals in muscle arms were consistent with the distribution of ribosomes in muscle arms as found in electron micrographs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such RIBOS signals were consistent with the distribution of ribosomes in muscle arms as found in electron micrographs (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation between fluorescence microscopy and electron microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "d3f05cc7-3067-473c-b4dd-7241bada9002",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C23",
+      "claim": "Pan-neuronal Prgef-1-RIBOS showed that ribosomes were mostly restricted to the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Pan-neuronal Prgef-1-RIBOS showed that ribosomes were mostly restricted to the soma (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of ribosome distribution in neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ca63be2d-c493-40bb-80c5-61a017faea7b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C24",
+      "claim": "Initiation factors IFE-2::GFP and IFE-4::GFP were diffuse in cell bodies and nerve processes in the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the restricted signals of ribosomes, initiation factors IFE-2::GFP and IFE-4::GFP were diffuse in cell bodies and nerve processes in the ventral nerve cord (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation comparing ribosome and initiation factor localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b6de38ac-c73b-4b20-8ab3-90bb2bee5848",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C25",
+      "claim": "STAU-1 formed two foci in the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "STAU-1 (LeGendre et al., 2013), an ortholog of Staufen, formed two foci in the soma; AIN-1 (ALG-1-interacting protein-1), an ortholog of GW182 (Ding et al., 2005), formed puncta in the soma and along the neuronal processes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of RNA granule component localization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "30803b52-57ec-422e-8d4c-62a278cf199c",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C26",
+      "claim": "AIN-1 formed puncta in the soma and along the neuronal processes.",
+      "claim_type": "EXPLICIT",
+      "source": "STAU-1 (LeGendre et al., 2013), an ortholog of Staufen, formed two foci in the soma; AIN-1 (ALG-1-interacting protein-1), an ortholog of GW182 (Ding et al., 2005), formed puncta in the soma and along the neuronal processes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of RNA granule component localization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "3820f4d0-4d78-44a2-a0c8-5410fbe66165",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C27",
+      "claim": "Neither the initiation factors nor the RNA granule components showed localization similar to ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the initiation factors nor the RNA granule components showed localization similar to ribosomes, implying that protein translation-related components might be differentially regulated in their localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of localization patterns between different translation-related components.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e3d48581-1dba-4ca6-883e-aa92668600e9",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C28",
+      "claim": "In the first larval (L1) stage, ribosomes colocalized with presynaptic markers, RAB-3, in the ventral cord, corresponding to the presynaptic terminals of DD motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first larval (L1) stage, we found that ribosomes colocalized with presynaptic markers, RAB-3, in the ventral cord, corresponding to the presynaptic terminals of DD motor neurons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colocalization analysis of RIBOS signals with presynaptic markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "37bf62c5-309d-44b6-8fdd-01d424e5b843",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C29",
+      "claim": "From L2 to older larvae, Punc-25-RIBOS signals in the ventral cord were excluded from VD presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "From L2 to older larvae, we observed Punc-25-RIBOS signals in the ventral cord, which were excluded from VD presynaptic terminals (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of ribosome localization relative to presynaptic terminals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "dcd898ff-6a8b-4325-8661-d86b8cd83347",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C30",
+      "claim": "DD neuron-specific Pflp-13-RIBOS showed similar localization to Punc-25-RIBOS.",
+      "claim_type": "EXPLICIT",
+      "source": "DD neuron-specific Pflp-13-RIBOS showed similar localization (Figure 3B), suggesting that ribosome localization was changed from presynaptic to postsynaptic compartments in the DD neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of RIBOS signals in different neuron-specific markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b56cf06b-cc94-4bf9-b186-46c1cdf0150e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C31",
+      "claim": "Reconstruction of serial EM sections showed that the number of ribosomes in DD axonal profiles was higher at the L1 stage than the adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with RIBOS, reconstruction of serial EM sections showed that the number of ribosomes in DD axonal profiles was higher at the L1 stage than the adult stage (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative electron microscopy data comparing ribosome numbers across developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "46a6b80f-74bb-4c5f-9fad-63c93283f087",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C32",
+      "claim": "Ribosomes were observed in the presynaptic terminals of adult VD neurons in serial EM sections.",
+      "claim_type": "EXPLICIT",
+      "source": "In the adult presynaptic terminals, the evidence of ribosome localization has been limited (Akins et al., 2009). Here, we observed ribosomes in the presynaptic terminals of adult VD neurons in serial EM sections (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy observation of ribosomes in presynaptic terminals.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6978a00d-41bf-4917-9781-ea1dd420ecdf",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C33",
+      "claim": "Using electron tomography, the existence of ribosomes in the presynaptic terminals of VD neurons was confirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "Using electron tomography, we further confirmed the existence of ribosomes in the presynaptic terminals of those neurons (Figure 3D and E), based on the following criteria: ribosomes in neurons had spherical shapes with 20 nm diameter, and resembled ribosomes in muscles (Figure 3E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron tomography data confirming ribosome presence based on morphological criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "0d76e4ca-c753-4814-93e3-a024e01a7c55",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C34",
+      "claim": "RIBOS signals in the ventral cord colocalized with presynaptic markers could not be detected at the adult stage, likely due to the number of ribosomes being below the light microscopy detection threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to detect RIBOS signals in the ventral cord colocalized with presynaptic markers at the adult stage, likely due to the number of ribosomes being below that of light microscopy detection threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from inability to detect fluorescence despite EM evidence of ribosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e04a11f1-a929-4a0b-b143-51a8b8be9344",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C35",
+      "claim": "In mechanosensory neurons, ribosomes were observed in the soma and the proximal axon (~20 \u00b5m from the soma).",
+      "claim_type": "EXPLICIT",
+      "source": "In these neurons, we observed ribosomes in the soma and the proximal axon (~20 \u00b5m from the soma, Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of ribosome distribution in mechanosensory neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "2e778bd5-3735-44e8-b56f-8a173f21ce2e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C36",
+      "claim": "Ribosomes formed puncta along the axon and puncta density decreased from L1 to adult stage in PLM neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomes also formed puncta along the axon and puncta density decreased from L1 to adult stage in PLM neurons (Figure 4A\u20134C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative microscopy data showing developmental changes in ribosome puncta density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "9c1e05ab-8e95-4bd5-bd40-2348f63335d9",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C37",
+      "claim": "At the L1 stage, but not at the adult stage, ribosome puncta were associated with the junction of the synaptic branch of PLM neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At the L1 stage, but not at the adult stage, these puncta were associated with the junction of the synaptic branch of PLM neurons (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation comparing ribosome localization at different developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e083cd10-f1cb-41fc-8184-b7edce774284",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C38",
+      "claim": "Ribosomal localization changes during neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that ribosomal localization changes during the neuronal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from developmental time course data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "24b7dfa4-40fa-4f17-b655-d761cb8cab74",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C39",
+      "claim": "In C. elegans mechanosensory neurons, local translation in axons is induced after axon injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans mechanosensory neurons, local translation in axons is induced after axon injury (Yan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on local translation after injury.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "365ae17f-9cee-4a7a-aaa1-743da9564968",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C40",
+      "claim": "Axon regrowth partly depended on new protein synthesis because treatment with cycloheximide inhibited this regrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Axon regrowth partly depended on new protein synthesis because treatment with cycloheximide, which blocks protein synthesis, inhibited this regrowth (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data showing drug treatment effect on axon regrowth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "9b14646c-9f83-43de-af88-0318265d9330",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C41",
+      "claim": "One hour after axon injury, ribosome accumulation began at the injured site of the proximal axon and appeared to plateau after three hours.",
+      "claim_type": "EXPLICIT",
+      "source": "One hour after axon injury, ribosome accumulation began at the injured site of the proximal axon and appeared to plateau after three hours (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time course microscopy data showing ribosome accumulation after injury.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "3ae445f9-98b2-45a3-baaa-630b7a053e0c",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C42",
+      "claim": "Weak RIBOS signals were observed in the regrowing tip after axon injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed weak RIBOS signals in the regrowing tip (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of ribosomes in regrowing axons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "dc4fcfb6-8be9-4d83-b350-24ce23fbf065",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C43",
+      "claim": "Negative controls involving no wounding or laser wounding without severing the axon did not induce ribosome accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative controls involving no wounding or laser wounding without severing the axon did not induce ribosome accumulation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiments showing specificity of ribosome accumulation to axon injury.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "623c5dd8-34a8-44bb-adb3-8fdb7b9f1a49",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C44",
+      "claim": "Reconstruction of EM serial sections showed accumulation of electron-dense monosomes at the cutting site six hours after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with RIBOS, reconstruction of EM serial sections showed accumulation of electron-dense monosomes at the cutting site six hours after axotomy (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy data confirming ribosome accumulation after injury.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b2963ca9-e3e3-4d08-adbc-a6c9d506fbcf",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C45",
+      "claim": "Mitochondria were observed around the cutting site in the EM images after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed mitochondria around the cutting site in the EM images (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy observation of mitochondria at injury site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "307020da-f8ce-4013-a7ee-6014a25947b6",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C46",
+      "claim": "The uninjured axon contained no ribosomes or mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "The uninjured axon contained no ribosomes or mitochondria (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy observation of uninjured axons as control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "33e19830-7adb-471a-b6b1-cc9b11cf9e53",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C47",
+      "claim": "Axonal ribosomes at the adult stage can alter their localization after axon injury.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that axonal ribosomes at the adult stage can alter their localization after axon injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from RIBOS and EM data after axon injury.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "dcadb919-2a78-466a-aa09-161b8dc14c27",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C48",
+      "claim": "Loss-of-function mutants of C. elegans orthologs for ankyrin (unc-44) and spectrin (unc-70) showed normal ribosome distribution in the soma and axon.",
+      "claim_type": "EXPLICIT",
+      "source": "We found normal ribosome distribution in the soma and axon in loss-of-function mutants of C. elegans orthologs for ankyrin (unc-44) and its putative binding partner spectrin (unc-70) (Figure 6), indicating that these genes may not play a role in restricting ribosomes in the soma.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis showing no effect of ankyrin and spectrin mutants on ribosome distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "d07be896-e699-485e-be17-ed17dc10dd77",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C49",
+      "claim": "In PLM neurons of unc-16 mutants, ribosomes were decreased in the proximal axon and increased in the presynaptic terminals without affecting somatic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In PLM neurons of unc-16 mutants, ribosomes were decreased in the proximal axon and increased in the presynaptic terminals without affecting somatic distribution (Figure 6), suggesting that UNC-16 acted as a gatekeeper for ribosomes in mechanosensory neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis showing altered ribosome distribution in unc-16 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ae90a2da-2a5b-4c39-841f-931589d25616",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C50",
+      "claim": "Eight mutants displaying aberrant ribosomal distribution were found in a forward genetic screen using Pmec-4-RIBOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we performed a genetic screen using Pmec-4-RIBOS and found eight mutants displaying aberrant ribosomal distribution (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from forward genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "7605a9ba-2e69-48d3-8bc0-e7e3f688caa8",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C51",
+      "claim": "Ribosomes in the eight mutants accumulated in the cell cortex and around the nucleus, compared to the relatively diffused distribution in the wild type, and increased in the proximal axon with partial penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomes in these mutants accumulated in the cell cortex and around the nucleus, compared to the relatively diffused distribution in the wild type, and increased in the proximal axon with partial penetrance (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy observation of ribosome distribution in mutants from genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "91d612d0-e225-4a7f-9403-8afcd5e27a7e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C52",
+      "claim": "All eight mutants had misshapen mechanosensory neuron cell bodies and insensitivity to gentle touch.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these ribosome defects, all mutants had misshapen mechanosensory neuron cell bodies, and insensitivity to gentle touch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phenotypic characterization of mutants from genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "286d39f6-3de2-404a-a23a-68aff467976d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C53",
+      "claim": "All mutations from the genetic screen affect tubulin or tubulin regulatory genes, previously isolated as mechanosensory abnormality (mec) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on complementation tests and sequencing, we found that all mutations affect tubulin or tubulin regulatory genes, previously isolated as mechanosensory abnormality (mec) genes (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic mapping and sequencing results identifying mutated genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "608d3b0d-3c90-4f13-8681-90989c63569b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C54",
+      "claim": "Four recessive mutations (ju1286, ju1287, ju1294, and ju1298) and a dominant mutation ju1297 affecting ribosome localization were found to be substitution mutations in mec-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Four recessive mutations (ju1286, ju1287, ju1294, and ju1298) and a dominant mutation ju1297 affecting ribosome localization were found to be substitution mutations in mec-7 (Table 1 and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequencing data identifying specific mutations in mec-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "84dc0b8e-a54f-43be-b664-209d8cc24b3d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C55",
+      "claim": "All four recessive mutations in mec-7 are located in the exchangeable GDP/GTP-binding site of the dimer-dimer interface of \u03b1- and \u03b2-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "All four recessive mutations are located in the exchangeable GDP/GTP-binding site of the dimer-dimer interface of \u03b1- and \u03b2-tubulins (Figure 7\u2014figure supplement 1D, magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis mapping mutations to protein structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ddd8e182-508e-4a58-b954-0928100dc1bc",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C56",
+      "claim": "The dominant mutation ju1297 in mec-7 is located in the non-exchangeable GTP-binding site of the monomer-monomer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dominant mutation is located in the non-exchangeable GTP-binding site of the monomer-monomer interface (Figure 7\u2014figure supplement 1D, cyan).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Structural analysis mapping mutation to protein structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f640c11f-21f1-400b-aa3b-6dec810062e2",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C57",
+      "claim": "One dominant allele, ju1295, was mapped to mec-12 and caused a Glu to Ser substitution on the exchangeable GDP/GTP-binding site in the dimer-dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "One dominant allele, ju1295, was mapped to mec-12 (Figure 7\u2014figure supplement 1B) and caused a Glu to Ser substitution on the exchangeable GDP/GTP-binding site in the dimer-dimer interface (Figure 7\u2014figure supplement 1D, light green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic mapping and sequencing identifying mutation in mec-12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e22fa4b6-e87a-4810-a46e-89b9b744e6c8",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C58",
+      "claim": "A deletion allele mec-7(u443) and a recessive loss-of-function allele of mec-12(e1607) exhibited comparable ribosome distribution defects.",
+      "claim_type": "EXPLICIT",
+      "source": "A deletion allele mec-7(u443) and a recessive loss-of-function allele of mec-12(e1607) (Figure 7\u2014figure supplement 1D, light blue) exhibited comparable ribosome distribution defects (Figure 7D), suggesting that the identified mutations were causative.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis comparing different alleles to confirm causality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "2e7ce4fa-7037-4f9d-b16f-5ca9d23d80b3",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C59",
+      "claim": "Dominant alleles, mec-7(ju1297) and mec-12(ju1295) showed lower penetrance of ribosome defects than recessive alleles of mec-7 only in the axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dominant alleles, mec-7(ju1297) and mec-12(ju1295) showed lower penetrance of ribosome defects than recessive alleles of mec-7 only in the axons (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison of phenotype penetrance between different alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "a25827d6-6dfb-4f98-aa99-a832e4b4a81d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C60",
+      "claim": "Axonal and somatic ribosomes might be differentially regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that axonal and somatic ribosomes might be differentially regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from differential penetrance of phenotypes in different cellular compartments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f33f27f4-28f6-4c4f-8b11-6a9c352ad082",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C61",
+      "claim": "Two recessive mutations, ju1288 and ju1289, were mapped to the E3 ubiquitin ligase homolog, mec-15.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recessive mutations, ju1288 and ju1289, were mapped to the E3 ubiquitin ligase homolog, mec-15 (Figure 7\u2014figure supplement 1C), which regulates expression of mec-7 and mec-12 genes (Bounoutas et al., 2009b; Gu et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic mapping identifying mutations in mec-15.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8a8feb8d-ca37-453d-a042-06a1906e84a8",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C62",
+      "claim": "A mutant of the \u03b1-tubulin acetyltransferase, mec-17, showed similar ribosome distribution defects.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested a mutant of the \u03b1-tubulin acetyltransferase, mec-17 (Akella et al., 2010), and found that it showed similar ribosome distribution defects (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis of mec-17 mutant showing ribosome distribution phenotype.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f2757aae-a28f-49e9-abf4-953c4e696119",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C63",
+      "claim": "Tubulin genes and their regulation are important for ribosome distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that tubulin genes and their regulation are important for ribosome distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from genetic analysis of multiple tubulin-related genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "c15dc35d-88d1-4fd6-b047-a8e76fd7ab34",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C64",
+      "claim": "mec-4 and mec-2 mutants did not show ribosome distribution defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the tubulin genes, mec-4 and mec-2 mutants did not show ribosome distribution defects (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis showing no effect of mechanosensory channel and adaptor mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "22f3c174-abd0-421e-8f7e-bc658a1f09ac",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C65",
+      "claim": "mec-12(e1605) mutants, which are mechanosensory defective but have intact microtubules, did not show ribosome distribution defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mec-12(e1605) mutants, which are mechanosensory defective but have intact microtubules (Bounoutas et al., 2009a), did not show ribosome distribution defects (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Genetic analysis separating mechanosensory function from microtubule structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6cdfe797-c8f7-4f01-a4cc-62dde0d5fce5",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C66",
+      "claim": "Ribosome distribution defects are not a direct consequence of mechanosensory defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that ribosome distribution defects are not a direct consequence of mechanosensory defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from genetic analysis of mechanosensory mutants without ribosome defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "dc71036a-c4ac-4ee5-8bb4-194483ba11ae",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C67",
+      "claim": "Chronic colchicine treatment from eggs induced ribosome distribution defects similar to mec-7 or mec-12 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic treatment from eggs induced ribosome distribution defects similar to mec-7 or mec-12 mutants, suggesting that filamentous microtubules, but not globular tubulins, were important (Figure 7\u2014figure supplement 2A, Egg).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Drug treatment experiment disrupting microtubules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "20a1efa6-1f35-4702-8000-856297f43ab1",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C68",
+      "claim": "Acute colchicine treatment at the L4 or young adult stage altered ribosome somatic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute treatment at the L4 or young adult stage altered ribosome somatic distribution (Figure 7\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Drug treatment experiment at specific developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "4bbb5faa-46d1-4d3c-81f1-ce3f3992ac75",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C69",
+      "claim": "Somatic defects emerged at the adult stage in mec-7 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, somatic defects emerged at the adult stage in mec-7 mutants (Figure 7\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Developmental time course analysis of mutant phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e287d831-34cb-4345-85f1-2ffde4660b3f",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C70",
+      "claim": "Microtubules are important for the maintenance of ribosome distribution in the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that microtubules are important for the maintenance of ribosome distribution in the soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from drug treatment and developmental analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "210dea83-eec9-4e8b-b008-77696fcb0ec6",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C71",
+      "claim": "Axonal defects were not induced by acute colchicine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, axonal defects were not induced by acute colchicine treatment (Figure 7\u2014figure supplement 2A) and emerged at the larval stage in the mec-7 mutants (Figure 7\u2014figure supplement 2B), suggesting that microtubules might be important for the generation of a barrier in the proximal axon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Drug treatment and developmental analysis showing differential effects on axons vs soma.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "01327717-c887-42ee-8b54-24798d391c3a",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C72",
+      "claim": "The observation of polysomes in the base of dendritic spines in rat dentate gyrus neurons provided crucial early evidence for local translation in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of polysomes in the base of dendritic spines in rat dentate gyrus neurons provided crucial early evidence for local translation in neurons (Steward and Levy, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of historical evidence for local translation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "68864f1e-beb1-4f1a-ba2e-4bebf9b79d5b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C73",
+      "claim": "Aberrant local protein synthesis disrupts neuronal plasticity in models for neurodevelopmental disorders, such as Tuberous sclerosis (TSC) and Fragile X syndrome (FXS).",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant local protein synthesis disrupts neuronal plasticity in models for neurodevelopmental disorders, such as Tuberous sclerosis (TSC) and Fragile X syndrome (FXS) (Auerbach et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research on local translation in disease models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "0a83a43f-e365-4e29-afac-e3a897b859c8",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C74",
+      "claim": "Ca2+/calmodulin-dependent protein kinase II \u03b1(CaMKII\u03b1) mRNA is localized to dendrites via a cis regulatory element in its 3'-UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Ca2+/calmodulin-dependent protein kinase II \u03b1(CaMKII\u03b1) mRNA is localized to dendrites via a cis regulatory element in its 3'-UTR, and removal of this element impairs long-term potentiation (LTP) and spatial memory (Miller et al., 2002);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research on mRNA localization and its functional importance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "c8606caa-c729-4fbb-9593-b6b2c222a120",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C75",
+      "claim": "Removal of the 3'-UTR regulatory element of CaMKII\u03b1 mRNA impairs long-term potentiation (LTP) and spatial memory.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Ca2+/calmodulin-dependent protein kinase II \u03b1(CaMKII\u03b1) mRNA is localized to dendrites via a cis regulatory element in its 3'-UTR, and removal of this element impairs long-term potentiation (LTP) and spatial memory (Miller et al., 2002);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of functional consequences of disrupting mRNA localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b13ba914-25fa-439b-8905-b741a9c3c2f4",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C76",
+      "claim": "\u03b2-actin mRNA is localized to the growing tip of an axon, the growth cone.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-actin mRNA is localized to the growing tip of an axon, the growth cone, where its polarized translation is important for growth cone turning towards an attractant (Leung et al., 2006; Yao et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research on \u03b2-actin mRNA localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "98e7720d-fef5-4481-9320-0b37bdff07cd",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C77",
+      "claim": "Polarized translation of \u03b2-actin mRNA is important for growth cone turning towards an attractant.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-actin mRNA is localized to the growing tip of an axon, the growth cone, where its polarized translation is important for growth cone turning towards an attractant (Leung et al., 2006; Yao et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of functional importance of localized translation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6f3bfb0c-0c44-4fc1-880e-08bfd6954462",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C78",
+      "claim": "Dendritic ribosomes associated with the netrin receptor, Deleted in Colorectal Cancer (DCC), are stalled and inactive, and released upon netrin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "One striking example of ribosome localization is that dendritic ribosomes associated with the netrin receptor, Deleted in Colorectal Cancer (DCC), are stalled and inactive, and released upon netrin signaling (Tcherkezian et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research on regulated ribosome activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "7368b403-53af-4e35-b1e4-34b6d5fd27de",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C79",
+      "claim": "Electron microscopy (EM) studies have long provided essential evidence for ribosomes, beginning with the discovery of ~20 nm diameter electron-dense particles rich in nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron microscopy (EM) studies have long provided essential evidence for ribosomes, beginning with the discovery of ~20 nm diameter electron-dense particles rich in nucleic acids (Palade, 1955).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of historical EM studies of ribosomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "31273163-93dd-4d92-8f34-ef2830872a21",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C80",
+      "claim": "Individual ribosomes (monosomes) are attached to the endoplasmic reticulum (ER) or free in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual ribosomes (monosomes) are attached to the endoplasmic reticulum (ER) or free in the cytosol, while mRNA-bound polysomes appear as beaded strings in EM images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about ribosome localization and appearance in EM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "3de4ba58-aab3-4794-ae2e-39a654be15fe",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C81",
+      "claim": "mRNA-bound polysomes appear as beaded strings in EM images.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual ribosomes (monosomes) are attached to the endoplasmic reticulum (ER) or free in the cytosol, while mRNA-bound polysomes appear as beaded strings in EM images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about polysome appearance in EM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "86b7f947-982e-42e9-9c90-e56533095024",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C82",
+      "claim": "Clustered ribosomes, often termed plaques, have been identified in squid neurons, goldfish Mauthner cell axons, and mammalian peripheral axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods have been used to identify clustered ribosomes, often termed plaques, in squid neurons (Martin et al., 1998), goldfish Mauthner cell axons (Koenig and Martin, 1996), and mammalian peripheral axons (Koenig et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of EM studies identifying ribosome clusters in various organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "4832b38e-9522-4e67-9bcb-049ff704e9df",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C83",
+      "claim": "Overexpression of ribosomal subunit S29 causes apoptosis in primary cultured thymocytes of rats.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, overexpression of ribosomal subunit S29 causes apoptosis in primary cultured thymocytes of rats (Khanna et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research showing cellular defects from ribosomal protein overexpression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "3d1f0de2-3ba6-4da7-a624-129a90e95f52",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C84",
+      "claim": "In bacteria, endogenous ribosomal protein S2 has been labeled with YFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, endogenous ribosomal protein S2 has been labeled with YFP (Bakshi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of ribosome labeling in bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "95883e3e-a8e0-4bd8-99dc-7d8f778cd774",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C85",
+      "claim": "In yeasts, endogenous loci of ribosomal proteins have been tagged with GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeasts, endogenous loci of ribosomal proteins have been tagged with GFP (Huh et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of ribosome labeling in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "65a077b7-91fc-490b-acfb-cbe6c4c03963",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C86",
+      "claim": "In mice, knock-in of HA-tagged RPL22 has been used for ribosomal profiling of translational status.",
+      "claim_type": "EXPLICIT",
+      "source": "For multicellular organisms, such as mice, knock-in of HA-tagged RPL22 (Sanz et al., 2009) or BAC transgenic expression of eGFP-tagged RPL10a (Heiman et al., 2008) has been used for ribosomal profiling of translational status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of ribosome labeling approaches in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "72fc7e1c-01c5-45a7-958e-ddf33a164c09",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C87",
+      "claim": "BAC transgenic expression of eGFP-tagged RPL10a in mice has been used for ribosomal profiling of translational status.",
+      "claim_type": "EXPLICIT",
+      "source": "For multicellular organisms, such as mice, knock-in of HA-tagged RPL22 (Sanz et al., 2009) or BAC transgenic expression of eGFP-tagged RPL10a (Heiman et al., 2008) has been used for ribosomal profiling of translational status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of ribosome labeling approaches in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ff08448b-eda2-47f5-8009-b4ece3ec3857",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C88",
+      "claim": "HA-tagged RPL22 and eGFP-tagged RPL10a reagents do not allow direct visualization of endogenous ribosomes in living tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these reagents do not allow direct visualization of endogenous ribosomes in living tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about limitations of existing reagents.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e3bf0d5e-7693-4faa-8aaf-f9d857136021",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C89",
+      "claim": "Caenorhabditis elegans (C. elegans) is ideally suited for visualizing protein and organelle localization in vivo because it is transparent and genetically tractable.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans (C. elegans) is ideally suited for visualizing protein and organelle localization in vivo because it is transparent and genetically tractable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about C. elegans as a model organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "a02531c3-f3d2-4d70-8ec2-d945d754a787",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C90",
+      "claim": "The microtubule cytoskeleton and the JIP3 protein UNC-16 exert distinct effects on localization of axonal and somatic ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining mutants affecting axonal trafficking and performing a forward genetic screen, we showed that the microtubule cytoskeleton and the JIP3 protein UNC-16 exert distinct effects on localization of axonal and somatic ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of genetic analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "172a3381-785c-4e98-8ed6-f35d2f6ac833",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C91",
+      "claim": "UNC-16 and microtubules have specific roles in neuronal ribosome localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate the utility of tissue-specific visualization of ribosomes in vivo, and provide insight into the mechanisms of active regulation of ribosome localization in neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "03222efa-16e4-4e1c-a953-b6ff8e8ab888",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C92",
+      "claim": "Overexpression of tagged ribosomal proteins caused abnormal morphologies of axons and cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that such overexpression caused a variety of cellular defects, such as abnormal morphologies of axons and cell bodies (Figure 1\u2014figure supplement 1A), and aggregates of ribosomal proteins in the nucleus (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of cellular defects from overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "2b46e3c9-4297-4414-bff2-7c8818bd6d0f",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C93",
+      "claim": "Overexpression of tagged ribosomal proteins caused aggregates of ribosomal proteins in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that such overexpression caused a variety of cellular defects, such as abnormal morphologies of axons and cell bodies (Figure 1\u2014figure supplement 1A), and aggregates of ribosomal proteins in the nucleus (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of protein aggregation from overexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "0c45803e-4d80-4404-bb08-878531e74f9b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C94",
+      "claim": "When GFP1-10 and GFP11 coexist, they irreversibly assemble and produce green fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent these challenges, we devised a strategy using self-assembling split GFP; when the first ten \u03b2-strands (GFP1-10) and the last \u03b2-strand (GFP11) coexist, they irreversibly assemble and produce green fluorescence (Cabantous et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of split GFP technology and its properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ab57ba7c-9686-49bc-b53f-a4ef0a537aed",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C95",
+      "claim": "The binding between GFP11 and GFP1-10 is irreversible.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the binding between GFP11 and GFP1-10 is irreversible, it is possible that the reconstituted GFP::RPS-18 is not fully functional in contexts where ribosome activity is locally required or sensitive to dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the irreversible nature of split GFP assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "93894cab-3a41-4345-9718-e3a98e9dab5f",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C96",
+      "claim": "The reconstituted GFP::RPS-18 may not be fully functional in contexts where ribosome activity is locally required or sensitive to dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the binding between GFP11 and GFP1-10 is irreversible, it is possible that the reconstituted GFP::RPS-18 is not fully functional in contexts where ribosome activity is locally required or sensitive to dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential limitations of the RIBOS approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6f1a9669-766e-4a25-85f1-ab70c626e0de",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C97",
+      "claim": "Recent work in mice has shown tissue-type heterogeneity of ribosome composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in mice has shown tissue-type heterogeneity of ribosome composition (Simsek et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of recent research on ribosome heterogeneity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "a041f8ef-4d64-42ec-8fc0-ee32a42bc2d5",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C98",
+      "claim": "Rpl38 knock-out mice show tissue-specific patterning defects, due to selective reduction on translation of mRNAs for some Hox genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rpl38 knock-out mice show tissue-specific patterning defects, due to selective reduction on translation of mRNAs for some Hox genes (Kondrashov et al., 2011; Xue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research on functional consequences of ribosomal protein loss.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "99b81a5f-d810-4960-91ad-9e46c5daa7fe",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C99",
+      "claim": "In C. elegans not all ribosomes may contain RPS-18.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that in C. elegans not all ribosomes contain RPS-18, and therefore, that our approach may tag only a subset of ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential limitation of the RIBOS approach based on ribosome heterogeneity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "0b1740c5-bf0b-4d7b-9e1f-3197abdc7bbf",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C100",
+      "claim": "UNC-16 is a member of the conserved JIP3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC-16 is a member of the conserved JIP3 proteins (Byrd et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation establishing protein family membership.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "6e236338-6f35-4ce8-8bc6-6f311c9f25f6",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C101",
+      "claim": "JIP3 proteins act as an adaptor between cargos, for example mitogen-activated protein kinase (MAPK) components, and kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins act as an adaptor between cargos, for example mitogen-activated protein kinase (MAPK) components, and kinesin (Koushika, 2008; Whitmarsh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of known function of JIP3 proteins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "5e2b5fa6-58eb-40b7-b600-b02d64242c51",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C102",
+      "claim": "unc-16 was originally isolated by its uncoordinated movement and later shown to display mislocalized synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, unc-16 was originally isolated by its uncoordinated movement and later shown to display mislocalized synaptic vesicles (Byrd et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous characterization of unc-16 mutants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "fa94ee9a-3ca6-4350-a718-3b06354449d6",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C103",
+      "claim": "In cholinergic motor neurons, UNC-16 was found to restrict membranous organelles, such as Golgi and endosomes to cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In cholinergic motor neurons, UNC-16 was found to restrict membranous organelles, such as Golgi and endosomes to cell bodies (Edwards et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on UNC-16 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e5a0ec14-4792-499b-b3e6-1e7f16443922",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C104",
+      "claim": "UNC-16 regulates distribution of a large molecular complex, ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that UNC-16 regulates distribution of a large molecular complex, ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from genetic analysis of unc-16 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "518d3507-128e-484b-8f6d-8fc6b0228098",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C105",
+      "claim": "UNC-16 localizes to the proximal axon in mechanosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since UNC-16 localizes to the proximal axon in mechanosensory neurons (Edwards et al., 2013), these results might imply that UNC-16 restricts the ribosomes into the soma at the proximal axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous localization data for UNC-16.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "60eb1a34-2adc-480d-9e0d-afd81835778d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C106",
+      "claim": "UNC-16 might restrict the ribosomes into the soma at the proximal axon.",
+      "claim_type": "EXPLICIT",
+      "source": "Since UNC-16 localizes to the proximal axon in mechanosensory neurons (Edwards et al., 2013), these results might imply that UNC-16 restricts the ribosomes into the soma at the proximal axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from localization data and mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ef01adb0-b1dc-4a73-be93-a00ca1d7eb15",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C107",
+      "claim": "Both EM studies and biochemical evidences show that ribosomes can interact with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both ribosomes and microtubules are well characterized cellular components, the connection between them has not been well appreciated. Both EM studies and biochemical evidences show that ribosomes can interact with microtubules (Suprenant, 1993; Suprenant et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on ribosome-microtubule interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "62736041-05a3-4fc8-8ace-54d82d70901c",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C108",
+      "claim": "Microtubule disruption by nocodazole treatment makes ribosomes move into the neurites in chicken sensory neuronal cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule disruption by nocodazole treatment makes ribosomes move into the neurites in chicken sensory neuronal cultures (Baas et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on microtubule disruption effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b5954b2c-8c89-4ecd-9ecb-6d8e3835f8cb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C109",
+      "claim": "In C. elegans mechanosensory neurons, the number of growing microtubules increases three hours after axon injury, followed by consistent microtubule growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans mechanosensory neurons, the number of growing microtubules increases three hours after axon injury, followed by consistent microtubule growth (Ghosh-Roy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on microtubule dynamics after injury.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "1e439c69-9aff-4434-a1ab-43a2fcfafd50",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C110",
+      "claim": "Fewer numbers of microtubules were observed at the injury site by EM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed fewer numbers of microtubules at the injury site by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "EM observation of microtubules at injury site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "e7a40a83-384b-4679-bb66-a9374e46593f",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C111",
+      "claim": "Mitochondria observed at the cutting site may locally supply energy for translation and microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria observed at the cutting site may locally supply energy for translation and microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the function of mitochondria at injury site.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "92aa2359-bdd1-47ae-804d-2bbc9f7fab3f",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C112",
+      "claim": "Microtubules restrict the ribosomes into the neuronal soma in unstressed conditions in mature neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with a hypothesis that microtubules restrict the ribosomes into the neuronal soma in unstressed conditions in mature neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on genetic and drug treatment data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f6c72092-02e5-4139-aa85-c16939dcfd99",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C113",
+      "claim": "In neuronal soma, ribosomes are dynamically exchanged between two states: free in the cytosol or bound to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuronal soma, ribosomes are dynamically exchanged between two states: free in the cytosol or bound to the ER (Jan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of previous research on ribosome dynamics in soma.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "fb2dff7f-9f25-4e27-b0fb-005091276547",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C114",
+      "claim": "The balance between ER-bound and free ribosomes is important because in nascent polypeptide-associated complex (NAC) mutants in C. elegans, ribosomes are mistargeted to the ER, resulting in disrupted protein homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The balance between ER-bound and free ribosomes is important because in nascent polypeptide-associated complex (NAC) mutants in C. elegans, ribosomes are mistargeted to the ER, resulting in disrupted protein homeostasis (Gamerdinger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation of research showing importance of ribosome localization balance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8d1fbb68-b104-48f2-a311-782e513321eb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "claim_id": "C115",
+      "claim": "Mislocalization of ribosomes in microtubule mutants may suggest that microtubules are components to prevent mistargeting ribosomes in the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Mislocalization of ribosomes in microtubule mutants may suggest that microtubules are components to prevent mistargeting ribosomes in the soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about microtubule function based on mutant phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6d5bedce-7267-407f-a95a-0805143f68bb",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a functional GFP-tagging approach for ribosomal proteins using single-copy transgenes in null mutant backgrounds. GFP::RPS-18 partially rescued rps-18(0) phenotypes, while the smaller GFP11::RPS-18 tag completely rescued all phenotypes, demonstrating that tag size affects ribosomal protein function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C13-C14 provide converging evidence that single-copy GFP-tagged ribosomal proteins can be functional, with smaller tags (GFP11) being superior to larger tags (GFP). The rescue experiments with quantified phenotypes (larval arrest and sterility) provide strong support for this methodological result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "7d3605c6-acc4-473e-8b4c-f9e295a33974",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-copy GFP::RPS-18 and RPL-29::GFP showed similar cytosolic reticular localization patterns, suggesting the signals represent assembled ribosomes rather than unassembled subunits, and caused no detectable defects unlike overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C15 demonstrate that properly expressed tagged ribosomal proteins localize similarly and do not cause cellular defects. The similar localization of large and small subunit proteins (C6, C7) provides logical support for the interpretation that signals represent assembled ribosomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "5f364756-5375-43e1-b829-c9b42855078b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fluorescence intensity of tagged ribosomal proteins depends on endogenous gene copy number, suggesting negative feedback regulation eliminates excess ribosomal proteins, making null mutant backgrounds necessary for sufficient signal visualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 provide quantitative fluorescence data showing gene dosage-dependent expression (C9, C10), leading to the inference of negative feedback regulation (C11) and the practical conclusion about experimental design (C12). The logic is sound and supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "8e644298-cf17-4414-9da0-cc42a5d66e9d",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The split-GFP RIBOS approach enables tissue-specific visualization of endogenous ribosomes by expressing GFP1-10 in specific tissues and GFP11::RPS-18 ubiquitously, with fluorescence only appearing where both components coexist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 demonstrate tissue-specific fluorescence despite ubiquitous GFP11::RPS-18 expression, with appropriate negative controls (C18). Claims C94-C95 provide the mechanistic basis for the approach. The evidence strongly supports this methodological innovation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "5f27e4bf-c452-4eb5-9e84-ff723846455e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FRAP analysis showed that GFP11::RPS-18 has slower recovery kinetics and smaller mobile fraction compared to free cytosolic proteins (IFE-2, IFE-4), with recovery parameters comparable to RPL-29::GFP, indicating incorporation into ribosomal complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 provide quantitative FRAP data comparing tagged ribosomal proteins to appropriate controls. The similar behavior of small and large subunit proteins (C20) and their distinct behavior from free proteins (C19) support the conclusion that tagged proteins are incorporated into ribosomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ef33576e-d195-4e49-ba5f-d71559a94d1e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RIBOS signals in muscle arms correlated with ribosome distribution observed by electron microscopy, validating the RIBOS approach for visualizing ribosome localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 provide orthogonal validation of the RIBOS method by comparing fluorescence microscopy with electron microscopy. This correlation strengthens confidence in the RIBOS approach for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In neurons, ribosomes are mostly restricted to the soma, with distinct localization patterns compared to translation initiation factors (IFE-2, IFE-4) and RNA granule components (STAU-1, AIN-1), suggesting differential regulation of translation-related components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide comparative localization data for ribosomes and other translation-related components in neurons. The distinct patterns observed (C27) are well-supported by the microscopy data (C23-C26), though the inference about differential regulation is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "f473fd27-20d1-4cc0-bb5a-8d1f8fdd1097",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ribosome localization in DD motor neurons changes during development from presynaptic terminals at L1 stage to postsynaptic compartments in later stages, confirmed by both RIBOS and electron microscopy showing higher ribosome numbers in DD axons at L1 than adult stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide converging evidence from fluorescence microscopy (C28-C30) and quantitative EM (C31) demonstrating developmental changes in ribosome localization. The use of multiple markers and techniques strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "c1ac90a2-df6f-421c-a2e5-6af1a3f2f0f1",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ribosomes are present in adult VD motor neuron presynaptic terminals as confirmed by serial EM and electron tomography, though at densities below the detection threshold for fluorescence microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide EM evidence for ribosomes in adult presynaptic terminals with appropriate morphological criteria (C33). The explanation for lack of fluorescence detection (C34) is reasonable given the low ribosome density observed by EM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "67282e96-2c9d-469f-a944-10d64d47ec4b",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In mechanosensory neurons, ribosomes are present in soma and proximal axon, forming puncta along axons with density decreasing from L1 to adult stage, and showing developmental stage-specific association with synaptic branch junctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 provide quantitative microscopy data showing spatial distribution (C35), developmental changes in puncta density (C36), and stage-specific localization at branch points (C37). The conclusion about developmental changes (C38) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "97be2772-d8de-4e44-9d7b-846e1cab72c9",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "After axon injury, ribosomes accumulate at the injury site beginning one hour post-injury and plateauing after three hours, confirmed by both RIBOS and EM showing monosomes and mitochondria at the cutting site, with axon regrowth depending partly on protein synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47 provide time-course data (C41), appropriate controls (C43), orthogonal validation by EM (C44-C46), and functional evidence linking protein synthesis to regrowth (C40). The convergence of multiple lines of evidence strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "b68883d6-7873-4e7a-b596-05f9c814f6c9",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "UNC-16/JIP3 acts as a gatekeeper for ribosome distribution in mechanosensory neurons, with unc-16 mutants showing decreased ribosomes in proximal axons and increased ribosomes in presynaptic terminals without affecting somatic distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 provide genetic evidence showing specific effects of unc-16 mutations on ribosome distribution, with appropriate negative controls (C48). Claims C104-C106 provide interpretation based on known UNC-16 localization (C105), though the mechanism remains somewhat speculative (C106).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "ad919b68-4d37-4366-9045-a177c2b7a102",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A forward genetic screen identified eight mutants with aberrant ribosome distribution, all affecting tubulin genes (mec-7, mec-12) or tubulin regulatory genes (mec-15, mec-17), with mutations mapping to functionally important GTP-binding sites in tubulins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 and C61-C63 provide comprehensive genetic mapping and sequencing data identifying causative mutations. The structural analysis (C55-C57) and validation with known alleles (C58) strengthen the conclusions. The convergence on tubulin-related genes is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "80dc6ce9-d896-4d5a-990b-7ce028d1bf28",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dominant tubulin alleles show lower penetrance of ribosome defects than recessive alleles specifically in axons but not soma, suggesting differential regulation of axonal and somatic ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide quantitative penetrance data showing compartment-specific differences between allele types. This observation supports the inference of differential regulation (C60), though the mechanism remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "a3ecea6a-e8e9-4d6d-93bb-e6d81606d7dd",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ribosome distribution defects are not a direct consequence of mechanosensory defects, as mutants in mechanosensory channel and adaptor genes (mec-4, mec-2) or mechanosensory-defective but microtubule-intact mutants (mec-12(e1605)) show normal ribosome distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 provide appropriate genetic controls separating mechanosensory function from microtubule structure. The logic is sound and the negative results with mechanosensory mutants strengthen the conclusion that microtubule structure, not mechanosensation, is critical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Microtubules are important for maintaining ribosome distribution in soma and generating barriers in proximal axons, with chronic colchicine treatment or mec-7 mutations causing ribosome mislocalization, and differential timing of defects in soma versus axons suggesting distinct regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 provide pharmacological (C67-C68) and genetic (C69) evidence with developmental time-course analysis showing compartment-specific effects. The differential timing of somatic versus axonal defects (C68-C71) supports distinct regulatory mechanisms, though the exact mechanisms remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "51cb67d7-4ca0-42c5-aa95-5fcb7bd1a4ef",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The microtubule cytoskeleton and UNC-16/JIP3 exert distinct effects on localization of axonal and somatic ribosomes, providing insight into mechanisms of active regulation of ribosome localization in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 summarize the main conclusions from the genetic analyses. These summary claims are well-supported by the detailed experimental results described in other claim groups, representing the major conceptual advance of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "68850c1e-efcb-4fee-9972-cc3d610140d2",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Overexpression of tagged ribosomal proteins causes cellular defects including abnormal axon and cell body morphologies and nuclear aggregates of ribosomal proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 provide observational data on the negative effects of overexpression, justifying the need for the single-copy approach. The evidence is straightforward and well-documented in the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "60f51ab8-97bc-4eef-ad47-1942c14e6667",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The RIBOS approach may have limitations including potential non-functionality of reconstituted GFP::RPS-18 in contexts requiring local ribosome activity and possible tagging of only a subset of ribosomes if not all ribosomes contain RPS-18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96 and C99 represent speculative limitations acknowledged by the authors. While these are reasonable concerns given the irreversible nature of split-GFP (C95) and known ribosome heterogeneity (C97-C98), no direct evidence is provided to assess whether these limitations actually affect the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    },
+    {
+      "id": "fd88895e-46e7-4c27-b405-f03faa394363",
+      "content_id": "b0e28bff-2688-4a60-b1a5-5853a83b72e4",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Microtubules may restrict ribosomes to the neuronal soma under unstressed conditions, with altered microtubule dynamics after axon injury potentially allowing ribosome entry into axons, and mitochondria at injury sites potentially supplying energy for translation and microtubule dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C112 combine cited prior work (C109) with new observations (C110) and speculation (C111-C112). While the hypothesis is reasonable and consistent with the data, the mechanistic claims remain speculative without direct experimental testing of the proposed model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:21:21.687934Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "952f1d02-bb44-418a-b9f9-f0e63692a9f1",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "f7ca2a1e-e463-4061-ab7e-2bb83bcaa02d",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "6b4f0cdd-6fbb-44a8-9fc7-bc2db234395b",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "13cc37d8-a95c-4e63-827e-b62121029f01",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "97a5f6b5-e527-43f2-b8bb-033893d48f07",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "7239c5a2-4a50-45cb-8aac-3c1dc022aaec",
+      "result_id": "6d5bedce-7267-407f-a95a-0805143f68bb"
+    },
+    {
+      "claim_id": "c895cdf0-e4f7-45f2-8897-1a2a8530fd13",
+      "result_id": "7d3605c6-acc4-473e-8b4c-f9e295a33974"
+    },
+    {
+      "claim_id": "85b3bf34-d234-44e3-bcba-c227199439d5",
+      "result_id": "7d3605c6-acc4-473e-8b4c-f9e295a33974"
+    },
+    {
+      "claim_id": "8f07591e-2e32-4c84-aee2-b0cfd90361c2",
+      "result_id": "7d3605c6-acc4-473e-8b4c-f9e295a33974"
+    },
+    {
+      "claim_id": "9c85889e-f576-42c5-8381-efd9e0281e74",
+      "result_id": "7d3605c6-acc4-473e-8b4c-f9e295a33974"
+    },
+    {
+      "claim_id": "4a7c06ef-7046-43b8-ba6b-aae5f2e67068",
+      "result_id": "7d3605c6-acc4-473e-8b4c-f9e295a33974"
+    },
+    {
+      "claim_id": "de08b3c0-f87f-4e4e-a86e-c6d036a15fdb",
+      "result_id": "5f364756-5375-43e1-b829-c9b42855078b"
+    },
+    {
+      "claim_id": "1fe0fb95-9ab4-449e-8897-29fcad9f1421",
+      "result_id": "5f364756-5375-43e1-b829-c9b42855078b"
+    },
+    {
+      "claim_id": "803d7e41-1c78-4ef7-a3af-44ff07f1c5cf",
+      "result_id": "5f364756-5375-43e1-b829-c9b42855078b"
+    },
+    {
+      "claim_id": "39686c09-929b-4b27-bd7c-bb2ab90dd8a2",
+      "result_id": "5f364756-5375-43e1-b829-c9b42855078b"
+    },
+    {
+      "claim_id": "b20cab01-e53f-4abd-9ad3-bd23680ccbef",
+      "result_id": "8e644298-cf17-4414-9da0-cc42a5d66e9d"
+    },
+    {
+      "claim_id": "3627b869-54f3-4e2d-b41b-0df436bc4349",
+      "result_id": "8e644298-cf17-4414-9da0-cc42a5d66e9d"
+    },
+    {
+      "claim_id": "4845db9a-770c-4ee1-8537-f8c76750d2c5",
+      "result_id": "8e644298-cf17-4414-9da0-cc42a5d66e9d"
+    },
+    {
+      "claim_id": "0c45803e-4d80-4404-bb08-878531e74f9b",
+      "result_id": "8e644298-cf17-4414-9da0-cc42a5d66e9d"
+    },
+    {
+      "claim_id": "ab57ba7c-9686-49bc-b53f-a4ef0a537aed",
+      "result_id": "8e644298-cf17-4414-9da0-cc42a5d66e9d"
+    },
+    {
+      "claim_id": "44ca6b19-c23b-419d-bf86-4b804b96aabb",
+      "result_id": "5f27e4bf-c452-4eb5-9e84-ff723846455e"
+    },
+    {
+      "claim_id": "9c342c03-3169-4140-bcbd-4431949f11fb",
+      "result_id": "5f27e4bf-c452-4eb5-9e84-ff723846455e"
+    },
+    {
+      "claim_id": "bde729f6-6f06-4155-a8c2-3b2701883a7e",
+      "result_id": "ef33576e-d195-4e49-ba5f-d71559a94d1e"
+    },
+    {
+      "claim_id": "44971c4a-5345-45e5-b877-427eb62b1900",
+      "result_id": "ef33576e-d195-4e49-ba5f-d71559a94d1e"
+    },
+    {
+      "claim_id": "d3f05cc7-3067-473c-b4dd-7241bada9002",
+      "result_id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60"
+    },
+    {
+      "claim_id": "ca63be2d-c493-40bb-80c5-61a017faea7b",
+      "result_id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60"
+    },
+    {
+      "claim_id": "b6de38ac-c73b-4b20-8ab3-90bb2bee5848",
+      "result_id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60"
+    },
+    {
+      "claim_id": "30803b52-57ec-422e-8d4c-62a278cf199c",
+      "result_id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60"
+    },
+    {
+      "claim_id": "3820f4d0-4d78-44a2-a0c8-5410fbe66165",
+      "result_id": "578a992c-c2b9-4b6e-a8a5-c2a566fe5c60"
+    },
+    {
+      "claim_id": "e3d48581-1dba-4ca6-883e-aa92668600e9",
+      "result_id": "f473fd27-20d1-4cc0-bb5a-8d1f8fdd1097"
+    },
+    {
+      "claim_id": "37bf62c5-309d-44b6-8fdd-01d424e5b843",
+      "result_id": "f473fd27-20d1-4cc0-bb5a-8d1f8fdd1097"
+    },
+    {
+      "claim_id": "dcd898ff-6a8b-4325-8661-d86b8cd83347",
+      "result_id": "f473fd27-20d1-4cc0-bb5a-8d1f8fdd1097"
+    },
+    {
+      "claim_id": "b56cf06b-cc94-4bf9-b186-46c1cdf0150e",
+      "result_id": "f473fd27-20d1-4cc0-bb5a-8d1f8fdd1097"
+    },
+    {
+      "claim_id": "46a6b80f-74bb-4c5f-9fad-63c93283f087",
+      "result_id": "c1ac90a2-df6f-421c-a2e5-6af1a3f2f0f1"
+    },
+    {
+      "claim_id": "6978a00d-41bf-4917-9781-ea1dd420ecdf",
+      "result_id": "c1ac90a2-df6f-421c-a2e5-6af1a3f2f0f1"
+    },
+    {
+      "claim_id": "0d76e4ca-c753-4814-93e3-a024e01a7c55",
+      "result_id": "c1ac90a2-df6f-421c-a2e5-6af1a3f2f0f1"
+    },
+    {
+      "claim_id": "e04a11f1-a929-4a0b-b143-51a8b8be9344",
+      "result_id": "67282e96-2c9d-469f-a944-10d64d47ec4b"
+    },
+    {
+      "claim_id": "2e778bd5-3735-44e8-b56f-8a173f21ce2e",
+      "result_id": "67282e96-2c9d-469f-a944-10d64d47ec4b"
+    },
+    {
+      "claim_id": "9c1e05ab-8e95-4bd5-bd40-2348f63335d9",
+      "result_id": "67282e96-2c9d-469f-a944-10d64d47ec4b"
+    },
+    {
+      "claim_id": "e083cd10-f1cb-41fc-8184-b7edce774284",
+      "result_id": "67282e96-2c9d-469f-a944-10d64d47ec4b"
+    },
+    {
+      "claim_id": "365ae17f-9cee-4a7a-aaa1-743da9564968",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "9b14646c-9f83-43de-af88-0318265d9330",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "3ae445f9-98b2-45a3-baaa-630b7a053e0c",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "dc4fcfb6-8be9-4d83-b350-24ce23fbf065",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "623c5dd8-34a8-44bb-adb3-8fdb7b9f1a49",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "b2963ca9-e3e3-4d08-adbc-a6c9d506fbcf",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "307020da-f8ce-4013-a7ee-6014a25947b6",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "33e19830-7adb-471a-b6b1-cc9b11cf9e53",
+      "result_id": "97be2772-d8de-4e44-9d7b-846e1cab72c9"
+    },
+    {
+      "claim_id": "dcadb919-2a78-466a-aa09-161b8dc14c27",
+      "result_id": "b68883d6-7873-4e7a-b596-05f9c814f6c9"
+    },
+    {
+      "claim_id": "d07be896-e699-485e-be17-ed17dc10dd77",
+      "result_id": "b68883d6-7873-4e7a-b596-05f9c814f6c9"
+    },
+    {
+      "claim_id": "e5a0ec14-4792-499b-b3e6-1e7f16443922",
+      "result_id": "b68883d6-7873-4e7a-b596-05f9c814f6c9"
+    },
+    {
+      "claim_id": "518d3507-128e-484b-8f6d-8fc6b0228098",
+      "result_id": "b68883d6-7873-4e7a-b596-05f9c814f6c9"
+    },
+    {
+      "claim_id": "60eb1a34-2adc-480d-9e0d-afd81835778d",
+      "result_id": "b68883d6-7873-4e7a-b596-05f9c814f6c9"
+    },
+    {
+      "claim_id": "ae90a2da-2a5b-4c39-841f-931589d25616",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "7605a9ba-2e69-48d3-8bc0-e7e3f688caa8",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "91d612d0-e225-4a7f-9403-8afcd5e27a7e",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "286d39f6-3de2-404a-a23a-68aff467976d",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "608d3b0d-3c90-4f13-8681-90989c63569b",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "84dc0b8e-a54f-43be-b664-209d8cc24b3d",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "ddd8e182-508e-4a58-b954-0928100dc1bc",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "f640c11f-21f1-400b-aa3b-6dec810062e2",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "e22fa4b6-e87a-4810-a46e-89b9b744e6c8",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "f33f27f4-28f6-4c4f-8b11-6a9c352ad082",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "8a8feb8d-ca37-453d-a042-06a1906e84a8",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "f2757aae-a28f-49e9-abf4-953c4e696119",
+      "result_id": "ad919b68-4d37-4366-9045-a177c2b7a102"
+    },
+    {
+      "claim_id": "2e7ce4fa-7037-4f9d-b16f-5ca9d23d80b3",
+      "result_id": "80dc6ce9-d896-4d5a-990b-7ce028d1bf28"
+    },
+    {
+      "claim_id": "a25827d6-6dfb-4f98-aa99-a832e4b4a81d",
+      "result_id": "80dc6ce9-d896-4d5a-990b-7ce028d1bf28"
+    },
+    {
+      "claim_id": "c15dc35d-88d1-4fd6-b047-a8e76fd7ab34",
+      "result_id": "a3ecea6a-e8e9-4d6d-93bb-e6d81606d7dd"
+    },
+    {
+      "claim_id": "22f3c174-abd0-421e-8f7e-bc658a1f09ac",
+      "result_id": "a3ecea6a-e8e9-4d6d-93bb-e6d81606d7dd"
+    },
+    {
+      "claim_id": "6cdfe797-c8f7-4f01-a4cc-62dde0d5fce5",
+      "result_id": "a3ecea6a-e8e9-4d6d-93bb-e6d81606d7dd"
+    },
+    {
+      "claim_id": "dc71036a-c4ac-4ee5-8bb4-194483ba11ae",
+      "result_id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e"
+    },
+    {
+      "claim_id": "20a1efa6-1f35-4702-8000-856297f43ab1",
+      "result_id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e"
+    },
+    {
+      "claim_id": "4bbb5faa-46d1-4d3c-81f1-ce3f3992ac75",
+      "result_id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e"
+    },
+    {
+      "claim_id": "e287d831-34cb-4345-85f1-2ffde4660b3f",
+      "result_id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e"
+    },
+    {
+      "claim_id": "210dea83-eec9-4e8b-b008-77696fcb0ec6",
+      "result_id": "518560ed-dee5-4a5a-aa83-3ade11a4a82e"
+    },
+    {
+      "claim_id": "a02531c3-f3d2-4d70-8ec2-d945d754a787",
+      "result_id": "51cb67d7-4ca0-42c5-aa95-5fcb7bd1a4ef"
+    },
+    {
+      "claim_id": "172a3381-785c-4e98-8ed6-f35d2f6ac833",
+      "result_id": "51cb67d7-4ca0-42c5-aa95-5fcb7bd1a4ef"
+    },
+    {
+      "claim_id": "03222efa-16e4-4e1c-a953-b6ff8e8ab888",
+      "result_id": "68850c1e-efcb-4fee-9972-cc3d610140d2"
+    },
+    {
+      "claim_id": "2b46e3c9-4297-4414-bff2-7c8818bd6d0f",
+      "result_id": "68850c1e-efcb-4fee-9972-cc3d610140d2"
+    },
+    {
+      "claim_id": "93894cab-3a41-4345-9718-e3a98e9dab5f",
+      "result_id": "60f51ab8-97bc-4eef-ad47-1942c14e6667"
+    },
+    {
+      "claim_id": "99b81a5f-d810-4960-91ad-9e46c5daa7fe",
+      "result_id": "60f51ab8-97bc-4eef-ad47-1942c14e6667"
+    },
+    {
+      "claim_id": "b5954b2c-8c89-4ecd-9ecb-6d8e3835f8cb",
+      "result_id": "fd88895e-46e7-4c27-b405-f03faa394363"
+    },
+    {
+      "claim_id": "1e439c69-9aff-4434-a1ab-43a2fcfafd50",
+      "result_id": "fd88895e-46e7-4c27-b405-f03faa394363"
+    },
+    {
+      "claim_id": "e7a40a83-384b-4679-bb66-a9374e46593f",
+      "result_id": "fd88895e-46e7-4c27-b405-f03faa394363"
+    },
+    {
+      "claim_id": "92aa2359-bdd1-47ae-804d-2bbc9f7fab3f",
+      "result_id": "fd88895e-46e7-4c27-b405-f03faa394363"
+    }
+  ],
+  "comparisons": []
+}

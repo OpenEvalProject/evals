@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Dengue viruses are widespread flaviviruses affecting ~100 million people annually across >100 countries, transmitted by Aedes mosquitoes in urban cycles and maintained in sylvatic cycles involving nonhuman primates in Asia and Africa. Human dengue viruses (DENV1-4) have zoonotic origins from sylvatic reservoirs but are now uncoupled from them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide well-established background on dengue epidemiology, taxonomy, transmission, and evolutionary origins, all supported by appropriate citations to prior literature. These are standard facts in the dengue field and serve as context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Sylvatic and human dengue viruses replicate similarly in human cells, yet dengue does not replicate to high titers in nonhuman primate models (chimpanzees, rhesus macaques, marmosets) and causes little or no overt disease pathology in these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 establish a key paradox motivating the study: despite similar replication in human cells, dengue shows poor replication and pathology in NHP models. This is well-supported by multiple citations and represents established observations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "STING is an ER-resident protein critical for innate immune sensing of intracellular pathogens. The DENV2 NS2B3 protease cleaves human STING, reducing IRF3 phosphorylation and type I interferon production, thereby increasing viral titers. Mouse STING is resistant to cleavage, explaining why mice control dengue infection effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 provide essential background on STING function and its cleavage by DENV2, all supported by appropriate citations to prior work. This establishes the mechanistic foundation for the current study and is well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C32",
+      "C33"
+    ],
+    "result": "The NS2B3 proteases of all human (DENV1-4) and sylvatic dengue viruses universally cleave human STING, but none can cleave the STING of chimpanzees, macaques, or marmosets. Remarkably, chimpanzee STING differs from human STING at only three amino acid positions yet is completely resistant to cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C32-C33 present a core finding supported by experimental data in Figures 1B and 5. The western blots clearly show cleavage of human but not NHP STING by multiple dengue proteases. The minimal sequence difference between human and chimp STING makes this finding particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "An 'RG' motif at positions 78/79 of STING is both necessary and sufficient for susceptibility to dengue virus protease cleavage. Converting residues 78/79 to 'RG' renders all tested nonhuman primate STING proteins (chimpanzee, rhesus macaque, marmoset) and mouse STING sensitive to cleavage. Mutations at position 230 had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C36-C38, C54, C56-C57 describe the mapping of the critical cleavage determinant, supported by mutagenesis experiments in Figures 2B and 4B. The reciprocal swap experiments (human R78W becomes resistant, chimp W78R becomes susceptible) provide strong evidence. The negative result for position 230 strengthens the conclusion about 78/79 specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The dengue cleavage site was previously mapped to residues 95/96, but the current work identifies position 78/79 as the critical determinant. The 78/79 'RG' motif is consistent with known NS2B3 protease preferences (R upstream, G downstream of cleavage site) and the estimated cleavage position (~25% from N-terminus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C41-C43 reconcile previous mapping with new findings. The authors appropriately cite prior work (C34, C42) and provide biochemical rationale (C43) for why 78/79 is the actual cleavage determinant. The logic is sound and supported by the mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Position 78 of STING was previously suggested to be important for ER retention, but both wildtype and 78W mutant human STING localize similarly to the ER, indicating that the 78W mutation does not disrupt ER localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 address a potential confound. The immunofluorescence data in Figure 2\u2014figure supplement 2 clearly shows colocalization of both wildtype and 78W STING with the ER marker BiP, ruling out mislocalization as an explanation for cleavage resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "STING cleavage by NS2B3 reduces phosphorylated IRF3 (pIRF3) levels and interferon-beta promoter activity. This reduction occurs only when STING is susceptible to cleavage (human wildtype, chimp 78R) but not when STING is resistant (chimp wildtype, human 78W).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate functional consequences of STING cleavage using western blots (pIRF3) and luciferase reporter assays (Figure 2C). The data show clear correlation between cleavage susceptibility and reduced interferon signaling, with appropriate statistical analysis (p \u2264 0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In dengue virus infection experiments, A549 cells with cleavage-resistant STING (human 78W, chimp wildtype) produced significantly less infectious virus than cells with cleavage-susceptible STING (human wildtype, chimp 78R). A single amino acid difference in STING resulted in up to 176-fold change in viral titers at 24 hours post-infection, demonstrating that STING cleavage is critically important for dengue replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide direct evidence that STING cleavage impacts viral replication using CRISPR knockout cells reconstituted with different STING variants (Figure 3). The large magnitude of effect (176-fold) and statistical significance (p < 0.0001) strongly support the biological importance of this mechanism. However, the cleavage product was not visible in these infection experiments without proteasome inhibitor treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Dengue protease cannot cleave rhesus macaque, marmoset, or mouse STING, all of which deviate from the human 'RG' motif at positions 78/79. Mutation of residues 93-96 in mouse STING to match human sequence did not confer cleavage susceptibility, confirming that 78/79 rather than 93-96 is the critical determinant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C55 extend the findings to additional species and provide a critical negative control. Figure 4B shows that restoring 'RG' at 78/79 confers cleavage susceptibility, while changing 93-96 does not, definitively ruling out the previously proposed cleavage site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "All proteases from DENV1-4 cleave wildtype human STING far more efficiently than human STING with the 78W mutation, indicating that the 78/79 RG motif is recognized by NS2B3 proteases of all endemic human dengue viruses, consistent with their similar cleavage motif preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 demonstrate universality across human dengue serotypes. Figure 5A shows that despite variable expression levels, all four DENV proteases preferentially cleave wildtype over 78W mutant STING. This is an important finding showing the mechanism is conserved across all human dengue viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The sylvatic dengue virus protease (DakAr-141069) cleaves human STING but not chimpanzee, rhesus macaque, or marmoset STING. Restoring the 'RG' motif at 78/79 renders all these NHP STING proteins susceptible to cleavage, indicating the sylvatic protease targets the same cleavage determinant as human dengue proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 extend findings to sylvatic dengue, supported by Figure 5B. This is critical for the evolutionary interpretation, showing that both reservoir and human-adapted viruses use the same mechanism. The sequence similarity between sylvatic and human proteases (Figure 5\u2014figure supplement 1) supports this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C77"
+    ],
+    "result": "Comprehensive sequence analysis reveals that with the exception of chimpanzees and bonobos, all apes encode 'RG' at STING positions 78/79. No monkey species encodes 'RG' (Old World monkeys have 'RD', New World monkeys have 'QG'). Among all mammalian STING sequences in GenBank, only some apes and three rodent species (chinchilla, naked mole rat, desert woodrat) encode 'RG' at 78/79.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71, C77 present extensive comparative sequence analysis combining GenBank data with 16 newly sequenced primate species (Figure 6A). The phylogenetic distribution is striking: the cleavage motif is present in humans and some apes but absent in all monkeys and most other mammals. This is well-documented and represents substantial sequencing effort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Experimental testing confirmed that STING from naked mole rat and desert woodrat is cleaved by DENV2 protease (cleavage product visible). For chinchilla STING, the full-length band disappears in the presence of active protease, but no cleavage product is detected even under long exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 validate predictions from sequence analysis with functional data (Figure 6B). The cleavage of naked mole rat and desert woodrat STING is clearly shown. The chinchilla result is more ambiguous\u2014the disappearance of the STING band suggests cleavage, but the absence of a detectable product raises questions about product stability or detection sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The data suggest that critical differences in dengue virus replication exist between human and monkey hosts rather than between human and sylvatic viruses. All dengue viruses cleave human STING but not the versions found in most other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 synthesize the findings into a key conclusion. The observation that sylvatic and human viruses replicate similarly in human cells (C74, cited) combined with the universal cleavage of human but not monkey STING (experimental data) supports this interpretation. This reframes the paradox established in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose that dengue viruses evolved to suppress innate immunity in humans to increase viral titers and spread in the dense human population, while simultaneously avoiding cleavage of monkey STING to maintain decreased pathogenicity in reservoir species. This would reduce virus titers in monkeys by enabling the interferon pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 present an evolutionary hypothesis that is speculative. While the data show differential cleavage patterns, the evolutionary scenario (adaptation to humans while maintaining low pathogenicity in reservoirs) is inferred rather than directly tested. Alternative explanations (e.g., human-specific adaptation without selection for reservoir maintenance) are not rigorously excluded. The hypothesis is plausible but requires additional evolutionary and ecological data to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Evidence for primate reservoir hosts comes from virus isolation from sentinel macaques and leaf monkeys, and antibody detection in various primates. However, most sylvatic dengue viruses have been obtained from mosquitoes or humans rather than directly from primates. The current results indicate dengue viruses generally cannot cleave monkey STING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 review evidence for reservoir hosts (well-cited) and integrate it with the current findings. The authors appropriately note limitations in identifying reservoir species and acknowledge that most sylvatic viruses come from mosquitoes/humans rather than primates. The conclusion that dengue cannot cleave monkey STING is well-supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The inability of dengue proteases to cleave most nonhuman forms of STING may partially explain difficulties in modeling dengue infection in immune-competent animals. Nonhuman primates show enhanced viral control and lack clinical disease. Human dengue viruses replicate robustly in interferon-deficient cells (e.g., Vero) and in mice lacking interferon response genes, but not in immune-competent mice where STING cannot be cleaved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 connect the molecular findings to practical implications for animal models. The logic is sound: if STING cleavage is important for viral replication (shown in C48-C51) and most animals lack cleavable STING (shown in C65-C77), this would explain poor replication in animal models. The supporting citations for NHP and mouse phenotypes are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Chimpanzees and bonobos encode 'WG' at STING positions 78/79 (rendering them resistant to cleavage) while all other apes encode 'RG' (susceptible). Remarkably, the 'W' at position 78 was previously shown to be fixed by positive natural selection in wild chimpanzee populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 highlight an intriguing evolutionary observation. The sequence data (C90-C91) are clear from Figure 6. The positive selection finding (C92) is appropriately cited to Mozzi et al., 2015. This suggests potential dengue-driven selection in chimpanzees, though the authors appropriately present this as a notable observation rather than definitive proof of dengue as the selective agent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "As a parallel example, the hepatitis C protease cleaves MAVS (another interferon pathway protein), and MAVS has experienced positive selection at a residue in the HCV protease cleavage site, suggesting ancient viral selective pressure on primate genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide a relevant precedent from the literature (appropriately cited) for virus-driven selection on protease cleavage sites in immune proteins. This contextualizes the chimpanzee STING finding and supports the plausibility of pathogen-driven evolution at these sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates that DENV2 protease cleaves human STING, reducing interferon production and boosting viral titers. Both human and sylvatic dengue viruses universally cleave human STING but not the STING of primate reservoir species. This ability is specific to humans and a few closely related ape species. The authors propose dengue viruses may have evolved to increase titers in dense human populations while maintaining decreased pathogenicity in rare reservoir animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 summarize the main findings. C95-C98 are well-supported by the experimental data throughout the manuscript. C99 is the evolutionary hypothesis which, while plausible and consistent with the data, remains somewhat speculative as discussed for C78-C80. Overall, the molecular and functional findings are solid; the evolutionary interpretation is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  }
+]

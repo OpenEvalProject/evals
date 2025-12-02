@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C73",
+      "C77",
+      "C78"
+    ],
+    "result": "Using a pure in vitro reconstitution system with purified lysosomes, the authors demonstrate that metformin inhibits mTORC1 by dissociating Raptor from lysosomes and activates AMPK by recruiting AXIN/LKB1 to lysosomes, both through the v-ATPase-Ragulator lysosomal pathway. These effects occur independently of AMPK for mTORC1 inhibition and independently of mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide direct experimental evidence from the in vitro reconstitution system (Figure 1) showing amino acid-stimulated Raptor accumulation on lysosomes, its dissociation upon metformin/ConA treatment, and AXIN/LKB1 recruitment with AMPK phosphorylation. Claim C30 demonstrates AMPK-independence using AMPK knockout cells. The lysosome purity controls (C77) and LKB1 complex validation (C78) strengthen the experimental rigor. The system explicitly excludes mitochondria, addressing a key mechanistic controversy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Metformin does not activate mitochondrial stress response in C. elegans but does impair lysosomal function as measured by cathepsin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide complementary evidence using reporter strains and functional assays. The lack of hsp-6p::gfp activation distinguishes metformin from rotenone (a known mitochondrial inhibitor), while the cathepsin assay directly demonstrates impaired lysosomal function. These results support the lysosomal rather than mitochondrial mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C79"
+    ],
+    "result": "Metformin inhibits TORC1 pathway in C. elegans, as evidenced by decreased RSKS-1 phosphorylation, nuclear translocation of HLH-30/TFEB, and upregulation of HLH-30 target genes. This inhibition occurs independently of AMPK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide multiple converging lines of evidence for TORC1 inhibition using phosphorylation status (C35), transcription factor localization (C36), and gene expression (C39). The antibody validation (C79) and AMPK-independence demonstrated in aak-2 mutants (C41) strengthen the conclusions. The use of multiple readouts for the same pathway provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Metformin extends lifespan and improves healthspan in daf-15 heterozygous mutants (which already have reduced TORC1 activity), suggesting metformin acts through an additional pathway beyond TORC1 inhibition, likely through AMPK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate that metformin extends lifespan and improves multiple fitness parameters in daf-15 heterozygous mutants. Claims C47-C48 show that HLH-30 is already nuclear in these mutants and metformin cannot further increase this, indicating TORC1 is already inhibited. However, metformin still activates AMPK to the same level as in controls (C50), and extends lifespan in hlh-30, pha-4, and skn-1 mutants (C49), supporting an additive AMPK-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Metformin's lifespan extension effect requires the v-ATPase-Ragulator lysosomal pathway. v-ATPase mutants (vha-3, vha-12) show extended lifespan and TORC1 inhibition, while Ragulator mutants (lmtr-2, lmtr-3) do not. Metformin cannot further extend lifespan or activate AMPK in any of these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide genetic evidence that metformin requires v-ATPase and Ragulator for its effects. The differential phenotypes of v-ATPase vs Ragulator mutants (C52-C55, C82-C83) are logically consistent with v-ATPase being required for TORC1 activation. The localization (C80) and rescue experiments (C81) validate the mutants. The inability of metformin to extend lifespan or activate AMPK in these mutants (C56) strongly supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Metformin shortens lifespan in lmtr-2/3 mutants, but this is not due to increased sickness as censored animals were not increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 reports a negative effect of metformin in Ragulator mutants, while C59 argues this is not due to toxicity based on censoring rates. However, the mechanism for lifespan shortening is not explained, and the interpretation that metformin 'did not make the mutants sick' based solely on censoring rates is incomplete. Alternative explanations for shortened lifespan are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The AXIN-LKB1 pathway is required for metformin's lifespan extension effects. AXL-1 localizes to lysosomes only upon metformin treatment, and axl-1 or par-4 (LKB1) mutants show no AMPK activation or lifespan extension in response to metformin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide genetic evidence that AXIN and LKB1 are required for metformin's effects. The lysosomal localization of AXL-1 upon metformin treatment (C61) and the lack of baseline lysosomal defects in axl-1 mutants (C62) support a specific metformin-induced recruitment mechanism. The loss of AMPK activation (C63) and lifespan extension (C64-C65) in these mutants provides strong genetic support for the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Metformin induces a dietary restriction-like metabolic state (reduced neutral fat) that requires the lysosome-dependent AMPK activation pathway, as this effect is abolished in vha-3, lmtr-3, and axl-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate that metformin reduces neutral fat in wild-type but not in lysosomal pathway mutants, providing functional evidence that the metabolic effects require the identified pathway. This connects the molecular mechanism to a physiologically relevant metabolic phenotype and is consistent with prior work (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Lysosome-dependent AMPK activation is required for metformin's beneficial effects on age-related fitness decline, including locomotion and age pigment accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 provides experimental evidence that mutations in vha-3, lmtr-3, or axl-1 abolish metformin's effects on locomotion and age pigments. This extends the mechanism beyond lifespan to healthspan parameters, demonstrating the pathway's importance for multiple aging phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Metformin extends C. elegans lifespan and attenuates age-related fitness decline via a mechanism requiring v-ATPase-Ragulator-AXIN/LKB1 of the lysosomal pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C74) is well-supported by the collective genetic evidence from Figures 3-6, including lifespan assays, fitness measurements, and molecular readouts across multiple mutant backgrounds. The claim appropriately synthesizes the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that metformin functions by targeting the v-ATPase-Ragulator complex on lysosome membranes, potentially causing a conformational change that dissociates mTORC1 and allows AXIN/LKB1 docking for AMPK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 are explicitly speculative mechanistic models. While consistent with the experimental data, the direct molecular target of metformin and the proposed conformational changes are not experimentally demonstrated. The model is reasonable but requires direct biochemical validation of metformin binding to v-ATPase and structural studies of conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Metformin is a widely used diabetes drug that has been shown to extend lifespan in model organisms and reduce age-related diseases in patients, leading to the proposed TAME clinical trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C2, C5-C8) are well-established in the literature and supported by the cited references. They provide appropriate context for the study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews existing models for metformin's mechanism of action, including the mitochondrial Complex I hypothesis (which has been challenged) and the alternative lysosome-dependent AMPK activation model, as well as established knowledge about mTORC1 and AMPK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C21) accurately summarize prior work and established knowledge about AMPK, mTORC1, and proposed metformin mechanisms. They are appropriately cited and provide necessary background for understanding the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "C. elegans is an established model for studying metformin's effects on aging, with various proposed mechanisms including dietary restriction mimicry, methionine metabolism alterations, and NPC-mediated Rag GTPase restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C22-C26) appropriately cite prior C. elegans studies on metformin and aging. They establish the rationale for using this model system and acknowledge alternative mechanisms that have been proposed.",
+    "result_type": "MINOR"
+  }
+]

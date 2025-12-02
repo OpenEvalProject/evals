@@ -1,0 +1,1818 @@
+{
+  "submission": {
+    "id": "be5740c5-652b-4f92-82a6-8886380c668b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:11:09.172971Z",
+    "updated_at": "2025-12-02T02:11:09.172971Z"
+  },
+  "content": [
+    {
+      "id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "submission_id": "be5740c5-652b-4f92-82a6-8886380c668b",
+      "content_type": "manuscript",
+      "content_text": "# Stepwise wiring of the Drosophila olfactory map requires specific Plexin B levels\n\n## Authors\n\n- Jiefu Li<sup>1</sup> ([ORCID: 0000-0002-0062-4652](https://orcid.org/0000-0002-0062-4652))\n- Ricardo Guajardo<sup>1</sup>\n- Chuanyun Xu<sup>1</sup>\n- Bing Wu<sup>1</sup>\n- Hongjie Li<sup>1</sup>\n- Tongchao Li<sup>1</sup>\n- David J Luginbuhl<sup>1</sup>\n- Xiaojun Xie<sup>2</sup> ([ORCID: 0000-0003-3459-6095](https://orcid.org/0000-0003-3459-6095))\n- Liqun Luo<sup>1</sup> ([ORCID: 0000-0001-5467-9264](https://orcid.org/0000-0001-5467-9264)) \u2020\n\n### Affiliations\n\n1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States\n2. The Solomon H. Snyder Department of Neuroscience Howard Hughes Medical Institute, The Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe precise assembly of a neural circuit involves many consecutive steps. The conflict between a limited number of wiring molecules and the complexity of the neural network impels each molecule to execute multiple functions at different steps. Here, we examined the cell-type specific distribution of endogenous levels of axon guidance receptor Plexin B (PlexB) in the developing antennal lobe, the first olfactory processing center in Drosophila. We found that different classes of olfactory receptor neurons (ORNs) express PlexB at different levels in two wiring steps \u2013 axonal trajectory choice and subsequent target selection. In line with its temporally distinct patterns, the proper levels of PlexB control both steps in succession. Genetic interactions further revealed that the effect of high-level PlexB is antagonized by its canonical partner Sema2b. Thus, PlexB plays a multifaceted role in instructing the assembly of the Drosophila olfactory circuit through temporally-regulated expression patterns and expression level-dependent effects.\n\n## Introduction\n\nPrecise neural circuit assembly involves multiple coordinated steps. Through the division and differentiation processes, each postmitotic neuron obtains a specific fate that ultimately controls its wiring specificity and functional output. Axons and dendrites of a neuron then extend through specific paths to their gross targeting areas. As terminal structures elaborate, interactions between prospective synaptic partners finalize the connectivity selection and initiate synaptogenesis. Finally, plasticity of established circuits serves as an extended developmental mechanism, allowing dynamic adaptation for diverse neural functions. Studies in the past few decades have identified a large collection of molecules and revealed many developmental principles underlying the steps described above (Hong and Luo, 2014; H\u00fcbener and Bonhoeffer, 2014; Jan and Jan, 2010; Jukam and Desplan, 2010; Kolodkin and Tessier-Lavigne, 2011; Li et al., 2018; Sanes and Yamagata, 2009; Zipursky and Sanes, 2010). Nevertheless, only a limited number of guidance molecules are available compared to the complexity and heterogeneity of the neural network established under their instructions. Although each molecule can play several roles and function repeatedly at multiple stages, it is not well understood how a single molecule achieves this functional versatility and connects the sequential steps of neural circuit assembly.\n\nThe antennal lobe, the first-order olfactory processing center of Drosophila, comprises about 50 distinct glomeruli with stereotyped positions and morphologies and provides an excellent system for dissecting the molecular and cellular mechanisms underlying circuit assembly. Each of the 50 classes of olfactory receptor neurons (ORNs) expresses a single or a unique set of olfactory receptors and projects their axons accurately to the 50 corresponding glomeruli in the antennal lobe (Benton et al., 2009; Couto et al., 2005; Fishilevich and Vosshall, 2005; Gao et al., 2000; Silbering et al., 2011; Vosshall and Stocker, 2007; Vosshall et al., 2000). Most projection neurons (PNs) arborize their dendrites in a specific glomerulus and form synaptic connections exclusively with the ORNs innervating that glomerulus (Jefferis et al., 2001; Stocker et al., 1990). Thus, the Drosophila olfactory map features 50 anatomically distinct information processing channels that ensure the fidelity of olfactory perception through wiring specificity \u2013 in the form of precise one-to-one pairings of 50 classes of ORNs and PNs.\n\nPlexins are evolutionarily conserved cell-surface receptors that serve as the principal signaling route for semaphorins in the nervous system. The semaphorin-plexin signaling axis regulates many aspects of neural development, including axon guidance, dendrite targeting, synapse formation, and circuit plasticity (Alto and Terman, 2017; Kolodkin et al., 1993; 1992; Koropouli and Kolodkin, 2014; Kruger et al., 2005; Luo et al., 1993; Meltzer et al., 2016; Orr et al., 2017; Pascoe et al., 2015; Pasterkamp, 2012; Wang et al., 2017). In the developing Drosophila olfactory circuit, degenerating larval ORNs build up a gradient of secreted Sema2a and Sema2b: high in the ventromedial (VM) and low in the dorsolateral (DL) antennal lobe. Transmembrane Sema1a forms an opposite gradient and functions cell-autonomously as a receptor to instruct PN dendrite targeting along the VM-DL axis (Komiyama et al., 2007; Sweeney et al., 2011). Moreover, this Sema2a/2b gradient also determines ORN axon trajectory choice through their canonical receptor PlexB (Joo et al., 2013).\n\nAt about 18 hr after puparium formation (APF), ORN axons arrive at the ventrolateral corner of the antennal lobe and then bifurcate into the DL and VM trajectories (Jefferis et al., 2004). Within the next 6 hr, ORN axons form two stereotyped bundles circumnavigating the antennal lobe, with a mean DL-to-VM ratio of 0.73 (Figure 1A,C) (Joo et al., 2013). Genetic disruption of Sema2b or PlexB biases ORN axons toward the DL trajectory, which subsequently leads to incorrect glomerular targeting (Joo et al., 2013), highlighting the significance of this preceding step in the precise assembly of the olfactory map. However, a mechanistic view of PlexB\u2019s functions in different steps of olfactory circuit assembly is still lacking. By devising an endogenous and conditional tag of PlexB proteins, we now observe the temporally transitory distribution of PlexB proteins in ORN axons in developing antennal lobes. Consistent with its spatial distribution, the expression level of PlexB controls both early-stage ORN axon trajectory choice and subsequent glomerular selection. Furthermore, the effect of high-level PlexB is antagonized by Sema2b, revealing another new aspect of this multi-functional molecule. We thus uncover how a single guidance molecule, PlexB, connects multiple steps of neural wiring by stage-specific distribution and level-dependent effects.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig1-v2.jpg)\n\n**Figure 1.:** (A) In wild-type pupal brains at 24 hr after puparium formation (24hAPF), ORN axons bifurcate and form the dorsolateral (DL) and ventromedial (VM) trajectories (arrowheads) circumscribing the antennal lobe (AL). ORN axons were labeled by the pan-ORN Peb-GAL4 (Sweeney et al., 2007) driven mtdTomato expression. Antennal lobes were co-stained with a neuropil marker N-cadherin (NCad). (B) In plexB homozygous mutant, ORN axons preferentially choose the DL trajectory. (C) Fluorescence intensity ratios of ORN axon trajectories (DL/VM) in wild-type and plexB\u2013/\u2013 brains at 24hAPF. Geometric means: control, 0.73; plexB\u2013/\u2013, 1.53. (D) Design of the PlexB-GAL4: a T2A-GAL4 cassette (Diao et al., 2015) was inserted into a MiMIC locus in the first coding intron of PlexB. SA, splicing acceptor. Hsp70, terminator sequence of Hsp70. SD, splicing donor (not functional because mRNAs terminate at the Hsp70 terminator). (E) PlexB-GAL4 labels the antennal lobe and nearby brain structures at 24hAPF. The signal from ORNs is not detectable. Dotted circle, antennal lobe (AL). (F) Intersection of PlexB-GAL4 and eyFLP (FLP in ORNs) labels both DL and VM trajectories. (G) DL/VM fluorescence intensity ratios of the pan-ORN GAL4 (Peb-GAL4) and the PlexB-GAL4 intersected with eyFLP. Geometric means: Peb-GAL4, 0.73; PlexB-GAL4\u2229eyFLP, 0.61. (H) Design of the PlexB conditional tag: a cassette including a splicing acceptor (SA), the PlexB coding sequence after the first exon, FRT-FLAG-Stop-FRT-V5-Stop, and the PlexB 3\u2019-UTR sequence, was inserted into a MiMIC locus in the first coding intron of PlexB. (I, J) FLAG staining of 24hAPF brains of PlexB-Tag alone (I) or PlexB-Tag with eyFLP (J). (K, L) V5 staining of 24hAPF brains of PlexB-Tag alone (K) or PlexB-Tag with eyFLP (L). (M) DL/VM fluorescence intensity ratios: ORN axon distributions were calculated based on the Peb-GAL4\u00a0>\u00a0mtdTomato signal (as in Figure 1A); ORN-specific PlexB protein distributions were calculated based on the V5 staining of PlexB-Tag with eyFLP (as in Figure 1L). Geometric means: ORN axon distribution, 0.73; ORN-specific PlexB protein distribution, 1.41. Sample sizes are noted in parentheses. Significance between two groups was determined by an unpaired, two-tailed t-test. ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western blotting of FLAG-tagged PlexB proteins in 24hAPF brains shows the stable expression of PlexB, as well as the expected processing by cleavage. No abnormal degradation was observed. (B, C) PlexB-Tag functions normally as the wild-type PlexB (marked as \u2018+') in ORN axon trajectory formation at 24hAPF. (B) Representative images of each genotype. (C) Fluorescence intensity ratios of ORN axon trajectories (DL/VM). Geometric means: +/+, 0.73; Tag/+, 0.75; +/\u2013, 0.82; Tag/\u2013, 0.84. (D) PlexB-GAL4 labels ORNs (ELAV+) and other cells (ELAV\u2013) in the third segment of an antenna at 24hAPF. Vast majority of ORNs (92.3%; 287 out of 311 counted) express PlexB. NLS-DsRed: DsRed fused to a nuclear localization sequence. Sample sizes are noted in parentheses. Significance between two groups was determined by an unpaired, two-tailed t-test. n.s., not significant. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\n## Results\n\n### Conditional tagging reveals that ORN axons of the DL trajectory possess a higher level of PlexB than the VM axons\n\nPreviously, we observed that ORN axons are significantly shifted to the DL trajectory in plexB mutant brains, leading to a mean DL-to-VM ratio of 1.53 in contrast to 0.73 in wild-type brains (Figure 1B,C) (Joo et al., 2013). Supplying PlexB in ORNs largely restores the normal trajectory pattern in plexB mutant flies, indicating that PlexB functions in ORNs to control the DL versus VM trajectory choice (Joo et al., 2013). However, the expression pattern of PlexB remains unknown because none of the PlexB antibodies could detect the endogenous PlexB signal in developing pupal brains (Joo et al., 2013), setting an obstacle for further dissection of its mechanisms of action in axon trajectory choice.\n\nTo reveal the PlexB expression pattern, we used a transcriptional reporter, PlexB-GAL4 (Xiaojun Xie and Alex Kolodkin, unpublished), in which an artificial exon containing a splicing acceptor, an in-frame T2A-GAL4 cassette, and an Hsp70 terminator (Diao et al., 2015), was inserted into a MiMIC locus (Venken et al., 2011) in the first coding intron of PlexB (Figure 1D). This PlexB-GAL4 thus hijacks the endogenous PlexB splicing program to produce a truncated PlexB fragment encoded by the first exon, and a GAL4 released from the PlexB fragment by T2A-mediated cleavage. Consistently, PlexB-GAL4/plexB\u2013 flies were sick and barely survived to adult stage, like plexB\u2013/\u2013 homozygotes. When crossed to a membrane-bound fluorescent reporter line (UAS-mCD8-GFP), PlexB-GAL4 labeled many structures in developing pupal brains, including the antennal lobe (Figure 1E). At 24hAPF, ORN axons circumscribe, but have not innervated, the antennal lobe, indicating that the signal inside of the antennal lobe was contributed by other types of cells such as PNs, whose dendrites innervate the antennal lobe ahead of ORN axons (Jefferis et al., 2004). To visualize the PlexB expression pattern specifically in ORNs, we employed an intersectional strategy in which the expression of mCD8-GFP was dual-gated by PlexB-GAL4 and eyFLP, a FLP recombinase line only active in ORNs in the olfactory circuit. We observed that PlexB-GAL4 labeled both DL and VM trajectories (Figure 1F). The DL-to-VM fluorescence ratio of PlexB-GAL4 was similar to but slightly lower than that of pan-ORN Peb-GAL4 (Figure 1G). Thus, PlexB is transcribed in both DL and VM ORNs. Indeed, by examining the third segments of antennae that house ORN somas, we found that PlexB-GAL4 labeled\u00a0>\u00a090% of all ORNs (Figure 1\u2014figure supplement 1D).\n\nDiscrepancies between transcription and protein levels due to post-transcriptional and post-translational regulations have been widely reported (Carlyle et al., 2017; Liu et al., 2016), necessitating an investigation of the endogenous protein distribution. Considering our failed attempts to visualize PlexB proteins using multiple custom antibodies, we reasoned that a knock-in protein tag of endogenous PlexB would likely yield a better outcome since monoclonal antibodies with high specificity are available for common tags such as FLAG and V5. As we observed in the PlexB-GAL4 labeling, non-ORN cells also expressed PlexB, precluding our inspection of ORN-specific PlexB signal unless an intersectional strategy was taken. Inspired by the tagged Sema1a (Pecot et al., 2013), we devised a conditional tag of PlexB, hereafter PlexB-Tag, by inserting an artificial exon containing the PlexB coding sequence after the first exon and a conditional tag cassette (FRT-FLAG-Stop-FRT-V5-Stop) into the PlexB MiMIC locus (Figure 1H). To preserve any potential regulation by the 3\u2019-UTR region, the original PlexB 3\u2019-UTR was used instead of a generic terminator. This PlexB-Tag should produce full-length wild-type PlexB proteins tagged with FLAG or V5 epitopes at their C-termini, in the absence or presence of FLP recombinase expression. Western blotting of developing pupal brains confirmed that the tagged proteins were stably expressed without abnormal degradation and were typically processed (Artigiani et al., 2003; Ayoob et al., 2006) (Figure 1\u2014figure supplement 1A). Moreover, we did not observe any defects in ORN axon trajectory formation at 24hAPF in either PlexB-Tag/+ or PlexB-Tag/plexB\u2013 flies, suggesting that the tag does not affect PlexB\u2019s functions (Figure 1\u2014figure supplement 1B,C).\n\nWhen performing immunostaining on PlexB-Tag brains using the routine protocol (Wu and Luo, 2006), we detected faint signal that could not consistently generate high-quality images, suggesting that endogenous PlexB proteins may be present at low levels in pupal brains. We thus adopted a tyramide-based signal amplification strategy to improve the signal-to-noise ratio (see Materials and methods). We first stained brains of PlexB-Tag flies without any FLP recombinase, in which all PlexB proteins should be tagged by FLAG but not V5. Indeed, no V5 signal was detected (Figure 1K), while the anti-FLAG antibody recognized many structures in 24hAPF brains, including the antennal lobe (Figure 1I). Consistent with the PlexB-GAL4 labeling pattern, PlexB proteins were distributed both at the edge and inside of the antennal lobe, likely contributed by ORN axons and PN dendrites, respectively. Notably, the DL edge had stronger FLAG signal than the VM edge (Figure 1I), suggesting a non-uniform distribution of PlexB proteins in ORN axons. To confirm this, we examined flies bearing both the PlexB-Tag and the ORN-specific eyFLP, in which PlexB proteins in ORNs should be tagged by V5 while those expressed by other cells should be tagged by FLAG. V5 staining revealed that DL axons indeed possessed a higher level of PlexB proteins (Figure 1L). In contrast to the ORN axon distribution, which had a DL/VM mean of 0.73, the ORN-specific PlexB protein distribution yielded a DL/VM mean of 1.43 (Figure 1M). Consistently, we observed a uniform distribution of PlexB inside the antennal lobe without the edge signals following FLAG staining (Figure 1J), further indicating that PlexB proteins are enriched in DL ORN axons. The contrasting patterns between PlexB-GAL4 and PlexB-Tag suggest post-transcriptional or post-translational regulations of PlexB levels.\n\n### PlexB overexpression causes VM ORN axons to shift to the DL trajectory, similar to PlexB loss\n\nGiven that PlexB functions in ORN axon trajectory formation (Figure 1A,B) (Joo et al., 2013), the uneven distribution of PlexB proteins in the DL and VM axon bundles raises the question of whether the PlexB protein level regulates trajectory choice. To test this, we overexpressed PlexB in ORNs and observed that the DL axon bundle was thickened at the expense of the VM bundle (Figure 2A,B), shifting the DL/VM ratio to 1.57 (Figure 2C). When the overexpression was intensified by elevating GAL4/UAS-mediated expression at 29\u00b0C, the DL shift of ORN axons became more severe (Figure 2C), indicating that elevating the PlexB level drives ORN axons to the DL trajectory in a scalable manner. We observed the same phenotype \u2013 loss of the VM trajectory \u2013 when PlexB was overexpressed only in two ORN classes labeled by AM29-GAL4 (Figure 4\u2014figure supplement 1A,B), excluding the possibility that the DL shift was an artifact caused by pan-ORN PlexB overexpression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig2-v2.jpg)\n\n**Figure 2.:** (A) ORN axon trajectories in wild-type flies at 24hAPF. (B) Overexpression of PlexB in ORNs shifts ORN axons to the DL trajectory. (C) Fluorescence intensity ratios of ORN axon trajectories (DL/VM). Geometric means: plexB-/-, 1.53; control, 0.71; PlexB OE at 25\u00b0C, 1.57; PlexB OE at 29\u00b0C, 1.98. (D) ORN axons targeting to the DA1 glomerulus were labeled by membrane-tethered GFP driven by Or67d-QF. In wild-type flies, DA1 ORN axons stay only at the DL edge of the antennal lobe (yellow arrowheads). Or67d-QF has non-specific labeling of several non-neuronal cells outside of each antennal lobe. No axon or dendrite was observed from these cells. (E) PlexB RNA interference (RNAi) in ORNs leads to the formation of a VM axon bundle of DA1 ORNs (red arrow). A subset of ectopic VM axons innervates the DA1 glomerulus at a medial entry point (red arrowhead), instead of the normal entry points at the edge of the antennal lobe (yellow arrowheads). (F) Quantification of antennal lobes with the VM axon bundle of DA1 ORNs in wild-type flies and PlexB RNAi flies at different temperatures. Sample sizes are noted in parentheses. Significance among multiple groups in Figure 2C was determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. Significance of the contingency table in Figure 2F was determined by Fisher's exact test. *p<0.05; ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\nNotably, PlexB overexpression phenotypically resembled loss of PlexB, both of which caused a net VM-to-DL shift of ORN axons (Figure 2C). This observation indicates that the formation of the VM trajectory requires not only the presence of PlexB but also a specific level of it. In line with the distribution pattern of PlexB proteins (Figure 1L), these findings suggest that the PlexB level directs the trajectory choice of ORN axons.\n\nIn addition to the defect in trajectory choice, we also observed defasciculation of ORN axons in plexB mutants (Figure 1B and Figure 4\u2014figure supplement 1E,F) (Joo et al., 2013), a phenotype also observed in the development of the embryonic longitudinal tract (Ayoob et al., 2006). However, axon defasciculation was not observed in PlexB-overexpressing ORNs at either the pupal or the adult stage. Thus, the presence of PlexB at a high or low level is sufficient to mediate axon bundling, distinct from its level-dependent effects in trajectory choice.\n\n### Moderate levels of PlexB knockdown cause DL ORN axons to shift to the VM trajectory\n\nTo further investigate the relationship between the PlexB level and ORN axon trajectory choice, we asked if PlexB knockdown drives DL axons to the VM trajectory. However, a genetic driver specific to DL ORNs at 24hAPF is not available. Using a pan-ORN driver for both axon labeling and PlexB knockdown at 24hAPF would lead to two problems: (1) DL and VM axons are not distinguishable from each other; and (2) PlexB knockdown shifts VM axons to the DL trajectory, as in plexB mutants, impeding our observation of the trajectory choice made by DL axons. To unambiguously examine DL axons in PlexB knockdown, we inspected the adult brains and used Or67d-QF to label DA1 ORNs, whose axons predominantly choose the DL trajectory and stay at the DL edge of the adult antennal lobe (yellow arrowheads in Figure 2D). When PlexB was knocked down by RNA interference (RNAi) in ORNs, a subset of DA1 ORN axons innervated the VM half of the antennal lobe (red arrow in Figure 2E) while the DL axon bundle was substantially diminished (yellow arrowheads in Figure 2E), indicating that lowering the PlexB level drives DL axons to the VM trajectory. Despite starting with an incorrect trajectory far from their target glomerulus, a portion of the ectopic VM axons projected back to the DL region and correctly innervated DA1 through a medial entry point (red arrowhead in Figure 2E) instead of the original entry points at the edge (yellow arrowheads in Figure 2D,E).\n\nIn a GAL4/UAS-driven RNAi experiment, phenotypic penetrance typically increases with temperature due to elevated GAL4 activity at higher temperatures. Interestingly, the percentage of antennal lobes with ectopic VM axons dropped when PlexB knockdown was performed at higher temperatures (Figure 2F). Considering the VM-to-DL trajectory shift observed in plexB mutants, it is plausible that a severe knockdown of PlexB (e.g., at 29\u00b0C) resembled the plexB mutant, in which the DL targeting of DA1 axons was caused by the loss of PlexB. Consistently, all DA1 axons stay DL in plexB mutants (Joo et al., 2013). In line with the low level, but not absence, of PlexB proteins in the VM trajectory (Figure 1L), these observations further support the notion that the VM trajectory requires an intermediate PlexB level.\n\n### Differential distribution of PlexB proteins in ORN axons at the stage of glomerular selection\n\nStructural and gene expression dynamics occur throughout the assembly of Drosophila olfactory circuits (Jefferis et al., 2004; Li et al., 2017). At 24hAPF, ORN axons form two trajectories circumscribing the antennal lobe before entering it (Figure 3A). Within the next 24 hr, ORN axons innervate the antennal lobe, arborize in their targeting territories, and search for the dendrites of their PN partners. By 48hAPF, the antennal lobe is significantly enlarged and houses proto-glomeruli where the axons and dendrites of matching ORNs and PNs interact (Figure 3B). We wondered if PlexB continuously impacts ORN axon wiring after instructing trajectory choice. To address this question, we examined PlexB expression at 48hAPF using PlexB-GAL4 and PlexB-Tag.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig3-v2.jpg)\n\n**Figure 3.:** (A) At 24hAPF, ORN axons bifurcate and form the DL and VM trajectories circumscribing the antennal lobe. ORN axons were labeled by the pan-ORN Peb-GAL4 driver line (Sweeney et al., 2007). (B) By 48hAPF, ORN axons have innervated the antennal lobe, selected targeting areas, and formed proto-glomeruli with prospective PN partners. Within 24 hr (24hAPF to 48hAPF), the antennal lobe is significantly enlarged and ORN axons have extensively elaborated terminal arbors. (C) Intersection of PlexB-GAL4 and eyFLP (FLP in ORNs) labels nearly all glomeruli. The generic membrane-anchored mCD8-GFP uniformly labels axons, including the commissure bundle (arrowhead). (D, E) At 48hAPF, ORN axons targeting to several discrete glomeruli express higher levels of PlexB proteins than their neighbors. These PlexB-high glomeruli include VA4, DM1, and a dorsal one whose identity cannot be unambiguously determined at this stage. (D) Maximum z-projection of a confocal stack. Glomerular boundaries are visible while the commissure axon bundle is barely observed (dotted arrowhead). (E) Single confocal sections from anterior to posterior. Colors represent the intensity of V5 signal: red, high; green, intermediate; blue, low. Images are shown as maximum z-projections of confocal stacks, except for Figure 3E, where single confocal sections are shown. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) PlexB-GAL4 labels ORNs (ELAV+) and other cells (ELAV\u2013) in the third segment of an antenna at 48hAPF. Most ORNs (98.7%; 312 out of 316 counted) express PlexB. NLS-DsRed: DsRed fused to a nuclear localization sequence. (B, C) PlexB proteins in ORN axons at 30hAPF and 36hAPF, respectively. At 30hAPF, PlexB is still concentrated in ORN axons as they begin to invade the interior of the antennal lobe. At 36hAPF when ORN axons innervate the antennal lobe, PlexB is already preferentially concentrated in the medial antennal lobe, similar to the distribution at 48hAPF.\n\nWhen intersected with the ORN-specific eyFLP, PlexB-GAL4 labeled ORN axons of almost every glomerulus at 48hAPF (Figure 3C), consistent with the observation that PlexB-GAL4 labeled almost all ORN somas in the antenna (Figure 3C, Figure 3\u2014figure supplement 1A). However, PlexB proteins were not uniformly distributed in all ORN axons (Figure 3D), further indicating the presence of post-transcriptional or post-translational regulations of PlexB expression. Among ORN axons, the ones targeting to the medial glomeruli were the main contributors of PlexB proteins at 48hAPF (Figure 3D), producing a PlexB distribution pattern (medial high and lateral low) distinct from that of 24hAPF (DL high and VM low) through a rapid transition between 30 hr and 36hAPF (Figure 3\u2014figure supplement 1B,C). Notably, several discrete glomeruli had significantly higher ORN PlexB levels than their neighbors (Figure 3E), including VA4, DM1, and another dorsal glomerulus whose identity could not be unambiguously determined by its position and morphology at 48hAPF.\n\nIn contrast to concentration in the axons at 24hAPF (Figure 1L), the ORN-specific PlexB proteins were highly enriched in the neuropil at 48hAPF (Figure 3D), where ORN axons meet PN dendrites for partner selection. As shown in Figure 3D, the glomerular boundaries were visible while the commissure axon bundle was barely detectable (dotted arrowhead in Figure 3D), in contrast to the uniform axonal labeling by the generic membrane-anchored mCD8-GFP (Figure 3C). Thus, besides the global change of expression pattern, the subcellular localization of PlexB proteins is also altered from 24hAPF to 48hAPF.\n\nThis differential and neuropil-enriched distribution of PlexB proteins at the stage of ORN glomerular selection prompted us to investigate if the PlexB level regulates glomerular targeting in addition to early-stage trajectory choice.\n\n### PlexB protein level regulates glomerular selection independently of trajectory choice\n\nExamining ORN glomerular targeting following manipulation of the PlexB level not only allows us to test if the PlexB level regulates glomerular selection, but also provides a means to answer a long-standing question: how does a preceding developmental event (i.e., trajectory choice at 24hAPF) affect a subsequent process (i.e., glomerular selection at 48hAPF) in the assembly of a circuit? To this end, we characterized the glomerular targeting, while manipulating the PlexB level, of two sets of ORNs: (1) Or92a+\u00a0ORNs, whose axons normally choose the VM trajectory and innervate the VA2 glomerulus (Figure 4A); and (2) AM29+\u00a0ORNs, which include two classes of ORNs targeting to the DL4 and DM6 glomeruli via the DL and VM trajectories, respectively (Figure 4\u2014figure supplement 1A). Although AM29-GAL4 provides specific access to two ORN classes, its expression is too late and weak to drive RNAi to reduce the PlexB level, impelling us to use the plexB mutant instead.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig4-v2.jpg)\n\n**Figure 4.:** (A) ORN axons targeting to the VA2 glomerulus were labeled by membrane-localized rCD2 driven by an Or92a promoter. Or92a+\u00a0ORN axons predominantly choose the VM trajectory (yellow arrowhead). (B) Some Or92a+\u00a0ORN axons choose the DL trajectory (red arrowhead) in the PlexB overexpression flies. In the shown antennal lobe, Or92a+\u00a0ORN axons targeting to the VA4 glomerulus are also observed (dotted red circle). (C) PlexB overexpression causes Or92a+\u00a0ORN axons to ectopically target to dorsal glomeruli (dotted red circle), mainly DM1 (67% of dorsal mis-targeting cases). (D) PlexB overexpression causes Or92a+\u00a0ORN axons to ectopically innervate ventral glomeruli (dotted red circle), mainly VA4 (88% of ventral mis-targeting cases). (E) Some Or92a+\u00a0ORN axons choose the DL trajectory (red arrowhead) when PlexB is knocked down by RNAi in ORNs. (F) PlexB knockdown causes Or92a+\u00a0ORN axons to incorrectly target to dorsolateral glomeruli (dotted red circle), distinct from the stereotyped DM1 mis-targeting in the PlexB overexpression flies. (G) In a few PlexB knockdown flies, local ectopic targeting near VA2 was observed (dotted red circle). However, mis-targeting to VA4, a predominant phenotype in PlexB overexpression, was not observed. Antennal lobe counts of each phenotype and sample sizes are noted in the pie charts. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) ORN axons innervating the DL4 and DM6 glomeruli were labeled by membrane-tethered GFP driven by AM29-GAL4. DL4 and DM6 ORN axons choose the DL and VM trajectories, respectively (yellow arrowheads). (B) Overexpression of PlexB by AM29-GAL4 causes the loss of the VM trajectory (dotted yellow arrowhead) and the loss of DM6 glomerular targeting (dotted yellow circle). (C) PlexB overexpression causes ectopic targeting to dorsal glomeruli (dotted red circle), mainly DM1 (56% of mis-targeting cases). (D) In more than half of the antennal lobes in the PlexB overexpression flies, DM6 glomerular targeting disappears (dotted yellow circle) although VM axons still exist and pass by the vicinity of the putative DM6 area (yellow arrowhead). (E) VM axons disappear (dotted yellow arrowhead) in about 1/3 of plexB mutant brains. Loss of DM6 glomerular targeting (dotted yellow circle), as well as ectopic glomerular targeting (dotted red circles), was also observed in this example antennal lobe. (F) In plexB mutants, AM29+\u00a0ORN axons ectopically target to DM3 and other glomeruli (dotted red circles; DM3: 51% of mis-targeting cases) but not DM1. (G) plexB mutants lose DM6 glomerular innervation (dotted yellow circle), even when VM axons are present and pass by the vicinity of DM6 (yellow arrowhead). Ectopic targeting to DM3 is also observed in the shown antennal lobe (dotted red circle). Antennal lobe counts of each phenotype and sample sizes are noted in the pie charts. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\nConsistent with the previous observations at 24hAPF (Figure 2C), both overexpression and loss of PlexB drove axons of Or92a+\u00a0ORNs to the DL side (Figure 4B,E). In the case of AM29+\u00a0ORNs, the VM axon bundle disappeared in both conditions and likely merged with the original DL track (Figure 4\u2014figure supplement 1B,E). As a consequence, most ectopic axons innervated ectopic glomeruli in the dorsal half of the antennal lobe (Figure 4C,F and Figure 4\u2014figure supplement 1C,F). The preceding step of trajectory choice thus largely constrained the possibilities of subsequent glomerular selection by dividing ORN axons into two spatially separated populations. However, we also observed a small fraction of ectopic axons that ultimately projected back to the VM area (red arrowheads in Figure 4B,E), suggesting that ORN axon termini can explore a large area during glomerular selection to partially overcome a prior error in trajectory choice.\n\nTo test whether PlexB plays a role in target selection, we first examined glomerular choice in ectopic territory in the dorsolateral half of the antennal lobe. In contrast to their similar effects on trajectory choice, overexpression and loss of PlexB led to distinct preferences in glomerular selection. In the PlexB overexpression flies, Or92a+ ORNs mainly targeted to the PlexB-high DM1 glomerulus (Figure 4C), while they only chose lateral glomeruli but not DM1 in PlexB knockdown flies (Figure 4F). Similarly, AM29+ ORNs mis-targeted to DM1 when the PlexB level was elevated (Figure 4\u2014figure supplement 1C), but mis-targeted to DM3 in plexB mutants (Figure 4\u2014figure supplement 1E,F,G). Thus, the PlexB level biases glomerular selection when ORNs are forced to ectopically innervate due to incorrect trajectory.\n\nWe then asked if the PlexB level also regulates glomerular targeting of ORNs near their original territories. The time window between trajectory choice and glomerular selection was too short to allow a robust genetic switch, such as temperature-controlled GAL80, to manipulate the level of PlexB. Because overexpression or loss of PlexB only shifted a fraction of ORN axons to the DL trajectory, most antennal lobes still had axons in the correct VM trajectory; this provided a means to probe the trajectory-independent function of PlexB. We found that PlexB overexpression led to stereotyped mis-targeting of Or92a+ ORNs to the nearby, PlexB-high VA4 glomerulus, along with the loss of VA2 innervation (Figure 4B,D). PlexB knockdown also caused aberrant targeting around the VA2 area in a small fraction of antennal lobes (Figure 4G), but no innervation to VA4 was observed in the 69 antennal lobes examined. In more than half of the antennal lobes of PlexB overexpression flies, the AM29+ ORNs had a normal VM axon track but lost DM6 innervation (Figure 4\u2014figure supplement 1D), which was also observed in a few plexB mutant flies (Figure 4\u2014figure supplement 1G).\n\nNotably, the distinct targeting preferences caused by overexpression or loss of PlexB match the endogenous PlexB distribution. Elevating the PlexB level predominantly drove axons to VA4 or DM1, both of which exhibited high endogenous PlexB levels (Figure 3E). PlexB knockdown and mutants caused aberrant targeting to DM3 or the lateral glomeruli, whose PlexB levels were low (Figure 3D,E), but not to the PlexB-high glomeruli such as VA4. Thus, independently of its role in trajectory choice, the PlexB level also regulates subsequent glomerular selection in the assembly of the olfactory circuit.\n\n### Sema2b antagonizes the effect of high-level PlexB\n\nWe previously observed that Sema2b, the canonical ligand of PlexB, is highly enriched in the VM bundle of ORN axons (Figure 5\u2014figure supplement 1A) (Joo et al., 2013), while PlexB proteins are more abundant in DL axons (Figure 1L). Moreover, loss of Sema2b causes ORN axons to shift to the DL trajectory (Figure 5H) (Joo et al., 2013), similar to PlexB overexpression (Figure 2B). Along with the opposing distribution, this phenotypic similarity between loss of Sema2b and PlexB overexpression suggests a potentially antagonistic relationship between Sema2b and PlexB in instructing ORN trajectory choice. We therefore tested genetic interactions between Sema2b and PlexB.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig5-v2.jpg)\n\n**Figure 5.:** (A) ORN axon trajectories of wild-type flies at 24hAPF. (B) sema2b heterozygous flies have normal ORN axon trajectories. (C) PlexB overexpression shifts ORN axons to the DL trajectory. (D) sema2b heterozygosity (sema2b\u2013/+) enhances the DL shift of ORN axons caused by PlexB overexpression. (E) Fluorescence intensity ratios of ORN axon trajectories (DL/VM). Geometric means: +/+, 0.73; sema2b\u2013/+, 0.76; PlexB OE in +/+, 1.75; PlexB OE in sema2b\u2013/+, 3.10. (F) ORN axon trajectories of wild-type flies at 24hAPF. (G) PlexB knockdown by RNA interference (RNAi) in ORNs slightly shifts ORN axons to the DL trajectory, phenotypically resembling plexB mutants but with less severity. (H) In sema2b mutant flies, ORN axons preferentially choose the DL trajectory at 24hAPF. (I) PlexB RNAi in ORNs suppresses the DL shift of ORN axons caused by the loss of Sema2b. (J) Fluorescence intensity ratios of ORN axon trajectories (DL/VM). Geometric means: control, 0.73; PlexB RNAi, 1.01; sema2b\u2013/\u2013, 1.83; PlexB RNAi in sema2b\u2013/\u2013, 1.11. (K, L, M) sema2b heterozygosity (sema2b\u2013/+) enhances both incorrect axon trajectory choice and ectopic glomerular targeting caused by PlexB overexpression. Each phenotype is described in detail in Figure 4. (K) VM-to-DL shift of ORN axons, as in Figure 4B; (L) dorsal ectopic targeting, as in Figure 4C; (M) ventral ectopic targeting, as in Figure 4D. Sample sizes are noted in parentheses. Antennal lobe counts of each phenotype and sample sizes are noted in the pie charts. Significance among multiple groups was determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. n.s., not significant; *p<0.05; ****p<0.0001. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) At 24hAPF, Sema2b proteins are enriched in the VM ORN axon bundle. (B, C, D) sema2b heterozygosity (sema2b\u2013/+) enhances both incorrect axon trajectory choice and ectopic glomerular targeting caused by PlexB overexpression in AM29+\u00a0ORNs. Each phenotype is described in detail in Figure 4\u2014figure supplement 1. (B) loss of the VM trajectory, as in Figure 4\u2014figure supplement 1B; (C) ectopic glomerular targeting, as in Figure 4\u2014figure supplement 1C; (D) loss of the glomerular targeting to DM6, as in Figure 4\u2014figure supplement 1D. Antennal lobe counts of each phenotype and sample sizes are noted in the pie charts. Images are shown as maximum z-projections of confocal stacks. Scale bars, 10 \u03bcm. Axes, D (dorsal), L (lateral).\n\nUnlike the homozygotes of the sema2b mutant (Figure 5H), heterozygous flies had normal ORN axon trajectories, indistinguishable from those of wild-type flies (Figure 5A,B,E). However, the heterozygosity of sema2b significantly promoted the VM-to-DL axon shift caused by elevating the PlexB level (Figure 5C,D,E). Although PlexB overexpression drove axons to the DL trajectory, the VM bundle was visible in every antennal lobe in a wild-type background (Figure 5C). In a subset of sema2b heterozygotes, however, elevating the PlexB level in ORNs almost completely eliminated the VM trajectory, leading to a single, thick DL bundle (Figure 5D). In line with this observation at 24hAPF, sema2b heterozygosity also enhanced the VM-to-DL shift of Or92a+\u00a0ORN axons caused by PlexB overexpression when examined at the adult stage (Figure 5K and Figure 5\u2014figure supplement 1B). Thus, loss of one-copy of the Sema2b gene boosts the effect of PlexB overexpression, suggesting that Sema2b partially \u2018blocks\u2019 the effect of high-level PlexB in wild-type flies. Moreover, the phenotypic expression of sema2b heterozygosity relied on an elevated PlexB level, suggesting that Sema2b controls ORN axon trajectory choice partly by modulating the level-dependent effects of PlexB.\n\nTo further delineate the interactions of Sema2b and PlexB, we tested if changing the PlexB level modifies the VM-to-DL trajectory shift in sema2b mutants (Figure 5H). Examining trajectory choice when elevating the PlexB level in sema2b homozygotes would not be informative since they individually lead to the same consequence \u2013 VM-to-DL shift ORN axons and loss of one copy of the Sema2b gene has shown phenotypic enhancement to PlexB overexpression. We thus tested if lowering the PlexB level alters the trajectory phenotype in sema2b mutants. PlexB knockdown in a wild-type background caused a slight DL shift of ORN axons (Figure 5F,G,J), similar to the loss of PlexB but to a lesser extent. While loss of Sema2b also led to a DL shift of ORN axons, the combination of PlexB knockdown and sema2b mutant did not drive more axons to the DL bundle; rather, it suppressed the sema2b mutant-induced DL shift (Figure 5H,I), yielding a DL/VM mean of 1.11 in contrast to 1.83 of sema2b mutants (Figure 5J). Thus, lowering the PlexB level can, at least partially, substitute the function of Sema2b in ORN trajectory choice, in line with the notion that Sema2b antagonizes high-level PlexB.\n\nIn addition to regulating ORN trajectory choice at 24hAPF, specific levels of PlexB are required for subsequent glomerular selection. By examining the adult glomerular targeting of Or92a+ and AM29+ ORNs, we observed more antennal lobes with incorrect glomerular innervation when overexpressing PlexB in sema2b heterozygotes (Figure 5L,M and Figure 5\u2014figure supplement 1C,D), suggesting that Sema2b also antagonizes the effect of high-level PlexB in glomerular selection.\n\n## Discussion\n\nHere, we show that PlexB proteins are distributed at different levels in developing ORN axons, and these patterns change dynamically during development (Figure 1 and Figure 3). Accordingly, the level of PlexB consecutively controls two critical steps in the assembly of the olfactory map \u2013 ORN axon trajectory choice and glomerular selection (Figure 2 and Figure 4). Sema2b, a partner of PlexB, antagonizes the effect of high-level PlexB to further ensure the wiring fidelity (Figure 5). Thus, a single guidance molecule, PlexB, acts in a multi-step developmental process by stage-specific expression and level-dependent effects (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39088/elife-39088-fig6-v2.jpg)\n\n**Figure 6.:** (A) At 24hAPF, ORN axons of the DL trajectory express a higher level of PlexB proteins, compared to the VM axons. Sema2a and Sema2b proteins form a descending gradient from VM to DL in the antennal lobe (Joo et al., 2013). Within the next 24 hr, ORN axons enter the antennal lobe and form proto-glomeruli with PN dendrites. At 48hAPF, ORN axons innervating several discrete glomeruli express PlexB proteins at high levels, exhibiting a different distribution pattern from that of 24hAPF. (B) ORN axons without PlexB (as in the plexB mutant) or with high-level PlexB (as the wild-type DL axons or the VM axons in PlexB overexpression) preferentially choose the low-Sema2a/2b area (DL). Only ORN axons with low-level PlexB (as the wild-type VM axons or the DL axons in PlexB knockdown) target to the high-Sema2a/2b area (VM). Although it is unknown how PlexB levels affect its signaling (black box), Sema2b antagonizes the activity of high-level PlexB. (C) ORN axons destined to the VM trajectory express low levels of PlexB. Additionally, Sema2b is enriched in the VM bundle to antagonize the signal of high-level PlexB. These two mechanisms thus ensure an appropriate PlexB signal for the formation of the VM trajectory. (D) ORN glomerular selection is affected by, but also can be independent of, the preceding trajectory choice. Although ectopic glomerular targeting frequently occurs when the trajectory goes wrong (D2), a portion of ORN axons can overcome the initial trajectory choice and return to the roughly correct area (D3). Among ORN axons achieving correct trajectory choice, many innervate nearby incorrect glomeruli if the PlexB level is disturbed (D5).\n\n### PlexB expression and protein distribution in developing olfactory circuits\n\nSpatially and temporally appropriate distribution of a protein is a prerequisite for its normal function, particularly in developmental processes with structural and gene expression changes. Thus, uncovering the expression pattern of a protein at high spatiotemporal resolution provides essential information for dissecting its functions. Moreover, it is vital to resolve the protein distribution in a genetically defined cell population, as different types of cells, especially in the nervous system, are commonly intermingled in vivo, potentially obscuring the observation and interpretation. To reveal the distribution of endogenous PlexB proteins specifically in ORN axons, we devised a FLP-gated conditional tagging strategy (Figure 1H) that preserved most, if not all, endogenous regulatory components of the PlexB gene. Indeed, this cell-type specific tagging increased the resolution (comparison between Figure 1I and L) and revealed that PlexB proteins are more enriched in DL axons compared to VM axons at 24hAPF while expressed at high levels in several discrete glomeruli at 48hAPF (Figure 6A), demonstrating a rapid transition of PlexB protein distribution within 24 hr (Figure 1L, Figure 3\u2014figure supplement 1B,C, and Figure 3D). We further found that the PlexB level controls ORN axon trajectory choice and glomerular selection at these two stages, respectively. Thus, through rapid reshaping of its distribution, PlexB instructs two consecutive developmental steps.\n\nWe also examined a transcriptional reporter of PlexB (Figure 1D) and observed that it labeled most ORNs at both 24hAPF and 48hAPF (Figure 1F and Figure 3C). Although the perdurance of mCD8-GFP may raise the concern of whether it can faithfully report the dynamics of PlexB transcription, the massive expansion of ORN axonal surface area in the developing antennal lobe (Figure 3A,B) likely dilutes mCD8-GFP carried over from earlier stages; thus the signal we detected was likely contributed mainly by recently translated mCD8-GFP proteins. Compared to the broad labeling of PlexB-GAL4, the more restricted distribution of PlexB proteins suggests that the expression of PlexB is subject to post-transcriptional and/or post-translational regulations. In contrast to the long timescales underlying transcriptional regulations, the molecular mechanisms directly controlling RNA or protein dynamics enable faster turnover, which is better suited for the rapid reshaping of PlexB protein distribution in developing olfactory circuits. The exact mechanism by which PlexB levels are post-transcriptionally regulated requires future investigations.\n\n### Level-dependent effects of PlexB\n\nOur data indicate that just the presence of PlexB is insufficient for the precise assembly of the Drosophila olfactory map. Analysis of ORN axon trajectory choice (Figure 2) and glomerular selection (Figure 4) revealed that each class of ORNs requires a specific level of PlexB at each developmental step for appropriate wiring. We further note that PlexB overexpression (Hu et al., 2001) and plexB mutant (Ayoob et al., 2006) cause similar innervation defects in embryonic ISNb motor axons, indicating that specific PlexB levels may be commonly required in the development of the nervous system.\n\nIn the formation of ORN axon trajectories, VM axons need a specific level of PlexB to make the correct choice, as both overexpression and loss of PlexB shifted them to the DL trajectory. We previously found that the canonical ligands of PlexB, Sema2a and Sema2b, establish a VM-high, DL-low gradient in the antennal lobe at 24hAPF (Figure 6A) that specifies ORN axon trajectory choice (Joo et al., 2013). Thus, axons with a high level of PlexB avoid regions with high levels of Sema2a/2b, whereas the PlexB-low axons appear to be attracted to regions with high levels of Sema2a/2b (Figure 6B). This observation suggests that different PlexB levels induce divergent behaviors of growth cones in response to external semaphorin cues, raising the question on the molecular basis of this level-dependent PlexB signaling (black box in Figure 6B). Although Rac and RhoA have been shown to mediate PlexB signaling in vivo (Hu et al., 2001), a direct and real-time reporter of PlexB\u2019s molecular activity has not been developed. We anticipate that such a PlexB signal reporter, along with a better biophysical understanding of Plexins (Pascoe et al., 2015; Seiradake et al., 2016; Siebold and Jones, 2013), could reveal the level-dependent signaling of PlexB in the future. Furthermore, live imaging of axon dynamics during circuit assembly (Langen et al., 2015; \u00d6zel et al., 2015) and genetic toolkits allowing mosaic analysis of fourth-chromosome genes of Drosophila (e.g., PlexB) will uncover how level-dependent PlexB signal controls the behavior of single axons, complementing to our current analyses of bulk axons in fixed tissues.\n\nIn addition to its canonical role as a secreted guidance molecule, we discovered that Sema2b antagonizes the activity of high-level PlexB in developing olfactory circuits (Figure 5). During ORN axon trajectory choice, Sema2b proteins are highly enriched in the VM bundle. Our genetic analysis identified two mechanisms ensuring the correct formation of the VM trajectory: (1) ORN axons destined to the VM bundle express lower levels of PlexB; and (2) Sema2b in VM axons antagonizes the activity of high-level PlexB (Figure 6C). One plausible mechanism underlying this antagonistic effect is that co-expression of Sema2b desensitizes most PlexB receptors in VM axons, as observed in other Plexins and GPCRs (Gainetdinov et al., 2004; Piper et al., 2005). This antagonistic effect may contribute to our previous observation that Sema2b, a secreted protein, can play a cell-autonomous function in ORN trajectory choice (Joo et al., 2013). Exploring this possibility further necessitates an in vitro PlexB signaling assay complementary to the in vivo developmental readout, like the growth cone collapsing test used to study Sema3A and its receptors (Luo et al., 1993), to dissect the molecular activity of PlexB.\n\n### Stepwise assembly of the olfactory map\n\nBuilding a sophisticated, error-free neural network requires many temporally coordinated steps. To elucidate how a preceding event affects a subsequent process, we examined two consecutive steps in ORN axon guidance \u2013 trajectory choice and glomerular targeting, both of which utilize PlexB levels to instruct the wiring process (Figure 6D). In a wild-type fly, the early trajectory choice guides axons to the proximity of their destined targeting areas and thus facilitates the next step, glomerular selection (Figure 6D1). When trajectory choice is disrupted, as when PlexB is overexpressed, most axons aberrantly arborize in the territory of the altered trajectory, indicating that the previous step constrains the possibilities of following selections (Figure 6D2). However, in a few cases, axons initially on the wrong track are able to project back to the roughly correct targeting area, indicating that axons also explore a wide area for glomerular selection (Figure 6D3). Moreover, correct trajectory choice does not necessarily lead to appropriate glomerular innervation in flies with altered PlexB levels, as glomerular choice is also regulated by the level of PlexB (Figure 6D4,D5).\n\nBy dividing the antennal lobe into two halves in the first step, this stepwise wiring strategy reduces the possibilities and thus the complexity of subsequent glomerular selection, endowing higher robustness to the developmental program (Hong and Luo, 2014). Importantly, this strategy also allows the reuse of a molecule, such as PlexB, for distinct purposes in multiple steps to maximize its capacity. Coupling this stepwise wiring strategy with the functional versatility of individual molecules thus contributes to solving the conflict between the limited number of guidance molecules and the complexity of the neural network.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pebbled-GAL4</td>\n      <td>doi:10.1016/j.neuron.2006.12.022</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>AM29-GAL4</td>\n      <td>doi:10.1038/nn1832</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Or67d-QF</td>\n      <td>doi:10.1016/j.neuron.2013.06.014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Or92a-rCD2</td>\n      <td>this study</td>\n      <td></td>\n      <td>Or92a promoter fused to a rat CD2 coding sequence in a P-element vector</td>\n    </tr>\n    <tr>\n      <td>eyFLP3.5</td>\n      <td>doi:10.1016/j.neuron.2005.09.019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-mtdTomato</td>\n      <td>doi:10.1016/j.cell.2010.02.025</td>\n      <td>RRID:BDSC_30124</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-mCD8-GFP</td>\n      <td>doi:10.1016/S0896-6273 (00)80701\u20131</td>\n      <td>RRID:BDSC_5130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-FRT-Stop-FRT-mCD8-GFP</td>\n      <td>doi:10.1038/nn.2442</td>\n      <td>RRID:BDSC_30125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>QUAS-mCD8-GFP</td>\n      <td>doi:10.1016/j.cell.2010.02.025</td>\n      <td>RRID:BDSC_30002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-RedStinger</td>\n      <td>doi:10.2144/04363ST03</td>\n      <td>RRID:BDSC_8547</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>plexBKG00878</td>\n      <td>doi:10.1534/genetics.104.026427</td>\n      <td>RRID:BDSC_14579</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PlexBMI15559</td>\n      <td>doi:10.1038/nmeth.1662</td>\n      <td>RRID:BDSC_61730</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PlexB-Tag</td>\n      <td>this study</td>\n      <td></td>\n      <td>Endogenous conditional tagging of PlexB</td>\n    </tr>\n    <tr>\n      <td>PlexB-GAL4</td>\n      <td>Xiaojun Xie and Alex Kolodkin, unpublished</td>\n      <td></td>\n      <td>Coding intron MiMIC-T2A-GAL4 of PlexB</td>\n    </tr>\n    <tr>\n      <td>UAS-PlexB-RNAi</td>\n      <td>doi:10.1038/nmeth.1592</td>\n      <td>RRID:BDSC_57813</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-PlexB</td>\n      <td>doi:10.1016/j.neuron.2013.03.022</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>sema2bf02042</td>\n      <td>doi:10.1038/ng1314</td>\n      <td>RRID:BDSC_18505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-Sema2b</td>\n      <td>doi:10.1016/j.neuron.2011.02.050</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>rat anti-Ncad</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>RRID:AB_528121</td>\n      <td>1:40 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>mouse anti-ELAV</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>RRID:AB_528217</td>\n      <td>1:40 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>chicken anti-GFP</td>\n      <td>Aves Labs</td>\n      <td>RRID:AB_10000240</td>\n      <td>1:1000 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>rabbit anti-DsRed</td>\n      <td>Clontech</td>\n      <td>RRID:AB_10013483</td>\n      <td>1:200 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>mouse anti-rat CD2</td>\n      <td>Bio-Rad</td>\n      <td>RRID:AB_321238</td>\n      <td>1:200 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>mouse anit-FLAG</td>\n      <td>Sigma-Aldrich</td>\n      <td>RRID:AB_439685</td>\n      <td>1:100 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>mouse anti-V5</td>\n      <td>Thermo Fisher</td>\n      <td>RRID:AB_2556564</td>\n      <td>1:100 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>rabbit anti-Sema2b</td>\n      <td>doi:10.1016/j.neuron.2011.09.026</td>\n      <td></td>\n      <td>1:500 in 5% normal donkey serum</td>\n    </tr>\n    <tr>\n      <td>ZEN</td>\n      <td>Carl Zeiss</td>\n      <td>RRID:SCR_013672</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Photoshop</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_014199</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila stocks and genotypes\n\nFlies were raised on standard cornmeal medium with a 12 hr/12 hr light cycle at 25\u00b0C, unless otherwise specified (e.g., 29\u00b0C for enhanced transgenic expression). The following lines were used: Pebbled-GAL4 (Peb-GAL4, all ORNs) (Sweeney et al., 2007), AM29-GAL4 (DL4 and DM6 ORNs) (Endo et al., 2007), Or67d-QF (Liang et al., 2013), Or92a-rCD2 (this study), eyFLP3.5 (FLP in ORNs) (Chotard et al., 2005), UAS-mtdTomato (Potter et al., 2010), UAS-mCD8-GFP (Lee and Luo, 1999), UAS-FRT-Stop-FRT-mCD8-GFP (Hong et al., 2009), QUAS-mCD8-GFP (Potter et al., 2010), UAS-RedStinger (NLS-DsRed) (Barolo et al., 2004), plexBKG00878 (PlexB mutant, noted as plexB-) (Ayoob et al., 2006; Bellen et al., 2004), PlexBMI15559 (Venken et al., 2011), PlexB-Tag (this study), PlexB-GAL4 (Xiaojun Xie and Alex Kolodkin, unpublished), UAS-PlexB-RNAi (TRiP.HMJ21821) (Ni et al., 2011), UAS-PlexB (Joo et al., 2013), sema2bf02042 (Sema2b mutant, noted as sema2b\u2013) (Thibault et al., 2004; Wu et al., 2011), UAS-Sema2b (Wu et al., 2011). Complete genotypes of figure panels are described in Supplementary file 1.\n\n### Generation of PlexB-Tag\n\nThe FRT-3xFLAG-6xStop-FRT-1xV5-6xStop cassette (noted as Conditional Tag or FRT-FLAG-Stop-FRT-V5-Stop in Figure 1H) was synthesized as two gBlock fragments (Integrated DNA Technologies, Coralville, IA, USA) and assembled into the pBS-KS-attB2-SA(0)-T2A-GAL4-Hsp70 vector (Diao et al., 2015) to replace the original phase spacer and the T2A-GAL4 coding region by NEBuilder HiFi DNA assembly master mix (New England Biolabs, Ipswich, MA, USA). The PlexB coding sequence after the first exon was amplified from PlexB full-length cDNA (Joo et al., 2013) by Q5 hot-start high-fidelity DNA polymerase (New England Biolabs, Ipswich, MA, USA) and inserted into pBS-KS-attB2-SA-Conditional Tag-Hsp70 in front of the Conditional Tag sequence. The three prime untranslated region (3\u2019-UTR) of PlexB was amplified from the w1118 genomic DNA, extracted by DNeasy blood and tissue kit (QIAGEN, Hilden, Germany), to replace the original Hsp70 terminator in the vector pBS-KS-attB2-SA-PlexB cDNA after Exon 1-Conditional Tag-Hsp70. The final vector pBS-KS-attB2-SA-PlexB cDNA after Exon 1-Conditional Tag-PlexB 3\u2019-UTR was transformed into NEB stable competent E. coli (New England Biolabs, Ipswich, MA, USA), extracted by QIAprep spin miniprep kit (QIAGEN, Hilden, Germany), and verified by full-length sequencing (Elim Biopharmaceuticals, Hayward, CA, USA). This final vector was co-injected with a phiC31 plasmid into PlexBMI15559 embryos. All yellow\u2013 progenies were individually balanced by P{ActGFP}unc-13GJ/In(4)ciD, ciD, panciD (#9549, Bloomington Drosophila Stock Center, Bloomington, IN, USA). The genomic sequence flanking the MiMIC cassette was sequenced to confirm the insertion and its orientation.\n\n### Generation of Or92a-rCD2\n\nThe promoter sequence of the Or92a gene (Fishilevich and Vosshall, 2005) was amplified from the w1118 genomic DNA by Phusion high-fidelity DNA polymerase (New England Biolabs, Ipswich, MA, USA) and inserted upstream of the rat CD2 coding sequence in a P-element vector (Borkowski et al., 1995). After verified by sequencing, this construct was co-injected with a \u03942\u20133 helper plasmid into w1118 embryos. All white+ progenies were individually balanced. One inserted into the second chromosome was verified and used in this study.\n\n### Immunocytochemistry\n\nDissection and immunostaining (except the staining of PlexB-Tag, see below for details) of fly brains and antennae were performed according to previously described methods (Li et al., 2016; Wu et al., 2017; Wu and Luo, 2006). Briefly, the brains/antennae were dissected in PBS (phosphate buffered saline; Thermo Fisher, Waltham, MA, USA) and then fixed in 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) in PBS with 0.015% Triton X-100 (Sigma-Aldrich, St. Louis, MO, USA) for 20 min on a nutator at room temperature. Fixed brains/antennae were washed with PBST (0.3% Triton X-100 in PBS) four times, each time nutating for 20 min. The brains/antennae were then blocked in 5% normal donkey serum (Jackson ImmunoResearch, West Grove, PA, USA) in PBST for 1 hr at room temperature or overnight at 4\u00b0C on a nutator. Primary antibodies were diluted in the blocking solution and incubated with brains/antennae for 36\u201348 hr on a 4\u00b0C nutator. After washed with PBST four times, each time nutating for 20 min, brains/antennae were incubated with secondary antibodies diluted in the blocking solution and nutated in the dark for 36\u201348 hr at 4\u00b0C. Brains/antennae were then washed again with PBST four times, each time nutating for 20 min. Immunostained brains/antennae were mounted with SlowFade antifade reagent (Thermo Fisher, Waltham, MA, USA) and stored at 4\u00b0C before imaging.\n\nFor the staining of PlexB-Tag, the routine protocol described above failed to detect FLAG or V5 signal from the background, likely due to the low expression of endogenous PlexB proteins in vivo. Alexa 488 Tyramide SuperBoost kit (Thermo Fisher, Waltham, MA, USA) was used to amplify the immunostaining signal by following the manufacture\u2019s protocol. Briefly, the brains were dissected, fixed, and washed as described above. After rinsed with PBS twice, the brains were incubated with 3% hydrogen peroxide for 1 hr at room temperature, to quench the activity of endogenous peroxidases and then washed with PBS three times. After blocked in 10% goat serum for 1 hr at room temperature, the brains were nutated in primary antibodies diluted in 10% goat serum for 36\u201348 hr at 4\u00b0C. After washed with PBST four times, each time nutating for 20 min, the brains were incubated with the poly-HRP-conjugated secondary antibody provided in the kit and nutated for 36\u201348 hr at 4\u00b0C. Then, the brains were washed with PBST four times, each time nutating for 20 min, followed by two rounds of fast rinsing in PBS. The tyramide working solution and the quenching buffer were made freshly according to the kit\u2019s recipe. The brains were incubated with the tyramide solution for 5 min at room temperature and immediately washed with the quenching buffer three times, followed by four rounds of thorough washing with PBST. Stained brains were mounted with SlowFade antifade reagent (Thermo Fisher, Waltham, MA, USA) and stored at 4\u00b0C before imaging.\n\nPrimary antibodies used in this study include: rat anti-NCad (1:40; DN-Ex#8, Developmental Studies Hybridoma Bank, Iowa City, IA, USA), mouse anti-ELAV (1:40; 9F8A9, Developmental Studies Hybridoma Bank, Iowa City, IA, USA), chicken anti-GFP (1:1000; GFP-1020, Aves Labs, Tigard, OR, USA), rabbit anti-DsRed (1:200; 632496, Clontech, Mountain View, CA, USA), mouse anti-rat CD2 (1:200; OX-34, Bio-Rad, Hercules, CA, USA), mouse anti-FLAG (1:100; M2, Sigma-Aldrich, St. Louis, MO, USA), mouse anti-V5 (1:100; R960-25, Thermo Fisher, Waltham, MA, USA), and rabbit anti-Sema2b (1:500; Sweeney et al., 2011). Donkey secondary antibodies conjugated to Alexa Fluor 405/488/568/647 or FITC (Jackson ImmunoResearch, West Grove, PA, USA or Thermo Fisher, Waltham, MA, USA) were used at 1:250.\n\n### Image acquisition, processing, and quantification\n\nImages were acquired by a Zeiss LSM 780 laser-scanning confocal microscope (Carl Zeiss, Oberkochen, Germany), with a 40x/1.4 Plan-Apochromat oil objective (Carl Zeiss, Oberkochen, Germany). Confocal z-stacks were obtained by 1 \u03bcm intervals at the resolution of 512 \u00d7 512.\n\nFor quantification of ORN axon trajectories at 24hAPF, the z-stack of an antennal lobe was collapsed to one image by maximum intensity projection (ZEN software, Carl Zeiss, Oberkochen, Germany). Each antennal lobe was divided into two halves (DL and VM) by the line from the ORN axon entry point to the commissure merging point. The fluorescence intensities of the DL and VM halves and an area outside of the antennal lobe (background) were measured by ImageJ (NIH, Bethesda, MD, USA). Background fluorescence intensity was deducted to obtain the corrected intensities of the DL and VM axon trajectories. The DL/VM ratio was calculated by Excel (Microsoft, Redmond, WA, USA).\n\nFor quantification of the ectopic VM axons in Figure 2F, if DA1 axons stayed only at the DL edge of the antennal lobe (as in Figure 2D), the antennal lobe was counted as \u2018Only DL axons\u2019. If DA1 axons show up inside of the antennal lobe (as in Figure 2E), it was counted as \u2018VM+DL axons\u2019. For quantification of the glomerular targeting in Figure 4 and Figure 5, the numbers of antennal lobes with corresponding phenotypes were counted. Data were presented as a percentage and no statistical test was performed.\n\nImages were exported as maximum projections or single confocal sections by ZEN (Carl Zeiss, Oberkochen, Germany) in the format of TIFF. Photoshop (Adobe, San Jose, CA, USA) was used for image rotation and cropping. Illustrator (Adobe, San Jose, CA, USA) was used to make diagrams and assemble figures.\n\n### Western blotting\n\n24hAPF brains of PlexB-Tag flies were dissected in the Schneider\u2019s Drosophila medium (Thermo Fisher, Waltham, MA, USA) and snap frozen in liquid nitrogen before stored at \u201380\u00b0C. The sample was lysed on ice in pre-cooled RIPA buffer (Thermo Fisher, Waltham, MA, USA) with protease inhibitors (100X Halt cocktail; Thermo Fisher, Waltham, MA, USA) and then rotated for 1 hr at 4\u00b0C. After centrifugation for 15 min at 16000 RCF at 4\u00b0C, the supernatant was collected and kept on ice. NuPAGE LDS sample buffer and NuPAGE reducing agent (Thermo Fisher, Waltham, MA, USA) were added to the sample, followed by heating at 70\u00b0C for 10 min. Precision Plus Protein Kaleidoscope prestained protein standard (Bio-Rad, Hercules, CA, USA) was used as the molecular weight marker. Electrophoresis with the NuPAGE Tris-acetate gel and transferring to the PVDF membrane (Thermo Fisher, Waltham, MA, USA) were performed according to the manufacture\u2019s protocols. The membrane was blocked by 5% bovine serum albumin (Sigma-Aldrich, St. Louis, MO, USA) in TBST (25 mM Tris, 0.15M NaCl, 0.05% Tween-20, pH 7.5; Thermo Fisher, Waltham, MA, USA) and incubated with the primary antibody (mouse anti-FLAG, 1:500, M2, Sigma-Aldrich, St. Louis, MO, USA) in 5% BSA-TBST overnight on a 4\u00b0C orbital shaker. After washing with TBST, the membrane was incubated with the secondary antibody (goat anti-mouse HRP-conjugated, 1:5000, ab97023, Abcam, Cambridge, UK) for 1 hr on an orbital shaker at room temperature. The signal was developed with SuperSignal West Pico PLUS chemiluminescent substrate (Thermo Fisher, Waltham, MA, USA) and captured by the ChemiDoc XRS+\u00a0system (Bio-Rad, Hercules, CA, USA).\n\n### Statistical analysis\n\nNo statistical methods were used to determine sample sizes, but our sample sizes were similar to those generally employed in the field. Antennal lobes damaged in dissection were excluded from analysis; otherwise, all samples were included. Data collection and analysis were not performed blind to the conditions of the experiments. GraphPad Prism (GraphPad Software, La Jolla, CA, USA) was used for statistical analysis and plotting. Significance between two groups was determined by an unpaired, two-tailed t-test. Significance among multiple groups was determined by one-way ANOVA with Tukey\u2019s test for multiple comparisons. Significance of contingency tables was determined by Fisher's exact test.\n",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ce412df8-29a5-4fe0-8008-07a6a655f655",
+      "submission_id": "be5740c5-652b-4f92-82a6-8886380c668b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39088.015](https://doi.org/10.7554/eLife.39088.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Stepwise wiring of the Drosophila olfactory map requires optimal Plexin B levels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by including Kristin Scott as the Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bing Ye (Reviewer #2) and Takahiro Chihara (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Li et al. demonstrates the dual role of PlexB in trajectory choice and target selection, two consecutive steps for ORNs to connect to their proper postsynaptic targets in Drosophila olfactory system. The authors generated fly lines that allowed conditional tagging of endogenous PlexB, and used them to examine PlexB expression and distribution specifically in ORNs. This critical approach led to the discovery that ORN PlexB protein distribution was uneven in the antennal lobe and changed when axon development switched from trajectory choice to target selection. The authors further elegantly applied Drosophila genetics to demonstrate that the levels of PlexB regulated both steps, independently. The experiments are carefully designed and executed, and the presentation is clear. The study is important because it offers an understanding of how complicated neural networks are established with a limited number of cues.\n\nEssential revisions:\n\n1) The notion that optimal levels of PlexB are required is not fully demonstrated in this study. This seems like one possible model based on the lof and OE studies but the actual relationship between levels and targeting needs further exploration (by quantifying levels in knockdowns and testing additional concentrations) or the conclusions that optimal levels are required should be toned down.\n\n2) The PlexB overexpression phenotypically resembled loss of PlexB, shifting the ORN trajectory to the DL side. In wild type, are there any ORNs that do not express PlexB? Are such ORNs in the DL trajectory and targeting laterally-located glomeruli?\n\n3) Related to Figure 2E: Loss of PlexB causes the shift of ORN bundle to the DL side. What is the phenotype of the Or67d-QFORNs in the PlexB mutant?\n\n4) The bulk analyses of axons, while informative, may hide single axon targeting defects. For example, is it possible that there are more axons at 24hrs that stop short in the PlexB knockout or travel further in the OE? Single cell mosaics would be informative, but if beyond the scope of the study, then discussion of caveats with bulk analyses is warranted.\n\n5) The post-transcriptional and post-translational regulation of PlexB is very intriguing. If the authors have any insights into PlexB regulation, this would be interesting to discuss.\n",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4345f3d6-b99b-427b-84e4-58490157e24b",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C1",
+      "claim": "The Drosophila antennal lobe comprises about 50 distinct glomeruli with stereotyped positions and morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "The antennal lobe, the first-order olfactory processing center of Drosophila, comprises about 50 distinct glomeruli with stereotyped positions and morphologies and provides an excellent system for dissecting the molecular and cellular mechanisms underlying circuit assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript describing the anatomical structure of the antennal lobe.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "a48d11c0-234f-4bf1-a6f6-0ddada404701",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C2",
+      "claim": "Each of the 50 classes of olfactory receptor neurons (ORNs) expresses a single or a unique set of olfactory receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 50 classes of olfactory receptor neurons (ORNs) expresses a single or a unique set of olfactory receptors and projects their axons accurately to the 50 corresponding glomeruli in the antennal lobe (Benton et al., 2009; Couto et al., 2005; Fishilevich and Vosshall, 2005; Gao et al., 2000; Silbering et al., 2011; Vosshall and Stocker, 2007; Vosshall et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "bc9cdbc4-ff92-4196-807f-1a39929f7029",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C3",
+      "claim": "ORNs project their axons accurately to the 50 corresponding glomeruli in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 50 classes of olfactory receptor neurons (ORNs) expresses a single or a unique set of olfactory receptors and projects their axons accurately to the 50 corresponding glomeruli in the antennal lobe (Benton et al., 2009; Couto et al., 2005; Fishilevich and Vosshall, 2005; Gao et al., 2000; Silbering et al., 2011; Vosshall and Stocker, 2007; Vosshall et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "aa64ca1c-7d86-45c0-9387-53110ddb125a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C4",
+      "claim": "Most projection neurons (PNs) arborize their dendrites in a specific glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Most projection neurons (PNs) arborize their dendrites in a specific glomerulus and form synaptic connections exclusively with the ORNs innervating that glomerulus (Jefferis et al., 2001; Stocker et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "d34e37a8-f6f9-4f82-8a11-70a8aba3fa28",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C5",
+      "claim": "PNs form synaptic connections exclusively with the ORNs innervating that glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Most projection neurons (PNs) arborize their dendrites in a specific glomerulus and form synaptic connections exclusively with the ORNs innervating that glomerulus (Jefferis et al., 2001; Stocker et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ed80de1a-9717-45ac-bf65-b929aa25f549",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C6",
+      "claim": "Plexins are evolutionarily conserved cell-surface receptors that serve as the principal signaling route for semaphorins in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Plexins are evolutionarily conserved cell-surface receptors that serve as the principal signaling route for semaphorins in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about Plexins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "a91c777a-ffd6-48f5-85a3-0e6fc102c4fa",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C7",
+      "claim": "The semaphorin-plexin signaling axis regulates many aspects of neural development, including axon guidance, dendrite targeting, synapse formation, and circuit plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The semaphorin-plexin signaling axis regulates many aspects of neural development, including axon guidance, dendrite targeting, synapse formation, and circuit plasticity (Alto and Terman, 2017; Kolodkin et al., 1993; 1992; Koropouli and Kolodkin, 2014; Kruger et al., 2005; Luo et al., 1993; Meltzer et al., 2016; Orr et al., 2017; Pascoe et al., 2015; Pasterkamp, 2012; Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "c16542f0-9546-4d47-a515-9f67b09b9b03",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C8",
+      "claim": "Degenerating larval ORNs build up a gradient of secreted Sema2a and Sema2b: high in the ventromedial (VM) and low in the dorsolateral (DL) antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In the developing Drosophila olfactory circuit, degenerating larval ORNs build up a gradient of secreted Sema2a and Sema2b: high in the ventromedial (VM) and low in the dorsolateral (DL) antennal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the distribution of Sema2a and Sema2b in the developing olfactory circuit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3f108c63-d6b6-4a85-9705-dd2103d4d8d8",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C9",
+      "claim": "Transmembrane Sema1a forms an opposite gradient and functions cell-autonomously as a receptor to instruct PN dendrite targeting along the VM-DL axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane Sema1a forms an opposite gradient and functions cell-autonomously as a receptor to instruct PN dendrite targeting along the VM-DL axis (Komiyama et al., 2007; Sweeney et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "77320c9d-f0d2-4b9e-bbd7-bb862e1a7137",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C10",
+      "claim": "The Sema2a/2b gradient determines ORN axon trajectory choice through their canonical receptor PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this Sema2a/2b gradient also determines ORN axon trajectory choice through their canonical receptor PlexB (Joo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ab6ee2bb-4f15-4932-967e-4810f24eb5bd",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C11",
+      "claim": "At about 18 hr after puparium formation (APF), ORN axons arrive at the ventrolateral corner of the antennal lobe and then bifurcate into the DL and VM trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "At about 18 hr after puparium formation (APF), ORN axons arrive at the ventrolateral corner of the antennal lobe and then bifurcate into the DL and VM trajectories (Jefferis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "8643729a-3f0d-4bf7-b5c1-eae2aac618e2",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C12",
+      "claim": "Within 6 hr after arriving at the antennal lobe, ORN axons form two stereotyped bundles circumnavigating the antennal lobe, with a mean DL-to-VM ratio of 0.73.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the next 6 hr, ORN axons form two stereotyped bundles circumnavigating the antennal lobe, with a mean DL-to-VM ratio of 0.73 (Figure 1A,C) (Joo et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A,C and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ef815af7-e613-44b0-9066-715a38cc1eb0",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C13",
+      "claim": "Genetic disruption of Sema2b or PlexB biases ORN axons toward the DL trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic disruption of Sema2b or PlexB biases ORN axons toward the DL trajectory, which subsequently leads to incorrect glomerular targeting (Joo et al., 2013), highlighting the significance of this preceding step in the precise assembly of the olfactory map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "06ad613e-76c1-46ab-8f04-4f01f82abbe0",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C14",
+      "claim": "Genetic disruption of Sema2b or PlexB leads to incorrect glomerular targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic disruption of Sema2b or PlexB biases ORN axons toward the DL trajectory, which subsequently leads to incorrect glomerular targeting (Joo et al., 2013), highlighting the significance of this preceding step in the precise assembly of the olfactory map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "94895dae-1ad2-4cf0-be76-ef64432397eb",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C32",
+      "claim": "ORN axons were significantly shifted to the DL trajectory in plexB mutant brains, leading to a mean DL-to-VM ratio of 1.53 in contrast to 0.73 in wild-type brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we observed that ORN axons are significantly shifted to the DL trajectory in plexB mutant brains, leading to a mean DL-to-VM ratio of 1.53 in contrast to 0.73 in wild-type brains (Figure 1B,C) (Joo et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1B,C and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "bd0bf613-1a53-4230-a478-4644750b5499",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C33",
+      "claim": "Supplying PlexB in ORNs largely restores the normal trajectory pattern in plexB mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplying PlexB in ORNs largely restores the normal trajectory pattern in plexB mutant flies, indicating that PlexB functions in ORNs to control the DL versus VM trajectory choice (Joo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "12f6d54a-cea5-48fa-9687-6137ee2cbff3",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C34",
+      "claim": "PlexB functions in ORNs to control the DL versus VM trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplying PlexB in ORNs largely restores the normal trajectory pattern in plexB mutant flies, indicating that PlexB functions in ORNs to control the DL versus VM trajectory choice (Joo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research and inference from the restoration experiment.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "672bc1ab-89f0-44e8-bff9-fa688ed3ab3e",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C35",
+      "claim": "None of the PlexB antibodies could detect the endogenous PlexB signal in developing pupal brains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the expression pattern of PlexB remains unknown because none of the PlexB antibodies could detect the endogenous PlexB signal in developing pupal brains (Joo et al., 2013), setting an obstacle for further dissection of its mechanisms of action in axon trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7d0f1f66-1893-4f36-9dbe-ed1ff7845a35",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C36",
+      "claim": "PlexB-GAL4/plexB\u2013 flies were sick and barely survived to adult stage, like plexB\u2013/\u2013 homozygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, PlexB-GAL4/plexB\u2013 flies were sick and barely survived to adult stage, like plexB\u2013/\u2013 homozygotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7c857f92-05e1-4584-b084-dbd286a54e8c",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C37",
+      "claim": "At 24hAPF, ORN axons circumscribe, but have not innervated, the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24hAPF, ORN axons circumscribe, but have not innervated, the antennal lobe, indicating that the signal inside of the antennal lobe was contributed by other types of cells such as PNs, whose dendrites innervate the antennal lobe ahead of ORN axons (Jefferis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "0d634ae1-55be-49b4-9d02-7453cc5261aa",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C38",
+      "claim": "PN dendrites innervate the antennal lobe ahead of ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24hAPF, ORN axons circumscribe, but have not innervated, the antennal lobe, indicating that the signal inside of the antennal lobe was contributed by other types of cells such as PNs, whose dendrites innervate the antennal lobe ahead of ORN axons (Jefferis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "04709905-e8f3-470e-be15-569f29128ef0",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C39",
+      "claim": "PlexB is transcribed in both DL and VM ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PlexB is transcribed in both DL and VM ORNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the PlexB-GAL4 labeling pattern shown in Figure 1F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "649c4024-e198-423d-8f91-2cdf99534694",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C40",
+      "claim": "PlexB-GAL4 labeled > 90% of all ORNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by examining the third segments of antennae that house ORN somas, we found that PlexB-GAL4 labeled > 90% of all ORNs (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "e4d6602b-c670-4498-8b43-8e9e6d149a18",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C41",
+      "claim": "Discrepancies between transcription and protein levels due to post-transcriptional and post-translational regulations have been widely reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrepancies between transcription and protein levels due to post-transcriptional and post-translational regulations have been widely reported (Carlyle et al., 2017; Liu et al., 2016), necessitating an investigation of the endogenous protein distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "81df6140-d353-433a-8618-c68397230c13",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C42",
+      "claim": "The tagged proteins were stably expressed without abnormal degradation and were typically processed.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting of developing pupal brains confirmed that the tagged proteins were stably expressed without abnormal degradation and were typically processed (Artigiani et al., 2003; Ayoob et al., 2006) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1\u2014figure supplement 1A and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "d709c388-8e85-4f47-a9c8-663c72ef747b",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C43",
+      "claim": "No defects were observed in ORN axon trajectory formation at 24hAPF in either PlexB-Tag/+ or PlexB-Tag/plexB\u2013 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we did not observe any defects in ORN axon trajectory formation at 24hAPF in either PlexB-Tag/+ or PlexB-Tag/plexB\u2013 flies, suggesting that the tag does not affect PlexB's functions (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ad8986b7-37f2-4fbd-8e83-9091debd5b20",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C44",
+      "claim": "The tag does not affect PlexB's functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we did not observe any defects in ORN axon trajectory formation at 24hAPF in either PlexB-Tag/+ or PlexB-Tag/plexB\u2013 flies, suggesting that the tag does not affect PlexB's functions (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the observation that PlexB-Tag flies show normal trajectory formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "261559ad-de3a-43be-8f02-ba89214bcf0d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C45",
+      "claim": "Endogenous PlexB proteins may be present at low levels in pupal brains.",
+      "claim_type": "EXPLICIT",
+      "source": "When performing immunostaining on PlexB-Tag brains using the routine protocol (Wu and Luo, 2006), we detected faint signal that could not consistently generate high-quality images, suggesting that endogenous PlexB proteins may be present at low levels in pupal brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation of faint signal in immunostaining.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "60667f77-8da0-4e92-bf04-fa0d81070dd3",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C46",
+      "claim": "DL axons possessed a higher level of PlexB proteins than VM axons.",
+      "claim_type": "EXPLICIT",
+      "source": "V5 staining revealed that DL axons indeed possessed a higher level of PlexB proteins (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "c65a5930-76a7-4082-805b-9c92c4690e7a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C47",
+      "claim": "PlexB proteins are enriched in DL ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we observed a uniform distribution of PlexB inside the antennal lobe without the edge signals following FLAG staining (Figure 1J), further indicating that PlexB proteins are enriched in DL ORN axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the FLAG staining pattern shown in Figure 1J.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "b32cad21-e6cd-4c92-aac6-f106818303b2",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C48",
+      "claim": "The contrasting patterns between PlexB-GAL4 and PlexB-Tag suggest post-transcriptional or post-translational regulations of PlexB levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrasting patterns between PlexB-GAL4 and PlexB-Tag suggest post-transcriptional or post-translational regulations of PlexB levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observed differences between transcriptional and protein patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7a35ef29-e365-42bc-af16-860b846405be",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C49",
+      "claim": "PlexB overexpression causes VM ORN axons to shift to the DL trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we overexpressed PlexB in ORNs and observed that the DL axon bundle was thickened at the expense of the VM bundle (Figure 2A,B), shifting the DL/VM ratio to 1.57 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2A,B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "0fc15a8f-1cc7-4dc6-989e-4907a07f05d7",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C50",
+      "claim": "PlexB overexpression shifts the DL/VM ratio to 1.57.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we overexpressed PlexB in ORNs and observed that the DL axon bundle was thickened at the expense of the VM bundle (Figure 2A,B), shifting the DL/VM ratio to 1.57 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "87603d99-4705-402c-a196-e199d10edead",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C51",
+      "claim": "Elevating the PlexB level drives ORN axons to the DL trajectory in a scalable manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When the overexpression was intensified by elevating GAL4/UAS-mediated expression at 29\u00b0C, the DL shift of ORN axons became more severe (Figure 2C), indicating that elevating the PlexB level drives ORN axons to the DL trajectory in a scalable manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the observation that higher temperature (and thus higher PlexB expression) leads to more severe DL shift.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7dba1979-56ca-4add-b256-f3e9ea316c99",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C56",
+      "claim": "PlexB overexpression phenotypically resembled loss of PlexB, both of which caused a net VM-to-DL shift of ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, PlexB overexpression phenotypically resembled loss of PlexB, both of which caused a net VM-to-DL shift of ORN axons (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "18fca4bb-9300-42d7-90dc-254cdde838f7",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C57",
+      "claim": "The formation of the VM trajectory requires not only the presence of PlexB but also a specific level of it.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the formation of the VM trajectory requires not only the presence of PlexB but also a specific level of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that both loss and overexpression of PlexB cause similar phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3f7f7562-0fae-4c8b-912c-4c6f0119ca6d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C58",
+      "claim": "The PlexB level directs the trajectory choice of ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the distribution pattern of PlexB proteins (Figure 1L), these findings suggest that the PlexB level directs the trajectory choice of ORN axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the distribution pattern and the effects of PlexB level manipulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "e85bfe81-a569-499f-b5f6-37319c03aea7",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C59",
+      "claim": "Axon defasciculation was observed in plexB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the defect in trajectory choice, we also observed defasciculation of ORN axons in plexB mutants (Figure 1B and Figure 4\u2014figure supplement 1E,F) (Joo et al., 2013), a phenotype also observed in the development of the embryonic longitudinal tract (Ayoob et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 1B, Figure 4\u2014figure supplement 1E,F, and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3683d5be-558b-4d47-8441-f9b611bb270e",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C60",
+      "claim": "Axon defasciculation was not observed in PlexB-overexpressing ORNs at either the pupal or the adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, axon defasciculation was not observed in PlexB-overexpressing ORNs at either the pupal or the adult stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7dd02cc7-18e3-4705-9937-04ae51cd2c24",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C61",
+      "claim": "The presence of PlexB at a high or low level is sufficient to mediate axon bundling, distinct from its level-dependent effects in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of PlexB at a high or low level is sufficient to mediate axon bundling, distinct from its level-dependent effects in trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that defasciculation only occurs in plexB mutants but not in PlexB overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "106bf6db-c48b-429c-b1f7-fb979d1656d3",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C62",
+      "claim": "PlexB knockdown drives DL axons to the VM trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "When PlexB was knocked down by RNA interference (RNAi) in ORNs, a subset of DA1 ORN axons innervated the VM half of the antennal lobe (red arrow in Figure 2E) while the DL axon bundle was substantially diminished (yellow arrowheads in Figure 2E), indicating that lowering the PlexB level drives DL axons to the VM trajectory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ff371b59-892a-4f94-b695-837361749eb7",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C63",
+      "claim": "A portion of the ectopic VM axons projected back to the DL region and correctly innervated DA1 through a medial entry point.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite starting with an incorrect trajectory far from their target glomerulus, a portion of the ectopic VM axons projected back to the DL region and correctly innervated DA1 through a medial entry point (red arrowhead in Figure 2E) instead of the original entry points at the edge (yellow arrowheads in Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "65e2dc8d-ae8e-4e24-aa80-21a1caf4d94a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C64",
+      "claim": "The percentage of antennal lobes with ectopic VM axons dropped when PlexB knockdown was performed at higher temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the percentage of antennal lobes with ectopic VM axons dropped when PlexB knockdown was performed at higher temperatures (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3a171a69-fc75-4053-a6e5-456130b5e013",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C65",
+      "claim": "A severe knockdown of PlexB (e.g., at 29\u00b0C) resembled the plexB mutant, in which the DL targeting of DA1 axons was caused by the loss of PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the VM-to-DL trajectory shift observed in plexB mutants, it is plausible that a severe knockdown of PlexB (e.g., at 29\u00b0C) resembled the plexB mutant, in which the DL targeting of DA1 axons was caused by the loss of PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed temperature-dependent effects of PlexB knockdown.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "e9d0c0c0-3b73-4f30-a707-8b34971f8463",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C66",
+      "claim": "All DA1 axons stay DL in plexB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, all DA1 axons stay DL in plexB mutants (Joo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "9138a873-31c4-47fe-a74f-52c578794878",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C67",
+      "claim": "The VM trajectory requires an intermediate PlexB level.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the low level, but not absence, of PlexB proteins in the VM trajectory (Figure 1L), these observations further support the notion that the VM trajectory requires an intermediate PlexB level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observations of PlexB distribution and the effects of PlexB manipulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "749cca63-ddc8-444e-bb0c-c0e10af49d02",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C68",
+      "claim": "At 24hAPF, ORN axons form two trajectories circumscribing the antennal lobe before entering it.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24hAPF, ORN axons form two trajectories circumscribing the antennal lobe before entering it (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "39e3d127-0526-4804-93e2-5a3c1041bcb9",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C69",
+      "claim": "By 48hAPF, the antennal lobe is significantly enlarged and houses proto-glomeruli where the axons and dendrites of matching ORNs and PNs interact.",
+      "claim_type": "EXPLICIT",
+      "source": "By 48hAPF, the antennal lobe is significantly enlarged and houses proto-glomeruli where the axons and dendrites of matching ORNs and PNs interact (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ccaae4a9-de0d-44f1-aafb-c23876680234",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C70",
+      "claim": "PlexB-GAL4 labeled ORN axons of almost every glomerulus at 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "When intersected with the ORN-specific eyFLP, PlexB-GAL4 labeled ORN axons of almost every glomerulus at 48hAPF (Figure 3C), consistent with the observation that PlexB-GAL4 labeled almost all ORN somas in the antenna (Figure 3C, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3bd7892e-ed3b-4356-8a1f-e21eb3ce9f45",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C71",
+      "claim": "PlexB proteins were not uniformly distributed in all ORN axons at 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PlexB proteins were not uniformly distributed in all ORN axons (Figure 3D), further indicating the presence of post-transcriptional or post-translational regulations of PlexB expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "bf5677b2-ee44-4af4-81cf-e25bd24968dc",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C72",
+      "claim": "Among ORN axons, the ones targeting to the medial glomeruli were the main contributors of PlexB proteins at 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "Among ORN axons, the ones targeting to the medial glomeruli were the main contributors of PlexB proteins at 48hAPF (Figure 3D), producing a PlexB distribution pattern (medial high and lateral low) distinct from that of 24hAPF (DL high and VM low) through a rapid transition between 30 hr and 36hAPF (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "74178c14-16e7-4264-b57f-28d93db83f5f",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C73",
+      "claim": "Several discrete glomeruli had significantly higher ORN PlexB levels than their neighbors at 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, several discrete glomeruli had significantly higher ORN PlexB levels than their neighbors (Figure 3E), including VA4, DM1, and another dorsal glomerulus whose identity could not be unambiguously determined by its position and morphology at 48hAPF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "79c6d0e9-20b8-4a84-a7b5-3f9e15597b06",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C74",
+      "claim": "The ORN-specific PlexB proteins were highly enriched in the neuropil at 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to concentration in the axons at 24hAPF (Figure 1L), the ORN-specific PlexB proteins were highly enriched in the neuropil at 48hAPF (Figure 3D), where ORN axons meet PN dendrites for partner selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3605b6a8-2ffc-4620-b723-61621cfcf3f1",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C75",
+      "claim": "The subcellular localization of PlexB proteins is altered from 24hAPF to 48hAPF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, besides the global change of expression pattern, the subcellular localization of PlexB proteins is also altered from 24hAPF to 48hAPF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observed differences in PlexB distribution at different developmental stages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "b41c1da2-4cb3-405d-9657-98a7d5190d60",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C79",
+      "claim": "Both overexpression and loss of PlexB drove axons of Or92a+ ORNs to the DL side.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous observations at 24hAPF (Figure 2C), both overexpression and loss of PlexB drove axons of Or92a+ ORNs to the DL side (Figure 4B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "d7cb33e8-8607-4c6c-a943-9a25a6350912",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C80",
+      "claim": "In the case of AM29+ ORNs, the VM axon bundle disappeared in both PlexB overexpression and loss conditions and likely merged with the original DL track.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of AM29+ ORNs, the VM axon bundle disappeared in both conditions and likely merged with the original DL track (Figure 4\u2014figure supplement 1B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4\u2014figure supplement 1B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "399f1c2a-8a77-472a-b9c8-b0fdec4dbca6",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C81",
+      "claim": "Most ectopic axons innervated ectopic glomeruli in the dorsal half of the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, most ectopic axons innervated ectopic glomeruli in the dorsal half of the antennal lobe (Figure 4C,F and Figure 4\u2014figure supplement 1C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4C,F and Figure 4\u2014figure supplement 1C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "5c29b186-3bd2-441c-b027-f8d36ce3c89f",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C82",
+      "claim": "The preceding step of trajectory choice largely constrained the possibilities of subsequent glomerular selection by dividing ORN axons into two spatially separated populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The preceding step of trajectory choice thus largely constrained the possibilities of subsequent glomerular selection by dividing ORN axons into two spatially separated populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that ectopic trajectory choice leads to ectopic glomerular targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "cf92f10e-05fa-41aa-84f7-8fadaed8610b",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C83",
+      "claim": "ORN axon termini can explore a large area during glomerular selection to partially overcome a prior error in trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed a small fraction of ectopic axons that ultimately projected back to the VM area (red arrowheads in Figure 4B,E), suggesting that ORN axon termini can explore a large area during glomerular selection to partially overcome a prior error in trajectory choice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the observation that some ectopic axons can project back to the correct area.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "aff9fe73-8093-4ae0-a0b1-fafe62fa75b5",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C84",
+      "claim": "In the PlexB overexpression flies, Or92a+ ORNs mainly targeted to the PlexB-high DM1 glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PlexB overexpression flies, Or92a+ ORNs mainly targeted to the PlexB-high DM1 glomerulus (Figure 4C), while they only chose lateral glomeruli but not DM1 in PlexB knockdown flies (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "29aa25ce-7369-4e18-82b7-6559d6dc5c4d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C85",
+      "claim": "In PlexB knockdown flies, Or92a+ ORNs only chose lateral glomeruli but not DM1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PlexB overexpression flies, Or92a+ ORNs mainly targeted to the PlexB-high DM1 glomerulus (Figure 4C), while they only chose lateral glomeruli but not DM1 in PlexB knockdown flies (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "1fada8de-3230-497b-9c2d-1a8979f0b5fe",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C86",
+      "claim": "AM29+ ORNs mis-targeted to DM1 when the PlexB level was elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, AM29+ ORNs mis-targeted to DM1 when the PlexB level was elevated (Figure 4\u2014figure supplement 1C), but mis-targeted to DM3 in plexB mutants (Figure 4\u2014figure supplement 1E,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3f6c565a-f488-4abc-8ab9-6f6eda04d6ce",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C87",
+      "claim": "AM29+ ORNs mis-targeted to DM3 in plexB mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, AM29+ ORNs mis-targeted to DM1 when the PlexB level was elevated (Figure 4\u2014figure supplement 1C), but mis-targeted to DM3 in plexB mutants (Figure 4\u2014figure supplement 1E,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4\u2014figure supplement 1E,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "50869a0d-90e1-42ca-bd70-06f3764c41d1",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C88",
+      "claim": "The PlexB level biases glomerular selection when ORNs are forced to ectopically innervate due to incorrect trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PlexB level biases glomerular selection when ORNs are forced to ectopically innervate due to incorrect trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that PlexB level affects glomerular choice in ectopic territory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "4185e78d-3a7d-458c-8a7a-8c5b30c6337d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C89",
+      "claim": "PlexB overexpression led to stereotyped mis-targeting of Or92a+ ORNs to the nearby, PlexB-high VA4 glomerulus, along with the loss of VA2 innervation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PlexB overexpression led to stereotyped mis-targeting of Or92a+ ORNs to the nearby, PlexB-high VA4 glomerulus, along with the loss of VA2 innervation (Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "1d3324d2-d47c-4526-b16c-a9ed35b79dfa",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C90",
+      "claim": "PlexB knockdown caused aberrant targeting around the VA2 area in a small fraction of antennal lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB knockdown also caused aberrant targeting around the VA2 area in a small fraction of antennal lobes (Figure 4G), but no innervation to VA4 was observed in the 69 antennal lobes examined.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "9121360c-9b84-4f16-b9bd-82f6779a81ad",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C91",
+      "claim": "No innervation to VA4 was observed in the 69 antennal lobes examined in PlexB knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB knockdown also caused aberrant targeting around the VA2 area in a small fraction of antennal lobes (Figure 4G), but no innervation to VA4 was observed in the 69 antennal lobes examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "441357a3-2e1d-4e38-b80a-9662862e0644",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C92",
+      "claim": "In more than half of the antennal lobes of PlexB overexpression flies, the AM29+ ORNs had a normal VM axon track but lost DM6 innervation.",
+      "claim_type": "EXPLICIT",
+      "source": "In more than half of the antennal lobes of PlexB overexpression flies, the AM29+ ORNs had a normal VM axon track but lost DM6 innervation (Figure 4\u2014figure supplement 1D), which was also observed in a few plexB mutant flies (Figure 4\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "5c445a7d-5e47-40bd-b0f5-cdad98850685",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C93",
+      "claim": "Loss of DM6 innervation was also observed in a few plexB mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In more than half of the antennal lobes of PlexB overexpression flies, the AM29+ ORNs had a normal VM axon track but lost DM6 innervation (Figure 4\u2014figure supplement 1D), which was also observed in a few plexB mutant flies (Figure 4\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 4\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "7bfce68d-9be6-420e-b35f-969d33905d82",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C94",
+      "claim": "The distinct targeting preferences caused by overexpression or loss of PlexB match the endogenous PlexB distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the distinct targeting preferences caused by overexpression or loss of PlexB match the endogenous PlexB distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from comparing the targeting preferences with the endogenous PlexB distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "388feeed-639b-47ce-a431-72fb9b4a58fc",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C95",
+      "claim": "Elevating the PlexB level predominantly drove axons to VA4 or DM1, both of which exhibited high endogenous PlexB levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevating the PlexB level predominantly drove axons to VA4 or DM1, both of which exhibited high endogenous PlexB levels (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "23874c2f-696f-45df-b8e8-01548346929b",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C96",
+      "claim": "PlexB knockdown and mutants caused aberrant targeting to DM3 or the lateral glomeruli, whose PlexB levels were low, but not to the PlexB-high glomeruli such as VA4.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB knockdown and mutants caused aberrant targeting to DM3 or the lateral glomeruli, whose PlexB levels were low (Figure 3D,E), but not to the PlexB-high glomeruli such as VA4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "626b557c-7880-4b09-87f7-18daeba30ec4",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C97",
+      "claim": "Independently of its role in trajectory choice, the PlexB level also regulates subsequent glomerular selection in the assembly of the olfactory circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, independently of its role in trajectory choice, the PlexB level also regulates subsequent glomerular selection in the assembly of the olfactory circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observations of PlexB level effects on glomerular targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "d6eca7eb-0f41-4c0b-a684-2d4abfc1041e",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C98",
+      "claim": "Sema2b is highly enriched in the VM bundle of ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that Sema2b, the canonical ligand of PlexB, is highly enriched in the VM bundle of ORN axons (Figure 5\u2014figure supplement 1A) (Joo et al., 2013), while PlexB proteins are more abundant in DL axons (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5\u2014figure supplement 1A and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "70f44dc4-3b11-4521-9394-ec0d905f9ab8",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C99",
+      "claim": "Loss of Sema2b causes ORN axons to shift to the DL trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loss of Sema2b causes ORN axons to shift to the DL trajectory (Figure 5H) (Joo et al., 2013), similar to PlexB overexpression (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5H and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "04d829f2-3d6d-4b70-b0bc-e33ec23ed7f1",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C100",
+      "claim": "The phenotypic similarity between loss of Sema2b and PlexB overexpression suggests a potentially antagonistic relationship between Sema2b and PlexB in instructing ORN trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the opposing distribution, this phenotypic similarity between loss of Sema2b and PlexB overexpression suggests a potentially antagonistic relationship between Sema2b and PlexB in instructing ORN trajectory choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed phenotypic similarity and opposing distribution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "2aca933d-ab19-4729-88a5-9ffae75a88d5",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C101",
+      "claim": "sema2b heterozygous flies had normal ORN axon trajectories, indistinguishable from those of wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the homozygotes of the sema2b mutant (Figure 5H), heterozygous flies had normal ORN axon trajectories, indistinguishable from those of wild-type flies (Figure 5A,B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5A,B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "846a3283-7660-49a9-8a8f-d58105a4e3c3",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C102",
+      "claim": "The heterozygosity of sema2b significantly promoted the VM-to-DL axon shift caused by elevating the PlexB level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the heterozygosity of sema2b significantly promoted the VM-to-DL axon shift caused by elevating the PlexB level (Figure 5C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5C,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "6e5654a6-7150-442b-a0bf-853ba165d679",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C103",
+      "claim": "In a subset of sema2b heterozygotes, elevating the PlexB level in ORNs almost completely eliminated the VM trajectory, leading to a single, thick DL bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PlexB overexpression drove axons to the DL trajectory, the VM bundle was visible in every antennal lobe in a wild-type background (Figure 5C). In a subset of sema2b heterozygotes, however, elevating the PlexB level in ORNs almost completely eliminated the VM trajectory, leading to a single, thick DL bundle (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "efef4e84-71c3-4511-af1a-5eb4da400d28",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C104",
+      "claim": "sema2b heterozygosity enhanced the VM-to-DL shift of Or92a+ ORN axons caused by PlexB overexpression when examined at the adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation at 24hAPF, sema2b heterozygosity also enhanced the VM-to-DL shift of Or92a+ ORN axons caused by PlexB overexpression when examined at the adult stage (Figure 5K and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5K and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ce192076-7099-4699-9758-01abbb02be76",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C105",
+      "claim": "Loss of one-copy of the Sema2b gene boosts the effect of PlexB overexpression, suggesting that Sema2b partially 'blocks' the effect of high-level PlexB in wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of one-copy of the Sema2b gene boosts the effect of PlexB overexpression, suggesting that Sema2b partially 'blocks' the effect of high-level PlexB in wild-type flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the genetic interaction between sema2b heterozygosity and PlexB overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "cccfbfd2-4f96-424c-8450-614192a97863",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C106",
+      "claim": "The phenotypic expression of sema2b heterozygosity relied on an elevated PlexB level, suggesting that Sema2b controls ORN axon trajectory choice partly by modulating the level-dependent effects of PlexB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the phenotypic expression of sema2b heterozygosity relied on an elevated PlexB level, suggesting that Sema2b controls ORN axon trajectory choice partly by modulating the level-dependent effects of PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that sema2b heterozygosity only shows phenotype when PlexB is overexpressed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "da9b8644-90b0-4a1e-a5a8-4f84a53788dc",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C107",
+      "claim": "PlexB knockdown in a wild-type background caused a slight DL shift of ORN axons.",
+      "claim_type": "EXPLICIT",
+      "source": "PlexB knockdown in a wild-type background caused a slight DL shift of ORN axons (Figure 5F,G,J), similar to the loss of PlexB but to a lesser extent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5F,G,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "4020a310-2858-4e05-82ff-0426309f2e24",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C108",
+      "claim": "The combination of PlexB knockdown and sema2b mutant did not drive more axons to the DL bundle; rather, it suppressed the sema2b mutant-induced DL shift.",
+      "claim_type": "EXPLICIT",
+      "source": "While loss of Sema2b also led to a DL shift of ORN axons, the combination of PlexB knockdown and sema2b mutant did not drive more axons to the DL bundle; rather, it suppressed the sema2b mutant-induced DL shift (Figure 5H,I), yielding a DL/VM mean of 1.11 in contrast to 1.83 of sema2b mutants (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and supported by Figure 5H,I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "655e05e8-628b-4793-8a1c-3651891c7381",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C109",
+      "claim": "Lowering the PlexB level can, at least partially, substitute the function of Sema2b in ORN trajectory choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, lowering the PlexB level can, at least partially, substitute the function of Sema2b in ORN trajectory choice, in line with the notion that Sema2b antagonizes high-level PlexB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observation that PlexB knockdown suppresses the sema2b mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "f38af26b-b3c8-4bf6-9db0-f6436c2c4f5a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C110",
+      "claim": "Sema2b antagonizes the effect of high-level PlexB in glomerular selection.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the adult glomerular targeting of Or92a+ and AM29+ ORNs, we observed more antennal lobes with incorrect glomerular innervation when overexpressing PlexB in sema2b heterozygotes (Figure 5L,M and Figure 5\u2014figure supplement 1C,D), suggesting that Sema2b also antagonizes the effect of high-level PlexB in glomerular selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the observation that sema2b heterozygosity enhances PlexB overexpression phenotypes in glomerular targeting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "06277016-6404-4eec-8a60-f89afad7f0f0",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C111",
+      "claim": "PlexB proteins are distributed at different levels in developing ORN axons, and these patterns change dynamically during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that PlexB proteins are distributed at different levels in developing ORN axons, and these patterns change dynamically during development (Figure 1 and Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the findings shown in Figure 1 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "30c3b496-1a0c-4b08-be9e-7bc3cbd1949a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C112",
+      "claim": "The level of PlexB consecutively controls two critical steps in the assembly of the olfactory map \u2013 ORN axon trajectory choice and glomerular selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the level of PlexB consecutively controls two critical steps in the assembly of the olfactory map \u2013 ORN axon trajectory choice and glomerular selection (Figure 2 and Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the findings shown in Figure 2 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3fbb1538-e1f2-4b75-851b-c13c654d889d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C113",
+      "claim": "Sema2b antagonizes the effect of high-level PlexB to further ensure the wiring fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sema2b, a partner of PlexB, antagonizes the effect of high-level PlexB to further ensure the wiring fidelity (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the findings shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "8b0175cc-f3d0-4e77-b852-7c0bbc0a3e7e",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "claim_id": "C114",
+      "claim": "A single guidance molecule, PlexB, acts in a multi-step developmental process by stage-specific expression and level-dependent effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a single guidance molecule, PlexB, acts in a multi-step developmental process by stage-specific expression and level-dependent effects (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the overall findings illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8515d55f-866f-467d-a133-ee8f87dda34f",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila antennal lobe comprises about 50 distinct glomeruli with stereotyped positions and morphologies. Each of the 50 classes of ORNs expresses a single or unique set of olfactory receptors and projects axons accurately to corresponding glomeruli, where PNs arborize dendrites and form synaptic connections exclusively with matching ORNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 describe well-established anatomical and organizational features of the Drosophila olfactory system, supported by multiple citations to prior research (Benton et al., 2009; Couto et al., 2005; Jefferis et al., 2001; Stocker et al., 1990, among others). These are foundational background claims that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "62699951-662c-4ea7-87e8-8131fff40ed4",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Plexins are evolutionarily conserved receptors for semaphorins that regulate multiple aspects of neural development. In the developing Drosophila olfactory circuit, degenerating larval ORNs establish a Sema2a/2b gradient (VM high, DL low), while transmembrane Sema1a forms an opposite gradient to instruct PN dendrite targeting. The Sema2a/2b gradient determines ORN axon trajectory choice through PlexB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 summarize established knowledge about plexin-semaphorin signaling and prior findings on the Drosophila olfactory system, all supported by multiple citations (Alto and Terman, 2017; Komiyama et al., 2007; Joo et al., 2013, among others). These provide essential background for understanding the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3f616036-0779-4399-a890-5475b2f1d322",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At approximately 18 hr APF, ORN axons arrive at the antennal lobe and bifurcate into DL and VM trajectories, forming two stereotyped bundles with a mean DL-to-VM ratio of 0.73 by 24hAPF. Genetic disruption of Sema2b or PlexB biases ORN axons toward the DL trajectory (DL/VM ratio of 1.53 in plexB mutants), leading to incorrect glomerular targeting. PlexB functions in ORNs to control trajectory choice, but its expression pattern remained unknown due to inability to detect endogenous PlexB with antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14, C32-C35 describe prior findings from Joo et al., 2013, establishing the baseline phenotypes and functional role of PlexB in trajectory choice. These are well-supported by citations and provide the foundation for the current study's investigation of PlexB protein distribution. The quantitative data (DL/VM ratios) are consistent across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "6871de34-6446-4eac-832f-f511b0cf4f4d",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PlexB-GAL4/plexB\u2013 flies were sick and barely survived to adult stage, similar to plexB\u2013/\u2013 homozygotes. At 24hAPF, ORN axons circumscribe but have not innervated the antennal lobe, while PN dendrites innervate ahead of ORN axons. PlexB-GAL4 labeling revealed that PlexB is transcribed in both DL and VM ORNs, with >90% of all ORNs expressing PlexB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe validation of the PlexB-GAL4 reporter and characterization of PlexB transcription patterns. The sickness of PlexB-GAL4/plexB\u2013 flies (C36) validates that the GAL4 insertion disrupts PlexB function. The broad labeling pattern (C39-C40) is directly supported by Figure 1F and Figure 1\u2014figure supplement 1D, showing >90% ORN labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "To investigate endogenous PlexB protein distribution, the authors devised a conditional tagging strategy (PlexB-Tag). Western blotting confirmed stable expression and typical processing of tagged proteins. PlexB-Tag flies showed no defects in ORN axon trajectory formation, indicating the tag does not affect PlexB function. Using signal amplification, the authors detected that DL axons possess higher levels of PlexB proteins than VM axons, contrasting with the uniform transcriptional pattern and suggesting post-transcriptional or post-translational regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 describe the development and validation of the PlexB-Tag system and the key finding of differential PlexB protein distribution. The validation is thorough: Western blotting (C42, Figure 1\u2014figure supplement 1A), normal trajectory formation (C43-C44, Figure 1\u2014figure supplement 1B,C), and V5/FLAG staining (C46-C47, Figure 1J,L). The contrast between transcriptional uniformity and protein-level differences (C48) is well-supported by comparing Figure 1F and Figure 1L.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ef1e5199-d915-4057-becd-97164fa1e5e6",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PlexB overexpression in ORNs causes VM axons to shift to the DL trajectory, shifting the DL/VM ratio to 1.57 (compared to 0.73 in controls). This effect is scalable with expression level (more severe at 29\u00b0C). Notably, PlexB overexpression phenotypically resembles PlexB loss, both causing VM-to-DL shifts, indicating that VM trajectory formation requires not only PlexB presence but also a specific level. These findings suggest that PlexB level directs ORN axon trajectory choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 describe a key finding: level-dependent effects of PlexB on trajectory choice. The data are well-supported by Figure 2A-C, showing quantitative DL/VM ratios for control (0.71), PlexB overexpression at 25\u00b0C (1.57), and 29\u00b0C (1.98). The similarity between overexpression and loss-of-function phenotypes (C56) is striking and well-documented (Figure 2C). The conclusion about level-dependence (C57-C58) is a reasonable inference from these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "b65f82b8-e5ba-48ba-b4a9-ae5541c5760c",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Axon defasciculation was observed in plexB mutants but not in PlexB-overexpressing ORNs at either pupal or adult stages. This indicates that the presence of PlexB at high or low levels is sufficient to mediate axon bundling, distinct from its level-dependent effects in trajectory choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 distinguish between two PlexB functions: level-dependent trajectory choice versus level-independent axon bundling. The observation is supported by Figure 1B and Figure 4\u2014figure supplement 1E,F (defasciculation in mutants) and the absence of this phenotype in overexpression conditions. This is a clear and well-supported distinction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "f3443380-39d7-4502-8689-9c8c76c67f3a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PlexB knockdown by RNAi drives DL axons (DA1 ORNs) to the VM trajectory, with some ectopic VM axons projecting back to correctly innervate DA1 through a medial entry point. Interestingly, the percentage of antennal lobes with ectopic VM axons decreased at higher temperatures (stronger knockdown), suggesting that severe PlexB knockdown resembles the plexB mutant phenotype where all DA1 axons stay DL. These observations support that the VM trajectory requires an intermediate PlexB level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 provide complementary evidence for level-dependent PlexB function by examining knockdown effects. The data are supported by Figure 2D-F, showing ectopic VM axons in moderate knockdown and the temperature-dependent effect. The interpretation that severe knockdown resembles the mutant (C65) is speculative but reasonable. The conclusion about intermediate PlexB levels for VM trajectory (C67) is well-supported by the combined overexpression and knockdown data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Between 24hAPF and 48hAPF, the antennal lobe undergoes significant structural changes, with ORN axons innervating and forming proto-glomeruli with PN dendrites. PlexB-GAL4 labeled ORN axons of almost every glomerulus at 48hAPF, but PlexB proteins were not uniformly distributed. ORN axons targeting medial glomeruli were the main contributors of PlexB proteins, with several discrete glomeruli (VA4, DM1, and a dorsal glomerulus) showing significantly higher PlexB levels. PlexB proteins were highly enriched in the neuropil at 48hAPF, indicating altered subcellular localization compared to 24hAPF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 describe the dynamic changes in PlexB protein distribution during development. The data are well-supported by Figure 3A-E and Figure 3\u2014figure supplement 1B,C, showing the transition from DL-high/VM-low pattern at 24hAPF to medial-high/lateral-low pattern at 48hAPF. The identification of specific high-PlexB glomeruli (C73) is supported by Figure 3E. The shift in subcellular localization (C74-C75) is clearly demonstrated by comparing Figure 1L and Figure 3D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "c3a207ee-322d-4413-ab88-70cbae8be212",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both PlexB overexpression and loss drove Or92a+ and AM29+ ORN axons to the DL side, with most ectopic axons innervating ectopic glomeruli in the dorsal half of the antennal lobe. This indicates that trajectory choice largely constrains subsequent glomerular selection by spatially separating ORN axons. However, a small fraction of ectopic axons projected back to the VM area, suggesting that ORN axon termini can explore a large area during glomerular selection to partially overcome prior trajectory errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 examine the relationship between trajectory choice and glomerular selection. The data are supported by Figure 4B,E and Figure 4\u2014figure supplement 1B,E, showing ectopic dorsal targeting following trajectory errors. The observation of some axons returning to correct areas (C83) is documented in Figure 4B,E (red arrowheads). The conclusion about trajectory constraining but not absolutely determining glomerular choice (C82-C83) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "fd53298f-8430-4001-80eb-2bb7ad99eda2",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In ectopic territory, PlexB level biases glomerular selection. In PlexB overexpression flies, Or92a+ ORNs mainly targeted the PlexB-high DM1 glomerulus, while in PlexB knockdown flies they chose lateral glomeruli but not DM1. Similarly, AM29+ ORNs mis-targeted to DM1 with PlexB elevation but to DM3 in plexB mutants. This indicates that PlexB level biases glomerular selection when ORNs are forced to ectopically innervate due to incorrect trajectory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 demonstrate that PlexB level affects glomerular choice in ectopic territory. The data are supported by Figure 4C,F and Figure 4\u2014figure supplement 1C,E,F,G, showing distinct targeting preferences based on PlexB levels. The correlation between PlexB level and glomerular choice (high PlexB \u2192 DM1; low PlexB \u2192 lateral glomeruli or DM3) is consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PlexB level also regulates glomerular selection independently of trajectory choice. PlexB overexpression led to stereotyped mis-targeting of Or92a+ ORNs to the nearby PlexB-high VA4 glomerulus with loss of VA2 innervation, while PlexB knockdown caused aberrant targeting around VA2 but never to VA4 (0/69 antennal lobes). Similarly, AM29+ ORNs lost DM6 innervation in both PlexB overexpression and plexB mutants. The distinct targeting preferences match endogenous PlexB distribution: elevated PlexB drove axons to VA4 or DM1 (both PlexB-high), while PlexB knockdown/mutants caused targeting to DM3 or lateral glomeruli (PlexB-low) but not VA4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C97 demonstrate trajectory-independent effects of PlexB level on glomerular selection. The data are well-supported by Figure 4B,D,G and Figure 4\u2014figure supplement 1D,G, showing glomerular targeting defects even with correct trajectory. The correlation between PlexB level manipulation and targeting preferences (C94-C96) is consistent with endogenous PlexB distribution (Figure 3E). The conclusion (C97) is well-supported by the combined evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "ad766039-e8bf-48bc-8cc2-06d4bb6f113a",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sema2b is highly enriched in the VM bundle of ORN axons (opposite to PlexB distribution), and loss of Sema2b causes ORN axons to shift to the DL trajectory, similar to PlexB overexpression. This phenotypic similarity and opposing distribution suggest a potentially antagonistic relationship between Sema2b and PlexB in instructing ORN trajectory choice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 establish the basis for investigating Sema2b-PlexB interactions. The opposing distributions (C98) are supported by Figure 5\u2014figure supplement 1A and Figure 1L. The phenotypic similarity between Sema2b loss and PlexB overexpression (C99) is supported by Figure 5H and Figure 2B, both showing DL shifts. The speculation about antagonism (C100) is reasonable given these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "31618c17-1b38-43c5-8e5a-deaf83c0c010",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "While sema2b heterozygous flies had normal ORN axon trajectories, sema2b heterozygosity significantly enhanced the VM-to-DL axon shift caused by PlexB overexpression, with some heterozygotes showing almost complete elimination of the VM trajectory. This enhancement was observed at both 24hAPF and adult stages. These findings suggest that Sema2b partially 'blocks' the effect of high-level PlexB in wild-type flies, and that Sema2b controls ORN trajectory choice partly by modulating the level-dependent effects of PlexB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C106 demonstrate genetic interaction between Sema2b and PlexB through enhancement experiments. The data are well-supported by Figure 5A-E,K and Figure 5\u2014figure supplement 1B, showing that sema2b heterozygosity alone has no phenotype but significantly enhances PlexB overexpression effects. The statistical significance is documented (Figure 5E). The conclusions about Sema2b antagonizing high-level PlexB (C105-C106) are reasonable inferences from the genetic interaction data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "f2a2db93-3248-423b-9d92-442fab0d46d7",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PlexB knockdown in wild-type background caused a slight DL shift of ORN axons. However, combining PlexB knockdown with sema2b mutant did not drive more axons to the DL bundle; rather, it suppressed the sema2b mutant-induced DL shift (DL/VM mean of 1.11 vs. 1.83 in sema2b mutants alone). This indicates that lowering the PlexB level can at least partially substitute the function of Sema2b in ORN trajectory choice, consistent with the notion that Sema2b antagonizes high-level PlexB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 provide complementary evidence for Sema2b-PlexB antagonism through suppression experiments. The data are well-supported by Figure 5F-J, showing that PlexB knockdown suppresses the sema2b mutant phenotype. The quantitative data (DL/VM ratios) are clearly presented in Figure 5J. The conclusion about functional substitution (C109) is a reasonable inference from the suppression data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "d4784ada-8680-4b76-84d2-ac5e55089752",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Sema2b antagonizes the effect of high-level PlexB in glomerular selection. When PlexB was overexpressed in sema2b heterozygotes, more antennal lobes showed incorrect glomerular innervation compared to PlexB overexpression alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C110 extends the Sema2b-PlexB antagonism to glomerular selection. The data are supported by Figure 5L,M and Figure 5\u2014figure supplement 1C,D, showing enhanced glomerular targeting defects in sema2b heterozygotes with PlexB overexpression. This is consistent with the trajectory choice findings and demonstrates that the antagonistic relationship operates at multiple developmental stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    },
+    {
+      "id": "bef771af-0591-4428-8847-16c6ae13392c",
+      "content_id": "f1f9405f-fe84-4474-a033-b49a8a8efdc9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PlexB proteins are distributed at different levels in developing ORN axons, with patterns changing dynamically during development. The level of PlexB consecutively controls two critical steps in olfactory map assembly: ORN axon trajectory choice and glomerular selection. Sema2b antagonizes the effect of high-level PlexB to further ensure wiring fidelity. Thus, a single guidance molecule, PlexB, acts in a multi-step developmental process through stage-specific expression and level-dependent effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C114 are summary statements of the main findings, integrating results from Figures 1-6. The dynamic distribution of PlexB (C111) is supported by Figures 1 and 3. The consecutive control of trajectory choice and glomerular selection (C112) is supported by Figures 2 and 4. The Sema2b antagonism (C113) is supported by Figure 5. The overall conclusion (C114) is well-supported by the comprehensive evidence presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:11:09.172971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4345f3d6-b99b-427b-84e4-58490157e24b",
+      "result_id": "8515d55f-866f-467d-a133-ee8f87dda34f"
+    },
+    {
+      "claim_id": "a48d11c0-234f-4bf1-a6f6-0ddada404701",
+      "result_id": "8515d55f-866f-467d-a133-ee8f87dda34f"
+    },
+    {
+      "claim_id": "bc9cdbc4-ff92-4196-807f-1a39929f7029",
+      "result_id": "8515d55f-866f-467d-a133-ee8f87dda34f"
+    },
+    {
+      "claim_id": "aa64ca1c-7d86-45c0-9387-53110ddb125a",
+      "result_id": "8515d55f-866f-467d-a133-ee8f87dda34f"
+    },
+    {
+      "claim_id": "d34e37a8-f6f9-4f82-8a11-70a8aba3fa28",
+      "result_id": "8515d55f-866f-467d-a133-ee8f87dda34f"
+    },
+    {
+      "claim_id": "ed80de1a-9717-45ac-bf65-b929aa25f549",
+      "result_id": "62699951-662c-4ea7-87e8-8131fff40ed4"
+    },
+    {
+      "claim_id": "a91c777a-ffd6-48f5-85a3-0e6fc102c4fa",
+      "result_id": "62699951-662c-4ea7-87e8-8131fff40ed4"
+    },
+    {
+      "claim_id": "c16542f0-9546-4d47-a515-9f67b09b9b03",
+      "result_id": "62699951-662c-4ea7-87e8-8131fff40ed4"
+    },
+    {
+      "claim_id": "3f108c63-d6b6-4a85-9705-dd2103d4d8d8",
+      "result_id": "62699951-662c-4ea7-87e8-8131fff40ed4"
+    },
+    {
+      "claim_id": "77320c9d-f0d2-4b9e-bbd7-bb862e1a7137",
+      "result_id": "62699951-662c-4ea7-87e8-8131fff40ed4"
+    },
+    {
+      "claim_id": "ab6ee2bb-4f15-4932-967e-4810f24eb5bd",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "8643729a-3f0d-4bf7-b5c1-eae2aac618e2",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "ef815af7-e613-44b0-9066-715a38cc1eb0",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "06ad613e-76c1-46ab-8f04-4f01f82abbe0",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "94895dae-1ad2-4cf0-be76-ef64432397eb",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "bd0bf613-1a53-4230-a478-4644750b5499",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "12f6d54a-cea5-48fa-9687-6137ee2cbff3",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "672bc1ab-89f0-44e8-bff9-fa688ed3ab3e",
+      "result_id": "3f616036-0779-4399-a890-5475b2f1d322"
+    },
+    {
+      "claim_id": "7d0f1f66-1893-4f36-9dbe-ed1ff7845a35",
+      "result_id": "6871de34-6446-4eac-832f-f511b0cf4f4d"
+    },
+    {
+      "claim_id": "7c857f92-05e1-4584-b084-dbd286a54e8c",
+      "result_id": "6871de34-6446-4eac-832f-f511b0cf4f4d"
+    },
+    {
+      "claim_id": "0d634ae1-55be-49b4-9d02-7453cc5261aa",
+      "result_id": "6871de34-6446-4eac-832f-f511b0cf4f4d"
+    },
+    {
+      "claim_id": "04709905-e8f3-470e-be15-569f29128ef0",
+      "result_id": "6871de34-6446-4eac-832f-f511b0cf4f4d"
+    },
+    {
+      "claim_id": "649c4024-e198-423d-8f91-2cdf99534694",
+      "result_id": "6871de34-6446-4eac-832f-f511b0cf4f4d"
+    },
+    {
+      "claim_id": "e4d6602b-c670-4498-8b43-8e9e6d149a18",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "81df6140-d353-433a-8618-c68397230c13",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "d709c388-8e85-4f47-a9c8-663c72ef747b",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "ad8986b7-37f2-4fbd-8e83-9091debd5b20",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "261559ad-de3a-43be-8f02-ba89214bcf0d",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "60667f77-8da0-4e92-bf04-fa0d81070dd3",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "c65a5930-76a7-4082-805b-9c92c4690e7a",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "b32cad21-e6cd-4c92-aac6-f106818303b2",
+      "result_id": "be0ecd24-5311-4e33-a6b5-8ffaa9e3a4b5"
+    },
+    {
+      "claim_id": "7a35ef29-e365-42bc-af16-860b846405be",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "0fc15a8f-1cc7-4dc6-989e-4907a07f05d7",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "87603d99-4705-402c-a196-e199d10edead",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "7dba1979-56ca-4add-b256-f3e9ea316c99",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "18fca4bb-9300-42d7-90dc-254cdde838f7",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "3f7f7562-0fae-4c8b-912c-4c6f0119ca6d",
+      "result_id": "ef1e5199-d915-4057-becd-97164fa1e5e6"
+    },
+    {
+      "claim_id": "e85bfe81-a569-499f-b5f6-37319c03aea7",
+      "result_id": "b65f82b8-e5ba-48ba-b4a9-ae5541c5760c"
+    },
+    {
+      "claim_id": "3683d5be-558b-4d47-8441-f9b611bb270e",
+      "result_id": "b65f82b8-e5ba-48ba-b4a9-ae5541c5760c"
+    },
+    {
+      "claim_id": "7dd02cc7-18e3-4705-9937-04ae51cd2c24",
+      "result_id": "b65f82b8-e5ba-48ba-b4a9-ae5541c5760c"
+    },
+    {
+      "claim_id": "106bf6db-c48b-429c-b1f7-fb979d1656d3",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "ff371b59-892a-4f94-b695-837361749eb7",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "65e2dc8d-ae8e-4e24-aa80-21a1caf4d94a",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "3a171a69-fc75-4053-a6e5-456130b5e013",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "e9d0c0c0-3b73-4f30-a707-8b34971f8463",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "9138a873-31c4-47fe-a74f-52c578794878",
+      "result_id": "f3443380-39d7-4502-8689-9c8c76c67f3a"
+    },
+    {
+      "claim_id": "749cca63-ddc8-444e-bb0c-c0e10af49d02",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "39e3d127-0526-4804-93e2-5a3c1041bcb9",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "ccaae4a9-de0d-44f1-aafb-c23876680234",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "3bd7892e-ed3b-4356-8a1f-e21eb3ce9f45",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "bf5677b2-ee44-4af4-81cf-e25bd24968dc",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "74178c14-16e7-4264-b57f-28d93db83f5f",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "79c6d0e9-20b8-4a84-a7b5-3f9e15597b06",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "3605b6a8-2ffc-4620-b723-61621cfcf3f1",
+      "result_id": "9e399296-9fb3-4939-bc08-b4b4dd4e6ddd"
+    },
+    {
+      "claim_id": "b41c1da2-4cb3-405d-9657-98a7d5190d60",
+      "result_id": "c3a207ee-322d-4413-ab88-70cbae8be212"
+    },
+    {
+      "claim_id": "d7cb33e8-8607-4c6c-a943-9a25a6350912",
+      "result_id": "c3a207ee-322d-4413-ab88-70cbae8be212"
+    },
+    {
+      "claim_id": "399f1c2a-8a77-472a-b9c8-b0fdec4dbca6",
+      "result_id": "c3a207ee-322d-4413-ab88-70cbae8be212"
+    },
+    {
+      "claim_id": "5c29b186-3bd2-441c-b027-f8d36ce3c89f",
+      "result_id": "c3a207ee-322d-4413-ab88-70cbae8be212"
+    },
+    {
+      "claim_id": "cf92f10e-05fa-41aa-84f7-8fadaed8610b",
+      "result_id": "c3a207ee-322d-4413-ab88-70cbae8be212"
+    },
+    {
+      "claim_id": "aff9fe73-8093-4ae0-a0b1-fafe62fa75b5",
+      "result_id": "fd53298f-8430-4001-80eb-2bb7ad99eda2"
+    },
+    {
+      "claim_id": "29aa25ce-7369-4e18-82b7-6559d6dc5c4d",
+      "result_id": "fd53298f-8430-4001-80eb-2bb7ad99eda2"
+    },
+    {
+      "claim_id": "1fada8de-3230-497b-9c2d-1a8979f0b5fe",
+      "result_id": "fd53298f-8430-4001-80eb-2bb7ad99eda2"
+    },
+    {
+      "claim_id": "3f6c565a-f488-4abc-8ab9-6f6eda04d6ce",
+      "result_id": "fd53298f-8430-4001-80eb-2bb7ad99eda2"
+    },
+    {
+      "claim_id": "50869a0d-90e1-42ca-bd70-06f3764c41d1",
+      "result_id": "fd53298f-8430-4001-80eb-2bb7ad99eda2"
+    },
+    {
+      "claim_id": "4185e78d-3a7d-458c-8a7a-8c5b30c6337d",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "1d3324d2-d47c-4526-b16c-a9ed35b79dfa",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "9121360c-9b84-4f16-b9bd-82f6779a81ad",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "441357a3-2e1d-4e38-b80a-9662862e0644",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "5c445a7d-5e47-40bd-b0f5-cdad98850685",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "7bfce68d-9be6-420e-b35f-969d33905d82",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "388feeed-639b-47ce-a431-72fb9b4a58fc",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "23874c2f-696f-45df-b8e8-01548346929b",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "626b557c-7880-4b09-87f7-18daeba30ec4",
+      "result_id": "3f9a2ffe-8955-45e8-9f18-95db2cdf4f94"
+    },
+    {
+      "claim_id": "d6eca7eb-0f41-4c0b-a684-2d4abfc1041e",
+      "result_id": "ad766039-e8bf-48bc-8cc2-06d4bb6f113a"
+    },
+    {
+      "claim_id": "70f44dc4-3b11-4521-9394-ec0d905f9ab8",
+      "result_id": "ad766039-e8bf-48bc-8cc2-06d4bb6f113a"
+    },
+    {
+      "claim_id": "04d829f2-3d6d-4b70-b0bc-e33ec23ed7f1",
+      "result_id": "ad766039-e8bf-48bc-8cc2-06d4bb6f113a"
+    },
+    {
+      "claim_id": "2aca933d-ab19-4729-88a5-9ffae75a88d5",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "846a3283-7660-49a9-8a8f-d58105a4e3c3",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "6e5654a6-7150-442b-a0bf-853ba165d679",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "efef4e84-71c3-4511-af1a-5eb4da400d28",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "ce192076-7099-4699-9758-01abbb02be76",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "cccfbfd2-4f96-424c-8450-614192a97863",
+      "result_id": "31618c17-1b38-43c5-8e5a-deaf83c0c010"
+    },
+    {
+      "claim_id": "da9b8644-90b0-4a1e-a5a8-4f84a53788dc",
+      "result_id": "f2a2db93-3248-423b-9d92-442fab0d46d7"
+    },
+    {
+      "claim_id": "4020a310-2858-4e05-82ff-0426309f2e24",
+      "result_id": "f2a2db93-3248-423b-9d92-442fab0d46d7"
+    },
+    {
+      "claim_id": "655e05e8-628b-4793-8a1c-3651891c7381",
+      "result_id": "f2a2db93-3248-423b-9d92-442fab0d46d7"
+    },
+    {
+      "claim_id": "f38af26b-b3c8-4bf6-9db0-f6436c2c4f5a",
+      "result_id": "d4784ada-8680-4b76-84d2-ac5e55089752"
+    },
+    {
+      "claim_id": "06277016-6404-4eec-8a60-f89afad7f0f0",
+      "result_id": "bef771af-0591-4428-8847-16c6ae13392c"
+    },
+    {
+      "claim_id": "30c3b496-1a0c-4b08-be9e-7bc3cbd1949a",
+      "result_id": "bef771af-0591-4428-8847-16c6ae13392c"
+    },
+    {
+      "claim_id": "3fbb1538-e1f2-4b75-851b-c13c654d889d",
+      "result_id": "bef771af-0591-4428-8847-16c6ae13392c"
+    },
+    {
+      "claim_id": "8b0175cc-f3d0-4e77-b852-7c0bbc0a3e7e",
+      "result_id": "bef771af-0591-4428-8847-16c6ae13392c"
+    }
+  ],
+  "comparisons": []
+}

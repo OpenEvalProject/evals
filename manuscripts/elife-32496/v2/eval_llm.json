@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "GC3 codon enrichment dramatically increases protein expression in T. brucei. Using synthetic reporter genes (gLUC and GFP) with varying GC3 content, the authors demonstrate that high-GC3 genes show 4-6 fold higher expression than medium-GC3 genes, while low-GC3 genes show undetectable expression. This effect spans the full dynamic range of protein expression observed in trypanosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 provide strong experimental evidence using two independent reporter systems (gLUC and GFP) with multiple independent clones. The data show consistent, reproducible effects of codon usage on protein expression across a wide dynamic range. The use of single-copy integration eliminates position effects, and the lack of toxicity (C37) validates the experimental system. The magnitude of effects (4-6 fold differences, undetectable expression for low-GC3) is clearly demonstrated in Figures 1B-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GC3 codons increase mRNA abundance in T. brucei, though to a lesser extent than protein abundance. RNA blot analysis revealed that high-GC3 genes produce approximately 2-fold more mRNA than medium or low-GC3 genes for GFP (statistically significant), with smaller differences for gLUC. The differential effect on protein (>4-fold) versus mRNA (~2-fold) indicates that codon usage impacts translation more strongly than mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by RNA blot data (Figure 2) showing increased mRNA from GC3-enriched genes. The statistical significance is reported for GFP (C46), and the observation that protein effects exceed mRNA effects (C50) is clearly demonstrated by comparing Figures 1C and 2C. The speculation about poly(A) tail length (C48) is appropriately qualified and supported by citation to similar observations in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Genome-wide analysis reveals systematic codon usage bias patterns in T. brucei and L. major. The average CAI for T. brucei genes is 0.712, with highly expressed genes showing higher CAI (0.782). Genes encoding detected proteins have significantly higher CAI (0.724) than undetected proteins (0.701). Strand-switch genes show lower CAI (0.685), while tandem genes show elevated CAI. Similar patterns are observed in L. major.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 present comprehensive bioinformatic analysis supported by Figure 3A-B. The CAI distributions are clearly shown for multiple gene categories, and the differences between detected/undetected proteins (C55) provide validation that CAI correlates with expression. The chromosomal location analysis (C57-C60) reveals systematic patterns consistent with known genomic features. The data are internally consistent and supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Highly expressed genes in T. brucei show pronounced over-representation of GC3 codons, particularly for amino acids with only two codon choices. For xxC/T wobble codons, only the xxC tRNA is present. For amino acids with 3-6 codons, the xxT wobble tRNA is typically present, and both wobble codons are often over-represented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by the codon usage analysis in Figure 3C and citation to Horn, 2008 for tRNA gene content. The heat map clearly shows the over-representation patterns described, and the relationship to tRNA availability provides a mechanistic basis for the observed codon preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "VSG genes display unusual codon usage bias with low CAI (average 0.672), characterized by over-representation of A3 codons and under-representation of G3 and U3 codons. This atypical pattern may prevent multi-copy VSG genes from compromising allelic exclusion, as the single expressed VSG achieves high abundance through pol-I transcription and exceptional mRNA/protein stability rather than optimal translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are well-supported by Figure 3A-C showing VSG codon usage patterns and CAI values. The citations for VSG mRNA and protein half-lives (C68-C70) are appropriate. The speculation about functional significance (C71) is reasonable given the unique biology of VSG expression and is appropriately qualified as speculative. The contrast between VSG codon usage and typical highly expressed genes is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "T. brucei protein-coding sequences exhibit codon pair bias, including enrichment of duplicated codons and specific over-represented (xxC/Axx, xxU/Gxx, xxC/xxC, xxG/xxG) and under-represented (xxA/Gxx, xxU/Axx, xxC/xxG, xxG/xxC) pairs. Some pair-bias patterns limit accumulation of optimal GC3 codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by Figure 4A-C showing codon pair analysis. The patterns are clearly visualized in heat maps, and the interpretation is supported by citation to Quax et al., 2015. The observation that certain pair biases limit GC3 accumulation (C77) is a logical inference from the data. However, the authors appropriately note that direct evidence for pair-bias effects on expression is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A new high-quality T. brucei transcriptome dataset (>114 million reads, r>0.999 between replicates) reveals that mRNA abundance predicts protein abundance (r=0.57). The relationship is logarithmic overall but becomes linear when the top 10% most abundant mRNAs are excluded, possibly reflecting poor translation of highly abundant mRNAs or proteomics limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by Figure 5A and Figure 5\u2014figure supplement 1. The high correlation between replicates (C78) validates data quality. The mRNA-protein correlation (C79-C80) is consistent with other organisms. The alternative explanations for the logarithmic relationship (C83-C84) are appropriately presented as speculations with supporting citations. The statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Gene length is inversely correlated with both mRNA and protein expression in T. brucei. Short genes produce relatively more mRNA and protein than long genes, consistent with increased turnover of longer transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by Figure 5B-C showing clear inverse correlations between gene length and expression. The observation is supported by citations to Fadda et al., 2014 and Jha et al., 2014. The data are consistent and the interpretation is straightforward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Codon usage (CAI) predicts mRNA abundance in T. brucei with a correlation coefficient of 0.48, which improves to 0.52 when adjusted for gene length using the formula CAI - (0.03 \u00d7 \u221alength in kbp). Using this approach, >70% of expression estimates are within 2-fold of observed values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are strongly supported by Figure 6A-C. The correlation coefficients are clearly reported, and the improvement with length adjustment is demonstrated. The 2-fold accuracy for >70% of genes (C92) is a remarkable result given that predictions are based solely on coding sequence. The formula is simple and empirically derived, which is appropriate for this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Length-adjusted CAI predicts protein abundance in T. brucei with high accuracy. The correlation between CAI and observed protein expression is 0.55, increasing to 0.65 with length adjustment. Over 70% of protein expression estimates are within 2-fold of observed values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by Figure 6D-F showing strong correlations between predicted and observed protein levels. The improvement with length adjustment (0.55 to 0.65) is substantial and clearly demonstrated. The 2-fold accuracy for >70% of proteins is particularly impressive given the challenges of proteomics and the fact that predictions use only coding sequence information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The predictive relationship between length-adjusted CAI and mRNA expression is validated across multiple T. brucei life cycle stages and independent datasets. Correlation coefficients range from 0.50-0.54 for bloodstream-form and insect-form cells from different research groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by Figure 6\u2014figure supplement 1A-C showing consistent correlations across different life stages and datasets from different labs. The exclusion of stage-regulated genes (2.8% of genes) is appropriate. The consistency across independent datasets strongly validates the findings and demonstrates broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "For protein complexes and functionally related protein cohorts (n=23 cohorts, 277 proteins), codon usage-based predictions show exceptional correlation with observed expression (r=0.84), strongly supporting the role of codon usage bias in controlling protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by Figure 7 showing a striking correlation for protein cohorts. The high correlation (0.84) is substantially better than for individual proteins, likely because averaging across complex members reduces noise from under-sampling and other technical issues. This result provides strong validation of the codon usage hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Absolute expression estimates were derived for mRNA and protein molecules per cell, revealing expected deviations for cell cycle-specific complexes (kinetochore, 3.7-fold below prediction) and stage-regulated complexes (editosome, 2.7-fold below prediction). Membrane proteins (V-ATPase o-sector, 2.5-fold below prediction) show expected under-representation in proteomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by Figure 7 and appropriate citations. The deviations from predictions for specific complexes (C103-C105) are expected based on biological regulation and technical limitations, which actually validates the approach. The estimates are based on reasonable assumptions from the literature (C102). The identification of systematic biases demonstrates critical evaluation of the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Codon usage correlates with translation efficiency (r=0.35) and mRNA half-life (r=0.37). Notably, length adjustment does not improve the correlation with mRNA half-life, supporting a model where optimal codons increase ribosome occupancy and translation, which protects mRNA from length-independent decapping/deadenylation, thereby increasing mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by Figure 8A-B and analysis of published ribosome profiling and mRNA stability data. The correlations are modest but significant. The observation that length adjustment doesn't improve mRNA half-life correlation (C108) is important evidence for the proposed mechanism. The mechanistic model (C109) is appropriately presented as a suggestion and is consistent with the data, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The predictive relationship between codon usage and expression extends to other trypanosomatids. Analysis of published data from T. vivax shows correlations of 0.47 (mRNA) and 0.63 (protein), while L. mexicana shows a correlation of 0.43 (mRNA), supporting the view that codon usage bias controls expression across trypanosomatids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by Figure 9A-C showing consistent patterns in other trypanosomatid species. The correlations are similar to those observed in T. brucei, and the analysis of L. mexicana (diverged >120 million years ago) demonstrates evolutionary conservation. The use of published datasets from other groups strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The codon usage-based prediction method enables estimation of relative expression for the full complement of proteins, including thousands that are not detected in current proteome datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is a logical conclusion from the validated predictive models. Since the method requires only coding sequence information, it can indeed be applied to all genes regardless of whether they are detected in proteomics experiments. This addresses a major limitation of proteomics (under-sampling) mentioned in C120.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study concludes that codon usage has a major impact on gene expression in T. brucei, with both mRNA and protein expression predictable from coding sequences alone. The results support a model where optimal codons increase translation rate, resulting in reduced mRNA turnover and demonstrating that codon usage makes a major contribution to trypanosomatid transcriptomes and proteomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 and C137-C139 represent the main conclusions of the study and are well-supported by the comprehensive experimental and bioinformatic evidence presented. The experimental reporter data (Figures 1-2), genome-wide correlations (Figures 6-9), and mechanistic insights (Figure 8) collectively support these conclusions. The ability to predict expression from coding sequence alone with >70% accuracy within 2-fold is a strong validation of the central hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "T. brucei presents an excellent model for studying codon bias because it has constitutive polycistronic transcription driven by a small number of pol-II promoters, no regulated pol-II promoters for protein-coding genes, only two genes with introns, and uniform trans-splicing. These features indicate that gene expression control operates primarily post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C16 describe established features of trypanosomatid biology supported by appropriate citations. These background claims establish the rationale for the study and are well-accepted in the field. The inference that expression control is primarily post-transcriptional (C16) is logical given the uniformity of transcription and mRNA processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The abstract claims that GC3 codons have a major positive impact on mRNA and protein abundance, and that expression estimates based on coding sequences alone are within 2-fold of observed values for the majority of measured mRNAs (n>7000) and proteins (n>2000), leading to the conclusion that codon usage is a key factor in trypanosomatid gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the main findings and are fully supported by the detailed experimental and bioinformatic analyses presented in the results section. These abstract claims accurately represent the data and conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on the genetic code, codon redundancy, protein:mRNA ratios, and prior evidence for codon effects on translation in other organisms. In trypanosomatids, highly expressed genes are enriched in GC3 codons with increased tRNA gene copy numbers, and informatics analysis supports translational selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C34 provide background information supported by appropriate citations to established literature. These claims set up the context for the current study and are well-documented in the field. The citations are appropriate and the statements accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Discussion of mechanisms and context: Codon usage is challenging to study in most eukaryotes due to transcriptional control, but trypanosomatids are ideal models. The study discusses mechanisms of codon effects on mRNA stability and translation, including the role of gene length, ribosome occupancy, and potential coupling between elongation and initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C136 provide discussion and mechanistic interpretation supported by the data and appropriate citations. The speculative elements (C124, C126, C135, C136) are appropriately qualified. The discussion integrates findings from yeast and other systems to provide context. The mechanistic proposals are reasonable hypotheses consistent with the data, though they require further testing.",
+    "result_type": "MINOR"
+  }
+]

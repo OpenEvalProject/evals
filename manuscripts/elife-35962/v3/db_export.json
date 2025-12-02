@@ -1,0 +1,1592 @@
+{
+  "submission": {
+    "id": "a3ee1a73-220f-4294-a0b4-e23553239318",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:29:25.315293Z",
+    "updated_at": "2025-12-02T00:29:25.315293Z"
+  },
+  "content": [
+    {
+      "id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "submission_id": "a3ee1a73-220f-4294-a0b4-e23553239318",
+      "content_type": "manuscript",
+      "content_text": "# Stochastic processes constrain the within and between host evolution of influenza virus\n\n## Authors\n\n- John T McCrone<sup>1</sup> ([ORCID: 0000-0002-9846-8917](https://orcid.org/0000-0002-9846-8917))\n- Robert J Woods<sup>2</sup>\n- Emily T Martin<sup>3</sup>\n- Ryan E Malosh<sup>3</sup> ([ORCID: 0000-0003-3546-5935](https://orcid.org/0000-0003-3546-5935))\n- Arnold S Monto<sup>3</sup>\n- Adam S Lauring<sup>1</sup> ([ORCID: 0000-0003-2906-8335](https://orcid.org/0000-0003-2906-8335)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology and Immunology University of Michigan Ann Arbor United States\n2. Division of Infectious Diseases, Department of Internal Medicine University of Michigan Ann Arbor United States\n3. Department of Epidemiology University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe evolutionary dynamics of influenza virus ultimately derive from processes that take place within and between infected individuals. Here we define influenza virus dynamics in human hosts through sequencing of 249 specimens from 200 individuals collected over 6290 person-seasons of observation. Because these viruses were collected from individuals in a prospective community-based cohort, they are broadly representative of natural infections with seasonal viruses. Consistent with a neutral model of evolution, sequence data from 49 serially sampled individuals illustrated the dynamic turnover of synonymous and nonsynonymous single nucleotide variants and provided little evidence for positive selection of antigenic variants. We also identified 43 genetically-validated transmission pairs in this cohort. Maximum likelihood optimization of multiple transmission models estimated an effective transmission bottleneck of 1\u20132 genomes. Our data suggest that positive selection is inefficient at the level of the individual host and that stochastic processes dominate the host-level evolution of influenza viruses.\n\n## Introduction\n\nThe rapid evolution of influenza viruses has led to reduced vaccine efficacy and the continuing emergence of novel strains. Broadly speaking, evolution is the product of deterministic processes, such as selection, and stochastic processes, such as genetic drift and migration (Kouyos et al., 2006). The global evolution of influenza A virus (IAV) is dominated by the positive selection of novel antigenic variants that subsequently seed annual epidemics in the Northern and Southern hemisphere (Rambaut et al., 2008). These global patterns are contrasted by results from whole genome sequencing of viruses on more local scales, which suggest the importance of stochastic processes such as strain migration and within-clade reassortment (Nelson et al., 2006). While it is clear that influenza\u2019s evolutionary dynamics differ across scales (Nelson and Holmes, 2007; Holmes, 2009), the relative roles of deterministic and stochastic forces in viral evolution within and between acutely infected individuals remain unclear.\n\nIt is now feasible to efficiently sequence patient-derived isolates at sufficient depth of coverage to define the genetic diversity and dynamics of virus evolution within individual hosts (Kao et al., 2014). Studies of IAV populations in animal and human systems suggest that most intrahost single nucleotide variants (iSNV) are rare and that intrahost populations are subject to strong purifying selection (Rogers et al., 2015; Murcia et al., 2010; Iqbal et al., 2009; Poon et al., 2016; Dinis et al., 2016; Debbink et al., 2017). Positive selection is common in cell culture (Doud et al., 2017; Archetti and Horsfall, 1950; Foll et al., 2014), and has been observed in experimental infections in swine (Illingworth et al., 2014). However, it has only been well documented within human hosts in the extreme cases of drug resistance (Gubareva et al., 2001; Ghedin et al., 2011; Rogers et al., 2015), and long-term infection of immunocompromised individuals (Xue et al., 2017). Indeed, we and others have been unable to identify evidence for positive selection in naturally-occurring, acute human infections (Debbink et al., 2017; Dinis et al., 2016), and its relevance to within-host processes is unclear.\n\nDespite limited evidence for positive selection, novel mutations do arise within hosts and some will clearly be positively selected. Their potential for subsequent spread through host populations is heavily dependent on the size of the transmission bottleneck (Alizon et al., 2011; Zwart and Elena, 2015). If the transmission bottleneck is sufficiently wide, low frequency variants can plausibly be transmitted and spread efficiently through host populations (Geoghegan et al., 2016). While experimental infections of ferrets suggest a very narrow transmission bottleneck (Varble et al., 2014; Wilker et al., 2013), studies of equine influenza support a bottleneck wide enough to allow transmission of rare iSNV (Hughes et al., 2012; Murcia et al., 2010). The only available genetic study of influenza virus transmission in humans estimated a remarkably large transmission bottleneck, allowing for transmission of 100\u2013200 genomes (Poon et al., 2016; Sobel Leonard et al., 2017).\n\nHere, we use next generation sequencing of within-host influenza virus populations to define the evolutionary dynamics of IAV within and between human hosts. We apply a benchmarked analysis pipeline to identify iSNV and to characterize the genetic diversity of H3N2 and H1N1 populations collected over five post-pandemic seasons from individuals enrolled in a prospective household study of influenza. We find that intrahost populations are dynamic and constrained by genetic drift and purifying selection. In our study, positive selection rarely amplifies a beneficial de novo variant to a frequency greater than 2%. Contrary to what has been previously reported for human influenza transmission (Poon et al., 2016), but consistent with what has been observed in many other viruses with distinct modes of transmission (Zwart and Elena, 2015; McCrone and Lauring, 2018), we identify a very tight effective transmission bottleneck that limits the transmission of low-frequency variants.\n\n## Results\n\nWe used next generation sequencing to characterize influenza virus populations collected from individuals enrolled in the Household Influenza Vaccine Effectiveness (HIVE) study (Monto et al., 2014; Ohmit et al., 2013; Ohmit et al., 2015; Ohmit et al., 2016; Petrie et al., 2013), a community-based cohort that enrolls 213\u2013340 households of 3 or more individuals in Southeastern Michigan each year (Table 1). These households are followed prospectively from October to April, with symptom-triggered collection of nasal and throat swab specimens for identification of respiratory viruses by RT-PCR (see Materials\u00a0and\u00a0methods). In contrast to case-ascertained studies, which identify households based on an index case who seeks medical care, the HIVE study identifies symptomatic individuals regardless of illness severity. In the first four seasons of the study (2010\u20132011 through 2013\u20132014), respiratory specimens were collected 0\u20137 days after illness onset. Beginning in the 2014\u20132015 season, each individual provided two samples, a self-collected specimen at the time of symptom onset and a clinic-collected specimen obtained 0\u20137 days later. Each year, 59\u201369% of individuals had self-reported or confirmed receipt of that season\u2019s vaccine prior to local circulation of influenza virus.\n\n**Table 1.**\n Influenza viruses over five seasons in a household cohort\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>2010\u20132011</th>\n      <th>2011\u20132012</th>\n      <th>2012\u20132013</th>\n      <th>2013\u20132014</th>\n      <th>2014\u20132015</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Households</td>\n      <td>328</td>\n      <td>213</td>\n      <td>321</td>\n      <td>232</td>\n      <td>340</td>\n    </tr>\n    <tr>\n      <td>Participants</td>\n      <td>1441</td>\n      <td>943</td>\n      <td>1426</td>\n      <td>1049</td>\n      <td>1431</td>\n    </tr>\n    <tr>\n      <td>Vaccinated, n (%)*</td>\n      <td>934 (65)</td>\n      <td>554 (59)</td>\n      <td>942 (66)</td>\n      <td>722 (69)</td>\n      <td>992 (69)</td>\n    </tr>\n    <tr>\n      <td>IAV Positive Individuals\u2020</td>\n      <td>86</td>\n      <td>23</td>\n      <td>69</td>\n      <td>48</td>\n      <td>166</td>\n    </tr>\n    <tr>\n      <td>H1N1</td>\n      <td>26</td>\n      <td>1</td>\n      <td>3</td>\n      <td>47</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>H3N2</td>\n      <td>58</td>\n      <td>22</td>\n      <td>66</td>\n      <td>1</td>\n      <td>166</td>\n    </tr>\n    <tr>\n      <td>IAV Positive Households\u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Two individuals</td>\n      <td>13</td>\n      <td>2</td>\n      <td>9</td>\n      <td>7</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>Three individuals</td>\n      <td>5</td>\n      <td>2</td>\n      <td>3</td>\n      <td>3</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Four individuals</td>\n      <td>-</td>\n      <td>-</td>\n      <td>1</td>\n      <td>2</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>High Quality NGS Pairs\u00a7</td>\n      <td>4</td>\n      <td>1</td>\n      <td>2</td>\n      <td>6</td>\n      <td>39</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Self reported or confirmed receipt of vaccine prior to the specified season.\u2020RT-PCR confirmed infection.\u2021Households in which two individuals were positive within 7 days of each other. In cases of trios and quartets, the putative chains could have no pair with onset\u00a0>\u00a07 days apart.\u00a7Samples with\u00a0>\u00a0103 genome copies per \u00b5l of transport medium, adequate amplification of all eight genomic segments, and average sequencing coverage\u00a0>\u00a0103 per nucleotide._\n\nOver five seasons and nearly 6290 person-seasons of observation, we identified 77 cases of influenza A/H1N1pdm09 infection and 313 cases of influenza A/H3N2 infection (Table 1). Approximately half of the cases (n\u00a0=\u00a0166) were identified in the 2014\u20132015 season, in which there was an antigenic mismatch between the vaccine and circulating strains (Flannery et al., 2016). All other seasons were antigenically matched. Individuals within a household were considered an epidemiologically linked transmission pair if they were both positive for the same subtype of influenza virus within 7 days of each other. Several households had 3 or four symptomatic cases within this one-week window, suggestive of longer chains of transmission (Table 1).\n\n### Within-host populations have low genetic diversity\n\nWe processed all specimens for viral load quantification and next generation sequencing. Viral load measurements (genome copies per \u00b5l) were used for quality control in variant calling, which we have shown is highly sensitive to input titer (McCrone and Lauring, 2016) (Figure 1A). Accordingly, we report data on 249 high quality specimens from 200 individuals, which had a viral load of\u00a0>103 copies per microliter of transport media, adequate RT-PCR amplification of all eight genomic segments, and an average read coverage of\u00a0>103 across the genome (Table 1, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig1-v3.jpg)\n\n**Figure 1.:** (A) Boxplots (median, 25th and 75th percentiles, whiskers extend to most extreme point within median\u00a0\u00b11.5 x IQR) of the number of viral genomes per microliter transport media stratified by day post symptom onset. Notches represent the approximate 95% confidence interval of the median. (B) Boxplots (median, 25th and 75th percentiles, whiskers extend to most extreme point within median\u00a0\u00b11.5 x IQR) of the number of iSNV in 249 high quality samples stratified by day post symptom onset. (C) The number of iSNV in each isolate stratified by vaccination status. The red lines indicate the median. (D) Location of all identified iSNV in the influenza A genome. Mutations are colored nonsynonymous (blue) and synonymous (gold) relative to that sample\u2019s consensus sequence. Mutations are considered nonsynonymous if they are nonsynonymous in any known influenza open reading frame. Triangles signify mutations that were found in more than one individual in a given season.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For each sample, the sliding window mean coverage was calculated using a window size of 200 and a step of 100. The distributions of these means are plotted as box plots (median, 25th and 75th percentiles, whiskers extend to most extreme point within median\u00a0\u00b11.5 x IQR) where the y-axis represents the read depth and the x-axis indicates the position of the window in a concatenated IAV genome.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The branches are colored by season; the tip identifiers are colored by household. Arrows with numbers indicate consensus and putative minor haplotypes for samples with greater than 10 iSNV. Trees were made using FastTree (Price et al., 2010). \u2018Caledonia\u2019 refers to A/New Caledonia/20/1999(H1N1). \u2018H1N1\u2019 refers to sequence from a plasmid clone derived from a clinical sample corresponding to A/California/07/2009.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The branches are colored by season; the tip identifiers are colored by household. Arrows with numbers indicate consensus and putative minor haplotypes for samples with greater than 10 iSNV. Trees were made using FastTree (Price et al., 2010). \u2018Wisconsin_2005\u2019 refers to A/Wisconsin/67/2005(H3N2). \u2018Perth\u2019, \u2018Victoria\u2019, and \u2018HK\u2019 refer to sequences from plasmid clones derived from clinical samples corresponding to A/Perth/16/2009, A/Victoria/361/2011, A/Hong Kong/4801/2014, respectively.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) The number of iSNV identified in an isolate (y-axis) plotted against the titer (x-axis, genomes/\u03bcl transport media).\n\nWe identified intrahost single nucleotide variants (iSNV) using our empirically validated analysis pipeline (McCrone and Lauring, 2016). Our approach relies heavily on the variant caller DeepSNV, which uses a clonal plasmid control to distinguish between true iSNV and errors introduced during sample preparation and/or sequencing (Gerstung et al., 2012). Given the diversity of influenza viruses that circulate locally each season, there were a number of instances in which our patient-derived samples had mutations that were essentially fixed (>0.95 frequency) relative to the clonal control. DeepSNV is unable to estimate an error rate for the control or reference base at these positions. We therefore performed an additional benchmarking experiment to identify a threshold for majority iSNV at which we could correctly infer whether or not the corresponding minor allele was also present (see Materials and methods). We found that we could correctly identify a minor allele at a frequency of\u00a0\u22652% at such sites. We therefore report data on iSNV present at frequencies between 2% and 98%. As expected, this threshold improved the specificity of our iSNV identification and decreased our sensitivity to detect variants below 5% compared to our initial validation experiment (McCrone and Lauring, 2016), which did not employ a frequency threshold (Supplementary file 1).\n\nConsistent with our previous studies of natural infections and those of others, we found that the within-host diversity of seasonal influenza A virus (IAV) populations is low (Dinis et al., 2016; Debbink et al., 2017; Sobel Leonard et al., 2016; McCrone and Lauring, 2016). Two hundred forty-three out of the 249 samples had fewer than 10 minority iSNV (median 2, IQR 1\u20133). There were six samples with greater than 10 minority iSNV. In 3 of these cases, the frequency distribution of minority iSNVs was bimodal, suggesting that the iSNV were linked and that the samples represented mixed infections. Consistent with this hypothesis, putative genomic haplotypes based on these minority iSNV clustered with distinct isolates on phylogenetic trees (Figure 1\u2014figure supplements 2 and 3), and these samples were removed from subsequent analysis. While viral shedding was well correlated with days post symptom onset (Figure 1A), the number of minority iSNV identified was not affected by the day of infection, viral load, subtype, or vaccination status (Figure 1B and C, and Figure 1\u2014figure supplement 4). Single nucleotide variants were distributed evenly across the genome (Figure 1D).\n\nMinority variants were rarely shared among multiple individuals. Ninety-eight percent of minority iSNV were only found once, 2.3% were found in two individuals, and no minority iSNV were found in three or more individuals. The low level of shared diversity suggests that within-host populations explore distinct regions of sequence space with little evidence for parallel evolution. Of the 12 minority iSNV that were found in multiple individuals (triangles in Figure 1D), three were nonsynonymous and none were present in antigenic epitopes. The vast majority of minority variants were rare (frequency 0.02\u20130.07) (Figure 2A). The ratio of nonsynonymous to synonymous variants was 0.75, and given the excess of nonsynonymous sites across the genome and within the HA gene, these data suggest significant purifying selection within hosts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig2-v3.jpg)\n\n**Figure 2.:** (A) Histogram of within-host iSNV frequency in 249 high quality samples. Bin width is 0.05 beginning at 0.02. As in Figure 1, mutations were classified as nonsynonymous (blue) if they were nonsynonymous in any known influenza reading frame. Synonymous mutations are gold. (B) The within-host frequency of nonsynonymous mutations in HA stratified by whether or not they are in known antigenic sites (p=0.46 Wilcoxon rank sum). (C) The global frequency of putative antigenic minority iSNV identified in our cohort that have circulated at frequencies above 5% globally since their time of collection. Each variant is labeled according the H3 numbering scheme. The dashed line indicates when samples were collected. Frequency traces are faded prior to the collection date. (D) Timing of sample collection for 43 paired longitudinal samples relative to day of symptom onset. Of the 49 total, 43 pairs had minority iSNV present in either sample. (E) The change in frequency over time for minority iSNV identified for the paired samples in (A). Nonsynonymous and synonymous iSNV are plotted separately. Mutations are colored according to whether they were detected in both isolates (blue), detected only the first isolate (red), or detected only in the second isolate (yellow). The threshold of detection was 2%. The arrows indicate mutations in known antigenic sites.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The x-axis represents iSNV frequencies found in the home-acquired nasal swab. The y-axis represents iSNV frequencies found the clinic-acquired combined throat and nasal swab. Dashed line is a one to one expectation. (B) Frequency of all minority iSNV as determined from replicate RT-PCR and sequencing libraries (see Materials and methods). Data are stratified by viral load of original samples. Note that samples with viral loads\u00a0>\u00a0105 were not run in duplicate and those with viral loads\u00a0<\u00a0103 were not used in the study. Dashed line is a one to one expectation.\n\n### iSNV within and outside antigenic epitopes have similar frequencies\n\nAlthough the full range of the H3 antigenic sites have not been functionally defined, it is estimated that 131 of the 329 amino acids in HA1 lie in or near these sites (Lee and Chen, 2004). Although we identified 16 minority nonsynonymous iSNV in these regions (Supplementary file 2), mutations in antigenic epitopes were not present at significantly higher within-host frequencies than other nonsynonymous mutations in HA (Figure 2B). Five putative antigenic variants were in positions that have been experimentally shown to differ among antigenically drifted viruses (Smith et al., 2004; Wiley et al., 1981), and two (193S and 189N) lie in the \u2018antigenic ridge\u2019 that is a major contributor to antigenic drift (Koel et al., 2013). Five of the iSNV in antigenic epitopes have been detected as minority variants above 5% at the global level since the time of isolation (62G, 128A, 193S, 262N, and 307R) with one (62G) seemingly increasing in global frequency (Figure 2C). An additional within host variant (307R) has dominated the population for the past 12 years (Neher and Bedford, 2015). We identified one putative H1N1 antigenic variant (208K in antigenic site Ca) (Caton et al., 1982; Xu et al., 2010). In total, putative antigenic variants account for 1.0\u20132.8% of minority iSNV identified and were found in 3.0\u20137.1% of infections. None of these iSNV were shared among multiple individuals.\n\n### Within host populations are dynamic\n\nWe next examined the changes in within-host virus diversity over time in 49 individuals who provided paired longitudinal samples during the 2014/2015 season (Figure 2D). We found that there was very little change in iSNV frequency in populations sampled twice on the same day (R2\u00a0=\u00a00.982, Figure 2E and Figure 2\u2014figure supplement 1A), and the concordance of same day samples suggests that our sampling procedure is reproducible. An analysis of sequence data from replicate libraries indicates that our estimates\u00a0of iSNV frequency are precise (Figure 2\u2014figure supplement 1B). In samples separated by at least a day, only 57% iSNV found in the first sample persisted in the second, above the 2% limit of detection. Additionally, the majority of iSNV (68%) found in the second sample were either new or previously present below the 2% limit of detection. Taken together, these data suggest that the population present in the upper respiratory tract is highly dynamic while maintaining a stable consensus. Of note, 6 iSNV in our longitudinal data set lay within antigenic epitopes (arrows in Figure 2E). Their dynamics are similar to those of other nonsynonymous iSNV and synonymous iSNV, suggesting that most mutations change in frequency due to stochastic as opposed to selective processes. Together with our prior work (Debbink et al., 2017), these data suggest that the positive selection of novel variants within hosts is inefficient and rarely amplifies a newly generated variant to a frequency greater than 2%.\n\n### Identification of forty-three transmission pairs\n\nOur within-host data suggest that newly arising iSNV with positive fitness effects are likely to be present at low frequencies (<2%) during an acute infection. The maintenance of these mutations in host populations is therefore highly dependent on the transmission bottleneck. We analyzed virus populations from 85 households with concurrent infections to quantify the level of shared viral diversity and to estimate the size of the IAV transmission bottleneck (Table 1). Because epidemiological linkage does not guarantee that concurrent cases constitute a transmission pair (Petrie et al., 2017), we used stringent criteria to eliminate individuals in a household with co-incident community acquisition of distinct viruses. We considered all individuals in a household with symptom onset within a 7 day window to be epidemiologically linked. The donor in each putative pair was defined as the individual with the earlier onset of symptoms. We discarded a transmission event if there were multiple possible donors with the same day of symptom onset. Donor and recipients were not allowed to have symptom onset on the same day, unless the individuals were both index cases for the household. In these six instances, we analyzed the data for both possible donor-recipient directionalities. Based on these criteria, our cohort had 124 putative household transmission events over five seasons (Table 1). Of these, 52 pairs had samples of sufficient quality for reliable identification of iSNV from both individuals.\n\nWe next used sequence data to determine which of these 52 epidemiologically linked pairs represented true household transmission events as opposed to coincident community-acquired infections. We measured the genetic distance between influenza populations from each household pair by L1-norm and compared these distances to those of randomly assigned community pairs within each season (Figure 3A, see also trees in Figure 1\u2014figure supplements 2 and 3). While the L1-norm of a pair captures differences between the populations at all levels, in our cohort, it was largely driven by differences at the consensus level. We only considered individuals to be a true transmission pair if they had a genetic distance below the 5th percentile of the community distribution of randomly assigned pairs (Figure 3A). Forty-seven household transmission events met this criterion (Figure 3B). Among these 47 sequence-validated transmission pairs, three had no iSNV in the donor and one additional donor appeared to have a mixed infection. These four transmission events were removed from our bottleneck analysis, as donors without iSNV are uninformative and mixed infections violate model assumptions of site independence (see Materials and methods). We estimated the transmission bottleneck in the remaining 43 high-quality pairs (37 H3N2, 6 H1N1, Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig3-v3.jpg)\n\n**Figure 3.:** (A) The distribution of pairwise L1-norm distances for household (blue) and randomly-assigned community (gold) pairs. The bar heights are normalized to the height of the highest bar for each given subset (47 for household, 1592 for community). The red line represents the 5th percentile of the community distribution. (B) Timing of symptom onset for 52 epidemiologically linked transmission pairs. Days of symptom onset for both donor and recipient individuals are indicated by black dots. Dashed lines represent pairs that were removed due to abnormally high genetic distance between isolates, see (A). (C) The frequency of donor iSNV in both donor and recipient samples. Frequencies below 2% and above 98% were set to 0% and 100% respectively. (D) The presence-absence model fit compared with the observed data. The x-axis represents the frequency of donor iSNV with transmitted iSNV plotted along the top and nontransmitted iSNV plotted along the bottom. The line represents the predicted probability of transmission given by the presence-absence model with a mean bottleneck of 1.68. The shaded regions represent the 95% confidence interval. Black points on the plot represent the probability of transmission estimated as the proportion of iSNV transmitted within a sliding window of width 5% and a step of 1%. The error bars represent the 95% confidence interval and were derived from a binomial distribution as in (Sobel Leonard et al., 2017). Only those windows with more than 5 iSNV are plotted. Blue curve shows the probability of transmission at a given frequency given a bottleneck size of 10 in the presence-absence model. (E) The beta-binomial model fit. Similar to (D), except the predicted outcomes are the based on a beta-binomial model using a mean bottleneck of 1.75. Blue curve shows the probability of transmission at a given frequency given a bottleneck size of 10 in the beta-binomial model.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35962/elife-35962-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The frequency of iSNV in both recipient and donor isolates. iSNV were identified using the original variant calling pipeline as in (McCrone and Lauring, 2016). (B) The presence-absence model fit as in Figure 3D with relaxed variant calling.\n\nA transmission bottleneck restricts the amount of genetic diversity that is shared by both members of a pair. We found that few minority iSNV where polymorphic in both the donor and recipient populations (Figure 3C). Minority iSNV in the donor were either absent or fixed in the recipient (top and bottom of plot). The lack of shared polymorphic sites (which would lie in the middle of the plot in Figure 3C) suggests a stringent effective bottleneck in which only one allele is passed from donor to recipient.\n\n### Estimation of the transmission bottleneck\n\nWe applied a simple presence-absence model to quantify the effective transmission bottleneck in our cohort. The presence-absence model considers only whether or not a donor allele is present or absent in the recipient sample. Under this model, transmission is a neutral, random sampling process, and the probability of transmission is simply the probability that the iSNV will be included at least once in the sample given its frequency in the donor and the sample size, or bottleneck. We estimated a distinct bottleneck for each transmission pair and assumed these bottlenecks followed a zero-truncated Poisson distribution. Maximum likelihood optimization determined that a mean bottleneck of 1.68 (lambda\u00a0=\u00a01.15; 0.49\u20132.14, 95% CI) best described the data. This distribution indicates that the majority of bottlenecks are 1 and that 95% of bottlenecks are expected to be\u00a0\u22643. One outlier was a single transmission pair with an estimated bottleneck of\u00a0>200; this pair had two minority iSNV present at very low frequencies in both donor and recipient. There were no apparent differences between H3N2 and H1N1 pairs. The model fit was evaluated by comparing the probability of transmission predicted by the model with that estimated from the data using a sliding window (Figure 3D). The predicted transmission probabilities capture the underlying trend in the data, which suggests that transmission dynamics can be appropriately modeled using a selectively neutral, stringent bottleneck.\n\nBecause the presence-absence model can underestimate the transmission bottleneck in some circumstances (Sobel Leonard et al., 2017), we also applied a beta binomial model, which Leonard et al. have used to account for the stochastic dynamics of transmitted variants. This model allows for a limited amount of time-independent genetic drift within the recipient (Sobel Leonard et al., 2017), and we modified it to also account for our benchmarked sensitivity for rare variants (Supplementary file 1, Current Pipeline). For all donor-derived iSNV that were absent in the recipient, we estimated the likelihood that these variants were transmitted but either drifted below our level of detection or drifted below 10% and were missed by our variant identification. Despite the relaxed assumptions provided by this modified beta binomial model, maximum likelihood estimation only marginally increased the average bottleneck size (mean 1.75: lambda 1.25; 0.55\u20132.28, 95% CI) relative to the simpler presence-absence model. We also fit a long-tailed, discrete distribution based on the log-normal. As expected, this analysis resulted in a slightly wider distribution with a mode of 1, a 95th percentile of 11 and a 97.5th percentile of 21. Although the beta-binomial again reproduced the trend in the data (Figure 3E), the fit was not better than that of the presence-absence model (AIC 80.2 for beta-binomial compared to 74.5 for the presence-absence model), suggesting the stochastic loss of iSNV in the recipient is not a major contributing factor to the transmission dynamics observed here. As in the presence-absence model, there was no apparent stratification in bottleneck size based on vaccination status, donor or recipient age, or influenza A subtype (Supplementary file 3).\n\nBecause our bottleneck estimates were much lower than what has previously been reported for human influenza (Poon et al., 2016), we investigated the impact that our simplifying assumptions could have on our results. In particular, the presence-absence model assumes perfect detection of variants in donor and recipient, and it can therefore underestimate the size of a bottleneck in the setting of donor-derived variants that are transmitted but not detected in the recipient. These \u2018false negative\u2019 variants can occur when the frequency of an iSNV drifts below the level of detection (e.g. 2% frequency) or when the sensitivity of sequencing is less than perfect for variants at that threshold (e.g. 15% sensitivity for variants at a frequency 2\u20135%). To determine the impact of sequencing sensitivity and specificity on our bottleneck estimates, we re-called variants using our original pipeline without the 2% frequency cut-off. As shown in Supplementary file 1, this increases the sensitivity of iSNV detection in the 1\u20135% frequency range, and also the number of false positive variant calls (McCrone and Lauring, 2016). This analysis only slightly increased average transmission bottleneck to 2.11 (lambda\u00a0=\u00a01.75; 0.87\u20132.95, 95% CI), and indicates that our results are not biased by the added stringency used in the initial analysis. Interestingly, the inclusion of these low-frequency iSNV reduced model fit and led to an overestimation of the probability of transmitting rare iSNV (Figure 3\u2014figure supplement 1). These low-frequency bins are likely dominated by iSNV that were not present at the time of transmission either because they are sequencing artifacts or underwent stochastic extinction in the donor prior to transmission.\n\n## Discussion\n\nWe characterized influenza virus dynamics in human hosts through sequencing of 249 specimens from 200 individuals collected over 6290 person-seasons of observation. In our study, we find that acute influenza infections are characterized by low diversity, limited positive selection, and tight transmission bottlenecks. Because we used viruses collected over five influenza seasons from individuals enrolled in a prospective household cohort, these dynamics are likely to be broadly representative of many seasonal influenza infections in temperate regions. Our results are further strengthened by the use of a validated sequence analysis pipeline and models that are robust to the underlying assumptions. The observed within-host dynamics and the tight effective transmission bottleneck suggest that stochastic processes, such as genetic drift, dominate influenza virus evolution at the level of individual hosts. This stands in contrast to the prominent role of positive selection in the global evolution of seasonal influenza.\n\nContrary to previous studies, which have found signatures of adaptive evolution in infected hosts (Gubareva et al., 2001; Rogers et al., 2015; Ghedin et al., 2011; Sobel Leonard et al., 2016), we have found only limited evidence of positive selection during acute infection. Previous reports have relied on infections in which selective pressures are likely to be particularly strong (e.g. due to drug treatment or infection with a poorly adapted virus), or in which the virus has replicated within a host for an extended period of time (Xue et al., 2017). Under these conditions, it is plausible that positively selected alleles reach levels of detection. We suggest that these are important and informative exceptions to dynamics defined here, in which positive selection is rarely strong enough to drive a new mutation to a frequency above 2% over the course of several days. Our findings are consistent with the observed global rates of influenza evolution and with epidemiological studies that have shown limited antigenic selection over the course of local epidemics (Nelson et al., 2006; Bedford et al., 2015).\n\nWe used both a simple presence-absence model and a more complex beta binomial model to estimate an extremely tight transmission bottleneck. The estimation of a small bottleneck is due to the fact that at most polymorphic sites in the donor, only one allele (iSNV) was found in the recipient. While our methods for variant calling may be more conservative than those used in similar studies, we found that relaxing our variant calling criteria only led to the inclusion of false positive variants and did not significantly inflate our estimates. Furthermore, the beta binomial model accounts for false negative iSNV (i.e. variants that are transmitted but not detected in the donor), which can lead to underestimated transmission bottlenecks (Sobel Leonard et al., 2017). Our formulation of this model incorporates empirically determined sensitivity and specificity metrics to account for both false negative iSNV and false positive iSNV (McCrone and Lauring, 2016). Finally, if rare, undetected, iSNV were shared between linked individuals, we would expect to see transmission of more common iSNV (frequency 5\u201310%), which we can detect with high sensitivity. In our data, the transmission probability iSNVs\u00a0>\u00a05% frequency in the donor were also well predicted by small bottleneck size (Figure 3D and E).\n\nAlthough the size of our transmission bottleneck is consistent with estimates obtained for other viruses and in experimental animal models of influenza (Zwart and Elena, 2015; Varble et al., 2014), it differs substantially from the only other study of bottlenecks in natural human infection (Poon et al., 2016; Sobel Leonard et al., 2017). While there are significant differences in the design and demographics of the cohorts, the influenza seasons under study, and sequencing methodology (Kugelman et al., 2017), the bottleneck size estimates are fundamentally driven by the amount of viral diversity shared among individuals in a household. Importantly, and as in Poon et al., we used both epidemiologic linkage and the genetic relatedness of viruses in households to define transmission pairs and to exclude confounding from the observed background diversity in the community. We find that household transmission pairs and randomly assigned community pairs had distinct patterns of shared consensus and minority variant diversity, a pattern that is distinct from the observations of Poon et al. An unexplained aspect of their study is that rare iSNV were frequently shared by randomly selected individuals, and more common ones were not (Poon et al., 2016).\n\nAccurately modeling and predicting influenza virus evolution requires a thorough understanding of the virus\u2019 population structure. Some models have assumed a large intrahost population and a relatively loose transmission bottleneck (Geoghegan et al., 2016; Russell et al., 2012; Peck et al., 2015). Here, adaptive iSNV can rapidly rise in frequency and low frequency variants can have a high probability of transmission. In such a model, it would be possible for an emerging virus to become more transmissible or a seasonal virus to evolve resistance to vaccine-induced immunity over a short transmission chain (Herfst et al., 2012; Russell et al., 2012). Although the dynamics of emergent avian influenza and human adapted seasonal viruses likely differ (Petrova and Russell, 2017), our work suggests that fixation of multiple mutations over the course of a single acute infection is unlikely.\n\nWhile it may seem counterintuitive that influenza evolution is dominated by stochasticity on local scales and positive selection on global scales, these models are certainly not in conflict. We have deeply sequenced 332 intrahost populations from 283 individuals collected over more than 11,000 person-seasons of observation and only identified a handful of minority antigenic variants with limited evidence for positive selection (this work and [Debbink et al., 2017]). Importantly, our data suggest that even if selection acts below our level of detection, such rare variants are unlikely to transmit. Given the size of the estimated bottleneck, the probability of transmission is approximately 1.7% for a variant at 1% frequency and 3.3% for a variant at 2% frequency. However, with several million infected individuals each year, even inefficient processes and rare events at the scale of individual hosts are likely to occur at a reasonable frequency on a global scale.\n\n## Materials and methods\n\n### Description of the cohort\n\nThe HIVE cohort (Monto et al., 2014; Ohmit et al., 2013, 2015, 2016; Petrie et al., 2013), established at the UM School of Public Health in 2010, enrolled and followed households of at least three individuals with at least two children\u00a0<\u00a018 years of age; households were then followed prospectively throughout the year for ascertainment of acute respiratory illnesses. Study participants were queried weekly about the onset of illnesses meeting our standard case definition (two or more of: cough, fever/feverishness, nasal congestion, sore throat, body aches, chills, headache if\u00a0\u22653 years old; cough, fever/feverishness, nasal congestion/runny nose, trouble breathing, fussiness/irritability, decreased appetite, fatigue in\u00a0<3 years old), and the symptomatic participants then attended a study visit at the research clinic on site at UM School of Public Health for sample collection. For the 2010\u20132011 through 2013\u20132014 seasons, a combined nasal and throat swab (or nasal swab only in children\u00a0<\u00a03 years of age) was collected at the onsite research clinic by the study team. Beginning with the 2014\u20132015 seasons, respiratory samples were collected at two time points in each participant meeting the case definition; the first collection was a self- or parent-collected nasal swab collected at illness onset. Subsequently, a combined nasal and throat swab (or nasal swab only in children\u00a0<\u00a03 years of age) was collected at the onsite research clinic by the study team. Families with very young children (<3 years of age) were followed using home visits by a trained medical assistant.\n\nActive illness surveillance and sample collection for cases were conducted October through May and fully captured the influenza season in Southeast Michigan in each of the study years. Data on participant, family and household characteristics, and on high-risk conditions were additionally collected by annual interview and review of each participant\u2019s electronic medical record. In the current cohort, serum specimens were also collected twice yearly during fall (November-December) and spring (May-June) for serologic testing for antibodies against influenza.\n\nThis study was approved by the Institutional Review Board of the University of Michigan Medical School. Adults provided written informed consent for participation for themselves and their children; children 7\u201317 years provided oral assent.\n\n### Identification of influenza virus\n\nRespiratory specimens were processed daily to determine laboratory-confirmed influenza infection. Viral RNA was extracted (Qiagen QIAamp Viral RNA Mini Kit,\u00a0Germantown,\u00a0MD) and tested by RT-PCR for universal detection of influenza A and B. Samples with positive results by the universal assay were then subtyped to determine A(H3N2), A(H1N1), A(pH1N1) subtypes and B(Yamagata) and B(Victoria) lineages. We used primers, probes and amplification parameters developed by the Centers for Disease Control and Prevention Influenza Division for use on the ABI 7500 Fast Real-Time PCR System platform. An RNAseP detection step was run for each specimen to confirm specimen quality and successful RNA extraction.\n\n### Quantification of viral load\n\nQuantitative reverse transcription polymerase chain reaction (RT-qPCR) was performed on 5 \u03bcl RNA from each sample using CDC RT-PCR primers InfA Forward, InfA Reverse, and InfA probe, which bind to a portion of the influenza M gene (CDC protocol, 28 April 2009). Each reaction contained 5.4 \u03bcl nuclease-free water, 0.5 \u03bcl each primer/probe, 0.5 \u03bcl SuperScript III RT/Platinum Taq mix (Invitrogen111732,\u00a0Carlsbad,\u00a0CA) 12.5 \u03bcl PCR Master Mix, 0.1 \u03bcl ROX, 5 \u03bcl RNA. The PCR master mix was thawed and stored at 4\u00b0C, 24 hr before reaction set-up. A standard curve relating copy number to Ct value was generated based on 10-fold dilutions of a control plasmid run in duplicate.\n\n### Illumina library preparation and sequencing\n\nWe amplified cDNA corresponding to all eight genomic segments from 5 \u03bcl of viral RNA using the SuperScript III One-Step RT-PCR Platinum Taq HiFi Kit (Invitrogen 12574). Reactions consisted of 0.5 \u03bcl Superscript III Platinum Taq Mix, 12.5 \u03bcl 2x reaction buffer, 6 \u03bcl DEPC water, and 0.2 \u03bcl of 10 \u03bcM Uni12/Inf1, 0.3 \u03bcl of 10 \u03bcM Uni12/Inf3, and 0.5 \u03bcl of 10 \u03bcM Uni13/Inf1 universal influenza A primers (Zhou et al., 2009). The thermocycler protocol was: 42 \u02daC for 60 min then 94 \u02daC for 2 min then 5 cycles of 94 \u02daC for 30 s, 44 \u02daC for 30 s, 68 \u02daC for 3 min, then 28 cycles of 94 \u02daC for 30 s, 57 \u02daC for 30 s, 68 \u02daC for 3 min. Amplification of all eight segments was confirmed by gel electrophoresis, and 750 ng of each cDNA mixture were sheared to an average size of 300 to\u00a0400 bp using a Covaris (Woburn,\u00a0MA)\u00a0S220 focused ultrasonicator. Sequencing libraries were prepared using the NEBNext Ultra DNA library prep kit (NEB E7370L), Agencourt AMPure XP beads (Beckman Coulter A63881,\u00a0Indianapolis,\u00a0IN), and NEBNext multiplex oligonucleotides for Illumina (NEB E7600S,\u00a0Ipswich,\u00a0MA). The final concentration of each barcoded library was determined by Quanti PicoGreen dsDNA quantification (ThermoFisher Scientific,\u00a0Waltham,\u00a0MA), and equal nanomolar concentrations were pooled. Residual primer dimers were removed by gel isolation of a 300\u2013500 bp band, which was purified using a GeneJet Gel Extraction Kit (ThermoFisher Scientific). Purified library pools were sequenced on an Illumina HiSeq 2500 with 2 \u00d7 125 nucleotide paired end reads. All raw sequence data have been deposited at the NCBI sequence read archive (BioProject Accession number: PRJNA412631). PCR amplicons derived from an equimolar mixture of eight clonal plasmids, each containing a genomic segment of the circulating strain were processed in similar fashion and sequenced on the same HiSeq flow cell as the appropriate patient derived samples. These clonally derived samples served as internal controls to improve the accuracy of variant identification and control for batch effects that confound sequencing experiments.\n\n### Identification of iSNV\n\nIntrahost single nucleotide variants were identified in samples that had greater than 103 genomes/\u03bcl and an average coverage\u00a0>1000 x across the genome. Variants were identified using DeepSNV and scripts available at https://github.com/lauringlab/variant_pipeline as described previously (McCrone and Lauring, 2016; copy archived at https://github.com/elifesciences-publications/variant_pipeline) with a few minor and necessary modifications. Briefly, reads were aligned to the reference sequence (H3N2 2010\u20132011 and 2011\u20132012: GenBank CY121496-503, H3N2 2012\u20132013:GenBank KJ942680-8, H3N2 2014\u20132015: Genbank CY207731-8, H1N1 GenBank: CY121680-8) using Bowtie2 (35). Duplicate reads were then marked and removed using Picard (http://broadinstitute.github.io/picard/). We identified putative iSNV using DeepSNV. Bases with phred\u00a0<30 were masked. Minority iSNV (frequency\u00a0<50%) were then filtered for quality using our empirically determined quality thresholds (p-value<0.01 DeepSNV, average mapping quality\u00a0>30, average Phred\u00a0>\u00a035, average read position between 31 and 94). To control for RT-PCR errors in samples with lower input titers, all isolates with titers between 103 and 105 genomes/\u03bcl were processed and sequenced in duplicate. Only iSNV that were found in both replicates were included in down stream analysis. The frequency of the variant in the replicate with higher coverage at the iSNV location was assigned as the frequency of the iSNV. Finally, any SNV with a frequency below 2% was discarded.\n\nGiven the diversity of the circulating strain in a given season, there were a number of cases in which isolates contained mutations that were essentially fixed (>95%) relative to the plasmid control. Often in these cases, the minor allele in the sample matched the major allele in the plasmid control. We were, therefore, unable to use DeepSNV in estimating the base specific error rate at this site for these minor alleles and required an alternative means of discriminating true and false minority iSNV. To this end we applied stringent quality thresholds to these putative iSNV and implemented a 2% frequency threshold. In order to ensure we were not introducing a large number of false positive iSNV into our analysis, we performed the following experiment. Perth (H3N2) samples were sequenced on the same flow cell as both the Perth and Victoria (H3N2) plasmid controls. Minority iSNV were identified using both plasmid controls. This allowed us to identify rare iSNV at positions in which the plasmid controls differed both with and without the error rates provided by DeepSNV. We found that at a frequency threshold of 2% the methods were nearly identical (NPV of 1, and PPV of 0.94 compared to DeepSNV).\n\n### Overview of models used for estimating the transmission bottleneck\n\nWe model transmission as a simple binomial sampling process (Sobel Leonard et al., 2017). In our first model, we assume any transmitted iSNV, no matter the frequency, will be detected in the recipient. In the second, we relax this assumption and account for false negative iSNV in the recipient. To include the variance in the transmission bottlenecks between pairs we use maximum likelihood optimization to fit the average bottleneck size assuming the distribution follows a zero-truncated Poisson distribution.\n\n### Presence/Absence model\n\nThe presence/absence model makes several assumptions. We assume perfect detection of all transmitted iSNV in the recipient. For each donor iSNV, we measure only whether or not the variant is present in the recipient. Any iSNV that is not found in the recipient is assumed to have not been transmitted. We also assume the probability of transmission is determined only by the frequency of the iSNV in the donor at the time of sampling (regardless of how much time passes between sampling and transmission). The probability of transmission is simply the probability that the iSNV is included at least once in a sample size equal to the bottleneck. Finally, we assume all genomic sites are independent of one another. For this reason, we discarded the one case where the donor was likely infected by two strains, as the iSNV were certainly linked.\n\nBecause the presence/absence model is unaware of the frequency of alleles in the recipient we must track both alleles at each donor polymorphic site.\n\nLet $A_{1}$ and $A_{2}$ be alleles in donor $j$ at genomic site $i$. Let $P(A_{1})$ be the probability that $A_{1}$ is the only transmitted allele. There are three possible outcomes for each site. Either only $A_{1}$ is transmitted, only $A_{2}$ is transmitted, or both $A_{1}$ and $A_{2}$ are transmitted. The probability of only $A_{1}$ being transmitted given a bottleneck size of $N_{b}$ is\n\n$$\nP_{i,j}(A_{1}\u2223N_{b})=p_{1}^{N_{b}}\n$$\n\nwhere $p_{1}$ is the frequency of $A_{1}$ in the donor. In other words, this is simply the probability of only drawing $A_{1}$ in $N_{b}$ draws. The probability that only $A_{2}$ is transmitted is similarly defined.\n\nThe probability of both alleles being transmitted is given by\n\n$$\nP_{i,j}(A_{1},A_{2}\u2223N_{b})=1-(p_{1}^{N_{b}}+p_{2}^{N_{b}})\n$$\n\nwhere $p_{1}$ and $p_{2}$ are the frequencies of the alleles respectively. This is simply the probability of not picking only $A_{1}$ or only $A_{2}$ in $N_{b}$ draws.\n\nThis system could easily be extended to cases where there are more than two alleles present at a site; however, that never occurs in our data set.\n\nFor ease, we will denote the likelihood of observing the data at a polymorphic site $i$ in each donor $j$ given the bottleneck size $N_{b}$ as $P_{i,j}(N_{b})$ where $P_{i,j}(N_{b})$ is defined by equation 1 if only one allele is transmitted and equation 2 if two alleles are transmitted.\n\nThe log likelihood of a bottleneck of size $N_{b}$ is given by\n\n$$\nLL(N_{b})=\\sumj\\sumiLn(P_{i,j})\n$$\n\nwhere $i,j$ refers to the $i$th polymorphic site in the $j$th donor. This is the log of the probability of observing the data summed over all polymorphic sites across all donors.\n\nBecause the bottleneck size is likely to vary across transmission events, we used maximum likelihood to fit the bottleneck distribution as opposed to fitting a single bottleneck value. Under this model we assumed the bottlenecks were distributed according to a zero-truncated Poisson distribution parameterized by $\\lambda$. The likelihood of observing the data given a polymorphic site $i$ in donor $j$ and $\\lambda$ is\n\n$$\nP_{i,j}(\\lambda)=\\sumN_{b}=1\u221eP_{i,j}(N_{b})P(N_{b}\u2223\\lambda)\n$$\n\nwhere $P_{i,j}(N_{b})$ is defined as above, $P(N_{b}\u2223\\lambda)$ is the probability of drawing a bottleneck of size $N_{b}$ from a zero-truncated Poisson distribution with a mean of $\\frac{\\lambda}{1-e^{-\\lambda}}$. The sum is across all possible $N_{b}$ defined on $[1,\u221e)$. Unless otherwise noted, we only investigated bottleneck sizes up to 100, as initial analyses suggested $\\lambda$ is quite small and the probability of drawing a bottleneck size of 100 from a zero-truncated Poisson distribution with $\\lambda=10$ is negligible. We follow this convention whenever this sum appears.\n\nThe log likelihood of $\\lambda$ for the data set is given by\n\n$$\nLL(\\lambda)=\\sumj\\sumiLn(\\sumN_{b}=1\u221eP_{i,j}(N_{b})P(N_{b}\u2223\\lambda))\n$$\n\n### Beta binomial model\n\nThe Beta binomial model is explained in detail in Leonard et al. (Sobel Leonard et al. 2017). It is similar to the presence/absence model in that transmission is modeled as a simple sampling process; however, it relaxes the following assumptions. In this model, the frequencies of transmitted variants are allowed to change between transmission and sampling according a beta distribution. The distribution is not dependent on the amount of time that passes between transmission and sampling, but rather depends on the size of the founding population (here assumed to equal to $N_{b}$) and the number of variant genomes present in founding population $k$. Note the frequency in the donor is assumed to be the same between sampling and transmission.\n\nThe equations below are very similar to those presented by Leonard et al. with one exception. Because we know the sensitivity of our method to detect rare variants based on the expected frequency and the titer, we can include the possibility that iSNV are transmitted but are missed due to poor sensitivity. Because the beta binomial model is aware of the frequency of the iSNV in the recipient, no information is added by tracking both alleles at a genomic site $i$.\n\nLet $p_{i,j_{d}}$ represent the frequency of the minor allele at position $i$ in the donor of some transmission pair $j$. Similarly, let $p_{i,j_{r}}$ be the frequency of that same allele in the recipient of the $j$th transmission pair. Then, as in Leonard et al., the likelihood of some bottleneck $N_{b}$ for the data at site $i$ in pair $j$ where the minor allele is transmitted is given by\n\n$$\nL(N_{b})_{i,j}=\\sumk=1N_{b}p_beta(p_{i,j_{r}}\u2223k,N_{b}-k)p_bin(k\u2223N_{b},p_{i,j_{d}})\n$$\n\nWhere p_beta is the probability density function for the beta distribution and p_bin is the probability mass function for the binomial distribution.\n\nThis is the probability density that the transmitted allele is found in the recipient at a frequency of $p_{i,j_{r}}$ given that the variant was in $k$ genomes in a founding population of size $N_{b}$ times the probability of drawing $k$ variant genomes in a sample size of $N_{b}$ and a variant frequency of $p_{i,j_{d}}$. This is then summed for all possible $k$ where $1\\leqk\\leqN_{b}$.\n\nAs in equation 4 the likelihood of a zero truncated Poisson with a mean of $\\frac{\\lambda}{1-e^{-\\lambda}}$ given this transmitted variants is then given by\n\n$$\nL(\\lambda)_{i,j}^{transmitted}=\\sumN_{b}=1\u221eL(N_{b})_{i,j}P(N_{b}\u2223\\lambda)\n$$\n\nThis is simply the likelihood of each $N_{b}$ weighted by the probability of drawing a bottleneck size of $N_{b}$ from bottleneck distribution.\n\nIn this model, there are three possible mechanisms for a donor iSNV to not be detected in the recipient. (i) The variant was not transmitted. (ii) The variant was transmitted but is present below our limit of detection (2%). (iii) The variant was transmitted and is\u00a0present above our limit of detection but represents a false negative in iSNV identification.\n\nAs in Leonard et al., the likelihood of scenarios (i) and (ii) for a given $N_{b}$ are expressed as\n\n$$\nL(N_{b})_{i,j}^{lost}=\\sumk=0N_{b}p_beta_cdf(p_{i,j_{r}}<0.02\u2223k,N_{b}\u2212k)p_bin(k\u2223N_{b},p_{i,j_{d}})\n$$\n\nWhere p_beta_cdf is the cumulative distribution function for the beta distribution. Note that if $k=0$ (i.e. the iSNV was not transmitted) then the term reduces to the probability of not drawing the variant in $N_{b}$ draws.\n\nThe likelihood of the variant being transmitted but not detected in the recipient given a bottleneck of $N_{b}$ is described by\n\n$$\nL(N_{b})_{i,j}^{missed}=\\sumk=0N_{b}\\sumf_{e}[0.02,0.05,0.1)p_beta_cdf(f_{e}<p_{i,j_{r}}<f_{e+1}\u2223k,N_{b}\u2212k)\\timesp_bin(k\u2223N_{b},p_{i,j_{d}})(FNR\u2223Titer_{r},f_{e})\n$$\n\nThis is the likelihood of the variant existing in the ranges [0.02,0.05] or [0.05,0.1] given an initial frequency of $k/N_{b}$ and a bottleneck size of $N_{b}$ multiplied by the expected false negative rate (FNR) given the titer of the recipient and the lower frequency bound. We assumed perfect sensitivity for detection of iSNV present above 10%, rounded recipient titers down to the nearest $log_{10}$titer (e.g. $10^{3}$,$10^{4}$, $10^{5}$) and assumed the entire range $[f_{e},f_{e+1}]$ has the same sensitivity as the lower bound.\n\nThe likelihood of $\\lambda$ for iSNV that are not observed in the recipient is then given by summing equations 8 and 9 across all possible $N_{b}$.\n\n$$\nL(\\lambda)_{i,j}^{nontransmitted}=\\sumN_{b}=1\u221e(L(N_{b})_{i,j}^{lost}+L(N_{b})_{i,j}^{missed})P(N_{b}\u2223\\lambda)\n$$\n\nThe log likelihood of the total dataset is then determined by summing the log of equations 7 and 10 (as applicable) across all polymorphic sites in each donor. (As before here we sum of $N_{b}$ within the range $[1,100]$.)\n\n### Model comparisons\n\nIn order evaluate the fits of the two transmission models, we calculated the probability of detecting a donor iSNV in the recipient given its frequency in the donor. For each model this reduces to one minus the probability of only detecting the other allele in the recipient summed over all possible bottlenecks. As in fitting the models this infinite sum was approximated by a partial sum up to a bottleneck size of 100. We used a recipient titer of 104 genomes/\u03bcl to estimate the effect of sequencing sensitivity for the beta binomial model.\n\nAnnotated computer code for all analyses and for generating the figures can be accessed at https://github.com/lauringlab/Host_level_IAV_evolution. (copy archived at https://github.com/elifesciences-publications/Host_level_IAV_evolution)\n",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "6877947f-d8d8-4ed2-8fb4-ca4e35a24ff9",
+      "submission_id": "a3ee1a73-220f-4294-a0b4-e23553239318",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35962.035](https://doi.org/10.7554/eLife.35962.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Stochastic processes dominate the within and between host evolution of influenza virus\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Richard A Neher, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Katia Koelle (Reviewer #2); Christopher J R Illingworth (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that this manuscript will not be considered further for publication in eLife. As detailed below, the reviewers were not convinced by the estimation of within-host Ne but unanimously felt the characterization of the transmission bottleneck is interesting and robust. We, therefore, encourage you to resubmit a manuscript focusing on the transmission bottleneck as a short report.\n\nAll reviewers agreed that you have presented comprehensive data on within-host diversity of influenza virus. The data set includes transmission pairs within households which allowed you to estimate the size of the transmission bottleneck. In sharp contrast to previous estimates, your data suggest a very small transmission bottleneck (evident in Figure 3C). This observation is important, and this conclusion is strongly supported by the data. The estimation of Ne, however, is unconvincing. The major concerns regarding the Ne estimation are summarized below -- you can find details in the attached reviews.\n\n1) The signal to estimate Ne is weak. The distribution of iSNV frequency changes as day 3 is hardly different from that at day 1. Furthermore, the distribution of variant frequency changes is long-tailed, which conflicts the assumptions of the Wright-Fisher model. While you correct for false negatives and allow for a constant variance in observed frequency, estimates might still be affected by extraction and amplification noise (particularly important for the second time point with typically lower viral load). At best, your estimate of Ne is a loose lower bound.\n\n2) Whether Ne is a well-defined quantity of an acute infection is debatable. The populations you sequenced may be a mixture of different subpopulations from different patches of infected tissue. Changes in variant frequencies of common iSNVs are therefore might not due to resampling noise, but differential growth and shrinkage of subpopulations. This type of noise is not characterized by an effective population size.\n\n3) Your estimate of the mutation rate (3-4e-5/site/replication) is inconsistent with the 5fold higher rate you estimated in Pauly et al., 2017, despite generous assumptions. How can this difference be reconciled?\n\nReviewer #1:\n\nMcCrone et al., study genetic variation of influenza virus population within hosts and in transmission chain to estimate the stochasticity of within host evolution and the effective size of the transmission bottle neck. Virus populations are characterized by deep sequencing. The quality of the data and the analysis seem high and the conclusions seem justified and solid. I have a number of comments regarding the interpretation of the results and some parts of the analysis.\n\nWhile the transmission bottleneck size is a relevant and interpretable quantity, I don't think the concept of an effective population is useful for an acute within-host population. The actual population size is orders of magnitudes higher than any estimate of Ne and the variation in variant frequencies likely depends on subpopulations dynamics in the infected tissue. These are populations subject to exponential expansion and decay and there is no reason why a diffusion-based model is useful. This is evident in Figure 2B: The distribution of allele frequency changes is incompatible with a diffusion model: most alleles don't change much in frequency, while others change by 0.4. The removal of the most extremely changing iSNVs partly addresses this issue, but also shows that there is a substantial dependence on this cut-off. The distribution of variant frequency changes is interesting in its own right, but there is probably not enough data to investigate this here. But even taking the estimate of Ne at face value, how is sampling noise handled in the Ne estimates? And why is the 0.02 cutoff a good idea for the later sample? Once a iSNV is ascertained in the earlier sample, you should use the raw variant frequency in the diffusion model.\n\nWhile fitting a diffusion model is not appropriate, one could still estimate how a quantity like the inter quartile range of (x_1-x_0)/(x_0(1-x_0)) increases with time. A quick and dirty analysis using the data the authors uploaded as supporting information suggests that there is little signal.\n\nThe estimate of selection coefficients is not terribly convincing. It seems much more likely that from one day to another, different patches of infected tissue contribute to different degree to the sample and such population shifts will result in changing frequencies.\n\nThe estimates of the size of transmission bottleneck, on the other hand, are much better defined and a more relevant quantity than the within host Ne. The estimate seems solid and provide an interesting counterpoint to high estimates from previous studies. It would be interesting to investigate whether child-child, parent-child, and adult-adult transmission have distinct properties.\n\nI find the statements that the potential for spread of a mutation is determined by the transmission bottleneck are misleading. Mutations that rise in frequency within a host have a much higher frequency to be transmitted than other mutations, even if they rise only to frequencies of 1/1000 or less.\n\nTo assess the reliability of the variant calling and diversity representation, I would like to see the analogs of Figure 2\u2014figure supplement 1A for samples that were processed in duplicate.\n\nA more systematic investigation of whether antigenic sites tend to segregate within individuals seems possible and important. Why not compare distributions of variant frequencies at sites with global variation in the respective season with those that are globally monomorphic? Similar comparisons could be done for epitope vs non-epitope, or syn vs non-syn.\n\nAny idea why the probability to transmit a 50% variant is larger than 50%? Is this the effect of minor variants and bottlenecks>1 or selective advantage of minor variants? The explanation of the shaded areas is confusing: These are distributions of the inferred probability across 1000 simulations, but not outcomes of transmission.\n\nThe method to estimate the mutation rate is problematic. First of all, Eq. 23 is incorrect as written and the model assumptions are unlikely to hold in an infected individual.\n\nReviewer #2:\n\nIn this manuscript, McCrone and coauthors use deep sequencing data from a prospective community-based cohort study to estimate the transmission bottleneck size for seasonal influenza viruses H1N1 and H3N2, as well as the effective population size of the viral population within acutely infected individuals. In contrast to the only other dataset used in quantifying transmission bottleneck sizes for influenza circulating in natural human populations (Poon et al.), they find evidence for a remarkably small bottleneck size of 1-2 influenza virions using two distinct methods. Further, they estimate small within-host effective population sizes of 30-40 virions using a number of different methods. With both small transmission bottleneck sizes and small within-host population sizes, they conclude that genetic drift and stochastic processes are important factors influencing influenza virus dynamics. Finally, they do find some evidence for purifying selection going on within infected hosts, given observed patterns of nonsynonymous versus synonymous nucleotide variation.\n\nIn general, this manuscript is very clearly written, is very thorough in applying different methods to arrive at robust conclusions and presents interesting results. One concern is of course the disparity between the results this manuscript presents for transmission bottleneck sizes in flu (1-2 virions) relative to the previous literature estimate of 100-200 virions, based on the data presented in Poon et al. It is clear from the variant frequency plot shown in Figure 3C that these differences in estimated bottleneck sizes are based on differences present in the data themselves, rather than the specifics of the methods applied to the data.\n\nI have several concerns, but none that are sufficiently major to keep this paper from being considered for publication in eLife.\n\nIf the within-host effective population size is very small (~35 virions), then it seems to me that the timing of transmission should matter for determining the transmission bottleneck size. Have you looked to see how much the estimates differ from one another based on whether the first or second sampling timepoint in a donor was used? (The data might not be available to conduct this analysis\u2026)\n\nSubsection \u201cWithin host populations have low genetic diversity\u201d: I really like that the within-host Ne calculation was done a number of different ways and that similar results were obtained when some of the more stringent assumptions (site independence and large population size) of the first approach were relaxed. One other assumption in all of these models, however, I think is that the viral population size is constant. Given that this is an acute infection, the viral population size is much more likely to be exponentially declining (given that individuals were sampled following symptom onset). How does an exponentially declining viral population affect your estimate of within-host Ne?\n\nSubsection \u201cThe mutation rate of influenza A virus within human hosts\u201d: here, you estimate a mutation rate on the order of 3-4 x 10^-5 mutations per site per replication cycle, which corresponds to ~0.35 mutations/genome/replication cycle. You also mention that this is close to your own recently published estimate (Pauly et al., 2017). However, that paper estimated a mutation rate on the order of 1.8 x 10^-4 (H1N1) and 2.5 x 10^-4, resulting in 2-3 mutations/genome per replication cycle. Since that Pauly et al., paper's primary point was to revise the 2.7 x 10^-6 \u2013 3.0 x 10^-5 previous estimates, it would be nice to explicitly state the discrepancy of the Pauly et al., estimate with the estimate obtained in this paper (since they differ by an order of magnitude).\n\nReviewer #3:\n\nThis work presents an interesting dataset collected from a household study of human influenza infection. Via a mathematical analysis, two key claims about the data are presented here. Firstly, the within-host effective population size, Ne, is relatively low, at 30-70. Secondly the transmission bottleneck is tight, with 1-2 viruses typically founding an infection.\n\nThere is an odd repetition to the manuscript, in so far as multiple techniques are applied to get each value of N. In so far as a method of analysis is correct, recalculation of the same sum using an alternative approach is unnecessary. In so far as a method has limitations, repeating a calculation using another method, which shares the same limitations, adds no further useful information to the manuscript. Quantitative accuracy is not achieved via a democratic vote among statistical methods.\n\nThe analysis of the transmission bottleneck is convincing, though susceptible to criticism under the point above. Given that the presence-absence model underestimates the size of a bottleneck, and the conclusion that the bottleneck is small, why not just use the \u03b2-binomial model? For myself, under the assumption that the identification of transmission pairs is correct, Figure 3C is clear evidence of a tight bottleneck.\n\nThe analysis of within-host effective population size is problematic. The initial analysis of Ne assumes that selection does not act upon the viral populations, calculating the parameter on the basis of a model of genetic drift alone. This is fine in establishing a lower bound for Ne but cannot support a conclusion that Ne is small. Here, while much care is taken in evaluating both diffusion and Wright-Fisher models, and evaluating the potential power of the calculation, the issues addressed are relatively trifling in the context of the assumption of neutrality. The final result is to conclude that Ne is small, and therefore selection has little influence, all under the assumption that selection can be neglected.\n\nAn attempt to fix this problem is made via the use of a method which estimates Ne along with a selection coefficient for each SNP. I am not convinced that this method is effective in the context of the data collected. Whereas the original application of this method was to a dataset for which sequence data was collected at 13 separate time-points (Foll et al., 2014), here only two time-points are available for each patient (Results section). In estimating the value of Ne from time-resolved data, the value of selection, speaking loosely, is estimated from the increase or decrease of an allele frequency over time, while the extent of drift (or Ne) is estimated from the extent of deviation of the data from a deterministic model of selection (see e.g. Feder et al., 2014). Where data is collected for only two time-points, a deterministic model (with effectively infinite Ne) can be fitted perfectly to any allele frequency data, with a different selection coefficient being fitted to each variant. I am therefore unclear where the value of Ne estimated from this method arises from; perhaps fitting a prior to the selection coefficient affects this? I note that the method, while validated for the inference of selection from two time-points, is not validated in the original publication for its ability to infer Ne.\n\nThere are other factors which might limit the correct inference of a high Ne. For example, while the existence of variant allele frequencies is well-validated, the precision with which an allele frequency can be measured is less clear. A standard deviation in a variant frequency is cited from a previous paper (subsection \u201cDiscrete Wright-Fisher estimation of \ud835\udc41\ud835\udc52\u201d), albeit this was measured from in vitro material. Other authors (Lakdawala et al., 2015) have highlighted the potential for non-trivial population structure within a host. Here, while one sample was collected via nasal swab, the second was collected from a mix of nasal swab and throat samples; this could conceivably introduce a greater variance into the allele frequencies. Further, if a constant standard deviation is measured from low-frequency variant calls, this might underestimate the variance in higher-frequency calls, which under a binomial model would be frequency-dependent.\n\nIn short, while there are excellent parts of this paper, there are also significant problems. Although I am happy with the lower bound inferred for within-host Ne, I am not convinced what can be said about the upper bound for this parameter. The conclusion of a low within-host effective population size may not be valid.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Stochastic processes dominate the within and between host evolution of influenza virus\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Richard A Neher, is a member of our Board of Reviewing Editors and the evaluation has been overseen by Arup Chakraborty as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Katia Koelle (Reviewer #2); Christopher J R Illingworth (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMcCrone et al., present influenza A virus whole genome deep sequencing data from 200 infected individuals, including 49 likely transmission pairs. The authors find little within-host genetic diversity. Furthermore, low overlap in genetic diversity between samples in a transmission pair suggests that new infections are typically dominated by one founder virus, i.e., the transmission bottleneck is very small. Since the size of the transmission bottleneck is an important determinant of influenza virus transmission and previous studies estimated a much larger bottleneck, the results reported here are an important contribution.\n\nEssential revisions:\n\nThis paper is a resubmission of a previously rejected version and was reviewed by the same reviewers. All reviewers agreed (as before) that the results on the transmission bottleneck are important, but two major concerns remain.\n\n1) Limited power to characterize within-host selection. Since most infections seem to be dominated by a single founder virus, the power to detect within-host selection during a few days of observation is very low. Selection would need to amplify a novel beneficial variant (produced at rates of about 1e-5 per day) to above 1% within 3-4 days in order to be detected in this study. Given the difficulty to call variants below 2%, even strong positive selection (s~10%) remains undetectable. Despite this lack of power, the authors make strong claims about the absence of positive selection and often make semi-quantitative statements without a proper comparison to an expectation.\n\na) Subsection \u201cMutations in antigenic epitopes are rare\u201d. While you claim stochastic processes dominate within host and positive selection is inefficient, we don't think you have sufficient evidence for this statement. What you could conclude is \"positive selection rarely amplifies a beneficial de novo variant above the limit of detection at 2%\".\n\nb) In subsection \u201cWithin-host populations have low genetic diversity\u201d, you are comparing R^2 values of variant frequencies of same day samples with the fraction of minor variants recovered in later samples. But an R^2 value and the fraction recovered iSNV are not comparable. To make a convincing case that your sequencing method accurately measures iSNV frequency and that the observed frequency changes are biological we would like to see the equivalent of Figure 2\u2014figure supplement 1A for duplicate samples, ideally stratified by viral load (in subsection \u201cIllumina library preparation and sequencing\u201d, you write that samples were processed in duplicate). Such a control is particularly important for the comparison of iSNV frequencies in longitudinal samples, as the samples that are being compared likely differ in viral load. Figure 2\u2014figure supplement 1A could use a 1:1 line. It seems that iSNV frequencies are systematically lower in-home isolates than in clinic isolates for low-frequency variants.\n\nc) Given the difficulty to characterize within host stochasticity and the absence of positive selection, the claims made in this direction need to be revisited, toned down or removed. Furthermore, we suggest changing the title. A title like \"Small transmission bottlenecks and low genetic diversity in acute influenza A virus infection\". We are open to suggestions here, but please make sure that the title reflects what can be concluded from your data. On larger spatio-temporal scales, influenza virus evolution is certainly not stochastic and the current title doesn't make this distinction clearly enough.\n\n2) Confidence intervals on the transmission bottleneck size. You estimate the parameter of a Poisson distribution that is assumed to describe the distribution of bottlenecks in the population. The error bars of this estimate are remarkably tight given the small number of informative iSNVs in individual pairs. The actual distribution of bottleneck sizes in the population is certainly much broader and fitting a Poisson distribution will underestimate the confidence interval. Please include the 95% confidence intervals for the estimate of each transmission pair in Supplementary file 3. Aggregating these confidence intervals or fitting a broader distribution (say log-normal or power-law) should result in more sensible confidence intervals.\n\n3) Dependence of bottleneck estimates on sample pairings. We suggest, to estimate, bottlenecks from all possible different sample-pairings of donor and recipient in those transmission pairs where either has more than one sample available. In particular the difference between self-sampling and sampling in the clinics (Figure 2\u2014figure supplement 1A suggests a possible systematic deviation) should be tested and discussed.\n\nWe suggest resubmitting this manuscript as a short report focusing on transmission bottlenecks. Figure 4 is a plausible supplement to Figure 3.\n",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c699eba6-4435-4f4f-9d0b-5e8d25564222",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C1",
+      "claim": "The HIVE study enrolled 213-340 households of 3 or more individuals in Southeastern Michigan each year.",
+      "claim_type": "EXPLICIT",
+      "source": "These households are followed prospectively from October to April, with symptom-triggered collection of nasal and throat swab specimens for identification of respiratory viruses by RT-PCR (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of households enrolled and their composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "7ee19aa4-afaf-433d-8a4d-a552d9de12fd",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C2",
+      "claim": "In the HIVE study, respiratory specimens were collected 0-7 days after illness onset in the first four seasons (2010-2011 through 2013-2014).",
+      "claim_type": "EXPLICIT",
+      "source": "In the first four seasons of the study (2010\u20132011 through 2013\u20132014), respiratory specimens were collected 0\u20137 days after illness onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the specimen collection timing for the first four seasons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "5de5998d-a8b8-4f12-9fff-870530d9b214",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C3",
+      "claim": "Beginning in the 2014-2015 season, each individual provided two samples: a self-collected specimen at symptom onset and a clinic-collected specimen obtained 0-7 days later.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning in the 2014\u20132015 season, each individual provided two samples, a self-collected specimen at the time of symptom onset and a clinic-collected specimen obtained 0\u20137 days later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the change in sampling protocol for the 2014-2015 season.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "30fa782b-0b28-4344-b5ae-d653d70f8a7b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C4",
+      "claim": "Each year, 59-69% of individuals had self-reported or confirmed receipt of that season's vaccine prior to local circulation of influenza virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Each year, 59\u201369% of individuals had self-reported or confirmed receipt of that season's vaccine prior to local circulation of influenza virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific vaccination rates for the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "1cbb669f-5be8-4b87-8825-8730382717b8",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C5",
+      "claim": "Over five seasons and nearly 6290 person-seasons of observation, 77 cases of influenza A/H1N1pdm09 infection and 313 cases of influenza A/H3N2 infection were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Over five seasons and nearly 6290 person-seasons of observation, we identified 77 cases of influenza A/H1N1pdm09 infection and 313 cases of influenza A/H3N2 infection (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of infections identified over the study period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "372d8019-1f2f-4c34-b2a9-0113f5119c4d",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C6",
+      "claim": "Approximately half of the cases (n = 166) were identified in the 2014-2015 season, in which there was an antigenic mismatch between the vaccine and circulating strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the cases (n = 166) were identified in the 2014\u20132015 season, in which there was an antigenic mismatch between the vaccine and circulating strains (Flannery et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of cases in 2014-2015 and cites a reference for the antigenic mismatch.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "3fe3c95b-b4ce-4157-8457-f99ba3c9526a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C7",
+      "claim": "All seasons except 2014-2015 were antigenically matched between vaccine and circulating strains.",
+      "claim_type": "EXPLICIT",
+      "source": "All other seasons were antigenically matched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that other seasons were antigenically matched.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "8b18c5cc-262b-4b7b-82e9-efc245127579",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C8",
+      "claim": "249 high quality specimens from 200 individuals were analyzed, which had a viral load of >10\u00b3 copies per microliter of transport media, adequate RT-PCR amplification of all eight genomic segments, and an average read coverage of >10\u00b3 across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we report data on 249 high quality specimens from 200 individuals, which had a viral load of >103 copies per microliter of transport media, adequate RT-PCR amplification of all eight genomic segments, and an average read coverage of >103 across the genome (Table 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the quality criteria for specimens included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "e2ae7777-db5e-4973-abe2-1e1b5699e409",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C9",
+      "claim": "243 out of 249 samples had fewer than 10 minority iSNV (median 2, IQR 1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "Two hundred forty-three out of the 249 samples had fewer than 10 minority iSNV (median 2, IQR 1\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific statistics on the number of minority iSNV per sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "2ac08590-9678-4ec1-9604-e54c556a7e9b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C10",
+      "claim": "Six samples had greater than 10 minority iSNV.",
+      "claim_type": "EXPLICIT",
+      "source": "There were six samples with greater than 10 minority iSNV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of samples with more than 10 minority iSNV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "44f1a3e8-7786-49e5-9faa-b5dc10dd7ae7",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C11",
+      "claim": "In 3 of the 6 cases with greater than 10 minority iSNV, the frequency distribution of minority iSNVs was bimodal, suggesting that the iSNV were linked and that the samples represented mixed infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In 3 of these cases, the frequency distribution of minority iSNVs was bimodal, suggesting that the iSNV were linked and that the samples represented mixed infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the frequency distribution pattern and interprets it as evidence of mixed infections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "0ab96780-712d-4fe4-ab57-82d2ae7c09c9",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C12",
+      "claim": "Putative genomic haplotypes based on minority iSNV in suspected mixed infections clustered with distinct isolates on phylogenetic trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, putative genomic haplotypes based on these minority iSNV clustered with distinct isolates on phylogenetic trees (Figure 1\u2014figure supplements 2 and 3), and these samples were removed from subsequent analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript references phylogenetic trees that support the mixed infection hypothesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "664a93e7-7bf1-4993-9825-532432bbae46",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C13",
+      "claim": "The number of minority iSNV identified was not affected by the day of infection, viral load, subtype, or vaccination status.",
+      "claim_type": "EXPLICIT",
+      "source": "While viral shedding was well correlated with days post symptom onset (Figure 1A), the number of minority iSNV identified was not affected by the day of infection, viral load, subtype, or vaccination status (Figure 1B and C, and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the lack of correlation and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "1778f0c7-e777-4cef-b6c5-00167f6d7b61",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C14",
+      "claim": "Single nucleotide variants were distributed evenly across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Single nucleotide variants were distributed evenly across the genome (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the distribution pattern and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "08d7ccfc-5c26-4416-a63c-cab353954090",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C15",
+      "claim": "98% of minority iSNV were only found once, 2.3% were found in two individuals, and no minority iSNV were found in three or more individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety-eight percent of minority iSNV were only found once, 2.3% were found in two individuals, and no minority iSNV were found in three or more individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages for shared iSNV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "6d00348f-f5fe-43c3-8fea-be5906d1e84f",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C16",
+      "claim": "The low level of shared diversity suggests that within-host populations explore distinct regions of sequence space with little evidence for parallel evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The low level of shared diversity suggests that within-host populations explore distinct regions of sequence space with little evidence for parallel evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the low level of shared diversity as evidence against parallel evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "6dccc462-fb4b-419b-bc71-8e367f720fe9",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C17",
+      "claim": "Of the 12 minority iSNV that were found in multiple individuals, three were nonsynonymous and none were present in antigenic epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 minority iSNV that were found in multiple individuals (triangles in Figure 1D), three were nonsynonymous and none were present in antigenic epitopes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific counts and characteristics of shared iSNV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "53df341c-ee96-4d36-b739-5b42a5dd1b9e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C18",
+      "claim": "The vast majority of minority variants were rare (frequency 0.02-0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of minority variants were rare (frequency 0.02\u20130.07) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the frequency range and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "d0ffb208-2385-4846-b298-9b4d313f6e22",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C19",
+      "claim": "The ratio of nonsynonymous to synonymous variants was 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of nonsynonymous to synonymous variants was 0.75, and given the excess of nonsynonymous sites across the genome and within the HA gene, these data suggest significant purifying selection within hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific ratio and interprets it as evidence of purifying selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "467c7440-eeaf-4c8b-9137-d0b553940173",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C20",
+      "claim": "The data suggest significant purifying selection within hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of nonsynonymous to synonymous variants was 0.75, and given the excess of nonsynonymous sites across the genome and within the HA gene, these data suggest significant purifying selection within hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the ratio of nonsynonymous to synonymous variants as evidence of purifying selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "78b4717e-771e-41b2-b098-c8f33c090d24",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C21",
+      "claim": "It is estimated that 131 of the 329 amino acids in HA1 lie in or near antigenic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the full range of the H3 antigenic sites have not been functionally defined, it is estimated that 131 of the 329 amino acids in HA1 lie in or near these sites (Lee and Chen, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the estimate of antigenic site amino acids.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "be07f120-3b5d-464a-8bf6-43ccbd766bcf",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C22",
+      "claim": "16 minority nonsynonymous iSNV were identified in antigenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we identified 16 minority nonsynonymous iSNV in these regions (Supplementary file 2), mutations in antigenic epitopes were not present at significantly higher within-host frequencies than other nonsynonymous mutations in HA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number of iSNV in antigenic regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "4c83fb6d-83b9-487a-a903-b9f30071e31e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C23",
+      "claim": "Mutations in antigenic epitopes were not present at significantly higher within-host frequencies than other nonsynonymous mutations in HA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we identified 16 minority nonsynonymous iSNV in these regions (Supplementary file 2), mutations in antigenic epitopes were not present at significantly higher within-host frequencies than other nonsynonymous mutations in HA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the lack of significant difference and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "3098609d-4744-4b7a-8efd-f2b93a658355",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C24",
+      "claim": "Five putative antigenic variants were in positions that have been experimentally shown to differ among antigenically drifted viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Five putative antigenic variants were in positions that have been experimentally shown to differ among antigenically drifted viruses (Smith et al., 2004; Wiley et al., 1981), and two (193S and 189N) lie in the 'antigenic ridge' that is a major contributor to antigenic drift (Koel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for experimentally validated antigenic positions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "63ae4c94-aa67-4911-bef8-ca7b27e678d9",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C25",
+      "claim": "Two putative antigenic variants (193S and 189N) lie in the 'antigenic ridge' that is a major contributor to antigenic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Five putative antigenic variants were in positions that have been experimentally shown to differ among antigenically drifted viruses (Smith et al., 2004; Wiley et al., 1981), and two (193S and 189N) lie in the 'antigenic ridge' that is a major contributor to antigenic drift (Koel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the antigenic ridge concept.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "b2a54a31-1ad5-4b6f-9e19-5463fa93dc2f",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C26",
+      "claim": "Five of the iSNV in antigenic epitopes have been detected as minority variants above 5% at the global level since the time of isolation (62G, 128A, 193S, 262N, and 307R).",
+      "claim_type": "EXPLICIT",
+      "source": "Five of the iSNV in antigenic epitopes have been detected as minority variants above 5% at the global level since the time of isolation (62G, 128A, 193S, 262N, and 307R) with one (62G) seemingly increasing in global frequency (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states which variants have been detected globally and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "46f821f2-ae72-4935-ab09-7dc95186182b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C27",
+      "claim": "One antigenic variant (62G) is seemingly increasing in global frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of the iSNV in antigenic epitopes have been detected as minority variants above 5% at the global level since the time of isolation (62G, 128A, 193S, 262N, and 307R) with one (62G) seemingly increasing in global frequency (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the observation and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "ff87e90a-eb91-4c48-b9d7-13c3370883e9",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C28",
+      "claim": "One within host variant (307R) has dominated the population for the past 12 years.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional within host variant (307R) has dominated the population for the past 12 years (Neher and Bedford, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the dominance of this variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "d0e84bfb-5496-493b-8af4-eb0f706b7562",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C29",
+      "claim": "One putative H1N1 antigenic variant (208K in antigenic site Ca) was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified one putative H1N1 antigenic variant (208K in antigenic site Ca) (Caton et al., 1982; Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the identification and cites references for the antigenic site.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "edc181c3-5026-4cfd-bc96-b8b57c1ee145",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C30",
+      "claim": "Putative antigenic variants account for 1.0-2.8% of minority iSNV identified and were found in 3.0-7.1% of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, putative antigenic variants account for 1.0\u20132.8% of minority iSNV identified and were found in 3.0\u20137.1% of infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages for antigenic variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "76503cfa-4ae5-49fa-83d7-da19bd73f51d",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C31",
+      "claim": "None of the putative antigenic iSNV were shared among multiple individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these iSNV were shared among multiple individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that antigenic iSNV were not shared.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "531dd8f1-5897-403f-abc3-3359650caa96",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C32",
+      "claim": "49 individuals provided paired longitudinal samples during the 2014/2015 season.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined the changes in within-host virus diversity over time in 49 individuals who provided paired longitudinal samples during the 2014/2015 season (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number of individuals with paired samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "9c1358f5-88fe-4050-9892-b3aaaa609b9f",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C33",
+      "claim": "There was very little change in iSNV frequency in populations sampled twice on the same day (R\u00b2 = 0.982).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there was very little change in iSNV frequency in populations sampled twice on the same day (R2 = 0.982, Figure 2E and Figure 2\u2014figure supplement 1A), and the concordance of same day samples suggests that our sampling procedure is reproducible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides the R\u00b2 value and references supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "29ff8132-3ea6-46df-8f9d-544353434314",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C34",
+      "claim": "In samples separated by at least a day, only 57% iSNV found in the first sample persisted in the second, above the 2% limit of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "In samples separated by at least a day, only 57% iSNV found in the first sample persisted in the second, above the 2% limit of detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific percentage of persisting iSNV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "8d2e4582-ff07-4c2e-a43d-5588d1deec65",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C35",
+      "claim": "The majority of iSNV (68%) found in the second sample were either new or previously present below the 2% limit of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the majority of iSNV (68%) found in the second sample were either new or previously present below the 2% limit of detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific percentage of new or previously undetected iSNV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "c7670f6b-07df-44ff-832b-9700bcb683d0",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C36",
+      "claim": "The population present in the upper respiratory tract is highly dynamic while maintaining a stable consensus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the population present in the upper respiratory tract is highly dynamic while maintaining a stable consensus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the longitudinal data as evidence of dynamic populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "ed8191b7-ab3c-4367-9692-8d93ec2be24e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C37",
+      "claim": "6 iSNV in the longitudinal data set lay within antigenic epitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 6 iSNV in our longitudinal data set lay within antigenic epitopes (arrows in Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "94e563c6-280b-409c-a32f-263d9286aa03",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C38",
+      "claim": "The dynamics of antigenic iSNV are similar to those of other nonsynonymous iSNV and synonymous iSNV, suggesting that most mutations change in frequency due to stochastic as opposed to selective processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Their dynamics are similar to those of other nonsynonymous iSNV and synonymous iSNV, suggesting that most mutations change in frequency due to stochastic as opposed to selective processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the similarity in dynamics as evidence for stochastic processes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "0e549f99-8837-4c86-abb1-e5e53880c18d",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C39",
+      "claim": "Positive selection rarely amplifies a newly generated variant to a frequency greater than 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our prior work (Debbink et al., 2017), these data suggest that the positive selection of novel variants within hosts is inefficient and rarely amplifies a newly generated variant to a frequency greater than 2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the data and cites prior work to support the claim.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "53bdf67e-0c7f-4fc7-aaba-e72c624a00b8",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C40",
+      "claim": "85 households with concurrent infections were analyzed to quantify the level of shared viral diversity and to estimate the size of the IAV transmission bottleneck.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed virus populations from 85 households with concurrent infections to quantify the level of shared viral diversity and to estimate the size of the IAV transmission bottleneck (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of households analyzed and the purpose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "4a62ec9f-7c03-4499-a5bf-0736afdee78e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C41",
+      "claim": "The cohort had 124 putative household transmission events over five seasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these criteria, our cohort had 124 putative household transmission events over five seasons (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of putative transmission events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "bcd94222-6729-4408-99cc-ca257911caa4",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C42",
+      "claim": "52 pairs had samples of sufficient quality for reliable identification of iSNV from both individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 52 pairs had samples of sufficient quality for reliable identification of iSNV from both individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of high-quality pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "e0016f05-6a30-4976-b4b5-af7228f890c5",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C43",
+      "claim": "47 household transmission events met the criterion of having a genetic distance below the 5th percentile of the community distribution of randomly assigned pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We only considered individuals to be a true transmission pair if they had a genetic distance below the 5th percentile of the community distribution of randomly assigned pairs (Figure 3A). Forty-seven household transmission events met this criterion (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the criterion and the number of pairs meeting it.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "f5d6ec95-0a35-42f5-a0c3-fe2f8c14869f",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C44",
+      "claim": "Among the 47 sequence-validated transmission pairs, three had no iSNV in the donor and one additional donor appeared to have a mixed infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 47 sequence-validated transmission pairs, three had no iSNV in the donor and one additional donor appeared to have a mixed infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of pairs with specific characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "a18c66b7-beb1-40e9-b883-0b006cf73168",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C45",
+      "claim": "43 high-quality transmission pairs (37 H3N2, 6 H1N1) were used for bottleneck estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the transmission bottleneck in the remaining 43 high-quality pairs (37 H3N2, 6 H1N1, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the number and composition of pairs used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "fe7799f1-875a-447f-a184-8e3ad797d02b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C46",
+      "claim": "Few minority iSNV were polymorphic in both the donor and recipient populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that few minority iSNV where polymorphic in both the donor and recipient populations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states the observation and references a supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "3c519b39-a1b5-4760-9d94-da1a321a68d0",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C47",
+      "claim": "Minority iSNV in the donor were either absent or fixed in the recipient.",
+      "claim_type": "EXPLICIT",
+      "source": "Minority iSNV in the donor were either absent or fixed in the recipient (top and bottom of plot).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the pattern observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "02034f6a-f8c4-47a1-ab99-35632fb95f73",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C48",
+      "claim": "The lack of shared polymorphic sites suggests a stringent effective bottleneck in which only one allele is passed from donor to recipient.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of shared polymorphic sites (which would lie in the middle of the plot in Figure 3C) suggests a stringent effective bottleneck in which only one allele is passed from donor to recipient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets the lack of shared polymorphic sites as evidence of a stringent bottleneck.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "032840d2-a396-49c5-a66f-a0ec097e0cc5",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C49",
+      "claim": "Using the presence-absence model, maximum likelihood optimization determined that a mean bottleneck of 1.68 (lambda = 1.15; 0.49-2.14, 95% CI) best described the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum likelihood optimization determined that a mean bottleneck of 1.68 (lambda = 1.15; 0.49\u20132.14, 95% CI) best described the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the specific bottleneck estimate with confidence interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "b87f7bbc-3d0f-44fb-bdfe-b337f66daf6e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C50",
+      "claim": "The distribution indicates that the majority of bottlenecks are 1 and that 95% of bottlenecks are expected to be \u22643.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution indicates that the majority of bottlenecks are 1 and that 95% of bottlenecks are expected to be \u22643.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the distribution of bottleneck sizes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "53daf2c5-e476-44c0-a7f5-a474b514a356",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C51",
+      "claim": "One outlier was a single transmission pair with an estimated bottleneck of >200; this pair had two minority iSNV present at very low frequencies in both donor and recipient.",
+      "claim_type": "EXPLICIT",
+      "source": "One outlier was a single transmission pair with an estimated bottleneck of >200; this pair had two minority iSNV present at very low frequencies in both donor and recipient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an outlier and its characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "a31e5645-9417-4f0d-a636-1a2a3eea8f3e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C52",
+      "claim": "There were no apparent differences between H3N2 and H1N1 pairs in bottleneck size.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no apparent differences between H3N2 and H1N1 pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the lack of difference between subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "89474e61-8e7b-4c98-9bb9-e55e64e9f315",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C53",
+      "claim": "Using the beta binomial model, maximum likelihood estimation only marginally increased the average bottleneck size (mean 1.75: lambda 1.25; 0.55-2.28, 95% CI) relative to the simpler presence-absence model.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relaxed assumptions provided by this modified beta binomial model, maximum likelihood estimation only marginally increased the average bottleneck size (mean 1.75: lambda 1.25; 0.55\u20132.28, 95% CI) relative to the simpler presence-absence model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the bottleneck estimate from the beta binomial model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "6ea171a8-f872-411a-b18a-9c0b40bc7d0e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C54",
+      "claim": "The fit of the beta-binomial model was not better than that of the presence-absence model (AIC 80.2 for beta-binomial compared to 74.5 for the presence-absence model).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the beta-binomial again reproduced the trend in the data (Figure 3E), the fit was not better than that of the presence-absence model (AIC 80.2 for beta-binomial compared to 74.5 for the presence-absence model), suggesting the stochastic loss of iSNV in the recipient is not a major contributing factor to the transmission dynamics observed here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides AIC values for model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "f8a80311-9f1e-4669-a277-d99f96461458",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C55",
+      "claim": "There was no apparent stratification in bottleneck size based on vaccination status, donor or recipient age, or influenza A subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the presence-absence model, there was no apparent stratification in bottleneck size based on vaccination status, donor or recipient age, or influenza A subtype (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the lack of stratification by various factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "42d61ae5-e705-40a6-a2b5-a4a74ffad8b7",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C56",
+      "claim": "Re-calling variants using the original pipeline without the 2% frequency cut-off only slightly increased average transmission bottleneck to 2.11 (lambda = 1.75; 0.87-2.95, 95% CI).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis only slightly increased average transmission bottleneck to 2.11 (lambda = 1.75; 0.87\u20132.95, 95% CI), and indicates that our results are not biased by the added stringency used in the initial analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the bottleneck estimate from the relaxed variant calling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "85d2edd7-9eae-4571-ac07-a8e0d8c77c1b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C57",
+      "claim": "The inclusion of low-frequency iSNV reduced model fit and led to an overestimation of the probability of transmitting rare iSNV.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the inclusion of these low-frequency iSNV reduced model fit and led to an overestimation of the probability of transmitting rare iSNV (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the effect of including low-frequency iSNV on model fit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "67e8e03e-92f0-4c27-b3f7-b7880276dfcc",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C58",
+      "claim": "Acute influenza infections are characterized by low diversity, limited positive selection, and tight transmission bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we find that acute influenza infections are characterized by low diversity, limited positive selection, and tight transmission bottlenecks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "53681fa8-c7c2-4ac9-9208-042351454828",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C59",
+      "claim": "The observed within-host dynamics and the tight effective transmission bottleneck suggest that stochastic processes, such as genetic drift, dominate influenza virus evolution at the level of individual hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed within-host dynamics and the tight effective transmission bottleneck suggest that stochastic processes, such as genetic drift, dominate influenza virus evolution at the level of individual hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings as evidence for stochastic processes dominating within-host evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "bd76c02b-c767-4e9f-aa69-a57e27a3b11e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C60",
+      "claim": "The dominance of stochastic processes at the host level stands in contrast to the prominent role of positive selection in the global evolution of seasonal influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "This stands in contrast to the prominent role of positive selection in the global evolution of seasonal influenza.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript contrasts host-level and global-level evolutionary dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "6db8b228-d013-4744-8eaf-d7fafbc15a7a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C61",
+      "claim": "The global evolution of influenza A virus (IAV) is dominated by the positive selection of novel antigenic variants that subsequently seed annual epidemics in the Northern and Southern hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The global evolution of influenza A virus (IAV) is dominated by the positive selection of novel antigenic variants that subsequently seed annual epidemics in the Northern and Southern hemisphere (Rambaut et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the global evolution pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "abce622d-d157-4bd7-bb13-fb7d2d63d578",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C62",
+      "claim": "Whole genome sequencing of viruses on local scales suggests the importance of stochastic processes such as strain migration and within-clade reassortment.",
+      "claim_type": "EXPLICIT",
+      "source": "These global patterns are contrasted by results from whole genome sequencing of viruses on more local scales, which suggest the importance of stochastic processes such as strain migration and within-clade reassortment (Nelson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for local-scale evolutionary patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "fce5d899-4dad-409a-950f-ce3ae58070f0",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C63",
+      "claim": "Studies of IAV populations in animal and human systems suggest that most intrahost single nucleotide variants (iSNV) are rare and that intrahost populations are subject to strong purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of IAV populations in animal and human systems suggest that most intrahost single nucleotide variants (iSNV) are rare and that intrahost populations are subject to strong purifying selection (Rogers et al., 2015; Murcia et al., 2010; Iqbal et al., 2009; Poon et al., 2016; Dinis et al., 2016; Debbink et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references for intrahost population characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "0aa4114a-c700-4ebf-8785-f0d9488de18c",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C64",
+      "claim": "Positive selection is common in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive selection is common in cell culture (Doud et al., 2017; Archetti and Horsfall, 1950; Foll et al., 2014), and has been observed in experimental infections in swine (Illingworth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for positive selection in cell culture and animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "bbb44310-4bcb-4559-aeac-959ec60ab826",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C65",
+      "claim": "Positive selection has been observed in experimental infections in swine.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive selection is common in cell culture (Doud et al., 2017; Archetti and Horsfall, 1950; Foll et al., 2014), and has been observed in experimental infections in swine (Illingworth et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for positive selection in swine.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "8ec76dd8-c8ad-4e1c-8909-aad275f2a05c",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C66",
+      "claim": "Positive selection has only been well documented within human hosts in the extreme cases of drug resistance and long-term infection of immunocompromised individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has only been well documented within human hosts in the extreme cases of drug resistance (Gubareva et al., 2001; Ghedin et al., 2011; Rogers et al., 2015), and long-term infection of immunocompromised individuals (Xue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for positive selection in specific human infection contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "8ce5bbee-99e1-49e9-849a-64465fb3343f",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C67",
+      "claim": "The authors and others have been unable to identify evidence for positive selection in naturally-occurring, acute human infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we and others have been unable to identify evidence for positive selection in naturally-occurring, acute human infections (Debbink et al., 2017; Dinis et al., 2016), and its relevance to within-host processes is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for the lack of positive selection in acute infections.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "7475a23d-7c39-460d-a631-4cd6d10c626c",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C68",
+      "claim": "Experimental infections of ferrets suggest a very narrow transmission bottleneck.",
+      "claim_type": "EXPLICIT",
+      "source": "While experimental infections of ferrets suggest a very narrow transmission bottleneck (Varble et al., 2014; Wilker et al., 2013), studies of equine influenza support a bottleneck wide enough to allow transmission of rare iSNV (Hughes et al., 2012; Murcia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for ferret transmission studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "49e14612-563c-4802-af60-7143644543c3",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C69",
+      "claim": "Studies of equine influenza support a bottleneck wide enough to allow transmission of rare iSNV.",
+      "claim_type": "EXPLICIT",
+      "source": "While experimental infections of ferrets suggest a very narrow transmission bottleneck (Varble et al., 2014; Wilker et al., 2013), studies of equine influenza support a bottleneck wide enough to allow transmission of rare iSNV (Hughes et al., 2012; Murcia et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for equine influenza transmission studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "0b428af7-ce28-4ebf-94e3-8476135fe66a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C70",
+      "claim": "The only available genetic study of influenza virus transmission in humans estimated a remarkably large transmission bottleneck, allowing for transmission of 100-200 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The only available genetic study of influenza virus transmission in humans estimated a remarkably large transmission bottleneck, allowing for transmission of 100\u2013200 genomes (Poon et al., 2016; Sobel Leonard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for a previous human transmission study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "ef4fd814-f074-4422-a0d6-aa812d79a6a4",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C71",
+      "claim": "The HIVE study identifies symptomatic individuals regardless of illness severity, in contrast to case-ascertained studies which identify households based on an index case who seeks medical care.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to case-ascertained studies, which identify households based on an index case who seeks medical care, the HIVE study identifies symptomatic individuals regardless of illness severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript contrasts the HIVE study design with case-ascertained studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "1a8a0b99-d541-4d5f-871c-f80cedc9ed62",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C72",
+      "claim": "The viruses collected from the HIVE cohort are broadly representative of natural infections with seasonal viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these viruses were collected from individuals in a prospective community-based cohort, they are broadly representative of natural infections with seasonal viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the cohort design makes the viruses representative.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "c6a09f1a-2db1-4e3a-bf42-b980fac7b6fd",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C73",
+      "claim": "Sequence data from 49 serially sampled individuals illustrated the dynamic turnover of synonymous and nonsynonymous single nucleotide variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a neutral model of evolution, sequence data from 49 serially sampled individuals illustrated the dynamic turnover of synonymous and nonsynonymous single nucleotide variants and provided little evidence for positive selection of antigenic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the observation from longitudinal samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "7f0f1968-b769-4eeb-989e-d73661f375af",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C74",
+      "claim": "Sequence data from 49 serially sampled individuals provided little evidence for positive selection of antigenic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a neutral model of evolution, sequence data from 49 serially sampled individuals illustrated the dynamic turnover of synonymous and nonsynonymous single nucleotide variants and provided little evidence for positive selection of antigenic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the lack of evidence for positive selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "0497ba35-fd81-4d13-b709-94b8955aeb8d",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C75",
+      "claim": "43 genetically-validated transmission pairs were identified in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified 43 genetically-validated transmission pairs in this cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of validated transmission pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "876296fd-4651-4ad2-90d5-10cf422bf3cc",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C76",
+      "claim": "Maximum likelihood optimization of multiple transmission models estimated an effective transmission bottleneck of 1-2 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum likelihood optimization of multiple transmission models estimated an effective transmission bottleneck of 1\u20132 genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the bottleneck estimate from the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "a818c27d-18a9-4d3f-9bb2-3b435bdb7066",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C77",
+      "claim": "The data suggest that positive selection is inefficient at the level of the individual host.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that positive selection is inefficient at the level of the individual host and that stochastic processes dominate the host-level evolution of influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the data as evidence for inefficient positive selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "f95e3455-657b-4415-bd46-cd1849b70581",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C78",
+      "claim": "Stochastic processes dominate the host-level evolution of influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that positive selection is inefficient at the level of the individual host and that stochastic processes dominate the host-level evolution of influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the data as evidence for stochastic dominance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "2630d135-d388-4139-bf09-b0c367d2d29b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C79",
+      "claim": "The probability of transmission is approximately 1.7% for a variant at 1% frequency and 3.3% for a variant at 2% frequency, given the estimated bottleneck size.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the size of the estimated bottleneck, the probability of transmission is approximately 1.7% for a variant at 1% frequency and 3.3% for a variant at 2% frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates transmission probabilities based on the bottleneck estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "c8542fa6-3b20-47ce-a461-0c554c68985d",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "claim_id": "C80",
+      "claim": "With several million infected individuals each year, even inefficient processes and rare events at the scale of individual hosts are likely to occur at a reasonable frequency on a global scale.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with several million infected individuals each year, even inefficient processes and rare events at the scale of individual hosts are likely to occur at a reasonable frequency on a global scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reasons about how rare events at the individual level can become common globally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b25df14-863e-4f5c-b40b-e01720c624ef",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HIVE cohort enrolled 213-340 households annually over five seasons (2010-2015), collecting respiratory specimens from symptomatic individuals regardless of illness severity. Over 6290 person-seasons, 390 influenza A infections were identified (77 H1N1pdm09, 313 H3N2), with approximately half occurring during the 2014-2015 vaccine-mismatched season.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C71-C72 provide comprehensive cohort description with explicit data on enrollment, sampling protocols, vaccination rates, and infection counts. The prospective, community-based design is well-documented and distinguishes this study from case-ascertained studies, supporting the representativeness claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "c08048f7-3492-4141-b459-aec99561f26a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Within-host influenza populations exhibit low genetic diversity, with 243/249 samples containing fewer than 10 minority iSNV (median 2, IQR 1-3). The number of iSNV was independent of viral load, day of infection, subtype, or vaccination status. Minority variants were rarely shared between individuals (98% found only once), suggesting distinct evolutionary trajectories with minimal parallel evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C17 collectively demonstrate low within-host diversity using rigorous quality criteria (>10\u00b3 copies/\u03bcL, >10\u00b3 coverage). The identification of mixed infections (C11-C12) and their exclusion strengthens the analysis. Statistical data on iSNV distribution and sharing patterns are explicit and well-supported by figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "25df1972-1c61-4c61-ab5c-80504c667f03",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Minority variants were predominantly rare (frequency 0.02-0.07) with a nonsynonymous to synonymous ratio of 0.75, indicating significant purifying selection within hosts given the excess of nonsynonymous sites in the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 provide explicit frequency distributions and dN/dS ratios. The interpretation of purifying selection is appropriately qualified by considering the expected ratio given genomic composition. The data directly support the conclusion of constraint on nonsynonymous variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sixteen minority nonsynonymous iSNV were identified in H3N2 antigenic regions and one in H1N1, accounting for 1.0-2.8% of all minority iSNV and found in 3.0-7.1% of infections. Mutations in antigenic epitopes were not present at significantly higher within-host frequencies than other nonsynonymous mutations, and none were shared among individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C31 provide detailed characterization of antigenic variants with appropriate statistical testing (C23 references p-value comparison). The reliance on cited literature for antigenic site definitions (C21, C24-C25) is appropriate. The lack of enrichment for antigenic variants and absence of sharing are explicitly stated with supporting data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Longitudinal sampling of 49 individuals revealed highly dynamic within-host populations with stable consensus sequences. Only 57% of iSNV persisted between samples separated by at least one day, while 68% of iSNV in second samples were new or previously below detection. Antigenic iSNV showed similar dynamics to other variants, suggesting stochastic rather than selective processes dominate, with positive selection rarely amplifying variants above 2% frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 and C73-C74 provide strong evidence for dynamic populations through longitudinal data with high reproducibility (R\u00b2=0.982 for same-day samples, C33). The interpretation of stochastic dominance is well-supported by the similar behavior of antigenic and non-antigenic variants (C38). Integration with prior work (C39) appropriately strengthens conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "From 85 households with concurrent infections, 43 high-quality, genetically-validated transmission pairs were identified using stringent epidemiological and genetic criteria. Analysis revealed few minority iSNV were polymorphic in both donor and recipient populations, with donor iSNV either absent or fixed in recipients, suggesting a stringent transmission bottleneck.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 describe rigorous transmission pair identification using both epidemiological linkage and genetic validation (5th percentile threshold, C43). The exclusion of problematic pairs (no donor iSNV or mixed infections, C44) strengthens the analysis. The pattern of shared diversity (C46-C48) directly supports the bottleneck interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "85097200-edc2-441c-8036-ad33f11252a5",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using a presence-absence model with maximum likelihood optimization, the mean transmission bottleneck was estimated at 1.68 genomes (\u03bb=1.15; 95% CI: 0.49-2.14), with 95% of bottlenecks expected to be \u22643. One outlier pair showed an estimated bottleneck >200, and no differences were observed between H3N2 and H1N1 subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 provide explicit statistical estimates with confidence intervals. The model assumptions are clearly stated in the methods, and the identification of one outlier (C51) demonstrates appropriate quality control. The lack of subtype differences (C52) is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "dafb6afa-3f62-423f-9a60-bc102659d34e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A beta-binomial model accounting for stochastic drift in recipients yielded a similar bottleneck estimate (mean 1.75, \u03bb=1.25; 95% CI: 0.55-2.28) but did not improve model fit compared to the presence-absence model (AIC 80.2 vs 74.5). No stratification in bottleneck size was observed by vaccination status, age, or subtype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 demonstrate appropriate model comparison using AIC, with the simpler model preferred. The beta-binomial model accounts for potential false negatives, strengthening confidence in the bottleneck estimate. The lack of stratification by multiple factors (C55) is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "94d78c9a-631d-4b3e-b7f8-605a8d03689e",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sensitivity analysis using relaxed variant calling (removing the 2% frequency cutoff) only slightly increased the bottleneck estimate to 2.11 (\u03bb=1.75; 95% CI: 0.87-2.95), but reduced model fit and led to overestimation of rare iSNV transmission probability, likely due to inclusion of false positives or variants that underwent extinction before transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 demonstrate appropriate sensitivity analysis to test the impact of variant calling stringency. The interpretation that reduced fit indicates problems with low-frequency variants (false positives or extinct variants) is reasonable and strengthens confidence in the primary analysis using the 2% threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "4e1a9525-4104-4726-b2b7-a9fba7d47418",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Acute influenza infections are characterized by low diversity, limited positive selection, and tight transmission bottlenecks, with stochastic processes (genetic drift) dominating host-level evolution. This contrasts with the prominent role of positive selection in global influenza evolution, indicating that positive selection is inefficient at the individual host level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 and C77-C78 synthesize the major findings into coherent conclusions. The contrast between host-level and global-level dynamics (C60) is appropriately qualified as an interpretation. The conclusions are well-supported by the collective evidence from within-host diversity, longitudinal dynamics, and transmission bottleneck analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature establishes that global influenza evolution is dominated by positive selection of antigenic variants, while local-scale studies suggest stochastic processes are important. Previous work shows intrahost populations have low diversity with purifying selection, positive selection occurs in cell culture and experimental infections, but is documented in humans only under extreme conditions (drug resistance, immunocompromised hosts). Prior transmission studies show conflicting results, with ferret studies suggesting narrow bottlenecks, equine studies suggesting wider bottlenecks, and one human study estimating 100-200 genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C70 appropriately cite prior literature to establish context. The citations appear relevant and accurately represented. The contrast between the prior human transmission study (C70, 100-200 genomes) and the current findings is important for interpretation and is explicitly addressed in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "396adc7b-ad25-4e28-9154-69404fd1f5db",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study identified 43 genetically-validated transmission pairs and estimated an effective transmission bottleneck of 1-2 genomes using maximum likelihood optimization of multiple transmission models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 accurately summarize key findings. The estimate of 1-2 genomes is consistent with the detailed model results (C49, C53) and represents an appropriate summary of the range across models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    },
+    {
+      "id": "4c17c38d-b9f8-4165-a03b-dd254723861b",
+      "content_id": "940ad018-effc-46eb-bd68-c95db33c4054",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Given the estimated bottleneck size, transmission probability is approximately 1.7% for variants at 1% frequency and 3.3% for variants at 2% frequency. While these probabilities are low at the individual level, with millions of infections annually, even rare events can occur at reasonable frequency globally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 provide appropriate contextualization of the bottleneck findings. The transmission probability calculations (C79) follow logically from the bottleneck estimates. The scaling argument (C80) appropriately reconciles inefficient within-host selection with observed global evolution patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:29:25.315293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c699eba6-4435-4f4f-9d0b-5e8d25564222",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "7ee19aa4-afaf-433d-8a4d-a552d9de12fd",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "5de5998d-a8b8-4f12-9fff-870530d9b214",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "30fa782b-0b28-4344-b5ae-d653d70f8a7b",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "1cbb669f-5be8-4b87-8825-8730382717b8",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "372d8019-1f2f-4c34-b2a9-0113f5119c4d",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "3fe3c95b-b4ce-4157-8457-f99ba3c9526a",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "ef4fd814-f074-4422-a0d6-aa812d79a6a4",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "1a8a0b99-d541-4d5f-871c-f80cedc9ed62",
+      "result_id": "3b25df14-863e-4f5c-b40b-e01720c624ef"
+    },
+    {
+      "claim_id": "8b18c5cc-262b-4b7b-82e9-efc245127579",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "e2ae7777-db5e-4973-abe2-1e1b5699e409",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "2ac08590-9678-4ec1-9604-e54c556a7e9b",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "44f1a3e8-7786-49e5-9faa-b5dc10dd7ae7",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "0ab96780-712d-4fe4-ab57-82d2ae7c09c9",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "664a93e7-7bf1-4993-9825-532432bbae46",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "1778f0c7-e777-4cef-b6c5-00167f6d7b61",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "08d7ccfc-5c26-4416-a63c-cab353954090",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "6d00348f-f5fe-43c3-8fea-be5906d1e84f",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "6dccc462-fb4b-419b-bc71-8e367f720fe9",
+      "result_id": "c08048f7-3492-4141-b459-aec99561f26a"
+    },
+    {
+      "claim_id": "53df341c-ee96-4d36-b739-5b42a5dd1b9e",
+      "result_id": "25df1972-1c61-4c61-ab5c-80504c667f03"
+    },
+    {
+      "claim_id": "d0ffb208-2385-4846-b298-9b4d313f6e22",
+      "result_id": "25df1972-1c61-4c61-ab5c-80504c667f03"
+    },
+    {
+      "claim_id": "467c7440-eeaf-4c8b-9137-d0b553940173",
+      "result_id": "25df1972-1c61-4c61-ab5c-80504c667f03"
+    },
+    {
+      "claim_id": "78b4717e-771e-41b2-b098-c8f33c090d24",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "be07f120-3b5d-464a-8bf6-43ccbd766bcf",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "4c83fb6d-83b9-487a-a903-b9f30071e31e",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "3098609d-4744-4b7a-8efd-f2b93a658355",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "63ae4c94-aa67-4911-bef8-ca7b27e678d9",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "b2a54a31-1ad5-4b6f-9e19-5463fa93dc2f",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "46f821f2-ae72-4935-ab09-7dc95186182b",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "ff87e90a-eb91-4c48-b9d7-13c3370883e9",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "d0e84bfb-5496-493b-8af4-eb0f706b7562",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "edc181c3-5026-4cfd-bc96-b8b57c1ee145",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "76503cfa-4ae5-49fa-83d7-da19bd73f51d",
+      "result_id": "17ee9b9c-a31b-4261-bd3e-077fa49c65e1"
+    },
+    {
+      "claim_id": "531dd8f1-5897-403f-abc3-3359650caa96",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "9c1358f5-88fe-4050-9892-b3aaaa609b9f",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "29ff8132-3ea6-46df-8f9d-544353434314",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "8d2e4582-ff07-4c2e-a43d-5588d1deec65",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "c7670f6b-07df-44ff-832b-9700bcb683d0",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "ed8191b7-ab3c-4367-9692-8d93ec2be24e",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "94e563c6-280b-409c-a32f-263d9286aa03",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "0e549f99-8837-4c86-abb1-e5e53880c18d",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "c6a09f1a-2db1-4e3a-bf42-b980fac7b6fd",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "7f0f1968-b769-4eeb-989e-d73661f375af",
+      "result_id": "a34d6a74-d53a-40d9-8ffb-9450f0835e6a"
+    },
+    {
+      "claim_id": "53bdf67e-0c7f-4fc7-aaba-e72c624a00b8",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "4a62ec9f-7c03-4499-a5bf-0736afdee78e",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "bcd94222-6729-4408-99cc-ca257911caa4",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "e0016f05-6a30-4976-b4b5-af7228f890c5",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "f5d6ec95-0a35-42f5-a0c3-fe2f8c14869f",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "a18c66b7-beb1-40e9-b883-0b006cf73168",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "fe7799f1-875a-447f-a184-8e3ad797d02b",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "3c519b39-a1b5-4760-9d94-da1a321a68d0",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "02034f6a-f8c4-47a1-ab99-35632fb95f73",
+      "result_id": "ddac6c78-bc10-456a-a7e9-eb5ad663127a"
+    },
+    {
+      "claim_id": "032840d2-a396-49c5-a66f-a0ec097e0cc5",
+      "result_id": "85097200-edc2-441c-8036-ad33f11252a5"
+    },
+    {
+      "claim_id": "b87f7bbc-3d0f-44fb-bdfe-b337f66daf6e",
+      "result_id": "85097200-edc2-441c-8036-ad33f11252a5"
+    },
+    {
+      "claim_id": "53daf2c5-e476-44c0-a7f5-a474b514a356",
+      "result_id": "85097200-edc2-441c-8036-ad33f11252a5"
+    },
+    {
+      "claim_id": "a31e5645-9417-4f0d-a636-1a2a3eea8f3e",
+      "result_id": "85097200-edc2-441c-8036-ad33f11252a5"
+    },
+    {
+      "claim_id": "89474e61-8e7b-4c98-9bb9-e55e64e9f315",
+      "result_id": "dafb6afa-3f62-423f-9a60-bc102659d34e"
+    },
+    {
+      "claim_id": "6ea171a8-f872-411a-b18a-9c0b40bc7d0e",
+      "result_id": "dafb6afa-3f62-423f-9a60-bc102659d34e"
+    },
+    {
+      "claim_id": "f8a80311-9f1e-4669-a277-d99f96461458",
+      "result_id": "dafb6afa-3f62-423f-9a60-bc102659d34e"
+    },
+    {
+      "claim_id": "42d61ae5-e705-40a6-a2b5-a4a74ffad8b7",
+      "result_id": "94d78c9a-631d-4b3e-b7f8-605a8d03689e"
+    },
+    {
+      "claim_id": "85d2edd7-9eae-4571-ac07-a8e0d8c77c1b",
+      "result_id": "94d78c9a-631d-4b3e-b7f8-605a8d03689e"
+    },
+    {
+      "claim_id": "67e8e03e-92f0-4c27-b3f7-b7880276dfcc",
+      "result_id": "4e1a9525-4104-4726-b2b7-a9fba7d47418"
+    },
+    {
+      "claim_id": "53681fa8-c7c2-4ac9-9208-042351454828",
+      "result_id": "4e1a9525-4104-4726-b2b7-a9fba7d47418"
+    },
+    {
+      "claim_id": "bd76c02b-c767-4e9f-aa69-a57e27a3b11e",
+      "result_id": "4e1a9525-4104-4726-b2b7-a9fba7d47418"
+    },
+    {
+      "claim_id": "a818c27d-18a9-4d3f-9bb2-3b435bdb7066",
+      "result_id": "4e1a9525-4104-4726-b2b7-a9fba7d47418"
+    },
+    {
+      "claim_id": "f95e3455-657b-4415-bd46-cd1849b70581",
+      "result_id": "4e1a9525-4104-4726-b2b7-a9fba7d47418"
+    },
+    {
+      "claim_id": "6db8b228-d013-4744-8eaf-d7fafbc15a7a",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "abce622d-d157-4bd7-bb13-fb7d2d63d578",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "fce5d899-4dad-409a-950f-ce3ae58070f0",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "0aa4114a-c700-4ebf-8785-f0d9488de18c",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "bbb44310-4bcb-4559-aeac-959ec60ab826",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "8ec76dd8-c8ad-4e1c-8909-aad275f2a05c",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "8ce5bbee-99e1-49e9-849a-64465fb3343f",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "7475a23d-7c39-460d-a631-4cd6d10c626c",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "49e14612-563c-4802-af60-7143644543c3",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "0b428af7-ce28-4ebf-94e3-8476135fe66a",
+      "result_id": "ab4240c2-883f-4b0c-bc7b-0ff08775ddea"
+    },
+    {
+      "claim_id": "0497ba35-fd81-4d13-b709-94b8955aeb8d",
+      "result_id": "396adc7b-ad25-4e28-9154-69404fd1f5db"
+    },
+    {
+      "claim_id": "876296fd-4651-4ad2-90d5-10cf422bf3cc",
+      "result_id": "396adc7b-ad25-4e28-9154-69404fd1f5db"
+    },
+    {
+      "claim_id": "2630d135-d388-4139-bf09-b0c367d2d29b",
+      "result_id": "4c17c38d-b9f8-4165-a03b-dd254723861b"
+    },
+    {
+      "claim_id": "c8542fa6-3b20-47ce-a461-0c554c68985d",
+      "result_id": "4c17c38d-b9f8-4165-a03b-dd254723861b"
+    }
+  ],
+  "comparisons": []
+}

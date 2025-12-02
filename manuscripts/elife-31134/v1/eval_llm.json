@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "A trained RNN successfully performs a sensorimotor transcription task, converting spoken digits (0-9) into handwritten digit patterns with 98.7% accuracy on novel test stimuli, demonstrating generalization across speakers and utterances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, C38, C39, and C41 collectively demonstrate successful transcription performance. The quantitative performance metric (98.7% on 410 novel stimuli, C41) evaluated by an independent CNN classifier provides strong evidence. Generalization to novel utterances and speakers (C39) with visual confirmation (Figure 1B, Video 1) supports the robustness of the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Training transforms chaotic reservoir dynamics into stable neural trajectories that encode time-varying sensory and motor patterns as 'hypertubes' in phase space, with trajectories for the same digit converging while different digits remain well-separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 provide detailed trajectory analysis showing that training reduces within-digit variability while maintaining between-digit separation (Figures 3, 4). The conceptual framework of hypertubes (C60-C62) is supported by PCA visualizations. Claims C29-C31 establish the computational requirements that are demonstrably met by the trained network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Training the RNN significantly decreases within-digit trajectory distances during both sensory and motor epochs while preserving large between-digit separations, achieved through supervised learning with common target trajectories for each digit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide quantitative measurements (Figure 4A) showing decreased within-digit distances without loss of between-digit separation. Claims C71-C74 explain the mechanism through the training paradigm. The result is well-supported by both empirical measurements and mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C126",
+      "C134",
+      "C135"
+    ],
+    "result": "Temporal invariance emerges naturally in trained RNNs through the formation of parallel neural trajectories with appropriately modulated angular velocities, enabling recognition of the same digit spoken at different speeds across a four-fold range of temporal warping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide strong empirical evidence from temporal warping experiments (Figures 7, 8) showing maintained trajectory similarity across warp factors. Claims C4, C134, C135 explain the mechanism through modulated angular velocities. The convergence of empirical observation and mechanistic explanation strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "Temporal scaling in RNNs is achieved through a balance of constant speed and constant distance mechanisms, where trajectories at different temporal warps exhibit warp-dependent linear velocities and curvature that modulate their angular velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 provide quantitative measurements (Figure 8A, 8D) showing deviations from simple inverse proportionality and the balance between mechanisms. Claims C121, C124, C125 explain how input and recurrent subspace dynamics shape this behavior. The detailed mechanistic analysis with supporting data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Control experiments demonstrate that reservoir networks achieve only 20% performance and motor-only trained networks achieve 71% performance, confirming the importance of sensory epoch training for the full 98.7% performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide clear performance comparisons (Figure 1C) across three network types with mechanistic explanations for the differences. The control experiments are well-designed and the performance differences are substantial, strongly supporting the importance of recurrent weight training during the sensory epoch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Trained RNNs exhibit robust dynamic attractors during the motor epoch that recover from perturbations, with sensory epoch trajectories showing greater stability due to external input stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by perturbation experiments (Figure 2) showing trajectory recovery and graceful performance degradation. The differential stability between sensory and motor epochs is demonstrated quantitatively (Figure 2C) and explained mechanistically through input stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Training compresses the eigenspectrum of the recurrent weight matrix, bringing eigenvalues with real parts greater than one closer to one, consistent with increased network stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by eigenspectrum analysis (Figure 4B) with appropriate citations to prior theoretical work. However, the authors acknowledge that interpretation is not straightforward due to network nonlinearity and mixed autonomous/driven operation, which appropriately tempers the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Network performance depends critically on input amplitude, with optimal discrimination occurring at intermediate amplitudes (0.5-5) where both external input and internal dynamics shape trajectories, while extreme amplitudes either dominate internal dynamics or render the network insensitive to input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 provide comprehensive parametric analysis (Figure 5) showing how input amplitude affects within-digit and between-digit distances, dimensionality, and discrimination. The systematic exploration across amplitudes with both trained and untrained networks provides strong support for the optimal regime identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Trained RNNs suppress natural spectral noise through recurrent dynamics that rotate the recurrent subspace to be anti-correlated with input subspace deviations, but fail to generalize to artificial noise patterns with unfamiliar structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide detailed analysis (Figure 6) using novel subspace decomposition methods showing selective suppression of natural vs. artificial noise. The progressive increase in trajectory distances from trained to untrained to shuffled to orthogonal noise (C100) provides strong evidence. The mechanistic explanation through subspace rotation (C105) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Two different training algorithms (innate learning and gradient descent via BPTT) produce similar solutions to temporal invariance through parallel trajectories with modulated angular velocities, though gradient descent shows inferior interpolation/extrapolation performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 demonstrate convergence of mechanisms across training methods (Figure 8\u2014figure supplement 2), supporting generality of the temporal invariance solution. However, the inferior performance of BPTT-trained networks (C122) suggests the innate learning approach may have advantages. The comparison strengthens confidence in the mechanism while acknowledging method-dependent performance differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The RNN training procedure uses supervised 'innate learning' where recurrent units learn to reproduce target trajectories from the untrained network in the presence of noise and varying initial conditions, followed by separate output unit training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 clearly describe the training methodology with appropriate citations. The separation of recurrent and output training (C35-C36) is justified both computationally and with biological precedent (C37). This is methodological description rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The model uses a continuous-time firing-rate RNN with sparse random recurrent connections initialized in a high-gain regime (g=1.6), with the task divided into sensory and motor epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the model architecture and task structure, which are clearly specified in the methods and figures. This is methodological description supported by standard citations and clear documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "A deep CNN trained on MNIST and fine-tuned on stenciled digits was used to objectively evaluate RNN transcription performance, achieving 98.7% accuracy on 410 novel test stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 describe the evaluation methodology and report the key performance metric. The use of an independent classifier provides objective assessment. This is a methodological choice that enables the main performance result but is itself a minor contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The property of scale-dependent angular velocities stems from leaky integration of scaled inputs and input-driven suppression of chaotic activity, with training enhancing this property by suppressing recurrent amplification of scale-driven deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 provide mechanistic explanation for temporal invariance with supporting data (Figure 8D, supplements). The explanation connects network properties (leaky integration, chaos suppression) to the observed behavior. The citation to prior work (C136) and demonstration that the property exists even in reservoirs but is enhanced by training (C137) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The model generates three experimentally testable predictions: (1) neural trajectories will be stable to perturbations with sensory trajectories more resistant than motor trajectories, (2) trajectories will diverge more for artificial/unfamiliar spectral noise, and (3) slower stimuli will produce larger firing rate ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 present clear, testable predictions derived from the model results. These are appropriately framed as predictions rather than established facts. The predictions follow logically from the demonstrated model properties (perturbation stability, spectral noise selectivity, trajectory curvature analysis).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors acknowledge limitations including biological implausibility of the learning rule and uncertainty about whether training across multiple speeds is biologically realistic, suggesting future work on unsupervised learning and experience-dependent temporal invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 represent appropriate acknowledgment of model limitations and suggestions for future work. These are honest assessments of the model's constraints rather than results per se. The speculation about unsupervised learning (C149) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The balance between sensory and motor processing modes depends on recurrent weight strength and external drive magnitude, with high-gain regimes enabling both high-dimensional sensory discrimination and autonomous motor generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 explain the computational requirements for dual sensory-motor function and how the model satisfies them. The explanation is logical and supported by the parametric input amplitude analysis (Figure 5). However, this is primarily conceptual framework and interpretation rather than novel empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Training reveals a computationally powerful pattern recognition regime where networks differentially sculpt within-class and between-class trajectory separations, contrasting with reservoir networks that amplify within-class separation more than between-class separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 synthesize findings about how training improves discrimination, with C141 citing prior analytical work on reservoir regimes and C142 showing trained networks behave differently (Figure 5A). This represents an important conceptual advance in understanding trained vs. untrained RNN dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors establish context by reviewing prior work on temporal processing, fixed-point attractors, and RNN approaches, identifying the gap that sensory discrimination with RNNs remains unexplored despite success with motor pattern generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 provide literature review and motivation. These are appropriately cited statements about prior work and known phenomena that establish context. They are not novel findings but rather background that frames the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors establish that sensory and motor areas interact in the brain and have disparate computational requirements, with no previous models showing a single network can satisfy both requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide biological and computational context with appropriate citations (C15-C16) and establish the novelty of the current work (C19). These are literature review statements that motivate the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors position their work as extending reservoir computing approaches by demonstrating how experience-dependent plasticity can reshape RNN dynamics to improve representations with generalization, sensory-motor association, and temporal invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 provide discussion context, reviewing reservoir computing limitations (C129-C130) and positioning the current contributions (C131). This is appropriate framing of the work's significance relative to prior approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The current model's mechanism for temporal invariance (parallel trajectories at different speeds) differs fundamentally from prior models like G\u00fctig and Sompolinsky's synaptic shunting mechanism, representing a network-level rather than cellular-level solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 appropriately contrast the current approach with prior models, highlighting the conceptual difference between network-level and cellular-level mechanisms. This comparison helps establish the novelty and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The RNN operates in fundamentally different regimes during sensory and motor epochs, with external input partially suppressing internal dynamics during sensory processing while motor processing is entirely autonomous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the operational modes of the network with appropriate citations (C47). This is important for understanding the model but represents characterization of the model's behavior rather than a novel empirical finding requiring extensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The finding that training improves discrimination is contextualized within the established framework of experience-dependent plasticity in cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 connect the computational findings to neuroscience literature on cortical plasticity. C63 provides appropriate biological context with citations, while C64 states the computational finding. This represents appropriate contextualization rather than a standalone result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Successful formation of dynamic attractors requires low within-digit separation at the end of the sensory epoch and substantially larger between-digit than within-digit separation to ensure robust sensory-motor transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide mechanistic explanation for attractor formation based on trajectory analysis. This represents important insight into the requirements for successful sensory-motor coupling, though it is derived from the trajectory analysis rather than being independently validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The work establishes that trained RNNs in high-gain regimes can encode spatiotemporal objects, perform complex sensorimotor tasks, and address temporal warping, consistent with dynamic attractor rather than fixed-point attractor encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 provide concluding synthesis of the work's contributions. These represent appropriate summary statements of the main findings rather than new results. The framing in terms of dynamic vs. fixed-point attractors (C154) provides important conceptual context.",
+    "result_type": "MINOR"
+  }
+]

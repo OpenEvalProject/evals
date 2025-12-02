@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C91",
+      "C92"
+    ],
+    "result": "Smaller chromosomes in PB6F1 hybrids exhibit higher asynapsis rates, which correlate more strongly with predicted symmetric DSB hotspots than with chromosomal length. The five smallest autosomes showed significantly higher asynapsis rates (p=5.2\u00d710\u207b\u00b9\u2074), and asynapsis rate correlated negatively with predicted symmetric DSBs (Spearman's \u03c1=\u22120.760, p=0.0003). Symmetric DSBs provide additional explanatory power beyond chromosomal length (p=0.046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C91-C92 provide converging statistical evidence from GLMM models and correlation analyses. The large sample size (4168 pachynemas from 40 males, C78) and multiple statistical tests support the conclusion. The correlation analysis appropriately compares competing explanatory variables (chromosome length vs. symmetric DSBs), and the finding that symmetric DSBs add explanatory power beyond length is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Introduction of 27 Mb or more of consubspecific (PWD/PWD) sequence into intersubspecific (PWD/B6) chromosome pairs effectively restores synapsis below 5% asynapsis rate in all six studied autosomes. The change point was estimated at 27.14 Mb (95% CI: 19.36-34.91), and the position of the consubspecific interval (centromeric, interstitial, or telomeric) was not critical for synapsis rescue (p=0.9573).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by extensive experimental data from 2-chr crosses examining 122 chromosomes from over 12,000 pachynemas (C79). The segmented regression model provides a quantitative estimate with confidence intervals (C40), and the statistical test for position independence (C41) is appropriate. The finding is replicated across six different chromosomes with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C83",
+      "C84",
+      "C95"
+    ],
+    "result": "Targeted suppression of asynapsis in four of the most asynapsis-prone chromosomes partially reversed hybrid sterility. In the 4-chr cross, only 51.7% of males were aspermic compared to 100% in PB6F1 controls, with 19.5% showing low sperm counts and 28.7% showing substantial sperm counts (1.0-13.7\u00d710\u2076). Sperm presence correlated with synapsis rescue when at least three of four chromosomes were synapsed and probability of all four synapsing exceeded 0.7 (p=0.0014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C83-C84, C95 provide direct experimental evidence linking chromosome synapsis to fertility rescue. The large sample size (87 G4 males, over 6500 pachynemas analyzed, C80) and clear quantitative relationship between synapsis probability and sperm presence support the causal link. The statistical significance (p=0.0014) and correspondence between predicted and observed outcomes strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C62"
+    ],
+    "result": "A trans effect modulates asynapsis rates, whereby successful synapsis of some chromosomes enhances synapsis probability of other intersubspecific chromosome pairs. In PB6F1 hybrids, observed fully synapsed pachynemas (13.1%) were double the expected rate (6.6%, p=0.023). Asynapsis rates of nonrecombinant PWD/B6 chromosomes were reduced in 2-chr and 4-chr crosses (OR=0.687, p=0.0002). A 10% increase in synapsis rate of three chromosomes predicts a 4.18% decrease in asynapsis of the fourth chromosome (p=0.0266).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C62 demonstrate a trans effect through multiple lines of evidence: comparison of observed vs. expected synapsis rates, analysis of nonrecombinant chromosomes across different crosses, and quantitative modeling of inter-chromosome effects. The statistical tests are appropriate (Mann-Whitney, GLMM), and the effect is detected consistently across different experimental designs. However, the mechanism remains unexplained, which is acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Modeling based on DSB distribution predicts that two or more symmetric DSBs per chromosome are sufficient for successful synapsis. The model estimates that approximately 25% of asynapsis cases occur when there are zero symmetric DSBs, with the remaining 75% occurring with one symmetric DSB. The model assumes ~250 DSBs per cell, 0.28 proportion of symmetric hotspots, and similar DSB densities between B6 and PB6F1 males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61, C88-C90 present a computational model with several critical assumptions. While the model is consistent with the data (slope of regression P[asynapsis] on P[0 or 1 symmetric DSBs]=1.00), the assumptions are not all directly validated: (1) C90 assumes similar DSB densities between B6 and PB6F1, which is stated as an assumption rather than demonstrated; (2) C89 assumes constant 0.28 proportion across all autosomes, which may not hold; (3) the model is based on 100,000 simulations but lacks validation against independent data. The prediction requires experimental verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prdm9 causes chromosome asynapsis and infertility in PB6F1 male hybrids through a chromosome-autonomous mechanism. Approximately 90% of primary spermatocytes exhibit one or more pairs of asynapsed homologs with persistent unrepaired DSBs marked by \u03b3H2AX. The study demonstrates that deliberate manipulation of chromosome synapsis can predictably modify the extent of meiotic arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C23, C66-C68 establish the link between Prdm9-mediated asynapsis and sterility. The high frequency of asynapsis (90%) and its chromosome-autonomous nature are supported by extensive cytological analysis. The causal relationship is strengthened by the fertility rescue experiments (C44-C47) showing that reducing asynapsis restores fertility. The \u03b3H2AX marking provides molecular evidence for unrepaired DSBs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C93",
+      "C94"
+    ],
+    "result": "Asynapsed chromosomes in PB6F1 hybrids lack active euchromatin and are embedded in transcriptionally silenced chromatin, visualized by absence of extra-coding RNA (ecRNA) detected by Cot1 RNA FISH. This is proposed to represent meiotic silencing of unsynapsed chromatin (MSUC), which may contribute to the meiotic phenotype of sterile hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C93-C94 are supported by fluorescence microscopy and RNA FISH data (Figure 1). The observation of transcriptional silencing in asynapsed regions is consistent with known MSUC mechanisms. However, C36 is stated as a proposal rather than definitively proven causation. The interpretation is reasonable and supported by citations, but the specific contribution of MSUC to the sterility phenotype is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In PB6F1 hybrids, approximately 70% of Prdm9-directed DSB hotspots are asymmetric, with PRDM9PWD hotspots predominantly on B6 chromosomes and vice versa. The DNA-binding zinc-finger domain of PRDM9 is responsible for sterility, and the asymmetry may be explained by erosion of PRDM9-binding sites through preferential transmission of altered hotspot motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C55-C57 are primarily based on cited work (Davies et al., 2016; Smagulova et al., 2016) rather than new data from this study. The current study validates the correlation between asymmetry and asynapsis across chromosomes (C27). The mechanistic explanation for hotspot asymmetry (C57) is speculative but supported by literature citations. These findings provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Prdm9-independent 'default' hotspots are enriched in Chr X, and their percentage in autosomes correlates with asynapsis rate in F1 hybrids (Spearman's \u03c1=0.69, p=0.0012). These hotspots may represent late-forming DSBs on unsynapsed chromosomes and could be a consequence rather than cause of asynapsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 present a correlation analysis with significant statistical support. However, C87 explicitly acknowledges this is an interpretation ('may represent') rather than demonstrated causation. The correlation is notable but the directionality (consequence vs. cause) requires further experimental validation. The interpretation is reasonable and supported by citation to Kauppi et al. (2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C81",
+      "C82"
+    ],
+    "result": "Meiotic asynapsis affects intersubspecific (PWD/B6) but not consubspecific (PWD/PWD) chromosome pairs in sterile male hybrids. In 2-chr crosses, all male progeny were fully sterile with low testis weight and absence of sperm. Nonrecombinant PWD/PWD bivalents were always fully synapsed, while nonrecombinant PWD/B6 pairs showed highest asynapsis frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C81-C82 establish the fundamental observation that drives the experimental design. C37 is supported by previous citations, while C38, C81-C82 are direct observations from the current study. The consistent synapsis of PWD/PWD pairs and asynapsis of PWD/B6 pairs across all experiments provides strong evidence for the chromosome-autonomous nature of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PB6F1 hybrid females are fertile, obeying Haldane's rule, but their oogenesis is impaired with 45% of pachynemas showing one or more asynapsed autosomes. The effect of Prdm9 on asynapsis in female PB6F1 meiosis appears weak or absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe sex-specific differences in the hybrid sterility phenotype. The observations are supported by data and citations. The finding that females are fertile despite substantial asynapsis (45%) contrasts with male sterility and supports Haldane's rule. However, the mechanism underlying the sex difference is not explored in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors hypothesize that impaired recombination between evolutionarily diverged chromosomes could function as a mechanism of hybrid sterility in various sexually reproducing species. They speculate that mechanisms safeguarding recombination between homologous sequences could act as checkpoints disabling recombination after sufficient divergence, potentially serving as a gradual means to restrict gene flow between related taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C71-C73 are explicitly stated as hypotheses and speculation. While the mouse data provide support for this mechanism in one system, extrapolation to 'various sexually reproducing species' requires additional evidence. C72 cites work in Saccharomyces as precedent, but broader validation is needed. These are reasonable hypotheses for future testing but are not demonstrated by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C28",
+      "C52",
+      "C54",
+      "C58",
+      "C59",
+      "C70",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Background knowledge and prior findings establish the context for the study, including: Prdm9 as the only known vertebrate hybrid-sterility gene; its role in determining DSB sites and recombination hotspots; the genetic basis of PB6F1 hybrid sterility involving Prdm9 and Hstx2 alleles; and various observations from previous studies on hybrid sterility mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C5, C9-C22, C24-C25, C28, C52, C54, C58-C59, C70, C74-C76 represent established knowledge and prior findings that are appropriately cited. These provide essential context but are not new results from this study. The citations appear accurate and the background is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The authors predicted that complete elimination of asynapsis in four of the shortest autosomes could increase the proportion of primary spermatocytes with fully synapsed autosomes to 26.7% and potentially yield around 5 million sperm cells in hybrid male epididymis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 represents a prediction based on multiplication of individual chromosome synapsis probabilities. The subsequent experimental results (C44-C46) partially validate this prediction, though the observed outcomes show more variability than the simple multiplicative model suggests. The prediction was useful for experimental design but the actual results revealed additional complexity (trans effects).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Methodological details: males were analyzed at 60-70 days of age; 4168 pachynemas from 40 PB6F1 males were analyzed; 122 chromosomes from over 12,000 pachynemas were examined in 2-chr crosses; over 6500 pachynemas were analyzed in the 4-chr cross.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide essential methodological information and sample sizes. These are straightforward factual statements about the experimental design. The large sample sizes (thousands of pachynemas) provide adequate statistical power for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

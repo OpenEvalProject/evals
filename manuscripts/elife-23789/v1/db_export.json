@@ -1,0 +1,1907 @@
+{
+  "submission": {
+    "id": "7069dd9d-f0dc-4cd7-8c95-b1f87d369118",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:03:13.316544Z",
+    "updated_at": "2025-12-01T19:03:13.316544Z"
+  },
+  "content": [
+    {
+      "id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "submission_id": "7069dd9d-f0dc-4cd7-8c95-b1f87d369118",
+      "content_type": "manuscript",
+      "content_text": "# Reciprocal synapses between mushroom body and dopamine neurons form a positive feedback loop required for learning\n\n## Authors\n\n- Isaac Cervantes-Sandoval<sup>1</sup> ([ORCID: 0000-0002-6372-7288](https://orcid.org/0000-0002-6372-7288)) \u2020\n- Anna Phan<sup>1</sup>\n- Molee Chakraborty<sup>1</sup>\n- Ronald L Davis<sup>1</sup> ([ORCID: 0000-0002-5986-7608](https://orcid.org/0000-0002-5986-7608)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience The Scripps Research Institute Florida Jupiter United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCurrent thought envisions dopamine neurons conveying the reinforcing effect of the unconditioned stimulus during associative learning to the axons of Drosophila mushroom body Kenyon cells for normal olfactory learning. Here, we show using functional GFP reconstitution experiments that Kenyon cells and dopamine neurons from axoaxonic reciprocal synapses. The dopamine neurons receive cholinergic input via nicotinic acetylcholine receptors from the Kenyon cells; knocking down these receptors impairs olfactory learning revealing the importance of these receptors at the synapse. Blocking the synaptic output of Kenyon cells during olfactory conditioning reduces presynaptic calcium transients in dopamine neurons, a finding consistent with reciprocal communication. Moreover, silencing Kenyon cells decreases the normal chronic activity of the dopamine neurons. Our results reveal a new and critical role for positive feedback onto dopamine neurons through reciprocal connections with Kenyon cells for normal olfactory learning.\n\n## Introduction\n\nMolecular, cellular and systems neuroscience studies using Drosophila have uncovered several major tenets that reveal the logic by which olfactory memories are formed and stored. The first is that modulation of mushroom body (MB) Kenyon cell (KC) synaptic activity underlies associative learning and memory (Davis, 1993, Davis, 2011; Heisenberg, 2003; Busto et al., 2010). KCs are connected and respond to multiple primary sensory centers including those for olfaction, vision and gustation (Yagi et al., 2016). The major olfactory input occurs in the MB calyx, with the KC dendrites receiving input in this neuropil region from approximately 180 olfactory projection neurons. The representation of different odorants is highly sparse (Honegger et al., 2011) across the three major types of KC \u2013 the \u03b1\u03b2, \u03b1\u2019\u03b2\u2019 and \u03b3 \u2013 being generated, in part, by a negative feedback loop between KC and the GABAergic APL neuron (Liu and Davis, 2009; Lin et al., 2014a).\n\nA second tenet is that the modulation of Kenyon cell function for olfactory learning employs intracellular cAMP signaling. Multiple learning mutants that alter cAMP synthesis, degradation, or effector function have been characterized and mapped through expression or functional studies to the Kenyon cells (Davis, 1993; 2005). More specifically, inputs representing an odor-conditioned stimulus (CS) along with an unconditioned stimulus (US) to the KC lead to the mobilization of the cAMP signaling cascade (Davis, 1993) employing the Rutabaga-encoded adenylyl cyclase as a coincidence detector (Tomchik and Davis, 2009) to induce changes in the output of the KC.\n\nA third tenet is that the mushroom body output neurons (MBOn) receive input from the KC and their activation influences approach or avoidance behavior (Davis, 1993; Heisenberg, 2003; Aso et al., 2014b; Owald et al., 2015). There are 21 classes of MBOn whose dendrites tile the lobes containing the axons of the KC in 15 different compartments. Recent studies have shown that learning alters odor drive to specific MBOn (S\u00e9journ\u00e9 et al., 2011; Pai et al., 2013; Pla\u00e7ais et al., 2013; Bouzaiane et al., 2015; Hige et al., 2015; Owald et al., 2015). Interestingly, reward learning appears to reduce drive to output pathways that direct avoidance, whereas aversive learning increases drive to avoidance pathways while reducing drive to approach pathways.\n\nA fourth tenet is that dopamine neurons (DAn) are activated by aversive or rewarding stimuli to provide the US input for olfactory classical conditioning (Riemensperger et al., 2005; Mao and Davis, 2009; Liu et al., 2012). There exist several lines of evidence in support of this model. First, blocking DAn during training with temperature sensitive dynamin (shibire) impairs memory acquisition (Schwaerzel et al., 2003). Second, mutants for the dopamine receptor dDA1 impair memory acquisition that can be rescued by expressing this receptor in KC (Kim et al., 2007; Qin et al., 2012). Third, the artificial activation of DAn using thermo- or optogenetic approaches along with odor CS stimulation leads to conditioned behavior (Schroll et al., 2006; Claridge-Chang et al., 2009; Aso et al., 2010, 2012; Burke et al., 2012; Liu et al., 2012). Thus, artificial stimulation of the DAn is sufficient to signal the reinforcing effect of the US. The innervation by DAn occurs primarily on the axonal processes of the KC in the MB lobes, across the same 15 compartments occupied by the dendrites of the MBOn (Mao and Davis, 2009; Pech et al., 2013; Aso et al., 2014a). These findings have suggested that DAn stimulation, driven by a US, changes the odor-specific output weight of KC synapses onto the corresponding MBOn, tilting the MBOn network to direct appropriate behavior. The dopaminergic inputs modulate KC synaptic transmission with precise spatial specificity, allowing KC to differentially convey olfactory signals to each of their postsynaptic MBOn (Cohn et al., 2015).\n\nHowever, this model of multiple, independent plasticity/output channels is oversimplified given evidence of additional and poorly understood computations occurring within the KC neuropil. For instance, Perisse et al. (2016) provided evidence that plasticity in the MBOn-\u03b31pedc compartment initiates feed-forward inhibition that alters the flow of information in the MBOn\u03b2\u20192mp and MBOn\u03b35\u03b2\u20192a compartments. In addition, different DAn drive synaptic changes between KC and MBOn with different rules (Hige et al., 2015). Activation of \u03b31pedc DAn induces both learning and odor-specific synaptic depression in MBOn\u03b31pedc when paired with only a 1 s odor presentation, whereas similar plasticity in the \u03b12\u03b1\u20192 compartment requires 1 min odor presentation with DAn activation.\n\nHere, we report additional complexity in the circuitry and connections that influence olfactory learning. We demonstrate that DAn are both pre- and postsynaptic to KC, forming axoaxonic reciprocal synapses that are required for optimal learning through a positive feedback mechanism. DAn input to KC feeds back onto the same DAn through KC>DAn cholinergic synapses amplifying the synaptic release of DA required for reinforcement.\n\n## Results and discussion\n\n### KC are both pre-and post-synaptic to DAn forming axoaxonic reciprocal connections\n\nWe previously showed that genetic insults in KC affect ongoing activity in DA PPL1 neurons, the set of DAn that innervate the vertical lobes, heel, and junction area of the MB (Figure 1A,B; compartments \u03b31\u20132, \u03b11\u20133, \u03b1\u20191\u20133). Reducing the expression of the Scribble protein using the KC-specific R13F02-gal4 driver increases total ongoing activity measured in the axon terminals of the DAn that innervate \u03b32\u03b1\u20191 (Cervantes-Sandoval et al., 2016). This result suggested the existence of a retrograde signal from the postsynaptic KC to the presynaptic DAn partners that influences their activity, or that KC might be both pre- and post-synaptic to DAn, perhaps forming axoaxonic reciprocal\u00a0synapses in the complex MB lobe neuropil. We first used trans-synaptic GFP fluorescence reconstitution (Macpherson et al., 2015) to look for a possible physical and functional connection between KC axons and DAn axons. This system uses the expression of a split version of GFP tethered to presynaptic synaptobrevin (syb::spGFP1-10) in the hypothetical presynaptic partner and a membrane tethered version of the complementing split GFP (CD4::spGFP11) in the hypothetical postsynaptic counterpart (Figure 1C). Figure 1B shows KC co-labeled with DAn represented by the TH-LexA driver innervating the \u03b1\u20193, \u03b13, \u03b12\u03b1\u20192, \u03b31ped, \u03b31, \u03b32\u03b1\u20191 and \u03b22 and \u03b2\u20192 compartments (Berry et al., 2015). As expected, expressing presynaptic split GFP (uas-syb::spGFP1-10) in DAn using TH-gal4 along with membrane tagged complementary split GFP (lexAop-CD4::spGFP11) in KC with R13F02-lexA reconstituted GFP fluorescence in all the aforementioned compartments (Figure 1D). Surprisingly, the reciprocal experiment, with uas-syb::spGFP1-10 expressed in the KC and lexAop-CD4::spGFP11 in the DAn, reconstituted GFP fluorescence in an identical pattern of MB lobe compartment expression (\u03b1\u20193, \u03b13, \u03b12\u03b1\u20192, \u03b31ped, \u03b31, and \u03b32\u03b1\u20191; minimal fluorescence also in PAM \u03b22\u03b2\u20192a) (Figure 1E). Three-dimensional reconstruction of images obtained by structured illumination microscopy showed well-defined synaptic puncta in the \u03b12\u03b1\u20192 domain (Video 1). No staining was observed when brains expressing either half of the GRASP components were imaged under the same conditions (Figure 1\u2014figure supplement 1). These results strongly suggest the presence of reciprocal axoaxonic synaptic connectivity between KC and the DAn represented in the TH driver with the connectivity occurring essentially across the entire vertical MB lobe and the lateral aspect of the horizontal lobe.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig1-v1.jpg)\n\n**Figure 1.:** (A) Diagram of 15 discrete compartments that divide the MB lobes according to the DAn pre- and MBOn postsynaptic innervation pattern. (B) Co-labeling of the MB lobes using R13F02-gal4 to drive uas-tdtomato expression and TH-lexA to drive lexAop-CD8::GFP expression. Lobe areas that remain primarily green receive less or no innervation from the PPL1 cluster of DAn compared to those that are white. (C) Diagram of trans-synaptic fluorescence reconstitution. Synaptic syb::spGFP1-10 is expressed in the presynaptic neuron along with spGFP11 in the putative postsynaptic counterpart. GFP reconstitution occurs only if synaptic connectivity exists. (D) GFP reconstitution when syb::spGFP1-10 is expressed in DAn. (E) GFP reconstitution when syb::spGFP1-10 is expressed in KC.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) No detectable GFP signal was observed when spGFP11 was expressed with R13F02-lexA. (B) No detectable GFP signal was observed when only syb::spGFP1-10 was expressed with TH-gal4. (C) Reconstitution of GFP was observed when spGFP was expressed in KC with R13F02-gal4 and syb::spGFP1-10 in DAn with TH-gal4 driver. The three images shown were obtained using the same image acquisition parameters.\n\n![Video 1.](https://cdn.elifesciences.org/articles/23789/elife-23789-media1.mp4.jpg)\n\nTo show functional connectivity between KC and DAn, we used the ATP/P2X2 system in ex vivo preparations to stimulate the KC and recorded cAMP and calcium influx in the DAn axon terminals using an Epac1 reporter and GCaMP3, respectively. We first verified that the ATP/P2X2 system was working properly by co-expressing P2X2 and the GCaMP3 reporter in DAn using TH-gal4 and recording stimulated calcium responses to bath applied ATP. A dose-response curve to ATP confirmed the efficacy of artificially activating DAn using P2X2/ATP (Figure 2\u2014figure supplement 1). We then tested the pre-synaptic function of DAn and found that artificial stimulation of DAn contained in the TH-gal4 driver induced increasing elevations of cAMP in postsynaptic KC with increasing concentrations of ATP (Figure 2\u2014figure supplement 2). We failed to observe calcium responses in the KC axons when DAn were stimulated with increasing concentrations of ATP (not shown). This is consistent with prior observations (Tomchik and Davis, 2009) and indicates that DA receptor engagement on KC produces the modulatory signal of stimulating cAMP accumulation without altering ion channel function to allow calcium influx. When we stimulated the KC with the ATP/P2X2 ion channel, we discovered potent cAMP and calcium responses in DAn (Figure 2A,B). Although not strictly comparable, the evoked cAMP responses in the DAn were roughly two fold larger than responses evoked in the KC with DAn stimulation (Figure 2\u2014figure supplement 2). We discovered during the course of these experiments that our control genotype containing uas-P2X2 alone showed significant calcium responses with ATP application (Figure 2\u2014figure supplement 3A). This suggested leaky expression of the P2X2 channel in PPL1 neurons despite reports that no leaky expression occurs in other types of neurons (Yao et al., 2012). Although responses in this control were significantly lower than the experimental group, we chose to use optogenetic tools to verify our results with the P2X2 system (Figure 2\u2014figure supplement 3B\u2013E). We first verified that we could stimulate KC using Chrimson. For this, we coexpressed Chrimson along with GCaMP6 in KC and recorded calcium responses to red light stimulation in living animals using two-photon microscopy. Strong calcium responses were observed in KC to red light stimulation. Control animals without Chrimson expression showed no response (Figure 2\u2014figure supplement 3B). Similar to our results with ATP/P2X2, stimulating KC with red light produced potent calcium responses in PPL1 DAn (Figure 2\u2014figure supplement 3C). Because the functional imaging responses and functional GRASP reconstitution experiment showed the largest responses in the \u03b12\u03b1\u20192 DAn, we focused the remainder of our experiments on this particular neuron and the compartment of the MB lobes that it innervates.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cyclic AMP responses in DAn (\u03b13, \u03b1\u20193, \u03b12\u03b1\u20192 and \u03b32\u03b1\u20191) to artificial stimulation of KC using ATP/P2X2 system. The solid line of each trace represents the mean and shaded area represents \u00b1 SEM at various concentrations of ATP used in the experiment. Cyclic AMP accumulation was observed in the axons of the DAn that innervate all of the MB lobe compartments that were recorded. N\u00a0=\u00a09\u201314. (B) Calcium responses in DAn (\u03b13, \u03b1\u20193, \u03b12\u03b1\u20192 and \u03b32\u03b1\u20191) to artificial stimulation of KC using ATP/P2X2 system. The solid line of each trace represents mean and shaded area represents \u00b1 SEM. Calcium responses were observed in the axons of the DAn that innervate all of the MB lobe compartments that were recorded. N\u00a0=\u00a012\u201316. (C) Diagram of the experimental setup. A micropipette was used to focally apply ACh to the calyx of the MB while imaging in both the calyx and MB lobes. (D) Calcium responses in both calyx and lobes of the KC to ACh application in the presence (red) or absence (black) of 1 \u00b5M TTX. TTX blocked the responses in the lobes but not the calyx, indicating that TTX was functional in blocking action potentials. N\u00a0=\u00a07\u201310. (E) Diagram of the experimental setup. A micropipette was used to focally apply 5 mM ATP to the \u03b12\u03b12\u2019 compartment of MB while recording calcium responses in \u03b12\u03b1\u20192 DAn. (F) Calcium responses in \u03b12\u03b1\u20192 DAn in the presence (red) or absence (gray) of 1 \u00b5M TTX. TTX was without significant effect, indicating that the artificial activation of KC fibers were capable of evoking responses in DAn axon terminals through local, mono-synaptic transmission. N\u00a0=\u00a09\u201311. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the means \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Diagram of the experimental setup. Flies co-expressing the P2X2 channel and GCaMP3 in DAn using TH-gal4 were stimulated by bath application of increasing concentrations of ATP. (B) Calcium responses obtained by stimulation with different concentrations of ATP and measured in all compartments shaded green in panel A. N\u00a0=\u00a012. The solid lines represent the means and the shaded area represents \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Diagram of experiment setup. DAn were stimulated with increasing concentrations of ATP while recording cAMP responses in KC. (B) Cyclic AMP dose-response curve after artificial stimulation of DAn using the ATP/P2X2 system. N\u00a0=\u00a08. The solid lines represent the means and shaded areas represent \u00b1 SEM. Responses were recorded in all compartments shaded red in panel A.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Calcium responses in DAn (\u03b13, \u03b1\u20193, \u03b12\u03b1\u20192 and \u03b32\u03b1\u20191) to artificial stimulation of KC using the ATP/P2X2 system along with genetic controls. The uas-alone control (blue bars) showed significant responses to P2X2 stimulation, suggesting leaky expression of the channel. Bars represent the mean \u00b1 SEM at 2.5 mM ATP. Calcium responses were observed in the axons of the DAn that innervate all MB lobe compartments that were recorded. N\u00a0=\u00a07\u201312. Data were analyzed using Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the means \u00b1 SEM. (B) Testing the efficacy of the light/Chrimson system. Left panel shows a diagram of the experimental setup. Flies co-expressing the Chrimson channel and GCaMP6f in KC using R13F02-gal4 were stimulated by red light and calcium responses recorded. N\u00a0=\u00a012. The solid lines represent the means with the shaded area \u00b1 SEM. (C) Calcium responses in DAn (\u03b13, \u03b1\u20193, \u03b12\u03b1\u20192 and \u03b32\u03b1\u20191) to artificial stimulation of KC using the light/Chrimson system. The solid line of each trace represents the mean and shaded area represents \u00b1 SEM. Calcium responses were observed in the axons of the DAn that innervate all MB lobe compartments that were recorded. N\u00a0=\u00a06\u20139. (D) Calcium responses in \u03b12\u03b1\u20192 DAn in the presence (red) or absence (gray) of 1 \u00b5M TTX. TTX was without significant effect, indicating that the artificial activation of KC fibers were capable of evoking responses in DAn axon terminals through local, monosynaptic transmission. N\u00a0=\u00a014. Data were analyzed using a Mann-Whitney U non-parametric test. Bars represent the means \u00b1 SEM. (E) Connections between KC and DAn are cholinergic. Calcium responses in \u03b12\u03b1\u20192 DAn to stimulation of KC using the light/Chrimson system were strongly inhibited in presence of nAChR antagonist mecamylamide (500 \u00b5M) (left). Vehicle was without effect (right). N\u00a0=\u00a016\u201318. Data were analyzed using a Mann-Whitney U non-parametric test. Bars represent the means for calcium response \u00b1 SEM.\n\nTo exclude the possibility that the evoked responses in the DAn were from polysynaptic innervation, we measured calcium responses in \u03b12\u03b1\u20192 DAn to focal application of ATP through a glass micropipette using fast pressure injection in presence or absence of 1 \u00b5M tetradotoxin (TTX). TTX inhibits neuronal firing by binding to voltage-gated sodium channels and inhibiting action potentials driven from polysynaptic transmission. To ensure that TTX treatment was effective, we first measured calcium responses in both the KC calyx and lobes simultaneously after focal application of 10 mM ACh to the MB calyx in the presence or absence of TTX. As expected, robust calcium responses were observed in both calyx and lobes to ACh applied to the calyx. Nevertheless, the lobe but not calyx responses were completely abolished when TTX was present (Figure 2C\u2013D), demonstrating that our procedures utilizing TTX effectively inhibited action potential propagation. Using this method, no difference in DAn calcium responses was observed after focal application of ATP in presence or absence of TTX (Figure 2E\u2013F). Similar results were obtained using optogenetic stimulation (Figure 2\u2014figure supplement 3D). These results, together with the functional trans-synaptic fluorescence reconstitution (Figure 1C\u2013E) demonstrate that DAn are both pre- and post-synaptic KC, through axoaxonic reciprocal connections.\n\n### The connection between KC and DAn is cholinergic\n\nRecent studies revealed that KCs are cholinergic and nAChR receptors in MBOn are required for memory retrieval (Barnstedt et al., 2016). To explore the chemical nature of KC>DAn synaptic connection, we recorded ex vivo, ATP/P2X2 evoked calcium responses in the \u03b12\u03b1\u20192 DAn axon terminals in brains pre-incubated for 10 min with a battery of different inhibitors. We included inhibitors to nicotinic acetylcholine receptors (mecamylamide), muscarinic acetylcholine receptors (atropine), GABA receptors (CGP 35348), mGlu receptors (S-MCPG) and dopamine/serotonin receptors (pimozide). Only the nicotinic AChR inhibitor, mecamylamide (100 \u00b5M), significantly reduced ATP/P2X2 evoked calcium responses in DAn (Figure 3A). We then completed a full dose-inhibition curve to increasing concentrations of mecamylamide by comparing the responses in the presence of the inhibitor to a second response recorded ten minutes after wash out of the inhibitor. Up to sixty percent inhibition was obtained with 250 and 500 \u00b5M mecamylamide when measured in this manner (Figure 3B). We suggest that full inhibition was not achieved due to the leaky expression of P2X2 channel and perhaps incomplete washout. However, optogenetics experiments showed\u00a0>85% inhibition with 500 \u00b5M mecamylaminde (Figure 2\u2014figure supplement 3E). We then reasoned that if ACh is the neurotransmitter for the KC>DAn axoaxonic synapses, then DAn should respond directly to ACh. We therefore measured calcium responses in \u03b12\u03b1\u20192 DAn axon terminals to focally applied ACh. As predicted, focal application of ACh robustly increased intracellular calcium in DAn projections, reaching maximum responses at 10 and 100 mM concentrations (Figure 3C\u2013D). We subsequently recorded calcium responses to focally applied ACh in the presence of 1 \u00b5M TTX to rule out the possibility that the DAn responses resulted from indirect activation of other neurons including KC. The magnitude of ACh evoked calcium responses was no different in presence or absence of TTX, indicating that these neurons have ACh postsynaptic specializations in their axonal terminals located in the MB neuropil (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig3-v1.jpg)\n\n**Figure 3.:** (A) Calcium responses in \u03b12\u03b1\u20192 DAn to stimulation of KC using the ATP/P2X2 system in presence of inhibitors to nACh receptors (100 \u00b5M mecamylamide), mACh receptors (atropine), GABA receptors (CGP 35348), mGlu receptors (S-MCPG) and dopamine/serotonin receptors (pimozide). N\u00a0=\u00a010\u201316. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the means for calcium response \u00b1 SEM. (B) Dose-response plots to increasing concentrations of mecamylamide comparing the responses in the presence of the inhibitor to a second response recorded after a ten-minute washout. N\u00a0=\u00a010\u201316. (C) Diagram of the experiment setup. A micropipette was used to focally apply ACh to \u03b12\u03b1\u20192 DAn axonal terminals while recording calcium responses. (D) Calcium dose-response curve in \u03b12\u03b1\u20192 DAn terminals to focal application of increasing concentrations of ACh. N\u00a0=\u00a06. Error bars represent SEM. (E) Calcium responses to focal application of 10 mM ACh to \u03b12\u03b1\u20192 DAn axons in the presence (red) or absence (black) of 1 \u00b5M TTX. N\u00a0=\u00a06. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM. (F) Three-minute aversive olfactory memory of flies expressing RNAi transgenes to different nAChR\u03b1 subunits in DAn using TH-gal4. N\u00a0=\u00a012. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. *p<0.05. Bars represent the mean \u00b1 SEM. (G) Three-minute aversive olfactory memory of flies expressing an RNAi transgene to nAChR\u03b11 RNAi compared to the parental controls, TH-gal4/+ and nAChR\u03b11RNAi/+. N\u00a0=\u00a06. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the mean \u00b1 SEM. p<0.05. (H) Three-minute aversive olfactory memory of flies expressing an RNAi transgene to nAChR\u03b14 compared to the parental controls, TH-gal4/+ and nAChR\u03b14RNAi/+. N\u00a0=\u00a06. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the mean \u00b1 SEM. p<0.05. (I) Three-minute aversive olfactory memory of flies expressing an RNAi transgene to nAChR\u03b15 compared to the parental controls, TH-gal4/+ and nAChR\u03b15RNAi/+. N\u00a0=\u00a06. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the mean \u00b1 SEM. p<0.05. (J) Three-minute aversive olfactory memory of flies expressing an RNAi transgene to nAChR\u03b14 in \u03b12\u03b1\u20192 PPL1 neurons compared to the parental controls, MB058B-split-gal4/+ and nAChR\u03b14RNAi/+. N\u00a0=\u00a06. Data were analyzed with Kruskal-Wallis one-way ANOVA and Dunn\u2019s multiple comparison test. Bars represent the mean \u00b1 SEM. p<0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Sleep was monitored across three days. N\u00a0=\u00a024. Bars represent the mean \u00b1 SEM.\n\n### Cholinergic input to DAn is required for normal olfactory learning\n\nAs described above, the PPL1 DAn have been widely modeled as conveying US shock information to the KC during olfactory conditioning. Because of this, we probed the possible role of the KC$\u21c6$DAn reciprocal connection for this behavior by reducing the ACh input to the DAn axons from the KC. To do so, we knocked down several nAChR subunits using multiple RNAi transgenes and tested the flies for performance after olfactory conditioning. Flies expressing RNAi to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 but not nAChR\u03b16 using TH-gal4 modestly impaired aversive olfactory learning when compared to control flies. Control flies were constructed by crossing TH-gal4-containing flies to the RNAi parental line 36303, which contains an empty docking site, attp40 (Figure 3F). This attp40 site was used to insert RNAi constructs to obtain flies harboring the RNAi-transgenes. Similar results were obtained when flies expressing RNAi\u2019s to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 were individually compared to their two parental genetic controls, TH-gal4/+ and uas-RNAi/+ (Figure 3G\u2013I), suggesting that these three subunits are expressed on the axons of DAn. Similar results were observed when we used a Split-gal4 driver, MB058B, to restrict nAChR\u03b14 KD in \u03b1\u20192 \u03b1\u20192 PPL1 neurons. No significant differences were observed in olfactory and electric shock avoidance for any of the genotypes used for behavioral experiments in our study (data not shown). Importantly, these results coupled with those showing KC axoaxonic synapses to DAn indicate that KC-driven cholinergic input to the distal axons of DAn is required for normal learning, possibly due to amplification of dopamine release at acquisition.\n\nSince the DAn>KC circuit is known to be involved in sleep and sleep homeostasis, we also evaluated sleep profiles in flies expressing RNAi transgenes to nAChR subunits in DAn. We found no significant differences in sleep patterns compared to control flies (Figure 3\u2014figure supplement 1).\n\n### KC input to DAn is required for normal DAn synaptic release during learning\n\nIf the cholinergic input from KC to DAn is required for full DA release during learning as suggested by our results above, then blocking MB output should impair DAn synaptic release during memory acquisition. To test this prediction, we silenced KC using Kir2.1 channel expression while recording presynaptic calcium responses using syt:GCaMP6s during a training session in the \u03b12\u03b1\u20192 PPL1 DAn axon terminals. This reporter uses the genetically encoded calcium sensor GCaMP6s tethered to the C terminus of the vesicular synaptic protein synaptotagmin. Presynaptic calcium is a key regulator of neurotransmission and this sensor provides a sensitive readout of synaptic release (Cohn et al., 2015). Flies of the genotype R82C10-LexA/lexAop-sytGCaMP6s; R13F02-gal4/uas-kir2.1, tub-gal80ts were reared at 18\u00b0C and then switched at eclosion to 30\u00b0C for 16 hr to allow expression of kir2.1 in KC (Cervantes-Sandoval et al., 2013) (Figure 4A). Expression of Kir 2.1, an inwardly rectifying potassium channel, silences neurons by inhibiting membrane depolarization. Presynaptic calcium responses were then recorded in flies subjected to aversive olfactory training under the microscope at room temperature. The responses were then compared to flies where kir2.1 expression was not induced by maintaining the flies at 18\u00b0C. A significant decrease in presynaptic calcium responses was observed when KC were silenced with kir2.1 compared to flies without kir2.1 expression (Figure 4B). The shape of \u03b12\u03b1\u20192 PPL1 responses during CS/US conditioning suggested that they are bipartite, consisting of a rapidly adapting odor response with superimposed electric shock peaks. To determine which of the two components require KC input, we recorded responses in \u03b12\u03b1\u20192 DAn with odor or shock delivery separately. Surprisingly, we found that silencing KC impaired both odor- and shock-induced presynaptic calcium responses in \u03b12\u03b1\u20192 DAn (Figure 4C,D). As expected, control flies without the kir2.1 transgene (R82C10-LexA/lexAop-sytGCaMP6s; R13F02-gal4/tub-gal80ts) did not show significant differences in presynaptic calcium responses to conditioning, odor or shock presentation (Figure 4E\u2013G). These results show that normal presynaptic calcium responses and dopamine release requires KC input to DAn during conditioning and with odor or shock stimuli presented alone. Most importantly, these results are consistent with a model of cholinergic input from KC representing a positive gain signal to DAn for subsequent DA release.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig4-v1.jpg)\n\n**Figure 4.:** (A) Diagram of the experimental setup. Flies of the indicated genotype were reared at 18\u00b0C and then 1\u20132 day old adults were switched to 30\u00b0C to induce kir2.1 channel expression in KC for 16 hr. Flies were then returned to room temperature and prepared for functional imaging. Control flies remained at 18\u00b0C until removing them to room temperature for functional imaging. (B) Calcium responses in \u03b12\u03b1\u20192 DAn during aversive olfactory training (odor+shock) in flies with (red) or without (black) kir2.1 expression in KC. N\u00a0=\u00a010\u201312. The solid line represents the mean and the shaded area represents \u00b1 SEM. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM of the area under the curve during the one minute of conditioning (the 60\u2013120 s imaging time window). (C) Calcium responses in \u03b12\u03b1\u20192 DAn during odor delivery in flies with (red) or without (black) kir2.1 expression in KC. N\u00a0=\u00a013\u201314. The solid line represents the mean and the shaded area represents \u00b1 SEM. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM of the area under the curve during the one minute of odor presentation (the 60\u2013120 s imaging time windows). (D) Calcium responses in \u03b12\u03b1\u20192 DAn during 12 shock pulses delivery in flies with (red) or without (black) kir2.1 expression in KC. N\u00a0=\u00a014. The solid line represents the mean and the shaded area represents \u00b1 SEM. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM of the area under the curve during the one minute of shock pulses (the 60\u2013120 s imaging time window) (E\u2013G) Parallel data to panels B\u2013D but using flies without the kir2.1 transgene. These control data show that the differential responses observed in panels B\u2013D require the kir2.1 expression.\n\n### KC input shapes DAn ongoing activity\n\nDAn respond to a variety of external and internal stimuli (Riemensperger et al., 2005; Mao and Davis, 2009; Tomchik, 2013; Liu et al., 2012; Lin et al., 2014b; Lewis et al., 2015; Musso et al., 2015) and two recent studies have shown that ongoing dopaminergic activity is correlated with the behavioral state of the animal (Berry et al., 2015; Cohn et al., 2015). These observations suggest that the ongoing activity of the distributed DAn network represents the current external, internal and behavioral state of the animal providing for a moment-by-moment update of these elements in the fly (Berry et al., 2015; Cohn et al., 2015; Waddell, 2016). This hypothesis emphasizes the need to understand how the ongoing DAn activity is generated. Using the same tools as above, we tested the role for KC by recording ongoing calcium transients of \u03b12\u03b1\u20192 PPL1 neurons for 10 min while silencing KC with expression of kir2.1 (Figure 5A). Ongoing activity recorded in the \u03b12\u03b1\u20192 PPL1 neuron axon terminals with the syt:GCaMP6s presynaptic reporter showed robust calcium transients compared to the previously reported lack of activity recorded with GCaMP3 (Berry et al., 2012, Berry et al., 2015; Cervantes-Sandoval et al., 2016) (Figure 5B). Silencing KC significantly reduced total ongoing activity in \u03b12\u03b1\u20192 PPL1 neuron axon terminals compared to flies without kir2.1 expression (Figure 5B\u2013C). Upon quantification, we found no change in the number of peaks counted between the experimental and control groups (Figure 5D). Nevertheless, a significant decrease was observed in the magnitude of these peaks when KCs were silenced with kir2.1 (Figure 5E). As expected, control flies without the kir2.1 transgene (R82C10-LexA/lexAop-sytGCaMP6s; R13F02-gal4/tub-gal80ts) did not show significant differences in total ongoing DAn activity, peak number or peak magnitude (Figure 5F\u2013I), indicating that the differences observed with flies containing kir2.1 were not attributable to the temperature differences in the experimental protocol (Figure 5A). These results indicate that KC input to DAn shapes the magnitude of this chronic activity although it may not generate it. In addition, our results demonstrate that both phasic/evoked and chronic/ongoing activity of DAn is influenced by direct cholinergic input from KC through axoaxonic reciprocal synapses.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23789/elife-23789-fig5-v1.jpg)\n\n**Figure 5.:** (A) Diagram of the experimental setup. Flies of the indicated genotype were reared at 18\u00b0C and 1\u20132 day old adults were then switched to 30\u00b0C to induce kir2.1 channel expression in KC for 16 hr. The flies were then returned to room temperature and prepared for functional imaging. Control flies remained at 18\u00b0C until removing them to room temperature for functional imaging. (B) Representative 10 min recording of calcium ongoing activity in \u03b12\u03b1\u20192 DA axon terminals in flies with (red) or without (black) kir2.1 expression in the KC. (C) Mean of total activity per sec during 10 min of recording of ongoing activity in \u03b12\u03b1\u20192 DAn axon terminals in flies with (red) or without (black) kir2.1 expression in the KC. N\u00a0=\u00a010\u201312. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM. (D) Mean number of peaks of the same 10 min recordings of ongoing activity in \u03b12\u03b1\u20192 DAn axon terminals in flies with (red) or without (black) kir2.1 expression in the KC. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM. (E) Mean peak magnitude of ongoing activity in \u03b12\u03b1\u20192 DAn in flies with (red) or without (black) kir2.1 expression in the KC. Data were analyzed using Mann-Whitney U non-parametric test. Bars represent the mean \u00b1 SEM. (F\u2013I) Parallel data to panels B\u2013E but using flies without the kir2.1 transgene. These control data show that the decrease in total activity and mean peak magnitude observed in panels B and E require the kir2.1 expression. N\u00a0=\u00a011\u201313. Data were analyzed using Mann-Whitney U non-parametric test.\n\n### Concluding remarks\n\nOur results demonstrate that DAn are both pre- and post-synaptic to KC through axoaxonic reciprocal connections, in contrast to current models which envision them as providing only pre-synaptic input. The DAn>KC half of the reciprocal synapse employs DA as neurotransmitter, although we cannot rule out the possibility that other neurotransmitters are co-released with DA. The KC>DAn half of the reciprocal synapse is cholinergic. However, the fact that we were able to observe both cAMP and calcium responses in DAn with KC stimulation suggests that there may be other mediators of this reciprocal connection. Blocking the cholinergic input to DAn attenuates aversive olfactory learning, providing evidence that its function is, at least in part, to provide an amplification signal for the initial DA release due to activating the US pathway. Consistent with this role we found that silencing KC impairs DAn presynaptic calcium responses to conditioning, odor and shock stimuli, presumably influencing dopamine release and explaining the learning phenotype. Overall, our results support the existence of a positive feedback loop (Riemensperger et al., 2005) required for optimal learning. We envision that DAn receive direct input from the US during conditioning which is conveyed to KC. The KCs also receive coincident olfactory input and this coincidence provides positive feedback onto the DAn through cholinergic synapses to further increase DAn activity.\n\nOur results also show that KC input to DAn shapes their ongoing or chronic activity. It is plausible that ongoing activity in the DAn provides a moment-by-moment update of the external environment and internal states and the behavioral status of the fly that appropriately reconfigures the KC>MBOn flow of information (Berry et al., 2015; Cohn et al., 2015; Waddell, 2016). Thus, the DAn/KC/MBOn circuit may form a recurrent network that serves as the insect\u2019s brain center for the rapid integration of sensory information and decision-making (Lewis et al., 2015). Local feedback loops, achieved by reciprocal connectivity like that described here, may provide computational benefits to fine tune and optimize the output. Behavioral flexibility may be achieved by passing information through local reentrant loops with constant updating from the external or internal state of the organism (Person and Khodakhah, 2016).\n\nA caveat in this and other studies (Barnstedt et al., 2016) is that we cannot exclude that other, non-KC, cholinergic input to DAn contributes to memory acquisition. Massive efforts to generate \u2018connectomes\u2019 in multiple species (Bargmann and Marder, 2013) may offer resolution to this issue at some point in the future. Alternatively, they may continue to reveal additional connections and complexities that defy an immediate understanding. Studies like the present one, that reveal unexpected relationships between synaptic partners in difficult-to-untangle circuits, expose the need to advance beyond \u2018connectomics\u2019 and develop new tools that allow us to silence or activate specific channels and specific synaptic connections between neurons of interest without affecting other functions in the same cells (Bargmann and Marder, 2013).\n\n## Materials and methods\n\n### Drosophila husbandry\n\nFlies were cultured on standard medium at room temperature. Crosses, unless otherwise stated, were kept at 25\u00b0C and 70% relative humidity with a 12 hr light-dark cycle. The Gal4 drivers used in this study include R13F02-gal4, R82C10-lexA (Jenett et al., 2012), TH-gal4 (Friggi-Grelin et al., 2003), and TH-lexA (Berry et al., 2015). The uas-RNAi transgene stocks were obtained from the TRiP collection library (Perkins et al., 2015) and included control line (36303), which contains the attP docking site without an RNAi insertion (hence same insertional modification as uas-RNAi lines), and the nAChRRNAi lines (28688, 31985, 25943, 25835). Additional transgene stocks included uas-dicer2, lexAop-GFP::CD8, uas-tdTomato (Pfeiffer et al., 2010), uas-syb::spGFP1-10, lexAop-CD4::spGFP11 (Macpherson et al., 2015), lexAop-epac1, uas-epac1, lexAop-P2X2, uas-P2X2, lexAop-GCamp3.0 (Lima and Miesenb\u00f6ck, 2005; Yao et al., 2012), uas-GCaMP3 (Tian et al., 2009), lexAop-syt::GCaMP6s (Cohn et al., 2015), uas-GCaMP6f (Chen et al., 2013), uas-CsChrimson::TdTomato, lexAop-CsChrimson::TdTomato (Hoopfer et al., 2015), uas-kir2.1 (Baines et al., 2001), and tub-gal80ts (McGuire et al., 2003).\n\n### Immunostaining\n\nWhole brains were isolated and processed with minor modifications of those described (Jenett et al., 2012). Brains were first incubated with primary antibodies including: rabbit polyclonal anti-DsRed(1:1000, Clontech Labs, cat# 632496, RRID:AB_10013483) and mouse monoclonal anti-GFP (1:1000, Sigma, cat# G6539; anti-GRASP, RRID:AB_259941). Secondary antibodies included: anti-rabbit IgG conjugated to Alexa Fluor 488 (1:800, Life Technologies Cat# A11008, RRID: AB_143165) and anti-mouse IgG conjugated to Alexa Fluor 633 (1:400, Life Technologies Cat# A21052, RRID: AB_141459). Images were collected using a 10X objective with a Leica TCS SP5 II confocal microscope with 488 and 633 nm laser excitation.\n\nFor structured illumination microscopy (SIM), brains were processed as for standard immunostaining plus these additional steps: After the wash steps following secondary antibody incubation, brains were post-fixed in 1%PFA in PAT3 (0.5% BSA, 0.5% Triton, 1X PBS) for two hr at room temperature. The brains were then washed for 2 hr in 1 mL of PAT3 buffer two times, followed by a quick wash with 1X PBS and then one with dH2O. The brains were mounted onto high precision 18 \u00d7 18 mm coverslips previously coated with poly-lysine with the anterior face towards the coverslip for imaging the MB lobes. Excess moisture was removed from the coverslips, and these were then dehydrated by 5 min incubations in a series of ethanol dilutions (20%, 30%, 50%, 70%, 95%, 100%x2). The brains were cleared with an overnight incubation in methyl salicylate and then the brains with the coverslip still attached were sandwiched with a second coverslip between two pieces of plastic. The coverslips were then sealed with nail polish. SIM images were collected on Zeiss ELYRA PS1 and examined using ImageJ.\n\n### Functional imaging experiments\n\n#### Bath applied experiments\n\nThese experiments were performed as described previously with minor modifications (Tomchik and Davis, 2009). Briefly, brains were dissected at room temperature and maintained in continuous perfusion of saline solution (2 mL/min; 103 mM NaCl, 3 mM KCl, 5 mM HEPES, 1.5 mM CaCl2, MgCl2, 26 mM NaHCO3, 1 mM NaH2PO4, 10 mM trehalose, 7 mM sucrose, and 10 mM glucose [pH 7.2]) under a confocal microscope. Adenosine triphosphate (ATP) at different concentrations was applied for 30 s in perfusion solution and then subsequently washed out. Recordings were collected at 2 frames/sec during a 10 min recording session. Responses were plotted as the baseline-normalized change in GCaMP fluorescence (%\u2206F/Fo) or change in epac1-camps inverse FRET ratio (%\u2206R/Ro) within a defined region of interest.\n\n#### Focal application experiments\n\nFor focal application of compounds, brains were dissected and treated for 30 s with 2 mg/mL collagenase and washed in saline for 1 min before initiating the recording. Acetylcholine or ATP was dissolved in saline with 5 mM Texas red dextran (to allow optical monitoring of the stimulus). The solutions were applied focally to the \u03b12\u03b1\u20192 MB lobe compartment or calyx via pressure ejection from a glass micropipette (~5 \u00b5m tip diameter). The glass micropipette was previously coated with BSA-conjugated Texas Red (Life Technologies,\u00a0Grand Island, NY) in order to visualize the micropipette tip position.\n\n#### In vivo imaging\n\nFor measuring calcium responses with conditioning, odor or shock delivery, we processed flies as previously described (Tomchik and Davis, 2009). Briefly, a single fly was aspirated without anesthesia into a narrow slot the width of a fly in a custom-designed recording chamber. The head was immobilized by gluing the eyes to the chamber using myristic acid and the proboscis fixed to reduce movements. A small, square section of dorsal cuticle was removed from the head to allow optical access to the brain. Fresh saline (103 mM NaCl, 3 mM KCl, 5 mM HEPES, 1.5 mM CaCl2, MgCl2, 26 mM NaHCO3, 1 mM NaH2PO4, 10 mM trehalose, 7 mM sucrose, and 10 mM glucose [pH 7.2]) was perfused immediately across the brain to prevent desiccation and ensure the health of the fly. Using a 25X water-immersion objective and a Leica TCS SP5 II confocal microscope with a 488 nm argon laser, we imaged the \u03b12\u03b1\u20192 neuron for 3 min, during which stimuli (odor+shock, odor or shock) was delivered starting at the 2nd min. We used one PMT channel (510\u2013550 nm) to detect syt::GCaMP6s fluorescence. We set the baseline for \u03b12\u03b1\u20192 ongoing activity detected with syt::GCaMP6s as the mean of minimums across 10 s bins of the first 60 s of the recording. This baseline was then used to calculate %\u2206F/Fo for the complete recording. Total activity was quantified as the area under the curve during the 1 min corresponding to stimulus delivery (between 60 and\u00a0\u2212120 sec of the recording). Expression of kir2.1 was induced by transferring flies to 30\u00b0C for 16 hr. Flies were then returned to room temperature and imaged for the following 3 hr.\n\n#### Ongoing activity recording\n\nOngoing activity of \u03b12\u03b1\u20192 was recorded as previously reported (Berry et al., 2012). Briefly, flies processed as in the previous experiment were recorded at 2 frames/sec during a 10 min time window. The activity per sec was calculated for each recording using algorithms previously described (Berry et al., 2012). Peaks in these recordings were quantified using the Matlab (RRID:SCR_001622) algorithm peakfinder developed by Yoder, 2011.\n\n### Optogenetic stimulation and two-photon in vivo calcium imaging\n\nCombined in vivo optogenetic and calcium imaging were conducted using a two-photon microscope to minimize non-specific optogenetic simulation during recording. Flies for these experiments were collected from crosses were kept in dark on standard corn meal supplemented with 0.2 mM all trans-retinal. After eclosion, adult flies were kept for 2\u20135 days in food supplemented with 0.5 mM all trans-retinal. Live flies were fixed to the recording chambers as in the previous experiments (above). For light stimulation, we used a high power 617 nm LED (Red-Orange Luxeon Rebel LED-122 lm) and a 0.5 mm diameter optic fiber (Edmund Optics) placed adjacent to the eyes of a fly in a recording chamber. The light power at the fly head was measured to be 1 mW/mm2. The LED was controlled using an arduino microcontroller (Arduino Uno). Light pulses were delivered at 40 Hz, with 10 ms duration for a total of 200 ms (Barnstedt et al., 2016).\n\n### Behavior\n\nTwo to six-day-old flies were used for all behavior experiments. Standard aversive olfactory conditioning experiments were performed as described (Beck et al., 2000). Briefly, a group of\u00a0~60 flies were loaded into a training tube where they received the following sequence of stimuli: 30 s of air, 1 min of an odor paired with 12 pulses of 90V electric shock (CS+), 30 s of air, 1 min of a second odor with no electric shock pulses (CS\u2212), and finally 30 s of air. We used 3-octanol (OCT) and 4-methylcyclohexanol (MCH) as standard odorants. To measure memory, we transferred the flies into a T-maze where they were allowed 2 min to choose between the two odors used for training.\n\n### Monitoring sleep\n\nDrosophila sleep and activity were measured using the Drosophila Activity Monitoring System (Trikinetcs) as described previously (Shaw et al., 2000). In summary, flies were placed into individual 65 mm tubes and the activity was continuously monitored. Locomotor activity was measured in 1 min bins and sleep was defined as periods of quiescence lasting at least 5 m. Sleep in min/hr was plotted as a function of circadian time (hr).\n\n### Statistical analyses\n\nStatistics were performed using Prism 5 (Graphpad). All tests were two-tailed and confidence levels were set at \u03b1=0.05 The figure legends present the p values and comparisons made for each experiment. Unless otherwise stated, non-parametric tests were used for all imaging data and DAM system monitoring, while parametric tests were used for olfactory memory comparisons as PI values are normally distributed (Walkinshaw et al., 2015).\n",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "03c0008d-cb64-406c-aad9-b12d54067e23",
+      "submission_id": "7069dd9d-f0dc-4cd7-8c95-b1f87d369118",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research , India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23789.013](https://doi.org/10.7554/eLife.23789.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Reciprocal synapses between mushroom body and dopamine neurons form a positive feedback loop required for learning\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Reviewing Editor and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIsaac Cervantes-Sandoval and colleagues report experiments that demonstrate reciprocal synapses between dopaminergic neurons and intrinsic mushroom body neurons (Kenyon cells) of the Drosophila brain. The entire study is of importance in the context of the dissection of neuronal circuits underlying associative learning, and it is written with this emphasis. Sensory stimuli, e.g., odors, are represented in the mushroom body in terms of sparsely activated ensembles of Kenyon cells. Dopaminergic neurons synapsing onto Kenyon cell axons have been shown to convey the reinforcing properties of salient, unconditioned stimuli. A current concept postulates that coincident activity of both modulates synaptic output from Kenyon cells onto mushroom body output neurons, ultimately influencing the animals' behavior.\n\nHere, the authors report an additional and important finding, i.e., a reciprocal synaptic connection between dopaminergic neurons and Kenyon cells. They conclude from their results that synaptic output from Kenyon cells onto dopaminergic neurons is at least partially cholinergic, that this type of synaptic transmission is required for proper associative learning, and enhances acute, stimulus-evoked as well as continuous activity in dopaminergic neurons. They propose an excitatory feedback loop between dopamine neurons and Kenyon cell that constantly updates the efficiency of dopaminergic transmission onto Kenyon cells. They base their result by experiments using a number of state-of-the-art techniques, i.e., functional reconstitution of GFP, optogenetic activation of Kenyon cells together with functional cAMP and calcium imaging in dopaminergic neurons, pharmacological and genetic (RNAi) experiments to impair cholinergic transmission, and by reducing membrane depolarization in Kenyon cells together with stimulus-evoked calcium imaging in dopaminergic neurons.\n\nOverall, we are enthusiastic about this report, and definitely recommend publication in eLife. It will certainly attract the attention of readers within the large community of scientists working on Drosophila neuroscience. Moreover, it widens our knowledge about fundamental principles underlying the neuronal computation of associative learning in general, which will be of interest for scientists working on vertebrate brains as well. The experimental procedures, the statistical analysis or the presentation of the results, all of which are accurate and sound. The manuscript is overall clearly written, and the illustrations and well understandable. There are some significant comments to be addressed, given below.\n\nEssential revisions:\n\n1) Subsection \u201cCholinergic input to DAn is required for normal olfactory learning\u201d, first paragraph: the authors state that the functional results with TH-Gal4 and UAS-RNAi transgenes indicate that ACh receptors are expressed on the axons on DAn.\n\nThe authors should either show directly that ACh receptors are expressed in the expected sites or provide a reference that shows this directly.\n\nThe authors should acknowledge and discuss explicitly the possibility that the learning phenotype observed in Figures 3F-I is influenced by an effect of reduction in ACh receptor function elsewhere, since the TH-Gal4 driver shows a broad expression pattern in Figure 1B.\n\n2) The labeling in Figure 1D is not strong. The authors should show control labeling levels observed when spGFP11 and spGFP1-10 are expressed singly.\n\nOther comments:\n\n1) The terminology is hard for the non-specialist to follow in some places. The use of Greek letters and prime designations in Figure 1 needs to be checked. Also, Figure 1 shows \"gamma1\" but not \"gamma1ped\". Where is PAMB2B'2a? The expression patterns of some of the drivers should be described more explicitly in the text (e.g. subsection \u201cMBn are both pre- and post- synaptic to DAn forming axoaxonic reciprocal connections\u201d, first paragraph).\n\n2) Figure 1D legend: \"GFP reconstitution occurs only if functional connectivity exists.\" This may be an overstatement; it would seem that GFP reconstitution could in principle occur if structural but not functional connectivity exists. A reference is needed if this statement is to be included.\n\n3) Subsection \u201cMBn are both pre- and post- synaptic to DAn forming axoaxonic reciprocal connections\u201d, second paragraph: Please clarify why cAMP but not Ca2+ levels are elevated in MBn when DNa is stimulated.\n\n4) It would be helpful to provide some general information about axonal-axonal reciprocal synapses in the Introduction, or at least to cite a reference, possibly a review article.\n",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7a080f1a-1e21-40b3-b53a-11615e66d387",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C1",
+      "claim": "Kenyon cells and dopamine neurons form axoaxonic reciprocal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show using functional GFP reconstitution experiments that Kenyon cells and dopamine neurons from axoaxonic reciprocal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional GFP reconstitution experiments shown in Figure 1D-E demonstrating bidirectional synaptic connectivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "69e23ad3-2f44-496a-8cb1-5835b68fc147",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C2",
+      "claim": "Dopamine neurons receive cholinergic input via nicotinic acetylcholine receptors from Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The dopamine neurons receive cholinergic input via nicotinic acetylcholine receptors from the Kenyon cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological experiments with mecamylamide (Figure 3A-B) and focal ACh application experiments (Figure 3C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "935f90a2-7334-4170-b0cb-e878fd3b3a60",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C3",
+      "claim": "Knocking down nicotinic acetylcholine receptors in dopamine neurons impairs olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "knocking down these receptors impairs olfactory learning revealing the importance of these receptors at the synapse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing impaired learning when nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 are knocked down (Figure 3F-J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "e9a50574-47e5-45f1-8d33-affc9c1eb933",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C4",
+      "claim": "Blocking synaptic output of Kenyon cells during olfactory conditioning reduces presynaptic calcium transients in dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the synaptic output of Kenyon cells during olfactory conditioning reduces presynaptic calcium transients in dopamine neurons, a finding consistent with reciprocal communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional imaging experiments using Kir2.1 to silence Kenyon cells (Figure 4B-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "5489bfd9-795f-46f4-b696-ab0ada872eb2",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C5",
+      "claim": "Silencing Kenyon cells decreases the normal chronic activity of dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, silencing Kenyon cells decreases the normal chronic activity of the dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ongoing activity recordings showing reduced total activity and peak magnitude when Kenyon cells are silenced (Figure 5B-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "93467058-5b44-4ad2-b632-8fccef9511c1",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C6",
+      "claim": "Reciprocal connections between Kenyon cells and dopamine neurons form a positive feedback loop required for normal olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal a new and critical role for positive feedback onto dopamine neurons through reciprocal connections with Kenyon cells for normal olfactory learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of anatomical connectivity data, functional imaging showing KC input enhances DAn activity, and behavioral impairments when this connection is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "05d11997-7729-4f1b-b256-3cad6a540055",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C7",
+      "claim": "Modulation of mushroom body Kenyon cell synaptic activity underlies associative learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that modulation of mushroom body (MB) Kenyon cell (KC) synaptic activity underlies associative learning and memory (Davis, 1993, Davis, 2011; Heisenberg, 2003; Busto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature establishing this tenet.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "0c3e403d-16bd-4e5d-83df-2471d2ccae7a",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C8",
+      "claim": "Kenyon cells are connected to and respond to multiple primary sensory centers including those for olfaction, vision and gustation.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs are connected and respond to multiple primary sensory centers including those for olfaction, vision and gustation (Yagi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yagi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "150cc161-7e7d-4f08-8e5c-fdf42f8ef83f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C9",
+      "claim": "Major olfactory input to Kenyon cells occurs in the mushroom body calyx from approximately 180 olfactory projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The major olfactory input occurs in the MB calyx, with the KC dendrites receiving input in this neuropil region from approximately 180 olfactory projection neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established anatomical knowledge of the Drosophila olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8bf82717-7fa2-4ae2-85d2-858f95e6beff",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C10",
+      "claim": "The representation of different odorants is highly sparse across the three major types of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of different odorants is highly sparse (Honegger et al., 2011) across the three major types of KC \u2013 the \u03b1\u03b2, \u03b1'\u03b2' and \u03b3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Honegger et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "5c5b9b27-29af-40b6-a3f4-ad16639d934e",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C11",
+      "claim": "Sparse odorant representation is generated in part by a negative feedback loop between Kenyon cells and the GABAergic APL neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "being generated, in part, by a negative feedback loop between KC and the GABAergic APL neuron (Liu and Davis, 2009; Lin et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu and Davis, 2009 and Lin et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "eef80558-6967-4b58-944e-6ca07e3f95c7",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C12",
+      "claim": "Modulation of Kenyon cell function for olfactory learning employs intracellular cAMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "A second tenet is that the modulation of Kenyon cell function for olfactory learning employs intracellular cAMP signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to multiple learning mutants affecting cAMP signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "9e42f643-c1ef-4f05-940e-31a8afcf2f32",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C13",
+      "claim": "Multiple learning mutants that alter cAMP synthesis, degradation, or effector function have been characterized and mapped to Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple learning mutants that alter cAMP synthesis, degradation, or effector function have been characterized and mapped through expression or functional studies to the Kenyon cells (Davis, 1993; 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davis, 1993 and 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "1c8e05e0-6eb5-4562-95c8-d48819df2ffb",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C14",
+      "claim": "The Rutabaga-encoded adenylyl cyclase acts as a coincidence detector in Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "inputs representing an odor-conditioned stimulus (CS) along with an unconditioned stimulus (US) to the KC lead to the mobilization of the cAMP signaling cascade (Davis, 1993) employing the Rutabaga-encoded adenylyl cyclase as a coincidence detector (Tomchik and Davis, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tomchik and Davis, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "31befac9-4a16-4d94-a0d9-78ece37aecb7",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C15",
+      "claim": "Mushroom body output neurons receive input from Kenyon cells and their activation influences approach or avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "A third tenet is that the mushroom body output neurons (MBOn) receive input from the KC and their activation influences approach or avoidance behavior (Davis, 1993; Heisenberg, 2003; Aso et al., 2014b; Owald et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations establishing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "0b79ea41-ba5d-44c8-82ad-41784a5e3eec",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C16",
+      "claim": "There are 21 classes of mushroom body output neurons whose dendrites tile the lobes in 15 different compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 21 classes of MBOn whose dendrites tile the lobes containing the axons of the KC in 15 different compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established anatomical knowledge of the mushroom body circuit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "ba2c4bcb-9eb3-49a5-923e-42c63fb03fea",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C17",
+      "claim": "Learning alters odor drive to specific mushroom body output neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that learning alters odor drive to specific MBOn (S\u00e9journ\u00e9 et al., 2011; Pai et al., 2013; Pla\u00e7ais et al., 2013; Bouzaiane et al., 2015; Hige et al., 2015; Owald et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "eba2db5f-7662-4af8-9610-5e6490e88de9",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C18",
+      "claim": "Reward learning reduces drive to output pathways that direct avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, reward learning appears to reduce drive to output pathways that direct avoidance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited studies on learning-induced plasticity in MBOn.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "55284395-265f-4424-b6bc-41b25f7d0abd",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C19",
+      "claim": "Aversive learning increases drive to avoidance pathways while reducing drive to approach pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas aversive learning increases drive to avoidance pathways while reducing drive to approach pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited studies on learning-induced plasticity in MBOn.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "3ac2f668-cd0a-4af7-9d52-10cc787ae332",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C20",
+      "claim": "Dopamine neurons are activated by aversive or rewarding stimuli to provide the unconditioned stimulus input for olfactory classical conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth tenet is that dopamine neurons (DAn) are activated by aversive or rewarding stimuli to provide the US input for olfactory classical conditioning (Riemensperger et al., 2005; Mao and Davis, 2009; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations establishing this tenet.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "ea42a261-9f9b-463f-8fce-a8001531c1f1",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C21",
+      "claim": "Blocking dopamine neurons during training with temperature sensitive dynamin impairs memory acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, blocking DAn during training with temperature sensitive dynamin (shibire) impairs memory acquisition (Schwaerzel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schwaerzel et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "118ef144-0822-4eb1-ac05-d58d6787e3af",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C22",
+      "claim": "Mutants for the dopamine receptor dDA1 impair memory acquisition that can be rescued by expressing this receptor in Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, mutants for the dopamine receptor dDA1 impair memory acquisition that can be rescued by expressing this receptor in KC (Kim et al., 2007; Qin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2007 and Qin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "1adbf8be-d25a-42d9-aba1-7593ffa33011",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C23",
+      "claim": "Artificial activation of dopamine neurons using thermo- or optogenetic approaches along with odor stimulation leads to conditioned behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the artificial activation of DAn using thermo- or optogenetic approaches along with odor CS stimulation leads to conditioned behavior (Schroll et al., 2006; Claridge-Chang et al., 2009; Aso et al., 2010, 2012; Burke et al., 2012; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies using artificial activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c050a106-e5b9-4357-9d64-ac6fa7c35ca1",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C24",
+      "claim": "Artificial stimulation of dopamine neurons is sufficient to signal the reinforcing effect of the unconditioned stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, artificial stimulation of the DAn is sufficient to signal the reinforcing effect of the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cited studies showing artificial activation produces conditioned behavior.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "5ecb6e06-5273-4c01-9b30-58c22791d39c",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C25",
+      "claim": "Dopamine neuron innervation occurs primarily on the axonal processes of Kenyon cells in the mushroom body lobes across 15 compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The innervation by DAn occurs primarily on the axonal processes of the KC in the MB lobes, across the same 15 compartments occupied by the dendrites of the MBOn (Mao and Davis, 2009; Pech et al., 2013; Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "45949f7e-5bfc-421a-8eae-2fa79b39f3d9",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C26",
+      "claim": "Dopamine neuron stimulation changes the odor-specific output weight of Kenyon cell synapses onto mushroom body output neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings have suggested that DAn stimulation, driven by a US, changes the odor-specific output weight of KC synapses onto the corresponding MBOn, tilting the MBOn network to direct appropriate behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cited studies on DAn function and plasticity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "214b99e8-f806-4a1b-a24e-c7ec40adb201",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C27",
+      "claim": "Dopaminergic inputs modulate Kenyon cell synaptic transmission with precise spatial specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dopaminergic inputs modulate KC synaptic transmission with precise spatial specificity, allowing KC to differentially convey olfactory signals to each of their postsynaptic MBOn (Cohn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohn et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "78b39e43-5aa1-4329-90ea-44b6133e8dae",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C28",
+      "claim": "Plasticity in the MBOn-\u03b31pedc compartment initiates feed-forward inhibition that alters information flow in other compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Perisse et al. (2016) provided evidence that plasticity in the MBOn-\u03b31pedc compartment initiates feed-forward inhibition that alters the flow of information in the MBOn\u03b2'2mp and MBOn\u03b35\u03b2'2a compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perisse et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f7d4e6bd-0d3f-4b62-a1ad-29175f28a8b7",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C29",
+      "claim": "Different dopamine neurons drive synaptic changes between Kenyon cells and mushroom body output neurons with different rules.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, different DAn drive synaptic changes between KC and MBOn with different rules (Hige et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hige et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "e70e0acc-42e1-4a6c-8517-c638be00358a",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C30",
+      "claim": "Activation of \u03b31pedc dopamine neurons induces learning and odor-specific synaptic depression in MBOn\u03b31pedc when paired with only 1 second odor presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of \u03b31pedc DAn induces both learning and odor-specific synaptic depression in MBOn\u03b31pedc when paired with only a 1 s odor presentation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hige et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8a0f9a19-9177-402a-91c6-59124ada994f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C31",
+      "claim": "Similar plasticity in the \u03b12\u03b1'2 compartment requires 1 minute odor presentation with dopamine neuron activation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas similar plasticity in the \u03b12\u03b1'2 compartment requires 1 min odor presentation with DAn activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hige et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "9beb6596-3046-4894-a718-f90a96103d2d",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C32",
+      "claim": "Reducing Scribble protein expression in Kenyon cells increases total ongoing activity in dopamine neurons that innervate \u03b32\u03b1'1.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the expression of the Scribble protein using the KC-specific R13F02-gal4 driver increases total ongoing activity measured in the axon terminals of the DAn that innervate \u03b32\u03b1'1 (Cervantes-Sandoval et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cervantes-Sandoval et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "25a347f2-eedc-481d-85e2-4859295a2584",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C33",
+      "claim": "Expressing presynaptic split GFP in dopamine neurons and membrane tagged complementary split GFP in Kenyon cells reconstitutes GFP fluorescence in multiple mushroom body compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, expressing presynaptic split GFP (uas-syb::spGFP1-10) in DAn using TH-gal4 along with membrane tagged complementary split GFP (lexAop-CD4::spGFP11) in KC with R13F02-lexA reconstituted GFP fluorescence in all the aforementioned compartments",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "68baffda-d27e-498c-aa61-51e4b806fb42",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C34",
+      "claim": "The reciprocal experiment with presynaptic split GFP expressed in Kenyon cells and membrane tagged complementary split GFP in dopamine neurons reconstitutes GFP fluorescence in an identical pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the reciprocal experiment, with uas-syb::spGFP1-10 expressed in the KC and lexAop-CD4::spGFP11 in the DAn, reconstituted GFP fluorescence in an identical pattern of MB lobe compartment expression (\u03b1'3, \u03b13, \u03b12\u03b1'2, \u03b31ped, \u03b31, and \u03b32\u03b1'1; minimal fluorescence also in PAM \u03b22\u03b2'2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "493cb1ce-67a3-4470-8708-9f8bfc143a96",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C35",
+      "claim": "Three-dimensional reconstruction by structured illumination microscopy shows well-defined synaptic puncta in the \u03b12\u03b1'2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional reconstruction of images obtained by structured illumination microscopy showed well-defined synaptic puncta in the \u03b12\u03b1'2 domain (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "4892991d-bb4e-4fad-bcd6-293fae312bf8",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C36",
+      "claim": "No staining was observed when brains expressing either half of the GRASP components were imaged under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "No staining was observed when brains expressing either half of the GRASP components were imaged under the same conditions (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f6989538-2200-4f29-814d-0dc988a74de9",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C37",
+      "claim": "Artificial stimulation of Kenyon cells induces increasing elevations of cAMP in postsynaptic dopamine neurons with increasing concentrations of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested the pre-synaptic function of DAn and found that artificial stimulation of DAn contained in the TH-gal4 driver induced increasing elevations of cAMP in postsynaptic KC with increasing concentrations of ATP (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "9a827049-f7a8-4735-a2e7-40aa4ea5caea",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C38",
+      "claim": "Stimulating Kenyon cells with ATP/P2X2 produces potent cAMP and calcium responses in dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When we stimulated the KC with the ATP/P2X2 ion channel, we discovered potent cAMP and calcium responses in DAn (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "721156d5-6ae3-4c4a-ae2c-de711f701470",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C39",
+      "claim": "Evoked cAMP responses in dopamine neurons are roughly two fold larger than responses evoked in Kenyon cells with dopamine neuron stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not strictly comparable, the evoked cAMP responses in the DAn were roughly two fold larger than responses evoked in the KC with DAn stimulation (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of data in Figure 2A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "534cd77d-5b04-47b1-ad5c-c1393b797461",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C40",
+      "claim": "The control genotype containing uas-P2X2 alone shows significant calcium responses with ATP application.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered during the course of these experiments that our control genotype containing uas-P2X2 alone showed significant calcium responses with ATP application (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "6df8bd36-09e3-4d03-970b-db2b3e41d560",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C41",
+      "claim": "Leaky expression of the P2X2 channel occurs in PPL1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested leaky expression of the P2X2 channel in PPL1 neurons despite reports that no leaky expression occurs in other types of neurons (Yao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of responses in control genotypes and contrasted with cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "489c7f2b-7b01-420c-ab49-dac5d7807a52",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C42",
+      "claim": "Stimulating Kenyon cells with Chrimson produces strong calcium responses in Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first verified that we could stimulate KC using Chrimson. For this, we coexpressed Chrimson along with GCaMP6 in KC and recorded calcium responses to red light stimulation in living animals using two-photon microscopy. Strong calcium responses were observed in KC to red light stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic stimulation data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8beffb3b-22bd-4dc9-a90b-0bc5e3ce165d",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C43",
+      "claim": "Stimulating Kenyon cells with red light produces potent calcium responses in PPL1 dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our results with ATP/P2X2, stimulating KC with red light produced potent calcium responses in PPL1 DAn (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic stimulation data shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "a624516c-3fea-4054-a83d-f2607a21ad25",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C44",
+      "claim": "TTX blocks calcium responses in Kenyon cell lobes but not the calyx when ACh is applied to the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, robust calcium responses were observed in both calyx and lobes to ACh applied to the calyx. Nevertheless, the lobe but not calyx responses were completely abolished when TTX was present (Figure 2C\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "095ed5e1-c825-44fc-9d82-7cef65f12d49",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C45",
+      "claim": "No difference in dopamine neuron calcium responses was observed after focal application of ATP in presence or absence of TTX.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, no difference in DAn calcium responses was observed after focal application of ATP in presence or absence of TTX (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "865c4442-81e1-467a-9705-c5b413dbe3f7",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C46",
+      "claim": "Dopamine neurons are both pre- and post-synaptic to Kenyon cells through axoaxonic reciprocal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, together with the functional trans-synaptic fluorescence reconstitution (Figure 1C\u2013E) demonstrate that DAn are both pre- and post-synaptic KC, through axoaxonic reciprocal connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of GRASP data and TTX experiments demonstrating monosynaptic connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "5f2102dd-84b5-4da0-9b16-19ed96a32b71",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C47",
+      "claim": "Kenyon cells are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed that KCs are cholinergic and nAChR receptors in MBOn are required for memory retrieval (Barnstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "a25a902b-98b1-4d3e-b495-01727713f8c7",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C48",
+      "claim": "Nicotinic acetylcholine receptors in mushroom body output neurons are required for memory retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed that KCs are cholinergic and nAChR receptors in MBOn are required for memory retrieval (Barnstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "547fa04c-c08e-44c1-a807-e4612192f5ae",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C49",
+      "claim": "Only the nicotinic acetylcholine receptor inhibitor mecamylamide significantly reduces ATP/P2X2 evoked calcium responses in dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the nicotinic AChR inhibitor, mecamylamide (100 \u00b5M), significantly reduced ATP/P2X2 evoked calcium responses in DAn (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pharmacological data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "fe6e63e3-13f6-435e-addf-0bdca9b4d9d8",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C50",
+      "claim": "Up to sixty percent inhibition of dopamine neuron responses is obtained with 250 and 500 \u00b5M mecamylamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to sixty percent inhibition was obtained with 250 and 500 \u00b5M mecamylamide when measured in this manner (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c0e812ed-52ee-472a-a687-be29cfdded43",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C51",
+      "claim": "Optogenetics experiments show greater than 85% inhibition with 500 \u00b5M mecamylamide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, optogenetics experiments showed >85% inhibition with 500 \u00b5M mecamylaminde (Figure 2\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic data shown in Figure 2\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d2ec0f63-bdf8-4f94-abd5-6675bb4fb076",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C52",
+      "claim": "Focal application of acetylcholine robustly increases intracellular calcium in dopamine neuron projections.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore measured calcium responses in \u03b12\u03b1'2 DAn axon terminals to focally applied ACh. As predicted, focal application of ACh robustly increased intracellular calcium in DAn projections, reaching maximum responses at 10 and 100 mM concentrations (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d6b7fce8-65a8-4272-93b6-1f6c62ca8463",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C53",
+      "claim": "The magnitude of acetylcholine evoked calcium responses in dopamine neurons is no different in presence or absence of TTX.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of ACh evoked calcium responses was no different in presence or absence of TTX, indicating that these neurons have ACh postsynaptic specializations in their axonal terminals located in the MB neuropil (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "af461179-1b2a-427a-ac09-1c60ae1f8037",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C54",
+      "claim": "Dopamine neurons have acetylcholine postsynaptic specializations in their axonal terminals located in the mushroom body neuropil.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that these neurons have ACh postsynaptic specializations in their axonal terminals located in the MB neuropil (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the TTX insensitivity of ACh-evoked responses in DAn terminals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "9a624c3e-fcf0-4462-b014-7c7e5b109f39",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C55",
+      "claim": "Flies expressing RNAi to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 in dopamine neurons show impaired aversive olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies expressing RNAi to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 but not nAChR\u03b16 using TH-gal4 modestly impaired aversive olfactory learning when compared to control flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "54ee937b-831c-44d3-8b73-5cde8a8a09cc",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C56",
+      "claim": "Flies expressing RNAi to nAChR\u03b16 in dopamine neurons do not show impaired aversive olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies expressing RNAi to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 but not nAChR\u03b16 using TH-gal4 modestly impaired aversive olfactory learning when compared to control flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d6495706-6569-4556-92dd-373426ee4afa",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C57",
+      "claim": "nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 subunits are expressed on the axons of dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained when flies expressing RNAi's to nAChR\u03b11, nAChR\u03b14, and nAChR\u03b15 were individually compared to their two parental genetic controls, TH-gal4/+ and uas-RNAi/+ (Figure 3G\u2013I), suggesting that these three subunits are expressed on the axons of DAn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the behavioral impairments observed when these subunits are knocked down.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "de80c7b7-1bf8-4a8e-a7f7-75cf661b1e27",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C58",
+      "claim": "Restricting nAChR\u03b14 knockdown to \u03b1'2 \u03b1'2 PPL1 neurons using Split-gal4 driver MB058B produces similar learning impairments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed when we used a Split-gal4 driver, MB058B, to restrict nAChR\u03b14 KD in \u03b1'2 \u03b1'2 PPL1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "799842fc-9a56-412b-a239-31c53246af01",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C59",
+      "claim": "No significant differences were observed in olfactory and electric shock avoidance for any of the genotypes used for behavioral experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were observed in olfactory and electric shock avoidance for any of the genotypes used for behavioral experiments in our study (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as observed but data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8a593bf9-a2e8-46ba-ac22-4866761fcfbc",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C60",
+      "claim": "Kenyon cell-driven cholinergic input to the distal axons of dopamine neurons is required for normal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these results coupled with those showing KC axoaxonic synapses to DAn indicate that KC-driven cholinergic input to the distal axons of DAn is required for normal learning, possibly due to amplification of dopamine release at acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of anatomical, functional, and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d96b13b4-3699-4819-a18e-a11bb309408c",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C61",
+      "claim": "No significant differences in sleep patterns were found in flies expressing RNAi transgenes to nicotinic acetylcholine receptor subunits in dopamine neurons compared to control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the DAn>KC circuit is known to be involved in sleep and sleep homeostasis, we also evaluated sleep profiles in flies expressing RNAi transgenes to nAChR subunits in DAn. We found no significant differences in sleep patterns compared to control flies (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sleep monitoring data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8a60897e-05b2-4d8a-ab9b-77dd4bda4c98",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C62",
+      "claim": "Silencing Kenyon cells with Kir2.1 significantly decreases presynaptic calcium responses in \u03b12\u03b1'2 PPL1 dopamine neuron axon terminals during aversive olfactory training.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant decrease in presynaptic calcium responses was observed when KC were silenced with kir2.1 compared to flies without kir2.1 expression (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d3150390-3bf3-48ac-9153-4934d98f1400",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C63",
+      "claim": "The shape of \u03b12\u03b1'2 PPL1 responses during CS/US conditioning is bipartite, consisting of a rapidly adapting odor response with superimposed electric shock peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of \u03b12\u03b1'2 PPL1 responses during CS/US conditioning suggested that they are bipartite, consisting of a rapidly adapting odor response with superimposed electric shock peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the imaging traces shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "72ebf090-9c9c-4a9f-9874-f06401069b52",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C64",
+      "claim": "Silencing Kenyon cells impairs both odor- and shock-induced presynaptic calcium responses in \u03b12\u03b1'2 dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that silencing KC impaired both odor- and shock-induced presynaptic calcium responses in \u03b12\u03b1'2 DAn (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "9bf91560-4724-4f02-8374-5112c1f7a63c",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C65",
+      "claim": "Control flies without the kir2.1 transgene do not show significant differences in presynaptic calcium responses to conditioning, odor or shock presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, control flies without the kir2.1 transgene (R82C10-LexA/lexAop-sytGCaMP6s; R13F02-gal4/tub-gal80ts) did not show significant differences in presynaptic calcium responses to conditioning, odor or shock presentation (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control data shown in Figure 4E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "e684038c-55f9-4538-a025-57ae2b3a4acd",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C66",
+      "claim": "Normal presynaptic calcium responses and dopamine release requires Kenyon cell input to dopamine neurons during conditioning and with odor or shock stimuli presented alone.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that normal presynaptic calcium responses and dopamine release requires KC input to DAn during conditioning and with odor or shock stimuli presented alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the imaging data showing reduced responses when KC are silenced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d2a3488e-df16-4851-b7dc-e7946b6e4580",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C67",
+      "claim": "Cholinergic input from Kenyon cells represents a positive gain signal to dopamine neurons for subsequent dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, these results are consistent with a model of cholinergic input from KC representing a positive gain signal to DAn for subsequent DA release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the functional imaging and behavioral data showing KC input enhances DAn activity and is required for learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c4c43a11-895a-4325-8990-369014405508",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C68",
+      "claim": "Dopamine neurons respond to a variety of external and internal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "DAn respond to a variety of external and internal stimuli (Riemensperger et al., 2005; Mao and Davis, 2009; Tomchik, 2013; Liu et al., 2012; Lin et al., 2014b; Lewis et al., 2015; Musso et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "2f49de54-1b3b-4641-ae87-1316112ef3ab",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C69",
+      "claim": "Ongoing dopaminergic activity is correlated with the behavioral state of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "and two recent studies have shown that ongoing dopaminergic activity is correlated with the behavioral state of the animal (Berry et al., 2015; Cohn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berry et al., 2015 and Cohn et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c6639ade-ab57-4f58-a434-734ebeb69ec2",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C70",
+      "claim": "The ongoing activity of the distributed dopamine neuron network represents the current external, internal and behavioral state of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the ongoing activity of the distributed DAn network represents the current external, internal and behavioral state of the animal providing for a moment-by-moment update of these elements in the fly (Berry et al., 2015; Cohn et al., 2015; Waddell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited studies on DAn ongoing activity and its correlation with behavioral state.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "12219e37-1447-4d81-b3b9-6879744841fd",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C71",
+      "claim": "Ongoing activity recorded in \u03b12\u03b1'2 PPL1 neuron axon terminals with syt:GCaMP6s presynaptic reporter shows robust calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing activity recorded in the \u03b12\u03b1'2 PPL1 neuron axon terminals with the syt:GCaMP6s presynaptic reporter showed robust calcium transients compared to the previously reported lack of activity recorded with GCaMP3 (Berry et al., 2012, Berry et al., 2015; Cervantes-Sandoval et al., 2016) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 5B and contrasted with previous reports using different reporters.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d904cac8-27cd-45f6-a8c1-4c7b22d25b9c",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C72",
+      "claim": "Silencing Kenyon cells significantly reduces total ongoing activity in \u03b12\u03b1'2 PPL1 neuron axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing KC significantly reduced total ongoing activity in \u03b12\u03b1'2 PPL1 neuron axon terminals compared to flies without kir2.1 expression (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional imaging data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "3c2874eb-e39a-4567-83d3-ce24816bb777",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C73",
+      "claim": "No change in the number of peaks was found when Kenyon cells were silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon quantification, we found no change in the number of peaks counted between the experimental and control groups (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "d41a78ab-5c33-4335-95ff-f28321fee158",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C74",
+      "claim": "A significant decrease in the magnitude of peaks was observed when Kenyon cells were silenced with kir2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a significant decrease was observed in the magnitude of these peaks when KCs were silenced with kir2.1 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "e0e8c1fb-12ed-41b3-bc72-df43ce93e26f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C75",
+      "claim": "Control flies without the kir2.1 transgene do not show significant differences in total ongoing dopamine neuron activity, peak number or peak magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, control flies without the kir2.1 transgene (R82C10-LexA/lexAop-sytGCaMP6s; R13F02-gal4/tub-gal80ts) did not show significant differences in total ongoing DAn activity, peak number or peak magnitude (Figure 5F\u2013I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control data shown in Figure 5F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "ce545365-7201-4185-be6e-5d737981ea05",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C76",
+      "claim": "The differences observed in flies containing kir2.1 are not attributable to temperature differences in the experimental protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the differences observed with flies containing kir2.1 were not attributable to the temperature differences in the experimental protocol (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of differences in control flies subjected to the same temperature protocol.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c93d72e6-d4e5-4d91-9259-931147f22191",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C77",
+      "claim": "Kenyon cell input to dopamine neurons shapes the magnitude of chronic dopamine neuron activity although it may not generate it.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that KC input to DAn shapes the magnitude of this chronic activity although it may not generate it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that silencing KC reduces peak magnitude but not peak number.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "90c58ceb-a040-4efb-b217-cd4f978b908a",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C78",
+      "claim": "Both phasic/evoked and chronic/ongoing activity of dopamine neurons is influenced by direct cholinergic input from Kenyon cells through axoaxonic reciprocal synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results demonstrate that both phasic/evoked and chronic/ongoing activity of DAn is influenced by direct cholinergic input from KC through axoaxonic reciprocal synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of evoked response data (Figure 4) and ongoing activity data (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f87d6d5b-7894-4ceb-8b18-beb7a4e1110f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C79",
+      "claim": "The DAn>KC half of the reciprocal synapse employs dopamine as neurotransmitter.",
+      "claim_type": "EXPLICIT",
+      "source": "The DAn>KC half of the reciprocal synapse employs DA as neurotransmitter, although we cannot rule out the possibility that other neurotransmitters are co-released with DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge that these are dopamine neurons, with speculation about possible co-release.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "c109b06d-ce63-45a8-9f0e-dfcf5ef02c8e",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C80",
+      "claim": "Other neurotransmitters may be co-released with dopamine at the DAn>KC synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The DAn>KC half of the reciprocal synapse employs DA as neurotransmitter, although we cannot rule out the possibility that other neurotransmitters are co-released with DA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement acknowledging uncertainty.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f3bfec5b-d0a9-4efb-85f8-36c5aa687a92",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C81",
+      "claim": "The KC>DAn half of the reciprocal synapse is cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "The KC>DAn half of the reciprocal synapse is cholinergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pharmacological and functional imaging data (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "4bc6b8e4-f9e8-40dc-84b3-6ed2627fecdd",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C82",
+      "claim": "There may be other mediators of the reciprocal connection between Kenyon cells and dopamine neurons besides acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fact that we were able to observe both cAMP and calcium responses in DAn with KC stimulation suggests that there may be other mediators of this reciprocal connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from the observation of both cAMP and calcium responses.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "37f3fd00-dc03-446f-8c6a-3b8915c94800",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C83",
+      "claim": "The function of cholinergic input to dopamine neurons is, at least in part, to provide an amplification signal for the initial dopamine release due to activating the unconditioned stimulus pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the cholinergic input to DAn attenuates aversive olfactory learning, providing evidence that its function is, at least in part, to provide an amplification signal for the initial DA release due to activating the US pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the behavioral and functional imaging data showing reduced learning and DAn responses when cholinergic input is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "8804cf57-ad90-42f9-91bc-d16b533e8925",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C84",
+      "claim": "Silencing Kenyon cells impairs dopamine neuron presynaptic calcium responses to conditioning, odor and shock stimuli, presumably influencing dopamine release.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this role we found that silencing KC impairs DAn presynaptic calcium responses to conditioning, odor and shock stimuli, presumably influencing dopamine release and explaining the learning phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the functional imaging data showing reduced DAn responses when KC are silenced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "903328aa-7c8b-43de-b334-2ea2f57a1d07",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C85",
+      "claim": "A positive feedback loop exists between Kenyon cells and dopamine neurons that is required for optimal learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results support the existence of a positive feedback loop (Riemensperger et al., 2005) required for optimal learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of anatomical, functional, and behavioral data, with citation to previous speculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "e4d41c7c-7273-4479-a04d-d3d01115d4d5",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C86",
+      "claim": "Dopamine neurons receive direct input from the unconditioned stimulus during conditioning which is conveyed to Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that DAn receive direct input from the US during conditioning which is conveyed to KC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model based on established knowledge and current findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "70948909-6502-4b39-8e67-76b09d560639",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C87",
+      "claim": "Kenyon cells receive coincident olfactory input during conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The KCs also receive coincident olfactory input",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of the olfactory conditioning circuit.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "a6ce098a-abf1-48ec-8911-5ae7b44356fe",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C88",
+      "claim": "Coincidence of dopamine and olfactory input to Kenyon cells provides positive feedback onto dopamine neurons through cholinergic synapses to further increase dopamine neuron activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and this coincidence provides positive feedback onto the DAn through cholinergic synapses to further increase DAn activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model inferred from the experimental findings of reciprocal connectivity and functional consequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f7eee2a9-081d-4167-b741-53260a54dc8c",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C89",
+      "claim": "Ongoing activity in dopamine neurons provides a moment-by-moment update of the external environment and internal states and the behavioral status of the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that ongoing activity in the DAn provides a moment-by-moment update of the external environment and internal states and the behavioral status of the fly that appropriately reconfigures the KC>MBOn flow of information (Berry et al., 2015; Cohn et al., 2015; Waddell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on cited studies and current findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "85ba2daf-2456-4dc5-8c3b-1486a4813b0d",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C90",
+      "claim": "Ongoing dopamine neuron activity appropriately reconfigures the Kenyon cell to mushroom body output neuron flow of information.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that ongoing activity in the DAn provides a moment-by-moment update of the external environment and internal states and the behavioral status of the fly that appropriately reconfigures the KC>MBOn flow of information (Berry et al., 2015; Cohn et al., 2015; Waddell, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on cited studies and current findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "ff6b9fb2-dd00-48b7-91d8-2420a90055b1",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C91",
+      "claim": "The DAn/KC/MBOn circuit may form a recurrent network that serves as the insect's brain center for rapid integration of sensory information and decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the DAn/KC/MBOn circuit may form a recurrent network that serves as the insect's brain center for the rapid integration of sensory information and decision-making (Lewis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on current findings and cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "53f8dfdb-6767-44f8-9f9f-9c5263443d73",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C92",
+      "claim": "Local feedback loops achieved by reciprocal connectivity may provide computational benefits to fine tune and optimize output.",
+      "claim_type": "EXPLICIT",
+      "source": "Local feedback loops, achieved by reciprocal connectivity like that described here, may provide computational benefits to fine tune and optimize the output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the functional significance of reciprocal connectivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "72bb232c-9e29-4c79-869e-4e2ca01e8846",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C93",
+      "claim": "Behavioral flexibility may be achieved by passing information through local reentrant loops with constant updating from the external or internal state of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral flexibility may be achieved by passing information through local reentrant loops with constant updating from the external or internal state of the organism (Person and Khodakhah, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on current findings and cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "ef6d4750-cbab-45df-9cb4-12a6f393b77e",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C94",
+      "claim": "Non-Kenyon cell cholinergic input to dopamine neurons may contribute to memory acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "A caveat in this and other studies (Barnstedt et al., 2016) is that we cannot exclude that other, non-KC, cholinergic input to DAn contributes to memory acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation and speculation about alternative sources of cholinergic input.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "5af323a5-cb01-43a3-87b9-29a2d5dba53a",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "claim_id": "C95",
+      "claim": "There is a need to develop new tools that allow silencing or activating specific channels and specific synaptic connections between neurons of interest without affecting other functions in the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies like the present one, that reveal unexpected relationships between synaptic partners in difficult-to-untangle circuits, expose the need to advance beyond 'connectomics' and develop new tools that allow us to silence or activate specific channels and specific synaptic connections between neurons of interest without affecting other functions in the same cells (Bargmann and Marder, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Opinion/perspective based on the challenges encountered in the current study and cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f01232d-2453-4586-bb4b-70717a48e6f3",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Kenyon cells (KC) and dopamine neurons (DAn) form axoaxonic reciprocal synapses in the mushroom body lobes. This was demonstrated using trans-synaptic GFP reconstitution (GRASP) experiments showing bidirectional connectivity, with synaptic puncta visualized by structured illumination microscopy and validated by appropriate negative controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C33-C36 provide converging anatomical evidence from GRASP experiments showing reciprocal connectivity in both directions (DAn\u2192KC and KC\u2192DAn) with proper controls. Claim C46 integrates this with functional TTX experiments (C44-C45) demonstrating monosynaptic transmission. The combination of anatomical and functional evidence strongly supports the existence of reciprocal synapses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "eda2868e-f1e0-4087-9266-1af480e237ab",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Kenyon cells provide functional synaptic input to dopamine neurons that is monosynaptic. Artificial stimulation of KC using ATP/P2X2 or optogenetic methods produces robust cAMP and calcium responses in DAn terminals, and these responses persist in the presence of TTX, confirming direct synaptic transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C42-C43 demonstrate functional connectivity using two independent stimulation methods (ATP/P2X2 and optogenetics). Claims C44-C45 provide critical TTX controls showing that responses are monosynaptic rather than polysynaptic. However, C40-C41 reveal a technical concern about leaky P2X2 expression in controls, though optogenetic validation (C43, C51) addresses this limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "4030d89c-6aad-483c-b437-a6cfae93971f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The KC\u2192DAn synapse is cholinergic, mediated by nicotinic acetylcholine receptors (nAChRs). Pharmacological blockade with mecamylamide inhibits KC-evoked responses in DAn (60-85% inhibition), and focal ACh application directly activates DAn terminals in a TTX-insensitive manner, indicating postsynaptic nAChRs on DAn axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 show dose-dependent inhibition by the nAChR antagonist mecamylamide with two independent stimulation methods. Claims C52-C54 demonstrate direct ACh responsiveness of DAn terminals that is TTX-insensitive, confirming local postsynaptic specializations. The convergence of pharmacological and focal application experiments strongly supports cholinergic transmission via nAChRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "634cd306-1348-420b-821c-ebbe3479466e",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Knockdown of specific nAChR subunits (\u03b11, \u03b14, \u03b15) in dopamine neurons impairs aversive olfactory learning. RNAi-mediated knockdown of these subunits using TH-gal4 or the more restricted MB058B split-gal4 driver produces modest but significant learning deficits without affecting sensory controls, indicating that cholinergic input to DAn is required for normal learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide behavioral evidence with appropriate genetic controls (parental lines and subunit-specific effects). Claim C59 confirms that sensory abilities are intact, ruling out trivial explanations. The consistency across multiple nAChR subunits and two different drivers (broad TH-gal4 and restricted MB058B) supports the conclusion, though the effect sizes are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "008f931f-b4fe-4a41-ae7a-14afb39a0015",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Silencing Kenyon cells with Kir2.1 reduces presynaptic calcium responses in \u03b12\u03b1'2 PPL1 dopamine neurons during olfactory conditioning, odor presentation, and shock delivery. This demonstrates that KC input amplifies DAn activity during learning, consistent with a positive gain signal for dopamine release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 show reduced DAn calcium responses when KC are silenced during multiple stimulus conditions, with appropriate temperature-matched controls (C65). The finding that both odor and shock responses are reduced (C64) is surprising but well-documented. Claims C66-C67 provide reasonable interpretations linking reduced calcium to reduced dopamine release and learning deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Kenyon cell input shapes the magnitude of ongoing dopamine neuron activity. Silencing KC with Kir2.1 reduces total ongoing activity and peak magnitude in \u03b12\u03b1'2 PPL1 neurons without changing peak number, indicating that KC input modulates but does not generate spontaneous DAn activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 demonstrate selective reduction in peak magnitude but not frequency when KC are silenced, with proper controls (C75-C76). Claim C71 notes improved detection with syt:GCaMP6s compared to previous reporters. The dissociation between peak number and magnitude (C73-C74) supports the interpretation (C77) that KC input modulates rather than generates ongoing activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "cfa5df88-f1e9-4903-8e37-7051d8098da6",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Reciprocal connections between KC and DAn form a positive feedback loop required for optimal olfactory learning. During conditioning, DAn receive US input which is conveyed to KC; coincident olfactory input to KC then provides cholinergic feedback to DAn, amplifying dopamine release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative claim (C6, C85) is supported by the combination of anatomical reciprocal connectivity (Result 1), functional cholinergic transmission (Results 2-3), behavioral deficits when the KC\u2192DAn connection is disrupted (Result 4), and reduced DAn responses when KC are silenced (Result 5). Claims C86-C88 provide a coherent mechanistic model consistent with all experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "6bcddfef-4817-49b9-9a5a-6f3aaa8fdbdc",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The DAn\u2192KC half of the reciprocal synapse employs dopamine as neurotransmitter and produces cAMP responses in KC. Artificial stimulation of DAn induces dose-dependent cAMP elevation in KC, though the authors acknowledge possible co-release of other neurotransmitters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 demonstrates functional DAn\u2192KC transmission with dose-dependent cAMP responses. Claim C39 notes these responses are larger than the reverse direction. Claim C79 is based on established knowledge that these are dopaminergic neurons, with appropriate acknowledgment of uncertainty about co-transmitters (C80). The functional demonstration is solid though the neurotransmitter identity relies partly on prior characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "3d18738c-dcd8-4555-8c9a-5047a9236a84",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The uas-P2X2 control genotype shows leaky expression in PPL1 dopamine neurons, producing significant calcium responses to ATP despite the absence of a driver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 documents an important technical issue with the P2X2 system. Claim C41 interprets this as leaky expression, contrasting with prior reports. This finding prompted the authors to validate results with optogenetics (C42-C43, C51), which is appropriate. The leaky expression complicates interpretation of P2X2 experiments but does not invalidate the main conclusions since optogenetic validation was performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "4ed636bb-e58c-419b-8b9a-c0891a97a862",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Knockdown of nAChR subunits in dopamine neurons does not affect sleep patterns compared to control flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 reports negative results for sleep phenotypes, which is important given that the DAn\u2192KC circuit is involved in sleep regulation. This control helps establish specificity of the learning phenotype. The data are shown in Figure 3\u2014figure supplement 1 with appropriate monitoring methods described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "a6611efc-6632-48f4-b77c-1cc29b8cac6f",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both phasic/evoked and chronic/ongoing activity of dopamine neurons is influenced by direct cholinergic input from Kenyon cells through axoaxonic reciprocal synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 integrates findings from evoked responses (Result 5, C62-C67) and ongoing activity (Result 6, C72-C77). This summary claim is well-supported by the combination of functional imaging experiments showing KC input affects both types of DAn activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "95f5e518-c6e0-436a-8f26-413b69f9d3ed",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "There may be other mediators of the reciprocal connection between KC and DAn besides acetylcholine, based on the observation of both cAMP and calcium responses in DAn with KC stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is speculative, acknowledging that mecamylamide does not produce complete inhibition and that both cAMP and calcium responses are observed. While this is a reasonable hypothesis, no direct evidence for additional mediators is provided. The incomplete inhibition could also reflect incomplete receptor blockade or technical limitations of the pharmacological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "f17d5a40-c377-4024-baa9-ae4eef5c6242",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that ongoing DAn activity provides moment-by-moment updates of external/internal states that reconfigure KC\u2192MBOn information flow, and that the DAn/KC/MBOn circuit forms a recurrent network for sensory integration and decision-making, with local feedback loops providing computational benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C93 are explicitly speculative (\"plausible,\" \"may\") and represent interpretive models rather than direct experimental findings. While these models are consistent with the data and cited literature, they extend beyond what is directly demonstrated. The proposals are reasonable hypotheses for future testing but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "238a02e7-5e8b-487b-8a8a-f540f9641d24",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Non-KC cholinergic input to dopamine neurons may contribute to memory acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C94 acknowledges an important limitation: the experiments cannot exclude contributions from other cholinergic sources. This is an appropriate caveat given that Kir2.1 silencing and nAChR knockdown approaches affect all KC or all DAn nAChRs respectively, without synapse-specific resolution. This limitation does not invalidate the main findings but indicates the need for more specific tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes four major tenets of Drosophila olfactory learning based on prior literature: (1) KC synaptic modulation underlies learning, (2) KC modulation employs cAMP signaling, (3) MBOn receive KC input and influence behavior, and (4) DAn provide US input for conditioning. Additional complexity includes compartment-specific plasticity rules and ongoing DAn activity correlated with behavioral state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C32 and C68-C70 summarize established knowledge from cited literature, providing context for the current study. These are appropriately cited background claims that set up the rationale for investigating KC\u2192DAn connectivity. The citations appear appropriate and the summary of prior work is accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "af1d253e-79c4-473d-95fc-163dca15b866",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kenyon cells are cholinergic and nAChRs in mushroom body output neurons are required for memory retrieval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 cite Barnstedt et al., 2016 for established knowledge that KC are cholinergic and that nAChRs in MBOn are required for retrieval. This provides important context for investigating cholinergic transmission from KC to DAn. The citation is appropriate background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    },
+    {
+      "id": "6d45a156-4316-44f2-ac60-58fd28c032df",
+      "content_id": "c789d0fd-b509-41c6-bb82-f7cd48aa54b7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "There is a need to develop new tools that allow silencing or activating specific synaptic connections between neurons without affecting other functions in the same cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is a perspective/opinion statement in the discussion, motivated by the challenges encountered in the study (e.g., inability to exclude non-KC cholinergic input, C94). This is a reasonable conclusion given the experimental limitations and represents an appropriate call for future methodological development rather than a testable claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:03:13.316544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7a080f1a-1e21-40b3-b53a-11615e66d387",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "25a347f2-eedc-481d-85e2-4859295a2584",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "68baffda-d27e-498c-aa61-51e4b806fb42",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "493cb1ce-67a3-4470-8708-9f8bfc143a96",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "4892991d-bb4e-4fad-bcd6-293fae312bf8",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "865c4442-81e1-467a-9705-c5b413dbe3f7",
+      "result_id": "7f01232d-2453-4586-bb4b-70717a48e6f3"
+    },
+    {
+      "claim_id": "9a827049-f7a8-4735-a2e7-40aa4ea5caea",
+      "result_id": "eda2868e-f1e0-4087-9266-1af480e237ab"
+    },
+    {
+      "claim_id": "489c7f2b-7b01-420c-ab49-dac5d7807a52",
+      "result_id": "eda2868e-f1e0-4087-9266-1af480e237ab"
+    },
+    {
+      "claim_id": "8beffb3b-22bd-4dc9-a90b-0bc5e3ce165d",
+      "result_id": "eda2868e-f1e0-4087-9266-1af480e237ab"
+    },
+    {
+      "claim_id": "a624516c-3fea-4054-a83d-f2607a21ad25",
+      "result_id": "eda2868e-f1e0-4087-9266-1af480e237ab"
+    },
+    {
+      "claim_id": "095ed5e1-c825-44fc-9d82-7cef65f12d49",
+      "result_id": "eda2868e-f1e0-4087-9266-1af480e237ab"
+    },
+    {
+      "claim_id": "69e23ad3-2f44-496a-8cb1-5835b68fc147",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "5f2102dd-84b5-4da0-9b16-19ed96a32b71",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "547fa04c-c08e-44c1-a807-e4612192f5ae",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "fe6e63e3-13f6-435e-addf-0bdca9b4d9d8",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "c0e812ed-52ee-472a-a687-be29cfdded43",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "d2ec0f63-bdf8-4f94-abd5-6675bb4fb076",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "d6b7fce8-65a8-4272-93b6-1f6c62ca8463",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "af461179-1b2a-427a-ac09-1c60ae1f8037",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "f3bfec5b-d0a9-4efb-85f8-36c5aa687a92",
+      "result_id": "4030d89c-6aad-483c-b437-a6cfae93971f"
+    },
+    {
+      "claim_id": "935f90a2-7334-4170-b0cb-e878fd3b3a60",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "9a624c3e-fcf0-4462-b014-7c7e5b109f39",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "54ee937b-831c-44d3-8b73-5cde8a8a09cc",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "d6495706-6569-4556-92dd-373426ee4afa",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "de80c7b7-1bf8-4a8e-a7f7-75cf661b1e27",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "799842fc-9a56-412b-a239-31c53246af01",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "8a593bf9-a2e8-46ba-ac22-4866761fcfbc",
+      "result_id": "634cd306-1348-420b-821c-ebbe3479466e"
+    },
+    {
+      "claim_id": "e9a50574-47e5-45f1-8d33-affc9c1eb933",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "8a60897e-05b2-4d8a-ab9b-77dd4bda4c98",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "d3150390-3bf3-48ac-9153-4934d98f1400",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "72ebf090-9c9c-4a9f-9874-f06401069b52",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "9bf91560-4724-4f02-8374-5112c1f7a63c",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "e684038c-55f9-4538-a025-57ae2b3a4acd",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "d2a3488e-df16-4851-b7dc-e7946b6e4580",
+      "result_id": "008f931f-b4fe-4a41-ae7a-14afb39a0015"
+    },
+    {
+      "claim_id": "5489bfd9-795f-46f4-b696-ab0ada872eb2",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "12219e37-1447-4d81-b3b9-6879744841fd",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "d904cac8-27cd-45f6-a8c1-4c7b22d25b9c",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "3c2874eb-e39a-4567-83d3-ce24816bb777",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "d41a78ab-5c33-4335-95ff-f28321fee158",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "e0e8c1fb-12ed-41b3-bc72-df43ce93e26f",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "ce545365-7201-4185-be6e-5d737981ea05",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "c93d72e6-d4e5-4d91-9259-931147f22191",
+      "result_id": "b5e99c5b-fb37-453d-b05c-70783fd3c2e4"
+    },
+    {
+      "claim_id": "93467058-5b44-4ad2-b632-8fccef9511c1",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "37f3fd00-dc03-446f-8c6a-3b8915c94800",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "8804cf57-ad90-42f9-91bc-d16b533e8925",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "903328aa-7c8b-43de-b334-2ea2f57a1d07",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "e4d41c7c-7273-4479-a04d-d3d01115d4d5",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "70948909-6502-4b39-8e67-76b09d560639",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "a6ce098a-abf1-48ec-8911-5ae7b44356fe",
+      "result_id": "cfa5df88-f1e9-4903-8e37-7051d8098da6"
+    },
+    {
+      "claim_id": "f6989538-2200-4f29-814d-0dc988a74de9",
+      "result_id": "6bcddfef-4817-49b9-9a5a-6f3aaa8fdbdc"
+    },
+    {
+      "claim_id": "721156d5-6ae3-4c4a-ae2c-de711f701470",
+      "result_id": "6bcddfef-4817-49b9-9a5a-6f3aaa8fdbdc"
+    },
+    {
+      "claim_id": "f87d6d5b-7894-4ceb-8b18-beb7a4e1110f",
+      "result_id": "6bcddfef-4817-49b9-9a5a-6f3aaa8fdbdc"
+    },
+    {
+      "claim_id": "c109b06d-ce63-45a8-9f0e-dfcf5ef02c8e",
+      "result_id": "6bcddfef-4817-49b9-9a5a-6f3aaa8fdbdc"
+    },
+    {
+      "claim_id": "534cd77d-5b04-47b1-ad5c-c1393b797461",
+      "result_id": "3d18738c-dcd8-4555-8c9a-5047a9236a84"
+    },
+    {
+      "claim_id": "6df8bd36-09e3-4d03-970b-db2b3e41d560",
+      "result_id": "3d18738c-dcd8-4555-8c9a-5047a9236a84"
+    },
+    {
+      "claim_id": "d96b13b4-3699-4819-a18e-a11bb309408c",
+      "result_id": "4ed636bb-e58c-419b-8b9a-c0891a97a862"
+    },
+    {
+      "claim_id": "90c58ceb-a040-4efb-b217-cd4f978b908a",
+      "result_id": "a6611efc-6632-48f4-b77c-1cc29b8cac6f"
+    },
+    {
+      "claim_id": "4bc6b8e4-f9e8-40dc-84b3-6ed2627fecdd",
+      "result_id": "95f5e518-c6e0-436a-8f26-413b69f9d3ed"
+    },
+    {
+      "claim_id": "f7eee2a9-081d-4167-b741-53260a54dc8c",
+      "result_id": "f17d5a40-c377-4024-baa9-ae4eef5c6242"
+    },
+    {
+      "claim_id": "85ba2daf-2456-4dc5-8c3b-1486a4813b0d",
+      "result_id": "f17d5a40-c377-4024-baa9-ae4eef5c6242"
+    },
+    {
+      "claim_id": "ff6b9fb2-dd00-48b7-91d8-2420a90055b1",
+      "result_id": "f17d5a40-c377-4024-baa9-ae4eef5c6242"
+    },
+    {
+      "claim_id": "53f8dfdb-6767-44f8-9f9f-9c5263443d73",
+      "result_id": "f17d5a40-c377-4024-baa9-ae4eef5c6242"
+    },
+    {
+      "claim_id": "72bb232c-9e29-4c79-869e-4e2ca01e8846",
+      "result_id": "f17d5a40-c377-4024-baa9-ae4eef5c6242"
+    },
+    {
+      "claim_id": "ef6d4750-cbab-45df-9cb4-12a6f393b77e",
+      "result_id": "238a02e7-5e8b-487b-8a8a-f540f9641d24"
+    },
+    {
+      "claim_id": "05d11997-7729-4f1b-b256-3cad6a540055",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "0c3e403d-16bd-4e5d-83df-2471d2ccae7a",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "150cc161-7e7d-4f08-8e5c-fdf42f8ef83f",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "8bf82717-7fa2-4ae2-85d2-858f95e6beff",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "5c5b9b27-29af-40b6-a3f4-ad16639d934e",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "eef80558-6967-4b58-944e-6ca07e3f95c7",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "9e42f643-c1ef-4f05-940e-31a8afcf2f32",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "1c8e05e0-6eb5-4562-95c8-d48819df2ffb",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "31befac9-4a16-4d94-a0d9-78ece37aecb7",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "0b79ea41-ba5d-44c8-82ad-41784a5e3eec",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "ba2c4bcb-9eb3-49a5-923e-42c63fb03fea",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "eba2db5f-7662-4af8-9610-5e6490e88de9",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "55284395-265f-4424-b6bc-41b25f7d0abd",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "3ac2f668-cd0a-4af7-9d52-10cc787ae332",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "ea42a261-9f9b-463f-8fce-a8001531c1f1",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "118ef144-0822-4eb1-ac05-d58d6787e3af",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "1adbf8be-d25a-42d9-aba1-7593ffa33011",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "c050a106-e5b9-4357-9d64-ac6fa7c35ca1",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "5ecb6e06-5273-4c01-9b30-58c22791d39c",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "45949f7e-5bfc-421a-8eae-2fa79b39f3d9",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "214b99e8-f806-4a1b-a24e-c7ec40adb201",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "78b39e43-5aa1-4329-90ea-44b6133e8dae",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "f7d4e6bd-0d3f-4b62-a1ad-29175f28a8b7",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "e70e0acc-42e1-4a6c-8517-c638be00358a",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "8a0f9a19-9177-402a-91c6-59124ada994f",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "9beb6596-3046-4894-a718-f90a96103d2d",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "c4c43a11-895a-4325-8990-369014405508",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "2f49de54-1b3b-4641-ae87-1316112ef3ab",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "c6639ade-ab57-4f58-a434-734ebeb69ec2",
+      "result_id": "2e23c0f0-379a-4e76-baeb-eaf56c0062e9"
+    },
+    {
+      "claim_id": "5f2102dd-84b5-4da0-9b16-19ed96a32b71",
+      "result_id": "af1d253e-79c4-473d-95fc-163dca15b866"
+    },
+    {
+      "claim_id": "a25a902b-98b1-4d3e-b495-01727713f8c7",
+      "result_id": "af1d253e-79c4-473d-95fc-163dca15b866"
+    },
+    {
+      "claim_id": "5af323a5-cb01-43a3-87b9-29a2d5dba53a",
+      "result_id": "6d45a156-4316-44f2-ac60-58fd28c032df"
+    }
+  ],
+  "comparisons": []
+}

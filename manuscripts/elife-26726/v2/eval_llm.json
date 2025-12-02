@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67"
+    ],
+    "result": "Hetionet v1.0 is a heterogeneous network integrating 29 public resources, consisting of 47,031 nodes of 11 types and 2,250,197 relationships of 24 types, with high connectivity enabling diverse biomedical queries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C21-C27, and C67 collectively describe the construction and properties of Hetionet v1.0. The network's composition, data sources, connectivity patterns, and accessibility are clearly documented with specific numbers and structural properties. The claims are internally consistent and represent direct statements about the resource created by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Evaluation of 1206 metapaths revealed that 709 exhibited statistically significant predictive power (FDR < 5%), with all 24 metaedge types represented, suggesting each relationship type provides therapeutic utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 describe the systematic evaluation of metapaths for predicting drug efficacy. The statistical analysis (709/1206 significant at FDR < 5%), the inclusion of all 24 metaedges, and the variable representation of metaedges (259 for Compound-binds-Gene vs. 4 for Gene-participates-Cellular Component) are clearly documented. The inference that each relationship type provides utility (C32) is reasonable given all metaedges appear in significant metapaths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C9",
+      "C10"
+    ],
+    "result": "The machine learning model predicted treatment probabilities for 209,168 compound-disease pairs, achieving AUROC of 97.4% on known indications, 85.5% on DrugCentral validation, and 70.0% on clinical trial validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C9, and C10 describe the model's predictions and validation performance. The specific AUROC values are clearly stated, and the validation on two external sets demonstrates generalization beyond training data. The high performance on known indications (97.4%) with substantial performance on external validation (85.5% and 70.0%) supports the model's predictive capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The nicotine dependence case study demonstrates the model's ability to predict drug repurposing, ranking bupropion 9th (2.50-fold over null) and correctly prioritizing known treatments (nicotine, cytisine) and emerging candidates (galantamine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 present a coherent case study validating the model's predictions. The historical context (bupropion approved for smoking cessation in 1997 after initial approval for depression in 1985) provides a retrospective validation. The top predictions include known effective treatments (nicotine, cytisine with clinical trial support C44-C45) and a compound in Phase 2 trials (galantamine, C46), demonstrating the model's ability to identify both established and emerging therapies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The epilepsy case study shows that 77 of the top 100 predictions were anti-ictogenic compounds, with the model primarily leveraging known treatments (76% support) and genetic associations (22% support), targeting established anti-epileptic mechanisms including GABAA receptors (15.3% support).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 provide a detailed analysis of epilepsy predictions with high precision (77% anti-ictogenic). The model captured 23 of 25 known antiepileptics (C48), predicted clinically-used compounds like isoflurane and desflurane (C49), and identified mechanistically relevant targets (C54). The decomposition of supporting paths (C50-C53) and identification of ictogenic compounds with shared tricyclic structure (C55) demonstrate both the model's strengths and its interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Transcriptomics data showed only moderate predictive utility, with compounds having similar transcriptional signatures prone to treating the same disease, while opposing signatures showed slight aversion, and disease transcriptional similarity was not predictive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 present findings on transcriptomics data performance. The moderate informativeness (C59) is supported by citations to prior studies reporting underwhelming performance (C60) and by specific metapath performance patterns (C61-C63). The findings are internally consistent and align with cited literature, though they represent a negative result regarding the utility of transcriptional opposition approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "STARGEO analysis computed differentially expressed genes for 49 diseases using 27,019 samples from 460 series, with median 351 upregulated and 340 downregulated genes per disease, except endogenous depression which had no significant dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe the STARGEO transcriptional signature analysis. The scale (27,019 samples, 460 series), results (median dysregulated genes), and exception (endogenous depression) are clearly stated. These represent direct data statements from the authors' analysis, though the biological interpretation of why endogenous depression showed no dysregulation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "LINCS L1000 analysis revealed that knockdown perturbations were highly reliable, but overexpression perturbations were only moderately reliable (36% downregulated their target), imputation quality was poor, and knockdown/overexpression signatures were positively correlated 65% of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 present a quality assessment of LINCS L1000 data. The findings are internally consistent: measured knockdown data are reliable (C97), overexpression shows unexpected directionality (C98), imputation performs poorly (C99), and the positive correlation between opposing perturbations (C100) suggests confounding by stress response. These represent data-driven conclusions from the authors' analysis of an external resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PharmacotherapyDB v1.0 was created through physician curation of 1388 preliminary indications from four sources, resulting in 755 disease-modifying and 390 symptomatic therapies, with moderate inter-rater agreement (Cohen's \u03ba = 49.9%) resolved by a third curator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the creation of PharmacotherapyDB through a systematic curation process. The methodology (two initial curators, third for resolution), scale (1388 preliminary indications), and results (755 disease-modifying, 390 symptomatic) are clearly documented. The moderate inter-rater agreement (\u03ba = 49.9%) is honestly reported and addressed through additional curation, demonstrating methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Of 31 integrated resources, 5 were US government works, 12 had open licenses, 4 allowed only non-commercial use, and 10 had problematic licensing (9 without licenses, 1 forbidding redistribution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 document the licensing status of data sources. The categorization is clear and the numbers sum correctly (5+12+4+9+1=31). This represents an important transparency effort regarding data reuse rights, though the authors' ultimate decision to proceed despite licensing issues is described elsewhere in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Five permuted hetnets were created using the XSwap algorithm to preserve node degree while eliminating edge specificity, enabling assessment of baseline performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 describe the permutation methodology for creating null networks. The approach (XSwap algorithm preserving degree) is standard for network analysis and appropriately applied to assess whether observed patterns exceed chance expectations. The method is clearly described and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The DWPC metric was calculated by extracting paths, weighting by node degrees raised to damping exponent w=0.4, summing weights, then transforming via mean scaling and inverse hyperbolic sine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 describe the DWPC calculation methodology. The steps are clearly defined, the parameter choice (w=0.4) is justified by prior work, and the transformation is appropriately cited. This represents a well-documented methodological approach, though the choice of w=0.4 relies on previous optimization rather than optimization for this specific dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The modeling approach used a two-stage workflow with 3020 negatives for feature selection, selected 142 DWPCs plus 14 degree features, and incorporated a prior probability estimated from 744,975 network permutations that achieved AUROC 97.9% on training but only 54.1-62.5% on validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 describe the machine learning methodology and prior probability estimation. The two-stage approach is clearly justified (C118), feature selection is documented (C119-C120), and the prior's performance characteristics (excellent on training C122, poor on validation C123) demonstrate the importance of the authors' approach to control for treatment degree bias. The methodology is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C11"
+    ],
+    "result": "The study was conducted openly on Thinklab with 40 non-team community members contributing across 86 discussions, generating 622 comments and 145,771 words, equivalent to 20.8 publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C11 document the open science approach. The metrics (40 contributors, 86 discussions, 622 comments, 145,771 words) are specific and verifiable. The comparison to 20.8 publications (C66) uses a stated benchmark (7000 words/publication) and demonstrates the substantial collaborative effort, though this is a volume rather than quality metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Nodes were extracted from standard terminologies: 137 diseases from Disease Ontology, 438 symptoms from MeSH, 1552 compounds from DrugBank 4.2, 5734 side effects from SIDER 4.1, 20,945 genes from Entrez Gene, 402 anatomies from Uberon, pathways from WikiPathways/Reactome/PID, and Gene Ontology terms with 2-1000 annotated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 document the node extraction methodology. Each node type's source, version, and selection criteria are clearly specified. The use of standard terminologies and explicit filtering criteria (e.g., 2-1000 genes for GO terms C77, excluding non-human Uberon terms C74) demonstrates methodological rigor. These are straightforward data processing steps that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Edges were extracted from multiple sources with specific criteria: binding edges from BindingDB/DrugBank/DrugCentral (\u22651\u03bcM affinity for BindingDB), chemical similarity as Dice coefficient \u22650.5, disease-gene associations from GWAS Catalog/DISEASES/DisGeNET/DOAF, co-occurrence edges from MEDLINE (p<0.005), and protein interactions from multiple databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C90 document edge extraction with specific inclusion criteria. The aggregation from multiple sources (C78, C81, C90), quantitative thresholds (\u22651\u03bcM C79, \u22650.5 Dice C80, p<0.005 C86), and statistical methods (Fisher's exact test C85) are clearly specified. The methodology is transparent and reproducible, representing standard bioinformatics data integration practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Drug development costs $1.4 billion, takes 15 years, has low success rates, with costs doubling every 9 years since 1970, while drug repurposing can reduce duration, failure rates, and costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background context on drug development challenges and repurposing benefits. Each claim is supported by appropriate citations to the literature (DiMasi 2016, Reichert 2003, Hay 2014, Scannell 2012, Ashburn 2004). These represent established knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Small molecules bind multiple targets enabling polypharmacology, network pharmacology assumes diseases involve multiple molecular alterations, phenotypic screens recently outperformed target-centric discovery for first-in-class molecules, and integrating multiple data types overcomes single-domain limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide conceptual background on modern drug discovery paradigms. Each is supported by appropriate citations (Roth 2004, Swinney 2011, Hodos 2016). These represent established concepts that motivate the study's approach rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior computational drug repurposing studies compiled treatments and used various approaches: PREDICT (1933 treatments, drug-drug and disease-disease similarity), a 2014 study (890 treatments, transcriptional signatures with weak cancer-specific effects), and a 2016 study (402 treatments, interactome proximity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 summarize prior work in the field. The descriptions accurately represent the cited studies (Gottlieb 2011, Cheng 2014, Guney 2016) and provide appropriate context for positioning the current work. These are literature review claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Hetionet v1.0 integrates more information types than previous studies, though the field of multilayer networks suffers from terminological fragmentation (78 studies using 26 different terms, 9 with multiple definitions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 position Hetionet relative to prior work and note field-wide challenges. The comparison to prior integration efforts (C56) is supported by citation, and the terminological fragmentation (C57-C58) is documented in the cited literature (Kivela 2014). These provide appropriate context for the contribution.",
+    "result_type": "MINOR"
+  }
+]

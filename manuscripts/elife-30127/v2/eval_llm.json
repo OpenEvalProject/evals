@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C23",
+      "C33",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript establishes background knowledge about the Tat translocase system, including its localization, components, mechanism of substrate-triggered TatA oligomerization, and the structural domains of TatA (TMH, APH, DCR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C9-C15, C21, C23, C33, C59, C60) represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for the experimental work and are not contested by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Walther and co-workers proposed a 'charge zipper' model for TatA oligomerization based on complementary charge patterns between the APH and DCR regions, supported by in vitro analysis showing that charge-inverting substitutions impede oligomerization and that complementary charge reversals restore assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4-C5, C16-C19) accurately describe prior work by Walther et al., appropriately cited and illustrated in Figure 1. The authors correctly represent the charge zipper model they aim to test, providing necessary background for their contradictory findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The physiological relevance of TatA oligomers observed in detergent extracts is questionable because they can form without substrate, TatBC, or PMF (all required for native oligomers), and their oligomeric state is influenced by detergent:protein ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are well-supported by appropriate citations to prior literature and provide critical justification for why the authors chose to re-examine the charge zipper model using live cell assays rather than in vitro detergent-based methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C62"
+    ],
+    "result": "Testing the predicted D31-K49 salt bridge shows asymmetric effects: D31K abolishes CueO export and TMAO growth, while K49D retains significant activity. The double mutant D31K/K49D fails to restore activity and shows even worse performance than D31K alone, contradicting the charge zipper model's prediction of complementary rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 and C62 are directly supported by experimental data in Figure 2A-C. The asymmetric phenotypes between D31K and K49D, and the failure of the double mutant to rescue activity, provide strong evidence against the charge zipper model. Controls show proper protein expression (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Disrupting the three predicted salt bridges of the D45D46E47 motif (EDD or KKK variants) abolishes activity in CueO export and TMAO growth assays. The EDD/KKK double mutant, which should restore salt bridges according to the charge zipper model, fails to restore activity and instead completely abolishes even the residual transport seen with EDD alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by data in Figure 2A-C. The failure of complementary charge reversal (EDD/KKK) to rescue activity, and its actual worsening of the phenotype, directly contradicts the charge zipper model's central prediction and provides strong evidence against the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "All TatA variants tested were present in membranes at levels comparable to wild-type TatA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by immunoblot data in Figure 2D, providing an essential control demonstrating that functional defects are not due to protein instability or expression problems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Live cell fluorescence microscopy of TatA-YFP shows that wild-type protein is dispersed in resting cells, assembles into foci upon CueO overproduction, and disassembles upon PMF collapse with CCCP. All charge zipper variants can assemble into foci, but low-activity variants (D31K, KKK) remain constitutively assembled regardless of substrate or PMF status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are directly supported by fluorescence microscopy data in Figure 3. The observation that all variants can oligomerize contradicts Walther's in vitro findings, while the locked-assembly phenotype of low-activity variants suggests a post-assembly defect rather than an assembly defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Charge zipper variants form TatA-YFP oligomers even in the absence of TatE, and oligomer formation is strictly dependent on TatBC in all cases, indicating physiological substrate-triggered assembly rather than non-specific aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by Figure 3 data showing TatBC-dependent assembly in \u0394tatE backgrounds. The TatBC dependence is critical evidence that variants assemble via the physiological pathway, strengthening the conclusion that charge zipper residues are not required for assembly per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "None of the charge zipper substitutions prevented TatA oligomerization in live cells despite most variants having severe functional defects, and substitutions at opposite ends of predicted salt bridges (e.g., D31K vs K49D/K52D) show markedly different phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 synthesize key findings from Figures 2 and 3. The disconnect between oligomerization ability and transport function, plus asymmetric phenotypes at salt bridge ends, directly contradict the charge zipper model's predictions and are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors conclude that live cell assays do not support the charge zipper model. Instead, substitutions of charged residues in the TatA amphipathic helix lock TatA in an assembled state, suggesting these residues play a critical role in the translocation step following assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 represent the main conclusions, well-supported by the collective experimental evidence showing: (1) all variants can oligomerize (contradicting charge zipper predictions), (2) complementary charge reversals fail to rescue activity, (3) low-activity variants show locked-assembly phenotypes suggesting post-assembly defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Multiple APH substitutions (including Phe39 from prior work and the charge zipper variants tested here) lead to stable TatA oligomers that are substrate-triggered but fail to disassemble. This suggests the APH is required for a post-assembly step, likely the physical translocation of substrate across the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 are supported by data and appropriate citations, but C58 (identifying the specific step as substrate translocation) is speculative inference marked by the word 'likely.' While parsimonious, this mechanistic interpretation requires additional experimental validation such as direct translocation measurements or structural studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authors assume that amino acid substitutions preventing translocase assembly should also block transport, justifying their use of transport assays to test assembly predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 represents a reasonable logical assumption linking assembly to function. However, the authors' own data ultimately show this assumption is incomplete\u2014variants can assemble but still fail in transport, revealing that assembly and transport are separable steps.",
+    "result_type": "MINOR"
+  }
+]

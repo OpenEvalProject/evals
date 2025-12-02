@@ -1,0 +1,1407 @@
+{
+  "submission": {
+    "id": "29e030d9-3263-4a5a-b440-8575074a540d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:19:19.747109Z",
+    "updated_at": "2025-12-01T19:19:19.747109Z"
+  },
+  "content": [
+    {
+      "id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "submission_id": "29e030d9-3263-4a5a-b440-8575074a540d",
+      "content_type": "manuscript",
+      "content_text": "# Pausing guides RNA folding to populate transiently stable RNA structures for riboswitch-based transcription regulation\n\n## Authors\n\n- Hannah Steinert<sup>1</sup>\n- Florian Sochor<sup>1</sup>\n- Anna Wacker<sup>1</sup>\n- Janina Buck<sup>1</sup>\n- Christina Helmling<sup>1</sup>\n- Fabian Hiller<sup>1</sup>\n- Sara Keyhani<sup>1</sup>\n- Jonas Noeske<sup>1</sup>\n- Steffen Grimm<sup>1</sup>\n- Martin M Rudolph<sup>2</sup>\n- Heiko Keller<sup>3</sup>\n- Rachel Anne Mooney<sup>4</sup>\n- Robert Landick<sup>4</sup>\n- Beatrix Suess<sup>2</sup>\n- Boris F\u00fcrtig<sup>1</sup> ([ORCID: 0000-0001-6443-7656](https://orcid.org/0000-0001-6443-7656)) \u2020\n- Jens W\u00f6hnert<sup>3</sup> \u2020\n- Harald Schwalbe<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Biomolecular Magnetic Resonance, Institute of Organic Chemistry and Chemical Biology Johann Wolfgang Goethe-University Frankfurt am Main Frankfurt am Main Germany\n2. Department of Biology Technical University Darmstadt Darmstadt Germany\n3. Center for Biomolecular Magnetic Resonance, Institute of Molecular Biosciences Johann Wolfgang Goethe-University Frankfurt am Main Frankfurt am Main Germany\n4. Department of Biochemistry University of Wisconsin\u2013Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn bacteria, the regulation of gene expression by cis-acting transcriptional riboswitches located in the 5'-untranslated regions of messenger RNA requires the temporal synchronization of RNA synthesis and ligand binding-dependent conformational refolding. Ligand binding to the aptamer domain of the riboswitch induces premature termination of the mRNA synthesis of ligand-associated genes due to the coupled formation of 3'-structural elements acting as terminators. To date, there has been no high resolution structural description of the concerted process of synthesis and ligand-induced restructuring of the regulatory RNA element. Here, we show that for the guanine-sensing xpt-pbuX riboswitch from Bacillus subtilis, the conformation of the full-length transcripts is static: it exclusively populates the functional off-state but cannot switch to the on-state, regardless of the presence or absence of ligand. We show that only the combined matching of transcription rates and ligand binding enables transcription intermediates to undergo ligand-dependent conformational refolding.\n\n## Introduction\n\nRiboswitches are cis-regulatory RNA elements controlling cellular processes, in particular transcription and translation (Mironov et al., 2002; Nahvi et al., 2002; Mandal et al., 2003). They exert their function via a conformational switch between mutually exclusive base-paired structures. This conformational switch is induced by binding to a low-molecular weight ligand (Batey et al., 2004; Noeske et al., 2005; Serganov et al., 2004).\n\nRiboswitches regulating transcription control gene expression by connecting ligand-dependent and ligand-independent RNA folding processes with the concomitant synthesis of the RNA by the RNA polymerase.\n\nIt has been increasingly recognized that the folding of RNA is intimately linked to transcription kinetics, which are directly dependent on transcriptional pausing. The synthesis of the RNA is not performed at a constant speed (Maizels, 1973; Darlix and Horaist, 1975). Instead, slow conformational changes, from a more competent to a less competent transcription state, lead to a variation of the transcription speed of the elongation complex (EC) between 2\u201330 nt/s\u00a0(Davenport et al., 2000; Neuman et al., 2003). The less competent transcription state can be adopted at any point during transcription and can slow down the EC by inhibiting nucleotide addition (Adelman et al., 2002; Kireeva and Kashlev, 2009; Strobel and Roberts, 2015; Weixlbaumer et al., 2013). Thus, transcription rates vary during transcription. This elemental pausing occurs frequently, but typically lasts only for 1\u20136 s on average, making the overall transcription movement the sum of more and less competent transcription states averaged over the number of RNA polymerases (RNAP) molecules observed. In contrast to short elemental pausing, long pausing events occur at defined template sequences (pause sites) or upon interaction with protein factors (Roberts et al., 1998). At pause-sites, the RNAP speed decreases by a factor of 100 compared to its maximal transcription speed (max. 75 nt/s, measured on a specialized DNA template) (Vogel and Jensen, 1994). Pause sites can slow RNAP through backtracking of the enzyme relative to the nucleic acids or by the formation of a pause RNA hairpin after the EC has entered an initial elemental pause state which makes elemental pausing an obligatory intermediate from which longer pausing can occur (Reeder and Hawley, 1996; Kireeva et al., 2000; Artsimovitch and Landick, 2000; Landick, 2006; Nudler, 2012; Hein et al., 2014).\n\nPausing can also facilitate the folding of certain RNA structures and allow a stabilizing interaction between the nascent RNA and the transcription machinery (Pan et al., 1999). Pausing can be important for effective riboswitch-mediated regulation where co-transcriptional folding is influenced by the transcription speed (Wickiser et al., 2005; Perdrizet et al., 2012). The modulation of the available conformational space by altering the transcriptional speed was demonstrated for the btuB riboswitch where the use of a mutant RNA polymerase with deficient pause behavior caused the riboswitch to adopt a non-native structure and to be deficient in ligand binding (Perdrizet et al., 2012).\n\nHere, we investigate the xpt-pbuX riboswitch from Bacillus and identify and characterize conformational sub-states and the kinetics of their inter-state conversion. Our work provides insight into how RNA polymerase residence time and the intramolecular refolding kinetics must be fine-tuned to allow riboswitch-based regulation of transcription. In this contribution, we apply high resolution structural and kinetic techniques to decipher the full co-transcriptional folding pathway, enabling monitoring the behaviour of the decisive structural units during synthesis for the first time.\n\n### Results\n\nThe guanine-sensing riboswitch from Bacillus subtilis (GSW) negatively regulates the transcription of the xpt-gene by the premature termination of RNA synthesis (Mandal et al., 2003). In this riboswitch, the regulatory output signals of maintaining or repressing transcription require two conformational states with different base-pairing interactions of four complementary sequences P, A, T and H (Figure 1a). In the off-state, the 5\u2019-aptamer-strand (P) pairs with the aptamer-stabilising strand (A) and the switching strand (T) forms the terminator helix together with the terminator strand (H). By contrast, in the putative on-state (Figure 1b), A and T pair and form the antiterminator conformation, and the P and H strands are unpaired.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig1-v2.jpg)\n\n**Figure 1.:** (a) Secondary structure of the full-length guanine-sensing riboswitch (GSWPATH). In absence (left) and in presence of ligand (right) the aptamer closing helix (PA) and the terminator helix (TH) are formed, the anti-terminator helix (AT) is not present in either state. The only structural difference between the apo- and holo-states is the formation of a stable ligand binding pocket in the holo-state The strands involved in the switching mechanism are colour-coded: aptamer strand (P, black), aptamer stabilizing strand (A, blue), switching strand (T, red), and terminator strand (H, green). Putative pause sites (PS1-PS3) are indicated, the sequence highlighted in grey is occupied by the polymerase (Monforte et al., 1990); additionally, stable structured fragments are marked by arrows; (b) Secondary structure of a truncated stably structured guanine-sensing riboswitch (GSWPAT). In the absence of ligand two conformational states are populated in a 1:1 ratio each representing a functional (on/off) state of the riboswitch, (c) G\u00b7U region of NOESY spectra of the full-length GSWPATH (upper panel) and the truncated riboswitch GSWPAT (bottom). G\u00b7U cross peaks are reporters for formation of PA (black/blue), P3 (grey), AT (blue/red) and TH (red/green), respectively; (d) signal intensities of GSWfl and GSW10-134 NOESY cross peaks in absence and presence of ligand. Errors were estimated from the noise of the respective spectra. The full-length riboswitch GSWPATH adopts the terminator conformation irrespective of the ligand. The truncated GSWPAT shows a heterogeneous fold in the absence and in the presence of the ligand, (e) 10% PAGE of the overnight transcription of the full length riboswitch in the absence (-lig) and presence (+lig) of ligand. The transcribed RNA fragments correspond to the full length (FL: 228 nt), the Terminator (T: 172 nt), the second pause site (PS2: 152 nt), the first pause site (PS1: 124 nt) and the aptamer (APT: 96 nt).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** All 1H,1H-NOESY spectra were recorded at 283 K in 2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate (pH 6.2). (a) Module design for chemical shift assignment of the full-length GSW with in the divide and conquer approach. The full-length GSW and the modules were measured by NMR spectroscopy seperately. Left: GSWfl (GSWPATH, grey) in the terminator conformation, the aptamer domain GSW10-89 (GSWPA, blue) and the terminator hairpin GSW121-155 (TH, green) are indicated. Right: GSWfl (GSWPATH, grey) in the antiterminator conformation and the P4 module (AT, red). (b) Overlay of the full-length GSWfl (GSWPATH, black), the aptamer domain GSW10-89 (GSWPA, blue) and the terminator hairpin GSW121-155 (TH, green) shows that GSWfl (GSWPATH) adopts the terminator conformation with formed aptamer and terminator hairpin. Assignment of the fragments can be transferred to GSWfl (GSWPATH). (c) Left: Overlay of the truncated GSW10-134 (GSWPAT, black), the aptamer domain GSW10-89 (GSWPA, blue) and the P4 module (AT, red) reveals conformational heterogeneity of GSW10-134 (GSWPAT)with either helix P1(PA) (GSW10-134A, GSW[PA]T) or helix P4(AT) (GSW10-134B, GSWP[AT]) formed. Right: Conformations GSW10-134A (=GSW[PA]T) and GSW10-134B (=GSWP[AT]) of the truncated GSW10-134 (=GSWPAT). (d) Spectra of the aptamer domain GSW10-89 (GSWPA, blue), the terminator hairpin GSW121-155 (TH, green) and the P4 module (AT, red). Assignments are annotated in the spectra; the sequence of the P4 (AT) module is given.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** GSWfl without (black) and with ligand (grey) adopts the terminator conformation. Experimental conditions are 2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate (pH 6.2). The resonance assignment of the terminator hairpin P6 is depicted in bold letters. In presence of ligand, reporter signals (U47, U49 and U51) from the binding pocket are detected. However, ligand binding induces slight chemical shift changes (arrows) but no conformational changes are observed in particular not for TH.\n\nThe free energy landscape of RNA folding features high barriers for the transitions between conformations with alternative base-pairing. These transitions are frequently found to be slower than the timescale of the relevant biological process (Solomatin et al., 2010). In addition, RNA chains can be trapped in a stable conformation (Treiber et al., 1998). The terminator conformation of GSW represents such a \u2018super\u2019 stabilised structure. Regardless of the presence or absence of the cognate ligand, the RNA adopts a single conformation in which the terminator helix (TH) is formed as inferred from NMR signals (for assignment, see Figure 1 and Figure 1\u2014figure supplement 1) arising from the stable GU base-pairs (U129-G147 and U130-G146) (Figure 1c,d). Addition of the ligand to the GSW induces only changes within the binding core of the aptamer domain (Noeske et al., 2007) but the aptamer closing helix (PA) is stably present both in the apo and holo form of the GSW and formation of the antiterminator helix (AT) cannot be detected (Figure 1c,d; Figure 1\u2014figure supplement 2).\n\nSince the terminator conformation in the full-length construct is the only detectable state regardless of the presence or absence of ligand, it must be stabilised by at least \u25b3\u25b3G\u00a0>\u00a08 kJ mol\u22121 compared to the antiterminator conformation at a NMR signal-to-noise greater than 10:1.\n\nThese observations give rise to two fundamentally important questions: If the full-length riboswitch is trapped in a single stable structure and not able to refold, which transcription intermediate is capable of undergoing the regulatory active conformational change (Wickiser et al., 2005; Gilbert et al., 2006; Lemay et al., 2006)? If the thermodynamic stable conformation resembles an off-state, how can the organism ever adopt the on-state to allow gene expression?\n\nWe therefore tested for accumulation of distinct transcription intermediates, occurring as shorter RNA products are produced during the synthesis of full-length riboswitches (Artsimovitch and Landick, 2000). In multiple round transcription reactions, we detected several distinct shorter RNA products (Figure 1e). Three of the detected fragments correspond to the aptamer domain (nucleotides 10\u201389), to the prematurely terminated form (nucleotides 10\u2013164), and to the full-length of the mRNA-5\u2019-UTR. Mapping of these RNA fragments to the riboswitch structure reveals that they correspond to transcription intermediates that include the strands A, T, and H at their 3\u2019-ends, respectively. Furthermore, two additional fragments of 100 and 140 nucleotides are detected. These latter RNAs exhibit 3\u2019-terminal stretches of U-residues and therefore represent canonical transcriptional pause sites (Landick, 2006; Larson et al., 2014).\n\nBased on the detection of these fragments, we truncated GSW after strands A or T to generate transcription intermediates containing either only the aptamer domain (GSWPA) or the aptamer domain and the subsequent sequence region of the antiterminator (GSWPAT). Both GSW fragments bind the ligand with similar affinities as the full-length riboswitch suggesting formation of the unperturbed aptamer domain (Figure 2 and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig2-v2.jpg)\n\n**Figure 2.:** All NMR spectra were recorded at 283 K in 2 mM MgCl2, 50 mM KCl, 25 mM potassium phosphate (pH 6.2). 1 equivalent of each RNA (GSW10-89 (=GSWPA), S2trans (=Ttrans) and S3trans(=Htrans), respectively) was used, 4 equivalents of ligand were added. The following selective labelling scheme was explored: 15N-G,U GSW10-89, 14N-G,U S2trans and 14N-G,U S3trans. Signals originating from GSW10-89 and S2trans or S3trans were separated using in x-filter 1D experiments (Weixlbaumer et al., 2013) (top). The 1H,15N-HSQC spectra (bottom) report on the interactions in the aptamer domain. (a) In the elongated aptamer domain GSW10-89, the helix PA was formed (U17\u2013G79) and the loop-loop interaction reporter G32 was detected. (b) GSW10-89 and ligand (1:4) ligand binding was monitored by appearance of signals U47, U49 and U51. (c) GSW10-89 and S2trans (1:1): Sequence S2trans caused the PA reporter signals U17(P1) and G79(P1) to decrease, AT formation was followed by appearance of signals of G79(P4), U81(P4) and G82(P4). (d) GSW10-89, S2trans and ligand (1:1:4): Addition of ligand to GSW10-89-S2trans resulted in dissociation of the complex (decreasing signals for G79(P4), U81(P4) and G82(P4) signals) and reformation of the PA helix (U17(P1) and G79(P1) signals). Ligand binding reporters U47, U49 and U51 were detected. However, in presence of 4 equivalents of ligand, AT helix reporter signals were significant. (e) GSW10-89, S2trans and S3trans (1:1:1) Addition of S3trans to GSW10-89-S2trans resulted in complete dissociation of the complex (G79(P4), U81(P4) and G82(P4) signals) and reformation of the PA helix (U17(P1) and G79(P1) signals). In contrast to ligand addition, 1 equivalent of S3trans was sufficient to disrupt the antiterminator mimic. (f) GSW10-89, S2trans, S3trans and ligand (1:1:1:4): Ligand binding to GSW10-89 in presence of the terminator helix P6 (=TH) equals ligand binding to GSW10-89 (GSWPA)\u00a0alone (b).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** ITC measurements were performed with a Microcal VP ITC (Northampton, MA USA) at 10\u00b0C. A 217 \u03bcM solution of ligand (hypoxanthine) was titrated to a 15 \u03bcM solution of RNA using 25\u201342 injections. Buffer conditions were 2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate, pH 6.2. The data was analyzed with the Origin ITC software (OriginLab, Northampton, MA USA) assuming a single binding site. The Kd values are given in \u00b5M.\n\nFor GSWPAT, we observed two equally intense sets of NMR signals from two long-lived conformations GSW[PA]T and GSWP[AT] (Figure 1b,c) that differ with regard to the formation of the two mutually exclusive helices PA or AT. In GSW[PA]T, helix PA is formed, and in GSWP[AT] the antiterminator helix AT is formed. Upon addition of ligand, we detect ligand binding and subsequent shifting of the conformational equilibrium towards GSW[PA]T (Figure 1c,d). Thus, in contrast to the full-length riboswitch, the antiterminator conformation representing the functional on-state is a thermodynamically stable state (GSWP[AT]) of this transcription intermediate (GSWPAT) in the absence of ligand.\n\nIn order to evaluate ligand binding and the refolding kinetics of transcriptional intermediates, we mimicked these processes by sequentially adding short oligonucleotides of sequences T (Ttrans) and H (Htrans) to GSWPA. Using isotope-filter NMR experiments, selectively 15N-labelled GSWPA (containing the P and A sequences), and 14N-labelled Ttrans and Htrans we investigated the sequential refolding of the mRNA transcription intermediates with nucleotide resolution (Figure 2). The imino-signal stemming from the aptamer domain in the ligand-free (Figure 2a) and \u2013bound state (Figure 2b) can be readily assigned and constitute the characteristic NMR signals to detect the relevant GSW conformations and their ligand-induced refolding. Without ligand, addition of equimolar amounts of Ttrans to GSWPA led to formation of the antiterminator conformation mimic containing helix AT and the strand P is unpaired (Figure 2c). This GSWPA-Ttrans complex was disrupted by the addition of ligand (Figure 2d), restoring formation of helix PA. In contrast, the presence of ligand stabilised GSWPA so that subsequent addition of Ttrans did not disrupt helix PA in the aptamer domain within the GSWPA-ligand-complex and formation of the antiterminator helix was suppressed. From these findings, we can conclude that ligand binding to GSWPA represents the structural decision point.\n\nRegardless of the presence or the absence of ligand, addition of Htrans to the antiterminator conformation in the GSWPA-Ttrans complex induced a conformational switch characterized by the formation of the terminator helix TH and the helix PA (Figure 2e and f).\n\nHaving characterized these three functional relevant states, we conducted real-time NMR experiments (Buck et al., 2009) to determine the kinetics of RNA refolding to the antiterminator and to the terminator conformation and of ligand binding to the distinct conformations, i.e. the critical events for GSW function (Figure 3). Utilizing the above described labeling strategy, we were able to resolve the NMR signals from the ligand, the acceptor domain and the associating or dissociating single RNA strand. In total, 59 signals could be detected, and the reported kinetics have been measured in triplicate experiments and averaged over structural elements in the riboswitch.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic overview of the performed kinetic experiments (indicated with letters b-h) to characterise different transcription intermediates. The aptamer domain GSWPA is depicted in black, switching sequences A (blue), T (red) and H (green) are colour-coded. Dashed sequences are neglected in the antisense oligonucleotide approach. (b\u2013h) results of the kinetic experiments, lettering according to a). 15N- (left) and 14N-filtered (right) 1D spectra before (top) and after (bottom) the kinetic experiments are depicted. An exemplary time trace reporting on the formation of each structural motif involved in the rearrangement is given, respective signals are marked with red arrows. (i) Rates obtained from signal traces of resolved imino proton resonances. Letters refer to the kinetic experiments as shown in a). For all structure motifs (ligand binding, PA, AT and TH formation, respectively) several signals (number indicated below) were analysed, averaged rates are given in bars, rates of individual base pairs are indicated with diamonds. Colour-coding refers to AT association (green), AT dissociation (red), ligand binding (dark grey), aptamer formation (blue), terminator association (orange) and Htrans-intrinsic unfolding (light grey) which is irrelevant for riboswitch function. Residues with a single rate were fitted mono-exponentially, a bi-exponential fit function was applied for residues with two distinguishable rates. For exact values and errors see Supplementary file 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Imino proton region of the 1H-NMR spectra of the oligonucleotide sequences Ttrans (top) and Htrans (bottom). NMR spectra were recorded at 283 K in 2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate (pH 6.2). The sequence Ttrans shows intrinsic folding, intrinsic interactions of Htrans are minor.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Rates obtained from signal traces of resolved imino proton resonances.\n\nLigand binding needs to lock strand A in the aptamer\u2019s PA helix and suppress formation of the antiterminator conformation. Indeed, ligand binding to GSWPA either in the absence or in presence of the terminator helix (Figure 3f and g) was fast, with a k1 of (2.4\u00a0\u00b1\u00a00.3) 10\u22121 s\u22121, and induced a slower tertiary structure rearrangement (k2 = [1.8\u00a0\u00b1\u00a00.2) 10\u22122 s\u22121] within the aptamer, consistent with previous experiments (Vogel and Jensen, 1994; Reeder and Hawley, 1996). Subsequent formation of the terminator helix from single strands was also rapid (k1 = [1.4\u00a0\u00b1\u00a00.8] 10\u22121 s\u22121; Figure 3h).\n\nIn the absence of ligand, GSWPA and Ttrans anneal rapidly to form the antiterminator complex (k = [9\u00a0\u00b1\u00a05] 10\u22123 s\u22121; Figure 3b). Subsequent formation of the terminator helix TH was observed if Htrans was added to the GSWPA-Ttrans complex (antiterminator conformation) (Figure 3c). Under these conditions, the dissociation of the antiterminator helix AT was rate-limiting and slow (k1 = [0.5\u00a0\u00b1\u00a00.2] 10\u22123 s\u22121; k2 = (1.1\u00a0\u00b1\u00a00.4) 10\u22124 s\u22121[Ttrans intrinsic unfolding, Figure 3\u2014figure supplement 1]). Importantly, the dissociation of helix P4 was accelerated by the presence of ligand, but in a concentration-independent manner above equimolar ratios (Figure 3\u2014figure supplement 2; k = [0.89\u00a0\u00b1\u00a00.09] 10\u22123 s\u22121; Figure 2d) and was stimulated to a higher degree if ligand binding and annealing of Htrans occurred simultaneously (Figure 3e). Under the latter conditions, the formation of the terminator conformation was described by two rate constants, k1 = (2\u00a0\u00b1\u00a01) 10\u22122 s\u22121 reporting on the ligand-induced refolding of the aptamer domain and k2 = (1.2\u00a0\u00b1\u00a00.4) 10\u22123 s\u22121 characterising the rate-limiting dissociation of helix AT.\n\nFrom these kinetic data (Supplementary file 1, Figure 3i), we conclude that the AT conformation represents a meta-stable state that slowly refolds into the thermodynamically stable terminator state (which represents the state of lowest free energy). The dissociation of PA is slow compared to the polymerase transcription speed. Therefore, during mRNA synthesis, transcriptional resting states are required to slow transcription to ensure sufficient time for the refolding of conformations [PA]T to P[AT] to enable riboswitch function. We are aware that in this applied experimental strategy some of the kinetics are measured in trans, although the riboswitch is a cis-acting element. However, at the applied concentrations of 0.1 mM, the most relevant conformational transition of ligand-dependent [PA] is slow and if the rate may possibly be overestimated by this method, which would not impact the fundamental conclusion as discussed below.\n\nTranscription rates between 12 to 90 nucleotides per second have been reported in prokaryotes (Adelman et al., 2002; Vogel and Jensen, 1994). However, rates of synthesis vary during transcription. 5\u2019-untranslated regions (5\u2019-UTRs) for example often contain several U-rich sequences that have been shown to constitute transcriptional pause sites (Artsimovitch and Landick, 2000; Gusarov and Nudler, 1999). Other sequences can also induce pausing of RNA polymerase, in particular in B. subtilis (Larson et al., 2014). In any case, pausing has been reported to assist co-transcriptional folding e.g. of the FMN- and coenzyme B12-sensing riboswitches (Wickiser et al., 2005; Perdrizet et al., 2012). Within the sequence of GSW, a U6-stretch (U107-U112) is suspiciously located between the aptamer domain and the terminator helix (pause site 1, PS1) and between the A and T stretches of the antiterminator (U135-U141, pause site 2, PS2) (for analysis of the distance between aptamer and terminator sequences in purine riboswitches see Figure 4\u2014figure supplement 1). We analysed the synthesis rate of the RNA polymerases form E. coli (EcRNAP) and B. subtilis (BsRNAP) in a time-resolved single-round transcription assay (Figure 4). Seven transcribed RNAs could be identified, suggesting that the formation of the shorter products after transcription of the aptamer domain and PS1 accumulate at a later time point during the overnight multi-round transcription. The seven RNA fragments were identified as FL (214 nt), GSWPATH (164 nt), PS2 (141 nt), PS1 (between 107 and 112 nt, Figure 4\u2014figure supplement 1), and three additional paused RNA fragments. Two of these additional pauses were seen with transcription with EcRNAP and were mapped as RNA95 and RNA77 (transcripts 95 nt and 77 nt in length, respectively). Transcription with BsRNAP through the same sequence showed the same pausing at RNA77, pausing at a different position, RNA90 (transcript 90 nt in length), but no pausing at RNA95. The FL and GSWPATH fragments accumulated over time and reached their maximum at 300 s and more than 600 s, respectively, for both the Ec and Bs RNAPs. The GSWPATH concentrations did not reach their maximal values within the observed 600 s. For the determination of transcription rates, the maximum values were included in the fitting procedure. Upon ligand addition, the intensity of GSWPATH increases whereas the intensity of FL decreased. The intensities of the pausing transcription intermediates appear unaffected by ligand addition. The data indicate that the riboswitch maintains its ligand-response function during the in vitro transcription assays, as the termination efficiency is increased by 24.8% for EcRNAP and by 30.3% for BsRNAP. The intensities of the PS2 and PS1 RNA also show an exponential growth, reaching maximum value after 120 s, indicating that under low NTP-concentrations, the poly-U sequences act more as a polymerase blocking point than a pause-site. This could be observed for both RNAPs. The intensity of PS2 is near the level of noise for BsRNAP, making quantitation of the amount of transcript difficult for this fragment. However, the pausing values could be determined, and these are of higher importance for the simulations. Furthermore, the intensity of PS1 is stronger for BsRNAP transcription, indicating that PS1 has a higher influence on the elongation complex for the BsRNAP. In addition, the determined pausing-parameters (Supplementary file 1) show that both RNAPs pause longer at PS1 than at PS2. This effect is increased for the EcRNAP when ligand is added whereas pausing of the BsRNAP shows no ligand dependency. Relative to the pausing observed at PS1 and PS2, pausing at RNA77, RNA90, and RNA95 was of shorter duration for both RNAPs. For EcRNAP-mediated transcription in the absence of ligand, pausing at RNA77 could not be clearly determined as the relative intensities show a linear than an exponential decay. However, as four pausing events are observed for each RNAP, at least in the presence of ligand, even these brief pauses can have a high impact on the overall transcription kinetics. The apparent transcription rates were determined to range from 0.4\u00a0\u00b1\u00a00.1 nt s\u22121 and 2.0\u00a0\u00b1\u00a00.5 nt s\u22121 (FL and GSWPATH) to 1.3\u00a0\u00b1\u00a00.6 nt s\u22121 and 47.0\u00a0\u00b1\u00a053.3 nt s\u22121 for the synthesis of the shorter transcription intermediates at 37\u00b0C (Figure 4). Upon ligand addition, the apparent transcription rate decreased by at least a factor of two for PS2 and PS1 but was nearly identical for RNA95/RNA90 and RNA77. However, the multiple pausing events during transcription drastically decrease the apparent transcription rates of the longer RNAs FL and GSWPATH.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig4-v2.jpg)\n\n**Figure 4.:** The time points of transcription stops are indicated in (s). The positions of 32P 5\u2019-labeled markers (pBR322 MspI digested) are indicated on the left hand side. Prominent paused and terminated bands are indicated on the right hand side. seven major RNA-fragments could be identified: The run-off transcript or full-length RNA (FL), the premature termination fragment (GswPATH), the second pause-site (PS2), the first pause-site (PS1) and three pausing fragments (RNA95 and RNA77 for E. coli RNAP transcriptions and RNA90 and RNA77 for B. subtilis RNAP transcriptions). Over time, both RNAPs transcribe the DNA-template, generating RNA-fragments of increasing size. A pausing event is characterized by signal increase and by a fast increase of the signal followed by a slower decrease (e.g. RNA77). FL and GswPATH show a strong accumulation over time and when ligand is added, the signal intensity of FL is decreased whereas the signal intensity of GswPATH is increased.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Transcription was performed using the E.\u00a0coli RNAP in the absence (EC) and presence of 3\u2019-deoxy ATP (dA), CTP (dC), GTP (dG) and UTP (dU), respectively and compared to transcriptions using the B. subtilis RNAP with different amounts of radioactively labeled GTP (GTP*) or DNA template in the absence and presence of ligand. The gel shows several transcription abortion products which end with a 3\u2019-deoxy U and which migrate slightly faster than the 110 RNA fragment. When compared to the sequence, this poly-U stretch corresponds to the bases T107 to T112. However, it can\u2019t be clearly stated on which nucleotide the 110 RNA ends. It was therefore decided to call this fragment 110.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a)\u00a0The signal intensities of the E. coli RNAP transcripts PS2, PS2, RNA95 and RNA77 were analyzed as shown by Landick et al. (1996) in the absence (black) and presence (red) of ligand and plotted over time. For normalization, the intensity of an RNA signal (RNA) was divided by the sum of all RNAs of the same length and longer (RNAp). (b) Pausing plots of the B. subtilis RNAP transcripts. The steeper the pausing-plot, the shorter the dwell-time (\u03c4) of the pause site. Pause-sites with high \u03c4 have a higher impact on transcription kinetics. Addition of ligand seems to have a higher impact on the pausing of the E. coli RNAP. However, the differences of the plots are within the errors.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The list of 133 riboswitches was taken from the seed dataset of the Rfam database entry for the Purine riboswitch family (RF00167). Riboswitch sequences were retrieved from the EMBL European Nucleotide Archive (ENA). The Rfam database contains only the aptamer regions of the purine riboswitches but lacks the expression platform. Therefore, the database does not annotate the terminator location. The web service ARNold, which uses Erpin\u00a0(Gautheret and Lambert, 2001) and RNAmotif\u00a0(Macke et al., 2001) to predict terminators, was run on all riboswitch sequences to determine the terminator position. Sequences upstream of the coding sequence (CDS) as identified by annotations in ENA were used as input for ARNold. ARNold identified terminators between the aptamer and the CDS in 35 of the 133 sequences. The distances between aptamer and terminator were calculated based on the secondary structure annotation from Rfam and the output from ARNold. Predicted terminators inside the aptamer sequence were excluded from the data.\n\nIn order to examine the mutual influence of transcription speed and refolding kinetics on the population of intermediate riboswitch conformations we performed simulations based on a kinetic Markov-model (Prinz et al., 2011) using the experimentally determined refolding and transcription rates of 20 nt/s. This value is based on the apparent rates of transcription determined in the transcription assays for B. subtilis polymerase but taking into account the cellular concentrations of nucleotides, that are approx. 10 times higher than those used in the in vitro transcription reactions (Buckstein et al., 2008) (Figure 5). In the absence of ligand, there is no major change as the intermediate conformations occur in a linear succession. In both cases, with and without transcriptional pausing, RNA synthesis is fast enough to allow for formation of the functional on-state apo-form conformation P[AT] (Figure 5b\u2013e). Refolding to the thermodynamic most stable functional off-state conformation [PA][TH] in its apo-form only occurs after the polymerase has passed the regulatory point of decision. In presence of the ligand the conformational space is described as a branched succession of intermediates (Figure 5a). Without pausing of the transcription machinery, riboswitch synthesis is fast compared to its own refolding reactions from apo- to holo-conformations. Therefore, the GSW does not reach a substantial population of conformations with the formed terminator [TH] and the polymerase escapes termination (Figure 5f,g). In contrast, pausing of transcription at pause site 1 opens a time window that allows for refolding of the riboswitch from the apo- to the holo-form. Consequently, the [PA] conformation is formed which is stable over the time window of regulation. In continuation of transcription strand T is synthesized but because it can no longer rapidly associate with strand A to form an anti-terminator conformation, it will form the terminator hairpin conformation [TH] with strand H, as the elongation of the riboswitch by the polymerase occurs with rates not allowing dissociation of the [PA] helix. Therefore, a reduced rate of transcription after formation of the aptamer nucleotides of the riboswitch due to pausing at PS1 in conjunction with a comparative slow conformational transition from [PA]T to P[AT] results in higher population of off-states during synthesis before the polymerase leaves the point of decision (Figure 5h,i).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig5-v2.jpg)\n\n**Figure 5.:** (a) Conformational states of GSW in context of the transcription progress are shown from left to right.\u00a0Kd values of the transcript intermediates are indicated. Ligand binding can occur as soon as the aptamer domain is transcribed and consequently locks A (blue) in the PA helix resulting in the population of a single conformation during the transcription process and subsequently in transcription termination. The aptamer domain is synthesized first. As transcription continues, the free mRNA adopts the metastable antiterminator conformation stabilized by AT interaction (blue and red, respectively) which refolds to the terminator conformation after the riboswitch is completed. Pause site PS1 (grey cylinder) increases the available time window for ligand binding. Co-transcriptional refolding processes are indicated with their respective life times by the black arrows. Population of the conformational states under different conditions (the time plotted on the x-axis is the time of transcription with t\u00a0=\u00a00 at nucleotide position 75) (b) without ligand and without pausing, (d) without ligand and with pausing at PS1 and (f) with ligand and without pausing and (g) in presence of ligand and with pausing at PS1. Ratio of the probabilities to populate the on- versus the off-state as derived by kinetic simulation of the switching mechanism in absence (c, e) and in presence (g, i) of ligand. If the polymerase does not pause between the synthesis of the stretches A and T, GSW adopts the on-state irrespective of ligand (c, g) whereas pausing at PS1 enables GSW to respond to its ligand and dominantly adopts the off-conformation in the presence of ligand (i).\n\nIn order to validate the derived model, we tested whether the pause site PS1 could further increase the time for ligand binding to the aptamer domain and shift the riboswitch towards off-state function in an in vivo reporter assay. Successive disruptive mutations (M1-M3) of PS1 correlated with the loss of regulation in vivo (Figure 6a), and the addition of further U residues to PS1 (M4) increased riboswitch efficiency. Monitoring the dose-dependence of the wild-type riboswitch compared to the M3 and M4 mutants indicated that the loss of pause site integrity reduced the switching efficiency, whereas extended pausing of the RNA polymerase led to increased repression of reporter gene expression (Figure 6b). Hence, pausing of the polymerase at PS1 temporarily decouples the continuous synthesis of the downstream antiterminator sequence, assists in folding of the aptamer domain and allows for sufficient time for the ligand to bind at the structural decision point.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21297/elife-21297-fig6-v2.jpg)\n\n**Figure 6.:** (a) Regulation of \u00df-galactosidase reporter gene expression by wt-GSW and pause site 1 mutants.\u00a0Nucleotide exchanges or insertion of residues to generate the PS1 mutants M1\u2013M4 are indicated. Enzyme activity for cells grown in absence (black bars) or presence of 0.5 mg mL\u22121 guanine (grey bars), respectively; the dynamic range corresponds to the ratio of enzyme activity in absence and presence of ligand. (b) Dose-dependent repression of \u00df-galactosidase expression for wt GSW (black), M3 (green) and M4 (purple). Nucleotide exchanges to generate the PS1 mutants M3 and M4 are indicated. Cultures were grown with increasing concentrations of guanine. Deletion of PS1 reduces riboswitch efficiency, whereas it is increased in case of elongation of PS1. However, both mutations do not significantly alter the half maximal effective concentration EC50.\n\n## Discussion\n\nSingle molecule force extension experiments showed that the structurally similar aptamer domain of the adenine-sensing riboswitch folds co-transcriptional in a hierarchical manner and that the closure of the PA is the last step in accommodation of the ligand in the holo-form (Greenleaf et al., 2008). These findings and our proposed model are consistent as both conclude that the formation of the base-paired PA-stem is the committed-step in the off-pathway. Our experiments complement the previous data, however, by investigating the full-length riboswitch, which is important to map out the coexistence of ligand-dependent and ligand-independent functional off-states (Helmling et al., 2017). For this, we show that one of the two proposed functionally important conformational states of transcriptional riboswitches, the antiterminator state, represents a metastable conformation. The structural analysis using static and dynamic experiments performed close to the thermodynamically equilibrium indicate that an additional kinetic component is needed for adoption of the antiterminator conformation during transcription to allow full biological function of the riboswitch. Pausing during RNA synthesis and the inherent influence on the conformation of the nascent RNA chain is likely required for formation of the antiterminator. Without this additional kinetic component, the terminator would always form and transcription of the adjacent genes would never occur. This is reminiscent of the notion that transcriptional riboswitches are kinetically driven, as here the folding of the RNA has to compete with the speed of the transcribing polymerase. For the FMN switch from Bacillus subtilis, it was shown that FMN binding and subsequent folding into the terminator conformation requires pausing of the bacterial polymerase (Wickiser et al., 2005). Unexpectedly, our simulations show that without pausing, the antiterminator conformation is always adopted, independently of ligand concentration. Without pausing, effective regulation could not be achieved by the riboswitch because gene expression could not be turned off. Under these conditions, the thermodynamically favored terminator conformation is not adopted. The presence of the multiple pausing events between the formation of the binding competent aptamer and the transcription of the switching T-strand allow the terminator to form and fulfill its regulatory purpose. In addition we showed that the polymerases of B. subtilis and E. coli utilize different pausing sequences (e.g. RNA95 and RNA90) and therefore differently affect conformational change in the synthesized RNA. Thus, the effective biotechnological application of transcription-regulating riboswitches in heterologous organisms may require a match between polymerase pausing sequences and the conformational space of the riboswitch. Our work significantly extends our understanding of the previously introduced concept of kinetic control of riboswitches, and reveals the importance of matching discontinuous transcription rates to folding rates of transient conformations in order to facilitate RNA-based regulation of gene expression.\n\n## Materials\u00a0and\u00a0methods\n\n### RNA constructs\n\nRNA constructs GSWPATH, GSWPAT, GSWPA, dGSW and FSW were synthesised by in vitro transcription using T7 polymerase and purified as described (F\u00fcrtig et al., 2003). Antisense oligonucleotide S2trans was purchased from Thermo Fisher (Epsom, Great Britain), 7-deazaG147 modified S3trans was obtained from IBA (G\u00f6ttingen, Germany).\n\n### NMR-spectroscopic experiments\n\nUnless stated otherwise, all NMR experiments were performed in NMR buffer (2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate, pH 6.2) containing 10% or 5% D2O (static or kinetic experiments) on Bruker spectrometers (Rheinstetten, Germany) and analysed with Topspin (Bruker, Rheinstetten, Germany). Hypoxanthine was used as the better soluble ligand. Real-time NMR experiments were performed at 283 K utilising a rapid sample mixing device (Mok et al., 2003). Selectively 15N-U and 15N-G,U labelled GSWPA and non-labelled antisense oligonucleotides Ttrans and Htrans were used in combination with a pulse sequence containing an x-filter element to improve the spectral resolution. The RNA concentrations were chosen to be 150 \u00b5M after the mixing event; RNAs GSWPA, Ttrans and Htrans were in a 1:1(:1) ratio, 4 equivalents of hypoxanthine were added. Ligand binding and conformational rearrangements were monitored on the resolved imino proton resonances reporting on the corresponding interactions. Association of GSWPA and Ttrans was performed in a 1:2 ratio in 50 mM potassium chloride, 25 mM potassium phosphate, pH 6.2.\n\n### ITC\n\nITC measurements were performed with a Microcal VP ITC (Northampton, MA USA) at 283 K. A 217 \u00b5M solution of hypoxanthine as ligand was titrated to a 15 \u00b5M solution of RNA using 20\u201342 injections. Buffer conditions were 2 mM magnesium chloride, 50 mM potassium chloride, 25 mM potassium phosphate, pH 6.2. Data were analysed with the Origin ITC software (OriginLab, Northampton, MA USA) assuming a single binding site.\n\n### Simulations\n\nKinetic Markovian simulations were performed in order to evaluate the switching behaviour of the guanine sensing riboswitch under different transcription synthesis velocities. The model assumes N discrete states each representing a distinct length and associated conformation of the RNA chain. The kinetics between the states is described by first order rate equations with a single rate constant kij for the inter-state transition i to j. For the synthesis steps in the evaluated models, a transcription rate of 20 nt s\u22121 was assumed. The rates connecting conformational states by refolding reactions were employed as determined here from the real-time NMR measurements. Two sets of simulations were performed, in the first set the transcription rate was adjusted to the experimental value for transcription without any pausing events, while the second set simulated a pausing event between states PA/ligPA and PAT/ligPAT. Both sets of simulations were performed for absence and presence of cognate ligand. For the pausing events the transcription rate was set to the reduced transcription rate determined in the transcription assays. Thereby, the reduction of the transcription rate over the pause site corresponds to a factor of \u224870 in the simulations.\n\n### Expression and purification of the B. subtilis RNA-Polymerase\n\n#### Cell cultures\n\nThe B. subtilis MH5636 strain was grown in Bacillus growth medium (5 g tryptone, 10 g yeast extract, 5 g NaCl, and 10 g dextrose per liter) at 37\u00b0C with shaking at 200 rpm to a OD600 of 1.0\u20131.2. The cells were harvested by centrifugation with 5000 rpm for 15 min at 4\u00b0C. The pellet was frozen at \u221280\u00b0C.\n\n#### French press\n\nCells (60 grams) were thawed on ice and resuspended in 120 ml Lysis buffer (50 mM Tris-HCl pH 8.0, 2 mM EDTA, 230 mM NaCl, 5% glycerol, 1 mM \u00df-mercaptoethanol, 1 mM DTT, 1 mM phenylmethylsulfonyl fluoride, 1 ml of a protease inhibitor cocktail (31.2 mg/L benzamide, 0.5 mg/L chymostatin, 0.5 mg/L leupeptin, 0.1 mg/L aprotonin, and 1 mg/L antipain). After cells were fully resuspended, 0.1 mg/mL lysozyme was added to the cells on ice. The cell suspension was lysed in the cold using a French Press at 1000 PSI. The lysate was then centrifuged for 15 min with 12000 rpm at 4\u00b0C. The resulting supernatant was transferred to new centrifuge tubes and again centrifuged for 15 min with 12000 rpm at 4\u00b0C.\n\n#### Polyethyleneimine (PEI) and ammonium sulfate precipitation\n\nIn the cold, the supernatant was transferred to a 250 mL beaker and 8% PEI was added slowly (0.5 ml added every 5 min) with constant stirring to a final concentration of 0.6%. After the last PEI addition, the solution was stirred for an additional 30 min and then centrifuged for 15 min at 12000 rpm at 4\u00b0C.\n\nThe supernatant was removed and the PEI pellet was washed with 200 mL TGEZ (10 mM Tris-HCl pH 8.0, 0.1 mM EDTA, 5 \u00b5M ZnCl2, 5% glycerol, 5 mM \u00df-mercapthothanol)\u00a0+\u00a00.4 M NH4Cl. The pellet was properly dispensed in the buffer. The suspension was centrifuged for 15 min with 12000 rpm at 4\u00b0C.\n\nThe pellet was resuspended in 200 mL TGEZ\u00a0+1 M NH4Cl for protein elution. The pellet was completely resuspended in the buffer and then the solution was centrifuged for 15 min with 12000 rpm at 4\u00b0C.\n\nThe supernatant was transferred to a prechilled beaker. Ammonium sulfate was gradually added to a final concentration of 37% with constant stirring. After the last addition, the solution was stirred overnight at 4\u00b0C. In the morning, the solution was centrifuged for 15 min at 12000 rpm at 4\u00b0C.\n\n#### Ni2+ chromatography using His-Trap column\n\nThe pellet was resuspended in Loading buffer (25 mM Tris-HCl pH 8.0, 2 mM EDTA, 230 mM NaCl, 5% glycerol, 10 mM imidazole, and 5 mM \u00df-mercaptoethanol) and centrifuged at 12000 rpm for 15 min at 4\u00b0C. The resulting supernatant was then filtered and loaded onto a His-trap column equilibrated in the same buffer at a flow rate of 1 ml/min. After washing with ten column volumes, the protein was eluted using a gradient of 0.01 M to 0.5 M imidazole in the same buffer over 30 min, then from 0.5 M to 0.75 M over 10 min, and then 1 M imidazole. 2 ml fractions were collected.\n\nThe fractions were analyzed by 4\u201312% gradient PAGE and Bradford assay. The RNAP was eluted in fractions 7\u201323, which corresponded to buffer with 200\u2013850 mM imidazole. The combined fractions were dialyzed overnight in TGEZ\u00a0+100 mM NaCl\u00a0+5 mM DTT.\n\n#### Heparin Hi-Trap column\n\nThe dialyzed solution was filtered and then loaded onto the heparin column equilibrated in the same buffer. After washing with the same buffer for 10 column volumes, the protein was then eluted in the same buffer using a gradient to 1 M NaCl.\n\nProtein-containing fractions were pooled and dialyzed into storage buffer (10 mM Tris-HCl pH 8.0, 25% glycerol, 0.1 mM EDTA, 100 mM NaCl, 20 \u00b5M ZnCl2, 1 mM MgCl2, and 10 mM DTT) overnight. The total yield of the core enzyme (\u03b5260 = 210025 M\u22121.cm\u22121) was 5 mL of 0.83 mg/mL, 2.5 \u00b5M solution.\n\n### Purification of B. subtilis SigA\n\n#### Cell culture\n\nE. coli Rosetta 2 DE3 cells were transformed with plasmid pT7_Bs_sigma_A and selected on LB agar plates with antibiotics (20 \u00b5g/mL Kanamycin and 20 \u00b5g/mL Chloramphenicol) at 37\u00b0C. From this plate, a single transformant was grown at 37\u00b0C in 5 ml LB medium with antibiotics. This culture was then used to inoculate 2 liters of LB with antibiotics. The cultures were grown with shaking at 37\u00b0C to an OD600 of 0.5. The cultures were then shifted to 16\u00b0C and the overexpression of SigA (43 kDa) was induced by addition of 1 mM IPTG. Cultures were maintained at 16\u00b0C with shaking overnight. The cells were then harvested by centrifugation at 5000 rpm for 15 min at 4 C. The 8.5 g pellet was frozen at \u221280\u00b0C.\n\n#### Sonication\n\nCells were thawed on ice and resuspended in 35 ml SigA Lysis buffer (50 mM Tris-HCl pH 8.0, 2 mM EDTA, 233 mM NaCl, 5% glycerol, 5 mM \u00df-mercaptoethanol, 1 mM phenylmethylsulfonyl fluoride, and 350 ml of a protease inhibitor cocktail (31.2 mg/L benzamide, 0.5 mg/L chymostatin, 0.5 mg/L leupeptin, 0.1 mg/L aprotonin, and 1 mg/L antipain). The resuspended cells were transferred to a prechilled beaker and lysosyme was added (0.130 mg/mL) and the cells were incubated on ice for 15 min. Sodium deoxycholate was then added to 0.05% final and incubated on ice for an additional 15 min. Cells were then subjected to sonication at output 6 with a 20% duty cycle for 30 min. The sonicated lysate was then centrifuged for 15 min with 12000 rpm at 4\u00b0C.\n\n#### His-Trap purification\n\nThe SigA-containing cell lysate was filtered and then loaded onto a His-Trap column equilibrated in the same buffer plus 10 mM imidazole. After washing with ten column volumes, the protein was eluted using a gradient to the same buffer containing 1 M imidazole.\n\nThe protein-containing fractions were pooled and analyzed by 20% SDS-PAGE. As the fractions contained pure SigA, they were dialyzed into SigA Storage Buffer (10 mM Tris-HCl pH 8.0, 30% glycerol, 0.1 mM EDTA, 100 mM NaCl, 20 \u00b5M ZnCl2, 1 mM MgCl2, and 0.1 mM DTT)) overnight. The resulting protein solution contained 5 mL of 25 mg/mL or 590 \u00b5M (\u03b5260 = 24410 M\u22121.cm\u22121).\n\n### Time-resolved transcription assay\n\nThe DNA template used for time resolved transcription analysis was composed of either a modified native promoter (B. subtilis wt promoter with A-35T, T-35G, G-33A mutations) or the strong lambda pR promoter, followed by the GSW-coding sequence from the B. subtilis genome (GSW, Supplementary Information Supplementary Sequence 1). For halted complex formation (HC), 25 nM DNA template and 40 nM RNAP holoenzyme (expression and purification shown in SI) were incubated in transcription buffer (20 mM Tris-OAc pH 7.7, 40 mM KOAc, 5 mM Mg(OAc)2, and 5 mM \u00df-mercaptoethanol) with 10 \u00b5M ATP and UTP, 7.5 \u00b5M GTP, and 150 \u00b5M ApA (for the B. subtilis GSW promoter) or ApU dinucleotide (for the lambda pR promoter). For transcriptions using the E.cRNAP, 10 \u00b5Ci GTP* were used whereas transcriptions using the BsRNAP used 20 \u00b5Ci GTP*. The HC of EcRNAP seem to be more stable than the ones with BsRNAP. Additional GTP* and therefore increased incorporation of 32P-labeled nucleotides into the nascent RNA, made more of the fewer transcribed RNAs visible on the PAGEs. Ligand (Hypoxanthine, Sigma Aldrich) was added to a final concentration of 200 \u00b5M. Purified rNTPs were obtained from Promega and dinucleotides were obtained from TriLink BioTechnologies. Synchronized transcription was re-started by adjustment of the ATP, CTP, and UTP concentrations to 150 \u00b5M and the GTP concentration to 10 \u00b5M, and the addition of heparin to a final concentration of 100 \u00b5g/mL. Transcription was stopped at different time points by the addition of an equal volume of 2X STOP buffer (100 mM Tris-HCl pH 8.3, 100 mM Boric acid, 40 mM EDTA, 7 M urea). For determination of the transcription rates at high NTP-concentration, the NTP-concentration was raised to 1 mM. After heating to 95\u00b0C for 2 min, the reactions were analyzed by 8% PAGE. The gels of the time-resolved transcription assays show several expected RNA signals (Figure 4): pausing 1 fragment (PS1, 110 nt), pausing 2 fragment (PS2, 141 nt), terminated transcript (Gsw[PA][TH], 164 nt), and full\u2013length transcript (FL, 214 nt) as well as two additional pausing events at 77 nt (RNA77) and 95 nt (RNA95) for E. coli RNAP mediated transcriptions and 77 nt (RNA77) and 90 nt (RNA90) for B. subtilis RNAP mediated transcription. The positions of the RNA species were as estimated by comparison on high-resolution denaturing polyacrylamide gels of transcripts to RNA sequence ladders generated using 3' deoxyNTPs. To do this, halted ECs were first generated as described above. To generate sequence ladders, transcription was restarted by addition of ATP, CTP, GTP, and UTP at 250 \u00b5M each, and one 3\u2032-deoxyNTP in each of 4 separate reactions at 240 \u00b5M dGTP, 300 \u00b5M dATP, 350 \u00b5M dCTP, or 400 \u00b5M dUTP, followed by addition of heparin at 100 \u00b5g/ml. After incubation for 10 min at 37\u00b0C, samples were mixed with an equal volume of 2X STOP buffer before being electrophoresed next to transcription products obtained by regular in vitro transcription as described above. To quantitate the relative amounts of the different RNA species, the signal intensities were plotted against time and analyzed using Lab Figure 1D software (INTAS, G\u00f6ttingen, Germany) and Image Quant 5.2 (GE, Freiburg, Germany). The mean apparent transcription rates kapp for FL, Gsw[PA][TH], PS2 and PS1 were derived from the exponential plots as shown in by Ederth et al. (2006)). The signal intensities of RNA95, RNA90 and RNA77 were plotted against time and revealed that these fragments were transcribed with apparent first-order kinetics. The kapp was derived similar as previously described, by determining the average appearance rate for the first values. Knowing the length of the RNA fragment, the rates in nt s-1 were then calculated from the kapp (Supplementary file 1). Determination of t1/2, \u03c4, and kp were performed according to Landick et al. (1996).\n\n### Regulation of \u00df-galactosidase reporter gene expression by the wildtype GSW (wt) and pause site mutants (M1 \u2013 M4)\n\nFor reporter gene assays, the 5\u2019-UTR of the B. subtilis xpt-pbuX operon (encompassing nt \u2212120 to\u00a0+196 relative to the transcription start site) was fused directly upstream of the lacZ reporter gene of plasmid pDG268 (Antoniewski et al., 1990). Pause site mutants M1 \u2013 M4 were introduced by PCR mutagenesis. The resulting plasmids were integrated into the amyE locus of B. subtilis 168. The respective strains were grown in modified CSK minimal medium (Martin-Verstraete et al., 1990) with increasing concentration of guanine. After 5 hr growth, \u03b2-galactosidase activity was determined as follows: 100 \u00b5L culture aliquots were incubated at 301 K in buffer (60 mM Na2HPO4, 40 mM NaH2PO4, 10 mM KCl, 1 mM MgCl2 and 50 mM 2-mercaptoethanol) with lysozyme and Triton-X treatment. 200 \u03bcL of o-nitrophenyl-\u03b2-D-galactoside (4 mg mL\u22121) was added, and the sample was incubated at 301 K. The reaction was stopped by addition of 0.5 mL of 1 M Na2CO3 upon appearance of a yellowish colouration. The time for colour change was noted and absorbance at 420 nm and 550 nm was measured. \u00df-galactosidase activity was calculated in Miller units, i.e. 1000 x [A420 \u2013 1.75 x A550] / [t x V x A600]. Three independent cultures were measured in parallel. The measurements were repeated twice.\n",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "a9ad8f65-5351-430c-af1e-ea216f54a29d",
+      "submission_id": "29e030d9-3263-4a5a-b440-8575074a540d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lewis E Kay, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21297.017](https://doi.org/10.7554/eLife.21297.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Pausing guides RNA folding to populate transiently stable RNA structures for riboswitch-based transcription regulation\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and four reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Kathleen Hall (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript describes a detailed set of biochemical, biophysical and biological analyses to understand the mechanism used by a guanine riboswitch to control gene expression. The work involves a series of ligand binding studies and folding kinetics that were carried out using truncated riboswitches. This study expands on the original observations that some riboswitches are influenced more by kinetic processes (speed of aptamer folding, rate constant for ligand association, speed of RNA synthesis) than by thermodynamic equilibria. The NMR study in this manuscript is well executed, in particular the characterization of secondary structures of sub-state conformations. One of the reviewer\u2019s comments on the beautiful NMR data and the creative use of imino protons to monitor structure formation. Indeed, all of the reviewers were impressed with the NMR work.\n\nEssential revisions:\n\n1) All of the reviewers were concerned about the fact that the authors did not succeed in establishing how their results go beyond what is currently understood and also that they have not tied their results with those published previously. For example, the authors claim that \"Up to now, a high-resolution structural depiction of the concerted process of synthesis and ligand-induced restructuring of the regulatory RNA is missing.\". However, there is excellent single-molecule biophysics data from the laboratory of Steven Block for adenine riboswitches (a close relative of guanine riboswitches) (Science [2012], 338:397). This previous paper should be cited and the authors should compare their findings with this prior work. In particular, what is new from this study? Work from the Micura and Block labs that leads to similar conclusions about the importance of kinetics should also be cited. The authors also state that the RNA \"\u2026exclusively populates the functional off-state but cannot switch to the on-state, regardless of the presence or absence of ligand.\". However, similar claims have been made for FMN riboswitches (Wickiser et al., 2005) and probably others. This brings up an important point: maybe many riboswitches do not switch between the on- and off-states, but choose a folding pathway based on ligand binding early after the full aptamer has been made. The authors should consider this possibility. As indicated above, the mechanism of the guanine-sensing riboswitch described here is very similar to that of the FMN riboswitch, including the number of pause sites and half time of a pause site. However, in this manuscript, little is discussed regarding the mechanism of the FMN riboswitch and there is no comparison between the two riboswitches. The authors need to provide more detailed discussions about the similarity between the two riboswitches and again why this work goes beyond what is currently understood.\n\n2) Related to point 1 is that there is currently no Discussion. Addressing point 1 could be done in a Discussion format although the authors must clarify the novelty in the Introduction as well more clearly.\n\n3) The authors use separate oligonucleotides that act as surrogates for the actual base-paired interactions that occur in a unimolecular riboswitch. It is not clear that these interactions will have kinetic properties that accurately reflect analogous interactions that occur in the natural construct during RNA synthesis. If not, then the author's conclusions (such as those made in the eighth paragraph of the Results) might be flawed.\n\n4) Related somewhat to 3: The associations between PA and T and between T and H are bimolecular reactions in the NMR experiments. However, during co-transcriptional folding, these associations are intramolecular reactions. It is not clear in the manuscript whether the authors have considered differences between these two types of reactions and corrected the NMR-determined associations rates for simulation. Further, the authors did not provide clear descriptions in this manuscript how the simulation was performed, how the pausing was implemented, and what rates were used. For example, t0,1~5s and t0,2~61s were labeled for ligand binding at the aptamer in Figure 5a. These values seem to be calculated from NMR determined k1 and k2 values. Again since the association rate is ligand concentration dependent was it corrected for simulation?\n\n5) One of the major concerns of the current study is how transcription intermediates and pause sites were identified. It is possible that a transcription intermediate gives an aborted product in multi-round transcription, but the appearance of an aborted product in multi-round transcription can be a result of many other factors. The appropriate approach for identifying a transcription intermediate is to measure accumulation in time-resolved single-round transcription assays, such as what the authors have done to confirm pause site 2 (PS2). In this regard, in contrast to PS2, the identity of pause site 1 (PS1) is not clear, as no transcription intermediate at PS1 was detected in the time-resolved single-round transcription assay. However, in this manuscript, PS1 has been a critical intermediate for designing truncated riboswitch constructs, performing kinetic measurements, and simulating co-transcriptional pathways (see below). If PS1 is a true pause site, the authors need to clearly confirm the presence of PS1 and characterize its pausing properties.\n\n6) Similar to the above concern, it is not appropriate to compare aborted products in multi-round transcription reactions to evaluate transcription intermediates between E. coli transcription and B. subtilis transcription. For example, there are five major products in the E. coli transcription, but there are least eight major products shown in the B. subtilis transcription. If aborted products were all transcription intermediates, this would suggest there are many more pause sites for the B. subtilis polymerase than for the E. coli polymerase, which is not likely. To properly evaluate transcription systems, the authors need to perform time-resolved single-round transcription assays and compare differences in transcription intermediates.\n\n7) In the figure for simulation, the authors labeled pausing at PS1 but did not label pausing at PS2. In the manuscript, the authors specifically discussed pausing at PS1 but did not discuss pausing at PS2. The experimental data identified PS2 but did not identify PS1. It is not correct to simply assume the presence of PS1 and ignore PS2. In addition, it is also not clear whether the half time at PS2 was used in the simulation, or whether it was used for PS1.\n\n8) Similar to the above concern, since PS1 was not identified in the in vitro assay, while mutating PS1 sequences do affect in vivo gene expression, it is difficult to evaluate these influences as mutation-induced changes in pausing or other factors, such as folding. The authors need to clearly confirm the presence of PS1 and may also need to characterize pausing properties of these mutations.\n\n9) Regarding the Bacillus and E. coli RNAPs: These enzymes are quite different, and they are not considered to be indistinguishable on the basis of their pause kinetics. However, if the authors have new information on their comparative properties, they need to reference it. The authors are using E. coli RNAP on a B subtilis riboswitch, which is quite ok, but they need to be clear that they are measuring properties of EC RNAP.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"Pausing guides RNA folding to populate transiently stable RNA structures for riboswitch-based transcription regulation\" for consideration by eLife. Your revised article has been favorably evaluated by John Kuriyan as the Senior Editor, Lewis Kay as the Reviewing Editor, and two reviewers. Your paper has been sent for re-review to two of the previous experts who now feel that the work is far improved and suitable for publication at eLife.\n\nBoth reviewers feel that the work represents an important quantitative advance in the description of transcriptional regulation by riboswitches and that the data is at much higher resolution than earlier studies. One of the reviewers comments about the utility of the simulations of Figure 5 that summarize the importance of ligand binding and pausing to the general function of riboswitches. Additional experiments are not required, but both reviewers do provide suggestions for improvements that you will wish to consider including aspects that would clarify some of the points made in the paper. Please modify your text to address the concerns of the reviewers. We expect to make a decision on this manuscript without needing to re-engage the reviewers.\n\n1) The authors wrote in their response that there are no quantitative models to describe transcriptional regulation by riboswitches. This statement is not correct. While the kinetic model established in the current study represents one of the few quantitative models and has its own merits in advancing the understanding of transcriptional regulation by riboswitches, a similar regulatory model with quantitative kinetic parameters has been previously reported for the FMN riboswitch (Wickiser et al., 2005). The authors need to revise their Introduction to be consistent with the literature.\n\n2) One major concern of the original manuscript was the application of multi-round transcription assays to evaluate transcription intermediates. In the revised manuscript, the authors have performed time-resolved single-round transcription assays to properly establish transcription intermediates. However, despite having these appropriate measurements, it is somewhat surprising that the authors have kept applying the multi-round transcription data to evaluate transcription intermediates (Figure 1E). The authors need to update the text and figure with proper data from their new single-round transcription assays.\n\n3) In the revised manuscript (Results, fifth paragraph), the authors changed the length of one of the transcription intermediates from the original 125 nucleotides to 140 nucleotides. Since this RNA fragment was proposed to represent pause site 2 (PS2), this new length will mark PS2 around nucleotide A150, which is different from PS2 at nucleotide U141 shown in both Figure 1A and Figure 4. The authors need to make sure the location of PS2 is consistent throughout the manuscript.\n\n4) Similar to the above concern, the labels for PS1 and PS2 are confusing in the new Figure 4. For example, PS1 is labeled as 110; however, the RNA band marked as PS1 clearly migrates between the 110 and 123 bands of the sequencing ladder. In addition, the RNA band marked as 141:PS2 migrates right below the 147 band of the sequencing ladder in the Bs RNAP assay. However, in the Ec RNAP assay, there are no apparent RNA bands at similar locations; instead, there is a major RNA band that seems to migrate between the 123 and 147 bands of the sequencing ladder. The authors need to have proper labels for the transcription intermediates in both the Ec RNAP assay and the Bs RNAP assay.\n\n5) In the new supplementary Table 8 (Supplementary file 1), the authors reported transcription rates and pause site characteristics from time-resolved transcription assays. While the majority of the reported values are reasonable, some measurements are quite confusing. For example, the average appearance time of PS2 (141 nts) is shown to be 3.0 seconds in the third table. However, this time value is even less than the average appearance time of the shorter RNA77 (77 nts) fragment (13.2 seconds). In addition, an appearance time of 3.0 seconds is also less than the shortest time point (5 seconds) of the time-resolved assay. Another outlier is the average appearance time of Gsw-PATH, which is shown to be 775.9 seconds in the fourth table. However, it can be seen in Figure 4 that the RNA band for Gsw-PATH starts appearing around 20 \u2013 30 seconds for the Bs RNAP assay. In addition, this appearance time is more than the longest time point (600 seconds) of the time-resolved assay. The authors need to go through the tables and make sure these values are properly reported. If these outliers are authentic, the authors need to comment on them.\n\n6) One other concern of the original manuscript was the lack of details for the co-transcriptional folding simulation. While the authors have provided more details in their revised manuscript, a key aspect of the simulation remains not clear. The authors need to describe in the method how pausing was implemented in the simulation.\n",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "327290af-4960-4383-a304-80ff5a97bdab",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C1",
+      "claim": "The guanine-sensing riboswitch from Bacillus subtilis (GSW) negatively regulates the transcription of the xpt-gene by the premature termination of RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The guanine-sensing riboswitch from Bacillus subtilis (GSW) negatively regulates the transcription of the xpt-gene by the premature termination of RNA synthesis (Mandal et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mandal et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f49a306b-272a-4635-95c8-e0bb264f3f97",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C2",
+      "claim": "The full-length guanine-sensing riboswitch adopts the terminator conformation irrespective of the presence or absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the presence or absence of the cognate ligand, the RNA adopts a single conformation in which the terminator helix (TH) is formed as inferred from NMR signals (for assignment, see Figure 1 and Figure 1\u2014figure supplement 1) arising from the stable GU base-pairs (U129-G147 and U130-G146) (Figure 1c,d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR spectroscopy data showing stable GU base-pairs characteristic of the terminator helix",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "008712c8-08d3-40f9-89db-fc04fefd715b",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C3",
+      "claim": "The terminator conformation in the full-length construct is stabilized by at least \u0394\u0394G > 8 kJ mol\u22121 compared to the antiterminator conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the terminator conformation in the full-length construct is the only detectable state regardless of the presence or absence of ligand, it must be stabilised by at least \u25b3\u25b3G > 8 kJ mol\u22121 compared to the antiterminator conformation at a NMR signal-to-noise greater than 10:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from NMR detection limits and the absence of observable antiterminator signals",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "2d94cda8-c104-40bc-a370-b145ca58dec7",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C4",
+      "claim": "Multiple transcription intermediates accumulate during synthesis of the full-length riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "In multiple round transcription reactions, we detected several distinct shorter RNA products (Figure 1e). Three of the detected fragments correspond to the aptamer domain (nucleotides 10\u201389), to the prematurely terminated form (nucleotides 10\u2013164), and to the full-length of the mRNA-5'-UTR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PAGE analysis showing distinct RNA fragments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7447705d-bedf-479c-aa03-11d8c1b0a822",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C5",
+      "claim": "Two additional RNA fragments of 100 and 140 nucleotides represent canonical transcriptional pause sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two additional fragments of 100 and 140 nucleotides are detected. These latter RNAs exhibit 3'-terminal stretches of U-residues and therefore represent canonical transcriptional pause sites (Landick, 2006; Larson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by detection of U-rich sequences characteristic of pause sites and citations to literature on pause sites",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "fc6468c3-97f6-4419-bd90-efc783389beb",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C6",
+      "claim": "The truncated riboswitch GSWPAT populates two equally intense conformations GSW[PA]T and GSWP[AT] that differ in the formation of mutually exclusive helices PA or AT.",
+      "claim_type": "EXPLICIT",
+      "source": "For GSWPAT, we observed two equally intense sets of NMR signals from two long-lived conformations GSW[PA]T and GSWP[AT] (Figure 1b,c) that differ with regard to the formation of the two mutually exclusive helices PA or AT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR spectroscopy showing two sets of signals with equal intensity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "c6e7b01e-140c-4433-8ad8-f8ab0f3ea804",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C7",
+      "claim": "Addition of ligand to GSWPAT shifts the conformational equilibrium towards GSW[PA]T.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of ligand, we detect ligand binding and subsequent shifting of the conformational equilibrium towards GSW[PA]T (Figure 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data showing changes in signal intensities upon ligand addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "8a1f73cf-9404-4e4e-a1d1-1d4fe017acbb",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C8",
+      "claim": "The antiterminator conformation is a thermodynamically stable state of the GSWPAT transcription intermediate in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to the full-length riboswitch, the antiterminator conformation representing the functional on-state is a thermodynamically stable state (GSWP[AT]) of this transcription intermediate (GSWPAT) in the absence of ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from NMR data showing equal populations of both conformations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "3e21bbb0-f27f-435f-bad9-b08374f93417",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C9",
+      "claim": "Addition of equimolar amounts of Ttrans to GSWPA without ligand leads to formation of the antiterminator conformation mimic containing helix AT.",
+      "claim_type": "EXPLICIT",
+      "source": "Without ligand, addition of equimolar amounts of Ttrans to GSWPA led to formation of the antiterminator conformation mimic containing helix AT and the strand P is unpaired (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by isotope-filter NMR experiments showing formation of AT helix",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "a1efc770-6675-40ec-be27-e2a982e73ba2",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C10",
+      "claim": "The GSWPA-Ttrans complex is disrupted by the addition of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "This GSWPA-Ttrans complex was disrupted by the addition of ligand (Figure 2d), restoring formation of helix PA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data showing dissociation of AT helix and reformation of PA helix upon ligand addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7b5e8de9-5c53-4388-93c4-4f436b814b8b",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C11",
+      "claim": "The presence of ligand stabilizes GSWPA so that subsequent addition of Ttrans does not disrupt helix PA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of ligand stabilised GSWPA so that subsequent addition of Ttrans did not disrupt helix PA in the aptamer domain within the GSWPA-ligand-complex and formation of the antiterminator helix was suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR experiments showing PA helix remains intact when ligand is present before Ttrans addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "779488f6-9f12-4442-884d-e1836d43085b",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C12",
+      "claim": "Ligand binding to GSWPA represents the structural decision point.",
+      "claim_type": "EXPLICIT",
+      "source": "From these findings, we can conclude that ligand binding to GSWPA represents the structural decision point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from NMR experiments showing that ligand binding determines whether AT or PA helix forms",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "0fe460a5-5e77-430f-bbc4-d3b9af3421c1",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C13",
+      "claim": "Addition of Htrans to the antiterminator conformation induces a conformational switch characterized by formation of the terminator helix TH and helix PA, regardless of ligand presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the presence or the absence of ligand, addition of Htrans to the antiterminator conformation in the GSWPA-Ttrans complex induced a conformational switch characterized by the formation of the terminator helix TH and the helix PA (Figure 2e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR experiments showing formation of TH upon Htrans addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4ad3c44f-6528-4d80-aba2-f4b0e1934a50",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C14",
+      "claim": "Ligand binding to GSWPA is fast with a rate constant k1 of (2.4 \u00b1 0.3) \u00d7 10\u22121 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ligand binding to GSWPA either in the absence or in presence of the terminator helix (Figure 3f and g) was fast, with a k1 of (2.4 \u00b1 0.3) 10\u22121 s\u22121, and induced a slower tertiary structure rearrangement (k2 = [1.8 \u00b1 0.2) 10\u22122 s\u22121] within the aptamer, consistent with previous experiments (Vogel and Jensen, 1994; Reeder and Hawley, 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "bf84cd12-c82c-4203-a638-d86792a6aa16",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C15",
+      "claim": "Ligand binding to GSWPA induces a slower tertiary structure rearrangement with k2 = (1.8 \u00b1 0.2) \u00d7 10\u22122 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ligand binding to GSWPA either in the absence or in presence of the terminator helix (Figure 3f and g) was fast, with a k1 of (2.4 \u00b1 0.3) 10\u22121 s\u22121, and induced a slower tertiary structure rearrangement (k2 = [1.8 \u00b1 0.2) 10\u22122 s\u22121] within the aptamer, consistent with previous experiments (Vogel and Jensen, 1994; Reeder and Hawley, 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "2356b574-4369-4b2c-b5df-f60b8181a920",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C16",
+      "claim": "Formation of the terminator helix from single strands is rapid with k1 = (1.4 \u00b1 0.8) \u00d7 10\u22121 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent formation of the terminator helix from single strands was also rapid (k1 = [1.4 \u00b1 0.8] 10\u22121 s\u22121; Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "79fe3494-802a-4d13-88b1-4eea4213bc05",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C17",
+      "claim": "In the absence of ligand, GSWPA and Ttrans anneal rapidly to form the antiterminator complex with k = (9 \u00b1 5) \u00d7 10\u22123 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligand, GSWPA and Ttrans anneal rapidly to form the antiterminator complex (k = [9 \u00b1 5] 10\u22123 s\u22121; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7b465aee-3e8d-4435-be1c-36a1e4c90c4a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C18",
+      "claim": "The dissociation of the antiterminator helix AT is rate-limiting and slow with k1 = (0.5 \u00b1 0.2) \u00d7 10\u22123 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, the dissociation of the antiterminator helix AT was rate-limiting and slow (k1 = [0.5 \u00b1 0.2] 10\u22123 s\u22121; k2 = (1.1 \u00b1 0.4) 10\u22124 s\u22121[Ttrans intrinsic unfolding, Figure 3\u2014figure supplement 1]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements when Htrans is added to GSWPA-Ttrans complex",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4835dcec-fb8d-4159-9b18-0861e6530a46",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C19",
+      "claim": "The dissociation of helix AT is accelerated by the presence of ligand with k = (0.89 \u00b1 0.09) \u00d7 10\u22123 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the dissociation of helix P4 was accelerated by the presence of ligand, but in a concentration-independent manner above equimolar ratios (Figure 3\u2014figure supplement 2; k = [0.89 \u00b1 0.09] 10\u22123 s\u22121; Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements at different ligand concentrations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "0bf8bef2-9bd5-4343-800f-99985b716090",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C20",
+      "claim": "The AT conformation represents a meta-stable state that slowly refolds into the thermodynamically stable terminator state.",
+      "claim_type": "EXPLICIT",
+      "source": "From these kinetic data (Supplementary file 1, Figure 3i), we conclude that the AT conformation represents a meta-stable state that slowly refolds into the thermodynamically stable terminator state (which represents the state of lowest free energy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from kinetic data showing slow dissociation of AT helix",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "ed80f600-6920-436b-8cf6-944f4f7aea5d",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C21",
+      "claim": "The dissociation of PA is slow compared to the polymerase transcription speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation of PA is slow compared to the polymerase transcription speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of measured kinetic rates with transcription rates",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "6828f1a2-9df9-4e49-a9ae-30b16a999b53",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C22",
+      "claim": "Transcriptional resting states are required to slow transcription to ensure sufficient time for the refolding of conformations [PA]T to P[AT] to enable riboswitch function.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, during mRNA synthesis, transcriptional resting states are required to slow transcription to ensure sufficient time for the refolding of conformations [PA]T to P[AT] to enable riboswitch function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of refolding kinetics with transcription rates",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4e58f7d6-e938-4ce3-8722-8537dd5c3f2e",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C23",
+      "claim": "Transcription rates between 12 to 90 nucleotides per second have been reported in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription rates between 12 to 90 nucleotides per second have been reported in prokaryotes (Adelman et al., 2002; Vogel and Jensen, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on transcription rates",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4cde36c6-3f48-4a03-b84a-880e895db3e0",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C24",
+      "claim": "A U6-stretch (U107-U112) is located between the aptamer domain and the terminator helix (pause site 1, PS1).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the sequence of GSW, a U6-stretch (U107-U112) is suspiciously located between the aptamer domain and the terminator helix (pause site 1, PS1) and between the A and T stretches of the antiterminator (U135-U141, pause site 2, PS2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis of the riboswitch",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7117345c-d16c-4d75-8860-0d6ad8b40670",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C25",
+      "claim": "A U-stretch (U135-U141) is located between the A and T stretches of the antiterminator (pause site 2, PS2).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the sequence of GSW, a U6-stretch (U107-U112) is suspiciously located between the aptamer domain and the terminator helix (pause site 1, PS1) and between the A and T stretches of the antiterminator (U135-U141, pause site 2, PS2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis of the riboswitch",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "cc2210e6-39ad-45ae-aa95-f1a87a9d325e",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C26",
+      "claim": "Seven transcribed RNAs could be identified in time-resolved single-round transcription assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven transcribed RNAs could be identified, suggesting that the formation of the shorter products after transcription of the aptamer domain and PS1 accumulate at a later time point during the overnight multi-round transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PAGE analysis of transcription products",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "2e938242-0449-4956-a28a-f580e71a834f",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C27",
+      "claim": "The riboswitch maintains its ligand-response function during in vitro transcription assays, with termination efficiency increased by 24.8% for EcRNAP and by 30.3% for BsRNAP upon ligand addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The data indicate that the riboswitch maintains its ligand-response function during the in vitro transcription assays, as the termination efficiency is increased by 24.8% for EcRNAP and by 30.3% for BsRNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantification of terminated versus full-length transcripts in presence and absence of ligand",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "8576981f-eba9-4e9b-9302-9d2aae01e471",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C28",
+      "claim": "Both E. coli and B. subtilis RNAPs pause longer at PS1 than at PS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the intensity of PS1 is stronger for BsRNAP transcription, indicating that PS1 has a higher influence on the elongation complex for the BsRNAP. In addition, the determined pausing-parameters (Supplementary file 1) show that both RNAPs pause longer at PS1 than at PS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of pausing parameters from transcription assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "2770a60c-e389-414a-8c97-afc0f184f291",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C29",
+      "claim": "The apparent transcription rates range from 0.4 \u00b1 0.1 nt s\u22121 to 47.0 \u00b1 53.3 nt s\u22121 for different transcription intermediates at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent transcription rates were determined to range from 0.4 \u00b1 0.1 nt s\u22121 and 2.0 \u00b1 0.5 nt s\u22121 (FL and GSWPATH) to 1.3 \u00b1 0.6 nt s\u22121 and 47.0 \u00b1 53.3 nt s\u22121 for the synthesis of the shorter transcription intermediates at 37\u00b0C (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-resolved transcription assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "be2f7919-0b6a-49da-bf3d-3c5bebfcd9bc",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C30",
+      "claim": "Upon ligand addition, the apparent transcription rate decreased by at least a factor of two for PS2 and PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ligand addition, the apparent transcription rate decreased by at least a factor of two for PS2 and PS1 but was nearly identical for RNA95/RNA90 and RNA77.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of transcription rates with and without ligand",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7a7650d8-b4b5-4f47-a564-cced6e8861b5",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C31",
+      "claim": "Multiple pausing events during transcription drastically decrease the apparent transcription rates of the longer RNAs FL and GSWPATH.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the multiple pausing events during transcription drastically decrease the apparent transcription rates of the longer RNAs FL and GSWPATH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of transcription rates for different length transcripts",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "6ab91ab8-b134-47dd-ad8f-84aadf5cbd4a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C32",
+      "claim": "Without pausing of the transcription machinery, riboswitch synthesis is fast compared to its own refolding reactions and the GSW does not reach a substantial population of conformations with the formed terminator.",
+      "claim_type": "EXPLICIT",
+      "source": "Without pausing of the transcription machinery, riboswitch synthesis is fast compared to its own refolding reactions from apo- to holo-conformations. Therefore, the GSW does not reach a substantial population of conformations with the formed terminator [TH] and the polymerase escapes termination (Figure 5f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic Markov-model simulations using experimentally determined rates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "6a7b38df-873f-46b8-8adf-ac3929b32389",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C33",
+      "claim": "Pausing of transcription at pause site 1 opens a time window that allows for refolding of the riboswitch from the apo- to the holo-form.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pausing of transcription at pause site 1 opens a time window that allows for refolding of the riboswitch from the apo- to the holo-form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by kinetic simulations showing increased off-state population with pausing",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f3c1eba9-1d9b-4ea5-84a5-c2c4466484e4",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C34",
+      "claim": "A reduced rate of transcription after formation of the aptamer nucleotides due to pausing at PS1 results in higher population of off-states during synthesis before the polymerase leaves the point of decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a reduced rate of transcription after formation of the aptamer nucleotides of the riboswitch due to pausing at PS1 in conjunction with a comparative slow conformational transition from [PA]T to P[AT] results in higher population of off-states during synthesis before the polymerase leaves the point of decision (Figure 5h,i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic simulations combining transcription and refolding rates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "1a45de71-6aa0-4caa-9791-0eb883d36fcc",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C35",
+      "claim": "Successive disruptive mutations (M1-M3) of PS1 correlate with the loss of regulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Successive disruptive mutations (M1-M3) of PS1 correlated with the loss of regulation in vivo (Figure 6a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03b2-galactosidase reporter assays in B. subtilis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4d49865d-f081-4a62-bb66-6b2ca1ef68e0",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C36",
+      "claim": "Addition of further U residues to PS1 (M4) increased riboswitch efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "and the addition of further U residues to PS1 (M4) increased riboswitch efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by \u03b2-galactosidase reporter assays showing increased repression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7297da47-8297-4945-91b3-4da88c019c9d",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C37",
+      "claim": "The loss of pause site integrity reduced the switching efficiency, whereas extended pausing of the RNA polymerase led to increased repression of reporter gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring the dose-dependence of the wild-type riboswitch compared to the M3 and M4 mutants indicated that the loss of pause site integrity reduced the switching efficiency, whereas extended pausing of the RNA polymerase led to increased repression of reporter gene expression (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response curves from \u03b2-galactosidase reporter assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "d5abb5ed-80a3-400c-b79c-8fa2f6fac228",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C38",
+      "claim": "Pausing of the polymerase at PS1 temporarily decouples the continuous synthesis of the downstream antiterminator sequence, assists in folding of the aptamer domain and allows for sufficient time for the ligand to bind at the structural decision point.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, pausing of the polymerase at PS1 temporarily decouples the continuous synthesis of the downstream antiterminator sequence, assists in folding of the aptamer domain and allows for sufficient time for the ligand to bind at the structural decision point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from combination of kinetic data, simulations, and in vivo mutagenesis results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "ed4981df-e9d3-44b2-85d3-349910a7738a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C39",
+      "claim": "The closure of the PA helix is the last step in accommodation of the ligand in the holo-form of the adenine-sensing riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Single molecule force extension experiments showed that the structurally similar aptamer domain of the adenine-sensing riboswitch folds co-transcriptional in a hierarchical manner and that the closure of the PA is the last step in accommodation of the ligand in the holo-form (Greenleaf et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Greenleaf et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "eab8c70a-4298-48bc-a6a3-e204f4ac1320",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C40",
+      "claim": "The formation of the base-paired PA-stem is the committed-step in the off-pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings and our proposed model are consistent as both conclude that the formation of the base-paired PA-stem is the committed-step in the off-pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with previous single-molecule studies and current kinetic data",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "beccdf61-420c-4f6b-b04d-7bee6464bdad",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C41",
+      "claim": "One of the two proposed functionally important conformational states of transcriptional riboswitches, the antiterminator state, represents a metastable conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we show that one of the two proposed functionally important conformational states of transcriptional riboswitches, the antiterminator state, represents a metastable conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural and kinetic NMR data showing slow refolding from AT to terminator state",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "5055096e-ac92-4ca9-bf44-d9ecf822d61e",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C42",
+      "claim": "Without pausing, the antiterminator conformation is always adopted, independently of ligand concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, our simulations show that without pausing, the antiterminator conformation is always adopted, independently of ligand concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by kinetic Markov-model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f10f3ee5-4700-4deb-bc41-65e630112c5e",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C43",
+      "claim": "Without pausing, effective regulation could not be achieved by the riboswitch because gene expression could not be turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "Without pausing, effective regulation could not be achieved by the riboswitch because gene expression could not be turned off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from simulations showing antiterminator always forms without pausing",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "b839a176-9fbe-4a2f-b50b-472e781e6f1a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C44",
+      "claim": "The polymerases of B. subtilis and E. coli utilize different pausing sequences (e.g. RNA95 and RNA90).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition we showed that the polymerases of B. subtilis and E. coli utilize different pausing sequences (e.g. RNA95 and RNA90) and therefore differently affect conformational change in the synthesized RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transcription assays showing different pause sites for the two polymerases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "abee2994-a3fd-4201-8131-8a4cf9430044",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C45",
+      "claim": "The effective biotechnological application of transcription-regulating riboswitches in heterologous organisms may require a match between polymerase pausing sequences and the conformational space of the riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the effective biotechnological application of transcription-regulating riboswitches in heterologous organisms may require a match between polymerase pausing sequences and the conformational space of the riboswitch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that different polymerases use different pause sites",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "fbe95671-2730-4f2e-99a3-a4b01ed8e7cc",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C46",
+      "claim": "Riboswitches are cis-regulatory RNA elements controlling cellular processes, in particular transcription and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Riboswitches are cis-regulatory RNA elements controlling cellular processes, in particular transcription and translation (Mironov et al., 2002; Nahvi et al., 2002; Mandal et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to foundational riboswitch literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "459081ef-9daf-4031-9a7c-93d335914c79",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C47",
+      "claim": "Riboswitches exert their function via a conformational switch between mutually exclusive base-paired structures induced by binding to a low-molecular weight ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "They exert their function via a conformational switch between mutually exclusive base-paired structures. This conformational switch is induced by binding to a low-molecular weight ligand (Batey et al., 2004; Noeske et al., 2005; Serganov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies of riboswitches",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "aa7c135d-46c0-4659-86e7-df3bc5e78f5d",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C48",
+      "claim": "The synthesis of RNA is not performed at a constant speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthesis of the RNA is not performed at a constant speed (Maizels, 1973; Darlix and Horaist, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to early transcription studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "5517bbfa-1d9b-4431-bd3a-4100c69d7bf1",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C49",
+      "claim": "Slow conformational changes lead to a variation of the transcription speed of the elongation complex between 2\u201330 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, slow conformational changes, from a more competent to a less competent transcription state, lead to a variation of the transcription speed of the elongation complex (EC) between 2\u201330 nt/s (Davenport et al., 2000; Neuman et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies measuring transcription rates",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "1367f166-ce60-4f8f-9f56-45fbaa273359",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C50",
+      "claim": "Elemental pausing occurs frequently, but typically lasts only for 1\u20136 s on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, transcription rates vary during transcription. This elemental pausing occurs frequently, but typically lasts only for 1\u20136 s on average, making the overall transcription movement the sum of more and less competent transcription states averaged over the number of RNA polymerases (RNAP) molecules observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about transcriptional pausing",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "52b04303-4030-4f18-a47f-87767bae07ab",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C51",
+      "claim": "At pause-sites, the RNAP speed decreases by a factor of 100 compared to its maximal transcription speed.",
+      "claim_type": "EXPLICIT",
+      "source": "At pause-sites, the RNAP speed decreases by a factor of 100 compared to its maximal transcription speed (max. 75 nt/s, measured on a specialized DNA template) (Vogel and Jensen, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vogel and Jensen, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "1341bcd2-3bac-4051-9349-f6705f627332",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C52",
+      "claim": "Pausing can facilitate the folding of certain RNA structures and allow a stabilizing interaction between the nascent RNA and the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing can also facilitate the folding of certain RNA structures and allow a stabilizing interaction between the nascent RNA and the transcription machinery (Pan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pan et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "4d8c71ab-b01d-403e-8b64-3df7460fb230",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C53",
+      "claim": "Pausing can be important for effective riboswitch-mediated regulation where co-transcriptional folding is influenced by the transcription speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing can be important for effective riboswitch-mediated regulation where co-transcriptional folding is influenced by the transcription speed (Wickiser et al., 2005; Perdrizet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on FMN and B12 riboswitches",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "1e5b52d2-547e-4942-a47d-3ddfe3d25fd0",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C54",
+      "claim": "The use of a mutant RNA polymerase with deficient pause behavior caused the btuB riboswitch to adopt a non-native structure and to be deficient in ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The modulation of the available conformational space by altering the transcriptional speed was demonstrated for the btuB riboswitch where the use of a mutant RNA polymerase with deficient pause behavior caused the riboswitch to adopt a non-native structure and to be deficient in ligand binding (Perdrizet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perdrizet et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "d2eb2f0b-a28d-4a46-a934-ab997524ddd2",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C55",
+      "claim": "For the guanine-sensing xpt-pbuX riboswitch from Bacillus subtilis, the conformation of the full-length transcripts is static and exclusively populates the functional off-state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that for the guanine-sensing xpt-pbuX riboswitch from Bacillus subtilis, the conformation of the full-length transcripts is static: it exclusively populates the functional off-state but cannot switch to the on-state, regardless of the presence or absence of ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR data showing only terminator conformation in full-length construct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7fb97a4d-a2ff-41f9-84a5-0d3000f00681",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C56",
+      "claim": "Only the combined matching of transcription rates and ligand binding enables transcription intermediates to undergo ligand-dependent conformational refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that only the combined matching of transcription rates and ligand binding enables transcription intermediates to undergo ligand-dependent conformational refolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combination of kinetic measurements, simulations, and in vivo experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f141e842-fe52-4736-973f-a7fd57f1fcca",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C57",
+      "claim": "GSWPA, GSWPAT, and full-length GSW bind ligand with similar affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GSW fragments bind the ligand with similar affinities as the full-length riboswitch suggesting formation of the unperturbed aptamer domain (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ITC measurements showing similar Kd values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "76e8e952-7dc6-45cb-9329-042fa91d7fc2",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C58",
+      "claim": "59 NMR signals could be detected and resolved in the real-time NMR experiments using selective labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing the above described labeling strategy, we were able to resolve the NMR signals from the ligand, the acceptor domain and the associating or dissociating single RNA strand. In total, 59 signals could be detected, and the reported kinetics have been measured in triplicate experiments and averaged over structural elements in the riboswitch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by real-time NMR experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "58d83a4c-510f-4bd7-9a2a-70d5640723cb",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C59",
+      "claim": "The kinetics reported were measured in triplicate experiments and averaged over structural elements in the riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 59 signals could be detected, and the reported kinetics have been measured in triplicate experiments and averaged over structural elements in the riboswitch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "0d087988-ebae-4968-81e8-d758716d35f7",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C60",
+      "claim": "When ligand binding and annealing of Htrans occur simultaneously, the formation of the terminator conformation is described by two rate constants: k1 = (2 \u00b1 1) \u00d7 10\u22122 s\u22121 and k2 = (1.2 \u00b1 0.4) \u00d7 10\u22123 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the latter conditions, the formation of the terminator conformation was described by two rate constants, k1 = (2 \u00b1 1) 10\u22122 s\u22121 reporting on the ligand-induced refolding of the aptamer domain and k2 = (1.2 \u00b1 0.4) 10\u22123 s\u22121 characterising the rate-limiting dissociation of helix AT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by real-time NMR kinetic measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "ef3fc7ef-2cd4-456f-8992-f655d1e16647",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C61",
+      "claim": "Hypoxanthine was used as the ligand because it is better soluble than guanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypoxanthine was used as the better soluble ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "efa3732b-2d92-47d7-95ae-b30c8d317bdc",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C62",
+      "claim": "The kinetic Markov-model simulations used a transcription rate of 20 nt/s based on the apparent rates determined for B. subtilis polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine the mutual influence of transcription speed and refolding kinetics on the population of intermediate riboswitch conformations we performed simulations based on a kinetic Markov-model (Prinz et al., 2011) using the experimentally determined refolding and transcription rates of 20 nt/s. This value is based on the apparent rates of transcription determined in the transcription assays for B. subtilis polymerase but taking into account the cellular concentrations of nucleotides, that are approx. 10 times higher than those used in the in vitro transcription reactions (Buckstein et al., 2008) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental transcription data adjusted for cellular NTP concentrations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "17abca7e-fa63-4e98-bddb-0f64dcf878b3",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C63",
+      "claim": "Cellular concentrations of nucleotides are approximately 10 times higher than those used in the in vitro transcription reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is based on the apparent rates of transcription determined in the transcription assays for B. subtilis polymerase but taking into account the cellular concentrations of nucleotides, that are approx. 10 times higher than those used in the in vitro transcription reactions (Buckstein et al., 2008) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Buckstein et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "53b5cdf8-3e2b-4499-9025-cd3016a8c779",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C64",
+      "claim": "In the absence of ligand, RNA synthesis is fast enough to allow for formation of the functional on-state apo-form conformation P[AT] both with and without transcriptional pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligand, there is no major change as the intermediate conformations occur in a linear succession. In both cases, with and without transcriptional pausing, RNA synthesis is fast enough to allow for formation of the functional on-state apo-form conformation P[AT] (Figure 5b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "c1b2448e-a928-42e8-9bca-869f027c7569",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "claim_id": "C65",
+      "claim": "Refolding to the thermodynamic most stable functional off-state conformation [PA][TH] in its apo-form only occurs after the polymerase has passed the regulatory point of decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Refolding to the thermodynamic most stable functional off-state conformation [PA][TH] in its apo-form only occurs after the polymerase has passed the regulatory point of decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from kinetic simulations showing timing of conformational transitions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ad158879-071c-42a3-8ba8-320678a6890b",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The full-length guanine-sensing riboswitch (GSWPATH) adopts exclusively the terminator conformation regardless of ligand presence, with the terminator state stabilized by at least \u0394\u0394G > 8 kJ mol\u207b\u00b9 compared to the antiterminator conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C55 are well-supported by NMR spectroscopy data showing stable GU base-pairs characteristic of the terminator helix in both apo and holo forms. The thermodynamic stability estimate is appropriately inferred from NMR detection limits (signal-to-noise >10:1). This represents a key structural finding that the full-length construct is kinetically trapped.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "d20c86c6-e5fa-411e-9230-8229b55e2fab",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The truncated riboswitch GSWPAT populates two equally intense conformations (GSW[PA]T and GSWP[AT]) in the absence of ligand, with ligand addition shifting the equilibrium toward GSW[PA]T, demonstrating that the antiterminator conformation is thermodynamically stable in this intermediate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by NMR data showing two sets of signals with equal intensity and ligand-dependent shifts. This contrasts with the full-length construct and identifies GSWPAT as a regulatory intermediate capable of conformational switching. The experimental evidence directly demonstrates the equal population of both states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "9340208d-dc3a-4d59-9f47-daae06a93203",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ligand binding to the GSWPA aptamer domain represents the structural decision point, as ligand presence determines whether the antiterminator (AT) or aptamer closing helix (PA) forms upon addition of the T-strand sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are supported by isotope-filter NMR experiments showing that ligand binding to GSWPA before T-strand addition prevents AT helix formation, while ligand addition after AT formation disrupts the complex. The conclusion that GSWPA represents the decision point is well-supported by the sequential addition experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "972d5252-9782-4eba-b77d-a0aad604ce50",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Real-time NMR kinetic measurements reveal that ligand binding to GSWPA is fast (k\u2081 = 0.24 s\u207b\u00b9) followed by slower tertiary rearrangement (k\u2082 = 0.018 s\u207b\u00b9), while dissociation of the antiterminator helix AT is slow (k\u2081 = 0.0005 s\u207b\u00b9) and rate-limiting, though accelerated by ligand presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 and C60 are supported by real-time NMR kinetic measurements with triplicate experiments averaging multiple signals (59 total). The rate constants are reported with appropriate error estimates. However, the authors acknowledge that the trans experimental design may overestimate some rates, though this does not affect their fundamental conclusions about the slow refolding kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "b5ae1b6f-3d50-47e3-9036-8b6d6d075f14",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The antiterminator conformation represents a metastable state that slowly refolds to the thermodynamically stable terminator state, with dissociation of PA being slow compared to polymerase transcription speed, necessitating transcriptional pausing for riboswitch function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C41 are supported by kinetic data showing slow AT dissociation rates compared to typical transcription rates. The inference that pausing is required is logical given the mismatch between refolding kinetics and transcription speed. The metastable nature of the antiterminator is a key mechanistic insight supported by the kinetic measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f639b5dc-c522-457c-8cd2-a758506231c2",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple transcription intermediates accumulate during riboswitch synthesis, including two canonical pause sites (PS1 at U107-U112 and PS2 at U135-U141) identified by U-rich sequences, with seven distinct RNA products detected in time-resolved transcription assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C24-C26 are supported by PAGE analysis showing distinct RNA fragments and sequence analysis identifying U-rich regions characteristic of pause sites. The identification of seven transcribed RNAs in single-round assays provides direct experimental evidence for these intermediates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Time-resolved transcription assays demonstrate that the riboswitch maintains ligand-response function in vitro, with termination efficiency increased by 24.8% (EcRNAP) and 30.3% (BsRNAP) upon ligand addition, and both polymerases pause longer at PS1 than PS2, with apparent transcription rates ranging from 0.4 to 47 nt s\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by quantitative analysis of transcription products showing ligand-dependent changes in termination efficiency and pausing parameters. The wide range of apparent transcription rates reflects the cumulative effect of multiple pausing events. The experimental design appropriately measures these parameters, though the large error for some rates (e.g., 47.0 \u00b1 53.3 nt s\u207b\u00b9) indicates high variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "7c6230f5-9da2-4658-b434-aa4801f7ad22",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Kinetic Markov-model simulations using experimentally determined rates demonstrate that without transcriptional pausing, the antiterminator conformation is always adopted regardless of ligand concentration, preventing effective regulation, while pausing at PS1 opens a time window allowing ligand-dependent refolding to the terminator state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C42-C43, and C62-C65 are supported by kinetic simulations based on experimentally measured rates. The simulation parameters are justified (20 nt/s transcription rate adjusted for cellular NTP concentrations). The conclusion that pausing is essential for regulation is a logical outcome of the simulation, though the model makes simplifying assumptions about the discrete states and first-order kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "5065a89f-a5b1-44c9-b06b-37ec0c15e9b7",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo \u03b2-galactosidase reporter assays show that successive disruptive mutations of PS1 correlate with loss of regulation, while addition of U residues increases riboswitch efficiency, validating that pausing at PS1 is essential for riboswitch function by allowing sufficient time for ligand binding at the structural decision point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by in vivo reporter assays showing dose-dependent effects of pause site mutations on riboswitch function. The correlation between pause site integrity and switching efficiency provides experimental validation of the model. The conclusion that PS1 pausing allows time for ligand binding is well-supported by the combination of in vitro kinetics, simulations, and in vivo functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "83c36dc4-0907-495b-bd98-3511f4f144f7",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "E. coli and B. subtilis RNA polymerases utilize different pausing sequences (RNA95 vs RNA90), suggesting that effective biotechnological application of transcription-regulating riboswitches in heterologous organisms may require matching polymerase pausing sequences to riboswitch conformational space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by transcription assays showing different pause sites for the two polymerases. However, claim C45 is more speculative, representing an inference about biotechnological applications rather than a directly tested result. The suggestion is reasonable given the data but represents a hypothesis for future work rather than a demonstrated finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "c9e0ea44-d900-4cbd-89f4-514bb5373254",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Addition of the H-strand sequence (Htrans) to the antiterminator conformation induces formation of the terminator helix (TH) and helix PA regardless of ligand presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 is supported by NMR experiments showing TH formation upon Htrans addition. This demonstrates that once the terminator sequence is available, it forms the thermodynamically stable terminator structure, consistent with the overall model of kinetic control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f93afe10-5833-459b-a6af-571b9c50c6ab",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GSWPA, GSWPAT, and full-length GSW bind ligand with similar affinities, suggesting formation of unperturbed aptamer domains in the truncated constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by ITC measurements showing similar Kd values across constructs. This validates that the truncated constructs used for kinetic studies maintain proper aptamer structure and ligand binding capability, supporting the relevance of the truncation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "3ca72da5-b4ec-4be4-8763-30a123642790",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Real-time NMR experiments using selective isotope labeling resolved 59 signals, with kinetics measured in triplicate and averaged over structural elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe the experimental methodology and are supported by the description of the isotope-filter approach and data analysis. This demonstrates appropriate experimental rigor with replication and averaging across multiple reporter signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "df1c0308-afb4-4020-a26a-88c389b3169d",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The formation of the PA helix is the committed step in the off-pathway, consistent with previous single-molecule studies on the adenine-sensing riboswitch showing that PA closure is the last step in ligand accommodation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 appropriately cite prior work (Greenleaf et al., 2008) and show consistency between the current findings and previous single-molecule studies. The conclusion that PA formation is the committed step is supported by both the cited work and the current kinetic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing that riboswitches are cis-regulatory elements functioning via conformational switches, that transcription is not constant speed but involves pausing, and that pausing can be important for riboswitch function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C46-C54 represent background knowledge supported by appropriate citations to established literature. These claims provide context for the current work and are accurately represented based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "8a9d32c6-9cd9-48be-8e07-8bce08328890",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Transcription rates of 12-90 nt/s have been reported in prokaryotes, and cellular NTP concentrations are approximately 10-fold higher than in vitro conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C63 are supported by appropriate citations and are used to contextualize the experimental transcription rates and justify simulation parameters. These represent established knowledge relevant to interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "1544bef1-0606-4d43-ac7d-702ecee931b4",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Only the combined matching of transcription rates and ligand binding enables transcription intermediates to undergo ligand-dependent conformational refolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 represents the central conclusion of the manuscript, supported by the combination of structural characterization, kinetic measurements, simulations, and in vivo validation. This integrative conclusion is well-supported by the multiple lines of evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    },
+    {
+      "id": "f51b6e1e-70d6-4b81-93d7-5cef5a7b4153",
+      "content_id": "d49bc386-cd0d-4146-aa3a-4ff2038e6d79",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Hypoxanthine was used as the ligand because it is more soluble than guanine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is a methodological detail stated in the Materials and methods. While this substitution is reasonable for solubility reasons, the authors do not explicitly validate that hypoxanthine and guanine produce identical regulatory behavior, which could be a minor limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:19:19.747109Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f49a306b-272a-4635-95c8-e0bb264f3f97",
+      "result_id": "ad158879-071c-42a3-8ba8-320678a6890b"
+    },
+    {
+      "claim_id": "008712c8-08d3-40f9-89db-fc04fefd715b",
+      "result_id": "ad158879-071c-42a3-8ba8-320678a6890b"
+    },
+    {
+      "claim_id": "d2eb2f0b-a28d-4a46-a934-ab997524ddd2",
+      "result_id": "ad158879-071c-42a3-8ba8-320678a6890b"
+    },
+    {
+      "claim_id": "fc6468c3-97f6-4419-bd90-efc783389beb",
+      "result_id": "d20c86c6-e5fa-411e-9230-8229b55e2fab"
+    },
+    {
+      "claim_id": "c6e7b01e-140c-4433-8ad8-f8ab0f3ea804",
+      "result_id": "d20c86c6-e5fa-411e-9230-8229b55e2fab"
+    },
+    {
+      "claim_id": "8a1f73cf-9404-4e4e-a1d1-1d4fe017acbb",
+      "result_id": "d20c86c6-e5fa-411e-9230-8229b55e2fab"
+    },
+    {
+      "claim_id": "3e21bbb0-f27f-435f-bad9-b08374f93417",
+      "result_id": "9340208d-dc3a-4d59-9f47-daae06a93203"
+    },
+    {
+      "claim_id": "a1efc770-6675-40ec-be27-e2a982e73ba2",
+      "result_id": "9340208d-dc3a-4d59-9f47-daae06a93203"
+    },
+    {
+      "claim_id": "7b5e8de9-5c53-4388-93c4-4f436b814b8b",
+      "result_id": "9340208d-dc3a-4d59-9f47-daae06a93203"
+    },
+    {
+      "claim_id": "779488f6-9f12-4442-884d-e1836d43085b",
+      "result_id": "9340208d-dc3a-4d59-9f47-daae06a93203"
+    },
+    {
+      "claim_id": "4ad3c44f-6528-4d80-aba2-f4b0e1934a50",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "bf84cd12-c82c-4203-a638-d86792a6aa16",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "2356b574-4369-4b2c-b5df-f60b8181a920",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "79fe3494-802a-4d13-88b1-4eea4213bc05",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "7b465aee-3e8d-4435-be1c-36a1e4c90c4a",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "4835dcec-fb8d-4159-9b18-0861e6530a46",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "0d087988-ebae-4968-81e8-d758716d35f7",
+      "result_id": "972d5252-9782-4eba-b77d-a0aad604ce50"
+    },
+    {
+      "claim_id": "0bf8bef2-9bd5-4343-800f-99985b716090",
+      "result_id": "b5ae1b6f-3d50-47e3-9036-8b6d6d075f14"
+    },
+    {
+      "claim_id": "ed80f600-6920-436b-8cf6-944f4f7aea5d",
+      "result_id": "b5ae1b6f-3d50-47e3-9036-8b6d6d075f14"
+    },
+    {
+      "claim_id": "6828f1a2-9df9-4e49-a9ae-30b16a999b53",
+      "result_id": "b5ae1b6f-3d50-47e3-9036-8b6d6d075f14"
+    },
+    {
+      "claim_id": "beccdf61-420c-4f6b-b04d-7bee6464bdad",
+      "result_id": "b5ae1b6f-3d50-47e3-9036-8b6d6d075f14"
+    },
+    {
+      "claim_id": "2d94cda8-c104-40bc-a370-b145ca58dec7",
+      "result_id": "f639b5dc-c522-457c-8cd2-a758506231c2"
+    },
+    {
+      "claim_id": "7447705d-bedf-479c-aa03-11d8c1b0a822",
+      "result_id": "f639b5dc-c522-457c-8cd2-a758506231c2"
+    },
+    {
+      "claim_id": "4cde36c6-3f48-4a03-b84a-880e895db3e0",
+      "result_id": "f639b5dc-c522-457c-8cd2-a758506231c2"
+    },
+    {
+      "claim_id": "7117345c-d16c-4d75-8860-0d6ad8b40670",
+      "result_id": "f639b5dc-c522-457c-8cd2-a758506231c2"
+    },
+    {
+      "claim_id": "cc2210e6-39ad-45ae-aa95-f1a87a9d325e",
+      "result_id": "f639b5dc-c522-457c-8cd2-a758506231c2"
+    },
+    {
+      "claim_id": "2e938242-0449-4956-a28a-f580e71a834f",
+      "result_id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a"
+    },
+    {
+      "claim_id": "8576981f-eba9-4e9b-9302-9d2aae01e471",
+      "result_id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a"
+    },
+    {
+      "claim_id": "2770a60c-e389-414a-8c97-afc0f184f291",
+      "result_id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a"
+    },
+    {
+      "claim_id": "be2f7919-0b6a-49da-bf3d-3c5bebfcd9bc",
+      "result_id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a"
+    },
+    {
+      "claim_id": "7a7650d8-b4b5-4f47-a564-cced6e8861b5",
+      "result_id": "7bb4e238-f031-4244-aa5a-1fd5b80b250a"
+    },
+    {
+      "claim_id": "6ab91ab8-b134-47dd-ad8f-84aadf5cbd4a",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "6a7b38df-873f-46b8-8adf-ac3929b32389",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "f3c1eba9-1d9b-4ea5-84a5-c2c4466484e4",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "5055096e-ac92-4ca9-bf44-d9ecf822d61e",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "f10f3ee5-4700-4deb-bc41-65e630112c5e",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "efa3732b-2d92-47d7-95ae-b30c8d317bdc",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "53b5cdf8-3e2b-4499-9025-cd3016a8c779",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "c1b2448e-a928-42e8-9bca-869f027c7569",
+      "result_id": "7c6230f5-9da2-4658-b434-aa4801f7ad22"
+    },
+    {
+      "claim_id": "1a45de71-6aa0-4caa-9791-0eb883d36fcc",
+      "result_id": "5065a89f-a5b1-44c9-b06b-37ec0c15e9b7"
+    },
+    {
+      "claim_id": "4d49865d-f081-4a62-bb66-6b2ca1ef68e0",
+      "result_id": "5065a89f-a5b1-44c9-b06b-37ec0c15e9b7"
+    },
+    {
+      "claim_id": "7297da47-8297-4945-91b3-4da88c019c9d",
+      "result_id": "5065a89f-a5b1-44c9-b06b-37ec0c15e9b7"
+    },
+    {
+      "claim_id": "d5abb5ed-80a3-400c-b79c-8fa2f6fac228",
+      "result_id": "5065a89f-a5b1-44c9-b06b-37ec0c15e9b7"
+    },
+    {
+      "claim_id": "b839a176-9fbe-4a2f-b50b-472e781e6f1a",
+      "result_id": "83c36dc4-0907-495b-bd98-3511f4f144f7"
+    },
+    {
+      "claim_id": "abee2994-a3fd-4201-8131-8a4cf9430044",
+      "result_id": "83c36dc4-0907-495b-bd98-3511f4f144f7"
+    },
+    {
+      "claim_id": "0fe460a5-5e77-430f-bbc4-d3b9af3421c1",
+      "result_id": "c9e0ea44-d900-4cbd-89f4-514bb5373254"
+    },
+    {
+      "claim_id": "f141e842-fe52-4736-973f-a7fd57f1fcca",
+      "result_id": "f93afe10-5833-459b-a6af-571b9c50c6ab"
+    },
+    {
+      "claim_id": "76e8e952-7dc6-45cb-9329-042fa91d7fc2",
+      "result_id": "3ca72da5-b4ec-4be4-8763-30a123642790"
+    },
+    {
+      "claim_id": "58d83a4c-510f-4bd7-9a2a-70d5640723cb",
+      "result_id": "3ca72da5-b4ec-4be4-8763-30a123642790"
+    },
+    {
+      "claim_id": "ed4981df-e9d3-44b2-85d3-349910a7738a",
+      "result_id": "df1c0308-afb4-4020-a26a-88c389b3169d"
+    },
+    {
+      "claim_id": "eab8c70a-4298-48bc-a6a3-e204f4ac1320",
+      "result_id": "df1c0308-afb4-4020-a26a-88c389b3169d"
+    },
+    {
+      "claim_id": "327290af-4960-4383-a304-80ff5a97bdab",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "fbe95671-2730-4f2e-99a3-a4b01ed8e7cc",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "459081ef-9daf-4031-9a7c-93d335914c79",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "aa7c135d-46c0-4659-86e7-df3bc5e78f5d",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "5517bbfa-1d9b-4431-bd3a-4100c69d7bf1",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "1367f166-ce60-4f8f-9f56-45fbaa273359",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "52b04303-4030-4f18-a47f-87767bae07ab",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "1341bcd2-3bac-4051-9349-f6705f627332",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "4d8c71ab-b01d-403e-8b64-3df7460fb230",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "1e5b52d2-547e-4942-a47d-3ddfe3d25fd0",
+      "result_id": "19cdc09f-a8c2-4c5a-89d3-cce5fbb4a14a"
+    },
+    {
+      "claim_id": "4e58f7d6-e938-4ce3-8722-8537dd5c3f2e",
+      "result_id": "8a9d32c6-9cd9-48be-8e07-8bce08328890"
+    },
+    {
+      "claim_id": "17abca7e-fa63-4e98-bddb-0f64dcf878b3",
+      "result_id": "8a9d32c6-9cd9-48be-8e07-8bce08328890"
+    },
+    {
+      "claim_id": "7fb97a4d-a2ff-41f9-84a5-0d3000f00681",
+      "result_id": "1544bef1-0606-4d43-ac7d-702ecee931b4"
+    },
+    {
+      "claim_id": "ef3fc7ef-2cd4-456f-8992-f655d1e16647",
+      "result_id": "f51b6e1e-70d6-4b81-93d7-5cef5a7b4153"
+    }
+  ],
+  "comparisons": []
+}

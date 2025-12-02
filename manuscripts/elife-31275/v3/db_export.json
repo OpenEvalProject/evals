@@ -1,0 +1,1994 @@
+{
+  "submission": {
+    "id": "b61438ab-b1ec-4827-be89-5e49c1d7ee6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:49:09.650448Z",
+    "updated_at": "2025-12-01T23:49:09.650448Z"
+  },
+  "content": [
+    {
+      "id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "submission_id": "b61438ab-b1ec-4827-be89-5e49c1d7ee6f",
+      "content_type": "manuscript",
+      "content_text": "# SPIN1 promotes tumorigenesis by blocking the uL18 (universal large ribosomal subunit protein 18)-MDM2-p53 pathway in human cancer\n\n## Authors\n\n- Ziling Fang<sup>1</sup>\n- Bo Cao<sup>1</sup>\n- Jun-Ming Liao<sup>1</sup>\n- Jun Deng<sup>1</sup>\n- Kevin D Plummer<sup>1</sup>\n- Peng Liao<sup>1</sup>\n- Tao Liu<sup>1</sup>\n- Wensheng Zhang<sup>3</sup>\n- Kun Zhang<sup>3</sup>\n- Li Li<sup>4</sup>\n- David Margolin<sup>5</sup>\n- Shelya X Zeng<sup>1</sup> \u2020\n- Jianping Xiong<sup>6</sup> \u2020\n- Hua Lu<sup>1</sup> ([ORCID: 0000-0002-9285-7209](https://orcid.org/0000-0002-9285-7209)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology Tulane University School of Medicine New Orleans United States\n2. School of Dentistry at Case Western University Cleveland United States\n3. Department of Computer Science, Bioinformatics Facility of Xavier RCMI Center of Cancer Research Xavier University of Louisiana New Orleans United States\n4. Laboratory of Translational Cancer Research Ochsner Clinical Foundation New Orleans United States\n5. Department of Colon and Rectal Surgery Ochsner Clinical Foundation New Orleans United States\n6. Department of Oncology The First Affiliated Hospital of Nanchang University Nanchang China\n\n\u2020 Corresponding author\n\n## Abstract\n\nRibosomal proteins (RPs) play important roles in modulating the MDM2-p53 pathway. However, less is known about the upstream regulators of the RPs. Here, we identify SPIN1 (Spindlin 1) as a novel binding partner of human RPL5/uL18 that is important for this pathway. SPIN1 ablation activates p53, suppresses cell growth, reduces clonogenic ability, and induces apoptosis of human cancer cells. Mechanistically, SPIN1 sequesters uL18 in the nucleolus, preventing it from interacting with MDM2, and thereby alleviating uL18-mediated inhibition of MDM2 ubiquitin ligase activity toward p53. SPIN1 deficiency increases ribosome-free uL18 and uL5 (human RPL11), which are required for SPIN1 depletion-induced p53 activation. Analysis of cancer genomic databases suggests that SPIN1 is highly expressed in several human cancers, and its overexpression is positively correlated with poor prognosis in cancer patients. Altogether, our findings reveal that the oncogenic property of SPIN1 may be attributed to its negative regulation of uL18, leading to p53 inactivation.\n\n## Introduction\n\nThe well-documented tumor suppressor p53, referred as \u2018the guardian of the genome\u2019, is activated upon exposure to a myriad of cellular stresses. While loss of wild-type p53 causes fatal damages to the genome, it is not surprising that the TP53 gene is mutated in more than 50% human cancers, and the functions of p53 are often impeded through various mechanisms in the remainder (Levine and Oren, 2009). One predominant negative regulator of p53 is the E3 ubiquitin ligase MDM2, an oncoprotein that conceals the N-terminal transcriptional activation (TA) domain of p53 (Oliner et al., 1993) and deactivates this protein by either abrogating its transcriptional activity, or inducing its nuclear export and ubiquitination (Oliner et al., 1993; Haupt et al., 1997; Kubbutat et al., 1997; Fuchs et al., 1998). A plethora of cellular stress could stabilize p53 by blocking the MDM2-p53 feedback loop (Kim et al., 2014). For example, p19ARF inhibits MDM2-mediated p53 ubiquitination and proteolysis by associating with MDM2 (Zhang et al., 1998).\n\nAnother pathway is the so-called ribosomal proteins (RPs)-MDM2-p53 pathway (Zhang and Lu, 2009; Warner and McIntosh, 2009). Accumulating evidence has continuingly verified this pathway as an emerging mechanism for boosting p53 activation in response to ribosomal stress or nucleolar stress over the past decade (Sun et al., 2007; Sun et al., 2008; Dai et al., 2004; He et al., 2016; Bai et al., 2014). Ribosomal stress is often triggered by aberrant ribosome biogenesis caused by nutrient deprivation, inhibition of rRNA synthesis, or malfunction of ribosomal proteins and/or nucleolar proteins (Zhang and Lu, 2009; Warner and McIntosh, 2009; Sun et al., 2007; Sun et al., 2008; Fumagalli et al., 2009; Bhat et al., 2004). Earlier studies showed that disruption of ribosomal biogenesis induces translocation of a series of ribosomal proteins, including uL18 (human RPL5), uL5 (human RPL11), uL14 (human RPL23), eS7 (human S7) and uS11 (human S14) (Ban et al., 2014), from the nucleolus to the nucleoplasm and bind to MDM2, blocking its ability to ubiquitinate p53 and consequently stabilizing p53 to maintain cellular homeostasis (Dai et al., 2004; Lohrum et al., 2003; Dai and Lu, 2004; Zhou et al., 2013; Chen et al., 2007; Zhang et al., 2003; Jin et al., 2004). Although there are a few proteins that have been identified to regulate this RPs-MDM2-p53 pathway, such as PICT-1 inhibition of uL5 (Sasaki et al., 2011; Uchi et al., 2013) and SRSF1 activation of uL18 (Fregoso et al., 2013), it still remains to\u00a0be\u00a0determined if there are more proteins that can regulate the RPs-MDM2-p53 pathway. In this present study, we identified SPIN1 as a new uL18 inhibitory regulator.\n\nSPIN1, a new member of the SPIN/SSTY family, was originally identified as a highly expressed protein in ovarian cancer (Yue et al., 2004). The oncogenic potential of SPIN1 was later supported by the observation that overexpression of SPIN1 increases transformation and tumor growth ability of NIH3T3 cells (Gao et al., 2005). Signaling pathways responsible for SPIN1 functions include PI3K/Akt, Wnt and RET that are highly relevant to tumorigenesis (Chen et al., 2016; Wang et al., 2012; Franz et al., 2015). In addition, SPIN1 acts as a reader of histone H3K4me3 and stimulates the transcription of ribosomal RNA-encoding genes (Bae et al., 2017; Su et al., 2014; Wang et al., 2011), suggesting its role in rRNA synthesis.\n\nIn screening uL18-associated protein complexes using co-immunoprecipitation followed by mass spectrometry, we identified SPIN1 as one of the potential uL18 binding proteins. We confirmed the specific interaction of SPIN1 with uL18, but not with uL5 or uL14, and found out that by binding to uL18, SPIN1 prevents the inhibition of MDM2 by uL18 and promotes MDM2-mediated p53 ubiquitination and degradation. Also, SPIN1 knockdown induced ribosomal stress by facilitating the release of ribosome-free uL18 or uL5, accompanying p53 activation. Furthermore, SPIN1 knockdown inhibited cell proliferation and induced apoptosis in a predominantly p53-dependent manner in vitro and in vivo, consequently suppressing tumor growth in a xenograft model. Therefore, these results for the first time demonstrate that SPIN1 can regulate the RP-MDM2-p53 pathway by directly interacting with uL18, and suggest SPIN1 as a potential molecule target in this pathway for developing anticancer therapy in the future.\n\n## Results\n\n### SPIN1 interacts with uL18\n\nOur and others\u2019 studies previously demonstrated that uL18 can stabilize p53 by binding to MDM2 and inhibiting its E3 ligase activity toward p53 (Dai and Lu, 2004; Bursa\u0107 et al., 2012). In order to identify potential upstream regulators that may modulate the uL18-MDM2-p53 circuit, we performed co-immunoprecipitation (co-IP) using HEK293 cells that stably expressed Flag-uL18 with the anti-Flag antibody, and the co-immunoprecipitated proteins were cut out for mass spectrometric (MS) analysis (Figure 1A). The MS results not only revealed several previously described p53 regulatory proteins, such as MYBBP1A, PRMT5 and SRSF1, as uL18 binding proteins (Table 1), but also identified SPIN1 as a novel uL18-binding protein candidate that was previously shown to play a role in tumorigenesis and rDNA transcription (Wang et al., 2012, 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig1-v3.jpg)\n\n**Figure 1.:** (A) Identification of SPIN1 as a candidate of uL18 binding protein by immunopurification and mass spectrometric analysis. Lysates from HEK 293 cells were immunoprecipitated with the anti-Flag antibody. Bound proteins were visualized on a coomassie staining SDS-PAGE gel. Several bands were excised and subjected to mass spectrometry. One of them was identified as SPIN1 (Spindlin 1). The polypeptides identified from these bands are listed in Table 1. (B) and (C) SPIN1 interacts with uL18. (B) HCT116p53-/- cells were transfected with plasmids encoding Myc-SPIN1 and Flag-uL18, and 48 hr later cell lysates were collected for immunoprecipitation (IP) analysis using the anti-Flag antibody. (C) HCT116p53-/- cells were transfected with plasmids encoding Flag-SPIN1 and GFP-uL18 for 48 hr and harvested for IP/WB analysis with indicated antibodies. (D) The interaction between endogenous SPIN1 and uL18. The HEK 293 cell lysates were immunoprecipitated with anti-SPIN1 or control immunoglobulin G (IgG), followed by WB analysis with anti-SPIN1, anti-uL18 and anti-uL5. (E) SPIN1 was specifically co-immunoprecipitated by uL18, but not uL5 or uL14. H1299 cells were co-transfected with Myc-SPIN1 and Flag-uL18, Flag-uL5 or Flag-uL14 as indicated and subjected to IP with the anti-Flag antibody, followed by WB analysis with indicated antibodies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** HEK293 cells were transfected with plasmids encoding Myc-SPIN1 and Flag-uL18, and 48 hr later cell lysates were collected for IP-WB analysis using anti-Flag antibody.\n\n**Table 1.**\n uL18-associated polypeptides identified from mass spectrometry analysis of proteins as shown in Figure 1A.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gel slice number</th>\n      <th>Protein</th>\n      <th>Accession</th>\n      <th>Molecular weight</th>\n      <th>Score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P1</td>\n      <td>Myb-binding protein 1A (MYBBP1A)</td>\n      <td>gi|6959304</td>\n      <td>149727</td>\n      <td>149</td>\n    </tr>\n    <tr>\n      <td>P5</td>\n      <td>Protein arginine N-methyltransferase 5 (PRMT5)</td>\n      <td>gi|2323410</td>\n      <td>72685</td>\n      <td>121</td>\n    </tr>\n    <tr>\n      <td>P7</td>\n      <td>60S ribosomal protein L5 uL18(RPL5)</td>\n      <td>gi|14591909</td>\n      <td>34569</td>\n      <td>1014</td>\n    </tr>\n    <tr>\n      <td>P11</td>\n      <td>Serine/arginine-rich splicing factor 1 (SRSF1)</td>\n      <td>gi|5902076</td>\n      <td>27746</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td>P11</td>\n      <td>Spindlin 1 (SPIN1)</td>\n      <td>gi|5410330</td>\n      <td>29602</td>\n      <td>95</td>\n    </tr>\n  </tbody>\n</table>\n\nNext, we confirmed the interaction between SPIN1 and uL18 by performing a series of reciprocal co-IP assays. As expected, ectopic SPIN1 was specifically pulled down by ectopic uL18 and vice versa in HCT116p53-/- cells (Figure 1B and C). Their interaction was also verified in HEK293 cells (Figure 1\u2014figure supplement 1). Also, we validated the interaction between endogenous SPIN1 and uL18 in HEK293 cells using anti-SPIN1 antibody (Figure 1D). Interestingly, only uL18, but not uL5, was co-immunoprecipitated with SPIN1. In line with this result, when comparing ectopic Flag-uL18 with Flag-uL5 and Flag-uL14, we found that only uL18, but not the other RPs, could pull down Myc-SPIN1 (Figure 1E), further bolstering the specific interaction between uL18 and SPIN1. Taken together, these results demonstrate that SPIN1 specifically binds to uL18, but not uL5 or uL14, in cancer cells.\n\n### SPIN1 knockdown inhibits proliferation and induces apoptosis of cancer cells by activating p53\n\nPrevious and recent studies showed that SPIN1 is a potential oncogene (Chen et al., 2016; Wang et al., 2012; Chen et al., 2017), and uL18 can stabilize p53 by binding to MDM2 (Dai and Lu, 2004). We therefore wondered if the interaction between SPIN1 and uL18 could confer any role to SPIN1 in regulation of the p53 pathway. First, we determined if depletion of SPIN1 might affect p53-dependent cellular outcomes. Interestingly, we found that knockdown of SPIN1 dramatically elevates p53 protein level in several wild-type p53-containing cells, including U2OS, H460 and HCT116p53+/+ cells (Figure 2A), without affecting TP53 mRNA expression (Figure 2B). Consistently, protein and mRNA levels of p53 target genes, such as p21 and PUMA, were also increased in response to SPIN1 knockdown (Figure 2A and B). Moreover, the effects of SPIN1 siRNA on p53 activity were dose-dependent (Figure 2\u2014figure supplement 1A and B). The effect was unlikely due to off-target effects of siRNA, as ectopic expression of FLAG-SPIN1 reversed p53 activation by siRNA-mediated knockdown of SPIN1 in HCT116p53+/+ (Figure 2\u2014figure supplement 1C). Conversely, overexpression of SPIN1 in HCT116p53+/+ decreased the protein levels of p53 and its targets, such as p21 and PUMA, and the mRNA levels of these target genes, without affecting TP53 mRNA level (Figure 2C and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig2-v3.jpg)\n\n**Figure 2.:** (A) SPIN1 knockdown induces protein levels of p53 and its target genes. U2OS, H460 and HCT116p53+/+ cells were transfected with scramble siRNA (scr-siRNA) or SPIN1 siRNA and harvested 48 hr post-transfection for WB analysis with indicated antibodies. (B) SPIN1 knockdown induces mRNA levels of p53 target genes without effect on TP53 mRNA level. U2OS cells were transfected with scramble siRNA (scr-siRNA) or SPIN1 siRNA, and harvested 72 hr post-transfection for RT-qPCR (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a02). (C) SPIN1 overexpression reduces protein levels of p53 and its target genes. HCT116p53+/+ cells were transfected with pcDNA or Flag-SPIN1 and harvested 48 hr post-transfection for WB analysis with indicated antibodies. (D) SPIN1 overexpression reduces mRNA levels of p53 target genes without effect on TP53 mRNA levels. HCT116p53+/+ cells were transfected with pcDNA or Flag-SPIN1 and harvested 72 hr post-transfection for RT-qPCR (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a02). (E) Knockdown of SPIN1 causes p53-dependent induction of p21 and PUMA. The protein levels of p53 and its targets in HCT116p53+/+ cells and HCT116p53-/- cells that stably express scramble shRNA (scr-shRNA) or SPIN1 shRNAs were detected by WB analysis with indicated antibodies. (F) SPIN1 knockdown suppresses cell survival. HCT116p53+/+ and HCT116p53-/- cells that stably expressed scramble or SPIN1 shRNAs were seeded in 96-well plate and cell viability was evaluated every 24 hr by CCK-8 assays (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a02). (G) Knockdown of SPIN1 inhibits clonogenic ability of colorectal cancer cells, more significantly when the cells harbor wild-type p53. HCT116p53+/+ cells and HCT116p53-/-cells\u00a0that stably expressed scramble or SPIN1 shRNAs were seeded on 60 mm plates. Puromycin selection was performed for 14 days. Colonies were fixed with methanol, and visualized by staining with crystal violet (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a03). (H) The effect of SPIN1 knockdown on apoptosis of HCT116p53+/+ cells and HCT116p53-/-cells\u00a0that stably expressed scramble or SPIN1 shRNAs (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a03). (I) U2OS cells were transfected with scramble or SPIN1 shRNA and incubated in IncuCyte S3 chamber in the presence of IncuCyte Annexin V Green Reagent for apoptosis. Positively stained cells were determined using IncuCyte analysis software. *p<0.05, **p<0.01 by two-tailed t-test (C, D, G, H,I).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** HCT116 p53+/+ (A) and U2OS (B) cells were transfected with a titrated concentration of SPIN1 siRNA (20 nM, 40 nM and 60 nM). And cells were harvested 48 hr after transfection and followed by WB analysis with indicated antibodies. (C) U2OS cells were co-transfected with scramble siRNA (40 nM), SPIN1-siRNA (40 nM), with or without FLAG-SPIN1 as indicated. Cells were harvested 48 hr after transfection for WB analysis.\n\nWe next generated both HCT116p53+/+ and HCT116p53-/- cell lines that express scramble shRNA or SPIN1 shRNA to evaluate biological outcomes of SPIN1 knockdown. As illustrated in Figure 2E, the expression of p53 and some of its target genes were markedly induced when SPIN1 was knocked down by its specific shRNA in HCT116p53+/+cells, but not in HCT116p53-/-cells. Using these cell lines for cell viability assays, we observed that SPIN1 ablation more dramatically represses the cell viability of HCT116p53+/+ than that of HCT116p53-/- cells (Figure 2F). In line with this observation, SPIN1 depletion also led to more predominant reduction of HCT116p53+/+ colonies than that of HCT116p53-/- colonies, although both of the reductions were statistically significant (Figure 2G). Furthermore, the percentage of cells undergoing apoptosis caused by SPIN1 shRNAs was much higher in HCT116p53+/+ cells than in HCT116p53-/- cells, as measured by sub-G1 population (Figure 2H). Consistently, induction of apoptosis by SPIN1 knockdown was also evidenced in Annexin V assay in U2OS cells (Figure 2I). Collectively, these data suggest that SPIN1 plays an oncogenic role at least partially by inactivating the p53 pathway, although SPIN1 may also possess a p53-independent role in cancer cell growth and survival.\n\n### SPIN1 promotes p53 degradation by enhancing MDM2-mediated ubiquitination\n\nSince SPIN1 knockdown affected only the protein, but not the mRNA, levels of p53 (Figure 2A\u20132D), we next sought to determine the underlying mechanism. We first performed a cycloheximide-chase experiment using HCT116p53+/+ cells. As shown in Figure 3A and B, knockdown of SPIN1 markedly prolonged p53\u2019s half-life from 35 mins to 56 mins, as compared to scramble siRNA. Inversely, ectopic SPIN1 greatly shortened p53\u2019s half-life, from 39 mins to\u00a0~22 mins (Figure 3C and D). To further evaluate the effect of SPIN1 on MDM2-mediated p53 ubiquitination, which is the main mechanism responsible for p53 turnover (Dai et al., 2004; Dai and Lu, 2004; Zhang et al., 2003; Dai et al., 2006), we then performed an in vivo ubiquitination assay by transfecting HCT116p53-/- cells with plasmids indicated in Figure 3E. The results clearly showed that ectopic SPIN1 enhances MDM2-mediated p53 ubiquitination in a dose-dependent manner. Consistently, co-transfection of SPIN1 with MDM2 led to a stronger reduction of p53 protein levels, which was abrogated by proteasome inhibitor MG132 (Figure 3F). Interestingly, the induction of p53 degradation by SPIN1 was MDM2-dependent, as overexpression of SPIN1 failed to repress ectopic p53 protein expression in Trp53 and Mdm2 double knockout MEF cells (Figure 3G). Together, these results demonstrate that SPIN1 reduces p53 stability by enhancing MDM2-mediated ubiquitination and degradation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig3-v3.jpg)\n\n**Figure 3.:** (A) and (B) p53-half-life is increased by SPIN1 knockdown. (A) HCT116p53+/+ cells transfected with scramble or SPIN1 siRNA for 48 hr, were\u00a0treated with 100 \u03bcg/ml of cycloheximide (CHX), and harvested at different time points as indicated. The p53 protein was detected by WB analysis, quantified by densitometry and plotted against time to determine p53-half-lives (B). (C) and (D) SPIN1 overexpression shortens the half-life of p53. HCT116p53+/+ cells transfected with pcDNA or Flag-SPIN1 for 48 hr were treated with 100 \u03bcg/ml of cycloheximide and harvested at indicated time points for WB analysis with indicated antibodies (C). The intensity of each band was quantified, and normalized with \u03b2-actin and plotted (D). (E) SPIN1 promotes MDM2-induced p53 ubiquitination. HCT116p53-/- cells were transfected with combinations of plasmids encoding HA-MDM2, p53, His-Ub or Myc-SPIN1, and treated with MG132 for 6 hr before being harvested for in vivo ubiquitination assay. Bound and input proteins were detected by WB analysis with indicated antibodies. (F) SPIN1 enhances MDM2-mediated p53 proteasomal degradation. HCT116p53+/+ cells were transfected with plasmids encoding HA-MDM2 and Flag-SPIN1, and treated with MG132 for 6 hr before harvested, followed by WB analysis with antibodies as indicated. (G) Ectopic SPIN1 does not change p53 protein level without MDM2. MEFp53-/-; Mdm2-/- cells were transfected with combinations of plasmids encoding p53 with or without Flag-SPIN1, followed by WB analysis using antibodies as indicated.\n\n### SPIN1 prevents uL18 from MDM2 binding by sequestering it in the nucleolus\n\nBesides its role as a component of ribosome, uL18 has some well-established extra-ribosomal functions, acting as a bridge in connecting p53 activation to cellular stress response machinery (Zhang and Lu, 2009; Warner and McIntosh, 2009). Upon ribosomal stress, uL18 can translocate from the nucleolus to the nucleoplasm of a cell, where it binds to MDM2 (Dai and Lu, 2004; Zhou et al., 2012), leading to stabilization of p53 and consequently p53-dependent cell growth arrest, apoptosis or senescence. We then investigated if SPIN1 might regulate this function of uL18, since SPIN1 could bind to uL18 (Figure 1), knockdown of SPIN1 led to p53 activation (Figure 2), and SPIN1 stimulated MDM2-mediated p53 ubiquitination (Figure 3). First, as expected (Dai and Lu, 2004), overexpression of uL18 induced the protein levels of p53 and its targets, such as p21 and MDM2, in wild-type p53-containing U2OS cells (Figure 4A). This induction of the p53 pathway by uL18 was markedly reduced by co-transfected SPIN1 (Figure 4A). Since the effect of uL18 on p53 is through uL18\u2019s interaction with MDM2 and consequent inhibition of its E3 ligase activity toward p53 (Dai and Lu, 2004), we tested if SPIN1 may affect uL18-MDM2 interaction. Interestingly, our co-immunoprecipitation result showed that ectopic Myc-SPIN1 dramatically reduces the amount of Flag-uL18 co-immunoprecipitated with HA-MDM2 in a dose-dependent manner, although Myc-SPIN1 itself did not co-immunoprecipitate with HA-MDM2 (Figure 4B and Figure 4\u2014figure supplement 1A). This effect was specific to the uL18-MDM2 interaction, as Myc-SPIN1 overexpression did not alter the interactions between uL5 and MDM2 (Figure 4C). Our immunofluorescence result (Figure 4D and Figure 4\u2014figure supplement 1B) showed that SPIN1 and uL18 are clearly co-localized in the nucleolus, suggesting that SPIN1 might sequester uL18 in the nucleolus and thus prevent it from binding and inactivating MDM2 in the nucleoplasm. Taken together, these results demonstrate that SPIN1 is a regulator of the uL18-MDM2-p53 pathway, acting by preventing uL18 from interaction with MDM2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig4-v3.jpg)\n\n**Figure 4.:** (A) SPIN1 overexpression attenuates p53 activation induced by ectopic uL18. U2OS cells were co-transfected with plasmids encoding Flag-uL18 or Myc-SPIN1 for 36 hr and harvested for WB analysis with indicated antibodies. (B) Overexpression of SPIN1 disrupts the uL18-MDM2 binding. Lysates were prepared from HCT116p53-/- cells co-transfected with HA-MDM2, Flag-uL18, Myc-SPIN1 or the corresponding empty vectors for 48 hr and analyzed by immunoprecipitated with the anti-HA antibody. Immunoprecipitates and 5% of inputs were immunoblotted with the indicated antibodies. (C) Overexpression of SPIN1 fails to disrupt the uL5-MDM2 interaction. Lysates were prepared from HCT116p53-/- cells co-transfected with HA-MDM2, Flag-uL5 and Myc-SPIN1 for 48 hr and analyzed by immunoprecipitated with the anti-HA antibody. Immunoprecipitates and 5% of inputs were immunoblotted with the indicated antibodies. (LC: light chain). (D) SPIN1 and uL18 co-localize in the nucleolus. H1299 cells were transfected with GFP-SPIN1 and Flag-uL18 for 36 hr and then immunostained with the anti-Flag antibody (red), and counterstained with DAPI.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) SPIN1 does not bind to MDM2. HCT116p53-/- cells were transfected with combination of plasmids encoding Myc-SPIN1 and HA-MDM2, followed by IP-WB analysis with indicated antibodies. (B) SPIN1 and uL18 co-localize in the nucleolus. HEK293 and H1299 SPIN1 stable cells were transfected with Flag-uL18 for 36 hr and then immunostained with anti-Myc (red) and anti-Flag antibody (green), and counterstained with DAPI.\n\n### SPIN1 depletion also causes ribosomal stress, activating p53\n\nPrevious studies showed that SPIN1 could recognize H3K4 methylation and stimulate rRNA gene expression, unveiling its role in rRNA synthesis (Bae et al., 2017; Wang et al., 2011). Disruption of rRNA synthesis leads to disassembly of ribosomal precursors and release of ribosome-free ribosomal proteins from the nucleolus (Bhat et al., 2004; Dai and Lu, 2004; Zhang et al., 2003). Based on these lines of information, we speculated that dysregulation of SPIN1 itself might also impact ribosome biogenesis, resulting in accumulating ribosome-free ribosomal proteins to activate p53. To test this speculation, we first carried out a sucrose gradient fractionation assay using scramble- and SPIN1-shRNA transfected HCT116p53+/+ cells. The collected fractions were subjected to western blot (WB) analysis. As anticipated, the levels of uL18 and uL5 in the soluble and ribosome-unbound fractions were markedly increased in SPIN1-depletion cells, accompanying with elevated p53 and MDM2 protein levels (Figure 5A). Interestingly, the binding between endogenous uL18/uL5 and MDM2 increased upon SPIN1 knockdown, resembling ribosomal stress (Figure 5B). Indeed, as expected, knockdown of SPIN1 reduced the expression of pre-rRNA and rRNA (Figure 5\u2014figure supplement 1A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig5-v3.jpg)\n\n**Figure 5.:** (A) Knockdown of SPIN1 releases free forms of uL18 and uL5. HCT116p53+/+ were transfected with scramble or SPIN1 shRNA for 36 hr and subjected to sucrose gradient fractionation assay followed by WB analysis with indicated antibodies. (B) SPIN1 knockdown increases the endogenous uL18/uL5-MDM2 interaction. Cell lysates of HCT116p53+/+ cells transfected with scramble or SPIN1 shRNA were immunoprecipitated with MDM2 or control IgG, and analyzed by WB analysis with indicated antibodies. (C) SPIN1 overexpression counteracts p53 activation induced by ActD or 5-Fu. U2OS cells were transfected with pcDNA or Flag-SPIN1 for 48 hr, and treated with ActD or 5-Fu for 12 hr before harvested for WB analysis with indicated antibodies. (D) and (E) Knockdown of uL18 or uL5 compromises the induction of p53 by SPIN1 depletion. U2OS cells were transfected with scramble siRNA, SPIN1 siRNA, uL18 siRNA (D) or uL5 siRNA (E) as indicated for 48 hr. Cell lysates were subjected to WB analysis with indicated antibodies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Scramble siRNA or SPIN1 siRNA was introduced into U2OS cells. RNA levels were analyzed using Q-PCR (*p value\u00a0<\u00a00.05; **p value\u00a0<\u00a00.01 by tailed t-test; n\u00a0=\u00a06). (B). SPIN1-Y170A inhibits p53. U2OS cells were transfected with control plasmids or FLAG-SPIN1-Y170A and the cells were collected for western blot analysis 48 hr after transfection.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) uL18 interacts with the second Tudor like domain of SPIN1. Purified GST-tagged SPIN1 fragments, including aa 1-262(FL), aa 50\u2013120, aa 121\u2013262, aa 121\u2013193, aa 194\u2013262 and GST protein alone were incubated with purified His-uL18 protein for 3 hr at 4\u00b0C. Bound proteins were detected by WB analysis using anti-uL18 or coomassie staining. (B) A schematic diagram of uL18-binding regions on SPIN1 based on the result from (A). (C) SPIN1 interacts with both the N- and C-termini of uL18. Purified GST-tagged uL18 fragments, including aa1-297(FL), aa 1\u201350, aa 112\u2013297, aa 39\u2013253 or GST protein alone were rotated with purified His-SPIN1 protein for 1 hr at 4\u00b0C. Bound proteins were detected by WB analysis using anti-SPIN1 or coomassie staining. (D) A schematic diagram of SPIN1-binding regions on uL18 derived from the result from (C). (E) MDM2 interacts with both the N- and C-termini of uL18. Purified GST-tagged uL18 fragments, including aa1-297(FL), aa 1\u201350, aa 112\u2013297, aa 39\u2013253, aa 1\u2013251 or GST protein alone were rotated with purified His-MDM2 protein for 4 hr at 4\u00b0C. Bound proteins were detected by WB analysis using anti-MDM2 (2A10) or coomassie staining. (F) A schematic diagram of uL18 binding regions on MDM2 based on the result from (E).\n\nMoreover, as clearly illustrated in Figure 5C, overexpression of SPIN1 compromised p53 activation induced by actinomycin D or 5-Fu treatment, which was reported to trigger ribosomal stress that in turn triggers the formation of RPs-MDM2 complex (Sun et al., 2007; Dai and Lu, 2004; Jin et al., 2004; Boulon et al., 2010). In addition, the Y170A mutant of SPIN1, which loses the ability to interact with trimethylated K4 (Su et al., 2014; Wang et al., 2011), was still able to suppress p53 activity (Figure 5\u2014figure supplement 1B), suggesting that SPIN1 regulation of p53 is independent of the activity of SPIN1 in regulating rRNA expression. Our mapping results showed that the critical amino acids Y170, F141 and Y177 for trimethylated K4 interaction (Su et al., 2014; Wang et al., 2011) are all located in the SPIN1 Tudor two domain that is responsible for uL18 binding (Figure 5\u2014figure supplement 2A and B). Tudor two domain truncated mutant of SPIN1 failed to suppress p53 or increase rRNA expression (data not shown). Interestingly, both the N- and C-termini of uL18 were found to bind to SPIN1 (Figure 5\u2014figure supplement 2C and D), and these two fragments were required for uL18-MDM2 binding as well (Figure 5\u2014figure supplement 2E and F), further supporting our observation that SPIN1 could compete with MDM2 for uL18 binding (Figure 4B).\n\nTo further confirm the role of these free forms of ribosomal proteins in SPIN1 ablation-induced p53 activation, we knocked down uL18 or uL5 using siRNA with or without SPIN1 depletion in U2OS cells. Strikingly, the reduction of either uL18 or uL5 abrogated SPIN1 knockdown-induced p53 levels, as well as its target p21, as compared to scramble siRNA-transfected cells (Figure 5D and E). Collectively, these data indicate that knockdown of SPIN1 could also lead to ribosomal stress, releasing ribosome-free uL18 and uL5, which are required for p53 activation induced by SPIN1 depletion.\n\n### SPIN1 depletion impedes xenograft tumor growth\n\nTo translate the above-described cellular functions of SPIN1 into more biological significance, we established a xenograft tumor model by inoculating the aforementioned HCT116 (both p53+/+\u00a0and p53-/-) cell lines that expressed scramble shRNA or SPIN1 shRNA into NOD/SCID mice, and monitored tumor size for 18 days. As illustrated in Figure 6A and B, SPIN1 knockdown more markedly slowed down the growth of xenograft tumors derived from HCT116p53+/+ cells than that from HCT116p53-/- cells. Notably, SPIN1 depletion also reduced the growth of tumors derived from HCT116p53-/- cells, suggesting that SPIN1 might possess a p53-independent function required for cancer cell growth. In line with the tumor growth curve, the reduction of tumor mass and weight by SPIN1 knockdown was more profound in HCT116p53+/+ groups (~60% reduction in weight) than that in HCT116p53-/- groups (~30% reduction in weight) (Figure 6C and D). To confirm our cell-based findings, we performed qRT-PCR and WB analysis using the xenograft tumors. As expected, the mRNA levels of p21 and PUMA were significantly increased upon SPIN1 knockdown in HCT116p53+/+, but not in HCT116 p53-/- tumors (Figure 6E and F). Consistently, the protein levels of p53 and its target PUMA were elevated in HCT116p53+/+ groups, but not in HCT116p53-/- groups (Figure 6G and Figure 6\u2014figure supplement 1). Taken together, these results demonstrate that SPIN1 depletion retards tumor growth by mainly activating p53, although SPIN1 might also possess p53-independent functions in regulation of cell growth and survival.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig6-v3.jpg)\n\n**Figure 6.:** (A) and (B) Growth curves of xenograft tumors derived from HCT116p53+/+ cells and HCT116p53-/- cells that expressed scramble or SPIN1 shRNA. Data are represented as mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a06. (C) The images of xenograft tumors that were harvested at the end of experiment. (D) Quantification of the average weights of collected tumors from the above experiments. (E) and (F) The mRNA levels of SPIN1, p53 and p53 target genes were detected in six tumors by RT-qPCR (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a06). (G) The protein levels of SPIN1, p53 and p53 targets were detected in six tumors samples by WB analysis with indicated antibodies. *p<0.05, **p<0.01 by two-tailed t-test (D, E, F, G).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** All data were presented as mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a06, *p<0.05, **p<0.01 by two-tailed t-test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) TCGA database was utilized, and the data were modified from the cBioPortal for Cancer Genomics (http://www.cbioportal.org/). (B) The expression profile of SPIN1 in cancers and normal tissues was searched in Oncomine Gene Browser (http://www.oncomine.org/). The results were from Talantov Melanoma database. Seven cases of normal skin and 45 cases of melanoma were analyzed in this figure. Correlation between SPIN1 upregulation and tumor stage, poorer prognosis or treatment resistance is not clear. (C and D) Overexpression of SPIN1 is correlated with overall survival and disease-free survival in breast cancer (http://www.cbioportal.org/), although the sample number of high SPIN1 patients is small and more samples are desired. (E) SPIN1 overexpression was associated with poor prognosis in colorectal cancer patients in an expression profile study from GSE17537 (http://www.PrognoScan.org/). (F) High expression of SPIN1 was correlated with poor overall survival in gastric cancer patients (http://www.kmplot.com).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig6-figsupp3-v3.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig6-figsupp4-v3.jpg)\n\n**Figure 6\u2014figure supplement 4.:** mRNA expression levels of 664 colorectal tumors were retrieved from Genomic Data Commons (https://portal.gdc.cancer.gov/). In the data set, gene expression levels were measured with FPKM (Fragments Per Kilobase of transcript per Million mapped reads) and normalized using the Upper Quantile method. All 644 tumor samples were sorted based on the expression level of SPIN1 from low to high.\n\nThe data presented above suggest that SPIN1 plays an important role in tumorigenesis. Therefore, we further searched some available genomic and gene expression database for SPIN1 expression in cancers. Interestingly, our analysis of TCGA genome database (Cerami et al., 2012; Gao et al., 2013) indicated that the SPIN1 gene is markedly amplified in a panel of cancers, including prostate, sarcoma, lung, stomach, breast, head and neck, pancreas and colorectal cancers (Figure 6\u2014figure supplement 2A). Consistent with this observation, the analysis of Oncomine database (Rhodes et al., 2007) also showed that SPIN1 mRNA expression is extensively upregulated in melanoma tissues when compared with normal skin tissues (~2.367 folds upregulation, Figure 6\u2014figure supplement 2B). Moreover, using databases (Cerami et al., 2012; Mizuno et al., 2009; SzaszSz\u00e1sz et al., 2016) that contain gene expression profiles of clinical cancer samples combined with patient outcomes, we found that overexpression of SPIN1 is correlated with poorer prognosis in patients with breast cancer, colorectal cancer and gastric cancer (Figure 6\u2014figure supplement 2C\u2013F). Elevated protein expression was also observed in a panel of human colon tumor samples compared with normal tissues (Figure 6\u2014figure supplement 3). These data further support that SPIN1 may play an oncogenic role in human cancer progression.\n\nBased on these data and the aforementioned results, we proposed a model for the role of SPIN1 in regulation of p53 (Figure 7). Under the condition of low SPIN1 level, nucleolar uL18 escapes from the nucleolus into the nucleoplasm, and works together with uL5 to bind MDM2 and to inhibit its E3 ubiquitin ligase activity toward p53, consequently leading to p53 activation and p53-dependent cell growth arrest and apoptosis, suppressing cancer cell survival (Figure 7A). But when SPIN1 levels are high or abnormally elevated in cancer cells, SPIN1 retains uL18 in the nucleolus, thereby preventing uL18 from suppression of MDM2 activity and resulting in p53 degradation, favoring tumor cell growth (Figure 7B). This conjecture is further supported by the aforementioned xenograft experiment.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/31275/elife-31275-fig7-v3.jpg)\n\n## Discussion\n\nThe tumor suppressor p53 provides a critical brake on cancer development in response to ribosomal stress, as impairing this ribosomal stress-uL18/uL5-p53 pathway could accelerate tumorigenesis in c-Myc transgenic lymphoma mice (Macias et al., 2010). However, it remains largely elusive whether this pathway is subjected to the regulation by other yet unknown proteins. In our attempt to understand molecular insights into this possible regulation, we identified SPIN1, the nucleolar protein important for rRNA synthesis (Wang et al., 2011), as a novel regulator of the uL18-MDM2-p53 pathway through interplay with uL18 (Figure 7). Our studies as presented here provide the first line of evidence for that SPIN1 acts as an upstream regulator of uL18\u2019s accessibility to MDM2 for p53 activation.\n\nUsing IP-MS analysis, we identified SPIN1 as a new uL18-associated protein (Figure 1A). Our biochemical and cellular experiments using co-IP and GST pull down assays further validated the direct association of SPIN1 with uL18 (Figure 1B\u20131D; Figure 5\u2014figure supplement 2A\u2013D). Moreover, we found that SPIN1 and uL18 co-localized in the nucleolus by immunofluorescence assay (Figure 4D and Figure 4\u2014figure supplement 1B). Remarkably, SPIN1 specifically binds to uL18, but not uL5 and uL14, as no binding was detected between ectopic SPIN1 and uL5 or uL14 by co-IP (Figure 1E). Interestingly, SPIN1 does not appear to bind to MDM2, as it was not co-immunoprecipitated with MDM2 either (Figure 4B\u00a0and Figure 4\u2014figure supplement 1B). Although our previous reports described a complex of uL18/uL5/uL14-MDM2 (Dai et al., 2004), our present findings indicate that SPIN1 may work with uL18 in a separate complex that is different from reported RPs-MDM2 complexes. Also our results suggest that SPIN1 may retain uL18 in the nucleolus so that the latter is unable to shuttle to the nucleoplasm and to inhibit MDM2 activity toward p53 (Figure 7).\n\nSPIN1 expression in cells is tightly controlled, as several studies have shown that SPIN1 expression could be negatively monitored by some tumor suppressive non-coding RNAs, such as miR-489 and miR-219\u20135p (Chen et al., 2017; Drago-Ferrante et al., 2017; Li et al., 2017). Moreover, elevated expression of SPIN1 was strongly correlated with advanced histological stage, chemoresistance and metastasis in patients with breast cancer (Chen et al., 2016). Consistent with the aforementioned oncogenic role of SPIN1, our study as presented here showed that SPIN1 depletion by its specific shRNA leads to the augment of the p53-dependent cancer cell growth arrest and apoptosis. This is at least partly because SPIN1 can promote MDM2-dependent ubiquitination and degradation of p53 (Figure 3), which is highly likely attributable to its capability to prevent uL18 from binding to MDM2 through retaining uL18 in the nucleolus (Figure 4).\n\nAlso, knockdown of SPIN1 led to the increase of ribosome-free uL18 and uL5 levels, of the uL18/uL5-MDM2 complex, and of p53 level and activity (Figure 5A and B). The activation of p53 by knocking down SPIN1 is due to the ribosomal stress caused by the depletion of this nucleolar protein, as SPIN1 is required for rRNA synthesis by RNA polymerase I (Wang et al., 2011). Also, consistent with these observations, overexpression of SPIN1 reduced the activation of p53 by Actinomycin D treatment (Figure 5C), whereas knockdown of uL18 or of uL5 impaired the activation of p53 by SPIN1 knockdown (Figure 5D and E). Several genes have been implicated to modulate the RPs-MDM2-p53 pathway through interplay with ribosomal proteins (Sasaki et al., 2011; Uchi et al., 2013; Kayama et al., 2017; Havel et al., 2015; Zhang et al., 2014). In particular, SRSF1 was identified as a component of the RP-MDM2-p53 complex, and could stabilize p53 via uL18 (Fregoso et al., 2013). Different from their studies, SPIN1 specifically forms an independent complex with uL18, but not MDM2 or other ribosomal proteins, such as uL5 or uL14, and acts as a negative regulator of p53. Therefore, our present findings unveil a novel mechanism for suppression of the uL18-MDM2-p53 pathway by SPIN1, whose depletion consequently leads to p53-dependent cell growth inhibition and apoptosis.\n\nConsistent with its oncogenic activity, SPIN1 is often amplified in a panel of cancer types with less or no p53 mutation based on our analysis of human samples available in TCGA database (Figure 6\u2014figure supplement 2A\u2013B). In addition, elevated SPIN1 expression correlates with poor prognosis in breast, colorectal and gastric cancer patients (Figure 6\u2014figure supplement 2C\u2013F). Western blot analysis of a panel of human colon\u00a0cancer samples revealed that SPIN1 is expressed at significantly higher levels in tumors than in normal tissues (Figure 6\u2014figure supplement 3). These findings further indicate that SPIN1 acts as a potential oncogene. In line with these observations, we found that overexpression of SPIN1 promotes cancer cell survival, while knockdown of SPIN1 leads to cancer cell death as well as the suppression of cancer cell growth and colony formation predominantly in wild-type p53-containing cancer cells (Figure 2). Remarkably, knockdown of SPIN1 inhibited xenograft tumorigenesis derived from human colon cancer cells, which was much more significantly in HCT116p53+/+ cells than in HCT116p53-/- cells (Figure 6). Consistently, bio-informatic analysis on gene expression data of 644 colorectal tumors downloaded from Genomic Data Commons (https://portal.gdc.cancer.gov/) showed that SPIN1 gene expression was correlated with genes (22 genes) enriched in p53 signaling pathway (Figure 6\u2014figure supplement 4).\u00a0These results demonstrate that SPIN1 can promote tumor growth and survival by inactivating p53 and its pathway (Figure 7).\n\nIntriguingly, we also found that SPIN1 ablation had a moderate inhibitory effect on cell growth in p53-null HCT116 cells in vitro and in vivo as mentioned above (Figures 2 and 6). These findings suggest that SPIN1 must also possess p53-independent oncogenic effects, which might be explained by two possible mechanisms. First, SPIN1 has been reported to execute its oncogenic potentials by activating Wnt and PI3K/Akt pathways (Chen et al., 2016; Wang et al., 2012), both of which are closely correlated with cancer progression (Liu et al., 2009; Polakis, 2012). Second, since our previous study has demonstrated that uL18 and uL5 could activate TAp73 through association with MDM2 (Zhou et al., 2015), it is possible that the SPIN1-uL18 interaction might impose suppression on TAp73 activity as well, ultimately leading to cell growth arrest and apoptosis.\n\nRecent studies have demonstrated the role of SPIN1 in rRNA transcription (Bae et al., 2017; Su et al., 2014), which provides a clue that dysregulation of SPIN1 may perturb ribosome biogenesis. In fact, in our current study, we observed that SPIN1 depletion per se increases the levels of ribosome-free uL18 and uL5, accompanying elevated p53 protein levels (Figure 5), which recapitulates the effects of ribosomal stress. Our observation that p53 induction caused by SPIN1 depletion could be abrogated by knockdown of either uL18 or uL5 further supports this hypothesis. Therefore, while it is conceivable that SPIN1 counteracts p53 by blocking the interaction between uL18 and MDM2 as discussed above, the mechanism by which disruption of SPIN1 causes ribosomal stress may be also responsible for p53 activation.\n\nIn summary, our findings unveil SPIN1 as another novel and important regulator of the MDM2-p53 pathway by predominantly inhibiting the association of uL18 with MDM2 to modulate p53 activity (Figure 7) and provide more molecular insights into the fine regulation of this pathway.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>SPIN1</td>\n      <td>National Center for Biotechnology Information (https://www.ncbi.nlm.nih.gov/gene/10927)</td>\n      <td>Gene ID: 10927; Accession number: NM_006717; UniPro ID: Q9Y657</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>RPL5/uL18</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/6125</td>\n      <td>gene ID: 6125; Accession number: NM_000969; UniPro ID: P46777</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>RPL11/uL5</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/6135</td>\n      <td>gene ID: 6135; Acctssion number: NM_000975; UniPro ID: P62913</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>RPL23/uL14</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/9349</td>\n      <td>gene ID: 9349; Accession number: NM_000978; UniPro ID: P62829</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>TP53</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/7157</td>\n      <td>gene ID: 7157; Accession number: NM_000546; UniPro ID: P04637</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>p21/CDKN1A</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/1026</td>\n      <td>gene ID: 1026; Accession number: NM_000389; UniPro ID: Q42580</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>PUMA/BBC3</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/27113</td>\n      <td>gene ID: 27113; Accession number: NM_001127240; UniPro ID: Q9BXH1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (human)</td>\n      <td>MDM2</td>\n      <td>National Center for Biotechnology Information https://www.ncbi.nlm.nih.gov/gene/4193</td>\n      <td>gene ID: 4193; Accession number: NM_001145337; UniPro ID: Q00987</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>NOD-SCID</td>\n      <td>Jackson Laboratories https://www.jax.org/strain/001303</td>\n      <td>Stock No: 001303</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>293</td>\n      <td>ATCC https://www.atcc.org/Products/All/CRL-1573.aspx</td>\n      <td>Catalog number: ATCC CRL-1573; RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>H1299</td>\n      <td>ATCC https://www.atcc.org/Products/All/CRL-5803.aspx</td>\n      <td>Catalog number: ATCC CRL-5803; RRID: CVCL_0060</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>U2OS</td>\n      <td>ATCC https://www.atcc.org/Products/All/HTB-96.aspx</td>\n      <td>Catalog number: ATCC HTB-96; RRID:RRID:CVCL_0042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>H460</td>\n      <td>ATCC https://www.atcc.org/Products/All/HTB-177.aspx</td>\n      <td>Catalog number: ATCC HTB-177; RRID:CVCL_0459</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT116 p53+/+</td>\n      <td>from Dr. Bert Vogelstein at the John Hopkins Medical institutes</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT116 p53-/-</td>\n      <td>from Dr. Bert Vogelstein at the John Hopkins Medical institutes</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MEF (Mdm2-/-; p53-/-)</td>\n      <td>from Dr. Guillermina Lozano from MD Anderson Cancer Center, the University of Texas.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human Flag monoclonal antibody</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalog number: F1804; RRID: AB_262044</td>\n      <td>Applications: WB; Immunofluoresce</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human Myc monoclonal antibody</td>\n      <td>Santa Cruz Technology</td>\n      <td>Catalogue number: sc-40</td>\n      <td>Applications: WB; Immunofluoresce</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human GFP monoclonal antibody</td>\n      <td>Santa Cruz Technology</td>\n      <td>Catalogue number: sc-9996; RRID: AB_627695</td>\n      <td>Applications: WB; Immunofluoresce</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human GST monoclonal</td>\n      <td>ProteinTech</td>\n      <td>Catalogue number: HRP-66001; RRID: AB_10951482</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-bacterial His polyclonal antibody</td>\n      <td>ProteinTech</td>\n      <td>Catalogue number:10560\u20131-lg; RRID: AB_1607770</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-human SPIN1 polyclonal antibody</td>\n      <td>ProteinTech</td>\n      <td>Catalogue number:12105\u20131-AP; RRID: AB_2196111</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human p53 monoclonal antibody</td>\n      <td>Santa Cruz Technology</td>\n      <td>Catalogue number: sc-126; RRID: AB_628082</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human p21 monoclonal antibody</td>\n      <td>Neomarkers, Fremont,</td>\n      <td>Catalogue number: MS-891-P0; RRID:AB_143907</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-human PUMA polyclonal antibody</td>\n      <td>ProteinTech</td>\n      <td>Catalogue number:55120\u20131-AP; RRID:AB_10859944</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-human \u03b2-actin monoclonal antibody</td>\n      <td>Santa Cruz Technology</td>\n      <td>Catalogue number: sc-47778; RRID:AB_2714189</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-human GAPDH polyclonal antibody</td>\n      <td>Proteintech</td>\n      <td>Catalogue number:10494\u20131-AP; RRID:AB_2263076</td>\n      <td>Applications: WB</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalogue number: 66-81-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG-132</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalogue number:474787</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5-FU</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalogue number:51218</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Actinomycin D (Act D)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Catalogue number: 50-76-0</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and transient transfection\n\nU2OS, H1299, HEK293 and H460 cells were purchased from American Type Culture Collection (ATCC). HCT116p53+/+ and HCT116p53-/- cells were generous gifts from Dr. Bert Vogelstein at the John Hopkins Medical institutes. MEFp53-/-;Mdm2-/- cells were generous gifts from Dr. Guillermina Lozano from MD Anderson Cancer Center, the University of Texas. STR profiling was performed to ensure cell identity. No mycoplasma contamination was found. All cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum, 50 U/ml penicillin and 0.1 mg/ml streptomycin and were maintained at 37\u00b0C in a 5% CO2 humidified atmosphere. Cells were seeded on the plate the day before transfection and then transfected with plasmids as indicated in figure legends using TurboFect transfection reagent according to the manufacturer\u2019s protocol (Thermo Scientific, R0532). Cells were harvested at 30\u201348 hr post-transfection for future experiments.\n\n### Plasmids and antibodies\n\nThe Myc-tagged SPIN1 plasmid was generated by inserting the full-length cDNA amplified by PCR into the pcDNA3.1/Myc-His vector at EcoR I and Bam HI, using the following primers, forward-CGGAATTCatgaagaccccattcggaaag; reverse-CGGGATCCggatgttttcaccaaaatcgtag. Flag-SPIN1 was generated by inserting SPIN1 cDNA into 2Flag-pcDNA3 at BamHI and XhoI sites. The primers used for PCR amplifying reverse transcribed mRNA were: forward-CGGGATCCaagaccccattcggaaagaca; reverse-CCGCTCGAGctaggatgttttcaccaaatcgta. The GST-tagged SPIN1 fragments, His-tagged SPIN1, GFP-tagged SPIN1 and FLAG-tagged SPIN1-Y170A plasmids were generous gifts from Drs. Bing Zhu from Institute of Biophysics, Chinese Academy of Sciences, and Haitao Li from Tsinghua University, Beijing, China. The plasmids SPIN1 shRNA-1 and \u22122 were purchased from Sigma-Aldrich (St Louis, MO). The plasmids encoding HA-MDM2, Flag-uL18, Flag-uL5, Flag-uL14, GFP-uL18, p53, His-Ub, GST-MDM2, His-uL18 and GST-uL18 fragments were described previously (Dai et al., 2004; Dai and Lu, 2004). Anti-Flag (Sigma-Aldrich, catalogue no. F1804, diluted 1:3000), anti-Myc (9E10, Santa Cruz Technology, catalogue no. sc-40, diluted 1:1000), anti-GFP (B-2, Santa Cruz Technology, catalogue no.sc-9996, diluted 1:1000), anti-SPIN1 (Proteintech,\u00a0Rosemont, IL, USA catalogue no. 12105\u20131-AP), anti-p53 (DO-1, Santa Cruz Technology, catalogue no. sc-126, diluted 1:1000), anti-p21 (CP74, Neomarkers, Fremont, catalogue no. MS-891-P0, diluted 1:1000), anti-PUMA (Proteintech, catalogue no. 55120\u20131-AP), anti-\u03b2-actin (C4, Santa Cruz Technology, catalogue no.sc-47778, diluted 1:5000), anti-GAPDH (Proteintech, catalogue no. 10494\u20131-AP), were commercially purchased. Antibodies against MDM2 (2A9 and 4B11), uL18 and uL5 were described previously (Dai et al., 2004; Dai and Lu, 2004).\n\n### GST fusion protein-protein interaction assay\n\nGST-tagged SPIN1 or GST-tagged uL18 fragments were expressed in E. coli and conjugated with glutathione-Sepharose 4B beads (Sigma-Aldrich). His-tagged SPIN1 and His-tagged uL18 were purified using a Ni-NTA (QIAGEN, Valencia, CA, USA) column, and eluted with 0.5 M imidazole. Protein-protein interaction assays were conducted as described previously (Jin et al., 2002). Briefly, for Figure 6A, 500 ng of purified His-tagged uL18 protein were incubated and gently rotated with the glutathione-Sepharose 4B beads containing 300 ng of GST-SPIN1 fragments or GST only at 4\u00b0C for 4 hr. For Figure 6C, 300 ng of purified His-tagged SPIN1 protein were incubated and gently shaked with the glutathione-Sepharose 4B beads containing 200 ng of GST-uL18 fragments or GST only at 4\u00b0C for 1 hr. The mixtures were washed three times with GST lysis buffer (50 mM Tris/HCT pH 8.0, 0.5% NP-40, 1 mM EDTA, 150 mM NaCl, 10% glycerol). Bound proteins were analyzed by IB with the antibodies as indicated in the figure legends.\n\n### Reverse transcription (RT) and quantitative RT-PCR analysis\n\nTotal RNA was isolated from cells or tissues using Trizol (Invitrogen, Carlsbad, CA) following the manufacturer\u2019s protocol. Total RNAs of 0.5 or 1.0 \u03bcg were used as template for reverse transcription using poly-(T)20 primers and M-MLV reverse transcriptase (Promega, Madision, WI). Quantitative RT-PCR (RT-PCR) was performed using SYBR Green Mix following the manufacturer\u2019s protocol (BioRad, Hercules, CA, USA). The primers for SPIN1, p53, p21, PUMA, pre-rRNA, 18S rRNA, rRNA, and GAPDH cDNA are as follows: SPIN1, 5\u2019-CAGAGCTGATGCAGGCCAT-3\u2019 and 5\u2019-ACTGGGTAACAGGGCCATTG-3\u2019, p53, 5\u2019-CCCAAGCAATGGATGATTTGA-3\u2019 and 5\u2019-GGCATTCTGGGAGCTTCATCT-3\u2019; p21, 5\u2019-CTGGACTGTTTTCTCTCGGCTC-3\u2019 and 5\u2019-TGTATATTCAGCATTGTGGGAGGA-3\u2019; PUMA, 5\u2019-ACAGTACGAGCGGCGGAGACAA-3\u2019 and 5\u2019-GGCGGGTGCAGGCACCTAATT-3\u2019; pre-rRNA, 5\u2019-GCTCTACCTTACCTACCTGG-3\u2019 and 5\u2019-TGAGCCATTCGCAGTTTCAC-3\u2019; 18S rRNA, 5\u2019-GCTTAATTTGACTCAACACGGGC-3\u2019 and 5\u2019-AGCTATCAATCTGTCAATCCTGTC-3\u2019; rRNA, 5\u2019-TGAGAAGACGGTCGAACTTG-3\u2019 and 5\u2019-TCCGGGCTCCGTTAATGATC-3\u2019; GAPDH, 5\u2019-GATTCCACCCATGGCAAATTC-3\u2019 and 5\u2019-AGCATCGCCCCACTTGATT-3\u2019.\n\n### Flow cytometry analysis\n\nCell transfected with scramble shRNA or SPIN1 shRNAs as indicated in the figure legends were fixed with 70% ethanol overnight and stained in 500 \u03bcl of propidium iodide (PI, Sigma-Aldrich) stain buffer (50 \u03bcg/ml PI, 200 \u03bcg/ml RNase A, 0.1% Triton X-100 in phosphate-buffered saline) at 37\u00b0C for 30 min. The cells were then analyzed for DNA content using a BD Biosciences FACScan flow cytometer (BD Biosciences, San Jose, CA). Data were analyzed using the CellQuest (BD Biosciences) and Modfit (Verity, Topsham, ME) software programs.\n\n### Annexin V assay\n\nCells transfected with scramble shRNA or SPIN1 shRNA were split into 96-well plate and IncuCyte Annexin V Green Reagent for apoptosis was added to each well at the time of seeding. Cell apoptosis was monitored using IncuCyte S3 live-cell imaging system.\n\n### Cell viability assay\n\nTo assess the long-term cell survival, the Cell Counting Kit-8 (CCK-8) (Dojindo Molecular Technologies, Rockville, MD) was used according to the manufacturer\u2019s instructions. Cell suspensions were seeded at 2000 cells per well in 96-well culture plates at 12 hr post-transfection. Cell viability was determined by adding WST-8 at a final concentration of 10% to each well, and the absorbance of these samples was measured at 450 nm using a Microplate Reader (Molecular Device, SpecrtraMax M5e, Sunnyvale, CA) every 24 hr for 5 days.\n\n### Colony formation assay\n\nCells were trypsinized and seeded at equal number of cells on 60 mm plates. Media were changed every 4 days until the colonies were visible. Puromycin was added into the media for selection at a concentration of 2 \u03bcg/ml. Cells were fixed with methanol and stained with crystal violet solution at RT for 30 min. ImageJ was used for quantification of the colonies.\n\n### Western blot analysis\n\nCells were harvested and lysed in lysis buffer consisting of 50 mM Tris/HCl (pH 7.5), 0.5% Nonidet P-40 (NP-40), 1 mM EDTA, 150 mM NaCl, 1 mM dithiothreitol (DTT), 0.2 mM phenylmethylsulfonyl fluoride (PMSF), 10 \u03bcM pepstatin A and 1 mM leupeptin. Equal amounts of clear cell lysates (20\u201380 \u03bcg) were used for WB analysis as described previously (Chao et al., 2016; Zhou et al., 2016). Human samples originally obtained from Indiana University Simon Cancer Center Solid Tissues Bank were ground and lysed in lysis buffer before western blot analysis.\n\n### In vivo ubiquitination assay\n\nHCT116p53-/- cells were transfected with plasmids encoding p53, HA-MDM2, His-Ub or Myc-SPIN1 as indicated in the figure legends. At 48 hr after transfection, cells were harvested and split into two aliquots, one for WB analysis and the other for ubiquitination assay. Briefly, cell pellets were lysed in buffer I (6 M guanidinium-HCT, 0.1 M Na2HPO4/NaH2PO4, 10 mM Tris-HCl (pH 8.0), 10 mM \u03b2-mercaptoethanol) and incubated with Ni-NTA beads (Qiagen) at room temperature for 4 hr. Beads were washed once with buffer I, buffer II (8 M urea, 0.1 M Na2HPO4/NaH2PO4, 10 mM Tris-HCl (pH 8.0), 10 mM \u03b2-mercaptoethanol), and buffer III (8 M urea, 0.1 M Na2HPO4/NaH2PO4, 10 mM Tris-HCl (pH 6.3), 10 mM \u03b2-mercaptoethanol). Proteins were eluted from beads in buffer IV (200 mM imidazole, 0.15 M Tris-HCl (pH 6.7), 30% glycerol, 0.72 M \u03b2-mercaptoethanol, and 5% SDS). Eluted proteins were analyzed by WB with indicated antibodies as previously reported (Zhou et al., 2016).\n\n### Immunoprecipitation\n\nImmunoprecipitation (IP) was conducted using antibodies as indicated in the figure legends. Briefly,\u00a0~500\u20131000 \u03bcg of proteins were incubated with the indicated antibody at 4\u00b0C for 4 hr or overnight. Protein A or G beads (Santa Cruz Biotechnology) were then added, and the mixture was incubated at 4\u00b0C for additional 1 to 2 hr. Beads were wash at least three times with lysis buffer. Bound proteins were detected by WB analysis with antibodies as indicated in the figure legends.\n\n### RNA interference\n\nSiRNAs against SPIN1, uL18 and uL5 were commercially purchased from Ambion. SiRNAs (20\u201340 nm) were introduced into cells using TurboFect transfection reagent following the manufacturer\u2019s instruction. Cells were harvested 48\u201372 hr post-transfection for WB or RT-PCR.\n\n### Immunofluorescence staining\n\nCells were fixed in 4% paraformaldehyde (PFA) for 25 min, followed by permeabilization in 0.3% Triton X-100 for 20 min. The fixed cells were blocked with 5% bovine serum albumin for 30 min, and then the cells were incubated with indicated antibodies at 4\u00b0C overnight. Cells were then washed and incubated with the corresponding secondary antibody and 4\u2019\u22126-diamidino-2-phenylindole (DAPI) for nuclear staining. The cellular localization of SPIN1 or uL18 was examined under a confocal microscope (Nikon, ECLIPSE Ti2).\n\n### Sucrose gradient fractionation and ribosome profiling\n\nThis assay was performed following the protocol previously described (Guo et al., 2010). Briefly, cells were harvested at 70\u201380% confluence after halting translation by 100 \u03bcg/ml cycloheximide incubation for 10 min. Cells were lysed in lysis buffer (10 mM Tris-HCl (pH 7.4), 5 mM MgCl2, 100 mM KCl, 1% Triton X-100) and gently sheared with a 26-gauge needle for four times. Lysates were subjected to 10\u201350% sucrose gradient centrifugation and the fractions were collected through BR-188 Density Gradient Fractionation System (Brandel, Gaithersburg, MD).\n\n### Generating stable cell lines\n\nBriefly, scramble shRNA or SPIN1 shRNAs purchased from Sigma were transfected into HCT116p53+/+ and HCT116p53-/- cells using TurboFect reagent. The cells were maintained at 37\u00b0C in a 5% CO2 humidified atmosphere for 48 hr and were split to two aliquots, one for WB analysis and the other for selection using final concentration of 2 \u03bcg/ml puromycin in growth medium.\n\n### Mouse xenograft experiments\n\nSeven-week-old female NOD/SCID mice were purchased from Jackson Laboratories. Mice were randomized into two groups (six mice in each) and subcutaneously inoculated with 5\u00a0\u00d7\u00a0106 HCT116 cells that stably expressing scramble shRNA or SPIN1 shRNA in the right and left flanks, respectively. Tumor growth was monitored every other day with electronic digital calipers (Thermo Scientific) in two dimensions. Tumor volume was calculated with the formula: tumor volume (mm3) = (length\u00d7width2)/2. Mice were sacrificed by euthanasia, and tumors were harvested and weighed. To detect p53 activation and apoptosis in vivo, the RNAs and proteins were disrupted from tumors via homogenization in Trizol or RIPA buffer, and then subjected to RT-qPCR and WB analysis. The experiment was not blind and was handled according to approved institutional animal care and use committee (IACUC) protocol (#4275R) of Tulane University School of Medicine. The maximum tumor volume per tumor allowed the IACUC committee is 1.5 cm diameter or 300 mm3 per tumor.\n\n### TCGA data analysis\n\nFrom Genomic Data Commons (https://portal.gdc.cancer.gov/), we downloaded the digital gene expression data of 644 colorectal cancer tumors, which was generated using a RNA-seq platform by the Cancer Genome Atlas (TCGA). In the data set, gene expression levels were measured with FPKM (Fragments Per Kilobase of transcript per Million mapped reads) and normalized using the Upper Quantile method.\n\nWe condensed the data by excluding the genes that were not expressed in over 75% samples. Logarithm transformation was applied to the expression levels of the remaining\u00a0~28,700 Ensembl genes. The transcriptional correlations between the SPIN1 gene and the others genes were evaluated using Pearson correlation coefficient (r). The corresponding p-values were estimated by t-tests. On the cutoffs, including the absolute value of r being larger than 0.3 and Bonferroni adjusted p-value being less than 0.01,\u00a0~4500 significant genes were selected. The functional enrichment test of the selected genes was performed using the DAVID tool (Huang et al., 2009) (https://david.ncifcrf.gov/). The heatmap was generated using R function, heatmap.2().\n\n### Statistical testing\n\nAll in vitro experiments were performed in biological triplicate and reproduced at least twice. The Student\u2019s two-tailed t-test was used to determine mean difference among groups. p<0.05 was considered statistically significant, asterisks represent significance in the following way: *p<0.05; **p<0.01. The term \u2018n.s\u2019 indicates that no significant difference was found. All the data are presented as mean\u00a0\u00b1\u00a0SEM.\n",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "0f609677-7deb-419f-b26b-ae162c6b6847",
+      "submission_id": "b61438ab-b1ec-4827-be89-5e49c1d7ee6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maureen Murphy, The Wistar Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31275.022](https://doi.org/10.7554/eLife.31275.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"SPIN1 promotes tumorigenesis by blocking the uL18-MDM2-p53 pathway\" for consideration by eLife. Your article has been favorably evaluated by James Manley (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPrevious studies from multiple laboratories including the authors' have implicated specific ribosomal proteins in the regulation of the tumor suppressor p53 via effects on its negative regulator MDM2. In particular, RPL5/uL18 has been shown to inhibit the ability of MDM2 to target p53 for degradation. In this manuscript, the authors present data to argue that SPIN1 interacts with uL18 thereby preventing its effects on MDM2. Since SPIN1 can be shown to be upregulated in a subset of human cancers, the authors conclude that SPIN1 promotes tumorigenesis via these effects. The manuscript is clearly written, the data are rigorously presented, and the conclusions are reasonable and justified. Elucidation of how the tumor suppressor p53 is regulated in response to different cellular signaling pathways is a significant area. The authors show:\n\n1) SPIN1 knockdown stabilizes and activates p53 signaling. They also show that overexpression of SPIN1 increases MDM2-mediated degradation of p53, and thus dampens down the p53 response.\n\n2) Mechanistically the authors find that SPIN1 regulates p53-MDM2 by sequestering uL18 in the nucleolus, so that uL18 cannot bind and inhibit MDM2; thus silencing SPIN1 leads to p53 stabilization.\n\n3) The authors show that SPIN1 overexpression may enhance tumor growth, as in the Hct p53 WT and -/- pair, shRNA for SPIN1 impedes the growth of tumor xenografts in a partially p53-dependent manner.\n\nOverall, the work is technically adept and done in multiple cell lines. The data presented are of high quality and support the conclusions of the manuscript. Finally, the manuscript is well written and will be of interest to the p53 and ribosome stress fields, provided the following issues are adequately addressed.\n\nEssential issues to address:\n\n1) In this reviewer\u2019s opinion, the data in Figure 6\u2014figure supplement 2 add significantly to the interesting nature of the manuscript, and this figure should be in the main figures of the paper. In the end, however, we must be cautious about RNA overexpression data, such as from TCGA and other databases. The manuscript would be improved if the authors were to validate the overexertion of SPIN1 in tumors by tumor micro-array of one of the selected tumor types, to show that SPIN1 is indeed overexpressed at the protein level in one of these tumor types. The authors could then use this opportunity, if they chose, to see whether SPIN1 level correlated with tumor grade.\n\n2) In the end, although the authors show that overexpressed SPIN1 can dampen down the p53 pathway, the authors themselves show that silencing SPIN1 also reduces tumor growth in a p53-independent manner. The authors mention that SPIN1 can also impact the Wnt and AKT pathways. So the reader is left wondering about the relevance of the p53, versus these other pathways, with regard to the selection for SPIN1 overexpression that occurs in human cancer. To address this issue of relevance, the data in Figure 6\u2014figure supplement 2 support the following, testable hypothesis: the overexpression of SPIN1 should correlate with decreased expression of p53 pathway genes (if this is indeed the reason tumors overexpress this protein). A bio-informatic analysis of p53 pathway genes, versus Wnt-pathway associated genes, in colorectal or gastric tumors (or whatever tumor type the authors prefer) with high versus low SPIN1 would add significantly to the take home message of this manuscript, and might even shed light as to which pathway tumors are selecting for, when they amplify or overexpress SPIN1. This would also alleviate one of the weaknesses of the manuscript, as it would highlight the consequences of SPIN1 overexpression in cancer. A good bio-informaticist could do these studies in a relatively short amount of time, and these findings would markedly strengthen the manuscript.\n\n3) The authors present extensive data to support the notion of an interaction between SPIN1 and uL18. Additionally, they show evidence that suggests that SPIN1 can regulate ribosome integrity, and thus SPIN1 could thereby influence p53 activity via this distinct mechanism. This latter notion is underdeveloped in the manuscript. Along these lines, it is unclear what is the relative contributions of each of these mechanisms to the regulation of the p53-MDM2 interplay. This premise should be clarified with additional experimental evidence. For example, the authors could determine whether SPIN1 mutants that lose binding to uL18 still have effects on rRNA levels. This would confirm that the effect of SPIN1 on p53 and the ribosomal checkpoint are distinct. Or the authors could use the binding mutants identified in biological assays toward this question.\n\n4) With regard to Figure 3E: To support the authors' hypothesis, it would be important to show here that ectopic SPIN1-mediated p53 ubiquitination is blocked by knocking down uL18. (This experiment was done in the absence of proteasome inhibitor MG132. Can the authors comment as to why p53 levels are not increasingly diminished?)\n\n5) Figure 4A: ectopic SPIN1 only modestly \u2013 not 'markedly' \u2013 reduces the ectopic uL18-mediated p53 protein and MDM2 gene induction. The p21 effect is however, more significant. Can the authors look at other p53 target genes and show how these respond?\n\n6) Model Figure 6E: The authors should exclude that SRSF1 \u2013 which also binds to uL18 and activates p53 \u2013 plays any role in the SPIN1/uL18 complex.\n\n7) Figure 6\u2014figure supplement 2A: With the exception of NEPC (what is it \u2013 Neuroendocrine prostate cancer?) tumors, the alteration frequency of SPIN1 in this large cancer panel is very low (and includes deletions) \u2013 and is likely not above the general mutational noise seen in cancers. How does Figure 6\u2014figure supplement 2A look when only wt p53 tumors are selected?\n",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0442d4c7-3892-4452-b27b-4047c1ab4a85",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C1",
+      "claim": "SPIN1 (Spindlin 1) is a novel binding partner of human RPL5/uL18.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify SPIN1 (Spindlin 1) as a novel binding partner of human RPL5/uL18 that is important for this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding, which is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "c422019f-ada3-464c-b94f-84ef934465d3",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C2",
+      "claim": "SPIN1 ablation activates p53.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 ablation activates p53, suppresses cell growth, reduces clonogenic ability, and induces apoptosis of human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "2475eabb-77a9-4e11-9eb5-48b8797a692f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C3",
+      "claim": "SPIN1 ablation suppresses cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 ablation activates p53, suppresses cell growth, reduces clonogenic ability, and induces apoptosis of human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cell viability assays shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "edea0caf-5fc4-4035-a670-f60520971d55",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C4",
+      "claim": "SPIN1 ablation reduces clonogenic ability of human cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 ablation activates p53, suppresses cell growth, reduces clonogenic ability, and induces apoptosis of human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by colony formation assays shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "bda373e2-ef37-4236-b0eb-08a49df76198",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C5",
+      "claim": "SPIN1 ablation induces apoptosis of human cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 ablation activates p53, suppresses cell growth, reduces clonogenic ability, and induces apoptosis of human cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by apoptosis assays shown in Figure 2H and 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "8816afd0-3c9c-4cd2-bf48-2074c9d539d6",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C6",
+      "claim": "SPIN1 sequesters uL18 in the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, SPIN1 sequesters uL18 in the nucleolus, preventing it from interacting with MDM2, and thereby alleviating uL18-mediated inhibition of MDM2 ubiquitin ligase activity toward p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by immunofluorescence data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "a835561d-a3f6-4275-b6cf-791ba3129279",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C7",
+      "claim": "SPIN1 prevents uL18 from interacting with MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, SPIN1 sequesters uL18 in the nucleolus, preventing it from interacting with MDM2, and thereby alleviating uL18-mediated inhibition of MDM2 ubiquitin ligase activity toward p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by co-immunoprecipitation data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e6474332-c549-4af1-8589-5fec3d1a3a16",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C8",
+      "claim": "SPIN1 alleviates uL18-mediated inhibition of MDM2 ubiquitin ligase activity toward p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, SPIN1 sequesters uL18 in the nucleolus, preventing it from interacting with MDM2, and thereby alleviating uL18-mediated inhibition of MDM2 ubiquitin ligase activity toward p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by ubiquitination assays in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "b3c2a2d8-6c64-47c4-9500-f8b0002ce857",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C9",
+      "claim": "SPIN1 deficiency increases ribosome-free uL18 and uL5.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 deficiency increases ribosome-free uL18 and uL5 (human RPL11), which are required for SPIN1 depletion-induced p53 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by sucrose gradient fractionation data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "92ab21f3-a07c-4fa3-a3c9-15a74346a956",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C10",
+      "claim": "Ribosome-free uL18 and uL5 are required for SPIN1 depletion-induced p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 deficiency increases ribosome-free uL18 and uL5 (human RPL11), which are required for SPIN1 depletion-induced p53 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by knockdown experiments in Figure 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "1aa8d323-91ba-4b15-a100-4113e86cae40",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C11",
+      "claim": "SPIN1 is highly expressed in several human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cancer genomic databases suggests that SPIN1 is highly expressed in several human cancers, and its overexpression is positively correlated with poor prognosis in cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by TCGA and Oncomine database analysis shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f4ede8bb-054a-4ba5-b26a-1502bfac8502",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C12",
+      "claim": "SPIN1 overexpression is positively correlated with poor prognosis in cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of cancer genomic databases suggests that SPIN1 is highly expressed in several human cancers, and its overexpression is positively correlated with poor prognosis in cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by survival analysis shown in Figure 6\u2014figure supplement 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e03679c1-a850-4355-838e-9bcf83414e27",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C13",
+      "claim": "The TP53 gene is mutated in more than 50% of human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "While loss of wild-type p53 causes fatal damages to the genome, it is not surprising that the TP53 gene is mutated in more than 50% human cancers, and the functions of p53 are often impeded through various mechanisms in the remainder (Levine and Oren, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Levine and Oren, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "9e3e4b49-89a3-426f-ab9e-4e8b85d651ff",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C14",
+      "claim": "MDM2 is a predominant negative regulator of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "One predominant negative regulator of p53 is the E3 ubiquitin ligase MDM2, an oncoprotein that conceals the N-terminal transcriptional activation (TA) domain of p53 (Oliner et al., 1993) and deactivates this protein by either abrogating its transcriptional activity, or inducing its nuclear export and ubiquitination (Oliner et al., 1993; Haupt et al., 1997; Kubbutat et al., 1997; Fuchs et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d32bbfdd-a2c5-4a7a-94d7-ddcd55224f56",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C15",
+      "claim": "MDM2 conceals the N-terminal transcriptional activation domain of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "One predominant negative regulator of p53 is the E3 ubiquitin ligase MDM2, an oncoprotein that conceals the N-terminal transcriptional activation (TA) domain of p53 (Oliner et al., 1993) and deactivates this protein by either abrogating its transcriptional activity, or inducing its nuclear export and ubiquitination (Oliner et al., 1993; Haupt et al., 1997; Kubbutat et al., 1997; Fuchs et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Oliner et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "a4c81c92-d9af-4f15-b879-529b5e3ff651",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C16",
+      "claim": "p19ARF inhibits MDM2-mediated p53 ubiquitination and proteolysis by associating with MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, p19ARF inhibits MDM2-mediated p53 ubiquitination and proteolysis by associating with MDM2 (Zhang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Zhang et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "689740e2-6d86-4f70-80b6-34b7ed012d50",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C17",
+      "claim": "Ribosomal stress is triggered by aberrant ribosome biogenesis caused by nutrient deprivation, inhibition of rRNA synthesis, or malfunction of ribosomal proteins and/or nucleolar proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomal stress is often triggered by aberrant ribosome biogenesis caused by nutrient deprivation, inhibition of rRNA synthesis, or malfunction of ribosomal proteins and/or nucleolar proteins (Zhang and Lu, 2009; Warner and McIntosh, 2009; Sun et al., 2007; Sun et al., 2008; Fumagalli et al., 2009; Bhat et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d735f993-71e6-4cc4-b41a-5b4bee143234",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C18",
+      "claim": "Disruption of ribosomal biogenesis induces translocation of ribosomal proteins from the nucleolus to the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies showed that disruption of ribosomal biogenesis induces translocation of a series of ribosomal proteins, including uL18 (human RPL5), uL5 (human RPL11), uL14 (human RPL23), eS7 (human S7) and uS11 (human S14) (Ban et al., 2014), from the nucleolus to the nucleoplasm and bind to MDM2, blocking its ability to ubiquitinate p53 and consequently stabilizing p53 to maintain cellular homeostasis (Dai et al., 2004; Lohrum et al., 2003; Dai and Lu, 2004; Zhou et al., 2013; Chen et al., 2007; Zhang et al., 2003; Jin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "4af552f1-9f4d-4107-9b5a-ce5373a6073a",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C19",
+      "claim": "Ribosomal proteins bind to MDM2 and block its ability to ubiquitinate p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies showed that disruption of ribosomal biogenesis induces translocation of a series of ribosomal proteins, including uL18 (human RPL5), uL5 (human RPL11), uL14 (human RPL23), eS7 (human S7) and uS11 (human S14) (Ban et al., 2014), from the nucleolus to the nucleoplasm and bind to MDM2, blocking its ability to ubiquitinate p53 and consequently stabilizing p53 to maintain cellular homeostasis (Dai et al., 2004; Lohrum et al., 2003; Dai and Lu, 2004; Zhou et al., 2013; Chen et al., 2007; Zhang et al., 2003; Jin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "b804abeb-e964-4eec-868b-cccbef376663",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C20",
+      "claim": "PICT-1 inhibits uL5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are a few proteins that have been identified to regulate this RPs-MDM2-p53 pathway, such as PICT-1 inhibition of uL5 (Sasaki et al., 2011; Uchi et al., 2013) and SRSF1 activation of uL18 (Fregoso et al., 2013), it still remains to be determined if there are more proteins that can regulate the RPs-MDM2-p53 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Sasaki et al., 2011 and Uchi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "cfdd1053-9dd0-4849-910a-247d380b13e1",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C21",
+      "claim": "SRSF1 activates uL18.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are a few proteins that have been identified to regulate this RPs-MDM2-p53 pathway, such as PICT-1 inhibition of uL5 (Sasaki et al., 2011; Uchi et al., 2013) and SRSF1 activation of uL18 (Fregoso et al., 2013), it still remains to be determined if there are more proteins that can regulate the RPs-MDM2-p53 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Fregoso et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "fb825318-61ad-43ed-aa32-5a446db2fe5e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C22",
+      "claim": "SPIN1 was originally identified as a highly expressed protein in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1, a new member of the SPIN/SSTY family, was originally identified as a highly expressed protein in ovarian cancer (Yue et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Yue et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "68c69037-90c5-4e39-ba42-d2dc79b8e47e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C23",
+      "claim": "Overexpression of SPIN1 increases transformation and tumor growth ability of NIH3T3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The oncogenic potential of SPIN1 was later supported by the observation that overexpression of SPIN1 increases transformation and tumor growth ability of NIH3T3 cells (Gao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to Gao et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7e5891c9-05ea-45c7-9c27-dced46420ee2",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C24",
+      "claim": "SPIN1 acts as a reader of histone H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SPIN1 acts as a reader of histone H3K4me3 and stimulates the transcription of ribosomal RNA-encoding genes (Bae et al., 2017; Su et al., 2014; Wang et al., 2011), suggesting its role in rRNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Bae et al., 2017; Su et al., 2014; Wang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "00b120bd-7359-4066-8479-fd47b0cae33a",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C25",
+      "claim": "SPIN1 stimulates the transcription of ribosomal RNA-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SPIN1 acts as a reader of histone H3K4me3 and stimulates the transcription of ribosomal RNA-encoding genes (Bae et al., 2017; Su et al., 2014; Wang et al., 2011), suggesting its role in rRNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Bae et al., 2017; Su et al., 2014; Wang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "dee02771-8c01-4a6f-a226-3bad81f42e57",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C26",
+      "claim": "SPIN1 was identified as one of the potential uL18 binding proteins by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The MS results not only revealed several previously described p53 regulatory proteins, such as MYBBP1A, PRMT5 and SRSF1, as uL18 binding proteins (Table 1), but also identified SPIN1 as a novel uL18-binding protein candidate that was previously shown to play a role in tumorigenesis and rDNA transcription (Wang et al., 2012, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by mass spectrometry data shown in Figure 1A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "20998457-c2fd-4faa-8f30-1f65ef7ec2b8",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C27",
+      "claim": "Ectopic SPIN1 was specifically pulled down by ectopic uL18 in HCT116p53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ectopic SPIN1 was specifically pulled down by ectopic uL18 and vice versa in HCT116p53-/- cells (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "ad3e820b-c040-4fe1-b179-2a716a8264d9",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C28",
+      "claim": "Endogenous SPIN1 and uL18 interact in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we validated the interaction between endogenous SPIN1 and uL18 in HEK293 cells using anti-SPIN1 antibody (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "44c1e92b-c839-4930-aa3d-76ff11c9ecbc",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C29",
+      "claim": "Only uL18, but not uL5, was co-immunoprecipitated with SPIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only uL18, but not uL5, was co-immunoprecipitated with SPIN1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e614a9da-32a9-4f5d-b057-e362574db54e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C30",
+      "claim": "Only uL18, but not uL5 or uL14, could pull down Myc-SPIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this result, when comparing ectopic Flag-uL18 with Flag-uL5 and Flag-uL14, we found that only uL18, but not the other RPs, could pull down Myc-SPIN1 (Figure 1E), further bolstering the specific interaction between uL18 and SPIN1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "685ba3bb-ceb1-4ab6-ae4e-f68f5b4fad31",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C31",
+      "claim": "Knockdown of SPIN1 dramatically elevates p53 protein level in wild-type p53-containing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that knockdown of SPIN1 dramatically elevates p53 protein level in several wild-type p53-containing cells, including U2OS, H460 and HCT116p53+/+ cells (Figure 2A), without affecting TP53 mRNA expression (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f575d854-8166-4e5e-8521-32b2b87bda65",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C32",
+      "claim": "SPIN1 knockdown does not affect TP53 mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that knockdown of SPIN1 dramatically elevates p53 protein level in several wild-type p53-containing cells, including U2OS, H460 and HCT116p53+/+ cells (Figure 2A), without affecting TP53 mRNA expression (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by RT-qPCR data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "0d76b464-0a04-4cbd-b846-e2c1cd333dbf",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C33",
+      "claim": "Protein and mRNA levels of p53 target genes, such as p21 and PUMA, were increased in response to SPIN1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, protein and mRNA levels of p53 target genes, such as p21 and PUMA, were also increased in response to SPIN1 knockdown (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot and RT-qPCR data in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f2313cd7-8e8c-4b24-a25c-ef3ce0469363",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C34",
+      "claim": "Overexpression of SPIN1 in HCT116p53+/+ decreased the protein levels of p53 and its targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overexpression of SPIN1 in HCT116p53+/+ decreased the protein levels of p53 and its targets, such as p21 and PUMA, and the mRNA levels of these target genes, without affecting TP53 mRNA level (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "11fd2122-7370-45cb-a7c2-b9f70441b512",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C35",
+      "claim": "Overexpression of SPIN1 decreased the mRNA levels of p53 target genes without affecting TP53 mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overexpression of SPIN1 in HCT116p53+/+ decreased the protein levels of p53 and its targets, such as p21 and PUMA, and the mRNA levels of these target genes, without affecting TP53 mRNA level (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by RT-qPCR data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "71f02bed-c7da-4231-99b3-997fbfd14d44",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C36",
+      "claim": "Ectopic expression of FLAG-SPIN1 reversed p53 activation by siRNA-mediated knockdown of SPIN1 in HCT116p53+/+.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was unlikely due to off-target effects of siRNA, as ectopic expression of FLAG-SPIN1 reversed p53 activation by siRNA-mediated knockdown of SPIN1 in HCT116p53+/+ (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d7d7190a-4848-48c0-8d78-cdbfe0b3feb2",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C37",
+      "claim": "SPIN1 ablation more dramatically represses the cell viability of HCT116p53+/+ than that of HCT116p53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these cell lines for cell viability assays, we observed that SPIN1 ablation more dramatically represses the cell viability of HCT116p53+/+ than that of HCT116p53-/- cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by cell viability assay data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f1956a26-b252-484d-a88d-4ceb46ecf9ba",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C38",
+      "claim": "SPIN1 depletion led to more predominant reduction of HCT116p53+/+ colonies than that of HCT116p53-/- colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, SPIN1 depletion also led to more predominant reduction of HCT116p53+/+ colonies than that of HCT116p53-/- colonies, although both of the reductions were statistically significant (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by colony formation assay data in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "22dbd86d-b405-4385-9a72-0c4ef556f94e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C39",
+      "claim": "The percentage of cells undergoing apoptosis caused by SPIN1 shRNAs was much higher in HCT116p53+/+ cells than in HCT116p53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the percentage of cells undergoing apoptosis caused by SPIN1 shRNAs was much higher in HCT116p53+/+ cells than in HCT116p53-/- cells, as measured by sub-G1 population (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by flow cytometry data in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "9ecc66bb-e918-4495-b22b-dea7e43716fd",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C40",
+      "claim": "Knockdown of SPIN1 markedly prolonged p53's half-life from 35 mins to 56 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A and B, knockdown of SPIN1 markedly prolonged p53's half-life from 35 mins to 56 mins, as compared to scramble siRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by cycloheximide-chase experiment data in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "06db37a3-c824-4fd2-8467-449e7b8bdbd7",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C41",
+      "claim": "Ectopic SPIN1 greatly shortened p53's half-life, from 39 mins to ~22 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, ectopic SPIN1 greatly shortened p53's half-life, from 39 mins to ~22 mins (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by cycloheximide-chase experiment data in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e6ad6e39-f57a-4cca-a7d0-582a54427f0f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C42",
+      "claim": "Ectopic SPIN1 enhances MDM2-mediated p53 ubiquitination in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results clearly showed that ectopic SPIN1 enhances MDM2-mediated p53 ubiquitination in a dose-dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by in vivo ubiquitination assay data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "4d2227f1-aa88-4549-9f60-cadd6ce148de",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C43",
+      "claim": "Co-transfection of SPIN1 with MDM2 led to a stronger reduction of p53 protein levels, which was abrogated by proteasome inhibitor MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, co-transfection of SPIN1 with MDM2 led to a stronger reduction of p53 protein levels, which was abrogated by proteasome inhibitor MG132 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "55cb86dd-a73d-4642-a96c-e3fe42f4d5d7",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C44",
+      "claim": "The induction of p53 degradation by SPIN1 was MDM2-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the induction of p53 degradation by SPIN1 was MDM2-dependent, as overexpression of SPIN1 failed to repress ectopic p53 protein expression in Trp53 and Mdm2 double knockout MEF cells (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "fd80743e-6445-4711-bd60-c6683c77f416",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C45",
+      "claim": "Overexpression of uL18 induced the protein levels of p53 and its targets in wild-type p53-containing U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as expected (Dai and Lu, 2004), overexpression of uL18 induced the protein levels of p53 and its targets, such as p21 and MDM2, in wild-type p53-containing U2OS cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "639d4684-3f08-45ba-b74e-0faf849e3893",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C46",
+      "claim": "The induction of the p53 pathway by uL18 was markedly reduced by co-transfected SPIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "This induction of the p53 pathway by uL18 was markedly reduced by co-transfected SPIN1 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e9c4c405-a70e-45e9-8ca0-f734c9753228",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C47",
+      "claim": "Ectopic Myc-SPIN1 dramatically reduces the amount of Flag-uL18 co-immunoprecipitated with HA-MDM2 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our co-immunoprecipitation result showed that ectopic Myc-SPIN1 dramatically reduces the amount of Flag-uL18 co-immunoprecipitated with HA-MDM2 in a dose-dependent manner, although Myc-SPIN1 itself did not co-immunoprecipitate with HA-MDM2 (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "996c0de4-5306-4d76-a51a-48e861636921",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C48",
+      "claim": "Myc-SPIN1 itself did not co-immunoprecipitate with HA-MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our co-immunoprecipitation result showed that ectopic Myc-SPIN1 dramatically reduces the amount of Flag-uL18 co-immunoprecipitated with HA-MDM2 in a dose-dependent manner, although Myc-SPIN1 itself did not co-immunoprecipitate with HA-MDM2 (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "beb3f274-e64a-4ab2-8702-67a36274ad9f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C49",
+      "claim": "Myc-SPIN1 overexpression did not alter the interactions between uL5 and MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was specific to the uL18-MDM2 interaction, as Myc-SPIN1 overexpression did not alter the interactions between uL5 and MDM2 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "5b77b1a6-0374-455d-bcd9-5daa81642dee",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C50",
+      "claim": "SPIN1 and uL18 are clearly co-localized in the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our immunofluorescence result (Figure 4D and Figure 4\u2014figure supplement 1B) showed that SPIN1 and uL18 are clearly co-localized in the nucleolus, suggesting that SPIN1 might sequester uL18 in the nucleolus and thus prevent it from binding and inactivating MDM2 in the nucleoplasm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by immunofluorescence data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d7ea4aa7-c4b2-44ed-a584-b7264206dcfc",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C51",
+      "claim": "The levels of uL18 and uL5 in the soluble and ribosome-unbound fractions were markedly increased in SPIN1-depletion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the levels of uL18 and uL5 in the soluble and ribosome-unbound fractions were markedly increased in SPIN1-depletion cells, accompanying with elevated p53 and MDM2 protein levels (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by sucrose gradient fractionation data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "b9bbd3c3-3c1b-4883-9c52-5b9c2d120ef9",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C52",
+      "claim": "The binding between endogenous uL18/uL5 and MDM2 increased upon SPIN1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the binding between endogenous uL18/uL5 and MDM2 increased upon SPIN1 knockdown, resembling ribosomal stress (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by co-IP data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "cb674cb6-b55a-40dc-81ae-54d5ec0e80eb",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C53",
+      "claim": "Knockdown of SPIN1 reduced the expression of pre-rRNA and rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as expected, knockdown of SPIN1 reduced the expression of pre-rRNA and rRNA (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by RT-qPCR data in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "3f98f129-5a9c-4371-882d-9eff52d21a5e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C54",
+      "claim": "Overexpression of SPIN1 compromised p53 activation induced by actinomycin D or 5-Fu treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as clearly illustrated in Figure 5C, overexpression of SPIN1 compromised p53 activation induced by actinomycin D or 5-Fu treatment, which was reported to trigger ribosomal stress that in turn triggers the formation of RPs-MDM2 complex (Sun et al., 2007; Dai and Lu, 2004; Jin et al., 2004; Boulon et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "72428790-92ed-4032-b10f-54b54934a340",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C55",
+      "claim": "The Y170A mutant of SPIN1 was still able to suppress p53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Y170A mutant of SPIN1, which loses the ability to interact with trimethylated K4 (Su et al., 2014; Wang et al., 2011), was still able to suppress p53 activity (Figure 5\u2014figure supplement 1B), suggesting that SPIN1 regulation of p53 is independent of the activity of SPIN1 in regulating rRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "1f795c54-ede4-4bd8-a698-043b6a443428",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C56",
+      "claim": "SPIN1 regulation of p53 is independent of the activity of SPIN1 in regulating rRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Y170A mutant of SPIN1, which loses the ability to interact with trimethylated K4 (Su et al., 2014; Wang et al., 2011), was still able to suppress p53 activity (Figure 5\u2014figure supplement 1B), suggesting that SPIN1 regulation of p53 is independent of the activity of SPIN1 in regulating rRNA expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "32a71e84-fee6-4d0e-bcfc-ff10775ae528",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C57",
+      "claim": "Both the N- and C-termini of uL18 were found to bind to SPIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both the N- and C-termini of uL18 were found to bind to SPIN1 (Figure 5\u2014figure supplement 2C and D), and these two fragments were required for uL18-MDM2 binding as well (Figure 5\u2014figure supplement 2E and F), further supporting our observation that SPIN1 could compete with MDM2 for uL18 binding (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by GST pull-down data in Figure 5\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "0eb39234-0384-4e85-bea2-37fa65a3b48e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C58",
+      "claim": "The reduction of either uL18 or uL5 abrogated SPIN1 knockdown-induced p53 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the reduction of either uL18 or uL5 abrogated SPIN1 knockdown-induced p53 levels, as well as its target p21, as compared to scramble siRNA-transfected cells (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "fb85528f-2e40-4142-ba0b-f10b14c60444",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C59",
+      "claim": "SPIN1 knockdown more markedly slowed down the growth of xenograft tumors derived from HCT116p53+/+ cells than that from HCT116p53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6A and B, SPIN1 knockdown more markedly slowed down the growth of xenograft tumors derived from HCT116p53+/+ cells than that from HCT116p53-/- cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by xenograft tumor growth data in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "85f8a859-65d4-4197-9794-759e3850473e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C60",
+      "claim": "SPIN1 depletion also reduced the growth of tumors derived from HCT116p53-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, SPIN1 depletion also reduced the growth of tumors derived from HCT116p53-/- cells, suggesting that SPIN1 might possess a p53-independent function required for cancer cell growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by xenograft tumor growth data in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e9e2a41e-1d97-4f53-8f3e-c0f50375375a",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C61",
+      "claim": "The reduction of tumor mass and weight by SPIN1 knockdown was more profound in HCT116p53+/+ groups (~60% reduction in weight) than that in HCT116p53-/- groups (~30% reduction in weight).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the tumor growth curve, the reduction of tumor mass and weight by SPIN1 knockdown was more profound in HCT116p53+/+ groups (~60% reduction in weight) than that in HCT116p53-/- groups (~30% reduction in weight) (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by tumor weight data in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7f3787c7-95da-416b-8c28-e98a767dc533",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C62",
+      "claim": "The mRNA levels of p21 and PUMA were significantly increased upon SPIN1 knockdown in HCT116p53+/+, but not in HCT116 p53-/- tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the mRNA levels of p21 and PUMA were significantly increased upon SPIN1 knockdown in HCT116p53+/+, but not in HCT116 p53-/- tumors (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by RT-qPCR data in Figure 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "ccd1d2d1-dfc2-4f7a-bed1-f3dba405726e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C63",
+      "claim": "The protein levels of p53 and its target PUMA were elevated in HCT116p53+/+ groups, but not in HCT116p53-/- groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the protein levels of p53 and its target PUMA were elevated in HCT116p53+/+ groups, but not in HCT116p53-/- groups (Figure 6G and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "084b8458-5da1-4a22-9c10-2b49f6edf166",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C64",
+      "claim": "The SPIN1 gene is markedly amplified in a panel of cancers, including prostate, sarcoma, lung, stomach, breast, head and neck, pancreas and colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our analysis of TCGA genome database (Cerami et al., 2012; Gao et al., 2013) indicated that the SPIN1 gene is markedly amplified in a panel of cancers, including prostate, sarcoma, lung, stomach, breast, head and neck, pancreas and colorectal cancers (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by TCGA database analysis in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "5e8f8cf3-36b0-45af-bc0c-3042c07de4c9",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C65",
+      "claim": "SPIN1 mRNA expression is extensively upregulated in melanoma tissues when compared with normal skin tissues (~2.367 folds upregulation).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, the analysis of Oncomine database (Rhodes et al., 2007) also showed that SPIN1 mRNA expression is extensively upregulated in melanoma tissues when compared with normal skin tissues (~2.367 folds upregulation, Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Oncomine database analysis in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "9030e7c3-1a84-4072-b39c-07fce08ae412",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C66",
+      "claim": "Overexpression of SPIN1 is correlated with poorer prognosis in patients with breast cancer, colorectal cancer and gastric cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using databases (Cerami et al., 2012; Mizuno et al., 2009; SzaszSz\u00e1sz et al., 2016) that contain gene expression profiles of clinical cancer samples combined with patient outcomes, we found that overexpression of SPIN1 is correlated with poorer prognosis in patients with breast cancer, colorectal cancer and gastric cancer (Figure 6\u2014figure supplement 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by survival analysis in Figure 6\u2014figure supplement 2C-F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7c5b2f34-bc3a-4206-ad3b-460784e232e3",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C67",
+      "claim": "Elevated protein expression of SPIN1 was observed in a panel of human colon tumor samples compared with normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated protein expression was also observed in a panel of human colon tumor samples compared with normal tissues (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e6f3c727-d2ff-4531-8440-62fb75570acc",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C68",
+      "claim": "SPIN1 specifically forms an independent complex with uL18, but not MDM2 or other ribosomal proteins, such as uL5 or uL14.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from their studies, SPIN1 specifically forms an independent complex with uL18, but not MDM2 or other ribosomal proteins, such as uL5 or uL14, and acts as a negative regulator of p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by co-IP data in Figures 1 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "01cb2bdc-5e3e-41b6-b22f-feea80a85fab",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C69",
+      "claim": "SPIN1 acts as a negative regulator of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from their studies, SPIN1 specifically forms an independent complex with uL18, but not MDM2 or other ribosomal proteins, such as uL5 or uL14, and acts as a negative regulator of p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by multiple experimental data in Figures 2-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "78ccac5f-b17d-40a9-87fa-ef9a0231aabf",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C70",
+      "claim": "SPIN1 expression could be negatively monitored by some tumor suppressive non-coding RNAs, such as miR-489 and miR-219\u20135p.",
+      "claim_type": "EXPLICIT",
+      "source": "SPIN1 expression in cells is tightly controlled, as several studies have shown that SPIN1 expression could be negatively monitored by some tumor suppressive non-coding RNAs, such as miR-489 and miR-219\u20135p (Chen et al., 2017; Drago-Ferrante et al., 2017; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to Chen et al., 2017; Drago-Ferrante et al., 2017; Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "467a5352-89c0-4cf6-a4e5-f887a23977cf",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C71",
+      "claim": "Elevated expression of SPIN1 was strongly correlated with advanced histological stage, chemoresistance and metastasis in patients with breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, elevated expression of SPIN1 was strongly correlated with advanced histological stage, chemoresistance and metastasis in patients with breast cancer (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7f58eb6f-3e91-4708-8d57-dd1836eced22",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C72",
+      "claim": "SPIN1 ablation had a moderate inhibitory effect on cell growth in p53-null HCT116 cells in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also found that SPIN1 ablation had a moderate inhibitory effect on cell growth in p53-null HCT116 cells in vitro and in vivo as mentioned above (Figures 2 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figures 2 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d8e21dff-3119-4394-a4d3-df357e78a2c2",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C73",
+      "claim": "SPIN1 has been reported to execute its oncogenic potentials by activating Wnt and PI3K/Akt pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "First, SPIN1 has been reported to execute its oncogenic potentials by activating Wnt and PI3K/Akt pathways (Chen et al., 2016; Wang et al., 2012), both of which are closely correlated with cancer progression (Liu et al., 2009; Polakis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to Chen et al., 2016; Wang et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "645e2d67-2b5e-407b-b093-9c5493f140d4",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C74",
+      "claim": "uL18 and uL5 could activate TAp73 through association with MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, since our previous study has demonstrated that uL18 and uL5 could activate TAp73 through association with MDM2 (Zhou et al., 2015), it is possible that the SPIN1-uL18 interaction might impose suppression on TAp73 activity as well, ultimately leading to cell growth arrest and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to Zhou et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7c67ce83-13cd-41ab-859c-12505758fc80",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C75",
+      "claim": "SPIN1 gene expression was correlated with genes (22 genes) enriched in p53 signaling pathway in colorectal tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, bio-informatic analysis on gene expression data of 644 colorectal tumors downloaded from Genomic Data Commons (https://portal.gdc.cancer.gov/) showed that SPIN1 gene expression was correlated with genes (22 genes) enriched in p53 signaling pathway (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by bioinformatic analysis in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "a16fb625-7d28-4933-8722-b82ee257eb64",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C76",
+      "claim": "SPIN1 can promote tumor growth and survival by inactivating p53 and its pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that SPIN1 can promote tumor growth and survival by inactivating p53 and its pathway (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by xenograft data in Figure 6 and model in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "3d6806bf-5706-4053-910e-6b27077f55c4",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C77",
+      "claim": "The oncogenic property of SPIN1 may be attributed to its negative regulation of uL18, leading to p53 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our findings reveal that the oncogenic property of SPIN1 may be attributed to its negative regulation of uL18, leading to p53 inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "0799019e-eb21-46cd-b5cb-c76270bf9545",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C78",
+      "claim": "SPIN1 is a new uL18 inhibitory regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "In this present study, we identified SPIN1 as a new uL18 inhibitory regulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e165f96a-0f98-4f70-a37d-91d2650f5c1c",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C79",
+      "claim": "Signaling pathways responsible for SPIN1 functions include PI3K/Akt, Wnt and RET that are highly relevant to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling pathways responsible for SPIN1 functions include PI3K/Akt, Wnt and RET that are highly relevant to tumorigenesis (Chen et al., 2016; Wang et al., 2012; Franz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to Chen et al., 2016; Wang et al., 2012; Franz et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "2b111d67-e409-4a9c-88d4-1a7b1193c809",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C80",
+      "claim": "SPIN1 is important for the uL18-MDM2-p53 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify SPIN1 (Spindlin 1) as a novel binding partner of human RPL5/uL18 that is important for this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by multiple experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "667a87fc-dccf-4eac-8a1c-121e16ac086c",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C81",
+      "claim": "SPIN1 is a potential molecule target in the RP-MDM2-p53 pathway for developing anticancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results for the first time demonstrate that SPIN1 can regulate the RP-MDM2-p53 pathway by directly interacting with uL18, and suggest SPIN1 as a potential molecule target in this pathway for developing anticancer therapy in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a conclusion and suggestion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f1bf59ff-f770-41e8-8f64-ad4dcce88186",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C82",
+      "claim": "The critical amino acids Y170, F141 and Y177 for trimethylated K4 interaction are all located in the SPIN1 Tudor two domain that is responsible for uL18 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mapping results showed that the critical amino acids Y170, F141 and Y177 for trimethylated K4 interaction (Su et al., 2014; Wang et al., 2011) are all located in the SPIN1 Tudor two domain that is responsible for uL18 binding (Figure 5\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by mapping data in Figure 5\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "161a95e7-8ab0-46f5-b07f-92c9c9b8f713",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C83",
+      "claim": "The Y170A mutant of SPIN1 loses the ability to interact with trimethylated K4.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Y170A mutant of SPIN1, which loses the ability to interact with trimethylated K4 (Su et al., 2014; Wang et al., 2011), was still able to suppress p53 activity (Figure 5\u2014figure supplement 1B), suggesting that SPIN1 regulation of p53 is independent of the activity of SPIN1 in regulating rRNA expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to Su et al., 2014; Wang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "783b8f55-8272-455d-9b1f-b2101179c87f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C84",
+      "claim": "SPIN1 might sequester uL18 in the nucleolus and thus prevent it from binding and inactivating MDM2 in the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Our immunofluorescence result (Figure 4D and Figure 4\u2014figure supplement 1B) showed that SPIN1 and uL18 are clearly co-localized in the nucleolus, suggesting that SPIN1 might sequester uL18 in the nucleolus and thus prevent it from binding and inactivating MDM2 in the nucleoplasm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by immunofluorescence data in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "68bdcf1c-c34d-4d2b-811f-74261f56fd9c",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C85",
+      "claim": "SPIN1 might possess p53-independent oncogenic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we also found that SPIN1 ablation had a moderate inhibitory effect on cell growth in p53-null HCT116 cells in vitro and in vivo as mentioned above (Figures 2 and 6). These findings suggest that SPIN1 must also possess p53-independent oncogenic effects, which might be explained by two possible mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figures 2 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "f1b2dd1f-ef8c-486f-bdec-51764d7d5576",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C86",
+      "claim": "The SPIN1-uL18 interaction might impose suppression on TAp73 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, since our previous study has demonstrated that uL18 and uL5 could activate TAp73 through association with MDM2 (Zhou et al., 2015), it is possible that the SPIN1-uL18 interaction might impose suppression on TAp73 activity as well, ultimately leading to cell growth arrest and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a speculation based on previous findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "fbd0634d-f8a3-4e97-9323-e6dec03c997c",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C87",
+      "claim": "Dysregulation of SPIN1 may perturb ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated the role of SPIN1 in rRNA transcription (Bae et al., 2017; Su et al., 2014), which provides a clue that dysregulation of SPIN1 may perturb ribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to Bae et al., 2017; Su et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e537d980-29e3-4cb8-9401-69d3acd0ef71",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C88",
+      "claim": "SPIN1 depletion per se increases the levels of ribosome-free uL18 and uL5, accompanying elevated p53 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in our current study, we observed that SPIN1 depletion per se increases the levels of ribosome-free uL18 and uL5, accompanying elevated p53 protein levels (Figure 5), which recapitulates the effects of ribosomal stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "56470333-c005-43d1-8040-0e6b242bccf0",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C89",
+      "claim": "p53 induction caused by SPIN1 depletion could be abrogated by knockdown of either uL18 or uL5.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that p53 induction caused by SPIN1 depletion could be abrogated by knockdown of either uL18 or uL5 further supports this hypothesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "70223503-2aef-420c-8f74-71c70e84841f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C90",
+      "claim": "SPIN1 counteracts p53 by blocking the interaction between uL18 and MDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while it is conceivable that SPIN1 counteracts p53 by blocking the interaction between uL18 and MDM2 as discussed above, the mechanism by which disruption of SPIN1 causes ribosomal stress may be also responsible for p53 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "76a47aab-0404-4bd1-849a-8a96e826e6f1",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C91",
+      "claim": "Disruption of SPIN1 causes ribosomal stress which may be responsible for p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while it is conceivable that SPIN1 counteracts p53 by blocking the interaction between uL18 and MDM2 as discussed above, the mechanism by which disruption of SPIN1 causes ribosomal stress may be also responsible for p53 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a conclusion based on the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "2aa5732c-8d37-49d7-a976-a4a740fe4995",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C92",
+      "claim": "SPIN1 is another novel and important regulator of the MDM2-p53 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings unveil SPIN1 as another novel and important regulator of the MDM2-p53 pathway by predominantly inhibiting the association of uL18 with MDM2 to modulate p53 activity (Figure 7) and provide more molecular insights into the fine regulation of this pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "75e99e6a-d09e-41ff-bc95-cb60c66806e7",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C93",
+      "claim": "SPIN1 predominantly inhibits the association of uL18 with MDM2 to modulate p53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings unveil SPIN1 as another novel and important regulator of the MDM2-p53 pathway by predominantly inhibiting the association of uL18 with MDM2 to modulate p53 activity (Figure 7) and provide more molecular insights into the fine regulation of this pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "df3f30ee-df8b-4602-9f26-042a53a9ccd1",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C94",
+      "claim": "MYBBP1A, PRMT5 and SRSF1 are uL18 binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The MS results not only revealed several previously described p53 regulatory proteins, such as MYBBP1A, PRMT5 and SRSF1, as uL18 binding proteins (Table 1), but also identified SPIN1 as a novel uL18-binding protein candidate that was previously shown to play a role in tumorigenesis and rDNA transcription (Wang et al., 2012, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by mass spectrometry data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "63e1304b-a902-4d9a-bfd6-5572d8565ac3",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C95",
+      "claim": "SPIN1 was previously shown to play a role in tumorigenesis and rDNA transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The MS results not only revealed several previously described p53 regulatory proteins, such as MYBBP1A, PRMT5 and SRSF1, as uL18 binding proteins (Table 1), but also identified SPIN1 as a novel uL18-binding protein candidate that was previously shown to play a role in tumorigenesis and rDNA transcription (Wang et al., 2012, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to Wang et al., 2012, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "23a069bb-4807-49c4-8251-0d4eccfc94e2",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C96",
+      "claim": "The effects of SPIN1 siRNA on p53 activity were dose-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the effects of SPIN1 siRNA on p53 activity were dose-dependent (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Western blot data in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "41444a55-5f39-48a2-9187-18a9d95a047e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C97",
+      "claim": "uL18 can stabilize p53 by binding to MDM2 and inhibiting its E3 ligase activity toward p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Our and others' studies previously demonstrated that uL18 can stabilize p53 by binding to MDM2 and inhibiting its E3 ligase activity toward p53 (Dai and Lu, 2004; Bursa\u0107 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to Dai and Lu, 2004; Bursa\u0107 et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7d89a991-c7b3-48f9-8ea2-1ee42732cb3e",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C98",
+      "claim": "Actinomycin D and 5-Fu treatment trigger ribosomal stress that in turn triggers the formation of RPs-MDM2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as clearly illustrated in Figure 5C, overexpression of SPIN1 compromised p53 activation induced by actinomycin D or 5-Fu treatment, which was reported to trigger ribosomal stress that in turn triggers the formation of RPs-MDM2 complex (Sun et al., 2007; Dai and Lu, 2004; Jin et al., 2004; Boulon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to Sun et al., 2007; Dai and Lu, 2004; Jin et al., 2004; Boulon et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "25fe0b08-026a-4ae5-be07-e920140de88d",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C99",
+      "claim": "Both the N- and C-termini of uL18 are required for uL18-MDM2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both the N- and C-termini of uL18 were found to bind to SPIN1 (Figure 5\u2014figure supplement 2C and D), and these two fragments were required for uL18-MDM2 binding as well (Figure 5\u2014figure supplement 2E and F), further supporting our observation that SPIN1 could compete with MDM2 for uL18 binding (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by GST pull-down data in Figure 5\u2014figure supplement 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "7b1e0255-2306-41dc-88bb-b7dede143114",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C100",
+      "claim": "SPIN1 could compete with MDM2 for uL18 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both the N- and C-termini of uL18 were found to bind to SPIN1 (Figure 5\u2014figure supplement 2C and D), and these two fragments were required for uL18-MDM2 binding as well (Figure 5\u2014figure supplement 2E and F), further supporting our observation that SPIN1 could compete with MDM2 for uL18 binding (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4B and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "973689e5-c0a7-4824-9244-490626adad5c",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C101",
+      "claim": "Impairment of the ribosomal stress-uL18/uL5-p53 pathway could accelerate tumorigenesis in c-Myc transgenic lymphoma mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor suppressor p53 provides a critical brake on cancer development in response to ribosomal stress, as impairing this ribosomal stress-uL18/uL5-p53 pathway could accelerate tumorigenesis in c-Myc transgenic lymphoma mice (Macias et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to Macias et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "43024da8-efc9-4530-bf34-61069b669fdf",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "claim_id": "C102",
+      "claim": "SRSF1 was identified as a component of the RP-MDM2-p53 complex, and could stabilize p53 via uL18.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, SRSF1 was identified as a component of the RP-MDM2-p53 complex, and could stabilize p53 via uL18 (Fregoso et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to Fregoso et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SPIN1 specifically interacts with uL18 but not with other ribosomal proteins (uL5, uL14) or MDM2. This interaction was validated through mass spectrometry, co-immunoprecipitation with ectopic and endogenous proteins, and specificity testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C26-C30, and C68 provide converging evidence from multiple orthogonal approaches (MS, co-IP with ectopic and endogenous proteins, specificity controls) demonstrating SPIN1-uL18 interaction. The specificity is well-established through negative controls with uL5, uL14, and MDM2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SPIN1 knockdown activates p53 and its target genes (p21, PUMA) at the protein level without affecting TP53 mRNA, while SPIN1 overexpression has the opposite effect. These effects are dose-dependent and not due to off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31-C36, and C96 demonstrate consistent bidirectional effects of SPIN1 manipulation on p53 pathway activation across multiple cell lines with appropriate controls (rescue experiment C36, dose-response C96). The post-transcriptional mechanism is supported by mRNA data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SPIN1 ablation suppresses cell growth, reduces clonogenic ability, and induces apoptosis predominantly in p53-wildtype cells, though moderate effects are observed in p53-null cells suggesting p53-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C37-C39, and C72 show consistent phenotypic effects across multiple assays (viability, colony formation, apoptosis) with appropriate p53+/+ vs p53-/- comparisons. The differential effects support p53-dependence while acknowledging p53-independent contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SPIN1 promotes p53 degradation by enhancing MDM2-mediated ubiquitination. SPIN1 knockdown extends p53 half-life while overexpression shortens it. This effect is MDM2-dependent and proteasome-mediated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C8 provide mechanistic evidence through half-life measurements, ubiquitination assays, proteasome inhibitor experiments, and genetic controls (Mdm2-/- cells). The data consistently support SPIN1's role in promoting p53 degradation via MDM2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "5864621d-ae6b-4f10-baad-a4fffabe43b1",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SPIN1 sequesters uL18 in the nucleolus and prevents its interaction with MDM2 in a dose-dependent manner. SPIN1 does not directly bind MDM2 and specifically affects uL18-MDM2 but not uL5-MDM2 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C47-C50, C84, C93, and C100 demonstrate the mechanism through co-localization (immunofluorescence), competitive binding (dose-dependent co-IP), and specificity controls. The data support sequestration as the mechanism preventing uL18-MDM2 interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "1e366b24-591a-4df0-90e1-4a62c43c0fef",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SPIN1 depletion causes ribosomal stress, increasing ribosome-free uL18 and uL5 levels, which are required for p53 activation. SPIN1 knockdown reduces rRNA expression and increases uL18/uL5-MDM2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C51-C53, C58, C88-C89, and C91 provide evidence through sucrose gradient fractionation, co-IP, rRNA measurements, and genetic epistasis experiments (uL18/uL5 knockdown rescues). The data support dual mechanisms of SPIN1 action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "74a2f599-b28c-497d-a669-538215972ae4",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SPIN1 knockdown inhibits xenograft tumor growth more significantly in p53+/+ than p53-/- cells, with corresponding changes in p53 target gene expression. SPIN1 promotes tumor growth by inactivating p53.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 and C76 demonstrate in vivo relevance through xenograft experiments with appropriate p53+/+ vs p53-/- comparisons. Tumor measurements, molecular markers (mRNA and protein), and statistical analysis support the p53-dependent tumor suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SPIN1 is highly expressed and frequently amplified in multiple human cancers. High SPIN1 expression correlates with poor prognosis in breast, colorectal, and gastric cancers, and SPIN1 expression correlates with p53 pathway genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C64-C67, and C75 provide clinical relevance through database analyses (TCGA, Oncomine), survival analyses, Western blot validation in patient samples, and bioinformatic correlation with p53 pathway genes. Multiple independent datasets support the oncogenic role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "0d2169ac-75cf-46c9-b035-61be6c6f3a8d",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SPIN1 overexpression reduces p53 pathway activation induced by uL18 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 demonstrate functional antagonism between SPIN1 and uL18 through co-transfection experiments with Western blot readouts, consistent with the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SPIN1 regulation of p53 is independent of its rRNA transcription activity. The Y170A mutant that cannot bind H3K4me3 still suppresses p53, though the critical residues are in the Tudor 2 domain required for uL18 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C82-C83 use a separation-of-function mutant and drug treatments to distinguish SPIN1's p53 regulatory function from its rRNA transcription role. The mapping data (C82) provides structural context for the overlapping binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "cadee660-484a-40d2-a3f4-775996ff20ab",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both N- and C-termini of uL18 bind to SPIN1 and are required for uL18-MDM2 binding, supporting competitive binding between SPIN1 and MDM2 for uL18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C99 use GST pull-down assays with uL18 fragments to map binding regions. The overlapping binding requirements for SPIN1 and MDM2 support the competitive mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "ac19c484-95ef-4d91-9b83-e7f458f8775f",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about p53 biology, MDM2 function, ribosomal stress pathway, and prior SPIN1 literature establish the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C25, C70-C71, C73-C74, C79, C94-C95, C97-C98, C101-C102 are literature-based background claims supported by appropriate citations. These establish the foundation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "721198c8-bebf-4989-951e-7a065ee99913",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SPIN1 is a novel negative regulator of the uL18-MDM2-p53 pathway, and its oncogenic properties may be attributed to p53 inactivation. SPIN1 is proposed as a potential therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C80-C81, C69, C90, C92 represent summary conclusions and interpretations supported by the collective experimental evidence. The therapeutic target claim (C81) is appropriately framed as a suggestion for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "bedc1e45-ddcb-4530-8079-35325bf6a330",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SPIN1 may possess p53-independent oncogenic effects, possibly through Wnt/PI3K/Akt pathways or TAp73 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C86 are speculative mechanistic proposals based on observed p53-independent effects (C72) and prior literature. While the p53-independent effects are documented, the proposed mechanisms lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    },
+    {
+      "id": "e1c0ce86-956f-40fa-aaa5-0affe3260a91",
+      "content_id": "a8633814-e7cf-4fde-b796-570f80e32cba",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Dysregulation of SPIN1 may perturb ribosome biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by the rRNA expression data (C53) and prior literature on SPIN1's role in rRNA transcription, though the mechanism is not fully elucidated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:49:09.650448Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0442d4c7-3892-4452-b27b-4047c1ab4a85",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "dee02771-8c01-4a6f-a226-3bad81f42e57",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "20998457-c2fd-4faa-8f30-1f65ef7ec2b8",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "ad3e820b-c040-4fe1-b179-2a716a8264d9",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "44c1e92b-c839-4930-aa3d-76ff11c9ecbc",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "e614a9da-32a9-4f5d-b057-e362574db54e",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "e6f3c727-d2ff-4531-8440-62fb75570acc",
+      "result_id": "5fd343d0-21bb-4360-bad5-2b7f0d912fb3"
+    },
+    {
+      "claim_id": "c422019f-ada3-464c-b94f-84ef934465d3",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "685ba3bb-ceb1-4ab6-ae4e-f68f5b4fad31",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "f575d854-8166-4e5e-8521-32b2b87bda65",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "0d76b464-0a04-4cbd-b846-e2c1cd333dbf",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "f2313cd7-8e8c-4b24-a25c-ef3ce0469363",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "11fd2122-7370-45cb-a7c2-b9f70441b512",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "71f02bed-c7da-4231-99b3-997fbfd14d44",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "23a069bb-4807-49c4-8251-0d4eccfc94e2",
+      "result_id": "d5fba561-2e0c-43b2-aeb0-7729fb87abb0"
+    },
+    {
+      "claim_id": "2475eabb-77a9-4e11-9eb5-48b8797a692f",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "d7d7190a-4848-48c0-8d78-cdbfe0b3feb2",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "edea0caf-5fc4-4035-a670-f60520971d55",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "f1956a26-b252-484d-a88d-4ceb46ecf9ba",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "bda373e2-ef37-4236-b0eb-08a49df76198",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "22dbd86d-b405-4385-9a72-0c4ef556f94e",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "7f58eb6f-3e91-4708-8d57-dd1836eced22",
+      "result_id": "a545f4dc-b61c-48c7-9675-b6cf87cf7b09"
+    },
+    {
+      "claim_id": "9ecc66bb-e918-4495-b22b-dea7e43716fd",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "06db37a3-c824-4fd2-8467-449e7b8bdbd7",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "e6ad6e39-f57a-4cca-a7d0-582a54427f0f",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "4d2227f1-aa88-4549-9f60-cadd6ce148de",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "55cb86dd-a73d-4642-a96c-e3fe42f4d5d7",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "e6474332-c549-4af1-8589-5fec3d1a3a16",
+      "result_id": "431d2a5b-1ef5-4c3e-9fd9-abcd51c6b9da"
+    },
+    {
+      "claim_id": "8816afd0-3c9c-4cd2-bf48-2074c9d539d6",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "a835561d-a3f6-4275-b6cf-791ba3129279",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "e9c4c405-a70e-45e9-8ca0-f734c9753228",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "996c0de4-5306-4d76-a51a-48e861636921",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "beb3f274-e64a-4ab2-8702-67a36274ad9f",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "5b77b1a6-0374-455d-bcd9-5daa81642dee",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "783b8f55-8272-455d-9b1f-b2101179c87f",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "75e99e6a-d09e-41ff-bc95-cb60c66806e7",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "7b1e0255-2306-41dc-88bb-b7dede143114",
+      "result_id": "5864621d-ae6b-4f10-baad-a4fffabe43b1"
+    },
+    {
+      "claim_id": "b3c2a2d8-6c64-47c4-9500-f8b0002ce857",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "92ab21f3-a07c-4fa3-a3c9-15a74346a956",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "d7ea4aa7-c4b2-44ed-a584-b7264206dcfc",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "b9bbd3c3-3c1b-4883-9c52-5b9c2d120ef9",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "cb674cb6-b55a-40dc-81ae-54d5ec0e80eb",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "0eb39234-0384-4e85-bea2-37fa65a3b48e",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "e537d980-29e3-4cb8-9401-69d3acd0ef71",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "56470333-c005-43d1-8040-0e6b242bccf0",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "76a47aab-0404-4bd1-849a-8a96e826e6f1",
+      "result_id": "1e366b24-591a-4df0-90e1-4a62c43c0fef"
+    },
+    {
+      "claim_id": "fb85528f-2e40-4142-ba0b-f10b14c60444",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "85f8a859-65d4-4197-9794-759e3850473e",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "e9e2a41e-1d97-4f53-8f3e-c0f50375375a",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "7f3787c7-95da-416b-8c28-e98a767dc533",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "ccd1d2d1-dfc2-4f7a-bed1-f3dba405726e",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "a16fb625-7d28-4933-8722-b82ee257eb64",
+      "result_id": "74a2f599-b28c-497d-a669-538215972ae4"
+    },
+    {
+      "claim_id": "1aa8d323-91ba-4b15-a100-4113e86cae40",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "084b8458-5da1-4a22-9c10-2b49f6edf166",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "5e8f8cf3-36b0-45af-bc0c-3042c07de4c9",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "f4ede8bb-054a-4ba5-b26a-1502bfac8502",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "9030e7c3-1a84-4072-b39c-07fce08ae412",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "7c5b2f34-bc3a-4206-ad3b-460784e232e3",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "7c67ce83-13cd-41ab-859c-12505758fc80",
+      "result_id": "69ba28f5-7ac9-48eb-bedd-5ae827344ba4"
+    },
+    {
+      "claim_id": "fd80743e-6445-4711-bd60-c6683c77f416",
+      "result_id": "0d2169ac-75cf-46c9-b035-61be6c6f3a8d"
+    },
+    {
+      "claim_id": "639d4684-3f08-45ba-b74e-0faf849e3893",
+      "result_id": "0d2169ac-75cf-46c9-b035-61be6c6f3a8d"
+    },
+    {
+      "claim_id": "3f98f129-5a9c-4371-882d-9eff52d21a5e",
+      "result_id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b"
+    },
+    {
+      "claim_id": "72428790-92ed-4032-b10f-54b54934a340",
+      "result_id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b"
+    },
+    {
+      "claim_id": "1f795c54-ede4-4bd8-a698-043b6a443428",
+      "result_id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b"
+    },
+    {
+      "claim_id": "f1bf59ff-f770-41e8-8f64-ad4dcce88186",
+      "result_id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b"
+    },
+    {
+      "claim_id": "161a95e7-8ab0-46f5-b07f-92c9c9b8f713",
+      "result_id": "ead3276e-f4c7-4ea4-a685-09e8a08c804b"
+    },
+    {
+      "claim_id": "32a71e84-fee6-4d0e-bcfc-ff10775ae528",
+      "result_id": "cadee660-484a-40d2-a3f4-775996ff20ab"
+    },
+    {
+      "claim_id": "25fe0b08-026a-4ae5-be07-e920140de88d",
+      "result_id": "cadee660-484a-40d2-a3f4-775996ff20ab"
+    },
+    {
+      "claim_id": "e03679c1-a850-4355-838e-9bcf83414e27",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "9e3e4b49-89a3-426f-ab9e-4e8b85d651ff",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "d32bbfdd-a2c5-4a7a-94d7-ddcd55224f56",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "a4c81c92-d9af-4f15-b879-529b5e3ff651",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "689740e2-6d86-4f70-80b6-34b7ed012d50",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "d735f993-71e6-4cc4-b41a-5b4bee143234",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "4af552f1-9f4d-4107-9b5a-ce5373a6073a",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "b804abeb-e964-4eec-868b-cccbef376663",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "cfdd1053-9dd0-4849-910a-247d380b13e1",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "fb825318-61ad-43ed-aa32-5a446db2fe5e",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "68c69037-90c5-4e39-ba42-d2dc79b8e47e",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "7e5891c9-05ea-45c7-9c27-dced46420ee2",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "00b120bd-7359-4066-8479-fd47b0cae33a",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "78ccac5f-b17d-40a9-87fa-ef9a0231aabf",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "467a5352-89c0-4cf6-a4e5-f887a23977cf",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "d8e21dff-3119-4394-a4d3-df357e78a2c2",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "645e2d67-2b5e-407b-b093-9c5493f140d4",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "e165f96a-0f98-4f70-a37d-91d2650f5c1c",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "df3f30ee-df8b-4602-9f26-042a53a9ccd1",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "63e1304b-a902-4d9a-bfd6-5572d8565ac3",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "41444a55-5f39-48a2-9187-18a9d95a047e",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "7d89a991-c7b3-48f9-8ea2-1ee42732cb3e",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "973689e5-c0a7-4824-9244-490626adad5c",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "43024da8-efc9-4530-bf34-61069b669fdf",
+      "result_id": "ac19c484-95ef-4d91-9b83-e7f458f8775f"
+    },
+    {
+      "claim_id": "3d6806bf-5706-4053-910e-6b27077f55c4",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "0799019e-eb21-46cd-b5cb-c76270bf9545",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "2b111d67-e409-4a9c-88d4-1a7b1193c809",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "667a87fc-dccf-4eac-8a1c-121e16ac086c",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "01cb2bdc-5e3e-41b6-b22f-feea80a85fab",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "70223503-2aef-420c-8f74-71c70e84841f",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "2aa5732c-8d37-49d7-a976-a4a740fe4995",
+      "result_id": "721198c8-bebf-4989-951e-7a065ee99913"
+    },
+    {
+      "claim_id": "68bdcf1c-c34d-4d2b-811f-74261f56fd9c",
+      "result_id": "bedc1e45-ddcb-4530-8079-35325bf6a330"
+    },
+    {
+      "claim_id": "f1b2dd1f-ef8c-486f-bdec-51764d7d5576",
+      "result_id": "bedc1e45-ddcb-4530-8079-35325bf6a330"
+    },
+    {
+      "claim_id": "fbd0634d-f8a3-4e97-9323-e6dec03c997c",
+      "result_id": "e1c0ce86-956f-40fa-aaa5-0affe3260a91"
+    }
+  ],
+  "comparisons": []
+}

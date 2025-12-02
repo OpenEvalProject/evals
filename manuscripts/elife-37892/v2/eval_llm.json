@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mass spectrometry and immunoblot analyses reveal that det1-1 mutants have reduced H2Bub levels and altered histone acetylation patterns. Specifically, H2B monoubiquitination is reduced by approximately half in det1-1 mutants, while H2B acetylation is increased. The remaining H2Bub marks in det1-1 plants are deposited via the HUB pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by complementary mass spectrometry (Figure 1A-B) and immunoblot data (Figure 1C-D). The mass spectrometry provides quantitative peptide-level evidence, while immunoblots confirm the global changes in H2Bub levels. Genetic validation with hub1-3 mutation (C45) strengthens the conclusion about HUB pathway involvement. The discrepancies between mass spectrometry and immunoblot for some histone H3 marks (C46-C47) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ChIP-seq analysis reveals that DET1 is required for maintaining H2Bub levels across most genes. In det1-1 mutants, H2Bub-marked genes are reduced by 19% in light and 26% in dark conditions, with a severe decrease in average H2Bub levels over marked genes regardless of light condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are well-supported by ChIP-seq data using spike-in normalization (ChIP-Rx) shown in Figure 2A-D. The quantitative approach with Drosophila chromatin spike-ins allows for robust comparison of H2Bub levels between samples with different global abundances. The genome-wide nature of the effect is demonstrated by both the number of affected genes and the meta-gene analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RNA-seq analysis shows that det1-1 mutation causes broad transcriptional changes that largely mimic light exposure in dark-grown seedlings. Gene expression misregulation occurs in a globally hypo-ubiquitinated H2B landscape, but DET1 impacts H2Bub without apparent gene specificity or clear functional impact on steady-state transcript profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by integrated RNA-seq and ChIP-seq analyses (Figure 2E, Figure 2\u2014figure supplement 1A-B). The lack of strong correlation between H2Bub changes and gene expression changes (C58) is appropriately noted as an inference from the data. This suggests H2Bub may affect transcriptional dynamics rather than steady-state levels, though this interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Light triggers a global increase in H2Bub enrichment over genes in wild-type plants. H2Bub-marked genes are 12% more numerous in light versus dark, with higher average enrichment and 10-fold more hyper-DUGs than hypo-DUGs. This light-driven dynamic is lost in det1-1 mutants and cannot be explained solely by changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are supported by ChIP-seq data (Figure 2A, C, G) and RNA-seq comparisons (Figure 2\u2014figure supplement 1A, D). The observation that equivalent numbers of genes are up- and down-regulated by light (C66) while H2Bub shows a global increase (C62-C65) supports the conclusion that transcriptional changes alone don't explain H2Bub dynamics (C67). This represents a novel finding about H2Bub homeostasis during photomorphogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "DDA1 physically associates with SGF11, a plant ortholog of the yeast SAGA DUBm component Sgf11. This interaction is demonstrated by Y2H, BiFC, and pull-down assays, potentially linking the C3D complex to H2Bub deubiquitination activity. DET1 also associates with SGF11, though with lower efficiency than DDA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are well-supported by multiple complementary protein interaction assays (Figure 3A-D). The Y2H screen identified SGF11 (C69), which was validated by reciprocal Y2H with 3AT control (C71), BiFC in planta (C72-C73), and semi-in vivo pull-down assays (C74-C75). The use of multiple orthogonal methods strengthens confidence in the physical interaction, which is central to the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TAP analysis identifies a trimeric Arabidopsis DUBm comprising SGF11, UBP22, and ENY2, orthologs of yeast Sgf11, Ubp8, and Sus1. Notably, SGF73, which bridges DUBm to SAGA in other species, is absent from the Arabidopsis genome and was not detected in TAP experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by TAP-MS data (Figure 4A, Figure 4\u2014source data 1) and bioinformatic analyses. Reciprocal TAP experiments using both SGF11 and UBP22 as baits consistently identified only these three DUBm components (C79), confirming specific co-purification. The absence of SGF73 is supported by both failed bioinformatic searches (C81) and absence from TAP data (C80), suggesting a plant-specific DUBm architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Structural modeling and protein interaction studies reveal that SGF11 bridges ENY2 and UBP22 in the Arabidopsis DUBm. The modeled structure shows high similarity to the yeast DUBm despite lacking SGF73, with plant-specific extensions that may compensate for the missing subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by Y2H and BiFC data (Figure 4B-C) showing SGF11 interacts with both ENY2 and UBP22 but not ENY2-UBP22 directly, consistent with yeast. The structural model (Figure 4D) based on homology to known structures provides a plausible explanation for how a trimeric complex could function. However, C86-C88 are appropriately marked as speculative, as the model predictions require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Subcellular localization and size-exclusion chromatography analyses show that SGF11, ENY2, and UBP22 are nuclear proteins that associate in planta to form a complex. UBP22-GFP is predominantly found in a 100-150 kDa complex consistent with a trimeric DUBm, with minor detection in higher molecular weight fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by microscopy (Figure 4\u2014figure supplement 2A-B) and size-exclusion chromatography (Figure 4E). The nuclear localization is clearly demonstrated, and the euchromatic distribution of SGF11 and UBP22 (C90-C91) is consistent with their proposed role in transcription. The size-exclusion data (C95) supports a trimeric complex, though the interpretation of higher molecular weight fractions (C96) is appropriately noted as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Arabidopsis UBP22 can functionally replace yeast Ubp8 for H2Bub deubiquitination. Expression of UBP22 in a yeast ubp8\u0394 strain restores normal H2Bub levels, demonstrating conserved catalytic activity in the context of a bona fide SAGA complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by yeast complementation data (Figure 5A). This heterologous complementation experiment provides strong evidence for UBP22's H2Bub deubiquitinase activity and functional conservation with yeast Ubp8. The experiment is well-controlled with multiple independent transformants showing consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Loss-of-function mutations in UBP22 or SGF11 cause 2-3 fold increases in H2Bub levels in Arabidopsis, with a more pronounced effect than ubp26 mutations. Mutant plants are viable with no obvious developmental defects, but UBP22 is necessary to maintain normal H2Bub levels and constitutes a major H2Bub deubiquitinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are well-supported by genetic and biochemical data (Figure 5B-C, Figure 5\u2014figure supplement 1A-B). Multiple independent T-DNA insertion lines show consistent H2Bub accumulation phenotypes, and complementation with functional genes restores wild-type levels (C101). The comparison with ubp26-4 (C102) demonstrates UBP22's predominant role in H2Bub removal, supporting the conclusion that it is a major deubiquitinase (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DUBm protein levels are regulated by proteasomal degradation with preferential activity in darkness. GFP-SGF11, ENY2, and UBP22 levels are lower in dark-grown seedlings, but MG132 treatment increases accumulation to similar levels in both light and dark. SGF11 is poly-ubiquitinated with more pronounced effect in darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by immunoblot analyses with MG132 treatment (Figure 6A) and ubiquitin pull-down assays (Figure 6B). The consistent effects across all three DUBm subunits (C106) suggest coordinated regulation. The poly-ubiquitination of SGF11 (C108) provides direct evidence for ubiquitin-mediated degradation, supporting the conclusion about proteasomal control (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "DET1 is required for light-dependent proteolytic degradation of DUBm components. SGF11 and UBP22 levels are higher in det1-1 mutants in both light and dark conditions, and the dramatic changes in protein levels during light-dark transitions are dampened in det1-1 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by immunoblot analyses comparing wild-type and det1-1 plants (Figure 6C-D). The genetic requirement for DET1 in DUBm degradation (C110) is clearly demonstrated, and the light-dark transition experiments (C111-C112) provide strong evidence for dynamic regulation. This connects DET1 function to DUBm stability and establishes the mechanistic link between light signaling and H2Bub homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Genetic epistasis analysis shows that UBP22 loss-of-function partially suppresses det1-1 phenotypes. The det1-1ubp22-1 double mutant shows increased H2Bub levels compared to det1-1, shorter hypocotyls than det1-1, and restoration of ~53% of misregulated genes, while ubp22-1 alone affects only 26 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by immunoblot (Figure 7A), phenotypic (Figure 7B), and RNA-seq analyses (Figure 7C). The partial suppression at multiple levels (H2Bub, hypocotyl length, transcriptome) provides strong evidence for antagonistic activities of DET1 and DUBm. The minimal effect of ubp22-1 alone on transcription (C118) is consistent with yeast studies and suggests H2Bub affects transcriptional dynamics rather than steady-state levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "UBP22 overexpression decreases H2Bub levels, confirming it is a limiting factor in H2Bub removal. Together, the findings demonstrate that DET1-mediated control of DUBm proteolytic degradation represents a novel mechanism to adjust H2Bub levels and mediate light-dependent control of H2Bub homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by overexpression data (Figure 7D) and represent the synthesis of all experimental findings. The overexpression experiment (C120) provides direct evidence that UBP22 is limiting for H2Bub removal. The overall conclusion (C121) is well-supported by the convergence of multiple lines of evidence: protein interactions, genetic analyses, biochemical assays, and genome-wide profiling, establishing a coherent model for light-dependent regulation of H2Bub homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on DET1 function: DET1 is an evolutionarily conserved component of the ubiquitination machinery that is lethal when knocked out in plants, Drosophila, and humans. In plants, DET1 acts as a central integrator of light signaling and is part of the C3D substrate adaptor module within CRL4 ubiquitin ligase complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C18 provide established background information supported by citations to prior literature. These claims accurately represent the current understanding of DET1 function based on previous studies. The claim about COP10 function (C18) is appropriately marked as uncertain ('likely'), reflecting the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background information on photomorphogenesis and H2Bub: Photomorphogenesis involves transcriptomic, epigenomic, and nuclear architecture changes. H2Bub acts cooperatively with RNA Pol II to promote gene expression through cycles of ubiquitination and deubiquitination mediated by the SAGA complex in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C31 provide established background information about photomorphogenesis and H2Bub function, supported by citations to prior literature. These claims accurately represent current knowledge in the field and provide necessary context for the study. Some claims (C26) are appropriately marked as models ('is thought to'), reflecting the interpretive nature of the mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background information on plant H2Bub machinery: Arabidopsis has orthologs of DUBm components but lacks SGF73. UBP26 deubiquitinates H2Bub but acts independently from SAGA. HUB1/HUB2 are the only known H2B E3 ligases in Arabidopsis, and their loss abolishes H2Bub but causes only mild phenotypes. H2Bub is required for optimal expression of light-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 provide established background information about plant H2Bub machinery, supported by citations to prior literature. These claims accurately represent the state of knowledge about Arabidopsis H2Bub regulation and provide essential context for understanding the novelty of the current findings. The inference about H2Bub requirement (C41) is appropriately marked as such.",
+    "result_type": "MINOR"
+  }
+]

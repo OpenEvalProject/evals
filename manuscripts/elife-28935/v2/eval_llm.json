@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "At GC-PC synapses, high-frequency stimulation (50-100 Hz) produces sustained facilitation up to 25-30 stimuli with frequency-dependent paired-pulse facilitation, followed by depression after 30-40 stimuli. The maximal recruitment of releasable SVs is similar at 50 Hz and 100 Hz, and the stimulation protocol does not evoke asynchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging experimental evidence from electrophysiological recordings showing frequency-dependent facilitation patterns at GC-PC synapses. The quantitative measurements (C2, C5), statistical comparisons, and analysis of charge/amplitude ratios (C4) are internally consistent and supported by appropriate controls and prior literature (C1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Low-frequency stimulation (2 Hz) at GC-PC synapses produces a novel form of depression (LFD) characterized by lack of initial facilitation, rapid depression after ~7 stimuli with mono-exponential kinetics (tau ~15.9 s), and nearly complete silencing of the release apparatus. LFD is not caused by impaired fiber excitability, is reproducible within cells, fully recovers after 5-10 min rest, and occurs consistently across a broad range of low frequencies (0.5-10 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17 describe a comprehensive characterization of LFD with appropriate controls (C10, C11), quantitative kinetic analysis (C8), reproducibility testing (C12, C13), and frequency range validation (C16, C17). The experimental design addresses alternative explanations and the findings are internally consistent across multiple experimental paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Following complete blockage of synaptic transmission by LFD, high-frequency stimulation produces ultrafast recovery: 70.7\u00b17.6% recovery within 10 ms at 100 Hz, full recovery within 70 ms at 100 Hz, and ~50 ms at 50 Hz. Recovery at 20 Hz is limited and incomplete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide quantitative measurements of frequency-dependent recovery from LFD with appropriate statistical comparisons between recovery and control conditions. The data show a clear frequency dependence of recovery that is well-documented with specific time courses and amplitudes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "LFDtriplet experiments demonstrate that releasable SVs segregate into two distinct pools: a fully-releasable pool released by single APs and a reluctant pool recruited only during high-frequency bursts (\u226520 Hz). The reluctant pool can be depleted by triplet stimulation, and the total quantal release during LFD plus recovery equals that during LFDtriplet plus recovery, indicating SVs recruited in these conditions belong to the same reluctant pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 present a logical experimental design using LFDtriplet protocols to dissect vesicle pool properties. The quantitative analysis of cumulative release (C25, C26, C28, C29) with appropriate statistical tests (paired t-tests, p-values reported) supports the two-pool model. The inference that equivalent total release indicates a common reluctant pool (C27) is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Paired-pulse stimulation at high frequencies during LFD produces strikingly high PPR values regardless of the degree of depression or timing during LFD, indicating that the status of the fully-releasable pool does not influence mobilization of the reluctant pool and that SVs can be recruited from reluctant to fully-releasable pools on a millisecond timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide experimental evidence (C31, C32) and logical inferences (C33, C34) about pool independence and recruitment kinetics. The observation that high PPR values occur regardless of depression state (C32) strongly supports the independence of the two pools (C33), and the rapid kinetics support millisecond-scale recruitment (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A sequential two-pool model with Ca2+-dependent recruitment successfully reproduces key experimental findings including high-frequency facilitation and LFD. During high-frequency stimulation, residual Ca2+ builds up to ~2 \u00b5M driving SV recruitment, while at low frequencies residual Ca2+ returns to baseline between pulses. Alternative single-pool and parallel two-pool models with Ca2+-independent replenishment fail to reproduce the experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present computational modeling results that are compared against experimental data. The sequential two-pool model (C37, C40) successfully reproduces experimental observations while alternative models (C38, C39) fail, providing strong support for the proposed mechanism. The modeling is based on established Ca2+ dynamics from literature (C35) and makes testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Recovery from LFD follows single exponential kinetics (tau ~153-156 s), while recovery from LFDtriplet shows similar exponential kinetics but with a ~90 s delay. After 1 min rest following LFDtriplet, the fully-releasable pool remains blocked while the reluctant pool is partially reconstituted, suggesting the delay reflects time required to reconstitute the reluctant pool before the fully-releasable pool can be refilled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide quantitative kinetic analysis of recovery with appropriate curve fitting (R2 values reported). The experimental design testing recovery at different rest periods (C45) directly tests the hypothesis about differential pool recovery (C46). The interpretation that the delay reflects reluctant pool reconstitution (C44) is well-supported by the data showing differential recovery of the two pools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Increasing extracellular Ca2+ from 2.5 to 4 mM nearly doubles quantal release during LFD without affecting LFD kinetics (delay, plateau, time constant), but strongly reduces recovery from LFD (maximal recovery 85.5\u00b111.6% vs ~197% in control). This indicates the reluctant pool is partially exhausted at high Ca2+ and that increased release during LFD arises from recruitment of reluctant pool SVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 present a well-designed experiment manipulating release probability through Ca2+ concentration. The dissociation between increased quantal release (C48) and unchanged LFD kinetics (C49) with reduced recovery (C51) provides strong evidence that the reluctant pool is being recruited during LFD at high Ca2+ (C52, C53). Statistical comparisons are appropriate and support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Bath application of 10 \u00b5M EGTA-AM does not affect basal glutamate release or LFD time course, but slows and reduces recovery from LFD during the first responses of the 100 Hz train (significant at stimuli #4 and #5). This confirms that Ca2+-dependent recruitment is required for transition from reluctant to fully-releasable state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 present pharmacological manipulation of Ca2+ dynamics with appropriate controls showing no effect on basal release or LFD (C54, C55) but specific effects on recovery (C56). The statistical analysis identifies specific stimuli where effects are significant, and the conclusion about Ca2+-dependent recruitment (C57) is well-supported by both the experimental data and consistency with the modeling predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "The main finding is that glutamate release and short-term plasticity at GC-PC synapses are shaped by two pools of releasable SVs (fully-releasable and reluctant) that are differentially poised for exocytosis. The RRP is restricted to the fully-releasable pool (SVs released by single APs), most GC terminals contain both pools, and recruitment of reluctant SVs involves both Ca2+-dependent and Ca2+-independent steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, C61, C62 summarize the major conclusions from the comprehensive experimental and modeling work. These conclusions are well-supported by the multiple lines of evidence from LFD, LFDtriplet, recovery experiments, Ca2+ manipulation, and computational modeling presented in the previous result groups. The definition of RRP (C59) is clearly stated and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Regarding molecular mechanisms, synaptotagmin 7 is unlikely to mediate ultrafast recruitment due to slow C2A kinetics, while Munc13s may be involved in a superpriming step analogous to the described transition. Filamentous proteins may serve as tracks for SV movement. SVs can revert from fully-releasable to reluctant state, possibly through 'a posteriori' mechanisms or kinase/phosphatase balance acting as a frequency sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 are largely speculative (C64, C65, C67, C68 explicitly marked as speculation) and based on comparisons to literature rather than direct experimental evidence. While the speculation is reasonable and grounded in known molecular properties, these mechanisms are not directly tested in this study. The claim about SV reversion (C66) is supported by experimental and modeling data, but the mechanistic explanations remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The reluctant pool size corresponds to the number of SVs released during high-frequency trains after full depletion of fully-releasable SVs (~30-40 SVs per bouton). Since this exceeds the number of docked SVs (4-8), both releasable pools must be refilled from recycling/reserve pools during sustained stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 present calculations based on experimental data (C69) and logical inference from comparison to anatomical data (C70). The reasoning is sound: if more SVs are released than are anatomically docked, then refilling must occur. The inference is well-supported by the quantitative analysis and literature comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The two-pool mechanism at GC-PC synapses enables unique functional properties: filtering of low-frequency activity (~2 Hz), inversion of plasticity orientation depending on frequency (depression vs facilitation), and frequency-independent setting of glutamate release regardless of synaptic state. This contrasts with MF-GC synapses that sustain high-frequency transmission through ultrafast reloading, and is similar to but distinct from GC-MLI synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 integrate the current findings with literature on related synapses to establish the functional significance and uniqueness of the GC-PC synapse properties. The conclusions about filtering (C76), state-independent release (C77), and uniqueness (C75) are well-supported by the experimental data showing frequency-dependent plasticity. The comparisons to other synapses (C71, C74) are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose a physiological model where GC-PC synapses filter granule cell activity: during spontaneous low-frequency firing (2-10 Hz), GC inputs are silenced with SVs in the reluctant state; during sensory-evoked high-frequency bursts (50-300 Hz), efficient transmission is enabled by reluctant pool recruitment. This filtering would enhance signal-to-noise ratio and enable PCs to distinguish sensory signals from spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 present a physiological model integrating in vivo firing patterns from literature (C78, C79) with the current findings. While the model is logical and consistent with the experimental data, it remains speculative (C80, C81, C82 include speculation in evidence type) as it has not been directly tested in vivo. The proposed functional consequences (C82) are reasonable inferences but require in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The introduction establishes that RRP heterogeneity with sequential SV mobilization has been described at other synapses (calyx of Held, GC-MLI), but the relationship between RRP size and plasticity direction is counterintuitive (large RRP at calyx shows depression, small RRP at GC-PC shows facilitation). Previous work showed GC-PC facilitation involves Ca2+-dependent increase in release site number, and there is general evidence that RRP comprises heterogeneous SV populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 are literature review and background statements that appropriately cite prior work. These establish the context for the current study and are accurately represented. The statements about prior work by the authors (C88) and general knowledge (C89, C90) are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Previous work showed that unitary GC-PC synapses and PF beam stimulation give similar PPR values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is a straightforward citation of prior work by the authors that is relevant for interpreting the current findings about pool distribution across terminals. The citation is appropriate and the claim is verifiable.",
+    "result_type": "MINOR"
+  }
+]

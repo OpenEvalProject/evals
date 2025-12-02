@@ -1,0 +1,523 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C37",
+      "C38"
+    ],
+    "result": "The study generated multi-omic profiles (RNA-seq, MethylC-seq, ATAC-seq) from FACS-purified endothelial cells isolated from P7 mouse brain, liver, lung, and kidney using Tie2-GFP mice, with high-quality biological replicates showing strong correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C31, C33-C34, C37-C38 collectively describe a well-designed experimental approach with validated methods (C34), appropriate biological replicates (C37), and quality control showing high correlations between replicates (C38). The use of Tie2-GFP mice for EC isolation is an established method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Differential gene expression analysis identified 4,117 EC-enriched transcripts including known EC markers, with 739 genes showing tissue-specific expression (ECTSGs). Gene ontology analysis revealed tissue-appropriate functional enrichments, and PCA showed distinct transcriptional signatures for brain and liver ECs compared to lung and kidney ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C56-C63 describe a comprehensive transcriptomic analysis with appropriate validation (known EC markers present, non-EC markers absent), statistical thresholds (>2-fold differential expression), and functional interpretation through GO analysis. The PCA results are consistent with prior studies (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Brain ECs specifically express transporters (Mfsd2a, Slc2a1, Slco1c1), liver ECs express scavenger receptors (Fcgr2b, Stab2, Clec4g), and lung ECs express Ace. Two novel lung EC markers were identified: Scn7a and Scn3b, which show EC-specific enrichment comparable to the known marker Ace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 present tissue-specific gene expression patterns with appropriate controls and comparisons. The identification of Scn7a and Scn3b as novel lung EC markers (C50, C54) is supported by their enrichment pattern matching the known marker Ace. However, C55 is speculation about function and should not be considered validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Differentially expressed genes show tissue-specific hypomethylation at transcription start sites extending into gene bodies, with an inverse relationship between methylation and gene expression. However, these differences occur within highly similar global methylation patterns (correlation coefficients 0.95-0.97 between EC subtypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe methylation-expression relationships supported by prior literature (C64) and present data showing both local differences and global similarity. The high correlation coefficients provide quantitative support for the claim of overall similarity despite local differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Identification of unmethylated regions (UMRs) and low-methylated regions (LMRs) revealed that UMRs are enriched at promoters (72% within 2kb of TSS) and highly shared across EC subtypes (86%), while LMRs are enriched at distal elements (94.3% >2kb from TSS) and show greater tissue-specificity (only 25% shared).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present a systematic analysis of hypomethylated regions with clear quantitative results and appropriate genomic distribution analysis. The findings are consistent with prior literature showing UMRs at promoters and LMRs at distal regulatory elements (C70-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "105,050 differentially hypomethylated regions (hypo-DMRs) were identified, with the majority (94.5%) located >2kb from transcription start sites. Tissue-specific large hypo-DMRs show significant enrichment at differentially expressed EC-enriched genes (q-value <10^-10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C79 describe the identification and characterization of hypo-DMRs with appropriate statistical methods and genomic distribution analysis. The significant enrichment at differentially expressed genes (C79) provides functional validation of these regions as candidate regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "DNA methylation valleys (DMVs, defined as UMRs >3kb) were identified in all four EC subtypes, with 1,602 shared across all subtypes. DMVs are highly enriched for transcription factor genes and are maintained by Polycomb complexes, consistent with prior studies showing they support developmental plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 describe DMVs with appropriate definitions, quantification, and functional characterization. The findings are well-supported by multiple prior studies (C80, C85-C88) and show consistency with established models of DMV function in development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "DMVs overlap genes encoding TFs important for EC lineage establishment (Etv2, Foxc2, Tal1, Lmo2, Id3, Fli1) and arterial/venous differentiation (Sox7, Hey1, Nr2f2) across all EC subtypes, but not genes for erythroid/myeloid lineages (Gata1, Spi1) or early embryonic TFs (Pou5f1/Oct4), suggesting DMVs mark early progenitor lineage commitment genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 present a logical analysis of DMV overlap patterns with lineage-specific TF genes. The presence of DMVs at EC lineage genes but absence at non-EC lineage genes provides strong support for the inference about early lineage commitment (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "At differentially expressed TF genes, DMVs show EC subtype-specific differences in methylation patterns, with increased methylation 5' of the TSS in EC subtypes expressing the TF gene, consistent with models where TF expression results in nearby hypermethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe subtype-specific methylation patterns at TF genes with support from prior models (C96). The observation is consistent across multiple genes, though C97 notes an exception (FOXF1) that is explained by adjacent lncRNA expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "HOX cluster methylation and gene expression patterns correlate with anterior-posterior organ position: brain ECs (most anterior) show lowest methylation and no Hoxa expression, while kidney ECs (most posterior) show highest methylation and posterior Hoxa gene expression. This pattern matches between ECs and parenchymal cells and is consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 present a comprehensive analysis of HOX gene regulation showing correlation between methylation, expression, and anatomical position. The findings confirm and extend prior studies (C108-C109) and show coordination between ECs and parenchymal cells (C107), supporting the inference that ECs 'know' their body position (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "ATAC-seq identified 39,987 regions of accessible chromatin (<100bp fragments) with 35% shared across all EC subtypes and 1-16% tissue-specific (ECTSAPs). ECTSAPs co-localize with tissue-specific hypo-DMRs and are significantly enriched near tissue-specific differentially expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C119 describe a comprehensive ATAC-seq analysis with appropriate quality control (C112-C113), clear quantification of shared and tissue-specific peaks, and functional validation through enrichment near differentially expressed genes (C118-C119). The co-localization with hypo-DMRs (C117) provides orthogonal support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "64% of ATAC-seq peaks are promoter-distal (>2kb from TSS), with promoter-proximal peaks showing high sharing across EC subtypes (71%) while promoter-distal peaks show low sharing (14%). Brain ECs show greater divergence from peripheral ECs, suggesting tissue-specific differentiation reflects differences in distal rather than proximal regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 present a clear analysis of ATAC-seq peak distribution with appropriate quantification. The inference that tissue-specific differentiation reflects distal CRE differences (C124) is well-supported by the differential sharing patterns between promoter-proximal and promoter-distal peaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Over 80% of ATAC-seq peaks overlap with UMRs or LMRs, and ATAC-seq peaks show reduced methylation compared to random genomic regions. However, there are many more LMRs than ATAC-seq peaks, with only a minority of LMRs overlapping ATAC-seq peaks (<10-20%), while >75% of UMRs overlap ATAC-seq peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 describe the relationship between chromatin accessibility and DNA methylation with clear quantification and appropriate comparisons. The findings are consistent with prior studies (C125) and the discrepancy between LMRs and ATAC-seq peaks is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Two possible explanations are proposed for why many LMRs do not show ATAC-seq peaks: (1) insufficient chromatin accessibility for transposon insertion, or (2) greater variance in enhancer occupancy across cells reducing average accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C135 present speculative explanations for the LMR/ATAC-seq discrepancy without experimental validation. While the hypotheses are reasonable, they remain untested and should be considered uncertain until further experiments are performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Motif enrichment analysis of shared EC-only LMRs and ATAC-seq peaks revealed highly significant enrichment for ETS family TF motifs (p<10^-148), consistent with known roles of ETS TFs in EC development. The ETS motif is also found in tissue-specific CREs, suggesting ETS TFs cooperate with tissue-specific TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C146 describe a systematic motif enrichment analysis with highly significant p-values and appropriate validation through known EC biology (C141). The finding of ETS motifs in both shared and tissue-specific CREs (C144-C145) supports a model of combinatorial TF action, though the inference (C145) requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Brain EC-specific CREs show enrichment for FOX, TCF/LEF, and ZIC motifs, with corresponding enrichment of Foxq1, Foxc1, Foxf2, Tcf7, Lef1, and Zic3 transcripts. The TCF/LEF enrichment is consistent with canonical Wnt signaling's role in CNS angiogenesis and BBB development, and a candidate Wnt-responsive enhancer was identified near Zic3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 present tissue-specific motif enrichment with corresponding gene expression and strong support from prior literature on Wnt signaling in CNS ECs (C151-C152). The identification of a candidate Wnt-responsive enhancer near Zic3 (C153) provides additional support, though functional validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Liver EC-specific CREs show enrichment for GATA and MAF motifs, with Gata4 and Maf showing greatest enrichment in liver ECs. GATA4's role in liver EC development is supported by recent literature. NR2F2/COUP-TFII motif enrichment may reflect venous EC enrichment or a role in liver sinusoid development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 present liver-specific motif enrichment with corresponding gene expression and validation from recent literature (C156). The interpretation of NR2F2 enrichment (C158) appropriately acknowledges alternative explanations, though this remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Lung EC-specific CREs show enrichment for FOX, GATA, and homeobox motifs with corresponding transcript enrichment. Kidney EC-specific CREs show homeobox motif enrichment with strong kidney-specific enrichment of Irx3, Hoxa7, Pbx1, and Meis2. Anterior and posterior HOX motifs show tissue-specific enrichment consistent with HOX gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 present tissue-specific motif enrichment with corresponding gene expression. The consistency between HOX motif enrichment patterns and HOX gene expression (C164-C165) provides strong internal validation of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Tissue-specific CREs within 100kb of tissue-specific genes show statistically significant enrichment for the identified tissue-specific TF motifs, supporting their functional relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 provide important functional validation by showing that tissue-specific motifs are enriched near tissue-specific genes. This spatial enrichment supports the functional relevance of the identified motifs, though direct experimental validation of TF binding would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "A paired ETS:ZIC motif with precise 2bp spacing and same orientation was identified specifically in brain EC CREs. This motif is rare genome-wide (1,944 instances) and significantly enriched in brain EC CREs. Identically spaced ETS:ZIC motifs show enhancer activity in Ciona, suggesting ancient conservation. 81% of brain EC CREs with this motif overlap the mouse-specific ERV family RLTR45/ERVB4_2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 describe a novel regulatory motif with precise spacing, significant enrichment, and evolutionary conservation (C171). The overlap with a specific ERV family (C173) is intriguing, though the functional significance requires experimental validation. The inference about ternary complex formation (C169) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175"
+    ],
+    "result": "RLTR45/ERVB4_2 may represent a transposable element family being co-opted into host gene regulatory networks utilizing ETS and ZIC factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C175 is explicitly stated as speculation without experimental validation. While the overlap data (C173) is suggestive, functional experiments would be needed to demonstrate co-option into regulatory networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Using a Wnt reporter (R26-Tcf/Lef-LSL-H2B-GFP-6xMYC) with Tie2-Cre, canonical Wnt signaling was visualized at cellular resolution and found to be restricted to CNS and perineural ECs at E13.5 and P7. This spatial restriction matches the distribution of BBB markers (GLUT1/SLC2A1), ZIC3, and LEF1, and is consistent with CNS-specific expression of Lef1 and Zic3 by RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C186 present a well-designed experiment using genetic reporters to address spatial restriction of Wnt signaling. The consistency across multiple markers (Wnt reporter, ZIC3, LEF1, SLC2A1) at multiple time points (E13.5, P7) and with RNA-seq data provides strong support for CNS-specific Wnt signaling in ECs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Single-cell RNA-seq of 3,946 P7 brain ECs revealed six clusters: tip, mitotic, venous, arterial, and two capillary clusters (capillary-V and capillary-A). t-SNE analysis showed a single interconnected distribution suggesting transcriptional continuity. Capillary-A cells express arterial-like genes including Ddc, while capillary-V cells express venous-like genes. Mitotic cells show similarity to venous ECs, consistent with venous origin of proliferating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C194 describe a comprehensive single-cell analysis with appropriate clustering and validation using known markers. The identification of capillary subtypes (C190-C192) is novel and well-supported by gene expression patterns. The relationship between mitotic and venous cells (C193) is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "DDC immunostaining in P7 brain showed localization to axon terminals (particularly in striatum) and heterogeneous expression in capillaries across different brain regions, with minimal expression in larger vessels. This heterogeneity likely corresponds to the capillary-A versus capillary-V distinction from scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C199 provide important validation of the scRNA-seq findings through protein-level analysis. The heterogeneous DDC expression in capillaries (C197) supports the capillary-A/capillary-V distinction, though the inference (C199) would be strengthened by co-staining with other markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "Each EC cluster showed selective gene expression patterns, with multiple new tip cell markers identified. Five previously validated tip cell markers (Plaur, Angpt2, Lcp2, Cxcr4, Apln, Kcne3) were enriched in the tip cell cluster. Whole mount ISH validated four novel tip cell markers (Apln, Mcam, Lamb1, Trp53i11) showing enrichment at the angiogenic front.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C206 present identification of new markers with appropriate validation. The presence of known markers (C202) validates the clustering, and ISH validation of novel markers (C205) provides orthogonal confirmation. The identification substantially extends prior screens (C201).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Cell trajectory analysis revealed two branch points with four terminal states (mitotic, venous, arterial, tip). The first branch point separates venous from arterial/tip states, implying tip cells are more closely related to arterial than venous ECs. The second branch point separates arterial from tip states. Gene expression patterns (Hey1, Nr2f2, Fbln2, Plaur) support this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C215 present a trajectory analysis with clear interpretation supported by marker gene expression. The inference about tip cell relationships (C211) is well-supported by the trajectory structure and gene expression patterns, though this represents a computational inference rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "Differential expression of cell cycle regulators (Cdkn1c, Cdkn1a, Cdkn2b) and TGF-beta signaling components (Tgfb2, Ltbp4, Smad6, Smad7) across EC clusters suggests roles in EC development. CXCR4 is enriched in tip, capillary-A, and arterial ECs, while its ligand CXCL12 is enriched in arterial ECs, suggesting arterial-to-tip signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C225 describe expression patterns of signaling molecules with appropriate interpretation based on prior literature (C219, C222, C223, C225). The inference about CXCL12 signaling from arterial to tip cells (C224) is reasonable but would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Tie2-GFP is not expressed in all ECs, with GFP undetectable in renal glomerular capillaries by immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 acknowledge an important limitation of the Tie2-GFP system with specific evidence from kidney. This is an appropriate caveat that affects interpretation of kidney EC results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The GFP-negative liver fraction was depleted for hepatocyte-specific transcripts but enriched for Kupffer cell and cholangiocyte markers, suggesting hepatocyte loss during sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe an unexpected observation about liver sample composition with appropriate characterization of the GFP-negative fraction. This is important for interpreting liver EC results but does not invalidate the GFP-positive EC analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Expression of Scn7a and Scn3b may allow lung ECs to sense serum sodium concentration to regulate Ace expression and provide feedback control of the renin-angiotensin-aldosterone system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is explicitly stated as speculation without experimental validation. While the expression pattern is established (C54), the proposed functional role requires experimental testing.",
+    "result_type": "MINOR"
+  }
+]

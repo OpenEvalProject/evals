@@ -1,0 +1,1534 @@
+{
+  "submission": {
+    "id": "d2cebb91-8c1d-4fd5-8a54-60f8fb3763d6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:27:14.830918Z",
+    "updated_at": "2025-12-02T01:27:14.830918Z"
+  },
+  "content": [
+    {
+      "id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "submission_id": "d2cebb91-8c1d-4fd5-8a54-60f8fb3763d6",
+      "content_type": "manuscript",
+      "content_text": "# Lipoate-binding proteins and specific lipoate-protein ligases in microbial sulfur oxidation reveal an atpyical role for an old cofactor\n\n## Authors\n\n- Xinyun Cao<sup>1</sup> ([ORCID: 0000-0002-7346-3909](https://orcid.org/0000-0002-7346-3909))\n- Tobias Koch<sup>2</sup> ([ORCID: 0000-0003-3390-3428](https://orcid.org/0000-0003-3390-3428))\n- Lydia Steffens<sup>2</sup>\n- Julia Finkensieper<sup>2</sup>\n- Renate Zigann<sup>2</sup>\n- John E Cronan<sup>1</sup> ([ORCID: 0000-0002-7064-312X](https://orcid.org/0000-0002-7064-312X))\n- Christiane Dahl<sup>2</sup> ([ORCID: 0000-0001-8288-7546](https://orcid.org/0000-0001-8288-7546)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Illinois Urbana United States\n2. Institut f\u00fcr Mikrobiologie and Biotechnologie Rheinische Friedrich-Wilhelms-Universit\u00e4t Bonn Bonn Germany\n3. Department of Microbiology University of Illinois Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany Bacteria and Archaea employ the heterodisulfide reductase (Hdr)-like sulfur oxidation pathway. The relevant genes are inevitably associated with genes encoding lipoate-binding proteins (LbpA). Here, deletion of the gene identified LbpA as an essential component of the Hdr-like sulfur-oxidizing system in the Alphaproteobacterium Hyphomicrobium denitrificans. Thus, a biological function was established for the universally conserved cofactor lipoate that is markedly different from its canonical roles in central metabolism. LbpAs likely function as sulfur-binding entities presenting substrate to different catalytic sites of the Hdr-like complex, similar to the substrate-channeling function of lipoate in carbon-metabolizing multienzyme complexes, for example pyruvate dehydrogenase. LbpAs serve a specific function in sulfur oxidation, cannot functionally replace the related GcvH protein in Bacillus subtilis and are not modified by the canonical E. coli and B. subtilis lipoyl attachment machineries. Instead, LplA-like lipoate-protein ligases encoded in or in immediate vicinity of hdr-lpbA gene clusters act specifically on these proteins.\n\n## Introduction\n\nLipoic acid (1,2-dithiolane-3-pentanoic acid or 6,8-thioactic acid, Figure 1) is a highly conserved organosulfur cofactor found in all three domains of life. So far, only five lipoate-dependent multienzyme complexes have been characterized: three \u03b1-ketoacid dehydrogenases (pyruvate dehydrogenase, 2-oxoglutarate dehydrogenase, branched-chain 2-oxoacid dehydrogenase), acetoin dehydrogenase and the glycine cleavage complex (Cronan, 2016; Cronan et al., 2005). In all of these enzymes, a specific subunit is modified by lipoic acid attachment to the \u03b5-amino groups of specific lysine residues within conserved lipoyl domains. In the five characterized lipoylated enzyme complexes, lipoate acts both as an electrophile that binds to reaction intermediates (via a thioester or thioether bond) and as a swinging arm that channels the bound substrate between the active sites of different subunits. During catalysis, the intramolecular disulfide bond of lipoate cycles between oxidized lipoamide and reduced dihydrolipoamide (Figure 1) (Reed and Hackert, 1990).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig1-v2.jpg)\n\nComparative genome mining of sulfur-oxidizing prokaryotes (Dahl, 2015; Quatrini et al., 2009; Venceslau et al., 2014), transcriptomic and proteomic studies (Latorre et al., 2016; Mangold et al., 2011; Osorio et al., 2013; Ouyang et al., 2013; Quatrini et al., 2009) as well as first biochemical evidence (Boughanemi et al., 2016) indicated that a large group of archaeal and bacterial sulfur oxidizers utilize a novel pathway of sulfur oxidation involving a heterodisulfide reductase (Hdr)-like enzyme complex resembling the HdrABC (Wagner et al., 2017) of methanogens, although a coenzyme M-coenzyme B (CoM-S-S-CoB) heterodisulfide is not present in the sulfur oxidizers. Recently, we provided conclusive genetic evidence that this complex is indeed essential for oxidation of thiosulfate to sulfate in Hyphomicrobium denitrificans (Koch and Dahl, 2018). In this Alphaproteobacterium, thiosulfate is an intermediate of dimethylsulfide (DMS) degradation and a \u0394hdr strain was also unable to grow on the volatile organosulfur compound (Koch and Dahl, 2018). The sulfur-oxidizing prokaryote genes (hdrC1B1A-hyp-hdrC2B2) encoding the Hdr-like complex are associated with genes encoding novel lipoate-binding proteins resembling GvcH, the lipoate-binding component of the bacterial glycine cleavage system (Ehrenfeld et al., 2013; Liu et al., 2014). The first analyses of these gene clusters furthermore indicated the presence of genes potentially encoding enzymes responsible for the biosynthesis of lipoamide-containing proteins (Liu et al., 2014).\n\nIn general, two different mechanisms of posttranslational modification of proteins with lipoate can be distinguished: de novo lipoate biosynthesis and lipoate scavenging (Spalding and Prigge, 2010). In E. coli, using exogenous lipoate requires LplA, a two domain lipoate-protein ligase. Lipoate is first activated to lipoyl-AMP at the expense of ATP. The N-terminal domain then transfers the lipoyl-group to the target protein. In contrast, endogenous lipoate synthesis proceeds through two steps: i. LipB-catalyzed transfer of an octanoyl group from octanoyl acyl carrier protein (octanoyl-ACP) to the apoprotein and ii. insertion of two sulfur atoms at C6 and C8 of the octanoyl chain catalyzed by the radical SAM protein lipoyl synthase (LipA).\n\nHere, we set out to test for functional linkage between hdr-like sulfur oxidation genes with genes for lipoate-binding proteins together with the enzymes putatively involved in their modification. The functional role of lipoate-binding proteins in sulfur compound oxidation was assessed in the genetically accessible model organism H. denitrificans. Phylogenetic analyses identified two clearly distinguishable subgroups of the putative lipoate-binding proteins. Proteins from both groups could only be modified by LplA-like proteins encoded in immediate vicinity with other hdr-like genes. Moreover, the LplA-like protein has single domain architecture whereas other lipoate ligases are two domain proteins.\n\n## Results\n\n### Hdr, lipoate-binding protein (LbpA) and LbpA maturation genes\n\nDatabase searches revealed 56 different cultivated genome-sequenced prokaryotes from one archaeal and six bacterial phyla as containing typical hdr-like gene loci (Figure 2\u2014source data 1). With very few exceptions all these organisms are either established chemo- and photolithotrophs oxidizing reduced inorganic sulfur compounds or they have been reported as oxidizing mineral sulfides (FeS, FeS2 and others) or volatile organic sulfur compounds (e.g. dimethylsulfide). The remaining species were isolated from sulfur-dominated habitats such as solfataras or ocean sediments and therefore are likely to be sulfur compound oxidizers (Figure 2\u2014source data 1).\n\nIn all cases, the cluster of hdr-like genes is associated with at least one, in most cases with two and in a few cases with three genes for putative lipoate-binding proteins resembling classical glycine cleavage system H (GcvH) proteins (Figure 2, Figure 2\u2014source data 1). We name this single lipoyl domain protein LbpA (lipoate binding protein A). In almost all cases, the hdr-lbpA arrangement is linked in the same gene cluster structure with genes encoding proteins probably involved in the biosynthesis of lipoate binding proteins. These include potential lipoate-protein ligases (LplA) and two different radical SAM domain containing proteins (RadSAM1 and RadSAM2). If not located in the same operon or in immediate vicinity of the hdr-lbpA genes, the biosynthetic enzymes are encoded elsewhere in the genome (Figure 2\u2014source data 1). Only three of the bacterial genomes lack homologs of the potential biosynthetic genes. The close genomic association of lipoate-binding proteins with maturation enzymes together with the observation that virtually all organisms analyzed contain enzymes catalyzing the canonical pathways for biosynthesis of lipoylated proteins (Figure 2\u2014source data 1) indicate the possibility of a specific biosynthetic pathway required for maturation of Hdr-associated lipoate-binding proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig2-v2.jpg)\n\n**Figure 2.:** Homologous genes are colored the same between organisms. Genes in white are not conserved between the groups. The Kegg/NCBI locus tag identifiers for the first and last genes are shown below each cluster. GATase1, glutamine amidotransferase class I; DsrE, -E2, -E3A, DsrE-like sulfurtransferases (Dahl, 2015); Rhd, rhodanese-like sulfurtransferase (Bordo and Bork, 2002); Hyp, hypothetical protein; TusA, TusA-like sulfur carrier protein (Dahl, 2015; Dahl et al., 2013); CCG domain, domain with CCG signature motif of non-cubane [4Fe-4S] cluster-binding heterodisulfide reductase active sites (Wagner et al., 2017); Etf, electron-transferring flavoprotein (Garcia Costas et al., 2017).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The strictly conserved lipoate-binding lysine residue shared with the H proteins of the glycine-cleavage system is indicated by red arrows. Strictly conserved residues are marked with yellow boxes. Strictly conserved cysteine residues are highlighted by red boxes. Species: Metallosphaera cuprina Ar4T (Mcup_0662 (AEB947679)) Acidimicrobium ferrooxidans DSM 10331T (Afer_0973 (Acu53912), Afer_0974 (ACU53913)), Thermomicrobium roseum DSM 5159T (Trd_0143 (ACM05628), Trd_0144 (ACM04497)), Hydrogenobacter thermophiles (HTH_RS09400 (HTH_1874, BAI70318), HTH_RS09415 (HTH_1877, BAI70321), Kyrpidia tusciae DSM 2912T(Btus_2489 (ADG07149), Btus_2490 (ADG07150)), Thiorohdospira sibirica ATCC 700588T (ThisiDRAFT_1533 (EGZ46119)), Acidithiobacillus caldus SM-1 (Atc_2344 (AEK58992), Atc_2346 (AEK58994)), Thioalkalivibrio sp. K90mix (TK90_0638 (ADC71153), TK_0640 (ADC71155)), Chloroherpeton thalassium ATCC 35110T (Ctha_0140 (ACF12611)), Hyphomicrobium denitrificans ATCC 51888T (Hden_0696 (ADJ22516)), Sulfuricella denitrificans DSM 22764T (SCD_RS03985 (SCD_01710, BAN34642)). Proteobac., Proteobacteria.\n\nThree different types of arrangements of hdr-like, lbpA and biosynthetic genes can be differentiated (Figure 2). In the most common group (Group I) found in all analyzed Proteobacteria and Aquificae, the maturation genes are strictly located in the same operon as the hdr-like and lbpA genes. The Group II arrangement is typical for the archaeal family Sulfolobaceae. The genes are scattered about a wider region and located in several different operons. Group III presents yet a different arrangement and is found in Actinobacteria and Firmicutes where genes encoding Hdr-like and two or three lipoate-binding proteins are linked with genes for electron-transferring flavoproteins (EtfBA) (Garcia Costas et al., 2017). Although a close functional association between the encoded proteins is strongly indicated for all three groups, differences in the interplay of the encoded proteins are certainly to be expected.\n\n### Sequence alignments and phylogenetic analyses for Hdr-associated lipoate-binding proteins\n\nAn alignment was built for 95 LbpA proteins encoded in or in immediate vicinity of hdr-like gene clusters. All these proteins share a strictly conserved lysine residue (Figure 2\u2014figure supplement 1) known to be required for lipoate attachment (Spalding and Prigge, 2010). With the exception of some archaeal LbpAs, the most conspicuous common features of the new LbpA proteins are two strictly conserved cysteine residues that GcvH proteins lack, one cysteine is located near the N-terminus whereas the other is close to the C-terminus (Figure 2\u2014figure supplement 1). The latter cysteine residue is often neighbored by glycine residues. A similar pattern is seen in SoxY proteins where the cysteine of the carboxy-terminal GGCGG sequence has a well-established sulfur substrate-binding function. Sulfur-loaded SoxY serves as a substrate for the other components of the periplasmic thiosulfate oxidizing Sox multienzyme complex (Sauv\u00e9 et al., 2007).\n\nPhylogenetic analysis of LbpA proteins encoded in group I gene clusters (Figure 3) clearly showed two distinct types of LbpA proteins, LbpA1 and LbpA2. In all organisms containing two lbpA genes, one gene encodes an LbpA1 and the other a member of the LbpA2 type (Figure 3). When the analysis was widened to all LbpAs and representative bona fide GcvH proteins, the LbpA1 and LbpA2 differentiation for the proteobacterial proteins and those from Aquificae remained well supported. Deep branching points, such as those for the GcvH proteins or the LbpA proteins from Actinobacteria, Firmicutes and Archaea however lacked significance (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig3-v2.jpg)\n\n**Figure 3.:** First, the best amino acid substitution model was calculated in MEGA7 (Kumar et al., 2016). The Le_Gascuel_2008 model (Le and Gascuel, 2008) had the lowest BIC (Bayesian information Criterion) score and was considered to describe the substitution pattern the best. The evolutionary history was then inferred by using the Maximum Likelihood method based on this model. The tree with the highest log likelihood (\u22125373.74) is shown. Bootstrap values given at branching points are based on 1000 replicates. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using a JTT model, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter\u00a0=\u00a00.8540)). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 68 amino acid sequences. All positions containing gaps and missing data were eliminated. There were a total of 123 positions in the final alingment. Evolutionary analyses were conducted in MEGA7 (Kumar et al., 2016).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Three bona fide GvcH proteins were included in the analysis (GcvH from Escherichia coli K12 substr. W3110 (BAE76969), ThisiDRAFT_2440 from Thiorhodospira sibirica, and Hden_2793 from Hyphomicrobium denitrificans). First, the best amino acid substitution model was calculated in MEGA7(Kumar et al., 2016). The Le_Gascuel_2008 model (Le and Gascuel, 2008) had the lowest BIC (Bayesian information Criterion) score and was considered to describe the substitution pattern the best. The evolutionary history was then inferred by using the Maximum Likelihood method based on this model. The tree with the highest log likelihood (\u22125373.74) is shown. Bootstrap values given at branching points are based on 1000 replicates. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using a JTT model, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter\u00a0=\u00a00.8540)). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 98 amino acid sequences. All positions containing gaps and missing data were eliminated. There were a total of 123 positions in the final alingment. Evolutionary analyses were conducted in MEGA7 (Kumar et al., 2016).\n\n### Production and analysis of LbpA1 and LbpA2 proteins\u00a0in vivo and\u00a0in vitro\n\nFour different LbpA proteins were produced in E. coli (Table 1). Proteins TK90_0638 (Tk90LbpA1) and TK90_0640 (TkLbpA2) are representatives of the LbpA1 and LbpA2 groups, respectively and stem from the same gammaproteobacterial host, the obligately chemolithoautotrophic alkaliphilic sulfur oxidizer Thioalkalivibrio sp. K90mix. To allow generalization, one further protein from each group was chosen from organisms that contain only one lbpA in their hdr-like gene cluster. Protein ThisiDRAFT_1533 (TsLbpA1) from the purple sulfur bacterium Thiorhodospira sibirica, a member of the Gammaproteobacteria, served as another example from the LbpA1 group whereas Hden_0696 (HdLbpA2) from H. denitrificans is a representative of the LbpA2 proteins (Figure 3\u2014figure supplement 1). TsLbpA1 and HdLbpA2 were analyzed by analytical gel permeation chromatography and eluted as monomers of the expected sizes (Figure 4\u2014figure supplement 1). Thiorhodospira TsLbpA1 was analyzed by mass spectrometry and yielded a value 17,457 Da which matched that of the unmodified apoprotein.\n\n**Table 1.**\n LbpA proteins studied in this work and their identity/similarity with E. coli GcvH.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein and locus tag</th>\n      <th>Source organism</th>\n      <th>E. coli GcvH (identity)</th>\n      <th>E. coli GcvH (similarity)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LbpA1 ThisiDRAFT_1533</td>\n      <td>Thiorhodospira sibirica ATCC 700588T</td>\n      <td>25.6%</td>\n      <td>41.7%</td>\n    </tr>\n    <tr>\n      <td>LbpA1 TK90_0638</td>\n      <td>Thioalkalivibrio sp. K90mix</td>\n      <td>29.5%</td>\n      <td>45.6%</td>\n    </tr>\n    <tr>\n      <td>LbpA2 TK90_0640</td>\n      <td>Thioalkalivibrio sp. K90mix</td>\n      <td>34.5%</td>\n      <td>52.4%</td>\n    </tr>\n    <tr>\n      <td>LbpA2 Hden_0696</td>\n      <td>Hyphomicrobium denitrificans ATCC 51888T</td>\n      <td>28.8%</td>\n      <td>45.2%</td>\n    </tr>\n  </tbody>\n</table>\n\nCarboxy-terminally Strep-tagged LbpA2 from H. denitrificans was also produced in E. coli \u0394iscR from plasmid pBBR1p264HdHdrTet at slow growth rates under anoxic conditions and at low temperature (16\u00b0C). Under such conditions, maturation of recombinant proteins containing complex cofactors/prosthetic groups like iron-sulfur clusters can sometimes be improved in a suitable genetic background (Akhtar and Jones, 2008). Indeed, pure LbpA2 protein produced under these conditions migrated significantly faster than the unmodified apoprotein obtained by isopropyl-\u03b2-D-thiogalactopyranoside (IPTG)-induced expression from a pET-based plasmid (Figure 4, left panel). The low copy number plasmid pBBR1p264HdHdrTet contains the H. denitrificans hdr-like gene cluster from dsrE to lbpA (Figure 2) under a strong constitutive promoter from Gluconobacter oxydans (Kallnik et al., 2010). In H. denitrificans cell extracts, the fast migrating band was clearly identified as being lipoylated because it was detected by an antibody directed specifically against HdLbpA2 as well as by an anti-lipoic acid antibody (Figure 4, right panel). A similar behavior upon posttranslational modification has been observed for acyl carrier protein (ACP) where acyl-ACP products migrate faster than unacylated ACP on SDS-PAGE. In both cases, this property can be attributed to enhanced binding of SDS to the acidic ACP/LbpA2 molecules upon fatty acylation/lipoylation (Shen et al., 1992).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig4-v2.jpg)\n\n**Figure 4.:** Lanes 1, 2, 3 and 4 were loaded with 20 ng of pure recombinant HdLbpA2 stemming from pET- or pBBR1p264-based expression as indicated. Lanes 5 to 8 were loaded with extracts (15\u201320 \u03bcg protein) H. denitrificans wildtype grown on methylamine plus thiosulfate (MA + S2O32-), dimethylsulfide (DMS) and methylamine (MA). Lane 9 was loaded with extract (17.5 \u03bcg protein) of H. denitrificans expressing plasmid-encoded genes dsrEhdrC1B1AhyphdrC2B2hyplbpA from a constitutive promoter. Lanes 1 and 2 show silver stained gels. Western blots were developed with antiserum against HdLbpA2 or with anti-lipoic acid antibody as indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Purification of LbpA and LplA-like proteins. Lane 1, LbpA1 from T. sibirica; lane 2, LbpA2 from H. denitrificans; lane 3, LplA from Thioalkalivibrio sp. K90mix; lane 4, LplA from H. denitrificans. (B) Analysis of T. sibirica LbpA1 by gel permeation chromatography on Superdex 75. Buffer: 20 mM sodium phosphate, pH 7.4 containing 150 mM NaCl. Protein elution peaked at 79 ml corresponding to a mass of 16\u201318 kDa. The protein thus behaved as a monomer.\n\n### LbpA2 is an essential component of the Hyphomicrobium denitrificans sulfur-oxidizing system\n\nWith very few exceptions hdr-lbpA containing organisms are lithotrophs that obligately depend on reduced sulfur compounds as sources of electrons for chemo- or photoautotrophic growth (Figure 1\u2014source data 1). H. denitrificans XT (ATCC 51888) presents a notable exception. This ubiquitous, appendaged, budding bacterium can switch between growth on C1- or C2-compounds like methanol or dimethyamine and consumption of the volatile organosulfur compound DMS. The sulfur contained in the latter is fully oxidized to sulfate. Thiosulfate is an intermediate in the oxidation process and when supplied externally it can be used as an additional source of electrons during chemoorganoheterotrophic growth (Koch and Dahl, 2018).\n\nComparative proteomics indicated specific formation of proteins encoded in the hdr-lbpA2 gene cluster during growth on DMS (Koch and Dahl, 2018). Western blotting using two different antibodies, one directed against H. denitrificans LbpA2 and the other against lipoic acid, verified this finding and furthermore proved the presence of a lipoylated protein of the expected size in cells grown on methylamine/thiosulfate but its absence in cells grown on the organic compound alone (Figure 4).\n\nThese findings prompted construction of a H. denitrificans mutant strain carrying an in-frame deletion of the lbpA2 gene, leaving all other genes in the hdr-lbpA2 locus intact. Phenotypic analyses unambiguously revealed that the \u0394lpbA strain was incapable to grow on or degrade dimethylsulfide (Figure 5A). The phenotype was almost exactly the same as that observed for a mutant with an insertional mutation affecting hdrA and all genes located downstream (strain \u0394hdr (Koch and Dahl, 2018), Figure 5A). In addition, the lbpA2-deficient H. denitrificans strain showed a clear phenotype when thiosulfate was provided as an additional electron source during chemoorganoheterotrophic growth on methanol (Figure 5B). While the wild type produced sulfate from thiosulfate (Figure 5B, middle panel), H. denitrificans \u0394lbpA2 formed tetrathionate, just as observed for hdrA insertional mutant (Koch and Dahl, 2018). Tetrathionate, a dead end product and nonmetabolized, is formed by a side pathway catalyzed by the thiosulfate dehydrogenase, TsdA (Koch and Dahl, 2018). The lower growth rate of the H. denitrificans wildtype compared to the \u0394hdr and \u0394lbpA2 mutant strains on methanol and thiosulfate is most probably due to induced production of the very complex heterodisulfide reductase-like proteins in the wildtype that does not take place in the mutant strains. The growth yield increase expected for the wildtype on thiosulfate due to availability of additional electrons for respiratory energy conservation is not readily observable in Figure 5B. It is important to note in this respect that previous work on Hyphomcirobium strain EG also proved batch culture experiments unsuitable for demonstration of reproducible yield increases from thiosulfate. However, chemostat experiments unambiguously demonstrated yield increases by thiosulfate addition for Hyphomicrobium species (Suylen et al., 1986). In summary, our findings demonstrate that the GcvH-like LbpA2 protein is an indispensable component of the Hdr-like pathway of sulfur oxidation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig5-v2.jpg)\n\n**Figure 5.:** (A) Consumption of DMS (upper panel) and growth on DMS (lower panel) by H.denitrificans wt (\u25ca) and the \u2206hdr (\u25a1) and \u2206lbpA (\u2206) strains. DMS concentrations above 1.5 mM are toxic in batch culture and appreciable cell yields necessitate repeated feeding of cultures (Koch and Dahl, 2018). Stoichiometric production of sulfate from DMS for the wt is shown in the middle panel. (B) Consumption of thiosulfate (upper panel) on methanol-containing medium by H. denitrificans wt (\u25ca), the \u2206hdr (\u25a1) and the \u2206lbpA (\u2206) strain. Sulfate formation by the wt (open diamonds, \u25ca) and tetrathionate formation by the \u2206hdr (filled boxes, \u25a0) and \u2206lbpA (filled triangles \u25b2) strains is given in the middle panel. The lower panel shows growth on methanol plus thiosulfate. Representative experiments averaged from two independent biological replicates are shown. Error bars indicate SD.\n\n### LbpA1 and LbpA2 cannot replace Bacillus subtilis GcvH in the lipoate transfer pathway and failed to be modified by LipM\n\nIn the next step, we set out to gain insight into the specificity of the novel LbpA proteins and tested whether they are restricted to a function in oxidative sulfur metabolism or can replace related GcvH proteins in vivo. In Bacillus subtilis, the glycine cleavage system protein GcvH plays a central role in the modification biosynthesis of other lipoic acid requiring enzymes (Figure 6A). The protein:lipoate ligase of this organism is LplJ and has 33% identity with E. coli LplA (Martin et al., 2011). In addition, a single domain LplA family protein, LipM, is present that acts specifically as an ACP:GcvH octanoyl transferase (Christensen and Cronan, 2010; Christensen et al., 2011) (Figure 6A). LipM exclusively modifies the B. subtilis GcvH (Figure 6A) but not other lipoic acid requiring enzymes. The modified GvcH protein then acts as a donor in a reaction catalyzed by LipL, a GvcH:[lipoyl domain] amidotransferase which transfers the octanoyl group from GcvH to the lipoyl domains (LD) of the dehydrogenases (Martin et al., 2011). The lipoyl sulfur atoms are finally inserted by the action of LipA. In B. subtilis strain NM20, disruption of gcvH resulted in complete loss of biosynthetic lipoyl assembly pathway and the \u2206gcvH strain became a lipoate auxotroph (Christensen et al., 2011). In our previous work, we showed that diverse GcvH proteins from various organisms (including human) could successfully substitute for B. subtilis GcvH (Cao et al., 2018). Here, we attempted to complement strain NM20 with ectopic copies of LbpA1 from T. sibirica and LbpA2 from H. denitrificans. The lbpA1 and lbpA2 genes were integrated into the chromosomal amyE site of B. subtilis \u2206gcvH strain under the IPTG-dependent promoter, Pspac. No discrete colony formation was observed even with induction of IPTG indicating that neither LbpA1 nor LbpA2 could restore growth of the B. subtilis \u2206gcvH strain (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig6-v2.jpg)\n\n**Figure 6.:** (A) Biochemical reactions for lipoate/octanoate assembly.\u00a0Upper panel, lipoate ligase reaction catalyzed by LplA or LplJ. When lipoic acid is provided in the environment, LplA/LplJ catalyzes the ligase reaction in two steps. First, lipoic acid is activated to lipoyl-AMP with concomitant release of pyrophosphate. In the presence of a LD or GcvH acceptor protein, the lipoyl moiety is transferred to the LD or GcvH. LD, lipoyl domain. Lower panel, synthesis of octanoyl-ACP and amidotransfer of octanoyl moiety from ACP to GcvH. The synthesis of octanoyl-ACP requires AasS (the acyl-ACP synthetase from Vibrio harveyi) holo-ACP, ATP and free octanoic acid. The octanoyl transfer step requires LipM, which is the octanoyl transferase in B. subtilis.\u00a0(B) Complementation of B. subtilis \u2206gcvH NM20 strain with lbpA genes from sulfur oxidizers and LipM modification assay. The lbpA genes were integrated into the chromosomal amyE site of the B. subtilis \u0394gcvH strain under control of Pspac promoter and were inducible by IPTG. Colony formation was scored on minimal agar plates with glucose as the sole carbon source and supplements indicated after 36 hr at 37\u00b0C. The wild type (JH642) and B. subtilis \u2206gcvH strain (NM20) served as positive and negative controls, respectively. No discrete colonies were formed by the strains that expressed LbpA1 and LbpA2 (the imperfections are scratches from the streaking), whereas strains all grew well with lipoic acid supplementation. (C) Complementation of lipoate auxotrophic E. coli \u2206lipB \u2206lplA strain with LplA proteins from sulfur oxidizers. The control strains were the wild-type (WT) strain and E. coli \u2206lipB \u2206lplA strain containing the empty vector (pBAD22A). Strains were grown on M9 minimum glycerol media plates with the indicated supplements at 37\u00b0C for 36 hr. Complementation proceeded both in the presence and absence of arabinose induction. Plates above contained 0.2% arabinose. (D) Assay of [1-14C]octanoyl transfer from [1-14C]octanoyl-ACP to lipoate-binding proteins (TsLbpA1 from T. sibirica and HdLbpA2 from H. denitrificans) and to B. subtilis GcvH (BsGcvH) as indicated in the figure. The [1-14C]octanoyl-ACP was synthesized in situ by Vibrio harveyi AasS acyl-ACP synthetase (ATP was added for the AasS reaction). Reaction was analyzed on SDS-PAGE by autoradiography. (E) Mobility shift assay for analysis of\u00a0in vitro lipoylation and octanoylation catalyzed by LplA using the E2AceF\u00a0E. coli lipoyl domain (LD) as acceptor. Loss of the positive charge of the modified lysine\u03b5\u2212amino group of the LD results in faster migration of the modified form on Urea-PAGE gels. NE, no enzyme; Sc LplA, LplA from S. coelicolor; HdLplA, LplA from H. denitrificans; TkLplA, LplA from Thioalkalivibrio sp. K90mix.\n\nThe inability of both novel proteins to complement the B. subtilis \u2206gcvH strain could be due to a failure to accept octanoate in the reaction catalyzed by LipM or to an inability of LipL to transfer lipoate from the lipoate-binding proteins to the lipoyl-domains of other lipoate requiring proteins by LipL. To investigate these possibilities, we assayed LipM modification in vitro using purified T. sibirica LbpA1 and H. denitrificans LpbA2 as substrates. The B. subtilis GcvH protein was used as positive control. Each protein was tested for its ability to accept [1-14C]octanoate transferred by LipM. The reactions were analyzed by autoradiography on SDS-PAGE gel (Figure 6D). No octanoylated LbpA1 or LbpA2 band was observed suggesting the failure of in vivo complementation was due to lack of modification by LipM. Hence we conclude that neither of the novel lipoate-binding proteins is able to functionally replace the B. subtilis GcvH protein as a hub in octanoyl group transfer.\n\n### The LplA homologs from sulfur oxidizers cannot replace LplA or LipB in E. coli\n\nTo determine whether the LplA lipoate-protein ligase homologs from H. denitrificans (HdLplA, Hden_0686, Table 2) and the Thioalkalivibrio sp. K90mix (TkLplA, TK90_0642, Table 2) have LplA activity and may be involved in maturation of the novel LbpA proteins from sulfur oxidizers, we first tested their ability to restore growth of the E. coli \u0394lipB \u0394lplA strain QC146 (Christensen and Cronan, 2009). The \u0394lipB and \u0394lplA deletions of this strain result in an inability to synthesize lipoate and to scavenge lipoic acid from the medium. Complementation was tested on M9 minimal agar plates using glycerol as the sole carbon source to avoid bypass of succinate- and acetate-dependent growth by fermentative metabolism (Herbert and Guest, 1968). Due to the E. coli QC146 \u0394lplA mutation, the strain is unable to grow with lipoic acid supplementation. However, growth proceeds robustly when a plasmid encoding lipoate ligase activity is present (Cao and Cronan, 2015; Christensen and Cronan, 2009). Upon expression of the putative lplA-encoding genes from sulfur compound oxidizers, the E. coli strain failed to grow, either in the presence or in the absence of lipoic acid. The strains all grew well upon addition of succinate and acetate which bypass the requirement for a cellular lipoylation pathway (Figure 6C). This indicates that the proteins cannot serve as lipoate ligases (at least not for E. coli lipoate cognate proteins) in the presence of free lipoate and that they fail to act as octanoyl transferases in the E. coli background (data not shown).\n\n**Table 2.**\n Protein identity/similarity between LplA-like proteins studied in this work and their identity/similarity with E. coli LplA, LipB and B. subtilis LipM respectively.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Locus tag</th>\n      <th>Source organism</th>\n      <th>E. coli LplA (Identity/Similarity)</th>\n      <th>E. coli LipB (Identity/Similarity)</th>\n      <th>B. subtilis LipM (Identity/Similarity)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hden_0686</td>\n      <td>Hyphomicrobium denitrificans ATCC 51888T</td>\n      <td>18.8%/33.1%</td>\n      <td>10.8%/18.5%</td>\n      <td>16.9%/31.8%</td>\n    </tr>\n    <tr>\n      <td>TK90_0642</td>\n      <td>Thioalkalivibrio sp. K90mix</td>\n      <td>23.9%/36%</td>\n      <td>10.4%/19.2%</td>\n      <td>18.9%/33.6%</td>\n    </tr>\n  </tbody>\n</table>\n\nTo confirm the in vivo complementation results, in vitro lipoylation assays with E. coli LD (E2AceF) as acceptor protein were performed with purified HdLplA and TkLplA (Figure 4\u2014figure supplement 1). Streptomyces coelicolor LplA, was used as the positive control (Cao and Cronan, 2015). We found that, E. coli LD was readily lipoylated in the presence of lipoic acid and ATP by S. coelicolor LplA as shown by the faster migration on native gel electrophoresis due to loss of the positive lysine charge upon modification (Hermes and Cronan, 2009). However, LplA from H. denitrificans and Thioalkalivibrio sp. K90mix had no activity with E. coli LD (Figure 6E, top panel). The same result was observed with octanoate, another in vivo and in vitro substrate of E. coli LplA (Morris et al., 1994) (Figure 6E, bottom panel). These in vitro results agree with the finding that both proteins fail to complement an E. coli strain devoid of LplA and LipB in in vivo complementation assays.\n\n### LplA-like protein from sulfur oxidizing bacteria is a bona fide lipoate-protein ligase active on its own lipoate-binding proteins\n\nGiven our findings that the novel LbpA proteins from sulfur oxidizers could not be modified by other lipoate metabolism proteins and that in turn LplA-like proteins from sulfur oxidizing bacteria fail to show lipoylation activity with the E. coli cognate proteins, we hypothesized that LplA-like proteins encoded in hdr-like gene cluster have activity only upon their natural cognate proteins, which are the LbpA proteins encoded by the closely linked genes.\n\nTo test this hypothesis, we purified LbpA1, LbpA2 and LplA-like proteins from a single organism Thioalkalivibrio sp. K90mix for the purpose of consistency and performed a series of in vitro analyses. First, we assayed the LplA-like protein for both the overall ligase reaction and the first partial reaction (activation of lipoic acid/octanoic acid with ATP to form lipoyl/octanoyl-AMP intermediate) of the ligase reaction. In the absence of an acceptor protein, synthesis of both octanoyl-adenylate and lipoyl-adenylate intermediates were readily demonstrated by use of ATP labeled in the \u03b1-phosphate (Figure 7A). Moreover, upon addition of an acceptor protein, LbpA1 or LbpA2, the adenylate intermediates were hydrolyzed to AMP. This was readily observed by the increased formation of AMP. This could be clearly observed by the increased levels of AMP. The overall lipoate ligase activity of LplA-like proteins was confirmed by mass spectrometry. Lipoylated Lbp proteins had a mass increase of about 185 Da for both Lbp proteins (184.5 Da for LbpA1 and 186.2 for LpbA2) comparing with the unmodified forms (17457.1 Da for LbpA1 and 16410.7 for LbpA2) (Figure 7B and C). The mass increases matched well with the expected value (188 Da) upon addition of a lipoyl group. We further determined the ligase activity of LplA-like protein by autoradiographic analysis using free [1-14C]octanoate as a substrate (Figure 7D). The reaction was also confirmed by MALDI-mass spectral analysis and the mass difference between apo and holo-Lpb was exactly the mass of the octanoyl addition (data not shown). Note that the purified LbpA1 and LbpA2 proteins migrated as doublets when analyzed on SDS/PAGE gels (Figure 7D), which is attributed to deamidation during purification and does not affect modification (Jordan and Cronan, 1997; Robinson and Robinson, 2001). Gel mobility shift assays showed that LbpA and LplA-like proteins encoded in or close to hdr-like gene clusters exhibit cross-species functionality (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig7-v2.jpg)\n\n**Figure 7.:** (A) TLC analysis of products formed from [\u03b1-32P]ATP. Both synthesis of lipoyl/octanoyl-5\u2019-AMP and transfer of the lipoyl/octanoyl moiety to the acceptor proteins LbpA1 and LbpA2 are shown respectively. Addition of an acceptor protein results in consumption of the acyl adenylate intermediates and production of AMP. TkLplA, TkLbpA1 and TkLbpA2 denote LplA, LbpA1 and LbpA2 proteins from Thioalkalivibrio sp. K90mix, respectively. (B and C) MALDI mass spectrometric analysis of lipoylation of TkLbpA1 and TkLbpA2 respectively catalyzed by LplA from Thioalkalivibrio sp. K90mix. The mass of the lipoylated LbpA1 (17641.6 Da) and lipoylated LbpA2 form (16596.9 Da) agree well the calculated values. The change in mass upon modification (calculated for lipoyl modification, 188 Da; observed, 184.5 Da for LbpA1 and 186.2 Da for LbpA2 respectively) is within the accuracy of the instrument utilized. Intens., intensity; a.u., arbitrary units. (D) Activity of TkLplA (KEGG: TK90_0642) on the two lipoate-binding proteins. [1-14C]octanoic acid was used as the substrate. Reactions were incubated at 37\u00b0C for 1 hr and loaded on a 15% SDS-PAGE gel. The [1-14C]octanoyl-Lbp proteins were detected by autoradiography. Lane 1, LbpA1 from Thioalkalivibrio sp. K90mix (TK90_0638); lane 2, LbpA2 from Thioalkalivibrio sp. K90mix (TK90_0640). (E) Superimposition model of from Thioalkalivibrio sp. K90mix LplA (yellow) obtained by threading on the structure of E. coli LplA (magenta, PDB 3A7R). The small domain of E. coli LplA was denoted by blue dotted box. (F) Detection of [1-14C]octanoyl transfer from [1-14C]octanoyl-ACP to lipoate-binding proteins (Lbps). The [1-14C]octanoyl-ACP was synthesized in situ from [1-14C]octanoate, V. harveyi AasS acyl ACP synthetase, ATP and E. coli holo-ACP, whereas formation, if any, of [1-14C]octanoyl-Lbp should require apo-Lbp, octanoyl transferase and [1-14C]octanoyl-ACP. Note that the residual ATP remaining from the AasS reaction was depleted by use of an ATP trap (2 units of hexokinase plus 10 mM D-glucose to convert ATP to glucose-6-phosphate and ADP). Each reaction contained ATP, [1-14C]octanoate, and E. coli holo-ACP. Lane 1, [1-14C]octanoyl-ACP; Lane 2, positive control LbpA1 (TK90_0638) in the presence of ATP and LplA (TK90_0642); Lane 3, positive control LbpA2 (TK90_0640) in the presence of ATP and LplA (TK90_0642); Lane 4, LbpA1with AasS coupled reaction in the presence of LplA and ATP trap; Lane 5, LbpA2 with AasS coupled reaction in the presence of LplA and ATP trap; Lane 6, B. subtilis GcvH protein with AasS coupled reaction in the presence of a real octanoyltransferase LipM from B. subtilis and ATP trap.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Loss of the positive charge of the modified lysine \u03b5\u2212amino group of TsLbpA1 results in faster migration of the modified form on Urea-PAGE gels.\n\nLipoate-protein ligases belong to the Pfam PF03099 protein ligase family. This group of proteins are constructed on the same scaffold albeit they have markedly different sequences and include both classical ligases and other enzymes catalyzing acyl transfer, such as amidotransferases and octanoyltransferases (Cronan, 2016). The classical lipoate ligases seem to have a consistent overall architecture: a large catalytic domain and a small auxiliary domain at either the C-terminus of the protein such as E. coli LplA, at the N-terminus such as S. coelicolor LplA (Cao and Cronan, 2015) or as a small accessory domain encoded by a separate gene, such as in Thermoplasma acidophilum LplB (Christensen and Cronan, 2010; McManus et al., 2006; Posner et al., 2013). Upon threading the lipoate ligase of Thioalkalivibrio sp. K90mix onto the known E. coli LplA structure (PDB: 3A7R), we found to our surprise that the LplA-like protein lacked the small domain and only had a single large domain, which aligns very well with the large catalytic domain of E. coli LplA (Figure 7E). The same situation applies to LplA-like proteins from other sulfur-oxidizing bacteria (data not shown). Hence, these enzymes provide an exception to the canonical rule that a conventional lipoate-protein ligase should have two domains in order to catalyze the two partial reactions (activation of lipoic acid to lipoyl-AMP and transferring the lipoate moiety from lipoyl-AMP to its cognate proteins).\n\n### LplA-like protein from sulfur-oxidizing bacteria does not exhibit octanoyltransferase activity\n\nOctanyol transferases are not able to use free octanoic or lipoic acid as substrates but catalyze the ATP-independent transfer of octanoyl groups from donor proteins (acyl carrier protein or B. subtilis GcvH) to acceptor proteins. In spite of the different reactions catalyzed (ligase versus transferase), the octanoyl transferases E. coli LipB and B. subtilis LipM of lipoyl assembly also belong to the Pfam PF03099 family. LipB as well as LipM lack the small domain of the ligases and have a single-domain structure, just as the LplA-like protein from sulfur oxidizers. Therefore, we tested whether Thioalkalivibrio LplA-like protein could also have octanoyl transferase activity. That is, the protein might function in both lipoate scavenge and de novo lipoyl assembly. To test function in lipoyl assembly, we performed octanoyl transferase reactions coupled to AasS (acyl-ACP synthetase from V. harveyi) (Figure 7F). Since any residual ATP left from the AasS reaction would have complicated analysis it was removed by adding an ATP trap (hexokinase plus D-glucose), which converted any ATP to glucose-6-phosphate plus ADP (Olsen et al., 1989). After autoradiographic analysis, we found that the LplA-like protein from the sulfur oxidizer lacked octanoyl transferase activity regardless of whether LbpA1 or LbpA2 were present as acceptor proteins. Therefore, the Thioalkalivibrio LplA-like protein has only lipoate (or octanote) scavenge activity and plays no role in de novo lipoyl assembly.\n\n## Discussion\n\nAlthough the existence of lipoic acid has been known for more than sixty years (Cronan, 2016), our work indicates not only an unexpected metabolic function for this cofactor in biology but also shows that the mechanisms by which it is synthesized and becomes attached to protein are even more diverse than currently known.\n\nThe universal occurrence of lbpA in all hdr-like gene clusters (Figure 2, Figure 2\u2014source data 1) in conjunction with the genetic evidence presented, establish the lipoate-binding proteins discovered in this study as key components in the novel Hdr-like pathway of sulfur oxidation. In most prokaryotes specialized for lithotrophic growth on reduced inorganic sulfur compounds like sulfide or thiosulfate, the initial steps occur outside of the cytoplasm (Dahl, 2015; Venceslau et al., 2014). These include the release of the more oxidized sulfone sulfur atom in thiosulfate as sulfate and/or the formation of polysulfide. The same holds true for H. denitrificans where sulfide is released from DMS and further processing is initiated in the periplasm (Eyice et al., 2018; Koch and Dahl, 2018). Subsequent oxidative reactions occur after transfer of the sulfur into the cytoplasm where it is processed in a protein-bound persulfidic state (Figure 8). Rhodanese- or DsrE-like sulfurtransferases as well as the sulfur carrier protein TusA appear to be of ubiquitous relevance for delivery of sulfane sulfur into the different enzymatic machineries generating sulfite, which is then usually further oxidized to sulfate (Dahl, 2015). Details of the sulfur oxidation route employing Hdr-like proteins are just emerging. The similarity of its components with subunits of archaeal heterodisulfide reductase points at (protein-bound) persulfide and/or disulfides (RSS-, RSSR) as possible substrates/intermediates in the reaction cycle. The LpbA protein is a prime candidate as a sulfur substrate-binding entity that might present the sulfur substrate to different catalytic sites of the Hdr-like complex. This idea is corroborated by in vitro studies with bovine and one microbial rhodanese showing that dihydrolipoate can serve as sulfane sulfur acceptor (Cianci et al., 2000; Silver and Kelly, 1976; Villarejo and Westley, 1963a, 1963b).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/37439/elife-37439-fig8-v2.jpg)\n\n**Figure 8.:** The TusA protein is proposed as a central sulfur carrier in the cytoplasm and collects sulfur stemming from the oxidation of organic and reduced inorganic sulfur compounds like DMS, methanethiol, sulfide or thiosulfate (Dahl, 2015; Koch and Dahl, 2018). A complex of Hdr-like proteins containing non-cubane [4Fe-4S] clusters (red diamonds) that serve as the (hetero)disulfide-reducing active site as well as regular [4Fe-4S] clusters (orange boxes) and FAD oxidizes the protein-bound sulfur to sulfite. In the course of the reaction two of the four electrons released per reaction cycle may serve as reductants for dihydrolipoyl formation on LpbA. Dihydrolipoyl dehydrogenase (indicated here as component E3 of the pyruvate dehydrogenase complex) then catalyzes reoxidation of the cofactor to lipoamide and concomitant reduction of NAD+.\n\nCurrently, the reason for the presence of two different LbpA proteins in some sulfur oxidizers is unexplained. Sequence comparison does not indicate conserved differences between obviously functionally important amino acids like cysteine between the LbpA1 and LbpA2 types. It should be noted that the E2 subunits of pyruvate dehydrogenases contain up to three related but non-identical lipoyl domains. Deletion of one or even two of these domains as well as permutation has no adverse effect on assembly and catalytic activity and it appears that the reach of the outermost domain is extended by the other two domains residing more inwards in the enormous assembled pyruvate dehydrogenase complex. Group transfer and redox reactions are possible between lipoyl groups of E2 proteins (Perham, 2000). It is likely that LbpAs from sulfur oxidizers serve a similar substrate-channeling function and that more than a single LbpA monomer is present and functional in the mature Hdr-like multienzyme system. Gene duplication may have occurred allowing more efficient protein production followed by independent evolution of both genes. The reaction center subunits of phototrophic bacteria are probably the most prominent example for such an evolutionary history. In that case, an original protein homodimer encoded by one gene evolved into a heterodimer of two related yet distinct proteins after gene duplication (Blankenship, 2010).\n\nWith the exception of the sulfite/sulfate couple the midpoint reduction potential of reduced sulfur compounds and their oxidation products is more positive than that of the NAD+/NADH couple (Thauer et al., 1977). It is therefore generally put forward that the production of NADH and NADPH ultimately needed for carbon dioxide fixation in sulfur-oxidizing lithoautotrophs requires reverse electron flow from quinol onto NAD+ at the expense of proton motive force. As depicted in Figure 8, the presence of lipoate as a key cofactor in the Hdr-like sulfur-oxidizing system bears the possibility that two of the four electrons released in the catalyzed reaction (R-S-S-\u00a0+\u00a03 H2O \u2192 R-S- + HSO3- + 5 H+) are used to generate dihydrolipoamide during the reaction cycle. Since the lipoamide/dihydrolipoamide system possesses one of the lowest standard biological redox potentials (E0\u2019=\u22120.29 V), the electrons released upon reoxidation of dihydrolipoamide can be directly transferred onto NAD+. This reaction could considerably reduce the need for energy-demanding reverse electron flow in lithoautotrophic sulfur oxidizers. In fact, a gene for a bona fide dihydrolipoamide dehydrogenase is tightly linked with the hdr-gene cluster in sulfur oxidizing archaea (Liu et al., 2014). Such a gene is not apparent in bacterial hdr-like gene clusters but the function may be provided by an E3 subunit that is shared with the lipoate-dependent 2-oxoacid dehydrogenases just as the same E3 is used for pyruvate and \u03b1-ketoglutarate dehydrogenases of E. coli (Steiert et al., 1990).\n\nThe lipoate-binding proteins studied in this work are specifically designed for sulfur oxidation. Despite considerable sequence similarity, they cannot functionally replace the GcvH protein in B. subtilis. Our findings are supported by results of an earlier study, in which the LbpA protein from Aquifex aeolicus (aq_402, by then named GvcH5) also failed to complement B. subtilis \u2206gcvH and could not be modified by B. subtilis LipM (Cao et al., 2018). Furthermore, this protein had no or only extremely weak glycine cleavage acticity and lacked lipoyl-relay activity in the the Bacillus background, that\u00a0is it neither served as functional part of the glycine cleavage system nor as a substrate for lipoate transfer to other lipoic acid requiring proteins.\n\nThe LbpA proteins from sulfur oxidizers do not serve as substrates for the biosynthetic machineries involved in lipoate-binding protein maturation in B. subtilis and E. coli. On the other hand, the first biosynthetic protein characterized in vitro from the sulfur oxidizers, an LplA-like lipoate-protein ligase does not recognize lipoyl domains/proteins from organisms lacking components of a Hdr-like sulfur-oxidizing system. Such specificity is unprecedented, usually protein substrates are interchangeable in vitro (Cao and Cronan, 2015; Cao et al., 2018; Christensen and Cronan, 2010; Posner et al., 2013).\n\nAll sulfur oxidizers analyzed in this study contain the genetic equipment for lipoate-protein biosynthesis via previously established pathways (Figure 2\u2014source data 1). These biosynthetic routes appear to be employed exclusively for the known lipoate-binding components of 2-oxoacid dehydrogenases and glycine cleavage systems. In the organisms studied in detail in this work, bona fide GcvH proteins are encoded in the vicinity of the other components of their glycine cleavage systems (Hden_2793 is H. denitrificans GvcH and TK90_1720 is GvcH from Thioalkalivibrio sp. K90mix). The LpbA proteins involved in sulfur oxidation obviously differ so much from GvcH proteins that they are not recognized by the GvcH maturation enzymes but are specifically modified by lipoate-protein ligases encoded in the same gene cluster.\n\nOur finding that TkLplA is an active lipoyl/octanoyl ligase despite lacking the small C-terminal domain seen in all other lipoate ligases studied to date was unexpected. As mentioned above the small domain can be covalently attached to either terminus of the large domain or be a separate subunit (Cronan, 2016). However, the role of this domain/subunit in the ligase mechanism is unclear. Prior work showed that both domains are required for the overall reaction and for lipoyl-adenylate formation whereas only the large domain was required for transfer of lipoate from the adenylate to the acceptor protein (Cao and Cronan, 2015; Christensen and Cronan, 2010; McManus et al., 2006; Posner et al., 2013). The exact role of the small auxiliary domain remains obscure despite crystal structures of the isolated large domain, the isolated small domain and two-domain complex from the bipartite Thermoplasma acidophilum ligase. Apparently, all of the catalytic machinery lies in the large domain. This is where ATP binds and forms the adenylate (Kim et al., 2005; Posner et al., 2013). However, the large domain cannot synthesize lipoyl-adenylate without interaction with the small domain. This interaction requires substrate and upon association both domains undergo marked conformational changes (Posner et al., 2013). It seems clear that conformational changes in the large domain that occur upon binding substrate and interaction with the small domain somehow trigger the overall ligase reaction. If this is the case, how does HdLplA and TkLplA function as a ligase without a small domain? The most straightforward hypothesis is that the lipoate-binding proteins LbpA1 and LbpA2 not only act as lipoate acceptors but also have a motif that triggers the conformational change usually engendered by the small domain. If so, this could explain the inability of either the HdLplA/TkLplA ligase or LbpA1 and LbpA2 binding proteins to interact with the ligases and acceptor domains of central metabolism proteins of other bacteria.\n\n## Materials\u00a0and\u00a0methods\n\n### Media and chemicals\n\nEscherichia coli strains were grown on LB rich or M9 minimal media under aerobic conditions (Sambrook et al., 1989) at 37\u00b0C unless otherwise indicated. Bacillus subtilis strains were grown on LB medium at 30\u00b0C. H. denitrificans strains were cultivated in minimal media kept at pH 7.2 with 100 mM 3-(N-Morpholino)propanesulfonic acid (MOPS) buffer and containing per liter: 1 g NH4Cl, 0.2 g MgSO4\u00a0\u00d7\u00a07 H2O, 0.5 g NaH2PO4\u00a0\u00d7\u00a02 H2O, 1.55 g K2HPO4 and 0.2 ml l\u22121 trace element solution (Vishniac and Santer, 1957). Methanol, dimethylamine (DMA), methylamine (MA) or dimethyl sulfide (DMS) were added as carbon and electron source. Unless otherwise indicated, 200 ml cultures containing 24.4 mM methanol or 50 mM methylamine were shaken in 500 ml Erlenmeyer flasks at 200 rpm and incubated at 30\u00b0C. If desired 2.5 mM thiosulfate were added. For growth on DMS, 500 ml serum vials sealed with butyl rubber stoppers containing 100 ml medium were used. Thiorhodospira sibirica was grown as previously described (Bryantseva et al., 1999). Thioalkalivibrio sp. K90mix cell material was kindly provided by Dimitri Sorokin. Antibiotics (Sigma Chemical) were used at the following concentrations (in \u03bcg ml\u22121): for E. coli, sodium ampicillin, 100; for B subtilis spectinomycin sulfate, 100; sodium ampicillin, 100; kanamycin sulfate, 50; for H denitrificans kanamycin sulfate, 50; tetracycline HCl, 15, sodium ampicillin, 100, rifampin, 50; streptomycin sulfate, 200. [1-14C]Octanoic acid was purchased from Moravek. American Radiolabeled Chemicals provided [\u03b1-32P]ATP. The pH of buffers and solutions is reported at room temperature.\n\n### Bacterial strains plasmids and molecular biological techniques\n\nAll strains used are listed in Supplementary file 1. All primers and plasmids used are listed in Supplementary file 2. Standard techniques for DNA manipulation and cloning were used unless otherwise indicated (Ausubel et al., 1997). PCR amplification was performed using Taq, Phusion or Q5 polymerase (New England Biolabs) according to the manufacturer\u2019s recommendation. Genomic DNA from T. sibirica, H. denitrificans and Thioalkalivibrio sp. K90mix was prepared using the First-DNA all-tissue Kit (GEN-IAL GmbH, Troisdorf, Germany) and served as the templates in PCR reactions. Genes encoding lipoate-binding proteins and potential lipoate-protein ligases were placed under the control of a phage T7 promoter. The oligonucleotides used for PCR amplification and introduction of restriction sites and Strep-tag encoding sequences if necessary are listed in Supplementary file 2. After digestion with the respective restriction enzymes, the PCR products were ligated into the corresponding sites of pET22b resulting in amino- or carboxy-terminally Strep-tagged or His-tagged proteins.\n\n### Complementation of E. coli and B. subtilis lipoate auxotrophs\n\nTo test the protein ligase activity, lplA genes from H. denitrificans (Kyoto Encyclopedia of Genes and Genomes (KEGG) entry: Hden_0686) and Thioalkalivibrio sp. K90mix (KEGG entry TK90_0642) were cloned and expressed in pBAD plasmids under control of an arabinose-inducible promoter. The E. coli \u0394lplA \u0394lipB strain QC146 was used for complementation as previously described (Cao and Cronan, 2015). To prevent carryover of lipoic acid, all plasmid-carrying strains were grown for 1 day on the same medium containing 0.4% glycerol, appropriate antibiotics, 5 mM acetate, and 5 mM succinate to bypass the lipoic acid-requiring aerobic pathways. Strains were then grown overnight at 37\u00b0C on M9 minimal plates with and without supplementation with lipoic acid (1 mM). Glycerol was used as the carbon source in the presence of arabinose.\n\nTo test the function of Lbp proteins, lbpA1 from T. sibirica (ThisiDRAFT_1533) and lbpA2 from H. denitrificans (Hden_0696) were amplified, adding ribosome binding sites plus SphI and HindIII restriction sites and cloned into plasmid pDR111. The resulting pDR111 derivatives were linearized and each transformed into the B. subtilis \u2206gcvH NM20 strain, finally leading to integration of lbpA1 or lbpA2 into the chromosomal amyE site. Transformants were selected on plates containing spectinomycin and screened for the amyE phenotype (Cao et al., 2018). The strains were grown on Spizizen salts minimum medium (Spizizen, 1958) with glucose as the sole carbon source in the presence or absence of lipoic acid at 37\u00b0C for 36 hr. All complementation assays were repeated at least three times and yielded consistent results.\n\n### Transformation of H. denitrificans by electroporation\n\nA H. denitrificans culture (400 ml) grown in minimal medium containing 24.4 mM methanol was harvested during early exponential phase at an optical density at 600 nm (OD600) of 0.3 (4000\u00a0\u00d7\u00a0g, 10 min, 4\u00b0C). Cells were washed twice with ice-cold water (4000\u00a0\u00d7\u00a0g, 10 min, 4\u00b0C), once with ice-cold 10% (v/v) glycerol and finally resuspended in 800 \u00b5l of 10% glycerol. 50 \u00b5l aliquots of cells were mixed with 500 ng of plasmid DNA and incubated on ice for 10 min. Electroporation was carried out in 0.1 cm gap cuvettes (Bio-Budget Technologies GmbH, Krefeld, Germany) with a Bio-Rad gene pulser II (Bio-Rad Laboratories) with the following electrical settings: 2.4 kV and 200 \u2126 at a capacitance of 25 \u00b5F. After electroporation, 1 ml of minimal medium containing 24.4 mM methanol was added to the cuvette. Cells were transferred to an Eppendorf tube and incubated at 30\u00b0C for 6 hr. Transformants were selected by plating suitable dilutions of electroporated cells onto minimal medium agar containing 24.4 mM MeOH and the appropriate antibiotics. Plates were incubated at 30\u00b0C for up to 14 days. The resulting antibiotic resistant colonies were screened via PCR.\n\n### Construction of H. denitrificans \u0394lbpA\n\nFor markerless in frame deletion of the H. denitrificans lbpA gene (Hden_0696) by splicing by overlap extension (SOE) (Horton, 1995), PCR fragments were constructed using primers Fwd5'_\u2206lbpA, Rev5'_\u2206lbpA, Fwd3'_\u2206lbpA, and Rev3'_\u2206lbpA (see Supplementary file 2). The \u2206lbpA fragment was inserted into plasmid pk18mobsacB (Sch\u00e4fer et al., 1994) using SphI and XbaI restriction sites. The SmaI-excised tetracycline cassette from pHP45\u03a9-Tc (Fellay et al., 1987) was inserted into the Klenow filled-in BglII site of the resulting plasmid pk18mobsacB\u2206lbpA2. The final construct pk18mobsacB\u2206lbpA2Tc was electroporated into H. denitrificans Sm200. Transformants were selected on minimal medium plates containing 24.4 mM methanol and the appropriate antibiotics. Single crossover recombinants were Smr and Tcr, verified by PCR screening and plated on minimal medium containing methanol and 10% sucrose. Double crossover recombinants survived in the presence of sucrose due to loss of the vector-encoded levansucrase (SacB). The genotype of double crossover recombinants was verified by PCR and Southern hybridization experiments.\n\n### Characterization of phenotypes and quantification of sulfur species\n\nFor growth experiments on 0.6 mM DMS, cultures were inoculated to a start OD600 of 0.01 with pre-cultures in late-exponential growth phase cultured on 24.4 mM methanol. DMS was quantified using gas chromatography (GC). 50 \u00b5l samples were taken from the headspace and injected into a GC (PerkinElmer Clarus 480, Rascon FFAP column 25m\u00a0\u00d7\u00a00.25 micron) equipped with a flame ionization detector. Measurements were conducted at a column temperature of 200\u00b0C, an injector temperature of 150\u00b0C, and a detector temperature of 250\u00b0C. N2 was used as carrier gas. DMS concentrations were calculated by regression analysis based on a seven-point calibration with standard DMS solutions in minimal medium. For growth experiments on thiosulfate, media with 24.4 mM methanol and 2.5 mM thiosulfate were inoculated to a start OD600 of 0.005 with pre-cultures in late-exponential growth phase cultured on the same medium. Thiosulfate, tetrathionate, sulfite and sulfate were determined by colorimetric, turbidometric and HPLC methods as described previously (Dahl, 1996; Franz et al., 2009). All growth experiments were repeated three to five times. Representative experiments with two biological replicates for each strain are shown.\n\n### Overproduction, purification and preparation of recombinant proteins\n\nLB medium (500 ml) was inoculated with 5% (v/v) of E. coli precultures carrying the respective pET-based plasmid and cultivated at 37\u00b0C and 180 rpm until an OD600 of 0.6\u20130.8 was reached. After induction with 0.1 mM isopropyl 1-thio-\u03b2-D-galactopyranoside, the cells were cultivated for four more hours under the same conditions and harvested (14,000\u00a0\u00d7\u00a0g, 20 min, 4\u00b0C). In the case of His-tagged proteins, pellets were resuspended in a lysis buffer containing 20 mM sodium phosphate (pH 8.0), 500 mM NaCl, and 10% glycerol and lysed by multiple passages through a French Press. The soluble cell extract was collected and purified by nickel affinity chromatography followed by ion exchange chromatography. Protein concentrations were determined by Bradford assay. Protein purity was monitored by SDS-PAGE. The concentrated protein solutions were dialyzed overnight in dialysis buffer containing 25 mM sodium phosphate, 10% glycerol, 1 mM Tris(2-carboxyethyl)phosphine hydrochloride and 0.2 M NaCl (pH 7.5) followed by flash freezing and storage at \u221280\u00b0C. Strep-tagged proteins were purified according to the manufacturer\u2019s instructions.\n\nC-terminally Strep-tagged H. denitrificans LbpA2 was also produced in E. coli BL21 (DE3) \u0394iscR. One liter batches of lysogeny broth (LB) medium containing 100 mM MOPS buffer pH 7.4, 25 mM glucose and 2 mM iron ammonium citrate as well as ampicillin and kanamycin were inoculated with 5% (v/v) E. coli precultures hosting plasmid pBBR1p264HdenHdrTet (Koch and Dahl, 2018) and cultivated in 2 l flasks at 37\u00b0C and 180 rpm until an OD600 of 0.4\u20130.6 was reached. Cultures were then moved into an anaerobic chamber (Coy Laboratory Products, Grass Lake, USA) containing 98% N2 and 2% H2. Cysteine (0.5 mM), and sodium fumarate (25 mM) were added. Cultures were then transferred into completely filled and tightly closed 500 ml bottles, incubated for 48\u201372 hr at 16\u00b0C and harvested by centrifugation (11,000\u00a0\u00d7\u00a0g, 12 min). Cells were lysed by sonication in the anaerobic chamber. After removal of insoluble cell material and membranes by centrifugation (16,100\u00a0\u00d7\u00a0g for 30 min at 4\u00b0C) and ultracentrifugation (145,000\u00a0\u00d7\u00a0g, 3 hr, 4\u00b0C), protein was purified by Strep-Tactin affinity chromatography according to the manufacturer\u2019s instructions (IBA Lifesciences, G\u00f6ttingen, Germany) followed by concentration to a final volume of less than 0.25 ml via Amicon Ultracel-3K filters (Merck Millipore, Tullagreen, Ireland). The protein was stored under anaerobic conditions at \u221220\u00b0C. Purity was assessed by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE).\n\nPurification of Bacillius subtilis octanoyltransferase LipM, B. subtilis 4\u2019-phosphopantheinyl transferase Sfp, Streptomyces coelicolor lipoate-protein ligase LplA, Vibrio harvey acyl-ACP synthetase AasS and E. coli apo-lipoyldomain LD (E2AceF) was performed based on previously described protocols (Cao and Cronan, 2015; Christensen and Cronan, 2010; De Lay and Cronan, 2007; Jiang et al., 2006; Zhao et al., 2003).\n\n### Immunoblot analyses\n\nSoluble fractions of whole cell extracts and pure preparations of recombinant H. denitrificans LbpA2 were analyzed by SDS-PAGE. Proteins were separated on 15% SDS-polyacrylamide gels and transferred to nitrocellulose blotting membranes (Amersham Protran, 0.2 \u03bcm) at 15 V for 15 min using a Transblot semi-dry transfer apparatus (BioRad). The membranes were preblocked with TBS-T buffer (100 mM Tris base, 0.9% NaCl, 0.1% Tween 20, pH 7.6) containing 5% nonfat milk powder. LpbA2 antigens were detected with an antiserum raised against oligopeptides H2N-WSSVKPTLTPGAEVA-CONH2, and H2N-INDSLVSNPQIANQD-CONH2 comprising highly immunogenic epitopes deduced from the H. denitrificans nucleotide sequence (Eurogentec, Liege, Belgium). The polyclonal antibodies were commercially purified by affinity chromatography on a matrix (AF-Amino TOYO, Sigma) to which the immunogenic peptides were coupled (Eurogentec) and stored at a concentration of 1.6 mg ml\u22121 in PBS containing 0.01% thimerosal and 0.1% BSA. The purified antibodies were used at a 1:500 dilution. Lipoic acid was detected with a mouse monoclonal antibody raised against lipoic acid (Santa Cruz Biotechnology, Dallas, USA) in a 1:4000 dilution. In both cases, membranes were probed for 3 hr in TBS-T containing 0.5% BSA. Following incubation with a goat anti-mouse IgG antibody horseradish peroxidase (HRP) conjugate (Merck, diluted 1:5000) or a goat anti-rabbit IgG antibody HRP conjugate (Sigma, diluted 1:4000) in TBS-T with 0.5% BSA, labelled proteins were detected with the SignalFire ECL reagent system (Cell Signalling Technology, Danvers, USA).\n\n### Preparation of holo-ACP\n\nholo-ACP was obtained by minor modificationsa of a published procedure (Cronan and Thomas, 2009).\n\nTo convert any apo-ACP to the holo form the reaction mixture (100 \u03bcl) contained 100 mM MES (pH 6.0), 10 mM MgCl2, 5 mM DTT, 500 \u03bcM lithium CoA, 200 \u03bcM apo-ACP and 10 \u03bcM B. subtilis 4\u2019-phosphopantheinyl transferase, Sfp (De Lay and Cronan, 2007). The reaction was performed at 37\u00b0C for 3 hr. The mix was then incubated at 65\u00b0C for 2 hr, and the precipitates were removed by centrifugation. The remaining fractions containing holo-ACP were validated by conformational-sensitive 2 M Urea-PAGE (15% acrylamide), and then combined and dialyzed against 25 mM sodium phosphate buffer (pH 7.0), 300 mM NaCl, 1 mM (tris(2-carboxyethyl)phosphine (TCEP), 10% glycerol.\n\n### Purification of LDs\n\nThe E. coli E2p(1,3) hybrid LD (E2AceF) was purified by acid treatment followed by ion exchange chromatography as described previously (Zhao et al., 2003). The mass of purified lipoyl domains was verified by electrospray mass spectrometry as described for AcpP (Christensen and Cronan, 2010). The E2AceF was in the unmodified form and lacked the N-terminal methionine residue. The protein was quantified as described earlier (Christensen et al., 2011).\n\n### Gel shift assay for LD modification analysis\n\nLipoate ligase activity was assayed by observing a mobility shift of lipoate-binding proteins upon modification by native gel electrophoresis as originally described by Miles and Guest (Miles and Guest, 1987). Assays contained 100 mM sodium phosphate (pH 7.0), 5 mM DTT, 1 mM sodium lipoate, 1 mM MgCl2, 1 mM ATP, 20 \u00b5M lipoyl domain (LD) or lipoate-binding protein and 2 \u00b5M corresponding of the respective ligase. In octanoylation assays, sodium octanoate replaced sodium lipoate. The reaction mixtures (20 \u00b5l) were incubated at 37\u00b0C for 1 hr and all the reaction products were electrophoresed on 2 M Urea-PAGE (20% acrylamide) at 120 V for 90 min. The proteins were visualized by staining with Coomassie Blue R-250.\n\n### Assay of enzymatic [\u03b1\u221232P]-lipoyl/octanoyl-AMP intermediate formation\n\nLipoyl/octanoyl-AMP synthesis was done using the previously described protocol with slight modification (Cao and Cronan, 2015). The reactions contained 50 mM sodium phosphate buffer, pH 7.8, 10 nM [\u03b1-32P]ATP, 10 \u00b5M MgCl2, 0.1 mM sodium lipoate or octanoate, 20 \u00b5M apo-LbpA1(TK90_0638) or apo-LbpA2 (KEGG entry TK90_0640), and 2 \u00b5M LplA (TK90_0642). All the reactions were incubated for 1 hr at 37\u00b0C. A 1 \u00b5l sample of each reaction was spotted on cellulose TLC plates and developed in isobutyric acid/NH4OH/water (66:1:33). The TLC plates were dried overnight, exposed to a phosphorimaging plate and visualized using a Fujifilm FLA-3000 system.\n\n### Assay of octanoyl-transfer\n\nThe AasS coupled reaction was performed as previously described with slight modification (Cao et al., 2018; Shi et al., 2016). The mixture (25 \u03bcl) contained 100 mM sodium phosphate buffer (pH 7.2), 50 mM NaCl, 1 mM ATP, 5 mM TCEP, 2 mM MgCl2, 0.25 mM [1-14C] sodium octanoate, 50 \u03bcM E. coli holo-ACP, 2.5 \u03bcM of V. harveyi AasS acyl-ACP synthetase, 10 \u03bcM B. subtilis LipM or TK90LplA (TK90_0642), and 20 \u03bcM of the tested LbpA protein. The reaction was performed at 37\u00b0C for 1 hr. Note that an ATP trap (2 units hexokinase plus 10 mM D-glucose) was added to each reaction 15 min before the addition of B. subtilis LipM or TK90LplA to remove any remaining ATP by conversion to glucose-6-phosphate plus ADP. The products were separated using 2 M urea PAGE (20% acrylamide), then dried under vacuum at 65\u00b0C for 2 hr and exposed to preflashed Biomax XAR film (Kodak) at \u221280\u00b0C for 24 hr.\n\n### Bioinformatics\n\nBLASTP (NCBI website) was used to find homologues of Hdr-like and LbpA proteins. A phylogenetic tree was constructed from the alignment of multiple proteins followed by elucidation of the best amino acid substitution model and Maximum Likelihood analysis based on this model. Bootstrap analysis was set to 1000 repeats. All these analyses were conducted in MEGA7 (Kumar et al., 2016).\n\n### Structural modeling\n\nA model of the Thioalkalivibrio sp. K90mix LplA was constructed using the automated mode of SWISS_Model as previously described (Cao et al., 2017). The superimposition model was created by threading Thioalkalivibrio sp. K90mix LplA with the E. coli LplA crystal structure (Protein Data Bank ID 3A7R). The final image was generated by using the UCSF Chimera package (Pettersen et al., 2004).\n",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "9b26f931-ee6f-4872-b5d4-2d9255008798",
+      "submission_id": "d2cebb91-8c1d-4fd5-8a54-60f8fb3763d6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dianne K Newman, Howard Hughes Medical Institute, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37439.022](https://doi.org/10.7554/eLife.37439.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Lipoate-binding proteins and specific lipoate:protein ligases in microbial sulfur oxidation reveal a new role for an old cofactor\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nCongratulations on your high quality manuscript, which the Reviewing Editor and two expert reviewers agree should be published in eLife pending some straightforward revision/experimental clarification. The details of the two reviews are appended below. The primary issues we would like you to address are the following:\n\n1) Revise the Abstract, Introduction and Discussion so that the main message is clear to the broad eLife audience (recall that many readers may know very little either about lipoate biochemistry or about microbial sulfur metabolic pathways): state specifically what the new function for lipoic acid is that you have discovered. Explain to naive readers why they should care about this. Rather than claiming discovery of a \"novel\" function, be precise about what the function is. Claims of novelty are overdone and obscure what the exciting finding is.\n\n2) Clarify the ambiguity pointed out by reviewer 1 regarding octanoyl-transferase activity in two different parts of the text.\n\n3) Address the specificity of the LplA protein and the role of the A1 and A2 proteins and their redundancy. This could require some additional data.\n\nWe look forward to receiving your revised submission and thank you for submitting your work to eLife.\n\nReviewer #1:\n\nThe manuscript focuses on an microbiologically important and biochemically interesting process: the oxidation of sulfurous compounds in bacteria that proceeds via a protein complex resembling heterodisulfide reductase. This manuscript shows that in Hyphomicrobium denitrificans a lipoylated-protein (LpbA2) is involved. The manuscript also clarifies the question how the lipoate cofactor is installed in LbpA1/A2-proteins (from Thialkalivibrio) through a specific enzyme (LplA-like protein). In general the manuscript contains a lot of high-quality data that supports the chain of evidence. Yet, there are some points that need to be addressed in my opinion.\n\nText/manuscript structure: The authors characterize and investigate proteins from different organisms to draw their conclusions. I wonder whether a slight restructuring of the manuscript to avoid too many \"logical jumps\" between the systems would be beneficial!? Definitely the authors should add a dedicated table that lists all proteins investigated in this work, as well as their percentage sequence identities to GcvH (for LbpA1/A2) or LplA and/or LipB (for LplA-like protein).\n\nData/interpretation: One crucial point is the functional assignment of the LplA-like protein from Thialkalivibrio. If I understand the authors correctly, they claim (subsection \u201cLplA-like protein from sulfur oxidizer bacteria is a bona fide lipoate:protein ligase active on its own lipoate-binding proteins\u201d) that the LplA-like protein is able to perform a lipoylation, as well as octanoylation. A bit later, however, they write that the Lpl-Alike protein is not able to perform an octanoyl-CoA transfer when measured with another assay. This apparent discrepancy needs to be clarified. Note that if the enzyme has both activities, this would be in line with the presence of two radical SAM enzymes (which might serve in inserting sulfur into the octanoate bound to the LbpA1/A2 proteins. Maybe LplA-like protein is promiscuous and has a dual function? In this respect, some kinetic data on octanoate or lipoate activation would be very helpful to clarify the question of true function or side reactivity. Can the authors estimate rates and/or KM values?\n\nAnother, related problem, is that the authors demonstrate that both LbpA1 and A2 are loaded by LplA-like protein. However, they do not answer (or even address!) the question why Thioalkalivibrio features two Lbps (LbpA1 and A2)? Are both of the enzymes important, is the presence of two Lpls functional redundancy or complementarity (e.g. are the two proteins expressed on different substrates, under different conditions or are they forming a heterodimer)? In which respect differ the A1 and A2 proteins from each other? This information would be very useful top the reader who wonders about the presence of two proteins in one cluster. Also, I did not quite understand if the second lipoates ligase outside of the cluster would activate be able to attach the lipoate cofactor to A1 and A2!?\n\nFinally, the authors conclude that \"the LplA does not does not recognize lipoyl domains/proteins stemming from other organisms\". However, the authors did not show that the lipoate transferase from Thialkalivibrio would be able to function with the H. denitrificans in my opinion! This statement is not supported/backed up by data.\n\nReviewer #2:\n\nThe manuscript describes very interesting follow-up work on the recently discovered heterodisulfide reductase (Hdr)-like multienzyme systems for sulfur oxidation found in a large group of bacteria and archaea: these enzyme systems are resembling HdrABC of methanogenic archaea (but without CoM-CoB heterodisulfide). In another manuscript submitted to ISMEJ, the Ch. Dahl group apparently confirmed the role of these hdr-like genes in oxidation of thiosulfate (as derived from DMS) to sulfate, in their genetically accessible system, Hyphomicrobium denitrificans. For the present manuscript, the Dahl lab used the same system, and joined forces with the J.E. Cronan lab, for an exploration of the role of genes for lipoate-binding proteins (LpbA) and lipoate-protein ligases (LplA), which are co-encoded in these hdr-like sulfur-oxidation gene clusters in this organism, in Thioalkalivibrio, and in almost all gene clusters of other organisms with (predicted) Hdr-like sulfur oxidation systems.\n\nFirst, a comprehensive analysis was done for the potential lipoate-binding protein genes, lipoate-protein ligase genes (and radical-SAM protein genes), which are each co-occurring in such hdr-like gene clusters, essentially in three different arrangements (group 1, 2 and 3). The detailed analysis of the LbpA sequences indicated two strictly conserved Cys residues in comparison to the archetype GcvH of the glycine cleavage system, and two subtypes of LbpAs, i.e. LbpA1 and LpbA2. Then, four different LpbAs were recombinantly produced and tested: both LbpA1 and A2 from a Thioalkalivibrio sp. (Tk-LbpA1 and A2), LbpA1 from a Thiorhodospira sibirica (Ts-LbpA1), and the LbpA2 from H. denitrificans (Hd-LbpA2). Non-lipoylated versus lipoylated proteins obtained dependent on anoxic expression, were distinguished by immunoblotting and by gel-mobility shift. For H. denitrificans, specific production of lipoylated HbpA2 during DMS and thiosulfate utilization was demonstrated by proteomics and by immunoassays targeting a representative HdrA2- or the lipoyl-domain. In addition, a HbpA2 in-frame knockout was constructed, which had lost the ability to utilize DMS, and which produced the dead-end product tetrathionate from thiosulfate but not sulfate, thus confirming that HdrA2 is essential for sulfur oxidation (as with the knock-out of the Hdr-like genes).\n\nNext, it was tested whether LpbA1 or A2 can substitute for GcvH in a Bacillus subtilis \u2206gcvH strain (no, they can't) and this failure was attributed to a lack of octanoate-transfer to the LipAs through Bacillus-LipM, as demonstrated in vitro assays using 14C-octanoate as substrate and autoradiography. Further, the ligases Hd-LplA and Tk-LplA cannot substitute for the native ligases of E. coli in vivo (in a \u0394lipB \u0394lplA knockout strain), and not an in-vitro lipoylation assay using the recombinant proteins. Finally, it was confirmed that the LplAs encoded in the hdr-like gene cluster have activity only with their own LbpAs encoded in the same cluster, by MALDI, autoradiography and mobility-shift assays. This specificity was attributed to a difference in the domain structure of the ligases (absence of auxiliary domain in the LbpAs) and an absence of the octanoyl-transferase activity in these LplAs; it is then speculated whether the LbpAs may confer this function.\n\nOverall, the manuscript provides important, and convincing evidence that lipoate is involved as key component in another metabolic function not previously recognized \u2013 sulfur oxidation via the HDR-like system \u2013 and that the mechanisms by which lipoate is synthesized and attached to its binding-protein(s) LbpA is more diverse than initially known \u2013 here specifically designed to sulfur oxidation. Clearly, one would like to know more on the details of sulfur oxidation route in these Hdr-like enzyme systems, particularly on the electron transfer via the dihydrolipoamide (which might substitute for reverse-electron flow, as postulated in the Discussion), however, this was not the scope of the present study. Rather, the results presented here are (on top of the points mentioned above) also a very important prerequisite for a future characterization of this enzyme system.\n\nI've got no major criticism to raise:\n\nIn my opinion, this study is very sound, the results from the two labs allow for all conclusions drawn (as expected), and the topic of the study is clearly in eLife's scope.\n",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "507b4bf2-e98d-4b3e-be89-96a940430f1a",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C1",
+      "claim": "Lipoic acid is a highly conserved organosulfur cofactor found in all three domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoic acid (1,2-dithiolane-3-pentanoic acid or 6,8-thioactic acid, Figure 1) is a highly conserved organosulfur cofactor found in all three domains of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the distribution of lipoic acid across life forms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d493f127-0221-4079-a2ff-87d65dc462cc",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C2",
+      "claim": "Only five lipoate-dependent multienzyme complexes have been characterized: three \u03b1-ketoacid dehydrogenases (pyruvate dehydrogenase, 2-oxoglutarate dehydrogenase, branched-chain 2-oxoacid dehydrogenase), acetoin dehydrogenase and the glycine cleavage complex.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only five lipoate-dependent multienzyme complexes have been characterized: three \u03b1-ketoacid dehydrogenases (pyruvate dehydrogenase, 2-oxoglutarate dehydrogenase, branched-chain 2-oxoacid dehydrogenase), acetoin dehydrogenase and the glycine cleavage complex (Cronan, 2016; Cronan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a6093993-b3ed-4dbe-9c05-d8ee71215e2b",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C3",
+      "claim": "In lipoylated enzyme complexes, lipoate acts both as an electrophile that binds to reaction intermediates and as a swinging arm that channels the bound substrate between the active sites of different subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In the five characterized lipoylated enzyme complexes, lipoate acts both as an electrophile that binds to reaction intermediates (via a thioester or thioether bond) and as a swinging arm that channels the bound substrate between the active sites of different subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanistic role of lipoate in known enzyme complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "37ce1ed1-c162-4614-9a1d-17501fb0935e",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C4",
+      "claim": "During catalysis, the intramolecular disulfide bond of lipoate cycles between oxidized lipoamide and reduced dihydrolipoamide.",
+      "claim_type": "EXPLICIT",
+      "source": "During catalysis, the intramolecular disulfide bond of lipoate cycles between oxidized lipoamide and reduced dihydrolipoamide (Figure 1) (Reed and Hackert, 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to Figure 1 showing the chemical structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ef3f6dc9-e6e2-4284-adc6-e76d51f518bd",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C5",
+      "claim": "A large group of archaeal and bacterial sulfur oxidizers utilize a novel pathway of sulfur oxidation involving a heterodisulfide reductase (Hdr)-like enzyme complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative genome mining of sulfur-oxidizing prokaryotes (Dahl, 2015; Quatrini et al., 2009; Venceslau et al., 2014), transcriptomic and proteomic studies (Latorre et al., 2016; Mangold et al., 2011; Osorio et al., 2013; Ouyang et al., 2013; Quatrini et al., 2009) as well as first biochemical evidence (Boughanemi et al., 2016) indicated that a large group of archaeal and bacterial sulfur oxidizers utilize a novel pathway of sulfur oxidation involving a heterodisulfide reductase (Hdr)-like enzyme complex resembling the HdrABC (Wagner et al., 2017) of methanogens, although a coenzyme M-coenzyme B (CoM-S-S-CoB) heterodisulfide is not present in the sulfur oxidizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to genomic, transcriptomic, proteomic, and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "8c0dac29-aef7-410b-ab1c-89549f5c765d",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C6",
+      "claim": "The Hdr-like complex is essential for oxidation of thiosulfate to sulfate in Hyphomicrobium denitrificans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we provided conclusive genetic evidence that this complex is indeed essential for oxidation of thiosulfate to sulfate in Hyphomicrobium denitrificans (Koch and Dahl, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior genetic evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "06cf3029-ec4a-491e-80ba-5c9086a271c5",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C7",
+      "claim": "A \u0394hdr strain of H. denitrificans was unable to grow on dimethylsulfide (DMS).",
+      "claim_type": "EXPLICIT",
+      "source": "In this Alphaproteobacterium, thiosulfate is an intermediate of dimethylsulfide (DMS) degradation and a \u0394hdr strain was also unable to grow on the volatile organosulfur compound (Koch and Dahl, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "fb6d7046-bd4d-4910-a35f-e3f1de213720",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C8",
+      "claim": "Sulfur-oxidizing prokaryote genes encoding the Hdr-like complex are associated with genes encoding novel lipoate-binding proteins resembling GcvH.",
+      "claim_type": "EXPLICIT",
+      "source": "The sulfur-oxidizing prokaryote genes (hdrC1B1A-hyp-hdrC2B2) encoding the Hdr-like complex are associated with genes encoding novel lipoate-binding proteins resembling GvcH, the lipoate-binding component of the bacterial glycine cleavage system (Ehrenfeld et al., 2013; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies identifying these gene associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "263489a4-1314-4749-9eef-83d414d8813b",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C9",
+      "claim": "Database searches revealed 56 different cultivated genome-sequenced prokaryotes from one archaeal and six bacterial phyla as containing typical hdr-like gene loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Database searches revealed 56 different cultivated genome-sequenced prokaryotes from one archaeal and six bacterial phyla as containing typical hdr-like gene loci (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ada2568c-211c-4149-bedf-6264709ca325",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C10",
+      "claim": "With very few exceptions all organisms containing hdr-like gene loci are either established chemo- and photolithotrophs oxidizing reduced inorganic sulfur compounds or they have been reported as oxidizing mineral sulfides or volatile organic sulfur compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "With very few exceptions all these organisms are either established chemo- and photolithotrophs oxidizing reduced inorganic sulfur compounds or they have been reported as oxidizing mineral sulfides (FeS, FeS2 and others) or volatile organic sulfur compounds (e.g. dimethylsulfide).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the organisms identified in the database search.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a9bb3c7e-df7b-4127-a0f4-f74648ec12fd",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C11",
+      "claim": "In all cases, the cluster of hdr-like genes is associated with at least one, in most cases with two and in a few cases with three genes for putative lipoate-binding proteins resembling classical glycine cleavage system H (GcvH) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the cluster of hdr-like genes is associated with at least one, in most cases with two and in a few cases with three genes for putative lipoate-binding proteins resembling classical glycine cleavage system H (GcvH) proteins (Figure 2, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2 and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "4fa883bb-c779-472d-8472-0642e444693c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C12",
+      "claim": "In almost all cases, the hdr-lbpA arrangement is linked in the same gene cluster structure with genes encoding proteins probably involved in the biosynthesis of lipoate binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In almost all cases, the hdr-lbpA arrangement is linked in the same gene cluster structure with genes encoding proteins probably involved in the biosynthesis of lipoate binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on genomic analysis of gene cluster organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "76e2947e-1b8d-446c-bef6-e67256f2531a",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C13",
+      "claim": "The close genomic association of lipoate-binding proteins with maturation enzymes indicates the possibility of a specific biosynthetic pathway required for maturation of Hdr-associated lipoate-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The close genomic association of lipoate-binding proteins with maturation enzymes together with the observation that virtually all organisms analyzed contain enzymes catalyzing the canonical pathways for biosynthesis of lipoylated proteins (Figure 2\u2014source data 1) indicate the possibility of a specific biosynthetic pathway required for maturation of Hdr-associated lipoate-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genomic organization patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a8cff383-e4d4-4a9a-9105-d7eec2241684",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C14",
+      "claim": "All LbpA proteins share a strictly conserved lysine residue known to be required for lipoate attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "All these proteins share a strictly conserved lysine residue (Figure 2\u2014figure supplement 1) known to be required for lipoate attachment (Spalding and Prigge, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2\u2014figure supplement 1 and a citation to prior knowledge.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "61131c9e-e574-428f-918a-705ebfa8d498",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C15",
+      "claim": "With the exception of some archaeal LbpAs, the most conspicuous common features of the new LbpA proteins are two strictly conserved cysteine residues that GcvH proteins lack.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of some archaeal LbpAs, the most conspicuous common features of the new LbpA proteins are two strictly conserved cysteine residues that GcvH proteins lack, one cysteine is located near the N-terminus whereas the other is close to the C-terminus (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "4abc017a-6e74-4981-b34b-4cf2697ea0e1",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C16",
+      "claim": "Phylogenetic analysis of LbpA proteins encoded in group I gene clusters clearly showed two distinct types of LbpA proteins, LbpA1 and LbpA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of LbpA proteins encoded in group I gene clusters (Figure 3) clearly showed two distinct types of LbpA proteins, LbpA1 and LbpA2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "e5b0ffd2-22dc-4749-b845-093783b8b76b",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C17",
+      "claim": "In all organisms containing two lbpA genes, one gene encodes an LbpA1 and the other a member of the LbpA2 type.",
+      "claim_type": "EXPLICIT",
+      "source": "In all organisms containing two lbpA genes, one gene encodes an LbpA1 and the other a member of the LbpA2 type (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ff483af7-d83b-4e3c-bdbf-d79a86e89f69",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C18",
+      "claim": "TsLbpA1 and HdLbpA2 eluted as monomers of the expected sizes by analytical gel permeation chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "TsLbpA1 and HdLbpA2 were analyzed by analytical gel permeation chromatography and eluted as monomers of the expected sizes (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "efd766e2-bd49-409e-bd98-81e9ff24a431",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C19",
+      "claim": "Thiorhodospira TsLbpA1 analyzed by mass spectrometry yielded a value 17,457 Da which matched that of the unmodified apoprotein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thiorhodospira TsLbpA1 was analyzed by mass spectrometry and yielded a value 17,457 Da which matched that of the unmodified apoprotein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "3134723e-751c-4709-a5c4-5878608616a3",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C20",
+      "claim": "Pure LbpA2 protein produced under anoxic conditions at low temperature migrated significantly faster than the unmodified apoprotein obtained by IPTG-induced expression from a pET-based plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pure LbpA2 protein produced under these conditions migrated significantly faster than the unmodified apoprotein obtained by isopropyl-\u03b2-D-thiogalactopyranoside (IPTG)-induced expression from a pET-based plasmid (Figure 4, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel electrophoresis data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7de4832e-fa18-43bd-afe5-828e1fe1c2d5",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C21",
+      "claim": "In H. denitrificans cell extracts, the fast migrating band was clearly identified as being lipoylated because it was detected by an antibody directed specifically against HdLbpA2 as well as by an anti-lipoic acid antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In H. denitrificans cell extracts, the fast migrating band was clearly identified as being lipoylated because it was detected by an antibody directed specifically against HdLbpA2 as well as by an anti-lipoic acid antibody (Figure 4, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "2e9ec159-d7a2-4e23-977b-81c4bd4ecb37",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C22",
+      "claim": "Comparative proteomics indicated specific formation of proteins encoded in the hdr-lbpA2 gene cluster during growth on DMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative proteomics indicated specific formation of proteins encoded in the hdr-lbpA2 gene cluster during growth on DMS (Koch and Dahl, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior proteomic work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "0d8411de-c17b-4fa5-bb73-af8847e24db6",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C23",
+      "claim": "Western blotting verified the presence of a lipoylated protein of the expected size in cells grown on methylamine/thiosulfate but its absence in cells grown on the organic compound alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting using two different antibodies, one directed against H. denitrificans LbpA2 and the other against lipoic acid, verified this finding and furthermore proved the presence of a lipoylated protein of the expected size in cells grown on methylamine/thiosulfate but its absence in cells grown on the organic compound alone (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "bdbb1135-604f-4e87-a2a4-40826b48f06c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C24",
+      "claim": "The H. denitrificans \u0394lbpA strain was incapable to grow on or degrade dimethylsulfide.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic analyses unambiguously revealed that the \u0394lpbA strain was incapable to grow on or degrade dimethylsulfide (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth and substrate consumption data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "6f1a12d2-a15c-48c0-9857-ec75e1adfe6e",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C25",
+      "claim": "The lbpA2-deficient H. denitrificans strain showed a clear phenotype when thiosulfate was provided as an additional electron source during chemoorganoheterotrophic growth on methanol.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the lbpA2-deficient H. denitrificans strain showed a clear phenotype when thiosulfate was provided as an additional electron source during chemoorganoheterotrophic growth on methanol (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "2958247d-e261-4b58-926e-ae517729a739",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C26",
+      "claim": "While the wild type produced sulfate from thiosulfate, H. denitrificans \u0394lbpA2 formed tetrathionate.",
+      "claim_type": "EXPLICIT",
+      "source": "While the wild type produced sulfate from thiosulfate (Figure 5B, middle panel), H. denitrificans \u0394lbpA2 formed tetrathionate, just as observed for hdrA insertional mutant (Koch and Dahl, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sulfur compound analysis data shown in Figure 5B and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "1491ab85-ed92-4225-94e4-f99433888ce4",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C27",
+      "claim": "The GcvH-like LbpA2 protein is an indispensable component of the Hdr-like pathway of sulfur oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings demonstrate that the GcvH-like LbpA2 protein is an indispensable component of the Hdr-like pathway of sulfur oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genetic deletion experiments showing loss of sulfur oxidation function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "61dcb1a6-119a-4208-813e-57918c8d5520",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C28",
+      "claim": "In Bacillus subtilis, the glycine cleavage system protein GcvH plays a central role in the modification biosynthesis of other lipoic acid requiring enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Bacillus subtilis, the glycine cleavage system protein GcvH plays a central role in the modification biosynthesis of other lipoic acid requiring enzymes (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about B. subtilis lipoate metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "45c1442d-b4a2-4ff6-89b5-a43926662151",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C29",
+      "claim": "In B. subtilis strain NM20, disruption of gcvH resulted in complete loss of biosynthetic lipoyl assembly pathway and the \u2206gcvH strain became a lipoate auxotroph.",
+      "claim_type": "EXPLICIT",
+      "source": "In B. subtilis strain NM20, disruption of gcvH resulted in complete loss of biosynthetic lipoyl assembly pathway and the \u2206gcvH strain became a lipoate auxotroph (Christensen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a942942e-37ba-4599-87a9-ccae33453721",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C30",
+      "claim": "Neither LbpA1 nor LbpA2 could restore growth of the B. subtilis \u2206gcvH strain.",
+      "claim_type": "EXPLICIT",
+      "source": "No discrete colony formation was observed even with induction of IPTG indicating that neither LbpA1 nor LbpA2 could restore growth of the B. subtilis \u2206gcvH strain (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by complementation assay data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a94dcf49-378b-4dbf-ada8-337d208bd9bb",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C31",
+      "claim": "No octanoylated LbpA1 or LbpA2 band was observed in LipM modification assays.",
+      "claim_type": "EXPLICIT",
+      "source": "No octanoylated LbpA1 or LbpA2 band was observed suggesting the failure of in vivo complementation was due to lack of modification by LipM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by autoradiography data from in vitro assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "f7920c4e-692b-48c3-a831-d5f4ef3b4698",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C32",
+      "claim": "Neither of the novel lipoate-binding proteins is able to functionally replace the B. subtilis GcvH protein as a hub in octanoyl group transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence we conclude that neither of the novel lipoate-binding proteins is able to functionally replace the B. subtilis GcvH protein as a hub in octanoyl group transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the complementation and in vitro modification experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "76982196-0f59-4393-b8ff-cde77025a112",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C33",
+      "claim": "The E. coli \u0394lipB \u0394lplA strain QC146 is unable to grow with lipoic acid supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the E. coli QC146 \u0394lplA mutation, the strain is unable to grow with lipoic acid supplementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the E. coli mutant strain phenotype.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "4f92685c-5e9f-4d83-8bd6-b818eb61891f",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C34",
+      "claim": "Upon expression of the putative lplA-encoding genes from sulfur compound oxidizers, the E. coli strain failed to grow, either in the presence or in the absence of lipoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon expression of the putative lplA-encoding genes from sulfur compound oxidizers, the E. coli strain failed to grow, either in the presence or in the absence of lipoic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by complementation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "17669bf5-9198-4c83-b437-c458dfe9cc55",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C35",
+      "claim": "The proteins cannot serve as lipoate ligases for E. coli lipoate cognate proteins in the presence of free lipoate and they fail to act as octanoyl transferases in the E. coli background.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the proteins cannot serve as lipoate ligases (at least not for E. coli lipoate cognate proteins) in the presence of free lipoate and that they fail to act as octanoyl transferases in the E. coli background (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7075ab23-a8f3-42cd-8cc0-2618fe48a439",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C36",
+      "claim": "E. coli LD was readily lipoylated in the presence of lipoic acid and ATP by S. coelicolor LplA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, E. coli LD was readily lipoylated in the presence of lipoic acid and ATP by S. coelicolor LplA as shown by the faster migration on native gel electrophoresis due to loss of the positive lysine charge upon modification (Hermes and Cronan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gel shift assay data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "5e60a500-88b7-4054-9b00-ffcbc0101e88",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C37",
+      "claim": "LplA from H. denitrificans and Thioalkalivibrio sp. K90mix had no activity with E. coli LD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LplA from H. denitrificans and Thioalkalivibrio sp. K90mix had no activity with E. coli LD (Figure 6E, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel shift assay data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "3bffd0ab-35da-4b1b-ba76-a5fc5fe54be5",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C38",
+      "claim": "LplA-like proteins encoded in hdr-like gene cluster have activity only upon their natural cognate proteins, which are the LbpA proteins encoded by the closely linked genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our findings that the novel LbpA proteins from sulfur oxidizers could not be modified by other lipoate metabolism proteins and that in turn LplA-like proteins from sulfur oxidizing bacteria fail to show lipoylation activity with the E. coli cognate proteins, we hypothesized that LplA-like proteins encoded in hdr-like gene cluster have activity only upon their natural cognate proteins, which are the LbpA proteins encoded by the closely linked genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the specificity observed in prior experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "15e59e19-9b7f-4229-82cd-2b2b1434e554",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C39",
+      "claim": "Synthesis of both octanoyl-adenylate and lipoyl-adenylate intermediates were readily demonstrated by use of ATP labeled in the \u03b1-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of an acceptor protein, synthesis of both octanoyl-adenylate and lipoyl-adenylate intermediates were readily demonstrated by use of ATP labeled in the \u03b1-phosphate (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TLC analysis data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "5e267124-0cbc-41e1-8f8c-ee750f9963e1",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C40",
+      "claim": "Upon addition of an acceptor protein, LbpA1 or LbpA2, the adenylate intermediates were hydrolyzed to AMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, upon addition of an acceptor protein, LbpA1 or LbpA2, the adenylate intermediates were hydrolyzed to AMP. This was readily observed by the increased formation of AMP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by TLC analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d1d8362a-91ee-487b-a984-528b97eb160c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C41",
+      "claim": "Lipoylated Lbp proteins had a mass increase of about 185 Da for both Lbp proteins (184.5 Da for LbpA1 and 186.2 for LpbA2) comparing with the unmodified forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoylated Lbp proteins had a mass increase of about 185 Da for both Lbp proteins (184.5 Da for LbpA1 and 186.2 for LpbA2) comparing with the unmodified forms (17457.1 Da for LbpA1 and 16410.7 for LbpA2) (Figure 7B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALDI mass spectrometry data shown in Figure 7B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ae0d9091-f25b-4652-9375-88fb1e7baffd",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C42",
+      "claim": "The mass increases matched well with the expected value (188 Da) upon addition of a lipoyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass increases matched well with the expected value (188 Da) upon addition of a lipoyl group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing observed mass changes to expected values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d09fe7c5-3797-4ff1-b2e5-e4d0475e69af",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C43",
+      "claim": "LbpA and LplA-like proteins encoded in or close to hdr-like gene clusters exhibit cross-species functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Gel mobility shift assays showed that LbpA and LplA-like proteins encoded in or close to hdr-like gene clusters exhibit cross-species functionality (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gel shift assay data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "91e7f407-12db-4ac3-99ea-d44b752e8299",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C44",
+      "claim": "The LplA-like protein from Thioalkalivibrio sp. K90mix lacked the small domain and only had a single large domain, which aligns very well with the large catalytic domain of E. coli LplA.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon threading the lipoate ligase of Thioalkalivibrio sp. K90mix onto the known E. coli LplA structure (PDB: 3A7R), we found to our surprise that the LplA-like protein lacked the small domain and only had a single large domain, which aligns very well with the large catalytic domain of E. coli LplA (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "f80cadb6-49d9-4acb-b1db-fb256e2c4277",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C45",
+      "claim": "These enzymes provide an exception to the canonical rule that a conventional lipoate-protein ligase should have two domains in order to catalyze the two partial reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, these enzymes provide an exception to the canonical rule that a conventional lipoate-protein ligase should have two domains in order to catalyze the two partial reactions (activation of lipoic acid to lipoyl-AMP and transferring the lipoate moiety from lipoyl-AMP to its cognate proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural analysis showing single-domain architecture.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "437aba14-6f92-47f1-b7e4-b8d92f0dd0ae",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C46",
+      "claim": "The LplA-like protein from the sulfur oxidizer lacked octanoyl transferase activity regardless of whether LbpA1 or LbpA2 were present as acceptor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "After autoradiographic analysis, we found that the LplA-like protein from the sulfur oxidizer lacked octanoyl transferase activity regardless of whether LbpA1 or LbpA2 were present as acceptor proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by autoradiography data from octanoyl transferase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "efb2f84b-bb72-47f8-85f4-c640d9dfe794",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C47",
+      "claim": "The Thioalkalivibrio LplA-like protein has only lipoate (or octanote) scavenge activity and plays no role in de novo lipoyl assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Thioalkalivibrio LplA-like protein has only lipoate (or octanote) scavenge activity and plays no role in de novo lipoyl assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the octanoyl transferase assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7c837ee5-302b-4102-a100-a36b6ee2fed6",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C48",
+      "claim": "The universal occurrence of lbpA in all hdr-like gene clusters in conjunction with the genetic evidence establish the lipoate-binding proteins as key components in the novel Hdr-like pathway of sulfur oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The universal occurrence of lbpA in all hdr-like gene clusters (Figure 2, Figure 2\u2014source data 1) in conjunction with the genetic evidence presented, establish the lipoate-binding proteins discovered in this study as key components in the novel Hdr-like pathway of sulfur oxidation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from genomic analysis and genetic deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ac4cbcec-19df-4a43-85c3-e252fbc6ad86",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C49",
+      "claim": "A biological function was established for the universally conserved cofactor lipoate that is markedly different from its canonical roles in central metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, deletion of the gene identified LbpA as an essential component of the Hdr-like sulfur-oxidizing system in the Alphaproteobacterium Hyphomicrobium denitrificans. Thus, a biological function was established for the universally conserved cofactor lipoate that is markedly different from its canonical roles in central metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genetic and biochemical evidence showing lipoate's role in sulfur oxidation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "77cf4fd5-a16d-4f7a-8ebb-3f4210f69b20",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C50",
+      "claim": "LbpAs likely function as sulfur-binding entities presenting substrate to different catalytic sites of the Hdr-like complex, similar to the substrate-channeling function of lipoate in carbon-metabolizing multienzyme complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "LbpAs likely function as sulfur-binding entities presenting substrate to different catalytic sites of the Hdr-like complex, similar to the substrate-channeling function of lipoate in carbon-metabolizing multienzyme complexes, for example pyruvate dehydrogenase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanistic role of LbpAs based on analogy to known lipoate functions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "498fe183-011c-49c3-b090-58bdd0577919",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C51",
+      "claim": "LbpAs serve a specific function in sulfur oxidation, cannot functionally replace the related GcvH protein in Bacillus subtilis and are not modified by the canonical E. coli and B. subtilis lipoyl attachment machineries.",
+      "claim_type": "EXPLICIT",
+      "source": "LbpAs serve a specific function in sulfur oxidation, cannot functionally replace the related GcvH protein in Bacillus subtilis and are not modified by the canonical E. coli and B. subtilis lipoyl attachment machineries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental findings from complementation and modification assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "463853e8-c8fe-4ffc-a36f-959f4e7ff529",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C52",
+      "claim": "LplA-like lipoate-protein ligases encoded in or in immediate vicinity of hdr-lpbA gene clusters act specifically on LbpA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, LplA-like lipoate-protein ligases encoded in or in immediate vicinity of hdr-lpbA gene clusters act specifically on these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vitro lipoylation assays showing specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "e186c753-398c-42df-9481-3e43008e2765",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C53",
+      "claim": "In most prokaryotes specialized for lithotrophic growth on reduced inorganic sulfur compounds, the initial steps occur outside of the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In most prokaryotes specialized for lithotrophic growth on reduced inorganic sulfur compounds like sulfide or thiosulfate, the initial steps occur outside of the cytoplasm (Dahl, 2015; Venceslau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "b9357e75-0239-482d-a6f6-26a443f7b9f1",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C54",
+      "claim": "The LpbA protein is a prime candidate as a sulfur substrate-binding entity that might present the sulfur substrate to different catalytic sites of the Hdr-like complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The LpbA protein is a prime candidate as a sulfur substrate-binding entity that might present the sulfur substrate to different catalytic sites of the Hdr-like complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanistic role of LbpA.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d64bd424-a7db-4155-8861-539fbf0a30eb",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C55",
+      "claim": "In vitro studies with bovine and one microbial rhodanese showed that dihydrolipoate can serve as sulfane sulfur acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is corroborated by in vitro studies with bovine and one microbial rhodanese showing that dihydrolipoate can serve as sulfane sulfur acceptor (Cianci et al., 2000; Silver and Kelly, 1976; Villarejo and Westley, 1963a, 1963b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "68f53f5f-5f05-49ec-a4cd-62b782c27b9b",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C56",
+      "claim": "The presence of lipoate as a key cofactor in the Hdr-like sulfur-oxidizing system bears the possibility that two of the four electrons released in the catalyzed reaction are used to generate dihydrolipoamide during the reaction cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 8, the presence of lipoate as a key cofactor in the Hdr-like sulfur-oxidizing system bears the possibility that two of the four electrons released in the catalyzed reaction (R-S-S- + 3 H2O \u2192 R-S- + HSO3- + 5 H+) are used to generate dihydrolipoamide during the reaction cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative hypothesis about the electron flow in the reaction mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a8a51f4e-bb1f-4774-a83d-0fac84d0f106",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C57",
+      "claim": "The electrons released upon reoxidation of dihydrolipoamide can be directly transferred onto NAD+.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the lipoamide/dihydrolipoamide system possesses one of the lowest standard biological redox potentials (E0'=\u22120.29 V), the electrons released upon reoxidation of dihydrolipoamide can be directly transferred onto NAD+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known redox potentials.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "60df3b9e-a7c8-48eb-8e23-a1d39efb3641",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C58",
+      "claim": "This reaction could considerably reduce the need for energy-demanding reverse electron flow in lithoautotrophic sulfur oxidizers.",
+      "claim_type": "EXPLICIT",
+      "source": "This reaction could considerably reduce the need for energy-demanding reverse electron flow in lithoautotrophic sulfur oxidizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the bioenergetic implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "1625b0d2-7d49-4bcf-b7cd-911422dd2752",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C59",
+      "claim": "A gene for a bona fide dihydrolipoamide dehydrogenase is tightly linked with the hdr-gene cluster in sulfur oxidizing archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a gene for a bona fide dihydrolipoamide dehydrogenase is tightly linked with the hdr-gene cluster in sulfur oxidizing archaea (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior genomic analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "29b51487-44bd-4dfc-b38b-daf2431fd3ef",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C60",
+      "claim": "The lipoate-binding proteins studied in this work are specifically designed for sulfur oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipoate-binding proteins studied in this work are specifically designed for sulfur oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the specificity observed in complementation and modification experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7656fd79-3f8b-4033-925a-ffc014df6411",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C61",
+      "claim": "The LbpA proteins from sulfur oxidizers do not serve as substrates for the biosynthetic machineries involved in lipoate-binding protein maturation in B. subtilis and E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The LbpA proteins from sulfur oxidizers do not serve as substrates for the biosynthetic machineries involved in lipoate-binding protein maturation in B. subtilis and E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modification assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "4f393759-2ec8-4226-835f-5079b1955596",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C62",
+      "claim": "The first biosynthetic protein characterized in vitro from the sulfur oxidizers, an LplA-like lipoate-protein ligase does not recognize lipoyl domains/proteins from organisms lacking components of a Hdr-like sulfur-oxidizing system.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the first biosynthetic protein characterized in vitro from the sulfur oxidizers, an LplA-like lipoate-protein ligase does not recognize lipoyl domains/proteins from organisms lacking components of a Hdr-like sulfur-oxidizing system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vitro lipoylation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "9900f328-5d89-4c53-bd8f-88312cad83eb",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C63",
+      "claim": "Such specificity is unprecedented, usually protein substrates are interchangeable in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Such specificity is unprecedented, usually protein substrates are interchangeable in vitro (Cao and Cronan, 2015; Cao et al., 2018; Christensen and Cronan, 2010; Posner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies showing substrate promiscuity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ee4a3bfb-4f15-4bae-bd3b-ec94a137e0e9",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C64",
+      "claim": "All sulfur oxidizers analyzed in this study contain the genetic equipment for lipoate-protein biosynthesis via previously established pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "All sulfur oxidizers analyzed in this study contain the genetic equipment for lipoate-protein biosynthesis via previously established pathways (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "c8b5763b-4b97-44b8-81aa-aeba4a7f668a",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C65",
+      "claim": "These biosynthetic routes appear to be employed exclusively for the known lipoate-binding components of 2-oxoacid dehydrogenases and glycine cleavage systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These biosynthetic routes appear to be employed exclusively for the known lipoate-binding components of 2-oxoacid dehydrogenases and glycine cleavage systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the specificity observed in modification experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "f68b1273-980f-4677-8911-5d5bf36d37a4",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C66",
+      "claim": "The LpbA proteins involved in sulfur oxidation differ so much from GvcH proteins that they are not recognized by the GvcH maturation enzymes but are specifically modified by lipoate-protein ligases encoded in the same gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The LpbA proteins involved in sulfur oxidation obviously differ so much from GvcH proteins that they are not recognized by the GvcH maturation enzymes but are specifically modified by lipoate-protein ligases encoded in the same gene cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modification and complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "bcadf18f-a775-419b-bccc-1d5443731904",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C67",
+      "claim": "TkLplA is an active lipoyl/octanoyl ligase despite lacking the small C-terminal domain seen in all other lipoate ligases studied to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that TkLplA is an active lipoyl/octanoyl ligase despite lacking the small C-terminal domain seen in all other lipoate ligases studied to date was unexpected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural analysis and activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7445fc2f-0f24-43e5-a998-03a3f7fabb71",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C68",
+      "claim": "Both domains are required for the overall reaction and for lipoyl-adenylate formation whereas only the large domain was required for transfer of lipoate from the adenylate to the acceptor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work showed that both domains are required for the overall reaction and for lipoyl-adenylate formation whereas only the large domain was required for transfer of lipoate from the adenylate to the acceptor protein (Cao and Cronan, 2015; Christensen and Cronan, 2010; McManus et al., 2006; Posner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior structural and biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "fc49c840-21b1-4fec-8ab4-dfeb01d921ed",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C69",
+      "claim": "The most straightforward hypothesis is that the lipoate-binding proteins LbpA1 and LbpA2 not only act as lipoate acceptors but also have a motif that triggers the conformational change usually engendered by the small domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The most straightforward hypothesis is that the lipoate-binding proteins LbpA1 and LbpA2 not only act as lipoate acceptors but also have a motif that triggers the conformational change usually engendered by the small domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis to explain the activity of single-domain ligases.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "82b1e2ae-2a84-4182-a2bd-6ab796fa5e0c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "claim_id": "C70",
+      "claim": "This could explain the inability of either the HdLplA/TkLplA ligase or LbpA1 and LbpA2 binding proteins to interact with the ligases and acceptor domains of central metabolism proteins of other bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, this could explain the inability of either the HdLplA/TkLplA ligase or LbpA1 and LbpA2 binding proteins to interact with the ligases and acceptor domains of central metabolism proteins of other bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1920e7a2-d441-450b-8814-58ee77b6d53b",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lipoic acid is a highly conserved organosulfur cofactor found across all domains of life. Only five lipoate-dependent multienzyme complexes have been characterized, where lipoate functions as both an electrophile binding reaction intermediates and as a swinging arm channeling substrates between active sites, cycling between oxidized and reduced forms during catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 present well-established background knowledge about lipoic acid distribution and function, supported by appropriate citations to prior literature (C2, C4) and reference to structural data (C4). These claims provide foundational context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "87ab9320-51fd-4a40-bba1-82943b6124a0",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A large group of archaeal and bacterial sulfur oxidizers utilize a novel Hdr-like sulfur oxidation pathway. This complex is essential for thiosulfate oxidation to sulfate in H. denitrificans, and deletion mutants cannot grow on dimethylsulfide. The hdr-like genes are associated with genes encoding novel lipoate-binding proteins resembling GcvH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 are well-supported by multiple citations to prior genomic, transcriptomic, proteomic, and genetic studies. The genetic evidence for essentiality (C6, C7) and gene association patterns (C8) provide strong foundation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "5766a466-60bc-4632-b125-5ba60ae3d9d0",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Database searches identified 56 prokaryotes from one archaeal and six bacterial phyla containing hdr-like gene loci. Nearly all are sulfur compound oxidizers. The hdr-like genes are universally associated with 1-3 genes encoding putative lipoate-binding proteins (LbpA) resembling GcvH, and are linked with genes encoding putative lipoate biosynthesis enzymes, suggesting a specific biosynthetic pathway for Hdr-associated lipoate-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 are supported by genomic database analysis presented in Figure 2 and source data. The universal association pattern (C11) and genomic organization (C12) provide strong evidence for functional linkage. The inference about a specific biosynthetic pathway (C13) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a95c1a29-89ea-4184-b1fb-196c8cbe7ac5",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All LbpA proteins share a strictly conserved lysine residue required for lipoate attachment. Most LbpA proteins (except some archaeal) contain two strictly conserved cysteine residues absent in GcvH proteins, located near the N- and C-termini.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 are supported by sequence alignment data (Figure 2\u2014figure supplement 1) and citation to prior knowledge about lysine requirement. The conserved cysteine residues represent a key distinguishing feature of LbpA proteins from canonical GcvH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "de3f7d2e-f2d4-4cc2-8c3a-1e0a62feaa9c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of LbpA proteins from group I gene clusters revealed two distinct types: LbpA1 and LbpA2. In all organisms with two lbpA genes, one encodes LbpA1 and the other LbpA2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by phylogenetic analysis shown in Figure 3. The clear separation into two types and the consistent pairing pattern provide strong evidence for functional differentiation between LbpA1 and LbpA2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "e8402968-19c1-442a-830d-248c1a1cac0c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Purified TsLbpA1 and HdLbpA2 behave as monomers by gel filtration. Mass spectrometry of TsLbpA1 matched the unmodified apoprotein mass. LbpA2 produced under anoxic conditions migrated faster than apoprotein on SDS-PAGE, and this fast-migrating band was identified as lipoylated by both anti-LbpA2 and anti-lipoic acid antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by gel filtration data (Figure 4\u2014figure supplement 1), mass spectrometry, gel electrophoresis, and immunoblot data (Figure 4). The convergent evidence from multiple techniques strongly supports lipoylation of LbpA2 in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "9d5388b6-0d7d-4637-9b36-7da69b31a01e",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparative proteomics and Western blotting demonstrated specific formation of lipoylated LbpA2 during growth on DMS or methylamine/thiosulfate, but not on methylamine alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by citation to prior proteomic work and Western blot data in Figure 4. The substrate-dependent expression pattern supports a role in sulfur compound metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "ca7df336-0e35-4d85-a27c-47350ded589e",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Deletion of lbpA2 in H. denitrificans resulted in complete inability to grow on or degrade dimethylsulfide. The mutant also showed impaired thiosulfate oxidation during growth on methanol, producing tetrathionate instead of sulfate. These findings demonstrate that LbpA2 is an indispensable component of the Hdr-like sulfur oxidation pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are strongly supported by growth data, substrate consumption measurements, and sulfur compound analysis (Figure 5). The genetic deletion phenotype closely matches the \u0394hdr mutant, providing compelling evidence for LbpA2's essential role. This is a key result of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d0333241-aa95-4a98-b8d6-1293ddd5d798",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neither LbpA1 nor LbpA2 could complement a B. subtilis \u0394gcvH strain, which is a lipoate auxotroph. In vitro assays showed no octanoylation of LbpA1 or LbpA2 by B. subtilis LipM. The novel lipoate-binding proteins cannot functionally replace B. subtilis GcvH as a hub in octanoyl group transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 are supported by complementation assay data (Figure 6B) and autoradiography from in vitro modification assays. The failure to complement and lack of modification by canonical enzymes demonstrates functional specificity of LbpA proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "4f979c64-9047-4db7-8069-14a58648e0da",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LplA-like proteins from sulfur oxidizers (H. denitrificans and Thioalkalivibrio) failed to complement E. coli \u0394lipB \u0394lplA strain in the presence or absence of lipoic acid. These proteins cannot serve as lipoate ligases for E. coli cognate proteins and fail to act as octanoyl transferases in the E. coli background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by complementation assay data (Figure 6C) and the inference is reasonable given the negative results. This demonstrates substrate specificity of the LplA-like proteins from sulfur oxidizers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "a9948a0d-d7f2-4b78-832e-a61570b1aacf",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "S. coelicolor LplA readily lipoylated E. coli LD in vitro, but LplA from H. denitrificans and Thioalkalivibrio had no activity with E. coli LD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by gel shift assay data (Figure 6E). The positive control validates the assay, and the negative results with sulfur oxidizer LplA proteins confirm their substrate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "8a3d0d45-03b1-410f-a594-ac469c299507",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LplA-like proteins from sulfur oxidizers specifically modify their cognate LbpA proteins. TLC analysis demonstrated synthesis of both octanoyl-adenylate and lipoyl-adenylate intermediates, which were hydrolyzed to AMP upon addition of LbpA1 or LbpA2. Mass spectrometry confirmed lipoylation with mass increases of ~185 Da matching the expected 188 Da for lipoyl group addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by TLC analysis (Figure 7A), MALDI mass spectrometry (Figure 7B,C), and autoradiography data. The convergent evidence from multiple techniques strongly supports the specific ligase activity. The small discrepancy between observed and expected mass (185 vs 188 Da) is within instrument accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "43448abd-f4e2-48fc-ad1c-89b5d992e120",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LbpA and LplA-like proteins encoded in or near hdr-like gene clusters exhibit cross-species functionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by gel shift assay data (Figure 7\u2014figure supplement 1). This demonstrates that the specificity is for the LbpA/LplA system rather than being strictly species-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "001f586d-3a4b-41a8-85c7-8327c8256a9a",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Structural modeling revealed that the LplA-like protein from Thioalkalivibrio lacks the small domain typical of lipoate ligases, containing only a single large catalytic domain that aligns well with E. coli LplA's large domain. These enzymes provide an exception to the canonical rule that lipoate-protein ligases require two domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by structural modeling data (Figure 7E). The single-domain architecture is unexpected and represents a significant finding, though the functional implications require the hypothesis in C69-C70 to explain activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "e53c8ea1-ac5b-4d91-b4cb-ea2054ea9caa",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The LplA-like protein from Thioalkalivibrio lacked octanoyl transferase activity with either LbpA1 or LbpA2 as acceptors. This protein has only lipoate/octanoate scavenge activity and plays no role in de novo lipoyl assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by autoradiography data from octanoyl transferase assays (Figure 7F). The conclusion about scavenge-only activity is reasonable given the negative transferase results and positive ligase activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "765b2b51-7e6c-4a6c-b4f3-57e871675480",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The universal occurrence of lbpA in all hdr-like gene clusters combined with genetic evidence establishes lipoate-binding proteins as key components in the Hdr-like sulfur oxidation pathway. This establishes a biological function for lipoate markedly different from its canonical roles in central metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by the genomic analysis (C9-C13) and genetic deletion experiments (C24-C27). The convergent evidence from bioinformatics and genetics strongly supports this major conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "LbpAs likely function as sulfur-binding entities presenting substrate to different catalytic sites of the Hdr-like complex, analogous to substrate-channeling in carbon-metabolizing complexes. The lipoate cofactor may enable direct electron transfer to NAD+ during sulfur oxidation, potentially reducing the need for energy-demanding reverse electron flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50, C54, C56-C58 are explicitly speculative hypotheses about mechanism and bioenergetics. While C55 provides supporting evidence from prior studies and C59 shows genomic linkage with dihydrolipoamide dehydrogenase in archaea, direct experimental evidence for the proposed mechanism is lacking. These remain plausible but unproven hypotheses requiring future biochemical characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "LbpA proteins serve a specific function in sulfur oxidation and are not modified by canonical E. coli and B. subtilis lipoyl attachment machineries. Instead, LplA-like proteins encoded near hdr-lbpA gene clusters act specifically on LbpA proteins. The LbpA proteins differ sufficiently from GcvH that they are not recognized by GcvH maturation enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C60-C62, C66 summarize experimental findings from complementation assays (C30-C32, C34-C35) and in vitro modification experiments (C31, C37, C39-C42). The specificity is unprecedented (C63) and well-demonstrated by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "918702e4-cf70-440c-b633-7ad875ffc555",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The substrate specificity observed is unprecedented, as protein substrates are usually interchangeable in vitro. All sulfur oxidizers analyzed contain genetic equipment for canonical lipoate-protein biosynthesis pathways, which appear to be employed exclusively for known lipoate-binding components of 2-oxoacid dehydrogenases and glycine cleavage systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by citations to prior studies showing promiscuity. Claims C64-C65 are supported by genomic analysis (Figure 2\u2014source data 1) and the inference about pathway segregation (C65) is reasonable given the demonstrated specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "7707c8a3-dcd3-4ac6-93ae-a329edffecbf",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "TkLplA is an active lipoyl/octanoyl ligase despite lacking the small C-terminal domain seen in all other characterized lipoate ligases. Prior work showed both domains are required for adenylate formation. The hypothesis is that LbpA1 and LbpA2 contain a motif that triggers the conformational change usually provided by the small domain, explaining the mutual specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is supported by structural and activity data (C44-C45, C39-C42). Claim C68 is supported by citations to prior work. However, claims C69-C70 are explicitly speculative hypotheses to explain the unexpected single-domain activity. While plausible, this mechanism lacks direct experimental validation and requires future structural and biochemical studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    },
+    {
+      "id": "db3b3a61-75db-49c1-87de-fae4e57adc34",
+      "content_id": "71e55ed6-8ce2-4a8f-965f-4ae5568d1ed8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "In most sulfur-oxidizing prokaryotes, initial oxidation steps occur outside the cytoplasm. In sulfur-oxidizing archaea, a gene for dihydrolipoamide dehydrogenase is tightly linked with the hdr-gene cluster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C59 are supported by citations to prior reviews and genomic analysis. These provide context for the proposed model but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:14.830918Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "507b4bf2-e98d-4b3e-be89-96a940430f1a",
+      "result_id": "1920e7a2-d441-450b-8814-58ee77b6d53b"
+    },
+    {
+      "claim_id": "d493f127-0221-4079-a2ff-87d65dc462cc",
+      "result_id": "1920e7a2-d441-450b-8814-58ee77b6d53b"
+    },
+    {
+      "claim_id": "a6093993-b3ed-4dbe-9c05-d8ee71215e2b",
+      "result_id": "1920e7a2-d441-450b-8814-58ee77b6d53b"
+    },
+    {
+      "claim_id": "37ce1ed1-c162-4614-9a1d-17501fb0935e",
+      "result_id": "1920e7a2-d441-450b-8814-58ee77b6d53b"
+    },
+    {
+      "claim_id": "ef3f6dc9-e6e2-4284-adc6-e76d51f518bd",
+      "result_id": "87ab9320-51fd-4a40-bba1-82943b6124a0"
+    },
+    {
+      "claim_id": "8c0dac29-aef7-410b-ab1c-89549f5c765d",
+      "result_id": "87ab9320-51fd-4a40-bba1-82943b6124a0"
+    },
+    {
+      "claim_id": "06cf3029-ec4a-491e-80ba-5c9086a271c5",
+      "result_id": "87ab9320-51fd-4a40-bba1-82943b6124a0"
+    },
+    {
+      "claim_id": "fb6d7046-bd4d-4910-a35f-e3f1de213720",
+      "result_id": "87ab9320-51fd-4a40-bba1-82943b6124a0"
+    },
+    {
+      "claim_id": "263489a4-1314-4749-9eef-83d414d8813b",
+      "result_id": "5766a466-60bc-4632-b125-5ba60ae3d9d0"
+    },
+    {
+      "claim_id": "ada2568c-211c-4149-bedf-6264709ca325",
+      "result_id": "5766a466-60bc-4632-b125-5ba60ae3d9d0"
+    },
+    {
+      "claim_id": "a9bb3c7e-df7b-4127-a0f4-f74648ec12fd",
+      "result_id": "5766a466-60bc-4632-b125-5ba60ae3d9d0"
+    },
+    {
+      "claim_id": "4fa883bb-c779-472d-8472-0642e444693c",
+      "result_id": "5766a466-60bc-4632-b125-5ba60ae3d9d0"
+    },
+    {
+      "claim_id": "76e2947e-1b8d-446c-bef6-e67256f2531a",
+      "result_id": "5766a466-60bc-4632-b125-5ba60ae3d9d0"
+    },
+    {
+      "claim_id": "a8cff383-e4d4-4a9a-9105-d7eec2241684",
+      "result_id": "a95c1a29-89ea-4184-b1fb-196c8cbe7ac5"
+    },
+    {
+      "claim_id": "61131c9e-e574-428f-918a-705ebfa8d498",
+      "result_id": "a95c1a29-89ea-4184-b1fb-196c8cbe7ac5"
+    },
+    {
+      "claim_id": "4abc017a-6e74-4981-b34b-4cf2697ea0e1",
+      "result_id": "de3f7d2e-f2d4-4cc2-8c3a-1e0a62feaa9c"
+    },
+    {
+      "claim_id": "e5b0ffd2-22dc-4749-b845-093783b8b76b",
+      "result_id": "de3f7d2e-f2d4-4cc2-8c3a-1e0a62feaa9c"
+    },
+    {
+      "claim_id": "ff483af7-d83b-4e3c-bdbf-d79a86e89f69",
+      "result_id": "e8402968-19c1-442a-830d-248c1a1cac0c"
+    },
+    {
+      "claim_id": "efd766e2-bd49-409e-bd98-81e9ff24a431",
+      "result_id": "e8402968-19c1-442a-830d-248c1a1cac0c"
+    },
+    {
+      "claim_id": "3134723e-751c-4709-a5c4-5878608616a3",
+      "result_id": "e8402968-19c1-442a-830d-248c1a1cac0c"
+    },
+    {
+      "claim_id": "7de4832e-fa18-43bd-afe5-828e1fe1c2d5",
+      "result_id": "e8402968-19c1-442a-830d-248c1a1cac0c"
+    },
+    {
+      "claim_id": "2e9ec159-d7a2-4e23-977b-81c4bd4ecb37",
+      "result_id": "9d5388b6-0d7d-4637-9b36-7da69b31a01e"
+    },
+    {
+      "claim_id": "0d8411de-c17b-4fa5-bb73-af8847e24db6",
+      "result_id": "9d5388b6-0d7d-4637-9b36-7da69b31a01e"
+    },
+    {
+      "claim_id": "bdbb1135-604f-4e87-a2a4-40826b48f06c",
+      "result_id": "ca7df336-0e35-4d85-a27c-47350ded589e"
+    },
+    {
+      "claim_id": "6f1a12d2-a15c-48c0-9857-ec75e1adfe6e",
+      "result_id": "ca7df336-0e35-4d85-a27c-47350ded589e"
+    },
+    {
+      "claim_id": "2958247d-e261-4b58-926e-ae517729a739",
+      "result_id": "ca7df336-0e35-4d85-a27c-47350ded589e"
+    },
+    {
+      "claim_id": "1491ab85-ed92-4225-94e4-f99433888ce4",
+      "result_id": "ca7df336-0e35-4d85-a27c-47350ded589e"
+    },
+    {
+      "claim_id": "61dcb1a6-119a-4208-813e-57918c8d5520",
+      "result_id": "d0333241-aa95-4a98-b8d6-1293ddd5d798"
+    },
+    {
+      "claim_id": "45c1442d-b4a2-4ff6-89b5-a43926662151",
+      "result_id": "d0333241-aa95-4a98-b8d6-1293ddd5d798"
+    },
+    {
+      "claim_id": "a942942e-37ba-4599-87a9-ccae33453721",
+      "result_id": "d0333241-aa95-4a98-b8d6-1293ddd5d798"
+    },
+    {
+      "claim_id": "a94dcf49-378b-4dbf-ada8-337d208bd9bb",
+      "result_id": "d0333241-aa95-4a98-b8d6-1293ddd5d798"
+    },
+    {
+      "claim_id": "f7920c4e-692b-48c3-a831-d5f4ef3b4698",
+      "result_id": "d0333241-aa95-4a98-b8d6-1293ddd5d798"
+    },
+    {
+      "claim_id": "76982196-0f59-4393-b8ff-cde77025a112",
+      "result_id": "4f979c64-9047-4db7-8069-14a58648e0da"
+    },
+    {
+      "claim_id": "4f92685c-5e9f-4d83-8bd6-b818eb61891f",
+      "result_id": "4f979c64-9047-4db7-8069-14a58648e0da"
+    },
+    {
+      "claim_id": "17669bf5-9198-4c83-b437-c458dfe9cc55",
+      "result_id": "4f979c64-9047-4db7-8069-14a58648e0da"
+    },
+    {
+      "claim_id": "7075ab23-a8f3-42cd-8cc0-2618fe48a439",
+      "result_id": "a9948a0d-d7f2-4b78-832e-a61570b1aacf"
+    },
+    {
+      "claim_id": "5e60a500-88b7-4054-9b00-ffcbc0101e88",
+      "result_id": "a9948a0d-d7f2-4b78-832e-a61570b1aacf"
+    },
+    {
+      "claim_id": "3bffd0ab-35da-4b1b-ba76-a5fc5fe54be5",
+      "result_id": "8a3d0d45-03b1-410f-a594-ac469c299507"
+    },
+    {
+      "claim_id": "15e59e19-9b7f-4229-82cd-2b2b1434e554",
+      "result_id": "8a3d0d45-03b1-410f-a594-ac469c299507"
+    },
+    {
+      "claim_id": "5e267124-0cbc-41e1-8f8c-ee750f9963e1",
+      "result_id": "8a3d0d45-03b1-410f-a594-ac469c299507"
+    },
+    {
+      "claim_id": "d1d8362a-91ee-487b-a984-528b97eb160c",
+      "result_id": "8a3d0d45-03b1-410f-a594-ac469c299507"
+    },
+    {
+      "claim_id": "ae0d9091-f25b-4652-9375-88fb1e7baffd",
+      "result_id": "8a3d0d45-03b1-410f-a594-ac469c299507"
+    },
+    {
+      "claim_id": "d09fe7c5-3797-4ff1-b2e5-e4d0475e69af",
+      "result_id": "43448abd-f4e2-48fc-ad1c-89b5d992e120"
+    },
+    {
+      "claim_id": "91e7f407-12db-4ac3-99ea-d44b752e8299",
+      "result_id": "001f586d-3a4b-41a8-85c7-8327c8256a9a"
+    },
+    {
+      "claim_id": "f80cadb6-49d9-4acb-b1db-fb256e2c4277",
+      "result_id": "001f586d-3a4b-41a8-85c7-8327c8256a9a"
+    },
+    {
+      "claim_id": "437aba14-6f92-47f1-b7e4-b8d92f0dd0ae",
+      "result_id": "e53c8ea1-ac5b-4d91-b4cb-ea2054ea9caa"
+    },
+    {
+      "claim_id": "efb2f84b-bb72-47f8-85f4-c640d9dfe794",
+      "result_id": "e53c8ea1-ac5b-4d91-b4cb-ea2054ea9caa"
+    },
+    {
+      "claim_id": "7c837ee5-302b-4102-a100-a36b6ee2fed6",
+      "result_id": "765b2b51-7e6c-4a6c-b4f3-57e871675480"
+    },
+    {
+      "claim_id": "ac4cbcec-19df-4a43-85c3-e252fbc6ad86",
+      "result_id": "765b2b51-7e6c-4a6c-b4f3-57e871675480"
+    },
+    {
+      "claim_id": "77cf4fd5-a16d-4f7a-8ebb-3f4210f69b20",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "b9357e75-0239-482d-a6f6-26a443f7b9f1",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "d64bd424-a7db-4155-8861-539fbf0a30eb",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "68f53f5f-5f05-49ec-a4cd-62b782c27b9b",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "a8a51f4e-bb1f-4774-a83d-0fac84d0f106",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "60df3b9e-a7c8-48eb-8e23-a1d39efb3641",
+      "result_id": "d4a25b22-6aa1-4c3a-87c4-18fc8dacd58a"
+    },
+    {
+      "claim_id": "498fe183-011c-49c3-b090-58bdd0577919",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "463853e8-c8fe-4ffc-a36f-959f4e7ff529",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "29b51487-44bd-4dfc-b38b-daf2431fd3ef",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "7656fd79-3f8b-4033-925a-ffc014df6411",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "4f393759-2ec8-4226-835f-5079b1955596",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "f68b1273-980f-4677-8911-5d5bf36d37a4",
+      "result_id": "b0805f13-2bee-4dc7-a5e2-d58a72c7210c"
+    },
+    {
+      "claim_id": "9900f328-5d89-4c53-bd8f-88312cad83eb",
+      "result_id": "918702e4-cf70-440c-b633-7ad875ffc555"
+    },
+    {
+      "claim_id": "ee4a3bfb-4f15-4bae-bd3b-ec94a137e0e9",
+      "result_id": "918702e4-cf70-440c-b633-7ad875ffc555"
+    },
+    {
+      "claim_id": "c8b5763b-4b97-44b8-81aa-aeba4a7f668a",
+      "result_id": "918702e4-cf70-440c-b633-7ad875ffc555"
+    },
+    {
+      "claim_id": "bcadf18f-a775-419b-bccc-1d5443731904",
+      "result_id": "7707c8a3-dcd3-4ac6-93ae-a329edffecbf"
+    },
+    {
+      "claim_id": "7445fc2f-0f24-43e5-a998-03a3f7fabb71",
+      "result_id": "7707c8a3-dcd3-4ac6-93ae-a329edffecbf"
+    },
+    {
+      "claim_id": "fc49c840-21b1-4fec-8ab4-dfeb01d921ed",
+      "result_id": "7707c8a3-dcd3-4ac6-93ae-a329edffecbf"
+    },
+    {
+      "claim_id": "82b1e2ae-2a84-4182-a2bd-6ab796fa5e0c",
+      "result_id": "7707c8a3-dcd3-4ac6-93ae-a329edffecbf"
+    },
+    {
+      "claim_id": "e186c753-398c-42df-9481-3e43008e2765",
+      "result_id": "db3b3a61-75db-49c1-87de-fae4e57adc34"
+    },
+    {
+      "claim_id": "1625b0d2-7d49-4bcf-b7cd-911422dd2752",
+      "result_id": "db3b3a61-75db-49c1-87de-fae4e57adc34"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Caspase-8 silencing reduces angiogenic potential of GBM cell conditioned media in vitro. Matrigel plugs with CM from Caspase-8 silenced U87 cells (shC8) showed significantly reduced angiogenesis and hemoglobin content compared to control cells. Additionally, CM from shC8 cells was 2.5-fold less effective at inducing HUVEC proliferation and tube formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide converging evidence from multiple in vitro angiogenesis assays (matrigel plug, HUVEC proliferation, tube formation) showing consistent reduction in angiogenic potential upon Caspase-8 silencing. The data include appropriate controls (negative, positive, CTR) and quantitative measurements with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Caspase-8 silencing dramatically reduces tumor growth and vascularization in vivo. U87 shC8 cells showed drastically reduced tumor formation (mean volume ~148 mm\u00b3 at 3 weeks, detected in only 29% of mice) compared to control cells (~1,254 mm\u00b3 in 100% of mice). Tumor vascularization was significantly reduced in shC8 tumors (1.21 vessels/mm\u00b2 vs 20.52 vessels/mm\u00b2 in controls, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide robust in vivo evidence with quantitative tumor volume measurements, penetrance data, and vessel density quantification. The statistical analysis is appropriate (Kruskal-Wallis with Bonferroni correction) and the effect sizes are substantial. However, the small sample size at 3 weeks for shC8 (29% penetrance) and lack of information about biological replicates are minor limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors conclude that Caspase-8 expression is required for tumor growth, endothelial cell proliferation, and angiogenesis in GBM, likely through secreted factors. This interpretation synthesizes the in vitro and in vivo angiogenesis data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 represent reasonable inferences from the experimental data in C41-C50. The conclusion about secreted factors is supported by the conditioned media experiments. However, the causal language ('required for') is strong given that these are loss-of-function experiments in specific cell lines, and the mechanism remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Caspase-8 silencing reduces expression and secretion of pro-angiogenic and inflammatory cytokines in GBM cells. Genetic inhibition of Caspase-8 in U87 cells caused strong decreases in IL-1\u03b2, IL-6, IL-8, MCP-1, and VEGF-A at both protein (CM) and mRNA levels. Similar results were obtained with a second shRNA sequence and in U251 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide consistent evidence across multiple measurements (Luminex protein assay, qRT-PCR), multiple shRNA sequences, and multiple cell lines. The data include appropriate technical and biological replicates with statistical analysis. The consistency across different experimental approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Caspase-8 expression correlates with inflammatory cytokine expression in human GBM patients. Analysis of 174 GBM RNA-seq samples from TCGA showed statistically significant positive correlations between Caspase-8 and IL-6, IL-8, IL-1\u03b2, and MCP-1 expression (Pearson coefficients 0.25-0.53, all p<0.0008), but not with VEGF (r=0.09, p=0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide appropriate bioinformatics analysis of a large patient cohort with proper statistical testing. The correlation coefficients are modest but statistically significant. The lack of correlation with VEGF is notable and honestly reported. However, correlation does not establish causation, and the analysis cannot account for confounding variables or tumor heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The authors identify a novel role for Caspase-8 in promoting neoangiogenesis, consistent with developmental studies in Caspase-8 null mice showing angiogenesis defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a reasonable synthesis of the experimental findings, and C63 provides supporting evidence from prior literature. The novelty claim is appropriate given the context of GBM and the mechanistic insights provided. However, the term 'novel' should be interpreted in the context of GBM specifically, as Caspase-8's role in developmental angiogenesis was previously known.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Caspase-8 promotes NF-\u03baB nuclear localization and activity in GBM cells. Overexpression of dominant-negative IKB\u03b1 (IKB\u03b1 SR) reduced cytokine mRNA expression. Caspase-8 silencing decreased NF-\u03baB nuclear localization in U87 and U251 cells without reducing total NF-\u03baB levels. Preliminary IHC and qRT-PCR data from tumor xenografts support these findings in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide mechanistic evidence linking Caspase-8 to NF-\u03baB signaling through multiple approaches (dominant-negative, immunofluorescence, Western blot, IHC). The data are consistent across cell lines and between in vitro and in vivo settings. However, C67 is explicitly described as 'preliminary,' and the in vivo data (C67-C68) would benefit from more rigorous quantification and larger sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Caspase-8 confers resistance to temozolomide (TMZ) through NF-\u03baB signaling and secreted factors via an autocrine loop. Caspase-8 silencing or IKB\u03b1 SR expression sensitized U87 cells to TMZ. Conditioned media from control cells restored TMZ resistance in Caspase-8-silenced cells, but CM from IKB\u03b1 SR-expressing cells did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide strong evidence for the role of Caspase-8 in TMZ resistance through well-designed rescue experiments. The conditioned media experiments (C74-C75) elegantly demonstrate the autocrine mechanism. The parallel effects of Caspase-8 silencing and IKB\u03b1 SR expression support the NF-\u03baB mechanism. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "High Caspase-8 expression correlates with worse prognosis in high-grade glioma patients. Analysis of 77 patients showed that high Caspase-8 expression associated with lower survival (Chi-squared=10.5, p=0.00117). Subtype analysis revealed this effect was significant in proneural tumors (Chi-squared=7.2, p=0.00732) but not in mesenchymal or proliferative subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide survival analysis with appropriate statistical testing (Kaplan-Meier, log-rank test). The overall result is statistically significant, and the subtype-specific analysis adds biological insight. However, the sample size is modest (n=77, with 15 censored), and the stratification method (tertiles) is somewhat arbitrary. The lack of multivariate analysis to control for other prognostic factors is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The main findings of the study: Caspase-8 enhances expression and secretion of VEGF, IL-6, IL-8, IL-1\u03b2, and MCP-1 through NF-\u03baB activation, leading to neovascularization, increased TMZ resistance, and correlation with worse prognosis in high-grade gliomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 represent the primary conclusions stated in the abstract. These are well-supported by the collective experimental evidence from in vitro cytokine measurements, in vivo angiogenesis assays, TMZ resistance experiments, and patient survival analysis. The mechanistic link through NF-\u03baB is demonstrated through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on Caspase-8's dual role in cancer: Caspase-8 is a key apoptotic player often downregulated in cancer, but is retained in some tumors including GBM, suggesting dual functions. Caspase-8 has non-canonical functions independent of apoptosis, including modulation of cell adhesion and migration, and may be rewired to support tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide established background knowledge supported by appropriate citations. These claims set up the rationale for the study by highlighting the paradox of Caspase-8 retention in some cancers despite its pro-apoptotic function. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on GBM characteristics and inflammatory microenvironment: GBM is characterized by extensive angiogenesis, infiltration, and chemotherapy resistance. The inflammatory microenvironment supports angiogenesis, tumor cell proliferation, survival, and altered drug responses. High levels of IL-8, IL-6, and IL-1\u03b2 are found in GBM, often dependent on EGFR/NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C23-C33 provide well-established background on GBM biology supported by appropriate citations. These claims establish the biological context for investigating Caspase-8's role in GBM angiogenesis and inflammation. The citations to reviews and primary literature appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work establishing Caspase-8's role in GBM: The authors previously showed Caspase-8 promotes proliferation and neoplastic transformation in GBM cell lines. Large-scale expression studies show Caspase-8 upregulation in GBM, particularly in the mesenchymal subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C20-C22 cite prior work (including the authors' own) that establishes the foundation for the current study. The citations appear appropriate and the claims accurately represent the cited work based on the information provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on Caspase-8 and NF-\u03baB: Caspase-8 activates NF-\u03baB in B cells (downstream of antigen and Toll-like receptors) and T cells. NF-\u03baB plays pivotal roles in cytokine production, tumor microenvironment, angiogenesis, and GBM progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 provide relevant background on the Caspase-8/NF-\u03baB connection in immune cells and NF-\u03baB's role in cancer, supported by appropriate citations. This background establishes the rationale for investigating whether Caspase-8 activates NF-\u03baB in GBM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Additional background context: Cancer-associated Caspase-8 mutations enhance NF-\u03baB activation in head and neck cancer. In gliomas, NF-\u03baB is constitutively activated, NF-\u03baB-regulated genes are induced and correlate inversely with prognosis. TMZ is a standard treatment component for GBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C84-C88 provide relevant contextual information supported by appropriate citations. These claims help frame the significance of the findings and the clinical relevance of TMZ resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Speculative interpretations and therapeutic implications: The authors suggest Caspase-8 expression may correlate with prognosis, that its apoptotic role may explain poor prognosis in medulloblastoma when lost, that GBM may benefit from retaining Caspase-8 due to NF-\u03baB dependence, and that targeting Caspase-8 represents a novel therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C81-C83 are explicitly speculative or represent therapeutic implications rather than demonstrated results. C77 is presented as a hypothesis that is then tested (C78). C81-C83 are reasonable interpretations but go beyond what is directly demonstrated. These represent discussion points rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

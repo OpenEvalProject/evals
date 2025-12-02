@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "AtFH2 localizes to plasmodesmata (PD) through its transmembrane (TM) domain. Domain deletion analysis shows that truncated AtFH2 proteins localize to PD only when they contain the TM domain, and this localization is independent of the actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: colocalization with PD markers (callose, PDLP1-GFP, YFP-PDCB1), systematic domain deletion showing TM domain necessity, and persistence of localization after latrunculin B treatment. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C60"
+    ],
+    "result": "Loss of AtFH2 function increases PD permeability as measured by enhanced eGFP diffusion and CMV MP-eGFP movement across cells. This effect is specific to cell-to-cell trafficking and not due to general cytoplasmic streaming defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased permeability phenotype is well-documented through multiple assays (eGFP diffusion, MP-eGFP movement) with appropriate quantification and statistical analysis. Complementation rescues the phenotype, confirming causality. Control experiments showing normal cytoplasmic streaming strengthen the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31"
+    ],
+    "result": "Loss-of-function atfh2 mutants are confirmed knockout alleles lacking full-length transcripts but show no overt developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-PCR data clearly demonstrate absence of full-length transcripts in both alleles. Observational data show normal morphology. This is well-supported but represents a negative result regarding developmental phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "atfh2 mutants show increased sensitivity to Fny-CMV infection with more severe symptoms, higher viral RNA accumulation, and greater growth inhibition compared to wild-type plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple quantitative measures (symptom severity, viral RNA levels, leaf growth) consistently demonstrate increased viral susceptibility. Time-course data and statistical analysis support the conclusions. This provides biological significance to the PD permeability phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AtFH2 functions redundantly with its closest homolog AtFH1 in regulating cell-to-cell trafficking. Both proteins localize to PD, and atfh1 atfh2 double mutants show enhanced trafficking phenotypes compared to single mutants without overt developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The redundancy is demonstrated through genetic analysis showing additive effects in double mutants. PD localization of both proteins is confirmed. The lack of developmental phenotypes even in double mutants is interesting but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C64"
+    ],
+    "result": "Class I formins from rice (OsFH8, OsFH11, OsFH15, OsFH16) localize to PD, suggesting evolutionary conservation of this function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy data clearly show PD localization of multiple rice Class I formins. This cross-species validation strengthens the biological significance, though functional studies in rice are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The involvement of Class I formins in regulating actin dynamics at PD may be evolutionarily conserved in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While PD localization is shown in both Arabidopsis and rice formins, direct evidence for actin regulation at PD in rice is not provided. The claim is speculative based on localization data alone without functional validation in rice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "AtFH2 fails to nucleate actin assembly in vitro from either actin alone or actin-profilin complexes, instead slightly inhibiting actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple in vitro assays (pyrene fluorescence, TIRFM) consistently show lack of nucleation activity. This is surprising for a formin but well-documented with appropriate controls (AtFH1 as positive control).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AtFH2 caps the barbed end of actin filaments with dissociation constants of 80.3\u00b112.9 nM (AtFH2-\u0394N), 163.3\u00b122.2 nM (AtFH2-FH1FH2), and 354.6\u00b149.0 nM (AtFH2-FH2), and inhibits filament elongation and annealing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (seeded elongation, annealing, TIRFM) demonstrate barbed-end capping. Kd values are determined from dose-response curves with appropriate replication. The biochemical characterization is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C78",
+      "C79"
+    ],
+    "result": "AtFH2 stabilizes actin filaments by protecting them from dilution-mediated depolymerization in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stabilization activity is demonstrated through dilution experiments showing dose-dependent protection. This complements the capping activity and is consistent with known properties of barbed-end capping proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The interaction between AtFH2 and actin filaments is crucial for its in vivo function. Mutations (I519A, K672D) that prevent dimerization and actin binding abolish the ability to rescue cell-to-cell trafficking phenotypes despite maintaining PD localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structure-function analysis is well-designed: mutations based on conserved residues abolish biochemical activity (shown by multiple assays) and in vivo function (rescue experiments) while maintaining localization. This definitively links actin-binding to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C89",
+      "C90",
+      "C112"
+    ],
+    "result": "AtFH2 regulates PD permeability by anchoring actin filaments to PD through its barbed-end capping activity, with loss of AtFH2 presumably reducing actin filament amounts at PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic model is proposed based on integration of localization and biochemical data, but direct visualization of actin at PD or measurement of actin levels at PD in wild-type vs. mutants is not provided. The model is reasonable but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Overexpression of AtFH2 does not affect actin filament organization or cell-to-cell trafficking in leaf epidermal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy and trafficking assays show no effect of overexpression. This negative result is important for understanding the system but represents a minor finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Among Class I Arabidopsis formins, AtFH1, AtFH4, AtFH8, and AtFH9 form dot-like structures along cell membranes, while AtFH5, AtFH6, AtFH10, and AtFH11 are uniformly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy data clearly show differential localization patterns. However, only AtFH1 and AtFH9 are confirmed to localize to PD through colocalization experiments, while AtFH4 and AtFH8 dot-like structures are not definitively shown to be PD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The altered cell-to-cell trafficking in atfh1, atfh2, and atfh1 atfh2 mutants is not due to changes in callose accumulation at PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Callose staining shows no significant differences between genotypes. This control experiment rules out an alternative mechanism and strengthens the actin-based model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Loss of AtFH2 function increases PD permeability consistent with prior pharmacological studies, supporting the conclusion that actin filament stability/amount is crucial for regulating PD permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic data are consistent with prior pharmacological studies showing that actin destabilization increases PD permeability. This provides important validation of the model, though the mechanism remains partially inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Loss of both AtFH1 and AtFH2 does not affect normal development but increases sensitivity to CMV infection, suggesting developmental processes are less sensitive to formin-mediated PD regulation than biotic stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential sensitivity is well-documented through developmental observations and viral infection assays. The interpretation about relative sensitivity is reasonable based on the data, though the underlying mechanisms are not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C117"
+    ],
+    "result": "AtFH2 FH2 dimers might be less flexible than typical formins, explaining the capping without nucleation activity, though AtFH2 might have nucleation activity when bound to other proteins or after post-translational modification in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic explanations for the unusual biochemical properties. No structural data or in vivo binding partner studies are provided to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "This study provides evidence supporting the presence of filamentous actin at PD, since AtFH2 presumably only interacts with filamentous actin through barbed-end capping and this interaction is crucial for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the logic is sound (capping requires filaments, capping is required for function), this is indirect evidence. Direct visualization of actin filaments at PD is not provided, and the controversy about F-actin at PD remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "AtFH1 and AtFH2 might coordinately regulate actin dynamics at PD, with AtFH1 promoting polymerization and AtFH2 subsequently capping the barbed ends after AtFH1 dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model based on known biochemical properties of AtFH1 (non-processive nucleator) and AtFH2 (capper). No direct evidence for sequential action or coordination is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The TM domain of AtFH2 has evolved to allow it to adapt to regulate actin dynamics at PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization data clearly show the TM domain is necessary and sufficient for PD targeting. The evolutionary interpretation is reasonable given the conservation in rice, though direct evolutionary analysis is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C93",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C108",
+      "C109",
+      "C110",
+      "C116"
+    ],
+    "result": "Background information from prior literature about actin at PD, formin proteins, PD structure, and relevant prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge from cited literature. They provide necessary context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Propidium iodide is a nucleic acid binding dye that cannot cross membranes of living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge about PI properties used to validate the membrane localization approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Speculative mechanisms for how AtFH2-tethered actin filaments might regulate PD permeability, including potential roles in ER-PM connections or at the neck region of PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative proposals without experimental support. They represent reasonable hypotheses for future investigation but are not tested in this study.",
+    "result_type": "MINOR"
+  }
+]

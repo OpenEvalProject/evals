@@ -1,0 +1,1653 @@
+{
+  "submission": {
+    "id": "ad9f5114-131e-44f2-8216-9f458320d395",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:12:49.102619Z",
+    "updated_at": "2025-12-02T02:12:49.102619Z"
+  },
+  "content": [
+    {
+      "id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "submission_id": "ad9f5114-131e-44f2-8216-9f458320d395",
+      "content_type": "manuscript",
+      "content_text": "# Efficient single-copy HDR by 5\u2019 modified long dsDNA donors\n\n## Authors\n\n- Jose Arturo Gutierrez-Triana<sup>1</sup>\n- Tinatini Tavhelidse<sup>1</sup> ([ORCID: 0000-0002-6103-9019](https://orcid.org/0000-0002-6103-9019))\n- Thomas Thumberger<sup>1</sup> ([ORCID: 0000-0001-8485-457X](https://orcid.org/0000-0001-8485-457X))\n- Isabelle Thomas<sup>1</sup>\n- Beate Wittbrodt<sup>1</sup>\n- Tanja Kellner<sup>1</sup>\n- Kerim Anlas<sup>1</sup>\n- Erika Tsingos<sup>1</sup> ([ORCID: 0000-0002-7267-160X](https://orcid.org/0000-0002-7267-160X))\n- Joachim Wittbrodt<sup>1</sup> ([ORCID: 0000-0001-8550-7377](https://orcid.org/0000-0001-8550-7377)) \u2020\n\n### Affiliations\n\n1. Centre for Organismal Studies Heidelberg University Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR/Cas9 efficiently induces targeted mutations via non-homologous-end-joining but for genome editing, precise, homology-directed repair (HDR) of endogenous DNA stretches is a prerequisite. To favor HDR, many approaches interfere with the repair machinery or manipulate Cas9 itself. Using Medaka we show that the modification of 5\u2019 ends of long dsDNA donors strongly enhances HDR, favors efficient single-copy integration by retaining a monomeric donor conformation thus facilitating successful gene replacement or tagging.\n\n## Introduction\n\nThe implementation of the bacterial CRISPR/Cas9 system in eukaryotes has triggered a quantum leap in targeted genome editing in literally any organism with a sequenced genome or targeting region (Cong et al., 2013; Jinek et al., 2012; Mali et al., 2013). Site-specific double-strand breaks (DSBs) are catalyzed by the Cas9 enzyme guided by a single RNA with a short complementary region to the target site. In response, the endogenous non-homologous end joining (NHEJ) DNA repair machinery seals the DSB. Since perfect repair will restore the CRISPR/Cas9 target site, mutations introduced by imprecise NHEJ are selected for.\n\nTo acquire precise genome editing the initial DSB should be fixed via the homology-directed repair (HDR) mechanism which is preferentially active during the late S/G2 phase of the cell cycle (Hustedt and Durocher, 2017). Donor DNA templates with flanking regions homologous to the target locus are used to introduce specific mutations or particular DNA sequences. Injected (linear) dsDNA rapidly multimerizes (Winkler et al., 1991), which likely also happens in CRISPR/Cas9 based approaches. Additionally, the high activity of NHEJ re-ligating CRISPR/Cas9 mediated DSBs can multimerize injected (linear) dsDNA donor templates. This poses a problem since consequently, the precise HDR-mediated recombination of single-copy donor templates is rather rare.\n\nSeveral strategies have been followed to avoid NHEJ and/or favor HDR. NHEJ was interfered with by pharmacological inhibition of DNA ligase IV (Maruyama et al., 2015). Conversely, HDR was meant to be favored by fusing the HDR-mediating yeast protein Rad52 to Cas9 (Wang et al., 2017). Similarly, removal of Cas9 in the G1/S phase (Gutschner et al., 2016) by linking it to the N-terminal region of the DNA replication inhibitor Geminin, should restrict the introduction of double-strand cuts to the G2 phase, when HDR is most prominently occurring (Hustedt and Durocher, 2017). Those approaches improved HDR-mediated integration of the homology flanks, while they did not tackle reported integration of multimers (Auer et al., 2014) arising after injection of dsDNA templates such as plasmids or PCR products (Winkler et al., 1991).\n\n## Results\n\nTo enhance HDR without interfering with the endogenous DNA repair machinery, we aimed at establishing DNA donor templates that escape multimerization or NHEJ events. We thus blocked both 5\u00b4ends of PCR amplified long dsDNA donor cassettes using \u2018bulky\u2019 moieties like Biotin, Amino-dT (A-dT) and carbon spacers (e. g. Spacer C3, SpC3). This should shield the DNA donor from multimerization and integration via NHEJ, thus favoring precise and efficient single-copy integration via HDR (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of long dsDNA donor cassette PCR amplification with universal primers (black arrows) complementary to the cloning vector backbone outside of the assembled donor cassette (e. g. gfp with homology flanks). Bulky moieties like Biotin at the 5\u2019 ends of both modified primers (red octagon) prevent multimerization/NHEJ of dsDNA, providing optimal conditions for HDR-mediated single-copy integration following CRISPR/Cas9-introduced DSB at the target locus (grey scissors). Representation of locus (Lf/Lr) and internal gfp (Gf/Gr) primers for PCR genotyping of putative HDR-mediated gfp integration events. (B) Southern blot analysis reveals the monomeric state of injected dsDNA fragments in vivo for 5\u2019 modification with Biotin or Spacer C3. Long dsDNAs generated with control unmodified primers or Amino-dT attached primers multimerize as indicated by a\u00a0high molecular weight ladder apparent already within two hours post-injection (hpi). Note: 5\u2019 moieties did not enhance the stability of injected DNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013D) Schematic to-scale representation of respective target locus (A, rx2; B, rx1; C, actb; D, dnmt1) with UTR (white boxes with red outlines) and exons (red boxes) highlighted. Homology flanks (HF, grey), sgRNA target sites (white scissors) and respective locus primers (black arrows, Lf, Lr, see Supplementary file 2) are indicated. Respective assembled donor plasmid (A, B, C Golden GATEway (Kirchmaier et al., 2013) or D, conventional cloning) that served as a template for PCR amplification of the\u00a0unmodified/modified long dsDNA gfp donor cassette is depicted below (FL, flexible linker; backbone sequence in blue). Entry vectors (EV) or restriction enzyme sites for cloning are indicated. The position of primers flanking the donor cassette is indicated, modification highlighted by a red octagon.\n\nWe first addressed the impact of the donor 5\u2019 modification on the formation of multimers in vivo. We injected modified and unmodified dsDNA donors into one-cell stage medaka (Oryzias latipes) embryos and analyzed the conformational state of the injected material during zygotic development. dsDNA donors were generated by PCR employing 5\u2019 modified and non-modified primers respectively, and by additionally providing traces of DIG-dUTP for labeling of the resulting PCR product. The conformation of the injected dsDNA donors was assayed in the extracted total DNA after 2, 4 and 6 hr post-injection, respectively. The DNA was size fractionated by gel electrophoresis and donor DNA conformation was detected after blotting the DNA to a nylon membrane by anti-DIG antibodies (Figure 1B). In unmodified DIG-labelled control donors, we uncovered multimerization already at 2 hr post-injection as evident by a ladder of labeled donor DNA representing different copy number multimers (Figure 1B). In contrast, Biotin and SpC3 modification of DIG-labelled donors prevented multimerization within six hours post-injection (Figure 1B). dsDNA donors established by A-dT modified primes, however, multimerized and produced similar results as unmodified DIG-labelled dsDNA donors (Figure 1B). Our results reveal that Biotin and SpC3 5\u2019 modifications efficiently prevent donor multimerization in vivo. While strongly blocking multimerization, the 5\u2019 modification of dsDNA did not apparently enhance the stability of the resulting dsDNA (compare modified and unmodified donors over time, Figure 1B).\n\nTo test whether 5\u2019 modification not only reduces the degree of multimerization but also impacts on single-copy HDR-mediated integration of long dsDNA donors, we designed gfp containing donor cassettes for an immediate visual readout. We generated gfp in-frame fusion donors for four different genes: the retinal homeobox transcription factors rx2 and rx1 (Reinhardt et al., 2015), the non-muscle cytoskeletal beta-actin (actb) (Stemmer et al., 2015) and the DNA methyltransferase 1 (dnmt1). Donor cassettes contained the respective 5\u2019 homology flank (HF) (462 bp for rx2, 430 bp for rx1, 429 bp for actb, 402 bp for dnmt1), followed by the in-frame gfp coding sequence, a flexible linker in case of rx2, rx1 and dnmt1, and the corresponding 3\u2019 HF (414 bp for rx2, 508 bp for rx1, 368 bp for actb, 405 bp for dnmt1; schematic representation in Figure 1A, Figure 1\u2014figure supplement 1 for detailed donor design). To amplify the long dsDNA donors we employed a pair of universal primers (5\u2019 modified or unmodified as control) complementary to the backbone of the cloning vectors (pDestSC-ATG [Kirchmaier et al., 2013] or pCS2+ [Rupp et al., 1994]) encompassing the entire assembled donor cassette (Figure 1\u2014figure supplement 1).\n\nModified or unmodified long dsDNA donors were subsequently co-injected together with Cas9 mRNA and the respective locus-specific sgRNA into medaka one-cell stage zygotes (Loosli et al., 1999; Rembold et al., 2006). For all four loci (and all 5\u2019 modifications) tested we observed efficient targeting as apparent by the GFP expression within the expected expression domain (Figure 2A, Supplementary file 1, Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig2-v2.jpg)\n\n**Figure 2.:** (A) GFP expression in the respective expression domain after HDR-mediated integration of modified dsDNA gfp donor cassettes into rx2, rx1, actb and dnmt1 ORFs in the injected generation. (B) Individual embryo PCR genotyping highlights efficient HDR-mediated single-copy integration of 5\u2019Biotin modified long dsDNA donors, but not unmodified donor cassettes. Locus PCR reveals band size indicative of single-copy gfp integration (asterisk) besides alleles without gfp integration (open arrowhead). Amplification of gfp donor (white arrow) for control.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Embryos injected with unmodified or 5\u2019Biotin, Amino-dT or Spacer C3 modified long dsDNA gfp-rx2 donor cassettes were scored for survival at one dpi, and for GFP expression at two dpi. n, total number of injected embryos.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) rx2 locus PCR genotyping of individual GFP-Rx2 positive embryos injected with unmodified or 5\u2019Biotin or Spacer C3 modified long dsDNA gfp donor cassettes (green asterisk, single-copy HDR-mediated integration of gfp, 2547 bp, open arrowhead, rx2 allele without gfp integration, 1719 bp;). Horizontal bar, individual embryo; L, rx2 locus PCR with rx2 Lf/rx2 Lr; G, gfp internal PCR for control with Gf/Gr. (B) Qualitative summary of band spectrum (single-copy HDR-mediated gfp integration, rx2 allele without gfp integration, other) resulting from PCR genotyping in (A). n, number of genotyped GFP-Rx2 expressing embryos.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic to-scale representation of the gfp-rx2 locus with UTR (white boxes with red outlines), exons (red boxes) and homology flanks (HF, grey) highlighted. (B, C) Individual GFP-Rx2 expressing embryos (F0, B; F1, C) were genotyped using primers rx2 Lf/rx2 Lr (black arrows) and sequenced with gfpf and gfpr primers (green arrows).\n\nThe survival rates of embryos injected with Biotin and SpC3 5\u2019 modified dsDNA donors did not differ significantly from embryos injected with the unmodified dsDNA control donors (Supplementary file 1, Figure 2\u2014figure supplement 1). In contrast, the injection of the A-dT 5\u2019 modified dsDNA donors resulted in high embryonic lethality (Supplementary file 1, Figure 2\u2014figure supplement 1).\n\nWe next analyzed the frequency of single-copy HDR events following a careful, limited cycle PCR approach on genomic DNA of GFP expressing embryos injected with unmodified, Biotin\u00a0or SpC3 5\u2019 modified dsDNA donors. Our approach allowed distinguishing alleles without gfp integration (i.e. size of wild-type locus) from those generated by HDR and NHEJ respectively and addressed the size of the integration by a locus spanning PCR with a reduced number of PCR cycles (<=30) to omit in vitro fusion-PCR artefacts (own data and [Won and Dawid, 2017]). To determine the predictive power of GFP expression for perfect integration, we genotyped randomly selected, GFP-expressing embryos using locus primers (Lf/Lr) located distal to the utilized HFs (Figure 1\u2014figure supplement 1) and addressed the fusion of the gfp donor sequence to the target genes (Figure 2B, Figure 2\u2014figure supplements 2 and 3).\n\nEmploying unmodified donors, the rate of HDR was very low as evidenced by the predominant amplification of the alleles without gfp integration (Figure 2B, Figure 2\u2014figure supplement 2). In strong contrast, the 5\u2019 modified long dsDNA donors resulted in efficient HDR already detectable in the injected generation for all targeted loci. For the gfp tagging of rx2, 6 out of 10 randomly selected, GFP-expressing embryos showed precise HDR-mediated single-copy integration in F0 (Figure 2\u2014figure supplement 2) as sequence confirmed by the analysis of the locus (Figure 2\u2014figure supplement 3). Thus, 9.5% of injected and surviving zygotes showed precise HDR-mediated single-copy integration (15.8% of the injected zygotes expressed GFP; 60% of those showed the precise single-copy integration; Supplementary file 1). For the gfp tagging of actb 46.5% of the injected zygotes expressed GFP, 35% of which (7 out of 20 randomly selected, GFP-expressing embryos) showed precise HDR-mediated single-copy integration in F0, accounting for 16.3% of the initially injected zygotes (Supplementary file 1).\n\nIn the case of dnmt1, the rate of precise HDR-mediated single-copy integration was even higher, since full gene functionality is required for the progression of development and embryonic survival. Here, strikingly, all GFP-expressing embryo showed the desired perfect integration.\n\nWe observed the highest efficiency of HDR targeting by 5\u2019 modified dsDNA for all loci tested for 5\u2019Biotin modified donors (Figure 2\u2014figure supplement 2). Already in the injected generation we prominently detected and validated the HDR-mediated fusion of the long dsDNA donors with the respective locus (Figure 2\u2014figure supplement 2). While still giving rise to a high percentage of HDR events, SpC3 5\u2019 modified dsDNA donors also resulted in elevated levels of additional bands indicative for the integration of higher order multimers and NHEJ events (Figure 2\u2014figure supplement 2). Even though increasingly popular, in our hands the use of RNPs (Cas9 protein and respective sgRNA) did not even get close to the efficiency achieved by co-injection of Cas9 mRNA and the corresponding sgRNA assessed by gene targeting as described above.\n\nThe precise integration detected in the injected generation was successfully transmitted to the next generation (Figure 3, Figure 2\u2014figure supplement 3, Figure 3\u2014figure supplement 1). For gfp-rx2, 9% of fish originating from the initially injected embryos successfully transmitted the precisely modified locus to the next generation (15.8% of the injected embryos expressed GFP; 4 out of 7 GFP transmitting founder fish were also transmitting the precise single integration of the gfp donor cassette). For gfp-rx1, 3.9% of fish originating from the initially injected embryos were transmitting the precise single copy integrate to the next generation (13.5% of injected embryos expressed GFP; 2 out of 7 GFP transmitting founder fish were also transmitting the precise single integration of the gfp-rx1 donor cassette). For dnmt1, the high rate of precise HDR-mediated single-copy integration observed in the injected generation was fully maintained in the transmission to the next generation due to the absolute requirement of a functional/functionally tagged version of the locus. As we found in the course of our study, the precise integration of the gfp donor cassette into the actb locus results in late embryonic lethality. Consequently, stable transgenic lines could not be established.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig3-v2.jpg)\n\n**Figure 3.:** (A) F2 homozygous embryos exhibit GFP-Rx2 fusion protein expression in the pattern of the endogenous gene in the retina. (B) Southern Blot analysis of F2 gfp-rx2 embryos reveals a single band for a digestion scheme cutting outside the donor cassette (BglII/HindIII) or within the 5\u2019 donor cassette and in intron 2 (ScaI/HindIII) indicating precise single-copy donor integration. (B\u2019) Schematic representation of the modified locus indicating the restriction sites and the domain complementary to the probe used in (B). (C) RT-PCR analysis on mRNA isolated from individual homozygous F3 embryos indicates the transcription of a single gfp-rx2 fusion mRNA in comparison to the shorter wild-type rx2 mRNA as schematically represented in (C\u2019).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39468/elife-39468-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Southern Blot analysis of F2 gfp-rx1 embryos reveals a single band for a digestion scheme cutting outside the donor cassette and within the 3\u2019 donor cassette (HindIII/XmaI) or within the 5\u2019 donor cassette and in intron 1 (NcoI/EcoRI) indicating precise single-copy donor integration. (A\u2019) Schematic representation of the modified locus indicating the restriction sites and the domain complementary to the probe used in (A).\n\nTo estimate the timepoint of HDR events in the injected embryos, we investigated the actual rate of mosaicism in the germline as reflected by the germline transmission rate. For gfp-rx2, this rate ranged from 0.8% up to 12.9% indicating an HDR event earliest at the 4-cell stage (assuming that only a single event occurred per blastomere). In the case of gfp-rx1, HDR did not occur at the one-cell stage but rather later (2\u20138 cell stage as reflected by germline transmission rates of 23.9% and 5.8% respectively). Thus, for both cases, the transmission rates of the perfectly tagged locus reflect a level of mosaicism indicative for an HDR event between the 4- and 32-cell stage.\n\nWe addressed the nature of the insertion predicted to be single-copy by a combination of PCR and expression studies. We validated the genomic organization of the gfp-rx2 (Figure 3A) and gfp-rx1 knock-in in homozygous F2 animals by genomic sequencing (Figure 2\u2014figure supplement 3C) and Southern Blot (Southern, 2006) analysis (Figure 3B and B\u2019, Figure 3\u2014figure supplement 1). In both cases, we detected a single band indicative for a single-copy HDR-mediated integration, when probing digested genomic DNA of F2 gfp-rx2+/+ and gfp-rx1+/+ knock-in fish respectively. We used enzyme combinations releasing the gfp-rx2 region including the HFs (BglII/HindIII, Figure 3B and B\u2019) or cutting in the 5\u2019 HF (ScaI/HindIII, Figure 3B,B\u2019). For gfp-rx1 we released the 5\u2019 flanking region including the donor cassette (HindIII/XmaI) or the respective 3\u2019 flanking region and donor cassette (NcoI/EcoRI) (Figure 3\u2014figure supplement 1).\n\nThis analyses crucially validated the PCR based predictions and sequencing results.\n\nFurthermore, transcript analysis in gfp-rx2 homozygous F3 embryos exclusively uncovered a single fusion gfp-rx2 transcript (Figure 3C and C\u2019). This molecular analysis confirmed that the 5\u2019Biotin modification of the long dsDNA donor promoted precise single-copy HDR-mediated integration with high efficiency.\n\nTaken together the simple 5\u2019Biotin modification at both ends of long dsDNA donors by conventional PCR amplification presented here provides the means to favor HDR without interfering with the cellular DNA repair machinery.\n\n## Discussion\n\nFor efficient recombination the quality of the modified primers, that\u00a0is the fraction of primers actually labeled with biotin and therefore the quality of the 5\u2019 protected long ds DNA PCR product, is essential. The integration of 5\u2019 modified PCR fragments larger than 2 kb does in principle not pose a problem. We already successfully integrated cassettes of up to 8.6 kb (data not shown) via HDR by in vivo linearization of the donor plasmid (Stemmer et al., 2015). In the approach presented here, the quality of the end-protected PCR product is likely to drop with higher length in part due to the (UV\u2013) nicking in the extraction and purification process. Also, the rapid validation by locus spanning PCR is size limited but eventually Southern blot analysis will resolve the question of a single copy, perfect integration. Irrespective of the donor cassette size, the PCR cycles used to probe for the successful single integration via HDR must not exceed a total of 30 to avoid misleading in vitro fusion-PCR artifacts (own data and [Won and Dawid, 2017]).\n\nAs already mentioned earlier, HDR preferentially occurs during the late S/G2 phase of the cell cycle (Heyer et al., 2010; Hustedt and Durocher, 2017). Varying efficiencies of genome editing via HDR could be due to species-specific differences, in particular of the S/G2 phase of the cell cycle that likely crucially impacts on the rate of HDR. As reported extensively, there is no apparent G2 phase before mid-blastula-transition in amphibia (Xenopus) and fish (Danio rerio) with the marked exception of the first cleavage, where a G2 phase has been reported (Kimelman, 2014). The germline transmission rates obtained for the tagging of Rx1 and Rx2 indicated HDR events after the two-cell stage, predominantly at the 4-cell and subsequent stages. The slower cycling of medaka compared to zebrafish results in an extension of the G2 phase in the first cell cycle by more than 150% (total cycle zebrafish: 45 min [Kimmel et al., 1995], medaka: 65 min [Iwamatsu, 2004]). Assuming a comparable rate of DNA synthesis between the two species, there is more than double the time for S- and M-phase to replicate a genome encompassing roughly a third of the size of zebrafish. This extended cell cycle length is in particular apparent also in the subsequent cycles in medaka (15 min zebrafish [Kimmel et al., 1995], 40 min medaka [Iwamatsu, 2004]). Interestingly, phosphorylation of RNA polymerase, a prerequisite for the expression of the first zygotic transcripts has been reported to start at the 64cell stage in medaka (Kraeussling et al., 2011) and asynchronous divisions, a hallmark of MBT, are observed already at the transition of the 16- to 32-cell stage (Kraeussling et al., 2011), suggesting species-specific differences in the onset of zygotic transcription and consequently the lengthening of the cell cycle.\n\nOur approach facilitates the highly efficient detection of HDR events by GFP tagging even in non-essential genes. Other than in non-modified dsDNA donors, the locus-specific expression of GFP is an excellent predictor for precise, single-copy HDR-mediated integration already in the injected generation. This allows an easy selection and results in HDR rates in GFP positive embryos of up to 60% in the injected generation. This rate can even be higher in essential loci, such as dnmt1, where the full functionality of the (modified) gene under investigation is required for the survival of the affected cells, tissues, organs or organisms, thus providing the means for effective positive selection for single, fully functional integrates. It is interesting to note that approximately 400 bp flanking the insertion site in 5\u2019 and 3\u2019 direction are sufficient for HDR. The use of modified universal primers for the two donor template vectors employed allowed a flexible application of the procedure and ensured a high quality of the PCR generated 5\u2019 modified long dsDNA donors. Strikingly, the primer-introduced non-homology regions in the very periphery of the long dsDNA donors did not negatively impact on the HDR efficiency.\n\nTaken together, the simplicity and high reproducibility of our proof-of-concept analysis highlight that the presented protection of both 5\u2019 ends of long dsDNA donors prevent multimerization and promote precise insertion/replacement of DNA elements, thus facilitating functional studies in basic research as well as therapeutic interventions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Oryzias latipes)</td>\n      <td>Cab</td>\n      <td>other</td>\n      <td></td>\n      <td>medaka Southern wild-type population</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Oryzias latipes)</td>\n      <td>rx2-gfp</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Oryzias latipes)</td>\n      <td>rx1-gfp</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Oryzias latipes)</td>\n      <td>actb-gfp</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Oryzias latipes)</td>\n      <td>dnmt1-gfp</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>rx2-gfp donor cassette</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>rx1-gfp donor cassette</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>actb-gfp donor cassette</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>dnmt1-gfp donor cassette</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 5'HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GCCGGATCCAAGCATGTCAAAACGTAGAAGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 5'HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KpnI restriction site: GCCGGTACCCATTTGGCTGTGGACTTGCC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 3'HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GCCGGATCCCATTTGTCAATGGAC ACGCTTGGGATGGTGGACGAT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 3'HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KnpI restriction site: GCCGGTACCTGGACTGGACTGGAAGTTATTT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 sgRNA f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>substituted nucleotides to facilitate T7 in vitro transcription of the sgRNA oligonucleotides are shown in small letters TAgGCATTTGTCAATGGATACCC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 sgRNA r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AAACGGGTATCCATTGACAAATG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 Lf/5\u2019UTRf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>TGCATGTTCTGGTTGCAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx2 Lr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AGGGACCATACCTGACCCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb 5\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GGGGATCCCAGCAACGACTTCGCACAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb 5\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KnpI restriction site: GGGGTACCGGCAATGTCATCATCCATGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb 3\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GGGGATCCGACGACGATATAGCTG CACTGGTTGTTGACAACGGATCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb 3\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KnpI restriction site: GGGGTACCCAGGGGCAATTCTCAGCTCA</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb sgRNA f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>TAGGATGATGACATTGCCGCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb sgRNA r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AAACGTGCGGCAATGTCATCAT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb Lf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>GTCCGAGTTGAGGGTGTCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>actb Lr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CATGTGCTCCACTGTGAGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 5\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with SalI restriction site: AATTTGTCGACGCTTTGA CAGTTAACCTACACG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 5\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with AgeI restriction site: AATTTACCGGTCGTAACTGCA AACTAAAAAATAAAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence -based reagent</td>\n      <td>dnmt1 3\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with SpeI restriction site: AATTTACTAGTATGCCATCCAGAA CGTCCTTATCTCTACCAGACGATG TCAGAAAAAGGTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 3\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with NotI restriction site: AATTTGCGGCCGCCTACACATA TTGTCTGTGATAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>mgfpf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with AgeI restriction site: AATTTACCGGTACTAGTACCATG AGTAAAGGAGAAGAACTTTTCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>mgfpr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with SpeI restriction site: AATTTACTAGTCGCGGCTGCACTT CCACCGCCTCCCGATCCGCCACC GCCAGAGCCACCTCCGCCTGAAC CGCCTCCACCGCTCAGGCTAGCTT TGTATAGTTCATCCATGCCATG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 sgRNA f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>substituted nucleotides to facilitate T7 in vitro transcription of the sgRNA oligonucleotides are shown in small letters TAgGACATCGTCTGGCAAAGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 sgRNA r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AAACGTCTTTGCCAGACGATGT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>dnmt1 Lf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CTCAATGTAAACACTTCGTGTCGCTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence -based reagent</td>\n      <td>dnmt1 Lr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>TTGCATGCATATTCAAAGTTGTCAAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 5\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GCCGGATCCGCATCCGAAAGG TAAGGACTGCAAACC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 5\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KpnI restriction site: GCCGGTACCCATGAGAGCG TCTGGGCTCTGACC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 3\u2019HF f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with BamHI restriction site: GGCGGATCCCATTTATCAC TCGATACCATGAGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 3\u2019HF r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>with KpnI restriction site: GGCGGTACCTTCCAGTTTA AGAACATCCCCTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 sgRNA1 f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>substituted nucleotides to facilitate T7 in vitro transcription of the sgRNA oligonucleotides are shown in small letters TAggAAATGCATGAGAGCGTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 sgRNA1 r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AAACAGACGCTCTCATGCATTT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 sgRNA2 f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>substituted nucleotides to facilitate T7 in vitro transcription of the sgRNA oligonucleotides are shown in small letters TAggCTCTCATGCATTTATCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 sgRNA2 r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>AAACGTGATAAATGCATGAGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 Lf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CTTTGCTGTTTTGAGAATTGCACC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>rx1 Lr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>GAGACCGAACGATGACAATAACAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pDest f (control)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CGAGCGCAGCGAGTCAGTGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pDest r (control)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CATGTAATACGACTCACTATAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pDest f mod</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Asterisks indicate phosphorothioate bonds, \u20185\u2019moiety\u2019 was either 5\u2019Biotin, Amino-dT or Spacer C3. 5\u2019moiety-C*G*A*G*C*GCAGCGAGTCAGTGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pDest r mod</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Asterisks indicate phosphorothioate bonds, \u20185\u2019moiety\u2019 was either 5\u2019Biotin , Amino-dT or Spacer C3. 5\u2019moiety-C*A*T*G*T*AATACGACTCACTATAG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pCS2 f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CCATTCAGGCTGCGCAACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pCS2 r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CACACAGGAAACAGCTATGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence -based reagent</td>\n      <td>pCS2 f mod</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Asterisks indicate phosphorothioate bonds, \u20185\u2019moiety\u2019 was either 5\u2019Biotin, Amino-dT or Spacer C3. 5\u2019moiety-C*C*A*T*T*CAGGCTG CGCAACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>pCS2 r mod</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Asterisks indicate phosphorothioate bonds, \u20185\u2019moiety\u2019 was either 5\u2019Biotin, Amino-dT or Spacer C3. 5\u2019moiety-C*A*C*A*C*AGGAAACAGCTATGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>Gf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>ATGGCAAGCTGACCCTGAAGTTCAT CTGCACCACCGGCAAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>Gr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CTCAGGTAGTGGTTGTCG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>gfpf</td>\n      <td>this paper</td>\n      <td></td>\n      <td>GCTCGACCAGGATGGGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>gfpr</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CTGAGCAAAGACCCCAACGAGA AGCGCGATCACATG</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>gfp probe f</td>\n      <td>this paper</td>\n      <td></td>\n      <td>GTGAGCAAGGGCGAGGAGCT</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>gfp probe r</td>\n      <td>this paper</td>\n      <td></td>\n      <td>CTTGTACAGCTCGTCCATG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fish maintenance\n\nAll fish are maintained in closed stocks at Heidelberg University. Medaka (Oryzias latipes) husbandry (permit number 35\u20139185.64/BH Wittbrodt) and experiments (permit number 35\u20139185.81/G-145/15 Wittbrodt) were performed according to local animal welfare standards (Tierschutzgesetz \u00a711, Abs. 1, Nr. 1) and in accordance with European Union animal welfare guidelines (Bert et al., 2016). The fish facility is under the supervision of the local representative of the animal welfare agency. Embryos of medaka of the wild-type Cab strain were used at stages prior to hatching. Medaka was raised and maintained as described previously (Koster et al., 1997).\n\n### Donor plasmids\n\nRx2 and actb template plasmids for gfp donor cassette amplification are described in Stemmer et al. (2015) and were generated by GoldenGATE assembly into the pGGDestSC-ATG destination vector (addgene #49322) according to Kirchmaier et al. (2013). See Supplementary file 2 for primers used to amplify respective homology flanks. The dnmt1 gfp plasmid was cloned with homology flanks (5\u2019 HF 402 bp, primers dnmt1 5\u2019HF f/dnmt1 5\u2019HF r; 3\u2019 HF 405 bp, dnmt1 3\u2019HF f/dnmt1 3\u2019HF r) that were PCR amplified with Q5 polymerase (New England Biolabs, 30 cycles) from wild-type medaka genomic DNA. mgfp-flexible linker was amplified with primers mgfpf/mgfpr. The respective restriction enzyme was used to digest the amplicons (5\u2019HF: SalI HF (New England Biolabs), AgeI HF (New England Biolabs); mgfp-flexible linker: AgeI HF (New England Biolabs), SpeI HF (New England Biolabs); 3\u2019HF: SpeI HF (New England Biolabs), NotI HF (New England Biolabs)) followed by gel purification (Analytik Jena) and ligation into pCS2+ (Rupp et al., 1994) (digested with SalI HF (New England Biolabs), NotI HF (New England Biolabs)). The rx1 gfp plasmid was cloned with homology flanks (5\u2019HF 430 bp, primers rx1 5\u2019HF f/rx1 5\u2019HF r; 3\u2019 HF 508 bp, rx1 3\u2019HF f/rx1 3\u2019HF r) that were PCR amplified with Q5 polymerase (New England Biolabs, 30 cycles) from wild-type medaka genomic DNA. All primers were obtained from Eurofins Genomics.\n\n### Donor amplification\n\nWe designed universal primers that match the pGGDestSC-ATG (Kirchmaier et al., 2013) (addgene #49322) or pCS2+ (Rupp et al., 1994) backbone encompassing the assembled inserts (i.e. the gfp donor cassette). Unmodified control primers (pDest f, pDest r, pCS2 f, pCS2 r) were ordered from Eurofins Genomics. Modified primers obtained from Sigma-Aldrich (pDest f mod, pDest r mod, pCS2 f mod, pCS2 r mod) consist of the same sequences with phosphorothioate bonds in the first five nucleotides and 5\u2019moiety extension: 5\u2019Biotin, 5\u2019Amino-dT or 5\u2019Spacer C3.\n\nThe dsDNA donor cassettes were amplified by PCR using 1x Q5 reaction buffer, 200 \u00b5M dNTPs, 200 \u00b5M primer forward and reverse and 0.6 U/\u00b5l Q5 polymerase (New England Biolabs). Conditions used: initial denaturation at 98\u00b0C 30 s, followed by 35 cycles of: denaturation at 98\u00b0C 10 s, annealing at 62\u00b0C 20 s and extension at 72\u00b0C 30 s per kb and a final extension step of 2 min at 72\u00b0C. The PCR reaction was treated with 20 units of DpnI (New England Biolabs) to remove any plasmid template following gel purified using the QIAquick Gel Extraction Kit (Qiagen, 28706) and elution with 20 \u00b5l nuclease-free water.\n\nThe LacZ cassette of the pGGDestSC-ATG (Kirchmaier et al., 2013) (addgene #49322) which served as DIG labelled dsDNA fragment to test in vivo multimerization was amplified via Q5-PCR as above using a mixture of 200 \u00b5M dATP, dCTP, dGTP, 170 \u00b5M dTTP and 30 \u00b5M DIG-dUTP and purified as detailed.\n\n### sgRNA target site selection\n\nDnmt1 sgRNAs were designed with CCTop as described in Stemmer et al. (2015). sgRNAs for rx2 and actb were the same as in Stemmer et al. (2015). The following target sites close to the translational start codons were used (PAM in brackets): rx2 (GCATTTGTCAATGGATACCC[TGG]), actb (GGATGATGACATTGCCGCAC[TGG]), dnmt1 (TGACATCGTCTGGCAAAGAC[AGG]) and rx1 (AAATGCATGAGAGCGTCT[GGG] and CTCTCATGCATTTATCAC[TGG]). Cloning of sgRNA templates and in vitro transcription was performed as detailed in Stemmer et al. (2015).\n\n### In vitro transcription of mRNA\n\nThe pCS2\u00a0+Cas9 plasmid was linearized using NotI and the mRNA was transcribed in vitro using the mMessage_mMachine SP6 kit (ThermoFisher Scientific, AM1340).\n\n### Microinjection and screening\n\nMedaka zygotes were injected with 10 ng of DIG-labelled donors and were allowed to develop until 2, 4 and 6 hr post injection. For the CRISPR/Cas9 experiments, medaka zygotes were injected with 5 ng/\u00b5l of either unmodified and modified long dsDNA donors together with 150 ng/\u00b5l of Cas9 mRNA and 15\u201330 ng/\u00b5l of the gene-specific sgRNAs. Injected embryos were maintained at 28\u00b0C in embryo rearing medium (ERM, 17 mM NaCl, 40 mM KCl, 0.27 mM CaCl2, 0.66 mM MgSO4, 17 mM Hepes). One day post-injection (dpi) embryos were screened for survival, GFP expression was scored at two dpi.\n\n### Southern blot\n\nIn order to check for multimerization of unmodified and modified donors, we used a modified Southern Blot approach. In brief, embryos were injected with DIG-labelled donors which were PCR-amplified from pGGDestSC-ATG (addgene #49322) using primers pDest f/pDest r (LacZ cassette) harboring either no 5\u2019 moiety or one of the following: 5\u2019Biotin, Amino-dT or Spacer C3. 2, 4 and 6 hr post injection, 30 embryos were lysed in TEN buffer plus proteinase K (10 mM Tris pH 8, 1 mM EDTA, 100 mM NaCl, 1 mg/ml proteinase K) at 60\u00b0C overnight. DNA was ethanol precipitated after removal of lipids and proteins by phenol-chloroform extraction. Total DNA was resuspended in TE buffer (10 mM Tris HCl pH 8.0, 1 mM EDTA pH 8.0). 200 ng of each sample was run on a 0.8% agarose gel. As a control, 100 pg of uninjected donor PCR product were loaded. The agarose gel was transferred to a nylon membrane overnight using 10x SSC (1.5 M NaCl, 0.15 M C6H5Na3O7) as transfer solution. The cross-linked membrane was directly blocked in 1% w/v blocking reagent (Roche) in 1x DIG1 solution (0.1 M maleic acid, 0.15 M NaCl, pH 7.5) and the labeled DNA was detected using CDP star (Roche) following the manufacturer\u2019s instructions.\n\nIn order to check for copy number insertions in the gfp-rx2 and gfp-rx1 transgenic lines, genomic DNA was isolated as described above from F2 embryos expressing GFP. 10 \u00b5g digested genomic DNA were loaded per lane on a 0.8% agarose gel and size fractionated by electrophoresis. The gel was depurinated in 0.25 N HCl for 30 min at room temperature, rinsed with H2O, denatured in 0.5 N NaOH, 1.5 M NaCl solution for 30 min at room temperature and neutralized in 0.5 M Tris HCl, 1.5 M NaCl, pH 7.2 before it was transferred overnight at room temperature onto a Hybond membrane (Amersham). The membrane was washed with 50 mM NaPi for 5 min at room temperature, then crosslinked and pre-hybridized in Church hybridization buffer (0.5 M NaPi, 7% SDS, 1 mM EDTA pH 8.0) at 65\u00b0C for at least 30 min. The probe was synthesized from the donor plasmid with primers gfp probe f and gfp probe r using the PCR DIG Probe Synthesis Kit (Roche, 11636090910) and the following PCR protocol: initial denaturation at 95\u00b0C for 2 min, 35 cycles of 95\u00b0C 30 s, 60\u00b0C 30 s, 72\u00b0C 40 s and final extension at 72\u00b0C 7 min. The probe was boiled in hybridization buffer for 10 min at 95\u00b0C and the membrane was hybridized overnight at 65\u00b0C. The membrane was washed with pre-heated (65\u00b0C) Church washing buffer (40 mM NaPi, 1% SDS) at 65\u00b0C for 10 min, then at room temperature for 10 min and with 1x DIG1% and 0.3% Tween for 5 min at room temperature. The membrane was blocked in 1% w/v blocking reagent (Roche) in 1x DIG1 solution at room temperature for at least 30 min. The membrane was incubated with 1:10,000 anti-digoxigenin-AP Fab fragments (Roche) for 30 min at room temperature in 1% w/v blocking reagent (Roche) in 1x DIG1 solution. Two washing steps with 1x DIG1% and 0.3% Tween were performed for 20 min at room temperature, followed by a 5 min washing step in 1x DIG3 (0.1 M Tris pH 9.5, 0.1 M NaCl) at room temperature. Detection was performed using 6 \u00b5l/ml CDP star (Roche).\n\n### Genotyping\n\nSingle injected GFP positive embryos were lysed in DNA extraction buffer (0.4 M Tris/HCl pH 8.0, 0.15 M NaCl, 0.1% SDS, 5 mM EDTA pH 8.0, 1 mg/ml proteinase K) at 60\u00b0C overnight. Proteinase K was inactivated at 95\u00b0C for 10 min and the solution was diluted 1:2 with H2O. Genotyping was performed in 1x Q5 reaction buffer, 200 \u00b5M dNTPs, 200 \u00b5M primer forward and reverse and 0.012 U/\u00b5l Q5 polymerase and 2 \u00b5l of diluted DNA sample and the respective locus primers. The conditions were: 98\u00b0C 30 s, 30 cycles of 98\u00b0C 10 s, annealing for 20 s and 72\u00b0C 30 s per kb (extension time used would allow for detecting potential NHEJ events on both ends of the donor) (rx2 Lf/rx2 Lr: 68\u00b0C annealing, 90 s extension time; rx1 Lf/rx1 Lr: 66\u00b0C annealing, 90 s extension time; actb Lf/actb Lr: 66\u00b0C annealing, 84 s extension time; dnmt1 Lf/dnmt1 Lr: 65\u00b0C annealing, 90 s extension time) and a final extension of 2 min at 72\u00b0C. PCR products were analyzed on a 1% agarose gel.\n\nDiagnostic GFP PCR here: 63\u00b0C annealing, 500 bp, 15 s extension\n\n### RT-PCR\n\nTotal RNA was isolated from 60 homozygous embryos (stage 32) by lysis in TRIzol (Ambion) and chloroform extraction according to the manufacturer\u2019s protocol. RNA was precipitated using isopropanol and resuspended in H2O. cDNA was reverse transcribed with Revert Aid Kit (Thermo Fisher Scientific) after DNAse digestion and inactivation following the manufacturer\u2019s instructions. PCR was performed using 5\u2019UTRf, 3\u2019UTRr and Q5 polymerase (New England Biolabs): 98\u00b0C 30 s, 35 cycles of 98\u00b0C 10 s, annealing 65\u00b0C for 20 s and 72\u00b0C 210 s and a final extension of 2 min at 72\u00b0C. PCR products were analyzed on a 1.5% agarose gel.\n\n### Sequencing\n\nPlasmids and PCR fragments were sequenced with the indicated primers by a commercial service (Eurofins Genomics).\n",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "84b97851-49ac-4744-b9de-038d8bfa7806",
+      "submission_id": "ad9f5114-131e-44f2-8216-9f458320d395",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro S\u00e1nchez Alvarado, Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39468.016](https://doi.org/10.7554/eLife.39468.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Efficient single-copy HDR by 5' modified long dsDNA donors\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Alejandro S\u00e1nchez Alvarado as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Manfred Schartl (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis well-written manuscript provides a very attractive protocol for efficient gene knock-in with CRISPR/Cas9 through homology-directed repair. The authors used a streamlined strategy (modification of 5' ends of long dsDNA donors with either biotin or carbon spacers) to successfully address a common problem in the field of genome editing: multimerization of donor molecules in vivo and therefore interference with non-homologous end joining (NHEJ). The authors show in particular that 5' modification with biotin leads to a high frequency of single copy HDR events in injected embryos and confirmed that the modified locus was stably transmitted to offspring with remarkably high efficiency for single copy integrations.\n\nIf this method is as efficient as reported, precise genome editing by homologous recombination using CRISPR/Cas9 stands to become more the norm than the exception. Therefore, given the likely broad appeal and interest, this method is likely to generate, the following questions must be addressed by the authors:\n\nEssential revisions:\n\n1) In both the Abstract and the main text, authors assert that the new method reported produces \"60% efficiency\". However, 60% (6 out of 10 GFP positive fish are germline transformed) is the highest efficiency obtained for one of the three genes tested (6 out of 10 GFP positive fish are germline transformed). Unless I missed it, the efficiency for the other two genes was not reported. This information should be provided. If the efficiency is as high as reported, such numbers should be easy to generate and ideally, more genes could have been readily tested.\n\n2) Also, clarification on how the efficiency of transformation was calculated is needed. As it stands, the calculation of efficiency reported in this manuscript is somewhat misleading. A less ambiguous method to report efficiency may be to indicate the minimum number of embryos that need to be injected to get germline transformation. For example, if the injection of 100 embryos gives 60% efficiency, then the efficiency is high. However, if 1000 embryos need to be injected get 60% efficiency, then the efficiency is low.\n",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "226373fd-8965-43f6-b531-95d1c8273467",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C1",
+      "claim": "CRISPR/Cas9 efficiently induces targeted mutations via non-homologous-end-joining.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9 efficiently induces targeted mutations via non-homologous-end-joining but for genome editing, precise, homology-directed repair (HDR) of endogenous DNA stretches is a prerequisite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field of genome editing, supported by extensive literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "4ff825e2-ae18-40b3-b61d-19f9f46184f2",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C2",
+      "claim": "Precise, homology-directed repair (HDR) of endogenous DNA stretches is a prerequisite for genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9 efficiently induces targeted mutations via non-homologous-end-joining but for genome editing, precise, homology-directed repair (HDR) of endogenous DNA stretches is a prerequisite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a fundamental requirement in the field based on established understanding of genome editing mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "aacf2f0b-0d8d-46bf-9412-70a87e10ba68",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C3",
+      "claim": "Modification of 5' ends of long dsDNA donors strongly enhances HDR in Medaka.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Medaka we show that the modification of 5' ends of long dsDNA donors strongly enhances HDR, favors efficient single-copy integration by retaining a monomeric donor conformation thus facilitating successful gene replacement or tagging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data presented in the manuscript including Southern blots and PCR genotyping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "751ce99a-39f8-4b74-be5a-38dc78bf946d",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C4",
+      "claim": "5' modification of long dsDNA donors favors efficient single-copy integration by retaining a monomeric donor conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Medaka we show that the modification of 5' ends of long dsDNA donors strongly enhances HDR, favors efficient single-copy integration by retaining a monomeric donor conformation thus facilitating successful gene replacement or tagging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Southern blot data showing monomeric state of modified donors and PCR genotyping showing single-copy integration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "faa4886e-2300-422d-8306-328863c78478",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C5",
+      "claim": "The implementation of the bacterial CRISPR/Cas9 system in eukaryotes has triggered a quantum leap in targeted genome editing in literally any organism with a sequenced genome or targeting region.",
+      "claim_type": "EXPLICIT",
+      "source": "The implementation of the bacterial CRISPR/Cas9 system in eukaryotes has triggered a quantum leap in targeted genome editing in literally any organism with a sequenced genome or targeting region (Cong et al., 2013; Jinek et al., 2012; Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to foundational CRISPR/Cas9 papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "08a6984e-eeb5-4a94-ad36-047d0889e1f9",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C6",
+      "claim": "Site-specific double-strand breaks (DSBs) are catalyzed by the Cas9 enzyme guided by a single RNA with a short complementary region to the target site.",
+      "claim_type": "EXPLICIT",
+      "source": "Site-specific double-strand breaks (DSBs) are catalyzed by the Cas9 enzyme guided by a single RNA with a short complementary region to the target site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of CRISPR/Cas9 action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "1fefd357-01e3-4d22-9574-22606d6b94ca",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C7",
+      "claim": "The endogenous non-homologous end joining (NHEJ) DNA repair machinery seals the DSB in response to Cas9-induced breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In response, the endogenous non-homologous end joining (NHEJ) DNA repair machinery seals the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established cellular response to double-strand breaks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "ea2b6d80-c492-4bcb-b341-68eee9a54d37",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C8",
+      "claim": "Perfect repair will restore the CRISPR/Cas9 target site.",
+      "claim_type": "EXPLICIT",
+      "source": "Since perfect repair will restore the CRISPR/Cas9 target site, mutations introduced by imprecise NHEJ are selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the repair mechanism and target site recognition.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "4888a509-1055-4ad3-8971-e6cf7e956bfa",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C9",
+      "claim": "Mutations introduced by imprecise NHEJ are selected for.",
+      "claim_type": "EXPLICIT",
+      "source": "Since perfect repair will restore the CRISPR/Cas9 target site, mutations introduced by imprecise NHEJ are selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism where perfect repair restores the target site, allowing repeated cutting.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "26214838-a09f-4403-bdad-a82562483034",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C10",
+      "claim": "HDR is preferentially active during the late S/G2 phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "To acquire precise genome editing the initial DSB should be fixed via the homology-directed repair (HDR) mechanism which is preferentially active during the late S/G2 phase of the cell cycle (Hustedt and Durocher, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hustedt and Durocher, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c692f3db-9c94-4d9b-8199-2712ced5f29e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C11",
+      "claim": "Donor DNA templates with flanking regions homologous to the target locus are used to introduce specific mutations or particular DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Donor DNA templates with flanking regions homologous to the target locus are used to introduce specific mutations or particular DNA sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard approach for HDR-mediated genome editing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "6258bfcd-bd68-4eef-b726-8d939d91a914",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C12",
+      "claim": "Injected (linear) dsDNA rapidly multimerizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Injected (linear) dsDNA rapidly multimerizes (Winkler et al., 1991), which likely also happens in CRISPR/Cas9 based approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Winkler et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "3057f2ad-c312-4ede-a2d4-8f6bb23dd294",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C13",
+      "claim": "Multimerization of injected linear dsDNA likely also happens in CRISPR/Cas9 based approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Injected (linear) dsDNA rapidly multimerizes (Winkler et al., 1991), which likely also happens in CRISPR/Cas9 based approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited behavior of injected DNA.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "fa4c9e7c-be2e-4979-8a92-5223d61b1e4f",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C14",
+      "claim": "The high activity of NHEJ re-ligating CRISPR/Cas9 mediated DSBs can multimerize injected (linear) dsDNA donor templates.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the high activity of NHEJ re-ligating CRISPR/Cas9 mediated DSBs can multimerize injected (linear) dsDNA donor templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known activity of NHEJ and its potential to ligate DNA ends.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "0316f6c8-65c7-43f9-8d2c-aa8df3322da0",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C15",
+      "claim": "Precise HDR-mediated recombination of single-copy donor templates is rather rare.",
+      "claim_type": "EXPLICIT",
+      "source": "This poses a problem since consequently, the precise HDR-mediated recombination of single-copy donor templates is rather rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the multimerization problem described in the preceding sentences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "82d3f523-26ab-4d0a-b0dc-23e64457eaac",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C16",
+      "claim": "NHEJ was interfered with by pharmacological inhibition of DNA ligase IV.",
+      "claim_type": "EXPLICIT",
+      "source": "NHEJ was interfered with by pharmacological inhibition of DNA ligase IV (Maruyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maruyama et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "21d39138-f283-4f76-8333-9457a21eac5e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C17",
+      "claim": "HDR was meant to be favored by fusing the HDR-mediating yeast protein Rad52 to Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, HDR was meant to be favored by fusing the HDR-mediating yeast protein Rad52 to Cas9 (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "e628f5aa-524a-4f12-af76-74e0d9d56bb9",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C18",
+      "claim": "Removal of Cas9 in the G1/S phase by linking it to the N-terminal region of the DNA replication inhibitor Geminin should restrict the introduction of double-strand cuts to the G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, removal of Cas9 in the G1/S phase (Gutschner et al., 2016) by linking it to the N-terminal region of the DNA replication inhibitor Geminin, should restrict the introduction of double-strand cuts to the G2 phase, when HDR is most prominently occurring (Hustedt and Durocher, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gutschner et al., 2016 and Hustedt and Durocher, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a26149f4-f227-40e2-9233-b64603b11198",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C19",
+      "claim": "HDR is most prominently occurring in the G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, removal of Cas9 in the G1/S phase (Gutschner et al., 2016) by linking it to the N-terminal region of the DNA replication inhibitor Geminin, should restrict the introduction of double-strand cuts to the G2 phase, when HDR is most prominently occurring (Hustedt and Durocher, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hustedt and Durocher, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a5e9c800-e2ff-4551-9fb4-9e698b8c3aa1",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C20",
+      "claim": "Previous approaches improved HDR-mediated integration of the homology flanks, while they did not tackle reported integration of multimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Those approaches improved HDR-mediated integration of the homology flanks, while they did not tackle reported integration of multimers (Auer et al., 2014) arising after injection of dsDNA templates such as plasmids or PCR products (Winkler et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Auer et al., 2014 and Winkler et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "aa2dada4-12ed-40ed-a0ce-281b13e59da6",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C21",
+      "claim": "Integration of multimers arises after injection of dsDNA templates such as plasmids or PCR products.",
+      "claim_type": "EXPLICIT",
+      "source": "Those approaches improved HDR-mediated integration of the homology flanks, while they did not tackle reported integration of multimers (Auer et al., 2014) arising after injection of dsDNA templates such as plasmids or PCR products (Winkler et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Auer et al., 2014 and Winkler et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "58d6e1cc-eb22-4c1b-a12f-a047db16c3e3",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C22",
+      "claim": "Blocking both 5\u00b4ends of PCR amplified long dsDNA donor cassettes using 'bulky' moieties like Biotin, Amino-dT and carbon spacers should shield the DNA donor from multimerization and integration via NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus blocked both 5\u00b4ends of PCR amplified long dsDNA donor cassettes using 'bulky' moieties like Biotin, Amino-dT (A-dT) and carbon spacers (e. g. Spacer C3, SpC3). This should shield the DNA donor from multimerization and integration via NHEJ, thus favoring precise and efficient single-copy integration via HDR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the hypothesis being tested in the study, with supporting data shown in Figure 1A.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "07c6192b-bd3e-4363-857e-4bd65b5525e8",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C23",
+      "claim": "5' modification with bulky moieties should favor precise and efficient single-copy integration via HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus blocked both 5\u00b4ends of PCR amplified long dsDNA donor cassettes using 'bulky' moieties like Biotin, Amino-dT (A-dT) and carbon spacers (e. g. Spacer C3, SpC3). This should shield the DNA donor from multimerization and integration via NHEJ, thus favoring precise and efficient single-copy integration via HDR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the hypothesis being tested, with experimental validation shown in subsequent figures.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "77fdcddc-3c7e-42f3-83f6-97be12c3cb21",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C25",
+      "claim": "dsDNA donors established by A-dT modified primers multimerized and produced similar results as unmodified DIG-labelled dsDNA donors.",
+      "claim_type": "EXPLICIT",
+      "source": "dsDNA donors established by A-dT modified primes, however, multimerized and produced similar results as unmodified DIG-labelled dsDNA donors (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Southern blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "7656249c-7006-4b12-8473-9639a2bf8b59",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C26",
+      "claim": "In unmodified DIG-labelled control donors, multimerization was uncovered already at 2 hr post-injection as evident by a ladder of labeled donor DNA representing different copy number multimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In unmodified DIG-labelled control donors, we uncovered multimerization already at 2 hr post-injection as evident by a ladder of labeled donor DNA representing different copy number multimers (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the Southern blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b693dd70-228f-432c-bcf5-5dcf49b65cba",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C27",
+      "claim": "Biotin and SpC3 modification of DIG-labelled donors prevented multimerization within six hours post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Biotin and SpC3 modification of DIG-labelled donors prevented multimerization within six hours post-injection (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the Southern blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b21af53c-53cd-4e43-8f0d-5eb3477cc77a",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C28",
+      "claim": "The 5' modification of dsDNA did not apparently enhance the stability of the resulting dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While strongly blocking multimerization, the 5' modification of dsDNA did not apparently enhance the stability of the resulting dsDNA (compare modified and unmodified donors over time, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the signal intensity over time in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c0f860b3-4628-46ec-8c31-2aaf42b8bfb2",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C29",
+      "claim": "For all four loci tested, efficient targeting was observed as apparent by the GFP expression within the expected expression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "For all four loci (and all 5' modifications) tested we observed efficient targeting as apparent by the GFP expression within the expected expression domain (Figure 2A, Supplementary file 1, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GFP expression data shown in Figure 2A and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b3cbbcda-ee15-4b68-81ea-da12cb999e90",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C30",
+      "claim": "The survival rates of embryos injected with Biotin and SpC3 5' modified dsDNA donors did not differ significantly from embryos injected with the unmodified dsDNA control donors.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival rates of embryos injected with Biotin and SpC3 5' modified dsDNA donors did not differ significantly from embryos injected with the unmodified dsDNA control donors (Supplementary file 1, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival data shown in Supplementary file 1 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "1336842e-31ee-425a-92a7-dc9cf57d6c88",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C31",
+      "claim": "The injection of the A-dT 5' modified dsDNA donors resulted in high embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the injection of the A-dT 5' modified dsDNA donors resulted in high embryonic lethality (Supplementary file 1, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival data shown in Supplementary file 1 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "2faa5115-50d4-4ba1-93d0-69695ac0c5fc",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C32",
+      "claim": "Employing unmodified donors, the rate of HDR was very low as evidenced by the predominant amplification of the alleles without gfp integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing unmodified donors, the rate of HDR was very low as evidenced by the predominant amplification of the alleles without gfp integration (Figure 2B, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCR genotyping data shown in Figure 2B and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "35c0b137-810e-45d2-9e06-249f7e737a8e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C33",
+      "claim": "The 5' modified long dsDNA donors resulted in efficient HDR already detectable in the injected generation for all targeted loci.",
+      "claim_type": "EXPLICIT",
+      "source": "In strong contrast, the 5' modified long dsDNA donors resulted in efficient HDR already detectable in the injected generation for all targeted loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCR genotyping and sequencing data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b3ba7500-713e-4771-842d-7c65e36c3025",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C34",
+      "claim": "For the gfp tagging of rx2, 6 out of 10 randomly selected, GFP-expressing embryos showed precise HDR-mediated single-copy integration in F0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the gfp tagging of rx2, 6 out of 10 randomly selected, GFP-expressing embryos showed precise HDR-mediated single-copy integration in F0 (Figure 2\u2014figure supplement 2) as sequence confirmed by the analysis of the locus (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCR genotyping and sequencing data shown in Figure 2\u2014figure supplement 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "f6c8c460-b6f5-4665-88bf-e1cd844f6036",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C35",
+      "claim": "9.5% of injected and surviving zygotes showed precise HDR-mediated single-copy integration for rx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 9.5% of injected and surviving zygotes showed precise HDR-mediated single-copy integration (15.8% of the injected zygotes expressed GFP; 60% of those showed the precise single-copy integration; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the experimental data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "6e03c26e-5d55-481a-9ab1-82f50fa43b56",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C36",
+      "claim": "For the gfp tagging of actb, 46.5% of the injected zygotes expressed GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "For the gfp tagging of actb 46.5% of the injected zygotes expressed GFP, 35% of which (7 out of 20 randomly selected, GFP-expressing embryos) showed precise HDR-mediated single-copy integration in F0, accounting for 16.3% of the initially injected zygotes (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from experimental data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a08be72a-a4f5-464b-ab88-6056ab6d2f12",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C37",
+      "claim": "For actb, 35% of GFP-expressing embryos showed precise HDR-mediated single-copy integration in F0, accounting for 16.3% of the initially injected zygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the gfp tagging of actb 46.5% of the injected zygotes expressed GFP, 35% of which (7 out of 20 randomly selected, GFP-expressing embryos) showed precise HDR-mediated single-copy integration in F0, accounting for 16.3% of the initially injected zygotes (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from experimental data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "8754990f-ec0e-460f-9c44-22e219ce208d",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C38",
+      "claim": "In the case of dnmt1, all GFP-expressing embryos showed the desired perfect integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of dnmt1, the rate of precise HDR-mediated single-copy integration was even higher, since full gene functionality is required for the progression of development and embryonic survival. Here, strikingly, all GFP-expressing embryo showed the desired perfect integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PCR genotyping data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "0d138bb6-d3e6-4a63-a59c-802f34ea3e37",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C39",
+      "claim": "For dnmt1, full gene functionality is required for the progression of development and embryonic survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of dnmt1, the rate of precise HDR-mediated single-copy integration was even higher, since full gene functionality is required for the progression of development and embryonic survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that all GFP-expressing embryos showed perfect integration, suggesting selection for functional alleles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "0b69b441-fb79-4db5-8379-313d4ede6348",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C40",
+      "claim": "The highest efficiency of HDR targeting by 5' modified dsDNA for all loci tested was observed for 5'Biotin modified donors.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the highest efficiency of HDR targeting by 5' modified dsDNA for all loci tested for 5'Biotin modified donors (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparative PCR genotyping data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "681d4f87-9d2b-44f5-8e63-2a3f69ecd8f4",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C41",
+      "claim": "SpC3 5' modified dsDNA donors resulted in elevated levels of additional bands indicative for the integration of higher order multimers and NHEJ events.",
+      "claim_type": "EXPLICIT",
+      "source": "While still giving rise to a high percentage of HDR events, SpC3 5' modified dsDNA donors also resulted in elevated levels of additional bands indicative for the integration of higher order multimers and NHEJ events (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the PCR genotyping data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "db7e6736-002b-4033-bdab-0715f4d28a61",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C42",
+      "claim": "The use of RNPs (Cas9 protein and respective sgRNA) did not get close to the efficiency achieved by co-injection of Cas9 mRNA and the corresponding sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though increasingly popular, in our hands the use of RNPs (Cas9 protein and respective sgRNA) did not even get close to the efficiency achieved by co-injection of Cas9 mRNA and the corresponding sgRNA assessed by gene targeting as described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experimental observations comparing the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "f8ecc773-bd65-487a-abf2-e171da1194d8",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C43",
+      "claim": "The precise integration detected in the injected generation was successfully transmitted to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise integration detected in the injected generation was successfully transmitted to the next generation (Figure 3, Figure 2\u2014figure supplement 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genotyping and sequencing data from F1 and F2 generations shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b3d84ab6-2723-4fe8-8283-578bbce65d3b",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C44",
+      "claim": "For gfp-rx2, 9% of fish originating from the initially injected embryos successfully transmitted the precisely modified locus to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "For gfp-rx2, 9% of fish originating from the initially injected embryos successfully transmitted the precisely modified locus to the next generation (15.8% of the injected embryos expressed GFP; 4 out of 7 GFP transmitting founder fish were also transmitting the precise single integration of the gfp donor cassette).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "da0f9742-c215-47cf-8dd4-f22841288529",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C45",
+      "claim": "For gfp-rx1, 3.9% of fish originating from the initially injected embryos were transmitting the precise single copy integrate to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "For gfp-rx1, 3.9% of fish originating from the initially injected embryos were transmitting the precise single copy integrate to the next generation (13.5% of injected embryos expressed GFP; 2 out of 7 GFP transmitting founder fish were also transmitting the precise single integration of the gfp-rx1 donor cassette).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "7b34a2c6-e0a3-43bf-82b9-01c5ad0a6470",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C46",
+      "claim": "For dnmt1, the high rate of precise HDR-mediated single-copy integration observed in the injected generation was fully maintained in the transmission to the next generation due to the absolute requirement of a functional/functionally tagged version of the locus.",
+      "claim_type": "EXPLICIT",
+      "source": "For dnmt1, the high rate of precise HDR-mediated single-copy integration observed in the injected generation was fully maintained in the transmission to the next generation due to the absolute requirement of a functional/functionally tagged version of the locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the essential nature of dnmt1 and the observation of consistent perfect integration.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "9971559f-b5e1-4548-b550-c751014b7e2b",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C47",
+      "claim": "The precise integration of the gfp donor cassette into the actb locus results in late embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "As we found in the course of our study, the precise integration of the gfp donor cassette into the actb locus results in late embryonic lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "76f354e6-b935-442b-a646-2ad8d5bb9a22",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C48",
+      "claim": "Stable transgenic lines for actb could not be established due to late embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "As we found in the course of our study, the precise integration of the gfp donor cassette into the actb locus results in late embryonic lethality. Consequently, stable transgenic lines could not be established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct consequence of the observed lethality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "3059ff40-631c-41da-b617-daae01aa3493",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C49",
+      "claim": "For gfp-rx2, the germline transmission rate ranged from 0.8% up to 12.9% indicating an HDR event earliest at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "For gfp-rx2, this rate ranged from 0.8% up to 12.9% indicating an HDR event earliest at the 4-cell stage (assuming that only a single event occurred per blastomere).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the germline transmission rates observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a866c852-7a65-4b01-8831-a975800c2110",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C50",
+      "claim": "For gfp-rx1, HDR did not occur at the one-cell stage but rather later (2\u20138 cell stage as reflected by germline transmission rates of 23.9% and 5.8% respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of gfp-rx1, HDR did not occur at the one-cell stage but rather later (2\u20138 cell stage as reflected by germline transmission rates of 23.9% and 5.8% respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the germline transmission rates observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "196ed4bf-bffe-405e-b10b-f80d7dec8dd1",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C51",
+      "claim": "For both rx2 and rx1, the transmission rates of the perfectly tagged locus reflect a level of mosaicism indicative for an HDR event between the 4- and 32-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for both cases, the transmission rates of the perfectly tagged locus reflect a level of mosaicism indicative for an HDR event between the 4- and 32-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the germline transmission data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "12eb3ea8-e7da-4bba-8e23-513360bfe26f",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C52",
+      "claim": "Southern Blot analysis of F2 gfp-rx2 embryos reveals a single band for digestion schemes, indicating precise single-copy donor integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Southern Blot analysis of F2 gfp-rx2 embryos reveals a single band for a digestion scheme cutting outside the donor cassette (BglII/HindIII) or within the 5' donor cassette and in intron 2 (ScaI/HindIII) indicating precise single-copy donor integration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the Southern blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "bd58d381-7db0-4576-a74d-3c19c9c58aea",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C53",
+      "claim": "Southern Blot analysis of F2 gfp-rx1 embryos reveals a single band for digestion schemes, indicating precise single-copy donor integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Southern Blot analysis of F2 gfp-rx1 embryos reveals a single band for a digestion scheme cutting outside the donor cassette and within the 3' donor cassette (HindIII/XmaI) or within the 5' donor cassette and in intron 1 (NcoI/EcoRI) indicating precise single-copy donor integration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the Southern blot data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "18975de8-dafd-4a7b-97fc-a496871f4fe1",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C54",
+      "claim": "Transcript analysis in gfp-rx2 homozygous F3 embryos exclusively uncovered a single fusion gfp-rx2 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transcript analysis in gfp-rx2 homozygous F3 embryos exclusively uncovered a single fusion gfp-rx2 transcript (Figure 3C and C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "00a7ed19-a0d8-4d2e-a8b9-4863a599375e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C55",
+      "claim": "The simple 5'Biotin modification at both ends of long dsDNA donors by conventional PCR amplification provides the means to favor HDR without interfering with the cellular DNA repair machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together the simple 5'Biotin modification at both ends of long dsDNA donors by conventional PCR amplification presented here provides the means to favor HDR without interfering with the cellular DNA repair machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "ca4368b1-a586-4a6d-9df6-5d0ddee88aaf",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C56",
+      "claim": "For efficient recombination the quality of the modified primers, that is the fraction of primers actually labeled with biotin and therefore the quality of the 5' protected long ds DNA PCR product, is essential.",
+      "claim_type": "EXPLICIT",
+      "source": "For efficient recombination the quality of the modified primers, that is the fraction of primers actually labeled with biotin and therefore the quality of the 5' protected long ds DNA PCR product, is essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and understanding of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "4c516894-7eb2-44f0-b54e-1593a32a192d",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C57",
+      "claim": "The integration of 5' modified PCR fragments larger than 2 kb does in principle not pose a problem.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of 5' modified PCR fragments larger than 2 kb does in principle not pose a problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' experience with larger cassettes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "01d3a187-8dc0-4366-aeea-29e3560223fc",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C58",
+      "claim": "Cassettes of up to 8.6 kb have been successfully integrated via HDR by in vivo linearization of the donor plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "We already successfully integrated cassettes of up to 8.6 kb (data not shown) via HDR by in vivo linearization of the donor plasmid (Stemmer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on unpublished data from the authors and a citation to Stemmer et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "180f62c2-59a3-4509-b272-2dd7020b778d",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C59",
+      "claim": "The quality of the end-protected PCR product is likely to drop with higher length in part due to the (UV\u2013) nicking in the extraction and purification process.",
+      "claim_type": "EXPLICIT",
+      "source": "In the approach presented here, the quality of the end-protected PCR product is likely to drop with higher length in part due to the (UV\u2013) nicking in the extraction and purification process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known properties of DNA handling.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c05dba93-7247-43bd-9659-8c92042a4481",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C60",
+      "claim": "The PCR cycles used to probe for the successful single integration via HDR must not exceed a total of 30 to avoid misleading in vitro fusion-PCR artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the donor cassette size, the PCR cycles used to probe for the successful single integration via HDR must not exceed a total of 30 to avoid misleading in vitro fusion-PCR artifacts (own data and [Won and Dawid, 2017]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' own observations and a citation to Won and Dawid, 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c360d766-0345-4881-94a7-8d7f909c9320",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C61",
+      "claim": "There is no apparent G2 phase before mid-blastula-transition in amphibia (Xenopus) and fish (Danio rerio) with the marked exception of the first cleavage, where a G2 phase has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported extensively, there is no apparent G2 phase before mid-blastula-transition in amphibia (Xenopus) and fish (Danio rerio) with the marked exception of the first cleavage, where a G2 phase has been reported (Kimelman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kimelman, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c7ff15a7-8448-4389-9481-10b8026a11e7",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C62",
+      "claim": "The germline transmission rates obtained for the tagging of Rx1 and Rx2 indicated HDR events after the two-cell stage, predominantly at the 4-cell and subsequent stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The germline transmission rates obtained for the tagging of Rx1 and Rx2 indicated HDR events after the two-cell stage, predominantly at the 4-cell and subsequent stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the germline transmission data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "235b3693-0eed-4286-a4b7-a68faf264588",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C63",
+      "claim": "The slower cycling of medaka compared to zebrafish results in an extension of the G2 phase in the first cell cycle by more than 150%.",
+      "claim_type": "EXPLICIT",
+      "source": "The slower cycling of medaka compared to zebrafish results in an extension of the G2 phase in the first cell cycle by more than 150% (total cycle zebrafish: 45 min [Kimmel et al., 1995], medaka: 65 min [Iwamatsu, 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from cited data on cell cycle timing in zebrafish and medaka.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "113207f3-8746-4d68-8e1a-a7cdf8677192",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C64",
+      "claim": "The total cell cycle in zebrafish is 45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The slower cycling of medaka compared to zebrafish results in an extension of the G2 phase in the first cell cycle by more than 150% (total cycle zebrafish: 45 min [Kimmel et al., 1995], medaka: 65 min [Iwamatsu, 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kimmel et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "ac585225-7db3-4390-a7ea-d04a169b2319",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C65",
+      "claim": "The total cell cycle in medaka is 65 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The slower cycling of medaka compared to zebrafish results in an extension of the G2 phase in the first cell cycle by more than 150% (total cycle zebrafish: 45 min [Kimmel et al., 1995], medaka: 65 min [Iwamatsu, 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Iwamatsu, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "e8460ce6-3a9f-4aba-8e0f-3e39cb5125f8",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C66",
+      "claim": "Subsequent cell cycles in medaka are 40 min compared to 15 min in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "This extended cell cycle length is in particular apparent also in the subsequent cycles in medaka (15 min zebrafish [Kimmel et al., 1995], 40 min medaka [Iwamatsu, 2004]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kimmel et al., 1995 and Iwamatsu, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c4d38631-4fef-44cb-b961-8ce062937c99",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C67",
+      "claim": "Phosphorylation of RNA polymerase, a prerequisite for the expression of the first zygotic transcripts, has been reported to start at the 64-cell stage in medaka.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phosphorylation of RNA polymerase, a prerequisite for the expression of the first zygotic transcripts has been reported to start at the 64cell stage in medaka (Kraeussling et al., 2011) and asynchronous divisions, a hallmark of MBT, are observed already at the transition of the 16- to 32-cell stage (Kraeussling et al., 2011), suggesting species-specific differences in the onset of zygotic transcription and consequently the lengthening of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraeussling et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c39dc19f-64a5-4020-8eb3-b521742cccbc",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C68",
+      "claim": "Asynchronous divisions, a hallmark of MBT, are observed already at the transition of the 16- to 32-cell stage in medaka.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phosphorylation of RNA polymerase, a prerequisite for the expression of the first zygotic transcripts has been reported to start at the 64cell stage in medaka (Kraeussling et al., 2011) and asynchronous divisions, a hallmark of MBT, are observed already at the transition of the 16- to 32-cell stage (Kraeussling et al., 2011), suggesting species-specific differences in the onset of zygotic transcription and consequently the lengthening of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kraeussling et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "6eafdd3c-e80f-4cf0-a337-8ad32fce7514",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C69",
+      "claim": "There are species-specific differences in the onset of zygotic transcription and consequently the lengthening of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, phosphorylation of RNA polymerase, a prerequisite for the expression of the first zygotic transcripts has been reported to start at the 64cell stage in medaka (Kraeussling et al., 2011) and asynchronous divisions, a hallmark of MBT, are observed already at the transition of the 16- to 32-cell stage (Kraeussling et al., 2011), suggesting species-specific differences in the onset of zygotic transcription and consequently the lengthening of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited observations about medaka development.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "9e4694bb-7961-4b3b-9705-29924dd45308",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C70",
+      "claim": "The approach facilitates the highly efficient detection of HDR events by GFP tagging even in non-essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach facilitates the highly efficient detection of HDR events by GFP tagging even in non-essential genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results for rx2, rx1, and actb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "8f73ed1c-131a-44ec-8148-d39b890e5681",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C71",
+      "claim": "The locus-specific expression of GFP is an excellent predictor for precise, single-copy HDR-mediated integration already in the injected generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than in non-modified dsDNA donors, the locus-specific expression of GFP is an excellent predictor for precise, single-copy HDR-mediated integration already in the injected generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the high correlation between GFP expression and confirmed HDR events shown in the genotyping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "0f5df43b-fb55-49d0-b963-db529ab74ca9",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C72",
+      "claim": "HDR rates in GFP positive embryos can be up to 60% in the injected generation.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows an easy selection and results in HDR rates in GFP positive embryos of up to 60% in the injected generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data for rx2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "2351c99c-c26f-4baa-8fbd-2a7bfafbeed8",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C73",
+      "claim": "HDR rates can be even higher in essential loci, such as dnmt1, where the full functionality of the (modified) gene under investigation is required for the survival of the affected cells, tissues, organs or organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate can even be higher in essential loci, such as dnmt1, where the full functionality of the (modified) gene under investigation is required for the survival of the affected cells, tissues, organs or organisms, thus providing the means for effective positive selection for single, fully functional integrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the 100% HDR rate in GFP-positive dnmt1 embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b742fa39-cb5b-4ad6-a27d-b6ebfaaf52ca",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C74",
+      "claim": "Approximately 400 bp flanking the insertion site in 5' and 3' direction are sufficient for HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that approximately 400 bp flanking the insertion site in 5' and 3' direction are sufficient for HDR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the successful HDR with homology flanks of approximately 400 bp used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "0b2ea4fa-150f-4560-9d90-79b066590990",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C75",
+      "claim": "The use of modified universal primers for the two donor template vectors employed allowed a flexible application of the procedure and ensured a high quality of the PCR generated 5' modified long dsDNA donors.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of modified universal primers for the two donor template vectors employed allowed a flexible application of the procedure and ensured a high quality of the PCR generated 5' modified long dsDNA donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the successful application of the method across multiple loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "14bd886d-7573-477a-a0e9-074956b4c255",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C76",
+      "claim": "The primer-introduced non-homology regions in the very periphery of the long dsDNA donors did not negatively impact on the HDR efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the primer-introduced non-homology regions in the very periphery of the long dsDNA donors did not negatively impact on the HDR efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the high HDR efficiency despite the presence of vector backbone sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "437da436-b98c-4194-8365-9ee5e4294b5c",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C77",
+      "claim": "The simplicity and high reproducibility of the proof-of-concept analysis highlight that the presented protection of both 5' ends of long dsDNA donors prevent multimerization and promote precise insertion/replacement of DNA elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the simplicity and high reproducibility of our proof-of-concept analysis highlight that the presented protection of both 5' ends of long dsDNA donors prevent multimerization and promote precise insertion/replacement of DNA elements, thus facilitating functional studies in basic research as well as therapeutic interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the overall conclusion drawn from all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "b1fd7ba0-54e6-4074-831b-2cb545268d52",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "claim_id": "C78",
+      "claim": "The presented approach facilitates functional studies in basic research as well as therapeutic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the simplicity and high reproducibility of our proof-of-concept analysis highlight that the presented protection of both 5' ends of long dsDNA donors prevent multimerization and promote precise insertion/replacement of DNA elements, thus facilitating functional studies in basic research as well as therapeutic interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b553b748-a587-4a6e-a169-a42a404f2846",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "5' modification with Biotin or SpC3 prevents multimerization of injected dsDNA donors in vivo, while Amino-dT modification does not. Southern blot analysis of DIG-labeled donors injected into medaka embryos showed that unmodified and Amino-dT modified donors formed multimers within 2 hours post-injection, whereas Biotin and SpC3 modifications prevented multimerization for up to 6 hours. The 5' modifications did not enhance DNA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are directly supported by Southern blot data in Figure 1B showing clear differences in multimerization patterns between modified and unmodified donors. The ladder pattern for unmodified/Amino-dT donors versus single bands for Biotin/SpC3 donors provides strong visual evidence. The time-course analysis (2, 4, 6 hours) and signal intensity comparisons adequately support the stability claim (C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "6fef21dc-efca-4135-88bd-72ccb20cf28b",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Modified dsDNA donors enable efficient GFP expression at target loci with differential effects on embryo survival. All four tested loci (rx2, rx1, actb, dnmt1) showed GFP expression in expected domains with Biotin, Amino-dT, and SpC3 modifications. Biotin and SpC3 modifications did not significantly affect survival compared to unmodified controls, but Amino-dT modification caused high embryonic lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by GFP expression data (Figure 2A) and survival data (Supplementary file 1, Figure 2\u2014figure supplement 1). The observation of locus-specific GFP expression across all four genes with multiple modification types is well-documented. The differential toxicity of Amino-dT is clearly demonstrated, though the mechanism is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "5' modified dsDNA donors dramatically increase HDR efficiency compared to unmodified donors, with Biotin modification showing the highest efficiency. Unmodified donors showed very low HDR rates with predominant amplification of wild-type alleles. In contrast, 5' Biotin modified donors achieved 60% HDR rate in GFP-positive rx2 embryos (9.5% of total injected), 35% in actb embryos (16.3% of total), and 100% in dnmt1 embryos. Biotin modification outperformed SpC3 across all loci tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38, C40 are well-supported by PCR genotyping data (Figure 2B, Figure 2\u2014figure supplements 2-3) and sequencing confirmation. The quantitative data showing specific percentages of HDR events are calculated from experimental observations. The comparison between modification types is directly shown in Figure 2\u2014figure supplement 2. However, the sample sizes for some loci are relatively small (e.g., 10 embryos for rx2), which could affect precision of the reported percentages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "03dca852-190e-4e23-be3f-e156eff24d1a",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Essential genes provide positive selection for precise HDR integration. For dnmt1, full gene functionality is required for development and survival, resulting in 100% HDR rate among GFP-expressing embryos. This demonstrates that essential loci can achieve even higher HDR rates than non-essential genes through functional selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C73 are supported by the observation that all GFP-positive dnmt1 embryos showed perfect integration (C38). The inference that this is due to selection for functional alleles is logical and consistent with the essential nature of dnmt1. However, this remains somewhat inferential as direct functional assays were not performed to confirm that imperfect integrations are lethal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "88a0111c-bd6d-44b5-89d4-4f1afe61531a",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SpC3 5' modified donors show elevated levels of multimer and NHEJ integration events compared to Biotin modification. While SpC3 modification still produces high percentages of HDR events, PCR genotyping revealed additional bands indicative of higher-order multimers and NHEJ events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by PCR genotyping data in Figure 2\u2014figure supplement 2 showing additional bands in SpC3 samples. This is consistent with the Southern blot data (Figure 1B) showing that SpC3 is less effective than Biotin at preventing multimerization. The interpretation of additional bands as multimers/NHEJ events is reasonable based on their size.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "8f25aec4-f591-42af-884f-16c41ec9c9bd",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNP-based delivery (Cas9 protein + sgRNA) was less efficient than mRNA-based delivery (Cas9 mRNA + sgRNA) for gene targeting in the authors' hands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 lacks supporting data in the manuscript. No figures, quantitative comparisons, or experimental details are provided to substantiate this claim. The statement 'in our hands' suggests this is based on unpublished observations, making it impossible to evaluate the rigor of the comparison or whether appropriate controls were used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "acb91cb8-184e-4c6d-b95b-3a82630a87cb",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Precise HDR integrations are successfully transmitted through the germline to subsequent generations. For gfp-rx2, 9% of founder fish transmitted the precise modification (4/7 GFP-transmitting founders); for gfp-rx1, 3.9% transmitted (2/7 founders); for dnmt1, the high F0 HDR rate was fully maintained in germline transmission due to functional selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by genotyping and sequencing data from F1 and F2 generations (Figure 3, Figure 2\u2014figure supplement 3, Figure 3\u2014figure supplement 1). The germline transmission data are clearly documented with specific numbers of founder fish and transmission rates. The maintenance of high HDR rates for dnmt1 is consistent with the selection hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "14ea8ff7-a867-49a6-a39a-ca5dcda1ea9d",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Precise integration of the gfp donor cassette into the actb locus causes late embryonic lethality, preventing establishment of stable transgenic lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by the observation that despite successful F0 integration (16.3% of injected embryos), no stable lines could be established. The late embryonic lethality is stated as an observation made during the study. While the mechanism is not explored, the inability to establish lines despite successful F0 integration provides strong evidence for lethality of the modification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "1a20aed8-546f-4ed8-b071-d1788472b148",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HDR events occur predominantly between the 4-cell and 32-cell stages based on germline transmission rates. For gfp-rx2, transmission rates of 0.8-12.9% indicate HDR earliest at the 4-cell stage; for gfp-rx1, rates of 23.9% and 5.8% suggest HDR at 2-8 cell stages. The mosaicism patterns indicate HDR occurs after the two-cell stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C62 are supported by germline transmission data and represent reasonable inferences about the timing of HDR events based on Mendelian genetics. The calculation assumes single HDR events per blastomere, which is stated. However, this analysis does not account for potential multiple independent events or cell death, which could affect the interpretation. The conclusions are consistent with the data but involve assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "5de96d85-faba-4198-a985-4b78a43a88b7",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Southern blot and transcript analysis confirm precise single-copy integration in stable transgenic lines. F2 gfp-rx2 and gfp-rx1 embryos showed single bands in Southern blots with multiple restriction enzyme combinations, indicating single-copy integration. RT-PCR analysis of F3 gfp-rx2 homozygous embryos revealed exclusively a single fusion transcript.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are strongly supported by Southern blot data (Figure 3B, Figure 3\u2014figure supplement 1) and RT-PCR data (Figure 3C). The use of multiple restriction enzyme combinations that cut at different positions provides robust evidence for single-copy integration. The transcript analysis confirms functional expression of the fusion gene. This represents gold-standard validation of the integration events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a82942b9-f8ed-4b4d-8891-2ed1854f54fe",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GFP expression is an excellent predictor of precise HDR integration in the injected generation, enabling efficient screening. The approach facilitates highly efficient detection of HDR events even in non-essential genes, with HDR rates up to 60% in GFP-positive embryos for rx2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by the correlation between GFP expression and confirmed HDR events shown throughout the genotyping data. For rx2, 60% (6/10) of GFP-positive embryos showed precise integration; for actb, 35% (7/20). This represents a substantial improvement over unmodified donors where GFP expression poorly predicted HDR. The predictive value is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "6ddd6615-18ff-4b77-8a4a-2d0655a86457",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Approximately 400 bp homology flanks in both 5' and 3' directions are sufficient for efficient HDR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by the successful HDR observed across all four loci using homology flanks of 402-508 bp (as detailed in the donor designs). The consistent success across multiple genes with similar flank lengths provides evidence for sufficiency. However, no systematic comparison of different flank lengths was performed, so this represents an empirical observation rather than an optimized parameter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "13f2b7a0-3de0-4b4e-a889-663e8b45bf07",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Universal modified primers enable flexible application without compromising HDR efficiency. The use of modified universal primers for two donor template vectors allowed flexible application across multiple loci. Primer-introduced non-homology regions at the periphery of donors did not negatively impact HDR efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by the successful application of the same primer pairs across four different loci with consistently high HDR rates. The presence of vector backbone sequences (non-homologous regions) did not prevent efficient HDR, as demonstrated by the high success rates. This practical observation is valuable for method implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "ae35dc32-56c8-434e-af10-be917fdc879e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "5' modification of long dsDNA donors with Biotin strongly enhances HDR and favors single-copy integration by preventing multimerization. The modification shields donors from multimerization and NHEJ-mediated integration, promoting precise HDR without interfering with cellular DNA repair machinery. This simple PCR-based approach prevents multimerization and promotes precise insertion/replacement of DNA elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C22-C23, C55, C77 represent the central conclusions of the study and are well-supported by converging evidence: Southern blots showing prevention of multimerization (Figure 1B), PCR genotyping showing increased HDR rates (Figure 2B and supplements), sequencing confirmation of precise integration (Figure 2\u2014figure supplement 3), and Southern blot validation of single-copy integration in stable lines (Figure 3B). The mechanism (preventing multimerization) is directly demonstrated, and the outcome (enhanced HDR) is quantified across multiple loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "554cabb7-2f42-4696-bd8f-36b78cc78a74",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The quality of modified primers, specifically the fraction actually labeled with biotin, is essential for efficient recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is stated as important but no data are provided to demonstrate the impact of primer quality on HDR efficiency. No comparison of different primer batches or labeling efficiencies is shown. This appears to be a practical recommendation based on experience rather than a systematically tested variable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a97191e3-2823-4f19-ae00-07c7ad1c5e98",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Integration of 5' modified PCR fragments larger than 2 kb is feasible, with successful integration of cassettes up to 8.6 kb demonstrated using in vivo linearization of donor plasmids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is stated but not demonstrated in the manuscript (largest shown is ~2.5 kb for rx1). Claim C58 references unpublished data ('data not shown') and cites a different method (in vivo linearization) rather than the PCR-based approach being presented. Without the supporting data, these claims cannot be properly evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "adf02ca1-7381-4ff6-92af-344d6de7a79c",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The quality of end-protected PCR products likely decreases with increasing length due to UV-nicking during extraction and purification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 is speculative ('likely to drop') and not supported by experimental data. No systematic analysis of product quality versus length is provided. This represents a reasonable hypothesis based on known DNA handling issues, but remains untested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "7bfcd071-ec37-40f4-b1c9-1347f2c72ca6",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PCR cycles for detecting HDR integration must not exceed 30 cycles to avoid in vitro fusion-PCR artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by the authors' own observations and a citation to Won and Dawid, 2017. The manuscript consistently uses \u226430 cycles for genotyping PCR. This is an important methodological consideration for accurate detection of HDR events, as excessive cycles could generate false-positive fusion products in vitro.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Medaka has extended cell cycle timing compared to zebrafish, particularly in the G2 phase, which may contribute to HDR efficiency. The first cell cycle in medaka (65 min) is 44% longer than zebrafish (45 min), with subsequent cycles also extended (40 min vs 15 min). Species-specific differences in cell cycle regulation and zygotic transcription onset may affect HDR timing and efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63-C69 are supported by citations to published literature on cell cycle timing in medaka and zebrafish. The calculations of cell cycle extensions are correct based on the cited values. However, the connection between extended G2 phase and improved HDR efficiency is speculative and not directly tested. The discussion provides context for why medaka may be particularly suitable for this approach, but causality is not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "467cfef1-fcd1-483f-99a8-ef0da66a7175",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The presented approach facilitates functional studies in basic research and therapeutic interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is speculative regarding future applications. While the method clearly works in medaka for basic research applications (demonstrated throughout), no therapeutic applications are shown or tested. The potential for therapeutic use is reasonable given the improved precision, but this remains to be demonstrated in relevant systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    },
+    {
+      "id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74",
+      "content_id": "ca7ee927-4f1b-49b2-b4d0-9cf7a9e5b324",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background context on CRISPR/Cas9 genome editing, DNA repair mechanisms, and previous approaches to enhance HDR. CRISPR/Cas9 efficiently induces mutations via NHEJ, but precise HDR is required for genome editing. Previous approaches to enhance HDR included pharmacological inhibition of NHEJ, fusion of Rad52 to Cas9, and cell cycle-restricted Cas9 activity, but these did not address donor multimerization issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 represent established knowledge and cited prior work that provides context for the current study. These are appropriately supported by citations to relevant literature (Cong et al., Jinek et al., Mali et al., Hustedt and Durocher, Maruyama et al., Wang et al., Gutschner et al., Winkler et al., Auer et al.). The characterization of the problem (multimerization, low HDR rates) and previous solutions is accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:12:49.102619Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7656249c-7006-4b12-8473-9639a2bf8b59",
+      "result_id": "b553b748-a587-4a6e-a169-a42a404f2846"
+    },
+    {
+      "claim_id": "b693dd70-228f-432c-bcf5-5dcf49b65cba",
+      "result_id": "b553b748-a587-4a6e-a169-a42a404f2846"
+    },
+    {
+      "claim_id": "77fdcddc-3c7e-42f3-83f6-97be12c3cb21",
+      "result_id": "b553b748-a587-4a6e-a169-a42a404f2846"
+    },
+    {
+      "claim_id": "b21af53c-53cd-4e43-8f0d-5eb3477cc77a",
+      "result_id": "b553b748-a587-4a6e-a169-a42a404f2846"
+    },
+    {
+      "claim_id": "c0f860b3-4628-46ec-8c31-2aaf42b8bfb2",
+      "result_id": "6fef21dc-efca-4135-88bd-72ccb20cf28b"
+    },
+    {
+      "claim_id": "b3cbbcda-ee15-4b68-81ea-da12cb999e90",
+      "result_id": "6fef21dc-efca-4135-88bd-72ccb20cf28b"
+    },
+    {
+      "claim_id": "1336842e-31ee-425a-92a7-dc9cf57d6c88",
+      "result_id": "6fef21dc-efca-4135-88bd-72ccb20cf28b"
+    },
+    {
+      "claim_id": "2faa5115-50d4-4ba1-93d0-69695ac0c5fc",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "35c0b137-810e-45d2-9e06-249f7e737a8e",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "b3ba7500-713e-4771-842d-7c65e36c3025",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "f6c8c460-b6f5-4665-88bf-e1cd844f6036",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "6e03c26e-5d55-481a-9ab1-82f50fa43b56",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "a08be72a-a4f5-464b-ab88-6056ab6d2f12",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "8754990f-ec0e-460f-9c44-22e219ce208d",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "0b69b441-fb79-4db5-8379-313d4ede6348",
+      "result_id": "c6306ecb-bc60-4d33-a8a2-8d46e117900e"
+    },
+    {
+      "claim_id": "0d138bb6-d3e6-4a63-a59c-802f34ea3e37",
+      "result_id": "03dca852-190e-4e23-be3f-e156eff24d1a"
+    },
+    {
+      "claim_id": "2351c99c-c26f-4baa-8fbd-2a7bfafbeed8",
+      "result_id": "03dca852-190e-4e23-be3f-e156eff24d1a"
+    },
+    {
+      "claim_id": "681d4f87-9d2b-44f5-8e63-2a3f69ecd8f4",
+      "result_id": "88a0111c-bd6d-44b5-89d4-4f1afe61531a"
+    },
+    {
+      "claim_id": "db7e6736-002b-4033-bdab-0715f4d28a61",
+      "result_id": "8f25aec4-f591-42af-884f-16c41ec9c9bd"
+    },
+    {
+      "claim_id": "f8ecc773-bd65-487a-abf2-e171da1194d8",
+      "result_id": "acb91cb8-184e-4c6d-b95b-3a82630a87cb"
+    },
+    {
+      "claim_id": "b3d84ab6-2723-4fe8-8283-578bbce65d3b",
+      "result_id": "acb91cb8-184e-4c6d-b95b-3a82630a87cb"
+    },
+    {
+      "claim_id": "da0f9742-c215-47cf-8dd4-f22841288529",
+      "result_id": "acb91cb8-184e-4c6d-b95b-3a82630a87cb"
+    },
+    {
+      "claim_id": "7b34a2c6-e0a3-43bf-82b9-01c5ad0a6470",
+      "result_id": "acb91cb8-184e-4c6d-b95b-3a82630a87cb"
+    },
+    {
+      "claim_id": "9971559f-b5e1-4548-b550-c751014b7e2b",
+      "result_id": "14ea8ff7-a867-49a6-a39a-ca5dcda1ea9d"
+    },
+    {
+      "claim_id": "76f354e6-b935-442b-a646-2ad8d5bb9a22",
+      "result_id": "14ea8ff7-a867-49a6-a39a-ca5dcda1ea9d"
+    },
+    {
+      "claim_id": "3059ff40-631c-41da-b617-daae01aa3493",
+      "result_id": "1a20aed8-546f-4ed8-b071-d1788472b148"
+    },
+    {
+      "claim_id": "a866c852-7a65-4b01-8831-a975800c2110",
+      "result_id": "1a20aed8-546f-4ed8-b071-d1788472b148"
+    },
+    {
+      "claim_id": "196ed4bf-bffe-405e-b10b-f80d7dec8dd1",
+      "result_id": "1a20aed8-546f-4ed8-b071-d1788472b148"
+    },
+    {
+      "claim_id": "c7ff15a7-8448-4389-9481-10b8026a11e7",
+      "result_id": "1a20aed8-546f-4ed8-b071-d1788472b148"
+    },
+    {
+      "claim_id": "12eb3ea8-e7da-4bba-8e23-513360bfe26f",
+      "result_id": "5de96d85-faba-4198-a985-4b78a43a88b7"
+    },
+    {
+      "claim_id": "bd58d381-7db0-4576-a74d-3c19c9c58aea",
+      "result_id": "5de96d85-faba-4198-a985-4b78a43a88b7"
+    },
+    {
+      "claim_id": "18975de8-dafd-4a7b-97fc-a496871f4fe1",
+      "result_id": "5de96d85-faba-4198-a985-4b78a43a88b7"
+    },
+    {
+      "claim_id": "9e4694bb-7961-4b3b-9705-29924dd45308",
+      "result_id": "a82942b9-f8ed-4b4d-8891-2ed1854f54fe"
+    },
+    {
+      "claim_id": "8f73ed1c-131a-44ec-8148-d39b890e5681",
+      "result_id": "a82942b9-f8ed-4b4d-8891-2ed1854f54fe"
+    },
+    {
+      "claim_id": "0f5df43b-fb55-49d0-b963-db529ab74ca9",
+      "result_id": "a82942b9-f8ed-4b4d-8891-2ed1854f54fe"
+    },
+    {
+      "claim_id": "b742fa39-cb5b-4ad6-a27d-b6ebfaaf52ca",
+      "result_id": "6ddd6615-18ff-4b77-8a4a-2d0655a86457"
+    },
+    {
+      "claim_id": "0b2ea4fa-150f-4560-9d90-79b066590990",
+      "result_id": "13f2b7a0-3de0-4b4e-a889-663e8b45bf07"
+    },
+    {
+      "claim_id": "14bd886d-7573-477a-a0e9-074956b4c255",
+      "result_id": "13f2b7a0-3de0-4b4e-a889-663e8b45bf07"
+    },
+    {
+      "claim_id": "aacf2f0b-0d8d-46bf-9412-70a87e10ba68",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "751ce99a-39f8-4b74-be5a-38dc78bf946d",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "58d6e1cc-eb22-4c1b-a12f-a047db16c3e3",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "07c6192b-bd3e-4363-857e-4bd65b5525e8",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "00a7ed19-a0d8-4d2e-a8b9-4863a599375e",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "437da436-b98c-4194-8365-9ee5e4294b5c",
+      "result_id": "ae35dc32-56c8-434e-af10-be917fdc879e"
+    },
+    {
+      "claim_id": "ca4368b1-a586-4a6d-9df6-5d0ddee88aaf",
+      "result_id": "554cabb7-2f42-4696-bd8f-36b78cc78a74"
+    },
+    {
+      "claim_id": "4c516894-7eb2-44f0-b54e-1593a32a192d",
+      "result_id": "a97191e3-2823-4f19-ae00-07c7ad1c5e98"
+    },
+    {
+      "claim_id": "01d3a187-8dc0-4366-aeea-29e3560223fc",
+      "result_id": "a97191e3-2823-4f19-ae00-07c7ad1c5e98"
+    },
+    {
+      "claim_id": "180f62c2-59a3-4509-b272-2dd7020b778d",
+      "result_id": "adf02ca1-7381-4ff6-92af-344d6de7a79c"
+    },
+    {
+      "claim_id": "c05dba93-7247-43bd-9659-8c92042a4481",
+      "result_id": "7bfcd071-ec37-40f4-b1c9-1347f2c72ca6"
+    },
+    {
+      "claim_id": "c360d766-0345-4881-94a7-8d7f909c9320",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "235b3693-0eed-4286-a4b7-a68faf264588",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "113207f3-8746-4d68-8e1a-a7cdf8677192",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "ac585225-7db3-4390-a7ea-d04a169b2319",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "e8460ce6-3a9f-4aba-8e0f-3e39cb5125f8",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "c4d38631-4fef-44cb-b961-8ce062937c99",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "c39dc19f-64a5-4020-8eb3-b521742cccbc",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "6eafdd3c-e80f-4cf0-a337-8ad32fce7514",
+      "result_id": "a5edc4f7-3e2f-42db-bfeb-e93b20efcf3e"
+    },
+    {
+      "claim_id": "b1fd7ba0-54e6-4074-831b-2cb545268d52",
+      "result_id": "467cfef1-fcd1-483f-99a8-ef0da66a7175"
+    },
+    {
+      "claim_id": "226373fd-8965-43f6-b531-95d1c8273467",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "4ff825e2-ae18-40b3-b61d-19f9f46184f2",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "faa4886e-2300-422d-8306-328863c78478",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "08a6984e-eeb5-4a94-ad36-047d0889e1f9",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "1fefd357-01e3-4d22-9574-22606d6b94ca",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "ea2b6d80-c492-4bcb-b341-68eee9a54d37",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "4888a509-1055-4ad3-8971-e6cf7e956bfa",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "26214838-a09f-4403-bdad-a82562483034",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "c692f3db-9c94-4d9b-8199-2712ced5f29e",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "6258bfcd-bd68-4eef-b726-8d939d91a914",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "3057f2ad-c312-4ede-a2d4-8f6bb23dd294",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "fa4c9e7c-be2e-4979-8a92-5223d61b1e4f",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "0316f6c8-65c7-43f9-8d2c-aa8df3322da0",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "82d3f523-26ab-4d0a-b0dc-23e64457eaac",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "21d39138-f283-4f76-8333-9457a21eac5e",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "e628f5aa-524a-4f12-af76-74e0d9d56bb9",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "a26149f4-f227-40e2-9233-b64603b11198",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "a5e9c800-e2ff-4551-9fb4-9e698b8c3aa1",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    },
+    {
+      "claim_id": "aa2dada4-12ed-40ed-a0ce-281b13e59da6",
+      "result_id": "c0c25cb5-28b6-4d21-b9ae-ce4ebb0f3d74"
+    }
+  ],
+  "comparisons": []
+}

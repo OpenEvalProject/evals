@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "Signal-connectors are modular RNA devices composed of an antisense domain (20 nt) that recognizes target mRNA and an aptamer domain that controls translation in response to signals. These devices can either repress or enhance translation of target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10, and C11 collectively describe the basic design and dual functionality of signal-connectors. The modular architecture is clearly demonstrated with experimental validation showing both repression and activation capabilities, supported by Figure 1A and subsequent functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Signal-connectors effectively repress target gene translation through a roadblock mechanism. 11 of 12 constructs targeting Renilla luciferase showed significant repression in the presence of theophylline, with activity inversely correlated to distance from the 5' cap. The devices localize to the cytoplasm and require two aptamer copies for optimal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 provide comprehensive evidence for translational repression. The data show dose-dependent effects (C16), valency requirements (C17-C18), cytoplasmic localization (C14), and mechanistic validation through in vitro experiments (C19-C20). The correlation with 5' cap distance (C15) is noted as speculative but supported by the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Signal-connectors with tetracycline aptamers demonstrate modularity and function through translational inhibition rather than mRNA degradation. VEGF mRNA levels remained unchanged in the presence or absence of tetracycline, while protein levels decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 establish the modularity of the system to different aptamers and confirm the translational mechanism. The unchanged mRNA levels (C22) combined with reduced protein expression provide strong evidence that signal-connectors act at the translational level rather than affecting mRNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Signal-connectors can activate translation through recruitment of eIF4G. A construct with two eIF4G aptamers induced 15-fold activation of luciferase, with optimal activity requiring two aptamer copies. The mechanism involves recruitment of translation initiation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 demonstrate translational activation capability. The 15-fold increase (C25), valency requirements (C26-C27), and in vitro validation (C28-C29) provide converging evidence for a recruitment mechanism. The dose-dependent response (C30) further supports the functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "All basic two-input Boolean logic gates (NOT, AND, NAND, OR, NOR, XOR, XNOR) were successfully constructed using signal-connectors in HEK293 cells. Each gate exhibited the expected input-output behavior with theophylline and tetracycline as inputs and luciferase expression as output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C45 comprehensively demonstrate logic gate construction. Each gate type is described with its design principle and experimental validation shown in Figure 3. The synergistic effects for AND/NAND gates (C35, C37) and the base-pairing mechanism for XOR gate (C43) provide mechanistic insights supporting the functional claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Signal-connectors successfully rewired the \u03b2-catenin/c-Myc signaling pathway. While c-Myc mRNA levels increased after LTD4 stimulation in both control and signal-connector cells, c-Myc protein levels decreased only in signal-connector expressing cells, establishing a negative connection between transcription factor and downstream gene translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate pathway rewiring with clear separation of transcriptional and translational effects. The maintained mRNA increase (C47) combined with protein decrease (C48) in signal-connector cells provides strong evidence for post-transcriptional rewiring (C49), supported by Figures 4B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Signal-connectors created a novel signaling pathway by linking \u03b2-catenin to activation of Renilla luciferase translation. LTD4 treatment elevated luciferase activity in signal-connector expressing cells but not in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate creation of a synthetic pathway. The specific activation in signal-connector cells upon LTD4 treatment (C50) provides clear evidence for establishing a new functional connection between \u03b2-catenin and luciferase expression (C51), supported by Figure 4F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Signal-connectors successfully incorporated both positive and negative feedback loops into gene networks. OPN and VEGF, normally independent, were engineered into mutual activation (positive feedback) or mutual inhibition (negative feedback) relationships using signal-connectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate feedback loop construction. The baseline independence (C53), successful positive feedback (C54), and bidirectional negative feedback (C55-C56) are all experimentally validated in Figure 4G-H, showing the versatility of signal-connectors for network engineering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "An AND gate circuit using signal-connectors and hTERT promoter specifically suppressed survival gene expression in bladder cancer cells without affecting normal fibroblasts. The circuit inhibited cancer cell proliferation and induced apoptosis selectively in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 demonstrate cancer-specific targeting. The differential effects in cancer versus normal cells (C58-C59), growth inhibition (C60), and selective apoptosis (C61-C62) provide strong evidence for specific targeting capability (C63). The AND gate logic requiring both hTERT promoter activity and ligand ensures specificity, supported by Figures 5D-G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Signal-connectors redirected NF-\u03baB oncogenic signaling to anti-oncogenic outputs by simultaneously activating tumor suppressors (Bax, p21) and repressing oncogenes (Bcl2, c-Myc). This resulted in reduced tumor growth both in vitro and in vivo in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 demonstrate therapeutic pathway rewiring. The simultaneous multi-gene regulation (C66), reduced in vitro growth (C67), and dramatic in vivo tumor reduction (C68-C69) provide strong evidence for therapeutic efficacy through pathway redirection (C70). The comprehensive data from Figures 6B-F support all claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C76"
+    ],
+    "result": "This work represents the first demonstration that aptamers can repress endogenous genes in trans by linking with antisense RNAs, and that aptamer-mediated recruitment can enhance endogenous gene translation. This enables simultaneous activation and repression of different target genes for cellular network reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C74, and C76 establish the novelty and significance of the approach. While C71's claim of being 'first' is difficult to verify completely, the demonstration of both trans-repression and trans-activation of endogenous genes (C74) with simultaneous multi-gene control (C76) represents a clear advance supported by the comprehensive experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Signal-connectors have been applied to construct logic gates, incorporate feedback loops, rewire native pathways, create novel pathways, identify cancer cell states, and reverse malignant phenotypes by redirecting oncogenic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the major applications demonstrated in the paper. Each application is supported by detailed experimental results in subsequent sections: logic gates (Figure 3), feedback loops (Figure 4G-H), pathway rewiring (Figure 4A-C), novel pathways (Figure 4D-F), cancer targeting (Figure 5), and phenotype reversal (Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C24",
+      "C46",
+      "C52",
+      "C57",
+      "C64",
+      "C65",
+      "C72",
+      "C75",
+      "C78"
+    ],
+    "result": "The manuscript cites established knowledge about RNA aptamers, translation factors, cancer biology, and related mechanisms from prior literature to contextualize the signal-connector approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C24, C46, C52, C57, C64, C65, C72, C75, and C78 all reference prior work with appropriate citations. These provide necessary background and context for the current study. The citations appear appropriate and accurately represent the referenced work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The signal-connector method represents a universal approach for cellular RNAs to interact with genes of interest, based on similarity to natural non-coding RNA mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 extrapolates from the similarity to natural mechanisms (C72) to claim universality. While the modular design and multiple successful applications support broad applicability, the claim of 'universal approach' is not fully tested across diverse gene types, cell types, or organisms. The inference is reasonable but requires more extensive validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Signal-connectors localize to the cytoplasm possibly because they bind mRNA in the nucleus and remain bound during and after export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 is explicitly speculative ('one possible explanation'). While the cytoplasmic localization is demonstrated (C14), the proposed mechanism for how they get there lacks direct experimental validation. The speculation is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Signal-connectors may provide alternative approaches to cancer therapy, enable network-based treatment strategies, function as living bio-computers for gene therapy, and bring applications in biology and medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C81, C82, and C83 are speculative about future applications. While the proof-of-concept data support potential therapeutic utility, these claims about clinical applications and broad utility require extensive additional validation including in vivo efficacy, safety, delivery methods, and clinical trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "A limitation of the methodology is that functional aptamers still usually need to be selected from random libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 accurately identifies a practical limitation of the approach. The requirement for aptamer selection is a well-known constraint in the field and represents a genuine limitation to the broad applicability of the technology.",
+    "result_type": "MINOR"
+  }
+]

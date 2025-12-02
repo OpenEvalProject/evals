@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C88"
+    ],
+    "result": "scNOMe-seq simultaneously measures chromatin accessibility (via GpC methylation) and endogenous DNA methylation (via CpG methylation) in single cells. The method recovered characteristic accessibility and DNA methylation patterns at DNase hypersensitive sites (DHSs) that matched expected patterns from bulk data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21, and C88 are strongly supported by experimental data shown in Figures 2 and 3, demonstrating that scNOMe-seq successfully measures both GpC and CpG methylation in single cells with patterns consistent with bulk NOMe-seq and established chromatin biology. The method's dual measurement capability is a fundamental feature validated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C31",
+      "C95"
+    ],
+    "result": "scNOMe-seq reads are sampled independently of accessibility status, enabling distinction between true negatives (closed chromatin) and false negatives (DNA loss). This property allows direct estimation of the fraction of accessible DHSs within individual cells, addressing the allelic drop-out problem inherent to single-cell methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C28, C29, C31, and C95 describe a key advantage of the bisulfite sequencing approach used in scNOMe-seq. Figure 2e demonstrates quantification of accessible DHS fractions in individual cells, validating this capability. This is a fundamental property of the method that distinguishes it from count-based approaches like ATAC-seq and DNase-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C90",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "scNOMe-seq provides high-resolution chromatin accessibility measurements that enable detection of transcription factor footprints at individual loci in single cells. CTCF footprints were detected with two-thirds of motifs in accessible regions showing protection from GpC methylation, and motifs with footprints had significantly higher scores than those without (p=5.429e-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C27, C72, C73, C76, C77, C78, C90, C112, C113, and C114 are well-supported by Figure 5, which demonstrates CTCF footprint detection at base-pair resolution in single cells. The statistical significance of the relationship between motif scores and footprint presence is properly documented. This represents a novel capability for single-cell chromatin profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "scNOMe-seq enables estimation of average nucleosome phasing distances in single cells through correlation analysis of GpC methylation at different offset distances. Estimated phases were 187-196 bp (mean=196.7 bp) in GM12878 cells and 188-200 bp (mean=194.2 bp) in K562 cells, consistent with MNase-seq data from bulk samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79, C80, C83, C84, C85, C86, C87, and C91 are supported by Figure 6, which shows oscillatory methylation patterns consistent with nucleosome positioning and provides quantitative phase estimates. The agreement with published MNase-seq data (C86) validates the approach. The variation in phasing across chromatin contexts (C87) is also demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study profiled 19 GM12878 cells (12 with GpC MTase treatment, 7 controls) and 11 K562 cells. Each GpC MTase-treated library was sequenced to at least 16M reads, with 2.5-5M reads retained after duplicate removal. On average, 2.9% of GpC cytosines and 3.6% of CpG cytosines were covered per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe the experimental design and sequencing coverage. These are factual statements supported by the text, Figure 1\u2014figure supplement 2, and Supplementary file 1. The coverage statistics are appropriate for a proof-of-principle study, though the sample size is acknowledged as limited (C122, C123).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "DHSs showed strong enrichment of GpC methylation in both GM12878 and K562 cells, while endogenous CpG methylation decreased at DHS centers. The majority (>85%) of DHSs contain GpC dinucleotides and are theoretically detectable, with 10.6% and 17.3% having one or more GpCs covered in individual GM12878 and K562 cells, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by Figure 2 and its supplements, showing characteristic methylation patterns at DHSs consistent with bulk data and prior literature (Stadler et al., 2011; Ziller et al., 2015). The coverage statistics demonstrate the sparse nature of single-cell data while validating the method's ability to detect known chromatin features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57",
+      "C98",
+      "C99"
+    ],
+    "result": "Average GpC methylation at covered DHSs in single cells was strongly correlated with bulk DNaseI accessibility, while CpG methylation showed the opposite trend. DHSs with strong DNaseI accessibility in bulk samples showed higher frequency of accessibility in single cells, providing direct evidence that bulk DNase-seq peak height reflects single-cell accessibility frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C56, C57, C98, and C99 are supported by Figure 2d, 2e, and supplements 7-8. The correlation between single-cell GpC methylation and bulk DNase accessibility validates the method, while the lower correlation in single cells compared to bulk (C51) is expected given sparse coverage. The relationship between peak height and accessibility frequency (C57, C99) is a key biological insight enabled by the method's unique properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C96"
+    ],
+    "result": "Using a 40% GpC methylation threshold, 32-44% of covered DHSs were accessible in single GM12878 cells and 26-37% in K562 cells. Even under the most lenient conditions, less than 50% of DHSs were accessible in individual cells, depending on the thresholds chosen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C96 are supported by Figure 2e and Figure 2\u2014figure supplement 10. The finding that only 30-50% of population-level DHSs are accessible in individual cells is a significant biological observation. However, the dependence on threshold choice (shown in Figure 2\u2014figure supplement 10) indicates some uncertainty in the exact proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C97",
+      "C102",
+      "C103"
+    ],
+    "result": "Chromatin accessibility between cells is less variable at regions with high DNaseI accessibility in bulk samples. Genome-wide GpC methylation levels were comparable across cells, but variability was not equally distributed across all DHSs, with correlation of GpC methylation between cells being stronger at DHS loci compared to randomized locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, C97, C102, and C103 are supported by Figure 2\u2014figure supplements 11, 12, and Figure 2\u2014figure supplement 1. These findings address potential confounding factors (differential enzyme activity) and demonstrate that observed variation reflects biological differences in chromatin state rather than technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "scNOMe-seq captured characteristic chromatin organization patterns at gene promoters and gene bodies. GpC methylation increased upstream of TSS, while CpG methylation decreased at promoters and increased in gene bodies, particularly in highly expressed genes. Chromatin accessibility at promoters correlated positively with gene expression, while CpG methylation correlated negatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 are supported by Figure 3 and its supplements, demonstrating that scNOMe-seq recapitulates known relationships between chromatin organization and transcription. The patterns observed are consistent with established chromatin biology (Sch\u00fcbeler, 2015; ENCODE Project Consortium, 2012), validating the method's ability to measure biologically meaningful features in single cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "Both GpC methylation and endogenous CpG methylation at genomic features were sufficient to classify individual GM12878 and K562 cells into their respective cell types. Each cell type showed preferential enrichment of GpC methylation at their respective DHSs compared to the other cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71, C104, C106, and C107 are supported by Figure 4 showing hierarchical clustering that separates the two cell types. However, the author acknowledges that this separation is confounded with experimental batches (C105), which is a significant limitation. While Figure 4b shows cell-type-specific enrichment patterns that support biological differences, the batch confounding prevents definitive conclusions about the method's ability to classify cell types in mixed populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Similar accessibility profiles to CTCF, albeit less pronounced, were observed for additional transcription factors EBF1 and PU.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by Figure 5\u2014figure supplement 3, which shows GpC methylation patterns at EBF1 and PU.1 binding sites. The less pronounced footprints compared to CTCF may reflect differences in binding affinity, motif quality, or the number of GpCs within the motifs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C122",
+      "C123"
+    ],
+    "result": "This proof-of-principle study demonstrates that NOMe-seq, previously performed only on bulk samples, can be adapted for single cells. The study was designed to test feasibility and profiled a small number of cells, which limited the ability to study cell-to-cell variation in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C122, and C123 accurately describe the study's scope and limitations. The author appropriately acknowledges that the small sample size (19 GM12878 and 11 K562 cells) is sufficient for proof-of-principle but insufficient for detailed analysis of cell-to-cell variation. This is an honest assessment of the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Like other single-cell genomic methods, scNOMe-seq relies on annotations from bulk measurements and faces limitations from sparse coverage and high allelic drop-out. Count-based methods like ATAC-seq and DNase-seq cannot distinguish true negatives from false negatives due to read loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 accurately describe known limitations of single-cell methods and the specific challenge faced by count-based approaches. These are well-established issues in the field, supported by the cited literature (Cusanovich et al., 2015; Buenrostro et al., 2015b; Smallwood et al., 2014; Farlik et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C48",
+      "C81",
+      "C82",
+      "C110"
+    ],
+    "result": "Background claims about single-cell RNA-seq, existing single-cell chromatin methods, NOMe-seq methodology, and chromatin biology establish the context and rationale for developing scNOMe-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C24, C30, C48, C81, C82, and C110 represent established knowledge in the field, supported by appropriate citations. These claims provide necessary background and are not novel findings of this study. They are accurately stated and properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C109",
+      "C111"
+    ],
+    "result": "Each sequenced read in NOMe-seq contains multiple GpCs that independently report accessibility status along the read length, capturing additional information compared to count-based methods. This allows regions covered by transcription factors and nucleosomes to be captured within single fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C109, and C111 describe fundamental properties of the NOMe-seq method that are demonstrated throughout the manuscript, particularly in the CTCF footprinting analysis (Figure 5). The ability to measure multiple GpCs per read is a key advantage over count-based methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors discuss potential confounding factors, future applications, and limitations of scNOMe-seq, including speculation about technical improvements, integration with microfluidic workflows, combination with scRNA-seq, and applications to heterogeneous tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C115, C116, C118-C121, C124, and C125 represent appropriate discussion of potential confounders (C101), uncertainties (C118), and future directions (C115, C119, C121, C125). These speculative claims are clearly presented as such and are reasonable extrapolations from the demonstrated capabilities. The acknowledgment of higher sequencing requirements (C120) is an honest assessment of the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "GM12878 and K562 cells were obtained from standard repositories (Coriell and ATCC). Nuclei were stained with Hoechst 33342 and G1-phase nuclei were sorted to maintain similar DNA content per cell and remove cell cycle heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 describe standard experimental procedures that are adequately documented in the Materials and methods section and Figure 1\u2014figure supplement 1. The rationale for G1 gating (C129) is appropriate for controlling DNA content variation.",
+    "result_type": "MINOR"
+  }
+]

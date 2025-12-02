@@ -1,0 +1,2093 @@
+{
+  "submission": {
+    "id": "db010b0a-e77e-46d1-a887-e3f99de3f37f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:50:16.873698Z",
+    "updated_at": "2025-12-01T21:50:16.873698Z"
+  },
+  "content": [
+    {
+      "id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "submission_id": "db010b0a-e77e-46d1-a887-e3f99de3f37f",
+      "content_type": "manuscript",
+      "content_text": "# Exploratory search during directed navigation in C. elegans and Drosophila larva\n\n## Authors\n\n- Mason Klein<sup>1</sup> ([ORCID: 0000-0001-8211-077X](https://orcid.org/0000-0001-8211-077X)) \u2020\n- Sergei V Krivov<sup>2</sup> \u2020\n- Anggie J Ferrer<sup>1</sup>\n- Linjiao Luo<sup>3</sup>\n- Aravinthan DT Samuel<sup>4</sup>\n- Martin Karplus<sup>5</sup> \u2020\n\n### Affiliations\n\n1. Department of Physics University of Miami Coral Gables United States\n2. Astbury Centre for Structural Molecular Biology University of Leeds Leeds United Kingdom\n3. Key Laboratory of Modern Acoustics, Ministry of Education, Department of Physics Nanjing University Nanjing China\n4. Center for Brain Science, Department of Physics Harvard University Cambridge United States\n5. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n6. Laboratoire de Chimie Biophysique, ISIS Universit\u00e9 de Strasbourg Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany organisms\u2014from bacteria to nematodes to insect larvae\u2014navigate their environments by biasing random movements. In these organisms, navigation in isotropic environments can be characterized as an essentially diffusive and undirected process. In stimulus gradients, movement decisions are biased to drive directed navigation toward favorable environments. How does directed navigation in a gradient modulate random exploration either parallel or orthogonal to the gradient? Here, we introduce methods originally used for analyzing protein folding trajectories to study the trajectories of the nematode Caenorhabditis elegans and the Drosophila larva in isotropic environments, as well as in thermal and chemical gradients. We find that the statistics of random exploration in any direction are little affected by directed movement along a stimulus gradient. A key constraint on the behavioral strategies of these organisms appears to be the preservation of their capacity to continuously explore their environments in all directions even while moving toward favorable conditions.\n\n## Introduction\n\nThe trajectories of small organisms often involve stochastic transitions between distinct motor states. A classic example is the swimming behavior of Escherichia coli (; Berg, 1993), which is characterized by an alternating sequence of runs and tumbles. During runs, the\u00a0bacteria swim in roughly straight lines, while during tumbles, the\u00a0bacteria move erratically in place, ultimately picking the direction of a new run at random. The trajectories of larger animals like nematodes and insect larvae are qualitatively similar (Pierce-Shimomura et al., 1999; Luo et al., 2010). Caenorhabditis elegans alternate periods of forward movement with either large angle reorientation maneuvers called pirouettes or small angle turns. Crawling Drosophila larvae alternate periods of forward movement with turns (Lahiri et al., 2011) where they pause forward motion and use the angle of head swings to pick a new forward orientation.\n\nC. elegans also modulates its random exploration in isotropic environments over time (Wakabayashi et al., 2004; Chalasani et al., 2007). When a worm is placed in a new environment, it first executes a local search, where runs are short. Over time, worms transition to a global search with longer runs. It has been suggested that the transition between local and global searching is discontinuous (Calhoun et al., 2014), and that local search and global search represent two distinct behavioral states.\n\nIn stimulus gradients, bacteria, nematodes, and insect larvae bias their random walks toward favorable environments by modulating the statistics of transitions between forward-moving runs and reorientation events. For example, all three organisms exhibit longer runs when pointed toward favorable conditions. Worms and larvae further augment the time spent pointed toward favorable directions by increasing the probability of ending reorientation events with a run pointed in a favorable direction or by gradually steering runs toward favorable directions.\n\nThe navigational dynamics of worms and larvae have some parallels with the complex dynamics of a polypeptide chain navigating to the native structure of the protein to which it corresponds. Both are examples of stochastic search processes: the protein needs to fold to the correct native structure, while an organism needs to find food and favorable temperatures, for example. Neither search can be purely random, because it would not be effective. For the protein folding case, it would lead to the Levinthal paradox; that\u00a0is, it would take an essentially infinite amount of time\u00a0to\u00a0fold, while in fact it takes on the order of seconds to minutes (Zwanzig et al., 1992; Karplus, 1997). The stochastic search of a protein is biased toward the native structure by the potential energy, which is encoded in the sequence as the result of evolutionary selection. The stochastic component of the biased search is necessary to avoid being trapped in local minima on the potential energy surface. Trapping in such metastable states has been observed in protein folding trajectories, where an escape is made possible only by the stochastic nature of the dynamics.\n\nAnalogous considerations apply to the navigation dynamics of worms and fly larvae. A purely random search would by very inefficient due to the large size of the space accessible in their normal environment. Thus, living organisms use cues to bias their search. An example is a temperature gradient which plays the role of the potential energy. A purely deterministic search would not be effective here either, because there can be traps (local minima) in the accessible space. These minima could have a physical origin or be due to a complex non-monotonic nature of the cues. A stochastic component in the biased search allows the organisms to overcome the trapping problem. The actual details of the navigational dynamics are specified by the neural circuitry that enervates the muscles. This is optimized by evolution, in analogy to the amino acid sequence in proteins.\n\nThe correspondence outlined above suggests that it would be of interest to see whether approaches developed for understanding protein folding dynamics can be used to study the navigational dynamics of worms and larvae. The folding dynamics can be quantitatively described as diffusion (random walk) on a free-energy landscape. In particular, the free energy, $F$, defines the equilibrium probability of the system to be found at a particular position $P\u223ce\u2062x\u2062p\u2062(-F/k\u2062T)$, that\u00a0is, the system prefers regions with low free energy. The free-energy barrier between unfolded and folded states defines the bottleneck of the folding reaction. The diffusion coefficient describes how quickly the system\u2014whether a worm, larvae, or peptide sequence\u2014explores the configuration space. Together, the free-energy barrier and the diffusion coefficient determine the rate of the process. Such a picture provides a simplified and intuitive, while quantitatively accurate, description of the dynamics. We note also that the free-energy landscape framework is generic and has been successfully applied to many different types of complex dynamics, for\u00a0example, the dynamics of the game of chess (Krivov, 2011b) or patient recovery dynamics after kidney transplant (Krivov et al., 2014), as well as to protein folding.\n\nDetailed descriptions of worm or larva dynamics (i.e. how run \u2014 turn \u2014 run \u2014 $\u2026$ sequences are chained together) are important to show how complex navigational dynamics are realized in a particular case. However, there are many variants of detailed motions, which are likely to result in very similar larger scale navigational dynamics. Thus, it is of interest to understand and accurately characterize the invariants of large-scale dynamics. It is precisely these invariants that are expected to be optimized by evolution. Moreover, a description making use of the free-energy landscape framework can provide an intuitive picture of the complex navigational dynamics as a whole, versus the localized description of dynamics. It could be used, in particular, to locate equilibrium populations, biases, and bottlenecks during the navigation toward the target in complex environments.\n\nThe free-energy landscape of a protein can be determined from long equilibrium trajectories (Krivov and Karplus, 2004; Krivov, 2011a; Banushkina and Krivov, 2016). However, the experimental trajectories of the crawling animals treated here are too short to be considered to be at equilibrium in comparison with those in the reversible folding/unfolding of proteins at equilibrium (Shaw et al., 2010). To determine the equilibrium properties, which are required for the construction of the free-energy landscape, we introduce another general approach to random dynamics, the Markov state model (MSM). This exploits the information contained in a large number of short trajectories measured under identical conditions (Lane et al., 2011; Rao and Caflisch, 2004; Krivov et al., 2002). One refers to the dynamics as Markovian if the next crawling step of an animal depends only on its current spatial position; that\u00a0is, it quickly forgets the history of its motion. A collection of short trajectories can then be used to determine a probability distribution of future positions of the animal starting from a current position. In particular, the steady state probability distribution can be determined in this way. The analysis is based on the construction of the transition probability matrix, as described in Materials\u00a0and\u00a0methods, where it is shown that the steady state distribution is, in fact, the equilibrium distribution for the worms. This matrix provides a complete description of the stochastic dynamics and can be used to determine long time scale behavior.\n\nWe first observed the power of this approach when investigating C. elegans trajectories in a thermal gradient, with worms placed at their cultivation temperature. It had been thought that the worms would equally avoid both lower and higher temperatures. The analysis of a large number of trajectories with the MSM showed that worms do not strictly avoid warmer temperatures, potentially uncovering a different interpretation of isothermal tracking behavior (see Results section). Encouraged by this result, we extend the protein folding approach for combining trajectories to a more general study of C. elegans and Drosophila larvae. Specifically, we employ the diffusion coefficient, $D\u2062(t)$, which represents the rate of change of the mean square displacement as a function of time for the data set. For both species, in the presence of environmental gradients (e.g. thermal or chemical), it is found that $D\u2062(t)$ increases linearly with time for short times (ballistic dynamics), while it approaches a constant value at longer times (stochastic dynamics).\n\nIn what follows we investigate the behavior of C. elegans and Drosophila larvae in the presence of different environmental gradients within this framework. Given the recent interest in search strategies in the absence of information (Polani, 2009; Calhoun et al., 2014), we also study the motion of both species in a uniform environment (i.e. in the absence of applied gradients).\n\n## Results\n\n### Diffusion and search patterns under isotropic conditions\n\nNavigation in C. elegans, Drosophila, and other organisms has been treated as a biased random walk (Berg, 1993; Pierce-Shimomura et al., 1999; Ryu and Samuel, 2002), where animals repeatedly transition between bouts of relatively straight forward crawling (\u2018runs\u2019) and distinct, often large changes in heading (\u2018turns\u2019). To investigate the relationship between trajectories built in this fashion and more general phenomena of diffusion and Markovian processes, we first studied 2D free crawling behavior in both worm and larva systems in isotropic environments with no applied stimulus. These trajectories (Figure 1A,A\u2019) do exhibit diffusive behavior, but do not demonstrate active movement in a particular direction, as demonstrated by their very small values for the dimensionless drift velocity (see Materials\u00a0and\u00a0methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sample trajectories (left) from 18 worms under isotropic conditions, for 60 min. Tracks have been shifted to all begin at the same location for clarity. A single track (red) is magnified (right) to show the abrupt changes in crawling orientation, flagged as \u2018turns\u2019 (gray circles), with comparatively straight-crawling \u2018runs\u2019 in between. Runs are characterized by their duration $\u0394\u2062t$, and turns by their change in heading $\u0394\u2062\\theta$. (B) Diffusion in the $x$- and $y$-directions and turning rate reduction over time. Worms diffuse in both directions (left), while the rate of turning events steadily decreases over 3000 s (right); it fits an exponential decay (red) with a 765 s time constant. (C) Diffusion in the $x$- and $y$-directions, splitting the time window into $t<900$ s (left) and $900<t<1800$ s (right). (A\u2019) Sample trajectories from 25\u00a0Drosophila larvae navigating under isotropic conditions for 15 min. (B\u2019) Diffusion and turning rate over time for crawling Drosophila. $D_{x}$ and $D_{y}$ reach similar values, substantially higher than C. elegans (left), and the turning rate does not show a dramatic drop, instead increasing for the first ~2 min. before stabilizing. (C\u2019) Split $D_{x}$ and $D_{y}$ graphs covering the first ($t<450$ s) and second ($450<t<900$ s) halves of the trajectory time, converging to similar values in each. Results for (B,C) are based on seven experiments, with\u00a056 tracks and a total of 1608 turns. Results for (B\u2019,C\u2019) are based on 30 experiments, with 434 tracks and 11,294 turns. The directions of overall population drift for (A,A\u2019) are indicated by green arrows, with the numbers indicating the dimensionless drift velocity, in this case extremely small (see Materials\u00a0and\u00a0methods). Error bars for (B,B\u2019) are $\\pm$s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 56\u00a0sequences are shown (red), with a blue vertical line indicating the change point, found by maximizing the difference in average $\u0394\u2062t$ below and above a particular time in the experiment. Change point times have a wide range, in many cases occurring near the end of trajectories, indicating a steady rise with high variance, rather than an abrupt transition in mean run duration. We note that in more than half the tracks, the difference in mean before and after the change point is less than twice the standard deviation of the data prior to the change point.\n\nWe observed that worm and larvae dynamics at small time scales are close to deterministic\u2014that is, the animals maintain direction and their trajectories are smooth. At longer time scales movement becomes stochastic or diffusive; in other words, the dynamics in configuration space can be approximately described as Markovian. To estimate the time scale of the transition between these regimes, we inspect the time dependence of the diffusion coefficient, $D\u2062(t)$, defined in Materials\u00a0and\u00a0methods (Figure 1B,B\u2019). For deterministic ballistic dynamics in the $x$ direction, $\u0394\u2062x\u223cv_{x}\u2062t$ and $D_{x}\u2062(t)$ increases linearly with time, while for diffusive dynamics, $D_{x}\u2062(t)$ is constant. Figure 1B,B\u2019 suggest that the transition from deterministic to diffusive regimes happens at $t\u223c1000$ s.\n\nC. elegans crawling under isotropic conditions drastically reduce their turning rate (i.e. make longer runs) throughout an experiment (Figure 1B), as also noted in previous work (Calhoun et al., 2014); here, it is studied over a substantially longer time of ~1 hr. We define the turning rate of a population as the total number of turns made, divided by the total time all animals put together spend in forward-crawling runs (i.e. the total time where animals could have turned, but did not\u2014see Materials\u00a0and\u00a0methods for details). In particular, the turning rate decreases exponentially with a time constant of approximately 800 s (Figure 1B). Inspecting the run durations for individual worm trajectories (Figure 1\u2014figure supplement 1), we do not see strong evidence of the turning rate undergoing an abrupt transition from local to global searching, but rather a regular decline, which in the population averages to steady exponential decay.\n\nTurning rate has a clear connection to the dynamics, as frequent turns within a random walk will reduce the diffusion rate. Noting the dramatic reduction in turning rate in Figure 1B, we determined the diffusion coefficients in $x$ and $y$ from the first part of the experiment, $0$ to 900 s, and then separately for the next 900 s. As expected, the diffusion coefficients converge to different limiting values, with diffusion during the second part of the experiments nearly double that during the first part. This dependence agrees with the simple mean free path estimate of the diffusion coefficient $D\u223cv^{2}/R$, where $v$ is the crawling speed, and the mean turn rate $R$ in the first half of the trajectory is approximately double of that in the second part. We note that $D_{x}$ and $D_{y}$ are essentially identical throughout the experiments, only diverging slightly at longer times where the uncertainty has increased (fewer individual tracks last up to 1000 s).\n\nDrosophila larvae under isotropic conditions (Figure 1A\u2019\u2013C\u2019) exhibit similar behavior in terms of trajectory structure (Figure 1A\u2019) and the transition to a diffusive regime, but they do not exhibit a marked decline in turning rate (Figure 1B\u2019), which stabilizes after only a few minutes and remains constant throughout their searching behavior. Thus, the transition from local to global searching does not appear on the ~15-min time scales we measured for larva behavior. Given the relatively constant turning rate, it follows that diffusion coefficients calculated for the first ($0$ to 450 s) and second (450 to 900 s) halves of the experiments converge to similar values. Further, in this larger data set $D_{x}$ and $D_{y}$ are essentially identical throughout (Figure 1C\u2019). We also note that while $D$ and the turning rate both increase in the first 100 s, the system has not entered a diffusive regime, and the increase in $D$ can be attributed to the ballistic character of the trajectories at this stage.\n\nTaken together, these data show similarity between C. elegans and Drosophila in the makeup of run \u2014 turn \u2014 run \u2014 $\u2026$ sequences in crawling behavior, and both conform to a model of diffusion at longer times, but the two animals differ in their long time scale search strategies.\n\n### Diffusion persists alongside thermotaxis and chemotaxis\n\nWe next sought to determine what happens to the behavior as animals navigate while exposed to a stimulus along one axis of the crawling surface. Is the diffusive behavior maintained along the axis perpendicular to the stimulus gradient while motion along the parallel axis transforms into a new mode? To investigate this, we observed both C. elegans and Drosophila navigating along a 1D spatial temperature gradient. The apparatus (Figure 2A), as previously described (Klein et al., 2015), maintains a stable linear gradient in $x$, and constant temperature in the $y$-direction for fixed $x$-values. Worms cultivated at 15\u00b0C and placed in a gradient centered at 20\u00b0C exhibited negative thermotaxis (also called \u2018cryophilic\u2019 behavior), while larvae placed at 17.5\u00b0C in the same gradient crawled away from cold conditions, exhibiting positive thermotaxis to a preferred range that is independent of cultivation conditions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of the apparatus (left), where animals crawl atop an agar substrate while exposed to a 1D linear temperature gradient. Sample thermotaxis trajectories (right) from 18\u00a0C. elegans crawling for 60 min and 25\u00a0Drosophila crawling for 15 min, where the red dots indicate the starting position for all trajectories. Worms start at 20\u00b0C and exhibit negative thermotaxis, moving toward their 15\u00b0C cultivation temperature, while larvae start at 17.5\u00b0C and crawl away from aversive cold temperatures. The wheel indicates labels for crawling direction ranges, with octant 1 parallel to the gradient heading toward warmer temperatures and octant 5 heading antiparallel towards cooler temperatures. (B) Diffusion over time (left) in the x- and y-directions for C. elegans. $D_{y}>D_{x}$ throughout the experiment, indicating diminished, but highly significant, diffusion along the navigation direction. The average turning rate (upper right) diminishes over time, as in the Figure 1B,B\u2019 isotropic case; the turning rate ratio $R_{5}:R_{1}$ (lower right) remains below 1 and nearly constant throughout the experiment. (C) Equilibrium probability distributions in the x (top) and y (bottom) directions (both use the same scale), extrapolated from empirical trajectories using the Markov state model (MSM). The lag time used is 750 s. Red lines are smoothed traces to guide the eye. The free-energy picture of equilibrium conditions (right), to place the analysis in context with the protein folding analysis tools employed here. Lower-free energy corresponds to higher population as $P\u223ce\u2062x\u2062p\u2062(-F/k\u2062T)$, where here $k\u2062T=1$. (B\u2019) Diffusion, and turning rates for Drosophila larvae, also showing $D_{y}>D_{x}$. The average turning rate stabilizes early, and the turning rate ratio $R_{5}:R_{1}$, the primary behavioral modulation underlying thermotaxis, remains nearly constant. (C\u2019) Equilibrium probability distributions for Drosophila larvae (left), and the corresponding free-energy landscape (right), determined from the MSM. Analysis is based on 30 experiments, 131 tracks, and 3061 turns for worms, and 20 experiments, 303 tracks, and 7771 turns for larvae. The directions of overall population drift for (A) are indicated by green arrows, with the numbers indicating the dimensionless drift velocity, approximately 10 times greater than for the isotropic navigation cases (see Materials\u00a0and\u00a0methods). Error bars are $\\pm$s.e.m. where shown; in the other cases the error bar size is smaller than the line thickness, and therefore not seen.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Analysis of the reversibility of the dynamics. Fluxes in positive (red) and negative (blue dashed) directions are shown. The topmost lines show $J^{+}\u2062(x)$ and $J^{-}\u2062(x)$; the lines are almost identical. The lowermost lines show $J_{a}^{+}\u2062(x)$ and $J_{a}^{-}\u2062(x)$ for $a=2$; the lines agree, with residual difference due to statistical noise. The intermediate lines show that increasing the statistics decreases the noise and improves the agreement. (B) Equilibrium probability distribution as a function of lag time used to construct the MSM. With increasing lag time the dynamics becomes more Markovian and the determined equilibrium probabilities converge to the limiting one.\n\nFigure 2B,B\u2019 shows significant diffusion in both $x$ and $y$ directions, even though both types of animals are migrating along the $x$-axis. This suggests that navigation does not eliminate stochasticity along the axis of purposeful navigation. That is, the animals conduct a random search in all directions irrespective of whether they have adopted a target direction. At the same time, the limiting values of $D_{x}$ and $D_{y}$ are not equal, with diffusion in the $y$-direction greater than diffusion in the $x$-direction. This suggests that there is a tradeoff between searching along an axis and purposeful travel in that direction.\n\nBoth animals move along the $x$-direction toward more favorable environmental conditions by biasing their turning rates. For example, worms undergoing negative thermotaxis reorient their crawling direction more frequently when heading up the temperature gradient, and maintain longer runs when heading down the gradient (Figure 2B, lower right). Thermotaxing larvae, similarly, have a higher turning rate when crawling toward aversive colder conditions, and maintain longer runs crawling up the gradient (Figure 2B\u2019, lower right). As was true for isotropic conditions, worms decrease their turning rate over time (and larvae maintain a stable level). However, both animals maintain an approximately constant ratio between toward-warm turning rates and toward-cold turning rates. That is, the primary navigational bias that produces thermotaxis is not altered, even at long time scales. Importantly, this supports the method of using early behavior to model long term behavior.\n\nWhen the dynamics are Markovian, as described in the Introduction, one can use short experimental trajectories to determine the long term equilibrium probability distribution of worms and larvae. Figure 2C,C\u2019 shows the distribution of both types of animals along the $x$- and $y$-axes, as determined using the Markov state model (see Materials\u00a0and\u00a0methods). Distributions are computed using lag times near the transition to diffusive dynamics. As lag time increases, the dynamics become more Markovian and the distributions converge to the limiting distribution(Figure 2\u2014figure supplement 1B).\u00a0The remaining fluctuations are due to relatively small statistics at long times. The limiting distribution along the $y$ axis, $P_{e\u2062q}\u2062(y)$, is constant (up to fluctuations around the boundaries), in agreement with absence of any stimulus along $y$. For worms, the limiting distribution along the $x$ axis, $P_{e\u2062q}\u2062(x)$, is approximately constant for $T<19.5^{\u2218}$C and then decreases exponentially for $T>19.5^{\u2218}$C. For larvae, the distribution is approximately constant for $T>17.5^{\u2218}$C and then decreases exponentially for $T<17.5^{\u2218}$C. This demonstrates that the worms and larvae diffuse towards $x$ values of their preference, as well as remaining in the regions of their preference, if they are already there. We indicate a more direct connection to the protein folding methods by showing the $x$-distributions in terms of the free energy $F/k\u2062T$ (Figure 2C,C\u2019, right).\n\nTo confirm that these crawling dynamics are not unique to a temperature response, we examined navigation of C. elegans exposed to a chemical stimulus corresponding to a 1D linear salt concentration gradient, previously described in Luo et al. (2014). Worms chemotax either up or down salt gradients, depending on the baseline salt level (Figure 3A). At low baseline salt concentrations (25 mM), worms move toward higher salt levels, and at high concentrations (75 mM) they crawl down the gradient toward lower salt levels. As with thermal navigation, worm behavior converges to diffusive behavior at longer times (Figure 3B), and local searching transitions gradually to global searching via a reduced turning rate (Figure 3C). The Markov state model predicts equilibrium population distributions consistent with the net motion of the population (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sample trajectories (25 worms each) of crawling on an agar substrate with a salt concentration gradient increasing toward the right, under a low-salt concentration baseline (25 mM, left) and high-salt concentration baseline (75 mM, right). The wheel indicates labels for crawling direction ranges, with octant 1 pointing directly to higher salt concentrations and octant 5 directly toward low concentrations. The directions of overall population drift are indicated by green arrows, with the numbers indicating the dimensionless drift velocity, approximately 10 times greater than for the isotropic navigation cases (see Materials\u00a0and\u00a0methods). (B) Diffusion over time in the $x$ and $y$ directions for a low-salt baseline (left) and high-salt baseline (right). Error bars are $\\pm$s.e.m. (C) Average turning rate across all crawling directions (top) decays over time for both low and high baseline salt concentration gradients. The turning rate ratio between octant 5 (toward lower concentration) and octant 1 (toward higher concentration) does not stabilize as clearly as for thermotaxis, likely indicative of a reduced level of movement toward preferred salt conditions and a smaller data set. Error bars are $\\pm$s.e.m. (D) Equilibrium probability distributions for worms in low- (left) and high (right)-salt concentration environments, determined by using the Markov state model (MSM). Analysis is based on 14 experiments, 126 tracks, and 4422 turns for low-salt concentration, and 16 experiments, 166 tracks, and 6159 turns for high-salt concentration.\n\nDespite relatively deterministic movement along one axis, the equilibrium distributions show that the worms and larvae are dispersed over a significant range. This enables them to avoid local 'traps\u2019 arising from chemical or thermal cues.\n\n### C. elegans diffuse towards warmer temperatures during isothermal tracking\n\nAs noted in the Introduction, we applied our diffusion analysis to the distinctive C. elegans behavior of isothermal tracking (Hedgecock and Russell, 1975; Luo et al., 2006). In this behavior, worms placed near their original cultivation temperature ($T_{c\u2062u\u2062l\u2062t}$) will follow isotherms with extreme precision, indicating a high degree of sensitivity in their thermal response. Since the temperature in our 1D thermal gradient is approximately constant in the $y$-direction, we expect to observe qualitatively different trajectories, with more prominent movement in that direction, and very limited navigation in the perpendicular $x$-direction.\n\nAlthough we do observe greater diffusion and navigation in the $y$-direction (Figure 4B), an examination of $x$-direction navigation revealed a significant asymmetry. The long-term equilibrium position probability distributions ($P_{x}$ and $P_{y}$) are approximately constant in $y$, but not in $x$ (Figure 4C). In particular, there is an extremely low probability for the worms to be in the $T<T_{c\u2062u\u2062l\u2062t}$ region, and a substantially higher probability for them to occupy warmer regions. This suggests either a mild preference for $T>T_{c\u2062u\u2062l\u2062t}$, specific aversion to $T<T_{c\u2062u\u2062l\u2062t}$, or some other disruption of the traditional interpretation of isothermal tracking behavior.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30503/elife-30503-fig4-v1.jpg)\n\n**Figure 4.:** Isothermal tracking in C. elegans includes diffusion in the $x$-direction.(A) Experimental trajectories under temperature gradient conditions, with worms initially placed at their cultivation temperature of 15\u00b0C. Colors are used for the reader to distinguish between individual tracks. (B) The diffusion constants along the $x$ and $y$ directions, with $D_{y}$ dominating, but $D_{x}$ highly significant. Error bars are $\\pm$s.e.m. (C) MSM-generated equilibrium probabilities along the temperature gradient ($x$ axis) showing the long time scale distribution of the population of worms, and perpendicular to the temperature gradient along isotherms ($y$ axis). In $x$, worms avoid regions with low temperatures, but freely explore regions with higher temperature; in $y$, worms explore the axis with approximately equal probability. Analysis based on 25 experiments, with 688 tracks.\n\n## Discussion\n\nWe studied the navigation of C. elegans and Drosophila larvae in both isotropic environments and stimulus gradients to assess the relationship between directed movement toward target conditions and the diffusive properties of the overall search patterns. We also studied the negative thermotaxis of C. elegans moving toward colder temperatures and the positive thermotaxis of Drosophila larvae moving towards warmer temperatures. These behavioral modes represent the better studied forms of thermotaxis in these animals. We then examined the ascent and descent of C. elegans moving toward preferred salt concentrations.\n\nTreating the motion of small animals in isotropic environments as diffusive random walks is an established method (Berg and Brown, 1972; Berg, 1993), even yielding analytic solutions under certain conditions (Lovely and Dahlquist, 1975). Here, we have focused on diffusion along perpendicular axes, and used Markov analysis techniques to investigate the combination of exploratory diffusion and targeted navigation. We found that the general framework of diffusion and Markov processes can be used to combine a large number of short trajectories obtained under identical conditions in both isotropic environments and in the presence of stimulus gradients. This approach made it possible for the first time to quantify the statistics of a random search that is concurrent with steady progression towards favorable environments. In both animals and across stimulus types, we found importantly that random exploration in all directions and across all time scales is remarkably robust to progression in a selected direction in a graded environment. That is, the animals undergo diffusive motion (as opposed to ballistic) in both the $x$- and $y$-directions, even during persistent navigation along the $x$-axis. The diffusion coefficients $D_{x}$ and $D_{y}$ are not equal during thermotaxis and chemotaxis, but $D$ vs. $t$ plots become approximately constant, indicating a diffusive regime. When nematodes and insect larvae encounter stimuli that bias their random walks in specific directions, the effectiveness of random searching is largely unaffected either parallel or orthogonal to the direction of motion. In these animals, a constraint on the mechanisms that generate navigation in a preferred direction appears to be the preservation of the statistics of random exploration in all directions across time scales. Analysis of the entropy of trajectory configurations, which avoids settling into traps, provides information that is not readily apparent in conventional metrics of drift rates and stimulus-evoked turn rates. Moreover, the approach makes possible large-scale and long time descriptions of the navigational dynamics beyond those available from the standard localized run \u2014\u00a0turn \u2014\u00a0run measurements.\n\nWe found, in both animal model systems investigated here, that the transition from ballistic to diffusive motion during navigation occurs over a ~1000 s time scale, which is longer than most behavior experiments in studies of these animals. Experiments are typically limited by animals leaving the arena, especially for faster\u00a0moving late instar Drosophila larvae. Combined with the observation, in broad agreement with recent results from other experimenters (Calhoun et al., 2014), that the rate of behavioral transitions changes over time (especially in worms), it is possible that further behavioral transitions at longer time scales have yet to observed. Experimental techniques that enable long-time-scale measurements may be essential for uncovering a more complete picture of the behavior in these animal systems. This would also enable further testing of the probability distributions predicted by the Markov state model.\n\nAdditionally, we note that the transition to more global searching (lower turning rate) occurs at very different times in the two model systems under consideration here. We speculate that the much greater mass of the second instar Drosophila larva would allow it to delay the transition, as it can afford more time without food. While the global search transition in larvae was not observed on the time scales used here, further experiments could illuminate the issue, such as comparisons in turning rates between fed and starved larvae of the same age\u2014starved animals effectively perform searches, even if not placed in a behavioral arena.\n\nBy drawing distinctions between the behavioral transition rates in different crawling directions, we note that the overall changes in the average turning rate (Figure 2) are not accompanied by changes in the ratios of the turning rates. This means the navigational bias is preserved, while other aspects of search strategy are modulated. However, the navigational dynamics studied in the cases presented here are rather simple. Consequently, this work may be considered a proof of principle of the utility of employing methods developed for protein folding to understand the behavior of worms and larvae. It will be of interest to study their navigational dynamics in complex conditions with various obstacles, which in the language of protein folding give rise to both enthalpic and entropic barriers. It is important to know where the bottlenecks are in the navigational dynamics towards the target. How the dynamics changes with time (i.e. learning or habituation) in response to different stimuli and different cultivation conditions should also be examined. We expect that to study such questions the description of the dynamics as diffusion on a free-energy landscape will be useful for obtaining a global understanding of the processes involved.\n\n## Materials and methods\n\n### Worm and larva handling\n\nAdult N2 wild-type worms were raised on agar plates ($2%$ wt./vol) with NGM food. For each experiment, around 20 worms (each approximately 1 mm long) were selected under a dissection microscope, rinsed, and placed with a pipette onto the behavior arena in small water droplets. Upon evaporation of the water droplets, the worms began crawling and their movement was recorded.\n\nWild-type (Canton-S) adult flies were kept in cages (Genesee Scientific) with 6 cm Petri dishes with grape juice and yeast food, with new plates exchanged every 24 hr. Larvae were collected from the plates, with second instar larvae selected by age (24-72\u00a0hr AEL) and spiracle development of each individual. The typical larva size at this instar is 1-2 mm in length. For each experiment, between 20 and 30 larvae were rinsed in distilled water, allowed to crawl on agar gel (3% wt./vol) for 5 min, then placed in the behavior arena for video tracking of navigation.\n\nFor both worms and larvae, all animals for the experiment are placed on the agar surface together, near the center, with approximately 1 cm separating each animal. Given the small fraction of the available space taken up by the animals, collisions are infrequent. Importantly, when a collision does occur, the event is not flagged as a turn for the purposes of turning rate computation (see below), so if the collision rate decreases over time as animals spread out, the extracted turning rate is not affected.\n\n### Video acquisition and behavioral analysis\n\nA 5 MP CCD camera placed above the arena recorded crawling, with images acquired at 5 Hz. Movies were processed using the MAGAT Analyzer software (Gershow et al., 2012), which extracts the position and shape of each animal. Subsequent analysis using custom MATLAB scripts (source code download available, Source code 1) segmented the path of each crawling animal into tracks comprised of a sequence of runs (periods of straight crawling) and turns (cessation of forward movement and orientation to a new direction). The run-turn-run-\u2026\u00a0sequences were used for navigation analysis, and the raw trajectories used for diffusion and Markov state model distributions.\n\nThe turning rate describes how often animals alter their crawling direction, and changing turning rate as a function of crawling direction is the primary behavioral modulation that leads to navigation. We compute the turning rate in the following way. In a given time window, animal $i$ makes $n_{i}$ turns, with periods of forward crawling (\u2018runs\u2019) in between, each run $j$ of duration $\u0394\u2062t_{j}$ (see Figure 1A,A\u2019). The total time spent during runs for this animal is $T_{i}=\\sum\u0394\u2062t_{j}$. The turning rate for the individual animal $i$ is $r_{i}=n_{i}/T_{i}$, and the total turning rate for the population during this window is $R=N/T$, where $N=\\sumn_{i}$ and $T=\\sumT_{i}$. In particular, $T$ is the total time where an animal could have turned but failed to do so. In Figures 2 and 3 turning rates $R_{\\theta}$ are computed for different crawling directions, where only turns and runs that occur within the specified cone of crawling direction are counted.\n\nFor a navigation strength metric, we used the dimensionless drift velocity, $<v_{x}>/<v>$, the average velocity of the population in the $x$-direction, normalized by the overall average speed during runs. This serves as a dimensionless measure of navigation strength. A value of +1 would correspond to every animal crawling directly along the $+x$ direction for the entire experiment; a value of $-1$ would correspond to $-x$ direction crawling; and a value of $0$ would indicate no movement at all, or no bias in crawling direction. For both worms and fly larvae, isotropic conditions result in a very small (order 0.01) navigation strength, while in thermal or chemical gradient environments the navigation strength is of order $0.1$. This metric is also employed in (Luo et al., 2010; Gershow et al., 2012; Klein et al., 2015). Green arrows in Figure 1A,A\u2019, Figure 2A, and Figure 3A indicate the navigation strengths for the full population measured.\n\n### Stimulus delivery\n\nFor both Drosophila larvae and adult C. elegans, a temperature-controlled 2D platform established a 1D linear spatial gradient. A large aluminum metal block one each side was maintained at a constant temperature. The cold side was maintained with two thermoelectric coolers (TECs) under PID control, with chilled circulating liquid (a water and anti-freeze mixture) acting as a dissipation reservoir. The hot side was maintained using resistive heaters under PID control. A thin aluminum slab connected the two blocks, which established a smooth linear gradient in the $x$-direction and constant temperature for fixed $x$ in the $y$-direction. An agar gel (3% wt./vol. for larvae, 2% wt./vol. for worms) was placed on the slab. For larva experiments, the temperature across the gel ranged from 13\u00b0C to 21\u00b0C (17\u00b0C in the center, 0.36\u00b0C/cm gradient); for worm experiments, the temperature range was 18\u00b0C to 22\u00b0C (20\u00b0C in the center, 0.19\u00b0C/cm gradient).\n\nFor C. elegans experiments using salt concentration gradients, agar gels were poured in two stages to establish a stable, linear salt concentration gradient. We followed the procedure outlined in Luo et al. (2014).\n\n### Determination of steady state and equilibrium probabilities\n\nThe equilibrium probabilities ($P_{e\u2062q}\u2062(x)$ and $P_{e\u2062q}\u2062(y)$) were computed using the Markov state model (MSM) formalism. To this end, the coordinate (either $x$ or $y$) was partitioned into bins with size $\u0394=1$ and the numbers of transitions from bin $i$ to bin $j$ after time interval $\u0394\u2062t$ ($n_{j\u2062i}\u2062(\u0394\u2062t)$) were computed. The transition probability matrix $P_{j\u2062i}\u2062(\u0394\u2062t)$, the probability to move to bin $j$ from bin $i$ after time interval $\u0394\u2062t$ was estimated as $P_{j\u2062i}\u2062(\u0394\u2062t)=n_{j\u2062i}\u2062(\u0394\u2062t)/\\sum_{j}n_{j\u2062i}\u2062(\u0394\u2062t)$. This matrix describes the time evolution of the probability vector as $P_{i}\u2062(t+\u0394\u2062t)=\\sum_{j}P_{i\u2062j}\u2062(\u0394\u2062t)\u2062P_{j}\u2062(t)$. The stationary, steady state probability distribution $P^{s\u2062t}$ is computed as the solution of equation $P_{i}^{s\u2062t}=\\sum_{j}P_{i\u2062j}\u2062(\u0394\u2062t)\u2062P_{j}^{s\u2062t}$.\n\nWe have also checked whether reversibility and detailed balance are satisfied. First, we computed the steady state fluxes in positive $J^{+}\u2062(x)=\\sum_{j<x<i}J_{i\u2062j}$ and negative $J^{-}\u2062(x)=\\sum_{i<x<j}J_{i\u2062j}$ directions, where $J_{i\u2062j}=P_{i\u2062j}\u2062(\u0394\u2062t)\u2062P_{j}^{s\u2062t}$ is the steady state flux from bin $j$ to bin $i$. The fluxes agree with high accuracy (Figure 2\u2014figure supplement 1A), meaning that the net flux is zero and we can consider the steady state probability as the equilibrium probability.\n\nThe detailed balance, is a more stringent condition, where the fluxes between any two bins must be equal $J_{i\u2062j}=J_{j\u2062i}$. Due to the limited statistics, and thus higher noise, direct comparison of the fluxes between bins is not informative. We compared a related quantity \u2014the steady state fluxes in positive $J_{a}^{+}\u2062(x)=\\sum_{i,a<x<i}J_{i\u2062a}+\\sum_{i,i<x<a}J_{a\u2062i}$ and negative $J_{a}^{-}\u2062(x)=\\sum_{i,a<x<i}J_{i\u2062a}+\\sum_{i,i<x<a}J_{a\u2062i}$ directions, restricted to transitions to or from a particular node ($a$). The fluxes between bin $x$ and bin $a$ are proportional to the derivatives $d/d\u2062x\u2062J_{a}^{+}\u2062(x)$ and $d/d\u2062x\u2062J_{a}^{-}\u2062(x)$ and hence from $J_{a}^{+}\u2062(x)\u223cJ_{a}^{-}\u2062(x)$ it follows that $J_{x\u2062a}\u223cJ_{a\u2062x}$. Figure 2 supplemental A compares $J_{a}^{+}\u2062(x)$ and $J_{a}^{-}\u2062(x)$ for e.g., $a=2$. Increasing statistics by considering all the bins in $1.5<a<2.5$ improves the agreement.\n\nThe sampling interval (the lag time) $\u0394\u2062t$ should be chosen sufficiently large so that the dynamics become Markovian. Figure 2 supplemental B shows how with increasing lag time the determined equilibrium probabilities converge to the limiting one.\n\nInclusion of other parameters such as the body angle and whether the animals were stationary or moving did not significantly change the results.\n\n### Determination of diffusion coefficients\n\nFor flat free-energy profiles, with no drift term, $F\u2062(x)\u223cconst$, the diffusion coefficient can be estimated as $D_{x}\u2062(t)=\\frac{1}{2}\u2062\u27e8\u0394\u2062x^{2}\u2062(t)\u27e9/t$. For free-energy profiles with constant drift term, $F\u2062(x)\u223ca\u2062x$, $D_{x}\u2062(t)=\\frac{1}{2}\u2062\u27e8(\u0394\u2062x-\u0394\u2062x_{a\u2062v\u2062g})^{2}\u27e9/t$, where $\u0394\u2062x_{a\u2062v\u2062g}=\u27e8\u0394\u2062x\u27e9$ is the averages of the corresponding displacements after the time interval $t$. The statistical uncertainties were estimated by bootstrapping.\n\n### Change-point detection in C. elegans trajectories\n\nThe change points in Figure 1 (supplemental) were computed using the \u2018findchangepts\u2019 function in MATLAB, which detects the point in a sequence with the maximum difference between the means of values below the point and the mean of the values above the point.\n",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "10b310d9-73d0-400c-81d2-d38da3cffd3d",
+      "submission_id": "db010b0a-e77e-46d1-a887-e3f99de3f37f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30503.014](https://doi.org/10.7554/eLife.30503.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Exploratory search during directed navigation in C. elegans and Drosophila larva\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors attempted to apply the framework of diffusion processes and Markov State Models (MSMs) to analyze the navigational dynamics of C. elegans and Drosophila larva in an isotropic environment and environments with temperature or salt concentration gradients. They found that in the absence of external stimuli, both organisms follow deterministic dynamics at small time scales, while switch to stochastic (or diffusive) dynamics at long time scales. It was further shown that the introduction of temperature or chemical stimuli has little impact on the diffusive random motion, even though worms eventually navigate towards the favorable environments. Overall, the results provide new insights in understanding navigational dynamics of different organisms and point at possibilities of applying methodologies of analyzing protein folding simulations to these navigational trajectories.\n\nEssential revisions:\n\nThe analogy made between the navigation organisms and protein folding should be better explained in the text, especially in the introduction part. The manuscript will be stronger if the authors can elaborate further the link between the search process approaching to non-equilibrium steady state, and the free energy landscape of protein folding, beyond stating that \"the navigational dynamics of worms and larvae have some parallels with the complex dynamics of a polypeptide chain navigating to the native structure of the protein to which it corresponds. Both dynamics are stochastic, both need to avoid traps due to local minima, and both were developed by evolution. Hence it is of interest to see whether approaches developed for understanding protein folding dynamics can be used to study the navigational dynamics of worms and larvae.\u2026\" Protein folding free energy landscape is rugged and contains numerous metastable states leading to the separation of timescales. For the navigational dynamics of worms, are there also metastable states along the direction of the gradient? Judging from Figure 2C and C' (right panel), it seems that a number of metastable regions do exist. If so, what are the features of these states?\n\nThe manuscript needs to further demonstrate the Markovian nature of the studied diffusive and thus the applicability of MSM analysis? When MSMs are applied to protein folding, it is implied that the detailed balance is satisfied due to the reversibility of molecular dynamics simulations. Is this the case also for worms' navigational trajectories? When the authors calculate the transition counts, do they observe a symmetric pattern? In particular, do they observe substantially more counts moving forward than backward along the stimulus gradient (e.g. the first panel in Figure 2C)? If their data is largely deviated from the detailed balance, the authors may not obtain faithful estimation of the equilibrium populations.\n\nIt would be great if the authors can provide evidence to show that, as stated in the manuscript, there are no active movements. For example, histograms of displacements showing in average there is no net movement will serve this purpose.\n\nThe organisms or active particles do reveal biased movements in the short time scale (ballistic motions). The authors should comment on why no biased movements appear in the long time scale (no stimulus), even though there is basically no energetic constraint for the active particles.\n\nC. elegans and Drosophila larva display different behaviors in their navigational dynamics. For example, the transition from local to global search for C. elegans occurs at ~900s (with turn rate reduced by half), while this transition occurs at a longer timescale (relatively constant turn rate). From the biological point of view, could the authors provide some explanation?\n",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e23a70bd-8330-48f3-ae63-f776a759344f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C1",
+      "claim": "Many organisms\u2014from bacteria to nematodes to insect larvae\u2014navigate their environments by biasing random movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Many organisms\u2014from bacteria to nematodes to insect larvae\u2014navigate their environments by biasing random movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about organism navigation that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "1e40a205-d81e-46c5-b126-d69ba9714437",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C2",
+      "claim": "In isotropic environments, navigation can be characterized as an essentially diffusive and undirected process.",
+      "claim_type": "EXPLICIT",
+      "source": "In these organisms, navigation in isotropic environments can be characterized as an essentially diffusive and undirected process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and analysis presented in the manuscript, particularly in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "d36dfff7-b04e-4f35-a504-ca6ea2a03e61",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C3",
+      "claim": "In stimulus gradients, movement decisions are biased to drive directed navigation toward favorable environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In stimulus gradients, movement decisions are biased to drive directed navigation toward favorable environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 3, and draws from established knowledge in the field.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "914d6fae-cc0d-49da-bd1b-4eb8dae7db5f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C4",
+      "claim": "The statistics of random exploration in any direction are little affected by directed movement along a stimulus gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the statistics of random exploration in any direction are little affected by directed movement along a stimulus gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the diffusion analysis presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "02e18e67-07d0-4b60-9b56-37217f579b65",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C5",
+      "claim": "A key constraint on the behavioral strategies of these organisms appears to be the preservation of their capacity to continuously explore their environments in all directions even while moving toward favorable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A key constraint on the behavioral strategies of these organisms appears to be the preservation of their capacity to continuously explore their environments in all directions even while moving toward favorable conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data and analysis presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "0af4f25a-a3c2-42c9-9d91-d722900cd4d4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C6",
+      "claim": "The swimming behavior of Escherichia coli is characterized by an alternating sequence of runs and tumbles.",
+      "claim_type": "EXPLICIT",
+      "source": "A classic example is the swimming behavior of Escherichia coli (; Berg, 1993), which is characterized by an alternating sequence of runs and tumbles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Berg, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9d71515a-29e5-40fa-94b0-dc93ffacaa19",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C7",
+      "claim": "During runs, bacteria swim in roughly straight lines.",
+      "claim_type": "EXPLICIT",
+      "source": "During runs, the bacteria swim in roughly straight lines, while during tumbles, the bacteria move erratically in place, ultimately picking the direction of a new run at random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial behavior, supported by the citation to Berg, 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "5a1cfa14-2b70-4305-a3aa-b5a5dbf8d8d7",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C8",
+      "claim": "During tumbles, bacteria move erratically in place and pick the direction of a new run at random.",
+      "claim_type": "EXPLICIT",
+      "source": "During runs, the bacteria swim in roughly straight lines, while during tumbles, the bacteria move erratically in place, ultimately picking the direction of a new run at random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial behavior, supported by the citation to Berg, 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e579008d-1ad3-4618-830e-7c436bb753ad",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C9",
+      "claim": "The trajectories of larger animals like nematodes and insect larvae are qualitatively similar to bacterial trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectories of larger animals like nematodes and insect larvae are qualitatively similar (Pierce-Shimomura et al., 1999; Luo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pierce-Shimomura et al., 1999 and Luo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "21e8ce21-8071-4440-916d-c5ae05d8968d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C10",
+      "claim": "Caenorhabditis elegans alternate periods of forward movement with either large angle reorientation maneuvers called pirouettes or small angle turns.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans alternate periods of forward movement with either large angle reorientation maneuvers called pirouettes or small angle turns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans behavior, supported by the preceding citation to Pierce-Shimomura et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "2d68fafb-a4af-466b-b7b1-2b9414dcd0f7",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C11",
+      "claim": "Crawling Drosophila larvae alternate periods of forward movement with turns where they pause forward motion and use the angle of head swings to pick a new forward orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Crawling Drosophila larvae alternate periods of forward movement with turns (Lahiri et al., 2011) where they pause forward motion and use the angle of head swings to pick a new forward orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lahiri et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "2e22979c-8bfe-4ae6-a818-bef5de909687",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C12",
+      "claim": "C. elegans modulates its random exploration in isotropic environments over time.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans also modulates its random exploration in isotropic environments over time (Wakabayashi et al., 2004; Chalasani et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wakabayashi et al., 2004 and Chalasani et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "18c45855-78a5-4bcc-a236-9c377b37d1c3",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C13",
+      "claim": "When a worm is placed in a new environment, it first executes a local search, where runs are short.",
+      "claim_type": "EXPLICIT",
+      "source": "When a worm is placed in a new environment, it first executes a local search, where runs are short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the preceding citations to Wakabayashi et al., 2004 and Chalasani et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "576b092c-8d87-441c-9e47-dc1d981f4408",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C14",
+      "claim": "Over time, worms transition to a global search with longer runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, worms transition to a global search with longer runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the preceding citations to Wakabayashi et al., 2004 and Chalasani et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ab973c0b-665c-44e6-9020-f23e361481e5",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C15",
+      "claim": "It has been suggested that the transition between local and global searching is discontinuous.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the transition between local and global searching is discontinuous (Calhoun et al., 2014), and that local search and global search represent two distinct behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Calhoun et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7993b536-d661-4fc8-83f6-d80082f6b785",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C16",
+      "claim": "Local search and global search represent two distinct behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the transition between local and global searching is discontinuous (Calhoun et al., 2014), and that local search and global search represent two distinct behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Calhoun et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "af114355-b4a2-42f5-ae58-bf63d7c9b7ac",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C17",
+      "claim": "Bacteria, nematodes, and insect larvae bias their random walks toward favorable environments by modulating the statistics of transitions between forward-moving runs and reorientation events.",
+      "claim_type": "EXPLICIT",
+      "source": "In stimulus gradients, bacteria, nematodes, and insect larvae bias their random walks toward favorable environments by modulating the statistics of transitions between forward-moving runs and reorientation events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field and is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "de6c2178-ef9f-45b9-9e6d-8c3fa988d359",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C18",
+      "claim": "All three organisms exhibit longer runs when pointed toward favorable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all three organisms exhibit longer runs when pointed toward favorable conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field and is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "4c1bf4a9-5b35-4e48-bc41-d947adbdea96",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C19",
+      "claim": "Worms and larvae augment the time spent pointed toward favorable directions by increasing the probability of ending reorientation events with a run pointed in a favorable direction or by gradually steering runs toward favorable directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms and larvae further augment the time spent pointed toward favorable directions by increasing the probability of ending reorientation events with a run pointed in a favorable direction or by gradually steering runs toward favorable directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field and is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c0fbd266-a5a2-4acf-adb9-f0b0ff07cfdb",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C20",
+      "claim": "The navigational dynamics of worms and larvae have parallels with the complex dynamics of a polypeptide chain navigating to the native structure of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The navigational dynamics of worms and larvae have some parallels with the complex dynamics of a polypeptide chain navigating to the native structure of the protein to which it corresponds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "2c084933-ae30-43e9-835e-2bacaa3ab88a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C21",
+      "claim": "Both protein folding and organism navigation are examples of stochastic search processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are examples of stochastic search processes: the protein needs to fold to the correct native structure, while an organism needs to find food and favorable temperatures, for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "b9e0ed73-1844-4c53-877e-f2aa4a388914",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C22",
+      "claim": "A purely random search would lead to the Levinthal paradox for protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "For the protein folding case, it would lead to the Levinthal paradox; that is, it would take an essentially infinite amount of time to fold, while in fact it takes on the order of seconds to minutes (Zwanzig et al., 1992; Karplus, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zwanzig et al., 1992 and Karplus, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "db175e28-05bb-49a2-9fa4-da38aa8a2de2",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C23",
+      "claim": "Protein folding takes on the order of seconds to minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the protein folding case, it would lead to the Levinthal paradox; that is, it would take an essentially infinite amount of time to fold, while in fact it takes on the order of seconds to minutes (Zwanzig et al., 1992; Karplus, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zwanzig et al., 1992 and Karplus, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "24addab6-bc56-4c7e-a4ee-33434352c83a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C24",
+      "claim": "The stochastic search of a protein is biased toward the native structure by the potential energy, which is encoded in the sequence as the result of evolutionary selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic search of a protein is biased toward the native structure by the potential energy, which is encoded in the sequence as the result of evolutionary selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f0c1a679-e5ac-477b-945f-7a19648fbb90",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C25",
+      "claim": "The stochastic component of the biased search is necessary to avoid being trapped in local minima on the potential energy surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic component of the biased search is necessary to avoid being trapped in local minima on the potential energy surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9eff5f38-b119-4f0b-b09c-0c3d012cfb01",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C26",
+      "claim": "Trapping in metastable states has been observed in protein folding trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Trapping in such metastable states has been observed in protein folding trajectories, where an escape is made possible only by the stochastic nature of the dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "5ab0b1c6-a458-4204-b6ec-808a12be125f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C27",
+      "claim": "A purely random search would be very inefficient for organism navigation due to the large size of the space accessible in their normal environment.",
+      "claim_type": "EXPLICIT",
+      "source": "A purely random search would by very inefficient due to the large size of the space accessible in their normal environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on general principles of search efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "cf76fbea-9053-442e-8230-83f0a74e28b5",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C28",
+      "claim": "Living organisms use cues to bias their search.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, living organisms use cues to bias their search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge and is supported by the experimental data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e607f7e3-15b0-48ac-a0af-2344660ce265",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C29",
+      "claim": "A temperature gradient plays the role of the potential energy in organism navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is a temperature gradient which plays the role of the potential energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "90cbc652-c820-41d0-8a21-d9a5f8028c8b",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C30",
+      "claim": "A purely deterministic search would not be effective for organism navigation because there can be traps (local minima) in the accessible space.",
+      "claim_type": "EXPLICIT",
+      "source": "A purely deterministic search would not be effective here either, because there can be traps (local minima) in the accessible space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on general principles of search efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "aaf7d9da-6658-4ae6-9e64-08ca1d455ff4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C31",
+      "claim": "A stochastic component in the biased search allows organisms to overcome the trapping problem.",
+      "claim_type": "EXPLICIT",
+      "source": "A stochastic component in the biased search allows the organisms to overcome the trapping problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on general principles of search efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "d10eaa85-fbba-4370-a098-b9403ac4827b",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C32",
+      "claim": "The actual details of the navigational dynamics are specified by the neural circuitry that enervates the muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The actual details of the navigational dynamics are specified by the neural circuitry that enervates the muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in neuroscience and behavioral biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "a6ae0101-0a39-4c06-bf6c-1778ac423e28",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C33",
+      "claim": "The neural circuitry is optimized by evolution, in analogy to the amino acid sequence in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This is optimized by evolution, in analogy to the amino acid sequence in proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "b62989a3-ba56-4b10-9baa-4e0ff0b42ea5",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C34",
+      "claim": "Folding dynamics can be quantitatively described as diffusion (random walk) on a free-energy landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "The folding dynamics can be quantitatively described as diffusion (random walk) on a free-energy landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7e79875b-554a-4ce7-b470-24d4284342c4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C37",
+      "claim": "The free-energy barrier between unfolded and folded states defines the bottleneck of the folding reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The free-energy barrier between unfolded and folded states defines the bottleneck of the folding reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "609e73cc-2b3f-481d-83f8-b596e1f53b08",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C38",
+      "claim": "The diffusion coefficient describes how quickly the system explores the configuration space.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion coefficient describes how quickly the system\u2014whether a worm, larvae, or peptide sequence\u2014explores the configuration space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in statistical mechanics and the conceptual framework proposed by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "b10c2658-22ff-420e-a69f-ce8112b4f39c",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C39",
+      "claim": "The free-energy barrier and the diffusion coefficient together determine the rate of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the free-energy barrier and the diffusion coefficient determine the rate of the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in statistical mechanics and chemical kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e0229d54-d2b8-43ea-a3f6-c9b9676be8fe",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C40",
+      "claim": "The free-energy landscape framework is generic and has been successfully applied to many different types of complex dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We note also that the free-energy landscape framework is generic and has been successfully applied to many different types of complex dynamics, for example, the dynamics of the game of chess (Krivov, 2011b) or patient recovery dynamics after kidney transplant (Krivov et al., 2014), as well as to protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Krivov, 2011b and Krivov et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "2ffccac5-df18-4245-ae37-bb0a28ed87f4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C41",
+      "claim": "The free-energy landscape framework has been applied to the dynamics of the game of chess.",
+      "claim_type": "EXPLICIT",
+      "source": "We note also that the free-energy landscape framework is generic and has been successfully applied to many different types of complex dynamics, for example, the dynamics of the game of chess (Krivov, 2011b) or patient recovery dynamics after kidney transplant (Krivov et al., 2014), as well as to protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Krivov, 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c1d860a3-9ee8-4700-a190-f343d70dabbd",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C42",
+      "claim": "The free-energy landscape framework has been applied to patient recovery dynamics after kidney transplant.",
+      "claim_type": "EXPLICIT",
+      "source": "We note also that the free-energy landscape framework is generic and has been successfully applied to many different types of complex dynamics, for example, the dynamics of the game of chess (Krivov, 2011b) or patient recovery dynamics after kidney transplant (Krivov et al., 2014), as well as to protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Krivov et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "52996e12-bc82-48cc-9880-588fa83d47fe",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C43",
+      "claim": "There are many variants of detailed motions which are likely to result in very similar larger scale navigational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are many variants of detailed motions, which are likely to result in very similar larger scale navigational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9650dd19-c4df-4855-86bd-40cef5ddef67",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C44",
+      "claim": "It is the invariants of large-scale dynamics that are expected to be optimized by evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is of interest to understand and accurately characterize the invariants of large-scale dynamics. It is precisely these invariants that are expected to be optimized by evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and speculation based on evolutionary principles.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ff7a0f55-30ba-4f2c-8131-c594b5c340af",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C45",
+      "claim": "A description using the free-energy landscape framework can provide an intuitive picture of the complex navigational dynamics as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a description making use of the free-energy landscape framework can provide an intuitive picture of the complex navigational dynamics as a whole, versus the localized description of dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conceptual framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "046b5b89-8ccf-4fbf-a35e-4ed12ffd3e17",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C46",
+      "claim": "The free-energy landscape framework could be used to locate equilibrium populations, biases, and bottlenecks during navigation toward the target in complex environments.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be used, in particular, to locate equilibrium populations, biases, and bottlenecks during the navigation toward the target in complex environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "fafe1f2f-eff7-4c77-95af-e5dc0adf981a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C47",
+      "claim": "The free-energy landscape of a protein can be determined from long equilibrium trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The free-energy landscape of a protein can be determined from long equilibrium trajectories (Krivov and Karplus, 2004; Krivov, 2011a; Banushkina and Krivov, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Krivov and Karplus, 2004; Krivov, 2011a; and Banushkina and Krivov, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "0b9fee04-2b43-4aa1-9adb-219f998f36ed",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C48",
+      "claim": "The experimental trajectories of crawling animals are too short to be considered to be at equilibrium in comparison with those in the reversible folding/unfolding of proteins at equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the experimental trajectories of the crawling animals treated here are too short to be considered to be at equilibrium in comparison with those in the reversible folding/unfolding of proteins at equilibrium (Shaw et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with protein folding studies, supported by a citation to Shaw et al., 2010.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "3c8bd276-14e3-47c2-a249-7fdff435285a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C49",
+      "claim": "The Markov state model exploits the information contained in a large number of short trajectories measured under identical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the equilibrium properties, which are required for the construction of the free-energy landscape, we introduce another general approach to random dynamics, the Markov state model (MSM). This exploits the information contained in a large number of short trajectories measured under identical conditions (Lane et al., 2011; Rao and Caflisch, 2004; Krivov et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lane et al., 2011; Rao and Caflisch, 2004; and Krivov et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "20057818-bcd2-41dd-8c7b-64209d47b976",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C50",
+      "claim": "Dynamics are Markovian if the next crawling step of an animal depends only on its current spatial position.",
+      "claim_type": "EXPLICIT",
+      "source": "One refers to the dynamics as Markovian if the next crawling step of an animal depends only on its current spatial position; that is, it quickly forgets the history of its motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of Markovian dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "cdc8c3ba-d487-4e69-bb49-904aa7406817",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C51",
+      "claim": "A collection of short trajectories can be used to determine a probability distribution of future positions of the animal starting from a current position.",
+      "claim_type": "EXPLICIT",
+      "source": "A collection of short trajectories can then be used to determine a probability distribution of future positions of the animal starting from a current position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the Markov state model approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "1a47cca7-f016-4577-a502-1bae5adb960b",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C52",
+      "claim": "The steady state probability distribution can be determined from a collection of short trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the steady state probability distribution can be determined in this way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the Markov state model approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "cdaa0cbe-45a4-43cd-8678-011cc8d8d55e",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C53",
+      "claim": "The steady state distribution is the equilibrium distribution for the worms.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis is based on the construction of the transition probability matrix, as described in Materials and methods, where it is shown that the steady state distribution is, in fact, the equilibrium distribution for the worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c898a0cf-cd2c-4548-aa3b-b6107f202ef0",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C54",
+      "claim": "The transition probability matrix provides a complete description of the stochastic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This matrix provides a complete description of the stochastic dynamics and can be used to determine long time scale behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the Markov state model approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "3cc0ec9d-45dd-402c-a96f-11d229d2bdfe",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C55",
+      "claim": "Worms placed at their cultivation temperature do not strictly avoid warmer temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of a large number of trajectories with the MSM showed that worms do not strictly avoid warmer temperatures, potentially uncovering a different interpretation of isothermal tracking behavior (see Results section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the MSM analysis presented in the Results section, specifically Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "2f0b63fc-2373-4f4a-bcc4-37e13d3c39da",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C58",
+      "claim": "C. elegans and Drosophila larvae trajectories exhibit diffusive behavior under isotropic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These trajectories (Figure 1A,A') do exhibit diffusive behavior, but do not demonstrate active movement in a particular direction, as demonstrated by their very small values for the dimensionless drift velocity (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of trajectories under isotropic conditions, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9320dc94-72a5-4dce-8ac7-e877df186b7d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C59",
+      "claim": "C. elegans and Drosophila larvae do not demonstrate active movement in a particular direction under isotropic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These trajectories (Figure 1A,A') do exhibit diffusive behavior, but do not demonstrate active movement in a particular direction, as demonstrated by their very small values for the dimensionless drift velocity (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of trajectories under isotropic conditions, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "03c99cf8-5d98-49ba-90e7-2c0c14d45b95",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C61",
+      "claim": "C. elegans crawling under isotropic conditions drastically reduce their turning rate throughout an experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans crawling under isotropic conditions drastically reduce their turning rate (i.e. make longer runs) throughout an experiment (Figure 1B), as also noted in previous work (Calhoun et al., 2014); here, it is studied over a substantially longer time of ~1 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of C. elegans behavior under isotropic conditions, supported by Figure 1B and a citation to Calhoun et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "59d7a633-36ce-4584-9269-c9605b9b6e61",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C62",
+      "claim": "The turning rate of C. elegans under isotropic conditions decreases exponentially with a time constant of approximately 800 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the turning rate decreases exponentially with a time constant of approximately 800 s (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of C. elegans behavior under isotropic conditions, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "93ab7da2-6ce7-4bde-863f-ba1832d8cd10",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C63",
+      "claim": "Individual C. elegans trajectories do not show strong evidence of the turning rate undergoing an abrupt transition from local to global searching.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspecting the run durations for individual worm trajectories (Figure 1\u2014figure supplement 1), we do not see strong evidence of the turning rate undergoing an abrupt transition from local to global searching, but rather a regular decline, which in the population averages to steady exponential decay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of individual C. elegans trajectories, supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7cb9de1a-7dc3-471b-99a8-ec24765a65d3",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C64",
+      "claim": "C. elegans turning rate shows a regular decline which in the population averages to steady exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspecting the run durations for individual worm trajectories (Figure 1\u2014figure supplement 1), we do not see strong evidence of the turning rate undergoing an abrupt transition from local to global searching, but rather a regular decline, which in the population averages to steady exponential decay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of C. elegans trajectories, supported by Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "34bad489-c7c0-469a-adba-5b1433c085c4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C65",
+      "claim": "Frequent turns within a random walk will reduce the diffusion rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Turning rate has a clear connection to the dynamics, as frequent turns within a random walk will reduce the diffusion rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on general principles of random walk dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "539ca1fa-328e-4c2e-9fa0-dbe644547f4a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C66",
+      "claim": "For C. elegans under isotropic conditions, diffusion coefficients converge to different limiting values in the first and second halves of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the diffusion coefficients converge to different limiting values, with diffusion during the second part of the experiments nearly double that during the first part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of C. elegans behavior under isotropic conditions, supported by Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "3e35f695-e1c1-4804-b7d5-45aa8106694b",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C67",
+      "claim": "For C. elegans under isotropic conditions, diffusion during the second part of experiments is nearly double that during the first part.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the diffusion coefficients converge to different limiting values, with diffusion during the second part of the experiments nearly double that during the first part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of C. elegans behavior under isotropic conditions, supported by Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "d6819b79-372f-4e3b-82e7-e67bc4b50a41",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C70",
+      "claim": "Drosophila larvae under isotropic conditions exhibit similar behavior to C. elegans in terms of trajectory structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae under isotropic conditions (Figure 1A'\u2013C') exhibit similar behavior in terms of trajectory structure (Figure 1A') and the transition to a diffusive regime, but they do not exhibit a marked decline in turning rate (Figure 1B'), which stabilizes after only a few minutes and remains constant throughout their searching behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of Drosophila larvae behavior under isotropic conditions, supported by Figure 1A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "4e1c228b-38d1-4f55-b5d9-3df834e4cae3",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C71",
+      "claim": "Drosophila larvae under isotropic conditions do not exhibit a marked decline in turning rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae under isotropic conditions (Figure 1A'\u2013C') exhibit similar behavior in terms of trajectory structure (Figure 1A') and the transition to a diffusive regime, but they do not exhibit a marked decline in turning rate (Figure 1B'), which stabilizes after only a few minutes and remains constant throughout their searching behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of Drosophila larvae behavior under isotropic conditions, supported by Figure 1B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7a4ca042-3a70-456f-b1f2-fdb654bdab6b",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C72",
+      "claim": "Drosophila larvae turning rate stabilizes after only a few minutes and remains constant throughout their searching behavior under isotropic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila larvae under isotropic conditions (Figure 1A'\u2013C') exhibit similar behavior in terms of trajectory structure (Figure 1A') and the transition to a diffusive regime, but they do not exhibit a marked decline in turning rate (Figure 1B'), which stabilizes after only a few minutes and remains constant throughout their searching behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of Drosophila larvae behavior under isotropic conditions, supported by Figure 1B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6772aa50-054d-4864-9679-b7b684670394",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C73",
+      "claim": "The transition from local to global searching does not appear on the ~15-min time scales measured for Drosophila larva behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the transition from local to global searching does not appear on the ~15-min time scales we measured for larva behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of Drosophila larvae behavior under isotropic conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "21104a94-db28-44c3-8da2-590e949ecb87",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C81",
+      "claim": "Worms cultivated at 15\u00b0C and placed in a gradient centered at 20\u00b0C exhibited negative thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms cultivated at 15\u00b0C and placed in a gradient centered at 20\u00b0C exhibited negative thermotaxis (also called 'cryophilic' behavior), while larvae placed at 17.5\u00b0C in the same gradient crawled away from cold conditions, exhibiting positive thermotaxis to a preferred range that is independent of cultivation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "487ee32d-df51-411f-9983-73205f8bda49",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C82",
+      "claim": "Drosophila larvae placed at 17.5\u00b0C in a temperature gradient crawled away from cold conditions, exhibiting positive thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms cultivated at 15\u00b0C and placed in a gradient centered at 20\u00b0C exhibited negative thermotaxis (also called 'cryophilic' behavior), while larvae placed at 17.5\u00b0C in the same gradient crawled away from cold conditions, exhibiting positive thermotaxis to a preferred range that is independent of cultivation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "4543a96c-f240-4072-b5d3-cf1ef8c43d92",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C83",
+      "claim": "Drosophila larvae exhibit positive thermotaxis to a preferred range that is independent of cultivation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms cultivated at 15\u00b0C and placed in a gradient centered at 20\u00b0C exhibited negative thermotaxis (also called 'cryophilic' behavior), while larvae placed at 17.5\u00b0C in the same gradient crawled away from cold conditions, exhibiting positive thermotaxis to a preferred range that is independent of cultivation conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6bbe9736-8ca4-4e71-a0f1-905e797085c2",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C85",
+      "claim": "Navigation does not eliminate stochasticity along the axis of purposeful navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that navigation does not eliminate stochasticity along the axis of purposeful navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the diffusion analysis during thermotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "de619858-effa-482f-b8f3-4bb93ee64f9a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C86",
+      "claim": "Animals conduct a random search in all directions irrespective of whether they have adopted a target direction.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the animals conduct a random search in all directions irrespective of whether they have adopted a target direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the diffusion analysis during thermotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "01f0a27c-f38d-44ba-b7d6-cfb4e22b5533",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C88",
+      "claim": "There is a tradeoff between searching along an axis and purposeful travel in that direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there is a tradeoff between searching along an axis and purposeful travel in that direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the diffusion analysis during thermotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "1ea7727b-4446-491f-a8e6-016c5a74b8c6",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C90",
+      "claim": "Worms undergoing negative thermotaxis reorient their crawling direction more frequently when heading up the temperature gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, worms undergoing negative thermotaxis reorient their crawling direction more frequently when heading up the temperature gradient, and maintain longer runs when heading down the gradient (Figure 2B, lower right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "68740d81-237a-4e71-85b9-c8a2f8da4054",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C91",
+      "claim": "Worms undergoing negative thermotaxis maintain longer runs when heading down the temperature gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, worms undergoing negative thermotaxis reorient their crawling direction more frequently when heading up the temperature gradient, and maintain longer runs when heading down the gradient (Figure 2B, lower right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c49becdb-6f27-4420-8c6d-b8588ab9943a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C92",
+      "claim": "Thermotaxing Drosophila larvae have a higher turning rate when crawling toward aversive colder conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxing larvae, similarly, have a higher turning rate when crawling toward aversive colder conditions, and maintain longer runs crawling up the gradient (Figure 2B', lower right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c44e1b04-07e4-481f-a759-f0c4090243e9",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C93",
+      "claim": "Thermotaxing Drosophila larvae maintain longer runs crawling up the temperature gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxing larvae, similarly, have a higher turning rate when crawling toward aversive colder conditions, and maintain longer runs crawling up the gradient (Figure 2B', lower right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "71485ec9-0823-4d92-b674-468385d27e4f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C94",
+      "claim": "During thermotaxis, worms decrease their turning rate over time.",
+      "claim_type": "EXPLICIT",
+      "source": "As was true for isotropic conditions, worms decrease their turning rate over time (and larvae maintain a stable level).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "1e3272da-6e12-4800-a1fb-8f3eee09d414",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C95",
+      "claim": "During thermotaxis, Drosophila larvae maintain a stable turning rate level.",
+      "claim_type": "EXPLICIT",
+      "source": "As was true for isotropic conditions, worms decrease their turning rate over time (and larvae maintain a stable level).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "fdc9d6d6-add8-41fe-a17c-e0068942c11f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C96",
+      "claim": "During thermotaxis, both C. elegans and Drosophila larvae maintain an approximately constant ratio between toward-warm turning rates and toward-cold turning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both animals maintain an approximately constant ratio between toward-warm turning rates and toward-cold turning rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the thermotaxis experiments, supported by Figure 2B,B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "03768425-2bf4-41bf-9709-59f68ba20a31",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C97",
+      "claim": "The primary navigational bias that produces thermotaxis is not altered at long time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the primary navigational bias that produces thermotaxis is not altered, even at long time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of turning rate ratios during thermotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6c5f097b-a8ce-4342-8cf7-d547d91f3cea",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C98",
+      "claim": "The constancy of the turning rate ratio supports the method of using early behavior to model long term behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this supports the method of using early behavior to model long term behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the validity of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e6175dad-3066-4ff1-b3fc-bdb367291c94",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C104",
+      "claim": "C. elegans chemotax either up or down salt gradients, depending on the baseline salt level.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms chemotax either up or down salt gradients, depending on the baseline salt level (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the chemotaxis experiments, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ee623f5f-32c4-4d2d-9458-07adde1f538d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C105",
+      "claim": "At low baseline salt concentrations (25 mM), C. elegans move toward higher salt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "At low baseline salt concentrations (25 mM), worms move toward higher salt levels, and at high concentrations (75 mM) they crawl down the gradient toward lower salt levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the chemotaxis experiments, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "015c7d84-5987-48ad-849d-bb2b0ef8b796",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C106",
+      "claim": "At high salt concentrations (75 mM), C. elegans crawl down the gradient toward lower salt levels.",
+      "claim_type": "EXPLICIT",
+      "source": "At low baseline salt concentrations (25 mM), worms move toward higher salt levels, and at high concentrations (75 mM) they crawl down the gradient toward lower salt levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the chemotaxis experiments, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "85929db3-8402-4aad-bbf2-196089d31abf",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C107",
+      "claim": "During chemotaxis, C. elegans behavior converges to diffusive behavior at longer times.",
+      "claim_type": "EXPLICIT",
+      "source": "As with thermal navigation, worm behavior converges to diffusive behavior at longer times (Figure 3B), and local searching transitions gradually to global searching via a reduced turning rate (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the chemotaxis experiments, supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c570f0f8-0f72-4aca-93ec-f5e819bd21c4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C108",
+      "claim": "During chemotaxis, C. elegans local searching transitions gradually to global searching via a reduced turning rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As with thermal navigation, worm behavior converges to diffusive behavior at longer times (Figure 3B), and local searching transitions gradually to global searching via a reduced turning rate (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the chemotaxis experiments, supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "4828f157-26e0-4026-b654-646d0db2e78a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C109",
+      "claim": "The Markov state model predicts equilibrium population distributions consistent with the net motion of the population during chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Markov state model predicts equilibrium population distributions consistent with the net motion of the population (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Markov state model analysis of chemotaxis, supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f587b1b4-c32e-487a-a0c9-8effd34e13be",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C116",
+      "claim": "The general framework of diffusion and Markov processes can be used to combine a large number of short trajectories obtained under identical conditions in both isotropic environments and in the presence of stimulus gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have focused on diffusion along perpendicular axes, and used Markov analysis techniques to investigate the combination of exploratory diffusion and targeted navigation. We found that the general framework of diffusion and Markov processes can be used to combine a large number of short trajectories obtained under identical conditions in both isotropic environments and in the presence of stimulus gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the analyses presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "41d9b60b-9d67-424d-ac67-2ac58263ca03",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C117",
+      "claim": "Random exploration in all directions and across all time scales is remarkably robust to progression in a selected direction in a graded environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In both animals and across stimulus types, we found importantly that random exploration in all directions and across all time scales is remarkably robust to progression in a selected direction in a graded environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the analyses presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7fee7c37-91bb-4377-b9cf-ddc424cd31ca",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C119",
+      "claim": "When nematodes and insect larvae encounter stimuli that bias their random walks in specific directions, the effectiveness of random searching is largely unaffected either parallel or orthogonal to the direction of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "When nematodes and insect larvae encounter stimuli that bias their random walks in specific directions, the effectiveness of random searching is largely unaffected either parallel or orthogonal to the direction of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the analyses presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f2948276-9b05-4508-aa01-711c31c5da12",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C120",
+      "claim": "A constraint on the mechanisms that generate navigation in a preferred direction appears to be the preservation of the statistics of random exploration in all directions across time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "In these animals, a constraint on the mechanisms that generate navigation in a preferred direction appears to be the preservation of the statistics of random exploration in all directions across time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the primary findings of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6e5ff956-0dbf-49aa-8ffc-ba56f959e71e",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C121",
+      "claim": "Analysis of the entropy of trajectory configurations provides information that is not readily apparent in conventional metrics of drift rates and stimulus-evoked turn rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the entropy of trajectory configurations, which avoids settling into traps, provides information that is not readily apparent in conventional metrics of drift rates and stimulus-evoked turn rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the value of the analytical approach used in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "aa02b5e3-f34c-4383-802d-8496f90d002a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C122",
+      "claim": "The approach makes possible large-scale and long time descriptions of the navigational dynamics beyond those available from the standard localized run \u2014 turn \u2014 run measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the approach makes possible large-scale and long time descriptions of the navigational dynamics beyond those available from the standard localized run \u2014 turn \u2014 run measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the value of the analytical approach used in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "98f4f196-b62d-471e-ba91-2c20da75f38f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C123",
+      "claim": "The transition from ballistic to diffusive motion during navigation occurs over a ~1000 s time scale in both C. elegans and Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, in both animal model systems investigated here, that the transition from ballistic to diffusive motion during navigation occurs over a ~1000 s time scale, which is longer than most behavior experiments in studies of these animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "7952bb14-0cd7-4450-941f-f94956f2d71c",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C124",
+      "claim": "The ~1000 s time scale for transition from ballistic to diffusive motion is longer than most behavior experiments in studies of these animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, in both animal model systems investigated here, that the transition from ballistic to diffusive motion during navigation occurs over a ~1000 s time scale, which is longer than most behavior experiments in studies of these animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with typical experimental durations in the field.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9660680d-5fff-4cf7-a897-fac1191859a9",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C125",
+      "claim": "It is possible that further behavioral transitions at longer time scales have yet to be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the observation, in broad agreement with recent results from other experimenters (Calhoun et al., 2014), that the rate of behavioral transitions changes over time (especially in worms), it is possible that further behavioral transitions at longer time scales have yet to observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and comparison with other work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "290a7ed6-0a3c-429a-885e-34fbfd0a9c78",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C126",
+      "claim": "Experimental techniques that enable long-time-scale measurements may be essential for uncovering a more complete picture of the behavior in these animal systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental techniques that enable long-time-scale measurements may be essential for uncovering a more complete picture of the behavior in these animal systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experimental directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "60a71460-f40c-4adb-aad0-c4ed9db90ba9",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C127",
+      "claim": "The transition to more global searching (lower turning rate) occurs at very different times in C. elegans and Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we note that the transition to more global searching (lower turning rate) occurs at very different times in the two model systems under consideration here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of C. elegans and Drosophila larvae behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "44121455-f9b3-4171-800c-c00ad1604aa1",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C128",
+      "claim": "The much greater mass of the second instar Drosophila larva would allow it to delay the transition to global searching, as it can afford more time without food.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the much greater mass of the second instar Drosophila larva would allow it to delay the transition, as it can afford more time without food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological basis for the observed difference.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e1c06912-582e-45df-92ba-fda06bae0650",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C129",
+      "claim": "The overall changes in the average turning rate are not accompanied by changes in the ratios of the turning rates.",
+      "claim_type": "EXPLICIT",
+      "source": "By drawing distinctions between the behavioral transition rates in different crawling directions, we note that the overall changes in the average turning rate (Figure 2) are not accompanied by changes in the ratios of the turning rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of turning rates during thermotaxis, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c95e7e3d-ae39-46e4-8efd-329552de8071",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C130",
+      "claim": "The navigational bias is preserved, while other aspects of search strategy are modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "This means the navigational bias is preserved, while other aspects of search strategy are modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of turning rates during thermotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "9fab7daf-afb1-4f51-8429-b4755c7b3d86",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C131",
+      "claim": "This work may be considered a proof of principle of the utility of employing methods developed for protein folding to understand the behavior of worms and larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this work may be considered a proof of principle of the utility of employing methods developed for protein folding to understand the behavior of worms and larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "43ef5327-5fa2-4a33-9ced-e2a902a35ae4",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C132",
+      "claim": "The description of the dynamics as diffusion on a free-energy landscape will be useful for obtaining a global understanding of navigational processes in complex conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that to study such questions the description of the dynamics as diffusion on a free-energy landscape will be useful for obtaining a global understanding of the processes involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c99cf3d7-b439-49ec-a04b-1d6c3682ef2f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C134",
+      "claim": "For each C. elegans experiment, around 20 worms (each approximately 1 mm long) were selected under a dissection microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "For each experiment, around 20 worms (each approximately 1 mm long) were selected under a dissection microscope, rinsed, and placed with a pipette onto the behavior arena in small water droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about worm handling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "8febc6f6-d848-4299-9014-675e44daa3ed",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C135",
+      "claim": "Wild-type (Canton-S) adult flies were kept in cages with 6 cm Petri dishes with grape juice and yeast food.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type (Canton-S) adult flies were kept in cages (Genesee Scientific) with 6 cm Petri dishes with grape juice and yeast food, with new plates exchanged every 24 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about fly handling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "27a63283-370e-4daa-8c84-846f62228246",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C136",
+      "claim": "Second instar Drosophila larvae were selected by age (24-72 hr AEL) and spiracle development.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae were collected from the plates, with second instar larvae selected by age (24-72 hr AEL) and spiracle development of each individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about larva handling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "bcd559aa-e849-4ddc-aab4-e8318b8fc178",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C137",
+      "claim": "The typical larva size at second instar is 1-2 mm in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical larva size at this instar is 1-2 mm in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about larva characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ca34bd30-3177-4391-b354-733c92933a0f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C138",
+      "claim": "A 5 MP CCD camera placed above the arena recorded crawling, with images acquired at 5 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "A 5 MP CCD camera placed above the arena recorded crawling, with images acquired at 5 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about video acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f4596489-7293-4884-82bc-3bd84836973d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C139",
+      "claim": "Movies were processed using the MAGAT Analyzer software.",
+      "claim_type": "EXPLICIT",
+      "source": "Movies were processed using the MAGAT Analyzer software (Gershow et al., 2012), which extracts the position and shape of each animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about video processing, supported by a citation to Gershow et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "994129d0-bf44-41b0-9fd7-cb21f2ff156f",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C140",
+      "claim": "For larva experiments, the temperature across the gel ranged from 13\u00b0C to 21\u00b0C (17\u00b0C in the center, 0.36\u00b0C/cm gradient).",
+      "claim_type": "EXPLICIT",
+      "source": "For larva experiments, the temperature across the gel ranged from 13\u00b0C to 21\u00b0C (17\u00b0C in the center, 0.36\u00b0C/cm gradient); for worm experiments, the temperature range was 18\u00b0C to 22\u00b0C (20\u00b0C in the center, 0.19\u00b0C/cm gradient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about stimulus delivery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "67e71c77-5210-4b6f-847e-6817c1b5a5bb",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C141",
+      "claim": "For worm experiments, the temperature range was 18\u00b0C to 22\u00b0C (20\u00b0C in the center, 0.19\u00b0C/cm gradient).",
+      "claim_type": "EXPLICIT",
+      "source": "For larva experiments, the temperature across the gel ranged from 13\u00b0C to 21\u00b0C (17\u00b0C in the center, 0.36\u00b0C/cm gradient); for worm experiments, the temperature range was 18\u00b0C to 22\u00b0C (20\u00b0C in the center, 0.19\u00b0C/cm gradient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about stimulus delivery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "a44e94e3-3bb5-4dc6-b9cc-e6514f024cea",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C142",
+      "claim": "For C. elegans experiments using salt concentration gradients, agar gels were poured in two stages to establish a stable, linear salt concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For C. elegans experiments using salt concentration gradients, agar gels were poured in two stages to establish a stable, linear salt concentration gradient. We followed the procedure outlined in Luo et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about stimulus delivery, supported by a citation to Luo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6d6da19a-d17f-4b52-9e13-d55ad471c4ed",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C144",
+      "claim": "The steady state fluxes in positive and negative directions agree with high accuracy, meaning that the net flux is zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluxes agree with high accuracy (Figure 2\u2014figure supplement 1A), meaning that the net flux is zero and we can consider the steady state probability as the equilibrium probability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the reversibility analysis, supported by Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "3990c907-844d-4734-a836-7c3fe06790aa",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C145",
+      "claim": "The steady state probability can be considered as the equilibrium probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluxes agree with high accuracy (Figure 2\u2014figure supplement 1A), meaning that the net flux is zero and we can consider the steady state probability as the equilibrium probability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the reversibility analysis, supported by Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "e43d981d-dbd1-46be-bc13-b69132c3c0e8",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "claim_id": "C146",
+      "claim": "With increasing lag time the determined equilibrium probabilities converge to the limiting one.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 supplemental B shows how with increasing lag time the determined equilibrium probabilities converge to the limiting one.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Markov state model analysis, supported by Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8d9fd82-8caf-4638-957a-360329cffbad",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Under isotropic conditions, both C. elegans and Drosophila larvae exhibit diffusive behavior without active directional movement. This is demonstrated by very small dimensionless drift velocities and convergence to diffusive dynamics at longer time scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C58, and C59 are well-supported by Figure 1 data showing diffusive trajectories and minimal drift velocities (~0.01-0.04) under isotropic conditions. The experimental evidence clearly demonstrates undirected diffusive motion in both species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ea02fad6-aa09-489f-a15b-31de491aab47",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C. elegans under isotropic conditions show a gradual exponential decline in turning rate with a time constant of ~800s, rather than an abrupt transition between local and global search states. Individual trajectories show regular decline that averages to steady exponential decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are supported by Figure 1B and Figure 1\u2014figure supplement 1, which show exponential decay in turning rate and individual trajectory analysis. This contradicts prior work (C15-C16) suggesting discontinuous transitions, making this a significant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "192b8d7a-d8cf-41b9-a14f-80a59e250a46",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For C. elegans under isotropic conditions, diffusion coefficients in the second half of experiments are nearly double those in the first half, consistent with the reduced turning rate over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by Figure 1C data and the theoretical relationship (C65) between turning rate and diffusion. The doubling of diffusion coefficient matches the approximate halving of turning rate, providing internal consistency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "8d2daf3c-b14e-481a-bed9-bae09f113173",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Drosophila larvae under isotropic conditions exhibit similar trajectory structure to C. elegans but maintain a stable turning rate after initial stabilization (~2 minutes), without the marked decline seen in worms. The local-to-global search transition does not appear on the ~15-minute experimental timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are well-supported by Figure 1A'-C' showing stable turning rates in larvae versus declining rates in worms. This represents a clear species difference in search strategy modulation over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "0766310c-c77e-4b96-8d9f-ec089cb4db32",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "C. elegans cultivated at 15\u00b0C exhibit negative thermotaxis when placed in a gradient centered at 20\u00b0C, while Drosophila larvae exhibit positive thermotaxis independent of cultivation conditions when placed at 17.5\u00b0C in the same gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 are supported by Figure 2A trajectory data showing clear directional bias. The dimensionless drift velocities (~0.1-0.4) are approximately 10-fold higher than isotropic conditions, confirming directed navigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "0b382c77-18aa-401e-baa7-ab005adfaacf",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During thermotaxis, both species maintain significant diffusion in all directions (Dx and Dy both substantial), indicating that random exploration persists alongside directed navigation. The statistics of random exploration are remarkably robust to progression in a selected direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C85-C86, C117, and C119 are strongly supported by Figure 2B,B' showing persistent diffusion in both x and y directions during thermotaxis. This is a central finding of the manuscript demonstrating that navigation does not eliminate stochasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f07bd7ed-eaa0-46f9-953d-5ef95c4e8db2",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "There is a tradeoff between searching along an axis and purposeful travel in that direction, as evidenced by Dy > Dx during thermotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by Figure 2B,B' showing consistently higher diffusion perpendicular to the gradient (Dy) than parallel (Dx). However, the manuscript does not quantify this tradeoff or explore its mechanistic basis, limiting the depth of support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f04be8d4-6e63-4ce5-862c-29705c19d5aa",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both C. elegans and Drosophila larvae bias their navigation by modulating turning rates based on crawling direction: higher turning rates when moving toward aversive conditions and longer runs when moving toward preferred conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 are supported by Figure 2B,B' showing directional turning rate modulation. This is consistent with established knowledge (C17-C19) and provides quantitative confirmation in the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "d56ed450-1c68-4507-bad9-1ab6d40e415a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During thermotaxis, worms decrease overall turning rate over time while larvae maintain stable rates, but both species maintain approximately constant ratios between toward-warm and toward-cold turning rates. This constancy of navigational bias supports using early behavior to model long-term behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 are supported by Figure 2B,B' showing temporal dynamics of turning rates and their ratios. The preservation of turning rate ratios despite overall rate changes is an important methodological validation for the MSM approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "6a882c60-71e1-4b7f-9ed9-5d9f88a241c5",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Markov state model analysis demonstrates that steady-state distributions represent equilibrium distributions, as evidenced by zero net flux (reversibility) and convergence of equilibrium probabilities with increasing lag time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C144-C146 are supported by Figure 2\u2014figure supplement 1 showing flux agreement and convergence. This validates a key assumption of the MSM approach, though the manuscript acknowledges limited statistics at long times.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "C. elegans exhibit bidirectional chemotaxis in salt gradients depending on baseline concentration: moving toward higher salt at 25mM baseline and toward lower salt at 75mM baseline. Behavior converges to diffusive dynamics at longer times with gradually reduced turning rates, and MSM predictions match population distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C109 are supported by Figure 3 data showing bidirectional chemotaxis, diffusion convergence, and MSM-predicted equilibrium distributions. This demonstrates the generality of findings beyond thermotaxis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "a1254b38-5917-4832-8dfc-146dc4611ee7",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "During isothermal tracking, C. elegans placed at cultivation temperature do not strictly avoid warmer temperatures, showing asymmetric probability distributions with low probability for T<Tcult but substantial probability for T>Tcult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by Figure 4C showing asymmetric equilibrium probability distributions. This challenges traditional interpretations of isothermal tracking behavior and represents a novel finding enabled by the MSM approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "c1eb4c6b-f72f-4604-a9dc-3e9989de2475",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The transition from ballistic to diffusive motion occurs over a ~1000s timescale in both species, which is longer than most behavioral experiments in these animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C124 are supported by Figure 1B,B' and Figure 2B,B' showing D(t) convergence. The comparison to typical experiment durations (C124) is reasonable but not rigorously quantified against literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "ca666196-97b6-4bc3-bb57-5606efdc9373",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The transition to global searching (lower turning rate) occurs at very different times in C. elegans versus Drosophila larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C127 is clearly supported by comparing Figure 1B (worms show ~800s time constant) versus Figure 1B' (larvae stabilize within minutes). This represents a clear species difference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "01b21a2d-bab1-45a4-b540-36465035e38d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Overall changes in average turning rate during thermotaxis are not accompanied by changes in the ratios of turning rates, meaning navigational bias is preserved while other search strategy aspects are modulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C130 are supported by Figure 2B,B' showing stable turning rate ratios despite changing overall rates. This distinguishes between different aspects of behavioral modulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "5f8c68e6-d748-4573-87e0-d02927e167b9",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The framework of diffusion and Markov processes can combine short trajectories under identical conditions in both isotropic and gradient environments. A key constraint on navigation mechanisms appears to be preservation of random exploration statistics in all directions across time scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116 and C120 summarize the main methodological and biological conclusions. They are well-supported by the collective evidence from Figures 1-4, though C120 represents an inference about evolutionary constraints rather than direct experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose an analogy between organism navigation and protein folding as stochastic search processes, with temperature gradients playing the role of potential energy and neural circuitry optimized by evolution analogous to amino acid sequences. This work serves as proof-of-principle for applying protein folding methods to behavioral analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C20-C21, C29, C33, and C131 present a conceptual framework and analogy. While the MSM and diffusion analysis methods are successfully applied, the depth of the analogy is limited. The manuscript does not construct actual free-energy landscapes or demonstrate that the analogy provides predictive power beyond what diffusion analysis alone provides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "02df9460-92d7-4a57-bbdc-d5a105974a9d",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors speculate that further behavioral transitions may exist at longer timescales, that longer experiments may be essential for complete behavioral characterization, that larval mass differences may explain delayed search transitions, and that free-energy landscape descriptions will be useful for complex navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C125-C126, C128, and C132 are explicitly speculative (marked as SPECULATION in evidence_type). While reasonable hypotheses, they lack experimental support and represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Markov state model (MSM) approach is introduced to determine equilibrium properties from short trajectories, exploiting information from multiple trajectories measured under identical conditions. The method assumes Markovian dynamics where future positions depend only on current position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 and C54 describe the MSM methodology with appropriate citations. The approach is validated by reversibility analysis (C144-C145) and convergence tests (C146). However, the manuscript does not thoroughly test the Markovian assumption or quantify memory effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    },
+    {
+      "id": "f4d26cb2-e8d3-40eb-bdc0-48458ff57176",
+      "content_id": "22bac36c-adc5-44b1-a23e-11453df39bb8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The diffusion and MSM analysis approaches provide information not readily apparent in conventional metrics and enable large-scale, long-time descriptions beyond standard run-turn-run measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C121-C122 are supported by the novel findings about isothermal tracking (C55) and the ability to characterize long-timescale behavior from short trajectories. The added value over conventional analysis is demonstrated but not systematically quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:50:16.873698Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e40a205-d81e-46c5-b126-d69ba9714437",
+      "result_id": "f8d9fd82-8caf-4638-957a-360329cffbad"
+    },
+    {
+      "claim_id": "2f0b63fc-2373-4f4a-bcc4-37e13d3c39da",
+      "result_id": "f8d9fd82-8caf-4638-957a-360329cffbad"
+    },
+    {
+      "claim_id": "9320dc94-72a5-4dce-8ac7-e877df186b7d",
+      "result_id": "f8d9fd82-8caf-4638-957a-360329cffbad"
+    },
+    {
+      "claim_id": "03c99cf8-5d98-49ba-90e7-2c0c14d45b95",
+      "result_id": "ea02fad6-aa09-489f-a15b-31de491aab47"
+    },
+    {
+      "claim_id": "59d7a633-36ce-4584-9269-c9605b9b6e61",
+      "result_id": "ea02fad6-aa09-489f-a15b-31de491aab47"
+    },
+    {
+      "claim_id": "93ab7da2-6ce7-4bde-863f-ba1832d8cd10",
+      "result_id": "ea02fad6-aa09-489f-a15b-31de491aab47"
+    },
+    {
+      "claim_id": "7cb9de1a-7dc3-471b-99a8-ec24765a65d3",
+      "result_id": "ea02fad6-aa09-489f-a15b-31de491aab47"
+    },
+    {
+      "claim_id": "539ca1fa-328e-4c2e-9fa0-dbe644547f4a",
+      "result_id": "192b8d7a-d8cf-41b9-a14f-80a59e250a46"
+    },
+    {
+      "claim_id": "3e35f695-e1c1-4804-b7d5-45aa8106694b",
+      "result_id": "192b8d7a-d8cf-41b9-a14f-80a59e250a46"
+    },
+    {
+      "claim_id": "34bad489-c7c0-469a-adba-5b1433c085c4",
+      "result_id": "192b8d7a-d8cf-41b9-a14f-80a59e250a46"
+    },
+    {
+      "claim_id": "d6819b79-372f-4e3b-82e7-e67bc4b50a41",
+      "result_id": "8d2daf3c-b14e-481a-bed9-bae09f113173"
+    },
+    {
+      "claim_id": "4e1c228b-38d1-4f55-b5d9-3df834e4cae3",
+      "result_id": "8d2daf3c-b14e-481a-bed9-bae09f113173"
+    },
+    {
+      "claim_id": "7a4ca042-3a70-456f-b1f2-fdb654bdab6b",
+      "result_id": "8d2daf3c-b14e-481a-bed9-bae09f113173"
+    },
+    {
+      "claim_id": "6772aa50-054d-4864-9679-b7b684670394",
+      "result_id": "8d2daf3c-b14e-481a-bed9-bae09f113173"
+    },
+    {
+      "claim_id": "21104a94-db28-44c3-8da2-590e949ecb87",
+      "result_id": "0766310c-c77e-4b96-8d9f-ec089cb4db32"
+    },
+    {
+      "claim_id": "487ee32d-df51-411f-9983-73205f8bda49",
+      "result_id": "0766310c-c77e-4b96-8d9f-ec089cb4db32"
+    },
+    {
+      "claim_id": "4543a96c-f240-4072-b5d3-cf1ef8c43d92",
+      "result_id": "0766310c-c77e-4b96-8d9f-ec089cb4db32"
+    },
+    {
+      "claim_id": "914d6fae-cc0d-49da-bd1b-4eb8dae7db5f",
+      "result_id": "0b382c77-18aa-401e-baa7-ab005adfaacf"
+    },
+    {
+      "claim_id": "6bbe9736-8ca4-4e71-a0f1-905e797085c2",
+      "result_id": "0b382c77-18aa-401e-baa7-ab005adfaacf"
+    },
+    {
+      "claim_id": "de619858-effa-482f-b8f3-4bb93ee64f9a",
+      "result_id": "0b382c77-18aa-401e-baa7-ab005adfaacf"
+    },
+    {
+      "claim_id": "41d9b60b-9d67-424d-ac67-2ac58263ca03",
+      "result_id": "0b382c77-18aa-401e-baa7-ab005adfaacf"
+    },
+    {
+      "claim_id": "7fee7c37-91bb-4377-b9cf-ddc424cd31ca",
+      "result_id": "0b382c77-18aa-401e-baa7-ab005adfaacf"
+    },
+    {
+      "claim_id": "01f0a27c-f38d-44ba-b7d6-cfb4e22b5533",
+      "result_id": "f07bd7ed-eaa0-46f9-953d-5ef95c4e8db2"
+    },
+    {
+      "claim_id": "1ea7727b-4446-491f-a8e6-016c5a74b8c6",
+      "result_id": "f04be8d4-6e63-4ce5-862c-29705c19d5aa"
+    },
+    {
+      "claim_id": "68740d81-237a-4e71-85b9-c8a2f8da4054",
+      "result_id": "f04be8d4-6e63-4ce5-862c-29705c19d5aa"
+    },
+    {
+      "claim_id": "c49becdb-6f27-4420-8c6d-b8588ab9943a",
+      "result_id": "f04be8d4-6e63-4ce5-862c-29705c19d5aa"
+    },
+    {
+      "claim_id": "c44e1b04-07e4-481f-a759-f0c4090243e9",
+      "result_id": "f04be8d4-6e63-4ce5-862c-29705c19d5aa"
+    },
+    {
+      "claim_id": "71485ec9-0823-4d92-b674-468385d27e4f",
+      "result_id": "d56ed450-1c68-4507-bad9-1ab6d40e415a"
+    },
+    {
+      "claim_id": "1e3272da-6e12-4800-a1fb-8f3eee09d414",
+      "result_id": "d56ed450-1c68-4507-bad9-1ab6d40e415a"
+    },
+    {
+      "claim_id": "fdc9d6d6-add8-41fe-a17c-e0068942c11f",
+      "result_id": "d56ed450-1c68-4507-bad9-1ab6d40e415a"
+    },
+    {
+      "claim_id": "03768425-2bf4-41bf-9709-59f68ba20a31",
+      "result_id": "d56ed450-1c68-4507-bad9-1ab6d40e415a"
+    },
+    {
+      "claim_id": "6c5f097b-a8ce-4342-8cf7-d547d91f3cea",
+      "result_id": "d56ed450-1c68-4507-bad9-1ab6d40e415a"
+    },
+    {
+      "claim_id": "cdaa0cbe-45a4-43cd-8678-011cc8d8d55e",
+      "result_id": "6a882c60-71e1-4b7f-9ed9-5d9f88a241c5"
+    },
+    {
+      "claim_id": "6d6da19a-d17f-4b52-9e13-d55ad471c4ed",
+      "result_id": "6a882c60-71e1-4b7f-9ed9-5d9f88a241c5"
+    },
+    {
+      "claim_id": "3990c907-844d-4734-a836-7c3fe06790aa",
+      "result_id": "6a882c60-71e1-4b7f-9ed9-5d9f88a241c5"
+    },
+    {
+      "claim_id": "e43d981d-dbd1-46be-bc13-b69132c3c0e8",
+      "result_id": "6a882c60-71e1-4b7f-9ed9-5d9f88a241c5"
+    },
+    {
+      "claim_id": "e6175dad-3066-4ff1-b3fc-bdb367291c94",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "ee623f5f-32c4-4d2d-9458-07adde1f538d",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "015c7d84-5987-48ad-849d-bb2b0ef8b796",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "85929db3-8402-4aad-bbf2-196089d31abf",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "c570f0f8-0f72-4aca-93ec-f5e819bd21c4",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "4828f157-26e0-4026-b654-646d0db2e78a",
+      "result_id": "10bd8b18-f964-4c78-8b9a-e80bbc8045f2"
+    },
+    {
+      "claim_id": "3cc0ec9d-45dd-402c-a96f-11d229d2bdfe",
+      "result_id": "a1254b38-5917-4832-8dfc-146dc4611ee7"
+    },
+    {
+      "claim_id": "98f4f196-b62d-471e-ba91-2c20da75f38f",
+      "result_id": "c1eb4c6b-f72f-4604-a9dc-3e9989de2475"
+    },
+    {
+      "claim_id": "7952bb14-0cd7-4450-941f-f94956f2d71c",
+      "result_id": "c1eb4c6b-f72f-4604-a9dc-3e9989de2475"
+    },
+    {
+      "claim_id": "60a71460-f40c-4adb-aad0-c4ed9db90ba9",
+      "result_id": "ca666196-97b6-4bc3-bb57-5606efdc9373"
+    },
+    {
+      "claim_id": "e1c06912-582e-45df-92ba-fda06bae0650",
+      "result_id": "01b21a2d-bab1-45a4-b540-36465035e38d"
+    },
+    {
+      "claim_id": "c95e7e3d-ae39-46e4-8efd-329552de8071",
+      "result_id": "01b21a2d-bab1-45a4-b540-36465035e38d"
+    },
+    {
+      "claim_id": "f587b1b4-c32e-487a-a0c9-8effd34e13be",
+      "result_id": "5f8c68e6-d748-4573-87e0-d02927e167b9"
+    },
+    {
+      "claim_id": "f2948276-9b05-4508-aa01-711c31c5da12",
+      "result_id": "5f8c68e6-d748-4573-87e0-d02927e167b9"
+    },
+    {
+      "claim_id": "c0fbd266-a5a2-4acf-adb9-f0b0ff07cfdb",
+      "result_id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff"
+    },
+    {
+      "claim_id": "2c084933-ae30-43e9-835e-2bacaa3ab88a",
+      "result_id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff"
+    },
+    {
+      "claim_id": "e607f7e3-15b0-48ac-a0af-2344660ce265",
+      "result_id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff"
+    },
+    {
+      "claim_id": "a6ae0101-0a39-4c06-bf6c-1778ac423e28",
+      "result_id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff"
+    },
+    {
+      "claim_id": "9fab7daf-afb1-4f51-8429-b4755c7b3d86",
+      "result_id": "3d36a7ae-da21-4c56-aa75-3c77ed2d3aff"
+    },
+    {
+      "claim_id": "9660680d-5fff-4cf7-a897-fac1191859a9",
+      "result_id": "02df9460-92d7-4a57-bbdc-d5a105974a9d"
+    },
+    {
+      "claim_id": "290a7ed6-0a3c-429a-885e-34fbfd0a9c78",
+      "result_id": "02df9460-92d7-4a57-bbdc-d5a105974a9d"
+    },
+    {
+      "claim_id": "44121455-f9b3-4171-800c-c00ad1604aa1",
+      "result_id": "02df9460-92d7-4a57-bbdc-d5a105974a9d"
+    },
+    {
+      "claim_id": "43ef5327-5fa2-4a33-9ced-e2a902a35ae4",
+      "result_id": "02df9460-92d7-4a57-bbdc-d5a105974a9d"
+    },
+    {
+      "claim_id": "0b9fee04-2b43-4aa1-9adb-219f998f36ed",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "3c8bd276-14e3-47c2-a249-7fdff435285a",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "20057818-bcd2-41dd-8c7b-64209d47b976",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "cdc8c3ba-d487-4e69-bb49-904aa7406817",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "1a47cca7-f016-4577-a502-1bae5adb960b",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "c898a0cf-cd2c-4548-aa3b-b6107f202ef0",
+      "result_id": "fca45ded-71f7-4adf-a2f5-d0da5bcdea7a"
+    },
+    {
+      "claim_id": "6e5ff956-0dbf-49aa-8ffc-ba56f959e71e",
+      "result_id": "f4d26cb2-e8d3-40eb-bdc0-48458ff57176"
+    },
+    {
+      "claim_id": "aa02b5e3-f34c-4383-802d-8496f90d002a",
+      "result_id": "f4d26cb2-e8d3-40eb-bdc0-48458ff57176"
+    }
+  ],
+  "comparisons": []
+}

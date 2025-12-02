@@ -1,0 +1,1770 @@
+{
+  "submission": {
+    "id": "ea01aca1-4cd9-4e25-b9b9-e89952f3d523",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:23:02.391451Z",
+    "updated_at": "2025-12-02T00:23:02.391451Z"
+  },
+  "content": [
+    {
+      "id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "submission_id": "ea01aca1-4cd9-4e25-b9b9-e89952f3d523",
+      "content_type": "manuscript",
+      "content_text": "# Ecological multiplex interactions determine the role of species for parasite spread amplification\n\n## Authors\n\n- Massimo Stella<sup>1</sup> ([ORCID: 0000-0003-1810-9699](https://orcid.org/0000-0003-1810-9699))\n- Sanja Selakovic<sup>2</sup>\n- Alberto Antonioni<sup>3</sup> ([ORCID: 0000-0002-5788-3348](https://orcid.org/0000-0002-5788-3348))\n- Cecilia S Andreazzi<sup>6</sup> ([ORCID: 0000-0002-9817-0635](https://orcid.org/0000-0002-9817-0635)) \u2020\n\n### Affiliations\n\n1. Institute for Complex Systems Simulation University of Southampton Southampton United Kingdom\n2. Faculty of Geosciences Utrecht University Utrecht Netherlands\n3. Department of Economics University College London London United Kingdom\n4. Grupo Interdisciplinar de Sistemas Complejos, Departamento de Matem\u00e1ticas Universidad Carlos III de Madrid Madrid Spain\n5. Institute for Biocomputation and Physics of Complex Systems University of Zaragoza Zaragoza Spain\n6. Fiocruz Mata Atl\u00e2ntica Funda\u00e7\u00e3o Oswaldo Cruz Rio de Janeiro Brazil\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite their potential interplay, multiple routes of many disease transmissions are often investigated separately. As a unifying framework for understanding parasite spread through interdependent transmission paths, we present the \u2018ecomultiplex\u2019 model, where the multiple transmission paths among a diverse community of interacting hosts are represented as a spatially explicit multiplex network. We adopt this framework for designing and testing potential control strategies for Trypanosoma cruzi spread in two empirical host communities. We show that the ecomultiplex model is an efficient and low data-demanding method to identify which species enhances parasite spread and should thus be a target for control strategies. We also find that the interplay between predator-prey and host-parasite interactions leads to a phenomenon of parasite amplification, in which top predators facilitate T. cruzi spread, offering a mechanistic interpretation of previous empirical findings. Our approach can provide novel insights in understanding and controlling parasite spreading in real-world complex systems.\n\n## Introduction\n\nZoonoses are infections naturally transmitted between animals and humans, and are the most important cause of emerging and re-emerging diseases in humans (Perkins et al., 2005; Jones et al., 2008; Lloyd-Smith et al., 2009). The majority of the zoonotic agents are multi-host pathogens or parasites (Ostfeld and Holt, 2004; Alexander et al., 2012), whose various host species may differ in their contribution to parasite transmission and persistence over space and time (Jansen et al., 2015; Rushmore et al., 2014). This heterogeneity of host species contribution to parasite transmission is related to differences in host species\u2019 abundance, exposure and susceptibility to infection (Haydon et al., 2002; Altizer et al., 2003; Streicker et al., 2013). Further, many multi-host parasites have complex life cycles with multiple transmission modes, such as vertical, direct contact, sexual, aerosol, vector-borne and/or food-borne (Webster et al., 2017).\n\nAmong the zoonotic parasites with multiple hosts and transmission modes, Trypanosoma cruzi (Kinetoplastida: Trypanosomatidae), a protozoan parasite which causes Chagas disease in humans, has a complex ecology that challenges transmission modelling and disease control (Noireau et al., 2009; Jansen et al., 2015; Sosa-Estani and Segura, 2015). T. cruzi has already been found in more than 100 mammalian species and its transmission may be mediated by several interdependent mechanisms (Noireau et al., 2009; Jansen et al., 2015; Coura et al., 2002). For instance, T. cruzi has a contaminative route of transmission that is mediated by several invertebrate vectors (Triatominae, eng. kissing bug) that gets infected when blood feeding on infected hosts. Susceptible hosts can get infected after scratching and rubbing the parasite-contaminated defecation matter onto the lesion of the bite of an infected vector (Kribs-Zaleta, 2006).\u00a0Transmission may also occur through a trophic route that cascades along the food-web when a susceptible predator feeds on infected vectors or preys (Noireau et al., 2009; Jansen et al., 2015). In general, sylvatic hosts do not suffer mortality from T. cruzi (Kribs-Zaleta, 2010) but the parasite establishes a lifelong infection in almost all of them\u00a0(Teixeira et al., 2011).\n\nChemical insecticides and housing improvement have been the main strategies for controlling Chagas disease in rural and urban areas of Latin America (Dias and Schofield, 1999). However, these strategies are proving to be inefficient in reducing transmission (Roque et al., 2013). This is possibly related to the maintenance and transmission of parasites among local wild mammalian hosts and its association with sylvatic triatomine vectors (Roque et al., 2013; Roque et al., 2008). Therefore, modelling parasite transmission in a way that is explicitly considering the ecology of wildlife transmission, is fundamental to understanding and predicting outbreaks.\n\nIn this work, we propose to address this challenge through the mathematical framework of multiplex networks (De Domenico et al., 2013; Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2016; Battiston et al., 2016), which have been successfully applied to epidemiology (Lima et al., 2015; De Domenico et al., 2016; Sanz et al., 2014) and ecology (Sonia K\u00e9fi et al., 2015; K\u00e9fi et al., 2016; Pilosof et al., 2017; Stella et al., 2016). Multiplex networks are multi-layer networks in which multi-relational interactions give rise to a collection of network layers so that the same node can engage in different interactions with different neighbours in each layer (Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2013).\n\nWe study the ecology of multi-host parasite spread by multiple routes of transmission and potential control strategies by developing the \u2018ecomultiplex\u2019 framework (short for ecological multiplex framework), Figure 1. This framework is powerful in modelling complex systems such as infectious diseases or parasite transmission in wildlife. Firstly, it allows to account for multiple types of interactions giving rise to parasite transmission with similar or different time scales. Secondly, the ecomultiplex framework uses metabolic theory (Jetz et al., 2004) for estimating species frequencies, which are known to influence parasite transmission (McCallum et al., 2001). Thirdly, by explicitly considering space, the model also allows to investigate the consequences of spatial structure on parasite transmission (Hudson et al., 2002).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig1-v2.jpg)\n\n**Figure 1.:** The background colouring on the right panels indicates that elements such as bushes, trees, grass and water areas are not present in the spatial embedding of the ecomultiplex model, where only the spatial network structure among close animal groups is considered.\n\nThe ecomultiplex framework is general in the sense that it can include many ecological interactions among a diverse set of species in a realistic ecosystem. We apply this \u2018ecomultiplex\u2019 formalism to investigating parasite spread in two vector and host communities in Brazil: Canastra (Rocha et al., 2013) and Pantanal (Herrera et al., 2011). We exploit the theoretical framework enriched with empirical data for designing and comparing different wild host immunisation strategies based on: (i) taxonomic/morphological features (e.g. immunising species belonging to the same taxonomic group or with similar body mass); (ii) species interaction patterns (e.g. immunising species feeding on the vector); and (iii) species\u2019 epidemiological role (e.g. immunising species with higher parasite prevalence). Multiplex network structure proved to be an efficient measure in predicting species epidemiological role in both ecosystems. More importantly, considering together multiple transmission mechanisms allowed us to identify a parasite amplification role played by some species of top predators that would not be captured when considering the transmission mechanisms separately.\n\n## Results\n\n### Network analysis\n\nWe start our analysis by investigating the layout of ecological interactions in Canastra and Pantanal (Figure 2a,b) obtained from animal diets and parasite infection rates (see also Appendix 1). Multiplex cartography for both Canastra and Pantanal (Figure 2c,d) shows that vectors are: (i) more connected and (ii) distribute their links more equally across the ecomultiplex layers than other species. Hence, vectors can get more easily infected in one layer and spread the parasite on another layer with equal likelihood. Hence, the cartography confirms that vectors facilitate parasite spread through their interactions. The local network structure around vectors in Canastra and Pantanal (Figure 2a,b) shows that vector colonies are in the Centre of star-like topologies on both layers. These results confirm that kissing bug vector species are pivotal for parasite spread, promoting it on both the food web and the vectorial layer. Although parasite diffusion can be hampered by removing vector colonies from the environment (Yamagata and Nakagawa, 2006), these immunisation strategies are not stable as vector reintroduction can happen shortly after elimination (Funk et al., 2013). Hence, we focus on immunisation strategies considering vectors\u2019 centrality in the ecomultiplex networks but immunising other species.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig2-v2.jpg)\n\n**Figure 2.:** (a) and (b) Food web layer and vectorial layer in Canastra (left) and Pantanal (right) biomes. Predators are highlighted in blue, preys in orange and the vectors in green. Interactions involving the insect are highlighted in red. Interactions involving other species are reported for completeness in blue. (c\u2013f): Multiplex cartography of the Canastra ecomultiplex network with 10% (c) and 25% (e) of total groups as vectors. Multiplex cartography of the Pantanal ecomultiplex network with 10% (d) and 25% (f) of total groups as vectors. The red line separates hub nodes, i.e. the most connected nodes within the 95th percentile of the total degree distribution. The cartography highlights the average trends of species: blue for predators, orange for preys, and green for vectors. As evident from (a\u2013e), vectors have higher total degree in the ecosystem and tend to distribute more equally their links across both the multiplex layers than all other species. Vectors are therefore pivotal in the ecosystem.\n\n### Immunisation strategies\n\nAs expected, immunising species with the highest parasite infection rate (Hemoculture) is the best strategy for hampering parasite spread for both Canastra and Pantanal (Figure 3). This epidemiological strategy slows down parasite spread by almost 30% in Canastra and 26% in Pantanal when the parasite spreads mainly on the food-web layer ($p_{v}=0.1$) (Figure 3). Immunising species interacting with vectors on the vectorial layer (an ecomultiplex strategy) also performs better than random. The difference between the epidemiological and the ecomultiplex strategies is present only at low vector frequencies ($f_{v}=0.1$) in both Canastra (Figure 3a) and Pantanal Figure 3c) but vanishes when $f_{v}=0.25$ and $p_{v}>0.2$ (Figure 3b,d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig3-v2.jpg)\n\n**Figure 3.:** The infection time increase plotted on the y-axis is defined in Immunisation Strategies (Methods and Materials). An increase of\u00a0+0.3 indicates that the infection time in a given immunisation scenario was 30% higher than in the reference case of random immunisation.\n\nIn Canastra, when 10% of the animal groups are vector colonies (Figure 3a), biological immunisation strategies are equivalent to immunising species at random. The performance of biological immunisation changes dramatically when vector colonies become more frequent (Figure 3b). Immunising large mammals decreases by 12% the global infection time when $p_{v}=0.1$, suggesting that large mammals do not facilitate parasite transmission in the model. Immunising all the Didelphidae species leads to similar results (Figure 3b). Modest increases in infection time are reported for immunising Cricetidae species when $p_{v}=0.2$ (Figure 3b). Immunising species feeding on the vector (insectivores) is equivalent to random immunisation (sign Test, p-values$>0.1$).\n\nIn Pantanal, immunising parasitised mammals, parasitised Didelphidae and species with the highest infection rates (Hemoculture 3) are at least two times more effective in slowing down parasite spread compared to other strategies (Figure 3c,d). Contrary to what happens in Canastra, when $f_{v}=0.1$ and the parasite spreads mainly on the food web ($p\\leq0.2$), immunising parasitised Didelphidae hampers parasite diffusion more than immunising all parasitised mammals (sign Test, p-value$<0.01$) (Figure 3c). Immunising insectivores or large mammals is equivalent to random immunisation (Figure 3c). Immunising Cricetidae species always performs worse than random immunisation (Figure 3c,d).\n\n### Top predators can lead to parasite amplification\n\nIn Canastra, the strategy Hemoculture three includes also immunising one species of top predator, the Leopardus pardalis (ocelot) (see Appendix 7\u2014figure 1). We compare the performances of Hemoculture three against another immunisation strategy where instead of the ocelot we immunise another top predator, the Chrysocyon brachyurus (maned wolf), which had negative T. cruzi infection rate in this area (Rocha et al., 2013). In general, top predators are related to parasite transmission control in natural environments (Wobeser, 2013) so we did not expected differences between different predators.\n\nInstead, results from Figure 4 indicate a drastic increase of global infection time when a predator with positive parasite infection rate is immunised. This indicates that in Canastra the Leopardus pardalis has an amplification effect in spreading the parasite (Figure 3b). This phenomenon crucially depends on the ecomultiplex structure, as discussed in the following section.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig4-v2.jpg)\n\n**Figure 4.:** The other top predator is the maned wolf (Chrysocyon brachiurus).\n\n## Discussion\n\nWe introduce ecomultiplex networks as a powerful theoretical framework for modelling transmission of multi-host parasites by multiple routes in species-rich communities. We identify three key points related to the model. Firstly, we show that network structure offers insights on which host species facilitate parasite spread. Secondly, we show that the structure of species interactions can be as useful as epidemiological, taxonomic and morphological traits in controlling parasite transmission. Thirdly, we identify for the first time that the interdependent interactions of top predators affect their functional role in facilitating parasite transmission rather than hampering it.\n\nEcomultiplex strategies always outperform strategies based on species taxonomic groups, which neglect species\u2019 interactions. Further, network structure allows to design immunisation strategies performing as well as strategies considering empirical parasite infection rate, with the advantage of requiring less data. This quantitatively suggests the importance of jointly considering vector-host and predator-prey interactions for understanding T. cruzi transmission in wildlife (Coura, 2006; Johnson et al., 2010; Penczykowski et al., 2016). Although Pantanal and Canastra differ in species composition and their ecological interactions, immunising species exposed to contaminative infection through the vectorial layer proves to be efficient at all vectorial layer importances in both ecosystems. This underlines the importance of vectorial transmission for boosting parasite spread also in the food web. Importantly, the ecomultiplex model allows to quantitatively investigate the interplay between the multiple types of interactions leading to parasite transmission, an element conjectured being crucial for better understanding the ecology of wildlife diseases (Lafferty et al., 2008; Dunne et al., 2013; Funk et al., 2013).\n\nThe ecomultiplex model provides insights on how species influence parasite spread. In Pantanal, immunising only Didelphidae with positive parasitaemia (i.e. infection rates) slows down parasite spread more than immunising all mammals with positive parasitaemia. This finding agrees with previous studies that identify Didelphidae as important reservoirs for T. cruzi maintenance in natural ecosystems (Herrera and Urdaneta-Morales, 1992; Noireau et al., 2009; Coura et al., 2002). Reservoirs are a system of host populations that are able to maintain the transmission of a given parasite species in space and time (Haydon et al., 2002; Jansen et al., 2015). Being able to identify the functional role of species based on their topological interactions further highlights the powerfulness of the ecomultiplex framework in modelling parasite diffusion. Notice that the above results and the observed mechanism of parasite amplification are robust also to violations of the assumption of metabolic theory as they are present also in null models with animal abundance independent on body mass (Appendix 8). Model inputs for the ecomultiplex model are partly from published data (e.g. animal diets (Herrera et al., 2011) and parasite empirical infection rates (Herrera et al., 2011; Rocha et al., 2013)). In order to better calibrate and then evaluate model performance, additional observed ecological data should be used. For instance, larger samples for parasite infection rate estimation and, especially, the frequency of animal contacts would both allow for calibration of model parameters such as the SI infection probabilities, which is not feasible with the currently available ecological data.\n\nWithin food webs, top predators are generally considered playing a regulating role in parasite spread by preying on infected individuals, thus eliminating infection sources for other animals (Packer et al., 2003; Hatcher et al., 2006; Wobeser, 2013; Telleria and Tibayrenc, 2017). Our ecomultiplex framework shows that predators can also facilitate rather than just slow down parasite spread depending on their interactions with vectors. An example is the ocelot in Canastra, which is a generalist predator that feeds on several prey species, including the vectors, and thus has an increased likelihood of becoming infected on the food web (Figure 4b). Once infected, ocelots can transmit the parasite to vectors through vectorial interactions. Since vectors facilitate parasite spread, then the ocelot can indeed amplify parasite diffusion. This is true for every generalist predator getting in contact with the vectors. This phenomenon of parasite amplification, that\u00a0is, increased parasite transmission mediated by top predators, emerges only when both ecomultiplex layers are considered together. Therefore, this mechanism remarks the importance of unifying ecological and epidemiological approaches for better modelling parasite transmission. Importantly, this amplification mechanism provides a theoretical explanation by which the ocelot relates with the T. cruzi spread, as found in empirical studies (Rocha et al., 2013; Rocha, 2006). Parasite amplification by predators may also occur in other systems that show multiple transmission routes including trophic transmission, such as in the Toxoplasma gondii (Dubey, 2004) and Trypanosoma evansi (Herrera et al., 2011) transmission cycles.\n\nOur theoretical model allows to design and test immunisation strategies in real-world ecosystems by relying on specific assumptions. For instance, since animal groups are embedded in space, home ranges need to be specified for them. For the sake of simplicity, in this ecological version of the model we considered only one effective average interaction radius for all species. Considering species-specific empirical data on spatial distribution represents a challenging yet interesting generalisation for future work when additional ecological data becomes available.\n\nThe exposure to parasite infection in the wildlife is mediated by a network of contacts. Consequently, some species are more exposed to the parasite compared to others even when they have the same transmission probability. We consider the same parasite transmission probability across species in the Susceptible-Infected dynamics. By doing that, we give maximum importance to the structure of ecological interactions rather than to the stochasticity of the contagion process. Further, we avoid arbitrary parameter value definition. In our model, the (i) structure of interactions and (ii) the different frequencies of animal groups are analogous to considering different transmission rates. We have already showed that these two elements were sufficient for species to display different probabilities of catching the parasite in our previous work (Stella et al., 2016). Immunisation strategies confirm this: immunising species that are more exposed to parasites leads to better immunisation performances compared to random immunisation. Considering species-dependent transmission rates as encapsulated in frequencies and links importantly reduces the number of model parameters.\n\nWe assume that parasite spread is happening at much faster rates compared to other meta-population dynamics (e.g extinction or migration), which are not currently considered in the model. However, including meta-population dynamics would allow to explore important research questions such as: (i) the interplay between predation and parasite amplification over top predators influencing parasite spread; (ii) the influence of migration on parasite diffusion; (iii) how extinction patterns influence parasite spread. Implementing the Markovian analytical approach from G\u00f3mez-Garde\u00f1es et al., 2018) in the ecomultiplex model would allow to reach even more realistic representations of real-world ecosystems.\n\n## Materials and methods\n\n### Ecological multiplex network model\n\nThe \u2018ecomultiplex\u2019 model describes an ecological community interacting in a spatially explicit ecosystem, see Figure 1, using the novel framework of multiplex networks. Each layer of the ecomultiplex network represents a different route of parasite transmission: (i) food-web interactions and (ii) contaminative interactions mediated by vectors. These infection routes give rise to a multiplex network of two layers where nodes represent groups of individuals of a given species, that\u00a0is animal groups. Links on the food-web layer are directed to predator species and represent predator-prey interactions. Links on the vectorial layer are undirected and represent insect vector blood meals. Distance among animal groups determines possible interactions: only groups sharing a spatial portion of their home range can interact with each other. We fixed the home range of all animal groups as a circle of radius $r=0.03$ over a unitary squared space and studied a total of $N=10000$ animal groups, please see Appendix 3 and[67] for more details regarding the network construction. The small value of $r$ has been tuned in order to keep the ecomultiplex network connected (De Domenico et al., 2013) so that the parasite can infect the whole ecomultiplex network.\n\n### Ecological data: trophic interactions and body masses\n\nDifferent community structures may affect parasite transmission dynamics. We used data from two communities that differed in species composition and interactions (Appendix 1). Predator-prey and vector-host interactions in the ecomultiplex network are based on ecological data related to T. cruzi infection in wild hosts within two different areas: Canastra, a tropical savannah in South-Eastern Brazil (Rocha et al., 2013) and Pantanal, a vast floodplain in Midwest Brazil (Herrera et al., 2011). Both places hold a highly diverse host communities which differ in the structure of interactions, particularly in the vectorial transmission layer (See Appendix 2 for further details).\n\nTrophic interactions in the food web are assigned according to literature data about animals\u2019 diets (AdA et al., 2002; VdN, 2007; Cavalcanti, 2010; de Melo Amboni MP, 2007; dos Santos, 2012; Reis et al., 2006; Rocha, 2006) (Appendix 1). Since kissing bugs function as a single ecological unit and previous T. cruzi epidemiological models treat the vectors as a single compartment (Kribs-Zaleta, 2006; Kribs-Zaleta, 2010), all vector species are grouped as one functional group. Species infection rate is used to estimate the contaminative interactions in the vectorial layer (Rocha et al., 2013; Herrera et al., 2011). Positive parasitological diagnostics for T. cruzi (hemoculture) are used as a proxy for connections on the vectorial layer, since only individuals with positive parasitaemia (i.e. with high parasite loads in their blood) are able to transmit the parasite (Jansen et al., 2015). Body masses of host species represent averages over several available references (Herrera et al., 2011; Myers et al., 2008; Reis et al., 2006; Bonvicino et al., 2008; Schofield, 1994).\n\n### Mathematical formulation for group frequencies\n\nGeographical proximity and biological features regulate link creation in the ecomultiplex model. Species biological features, in particular body masses, regulate the frequency of animal groups (which are all mammals, except for vectors). Previous study Jetz et al. (2004) showed that the density $n_{i}^{\u22121}$ of individuals of the same species $i$ having the species average body mass $m_{i}$ follows the metabolic scaling:\n\n$$\nn_{i}^{\u22121}=\\beta^{\u22121}R_{i}^{\u22121}m_{i}^{3/4}\n$$\n\nwhere $R_{i}$ is the species-specific energy supply rate and $\\beta$ a constant expressing species metabolism. The above equation comes from metabolic theory and can be used for determining the scaling relationship between body mass $m_{i}$ and frequency $f_{i}$ of animal groups (rather than animal individual) for species $i$, depending on the frequency of vector colonies $f_{v}$ (Appendix 3):\n\n$$\nf_{i}=(1\u2212f_{v})\\frac{m_{i}^{\u22121/4}}{\\sum_{j=1}\u2009m_{j}^{\u22121/4}}.\n$$\n\nAs a consequence of metabolic theory, the frequencies of animal groups in our ecomultiplex model scale as a power-law of body mass with exponent $\u22121/4$ rather than $\u22123/4$ (which is the scaling exponent for individuals rather than groups). We explicitly leave $f_{v}$ as a free parameter of the model in order to investigate the influence of the frequency of vector colonies on parasite spreading.\n\n### Metrics for multiplex network analysis\n\nWe investigate the structure of a given ecomultiplex network through the concept of multiplex cartography (Battiston et al., 2014), see also Appendix 5 for the definition of multiplex cartography. In our case, the cartography describes how individual groups engage into trophic interactions on the ecomultiplex structure by considering: (i) the total number K of trophic interactions an animal group is involved in and (ii) the ratio U of uniform link distribution across layers, which ranges between 0 (all the links of a group are focused in one layer) and 1 (all links of a node are uniformly distributed across layers). The higher K, the more an animal group interacts with other groups. The higher U the more an animal group will engage in feeding and vectorial interactions with the same frequency. The multiplex cartography for Canastra and Pantanal is reported and discussed in Appendix 5.\n\n### Susceptible-Infected model on the ecological multiplex network\n\nAs explained in the introduction, we focus on parasites causing lifelong infections in wild hosts. Hence, parasite spread is simulated as a Susceptible-Infected (SI) process (Hastings and Gross, 2012): Animal groups are susceptible or infectious. We assume that parasite transmission among animal groups happens considerably faster than both (i) group creation or extinction and (ii) parasite transmission within groups, so that fixed numbers of hosts and vectors can be considered, as in previous works (Keeling and Rohani, 2008; Legros and Bonhoeffer, 2016). At each time step, the parasite can spread from an infected group to another one along a connection either in the vectorial (with probability $p_{v}$) or food-web (with probability $1\u2212p_{v}$) layer. We consider $p_{v}$ as a free parameter called vectorial layer importance, that\u00a0is the rate at which transmission occurs through the consumption of blood by vectors rather than predator-prey interactions. We assume that all the species have the same probability of getting infected, since the group gets infected if it interacts with an infected group. However, the transmission rate is the outcome of the probability of infection, species groups frequency in the environment and the interactions in the ecomultiplex. We characterise globally the SI dynamics by defining the infection time $t^{\u2217}$ as the minimum time necessary for the parasite to reach its maximum spread within the networked ecosystem (Stella et al., 2016). The infection starts from a small circle of radius 0.03 in the middle of the unitary space infecting all animal groups within that area. Initial conditions are randomised over different simulations.\n\n### Immunisation strategies\n\nImmunisation strategies provide information on how species influence parasite spread: immunising species that facilitate parasite spreading should increase the global infection time $t^{\u2217}$ compared to immunising random species. We focus on immunising only\u00a0$10%$ of animal groups in ecomultiplex networks with $10000$ nodes, in either high ($f_{v}=0.25$) or low vector frequency scenarios ($f_{v}=0.1$). By immunising\u00a0groups at random in ecomultiplex networks with\u00a0N= 10000 nodes, we identify \u03c6 = 1000 as the minimum\u00a0number of groups/nodes that have to be immunised in order to observe increases in t\u2217compared to random immunisation\u00a0with a significance level of 5%.\u00a0Immunised groups are selected according to three categories of immunisation strategies (Table 1):\n\n**Table 1.**\n Immunisation types, names and targets of the strategies we tested (Appendix 1).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Immunisation type</th>\n      <th>Strategy name</th>\n      <th>Strategy targets</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Ecomultiplex Topological Features</td>\n      <td>Insectivores</td>\n      <td>Species feeding on the vector in a food-web</td>\n    </tr>\n    <tr>\n      <td>Parasitised Didelphidae</td>\n      <td>Didelphidae contaminated by the vector on a vectorial layer</td>\n    </tr>\n    <tr>\n      <td>Parasitised Mammals</td>\n      <td>All species contaminated by the vector on a vectorial layer</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Taxonomic/morphological features</td>\n      <td>All Cricetidae</td>\n      <td>All Cricetidae</td>\n    </tr>\n    <tr>\n      <td>All Didelphidae</td>\n      <td>All Didelphidae</td>\n    </tr>\n    <tr>\n      <td>Large Mammals</td>\n      <td>All species with a body mass\u00a0&gt;\u00a01 kg</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Epidemiological Features</td>\n      <td>Hemoculture N</td>\n      <td>The N species with the highest likelihood of being found infected with the parasite in field work (see Appendix 1).</td>\n    </tr>\n    <tr>\n      <td>Serology N</td>\n      <td>The N species with the highest likelihood of having been infected with the parasite during their life time (see Appendix 1).</td>\n    </tr>\n  </tbody>\n</table>\n\nWe define the infection time increase $\u0394t_{s}$ as the normalised difference between the median infection time $t_{s}$ when $\u03d5=1000$ nodes are immunised according to the strategy $s$ and the median infection time $t_{r}$ when the same number of nodes is immunised uniformly at random among all animal groups, $\u0394t_{s}=\\frac{t_{s}\u2212t_{r}}{t_{r}}$. Infection times are averages sampled from 500 simulated replicates. Differences are always tested at 95% confidence level.\n\nPositive increases imply that the immunisation strategy slowed down the parasite in reaching its maximum spread over the whole ecosystem more than random immunisation. Negative increases imply that random immunisation performs better than the given immunisation strategy in hampering parasite diffusion.\n\n### Model inputs, parameters used and model outputs\n\nSumming up, the ecomultiplex model adopts the following parameters (Appendix 4):\n\nThe ecomultiplex model also considers the following ecological data as inputs:\n\nAs outputs the model produces the dynamics of parasite spreading. The total number $N_{inf}$ of infected animal groups was found to be constant across different immunisation strategies, vectorial probabilities $p_{v}$ and ecosystems, $N_{inf}=8700\\pm100$ or $N_{inf}\u2248(97\\pm1)%$ of susceptible hosts, in terms of model outputs we focus on the time necessary for the parasite to reach its maximum spread, that\u00a0is, on the global infection time.\n",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "e49a47e9-acb4-4915-b70f-e61a1c44e39c",
+      "submission_id": "ea01aca1-4cd9-4e25-b9b9-e89952f3d523",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicole Gottdenker, University of Georgia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32814.028](https://doi.org/10.7554/eLife.32814.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ecological interactions determine role of species in parasite spread amplification: the ecomultiplex network model\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Qianqian Ma (Reviewer #1); Anieke Van Leeuwen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors provide an interesting 'ecomultiplex' network modeling framework as a novel means to try to understand and predict responses to control strategies of infectious disease transmission in a complex disease system, that of a multi-host vector borne pathogen. Specifically, they apply their modeling framework to Chagas disease (Trypanosome cruzi) transmission, using some data available from two locations in Brazil where sylvatic T. cruzi transmission dominates. Specifically, the model is particularly novel in modeling T. cruzi systems because it investigates the impacts of trophic relationships (predator-prey) considered with host-parasite relationships on pathogen transmission in the system.\n\nNot surprisingly, reviewers show that vectors play a major role in the sylvatic T. cruzi transmission system. The element of 'surprise' in the model, and something which I think many people studying these systems will find interesting, is the model prediction that some predators, often considered to be 'controllers' of infectious disease in a system, can actually facilitate parasite transmission.\n\nDespite its novelty, and the interesting discussion that introducing this model will have among scientists tackling the challenge of trying to understand multi-host pathogen transmission in natural systems, the reviewers raise some substantial concerns in this manuscript (essential revisions) which should be addressed in the revisions.\n\nEssential revisions:\n\n1) Please justify the use of the SI model in this system for the benefit of readers who may not be familiar with the details of T. cruzi transmission.\n\n2) Although there is detailed explanation in the Supplementary Information, please provide more information in the Materials and methods explaining model inputs, parameters used, and model outputs, and general methods used so that readers can follow along in the main text better, and improve readers' understanding of the Results.\n\n3) Provide justification for the use of only one vector in the models. Also provide a specific explanation for why you used two different communities for parameter input (section 2.2 and Supplementary Information), what defines their ecology, and in general how they differed.\n\n4) Please provide a more detailed explanation and justification of why you derived species frequencies in the way you did in the Supplementary Information, particularly because all groups have an average interaction radios (section 2.1) and all vectors are grouped together (section 2.2). Basically, section 2 of the Supplementary Information requires improved clarity and improved explanation.\n\n5) Related to #4, The models are constructed based on the assumptions that the metabolic theory provides a good approximation for species and that there is an average size n_i across animal groups of a given species. Please discuss how violations of these assumptions would affect the results. In addition, the home range is simply set to constant across species, which seems unreasonable. Please also discuss how this simple setting and modifying home range can affect the results.\n\n6) In model outputs, the authors only show how the immunization strategies affect infection time t*. Why not present the number of maximum spread, which is also an important indicator of parasite spread?\n\n7) Please explain the assumption and of the use of time-to-infection as measure of strategy success, assuming that the full network will become infected, in particular explain how this assumption relates to the ecological basis in the actual species communities. Is there evidence that the relative rates of processes in the system well established? Please address why, for instance, the transmission rate is set to 1 for all species interactions.\n\n8) Please provide a mention in the Discussion of how in your paper, the model inputs are partly from published data and that the model outputs need to be calibrated and evaluated with additional observed data to truly evaluate model performance.\n\n9) In the Discussion, can you address the parasite amplification phenomenon and how it might relate to or is present in other disease systems in addition to T. cruzi?\n\n10) The Supplementary Information section requires increased clarity and English revision.\n",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f4ea5bc-91e2-463a-92c5-17874f1b6c0a",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C1",
+      "claim": "Zoonoses are infections naturally transmitted between animals and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Zoonoses are infections naturally transmitted between animals and humans, and are the most important cause of emerging and re-emerging diseases in humans (Perkins et al., 2005; Jones et al., 2008; Lloyd-Smith et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Perkins et al., 2005; Jones et al., 2008; Lloyd-Smith et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d386ebef-ce27-49c1-8991-d09ea3ee940f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C2",
+      "claim": "Zoonoses are the most important cause of emerging and re-emerging diseases in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Zoonoses are infections naturally transmitted between animals and humans, and are the most important cause of emerging and re-emerging diseases in humans (Perkins et al., 2005; Jones et al., 2008; Lloyd-Smith et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Perkins et al., 2005; Jones et al., 2008; Lloyd-Smith et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "ca1bd4e0-a340-4c95-beac-87c8503cc313",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C3",
+      "claim": "The majority of zoonotic agents are multi-host pathogens or parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the zoonotic agents are multi-host pathogens or parasites (Ostfeld and Holt, 2004; Alexander et al., 2012), whose various host species may differ in their contribution to parasite transmission and persistence over space and time (Jansen et al., 2015; Rushmore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ostfeld and Holt, 2004; Alexander et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "946e381e-487d-4753-99b3-199dd90b7181",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C4",
+      "claim": "Various host species of multi-host pathogens may differ in their contribution to parasite transmission and persistence over space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the zoonotic agents are multi-host pathogens or parasites (Ostfeld and Holt, 2004; Alexander et al., 2012), whose various host species may differ in their contribution to parasite transmission and persistence over space and time (Jansen et al., 2015; Rushmore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jansen et al., 2015; Rushmore et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "badfcba6-8f7e-4c62-b07f-a54e62545368",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C5",
+      "claim": "Heterogeneity of host species contribution to parasite transmission is related to differences in host species' abundance, exposure and susceptibility to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterogeneity of host species contribution to parasite transmission is related to differences in host species' abundance, exposure and susceptibility to infection (Haydon et al., 2002; Altizer et al., 2003; Streicker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Haydon et al., 2002; Altizer et al., 2003; Streicker et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "a5a0dae7-4986-4c72-bb90-a35b335ccfa1",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C6",
+      "claim": "Many multi-host parasites have complex life cycles with multiple transmission modes, such as vertical, direct contact, sexual, aerosol, vector-borne and/or food-borne.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, many multi-host parasites have complex life cycles with multiple transmission modes, such as vertical, direct contact, sexual, aerosol, vector-borne and/or food-borne (Webster et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Webster et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "486f1cf5-0f6d-4f18-a96e-82efd4f9f880",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C7",
+      "claim": "Trypanosoma cruzi is a protozoan parasite which causes Chagas disease in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the zoonotic parasites with multiple hosts and transmission modes, Trypanosoma cruzi (Kinetoplastida: Trypanosomatidae), a protozoan parasite which causes Chagas disease in humans, has a complex ecology that challenges transmission modelling and disease control (Noireau et al., 2009; Jansen et al., 2015; Sosa-Estani and Segura, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about T. cruzi and Chagas disease",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "a0f89fdd-3bf8-42f8-bb17-d38060e4673d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C8",
+      "claim": "Trypanosoma cruzi has a complex ecology that challenges transmission modelling and disease control.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the zoonotic parasites with multiple hosts and transmission modes, Trypanosoma cruzi (Kinetoplastida: Trypanosomatidae), a protozoan parasite which causes Chagas disease in humans, has a complex ecology that challenges transmission modelling and disease control (Noireau et al., 2009; Jansen et al., 2015; Sosa-Estani and Segura, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Noireau et al., 2009; Jansen et al., 2015; Sosa-Estani and Segura, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "f5c298fd-583e-4203-9b4e-bd39a0347ec8",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C9",
+      "claim": "T. cruzi has already been found in more than 100 mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "T. cruzi has already been found in more than 100 mammalian species and its transmission may be mediated by several interdependent mechanisms (Noireau et al., 2009; Jansen et al., 2015; Coura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Noireau et al., 2009; Jansen et al., 2015; Coura et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "70eabcec-d3c7-4ae6-ad3a-c6eb616c0523",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C10",
+      "claim": "T. cruzi transmission may be mediated by several interdependent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "T. cruzi has already been found in more than 100 mammalian species and its transmission may be mediated by several interdependent mechanisms (Noireau et al., 2009; Jansen et al., 2015; Coura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Noireau et al., 2009; Jansen et al., 2015; Coura et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "03e2d962-ad64-47ae-a1e7-bd0e43a41158",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C11",
+      "claim": "T. cruzi has a contaminative route of transmission that is mediated by several invertebrate vectors (Triatominae).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, T. cruzi has a contaminative route of transmission that is mediated by several invertebrate vectors (Triatominae, eng. kissing bug) that gets infected when blood feeding on infected hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about T. cruzi transmission mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "050d353b-b7f4-4321-8124-173ed7ae6b2b",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C12",
+      "claim": "Triatominae vectors get infected when blood feeding on infected hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, T. cruzi has a contaminative route of transmission that is mediated by several invertebrate vectors (Triatominae, eng. kissing bug) that gets infected when blood feeding on infected hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about T. cruzi transmission mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "63dc6a6c-0f2a-4a0c-8965-5a73871a7f31",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C13",
+      "claim": "Susceptible hosts can get infected after scratching and rubbing the parasite-contaminated defecation matter onto the lesion of the bite of an infected vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Susceptible hosts can get infected after scratching and rubbing the parasite-contaminated defecation matter onto the lesion of the bite of an infected vector (Kribs-Zaleta, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kribs-Zaleta, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "863c5476-b465-4c73-91d6-836c7285aca7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C14",
+      "claim": "T. cruzi transmission may also occur through a trophic route that cascades along the food-web when a susceptible predator feeds on infected vectors or preys.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission may also occur through a trophic route that cascades along the food-web when a susceptible predator feeds on infected vectors or preys (Noireau et al., 2009; Jansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Noireau et al., 2009; Jansen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "6492a839-7323-471c-83bc-1c15c20b0b4f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C15",
+      "claim": "Sylvatic hosts do not suffer mortality from T. cruzi.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, sylvatic hosts do not suffer mortality from T. cruzi (Kribs-Zaleta, 2010) but the parasite establishes a lifelong infection in almost all of them (Teixeira et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kribs-Zaleta, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "4884ec24-8aaf-443e-b43a-db05d62ee8d2",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C16",
+      "claim": "T. cruzi establishes a lifelong infection in almost all sylvatic hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, sylvatic hosts do not suffer mortality from T. cruzi (Kribs-Zaleta, 2010) but the parasite establishes a lifelong infection in almost all of them (Teixeira et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Teixeira et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "3e2e1510-7417-4425-bd33-2a28df953736",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C17",
+      "claim": "Chemical insecticides and housing improvement have been the main strategies for controlling Chagas disease in rural and urban areas of Latin America.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical insecticides and housing improvement have been the main strategies for controlling Chagas disease in rural and urban areas of Latin America (Dias and Schofield, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dias and Schofield, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "db7f6159-3950-4d60-83d9-95c0e1445efc",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C18",
+      "claim": "Chemical insecticides and housing improvement strategies are proving to be inefficient in reducing T. cruzi transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these strategies are proving to be inefficient in reducing transmission (Roque et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roque et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "b4c172df-709b-4da3-9336-d42b0738681f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C19",
+      "claim": "The inefficiency of chemical insecticides and housing improvement is possibly related to the maintenance and transmission of parasites among local wild mammalian hosts and its association with sylvatic triatomine vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possibly related to the maintenance and transmission of parasites among local wild mammalian hosts and its association with sylvatic triatomine vectors (Roque et al., 2013; Roque et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Roque et al., 2013; Roque et al., 2008",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "63b1f38b-ddd6-4076-be32-0f178239f738",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C20",
+      "claim": "Modelling parasite transmission in a way that is explicitly considering the ecology of wildlife transmission is fundamental to understanding and predicting outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, modelling parasite transmission in a way that is explicitly considering the ecology of wildlife transmission, is fundamental to understanding and predicting outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the preceding discussion about inefficiency of current control strategies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "53278338-9b6b-4c2c-9d99-9f2cd620e525",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C21",
+      "claim": "Multiplex networks have been successfully applied to epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we propose to address this challenge through the mathematical framework of multiplex networks (De Domenico et al., 2013; Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2016; Battiston et al., 2016), which have been successfully applied to epidemiology (Lima et al., 2015; De Domenico et al., 2016; Sanz et al., 2014) and ecology (Sonia K\u00e9fi et al., 2015; K\u00e9fi et al., 2016; Pilosof et al., 2017; Stella et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lima et al., 2015; De Domenico et al., 2016; Sanz et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "691955a7-4cc4-421e-a0d1-43f99e5b08fb",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C22",
+      "claim": "Multiplex networks have been successfully applied to ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we propose to address this challenge through the mathematical framework of multiplex networks (De Domenico et al., 2013; Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2016; Battiston et al., 2016), which have been successfully applied to epidemiology (Lima et al., 2015; De Domenico et al., 2016; Sanz et al., 2014) and ecology (Sonia K\u00e9fi et al., 2015; K\u00e9fi et al., 2016; Pilosof et al., 2017; Stella et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sonia K\u00e9fi et al., 2015; K\u00e9fi et al., 2016; Pilosof et al., 2017; Stella et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "88f072cc-769c-48cd-9cc6-22e0f3ad73eb",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C23",
+      "claim": "Multiplex networks are multi-layer networks in which multi-relational interactions give rise to a collection of network layers so that the same node can engage in different interactions with different neighbours in each layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplex networks are multi-layer networks in which multi-relational interactions give rise to a collection of network layers so that the same node can engage in different interactions with different neighbours in each layer (Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kivela et al., 2014; Boccaletti et al., 2014; De Domenico et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "6742bd6d-f9b5-47b2-bc18-5d5fd301e0a7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C24",
+      "claim": "The ecomultiplex framework allows to account for multiple types of interactions giving rise to parasite transmission with similar or different time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework is powerful in modelling complex systems such as infectious diseases or parasite transmission in wildlife. Firstly, it allows to account for multiple types of interactions giving rise to parasite transmission with similar or different time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a feature of the proposed framework",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "f18cc6ec-e859-4fe2-846f-a8b773279647",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C25",
+      "claim": "The ecomultiplex framework uses metabolic theory for estimating species frequencies, which are known to influence parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the ecomultiplex framework uses metabolic theory (Jetz et al., 2004) for estimating species frequencies, which are known to influence parasite transmission (McCallum et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jetz et al., 2004 for metabolic theory and McCallum et al., 2001 for influence on parasite transmission",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "508a89f4-d1b6-416c-bd3e-fc45361109af",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C26",
+      "claim": "Species frequencies are known to influence parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the ecomultiplex framework uses metabolic theory (Jetz et al., 2004) for estimating species frequencies, which are known to influence parasite transmission (McCallum et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCallum et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d0b2db46-8455-4e22-b9a6-653ee7db1dbb",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C27",
+      "claim": "By explicitly considering space, the ecomultiplex model allows to investigate the consequences of spatial structure on parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, by explicitly considering space, the model also allows to investigate the consequences of spatial structure on parasite transmission (Hudson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hudson et al., 2002",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "ea51bdfe-8da4-42c5-8fa2-adb9b59991b7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C28",
+      "claim": "The ecomultiplex framework is applied to investigating parasite spread in two vector and host communities in Brazil: Canastra and Pantanal.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply this 'ecomultiplex' formalism to investigating parasite spread in two vector and host communities in Brazil: Canastra (Rocha et al., 2013) and Pantanal (Herrera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rocha et al., 2013 and Herrera et al., 2011 for the two communities",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "8102c282-aff6-4ebd-84b7-4ee42cba6a65",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C29",
+      "claim": "Vectors are more connected than other species in both Canastra and Pantanal.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplex cartography for both Canastra and Pantanal (Figure 2c,d) shows that vectors are: (i) more connected and (ii) distribute their links more equally across the ecomultiplex layers than other species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2c,d multiplex cartography analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "4d4f032c-34f8-442b-960d-4e0e173c49c1",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C30",
+      "claim": "Vectors distribute their links more equally across the ecomultiplex layers than other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplex cartography for both Canastra and Pantanal (Figure 2c,d) shows that vectors are: (i) more connected and (ii) distribute their links more equally across the ecomultiplex layers than other species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2c,d multiplex cartography analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "4709aa9f-6c77-4c75-ba32-8a39efae288d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C31",
+      "claim": "Vectors can get more easily infected in one layer and spread the parasite on another layer with equal likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, vectors can get more easily infected in one layer and spread the parasite on another layer with equal likelihood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the network analysis showing vectors' connectivity and link distribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "2e71f0a8-0b48-4a6f-86e7-b96978ca68ad",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C32",
+      "claim": "The cartography confirms that vectors facilitate parasite spread through their interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the cartography confirms that vectors facilitate parasite spread through their interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the multiplex cartography analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "ea054e82-e7f4-4a86-9cd2-4fc3fde401cf",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C33",
+      "claim": "Vector colonies are in the centre of star-like topologies on both layers in Canastra and Pantanal.",
+      "claim_type": "EXPLICIT",
+      "source": "The local network structure around vectors in Canastra and Pantanal (Figure 2a,b) shows that vector colonies are in the Centre of star-like topologies on both layers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2a,b network structure analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "b1c9e010-127c-4825-b5b8-4e048f3490cf",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C34",
+      "claim": "Kissing bug vector species are pivotal for parasite spread, promoting it on both the food web and the vectorial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that kissing bug vector species are pivotal for parasite spread, promoting it on both the food web and the vectorial layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the network analysis results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d16ad3e7-8a98-4794-9b8b-b0490877f3d2",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C35",
+      "claim": "Parasite diffusion can be hampered by removing vector colonies from the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although parasite diffusion can be hampered by removing vector colonies from the environment (Yamagata and Nakagawa, 2006), these immunisation strategies are not stable as vector reintroduction can happen shortly after elimination (Funk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yamagata and Nakagawa, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "0e335e32-02de-4fb8-b622-b7ab5655d4b4",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C36",
+      "claim": "Vector removal immunisation strategies are not stable as vector reintroduction can happen shortly after elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Although parasite diffusion can be hampered by removing vector colonies from the environment (Yamagata and Nakagawa, 2006), these immunisation strategies are not stable as vector reintroduction can happen shortly after elimination (Funk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Funk et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "2a1e1444-b18c-456c-ba58-5824031269ff",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C37",
+      "claim": "Immunising species with the highest parasite infection rate (Hemoculture) is the best strategy for hampering parasite spread for both Canastra and Pantanal.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, immunising species with the highest parasite infection rate (Hemoculture) is the best strategy for hampering parasite spread for both Canastra and Pantanal (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3 simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "2d1ffb4d-2402-4d0a-bc5e-a7a8b08c592f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C40",
+      "claim": "Immunising species interacting with vectors on the vectorial layer performs better than random immunisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunising species interacting with vectors on the vectorial layer (an ecomultiplex strategy) also performs better than random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from the immunisation strategy analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "bc124622-45c4-408a-a0f4-cdc77e59174a",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C42",
+      "claim": "In Canastra, when 10% of the animal groups are vector colonies, biological immunisation strategies are equivalent to immunising species at random.",
+      "claim_type": "EXPLICIT",
+      "source": "In Canastra, when 10% of the animal groups are vector colonies (Figure 3a), biological immunisation strategies are equivalent to immunising species at random.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3a simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d960c779-7440-42c8-ad69-e9567ec586c7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C45",
+      "claim": "In Canastra, immunising all the Didelphidae species leads to similar results as immunising large mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunising all the Didelphidae species leads to similar results (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3b simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "a3043b85-baf2-4f5a-b19c-2dfe8f046200",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C48",
+      "claim": "In Pantanal, immunising parasitised mammals, parasitised Didelphidae and species with the highest infection rates (Hemoculture 3) are at least two times more effective in slowing down parasite spread compared to other strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pantanal, immunising parasitised mammals, parasitised Didelphidae and species with the highest infection rates (Hemoculture 3) are at least two times more effective in slowing down parasite spread compared to other strategies (Figure 3c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3c,d simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "c566d2ae-4cc3-40e9-8724-34c5ac9c3aaf",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C50",
+      "claim": "In Pantanal, immunising insectivores or large mammals is equivalent to random immunisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunising insectivores or large mammals is equivalent to random immunisation (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3c simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "7d56f466-c146-4c43-9444-e93fe7b0fea1",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C51",
+      "claim": "In Pantanal, immunising Cricetidae species always performs worse than random immunisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunising Cricetidae species always performs worse than random immunisation (Figure 3c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3c,d simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "afccc75e-284e-488b-a8a0-67328d9c26db",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C52",
+      "claim": "In Canastra, the strategy Hemoculture three includes immunising Leopardus pardalis (ocelot).",
+      "claim_type": "EXPLICIT",
+      "source": "In Canastra, the strategy Hemoculture three includes also immunising one species of top predator, the Leopardus pardalis (ocelot) (see Appendix 7\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text with reference to Appendix 7\u2014figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "42c20b65-836f-4e9f-bdc3-da010e2f3b92",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C53",
+      "claim": "Chrysocyon brachyurus (maned wolf) had negative T. cruzi infection rate in Canastra.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare the performances of Hemoculture three against another immunisation strategy where instead of the ocelot we immunise another top predator, the Chrysocyon brachyurus (maned wolf), which had negative T. cruzi infection rate in this area (Rocha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rocha et al., 2013",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "22108dc7-01de-4e35-8a93-4da0b5daafa0",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C54",
+      "claim": "There is a drastic increase of global infection time when a predator with positive parasite infection rate is immunised compared to one with negative infection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, results from Figure 4 indicate a drastic increase of global infection time when a predator with positive parasite infection rate is immunised.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4 simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "f2c47752-9058-4b8a-85b7-70258ec55415",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C55",
+      "claim": "In Canastra, Leopardus pardalis has an amplification effect in spreading the parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that in Canastra the Leopardus pardalis has an amplification effect in spreading the parasite (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from Figure 4 results showing increased infection time when ocelot is immunised",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "1ddb3f6a-7085-4cac-a0b6-95498af50310",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C56",
+      "claim": "The parasite amplification phenomenon crucially depends on the ecomultiplex structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon crucially depends on the ecomultiplex structure, as discussed in the following section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "7a43eab3-87ce-4cc3-aae1-129a02464331",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C57",
+      "claim": "Network structure offers insights on which host species facilitate parasite spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we show that network structure offers insights on which host species facilitate parasite spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a key finding from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "998539c3-6f8f-4f90-aad1-e4630b867a3f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C58",
+      "claim": "The structure of species interactions can be as useful as epidemiological, taxonomic and morphological traits in controlling parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we show that the structure of species interactions can be as useful as epidemiological, taxonomic and morphological traits in controlling parasite transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a key finding from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "b665ac47-667e-4632-b824-2a8268412a59",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C59",
+      "claim": "The interdependent interactions of top predators affect their functional role in facilitating parasite transmission rather than hampering it.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, we identify for the first time that the interdependent interactions of top predators affect their functional role in facilitating parasite transmission rather than hampering it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a novel finding from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "faf4db66-a7e8-4d5e-8161-2ebb54bff48f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C60",
+      "claim": "Ecomultiplex strategies always outperform strategies based on species taxonomic groups, which neglect species' interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecomultiplex strategies always outperform strategies based on species taxonomic groups, which neglect species' interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the immunisation strategy comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d2fd9582-5027-4cef-96c5-ff29fce8ce6e",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C61",
+      "claim": "Network structure allows to design immunisation strategies performing as well as strategies considering empirical parasite infection rate, with the advantage of requiring less data.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, network structure allows to design immunisation strategies performing as well as strategies considering empirical parasite infection rate, with the advantage of requiring less data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the immunisation strategy comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d9c2b965-ea47-47fe-85bd-efbb4631197f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C62",
+      "claim": "Jointly considering vector-host and predator-prey interactions is important for understanding T. cruzi transmission in wildlife.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantitatively suggests the importance of jointly considering vector-host and predator-prey interactions for understanding T. cruzi transmission in wildlife (Coura, 2006; Johnson et al., 2010; Penczykowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coura, 2006; Johnson et al., 2010; Penczykowski et al., 2016",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d72ff085-1ad2-4b7f-9923-8d6c619c30cc",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C63",
+      "claim": "Immunising species exposed to contaminative infection through the vectorial layer proves to be efficient at all vectorial layer importances in both Pantanal and Canastra ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pantanal and Canastra differ in species composition and their ecological interactions, immunising species exposed to contaminative infection through the vectorial layer proves to be efficient at all vectorial layer importances in both ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the immunisation strategy comparison across both ecosystems",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "727c52da-6a87-4d3c-b6e6-9160494e3f01",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C64",
+      "claim": "Vectorial transmission is important for boosting parasite spread also in the food web.",
+      "claim_type": "EXPLICIT",
+      "source": "This underlines the importance of vectorial transmission for boosting parasite spread also in the food web.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that immunising species exposed to vectorial transmission is efficient",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "60a83da0-cc3b-45eb-8487-76a98d0f2532",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C65",
+      "claim": "The ecomultiplex model allows to quantitatively investigate the interplay between the multiple types of interactions leading to parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the ecomultiplex model allows to quantitatively investigate the interplay between the multiple types of interactions leading to parasite transmission, an element conjectured being crucial for better understanding the ecology of wildlife diseases (Lafferty et al., 2008; Dunne et al., 2013; Funk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lafferty et al., 2008; Dunne et al., 2013; Funk et al., 2013",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "8b90fe48-00ef-4109-a45f-dae9d7a18014",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C66",
+      "claim": "In Pantanal, immunising only Didelphidae with positive parasitaemia slows down parasite spread more than immunising all mammals with positive parasitaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "In Pantanal, immunising only Didelphidae with positive parasitaemia (i.e. infection rates) slows down parasite spread more than immunising all mammals with positive parasitaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from the immunisation strategy analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "2242f020-eeb4-42b6-bef3-72da40e92d38",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C67",
+      "claim": "Didelphidae are important reservoirs for T. cruzi maintenance in natural ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding agrees with previous studies that identify Didelphidae as important reservoirs for T. cruzi maintenance in natural ecosystems (Herrera and Urdaneta-Morales, 1992; Noireau et al., 2009; Coura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herrera and Urdaneta-Morales, 1992; Noireau et al., 2009; Coura et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "a41e56e8-e966-4e0c-9902-0d6eddfb1f24",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C68",
+      "claim": "Reservoirs are a system of host populations that are able to maintain the transmission of a given parasite species in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Reservoirs are a system of host populations that are able to maintain the transmission of a given parasite species in space and time (Haydon et al., 2002; Jansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Haydon et al., 2002; Jansen et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "560713ab-5384-42ea-99a2-acdf88f062c4",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C69",
+      "claim": "The ecomultiplex framework is powerful in identifying the functional role of species based on their topological interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Being able to identify the functional role of species based on their topological interactions further highlights the powerfulness of the ecomultiplex framework in modelling parasite diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability to identify Didelphidae as reservoirs based on network structure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "1fe970a6-651b-437f-96e3-7565b3130b81",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C70",
+      "claim": "The observed mechanism of parasite amplification is robust to violations of the assumption of metabolic theory as it is present also in null models with animal abundance independent on body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that the above results and the observed mechanism of parasite amplification are robust also to violations of the assumption of metabolic theory as they are present also in null models with animal abundance independent on body mass (Appendix 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with reference to Appendix 8 null model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "ef89dd39-e9c3-4b30-8faa-67cce5ce1986",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C71",
+      "claim": "Within food webs, top predators are generally considered playing a regulating role in parasite spread by preying on infected individuals, thus eliminating infection sources for other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Within food webs, top predators are generally considered playing a regulating role in parasite spread by preying on infected individuals, thus eliminating infection sources for other animals (Packer et al., 2003; Hatcher et al., 2006; Wobeser, 2013; Telleria and Tibayrenc, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Packer et al., 2003; Hatcher et al., 2006; Wobeser, 2013; Telleria and Tibayrenc, 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "7fe24583-a988-455c-af88-a7b19de6d955",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C72",
+      "claim": "Predators can facilitate rather than just slow down parasite spread depending on their interactions with vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ecomultiplex framework shows that predators can also facilitate rather than just slow down parasite spread depending on their interactions with vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the ecomultiplex model analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "9ef114be-5067-4528-a083-fed4166bce6e",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C73",
+      "claim": "The ocelot in Canastra is a generalist predator that feeds on several prey species, including the vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is the ocelot in Canastra, which is a generalist predator that feeds on several prey species, including the vectors, and thus has an increased likelihood of becoming infected on the food web (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated with reference to Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "01c8eca6-2c42-4315-ba70-e7f176aefe9d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C74",
+      "claim": "The ocelot in Canastra has an increased likelihood of becoming infected on the food web due to feeding on several prey species including vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is the ocelot in Canastra, which is a generalist predator that feeds on several prey species, including the vectors, and thus has an increased likelihood of becoming infected on the food web (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the ocelot's generalist predator behavior and shown in Figure 4b",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "e3472c8b-5031-446b-acda-d0c3f5bb5347",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C75",
+      "claim": "Once infected, ocelots can transmit the parasite to vectors through vectorial interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Once infected, ocelots can transmit the parasite to vectors through vectorial interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the parasite amplification mechanism explanation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "c0c6d331-0f3c-4105-b978-3b0c2c266fd3",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C76",
+      "claim": "Since vectors facilitate parasite spread, the ocelot can amplify parasite diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Since vectors facilitate parasite spread, then the ocelot can indeed amplify parasite diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the combination of ocelot-vector interactions and vector role in parasite spread",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "3dbd64c8-ec4f-43c8-aeaf-812ddecbaa93",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C77",
+      "claim": "Parasite amplification is true for every generalist predator getting in contact with the vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true for every generalist predator getting in contact with the vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Generalized from the ocelot example",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d7fd3e97-a274-421e-95d3-5904449db4e7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C78",
+      "claim": "The phenomenon of parasite amplification emerges only when both ecomultiplex layers are considered together.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon of parasite amplification, that is, increased parasite transmission mediated by top predators, emerges only when both ecomultiplex layers are considered together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a key finding about the importance of the multiplex framework",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "313f0331-d514-405c-a0cf-075cd9e9d26f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C79",
+      "claim": "The amplification mechanism remarks the importance of unifying ecological and epidemiological approaches for better modelling parasite transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this mechanism remarks the importance of unifying ecological and epidemiological approaches for better modelling parasite transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that amplification emerges only when both layers are considered",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "82e0c949-d7f3-4b54-b38e-be1a54e8f6ca",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C80",
+      "claim": "The amplification mechanism provides a theoretical explanation by which the ocelot relates with the T. cruzi spread, as found in empirical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this amplification mechanism provides a theoretical explanation by which the ocelot relates with the T. cruzi spread, as found in empirical studies (Rocha et al., 2013; Rocha, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rocha et al., 2013; Rocha, 2006",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "8c8f81b6-c2b5-4f67-bb48-6d36de19f9c9",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C81",
+      "claim": "Parasite amplification by predators may also occur in other systems that show multiple transmission routes including trophic transmission, such as in the Toxoplasma gondii and Trypanosoma evansi transmission cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite amplification by predators may also occur in other systems that show multiple transmission routes including trophic transmission, such as in the Toxoplasma gondii (Dubey, 2004) and Trypanosoma evansi (Herrera et al., 2011) transmission cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dubey, 2004 and Herrera et al., 2011",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "e36ad637-23fc-44d1-847a-90c09909a554",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C82",
+      "claim": "In the ecomultiplex model, only one effective average interaction radius is considered for all species.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, since animal groups are embedded in space, home ranges need to be specified for them. For the sake of simplicity, in this ecological version of the model we considered only one effective average interaction radius for all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "eeb65303-aa23-47b3-9539-829cfb2818d0",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C83",
+      "claim": "The ecomultiplex model considers the same parasite transmission probability across species in the Susceptible-Infected dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider the same parasite transmission probability across species in the Susceptible-Infected dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "dae98b7f-328a-42b4-9d63-3415ae240767",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C84",
+      "claim": "In the ecomultiplex model, the structure of interactions and the different frequencies of animal groups are analogous to considering different transmission rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the (i) structure of interactions and (ii) the different frequencies of animal groups are analogous to considering different transmission rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a model design choice",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "7dda00ef-3686-46c7-b97a-129aa114094b",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C85",
+      "claim": "The structure of interactions and different frequencies of animal groups are sufficient for species to display different probabilities of catching the parasite.",
+      "claim_type": "EXPLICIT",
+      "source": "We have already showed that these two elements were sufficient for species to display different probabilities of catching the parasite in our previous work (Stella et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stella et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d47458c9-8348-4681-b398-44c44fa3eaa9",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C86",
+      "claim": "Immunising species that are more exposed to parasites leads to better immunisation performances compared to random immunisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunisation strategies confirm this: immunising species that are more exposed to parasites leads to better immunisation performances compared to random immunisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from the immunisation strategy analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "59f77a2a-2c1e-4404-a5be-f6a5d0bb965d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C87",
+      "claim": "Parasite spread is happening at much faster rates compared to other meta-population dynamics (e.g extinction or migration).",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that parasite spread is happening at much faster rates compared to other meta-population dynamics (e.g extinction or migration), which are not currently considered in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a model assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "1ab808ce-552a-453d-89e5-3c5ee9580ee0",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C93",
+      "claim": "Predator-prey and vector-host interactions in the ecomultiplex network are based on ecological data related to T. cruzi infection in wild hosts within Canastra and Pantanal.",
+      "claim_type": "EXPLICIT",
+      "source": "Predator-prey and vector-host interactions in the ecomultiplex network are based on ecological data related to T. cruzi infection in wild hosts within two different areas: Canastra, a tropical savannah in South-Eastern Brazil (Rocha et al., 2013) and Pantanal, a vast floodplain in Midwest Brazil (Herrera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rocha et al., 2013 and Herrera et al., 2011",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "6aa733ac-e242-4a2c-bbfb-1d4734c4d0cf",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C94",
+      "claim": "Canastra and Pantanal hold highly diverse host communities which differ in the structure of interactions, particularly in the vectorial transmission layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Both places hold a highly diverse host communities which differ in the structure of interactions, particularly in the vectorial transmission layer (See Appendix 2 for further details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with reference to Appendix 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "82c71896-dff1-41ec-858e-78d026cd22c6",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C95",
+      "claim": "All vector species are grouped as one functional group in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Since kissing bugs function as a single ecological unit and previous T. cruzi epidemiological models treat the vectors as a single compartment (Kribs-Zaleta, 2006; Kribs-Zaleta, 2010), all vector species are grouped as one functional group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kribs-Zaleta, 2006; Kribs-Zaleta, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "38b3942b-7cb9-45e8-919f-e30c69e88c35",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C96",
+      "claim": "Species infection rate is used to estimate the contaminative interactions in the vectorial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Species infection rate is used to estimate the contaminative interactions in the vectorial layer (Rocha et al., 2013; Herrera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rocha et al., 2013; Herrera et al., 2011",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "042b9e84-598c-4d33-ba22-68452a0118e2",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C97",
+      "claim": "Positive parasitological diagnostics for T. cruzi (hemoculture) are used as a proxy for connections on the vectorial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive parasitological diagnostics for T. cruzi (hemoculture) are used as a proxy for connections on the vectorial layer, since only individuals with positive parasitaemia (i.e. with high parasite loads in their blood) are able to transmit the parasite (Jansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jansen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "b2c4e10f-42a1-4075-9fef-5c85416def76",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C98",
+      "claim": "Only individuals with positive parasitaemia (i.e. with high parasite loads in their blood) are able to transmit T. cruzi.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive parasitological diagnostics for T. cruzi (hemoculture) are used as a proxy for connections on the vectorial layer, since only individuals with positive parasitaemia (i.e. with high parasite loads in their blood) are able to transmit the parasite (Jansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jansen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "52c9885b-9f8c-42b6-927b-cae57971570f",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C99",
+      "claim": "Parasite transmission among animal groups happens considerably faster than both group creation or extinction and parasite transmission within groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that parasite transmission among animal groups happens considerably faster than both (i) group creation or extinction and (ii) parasite transmission within groups, so that fixed numbers of hosts and vectors can be considered, as in previous works (Keeling and Rohani, 2008; Legros and Bonhoeffer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keeling and Rohani, 2008; Legros and Bonhoeffer, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "c27821c6-d729-4a19-a1b2-eb5ea76cf1b9",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C101",
+      "claim": "The infection starts from a small circle of radius 0.03 in the middle of the unitary space infecting all animal groups within that area.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection starts from a small circle of radius 0.03 in the middle of the unitary space infecting all animal groups within that area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a model initial condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "0bbdb56f-acec-4524-bb35-0ae5708c564d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "claim_id": "C102",
+      "claim": "The minimum number of groups/nodes that have to be immunised in order to observe increases in infection time compared to random immunisation with a significance level of 5% is \u03c6 = 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunising groups at random in ecomultiplex networks with N= 10000 nodes, we identify \u03c6 = 1000 as the minimum number of groups/nodes that have to be immunised in order to observe increases in t\u2217compared to random immunisation with a significance level of 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined from random immunisation simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on zoonoses as multi-host pathogens with complex transmission modes. Claims establish that zoonoses are naturally transmitted between animals and humans (C1), are the most important cause of emerging diseases (C2), are predominantly multi-host pathogens (C3) with heterogeneous host contributions (C4-C5), and have complex life cycles with multiple transmission modes (C6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by appropriate citations to established literature (Perkins et al., 2005; Jones et al., 2008; Ostfeld and Holt, 2004; Webster et al., 2017, among others). The claims represent standard knowledge in disease ecology and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes T. cruzi as a multi-host parasite with complex transmission ecology involving both vectorial (contaminative) and trophic (food-web) routes. T. cruzi infects over 100 mammalian species (C9), is transmitted by Triatominae vectors (C11-C13) and through predator-prey interactions (C14), and establishes lifelong infections without causing mortality in sylvatic hosts (C15-C16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by appropriate citations to established T. cruzi literature (Noireau et al., 2009; Jansen et al., 2015; Kribs-Zaleta, 2006; Teixeira et al., 2011). The description of T. cruzi transmission mechanisms is consistent with established knowledge and provides essential biological context for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "c34d97d8-7ff2-4ad3-8104-9f7be579b0f3",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Current control strategies (chemical insecticides and housing improvement) are proving inefficient in reducing T. cruzi transmission (C17-C18), possibly due to maintenance among wild hosts and sylvatic vectors (C19). This motivates the need for models that explicitly consider wildlife transmission ecology (C20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by appropriate citations (Dias and Schofield, 1999; Roque et al., 2013). Claim C20 is a logical inference that follows from the inefficiency of current strategies. Together, these claims provide clear motivation for the modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "de820fec-b029-4a55-b86d-cfb52fc5d405",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript introduces the ecomultiplex framework based on multiplex networks, which have been successfully applied to epidemiology and ecology (C21-C23). The framework accounts for multiple transmission routes (C24), uses metabolic theory to estimate species frequencies (C25-C26), and explicitly considers spatial structure (C27).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about multiplex networks are well-supported by appropriate citations (De Domenico et al., 2013; Kivela et al., 2014; Lima et al., 2015; Pilosof et al., 2017). The stated features of the ecomultiplex framework (C24-C27) are supported by citations to metabolic theory (Jetz et al., 2004) and spatial epidemiology (Hudson et al., 2002). The framework description is clear and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ecomultiplex model is applied to two Brazilian ecosystems (Canastra and Pantanal) using empirical data on predator-prey interactions, vector-host interactions, and parasite infection rates (C28, C93-C98). The model makes several simplifying assumptions including uniform interaction radius (C82), equal transmission probabilities across species (C83-C85), and faster parasite spread than metapopulation dynamics (C87, C99). Model parameters include N=10000 animal groups, home range radius r=0.03, and immunization threshold \u03c6=1000 (C101-C102).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the model structure is clearly described and based on empirical data from Rocha et al., 2013 and Herrera et al., 2011, several critical assumptions lack justification. The uniform interaction radius (C82) and equal transmission probabilities (C83) are acknowledged as simplifications but their impact on results is not thoroughly validated. The claim that network structure and frequencies are 'analogous to considering different transmission rates' (C84) is supported only by self-citation (Stella et al., 2016) and requires more rigorous justification. The assumption of faster parasite spread than metapopulation dynamics (C87) is stated but not validated against empirical timescales. Additional sensitivity analyses would strengthen confidence in model robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "b03866b3-369d-426f-be15-067eeb32b11e",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Network analysis reveals that vectors are more connected than other species (C29), distribute links more equally across layers (C30), occupy central positions in star-like topologies (C33), and thus facilitate parasite spread (C31-C32, C34). This is shown through multiplex cartography analysis in both Canastra and Pantanal (Figure 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The network structural analysis is well-presented with clear visualization in Figure 2. The claims about vector connectivity and centrality (C29-C30, C33) are directly supported by the multiplex cartography data. The inference that vectors facilitate spread (C31-C32, C34) logically follows from their structural position. The analysis appropriately uses established multiplex network metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "9c287327-7240-470a-ae8b-ff893cc72257",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Immunization strategy comparisons show that targeting species with highest infection rates (Hemoculture) is most effective (C37), while ecomultiplex strategies (targeting species interacting with vectors) outperform random immunization (C40). Performance varies by ecosystem and vector frequency: in Canastra at low vector frequency, biological strategies equal random (C42), while in Pantanal, targeting parasitized Didelphidae is highly effective (C48). Targeting Cricetidae in Pantanal performs worse than random (C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by simulation results presented in Figure 3 with appropriate statistical testing (sign tests with p-values reported). The comparison across multiple strategies, ecosystems, and parameter values is thorough. The finding that network-based strategies can perform comparably to epidemiological data-based strategies is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "0144e68b-1675-4e16-89ca-bfa62f4a824d",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In Canastra, immunizing the ocelot (Leopardus pardalis), which has positive T. cruzi infection, dramatically increases infection time compared to immunizing the maned wolf (Chrysocyon brachyurus), which has negative infection (C52-C54). This indicates the ocelot has a parasite amplification effect (C55) that depends on ecomultiplex structure (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between immunizing two different top predators with different infection statuses is well-designed and clearly presented in Figure 4. The drastic difference in infection time (C54) provides strong evidence for the amplification effect (C55). The claim that this depends on ecomultiplex structure (C56) is supported by the subsequent mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "e9a010fe-1fab-48df-9359-30ccae4328c6",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript identifies a novel parasite amplification mechanism: while top predators are generally thought to regulate parasite spread (C71), the ecomultiplex framework reveals they can facilitate spread when they interact with vectors (C72). The ocelot, as a generalist predator feeding on vectors and prey (C73-C74), can acquire infection through the food web and transmit to vectors through vectorial interactions (C75-C76). This amplification emerges only when both layers are considered together (C78), providing theoretical explanation for empirical observations (C80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the most novel and important finding of the manuscript. The amplification mechanism is well-supported by the immunization experiments (Figure 4), has clear mechanistic explanation (C73-C76), and is appropriately contrasted with traditional understanding (C71). The claim that amplification emerges only from multiplex structure (C78) is crucial and well-demonstrated. The connection to empirical observations (Rocha et al., 2013) strengthens the finding. The generalization to other predators (C77) is reasonable but would benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript's key conclusions are: (1) network structure identifies species facilitating parasite spread (C57), (2) interaction structure is as useful as biological traits for control (C58), (3) top predator interactions affect their role in facilitating rather than hampering transmission (C59), (4) ecomultiplex strategies outperform taxonomic strategies (C60), and (5) network structure enables data-efficient immunization strategies (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims are well-supported by the collective results presented. Claims C57-C59 represent the three main findings stated in the Discussion. Claims C60-C61 are supported by the immunization strategy comparisons in Figure 3. The conclusions appropriately synthesize the results without overstating their implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "d10b3788-1a74-4ad1-89ac-11db724625f0",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The results demonstrate the importance of jointly considering vector-host and predator-prey interactions for understanding T. cruzi transmission (C62). Immunizing species exposed to vectorial transmission is efficient across both ecosystems (C63), highlighting the importance of vectorial transmission for boosting spread in the food web (C64). The ecomultiplex model enables quantitative investigation of interaction interplay (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize key insights from the immunization experiments. The consistency of vectorial layer importance across ecosystems (C63) is well-demonstrated in Figure 3. The inference about vectorial transmission boosting food web spread (C64) is logical and supported by the data. Citations to relevant literature (Coura, 2006; Johnson et al., 2010; Lafferty et al., 2008) appropriately contextualize the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "eb9b0854-05c8-4f10-ba0d-ea5df1127ce3",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In Pantanal, immunizing Didelphidae with positive parasitemia is more effective than immunizing all parasitized mammals (C66), consistent with their role as important T. cruzi reservoirs (C67-C68). This demonstrates the ecomultiplex framework's power in identifying functional roles based on topological interactions (C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding about Didelphidae (C66) is clearly shown in Figure 3c and appropriately connected to established literature identifying them as reservoirs (Herrera and Urdaneta-Morales, 1992; Noireau et al., 2009). The definition of reservoirs (C68) is properly cited. The claim about identifying functional roles from network structure (C69) is a reasonable inference from this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "2be0962f-0c00-486e-904d-23e047c751c3",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The parasite amplification mechanism is robust to violations of metabolic theory assumptions, as shown in null models with body mass-independent abundance (Appendix 8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the claim references Appendix 8 for null model analysis, the appendix is not provided in the manuscript text, making it impossible to evaluate the robustness analysis. This is an important validation that should be more thoroughly described in the main text or supplementary materials should be provided for review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "4c940037-3c2c-46de-9e31-9ca8dd10affd",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Parasite amplification by predators may occur in other systems with multiple transmission routes including trophic transmission, such as Toxoplasma gondii and Trypanosoma evansi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is speculative extrapolation beyond the current study. While the citations (Dubey, 2004; Herrera et al., 2011) establish that these parasites have multiple transmission routes, no modeling or empirical analysis is provided to support that amplification occurs in these systems. This represents a reasonable hypothesis for future work but is not demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "4d2f9895-c7ee-401c-a304-8f49108ea6fa",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Immunizing species more exposed to parasites leads to better performance than random immunization, confirming that network structure and frequencies create differential exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by the immunization strategy results showing that network-based strategies outperform random immunization. It validates the model assumption that structure and frequencies create differential transmission rates (C84-C85).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    },
+    {
+      "id": "9d73ed31-76cb-46f2-8682-f175dfd70d3b",
+      "content_id": "0d975ec1-b56d-4984-9e93-6508b198b1c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "While removing vector colonies can hamper parasite diffusion (C35), this strategy is unstable due to vector reintroduction (C36), motivating focus on immunizing other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately supported by citations (Yamagata and Nakagawa, 2006; Funk et al., 2013) and provide clear justification for the immunization strategies explored in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:23:02.391451Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8f4ea5bc-91e2-463a-92c5-17874f1b6c0a",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "d386ebef-ce27-49c1-8991-d09ea3ee940f",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "ca1bd4e0-a340-4c95-beac-87c8503cc313",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "946e381e-487d-4753-99b3-199dd90b7181",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "badfcba6-8f7e-4c62-b07f-a54e62545368",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "a5a0dae7-4986-4c72-bb90-a35b335ccfa1",
+      "result_id": "59be88cb-8bf5-46d7-927e-8c2ec1abcd99"
+    },
+    {
+      "claim_id": "486f1cf5-0f6d-4f18-a96e-82efd4f9f880",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "a0f89fdd-3bf8-42f8-bb17-d38060e4673d",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "f5c298fd-583e-4203-9b4e-bd39a0347ec8",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "70eabcec-d3c7-4ae6-ad3a-c6eb616c0523",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "03e2d962-ad64-47ae-a1e7-bd0e43a41158",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "050d353b-b7f4-4321-8124-173ed7ae6b2b",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "63dc6a6c-0f2a-4a0c-8965-5a73871a7f31",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "863c5476-b465-4c73-91d6-836c7285aca7",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "6492a839-7323-471c-83bc-1c15c20b0b4f",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "4884ec24-8aaf-443e-b43a-db05d62ee8d2",
+      "result_id": "5d08f8ef-2e9f-4c4e-845f-2baa5106c763"
+    },
+    {
+      "claim_id": "3e2e1510-7417-4425-bd33-2a28df953736",
+      "result_id": "c34d97d8-7ff2-4ad3-8104-9f7be579b0f3"
+    },
+    {
+      "claim_id": "db7f6159-3950-4d60-83d9-95c0e1445efc",
+      "result_id": "c34d97d8-7ff2-4ad3-8104-9f7be579b0f3"
+    },
+    {
+      "claim_id": "b4c172df-709b-4da3-9336-d42b0738681f",
+      "result_id": "c34d97d8-7ff2-4ad3-8104-9f7be579b0f3"
+    },
+    {
+      "claim_id": "63b1f38b-ddd6-4076-be32-0f178239f738",
+      "result_id": "c34d97d8-7ff2-4ad3-8104-9f7be579b0f3"
+    },
+    {
+      "claim_id": "53278338-9b6b-4c2c-9d99-9f2cd620e525",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "691955a7-4cc4-421e-a0d1-43f99e5b08fb",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "88f072cc-769c-48cd-9cc6-22e0f3ad73eb",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "6742bd6d-f9b5-47b2-bc18-5d5fd301e0a7",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "f18cc6ec-e859-4fe2-846f-a8b773279647",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "508a89f4-d1b6-416c-bd3e-fc45361109af",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "d0b2db46-8455-4e22-b9a6-653ee7db1dbb",
+      "result_id": "de820fec-b029-4a55-b86d-cfb52fc5d405"
+    },
+    {
+      "claim_id": "ea51bdfe-8da4-42c5-8fa2-adb9b59991b7",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "1ab808ce-552a-453d-89e5-3c5ee9580ee0",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "6aa733ac-e242-4a2c-bbfb-1d4734c4d0cf",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "82c71896-dff1-41ec-858e-78d026cd22c6",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "38b3942b-7cb9-45e8-919f-e30c69e88c35",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "042b9e84-598c-4d33-ba22-68452a0118e2",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "b2c4e10f-42a1-4075-9fef-5c85416def76",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "52c9885b-9f8c-42b6-927b-cae57971570f",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "e36ad637-23fc-44d1-847a-90c09909a554",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "eeb65303-aa23-47b3-9539-829cfb2818d0",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "dae98b7f-328a-42b4-9d63-3415ae240767",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "7dda00ef-3686-46c7-b97a-129aa114094b",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "59f77a2a-2c1e-4404-a5be-f6a5d0bb965d",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "c27821c6-d729-4a19-a1b2-eb5ea76cf1b9",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "0bbdb56f-acec-4524-bb35-0ae5708c564d",
+      "result_id": "5d3e8f72-261f-4b89-8699-0dfab7cfd684"
+    },
+    {
+      "claim_id": "8102c282-aff6-4ebd-84b7-4ee42cba6a65",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "4d4f032c-34f8-442b-960d-4e0e173c49c1",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "4709aa9f-6c77-4c75-ba32-8a39efae288d",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "2e71f0a8-0b48-4a6f-86e7-b96978ca68ad",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "ea054e82-e7f4-4a86-9cd2-4fc3fde401cf",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "b1c9e010-127c-4825-b5b8-4e048f3490cf",
+      "result_id": "b03866b3-369d-426f-be15-067eeb32b11e"
+    },
+    {
+      "claim_id": "2a1e1444-b18c-456c-ba58-5824031269ff",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "2d1ffb4d-2402-4d0a-bc5e-a7a8b08c592f",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "bc124622-45c4-408a-a0f4-cdc77e59174a",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "d960c779-7440-42c8-ad69-e9567ec586c7",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "a3043b85-baf2-4f5a-b19c-2dfe8f046200",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "c566d2ae-4cc3-40e9-8724-34c5ac9c3aaf",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "7d56f466-c146-4c43-9444-e93fe7b0fea1",
+      "result_id": "9c287327-7240-470a-ae8b-ff893cc72257"
+    },
+    {
+      "claim_id": "afccc75e-284e-488b-a8a0-67328d9c26db",
+      "result_id": "0144e68b-1675-4e16-89ca-bfa62f4a824d"
+    },
+    {
+      "claim_id": "42c20b65-836f-4e9f-bdc3-da010e2f3b92",
+      "result_id": "0144e68b-1675-4e16-89ca-bfa62f4a824d"
+    },
+    {
+      "claim_id": "22108dc7-01de-4e35-8a93-4da0b5daafa0",
+      "result_id": "0144e68b-1675-4e16-89ca-bfa62f4a824d"
+    },
+    {
+      "claim_id": "f2c47752-9058-4b8a-85b7-70258ec55415",
+      "result_id": "0144e68b-1675-4e16-89ca-bfa62f4a824d"
+    },
+    {
+      "claim_id": "1ddb3f6a-7085-4cac-a0b6-95498af50310",
+      "result_id": "0144e68b-1675-4e16-89ca-bfa62f4a824d"
+    },
+    {
+      "claim_id": "ef89dd39-e9c3-4b30-8faa-67cce5ce1986",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "7fe24583-a988-455c-af88-a7b19de6d955",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "9ef114be-5067-4528-a083-fed4166bce6e",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "01c8eca6-2c42-4315-ba70-e7f176aefe9d",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "e3472c8b-5031-446b-acda-d0c3f5bb5347",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "c0c6d331-0f3c-4105-b978-3b0c2c266fd3",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "3dbd64c8-ec4f-43c8-aeaf-812ddecbaa93",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "d7fd3e97-a274-421e-95d3-5904449db4e7",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "313f0331-d514-405c-a0cf-075cd9e9d26f",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "82e0c949-d7f3-4b54-b38e-be1a54e8f6ca",
+      "result_id": "e9a010fe-1fab-48df-9359-30ccae4328c6"
+    },
+    {
+      "claim_id": "7a43eab3-87ce-4cc3-aae1-129a02464331",
+      "result_id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7"
+    },
+    {
+      "claim_id": "998539c3-6f8f-4f90-aad1-e4630b867a3f",
+      "result_id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7"
+    },
+    {
+      "claim_id": "b665ac47-667e-4632-b824-2a8268412a59",
+      "result_id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7"
+    },
+    {
+      "claim_id": "faf4db66-a7e8-4d5e-8161-2ebb54bff48f",
+      "result_id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7"
+    },
+    {
+      "claim_id": "d2fd9582-5027-4cef-96c5-ff29fce8ce6e",
+      "result_id": "c6d22a2a-0d05-4de3-b0ed-a9c229f91ec7"
+    },
+    {
+      "claim_id": "d9c2b965-ea47-47fe-85bd-efbb4631197f",
+      "result_id": "d10b3788-1a74-4ad1-89ac-11db724625f0"
+    },
+    {
+      "claim_id": "d72ff085-1ad2-4b7f-9923-8d6c619c30cc",
+      "result_id": "d10b3788-1a74-4ad1-89ac-11db724625f0"
+    },
+    {
+      "claim_id": "727c52da-6a87-4d3c-b6e6-9160494e3f01",
+      "result_id": "d10b3788-1a74-4ad1-89ac-11db724625f0"
+    },
+    {
+      "claim_id": "60a83da0-cc3b-45eb-8487-76a98d0f2532",
+      "result_id": "d10b3788-1a74-4ad1-89ac-11db724625f0"
+    },
+    {
+      "claim_id": "8b90fe48-00ef-4109-a45f-dae9d7a18014",
+      "result_id": "eb9b0854-05c8-4f10-ba0d-ea5df1127ce3"
+    },
+    {
+      "claim_id": "2242f020-eeb4-42b6-bef3-72da40e92d38",
+      "result_id": "eb9b0854-05c8-4f10-ba0d-ea5df1127ce3"
+    },
+    {
+      "claim_id": "a41e56e8-e966-4e0c-9902-0d6eddfb1f24",
+      "result_id": "eb9b0854-05c8-4f10-ba0d-ea5df1127ce3"
+    },
+    {
+      "claim_id": "560713ab-5384-42ea-99a2-acdf88f062c4",
+      "result_id": "eb9b0854-05c8-4f10-ba0d-ea5df1127ce3"
+    },
+    {
+      "claim_id": "1fe970a6-651b-437f-96e3-7565b3130b81",
+      "result_id": "2be0962f-0c00-486e-904d-23e047c751c3"
+    },
+    {
+      "claim_id": "8c8f81b6-c2b5-4f67-bb48-6d36de19f9c9",
+      "result_id": "4c940037-3c2c-46de-9e31-9ca8dd10affd"
+    },
+    {
+      "claim_id": "d47458c9-8348-4681-b398-44c44fa3eaa9",
+      "result_id": "4d2f9895-c7ee-401c-a304-8f49108ea6fa"
+    },
+    {
+      "claim_id": "d16ad3e7-8a98-4794-9b8b-b0490877f3d2",
+      "result_id": "9d73ed31-76cb-46f2-8682-f175dfd70d3b"
+    },
+    {
+      "claim_id": "0e335e32-02de-4fb8-b622-b7ab5655d4b4",
+      "result_id": "9d73ed31-76cb-46f2-8682-f175dfd70d3b"
+    }
+  ],
+  "comparisons": []
+}

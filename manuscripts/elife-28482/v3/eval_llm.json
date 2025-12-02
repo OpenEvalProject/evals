@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors isolated a 452-gene signature of bona fide AR target genes by integrating ARBS location, TSS position, and androgen-responsive gene expression data. This signature was validated through multiple complementary analyses including ChIP, cistrome motif analysis, and pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 collectively demonstrate a rigorous multi-step approach to identify direct AR target genes. The integration of genomic location data (C13-C14), expression profiling (C15-C17), validation in independent cell lines (C18), kinetic studies (C19), ChIP verification (C20-C22), motif enrichment (C24-C25), and functional annotation (C26) provide converging lines of evidence supporting the validity of the 452-gene signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors systematically evaluated 18 clinically relevant AR-associated coregulators and found that each coregulator affects androgen-responsiveness of 0-57% of AR target genes in a gene-specific manner, with individual coregulators acting as both coactivators and corepressors depending on the target gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C43 describe a comprehensive siRNA screen with appropriate controls and validation. The findings are supported by oligoarray data (C32-C33), ChIP validation (C38-C39), and time-course studies (C40-C43). The context-dependent dual function of coregulators (C33) represents a novel and well-supported observation with mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Pairwise comparison of coregulator-dependent AR target gene sets revealed limited overlap (<30% in most cases) between different coregulator signatures, with only 30.8% showing significant overlap at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by statistical analysis with appropriate p-values provided (C45). The specific example of STAT3 and WDR77 overlap (C46-C47) illustrates the general pattern. This demonstrates gene-specific preferences in coregulator dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cistrome analysis identified 283 overrepresented TF binding motifs in ARBSs, with each coregulator-dependent gene set harboring at least one unique TF binding motif not found in other signatures, suggesting molecular basis for coregulator selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by computational cistrome analysis with appropriate methodology. The finding that each coregulator-dependent signature has unique TF binding motifs (C51) provides a mechanistic explanation for gene-specific coregulator dependence. The STAT3 example (C52) demonstrates biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IPA analysis revealed that coregulator-dependent AR target gene signatures associate with different numbers (0-34) and types of biological functions, indicating selective involvement in specific cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by IPA computational analysis. The wide range of associated categories (C53-C54) and specific examples like SMARCC1 (C55) demonstrate differential functional associations. This supports the biological relevance of coregulator-dependent partitioning of AR action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GSEA analysis of clinical datasets revealed differential enrichment patterns for coregulator-dependent gene signatures across disease states, with some signatures showing androgen regulation only in cancer but not benign prostate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by GSEA analysis of multiple independent clinical datasets with appropriate FDR thresholds. The finding that some signatures (e.g., WDR77-dependent) are not androgen-regulated in benign prostate (C57) but show enrichment in aggressive disease (C59) demonstrates clinical relevance and cancer-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors identified a novel AR-WDR77-p53 transcriptional code in which WDR77 physically interacts with p53 and both proteins cooperatively regulate androgen-responsiveness of 272 genes with consistent directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71 provide multiple converging lines of evidence: cistrome prediction (C60-C63), Co-IP validation in two cell lines (C64-C65), genome-wide expression analysis with highly significant overlap (C66, p<2.2E-16), and remarkable consistency in directionality (C67-C71). The statistical significance and consistency across multiple experimental approaches strongly support this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors validated a second transcriptional code involving STAT3 and IRF1, demonstrating that cistrome analysis can predict functional TF-coregulator interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate proof-of-principle validation of the cistrome prediction approach. Co-IP confirms physical interaction (C72), and gene expression analysis shows significant overlap (C73, p<2.2E-16) with preserved directionality (C74). This validates the general approach used to identify transcriptional codes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The AR-WDR77-p53 transcriptional mechanism is maintained in the presence of clinically relevant p53 mutants found in castration-recurrent prostate cancer, with mutant p53 retaining interaction with WDR77.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by multiple experiments: western blot analysis (C77-C78), qRT-PCR of target genes (C79), and Co-IP with mutant p53 (C80). The use of clinically relevant mutations (C75) and validation in VCaP cells expressing mutant p53 (C76) strengthen clinical relevance. This extends the mechanism to advanced disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PGAM5 was identified as a novel component of the AR-WDR77-p53 complex through IP-mass spectrometry, is overexpressed in aggressive prostate cancer, and is required for WDR77-dependent recruitment of p53 to AR target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C94 provide comprehensive validation of PGAM5 as a novel AR coregulator: unbiased discovery by mass spec (C81), clinical validation showing correlation with disease progression (C82-C85), biochemical validation by Co-IP (C87), ChIP showing recruitment to AREs (C88), functional validation by knockdown affecting 218/272 genes (C90-C91), and mechanistic studies showing requirement for p53 recruitment (C92-C94). The convergence of discovery, clinical, biochemical, and functional data strongly supports this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Silencing of components of the AR-WDR77-p53 transcriptional code (WDR77, PGAM5) or its target genes reduces cell viability and causes G1/S cell cycle delay in multiple prostate cancer cell models including those with mutant p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by multiple complementary assays: MTS viability assays (C95-C96), validation in cells with mutant p53 (C97-C98), FACS cell cycle analysis (C99), and western blot for DNA damage markers (C100). The consistency across different cell models and multiple readouts supports the biological significance of this transcriptional code for cell cycle control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7"
+    ],
+    "result": "Standard ADT prevents AR ligand activation but cancer progresses while remaining AR-dependent, leading to approximately 27,000 deaths annually in the United States.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C7 represent established clinical knowledge supported by appropriate citations. These provide important context for the study's rationale but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "AR functions as a transcription factor controlling ARE-driven genes that dictate cancer cell behavior, and aberrant coregulator expression correlates with aggressive disease and contributes to ADT resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 represent established knowledge from prior literature, appropriately cited. These provide scientific background and rationale but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "In a 452-AR-target gene panel, each of 18 clinically relevant coregulators mediates androgen-responsiveness of 0-57% of genes and acts as coactivator or corepressor in a gene-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 summarize the main findings from the coregulator screen. These are well-supported by the experimental data in Figure 1B and represent a key conclusion of the systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "WDR77 unites the actions of AR and p53, the major genomic drivers of lethal prostate cancer, to control cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 represent the major conceptual advance of the paper. C5 is supported by multiple experiments (Co-IP, gene expression, cell cycle analysis). C6 is supported by citations to recent sequencing studies. Together they establish the significance of the AR-WDR77-p53 mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "AR and p53 do not interact directly but WDR77 mediates their interaction, and this interaction is maintained with mutant p53 in castration-recurrent prostate cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 synthesize prior knowledge (C101-C103) with new findings (C104-C105). The maintenance of WDR77-mutant p53 interaction is supported by Co-IP data (Figure 4D) and extends the mechanism to clinically relevant advanced disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "PGAM5 was previously known to regulate cell death but was not known to be relevant to AR signaling or prostate cancer biology prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 accurately describe the prior state of knowledge about PGAM5, supported by appropriate citations. This establishes the novelty of identifying PGAM5 as an AR coregulator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cell lines were obtained from ATCC, used for no more than 10 passages, authenticated by STR profiling, and tested negative for Mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 describe appropriate quality control measures for cell lines. These methodological details support reproducibility but are standard practices rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

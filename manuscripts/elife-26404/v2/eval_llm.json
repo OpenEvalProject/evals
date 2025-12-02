@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C5"
+    ],
+    "result": "St REM1.3 targeting to the plasma membrane is independent of the COP-II-dependent secretory pathway, as demonstrated by normal PM localization and organization upon inhibition with dominant-negative SAR1 or Brefeldin A treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide converging experimental evidence using both genetic (dominant-negative SAR1) and pharmacological (BFA) approaches. The data show maintained PM targeting and nanodomain organization (quantified by SCI) under secretory pathway inhibition. Controls (PMA4-GFP) are included, and the findings are consistent with prior work on rice REM (C35 cites Gui et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C6"
+    ],
+    "result": "Sterols are required for REM-CA nanodomain organization but not PM targeting. Fenpropimorph treatment altered sterol composition, abolished nanodomain clustering (measured by SCI), but maintained PM localization. REM-enriched nanodomains co-localized with highly ordered membrane regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide complementary evidence: biochemical analysis confirms sterol composition changes (C39), confocal microscopy with SCI quantification shows loss of clustering but maintained targeting (C40), and di-4-ANEPPDHQ imaging confirms co-localization with ordered domains (C41). Statistical tests show significant differences (p<0.0001 for SCI). Controls with PMA4-GFP demonstrate membrane integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PI4P is required for both PM targeting and nanodomain organization of St REM1.3. Expression of active MAP-SAC1p, which specifically dephosphorylates PI4P, reduced both PM signal intensity and lateral segregation compared to the dead version.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 form a logical chain: C42-C44 establish the specificity of the MAP-SAC1p tool (citing multiple sources and showing it doesn't affect PS or PI(4,5)P2), C45 shows the experimental result with quantification, and C46 provides the interpretation. The use of both active and dead versions of the enzyme is a strong control. However, C46 is stated as a suggestion rather than definitive proof, which is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C7",
+      "C95"
+    ],
+    "result": "REM-CA is an unconventional lipid-binding motif composed of two regions: R1 (helical, interacts with lipid polar heads) and R2 (hydrophobic, embedded in bilayer). The peptide is unstructured in aqueous solution but folds into an alpha helix in hydrophobic environments and in the presence of PIPs and sterols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C62 provide comprehensive biophysical characterization using multiple complementary techniques (liquid-state NMR, solid-state NMR, FT-IR, tensiometry). The two-region model (C51) is supported by in silico analysis and validated experimentally. R2 deletion abolishes PM association in planta (C54), providing functional validation. The conformational change upon lipid binding (C48, C60-C62) is demonstrated by multiple methods. The integration of structural and functional data is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Molecular dynamics simulations predict that REM-CA inserts into the lipid bilayer with two distinct regions, with lysines K192, K193, K183, and arginine R185 forming salt-bridges with PI4P phosphate groups, while tyrosine Y184 is unlikely to interact with sterols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 present MD simulation results that are consistent with experimental data. The predictions about Y184 (C64) are validated by mutant analysis showing Y184F still forms nanodomains (C67). The predictions about lysine interactions (C65) are validated by mutant studies (C72-C74). However, MD simulations have inherent limitations (force field accuracy, sampling), and the distance measurement in C64 (>1 \u00b5m) appears to be an error (should be nm scale).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Positively charged residues in REM-CA are essential for PM targeting through specific lipid-peptide interactions rather than net charge. Single and double mutants localize to PM, while triple to sextuple mutants show cytosolic localization. Despite negative net charge, mutants can still target the PM, suggesting structural specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present a systematic mutational analysis. C67 validates the MD prediction about Y184. C68-C69 show a threshold effect where multiple mutations are required to disrupt targeting. C70-C71 make an important mechanistic point about structural specificity vs. electrostatic charge, supported by comparison to other PM-targeting proteins. The logic is sound, though C71 is somewhat speculative (labeled as INFERENCE).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Specific lysine residues (K183, K192, K193) are required for proper nanodomain organization, while K176 and R185 are dispensable. Combining mutations on these residues with other charged residue mutations increases the disruption of nanodomain organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by confocal microscopy with SCI quantification (Figure 4A,B) and are consistent with MD predictions (C65). The hierarchical importance of residues is clearly demonstrated. Statistical analysis (Dunn's multiple comparisons, p<0.05) supports the conclusions. The data directly test the MD predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C8"
+    ],
+    "result": "REM-CA mutations that disrupt nanodomain organization impair the protein's ability to restrict viral cell-to-cell movement and reduce plasmodesmata permeability. Single mutants K176S, Y184F, and R185A retain function, while K183S, K192A, and K193A show partial loss, and double mutants show near-complete loss of activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide functional validation of the structural findings, linking nanodomain organization to biological function. The gradient of functional impairment correlates with the degree of structural disruption. Multiple assays (PVX spreading, PD permeability) show consistent results. Statistical analysis (Dunn's test, p<0.05) supports significance. Western blots confirm protein expression. This establishes the functional relevance of the structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Single-particle tracking PALM reveals that REM-CA mutants display altered mobility compared to wild-type. All fusions show highly confined diffusion, but the four mutants (K183S, K192A, K183S/K192A, K192A/K193A) show lower mobility than WT. K183S has similar MSD to WT, while K192A and double mutants show lower MSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 present spt-PALM data with appropriate quantification (diffusion coefficient, MSD). The finding that non-functional mutants have lower (not higher) mobility is unexpected and important (noted in C99). Sample sizes are adequate (n=13-51 cells). Statistical significance is shown (p<0.0015). This reveals that mobility and function are not simply correlated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C101"
+    ],
+    "result": "Live PALM analysis reveals that REM-CA mutants show altered nanodomain organization. WT forms ~80 nm nanodomains occupying 7% of PM surface with 37% of molecules in domains. Mutants show decreased total nanodomain surface, with K183S/K183S-K192A forming smaller domains and K192A/K192A-K193A forming larger but less dense domains. Single protein mobility and supramolecular organization are uncoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 provide detailed quantitative analysis of nanodomain organization using Vorono\u00ef tessellation. The WT measurements (C82-C85) agree with prior studies. The mutant analysis (C86-C88) shows distinct phenotypes. The key insight (C89-C90) that mobility and organization are uncoupled is well-supported by the data showing K192A has lowest MSD but forms largest clusters. Statistical analysis (Dunn's test, p<0.05) supports differences. At least 6 datasets per construct provide adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C100",
+      "C102"
+    ],
+    "result": "Altered nanodomain partitioning is sufficient to inhibit signaling events involving St REM1.3. PM-protein function relies not solely on immobility but on the ability to organize into supramolecular domains. REM-CA-defined PM-nanodomains may represent a functional unit for membrane-bound cell signaling in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C100, and C102 present important interpretations but are speculative (labeled as INFERENCE/SPECULATION). While the correlation between altered partitioning and loss of function is clear, the causal mechanism is not directly demonstrated. C92 suggests altered partition with kinases or interacting partners, but these partners are unknown. C100 makes a strong claim about the general principle of PM-protein function based on this single protein family. C102 is appropriately hedged with 'may represent.' These are reasonable hypotheses but require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "St REM1.3 is a functional homolog of N. benthamiana endogenous group 1b REMs for restricting PVX spreading, and Nb REM1.2 and Nb REM1.3 are highly expressed in leaf epidermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 establish the experimental system. C32 is supported by Figure 1\u2014figure supplement 2 showing functional complementation. C33 is supported by expression data. This validates the use of St REM1.3 as a model for studying endogenous N. benthamiana REMs in the relevant tissue (epidermis where PVX initiates infection per C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C93",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims establishing the importance of membrane compartmentalization, the REMORIN protein family, their functions in plant-microbe interactions and hormone signaling, and prior characterization of REM-CA as a membrane-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34, C93, C96-C98 provide context and cite prior literature. These are appropriately supported by citations to published work. They establish the rationale for the study and the state of knowledge before this work. C1-C2 are general principles, C3-C31 summarize prior work on REMs, and C93, C96-C98 provide additional context. These claims are not novel findings but necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Group 1 REM St REM1.3 is targeted to inner-leaflet PM nanodomains from the cytosol by REM-CA, which undergoes conformational change in presence of PI4P and sterols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a summary statement of the main findings, supported by the comprehensive data in Figures 1 and 2. This integrates multiple lines of evidence (secretory pathway independence, lipid requirements, structural characterization) into a coherent model. The claim is well-supported by the experimental data discussed in other results.",
+    "result_type": "MAJOR"
+  }
+]

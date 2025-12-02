@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C34",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "T2N is a novel software interface that enables seamless communication between NEURON and Matlab/TREES toolbox, facilitating the creation of compartmental models that are stable across diverse reconstructed and synthetic morphologies. The tool provides automated parallelization, simplified ion channel distribution, and enhanced visualization capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C75 collectively demonstrate T2N's core functionality through multiple lines of evidence including workflow diagrams (Figure 1), validation comparisons showing identical output to NEURON (Figure 1B), and practical demonstrations of its capabilities throughout Figures 2-8. The tool's features are consistently demonstrated across different cell types and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C15",
+      "C77",
+      "C95"
+    ],
+    "result": "The GC model incorporates only experimentally validated ion channel isoforms with compartment-specific distributions based on immunohistochemical, microscopy, and electrophysiological data from over 220 publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C15, C77, and C95 are well-supported by Table 1, which provides detailed documentation of channel types, their spatial distributions, and extensive literature references. The biological constraint approach is a key methodological strength demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C92"
+    ],
+    "result": "A morphological model was developed that generates synthetic mouse GC dendrites with morphological parameters comparable to reconstructed morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C92 are supported by Figure 2B-D showing the morphological modeling approach and quantitative comparisons demonstrating that synthetic morphologies match reconstructed ones in key parameters (dendritic length, soma thickness, branch points, termination points).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C16",
+      "C17",
+      "C76"
+    ],
+    "result": "The mature mouse GC model reproduces passive properties, steady-state currents, AP shape, and spiking behavior from patch-clamp experiments, and remains stable when switching between reconstructed and synthetic morphologies while keeping biophysical mechanisms unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C16-C17, and C76 are strongly supported by Figure 3 and Table 2, which show close agreement between model output and experimental data (Mongiat et al., 2009) across multiple electrophysiological parameters. The stability across morphology types is a key finding demonstrated by comparing middle and right columns of Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C91",
+      "C93"
+    ],
+    "result": "Morphological variability introduced by using different dendritic trees produces electrophysiological variability in the model that is within the range of experimental data, suggesting that morphological differences can account for a substantial portion of observed electrophysiological variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C91, and C93 are supported by Figure 3\u2014figure supplement 2, which shows correlations between morphological parameters (dendritic and somatic surface area) and electrophysiological properties. The inference that morphology contributes to electrophysiological variability is reasonable given the data, though causality cannot be definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C80",
+      "C105"
+    ],
+    "result": "After adjusting Kir conductance, the mouse GC model successfully reproduces rat GC electrophysiology, suggesting that mouse and rat GCs share similar ion channel density patterns. The model remains stable when switching between reconstructed and synthetic rat morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45, C80, and C105 are supported by Figure 4, which demonstrates that increasing Kir conductance allows the model to replicate rat I-V curves and spiking behavior. The cross-species transferability with minimal parameter adjustment is a significant finding, though the inference about shared channel patterns (C43, C80) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C106"
+    ],
+    "result": "The rat GC model reproduces backpropagating action potential (bAP) attenuation and Ca2+ dynamics from experimental data. Temperature-dependent adjustments to axial resistance and passive conductance were necessary for realistic bAP delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C106 are supported by Figure 5A-C, showing agreement between model predictions and experimental data (Krueppel et al., 2011; Stocca et al., 2008; Jackson and Redman, 2003). The temperature adjustment (C47) demonstrates attention to experimental conditions, though the necessity of this adjustment could indicate model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The model predicts that bAP attenuation is smaller in mouse GCs than rat GCs, while Ca2+ levels are comparable between species, suggesting similar dendritic Ca2+ signaling despite differences in voltage spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53 represent model predictions without experimental validation. While the predictions are internally consistent with the model (Figure 5A,C), they remain untested hypotheses. Claim C53 includes a conditional assumption about Ca2+ buffering mechanisms being comparable between species, which adds uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C82",
+      "C116"
+    ],
+    "result": "The model reproduces the effects of compensatory ion channel upregulation (HCN, Kir, Kv1.1) observed during temporal lobe epilepsy, demonstrating its utility for predicting pathology-related alterations across multiple morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C82, and C116 are supported by Figure 6D-E and Figure 6\u2014figure supplement 2, which show that the model qualitatively reproduces experimental findings on channel upregulation effects (Young et al., 2009; Stegen et al., 2012; Kirchheim et al., 2013). The agreement is qualitative rather than quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C81"
+    ],
+    "result": "A young adult-born GC (abGC) model was created by modifying ion channel expression based on developmental data. This model reproduces altered I-V curves and increased excitability compared to mature GCs, representing the first data-driven compartmental model of young abGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C81 are supported by Figure 7 and Table 3, which show that the adapted model matches experimental data from Mongiat et al. (2009) for young abGCs. The claim of being the first such model (C81) cannot be independently verified but is plausible given the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C110",
+      "C111"
+    ],
+    "result": "When driven by fewer synapses matching their biological connectivity, young abGCs exhibit similar input/output relationships to mature GCs, suggesting that higher intrinsic excitability compensates for lower synaptic input numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C110-C111 are supported by Figure 8A and citations to experimental studies (Mongiat et al., 2009; Pardi et al., 2015). The compensation mechanism (C60) is a reasonable inference from the modeling results, though it represents a model prediction rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C84"
+    ],
+    "result": "Both young abGCs and mature GCs are tuned to follow theta-range input frequencies (<10 Hz), but young abGCs integrate synaptic inputs over a broader time window than mature GCs at low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C64, and C84 are supported by Figure 8B, which demonstrates frequency-dependent responses and temporal integration windows. These are model predictions that align with the proposed role of abGCs in pattern separation (C65), though they lack direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C103"
+    ],
+    "result": "Previous biophysical models of hippocampal GCs (specifically the Aradi and Holmes 1999 model) were found to be unstable when transferred to diverse mouse and rat GC morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C103 are supported by Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1, and Supplementary file 1, which demonstrate that the Aradi and Holmes model fails to reproduce experimental data when applied to different morphologies. This provides important context for the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The model's robustness arises from using multiple realistic dendritic trees for tuning, implementing realistic Ca2+ dynamics, using multiple experimental datasets rather than single traces, and reproducing numerous electrophysiological phenotypes. A single parameter solution was found that works across many morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 describe the methodological approach that enabled model robustness. These are supported by the demonstrated stability across morphologies (Figures 3-8) and the extensive validation against multiple experimental datasets. The finding of a single solution (C101) is significant, though the authors acknowledge that alternative solutions may exist (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The abGC model assumes that adult-born GC development is similar to postnatal development and predicts reduced beta4 subunit expression or association with BK channels in young abGCs. Future improvements should focus on more realistic fAHP kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is an assumption supported by literature citations but not directly validated. Claim C108 is a model prediction without experimental validation. Claim C109 acknowledges a limitation (qualitative but not quantitative reproduction of fAHP kinetics, Figure 7B), indicating areas for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The entire parameter space was not explored, so alternative channel density distributions might produce similarly robust results. Previous work in other cell types shows that similar electrical behavior can arise from different ion channel combinations (degeneracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 acknowledge important limitations and place the work in the context of degeneracy literature (Achard and De Schutter, 2006; G\u00fcnay et al., 2008; Prinz et al., 2004; Marder, 2011). This is an honest assessment of model limitations and alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C127",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Future directions for T2N include extending it to model astrocyte-neuron interactions, additional plasticity mechanisms, and incorporating stochastic sampling algorithms to study degeneracy by generating multiple models with different parameters producing similar outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C135 describe future directions and potential applications. These are reasonable extensions based on the demonstrated capabilities of T2N, though they represent proposed rather than completed work. The suggestions are well-grounded in the current literature and the tool's demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C79",
+      "C85",
+      "C86",
+      "C87",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The GC model replicates a wide range of experiments from various labs, reproduces data across species, cell ages, and pathological conditions, and provides a foundation for future studies on GC function and hippocampal modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C79, C85-C87, C123-C125 represent summary statements about the model's scope and significance. These are well-supported by the comprehensive validation across Figures 3-8, Tables 1-3, and the extensive literature integration (>220 publications, C78). The model satisfies objective experimental constraints (Table 2) and demonstrates robustness to manipulations.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C97",
+      "C146"
+    ],
+    "result": "The CaCLEAN algorithm successfully identifies and maps active ECC couplons in intact cardiomyocytes without pharmacological intervention by combining the astronomer's CLEAN algorithm with calcium diffusion properties. The method enables identification of active ECC couplons in each recorded frame, with rebuilt fluorescence images closely resembling original data and showing high structural similarity (SSIM=0.57\u00b10.03) between identified release sites and plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C44-C46 provide converging evidence that CaCLEAN successfully identifies ECC couplons, validated by the close match between rebuilt and original fluorescence (C45) and high structural similarity with plasma membrane (C46, SSIM=0.57\u00b10.03, n=46). The method works without pharmacological intervention (C4, C47) as demonstrated across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CaCLEAN achieves approximately 1 \u03bcm resolution in all three optical axes (xy and z), matching the average distance between ECC couplon sites. The algorithm displays non-linear z-axis response providing >10-fold preference for in-focus signals, with optimal parameters of 60 \u03bcm\u00b2/s for Ca\u00b2\u207a-dye diffusion and 30 \u03bcm\u00b2/s for ACO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C106 demonstrate 1 \u03bcm resolution through simulation studies (Figure 1\u2014figure supplements 4-5), matching known RyR cluster spacing (C50). The non-linear z-response (C54-C55) provides strong spatial discrimination (>10-fold), and parameter optimization (C104-C105) is empirically validated in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C57",
+      "C103"
+    ],
+    "result": "CaCLEAN demonstrates high accuracy and robustness in simulations, showing good correlation with simulated Ca\u00b2\u207a release maps, no false positives or missed events in 1000-event simulations, and high reproducibility (correlation coefficient=0.84\u00b10.008) when processing the same transient with different noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate accuracy through simulation validation (Figure 1\u2014figure supplements 6-7), while C57 and C103 establish robustness through noise tolerance testing (Figure 2A, Figure 1\u2014figure supplement 6). The correlation coefficient of 0.84\u00b10.008 for identical transients with variable noise indicates strong reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C120"
+    ],
+    "result": "Despite indistinguishable global Ca\u00b2\u207a transients, subcellular patterns of active ECC couplons vary substantially between consecutive transients, with only 62.8% re-fire rate between two consecutive transients and only ~10% of couplons firing consistently across four transients. These consistently firing couplons likely represent previously described 'eager sites'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide quantitative evidence of variable couplon firing patterns (correlation coefficient 0.47\u00b10.025, n=46) despite identical global Ca\u00b2\u207a transients (Figure 2B). The low re-fire rate (62.8%) and small fraction of always-active couplons (~10%, Figure 2\u2014figure supplement 1B) are well-documented, with C61 providing reasonable interpretation linking to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "During the negative amplitude-frequency relationship in rat ventricular myocytes, ECC couplon density decreases from 653\u00b1148 to 310\u00b1146 per 1000 \u03bcm\u00b2 as stimulation frequency increases from 1.7 to 6.7 Hz. Individual couplon Ca\u00b2\u207a release amplitude and size (FWHM) also decrease monotonically with frequency. Critically, firing reliability decreases substantially with increasing frequency, as evidenced by 2-4 fold increases in coefficients of variation for both spatial and temporal reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 document quantitative changes in couplon density, amplitude, and FWHM with frequency (Figure 3C). Claims C74, C126-C130 establish decreased reliability as a key contributor to negative force-frequency relationship, supported by CV analysis (Figure 3Ce-f). The convergence of multiple independent measures (density, amplitude, FWHM, CV) provides strong support for this mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C68",
+      "C70",
+      "C71",
+      "C75",
+      "C131",
+      "C132"
+    ],
+    "result": "\u03b2-adrenergic stimulation with 10 nM isoproterenol increases ECC couplon density (to 803\u00b135 per 1000 \u03bcm\u00b2 at 1.7 Hz), increases Ca\u00b2\u207a release per couplon by >3-fold at low frequencies, and significantly increases both temporal and spatial firing reliability at physiological stimulation frequencies. However, at the highest pacing frequency, \u03b2-adrenergic stimulation cannot increase reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C68, C70-C71 document quantitative increases in multiple parameters with isoproterenol (Figure 3C). Claims C75-C76, C131-C132 establish increased reliability at low frequencies but not at highest frequency, supported by CV analysis (Figure 3Ce-f). The frequency-dependent effect is well-documented and mechanistically consistent with known limitations of the ECC system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C139",
+      "C147"
+    ],
+    "result": "3D functional mapping reveals an average density of 0.55 couplons/\u03bcm\u00b3 in rat ventricular myocytes, corresponding to approximately 16,500 active ECC couplons per typical myocyte (volume ~30,000 \u03bcm\u00b3, n=15). This represents the first functional 3D maps of active, firing ECC couplons in living ventricular myocytes, and the value correlates well with previously reported estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide quantitative 3D density measurements from experimental data (Figure 4C, n=15 cells). The calculated total of ~16,500 couplons per cell is validated by comparison with literature (C85, Bers 2008). Claims C7, C139, C147 establish the novelty of functional 3D mapping in living cells, supported by the 3D reconstruction data in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "FFT analysis of CaCLEAN maps reveals periodic couplon distribution with characteristic distances of 1.7 \u03bcm, matching expected ECC couplon spacing in healthy ventricular myocytes. The FFT power is comparable to RyR immunostaining results. The power of characteristic spatial frequency decreases with increasing stimulation frequency, likely due to increased couplon failure rate, while the characteristic periodic distance decreases at highest frequencies, possibly due to increased diastolic Ca\u00b2\u207a. Neither relationship is altered by isoproterenol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 establish spatial periodicity matching known couplon spacing, validated by comparison with immunostaining (Figure 3\u2014figure supplement 2). Claims C80-C82 describe frequency-dependent changes in FFT parameters (Figure 3Db-c), though the mechanistic interpretations (C80-C81) are speculative. The lack of isoproterenol effect on these relationships (C82) is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C98",
+      "C99",
+      "C100",
+      "C110"
+    ],
+    "result": "In mouse atrial myocytes, CaCLEAN successfully identifies ECC couplons that are restricted to regions near membrane invaginations, with strong structural similarity between CaCLEAN-derived couplon positions and plasma membrane. Standard denoising (CANDLE) did not significantly improve identification of ECC couplons beyond capturing 'eager sites'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 establish the complex Ca\u00b2\u207a signal pattern in atrial myocytes and limitation of capturing only eager sites (Figure 1Aa, Mackenzie et al. 2001). Claim C43 documents CANDLE's insufficient improvement. Claims C98-C100, C110 demonstrate CaCLEAN's success in atrial myocytes, validated by overlay with plasma membrane (Figure 1D) and consistency with prior literature on subplasmalemmal ECC restriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "CaCLEAN discriminates ECC couplon sites from nearby positions and functions as a deconvolution algorithm. The algorithm assumes symmetrical Ca\u00b2\u207a-dye diffusion and ACO, which may be affected by barrier structures like mitochondria or SR. However, the symmetrical ACO assumption is not problematic due to highly iterative decomposition, and high temporal resolution minimizes effects of asymmetrical diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 establish CaCLEAN's spatial discrimination ability (Figure 1Ec, supplements 4-5) and deconvolution function. Claims C114-C119 acknowledge algorithm assumptions and limitations. The assessment that symmetrical ACO is not problematic (C117) is supported by the iterative nature (10\u207b\u2074 amplitude steps) and validation data, while C119 provides reasonable mitigation strategy for asymmetric diffusion effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Previous approaches using high Ca\u00b2\u207a buffer concentrations (1-5 mM EGTA) in patch-clamped cells have been used to study ECC couplons, but these methods might alter L-type Ca\u00b2\u207a channels and/or RyR gating. CaCLEAN results in rat ventricular myocytes are consistent with previous findings on ECC variability and extend to the negative amplitude-frequency relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111 accurately describe previous methods from literature (Woo et al. 2002, 2005; Zahradn\u00edkov\u00e1 et al. 2007; Janiek et al. 2012). Claim C113 provides reasonable inference about potential artifacts of high buffer concentrations. Claim C112 establishes consistency with and extension of prior work, supported by data in Figure 3Ce-f.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Functional 3D mapping demonstrates strings of coupling sites, most likely alongside T-tubular membrane structures, representing a promising step toward studying the relationship between ECC couplons and T-tubular structures in greater detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 is supported by 3D reconstruction data showing linear arrangements of couplons (Figure 4Bc-d). The interpretation that these represent T-tubular structures is reasonable given known cardiac myocyte architecture. Claim C145 about future applications is speculative but logically follows from the demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C62",
+      "C63",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C122",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C143"
+    ],
+    "result": "The manuscript provides extensive background on cardiac ECC physiology, including LTCC-RyR coupling, Ca\u00b2\u207a-induced Ca\u00b2\u207a release, \u03b2-adrenergic regulation, force-frequency relationships, and technical challenges in studying ECC couplons. Previous methods have been limited by requirements for pharmacological intervention or high Ca\u00b2\u207a buffering, and technical obstacles include speed of Ca\u00b2\u207a release, close proximity of couplons, fast diffusion, large numbers of synchronized events, and imaging noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C39, C62-C63, C86-C96, C122, C133-C138, C143) represent established knowledge from the field, appropriately cited to primary literature (Bers 2002, 2008; Soeller et al. 2007; Wier and Balke 1999; Dorn 2010; Anderson et al. 1973; Sipido et al. 1998; Gattoni et al. 2016; Cheng et al. 1993; and others). The claims accurately describe prior work and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C35",
+      "C121",
+      "C140",
+      "C141",
+      "C142",
+      "C148",
+      "C149"
+    ],
+    "result": "The study addresses gaps in knowledge about ECC couplon properties and firing reliability, with the authors suggesting that 3D functional mapping represents a milestone that will enable future studies of physiological and pathophysiological ECC changes. The approach may also be applicable to other cell types such as neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C22, C35 appropriately identify knowledge gaps that motivated the study. Claims C140-C142, C148-C149 are speculative statements about future applications and significance. While the demonstrated capabilities support potential future applications, these remain to be validated. The claims about being a 'milestone' (C140) represent author opinion rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C85"
+    ],
+    "result": "Literature values for RyR cluster spacing (1.02 \u03bcm in rat ventricular myocytes) and total ECC couplon numbers (~16,500 per myocyte) are cited to validate CaCLEAN results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C85 accurately cite established literature values (Soeller et al. 2007; Bers 2008) that are used for validation of the CaCLEAN method. These comparisons strengthen the validation of the new method by showing consistency with prior estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Improvements in signal-to-noise ratio through use of superior Ca\u00b2\u207a sensors will help improve CaCLEAN resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is a reasonable speculation based on the demonstrated noise tolerance of the algorithm (Figure 8) and the principle that better signal quality should improve any signal processing method. However, this remains to be experimentally validated.",
+    "result_type": "MINOR"
+  }
+]

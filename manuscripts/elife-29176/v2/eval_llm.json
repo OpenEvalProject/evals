@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C42",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C131"
+    ],
+    "result": "Ppz1 and Ppz2 phosphatases are required for ubiquitin homeostasis in yeast. Loss of Ppz activity leads to elevated Ser57 phosphorylation of ubiquitin (~3-fold increase by SILAC), ubiquitin deficiency (both mono- and total ubiquitin), and increased ubiquitin turnover. Complementation with wild-type PPZ1 or PPZ2, but not catalytic-dead PPZ1-R451L, rescues the ubiquitin deficiency, demonstrating that phosphatase activity is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C41, C42, C50, C54-C60, and C131 are well-supported by multiple lines of experimental evidence including SILAC phosphoproteomics (Figure 1\u2014figure supplement 1), phospho-specific antibody detection (Figure 1A), quantitative immunoblotting (Figure 1B-D), cycloheximide chase experiments (Figure 1E-F), and genetic complementation (Figure 1B-C). The data converge to establish that Ppz phosphatases regulate Ser57 phosphorylation and ubiquitin homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C132"
+    ],
+    "result": "Elevated Ser57 phosphorylation partially accounts for ubiquitin homeostasis defects in ppz mutants. Expression of Ser57Ala (phospho-resistant) ubiquitin partially suppresses ubiquitin deficiency, increased ubiquitin turnover, and some stress-response phenotypes (MnCl2 resistance, KCl and caffeine sensitivity) in ppz mutants, but does not affect LiCl resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C67-C71, and C132 are supported by data showing that Ser57Ala mutation provides partial rescue of ubiquitin deficiency (Figure 2A-B), ubiquitin turnover (Figure 2C-E), and selective stress phenotypes (Figure 2F). The partial nature of the suppression is appropriately acknowledged, indicating that Ser57 phosphorylation contributes to but does not fully explain ppz mutant phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ppz mutants exhibit stress-response phenotypes (LiCl and MnCl2 resistance, KCl and caffeine hypersensitivity) that are caused by ubiquitin deficiency. Ubiquitin overexpression suppresses these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by growth assay data (Figure 1G) showing that ppz mutants display specific stress sensitivities and that ubiquitin overexpression rescues these phenotypes. The inference that these phenotypes are caused by ubiquitin deficiency is reasonable given the rescue by ubiquitin supplementation, though alternative explanations cannot be completely excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C133"
+    ],
+    "result": "Ser57 phosphomimetic (Ser57Asp) ubiquitin exhibits increased turnover rate compared to wild-type, while Ser57Ala shows decreased or equivalent turnover depending on the assay. In galactose induction/glucose repression experiments, Ser57Asp has a half-life of 46 min vs. 80 min for wild-type and Ser57Ala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C72-C77, and C133 are supported by multiple ubiquitin turnover assays using different methodologies (cycloheximide chase in Figure 3\u2014figure supplement 1, galactose/glucose shift in Figure 3A-D). The data consistently show that Ser57Asp ubiquitin is degraded faster than wild-type. However, there is some inconsistency regarding Ser57Ala behavior across different assays (C75 vs C72), which the authors acknowledge may reflect context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ser57 phosphorylation occurs at very low stoichiometry (<0.05% of total ubiquitin) in ppz mutant cells under normal growth conditions. This low stoichiometry limits the ability to determine the relative contribution of this modification to overall ubiquitin homeostasis and suggests it may regulate a limited or highly localized ubiquitin pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by MRM mass spectrometry data (Figure 3\u2014figure supplement 2) showing that Ser57 phosphorylation is below the limit of reliable quantification but clearly <0.05% of total ubiquitin. The authors appropriately acknowledge this as a limitation and offer reasonable speculation about localized regulation. This is an important caveat for interpreting the physiological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The Ser57Asp phosphomimetic mutation does not disrupt ubiquitin structure. NMR analysis shows that Ser57Asp ubiquitin retains a highly similar structure to wild-type, with only localized perturbations near the mutation site. Therefore, the decreased half-life of Ser57Asp ubiquitin is not due to structural disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by NMR data (Figure 3E-F) showing minimal structural perturbations in Ser57Asp ubiquitin. The 15N-1H HSQC spectra show only a small number of chemical shift changes localized to the mutation site, consistent with preservation of overall structure. This is an important control demonstrating that the functional effects are not due to protein misfolding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Ser57Asp phosphomimetic ubiquitin confers gain-of-function endocytic trafficking phenotypes. Cells expressing Ser57Asp ubiquitin show canavanine resistance and accelerated Mup1 trafficking/degradation. These phenotypes require ubiquitin conjugation and both K48- and K63-linked polyubiquitin chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45, C84-C92 are well-supported by multiple complementary assays: canavanine resistance (Figure 4A-B), Mup1-pHluorin trafficking (Figure 4C-D), and Mup1-FLAG turnover (Figure 4\u2014figure supplement 3). The genetic requirements (conjugation-defective and linkage-specific mutations in Figure 4\u2014figure supplements 1-2) provide mechanistic insight. The data consistently demonstrate enhanced endocytic trafficking with Ser57Asp ubiquitin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Ser57Asp phosphomimetic ubiquitin does not affect Rsp5 E3 ligase activity in vitro or binding to ESCRT-I/ESCRT-II complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by in vitro conjugation assays (Figure 5\u2014figure supplement 1) and binding assays (Figure 5\u2014figure supplement 2). These negative results are important controls that help narrow down the mechanism by which Ser57 phosphorylation affects endocytic trafficking, ruling out effects on E3 ligase activity or ESCRT complex binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C134"
+    ],
+    "result": "Ser57Asp ubiquitin bypasses recognition by an artificial DUB checkpoint on endosomes. Fusion of the UL36 deubiquitylase to Hse1 (ESCRT-0) blocks cargo trafficking, but Ser57Asp ubiquitin restores trafficking to the vacuole lumen. This bypass requires ESCRT-I and ESCRT-III but not autophagy components. The artificial DUB checkpoint also decreases ubiquitin degradation, which is restored by Ser57Asp ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46, C97-C107, and C134 are supported by multiple experiments using the Hse1-UL36 artificial DUB checkpoint system: microscopy showing Mup1 trafficking (Figure 5B), canavanine sensitivity assays (Figure 5C), genetic requirements (Figure 5D, Figure 5\u2014figure supplement 3), and ubiquitin turnover measurements (Figure 5E-J). The Can1-UL36 fusion provides additional support (Figure 5\u2014figure supplement 4). This is a creative experimental approach that provides strong evidence for DUB bypass.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Ser57Asp ubiquitin is not broadly DUB-resistant. Unlike the Leu73Pro mutant (which cannot support viability as sole ubiquitin source and causes endocytic trafficking defects), Ser57Asp ubiquitin supports viability and enhances trafficking. This indicates that Ser57Asp affects recognition by specific endosomal DUBs rather than causing broad DUB inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by comparison experiments with the Leu73Pro DUB-resistant mutant (Figure 5\u2014figure supplement 5). The contrasting phenotypes (viability, canavanine sensitivity, Mup1 trafficking) between Ser57Asp and Leu73Pro provide important evidence that Ser57Asp has a specific effect on endosomal DUBs rather than broad DUB resistance. This is a well-designed control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C121",
+      "C122"
+    ],
+    "result": "Doa4 is a critical endosomal DUB for ubiquitin recycling. Doa4 activity in vitro requires Bro1 for activation and is significantly reduced toward Ser57Asp phosphomimetic ubiquitin and Ser57-phosphorylated synthetic ubiquitin. This supports the hypothesis that Ser57 phosphorylation prevents ubiquitin recycling by interfering with Doa4 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22-C23, C113-C117, C121-C122 are supported by in vitro deubiquitylation assays using recombinant Doa4 and Bro1 with both phosphomimetic (Figure 6A-B) and authentic Ser57-phosphorylated ubiquitin (Figure 6C-E). The data show consistent reduction in Doa4 activity toward Ser57-modified ubiquitin. The role of Doa4 in ubiquitin homeostasis is well-established in the literature and supported by the authors' data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The regulation of ubiquitin metabolism by Ser57 phosphorylation is Doa4-dependent. In \u0394doa4 mutant cells, Ser57Asp and Ser57Ala mutations do not modify ubiquitin turnover rate, whereas they do in wild-type cells. \u0394doa4 cells exhibit increased ubiquitin degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by ubiquitin turnover experiments in \u0394doa4 background (Figure 6\u2014figure supplement 1). The epistasis analysis showing that Ser57 mutations have no effect in \u0394doa4 cells provides strong genetic evidence that Ser57 phosphorylation acts through Doa4. This is a key experiment linking the in vitro biochemistry to in vivo function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Proteasome inhibition has minimal effect on ubiquitin half-life under the culture conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by ubiquitin turnover data with MG-132 proteasome inhibitor (Figure 7A). This is a surprising finding that challenges assumptions about ubiquitin degradation pathways. However, the authors appropriately qualify this as being specific to the culture conditions tested, and the result is clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C135"
+    ],
+    "result": "Vacuolar degradation via the MVB pathway is the primary route for ubiquitin turnover in yeast. Deletion of vacuolar proteases (Pep4, Prb1) or ESCRT components (Vps23, Snf7) significantly stabilizes ubiquitin. Ubiquitin accumulates in E-compartments of \u0394snf7 cells, indicating substantial ubiquitin flux through the endocytic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 and C135 are supported by ubiquitin turnover experiments in multiple mutant backgrounds (Figure 7A-D, Figure 7\u2014figure supplements 1-3) and microscopy showing ubiquitin accumulation in E-compartments (Figure 7E). The data from vacuolar protease and ESCRT mutants converge to demonstrate that the MVB pathway is the major route for ubiquitin degradation under these conditions. This is a significant finding that establishes the physiological context for Ser57 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C47",
+      "C136"
+    ],
+    "result": "Ubiquitin homeostasis is significantly impacted by ubiquitin flux through the endocytic pathway and by signaling pathways that converge on ubiquitin to determine whether it is recycled or degraded. Doa4-mediated recycling is a critical regulatory point for global ubiquitin metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C47, and C136 represent integrative conclusions supported by the combined data on ESCRT pathway effects (Figure 7C-E), Ser57 phosphorylation effects on trafficking and turnover, and Doa4 dependence. These are reasonable syntheses of the experimental findings, though they represent higher-level interpretations of the mechanistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C93",
+      "C104"
+    ],
+    "result": "Ser57 phosphorylation of ubiquitin is proposed as a regulatory switch controlling ubiquitin recycling vs. degradation during MVB sorting on endosomes, contributing to global regulation of ubiquitin levels. Given the low stoichiometry, this may regulate limited or localized ubiquitin pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49, C93, and C104 represent the authors' proposed model based on their findings. While the model is consistent with the data (Ser57Asp bypasses Doa4, promotes trafficking and degradation), the low stoichiometry of Ser57 phosphorylation (<0.05%) raises questions about physiological significance. The authors appropriately present this as speculation and acknowledge the limitations. Direct demonstration that endogenous Ser57 phosphorylation regulates ubiquitin homeostasis under physiological conditions would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims about ubiquitin homeostasis in neurodegenerative diseases. Many neurodegenerative disorders are associated with altered ubiquitin homeostasis, ubiquitin accumulation in protein aggregates, and diminished UPS function. Restoring ubiquitin levels has been proposed as a therapeutic strategy, but little is known about ubiquitin homeostasis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are background/context claims supported by citations to published literature. These establish the motivation for studying ubiquitin homeostasis but are not novel findings of this study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C66"
+    ],
+    "result": "Background claims about ubiquitin biology, including ubiquitin gene structure, DUB functions, ubiquitin chain types, ubiquitin phosphorylation (particularly Ser65 in the Pink1-Parkin pathway), and Ppz phosphatases. These establish the context and prior knowledge for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C24-C40, C51-C53, C61, and C66 are background claims supported by citations to published literature and/or established knowledge in the field. These provide context but are not novel findings. The claim that this is the first example of a signaling protein required for ubiquitin homeostasis (C61) appears to be a reasonable statement of novelty.",
+    "result_type": "MINOR"
+  }
+]

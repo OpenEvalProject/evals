@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C59"
+    ],
+    "result": "The deepPCA method was developed and validated to quantify >120,000 pairs of point mutations on the Fos-Jun interaction. The method shows high reproducibility between biological replicates (R=0.95) and correlates well with individually tested variants (R=0.95 for 14 variants). Nearly complete coverage was obtained for single amino acid changes (607/608 for Fos, 608/608 for Jun).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12, and C59 collectively demonstrate that deepPCA is a validated high-throughput method. The high correlation values between replicates and with individual measurements, combined with near-complete mutational coverage and triplicate experimental design, provide strong evidence for the technical validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Single amino acid substitutions in Fos and Jun show position-dependent effects on the interaction. Approximately 20% and 15% of substitutions in Fos and Jun are severely detrimental, while 25 and 10 substitutions strengthen the interaction. Mutations in the hydrophobic core (positions a and d) are most detrimental, followed by salt-bridge positions (e and g), while far-side positions (b, c, f) have small effects. Physico-chemical properties, particularly \u03b1-helical stability, predict 35-98% of variance in mutation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 present a coherent picture of single mutant effects supported by quantitative data and statistical analysis. The structural interpretation aligns with known leucine zipper biology, and the predictive power of physico-chemical properties is quantified with variance explained metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Identical substitutions at corresponding positions in Fos and Jun often have similar effects, with disruptive mutations showing strong concordance (odds ratio=31.6, p<2.2\u00d710\u207b\u00b9\u2076) and near-neutral mutations also showing concordance (odds ratio=7.3, p<2.2\u00d710\u207b\u00b9\u2076). However, 381 of 581 substitutions (66%) differ significantly between the two proteins (FDR<0.05), highlighting the importance of structural context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are well-supported by statistical analysis with appropriate tests (Fisher's exact test, paired t-test) and multiple testing correction. The findings balance the observation of general similarity with important context-dependent differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Data was obtained for 107,625 trans double mutants showing a bimodal distribution with more severely detrimental (~26%) and fewer near-neutral outcomes (~21%) than single mutants. A multiplicative model explains 85-86% of variance, with 16,394 negative and 11,653 positive genetic interactions detected at 20% FDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide comprehensive quantitative characterization of the double mutant landscape. The high variance explained by the multiplicative model and the detection of thousands of genetic interactions with controlled FDR provide strong support for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The pattern of genetic interactions depends on single mutant effects: combining two moderately detrimental mutants tends to produce negative genetic interactions, while positive interactions occur between two strongly detrimental mutations or when combining strength-increasing and strength-decreasing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe systematic patterns in genetic interactions supported by Figure 3C. These patterns are biologically interpretable and consistent with the thermodynamic model presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C50"
+    ],
+    "result": "A three-parameter thermodynamic model based on protein concentrations and background growth explains 89-90% of variance in double mutant outcomes across >120,000 genotypes. The model accounts for the sigmoidal relationship between PPI scores and free energy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C50 describe a parsimonious thermodynamic model with strong predictive power. The model is theoretically grounded (equations provided in methods), uses only three fitted parameters, and explains ~90% of variance. Cross-validation (C in Figure 3\u2014figure supplement 2B) confirms the model is not overfitted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "After accounting for thermodynamic effects, 1,711 strong negative and 883 strong positive structural genetic interactions remain (absolute score >0.1, FDR=0.2). Positive interactions are concentrated between sequentially close positions and enriched between contacting residues, identifying 'lock and key' specificity residues. Negative interactions are more dispersed in structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 characterize structural genetic interactions not explained by the thermodynamic model. The spatial enrichment patterns are supported by statistical tests (Fisher's exact test) and structural analysis, with appropriate FDR control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Data was obtained for 17,688 cis double mutants within Fos (99% of combinations reachable by single nucleotide changes). Single mutant PPI scores correlate very well between cis and trans libraries (R=0.96), and there is good correlation (R=0.77) for identical double mutants measured in both contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 demonstrate that the deepPCA method produces consistent results across different library designs. The high correlation for single mutants (R=0.96) validates reproducibility, while the moderate correlation for double mutants (R=0.77) suggests real biological differences between cis and trans contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C56"
+    ],
+    "result": "After controlling for single mutant effect distributions through sub-sampling, cis mutations are more likely to strengthen the PPI (5.2% vs 3.4%, p<10\u207b\u00b3), slightly less likely to destroy it (25.5% vs 27.8%, p<10\u207b\u00b3), and have more intermediate negative effects (39.4% vs 35.3%, p<10\u207b\u00b3) compared to trans combinations. Whether mutations occur in cis or trans can impact evolutionary outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C56 demonstrate systematic differences between cis and trans genetic interactions using appropriate statistical controls (1000 sub-samplings to match single mutant distributions). The p-values are highly significant and the biological interpretation is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Because leucine zippers fold upon binding, the same thermodynamic model describes both cis and trans combinations. The model fitted on trans data predicts cis data well (82-83% variance explained) and vice versa (84% for cis, 90% for trans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 demonstrate that a unified thermodynamic framework applies to both cis and trans interactions. The cross-prediction between libraries validates the model's generality, with the cited folding-upon-binding property providing mechanistic justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Structural genetic interactions explain more variance in cis than trans, with both positive (1493 vs 835) and negative (1319 vs 1128) interactions more abundant in cis at controlled FDR. This higher prevalence can be explained by more contacts within Fos (1040 pairs) than across the interface (518 pairs within 5\u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 quantify differences in structural interactions between cis and trans contexts with appropriate statistical controls. The mechanistic explanation based on contact frequency is reasonable and supported by structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C49"
+    ],
+    "result": "Physical interactions generate two distinct types of genetic interaction: (1) thermodynamic interactions arising from the sigmoidal relationship between protein complex concentration and free energy, and (2) specific structural interactions between proximally located residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C49 present the main conceptual framework of the paper. This classification is well-supported by the comprehensive data showing that ~90% of variance is explained by thermodynamics (C31, C50) while the remaining interactions show spatial enrichment patterns (C33-C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "deepPCA is currently limited to small domains due to amplicon size constraints for paired-end sequencing, but the use of barcodes could extend the method to longer proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 acknowledge a technical limitation and propose a solution. The limitation is inherent to the paired-end sequencing approach used, and the barcode solution is cited to prior work (Hiatt et al., 2010).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study addresses a gap in the literature by systematically mapping how point mutations in two genes combine to alter biological function. Prior work established that point mutations have diverse effects, that mutations in interacting proteins can have non-additive outcomes, and that the Fos-Jun leucine zipper interaction has been extensively studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 establish the context and motivation for the study through citations to prior work. These background claims are appropriately supported by references and accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Additional non-linearities beyond protein-protein interactions occur in protein/RNA folding ('threshold robustness'), saturating enzyme flux, and regulatory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 place the findings in broader context by citing other sources of non-linearity in genotype-phenotype relationships. These are appropriately supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Detailed experimental parameters are provided including data availability (GEO accession GSE102901), yeast strain (BY4742), domain boundaries (Fos residues 135-199, Jun residues 250-314), transformation efficiencies, sequencing depths, and error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 provide methodological details that support reproducibility. These are explicitly stated facts about the experimental procedures and are internally consistent.",
+    "result_type": "MINOR"
+  }
+]

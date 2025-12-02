@@ -1,0 +1,1577 @@
+{
+  "submission": {
+    "id": "091b2c39-7e81-4d21-a719-d78e457c6661",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:05:34.734084Z",
+    "updated_at": "2025-12-01T19:05:34.734084Z"
+  },
+  "content": [
+    {
+      "id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "submission_id": "091b2c39-7e81-4d21-a719-d78e457c6661",
+      "content_type": "manuscript",
+      "content_text": "# Kinetic modeling predicts a stimulatory role for ribosome collisions at elongation stall sites in bacteria\n\n## Authors\n\n- Michael A Ferrin<sup>1</sup> ([ORCID: 0000-0002-9899-1169](https://orcid.org/0000-0002-9899-1169))\n- Arvind R Subramaniam<sup>1</sup> ([ORCID: 0000-0001-6145-4303](https://orcid.org/0000-0001-6145-4303)) \u2020\n\n### Affiliations\n\n1. Basic Sciences Division and Computational Biology Program of Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRibosome stalling on mRNAs can decrease protein expression. To decipher ribosome kinetics at stall sites, we induced ribosome stalling at specific codons by starving the bacterium Escherichia coli for the cognate amino acid. We measured protein synthesis rates from a reporter library of over 100 variants that encoded systematic perturbations of translation initiation rate, the number of stall sites, and the distance between stall sites. Our measurements are quantitatively inconsistent with two widely-used kinetic models for stalled ribosomes: ribosome traffic jams that block initiation, and abortive (premature) termination of stalled ribosomes. Rather, our measurements support a model in which collision with a trailing ribosome causes abortive termination of the stalled ribosome. In our computational analysis, ribosome collisions selectively stimulate abortive termination without fine-tuning of kinetic rate parameters at ribosome stall sites. We propose that ribosome collisions serve as a robust timer for translational quality control pathways to recognize stalled ribosomes.\n\n## Introduction\n\nRibosomes move at an average speed of 3\u201320 codons per second during translation elongation in vivo (Dalbow and Young, 1975; Bonven and Gull\u00f8v, 1979; Yan et al., 2016). Since this rate is higher than the typical initiation rate of ribosomes on mRNAs [less than 1 s-1 (Yan et al., 2016; Kennell and Riezman, 1977)], elongation is often assumed to\u00a0not affect the expression level of most proteins. Nevertheless, the elongation rate of ribosomes can decrease significantly at specific locations on an mRNA due to low abundance of aminoacyl-tRNAs, inhibitory codon pairs or amino acid pairs, nascent peptides interacting strongly with the ribosome exit tunnel, or the presence of RNA-binding proteins (Richter and Coller, 2015). Ribosome profiling \u2014 the deep sequencing of ribosome-protected mRNA fragments \u2014 has enabled the identification of additional factors that induce slowing or stalling of ribosomes during elongation (Ingolia et al., 2009; Ingolia, 2014). An important question emerging from these studies is the extent to which ribosome stalling affects the expression of the encoded protein, since initiation might still be the slowest step during translation.\n\nSeveral mechanistic models have been proposed to explain how ribosome stalling during elongation might affect the expression of the encoded protein. In the widely used traffic jam model (MacDonald et al., 1968), the duration of ribosome stalling is sufficiently long to induce a queue of trailing ribosomes extending to the start codon, thus decreasing the translation initiation rate. Evidence supporting this model has been found in the context of EF-P dependent polyproline stalls in E. coli (Hersch et al., 2014; Woolstenhulme et al., 2015), and rare-codon induced pausing in E. coli and yeast (Mitarai et al., 2008; Chu et al., 2014). In an alternate abortive termination model, ribosome stalling causes premature termination without synthesis of the full-length protein. This model is thought to underlie the action of various ribosome rescue factors in E. coli and yeast (Subramaniam et al., 2014; Choe et al., 2016). Finally, ribosome stalling can also affect protein expression indirectly by altering mRNA stability (Presnyak et al., 2015; Radhakrishnan et al., 2016), co-translational protein folding (Chaney and Clark, 2015), or stress-response signaling (Ishimura et al., 2016).\n\nDespite the experimental evidence supporting the above models, predicting the effect of ribosome stalling on protein levels has been challenging because of uncertainty in our knowledge of in vivo kinetic parameters such as the duration of ribosome stalling and the rate of abortive termination. Further, while we have a detailed understanding of the kinetic steps and structural changes that occur during the normal elongation cycle of the ribosome (Wintermeyer et al., 2004; Voorhees and Ramakrishnan, 2013; Blanchard et al., 2004), the \u2018off-pathway\u2019 events that occur at stalled ribosomes have been elucidated in only a few specific cases (Neubauer et al., 2012; Muto et al., 2006; Shao et al., 2015). Thus, development of complementary approaches, which can quantitatively constrain the in vivo kinetics of stalled ribosomes without precise knowledge of rate parameters, will be useful for bridging the gap between the growing list of ribosome stall sequences (Ingolia, 2014; Woolstenhulme et al., 2013; Gamble et al., 2016) and their effect on protein expression.\n\nHere, we investigated the effect of ribosome stalling on protein expression using amino acid starvation in E. coli as an experimental model. In this system, we previously found that both ribosome traffic jams and abortive termination occur at a subset of codons cognate to the limiting amino acid (Subramaniam et al., 2013). Motivated by these observations, here we computationally modeled ribosome traffic jams and abortive termination with the goal of predicting their effect on protein expression. Even without precise knowledge of in vivo kinetic parameters, we found that these two processes give qualitatively different trends in protein expression when the initiation rate, the number of stall sites, and the distance between stall sites are systematically varied. Surprisingly, experimental measurements support a model in which traffic jams and abortive termination do not occur independent of one another; rather, collisions by trailing ribosomes stimulate abortive termination of the stalled ribosome. We find that this model is consistent with the absence of long ribosome queues in ribosome profiling measurements, and it naturally provides a mechanistic basis for the selectivity of abortive termination towards stalled ribosomes. While these conclusions are limited to the specific context of amino acid starvation in E. coli, the integrated approach developed in this work should be generally applicable to investigate other ribosome stalls in both bacteria and eukaryotes.\n\n## Results\n\n### Effect of ribosome stalling on measured protein level, mRNA level, and polysome occupancy\n\nDuring starvation for single amino acids in E. coli, certain codons that are cognate to the limiting amino acid decrease protein expression, while the same codons have little or no effect during nutrient-rich growth (Subramaniam et al., 2013). For example, synonymously mutating seven CTG leucine codons in the yellow fluorescent protein gene (yfp) to CTA, CTC, or CTT reduced the synthesis rate of YFP 10\u2013100 fold during leucine starvation (Subramaniam et al., 2013). Genome-wide ribosome profiling showed that ribosomes stall at CTA, CTC, and CTT codons during leucine starvation, which leads to a traffic jam of trailing ribosomes and abortive termination of translation (Subramaniam et al., 2014). These observations led us to ask whether ribosome traffic jams and abortive termination can quantitatively account for the decrease in protein synthesis rate (number of full proteins produced per unit time) caused by ribosome stalling during leucine starvation in E. coli.\n\nTo measure the effect of ribosome stalling on protein synthesis during leucine starvation, we constructed fluorescent reporter genes which have a stall-inducing CTA codon at one or two different locations along yfp (Figure 1A, blue bars). We induced these reporter variants from very low copy vectors (SC*101 ori, 3\u20134 copies per cell) either during leucine starvation or during leucine-rich growth. While YFP expression was similar across all yfp variants during leucine-rich growth, a single CTA codon at two different locations reduced YFP expression during leucine starvation by 3\u20134 fold relative to a control yfp without CTA codons (Figure 1B). Introducing both CTA codons reduced YFP expression by\u00a0~6 fold (Figure 1B), and a stretch of 7 CTA codons reduced YFP expression close to background level as observed in our earlier work (Subramaniam et al., 2013). Thus, YFP expression can serve as a quantitative readout of the effect of ribosome stalling on protein synthesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of ribosome stalling reporters used in B\u2013E. Blue vertical lines show the location of CTA Leu codons that cause ribosome stalling during Leu starvation in\u00a0E coli. Locations of CTG Leu codons that do not induce ribosome stalling are shown in grey. For experiments in B\u2013E, reporters were induced either in Leu-rich growth medium for 20 min or Leu-starvation medium for 60 min. Schematic of a ribosome with 30 nt footprint is shown for reference. (B) YFP fluorescence normalized by that of\u00a0yfp0\u00a0in each condition.\u00a0Error bars represent standard error over triplicate cultures. (C) Triangles indicate\u00a0yfp\u00a0mRNA levels in polysomes fractionated through a sucrose gradient, and measured by quantitative RT-PCR spanning the CTA codons. Absorbance at 260 nm (A260) is shown in grey with magnified Y axis to highlight polysome profiles. X axis ticks delineate polysome fractions used for the corresponding qPCR measurement. An\u00a0in vitro transcribed luciferase mRNA was spiked in for normalizing the mRNA levels by each fraction\u2019s volume. Error bars represent standard error of qPCR over triplicates.\u00a0Inset: Polysome profiles showing full monosome peak. (D)\u00a0Top panel: Western blot against the 3xFLAG epitope at the N-terminus of YFP reporter. Circle indicates the size of the full length 3xFLAG-YFP product. Star indicates the size of truncated product expected from abortive termination of ribosomes at CTA codons in\u00a0yfp1\u2013yfp3.\u00a0Bottom panel: Western blot against the RNA polymerase \u03c370 subunit shown as a loading control. (E)\u00a0yfp\u00a0mRNA levels normalized by that of\u00a0yfp0\u00a0in each condition. An endogenous mRNA,\u00a0gapA, was used for internal normalization. Error bars represent standard error of qPCR over triplicates.\n\nWe then sought biochemical evidence supporting a role for either ribosome traffic jams or abortive termination in the reduction of YFP expression caused by stall-inducing CTA codons. We reasoned that ribosome traffic jams that reduce protein expression by blocking initiation should increase the number of ribosomes on an mRNA when the stall site is far from the initiation region. However, polysome fractionation of leucine-starved E. coli did not indicate an unambiguous shift of the yfp mRNA to higher polysome fractions when two stall-inducing CTA codons were introduced 475nt from the start codon (Figure 1C, top vs bottom panels). This observation agrees with previous ribosome density measurements that detected traffic jams of only 1\u20132 ribosomes behind stalled ribosomes (Subramaniam et al., 2014).\n\nWe detected truncated YFP fragments consistent with abortive termination at stall-inducing CTA codons during leucine starvation (Figure 1D). Previous studies suggested that abortive termination of stalled ribosomes requires cleavage of mRNA near the stall site as an obligatory step (Keiler, 2015; Hayes and Sauer, 2003; Ivanova et al., 2004). Therefore, we tested whether changes in mRNA levels could account for the 3\u20134 fold decrease in YFP expression caused by single CTA codons during leucine starvation (Figure 1B). However, we found that yfp mRNA levels, as measured by quantitative RT-PCR spanning the single CTA codons, did not decrease significantly during leucine starvation (Figure 1E). Similarly, introducing two CTA codons resulted in\u00a0<2 fold decrease in yfp mRNA levels despite\u00a0~6 fold decrease in YFP expression (Figure 1E vs 1B). These observations are consistent with earlier measurements using ribosome profiling and Northern blotting that did not find evidence for significant mRNA cleavage or decay upon ribosome stalling at CTA codons during leucine starvation (Subramaniam et al., 2014).\n\n### Computational modeling of ribosome kinetics at stall sites\n\nSince the above reporter-based experiments were qualitative and could miss subtle effects, we formulated an alternate approach using computational modeling to quantitatively test the role of ribosome traffic jams and abortive termination at stall sites during amino acid starvation in E. coli. To this end, we defined a minimal set of five kinetic states at ribosome stall sites and the rate constants for transition between these kinetic states (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig2-v2.jpg)\n\n**Figure 2.:** (A) Distinct ribosome states that were considered during computational modeling of each elongation cycle. (B) Schematic of the three kinetic models of stalled ribosomes considered in this work. The three equations indicate the rate of abortive termination from the A-site empty (ae) and the 5\u2019 hit (5h) states in the three different kinetic models. The\u00a0rate of abortive termination from the A-site occupied (ao) and 3\u2019 hit (3h) states is zero in all three models.\n\nIn our modeling (Figure 2A), ribosomes stalled during amino acid starvation are represented by the A-site empty state ae. Once the aminoacyl-tRNA is accommodated, A-site empty ribosomes transition to the A-site occupied state ao. Ribosomes transition back from the A-site occupied state ao to the A-site empty state ae upon peptide-bond formation and translocation. Beyond the ae and ao states, we did not consider additional kinetic states in the normal elongation cycle of the ribosome (Wintermeyer et al., 2004; Blanchard et al., 2004), since these states cannot be resolved using our measurements of protein synthesis rates during amino acid starvation. Ribosomes that have dissociated from mRNA, due to either normal termination at stop codons or abortive termination at stall sites, transition to the free state f. Finally, collision between a stalled ribosome with an empty A-site and a trailing ribosome with an occupied A-site transitions the stalled ribosome to the 5\u2019\u00a0hit state 5h and the trailing ribosome to the 3\u2019\u00a0hit state 3h.\n\nTo model ribosome traffic jams, we chose the rate constant for abortive termination of all elongating ribosomes to be zero. Hence if the duration of ribosome stalling is sufficiently long, a queue of trailing ribosomes forms behind the stalled ribosome and ultimately reduces protein synthesis rate by blocking the initiation region. We designate this as the traffic jam (TJ) model (Figure 2B, top).\n\nTo model abortive termination, we set the transition rate constant from stalled ribosomes to free ribosomes to be non-zero. Abortive termination occurs selectively at stalled ribosomes, and not at normally elongating ribosomes (Roche and Sauer, 1999). Even though the mechanistic basis for this selectivity is poorly understood (Janssen et al., 2013; Miller and Buskirk, 2014), we can account for the selectivity in our modeling by simply setting the abortive termination rate to be zero at all codons except at the stall site (Subramaniam et al., 2014). We designate this as the simple abortive termination (SAT) model (Figure 2B, middle).\n\nWhile abortive termination and traffic jams are usually considered as independent molecular processes (Kurland, 1992; Andersson and Kurland, 1990), our definition of kinetic states (Figure 2A) suggests a more general model in which these processes are coupled. Specifically, we considered a model in which the rate of abortive termination is non-zero only when stalled ribosomes have undergone a collision with a trailing ribosome, i.e. when they are in the 5h state. We designate this as the collision-stimulated abortive termination (CSAT) model (Figure 2B, bottom). As shown below, the CSAT model is closer to experimental measurements of protein synthesis rate than the TJ and SAT models, and it also suggests a mechanistic basis for the selectivity of abortive termination.\n\n### Experimental variables for distinguishing kinetic models of ribosome stalling\n\nPredicting the effect of ribosome stalling on YFP expression in our three kinetic models (Figure 2B) requires knowledge of the elongation rate and the abortive termination rate of ribosomes at stall-inducing codons during amino acid starvation in E. coli. In principle, these rate constants can be estimated using the ribosome profiling method (Subramaniam et al., 2014; Shah et al., 2013), but sequence-specific and protocol-related biases in ribosome profiling (Woolstenhulme et al., 2015; Mohammad et al., 2016; Lareau et al., 2014) will introduce a large uncertainty in this estimation. Therefore, we sought to identify experimental variables that would enable us to discriminate between the different kinetic models of ribosome stalling without precise knowledge of the underlying rate constants.\n\nFirst, we examined the effect of varying the initiation rate of an mRNA with a single stall site in our three kinetic models (Figure 3A). We used stochastic simulations to predict the protein synthesis rate from a yfp mRNA under this perturbation (Materials\u00a0and\u00a0methods). We chose the elongation and abortive termination rate constants at the stall site so that an mRNA with an initiation rate of 0.3 s-1 \u2014 a typical value for E. coli mRNAs (Kennell and Riezman, 1977; Subramaniam et al., 2014) \u2014 had the same protein synthesis rate (number of full proteins produced per unit time) in all three models. In the SAT model, varying the initiation rate does not modulate the effect of the stall site on protein synthesis rate (Figure 3A, blue squares). By contrast, in the TJ and CSAT models, the effect of the stall site on protein synthesis rate is reduced at lower initiation rates (Figure 3A, green circles and red diamonds). This reduction is more pronounced in the TJ model because, at low initiation rates, ribosome queues do not block the initiation region in the TJ model, while they still lead to collision-stimulated abortive termination in the CSAT model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig3-v2.jpg)\n\n**Figure 3.:** Predicted effect on protein synthesis rate upon varying the initiation rate (A), the number of ribosome stall sites (B), and the distance between two stall sites (C) of a yfp mRNA. The schematics indicate the locations of the stall sites along yfp in our simulation. In B, the stall sites were incrementally added from 5\u2019 to 3\u2019 of the mRNA. In C, the second stall site was located 1 to 100 codons away from the first stall site. Protein synthesis rate for each mRNA is defined as the number of YFP molecules produced per unit time and is shown relative to a yfp mRNA without stall sites. The duration of stalling in each model was chosen so that the decrease in protein synthesis rate caused by a single stall site\u00a0was equal in the three models when the initiation rate is 0.3\u00a0\u2062s-1. k(ae\u2192f)\u2261k(5h\u2192f)=1 s-1 in the SAT model, and k(ae\u2192f)=0, k(5h\u2192f)=1 s-1 in the CSAT model. Other simulation parameters are in Supplementary file 1.\n\nSecond, we examined the effect of systematically varying the number of stall sites on an mRNA in our three kinetic models (Figure 3B). We chose the elongation rate and abortive termination rate constants at stall sites so that the effect of a single stall site on protein synthesis rate was identical between the three models (Supplementary file 1). With no further parameter adjustments, we introduced additional identical stall sites, with each stall site separated by at least two ribosome footprints (>60 nt) from other stall sites. In the traffic jam (TJ) model, additional stall sites had very little effect on protein synthesis rate (Figure 3B, green circles). In the simple abortive termination (SAT) model, protein synthesis rate decreased exponentially with the number of stall sites (Figure 3B, blue squares). In the collision-stimulated abortive termination (CSAT) model, the effect of additional stall sites was intermediate between the TJ and SAT models (Figure 3B, red diamonds). The differential effect of multiple stall sites in the three models can be intuitively understood as follows: In the TJ model, extended queues of ribosomes occur only at the first stall site because the average rate at which ribosomes arrive at subsequent stall sites is limited by the rate at which they elongate past the first stall site. In the CSAT model, ribosome collisions occur at a greater rate at the first stall site, but are not completely prevented at subsequent stall sites due to stochastic ribosome elongation past the first stall site. In the SAT model, abortive termination rate at each stall site does not depend on the presence of other stall sites on the mRNA.\n\nFinally, we considered the effect of varying the distance between two identical stall sites in our kinetic models. In the SAT model, varying the distance between two stall sites does not modulate the effect of the stall sites on protein synthesis rate (Figure 3C, blue). In the CSAT model, when the two stall sites are separated by less than a ribosome footprint, then the frequency of collisions at the stall sites increases, thus resulting in the lower protein synthesis rate in this regime (Figure 3C, red). In the TJ model, the length of ribosome queues at the first stall site is modulated by the formation of shorter ribosome queues at the second stall site when it is within a few ribosome footprints. This interaction results in a lower protein synthesis rate when the stall sites are separated by a few ribosome footprints (Figure 3C, green).\n\n### Measured protein synthesis rates support a collision-stimulated abortive termination model\n\nWe tested the predictions from our kinetic models using yfp reporters with stall-inducing codons during starvation for single amino acids in E. coli. First, we measured the effect of varying the initiation rate on the synthesis rate of YFP either by mutating the ATG start codon to a near-cognate codon, or by mutating the Shine-Dalgarno sequence (Figure 4, inset). We fitted the ribosome elongation rate at stall-inducing codons in the three kinetic models using the measured YFP synthesis rate for the yfp variant with the non-mutated initiation region (variant four in Figure 4), and used this fit to predict the YFP synthesis rate of the other initiation mutants with no remaining free parameters (Materials and methods, Supplementary file 2). The effect of a single CTA codon on YFP synthesis rate decreased as the initiation rate of the yfp variants was reduced (Figure 4, black triangles). Both the TJ and CSAT models predicted the decreasing effect of the CTA codon with lower initiation rate (Figure 4, green circles and red diamonds). By contrast, the predicted YFP synthesis rate from the SAT model was independent of initiation rate (Figure 4, blue squares). This difference between the SAT model, and the TJ and CSAT models was also observed upon introducing CTA, CTC, or CTT codons at other locations in yfp, as well as the stall-inducing codon TCG during serine starvation (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig4-v2.jpg)\n\n**Figure 4.:** yfp reporters with a single CTA codon and one of five initiation regions are shown in the schematic. X axis \u2013 Measured YFP synthesis rate during Leu-rich growth was used as a proxy for the translation initiation rate. Y axis \u2013 Predicted and measured YFP synthesis rates during Leu starvation are shown relative to a yfp mRNA without CTA codon. The Leu position 18 is labeled by its order of occurrence along yfp relative to the start codon (22 Leu codons total), and corresponds to the 201st codon in yfp. Error bars indicate standard error over triplicate cultures. Simulation parameters are shown in Supplementary file 2. RMS error % is the root mean square error between predictions from each model and measured YFP synthesis rate, normalized by the average measured value. RMS error was calculated for initiation region mutants 1, 2, 3 and 5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each panel represents data for initiation rate variants having the indicated stall-inducing codon (Leu CTT, CTC, or CTA; Ser TCG) at one of three different Leu codon locations or one Ser codon location along yfp. The Leu or Ser positions are labeled by their order of occurrence along yfp relative to the start codon (22 Leu codons, 8 Ser codons total). The location of the sixth,\u00a010th, and 14th Leu codons along yfp are shown in the left schematic; the fifth Ser codon is shown in the right schematic. X axis, Y axis, RMS error % and simulation parameters are as shown in the main figure.\n\nSecond, we tested the effect of multiple stall sites on YFP synthesis rate (Figure 5). We introduced a single CTA codon at one of five locations among the twenty-two leucine codons in yfp (Figure 5, inset), and we then combined the single mutations to generate ten yfp variants with two CTA codons, two yfp variants with three CTA codons, and one yfp variant with four CTA codons. We then used the measured YFP synthesis rates (Figure 5, black triangles) of the five single CTA variants to fit the ribosome elongation rate at each of the five CTA codon locations in our three kinetic models (Materials and methods, Supplementary file 3). These fits, with no remaining free parameters, were used to predict YFP synthesis rates of the multiple-CTA variants during leucine starvation. We found that the TJ model systematically overestimated the YFP synthesis rate for 12 of 13 multiple-CTA variants (Figure 5, green circles), while the SAT model systematically underestimated the YFP synthesis rate for all 13 multiple-CTA variants during leucine starvation (Figure 5, blue squares). By contrast, the predicted YFP synthesis rates from the CSAT model (Figure 5, red diamonds) were closest to the measured YFP synthesis rates with approximately half the average error of the TJ and SAT models. Similarly, the CSAT model prediction was more accurate when we introduced CTC, CTT, or TCG stall-inducing codons into yfp (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig5-v2.jpg)\n\n**Figure 5.:** yfp reporters having one to four CTA codons at the five Leu positions in yfp are shown in the schematic. X axis \u2013 location of CTA codons in each of the yfp variants. Y axis \u2013 Predicted and measured YFP synthesis rates during Leu starvation are shown relative to a yfp mRNA without CTA codon. The Leu positions are labeled by their order of occurrence along yfp relative to the start codon (22 Leu codons total), and correspond to the following codon positions along yfp: 2: 15, 6: 46, 10: 68, 14: 141, 18: 201. Error bars indicate standard error over triplicate cultures. Simulation parameters are shown in Supplementary file 3. RMS error % is the root mean square error between predictions from each model and measured YFP synthesis rate, normalized by the average measured value. RMS error was calculated only for mutants with multiple CTA codons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The Leu or Ser positions are labeled by their order of occurrence along yfp relative to the start codon (22 Leu codons, 8 Ser codons total). X axis, Y axis, RMS error % and simulation parameters are as shown in the main figure.\n\nThird, we measured the effect of varying the distance between two stall sites on YFP synthesis rate (Figure 6, black triangles). We made pairwise combinations of seven CTA mutations to generate eight variants with a range of distances d between the two CTA codons (Figure 6, inset). As before, we fitted our three models to the measured YFP synthesis rate of the single CTA variants and used these fits to predict the YFP synthesis rate of the double CTA variants (Materials and methods, Supplementary file 4). We found that two CTA codons separated by less than a ribosome footprint (d\u00a0<\u00a010 codons) resulted in lower protein synthesis rate than two CTA codons separated by several ribosome footprints (d\u00a0>\u00a050 codons) (Figure 6, black triangles). This observation was in line with the predictions from the TJ and CSAT models (Figure 3C), with the CSAT model providing a better fit than either the TJ or SAT models overall. Similarly, the CSAT model was more accurate when we varied the distance between two CTC codons in yfp (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig6-v2.jpg)\n\n**Figure 6.:** yfp variants with two CTA codons are arranged by increasing value of d, the distance between the CTA codons. X axis \u2013 location of CTA codons in each of the yfp variants. Y axis \u2013 Predicted and measured YFP synthesis rates during Leu starvation are shown relative to a yfp mRNA without CTA codon. The Leu positions are labeled by their order of occurrence along yfp relative to the start codon (22 Leu codons total), and correspond to the following codon positions along yfp: 8: 60, 9: 64, 10: 68, 11: 119, 12: 125, 13: 137, 14: 141. Error bars indicate standard error over triplicate cultures. Simulation parameters are shown in Supplementary file 4. RMS error % is the root mean square error between predictions from each model and measured YFP synthesis rate, normalized by the average measured value. RMS error was calculated only for mutants with two CTA codons.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** X axis, Y axis, RMS error % and simulation parameters are as shown in the main figure.\n\nCombining the results from all the yfp mutants (N\u00a0=\u00a094) and assuming independent and normal distribution of residual errors, we conclude that the TJ model systematically overestimates the measured YFP synthesis rate (p<10\u201315, one-sided Student\u2019s t-test), while the SAT model systematically underestimates the measured YFP synthesis rate (p<10\u20138, one-sided Student\u2019s t-test). The CSAT model shows no such bias (p>0.05, two-sided Student\u2019s t-test). Under the same assumption of normal distribution of residual errors and using the Akaike Information Criterion (Burnham and Anderson, 2013), we find an Akaike weight\u00a0>0.999 in favor of the CSAT model over the TJ and SAT models. Thus we conclude that the CSAT model provides a better fit to the measured YFP synthesis rates from the yfp mutants than either the TJ or the SAT models when the initiation rate, the number of stall sites, and the distance between stall sites are systematically varied during starvation for single amino acids in E. coli.\n\n### Selectivity, robustness, and ribosome density in the collision-stimulated abortive termination model\n\nThe ability of the CSAT model to account for measured YFP synthesis rates from our reporters led us to examine whether this model is consistent with other expected features of ribosome stalling during amino acid starvation in E. coli. Specifically, we used our simulations to examine how varying the abortive termination rate affects protein synthesis from mRNAs with and without stall sites, as well as the predicted ribosome density near stall sites in the three kinetic models.\n\nFirst, only a small fraction of ribosomes are expected to prematurely terminate from mRNAs without stall sites (Subramaniam et al., 2014; Zhang et al., 2010; Sin et al., 2016). Consistent with this expectation, predicted protein synthesis rates from reporters without stall sites did not decrease when the abortive termination rate was increased in the CSAT model (Figure 7A, top panel, red). This selectivity towards stalled ribosomes naturally arises in the CSAT model from the requirement for ribosome collisions to cause abortive termination. By contrast, protein synthesis rates from reporters without stall sites decreased with increasing abortive termination rate in a SAT model in which abortive termination was not explicitly specified to be selective for stalled ribosomes (Figure 7A, top panel, blue vs. pink).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23629/elife-23629-fig7-v2.jpg)\n\n**Figure 7.:** (A) Predicted effect of varying the abortive termination rate on protein synthesis rate from a yfp mRNA having no stall site (top panel) or a single stall site (bottom panel). The TJ model corresponds to an abortive termination rate of zero, and is shown as a single point at the left. The selective SAT model has non-zero abortive termination rate at only the codon corresponding to the stall site. The non-selective SAT model has non-zero abortive termination rate at all codons along the yfp mRNA. Overlapping curves for CSAT and SAT (selective) models in the\u00a0top panel were manually offset for clarity. (B)\u00a0Predicted ribosome occupancy on a yfp mRNA with a single stall site at the 201st codon. Ribosome occupancy is normalized by its median value across the mRNA. Simulation parameters are shown in Supplementary file 5.\n\nSecond, the frequency of abortive termination is known to be robust to over-expression of factors that rescue stalled ribosomes (Moore and Sauer, 2005). Consistent with this observation, we found that increasing the abortive termination rate in the CSAT model predicted only a minor effect on protein synthesis rate from an mRNA with a single stall site (Figure 7A, bottom panel, red). By contrast, in both the selective and non-selective SAT models, protein synthesis rate from an mRNA with a single stall site continuously decreased as the abortive termination rate was increased (Figure 7A, bottom panel, blue and pink). The robustness of the CSAT model to varying abortive termination rates arises because the frequency of ribosome collisions limit the actual rate of abortive termination at stall sites.\n\nFinally, previous ribosome profiling measurements have detected a queue of only a few ribosomes at CTA codons during leucine starvation in E. coli (Subramaniam et al., 2014). Consistent with this observation, the length of ribosome queues at the stall site predicted by the CSAT model is limited to a few ribosomes even when the stall site is located\u00a0~200 codons from the start codon (Figure 7B, red). A similar queue of few ribosomes is also observed in the SAT model (Figure 7B, blue and pink). By contrast, the TJ model predicts a queue of\u00a0~20 ribosomes when stall sites are located\u00a0~200 codons from the start codon (Figure 7B, green).\n\n## Discussion\n\nIn this work, we used a combination of computational modeling and reporter-based measurements of protein synthesis rate to constrain ribosome kinetics at stall sites during single amino acid starvation in E. coli. Our approach allowed us to test two previously proposed models for how ribosome stalling decreases protein expression, namely, ribosome traffic jams that block initiation (TJ model) and simple abortive termination of stalled ribosomes (SAT model). We also considered a novel model in which ribosome collisions stimulate abortive termination of stalled ribosomes (CSAT model). Our integrated approach allowed us to infer the extent to which each of these three kinetic models quantitatively accounted for the measured protein synthesis rate from a library of yfp variants during starvation for single amino acids.\n\nThe TJ model has been considered theoretically in several studies (MacDonald et al., 1968; Mitarai et al., 2008; Zhang et al., 1994). While queues of\u00a0~7 ribosomes have been detected in vitro (Wolin and Walter, 1988), ribosome profiling studies have revealed a queue of only a few ribosomes at stall sites in vivo (Woolstenhulme et al., 2015; Subramaniam et al., 2014; Guydosh and Green, 2014). These smaller queues can modulate protein expression only if the stall site is within a few ribosome footprints from the start codon (Mitarai et al., 2008; Liljenstr\u00f6m and von Heijne, 1987; Tuller et al., 2010). Nevertheless, recent studies on EF-P dependent pauses in bacteria and rare-codon dependent pauses in yeast suggested that the TJ model underlies the decreased protein expression when stall sites are over 100 codons away from the start codon (Hersch et al., 2014; Chu et al., 2014). These conclusions were based on observations that decreasing initiation rate of ribosomes on reporters reduced the effect of stall sites on protein expression (Hersch et al., 2014; Chu et al., 2014). This regulatory effect of initiation rate was also observed in our experiments (Figure 3). However, we find that both the TJ and CSAT models predict this regulatory effect of initiation rate (Figure 3A), while only the CSAT model predicts a queue of few ribosomes (Figure 7B) that is observed experimentally. Thus, collision-stimulated abortive termination is a plausible alternative mechanism to the traffic jam model proposed in previous studies (Hersch et al., 2014; Chu et al., 2014).\n\nSimple kinetic partitioning between normal elongation and abortive termination has been proposed as a possible mechanism for how ribosome rescue factors might act at ribosomes that are stalled within an mRNA (Brandman and Hegde, 2016; Shao and Hegde, 2016). However, our modeling indicates that this non-selective mechanism of abortive termination will result in decreased protein expression from mRNAs that do not have stall sites (Figure 7A, top panel). This observation can be intuitively understood from the fact that even a small probability of abortive termination during each elongation cycle will be exponentially amplified over the course of translating a typical E. coli protein with 300 amino acid residues.\n\nDespite the better fit provided by the CSAT model to our measured YFP synthesis rates, there still remains a residual error in its prediction (Figures 4, 5 and 6). This error might arise from several simplifying assumptions in our definition of the CSAT model, which we made in order to emphasize its qualitative difference with the TJ and SAT models (Figure 2B). First, we assumed the rate of abortive termination to be zero in the absence of ribosome collisions. Relaxing this assumption is likely to provide a better fit to our measurements, but it will introduce an extra free parameter while not providing additional mechanistic insight into the kinetics of abortive termination. Second, we assumed the rate of abortive termination to be zero for the trailing ribosome in the collided state (3h in Figure 2B), since there is no biochemical evidence for such a process. This assumption could be relaxed based on evidence from future biochemical studies of ribosome queues formed at stall sites. The inverse approach used in our work relied on model predictions that did not depend sensitively on underlying kinetic parameters such as the elongation rate and the abortive termination rate at stall sites. Hence, our work cannot be used to infer the exact values of these kinetic parameters in vivo. Finally, we studied the CSAT model solely in the context of ribosome stalls caused by amino acid starvation in E. coli. Hence, the validity of this model at ribosome stalls in exponentially growing bacterial cells remains to be tested.\n\nRibosome collisions during amino acid starvation could stimulate abortive termination through several mechanisms. Specifically, ribosome collisions could either stimulate spontaneous drop-off of stalled ribosomes, or they could stimulate the activity of quality control pathways such as the tmRNA and the ArfA systems that rescue stalled ribosomes (Keiler, 2015; Shoemaker and Green, 2012). In the latter case, ribosome collisions might allow the quality control pathway to selectively recognize ribosomes that have been stalled for an extended duration over ribosomes that are transiently stalled due to the stochasticity of normal elongation (Miller and Buskirk, 2014). In this sense, the frequency of ribosome collisions can provide a natural timer for achieving selectivity of quality control pathways towards stalled ribosomes (Shao and Hegde, 2016). Further, the robustness of the CSAT model to changes in the abortive termination rate (Figure 7A, bottom panel) can buffer against cell-to-cell variation in the concentration of quality control factors that mediate abortive termination. Finally, ribosome collisions might also have a role in stimulating the activity of eukaryotic translational quality control pathways (C. Simms and H. Zaher, personal communication) such as No-Go mRNA decay (Doma and Parker, 2006), where the kinetic events leading to recognition of stalled ribosomes remain poorly defined (Shoemaker and Green, 2012). This general role for ribosome collisions in translational quality control could have arisen during evolution to minimize the idling of translation-competent ribosomes on mRNAs.\n\n## Materials and methods\n\n### Bacterial strains and plasmids\n\nAll leucine starvation experiments in this study were performed using an E. coli strain (Subramaniam et al., 2013) that is auxotrophic for leucine and contains the tet repressor gene for inducible control of reporter genes (ecMF1). Serine starvation experiments were performed using a similar strain, but auxotrophic for serine instead of leucine (ecMF403). All fluorescent reporters in this study were cloned into a very low copy expression vector (SC*101 ori, 3\u20134 copies per cell) used in our previous work (Subramaniam et al., 2013) (pASEC1, Addgene plasmid #53241). The fluorescent reporter genes used in leucine starvation experiments were based off a yellow fluorescent protein sequence (yfp0) present in pASEC1, which encodes a fast-maturing \u2018Venus\u2019 variant of YFP. All 22 leucine codons in yfp0 were chosen as CTG. All yfp reporters used for serine starvation experiments were constructed from a yfp variant that had the AGC codon at all eight serine positions. For constructing yfp reporters with single stall sites during leucine starvation, the corresponding CTG codon in yfp0 was mutated to CTA, CTC, or CTT by encoding these mutations in oligos and using Gibson assembly (Gibson et al., 2009). The single stall reporters for serine starvation were similarly constructed by mutating a single AGC codon to TCG codon. A yfp variant with seven leucine codons mutated to CTA was used in all plate reader experiments as a control for the lower limit of detection of YFP fluorescence under Leu starvation (ecMF112). Variants of yfp with multiple CTA, CTC, CTT, or TCG codons were constructed by Gibson assembly of PCR fragments from the corresponding single codon variants of yfp. The start codon and Shine-Dalgarno sequence variants of yfp were generated by encoding these mutations in one of the PCR oligos for yfp. The 3xflag-yfp variants were generated by the addition of a 22 codon sequence at the 5\u2019 end that encoded a 3X-FLAG peptide used in our previous work (Subramaniam et al., 2013). All strains and plasmids used in this study are available upon request (See Supplementary file 7 for list of strains and plasmids).\n\n### Growth and fluorescence measurements\n\nOvernight cultures were inoculated in biological triplicates from freshly grown single colonies or patched colonies from glycerol stocks. Overnight cultures were grown in a modified MOPS rich defined medium (Subramaniam et al., 2013; Neidhardt et al., 1974) made with the following recipe: 10X MOPS rich buffer, 10X ACGU nucleobase stock,\u00a0and 100X 0.132M K2HPO4 were used at 1X final concentration as in the original recipe. In addition, the overnight growth medium contained 0.5% glucose as carbon source and 800 \u00b5M of 19 amino acids and 10 mM of serine. pH was adjusted to 7.4 using 1M NaOH and appropriate selective antibiotic (100 \u00b5g/ml carbenicillin) was added. 200 ng/ml of anhydro-tetracycline (aTc) was also added in order to induce the PLtetO-1 promoter (Lutz and Bujard, 1997). 1 ml overnight cultures were grown in 2 ml deep 96-well plates (AB0932, Fisher) at 30\u00b0C with shaking at 1200 rpm (Titramax 100 shaker) for 12 to 16 hr.\n\nFor amino acid starvation time course experiments, overnight cultures were diluted 1:100 into 150 \u00b5l of the same MOPS rich-defined medium as the overnight cultures. However, leucine was added at 100 \u00b5M and supplemented with its methyl ester analog at 160 \u00b5M (AC125130250, Fisher) for leucine starvation experiments. Similarly, serine was added at 5 mM and supplemented with its methyl ester analog at 800 \u00b5M (412201, Sigma) for serine starvation experiments. Addition of each methyl ester results in a steady but limiting supply of the amino acid due to slow hydrolysis of the ester, and this enables extended and accurate measurements of protein synthesis rate under the amino acid starvation condition (Subramaniam et al., 2013). Except for the limiting amino acid, the remaining 19 amino acids were present at the overnight culture concentrations during the amino acid starvation experiments.\n\nDiluted overnight cultures were grown in 96-well plates (3595, Costar) at 30\u00b0C with shaking at 1200 rpm (Titramax 100 shaker). A 96-well plate reader (Infinite M1000 PRO, Tecan) was used to monitor cell density (absorbance at 600 nm) and YFP synthesis (fluorescence, excitation 504 nm and emission 540 nm). Each plate was read every 15 min and shaken in between readings for a total period of 6\u201310 hr.\n\nFor experiments in Figure 1, overnight cultures were grown without aTc and diluted 1:1000 into the same medium. Then when the OD600 reached 0.5, the cells were spun down at 3000\u00a0g for 5 min and then re-suspended in the same medium, but either with or without leucine, and with aTc for reporter induction. Fluorescence, Western\u00a0blots, and\u00a0qRT-PCR measurements in Figure 1 were performed from these cultures after shaking at 37\u00b0C, 200 rpm for 20 min with leucine or 60 min without leucine.\n\n### Polysome profiling\n\nOvernight cultures were diluted 1:200 into 400 ml MOPS rich defined medium and grown at 37\u00b0C to an OD600 of 0.2. Cells were harvested by vacuum filtration on a 0.2 \u00b5m nitrocellulose membrane (BA83, GE) and subsequently cut in half. One half was added to 200 ml MOPS rich defined medium, the other to 200 ml of same medium but without leucine. After growth at 37\u00b0C for either 20 min (Leu-rich cultures) or 1 hr (Leu starvation cultures), cells were harvested by vacuum filtration again. Cells were scraped from the membrane using a plastic spatula before the membrane became dry, and then immediately submerged in liquid nitrogen and stored at \u201380\u00b0C. Frozen cells were then re-suspended in 0.7 ml bacterial lysis buffer (20 mM Tris pH 8.0, 10 mM MgCl2, 100 mM NH4Cl, 2 mM DTT, 0.1% NP\u201040, 0.4% Triton X\u2010100, 100 U/ml DNase I, and 1 mM chloramphenicol) and lysed using glass beads (G1277, Sigma) by vortexing 4\u00a0\u00d7\u00a030\u00a0s at 4\u00b0C with 60\u00a0s cooling on ice in between. The lysate was clarified by centrifugation at 21,000\u00a0g, 4\u00b0C for 10 min and supernatant was transferred to a fresh tube.\n\nLysate RNA concentration was quantified by A260 (Thermo Scientific Nanodrop) and 100\u2013200 \u00b5l of lysate containing 0.5 mg RNA was loaded onto a 10\u201350% sucrose gradient made with 20 mM Tris pH 8.0, 10 mM MgCl2, 100 mM NH4Cl, and 2 mM DTT. Polysomes were separated by centrifugation in an SW41 rotor at 35,000 rpm for 3 hr at 4\u00b0C. Gradients were then fractionated into 15 fractions containing 25.6 ng spike-in control firefly\u00a0luciferase mRNA. RNA from each fraction was column-purified along with in-column DNase I digestion (Quick-RNA Miniprep, Zymo Research, Irvine, CA).\n\n### Total RNA extraction\n\nPhenol-chloroform extraction method was used to obtain total RNA. 10 ml of cells were quickly chilled in an ice water bath and harvested by centrifugation at 3000\u00a0g for 5 min. Cell pellets were re-suspended in 500 \u00b5l of 0.3\u00a0M sodium acetate\u00a0and 10 mM EDTA pH 4.5. Re-suspended cells were mixed with 500 \u00b5l of acetate-saturated phenol-chloroform pH 4.5 and 500 \u00b5l of acid-washed glass beads (G1277, Sigma). The mixture was shaken in a vortexer for 3 min and then clarified by centrifugation at 21,000\u00a0g for 10 min. The samples were maintained at 4\u00b0C through this step. The aqueous layer was extracted twice with acetate-saturated phenol-chloroform pH 4.5 and once with chloroform. Total RNA was precipitated with an equal volume of isopropanol, washed with 70% ethanol, and finally re-suspended in 200 \u00b5l of RNase-free 10 mM Tris pH 7.0. 200 ng of the total RNA was treated with DNase I (M0303S, NEB) to remove residual DNA contamination (manufacturer\u2019s instructions were followed). The DNA-free RNA was column-purified (Quick-RNA Miniprep, Zymo Research, Irvine, CA).\n\n### Reverse transcription and quantitative PCR\n\nReverse transcription (RT) was performed using 10\u201320 ng of DNA-free RNA and Maxima reverse transcriptase (EP0741, Thermo), used according to manufacturer\u2019s instructions. Random hexamer primers were used for priming the RT reaction. At the end of the RT reaction, the 10 \u00b5l RT reaction was diluted 20-fold and 5 \u00b5l of this diluted sample was used as template for qPCR in the next step. qPCR was performed using Maxima SYBR Green/ROX qPCR Master Mix (FERK0221, Thermo) and manufacturer\u2019s instructions were followed. qPCR was performed in triplicates for each RT reaction and appropriate negative RT controls were used to confirm the absence of DNA contamination. gapA mRNA was used as internal reference to normalize all other mRNA levels. Primers for qPCR were from our previous work (Subramaniam et al., 2013). \u0394Ct method was used to obtain relative mRNA levels. Analysis was implemented using Python 2.7 libraries. Code for analysis and plotting of figures starting from raw qPCR data is publicly available at http://github.com/rasilab/ferrin_elife_2017 (Subramaniam, 2017) as Jupyter notebooks (Perez and Granger, 2007).\n\n### Western blotting\n\nCells were harvested by centrifugation and protein was precipitated by mixing trichloroacetic acid to a final concentration of 10%. The mixture was incubated on ice for 15 min and the supernatant was removed. Protein pellets were re-suspended in 100 \u00b5l 1X Laemmli Buffer (Biorad), boiled at 99\u00b0C for 5 min, and then loaded onto each lane of a 4\u201320% polyacrylamide gel (Biorad) and SDS-PAGE was carried out at 200V for 50 min. Proteins were transferred to a nitrocellulose membrane at 500mA for 60 min using a wet-transfer apparatus (Biorad). The membrane was cut along the 50kD marker and both halves were blocked in Odyssey PBS Blocking Buffer (Li-cor) for 60 min. The lower-MW half was incubated with a 1:6000 dilution of an anti-FLAG antibody (F3165, Sigma), and the higher-MW half in the same dilution of an anti-\u03c370 antibody (WP004, Neoclone), each in 15 ml of Odyssey PBS Blocking Buffer with shaking at 4\u00b0C overnight. After washing 4\u00a0\u00d7\u00a05 min with TBST, the membrane was incubated with 1:10,000 dilution of a secondary dye-conjugated antibody (925\u201368072, Li-cor) in 15 ml of Odyssey PBS Blocking Buffer with shaking at room temperature for 60 min. After washing 4\u00a0\u00d7\u00a05 min with PBS, the membrane was imaged using a laser-based fluorescence imager.\n\n### Growth and fluorescence data analysis\n\nOD600 and YFP fluorescence were recorded as time series for each well of a 96-well plate. Background values for OD600 and YFP fluorescence were subtracted based on measurements from a well with just growth medium. Time points corresponding to Leu-rich growth and Leu starvation were identified by manual inspection of OD600 curves. The onset time of starvation was automatically identified as the time point at which YFP/OD600 reached a minimum value. YFP synthesis rate during Leu-rich exponential growth was defined as the average of YFP/OD600 values for the three points around the onset time of starvation. YFP synthesis rate during Leu starvation was defined as the slope of a linear fit to the fluorescence time series in the Leu starvation regime. YFP synthesis rates for individual wells were averaged over biological replicate wells for calculation of mean and standard error. Analysis was implemented using Python 2.7 libraries. Code for analysis and plotting of figures starting from raw plate reader data is publicly available at http://github.com/rasilab/ferrin_elife_2017 (Subramaniam, 2017) as Jupyter notebooks (Perez and Granger, 2007).\n\n### Simulation\n\nThe kinetic models in Figure 2 were implemented as stochastic simulations in the C++ object-oriented programming language. Separate classes were defined to represent ribosomes, mRNA transcripts, gene sequences, tRNAs, and codons. Each elongating ribosome was represented as an instance of the Ribosome class. The four distinct states of the elongating ribosome (ae, ao, 5h, 3h in Figure 2A) were tracked using three bool properties of the Ribosome class: AsiteEmpty, hitFrom5Prime, and hitFrom3Prime. The identities of the tRNAs occupying the A-site and P-site of the elongating ribosome were tracked. Only the aggregate number of ribosomes in the free state (f in Figure 2A) was tracked. Instances of the transcript class were used to track the number of proteins produced from each transcript. The gene, tRNA and codon classes were used as data structures and their properties did not change during the course of the simulation.\n\nSince our reporters were expressed from very low copy number plasmids, translation of the reporter mRNAs is not expected to perturb the native translation machinery in the cell. Therefore we assumed that both the translation rate of native mRNAs, as well as the pool of free ribosomes and aminoacyl-tRNAs remain constant across all reporters used in this study. Hence, each simulation considered a minimal set of two mRNA molecules that both encoded YFP. The first mRNA molecule was a control yfp sequence without any CTA, CTC or CTT codon. The second mRNA molecule was the test yfp sequence with the CTA, CTC or CTT codon as specified for individual simulations. The simultaneous translation of the two mRNA molecules was simply to ensure that we used exactly the same set of parameters for our test and control reporters during simulation runs and subsequent analyses.\n\nWe simulated four different molecular processes during translation: initiation, elongation, aminoacylation and abortive termination. The rates of all other steps in translation such as termination and ribosome recycling were set to be instantaneous.\n\nThe initiation rate of all mRNA sequences was set as 0.3 s-1 [a typical value for E. coli mRNAs (Kennell and Riezman, 1977; Subramaniam et al., 2014)]\u00a0except when this rate was explicitly varied, either to demonstrate its effect in our kinetic models (Figure 3A) or for experimental fits (Figure 4, Figure 4\u2014figure supplement 1). For the experimental fits in Figure 4 and Figure 4\u2014figure supplement 1, the measured YFP synthesis rate of the initiation region mutants during Leu-rich growth relative to the starting sequence (four in Figure 4) was used to scale the default initiation rate of 0.3 s-1.\n\nElongation cycle of ribosomes at each codon was divided into two steps:\n\nIn the first elongation step, the cognate tRNA is accommodated into the A-site. The rate of tRNA accommodation was chosen to be non-zero only when ribosomes are in the ae state. The tRNA accommodation rate for all codons was calculated as the product of a pseudo first-order rate constant (2\u00a0\u00d7\u00a0107\u00a0\u2062M-1\u2062s-1), the concentration of individual tRNAs, and a weight factor to account for codon-anticodon pairing strength. The concentration of tRNAs and the weight factors were based on measured concentration of E. coli tRNAs (Dong et al., 1996) and known wobble-pairing rules (Subramaniam et al., 2014; Shah et al., 2013). Leucine starvation was simulated using a previous whole cell model of translation (Subramaniam et al., 2014). The steady-state charged fraction of all tRNAs from this whole-cell model during leucine starvation was used for our yfp reporter simulation as the default values. To fit the measured YFP synthesis rate of single stall-site variants (Figures 4, 5 and 6, Figure 4\u2013figure supplement 1, Figure 5\u2013figure supplement 1, Figure 6\u2013figure supplement 1), the tRNA accommodation rate at CTA, CTC and CTT codons was systematically varied in the three kinetic models. These fit values were used for illustrating the predictions from the kinetic models in Figure 3 and Figure 7.\n\nIn the second elongation step, peptide bond is formed and ribosomes translocate to the next codon. This rate was set to be 22 s-1 and equal to the maximum measured rate of in vivo elongation (Bremer and Dennis, 1996).\n\nThe aminoacylation rate for all tRNAs was calculated as the product of a pseudo first-order rate constant (2\u00a0\u00d7\u00a01010\u2062\u00a0M-1\u2062s-1) and the concentration of individual tRNAs. Even though we simulated this process explicitly, we did not lower this rate for leucine tRNAs to simulate leucine starvation; Instead, we accounted for leucine starvation by using the steady-state charged fraction of leucine tRNAs from our whole-cell model as mentioned above in our discussion of tRNA elongation rate. This modified procedure enabled us to simulate the translation of just the yfp reporters without considering all the endogenous mRNAs in the cell.\n\nThe abortive termination rate was set to a value of 1 s-1 in the SAT and CSAT models and 0 s-1 in the TJ model, except when this rate was explicitly varied (Figure 7A). We chose this rate to be of the same approximate value as in our ribosome profiling studies (Subramaniam et al., 2014). The exact value of this rate is not critical in our SAT and CSAT models since the fitted value of the elongation rate varies accordingly to reproduce the measured protein synthesis rate from our YFP reporters with single stall sites.\n\nThe simulations used a stochastic Gillespie algorithm that was implemented in earlier studies (Subramaniam et al., 2014; Shah et al., 2013). Each simulation was run until 10,000 full-length YFP molecules were produced from the control yfp mRNA without stall-inducing codons. The number of full-length YFP molecules produced in the same duration from the second yfp mRNA with stall-inducing codons was used to calculate the YFP synthesis rate (in Figures 3, 4, 5, 6 and 7, Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 1) after normalizing by 10,000. Time-averaged ribosome density on each mRNA was also tracked during the simulation run after 100 YFP molecules were produced from the first yfp mRNA, and this density was median-normalized for plotting in Figure 7B.\n\nCode for creating simulation input files, running the simulation, and plotting of figures starting from simulation results is publicly available at http://github.com/rasilab/ferrin_elife_2017 (Subramaniam, 2017) as Jupyter notebooks (Perez and Granger, 2007). Parameters common to all simulations are listed in Supplementary file 6. Parameters specific to simulations in individual figures are listed in Supplementary files 1\u20135.\n\n### Data accession\n\nRaw data and programming code for reproducing all figures in this paper is publicly available at: http://github.com/rasilab/ferrin_elife_2017 (Subramaniam, 2017,\u00a0with a copy archived at https://github.com/elifesciences-publications/ferrin_elife_2017).\n",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "ba8b96c6-8881-48a2-ba8e-3e5fa94b721b",
+      "submission_id": "091b2c39-7e81-4d21-a719-d78e457c6661",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan G Hinnebusch, National Institutes of Health , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23629.025](https://doi.org/10.7554/eLife.23629.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Kinetic modeling predicts a stimulatory role for ribosome collisions at elongation stall sites in bacteria\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Alan G Hinnebusch (Reviewer #1), is a member of our Board of Reviewing Editors and the evaluation has been overseen by James Manley as the Senior Editor. The following individual involved in review of your submission have agreed to reveal their identity: Yitzhak Pilpel (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study uses a combination of molecular biology and computational modeling to examine the mechanism of reduced translation of mRNA in response to prolonged pausing of elongating ribosomes evoked by particular leucine codons in bacterial cells starved for leucine. It seeks to distinguish between two leading models of simple abortive termination (SAT) versus a traffic jam (TJ) wherein the stalled ribosome sets up a queue of trailing ribosomes that extends to the start codon and inhibits initiation. The latter model has been favored because it can explain the finding that reducing the rate of initiation can mitigate the inhibitory effect of pausing; however, it is at odds with results of ribosome profiling in which long queues of stalled ribosomes have not been observed. The study begins by providing evidence at odds with the TJ model by showing that introducing stall-inducing codons at a large distance (>400 nt) from the initiation codon of a YFP reporter evoked a large reduction in protein output, which is inconsistent with the limited queues of only 1-2 ribosomes (~20 codons) observed previously by ribosome profiling. They also found no significant increase in the average polysome size of the reporter mRNA that would expected from a long queue of trailing ribosomes; and they ruled out the possibility that the mRNA with stalled ribosomes was being degraded.\n\nThey then proceed to computational modeling to predict the effects of abortive termination vs. traffic jams on YFP synthesis rates in the presence of different numbers of stall sites, different spacing between two stall sites, and different initiation rates, revealing predicted synthesis rates that vary significantly among three different mechanisms modeled, including TJ (where the stalled and queuing ribosomes never terminate or dissociate from the mRNA; SAT (where only the stalled ribosome terminates and dissociates); and collision-stimulated abortive termination (CSAT, wherein termination of a stalled ribosome and dissociation occurs only on collision with the trailing elongating ribosome. The modeling predicts that increasing the initiation rate has no effect on YFP synthesis in the SAT model (where collisions by trailing ribosomes have no impact), but progressively reduces YFP synthesis in the TJ and CSAT models, where the effects of queuing ribosomes are paramount. The TJ and CSAT models also make predictions quite distinct from those of SAT when the number of stall sites increases, with SAT predicting much steeper and extensive declines, and the TJ and CSAT predictions differing in that additional stall sites have almost no impact for the TJ model. Increasing the distance between two stall sites is predicted to have no impact on YFP synthesis in the SAT model, to evoke a large step increase in synthesis in the CSAT models when the distance between stall sites is less than the ribosome footprint, and in the TJ model, YFP synthesis is predicted to exhibit a similar step increase followed by a gradual further increase that plateaus in the TJ model.\n\nThey went on to measure the effects on YFP reporter expression in response to altering the initiation rate with a single stall site, achieved by replacing the ATG start codon with near-cognates, or altering the Shine-Dalgarno sequence. They consistently observed the increased inhibitory effect with increasing initiation rate predicted by the TJ and CSAT models, and at odds with the SAT model, for various positions or sequences of a single stall site. Testing the effect of multiple stall sites in a variety of different configurations showed a better fit of the experimental data for the CSAT versus both the SAT and TJ models. The CSAT model also outperformed the other two models for the constructs where the distance between two stall sites was varied. They finish by presenting modeling results designed to show that the CSAT model out-performs the SAT model in explain in vivo observations of very low rates of premature termination from mRNAs lacking stall sites and the insensitivity of premature termination rates to overexpression of ribosome rescue factors; and the CSAT model outperforms the TJ model in explaining in vivo observations of very limited queuing of ribosomes upstream from stall sites. The authors conclude that collision-induced abortive termination is the most likely mechanism to account for the inhibitory effect of elongation stalling on translational output in E. coli.\n\nEssential revisions:\n\nIt is necessary to respond to requests for revisions of text and figures to make the paper easier to read and understand. To address the key comment of Rev. #2, it is necessary to repeat a subset of the experiments with a second set of reporters containing a different codon besides leucine to rule out the possibility of effects specific to leucine starvation. One possibility would be to repeat only the analysis in Figure 4A for a different amino acid. To address the key comment of Rev. #3, it is important to acknowledge that the CSAT mechanism might not apply to ribosome stalling imposed by different mechanisms operating in non-amino acid starved cells. Second, it is necessary to perform statistical analyses to determine whether the agreement of the experimental data with the CSAT model predictions is significantly better than that given by the SAT or TJ models. Third, you are asked to repeat the simulations to consider the more realistic situation where the reporter mRNAs with inserted Leu codons are being translated in the presence of a full complement of mRNAs and not merely a single control reporter mRNA lacking the Leu codon.\n\nReviewer #1:\n\nSummary of work:\n\nThis study uses a combination of molecular biology and computational modeling to examine the mechanism of reduced translation of mRNA in response to prolonged pausing of elongating ribosomes evoked by particular leucine codons in bacterial cells starved for leucine. It seeks to distinguish between two leading models of simple abortive termination (SAT) versus a traffic jam (TJ) wherein the stalled ribosome sets up a queue of trailing ribosomes that extends to the start codon and inhibits initiation. The latter model has been favored because it can explain the finding that reducing the rate of initiation can mitigate the inhibitory effect of pausing; however, it is at odds with results of ribosome profiling in which long queues of stalled ribosomes have not been observed. The study begins by providing evidence at odds with the TJ model by showing that introducing stall-inducing codons at a large distance (>400 nt) from the initiation codon of a YFP reporter evoked a large reduction in protein output, which is inconsistent with the limited queues of only 1-2 ribosomes (~20 codons) observed previously by ribosome profiling. They also found no significant increase in the average polysome size of the reporter mRNA that would expected from a long queue of trailing ribosomes; and they ruled out the possibility that the mRNA with stalled ribosomes was being degraded.\n\nThey then proceed to computational modeling to predict the effects of abortive termination vs. traffic jams on YFP synthesis rates in the presence of different numbers of stall sites, different spacing between two stall sites, and different initiation rates, revealing predicted synthesis rates that vary significantly among three different mechanisms modeled, including TJ (where the stalled and queuing ribosomes never terminate or dissociate from the mRNA; SAT (where only the stalled ribosome terminates and dissociates); and collision-stimulated abortive termination (CSAT, wherein termination of a stalled ribosome and dissociation occurs only on collision with the trailing elongating ribosome. The modeling predicts that increasing the initiation rate has no effect on YFP synthesis in the SAT model (where collisions by trailing ribosomes have no impact), but progressively reduces YFP synthesis in the TJ and CSAT models, where the effects of queuing ribosomes are paramount. The TJ and CSAT models also make predictions quite distinct from those of SAT when the number of stall sites increases, with SAT predicting much steeper and extensive declines, and the TJ and CSAT predictions differing in that additional stall sites have almost no impact for the TJ model. Increasing the distance between two stall sites is predicted to have no impact on YFP synthesis in the SAT model, to evoke a large step increase in synthesis in the CSAT models when the distance between stall sites is less than the ribosome footprint, and in the TJ model, YFP synthesis is predicted to exhibit a similar step increase followed by a gradual further increase that plateaus in the TJ model.\n\nThey went on to measure the effects on YFP reporter expression in response to altering the initiation rate with a single stall site, achieved by replacing the ATG start codon with near-cognates, or altering the Shine-Dalgarno sequence. They consistently observed the increased inhibitory effect with increasing initiation rate predicted by the TJ and CSAT models, and at odds with the SAT model, for various positions or sequences of a single stall site. Testing the effect of multiple stall sites in a variety of different configurations showed a better fit of the experimental data for the CSAT versus both the SAT and TJ models. The CSAT model also outperformed the other two models for the constructs where the distance between two stall sites was varied. They finish by presenting modeling results designed to show that the CSAT model out-performs the SAT model in explain in vivo observations of very low rates of premature termination from mRNAs lacking stall sites and the insensitivity of premature termination rates to overexpression of ribosome rescue factors; and the CSAT model outperforms the TJ model in explaining in vivo observations of very limited queuing of ribosomes upstream from stall sites. The authors conclude that collision-induced abortive termination is the most likely mechanism to account for the inhibitory effect of elongation stalling on translational output in E. coli.\n\nGeneral critique:\n\nThis study addresses an important problem, of how ribosome stalling during elongation reduces translation efficiency, and the approach taken to distinguish between the two leading models, of simple abortive termination (SAT) versus queuing of trailing ribosomes (TJ) back to the start codon, seems quite creative. Unfortunately, I can't judge the quality of the computational modeling. I also have doubts about whether the empirical data are good enough to rule out the two SAT and TJ models and argue strongly for the novel CSAT mechanism proposed here, as the discrimination between the 3 models shown in Figure 4 is generally more compelling than is the case for the related experiments shown in Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1 and Figure 6\u2014figure supplement 1. In the end, I was persuaded that the results do significantly favor the CSAT model. However, I was unable to appreciate the significance or validity of the analyses presented in Figure 5A-C, and feel that more effort is required to explain the logic of these modeling exercises and how they support the stated conclusions. In addition, more details are required concerning the experimental design and presentation of the data, as listed below.\n\nSpecific comments:\n\n\u2013 Figure 1A, C: in A, a better schematic and explanation of the differences between reporters 1-5 is required. In C, explain that 1 and 4 refer to the constructs as numbered in panel A.\n\n\u2013 Figure 1D: It would improve the experiment to detect the shorter stalled product expected for construct 5, to establish that the size of the detected product coincides with the position of the stall-inducing codon(s).\n\n\u2013 Figure 2A: use \"little\" k for rate constants; Figure 2B: explain the arrows to the 3h species in the text or legend.\n\nFigure 3 and associated text: More details are needed about exactly where the stall sites were inserted in panels A, B, C, which could also be depicted schematically.\n\n\u2013 Figure 4 and Figure 4\u2014figure supplement 1: explain the numbering system for the different codons examined, as their order in the sequence relative to the start codon.\n\nReviewer #2:\n\nThis report is written by Yitzhak Pilpel and Dvir Schirman\n\nIn this paper Ferrin and Subramaniam examine mechanisms of ribosome stalling on mRNA and their effects on expression level. They do so by introducing synthetic stall site into a fluorescent reporter and by examining the effect of number of stall sites, distance between adjacent stall sites, and initiation rate. They examine three different models that can explain the reduced expression level due to ribosome stalling, two previously proposed models, and a new model which suggests that collision of ribosomes at stalling sites causes abortive termination of the stalled ribosome.\n\nUsing simulation, the authors predict the behavior of protein synthesis rate for mRNA with stalling sites, under different regimes, and then they measure the synthesis rate of 100 different variants which are aimed to test the predictions of the simulations. By comparing the simulation predictions and the measured synthesis rate, they demonstrate that the collision associated model best explain the reduction in protein synthesis rate due to ribosome stalling.\n\nThis is a very interesting paper. The three models are clearly motivated and the combination of simulations with experiments on synthetic genes is certainly a sound one. The conclusions are of importance and of potential interest to the community, the experiments and simulations are done with rigor. In principle this paper could be suitable for eLife.\n\nYet, there are several points which we think that should be addressed before publication.\n\nMajor points:\n\n1) The authors demonstrate the effect of ribosome stalling through a single stalling mechanism \u2013 \"slow\" codons of leucine under leucine starvation. It might be that the observations presented in this paper are through a different mechanism related specifically to leucine or to nucleotides in its codons, and not due to general ribosome stalling. We encourage the authors to test other means to stall ribosomes. One possibility can be starvation for a different amino acid. Perhaps easiest for the authors would be to examine their own synthetic genes from the PI's PNAS paper in which other yfp constructs for more amino acids were found to stall ribosomes upon starvation to additional amino acids.\n\nReviewer #3:\n\nThe manuscript is immediately interesting because it proposes a new and reasonable hypothesis for how ribosomal stalling might reduce protein expression - by abortive termination of a stalled ribosome caused by collision with an upstream elongating ribosome. The study argues for this novel model using a combination of experiments with synthetic YFP constructs in E. coli, under leucine starvation, combined with stochastic simulations of three alternative models.\n\nOverall, whether or not the conclusions are entirely general or even correct, I believe the paper is important because it raises a novel and quite reasonable hypothesis. However, I have three major concerns about the paper in its current form, which can presumably be addressed in revision:\n\n1) The study conclusions are limited to conditions of amino-acid starvation, but the authors discuss their results as if they hold generally;\n\n2) The comparison between empirical data and three alternative models of ribosome stalling/abortion is done purely by visual inspection, without any statistical inference at all;\n\n3) Some aspects of the model simulations contradict the experiments performed.\n\nI will elaborate on these concerns below. But I want to re-iterate from the start that I remain quite enthusiastic about the work, for its conceptual novelty and admirable combination of experiment and theory.\n\nConcern 1) The entire study (experiments and models) addresses the effects of ribosome stalling on decreased synthesis under a condition of severe amino-acid starvation. This is a perfectly reasonable biological question in its own right. But the authors must explain in their Abstract, Introduction, and Discussion that their results are limited to conditions of starvation, and they have no reason or evidence to favor one model over another for the effects of stalling on synthesis in healthy cells (indeed there may be almost no effect of a few stall sites on rates of synthesis in healthy E. coli cells). This needs to be clarified throughout the text, especially in the Abstract.\n\nConcern 2) The authors consider three physical models: traffic jams from pause site all the way back to start codon (TJ), simple abortive termination (SAT), and collision-stimulated abortive termination (CSAT). Each of these models makes predictions according to stochastic simulations, with several fitted parameters; and the predictions are compared to empirical data in Figure 4. The authors conclude that CSAT matches the data best, but they do not seem to make any attempt at a statistical inference - that is to ask whether there is sufficient evidence to reject either of the classical models in favor of CSAT. Needless to say, such a statistical inference is de rigor in modern biological research, and the authors must actually perform statistics to draw their conclusions. It is not clear from visual inspection alone that CSAT does best in Figure 4, eg, the data are sometimes closer to SAT in 4C, and the data are sometimes closer to SAT in 4B as well. The point is that visual inspection is not a sound scientific basis for comparing prediction to data. Hence the entire field of statistics.\n\nFortunately, because they have a stochastic model, the authors could easily compute the likelihood of the empirical data under each model, and perform standard statistical inferences (eg likelihood ratio tests for nested models, or AIC for non-nested models). They should do so. Note that Figure 4 only shows the average synthesis rate under the models - averaged over a period of time equivalent to production of 10,000 control YFPs; the variance within this ensemble of simulations would allow the authors to compute the actual likelihood of the empirical data, as opposed to simply plotting average predictions over the experimental observations.\n\nOn a related note: the authors should state clearly how many parameters are fit, for each of the three models, for each of the experimental conditions? Are the same number of parameters fit for each model? This is a critical question that must be answered, as it pertains strongly to model comparison and inference.\n\nConcern 3) The simulations are unrealistic in several respects, and not directly comparable to the experiments (to which they are compared in Figure 4). After reading the Methods in detail it appears that, for each model, simulations were run with a single control yfp mRNA as well as a single yfp sequence containing some combination of CTA (or other stalling) codons. This does not make much sense to me. Presumably, in the experiments, the ypf constructs are over-expressed in the E. coli cells, leading to depletion of available (free) ribosomes as a result of sequestration on the heterologous transcripts. And yet the simulation only considers two mRNA molecules in isolation, without any of the other native E. coli mRNAs? This is unrealistic, and it excludes the possibility that stalling may cause reduced protein expression due to a reduction of the pool of free ribosomes - a possibility that the model, as implemented, does not even consider. The authors should either simulate a realistic mRNA pool of native and heterologous transcripts, or explain this deficiency of the model openly - that they are not accounting for feedback between ribosomes stalled on the over-expressed construct and the pool of free ribosomes.\n\nMoreover, it appear that each simulation considered the simultaneously translation of one wildtype yfp mRNA molecule along with a single modified yfp mRNA that contains some CTA codons. But the experiments surely express either the control construct OR the modified construct in any given cell. Why then do the simulations involve simultaneous translation of both types of mRNAs? (This may not be a problem because the authors are simulating an unrealistically small number of mRNAs of each species, reducing the possibility for feedback via the common pool of free ribosomes; but it is not a realistic setup compared to the experiments and it can easily be re-done properly). Do the authors see any feedback - ie, does the amount of time required to produce 10,000 control YFP proteins in the simulations depend on the identity of the other yfp transcript in those simulations? If not, then why simulate both construct simultaneously? And if so, then this underscores my previous point, that the authors should be simulating a realistic full complement of all mRNAs in the cell, including native ones and the heterologous ones.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Kinetic modeling predicts a stimulatory role for ribosome collisions at elongation stall sites in bacteria\" for consideration by eLife. Your article has been reviewed by one of the peer reviewers of the original manuscript, and the evaluation has been overseen by the Reviewing Editor, Alan Hinnebusch, and James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers found the revised version of your manuscript to be substantially improved and have accepted your rebuttal of their comments, with one exception. One of the reviewers remains unconvinced that the agreement between the data and the predictions of the competing models has been analyzed with the appropriate statistical methods, and has described what he/she thinks must be done to support the central claim of the paper in a rigorous, quantitative manner. We ask that you attempt to conduct the requested analysis and provide the results in revised version of the manuscript.\n\nReviewer #3:\n\nI had three main concerns in my original review report:\n\n1) Authors must state that conclusions are limited to stalling caused by aa starvation.\n\n2) Authors must perform statistical comparison of three models (TJ, SAT, CSAT), not merely report mean square error.\n\n3) Authors must perform simulations of the synthetic mRNAs in context of full complement of all other mRNAs (as opposed to in isolation).\n\nThe authors have addressed concern 1 through revised text. The authors do not perform the simulations suggested in concern 3, but argue that their transgenes are expressed at such low-levels that feedback on pool of available ribosomes is negligible. The authors offer additional experiments with integrated transgenes to support this. This is satisfying response. (Although it would still be better to perform the full simulations.)\n\nWith regard to point #2 (statistical comparison of models), the authors have not done much of anything in the way of new analysis, it seems. They do not provide any p-value to compare one model to another. They suggest that RMS is equivalent to reporting the Akaike Information Criterion. Even though all models being considered have the same number of parameters, they have not actually computed the likelihood under each model. The equivalence of AIC and RMS only occurs if the error distribution is the same under all models (eg all normal errors), but in fact the error distribution is surely not normal in these simulations. If the authors wish to use AIC for model comparison then they must actually compute the likelihood of the ML parameters under each model - which involves running an ensemble of simulations at each parameter to set to determine the likelihood of the data under that set of parameters. As it stands, the central claim comparing the TJ SAT and CSAT models rests on an entirely qualitative, non-statistical comparison.\n\nOverall, the study makes a strong contribution. But I hesitate to offer acceptance until the data in support of the central claim have been analyzed statistically.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Kinetic modeling predicts a stimulatory role for ribosome collisions at elongation stall sites in bacteria\" for further consideration at eLife. Your revised article has been favorably evaluated by James Manley as Senior editor, Alan Hinnebusch as Reviewing editor and one reviewer.\n\nThe manuscript has been improved, and both reviewer #3 and the reviewing editor are willing to recommend acceptance, but as you'll see in the review below, reviewer #3 still feels that there is a standard and superior way to provide statistical support in favor of one model versus the other, which you have not pursued. We wanted to give you one more chance to implement his/her suggestions before moving forward to publication, with the idea that you might be able to achieve a manuscript that would meet the most rigorous statistical standards. If you disagree with this reviewer's suggested approach, please provide us with a brief explanation for rejecting it and justifying the approach you have taken instead.\n\nReviewer #3:\n\nMy concern was that the authors did not provide statistical support in favor of one model versus another, given the data. There is a standard way to provide a statistical comparison of stochastic models - which I mentioned in my review, and which the authors have not addressed. What they should do is compute the most-likely parameters under each model, compute the actual likelihood of each model under the ML parameters, and then compare model fit using AIC. They have done nothing of the sort - indeed, they still fit the parameters by least squares (as opposed to maximum likelihood), and they never report the likelihood of the data under the inferred parameters, for any model.\n\nIn response to my critique they undertook extensive ensembles simulations of their models (with fixed parameters inferred by least squares) and they now compare the error distributions of the various models using AIC. Although this procedure seems correct, prima facie, it actually only makes sense if the parameters had been fit by maximum likelihood to begin with.\n\nOverall, I think the paper should be published. The authors have made some attempt to provide statistical model comparison. Whatever deficiencies of this analysis remain, as long as the authors make their data available, anyone can analyze it and draw their own conclusions.\n",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "20615ade-b2cc-48f4-b290-2ff39f59bada",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C1",
+      "claim": "Ribosome stalling on mRNAs can decrease protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome stalling on mRNAs can decrease protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the experimental work presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "ff356b09-53f3-4753-baa8-2f000a9e040b",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C2",
+      "claim": "Ribosomes move at an average speed of 3\u201320 codons per second during translation elongation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomes move at an average speed of 3\u201320 codons per second during translation elongation in vivo (Dalbow and Young, 1975; Bonven and Gull\u00f8v, 1979; Yan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "4f791f02-2be4-4f3b-8bb0-44ce46683659",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C3",
+      "claim": "The typical initiation rate of ribosomes on mRNAs is less than 1 s-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this rate is higher than the typical initiation rate of ribosomes on mRNAs [less than 1 s-1 (Yan et al., 2016; Kennell and Riezman, 1977)], elongation is often assumed to not affect the expression level of most proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "14979ff6-cddf-445d-b7c6-804778e77d7c",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C4",
+      "claim": "Elongation is often assumed to not affect the expression level of most proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this rate is higher than the typical initiation rate of ribosomes on mRNAs [less than 1 s-1 (Yan et al., 2016; Kennell and Riezman, 1977)], elongation is often assumed to not affect the expression level of most proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common assumptions in the field, supported by the logical inference from the rate comparison.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "c7e67812-6fbb-4334-a56f-b1a9b6572bd3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C5",
+      "claim": "The elongation rate of ribosomes can decrease significantly at specific locations on an mRNA due to low abundance of aminoacyl-tRNAs, inhibitory codon pairs or amino acid pairs, nascent peptides interacting strongly with the ribosome exit tunnel, or the presence of RNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the elongation rate of ribosomes can decrease significantly at specific locations on an mRNA due to low abundance of aminoacyl-tRNAs, inhibitory codon pairs or amino acid pairs, nascent peptides interacting strongly with the ribosome exit tunnel, or the presence of RNA-binding proteins (Richter and Coller, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9440250a-8257-4ce2-8830-2de7bc2625fd",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C6",
+      "claim": "Ribosome profiling has enabled the identification of additional factors that induce slowing or stalling of ribosomes during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome profiling \u2014 the deep sequencing of ribosome-protected mRNA fragments \u2014 has enabled the identification of additional factors that induce slowing or stalling of ribosomes during elongation (Ingolia et al., 2009; Ingolia, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on ribosome profiling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9e267d41-0055-4824-b683-0bd33845975b",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C7",
+      "claim": "In the traffic jam model, the duration of ribosome stalling is sufficiently long to induce a queue of trailing ribosomes extending to the start codon, thus decreasing the translation initiation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the widely used traffic jam model (MacDonald et al., 1968), the duration of ribosome stalling is sufficiently long to induce a queue of trailing ribosomes extending to the start codon, thus decreasing the translation initiation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a mechanistic model and is supported by a citation to the original model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "bf5107e2-c650-4f58-8c3b-244711786137",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C8",
+      "claim": "Evidence supporting the traffic jam model has been found in the context of EF-P dependent polyproline stalls in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence supporting this model has been found in the context of EF-P dependent polyproline stalls in E. coli (Hersch et al., 2014; Woolstenhulme et al., 2015), and rare-codon induced pausing in E. coli and yeast (Mitarai et al., 2008; Chu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "56fdf43f-47d6-4ef5-a843-cacc0fe7fd0c",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C9",
+      "claim": "Evidence supporting the traffic jam model has been found in the context of rare-codon induced pausing in E. coli and yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence supporting this model has been found in the context of EF-P dependent polyproline stalls in E. coli (Hersch et al., 2014; Woolstenhulme et al., 2015), and rare-codon induced pausing in E. coli and yeast (Mitarai et al., 2008; Chu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "3af88575-c19f-49c3-a9ed-2f0c231b3af8",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C10",
+      "claim": "In the abortive termination model, ribosome stalling causes premature termination without synthesis of the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In an alternate abortive termination model, ribosome stalling causes premature termination without synthesis of the full-length protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a mechanistic model that is discussed in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "0f330bf8-397d-4dc3-b103-cf0a42f79a48",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C11",
+      "claim": "The abortive termination model is thought to underlie the action of various ribosome rescue factors in E. coli and yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is thought to underlie the action of various ribosome rescue factors in E. coli and yeast (Subramaniam et al., 2014; Choe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "15dbde7d-6b8b-4e90-a6af-28b00b9fba77",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C12",
+      "claim": "Ribosome stalling can affect protein expression indirectly by altering mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ribosome stalling can also affect protein expression indirectly by altering mRNA stability (Presnyak et al., 2015; Radhakrishnan et al., 2016), co-translational protein folding (Chaney and Clark, 2015), or stress-response signaling (Ishimura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "5b78262b-7eee-4353-8fb4-a5d4ab01f011",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C13",
+      "claim": "Ribosome stalling can affect protein expression indirectly by altering co-translational protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ribosome stalling can also affect protein expression indirectly by altering mRNA stability (Presnyak et al., 2015; Radhakrishnan et al., 2016), co-translational protein folding (Chaney and Clark, 2015), or stress-response signaling (Ishimura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "721a9dbe-dcde-42ea-9f4b-a78bae2c2b3f",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C14",
+      "claim": "Ribosome stalling can affect protein expression indirectly by altering stress-response signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ribosome stalling can also affect protein expression indirectly by altering mRNA stability (Presnyak et al., 2015; Radhakrishnan et al., 2016), co-translational protein folding (Chaney and Clark, 2015), or stress-response signaling (Ishimura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "fa62db57-17f4-4e98-99db-9877f218d08c",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C15",
+      "claim": "Certain codons that are cognate to the limiting amino acid decrease protein expression during starvation for single amino acids in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "During starvation for single amino acids in E. coli, certain codons that are cognate to the limiting amino acid decrease protein expression, while the same codons have little or no effect during nutrient-rich growth (Subramaniam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "2814f7fa-2b21-46c8-8fd8-08dbcffe7ab7",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C16",
+      "claim": "Synonymously mutating seven CTG leucine codons in the yellow fluorescent protein gene (yfp) to CTA, CTC, or CTT reduced the synthesis rate of YFP 10\u2013100 fold during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, synonymously mutating seven CTG leucine codons in the yellow fluorescent protein gene (yfp) to CTA, CTC, or CTT reduced the synthesis rate of YFP 10\u2013100 fold during leucine starvation (Subramaniam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "d6c62179-eed6-48f6-aa5a-e90d91aa9bc6",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C17",
+      "claim": "Genome-wide ribosome profiling showed that ribosomes stall at CTA, CTC, and CTT codons during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide ribosome profiling showed that ribosomes stall at CTA, CTC, and CTT codons during leucine starvation, which leads to a traffic jam of trailing ribosomes and abortive termination of translation (Subramaniam et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "19752abd-5fc1-4d6f-9df2-77f099b737b3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C18",
+      "claim": "Ribosome stalling at CTA, CTC, and CTT codons during leucine starvation leads to a traffic jam of trailing ribosomes and abortive termination of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide ribosome profiling showed that ribosomes stall at CTA, CTC, and CTT codons during leucine starvation, which leads to a traffic jam of trailing ribosomes and abortive termination of translation (Subramaniam et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "63f63f9d-7731-41d0-89ea-d9787ae02b61",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C19",
+      "claim": "A single CTA codon at two different locations reduced YFP expression during leucine starvation by 3\u20134 fold relative to a control yfp without CTA codons.",
+      "claim_type": "EXPLICIT",
+      "source": "While YFP expression was similar across all yfp variants during leucine-rich growth, a single CTA codon at two different locations reduced YFP expression during leucine starvation by 3\u20134 fold relative to a control yfp without CTA codons (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "067ea233-771d-479f-abd8-6a4e7bb925d7",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C20",
+      "claim": "Introducing both CTA codons reduced YFP expression by ~6 fold during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing both CTA codons reduced YFP expression by ~6 fold (Figure 1B), and a stretch of 7 CTA codons reduced YFP expression close to background level as observed in our earlier work (Subramaniam et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "858ebc78-769d-4ba9-92a0-cdd26f751107",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C21",
+      "claim": "A stretch of 7 CTA codons reduced YFP expression close to background level during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing both CTA codons reduced YFP expression by ~6 fold (Figure 1B), and a stretch of 7 CTA codons reduced YFP expression close to background level as observed in our earlier work (Subramaniam et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a2ab9b3d-3853-4818-becc-61a84ec19c71",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C22",
+      "claim": "Polysome fractionation of leucine-starved E. coli did not indicate an unambiguous shift of the yfp mRNA to higher polysome fractions when two stall-inducing CTA codons were introduced 475nt from the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "However, polysome fractionation of leucine-starved E. coli did not indicate an unambiguous shift of the yfp mRNA to higher polysome fractions when two stall-inducing CTA codons were introduced 475nt from the start codon (Figure 1C, top vs bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "486eef3e-2817-42cd-aa44-4c7eace35fdb",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C23",
+      "claim": "Previous ribosome density measurements detected traffic jams of only 1\u20132 ribosomes behind stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation agrees with previous ribosome density measurements that detected traffic jams of only 1\u20132 ribosomes behind stalled ribosomes (Subramaniam et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a21a213a-9be0-4bc9-aa68-438236022ad8",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C24",
+      "claim": "Truncated YFP fragments consistent with abortive termination at stall-inducing CTA codons were detected during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected truncated YFP fragments consistent with abortive termination at stall-inducing CTA codons during leucine starvation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D (Western blot).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "e9d1fa08-f6fc-4759-8537-7ba6d181acc4",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C25",
+      "claim": "Previous studies suggested that abortive termination of stalled ribosomes requires cleavage of mRNA near the stall site as an obligatory step.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggested that abortive termination of stalled ribosomes requires cleavage of mRNA near the stall site as an obligatory step (Keiler, 2015; Hayes and Sauer, 2003; Ivanova et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "1816d595-9a72-4024-b88b-7d2117bf88d0",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C26",
+      "claim": "yfp mRNA levels, as measured by quantitative RT-PCR spanning the single CTA codons, did not decrease significantly during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that yfp mRNA levels, as measured by quantitative RT-PCR spanning the single CTA codons, did not decrease significantly during leucine starvation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "062cbcea-1fea-41b3-96ee-5ac022cebb52",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C27",
+      "claim": "Introducing two CTA codons resulted in <2 fold decrease in yfp mRNA levels despite ~6 fold decrease in YFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, introducing two CTA codons resulted in <2 fold decrease in yfp mRNA levels despite ~6 fold decrease in YFP expression (Figure 1E vs 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1E and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "92238550-a01a-406d-8ba2-86ac726d7a7b",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C28",
+      "claim": "Earlier measurements using ribosome profiling and Northern blotting did not find evidence for significant mRNA cleavage or decay upon ribosome stalling at CTA codons during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with earlier measurements using ribosome profiling and Northern blotting that did not find evidence for significant mRNA cleavage or decay upon ribosome stalling at CTA codons during leucine starvation (Subramaniam et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "540d2cf7-33bd-43c9-9128-9cb238fc7ab1",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C29",
+      "claim": "In the SAT model, varying the initiation rate does not modulate the effect of the stall site on protein synthesis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SAT model, varying the initiation rate does not modulate the effect of the stall site on protein synthesis rate (Figure 3A, blue squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "1c9df49f-6617-4565-8e7f-cfbbe7379f64",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C30",
+      "claim": "In the TJ and CSAT models, the effect of the stall site on protein synthesis rate is reduced at lower initiation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the TJ and CSAT models, the effect of the stall site on protein synthesis rate is reduced at lower initiation rates (Figure 3A, green circles and red diamonds).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "007b0d49-68b5-46a6-a2a0-bb61cf4df163",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C31",
+      "claim": "In the traffic jam (TJ) model, additional stall sites had very little effect on protein synthesis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the traffic jam (TJ) model, additional stall sites had very little effect on protein synthesis rate (Figure 3B, green circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "0672272c-568a-4397-9f6f-303987c01505",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C32",
+      "claim": "In the simple abortive termination (SAT) model, protein synthesis rate decreased exponentially with the number of stall sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simple abortive termination (SAT) model, protein synthesis rate decreased exponentially with the number of stall sites (Figure 3B, blue squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "e9d03215-b509-4ffb-bf8e-925d304464cb",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C33",
+      "claim": "In the collision-stimulated abortive termination (CSAT) model, the effect of additional stall sites was intermediate between the TJ and SAT models.",
+      "claim_type": "EXPLICIT",
+      "source": "In the collision-stimulated abortive termination (CSAT) model, the effect of additional stall sites was intermediate between the TJ and SAT models (Figure 3B, red diamonds).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9559427d-9393-48a5-9c07-edf87f2a8ee2",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C34",
+      "claim": "In the SAT model, varying the distance between two stall sites does not modulate the effect of the stall sites on protein synthesis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SAT model, varying the distance between two stall sites does not modulate the effect of the stall sites on protein synthesis rate (Figure 3C, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "5cd6703c-24ad-44f8-87c7-a45c7947c295",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C35",
+      "claim": "In the CSAT model, when the two stall sites are separated by less than a ribosome footprint, then the frequency of collisions at the stall sites increases, thus resulting in the lower protein synthesis rate in this regime.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CSAT model, when the two stall sites are separated by less than a ribosome footprint, then the frequency of collisions at the stall sites increases, thus resulting in the lower protein synthesis rate in this regime (Figure 3C, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a70c70a4-48eb-44ab-8626-acd7153505a7",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C36",
+      "claim": "The effect of a single CTA codon on YFP synthesis rate decreased as the initiation rate of the yfp variants was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of a single CTA codon on YFP synthesis rate decreased as the initiation rate of the yfp variants was reduced (Figure 4, black triangles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "3f5c7f7a-8d38-4d1a-b49e-79b617549cc1",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C37",
+      "claim": "Both the TJ and CSAT models predicted the decreasing effect of the CTA codon with lower initiation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the TJ and CSAT models predicted the decreasing effect of the CTA codon with lower initiation rate (Figure 4, green circles and red diamonds).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "6f1bbfdf-6815-424c-b579-401e7bb88dd4",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C38",
+      "claim": "The predicted YFP synthesis rate from the SAT model was independent of initiation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the predicted YFP synthesis rate from the SAT model was independent of initiation rate (Figure 4, blue squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "0f803f23-a409-4032-bc7b-dd8f0adf0e50",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C39",
+      "claim": "The TJ model systematically overestimated the YFP synthesis rate for 12 of 13 multiple-CTA variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the TJ model systematically overestimated the YFP synthesis rate for 12 of 13 multiple-CTA variants (Figure 5, green circles), while the SAT model systematically underestimated the YFP synthesis rate for all 13 multiple-CTA variants during leucine starvation (Figure 5, blue squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of simulation predictions with experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "2b27ad08-cb35-4b55-8c9d-cc9b68df163a",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C40",
+      "claim": "The SAT model systematically underestimated the YFP synthesis rate for all 13 multiple-CTA variants during leucine starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the TJ model systematically overestimated the YFP synthesis rate for 12 of 13 multiple-CTA variants (Figure 5, green circles), while the SAT model systematically underestimated the YFP synthesis rate for all 13 multiple-CTA variants during leucine starvation (Figure 5, blue squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of simulation predictions with experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "b6a694e6-5e21-44e8-8e1b-6fb760990446",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C41",
+      "claim": "The predicted YFP synthesis rates from the CSAT model were closest to the measured YFP synthesis rates with approximately half the average error of the TJ and SAT models.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the predicted YFP synthesis rates from the CSAT model (Figure 5, red diamonds) were closest to the measured YFP synthesis rates with approximately half the average error of the TJ and SAT models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of simulation predictions with experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "ec7a4841-a1ed-4354-a325-3f28d0ab1b53",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C42",
+      "claim": "Two CTA codons separated by less than a ribosome footprint (d < 10 codons) resulted in lower protein synthesis rate than two CTA codons separated by several ribosome footprints (d > 50 codons).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that two CTA codons separated by less than a ribosome footprint (d < 10 codons) resulted in lower protein synthesis rate than two CTA codons separated by several ribosome footprints (d > 50 codons) (Figure 6, black triangles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "d7a6f71f-017a-4eb9-9d4c-3c920311846e",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C43",
+      "claim": "The CSAT model provided a better fit than either the TJ or SAT models overall for the distance between stall sites experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was in line with the predictions from the TJ and CSAT models (Figure 3C), with the CSAT model providing a better fit than either the TJ or SAT models overall.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of simulation predictions with experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "00734375-61c9-492a-931d-60defce4ee81",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C44",
+      "claim": "The TJ model systematically overestimates the measured YFP synthesis rate (p<10\u201315, one-sided Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the results from all the yfp mutants (N = 94) and assuming independent and normal distribution of residual errors, we conclude that the TJ model systematically overestimates the measured YFP synthesis rate (p<10\u201315, one-sided Student's t-test), while the SAT model systematically underestimates the measured YFP synthesis rate (p<10\u20138, one-sided Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of all experimental data (N=94 mutants).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "57718dfc-b7e5-4151-812f-2c80d2ee7b6b",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C45",
+      "claim": "The SAT model systematically underestimates the measured YFP synthesis rate (p<10\u20138, one-sided Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the results from all the yfp mutants (N = 94) and assuming independent and normal distribution of residual errors, we conclude that the TJ model systematically overestimates the measured YFP synthesis rate (p<10\u201315, one-sided Student's t-test), while the SAT model systematically underestimates the measured YFP synthesis rate (p<10\u20138, one-sided Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of all experimental data (N=94 mutants).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a0db3db4-f7ee-4a54-8fe6-19a66df3ea02",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C46",
+      "claim": "The CSAT model shows no systematic bias (p>0.05, two-sided Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "The CSAT model shows no such bias (p>0.05, two-sided Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of all experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a6634055-b646-4908-be51-68f1659cc2ac",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C47",
+      "claim": "Using the Akaike Information Criterion, there is an Akaike weight >0.999 in favor of the CSAT model over the TJ and SAT models.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the same assumption of normal distribution of residual errors and using the Akaike Information Criterion (Burnham and Anderson, 2013), we find an Akaike weight >0.999 in favor of the CSAT model over the TJ and SAT models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis using the Akaike Information Criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "44f02d84-caef-4d6f-82ec-96666340e8e2",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C48",
+      "claim": "The CSAT model provides a better fit to the measured YFP synthesis rates from the yfp mutants than either the TJ or the SAT models when the initiation rate, the number of stall sites, and the distance between stall sites are systematically varied during starvation for single amino acids in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we conclude that the CSAT model provides a better fit to the measured YFP synthesis rates from the yfp mutants than either the TJ or the SAT models when the initiation rate, the number of stall sites, and the distance between stall sites are systematically varied during starvation for single amino acids in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comprehensive statistical analysis of all experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "41128f0d-3a3c-4353-90af-deb87b170922",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C49",
+      "claim": "Only a small fraction of ribosomes are expected to prematurely terminate from mRNAs without stall sites.",
+      "claim_type": "EXPLICIT",
+      "source": "First, only a small fraction of ribosomes are expected to prematurely terminate from mRNAs without stall sites (Subramaniam et al., 2014; Zhang et al., 2010; Sin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "7cdbf317-7b10-467e-914d-9a56bb4cab53",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C50",
+      "claim": "Predicted protein synthesis rates from reporters without stall sites did not decrease when the abortive termination rate was increased in the CSAT model.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, predicted protein synthesis rates from reporters without stall sites did not decrease when the abortive termination rate was increased in the CSAT model (Figure 7A, top panel, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a70842ab-1f3b-454f-b97d-63dcf095b7da",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C51",
+      "claim": "Protein synthesis rates from reporters without stall sites decreased with increasing abortive termination rate in a SAT model in which abortive termination was not explicitly specified to be selective for stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, protein synthesis rates from reporters without stall sites decreased with increasing abortive termination rate in a SAT model in which abortive termination was not explicitly specified to be selective for stalled ribosomes (Figure 7A, top panel, blue vs. pink).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "f4a2e199-dfea-4ddd-aee2-3570783f2a06",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C52",
+      "claim": "The frequency of abortive termination is known to be robust to over-expression of factors that rescue stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the frequency of abortive termination is known to be robust to over-expression of factors that rescue stalled ribosomes (Moore and Sauer, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "5342d5d0-a585-4243-b5e5-0c2864bd7550",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C53",
+      "claim": "Increasing the abortive termination rate in the CSAT model predicted only a minor effect on protein synthesis rate from an mRNA with a single stall site.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, we found that increasing the abortive termination rate in the CSAT model predicted only a minor effect on protein synthesis rate from an mRNA with a single stall site (Figure 7A, bottom panel, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "1c10b7ec-b18a-4ad5-b2b4-67de21caf76f",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C54",
+      "claim": "In both the selective and non-selective SAT models, protein synthesis rate from an mRNA with a single stall site continuously decreased as the abortive termination rate was increased.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in both the selective and non-selective SAT models, protein synthesis rate from an mRNA with a single stall site continuously decreased as the abortive termination rate was increased (Figure 7A, bottom panel, blue and pink).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "196531be-e1fb-4468-aa00-c2872a424663",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C55",
+      "claim": "Previous ribosome profiling measurements have detected a queue of only a few ribosomes at CTA codons during leucine starvation in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, previous ribosome profiling measurements have detected a queue of only a few ribosomes at CTA codons during leucine starvation in E. coli (Subramaniam et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "8ff383da-5e97-4b89-a615-6b242c86e490",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C56",
+      "claim": "The length of ribosome queues at the stall site predicted by the CSAT model is limited to a few ribosomes even when the stall site is located ~200 codons from the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, the length of ribosome queues at the stall site predicted by the CSAT model is limited to a few ribosomes even when the stall site is located ~200 codons from the start codon (Figure 7B, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "b3583e9b-704f-4f38-aeab-f5dea2f9729d",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C57",
+      "claim": "The TJ model predicts a queue of ~20 ribosomes when stall sites are located ~200 codons from the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the TJ model predicts a queue of ~20 ribosomes when stall sites are located ~200 codons from the start codon (Figure 7B, green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "370df480-1946-4ebf-96f8-242e6baa20c3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C58",
+      "claim": "Ribosome profiling studies have revealed a queue of only a few ribosomes at stall sites in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While queues of ~7 ribosomes have been detected in vitro (Wolin and Walter, 1988), ribosome profiling studies have revealed a queue of only a few ribosomes at stall sites in vivo (Woolstenhulme et al., 2015; Subramaniam et al., 2014; Guydosh and Green, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "22a601fd-5232-4668-964c-c990f6c4bfa1",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C59",
+      "claim": "Queues of ~7 ribosomes have been detected in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While queues of ~7 ribosomes have been detected in vitro (Wolin and Walter, 1988), ribosome profiling studies have revealed a queue of only a few ribosomes at stall sites in vivo (Woolstenhulme et al., 2015; Subramaniam et al., 2014; Guydosh and Green, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "e5b1b0db-4d28-4598-aff3-7b98ac76c376",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C60",
+      "claim": "Recent studies on EF-P dependent pauses in bacteria and rare-codon dependent pauses in yeast suggested that the TJ model underlies the decreased protein expression when stall sites are over 100 codons away from the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, recent studies on EF-P dependent pauses in bacteria and rare-codon dependent pauses in yeast suggested that the TJ model underlies the decreased protein expression when stall sites are over 100 codons away from the start codon (Hersch et al., 2014; Chu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "f3495558-2599-4132-8328-60f4c76d4adc",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C61",
+      "claim": "Collision-stimulated abortive termination is a plausible alternative mechanism to the traffic jam model proposed in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, collision-stimulated abortive termination is a plausible alternative mechanism to the traffic jam model proposed in previous studies (Hersch et al., 2014; Chu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the authors' modeling and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "47e4b9bb-c929-4017-93a6-d65ef88bcc83",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C62",
+      "claim": "Simple kinetic partitioning between normal elongation and abortive termination has been proposed as a possible mechanism for how ribosome rescue factors might act at ribosomes that are stalled within an mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple kinetic partitioning between normal elongation and abortive termination has been proposed as a possible mechanism for how ribosome rescue factors might act at ribosomes that are stalled within an mRNA (Brandman and Hegde, 2016; Shao and Hegde, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "5fd7a63d-df9f-43f1-929f-513f24cc50b7",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C63",
+      "claim": "A non-selective mechanism of abortive termination will result in decreased protein expression from mRNAs that do not have stall sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our modeling indicates that this non-selective mechanism of abortive termination will result in decreased protein expression from mRNAs that do not have stall sites (Figure 7A, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "ab74eddc-63d6-48a6-920d-73457332e10b",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C64",
+      "claim": "Ribosome collisions during amino acid starvation could stimulate abortive termination through several mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome collisions during amino acid starvation could stimulate abortive termination through several mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "45dd6fca-14e4-4672-bf7c-712757788313",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C65",
+      "claim": "Ribosome collisions could either stimulate spontaneous drop-off of stalled ribosomes, or they could stimulate the activity of quality control pathways such as the tmRNA and the ArfA systems that rescue stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, ribosome collisions could either stimulate spontaneous drop-off of stalled ribosomes, or they could stimulate the activity of quality control pathways such as the tmRNA and the ArfA systems that rescue stalled ribosomes (Keiler, 2015; Shoemaker and Green, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, with citations to relevant background literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9f078975-31d1-4676-80c0-0552a5b9a386",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C66",
+      "claim": "Ribosome collisions might allow the quality control pathway to selectively recognize ribosomes that have been stalled for an extended duration over ribosomes that are transiently stalled due to the stochasticity of normal elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, ribosome collisions might allow the quality control pathway to selectively recognize ribosomes that have been stalled for an extended duration over ribosomes that are transiently stalled due to the stochasticity of normal elongation (Miller and Buskirk, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about a possible mechanism, with a citation to relevant background literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "1cac6189-10da-4185-b5ce-e8bce8feb9bc",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C67",
+      "claim": "The frequency of ribosome collisions can provide a natural timer for achieving selectivity of quality control pathways towards stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, the frequency of ribosome collisions can provide a natural timer for achieving selectivity of quality control pathways towards stalled ribosomes (Shao and Hegde, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' modeling results, with a citation to relevant background literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "90a920ef-4c93-4572-948b-91c5f69c7736",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C68",
+      "claim": "The robustness of the CSAT model to changes in the abortive termination rate can buffer against cell-to-cell variation in the concentration of quality control factors that mediate abortive termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the robustness of the CSAT model to changes in the abortive termination rate (Figure 7A, bottom panel) can buffer against cell-to-cell variation in the concentration of quality control factors that mediate abortive termination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the simulation results shown in Figure 7A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9f6ff793-ec10-41e5-8878-a5b26a03b7d7",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C69",
+      "claim": "Ribosome collisions might also have a role in stimulating the activity of eukaryotic translational quality control pathways such as No-Go mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ribosome collisions might also have a role in stimulating the activity of eukaryotic translational quality control pathways (C. Simms and H. Zaher, personal communication) such as No-Go mRNA decay (Doma and Parker, 2006), where the kinetic events leading to recognition of stalled ribosomes remain poorly defined (Shoemaker and Green, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms in eukaryotes, with citations to relevant background literature and a personal communication.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "fdc11d4e-49ea-4fad-85cd-3f672a719425",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C70",
+      "claim": "This general role for ribosome collisions in translational quality control could have arisen during evolution to minimize the idling of translation-competent ribosomes on mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This general role for ribosome collisions in translational quality control could have arisen during evolution to minimize the idling of translation-competent ribosomes on mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "06bb5b31-bfed-4844-ad97-235d7fcec231",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C71",
+      "claim": "The measurements are quantitatively inconsistent with the traffic jam model that blocks initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements are quantitatively inconsistent with two widely-used kinetic models for stalled ribosomes: ribosome traffic jams that block initiation, and abortive (premature) termination of stalled ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comprehensive experimental and modeling analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "251d84a7-5dde-4591-b750-6202f1d2c6f3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C72",
+      "claim": "The measurements are quantitatively inconsistent with the simple abortive termination model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements are quantitatively inconsistent with two widely-used kinetic models for stalled ribosomes: ribosome traffic jams that block initiation, and abortive (premature) termination of stalled ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comprehensive experimental and modeling analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "3075dd8f-13d3-4e09-80e5-227a10b8545f",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C73",
+      "claim": "The measurements support a model in which collision with a trailing ribosome causes abortive termination of the stalled ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, our measurements support a model in which collision with a trailing ribosome causes abortive termination of the stalled ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comprehensive experimental and modeling analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "5c9f84ab-b412-4ed8-8bb9-ac9dd2136b74",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C74",
+      "claim": "In the computational analysis, ribosome collisions selectively stimulate abortive termination without fine-tuning of kinetic rate parameters at ribosome stall sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In our computational analysis, ribosome collisions selectively stimulate abortive termination without fine-tuning of kinetic rate parameters at ribosome stall sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9fa01873-8330-4836-89d4-aa4aacb7d530",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C75",
+      "claim": "Ribosome collisions serve as a robust timer for translational quality control pathways to recognize stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that ribosome collisions serve as a robust timer for translational quality control pathways to recognize stalled ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the authors' modeling and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "c03e1c31-8614-4f23-aecd-7e354511c8c8",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C76",
+      "claim": "The selectivity of the CSAT model towards stalled ribosomes naturally arises from the requirement for ribosome collisions to cause abortive termination.",
+      "claim_type": "EXPLICIT",
+      "source": "This selectivity towards stalled ribosomes naturally arises in the CSAT model from the requirement for ribosome collisions to cause abortive termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structure of the CSAT model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "9d6cf0ed-e187-467f-b3c3-228478d5a154",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "claim_id": "C77",
+      "claim": "The robustness of the CSAT model to varying abortive termination rates arises because the frequency of ribosome collisions limit the actual rate of abortive termination at stall sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The robustness of the CSAT model to varying abortive termination rates arises because the frequency of ribosome collisions limit the actual rate of abortive termination at stall sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structure of the CSAT model and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single and multiple CTA codons reduce YFP expression during leucine starvation by 3-6 fold without causing significant mRNA decay or unambiguous polysome shifts. Truncated YFP fragments consistent with abortive termination were detected, but mRNA levels remained largely stable (<2 fold decrease despite ~6 fold protein decrease).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C28 provide converging experimental evidence from fluorescence measurements (C19-C21), polysome profiling (C22-C23), Western blotting (C24), and qRT-PCR (C26-C28). The data consistently show protein reduction without proportional mRNA decay, supporting abortive termination without extensive mRNA cleavage. Multiple independent methods strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "f5b2686b-3453-4daf-8635-f8fc644e408d",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational modeling predicts distinct behaviors for three kinetic models (TJ, SAT, CSAT) when varying initiation rate, number of stall sites, and distance between stall sites. The CSAT model shows intermediate behavior between TJ and SAT models, with collision-dependent effects on protein synthesis rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 describe simulation predictions from well-defined computational models (Figure 2). The predictions are internally consistent and follow logically from the model assumptions. However, the validity of these predictions depends on the appropriateness of the model assumptions and parameter choices, which are tested experimentally in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "4b810a92-362d-4f80-91a2-db9877da80dc",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experimental measurements show that the effect of a single CTA codon on YFP synthesis decreases with lower initiation rates. Both TJ and CSAT models predict this trend, while the SAT model predicts initiation-rate independence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by experimental data in Figure 4 showing clear trends with initiation rate variation. The comparison between experimental data and model predictions is quantitative (RMS error reported). This result discriminates between SAT and the other two models, though it cannot distinguish TJ from CSAT.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "d01e8d43-ad0d-45fc-93bf-f6bff5e6be7a",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When testing multiple CTA variants, the TJ model systematically overestimates YFP synthesis rate (12 of 13 variants), the SAT model systematically underestimates (all 13 variants), while the CSAT model provides the best fit with approximately half the average error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by comprehensive experimental data from 13 multiple-CTA variants (Figure 5). The systematic biases in TJ and SAT models are clear, and the CSAT model's superior performance is quantified by RMS error. This is a key discriminating result among the three models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "f9b8868c-a334-40f4-9c64-7c4ebac63f02",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two CTA codons separated by less than a ribosome footprint (d < 10 codons) result in lower protein synthesis than codons separated by several footprints (d > 50 codons). The CSAT model provides a better overall fit than TJ or SAT models for this distance-dependent effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by experimental data in Figure 6 showing distance-dependent effects. The CSAT model's better fit is consistent with its collision-based mechanism. However, the number of data points is limited compared to other experiments, and the differences between models are less pronounced than in the multiple-stall-site experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "2a738a9c-198c-4f15-af3a-c3ce5606a683",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Statistical analysis of all 94 yfp mutants shows that the TJ model systematically overestimates (p<10\u207b\u00b9\u2075), SAT systematically underestimates (p<10\u207b\u2078), while CSAT shows no systematic bias (p>0.05). Akaike Information Criterion analysis strongly favors CSAT (weight >0.999).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 provide rigorous statistical support for the CSAT model using appropriate tests (Student's t-test, AIC). The large sample size (N=94) and highly significant p-values strengthen the conclusions. However, the analysis assumes independent and normally distributed residual errors, which may not be fully justified given potential correlations between variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "66137a78-8c9d-4a7c-86e0-f902330dfa55",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CSAT model predicts that protein synthesis from mRNAs without stall sites remains stable when abortive termination rate increases, while non-selective SAT models predict decreased synthesis. The CSAT model also shows robustness to varying abortive termination rates at single stall sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 and C63 are supported by simulation results in Figure 7A. These predictions demonstrate important properties of the CSAT model (selectivity and robustness) that distinguish it from SAT models. However, these are computational predictions that are not directly validated experimentally in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CSAT model predicts ribosome queues of only a few ribosomes at stall sites ~200 codons from the start codon, consistent with previous ribosome profiling measurements. The TJ model predicts much longer queues (~20 ribosomes) inconsistent with in vivo observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are supported by simulation results (Figure 7B) and citations to previous ribosome profiling studies. The CSAT model's consistency with observed short queues is an important validation. However, the cited ribosome profiling data (C55, C58) are from previous studies, not new experimental validation in this work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "d5af2bbb-48d5-4107-8384-3d4ecbe5dc12",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The measurements are quantitatively inconsistent with both the traffic jam model and simple abortive termination model, but support a collision-stimulated abortive termination (CSAT) model where trailing ribosome collisions cause abortive termination of stalled ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 represent the main conclusions of the paper, supported by the comprehensive experimental and modeling analysis (C48 and all previous results). The conclusion is well-supported by systematic testing of three models against 94 variants with strong statistical evidence. However, the conclusion is limited to the specific context of amino acid starvation in E. coli.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "e96e697b-6445-46e0-bfec-df615d18abb0",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In the CSAT model, ribosome collisions selectively stimulate abortive termination without fine-tuning of kinetic parameters. The selectivity arises naturally from the collision requirement, and robustness arises because collision frequency limits the actual abortive termination rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C76-C77 describe emergent properties of the CSAT model supported by the computational analysis. These properties arise from the model structure and are demonstrated by simulations (Figure 7). The claims are logical inferences from the model behavior, though they represent interpretations rather than direct experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "e4e5cadf-2c50-48a1-a06b-2c2e8ec86018",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ribosome collisions serve as a robust timer for translational quality control pathways to recognize stalled ribosomes. The collision frequency provides selectivity toward stalled ribosomes and buffers against cell-to-cell variation in quality control factor concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C67-C68 represent mechanistic proposals based on the CSAT model's properties. These are well-reasoned inferences from the modeling results (particularly Figure 7A) and provide a conceptual framework for understanding quality control. However, these are interpretive claims not directly tested by experiments in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "880da326-84f0-49c4-86c0-1c8204febde3",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ribosome collisions could stimulate abortive termination through multiple mechanisms, including spontaneous drop-off or activation of quality control pathways (tmRNA, ArfA). This mechanism might extend to eukaryotic quality control pathways and could have evolved to minimize ribosome idling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66, C69-C70 are explicitly speculative (using 'could' and 'might') about molecular mechanisms and evolutionary implications. While these speculations are reasonable given the results, they are not tested in this study. The claims appropriately cite relevant literature but represent hypotheses for future work rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "3bf8e90f-1282-44e7-8034-8b7fb5d7c91f",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous studies suggested the traffic jam model underlies decreased protein expression when stall sites are >100 codons from the start codon, but collision-stimulated abortive termination is a plausible alternative mechanism that better explains the observed short ribosome queues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 appropriately cite previous work and propose CSAT as an alternative explanation. The proposal is supported by this study's findings that both TJ and CSAT predict initiation rate dependence, but only CSAT predicts short queues consistent with observations. This represents a reinterpretation of prior results in light of new evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "0c033cca-4898-4c52-8975-a87a67cc7fe4",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Only a small fraction of ribosomes prematurely terminate from mRNAs without stall sites, and abortive termination frequency is robust to overexpression of rescue factors. Simple kinetic partitioning has been proposed as a mechanism for ribosome rescue factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C52, C62 cite previous studies to establish context for the modeling work. These are background claims supported by appropriate citations. They provide the empirical constraints that motivated the CSAT model's design (selectivity and robustness properties).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    },
+    {
+      "id": "a0c44975-7554-43fe-8c95-f768fe306921",
+      "content_id": "3927ec8d-6207-4f3a-8352-ab10df49860f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context on ribosome elongation rates, stalling mechanisms, and existing models (traffic jam and abortive termination) from prior literature. Previous work by the authors showed that certain codons decrease protein expression during amino acid starvation through both traffic jams and abortive termination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C18, C23, C25, C28 establish the scientific context through citations to prior literature, including the authors' previous work. These claims are appropriately supported by citations and provide the foundation for the current study. They represent established knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:05:34.734084Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63f63f9d-7731-41d0-89ea-d9787ae02b61",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "067ea233-771d-479f-abd8-6a4e7bb925d7",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "858ebc78-769d-4ba9-92a0-cdd26f751107",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "a2ab9b3d-3853-4818-becc-61a84ec19c71",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "486eef3e-2817-42cd-aa44-4c7eace35fdb",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "a21a213a-9be0-4bc9-aa68-438236022ad8",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "1816d595-9a72-4024-b88b-7d2117bf88d0",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "062cbcea-1fea-41b3-96ee-5ac022cebb52",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "92238550-a01a-406d-8ba2-86ac726d7a7b",
+      "result_id": "7f9f87fe-ea7d-43d1-a8a4-71ecdb044a2d"
+    },
+    {
+      "claim_id": "540d2cf7-33bd-43c9-9128-9cb238fc7ab1",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "1c9df49f-6617-4565-8e7f-cfbbe7379f64",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "007b0d49-68b5-46a6-a2a0-bb61cf4df163",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "0672272c-568a-4397-9f6f-303987c01505",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "e9d03215-b509-4ffb-bf8e-925d304464cb",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "9559427d-9393-48a5-9c07-edf87f2a8ee2",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "5cd6703c-24ad-44f8-87c7-a45c7947c295",
+      "result_id": "f5b2686b-3453-4daf-8635-f8fc644e408d"
+    },
+    {
+      "claim_id": "a70c70a4-48eb-44ab-8626-acd7153505a7",
+      "result_id": "4b810a92-362d-4f80-91a2-db9877da80dc"
+    },
+    {
+      "claim_id": "3f5c7f7a-8d38-4d1a-b49e-79b617549cc1",
+      "result_id": "4b810a92-362d-4f80-91a2-db9877da80dc"
+    },
+    {
+      "claim_id": "6f1bbfdf-6815-424c-b579-401e7bb88dd4",
+      "result_id": "4b810a92-362d-4f80-91a2-db9877da80dc"
+    },
+    {
+      "claim_id": "0f803f23-a409-4032-bc7b-dd8f0adf0e50",
+      "result_id": "d01e8d43-ad0d-45fc-93bf-f6bff5e6be7a"
+    },
+    {
+      "claim_id": "2b27ad08-cb35-4b55-8c9d-cc9b68df163a",
+      "result_id": "d01e8d43-ad0d-45fc-93bf-f6bff5e6be7a"
+    },
+    {
+      "claim_id": "b6a694e6-5e21-44e8-8e1b-6fb760990446",
+      "result_id": "d01e8d43-ad0d-45fc-93bf-f6bff5e6be7a"
+    },
+    {
+      "claim_id": "ec7a4841-a1ed-4354-a325-3f28d0ab1b53",
+      "result_id": "f9b8868c-a334-40f4-9c64-7c4ebac63f02"
+    },
+    {
+      "claim_id": "d7a6f71f-017a-4eb9-9d4c-3c920311846e",
+      "result_id": "f9b8868c-a334-40f4-9c64-7c4ebac63f02"
+    },
+    {
+      "claim_id": "00734375-61c9-492a-931d-60defce4ee81",
+      "result_id": "2a738a9c-198c-4f15-af3a-c3ce5606a683"
+    },
+    {
+      "claim_id": "57718dfc-b7e5-4151-812f-2c80d2ee7b6b",
+      "result_id": "2a738a9c-198c-4f15-af3a-c3ce5606a683"
+    },
+    {
+      "claim_id": "a0db3db4-f7ee-4a54-8fe6-19a66df3ea02",
+      "result_id": "2a738a9c-198c-4f15-af3a-c3ce5606a683"
+    },
+    {
+      "claim_id": "a6634055-b646-4908-be51-68f1659cc2ac",
+      "result_id": "2a738a9c-198c-4f15-af3a-c3ce5606a683"
+    },
+    {
+      "claim_id": "44f02d84-caef-4d6f-82ec-96666340e8e2",
+      "result_id": "2a738a9c-198c-4f15-af3a-c3ce5606a683"
+    },
+    {
+      "claim_id": "7cdbf317-7b10-467e-914d-9a56bb4cab53",
+      "result_id": "66137a78-8c9d-4a7c-86e0-f902330dfa55"
+    },
+    {
+      "claim_id": "a70842ab-1f3b-454f-b97d-63dcf095b7da",
+      "result_id": "66137a78-8c9d-4a7c-86e0-f902330dfa55"
+    },
+    {
+      "claim_id": "5342d5d0-a585-4243-b5e5-0c2864bd7550",
+      "result_id": "66137a78-8c9d-4a7c-86e0-f902330dfa55"
+    },
+    {
+      "claim_id": "1c10b7ec-b18a-4ad5-b2b4-67de21caf76f",
+      "result_id": "66137a78-8c9d-4a7c-86e0-f902330dfa55"
+    },
+    {
+      "claim_id": "5fd7a63d-df9f-43f1-929f-513f24cc50b7",
+      "result_id": "66137a78-8c9d-4a7c-86e0-f902330dfa55"
+    },
+    {
+      "claim_id": "8ff383da-5e97-4b89-a615-6b242c86e490",
+      "result_id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3"
+    },
+    {
+      "claim_id": "b3583e9b-704f-4f38-aeab-f5dea2f9729d",
+      "result_id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3"
+    },
+    {
+      "claim_id": "196531be-e1fb-4468-aa00-c2872a424663",
+      "result_id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3"
+    },
+    {
+      "claim_id": "370df480-1946-4ebf-96f8-242e6baa20c3",
+      "result_id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3"
+    },
+    {
+      "claim_id": "22a601fd-5232-4668-964c-c990f6c4bfa1",
+      "result_id": "1066e7eb-b8ce-4e52-92dc-0493c0c4d7d3"
+    },
+    {
+      "claim_id": "06bb5b31-bfed-4844-ad97-235d7fcec231",
+      "result_id": "d5af2bbb-48d5-4107-8384-3d4ecbe5dc12"
+    },
+    {
+      "claim_id": "251d84a7-5dde-4591-b750-6202f1d2c6f3",
+      "result_id": "d5af2bbb-48d5-4107-8384-3d4ecbe5dc12"
+    },
+    {
+      "claim_id": "3075dd8f-13d3-4e09-80e5-227a10b8545f",
+      "result_id": "d5af2bbb-48d5-4107-8384-3d4ecbe5dc12"
+    },
+    {
+      "claim_id": "44f02d84-caef-4d6f-82ec-96666340e8e2",
+      "result_id": "d5af2bbb-48d5-4107-8384-3d4ecbe5dc12"
+    },
+    {
+      "claim_id": "5c9f84ab-b412-4ed8-8bb9-ac9dd2136b74",
+      "result_id": "e96e697b-6445-46e0-bfec-df615d18abb0"
+    },
+    {
+      "claim_id": "c03e1c31-8614-4f23-aecd-7e354511c8c8",
+      "result_id": "e96e697b-6445-46e0-bfec-df615d18abb0"
+    },
+    {
+      "claim_id": "9d6cf0ed-e187-467f-b3c3-228478d5a154",
+      "result_id": "e96e697b-6445-46e0-bfec-df615d18abb0"
+    },
+    {
+      "claim_id": "9fa01873-8330-4836-89d4-aa4aacb7d530",
+      "result_id": "e4e5cadf-2c50-48a1-a06b-2c2e8ec86018"
+    },
+    {
+      "claim_id": "1cac6189-10da-4185-b5ce-e8bce8feb9bc",
+      "result_id": "e4e5cadf-2c50-48a1-a06b-2c2e8ec86018"
+    },
+    {
+      "claim_id": "90a920ef-4c93-4572-948b-91c5f69c7736",
+      "result_id": "e4e5cadf-2c50-48a1-a06b-2c2e8ec86018"
+    },
+    {
+      "claim_id": "ab74eddc-63d6-48a6-920d-73457332e10b",
+      "result_id": "880da326-84f0-49c4-86c0-1c8204febde3"
+    },
+    {
+      "claim_id": "45dd6fca-14e4-4672-bf7c-712757788313",
+      "result_id": "880da326-84f0-49c4-86c0-1c8204febde3"
+    },
+    {
+      "claim_id": "9f078975-31d1-4676-80c0-0552a5b9a386",
+      "result_id": "880da326-84f0-49c4-86c0-1c8204febde3"
+    },
+    {
+      "claim_id": "9f6ff793-ec10-41e5-8878-a5b26a03b7d7",
+      "result_id": "880da326-84f0-49c4-86c0-1c8204febde3"
+    },
+    {
+      "claim_id": "fdc11d4e-49ea-4fad-85cd-3f672a719425",
+      "result_id": "880da326-84f0-49c4-86c0-1c8204febde3"
+    },
+    {
+      "claim_id": "e5b1b0db-4d28-4598-aff3-7b98ac76c376",
+      "result_id": "3bf8e90f-1282-44e7-8034-8b7fb5d7c91f"
+    },
+    {
+      "claim_id": "f3495558-2599-4132-8328-60f4c76d4adc",
+      "result_id": "3bf8e90f-1282-44e7-8034-8b7fb5d7c91f"
+    },
+    {
+      "claim_id": "41128f0d-3a3c-4353-90af-deb87b170922",
+      "result_id": "0c033cca-4898-4c52-8975-a87a67cc7fe4"
+    },
+    {
+      "claim_id": "f4a2e199-dfea-4ddd-aee2-3570783f2a06",
+      "result_id": "0c033cca-4898-4c52-8975-a87a67cc7fe4"
+    },
+    {
+      "claim_id": "47e4b9bb-c929-4017-93a6-d65ef88bcc83",
+      "result_id": "0c033cca-4898-4c52-8975-a87a67cc7fe4"
+    },
+    {
+      "claim_id": "ff356b09-53f3-4753-baa8-2f000a9e040b",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "4f791f02-2be4-4f3b-8bb0-44ce46683659",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "14979ff6-cddf-445d-b7c6-804778e77d7c",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "c7e67812-6fbb-4334-a56f-b1a9b6572bd3",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "9440250a-8257-4ce2-8830-2de7bc2625fd",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "9e267d41-0055-4824-b683-0bd33845975b",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "bf5107e2-c650-4f58-8c3b-244711786137",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "56fdf43f-47d6-4ef5-a843-cacc0fe7fd0c",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "3af88575-c19f-49c3-a9ed-2f0c231b3af8",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "0f330bf8-397d-4dc3-b103-cf0a42f79a48",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "15dbde7d-6b8b-4e90-a6af-28b00b9fba77",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "5b78262b-7eee-4353-8fb4-a5d4ab01f011",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "721a9dbe-dcde-42ea-9f4b-a78bae2c2b3f",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "fa62db57-17f4-4e98-99db-9877f218d08c",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "2814f7fa-2b21-46c8-8fd8-08dbcffe7ab7",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "d6c62179-eed6-48f6-aa5a-e90d91aa9bc6",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "19752abd-5fc1-4d6f-9df2-77f099b737b3",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "486eef3e-2817-42cd-aa44-4c7eace35fdb",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "e9d1fa08-f6fc-4759-8537-7ba6d181acc4",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    },
+    {
+      "claim_id": "92238550-a01a-406d-8ba2-86ac726d7a7b",
+      "result_id": "a0c44975-7554-43fe-8c95-f768fe306921"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C64",
+      "C72",
+      "C73",
+      "C74",
+      "C79"
+    ],
+    "result": "The resource-rational model proposes that the brain minimizes a weighted sum of behavioral and neural encoding costs, and predicts that set size effects are mediated by probing probability. The model predicts three regimes of optimal encoding strategy based on probing probability, and set size effects emerge through the coupling between set size N and probing probability pi (typically pi=1/N in experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C64, and C72-C74 establish the theoretical framework and its key prediction that set size effects are mediated by probing probability. This is supported by mathematical derivations (C64 proven in Appendix 1) and is consistent with prior empirical findings from Palmer et al. (1993) and Emrich et al. (2017) as noted in C76-C79. The theoretical predictions are logically derived from the cost minimization framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The resource-rational model accounts well for effects of both set size and probing probability on encoding precision across nine delayed-estimation experiments (E1-E9), performing comparably to or better than existing descriptive models while providing a principled theoretical explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C18, and C52-C60 collectively demonstrate strong model performance through multiple validation approaches: AIC comparisons show the model performs as well as the best descriptive power-law model (C52, \u0394AIC=5.27\u00b10.70) and substantially better than fixed-resource models (C18, C53); cross-validation confirms AIC results (C58); and visual fits to error distributions are good (C59-C60). The model achieves this with relatively few parameters while providing theoretical motivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C22",
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "The total amount of invested resource varies non-monotonically with set size, peaking around set size 3 in experiments E2 and E4-E6. This prediction was confirmed in experiments E7-E9 where the peak occurred at a probing probability of approximately 0.384, close to the predicted value of 0.358\u00b10.026.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C5 report strong Bayesian evidence for non-monotonicity (BF+0=1.05\u00d710^7 for N=3 vs N=1; BF+0=4.02\u00d710^2 for N=3 vs N=6). The prediction was validated across independent experiments (C24-C25, C29), with Bayesian t-test supporting no difference between observed and predicted peak (BF01=4.27). Claim C22 notes this is a novel finding. This represents a key distinguishing prediction of the resource-rational model versus fixed-resource or monotonic power-law models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The resource-rational model successfully accounts for effects of probing probability on encoding precision in experiments E7-E9, where probing probability was varied independently of set size. The model outperforms the proposal by Emrich et al. but cannot be reliably distinguished from Bays' fixed-resource model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 show the model fits the probing probability effects well. C30-C31 confirm the model accounts for both set size and probing probability effects with the same framework. Model comparisons (C61-C63) show substantial advantage over Emrich et al.'s model (\u0394AIC=18.0\u00b13.9) but negligible difference from Bays' model (\u0394AIC=1.8\u00b12.5). While the model comparison between resource-rational and Bays' fixed-resource model is inconclusive, the non-monotonicity evidence (previous result) provides additional support for resource optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model predicts it can be optimal to encode only a subset or none of the task-relevant items. For the variable-precision model, the threshold probing probability p0 below which no resource is invested is estimated at 8.86\u00b10.54%, and 8 of 47 subjects showed evidence of ignoring items with low probing probability. However, the model cannot explain why subjects sometimes encode only a subset of items when all items have equal probing probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C37 provide evidence that some subjects (8/47) may ignore items with very low probing probability, with uniform error distributions supporting this interpretation. However, C40-C41 identify a significant limitation: the model makes an 'all or none' prediction for equal probing probabilities, which contradicts empirical findings (e.g., Adam et al. 2017 showing subjects encoded ~half of 6 items). This limitation undermines the generality of the result, though it may apply in specific contexts with unequal probing probabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model predicts non-monotonic effects of incentive manipulations on encoding precision, with no resource investment when feedback thresholds are very small or very large. Simulations suggest that previous null results from Zhang and Luck (2011) and Nassar et al. (2018) may be explained by insufficiently strong experimental manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 and C108 present model predictions and post-hoc interpretations of prior null results, but these are based on simulations rather than new empirical tests. While C109 cites Fougnie et al. (2016) as supporting evidence with stronger manipulations, the model's predictions for incentive effects have not been directly tested in the current work. The interpretation of prior null results is speculative and would require prospective experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In simulations of a whole-display change detection task (a global task), the model predicts that at N=2, the optimal strategy depends on reward level: encode neither item when reward is very low, encode both when reward is high, and encode only one item at intermediate reward levels. When items are encoded, they should receive equal resource.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 describe simulation results for a change detection task, demonstrating the model can be extended to global tasks. However, these are purely theoretical predictions shown in Figure 5B-C without empirical validation. The authors acknowledge computational intractability for larger set sizes and rely on an unproven conjecture (C96) that all non-zero resource values should be equal. Without empirical testing, these predictions remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C99"
+    ],
+    "result": "The findings raise the possibility that cognitive limitations in visual working memory arise from rational cost minimization rather than from fixed constraints on available resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C99 present a broad theoretical interpretation of the findings. While the model provides a normative framework and fits data well, the evidence is insufficient to definitively establish that cognitive limitations arise from cost minimization rather than constraints. The model comparison with Bays' fixed-resource model was inconclusive (C62), and several limitations are acknowledged (C100-C102). This interpretation is speculative and represents a theoretical perspective rather than a firmly established conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The theoretical framework is built on established principles: neural coding is costly, Fisher information provides a lower bound on estimator variance, and there is trial-to-trial variability in encoding precision. For Poisson-like variability, Fisher information is proportional to neural firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14, and C16 cite well-established principles from neuroscience and information theory with appropriate references. C13 is a logical consequence of the framework. C15 cites empirical evidence for precision variability. These foundational assumptions are well-supported by prior literature and provide a reasonable basis for the model, though the specific choice of linear neural cost (C16) is one of several possible formulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Divisive normalization is proposed as a likely neural mechanism for implementing the optimal resource allocation policy. Empirical work shows neural activity decreases with set size in lateral intraparietal cortex and superior colliculus, consistent with model predictions. The model predicts a non-monotonic relation between population-level spiking activity and set size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is speculative about mechanism, though supported by citations. C46-C47 cite relevant empirical findings consistent with the model. However, C48's prediction of non-monotonic neural activity has not been tested. The mechanistic proposals are reasonable but remain hypothetical without direct experimental validation of the specific predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The theory might extend beyond working memory to attention tasks and could explain developmental changes in working memory capacity through improvements in coding efficiency during childhood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C51 are explicitly speculative (\"might apply,\" \"speculative answer\"). C50 cites developmental findings but C51's explanation via coding efficiency is untested. These represent interesting theoretical extensions but lack empirical support and are acknowledged as speculative by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work has established that encoding precision decreases with set size, and while fixed-resource models predict inverse proportionality (often inconsistent with data), power-law models fit data well but lack principled motivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 accurately summarize prior literature with appropriate citations. C1 describes a well-established empirical finding. C8-C10 correctly characterize the predictions and limitations of existing models, providing motivation for the current work. These claims about prior work are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "The model assumes estimation errors follow a Von Mises distribution (standard for circular variables), and that the behavioral cost function is determined by internal incentives since subjects perform well even without external rewards. The expected total cost per item has a unique minimum, and optimal resource increases with probing probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C81 describes a standard modeling assumption for circular variables. C82-C83 make reasonable observations about human behavior in psychophysical tasks. C86-C87 describe mathematical properties of the cost function shown in Figure 2D. These modeling choices and mathematical properties are appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The model has several acknowledged limitations: encoding precision is fundamentally limited by sensory input quality and neural noise; the brain has finite resources imposing an upper limit; task-irrelevant stimuli may be automatically encoded; and variability in resource assignment may be partly systematic or result from costs of maintaining equal assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 and C105 acknowledge important limitations and boundary conditions of the theory, supported by appropriate citations. These represent honest assessments of where the model may not fully capture biological reality. The authors appropriately discuss how these limitations could be incorporated into future versions of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The estimated resource values in the non-parametric model closely match optimal values in the rational model (Figure 3C). Prior work by Palmer et al. (1993) and Emrich et al. (2017) found that item relevance and probing probability are better predictors of performance than set size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C19 reports good agreement between non-parametric and rational model estimates, shown in Figure 3C. C76-C78 accurately cite prior empirical findings that support the model's key prediction about mediation by probing probability. These provide convergent evidence for the model's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Data from experiments E1-E7 and Matlab code for model fitting and simulations are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C110 provides a data availability statement with a DOI link. This supports reproducibility and is a straightforward factual claim about data sharing.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1334 @@
+{
+  "submission": {
+    "id": "411ad96a-71df-4a78-914c-5296fcc37cde",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:55:11.331474Z",
+    "updated_at": "2025-12-01T22:55:11.331474Z"
+  },
+  "content": [
+    {
+      "id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "submission_id": "411ad96a-71df-4a78-914c-5296fcc37cde",
+      "content_type": "manuscript",
+      "content_text": "# Detection of human disease conditions by single-cell morpho-rheological phenotyping of blood\n\n## Authors\n\n- Nicole Toepfner<sup>1</sup>\n- Christoph Herold<sup>1</sup>\n- Oliver Otto<sup>1</sup>\n- Philipp Rosendahl<sup>1</sup> ([ORCID: 0000-0002-9545-5045](https://orcid.org/0000-0002-9545-5045))\n- Angela Jacobi<sup>1</sup>\n- Martin Kr\u00e4ter<sup>6</sup> ([ORCID: 0000-0001-7122-7331](https://orcid.org/0000-0001-7122-7331))\n- Julia St\u00e4chele<sup>3</sup>\n- Leonhard Menschner<sup>3</sup>\n- Maik Herbig<sup>1</sup>\n- Laura Ciuffreda<sup>7</sup>\n- Lisa Ranford-Cartwright<sup>7</sup>\n- Michal Grzybek<sup>8</sup>\n- \u00dcnal Coskun<sup>8</sup> ([ORCID: 0000-0003-4375-3144](https://orcid.org/0000-0003-4375-3144))\n- Elisabeth Reithuber<sup>10</sup>\n- Genevi\u00e8ve Garriss<sup>10</sup> ([ORCID: 0000-0002-5361-0975](https://orcid.org/0000-0002-5361-0975))\n- Peter Mellroth<sup>10</sup>\n- Birgitta Henriques-Normark<sup>10</sup>\n- Nicola Tregay<sup>2</sup>\n- Meinolf Suttorp<sup>3</sup>\n- Martin Bornh\u00e4user<sup>6</sup>\n- Edwin R Chilvers<sup>2</sup> ([ORCID: 0000-0002-4230-9677](https://orcid.org/0000-0002-4230-9677))\n- Reinhard Berner<sup>3</sup>\n- Jochen Guck<sup>1</sup> ([ORCID: 0000-0002-1453-6119](https://orcid.org/0000-0002-1453-6119)) \u2020\n\n### Affiliations\n\n1. Center of Molecular and Cellular Bioengineering, Biotechnology Center Technische Universit\u00e4t Dresden Dresden Germany\n2. Department of Medicine University of Cambridge Cambridge United Kingdom\n3. Department of Pediatrics University Clinic Carl Gustav Carus, Technische Universit\u00e4t Dresden Dresden Germany\n4. Zellmechanik Dresden GmbH Dresden Germany\n5. ZIK HIKE, Universit\u00e4t Greifswald Greifswald Germany\n6. Department of Hematology and Oncology University Clinic Carl Gustav Carus, Technische Universit\u00e4t Dresden Dresden Germany\n7. Institute of Infection, Immunity and Inflammation University of Glasgow Glasgow United Kingdom\n8. Paul Langerhans Institute Dresden of the Helmholtz Centre Munich University Hospital and Faculty of Medicine Carl Gustav Carus, Technische Universit\u00e4t Dresden Dresden Germany\n9. German Center for Diabetes Research Neuherberg Germany\n10. Department of Microbiology, Tumor and Cell Biology Karolinska Institutet Stockholm Sweden\n11. Department of Clinical Microbiology Karolinska University Hospital Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nBlood is arguably the most important bodily fluid and its analysis provides crucial health status information. A first routine measure to narrow down diagnosis in clinical practice is the differential blood count, determining the frequency of all major blood cells. What is lacking to advance initial blood diagnostics is an unbiased and quick functional assessment of blood that can narrow down the diagnosis and generate specific hypotheses. To address this need, we introduce the continuous, cell-by-cell morpho-rheological (MORE) analysis of diluted whole blood, without labeling, enrichment or separation, at rates of 1000 cells/sec. In a drop of blood we can identify all major blood cells and characterize their pathological changes in several disease conditions in vitro and in patient samples. This approach takes previous results of mechanical studies on specifically isolated blood cells to the level of application directly in blood and adds a functional dimension to conventional blood analysis.\n\n## Introduction\n\nBlood is responsible for the distribution of oxygen and nutrients, and centrally involved in the immune response. Consequently, its analysis yields crucial information about the health status of patients. The complete blood count, the analysis of presence and frequency of all major blood cells, constitutes a basic, routine measure in clinical practice. It is often accompanied by analysis of blood biochemistry and molecular markers reflecting the current focus on molecular considerations in biology and biomedicine.\n\nAn orthogonal approach could be seen in the study of the overall rheological properties of blood. It is evident that the flow of blood throughout the body will be determined by its physical properties in the vasculature, and their alterations could cause or reflect pathological conditions (Lichtman, 1973; Baskurt and Meiselman, 2003; Popel and Johnson, 2005). In this context, blood is a poly-disperse suspension of colloids with different deformability and the flow properties of such non-Newtonian fluids have been the center of study in hydrodynamics and colloidal physics (Lan and Khismatullin, 2012). Probably due to the dominant importance of erythrocytes, at the expense of sensitivity to leukocyte properties, whole blood rheology has not resulted in wide-spread diagnostic application.\n\nFocusing on the physical properties of individual blood cells has suggested a third possibility to glean maximum diagnostic information from blood. Various cell mechanics measurement techniques, such as atomic force microscopy (Worthen et al., 1989; Rosenbluth et al., 2006; Lam et al., 2008), micropipette aspiration (Lichtman, 1973; Lichtman, 1970; Dombret et al., 1995; Ravetto et al., 2014) or optical traps (Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Paul et al., 2013), have been used to show that leukocyte activation, leukemia, and malaria infection, amongst many other physiological and pathological changes, lead to readily quantifiable mechanical alterations in the major blood cells (Worthen et al., 1989; Lautenschl\u00e4ger et al., 2009; Schmid-Sch\u00f6nbein et al., 1973; Suresh et al., 2005; Rosenbluth et al., 2008; Bow et al., 2011; Gossett et al., 2012). These proof-of-concept studies have so far been done on few tens of specifically isolated cells. This line of research has not progressed towards clinical application for lack of an appropriate measurement technique that can assess single-cell properties of sufficient number directly in blood.\n\nThis report aims to close this gap by presenting a novel approach for high-throughput single-cell morpho-rheological (MORE) characterization of all major blood cells in continuous flow. Mimicking capillary flow, we analyze human blood without any labeling or separation at rates of 1000 cells/sec. We show that we can sensitively detect morphological and rheological changes of erythrocytes in spherocytosis and malaria infection, of leukocytes in viral and bacterial infection, and of malignant transformed cells in myeloid and lymphatic leukemias. Readily available quantitative morphological parameters such as cell shape, size, aggregation, and brightness, as well as rheological information of each blood cell type with excellent statistics might not only inform further investigation of blood as a complex fluid. It also connects many previous reports of mechanical changes of specifically isolated cells to a measurement now done directly in blood. As such, it adds a new functional dimension to conventional blood analysis \u2014 a MORE complete blood count \u2014 and, thus, opens the door to a new era of exploration in investigating and diagnosing hematological and systemic disorders.\n\n## Results\n\n### Establishment of morpho-rheological analysis\n\nIn order to establish the normal MORE phenotype of cells found in blood, we obtained venous, citrate-anticoagulated blood of healthy donors, of which 50 \u00b5l was diluted in 950 \u00b5l of measurement buffer with a controlled elevated viscosity, but without any additional labeling, sorting, or enrichment. The cell suspension was then pumped through a micro-channel not unlike micro-capillaries in the blood vasculature (Figure 1A). Brightfield images of the cells, deformed by hydrodynamic shear stresses in the channel (Mietke et al., 2015), were obtained continuously by RT-DC (Otto et al., 2015) (see Materials and methods; Video 1). These images revealed distinct differences in overall morphology, brightness, and amount of deformation between all major cell types found in blood (Figure 1B). RT-DC further enabled the continuous, real-time quantification of the cross-sectional area and of the deformed shape (see detailed description in Materials and methods and Figure 1\u2014figure supplement 1) of an, in principle, unlimited number of cells at measurement rates of 100\u20131000 cells/sec (Figure 1C). For each cell detected and analyzed, an image was saved and the average pixel brightness within the cell determined (Figure 1D, Figure 1\u2014figure supplement 1). This single-cell MORE analysis of blood revealed distinct and well-separated cell populations in the space spanned by the three parameters (Video 2). Notably, size and brightness alone \u2014 parameters not unlike those accessible by light scattering analysis in standard flow cytometers \u2014 were sufficient for the identification of the cell types (Figure 1D), so that deformation, as an\u00a0additional\u00a0and independent parameter, was available for assessing their functional changes. The identity of the individual cell populations by size and brightness was established by magnetic cell sorting, controlled by fluorescence immunophenotyping, and subsequent MORE analysis (Figure 1\u2014figure supplement 2). A key feature is the very clear separation of the abundant erythrocytes (red blood cells; RBCs) from other cells as a result of their much greater deformation and lower brightness. This feature gives access to leukocyte properties directly in diluted whole blood, without the potentially detrimental effects of hemolysis (see Figure 1\u2014figure supplement 3) or other separation steps, which are required for analysis with cell mechanics techniques with lower specificity and throughput, or non-continuous measurement. This aspect contributes to the well-established field of hemorheology the possibility to interrogate mechanical properties of all individual blood cells and to specifically investigate their contribution to the overall blood rheological properties.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-v2.jpg)\n\n**Figure 1.:** (A) Analysis of whole, diluted blood. Hydrodynamic shear forces (red arrows) induce deformation of cells passing\u00a0through a microfluidic channel (20 \u00d7 20 \u00b5m2) at speeds of more than 30 cm/s (blue arrows). (B) Representative images of blood cell types acquired. Scale bar is 10 \u00b5m. Images are analyzed for cell size as well as (C) cell deformation and (D) average cell brightness. Each dot represents one of N measurement events. (E) Normal range of deformation and size of cell populations from healthy donors. Each diamond represents the median of one donor; transparent ellipses indicate 95% confidence areas. (F) Comparison of MORE cell counts with conventional blood count.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gating by cell dimensions in \u00b5m during RT-DC measurements. A minimum for the size of a cell parallel and perpendicular to the flow direction can be set; so can independent values for the maximum in both directions. Setting the minimum to 5 \u00b5m pre-excludes erythrocytes and most thrombocytes and focuses the measurement on leukocytes only. Due to their strong deformation in the channel, erythrocytes have a typical size of only 3 \u00b5m perpendicular to the flow. (B) The relation between the detected cell contour and the convex hull contour. The convex hull is used for contour smoothing in the calculation of the deformation parameter (see C) as well as for excluding strongly irregular cells whose shape is not primarily the result of the deforming hydrodynamic forces in the channel. This exclusion is mediated by a limit for the area ratio between the convex hull area and the cells original area (see also C). (C) Calculation of deformation and area ratio as well as five examples of cells per parameter to illustrate the differences. A deformation of 0 and an area ratio of 1 would belong to a perfectly smooth circle. The typical upper limit for the area ratio is set to 1.05, e.g. for all leukocytes. (D) Cell brightness analysis. When gating for leukocyte subpopulations the mean brightness of all pixel values within the cell contour is used. In addition, the root mean square (RMS) value of the pixel values in a 5 \u00d7 9 pixel area around the cell\u2019s center is used. This allows to get rid of possible erythrocyte doublets. Note: The main brightness difference between neutrophils and monocytes is found in a region close to the cell\u2019s contour. Also other parameters calculated from the pixel values within the contour, such as the standard deviation, reveal differences between the cell types but are not used in this work.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Monocytes (>70% pure, as determined by FACS analysis). (B) Neutrophils (>95% pure). (C) Eosinophils (>90% pure). (D) T lymphocytes (>95% pure). (E) B lymphocytes (>90% pure). (F) Basophils, indicated by the grey ellipse (25% pure, impurities: 63% neutrophils, 12% natural killer cells; concurrently assessed by FACS and MORE analysis). While monocytes, neutrophils, and eosinophils overlap by cell size in the range of 55 to 90 \u00b5m2 the cell types are well separated by their cell image brightness without overlap. The brightness of lymphocytes is similar to the brightness of monocytes but cell size is separating both populations without overlap.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Prior to flow cytometric analysis and many other in vitro assays targeting peripheral blood or lymphoid tissue suspensions, RBC are commonly removed. To test the effect of the RBC lysis procedure on leukocyte size and deformation we prepared samples according to the manufacturer\u2019s advice (BD Pharm Lyse 555899). Besides using the lysing solution, the procedure comprises gentle vortexing and two centrifugation steps (200 g for 5 min), which might all affect the cells. The resulting cell pellet after RBC lysis was suspended in 50 \u00b5l autologous serum and 950 \u00b5l measurement buffer. As control, 50 \u00b5l whole blood of the same donor was suspended in 950 \u00b5l measurement buffer. Comparison of the morpho-rheological features of leukocytes showed that the RBC lysis procedure inverted the relative amounts of lymphocytes and myeloid cells, yielded lymphocytes that were less deformed, and myeloid cells that were larger and more deformed. Therefore, we consistently used whole blood for analysis, rather than pre-analytical RBC lysis, which also saves time and cost.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Variation of deformation (left axis, black) and cell size (right axis, blue) of leukocytes and erythrocytes in the experimental procedure of MORE blood analysis. Blood of the same donor was repeatedly drawn and measured (n\u00a0=\u00a05 repeats, individual median values as small dots, values normalized by the means thereof, whiskers show\u00a0\u00b1standard deviation). (B) Possible effects of the anticoagulant sodium citrate on the MORE analysis of blood cell deformation and size were investigated by comparing measurements of sodium citrate blood with freshly drawn blood directly (within 2 min) diluted in the measurement buffer. Neither deformation (left axis, black) nor cell size (right axis, blue) were affected by the anticoagulant for any leukocytes or erythrocytes (n\u00a0=\u00a05 donors, individual median values as small dots, means thereof as open squares). (C\u2013E) Sodium citrate storage effects at room temperature over time regarding deformation (top panel) and cell size (bottom panel) of the majority of leukocytes (>95%) \u2013 neutrophils, lymphocytes, and monocytes. Relative values were calculated against the respective initial measurement directly (within 20 min) post blood drawing. Within the first two hours stable results are obtained with the single exception for the deformation of lymphocytes. But also lymphocytes deformation remains stable within 30 to 120 min post blood drawing after an initial drop of about 10\u201315% (mean values of individual median values as open squares). Of note, in pathological conditions deformation and size change after drawing blood, so that the amount of change itself could actually be a diagnostic parameter. An advantage of RT-DC is that leukocyte mechanics can be measured within 15 min after blood drawing, which is not possible with other techniques where significant time is spent on separation/preparation. All error bars represent the standard deviation.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Values shown are median values for each donor\u2019s individual cell types, normalized by the mean for all 21 donors (10 male \u2013 blue; 11 female \u2013 red) for each respective cell type. See also Main Text Figure 1E for absolute values. Relative values are used for better illustration of the variance within the different cell types: (A) neutrophils; (B) lymphocytes; (C) monocytes; (D) eosinophils; (E) erythrocytes. Each panel contains the gray 95% confidence ellipse displaying the norm for the respective cell types. Comparison of the male and female groups shows no significant difference for any of the cell types.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** In a 24 hr time course we monitored the intra-day variation of the median values of deformation and cell size for (A) neutrophils; (B) lymphocytes; (C) monocytes and so, typically, more than 95% of all leukocytes (two donors; donor 1: blue, donor 2: magenta). The time course started in the afternoon/evening of the first day and ended at noon/afternoon of the following day. For the first measurement in the morning, blood was drawn from the donor prior to getting up. Variation in deformation was small and even less in cell size and compared in range with our experimental uncertainty as determined in Figure 1\u2014figure supplement 4A. The small variance is illustrated in (D\u2013F) by comparing the individual donor intra-day variation to the inter-donor variation from Figure 1\u2014figure supplement 5. For each donor, the relative deformation and cell size values were obtained by normalization to their respective mean values of the 24 hr time course. In addition to the data points (same color and shape coding as in A-C) the 95% confidence ellipses are shown as shadows in the same color. The small intra-day variation of size and deformation led us to conclude that the variation within physiological blood sugar, electrolyte, and hormone levels as well as daily cell count variation did not call for special measures regarding the drawing of blood for MORE analysis, e.g., at a certain time of day, or fasting. (G\u2013I) 68% (inner shade) and 95% (outer shade) confidence regions of a single measurement for (G) neutrophils; (H) lymphocytes; and (I) monocytes. The single measurement confidence is based on 12 repeated measurements in total for the two donors in (A\u2013C). Therefore, the confidence regions reflect possible variations for the individual cell types on a technical level, such as small differences in sample handling, as well as on the biological level, such as intra donor variations.\n\n![Video 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-video1.mp4.jpg)\n\n**Video 1.:** Video of the microfluidic channel system during RT-DC measurement of diluted whole blood. The cell suspension flows from left to right through the channel. Cells enter on the left and are focused by sheath flow from the top and bottom of the frame towards the narrow RT-DC measurement channel of 300 \u00b5m length and 20 \u00b5m width and height in the right half of the image. RT-DC measurements are carried out on the cells that travel through the last third of the length of the measurement channel.\n\n![Video 2.](https://cdn.elifesciences.org/articles/29213/elife-29213-video2.mp4.jpg)\n\n**Video 2.:** Rotating angle view in the space of deformation, cell size and cell brightness. Cell identification in order of appearance by coloring: lymphocytes (blue), neutrophil granulocytes (black), eosinophil granulocytes (cyan), monocytes (orange), basophil granulocytes (green).\n\nIn extensive tests of the variability of this approach, MORE phenotyping yielded identical results in repeated measurements of blood from the same donor, with sodium citrate added as an anti-coagulant and for different storage times (Figure 1\u2014figure supplement 4), between different donors of both sexes (Figure 1\u2014figure supplement 5), and blood samples taken at different times during the day (Figure 1\u2014figure supplement 6). This robustness served to establish a norm for the different cell types (Figure 1E). MORE analysis provided the identity and frequency of all major white blood cells as with a conventional differential blood count (Figure 1F; Supplementary file 1) \u2014 obtained from a single drop of blood, with minimal preparation, and within 15 min. Going beyond this current gold-standard of routine blood cell analysis, and importantly also beyond all other single-blood-cell mechanical analysis studies to date, MORE phenotyping allowed the sensitive characterization of pathophysiological changes of individual cells directly in merely diluted whole blood. In the following, we exemplarily demonstrate, in turn for each of the blood cell types, the new possibilities of gaining MORE information from an initial blood test as a time-critical step in generating specific hypotheses and steering further investigation enabled by this approach.\n\n### Detection of morpho-rheological changes in erythrocytes\n\nSpherocytosis is a prototypical hereditary disease in humans in which genetic changes (here ankyrin and spectrin mutations) cause abnormal shape and mechanical properties of erythrocytes. Current diagnosis is based on the detection of abnormal cell shapes in a blood smear, followed up by assessment of the osmotic fragility quantified by Acidified Glycerol Lysis Time (AGLT) or by osmotic gradient ektacytometry. These manual assays take time and do not lend themselves to quick, initial screening. MORE analysis of the blood of patients with spherocytosis directly revealed significantly less deformed and smaller erythrocytes than normal (Figure 2A\u2013C) as the functional correlate of the cytoskeletal mutation. The differences are so clear (Figure 2\u2014figure supplement 1) that this analysis can serve as a fast primary and cheap screening test for spherocytosis. Detection of such RBC changes would then warrant confirmation by more specific analysis using flow-cytometric detection of Eosin-5-Maleimide staining (EMA test) or the direct detection of the mutation by PCR, which require specific preparation, are more expensive, and thus benefit from a strong and clear initial hypothesis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig2-v2.jpg)\n\n**Figure 2.:** Exemplary density plots of RBC size vs. deformation in samples from (A) healthy donor and (B) patient with spherocytosis. (C) Relative median RBC deformation and size in patients with spherocytosis (orange, n\u00a0=\u00a04 patients) compared to controls (black, n\u00a0=\u00a021 donors as in Figure 1E with 68% and 95% confidence ellipses). Density plots of size vs. deformation of (D) control RBCs and (E) RBCs exposed to P.f. (blue), both after 12 hr incubation. Insets show cells with and without image feature (white inclusion), positively indicating actual parasite infection. Infected RBCs are indicated by red dots. Scale bars, 10 \u00b5m. (F) Evolution of RBC deformation over 46 hr time course of control (black), P.f. exposed (blue) and P.f. infected RBCs (red); open squares and diamonds, mean\u00a0\u00b1SD, n\u00a0=\u00a02; filled squares, individual medians, **p<0.01, ***p<0.001. (G) Reduced deformation of 2BP-treated RBCs compared to PA- and non-treated controls (mean\u00a0\u00b1SD of population medians, n\u00a0=\u00a04 donors, *p<0.05). (H) Reduced parasitemia in 2BP- compared to PA- and non-treated controls at 2 and 4 days post infection. Error bars: SD binomial, *p<0.0125.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Erythrocytes in spherocytosis (n\u00a0=\u00a04 patients, see also main text Figure 2C) show a statistically significant lower deformation of 0.28\u00a0\u00b1\u00a00.02 compared to the healthy norm (n\u00a0=\u00a021 donors, known from main text Figure 1E and Figure 1\u2014figure supplement 5) with a deformation of 0.35\u00a0\u00b1\u00a00.01 (mean\u00a0\u00b1SD, p=0.002). The cell size in spherocytosis was found to be significantly smaller at 37.8\u00a0\u00b1\u00a01.8 \u00b5m2 compared to 40.1\u00a0\u00b1\u00a00.9 \u00b5m2 (mean\u00a0\u00b1SD, p=0.004) for erythrocytes in the healthy control group. Asterisks indicate statistically significant differences, p<0.05, by Kruskal-Wallis test. Error bars represent the standard deviation.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Erythrocytes at different stage of infection in a standard blood smear. Scale bar 10 \u00b5m. (B) Pictures of erythrocytes in MORE analysis. Cells displaying distinct bright spots are exclusively found in P.f. exposed and infected samples and are therefore considered infected cells. Scale bar 10 \u00b5m. (C) Parasitemia of in vitro infection experiments as determined from the blood smear (black) and the fraction of cells clearly detected as infected cells by MORE analysis (red) over the time course of 46 hr. The efficiency of the detection of infected cells in MORE analysis increases with time, possibly due to the growth of the parasites. The deviation from the parasitemia as determined by the blood smear is in part caused by conservative gating settings for the automated identification of infected cells in MORE analysis with the goal of preventing false positive results. The difference could in part also stem from the bright spot being the vacuole forming inside the cell, and not the actual parasite. (D) 46 hr time course of an in vitro malaria infection in erythrocytes displaying the development of deformation and cell size of the erythrocyte populations in the control sample (top row) and two separate exposed and infected samples (middle and bottom row). In addition, red dots indicate those cells identified as infected by MORE analysis. The time course of the median deformation values of the populations is summarized in main text Figure 3C.\n\nA change in RBC deformability has also been implicated in malaria pathogenesis, since single cells infected by parasites have been reported to be stiffer (Bow et al., 2011). This insight has not progressed towards clinical application and the gold standard in malaria diagnosis is still a manual thick blood smear analysis. To evaluate whether MORE analysis could provide a sensitive, automated alternative, we analyzed populations of RBCs exposed in vitro to Plasmodium falciparum (P.f.) with a parasitemia (percentage of actually infected cells) of 7\u20138% at time points over the 2 day parasite life cycle. We found a clear, significant, and increasing reduction in the deformation of the entire exposed RBC population detectable after 4 hr (Figure 2D\u2013F; Figure 2\u2014figure supplement 2). Inspection of the individual cell images revealed the appearance of characteristic features likely associated with the maturation of parasites inside a subset of RBCs (Figure 2D,E insets; Figure 2\u2014figure supplement 2). These features permitted the direct identification of positively infected cells, whose relative frequency peaked at 36 hr (Figure 2\u2014figure supplement 2). The separate assessment of overtly infected cells showed an even greater reduction\u00a0in\u00a0deformation than observed in the entire exposed population (Figure 2F; Figure 2\u2014figure supplement 2), which \u2014 extrapolating our in vitro results to the situation in vivo \u2014 relates to the possibility of clearance of stiff, infected cells from the circulation by the spleen (Cranston et al., 1984; Shelby et al., 2003). However, this small fraction of stiffer cells alone cannot account for the reduced deformation of the whole population, so that a bystander stiffening of exposed but non-infected cells seems involved (Paul et al., 2013).\n\nReduced membrane-cytoskeleton interactions have previously been correlated with elliptocytic RBCs and resistance to P.f. infection (Chishti et al., 1996). The characteristic biconcave morphology of RBCs can be chemically altered by the use of 2-bromo-palmitate (2 BP), an efficient inhibitor of palmitoyl acyltransferases (Biernatowska et al., 2013). Here, 2\u00a0BP-treated RBC samples showed changes in deformation (Figure 2G) with a concurrent reduction in P.f. infectivity (Figure 2H), compared to buffer control or RBCs treated with palmitic acid (PA). PA is an analogue of 2 BP that does not inhibit palmitoylation (Biernatowska et al., 2013). Since both, 2 BP and PA readily accumulate in the membranes, but only 2 BP causes a reduction in infectivity of P.f., we suggest that palmitoylation of RBC proteins is important for RBC morphology and infectivity of P.f. While a previous report had found no change in infectability of RBCs treated with 2 BP (Jones et al., 2012), the difference could stem from the different RBC receptors involved in invasion by the different parasite clones (3D7 vs. HB3), which in turn are differentially affected by palmitoylation. Thus, MORE analysis has the potential not only to\u00a0simplify, automate, and speed up malaria diagnosis, but also to provide additional quantitative information aiding research on the pathogenesis of the disease (Koch et al., 2017).\n\n### Detection of morpho-rheological changes in leukocytes\n\nWhile RBC mechanics has already been used for clinical diagnostics using rheoscopes and ektacytometers for over 40 years (Schmid-Sch\u00f6nbein et al., 1973; Cranston et al., 1984; Reid et al., 1976), leukocyte mechanics has not been utilized for diagnostic purposes. This is likely due to their increased stiffness compared to RBCs and a lack of convenient techniques capable of sufficiently deforming them in suspension \u2014 their physiological state. Until recently, techniques with sufficient throughput, obviating the need for specifically isolating the relevant cells of interest, which always bears the potential of inadvertent cell change (see Figure 1\u2014figure supplement 3), did not exist. In this sense, the mechanical phenotyping of diagnostic changes of leukocytes directly in diluted whole blood is the most transformative application area of MORE analysis. For example, there have been proof-of-concept studies on the mechanical changes associated with activation of isolated neutrophils showing a stiffening, in line with the pronounced actin cortex that is a hallmark of neutrophil activation (Worthen et al., 1989; Rosenbluth et al., 2008). MORE analysis of the in vitro neutrophil activation in blood with the bacterial wall-derived tripeptide fMLP confirmed that neutrophils were indeed less deformed and smaller within the first 15 min post fMLP treatment. Interestingly, the subsequent time-course showed a reversal to more deformed and larger cells (Figure 3A,B; Figure 3\u2014figure supplement 1). These observations by themselves do not permit a conclusion about a change in cell stiffness, since a smaller size also leads to less stress acting on the cells in the channel, and less deformation (Mietke et al., 2015; Mokbel et al., 2017). Thus, we also calculated the apparent Young\u2019s modulus of the cells, which increased from E\u00a0=\u00a0742\u00a0\u00b1\u00a012 Pa to E\u00a0=\u00a0853\u00a0\u00b1\u00a020 Pa (mean\u00a0\u00b1SEM. p=0.009, n\u00a0=\u00a05) during the first 15 min, and then subsequently reverted to values statistically indistinguishable but slightly lower than before stimulation (15\u201330 min: E\u00a0=\u00a0717\u00a0\u00b1\u00a09 Pa, p=0.347; 30\u201345 min: E\u00a0=\u00a0719\u00a0\u00b1\u00a07 Pa, p=0.117; 45\u201360 min: E\u00a0=\u00a0731\u00a0\u00b1\u00a011 Pa, p=0.465). Such mechanical activation kinetics of neutrophils has not been reported before as the lower measurement rate of previous techniques yielded only cumulative data over the time period investigated.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig3-v2.jpg)\n\n**Figure 3.:** Relative change (mean\u00a0\u00b1SD) in (A) deformation and (B) size of neutrophils in diluted whole blood after fMLP (n\u00a0=\u00a05 donors; see Figure 3\u2014figure supplement 1) and S. aureus (n\u00a0=\u00a04 donors; see Figure 3\u2014figure supplement 2) stimulation in vitro measured 15\u201330 min and 30\u201360 min after stimulation, respectively, and LPS inhalation (n\u00a0=\u00a02 donors; see Figure 3\u2014figure supplement 1) in vivo measured 135 min after inhalation. Exemplary scatter plots of size vs. deformation of neutrophils in blood of a patient with (C) ALI (magenta) and (D) RTI (green) compared to controls (black). Medians of size and deformation of (E, I) neutrophils, (F, J) monocytes, and (G, K) lymphocytes in blood samples of patients with E, F, G, ALI (n\u00a0=\u00a04 patients; magenta) and RTI (n\u00a0=\u00a06 patients; green), and I, J, K, EBV infection (n\u00a0=\u00a05 patients; orange) relative to the norm (black, n\u00a0=\u00a021 donors as in Figure 1E with 68% and 95% confidence ellipses). (H, I) Mean and SD of these results, *p<0.05. For typical scatter plots of size vs. deformation of all three cell types and all three disease conditions see Figure 3\u2014figure supplement 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) change of deformation and cell size of neutrophils over time after in vitro fMLP stimulation of diluted whole blood. Relative median values are obtained by normalization to the respective values before stimulation. Blue dots: individual median values of stimulated samples, n\u00a0=\u00a05 donors. Open squares: mean values thereof. Gray dots: individual median values of control samples treated equally to stimulated samples without fMLP, n\u00a0=\u00a03 donors. Gray bars: Intervals, indicating 68% and 95% confidence of all control measurements (n\u00a0=\u00a012). Asterisks indicate statistically significant differences between all control measurements and stimulated samples, p<0.05. After fMLP stimulation, neutrophils show an initial drop in deformation and cell size, followed by a complete change to significantly larger and more deformed cells at later stages of the stimulation. (C) and (D) change of deformation and cell size of neutrophils in patient blood after LPS inhalation. Blood samples were drawn freshly at each time point and measured within 15 min after blood withdrawal. Relative median values are obtained by normalization to the respective values prior to stimulation. Blue dots: individual median values of stimulated samples, n\u00a0=\u00a02 donors. Open squares: mean values of thereof. Asterisks indicate statistically significant differences to the reference measurements before stimulation, p<0.05. At two hours post LPS inhalation there was a significant increase in both deformation and cell size of neutrophils in the blood of otherwise healthy human volunteers. These values returned to and remained at the baseline one hour later. All error bars represent the standard deviation.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A and B) change of deformation and cell size shown for neutrophils, lymphocytes and monocytes of S. aureus stimulated blood relative to the respective control before stimulation. Blue dots: medians of stimulated blood cells, n\u00a0=\u00a04 donors; open squares: mean values and standard deviation of four experiments; asterisks indicate differences to the reference measurements before stimulation, p<0.05 by Kruskal-Wallis test. Cell size and deformation of stimulated neutrophils are significantly increased when compared to the baseline before stimulation. Lymphocytes show strong variations but without any clear trend that is also not found for monocytes. A comparison of S. aureus stimulated blood and the healthy norm known from Figure 1\u2014figure supplement 5 reveals similar results. In panels (C\u2013E) the norm is shown by the individual median values (gray dots, n\u00a0=\u00a021 donors) for (C) neutrophils; (D) monocytes; and (E) lymphocytes with the 68% and 95% confidence ellipses as gray shadows. Median values of the stimulated samples (n\u00a0=\u00a04 donors) are displayed as green hexagons and normalized to the average values of the norm. (F) Separate quantification of deformation and cell size of data shown in C-E as mean and standard deviation. Asterisks indicate statistically significant differences to the norm (p<0.05 by Kruskal-Wallis test).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A-C) exemplary scatter plots of size vs. deformation of (A) neutrophils; (B) monocytes; and (C) lymphocytes in the blood of a patient with ALI (magenta) compared to controls (black). (D\u2013F) exemplary scatter plots of size vs. deformation of (D) neutrophils; (E) monocytes; and (F) lymphocytes in blood of a patient with RTI (green) compared to controls (black). (G\u2013I) exemplary scatter plots of size vs. deformation of (G) neutrophils; (H) monocytes; and (I) lymphocytes in blood of a patient with EBV (orange) compared to controls (black).\n\nWe also\u00a0found a similar increase in size and greater deformation of the neutrophils at the later time points in an experimental medicine trial, where healthy human volunteers inhaled lipopolysaccharide (LPS; from E. coli) (Figure 3A,B; Figure 3\u2014figure supplement 1). Also, infecting blood in vitro with Staphylococcus aureus (S. aureus), a Gram-positive bacterium and one of the major pathogens responsible for life-threatening infections world-wide, resulted in larger and more deformed neutrophils, measured between 30\u201360 min after blood stimulation (Figure 3A,B; Figure 3\u2014figure supplement 2).\n\nCongruently, blood taken from patients with an acute lung injury (ALI) of most likely bacterial origin had larger and more deformed neutrophils compared to healthy controls (Figure 3C,E,H). The same neutrophil response was found in blood samples from patients hospitalized with viral respiratory tract infections (RTI; Figure 3D,E,H). Also monocytes responded by a size increase in both RTI and ALI patients and after in vitro stimulation with S. aureus, but showed a significantly increased deformation only in viral RTI, while blood lymphocytes did not show any consistent response (Figure 3F\u2013H; Figure 3\u2014figure supplements 2 and 3). The lymphocyte response changed when analyzing blood of patients with acute Epstein-Barr-virus (EBV) infection, which is known to also stimulate the lymphatic system, where both monocytes and lymphocytes showed an increase in cell size and deformation, while neutrophils showed less of a response (Figure 3I\u2013L, Figure 3\u2014figure supplement 3). These results suggest that MORE blood analysis might be sufficiently sensitive to distinguish bacterial from viral infections, and potentially other inflammatory diseases, by the differential response of selective blood leukocyte populations. This possibility will be followed up in future specific trials. Importantly, MORE blood analysis is of special interest for blood tests in neonatology with patients at high risk of infections but only minute amounts of blood available for diagnostics, or to characterize neutrophils in neutropenic patients, as it merely requires longer data acquisition periods.\n\n### Detection of morpho-rheological changes in malignant transformed blood cells\n\nBlood cancers, or leukemias, affecting both myeloid and lymphoid cell lineages, are a further large area where MORE analysis could potentially contribute fundamental insight, aid diagnosis, and improve therapy monitoring. While solid cancer cell mechanics has been a focus of cell mechanics research and extensively documented (Suresh, 2007; Kumar and Weaver, 2009; Guck and Chilvers, 2013), the mechanical properties of blood cancers are comparatively understudied.\n\nThe available research on\u00a0mechanics\u00a0of leukemic cells has been undertaken either on cell lines or fully purified cells (Lichtman, 1973; Rosenbluth et al., 2006; Lam et al., 2008; Lichtman, 1970; Dombret et al., 1995; Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Rosenbluth et al., 2008; Zheng et al., 2015) but so far not directly in blood. MORE analysis of the blood of patients with acute myeloid (AML) and lymphatic leukemias (ALL) revealed the new presence of atypical cell populations \u2014 the characteristic immature blasts not normally present in healthy donors (Figure 4A\u2013C). Cell populations gated for AML revealed less deformed cells but of about the same size compared to healthy and fully differentiated myeloid cells (Figure 4D, Figure 4\u2014figure supplement 1), in line with previous results (Rosenbluth et al., 2006; Lichtman, 1970; Dombret et al., 1995; Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012). ALL blast cells were larger in size compared to mature lymphocytes, but did not show any consistent trend in deformation (Figure 4D; Figure 4\u2014figure supplement 1). Since cell size and deformation in the channel are interrelated (Mietke et al., 2015; Otto et al., 2015; Mokbel et al., 2017), which can be seen by the isoelasticity lines parameterizing the deformation-size space (Figure 4D), we also calculated the apparent Young\u2019s modulus of these cells (Figure 4\u2014figure supplement 1). Together\u00a0these results show that mature lymphocytes, ALL blasts, mature myeloid cells, and AML blasts have increasing levels of stiffness, consistent with the composite findings of previous reports (Lichtman, 1973; Rosenbluth et al., 2006; Lam et al., 2008; Lichtman, 1970; Dombret et al., 1995; Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Rosenbluth et al., 2008). This is quite different than the general trend in solid tumors, where cancer cells are found to be more deformable than their healthy counterparts (Suresh, 2007; Kumar and Weaver, 2009; Guck and Chilvers, 2013). Sensibly, the differential stiffness of AML and ALL blasts, and its potential further increase with chemotherapy, has been implicated in the occurrence of leukostasis (Lam et al., 2008; Rosenbluth et al., 2008; Lam et al., 2007). MORE analysis might not only permit screening for novel therapeutic targets to soften cells (Gossett et al., 2012; Di Carlo, 2012; Surcel et al., 2015), but also assessing the risk of leukostasis directly in each patient.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig4-v2.jpg)\n\n**Figure 4.:** (A) Normal brightness vs. size scatter plot of a healthy donor with the gates (shaded areas) used to identify lymphocytes (ly), basophils (ba), monocytes (mo), neutrophils (neu) and eosinophils (eo). (B) Exemplary brightness vs. size scatter plot in AML; blast cells were found in (ba) and (mo) gates. (C) Exemplary brightness vs. size scatter plot in ALL; blast cells were found in (ly), (ba), and (mo) gates. (D) Medians of deformation and size for the respective gates in blood samples of ALL (red circles, n\u00a0=\u00a04 patients) and AML patients (purple triangles, n\u00a0=\u00a07 patients). Shaded areas in D (color as in A) represent 95% confidence ellipses of the respective cell type norm (n\u00a0=\u00a021 donors, as in Figure 1E). Gray lines represent lines of equal elasticity calculated for purely elastic objects. Scatter plots of ALL blast deformation and size at (E) one; (F) seven, and (G) twelve days post therapy start. Blue shaded areas in E-H represent 95% confidence ellipses of the lymphocyte norm (n\u00a0=\u00a021 donors, as in Figure 1E). (H) Median deformation and size of ALL cells during 12 days of treatment (red dots, days as numbers). Gray shaded areas surrounding data of days 1, 4, 8, and 12 represent the 68% (inner) and 95% (outer) confidence area of a single measurement (according to lymphocyte confidence in Figure 1\u2014figure supplement 6H).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29213/elife-29213-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Deformation and cell size of ALL blasts (n\u00a0=\u00a04 patients, see also main text Figure 4D) are compared to the lymphocyte norm (n\u00a0=\u00a021 donors, known from main text Figure 1E and Figure 1\u2014figure supplement 5B). ALL blasts were significantly larger than lymphocytes, while no trend \u2013 but a large variation \u2013 is detected for the deformation. Deformation and cell size of AML blasts (n\u00a0=\u00a07 patients, see also main text Figure 4D) are compared to the norm of neutrophils, monocytes and eosinophils (n\u00a0=\u00a021 donors, known from main text Figure 1E and Figure 1\u2014figure supplement 5D). AML blasts were significantly less deformed than the norm of the three cell types. At the same time the cell size did only show significant differences when compared to the larger eosinophils. (B) Comparison of the apparent Young\u2019s modulus of ALL (n\u00a0=\u00a04 patients, see also main text Figure 4D) and AML (n\u00a0=\u00a07 patients, see also main text Figure 4D) blasts with each other and the norm of neutrophils, monocytes and eosinophils (n\u00a0=\u00a021 donors, known from main text Figure 1E and Figure 1\u2014figure supplement 5) when treated as purely elastic. ALL blasts are significantly more compliant compared to AML blasts and the norm of monocytes. No statistically significant difference was found in the comparison of ALL blasts and the norm of neutrophils and eosinophils. AML blasts are also significantly stiffer compared to the norm of neutrophils and eosinophils but no statistically significant difference was found in the comparison to the norm of monocytes. Only an upper estimate for the apparent Young\u2019s modulus of 0.5 kPa can be given for lymphocytes because most deformation and size values for this cell type are located outside the region of stable results from the numerical simulation that was used to convert deformation and cell size data to apparent Young\u2019s moduli. Asterisks indicate statistically significant differences, p<0.05 by Kruskal-Wallis test. Error bars represent the standard deviation.\n\nFinally, by following the ALL blast population in a patient over 12 days of methylprednisolone treatment we could monitor the return to the normal morpho-rheological fingerprint of blood (Figure 4E\u2013H). The evolution of this fingerprint likely comprises multiple contributions with blast cells undergoing apoptosis over a time course of 2\u20137 days (Ito et al., 1996), which is associated with an increase in stiffness (Lam et al., 2007). Blast cells are sequestered by the spleen and new, but immature and likely stiffer, blast cells are being added to the circulation from the bone marrow. There could also be ALL subclones with different morpho-rheological characteristics that respond differently and at different times to treatment. And the final increase in deformation from day 9 to 12 coincides with the addition of cytostatic drugs (vincristine, daunorubicin) to the methylprednisolone treatment. Dissecting this multifaceted response will be aided by adding simultaneous fluorescence identification of the cells in the future (Rosendahl, 2017). Of note, of the conventional biomarkers and techniques that are used in the diagnosis of leukemia (see Supplementary file 2), only morphological analysis of air-dried Romanowsky-stained blood (or bone marrow) smears is traditionally applied to monitor treatment success in ALL. The response to treatment is one of the most powerful prognostic in vivo markers of leukemia survival. In pediatric ALL the number of blasts at day eight after start of methylprednisolone treatment is predictive of the relapse rate (<1000 blasts/\u00b5l of blood: relapse rate 20\u201330%; >1000 blasts/\u00b5l of blood: relapse rate 50\u201380%). MORE analysis provides at least the same information as conventional morphological analysis, but in a shorter amount of time and with smaller sample sizes required (for a comparison between MORE analysis and conventional biomarkers, see Supplementary file 2). In summary, MORE blood analysis can be used to monitor morpho-rheological effects of chemotherapy and the successful replacement of lymphoblasts with mature lymphocytes in a quantitative manner. This last finding also touches upon the study of hematopoietic differentiation of cells in the bone marrow, which is an obvious further potential area of application of this approach.\n\n## Discussion\n\nMorpho-rheological phenotyping allows individual blood cell mechanics to be studied in a range of human diseases and takes cell mechanical phenotyping to an entirely new level. While established techniques such as micropipette aspiration (Lichtman, 1973; Lichtman, 1970; Dombret et al., 1995; Ravetto et al., 2014), indentation by cell pokers and atomic force microscopes (Worthen et al., 1989; Rosenbluth et al., 2006; Lam et al., 2008), or optical trapping (Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Paul et al., 2013) have provided important proof-of-concept insight over the last decades, the recent advent of microfluidic techniques approaching the throughput of conventional flow cytometers (Gossett et al., 2012; Otto et al., 2015; Zheng et al., 2015; Byun et al., 2013; Lange et al., 2015) has finally brought mechanical phenotyping close to real-world applications (Guck and Chilvers, 2013; Tse et al., 2013). Amongst the latter techniques, RT-DC stands out because it can continuously monitor an, in principle, unlimited number of cells, which enables the direct sensitive assessment of the state of all major cell types found in blood. A volume as small as 10 \u00b5l can be analyzed cell-by-cell, with only dilution in measurement buffer to adjust cell density and prevent sedimentation, but no labeling, enrichment or separation, which could otherwise cause inadvertent activation of blood cells. The conventional blood count is extended by information about characteristic, and diagnostic, morpho-rheological changes of the major cell types. Cell mechanics and morphology are inherent and sensitive markers intimately linked to functional changes associated with the cytoskeleton (Chimini and Chavrier, 2000; Fletcher and Mullins, 2010; Kasza et al., 2007; Patel et al., 2012; Salbreux et al., 2012) and other intracellular shape-determining and load-bearing entities (Rowat et al., 2006; Munder et al., 2016). Thus, label-free, disease-specific morpho-rheological blood signatures are a novel resource for generating hypotheses about the underlying molecular mechanisms. The availability of such parameters in real-time, easily combined with conventional fluorescence detection (Rosendahl, 2017), are the necessary prerequisite for future sorting of morpho-rheologically distinct subpopulations, which then provides a novel opportunity for further molecular biological analysis. Of course, at present, MORE phenotyping provides a sensitive, but not a very specific marker. For example, neutrophil softening could be a signature of different underlying pathological changes. In the future, fuller exploration of the large combinatorial space afforded by the multi-parametric response of the various blood cells, exploiting many additional morpho-rheological parameters in conjunction with machine learning, and inclusion of conventional fluorescence-based marker analysis (Rosendahl, 2017) will further increase the specificity of this approach. Apart from now enabling realistic blood cell research ex vivo close to physiological conditions, delivering for example previously unavailable information about leukocyte activation kinetics, and after further in-depth studies of the phenomena reported here, MORE phenotyping could have a tangible impact on diagnosis, prognosis, and monitoring of treatment success of many hematological diseases as well as inflammatory, infectious, and metabolic disorders. Beyond blood analysis, MORE phenotyping has the potential to become a standard approach in flow cytometry with many applications in biology, biophysics, biotechnology, and medicine.\n\n## Materials and methods\n\n### Real-time deformability cytometry\n\nReal-time deformability cytometry (RT-DC) was carried out as described previously (Otto et al., 2015). For RT-DC measurements, cells were suspended in a viscosity-adjusted measurement buffer (MB) based on 1x phosphate buffered saline (PBS) containing methylcellulose. The viscosity was adjusted to 15 mPa s at room (and measurement) temperature, determined using a falling ball viscometer (Haake, Thermo Scientific). Cells in the MB were taken up into a 1 ml syringe, placed on a syringe pump (neMESYS, Cetoni GmbH) and connected via tubing to the sample inlet of the microfluidic chip with a square measurement channel cross section of 20 \u00d7 20 \u00b5m2. The microfluidic chip was made from cured polydimethylsiloxane bonded to a thickness #2 cover glass. Another syringe containing MB without cells was connected to the sheath flow inlet of the chip. Measurements were carried out at a total flow rate of 0.12 \u00b5l/s with a sample flow rate of 0.03 \u00b5l/s and a sheath flow rate of 0.09 \u00b5l/s unless stated otherwise. Different gating settings for cell dimensions could be employed during the measurement (Figure 1\u2014figure supplement 1). Images of the cells in the channel were acquired in a region of interest of 250 \u00d7 80 pixels at a frame rate of 2000 fps. Real-time analysis of the images was performed during the measurement and the parameters necessary for MORE analysis were stored for all detected cells.\n\n### Data processing in MORE analysis\n\nThe raw data obtained from RT-DC measurements consisted of the following information of every detected cell: a bright field image of the cell, the contour of the cell, its deformation value, and the cell size as the cross-sectional area of the cell in the image (Figure 1\u2014figure supplement 1). The deformation was calculated from the convex hull contour of the cell \u2014 a processed contour, where all points contributing to concave curvature were removed:\n\n$$\ndeformation=1-\\frac{2\\sqrt{\\piA}}{l},\n$$\n\nwhere A is the area enclosed by the convex hull contour and l is the length of the convex hull contour. Therefore, deformation is the deviation from a perfectly circular cell image. It describes the change of the cell\u2019s shape by the hydrodynamic forces in the measurement channel but may also contain pre-existing shape deviations from a sphere, for example for the biconcave, disk-like shapes of healthy red blood cells or strongly activated and polarized neutrophils. Image brightness analysis was carried out using the contour information and the image of the cell. The mean brightness of the cell was determined from all pixel values within the cell\u2019s contour (Figure 1D). With this information the distinction of leukocyte subpopulations was possible in the space spanned by cell size and mean brightness (Figure 1D and Figure 1\u2014figure supplement 2). It is worth noting that the absolute value of the resulting brightness was influenced by several experimental conditions such as focus of the image and the thickness of the microfluidic chip. However, this did not affect the quality of the distinction of cells by their brightness. Special care had to be taken when comparing the brightness of different purified leukocyte subpopulations of similar size (like neutrophils, eosinophils, and monocytes). In order to achieve a situation similar to the diluted whole blood measurement, we used the same microfluidic chip repeatedly after thorough flushing. All brightness values reported were normalized to 100 by the background brightness of the channel. Apart from the initial brightness distinction, in a second step, the root mean square of pixel brightness values was calculated in an area of 9 \u00d7 5 pixels (nine in the flow direction, five perpendicular to the flow direction) around the geometrical center of the cell. This information was used to distinguish the relevant leukocyte subpopulations from eventual erythrocyte doublets present (Figure 1D). To ensure best validity of the deformation measure based on the area within the cell\u2019s contour and the length of the contour, only cells without prominent protrusions were considered for comparisons based on deformation. A reliable criterion to select those cells was found by comparing the area within the originally detected cell contour and within the convex hull contour. For erythrocytes, the difference of these two areas was limited to 15%. For leukocytes, a suitable limit was found at 5%. For the identification of malaria-infected erythrocytes we used a semi-automated procedure designed to obtain only clearly positive results and to avoid false negatives. The defining property of infected cells was the presence of bright spots within the cells. In a first step, all pixel values outside the cell\u2019s contour were set to 0. In a twice-repeated procedure, the image of the erythrocyte was further reduced by setting all pixel values of the contour pixels to 0 and finding the new contour. This measure was used to eliminate possible bright spots due to fringes at the border of the cell. From this image, the brightness of every pixel of the remaining cell was calculated by taking the mean of the pixel itself and its eight nearest neighbors. The user was then able to set the minimal threshold for this brightness in order to identify a cell as potentially infected. Since higher pixel values are frequently obtained at the rear of the cell (in flow direction) only bright spots within 70% of the cell\u2019s length counted from the front of the cell were considered. As a last criterion, the calculated brightness was compared to the brightness of the cell directly surrounding the bright spot in order to eliminate cases of generally bright cells. For this a mean brightness value was formed from all pixels located within the two rectangular areas spanned from [k-3,l-1] to [k-2,l\u00a0+\u00a01] as well as [k\u00a0+\u00a02,l-1] to [k\u00a0+\u00a03,l\u00a0+\u00a01], where k is the pixel position of the bright spot in the flow direction and l is the pixel position of the bright spot orthogonal to the flow direction. Most of this analysis can be performed with ShapeOut, except for the last aspect of considering details of internal brightness, for which a custom-written Python script was used.\n\n### Blood measurements\n\nAll studies complied with the Declaration of Helsinki and involved written informed consent from all participants or their legal guardians. Ethics for experiments with human blood were approved by the ethics committee of the Technische Universit\u00e4t Dresden (EK89032013, EK458102015), and for human blood and LPS inhalation in healthy volunteers by the East of England, Cambridge Central ethics committee (Study No. 06/Q0108/281 and ClinicalTrialReference NCT02551614). Study participants were enrolled according to good clinical practice and recruited at the University Medical Centre Carl Gustav Carus Dresden, Germany, the Biotechnology Center, Technische Universit\u00e4t Dresden, Germany, or Cambridge University Hospitals, Cambridge, UK. Human blood and serum used to culture the malaria parasites was obtained from the Glasgow and West of Scotland Blood Transfusion Service; the provision of the material was approved by the Scottish National Blood Transfusion Service Committee For The Governance Of Blood And Tissue Samples For Non-Therapeutic Use. Venous blood was drawn from donors with a 20-gauge multifly needle into a sodium citrate S-monovette (Sarstedt) by vacuum aspiration. In case of blood volumes above 9 ml, blood was manually drawn via a 19-gauge multifly needle into a 40 ml syringe and transferred to 50 ml Falcon polypropylene tubes (BD) containing 4 ml 3.8% sodium citrate (Martindale Pharmaceuticals). For RT-DC measurements of blood, 50 \u00b5l of anti-coagulated blood were diluted in 950 \u00b5l MB and mixed gently by manual rotation of the sample tube. This fixed dilution of 1:20 was the result of optimization series to dilute as little possible, while still enabling the reliable detection of single cell events for both erythrocytes and leukocytes at typical cell densities found in blood. Measurements were typically carried out within 2 hr past blood donation unless stated otherwise. Two different gating settings were employed in the measurement software for erythrocyte and leukocyte acquisition, respectively (Figure 1\u2014figure supplement 1A). For erythrocytes, gates were essentially open allowing cell dimensions in flow direction from 0 \u00b5m to 30 \u00b5m. The leukocyte gate was set to a size of 5\u201316 \u00b5m in flow direction and\u00a0>5 \u00b5m perpendicular to it. This setting allowed filtering out single erythrocytes and almost all erythrocyte multiples. The leukocyte populations remained unaltered as confirmed in experiments with purified leukocytes at open gate settings. Using the leukocyte gate, the majority of thrombocytes was also ignored as they possess typical diameters of 2\u20133 \u00b5m. A small fraction of very large thrombocytes and microerythrocytes were still found within this gate as seen in Figure 1C and D. Mechanical analysis of these events constitutes an interesting challenge in that they can be detected and counted, but at present not tested for activation via their deformation given their very small size compared to the channel size, which was chosen to accommodate all cells found in blood. Measurements in the leukocyte gate were carried out over a fixed timespan of 15 min (to acquire typically 500 to 3000 leukocytes, depending on donor and disease state), followed by a separate measurement in the erythrocyte gate for a few seconds until data of 5,000\u201310,000 cells were acquired. Measurements for establishing the normal MORE blood phenotype in healthy human volunteers (Figure 1E), and all measurements directly compared to this norm, e. g., blood samples derived from patients, were carried out at a temperature of 30\u00b0C. The remaining measurements \u2014 fMLP stimulation, LPS stimulation, purified leukocyte subpopulations, malaria infection, and erythrocyte palmitoylation \u2014 were carried out at a temperature of 23\u00b0C. The viscosity of the MB was always adjusted to 15 mPa s at the different temperatures to keep the acting hydrodynamic stress and, thus, the resulting deformation regimes the same. An MB with the viscosity of 25 mPa s (to slow blood cell sedimentation in the tubing) was used in experiments for comparing the relative cell count results of leukocyte subpopulation by MORE analysis and conventional blood count (Figure 1F; Supplementary file 1). Here, the total flow rate was 0.06 \u00b5l/s (sample flow 0.015 \u00b5l/s, sheath flow 0.045 \u00b5l/s) and images were acquired at 4000 fps.\n\n### Leukocyte purification and identification\n\nLeukocyte subpopulations were purified by negative and/or positive magnetic-activated cell sorting (MACS) following the instructions provided by the manufacturer. Reagents for cell isolation with magnetic beads purchased from Miltenyi Biotec were MACSxpress Neutrophil Isolation Kit human (130-104-434), Monocyte Isolation Kit human (130-091-153), Basophil Isolation Kit II human (130-092-662), Pan T Cell Isolation Kit human (130-096-535) and CD3 MicroBeads (130-050-101), as well as Pan B Cell Isolation Kit human (130-101-638) and CD19 MicroBeads (130-050-301). EasySep Human Eosinophil Enrichment Kit (19256) was obtained from StemCell Technologies. The purity of the derived cell isolates was controlled twice by staining with 7-Color-Immunophenotyping Kit (Miltenyi Biotec, 5140627058), as well as additional single staining of each cell subset for fluorescence-activated cell sorting (FACS). Individual cell type staining antibodies from BioLegend were used for granulocytes (target: CD66ACE, staining: PE, order no.: 342304, RRID:AB_2077337), eosinophils (Siglec-8, APC, 347105, RRID:AB_2561401), B lymphocytes (CD19, FITC, 302205, RRID:AB_314235), NK cells (CD56, PE, 318305, RRID:AB_604093), T helper cells (CD4, PE-Cy7, 300511, RRID:AB_314079), T lymphocytes (CD3, APC, 300411, RRID:AB_314065), cytotoxic T cells (CD8, PacificBlue, 301026, RRID:AB_493111), monocytes (CD14, FITC, 325603, RRID:AB_830676), as well as eosinophils, basophils, mast cells, and mononuclear phagocytes (CD193, PE, 310705, RRID:AB_345395). For RT-DC measurements, purified cells were pelleted by centrifugation (200 g, 5 min) and re-suspended in MB at concentrations of about 5 \u00b7 106 cells/ml by repeated, gentle shaking.\n\n### In vitro malaria infection\n\nPlasmodium falciparum (P. falciparum, HB3 clone, NCBI Taxonomy ID: 137071) cultures were grown accordingly to standard protocols (Trager and Jensen, 1976). Two P. falciparum cultures were grown independently for 3 weeks, treated with Plasmion (Leli\u00e8vre et al., 2005) to enrich for the schizont stages, and then allowed to reinvade fresh red blood cells in a shaking incubator for 3 hr. The cultures were then treated with sorbitol (Lambros and Vanderberg, 1979), to remove all schizonts that had not reached full maturity; only ring stage parasites survive sorbitol treatment. The highly synchronized culture used for the RT-DC measurements therefore consisted of erythrocytes exposed to P. falciparum, into some of which parasites had invaded within a 3 hr window. Samples were removed at 4, 12, 16, 20, 24, 36, 42 and 46 hr post invasion for the RT-DC measurements. At the time of each measurement a thin blood smear was taken and stained with Giemsa\u2019s stain to assess the parasitemia and the stage of the parasites (Figure 2\u2014figure supplement 2A). A control sample of the same blood without the parasites underwent the identical treatment as the P. falciparum exposed samples. For RT-DC measurements, at each time point, 10 \u00b5l of the blood culture were diluted in 990 \u00b5l of the MB to a final concentration of 2.5 \u00b7 105 cells/\u03bcl. The total flow rate through the channel was 0.04 \u00b5l/s for all malaria infection experiments (sample flow rate 0.01 \u00b5l/s, sheath flow rate 0.03 \u00b5l/s). For experiments on growth and invasion depending on erythrocyte palmitoylation status, blood, treated as described in the palmitoylation section below, was shipped from Germany to Scotland in PBS buffer containing 15 mM glucose, 5 mM sodium pyruvate, 5 \u00b5M Coenzyme A, 5 mM MgCl2, 5 mM KCl, 130 mM NaCl. Parasites were synchronized by collecting P. falciparum mature stages (trophozoites and schizonts) from P. falciparum clone HB3 using MACS columns (Ribaut et al., 2008). The trophozoite and schizont enriched cultures were mixed with erythrocytes to achieve a starting parasitemia of 0.5\u20131.0%. Each erythrocyte type was set up in a separate culture flask at 3 ml volume and 5% hematocrit. The parasites were incubated in a shaking incubator at 37\u00b0C under standard culture conditions of gas and medium. Parasitemia was monitored on day 2 (post invasion) and day 4 (second round of invasion). For all experimental conditions, a minimum of 500 RBCs were counted. Experiments were repeated on three different days with erythrocytes of 3 different donors yielding the same results.\n\n### Palmitoylation of erythrocytes\n\nRed blood cells were pelleted by blood centrifugation (800 g, 5 min), plasma was removed, and the RBCs were pretreated with one volume of 1% fatty acid-free bovine serum albumin (BSA) in PBS-glucose (10 mM phosphate, 140 mM NaCl, 5 mM KCl, 0.5 mM EDTA, 5 mM glucose, pH\u00a07.4) at 37\u00b0C for 15 min, in order to lower the endogenous content of free fatty acids in their membrane pools, and washed three times with PBS-glucose. Cells were re-suspended in 3 volumes of incubation buffer, containing 40 mM imidazole, 90 mM NaCl, 5 mM KCl, 5 mM MgCl2, 15 mM D-glucose, 0.5 mM EGTA, 30 mM sucrose, 5 mM sodium pyruvate, 5 mM Coenzyme A, 50 mg PMSF/ml and 200 U penicillin/streptomycin (320 mOsm, pH 7.6). For inhibition of palmitoylation, 100 \u00b5M final concentration of 2-bromopalmitate (2 BP) was used. 100 \u00b5M palmitic acid (PA) was added as a control. The RBCs were incubated in a humidified incubator with 5% CO2 for 24 hr at 37\u00b0C. Prior to measurement, RBCs were pelleted, re-suspended in 1% BSA, incubated for 15 min at 37\u00b0C and washed two times with PBS-glucose. Glucose, sucrose, 2-bromopalmitate, palmitic acid, fatty acid free BSA, Coenzyme A, and PMSF were purchased from Sigma-Aldrich; Penicillin/streptomycin and sodium pyruvate from Gibco. RT-DC measurements were carried out at a room temperature of 23\u00b0C and with a total flow rate of 0.032 \u00b5l/s (sample flow 0.008 \u00b5l/s, sheath flow 0.024 \u00b5l/s) after adding 10 \u00b5l of the RBC suspension to 990 \u00b5l of MB. Experiments were carried out on two different days with erythrocytes of 4 different donors.\n\n### fMLP-induced neutrophil activation\n\nFor in vitro fMLP stimulation, blood was stimulated with 100 nM N-Formylmethionyl-leucyl-phenylalanine (fMLP; Sigma-Aldrich, 47729, 10 mg-F). Separate samples were analyzed in time intervals of 0\u201315 min, 15\u201330 min, 30\u201345 min, and 45\u201360 min after activation. During incubation all samples were stored in 2 ml Eppendorf tubes at 37\u00b0C at 450 rpm in a ThermoMicer C (Eppendorf). All experiments were performed within 2 hr maximum after blood drawing. Experiments were repeated with blood samples of 5 different donors on five different days. Due to experimental feasibility PBS controls of these donors were measured before fMLP stimulation and after the 60 min fMLP sample. Additionally, three control samples of different donors were treated similarly adding 10 \u00b5l 1 x PBS instead of fMLP and were analyzed in time intervals of 0\u201315 min, 15\u201330 min, 30\u201345 min, and 45\u201360 min after bleeding to exclude kinetic effects due to blood alteration with storage.\n\n### In vitro Staphylococcus aureus infection\n\nBlood stimulation was performed with Staphylococcus aureus Newmann strain (S. aureus; ATCC 25904; NCBI Taxonomy ID: 426430). For reproducible repetitive testing with competent bacterial strains cryo-aliquots of S. aureus were prepared as follows. Bacterial cells were pre-cultured to the log phase for synchronization of growth in BHI broth (Bacto Brain Heart Infusion, Becton Dickinson) at 37\u00b0C and transferred to a second culture. Aiming at a high bacterial virulence factor expression, the cells were grown to an early stationary phase in a 96-well-plate (100 \u00b5l, OD600nm 0.1837, Infinite 200 reader, TECAN), pelleted by centrifugation (2671 g for 5 min at 4\u00b0C), washed two times in PBS and re-suspended in cell-freezing media (Iscove Basal Medium, Biochrom) with 40% endotoxin-free FBS (FBS Superior, Biochrom) at a final concentration of 2.54\u22c5109 CFU/ml. Aliquots were immediately frozen at \u201380\u00b0C and only thawed once for a single experiment. Blood stimulation and measurement were carried out at 30\u00b0C temperature for 15 min with one multiplicity of infection (MOI) in 1:20 RT-DC measurement buffer. MOI (0.9\u20131.09) was controlled retrospectively by granulocyte count and 5% sheep blood agar culture (Columbia agar, bioM\u00e9rieux) at 37\u00b0C and bacterial colony counting on the following day. PBS blood controls were conducted before and after S. aureus blood stimulation. The experiment was repeated with blood of 4 different donors on four different days. All experiments were performed within 2 hr after blood drawing.\n\n### LPS inhalation\n\nE. coli lipopolysaccharide (LPS) 50 \u00b5g (GSK) was administered to healthy, never-smoker volunteers via a specialized dosimeter (MB3 Markos Mefar) 90 min prior to injection of autologous 99mTechnetium-Hexamethylpropleneamine-oxime labeled neutrophils. Temperature, forced expiratory volume in 1 s, forced ventilator capacity and triplicate blood pressures were recorded prior to, and at 30 min post LPS administration. RT-DC measurements were obtained at baseline, 90, 135, 210, 330, and 450 min post LPS.\n\n### Respiratory tract infections (RTI) and acute lung injury (ALI)\n\nPatient inclusion criteria for RTI: Patients with clinical signs of lower RTI, a core temperature\u00a0>38.5\u00b0C and the need for supplemental oxygen were recruited on the day of hospitalization. Only patients without treatment prior to hospitalization were included. None of the included patients received antibiotic treatment for reconstitution. Patient inclusion criteria for ALI: Patients diagnosed with ALI according to the criteria of the North American European Consensus Conference (NAECC) (Bernard et al., 1994) and without underlying diseases prior to ALI were included. All blood samples were analyzed within 30 min of venipuncture. Size and deformation of blood leukocytes was characterized for all blood cells in which the area within the original cell contour differed less than 5% from the area within the convex hull contour.\n\n### Acute myeloid/lymphatic leukemias\n\nSamples from patients diagnosed with ALL or AML based on cytogenetic, molecular-genetic and morphological criteria according to WHO classification from 2008 (Vardiman et al., 2009) were assessed by MORE blood analysis on the day of diagnosis. In order to evaluate mechanical properties of AML and ALL blast cells in diluted whole blood, several brightness and size gates had to be combined as shown in Figure 4A\u2013C. The AML gate spanned the regions normally used for basophils and monocytes. The ALL gate spanned the regions used for lymphocytes, basophils and monocytes. In all AML cases, blasts made up\u00a0>80% of all leukocytes, and up to 99% of events in the AML gate. In all ALL cases, blasts made up\u00a0>60% of leukocytes, and up to 85% of events in the ALL gate. The blast cell fraction was obtained from the standard differential blood count, by comparing the number of blast cells with the number of normal cells that would also populate the respective blasts gate in MORE analysis.\n\n### Isoelasticity lines and young\u2019s moduli\n\nRT-DC data of cell size and deformation can be converted into apparent Young\u2019s moduli using theoretical models (Mietke et al., 2015) and numerical simulations (Mokbel et al., 2017). To ensure a correct conversion, effects of shear thinning of the MC medium and a deformation offset due to pixelation were taken into account as described in Herold, 2017. The calculation of apparent Young\u2019s moduli for AML and ALL blasts and isoelasticity lines are based on the assumption that cells can be approximated as purely elastic, homogeneous isotropic spheres. This assumption is equivalent to using the Hertz model to extract an apparent Young\u2019s modulus of cells in atomic force microscopy-enabled nano-indentation experiments. The conversion of deformation and size into Young\u2019s modulus for every cell measured is included in the analysis software ShapeOut.\n\n### Statistics\n\nThroughout, the number of cells in a single measurement is denoted as N, while the number of independently repeated experiments \u2014 typically the number of donor or patient samples measured, as stated \u2014 is denoted as n. For comparison of different donors or treatment conditions the median of deformation and cell size of a specific cell population was used. In order to evaluate effects of a disease we calculated a 2D confidence ellipse at 68.3% (or one sigma) as well as 95.5% (or two sigma) for the control group/norm norm of healthy human blood donors in the space of cell size and deformation. The confidence ellipse was calculated from the covariance matrix of the data and the calculation was carried out with OriginPro 2015 (Originlab). Statistically significant differences between two sets of experiments were checked to the significance level of p<0.05 by comparing the groups of individual median values of an experiment using a Kruskal-Wallis one-way ANOVA as implemented in OriginPro 2015 (Originlab). In erythrocyte MORE analysis in malaria infection and palmitoylation, statistically significant differences were checked using linear mixed models in combination with a likelihood ratio test to obtain significance levels for the comparison of the complete populations (Herbig et al., 2017). This analysis can be performed in the software ShapeOut. One, two, or three asterisks were awarded for significance levels p<0.05, p<0.01 and p<0.001, respectively. In manual counts of malaria infection in RBCs, statistical analyses were performed using a \u03c72 test with Bonferroni correction (adjusted statistical significance for p<0.0125) to compare the numbers of infected and non-infected erythrocytes between erythrocyte samples, except where number of parasite infected cells was zero, in which case Fisher`s exact test was used. The standard deviation for the parasitemia was calculated assuming a binomial random variable as $SD=\\sqrt{N\u2219p(1-p)}$, where N is the number of cells counted and p is the fraction of infected cells.\n\n### Data availability\n\nThe raw data of all measurements are available from the Dryad Digital Repository\u00a0(Toepfner et al., 2017). The TDMS files can be read, processed, and analyzed using ShapeOut, a custom written, open source software.\n\n### Code availability\n\nRT-DC measurement software is commercially available. The analysis software ShapeOut is available as an open source application on GitHub (https://github.com/ZELLMECHANIK-DRESDEN/ShapeOut/releases;\u00a0M\u00fcller, 2017).\u00a0A copy is archived at https://github.com/elifesciences-publications/ShapeOut.\n",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "5d6c02d2-332e-459c-91a8-7df12199bf25",
+      "submission_id": "411ad96a-71df-4a78-914c-5296fcc37cde",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia Bassereau, Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29213.031](https://doi.org/10.7554/eLife.29213.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Detection of human disease conditions by single-cell morpho-rheological phenotyping of whole blood\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ivan Dikic as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dennis Discher (Reviewer #1); Amy C Rowat (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The editors and reviewers agree that this work is interesting and potentially quite useful however, as your effort is directed at the development of a new technique rather than a discovery with novel conclusions, we feel it will be more appropriately published as a Tools and Resources paper rather than as a Research Article.\n\nSummary:\n\nBlood cell numbers, sizes, and deformability have been quantified for many decades at the single cell level under normal and numerous diseased conditions for 2-3 decades or more, although throughput for deformation measures is more limited. This manuscript describes a microfluidic approach to the above quantitation, called MORE (cell-by-cell morpho-rheological) analysis, capable of treating around 1000 blood cells/s, from 10 \u00b5L drop of blood only, adding deformation information for each cell type. The principle of the method is based on image acquisition by high-speed video-microscopy and post-acquisition image analysis. The method correctly phenotypes different blood cells using both their typical projected area in the constriction as well as their compactness or their deformation. Adding a third parameter for classification represented by the \"brightness\" of the cells, the authors are successfully able to reproduce most of the classical and simple hematological phenotyping present on the market of automated blood counts without any staining steps. Moreover, the authors provide a comprehensive set of examples from leukemia patients, or malaria infection, bacterial and viral infections as well as donor samples with anti-coagulants.\n\nOverall, this manuscript is well written, interesting and timely. Its strength is clearly the technology, with an impressive collection of data validating expectations, and only a few key concerns temper enthusiasm. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\n1) The authors over-use the acronym MORE, in particular in the captions. They should replace these with text that highlights the new biological finding or concept that is learned. Moreover, the authors should highlight what is scientifically new for the well-established field of hemorheology.\n\n2) Statistical significance and confidence should be clarified at different places.\n\n- Figure 3D the number of EBV cells is not provided. Also, authors define n as number of independent experiments, does this reflect the number of patients or the same patient cells measured over independent experiments? It would be helpful to show single cell distributions for EBV given the focus of the paper.\n\n- The authors need to comment on the utility and statistical significance of deformation measurements in Figure 4D for the 4-6 patients with AML or ALL, since the deformation data adds little to nothing beyond cell size measurements.\n\n- Given that Figure 4E-H is a time series generated from just one patient, it is at least important to provide measures of statistical significance and confidence. Each datapoint is the median for a given day, and so error bars should be added for each day. An asterisk could be added to each datapoint that differs from the first, or some other scheme. More important, given that this is a new method, some type of daily standard (i.e. normal control) should have been run and shown in parallel with the patient measurements. Knowledge of how this data compare to conventional biomarkers/existing methods for analysis following treatment would be helpful to benchmark RTDC.\n\n3) Figure 2D,E shows control vs exposed but then data shown in Figure 2F also includes infected. The difference and disease relevance of exposed vs infected populations should be clarified for the reader.\n\nThe authors claim the greater deformation reduction of infected cells vs entire exposed population (Figure 2F), which may be explained by clearance of stiff cells by the spleen. But if stiffer cells are filtered out by the spleen, this would result in a lower deformation reduction.\n\nIt is unclear why the 2BP and PA treatments were performed. It would be helpful for the reader to clarify the motivation for these treatments as they relate to pf infection.\n\n4) Subsection \u201cMORE analysis of leukocytes\u201d what is the timepoint of mechanical measurements of activated neutrophils published in the older reports? If measurements were performed at different time points, with different methods that deform cells on vastly different timescales, it does not seem to be a conflict.\n\nNeutrophils were less deformable after fMLP treatment, but became more deformable and larger at longer time points. Given that 'larger cells of identical stiffness should deform more in RTDC' (subsection \u201cMORE analysis of malignant transformed blood cells\u201d), how can these results show that fMLP cells, which are bigger, are less deformable? If larger cells are deforming more in RTDC (and when deformed by inertial flows as in Gossett et al.), then it is difficult to compare to previous methods.\n",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6cc39259-cbbd-46ed-a880-fd1b58c269d4",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C1",
+      "claim": "Blood analysis provides crucial health status information.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood is arguably the most important bodily fluid and its analysis provides crucial health status information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "fea0f041-1e5e-4a8d-8e15-573387fc1509",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C2",
+      "claim": "The differential blood count determines the frequency of all major blood cells and is a routine measure to narrow down diagnosis in clinical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "A first routine measure to narrow down diagnosis in clinical practice is the differential blood count, determining the frequency of all major blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "6416f356-292c-4855-9774-3dad8438d6b4",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C3",
+      "claim": "MORE analysis can identify all major blood cells in a drop of blood at rates of 1000 cells/sec without labeling, enrichment or separation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a drop of blood we can identify all major blood cells and characterize their pathological changes in several disease conditions in vitro and in patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated throughout the manuscript with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "cedb56f1-2b82-4ad9-8c7f-2f6c103f722f",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C4",
+      "claim": "Blood is responsible for the distribution of oxygen and nutrients and is centrally involved in the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood is responsible for the distribution of oxygen and nutrients, and centrally involved in the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "35143226-2c16-407d-932a-e2998ff7b148",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C5",
+      "claim": "The complete blood count is a basic, routine measure in clinical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete blood count, the analysis of presence and frequency of all major blood cells, constitutes a basic, routine measure in clinical practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "b427098b-3af1-4c7c-98bb-8aa38ec13c74",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C6",
+      "claim": "Alterations in physical properties of blood could cause or reflect pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that the flow of blood throughout the body will be determined by its physical properties in the vasculature, and their alterations could cause or reflect pathological conditions (Lichtman, 1973; Baskurt and Meiselman, 2003; Popel and Johnson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "15c0c11c-71c9-45f6-ae11-420dca9008d0",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C7",
+      "claim": "Whole blood rheology has not resulted in wide-spread diagnostic application, probably due to the dominant importance of erythrocytes at the expense of sensitivity to leukocyte properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Probably due to the dominant importance of erythrocytes, at the expense of sensitivity to leukocyte properties, whole blood rheology has not resulted in wide-spread diagnostic application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of clinical adoption.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "1321d761-704f-4b6e-9fd1-a53cf8d123ee",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C8",
+      "claim": "Leukocyte activation, leukemia, and malaria infection lead to readily quantifiable mechanical alterations in major blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Various cell mechanics measurement techniques, such as atomic force microscopy (Worthen et al., 1989; Rosenbluth et al., 2006; Lam et al., 2008), micropipette aspiration (Lichtman, 1973; Lichtman, 1970; Dombret et al., 1995; Ravetto et al., 2014) or optical traps (Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Paul et al., 2013), have been used to show that leukocyte activation, leukemia, and malaria infection, amongst many other physiological and pathological changes, lead to readily quantifiable mechanical alterations in the major blood cells (Worthen et al., 1989; Lautenschl\u00e4ger et al., 2009; Schmid-Sch\u00f6nbein et al., 1973; Suresh et al., 2005; Rosenbluth et al., 2008; Bow et al., 2011; Gossett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "690f6b77-af39-4c54-b188-d13f16af06b0",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C9",
+      "claim": "Previous proof-of-concept studies on cell mechanics have been done on few tens of specifically isolated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These proof-of-concept studies have so far been done on few tens of specifically isolated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the limitations of prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "104c58ff-e5f0-402a-8a47-26ac36545b56",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C10",
+      "claim": "RT-DC analyzes human blood without any labeling or separation at rates of 1000 cells/sec.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimicking capillary flow, we analyze human blood without any labeling or separation at rates of 1000 cells/sec.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary technical capability demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "7d5fe1bd-196d-4450-8c33-eabb9c906229",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C11",
+      "claim": "MORE analysis can sensitively detect morphological and rheological changes of erythrocytes in spherocytosis and malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that we can sensitively detect morphological and rheological changes of erythrocytes in spherocytosis and malaria infection, of leukocytes in viral and bacterial infection, and of malignant transformed cells in myeloid and lymphatic leukemias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated with experimental data in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "0bc8ce37-e10b-4550-9839-60c217fa0b0c",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C12",
+      "claim": "MORE analysis can sensitively detect morphological and rheological changes of leukocytes in viral and bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that we can sensitively detect morphological and rheological changes of erythrocytes in spherocytosis and malaria infection, of leukocytes in viral and bacterial infection, and of malignant transformed cells in myeloid and lymphatic leukemias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated with experimental data in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "e2b70040-f56a-49a5-91f2-392a79eee836",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C13",
+      "claim": "MORE analysis can sensitively detect morphological and rheological changes of malignant transformed cells in myeloid and lymphatic leukemias.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that we can sensitively detect morphological and rheological changes of erythrocytes in spherocytosis and malaria infection, of leukocytes in viral and bacterial infection, and of malignant transformed cells in myeloid and lymphatic leukemias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated with experimental data in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "05be453c-d6df-4d02-8798-9b635e54cebb",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C14",
+      "claim": "50 \u00b5l of citrate-anticoagulated blood was diluted in 950 \u00b5l of measurement buffer for RT-DC measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to establish the normal MORE phenotype of cells found in blood, we obtained venous, citrate-anticoagulated blood of healthy donors, of which 50 \u00b5l was diluted in 950 \u00b5l of measurement buffer with a controlled elevated viscosity, but without any additional labeling, sorting, or enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "9764363f-355c-40e8-bc20-ba68ac76e93e",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C15",
+      "claim": "Brightfield images of cells deformed by hydrodynamic shear stresses in the channel were obtained continuously by RT-DC.",
+      "claim_type": "EXPLICIT",
+      "source": "Brightfield images of the cells, deformed by hydrodynamic shear stresses in the channel (Mietke et al., 2015), were obtained continuously by RT-DC (Otto et al., 2015) (see Materials and methods; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement technique with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "31bfacb1-90ee-4463-9e0a-cc6770c5659f",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C16",
+      "claim": "RT-DC images revealed distinct differences in overall morphology, brightness, and amount of deformation between all major cell types found in blood.",
+      "claim_type": "EXPLICIT",
+      "source": "These images revealed distinct differences in overall morphology, brightness, and amount of deformation between all major cell types found in blood (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "39bcc61a-df5b-4f53-866d-0fe304aaa63a",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C17",
+      "claim": "RT-DC enabled continuous, real-time quantification of cross-sectional area and deformed shape at measurement rates of 100\u20131000 cells/sec.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-DC further enabled the continuous, real-time quantification of the cross-sectional area and of the deformed shape (see detailed description in Materials and methods and Figure 1\u2014figure supplement 1) of an, in principle, unlimited number of cells at measurement rates of 100\u20131000 cells/sec (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical capability with reference to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "b5aed9e0-8193-43f2-b290-1f78309f4e82",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C18",
+      "claim": "Size and brightness alone were sufficient for the identification of cell types in MORE analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, size and brightness alone \u2014 parameters not unlike those accessible by light scattering analysis in standard flow cytometers \u2014 were sufficient for the identification of the cell types (Figure 1D), so that deformation, as an additional and independent parameter, was available for assessing their functional changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "d3056d6c-ed06-4435-a662-fb2f6b78cd1a",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C19",
+      "claim": "The identity of individual cell populations by size and brightness was established by magnetic cell sorting, controlled by fluorescence immunophenotyping, and subsequent MORE analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the individual cell populations by size and brightness was established by magnetic cell sorting, controlled by fluorescence immunophenotyping, and subsequent MORE analysis (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation method with reference to supporting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "2926583e-4612-4464-96ee-68253f2fd4b9",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C20",
+      "claim": "Erythrocytes are clearly separated from other cells due to their much greater deformation and lower brightness.",
+      "claim_type": "EXPLICIT",
+      "source": "A key feature is the very clear separation of the abundant erythrocytes (red blood cells; RBCs) from other cells as a result of their much greater deformation and lower brightness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4e277858-c081-45a0-823b-a6528f2c7f5a",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C21",
+      "claim": "The clear separation of erythrocytes gives access to leukocyte properties directly in diluted whole blood without hemolysis or other separation steps.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature gives access to leukocyte properties directly in diluted whole blood, without the potentially detrimental effects of hemolysis (see Figure 1\u2014figure supplement 3) or other separation steps, which are required for analysis with cell mechanics techniques with lower specificity and throughput, or non-continuous measurement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data showing clear separation and comparison with hemolysis effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "aaebed4c-fedc-4f17-8d72-9a18304d6f30",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C22",
+      "claim": "MORE phenotyping yielded identical results in repeated measurements of blood from the same donor with sodium citrate as an anti-coagulant and for different storage times.",
+      "claim_type": "EXPLICIT",
+      "source": "In extensive tests of the variability of this approach, MORE phenotyping yielded identical results in repeated measurements of blood from the same donor, with sodium citrate added as an anti-coagulant and for different storage times (Figure 1\u2014figure supplement 4), between different donors of both sexes (Figure 1\u2014figure supplement 5), and blood samples taken at different times during the day (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the reproducibility data in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "36bb4250-ae92-4191-af25-74c6e704031a",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C23",
+      "claim": "MORE analysis provided the identity and frequency of all major white blood cells as with a conventional differential blood count.",
+      "claim_type": "EXPLICIT",
+      "source": "MORE analysis provided the identity and frequency of all major white blood cells as with a conventional differential blood count (Figure 1F; Supplementary file 1) \u2014 obtained from a single drop of blood, with minimal preparation, and within 15 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison data in Figure 1F and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "435badfe-371b-49e5-846c-4262e5d56076",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C24",
+      "claim": "Spherocytosis is a hereditary disease in which genetic changes cause abnormal shape and mechanical properties of erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spherocytosis is a prototypical hereditary disease in humans in which genetic changes (here ankyrin and spectrin mutations) cause abnormal shape and mechanical properties of erythrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "e6b08ba0-c51b-4dff-a8e9-98e6ca44e5ca",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C25",
+      "claim": "Current diagnosis of spherocytosis is based on detection of abnormal cell shapes in a blood smear, followed by assessment of osmotic fragility.",
+      "claim_type": "EXPLICIT",
+      "source": "Current diagnosis is based on the detection of abnormal cell shapes in a blood smear, followed up by assessment of the osmotic fragility quantified by Acidified Glycerol Lysis Time (AGLT) or by osmotic gradient ektacytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current clinical diagnostic practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "d504adad-6ebc-45e0-964f-ab71bd1d1cbd",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C26",
+      "claim": "MORE analysis of blood from patients with spherocytosis revealed significantly less deformed and smaller erythrocytes than normal.",
+      "claim_type": "EXPLICIT",
+      "source": "MORE analysis of the blood of patients with spherocytosis directly revealed significantly less deformed and smaller erythrocytes than normal (Figure 2A\u2013C) as the functional correlate of the cytoskeletal mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data in Figure 2A-C and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "c0c2ea84-f4b9-4ab8-9b96-eb31fbecc8db",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C27",
+      "claim": "The differences in erythrocyte deformation and size in spherocytosis are clear enough that MORE analysis can serve as a fast primary screening test.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences are so clear (Figure 2\u2014figure supplement 1) that this analysis can serve as a fast primary and cheap screening test for spherocytosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the clear differences shown in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "082ea047-693a-41df-9089-851cabef123e",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C28",
+      "claim": "A change in RBC deformability has been implicated in malaria pathogenesis, since single cells infected by parasites have been reported to be stiffer.",
+      "claim_type": "EXPLICIT",
+      "source": "A change in RBC deformability has also been implicated in malaria pathogenesis, since single cells infected by parasites have been reported to be stiffer (Bow et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "60ddf762-9aab-481e-8811-8d312d219645",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C29",
+      "claim": "The gold standard in malaria diagnosis is still a manual thick blood smear analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This insight has not progressed towards clinical application and the gold standard in malaria diagnosis is still a manual thick blood smear analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "673b7cb5-0f9a-45dc-a9e9-da647459844d",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C30",
+      "claim": "RBCs exposed in vitro to Plasmodium falciparum showed a clear, significant, and increasing reduction in deformation detectable after 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a clear, significant, and increasing reduction in the deformation of the entire exposed RBC population detectable after 4 hr (Figure 2D\u2013F; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the time course data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "6d5b7fa3-f349-4784-962a-5333d9579f00",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C31",
+      "claim": "Characteristic features associated with parasite maturation inside RBCs permitted direct identification of positively infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the individual cell images revealed the appearance of characteristic features likely associated with the maturation of parasites inside a subset of RBCs (Figure 2D,E insets; Figure 2\u2014figure supplement 2). These features permitted the direct identification of positively infected cells, whose relative frequency peaked at 36 hr (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by image analysis and quantification in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "9efd8c6b-a1f3-4860-a959-6a066a807b3b",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C32",
+      "claim": "Overtly infected RBCs showed an even greater reduction in deformation than the entire exposed population.",
+      "claim_type": "EXPLICIT",
+      "source": "The separate assessment of overtly infected cells showed an even greater reduction in deformation than observed in the entire exposed population (Figure 2F; Figure 2\u2014figure supplement 2), which \u2014 extrapolating our in vitro results to the situation in vivo \u2014 relates to the possibility of clearance of stiff, infected cells from the circulation by the spleen (Cranston et al., 1984; Shelby et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data with inference about in vivo implications supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4fed8eb6-37bb-4564-87f2-362c972313cd",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C33",
+      "claim": "A bystander stiffening of exposed but non-infected cells seems involved in malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this small fraction of stiffer cells alone cannot account for the reduced deformation of the whole population, so that a bystander stiffening of exposed but non-infected cells seems involved (Paul et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data with supporting citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "3b46c2f6-d9fa-40ee-a91d-70a19437dd77",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C34",
+      "claim": "Reduced membrane-cytoskeleton interactions have been correlated with elliptocytic RBCs and resistance to P.f. infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced membrane-cytoskeleton interactions have previously been correlated with elliptocytic RBCs and resistance to P.f. infection (Chishti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4db7b328-15c4-435d-9092-2a8c3be5fee0",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C35",
+      "claim": "2 BP-treated RBC samples showed changes in deformation with a concurrent reduction in P.f. infectivity compared to buffer control or PA-treated RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 2 BP-treated RBC samples showed changes in deformation (Figure 2G) with a concurrent reduction in P.f. infectivity (Figure 2H), compared to buffer control or RBCs treated with palmitic acid (PA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data in Figure 2G and 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "063ccb2c-a6be-4ad9-b955-56767d441368",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C36",
+      "claim": "Palmitoylation of RBC proteins is important for RBC morphology and infectivity of P.f.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both, 2 BP and PA readily accumulate in the membranes, but only 2 BP causes a reduction in infectivity of P.f., we suggest that palmitoylation of RBC proteins is important for RBC morphology and infectivity of P.f.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental comparison of 2BP and PA treatments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "d2f6d6c3-3453-4a90-a397-c2a5a9694000",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C37",
+      "claim": "Leukocyte mechanics has not been utilized for diagnostic purposes, likely due to increased stiffness compared to RBCs and lack of convenient techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "While RBC mechanics has already been used for clinical diagnostics using rheoscopes and ektacytometers for over 40 years (Schmid-Sch\u00f6nbein et al., 1973; Cranston et al., 1984; Reid et al., 1976), leukocyte mechanics has not been utilized for diagnostic purposes. This is likely due to their increased stiffness compared to RBCs and a lack of convenient techniques capable of sufficiently deforming them in suspension \u2014 their physiological state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations and knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "94471f7b-8642-4e25-83e0-471b865da9d2",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C38",
+      "claim": "Proof-of-concept studies showed that neutrophil activation leads to stiffening, in line with the pronounced actin cortex that is a hallmark of neutrophil activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there have been proof-of-concept studies on the mechanical changes associated with activation of isolated neutrophils showing a stiffening, in line with the pronounced actin cortex that is a hallmark of neutrophil activation (Worthen et al., 1989; Rosenbluth et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "d90f9e68-f6cd-4a3a-b4ee-f5541bf00e9a",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C39",
+      "claim": "MORE analysis of in vitro neutrophil activation in blood with fMLP showed neutrophils were less deformed and smaller within the first 15 min, followed by reversal to more deformed and larger cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MORE analysis of the in vitro neutrophil activation in blood with the bacterial wall-derived tripeptide fMLP confirmed that neutrophils were indeed less deformed and smaller within the first 15 min post fMLP treatment. Interestingly, the subsequent time-course showed a reversal to more deformed and larger cells (Figure 3A,B; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the time course data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "5b25afb9-4f16-4923-8fdb-1fc2e6abfb72",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C40",
+      "claim": "The apparent Young's modulus of neutrophils increased from E = 742 \u00b1 12 Pa to E = 853 \u00b1 20 Pa during the first 15 min after fMLP stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we also calculated the apparent Young's modulus of the cells, which increased from E = 742 \u00b1 12 Pa to E = 853 \u00b1 20 Pa (mean \u00b1SEM. p=0.009, n = 5) during the first 15 min, and then subsequently reverted to values statistically indistinguishable but slightly lower than before stimulation (15\u201330 min: E = 717 \u00b1 9 Pa, p=0.347; 30\u201345 min: E = 719 \u00b1 7 Pa, p=0.117; 45\u201360 min: E = 731 \u00b1 11 Pa, p=0.465).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "10863f87-6798-4a54-aef6-e65e3f1b8fb5",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C41",
+      "claim": "Such mechanical activation kinetics of neutrophils has not been reported before as the lower measurement rate of previous techniques yielded only cumulative data.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mechanical activation kinetics of neutrophils has not been reported before as the lower measurement rate of previous techniques yielded only cumulative data over the time period investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the novelty of the findings based on knowledge of prior techniques.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "856b9786-af70-4293-a8bd-355c588f41e0",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C42",
+      "claim": "Blood from patients with acute lung injury of bacterial origin had larger and more deformed neutrophils compared to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Congruently, blood taken from patients with an acute lung injury (ALI) of most likely bacterial origin had larger and more deformed neutrophils compared to healthy controls (Figure 3C,E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patient data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "347695c5-ed64-401d-8bf7-4f2add97e01b",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C43",
+      "claim": "The same neutrophil response was found in blood samples from patients hospitalized with viral respiratory tract infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The same neutrophil response was found in blood samples from patients hospitalized with viral respiratory tract infections (RTI; Figure 3D,E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patient data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4189f51c-046c-42f3-9903-66757f672f97",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C44",
+      "claim": "Monocytes responded by a size increase in both RTI and ALI patients and after in vitro stimulation with S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "Also monocytes responded by a size increase in both RTI and ALI patients and after in vitro stimulation with S. aureus, but showed a significantly increased deformation only in viral RTI, while blood lymphocytes did not show any consistent response (Figure 3F\u2013H; Figure 3\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "175e4847-5469-47e0-a4f1-705109216830",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C45",
+      "claim": "In patients with acute EBV infection, both monocytes and lymphocytes showed an increase in cell size and deformation, while neutrophils showed less of a response.",
+      "claim_type": "EXPLICIT",
+      "source": "The lymphocyte response changed when analyzing blood of patients with acute Epstein-Barr-virus (EBV) infection, which is known to also stimulate the lymphatic system, where both monocytes and lymphocytes showed an increase in cell size and deformation, while neutrophils showed less of a response (Figure 3I\u2013L, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patient data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "67aabd97-0ae6-4f0c-a5c1-ab3af418a038",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C46",
+      "claim": "MORE blood analysis might be sufficiently sensitive to distinguish bacterial from viral infections by the differential response of selective blood leukocyte populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that MORE blood analysis might be sufficiently sensitive to distinguish bacterial from viral infections, and potentially other inflammatory diseases, by the differential response of selective blood leukocyte populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference from the observed differential responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "3ce66752-5005-49a6-9ec7-45d2bac6b5af",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C47",
+      "claim": "MORE analysis of blood from patients with AML revealed less deformed cells but of about the same size compared to healthy and fully differentiated myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MORE analysis of the blood of patients with acute myeloid (AML) and lymphatic leukemias (ALL) revealed the new presence of atypical cell populations \u2014 the characteristic immature blasts not normally present in healthy donors (Figure 4A\u2013C). Cell populations gated for AML revealed less deformed cells but of about the same size compared to healthy and fully differentiated myeloid cells (Figure 4D, Figure 4\u2014figure supplement 1), in line with previous results (Rosenbluth et al., 2006; Lichtman, 1970; Dombret et al., 1995; Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patient data with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "45a9b2fc-1640-4579-8807-4623157f9002",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C48",
+      "claim": "ALL blast cells were larger in size compared to mature lymphocytes, but did not show any consistent trend in deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "ALL blast cells were larger in size compared to mature lymphocytes, but did not show any consistent trend in deformation (Figure 4D; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the patient data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "333a9939-c105-4b16-80e0-a4e6243a97e6",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C49",
+      "claim": "Mature lymphocytes, ALL blasts, mature myeloid cells, and AML blasts have increasing levels of stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results show that mature lymphocytes, ALL blasts, mature myeloid cells, and AML blasts have increasing levels of stiffness, consistent with the composite findings of previous reports (Lichtman, 1973; Rosenbluth et al., 2006; Lam et al., 2008; Lichtman, 1970; Dombret et al., 1995; Lautenschl\u00e4ger et al., 2009; Ekpenyong et al., 2012; Rosenbluth et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data with supporting citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "6066297c-e82c-4626-bc75-8a64b1fe67e2",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C50",
+      "claim": "The stiffness pattern in blood cancers is different from the general trend in solid tumors, where cancer cells are found to be more deformable than their healthy counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is quite different than the general trend in solid tumors, where cancer cells are found to be more deformable than their healthy counterparts (Suresh, 2007; Kumar and Weaver, 2009; Guck and Chilvers, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior research supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "0b8fe35f-57fd-45c1-a157-8397e4993e14",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C51",
+      "claim": "The differential stiffness of AML and ALL blasts has been implicated in the occurrence of leukostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensibly, the differential stiffness of AML and ALL blasts, and its potential further increase with chemotherapy, has been implicated in the occurrence of leukostasis (Lam et al., 2008; Rosenbluth et al., 2008; Lam et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "d8c0d57c-3b18-4467-8bec-62c277fb0788",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C52",
+      "claim": "By following the ALL blast population in a patient over 12 days of methylprednisolone treatment, the return to the normal morpho-rheological fingerprint of blood could be monitored.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by following the ALL blast population in a patient over 12 days of methylprednisolone treatment we could monitor the return to the normal morpho-rheological fingerprint of blood (Figure 4E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the longitudinal patient data in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "8fc8ea64-b846-422f-967d-539ce1df3c3f",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C53",
+      "claim": "In pediatric ALL, the number of blasts at day eight after start of methylprednisolone treatment is predictive of the relapse rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to treatment is one of the most powerful prognostic in vivo markers of leukemia survival. In pediatric ALL the number of blasts at day eight after start of methylprednisolone treatment is predictive of the relapse rate (<1000 blasts/\u00b5l of blood: relapse rate 20\u201330%; >1000 blasts/\u00b5l of blood: relapse rate 50\u201380%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about prognostic markers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "02e26fe9-fecf-437f-8f25-05ab9b1cfc65",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C54",
+      "claim": "MORE analysis provides at least the same information as conventional morphological analysis, but in a shorter amount of time and with smaller sample sizes required.",
+      "claim_type": "EXPLICIT",
+      "source": "MORE analysis provides at least the same information as conventional morphological analysis, but in a shorter amount of time and with smaller sample sizes required (for a comparison between MORE analysis and conventional biomarkers, see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparison with conventional methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "f6abaeee-6b99-4f6b-9a80-88594d500c94",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C55",
+      "claim": "RT-DC stands out among microfluidic techniques because it can continuously monitor an unlimited number of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the latter techniques, RT-DC stands out because it can continuously monitor an, in principle, unlimited number of cells, which enables the direct sensitive assessment of the state of all major cell types found in blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical capability of the method.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4e520b66-8cc6-4e33-bc54-7601d28cf2dc",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C56",
+      "claim": "A volume as small as 10 \u00b5l can be analyzed cell-by-cell with only dilution in measurement buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "A volume as small as 10 \u00b5l can be analyzed cell-by-cell, with only dilution in measurement buffer to adjust cell density and prevent sedimentation, but no labeling, enrichment or separation, which could otherwise cause inadvertent activation of blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical capability and sample requirements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "97bb0b45-de82-4ea2-a8cc-84975ed94531",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C57",
+      "claim": "Cell mechanics and morphology are inherent and sensitive markers intimately linked to functional changes associated with the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell mechanics and morphology are inherent and sensitive markers intimately linked to functional changes associated with the cytoskeleton (Chimini and Chavrier, 2000; Fletcher and Mullins, 2010; Kasza et al., 2007; Patel et al., 2012; Salbreux et al., 2012) and other intracellular shape-determining and load-bearing entities (Rowat et al., 2006; Munder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "63176f69-4e2d-46ba-8ea9-8beaa7ffc38f",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C58",
+      "claim": "Label-free, disease-specific morpho-rheological blood signatures are a novel resource for generating hypotheses about underlying molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, label-free, disease-specific morpho-rheological blood signatures are a novel resource for generating hypotheses about the underlying molecular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential applications of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "693cdca5-887c-43cd-b625-bc8d40cae2f4",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C59",
+      "claim": "At present, MORE phenotyping provides a sensitive, but not a very specific marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, at present, MORE phenotyping provides a sensitive, but not a very specific marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of current limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "a0bb08c1-fee6-4f5d-9cb3-b743959927a7",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C60",
+      "claim": "The measurement buffer viscosity was adjusted to 15 mPa s at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "For RT-DC measurements, cells were suspended in a viscosity-adjusted measurement buffer (MB) based on 1x phosphate buffered saline (PBS) containing methylcellulose. The viscosity was adjusted to 15 mPa s at room (and measurement) temperature, determined using a falling ball viscometer (Haake, Thermo Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "4a17805b-bb8e-4108-a7f7-c5372e06aafc",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C61",
+      "claim": "Measurements were carried out at a total flow rate of 0.12 \u00b5l/s with a sample flow rate of 0.03 \u00b5l/s and a sheath flow rate of 0.09 \u00b5l/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements were carried out at a total flow rate of 0.12 \u00b5l/s with a sample flow rate of 0.03 \u00b5l/s and a sheath flow rate of 0.09 \u00b5l/s unless stated otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "17fd075e-2cb0-4c2c-a987-9e269441a9ba",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C62",
+      "claim": "Images of the cells in the channel were acquired in a region of interest of 250 \u00d7 80 pixels at a frame rate of 2000 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of the cells in the channel were acquired in a region of interest of 250 \u00d7 80 pixels at a frame rate of 2000 fps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "497f1f8d-a12c-460d-8295-f5c226071864",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C64",
+      "claim": "All studies complied with the Declaration of Helsinki and involved written informed consent from all participants or their legal guardians.",
+      "claim_type": "EXPLICIT",
+      "source": "All studies complied with the Declaration of Helsinki and involved written informed consent from all participants or their legal guardians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical compliance of the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "33ec4ca6-93a3-4264-a23a-439fb377bcf0",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "claim_id": "C65",
+      "claim": "Ethics for experiments with human blood were approved by the ethics committee of the Technische Universit\u00e4t Dresden.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethics for experiments with human blood were approved by the ethics committee of the Technische Universit\u00e4t Dresden (EK89032013, EK458102015), and for human blood and LPS inhalation in healthy volunteers by the East of England, Cambridge Central ethics committee (Study No. 06/Q0108/281 and ClinicalTrialReference NCT02551614).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a morpho-rheological (MORE) analysis method using real-time deformability cytometry (RT-DC) that can identify and characterize all major blood cell types in diluted whole blood at rates of 1000 cells/sec without labeling, enrichment, or separation. Cell identification is achieved using size and brightness parameters, with deformation as an independent functional parameter. The method shows high reproducibility across donors, anticoagulants, storage times, and times of day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10, C14-C23, C55-C56, and C60-C62 collectively demonstrate the technical capability and validation of the MORE analysis method. The data in Figures 1 and supplementary figures show clear separation of cell populations, validation by magnetic sorting and immunophenotyping (C19), reproducibility testing (C22), and comparison with conventional blood counts (C23). The method's technical specifications are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "fcac00bd-62d3-46bf-aad7-99d511f9b601",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MORE analysis detected significantly less deformed and smaller erythrocytes in patients with spherocytosis compared to healthy controls, with differences clear enough to serve as a fast primary screening test for the disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by data in Figure 2A-C and Figure 2\u2014figure supplement 1 showing statistically significant differences (p=0.002 for deformation, p=0.004 for size, n=4 patients vs n=21 controls). The clear separation of spherocytosis patients from the normal range supports the screening test inference (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "20535a66-b228-429a-8d88-fcf7826b2f2b",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MORE analysis detected a clear, significant, and increasing reduction in deformation of RBCs exposed to Plasmodium falciparum in vitro, detectable after 4 hours. The method identified overtly infected cells showing even greater deformation reduction, and revealed bystander stiffening of exposed but non-infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by time course data in Figure 2D-F and Figure 2\u2014figure supplement 2 (n=2 independent experiments with statistical significance indicated). The identification of infected cells by characteristic image features (C31) and the differential analysis of infected vs. exposed populations (C32-C33) are demonstrated with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "02bd0bad-cf72-49ba-8a89-f5c3f1499226",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Treatment of RBCs with 2-bromopalmitate (2BP), but not palmitic acid (PA), caused changes in deformation and reduced P. falciparum infectivity, suggesting that palmitoylation of RBC proteins is important for RBC morphology and P.f. infectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by experimental data in Figure 2G-H showing differential effects of 2BP vs PA treatment (n=4 donors for deformation, n=3 donors for infectivity experiments). The inference about palmitoylation (C36) is reasonable given the differential effects of 2BP (palmitoylation inhibitor) vs PA (control), though the mechanism remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "80ab4ed2-482c-42d7-8ab3-4f681434cf2b",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MORE analysis of neutrophil activation with fMLP revealed biphasic mechanical kinetics: initial stiffening (increased Young's modulus from 742\u00b112 Pa to 853\u00b120 Pa) and size reduction within 15 minutes, followed by reversal to more deformed and larger cells. This detailed activation kinetics has not been reported before.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by time course data in Figure 3A-B and Figure 3\u2014figure supplement 1 (n=5 donors with statistical analysis). The calculation of apparent Young's modulus (C40) with p-values demonstrates rigorous quantification. The novelty claim (C41) is a reasonable inference based on knowledge of prior techniques' limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "c89605e7-e15d-46d6-a4e5-8770df602db4",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MORE analysis revealed differential morpho-rheological responses of leukocyte populations to bacterial (ALI) and viral (RTI, EBV) infections. Neutrophils showed increased size and deformation in both ALI and RTI, monocytes showed size increases in both conditions but increased deformation only in viral RTI, and lymphocytes showed increased size and deformation specifically in EBV infection. These differential responses suggest MORE analysis might distinguish bacterial from viral infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by patient data in Figure 3C-L and supplementary figures (n=4 ALI patients, n=6 RTI patients, n=5 EBV patients vs n=21 controls with statistical significance indicated). The differential responses across cell types and infection types are clearly demonstrated. However, C46 is appropriately cautious ('might be sufficiently sensitive') as this is a preliminary observation requiring validation in larger studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MORE analysis of blood from leukemia patients revealed that AML blasts are less deformed but similar in size to mature myeloid cells, while ALL blasts are larger than mature lymphocytes without consistent deformation changes. The stiffness hierarchy (mature lymphocytes < ALL blasts < mature myeloid cells < AML blasts) differs from solid tumors where cancer cells are typically more deformable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by patient data in Figure 4A-D and Figure 4\u2014figure supplement 1 (n=7 AML patients, n=4 ALL patients) with supporting citations to prior research. The comparison with solid tumors (C50) is appropriately supported by citations. The stiffness calculations and isoelasticity line analysis provide quantitative support for the hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "326b5b7a-d978-48ba-a965-17a54f856029",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MORE analysis monitored the return to normal morpho-rheological fingerprint in an ALL patient over 12 days of methylprednisolone treatment, providing at least the same information as conventional morphological analysis but faster and with smaller sample requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by longitudinal patient data in Figure 4E-H showing clear temporal changes. Claim C53 provides established clinical context. Claim C54's comparison with conventional methods is supported by reference to Supplementary file 2, though the specific advantages (speed, sample size) are reasonable inferences from the method's capabilities rather than direct comparative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "565fedea-47ab-4599-b468-61bab9da05c3",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss that cell mechanics and morphology are inherent markers linked to cytoskeletal changes, that disease-specific morpho-rheological signatures can generate hypotheses about molecular mechanisms, but acknowledge that MORE phenotyping currently provides a sensitive but not very specific marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 represent appropriate discussion and interpretation. C57 is well-supported by multiple citations. C58 is a reasonable inference about future applications. C59 is an important and honest acknowledgment of current limitations, appropriately tempering the claims about diagnostic specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "c737b216-543c-4499-8b93-9a1da384691f",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors establish the clinical and biological context that blood analysis provides crucial health information, with the differential blood count being a routine diagnostic measure, and that blood is responsible for oxygen/nutrient distribution and immune response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C4, and C5 represent established medical and biological knowledge appropriately cited or stated as background. These provide necessary context for the work but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "81c6cb95-f4bd-4bcb-ba9d-ce5420b08c4b",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors review prior work showing that alterations in blood physical properties could reflect pathological conditions, that whole blood rheology has not achieved widespread diagnostic application, that various techniques have shown mechanical alterations in blood cells during disease, but that prior studies were limited to small numbers of isolated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 accurately characterize prior research with appropriate citations. C7 includes appropriate speculation ('probably due to') about reasons for lack of clinical adoption. These claims establish the gap that the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "37ee0057-e415-4abb-a731-61559128fa07",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim that MORE analysis can sensitively detect morphological and rheological changes in erythrocytes (spherocytosis, malaria), leukocytes (viral and bacterial infection), and malignant cells (myeloid and lymphatic leukemias).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are high-level summary claims supported by the detailed results in other claim groups. These are demonstrated throughout the Results section with appropriate experimental data and statistical analysis for each disease condition mentioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "476d01b2-9f24-4abc-b35f-0c9063f2c74e",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors explain that leukocyte mechanics has not been utilized diagnostically, likely due to increased stiffness compared to RBCs and lack of convenient techniques for deforming them in suspension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 provides reasonable speculation supported by citations and knowledge of the field about why leukocyte mechanics has not been clinically adopted. This contextualizes the novelty of the current approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    },
+    {
+      "id": "7dc72e63-84d8-4640-9931-f6fadab54683",
+      "content_id": "0534911f-a33f-477e-969d-d98947e0022c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors state that all studies complied with the Declaration of Helsinki with informed consent and received appropriate ethics committee approvals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 document ethical compliance and approvals. These are standard reporting requirements and are appropriately documented with specific approval numbers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:11.331474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6416f356-292c-4855-9774-3dad8438d6b4",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "104c58ff-e5f0-402a-8a47-26ac36545b56",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "05be453c-d6df-4d02-8798-9b635e54cebb",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "9764363f-355c-40e8-bc20-ba68ac76e93e",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "31bfacb1-90ee-4463-9e0a-cc6770c5659f",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "39bcc61a-df5b-4f53-866d-0fe304aaa63a",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "b5aed9e0-8193-43f2-b290-1f78309f4e82",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "d3056d6c-ed06-4435-a662-fb2f6b78cd1a",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "2926583e-4612-4464-96ee-68253f2fd4b9",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "4e277858-c081-45a0-823b-a6528f2c7f5a",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "aaebed4c-fedc-4f17-8d72-9a18304d6f30",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "36bb4250-ae92-4191-af25-74c6e704031a",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "f6abaeee-6b99-4f6b-9a80-88594d500c94",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "4e520b66-8cc6-4e33-bc54-7601d28cf2dc",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "a0bb08c1-fee6-4f5d-9cb3-b743959927a7",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "4a17805b-bb8e-4108-a7f7-c5372e06aafc",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "17fd075e-2cb0-4c2c-a987-9e269441a9ba",
+      "result_id": "e44af89b-50f9-421d-9111-7e4dc2c3ce05"
+    },
+    {
+      "claim_id": "435badfe-371b-49e5-846c-4262e5d56076",
+      "result_id": "fcac00bd-62d3-46bf-aad7-99d511f9b601"
+    },
+    {
+      "claim_id": "e6b08ba0-c51b-4dff-a8e9-98e6ca44e5ca",
+      "result_id": "fcac00bd-62d3-46bf-aad7-99d511f9b601"
+    },
+    {
+      "claim_id": "d504adad-6ebc-45e0-964f-ab71bd1d1cbd",
+      "result_id": "fcac00bd-62d3-46bf-aad7-99d511f9b601"
+    },
+    {
+      "claim_id": "c0c2ea84-f4b9-4ab8-9b96-eb31fbecc8db",
+      "result_id": "fcac00bd-62d3-46bf-aad7-99d511f9b601"
+    },
+    {
+      "claim_id": "082ea047-693a-41df-9089-851cabef123e",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "60ddf762-9aab-481e-8811-8d312d219645",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "673b7cb5-0f9a-45dc-a9e9-da647459844d",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "6d5b7fa3-f349-4784-962a-5333d9579f00",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "9efd8c6b-a1f3-4860-a959-6a066a807b3b",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "4fed8eb6-37bb-4564-87f2-362c972313cd",
+      "result_id": "20535a66-b228-429a-8d88-fcf7826b2f2b"
+    },
+    {
+      "claim_id": "3b46c2f6-d9fa-40ee-a91d-70a19437dd77",
+      "result_id": "02bd0bad-cf72-49ba-8a89-f5c3f1499226"
+    },
+    {
+      "claim_id": "4db7b328-15c4-435d-9092-2a8c3be5fee0",
+      "result_id": "02bd0bad-cf72-49ba-8a89-f5c3f1499226"
+    },
+    {
+      "claim_id": "063ccb2c-a6be-4ad9-b955-56767d441368",
+      "result_id": "02bd0bad-cf72-49ba-8a89-f5c3f1499226"
+    },
+    {
+      "claim_id": "94471f7b-8642-4e25-83e0-471b865da9d2",
+      "result_id": "80ab4ed2-482c-42d7-8ab3-4f681434cf2b"
+    },
+    {
+      "claim_id": "d90f9e68-f6cd-4a3a-b4ee-f5541bf00e9a",
+      "result_id": "80ab4ed2-482c-42d7-8ab3-4f681434cf2b"
+    },
+    {
+      "claim_id": "5b25afb9-4f16-4923-8fdb-1fc2e6abfb72",
+      "result_id": "80ab4ed2-482c-42d7-8ab3-4f681434cf2b"
+    },
+    {
+      "claim_id": "10863f87-6798-4a54-aef6-e65e3f1b8fb5",
+      "result_id": "80ab4ed2-482c-42d7-8ab3-4f681434cf2b"
+    },
+    {
+      "claim_id": "856b9786-af70-4293-a8bd-355c588f41e0",
+      "result_id": "c89605e7-e15d-46d6-a4e5-8770df602db4"
+    },
+    {
+      "claim_id": "347695c5-ed64-401d-8bf7-4f2add97e01b",
+      "result_id": "c89605e7-e15d-46d6-a4e5-8770df602db4"
+    },
+    {
+      "claim_id": "4189f51c-046c-42f3-9903-66757f672f97",
+      "result_id": "c89605e7-e15d-46d6-a4e5-8770df602db4"
+    },
+    {
+      "claim_id": "175e4847-5469-47e0-a4f1-705109216830",
+      "result_id": "c89605e7-e15d-46d6-a4e5-8770df602db4"
+    },
+    {
+      "claim_id": "67aabd97-0ae6-4f0c-a5c1-ab3af418a038",
+      "result_id": "c89605e7-e15d-46d6-a4e5-8770df602db4"
+    },
+    {
+      "claim_id": "3ce66752-5005-49a6-9ec7-45d2bac6b5af",
+      "result_id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d"
+    },
+    {
+      "claim_id": "45a9b2fc-1640-4579-8807-4623157f9002",
+      "result_id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d"
+    },
+    {
+      "claim_id": "333a9939-c105-4b16-80e0-a4e6243a97e6",
+      "result_id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d"
+    },
+    {
+      "claim_id": "6066297c-e82c-4626-bc75-8a64b1fe67e2",
+      "result_id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d"
+    },
+    {
+      "claim_id": "0b8fe35f-57fd-45c1-a157-8397e4993e14",
+      "result_id": "910de9a5-d3a0-4cda-9885-fe5dd53d4b4d"
+    },
+    {
+      "claim_id": "d8c0d57c-3b18-4467-8bec-62c277fb0788",
+      "result_id": "326b5b7a-d978-48ba-a965-17a54f856029"
+    },
+    {
+      "claim_id": "8fc8ea64-b846-422f-967d-539ce1df3c3f",
+      "result_id": "326b5b7a-d978-48ba-a965-17a54f856029"
+    },
+    {
+      "claim_id": "02e26fe9-fecf-437f-8f25-05ab9b1cfc65",
+      "result_id": "326b5b7a-d978-48ba-a965-17a54f856029"
+    },
+    {
+      "claim_id": "97bb0b45-de82-4ea2-a8cc-84975ed94531",
+      "result_id": "565fedea-47ab-4599-b468-61bab9da05c3"
+    },
+    {
+      "claim_id": "63176f69-4e2d-46ba-8ea9-8beaa7ffc38f",
+      "result_id": "565fedea-47ab-4599-b468-61bab9da05c3"
+    },
+    {
+      "claim_id": "693cdca5-887c-43cd-b625-bc8d40cae2f4",
+      "result_id": "565fedea-47ab-4599-b468-61bab9da05c3"
+    },
+    {
+      "claim_id": "6cc39259-cbbd-46ed-a880-fd1b58c269d4",
+      "result_id": "c737b216-543c-4499-8b93-9a1da384691f"
+    },
+    {
+      "claim_id": "fea0f041-1e5e-4a8d-8e15-573387fc1509",
+      "result_id": "c737b216-543c-4499-8b93-9a1da384691f"
+    },
+    {
+      "claim_id": "cedb56f1-2b82-4ad9-8c7f-2f6c103f722f",
+      "result_id": "c737b216-543c-4499-8b93-9a1da384691f"
+    },
+    {
+      "claim_id": "35143226-2c16-407d-932a-e2998ff7b148",
+      "result_id": "c737b216-543c-4499-8b93-9a1da384691f"
+    },
+    {
+      "claim_id": "b427098b-3af1-4c7c-98bb-8aa38ec13c74",
+      "result_id": "81c6cb95-f4bd-4bcb-ba9d-ce5420b08c4b"
+    },
+    {
+      "claim_id": "15c0c11c-71c9-45f6-ae11-420dca9008d0",
+      "result_id": "81c6cb95-f4bd-4bcb-ba9d-ce5420b08c4b"
+    },
+    {
+      "claim_id": "1321d761-704f-4b6e-9fd1-a53cf8d123ee",
+      "result_id": "81c6cb95-f4bd-4bcb-ba9d-ce5420b08c4b"
+    },
+    {
+      "claim_id": "690f6b77-af39-4c54-b188-d13f16af06b0",
+      "result_id": "81c6cb95-f4bd-4bcb-ba9d-ce5420b08c4b"
+    },
+    {
+      "claim_id": "7d5fe1bd-196d-4450-8c33-eabb9c906229",
+      "result_id": "37ee0057-e415-4abb-a731-61559128fa07"
+    },
+    {
+      "claim_id": "0bc8ce37-e10b-4550-9839-60c217fa0b0c",
+      "result_id": "37ee0057-e415-4abb-a731-61559128fa07"
+    },
+    {
+      "claim_id": "e2b70040-f56a-49a5-91f2-392a79eee836",
+      "result_id": "37ee0057-e415-4abb-a731-61559128fa07"
+    },
+    {
+      "claim_id": "d2f6d6c3-3453-4a90-a397-c2a5a9694000",
+      "result_id": "476d01b2-9f24-4abc-b35f-0c9063f2c74e"
+    },
+    {
+      "claim_id": "497f1f8d-a12c-460d-8295-f5c226071864",
+      "result_id": "7dc72e63-84d8-4640-9931-f6fadab54683"
+    },
+    {
+      "claim_id": "33ec4ca6-93a3-4264-a23a-439fb377bcf0",
+      "result_id": "7dc72e63-84d8-4640-9931-f6fadab54683"
+    }
+  ],
+  "comparisons": []
+}

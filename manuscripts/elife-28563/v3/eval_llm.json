@@ -1,0 +1,526 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ofd1 directly binds to unassembled Rps23 through its N-terminal extension domain (aa 1-23), which is buried in assembled 40S ribosomes. This binding requires an intact Ofd1 active site and occurs prior to ribosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C52 provide converging evidence from yeast two-hybrid (C39-C40), in vitro GST pull-down assays (C41-C42, C44-C45), structural analysis (C46), and in vivo immunopurification (C49-C52) demonstrating direct Ofd1-Rps23 binding. The requirement for an intact active site (C51-C52) and the buried nature of the binding site in assembled ribosomes (C46-C47) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ofd1 catalyzes the dihydroxylation of Rps23 P62. SILAC analysis shows that wild-type cells contain only dihydroxylated P62, while ofd1\u0394 and enzyme-dead ofd1 mutant cells show complete loss of dihydroxylated P62 and appearance of unmodified P62.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by SILAC mass spectrometry data (Figure 1F) showing quantitative changes in P62 modification states across different genetic backgrounds. The use of enzyme-dead mutants (C59) provides strong evidence for the catalytic role of Ofd1. The SILAC methodology is appropriate and the statistical analysis appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Rps23 and Nro1 share a conserved Ofd1 binding sequence. Mutational analysis reveals that the N-terminal basic residue, proline, glycine, and leucine are critical for Ofd1 binding in both proteins, though downstream alanine residues show differential importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by systematic mutational analysis using GST pull-down assays (Figure 2B-C). The identification of both conserved and differentially important residues is well-documented. However, the functional significance of these differences in vivo requires further investigation (addressed in later claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Ofd1, Rps23, and Nro1 form a complex where binding is interdependent rather than competitive. Nro1 is required for Ofd1-Rps23 binding in vivo, and Rps23 promotes Ofd1-Nro1 binding. Nro1 binds Rps23 directly through at least two distinct sites that do not overlap with the Ofd1 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 are supported by immunopurification experiments (Figure 3A-D) and in vitro GST pull-down assays (Figure 3E). The use of crosslinker controls and multiple genetic backgrounds strengthens the conclusions. The finding that Nro1 is required for Ofd1-Rps23 binding (C68-C69) is particularly well-supported and represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Complete Rps23 P62 dihydroxylation requires Nro1. In nro1\u0394 cells, only ~10% of Rps23 is dihydroxylated, ~60% is monohydroxylated, and ~32% is unmodified. In vitro, addition of Nro1 increases dihydroxylation 1.6-fold at the expense of monohydroxylation, suggesting Nro1 facilitates the second hydroxylation event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are supported by both in vivo SILAC data (Figure 4A-B) and in vitro TMT LC-MS/MS hydroxylation assays (Figure 4C). The quantification of different modification states is rigorous, though the calculation of percentages in nro1\u0394 cells (C81-C82) relies on assumptions about modification states in ofd1\u0394 cells that appear reasonable but could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Nro1 is required for nuclear import of unassembled Rps23. Rps23-GFP localizes to the nucleus in wild-type cells but is excluded from the nucleus in nro1\u0394 cells. Hydroxylation by Ofd1 is not required for nuclear import, as Rps23-GFP localizes to the nucleus in ofd1\u0394 and ofd1 enzyme-dead mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are supported by live-cell microscopy data (Figure 5A-B). The use of multiple genetic backgrounds and the Rps23 P62A mutant provide strong evidence that hydroxylation is not required for import. The inference that alternate import pathways exist (C91) is reasonable given cell viability, though these pathways are not characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Ofd1 and Rps23 traffic together to the nucleus with Nro1, and Rps23 dihydroxylation likely occurs in conjunction with nuclear import. mCherry-Ofd1 is mislocalized in rps23\u0394 cells, and this mislocalization is partially rescued by blocking nuclear export with leptomycin B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 are supported by microscopy data (Figure 5C) showing Ofd1 localization in different genetic backgrounds and with LMB treatment. The inference that dihydroxylation occurs during import (C102) is reasonable given the complex formation and Nro1 requirement data, though direct evidence for the timing of hydroxylation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Rps23 is a specific positive regulator of Sre1 signaling. rps23\u0394 and rps2302\u0394 cells fail to grow on cobalt, show decreased Sre1N activation under low oxygen, and fail to upregulate Sre1N target genes. These defects are specific to Sre1 signaling and not due to general translation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 are supported by growth assays (Figure 6A), immunoblots (Figure 6B), rescue experiments (Figure 6C), and RT-qPCR (Figure 6\u2014figure supplement 1A). The specificity of the phenotype is well-established through multiple controls, including expression of Sre1N from a plasmid and analysis of Sre1-independent genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "rps23\u0394 and rps2302\u0394 cells fail to accumulate Sre1N under low oxygen due to increased inhibition by Ofd1. Deletion of ofd1+ in these cells restores Sre1N expression to wild-type levels, demonstrating that the defects are due to Ofd1-dependent inhibition rather than translation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are supported by immunoblot data (Figure 6D) showing Sre1N levels in different genetic backgrounds under normoxia and hypoxia. The epistasis analysis with ofd1\u0394 provides strong evidence for the mechanism. The use of sre1N strains (bypassing cleavage) strengthens the conclusion that translation is not affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Sre1N binds Ofd1 directly through a conserved motif (residues 286-293 and 297) shared with Rps23 and Nro1. Mutational analysis shows that these residues are required for Ofd1 binding, while residues 294-296 impair but do not abolish binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 are supported by in vitro GST pull-down assays (Figure 6F) with systematic mutagenesis. The identification of a conserved Ofd1 binding motif across three proteins is well-supported. The differential effects of mutations provide insight into the binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Unassembled Rps23 functions with Nro1 as a positive regulator of Sre1N activity by binding Ofd1 and preventing its binding to Sre1N. Ofd1 likely forms a dimer that binds independently to Rps23-Nro1 complex and Sre1N dimer, which compete for Ofd1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 integrate multiple lines of evidence to propose a sequestration model. The model is supported by binding data, genetic interactions, and structural considerations. The inference that Ofd1 forms a dimer (C126) is based on cited structural studies and the presence of conserved binding motifs in multiple partners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The sequestration model predicts that under normoxia, Ofd1 binds Sre1N to inhibit transcription, while under hypoxia, Ofd1 is sequestered by Rps23-Nro1, freeing Sre1N. This is supported by experiments showing that reducing Rps23 levels impairs Sre1N signaling, while overexpressing Rps23 activates Sre1N even under normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 are supported by data showing that Rps23 levels modulate Sre1N activity (Figures 6D, 7B-C). The use of GST-Rps23 as a proxy for unassembled Rps23 (C136) is validated by viability assays. The model makes testable predictions that are confirmed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The Ofd1-binding sites in Nro1 and Rps23 do not contribute equally to Ofd1 sequestration in vivo. Mutations in the Nro1 binding site abolish Sre1N activation, while most Rps23 binding site mutants retain function. Sequestration is more dependent on Nro1 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 are supported by growth assays and immunoblots (Figure 7D, Figure 7\u2014figure supplement 1B-D) showing differential effects of mutations in Nro1 vs Rps23. This finding is important as it reveals that in vitro binding affinity does not always predict in vivo function. The discrepancy between in vitro and in vivo results (C142) is acknowledged and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Ofd1 oxygenase activity is crucial for oxygen-dependent sequestration. The Ofd1-Rps23-Nro1 complex is stabilized under conditions that prevent P62 hydroxylation, including treatment with the 2OG analog DMOG and growth under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 are supported by immunopurification experiments (Figure 7E-F) showing increased complex formation under DMOG treatment and hypoxia. These experiments directly test the prediction that inhibiting hydroxylation stabilizes the complex. The use of both chemical inhibition and physiological hypoxia strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The study reports three major findings: (1) Nro1 functions in a new nuclear import pathway for Rps23; (2) Nro1 is the first protein adaptor for prolyl dihydroxylation; (3) Rps23 has an extra-ribosomal function essential for the fission yeast hypoxic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 summarize the major findings, which are well-supported by the data presented throughout the manuscript. Each finding represents a significant advance: the nuclear import pathway (supported by localization data), the adaptor function (supported by SILAC and in vitro hydroxylation data), and the extra-ribosomal function (supported by Sre1 signaling data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors propose a model for Rps23 incorporation into ribosomes: Nro1 binds newly synthesized Rps23 in the cytosol, Ofd1 then binds and dihydroxylates P62 during nuclear import, and Nro1 releases dihydroxylated Rps23 in the nucleus for ribosome assembly. Multiple lines of evidence support this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C163 present an integrated model supported by binding data (C157-C159), hydroxylation data (C160), and localization data (C161-C162). The inference that import and dihydroxylation are coordinated (C163) is reasonable given the data, though the precise timing and mechanism of complex dissociation remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "Addition of Nro1 to in vitro hydroxylation reactions increases dihydroxylated P62 at the expense of monohydroxylated P62, suggesting that Nro1 facilitates the second hydroxylation event and may act by preventing release of monohydroxylated Rps23 from Ofd1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 is supported by in vitro hydroxylation data (Figure 4C). Claim C168 is a mechanistic speculation based on the data. While the proposed mechanism is plausible, alternative mechanisms (e.g., Nro1 affecting enzyme conformation or substrate positioning) are not ruled out. Additional structural or biochemical studies would be needed to definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The authors hypothesize that prolyl-3-hydroxylation of P62 is dramatically reduced in nro1\u0394 cells and predict that ett1\u0394 cells (budding yeast Nro1 homolog) will show similar loss of dihydroxylated Rps23 P62. This would explain why ett1\u0394 and tpa1\u0394 cells share the same read-through phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C172 are hypotheses and predictions based on the translation termination defects in budding yeast ett1\u0394 cells and the conservation of the Nro1-Ofd1 system. While the reasoning is sound, these claims are not directly tested in this study. The stereochemistry of the monohydroxylated species in nro1\u0394 cells is unknown, which limits the strength of the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The Rps23-Nro1 complex functions as a positive regulator of Sre1N by sequestering Ofd1 under low oxygen or DMOG treatment. This sequestration mechanism allows Sre1N activity to be regulated indirectly by oxygenase activity without requiring Sre1N to be an Ofd1 substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 are supported by immunopurification data (Figure 7E-F) and the combined genetic and biochemical evidence. The distinction from HIF regulation (C177) is an important conceptual advance, as it demonstrates a novel mechanism for oxygen-sensing that does not require hydroxylation of the transcription factor itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The authors speculate that rates of Rps23 synthesis couple nutrient supply to Sre1N activity. Under nutrient deprivation, reduced Rps23 synthesis would dampen Sre1N activity, while high rates of Rps23 synthesis would support maximal Sre1N activity. The dynamic range of the hypoxic response would be tuned by nutrient supply through Rps23.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C184-C188 are speculative models about potential nutrient regulation. While the unassembled ribosomal protein pool is known to be dynamic and nutrient-responsive (C183), direct evidence linking nutrient availability to Rps23 levels and Sre1N activity is not provided. Claim C186 has some support from Figure 6B, but the broader model requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "The study describes a mechanism by which the requirement for oxygen as a substrate confers the ability to sequester the oxygenase from other binding partners under low oxygen conditions. The authors suggest that other 2OG-oxygenase family members may function through similar mechanisms and that 2OG could signal to Sre1N.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C190 is well-supported by the data and represents a key conceptual advance. Claims C191-C193 are speculative suggestions about broader implications. While these are reasonable hypotheses based on the findings, they are not tested in this study. The speculation about 2OG signaling (C191) and other ribosomal oxygenases (C193) represents interesting future directions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The abstract summarizes the main findings: Ofd1 and Nro1 regulate the hypoxic response by controlling Sre1 activity. Nro1 binds Rps23, Ofd1 dihydroxylates Rps23 P62 in complex with Nro1, and Nro1 imports Rps23 into the nucleus. Low oxygen stabilizes the Ofd1-Rps23-Nro1 complex, sequestering Ofd1 from Sre1. Ofd1 directly binds Rps23, Nro1, and Sre1 through a consensus sequence, and Rps23 expression modulates Sre1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize the major findings of the study, all of which are supported by the experimental data presented in the results sections. These claims serve as an overview of the work and are substantiated by the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction provides background on HIF regulation, 2OG oxygenases, Sre1 function in fission yeast, and previous work on Ofd1, Nro1, and uS12/Rps23. This establishes the context for the current study and identifies gaps in knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C38 are primarily citations of established knowledge from the literature. These claims accurately represent prior work and provide appropriate context for the study. The identification of knowledge gaps (e.g., C38: function of uS12 dihydroxylation in fungi is unknown) motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Oxygen is currently the only known signal to Sre1, but additional nutrient signals may tune the hypoxic response through control of unassembled Rps23 or Ofd1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 accurately states current knowledge. Claim C11 is speculation about potential additional regulatory mechanisms. While this speculation is reasonable given the findings about Rps23 regulation of Sre1, direct evidence for nutrient signaling through this pathway is not provided in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The Ofd1-Rps23 enzyme-substrate relationship is conserved in humans, but there is no evidence that OGFOD1 and RPS23 function in the hypoxic response in mammals, perhaps because metazoans lack an obvious Nro1 homolog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C178 is supported by cited literature. Claims C179-C180 accurately state the lack of evidence for conservation of the regulatory mechanism in mammals and offer a plausible explanation. The absence of a Nro1 homolog in metazoans is a reasonable explanation for the lack of conservation, though other factors could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Unassembled Rps23 represents only 2% of total Rps23 in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by quantification from immunoblot data (Figure 1\u2014figure supplement 1B). This measurement is important for understanding the relative abundance of the regulatory pool of Rps23 and for interpreting the SILAC and immunopurification experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Rps23 contains an evolutionarily divergent N-terminal extension domain (aa 1-46) followed by a conserved C-terminal globular domain (aa 47-143).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by cited structural knowledge. This structural information is important for interpreting the binding and functional data, as the Ofd1 binding site maps to the N-terminal extension domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Rps23 P62 is essential and part of a highly conserved loop that projects into the decoding center of the ribosome upon anticodon binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by cited structural and functional knowledge. This information provides important context for understanding the potential functional consequences of P62 hydroxylation in translation fidelity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The budding yeast Ofd1 homolog crystallizes as a dimer and exists in solution as a reversible monomer-dimer mix. Nro1 is structurally similar to the \u03b1 subunit of human collagen prolyl-4-hydroxylase that functions in substrate recruitment, and previous authors predicted Nro1 may serve a similar role for Ofd1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166 are supported by cited structural studies. This information provides important context for modeling the Ofd1-Rps23-Nro1 complex and interpreting the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Sre1N activates anabolic pathways such as sterol synthesis that require carbon and other nutrients. Maintenance of cellular homeostasis requires coordination of nutrient availability and metabolism. The unassembled ribosomal protein pool is highly dynamic and subject to multiple nutrient inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C183 are supported by cited literature and general biological knowledge. This information provides context for the speculation about nutrient regulation of Sre1N through Rps23.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C189"
+    ],
+    "result": "2OG oxygenases catalyze a diverse set of reactions ranging from histone demethylation for regulation of transcription to halogenation for antibiotic synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C189 is supported by cited knowledge about the enzyme family. This information provides context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

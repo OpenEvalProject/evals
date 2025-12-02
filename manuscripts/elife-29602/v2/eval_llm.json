@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The add riboswitch from V. vulnificus is a ~120 nucleotide element that binds adenine and controls translation. Prior work has assumed a Monod-Wyman-Changeux (MWC) model where the holo RNA secondary structure exists transiently in the apo ensemble, with the gene expression platform opening when the aptamer forms, even without adenine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe established background knowledge about the add riboswitch and the MWC model framework. These claims are well-supported by extensive citations to prior literature and represent the consensus understanding of the system prior to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "A recent NMR study proposed a non-MWC model for the add riboswitch, suggesting that riboswitches sampling the aptamer secondary structure do not concomitantly open their ribosome binding sites in the absence of adenine. However, the same group later revived the MWC framework to interpret newer single molecule measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 accurately describe prior work from the literature (Reining et al., 2013; Warhaut et al., 2017), establishing the controversy that motivated this study. The citations support the existence of conflicting models in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Lock-mutate-map-rescue (LM2R) is a four-dimensional expansion of chemical mapping that integrates mutation with nucleotide-resolution chemical mapping. The method builds on mutate-map-rescue (M2R), where compensatory mutations that restore SHAPE profiles indicate base pairing. Partial rescue is a hallmark of base pairs present at low frequency, and simulations show that averaging rescue factors over multiple base pairs correlates with helix frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C15-C20 describe the methodological development and validation of the LM2R approach. The simulation data in Figure 2C and prior work on M2R (Tian et al., 2014) support the relationship between rescue factors and helix frequencies. The method is well-validated through in silico tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "M2R experiments on wild-type add riboswitch reveal diverse helices in the absence of adenine (P1: 53%, P2: 31%, P3: 73%, P5: 75%, P4A: 48%, P4B: 55%, P4C: 68%, P1B: 44%, P2B: 17%). In the presence of 5 mM adenine, helices P1, P2, P3, and P5 show increased frequencies (79%, 64%, 56%, 29%), while helices P1B, P2B, P4A, P4B, and P4C show no evidence of presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present baseline M2R measurements on the wild-type riboswitch. The data in Figures 3 and 4 show SHAPE profile quartets and posterior distributions over helix frequencies that support these quantitative estimates. The measurements agree with expectations from prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "LM2R experiments show that locking P4B strongly reduces P1 helix frequency from 53% to 5%, and locking P1 reduces P4B frequency from 55% to 4%. The posterior support for non-MWC models is 3.1 \u00d7 10\u207b\u00b3 for lock-P4B and 0.039 for lock-P1 experiments. Combined, the posterior support for the non-MWC model is 4 \u00d7 10\u207b\u2075.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C28, C29, C31 present the key LM2R results discriminating between MWC and non-MWC models. The data in Figure 6 show clear loss of rescue in locked backgrounds, and the Bayesian analysis in Figure 7A-C provides strong statistical support for anticorrelation between P1 and P4B helices, favoring the MWC model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "LM2R experiments testing P2-P4B and P2-P4A correlations give posterior support values of 1.5 \u00d7 10\u207b\u00b3 and 4.1 \u00d7 10\u207b\u00b3 for the non-MWC model, respectively, strongly disfavoring the non-MWC model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 present independent tests of the MWC vs. non-MWC models using different helix pairs. The data in Figure 7D-E and Figure 6\u2014figure supplement 1 support these conclusions, providing additional evidence beyond the P1-P4B experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LM2R experiments show no evidence of correlation for pairs of helices expected to co-occur in the apoB state (P1B-P4A, P1B-P4B, P4A-P4B). The data suggest that helices P4A, P1B, P4B each appear with significant frequency but do not necessarily co-occur, indicating a heterogeneous structural ensemble. A single secondary structure such as apoB may not appropriately describe the ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40-C42 describe additional structural heterogeneity in the apo ensemble beyond the MWC model. The data in Figure 7G-I show correlation values centered around 1, and Figure 5 shows differences in SHAPE profiles for different lock mutants, supporting the conclusion of heterogeneity in the apoB state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The proposed model favors a Monod-Wyman-Changeux model of allostery for the add riboswitch. Sampling of the aptamer secondary structure is strongly anticorrelated with formation of the P4 domain, validating representation as a separate apoA state that is structurally similar to the ligand-bound holo state, including both the aptamer region and the gene expression platform. Additional structural heterogeneities are present in the apoB state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 synthesize the main conclusions from the LM2R experiments. The strong anticorrelations measured for P1-P4B, P2-P4B, and P2-P4A (Figure 7A-E) support the MWC model, while the lack of correlation among apoB helices (Figure 7G-I) supports additional heterogeneity. The model in Figure 8 integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Newer single molecule FRET measurements detect transient formation of the L2/L3 tertiary contact prior to adenine binding and are consistent with an MWC framework. There is now concordance across numerous measurements for an MWC model that posits strong secondary structure similarities between the apoA state and the ligand-bound holo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 integrate the current LM2R results with prior single molecule FRET data (Warhaut et al., 2017). The citation supports the FRET observations, and the LM2R data provide independent evidence for the MWC model, establishing concordance across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Further heterogeneity is likely present in the apoB ensemble. The presence of myriad alternative helices at low population would explain their detection difficulty with bulk techniques but appearance in single-molecule measurements. There are no functional reasons for apoB to maintain a single secondary structure, and the exact populations of helix pairings may shift in different conditions while remaining compatible with riboswitch function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 propose additional structural heterogeneity in the apoB state based on the LM2R data (Figure 7G-I) and higher-order M2 analysis (Figure 8\u2014figure supplement 2-3). The inference is reasonable given the lack of correlation among apoB helices and the functional requirement only to keep the gene expression platform closed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Non-functional states of other riboswitches may have highly heterogeneous structures, which might explain their refractoriness to conventional structural biology approaches. Antibiotics targeting specific apo structures are unlikely to succeed, as mutations could disrupt the targeted structure while retaining other ensemble members with the P4 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 are speculative extrapolations from the add riboswitch data to other systems and to antibiotic development. While the speculation is reasonable given the observed heterogeneity, these claims lack direct experimental support and represent hypotheses for future testing rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "LM2R measurements give strong support to the pre-existing correlations predicted by MWC models for the add riboswitch, disfavor non-MWC alternative models, and suggest additional structural heterogeneities that may be general across ligand-free riboswitches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 summarize the main findings of the study. The LM2R data in Figures 6-7 provide strong statistical support for MWC-predicted anticorrelations (posterior support for non-MWC < 0.005 for multiple helix pairs) and reveal heterogeneity in the apoB state. These conclusions are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study used a 128-nt construct for all measurements, with experiments performed in 10 mM MgCl2, 50 mM Na-HEPES, pH 8.0, with or without 5 mM adenine. DNA templates were prepared by PCR assembly, and all chemical mapping datasets have been deposited at the RNA Mapping Database. Simulations used RNA families from the Rfam database, and code is available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe the experimental methods, data availability, and computational resources. These methodological details are clearly stated in the Materials and Methods section and are appropriate for reproducibility. The data and code availability statements meet standards for open science.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "nos-1nos-2 PGCs exhibit widespread transcriptional misregulation, with 461 transcripts underexpressed and 871 overexpressed compared to wild-type L1 PGCs. Underexpressed transcripts are enriched for pregametic genes (31%, 144/461), while overexpressed transcripts are enriched for oocyte genes (380/871), including lin-41 (5.1-fold), tbx-2 (11-fold), and hnd-1 (91-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 are directly supported by RNA-seq data (Figure 1C-D) with appropriate statistical thresholds (q<0.05) and biological replicates. The enrichment analysis uses hypergeometric tests with defined gene categories. qRT-PCR validation of 11 genes confirms RNA-seq results (Figure 1\u2014figure supplement 1A). The conclusion that nos-1nos-2 PGCs fail to activate pregametic genes and overexpress oocyte genes is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Maternal mRNA turnover is delayed in nos-1nos-2 PGCs. The embryonic PGC transcriptome closely resembles the oocyte transcriptome (R=0.81), and 411 transcripts (including 197 oocyte transcripts) normally decline from embryonic to L1 stages in wild-type. This turnover is diminished in nos-1nos-2 mutants. In situ hybridization confirms delayed turnover of mex-5, C01G8.1, and Y51F10.2 specifically in PGCs but not somatic lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are supported by RNA-seq comparisons between embryonic and L1 PGCs (Figure 2A-C) and validated by in situ hybridization (Figure 2D) showing PGC-specific delays. The correlation analysis with published oocyte data (R=0.81) supports the maternal origin of embryonic PGC transcripts. The defect is detectable at the 200-cell stage and persists through embryogenesis, providing temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "nos-1nos-2 PGCs fail to properly transition to a pregametic transcriptional program. While 130 transcripts increase during the EMB-to-L1 transition in wild-type (30% pregametic), 510 transcripts increase in nos-1nos-2 PGCs, distributed across all gene categories including oocyte genes (16%, 84/510), suggesting adoption of a hybrid transcriptional profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by RNA-seq data comparing embryonic and L1 stages (Figure 2B, E-F). The inference that nos-1nos-2 PGCs adopt a hybrid profile is reasonable given the inappropriate activation of oocyte genes alongside failure to fully activate pregametic genes. The data clearly show aberrant transcriptional activation rather than just delayed maternal mRNA turnover.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ATAC-seq reveals inappropriate chromatin accessibility and transcriptional activation in nos-1nos-2 PGCs. 221 genes show increased chromatin accessibility, most of which are overexpressed (Figure 3A) and enriched for oocyte genes (108/221). Strikingly, 63% (139/221) are X-linked. X-linked transcripts are more abundant in nos-1nos-2 PGCs (9.6 FPKM) compared to wild-type (4.7 FPKM), indicating defective X chromosome silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by ATAC-seq data with biological replicates showing high correlation (R=0.86-0.94, Figure 3\u2014figure supplement 2). The integration of ATAC-seq and RNA-seq data demonstrates that increased chromatin accessibility correlates with transcriptional activation. The enrichment of X-linked genes (hypergeometric test p<0.001) and increased X-linked transcript abundance provide strong evidence for defective X chromosome silencing consistent with an oocyte-like profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "nos-1nos-2 and mes mutant PGCs share defects in X-linked gene silencing but differ in autosomal oocyte gene regulation. Strong correlation exists between mes-4 and nos-1nos-2 for X-linked genes (R=0.75) but weaker correlation for autosomal oocyte genes (R=0.35). MES protein expression is unchanged in nos-1nos-2 embryos, suggesting Nanos acts downstream or in parallel to MES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 are supported by RNA-seq comparisons (Figure 4) and immunostaining (Figure 4\u2014figure supplement 2). The correlation analysis appropriately distinguishes X-linked from autosomal effects. The differential correlation (R=0.75 vs R=0.35) supports the inference that nos-1nos-2 PGCs have both MES-related defects (X-silencing) and additional defects (maternal mRNA turnover). Unchanged MES protein levels rule out indirect effects through MES regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Loss of synMuvB factors, particularly lin-15B, suppresses nos-1nos-2 sterility. lin-15B(n744) reduces nos-1nos-2 sterility from >70% to 3.4%, and the triple mutant can be maintained for >10 generations. Suppression is MES-dependent (100% sterility upon mes RNAi). In contrast, lin-15B only weakly suppresses mes mutant sterility for one generation, suggesting LIN-15B inappropriately inhibits MES function specifically in nos-1nos-2 PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by genetic analysis with adequate sample sizes (Figure 5A). The dramatic and stable suppression by lin-15B (96.6% fertile, >10 generations) contrasts with weak, transient suppression of mes mutants (83-98% sterile), supporting the specificity of the genetic interaction. The MES-dependence of suppression (Figure 5\u2014figure supplement 3) provides strong evidence for the proposed mechanism. Other DRM components show no suppression, indicating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "LIN-15B is maternally inherited and normally downregulated specifically in PGCs during embryogenesis. LIN-15B is expressed in oocytes and inherited by all blastomeres but decreases sharply in PGCs during P4 division. In nos-1nos-2 embryos, LIN-15B remains high in PGCs (45/60 positive vs 0/34 in wild-type). Zygotic lin-15B transcription is not activated during embryogenesis in either genotype but occurs prematurely in nos-1nos-2 L1 PGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 are supported by immunostaining (Figure 6A-B) with quantification and transcriptional reporter analysis (Figure 6C). The antibody specificity is confirmed using lin-15B(n744) mutants. The distinction between maternal protein persistence and zygotic transcription is clearly demonstrated by the reporter, which shows no embryonic PGC expression but premature L1 expression in nos-1nos-2 mutants. This provides strong evidence that Nanos regulates both maternal protein turnover and prevents premature zygotic transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Maternal lin-15B is primarily responsible for nos-1nos-2 sterility. lin-15B transcripts are modestly elevated in nos-1nos-2 embryonic PGCs and rise ~2-fold during the EMB-to-L1 transition. Loss of maternal lin-15B fully suppresses nos-1nos-2 sterility even with one zygotic copy present. Suppression shows maternal dosage dependence: 0% sterility (M0), 32% sterility (M1), 70% sterility (M2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 are supported by RNA-seq data and genetic dosage experiments (Figure 6D) with clear sample sizes and appropriate mating schemes (Figure 6\u2014figure supplement 2). The dosage-dependent suppression provides strong evidence for maternal lin-15B as the primary cause. The observation that one zygotic copy doesn't prevent suppression while maternal dosage matters supports the conclusion, though some contribution from zygotic lin-15B is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of lin-15B partially rescues transcriptional defects but not maternal mRNA turnover defects in nos-1nos-2 PGCs. Of 1430 upregulated genes in nos-1nos-2 PGCs, 31% (452) have significantly lower expression in the lin-15B double knockdown. However, in situ hybridization shows mex-5 and C01G8.1 turnover remains delayed in nos-1nos-2;lin-15B triple mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by RNA-seq comparison (Figure 6E-F) and in situ hybridization (Figure 2\u2014figure supplement 2). The partial rescue (31% of upregulated genes) is consistent with LIN-15B being responsible for transcriptional activation but not maternal mRNA turnover. The in situ data clearly demonstrate that lin-15B loss doesn't rescue the turnover defect, supporting the model that Nanos has dual functions: promoting maternal mRNA turnover and preventing LIN-15B-mediated transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "utx-1, an H3K27me3 demethylase, is upregulated in nos-1nos-2 PGCs in a partially lin-15B-dependent manner and contributes to sterility. utx-1 is rare in wild-type PGCs (FPKM<0.2), overexpressed 160-fold in nos-1nos-2 PGCs with a new ATAC-seq peak, and this overexpression is reduced 2.4-fold by lin-15B knockdown. utx-1 RNAi partially suppresses nos-1nos-2 sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93, C95 are supported by integrated RNA-seq and ATAC-seq data (Figure 3\u2014figure supplement 1) and genetic suppression (Figure 5\u2014figure supplement 1). The lin-15B-dependent regulation and partial genetic suppression support a regulatory loop model. However, C95 is appropriately cautious ('may participate'), as the evidence is suggestive but not definitive. The weaker suppression by utx-1 compared to lin-15B indicates utx-1 is not the only downstream effector.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background and context claims establishing the biological system and prior knowledge about Nanos, PRC2/MES, DRM/LIN-15B, and C. elegans germline development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, C10-C23 are background claims supported by established knowledge and appropriate citations. These provide necessary context for interpreting the experimental results. C20-C23 describe the C. elegans germline development cycle shown in Figure 1B, which is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Main conclusions: Nanos promotes germ cell fate by downregulating maternal LIN-15B, which would otherwise interfere with PRC2/MES-dependent chromatin reprogramming. This allows PGCs to transition from an inherited oocyte program to a pregametic program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7-C9, C96-C98 represent the main conclusions synthesized from the experimental results. These are well-supported by the convergence of multiple lines of evidence: (1) transcriptional similarity between nos-1nos-2 and mes mutants for X-linked genes, (2) genetic suppression of nos-1nos-2 by lin-15B loss, (3) maternal LIN-15B persistence in nos-1nos-2 PGCs, (4) dosage-dependent suppression by maternal lin-15B, and (5) partial rescue of transcriptional defects by lin-15B loss. The model is appropriately presented as a proposal ('suggest,' 'propose') acknowledging some inferential steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Discussion of Nanos mechanism: Nanos facilitates maternal-to-zygotic transition by accelerating maternal mRNA turnover, likely through interaction with Pumilio proteins and CCR4-NOT deadenylase complex. Evidence from C. elegans and other systems supports this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by the current data (maternal mRNA turnover defects) and appropriate citations to prior work in C. elegans and other organisms. C100 is established knowledge, C101-C102 are supported by prior genetic studies, and C103-C104 cite specific mechanisms from sea urchins. The integration with current findings is reasonable, though the specific molecular mechanism in C. elegans remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion synthesizing evidence that LIN-15B is responsible for abnormal gene expression in nos-1nos-2 PGCs through antagonism of MES function, with speculation about potential positive feedback through X-linked lin-15B transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 appropriately synthesize the experimental evidence. C109 is speculative ('raise the possibility') about maternal LIN-15B potentiating zygotic expression, which is reasonable given that lin-15B is X-linked and shows premature transcription in nos-1nos-2 PGCs, but this specific feedback mechanism is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion of potential mechanisms involving UTX-1 and XND-1 in chromatin regulation. UTX-1 may directly oppose MES activity by removing H3K27me3 marks. XND-1 may directly activate MES-dependent remodeling, and Nanos could function by eliminating maternal factors that interfere with this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 are supported by established knowledge and citations. C112 is a reasonable inference from UTX-1 function but not directly tested. C113-C114 cite prior work. C115-C116 are explicitly speculative ('exciting possibility,' 'could promote') and represent hypotheses for future testing rather than supported conclusions. These are appropriately presented as speculation but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Discussion proposing that Nanos clears PGCs of maternal mRNAs promoting somatic development, including transcription factors pha-4, hlh-1, and tbx-2. This interpretation is consistent with prior studies in Drosophila and Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by RNA-seq data showing these transcription factors are among maternal mRNAs with delayed turnover. C118-C119 are speculative ('speculate,' 'may be') but reasonable given the data. C120 appropriately cites prior work in other organisms showing similar phenomena. The proposal is well-supported by the current data and consistent with broader literature, though the specific contribution of these factors to the nos-1nos-2 phenotype is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Discussion placing findings in broader evolutionary context: Nanos opposes LIN-15B/DRM in PGCs, while DRM silences Nanos in somatic cells in other organisms. This suggests Nanos functions in an ancient transcriptional/post-transcriptional regulatory switch controlling gene expression during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by the genetic data. C122-C125 appropriately cite prior work in Drosophila and mammals showing reciprocal regulation. C126 is a speculative synthesis ('suggest') that is reasonable given the convergent evidence across species, though it represents a hypothesis about evolutionary conservation rather than a directly tested conclusion. The speculation is appropriately qualified and supported by multiple citations.",
+    "result_type": "MINOR"
+  }
+]

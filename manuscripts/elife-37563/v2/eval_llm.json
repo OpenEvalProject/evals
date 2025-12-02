@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mcm1 cis-regulatory sites were gained independently at ribosomal protein genes (RPGs) in multiple fungal lineages. Computational analysis of 162 fungal genomes identified six monophyletic groups with highly enriched Mcm1 sites and seven with moderate enrichment at RPGs. Stochastic character mapping estimated 12-13 independent gains of Mcm1 sites across fungal evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging computational evidence for parallel evolution of Mcm1 sites at RPGs. The phylogenetic distribution (C2-C3), evolutionary modeling (C4-C5), and prior work (C1) consistently support multiple independent gains. The computational methods are appropriate and the sample size (162 genomes) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44"
+    ],
+    "result": "Mcm1 sites are functionally required for full activation of RPGs in Kl. lactis. Scrambling Mcm1 sites in RPL37 and RPS18 reporters significantly reduced expression without affecting cell-to-cell variability, demonstrating a non-redundant role in transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C44 are supported by experimental reporter assays with appropriate controls (scrambled sites) and statistical testing (p<0.05). The experiments directly test functionality of the computationally identified sites. Sample sizes (3-4 independent isolates) are adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C49",
+      "C69"
+    ],
+    "result": "Mcm1 site gains in the Kluyveromyces clade compensate for loss of other regulatory sites rather than increasing overall RPG expression. Interspecies hybrid experiments showed RPGs with directional cis-regulatory evolution, but Kl. lactis alleles were expressed lower than other species, ruling out directional selection for increased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C49, and C69 are supported by allele-specific expression data from interspecies hybrids with appropriate statistical testing (hypergeometric test, p<0.01). The compensatory model is well-supported by the observation that Kl. lactis RPGs are expressed lower despite having Mcm1 sites (C13), combined with evidence of reduced binding sites for other regulators (C16). The experimental design (interspecies hybrids) effectively controls for trans-acting factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Ribosomal protein genes are under strong selection due to their high expression levels and major role in cellular energy expenditure. RPG transcripts account for approximately 50% of RNA polymerase II initiation events in rapidly growing yeast cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by citations to established literature (Woolford and Baserga 2013; Warner 1999). These are well-established facts in yeast biology that provide important context for understanding selection on RPG expression. Claim C11 is a reasonable inference from the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C71",
+      "C72"
+    ],
+    "result": "RPG expression frequently experiences different evolutionary forces between closely related yeast species. Analysis of published interspecies hybrid experiments from the Saccharomyces clade showed ribosomal proteins consistently among genes with directional cis-regulatory evolution, and transcriptional regulators controlling RPGs vary substantially across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C71-C72 are supported by citations to multiple published studies (Bullard et al. 2010; Clowers et al. 2015; Lee et al. 2013; Martin et al. 2012; and others). The inference that RPG expression experiences shifting selection (C18, C71) is reasonable given the widespread directional evolution observed across multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C43",
+      "C57"
+    ],
+    "result": "Mcm1 sites were gained at precise spacing from Rap1 sites in three lineages. The spacing shows peaks at 54, 65, and 74 bp apart, placing the proteins on the same side of the DNA helix at least 50 bp apart, consistent with interaction with a large complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C43, and C57 are supported by computational analysis of binding site spacing across multiple species and prior work (Tuch et al. 2008a). The precise spacing pattern (C20) and its structural interpretation (C57) are well-supported by the data. The constraint on spacing is a key observation supporting the cooperativity model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C45",
+      "C56"
+    ],
+    "result": "Mcm1 and Rap1 cooperatively activate transcription at RPGs. Reporter assays with site deletions showed combined expression was approximately four times the sum of individual contributions (p=5.5e-4), and cooperativity requires the Rap1 activation domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C45, and C56 are supported by systematic reporter assays with appropriate controls (individual and combined site deletions) and statistical testing. The demonstration of cooperativity (C22) is quantitative and statistically significant. The requirement for Rap1 activation domain (C56) is supported by experiments with Rap1 mutants (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C47",
+      "C59",
+      "C63"
+    ],
+    "result": "The ability of Rap1 and Mcm1 to cooperatively activate transcription is ancestral, existing even in S. cerevisiae where Mcm1 sites were not gained at RPGs. This ancestral cooperativity predates the gains of Mcm1 sites and is part of each protein's intrinsic mechanism of transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C47, C59, and C63 are supported by reporter assays in S. cerevisiae showing cooperative activation (p=3.9e-3) despite the absence of Mcm1 sites at RPGs in this species. This is a critical result that distinguishes between derived and ancestral cooperativity models. The experimental design is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Rap1 and Mcm1 do not bind DNA cooperatively on their own. Gel-mobility shift assays with purified proteins from multiple species showed each protein bound independently without increasing the other's affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by gel-mobility shift assays with purified proteins from S. cerevisiae and Kl. lactis, as well as cell lysates from additional species. The experiments appropriately test for cooperative DNA binding and rule out this mechanism. Multiple species were tested, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "TFIID is a general transcription factor whose direct interaction with Rap1 is required for RPG transcription in S. cerevisiae. TFIID activates transcription through contacts with RNA Polymerase II, and its promoter binding is rate-limiting. The Rap1-Taf5 interaction is particularly important for RPG transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by citations to multiple established studies (Garbett et al. 2007; Layer et al. 2010; Menc\u00eda et al. 2002; Papai et al. 2010; Reja et al. 2015; Wu and Chiang 2001; Johnson and Weil 2017). These are well-established facts that provide critical context for the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46"
+    ],
+    "result": "Mcm1 binds directly to the Taf4 subunit of TFIID at the N-terminal region, distinct from the Rap1 binding site in the C-terminus. This finding that both proteins interact with distinct domains of TFIID provides a mechanism for cooperative transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C46 are supported by Far-Western protein-protein binding assays with purified TFIID and Taf4 deletion constructs. The mapping of distinct binding domains (C31-C32) is experimentally demonstrated. The mechanistic inference (C33, C46) is well-supported by the biochemical data combined with the functional cooperativity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cooperative transcriptional activation by Rap1 and Mcm1 at RPGs is due to both proteins interacting with TFIID. Experiments with Rap1AS showed cooperativity with Mcm1, and mutations in the Rap1 activation domain (Rap1AS7Ala) strongly reduced expression, demonstrating requirement for TFIID interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by growth assays with HIS3 reporters using Rap1AS variants. The genetic experiments complement the biochemical data (C30-C33) and provide in vivo evidence for the TFIID-mediated cooperativity mechanism. The use of Rap1AS allows manipulation without affecting endogenous Rap1, which is a strength of the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C58"
+    ],
+    "result": "Suboptimal Mcm1 sites are functional when adjacent to Rap1 sites. Ka. naganishii has 33 genes with Rap1-Mcm1 sites at similar spacing to RPGs. Reporter assays showed most weak Mcm1 sites displayed near wild-type expression with neighboring Rap1 sites but not without them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C58 are supported by computational analysis identifying genes with Rap1-Mcm1 sites (C37) and systematic reporter assays testing weak Mcm1 sites (C38, C58). This is a key prediction of the intrinsic cooperativity model and the experimental validation is convincing. The result explains how suboptimal sites can be functional during evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C64"
+    ],
+    "result": "In clades where Rap1 does not regulate RPGs, Mcm1 sites show preferred spacing relative to other regulators (Tbf1, Rrn7, Fhl1) that also interact with TFIID. This suggests the cooperativity mechanism may be generalizable beyond Rap1-Mcm1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C64 are supported by computational analysis of binding site locations and citations showing these regulators interact with TFIID (Gavin et al. 2002; Knutson et al. 2014; Mallick and Whiteway 2013; Zhong and Melcher 2010). The generalization is appropriately cautious and supported by the data, though direct experimental validation of cooperativity with these other factors is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C50",
+      "C51",
+      "C52",
+      "C60",
+      "C61",
+      "C82"
+    ],
+    "result": "The intrinsic cooperativity model proposes that ancestral ability of Rap1 and Mcm1 to interact with TFIID 'channels' random mutations into functional Mcm1 sites at RPGs. Suboptimal Mcm1 sites arising near Rap1 sites would be immediately functional due to stabilization by TFIID binding, without requiring changes in Rap1 or Mcm1 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C50-C52, C60-C61, and C82 present the core mechanistic model integrating all observations. The model is well-supported by: (1) ancestral cooperativity in S. cerevisiae (C23-C24), (2) both proteins binding TFIID at distinct sites (C30-C33), (3) functionality of weak Mcm1 sites with Rap1 (C38), and (4) no requirement for cooperative DNA binding (C25-C26). The model is internally consistent and parsimonious. Claim C61 is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The intrinsic cooperativity model accounts for parallel evolution of Mcm1 sites without requiring extraordinary mechanisms or specific environmental adaptations. The model explains why Mcm1 sites (rather than other regulators) were repeatedly gained and why spacing is constrained. Functional Mcm1 sites are favored by mutational processes due to intrinsic cooperativity, whether or not selection changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C53-C55, C67-C68, C73-C74, C77-C81 present the evolutionary implications of the model. The model is well-supported by the mechanistic data and provides a parsimonious explanation for the observations. The argument that diverse ecological niches (C48) argue against specific adaptation is reasonable. Claims C54 and C74 about thermodynamics and mutational bias are theoretical but logically sound given the experimental evidence. The model successfully integrates computational, biochemical, and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Transcriptional output was slightly more cooperative in Kl. lactis than in S. cerevisiae, suggesting possible fine-scale evolutionary changes in protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is inferred from comparison of reporter data between species but lacks quantitative statistical comparison. The observation is noted as a possibility rather than a definitive conclusion. While the data may support this, the claim is appropriately cautious and does not affect the main conclusions about ancestral cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "TFIID may be a conserved general activator of RPGs across fungi and animals, with specific transcription regulators that interact with TFIID interchanging over evolutionary timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is supported by citation to ENCODE data showing TFIID at RPG promoters in human cells. However, claim C66 is explicitly speculative and extrapolates beyond the fungal data. While the speculation is reasonable given the conservation of TFIID, direct evidence for the proposed mechanism in animals is not provided. This is appropriately presented as a possibility rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C75",
+      "C76",
+      "C83"
+    ],
+    "result": "Alternative evolutionary scenarios and generalizations of the intrinsic cooperativity mechanism are discussed as possibilities for future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C75-C76, and C83 are explicitly speculative (C70: 'it is also possible'; C75: 'could occur'; C76: 'likely'; C83: 'we speculate'). These represent reasonable hypotheses for future work but are not directly tested. The speculation is appropriate for a Discussion section and does not overstate the evidence.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Existing transcriptional PPI assays (yeast two-hybrid, TANGO) have limitations including high background and loss of PPI dynamics information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 accurately describe known properties and limitations of existing transcriptional PPI assays based on general knowledge and citations. These are well-established characteristics of these assay types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SPARK is a novel PPI detection tool requiring both protein-protein interaction and blue light for transcriptional activation, utilizing a light-caged TEV protease cleavage system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29-C31, C37-C42 collectively describe SPARK's design principle with appropriate citations to prior work (FLARE, eLOV development). The dual-gating mechanism (PPI + light) is clearly stated and the molecular components are well-defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SPARK successfully detects \u03b22AR-\u03b2-arrestin2 interaction with both light and ligand required for activation, achieving 4.3-fold signal increase with 5 min stimulation and 10.3-fold with 15 min stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C50-C52 are supported by experimental data shown in Figures 1C-D. The AND-gate logic is demonstrated with negligible signal in single-input conditions. Quantitative signal ratios are provided with appropriate replication (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Optimization of SPARK components identified P1'=M TEVcs variant and eLOV as optimal for most conditions, with hLOV1 preferred under high expression/long stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by systematic comparison data in Figure 1\u2014figure supplement 1. Multiple TEVcs and LOV variants were tested with clear quantitative outcomes guiding component selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SPARK is highly specific for direct protein-protein interactions and is not activated by mere proximity without direct interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by negative control experiments (Figure 1E-F) showing no activation with mismatched protein pairs or proximity without direct interaction. The CD4-TM proximity experiment is particularly rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "SPARK achieves 30% TEVcs cleavage after 5 min stimulation and 48% after 30 min stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by Western blot quantification (Figure 1\u2014figure supplement 2C). The cleavage efficiency was directly measured using appropriate protease inhibitors to stop the reaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "SPARK can be activated by ordinary room light or blue LED equivalently, as the LOV domain requires very weak light (<0.5 mW/cm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by experimental comparison (Figure 1\u2014figure supplement 2D) and citation to published LOV domain properties. This demonstrates practical accessibility of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "SPARK successfully detected 12 different PPI pairs (including GPCRs, receptor tyrosine kinases, and chemically-induced interactions) without optimization of geometries or linkers, demonstrating modularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C64, C67, C80-C81 are supported by data in Figures 2A-C and supplementary figures. All 12 PPI pairs showed light- and ligand-dependent activation on first attempt, demonstrating robust modular design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C75",
+      "C76"
+    ],
+    "result": "SPARK detected 8 different GPCRs with arrestin recruitment, including 6 with robust signals (5 with signal ratios >15) and 2 weak recruiters (AGTR2, ADRA1A) with small but significant signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C75-C76 are supported by Figure 2D with appropriate statistical analysis (p<0.001). The detection of AGTR2 and ADRA1A represents new findings enabled by SPARK's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SPARK generates accurate dose-response curves for \u03b22AR ligands with EC50 and IC50 values matching published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by Figure 2E showing dose-response curves with EC50=52 nM and IC50=0.7 nM, which match cited published values. This validates SPARK for pharmacological characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C82",
+      "C83",
+      "C84",
+      "C96"
+    ],
+    "result": "SPARK achieves 5 min temporal resolution by shifting light windows, enabling reconstruction of PPI time-courses via single timepoint readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C82-C84, C96 are supported by time-course experiments in Figure 3C showing \u03b22AR-arrestin interaction dynamics. The temporal gating approach is validated by consistency with published kinetics (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SPARK distinguished temporal profiles of different \u03b22AR ligands: full agonists showed strong transient responses, partial agonist showed delayed/weaker response, and inverse agonist showed delayed sustained interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by Figure 3C data showing distinct temporal profiles for different ligand classes. The results are consistent with known pharmacological properties of these ligands (C86-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "SPARK classified GPCRs by arrestin interaction kinetics, identifying Class A (\u03b22AR, DRD1) with transient interactions and Class B (AVPR2) with sustained interactions, and newly classified DRD2 as Class A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C97 are supported by Figure 3D-E showing distinct temporal profiles. The classification of DRD2 as Class A is a novel finding based on its transient arrestin association pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99"
+    ],
+    "result": "SPARK combined with FACS achieved 51-fold enrichment of PPI-positive cells over PPI-negative cells in a single sorting round.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C98-C99 are supported by RT-qPCR analysis (Figure 4C) showing enrichment from 1:66 to 1:1.3 ratio. The large enrichment factor suggests utility for genetic screens, though this remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C116"
+    ],
+    "result": "SPARK outperforms TANGO with 16.4-fold higher signal ratio under matched conditions and 7.9-fold higher under TANGO-optimized conditions, primarily due to lower background from light-gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107, C116 are supported by direct comparison experiments (Figure 4\u2014figure supplement 1B). The mechanistic explanation (eLOV protection vs. continuous TEVcs exposure) is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "SPARK shows 2-3-fold better ligand signal ratios and 5-14-fold better light signal ratios than iTANGO, with faster signal reversal suggesting less perturbative design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112, C114-C116 are supported by comparison data (Figure 4\u2014figure supplement 1C-E). The hypothesis about split-TEVp causing high background (C113) is reasonable but remains speculative without direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C122"
+    ],
+    "result": "SPARK achieves signal ratios up to 37 and gave signal ratios >15 for five of eight randomly selected GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C122 are supported by data across Figures 2B-D. The high signal ratios represent a significant improvement over existing methods (C121 shows TANGO typically gives 1.3-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "SPARK's superior signal ratios result from lower noise (LOV-mediated temporal gating) and higher signal (faster TEVp catalytic turnover: 10.8 min\u207b\u00b9 vs 0.84 min\u207b\u00b9 for TANGO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 provide mechanistic explanation for SPARK's performance supported by cited kinetic data (C124). The inference about split-TEVp in iTANGO (C125) is reasonable based on general principles of split proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "SPARK detected activation of ADRA1A and AGTR2 receptors that were opaque to PRESTO-TANGO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by Figure 2D data showing small but significant signals (1.4-1.5 signal ratios, p<0.001) for receptors that showed no signal with PRESTO-TANGO (C73-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "SPARK provides much larger signal-to-noise ratios than FRET (1.02-1.03) for GPCR-arrestin interactions and is more accessible, not requiring specialized instrumentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by comparison to cited FRET data. The accessibility advantage is a logical inference based on equipment requirements, though the comparison is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "SPARK uniquely combines non-trapping design with stable signal generation, unlike irreversible PCAs (which trap) or reversible PCAs (which lack stable signals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 accurately characterize different PCA approaches with appropriate citations. The claim of SPARK's uniqueness (C134) is a reasonable inference based on the comparison, though 'unique' is a strong claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "SPARK has broad potential applications including different reporter genes, GPCR biased signaling studies, and PPI discovery, though many remain to be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C137 mix demonstrated capabilities (C117 supported by data) with speculative future applications (C118, C135-C136 explicitly speculative). While the suggestions are reasonable, they represent proposed rather than validated applications.",
+    "result_type": "MINOR"
+  }
+]

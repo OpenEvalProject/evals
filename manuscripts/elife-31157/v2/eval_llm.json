@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C69",
+      "C72",
+      "C85",
+      "C86",
+      "C88",
+      "C96",
+      "C97"
+    ],
+    "result": "Naked mole-rats exhibit no increase in age-specific mortality hazard across their observed lifespan of over 30 years, defying Gompertz's law of mortality. Analysis of 3329 high-resolution records revealed constant hazard (~1/10,000 deaths per day) from reproductive maturity (6 months) through at least 12 years, with 61.6% survival at 30 years. This lack of demographic aging was observed regardless of sex or breeding status, establishing naked mole-rats as a non-aging mammal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52-C55, C60, and C85-C86 provide strong empirical evidence from Kaplan-Meier survival analysis and hazard calculations (Figures 1-3) showing constant mortality hazard over decades. The large sample size (>3000 animals, C49-C51) and robustness to data quality variations (C56) strengthen confidence. However, the interpretation as 'non-aging' (C6, C72, C97) is a strong claim that depends on the definition of aging and the inability to detect delayed Gompertzian hazard, which the authors acknowledge but argue is unlikely given the extremely low baseline hazard.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C78",
+      "C79"
+    ],
+    "result": "Breeding naked mole-rats exhibit 5-10 fold lower mortality hazard (~1/100,000 per day) compared to non-breeders (~1/10,000 per day), though neither group shows increasing hazard with age. Survival did not differ between male and female breeders, but breeders overall had higher survival than non-breeders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are directly supported by survival curves and hazard estimates in Figure 3. The differential mortality between breeders and non-breeders is clearly demonstrated, and the lack of hazard increase with age is consistent across both groups (C60). The quantitative hazard estimates (C78-C79) are derived from the data, though confidence intervals are wider for breeders due to smaller sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Simulations using constant-hazard mortality models with empirically-derived censorship patterns reproduced the observed survival data, supporting the relevance of a non-hazard-increasing mortality model for naked mole-rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by Figure 4, which shows that simulated populations under constant hazard assumptions match the observed survival patterns. The simulations account for the complex censorship history of the collection and provide validation that the constant hazard interpretation is statistically consistent with the data, particularly when accounting for unlabeled male breeders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C87",
+      "C88"
+    ],
+    "result": "Naked mole-rats are exceptional among mammals in showing no mortality hazard increase even at ages 25-fold beyond reproductive maturity, contrasting with mice, humans, and horses that exhibit Gompertzian hazard within a few-fold of sexual maturity. Mice show exponential hazard increase by 800 days (~55% of maximum lifespan), while naked mole-rats maintain constant hazard for over two decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 and C87-C88 are supported by comparative mortality analyses in Figure 5, showing clear Gompertzian patterns in mice, humans, and horses but not in naked mole-rats. The quantitative comparisons of lifespan metrics (C63-C68) are calculated from published data. The conclusion that naked mole-rats are exceptional (C69, C88) is well-supported by the comparative framework, though it relies on the species compared being representative of typical mammalian aging patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C52"
+    ],
+    "result": "Naked mole-rats have a maximum lifespan exceeding 30 years in captivity, with 61.6% of the population surviving across the 30-year timespan of the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C52 are directly supported by the survival data presented in Figure 1A, showing animals surviving beyond 30 years with substantial population survival at that age. The Kaplan-Meier analysis provides robust statistical support for these longevity estimates, and the large sample size increases confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The inclusion of lower-resolution birth and death records (month-resolution, approximate dates, and inequality-derived data) did not substantially modify the Kaplan-Meier survival profile or hazard estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by Figure 2, which shows that adding progressively less-reliable data (269 additional animals) produces survival curves and hazard estimates consistent with the high-resolution dataset. This robustness analysis strengthens confidence in the primary findings by demonstrating they are not artifacts of data selection criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C73"
+    ],
+    "result": "Naked mole-rats exhibit delayed or attenuated age-associated physiological declines across multiple systems, including maintained fertility past 30 years, prolonged neurogenesis for two decades, stable cardiac function, body composition, bone quality, metabolism, proteasome function, and mitochondrial characteristics, with rare age-associated diseases like cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C35-C42 are supported by citations to prior published work (Buffenstein 2008, Lewis and Buffenstein 2016, Holmes 2016, Grimes et al. 2014, O'Connor et al. 2002, P\u00e9rez et al. 2009, Kim et al. 2011, Edrey et al. 2011). Claim C73 notes this agrees with the mortality data presented. While these claims rely on prior work rather than new data in this manuscript, the citations appear appropriate and the claims are consistent with the established literature on naked mole-rat biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C89",
+      "C90"
+    ],
+    "result": "Naked mole-rats are exceptional longevity outliers, living five-fold longer than predicted by body mass (40g rodent expected to live ~6 years) and three-fold longer than predicted by reproductive maturity (Tsex = 6 months, gestation 66-76 days). At 12 years, they show no demographic aging despite this being twice their expected lifespan based on body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C30, C32-C34, C89-C90 are supported by citations to allometric predictions from prior work (Edrey et al. 2011, Hulbert et al. 2007, de Magalh\u00e3es et al. 2007b). The comparisons to expected lifespans provide important context for interpreting the significance of the mortality data. The calculations appear sound and the cited sources are appropriate for these comparative claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C17",
+      "C91",
+      "C95"
+    ],
+    "result": "In the wild, breeding female naked mole-rats remain in colonies for 17 years while non-breeders remain 2-3 years, with the difference between captive and wild longevity likely reflecting lower extrinsic rather than intrinsic mortality in captivity. Demographic aging is absent in captivity 4-6 fold beyond natural lifespans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C91 are supported by citation to Hochberg et al. 2016 for wild lifespan estimates. Claim C17 is a reasonable inference about extrinsic vs. intrinsic mortality, consistent with general principles of captive vs. wild survival. Claim C95 follows logically from comparing the 12+ years of constant hazard in captivity to the 2-3 year wild lifespan. The interpretation is sound though it relies on the accuracy of wild lifespan estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84"
+    ],
+    "result": "The Gompertz-Makeham law of mortality (h(t) = \u03b1e^\u03b2t + \u03b3) describes age-specific hazard with an exponentially increasing Gompertzian component (intrinsic aging) and a constant Makeham component (extrinsic hazard). Aging is typically observable in mammals as increasing mortality hazard, with all other studied mammals conforming to Gompertzian laws. The Makeham component can obscure Gompertzian hazard early in life (e.g., until ~40 years in humans, ~6 years in horses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C70-C71, C74-C77, and C84 describe established mortality theory and are supported by appropriate citations (Gompertz 1825, Makeham 1860, Gavrilov and Gavrilova 1991, 2015, Finch et al. 1990, Bell and Miller 2005, Jones et al. 2014, Cohen 2017, Fok et al. 2014). These provide the theoretical framework for interpreting the naked mole-rat data. The claims accurately represent the cited work and established demographic theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Most wild rodents live only a season with deaths attributed to predation, weather, parasites, pathogens, and food scarcity, while laboratory mice live almost an order of magnitude longer but still only half as long as expected by body size, with lifespan limited by exponentially increasing intrinsic mortality risk. Senescence is difficult to observe in wild rodent populations but easily observed in captive rats and mice not far beyond natural lifespans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C92-C94 are supported by multiple citations to prior literature (Morgen 2003, David and Jarvis 1985, Boonstra and Krebs 2012, Krebs et al. 1995, 1973, Miller et al. 2002, Stueck and Barrett 1978, Slade 1995, Gavrilova and Gavrilov 2015). These provide important comparative context for understanding naked mole-rat exceptionalism. The claims accurately represent general knowledge about rodent mortality patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Naked mole-rats are strictly subterranean, mouse-sized, eusocial mammals living in colonies of up to 300 individuals (average 60), with breeding monopolized by one queen and 1-3 males. Their underground lifestyle poses ecological challenges but provides protection from predation and climate extremes. Queen status is maintained through physical intimidation, and attainment of breeder status involves morphological, physiological, and behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 describe the natural history and social structure of naked mole-rats, supported by citations to established literature (Buffenstein 2000, 2005, Jarvis 1981, Clarke and Faulkes 1997, O'Riain et al. 2000, Holmes et al. 2007, Peroulakis et al. 2002). These provide essential biological context for interpreting the mortality data, particularly the breeding vs. non-breeding comparisons. The claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C43"
+    ],
+    "result": "Across vertebrates, adult body mass and age of reproductive maturity (Tsex) are strong correlates of longevity, with larger species and those with later maturity living longer. Species from safer habitats tend to live longer while those from dangerous habitats mature rapidly, reproduce early, and die young.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31, and C43 describe established principles in life history theory and comparative biology, supported by appropriate citations (Hamilton 1966, Rose et al. 2007, Prothero 1993, Ricklefs 1998, Pianka 1970). These provide the theoretical framework for understanding why naked mole-rat longevity is exceptional. The claims accurately represent general principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Even under a delayed-aging model, naked mole-rats would distinguish themselves through an unprecedentedly long adulthood before Gompertzian hazard emergence. Naked mole-rat mortality is more consistent with an exponential decay model (constant hazard) than a Gompertz model, with a predicted half-life of ~6900 days (19 years) for non-breeders. Under exponential decay, the concept of 'maximal lifespan' loses relevance as hazard never becomes insurmountable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 represent interpretations and theoretical considerations discussed in the manuscript. While C81-C82 are supported by the constant hazard data and straightforward calculations, the broader interpretation (C80, C83) involves conceptual arguments about aging models. The authors acknowledge they cannot definitively rule out delayed Gompertzian aging, making the 'non-aging' vs. 'delayed aging' distinction somewhat uncertain. The exponential decay model is a reasonable alternative interpretation but represents one possible framework among others.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C18"
+    ],
+    "result": "The naked mole-rat is recognized as an animal model of biogerontological interest, though what determines their lifespans in captivity is currently unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by multiple citations establishing the species' status in aging research (Buffenstein 2005, Austad 2010, Edrey et al. 2011, de Magalh\u00e3es et al. 2007a). Claim C18 is a straightforward statement about the current state of knowledge. Both claims are well-supported and provide context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study used naked mole-rats descended from progenitors collected in Kenya in 1980, housed at 28-30\u00b0C and 30-50% humidity, with individuals microchipped at 90 days. Survival was calculated using the Kaplan-Meier method and confidence intervals using the Wilson score interval with continuity correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe the materials and methods, which are clearly stated in the manuscript with appropriate citations for statistical methods (Kaplan and Meier 1958, Newcombe 1998). The housing conditions and data collection procedures are adequately described. These methodological details are essential for reproducibility and interpretation of the results.",
+    "result_type": "MINOR"
+  }
+]

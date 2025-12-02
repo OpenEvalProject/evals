@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes the context of compass representations in navigation by reviewing prior work on head direction cells in rodents and E-PG neurons in Drosophila. These neurons maintain heading representations and are located in specific brain regions (central complex in flies, various regions in rodents) with theoretical ring attractor models proposed to explain their function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C14 are well-supported by citations to established prior work (Taube et al., Seelig and Jayaraman, Wolff et al.) and anatomical descriptions. The claims accurately represent the state of knowledge in the field and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "P-EN neurons conjunctively encode heading and angular velocity, with mirror-symmetric tuning where neurons on the right side of the protocerebral bridge respond to clockwise turns and left-side neurons respond to counterclockwise turns. Population calcium imaging in the noduli shows strong correlation with angular velocity (Pearson's R = 0.65 \u00b1 0.14, N=10 flies, p<0.001) but not forward velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C19-C23 are strongly supported by calcium imaging data from the noduli (Figure 2) with appropriate statistical analysis including correlation coefficients and generalized linear regression. The mirror-symmetric tuning pattern is clearly demonstrated and quantified across multiple flies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Single-cell electrophysiology reveals that individual P-EN neurons segregate into anatomically defined left/right subpopulations with mirror-symmetric rotational velocity tuning. P-ENs show sigmoidal tuning curves centered around 0\u00b0/s, with spike rate increases of 5.6 \u00b1 3.7 Hz during preferred turns, bandwidth of 145 \u00b1 82\u00b0/s, and response lags of ~123-130 ms after peak rotational velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 are well-supported by extensive electrophysiological recordings (N=12 cells) with appropriate quantitative analysis including sigmoidal fits (mean R\u00b2=0.87), spike-triggered averages, and generalized linear regression. The data consistently show P-ENs encode recent rotational velocity with mirror-symmetric tuning, though sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "P-EN neurons are tuned to both heading and rotational velocity in visual closed-loop and darkness conditions. Two-dimensional tuning maps show localized peaks, with tuning indices exceeding the 95th percentile of shuffled controls in all but one case (p=0.0676). Heading tuning is generally stable over time with preferred angles differing by only 6 \u00b1 5% across epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by electrophysiological data with appropriate statistical controls (shuffling analysis) and quantification across multiple conditions. The stability analysis (C36-C37) provides evidence for reliable heading tuning, though occasional drifts are acknowledged. One cell failed significance (C35), which is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "P-EN neurons show strongly conjunctive tuning to heading and rotational velocity at the spike output level, with this property potentially sharpened within single neurons. P-ENs remain tuned to rotational velocity in non-preferred heading quadrants (2.3 \u00b1 2.1 Hz, p=0.026) and to heading during non-preferred rotations (1.2 \u00b1 1.1 Hz, p=0.043).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by conditional tuning curve analysis (Figure 6) with appropriate statistical tests (N=6 cells). The comparison of membrane potential versus spike rate tuning (Figure 6\u2014figure supplement 1) provides evidence for sharpening, though the mechanism remains inferential. Sample size is modest but analysis is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Anatomical analysis reveals that P-EN and E-PG neurons have complementary polarities and shifted projections in the ellipsoid body relative to their protocerebral bridge connections. Synaptotagmin labeling confirms P-ENs have presynaptic specializations in the ellipsoid body/noduli (11/14 brains) while E-PGs show presynaptic markers in both bridge and ellipsoid body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C42-C45 are supported by anatomical data from Wolff et al. 2015 and immunohistochemical experiments (Figure 7A-B). The synaptotagmin results show expected patterns in most brains, though E-PG labeling in the ellipsoid body (C45) suggests more complex connectivity than initially proposed. Quantification across multiple brains strengthens conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Functional connectivity experiments show that optogenetic activation of P-EN neurons reliably evokes positive calcium transients in E-PG neurons, while E-PG activation produces variable responses in P-ENs (activation, inhibition, or no response). This suggests the excitatory loop between populations may be both direct and indirect, with E-PG to P-EN connections likely recruiting inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by optogenetic experiments (Figure 7C-D) showing clear P-EN\u2192E-PG excitation but complex E-PG\u2192P-EN responses. The inference of indirect connections and inhibition (C49-C50) is reasonable given the variable responses, though the exact circuit architecture remains uncertain. The authors appropriately acknowledge this complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Two-color calcium imaging in the protocerebral bridge reveals two bumps of activity (one per side) in both E-PG and P-EN populations. Bump intensities (but not widths) increase with angular velocity. P-EN bumps lag E-PG bumps by approximately one glomerulus (~45\u00b0) at high velocities (120-150\u00b0/s), with P-EN activity showing larger increases for ipsilateral versus contralateral turns while E-PG activity shows no directional difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by two-color imaging data (Figure 8) with quantitative analysis across multiple flies (N=11 total across two indicator combinations). The lag between P-EN and E-PG bumps is consistently observed and quantified using both PVA and peak methods. Results are consistent across different GAL4 lines (Figure 8\u2014figure supplement 2), strengthening conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In the ellipsoid body, P-EN and E-PG populations both show activity bumps with amplitudes (but not widths) varying with angular velocity. At low velocities (<30\u00b0/s), bumps are nearly coincident (2.5 \u00b1 2.1\u00b0), but at higher velocities (>30\u00b0/s), the P-EN bump leads the E-PG bump, with offsets exceeding 15\u00b0 for turns >90\u00b0/s (20.7 \u00b1 11.7\u00b0 at 150-180\u00b0/s for one indicator combination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by two-color imaging in the ellipsoid body (Figure 9) with analysis across N=10 flies for one indicator combination and N=5 for the reverse. The lead-lag relationship is velocity-dependent and statistically significant (one-way ANOVA p=1.3\u00d710\u207b\u2077). However, the offset magnitude differs between indicator combinations (20.7\u00b0 vs 7.3\u00b0), likely due to indicator kinetics, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A firing rate model with recurrent E-PG/P-EN loops, angular velocity input, and inhibition captures key experimental observations including sigmoidal P-EN tuning, ring attractor dynamics, velocity-dependent bump offsets, and quasi-linear velocity integration. The model shows the persistent bump arises from feedback between populations rather than within E-PGs alone, with linearity depending on balanced excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are supported by detailed computational modeling (Figure 10) that reproduces experimental observations qualitatively and in some cases quantitatively. The model makes testable predictions and provides mechanistic insight. However, some discrepancies exist (e.g., bump 'sticking' at low velocities not observed experimentally), and the model simplifies circuit complexity (e.g., assumes direct E-PG\u2192P-EN connections despite experimental evidence for indirect pathways).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Blocking P-EN synaptic output using shibirets at 31\u00b0C reduces E-PG bump amplitude compared to controls, while control flies show increased amplitude with increased activity at high temperature. Model simulations show bump amplitude depends on P-EN\u2192E-PG synaptic efficacy, consistent with experimental observations. P-EN blockade also reduces reliability of E-PG bump tracking (lower R\u00b2 values), though bumps still move during turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C81 are partially supported by shiTS experiments (Figure 11) showing reduced bump amplitude (C75, C78) with statistical significance (bootstrapping p=0.0056 and p=6.0\u00d710\u207b\u2074). However, the interpretation is complicated by: (1) incomplete block (acknowledged by authors), (2) E-PG bumps still track turns despite P-EN blockade (contradicting model predictions), and (3) bump instability/drift not fully explained. The authors appropriately note these limitations (C81), but the exclusive role of P-ENs in bump movement remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The mirror-symmetric turn responses of P-ENs combine with their anatomical connectivity to E-PGs to create a mechanism for updating heading representation in darkness. This mechanism employs recurrent loops with an angular shift and resembles theoretical models proposed for rodent head direction cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 represent the central conclusion of the manuscript, integrating anatomical (C15-C18), functional (C19-C62), and modeling (C63-C72) results. The mechanism is well-supported by converging evidence from multiple experimental approaches. The comparison to rodent models (C7) is appropriate given structural similarities, though the authors note key differences in connectivity.",
+    "result_type": "MAJOR"
+  }
+]

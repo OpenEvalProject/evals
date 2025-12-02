@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study recruited 17 term-aged infants from the John Radcliffe Hospital, Oxford, UK. After excluding 4 infants due to incomplete field of view, 13 infants (average GA 40 weeks, range 38-43 weeks; average postnatal age 4 days, range 1-8 days) were included in the final analysis. Eight of these 13 infants were also included in a previous publication (Goksan et al., 2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 provide clear methodological details about participant recruitment, exclusion criteria, and final sample characteristics. The sample size (n=13) is small but appropriate for an infant fMRI study given technical challenges. The overlap with prior work (C96) is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study applied mild noxious stimulation (128 mN PinPrick) to infants' feet and analyzed pre-stimulus functional connectivity in three networks: the DPMS Network (bilateral AI, ACC, AMY, RVM, PAG, mFG), a Control Network (bilateral CAL, CAU, HIP, PON, RGY, SMA), and the Default Mode Network (PCC, IPL, mSFG). The DPMS Network was based on adult literature and included main structures identified in the adult DPMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the experimental design and network definitions. The stimulus parameters are clearly specified (C27), and the brain regions for each network are explicitly defined (C28, C30, C32) with appropriate citations to adult literature (C29, C31). The methodological approach is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Pre-stimulus functional connectivity was not significantly different between the DPMS Network (0.08 \u00b1 0.10) and Control Network (0.15 \u00b1 0.12). However, the Default Mode Network showed significantly greater connectivity (0.24 \u00b1 0.18) than both the DPMS and Control Networks (p = 0.0014, repeated measures ANOVA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 report baseline network connectivity comparisons with appropriate statistical tests. The finding that the Default Mode Network has higher connectivity is expected given it is a canonical resting-state network, and the authors acknowledge this (C34). Statistical values and methods are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Noxious-evoked BOLD activity was identified in bilateral postcentral gyrus, thalamus, ACC, and contralateral posterior insula, including the medial somatosensory cortex representing the foot. Using a more stringent threshold (z = 3.1 vs. previous z = 2.3) to address potential family-wise error inflation, the study reconfirmed that infant pain-related brain activity patterns are similar to adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe noxious-evoked brain activity with appropriate methodological improvements (C37) based on recent literature (Eklund et al., 2016). The increased statistical threshold strengthens confidence in the results. The consistency with prior work (C40) and adult patterns (C39) is well-supported by data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42"
+    ],
+    "result": "Greater pre-stimulus functional connectivity across the DPMS Network was significantly inversely correlated with noxious-evoked BOLD activity (r = -0.86, p = 0.0004, \u03b2 = -0.74, n = 13, adjusted for gestational age). Infants with higher DPMS connectivity prior to stimulation exhibited lower noxious-evoked brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C42 report the primary finding with strong statistical support (r = -0.86, p = 0.0004). The correlation is robust and the analysis appropriately controls for gestational age. However, the small sample size (n=13) and correlational nature limit causal interpretation. The relationship is clearly demonstrated but mechanistic claims require caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Neither the Control Network (r = -0.36, p = 0.26, \u03b2 = -0.25) nor the Default Mode Network (r = 0.06, p = 0.88, \u03b2 = -0.03) showed significant relationships between pre-stimulus connectivity and noxious-evoked BOLD activity. This suggests the DPMS influence on noxious activity is not generalizable across all brain networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide important negative controls demonstrating specificity of the DPMS effect. The lack of correlation in control networks strengthens the interpretation that the DPMS-specific connectivity is meaningfully related to pain processing. Statistical reporting is appropriate and the inference (C45) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pairwise analysis revealed that pre-stimulus functional connectivity between ACC-PAG (p = 0.0012, \u03b2 = -0.22), AI-mFG (p = 0.02, \u03b2 = -0.23), and ACC-AI (p = 0.03, \u03b2 = -0.17) were significantly associated with reduced noxious-evoked BOLD activity. Other region pairs showed no significant influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 identify specific region pairs driving the network effect. The ACC-PAG connection shows the strongest relationship, which is consistent with adult placebo analgesia literature. Statistical significance is demonstrated for three pairs, though multiple comparisons across all possible pairs may inflate Type I error risk. The authors do not report correction for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "When brainstem regions were excluded, the DPMS Network (cortical/subcortical only: ACC, AI, mFG, AMY) remained significantly inversely related to noxious-evoked activity (r = -0.61, p = 0.04, \u03b2 = -0.37), while the Control Network (excluding PON) showed no correlation (r = -0.29, p = 0.36, \u03b2 = -0.15). This suggests results are unlikely driven by brainstem noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 address concerns about brainstem imaging quality through sensitivity analysis. The persistence of the DPMS effect without brainstem regions (though weakened from r = -0.86 to r = -0.61) supports the robustness of findings. This is an important control given acknowledged technical challenges in brainstem imaging (C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Stimulus presentation was unpredictable with inter-stimulus intervals >25 s. Pre-stimulus DPMS functional connectivity did not vary significantly across the 10 stimuli (p = 0.33, repeated measures ANOVA), suggesting the network connectivity is relatively stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 address potential confounds from stimulus timing and demonstrate stability of the connectivity measure. The unpredictable timing and sufficient inter-stimulus interval reduce anticipation effects. The stability analysis (C77) supports treating connectivity as a trait-like measure, consistent with adult literature (C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C83",
+      "C90"
+    ],
+    "result": "The study concludes that in term infants, the DPMS may regulate the magnitude of noxious-evoked brain activity, with functional DPMS brain networks having an inhibitory function at the brain level similar to adults. The DPMS network can influence the magnitude of pain-related brain activity in term-aged infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C61, C83, C90 represent the main interpretive conclusions. While the correlation between DPMS connectivity and reduced brain activity is well-demonstrated, the causal and mechanistic claims (\"regulate,\" \"inhibitory function\") go beyond the correlational data. The study did not measure spinal activity (C67-C68), limiting conclusions about descending modulation. The interpretation is plausible but requires validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The ACC-PAG connectivity finding is discussed in relation to adult literature showing this connection relates to placebo analgesia efficacy and PAG's role in reducing nociceptive input. The authors note that the stimulus likely activates A-delta fibers, which may be differentially modulated compared to C-fiber input that PAG preferentially modulates in adult rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 appropriately contextualize findings within adult and animal literature. The citations to placebo studies (C50-C51) and animal work (C52-C53) are relevant. The acknowledgment of fiber-type differences (C54-C55) shows appropriate caution, though C55 is speculative. The discussion appropriately identifies limitations in cross-species and stimulus-type comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors acknowledge a potential contradiction with neonatal rodent studies showing facilitation at the spinal level, which could reflect maturational differences between supraspinal DPMS connectivity and descending pathways to the spinal cord. They note limitations in cross-species comparisons given different developmental trajectories and non-linear CNS maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 appropriately acknowledge discrepancies with animal literature and limitations of the study. The authors recognize they cannot resolve the apparent contradiction without spinal measurements (C67-C68). The discussion of species differences (C64-C66) and developmental asynchrony is well-supported by citations and shows appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "The authors acknowledge challenges in brainstem imaging due to motion and physiological noise, which they addressed using independent component analysis. They assert that individually defined PAG and RVM masks are well-localized despite spatial resolution limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 appropriately describe technical challenges and mitigation strategies. However, C74's assertion that masks are \"well localised\" is subjective and difficult to verify. Given the small size of these structures relative to voxel resolution (3\u00d73\u00d73 mm), partial volume effects and registration errors are likely. The sensitivity analysis excluding brainstem (C71-C73) partially addresses this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The introduction reviews prior literature showing that animal studies demonstrate immature DPMS in young rodents with anatomical projections present but physiologically ineffective inhibition, and facilitation rather than inhibition from RVM. Human infant studies show exaggerated spinal reflexes that refine postnatally, with concomitant maturation of nociceptive brain activity, but comparable DPMS studies have not been conducted in human infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C15-C23, C56-C60 accurately summarize prior literature with appropriate citations. The review establishes the knowledge gap (C3) that motivates the current study. The characterization of animal and human infant literature appears accurate based on the citations provided, though the accuracy of cited work itself cannot be verified here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes that in adults, the DPMS is a network of cortical and subcortical regions that modulates pain perception, allowing contextual factors to influence pain experiences. DPMS connectivity is altered in chronic pain conditions and transient changes influence pain perception, with pre-stimulus connectivity and activity predicting pain responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C14 provide appropriate background on adult DPMS function with relevant citations. These claims establish the conceptual framework for investigating DPMS in infants. The characterization of adult DPMS literature appears accurate and well-supported, providing strong rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors cite their previous work showing infant pain-related brain activity is similar to adults, including sensory and affective regions. They justify using noxious-evoked BOLD activity as a surrogate measure for pain experience in non-verbal infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C26 appropriately reference prior work and establish the methodological rationale. The use of BOLD as a surrogate for pain in infants is a reasonable approach given the inability to obtain self-report, and is supported by citations (C26). However, the validity of this surrogate measure remains an inherent limitation of infant pain research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C24",
+      "C85"
+    ],
+    "result": "The authors speculate that when DPMS regions are more strongly connected, infants may have greater ability to regulate pain experience and dampen brain activity in response to nociceptive input, and that DPMS regions may be influential in modifying pain behavior and experience in term infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24 and C85 are explicitly speculative interpretations that extend beyond the data. While the correlation supports a relationship between DPMS connectivity and brain responses, the causal language (\"regulate,\" \"dampen\") and claims about subjective experience are not directly tested. These remain plausible hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The discussion contextualizes findings within broader neuroimaging literature, noting that functional connectivity measures can reveal network involvement in complex functions, though these measures may reflect direct/indirect communication or amplitude changes unrelated to neural synchrony. Adult functional networks are dominated by stable individual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 appropriately discuss methodological considerations and limitations of functional connectivity measures with relevant citations. The acknowledgment that connectivity may reflect multiple underlying mechanisms (C81-C82) shows appropriate scientific caution about interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The study did not measure spinal cord activity and therefore cannot determine the relationship between DPMS functional connectivity and spinal activity in term-aged infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 clearly acknowledge a major limitation. Without spinal measurements, the study cannot directly demonstrate descending modulation or resolve the apparent contradiction with rodent studies showing facilitation at the spinal level. This is an important and appropriately stated limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The discussion notes that neonatal surgical injury leads to persistent pain sensitivity changes that may depend on DPMS maturation, and that aberrant DPMS development may create vulnerability to chronic pain. The findings are consistent with proposals that top-down inhibitory pathways develop in early life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately discuss clinical implications and relate findings to developmental theories with relevant citations. These claims are appropriately framed as possibilities (\"may be dependent,\" \"may lead to\") rather than established facts, and provide important context for the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

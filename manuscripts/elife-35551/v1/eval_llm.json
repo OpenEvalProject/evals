@@ -1,0 +1,497 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C45",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Global protein synthesis is reduced during replicative aging in yeast, with translational efficiency decreasing for 59% of genes (up to 40-fold) by a mechanism primarily affecting translational initiation rather than elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C42, C45, C66, C70-C73 collectively demonstrate reduced protein synthesis during aging through multiple lines of evidence: polysome profiling (C41-C42), ribosome profiling/Ribo-seq (C66, C70), and analysis ruling out elongation defects (C72). The data show reduced monosome and polysome association (C41-C42), decreased translational efficiency for 59% of genes (C70), and evidence that initiation is the rate-limiting step (C73). The claims are well-supported by the presented data in Figures 1A and 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C53",
+      "C55"
+    ],
+    "result": "Ssd1 protein levels increase during aging and P-bodies accumulate in old cells, with >85% of old cells showing visible P-bodies compared to only 1% in young cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50, C53, C55 are supported by Western blot data (Figure 1B) showing increased Ssd1 protein in old cells and microscopy data (Figures 1C-D) quantifying P-body accumulation. The dramatic increase from 1% to >85% of cells with visible P-bodies provides strong quantitative evidence for this age-related change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C54",
+      "C56"
+    ],
+    "result": "Ssd1 sequesters mRNAs to P-bodies during aging, likely contributing to reduced protein synthesis in old cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C52, C54, C56 are supported by the combination of established Ssd1 function (C51-C52, cited literature), co-localization data (C54), and the correlation between increased Ssd1, increased P-bodies, and reduced protein synthesis. While C54 notes data not shown, the inference in C56 is reasonable given the convergent evidence from multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C61",
+      "C63"
+    ],
+    "result": "Moderate overexpression of Ssd1 in young cells reduces protein synthesis and extends replicative lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59, C61, C63 are supported by polysome profiling data (Figure 1E) showing reduced protein synthesis upon Ssd1 overexpression and replicative lifespan analysis (Figure 1G) showing significant lifespan extension. The data demonstrate sufficiency of elevated Ssd1 for both phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C64"
+    ],
+    "result": "Loss of Ssd1 shortens replicative lifespan and reduces the translational deficit in old cells, indicating Ssd1 function is required for normal lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62, C64 are supported by replicative lifespan analysis (Figure 1F) showing shortened lifespan upon Ssd1 loss and polysome profiling (Figure 4G) showing partial restoration of protein synthesis in old ssd1\u0394 cells. These data demonstrate necessity of Ssd1 for normal lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both Ssd1 induction and Gcn2 activity contribute independently to the down-regulation of protein synthesis during replicative aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C88-C90 are supported by polysome profiling data (Figure 4G) showing that deletion of either GCN2 or SSD1 partially restores the monosome peak in old cells, while deletion of both further restores protein synthesis. This demonstrates that both mechanisms contribute non-redundantly to age-related translational repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C77",
+      "C78"
+    ],
+    "result": "Phosphorylation of eIF2\u03b1 is elevated in old cells to levels comparable to amino acid depletion to 20% of normal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C77-C78 are supported by Western blot data (Figures 4A-B) showing clear eIF2\u03b1 phosphorylation in old cells that is comparable in magnitude to that induced by amino acid depletion. The quantitative comparison provides strong evidence for Gcn2 activation during aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Despite elevated eIF2\u03b1 phosphorylation in old cells, Gcn4 and its downstream targets are not upregulated during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C84-C87 are supported by multiple lines of evidence: Gcn4-luciferase reporter data (Figure 4E), ribosome profiling over the GCN4 locus (Figure 4F), and citation to previous transcriptional analysis (C87). The data consistently show that while eIF2\u03b1 is phosphorylated, this does not lead to Gcn4 induction, distinguishing aging from typical amino acid starvation responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C94"
+    ],
+    "result": "TOR remains active during aging as evidenced by persistent Rps6 phosphorylation, indicating old cells experience a stress condition sensed specifically by Gcn2 but not TOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C94 are supported by Western blot data (Figure 4B) showing persistent Rps6 phosphorylation in old cells despite eIF2\u03b1 phosphorylation. This demonstrates that the translational repression during aging occurs via Gcn2 activation without TOR inhibition, distinguishing it from nutrient deprivation responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Translation efficiency decreases most during aging for the most abundant transcripts in young cells, particularly those encoding ribosomal proteins and translation machinery, while low-abundance transcripts show no significant change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by scatter plot analysis (Figure 3A) showing the relationship between transcript abundance and translational efficiency change, and gene ontology analysis (Figures 3B-D and supplements) identifying ribosomal protein genes as most affected. The data demonstrate selective translational repression based on transcript abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "There is a positive correlation (r=0.614) between genes with reduced translational efficiency during aging and during amino acid starvation, but 122 transcripts show increased translation during starvation but not aging, enriched for Gcn4 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by comparison with published data (Ingolia et al., 2009) shown in Figure 4C and analysis in Figure 4D and supplements. The correlation demonstrates similarity between aging and starvation responses, while the 122 differentially regulated genes (enriched for Gcn4 targets) explain why Gcn4 is not induced during aging despite eIF2\u03b1 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Overexpression of tRNA (IMT4) activates Gcn2 in young cells, reduces protein synthesis, and extends replicative lifespan in a manner fully dependent on Gcn2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C91-C92, C96-C98 are supported by multiple lines of evidence: Western blot showing eIF2\u03b1 phosphorylation (Figure 5C), replicative lifespan analysis (Figures 5A-B, 5F), Gcn4-luciferase reporter data (Figure 5D), and polysome profiling (Figure 5E). The genetic deletion experiment (C98, Figure 5F) demonstrates Gcn2 dependence. The data collectively show that tRNA overexpression activates the Gcn2 pathway and extends lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C95"
+    ],
+    "result": "tRNA overexpression activates Gcn2 without inactivating TOR, demonstrating that Gcn2 activation can occur independently of TOR inhibition in rich media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by Western blot data (Figure 5C) showing eIF2\u03b1 phosphorylation without loss of Rps6 phosphorylation upon tRNA overexpression, and comparison with TOR inhibition by rapamycin. This demonstrates pathway independence and distinguishes this intervention from caloric restriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "GCN2 deletion alone has no effect on lifespan, indicating that the Gcn2-mediated reduction in protein synthesis during aging does not optimize normal lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by replicative lifespan analysis (Figure 5F) showing no lifespan change upon GCN2 deletion despite restoration of protein synthesis in old cells (Figure 4G). This distinguishes the role of Gcn2 during aging from Ssd1, whose loss shortens lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The lifespan extension from tRNA overexpression requires Gcn4, demonstrating that Gcn4-dependent processes rather than global translational repression mediate the longevity benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by replicative lifespan analysis (Figure 5G) showing that GCN4 deletion abolishes the lifespan extension from IMT4 overexpression. This genetic epistasis experiment demonstrates that Gcn4 is required downstream of Gcn2 activation for lifespan extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C103",
+      "C104",
+      "C107",
+      "C108"
+    ],
+    "result": "Overexpression of Gcn4 extends replicative lifespan and activates autophagy without reducing global protein synthesis or activating Gcn2/inhibiting TOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C103-C104, C107-C108 are supported by replicative lifespan analysis (Figure 6A), Western blots showing no Gcn2 activation or TOR inhibition (Figure 6B), polysome profiling showing no reduction in protein synthesis (Figure 6C), and autophagy assay (Figure 6D). The data demonstrate that Gcn4 is sufficient for lifespan extension independent of translational repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Gcn4-mediated lifespan extension is fully dependent on autophagy, as deletion of either ATG1 or ATG8 completely blocks the lifespan extension from Gcn4 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C109-C111 are supported by replicative lifespan analysis with autophagy gene deletions (Figures 6E-F) showing that both atg1\u0394 and atg8\u0394 completely abolish the lifespan extension from Gcn4 overexpression. This demonstrates that autophagy induction is the critical downstream effector of Gcn4 for longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Most transcript levels increase during aging, with increased cryptic and intergenic transcription consistent with reduced histone occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by RNA-seq data (Figure 2B and supplements) and citations to previous work on histone occupancy during aging. The observation of increased cryptic and intergenic transcription is consistent with the authors' previous findings of histone loss during aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C43"
+    ],
+    "result": "Old yeast cells isolated by MEP had undergone 25-30 divisions (median lifespan 22 divisions) and remain viable, ruling out accumulation of dead cells as an explanation for reduced protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C43 establish important methodological controls. C40 describes the experimental design, while C43 (supported by citation to previous work) addresses a potential confound. Together they validate that the observed translational defects reflect changes in living old cells rather than cell death artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C130"
+    ],
+    "result": "Prior work reported that Gcn4 overexpression from an ADH1 promoter reduces bulk protein synthesis, but the current study using the endogenous promoter with uORF deletion shows no such reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C130 highlight a discrepancy between the current study and recent prior work (Mittal et al., 2017). The authors suggest this could be due to different expression levels from different promoters or different measurement methods (polysome profiling vs. labeled amino acid incorporation). Without additional experiments, it's unclear which result is more accurate or whether both are correct under different conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C112"
+    ],
+    "result": "Gcn2-mediated eIF2\u03b1 phosphorylation during aging may trigger P-body aggregation through accumulation of stalled preinitiation complexes containing 40S ribosomes and mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 propose a mechanistic link between Gcn2 activation and P-body formation based on established P-body biology (C112, cited) and the observed Gcn2 activation in old cells. However, this is largely inferential (C113) and lacks direct experimental evidence testing whether Gcn2 activation is required for P-body formation during aging or whether the two mechanisms are truly linked.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C124"
+    ],
+    "result": "Amino acid depletion, a lifespan-extending intervention, induces P-body formation and increases Ssd1 protein levels in young yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C124 are supported by microscopy data (Figure 7\u2014figure supplement 1A-B) showing P-body formation and Western blot data (Figure 7\u2014figure supplement 1C) showing increased Ssd1 upon amino acid depletion. This suggests that Ssd1 induction and P-body formation may be a common mechanism in multiple longevity interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior literature establishes that translational efficiency correlates with longevity, that mild reduction in protein synthesis often extends lifespan across species, and that TOR inhibition and reduction of translation factors extend lifespan, though not all translational reductions extend lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28-C37 summarize established knowledge from the literature (all supported by citations) that provides context for the current study. These claims accurately represent the state of the field regarding the relationship between protein synthesis and aging, including both positive examples and important exceptions (C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Budding yeast is a leading model system for aging studies due to its short lifespan, genetic tractability, conserved aging pathways, and unique ability to accurately measure replicative lifespan; the MEP enables isolation of old cells for molecular analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 establish the rationale for using yeast as a model system and describe the MEP methodology. These are supported by citations to previous literature and represent accurate statements about the yeast aging field and the technical capabilities that enable this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on TOR and Gcn2 signaling pathways: TOR is active during growth and regulates translation; Gcn2 is the sole eIF2\u03b1 kinase in yeast, activated by various stresses including uncharged tRNAs; eIF2\u03b1 phosphorylation reduces global translation while paradoxically inducing Gcn4 translation via uORF leaky scanning; Gcn4 regulates stress response genes and autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 provide established background knowledge about TOR and Gcn2 signaling pathways, all supported by citations to previous literature. These accurately represent the current understanding of these pathways and provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The authors' previous work showed that histone protein levels decrease during aging despite increased transcript levels and stable protein half-life, and that most transcripts increase during aging except highly abundant ones like ribosomal protein genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 accurately cite the authors' previous work (Feser et al., 2010; Hu et al., 2014) and provide important context for the current study's hypothesis that protein synthesis may be reduced during aging. These prior observations motivated the genome-wide analysis of translation presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "rRNA levels remain equivalent during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by citation to recent work (Pal et al., 2018) and is important for ruling out changes in ribosome abundance as an explanation for reduced protein synthesis during aging. This control observation strengthens the interpretation that translational efficiency rather than ribosome availability is the key change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SSD1 was previously identified as upregulated during aging but not upon histone H3 depletion; Ssd1 is an mRNA binding protein that functions as a translational repressor; mutations in SSD1 affect yeast lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 cite previous literature (including the authors' own work) to establish the rationale for investigating Ssd1 in the context of aging and translational control. These accurately represent prior knowledge about Ssd1 function and its connection to longevity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "High-level Ssd1 overexpression is lethal; cell growth is slower in galactose; exponentially growing yeast cultures are predominantly young cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C60 provide important methodological context. C57 (cited) explains why moderate overexpression was used; C58 explains differences in polysome profiles between glucose and galactose; C60 explains why overexpression experiments in growing cultures primarily affect young cells. All are accurate statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Prior literature on Ssd1 regulation and function: P-bodies accumulate during aging in C. elegans; Cbk1 phosphorylation regulates Ssd1 localization between daughter cells and P-bodies; Ssd1 binds specific mRNAs in non-stressed conditions; Ssd1 overexpression causes P-body localization; Cbk1 localizes asymmetrically to buds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C122 cite previous literature to provide context for interpreting the Ssd1 results. These accurately represent prior knowledge about Ssd1 regulation, P-body biology, and the conservation of P-body accumulation during aging across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Ssd1 translation efficiency decreased during aging, suggesting post-translational stabilization mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by reference to supplementary data (Table S1) and represents an interesting observation that Ssd1 protein increases despite decreased translational efficiency, suggesting post-translational regulation. However, this is noted as a suggestion rather than a demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Prior literature shows that Gcn4 synthesis is induced under many stress conditions beyond amino acid depletion (all Gcn2-dependent), many of which extend yeast lifespan; Gcn4 is required for lifespan extension from various interventions including ribosomal subunit depletion, TOR inhibition, and dietary restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 cite extensive prior literature establishing the broad role of Gcn2/Gcn4 in stress responses and longevity. These accurately represent the state of the field and provide important context for the current findings on Gcn4-dependent lifespan extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Prior work shows that autophagy is required for lifespan extension in response to ER stress during yeast replicative aging; TOR and RAS/PKA pathways inhibit autophagy when nutrients are abundant but release this inhibition during nutrient limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 cite previous literature on autophagy and aging, providing context for the finding that Gcn4-mediated lifespan extension requires autophagy. These accurately represent established knowledge about autophagy regulation and its role in longevity.",
+    "result_type": "MINOR"
+  }
+]

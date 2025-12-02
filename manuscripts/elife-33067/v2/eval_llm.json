@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The crystal structure of Chlamydomonas IFT80 was determined at 1.8 \u00c5 resolution, revealing two N-terminal \u03b2-propellers (BP1 and BP2) followed by an \u03b1-helical extension. BP1 adopts a canonical seven-bladed \u03b2-propeller fold, while BP2 has an unusual open conformation. The C-terminal 126 residues are disordered in the crystal but are predicted to form seven \u03b1-helices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C45-C52 collectively describe the crystal structure determination and architectural features of IFT80. The 1.8 \u00c5 resolution structure (C1, Table 1) provides high-quality data supporting the detailed structural descriptions. The domain architecture is clearly visualized in Figure 2, and the proteolysis experiments (C49-C50, Figure 1D) support the inference about C-terminal disorder. The structural features are well-documented with appropriate crystallographic statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IFT80 BP1 shows structural similarity to coatomer subunits (\u03b2'-COP, \u03b2-COP, \u03b1-COP) with ~15% sequence identity and 2.2 \u00c5 RMSD over ~300 residues. However, the relative 3D orientation of BP2 and the \u03b1-helical extension differs markedly from coatomer proteins due to structural divergences in the BP1-BP2 connection and the open conformation of BP2, suggesting IFT80 is unlikely to function directly in vesicle coating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 describe structural comparisons between IFT80 and coatomer proteins. The structural superposition data (C54-C55, Figure 2D) provide quantitative support for the similarity of BP1. The detailed structural differences (C57-C62) are clearly documented in Figure 2, and the inference about functional divergence (C64) is reasonable given the substantial structural differences. The evolutionary relationship (C56) is supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C65",
+      "C66",
+      "C67",
+      "C71"
+    ],
+    "result": "The N-terminal \u03b2-propeller (BP1) of IFT80 tethers it to the IFT-B complex through a high-affinity interaction with the CH-domain of IFT38, with a dissociation constant of ~225 nM. This interaction is sufficient for IFT80 incorporation into the IFT complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C65-C67, C71 describe the IFT80-IFT38 interaction. The GST pull-down experiments (C65, Figure 3B) demonstrate that BP1 is sufficient for binding. The reconstitution experiment (C66, Figure 3C) confirms complex formation, and ITC data (C67, Figure 3D) provide quantitative binding affinity measurements. The stoichiometric 1:1 complex with Kd ~225 nM indicates a strong, specific interaction supporting the conclusion that this is the primary tethering mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "IFT80 displays additional interactions with the IFT54/20 complex through its C-terminal \u03b1-helical extension (residues 657-765). This interaction does not require the N-terminal CH-domain of IFT54 and depends on the 111 most C-terminal residues of IFT80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C72 describe secondary interactions between IFT80 and IFT54/20. The pull-down experiments shown in Figure 3\u2014figure supplement 1 demonstrate that the C-terminal extension is required (C68), the IFT54 CH-domain is not required (C69), and deletion analysis maps the interaction to the C-terminal 111 residues (C70). These data support the conclusion of additional interactions beyond the primary IFT38 binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "IFT80 forms a homo-dimer through two interaction interfaces involving the second \u03b2-propeller (BP2) and the \u03b1-helical extension. Interface 1 consists of a 6-stranded anti-parallel \u03b2-sheet formed by blade 7 of each BP2. Interface 2 involves interactions between the first TPR-like repeat and blade 1 of BP2. The combined buried surface area is ~1200 \u00c5\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C73-C80 describe the IFT80 dimer structure observed in the crystal. The crystallographic 2-fold symmetry (C73, Figure 4A) provides strong evidence for physiological relevance. The detailed structural descriptions of both interfaces (C76-C79) are well-documented in Figure 4B-C with specific residue interactions identified. The buried surface area calculation (C80) is appropriate for the described interfaces. However, the physiological relevance requires validation by solution studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "IFT80 exists as a dimer in solution at physiological salt concentrations (150 mM NaCl) but dissociates into monomers at high salt (500 mM NaCl). SEC and SAXS experiments demonstrate that the dimerization requires the C-terminal \u03b1-helical extension, as the BP1-BP2 construct remains monomeric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 describe solution studies validating the dimer. SEC data (C81-C82, Figure 5A) show salt-dependent oligomerization. SAXS measurements (C83-C85, Figure 5B-D, Table 2) provide independent confirmation with molecular dimension changes and good fits to dimer/monomer models. The requirement for the C-terminal extension (C87-C88) is demonstrated by comparing constructs. The convergence of multiple biophysical methods strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "DLS measurements confirm that IFT80(BP1-BP2) is monomeric with a constant radius of ~3.6 nm, while full-length IFT80 shows concentration-dependent radius changes from ~4 nm to ~5.5 nm, consistent with monomer-dimer equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe DLS data (Figure 6A) that complement the SEC and SAXS results. The constant radius for BP1-BP2 (C89) confirms it is monomeric, while the concentration-dependent increase for full-length IFT80 (C90) is consistent with dimerization. The radius values are reasonable for the molecular weights and agree with the crystal structure dimensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A reconstituted 14-subunit IFT-B complex containing IFT80 shows concentration-dependent increases in radius from ~10 nm to ~15 nm by DLS and SAXS, suggesting IFT80 can organize dimers of IFT-B complexes consistent with IFT train formation observed in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe experiments with reconstituted IFT-B complexes. The complex was successfully assembled (C91, Figure 6C), and both DLS and SAXS (C92, Figures 6D-E) show concentration-dependent behavior paralleling isolated IFT80. The inference that this represents IFT-B dimerization (C93) is reasonable given the similarity to IFT80 alone. The connection to IFT train formation (C94) is supported by citations to in situ observations, though direct structural evidence for trains is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CRISPR/Cas9-generated biallelic frameshift mutations in Ift80 (p.T24fsX32/p.V20fsX29) in IMCD3 cells result in complete absence of cilia formation. 100% of mutant cells lack acetylated tubulin staining but retain a single \u03b3-tubulin-positive basal body with a small amount of Arl13b-positive ciliary membrane, demonstrating that IFT80 is absolutely required for ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C95-C101 describe knockout experiments. The CRISPR/Cas9 approach (C5, C95-C96) is well-documented in Figure 7\u2014figure supplement 1, with proper genotyping. The complete absence of cilia (C99-C100) is clearly shown in Figures 7A and 8A with quantitative analysis. The retention of basal bodies (C101) indicates the defect is specific to axoneme assembly. Two additional independent clones (mentioned in text) control for off-target effects. This provides strong evidence that IFT80 is essential for ciliogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "mIFT80-GFP localizes to IFT trains within cilia, with an average of 21.8 \u00b1 9.6 particles per cilium separated by 0.33 \u00b1 0.15 \u03bcm. This tagged construct functionally rescues ciliogenesis in Ift80 null-mutant cells to the same degree as untagged IFT80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe localization and functional validation of tagged IFT80. Super-resolution microscopy (C102, Figure 7B) clearly shows punctate localization within cilia. The quantification (C103) provides specific measurements of IFT train organization. The rescue experiment (C104, Figures 7C and 8) demonstrates the tagged protein is functional, validating its use for localization studies. This provides important functional context for the structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Six disease-causing missense mutations in IFT80 (H105Q, L143S, G241R, L549del, A701P, R719C) are distributed across different functional domains and do not cluster. All missense mutant forms rescue ciliogenesis and localize to IFT trains like wild-type, but are expressed at significantly lower levels, suggesting these mutations cause protein instability rather than loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C105-C116 describe analysis of disease mutations. The structural mapping (C108-C110, Figure 8\u2014figure supplement 1) shows mutations are distributed across domains. Rescue experiments (C112, Figure 8B-D) demonstrate all mutants restore ciliogenesis. Localization studies (C113) show proper IFT train incorporation. Western blotting (C114, Figure 8\u2014figure supplement 3) provides evidence for reduced expression. The inference about protein instability (C115) is reasonable given the functional rescue despite reduced expression. This suggests a hypomorphic rather than null mechanism for disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Deletion of the C-terminal dimerization domain (IFT80\u2081\u208b\u2085\u2088\u2086) prevents rescue of ciliogenesis, while IFT80\u2081\u208b\u2086\u2085\u2087 (containing the dimerization domain but lacking the IFT54/20 binding region) provides partial rescue. This demonstrates that IFT80 homodimerization (residues 587-657) is essential for cilium formation, while the IFT54/20 binding domain is not mandatory for initiation of ciliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C117-C125 describe domain deletion experiments. The rescue data (Figure 9B-C) clearly show that constructs lacking the dimerization domain (1-300, 1-586) fail to rescue (C120), while the construct containing it (1-657) provides partial rescue (C117). All constructs contain the IFT38-binding BP1 domain (C122), so the failure is not due to lack of IFT complex incorporation (C123). The inference that dimerization is essential (C125) is well-supported. However, the partial rescue with 1-657 suggests the C-terminal IFT54/20 binding region contributes to full function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The 2-fold symmetric IFT80 dimer could constitute the molecular basis for IFT particle doublet formation observed in electron tomography, but is unlikely to explain train formation along the axonemal axis, which requires an asymmetric interface. The mechanisms of IFT particle oligomerization into trains remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 discuss the implications of IFT80 dimerization for IFT train structure. The speculation about doublet formation (C126) is reasonable given the 2-fold symmetry matches EM observations. The argument against longitudinal train formation (C127) is logical given the asymmetric interfaces observed in EM (cited work, Figure 10). The observation that reconstituted complexes don't form long trains (C128) supports this interpretation. The acknowledgment of remaining unknowns (C129) and speculation about other factors (C130) are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Two models for IFT80 stoichiometry in IFT-B complexes are considered: (1) two copies of IFT80 per complex, or (2) one copy of IFT80 with the entire complex dimerizing via IFT80. The 1:1 IFT80:IFT38 stoichiometry from ITC and previous reconstitution data favor the second model, where IFT-B complexes dimerize through IFT80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 present alternative models and evaluate them against available data. The ITC data showing 1:1 stoichiometry (C133, Figure 3D) and previous reconstitution studies (C132) argue against model 1. The structural compatibility of the dimer with IFT38 binding (C135) supports model 2. The acknowledgment that definitive resolution requires additional structural studies (C136) is appropriate. The reasoning is logical and well-supported by the available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Disease-causing missense mutations in IFT80 do not ablate IFT-B complex interactions or homodimerization, but likely cause partial protein instability to a degree consistent with recruitment of cargo to cilia and IFT, explaining the hypomorphic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 synthesize the disease mutation findings. The inference that mutations don't affect interactions or dimerization (C137) is supported by the rescue and localization data (C112-C113). The hypothesis about partial instability (C138) is supported by the Western blot data (C114) and is consistent with the cited genetic threshold relationship. This provides a mechanistic explanation for how these mutations cause disease while retaining significant function.",
+    "result_type": "MAJOR"
+  }
+]

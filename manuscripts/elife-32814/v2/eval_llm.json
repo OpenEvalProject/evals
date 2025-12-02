@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript provides background on zoonoses as multi-host pathogens with complex transmission modes. Claims establish that zoonoses are naturally transmitted between animals and humans (C1), are the most important cause of emerging diseases (C2), are predominantly multi-host pathogens (C3) with heterogeneous host contributions (C4-C5), and have complex life cycles with multiple transmission modes (C6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations to established literature (Perkins et al., 2005; Jones et al., 2008; Ostfeld and Holt, 2004; Webster et al., 2017, among others). The claims represent standard knowledge in disease ecology and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript describes T. cruzi as a multi-host parasite with complex transmission ecology involving both vectorial (contaminative) and trophic (food-web) routes. T. cruzi infects over 100 mammalian species (C9), is transmitted by Triatominae vectors (C11-C13) and through predator-prey interactions (C14), and establishes lifelong infections without causing mortality in sylvatic hosts (C15-C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations to established T. cruzi literature (Noireau et al., 2009; Jansen et al., 2015; Kribs-Zaleta, 2006; Teixeira et al., 2011). The description of T. cruzi transmission mechanisms is consistent with established knowledge and provides essential biological context for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Current control strategies (chemical insecticides and housing improvement) are proving inefficient in reducing T. cruzi transmission (C17-C18), possibly due to maintenance among wild hosts and sylvatic vectors (C19). This motivates the need for models that explicitly consider wildlife transmission ecology (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by appropriate citations (Dias and Schofield, 1999; Roque et al., 2013). Claim C20 is a logical inference that follows from the inefficiency of current strategies. Together, these claims provide clear motivation for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript introduces the ecomultiplex framework based on multiplex networks, which have been successfully applied to epidemiology and ecology (C21-C23). The framework accounts for multiple transmission routes (C24), uses metabolic theory to estimate species frequencies (C25-C26), and explicitly considers spatial structure (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about multiplex networks are well-supported by appropriate citations (De Domenico et al., 2013; Kivela et al., 2014; Lima et al., 2015; Pilosof et al., 2017). The stated features of the ecomultiplex framework (C24-C27) are supported by citations to metabolic theory (Jetz et al., 2004) and spatial epidemiology (Hudson et al., 2002). The framework description is clear and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C101",
+      "C102"
+    ],
+    "result": "The ecomultiplex model is applied to two Brazilian ecosystems (Canastra and Pantanal) using empirical data on predator-prey interactions, vector-host interactions, and parasite infection rates (C28, C93-C98). The model makes several simplifying assumptions including uniform interaction radius (C82), equal transmission probabilities across species (C83-C85), and faster parasite spread than metapopulation dynamics (C87, C99). Model parameters include N=10000 animal groups, home range radius r=0.03, and immunization threshold \u03c6=1000 (C101-C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the model structure is clearly described and based on empirical data from Rocha et al., 2013 and Herrera et al., 2011, several critical assumptions lack justification. The uniform interaction radius (C82) and equal transmission probabilities (C83) are acknowledged as simplifications but their impact on results is not thoroughly validated. The claim that network structure and frequencies are 'analogous to considering different transmission rates' (C84) is supported only by self-citation (Stella et al., 2016) and requires more rigorous justification. The assumption of faster parasite spread than metapopulation dynamics (C87) is stated but not validated against empirical timescales. Additional sensitivity analyses would strengthen confidence in model robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Network analysis reveals that vectors are more connected than other species (C29), distribute links more equally across layers (C30), occupy central positions in star-like topologies (C33), and thus facilitate parasite spread (C31-C32, C34). This is shown through multiplex cartography analysis in both Canastra and Pantanal (Figure 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network structural analysis is well-presented with clear visualization in Figure 2. The claims about vector connectivity and centrality (C29-C30, C33) are directly supported by the multiplex cartography data. The inference that vectors facilitate spread (C31-C32, C34) logically follows from their structural position. The analysis appropriately uses established multiplex network metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C42",
+      "C45",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "Immunization strategy comparisons show that targeting species with highest infection rates (Hemoculture) is most effective (C37), while ecomultiplex strategies (targeting species interacting with vectors) outperform random immunization (C40). Performance varies by ecosystem and vector frequency: in Canastra at low vector frequency, biological strategies equal random (C42), while in Pantanal, targeting parasitized Didelphidae is highly effective (C48). Targeting Cricetidae in Pantanal performs worse than random (C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by simulation results presented in Figure 3 with appropriate statistical testing (sign tests with p-values reported). The comparison across multiple strategies, ecosystems, and parameter values is thorough. The finding that network-based strategies can perform comparably to epidemiological data-based strategies is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In Canastra, immunizing the ocelot (Leopardus pardalis), which has positive T. cruzi infection, dramatically increases infection time compared to immunizing the maned wolf (Chrysocyon brachyurus), which has negative infection (C52-C54). This indicates the ocelot has a parasite amplification effect (C55) that depends on ecomultiplex structure (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between immunizing two different top predators with different infection statuses is well-designed and clearly presented in Figure 4. The drastic difference in infection time (C54) provides strong evidence for the amplification effect (C55). The claim that this depends on ecomultiplex structure (C56) is supported by the subsequent mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript identifies a novel parasite amplification mechanism: while top predators are generally thought to regulate parasite spread (C71), the ecomultiplex framework reveals they can facilitate spread when they interact with vectors (C72). The ocelot, as a generalist predator feeding on vectors and prey (C73-C74), can acquire infection through the food web and transmit to vectors through vectorial interactions (C75-C76). This amplification emerges only when both layers are considered together (C78), providing theoretical explanation for empirical observations (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the most novel and important finding of the manuscript. The amplification mechanism is well-supported by the immunization experiments (Figure 4), has clear mechanistic explanation (C73-C76), and is appropriately contrasted with traditional understanding (C71). The claim that amplification emerges only from multiplex structure (C78) is crucial and well-demonstrated. The connection to empirical observations (Rocha et al., 2013) strengthens the finding. The generalization to other predators (C77) is reasonable but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript's key conclusions are: (1) network structure identifies species facilitating parasite spread (C57), (2) interaction structure is as useful as biological traits for control (C58), (3) top predator interactions affect their role in facilitating rather than hampering transmission (C59), (4) ecomultiplex strategies outperform taxonomic strategies (C60), and (5) network structure enables data-efficient immunization strategies (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are well-supported by the collective results presented. Claims C57-C59 represent the three main findings stated in the Discussion. Claims C60-C61 are supported by the immunization strategy comparisons in Figure 3. The conclusions appropriately synthesize the results without overstating their implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The results demonstrate the importance of jointly considering vector-host and predator-prey interactions for understanding T. cruzi transmission (C62). Immunizing species exposed to vectorial transmission is efficient across both ecosystems (C63), highlighting the importance of vectorial transmission for boosting spread in the food web (C64). The ecomultiplex model enables quantitative investigation of interaction interplay (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize key insights from the immunization experiments. The consistency of vectorial layer importance across ecosystems (C63) is well-demonstrated in Figure 3. The inference about vectorial transmission boosting food web spread (C64) is logical and supported by the data. Citations to relevant literature (Coura, 2006; Johnson et al., 2010; Lafferty et al., 2008) appropriately contextualize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In Pantanal, immunizing Didelphidae with positive parasitemia is more effective than immunizing all parasitized mammals (C66), consistent with their role as important T. cruzi reservoirs (C67-C68). This demonstrates the ecomultiplex framework's power in identifying functional roles based on topological interactions (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding about Didelphidae (C66) is clearly shown in Figure 3c and appropriately connected to established literature identifying them as reservoirs (Herrera and Urdaneta-Morales, 1992; Noireau et al., 2009). The definition of reservoirs (C68) is properly cited. The claim about identifying functional roles from network structure (C69) is a reasonable inference from this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The parasite amplification mechanism is robust to violations of metabolic theory assumptions, as shown in null models with body mass-independent abundance (Appendix 8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claim references Appendix 8 for null model analysis, the appendix is not provided in the manuscript text, making it impossible to evaluate the robustness analysis. This is an important validation that should be more thoroughly described in the main text or supplementary materials should be provided for review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Parasite amplification by predators may occur in other systems with multiple transmission routes including trophic transmission, such as Toxoplasma gondii and Trypanosoma evansi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is speculative extrapolation beyond the current study. While the citations (Dubey, 2004; Herrera et al., 2011) establish that these parasites have multiple transmission routes, no modeling or empirical analysis is provided to support that amplification occurs in these systems. This represents a reasonable hypothesis for future work but is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Immunizing species more exposed to parasites leads to better performance than random immunization, confirming that network structure and frequencies create differential exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the immunization strategy results showing that network-based strategies outperform random immunization. It validates the model assumption that structure and frequencies create differential transmission rates (C84-C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "While removing vector colonies can hamper parasite diffusion (C35), this strategy is unstable due to vector reintroduction (C36), motivating focus on immunizing other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations (Yamagata and Nakagawa, 2006; Funk et al., 2013) and provide clear justification for the immunization strategies explored in the study.",
+    "result_type": "MINOR"
+  }
+]

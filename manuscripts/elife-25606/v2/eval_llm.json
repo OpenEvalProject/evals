@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study employed a longitudinal design with 126 subjects aged 8-33 years (60 female) scanned approximately annually for 1-10 years, with strict inclusion criteria for motion (<0.15mm mean frame-wise displacement) and task performance (\u226550% correct trials per condition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design is clearly described with appropriate inclusion/exclusion criteria. The longitudinal approach with strict motion controls is methodologically sound for developmental fMRI. Sample characteristics are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mean reaction time and saccade inaccuracy decrease during development following age^-1 trajectories (239ms/39% and 0.25\u00b0/47% reductions respectively from ages 8-33), while behavioral variability measures (RT standard deviation and saccade imprecision) also decrease following age^-1 trajectories (156ms/67% and 0.87\u00b0/35% reductions respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Linear mixed-effects models appropriately account for longitudinal data structure. Effect sizes are substantial and statistically significant (all p<0.001). The age^-1 trajectory is consistent with prior literature and theoretically motivated. Results are clearly visualized in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RT variability provides unique information about developmental status beyond mean RT (model comparison p=0.002), while saccade imprecision does not significantly improve prediction of age beyond mean inaccuracy (p=0.052).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Model comparison using AIC and likelihood ratio tests is appropriate. The finding that RT variability but not saccade imprecision provides unique developmental information is clearly demonstrated, though the imprecision result approaches significance and may reflect power limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Minimal age-related differences exist in the average amplitude of brain state expression across development, with only the spatial VME component showing age-related differences in duration (not amplitude), suggesting mean global gain does not change during adolescent development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Omnibus F-tests systematically tested for age-related differences across all brain states and time points. The finding of minimal amplitude differences but some duration differences is well-documented. However, the inference about 'mean global gain' relies on the theoretical framework's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Trial-to-trial behavioral performance covaries with brain state expression: faster RTs associate with greater early VME/maintenance state expression and reduced later expression; spatial state expression shows hemifield-specific effects; and a quadratic speed-accuracy tradeoff exists at the trial level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Regression analyses relating trial-wise brain state expression to behavior are well-executed with appropriate controls for confounds (target location, run effects, etc.). The temporal specificity of effects (peaking around saccade execution) supports the interpretation. However, the large number of comparisons raises concerns about multiple testing corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The trial-wise relationship between RT and mean VME brain state expression reflects a mixture of both time-shifted BOLD response and true amplitude-based gain fluctuation, as demonstrated through simulation analyses comparing pure timing, pure amplitude, and mixed mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation approach (Figure 5) cleverly distinguishes timing from amplitude effects by examining the integral of residual time series. The actual data pattern is inconsistent with pure timing or pure amplitude mechanisms, supporting a mixed interpretation. This addresses a critical confound in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Total brain state variability decreases with age (t(333)=-3.35, p=9.0e-4) after controlling for motion and trial count. This decrease is driven by maintenance (t(333)=-3.8, p=1.8e-4) and retrieval (t(333)=-5.53, p=6.27e-8) components, while VME-related variability does not significantly decrease (t(333)=-1.47, p=0.14). Maintenance variability decreases more slowly than retrieval variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The decomposition of total brain state variability into components is analytically sound. Statistical tests show clear differential developmental trajectories. Motion controls are appropriate. However, the interpretation that VME represents 'sensorimotor' processes while maintenance/retrieval represent 'cognitive' processes may oversimplify the functional distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Age-related decreases in brain state variability persist even when the relationship between motion and age is artificially reversed through biased bootstrap sampling, demonstrating that motion artifacts do not account for the developmental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biased bootstrap approach is creative and addresses a critical concern in developmental fMRI. Results shown in Figure 7 demonstrate that even when older subjects move more than younger subjects, brain state variability remains lower in older subjects. This substantially strengthens confidence in the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Individual developmental trajectories of brain state variability correlate with RT variability trajectories (r=-0.48, p=0.008, n=29 subjects with 4+ sessions), but not significantly with saccade imprecision trajectories (r=0.28, p=0.14). However, across the full sample, brain state variability relates to saccade imprecision (t(1344)=3.2, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The within-subject longitudinal analysis (n=29) is underpowered and shows inconsistent results between RT variability (significant) and saccade imprecision (non-significant). The cross-sectional relationship with imprecision may reflect between-subject differences rather than within-subject developmental change. The discrepancy between analyses weakens confidence in the specificity of the brain-behavior relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "The authors conclude that adolescent working memory development is supported by decreased variability in brain state expression, specifically through stabilization of gain signals affecting maintenance and retrieval (but not sensorimotor) processes. This demonstrates that cognitive maturation involves fine-tuning the stability of already-available cognitive processes rather than emergence of new functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusions are well-supported by the convergent evidence from behavioral trajectories, brain state variability trajectories, trial-level brain-behavior relationships, and individual differences analyses. The interpretation that 'core functions are online by childhood' is consistent with the finding that brain state patterns themselves don't change with age, only their variability. However, the causal claim that stabilization 'underlies' maturation is correlational and would require intervention studies to fully establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The memory-guided saccade task varied target presentation duration (1.5 or 3s) and delay duration (1.5 or 9s), with targets at \u00b13, 6, or 9\u00b0 along the horizontal meridian. Subjects made an initial encoding saccade to remove age-related differences in response inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Task design is clearly described and well-motivated. Allowing the initial encoding saccade is a clever design choice that isolates working memory processes from response inhibition, which develops at different rates. The parametric manipulation of timing and location provides good experimental control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "fMRI data were acquired on a 3T Siemens Allegra scanner using gradient-echo EPI (TR=1.5s, TE=25ms, 3.125\u00d73.125\u00d74mm voxels, 29 slices, 229 volumes) aligned to the AC-PC plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Acquisition parameters are standard for the era and appropriate for the study. Spatial resolution is adequate for whole-brain analysis. TR of 1.5s provides reasonable temporal resolution for event-related designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior literature establishes that working memory is evident in infancy but continues developing through adolescence, behavioral variability decreases during development and is elevated in clinical disorders, though variability has not been directly examined in working memory contexts before this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Citations appropriately support each claim about prior work. The identification of a gap in the literature (behavioral variability in working memory development) is accurate and motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior research demonstrates that behavioral variability associates with neural/BOLD signal fluctuations in individual regions and networks, driven by trial-to-trial variability in gain modulating signals that are shared across cortical areas and may be functionally targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework is well-grounded in prior literature with appropriate citations. The progression from single-region to network to gain modulation accounts is logical. However, the inference that gain signals are 'functionally targeted' (C24) goes slightly beyond what the cited work directly demonstrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "By definition, global gain modulation would not change spatial patterns of task-evoked activity but would influence the amplitude of expression, manifesting as trial-to-trial variability in amplitude of whole-brain activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a clear theoretical statement that follows logically from the definition of gain modulation. It provides the conceptual foundation for the brain state variability approach. However, the assumption that gain acts purely multiplicatively without any spatial selectivity is an idealization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors discuss potential mechanisms including neuromodulatory systems (midbrain/brainstem nuclei, cholinergic modulation) and structural development (myelination, synaptic pruning) that may contribute to brain state variability and its developmental stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately cites relevant literature on neuromodulation and structural development. However, these are speculative mechanisms (particularly C68) that are not directly tested in the current study. The connections drawn are plausible but require future work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose a theoretical model in which stable behavioral performance requires stable allocation of top-down control processes (like attention) that exert influence through multiple functionally-targeted widespread gain signals differentially affecting sensorimotor and cognitive processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This theoretical synthesis is well-motivated by the data showing distinct developmental trajectories for different brain state components. However, it remains a proposed model rather than directly tested hypothesis. The causal relationships implied (attention \u2192 gain signals \u2192 behavior) are inferred rather than experimentally manipulated.",
+    "result_type": "MAJOR"
+  }
+]

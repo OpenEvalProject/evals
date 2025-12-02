@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study recorded gamma rhythms from V1 in two macaque monkeys using 2-3 laminar probes (16 contacts each) separated by 1-6 mm, while monkeys viewed static gratings with spatially varying contrast (0-43% difference). Current-source density (CSD) was used to reduce volume conduction, and recordings were aligned by cortical depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C156-C177 provide comprehensive methodological details that are internally consistent and follow standard practices for V1 electrophysiology. The use of CSD to reduce volume conduction (C162) is appropriate, and the experimental design systematically manipulates contrast to induce frequency differences. All procedures received ethical approval (C159).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Visual gratings induced gamma power in layers 2-4 and deep layers, with gamma frequency increasing systematically with local contrast (M1: R\u00b2=0.38, M2: R\u00b2=0.27, both p<10\u207b\u00b9\u2070). The frequency shift range (~5 Hz) was smaller than in Roberts et al. 2013 due to a narrower contrast range (20-60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 report statistically significant relationships between contrast and gamma frequency with appropriate statistical tests and effect sizes. The comparison to prior work (C12) provides context. The tight relationship enabled experimental manipulation of frequency differences at nearby cortical locations (C13), which is central to the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Three examples demonstrate that instantaneous frequency difference varies as a function of phase difference, with modulation amplitude ranging from ~1-1.8 Hz. Stronger modulation and lower mean frequency difference led to narrower phase distributions and higher phase-locking values (PLV: 0.11\u21920.32\u21920.51), illustrating how cortical distance and frequency difference regulate synchronization dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C25 present three well-characterized examples showing systematic relationships between frequency modulation, phase difference, and PLV. The progression across examples (C15-C24) demonstrates how interaction strength and detuning jointly determine synchronization. Dataset size is substantial (C26-C27: 805 and 882 contact pairs), supporting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The interaction function G(\u03b8) was estimated as approximately sinusoidal with symmetric positive and negative components. Phase noise parameter \u03c3 was large (M1: 19 Hz, M2: 20 Hz), indicating substantial frequency variability not explained by the interaction function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe key parameters estimated from the data. The sinusoidal interaction function (C28-C29) is consistent with theoretical expectations and prior work (Akam et al. 2012). The large phase noise (C30-C32) is appropriately interpreted as reflecting inherent variability and interactions with other cortical locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Detuning \u0394\u03c9 correlated positively with local contrast difference (M1: R\u00b2=0.28, M2: R\u00b2=0.25) and MUA rate difference (M1: R\u00b2=0.53, M2: R\u00b2=0.36). Interaction strength \u03b5 correlated inversely with cortical distance (M1: R\u00b2=0.41, M2: R\u00b2=0.29), consistent with known V1 horizontal connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 report statistically significant correlations (all p<10\u207b\u00b9\u2070) linking model parameters to physiological variables. The inverse relationship between interaction strength and distance (C37-C39) aligns with anatomical connectivity data (Stettler et al. 2002), providing biological validation of the model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The analytical model predicted gamma PLV variations across single contact pairs (M1: R\u00b2=0.18, n=7245; M2: R\u00b2=0.32, n=7938) and within individual pairs (M1: R\u00b2=0.27\u00b10.0002, M2: R\u00b2=0.1\u00b10.0001). Population means were very well predicted (M1: R\u00b2=0.83, M2: R\u00b2=0.86, both n=638).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 demonstrate that the theoretical model captures PLV variations at multiple levels of analysis. While single-pair predictions show moderate R\u00b2 values (C40-C43), population-level predictions are excellent (C44-C45), indicating the model captures systematic variance despite noise. The large sample sizes support statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mean phase difference ranged from -\u03c0/2 to \u03c0/2, with the higher-frequency rhythm leading. The model predicted phase differences at single-pair level (M1: R\u00b2=0.56, M2: R\u00b2=0.3) and within pairs (M1: R\u00b2=0.52\u00b10.0002, M2: R\u00b2=0.44\u00b10.0004), with excellent population-level predictions (M1: R\u00b2=0.92, M2: R\u00b2=0.88). This represents the first quantitative prediction of phase locking and phase differences in primate cortex based on theoretical principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 show the model successfully predicts both PLV and phase relationships. The progression from single-pair to population-level predictions demonstrates robustness. The claim of novelty (C56) is appropriately qualified ('to our knowledge') and represents a significant advance in applying oscillator theory to neural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Observed CSD-CSD gamma PLV as a function of \u0394\u03c9 and \u03b5 revealed an Arnold tongue structure in both monkeys, with high synchronization at high interaction strength/low detuning and weak synchronization at low interaction strength/high detuning. This pattern was replicated in coupled PING network simulations and confirmed across cortical layers (L2-4 and L5-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 demonstrate the Arnold tongue\u2014a central prediction of weakly coupled oscillator theory\u2014in empirical V1 data. The pattern is replicated across monkeys (C57), validated in biophysically realistic simulations (C60), and confirmed across cortical layers (C61-C62), providing strong convergent evidence for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "V1-V2 pairs exhibited similar phase-dependent frequency modulations. Detuning systematically varied phase differences, which correlated with changes in Granger causality direction, suggesting detuning can affect information flow between gamma rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 extend findings beyond V1 to V1-V2 interactions and link phase relationships to directional information flow via Granger causality. While the Granger analysis is exploratory (C66), the consistency with phase difference patterns and theoretical predictions (C64-C65) provides support for functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Gamma amplitude varied weakly-to-moderately as a function of phase difference in V1 data, replicated in PING simulations, with variation increasing with interaction strength. However, the theory of weakly coupled oscillators (TWCO) remains highly predictive despite these amplitude variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 acknowledge a limitation: amplitude variations not captured by the phase-only model. However, the authors appropriately note that TWCO remains predictive for weak-to-moderate amplitude variations (C71, citing theory), and the observation is replicated in simulations (C68), suggesting it reflects real neural dynamics rather than artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Anatomical coupling is important for interaction strength but insufficient alone to predict functional gamma interactions; detuning can functionally couple or decouple anatomically connected locations. Gamma synchronization in awake monkey V1 adheres to weakly coupled oscillator principles, likely generalizable to other brain regions and frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 synthesize key findings into a coherent framework. The proposal that both anatomical coupling and detuning are necessary (C72-C74) is well-supported by the data showing their joint effects. The claim about adherence to oscillator theory (C75) is strongly supported. Generalizability (C76) is appropriately presented as likely rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Phase-dependent frequency modulations show that fixed common frequency is not required for coordination; stronger modulations led to stronger synchronization. Frequency modulations arise naturally in intermittent synchronization, the most likely regime for gamma in vivo. This has methodological implications: stationary methods are inappropriate, and time-resolved non-stationary methods are more suitable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 present important conceptual and methodological insights. The observation that frequency modulations enhance rather than impair synchronization (C77-C78) challenges common assumptions. The identification of intermittent synchronization as the relevant regime (C79-C81) is well-justified by data variability and theory. Methodological recommendations (C82-C85) follow logically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous studies established diversity in gamma phase-locking and phase-relations, but regulation mechanisms were unclear. This study shows two main parameters determine synchronization: detuning \u0394\u03c9 (desynchronization force, modulated by contrast) and interaction strength \u03b5 (synchronization force, modulated by cortical distance). Results agree with prior hippocampal work and theoretical concepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 contextualize findings within prior literature and synthesize the regulatory framework. The identification of two key parameters (C89-C94) is well-supported by the data. Comparisons to hippocampal work (C95) and theory (C96) appropriately situate findings in broader context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Small detuning values (<10 Hz) and large frequency shifts (25-50 to 65-120 Hz) represent complementary mechanisms: large shifts open/close synchronization opportunities, while small changes at low detuning modulate strength and direction of information flow. Instantaneous frequency modulations reflect synchronization ability and arise from the network synchronization process itself, meaning frequency variations do not argue against functional gamma synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 propose an integrative framework distinguishing small and large frequency differences. The proposal (C97) is appropriately presented as a suggestion and is theoretically motivated. The conclusion that frequency variations support rather than contradict functional synchronization (C101-C102) is well-justified by the data and represents an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Instantaneous frequency modulation shape reflects the interaction function G(\u03b8), closely related to the phase response curve (PRC). The observed approximately symmetric sinusoidal functions resemble the Kuramoto model and agree with biphasic PRCs in rat hippocampus. The bidirectional interaction function was estimated, which can be symmetric despite asymmetric unidirectional PRCs. Estimated functions may be smoother than reality due to noise and volume conduction reduction, requiring future detailed characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 discuss the interaction function and its relationship to PRCs. The observations (C103-C106) are well-supported and appropriately compared to prior work. The distinction between bidirectional and unidirectional functions (C107-C108) shows theoretical sophistication. Limitations are appropriately acknowledged (C109-C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Unidirectionally connected neural groups might have asymmetric interaction functions and Arnold tongues, where frequency differences could favor optimal information transmission. While synchronization was assumed to emerge from mutual horizontal interactions, common input fluctuations might also contribute, especially for similar receptive fields. However, synchronization between V1 locations with distinct receptive fields and distance-dependent patterns indicates strong dependence on direct horizontal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 discuss alternative mechanisms and future directions. Speculation about unidirectional connections (C111-C112) is appropriately qualified. The discussion of common input (C113-C114) acknowledges an alternative mechanism, but the evidence for horizontal interactions (C115) is strong based on receptive field separation and distance dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Detuning depends on contrast differences (which modulate V1 excitation), while interaction strength depends on horizontal connectivity (varied by distance). Gamma synchronization is therefore informative about sensory input and connectivity structure. Gamma frequency is modulated by sensory and cognitive factors, suggesting frequency control as a mechanism for modulating coordination and information transfer. Detuning may influence information flow directionality, supported by Granger causality and simulations, though more work is needed. Horizontal connectivity's feature tuning likely affects synchronization patterns, suggesting V1 gamma coordinates local activity based on input and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C130 discuss functional implications. The links between experimental manipulations and neural mechanisms (C116-C118) are well-established. Functional interpretations (C119-C123) are appropriately supported by citations. The discussion of directionality (C124-C126) appropriately notes limitations. The proposal about V1 gamma function (C128-C130) is well-grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "V1 gamma synchronization is mainly local and limited to narrow frequency ranges, suggesting it binds features locally at surround receptive field level rather than whole perceptual objects. The Arnold tongue implies that natural image parts with high input variability induce weak synchronization while homogeneous parts induce strong synchronization, consistent with proposals linking gamma to surround suppression/normalization and predictive coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 discuss implications for visual processing. The conclusion about local binding (C131-C133) follows logically from the spatial scale of synchronization. The predictions about natural vision (C134-C136) are reasonable extrapolations from the Arnold tongue framework. Links to normalization and predictive coding (C137-C138) appropriately connect to broader theoretical frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The synchronization mechanism likely extends beyond visual cortex. Gamma synchronization across cortical areas occurs despite frequency differences, supported by V1-V2 analysis. Instantaneous frequency fluctuations instrumental for synchronization have been observed in rat hippocampus and during ripples, supporting generalizability across frequency bands and brain regions. The paper offers the first predictive theory of synchronization, applicable to assessing mechanisms across frequency bands and their contribution to cognition. Future work should use optogenetics and combine experimental and theoretical approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C155 discuss generalizability and future directions. The proposal of generalizability (C139-C146) is appropriately supported by cross-area data (C140) and comparisons to other systems (C142-C144). The claim of novelty (C153) is justified. Future directions (C146-C152) are reasonable. The speculation is appropriately qualified throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Gamma rhythms were analyzed from 0.2-2s (excluding first 200ms to avoid transients). Instantaneous phase and frequency were estimated using singular spectrum decomposition (SSD) with Hilbert transform or wavelets. PLV was estimated as mean resultant vector length, and preferred phase as mean angle. Signal-to-noise ratio was estimated to reduce measurement noise influence. The stochastic differential equation was solved analytically, with analytical results correctly predicting numerical simulations. Model accuracy was quantified as explained variance R\u00b2. Data and tools are available upon request.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C190 describe analysis methods. The time window selection (C178-C179) is appropriate. The use of SSD for time-frequency analysis (C180) is sophisticated and suitable for non-stationary signals. PLV estimation (C181-C182) follows standard methods. SNR correction (C183) is important for accurate parameter estimation. Analytical validation (C186-C187) strengthens confidence in the theoretical approach. Data availability (C189) supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

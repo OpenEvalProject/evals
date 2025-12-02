@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors engineered an influenza virus with synonymous barcode mutations that enable tracking of single vs. co-infection in individual cells. The barcoded virus showed similar growth kinetics to wild-type, and viral stocks propagated at low MOI had higher purity (fewer defective particles) and lower immunostimulatory activity per infectious unit compared to high-MOI stocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 are well-supported by experimental data in Figures 1 and 2. The synonymous barcoding strategy is validated by qPCR (C26, Figure 1B), the logic for distinguishing single from co-infection is sound (C27-C28), and viral stock purity is demonstrated by multiple metrics including infectious particle ratios (C30-C31, Figure 2A-B) and interferon induction (C33, Figure 2C). This methodological foundation is critical for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "Single-cell mRNA sequencing reveals extreme heterogeneity in viral transcriptional load among infected cells. While most infected cells express little viral mRNA (<1% of total), a few cells derive over 50% of their mRNA from virus. This distribution follows a roughly exponential pattern with Gini coefficients \u22650.64, indicating greater inequality than U.S. income distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C37-C50 are strongly supported by the single-cell sequencing data in Figures 3-4. The extreme variation persists even after rigorous criteria for identifying truly infected cells (C45, Figure 4E). The exponential distribution (C46) and Gini coefficient calculations (C50, Figure 4\u2014supplement 3) provide quantitative support. This is the central finding of the manuscript and represents a major advance in understanding influenza infection heterogeneity at single-cell resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Variability in the timing of infection is not the major driver of heterogeneity in viral mRNA expression. Evidence includes: (1) similar heterogeneity in synchronized vs. unsynchronized infections, (2) co-infected cells show both low and high viral loads, and (3) sub-populations with different viral protein levels persist across a range of MOIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by multiple complementary lines of evidence. The comparison of washed vs. unwashed inoculum (C52, Figure 4E) and synchronized infections (C53, Figure 4\u2014supplement 4) demonstrate that timing contributes minimally. The observation that co-infected cells have variable viral loads (C55-C56, Figure 4E) and that sub-populations persist across MOIs (C57-C58, Figure 4\u2014supplement 5) further support this conclusion. This effectively rules out a major confounding variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Absence of viral genes, particularly RNP genes (PB2, PB1, PA, NP), partially explains heterogeneity in viral transcriptional load. Cells lacking any RNP gene never derive more than a few percent of their mRNA from virus, while absence of non-RNP genes does not significantly reduce viral mRNA. However, gene absence does not explain all variability, as cells expressing all eight genes still show orders-of-magnitude variation in viral mRNA (from <1% to >50%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C82 are well-supported by data in Figure 5. The essential role of RNP genes is demonstrated by statistical analysis (C74, Figure 5B) and is consistent with known biology (C61-C63). The observation that gene absence is independent across non-RNP genes (C80, Figure 5C) is validated. Critically, the authors show that even cells with all eight genes exhibit extreme variation (C75, Figure 5A), and the observed distribution doesn't match a simple model based only on RNP absence (C77-C78, Figure 5\u2014source data 2). The estimate of 35-50% of cells expressing all genes (C81) is reasonable given the data, though slightly higher than prior estimates (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Despite extreme cell-to-cell variation in total viral mRNA, the relative abundances of different viral mRNAs are remarkably consistent across infected cells. The fraction of viral mRNA from each gene clusters tightly around median values, and this consistency is even tighter in cells expressing all eight viral genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are strongly supported by Figure 6. The data clearly show that while total viral mRNA varies by orders of magnitude, the relative proportions of individual viral genes are consistent (C84-C85, Figure 6A-B). This consistency is enhanced when analyzing only cells with all eight genes (C87, Figure 6C). The inference that factors driving heterogeneity affect all viral genes similarly (C88) is logical and supported by the data. This finding is consistent with prior work (C89) and suggests viral mechanisms maintain relative gene expression ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Co-infection can rescue missing viral genes, providing the first direct single-cell observation of genetic complementation. Among 10 co-infected cells with >5% viral mRNA, seven expressed all eight genes, and four of these would have lacked genes without co-infection. Co-infected cells typically express roughly equal amounts of transcripts from each viral variant, consistent with simultaneous infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by Figure 7 and Figure 7\u2014supplement 1. The single-cell resolution data directly demonstrate gene rescue by co-infection (C92-C93), which was previously inferred but not directly observed at single-cell level. The equal expression from both variants (C94, C96) is consistent with prior findings about the short temporal window for co-infection (C95). While the sample size is small (10 cells), the observations are clear and represent a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C18"
+    ],
+    "result": "Activation of interferon and interferon-stimulated genes is extremely rare in low-MOI influenza infection. Only one cell out of hundreds of infected cells expressed detectable interferon. This single interferon-positive cell lacked NS gene expression, but many other NS-negative cells failed to induce interferon, indicating that absence of the viral interferon antagonist NS1 does not deterministically trigger interferon response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 and C18 are supported by Figure 8. The rarity of interferon expression (C97, Figure 8D) and IFIT1 expression (C98, Figure 8E) is clearly demonstrated. The observation that the single interferon-positive cell lacks NS (C100, Figure 8F) but other NS-negative cells don't induce interferon (C101) is important and consistent with prior work (C102). This finding challenges the prominence of interferon response in bulk measurements and highlights the importance of single-cell analysis. The low-MOI, low-defective particle conditions are critical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Forty-three cellular genes co-vary with viral mRNA expression (FDR 0.1), with enrichment for genes involved in oxidative stress response (particularly Nrf2-regulated genes) and G2-M cell cycle checkpoint. Antioxidant pre-treatment reduced viral protein expression, suggesting oxidative stress acts in a proviral fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by Figure 9 and supplements. The differential expression analysis is appropriately controlled for sample variation and restricted to cells with all eight viral genes (C104). Gene-set analysis identifies oxidative stress and cell cycle pathways (C105, C109, Figure 9\u2014source data 2). The antioxidant experiment (C107, Figure 9\u2014supplement 2) provides functional validation, though it's limited to a single condition. The inference that oxidative stress is proviral (C108) is reasonable given the data and cited literature, though causality is not definitively established. The lack of overlap with genome-wide screen hits (C111) is noted and appropriately discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors conclude that heterogeneity arises from multiple sources: about half of infected cells fail to express one or more viral genes (possibly due to incomplete virion packaging or stochastic RNP loss), but viral mutations are unlikely to explain all heterogeneity given low mutation rates. The remaining variation likely reflects cellular factors and inherent stochasticity. Despite this heterogeneity, the virus maintains mechanisms to control relative gene expression when genes are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 represent reasonable interpretations of the data. The estimate that ~half of cells lack genes (C113) is consistent with Figure 5 data. The discussion of potential mechanisms\u2014incomplete packaging (C114-C115), stochastic RNP loss (C116), and limited role of mutations (C117)\u2014is appropriately cautious and supported by citations. The inference that remaining heterogeneity reflects cellular factors and stochasticity (C118-C119) is logical given the elimination of other factors. The conclusion about viral control of relative expression (C120-C121) follows from Figure 6 data. These are appropriate interpretations rather than overstatements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors used droplet-based single-cell mRNA sequencing (10X Genomics platform) to analyze A549 cells infected at low MOI with mixed wild-type and barcoded virus, collecting 3,000-4,000 cells per sample at 6, 8, and 10 hours post-infection. The method sequences 3' ends of mRNAs with unique molecular identifiers (UMIs) and cell barcodes, but cannot distinguish whether cells were infected by single or multiple virions without additional viral barcoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C34-C36 accurately describe the established 10X Genomics methodology and experimental design. The limitation that standard cell barcoding cannot distinguish single from co-infection (C24) is correctly identified and motivates the viral barcoding strategy. The experimental design with multiple timepoints and replicates (C34-C36, Figure 3A) is appropriate. These are methodological details that support the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors developed rigorous criteria to distinguish truly infected cells from cells with leaked viral mRNA. Cells with large amounts of viral mRNA show exclusive expression from one viral variant (indicating true infection), while cells with small amounts often have mixed barcodes (indicating leakage). A few cells with large amounts have mixed barcodes, likely reflecting co-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the analytical approach to address a technical challenge (mRNA leakage from lysed cells). The logic is sound and supported by Figure 4A-B. The threshold determination (Figure 4C, Figure 4\u2014supplement 2) is conservative and appropriate. This careful quality control strengthens confidence in the main findings about heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Influenza virus expresses ten major transcripts from eight gene segments due to alternative splicing of M and NS segments. However, 3'-end sequencing cannot distinguish M1/M2 or NS1/NEP splice variants because they share 3' ends, so the analysis reports combined counts for M and NS genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 accurately describe a technical limitation of the 3'-end sequencing approach. The inability to distinguish splice variants (C68-C69) is an inherent limitation that is appropriately acknowledged. This doesn't undermine the main findings but is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work has established that high-MOI influenza infection produces 50,000-100,000 viral mRNAs per cell (5-25% of total mRNA) and triggers prominent interferon responses in bulk measurements. However, natural infections involve few virions, and heterogeneity in viral infection has been observed across multiple virus systems. The influenza genome consists of eight segments, and many infected cells fail to express all segments. Interferon activation is stochastic, with only some infected cells expressing interferon genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 accurately summarize prior published work with appropriate citations. These establish the context and motivation for the single-cell study. The contrast between high-MOI bulk measurements and low-MOI natural infections (C1-C5) motivates the experimental approach. The background on heterogeneity (C7-C11) positions the work within the field. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C111",
+      "C112",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors discuss several speculative points: (1) differences from prior protein-based studies may reflect mutated genes that produce mRNA but not stable protein, (2) lack of overlap with genome-wide screen hits suggests heterogeneity arises from factors other than single large-effect genes, (3) interferon would be more common at later times or with high-defective stocks, and (4) rare interferon activation during early infection might contribute to outcome heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C111-C112, C123-C124 are speculative explanations and hypotheses for future work. While reasonable, they lack direct experimental support in this study. C83 is plausible but not tested. C111-C112 offer one interpretation for lack of overlap with prior screens, but alternative explanations exist. C123-C124 are reasonable predictions but remain speculative. These represent appropriate discussion points but should not be considered established findings.",
+    "result_type": "MINOR"
+  }
+]

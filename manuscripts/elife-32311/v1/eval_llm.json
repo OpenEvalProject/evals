@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C58",
+      "C60"
+    ],
+    "result": "QuantEv is a computational method that automatically estimates weighted densities from spatial coordinates of intracellular features and performs statistical analysis using Earth Mover's Distance metrics, accounting for biological variability across replicated experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C11, C58, and C60 collectively describe the core computational capabilities of QuantEv. The method's implementation is demonstrated throughout the manuscript with multiple applications to real biological data (Figures 2-8), showing it functions as described. The statistical framework using EMD/CEMD and Wilcoxon tests is mathematically defined in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "QuantEv demonstrates superior specificity compared to kernel density (KD) maps when analyzing Rab6 spatial distributions across different cell shapes. While KD incorrectly shows significant differences between same-shape cells (p=0), QuantEv shows uniform p-values for same-shape comparisons but detects significant differences between different cell shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by data in Figure 2d-f showing KD's false positive rate and QuantEv's appropriate discrimination. The comparison demonstrates QuantEv addresses the over-sensitivity problem of pooling data (C8). Statistical significance is properly reported with p-values, though the claim that KD is \"too sensitive\" (C21) could benefit from more rigorous false positive rate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Cell shape significantly influences the angular, radial, and in-depth distributions of Rab6-positive membranes. Angular distributions range from uniform (disk-shaped) to oriented toward crossbow tips, while unconstrained cells show flatter in-depth distributions due to cell spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by quantitative data in Figure 2e-f with appropriate statistical tests. The biological interpretation connecting cell spreading to distribution patterns (C29) is reasonable inference from the data. However, the causal claim about spreading \"explaining\" the flatter distribution could be strengthened with additional controls or perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "QuantEv identifies distribution maxima at specific radial distances (two-thirds for constrained cells, five-sixths for unconstrained cells) that correspond to Rab6 docking phase locations. These maxima reflect environmental constraints on cells, with differences explained by adhesion area variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 are supported by data in Figure 2f-i showing clear distribution peaks. However, the biological interpretation that these maxima represent \"docking phase\" entry (C32) and the mechanistic explanation involving adhesion area (C33) are inferences without direct experimental validation. Additional experiments (e.g., perturbation of docking machinery, direct adhesion area measurements) would be needed to confirm these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43"
+    ],
+    "result": "Rab6-positive membranes exhibit bidirectional movement with approximately equal proportions moving toward periphery versus Golgi, but with distinct spatial patterns: predominantly outward movement between Golgi and distribution maxima, then predominantly inward movement during docking-tethering phase. This reconciles previously antagonistic observations about Rab6 trafficking directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 and C43 are well-supported by quantitative trajectory analysis in Figure 3d-f with significant p-values (0.0002-0.021). The data successfully reconcile the apparent contradiction between equal bidirectional proportions (C15, C16) and net outward trafficking. The spatial decomposition of directional preferences is a novel insight supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Rab6-positive membranes moving toward the cell periphery follow more direct paths than those moving toward the Golgi, which have longer path lengths and lifetimes, especially near the cell periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by confinement ratio, path length, and lifetime data in Figure 4b-e. The measurements are appropriate for characterizing trajectory properties and the spatial dependence is clearly shown. This provides mechanistic insight into the bidirectional trafficking patterns identified in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The point identified by QuantEv's uniformity analysis as having the most uniform angular distribution of Rab11-positive membranes is close to the manually identified ERC in 7/8 sequences, indicating the ERC serves as the organizing hub for Rab11 vesicles with uniform angular distribution at the membrane plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by data in Figure 5a-b showing proximity between computed and manual ERC locations. The uniformity analysis successfully identifies a biologically meaningful structure. However, the sample size is small (n=8), and the interpretation that this represents an \"organizing hub\" (C47) is reasonable inference but not directly demonstrated through perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The ERC location remains stable over time in untreated cells but moves away from its initial position following Latrunculin A treatment, demonstrating the cytoskeleton's role in stabilizing ERC cellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by time-course data in Figure 6 showing stable distances in controls versus increasing distances with Latrunculin A. The inference about cytoskeleton's stabilizing role (C50) is reasonable given Latrunculin A's known mechanism of inhibiting actin polymerization. This provides functional validation of the uniformity analysis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Rab11 track confinement ratio decreases over time following Latrunculin A treatment, consistent with actin cytoskeleton involvement in Rab11 vesicle trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by data in Figure 7 showing temporal decrease in confinement ratio. The result is consistent with prior literature (Schafer et al., 2014, C52) and provides confirmatory evidence. Statistical significance is demonstrated (p-values provided), though the claim would be strengthened by dose-response data or rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Rab11 vesicle radial distribution shifts from cell periphery to center following Latrunculin A treatment across all cell shapes. Before treatment, significant differences exist between cell shapes (p=0.0023), but these differences disappear after actin disruption, demonstrating dual regulation by cell shape and actin organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by data in Figure 8a-b showing temporal shifts and loss of shape-dependent differences. The statistical analysis appropriately demonstrates the interaction between cell shape and actin organization. The conclusion about dual regulation (C56) is well-supported by the convergence of distributions after actin disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "result": "Existing computational methods for fluorescence image analysis have limitations: they combine heterogeneous features making biological interpretation difficult, and they pool data across replicates neglecting biological variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C8 accurately characterize limitations of prior approaches, supported by appropriate citations (Peng 2008; Schauer et al. 2010; Merouane et al. 2015; Biot et al. 2016). The manuscript demonstrates these limitations empirically by showing KD's over-sensitivity (C19-C21). These claims establish the motivation for QuantEv's development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has established that micro-patterning influences cytoskeleton and trafficking, Rab6 proteins traffic from Golgi to cell periphery with bidirectional movement, and Rab11 localizes to the ERC organizing recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C13-C18 accurately summarize established knowledge from prior literature with appropriate citations. These claims provide necessary biological context for the study but represent background knowledge rather than new findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "QuantEv is publicly available as an Icy plugin with tutorial, TrackMate analysis module, and Icy track processor, providing results that are easy to biologically interpret.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C59, C75-C77 describe software availability and usability. URLs and implementation details are provided. The claim about interpretability (C59) is supported by the clear visualizations throughout the manuscript (Figures 2-8). Software availability is essential for reproducibility and represents good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study used HeLa cells expressing GFP-RAB6A and RPE1 cells with Rab11a-GFP, acquired multiple image sequences across different cell shapes and imaging modalities, and processed data using established detection, segmentation, and tracking methods with quality control criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C69 describe experimental methods with appropriate detail and citations. Sample sizes are reported (18-22 sequences per condition), imaging parameters specified, and analysis pipelines described with software versions. The use of three tracking methods with consensus filtering (C69) is a strength. Methods appear reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C74"
+    ],
+    "result": "QuantEv uses one-sided Wilcoxon signed-rank test for statistical comparisons and implements a bisection method that is approximately 60 times faster than entropy map computation for uniformity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C74 describe methodological choices. The statistical test selection (C72) is appropriate for non-parametric paired comparisons. The computational speedup claim (C74) references Appendix 5-table 1 for quantitative support. These represent valid methodological contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Analysis of spatial distribution of endomembrane trafficking is fundamental for understanding cellular dynamics, homeostasis, and cell-environment interactions in normal and pathological situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about the importance of the research area, supported by established knowledge in cell biology. While not a novel finding, it accurately frames the scientific context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "QuantEv can identify points giving the most uniform angular distribution, which may coincide with biological structures acting as event emitters or attractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 describes a capability of QuantEv that is demonstrated empirically with the ERC identification (C44-C47). The hedged language (\"may coincide\") appropriately reflects that this is a hypothesis-generating feature requiring biological validation in each application.",
+    "result_type": "MINOR"
+  }
+]

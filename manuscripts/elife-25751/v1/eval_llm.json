@@ -1,0 +1,550 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "C. elegans motor neurons are organized into seven anatomically distinct classes (DA, DB, SAB, AS, VA, VB, VC) defined by unique morphology, axodendritic projection patterns, synaptic connectivity, and class-specific expression of effector genes including neurotransmitter receptors, ion channels, gap junction proteins, and signaling molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by multiple citations to established literature (White et al., 1986; Hobert et al., 2016; Von Stetina et al., 2006) and are corroborated by Figure 1A-B showing anatomical organization and molecular markers. These represent foundational anatomical and molecular characterization of the system under study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Motor neuron subclasses within each class display position-dependent differences in synaptic connectivity along the anterior-posterior axis, with posterior-most neurons (e.g., DA8, DA9) receiving selective input from tail sensory neurons, enabling integration of head and tail information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C12-C14 are supported by connectivity data from the C. elegans wiring diagram (Figure 1B, Figure 1\u2014source data 1, www.wormwiring.org) and citations to White et al., 1986. The functional interpretation in C14 is reasonable inference from the connectivity patterns, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The genes unc-4 and unc-37 are selectively required in VA neurons located in the VNC (VA2-VA10) but not in the retrovesicular ganglion (VA1) or preanal ganglion (VA11, VA12) to specify correct presynaptic input patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by multiple citations (Miller et al., 1992; Pflugrad et al., 1997; White et al., 1992) describing prior genetic studies. This represents established knowledge about region-specific gene function in motor neuron specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Subclass-specific molecular markers distinguish motor neuron subclasses: unc-129/TGF\u03b2 is expressed in DA1-7 but not DA8-DA9, while itr-1 is exclusively expressed in DA9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by citations (Colavita et al., 1998; Klassen and Shen, 2007) and Figure 1B showing expression patterns. These markers provide molecular evidence for subclass diversity and are used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Sexual dimorphisms exist in motor neuron connectivity: 68 male-specific neurons in the tail make extensive connections with posterior-most motor neurons, and sex-shared neurons show sexually dimorphic connectivity patterns (e.g., AVG innervates DA9 only in males, PHB innervates VA12 only in hermaphrodites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by citations (Sulston et al., 1980; Jarrell et al., 2012; White et al., 1986) and connectivity data shown in Figure 1B and Figure 1\u2014source data 1. This establishes the biological relevance of subclass diversity in the context of sexual dimorphism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The terminal selector transcription factor UNC-3 controls both class-specific features shared by all motor neuron class members and subclass-specific features, with its activity counteracted by class-specific repressor proteins to generate interclass diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by prior work (Kratsios et al., 2015, 2011; Kerk et al., 2017) and experimental data in this study. C21 represents a novel finding of this manuscript, while C20 and C22 represent established knowledge that provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Several motor neuron-expressed genes (rig-4, acr-2, acr-5, acr-16, unc-53) are expressed in all individual members of a given motor neuron class, confirming class-level molecular identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by expression analysis in this study. C26 represents established orthology knowledge. These class-specific markers validate the classification system and contrast with subclass-specific markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "UNC-3 directly regulates subclass-specific genes (mig-13, itr-1, glr-4 in DA9; unc-129 in DA1-7) through COE motifs in their cis-regulatory regions, as demonstrated by mutational analysis showing COE motifs are essential for expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are strongly supported by experimental data in Figure 2A-E, including expression analysis in unc-3 mutants, bioinformatic identification of COE motifs, and cis-regulatory reporter assays with motif mutations. This provides direct mechanistic evidence for UNC-3 function in subclass specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "UNC-3 directly controls subclass-specific gene expression in VA neurons (mig-13 and flp-18 in VA12; del-1 in VA1-VA11) and AS neurons (avr-15 in AS11), with COE motifs overrepresented in cis-regulatory regions of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by experimental data in Figure 2B-C and Table 1, including expression analysis in unc-3 mutants and cis-regulatory analysis. This extends the UNC-3 regulatory mechanism to multiple motor neuron classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "unc-3 is expressed in all nine neurons of the DA class and all twelve neurons of the VA class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by citations to Kratsios et al., 2011 and Pereira et al., 2015. This establishes the paradox that motivates the search for region-specific cofactors: if UNC-3 is expressed in all class members, why are subclass-specific genes only expressed in subsets?",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Three C. elegans Hox genes (lin-39, mab-5, egl-5) are differentially expressed in motor neuron subclasses along the anterior-posterior axis: egl-5 in DA9 and VA12, mab-5 in DA8 and AS11, and lin-39/mab-5 co-expression in more anterior neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 are strongly supported by fosmid-based reporter expression analysis shown in Figure 3A-D. The use of fosmid reporters (containing ~30 kb genomic regions) provides high confidence in expression patterns. This establishes the spatial code of Hox gene expression that underlies the intersectional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Hox mutants show normal motor neuron number and maintain expression of pan-neuronal markers and shared cholinergic genes, indicating Hox genes are not required for motor neuron generation or basic cholinergic identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by experimental data in Figure 4\u2014figure supplement 1 and citation to Stefanakis et al., 2015. This important control demonstrates that Hox genes specifically affect subclass identity rather than general motor neuron specification or survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "lin-39 and mab-5 function redundantly to control unc-129 expression in DA1-7 neurons: single mutants show mild or no effects, but lin-39 mab-5 double mutants and ceh-20/PBX mutants show profound effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by experimental data in Figure 4A and citations establishing ceh-20 as the C. elegans PBX homolog and Hox cofactor. The genetic redundancy analysis is rigorous, and the PBX requirement supports a canonical Hox-PBX mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "EGL-5 controls DA9-specific genes (itr-1, glr-4, mig-13) with effects milder than unc-3 mutants, and functions independently of CEH-20/PBX, consistent with Abd-B proteins functioning without PBX cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by experimental data in Figure 4C-E and Figure 4\u2014figure supplement 1, with citations supporting PBX-independent Abd-B function. The milder effects compared to unc-3 suggest partial redundancy or additional factors, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "egl-5 controls VA12-specific genes (mig-13, flp-18), while lin-39/mab-5 and ceh-20/PBX control del-1 expression in VA1-VA11 neurons, with del-1 under direct UNC-3 control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by experimental data in Figure 4B-E. This extends the Hox regulatory mechanism to the VA class and demonstrates both anterior (lin-39/mab-5) and posterior (egl-5) Hox genes control distinct subclass-specific genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hox genes (lin-39, mab-5, egl-5) are expressed in post-mitotic motor neurons into adulthood, suggesting continuous cell-autonomous control of subclass features, with LIN-39 maintaining its own expression through positive autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by expression data in Figure 3B-C and citation to Niu et al., 2011 for LIN-39 autoregulation. C64 is appropriately qualified as a suggestion. The persistent expression supports a maintenance function but does not prove it\u2014this would require temporal inactivation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "UNC-3 and Hox proteins act in parallel pathways: Hox gene expression is unaffected in unc-3 mutants, unc-3 expression is unaffected in egl-5 mutants, and Hox genes do not affect ACh pathway genes (direct UNC-3 targets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by experimental data in Figure 5A-B and Figure 4\u2014figure supplement 1. The lack of cross-regulation is important evidence for parallel rather than hierarchical pathways. C69 is appropriately qualified as a suggestion based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "unc-3(fp8); lin-39 mab-5 triple mutants show stronger effects on unc-129 and del-1 expression than double or single mutants, demonstrating UNC-3 and Hox factors act synergistically to generate subclass diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by experimental data in Figure 5C-D using a hypomorphic unc-3 allele. The additive genetic effects combined with lack of cross-regulation provide strong evidence for synergistic action. The use of a hypomorphic allele is appropriate to avoid ceiling effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "LIN-39 directly controls unc-129 and del-1 expression through discrete GATTGATG binding sites: mutation of LIN-39 sites causes dramatic loss of reporter expression, and ChIP-seq data show LIN-39 and MAB-5 binding to these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are strongly supported by bioinformatic analysis, cis-regulatory reporter assays with site-directed mutagenesis (Figure 6B-F), and ChIP-seq data from modENCODE (Figure 6\u2014figure supplement 1). This provides direct mechanistic evidence for Hox protein binding and function at target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "EGL-5 has a dual role in DA9 and VA12: it activates posterior-specific genes (with UNC-3) and represses anterior markers (unc-129, del-1), with egl-5 mutants showing de-repression of anterior markers and mis-expression rescuing/repressing unc-129 in a cell-autonomous manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are strongly supported by loss-of-function analysis (Figure 7A), gain-of-function/rescue experiments (Figure 7B), and cell-autonomous rescue. The dual activation/repression function is well-demonstrated through complementary genetic approaches. This represents a key mechanistic insight into how posterior Hox genes establish identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The posterior Hox gene egl-5 represses the mid-body Hox gene lin-39 in DA9 and VA12 neurons: lin-39 is de-repressed in 100% of egl-5 mutants in these neurons, but egl-5 expression is unaffected in lin-39 mab-5 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by expression analysis in Figure 7C and Figure 7\u2014figure supplement 1. This demonstrates posterior dominance/Hox cross-regulation at single-neuron resolution. The unidirectional regulation (egl-5 represses lin-39 but not vice versa) is consistent with canonical Hox posterior prevalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Loss of egl-5 causes anterior misplacement of DA9 neuromuscular synapses in the dorsal nerve cord, and this defect is partially rescued by cell-autonomous egl-5 expression in DA9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by synaptic localization analysis in Figure 8A using presynaptic markers and cell-autonomous rescue. The quantification uses seam cells as anatomical landmarks. The partial rescue is appropriately noted and may reflect partial effectiveness of the glr-4 promoter (which is itself partially egl-5-dependent).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "egl-5 controls maintenance (not initial establishment) of the male-specific AVG to DA9 synaptic input: the synapse forms normally at L1 stage but is lost in adult egl-5 mutants, demonstrating Hox control of subclass-specific synaptic wiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are strongly supported by GRASP analysis at L1 and adult stages in Figure 8B. The temporal analysis distinguishing formation from maintenance is rigorous and represents an important finding about Hox function in circuit maintenance. C95-C96 are appropriately qualified as inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "mab-5 ensures DA8 fate by repressing both anterior (DA1-7) and posterior (DA9) features: in mab-5 mutants, DA8 adopts a mixed fate with de-repression of unc-129 (DA1-7 marker) and DA9-specific markers (mig-13, glr-4, itr-1), with ChIP-seq showing mab-5 binding to DA9 marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by expression analysis in Figure 9A-B and ChIP-seq data in Figure 6\u2014figure supplement 1. The mixed fate phenotype is unexpected and interesting, showing mab-5 functions differently than egl-5. C100 is appropriately qualified as inference, though the ChIP-seq data provide strong support for direct repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Both unc-3 and mab-5 control avr-15/GluR expression in VA11 and AS11 neurons, corroborating the theme of unc-3 cooperating with Hox genes in motor neuron subclass specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by experimental data in Figure 9D-E. This extends the UNC-3/Hox cooperation mechanism to another subclass marker and motor neuron class (AS), strengthening the generality of the intersectional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "UNC-3 and Hox genes collaborate to control intermediary regulatory factors: lin-39 and mab-5 jointly activate cfi-1 in DA1-DA8 (but not egl-5), and loss of cfi-1 or lin-39/mab-5 causes de-repression of glr-4 in DA1-DA8, with no cross-regulation between cfi-1 and Hox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by expression analysis in Figure 9\u2014figure supplement 1 and citations to Kerk et al., 2017. This demonstrates the intersectional mechanism operates at multiple levels of the regulatory hierarchy, not just terminal effector genes. The cell-specificity and lack of cross-regulation are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "UNC-3 and Hox genes collaborate to regulate bnc-1 expression: bnc-1 is a direct UNC-3 target that antagonizes UNC-3 activity in VA/VB neurons, and its expression is diminished in lin-39 mab-5 mutants in midbody motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by expression analysis in Figure 9\u2014figure supplement 1 and citations to Kerk et al., 2017. This provides another example of Hox genes controlling intermediary regulatory factors, further demonstrating the multi-level nature of the intersectional regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "An intersectional gene regulatory strategy of distinct Hox genes and the broadly-acting terminal selector UNC-3 generates motor neuron subclass diversity along the anterior-posterior axis, providing a conceptually straightforward solution to subclass diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118, C121 represent the main conclusions of the study, synthesizing results from multiple experiments. These are well-supported by the collective evidence showing: (1) UNC-3 controls both class and subclass features, (2) Hox genes are expressed in subclass-specific patterns, (3) UNC-3 and Hox act synergistically without cross-regulation, and (4) both factors directly bind subclass-specific gene regulatory regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The posterior Hox gene egl-5 represses the mid-body Hox gene lin-39, while mab-5 may operate as both activator and repressor directly on its effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by experimental data showing lin-39 de-repression in egl-5 mutants (Figure 7C) and mab-5 effects on both anterior and posterior markers (Figure 9A-B) with ChIP-seq evidence for direct binding. C120 is appropriately qualified as \"may operate\" given the mixed activation/repression phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Motor neuron subclass diversity is generated through positive regulatory inputs from UNC-3 and Hox proteins (unlike interclass diversity which involves repression), with Hox proteins functioning as 'sub-selectors' that selectively regulate subclass-specific features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by genetic and cis-regulatory analyses throughout the study (Figures 2-6) and contrast with prior work on interclass diversity (Kerk et al., 2017). The 'sub-selector' concept is a reasonable conceptual framework based on the data, though C124 represents interpretive inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The diversification of SAB head motor neurons and ASE gustatory neurons in C. elegans relies on direct repression of subclass-specific effector genes, representing an alternative mechanism to the co-activation strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is supported by citations to Etchberger et al., 2009 and Kerk et al., 2017. This appropriately acknowledges that the co-activation mechanism described in this study is not universal, and other mechanisms exist for generating neuronal subclass diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "This study identifies seven effector genes and two intermediary regulatory factors (cfi-1, bnc-1) as Hox downstream targets in the nervous system, addressing the gap in knowledge about Hox targets and mechanisms in neuronal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by experimental data throughout the manuscript and appropriately contextualize the contribution relative to existing knowledge. C126 represents established knowledge, C127 identifies the gap, and C128 describes the novel contribution of identifying specific Hox targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Hox genes control motor neuron subclass-specific gene expression during development and maintain it in adults, with egl-5 specifically required for maintenance (not formation) of synaptic inputs, extending Hox function beyond motor-to-muscle connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by persistent Hox expression into adulthood (Figure 3B-C), temporal GRASP analysis (Figure 8B), and citations to prior work on motor-to-muscle connectivity. C129 is appropriately qualified as inference (\"may also maintain\"), while C130-C131 provide direct evidence for maintenance function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The dual activation/repression mechanism of posterior Hox genes (activating posterior features while repressing anterior features) is conserved across systems and may explain evolutionary diversification of posterior neurons, with homeotic transformations potentially contributing to neuronal diversity evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by citations to studies in C. elegans touch neurons (Zheng et al., 2015) and mouse spinal cord (multiple citations). C134-C135 represent speculative evolutionary interpretations appropriately qualified as \"may explain\" and \"potential source,\" supported by citation to Arlotta and Hobert, 2015.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "EGF signaling from a neighboring cell to the P12 neuroblast is necessary for initiating egl-5 expression in P12 (which produces VA12), representing an intercellular signaling mechanism for diversifying posterior neuroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 is supported by citation to Jiang and Sternberg, 1998. This provides context for upstream regulation of Hox genes, though the authors appropriately note that signals initiating lin-39 and mab-5 expression in VNC motor neurons remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Ebf2 (a unc-3 mouse ortholog) is co-expressed with distinct Hox genes in medial motor column (MMC) motor neurons along the anterior-posterior axis of the mouse spinal cord, suggesting Ebf2 and Hox may work together to generate MMC subclass diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by expression analysis in Figure 10\u2014figure supplements 1-2 showing Ebf2 and Hox co-expression in mouse MMC neurons. C138 is appropriately qualified as speculation (\"leading us to speculate\"). This provides evidence for potential conservation of the intersectional mechanism in mammals, though functional validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The intersectional gene regulatory principle of Hox genes with broadly-acting transcription factors (FoxP1 in LMC, Pet-1 in serotonergic neurons) may be utilized for fractionating neuronal classes into subclasses, essential for acquiring subclass-specific traits and potentially contributing to evolution of novel neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 are supported by citations to studies in mouse spinal cord (Dasen et al., 2008; Rousso et al., 2008) and brainstem serotonergic neurons (Okaty et al., 2015). C141-C142 represent broader proposals appropriately qualified as speculation about general principles and evolutionary implications.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C57",
+      "C60",
+      "C61",
+      "C65",
+      "C66",
+      "C76",
+      "C81",
+      "C85",
+      "C116",
+      "C144",
+      "C145"
+    ],
+    "result": "ParP integrates into chemotaxis signaling arrays through its C-terminal AIF domain, which interacts with both MCP proteins and CheA. This integration promotes array formation rather than disrupting array structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C57, C60-C61, C65-C66, C76, C81, C85, C116, C144-C145 collectively demonstrate that ParP's C-terminal AIF domain integrates into chemotaxis arrays via interactions with MCPs and CheA, and that this integration stimulates array formation. The evidence includes bacterial two-hybrid assays (C60-C61), co-localization studies (C64), mutagenesis experiments (C71-C75, C80-C84), and microscopy showing array formation defects in mutants (C45, C52, C54-C57, C108-C109, C111-C114). The cryo-EM data (C48-C51) and functional complementation experiments (C46-C47, C110-C114) provide strong structural and functional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "ParP's N-terminal domain enables polar recruitment of arrays and facilitates ParP's own polar localization. The linkage of the N-terminal ParC-interaction domain with the C-terminal AIF domain couples array formation and localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C117-C120 demonstrate that ParP's N-terminal domain mediates polar localization independently of the AIF domain, as shown by domain-swapping experiments (C117-C118). The ParP-P5 chimera restored polar localization in \u0394parP/\u0394cheA1 cells (C117), demonstrating that the ParC-interaction domain can function independently when fused to a core unit component. This supports the coupling model where ParP links array formation (via AIF) to polar localization (via N-terminus).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "ParP's integration into arrays modifies its own subcellular localization dynamics by preventing its release from the cell pole, thereby promoting polar retention. ParP's interactions with MCPs and CheA do not affect recruitment but significantly impact retention at the pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C130-C138, C172-C176 are supported by FRAP and photobleaching experiments (C132-C138) showing that ParP2PM (unable to interact with MCPs/CheA) is released from polar clusters faster than wild-type ParP, while recruitment rates are similar (C132-C133). The decay curves differ significantly (C135), with ParP2PM showing continued release over 11 minutes versus wild-type reaching steady state at 5 minutes. Microscopy data (C128-C129) showing increased diffuse localization of ParP variants further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C139",
+      "C140",
+      "C141",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Integration of ParP within signaling arrays via its AIF domain promotes the retention of ParC at the cell pole, thereby modifying the dynamic localization of factors governing cell pole development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143, C139-C141, C169-C171 demonstrate that ParP's integration into arrays affects ParC localization. In parP2PM background, YFP-ParC showed significantly higher diffuse localization (~20% vs ~4% in wild-type, C140) and reduced polar focus intensity (C141). This is consistent with the model that ParP integration into arrays stabilizes both its own and ParC's polar localization, supporting the conclusion that ParP regulates the localization dynamics of its network constituents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Disruption of ParP's interactions with both MCPs and CheA results in defective polar recruitment of arrays, while disruption of either interaction alone has modest effects. ParP couples array formation and polar localization to ensure proper inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by microscopy data showing that parP2PM (defective in both interactions) exhibited 65% mislocalized/absent arrays similar to \u0394parP, while single mutants ParPL209A and ParPW305A showed only modest increases (9% and 20% respectively, C122). This demonstrates redundancy in ParP's interactions with the core unit, where either interaction can partially support function, but both are required for full activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A bacterial two-hybrid screen identified MCPs as ParP interaction partners. Of 100 blue colonies sequenced, 95 contained MCP genes (15 distinct MCPs), all including the MCP signaling domain. ParP, but not ParC, interacts with MCPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 describe the bacterial two-hybrid screen results. The screen identified 95/100 colonies containing MCP genes (C58), all including signaling domains (C59). Four tested MCP signaling domains all interacted with ParP (C60), confirming MCPs as ParP interaction partners (C61). No ParC-MCP interaction was observed (C62-C63). The screen methodology is well-described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Conserved residues in the MCP interaction tip (L518, L521, N522 in V. cholerae MCP VC1898, corresponding to L362, L365, N366 in T. maritima TM1143) mediate interactions with both CheW and ParP. Substitutions at these positions disrupt both interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 demonstrate that the same MCP residues mediate interactions with both CheW and ParP. Sequence alignment showed conservation of key residues (C70), and mutagenesis experiments showed that L518R, L521R, and N522R substitutions disrupted both MCP-CheW1 and MCP-ParP interactions (C71-C72) without affecting MCP self-interaction (C73). Co-localization experiments confirmed the L518R substitution abrogates ParP-MCP interaction in vivo (C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ParP interacts with the MCP protein interaction tip via conserved hydrophobic residues (L196, L209, L212) in its putative interaction groove, similar to how CheW and CheA-P5 interact with MCPs. These residues are highly conserved among ParP proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by mutagenesis experiments showing that L196A, L209A, and L212A (but not I215A) reduced MCP interaction (C80), with L209A completely disrupting interaction in both two-hybrid (C82) and co-localization assays (C83-C84). The conservation of these residues among ParP proteins (C86) supports the generality of this interaction mechanism (C87). The structural predictions based on similarity to CheW are reasonable given the phylogenetic analysis (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ParP-AIF contains distinct interfaces for interactions with CheA-LID (via W305) and MCPs (via L209), positioned on opposite sides of the domain. ParP has at least three distinct interaction interfaces: N-terminus for ParC, and two surfaces within AIF for CheA and MCPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 demonstrate distinct interaction interfaces through mutagenesis. ParPW305A lost CheA interaction but retained MCP interaction (C88-C89), while ParPL209A retained CheA interaction but lost MCP interaction (C90). The double mutant ParP2PM lost both interactions (C91) but retained ParC interaction (C92). The structural prediction that L209 and W305 are on opposite sides of the AIF domain (C95) is reasonable based on similarity to CheW structure, supporting the model of distinct interaction interfaces (C96-C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ParP's association with signaling arrays can be mediated by interaction with either MCPs or CheA, though interaction with both enhances association. ParP's association with arrays is fully dependent on these interactions, and disruption of both interactions reduces array formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by co-localization experiments in \u0394parC background. Wild-type ParP co-localized with CheW1 in ~75% of cells (C100), while single mutants ParPL209A and ParPW305A showed ~50-55% co-localization (C101), demonstrating partial function. ParP2PM showed almost no cluster formation despite CheW1 clusters in ~55% of cells (C104), demonstrating full dependence on these interactions (C105). The reduction in CheW1 cluster formation in mutants (C106) supports ParP's role in stimulating array formation (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the absence of ParP, YFP-CheW1 clusters are mislocalized or absent in 74% of cells. Arrays still form in \u0394cheA (though reduced by 60%), but in \u0394cheA \u0394parP, array formation is severely compromised (85% reduction). Either ParP or CheA is sufficient for promoting array formation, but CheW1 alone has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C56 are supported by microscopy and cryo-EM data. Wild-type shows polar YFP-CheW1 clusters (C44), while \u0394parP shows 74% mislocalized/absent clusters (C45). \u0394cheA retains polar clusters (C46-C47), confirmed by cryo-EM showing arrays in both strains (C48), though with 60% reduction in \u0394cheA (C49-C50). The double mutant \u0394cheA \u0394parP shows diffuse YFP-CheW1 (C52) and 85% reduction in arrays by cryo-EM (C56), supporting the conclusion that either ParP or CheA is sufficient but both are not required (C54-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The AIF domain of ParP is responsible for promoting array formation. CheA stimulates array formation via its P5 domain, which is both required and sufficient for CheA recruitment into arrays. The presence of ParP alone is sufficient for array formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by microscopy experiments with domain deletion mutants. In \u0394cheA background, deletion of parP or parP-AIF or expression of parP2PM all prevented cluster formation (C108-C109). CheA-P5 is required and sufficient for CheA recruitment (C110). Deletion of CheA-P5 alone didn't affect array formation, but cheA1-\u0394P5 \u0394parP prevented cluster formation (C111-C112), demonstrating that CheA acts via P5 (C113) and ParP alone is sufficient (C114). Western blot controls rule out protein degradation (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "ParP functions as a high-connectivity nexus that regulates localization dynamics of network constituents. ParP retains partial function with one connection to the core unit, but loss of both connections results in non-functional ParP. Disruption of either connection compromises polar retention of ParP and ParC to the same extent as disrupting both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C184 synthesize the overall findings. ParP's high connectivity is demonstrated by its multiple interaction partners (C177). Single mutants retain partial function in array localization (C178, C122-C123) but only double mutants are non-functional (C179, C121). However, polar retention of ParP and ParC is equally compromised by single or double mutations (C180, C128-C129, C140-C141), supporting the model that both connections are required for retention (C181-C182). This establishes ParP as a critical nexus regulating network dynamics (C183) and ensuring proper array assembly and inheritance (C184).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C67"
+    ],
+    "result": "ParP-AIF domains form a distinct clade of SH3-like domains, more similar to CheA-P5 than to CheW. The AIF domain is predicted to have similar architecture to CheA-P5 and CheW, with corresponding hydrophobic residues in the junction between subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C67 are supported by phylogenetic analysis (C77) and structural predictions based on sequence similarity (C79). The prediction of similar architecture is reasonable given the demonstrated functional similarity in MCP binding. However, this remains a prediction without direct structural data. The functional validation through mutagenesis (C80-C85) provides strong support for the predicted structural similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "ParP-AIF's similarity to CheW and CheA-P5 suggests ParP might compete with these proteins for MCP binding. CheW, CheA-P5, and ParP-AIF all recognize the MCP interaction tip but have distinct functions and form separate clades. Evolution has exploited the SH3 domain for diverse functions in chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C150 are largely speculative. While the structural similarity and shared MCP-binding capability are established (C149), the competition model (C146) is hypothetical and not directly tested. The evolutionary interpretation (C150) is reasonable but speculative. Claims C147-C148 about CheV are well-established from prior literature but not directly tested here. The distinct phylogenetic clades (C149) support functional divergence but don't prove competition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Arrays can form if either ParP or CheA is present, but not in the absence of both. ParP may replace CheA within core units, with the ParP-CheA interaction (via AIF-LID) substituting for CheA-P3 dimerization. Multiple core unit types may exist in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C164 present models for how ParP integrates into core units. While C151-C152 are supported by the microscopy and cryo-EM data, the specific structural models (C153-C164) are largely speculative. The proposal that ParP replaces CheA-P5 (C157) is reasonable but not directly demonstrated. The models of different core unit types (C160-C163) are hypothetical and would require structural studies to confirm. The ParP dimerization capability (C159) is cited from prior work but its role in core units is speculative (C160, C164).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "In R. sphaeroides, PpfA and TlpT may function similarly to ParC/ParP in V. cholerae, with TlpT potentially integrating into arrays to bridge chemotaxis proteins and PpfA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C167 describe established facts about R. sphaeroides from prior literature. However, C168 is purely speculative, suggesting TlpT might function like ParP without any direct evidence. This is reasonable speculation based on functional similarities but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C68",
+      "C69"
+    ],
+    "result": "Background information on chemotaxis signaling, array structure, and the ParC/ParP system in Vibrio species, establishing the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C43, C68-C69 provide established background information from prior literature and the authors' previous work. These are well-supported by citations and represent accepted knowledge in the field. They establish the context for understanding the novel findings about ParP's integration into arrays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C98",
+      "C99"
+    ],
+    "result": "When co-expressed in E. coli, YFP-ParP co-localizes with mCherry-MCP clusters. ParP's distinct interaction surfaces potentially allow simultaneous coupling of MCP and CheA to ParC, making ParP a protein of high connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is directly supported by microscopy data showing co-localization in E. coli. Claims C98-C99 are reasonable conclusions based on the demonstrated interactions, though C98 includes speculative language (\"potentially\"). The high connectivity conclusion (C99) is well-supported by the multiple demonstrated interactions.",
+    "result_type": "MINOR"
+  }
+]

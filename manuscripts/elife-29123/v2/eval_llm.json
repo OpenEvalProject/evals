@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript provides background on Huntington's disease (HD), describing it as an autosomal dominant neurodegenerative disorder caused by CAG repeat expansion in the huntingtin gene, leading to mutant huntingtin protein with an abnormally long polyglutamine tract that forms aggregates and triggers striatal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-established background knowledge about HD, supported by appropriate citations to the literature (Ross and Tabrizi 2011, Walker 2007, Kazantsev et al. 1999, etc.). These claims accurately describe the genetic basis, molecular pathology, and clinical features of HD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript describes PIP4K\u03b3 as a lipid kinase encoded by PIP4K2C that is expressed in brain and other tissues, phosphorylates PI5P to produce PI(4,5)P2, and has suggested roles in vesicle trafficking and mTOR signaling, though its biological function is not completely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide accurate background on PIP4K\u03b3, supported by appropriate citations (Sasaki et al. 2009, Rameh et al. 1997, Clarke et al. 2008/2009, Lietha 2011, Mackey et al. 2014). These are established facts about the enzyme's expression, enzymatic activity, and potential functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "NCT-504 is a compound derived from medicinal chemistry optimization of thienopyrimidines identified in a phenotypic screen. It reduces GFP-Htt(exon1)-Q103 aggregates in PC12 cells and GFP-Htt(exon1)-Q74 aggregates in HEK293T cells. Kinase profiling shows NCT-504 is highly selective for PIP4K\u03b3, with activity against only this single kinase at >65% inhibition at 10 \u03bcM among 442 human kinases tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by experimental data (Figures 1B, 1C, Table 1, Figure 1-supplement 1) and citations (Titus 2010). The kinase selectivity data from the KINOMEscan panel provides strong evidence for PIP4K\u03b3 as the primary target. The cellular activity data demonstrate aggregate reduction in multiple cell models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C77",
+      "C78"
+    ],
+    "result": "NCT-504 inhibits PIP4K\u03b3 with a Kd of 354 nM in the DiscoverX binding assay and IC50 of 15.8 \u03bcM in a reconstituted enzymatic assay. The compound does not impair ATP-hydrolytic activity in the absence of PI5P substrate, suggesting it is an allosteric inhibitor. NCT-504 shows selectivity for PIP4K\u03b3 over other PIP4K isoforms (PIP4K\u03b1 and PIP4K\u03b2) and the PIP4K\u03b3+ mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28, C77-C78 are supported by biochemical data (Figures 1D-F, Figure 1-supplements 2-3). The difference in potency between binding (354 nM) and enzymatic (15.8 \u03bcM) assays is consistent with allosteric inhibition, as noted for other kinases. The lack of ATP hydrolysis inhibition without substrate (C25) provides mechanistic evidence for allosteric action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C115",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "NCT-504 treatment (10 \u03bcM, 12 hr) elevates cellular levels of PI5P (1.6-fold), PI(3,5)P2 (2-fold), and PI3P (1.3-fold) in mouse embryonic fibroblasts, with no significant effect on PI(4,5)P2. These changes occur progressively over 12 hours and are not observed at 30 or 120 minutes. shRNA-mediated silencing of PIP4K\u03b3 produces a similar PI profile. The delayed kinetics suggest that direct PIP4K\u03b3 inhibition eventually impacts other lipid kinases and phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C34-C39, C115, C117-C119 are supported by HPLC measurements of phosphoinositides (Figures 2B-F, Figure 2-supplements 2-3). The concordance between pharmacological inhibition and genetic knockdown (C38-C39, Figure 2G) strengthens the conclusion that effects are due to PIP4K\u03b3 inhibition. The kinetic data (Figure 2-supplement 2) support the inference about indirect effects on other enzymes (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that long-term PIP4K\u03b3 inhibition indirectly activates PIKfyve, which may account for the increases in both PI5P and PI(3,5)P2. They also suggest that VPS34 may be indirectly activated based on the 1.3-fold increase in PI3P at 12 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 are mechanistic inferences based on the observed PI changes and supported by citations to prior work (Zolov et al. 2012, McCartney et al. 2014, Sbrissa et al. 2012). However, no direct measurements of PIKfyve or VPS34 activity are provided. These remain plausible hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "NCT-504 (5-10 \u03bcM) does not significantly increase LC3-II levels alone in HEK293T cells after 2 hours. However, when combined with bafilomycin A1, NCT-504 increases LC3-II levels by 30-51% at 2-6 hours compared to bafilomycin alone, indicating that NCT-504 induces autophagosome formation and elevates both autophagy induction and autophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by Western blot data (Figure 3A-C). The bafilomycin A1 co-treatment experiment is the appropriate method to distinguish autophagosome formation from flux. The differential effect with and without bafilomycin (C48) provides strong evidence for increased flux. Statistical significance is demonstrated (p<0.05 to p<0.005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C111",
+      "C112",
+      "C129",
+      "C130"
+    ],
+    "result": "Using a GFP-mCherry-LC3 reporter, NCT-504 treatment causes a robust increase in autolysosomes with only modest elevation in autophagosomes, indicating increased autophagic flux with modest increase in autophagy initiation. This contrasts with mTOR inhibition by torin, which increases both autophagosome formation and flux, and with bafilomycin, which increases autophagosomes by blocking autolysosome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C111-C112, C129-C130 are supported by GFP-mCherry-LC3 reporter data (Figure 3-supplement 1). The differential effects on autophagosomes versus autolysosomes provide mechanistic insight. The comparison with torin and bafilomycin as controls strengthens the interpretation that NCT-504 primarily enhances flux rather than initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "In rat primary cortical neurons expressing Dendra2-LC3, treatment with 500 nM or 1 \u03bcM NCT-504 enhanced the rate of Dendra2-LC3 turnover, demonstrating that NCT-504 stimulates autophagy flux in primary neurons in a statistically significant manner up to 72 hours following treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by photoconversion experiments in primary neurons (Figure 3-supplement 2). The Dendra2-LC3 turnover assay is an appropriate method to measure autophagic flux in neurons. Statistical analysis using Kruskal-Wallis and Dunnett's post hoc test shows significant differences (p<0.0005). The use of Beclin-1 overexpression as a positive control validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "NCT-504 treatment resulted in a dose-dependent decrease of wild-type Htt protein levels in 293A cells at concentrations that did not impact cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by HTRF assay data (Figure 3-supplement 1C-D). The dose-response relationship and lack of cytotoxicity at effective concentrations strengthen the conclusion. This demonstrates that NCT-504 can reduce even wild-type huntingtin, not just mutant forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "NCT-504 lowered GFP-Htt(exon1)-Q74 aggregates in Atg7+/+ MEF cells but failed to lower aggregates in Atg7-/- MEF cells. Atg7 is essential for autophagosome formation and its loss inhibits the autophagy pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by data in Figure 3-supplement 3. The differential effect in Atg7+/+ versus Atg7-/- cells provides strong genetic evidence that NCT-504's effect on huntingtin aggregates is autophagy-dependent. The Western blot confirms Atg7 knockout. This is a critical control experiment demonstrating mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Treatment with 5 \u03bcM NCT-504 for 12 hours significantly reduced full-length mutant huntingtin protein levels in fibroblasts from HD patients (Q68 and Q45) and in STHdhQ111 striatal cells (40% decrease). Selective silencing of PIP4K2C, but not PIP4K2A or PIP4K2B, produced robust reduction of huntingtin protein levels in HD(Q68) fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by Western blot data (Figures 4A-D). The specificity of PIP4K2C knockdown (C59, Figure 4B) is validated by Figure 4-supplement 2 showing isoform-specific silencing. The reduction of full-length mutant huntingtin in patient cells and mouse striatal neurons demonstrates therapeutic relevance. Statistical significance is reported (p<0.05, p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In primary cortical neurons, NCT-504 at concentrations \u22645 \u03bcM did not impact viability but lowered Htt(exon1)-Q74 levels at 2.5-5 \u03bcM. PIP4K2C-shRNA treatment also decreased Htt(exon1)-Q74 levels and aggregates in cortical neurons. NCT-504 and PIP4K2C silencing each reduced Htt(exon1)-polyQ aggregates in N2a neuroblastoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by data in Figure 4-supplements 3-5. The viability data (C61) establishes a therapeutic window. The concordance between pharmacological and genetic approaches across multiple neuronal models (primary neurons and N2a cells) strengthens the conclusion that PIP4K\u03b3 inhibition reduces mutant huntingtin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In Drosophila HD models, genetic reduction of dPIP4K activity using shRNAs, a loss-of-function mutant allele, or a kinase-dead allele ameliorated mHtt-induced photoreceptor degeneration and motor impairment in both N-terminal (HttN231Q128) and full-length (Htt-FLQ200) models. Reducing dPIP4K levels in the absence of mHtt did not affect motor performance compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by Drosophila data (Figure 5A-C, Figure 5-supplement 1). Multiple genetic approaches (shRNA, LOF allele, kinase-dead) all show rescue, strengthening the conclusion. The lack of effect in the absence of mHtt (C69) demonstrates specificity. Statistical significance is shown (p<0.05). The use of two different HD models (N-terminal and full-length) demonstrates broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors conclude that pharmacological inhibition or knockdown of PIP4K\u03b3 modulates phosphatidylinositide equilibrium, increases basal autophagy, reduces mHtt protein in patient fibroblasts and aggregates in neurons, and ameliorates neuronal dysfunction in Drosophila HD models. They propose PIP4K\u03b3 as a druggable target whose inhibition enhances productive autophagy and mHtt proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C125-C126 represent the main conclusions, which are well-supported by the collective experimental evidence from multiple model systems (cell lines, patient fibroblasts, primary neurons, Drosophila). The convergence of pharmacological and genetic approaches, along with mechanistic data on PI levels and autophagy, provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors suggest that PIP4K\u03b3 inhibition reveals a useful pharmacological intervention point for HD treatment and potentially for other neurodegenerative disorders like Alzheimer's and Parkinson's disease, which are also mediated by toxic protein aggregate accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76, C120-C122 are speculative statements about therapeutic potential and broader applications. While the HD data are strong, extension to other neurodegenerative diseases (C76, C120, C122) is speculative and would require additional experimental validation. The therapeutic potential for HD (C75) is better supported but still requires in vivo efficacy and safety studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C114"
+    ],
+    "result": "The authors propose that elevation of PI3P, PI(3,5)P2, and/or PI5P likely contributes to increased autophagic flux. They cite established roles for these lipids in autophagy: PI3P in phagophore formation and autophagosome maturation, PI5P in autophagy induction (sometimes independent of PI3P), PI(3,5)P2 in late autophagy steps, and PI4P reduction in lysosome reformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86, C114 connect the observed PI changes to autophagy effects through well-established literature (multiple citations provided). While the specific contribution of each PI species to NCT-504's effects is inferred rather than directly demonstrated, the inference is reasonable given the known biology and the observed correlation between PI changes and autophagy flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors discuss that polyglutamine-expanded huntingtin binds PI5P and PI(3,5)P2 more tightly than wild-type huntingtin, potentially reducing free levels of these lipids and impacting downstream signaling. They speculate that masking of PI lipids could negatively impact autophagosome cargo recognition and loading proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by citations to prior work (Burke et al. 2013, Kegel et al. 2009a/b, 2005, Kegel-Gleason 2013). Claim C91 is speculative but reasonable given the established PI-binding properties of mutant huntingtin. This provides a potential mechanistic explanation for why elevating PI levels might be particularly beneficial in HD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript reviews literature on autophagy in HD, noting that mHtt upregulates autophagy but impairs cargo incorporation, that autophagy modulators can reduce mHtt aggregates, and that mutant huntingtin may alter autophagy through various mechanisms including sequestering mTOR and downregulating ALFY. Despite conflicting reports, upregulation of autophagy remains a viable therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C95-C107 are literature review statements supported by appropriate citations. These provide important context for the study's rationale. The authors acknowledge conflicting data (C103) while maintaining that autophagy upregulation is viable (C104), which is a balanced assessment supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C113"
+    ],
+    "result": "The relationship between PIP4K\u03b3 and mTOR is unclear. One study showed PIP4K2C knockdown inhibits mTORC1, while PIP4K2C knockout mice show elevated mTORC1. The mechanism by which PIP4K\u03b3 inhibition increases autophagic flux remains to be fully determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110, C113 acknowledge uncertainty and conflicting data about the PIP4K\u03b3-mTOR relationship (citations to Mackey et al. 2014 and Shim et al. 2016). This is an honest assessment of knowledge gaps. The statement that the mechanism remains to be determined (C113) is appropriate given the complexity of the PI changes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors note that a homozygous PIP4K2C mouse knockout showed no growth or behavioral abnormalities, that starvation increases lifespan across species, and that upregulation of basal autophagy is beneficial in numerous diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by citations (Shim et al. 2016, Speakman and Hambly 2007, Hara et al. 2006, Seino et al. 2013). These statements provide important context for the therapeutic potential and safety profile of PIP4K\u03b3 inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The authors note that their findings are consistent with previous studies showing that PIP4K\u03b3 knockdown increases autophagy and reduces EGFP-HttQ74 aggregates in an ATG7-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 are supported by citations to Mackey et al. 2014 and Vicinanza et al. 2015. This acknowledgment of prior work strengthens the manuscript by showing consistency with independent findings and proper attribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors note that mHtt-dependent effects appear to be triggered by aging, which is known to limit clearance of misfolded proteins and deregulate phosphatidylinositide lipid signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by citations (Komatsu et al. 2007, Igwe and Filla 1995). This observation connects the study's findings to the age-dependent nature of HD pathology and provides additional rationale for the therapeutic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The manuscript states that cellular PI(4,5)P2 levels are mostly generated from PI4P via type I PI4P 5-kinases, consistent with the lack of effect of NCT-504 on PI(4,5)P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by citation to Lietha 2011 and is consistent with the experimental observation (C32) that NCT-504 does not affect PI(4,5)P2 levels. This provides mechanistic context for the selectivity of PI changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The manuscript notes that direct inhibition of PIKfyve results in acute loss of PI(3,5)P2 within 5 minutes, contrasting with the delayed effects of PIP4K\u03b3 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by citations (Zolov et al. 2012, McCartney et al. 2014) and provides important context for interpreting the kinetics of PI changes with NCT-504. This comparison strengthens the argument for indirect effects on other lipid kinases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Unlike mammals with three PIP4K type II enzymes, Drosophila has only one homologue (dPIPK4/CG17471). Reducing dPIP4K activity using different genetic approaches mitigates mHtt pathogenesis in three different Drosophila assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by citation (Mackey et al. 2014) and experimental data from Drosophila experiments. The single Drosophila homologue simplifies genetic analysis and strengthens the conclusion that PIP4K inhibition is beneficial across species.",
+    "result_type": "MINOR"
+  }
+]

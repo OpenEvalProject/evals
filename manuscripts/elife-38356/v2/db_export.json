@@ -1,0 +1,2459 @@
+{
+  "submission": {
+    "id": "6bc45c9c-f231-4e16-8b62-161f4984f1ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:04:14.872570Z",
+    "updated_at": "2025-12-02T02:04:14.872570Z"
+  },
+  "content": [
+    {
+      "id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "submission_id": "6bc45c9c-f231-4e16-8b62-161f4984f1ae",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for Scc3-dependent cohesin recruitment to chromatin\n\n## Authors\n\n- Yan Li<sup>1</sup> ([ORCID: 0000-0001-8190-1633](https://orcid.org/0000-0001-8190-1633))\n- Kyle W Muir<sup>1</sup> ([ORCID: 0000-0002-0294-5679](https://orcid.org/0000-0002-0294-5679)) \u2020\n- Matthew W Bowler<sup>1</sup> ([ORCID: 0000-0003-0465-3351](https://orcid.org/0000-0003-0465-3351))\n- Jutta Metz<sup>2</sup>\n- Christian H Haering<sup>2</sup> ([ORCID: 0000-0001-8301-1722](https://orcid.org/0000-0001-8301-1722))\n- Daniel Panne<sup>4</sup> ([ORCID: 0000-0001-9158-5507](https://orcid.org/0000-0001-9158-5507)) \u2020\n\n### Affiliations\n\n1. European Molecular Biology Laboratory Grenoble France\n2. Cell Biology and Biophysics Unit European Molecular Biology Laboratory Heidelberg Germany\n3. Structural and Computational Biology Unit European Molecular Biology Laboratory Heidelberg Germany\n4. Leicester Institute of Structural and Chemical Biology, Department of Molecular and Cell Biology University of Leicester Leicester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation. How cohesin engages its chromatin substrate has remained an unresolved question. We show here, by determining a crystal structure of the budding yeast cohesin HEAT-repeat subunit Scc3 bound to a fragment of the Scc1 kleisin subunit and DNA, that Scc3 and Scc1 form a composite DNA interaction module. The Scc3-Scc1 subcomplex engages double-stranded DNA through a conserved, positively charged surface. We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability. These findings suggest that the Scc3-Scc1 DNA-binding interface plays a central role in the recruitment of cohesin complexes to chromosomes and therefore for cohesin to faithfully execute its functions during cell division.\n\n## Introduction\n\nTo ensure that each daughter cell receives an equal complement of genetic information, cognate chromatids are paired through replication-coupled sister chromatid cohesion. Cohesion is then actively maintained and eventually enables attachment of kinetochores to the mitotic spindle microtubules emanating from opposite poles to ensure chromosome bi-orientation, prior to subsequent segregation of sister chromatids into daughter cells (Nasmyth and Haering, 2009; Peters and Nishiyama, 2012).\n\nCohesion is facilitated by cohesin, a member of the Structural Maintenance of Chromosomes (SMC) family of protein complexes, which is responsible for genome organisation across all domains of life (Palecek and Gruber, 2015; Wells et al., 2017). Cohesin complexes form tripartite rings, comprising Smc1-Smc3 and the kleisin subunit Scc1, that are proposed to topologically entrap sister DNA molecules (Gligoris et al., 2014; Nasmyth and Haering, 2009).\n\nThe chromosomal addresses of cohesin loading are determined by the Scc2-Scc4 complex, which is enriched at centromeres via direct contacts with kinetochore proteins and promotes DNA-stimulated ATP hydrolysis by the Smc1-Smc3 ATPase heads to drive chromatin entrapment (Ciosk et al., 2000; Hinshaw et al., 2017; Murayama and Uhlmann, 2014). Conversely, dynamic release of DNA from the ring is achieved either by the proteolytic cleavage of the Scc1 kleisin subunit by separase protease (Uhlmann et al., 2000), or by the opening of an \u2018exit gate\u2019 formed at the Scc1 and Smc3 interface. Release of the latter is inhibited by Smc3 acetylation and is controlled by the accessory factors Scc3, Wapl and Pds5 (Beckou\u00ebt et al., 2016; Rolef Ben-Shahar et al., 2008; Rowland et al., 2009; Unal et al., 2008).\n\nCohesin can associate dynamically with chromatin through alternating cycles of DNA entrapment and release until ring opening is inhibited by acetylation of the Smc3 ATPase head. At this point, DNA is thought to\u00a0remain topologically entrapped within the SMC-kleisin ring (Gligoris et al., 2014;\u00a0Beckou\u00ebt et al., 2016). A prevailing model of genome organisation posits that chromatin loops entrapped within the lumen of the SMC ring are then processively enlarged by extrusion, which presumably forms the basis for higher-order chromatin structure (Alipour and Marko, 2012).\n\nWhereas the essential role of cohesin in modulating genome architecture, gene expression and DNA damage repair is increasingly well established, comparatively little information is available concerning the molecular determinants of its association with chromatin (Busslinger et al., 2017; Haarhuis et al., 2017; Schwarzer et al., 2017; Wu and Yu, 2012). Considerable advances have been made in dissecting the compositional and biochemical prerequisites for topological entrapment of DNA by the cohesin complex (Davidson et al., 2016; Kanke et al., 2016; Stigler et al., 2016; Murayama and Uhlmann, 2014; 2015). However, how cohesin engages its DNA substrate and how such interactions might be regulated is yet to be fully elucidated. Recent work identified a direct DNA-binding site in the paralogous condensin complex, in\u00a0which the HEAT repeat subunit Ycg1, in complex with the kleisin subunit Brn1, contacts the DNA double helix backbone and stabilizes its association through DNA entrapment within the Brn1 peptide loop (Kschonsak et al., 2017).\n\nTo investigate whether cohesin can similarly establish direct contacts with DNA, we produced a series of structurally well-defined globular cohesin subcomplexes and systematically interrogated their ability to bind to DNA. We found that the essential HEAT-repeat subunit Scc3, when in complex with Scc1, binds double-stranded DNA (dsDNA). We further determined the crystal structure of the yeast Scc3-Scc1 complex bound to DNA, which revealed that DNA binding is mediated by a composite surface comprising positively charged amino acid residues from Scc3 and Scc1. Charge-reversal mutagenesis of this interface demonstrates that DNA substrate engagement by the Scc3-Scc1 complex is essential for cohesin to bind to DNA in vitro or chromosomes in vivo and is therefore\u00a0indispensable for cell viability. Thus, direct DNA substrate engagement through the newly discovered DNA-binding interface of the Scc3-Scc1 subcomplex is a key element for the cohesin cycle.\n\n## Results\n\nTo investigate the DNA-binding properties of cohesin, we co-expressed and purified defined globular domains and subcomplexes of the cohesin complex from the budding yeast Saccharomyces cerevisiae (Figure 1A, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). These encompassed the Smc3 ATPase head domain bound to an N-terminal fragment of Scc1 (Smc3hd-NScc1), the Smc1 ATPase head domain bound to a C-terminal fragment of Scc1 (Smc1hd-CScc1), as well as an Scc3-Scc1 subcomplex (Scc3T-Scc1K) (Figure 1B). In addition, we produced an Smc1-Smc3 hinge heterodimer, Pds5 bound to a Scc1 fragment (Muir et al., 2016) as a\u00a0full-length (Pds5fl) or truncated variant (Pds5T), as well as Wapl as full-length (Waplfl) or truncated variants (WaplC; Figure 1\u2014figure supplement 1). Consistent with prior studies (Murayama and Uhlmann, 2014), we found that the Scc3T-Scc1K subcomplex and the Smc1-Smc3 hinge heterodimer bound DNA, as seen by the appearance of slower-migrating species in electrophoretic mobility shift assays (EMSAs), as did the Smc3hd-NScc1 module, which has previously been implicated as a DNA\u00a0sensor in cohesin (Murayama and Uhlmann, 2014) (Figure 1C, Figure 1\u2014figure supplement 2). As expected for non-sequence specific DNA-binding factors, longer DNA fragments (>21 base pairs (bp)) bound more efficiently than shorter DNA duplexes (15 bp) (Figure 1C, Figure 1\u2014figure supplement 2). The ability of the Scc3T-Scc1K subcomplex to bind DNA depended on the presence of Scc1K. Conversely, the other HEAT-repeat-kleisin subcomplex of cohesin, Pds5-Scc1, the Smc1hd-CScc1 subcomplex and the Wapl subunit did not interact with DNA in this assay. Thus, as in the paralogous condensin complex, the HEAT-repeat protein bound to the C-terminal region of the kleisin subunit directly engages DNA (Kschonsak et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon of the cohesin complex. (B) Domain structure of Scc3 and Scc1. Construct boundaries used and their acronyms are shown below. (C) SDS-PAGE analysis of purified Scc3T-Scc1K and DNA binding analysis by EMSA. Scc3 binds to longer DNA more efficiently compared to shorter DNA. The DNA binding capacity of Scc3T is enhanced by Scc1K.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The domain boundaries of different cohesin components and subcomplexes are indicated. Expression constructs and acronyms used in the text are indicated below each cohesin component. NScc1 comprises an expression construct spanning amino acids 1\u2013112 of Scc1. Scc1P (amino acids 126\u2013142). Scc1K (amino acids 309\u2013400). CScc1 (amino acids 482\u2013564). Scc3T (amino acids 134\u20131064). Wapl fl (amino acids 1\u2013647). WaplC (amino acids 250\u2013647). Pds5 fl (amino acids 1\u20131277). Pds5T (amino acids 1\u2013701).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) SDS-PAGE and DNA binding analysis of the Smc3hd/NScc1 complex. (B) SDS-PAGE and DNA binding analysis of the Smc3/Smc1 hinge heterodimer. (C) SDS-PAGE of the purified Smc1hd/CScc1 complex and DNA binding analysis. (D) SDS-PAGE and DNA binding analysis of Pds5FL and Pds5T. (E) SDS-PAGE and DNA binding analysis of WaplC and WaplFL. For the gel showing WaplFL, the black vertical line indicates the position where the gel has been cropped. Concentration of the DNA duplex in the EMSA analysis was 1 \u03bcM. The DNA was incubated at different molar ratios, as indicated on top of each lane, with the indicated protein preparation. Native EMSA PAGE gels were stained with Sybr Safe Nucleic Acid Gel Stain. SDS-PAGE gels were stained with Coomassie.\n\nTo identify the molecular basis of this interaction, we crystallized the Scc3T-Scc1K complex from budding yeast bound to 19 bp of dsDNA. Optimized crystals diffracted anisotropically to a minimum Bragg spacing of 3.6 \u00c5 in the best, and\u00a0~5.7 \u00c5 in the worst direction (Table 1). We determined the structure by molecular replacement, using the structures of an Scc3 ortholog from Zygosaccharomyces rouxii and a C-terminal fragment of Saccharomyces cerevisiae Scc3 as search models (Roig et al., 2014). The resulting electron-density map provided a continuous trace of the polypeptide main chain, but with a limited level of detail owing to the anisotropy of the data. Despite these drawbacks, we successfully traced the structure using a selenomethionine derivative and refined a model encompassing amino acid residues 134 to 1064 of Scc3 in complex with residues 309 to 400 of Scc1, bound to a 19 bp DNA molecule (Table 1).\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Scc3T/Scc1K native</th>\n      <th>Scc3T/Scc1K SeMet</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P21212</td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>109.9, 115.4, 295.6</td>\n      <td>109.9, 115.6, 296.2</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.282</td>\n      <td>1.282</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20133.60</td>\n      <td>49.9\u20134.79</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>20963</td>\n      <td>10279</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>5.8 (122.6)*</td>\n      <td>4.6 (112.3)*</td>\n    </tr>\n    <tr>\n      <td>I / \u03c3I</td>\n      <td>11.9 (1.6)*</td>\n      <td>10.6 2(.1)</td>\n    </tr>\n    <tr>\n      <td>CC 1/2</td>\n      <td>0.99 (0.56)</td>\n      <td>0.99 (0.52)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>91.4 (63.5)*</td>\n      <td>93.6 (71.2)*</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>4.4 (6.0)*</td>\n      <td>1.8 (1.8)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20133.60</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.28/0.31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td>16465</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>14909</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DNA</td>\n      <td>1556</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>B-factors (mean)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>254.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DNA</td>\n      <td>266.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.5</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values in parentheses are for highest-resolution shell._\n\nAs seen in other structures of Scc3, the protein is hook-shaped in the C-terminal section and contains an N-terminal \u2018nose\u2019 formed by a pair of extended antiparallel \u03b1-helices (Figure 2A). Similarly to the interaction of human Scc1 with Scc3, the yeast Scc1 in our structure binds along the convex surface of the hook-shaped HEAT-repeat subunit. We detected additional electron density corresponding to dsDNA within the cradle of this hook (Figure 2\u2014figure supplement 1A,B). Whereas the DNA duplexes aligned to form pseudocontinuous double helices throughout the crystal, the DNA duplex was slightly too short for tight end-to-end stacking (Figure 2\u2014figure supplement 1A,B). As a result, the DNA density was only partially resolved, apparently due to rotational and translational disorder of the DNA in the binding cavity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon representation of the Scc3-Scc1 complex bound to a 19 bp dsDNA substrate. The N- and C- termini of Scc3 (violet) and Scc1 subunits (green) are shown. The inset shows a close-up view of the Scc1 amino acid K363. (B) Electrostatic surface potential representation of the Scc3-Scc1 subcomplex with bound dsDNA (calculated with APBS and displayed with Pymol).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) View of the DNA binding site of the Scc3-Scc1 subcomplex. DNA is shown as stick, along with its 2Fo-Fc electron density Fourier map (blue mesh) contoured at 1.0 \u03c3. (B) Fo-Fc omit electron density Fourier map (grey mesh) contoured at 1.0 \u03c3. (C) N-terminal \u2018nose\u2019 of Scc3 which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry. (D) Anomalous difference Fourier map (yellow mesh) contoured at 2.8 \u03c3 of a selenomethionine\u2013substituted crystal, confirming the\u00a0location of Scc1\u00a0residue\u00a0M373. Blue mesh: 2Fo-Fc electron density Fourier map around Scc1 contoured at 1.5 s. K363 of Scc1 is located in close proximity to the DNA phosphate backbone.\n\nTo identify amino acid residues potentially involved in DNA binding, we mapped the electrostatic surface potential onto the Scc3-Scc1 structure (Figure 2B). This revealed that DNA is nested within an extended cradle spanning the majority of Scc3-Scc1, lined by a set of positively charged residues that directly contact the DNA phosphate backbone. The DNA is aligned almost parallel to the N-terminal \u2018nose\u2019 of Scc3, which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry (Figure 2\u2014figure supplement 1C). We observed no direct nucleotide base\u2013amino acid interactions, which explains the apparent lack of DNA sequence specificity.\n\nTo ascertain the amino-acid register of Scc1, we used an anomalous difference map peak for M373 in the selenomethionine-derivative data (Figure 2\u2014figure supplement 1D). The deduced register places Scc1 residue K363 in close proximity to the DNA (Figure 2A, Figure 2\u2014figure supplement 1D). Direct interactions between Scc1 and the DNA phosphate backbone potentially explain why the Scc3T-Scc1K subcomplex has greater DNA binding affinity than does isolated Scc3T (Figure 1C).\n\nMapping of sequence conservation onto the structure revealed that amino acid residues in the DNA binding groove are generally well conserved among yeast Scc3 orthologs (Figure 3A). In particular, amino acid residues that are located proximal to the DNA phosphate backbone showed strong conservation. To further evaluate the contributions made by individual segments of the DNA-binding surface, we subdivided participating residues into a series of three patches, based on their physical proximity to the DNA (Figure 3B), and subjected these patches to site-directed mutagenesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-v2.jpg)\n\n**Figure 3.:** (A) Surface amino acid conservation of yeast Scc3. Residues in the DNA binding domain are well conserved. (B) DNA binding residues are located in three surface patches of Scc3. (C) DNA binding fluorescence polarization of 6-FAM labelled 32 bp dsDNA by variants of the Scc3-Scc1 subcomplex. Data points corresponding to the average of three independent experiments were fitted to a standard binding equation assuming a single binding site using Kaleidagraph. Standard deviations are depicted as vertical error bars. Apparent dissociation constants (KD) are noted below. (D) Tetrad analysis of diploid budding yeast strains expressing ectopic wild-type or mutant versions of Scc3 under control of the endogenous promoter in an SCC3/scc3\u0394 background (strains C5013, C5014, C5015, C5043, C5033). Images were recorded after three days at 30\u00b0C on rich media. Genetic marker analysis identified Scc3(mutant), scc3\u0394 cells (circles). (E)\u00a0ChIP-qPCR analysis of binding to centromeric (cen), pericentromeric (pericen) or chromosome arm (arm) regions (chromosomes IV, V, and VI as indicated) of untagged (strain C3) or PK6-tagged wild-type or mutant versions of Scc3 expressed from an ectopic locus under its endogenous promoter (strains C5013, C5043, C5033). The fractions of immunoprecipitated DNA relative to input DNA are plotted as circles for two biological repeats with two technical repeats each (same colour pairs). Mean values of all four data points are shown as lines.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Size-exclusion chromatography of Scc1-Scc1 complexes. Arrows indicate the elution volume of molecular weight size markers. (B) SDS-PAGE analysis of Scc3-Scc1 complexes from peak fractions in panel (A), showing that the mutants do not impact Scc1 binding in vitro. (C) Alignment of Scc3 amino acid sequences. Residues that that were probed by mutagenesis are labeled with red stars (*). Magenta boxes indicate fully conserved amino acid residues while chemically conserved residues are colored magenta. Blue residues indicate divergent residues.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Protein levels of ectopically expressed wild-type and mutant versions of Scc3 tagged with PK6 (strains C1073, C5013, C5014, C5015, C5043, C5033) measured by western blotting of whole cell lysates against the PK tag (top) and \u03b1-tubulin as loading control (bottom). (B) Co-immunoprecipitation of Scc1-HA6 with wild-type or mutant versions of PK6-tagged Scc3 expressed from an ectopic locus under the endogenous promoter (strains C501, C5165, C5166).\n\nWe measured the DNA equilibrium dissociation constant by fluorescence polarization, using a 32-bp 6-FAM labelled DNA substrate, which is sufficient to bridge the entire DNA binding surface present in the Scc3-Scc1 crystal structure (Figure 3C). Whereas the wild-type Scc3T-Scc1K complex bound this substrate with an equilibrium dissociation constant of 2.2 \u03bcM, charge-inversion mutations in patches 1 and 3, located at the crest of and within the Scc3 cradle, had only modest effects on affinity (equilibrium dissociation constants of 9.5 \u03bcM and 7.3 \u03bcM, respectively). Patch 2 mutants, residing in the Scc3 'nose', exhibited essentially unaltered DNA binding affinity. In contrast, the simultaneous mutation of all three patches (a heptamutant) reduced the binding affinity of the patch 1 or 3 mutants even further (to 29.3 \u03bcM, Figure 3C). The defect in binding DNA was not due to any impact of the mutations on the structural integrity of Scc3-Scc1, as all mutant complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography (Figure 3\u2014figure supplement 1A) and efficiently formed a complex with Scc1 in vitro (Figure 3\u2014figure supplement 1B) or in vivo (see below). We conclude that the positively charged Scc3 cradle comprises the major DNA-binding surface of Scc3 and that the positively charged amino acid residues located in patch 1 and 3 constitute a composite DNA binding surface. The distribution of these residues across an extended surface of Scc3 might explain why their significance has thus far eluded cell-biological and genetic characterization. To test whether the direct interactions between Scc1 and the DNA phosphate backbone contribute to DNA binding we introduced the double mutation K363E/R364E into Scc1K. This mutant showed an essentially indistinguishable equilibrium dissociation constant as compared to that of the wild-type complex, thus indicating that this positively charged patch of Scc1 does not contribute to DNA binding (Figure 3C).\n\nWe then assayed whether DNA binding by Scc3 is important for cohesin function in vivo. We integrated wild-type or mutant versions of Scc3 into a diploid yeast strain in which one of the two endogenous SCC3 genes had been deleted (Supplementary file 2) and analysed the competence of these Scc3 variants to complement the SCC3 deletion by tetrad dissection\u00a0(Figure 3D). Whereas all three individual patch mutants could support cell proliferation, cells expressing the heptamutant mutant version as their only source of Scc3 failed to divide, despite expressing the mutant Scc3 protein at wild-type levels (Figure 3\u2014figure supplement 2A).\n\nTo test whether the inability of the heptamutant version of Scc3 to support cohesin function was the result of a defect in the association of the mutant cohesin complex with chromosomes, we measured the levels of wild-type and mutant cohesin complexes at five independent binding sites in the budding yeast genome by chromatin immunoprecipitation followed by quantitative PCR (ChIP-qPCR). The amounts of chromosomal DNA that co-immunoprecipitated with the Scc3 patch 3 mutant were on average 40% lower than those that co-immunoprecipitated with wild-type Scc3. The Scc3 heptamutant failed to bind chromatin entirely (Figure 3E), although it was incorporated normally into cohesin complexes (Figure 3\u2014figure supplement 2B). We conclude that DNA binding by Scc3-Scc1 is essential for the stable association of cohesin complexes with chromosomes in vivo and hence an important determinant of cohesin function.\n\n## Discussion\n\nTargeting of cohesin to the genome is essential for numerous aspects of chromosome biology, including sister chromatid cohesion, DNA damage repair, and transcriptional regulation (Uhlmann, 2016). In this study, we identified a direct DNA-binding site in the Scc3 subunit of the cohesin complex and determined its interaction with DNA at near-atomic resolution. These findings provide evidence for a site of direct DNA contact in cohesin complexes, which presumably contributes to the initial step of chromosome entrapment and/or DNA translocation (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structure of the DNA-bound Ycg1\u2013Brn1 subcomplex from condensin. (B) Structure of the Scc3-Scc1 complex. In the condensin structure, a peptide loop (green dashed line) of the Brn1 kleisin subunit encircles the bound DNA and prevents its dissociation. Alignments were generated by secondary structure matching using C\u03b1 atoms from the Scc3 HEAT-repeats and the structurally equivalent region of the condensin Ycg1 HEAT-repeat subunit. (C) Model for Scc3-mediated DNA binding by cohesin complexes. Scc3-Scc1 enables direct chromatin binding. Cohesin is loaded by Scc2-Scc4 in an ATP dependent fashion thus resulting in topological DNA entrapment.\n\nWe show here that cohesin interacts directly with DNA through a complex formed by the HEAT-repeat subunit Scc3 and the kleisin subunit Scc1. We have determined the DNA-bound structure of Scc3 in complex with a minimal fragment of Scc1 and demonstrated that DNA binding depends on conserved positively charged residues of a composite Scc3-Scc1 interface. We have used this structure to derive DNA-binding deficient Scc3 variants, which fail to support cohesin recruitment to chromatin and consequently cell division. In addition to providing a scaffold for the assembly of cohesin regulators (Hara et al., 2014; Murayama and Uhlmann, 2014; Roig et al., 2014) and thereby participating in the maintenance of cohesion, the Scc3-Scc1 subcomplex also plays a key role in DNA substrate recognition and hence the efficient association of the cohesin holocomplex with chromatin.\n\nThe cohesin ring has been proposed to topologically embrace chromosomal DNA, which requires that DNA is loaded into and also released from the ring complex during cohesin\u2019s reaction cycle (Nasmyth, 2011). As mutations in Scc3 that prevent DNA engagement by the Scc3-Scc1 subcomplex in vitro fail to stably bind to chromatin in vivo, it is likely that direct DNA-cohesin interactions contribute to such DNA entry and exit reactions (Figure 4C).\n\nWe propose that the Scc3-Scc1 subcomplex provides a dynamic DNA anchoring point that is required for the efficient loading and/or maintenance of cohesin on chromatin. Such a model for Scc3 is supported by previous data, which indicate that Scc3 contributes to cohesin loading (Hu et al., 2011; Murayama and Uhlmann, 2014; Orgil et al., 2015; Roig et al., 2014). In agreement with this model, Scc1 deletion mutants that lack the sequence responsible for binding Scc3 fail to load onto yeast chromosomes (Hu et al., 2011). Furthermore, Scc3 enhances topological DNA entrapment by cohesin in in vitro loading assays (Murayama and Uhlmann, 2014). Thus, DNA binding by the Scc3-Scc1 subcomplex might be the first step in moving chromosomal DNA into the cohesin ring. The subsequent entrapment reaction is then presumably catalysed by the Scc2-Scc4 complex (Davidson et al., 2016; Murayama and Uhlmann, 2014; Stigler et al., 2016).\n\nSurface patch 3 mutations in Scc3, which partially ablate DNA binding by the Scc3-Scc1 subcomplex and reduce cohesin levels on chromatin, do not exhibit any obvious growth defects and are therefore presumably competent to establish sister chromatid cohesion. Indeed, partial depletion of cohesin does not seem to impact some of its core functions, including sister-chromatid cohesion and chromosome segregation (Elbatsh et al., 2016; Heidinger-Pauli et al., 2010). In contrast, even mutations that only slightly impair DNA binding of the equivalent HEAT-repeat/kleisin module of the condensin complex are sufficient to abolish stable chromatin association and to interfere with cell division (Kschonsak et al., 2017). Such discrepancies might be due to alternate loading and/or maintenance mechanisms of cohesin and condensin. Whilst cohesin is loaded by the Scc2-Scc4 complex, no such independent loading factor has been identified for condensin thus far, which could explain why the latter depends more strongly on the direct DNA binding site formed by its HEAT-repeat and kleisin subunits.\n\nBinding of condensin to DNA is further stabilized by the entrapment of the bound DNA helix within a kleisin peptide loop (Figure 4A-) (Kschonsak et al., 2017). The relevant section of Scc1 that would contribute to such topological DNA entrapment is disordered in our structure(Figure 4B). As Scc1 is clearly required for DNA binding of the Scc3-Scc1 subcomplex, but\u00a0apparently not through direct DNA interactions (Figure 3C), it is possible that cohesin uses a similar mode of chromatin engagement. These findings thus point towards a conserved molecular mechanism that enables chromatin substrate engagement by condensin and cohesin. This mechanism potentially facilitates topological loading, chromatin looping and tracking along chromatin fibres by these SMC complexes (Ganji et al., 2018).\n\n## Materials and methods\n\n### Constructs, expression and purification\n\nScc3, Scc1 and other cohesin subunits were amplified from yeast Genomic DNA (Millipore). Scc3 and mutant variants thereof were cloned into pETM-30 vector using NcoI and NotI restriction enzyme cleavage sites. Scc1 constructs were cloned using the NcoI and NotI sites of a pACYC-DUET vector for co-expression with Scc3, or into vectors containing the cognate Smc head domain in their second ORF for Smc/kleisin complexes (see below). Codon optimised genes comprising the Smc1 and Smc3 ATPase domains were produced by gene synthesis (Thermofisher), to include C-terminal 6xHistidine tags, and ligated into the NdeI-XhoI sites of pRsf-DUET1 and pACYC-DUET1 respectively via Gibson Assembly (NEB). Pds5 and Wapl were cloned and expressed as described previously (Muir et al., 2016). For the expression and purification of Pds5, media and buffers were supplemented with 20 \u03bcM and 5 \u03bcM of inositol hexa-kis-phosphate, respectively (Ouyang et al., 2016).\n\nProteins were expressed in Escherichia coli BL21(DE3) by auto-induction (Studier, 2005). Cells were grown at 37\u00b0C until OD600nm = 0.6 and then shifted to 18\u00b0C for 16 hr. Cells were harvested and washed once with ice-cold PBS buffer. Pellets were resuspended in buffer 1 (40 mM TRIS, pH 7.5, 500 mM NaCl, 20 mM imidazole, 0.5 mM TCEP) containing one tablet of complete, Mini, EDTA-free protease inhibitors (Roche). Cells were lysed using a microfluidiser (Microfluidics) and centrifuged at 15000 rpm for 1 hr using a JA-20 rotor (Beckman). The supernatant was loaded onto 5 ml Co2+\u2013conjugated IMAC beads (GE healthcare) by using a peristaltic pump (GILSON). The column was washed with 10 column volumes of buffer 1 and the protein eluted with buffer 2 (40 mM TRIS, pH 7.5, 300 mM NaCl, 300 mM imidazole, 0.5 mM TCEP). The His-GST tag was cleaved by addition of His-tagged TEV protease during overnight dialysis against 40 mM TRIS, pH 7.5, 300 mM NaCl, 0.5 mM TCEP at 4\u00b0C. For Smc3-NScc1, Smc1-CScc1, and the Smc3-Smc1 hinge, this cleavage step was bypassed.\n\nThe HIS-GST tag, protease and uncleaved protein were removed by passing this mixture over Co2+ IMAC resin. The flow through was concentrated using an Amicon Ultra \u221215 concentrator (Millipore) and applied onto a MonoQ 5/50 GL column (GE healthcare) in buffer 3 (150 mM NaCl, 40 mM TRIS, pH7.5, 0.5 mM TCEP). Proteins were eluted using a linear gradient in buffer 4 (1 M NaCl, 40 mM TRIS, pH 7.5, 0.5 mM TCEP). The final purification step was performed by using a HiLoad 16/60 Superdex 200 prep\u2013grade column in buffer 5 (150 mM NaCl, 20 mM TRIS, pH7.5, 0.5 mM TCEP).\n\n### DNA binding assays\n\nFor analysis of DNA-binding by EMSA and for co-crystallization, DNA substrates were generated by annealing complementary oligonucleotides (MWG Eurofins) at a final concentration of 1 mM in 20 mM TRIS, pH 7.5, 150 mM NaCl (Supplementary file 1). Successful annealing and purity of the oligonucleotides were confirmed by native PAGE on a 6% gel.\n\nFor EMSA experiments, varying concentrations of protein samples were incubated at the indicated molar ratios with 1 \u03bcM the 32mer DNA in 150 mM NaCl, 20 mM TRIS, pH 7.5, 0.5 mM TCEP. Samples were incubated on ice for 30 min. 5% Glycerol was added and the samples were analysed on a 6% native 1x TRIS-Glycine (25 mM TRIS, 250 mM glycine, pH 8.3, 5% Glycerol) polyacrylamide gel using 1x TRIS-Glycine running buffer. Gels were stained with SYBR Safe (Thermo Fisher Scientific) to visualize DNA-bound complexes or Coomassie Blue for protein staining.\n\n### Fluorescence Polarization (FP)\n\n32 bp 6-FAM labelled DNA was prepared by annealing two complementary DNA strands, essentially as described for the crystallisation oligonucleotides, albeit under low-light conditions (Supplementary file 1). Fluoresence polarisation assays were conducted in a buffer containing 50 mM TRIS pH 7.5, 150 mM NaCl, 0.1% tween and 0.5 mM TCEP. A series of protein concentrations, ranging from 0.5 \u03bcM to 25 \u03bcM, were incubated in the presence of 50 nM DNA for 30 min at room temperature in order to attain equilibrium. Immediately thereafter, fluorescence polarization was recorded using 485 nm and 520 nm excitation and emission filters, respectively (CLARIOstar, BMG Labtech, Germany). The change in fluorescence polarization was then plotted as mean values of three independent replicates and the dissociation constant for each complex determined.\n\n### Crystallization and data collection\n\nCrystals of the Scc3-Scc1-DNA complex were obtained by mixing 8 mg ml\u22121 protein with DNA at a 1:1.1 ratio. 1 \u03bcl of the protein:DNA complex were mixed with 1 \u03bcl 10% PEG 8000, 0.1M Bis-TRIS, pH 6.5 crystallization buffer and equilibrated against the crystallization buffer at 4\u00b0C. Initial crystals with a 17 mer DNA were obtained after 5 days. These crystals were used as seeds for crystallization of Scc3-Scc1 bound to a 19mer DNA using the same crystallization condition. Crystals were cryo protected by adding 20% Glycerol to the crystallization buffer and flash frozen in liquid nitrogen. Diffraction data for native and selenomethionine-derivatised Scc3-Scc1-DNA crystals were collected at 100 K at an X-ray wavelength of 0.966 \u00c5 at beamline ID30A-1/MASSIF-1 (Bowler et al., 2015) of the European Synchrotron Radiation Facility, with a Pilatus3 2M detector using automatic protocols for the location and optimal centring of crystals (Svensson et al., 2015). The beam diameter was selected automatically to match the crystal volume of highest homogeneous quality (Svensson et al., 2018). Data were processed with XDS (Kabsch, 2010) and imported into CCP4 format using AIMLESS (Winn et al., 2011).\n\n### Structure determination refinement and analysis\n\nThe structure of the Scc3-Scc1-DNA complex was determined by molecular replacement by Phaser (McCoy et al., 2007) using a Scc3 structure from Zygosaccharomyces rouxii (PDB code 4UVK) and a structure of a C-terminal fragment of Scc3 from Saccharomyces cerevisiae (PDB code 4UVL) (Roig et al., 2014) in spacegroup P21212 at a resolution of 3.6 \u00c5 (Table 1). The model was build by iterative rounds of manual adjustments with Coot and of restrained refinements with Phenix (Afonine et al., 2012; Emsley et al., 2010). Sequence register was confirmed using a selenomethionine-derivatized crystal. Analysis of the refined structure in MolProbity showed that there were no residues in the disallowed and 94% in the favoured region of the Ramachandran plot. The MolProbity all atom clash score was 4.1 (Chen et al., 2010). Structures were visualized with PyMOL (Schr\u00f6dinger, LLC). Surface conservation graphics were created using the ConSurf server (Ashkenazy et al., 2016) using a multi-sequence alignment containing Scc3 orthologs from Saccharomyces_cerevisiae (P40541), Saccharomyces_kudriavzevii (J5PHP0), Candida glabrata (A0A0W0DN34), Naumovozyma castellii (G0VFI2), Vanderwaltozyma polyspora (A7TNN6), Tetrapisispora phaffii (G8BRB9), Saccharomyces kudriavzevii (J5PHP0), Zygosaccharomyces rouxii (A0A1Q3A0R6), Torulaspora delbrueckii (G8ZZR1), Kluyveromyces lactis (Q6CIC3), Lachancea quebecensis (A0A0P1KU08), Eremothecium cymbalariae (G8JTR2), Ashbya gossypii (Q75AL6), Pichia sorbitophila (G8YM42) and Yarrowia lipolytica(Q6C144). The electrostatic surface potential graph was created with APBS (Baker et al., 2001).\n\n### Chromatin immunoprecipitation and ChIP-qPCR\n\nChromatin immunoprecipitation followed by quantitative PCR ChIP-qPCR was performed from asynchronous yeast cell cultures as described (Cuylen et al., 2011), with the exception that sonication was performed with a Bioruptor Plus (Diagenode) at 4\u00b0C using 6 cycles of 30 s on, 60 s off at \u2018high\u2019 level. Quantitative PCR was performed with primers listed Supplementary file 3.\n\n### Tetrad analysis\n\nWild-type or mutant alleles of Scc3 fused to a C-terminal PK6 epitope tag were integrated into the ura3 locus of a SCC3/scc3::HIS3 heterozygous diploid yeast strain (C1073). Correct integration was confirmed by PCR (Supplementary file 2). Following sporulation, strains were tetrad dissected and cultured on YPAD media for 3 days at 30\u00b0C before genotyping by replica plating.\n\n### Data\u00a0availability\n\nCoordinates for the Scc3-Scc1-DNA complex are available from the Protein Data Bank under accession number 6H8Q.\n",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "49691b15-000a-48a7-845c-82b2a006cbab",
+      "submission_id": "6bc45c9c-f231-4e16-8b62-161f4984f1ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrea Musacchio, Max Planck Institute of Molecular Physiology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38356.021](https://doi.org/10.7554/eLife.38356.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structural basis for Scc3-dependent cohesin recruitment to chromatin\" for consideration by eLife. Your article has been reviewed by Andrea Musacchio as the Senior Editor, a Reviewing Editor, and three reviewers.. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. We hope you will be able to submit the revised version within two months.\n\nSummary:\n\nLi et al., describe a crystal structure of Scc3 (slightly truncated at both ends and designated Scc3T) with a fragment of Scc1 (\"Scc1K\") bound with a 19bp fragment of dsDNA. The structure, which closely resembles a corresponding condensin DNA complex published last year by Haering's group, shows that DNA binds along a groove created by the curvature of the Scc3 heat repeats. Mutations of residues at points of contact with DNA backbone diminish affinity in vitro and (in appropriate combination) prevent loading in vivo, as shown by ChIP-qPCR and by tetrad analysis of strains ectopically expressing wt or mutant versions of Scc3 in an SCC3/scc3\u0394 background. The biochemical and structural work clearly identify the molecular basis of an interaction between Scc3 and DNA and demonstrate that a fragment of Scc1 enhances this interaction. While not entirely unsurprising, the results add to our understanding of how cohesin might function mechanistically. With appropriate revision, the MS can be made suitable for publication in eLife.\n\nEssential revisions:\n\n1) In the Discussion section (first paragraph), the authors set up a straw man. The only alternative to direct protein-DNA contacts (either by a cohesin subunit or by some adaptor protein) is that cohesin is snapping open and closed all the time and should it happen to entrap DNA, it somehow sticks. That silly alternative is obviously hugely improbable. Thus, the real conclusion is that \"these findings provide evidence for a site of DNA contact, probably during the initial step in chromosome entrapment\" \u2013 or something like that. See also point 3, below. Incidentally, \"topological principles\" don't \"drive\" anything in biology \u2013 they explain various mechanisms or activities and suggest why they may have evolved, but biology is never \"driven\" by \"principles\" other than natural selection (except in the minds of the unreconstructed Cartesians still running around in France).\n\n2) The anisotropy of the crystals, presumably due to a less than optimal DNA length, limits the accuracy and the information content of the structure. Did the authors, seeing the result, take the obvious next step of trying to get better crystals with other DNA lengths (e.g., 20 or 21 bp)? (That is, were all DNAs in Supplementary file 2 used in crystallization trials, or just for FP measurements? If the former, why not also 20 bp?) In this reviewer's view, that would have been an easier and better path than the one they took by validating the Scc1 trace with SeMet. In any case, Figure 3\u2014figure supplement 1 should show either the DNA density in the initial MR map or (if the MR is good enough \u2013 it might not be) an Fo-Fc map after that initial step (i.e., phases from MR but 2Fo-Fc, showing in principle what's missing). In any case, a map with the final 2Fo-Fc phases, which included this DNA contributions, is not helpful. Incidentally, in Supplementary file 1, the Rmerge in the last bin is truly miserable. Was there an \"elliptical\" (i.e., anisotropic) cutoff, or did the meaningless reflections in the \"bad\" directions contribute? If the latter, then please recalculate with the correct anisotropic cutoff for each frame or set of frames, so that pure noise doesn't contribute to the data used. Also, \"3.99\" is 4.0 in my book, not \"3.9\".\n\n3) The text overstates some of the biological and mechanistic conclusions. Although the correlation of affinity in vitro with function in vivo does permit the inference that the observed interaction is part of the DNA docking mechanism, the results do not rule out the participation of other contacts. Indeed, were those contacts strengthened by compensating mutations, it is possible that this contact would not be \"indispensible\", as the Abstract states.\n\n4) The most useful conclusion is the similarity with condensin. For understandable \"psychological\" reasons, the authors do not mention the Kschonsak et al. (2017) paper in the Introduction. They should do so, as it surely guided their strategy at some point, either consciously or otherwise. Is the peptide loop definitely absent here, or could its absence be a consequence of truncating Scc1?\n\n5) At the end of the Discussion section, the authors write that the mechanism they describe would enable cohesin to entrap a second DNA helix without releasing the first, etc. Not obvious to this reader why or how, perhaps because Figure 4C is so vague and incomprehensible.\n\n6a) Is K363 on Scc1 important for the DNA binding ability of the complex? It would also be useful to highlight this residue on Figure 2. This experiment is required to confirm the in vivo relevance of the enhancement of DNA association by the Scc1 fragment in the in vitro experiments.\n\n6b) Scc1 is clearly required for the DNA-binding activity of Scc3-Scc1. The structure suggests that Scc1 K363 might contact DNA. Does Scc1 K363E reduce the binding of Scc3-Scc1? Related to this, even though the authors cannot see any density of the N-terminal region of Scc1K, this region might contribute to DNA binding. This should be experimentally tested. In the human SA2-Scc1K structure, the corresponding region in Scc1K forms a helix that is located at the base of the \"nose\" of SA2. Can the authors build a model of the SA2-Scc1-DNA complex and see if this N-terminal region of Scc1K might be close to DNA?\n\nNOTE: Concern on the function of K363 was raised by two reviewers and is reported here in its original wording as points 6a and 6b.\n\n7) The ChIP-qPCR is essential for the conclusions of the paper but there are some issues with the presented experiment in Figure 3D. A minimum of 3 biological repeats are required to compute standard deviation, so the error bars here are not appropriate and should be removed. The authors could show the data for the two biological replicates side by side without error bars as an indication of reproducibility or, better, repeat the experiment a third time and calculate standard deviation. What do the percentages mean above the bars? How did the authors analyse the heptamutant given that it is not viable? Do the cells also carry endogenous Scc3? In this case, do all the strains in this experiment carry untagged Scc3 in addition to the tagged wild type or mutant protein? The fact that patch 2 mutants still bind DNA in vitro predicts that the patch 2 mutant protein should also associate with the chromosome in vivo, but this was not tested.\n\n8) The authors are proposing that the reported interactions are required for cohesin loading. However, an alternative possibility is that \"core\" cohesion can load but that Scc3 fails to associate with it. This should be tested by assessment of the association of other \"core\" cohesin subunits (Smc1/Smc3/Scc1) with chromosomes in the patch 3 mutant cells.\n\n9) What is the effect of the observed mutations on sister chromatid cohesion? The authors should test this using the TetR-GFP or LacI-GFP system.\n\n10) Hara et al. (2014) showed that mutating conserved basic residues in the N-terminal and middle regions of Scc1K did not affect Scc1K binding to SA2. These regions may transiently dissociate from SA2/Scc3 while the C-terminal region of Scc1K is still anchored to SA2/Scc3. It is thus possible that Scc3-Scc1K form a topological embrace of DNA, similar to the condensin sub-complex. This possibility needs to be discussed, especially if the N-terminal region of Scc1K is required for DNA binding (see point 6b).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Structural basis for Scc3-dependent cohesin recruitment to chromatin\" for consideration by eLife.\n\nI have now examined your resubmission and I am happy to inform you that I consider it essentially ready for acceptance. However, before formal acceptance, I would like to note the following three points:\n\n1) You seem to be using two somewhat different color schemes for Scc3 in the different figures, more bluish in Figure 2 and Figure 4, and more violet in Figure 1. May I suggest that you make the colours more uniform?\n\n2) In Figure 2\u2014figure supplement 1E, the right hand panel appears to be a composite of pasted lanes. If this is the case, could you please clearly mark this on the figure with a black vertical line and add a short reference to lane pasting in the legend?\n",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf7f6dd8-0acf-466c-b2a3-af0f735ad3eb",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C1",
+      "claim": "The cohesin ring complex is required for sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established function of cohesin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "0b783b00-bfdd-473f-ad98-576bbbd04c9f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C2",
+      "claim": "The cohesin ring complex is required for DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established function of cohesin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "59e3f19a-1038-4575-9630-54738084a016",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C3",
+      "claim": "The cohesin ring complex is required for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established function of cohesin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "268c2186-2fd9-4ec8-997f-b8744da775e7",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C4",
+      "claim": "Scc3 and Scc1 form a composite DNA interaction module.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here, by determining a crystal structure of the budding yeast cohesin HEAT-repeat subunit Scc3 bound to a fragment of the Scc1 kleisin subunit and DNA, that Scc3 and Scc1 form a composite DNA interaction module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the crystal structure determination presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "ec9f5db0-5f0a-45d0-8850-03423f8341b5",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C5",
+      "claim": "The Scc3-Scc1 subcomplex engages double-stranded DNA through a conserved, positively charged surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc3-Scc1 subcomplex engages double-stranded DNA through a conserved, positively charged surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure and electrostatic surface analysis shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8030573e-7f90-4301-b499-c944200d254b",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C6",
+      "claim": "The conserved DNA-binding domain of Scc3-Scc1 is required for DNA binding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mutagenesis and fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "220113c6-c029-4836-8246-4324999d2fee",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C7",
+      "claim": "The conserved DNA-binding domain of Scc3-Scc1 is required for the enrichment of cohesin on chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through ChIP-qPCR experiments with mutant variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "08e5b003-d62b-4068-bdca-70aa4a90d9e2",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C8",
+      "claim": "The conserved DNA-binding domain of Scc3-Scc1 is required for cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through tetrad analysis showing that heptamutant cells fail to divide.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "bb0df06f-7aff-4c21-ae7c-f0fecbaf67bd",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C9",
+      "claim": "The Scc3-Scc1 DNA-binding interface plays a central role in the recruitment of cohesin complexes to chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the Scc3-Scc1 DNA-binding interface plays a central role in the recruitment of cohesin complexes to chromosomes and therefore for cohesin to faithfully execute its functions during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of in vitro DNA binding, ChIP-qPCR, and viability assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a0c112ae-c3bd-4fd4-ba95-9fc5a34ed9dd",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C10",
+      "claim": "Cognate chromatids are paired through replication-coupled sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that each daughter cell receives an equal complement of genetic information, cognate chromatids are paired through replication-coupled sister chromatid cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of chromosome biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "fb204e7b-81ed-4bbe-a1b8-9685c6317259",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C11",
+      "claim": "Cohesion enables attachment of kinetochores to the mitotic spindle microtubules emanating from opposite poles to ensure chromosome bi-orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesion is then actively maintained and eventually enables attachment of kinetochores to the mitotic spindle microtubules emanating from opposite poles to ensure chromosome bi-orientation, prior to subsequent segregation of sister chromatids into daughter cells (Nasmyth and Haering, 2009; Peters and Nishiyama, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f423b62e-1d4c-475c-bf82-667ba4a638e7",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C12",
+      "claim": "Cohesion is facilitated by cohesin, a member of the Structural Maintenance of Chromosomes (SMC) family of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesion is facilitated by cohesin, a member of the Structural Maintenance of Chromosomes (SMC) family of protein complexes, which is responsible for genome organisation across all domains of life (Palecek and Gruber, 2015; Wells et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "27706d66-3ca0-4dbb-89a8-4d1082a59e89",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C13",
+      "claim": "Cohesin complexes form tripartite rings, comprising Smc1-Smc3 and the kleisin subunit Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin complexes form tripartite rings, comprising Smc1-Smc3 and the kleisin subunit Scc1, that are proposed to topologically entrap sister DNA molecules (Gligoris et al., 2014; Nasmyth and Haering, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6b5b3eb7-e856-4dcc-99ba-d644c0bea42a",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C14",
+      "claim": "Cohesin rings are proposed to topologically entrap sister DNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin complexes form tripartite rings, comprising Smc1-Smc3 and the kleisin subunit Scc1, that are proposed to topologically entrap sister DNA molecules (Gligoris et al., 2014; Nasmyth and Haering, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "292abd55-40c9-4a03-b031-3c1377bf0662",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C15",
+      "claim": "The chromosomal addresses of cohesin loading are determined by the Scc2-Scc4 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromosomal addresses of cohesin loading are determined by the Scc2-Scc4 complex, which is enriched at centromeres via direct contacts with kinetochore proteins and promotes DNA-stimulated ATP hydrolysis by the Smc1-Smc3 ATPase heads to drive chromatin entrapment (Ciosk et al., 2000; Hinshaw et al., 2017; Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e91cbf04-a2a5-457f-bf3e-5c3c1b677ef5",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C16",
+      "claim": "The Scc2-Scc4 complex is enriched at centromeres via direct contacts with kinetochore proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromosomal addresses of cohesin loading are determined by the Scc2-Scc4 complex, which is enriched at centromeres via direct contacts with kinetochore proteins and promotes DNA-stimulated ATP hydrolysis by the Smc1-Smc3 ATPase heads to drive chromatin entrapment (Ciosk et al., 2000; Hinshaw et al., 2017; Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "b5fee408-0cdd-426b-9591-e7d5e4725fdb",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C17",
+      "claim": "The Scc2-Scc4 complex promotes DNA-stimulated ATP hydrolysis by the Smc1-Smc3 ATPase heads to drive chromatin entrapment.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromosomal addresses of cohesin loading are determined by the Scc2-Scc4 complex, which is enriched at centromeres via direct contacts with kinetochore proteins and promotes DNA-stimulated ATP hydrolysis by the Smc1-Smc3 ATPase heads to drive chromatin entrapment (Ciosk et al., 2000; Hinshaw et al., 2017; Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "9e96f7b6-7cb0-4ba4-b79e-6f12794c1b00",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C18",
+      "claim": "Dynamic release of DNA from the cohesin ring is achieved by the proteolytic cleavage of the Scc1 kleisin subunit by separase protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, dynamic release of DNA from the ring is achieved either by the proteolytic cleavage of the Scc1 kleisin subunit by separase protease (Uhlmann et al., 2000), or by the opening of an 'exit gate' formed at the Scc1 and Smc3 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4680ab0f-5e36-4446-aca2-6546806be445",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C19",
+      "claim": "Dynamic release of DNA from the cohesin ring is achieved by the opening of an 'exit gate' formed at the Scc1 and Smc3 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, dynamic release of DNA from the ring is achieved either by the proteolytic cleavage of the Scc1 kleisin subunit by separase protease (Uhlmann et al., 2000), or by the opening of an 'exit gate' formed at the Scc1 and Smc3 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "84f41ca1-481b-4a68-bb8d-ad2fd6da7caa",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C20",
+      "claim": "Release of the exit gate is inhibited by Smc3 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the latter is inhibited by Smc3 acetylation and is controlled by the accessory factors Scc3, Wapl and Pds5 (Beckou\u00ebt et al., 2016; Rolef Ben-Shahar et al., 2008; Rowland et al., 2009; Unal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "c2f2e231-8f43-4ffd-bf4b-4b45f79d65e6",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C21",
+      "claim": "Release of the exit gate is controlled by the accessory factors Scc3, Wapl and Pds5.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the latter is inhibited by Smc3 acetylation and is controlled by the accessory factors Scc3, Wapl and Pds5 (Beckou\u00ebt et al., 2016; Rolef Ben-Shahar et al., 2008; Rowland et al., 2009; Unal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "89d4e886-1fcf-438c-bff8-8f299cc07b38",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C22",
+      "claim": "Cohesin can associate dynamically with chromatin through alternating cycles of DNA entrapment and release until ring opening is inhibited by acetylation of the Smc3 ATPase head.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin can associate dynamically with chromatin through alternating cycles of DNA entrapment and release until ring opening is inhibited by acetylation of the Smc3 ATPase head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "c2af99a5-32c2-47a7-9dfd-d94138de0d47",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C23",
+      "claim": "DNA is thought to remain topologically entrapped within the SMC-kleisin ring after ring opening is inhibited by Smc3 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point, DNA is thought to remain topologically entrapped within the SMC-kleisin ring (Gligoris et al., 2014; Beckou\u00ebt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7b3de6e0-6c99-44c7-a16e-1ebdd607cf32",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C24",
+      "claim": "A prevailing model of genome organisation posits that chromatin loops entrapped within the lumen of the SMC ring are processively enlarged by extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevailing model of genome organisation posits that chromatin loops entrapped within the lumen of the SMC ring are then processively enlarged by extrusion, which presumably forms the basis for higher-order chromatin structure (Alipour and Marko, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "d5b6c0f6-38c3-4838-997f-515a646690ea",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C25",
+      "claim": "The essential role of cohesin in modulating genome architecture is increasingly well established.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the essential role of cohesin in modulating genome architecture, gene expression and DNA damage repair is increasingly well established, comparatively little information is available concerning the molecular determinants of its association with chromatin (Busslinger et al., 2017; Haarhuis et al., 2017; Schwarzer et al., 2017; Wu and Yu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "0002f730-1fb4-4c37-aefb-35ea8ebc1872",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C26",
+      "claim": "The essential role of cohesin in gene expression is increasingly well established.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the essential role of cohesin in modulating genome architecture, gene expression and DNA damage repair is increasingly well established, comparatively little information is available concerning the molecular determinants of its association with chromatin (Busslinger et al., 2017; Haarhuis et al., 2017; Schwarzer et al., 2017; Wu and Yu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4da28609-1cfc-47f3-bf05-b97463064f4b",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C27",
+      "claim": "Comparatively little information is available concerning the molecular determinants of cohesin's association with chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the essential role of cohesin in modulating genome architecture, gene expression and DNA damage repair is increasingly well established, comparatively little information is available concerning the molecular determinants of its association with chromatin (Busslinger et al., 2017; Haarhuis et al., 2017; Schwarzer et al., 2017; Wu and Yu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f18a5e65-d7b7-439d-91a1-d6ba554711e3",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C28",
+      "claim": "Recent work identified a direct DNA-binding site in the paralogous condensin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work identified a direct DNA-binding site in the paralogous condensin complex, in which the HEAT repeat subunit Ycg1, in complex with the kleisin subunit Brn1, contacts the DNA double helix backbone and stabilizes its association through DNA entrapment within the Brn1 peptide loop (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "ff76542c-490b-40a8-b139-38f8a06187ac",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C29",
+      "claim": "In condensin, the HEAT repeat subunit Ycg1, in complex with the kleisin subunit Brn1, contacts the DNA double helix backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work identified a direct DNA-binding site in the paralogous condensin complex, in which the HEAT repeat subunit Ycg1, in complex with the kleisin subunit Brn1, contacts the DNA double helix backbone and stabilizes its association through DNA entrapment within the Brn1 peptide loop (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "2e6cb616-7e7a-4b87-9db9-625eddaa82df",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C30",
+      "claim": "In condensin, DNA association is stabilized through DNA entrapment within the Brn1 peptide loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work identified a direct DNA-binding site in the paralogous condensin complex, in which the HEAT repeat subunit Ycg1, in complex with the kleisin subunit Brn1, contacts the DNA double helix backbone and stabilizes its association through DNA entrapment within the Brn1 peptide loop (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "c1144849-351d-49c6-b258-79fb095c9c6c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C31",
+      "claim": "The essential HEAT-repeat subunit Scc3, when in complex with Scc1, binds double-stranded DNA (dsDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the essential HEAT-repeat subunit Scc3, when in complex with Scc1, binds double-stranded DNA (dsDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by EMSA experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "64c966d3-d02c-48b4-a598-abcb51331d5e",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C32",
+      "claim": "DNA binding by the Scc3-Scc1 complex is mediated by a composite surface comprising positively charged amino acid residues from Scc3 and Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "We further determined the crystal structure of the yeast Scc3-Scc1 complex bound to DNA, which revealed that DNA binding is mediated by a composite surface comprising positively charged amino acid residues from Scc3 and Scc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure and electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "dde1fcd4-cb49-439f-a966-7179923ea95b",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C36",
+      "claim": "Direct DNA substrate engagement through the DNA-binding interface of the Scc3-Scc1 subcomplex is a key element for the cohesin cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, direct DNA substrate engagement through the newly discovered DNA-binding interface of the Scc3-Scc1 subcomplex is a key element for the cohesin cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of structural, biochemical, and cell biological experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "90bacb18-babd-4f68-b98a-b6c522e7d05d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C37",
+      "claim": "The Smc3hd-NScc1 module binds DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies (Murayama and Uhlmann, 2014), we found that the Scc3T-Scc1K subcomplex and the Smc1-Smc3 hinge heterodimer bound DNA, as seen by the appearance of slower-migrating species in electrophoretic mobility shift assays (EMSAs), as did the Smc3hd-NScc1 module, which has previously been implicated as a DNA sensor in cohesin (Murayama and Uhlmann, 2014) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA experiments shown in Figure 1C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "65060966-42f2-4cd2-bcd7-c1756fda0b7f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C38",
+      "claim": "The Smc1-Smc3 hinge heterodimer binds DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies (Murayama and Uhlmann, 2014), we found that the Scc3T-Scc1K subcomplex and the Smc1-Smc3 hinge heterodimer bound DNA, as seen by the appearance of slower-migrating species in electrophoretic mobility shift assays (EMSAs), as did the Smc3hd-NScc1 module, which has previously been implicated as a DNA sensor in cohesin (Murayama and Uhlmann, 2014) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA experiments shown in Figure 1C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "087bfed9-e2eb-4c11-b7fa-05dfddd9732f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C39",
+      "claim": "The Scc3T-Scc1K subcomplex binds DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies (Murayama and Uhlmann, 2014), we found that the Scc3T-Scc1K subcomplex and the Smc1-Smc3 hinge heterodimer bound DNA, as seen by the appearance of slower-migrating species in electrophoretic mobility shift assays (EMSAs), as did the Smc3hd-NScc1 module, which has previously been implicated as a DNA sensor in cohesin (Murayama and Uhlmann, 2014) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA experiments shown in Figure 1C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "d29849f2-d5d6-4a06-869d-c2b4ca881378",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C40",
+      "claim": "Longer DNA fragments (>21 base pairs) bind more efficiently to cohesin subcomplexes than shorter DNA duplexes (15 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for non-sequence specific DNA-binding factors, longer DNA fragments (>21 base pairs (bp)) bound more efficiently than shorter DNA duplexes (15 bp) (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EMSA experiments shown in Figure 1C and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7145b6da-fbde-4136-ad57-69be31ddca1f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C41",
+      "claim": "The ability of the Scc3T-Scc1K subcomplex to bind DNA depends on the presence of Scc1K.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of the Scc3T-Scc1K subcomplex to bind DNA depended on the presence of Scc1K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA experiments comparing Scc3T alone versus Scc3T-Scc1K complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "40007b8e-8dc9-44bf-a09f-a61d71aec11c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C42",
+      "claim": "The Pds5-Scc1 subcomplex does not interact with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the other HEAT-repeat-kleisin subcomplex of cohesin, Pds5-Scc1, the Smc1hd-CScc1 subcomplex and the Wapl subunit did not interact with DNA in this assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4cdcafba-d90c-4c96-90ff-c5aefe92a2ca",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C43",
+      "claim": "The Smc1hd-CScc1 subcomplex does not interact with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the other HEAT-repeat-kleisin subcomplex of cohesin, Pds5-Scc1, the Smc1hd-CScc1 subcomplex and the Wapl subunit did not interact with DNA in this assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "ba597f79-1aa1-4cb9-912b-b7c668009e35",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C44",
+      "claim": "The Wapl subunit does not interact with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the other HEAT-repeat-kleisin subcomplex of cohesin, Pds5-Scc1, the Smc1hd-CScc1 subcomplex and the Wapl subunit did not interact with DNA in this assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EMSA experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e78329d6-a59c-4417-9616-2db59a580c40",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C45",
+      "claim": "As in the paralogous condensin complex, the HEAT-repeat protein bound to the C-terminal region of the kleisin subunit directly engages DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as in the paralogous condensin complex, the HEAT-repeat protein bound to the C-terminal region of the kleisin subunit directly engages DNA (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of cohesin and condensin DNA-binding properties, supported by cited reference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "30131d85-13b0-43fc-b755-dee134b6a84c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C46",
+      "claim": "Optimized crystals of the Scc3T-Scc1K complex bound to 19 bp dsDNA diffracted anisotropically to a minimum Bragg spacing of 3.6 \u00c5 in the best direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimized crystals diffracted anisotropically to a minimum Bragg spacing of 3.6 \u00c5 in the best, and ~5.7 \u00c5 in the worst direction (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from X-ray crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f71aaf9c-2dac-492b-9f5a-52fb307909f9",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C47",
+      "claim": "Optimized crystals of the Scc3T-Scc1K complex bound to 19 bp dsDNA diffracted anisotropically to ~5.7 \u00c5 in the worst direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimized crystals diffracted anisotropically to a minimum Bragg spacing of 3.6 \u00c5 in the best, and ~5.7 \u00c5 in the worst direction (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from X-ray crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "99a054b2-fe27-4238-bc2e-cf6d7b0f870c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C48",
+      "claim": "The structure of the Scc3T-Scc1K-DNA complex was determined by molecular replacement using structures of Scc3 orthologs as search models.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the structure by molecular replacement, using the structures of an Scc3 ortholog from Zygosaccharomyces rouxii and a C-terminal fragment of Saccharomyces cerevisiae Scc3 as search models (Roig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used for structure determination, supported by cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a2bf4376-e060-456b-9fac-4b4822b6ec36",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C49",
+      "claim": "The refined model of the Scc3T-Scc1K-DNA complex encompasses amino acid residues 134 to 1064 of Scc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these drawbacks, we successfully traced the structure using a selenomethionine derivative and refined a model encompassing amino acid residues 134 to 1064 of Scc3 in complex with residues 309 to 400 of Scc1, bound to a 19 bp DNA molecule (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8995c719-15c8-4c68-a1d0-2e86a115c795",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C50",
+      "claim": "The refined model of the Scc3T-Scc1K-DNA complex encompasses residues 309 to 400 of Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these drawbacks, we successfully traced the structure using a selenomethionine derivative and refined a model encompassing amino acid residues 134 to 1064 of Scc3 in complex with residues 309 to 400 of Scc1, bound to a 19 bp DNA molecule (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "c2baa030-4475-44af-b921-7d9696a48dc6",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C51",
+      "claim": "The refined model of the Scc3T-Scc1K-DNA complex includes a 19 bp DNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these drawbacks, we successfully traced the structure using a selenomethionine derivative and refined a model encompassing amino acid residues 134 to 1064 of Scc3 in complex with residues 309 to 400 of Scc1, bound to a 19 bp DNA molecule (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "77da7064-55ef-4451-ad48-b92850f65027",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C52",
+      "claim": "Scc3 is hook-shaped in the C-terminal section.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in other structures of Scc3, the protein is hook-shaped in the C-terminal section and contains an N-terminal 'nose' formed by a pair of extended antiparallel \u03b1-helices (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e3db7f04-04c8-41ac-9b78-b2ca11d92866",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C53",
+      "claim": "Scc3 contains an N-terminal 'nose' formed by a pair of extended antiparallel \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in other structures of Scc3, the protein is hook-shaped in the C-terminal section and contains an N-terminal 'nose' formed by a pair of extended antiparallel \u03b1-helices (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "bca4acfa-de71-41ae-a088-28cbbc8bfef0",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C54",
+      "claim": "Yeast Scc1 binds along the convex surface of the hook-shaped HEAT-repeat subunit Scc3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to the interaction of human Scc1 with Scc3, the yeast Scc1 in our structure binds along the convex surface of the hook-shaped HEAT-repeat subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a410ff0a-9c2d-4e17-ae3e-2c8035959f70",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C55",
+      "claim": "dsDNA is located within the cradle of the hook-shaped Scc3 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected additional electron density corresponding to dsDNA within the cradle of this hook (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the electron density maps shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "aac63f06-583a-4c00-acc6-2eff9b469fb3",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C56",
+      "claim": "DNA duplexes aligned to form pseudocontinuous double helices throughout the crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the DNA duplexes aligned to form pseudocontinuous double helices throughout the crystal, the DNA duplex was slightly too short for tight end-to-end stacking (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "746c20d9-228c-4eb2-aca2-d4f216cbd600",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C57",
+      "claim": "The DNA duplex was slightly too short for tight end-to-end stacking in the crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the DNA duplexes aligned to form pseudocontinuous double helices throughout the crystal, the DNA duplex was slightly too short for tight end-to-end stacking (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "01f925a7-4ef2-4c45-85ac-0dd9643bc531",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C58",
+      "claim": "The DNA density was only partially resolved due to rotational and translational disorder of the DNA in the binding cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the DNA density was only partially resolved, apparently due to rotational and translational disorder of the DNA in the binding cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the quality of the electron density maps.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6f44e6b6-d778-4f3c-a130-69cfb58de1d5",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C59",
+      "claim": "DNA is nested within an extended cradle spanning the majority of Scc3-Scc1, lined by a set of positively charged residues that directly contact the DNA phosphate backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that DNA is nested within an extended cradle spanning the majority of Scc3-Scc1, lined by a set of positively charged residues that directly contact the DNA phosphate backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the electrostatic surface potential mapping and crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "b0c42ae0-5dbc-48d8-a82d-a2456715ee11",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C60",
+      "claim": "The DNA is aligned almost parallel to the N-terminal 'nose' of Scc3.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA is aligned almost parallel to the N-terminal 'nose' of Scc3, which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e5f90875-1223-4cb5-8c0f-c5708dbd55b6",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C61",
+      "claim": "The N-terminal 'nose' of Scc3 interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA is aligned almost parallel to the N-terminal 'nose' of Scc3, which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4c9f8606-1272-4626-83c0-2cbc87d7fe8d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C62",
+      "claim": "No direct nucleotide base\u2013amino acid interactions were observed in the Scc3-Scc1-DNA structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no direct nucleotide base\u2013amino acid interactions, which explains the apparent lack of DNA sequence specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4e4549e7-1b9b-43b6-8925-a3af42dd1a31",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C63",
+      "claim": "The lack of direct nucleotide base\u2013amino acid interactions explains the apparent lack of DNA sequence specificity of Scc3-Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no direct nucleotide base\u2013amino acid interactions, which explains the apparent lack of DNA sequence specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "3ccb544f-da7a-4e8b-8e1c-56b3e1d65844",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C64",
+      "claim": "An anomalous difference map peak for M373 in the selenomethionine-derivative data was used to ascertain the amino-acid register of Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "To ascertain the amino-acid register of Scc1, we used an anomalous difference map peak for M373 in the selenomethionine-derivative data (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a method used in structure determination, shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f5cf8f21-c3d5-4ca6-8f41-4a751b2f0744",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C65",
+      "claim": "The deduced register places Scc1 residue K363 in close proximity to the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The deduced register places Scc1 residue K363 in close proximity to the DNA (Figure 2A, Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 2A and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "174b2c4d-9211-4b4b-b732-7a4c3910997e",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C66",
+      "claim": "Direct interactions between Scc1 and the DNA phosphate backbone potentially explain why the Scc3T-Scc1K subcomplex has greater DNA binding affinity than isolated Scc3T.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interactions between Scc1 and the DNA phosphate backbone potentially explain why the Scc3T-Scc1K subcomplex has greater DNA binding affinity than does isolated Scc3T (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural observations and EMSA data shown in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "255b83b2-a060-408d-901b-ab81e0f34b79",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C67",
+      "claim": "Amino acid residues in the DNA binding groove of Scc3 are generally well conserved among yeast Scc3 orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping of sequence conservation onto the structure revealed that amino acid residues in the DNA binding groove are generally well conserved among yeast Scc3 orthologs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence conservation analysis displayed in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "502a535d-1b51-474a-82e8-f8e210ca40e7",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C68",
+      "claim": "Amino acid residues located proximal to the DNA phosphate backbone in Scc3 show strong conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, amino acid residues that are located proximal to the DNA phosphate backbone showed strong conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by sequence conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "acdce30b-d8c2-4227-a6a2-28c707f274d7",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C69",
+      "claim": "The wild-type Scc3T-Scc1K complex binds a 32-bp 6-FAM labelled DNA substrate with an equilibrium dissociation constant of 2.2 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the wild-type Scc3T-Scc1K complex bound this substrate with an equilibrium dissociation constant of 2.2 \u03bcM, charge-inversion mutations in patches 1 and 3, located at the crest of and within the Scc3 cradle, had only modest effects on affinity (equilibrium dissociation constants of 9.5 \u03bcM and 7.3 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6e926697-8919-4159-8555-94a0b40e00e8",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C70",
+      "claim": "Charge-inversion mutations in patch 1 of Scc3 result in an equilibrium dissociation constant of 9.5 \u03bcM for DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the wild-type Scc3T-Scc1K complex bound this substrate with an equilibrium dissociation constant of 2.2 \u03bcM, charge-inversion mutations in patches 1 and 3, located at the crest of and within the Scc3 cradle, had only modest effects on affinity (equilibrium dissociation constants of 9.5 \u03bcM and 7.3 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a159449e-4ff5-47bb-a30e-90335ba824a9",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C71",
+      "claim": "Charge-inversion mutations in patch 3 of Scc3 result in an equilibrium dissociation constant of 7.3 \u03bcM for DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the wild-type Scc3T-Scc1K complex bound this substrate with an equilibrium dissociation constant of 2.2 \u03bcM, charge-inversion mutations in patches 1 and 3, located at the crest of and within the Scc3 cradle, had only modest effects on affinity (equilibrium dissociation constants of 9.5 \u03bcM and 7.3 \u03bcM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "136d32d8-eb51-4cd6-81ed-f3af84c883ab",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C72",
+      "claim": "Patch 2 mutants of Scc3 exhibit essentially unaltered DNA binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch 2 mutants, residing in the Scc3 'nose', exhibited essentially unaltered DNA binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "0b980e49-f121-49d4-ab40-88987e5ed208",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C73",
+      "claim": "The simultaneous mutation of all three patches in Scc3 (heptamutant) reduces the binding affinity to 29.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the simultaneous mutation of all three patches (a heptamutant) reduced the binding affinity of the patch 1 or 3 mutants even further (to 29.3 \u03bcM, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by fluorescence polarization experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a8cc7a05-0697-4baf-b0ed-858cee5028d9",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C74",
+      "claim": "The defect in DNA binding by Scc3 mutants was not due to any impact of the mutations on the structural integrity of Scc3-Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "The defect in binding DNA was not due to any impact of the mutations on the structural integrity of Scc3-Scc1, as all mutant complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography (Figure 3\u2014figure supplement 1A) and efficiently formed a complex with Scc1 in vitro (Figure 3\u2014figure supplement 1B) or in vivo (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by size-exclusion chromatography shown in Figure 3\u2014figure supplement 1A and SDS-PAGE shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "45b750a5-fc63-47f7-b087-63a590631aec",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C75",
+      "claim": "All mutant Scc3-Scc1 complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The defect in binding DNA was not due to any impact of the mutations on the structural integrity of Scc3-Scc1, as all mutant complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography (Figure 3\u2014figure supplement 1A) and efficiently formed a complex with Scc1 in vitro (Figure 3\u2014figure supplement 1B) or in vivo (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by size-exclusion chromatography in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7ce4992b-a909-4564-8942-4f1434d0030a",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C76",
+      "claim": "All mutant Scc3 variants efficiently formed a complex with Scc1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The defect in binding DNA was not due to any impact of the mutations on the structural integrity of Scc3-Scc1, as all mutant complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography (Figure 3\u2014figure supplement 1A) and efficiently formed a complex with Scc1 in vitro (Figure 3\u2014figure supplement 1B) or in vivo (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by SDS-PAGE in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "927b4dad-2a37-43e1-8c1a-3b5e66106581",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C77",
+      "claim": "The positively charged Scc3 cradle comprises the major DNA-binding surface of Scc3.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the positively charged Scc3 cradle comprises the major DNA-binding surface of Scc3 and that the positively charged amino acid residues located in patch 1 and 3 constitute a composite DNA binding surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis and DNA binding experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "c70dcdba-9e50-4ae2-9821-2a4dae0dbd6c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C78",
+      "claim": "The positively charged amino acid residues located in patch 1 and 3 of Scc3 constitute a composite DNA binding surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the positively charged Scc3 cradle comprises the major DNA-binding surface of Scc3 and that the positively charged amino acid residues located in patch 1 and 3 constitute a composite DNA binding surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis and DNA binding experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "72bfb985-9056-490b-802b-c14f6b9baedc",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C79",
+      "claim": "The K363E/R364E double mutation in Scc1K shows an essentially indistinguishable equilibrium dissociation constant compared to the wild-type complex.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the direct interactions between Scc1 and the DNA phosphate backbone contribute to DNA binding we introduced the double mutation K363E/R364E into Scc1K. This mutant showed an essentially indistinguishable equilibrium dissociation constant as compared to that of the wild-type complex, thus indicating that this positively charged patch of Scc1 does not contribute to DNA binding (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured by fluorescence polarization experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "cdef6340-33a6-485c-b77d-5e4bd8bd0aa1",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C80",
+      "claim": "The positively charged patch K363/R364 of Scc1 does not contribute to DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the direct interactions between Scc1 and the DNA phosphate backbone contribute to DNA binding we introduced the double mutation K363E/R364E into Scc1K. This mutant showed an essentially indistinguishable equilibrium dissociation constant as compared to that of the wild-type complex, thus indicating that this positively charged patch of Scc1 does not contribute to DNA binding (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the fluorescence polarization experiments shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f7ed5f48-9bd6-4944-a073-0d9732bb9fe3",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C81",
+      "claim": "All three individual patch mutants of Scc3 can support cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas all three individual patch mutants could support cell proliferation, cells expressing the heptamutant mutant version as their only source of Scc3 failed to divide, despite expressing the mutant Scc3 protein at wild-type levels (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by tetrad dissection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "35ade8f9-dbaf-4525-9221-f59fa1e31aca",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C82",
+      "claim": "Cells expressing the heptamutant version of Scc3 as their only source of Scc3 fail to divide.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas all three individual patch mutants could support cell proliferation, cells expressing the heptamutant mutant version as their only source of Scc3 failed to divide, despite expressing the mutant Scc3 protein at wild-type levels (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by tetrad dissection experiments in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4651a0bd-c9ef-421e-a2b3-27bdc1704c75",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C83",
+      "claim": "The heptamutant Scc3 protein is expressed at wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas all three individual patch mutants could support cell proliferation, cells expressing the heptamutant mutant version as their only source of Scc3 failed to divide, despite expressing the mutant Scc3 protein at wild-type levels (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blotting in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7e9e3272-7f60-4bcc-b2bc-86565ea4bc6d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C84",
+      "claim": "The amounts of chromosomal DNA that co-immunoprecipitated with the Scc3 patch 3 mutant were on average 40% lower than those that co-immunoprecipitated with wild-type Scc3.",
+      "claim_type": "EXPLICIT",
+      "source": "The amounts of chromosomal DNA that co-immunoprecipitated with the Scc3 patch 3 mutant were on average 40% lower than those that co-immunoprecipitated with wild-type Scc3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured by ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "38af94b7-b045-44ae-a607-5bc88b650442",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C85",
+      "claim": "The Scc3 heptamutant fails to bind chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc3 heptamutant failed to bind chromatin entirely (Figure 3E), although it was incorporated normally into cohesin complexes (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP-qPCR experiments in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7f4cfb4a-f04f-4e62-87c6-de81f701c7da",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C86",
+      "claim": "The Scc3 heptamutant is incorporated normally into cohesin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc3 heptamutant failed to bind chromatin entirely (Figure 3E), although it was incorporated normally into cohesin complexes (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation experiments in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "13339f48-a14d-47e4-944b-bf63c1da1e54",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C87",
+      "claim": "DNA binding by Scc3-Scc1 is essential for the stable association of cohesin complexes with chromosomes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that DNA binding by Scc3-Scc1 is essential for the stable association of cohesin complexes with chromosomes in vivo and hence an important determinant of cohesin function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of ChIP-qPCR and viability assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7668d6a7-bdfb-4fc2-9ef0-21143a7363a3",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C88",
+      "claim": "DNA binding by Scc3-Scc1 is an important determinant of cohesin function.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that DNA binding by Scc3-Scc1 is essential for the stable association of cohesin complexes with chromosomes in vivo and hence an important determinant of cohesin function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of ChIP-qPCR and viability assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "85d04f03-8b86-4077-a9ae-06739fa9fbdd",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C89",
+      "claim": "Targeting of cohesin to the genome is essential for sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of cohesin to the genome is essential for numerous aspects of chromosome biology, including sister chromatid cohesion, DNA damage repair, and transcriptional regulation (Uhlmann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4d524ba7-0b4c-4b56-835f-24190d987bb4",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C90",
+      "claim": "Targeting of cohesin to the genome is essential for DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of cohesin to the genome is essential for numerous aspects of chromosome biology, including sister chromatid cohesion, DNA damage repair, and transcriptional regulation (Uhlmann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "3f764dd0-9816-4160-b095-13a0bb7526bf",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C91",
+      "claim": "Targeting of cohesin to the genome is essential for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of cohesin to the genome is essential for numerous aspects of chromosome biology, including sister chromatid cohesion, DNA damage repair, and transcriptional regulation (Uhlmann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "1fa33c3e-0be6-4643-8236-e5d7ca042d04",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C92",
+      "claim": "The findings provide evidence for a site of direct DNA contact in cohesin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a direct DNA-binding site in the Scc3 subunit of the cohesin complex and determined its interaction with DNA at near-atomic resolution. These findings provide evidence for a site of direct DNA contact in cohesin complexes, which presumably contributes to the initial step of chromosome entrapment and/or DNA translocation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "67c88e3b-f35f-4c7c-8f78-01e7b0485d1d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C93",
+      "claim": "The Scc3-Scc1 DNA-binding site presumably contributes to the initial step of chromosome entrapment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a direct DNA-binding site in the Scc3 subunit of the cohesin complex and determined its interaction with DNA at near-atomic resolution. These findings provide evidence for a site of direct DNA contact in cohesin complexes, which presumably contributes to the initial step of chromosome entrapment and/or DNA translocation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7c4eb99a-7cff-457f-a7c9-16397d7b9c8f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C94",
+      "claim": "The Scc3-Scc1 DNA-binding site presumably contributes to DNA translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a direct DNA-binding site in the Scc3 subunit of the cohesin complex and determined its interaction with DNA at near-atomic resolution. These findings provide evidence for a site of direct DNA contact in cohesin complexes, which presumably contributes to the initial step of chromosome entrapment and/or DNA translocation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "78964460-115c-4560-9914-b567f8902f0f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C95",
+      "claim": "Cohesin interacts directly with DNA through a complex formed by the HEAT-repeat subunit Scc3 and the kleisin subunit Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that cohesin interacts directly with DNA through a complex formed by the HEAT-repeat subunit Scc3 and the kleisin subunit Scc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "f27bdce5-92f0-45ed-82eb-25cd85bd28c1",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C96",
+      "claim": "DNA binding by the Scc3-Scc1 complex depends on conserved positively charged residues of a composite Scc3-Scc1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We have determined the DNA-bound structure of Scc3 in complex with a minimal fragment of Scc1 and demonstrated that DNA binding depends on conserved positively charged residues of a composite Scc3-Scc1 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by mutagenesis and DNA binding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8861ff6e-0c37-4ed4-9bcf-b23e7af8378f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C97",
+      "claim": "DNA-binding deficient Scc3 variants fail to support cohesin recruitment to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used this structure to derive DNA-binding deficient Scc3 variants, which fail to support cohesin recruitment to chromatin and consequently cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "1f17f148-2df2-4495-a885-cb71a5e7cc6d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C98",
+      "claim": "DNA-binding deficient Scc3 variants fail to support cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used this structure to derive DNA-binding deficient Scc3 variants, which fail to support cohesin recruitment to chromatin and consequently cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by tetrad dissection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4f89c4fe-841e-4678-8e03-3c88ebd04d39",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C99",
+      "claim": "The Scc3-Scc1 subcomplex provides a scaffold for the assembly of cohesin regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing a scaffold for the assembly of cohesin regulators (Hara et al., 2014; Murayama and Uhlmann, 2014; Roig et al., 2014) and thereby participating in the maintenance of cohesion, the Scc3-Scc1 subcomplex also plays a key role in DNA substrate recognition and hence the efficient association of the cohesin holocomplex with chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a5089a96-12de-4cab-ad2e-4bc605101a38",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C100",
+      "claim": "The Scc3-Scc1 subcomplex participates in the maintenance of cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing a scaffold for the assembly of cohesin regulators (Hara et al., 2014; Murayama and Uhlmann, 2014; Roig et al., 2014) and thereby participating in the maintenance of cohesion, the Scc3-Scc1 subcomplex also plays a key role in DNA substrate recognition and hence the efficient association of the cohesin holocomplex with chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "0a274883-ba59-477b-bf35-e97e8bdafab3",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C101",
+      "claim": "The Scc3-Scc1 subcomplex plays a key role in DNA substrate recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing a scaffold for the assembly of cohesin regulators (Hara et al., 2014; Murayama and Uhlmann, 2014; Roig et al., 2014) and thereby participating in the maintenance of cohesion, the Scc3-Scc1 subcomplex also plays a key role in DNA substrate recognition and hence the efficient association of the cohesin holocomplex with chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "73ad4bb3-c7b5-4cfc-ad47-0f812c6d26ab",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C102",
+      "claim": "The Scc3-Scc1 subcomplex plays a key role in the efficient association of the cohesin holocomplex with chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing a scaffold for the assembly of cohesin regulators (Hara et al., 2014; Murayama and Uhlmann, 2014; Roig et al., 2014) and thereby participating in the maintenance of cohesion, the Scc3-Scc1 subcomplex also plays a key role in DNA substrate recognition and hence the efficient association of the cohesin holocomplex with chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8047aa45-68ff-48ca-83b9-a00df8c7c971",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C103",
+      "claim": "The cohesin ring has been proposed to topologically embrace chromosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring has been proposed to topologically embrace chromosomal DNA, which requires that DNA is loaded into and also released from the ring complex during cohesin's reaction cycle (Nasmyth, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7b7e1c71-794f-419b-a70c-7b8eabd1de12",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C104",
+      "claim": "Topological embrace of chromosomal DNA by cohesin requires that DNA is loaded into and released from the ring complex during cohesin's reaction cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring has been proposed to topologically embrace chromosomal DNA, which requires that DNA is loaded into and also released from the ring complex during cohesin's reaction cycle (Nasmyth, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the topological embrace model, supported by cited reference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "66158935-c70f-4b7c-8cbc-dc8658723add",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C105",
+      "claim": "Mutations in Scc3 that prevent DNA engagement by the Scc3-Scc1 subcomplex in vitro fail to stably bind to chromatin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "As mutations in Scc3 that prevent DNA engagement by the Scc3-Scc1 subcomplex in vitro fail to stably bind to chromatin in vivo, it is likely that direct DNA-cohesin interactions contribute to such DNA entry and exit reactions (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the combined results of in vitro DNA binding and ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "8f9dac12-0180-4fa5-81a0-efcaf4f06242",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C106",
+      "claim": "Direct DNA-cohesin interactions likely contribute to DNA entry and exit reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As mutations in Scc3 that prevent DNA engagement by the Scc3-Scc1 subcomplex in vitro fail to stably bind to chromatin in vivo, it is likely that direct DNA-cohesin interactions contribute to such DNA entry and exit reactions (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "373940ed-9ddc-41fc-969a-7fa0959e54ef",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C107",
+      "claim": "The Scc3-Scc1 subcomplex provides a dynamic DNA anchoring point that is required for the efficient loading and/or maintenance of cohesin on chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the Scc3-Scc1 subcomplex provides a dynamic DNA anchoring point that is required for the efficient loading and/or maintenance of cohesin on chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "1360c582-70a5-4a17-b7cf-3a96702a7a2d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C108",
+      "claim": "Scc3 contributes to cohesin loading.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model for Scc3 is supported by previous data, which indicate that Scc3 contributes to cohesin loading (Hu et al., 2011; Murayama and Uhlmann, 2014; Orgil et al., 2015; Roig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "2ac354ea-d7ed-40d5-b2d3-107ea73bca9d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C109",
+      "claim": "Scc1 deletion mutants that lack the sequence responsible for binding Scc3 fail to load onto yeast chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this model, Scc1 deletion mutants that lack the sequence responsible for binding Scc3 fail to load onto yeast chromosomes (Hu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "ff614f0c-967f-4fdb-91e0-2508eb512c55",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C110",
+      "claim": "Scc3 enhances topological DNA entrapment by cohesin in in vitro loading assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Scc3 enhances topological DNA entrapment by cohesin in in vitro loading assays (Murayama and Uhlmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "2024e3cb-c1ad-448c-af96-710932b2a652",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C111",
+      "claim": "DNA binding by the Scc3-Scc1 subcomplex might be the first step in moving chromosomal DNA into the cohesin ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DNA binding by the Scc3-Scc1 subcomplex might be the first step in moving chromosomal DNA into the cohesin ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "fe330e9b-bdf8-445b-819f-a6ca3d8ed331",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C112",
+      "claim": "The DNA entrapment reaction is presumably catalysed by the Scc2-Scc4 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent entrapment reaction is then presumably catalysed by the Scc2-Scc4 complex (Davidson et al., 2016; Murayama and Uhlmann, 2014; Stigler et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "96d3ec67-7585-4622-a8c0-3356ee5a8a55",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C113",
+      "claim": "Surface patch 3 mutations in Scc3 partially ablate DNA binding by the Scc3-Scc1 subcomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface patch 3 mutations in Scc3, which partially ablate DNA binding by the Scc3-Scc1 subcomplex and reduce cohesin levels on chromatin, do not exhibit any obvious growth defects and are therefore presumably competent to establish sister chromatid cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by fluorescence polarization and ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "a5bec8b0-9546-4a12-9c55-987f2f6b9cd5",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C114",
+      "claim": "Surface patch 3 mutations in Scc3 reduce cohesin levels on chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface patch 3 mutations in Scc3, which partially ablate DNA binding by the Scc3-Scc1 subcomplex and reduce cohesin levels on chromatin, do not exhibit any obvious growth defects and are therefore presumably competent to establish sister chromatid cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by ChIP-qPCR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "32ed458a-edf1-43ac-8fd6-c8e8c5c67380",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C115",
+      "claim": "Surface patch 3 mutations in Scc3 do not exhibit any obvious growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface patch 3 mutations in Scc3, which partially ablate DNA binding by the Scc3-Scc1 subcomplex and reduce cohesin levels on chromatin, do not exhibit any obvious growth defects and are therefore presumably competent to establish sister chromatid cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by tetrad dissection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "32702aa5-3e32-46fa-a35c-7408f61de109",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C116",
+      "claim": "Surface patch 3 mutations in Scc3 are presumably competent to establish sister chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface patch 3 mutations in Scc3, which partially ablate DNA binding by the Scc3-Scc1 subcomplex and reduce cohesin levels on chromatin, do not exhibit any obvious growth defects and are therefore presumably competent to establish sister chromatid cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of growth defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "3ec2e19b-8d5d-43aa-8b07-6c4c500f10b9",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C117",
+      "claim": "Partial depletion of cohesin does not seem to impact sister-chromatid cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, partial depletion of cohesin does not seem to impact some of its core functions, including sister-chromatid cohesion and chromosome segregation (Elbatsh et al., 2016; Heidinger-Pauli et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "247af3d4-49a6-4172-ad67-359f5fced807",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C118",
+      "claim": "Partial depletion of cohesin does not seem to impact chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, partial depletion of cohesin does not seem to impact some of its core functions, including sister-chromatid cohesion and chromosome segregation (Elbatsh et al., 2016; Heidinger-Pauli et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "334ea087-59b6-4dc8-a0e7-977384f7ada2",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C119",
+      "claim": "Mutations that only slightly impair DNA binding of the HEAT-repeat/kleisin module of the condensin complex are sufficient to abolish stable chromatin association.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, even mutations that only slightly impair DNA binding of the equivalent HEAT-repeat/kleisin module of the condensin complex are sufficient to abolish stable chromatin association and to interfere with cell division (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6d6ca994-c8e1-4dd1-b721-b3f6a2867aff",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C120",
+      "claim": "Mutations that only slightly impair DNA binding of the HEAT-repeat/kleisin module of the condensin complex interfere with cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, even mutations that only slightly impair DNA binding of the equivalent HEAT-repeat/kleisin module of the condensin complex are sufficient to abolish stable chromatin association and to interfere with cell division (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "dd155bc3-f95b-4012-8ac5-b8363d6bd0b5",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C121",
+      "claim": "Discrepancies between cohesin and condensin DNA binding requirements might be due to alternate loading and/or maintenance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Such discrepancies might be due to alternate loading and/or maintenance mechanisms of cohesin and condensin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the comparison of cohesin and condensin.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "cc26bcbe-9e9a-4f68-ab5b-3baee5352773",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C122",
+      "claim": "Cohesin is loaded by the Scc2-Scc4 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst cohesin is loaded by the Scc2-Scc4 complex, no such independent loading factor has been identified for condensin thus far, which could explain why the latter depends more strongly on the direct DNA binding site formed by its HEAT-repeat and kleisin subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "b4ac817f-7297-43b3-8a9b-15f6da1828d4",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C123",
+      "claim": "No independent loading factor has been identified for condensin.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst cohesin is loaded by the Scc2-Scc4 complex, no such independent loading factor has been identified for condensin thus far, which could explain why the latter depends more strongly on the direct DNA binding site formed by its HEAT-repeat and kleisin subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "cae45c8e-bc08-47fc-8d00-97cef133763d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C124",
+      "claim": "The lack of an independent loading factor for condensin could explain why condensin depends more strongly on the direct DNA binding site formed by its HEAT-repeat and kleisin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst cohesin is loaded by the Scc2-Scc4 complex, no such independent loading factor has been identified for condensin thus far, which could explain why the latter depends more strongly on the direct DNA binding site formed by its HEAT-repeat and kleisin subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the comparison of cohesin and condensin.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4a04ec04-16cf-4d47-b0be-a87ab4e5ffe8",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C125",
+      "claim": "Binding of condensin to DNA is stabilized by the entrapment of the bound DNA helix within a kleisin peptide loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of condensin to DNA is further stabilized by the entrapment of the bound DNA helix within a kleisin peptide loop (Figure 4A-) (Kschonsak et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited reference and shown in Figure 4A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "ba842d45-1f04-425f-942b-2bb10f62808d",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C126",
+      "claim": "The relevant section of Scc1 that would contribute to topological DNA entrapment is disordered in the Scc3-Scc1-DNA structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevant section of Scc1 that would contribute to such topological DNA entrapment is disordered in our structure(Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the crystal structure shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "797ab4cf-ca94-455d-bf95-3aaf3c851253",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C127",
+      "claim": "Scc1 is clearly required for DNA binding of the Scc3-Scc1 subcomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "As Scc1 is clearly required for DNA binding of the Scc3-Scc1 subcomplex, but apparently not through direct DNA interactions (Figure 3C), it is possible that cohesin uses a similar mode of chromatin engagement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by EMSA and fluorescence polarization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "faaa2500-feb8-4c4e-acc0-90008d52a0ed",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C128",
+      "claim": "Scc1 is apparently not required for DNA binding through direct DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As Scc1 is clearly required for DNA binding of the Scc3-Scc1 subcomplex, but apparently not through direct DNA interactions (Figure 3C), it is possible that cohesin uses a similar mode of chromatin engagement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutagenesis experiments shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7b190b83-808b-4119-b397-73b96e7168c0",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C129",
+      "claim": "It is possible that cohesin uses a similar mode of chromatin engagement as condensin.",
+      "claim_type": "EXPLICIT",
+      "source": "As Scc1 is clearly required for DNA binding of the Scc3-Scc1 subcomplex, but apparently not through direct DNA interactions (Figure 3C), it is possible that cohesin uses a similar mode of chromatin engagement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the comparison with condensin.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e7e6a108-9283-4ca5-b8c7-af0b807984be",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C130",
+      "claim": "These findings point towards a conserved molecular mechanism that enables chromatin substrate engagement by condensin and cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings thus point towards a conserved molecular mechanism that enables chromatin substrate engagement by condensin and cohesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of cohesin and condensin DNA-binding mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e3df5ef5-2a4a-417b-8999-f79866b38a05",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C131",
+      "claim": "The conserved molecular mechanism potentially facilitates topological loading by SMC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism potentially facilitates topological loading, chromatin looping and tracking along chromatin fibres by these SMC complexes (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings, supported by cited reference.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "3bad3b5b-c391-4a4a-b088-4821fff366b6",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C132",
+      "claim": "The conserved molecular mechanism potentially facilitates chromatin looping by SMC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism potentially facilitates topological loading, chromatin looping and tracking along chromatin fibres by these SMC complexes (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings, supported by cited reference.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "24a1632f-31a3-4133-b577-46ccd8500370",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C133",
+      "claim": "The conserved molecular mechanism potentially facilitates tracking along chromatin fibres by SMC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism potentially facilitates topological loading, chromatin looping and tracking along chromatin fibres by these SMC complexes (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings, supported by cited reference.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "588a78f8-1030-42bb-ad2b-380dcc0d164e",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "claim_id": "C134",
+      "claim": "Coordinates for the Scc3-Scc1-DNA complex are available from the Protein Data Bank under accession number 6H8Q.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinates for the Scc3-Scc1-DNA complex are available from the Protein Data Bank under accession number 6H8Q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of the Scc3-Scc1 complex bound to DNA reveals that Scc3 and Scc1 form a composite DNA interaction module. The structure shows DNA nested within a positively charged cradle formed by Scc3 and Scc1, with DNA binding mediated through contacts with the DNA phosphate backbone but no sequence-specific base interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystal structure determination at 3.6 \u00c5 resolution (C46-C51) provides direct structural evidence for the Scc3-Scc1-DNA complex. The electron density maps (C55, C58) and structural features (C52-C54, C59-C61) are consistent with a composite DNA-binding interface. The lack of base-specific interactions (C62) explains non-sequence-specific binding observed in EMSAs. The use of selenomethionine derivatives (C64) to confirm the Scc1 register (C65) strengthens confidence in the model despite anisotropic diffraction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Scc3-Scc1 subcomplex binds double-stranded DNA in vitro, as demonstrated by EMSA experiments. DNA binding depends on the presence of Scc1 and shows length-dependent affinity. Other cohesin subcomplexes (Pds5-Scc1, Smc1hd-CScc1, Wapl) do not bind DNA, while Smc3hd-NScc1 and the Smc1-Smc3 hinge also show DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "EMSA experiments (C37-C44) provide clear biochemical evidence for DNA binding by specific cohesin subcomplexes. The requirement for Scc1 in the Scc3-Scc1 complex (C41) and the length-dependent binding (C40) are consistent with a non-sequence-specific DNA-binding mechanism. The negative controls (C42-C44) strengthen the specificity of the findings. The comparison to condensin (C45) provides evolutionary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "13c2beb6-3375-4a0b-b18e-8f89be50a089",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis of conserved positively charged residues in Scc3 reveals that patches 1 and 3 constitute a composite DNA-binding surface. Individual patch mutations modestly reduce DNA binding affinity (KD 7.3-9.5 \u03bcM vs 2.2 \u03bcM for wild-type), while the heptamutant shows severely impaired binding (KD 29.3 \u03bcM). The Scc1 K363/R364 residues do not contribute to DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Fluorescence polarization experiments (C69-C73, C79) provide quantitative measurements of DNA binding affinity for wild-type and mutant complexes. The structural integrity controls (C74-C76) rule out indirect effects of mutations on complex formation. The conservation analysis (C67-C68) provides evolutionary support for functional importance. The finding that Scc1 K363/R364 does not contribute to binding (C79-C80) is somewhat surprising given the structural proximity to DNA (C65), but the data are clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "914c0e17-d9c5-48c7-b302-b78aa14b7138",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DNA binding by Scc3-Scc1 is essential for cohesin function in vivo. Individual patch mutants support cell viability, but the heptamutant fails to divide despite normal protein expression and incorporation into cohesin complexes. ChIP-qPCR shows that the patch 3 mutant has 40% reduced chromatin binding, while the heptamutant completely fails to bind chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tetrad dissection experiments (C81-C82) demonstrate that the heptamutant is lethal, while the protein expression (C83) and complex incorporation (C86) controls rule out indirect effects. The ChIP-qPCR data (C84-C85) directly link DNA-binding defects in vitro to chromatin association defects in vivo. The graded phenotypes (individual mutants viable, heptamutant lethal) are consistent with the graded biochemical defects and suggest a threshold effect for cohesin function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The conserved DNA-binding domain of Scc3-Scc1 is required for DNA binding in vitro, enrichment of cohesin on chromosomes, and cell viability. This DNA-binding interface plays a central role in cohesin recruitment to chromatin and is a key element for the cohesin cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result synthesizes structural (C4-C5, C32, C96), biochemical (C6, C31), and cell biological (C7-C8, C97-C98) evidence. The claims are well-supported by the combined data from multiple experimental approaches. The inference that this interface is central to cohesin recruitment (C9, C36, C101-C102) is reasonable given the convergent evidence, though the precise molecular mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "7097d2fa-1837-4adb-82ad-70fa3179cf8a",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Scc1 is required for DNA binding by the Scc3-Scc1 subcomplex, but apparently not through direct DNA interactions. The structural observations suggest Scc1 K363 is proximal to DNA, but mutagenesis shows this residue does not contribute to binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The requirement for Scc1 in DNA binding is clearly demonstrated by EMSA (C41, C127), but the mechanism remains unclear. The mutagenesis data (C79-C80, C128) argue against direct DNA contacts by K363/R364, despite structural proximity (C65). The inference in C66 that Scc1 enhances binding affinity is reasonable but the mechanism is not established. The disordered region of Scc1 (C126) may play a role not captured in the current structure. Additional experiments would be needed to clarify Scc1's contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Scc3-Scc1 DNA-binding site presumably contributes to chromosome entrapment and/or DNA translocation. The authors propose that the Scc3-Scc1 subcomplex provides a dynamic DNA anchoring point required for efficient loading and/or maintenance of cohesin on chromatin, potentially representing the first step in moving chromosomal DNA into the cohesin ring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are largely speculative (C93-C94, C107, C111) and represent mechanistic models rather than demonstrated results. While the connection between in vitro DNA binding defects and in vivo chromatin association defects (C105) is established, the precise role in DNA entry/exit reactions (C106) is inferred rather than directly demonstrated. The model is plausible and consistent with the data, but requires additional functional experiments to validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Surface patch 3 mutations in Scc3 partially reduce DNA binding and chromatin association but do not cause obvious growth defects, suggesting these cells remain competent for sister chromatid cohesion. This is consistent with prior work showing that partial cohesin depletion does not impact core functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biochemical (C113), ChIP-qPCR (C114), and viability (C115) data are consistent and support the conclusion that partial loss of DNA binding can be tolerated. The inference about cohesion competence (C116) is reasonable given the lack of growth defects, though direct cohesion assays would strengthen this claim. The citation of prior work (C117-C118) provides appropriate context for interpreting the threshold effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison with the paralogous condensin complex reveals that both cohesin and condensin use HEAT-repeat/kleisin modules to engage DNA. However, condensin appears more dependent on this DNA-binding interface than cohesin, possibly due to differences in loading mechanisms (cohesin has the Scc2-Scc4 loader, condensin does not).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to condensin (C45, C119-C120, C125) is well-supported by cited literature. The speculation about mechanistic differences (C121, C124) is reasonable given the known differences in loading factors (C122-C123). The inference of a conserved mechanism (C130) is justified by the structural and functional similarities, though the speculation about cohesin using a similar mode of engagement (C129) requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "e31658a4-9534-405b-8bf2-8fb06990079f",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work supports a role for Scc3 in cohesin loading. Scc1 deletion mutants lacking the Scc3-binding sequence fail to load onto chromosomes, and Scc3 enhances topological DNA entrapment in vitro. The subsequent entrapment reaction is presumably catalyzed by the Scc2-Scc4 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately attributed to prior work through citations (C108-C110, C112). The authors correctly present these as established findings that provide context for their own results. The claim about Scc2-Scc4 catalyzing entrapment (C112) is supported by multiple citations and represents the current model in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "4c07b761-86f6-4a78-9e2a-514e18f39375",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The conserved molecular mechanism of DNA engagement by HEAT-repeat/kleisin modules potentially facilitates topological loading, chromatin looping, and tracking along chromatin fibers by SMC complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are speculative (C131-C133) and represent proposed functions rather than demonstrated results. While the speculation is reasonable and supported by a citation (Ganji et al., 2018), the current study does not directly test these proposed functions. These represent hypotheses for future work rather than conclusions supported by the presented data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "fdb67c24-3a33-4642-a2f7-aec3562458e6",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and context claims about cohesin function, structure, and regulation based on established knowledge and prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide essential background context and are appropriately supported by citations to prior work. They represent established knowledge in the field rather than novel findings from this study. The authors accurately represent the current understanding of cohesin biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    },
+    {
+      "id": "5dd80409-9df8-4c61-a571-6c481db31759",
+      "content_id": "8f030964-4c4f-4efd-94ff-3bc55d1e8c33",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The coordinates for the Scc3-Scc1-DNA complex structure have been deposited in the Protein Data Bank under accession number 6H8Q.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward data availability statement that can be verified by checking the PDB database. Proper data deposition is essential for reproducibility and represents good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:04:14.872570Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "268c2186-2fd9-4ec8-997f-b8744da775e7",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "ec9f5db0-5f0a-45d0-8850-03423f8341b5",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "64c966d3-d02c-48b4-a598-abcb51331d5e",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "30131d85-13b0-43fc-b755-dee134b6a84c",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "f71aaf9c-2dac-492b-9f5a-52fb307909f9",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "99a054b2-fe27-4238-bc2e-cf6d7b0f870c",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "a2bf4376-e060-456b-9fac-4b4822b6ec36",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "8995c719-15c8-4c68-a1d0-2e86a115c795",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "c2baa030-4475-44af-b921-7d9696a48dc6",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "77da7064-55ef-4451-ad48-b92850f65027",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "e3db7f04-04c8-41ac-9b78-b2ca11d92866",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "bca4acfa-de71-41ae-a088-28cbbc8bfef0",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "a410ff0a-9c2d-4e17-ae3e-2c8035959f70",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "aac63f06-583a-4c00-acc6-2eff9b469fb3",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "746c20d9-228c-4eb2-aca2-d4f216cbd600",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "01f925a7-4ef2-4c45-85ac-0dd9643bc531",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "6f44e6b6-d778-4f3c-a130-69cfb58de1d5",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "b0c42ae0-5dbc-48d8-a82d-a2456715ee11",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "e5f90875-1223-4cb5-8c0f-c5708dbd55b6",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "4c9f8606-1272-4626-83c0-2cbc87d7fe8d",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "4e4549e7-1b9b-43b6-8925-a3af42dd1a31",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "3ccb544f-da7a-4e8b-8e1c-56b3e1d65844",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "f5cf8f21-c3d5-4ca6-8f41-4a751b2f0744",
+      "result_id": "142cfd09-3e8e-45d7-b3e0-17b89dd280a7"
+    },
+    {
+      "claim_id": "c1144849-351d-49c6-b258-79fb095c9c6c",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "90bacb18-babd-4f68-b98a-b6c522e7d05d",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "65060966-42f2-4cd2-bcd7-c1756fda0b7f",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "087bfed9-e2eb-4c11-b7fa-05dfddd9732f",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "d29849f2-d5d6-4a06-869d-c2b4ca881378",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "7145b6da-fbde-4136-ad57-69be31ddca1f",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "40007b8e-8dc9-44bf-a09f-a61d71aec11c",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "4cdcafba-d90c-4c96-90ff-c5aefe92a2ca",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "ba597f79-1aa1-4cb9-912b-b7c668009e35",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "e78329d6-a59c-4417-9616-2db59a580c40",
+      "result_id": "d5799b96-90ca-4ce9-8914-9e845df8b0d8"
+    },
+    {
+      "claim_id": "255b83b2-a060-408d-901b-ab81e0f34b79",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "502a535d-1b51-474a-82e8-f8e210ca40e7",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "acdce30b-d8c2-4227-a6a2-28c707f274d7",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "6e926697-8919-4159-8555-94a0b40e00e8",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "a159449e-4ff5-47bb-a30e-90335ba824a9",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "136d32d8-eb51-4cd6-81ed-f3af84c883ab",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "0b980e49-f121-49d4-ab40-88987e5ed208",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "a8cc7a05-0697-4baf-b0ed-858cee5028d9",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "45b750a5-fc63-47f7-b087-63a590631aec",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "7ce4992b-a909-4564-8942-4f1434d0030a",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "927b4dad-2a37-43e1-8c1a-3b5e66106581",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "c70dcdba-9e50-4ae2-9821-2a4dae0dbd6c",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "72bfb985-9056-490b-802b-c14f6b9baedc",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "cdef6340-33a6-485c-b77d-5e4bd8bd0aa1",
+      "result_id": "13c2beb6-3375-4a0b-b18e-8f89be50a089"
+    },
+    {
+      "claim_id": "f7ed5f48-9bd6-4944-a073-0d9732bb9fe3",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "35ade8f9-dbaf-4525-9221-f59fa1e31aca",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "4651a0bd-c9ef-421e-a2b3-27bdc1704c75",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "7e9e3272-7f60-4bcc-b2bc-86565ea4bc6d",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "38af94b7-b045-44ae-a607-5bc88b650442",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "7f4cfb4a-f04f-4e62-87c6-de81f701c7da",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "13339f48-a14d-47e4-944b-bf63c1da1e54",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "7668d6a7-bdfb-4fc2-9ef0-21143a7363a3",
+      "result_id": "914c0e17-d9c5-48c7-b302-b78aa14b7138"
+    },
+    {
+      "claim_id": "8030573e-7f90-4301-b499-c944200d254b",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "220113c6-c029-4836-8246-4324999d2fee",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "08e5b003-d62b-4068-bdca-70aa4a90d9e2",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "bb0df06f-7aff-4c21-ae7c-f0fecbaf67bd",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "dde1fcd4-cb49-439f-a966-7179923ea95b",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "1fa33c3e-0be6-4643-8236-e5d7ca042d04",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "78964460-115c-4560-9914-b567f8902f0f",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "f27bdce5-92f0-45ed-82eb-25cd85bd28c1",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "8861ff6e-0c37-4ed4-9bcf-b23e7af8378f",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "1f17f148-2df2-4495-a885-cb71a5e7cc6d",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "0a274883-ba59-477b-bf35-e97e8bdafab3",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "73ad4bb3-c7b5-4cfc-ad47-0f812c6d26ab",
+      "result_id": "aed8c8af-0a48-423a-b4cc-d9c77bc6908c"
+    },
+    {
+      "claim_id": "174b2c4d-9211-4b4b-b732-7a4c3910997e",
+      "result_id": "7097d2fa-1837-4adb-82ad-70fa3179cf8a"
+    },
+    {
+      "claim_id": "797ab4cf-ca94-455d-bf95-3aaf3c851253",
+      "result_id": "7097d2fa-1837-4adb-82ad-70fa3179cf8a"
+    },
+    {
+      "claim_id": "faaa2500-feb8-4c4e-acc0-90008d52a0ed",
+      "result_id": "7097d2fa-1837-4adb-82ad-70fa3179cf8a"
+    },
+    {
+      "claim_id": "67c88e3b-f35f-4c7c-8f78-01e7b0485d1d",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "7c4eb99a-7cff-457f-a7c9-16397d7b9c8f",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "66158935-c70f-4b7c-8cbc-dc8658723add",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "8f9dac12-0180-4fa5-81a0-efcaf4f06242",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "373940ed-9ddc-41fc-969a-7fa0959e54ef",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "2024e3cb-c1ad-448c-af96-710932b2a652",
+      "result_id": "6744aa8d-968c-497b-a3a8-48c8cad5ae73"
+    },
+    {
+      "claim_id": "96d3ec67-7585-4622-a8c0-3356ee5a8a55",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "a5bec8b0-9546-4a12-9c55-987f2f6b9cd5",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "32ed458a-edf1-43ac-8fd6-c8e8c5c67380",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "32702aa5-3e32-46fa-a35c-7408f61de109",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "3ec2e19b-8d5d-43aa-8b07-6c4c500f10b9",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "247af3d4-49a6-4172-ad67-359f5fced807",
+      "result_id": "6c2000f0-9f00-4ee3-b19e-f60d03a920da"
+    },
+    {
+      "claim_id": "e78329d6-a59c-4417-9616-2db59a580c40",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "334ea087-59b6-4dc8-a0e7-977384f7ada2",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "6d6ca994-c8e1-4dd1-b721-b3f6a2867aff",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "dd155bc3-f95b-4012-8ac5-b8363d6bd0b5",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "cc26bcbe-9e9a-4f68-ab5b-3baee5352773",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "b4ac817f-7297-43b3-8a9b-15f6da1828d4",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "cae45c8e-bc08-47fc-8d00-97cef133763d",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "4a04ec04-16cf-4d47-b0be-a87ab4e5ffe8",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "7b190b83-808b-4119-b397-73b96e7168c0",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "e7e6a108-9283-4ca5-b8c7-af0b807984be",
+      "result_id": "17ac1fd3-65ae-45c4-9ea4-cbcf46a268bc"
+    },
+    {
+      "claim_id": "1360c582-70a5-4a17-b7cf-3a96702a7a2d",
+      "result_id": "e31658a4-9534-405b-8bf2-8fb06990079f"
+    },
+    {
+      "claim_id": "2ac354ea-d7ed-40d5-b2d3-107ea73bca9d",
+      "result_id": "e31658a4-9534-405b-8bf2-8fb06990079f"
+    },
+    {
+      "claim_id": "ff614f0c-967f-4fdb-91e0-2508eb512c55",
+      "result_id": "e31658a4-9534-405b-8bf2-8fb06990079f"
+    },
+    {
+      "claim_id": "fe330e9b-bdf8-445b-819f-a6ca3d8ed331",
+      "result_id": "e31658a4-9534-405b-8bf2-8fb06990079f"
+    },
+    {
+      "claim_id": "e3df5ef5-2a4a-417b-8999-f79866b38a05",
+      "result_id": "4c07b761-86f6-4a78-9e2a-514e18f39375"
+    },
+    {
+      "claim_id": "3bad3b5b-c391-4a4a-b088-4821fff366b6",
+      "result_id": "4c07b761-86f6-4a78-9e2a-514e18f39375"
+    },
+    {
+      "claim_id": "24a1632f-31a3-4133-b577-46ccd8500370",
+      "result_id": "4c07b761-86f6-4a78-9e2a-514e18f39375"
+    },
+    {
+      "claim_id": "bf7f6dd8-0acf-466c-b2a3-af0f735ad3eb",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "0b783b00-bfdd-473f-ad98-576bbbd04c9f",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "59e3f19a-1038-4575-9630-54738084a016",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "a0c112ae-c3bd-4fd4-ba95-9fc5a34ed9dd",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "fb204e7b-81ed-4bbe-a1b8-9685c6317259",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "f423b62e-1d4c-475c-bf82-667ba4a638e7",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "27706d66-3ca0-4dbb-89a8-4d1082a59e89",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "6b5b3eb7-e856-4dcc-99ba-d644c0bea42a",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "292abd55-40c9-4a03-b031-3c1377bf0662",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "e91cbf04-a2a5-457f-bf3e-5c3c1b677ef5",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "b5fee408-0cdd-426b-9591-e7d5e4725fdb",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "9e96f7b6-7cb0-4ba4-b79e-6f12794c1b00",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "4680ab0f-5e36-4446-aca2-6546806be445",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "84f41ca1-481b-4a68-bb8d-ad2fd6da7caa",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "c2f2e231-8f43-4ffd-bf4b-4b45f79d65e6",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "89d4e886-1fcf-438c-bff8-8f299cc07b38",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "c2af99a5-32c2-47a7-9dfd-d94138de0d47",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "7b3de6e0-6c99-44c7-a16e-1ebdd607cf32",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "d5b6c0f6-38c3-4838-997f-515a646690ea",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "0002f730-1fb4-4c37-aefb-35ea8ebc1872",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "4da28609-1cfc-47f3-bf05-b97463064f4b",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "f18a5e65-d7b7-439d-91a1-d6ba554711e3",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "ff76542c-490b-40a8-b139-38f8a06187ac",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "2e6cb616-7e7a-4b87-9db9-625eddaa82df",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "85d04f03-8b86-4077-a9ae-06739fa9fbdd",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "4d524ba7-0b4c-4b56-835f-24190d987bb4",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "3f764dd0-9816-4160-b095-13a0bb7526bf",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "4f89c4fe-841e-4678-8e03-3c88ebd04d39",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "a5089a96-12de-4cab-ad2e-4bc605101a38",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "8047aa45-68ff-48ca-83b9-a00df8c7c971",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "7b7e1c71-794f-419b-a70c-7b8eabd1de12",
+      "result_id": "fdb67c24-3a33-4642-a2f7-aec3562458e6"
+    },
+    {
+      "claim_id": "588a78f8-1030-42bb-ad2b-380dcc0d164e",
+      "result_id": "5dd80409-9df8-4c61-a571-6c481db31759"
+    }
+  ],
+  "comparisons": []
+}

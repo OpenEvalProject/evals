@@ -1,0 +1,1475 @@
+{
+  "submission": {
+    "id": "d021cc2b-7df3-4680-b33f-ccc380879ba5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:58:02.875118Z",
+    "updated_at": "2025-12-02T00:58:02.875118Z"
+  },
+  "content": [
+    {
+      "id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "submission_id": "d021cc2b-7df3-4680-b33f-ccc380879ba5",
+      "content_type": "manuscript",
+      "content_text": "# Lateral interactions between protofilaments of the bacterial tubulin homolog FtsZ are essential for cell division\n\n## Authors\n\n- Fenghui Guan<sup>1</sup> ([ORCID: 0000-0002-2756-5736](https://orcid.org/0000-0002-2756-5736))\n- Jiayu Yu<sup>3</sup>\n- Jie Yu<sup>1</sup>\n- Yang Liu<sup>3</sup>\n- Ying Li<sup>1</sup>\n- Xin-Hua Feng<sup>1</sup>\n- Kerwyn Casey Huang<sup>4</sup>\n- Zengyi Chang<sup>3</sup> \u2020\n- Sheng Ye<sup>1</sup> ([ORCID: 0000-0001-9300-6257](https://orcid.org/0000-0001-9300-6257)) \u2020\n\n### Affiliations\n\n1. Innovation Center for Cell Signaling Network Zhejiang University Hangzhou China\n2. Life Sciences Institute Zheijiang University Hangzhou China\n3. The State Key Laboratory of Protein and Plant Gene Research, School of Life Sciences Peking University Beijing China\n4. Department of Bioengineering Stanford University Stanford United States\n5. Department of Microbiology and Immunology Stanford University School of Medicine Stanford United States\n6. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prokaryotic tubulin homolog FtsZ polymerizes into protofilaments, which further assemble into higher-order structures at future division sites to form the Z-ring, a dynamic structure essential for bacterial cell division. The precise nature of interactions between FtsZ protofilaments that organize the Z-ring and their physiological significance remain enigmatic. In this study, we solved two crystallographic structures of a pair of FtsZ protofilaments, and demonstrated that they assemble in an antiparallel manner through the formation of two different inter-protofilament lateral interfaces. Our in vivo photocrosslinking studies confirmed that such lateral interactions occur in living cells, and disruption of the lateral interactions rendered cells unable to divide. The inherently weak lateral interactions enable FtsZ protofilaments to self-organize into a dynamic Z-ring. These results have fundamental implications for our understanding of bacterial cell division and for developing antibiotics that target this key process.\n\n## Introduction\n\nBacterial cytokinesis is initiated by the formation of a ring-like structure termed the Z-ring, a polymeric assembly of the essential tubulin homolog FtsZ at future division sites (Bi and Lutkenhaus, 1991). Once formed, the Z-ring serves as a scaffold to recruit other cell division proteins that collectively constitute the divisome (Dajkovic and Lutkenhaus, 2006). During cell division, the Z-ring constricts at the leading edge of the invaginating septum, eventually causing a mother cell to divide into two daughter cells (Bi and Lutkenhaus, 1991).\n\nFtsZ subunits have been suggested to interact through two putative sets of interfaces, longitudinal interfaces that join the subunits in a head-to-tail manner thereby forming a protofilament, and lateral interfaces that occur between protofilaments. FtsZ subunits readily assemble into protofilaments in vitro (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and crystal structures of FtsZ protofilaments have been determined for both straight (Matsui et al., 2012; Tan et al., 2012) and curved conformations (Li et al., 2013). In vitro, FtsZ protofilaments have been observed to further associate via lateral interfaces to form higher-order structures such as sheets (Bramhill and Thompson, 1994; Erickson et al., 1996; Gonz\u00e1lez et al., 2003; L\u00f6we and Amos, 1999; L\u00f6we and Amos, 2000; Oliva et al., 2003; Yu and Margolin, 1997). While several studies strongly suggested that lateral interfaces across protofilaments are important for FtsZ function (Dajkovic et al., 2008; Lan et al., 2009; Milam et al., 2012; Szwedziak et al., 2014), the precise nature and the functional relevance of these lateral interfaces remain largely unclear.\n\nAlthough bacterial cell division has been actively investigated for decades, the in vivo nanoscale organization of the Z-ring has not been well defined thus far. Conventional fluorescence microscopy depicts the Z-ring as a smooth, closed ring, with individual protofilaments not resolvable (Pogliano et al., 1997; Sun and Margolin, 1998). Based on in vitro assembly studies (Erickson et al., 1996; L\u00f6we and Amos, 1999; L\u00f6we and Amos, 2000; Mukherjee and Lutkenhaus, 1994), the Z-ring was initially modeled as a few single continuous polymers that wrap around the cell. Later, electron cryotomography suggested that the Z-ring is composed of individual FtsZ protofilaments that do not obviously interact laterally, scattered in a narrow band around the circumference of the cell (Li et al., 2007). Super-resolution light microscopy indicated that FtsZ protofilaments form randomly oriented, multi-layered, discontinuous clusters within the Z-ring (Biteen et al., 2012; Buss et al., 2013; Coltharp et al., 2016; Fu et al., 2010; Holden et al., 2014; Jacq et al., 2015; Rowlett and Margolin, 2014; Si et al., 2013; Strauss et al., 2012). By contrast, recent electron cryotomography studies found a small, single-layered band of FtsZ protofilaments parallel to the membrane\u00a0(Szwedziak et al., 2014), and showed that a complete ring of FtsZ is not required to initiate constriction in the early stages of cytokinesis (Yao et al., 2017). The link between this diverse set of conformations and Z-ring dynamics is challenging to parse without structural knowledge of the full suite of inter-subunit interactions.\n\nTo address the nature and in vivo role of FtsZ lateral interactions, we solved the structure of Mycobacterium tuberculosis FtsZ (MtbFtsZ) in a double-stranded protofilament state. Comparison of this structure with that of MtbFtsZ in a different double-stranded protofilament state that we previously determined (Li et al., 2013) revealed two different inter-protofilament lateral interfaces. Using a combination of site-directed mutagenesis and phtotocrosslinking studies, we demonstrate that these lateral interfaces occur in living cells, and are critical for mediating cell division through the assembly of protofilaments into a functional Z-ring.\n\n## Results\n\n### Structural analysis reveals lateral interfaces for FtsZ protofilament bundling\n\nFtsZ proteins from phylogenetically divergent species are known to assemble into polymers with multiple morphologies in a nucleotide-dependent manner (Erickson et al., 1996; L\u00f6we and Amos, 1999; L\u00f6we and Amos, 2000; Lu et al., 1998; Oliva et al., 2003; Popp et al., 2010; White et al., 2000). Our electron microscopy analysis showed that MtbFtsZ and FtsZ from Escherichia coli (EcFtsZ) are able to form protofilament bundles in vitro in the presence of DEAE-dextran (Figure 1A,B). The fact that protofilaments of both EcFtsZ and MtbFtsZ are able to form such assemblies, as observed previously (Erickson et al., 1996; L\u00f6we and Amos, 1999), suggests that the lateral interface of FtsZ protofilaments is a common and conserved characteristic.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig1-v2.jpg)\n\n**Figure 1.:** (A, B) Electron micrographs of protofilament bundles of EcFtsZ-GTP (A) and MtbFtsZ-GTP (B). Both were polymerized with the addition of 0.6 mg/mL DEAE-Dextran, and in the presence of 2 mM GTP. (C, D) Cartoon representations of double-stranded MtbFtsZ-GDP (C; PDB ID: 4KWE) and MtbFtsZ-GTP (D; this study) protofilaments containing a total of 24 subunits. The helices have a pitch of 132.5 \u00c5 for MtbFtsZ-GDP (C) and 138.3 \u00c5 for MtbFtsZ-GTP (D) protofilaments. Each structure reveals unique lateral interactions across the protofilaments. Inset: atomic details of the lateral interface of the double-stranded MtbFtsZ-GTP protofilaments. (E) Molecular details of the lateral interface of the double-stranded MtbFtsZ-GDP protofilaments shown in (C). Inset: atomic details of the lateral interactions. (F) A structural model for sheet-like bundles of FtsZ protofilaments. Ribbon representation of four straight FtsZ-GTP protofilaments (each containing six subunits, arranged in an antiparallel fashion).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Amino acid sequence alignment of FtsZ from Mycobacterium tuberculosis (MtbFtsZ), Staphylococcus aureus (SaFtsZ), Escherichia coli (EcFtsZ), Methanococcus jannaschii (MjFtsZ), Aquifex aeolicus (AaFtsZ), Pseudomonas aeruginosa (PaFtsZ), and Bacillus subtilis (BsFtsZ). The secondary structures of \u03b1-helices, \u03b2-strands, and loops in MtbFtsZ are shown as cylinders, arrows, and lines, respectively. Residues from the observed lateral interfaces in EcFtsZ are highlighted in red (interface 1) and green (interface 2). These residues were subjected to mutagenesis in EcFtsZ in the present study.\n\nFtsZ subunits were previously observed to assemble into single- and double-stranded filaments at physiological concentrations (Chen et al., 2007; Oliva et al., 2003; White et al., 2000). Our previous structural analysis of MtbFtsZ also revealed the formation of double-stranded and curved filaments, arranged in an antiparallel fashion (Li et al., 2013). From the MtbFtsZ structure (Li et al., 2013), we observed an inter-protofilament interface located on the external faces of strands S7 and S10 in the C-terminal subdomain (lateral interface 1, Figure 1C) (Li et al., 2013). However, the existence of only a single lateral interface within such an antiparallel arrangement of protofilaments would be self-limiting and lead only to the formation of double-stranded filaments. Formation of bundles composed of more than two FtsZ protofilaments requires additional lateral interfaces between the opposite sides of the protofilaments. We have now identified candidates for these interfaces in a new hexagonal crystal of MtbFtsZ, which has been determined to an Rfree factor of 27.3% at a resolution of 2.7 \u00c5 (Materials and methods, Table 1). Compared with our earlier MtbFtsZ structure (Li et al., 2013), our newly determined MtbFtsZ structure is similarly double-stranded and reveals curved filaments in an antiparallel arrangement. However, in this new structure, the inter-protofilament interface is located at the external faces of helices H3, H4, and H5 in the N-terminal subdomain (lateral interface 2, Figure 1D).\n\n**Table 1.**\n X-ray data and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data set</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Space group Unit cell Resolution (\u00c5) Measured reflections Unique reflections Redundancy Completeness (%, highest shell) Mean I/\u03c3I (highest shell) Rsym (%, highest shell)</td>\n      <td>P6522 a\u00a0=\u00a0100.5 \u00c5, c\u00a0=\u00a0138.3 \u00c5 2.7 167,791 11,805 14.2 99.3 (99.5) 44.1 (1.6) 10.7 (100)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5) Number of reflections |F|\u00a0&gt;\u00a00 \u03c3F R-factor/R-free (%) Number of protein atoms Number of GTP molecules Number of water molecules rmsd bond lengths (\u00c5) rmsd bond angles (\u00b0)</td>\n      <td>2.7 10,593 21.1/25.3 2203 1 0 0.008 0.97</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the previously identified lateral interface (Li et al., 2013), Arg229 of one subunit and Asp301 of the other formed two pairs of salt bridges, burying a surface area of approximately 210 \u00c52 (Figure 1E). By contrast, the lateral interface in the new MtbFtsZ structure is composed of basic residues Arg76, Lys77, Lys83, Arg119, and Lys120 and acidic residues Glu80, Glu87, and Glu153 from both interacting subunits, burying a larger surface area of\u00a0~870 \u00c52 (Figure 1D). These residues form charged complementary surfaces, suggesting the existence of electrostatic interactions. The charged residues involved in both lateral interfaces are generally conserved (Figure 1\u2014figure supplement 1), indicating that they are functionally relevant. Such an electrostatic nature was predicted in earlier studies probing the effects of pH and ionic strength on FtsZ protofilament bundling (Beuria et al., 2006). Interestingly, in the previous MtbFtsZ structure (Li et al., 2013), only two of the three FtsZ subunits (A and B) in each protofilament participated in such lateral interactions, whereas the charged residues Arg229 and Asp301 in subunit C were\u00a0~6 \u00c5 apart (Figure 1E). These in vitro observations suggest the presence of weak lateral interactions between MtbFtsZ protofilaments, in agreement with earlier electron microscopy studies as well as predictions based on kinetic modeling (Lan et al., 2008).\n\nGuided by the similarities in amino acid sequence and tertiary structure between MtbFtsZ and Staphylococcus aureus FtsZ (SaFtsZ), as well as the two lateral interfaces we have identified in MtbFtsZ filaments, we attempted to construct a model for sheet-like structures of FtsZ filaments. In light of the two MtbFtsZ structures, we initially constructed two different MtbFtsZ lateral dimer structures. Each subunit in these dimeric structures was subsequently superimposed on the SaFtsZ subunit in an SaFtsZ protofilament (Matsui et al., 2012) by aligning their main-chain atoms to generate a hybrid filament in which an MtbFtsZ protofilament pairs with an SaFtsZ protofilament. The MtbFtsZ structure in such a hybrid filament was then replaced with the SaFtsZ structure to generate an SaFtsZ filament. The final model contains four SaFtsZ protofilaments that associate laterally to form an antiparallel sheet-like structure (Figure 1F). This structure is very similar to that observed for EcFtsZ (Erickson et al., 1996) and Methanococcus jannaschii FtsZ (L\u00f6we and Amos, 1999), suggesting that the lateral interfaces observed by X-ray crystallography are identical to those observed by electron microscopy.\n\n### FtsZ filaments interact at lateral interfaces in living cells\n\nTo probe inter-protofilament contacts in living cells, we utilized an in vivo photocrosslinking approach in which we replaced each of the corresponding interfacial amino acid residues with p-benzoyl-L-phenylalanine (pBpa), an unnatural photoactive amino acid that, upon UV irradiation, forms a biradical that can abstract an H atom from C-H bonds at a distance of\u00a0~3\u20134 \u00c5 to form a covalent adduct (Chin et al., 2002; Chin and Schultz, 2002; Fu et al., 2013; Sato et al., 2011; Zhang et al., 2011). Plasmids carrying mutated ftsZ genes were first transformed into an ftsZ conditional-null strain LY928-\u2206ftsZ, whose genome contains the gene encoding the orthogonal aminoacyl-tRNA synthetase and tRNA needed for the incorporation of pBpa (Wang et al., 2016). Photocrosslinking analyses were then performed for the FtsZ-pBpa variants that were able to rescue cell growth (Figure 2A and Figure 4\u2014figure supplement 1, Materials and methods). Upon irradiation with long-wavelength UV light, we found that FtsZ-pBpa variants R78pBpa, N79pBpa, D82pBpa, R85pBpa, R89pBpa, K155pBpa, and S231pBpa produced covalently linked homodimers, as demonstrated by immunoblotting analysis (Figure 2B). The same set of pBpa variants of FtsZ were expressed in an E. coli strain that also expresses the AviTagged form of wild type FtsZ, and the putative photocrosslinked dimers were then probed with either an anti-FtsZ antibody (which recognizes both the pBpa variant and the AviTagged wild-type FtsZ forms) or with a streptavidin-alkaline phosphatase conjugate (which only recognizes the AviTagged wild-type FtsZ). When probing with the anti-FtsZ antibody, doublet bands reflecting the migration positions of both the FtsZ monomer and dimer were detected (Figure 2B). By contrast, when probing with the streptavidin conjugate, only single bands at both the monomer and the dimer positions (corresponding to the higher molecular weight band in the anti-FtsZ immunoblot) were detected. These photocrosslinking results clearly demonstrate that both lateral interfaces mediate interactions between FtsZ subunits in living cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic illustrating the rationale of in vivo photocrosslinking analysis via incorporation of the unnatural amino acid pBpa at specific residue positions of FtsZ. (B) Results of blotting analyses of photocrosslinked products with lysates of E. coli cells (LY928-\u0394ftsZ or LY928-FtsZ-AviTag) expressing the indicated pBpa variant of FtsZ, using antibodies against EcFtsZ (left) or using alkaline phosphatase-conjugated streptavidin (right). Indicated on the right of each gel are the positions of the non-photocrosslinked monomers and the photocrosslinked dimers of the pBpa variant of FtsZ with or without the AviTag. The asterisk indicates the position of a crosslinked product of FtsZ and another as yet unidentified protein.\n\nTo obtain unbiased confirmation of the presence in living cells of the two crystallographically observed lateral interfaces, we further designed a random screening strategy (Figure 3A) (Chin et al., 2002; Daggett et al., 2009; Liu and Schultz, 2010; Ryu and Schultz, 2006; Stricker and Erickson, 2003). Instead of rationally introducing the unnatural amino acid pBpa via site-directed mutagenesis (Figure 2A), we randomly introduced it into the EcFtsZ protein by generating a plasmid-borne library such that an in-frame TAG amber codon, which will be read as pBpa, was randomly inserted throughout the ftsZ gene (Daggett et al., 2009). This library was then transformed into the LY928-\u0394ftsZ strain to screen for variants that complemented the ftsZ conditional-null phenotype. These variants were then subjected to in vivo photocrosslinking analysis to identify pBpa variants of FtsZ that can form crosslinked dimers. We obtained 31 colonies that yielded crosslinked FtsZ products. We then sequenced the ftsZ genes from these 31 colonies and identified FtsZ-pBpa variants resulting from insertion of the TAG amber codon at 10 distinct sites. Our immunoblotting analysis indicated that photocrosslinked FtsZ dimers were formed for four of these ten variants (corresponding to pBpa incorporated at residue positions R78, D82, R85, or K140; Figure 3B). Among these four positions, residue K140 is located at the protofilament longitudinal interface and the FtsZK140A mutant was earlier demonstrated to complement an ftsZ conditional-null strain (Li et al., 2013; Matsui et al., 2012), while R78, D82, and R85 are located at lateral interface two observed in our crystal structure. As a negative control, we sequenced the ftsZ genes isolated from 42 complementing colonies that did not generate any detectable photocrosslinked FtsZ products, from which we identified 12 distinct FtsZ-pBpa variants (corresponding to pBpa incorporated at residue positions G22, V37, A41, A48, K61, I64, N73, A113, A114, V119, E147, or L172). As expected, none of these 12 residues is located at either the longitudinal or lateral interfaces. Taken together, our photo-crosslinking analyses based on unbiased, random introduction of pBpa confirm the presence of at least two interfaces that are involved in FtsZ assembly in living cells, both consistent with our in vitro crystallographic analyses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrating the random in vivo photocrosslinking screening strategy for unbiased identification of amino acid positions mediating subunit interactions. (B) Immunoblotting analysis of the photocrosslinked products in lysates of E. coli LY928-\u0394ftsZ cells that were transformed with the library of plasmids within which the in-frame TAG amber codon was randomly inserted throughout the ftsZ gene, as probed with antibodies against EcFtsZ.\n\n### The identified lateral interfaces between FtsZ filaments are physiologically relevant\n\nOur photo-crosslinking analyses were performed for pBpa variants that could complement wild-type FtsZ. We were surprised to find that three variants (K121pBpa and D122pBpa from lateral interface 2, and D304pBpa from lateral interface 1) failed to complement (Figure 4\u2014figure supplement 1). To exclude potential artifacts introduced by pBpa, we replaced each of the corresponding interfacial residues with hydrophobic leucine and then characterized these mutant proteins using a similar complementation approach (Figure 4, Table 2) (Stricker and Erickson, 2003). As with pBpa replacement, K121L and D304L failed to complement (Figure 4, Table 2). However, unlike D122pBpa, the D122L mutation was sufficient for complementation. This contrasting result with D122pBpa might be due to the bulkier size of the benzophenone-moiety side chain of pBpa compared to that of leucine.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig4-v2.jpg)\n\n**Figure 4.:** Ten EcFtsZ mutants were selected based on our crystallographic observations. Mutations were introduced by altering hydrophilic residues to hydrophobic leucine. The division phenotype was characterized using a \u0394ftsZ strain expressing the EcFtsZ mutants, with conditional expression of wild-type FtsZ from a plasmid at 30\u00b0C but not 42\u00b0C. \u2018Rep\u2019 and \u2018Ind\u2019 indicate repression and induction media, respectively. For each mutant, the complementation assay was repeated three times.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Ten replacements of EcFtsZ were selected based on our crystallographic observations. pBpa-incorporated variants were created by altering the corresponding sense codon to an amber TAG stop codon. The FtsZ expression plasmid pTet-FtsZ carrying an in-frame amber mutation was used to transform E. coli LY928-\u0394ftsZ (pJSB100) cells. Cell division, and thus cell growth, could only occur when an FtsZ variant was functional and in the addition of glucose and pBpa.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The variants were expressed in LY928-FtsZ-AviTag cells and crosslinked by UV irradiation. Lysate from cells expressing the R78pBpa variant of FtsZ was analyzed as a positive control for photocrosslinked FtsZ dimers.\n\n**Table 2.**\n Complementation effects of inter-protofilament interface mutants.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Corresponding amino acid in MtbFtsZ</th>\n      <th>Complementation on plates</th>\n      <th>Complementation in liquid culture</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wildtype</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R78L</td>\n      <td>R76</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>N79L</td>\n      <td>K77</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>D82L</td>\n      <td>E80</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R85L</td>\n      <td>K83</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R89L</td>\n      <td>E87</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>K121L</td>\n      <td>R119</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>D122L</td>\n      <td>K120</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>K155L</td>\n      <td>E153</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>S231L</td>\n      <td>R229</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>D304L</td>\n      <td>D301</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>N78pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>N79pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>D82pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R85pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>R89pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>K121pBpa</td>\n      <td></td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>D122pBpa</td>\n      <td></td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>K155pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>S231pBpa</td>\n      <td></td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>D304pBpa</td>\n      <td></td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n  </tbody>\n</table>\n\nReplacement of an interfacial hydrophilic residue (K or D) with the hydrophobic leucine could disrupt inter-protofilament interaction, or could induce protein misfolding. However, purified FtsZK121L and FtsZD304L retained similar GTPase activity to that of wildtype (data not shown), and assembled into protofilaments in a GTP-dependent manner, arguing against the possibility of protein misfolding. We performed photocrosslinking studies on the non-functional pBpa variants by expressing them in cells that also expressed the AviTagged wild-type FtsZ. Unlike functional pBpa variants (Figure 2), none of the three variants K121pBpa, D122pBpa, and D304pBpa produced any crosslinked dimer (Figure 4\u2014figure supplement 2). These results indicate that the loss of FtsZ function in these variants is likely linked to a disruption of lateral interactions. Nevertheless, the dramatically distinct complementation results of the disruptive mutations of Ser231 and Asp304, two residues likely involved in direct interactions at lateral interface 1, raise an obvious concern as to whether Asp304 is important for other functions. To address this possibility, we generated two double mutants across the interface (D304L/S231E and D304L/S231Q) and observed complementation (Figure 5), demonstrating the formation of lateral interface one in vivo. Taken together, these data suggest that the two lateral interfaces we observed in vitro are important for FtsZ function in vivo, and lack of complementation is likely due to loss of lateral contacts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig5-v2.jpg)\n\n**Figure 5.:** Mutations were introduced by altering D304 and K121 to different hydrophobic residues. In addition to the D304L mutation, S231 was replaced several other amino acids. The division phenotype was characterized using a \u0394ftsZ strain with expression of the EcFtsZ mutants, and conditional expression of wild-type FtsZ from a plasmid at 30\u00b0C but not 42\u00b0C. \u2018Rep\u2019 and \u2018Ind\u2019 indicate repression and induction media, respectively. For each mutant, the complementation assay was repeated three times.\n\n### Weak lateral interactions exist between protofilaments\n\nWe initially postulated from the electrostatic complementarity along both lateral interfaces that short-range electrostatic interaction is the main driving force for lateral interactions. However, three lines of evidence led us to revisit this interaction mechanism. First, complementation results of presumably disruptive mutants on the lateral interface were less predictable than those of disruptive mutants on the longitudinal interface (Li et al., 2013). Second, residues on the lateral interfaces are either polar or electrostatic, and are only generally conserved. For example, the Arg229-Asp301 pair observed in MtbFtsZ becomes Ser231-Asp304 in EcFtsZ. Third, the two complementing double mutants across the lateral interface (D304L/S231E and D304L/S231Q) indicate that S231E or S231Q forms favorable interactions that compensate for the disruptive effect of D304L. We further mutated Asp304 to different hydrophobic residues and observed highly variable results; for example, D304V was able to complement (Figure 5). Mutagenesis of Lys121 revealed similar variability, with K121M and K121V able to complement (Figure 5). These results, together with those from double mutagenesis (Figure 5), suggest that lateral interactions are predominantly mediated by van der Waals interactions, which are sensitive to surface geometry; the charge complementarity may enhance these associations. Moreover, these results also suggest that lateral interactions between FtsZ protofilaments are much weaker on a per subunit basis in comparison with hydrophobic longitudinal interactions.\n\nThe free energy of protein-protein association is a balance between the intrinsic bond energy and the subunit entropy. The former favors association, while the latter disfavors association due to immobilizing a subunit (Erickson, 1989). This balance prompted us to examine whether protofilament formation is a prerequisite for lateral interactions to occur. To this end, we introduced A181E, a mutation known to disrupt the longitudinal interface (Li et al., 2013), into a set of pBpa variants of FtsZ, including R78pBpa, N79pBpa, D82pBpa, R85pBpa, R89pBpa, K155pBpa, and S231pBpa, all of which produced covalently linked FtsZ dimers upon UV irradiation (Figures 2B and 3B). We then performed in vivo photocrosslinking analysis with this set of A181E-containing pBpa variants, and found that photocrosslinked dimers were no longer detectable for all such variants (Figure 6). Thus, protofilament preassembly is required for lateral interactions to occur, consistent with the hypothesis that the lateral interactions are generally weak on a per-subunit basis. Nevertheless, the combined strength of all lateral interactions is presumably significant given that many interfaces are present along the protofilaments.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig6-v2.jpg)\n\n**Figure 6.:** Streptavidin blotting analyses of photocrosslinked products of EcFtsZ variants in which pBpa was incorporated at the lateral interface in addition to replacement of alanine 181 with glutamate, which is known to disrupt protofilament formation. The R78pBpa variant (with no disrupting replacement at position 181) was analyzed as a positive control.\n\n### Lateral interfaces are involved in Z-ring assembly\n\nFtsZ subunits readily assemble into protofilaments in vitro (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001). Given that the intracellular concentration (~5.6 \u03bcM) (Li et al., 2014) is much higher than the critical concentration (~1 \u03bcM) (Gonz\u00e1lez et al., 2003), it is reasonable to assume that most FtsZ molecules assemble into protofilaments in vivo. Since our complementation studies revealed the importance of both lateral interfaces for FtsZ function, we next investigated whether FtsZ mutant proteins defective in lateral interactions can integrate into the Z-ring in living E. coli cells that also express wild-type FtsZ.\n\nWe first confirmed that these FtsZ mutant proteins (D304L and K121L) are still capable of forming GTP-dependent protofilaments (Figure 7A). This capacity indicates that, when the laterally disruptive FtsZ is co-expressed with wild-type FtsZ, they can stochastically copolymerize to form hybrid protofilaments. We assume that the fraction of laterally disruptive subunits incorporated into protofilaments follows a Binomial distribution with a mean corresponding to the cellular proportion of laterally disruptive FtsZ (Figure 7\u2014figure supplement 1), and that this fraction will determine the number of effective lateral bonds that could form between protofilaments. Given that the lateral interactions are weak, we expect that there exists a critical fraction of laterally disruptive subunits within a protofilament, above which the combined lateral interactions are insufficient to exceed the entropic cost of immobilizing the protofilament. In this case, we expect a dramatic reduction in the probability of such a protofilament interacting with other protofilaments to incorporate into the Z-ring. Thus, when co-expressed with wild type FtsZ, if the cellular proportion of laterally disruptive FtsZs is low, most protofilaments will tolerate the small degree of lateral disruption and incorporate into the Z-ring, whereas a high proportion of laterally disruptive FtsZ will interfere with Z-ring formation. Our complementation studies have already suggested that without wild-type FtsZ, laterally disruptive FtsZ mutants are lethal. For a pool of intermediate size, the protofilaments whose fraction of laterally disruptive subunits is above the threshold will be excluded from the Z-ring, leaving those hybrid protofilaments with small fraction of mutant subunits to form a functional Z-ring. As a consequence, when the cellular proportion of laterally disruptive FtsZ increases, the fraction of such subunits in the Z-ring decreases (Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig7-v2.jpg)\n\n**Figure 7.:** (A) Electron microscopy analysis of GTP-dependent polymerization (with the addition of 0.6 mg/ml DEAE-Dextran) of wild-type or mutated EcFtsZ in which all mutants except A181E form protofilaments similar to wild-type. (B) Western blot analysis of levels of mNeonGreen fusions to wild-type EcFtsZ and mutants. The cellular proportions of mutant FtsZ were\u00a0~40%. (C) Fluorescence microscopy demonstrates that low-level expression of laterally disruptive EcFtsZ mutants fused to mNeonGreen does not affect protofilament integration into the Z-ring. (D) Western blot analysis of levels of mNeonGreen fusions to wild-type EcFtsZ and mutants, as well as the AviTagged version. The cellular proportions of mutant FtsZ (mNeonGreen-tagged and untagged) were\u00a0~60%. (E) Dominant expression of disruptive EcFtsZ mutants fused to mNeonGreen hinders protofilament integration into the Z-ring, unlike wild-type or the non-disruptive interfacial mutant EcFtsZ R78L.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Shown are the results of a model in which we assume that all FtsZ protofilaments are 50 subunits long and compute the fraction X of each protofilament that is composed of laterally disruptive subunits, as a function of the overall proportion f of laterally disruptive subunits in a cell. The probability density function is the Binomial distribution $P(X=k)=(\\frac{50}{k})f^{k}(1\u2212f)^{50\u2212k}$.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35578/elife-35578-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** For each value of the cellular proportion of disruptive subunits (f) and threshold for efficient Z-ring incorporation (T), we performed 10,000 independent simulations. In each simulation, we generated a vector X = (x1, x2,. .., x200), where xi represents the number of laterally disruptive subunits in the ith protofilament, selected from the Binomial distribution with mean 50f (Figure 7\u2014figure supplement 1). For a protofilament with more or less laterally disruptive subunits than the threshold T, we set the probability of Z-ring incorporation to 0.01 or 0.99, respectively. The Boolean vector V represents the incorporation state of each protofilament. We then calculated the percentage of laterally disruptive subunits incorporated into the Z-ring as $\\frac{X\u22c5V}{\\sumi=1200x_{i}}$. Circles indicate the mean percentages of laterally disruptive subunits in the Z-ring across simulations with a given value of f and T, and solid vertical lines represent the standard deviations. As the total proportion of laterally disruptive subunits increases, the proportion of laterally disruptive subunits incorporated into the Z-ring decreases, consistent with our experimental results showing a faint or non-existent Z-ring with dominant expression of laterally disruptive mutants (Figure 7E).\n\nThis aforementioned rationale prompted us to co-express wild type FtsZ and fluorescent protein-fused mutant FtsZ, and use the midcell fluorescence signal as a proxy for Z-ring incorporation. We observed that the laterally disruptive mutants K121L and D304L and the laterally nondisruptive mutant R78L were all efficiently incorporated into the Z-ring (Figure 7C), when the cellular proportions of mutant FtsZ proteins were\u00a0~40% (Figure 7B). We then sought to increase the ratio of mutant FtsZ to wild-type FtsZ by using a stronger promoter to express mNeonGreen-tagged FtsZ variants. We introduced an amber codon between EcFtsZ and mNeonGreen for each variant to control the expression level of mNeonGreen. These plasmids, which expressed mNeonGreen-tagged mutant FtsZ and mutant FtsZ at a ratio of\u00a0~1:1, were transformed into E. coli LY928-ftsz-avi cells (Figure 7D, Materials and methods). The cellular proportions of mutant FtsZ (mNeonGreen tagged and untagged) increased to\u00a0~60% (as shown in Figure 7D), while the total levels of mNeonGreen-tagged FtsZ and untagged FtsZ (wild-type and mutant) were expressed at similar levels as before (Figure 7B). Fluorescence imaging demonstrated that midcell fluorescence was reduced to virtually undetectable levels for the laterally defective mutants, D304L and K121L(Figure 7E). By contrast, Z-rings remained visible in cells expressing a high level of the laterally non-disruptive mutant R78L (Figure 7E). Collectively, these results strongly suggest that lateral interactions are important for FtsZ protofilament assembly into the Z-ring.\n\n## Discussion\n\nFtsZ and its eukaryotic counterpart tubulin share a similar overall structure and use similar longitudinal interfaces to form protofilaments. However, unlike tubulin, which exhibits strong lateral interactions to form multi-stranded microtubules, FtsZ polymerizes into single-stranded protofilaments (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and undergoes GTP hydrolysis-driven treadmilling (Bisson-Filho et al., 2017; Chen and Erickson, 2005; Loose and Mitchison, 2014; Mukherjee and Lutkenhaus, 1994; Yang et al., 2017). These FtsZ protofilaments further coalesce and attach to the membrane at the division site through ZipA and FtsA (Hale and de Boer, 1997; Pichoff and Lutkenhaus, 2002), forming the Z-ring. The role of lateral interfaces between FtsZ protofilaments in Z-ring dynamics is fundamental to our understanding of Z-ring function in bacterial cytokinesis. FtsZ protofilaments associate laterally to form higher-order polymers in vitro (Bramhill and Thompson, 1994; Erickson et al., 1996; Gonz\u00e1lez et al., 2003; L\u00f6we and Amos, 1999; L\u00f6we and Amos, 2000; Oliva et al., 2003; Yu and Margolin, 1997), and several studies have strongly suggested that lateral interfaces between protofilaments are important for FtsZ function (Dajkovic et al., 2008; Milam et al., 2012). In this study, we directly observed two different lateral interfaces of FtsZ protofilaments based on crystallographic analysis. We subsequently confirmed the presence of these lateral interfaces in living cells via in vivo photocrosslinking. Finally, we demonstrated that these weak, yet functionally important, lateral interfaces are involved in Z-ring assembly.\n\nLateral interfaces between FtsZ protofilaments have been extensively probed for decades and several residues have been genetically implicated in lateral interactions (Haeusser et al., 2015; Jaiswal et al., 2010; Koppelman et al., 2004; Lu et al., 2001; M\u00e1rquez et al., 2017; Moore et al., 2017; Shin et al., 2013; Stricker and Erickson, 2003). However, some results from these studies were ambiguous and open to conflicting interpretations. Certain EcFtsZ mutants, such as E93R (Jaiswal et al., 2010), L169R (Haeusser et al., 2015), and D86K (Lu et al., 2001), have elevated tendency to form protofilament bundles in vitro, but evidence of their function in vivo remains inconclusive (Stricker and Erickson, 2003). Other EcFtsZ surface residues, such as G124 and R174, were identified as potential lateral residues since insertions of a fluorescent protein at these sites caused loss of function in vivo (Koppelman et al., 2004; Moore et al., 2017). However, insertion at R174 did not interfere with protofilament bundling in vitro, and insertion at G124 induced protein misfolding (Moore et al., 2017), making it challenging to link loss of function to defects in lateral interactions. Our structures and random photocrosslinking results also failed to provide cross-verification for any of these residues. Our observation that lateral interactions are weak in nature may offer an explanation for the ambiguities from these studies. The association of FtsZ protofilaments due to additive effect of lateral interactions between two protofilaments means that single mutant studies can suffer from insensitivity in vivo and in vitro. For example, our in vivo complementation studies revealed that, among the ten rationally designed, potentially disruptive mutants, eight of them were able to complement. In addition, in vitro protofilament bundling relies heavily on bundling agents such as Ca2+ (L\u00f6we and Amos, 1999), DEAE-dextran (Erickson et al., 1996), or Ficoll 70 (Gonz\u00e1lez et al., 2003). By contrast, our in vivo photocrosslinking study is able to unambiguously distinguish true lateral interactions from artifacts.\n\nAnother alternative explanation for these ambiguous results is other cellular factors that regulate interactions between FtsZ protofilaments in vivo. ZipA and various Zap proteins (ZapA, ZapC and ZapD) have been reported to crosslink, or to promote the lateral interactions between FtsZ protofilaments (Durand-Heredia et al., 2011; Gueiros-Filho and Losick, 2002; Haeusser et al., 2015; Hale et al., 2000; 2011; Huang et al., 2013). Such enhancement of lateral association might enable ZipA/Zap to compensate for some intrinsic defects in lateral interactions between FtsZ protofilaments, thereby resulting in normal function for some of the mutants predicted to be disruptive. The residues involved in lateral association enhancement may be distinct from our findings. For example, the EcFtsZ L169R mutant can fully rescue the cell division defect of \u0394zapAC cells (Haeusser et al., 2015), but L169 is far apart from the lateral interfaces we identified.\n\nThe inherently weak lateral interactions are unlikely to mediate formation of higher-order protofilament structures such as those observed in vitro. A recent electron cryotomography study showed a mean interprotofilament spacing of 6.8 nm, slightly too far apart to support tight interactions between FtsZ protofilaments (Szwedziak et al., 2014). Moreover, membrane-targeting FtsZ (either FtsZ and FtsA, or FtsZ alone with the addition of a membrane-targeting sequence) is sufficient to reconstitute contractile Z-rings in liposomes (Osawa et al., 2008; Osawa and Erickson, 2013; Szwedziak et al., 2014), and to display treadmilling behavior and the reorganization of FtsZ protofilaments into dynamic vortices on supported membranes (Loose and Mitchison, 2014; Ramirez et al., 2016). The antiparallel protofilament arrangement would preclude treadmilling of FtsZ. It is noteworthy that the cooperative assembly of single-stranded FtsZ protofilaments implies that the mechanism of FtsZ treadmilling is distinct from that of actin, for which lateral interactions are not directly involved. We propose that transient lateral interactions induce changes in treadmilling velocities of single protofilaments when they collide, rather than mediate the formation of a stable and static higher order architecture. Although the precise details of Z-ring dynamics remain to be determined, this study is a vital step toward understanding the architecture and assembly mechanism of the bacterial cell division machinery in living cells, and provides novel structural information to guide the development of novel antimicrobial compounds that specifically target the division machinery.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Escherichia coli)</td>\n      <td>FtsZ</td>\n      <td>NA</td>\n      <td>Uniprot ID: P0A9A6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Mycobacterium tuberculosis)</td>\n      <td>FtsZ</td>\n      <td>NA</td>\n      <td>Uniprot ID: P9WN95</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Branchiostoma lanceolatum)</td>\n      <td>mNeonGreen</td>\n      <td>PMID:23524392</td>\n      <td>Uniprot ID: A0A1S4NYF2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>W3110 ftsZ::kan recA56 \u0394ftsZ</td>\n      <td>PMID:2045370</td>\n      <td></td>\n      <td>JKD7-1/pKD3, ftsZ conditional null strain with pKD3 rescue plasmid</td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>BW25113 \u0394insH11:: pBpa-tRNA synthetase /tRNA-pBpa</td>\n      <td>PMID:27298319</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>BW25113 \u0394insH11:: pBpa-tRNA synthetase /tRNA-pBpa \u0394ftsZ</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ftsZ conditional null strain with pBpa incorporation system</td>\n    </tr>\n    <tr>\n      <td>Stain, strain background (Escherichia coli)</td>\n      <td>BW25113 \u0394insH11::pBpa- tRNA synthetase/tRNA- pBpa ftsZ::ftsZ-AviTag</td>\n      <td>This paper</td>\n      <td></td>\n      <td>The endogenous ftsZ gene was modified to encode FtsZ linked with an AviTag at the C-terminus</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-EcFtsZ polyclonal antibody</td>\n      <td>This paper</td>\n      <td></td>\n      <td>The antibody was harvested by immuning rabbit with the purified EcFtsZ protein. Dilution: 1:10000, for western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alkaline phosphatase- conjugated streptavidin</td>\n      <td>Beyotime</td>\n      <td>A0312</td>\n      <td>Dilution: 1:5000, for western blot</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJSB100</td>\n      <td>PMID:12896999</td>\n      <td></td>\n      <td>pJSB2-FtsZ</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTet-FtsZ</td>\n      <td>This paper</td>\n      <td></td>\n      <td>bla pBR322 P tet::ftsZ, P tet incates Tet-on/Tet-off promoter and the expression of FtsZ in this plasmid via leaky expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTac-L3-FtsZ-mNeonGreen</td>\n      <td>This paper</td>\n      <td></td>\n      <td>bla pBR322 P L3::ftsZ-mNeonGreen, P L3 incates a synthetic constitutive promoter selected from Anderson promoter collection</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTac-0.16-FtsZ-TAG- mNeonGreen</td>\n      <td>This paper</td>\n      <td></td>\n      <td>bla pBR322 P0.16::ftsZ-TAG- mNeonGreen, P0.16 indicates a synthetic constitutive promoter selected from Anderson promoter collection and TAG amber condon was inserted into FtsZ-TAG- mNeonGreen fusion protein</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>p-benzoyl-L-phenylalanine (pBpa)</td>\n      <td>Bachem</td>\n      <td>F-2800</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression, purification, and crystallization\n\nThe full-length ftsZ gene was amplified from M. tuberculosis genomic DNA and was subcloned into the pET15b plasmid vector. MtbFtsZ protein was overexpressed in BL21(DE3)/pLysS E. coli cells, cultured at 37\u00b0C in lysogeny broth (LB) medium and induced with 1 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) after OD600 reached 0.5. The His-tagged MtbFtsZ protein was then purified with Cobalt affinity resin. After removal of the His tag by thrombin cleavage, the protein was subjected to size-exclusion chromatography performed with a Superdex 200 10/300 GL column (GE Health Sciences) that was pre-equilibrated with a buffer of 100 mM KCl, 0.1 mM EDTA, 20 mM Tris, pH 8.0, and 10% glycerol. The protein was concentrated to 20 mg/mL (as measured by ultraviolet absorbance), with 10 mM GTP added 30 min before crystallization. Well-diffracting crystals were grown by the sitting-drop vapor-diffusion method, in which 2 \u03bcL of the above MtbFtsZ-GTP solution were mixed with an equal volume of crystallization solution containing 1 M sodium citrate and 0.1 M imidizole, pH 8.0.\n\n### Data collection and structure determination\n\nCrystals were cryo-protected from their mother liquid by adding 30% glycerol, and were frozen in liquid nitrogen. Diffraction data were collected at the Shanghai Synchrotron Radiation Facility BL19U beamline (Shanghai, China). The data were indexed, integrated, and scaled using HKL-2000 (Otwinowski and Minor, 1997). Crystals are in space group P6522 and contain three GDP-MtbFtsZ subunits per asymmetric unit. The best crystal diffracted X-rays to 2.7 \u00c5 resolution, with unit-cell dimensions of a\u00a0=\u00a0100.5 \u00c5, c\u00a0=\u00a0138.3 \u00c5. Phases were determined by molecular replacement using PHASER (McCoy et al., 2005) with the MtbFtsZ monomer (molecule A, PDB ID 1RQ7) (Leung et al., 2004) as a search model. Model adjustment was performed iteratively using Xtalview (McRee, 1999), and structure refinement was performed using REFMAC (Collaborative Computational Project, Number 4, 1994). The models were refined with data to 2.7 \u00c5 resolution, maintaining a highly restrained stereochemistry. The final model contains an FtsZ molecule and a GTP molecule. All structural illustrations were prepared with PYMOL (www.pymol.org).\n\n### Characterization of EcFtsZ mutants via complementation assay\n\nThe complementation assay used here is based on the JKD7-1/pKD3 conditional null strain (Dai and Lutkenhaus, 1991) and the pJSB100 complementation vector (Stricker and Erickson, 2003). JKD7-1 is an ftsZ-null strain that is maintained in the presence of the rescue plasmid pKD3 that contains a functional ftsZ allele. The pKD3 plasmid is temperature sensitive for its replication, such that it is lost in a majority of the transformed E. coli cells when cultured at 42\u00b0C. The pJSB100 plasmid, derived from the pBAD vector, was used to express the wild-type or mutant EcFtsZ protein at a moderate level upon induction by arabinose. When strains containing both the pKD3 and the pJSB100 plasmids are grown at 42\u00b0C in the presence of arabinose, pKD3 fails to replicate and thus the survival of the cells relies on the expression of a functional EcFtsZ variant from pJSB100.\n\nThe complementation assay was performed as follows. JKD7-1/pKD3 cells were transformed with pJSB2 (carrying no ftsZ gene, as a negative control), pJSB100 (carrying the wild type EcftsZ gene, as a positive control), or a particular pJSB100-EcftsZ variant. The transformed cells were cultured in the repression medium (LB containing 34 \u03bcg/mL chloramphenicol, 100 \u03bcg/mL ampicillin, and 0.2% glucose) overnight at 30\u00b0C, reaching an OD600 of 1.0\u20132.0. Ten microliters of 10,000-fold dilutions of the overnight cultures were then plated either on induction plates containing 0.05% arabinose or on repression plates containing 0.2% glucose. Repression plates were then cultured at 30\u00b0C, and the induction plates were cultured at 42\u00b0C, to determine the number of colony forming units (CFUs). CFU values on the induction plates were normalized to the CFU values from the repression plates. A mutant was considered to complement the ftsZ conditional-null strain when an induction plate produced at least 80% as many colonies as the repression plate. For each variant, the complementation assay was repeated three times.\n\nLiquid complementation assays were performed by culturing cells transformed with pJSB100-derived plasmids that express mutant EcFtsZ proteins at 30\u00b0C to an OD600 of 0.5 in repression medium. These cultures were then diluted 5,000,000-fold and cultured at 42\u00b0C for 24 hr in induction medium containing 0.05% arabinose. The successful complementation of ftsZ conditional-null cells by an EcFtsZ variant was defined by the ability for transformed cells to grow to an OD600\u00a0>0.5; failure of complementation was defined as lack of growth (i.e., no measurable turbidity after overnight growth).\n\n### In vivo photo-crosslinking analysis\n\nThe unnatural amino acid (pBpa) incorporation system is based on a plasmid expressing orthogonal pBpa-tRNA synthetase/tRNApBpa pairs in E. coli (Ryu and Schultz, 2006). In generating a complementation system to screen for functional pBpa variants of FtsZ, we constructed the LY928-\u0394ftsZ (pJSB100) conditional null strain, in which the optimized genes encoding the pBpa-tRNA synthetase and tRNApBpa (Guo et al., 2009) are integrated into the chromosome and a functional FtsZ protein is expressed from pJSB100 upon arabinose induction (Stricker and Erickson, 2003).\n\nFor a pBpa variant of FtsZ that successfully rescued the growth of LY928-\u0394ftsZ (pJSB100) in repression medium (LB containing 50 \u03bcg/ml ampicillin and 0.2% glucose), the encoding plasmid was transformed into the LY928-ftsZ-avitag strain (whose endogenous ftsZ gene was modified to encode FtsZ linked with an AviTag at the C-terminus). The transformed cells were then grown at 37\u00b0C to mid-log phase in repression medium supplemented with 100 \u03bcM pBpa. One milliliter was then transferred to a 1.5 mL Eppendorf tube, irradiated at room temperature with UV light (365 nm) for 10 min using a Hoefer UVC 500 Crosslinker installed with 365 nm UV lamps (Amersham Biosciences) at a distance of 3 cm. Cells were subsequently harvested by centrifugation at 13,000\u00a0\u00d7\u00a0g for 5 min, added into the loading buffer, and boiled. The cell lysate was then analyzed by tricine SDS-PAGE, and probed either by immunoblotting with FtsZ antibody or with streptavidin-alkaline phosphatase conjugate. Gel bands were scanned and processed using GIMP.\n\n### Photo-crosslinking screening of FtsZ variants with randomly inserted pBpa\n\nA library of expression plasmids in which the amber codon was randomly substituted for any triplet nucleotide in the ftsZ gene was constructed using E. coli Top10 cells, based on a method modified from an earlier study (Daggett et al., 2009). The plasmid library was used to transform LY928-\u0394ftsZ (pJSB100) to select for variants that complement the ftsZ null phenotype. These complementing variants were subjected to in vivo photo-crosslinking analysis, and were sequenced to identify the site of the TAG codon replacement. The resulting library contains in-frame TAG mutations only in the N-terminal domain of FtsZ. Since the plasmid is leaky, and the in-frame TAG amber codon is read as a stop codon in E. coli Top10 cells, the generation of such a library would result in expression of truncated FtsZ proteins in cells. A likely explanation is that in-frame TAG mutation in the C-terminal domain would result in a truncated FtsZ with only the N-terminal domain, which is dominant negative.\n\n### Fluorescence microscopy\n\nPlasmids constitutively expressing mutant FtsZ fused to mNeonGreen (Shaner et al., 2013), with or without an amber codon inserted in between, were transformed into LY928 cells (in which optimized genes encoding the pBpa-tRNA synthetase and tRNApBpa (Guo et al., 2009) were integrated into the chromosome), or LY928-ftsZ-avitag cells (whose endogenous ftsZ gene was modified to encode FtsZ linked with an AviTag by a GSG linker at the C-terminus). The transformed cells were cultured at 37\u00b0C in LB (containing 50 \u03bcg/mL ampicillin and 100 \u03bcM pBpa) to mid-log phase. Cells were then loaded onto a glass dish (NEST Biotechnology) and covered with a cover glass. Images were acquired on an N-SIM imaging system (Nikon) at 30\u00b0C with a 100X/NA1.49 oil-immersion objective (Nikon) and 488 nm laser beam. The reconstructed images were further processed with NIS-Elements AR 4.20.00 (Nikon) and GIMP. For experiments in Figure 7C, we used plasmids with synthetic constitutive promoter PL3 (selected from the Anderson promoter collection: parts.igem.org/Promoters/Catalog/Anderson) to express FtsZ-mNeonGreen fusion protein. For experiments in Figure 7E, we used plasmids with the synthetic constitutive promoter P0.16 to express TAG inserted FtsZ-TAG-mNeonGreen. We used a counter-selective recombining technique based on lambda-Red recombination system to tag the ftsz gene in LY928 cells (Lee et al., 2009). The expression levels of FtsZ were determined by Western-blot, and the proportions of mutant FtsZ were measured by analyzing the images with ImageJ gel analysis tool (https://imagej.en.softonic.com/).\n\n### Electron microscopy\n\nFor Figure 1A and B, MtbFtsZ or EcFtsZ proteins (1 mg/mL) were first incubated in MEMK6.5 buffer (100 mM morpholine ethane sulfonic acid, pH 6.5 adjusted with KOH, 1 mM EGTA, 5 mM Mg acetate) with the addition of 0.6 mg/mL DEAE-Dextran, and in the presence of 2 mM GTP. For Figure 7A, wild-type and mutant EcFtsZ proteins (1 mg/mL) were first incubated in MEMK6.5 buffer in the presence of 2 mM GTP. The reaction mixture was then incubated on ice for 5\u201310 min, then at 37\u00b0C for 5\u201310 min, before a 5 \u03bcL aliquot was placed on a glow-discharged carbon-coated copper grid and negatively stained with 2% aqueous uranyl acetate. The air-dried grids were subsequently examined with a HITACHI HT7700 transmission electron microscope operated at 80 kV, or with a FEI Tecnai-F20 transmission electron microscope operated at 200 kV. Images of FtsZ protein assemblies were acquired on a Gatan ORIUS CCD camera at a nominal magnification of 40,000X, or with a Gatan Ultra4000 CCD camera at a nominal magnification of 50,000X.\n\n### Simulations\n\nWe performed simulations based on the model of Z-ring formation described below, and calculated the percentage of laterally disruptive FtsZ subunits incorporated into the Z-ring. We assumed that in order to incorporate into the Z-ring through lateral bonds, a protofilament loses translational and rotational degrees of freedom and hence there is an entropic cost for immobilizing a protofilament. Since only wild-type FtsZ subunits contribute to lateral attachment, the balance between the energy of binding and the entropic cost results in an upper limit to the fraction of laterally disruptive subunits that a protofilament can tolerate and still incorporate into Z-ring. To simplify, we consider the dynamics of 200 protofilaments in the simulations, and all protofilaments are set to be 50 subunits long. We then use a variable threshold T, which is related to the critical fraction (fc) by: fc\u00a0=\u00a0T/50. In each simulation, we set the overall proportion f of laterally disruptive subunits in a cell and generated a vector X = (x1, x2,. .., x200), where xi represents the number of laterally disruptive subunits in the ith protofilament, and was selected based on a Binomial distribution with probability f (Figure 7\u2014figure supplement 1). For a protofilament with more or less laterally disruptive subunits than the threshold T, we set the probability of Z-ring incorporation to 0.01 or 0.99, respectively. We used a Boolean vector V = (0, 1, \u2026, 1) to represent the states of protofilaments, where 1 or 0 indicate incorporation or not into the Z-ring, respectively. We then calculated the percentage of laterally disruptive subunits incorporated into the Z-ring as:\n\n$$\n\\frac{X\u22c5V}{\\sumi=1200x_{i}}\n$$\n\nFor each value of f and T, we performed 10,000 independent simulations.\n",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "3236474c-dbfc-4890-903a-87f1363df3b6",
+      "submission_id": "d021cc2b-7df3-4680-b33f-ccc380879ba5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward H Egelman, University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35578.021](https://doi.org/10.7554/eLife.35578.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Lateral interactions between protofilaments of the bacterial tubulin homolog FtsZ that are essential for cell division\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Joe Lutkenhaus (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile all three reviewers had many positive comments about the paper, each raised serious concerns that would preclude acceptance of this paper. It was felt that the revisions and additional experiments needed to address these concerns would be so major that they would make the submission of a revised paper within a short period of time impossible.\n\nReviewer #1:\n\nThis paper addresses a controversial issue about FtsZ assembly \u2013 lateral interactions. The conclusion is that lateral contacts occur and are functionally relevant. The crosslinking is well done however, I question that results in Figure 6, which are the most important since they provide evidence of physiological function. My concern comes down to 3 things. (1) I do not understand the lack of incorporation of the mutants described into the Z ring in vivo. In the experiments, the mutant represents a small fraction of the total FtsZ and should copolymerize so it should be incorporated into the Z ring by the preponderance of Wild type FtsZ. Perhaps, the combination of D304L or K121L with GFP causes some unexpected problem. (2) it appears that the mutants polymerize okay and even bundle in vitro (this is not mentioned in the text) based on the width of the polymers observed in the Figure. This suggests that the in vitro assembly is not a relevant assay or that the mutations do not affect bundling. However, it argues that the mutants should copolymerize with the WT FtsZ. (3) If the lateral contacts identified in this study are so important then one would expect the reciprocal mutants to also be defective. So, if D304L is lethal then the R229L or equivalent should also be lethal.\n\nReviewer #2:\n\nThis is an interesting manuscript that probes a fundamental question in bacterial cytokinesis \u2013 the importance of lateral interactions between FtsZ protofilaments and their contribution to the formation of a functional Z-ring in the cell. Most of the experiments are well designed and the article is written with clarity. Nonetheless, I have the following comments about the manuscript:\n\n1) The authors show that R229 and D301 form salt-bridges in at least 2 of the 3-subunits in the double-stranded MtbFtsZ protofilament structure (Figure 1E). Yet, the leucine substitution at S231(R229) but not D304(D301) can yield cross-linking dimers (Figure 2) and complement in vivo (Figure 4 and 4S1). The authors need to further clarify the \"essentiality\" of D304(D301) in mediating lateral interactions. In the context of multiple weak electrostatic interactions contributing to lateral interactions between protofilaments as a whole, why are some residues essential and not others?\n\n2) Based on the structural data, the authors conclude that residues R119(K121) and D301(D304) are critical in mediating lateral interactions. The inability of substitutions at K121 and D304 to form cross-linking dimers (Figure 5), complement in vivo (Figure 4), and the mutant protein fusions to be recruited to the Z-ring in vivo (Figure 6) are reported to be consistent with the importance of these residues in mediating lateral interactions in the cell. Additional evidence beyond the crystallographic interface data that K121 and D304 are indeed mediating lateral interactions is warranted to make a more convincing argument. Also, is the implication that the R119 and R76 side-chains hydrogen bond in Figure 1D inset?\n\n3) Why do lateral interaction mutants that form protofilaments (K121L or D304L) fail to integrate into the Z-ring? Presumably, in vivo, these protofilaments can still be tethered to the membrane by FtsA and/or ZipA, which interact with the C-terminal tail of FtsZ. It is conceivable that these mutants can associate via their second \"functional\" lateral interface with native FtsZ protofilaments and incorporate into a mixed Z-ring. Another possibility could be that these mutant protofilaments are crosslinked to native polymers through bundling proteins to generate mixed Z-rings in the cells.\n\n4) The electron microscopy analyses of K121L and D304L mutants under GTP-dependent polymerization conditions appear to show similarly associated protofilaments as WT or R78L (a non-disruptive lateral interaction mutant) (Figure 6) \u2013 maybe the mutant protofilaments can associate using the second \"functional\" lateral interface under these conditions. Perhaps the authors could include some quantitative analysis of the EM images in terms of the thickness of the double-stranded protofilaments in the various mutants compared to the WT.\n\n5) While the complementation assays as reported are reasonable, visualization of cell and Z-ring morphologies in the various mutants could provide meaningful differences between the various residues mediating lateral interactions.\n\n6) The authors discuss diffusion dynamics of the various configurations of the protofilaments in their model (Figure 7), however, there is no discussion of how lateral interactions, especially in configuration 3 stated as \"with stable lateral interactions holding neighboring protofilaments firmly in place\", reconcile with the treadmilling of FtsZ protofilaments and the rapid turnover of individual FtsZ subunits in the cell.\n\nReviewer #3:\n\nThis paper addresses the role of higher-order filament architecture in the function of FtsZ, the tubulin-like cell division protein of bacteria that assembles into a cytokinetic ring. This is a question fundamental to our understanding of how the ring works to organize and drive cytokinesis. Previous work by Li et al., (2003) crystallized a double stranded antiparallel FtsZ filament of Mycobacterium tuberculosis (Mtb) and characterized residues in FtsZ important for longitudinal interactions within protofilaments (pfs). In the present study, some of the same authors have crystallized another antiparallel double stranded FtsZ filament from Mtb that has a different and more extensive inter-filament interface consisting mainly of charged residues. They cleverly use photocrosslinking with unnatural amino acids inserted at these and other residues to identify those involved in close interactions with another residue of FtsZ. This assay identifies critical charged residues most likely involved in lateral interactions between pfs. The authors then show that altering these residues (e.g. to leucine) in a few cases prevents the interactions and blocks in vivo function, including the ability to incorporate into the FtsZ ring.\n\nWhile the study is important, generally well done and mostly clearly written, I do have a number of concerns that need to be addressed.\n\nMajor comments:\n\n1) In this work, the authors have isolated another antiparallel double stranded FtsZ filament from Mtb that has a different inter-filament interface from the previously published structure by Li et al., 2003. Given that they rely heavily on the new pf structure for most of their mutant choices and for speculations about electrostatic interactions, they need to be clearer about why the new structure is different from the previous one, and why they think this new structure is more physiologically relevant.\n\n2) It is puzzling that none of the residues found here at the lateral interfaces corresponds with residues genetically implicated in lateral interactions in previous reports: D86K (shown by Stricker and Erickson, 2003 to form paired pfs); R174D (originally found by Koppelman et al., 2004, to be defective in pf bundling, albeit recently disputed by Moore et al., 2016; E93R (shown by Jaiswal et al., 2010, to hyperbundle in vitro and fail to function in vivo) and L169R (shown by Haeusser et al., 2015, to hyperbundle in vitro and to bypass ZipA function in vivo). The authors need to mention this, hopefully with some kind of explanation. This would be a better use of Discussion section space (see comments about the Discussion section below).\n\n3) It was surprising to see no mention whatsoever of ZipA and Zap proteins that are known, in some cases quite clearly, to promote lateral interactions between pfs (or at least crosslinking), and their potential roles (see also below). Furthermore, I don't think the model in Figure 8 is all that helpful in part because it does not consider the roles of these proteins in higher order assembly of FtsZ. Perhaps some of the leucine substitution mutants functioned normally for cell division is because Zap/ZipA can compensate for an intrinsic defect in lateral interactions between pfs.\n\n4) It was hard to follow the different mutants, despite having the alignment figure. Could all the mutants (E. coli residue numbers) be shown on the crystal structure of the pfs? Along the same lines, it should be made more clear up front that the crosslinking studies were done with E. coli FtsZ.\n\nThe Discussion section was disappointing for a number of reasons outlined below:\n\n1) Although concise and well written, it is superficial and somewhat speculative and refers to a vague cartoon model that does not provide much new insight into how FtsZ protofilaments might work in the cell. The potential contributions of interfaces 1 and 2 are not discussed either. Finally, the recent evidence that FtsZ pfs move by treadmilling (Yang et al., and Bisson Filho et al., 2016) and how that activity relates to pf lateral interactions was not mentioned in the text or incorporated into the model.\n\n2) Electrostatic pairing is proposed as the main mechanism for lateral interactions between protofilaments, based on the crystal structure and the predominance of charged residues at the interface. This may be true, but there is very little additional supporting evidence for this claim other than a few substitutions with leucine are disruptive. It does not help the case that one of the critical residues at interface 1 of E. coli FtsZ is a serine, not an arginine as in Mtb FtsZ. For stronger proof that electrostatics are involved, the authors should at least show that charge swaps between two known interacting residues maintains lateral interactions and in vivo function.\n\n3) Can the authors rule out the possibility that the formation of some crosslinked dimers is due to interactions with another (longitudinal) subunit within the pf instead of a lateral interaction with an adjacent pf? Insertion of pBpa at the longitudinal interface residue K140 seems to allow crosslinking (Figure 3B), but is that because pBpa at residue 140 still allows function?\n\n4)I found it surprising that 8 of the leucine replacements were able to complement. Perhaps single replacements have smaller effects on lateral interactions because other interactions in the interface compensate, but the explanation offered does not seem sufficient. Perhaps changes to the opposite charge would have a larger negative effect?\n\n5) There is no mention anywhere in the manuscript (or model in Figure 8) of the role of ZipA or Zap proteins in promoting lateral interactions between FtsZ protofilaments. The nice in vivo crosslinking results may result in part from the action of these and other FtsZ-bundling proteins and not solely from intrinsic ability of FtsZ protofilaments to interact laterally. This should be explored in the Discussion section.\n\n6) It is great that the crosslinking strategy and data were internally consistent and were consistent with the functional results. However, given that ZipA and Zap proteins (among others) may influence lateral interactions between FtsZ protofilaments in vivo, the argument that the interfaces found here are important for intrinsic lateral interactions would be strengthened by testing the ability of the purified FtsZ mutants to bundle in vitro. I suggest choosing a couple of FtsZ mutants that fail to crosslink in vivo and subjecting the purified proteins to the in vitro bundling conditions used in Figure 1A-B; the prediction is that they would fail to form bundles. They already have purified K121L and D304L that were shown in Figure 6B to form protofilaments under non-bundling conditions (i.e. no DEAE-dextran), so this should be an easy experiment\n\n7) Nevertheless, from the EM images in Figure 6B, it looks like K121L and D304L do form some paired filaments, which they shouldn't at all if they are defective in lateral interactions. Can the authors explain this contradiction?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your article \"Lateral interactions between protofilaments of the bacterial tubulin homolog FtsZ are essential for cell division\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Marletta as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Joe Lutkenhaus (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Both reviewers agreed that the paper has improved since the original decision, but both reviewers felt also that the paper cannot yet be accepted in its current form.\n\nSummary:\n\nThis resubmission is an improvement over the original. It puts previous work about FtsZ bundling in better context, including other FtsZ-bundling factors such as Zap proteins, and clarifies some of the other specific concerns voiced by the first round of reviewers. Although previous microscopic and genetic evidence for lateral interactions between FtsZ filaments is quite strong, the main novelty of this study is that it is the first biochemical confirmation of lateral interactions at the atomic level between FtsZ protofilaments in cells. It also suggests that residues important for lateral interactions in vivo are different from those implicated in formation of sheets, ribbons, and bundles in vitro. This discrepancy can be rationalized by the presence of Zap proteins in vivo that keep FtsZ filaments close together, and by other proteins, e.g. FtsA, that were recently shown to do the opposite (i.e. keep FtsZ filaments apart) in a reconstituted system (PMID 28695917).\n\nEssential revisions:\n\n1) Since that first submission over a year ago, the two Science papers on FtsZ treadmilling in E. coli and B. subtilis were published, establishing the importance of FtsZ filament directionality at the Z-ring. In addition, Yao et al., (2017) reported additional cryo-electron tomographic evidence for close associations between FtsZ filaments in cells. While Yao et al., argue further that FtsZ lateral interactions occur in vivo, that is merely one more piece of evidence for this. Rather, it is treadmilling of FtsZ filaments in E. coli cells that provides the biggest concern: How can antiparallel double filaments, which the authors here, claim are forming in cells, treadmill? Treadmilling requires filaments, whether single or in a group, to have the same directionality. Antiparallel double filaments of MreB, for instance, are not expected to treadmill, and they don't. How can the authors reconcile FtsZ's important treadmilling activity with their antiparallel filament model?\n\nIn light of this, an alternative explanation for the authors' data is that there are many close interactions between FtsZ protofilaments that occur in vivo, potentially many which are transient in nature, and they have found a subset of them.\n\n2) A number of concerns were raised about Figure 7A, which shows in vitro assembly of FtsZ filaments by EM. The first is that there is no scale bar, which makes it hard to evaluate whether the filaments are single or double. Second, the field of view is so small that it is hard to make any conclusions about the overall FtsZ assembly state. But most importantly, it is clear that the D304L is forming some type of bundles or at least double stranded filaments. The authors responded to this concern in their rebuttal by discussing that \"addition of the bundling agents is likely to be critical for the observed effects\". However, no bundling agents were added for this experiment, and other FtsZ mutants with enhanced lateral interactions clearly have been reported to form at least double stranded filaments with no added bundling agents (see the Discussion section, which seems to ignore these results). This is in contrast to mostly single stranded filaments formed by wild type FtsZ under these conditions. If these mutant FtsZs were truly defective in lateral interactions, they should form only single stranded filaments, even perhaps in the presence of bundling agents. It is difficult to reconcile the seemingly enhanced lateral interactions observed with D304L in EM with the defective lateral interactions in vivo; the authors need to do a better job of presenting the data and discussing it.\n\n3) The failure of the D304L and K121L mutant FtsZs to incorporate into the Z-ring described in Figure 7 is backed by some reasonably convincing theoretical data, but still is not explained well enough for general readers. The Materials and methods section does not adequately describe the procedure. In subsection \u201cFluorescence microscopy\u201d, there is no indication of any inducer added, but yet in subsection \u201cLateral interfaces are involved in Z-ring assembly\u201d it is mentioned that an inducer was used. How do the levels of the mutant FtsZs increase? The legend to Figure 7 needs to provide more detail about the three proteins being expressed and how they are expressed, instead of making conclusions from the data.\n\n4) The critical experiments are in Figure 7 where the authors test assembly of 3 of the FtsZ mutants in vitro and incorporation into the Z ring in vivo (2 mutants affected for crosslinking and one that is not). Panel A shows the assembly in vitro. Part of this is to show the mutant can assemble. However, the morphology of the polymers show that they appear to bundle as well as the wild type (looks like this from the dimensions of the polymers). This is of some concern but as said above the correlation between in vitro bundling and what goes on in vivo is uncertain. In panel C the authors show that the mutant gets incorporated in the Z ring when ectopically expressed at a low level. In panel E the authors do a rather complicated experiment. The idea is to see if the mutant protein gets incorporated into the ring if expressed at a higher level. The results are not so convincing, in part because this is a negative result (no incorporation) rather than a positive. The idea is that if the mutant protein copolymerizes with the WT protein there will be a mixture of filaments with variable amount of WT and mutant subunits. The argument is that if a filament has a sufficient number of mutant subunits it may be defective for lateral interaction and not be incorporated. However, there still has to be enough filaments with sufficient proportion of WT subunits so that a Z ring is formed. I find it hard to believe that adding a mutant to a level that it would not get incorporated would not cause some trouble for cell division. Division is sensitive to the level of FtsZ (30% drop blocks division) and some of the WT FtsZ has to be trapped in filaments that are nonfunctional (can't get incorporated into the Z ring) it should cause trouble. The addition of the mutant FtsZ will titrate some of the WT FtsZ away interfering with cell division. From the images shown there does not appear to not be problem as the cells appear shorter than in panel C.\n\nTwo things were suggested to make this more convincing. In subsection \u201cLateral interfaces are involved in Z-ring assembly\u201d (and in Figure 7E) the authors talk about a pool of intermediate size (referring to the laterally disruptive FtsZs). It follows from this that a pool of larger size should be dominant negative. This would be a simple and easy test. If the mutants behave as the authors think then overexpression of the mutants in wild type cells should destroy the Z ring whereas the control mutant should not. This should be easy to see. Also, induction of the nonaffected mutant as a control is important since overexpression of FtsZ will cause filamentation at some point. Nevertheless, the lateral mutants should be much more toxic. The authors could just see the cells filament when the mutant protein is induced. They could use a strain with ZapA-GFP and see the ring disappear when the mutant is induced. A second experiment that should be done is to express the mutants in a strain where WT ftsZ is depleted and see what structures the mutants make. Do they form a ring on their own? This could be assessed by immunofluorescence microscopy.\n",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61ad4c13-6bf5-46c3-889c-c6cdddebfdf6",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C1",
+      "claim": "FtsZ polymerizes into protofilaments, which further assemble into higher-order structures at future division sites to form the Z-ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The prokaryotic tubulin homolog FtsZ polymerizes into protofilaments, which further assemble into higher-order structures at future division sites to form the Z-ring, a dynamic structure essential for bacterial cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about FtsZ assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "072a1aae-5854-4f1e-9fe1-3550e0851e7d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C2",
+      "claim": "The Z-ring is a dynamic structure essential for bacterial cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The prokaryotic tubulin homolog FtsZ polymerizes into protofilaments, which further assemble into higher-order structures at future division sites to form the Z-ring, a dynamic structure essential for bacterial cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about the Z-ring.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "89231199-a118-459d-b375-b8b39eadad3d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C3",
+      "claim": "Two crystallographic structures of a pair of FtsZ protofilaments were solved showing antiparallel assembly through two different inter-protofilament lateral interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we solved two crystallographic structures of a pair of FtsZ protofilaments, and demonstrated that they assemble in an antiparallel manner through the formation of two different inter-protofilament lateral interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract, supported by crystallographic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "12183384-4501-4a73-bd91-d329682784fe",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C4",
+      "claim": "Lateral interactions between FtsZ protofilaments occur in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vivo photocrosslinking studies confirmed that such lateral interactions occur in living cells, and disruption of the lateral interactions rendered cells unable to divide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo photocrosslinking experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "610db05e-20e4-4f2a-9994-bd7ebe8cef9d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C5",
+      "claim": "Disruption of lateral interactions between FtsZ protofilaments renders cells unable to divide.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vivo photocrosslinking studies confirmed that such lateral interactions occur in living cells, and disruption of the lateral interactions rendered cells unable to divide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by complementation assays shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "d46be278-e644-4da5-acc0-e69c75ad02d1",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C6",
+      "claim": "The inherently weak lateral interactions enable FtsZ protofilaments to self-organize into a dynamic Z-ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherently weak lateral interactions enable FtsZ protofilaments to self-organize into a dynamic Z-ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and modeling presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "72897f58-6fc4-42da-9036-0389fe66d6f5",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C7",
+      "claim": "The Z-ring serves as a scaffold to recruit other cell division proteins that collectively constitute the divisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Once formed, the Z-ring serves as a scaffold to recruit other cell division proteins that collectively constitute the divisome (Dajkovic and Lutkenhaus, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "ff86da1c-4fd5-4729-87fb-32d6c56935c4",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C8",
+      "claim": "During cell division, the Z-ring constricts at the leading edge of the invaginating septum, eventually causing a mother cell to divide into two daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During cell division, the Z-ring constricts at the leading edge of the invaginating septum, eventually causing a mother cell to divide into two daughter cells (Bi and Lutkenhaus, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "71b58c91-cc0f-42ec-8f77-8bdb9c20472b",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C9",
+      "claim": "FtsZ subunits interact through two putative sets of interfaces: longitudinal interfaces that join subunits head-to-tail to form protofilaments, and lateral interfaces that occur between protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsZ subunits have been suggested to interact through two putative sets of interfaces, longitudinal interfaces that join the subunits in a head-to-tail manner thereby forming a protofilament, and lateral interfaces that occur between protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "1a645c58-22a2-43e3-8060-3afe9c1005d8",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C10",
+      "claim": "FtsZ subunits readily assemble into protofilaments in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsZ subunits readily assemble into protofilaments in vitro (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and crystal structures of FtsZ protofilaments have been determined for both straight (Matsui et al., 2012; Tan et al., 2012) and curved conformations (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "9ea9a57c-6536-4353-9bad-626ea5b6b36d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C11",
+      "claim": "Crystal structures of FtsZ protofilaments have been determined for both straight and curved conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsZ subunits readily assemble into protofilaments in vitro (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and crystal structures of FtsZ protofilaments have been determined for both straight (Matsui et al., 2012; Tan et al., 2012) and curved conformations (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "24f123d9-a5e4-42b0-9edf-c9b434f87a1f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C12",
+      "claim": "In vitro, FtsZ protofilaments associate via lateral interfaces to form higher-order structures such as sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, FtsZ protofilaments have been observed to further associate via lateral interfaces to form higher-order structures such as sheets (Bramhill and Thompson, 1994; Erickson et al., 1996; Gonz\u00e1lez et al., 2003; L\u00f6we and Amos, 1999; L\u00f6we and Amos, 2000; Oliva et al., 2003; Yu and Margolin, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "dbae9263-607d-448e-aef7-c578b768ff0a",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C13",
+      "claim": "Several studies strongly suggested that lateral interfaces across protofilaments are important for FtsZ function.",
+      "claim_type": "EXPLICIT",
+      "source": "While several studies strongly suggested that lateral interfaces across protofilaments are important for FtsZ function (Dajkovic et al., 2008; Lan et al., 2009; Milam et al., 2012; Szwedziak et al., 2014), the precise nature and the functional relevance of these lateral interfaces remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "71599623-76a4-4956-bd86-706bf1aaa443",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C14",
+      "claim": "The precise nature and functional relevance of lateral interfaces between FtsZ protofilaments remain largely unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While several studies strongly suggested that lateral interfaces across protofilaments are important for FtsZ function (Dajkovic et al., 2008; Lan et al., 2009; Milam et al., 2012; Szwedziak et al., 2014), the precise nature and the functional relevance of these lateral interfaces remain largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6aa1bafe-8933-4e98-bc6a-43b121153d9f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C15",
+      "claim": "MtbFtsZ and EcFtsZ are able to form protofilament bundles in vitro in the presence of DEAE-dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "Our electron microscopy analysis showed that MtbFtsZ and FtsZ from Escherichia coli (EcFtsZ) are able to form protofilament bundles in vitro in the presence of DEAE-dextran (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electron microscopy images shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "c62552e8-65f2-4034-8da0-def72b46bc45",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C16",
+      "claim": "The ability of both EcFtsZ and MtbFtsZ protofilaments to form bundles suggests that the lateral interface of FtsZ protofilaments is a common and conserved characteristic.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that protofilaments of both EcFtsZ and MtbFtsZ are able to form such assemblies, as observed previously (Erickson et al., 1996; L\u00f6we and Amos, 1999), suggests that the lateral interface of FtsZ protofilaments is a common and conserved characteristic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6e2d9eb4-2b91-4d9d-93f9-c2fb76007dc3",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C17",
+      "claim": "A new hexagonal crystal structure of MtbFtsZ was determined to an Rfree factor of 27.3% at a resolution of 2.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now identified candidates for these interfaces in a new hexagonal crystal of MtbFtsZ, which has been determined to an Rfree factor of 27.3% at a resolution of 2.7 \u00c5 (Materials and methods, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystallographic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "47331b15-195b-4df4-9492-e1a6b0311681",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C18",
+      "claim": "The new MtbFtsZ structure is double-stranded and reveals curved filaments in an antiparallel arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with our earlier MtbFtsZ structure (Li et al., 2013), our newly determined MtbFtsZ structure is similarly double-stranded and reveals curved filaments in an antiparallel arrangement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystallographic structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "065d7377-8a78-43b9-bd67-53878fb43415",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C19",
+      "claim": "In the new MtbFtsZ structure, the inter-protofilament interface is located at the external faces of helices H3, H4, and H5 in the N-terminal subdomain (lateral interface 2).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this new structure, the inter-protofilament interface is located at the external faces of helices H3, H4, and H5 in the N-terminal subdomain (lateral interface 2, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystallographic structure shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "5a14e4bf-ac80-45a4-91ef-cf758ce3658d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C20",
+      "claim": "In the previously identified lateral interface, Arg229 of one subunit and Asp301 of the other formed two pairs of salt bridges, burying a surface area of approximately 210 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previously identified lateral interface (Li et al., 2013), Arg229 of one subunit and Asp301 of the other formed two pairs of salt bridges, burying a surface area of approximately 210 \u00c52 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the previous MtbFtsZ structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6e926bff-ebed-4088-b889-6ed7b8ef24ee",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C21",
+      "claim": "The lateral interface in the new MtbFtsZ structure is composed of basic residues Arg76, Lys77, Lys83, Arg119, and Lys120 and acidic residues Glu80, Glu87, and Glu153 from both interacting subunits, burying a larger surface area of ~870 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the lateral interface in the new MtbFtsZ structure is composed of basic residues Arg76, Lys77, Lys83, Arg119, and Lys120 and acidic residues Glu80, Glu87, and Glu153 from both interacting subunits, burying a larger surface area of ~870 \u00c52 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the new MtbFtsZ structure shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "0c8b6218-7839-4505-8702-acd2947431aa",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C22",
+      "claim": "The charged residues involved in both lateral interfaces are generally conserved, indicating that they are functionally relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "The charged residues involved in both lateral interfaces are generally conserved (Figure 1\u2014figure supplement 1), indicating that they are functionally relevant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "2814cab6-6caa-4d30-8240-ff0c0910425a",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C23",
+      "claim": "The electrostatic nature of lateral interactions was predicted in earlier studies probing the effects of pH and ionic strength on FtsZ protofilament bundling.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an electrostatic nature was predicted in earlier studies probing the effects of pH and ionic strength on FtsZ protofilament bundling (Beuria et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "68c6d9de-59de-40b7-9591-9f0f1ac9d413",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C24",
+      "claim": "In the previous MtbFtsZ structure, only two of the three FtsZ subunits (A and B) in each protofilament participated in lateral interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the previous MtbFtsZ structure (Li et al., 2013), only two of the three FtsZ subunits (A and B) in each protofilament participated in such lateral interactions, whereas the charged residues Arg229 and Asp301 in subunit C were ~6 \u00c5 apart (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the previous MtbFtsZ structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6c54d288-7fd9-40a5-b277-c0b5a8125044",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C25",
+      "claim": "The in vitro observations suggest the presence of weak lateral interactions between MtbFtsZ protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vitro observations suggest the presence of weak lateral interactions between MtbFtsZ protofilaments, in agreement with earlier electron microscopy studies as well as predictions based on kinetic modeling (Lan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from structural observations and supported by previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "08cdf1b1-53c3-4269-9fd5-ede13ca1d48f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C26",
+      "claim": "FtsZ-pBpa variants R78pBpa, N79pBpa, D82pBpa, R85pBpa, R89pBpa, K155pBpa, and S231pBpa produced covalently linked homodimers upon UV irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon irradiation with long-wavelength UV light, we found that FtsZ-pBpa variants R78pBpa, N79pBpa, D82pBpa, R85pBpa, R89pBpa, K155pBpa, and S231pBpa produced covalently linked homodimers, as demonstrated by immunoblotting analysis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "da67ff55-4587-4cc5-b208-b28063a64cdf",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C27",
+      "claim": "Photocrosslinking results demonstrate that both lateral interfaces mediate interactions between FtsZ subunits in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These photocrosslinking results clearly demonstrate that both lateral interfaces mediate interactions between FtsZ subunits in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the photocrosslinking experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "940e0ed3-847b-4c79-985f-d1b6e6511b62",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C28",
+      "claim": "Random screening identified FtsZ-pBpa variants resulting from insertion of the TAG amber codon at 10 distinct sites, with four variants (R78, D82, R85, K140) forming photocrosslinked FtsZ dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 31 colonies that yielded crosslinked FtsZ products. We then sequenced the ftsZ genes from these 31 colonies and identified FtsZ-pBpa variants resulting from insertion of the TAG amber codon at 10 distinct sites. Our immunoblotting analysis indicated that photocrosslinked FtsZ dimers were formed for four of these ten variants (corresponding to pBpa incorporated at residue positions R78, D82, R85, or K140; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the random screening results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "9998dfa5-ed27-4504-b402-bb89ed7b3d45",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C29",
+      "claim": "Residue K140 is located at the protofilament longitudinal interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these four positions, residue K140 is located at the protofilament longitudinal interface and the FtsZK140A mutant was earlier demonstrated to complement an ftsZ conditional-null strain (Li et al., 2013; Matsui et al., 2012), while R78, D82, and R85 are located at lateral interface two observed in our crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge and previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "f2eb7a63-e513-41a7-bba7-040d1ee2737d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C30",
+      "claim": "Residues R78, D82, and R85 are located at lateral interface two.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these four positions, residue K140 is located at the protofilament longitudinal interface and the FtsZK140A mutant was earlier demonstrated to complement an ftsZ conditional-null strain (Li et al., 2013; Matsui et al., 2012), while R78, D82, and R85 are located at lateral interface two observed in our crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "5b4e47bf-e54d-4b96-b36b-c45f541f9681",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C31",
+      "claim": "Random photocrosslinking screening confirms the presence of at least two interfaces involved in FtsZ assembly in living cells, both consistent with crystallographic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our photo-crosslinking analyses based on unbiased, random introduction of pBpa confirm the presence of at least two interfaces that are involved in FtsZ assembly in living cells, both consistent with our in vitro crystallographic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the random screening and crystallographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "3ef00a57-0123-4fb4-8da9-3a8923a2038f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C32",
+      "claim": "Three pBpa variants (K121pBpa, D122pBpa, and D304pBpa) failed to complement wild-type FtsZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Our photo-crosslinking analyses were performed for pBpa variants that could complement wild-type FtsZ. We were surprised to find that three variants (K121pBpa and D122pBpa from lateral interface 2, and D304pBpa from lateral interface 1) failed to complement (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "f52d05c7-cadf-4471-907c-1b7cfa484229",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C33",
+      "claim": "K121L and D304L mutations failed to complement in leucine replacement experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude potential artifacts introduced by pBpa, we replaced each of the corresponding interfacial residues with hydrophobic leucine and then characterized these mutant proteins using a similar complementation approach (Figure 4, Table 2) (Stricker and Erickson, 2003). As with pBpa replacement, K121L and D304L failed to complement (Figure 4, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation assay data shown in Figure 4 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "f485cad1-22c0-455e-ae86-394c93817c57",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C34",
+      "claim": "D122L mutation was sufficient for complementation, unlike D122pBpa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike D122pBpa, the D122L mutation was sufficient for complementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on complementation assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6ba67ba0-ac40-4a39-b834-f03487ac1ec2",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C35",
+      "claim": "Purified FtsZK121L and FtsZD304L retained similar GTPase activity to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, purified FtsZK121L and FtsZD304L retained similar GTPase activity to that of wildtype (data not shown), and assembled into protofilaments in a GTP-dependent manner, arguing against the possibility of protein misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on biochemical assays of the mutant proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "fcb4d371-91a4-447a-9ae1-7c73903b026e",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C36",
+      "claim": "FtsZK121L and FtsZD304L assembled into protofilaments in a GTP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "However, purified FtsZK121L and FtsZD304L retained similar GTPase activity to that of wildtype (data not shown), and assembled into protofilaments in a GTP-dependent manner, arguing against the possibility of protein misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on assembly assays of the mutant proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "34315c49-db76-48a3-af46-99bef1845189",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C37",
+      "claim": "None of the three non-functional pBpa variants K121pBpa, D122pBpa, and D304pBpa produced any crosslinked dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed photocrosslinking studies on the non-functional pBpa variants by expressing them in cells that also expressed the AviTagged wild-type FtsZ. Unlike functional pBpa variants (Figure 2), none of the three variants K121pBpa, D122pBpa, and D304pBpa produced any crosslinked dimer (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photocrosslinking data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "1422483d-9350-4972-a662-996419030452",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C38",
+      "claim": "The loss of FtsZ function in K121pBpa, D122pBpa, and D304pBpa variants is likely linked to a disruption of lateral interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the loss of FtsZ function in these variants is likely linked to a disruption of lateral interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the photocrosslinking and complementation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "efe53575-9201-4af0-a140-fd2933fad26c",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C39",
+      "claim": "Two double mutants across the interface (D304L/S231E and D304L/S231Q) showed complementation, demonstrating the formation of lateral interface one in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this possibility, we generated two double mutants across the interface (D304L/S231E and D304L/S231Q) and observed complementation (Figure 5), demonstrating the formation of lateral interface one in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by complementation assay data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "0534dd3b-a6df-4380-b416-625dbc54d719",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C40",
+      "claim": "The two lateral interfaces observed in vitro are important for FtsZ function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the two lateral interfaces we observed in vitro are important for FtsZ function in vivo, and lack of complementation is likely due to loss of lateral contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis and complementation studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "b4a06afa-5300-4619-a5c0-dc39bc128314",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C41",
+      "claim": "Lateral interactions are predominantly mediated by van der Waals interactions, which are sensitive to surface geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, together with those from double mutagenesis (Figure 5), suggest that lateral interactions are predominantly mediated by van der Waals interactions, which are sensitive to surface geometry; the charge complementarity may enhance these associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mutagenesis results shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "07ddc95c-2427-4977-97a9-430d1153b63c",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C42",
+      "claim": "Charge complementarity may enhance lateral associations between FtsZ protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, together with those from double mutagenesis (Figure 5), suggest that lateral interactions are predominantly mediated by van der Waals interactions, which are sensitive to surface geometry; the charge complementarity may enhance these associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mutagenesis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "286605db-1dbd-4cec-afee-c26dba1e336e",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C43",
+      "claim": "Lateral interactions between FtsZ protofilaments are much weaker on a per subunit basis compared with hydrophobic longitudinal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these results also suggest that lateral interactions between FtsZ protofilaments are much weaker on a per subunit basis in comparison with hydrophobic longitudinal interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mutagenesis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "5e8ae2e1-5852-4c16-bcd7-8266147eab34",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C44",
+      "claim": "Protofilament formation is a prerequisite for lateral interactions to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance prompted us to examine whether protofilament formation is a prerequisite for lateral interactions to occur. To this end, we introduced A181E, a mutation known to disrupt the longitudinal interface (Li et al., 2013), into a set of pBpa variants of FtsZ, including R78pBpa, N79pBpa, D82pBpa, R85pBpa, R89pBpa, K155pBpa, and S231pBpa, all of which produced covalently linked FtsZ dimers upon UV irradiation (Figures 2B and 3B). We then performed in vivo photocrosslinking analysis with this set of A181E-containing pBpa variants, and found that photocrosslinked dimers were no longer detectable for all such variants (Figure 6). Thus, protofilament preassembly is required for lateral interactions to occur, consistent with the hypothesis that the lateral interactions are generally weak on a per-subunit basis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by photocrosslinking data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "8acf03f9-382b-40e2-936a-97e4dfcde85e",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C45",
+      "claim": "The intracellular concentration of FtsZ (~5.6 \u03bcM) is much higher than the critical concentration (~1 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the intracellular concentration (~5.6 \u03bcM) (Li et al., 2014) is much higher than the critical concentration (~1 \u03bcM) (Gonz\u00e1lez et al., 2003), it is reasonable to assume that most FtsZ molecules assemble into protofilaments in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "4e41d98e-9947-4642-b0c6-0e2623a44e84",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C46",
+      "claim": "Most FtsZ molecules assemble into protofilaments in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the intracellular concentration (~5.6 \u03bcM) (Li et al., 2014) is much higher than the critical concentration (~1 \u03bcM) (Gonz\u00e1lez et al., 2003), it is reasonable to assume that most FtsZ molecules assemble into protofilaments in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on concentration comparisons from cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "59a26b64-889d-49a8-bc34-b943f2bad26a",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C47",
+      "claim": "FtsZ mutant proteins D304L and K121L are capable of forming GTP-dependent protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed that these FtsZ mutant proteins (D304L and K121L) are still capable of forming GTP-dependent protofilaments (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electron microscopy data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "c8d2f20c-37e8-43f3-933b-27b4de71490c",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C48",
+      "claim": "When laterally disruptive FtsZ is co-expressed with wild-type FtsZ, they can stochastically copolymerize to form hybrid protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "This capacity indicates that, when the laterally disruptive FtsZ is co-expressed with wild-type FtsZ, they can stochastically copolymerize to form hybrid protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the assembly capacity of the mutant proteins.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "f0d19627-83da-4bee-9565-66cbe4b896c6",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C49",
+      "claim": "There exists a critical fraction of laterally disruptive subunits within a protofilament, above which the combined lateral interactions are insufficient to exceed the entropic cost of immobilizing the protofilament.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the lateral interactions are weak, we expect that there exists a critical fraction of laterally disruptive subunits within a protofilament, above which the combined lateral interactions are insufficient to exceed the entropic cost of immobilizing the protofilament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the weak nature of lateral interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "1e8032ae-9ed0-4c25-bc42-f37336fae298",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C50",
+      "claim": "When the cellular proportion of laterally disruptive FtsZ increases, the fraction of such subunits in the Z-ring decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, when the cellular proportion of laterally disruptive FtsZ increases, the fraction of such subunits in the Z-ring decreases (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by modeling results shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "e74c857a-589f-44c4-9dbf-0005274eeb03",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C51",
+      "claim": "Laterally disruptive mutants K121L and D304L and the laterally nondisruptive mutant R78L were all efficiently incorporated into the Z-ring when the cellular proportions of mutant FtsZ proteins were ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the laterally disruptive mutants K121L and D304L and the laterally nondisruptive mutant R78L were all efficiently incorporated into the Z-ring (Figure 7C), when the cellular proportions of mutant FtsZ proteins were ~40% (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 7C and Western blot data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "ea272cc6-87f2-4ae1-9b4a-f4c154579f29",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C52",
+      "claim": "When the cellular proportions of mutant FtsZ increased to ~60%, midcell fluorescence was reduced to virtually undetectable levels for the laterally defective mutants D304L and K121L.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular proportions of mutant FtsZ (mNeonGreen tagged and untagged) increased to ~60% (as shown in Figure 7D), while the total levels of mNeonGreen-tagged FtsZ and untagged FtsZ (wild-type and mutant) were expressed at similar levels as before (Figure 7B). Fluorescence imaging demonstrated that midcell fluorescence was reduced to virtually undetectable levels for the laterally defective mutants, D304L and K121L(Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 7E and Western blot data in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "8e901ed5-04ac-4bf2-a48e-476b84ca9654",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C53",
+      "claim": "Z-rings remained visible in cells expressing a high level of the laterally non-disruptive mutant R78L.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Z-rings remained visible in cells expressing a high level of the laterally non-disruptive mutant R78L (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "37db5cba-4ffe-424e-afdb-1f62284665ac",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C54",
+      "claim": "Lateral interactions are important for FtsZ protofilament assembly into the Z-ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results strongly suggest that lateral interactions are important for FtsZ protofilament assembly into the Z-ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the fluorescence microscopy experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "d3f91c74-a705-40f3-9cc4-4ba92242a6a7",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C55",
+      "claim": "FtsZ and tubulin share a similar overall structure and use similar longitudinal interfaces to form protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsZ and its eukaryotic counterpart tubulin share a similar overall structure and use similar longitudinal interfaces to form protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FtsZ and tubulin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "c762a8ad-3e40-484c-933e-f11d7ea0c476",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C56",
+      "claim": "Unlike tubulin, which exhibits strong lateral interactions to form multi-stranded microtubules, FtsZ polymerizes into single-stranded protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike tubulin, which exhibits strong lateral interactions to form multi-stranded microtubules, FtsZ polymerizes into single-stranded protofilaments (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and undergoes GTP hydrolysis-driven treadmilling (Bisson-Filho et al., 2017; Chen and Erickson, 2005; Loose and Mitchison, 2014; Mukherjee and Lutkenhaus, 1994; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "19ca2b02-2669-44c7-aad7-fb3556b2d1b0",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C57",
+      "claim": "FtsZ undergoes GTP hydrolysis-driven treadmilling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike tubulin, which exhibits strong lateral interactions to form multi-stranded microtubules, FtsZ polymerizes into single-stranded protofilaments (Mukherjee and Lutkenhaus, 1994; Romberg et al., 2001), and undergoes GTP hydrolysis-driven treadmilling (Bisson-Filho et al., 2017; Chen and Erickson, 2005; Loose and Mitchison, 2014; Mukherjee and Lutkenhaus, 1994; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "1a0de3c9-93b6-4379-9097-4521dc73ac08",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C58",
+      "claim": "FtsZ protofilaments coalesce and attach to the membrane at the division site through ZipA and FtsA, forming the Z-ring.",
+      "claim_type": "EXPLICIT",
+      "source": "These FtsZ protofilaments further coalesce and attach to the membrane at the division site through ZipA and FtsA (Hale and de Boer, 1997; Pichoff and Lutkenhaus, 2002), forming the Z-ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "5e3db0d5-93c5-4b4b-b1fd-299b8997274f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C59",
+      "claim": "Two different lateral interfaces of FtsZ protofilaments were directly observed based on crystallographic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we directly observed two different lateral interfaces of FtsZ protofilaments based on crystallographic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "bc348010-856a-48d2-a453-20d382f62a16",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C60",
+      "claim": "The presence of lateral interfaces in living cells was confirmed via in vivo photocrosslinking.",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently confirmed the presence of these lateral interfaces in living cells via in vivo photocrosslinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on photocrosslinking experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "5866f342-0188-400b-952f-d2d68ed7ed64",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C61",
+      "claim": "Weak, yet functionally important, lateral interfaces are involved in Z-ring assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrated that these weak, yet functionally important, lateral interfaces are involved in Z-ring assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the complementation and fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "9c210708-fa28-4989-8610-6ad4942036d8",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C62",
+      "claim": "The antiparallel protofilament arrangement would preclude treadmilling of FtsZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The antiparallel protofilament arrangement would preclude treadmilling of FtsZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the structural arrangement observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "55f96724-360a-408b-b35a-251dd8df201c",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C63",
+      "claim": "Transient lateral interactions induce changes in treadmilling velocities of single protofilaments when they collide, rather than mediate the formation of a stable and static higher order architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that transient lateral interactions induce changes in treadmilling velocities of single protofilaments when they collide, rather than mediate the formation of a stable and static higher order architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "a62eeaa4-47bd-4952-8ab3-8c7dafa48428",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C64",
+      "claim": "The mechanism of FtsZ treadmilling is distinct from that of actin, for which lateral interactions are not directly involved.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the cooperative assembly of single-stranded FtsZ protofilaments implies that the mechanism of FtsZ treadmilling is distinct from that of actin, for which lateral interactions are not directly involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cooperative assembly behavior observed.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "10ee9f07-fae9-4a6e-98be-7f592ebc1430",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C65",
+      "claim": "The double-stranded MtbFtsZ-GDP protofilaments have a helical pitch of 132.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The helices have a pitch of 132.5 \u00c5 for MtbFtsZ-GDP (C) and 138.3 \u00c5 for MtbFtsZ-GTP (D) protofilaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "bd2a459a-5345-45f2-99e7-266e2d9b27e2",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C66",
+      "claim": "The double-stranded MtbFtsZ-GTP protofilaments have a helical pitch of 138.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The helices have a pitch of 132.5 \u00c5 for MtbFtsZ-GDP (C) and 138.3 \u00c5 for MtbFtsZ-GTP (D) protofilaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "6133c23a-a227-4e11-8af4-47f2f0cd9b2f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C67",
+      "claim": "The inherently weak lateral interactions are unlikely to mediate formation of higher-order protofilament structures such as those observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherently weak lateral interactions are unlikely to mediate formation of higher-order protofilament structures such as those observed in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the weak nature of lateral interactions demonstrated in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "2f60696d-206b-4312-8ba3-16c9d7aaf842",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C68",
+      "claim": "A recent electron cryotomography study showed a mean interprotofilament spacing of 6.8 nm, slightly too far apart to support tight interactions between FtsZ protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent electron cryotomography study showed a mean interprotofilament spacing of 6.8 nm, slightly too far apart to support tight interactions between FtsZ protofilaments (Szwedziak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "2e6d8684-3f50-4bc0-90a8-8ed098cb25a5",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C69",
+      "claim": "Membrane-targeting FtsZ is sufficient to reconstitute contractile Z-rings in liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, membrane-targeting FtsZ (either FtsZ and FtsA, or FtsZ alone with the addition of a membrane-targeting sequence) is sufficient to reconstitute contractile Z-rings in liposomes (Osawa et al., 2008; Osawa and Erickson, 2013; Szwedziak et al., 2014), and to display treadmilling behavior and the reorganization of FtsZ protofilaments into dynamic vortices on supported membranes (Loose and Mitchison, 2014; Ramirez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "7b3adb25-75c4-408f-bf2f-ff94e8728992",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C70",
+      "claim": "Membrane-targeting FtsZ displays treadmilling behavior and reorganization of FtsZ protofilaments into dynamic vortices on supported membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, membrane-targeting FtsZ (either FtsZ and FtsA, or FtsZ alone with the addition of a membrane-targeting sequence) is sufficient to reconstitute contractile Z-rings in liposomes (Osawa et al., 2008; Osawa and Erickson, 2013; Szwedziak et al., 2014), and to display treadmilling behavior and the reorganization of FtsZ protofilaments into dynamic vortices on supported membranes (Loose and Mitchison, 2014; Ramirez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "869580e7-8171-441d-b0c3-012dcd3dbeae",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C71",
+      "claim": "The MtbFtsZ crystal is in space group P6522 and contains three GDP-MtbFtsZ subunits per asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals are in space group P6522 and contain three GDP-MtbFtsZ subunits per asymmetric unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystallographic data collection and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "4d7495eb-9fe7-49eb-b5d3-e30d7ddb2ff7",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C72",
+      "claim": "The best MtbFtsZ crystal diffracted X-rays to 2.7 \u00c5 resolution, with unit-cell dimensions of a = 100.5 \u00c5, c = 138.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The best crystal diffracted X-rays to 2.7 \u00c5 resolution, with unit-cell dimensions of a = 100.5 \u00c5, c = 138.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystallographic data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "fea7dc35-ea05-4371-be69-af15a2518748",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C73",
+      "claim": "The final MtbFtsZ model contains an FtsZ molecule and a GTP molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model contains an FtsZ molecule and a GTP molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the refined crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "cffca565-fe72-456d-9ad6-b55f84e1dec1",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C74",
+      "claim": "A mutant was considered to complement the ftsZ conditional-null strain when an induction plate produced at least 80% as many colonies as the repression plate.",
+      "claim_type": "EXPLICIT",
+      "source": "A mutant was considered to complement the ftsZ conditional-null strain when an induction plate produced at least 80% as many colonies as the repression plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the criterion used in the complementation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "b800b722-9aea-4b08-9455-928b87291eb0",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "claim_id": "C75",
+      "claim": "The fraction of laterally disruptive subunits incorporated into protofilaments follows a Binomial distribution with a mean corresponding to the cellular proportion of laterally disruptive FtsZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that the fraction of laterally disruptive subunits incorporated into protofilaments follows a Binomial distribution with a mean corresponding to the cellular proportion of laterally disruptive FtsZ (Figure 7\u2014figure supplement 1), and that this fraction will determine the number of effective lateral bonds that could form between protofilaments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption used in the simulations shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fc620a97-8952-4bd9-8fe8-2ab37781880f",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two crystallographic structures of MtbFtsZ protofilaments were solved, revealing two distinct lateral interfaces (lateral interface 1 and lateral interface 2) mediating antiparallel protofilament assembly. The new structure was determined at 2.7 \u00c5 resolution with Rfree = 27.3%, showing lateral interface 2 involves residues on helices H3, H4, and H5 burying ~870 \u00c5\u00b2, while the previously identified lateral interface 1 involves residues burying ~210 \u00c5\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystallographic data (C17, C72, C73) provide solid structural evidence for two distinct lateral interfaces (C19, C20, C21). The resolution and refinement statistics are acceptable for a 2.7 \u00c5 structure, though the Rfree of 27.3% is somewhat high. The structural details including buried surface areas and specific residues involved are clearly documented with supporting figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "cf1ae115-05de-4915-ae28-f448676f1ec1",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both MtbFtsZ and EcFtsZ form protofilament bundles in vitro in the presence of DEAE-dextran, suggesting lateral interfaces are conserved across species. The charged residues at both lateral interfaces are generally conserved, and the interactions are weak and electrostatic in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Electron microscopy data (C15, Figure 1A-B) directly demonstrate bundle formation for both species. Sequence conservation analysis (C22, Figure 1\u2014figure supplement 1) supports functional relevance. The inference about weak interactions (C25) is supported by structural observations and cited prior work, though direct quantitative measurements of interaction strength are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "8ca49764-e34e-45af-be95-33c6e9334bb7",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In vivo photocrosslinking experiments confirm that both lateral interfaces mediate FtsZ interactions in living cells. Rationally designed pBpa variants at lateral interface residues (R78, N79, D82, R85, R89, K155, S231) formed crosslinked dimers upon UV irradiation, and unbiased random screening independently identified residues R78, D82, and R85 at lateral interface 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The photocrosslinking data (C26, Figure 2B) provide direct evidence for lateral interactions in vivo. The convergence of rational design and random screening (C28, C31, Figure 3B) strengthens the conclusion. Controls using AviTagged FtsZ demonstrate specificity. The methodology is sound and the results are reproducible across two independent approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "a0d337a0-5047-434a-8a6d-372c96d4538d",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Disruption of lateral interfaces through specific mutations (K121L, D304L) renders cells unable to divide, while these mutants retain the ability to form protofilaments and maintain GTPase activity. Double mutants that restore complementarity across lateral interface 1 (D304L/S231E, D304L/S231Q) rescue function, demonstrating the physiological importance of lateral interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Complementation assays (C32, C33, Figure 4) clearly show loss of function for specific mutants. The retention of protofilament formation and GTPase activity (C35, C36) argues against misfolding. The rescue by compensatory double mutations (C39, Figure 5) provides strong evidence that the defect is specifically due to disrupted lateral interactions rather than other structural perturbations. The logic is sound and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "8c8433e2-fa72-4a3e-b74a-1ca5e7593771",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lateral interactions are predominantly mediated by van der Waals interactions sensitive to surface geometry, with charge complementarity enhancing associations. These lateral interactions are much weaker on a per-subunit basis compared to longitudinal interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis results (Figure 5) showing variable complementation outcomes for different hydrophobic substitutions support the van der Waals mechanism (C41). The rescue by charge-swapped double mutants (C39) supports the enhancing role of electrostatics (C42). The inference about relative weakness (C43) is consistent with the structural data and functional studies, though direct quantitative binding measurements would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "2bb737d4-10dc-4b5a-a20a-a3f80a245211",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Protofilament formation is a prerequisite for lateral interactions to occur. Introduction of the longitudinal interface-disrupting mutation A181E into pBpa variants abolished all lateral crosslinking, demonstrating that lateral interactions require pre-assembled protofilaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The photocrosslinking experiments with A181E-containing variants (C44, Figure 6) provide direct evidence that disrupting longitudinal assembly prevents lateral interactions. The concentration argument (C45, C46) based on cited values supports the assumption that most FtsZ exists as protofilaments in vivo. The experimental design is appropriate and the conclusion is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "76fe6729-8851-47d2-9a6b-6e880bbdea36",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lateral interactions are essential for Z-ring assembly. Laterally disruptive mutants (K121L, D304L) incorporate into Z-rings at low cellular proportions (~40%) but are excluded at high proportions (~60%), while non-disruptive mutants (R78L) incorporate efficiently at both levels. This dose-dependent effect is consistent with a threshold model where protofilaments with excessive disruptive subunits cannot overcome the entropic cost of Z-ring incorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The fluorescence microscopy data (C51, C52, C53, Figure 7C-E) clearly demonstrate dose-dependent Z-ring incorporation. Western blots (Figure 7B, D) confirm expression levels. The modeling framework (C49, C50, C75, Figure 7\u2014figure supplements) provides a mechanistic explanation consistent with the data. The use of both disruptive and non-disruptive controls strengthens the interpretation. The conclusion that lateral interactions are important for Z-ring assembly (C54) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "7eba8523-d524-4119-a90d-d47b817a4234",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The inherently weak lateral interactions enable FtsZ protofilaments to self-organize into a dynamic Z-ring rather than forming stable static higher-order structures. The authors propose that transient lateral interactions modulate treadmilling velocities upon protofilament collision rather than mediating stable antiparallel bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the data demonstrate that lateral interactions are weak and functionally important (C61), the mechanistic model (C63) is speculative and not directly tested. The inference that weak interactions preclude stable higher-order structures (C67) is reasonable but indirect. The claim about antiparallel arrangement precluding treadmilling (C62) is logical but the proposed alternative mechanism (C63) lacks direct experimental support. This represents an interpretive framework rather than a directly demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "b7d3e868-c955-413b-8119-a935a8370fa1",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge about FtsZ structure, function, and assembly is established, including its role in Z-ring formation, cell division, and comparison to tubulin. Prior work has suggested lateral interfaces are important but their precise nature remained unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for the study and accurately represent the state of the field. The knowledge gap (C14) is appropriately identified and motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Summary of study findings and comparison to prior work. The study directly observed two lateral interfaces crystallographically and confirmed them in vivo via photocrosslinking. The mechanism of FtsZ treadmilling is proposed to be distinct from actin, and prior electron cryotomography and reconstitution studies are discussed in context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize the main findings (C59, C60) which are supported by the data discussed in other result groups. The comparison to actin (C64) is a reasonable inference. The citations to prior work (C68, C69, C70) are appropriate and accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    },
+    {
+      "id": "3fb87020-7612-4f19-abe6-fbad0f9e9b19",
+      "content_id": "4019b372-dfbb-4169-9e2c-6b09adfa006a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Methodological details including the location of K140 at the longitudinal interface and the complementation assay criterion (80% colony formation threshold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are straightforward methodological claims. C29 is supported by structural knowledge and citations. C74 describes the experimental criterion used, which is clearly stated in the methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:58:02.875118Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89231199-a118-459d-b375-b8b39eadad3d",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "6e2d9eb4-2b91-4d9d-93f9-c2fb76007dc3",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "47331b15-195b-4df4-9492-e1a6b0311681",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "065d7377-8a78-43b9-bd67-53878fb43415",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "5a14e4bf-ac80-45a4-91ef-cf758ce3658d",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "6e926bff-ebed-4088-b889-6ed7b8ef24ee",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "10ee9f07-fae9-4a6e-98be-7f592ebc1430",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "bd2a459a-5345-45f2-99e7-266e2d9b27e2",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "869580e7-8171-441d-b0c3-012dcd3dbeae",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "4d7495eb-9fe7-49eb-b5d3-e30d7ddb2ff7",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "fea7dc35-ea05-4371-be69-af15a2518748",
+      "result_id": "fc620a97-8952-4bd9-8fe8-2ab37781880f"
+    },
+    {
+      "claim_id": "6aa1bafe-8933-4e98-bc6a-43b121153d9f",
+      "result_id": "cf1ae115-05de-4915-ae28-f448676f1ec1"
+    },
+    {
+      "claim_id": "c62552e8-65f2-4034-8da0-def72b46bc45",
+      "result_id": "cf1ae115-05de-4915-ae28-f448676f1ec1"
+    },
+    {
+      "claim_id": "0c8b6218-7839-4505-8702-acd2947431aa",
+      "result_id": "cf1ae115-05de-4915-ae28-f448676f1ec1"
+    },
+    {
+      "claim_id": "2814cab6-6caa-4d30-8240-ff0c0910425a",
+      "result_id": "cf1ae115-05de-4915-ae28-f448676f1ec1"
+    },
+    {
+      "claim_id": "6c54d288-7fd9-40a5-b277-c0b5a8125044",
+      "result_id": "cf1ae115-05de-4915-ae28-f448676f1ec1"
+    },
+    {
+      "claim_id": "12183384-4501-4a73-bd91-d329682784fe",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "08cdf1b1-53c3-4269-9fd5-ede13ca1d48f",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "da67ff55-4587-4cc5-b208-b28063a64cdf",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "940e0ed3-847b-4c79-985f-d1b6e6511b62",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "f2eb7a63-e513-41a7-bba7-040d1ee2737d",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "5b4e47bf-e54d-4b96-b36b-c45f541f9681",
+      "result_id": "8ca49764-e34e-45af-be95-33c6e9334bb7"
+    },
+    {
+      "claim_id": "610db05e-20e4-4f2a-9994-bd7ebe8cef9d",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "3ef00a57-0123-4fb4-8da9-3a8923a2038f",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "f52d05c7-cadf-4471-907c-1b7cfa484229",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "f485cad1-22c0-455e-ae86-394c93817c57",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "6ba67ba0-ac40-4a39-b834-f03487ac1ec2",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "fcb4d371-91a4-447a-9ae1-7c73903b026e",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "34315c49-db76-48a3-af46-99bef1845189",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "1422483d-9350-4972-a662-996419030452",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "efe53575-9201-4af0-a140-fd2933fad26c",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "0534dd3b-a6df-4380-b416-625dbc54d719",
+      "result_id": "a0d337a0-5047-434a-8a6d-372c96d4538d"
+    },
+    {
+      "claim_id": "b4a06afa-5300-4619-a5c0-dc39bc128314",
+      "result_id": "8c8433e2-fa72-4a3e-b74a-1ca5e7593771"
+    },
+    {
+      "claim_id": "07ddc95c-2427-4977-97a9-430d1153b63c",
+      "result_id": "8c8433e2-fa72-4a3e-b74a-1ca5e7593771"
+    },
+    {
+      "claim_id": "286605db-1dbd-4cec-afee-c26dba1e336e",
+      "result_id": "8c8433e2-fa72-4a3e-b74a-1ca5e7593771"
+    },
+    {
+      "claim_id": "5e8ae2e1-5852-4c16-bcd7-8266147eab34",
+      "result_id": "2bb737d4-10dc-4b5a-a20a-a3f80a245211"
+    },
+    {
+      "claim_id": "8acf03f9-382b-40e2-936a-97e4dfcde85e",
+      "result_id": "2bb737d4-10dc-4b5a-a20a-a3f80a245211"
+    },
+    {
+      "claim_id": "4e41d98e-9947-4642-b0c6-0e2623a44e84",
+      "result_id": "2bb737d4-10dc-4b5a-a20a-a3f80a245211"
+    },
+    {
+      "claim_id": "59a26b64-889d-49a8-bc34-b943f2bad26a",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "c8d2f20c-37e8-43f3-933b-27b4de71490c",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "f0d19627-83da-4bee-9565-66cbe4b896c6",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "1e8032ae-9ed0-4c25-bc42-f37336fae298",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "e74c857a-589f-44c4-9dbf-0005274eeb03",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "ea272cc6-87f2-4ae1-9b4a-f4c154579f29",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "8e901ed5-04ac-4bf2-a48e-476b84ca9654",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "37db5cba-4ffe-424e-afdb-1f62284665ac",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "b800b722-9aea-4b08-9455-928b87291eb0",
+      "result_id": "76fe6729-8851-47d2-9a6b-6e880bbdea36"
+    },
+    {
+      "claim_id": "d46be278-e644-4da5-acc0-e69c75ad02d1",
+      "result_id": "7eba8523-d524-4119-a90d-d47b817a4234"
+    },
+    {
+      "claim_id": "5866f342-0188-400b-952f-d2d68ed7ed64",
+      "result_id": "7eba8523-d524-4119-a90d-d47b817a4234"
+    },
+    {
+      "claim_id": "9c210708-fa28-4989-8610-6ad4942036d8",
+      "result_id": "7eba8523-d524-4119-a90d-d47b817a4234"
+    },
+    {
+      "claim_id": "55f96724-360a-408b-b35a-251dd8df201c",
+      "result_id": "7eba8523-d524-4119-a90d-d47b817a4234"
+    },
+    {
+      "claim_id": "6133c23a-a227-4e11-8af4-47f2f0cd9b2f",
+      "result_id": "7eba8523-d524-4119-a90d-d47b817a4234"
+    },
+    {
+      "claim_id": "61ad4c13-6bf5-46c3-889c-c6cdddebfdf6",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "072a1aae-5854-4f1e-9fe1-3550e0851e7d",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "72897f58-6fc4-42da-9036-0389fe66d6f5",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "ff86da1c-4fd5-4729-87fb-32d6c56935c4",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "71b58c91-cc0f-42ec-8f77-8bdb9c20472b",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "1a645c58-22a2-43e3-8060-3afe9c1005d8",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "9ea9a57c-6536-4353-9bad-626ea5b6b36d",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "24f123d9-a5e4-42b0-9edf-c9b434f87a1f",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "dbae9263-607d-448e-aef7-c578b768ff0a",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "71599623-76a4-4956-bd86-706bf1aaa443",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "d3f91c74-a705-40f3-9cc4-4ba92242a6a7",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "c762a8ad-3e40-484c-933e-f11d7ea0c476",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "19ca2b02-2669-44c7-aad7-fb3556b2d1b0",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "1a0de3c9-93b6-4379-9097-4521dc73ac08",
+      "result_id": "b7d3e868-c955-413b-8119-a935a8370fa1"
+    },
+    {
+      "claim_id": "5e3db0d5-93c5-4b4b-b1fd-299b8997274f",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "bc348010-856a-48d2-a453-20d382f62a16",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "a62eeaa4-47bd-4952-8ab3-8c7dafa48428",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "2f60696d-206b-4312-8ba3-16c9d7aaf842",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "2e6d8684-3f50-4bc0-90a8-8ed098cb25a5",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "7b3adb25-75c4-408f-bf2f-ff94e8728992",
+      "result_id": "afcbb824-2d2a-4758-83dd-9ba51b81ac18"
+    },
+    {
+      "claim_id": "9998dfa5-ed27-4504-b402-bb89ed7b3d45",
+      "result_id": "3fb87020-7612-4f19-abe6-fbad0f9e9b19"
+    },
+    {
+      "claim_id": "cffca565-fe72-456d-9ad6-b55f84e1dec1",
+      "result_id": "3fb87020-7612-4f19-abe6-fbad0f9e9b19"
+    }
+  ],
+  "comparisons": []
+}

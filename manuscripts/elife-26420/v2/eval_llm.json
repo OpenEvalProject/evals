@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Current mosaic analysis methods in Drosophila have significant limitations. MARCM relies on mitotic recombination and cannot be used in post-mitotic cells, and also causes unintended homozygosity of distal mutations. CRISPR/Cas9-mediated somatic mutagenesis generates variable lesions and does not mark mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C12 accurately describe well-established limitations of existing mosaic analysis techniques (MARCM and CRISPR/Cas9) with appropriate citations. These are factual statements about prior work that provide context for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The Flip-Flop method is a novel FLP-dependent cassette inversion system that marks wild-type cells with endogenous EGFP-tagged protein and mutant cells with mCherry. The cassette contains PT and GT modules in opposite orientations flanked by FRT sites, does not rely on cell division, and produces functional EGFP-tagged proteins in 77% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C13-C26 describe the design and theoretical function of the Flip-Flop cassette with clear molecular details and appropriate citations (C22, C23). The architecture is well-documented in Figure 1A, and the 77% functionality rate is supported by prior published work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Flip-Flop insertions were generated for nine genes, with seven PT insertions complementing lethality and thus producing functional proteins. Heat-shock or ey-FLP-induced cassette inversion efficiently generates mCherry-marked mutant clones, with >95% inversion efficiency for SNF4A\u03b3, Trim9, and eff, and >70% for Nedd8, cdep, and Sik3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 present experimental validation of the method across multiple genes with quantitative efficiency data. The complementation tests (C27-C28) provide genetic evidence for functionality, and the inversion efficiencies (C31-C33) are supported by Figure 1\u2014figure supplement 5 showing representative images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Flip-Flop enables conditional gene inactivation in post-mitotic neurons, demonstrated with Trim9. Neuronal Trim9 inactivation causes sterility and droopy wings but does not affect eclosion. The method reveals three cell populations after inversion (mCherry-only, EGFP-only, and double-positive), allowing analysis of protein perdurance and selection of truly mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43, C88-C92 demonstrate Flip-Flop function in post-mitotic cells with Trim9 as a test case. The complementation data (C35-C37), phenotypic observations (C42-C43), and protein perdurance analysis (C88-C92) are well-supported by Figure 2A showing the three cell populations. The interpretation of protein perdurance is logical and novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Temperature-shift experiments with Trim9 show that adult-specific neuronal inactivation (day 4 shift to 29\u00b0C) causes reduced lifespan but not droopy wings, indicating the droopy wing phenotype requires developmental loss of Trim9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 present temporal control experiments distinguishing developmental from adult requirements for Trim9. The experimental design using GAL80ts is appropriate, and the conclusion (C46) logically follows from comparing developmental versus adult inactivation phenotypes, supported by Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SNF4A\u03b3 encodes the \u03b3 subunit of AMPK complex involved in energy homeostasis. The Flip-Flop PT insertion produces functional SNF4A\u03b3-EGFP-SNF4A\u03b3 protein (viable over deficiency), while the T2A-GAL4 allele is a loss-of-function that can drive FLP expression in the SNF4A\u03b3 pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 establish SNF4A\u03b3 biology (C47-C50 with appropriate citations) and validate the Flip-Flop alleles through complementation tests. The viability of PT insertion over deficiency (C55-C56) demonstrates functionality, while the T2A-GAL4 lethality (C54) confirms loss-of-function, supported by Figure 1\u2014figure supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94"
+    ],
+    "result": "Loss of SNF4A\u03b3 in developing eyes (using T2A-GAL4 to drive ubiquitous inversion or ey-FLP) causes larval lethality, reduced ERG amplitude, loss of rhabdomeres, and photoreceptor disorganization. The ERG defects do not worsen from day 1 to day 30, suggesting non-progressive dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63, C93-C94 demonstrate SNF4A\u03b3 function in eye development with multiple phenotypic readouts (morphology, ERG). The near-complete inversion efficiency (C93) validates the approach, and the ERG time-course (C94) is quantified in Figure 3C-D. The interpretation linking energy homeostasis to photoreceptor function (C63) is reasonable though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C95"
+    ],
+    "result": "SNF4A\u03b3 is required for autophagy. Loss of SNF4A\u03b3 in starved adult gut leads to reduced p62 levels in mutant cells, consistent with blocked autophagy depriving cells of amino acids. This parallels observations in vertebrate cells where prolonged starvation restores p62 through autophagy-derived amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C95 present autophagy analysis with p62 as a marker. The prior requirement for SNF4A\u03b3 in autophagy (C65) is appropriately cited. The counterintuitive p62 loss (C66) is explained by referencing vertebrate work (C95), and similar observations are cited (C67). Figure 4B shows the data, though the interpretation is somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Adult-specific loss of SNF4A\u03b3 (heat-shock-induced) causes severe neurodegeneration within 2 days that does not worsen by day 10, and flies die 3-4 weeks later. Control animals without hsFLP show no brain lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C96-C98 demonstrate adult neurodegeneration phenotype with appropriate controls (C98). The prior work on developmental neurodegeneration (C68) provides context. The H&E staining (Figure 4C) clearly shows structural damage, and the time course (C96) indicates acute rather than progressive degeneration. The locomotor defects (C69) support the neurological dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The Flip-Flop method permits conditional gene inactivation with spatial and temporal control in a cell cycle- and developmental stage-independent manner. Different FLP sources enable control of mosaic patterns, and the method works in both mitotically active and post-mitotic cells during development and in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C72-C74 summarize the key capabilities demonstrated throughout the paper. The spatial control is shown with ey-FLP and tissue-specific GAL4 drivers, temporal control with heat-shock and GAL80ts, and cell cycle-independence is demonstrated in post-mitotic neurons (Trim9, SNF4A\u03b3 experiments). These are well-supported by the collective experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C103"
+    ],
+    "result": "Flip-Flop differs from the similar FlpStop method in key ways: Flip-Flop produces endogenous EGFP-tagged proteins (functional for most genes), enables tracking of protein expression/localization and perdurance in mutant cells, and marks mutant cells with mCherry only in cells expressing the gene of interest (not ubiquitously via UAS/GAL4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83, C103 provide a fair comparison with FlpStop, appropriately citing the concurrent publication (C75). The advantages of endogenous tagging (C78-C80) are supported by data in this study and prior work (C78 cites Nagarkar-Jaiswal et al., 2015). The distinction in marking strategy (C81-C83) is conceptually clear and represents a genuine difference in experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Flip-Flop insertions can be generated from existing MiMIC insertions or CRISPR/Cas9-introduced MiMIC-like elements, and can be extended to Drosophila cell culture. The authors believe this will permit functional annotation of numerous genes in unprecedented detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe the generalizability of the approach with appropriate citations for the underlying technologies. Claim C87 is explicitly speculative ('we believe') about future impact, which is reasonable given the demonstrated proof-of-principle across multiple genes and the availability of existing MiMIC resources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Flip-Flop PT insertions show similar expression patterns and genetic properties to previous GFSTF protein traps. GT-alleles for eff, Cdep, Trim9, Ank2, and Ctrip are loss-of-function based on complementation tests and do not cause dominant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide validation that the larger Flip-Flop cassette does not disrupt protein trap function compared to shorter constructs (C99-C100), and confirm that GT insertions behave as expected loss-of-function alleles (C101-C102). These are important controls supported by complementation data, though the comparison is described as showing 'no obvious difference' which is somewhat qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Similar eye defects to those observed in SNF4A\u03b3 mutants have been described in alicorn (SNF4A\u03b1) mutant eye clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 appropriately cites prior work (Spasi\u0107 et al., 2008) showing similar phenotypes in the \u03b1 subunit of AMPK, which supports the interpretation that the observed defects are consistent with AMPK complex dysfunction.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "A549 cells cultured in adult bovine serum exhibit decreased glutamine catabolism compared to cells cultured in standard RPMI media. In adult bovine serum, only ~35% of glutamate is derived from glutamine (compared to 80% in RPMI), and TCA cycle labeling from glutamine is substantially reduced. This phenotype is not specific to bovine serum and is observed across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C38, C109-C116 provide converging experimental evidence from isotope tracing studies (Figure 1) showing reduced glutamine contribution to TCA cycle metabolites in adult bovine serum versus RPMI. The data include steady-state labeling measurements, kinetic validation, and replication across multiple serum sources and cell lines. The quantitative measurements are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A549 cells cultured in adult bovine serum are resistant to the glutaminase inhibitor CB-839, while the same cells are sensitive when cultured in RPMI. This recapitulates the metabolic phenotype observed in lung tumors in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by proliferation assays showing differential CB-839 sensitivity depending on culture conditions (Figure 1E). The result is consistent with the reduced glutamine dependence observed in adult bovine serum and aligns with prior in vivo observations cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Differences in the small molecule fraction between RPMI and adult bovine serum account for differential glutamine anaplerosis. Addition of RPMI nutrients, particularly amino acids, to adult bovine serum increases glutamine contribution to the TCA cycle and sensitizes cells to CB-839.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C45-C48 are supported by dialysis experiments (Figure 2) and nutrient supplementation studies (Figure 3A-B) showing that small molecules drive the phenotype. The systematic addition of nutrient subsets identifies amino acids as the critical component. The experimental design appropriately isolates small versus large molecules and tests specific nutrient classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cystine is the specific nutrient responsible for differential glutamine dependence. Addition of cystine alone to adult bovine serum is sufficient to increase glutamine anaplerosis and sensitize cells to CB-839. Cystine levels in standard media (~200 \u00b5M) are 4-10 fold higher than physiological levels (~20-50 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C53 are supported by systematic nutrient addition experiments (Figure 3, Figure 3\u2014figure supplement 1) that identify cystine as the critical amino acid. The data show that cystine alone recapitulates the phenotype observed with complete RPMI nutrients. Measured cystine concentrations in media versus plasma (Table 1) support the physiological relevance claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Cystine regulation of glutamine dependence requires the cystine/glutamate antiporter xCT/SLC7A11. Knockdown of SLC7A11 abolishes cystine-induced glutamine anaplerosis and CB-839 sensitivity, while rescue with shRNA-resistant SLC7A11 restores the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C66, C68-C70 are supported by loss-of-function experiments using multiple shRNAs and rescue experiments (Figure 4B-E). The data show that SLC7A11 knockdown reduces glutamine uptake and glutamate release rates in high cystine conditions and prevents cystine-induced glutamine anaplerosis. The rescue experiment with shRNA-resistant cDNA provides strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C83",
+      "C85"
+    ],
+    "result": "xCT/SLC7A11 expression is necessary and sufficient for cystine-induced glutamine anaplerosis and glutaminase dependence. SLC7A11 expression correlates with cystine-induced glutamine anaplerosis across cancer cell lines, and overexpression of SLC7A11 in resistant cell lines increases glutamine anaplerosis and CB-839 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C75, C83, C85 are supported by both loss-of-function (Figure 4B-E) and gain-of-function experiments (Figure 4H-J). The correlation analysis across multiple cell lines (Figure 4F) and comparison with published CB-839 sensitivity data (Figure 4G) provide additional support. The sufficiency claim is demonstrated by overexpression experiments in three independent cell lines showing increased glutamine anaplerosis and CB-839 sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C92"
+    ],
+    "result": "Oral cystine administration to tumor-bearing mice raises plasma cystine levels and increases glutamine labeling in tumors. This suggests that low cystine levels in vivo limit tumor glutamine catabolism and anaplerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79, C92 are based on in vivo experiments (Figure 5) showing increased plasma cystine and tumor glutamine/glutamate/\u03b1KG labeling after cystine gavage. However, the authors acknowledge that the bolus injection method used does not allow assessment of steady-state contribution and only captures kinetic labeling. The increased labeling could reflect faster kinetics rather than increased steady-state anaplerosis. The conclusion about limiting cystine levels in vivo is an inference that requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CB-839 treatment in high cystine conditions depletes both TCA cycle metabolites and glutathione, and increases ROS. However, glutathione depletion and ROS increase alone are not sufficient to explain decreased proliferation, as BSO treatment depletes glutathione without affecting proliferation and NAC does not rescue CB-839 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58, C60-C62 are supported by metabolite measurements and rescue experiments (Figure 3\u2014figure supplement 2). The data show that both TCA metabolites and GSH decrease with CB-839, but BSO (which depletes GSH) does not affect proliferation and NAC (which reduces ROS) does not rescue proliferation. This argues against glutathione/ROS as the sole mechanism, though the authors acknowledge they have not identified the precise limiting process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "High extracellular cystine and xCT/SLC7A11 expression cooperate to increase glutamine anaplerosis. The mechanism may involve glutamate depletion via xCT-mediated export, which relieves product inhibition of glutaminase (GLS1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide a mechanistic model supported by the experimental data and enzyme kinetics literature. The model that cystine-driven glutamate export depletes intracellular glutamate, relieving GLS1 inhibition, is consistent with the observed increase in glutamine uptake and glutamate release (Figure 4\u2014figure supplement 1) and established GLS1 enzymology. However, this mechanism is proposed but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Some cell lines that depend on glutamine anaplerosis in culture rely less on glutamine catabolism in vivo. NSCLC tumors are resistant to glutaminase inhibition in vivo but cell lines derived from these tumors show increased glutamine anaplerosis and CB-839 sensitivity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C34 are supported by citations to prior work (Davidson et al., 2016) and confirmed by the authors' own in vivo and in vitro experiments with A549 cells (Figure 1). This establishes the context and motivation for the study. The claims accurately represent both cited work and the authors' data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Standard tissue culture media contain non-physiological nutrient levels that can misrepresent tumor metabolism. Environmental factors, particularly cystine levels, play a fundamental role in determining cancer cell metabolic programs. Selection of appropriate media conditions is essential for identifying metabolically relevant therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43, C95-C100, C106-C108 are supported by the experimental data showing differences between standard media and serum, nutrient concentration measurements (Table 1), and citations to prior work. The broader conclusions about the importance of culture conditions for target identification are reasonable inferences from the data, though they represent recommendations for future work rather than directly tested hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "xCT/SLC7A11 expression may help identify patients likely to benefit from glutaminase inhibitors. Co-administration of cystine with glutaminase inhibitors, or use of NRF2-activating drugs to induce SLC7A11 expression, may enhance therapeutic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C91, C93-C94 represent therapeutic implications and speculations based on the experimental findings. While the underlying data support the mechanistic connection between SLC7A11 and glutaminase dependence, these therapeutic predictions have not been tested in the manuscript. Claim C91 cites prior work (Sayin et al., 2017) supporting NRF2 activation, but the cystine co-administration strategy is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C101",
+      "C102"
+    ],
+    "result": "Background claims about glutamine metabolism in cancer, including its roles in anaplerosis, nitrogen donation, and nucleotide synthesis; the effects of glutaminase inhibition; and the regulation of glutamine pathways by oncogenes and transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C30, C87-C90, C101-C102 represent established knowledge in the field supported by extensive citations to prior literature. These claims provide context and background for the study but do not represent novel findings from this work. The citations appear appropriate and the statements accurately reflect current understanding of cancer glutamine metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Addition of cystine to adult bovine serum increases glutamine incorporation into the TCA cycle but not to RPMI levels, and cells in adult bovine serum are more resistant to CB-839 than cells in RPMI with low cystine. This suggests alternative anaplerotic carbon sources are available in adult bovine serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by experimental data (Figure 3A-B) showing that cystine addition to serum partially but not completely recapitulates the RPMI phenotype. The inference about alternative carbon sources is reasonable given the incomplete rescue, though the specific alternative sources are not identified. This represents an acknowledged limitation and area for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Knockdown of SLC7A11 has no consistent effect on steady-state intracellular levels of glutamate or glutathione in RPMI or RPMI with low cystine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by LC-MS measurements (Figure 4\u2014figure supplement 2B) showing no significant changes in glutamate or GSH levels with SLC7A11 knockdown. This is an important control showing that the effects on glutamine anaplerosis are not simply due to altered steady-state metabolite pools but rather to changes in metabolic flux.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "BPPS identifies hierarchically arranged protein subgroups based on correlated residue patterns without structural data, and SIPRIS identifies statistically significant structural networks of these pattern residues, providing doubly significant validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 describe the complementary methodologies of BPPS and SIPRIS. The claims are internally consistent and describe the logical foundation of the approach. The 'double significance' concept (C16) is well-justified: BPPS identifies patterns from sequence alone while SIPRIS identifies structural clusters independently, making their intersection statistically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "BPPS-SIPRIS analysis of Gna1 reveals that family-specific residues form a substrate-binding interface between homodimer subunits (p=8.5\u00d710\u207b\u2077), while superfamily-conserved residues cluster in a distinct CoA-binding subdomain (p=6.8\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C33 present quantitative BPPS-SIPRIS results for Gna1 with highly significant p-values. The structural observations (22 of 25 family residues in the interface cluster, 17 of 25 superfamily residues in CoA cluster) support functional specialization. The hypotheses about the three outlier residues (C27-C29) are reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "DCA-based SIPRIS clustering of Gna1 identifies the same structural features as structure-based clustering, with even greater statistical significance (p=9.3\u00d710\u207b\u2076 vs 2.5\u00d710\u207b\u2074), potentially due to implicit incorporation of multiple structures and homodimeric contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate that DCA scores can substitute for structural distances in SIPRIS analysis. The improved p-value with DCA is documented, and the explanations for this improvement (C36-C37) are plausible. This validates SIPRIS applicability when structures are unavailable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SIPRIS identifies significant networks of R4 GTPase-specific residues (p=7.8\u00d710\u207b\u2077 to 8.3\u00d710\u207b\u2075) that correspond to previously characterized structural features including aromatic-CH-\u03c0 interactions, salt bridges, and the switch II charge dipole pocket, collectively constituting the R4 switching mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 present SIPRIS results for R4 GTPases with significant p-values and connect them to established structural features (C45-C48, supported by citations). The proposal that these residues constitute the R4 switching mechanism (C49) is a reasonable synthesis, though the hypothesis about conformation-dependent hydrogen-bond networks (C44) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Rab subfamily-specific residues form significant clusters at protein-protein interfaces with structurally distinct binding partners (Rabenosyn-5: p=2.9\u00d710\u207b\u2078; Ocrl1: p=5.2\u00d710\u207b\u2077; Rab8a homodimer: p=8.7\u00d710\u207b\u2077), suggesting these residues mediate diverse protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 document highly significant enrichment of Rab-specific residues at multiple protein interfaces. The observation that these residues interact with structurally distinct partners (C53) strengthens the conclusion about functional versatility (C55). The hypothesis linking Thr40 and Glu44 to \u03b3-phosphate sensing (C58) is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In the Rab8a-Ocrl1 complex, 19 of 23 interface residues are distinctive of either the Rab subfamily or Rab8 sub-subfamily, with Rab8-specific residues potentially compensating for lack of Rab-subfamily binding specificity by interacting with an Ocrl1 N-terminal helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide quantitative evidence (19/23 interface residues) for hierarchical functional specialization. The hypothesis about compensation (C61) is reasonable given the structural observations but remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Translation factor GTPase-specific residues cluster around switch regions and the 5' bases of tRNA (p=1.3\u00d710\u207b\u2075 and 2.6\u00d710\u207b\u2076), linking the tRNA 5' region to the GTP \u03b3-phosphate and potentially coupling GTP hydrolysis to EF-Tu dissociation upon correct codon-anticodon pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 present significant SIPRIS results for translation factors with a clear structural rationale. The BPPS classification (C62) is consistent with prior work (cited). The hypothesis about coupling GTP hydrolysis to conformational changes (C69) is well-grounded in the structural observations but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TF-specific residues form a significant cluster (p=5.2\u00d710\u207b\u2075) at the EF-Tu/EF-Ts interface centered on Phe81, including His19 and Gln114 implicated in nucleotide exchange, potentially coupling GTP-hydrolysis-mediated tRNA loading with nucleotide exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 present significant SIPRIS results with supporting citations for the functional roles of key residues (C75-C76). The hypothesis about coupling (C78) is supported by recent evidence for a quaternary complex (C77, cited), making it plausible though still requiring direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The P. aeruginosa Tse6 toxin appears to hijack the TF interaction interface with EF-Ts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by structural analysis and citation. This represents a biologically significant observation about bacterial pathogenesis mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "EF-Tu/CysN subfamily-specific residues cluster around switch regions in both proteins (p=6.3\u00d710\u207b\u2075), occupying analogous positions relative to their respective binding partners and potentially mediating EF-Tu-GDP release from the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 demonstrate parallel structural organization in functionally related proteins. The BPPS classification (C80) is consistent with prior analyses (cited). The structural observations (C83-C87) support functional similarity. The hypothesis about mediating ribosome release (C89) is reasonable given the antibiotic effect (C88, cited) but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RNA helicase-specific residues in eIF4AIII cluster significantly around RNA bases 4-5 (p=5.1\u00d710\u207b\u2077 and 5.5\u00d710\u207b\u2074), which establish greatest contact with the ATPase domain and show a rotated bond, suggesting these residues couple ATP hydrolysis to RNA duplex disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 present significant SIPRIS results with clear structural rationale. The specificity for bases 4-5 (C96: other bases p>0.9) strengthens the conclusion. The hypothesis about coupling ATP hydrolysis to RNA disruption (C95, C98) is well-grounded in structural observations but remains mechanistic speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In APE1, superfamily-conserved residues form a hydrogen-bond network centered on the abasic site (p=5.2\u00d710\u207b\u2076), while exoIII-AP-endo family-specific residues form a substrate-specific 'reaction chamber' (p=1.6\u00d710\u207b\u2076 to 1.9\u00d710\u207b\u2077) that may communicate nitrosation signals to the DNA-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 present highly significant SIPRIS results consistent with proposed mechanisms (C102, cited). The structural observations about the reaction chamber (C108-C110) are well-documented. The hypothesis about nitrosation signal communication (C112) is plausible given the known effect of Cys310 modification (C111, cited) but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "INPP5 family-specific residues form a significant hydrogen-bond network (p=1.1\u00d710\u207b\u2077) that may recognize inositol polyphosphates with 4,5-phosphate groups and mediate allosteric regulation, while subfamily-specific residues may sequester membrane-associated substrates, though SHIP2 clustering is not significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C123 present significant results for INPP5 family residues, but the functional hypotheses (C114, C116, C118, C123) are largely speculative. The lack of significance for SHIP2 (C122) weakens the generalization about subfamily function. The proposed roles require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "TDG family-specific residues form a significant hydrogen-bond network that positions DNA-binding loops and may sense sequence context, with metazoan-specific Asn230 at the network center contacting the target base and other residues encasing the catalytic water, suggesting family-specific residues play critical catalytic roles distinct from UDG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C137 present significant SIPRIS results with detailed structural observations. The identification of Asn230 as metazoan-specific (C133-C134) and its position near the catalytic water (C135, cited) support the hypothesis about catalytic importance (C136). The mechanistic divergence from UDG (C137) is documented structurally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "BPPS-SIPRIS analyses reveal that family-specific residues typically form substrate-specific 'reaction chambers' while subfamily-specific residues mediate protein interactions or signaling, allowing the same structural core to accommodate diverse cellular functions and revealing features overlooked by other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 synthesize generalizations from the multiple case studies presented. The pattern of family vs. subfamily residue roles (C140-C141) is supported by examples across protein families. The claim about revealing overlooked features (C144) is supported by the novelty of several findings, though comparison to other methods is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "BPPS-SIPRIS analyses generate testable hypotheses including: APE1 family residues mediate abasic site specificity through hydrogen bonds; INPP5 family/subfamily residues mediate allosteric regulation and membrane substrate sequestration; and metazoan TDG Asn230 network mediates substrate-specific catalysis potentially related to epigenetic mark discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C149 present hypotheses generated from the analyses. While these are reasonable interpretations of the structural data, they remain speculative without experimental validation. The hypotheses are testable and biologically plausible, but their support is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C145",
+      "C150"
+    ],
+    "result": "The BPPS-SIPRIS system can elucidate sequence-structural properties overlooked by conventional approaches, aid drug design targeting allosteric sites, and characterize functionally interacting residues remote from active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C145, and C150 make broad statements about the utility of BPPS-SIPRIS. C19 is supported by the novel findings presented throughout the paper. C145 (drug design) is speculative but reasonable given the identification of allosteric networks. C150 is well-supported by the multiple examples of remote functional residues identified.",
+    "result_type": "MAJOR"
+  }
+]

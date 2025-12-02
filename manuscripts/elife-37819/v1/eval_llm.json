@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C92"
+    ],
+    "result": "The authors developed a de novo kinetochore assembly assay using centromeric DNA and budding yeast extracts. Within 30 minutes, all kinetochore proteins assayed bound specifically to centromeric DNA, with 39 out of 49 core kinetochore proteins detected by mass spectrometry. Assembly was completely inhibited in ndc10-1 mutant extracts, demonstrating CBF3-dependent initiation consistent with in vivo requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C46, and C92 collectively demonstrate successful development of the assembly assay with comprehensive experimental validation. The immunoblot data (Figure 1C), mass spectrometry results (Table 1), and genetic controls (ndc10-1 mutant, Figure 1D) provide converging evidence that the assay assembles complete kinetochores de novo in a centromere-specific and CBF3-dependent manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Kinetochore assembly requires the CENP-A chaperone HJURPScm3 and can occur on a single centromeric nucleosome. Depletion of HJURPScm3 abolished CENP-ACse4 and all downstream CCAN component recruitment while Ndc10 binding was unaffected. Assembly occurred efficiently on both 180 bp and 250 bp templates, demonstrating that a single well-positioned centromeric nucleosome is sufficient without pericentromeric DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 and C94-C97 are well-supported by the HJURPScm3 depletion experiments (Figure 2A) and template length comparison (Figure 2B). The data show clear hierarchical assembly requirements and demonstrate sufficiency of minimal centromeric DNA, consistent with recent reconstitution work (Weir et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C99",
+      "C100"
+    ],
+    "result": "Kinetochore assembly in vitro is regulated by cell cycle stage and is most efficient in S phase and mitotic extracts. Assembly was least efficient in G1 extracts, and CENP-TCnn1 pathway components were noticeably enhanced in mitotic extracts. Active DNA replication is not strictly required since replication cannot occur in extracts without sequential kinase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60, C99-C100 are supported by the cell cycle arrest experiments (Figure 3A) showing differential assembly efficiency. The conclusion about DNA replication not being required is appropriately inferred from the extract conditions and cited literature (Heller et al., 2011), though direct testing of replication-competent extracts would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mitotic phosphorylation of Dsn1 enhances kinetochore assembly in vitro. The dsn1-2D phosphomimetic mutant showed 3- to 7-fold enrichment of outer kinetochore proteins (Mis12 complex, Ndc80, KNL1, Dam1) while inner CCAN protein levels remained similar to wild-type, demonstrating that the assay is sensitive to critical post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C65 are strongly supported by immunoblot (Figure 3B) and quantitative mass spectrometry data (Figure 3C, Table 2). The phosphomimetic mutation specifically enhances outer kinetochore assembly as expected from in vivo studies, validating the physiological relevance of the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C93"
+    ],
+    "result": "Assembled kinetochores are capable of binding microtubules. Kinetochores assembled from dsn1-2D extracts bound taxol-stabilized microtubules but not free tubulin, and this binding was abolished in ndc80-AID sli15-AID double mutant extracts, demonstrating functional microtubule-binding activity through established interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C93 are supported by the microtubule binding assay (Figure 4B). The specificity for polymerized microtubules over free tubulin and the requirement for Ndc80 and Sli15 demonstrate that assembled kinetochores have functional microtubule-binding capability, though more detailed biophysical characterization would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CENP-TCnn1 requires all CCAN subcomplexes for kinetochore localization and does not have intrinsic DNA-binding activity. The OA complex is proposed as the bifurcation point between Mis12c and CENP-TCnn1 assembly pathways, with the CENP-TCnn1 pathway comprising CENP-PO, CENP-HIK, and CENP-LN complexes. All non-essential conserved yeast kinetochore proteins are specific to the CENP-T pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by systematic analysis of CCAN mutants (Figure 5A-C). The data clearly show CENP-TCnn1 is absent when any CCAN subcomplex is disrupted, supporting the lack of independent DNA binding. The proposed pathway architecture (Figure 5D, 7E) is a reasonable inference from the assembly dependencies and known physical interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both CENP-TCnn1 and Mis12c pathways contribute to Ndc80 recruitment in the de novo assembly assay. Ndc80 levels were slightly reduced in cnn1\u0394 extracts, considerably reduced in dsn1-AID extracts, and abolished in the cnn1\u0394 dsn1-AID double mutant, demonstrating that CENP-TCnn1 contributes to Ndc80 recruitment independently of the Mis12 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are well-supported by the systematic analysis of single and double mutants (Figure 6). The additive effect of removing both pathways provides strong evidence for independent contributions to Ndc80 recruitment, though the magnitude of CENP-TCnn1's contribution is modest compared to Mis12c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The CENP-TCnn1 pathway becomes essential for viability and Ndc80 recruitment when the Mis12 pathway is compromised by defects in Dsn1 phosphorylation. Synthetic lethality was observed between dsn1-3A and deletions of cnn1, mcm22, and chl4. In the dsn1-3A mcm22-AID double mutant, Ndc80 recruitment was severely reduced and kinetochores showed scattered distribution indicating defective microtubule attachments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C78-C90, C113-C115 are strongly supported by genetic (Figure 7A), growth (Figure 7B), assembly (Figure 7C), and microscopy (Figure 7D) data. The synthetic lethality, reduced Ndc80 recruitment, and defective kinetochore distribution provide converging evidence that CENP-TCnn1 compensates for impaired Mis12c function. The p-values for kinetochore distribution differences are significant (p=0.04 and 0.036).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In budding yeast, CENP-TCnn1 does not recruit the full KMN network, unlike in human cells. CCAN mutants that specifically inhibit the CENP-TCnn1 pathway did not alter Mis12 or KNL1Spc105 assembly, and recombinant CENP-TCnn1 does not interact with recombinant Mis12 complex in vitro. This lack of linkage may explain why CENP-TCnn1 is non-essential and does not contribute to spindle checkpoint signaling in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by the assembly data (Figure 5) and consistent with prior biochemical studies (Schleiffer et al., 2012). The inference about functional consequences is reasonable given the known role of KNL1 in checkpoint signaling, though this remains somewhat speculative without direct checkpoint assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C51",
+      "C66",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C91",
+      "C98",
+      "C107",
+      "C108",
+      "C112",
+      "C116"
+    ],
+    "result": "Background and context claims establishing the importance of kinetochores, their structure and function, conservation across species, and prior work on kinetochore assembly and the dual Ndc80 recruitment pathways. These claims provide the scientific foundation and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C36, C47, C51, C66, C73-C77, C82-C83, C91, C98, C107-C108, C112, C116 are appropriately supported by citations to established literature. These background claims accurately represent the current state of knowledge in the field and provide proper context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Speculative claims about potential functions and future applications. The authors propose that anaphase enrichment of CENP-TCnn1 might increase load-bearing capacity and reinforce kinetochore stability when Aurora B phosphorylation is removed, and that switching to the CENP-T pathway may help silence the spindle assembly checkpoint. Future applications of the assay are also proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119, C122-C123 are explicitly speculative (using 'might' and 'will be useful') and represent reasonable hypotheses based on the data, but lack direct experimental support. These are appropriate discussion points but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The assembly assay is complementary to prior methods using Xenopus egg extracts but provides the advantage of genetic tractability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 accurately characterize the relationship to prior work (Guse et al., 2011) and the demonstrated genetic tractability is evident throughout the manuscript through use of temperature-sensitive mutants, AID-tagged proteins, and phosphomimetic mutations.",
+    "result_type": "MINOR"
+  }
+]

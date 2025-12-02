@@ -1,0 +1,1206 @@
+{
+  "submission": {
+    "id": "8c31fdea-78c5-4910-aae5-d23d7107ef51",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:09:10.451686Z",
+    "updated_at": "2025-12-02T02:09:10.451686Z"
+  },
+  "content": [
+    {
+      "id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "submission_id": "8c31fdea-78c5-4910-aae5-d23d7107ef51",
+      "content_type": "manuscript",
+      "content_text": "# Causal contribution and dynamical encoding in the striatum during evidence accumulation\n\n## Authors\n\n- Michael M Yartsev<sup>1</sup> ([ORCID: 0000-0003-0952-2801](https://orcid.org/0000-0003-0952-2801)) \u2020\n- Timothy D Hanks<sup>1</sup> ([ORCID: 0000-0003-4147-4475](https://orcid.org/0000-0003-4147-4475)) \u2020\n- Alice Misun Yoon<sup>1</sup> ([ORCID: 0000-0001-7832-2796](https://orcid.org/0000-0001-7832-2796))\n- Carlos D Brody<sup>1</sup> ([ORCID: 0000-0002-4201-561X](https://orcid.org/0000-0002-4201-561X)) \u2020\n\n### Affiliations\n\n1. Princeton Neuroscience Institute Princeton United States\n2. Department of Bioengineering Helen Wills Neuroscience Institute Berkeley United States\n3. Department of Neurology University of California, Davis Sacramento United States\n4. Center for Neuroscience University of California, Davis Davis United States\n5. Howard Hughes Medical Institute Maryland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA broad range of decision-making processes involve gradual accumulation of evidence over time, but the neural circuits responsible for this computation are not yet established. Recent data indicate that cortical regions that are prominently associated with accumulating evidence, such as the posterior parietal cortex and the frontal orienting fields, may not be directly involved in this computation. Which, then, are the regions involved? Regions that are directly involved in evidence accumulation should directly influence the accumulation-based decision-making behavior, have a graded neural encoding of accumulated evidence and contribute throughout the accumulation process. Here, we investigated the role of the anterior dorsal striatum (ADS) in a rodent auditory evidence accumulation task using a combination of behavioral, pharmacological, optogenetic, electrophysiological and computational approaches. We find that the ADS is the first brain region known to satisfy the three criteria. Thus, the ADS may be the first identified node in the network responsible for evidence accumulation.\n\n## Introduction\n\nAll behaving animals must interpret sensory information arriving from the environment and use that information to select future actions. How the nervous system solves this problem has been a longstanding question in neuroscience. Multiple studies across a wide range of behavioral tasks and model systems, including humans (Hunt et al., 2012; Krajbich et al., 2012; Ratcliff et al., 2015), non-human primates (Gold and Shadlen, 2007; Huk and Shadlen, 2005; Shadlen and Newsome, 1996) and rodents (Brunton et al., 2013; Carandini and Churchland, 2013; Erlich et al., 2015;\u00a0Hanks et al., 2015;\u00a0Raposo et al., 2012; Sanders and Kepecs, 2012) have proposed a framework through which neural circuits gradually accumulate sensory evidence to guide decisions. Yet, despite the observation of neural correlates of evidence accumulation in several brain regions (Ding and Gold, 2010; Gold and Shadlen, 2007; Hanks et al., 2015; Ratcliff et al., 2007; Shadlen and Newsome, 1996), a major challenge in this line of research has been that the neural circuits that\u00a0are\u00a0causally responsible for evidence accumulation have not yet been determined. Two of the cortical regions that\u00a0are\u00a0most prominently associated with evidence accumulation, namely the\u00a0posterior parietal cortex (LIP; Huk and Shadlen, 2005; Kira et al., 2015; Roitman and Shadlen, 2002; Shadlen and Newsome, 1996) and the frontal eye fields in primates (FEF; Ding and Gold, 2012a; Gold and Shadlen, 2000; Mante et al., 2013), together with its probable rodent analogue, the frontal orienting fields (FOF; Erlich et al., 2011), have been the focus of studies recently.\u00a0Surprisingly, these studies have indicated that neither region is central to the computation of gradually accumulating evidence (Erlich et al., 2015; Hanks et al., 2015; Katz et al., 2016).\n\nThe anterior dorsal striatum (ADS) serves as an intriguing alternative candidate (Ding and Gold, 2013), due in part to its unique anatomical positioning as a convergence hub for multiple brain regions (Cheatwood et al., 2003; McGeorge and Faull, 1989) where neural signatures of evidence accumulation have been observed (such as the PPC and FEF/FOF; Gold and Shadlen, 2007; Cheatwood et al., 2003; Ding and Gold, 2013; McGeorge and Faull, 1989). The ADS is thus ideally positioned to participate in evidence accumulation as part of its established role in action selection (Bogacz and Gurney, 2007; Graybiel, 2008; Hikosaka et al., 2014; Jin and Costa, 2010; Nelson and Kreitzer, 2014; Redgrave et al., 2010). Modeling work has also suggested that the ADS may participate in post-accumulation decision commitment (Lo and Wang, 2006).\n\nThe auditory input to a different striatal subregion, the posterior \u2018auditory\u2019 striatum, has been shown to be critical for auditory discriminations, leading to the suggestion that cortical projections into the striatum may provide a general mechanism for the control of motor decisions (Xiong et al., 2015; Znamenskiy and Zador, 2013). Specifically with regard to evidence accumulation, work in primates found neural correlates of evidence accumulation in the ADS (Ding 2015;\u00a0Ding and Gold, 2010; Ding and Gold, 2012b; Ding and Gold, 2013;\u00a0Ding, 2015,\u00a0Lo and Wang, 2006), and revealed that electrical microstimulation of the ADS impacts behavior that\u00a0is\u00a0based on accumulation of evidence (Ding and Gold, 2012a). These data led to the proposal that the ADS may contribute to the computations specifically involved in evidence accumulation. Yet three critical questions to test this proposal have been left unanswered.\n\nFirst, is the ADS required for unimpaired accumulation-based decision making? To date, there have been no\u00a0recorded inactivations of the dorsal striatum during the\u00a0accumulation of evidence. Inactivations are important probes of whether a region plays a central causal role for a cognitive variable of interest (Newsome and Par\u00e9, 1988; Erlich et al., 2015; Katz et al., 2016).\n\nSecond, do neurons in the dorsal striatum encode sensory information in a way that is sufficient to be involved directly\u00a0in the graded accumulation process? The correlates of evidence accumulation reported to\u00a0date in striatum have been of two types: either firing rates that, when averaged over trials, ramp upwards\u00a0with\u00a0a slope of the ramp that\u00a0increases as the evidence\u00a0strengthens (Ding and Gold, 2010),\u00a0or estimates of the temporal dynamics of firing rate variance across trials\u00a0(Ding, 2015). However, the trial\u00a0averages do not distinguish between graded evidence encodings and other encodings that on a single-trial basis do not represent gradually accumulating evidence, such as sharp coordinated steps in firing for which the timing of the step varies across trials (Hanks et al., 2015; Latimer et al., 2015). Furthermore, the variance estimates have not yet produced clearly definitive conclusions, suggesting that the ADS is only partly involved in graded accumulation (Ding, 2015).\n\nWe recently developed a complementary approach, distinct from the two earlier methods, to assess evidence accumulation encoding. This most recent approach estimates \u2018tuning curves,\u2019 that is,\u00a0direct descriptions of the relationship between recorded neural firing rates and the graded value of the evidence accumulator, and can discriminate between different encodings that otherwise appear indistinguishable (Hanks et al., 2015). Here, we apply this approach to electrophysiological recordings from the ADS.\n\nThird, does the dorsal striatum play a causal role throughout the period of accumulation? One of the key aspects of interest in gradual evidence accumulation is its relatively long timescale, as it occurs over a period of hundreds of milliseconds or more (thought to be a potential model of mental deliberation [Gold and Shadlen, 2007]). If the striatum is part of the gradual accumulation process that drives behavior, perturbing it at any timepoint during that accumulation process should affect behavior. This feature is thus an essential prerequisite for a component of the accumulator. However, no temporally\u00a0specific perturbations of the ADS during the\u00a0accumulation of evidence have yet been carried out to probe for this feature. Indeed, no brain region studied during an accumulation of evidence behavior has yet been reported to possess this feature.\n\nHere, using a combination of behavioral, pharmacological, optogenetic, electrophysiological and computational approaches, we address these three fundamental questions. The results provide evidence supporting a central causal role for the anterior dorsal striatum in\u00a0evidence accumulation.\n\n## Results\n\nWe trained rats on a previously developed decision-making task (Brunton et al., 2013) in which subjects accumulate auditory evidence over many hundreds of milliseconds to inform a binary left/right choice (Figure 1a). In each trial, rats kept their nose in a central port during the presentation of two simultaneous trains of randomly\u00a0timed auditory clicks, one played from a speaker to their left and the other from a speaker to their right. At the end of the auditory stimulus, the rat\u2019s task was to decide which side had played the greater total number of clicks. Consistent with previous studies using this task, analysis of our rats\u2019 behavior indicated that they gradually accumulated auditory evidence over the entire trial, and used that accumulated evidence to drive a categorical choice (Figure 1\u2014figure supplement 1; Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig1-v2.jpg)\n\n**Figure 1.:** (a) Sequence of events in each trial of the rat auditory Poisson-clicks task. From left to right: after light onset above the center port, rats 'fixate' their position by placing their nose inside the center port. During nose-fixation, two different trains of randomly timed auditory clicks are played concurrently from the left and right speakers. Upon termination of the sound trains, the light above the center port turns off and the rat needs to make a choice, poking into the left or right port to indicate if more clicks were played on the left or right sides, respectively. (b) Unilateral infusion of muscimol into the striatum results in a significant ipsilateral bias on accumulation trials. Purple and cyan psychometric curves show data on days of right and left striatal infusions (n left sessions = 29; n right sessions = 29), respectively. Black psychometric curve shows data from control sessions that occurred one day before infusion sessions (n = 58). (c) Bilateral infusion of muscimol into the striatum results in significant impairment on accumulation trials. The\u00a0blue psychometric curve is from bilateral infusion sessions (n = 26) and the\u00a0black psychometric curve is from control sessions that occurred one day before bilateral infusion sessions (n = 26). Data are shown as mean \u00b1 S.E.M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Averaged psychometric curve showing average performance across all rats during the Poisson-clicks task (n\u00a0=\u00a020 rats). (b) Chronometric curve of the same rats showing improved performance with longer stimulus durations. Difficulty is grouped by the ratio of auditory clicks played on the left and right sides. (c) Psychophysical reverse correlation analysis (Brunton et al., 2013). Red and green curves correspond to trials in which rats went right and left, respectively. Note the\u00a0stability of each curve, indicating that pieces\u00a0of\u00a0sensory evidence (auditory clicks) throughout the trial were weighted evenly in the rats\u2019 decision process. This result is further corroborated by\u00a0the long accumulation time constants exhibited by the rats (see Supplementary file 1).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) On\u00a0~10% of trials, rats were presented with an LED above the right or left port and had to orient towards that port. Thus, they had to perform the same motor action but success was not dependent on evidence accumulation. No significant impairment is observed for either bilateral inactivation (b\u2013c) or unilateral (d\u2013e) inactivations. The\u00a0color scheme is the same as that\u00a0used\u00a0in Figure 1b\u2013c.\u00a0musc,\u00a0muscimol.\n\nWe began to\u00a0assess the role of the anterior striatum in the accumulation task using reversible pharmacological inactivation with muscimol (Materials and methods). The anterior striatial region targeted in this study receives convergent inputs from the PPC and the FOF, brain regions previously reported to contain neural correlates of evidence accumulation but later shown to not be central to the accumulation process itself (Erlich et al., 2015; Hanks et al., 2015; Katz et al., 2016). Unilateral inactivation of the ADS biased rats to make more ipsilateral choices relative to controls (Figure 1b; bias for right side inactivation = 19.2 \u00b1\u00a04.4%, p<0.01; bias for left side inactivation = 18.6 \u00b1\u00a03.3%, p<0.01). This effect was not a gross motor bias, but was instead specific for accumulation trials, because\u00a0no significant bias was caused on interleaved motor control trials in which the rats had to make a\u00a0similar left/right motor response, but were cued by a simple visual stimulus (Figure 1\u2014figure supplement 2; p>0.4 for both left- and right-side trials). Bilateral pharmacological inactivation caused a substantial impairment in performance for accumulation trials (Figure 1c; impairment = 12.6 \u00b1\u00a03.2%, p<0.01). This impairment was again specific for accumulation trials, with no significant impairment in motor control trials where the decision was not based on the accumulation of evidence over time (Figure 1\u2014figure supplement 2; p>0.6 for both left- and right-side trials).\n\nPsychometric curves such\u00a0as those\u00a0shown in Figure 1b,c group together trials based on the click difference accrued by the end of the stimulus stream and treat all trials within each group as if they were the same. But in our clicks task, we have far more information available\u00a0because the precise temporal pattern of each individual trial\u2019s click trains is known. We have previously used this information, together with a model that takes into account those known individual click times, to quantify our subjects\u2019 behavior in terms of multiple parameters governing the dynamics of a drift-diffusion decision process (Ratcliff and McKoon, 2008). We use an enhanced model of the drift-diffusion process so that we can obtain trial-by-trial, moment-by-moment estimates of accumulating evidence (Brunton et al., 2013). This model converts the incoming stream of each trial\u2019s discrete left and right click stimuli into a scalar quantity a(t) that represents the gradually accumulating difference between the two click streams; each right click increases the value of a(t), whereas each left click decreases a(t).\u00a0Eight parameters, quantifing sensory and accumulator noise, the leakiness or instability of the accumulation process, a sticky accumulation bound, sensory depression\u00a0or\u00a0facilitation, side bias (\u00fe),\u00a0and lapse rate, govern the dynamics of how a(t) evolves in response to the sensory evidence pulses, and how they\u00a0are\u00a0then turned into a binary decision. At the end of each trial\u2019s stimulus, the accumulator a(tend), together with the parameter \u00fe, drives choices: if a(tend) > \u00fe, the model prescribes \u2018choose right\u2019, whereas if a(tend) < \u00fe, the model prescribes \u2018choose left\u2019. All of\u00a0the parameters are estimated by fitting the model to the rat\u2019s behavior (Materials\u00a0and\u00a0methods).\n\nThe original model of Brunton et al. (2013)\u00a0was not constructed to explain different types of side biases, so it had only a single parameter (\u00fe) that\u00a0could account for such lateralized effects. By adding three more parameters that could cause different types of side biases, fitting the extended model to behavioral data following unilateral inactivations, and asking which parameters are most affected relative to control trials, we can better estimate which particular aspect of the behavior was impacted by unilateral inactivations. The three side bias parameters that we consider, in addition to \u00fe, are: asymmetric sensory input gain, asymmetric sensory input noise, and asymmetric lapse rates (Materials\u00a0and\u00a0methods). Considering all four of these side bias parameters in the case of unilateral inactivations of the FOF, we previously concluded that FOF inactivations were consistent with perturbing a process that was not part of evidence accumulation directly, but was instead downstream of the accumulation process and therefore followed it (Erlich et al., 2015; Piet et al., 2017).\n\nHere, we improve upon this analysis and apply it to our striatum inactivation data. At the time of the Erlich et al. (2015) study, the complexity of determining the derivative of the model with respect to all 11 of its parameters precluded us from fitting all 11 parameters simultaneously. We instead performed exhaustive scans in the space of two parameters at a time while the other nine parameters were fixed to their control (no inactivation) values (e.g., Figure 4 in Erlich et al.\u00a0(2015)). Since that time, however, algorithmic differentiation packages, which greatly facilitate computing the derivative of arbitrary differentiable models embodied in computer code, have become widely available (Abadi et al., 2016; Baydin et al., 2015; Revels et al., 2016; Al-Rfou et al., 2016). Using the ForwardDiff package of the language Julia (Revels et al., 2016) to obtain automatically\u00a0the derivative with respect to all 11 parameters in the model of Erlich et al. (2015), we constructed a package that can efficiently and simultaneously fit all 11 parameters in the model. We are publishing this package in open source form, as part of the contribution of the current manuscript (code available at https://github.com/misun6312/PBupsModel.jl\u00a0[Yoon and Brody, 2018]; copy archived at https://github.com/elifesciences/PBupsModel.jl).\u00a0We validated this approach and our previous FOF analysis by fitting all 11 parameters simultaneously to our previous FOF unilateral inactivation data. This new analysis (Figure 2\u2014figure supplement 2, Supplementary file 4) confirmed the conclusions about the FOF found by Erlich et al. (2015). Following this conclusion, we next turned to performing the same analysis on the inactivation data collected in the current study for the anterior striatum.\n\nFor simplicity of presentation, below,\u00a0we illustrate some of the results of the model fits in terms of psychometric plots (i.e., graphing the probability of a decision to one side as a function of total #R \u2013 #L clicks, averaged over trials), but\u00a0we note again that our model and its fits are sensitive to the detailed timing of the click stimuli in each individual trial, which is information that is obscured in the trial-averaged psychometric plot. As a result, the model and its fits can resolve the effects of different parameters that are indistinguishable in a psychometric plot (see also illustrations of this point in Supplementary Figure S4 in Brunton et al. (2013)). For example, a leaky (i.e., forgetful) accumulator and an increased overall lapse rate both predict an overall performance impairment. But the leaky accumulator impairment will be greater for trials that by chance had their clicks earlier rather than later, whereas the lapse impairment will be independent of the timing of each trial\u2019s clicks. A model that is sensitive to the timing of each trial\u2019s clicks can thus distinguish the two. Similarly, an asymmetric sensory input gain and an asymmetric lapse rate both predict a side bias. But the magnitude of the bias due to an asymmetric input gain will scale with the number of clicks presented on each trial.\u00a0This contrasts with the bias that would be induced by an asymmetric lapse rate, which would be independent of the number of clicks presented. This again allows the effects of the two parameters to be distinguished. In sum, trial-by-trial and detailed click-timing effects, although not visible in the trial-averaged psychometric plot, impact the likelihood of the data under the model, and thus impact the model fits and the likelihood landscapes (such as those shown in Figure 2b and d below). When two parameters trade off in a manner that impairs our ability to distinguish them, this is revealed in the likelihood landscape as a ridge of high likelihood. The shape of the ridge quantifies the extent and scaling of the parameter trade-off (Materials\u00a0and\u00a0methods and for\u00a0example Figure 2D in Brunton et al. (2013)).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig2-v2.jpg)\n\n**Figure 2.:** (a) Psychometric curves for control and unilateral inactivation data. Left and right inactivations were collapsed together. Orange data points are from sessions following unilateral infusions of muscimol. The black and orange lines are the psychometric curves predicted from the model fit to the control and inactivation data, respectively. (b) Normalized likelihood of the data given the model, shown as a function of the parameters for which best-fit values for inactivation data were significantly different from best-fit values for control data. Magenta shows the best-fit values for control datas. The\u00a0black cross shows the\u00a0best-fit values for inactivation data. The\u00a0color scale indicates the percentage of probability mass; the region of probability mass\u00a0>95 indicates the 95% confidence region. Left: sensory noise for the side contralateral to the infusion versus accumulator noise. Although there is a trade-off between accumulator and sensory noise, the weighted sum of the accumulator and biased sensory noise has a best-fit value following unilateral inactivations that is significantly greater than its control best-fit value. Middle: leak/instability parameter versus accumulator noise. Right: summed sensory plus accumulator noise versus lapse rate, which shows that in fact the lapse rate \u03baC does not trade off with the summed noise. (c,d) As in panels (a,b) but for bilateral striatum inactivation data, and for a model where the sensory noise is constrained to be the same for both sides of the brain, so there is only one sensory noise parameter. Here the tradeoff between sensory noise and accumulator noise is large enough that we cannot distinguish whether one or both are significantly different from their control values, but there is nevertheless a significant increase in their sum.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** When a parameter \u03b8 is bounded, we transfer $\\theta=f(\\theta^{'})$ with monotonic function f. $\\theta^{'}$ is unbounded in infinite space, but $\\theta$ is constrained in the desired range for $\\theta^{'}$. The optimization on $\\theta^{'}$ finds the optimal $\\theta^{'}$ and confidence region (95% confidence ellipse) in infinite space (middle column). The optimal $\\theta^{'}$ and confidence region are transformed to the original coordinates (regular space) with function f (left column). To compare control and inactivation distribution, we subtracted two Gaussian distributions and tested the distance from the origin\u00a0(red cross), showing that the two distributions are significantly different (right column). (a) Confidence regions for unilateral inactivation and control data. Orange solid lines indicate 95% confidence regions for inactivation data, and black solid lines indicate 95% confidence regions for control. Top row: \u03c3a vs. \u03c3s,C. Middle row: \u03c3a vs. \u03bb. Bottom row: summed noise vs. \u03baC. Elongated ellipses oriented diagonally indicate that parameters can trade off with each other (e.g.,\u00a0\u03c3a vs. \u03c3s,C). An example of parameters that do not trade off is lapse rates versus noise parameters (summed noise vs. \u03baC). (b) Confidence regions for unilateral inactivation and control data. Blue solid lines indicate 95% confidence regions for inactivation data, and black solid lines 95% confidence regions for control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Psychometric curves for control and unilateral FOF inactivation data. The black line is the model fit to the control data. The purple circles with error bars are experimental data from unilateral FOF inactivation sessions, and indicate fraction of Contra choice trials (mean\u00a0\u00b1\u00a0binomial 95% confidence interval) across trial groups, with different groups having different #Contra \u2212 #Ipsi clicks. The purple line is the psychometric curve generated by the post-categorization bias model. (b) The two-dimensional normalized likelihood surface. The peak of the likelihood surface for the inactivation data is significantly different from that for the control data\u00a0for post-categorization bias (from 0.0895 to 0.9857). Input gain bias (which is parametrized so that 0.5 means no side bias) is not significantly different from its control value. (c) Reverse correlation analyses showing the relative contributions of clicks throughout the stimulus in the rats\u2019 decision process. The thick dark red and green lines are the means \u00b1 standard error across trials for contralateral and ipsilateral trials. Thin light red and green lines are the reverse correlation traces generated by extended model.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Simulation results using the best-fit parameters for control data in unilateral inactivation experiments (Supplementary file 1), but with noise parameters set to zero. The solid lines (model prediction) reach the lapse parameter values (dotted line, Supplementary file 1). (b) Same format as (a), for best-fit parameter values for unilateral inactivation data Supplementary file 2). (c) Same format as (a), for best-fit parameter values for bilateral inactivation data (Supplementary file 3). These panels show that the noise parameters largely account for the errors observed\u00a0with\u00a0the strongest stimuli.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Orange dots and error bars show the unilateral striatum inactivation data. The\u00a0orange solid line is the model prediction obtained\u00a0with\u00a0the 11-parameter full model. The grey solid line is the\u00a0model prediction when each bias parameter is set to the\u00a0corresponding\u00a0control parameter value.\n\nSimultaneously fitting all parameters of the enhanced 11-parameter model to data from sessions with unilateral muscimol inactivation of the anterior dorsal striatum revealed that two parameters differed enough from their control values to produce substantial changes in behavior (Supplementary file 2). First, the side bias in the lapse rates (the contralateral lapse rate parameter \u03baC and the ipsilateral lapse rate parameter \u03baI, which are unitless parameters in terms of fraction of trials; Materials\u00a0and\u00a0methods) significantly increased in favor of ipsilateral choices (\u03baI: from 0.29, 95% C.I. = [0.18 0.43] in control sessions to 0.00, 95% C.I. = [0.00 0.14] for inactivation sessions, \u03baC: from 0.20, 95% C.I. = [0.04 0.58] in control sessions to 0.60, 95% C.I. = [0.14 0.93] for inactivation sessions). An effect on lapse rates was also seen after unilateral FOF inactivations, where it was interpreted as an effect on processes subsequent to the accumulator, and not part of it (Erlich et al., 2015). Second, the magnitude of the accumulator and sensory noise parameters, which respectively describe diffusion noise intrinsic to the accumulator and noise associated with the addition of each sensory click, also increased significantly (Figure 2a,b and Figure 2\u2014figure supplement 1). The trade-off between these parameters (Brunton et al., 2013) was large enough that it was impossible to distinguish which of the accumulator noise \u03c32a or the ipsilateral and contraletral sensory noise parameters \u03c32s,I and \u03c32s,C was responsible for the increase. We note that we do not mean to imply that the combination of sensory and accumulator noise is a single, biologically\u00a0interpretable quantity, but simply that our data cannot distinguish between the different trade-offs between these\u00a0parameters that fit the data equally well. There was a suggestion that the intrinsic accumulator noise \u03c32a specifically increased, with this parameter being significantly greater than zero during inactivation trials whereas it was not distinguishable from zero in control trials (Figure 2b and Figure 2\u2014figure supplement 1), but the difference between control and inactivation \u03c32a values was not significant (p<0.15). Lapse rate and noise parameters described distinct effects, and did not trade off with each other (Figure 2\u2014figure supplement 1a, third row, middle column).\n\nFor data from bilateral inactivation sessions, the combination of sensory and accumulator noise parameters was again significantly greater than for\u00a0control\u00a0sessions (Figure 2c,d; w1\u03c32a + w2\u03c32s: from 31.64 clicks2/sec [95% C.I. = [17.40 55.84]] in control sessions to 117.00 clicks2/sec [95% C.I. = [71.12 156.53]] , where w1\u00a0=\u00a00.92, w2\u00a0=\u00a00.39\u00a0during inactivations. We note that noise magnitudes cannot be less than zero, implying that confidence intervals for both \u03c32a and \u03c32s are bounded by zero).\n\nThese fits contrast with those following FOF inactivation (Erlich et al., 2015). In particular, we note that the sensory and accumulator noise parameters were minimally altered after FOF inactivation, whereas ADS inactivation significantly impacted them.\n\nThis pharmacological demonstration that the striatum is required for unimpaired decisions that\u00a0are\u00a0based on the accumulation of evidence, and the model-based suggestion that the striatum affects properties of the accumulator, led us to explore the detailed neural dynamics that may support its potential causal contribution. To do so, we conducted single-unit recordings from freely behaving subjects engaged in the evidence accumulation task. Consistent with previous work (Graybiel, 2008; Jin and Costa, 2010; Kravitz and Kreitzer, 2012), we found that the neural activity of many striatal neurons was modulated by movement initiation (Figure 3\u2014figure supplement 1a\u2013c). However, we also found that over a third of the recorded neurons significantly modulate their activity in a side-selective manner (p<0.05) during the fixation period many hundreds of milliseconds before the movement initiation reporting the decision\u00a0(64/173 [37%]\u00a0of the neurons active during the fixation period\u00a0[Figure 3\u2014figure supplement 1d\u2013f]). This timing suggests\u00a0that they may have a role in forming the upcoming decision (go-left or go-right). These neurons were termed as \u2018side-selective\u2019 and for each we further defined the neuron\u2019s prefered side as that yielding the largest activation, as done previously by Hanks et al. (2015). Consistent with previous work in primate dorsal striatum (Ding and Gold, 2010), we found that the average responses of these rat striatum neurons ramped upwards for stimuli in the preferred direction (Figure 3), and moreover, that after an initial onset latency, the slope of the ramp was proportional to the stimulus strength (Figure 3; Figure 4a). Importantly, however, a gradual ramping profile is not conclusive evidence for the\u00a0encoding of gradually accumulating evidence, because such a response profile can also be consistent with other encoding schemes (Ditterich, 2006; Hanks et al., 2015; Latimer et al., 2015) such\u00a0as step changes in firing rate that occur at different times in different trials (Latimer et al., 2015). Thus, we extended our analysis to include a more direct test in which the influence of single quanta of sensory evidence on the responses of the cells is quantitatively assessed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig3-v2.jpg)\n\n**Figure 3.:** PSTHs aligned to stimulus onset are shown for three example striatum neurons. Trials were sorted into four stimulus-strength bins for each neuron. Green traces correspond to the preferred-direction stimuli and red traces to anti-preferred-direction stimuli. Darker colors correspond to stronger stimuli (less difficult) and brighter colors correspond to weaker stimuli (more difficult).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a\u2013c) Examples of three striatal neurons that did not exhibit significant modulation in their firing rates during stimulus presentation (left column) but did show movement-related firing rate modulation (right column). (d\u2013e) Examples of three striatal neurons that exhibited modulation of their firing rate during stimulus presentation and exhibited side-selective responses. This latter class of neurons are the subject of our analyses in this manuscript. For all examples, green traces are\u00a0the response for preferred direction choices and red for non-preferred direction choices (see Materials\u00a0and\u00a0methods).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig4-v2.jpg)\n\n**Figure 4.:** (a) Responses of pre-movement side-selective striatal neurons during evidence accumulation (mean \u00b1 S.E.M.). Trials are grouped by the\u00a0average strength of sensory evidence with greener and redder colors corresponding to stimuli in the preferred and non-preferred direction of the neurons, respectively. Each group of trials is sorted on the basis of the difficulty of the trials from easy to hard, corresponding to darker and lighter colors, respectively. Note the significant dependence of ramping responses on stimulus strength (n = 64 neurons from three rats). (b) Click-triggered average response \u00b1 S.E.M. Note the close correspondence of the average click-triggered population response to a theoretical prediction of a fixed-magnitude and sustained increase in the neurons\u2019 firing rate (see Materials\u00a0and\u00a0methods). (c) Firing of striatal neurons aligned to trial onset minus the neural response lag (150 ms; see Materials\u00a0and\u00a0methods) grouped on the basis of model-derived accumulator value (colors with\u00a0\u00b1 B correspond to sticky accumulation bounds). Note that this accumulator value to firing rate map is graded and fairly stable over time (n = 64 neurons). (d) The population change in firing rate as a function of accumulator value averaged across time exhibits a graded response.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) One trial for an example neuron from the striatum. The left side shows the firing rate of the neuron, and the right side shows the behavioral model\u2019s estimate of the evolution of the distribution of the accumulator value, a. The heat map illustrates the temporal evolution of a probability distribution over possible values of the decision variable (see Materials\u00a0and\u00a0methods). Time runs vertically and is aligned to stimulus onset minus neural response lag (see Materials\u00a0and\u00a0methods). \u00b1\u00a0B correspond to the \u2018sticky\u2019 decision-commitment bounds on evidence accumulation. (b) Building a map of firing rate versus accumulator value. At a given time point (here, t = 0.3 s), we copy the distribution of the\u00a0accumulator value\u00a0(blue box) to a vertical position given by the firing rate of the neuron. (c) Continuing with the same time point, we add a slice from every recorded trial. Thus, the full distribution of accumulator values for each trial contributes to the\u00a0estimate for each firing rate bin. This produces the full joint distribution P(r,a | t = 0.3), the probability of seeing firing rate r and accumulator value a at time t = 0.3 s. (d) The accumulator values are binned, and the mean firing rate is computed for each bin to generate a neural tuning curve as a function of the accumulator value. (e) The process is repeated for each time point. Each vertical slice corresponds to a tuning curve, with that from (d) shown above the blue arrowhead.\n\nIf indeed temporal integration underlies the ramping activity of the striatal cells, then each single quantum of sensory evidence (an auditory click) should result in a fixed-magnitude and a\u00a0sustained increase in the neuron\u2019s firing rate (Figure 4b, model) (Hanks et al., 2015; Huk and Shadlen, 2005). We thus estimated the effect of each sensory evidence quantum by computing the click-triggered average response of the side-selective striatal neurons. We found that striatal neurons modulated their activity in close agreement with this theoretical prediction (Figure 4b, data), arguing in favor of a role of this anterior striatal subregion in the behavioral accumulation of evidence process.\n\nWe also took advantage of a recently developed method, i.e., direct estimates of firing rates as a function of accumulated evidence,\u00a0to compute neural tuning curves (Hanks et al., 2015). Model-derived estimates of the moment-by-moment value of the accumulating evidence in each trial are collated with simultaneously recorded firing rates to generate tuning curves for accumulated evidence (see Hanks et al. (2015)), Materials\u00a0and\u00a0methods, and\u00a0the illustration of the method in Figure 4\u2014figure supplement 1). When applying this analysis to the striatal data, we found that the side-selective neurons encoded accumulating evidence in a remarkably graded manner throughout the period of evidence accumulation (Figure 4c,d). This graded encoding was consistent across different neurons in the population of recorded striatal cells (Figure 5). Such a graded representation implies that the striatum carries information about the graded value of accumulated evidence, as would be necessary for a brain structure involved in such a process.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig5-v2.jpg)\n\n**Figure 5.:** (a) Histogram of the slope of individual neurons obtained from a sigmoidal fit of the relationship between firing rate and accumulator value. The\u00a0black arrow indicates the median value of the distribution (50th percentile). Red and blue arrows indicate points corresponding to the 20th and 80th percentile marks, respectively. (b) Example tuning curves shown for 20th, 50th, and 80th (colored as in [a]) percentile neurons. Graded encodings of accumulated evidence are exhibited for all of these neurons.\n\nOur pharmacological methods address the questions of whether the anterior dorsal striatum is involved in the process of accumulation of evidence, and our electrophysiological and computational methods address how the anterior dorsal striatum represents the\u00a0accumulation\u00a0of sensory evidence. However, neither directly addresses the question of when the\u00a0anterior dorsal striatum\u00a0is\u00a0involved. This question is critical and has proven to be pivotal in assessing the involvement of a brain region in the evidence accumulation process. For example, some brain regions can be required for decisions\u00a0that\u00a0are based on accumulation of evidence, yet contribute at times suggesting\u00a0that\u00a0they are instead required for processes that are subsequent to the gradual accumulation\u00a0of\u00a0evidence itself (Erlich et al., 2015; Hanks et al., 2015). No region to date has been reported to be required at points of time that fully coincide with the evidence accumulation period.\n\nTo delineate the precise timing of the anterior dorsal striatum\u2019s contribution, we used optogenetic inactivation, mediated by halorhodopsin\u00a0(eNpHR3.0), to unilaterally and transiently inactivate this region during the Poisson Clicks task. We expressed eNpHR3.0 using viral delivery methods (Figure 6a; Materials and methods). Acute neural recordings in our experimental rats verified that we could indeed transiently silence neural activity in the striatum with fine temporal precision using the\u00a0delivery of green light (Figure 6b). We began with full-trial unilateral optogenetic inactivation and found,\u00a0in agreement with the pharmacological inactivation described above, that\u00a0optogenetic manipulation resulted in more ipsilateral choice biases relative to control trials, which in this case were randomly interleaved with the inactivation trials (Figure 6c; bias = 9.0 \u00b1\u00a02.3%, p<0.01). These effects were consistent across rats (Figure 6d). Control rats whose\u00a0striatum was\u00a0injected\u00a0with the same virus expressing YFP alone did not show a behavioral bias (bias = 0.1 \u00b1\u00a01.8%, p=0.89). Next, to resolve directly\u00a0when the striatum contributes to the auditory accumulation of evidence task, we transiently inactivated it unilaterally during one of four different 500 ms time periods during the task: (i) the delay period immediately preceding stimulus onset (\u2018pre-accumulation\u2019), (ii) the first half of a 1 s sensory stimulus (\u2018first half\u2019), (iii) the second half of a 1 s sensory stimulus (\u2018second half\u2019), or (iv) the movement period (\u2018post-choice\u2019). In contrast to similar inactivation assays of the cortical FOF, which have no effect during the\u00a0early parts of the accumulation period (Hanks et al., 2015), we found that transient optogenetic inactivation of the anterior dorsal striatum during both the first half and second half of the accumulation caused a significant bias for the ipsilateral choices, with a similar magnitude of effect in these two\u00a0periods (first half bias = 10.4 \u00b1\u00a04.0, p<0.01; second half bias = 12.9 \u00b1\u00a03.7%, p<0.01; difference = 2.5 \u00b1\u00a02.8, p=0.2; Figure 6e; the\u00a0first-half effect in the\u00a0striatum is significantly greater than that\u00a0in the\u00a0FOF, p<0.01, Figure 7). Remarkably, the effect in striatum was limited to the stimulus presentation period and we found no significant effect of optogenetic inactivation during\u00a0the pre-accumulation or post-choice periods (pre-accumulation bias = 0.4 \u00b1\u00a05.4%, p=0.42; post-choice bias = 0.9 \u00b1\u00a05.2%, p=0.38; Figure 6e). These results are consistent with the idea that the anterior dorsal striatum plays a direct causal role throughout the entire evidence accumulation process.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig6-v2.jpg)\n\n**Figure 6.:** (a) Coronal section of the left hemisphere showing the\u00a0expression of eYFP-eNpHR3.0 in the left dorsal striatum. Optical fiber localization and 750 \u03bcm estimated inactivation radius are indicated by the red circle. (b) Raster plot (bottom) and peri-stimulus time histogram (top) showing the effectiveness in silencing of local striatal activity in response to delivery of green light (indicated by the\u00a0green bar at\u00a0the top). (c) Unilateral full-trial optical inactivation of the striatum results in an ipsilateral bias in accumulation trials. The\u00a0purple and cyan psychometric curves show data for right and left striatal inactivation, respectively, whereas the\u00a0black psychometric curve shows data from control trials that occurred on the same days (n\u00a0=\u00a08 rats). (d) Scatter plot indicated the mean ipsilateral bias for each individual rat. (e) Bottom: behavioral bias caused by 500 ms inactivation during the pre-stimulus delay period (red), the first half of the sensory stimulus (yellow), the second half of the stimulus (green) and upon initiation of movement (blue). Top: task structure. Note the significant effect (indicated by an asterisk) only during evidence accumulation but not prior to the presentation of sensory stimuli nor after.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34929/elife-34929-fig7-v2.jpg)\n\n**Figure 7.:** Optogenetic inactivation of the\u00a0anterior dorsal striatum during the first half of the 1 s stimulus presentation period produced a significantly larger effect than the same manipulation of the FOF (p<0.01), with the latter data coming from a previous report. For this analysis, individual trials were resampled with replacement from both data sets across 1000 iterations, and the difference in inactivation effect was calculated for each iteration to provide a nonparametric statistical comparison. As reported above, the first-half anterior dorsal striatum effect itself is significant, and as reported previously, the first-half FOF effect is not significant, but a direct comparison as described here is still necessary to establish a significant difference.\n\n## Discussion\n\nStudies carried\u00a0out\u00a0over more than two decades have attempted to elucidate neural circuits that underlie the accumulation of evidence over time (starting with Shadlen and Newsome (1996); see Gold and Shadlen (2007), Carandini and Churchland (2013), Brody and Hanks (2016),\u00a0and\u00a0Hanks and Summerfield (2017) for reviews; see\u00a0also\u00a0Carandini and Churchland (2013), Gold and Shadlen (2007), Krajbich et al. (2012), Shadlen and Newsome (1996).\u00a0Ding and colleagues have shown that microstimulation of the ADS perturbs decisions based on the\u00a0accumulation of evidence (Ding and Gold, 2010, 2012a;\u00a0Ding, 2015;\u00a0but see\u00a0Histed et al., 2009\u00a0and Tehovnik and Slocum, 2013) for discussion as to whether or not microstimulation primarily affects axon terminals, which would add complications for its interpretation when localizing neural function). Despite these many years of studies, no brain region has previously been identified as: first, being\u00a0required for unimpaired accumulation-based decision-making behavior; second, having the graded neural encoding required for direct involvement in computing the graded, gradually evolving, value of the accumulating evidence; and third, making a causal contribution throughout times that fully coincide with the accumulation process. By demonstrating that the anterior dorsal striatum satisfies all three of these criteria, our work suggests that\u00a0the anterior dorsal striatum is the first identifiable node in the neural circuit causally responsible for computing evidence accumulation. The anterior dorsal striatum is well positioned anatomically to participate in evidence accumulation as it receives diverse convergent anatomical input from multiple cortical areas (Cheatwood et al., 2003; McGeorge and Faull, 1989) and it\u00a0is connected via recurrent loops with cortical and subcortical areas that are widely believed to play a role in action selection (Ding and Gold, 2013). Whether the anterior dorsal striatum possesses a unique role in evidence accumulation, or whether it is an important node of a more extended network of brain regions that operate in coordination to mediate evidence accumulation, remains to be resolved. Corticostriatal loops are organized as distinct parallel circuits (Alexander et al., 1986; Kim and Hikosaka, 2015); future studies dissecting the contribution of different loops will be important for resolving this major question.\n\nOur results, together with those of Ding and colleagues (Ding and Gold, 2010; Ding and Gold, 2012a; Ding, 2015), suggest that the striatum may be directly involved in a more expansive set of computations, traditionally considered to be more cognitive in nature, than the already well-established functions of the dorsal striatum in action selection, response initiation, evaluation of reward uncertainty, and habit formation (Ding and Gold, 2010; Graybiel, 2008; Hikosaka et al., 2014; Jin and Costa, 2010; Kravitz and Kreitzer, 2012). It will be important to better understand how the striatal involvement in computing accumulation of evidence, as identified in this study, may contribute to those previously established functions. Extensions to our paradigm (for example, free response protocols or more extended trial durations) are likely to be useful for reconciling the functions indciated by results with the other functions of the striatum. The computations involved in evidence accumulation may perhaps provide an efficient mechanism for extracting important pieces of information from the environment in the service of other roles of the striatum.\n\nBy identifying model parameters affected by the inactivations, our model fits suggest specific aspects of the evidence accumulation computation that could be prioritized as potentially particularly strongly related to the ADS\u2019s role in the computation. The model fits to unilateral pharmacological inactivation data found that, similar to unilateral inactivations of the FOF, the side bias in lapse rates was increased by the inactivations. But in contrast to what occurs in the FOF, noise parameters, including the accumulator\u2019s intrinsic noise, were also substantially increased after striatal inactivation (Figure 2a,b). Model fits to bilateral anterior dorsal striatum inactivation data found that the sum of sensory and accumulator noise magnitude parameters was significantly increased by striatal inactivation (Figure 2c,d). A parsimonious account suggests that the main noise parameter that\u00a0is\u00a0affected may perhaps be the magnitude of the noise in the evidence accumulator. This would be consistent with the idea, supported by our electrophysiological and optogenetic data, that the striatum plays a role in the accumulation process. The lack of a significant effect on other parameters should be treated with caution: it remains possible that future studies with greater statistical power could discern an effect of striatal inactivation on some of these other parameters. Nevertheless, even while we emphasize that we do not take the modeling results on their own as conclusive, they do suggest that\u00a0accumulator noise is a principal parameter of interest. It is conceivable that bilateral striatal inactivation increases accumulator noise by destabilizing the accumulator\u2019s representation without biasing it, but a circuit model hypothesis to explain precisely how the striatum might affect the accumulator noise level remains to be developed. Another important direction for future studies will be the development of models with temporally\u00a0specific parameters that could be used to model the effects of temporally\u00a0specific optogenetic inactivation\u00a0appropriately.\n\nIndependently of whether the anterior dorsal striatum operates alone or as part of a broader circuit for computing gradual evidence accumulation, and independently of the precise nature of its contribution to the evidence accumulation computation, the data reported here provide a critical foothold towards delineating the relevant causal circuit: for example, the anterior dorsal striatum\u2019s major inputs and outputs become important candidate regions to be examined for a potential role in the process. The possibility that the causal circuit for computing evidence accumulation may be delineated in the near future suggests that we will soon be able to elucidate the circuit and cellular mechanisms that support evidence accumulation, a computation that is crucial for decision-making behavior in a wide range of species, including humans.\n\n## Materials and methods\n\n### Subjects and housing\n\nAll animal procedures described in this study were approved by the Princeton University Institutional Animal Care and Use Committee and were\u00a0carried out in accordance with National Institutes of Health standards. All subjects were adult male Long-Evans rats (Taconic, NY) that were pair housed in Technoplast cages and were kept in\u00a0a 12 hr reversed light-dark cycle. All training and testing procedures were conducted during the dark cycle. Rats had free access to food but had restricted water access. The amount of water that\u00a0the\u00a0rats could obtain daily was limited to 1 hr per day of free water (starting 30 min following the end of training), in addition to what they could earn during training.\n\n### Behavior\n\nRats were\u00a0trained seven days a week at similar times each day for a period of about 110 min daily. The training took place in custom-made training boxes (Island Motion, NY) placed inside sound- and light-attenuated chambers (H10-25A, Coulbourn Instruments, PA). Each box consisted of three straight walls and one curved wall in which three nose ports were embedded (one in the center and one on each side, Figure 1a). Each nose port also contained one light-emitting diode (LED) that was used to deliver visual stimuli, and the front of the nose port was equipped with an infrared (IR) beam to detect the entrance of the rat\u2019s nose into the port. A speaker was mounted above each of the side ports and was used to present auditory stimuli. Each of the side ports also contained a sipper tube that was used for water reward delivery, with the amount of water controlled by valve opening time.\n\nAll rats were trained using a semi-automated training protocol on a previously developed accumulation of evidence task (Brunton et al., 2013). Training and testing procedures were similar to those described previously (Erlich et al., 2015; Hanks et al., 2015). In brief, at the start of each trial, rats were instructed to place their nose in the central port and to\u00a0maintain nose fixation in response to LED illumination of that port. Subsequently, after a delay of at least 200 ms, rats were presented with a two trains of auditory clicks presented simultaneously, one from the left and one from the right speaker. For neurophysioloigcal recordings and pharmacological (muscimol) inactivation experiments, the click train duration varied between 0.1 to 1.2 s. For optogenetic experiments, the stimulus duration was fixed at 1 s for all trials. The train of clicks from each speaker was generated by an underlying Poisson process, with different mean rates for each side. The combined mean click rate was fixed at 40 Hz, and trial difficulty was manipulated by varying the click rate ratio between the two sides. The mean click rate ratio varied from 39:1 clicks/s (easiest) to 26:14 (most difficult). Upon completion of stimulus presentation, the central LED was turned off and rats had to orient towards the side that played more clicks and nose poke into the corresponding port to obtain water reward of 24 \u00b5L.\n\n### Behavioral model\n\nTo quantify the animals\u2019 behavior and the effect of infusions, we used the behavioral model of Brunton et al. (2013)\u00a0and Erlich et al. (2015)), who\u00a0described\u00a0it in detail. As in previous work (Erlich et al., 2015), to obtain a\u00a0sufficient number of perturbation trials for the model-based analysis, we combined data across rats and assessed the\u00a0effects and their\u00a0statistical significance on this \u2018meta-rat\u2019 data. In Supplementary file 1, we also present the result of fits to each individual rat, which are in general consistent with the meta-rat conclusions. We present an abbreviated description here. The model converts each trial\u2019s incoming stream of discrete left and right clicks into an accumulating evidence quantity a(t) that determines choice behavior. Parameters that govern how a(t) evolves are fitted on the basis of the rat\u2019s behavior, with the choices made in individual trials constraining the possible trajectories of a(t). Thus, in each trial, the model estimates the evolution of a noise-induced probability distribution over values of the accumulating evidence a(t). To evaluate how well a particular set of parameter values \u03b8 fits the behavioral data, we computed the probability of observing the data given the model. Let ti,R and ti,L represent the right and left click times on trial i, let D represent the subject\u2019s decision in trial i, and let D present the full set of the subject\u2019s decisions across all trials. Assuming that trials are independent, we may compute the likelihood of the model:\n\n$$\nPD\\theta=\\prod_{i}P(d_{i}|t_{i,R},t_{i,L},\\theta)\n$$\n\nThe best-fit parameter values (also known as the maximum likelihood values) are the parameters that maximize the likelihood.\n\n#### Dynamics of a(t) in each trial\n\nWe discretize both time t and space a, and for each trial, start with the distribution at time t\u00a0=\u00a00, which we set to be a delta function at a\u00a0=\u00a00. We then compute the probability distribution for the next time step given the probability distribution for the previous timestep, and iterate through timesteps until t\u00a0=\u00a0T, where T is stimulus duration. At each time point, the accumulator memory a(t) represents an estimate of the right versus left evidence accrued so far. At stimulus end, the model decides right if a > \u00fe and left otherwise, where \u00fe is a free parameter. Right (left) pulses change the value of a by positive (negative) impulses of magnitude C. \u03c3a2 is a diffusion constant, parameterizing noise in a. \u03c3s2 parameterizes noise when adding the evidence from a right or left pulse: For each click, variance \u03c3s2 is scaled by the amplitude of C and then added to the evidence contributed by the click. \u03bb parameterizes consistent drift in the memory a. In the \u2018leaky\u2019 or forgetful case (\u03bb\u00a0<0), drift is toward a\u00a0=\u00a00, and later pulses affect the decision more than earlier pulses. In the \u2018unstable\u2019 or impulsive case (\u03bb\u00a0>0), drift is away from a\u00a0=\u00a00, and earlier pulses affect the decision more than later pulses. The memory\u2019s time constant \u03c4\u00a0=\u00a01/\u03bb. B is the height of the sticky decision bounds and parameterizes the amount of evidence necessary to commit to a decision. \u03d5 and \u03c4\u03d5 parameterize sensory adaptation by defining the dynamics of C. Immediately after a click, the magnitude C is multiplied by \u03d5. C then recovers toward an unadapted value of 1 with time constant \u03c4\u03d5. Facilitation is thus represented by \u03d5\u00a0>1, whereas depression is represented by \u03d5\u00a0<1.\n\nThese properties are implemented by the following equations:\n\nif |a|\u00a0\u2265\u00a0B then\u00a0$\\frac{da}{dt}=0$; else\n\n$$\nda=\\sigma_{a}dW+(\\delta_{t,t_{R}}\u22c5\u03b7R\u22c5C\u2212\\delta_{\u22c5}t,t_{L}\u22c5\u03b7L\u22c5C)dt+\\lambdaadt\n$$\n\nwhere $\\delta_{t,t_{R,L}}$are delta functions at the times of the pulses; \u03b7 are Gaussian variables drawn from\u00a0$N(1,\\sigma_{s})$; and dW is a white-noise Wiener process. The initial condition a(t\u00a0=\u00a00) is 0.\n\nAdaptation dynamics are given by:\n\n$$\n\\frac{dC}{dt}=\\frac{1-C}{\\tau_{\u03d5}}+\u03d5-1C(\\delta_{t,t_{R}}+\\delta_{t,t_{L}})\n$$\n\nIn addition, a lapse rate \u03ba parameterizes the fraction of trials in which a random response is made. Ideal performance (a = #right clicks \u2212 #left clicks) would be achieved by:\n\n$\\sigma^{2}_{a}=0,\\sigma^{2}_{s}=0,$\u03d5=0, \u00fe = 0, \u03ba = 0\n\nA list of this model\u2019s parameters is thus:\n\n#### Complexity of the model\n\nEach term in the model describes a distinct effect (Brunton et al., 2013), and is statistically significant, with the exception of one parameter, B, which is not needed here: it is not affected by ADS perturbations, and confidence intervals for B include B\u00a0=\u00a0infinity for all rats in all experiments (see Supplementary file 1). B\u00a0=\u00a0infinity corresponds to not having that parameter at all.\n\nIn addition, we have used the Bayesian Information Criterion (BIC) (Nagin, 1999), which takes into account and penalizes model complexity, to assess whether any parameter could be eliminated from the model (see Supplementary files 6 and 7). The only parameter that can be eliminated across all conditions is once again the parameter B.\n\nThus, except for the accumulator bounds parameter B, which we keep for consistency with other papers, both BIC and confidence intervals indicate that\u00a0we should keep all parameters. We have nevertheless chosen to also keep B, rather than to\u00a0eliminate it from the study, so as to document that although striatum perturbations could, in principle, have affected B, in fact they did not.\n\n#### Model-fitting\n\nWe used the\u00a0procedures detailed in Brunton et al. (2013)\u00a0and Erlich et al. (2015), except that in this work we used an algorithmic differentiation package, the ForwardDiff package in the language Julia (Revels et al., 2016), to obtain the derivative with respect to all model parameters\u00a0automatically. We have published the model-fitting code in open source form (https://github.com/misun6312/PBupsModel.jl).\n\nIn brief, the model equations described above also determine how a probability distribution of values of a evolves over time. We do not use Monte Carlo simulations to approximate the probability distribution, but instead, for each trial given its individual click times, we simulate the time-evolution of this probability distribution directly. The probability distribution of a at the end of the trial tend then defines the probability of going Right: P(a,tend) \u2265 \u00fe\u00a0, and the probability of going Left:\u00a0P(a,tend) < \u00fe\u00a0. Thus, given the\u00a0model parameters, we can obtain the probability in each trial\u00a0of observing the choice that the subject made. As described above, assuming that\u00a0different trials are independent of each other, the probability of seeing the subject\u2019s full data set is the product of all the trial probabilities. This net probability is what we refer to as the likelihood, and we optimize parameter values to find the highest likelihood. Under a \u2018flat prior\u2019 assumption, that is, when we make no prior assumptions about parameter values, the likelihood can then be normalized to correspond to the probability of seeing certain\u00a0parameter values given the data, and is used to determine confidence regions for the parameters.\n\nEach model fit was run 10 times, starting from different parameter value seeds. Consistent with previous similar fits (see Supplementary Fig. S6 in Brunton et al. (2013)), all fits ended within the final confidence region. Of the ten fits, the one with the highest log likelihood (and a positive semidefinite Hessian) was chosen as the one that defined the best-fit parameter values and the confidence region around them.\n\n#### Trade-offs between different model parameters\n\nTrade-offs between parameters are quantified by ridges of high likelihood in the likelihood landscapes (see Figure 2 in Brunton et al. (2013) and Figure 2 in the main text). The orientation of the ridge quantifies the parameter-to-parameter scaling that best trades parameters off against each other; and the extent of the ridge quantifies the range of the trade-off for which model fits are almost as good as the maximum likelihood fit. Such ridges can be examined by plotting the likelihood of the data as a function of pairs of model parameters (as in Figure 2). But a full description of the trade-offs across all N parameters involves describing the shape of the N-dimensional maximum likelihood peak. Given sufficient numbers of trials, this peak is well-approximated by an N-dimensional Gaussian (MacKay, 2003); the covariance matrix C of this Gaussian (corresponding to the inverse of the Hessian of the log likelihood, which we compute not numerically but with algorithmic differentiation, which is much more precise) is then the second-order approximation that describes the shape of the maximum likelihood peak (MacKay 2003). We focus on the eigenvector of C with the largest eigenvalue; this eigenvector describes the orientation of the major ridge. Its corresponding eigenvalue quantifies the variance along this ridge, and thus describes the extent of the trade-off region.\n\n#### Unbounded parameter optimization\n\nSome of the model parameters have natural range constraints on their ranges; for example, noise magnitudes are bounded by zero since the variance cannot be less than zero. However, optimization procedures, as well as the Gaussian approximation that describes the shape of the likelihood landscape around its optimum, are simpler in unbounded spaces. Consequently, for each bounded parameter \u03b1, we defined a bounded monotonic nonlinear function f such that \u03b8\u00a0=\u00a0f(\u03b1\u2019) remained within the desired bounds even when \u03b1\u2019 was unbounded. We carried out the optimization using the unbounded \u03b1\u2019 parameter (which we refer to as \u2018infinite space\u2019 since \u03b1\u2019 has infinite range), and computed confidence intervals in the infinite space. We then used the f function to compute the corresponding optimal value of \u03b1 and confidence intervals for \u03b1. (See, for example, Figure 2\u2014figure supplement 1). When the\u00a0optimal value of a parameter sits at the boundary of the range, the true optimal point can exist outside the boundary. This could have an impact on other parameters that are interacting with the parameter. Also, it may cause the Hessian matrix at the\u00a0optimal point to be not positive semidefinite. To resolve this issue, we used the\u00a0tanh function to convert the parameters to the\u00a0unbounded domain and then we run optimization in unbounded space. After we find the\u00a0optimal point, the parameters were transformed to the original coordinates. With this unbounded minimization method, we could obtain the positive semidefinite Hessian matrix, which has all nonnegative eigenvalues.\n\n#### Four model parameters to quantify sources of a lateralized bias\n\nThe original model (Brunton et al., 2013) had only a single parameter that\u00a0could describe a right versus left choice bias, the decision borderline \u00de. By adding three more parameters that could cause different types of side biases, fitting the extended model to behavioral data following a unilateral inactivation, and asking which parameters are most affected relative to control trials, we can estimate which particular aspect of the behavior was impacted by the inactivation. Erlich et al. (2015) fit each of these parameters individually. Here, using algorithmic differentiation, we fit all 11 parameters simultaneously. In all, the four different sources of a lateralized choice bias that we considered were:\n\n##### Accumulator threshold bias (\u00fe)\n\nThe accumulator is categorized into \u2018Go Left\u2019 vs \u2018Go Right\u2019 decisions by comparing the accumulator\u2019s value to\u00a0\u00fe. In the behavioral model, this is implemented by setting the decision borderline to \u00de. At stimulus end, the model decides right if a > \u00fe and left otherwise, where \u00fe is a free parameter. It quantifies whether the final value of a(t) has a tendency to be classified as \u2018go right\u2019 (\u00fe\u00a0<0) or \u2018go left\u2019 (\u00fe\u00a0>0).\n\n##### Post-categorization bias (\u03baC \u2013 \u03baI)\n\nWhen performing unilateral inactivation, the choice directions can be mapped as \u2018contralateral\u2019 or \u2018ipsilateral\u2019 with respect to the side of inactivation. Contralateral lapse rate is a fraction of the trials categorized as choices contralateral to the inactivated side of the brain, and converts them into ipsilateral choices. And ipsilateral lapse rate is the fraction of the trials categorized as choices ipsilateral to the inactivated side of the brain, and converts them into contralateral choices. The scaling is biased when \u03baC \u2260 \u03baI. So, we re-parametrize lapse rate parameters for each side as a total lapse\u00a0(\u03baC + \u03baI) and a biased lapse (\u03baC \u2013 \u03baI).\n\n##### Input gain bias (gw)\n\nThis can be thought of as a form of sensory neglect: Left and Right clicks have different impact magnitudes on the value of the accumulator. 0.5 is the balanced point, where left and right clicks have same impact magnitudes. If the value of input gain weight is lower than 0.5, then ipsilateral clicks have a stronger impact, and decision will consequently be biased to the ipsilateral side. The closer the value to 0, the\u00a0stronger\u00a0the impact of ipsilateral clicks. Whereas, the closer the value to 1, the\u00a0stronger\u00a0the impact of contralateral clicks.\n\nThe magnitude of the input C is given by:\n\n$C=2*gw*C_{i}-2*1-gw*C_{c}$, where gw is the input gain bias, Ci is the sum of ipsilateral clicks and Cc is the sum of contralateral clicks.\n\n##### Biased sensory noise (separate \u03c3s,L2 and \u03c3s,R2)\n\nBy differentially affecting signal-to-noise ratios from the two sides, biased sensory noise\u00a0can be thought of as a form of sensory neglect distinct from input gain bias: Left and Right clicks have different magnitudes of noise in their impact. The biased sensory noise was implemented by allowing the contralateral noise variance to be a free parameter, fit to the behavioral data from unilateral inactivation trials.\n\n### Surgery\n\nThe experiments described in this manuscript focus on the anterior dorsal striatum of the rat at stereotaxic coordinates of 1.9 mm anterior and 2.4 mm lateral, relative to bregma. Each rat received one of three surgical procedures that have all been described in detail elsewhere for different brain areas but were identical in all other respects. These were: (i) implantation of a tetrode-based microdrive consisting of eight tetrodes (three rats, left striatum)\u00a0(Erlich et al., 2011, 2015; Hanks et al., 2015), (ii) cannulas for pharmacological inactivation (four rats, bilateral) (Erlich et al., 2011; Hanks et al., 2015) and (iii) chemically etched optical fibers coupled with viral injection\u00a0(Hanks et al., 2015) (13 rats; six left striatum and seven\u00a0right striatum). The injected virus consisted of 2\u20133 \u00b5L of AAV virus (either AAV5-CaMKII\u03b1-eYFP-eNpHR3.0 or AAV5-hSyn-eYFP-eNpHR3.0 or a mixture of both at a ratio of 1:2, respectively). Two of the three rats that were used for electrophysiological recordings and received a tetrode implant targeting the anterior dorsal striatum were further injected with AAV5-CaMKII\u03b1-eYFP-ChR2 and were implanted with two optical fibers and an additional tetrode-based microdrive targeting the rat SNr, GPe and superior colliculus, respectively. These data are not discussed in the present manuscript. The infusion cannulas were implanted at an angle of 15o lateral to minimize any potential backflow of muscimol to the frontal orienting fields (FOF), which have recently been demonstrated to be necessary for maximal performance on this task (Erlich et al., 2015). Accurate placement of all implants and viral injection targeting was verified histologically.\n\n### Infusions\n\nInfusion procedures follow methods described in detail previously\u00a0(Erlich et al., 2015). Briefly, infusions were generally performed during normal training sessions, were usually at least one week apart, and were\u00a0never on consecutive days. Control sessions took place on the day prior to the infusion session. On the day of infusion, rats were lightly anesthetized with 2% isoflurane and anesthesia was sustained via continuous delivery of isoflurane using a nose cone. Using a Hamilton syringe that was attached via tubing to the injector, we delivered 0.5 \u00b5L of muscimol at a\u00a0concentration of 0.125 mg/mL to either the left or right side of the anteriodorsal part of the rat striatum during unilateral infusion sessions and to both sides during bilateral infusion sessions (Figure 1b and c, respectively). After delivery, the injector was left inside the brain for a minimum period of 5 min to allow adequate diffusion before removal and also to minimize backflow along the cannula tract. Subsequently, the injector was removed, the cannula was closed, and the rat was removed from isoflurane anesthesia\u00a0and placed back into its home cage. We allowed 30 min of recovery from anesthesia before placing the rat into the behavioral box. The task performed by the rats during infusion and control sessions was identical to that described above with the exception that on\u00a0~10% of trials, rats were presented with an LED above the right or left port and had to orient towards that port. Thus, the animals had to perform the same motor action but success was not dependent on evidence accumulation, hence this\u00a0procedure\u00a0controlled for any potential motor deficits that could have arisen due to the inactivation procedure\u00a0that\u00a0could impair the animal's ability to orient effectively (Figure 3\u2014figure supplement 1).\n\n### Optogenetic perturbation\n\nThe methods used in this study for optogenetic perturbation are identical to those described in detail previously\u00a0(Hanks et al., 2015). Prior to each experimental session, a 532 nm green laser (OEM Laser Systems) was connected via a 1 m patch cable with a rotary joint (Princetel) and an\u00a0FC connector to the rat\u2019s optical implant. The rotary joint was mounted on the ceiling of the behavioral chamber. The laser operated at 25 mW and was triggered by a 5V transistor-transistor logic (TTL) pulse, delivered in response to behavioral events and triggered by the automated traiwhayning software (BControl). On all experimental days, laser illumination occurred during\u00a0a random subset (25%) of trials and was\u00a0applied unilaterally. Laser illumination trials could be divided into two main types. In the first\u00a0type, we delivered light for a continuous period of 2 s, starting 500 ms prior to the initiation of the auditory clicks stimulus and ending 500 ms after the termination of the click train. This trial type is defined as \u2018full-trial\u2019 inactivation. For this we used a cohort of eight rats. In the second trial type, which we refer to as \u2018time-resolved\u2019 inactivation, light illumination was delivered in one of four different 500 ms time periods: the delay before stimulus onset, the first half of the 1 s auditory stimulus, the second half of the 1 s auditory stimulus, or during the movement period (Figure 6e). All time-resolved inactivation periods were randomly interleaved within single behavioral sessions. For \u2018time-resolved\u2019 inactivation experiments, we used a cohort of seven rats, two of which also belonged to the full-trial inactivation cohort.\n\nThe physiological effect of eNpHR3.0 on local neuronal activity was tested using acute recordings in experimental rats (Figure 6a), as described previously\u00a0(Hanks et al., 2015). Rats were anesthetized using isoflurane and a sharp etched optical fiber was inserted into the center of the field of viral infection. The optical fiber was coupled with a 532 nm green laser with\u00a0~25 mW light intensity at the tip. In parallel, a sharp tungsten electrode (1 M\u03a9) was positioned adjacent to the optical fiber tip. The effect of laser activation on spontaneous activity was tested by delivering a series of pulses, of\u00a0500 ms duration each, at 25 mW every 5 s. The signals from the electrode were amplified, filtered (300\u20136000 Hz), thresholded on the basis of voltage (30 \u03bcV) and sampled at 30.3 kHz (0.25 ms before the threshold triggering and 0.75 ms after; Neuralynx Cheetah). The spikes and TTL pulses were time-stamped with the same 1-MHz clock (Digital I/O, Neurlaynx).\n\n### Histology\n\nThe rat was fully anesthetized with 0.4 mL ketamine (100 mg/ml) and 0.2 mL xylazine (100 mg/ml) IP, followed by transcardial perfusion of 100 mL saline (0.9% NaCl, 0.3x PBS, pH 7.0, 0.05 mL heparin 10,000 USP units/mL), and finally transcardial perfusion of 250 mL 10% formalin neutral buffered solution (Sigma HT501128). The brain was removed and post fixed in 10% formalin solution for a minimum period of 7 days. 100 micrometer sections were prepared on a Leica VT1200S vibratome, and\u00a0mounted on Superfrost Pus glass slides (Fisher) with Fluoromount-G (Southern Biotech) mounting solution and glass cover slips. Images were acquired on a Nikon Eclipse Ti fluorescence microscope under 4x magnification.\n\n### Neural recording and spike sorting\n\nNeural recordings and spike sorting methods have\u00a0been\u00a0described in detail\u00a0previously\u00a0(Erlich et al., 2011; Hanks et al., 2015). Briefly, over the course of\u00a0~2\u20134 weeks following surgery, the tetrodes were slowly lowered towards the dorsal part of the rat anterior striatum. On most recording days, an electrically\u00a0quiet electrode was used as a reference channel, and in the cases where such an electrode was not available, we used the ground of our neurophysiology recording system (Nerualynx) for reference. During recording, a unity-gain preamplifier (HS-32, Neuralynx) was attached to a connector on top of the microdrive via a light-weight tether. Signals from each of the channels were amplified (1,400\u20135,000\u00d7) and band-pass filtered (300\u20136,000 Hz; Digital-Lynx, Neuralynx). A voltage threshold (20\u201350 \u03bcV) was used for collecting 1 ms spike waveforms, which were sampled at 30.3 kHz (0.25 ms before the triggered event and 0.75 ms after; Neuralynx Cheetah). Neural activity was recorded daily during behavioral sessions that lasted 2\u20134 hr on average. Regardless of the quality of the recordings, tetrodes were never kept in the same position on\u00a0different days, and were always moved at the end of each recording day (40\u2013200 \u03bcm daily), in order to obtain recordings from new ensembles of neurons daily.\n\n### Analysis of causal perturbation data \u2013 optogenetics and pharmacological inactivation\n\nDetailed methods for generating psychometric curves and estimating biases resulting from inactivation in rats performing this exact behavioral task were described recently\u00a0(Erlich et al., 2015; Hanks et al., 2015).\n\nIn brief, for muscimol inactivation experiments, psychometric curves were generated by concatenating data across either infusion or control sessions for individual rats and by\u00a0fitting a four-parameter sigmoid described using the following formula:\n\n$$\ny=y_{0}+\\frac{a}{1+e^{\u2212(x\u2212x_{0})/b}}\n$$\n\nIn that equation, the \u2018x\u2019 variable is the click difference on each trial (# Right Clicks \u2013 # Left Clicks), \u2018y\u2019 is the proportion of trials on which the animal went \u2018Right\u2019, and the four parameters of the fitting procedure are: \u2018x0\u2019, the inflection point of the sigmoid; \u2018b\u2019, the slope of the sigmoid; \u2018x0\u2019 and \u2018a + y0\u2019, the minimum and maximum of the proportion of\u00a0trials\u00a0in which the rat went \u2018Right\u2019, respectively.\n\nFor optogenetic inactivation experiments, we measured behavioral bias resulting from transient inactivation of neural activity in a subset of trials (25%) by first binning the trials on the basis of stimulus strength. We then computed the mean difference between the fraction of trials during\u00a0which the rats went to the side ipsilateral to side of its optical implant for inactivation and control trials for each of 10 binned stimulus strengths. Thus, a positive value resulting from this measurement represents an increase in ipsilateral responses in laser illumination trials over control trials in which the optical stimulation was absent. Confidence intervals and statistical comparisons for this bias parameter were calculated using nonparametric bootstrap procedures. The bias resulting from unilateral pharmacological inactivation was calculated in a similar way, but the control behavior was derived from non-inactivation control sessions obtained the day before inactivation. The performance impairment resulting from bilateral pharmacological inactivation sessions was also calculated using the non-inactivation control sessions obtained the day before inactivation. Performance was defined as percent correct trials for each binned stimulus strength.\n\n### Analysis of neural recording\n\nSpike waveforms were sorted on the basis of their relative energies and amplitudes on different channels of each tetrode. Clustering software (SpikeSort3D, Neuralynx) was used to isolate single units\u00a0manually. Each spike was graphically positioned in a two- or three-dimensional space representing the energy or amplitude of the spike on two or three of the four tetrode channels. Convex hull boundaries and template-matching of waveforms were used to identify well-separated clusters of spikes, which were individually color coded. Data from the entire session were spike-sorted together. To compute the peri-event time histogram (PETH) for the population activity in response to the presentation of auditory clicks (Figure 3a and Figure 3\u2014figure supplement 1), we followed the following procedure. For all well-isolated single units, individual trial rate functions were first generated by smoothing the spike trains with a causal half-Gaussian filter with 0.1 s standard deviation. The response functions of individual neurons were then normalized on the basis of the mean firing of each individual neuron at the time of stimulus onset. Trials were subsequently sorted by a quantity that we defined as the \u2018mean stimulus strength\u2019 following the same procedure that has been described previously\u00a0(Hanks et al., 2015). Mean stimulus strength was defined by dividing trials for each neuron into quantiles that are based on a difference in the preferred and non-preferred click rates.\n\nThe influence of single auditory clicks on neural responses, the \u2018click-triggered average\u2019, was calculated as follows. The trials of individual neurons were first grouped on the basis of the underlying Poisson rates that were used to generate the auditory stimuli. For each group, the mean PETH was computed. This quantity corresponds to the expected neural response at each point in time for each Poisson rate group. This mean response was then subtracted from each trial to generate the residual response from the expected one given the Poisson rate. Aligning this residual response to a click describes the change in the neural response that is associated with a single auditory click relative to the average expected response to clicks at other times. These click-aligned residual responses were averaged across all click times to obtain the click-triggered average response for each Poisson rate group. The click-triggered average for each neuron was calculated by averaging across the different Poisson rate groups. To compute the response across clicks arriving from\u00a0both the\u00a0preferred and the\u00a0non-preferred sides, we inverted the residual response for non-preferred direction clicks prior to averaging. The click-triggered average response profiles generated using this procedure were compared to a model-based prediction that\u00a0was\u00a0based on a graded, linear encoding of accumulated evidence. To do this, we simulated evidence accumulation trajectories for 5000 trials using the same range of stimulus difficulties and durations that existed for the neural data. We then encoded these simulated trajectories with a graded, linear function of accumulated evidence (firing rate r\u00a0=\u00a0k1 x a(t)+k2 in which k1 and k2 are constants). Finally, we applied the same analysis described for the neural data to estimate the predicted click-triggered average under this encoding (Figure 3b).\n\n### Behavioral model-based analysis of neural data\n\nWe applied recently developed methods in our lab to generate tuning curves that specify the relationship between neural firing rates and mentally accumulated evidence (Hanks et al., 2015). These techniques take advantage of a behavioral model that provides a moment-by-moment and trial-by-trial estimation of the mentally accumulated evidence for this task (Brunton et al., 2013; Hanks et al., 2015).\n\n#### Neural tuning curves\n\nFollowing Hanks et al. (2015), the behavior model\u2019s estimate a(t) was related directly to neural firing rates on individual trials to estimate neural tuning curves for accumulating evidence. The estimates of the neural response and accumulating evidence in individual trials were used to calculate the joint probability distribution between those two variables as a function of time for each neuron. The correspondence between time in the model and neural time was determined on the basis of the latency of the stimulus-dependent response modulation. This latency was calculated as the first time bin\u00a0in the PETH to have a significant modulation of neural response based on stimulus strength, which corresponded to 150 ms (Figure 3a). Thus, t\u00a0=\u00a00 in the model was taken as 150 ms after stimulus onset. From the joint probability, we extracted each neuron\u2019s response conditional on the value of the accumulator. We then combined across neurons by weighting the contribution of each by the inverse of the variance of this conditional distribution, which gives more weight to representations that are less noisy.\n\nTo quantify the relationship between neural response and accumulator value across time, we averaged across the time period from 0.15 to 0.5 s into the decision process. To characterize the encoding across individual neurons, we fit this relationship of the response to the accumulator value with a four-parameter sigmoid using the following equation:\n\n$$\nr=k_{1}+\\frac{k_{2}}{1+e^{-k_{3}(a-k_{4})}}\n$$\n\nIn this equation, k2k3/4 determines the slope at zero-crossing, which characterizes whether the neural response changes smoothly between negative and positive accumulator values or whether it changes sharply in this region.\n",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "69dae7e5-ec4c-474f-8092-d979a89f3779",
+      "submission_id": "8c31fdea-78c5-4910-aae5-d23d7107ef51",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua I Gold, University of Pennsylvania United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34929.026](https://doi.org/10.7554/eLife.34929.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Causal contribution and dynamical encoding in the striatum during evidence accumulation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Joshua Gold as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mark D Humphries (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper combines multiple strands of evidence to support the hypothesis that the anterior dorsal striatum (ADS) plays an important and causal in evidence accumulation in the brain. Pharmacological inactivation results in a strong impairment of decision-making. Catch trials for lesioned animals show decision impairment is independent of a motor deficit. Fits to evidence-accumulation models suggest three independent effects of ADS inactivation: 1) a shortening of the evidence integration window; 2) a dramatic increase in sensory and/or integrator noise; and 3) increased random choices on the contra-lateral side (lapse rate). Individual unit activity showed ramp-like increases on average over trials that matched key model predictions describing a continuous accumulation of evidence. Finally, acute optogenetic inactivation using eNpHR3 reproduced the lesion results, but only during the evidence integration epoch of the task, strongly suggesting a causative role for the ADS in evidence integration.\n\nThe reviewers agreed that this is a strong paper that addresses an interesting and timely topic and presents several compelling lines of evidence. However, the reviewers also agreed that there were a number of serious concerns that should be addressed, listed below.\n\nEssential revisions:\n\n1) The manuscript, especially the Introduction, should do a much better and more accurate job of crediting prior studies, and clarifying the specific, new contributions from this study. For example, the first work using the clicks task should be cited (Sanders and Kepecs). Likewise, Ding and Gold, 2012 used a perturbation of neural activity in the striatum to test for a causal role in evidence accumulation but is mentioned only and incorrectly as showing \"correlates of evidence accumulation\" in terms of \"firing rates.\" In addition, the claim that the evidence for evidence accumulation in striatum comes only from trial averages of spike rates is false: Ding (2015, \"Distinct dynamics of ramping activity in the frontal cortex and caudate nucleus in monkeys\") used analyses that go beyond simple spike rates to identify correlates of evidence accumulation.\n\n2) There were a number of questions about the behavioral model fits and their interpretation. Several of these questions centered on the estimation and interpretation of lapse rates. The group data in Figure 1B,C seem to show relatively high (~20%) lapses, but the values tended to be much lower in Table 1. This discrepancy would seem to imply that other parameters of the behavioral model can account for errors for the strongest stimuli. Is that the case? Which parameters? Are such effects justified; that is, is it reasonable to think that errors for those stimuli result from inefficiencies in the decision process? If so, can lapses be effectively estimated using the given range of stimulus values?\n\nMore generally, the reviewers appreciated the descriptions of the model-fitting procedures but were not fully convinced that the use and interpretation of such a complex model (in terms of number of parameters) is justified. Could reduced and/or alternative models provide more parsimonious accounts of the data, given penalties for model complexity? Are all of the parameters needed? Do confidence intervals on their best-fitting values lend insights into the reliability of their estimates and therefore interpretation? How do the parameters trade-off? For example, an input-gain bias for one side could be plausibly offset by a post-categorization bias to the other, leading to no net effect. There are hints of this in Table 1, where the \"control\" fits show wide variation in some parameters between animals. A lack of consistent fits between animals would then lead to potentially spurious divisions into \"significant\" and \"non significant\" differences between two groups of animals, simply depending on how the parameter values tended to cluster or not cluster by chance. Furthermore, what evidence supports the claim that the \"combination of sensory plus accumulator noise\" represents a single, interpretable quantity, and that it has explanatory power beyond the effects of muscimol on lapse rates?\n\nGiven these sources of uncertainty about the model fits, how justified is the conclusion that ADS inactivation affects the accumulation process, as opposed to, say, a choice bias in the presence of uncertainty and/or lapse rates? It might be useful to use fits and/or simulations of models that include only biases and/or lapses to determine if and how well they can reproduce the experimental effects. These issues apply to both the pharmacological and optogenetic manipulations.\n\n3) Please comment on apparent discrepancies between Figure 1B, C and 2A,C. Why the larger range of stimulus values on the abscissa in Figure 2? Why are the effects on ipsilateral choices in Figure 1B not apparent in Figure 2A?\n\n4) Why do the analyses in Figure 4 only cover up to 0.5 s after stimulus onset? Ding and Gold, 2010 reported correlates of evidence accumulation early, but not late, in the stimulus presentation period. What happens to the late spiking activity here?\n\n5) The evidence presented here for the role of ADS in evidence accumulation does not satisfy the criterion of \"necessary\": decision-making was impaired, not prevented. The claims in the paper should be adjusted accordingly.\n",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2eb9fc55-6074-4c15-b58b-4d9df024eb55",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C1",
+      "claim": "A broad range of decision-making processes involve gradual accumulation of evidence over time.",
+      "claim_type": "EXPLICIT",
+      "source": "A broad range of decision-making processes involve gradual accumulation of evidence over time, but the neural circuits responsible for this computation are not yet established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about decision-making processes that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "78c05c68-7f80-4048-a4bb-b2a85dc704eb",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C2",
+      "claim": "The neural circuits responsible for evidence accumulation are not yet established.",
+      "claim_type": "EXPLICIT",
+      "source": "A broad range of decision-making processes involve gradual accumulation of evidence over time, but the neural circuits responsible for this computation are not yet established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the state of knowledge in the field at the time of writing, based on the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "9a9940e6-7dfc-43be-8f09-dd4a3ee18d2d",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C3",
+      "claim": "The posterior parietal cortex and frontal orienting fields may not be directly involved in evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data indicate that cortical regions that are prominently associated with accumulating evidence, such as the posterior parietal cortex and the frontal orienting fields, may not be directly involved in this computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to recent data in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "2bb7fe73-4c46-4ca7-bfdc-27066f3f4d49",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C4",
+      "claim": "Regions directly involved in evidence accumulation should directly influence accumulation-based decision-making behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions that are directly involved in evidence accumulation should directly influence the accumulation-based decision-making behavior, have a graded neural encoding of accumulated evidence and contribute throughout the accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical criterion proposed by the authors for identifying regions involved in evidence accumulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "d38ff37d-512c-4484-809b-359450328529",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C5",
+      "claim": "Regions directly involved in evidence accumulation should have a graded neural encoding of accumulated evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions that are directly involved in evidence accumulation should directly influence the accumulation-based decision-making behavior, have a graded neural encoding of accumulated evidence and contribute throughout the accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical criterion proposed by the authors for identifying regions involved in evidence accumulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "85d42930-79ee-4451-945e-8e03a7897775",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C6",
+      "claim": "Regions directly involved in evidence accumulation should contribute throughout the accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions that are directly involved in evidence accumulation should directly influence the accumulation-based decision-making behavior, have a graded neural encoding of accumulated evidence and contribute throughout the accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical criterion proposed by the authors for identifying regions involved in evidence accumulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "fb6922f3-e6aa-4f2c-abc5-098ec9264b56",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C7",
+      "claim": "The anterior dorsal striatum (ADS) is the first brain region known to satisfy three criteria for direct involvement in evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the ADS is the first brain region known to satisfy the three criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by behavioral, pharmacological, optogenetic, and electrophysiological data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b7b41e0b-a665-4dbe-89a5-b70ff83cf7e9",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C8",
+      "claim": "The ADS may be the first identified node in the network responsible for evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ADS may be the first identified node in the network responsible for evidence accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "72415238-c43c-4d76-90c0-2cee9a7f4beb",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C9",
+      "claim": "Multiple studies across humans, non-human primates, and rodents have proposed a framework of gradual evidence accumulation to guide decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies across a wide range of behavioral tasks and model systems, including humans (Hunt et al., 2012; Krajbich et al., 2012; Ratcliff et al., 2015), non-human primates (Gold and Shadlen, 2007; Huk and Shadlen, 2005; Shadlen and Newsome, 1996) and rodents (Brunton et al., 2013; Carandini and Churchland, 2013; Erlich et al., 2015; Hanks et al., 2015; Raposo et al., 2012; Sanders and Kepecs, 2012) have proposed a framework through which neural circuits gradually accumulate sensory evidence to guide decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research across different species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "074c6604-e47c-41a6-afa5-54aca9491dee",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C10",
+      "claim": "Neural correlates of evidence accumulation have been observed in several brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, despite the observation of neural correlates of evidence accumulation in several brain regions (Ding and Gold, 2010; Gold and Shadlen, 2007; Hanks et al., 2015; Ratcliff et al., 2007; Shadlen and Newsome, 1996), a major challenge in this line of research has been that the neural circuits that are causally responsible for evidence accumulation have not yet been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies that have observed neural correlates in various brain regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "53a61366-ebdf-4b92-8949-816d18333f62",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C11",
+      "claim": "The neural circuits causally responsible for evidence accumulation have not yet been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, despite the observation of neural correlates of evidence accumulation in several brain regions (Ding and Gold, 2010; Gold and Shadlen, 2007; Hanks et al., 2015; Ratcliff et al., 2007; Shadlen and Newsome, 1996), a major challenge in this line of research has been that the neural circuits that are causally responsible for evidence accumulation have not yet been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "a542bb8a-f7f4-4809-998b-fda338f5fc98",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C12",
+      "claim": "The posterior parietal cortex (LIP) and frontal eye fields (FEF) in primates are not central to the computation of gradually accumulating evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, these studies have indicated that neither region is central to the computation of gradually accumulating evidence (Erlich et al., 2015; Hanks et al., 2015; Katz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies that investigated these brain regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "6a648dc9-1cfa-446a-bbe4-5322b74d8f40",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C13",
+      "claim": "The frontal orienting fields (FOF) in rodents are not central to the computation of gradually accumulating evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, these studies have indicated that neither region is central to the computation of gradually accumulating evidence (Erlich et al., 2015; Hanks et al., 2015; Katz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies that investigated the FOF.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "09ba85f2-f381-47ed-a2a0-f41dafb637ae",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C14",
+      "claim": "The anterior dorsal striatum (ADS) serves as a convergence hub for multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior dorsal striatum (ADS) serves as an intriguing alternative candidate (Ding and Gold, 2013), due in part to its unique anatomical positioning as a convergence hub for multiple brain regions (Cheatwood et al., 2003; McGeorge and Faull, 1989) where neural signatures of evidence accumulation have been observed (such as the PPC and FEF/FOF; Gold and Shadlen, 2007; Cheatwood et al., 2003; Ding and Gold, 2013; McGeorge and Faull, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "ab9b51ba-84b1-49c6-b44a-f5209add7f73",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C15",
+      "claim": "The ADS is ideally positioned to participate in evidence accumulation as part of its role in action selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADS is thus ideally positioned to participate in evidence accumulation as part of its established role in action selection (Bogacz and Gurney, 2007; Graybiel, 2008; Hikosaka et al., 2014; Jin and Costa, 2010; Nelson and Kreitzer, 2014; Redgrave et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical positioning and established roles, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "08e98b04-0f4e-4456-b366-8b7afcc1016a",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C16",
+      "claim": "Modeling work has suggested that the ADS may participate in post-accumulation decision commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling work has also suggested that the ADS may participate in post-accumulation decision commitment (Lo and Wang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "c034229c-af8c-44b2-ba9d-a398245d6840",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C17",
+      "claim": "Cortical projections into the striatum may provide a general mechanism for the control of motor decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The auditory input to a different striatal subregion, the posterior 'auditory' striatum, has been shown to be critical for auditory discriminations, leading to the suggestion that cortical projections into the striatum may provide a general mechanism for the control of motor decisions (Xiong et al., 2015; Znamenskiy and Zador, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on the auditory striatum.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b640cf2a-c8f1-4a81-a236-ee6eacc385ba",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C18",
+      "claim": "Neural correlates of evidence accumulation have been found in the ADS in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically with regard to evidence accumulation, work in primates found neural correlates of evidence accumulation in the ADS (Ding 2015; Ding and Gold, 2010; Ding and Gold, 2012b; Ding and Gold, 2013; Ding, 2015, Lo and Wang, 2006), and revealed that electrical microstimulation of the ADS impacts behavior that is based on accumulation of evidence (Ding and Gold, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to primate studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "e7685bc5-b12f-46b5-b1d0-e30d7c03fd43",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C19",
+      "claim": "Electrical microstimulation of the ADS impacts behavior based on accumulation of evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically with regard to evidence accumulation, work in primates found neural correlates of evidence accumulation in the ADS (Ding 2015; Ding and Gold, 2010; Ding and Gold, 2012b; Ding and Gold, 2013; Ding, 2015, Lo and Wang, 2006), and revealed that electrical microstimulation of the ADS impacts behavior that is based on accumulation of evidence (Ding and Gold, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a microstimulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "3baf7da9-28b5-492b-865b-08678468d8f1",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C20",
+      "claim": "There have been no recorded inactivations of the dorsal striatum during the accumulation of evidence prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there have been no recorded inactivations of the dorsal striatum during the accumulation of evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the state of the literature prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "8a01ee62-7f5e-4611-853a-6bab509bc6f9",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C21",
+      "claim": "Inactivations are important probes of whether a region plays a central causal role for a cognitive variable of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivations are important probes of whether a region plays a central causal role for a cognitive variable of interest (Newsome and Par\u00e9, 1988; Erlich et al., 2015; Katz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to methodological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "80e4374f-7180-4ccb-91ed-22262aefcc98",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C22",
+      "claim": "Rats gradually accumulated auditory evidence over the entire trial in the Poisson-clicks task.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies using this task, analysis of our rats' behavior indicated that they gradually accumulated auditory evidence over the entire trial, and used that accumulated evidence to drive a categorical choice (Figure 1\u2014figure supplement 1; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral analysis and references to figures and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "036d0089-616f-4b9e-b908-2dfcf539762b",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C23",
+      "claim": "Unilateral inactivation of the ADS biased rats to make more ipsilateral choices relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Unilateral inactivation of the ADS biased rats to make more ipsilateral choices relative to controls (Figure 1b; bias for right side inactivation = 19.2 \u00b1 4.4%, p<0.01; bias for left side inactivation = 18.6 \u00b1 3.3%, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological inactivation experiments, with statistical significance reported.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "1c413435-d082-48fe-99ec-af27b4427f4e",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C24",
+      "claim": "The ipsilateral bias caused by unilateral ADS inactivation was specific for accumulation trials and not motor control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not a gross motor bias, but was instead specific for accumulation trials, because no significant bias was caused on interleaved motor control trials in which the rats had to make a similar left/right motor response, but were cued by a simple visual stimulus (Figure 1\u2014figure supplement 2; p>0.4 for both left- and right-side trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of effects on accumulation trials versus motor control trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "fca63d39-df44-4819-9e6a-7a6865ef1ad1",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C25",
+      "claim": "Bilateral pharmacological inactivation of the ADS caused a substantial impairment in performance for accumulation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral pharmacological inactivation caused a substantial impairment in performance for accumulation trials (Figure 1c; impairment = 12.6 \u00b1 3.2%, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from bilateral inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "4ed889ba-0709-4295-acfc-f0ad313ed2ee",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C26",
+      "claim": "The impairment from bilateral ADS inactivation was specific for accumulation trials and not motor control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This impairment was again specific for accumulation trials, with no significant impairment in motor control trials where the decision was not based on the accumulation of evidence over time (Figure 1\u2014figure supplement 2; p>0.6 for both left- and right-side trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of effects on accumulation trials versus motor control trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "610e6b6b-2717-477c-94e1-6116a1cbaae2",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C27",
+      "claim": "Unilateral ADS inactivation significantly increased the side bias in lapse rates in favor of ipsilateral choices.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the side bias in the lapse rates (the contralateral lapse rate parameter \u03baC and the ipsilateral lapse rate parameter \u03baI, which are unitless parameters in terms of fraction of trials; Materials and methods) significantly increased in favor of ipsilateral choices (\u03baI: from 0.29, 95% C.I. = [0.18 0.43] in control sessions to 0.00, 95% C.I. = [0.00 0.14] for inactivation sessions, \u03baC: from 0.20, 95% C.I. = [0.04 0.58] in control sessions to 0.60, 95% C.I. = [0.14 0.93] for inactivation sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model fitting to behavioral data from unilateral inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "372de28b-4e66-4edd-9f8f-ffd5f797851e",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C28",
+      "claim": "Unilateral ADS inactivation significantly increased the magnitude of accumulator and sensory noise parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the magnitude of the accumulator and sensory noise parameters, which respectively describe diffusion noise intrinsic to the accumulator and noise associated with the addition of each sensory click, also increased significantly (Figure 2a,b and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to behavioral data and is shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "f79f8637-e435-451f-9e23-2565a22fc870",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C29",
+      "claim": "For bilateral inactivation, the combination of sensory and accumulator noise parameters was significantly greater than for control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "For data from bilateral inactivation sessions, the combination of sensory and accumulator noise parameters was again significantly greater than for control sessions (Figure 2c,d; w1\u03c32a + w2\u03c32s: from 31.64 clicks2/sec [95% C.I. = [17.40 55.84]] in control sessions to 117.00 clicks2/sec [95% C.I. = [71.12 156.53]] , where w1 = 0.92, w2 = 0.39 during inactivations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to behavioral data from bilateral inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "5bdb2bf5-fc3d-45aa-beb3-206d2bc97642",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C30",
+      "claim": "Over a third of recorded striatal neurons significantly modulated their activity in a side-selective manner during the fixation period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also found that over a third of the recorded neurons significantly modulate their activity in a side-selective manner (p<0.05) during the fixation period many hundreds of milliseconds before the movement initiation reporting the decision (64/173 [37%] of the neurons active during the fixation period [Figure 3\u2014figure supplement 1d\u2013f]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "e3d5bd5b-4b48-4c1a-a123-19412a927aa6",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C31",
+      "claim": "The average responses of side-selective striatum neurons ramped upwards for stimuli in the preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work in primate dorsal striatum (Ding and Gold, 2010), we found that the average responses of these rat striatum neurons ramped upwards for stimuli in the preferred direction (Figure 3), and moreover, that after an initial onset latency, the slope of the ramp was proportional to the stimulus strength (Figure 3; Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data and comparison with prior primate studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "00bcf465-d26a-4ed7-81c9-ea8d9f4725e0",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C32",
+      "claim": "The slope of the ramping response in striatal neurons was proportional to stimulus strength after an initial onset latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work in primate dorsal striatum (Ding and Gold, 2010), we found that the average responses of these rat striatum neurons ramped upwards for stimuli in the preferred direction (Figure 3), and moreover, that after an initial onset latency, the slope of the ramp was proportional to the stimulus strength (Figure 3; Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "8f22b0c1-7d8d-407b-8778-36736334e7bd",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C33",
+      "claim": "Striatal neurons modulated their activity in close agreement with the theoretical prediction of a fixed-magnitude and sustained increase in firing rate for each click.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus estimated the effect of each sensory evidence quantum by computing the click-triggered average response of the side-selective striatal neurons. We found that striatal neurons modulated their activity in close agreement with this theoretical prediction (Figure 4b, data), arguing in favor of a role of this anterior striatal subregion in the behavioral accumulation of evidence process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by click-triggered average analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "62778747-1307-4e03-a4a4-456f2b89138e",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C34",
+      "claim": "Side-selective striatal neurons encoded accumulating evidence in a remarkably graded manner throughout the period of evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When applying this analysis to the striatal data, we found that the side-selective neurons encoded accumulating evidence in a remarkably graded manner throughout the period of evidence accumulation (Figure 4c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tuning curve analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "58674c2c-4a42-45ea-95ab-de1d932985bf",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C35",
+      "claim": "Graded encoding of accumulated evidence was consistent across different neurons in the population of recorded striatal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This graded encoding was consistent across different neurons in the population of recorded striatal cells (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis across the population of recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "54a268f7-14b5-450a-a8cb-4dd34a6c1480",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C36",
+      "claim": "Full-trial unilateral optogenetic inactivation of the ADS resulted in more ipsilateral choice biases relative to control trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We began with full-trial unilateral optogenetic inactivation and found, in agreement with the pharmacological inactivation described above, that optogenetic manipulation resulted in more ipsilateral choice biases relative to control trials, which in this case were randomly interleaved with the inactivation trials (Figure 6c; bias = 9.0 \u00b1 2.3%, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b952ddcd-a958-412c-a201-fe77248b1db5",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C37",
+      "claim": "Control rats with YFP alone did not show a behavioral bias from optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Control rats whose striatum was injected with the same virus expressing YFP alone did not show a behavioral bias (bias = 0.1 \u00b1 1.8%, p=0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by control experiments with YFP-only virus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "1ef9168c-1101-43de-a8fb-68ed386663f9",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C38",
+      "claim": "Transient optogenetic inactivation of the ADS during both the first half and second half of accumulation caused a significant bias for ipsilateral choices.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to similar inactivation assays of the cortical FOF, which have no effect during the early parts of the accumulation period (Hanks et al., 2015), we found that transient optogenetic inactivation of the anterior dorsal striatum during both the first half and second half of the accumulation caused a significant bias for the ipsilateral choices, with a similar magnitude of effect in these two periods (first half bias = 10.4 \u00b1 4.0, p<0.01; second half bias = 12.9 \u00b1 3.7%, p<0.01; difference = 2.5 \u00b1 2.8, p=0.2; Figure 6e; the first-half effect in the striatum is significantly greater than that in the FOF, p<0.01, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporally specific optogenetic inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "5393f0b4-de49-4cab-9eab-8435aedaee49",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C39",
+      "claim": "Optogenetic inactivation of the ADS had no significant effect during the pre-accumulation or post-choice periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the effect in striatum was limited to the stimulus presentation period and we found no significant effect of optogenetic inactivation during the pre-accumulation or post-choice periods (pre-accumulation bias = 0.4 \u00b1 5.4%, p=0.42; post-choice bias = 0.9 \u00b1 5.2%, p=0.38; Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporally specific optogenetic inactivation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "05bde814-34ea-43e2-b094-7e79c2c4073a",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C40",
+      "claim": "The anterior dorsal striatum plays a direct causal role throughout the entire evidence accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the idea that the anterior dorsal striatum plays a direct causal role throughout the entire evidence accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic inactivation experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "9880ff32-43ca-4950-bd60-71942c456606",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C41",
+      "claim": "The anterior dorsal striatum is the first brain region to satisfy three criteria: being required for unimpaired accumulation-based decision making, having graded neural encoding of accumulated evidence, and making a causal contribution throughout the accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "By demonstrating that the anterior dorsal striatum satisfies all three of these criteria, our work suggests that the anterior dorsal striatum is the first identifiable node in the neural circuit causally responsible for computing evidence accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the combined results from pharmacological, optogenetic, and electrophysiological experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "170b5aca-c7ce-4f59-994d-c2a4c2b720b4",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C42",
+      "claim": "The anterior dorsal striatum is well positioned anatomically to participate in evidence accumulation as it receives diverse convergent anatomical input from multiple cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior dorsal striatum is well positioned anatomically to participate in evidence accumulation as it receives diverse convergent anatomical input from multiple cortical areas (Cheatwood et al., 2003; McGeorge and Faull, 1989) and it is connected via recurrent loops with cortical and subcortical areas that are widely believed to play a role in action selection (Ding and Gold, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "d4c7f433-1d46-491b-a2e9-cdcfbd263989",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C43",
+      "claim": "The striatum may be directly involved in a more expansive set of computations, traditionally considered to be more cognitive in nature, than its well-established functions in action selection, response initiation, evaluation of reward uncertainty, and habit formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, together with those of Ding and colleagues (Ding and Gold, 2010; Ding and Gold, 2012a; Ding, 2015), suggest that the striatum may be directly involved in a more expansive set of computations, traditionally considered to be more cognitive in nature, than the already well-established functions of the dorsal striatum in action selection, response initiation, evaluation of reward uncertainty, and habit formation (Ding and Gold, 2010; Graybiel, 2008; Hikosaka et al., 2014; Jin and Costa, 2010; Kravitz and Kreitzer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the current results and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "eaf10773-a3ed-46cb-956e-a08c8e769579",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C44",
+      "claim": "Model fits to unilateral pharmacological inactivation data suggest that the main noise parameter affected may be the magnitude of the noise in the evidence accumulator.",
+      "claim_type": "EXPLICIT",
+      "source": "A parsimonious account suggests that the main noise parameter that is affected may perhaps be the magnitude of the noise in the evidence accumulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model fitting results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "c2aa2f40-630a-4ecf-a720-0779156fb1a2",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C45",
+      "claim": "The first-half anterior dorsal striatum optogenetic inactivation effect is significantly greater than the first-half FOF effect.",
+      "claim_type": "EXPLICIT",
+      "source": "the first-half effect in the striatum is significantly greater than that in the FOF, p<0.01, Figure 7",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by direct statistical comparison of optogenetic inactivation effects between ADS and FOF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b4458d90-f25c-4d38-ab5b-295fa9cd610b",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C46",
+      "claim": "No brain region has previously been identified as being required for unimpaired accumulation-based decision-making behavior, having graded neural encoding required for direct involvement in computing the graded value of accumulating evidence, and making a causal contribution throughout times that fully coincide with the accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these many years of studies, no brain region has previously been identified as: first, being required for unimpaired accumulation-based decision-making behavior; second, having the graded neural encoding required for direct involvement in computing the graded, gradually evolving, value of the accumulating evidence; and third, making a causal contribution throughout times that fully coincide with the accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the state of the field prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "d4ebf4dc-c9e3-45ce-8310-15726fdb1b4b",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C47",
+      "claim": "The neural activity of many striatal neurons was modulated by movement initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Graybiel, 2008; Jin and Costa, 2010; Kravitz and Kreitzer, 2012), we found that the neural activity of many striatal neurons was modulated by movement initiation (Figure 3\u2014figure supplement 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological recordings and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "10b2fa1d-8bca-40b7-96ae-f007a09c8113",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C48",
+      "claim": "Rats were trained on a previously developed decision-making task in which subjects accumulate auditory evidence over many hundreds of milliseconds to inform a binary left/right choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We trained rats on a previously developed decision-making task (Brunton et al., 2013) in which subjects accumulate auditory evidence over many hundreds of milliseconds to inform a binary left/right choice (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the behavioral task used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "fe031604-d478-4f29-b96b-af3e71017149",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C49",
+      "claim": "In the task, rats kept their nose in a central port during the presentation of two simultaneous trains of randomly timed auditory clicks.",
+      "claim_type": "EXPLICIT",
+      "source": "In each trial, rats kept their nose in a central port during the presentation of two simultaneous trains of randomly timed auditory clicks, one played from a speaker to their left and the other from a speaker to their right.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral task procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "9084dabe-d5bf-4458-bf52-3a465c43c7b9",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C50",
+      "claim": "At the end of the auditory stimulus, the rat's task was to decide which side had played the greater total number of clicks.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the auditory stimulus, the rat's task was to decide which side had played the greater total number of clicks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the decision requirement in the behavioral task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "5848028a-2b8b-46ba-a50c-0a628c1d6b52",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C51",
+      "claim": "The experiments were approved by the Princeton University Institutional Animal Care and Use Committee and carried out in accordance with National Institutes of Health standards.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures described in this study were approved by the Princeton University Institutional Animal Care and Use Committee and were carried out in accordance with National Institutes of Health standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval and compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "f06354ff-8f72-408b-9117-bf9cc8011145",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C52",
+      "claim": "The anterior striatal region targeted in this study receives convergent inputs from the PPC and the FOF.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior striatial region targeted in this study receives convergent inputs from the PPC and the FOF, brain regions previously reported to contain neural correlates of evidence accumulation but later shown to not be central to the accumulation process itself (Erlich et al., 2015; Hanks et al., 2015; Katz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical claim supported by prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "2737e185-9f44-477e-9d9b-d5ab2f1dbc8e",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C53",
+      "claim": "The infusion cannulas were implanted at an angle of 15\u00b0 lateral to minimize any potential backflow of muscimol to the frontal orienting fields (FOF).",
+      "claim_type": "EXPLICIT",
+      "source": "The infusion cannulas were implanted at an angle of 15o lateral to minimize any potential backflow of muscimol to the frontal orienting fields (FOF), which have recently been demonstrated to be necessary for maximal performance on this task (Erlich et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail to control for potential confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "3a2be66f-cbb4-430b-9753-855c6a92f668",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "claim_id": "C54",
+      "claim": "Acute neural recordings verified that transient silencing of neural activity in the striatum could be achieved with fine temporal precision using delivery of green light.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute neural recordings in our experimental rats verified that we could indeed transiently silence neural activity in the striatum with fine temporal precision using the delivery of green light (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the optogenetic method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior to this study, neural circuits causally responsible for evidence accumulation had not been determined, despite observation of neural correlates in multiple brain regions including posterior parietal cortex and frontal orienting fields, which recent studies suggest are not central to the computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C13, C20, and C46 establish the state of the field prior to this work through citations to prior literature. These claims consistently document that while evidence accumulation is widely studied and neural correlates have been observed in multiple regions, the causal circuits remained unknown, and recent work suggested PPC and FOF/FEF are not central to the computation. This provides appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "83730632-85bd-47a0-963b-6b03b68e25bc",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose three criteria for identifying brain regions directly involved in evidence accumulation: directly influencing accumulation-based decision-making behavior, having graded neural encoding of accumulated evidence, and contributing throughout the accumulation process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C21 establish logical criteria for identifying regions involved in evidence accumulation. These are reasonable criteria based on the computational requirements of the task and are supported by methodological citations (C21). The criteria provide a clear framework for evaluating the ADS and are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The anterior dorsal striatum is anatomically positioned as a convergence hub receiving inputs from multiple cortical areas including PPC and FOF, and prior work in primates has found neural correlates of evidence accumulation and behavioral effects of microstimulation in the ADS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19, C42, and C52 establish the anatomical and functional rationale for studying the ADS, supported by multiple citations to anatomical and primate electrophysiology studies. The convergence of inputs from regions showing neural correlates of accumulation provides strong motivation for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "be6912c1-6170-4ae3-b403-c825646ad6eb",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rats were trained on a Poisson-clicks auditory evidence accumulation task and behavioral analysis confirmed they gradually accumulated evidence over the entire trial to make binary left/right choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C48-C51 describe the behavioral task and confirm rats perform evidence accumulation. C22 is supported by behavioral analysis with references to figures and supplementary files. The task description is clear and the behavioral validation is appropriate. Ethical approval is documented (C51).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "3612c693-9270-4d21-80b9-a63525e66c80",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Unilateral pharmacological inactivation of the ADS with muscimol biased rats to make more ipsilateral choices (19.2\u00b14.4% for right, 18.6\u00b13.3% for left, p<0.01), and this effect was specific to accumulation trials, not motor control trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 report unilateral inactivation effects with statistical significance and appropriate controls. The specificity to accumulation trials (p>0.4 for motor control) demonstrates the effect is not due to gross motor impairment. The data are shown in Figure 1b and Figure 1\u2014figure supplement 2. The experimental design with motor control trials is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b670ee4e-97fc-431c-ab73-0b1f0fb5518a",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bilateral pharmacological inactivation of the ADS caused substantial performance impairment on accumulation trials (12.6\u00b13.2%, p<0.01) but not on motor control trials (p>0.6), demonstrating the ADS is required for accumulation-based decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 report bilateral inactivation effects with statistical significance and appropriate motor control comparisons. The specificity to accumulation trials strengthens the conclusion that ADS is required for evidence accumulation per se, not just motor execution. Data are shown in Figure 1c and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "4102e8f4-ccc7-4621-8537-31ad0958f896",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Model-based analysis of inactivation effects revealed that unilateral ADS inactivation increased lapse rate bias and significantly increased accumulator and sensory noise parameters, with bilateral inactivation also increasing the combined noise parameters, suggesting the ADS affects accumulator noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 and C44 report model fitting results showing effects on lapse rates and noise parameters. The analysis uses an 11-parameter drift-diffusion model with algorithmic differentiation for simultaneous parameter fitting. The trade-offs between parameters are acknowledged and confidence intervals are provided. The conclusion that accumulator noise is affected (C44) is appropriately cautious given parameter trade-offs. Figure 2 shows likelihood landscapes supporting the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "90a33c52-1e75-4195-97e6-9588b3167b3f",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Electrophysiological recordings revealed that over a third of striatal neurons (64/173, 37%) showed side-selective activity during the fixation period hundreds of milliseconds before movement, while many neurons also showed movement-related activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C47 report electrophysiological findings with appropriate statistical thresholds (p<0.05) and sample sizes. The distinction between pre-movement side-selective activity and movement-related activity is important for interpreting the role of these neurons. Data are shown in Figure 3 and supplementary figures with clear documentation of analysis methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "ca1fc5a3-ca91-4271-a9a5-189744321105",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Side-selective striatal neurons showed ramping responses for preferred-direction stimuli, with the slope of the ramp proportional to stimulus strength after an initial onset latency, consistent with prior primate studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 describe ramping neural responses with stimulus-strength dependence, supported by electrophysiological data in Figure 3 and Figure 4a. The comparison to primate work (Ding and Gold, 2010) provides cross-species validation. However, the authors appropriately note that ramping alone is not conclusive evidence for accumulation encoding, motivating further analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "7e3ee485-4f63-4c0e-87d8-c0cf65079e23",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Click-triggered average analysis showed that striatal neurons modulated their activity in close agreement with the theoretical prediction of a fixed-magnitude sustained increase in firing rate for each click, supporting a role in evidence accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 reports click-triggered average analysis comparing neural responses to theoretical predictions for evidence accumulation. The analysis is shown in Figure 4b with both data and model predictions. This analysis goes beyond simple ramping to test specific predictions about how individual evidence quanta affect neural activity, providing stronger evidence for accumulation encoding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "a29e8017-c8e3-4e4c-a518-7e3193f35fff",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tuning curve analysis revealed that side-selective striatal neurons encoded accumulated evidence in a graded manner throughout the accumulation period, with this graded encoding consistent across the population of recorded neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 report tuning curve analysis showing graded encoding of accumulated evidence. The analysis uses a recently developed method (Hanks et al., 2015) that relates firing rates to model-derived accumulator values on individual trials. Data are shown in Figures 4c-d and Figure 5. This provides the strongest evidence for graded accumulation encoding, addressing the second criterion proposed by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "51b01a6f-4fef-4b75-907d-1c08270a975a",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Full-trial unilateral optogenetic inactivation of the ADS resulted in ipsilateral choice bias (9.0\u00b12.3%, p<0.01), with control rats expressing YFP alone showing no bias (0.1\u00b11.8%, p=0.89), and acute recordings verified effective neural silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C54 report optogenetic inactivation effects with appropriate controls. The YFP-only control (C37) rules out non-specific effects of viral injection or light delivery. Acute recordings (C54, Figure 6b) validate the optogenetic silencing method. The effect size is smaller than pharmacological inactivation but still significant and consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "2a6c8629-d6e6-4f62-9c6c-acf1be9aa6ab",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Temporally specific optogenetic inactivation showed that the ADS contributes during both the first half (10.4\u00b14.0%, p<0.01) and second half (12.9\u00b13.7%, p<0.01) of evidence accumulation, with the first-half effect significantly greater than that observed for FOF inactivation (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C45 report temporally specific inactivation effects demonstrating ADS contribution throughout accumulation. The comparison to FOF (which shows no first-half effect) is critical for establishing that ADS is involved earlier in the accumulation process than cortical regions. Statistical comparisons are appropriate (nonparametric bootstrap, Figure 7). This addresses the third criterion and distinguishes ADS from FOF.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "f3dfcfca-ea9b-41e6-b560-eb27c3fee029",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Optogenetic inactivation of the ADS had no significant effect during pre-accumulation (0.4\u00b15.4%, p=0.42) or post-choice periods (0.9\u00b15.2%, p=0.38), indicating the effect is specific to the accumulation period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 reports lack of effects outside the accumulation period, demonstrating temporal specificity. The non-significant effects during pre-accumulation and post-choice periods (Figure 6e) indicate the ADS contribution is limited to the evidence accumulation computation itself, not preparatory or post-decision processes. This strengthens the conclusion about ADS's specific role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "b786f6de-8ce2-4a20-b115-c317a8c3d873",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The anterior dorsal striatum is the first brain region to satisfy all three criteria for direct involvement in evidence accumulation: being required for unimpaired accumulation-based decisions, having graded neural encoding of accumulated evidence, and making causal contributions throughout the accumulation process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C40-C41 state the main conclusion, which is supported by the convergence of pharmacological inactivation (C23-C26), electrophysiological recordings showing graded encoding (C30-C35), and temporally specific optogenetic inactivation (C38-C39). Each of the three criteria is addressed with multiple complementary approaches. The claim that ADS is the \"first\" region to satisfy all three criteria is supported by C46 and the literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "f9380912-aecb-4056-b109-d8fc88bdd0c6",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The striatum may be directly involved in a more expansive set of computations, traditionally considered cognitive in nature, beyond its established functions in action selection, response initiation, reward uncertainty evaluation, and habit formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C43 is a speculative interpretation extending beyond the current data. While the evidence supports ADS involvement in evidence accumulation, the claim about \"more expansive\" cognitive functions is not directly tested. The relationship between evidence accumulation and other striatal functions remains to be determined. This is appropriately framed as speculation but requires future work for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    },
+    {
+      "id": "6136fd58-d4e4-455d-92b7-0745635c25d3",
+      "content_id": "35639073-9485-4df0-b42c-59e71a9c500d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Infusion cannulas were implanted at 15\u00b0 lateral angle to minimize potential muscimol backflow to the frontal orienting fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 describes a methodological control to prevent confounding effects from drug spread to FOF. This is an important control given that FOF is known to be necessary for task performance (Erlich et al., 2015). The angled approach is a reasonable strategy, though direct verification of spread would strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:09:10.451686Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2eb9fc55-6074-4c15-b58b-4d9df024eb55",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "78c05c68-7f80-4048-a4bb-b2a85dc704eb",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "9a9940e6-7dfc-43be-8f09-dd4a3ee18d2d",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "72415238-c43c-4d76-90c0-2cee9a7f4beb",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "074c6604-e47c-41a6-afa5-54aca9491dee",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "53a61366-ebdf-4b92-8949-816d18333f62",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "a542bb8a-f7f4-4809-998b-fda338f5fc98",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "6a648dc9-1cfa-446a-bbe4-5322b74d8f40",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "3baf7da9-28b5-492b-865b-08678468d8f1",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "b4458d90-f25c-4d38-ab5b-295fa9cd610b",
+      "result_id": "a8691c68-34cf-4bc7-b07c-e8d1b49dc22e"
+    },
+    {
+      "claim_id": "2bb7fe73-4c46-4ca7-bfdc-27066f3f4d49",
+      "result_id": "83730632-85bd-47a0-963b-6b03b68e25bc"
+    },
+    {
+      "claim_id": "d38ff37d-512c-4484-809b-359450328529",
+      "result_id": "83730632-85bd-47a0-963b-6b03b68e25bc"
+    },
+    {
+      "claim_id": "85d42930-79ee-4451-945e-8e03a7897775",
+      "result_id": "83730632-85bd-47a0-963b-6b03b68e25bc"
+    },
+    {
+      "claim_id": "8a01ee62-7f5e-4611-853a-6bab509bc6f9",
+      "result_id": "83730632-85bd-47a0-963b-6b03b68e25bc"
+    },
+    {
+      "claim_id": "09ba85f2-f381-47ed-a2a0-f41dafb637ae",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "ab9b51ba-84b1-49c6-b44a-f5209add7f73",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "08e98b04-0f4e-4456-b366-8b7afcc1016a",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "c034229c-af8c-44b2-ba9d-a398245d6840",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "b640cf2a-c8f1-4a81-a236-ee6eacc385ba",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "e7685bc5-b12f-46b5-b1d0-e30d7c03fd43",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "170b5aca-c7ce-4f59-994d-c2a4c2b720b4",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "f06354ff-8f72-408b-9117-bf9cc8011145",
+      "result_id": "2a2af721-a930-4ee6-a51b-60c7f97f3a48"
+    },
+    {
+      "claim_id": "80e4374f-7180-4ccb-91ed-22262aefcc98",
+      "result_id": "be6912c1-6170-4ae3-b403-c825646ad6eb"
+    },
+    {
+      "claim_id": "10b2fa1d-8bca-40b7-96ae-f007a09c8113",
+      "result_id": "be6912c1-6170-4ae3-b403-c825646ad6eb"
+    },
+    {
+      "claim_id": "fe031604-d478-4f29-b96b-af3e71017149",
+      "result_id": "be6912c1-6170-4ae3-b403-c825646ad6eb"
+    },
+    {
+      "claim_id": "9084dabe-d5bf-4458-bf52-3a465c43c7b9",
+      "result_id": "be6912c1-6170-4ae3-b403-c825646ad6eb"
+    },
+    {
+      "claim_id": "5848028a-2b8b-46ba-a50c-0a628c1d6b52",
+      "result_id": "be6912c1-6170-4ae3-b403-c825646ad6eb"
+    },
+    {
+      "claim_id": "036d0089-616f-4b9e-b908-2dfcf539762b",
+      "result_id": "3612c693-9270-4d21-80b9-a63525e66c80"
+    },
+    {
+      "claim_id": "1c413435-d082-48fe-99ec-af27b4427f4e",
+      "result_id": "3612c693-9270-4d21-80b9-a63525e66c80"
+    },
+    {
+      "claim_id": "fca63d39-df44-4819-9e6a-7a6865ef1ad1",
+      "result_id": "b670ee4e-97fc-431c-ab73-0b1f0fb5518a"
+    },
+    {
+      "claim_id": "4ed889ba-0709-4295-acfc-f0ad313ed2ee",
+      "result_id": "b670ee4e-97fc-431c-ab73-0b1f0fb5518a"
+    },
+    {
+      "claim_id": "610e6b6b-2717-477c-94e1-6116a1cbaae2",
+      "result_id": "4102e8f4-ccc7-4621-8537-31ad0958f896"
+    },
+    {
+      "claim_id": "372de28b-4e66-4edd-9f8f-ffd5f797851e",
+      "result_id": "4102e8f4-ccc7-4621-8537-31ad0958f896"
+    },
+    {
+      "claim_id": "f79f8637-e435-451f-9e23-2565a22fc870",
+      "result_id": "4102e8f4-ccc7-4621-8537-31ad0958f896"
+    },
+    {
+      "claim_id": "eaf10773-a3ed-46cb-956e-a08c8e769579",
+      "result_id": "4102e8f4-ccc7-4621-8537-31ad0958f896"
+    },
+    {
+      "claim_id": "5bdb2bf5-fc3d-45aa-beb3-206d2bc97642",
+      "result_id": "90a33c52-1e75-4195-97e6-9588b3167b3f"
+    },
+    {
+      "claim_id": "d4ebf4dc-c9e3-45ce-8310-15726fdb1b4b",
+      "result_id": "90a33c52-1e75-4195-97e6-9588b3167b3f"
+    },
+    {
+      "claim_id": "e3d5bd5b-4b48-4c1a-a123-19412a927aa6",
+      "result_id": "ca1fc5a3-ca91-4271-a9a5-189744321105"
+    },
+    {
+      "claim_id": "00bcf465-d26a-4ed7-81c9-ea8d9f4725e0",
+      "result_id": "ca1fc5a3-ca91-4271-a9a5-189744321105"
+    },
+    {
+      "claim_id": "8f22b0c1-7d8d-407b-8778-36736334e7bd",
+      "result_id": "7e3ee485-4f63-4c0e-87d8-c0cf65079e23"
+    },
+    {
+      "claim_id": "62778747-1307-4e03-a4a4-456f2b89138e",
+      "result_id": "a29e8017-c8e3-4e4c-a518-7e3193f35fff"
+    },
+    {
+      "claim_id": "58674c2c-4a42-45ea-95ab-de1d932985bf",
+      "result_id": "a29e8017-c8e3-4e4c-a518-7e3193f35fff"
+    },
+    {
+      "claim_id": "54a268f7-14b5-450a-a8cb-4dd34a6c1480",
+      "result_id": "51b01a6f-4fef-4b75-907d-1c08270a975a"
+    },
+    {
+      "claim_id": "b952ddcd-a958-412c-a201-fe77248b1db5",
+      "result_id": "51b01a6f-4fef-4b75-907d-1c08270a975a"
+    },
+    {
+      "claim_id": "3a2be66f-cbb4-430b-9753-855c6a92f668",
+      "result_id": "51b01a6f-4fef-4b75-907d-1c08270a975a"
+    },
+    {
+      "claim_id": "1ef9168c-1101-43de-a8fb-68ed386663f9",
+      "result_id": "2a6c8629-d6e6-4f62-9c6c-acf1be9aa6ab"
+    },
+    {
+      "claim_id": "c2aa2f40-630a-4ecf-a720-0779156fb1a2",
+      "result_id": "2a6c8629-d6e6-4f62-9c6c-acf1be9aa6ab"
+    },
+    {
+      "claim_id": "5393f0b4-de49-4cab-9eab-8435aedaee49",
+      "result_id": "f3dfcfca-ea9b-41e6-b560-eb27c3fee029"
+    },
+    {
+      "claim_id": "fb6922f3-e6aa-4f2c-abc5-098ec9264b56",
+      "result_id": "b786f6de-8ce2-4a20-b115-c317a8c3d873"
+    },
+    {
+      "claim_id": "b7b41e0b-a665-4dbe-89a5-b70ff83cf7e9",
+      "result_id": "b786f6de-8ce2-4a20-b115-c317a8c3d873"
+    },
+    {
+      "claim_id": "05bde814-34ea-43e2-b094-7e79c2c4073a",
+      "result_id": "b786f6de-8ce2-4a20-b115-c317a8c3d873"
+    },
+    {
+      "claim_id": "9880ff32-43ca-4950-bd60-71942c456606",
+      "result_id": "b786f6de-8ce2-4a20-b115-c317a8c3d873"
+    },
+    {
+      "claim_id": "d4c7f433-1d46-491b-a2e9-cdcfbd263989",
+      "result_id": "f9380912-aecb-4056-b109-d8fc88bdd0c6"
+    },
+    {
+      "claim_id": "2737e185-9f44-477e-9d9b-d5ab2f1dbc8e",
+      "result_id": "6136fd58-d4e4-455d-92b7-0745635c25d3"
+    }
+  ],
+  "comparisons": []
+}

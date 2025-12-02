@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Evoked population activity in the pedal ganglion exhibits low-dimensional periodic dynamics. Stimulation caused population activity to settle into repeated loops in 3D projections (C16), with 4-8 embedding dimensions capturing 80% of variance (C17), representing >10-fold dimension reduction (C18). Population responses quickly reached high recurrence within one oscillation period (C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 collectively demonstrate low-dimensional periodic dynamics through multiple converging lines of evidence: visual inspection of trajectories, quantitative variance analysis, and recurrence analysis. The dimension reduction is substantial and the rapid coalescence to recurrent states is well-documented in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Sequential evoked responses from the same preparation converge to the same manifold. Pairs of responses fell close together throughout (C20), exceeding random projection agreement (C21), despite initial divergence during stimulation (C22). Pairwise neuron similarity was preserved across responses (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide strong evidence for manifold convergence through both direct distance measurements (Hausdorff distance analysis) and indirect evidence (pairwise correlation preservation). The control comparisons with random projections and different initial conditions strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Population dynamics return to the same manifold after spontaneous perturbations. In 90% of cases, dynamics returned to a recurrent state after perturbation (C24), with all but three returning to the same manifold (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate attractor stability through perturbation analysis. The high proportion of returns to recurrent states and specifically to the same manifold provides strong evidence for a true attractor. The methodology for detecting perturbations and returns is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The pedal ganglion implements a stable spiral attractor with consistent dynamics across preparations. Evoked responses had highly clustered maximum eigenvalues (C26, C27), with dominance of negative complex eigenvalues indicating a stable spiral (C28). The linear model estimated ~10s orbital period (C29), consistent with direct recurrence estimates (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide strong statistical evidence for a spiral attractor through eigenvalue analysis of local linear models. The consistency across preparations and agreement between two independent methods (linear model vs. recurrence) strengthens the conclusion. However, the linear model is a local approximation and may not capture all nonlinear dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The orbital period and contraction rate are dissociable properties of the spiral attractor. Population responses showed all possible changes in period (slowing, speeding, unchanged) (C31), with no relationship between contraction rate and period change (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate an important property of the spiral attractor through correlation analysis. The lack of relationship between contraction and period change is consistent with the mathematical properties of a spiral attractor and is well-supported by Figure 5C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C46"
+    ],
+    "result": "Motor output can be accurately decoded from the low-dimensional trajectory. A statistical model accurately fit and forecast P10 nerve activity from the trajectory in all nine recordings (C35), using only 3-5 dimensions for 80% variance (C36). Increasing dimensions to 90% variance did not improve forecasts (C37), suggesting the trajectory directly encodes muscle commands (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C46 demonstrate functional relevance of the low-dimensional dynamics through successful decoding. The cross-validation approach with sliding windows is rigorous. The lack of improvement with additional dimensions supports the sufficiency of the low-dimensional representation. However, the causal claim in C46 is an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Individual neuron participation in the attractor is variable across bouts, but this variability does not affect the low-dimensional dynamics. All responses showed long-tailed participation distributions (C38, C39), with many neurons changing participation between bouts (C40, C41). However, distances between population responses did not correlate with participation changes (C42, C43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate a key finding about the relationship between single-neuron and population dynamics. The noise model analysis (C41) provides statistical rigor for identifying truly variable neurons. The lack of correlation between participation changes and trajectory distances (C42, C43) is well-supported, though the interpretation requires careful consideration of what 'participation' measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C65"
+    ],
+    "result": "Strongly participating neurons are spatially localized to the caudo-lateral quadrant of the pedal ganglion. Neurons with strong participation (C44) and highly variable participation (C45) were robustly located in this region, supporting the hypothesis that the pattern generator is predominantly located there (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C65 provide spatial mapping evidence for the location of the pattern generator. The consistency across preparations strengthens the conclusion. However, C65 is explicitly stated as a hypothesis and the spatial resolution is limited by the imaging approach (~10% of neurons sampled).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The pedal ganglion's population activity arises from a low-dimensional spiral attractor that is consistent across preparations despite variable single-neuron participation. The main finding (C48) is supported by evidence of low-dimensional periodic decaying orbits (C49), convergence to the same orbit when evoked (C50), return after perturbation (C51), consistency across preparations (C52), direct prediction of motor output (C53), and variable neuron participation (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 represent the synthesis of the major findings. Each component is well-supported by the grouped results above. The combination of attractor properties (convergence, stability, consistency) with functional relevance (motor decoding) and mechanistic insight (variable participation) provides strong support for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C71"
+    ],
+    "result": "Only low-dimensional dynamics, not high-dimensional population activity, are consistent within and between nervous systems, suggesting periodic activity is an emergent network property. This proposal (C47) is supported by the variable participation data suggesting the pattern generator is not driven by endogenous oscillators (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C71 represent key interpretive conclusions from the data. The consistency of low-dimensional dynamics despite variable high-dimensional activity is well-demonstrated. However, the claim that periodic activity is 'emergent' (C71) is an inference that, while consistent with the data, is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors hypothesize that attractor properties determine locomotion parameters: orbital period determines gallop period (C66), amplitude determines muscle contraction strength (C67), and contraction rate determines escape duration (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C68 are explicitly stated as hypotheses and speculation. While they are logical extensions of the findings, they are not tested in this study. Future work correlating attractor properties with behavioral measurements would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The pedal ganglion network supports at least two stable states: spontaneous activity and the stable-spiral attractor. Reaching the spiral attractor required strong stimulation (C75), suggesting the spontaneous state has a large basin of attraction (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe the multi-stability of the system. The existence of distinct states is well-demonstrated. The inference about basin size (C76) is reasonable given the stimulation requirements, though direct mapping of basins of attraction was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The pedal ganglion is an ideal experimental system for studying locomotion control, containing the pattern generator (C1), motorneurons (C2), and modulatory neurons (C3), with fictive locomotion sustained for minutes (C4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by citations to prior anatomical and physiological work. C4 is a property of the experimental system observed by the authors. These claims establish the rationale for the experimental system but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The experimental protocol involved imaging 120-180 neurons using voltage-sensitive dye and a 464-element photodiode array, with three locomotion bouts evoked per preparation by tail nerve stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C87-C89 describe the experimental methods. These are clearly documented and appropriate for the study. The methods are well-established and the parameters are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "P10 nerve activity was simultaneously recorded in 3 of 10 preparations. The P10 nerve projects to neck muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe a subset of experiments with simultaneous nerve recordings. C34 is supported by citation to prior anatomical work. These are methodological details supporting the motor decoding analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neural population activity is high-dimensional and complex, but low-dimensional signals have been described across multiple brain functions including sensory encoding, decision-making, navigation, and movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 establish the broader context and motivation for the study through general statements (C5-C6) and citations to prior work (C7-C10). These are accurate representations of the field but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Movement arises from mass action of neuron populations, with individual neurons showing intermittent participation across repeated movements in both vertebrates and invertebrates, suggesting collective population activity is key to movement control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 establish theoretical context through citations to prior work. C59 represents a synthesis view from the literature that motivates the current study. These are accurate representations of prior work but not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In intact Aplysia, tail stimulation elicits escape behavior. The pedal ganglion contains interneurons and motorneurons, with motorneurons not synaptically coupled, suggesting they read-out interneuron network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide anatomical and physiological context from prior work. C63 is an inference based on the cited anatomical properties. These establish the biological context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Prior work by the authors identified the caudo-lateral region as containing ensembles generating cyclical activity in phase with P10 nerve activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 cites the authors' own prior work to support the current spatial mapping findings. This provides continuity with previous results but is not a new finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior work has shown that serotonin affects escape locomotion: systemic injection increases gallop duration (C69, C77), and stimulating serotonergic command neurons evokes galloping (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C77-C78 cite prior work on neuromodulation of the locomotion system. These establish context for potential future experiments but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors speculate that a spiral attractor may be a general solution for generating finite rhythmic behavior (C70), that variable participation may provide robustness to neuron loss (C72), and that network 'sloppiness' may allow multiple configurations to realize the attractor (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C72-C73 are explicitly speculative interpretations. While they are reasonable hypotheses consistent with the data, they are not tested in this study and represent ideas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The crawl following escape gallop is slower and lacks periodic arching (C79). Three observed perturbations suggested transitions to a slower orbit consistent with gallop-to-crawl transition (C80). Crawling is the normal exploratory mode (C81) and head-wave behavior is also controlled by pedal motorneurons (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81-C82 cite prior behavioral work. C80 is an observation from the current data with an interpretation about behavioral transitions. These provide context for understanding the multiple behaviors controlled by the pedal ganglion but are not major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Multi-functional networks have been described in other invertebrate ganglia (C83-C85), and the current work is consistent with the hypothesis that multi-function arises from neurons participating in different attractors in the same network (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 cite prior work on multi-functional networks. C86 connects the current findings to this broader framework. This provides theoretical context but the multi-functionality hypothesis is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The population firing rate decays slowly post-stimulus, hinting at complex underlying dynamics beyond a simple oscillator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 describes an observation from Figure 1E that motivates the detailed dynamical analysis. This is a preliminary observation that leads to the main findings but is not itself a major result.",
+    "result_type": "MINOR"
+  }
+]

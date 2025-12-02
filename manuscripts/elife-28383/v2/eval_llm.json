@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The study identified 170,198 PRDM9 binding peaks genome-wide in transfected HEK293T cells, capturing 74% of known DSB hotspots with overlap increasing with binding strength and DMC1 enrichment. Despite the large number of peaks likely due to high expression levels, the binding sites correlate with recombination rates and capture biologically relevant hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 collectively demonstrate successful ChIP-seq mapping of PRDM9 binding. The large peak number (C40-C43) is acknowledged as potentially reflecting high expression, but validation through overlap with DSB hotspots (C44-C45), correlation with recombination rates (C46-C47), and DMC1 enrichment (C48) provides strong convergent evidence that the peaks represent genuine binding sites despite the heterologous expression system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Seven distinct PRDM9 binding motifs were identified with variable internal spacings, particularly in the ZF5-ZF6 region (2, 5, or 6 bp), explaining 75% of the strongest peaks. This variable spacing may explain how PRDM9 overcomes physical constraints and why previous studies found weak specificity for ZFs 1-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C62 present a novel finding about PRDM9 binding modes. The motif identification (C50-C51), characterization of variable spacing (C56-C59), and comparison to prior work (C60) are well-supported by the ChIP-seq data. The proposed explanation for variable spacing (C61) is speculative but reasonable and supported by comparison to other proteins and mouse studies (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Motif 7 shows lower LD-based recombination rates and is two-fold enriched in A/B-only hotspots compared to A/A hotspots, demonstrating that the B allele binds Motif 7 with greater affinity than the A allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 demonstrate allele-specific binding preferences. The observation of lower recombination at Motif 7 sites (C66), the hypothesis about B-allele preference (C67), and the validation through enrichment in A/B-only hotspots (C68-C69) provide strong evidence for the conclusion (C70). The analysis appropriately controls for confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "PRDM9 deposits H3K4me3 at 95% of its binding sites (increasing to 100% with stronger binding) and also deposits localized H3K36me3, consistent with observations in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C74 demonstrate PRDM9's histone methylation activity through ChIP-seq comparison between transfected and untransfected cells. The high proportion of sites showing H3K4me3 deposition and the correlation with binding strength provide strong evidence. Comparison to mouse data (C74) supports biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Full-length PRDM9 phases surrounding nucleosomes in HEK293T cells, but the zinc-finger domain alone is insufficient for this activity, suggesting that nucleosome phasing requires the non-ZF region or histone methylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 use ATAC-seq with truncation constructs to dissect PRDM9's nucleosome phasing activity. The differential results between full-length and ZF-only constructs (C75-C77), combined with confirmation of nuclear localization (C78) and prior evidence of DNA binding (C79), support the inference that additional domains are required (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Human PRDM9 binds to 81% of active promoters (79% after correcting for chance), with roughly 10% showing strong binding regardless of H3K4me3 enrichment. The chimp allele does not bind promoters, confirming this is not a ChIP-seq artifact. Motif 7 is enriched at promoter binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 demonstrate widespread PRDM9 binding at promoters through multiple lines of evidence: high overlap with active promoters (C81-C84), negative control with chimp allele (C85-C87), motif analysis (C88-C89), and mechanistic explanation (C90). The acknowledgment of limitations (C92) is appropriate. However, the biological significance in vivo remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PRDM9 binding at promoters shows little elevation in recombination rate or DMC1 enrichment. PRDM9 deposits less H3K36me3 at promoters, particularly at highly active promoters, which may explain the lack of recombination if co-occurrence of H3K4me3 and H3K36me3 is required for recombination initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 provide a mechanistic explanation for recombination suppression at promoters. The observation of low recombination despite binding (C93), the differential H3K36me3 deposition (C97-C99), and the negative correlation with promoter activity (C99) support the proposed mechanism (C100-C101). The speculation is appropriately qualified and supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C112",
+      "C113",
+      "C114",
+      "C121",
+      "C122",
+      "C123",
+      "C125"
+    ],
+    "result": "PRDM9 activates expression of CTCFL (28-fold increase) and VCX in a zinc-finger-dependent manner. CTCFL is normally expressed only in spermatogenesis and is important for meiosis. The chimp allele does not activate CTCFL expression, and the binding site contains Motif 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106, C112-C114, C121-C123, and C125 demonstrate PRDM9's ability to activate gene expression through RNA-seq, qPCR validation, ChIP-seq showing binding and H3K4me3 deposition, and negative control with chimp allele. The zinc-finger dependence is established. However, the study appropriately notes (C120) that necessity and sufficiency in vivo are not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Analysis of THE1B repeats identified 17 motifs influencing PRDM9 binding that span the entire predicted binding region, confirming all zinc fingers are involved. These motifs associate with H3K4me3 and recombination in vivo, and PRDM9 binding does not associate with motifs outside the directly bound region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C139 describe a controlled analysis using THE1B repeats to dissect PRDM9 binding determinants. The identification of 17 motifs (C136), their distribution across the binding region (C137), and correlation with in vivo data (C138) provide strong evidence. The finding that PRDM9 acts as a pioneer protein (C139) is well-supported by the lack of association with flanking motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Seven motifs influence recombination hotspot formation conditional on PRDM9 binding, with four mapping outside the PRDM9 binding region. The motif ATCCATG produces a 2.5-fold reduction in recombination at PRDM9-bound sites without preventing PRDM9 binding or H3K4me3 deposition, and this suppression extends beyond THE1B boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 identify non-PRDM9 sequence determinants of recombination. The independent identification of recombination-influencing motifs (C140-C142), the strong effect of ATCCATG (C143-C145), and the demonstration that suppression occurs downstream of PRDM9 binding (C146-C147) provide compelling evidence for a novel regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The motif ATCCATG and 17 additional motifs predict H3K9me3 and H3K4me3 across cell types and associate with recombination suppression. These 18 motifs show a threefold difference in hotspot probability across PRDM9-bound THE1B repeats. Only motifs associated with heterochromatin and H3K9me3/H3K4me3 overlap recombination-influencing motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C164 link recombination-suppressing motifs to specific chromatin states. The identification of ATCCATG as predicting heterochromatin (C149-C150), the discovery of 18 H3K9me3/H3K4me3-associated motifs (C155-C158), their impact on recombination (C159-C161), and the specificity for H3K9me3-associated motifs (C163-C164) provide strong convergent evidence for a chromatin-mediated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "KRAB-ZNF proteins (ZNF100, ZNF430, ZNF766) and TRIM28 bind THE1B repeats at sites overlapping recombination-suppressing motifs. Genome-wide, 36.5% of PRDM9 peaks overlap KRAB-ZNF binding sites, and all tested KRAB-ZNF proteins (except ZNF282) reduce hotspot odds, with a universal negative trend and twofold reduction at TRIM28 sites. This occurs without preventing PRDM9 binding or H3K4me3 deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C188 identify KRAB-ZNF proteins as mediators of recombination suppression. The identification of specific proteins binding THE1B repeats (C172-C176), the genome-wide overlap analysis (C178), the universal negative effect on recombination (C179-C183), and the demonstration that suppression occurs downstream of PRDM9 binding (C186) provide strong evidence for this mechanism. The proposed role of unmapped KRAB-ZNF proteins (C187-C188) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "DMC1 enrichment increases >10-fold with surrounding megabase-scale recombination rate, but H3K4me3 enrichment (proxy for PRDM9 binding) shows no association, proving that broad-scale recombination rates are independent of PRDM9's ability to bind and deposit H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C192 use THE1B repeats to demonstrate that broad-scale recombination control is independent of PRDM9 binding. The strong correlation of DMC1 with surrounding recombination rate (C189), the complete lack of correlation for H3K4me3 (C190), and the inference that broad-scale rates are PRDM9-independent (C191-C192) are well-supported by the controlled analysis of THE1B repeats with similar local sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The zinc-finger domain is necessary and sufficient for PRDM9 multimerization. Full-length PRDM9 proteins bind strongly to each other, the ZF domain alone shows intense co-IP signal, while the non-ZF portion shows only weak self-binding. This interaction does not require DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C201 use co-IP experiments with truncation constructs to map the multimerization domain. The strong binding of full-length proteins (C193), the intense signal with ZF-only constructs (C197), the weak signal without ZF (C195-C196), the negative controls (C200), and benzonase treatment (C201) provide compelling evidence that the ZF domain mediates multimerization through protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Human and chimp PRDM9 preferentially form homo-multimers over hetero-multimers (>2-fold preference). This preference persists after DNA digestion with benzonase and must be mediated by protein-protein interactions rather than co-binding to DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C207 demonstrate allele-specific multimerization preferences through competitive co-IP experiments. The >2-fold preference for homo-multimers (C202-C204), replication with benzonase treatment (C205), and the inference that this reflects protein-protein interactions (C206-C207) are well-supported. The use of divergent alleles with non-overlapping binding sites strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "43 additional genes showed weaker evidence of activation by PRDM9, with 41 showing increased expression. Effects of similar magnitude to CTCFL and VCX are rare, but PRDM9 binding and histone trimethylation can trigger gene expression, likely through trimethylation activity rather than binding alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 extend the gene activation findings beyond CTCFL and VCX. The identification of 43 additional genes (C126), the acknowledgment of limited power (C127), the inference that large effects are rare (C128), and the conclusion about trimethylation-dependent activation (C129-C130) are appropriately qualified and supported by the RNA-seq data and comparison to ZF-only construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Multiple sequence motifs modify recombination downstream of PRDM9 binding (>2-fold for ATCCATG). Despite motif diversity, a common signature of H3K9me3 and H3K4me3 alterations suggests shared mechanisms. Both marks correlate negatively with recombination across all hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C171 synthesize the THE1B repeat analysis into broader conclusions. The demonstration that multiple motifs modify recombination (C165-C166), the acknowledgment of potential diversity (C167), the identification of common chromatin signatures (C168), and the negative correlation with recombination (C170) are well-supported. The speculation about shared mechanisms (C169) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study performed ChIP-seq for PRDM9, H3K4me3, H3K36me3, and chimp PRDM9, along with ATAC-seq and RNA-seq, comparing transfected and untransfected cells and testing various PRDM9 truncations to explore domain properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe the experimental design. The multiple complementary approaches (ChIP-seq, ATAC-seq, RNA-seq) with appropriate controls (transfected vs. untransfected, different constructs) provide a strong foundation for the study's conclusions. The design is well-suited to address the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C39"
+    ],
+    "result": "The study's main findings include: PRDM9 binding localizes most recombination sites but most bound loci don't become hotspots; human PRDM9 binds promoters despite low recombination; PRDM9 activates CTCFL and VCX; specific motifs predict recombination suppression via KRAB-ZNF binding; and PRDM9's zinc fingers mediate multimerization with preferential homo-multimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 and C39 summarize the study's major findings. These are well-supported by the detailed experimental results described in other claim groups. The abstract accurately reflects the study's contributions, though some findings (particularly promoter binding and gene activation) require in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior work established PRDM9's role in meiotic recombination, its histone methylation activity, and its ability to form multimers, but gaps remained regarding binding determinants, factors affecting hotspot formation, gene regulatory roles, and multimerization domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C30 accurately summarize prior knowledge and identify gaps that the current study addresses. The citations to prior work are appropriate and the characterization of the state of the field provides good context for the study's contributions.",
+    "result_type": "MINOR"
+  }
+]

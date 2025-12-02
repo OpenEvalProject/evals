@@ -1,0 +1,2364 @@
+{
+  "submission": {
+    "id": "e7f83247-c739-4c78-98d6-73366652a829",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T23:19:47.946708Z",
+    "updated_at": "2025-12-01T23:19:47.946708Z"
+  },
+  "content": [
+    {
+      "id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "submission_id": "e7f83247-c739-4c78-98d6-73366652a829",
+      "content_type": "manuscript",
+      "content_text": "# MELK expression correlates with tumor mitotic activity but is not required for cancer growth\n\n## Authors\n\n- Christopher J Giuliano<sup>1</sup> ([ORCID: 0000-0002-0586-6095](https://orcid.org/0000-0002-0586-6095))\n- Ann Lin<sup>1</sup>\n- Joan C Smith<sup>2</sup>\n- Ann C Palladino<sup>1</sup>\n- Jason M Sheltzer<sup>1</sup> ([ORCID: 0000-0003-1381-1323](https://orcid.org/0000-0003-1381-1323)) \u2020\n\n### Affiliations\n\n1. Cold Spring Harbor Laboratory Cold Spring Harbor United States\n2. Google, Inc. New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Maternal Embryonic Leucine Zipper Kinase (MELK) has been identified as a promising therapeutic target in multiple cancer types. MELK over-expression is associated with aggressive disease, and MELK has been implicated in numerous cancer-related processes, including chemotherapy resistance, stem cell renewal, and tumor growth. Previously, we established that triple-negative breast cancer cell lines harboring CRISPR/Cas9-induced null mutations in MELK proliferate at wild-type levels in vitro (Lin et al., 2017). Here, we generate several additional knockout clones of MELK and demonstrate that across cancer types, cells lacking MELK exhibit wild-type growth in vitro, under environmental stress, in the presence of cytotoxic chemotherapies, and in vivo. By combining our MELK-knockout clones with a recently described, highly specific MELK inhibitor, we further demonstrate that the acute inhibition of MELK results in no specific anti-proliferative phenotype. Analysis of gene expression data from cohorts of cancer patients identifies MELK expression as a correlate of tumor mitotic activity, explaining its association with poor clinical prognosis. In total, our results demonstrate the power of CRISPR/Cas9-based genetic approaches to investigate cancer drug targets, and call into question the rationale for treating patients with anti-MELK monotherapies.\n\n## Introduction\n\nCancer cells require the expression of certain genes, called \u2018addictions\u2019 or \u2018genetic dependencies\u2019, that encode proteins necessary for tumor growth. Silencing the expression of these genes or blocking the activity of the proteins that they encode can trigger cell death and durable tumor regression (Luo et al., 2009). Identifying and characterizing cancer dependencies is therefore a key goal of pre-clinical cancer research.\n\nThe Maternal Embryonic Leucine Zipper Kinase (MELK) has been implicated as a cancer dependency and putative drug target in multiple cancer types, including melanoma, colorectal cancer, and triple-negative breast cancer (Chung et al., 2012; Speers et al., 2016; Wang et al., 2014; Ganguly et al., 2014a; Ganguly et al., 2014b; Janostiak et al., 2017). MELK is over-expressed in these cancers, and high expression of MELK is associated with poor patient prognosis (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007; Gray et al., 2005). Moreover, knockdown of MELK using RNA interference (RNAi) has been reported to block cancer cell proliferation and trigger cell cycle arrest or mitotic catastrophe (Speers et al., 2016; Wang et al., 2014; Gray et al., 2005; Kuner et al., 2013; Lin et al., 2007; Beke et al., 2015). On the basis of these pre-clinical results, several companies have developed small-molecule MELK inhibitors, and one MELK inhibitor (OTS167) is currently being tested in multiple clinical trials (ClinicalTrials.gov, 2017).\n\nIn contrast to these results, we recently reported that triple-negative breast cancer cells harboring CRISPR/Cas9-induced loss-of-function mutations in MELK proliferate at wild-type levels in vitro (Lin et al., 2017). Additionally, we demonstrated that the MELK inhibitor OTS167 remained effective against MELK-mutant cells, suggesting that OTS167 kills cells through an off-target mechanism. These results have been replicated by an independent group, who further demonstrated that the shRNA vectors commonly used to study MELK also kill cells in a MELK-independent manner (Huang et al., 2017). The off-target effects of both the small-molecule MELK inhibitor and the MELK-targeting shRNAs provide a potential explanation for certain previous results obtained studying this reported drug target.\n\nDespite the conflicting in vitro data, MELK expression remains one of the strongest predictors of patient mortality in diverse cancer types (Smith and Sheltzer, 2017). Additionally, MELK has been implicated in several other cancer-related processes, including cancer stem cell maintenance, chemotherapy resistance, anchorage-independent growth, and reactive oxygen species (ROS)-signaling (Wang et al., 2014; Ganguly et al., 2014a; Beke et al., 2015; Kim et al., 2015; Seong et al., 2016; Choi et al., 2011; Gu et al., 2013; Hebbard et al., 2010). These processes may not be challenged by the routine in vitro growth assays that have been performed in MELK-knockout (MELK-KO) cells to date. Several previous studies were also conducted using distinct RNAi constructs and small-molecule inhibitors, raising the possibility that they reflect true functions of this kinase. Moreover, the over-expression of MELK has been reported to transform cells, suggesting that in addition to MELK\u2019s putative role as a cancer dependency, it may also function as a driver oncogene (Wang et al., 2014).\n\nWhile RNA interference is susceptible to off-target interactions that confound experimental interpretation (Jackson et al., 2003, 2006), CRISPR/Cas9 mutagenesis is also prone to several important limitations. In particular, clonal cell lines harboring Cas9-induced modifications must be expanded from a single cell with a mutation of interest to several million cells. This intense pressure may select for secondary mutations that blunt any anti-proliferative consequences of the original mutation (Iwasa et al., 2006). In a therapeutic context, the immediate inhibition of a particular target achieved with a small-molecule drug may induce a more severe phenotype than observed in a CRISPR-modified cell line subjected to evolutionary pressure over the course of days or weeks.\n\nTo investigate the role of MELK in cancer-related processes beyond cell proliferation, and to assess the therapeutic potential of immediate MELK inhibition, we performed assays combining CRISPR-knockout cell lines with a recently\u00a0described, highly\u00a0specific MELK inhibitor (Huang et al., 2017). In a variety of in vitro and in vivo challenges, we found that cells lacking MELK behave indistinguishably from wild-type cells. Moreover, through a close analysis of gene expression data, we report that MELK levels strongly correlate with mitotic activity in human tumors, suggesting that MELK expression\u00a0may function as an indirect proxy for rapid cell division. In total, these results cast doubt on the possibility that MELK-specific inhibition will serve as a useful monotherapy in cancer.\n\n## Results\n\n### MELK over-expression fails to transform immortalized cell lines\n\nThe over-expression of driver oncogenes allows immortalized but non-transformed cell lines to form colonies when grown in soft agar, a phenotype that is tightly linked with in vivo tumorigenicity (Shin et al., 1975; Colburn et al., 1978; Cifone and Fidler, 1980). It has previously been reported that the over-expression of MELK was sufficient to induce anchorage-independent growth in several cell lines, including Rat1 fibroblasts expressing dominant-negative p53 (p53dd) and the human mammary epithelial cell line MCF10A (Wang et al., 2014). We attempted to replicate these results using Rat1-p53dd and MCF10A cells, as well as the immortalized 3T3 mouse fibroblast cell line. To accomplish this, we stably transduced each cell line with a retroviral vector encoding either the mouse or the human MELK protein. Western blot analysis confirmed that full-length mouse or human MELK was over-expressed in all six cell lines that we generated relative to the level of MELK in vector-transduced control cell lines (Figure 1A,D). Consistent with previous reports (Gray et al., 2005; Badouel et al., 2010), we found that both ectopic and endogenous MELK were stabilized and phosphorylated in mitotic cells, suggesting that the transgenic MELK was functional (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig1-v1.jpg)\n\n**Figure 1.:** (A) Western blot analysis of mouse MELK over-expression in 3T3, Rat1-p53dd, and MCF10a cell lines. (B) Quantification of colony formation of control and mouse MELK over-expressing cell lines in soft agar. For each assay, colonies were counted in at least 15 fields under a 10x objective. Boxes represent the 25th, 50th, and 75th percentiles of colonies per field, while the whiskers represent the 10th and 90th percentiles. (C) Representative images of the indicated cell lines grown in soft agar. (D) Western blot analysis of human MELK over-expression in 3T3, Rat1-p53dd, and MCF10a cell lines. (E) Quantification of colony formation of control and human MELK over-expressing cell lines in soft agar. For each assay, colonies were counted in at least 15 fields under a 10x objective. Boxes represent the 25th, 50th, and 75th percentiles of colonies per field, while the whiskers represent the 10th and 90th percentiles. (F) Representative images of the indicated cell lines grown in soft agar.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western blot analysis of 3T3 cells transduced with mouse MELK or with an empty vector. The cells were grown asynchronously or arrested in mitosis with 300 ng/ml nocodazole for 18 hr. (B) Western blot analysis of 3T3 and Rat1-p53dd cells transduced with human MELK or with an empty vector, and the human breast cancer cell line MDA-MB-231. The cells were grown asynchronously or arrested in mitosis with 100 ng/ml nocodazole for 18 hr.\n\nAs positive controls in the anchorage-independent growth assay, we transduced each cell line with an allele of H-Ras known to function as a strong driver oncogene (H-RasG12V)(Tabin et al., 1982), and with an allele of EGFR that weakly transforms cells (EGFRL858R) (Greulich et al., 2005). We then assessed whether cell lines over-expressing each gene would proliferate when suspended in soft agar. As expected, cells that had been transduced with an empty vector exhibited minimal anchorage-independent growth, while cells transduced with H-RasG12V or EGFRL858R formed numerous colonies (Figure 1B\u2013C and E\u2013F). However, in multiple independent experiments, we failed to detect an increase in anchorage-independent growth in any of the six cell lines over-expressing either mouse or human MELK. We conclude that, under the conditions tested, the over-expression of MELK fails to transform cells.\n\n### MELK is dispensable for growth in vitro and in vivo\n\nWe previously showed that MELK was not required for cell division in two triple-negative breast cancer cell lines, Cal51 and MDA-MB-231 (Lin et al., 2017). However, MELK has been reported to support growth in several other cancer types, including colorectal cancer and melanoma (Ganguly et al., 2014b; Janostiak et al., 2017; Gray et al., 2005; Choi et al., 2011). To examine the role of MELK in other cancer types, we used CRISPR/Cas9 to generate multiple MELK-knockout (MELK-KO) clones in A375, a melanoma cell line, and DLD1, a colorectal cancer cell line (Figure 2\u2014figure supplement 1). As controls, we also derived clones of A375 and DLD1 harboring guide RNAs that targeted the non-essential Rosa26 locus. MELK mutagenesis was verified by sequencing the sites targeted by the gRNA, and loss of the MELK protein was verified by western blotting with two antibodies that recognize distinct epitopes (Figure 2\u2014figure supplement 1A\u2013B). MELK-KO melanoma and colorectal cancer clones grew at wild-type levels in vitro, demonstrating that MELK is dispensable for proliferation in these cancer types as well (Figure 2\u2014figure supplement 1C). We previously reported that OTS167, a putative MELK inhibitor in clinical trials, kills breast cancer cells in a MELK-independent manner (Lin et al., 2017). Consistent with these observations, MELK-KO and Rosa26 clones were equally sensitive to OTS167, verifying that this drug kills cells via an off-target effect across cancer types (Figure 2\u2014figure supplement 1D).\n\nMany genes that are non-essential for cell division in vitro may still play crucial roles in cancer by supporting other processes, including stem-cell renewal, resistance to anoikis, and angiogenesis (Rotem et al., 2015; Zhong et al., 2011; Miller et al., 2017; Cidado et al., 2016). We therefore subjected our MELK-KO and Rosa26 clones to various in vitro and in vivo assays to assess whether MELK loss impairs any cancer-related phenotypes. Although all MELK-KO cells grow well when seeded at high density in proliferation assays (Lin et al., 2017; Huang et al., 2017), plating cells at low density can challenge a cell\u2019s colony-forming ability and replicative lifespan (Franken et al., 2006). To test whether MELK loss confers a defect in colony growth, MELK-KO and Rosa26 A375, Cal51, DLD1, and MDA-MB-231 clones were serially\u00a0diluted and allowed to grow at varying cell densities. Crystal violet staining of these plates revealed that the loss of MELK failed to impair colony growth relative to the control Rosa26 cell lines (Figure 2A). In fact, one MELK-KO clone (MDA-MB-231 c1) grew consistently better than either control clone in this assay. Significant variation in proliferative capacity has previously been described among independent clones of the MDA-MB-231 cell line (Khan et al., 2017) and may arise due to heterogeneity in the parental population or secondary mutations acquired during cell line derivation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig2-v1.jpg)\n\n**Figure 2.:** (A) Crystal violet staining of serial dilution plates of control and MELK knockout clones from A375 (melanoma), Cal51 (breast cancer), DLD1 (colorectal cancer), and MDA-MB-231 (breast cancer) cell lines. (B) Representative images of colonies of A375 control and MELK knockout clones grown in soft agar. (C) Quantification of colony formation in A375, DLD1, and MDA-MB-231 MELK-KO and control clones. For each assay, colonies were counted in at least 15 fields under a 10x objective. Boxes represent the 25th, 50th, and 75th percentiles of colonies per field, while the whiskers represent the 10th and 90th percentiles. (D\u2013E) Representative images and quantification of mammosphere growth in Cal51 or MDA-MB-231 MELK-KO and control clones. For each assay, mammospheres were counted in at least six fields under a 10x objective. Boxes represent the 25th, 50th, and 75th percentiles of colonies per field, while the whiskers represent the 10th and 90th percentiles. (F\u2013G) Representative images and quantification of xenograft growth in nude mice. Cal51 and MDA-MB-231 MELK-KO and control clones were injected subcutaneously into nude mice, and then tumor growth was measured every 3 days. Arrows indicate the location of the tumor. Error bars in the volume measurements indicate the standard error.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sanger sequencing of either the PCR-amplified cut-site or single alleles isolated by TOPO cloning from MELK knockout clones in the A375 (melanoma) and DLD1 (colorectal cancer) cell lines. Highlighted regions indicate bases recognized by the gRNA. Of note, in A375 MELK-KO c2 we recovered seven different indel mutations in the MELK gene. We believe that at the time of single-cell sorting, one allele in this cell had acquired a small deletion that did not fully abolish gRNA recognition. Then, during clonal expansion, this allele underwent additional mutagenesis to generate the multiple large indels that we recovered. Additionally, in A375 MELK-KO c1, we identified one allele that had three different single-nucleotide substitutions that generated three independent missense mutations (E15V, T16I, I17L). These mutations occur in a highly-conserved region of the protein, and Ile17 is predicted to form a part of MELK\u2019s ATP-binding domain, likely explaining why this allele is non-functional. (B) Western blot analysis of A375 and DLD1 MELK-KO clones using an antibody that recognizes an epitope in the MELK N-terminus (Abcam; Cat. No. ab108529) or an antibody that recognizes an epitope in the MELK C-terminus (Cell Signal; Cat. No. 2274S). (C) Proliferation and doubling time analysis of A375 and DLD1 Rosa26 and MELK-KO clones. (D) Dose-response curves of the putative MELK inhibitor OTS167 in A375 and DLD1 Rosa26 and MELK-KO clones.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Western blot analysis of MDA-MB-231 cells transduced with guides targeting Rosa26 or MELK. (B) Representative images and quantification of xenograft growth in nude mice. MDA-MB-231 control and MELK-mutant populations were injected subcutaneously into nude mice, and then tumor growth was measured every 3 days. Mice injected with MDA-MB-231 sorted population one had to be euthanized 15 days post injection due to health issues. Arrows indicate the location of the tumor. Error bars in the volume measurements indicate the standard error.\n\nTo further investigate the impact of MELK loss on anoikis and tumorigenicity, MELK-KO and Rosa26 cells were plated in soft agar. However, we observed no significant difference in anchorage-independent growth between MELK-KO cells and Rosa26 cells in every cell line tested (Figure 2B\u2013C). MELK has previously been implicated in the maintenance of breast cancer stem cells (Ganguly et al., 2014a; Gu et al., 2013; Kig et al., 2013). We therefore tested whether loss of MELK impairs mammosphere formation, a phenotype tightly linked with breast cancer stem cell activity (Grimshaw et al., 2008). While we observed inter-clonal variability in mammosphere growth, all MELK-KO clones were capable of forming mammospheres, and two MELK-KO clones exhibited consistently greater mammosphere formation than their wild-type controls (Figure 2D\u2013E). We conclude that MELK is dispensable for growth as a mammosphere.\n\nFinally, we sought to determine whether MELK was required for tumor formation in vivo. To address this, we performed flank injections into nude mice with multiple clones of Cal51 and MDA-MB-231 MELK-KO and Rosa26 cells. Across all clones tested, 23 of 34 injections with MELK-KO cells and 24 of 34 injections with Rosa26 cells resulted in detectable tumor formation, and no significant growth defect was observed in any MELK-KO clone (Figure 2F\u2013G). Consistent with our previous assays, we observed superior growth in the MDA-MB-231 MELK-KO c1 clone, while MDA-MB-231 MELK-KO c2 and Rosa26 c2 grew slowly but at equivalent rates (Figure 2G). The slow growth of MDA-MB-231 Rosa26 c1, MELK-KO c2, and Rosa26 c2 was unexpected, as MDA-MB-231 is reported to grow aggressively in vivo (Price et al., 1990). We hypothesized that the poor growth of many of our MDA-MB-231 clones could reflect the fact that cells in the parental population exhibit different abilities to form tumors, and by chance, we isolated several clones with limited tumor-initiating capacity (Fillmore and Kuperwasser, 2008; Charafe-Jauffret et al., 2009). To further explore the role of MELK in tumorigenesis, we transduced the parental MDA-MB-231 population with guide RNAs targeting either Rosa26 or MELK, and then selected the gRNA-expressing populations without single-cell cloning. Western blot analysis verified that transduction with the MELK-targeting gRNAs ablated MELK protein expression (Figure 2\u2014figure supplement 2A). After injection into nude mice, these cell populations grew more rapidly than any clonal cell line, and the MELK-depleted cells exhibited equivalent or superior tumor growth compared to the control populations (Figure 2\u2014figure supplement 2B). In total, these results demonstrate that MELK is dispensable for the proliferation of cancer cells in vitro and in vivo.\n\n### MELK is not required for the phosphorylation or expression of previously reported targets\n\nMELK has been reported to support cancer cell proliferation by phosphorylating various proteins involved in splicing, translation, metabolism, and cell cycle progression (Seong et al., 2016; Wang et al., 2016; Vulsteke et al., 2004; Seong et al., 2002; Joshi et al., 2013). In particular, a recent publication reported that MELK phosphorylates eukaryotic translation initiation factor 4B (eIF4B), and this phosphorylation event promotes cell survival by increasing translation of the anti-apoptotic protein MCL1\u00a0(Wang et al., 2016). However, western blot analysis revealed normal levels of eIF4B phosphorylation in MELK-knockout A375, Cal51 and MDA-MB-231 cells (Figure 3\u2014figure supplement 1A\u2013C). Additionally, MELK-KO cell lines continued to express MCL1, the putative downstream target of eIF4B (Figure 3\u2014figure supplement 1D\u2013E). We conclude that MELK is not required for eIF4B phosphorylation or MCL1 translation.\n\n### MELK is dispensable for cell growth under exogenous stress\n\nDeveloping tumors must survive in hypoxic and nutrient-poor conditions (Vaupel et al., 1989), and MELK has been implicated in glucose signaling and in the detection of ROS (Seong et al., 2016; Jung et al., 2008). We therefore considered the possibility that MELK expression is necessary to support growth under metabolic or environmental stress. To generate ROS stress, we cultured cells in varying concentrations of H2O2, but we observed no difference in sensitivity between MELK-KO and control Rosa26 clones (Figure 3A). MELK has been suggested to contribute to ROS signaling by phosphorylating ASK1\u00a0(Jung et al., 2008); however, this protein remained phosphorylated at normal levels in cells lacking MELK (Figure 3\u2014figure supplement 1F). MELK-KO clones also exhibited wild-type levels of growth when cultured under hypoxic, serum-deprived, or glucose-limited conditions (Figure 3B\u2013D). We conclude that MELK is dispensable for proliferation under common metabolic stresses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig3-v1.jpg)\n\n**Figure 3.:** (A) Dose-response curves of Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO clones grown in the presence of H2O2. (B\u2013D) Crystal violet staining of A375, Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO clones grown as serial dilutions under the indicated stressful culture condition. (E\u2013I) Dose-response curves of Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO clones grown in the presence of the indicated chemotherapy drug.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Western blot analysis of A375, Cal51, or MDA-MB-231 with antibodies against phospho-EIF4B and total EIF4B. (D\u2013E) Western blot analysis of A375 or Cal51 with antibodies against MCL1. (F) Western blot analysis of MDA-MB-231 with antibodies against phospho-ASK1 and total ASK1. (G\u2013H) Western blot analysis of Cal51 or MDA-MD-231 treated with 1 \u00b5M of HTH-01\u2013091 with antibodies against MCL1, phospho-EIF4B and total EIF4B.\n\nAs high MELK expression is associated with poor patient prognosis, we wondered if MELK could promote resistance to cytotoxic chemotherapies. Indeed, it has been previously reported that knocking down or inhibiting MELK sensitizes cells to DNA damage (Beke et al., 2015; Kim et al., 2015; Choi et al., 2011; Kig et al., 2013). To test whether MELK has a role in chemotherapy resistance, we performed drug sensitivity assays in our MELK-KO and Rosa26 clones using a variety of DNA-damaging or anti-mitotic agents. However, we found that the loss of MELK failed to sensitizes cells to five common chemotherapies (Figure 3E\u2013I). In total, these results demonstrate that MELK is dispensable for cell survival under metabolic and cytotoxic stress.\n\n### Acute inhibition of MELK fails to block proliferation\n\nDeriving CRISPR-knockout clones from single cells selects for a population of cells that are capable of surviving clonal expansion. Since our MELK-KO cell lines were generated from single cells, we considered the possibility that MELK plays an important role supporting proliferation, but the clones we generated had evolved to tolerate the loss of MELK. To assess this possibility, we performed an \u2018epistasis\u2019 experiment combining our MELK-knockout clones with a recently\u00a0described, highly-specific small molecule MELK inhibitor, HTH-01\u2013091 (Huang et al., 2017). We reasoned that treating Rosa26 clones with HTH-01\u2013091 would reveal the consequences of the acute loss of MELK. However, if such phenotype(s) were also present in MELK-KO cell lines treated with HTH-01\u2013091, then the phenotype(s) could be attributed to an off-target effect of the drug.\n\nWe first sought to identify a concentration at which HTH-01\u2013091 inhibited MELK in our cells of interest. However, as described in this manuscript, we lacked a verified MELK substrate whose phosphorylation status could be monitored to confirm MELK inhibition. Nonetheless, it has been reported that a by-product of MELK inhibition is the degradation of MELK protein (Beke et al., 2015; Huang et al., 2017). Therefore, to determine an effective concentration of HTH-01\u2013091, we monitored the level of MELK protein after drug treatment by western blot. We found that 1 \u00b5M HTH-01\u2013091 triggered near-complete MELK degradation in Cal51, DLD1, and MDA-MB-231 cells (Figure 4A). The loss of MELK was not an indirect effect of cell cycle arrest, as these cells maintained high levels of the mitotic marker cyclin B. This concentration was therefore used in subsequent assays.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig4-v1.jpg)\n\n**Figure 4.:** (A) Western blot analysis of MELK expression levels during treatment with 1 \u00b5M HTH-01\u2013091 in the Cal51, DLD1, and MDA-MB-231 Rosa26 clonal cell lines. (B) Crystal violet staining of Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO cell lines grown as serial dilutions in the presence of DMSO or 1 \u00b5M HTH-01\u2013091. (C) Quantification and representative images of colony formation of DLD1 and MDA-MB-231 Rosa26 and MELK-KO clones in soft agar in the presence of DMSO or 1 \u00b5M HTH-01\u2013091. (D) Dose-response curves of Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO clones grown in the presence of HTH-01\u2013091. (E) Dose-response curves of Cal51, DLD1, and MDA-MB-231 Rosa26 and MELK-KO clones grown in the presence of 1 \u00b5m HTH-01\u2013091 and the indicated chemotherapy drug.\n\nTo test whether the acute inhibition of MELK affected clonogenicity or anchorage-independent growth, we grew MELK-KO and Rosa26 cells on plastic or in soft agar in the presence of DMSO or 1 \u00b5M HTH-01\u2013091. Neither MELK-KO nor Rosa26 clones were affected by HTH-01\u2013091 treatment, verifying that MELK is dispensable for colony formation and anchorage-independent growth in these cells (Figure 4B\u2013C). Indeed, a drug sensitivity assay revealed that HTH-01\u2013091 exhibited significant anti-proliferative effects only at concentrations above\u00a0~5 \u00b5M (Figure 4D). This toxicity is likely a consequence of an off-target effect, as these drug concentrations were found to affect Rosa26 and MELK-KO cells equivalently.\n\nWe next sought to test whether acute MELK inhibition sensitized cells to chemotherapy. To accomplish this, we treated MELK-KO and Rosa26 clones with various chemotherapy drugs in the presence of HTH-01\u2013091. Consistent with our previous results, HTH-01\u2013091 treatment failed to sensitize the Rosa26 clones to 5-florouracil or paclitaxel treatment (Figure 4E). Finally, we assessed the effect of HTH-01\u2013091 treatment on eIF4B phosphorylation and MCL1 expression, and found that MELK inhibition failed to affect either target (Figure 3\u2014figure supplement 1G\u2013H). In total, these results demonstrate that the acute loss of MELK results in no significant defect in cell viability, proliferation, or drug resistance and suggest that our knockout clones have not acquired mutations that tolerize cells to the loss of MELK.\n\n### The association between MELK expression and cancer lethality is due to its correlation with mitotic activity\n\nOur in vitro and in vivo experiments failed to reveal any cancer-related phenotypes affected by either the deletion or over-expression of MELK. Yet, MELK is up-regulated in many cancer types (Gray et al., 2005), and high levels of MELK expression have been reported to confer a dismal clinical prognosis (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007). If MELK plays no overt role in cancer biology, then why would MELK expression be linked with death from cancer? We note that MELK expression is cell cycle-regulated, peaking in mitosis (Wang et al., 2014; Badouel et al., 2010), and gene signatures that capture mitotic activity have been found to be prognostic in multiple cancer types (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015). We therefore considered the possibility that, rather than functioning as an oncogene or a cancer dependency, MELK expression could report cell division within a tumor. To assess the link between MELK expression and cell division, we analyzed gene expression data from different sets of cells and tissues. In normal human tissue, MELK transcript expression was the lowest in non-proliferative organs, including the heart and skeletal muscle, while MELK expression was the highest in organs with on-going mitotic activity, including the bone marrow and testes (Figure 5A). Indeed, across 32 tissue types, MELK levels were highly correlated with the expression of the proliferation marker MKI67 (R\u00a0=\u00a00.93). Similarly, in human fibroblasts cultured until senescence, MELK expression decreased up to 11-fold between proliferating and arrested populations, while stimulating lymphocytes to divide increased MELK expression 20-fold (Figure 5B\u2013C). These data suggest that MELK levels reflect mitotic activity in diverse cell types.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/32838/elife-32838-fig5-v1.jpg)\n\n**Figure 5.:** (A) A heatmap of the expression of either MKI67 or MELK in normal tissue sorted according to MKI67 expression (Uhl\u00e9n et al., 2015). (B) The expression level of either MKI67 or MELK is displayed in five different primary human fibroblast lines at either low passage (proliferating) or high passage (senescence) (Marthandan et al., 2015). (C) The expression level of either MKI67 or MELK is displayed in CD4\u00a0+\u00a0lymphocytes resting or after stimulation with \u03b1-CD3/\u03b1-CD28 beads (Abbas et al., 2005). (D) The expression level of MELK is plotted against the expression of five common proliferation markers in cohorts of patients with breast cancer, glioma, or melanoma (Sabatier et al., 2011; Turcan et al., 2012; J\u00f6nsson et al., 2010). Black lines represent linear regressions plotted against the data. (E) Univariate Cox proportional hazards models were calculated for the 15 breast cancer cohorts listed in Supplementary file 3. For each cohort, the expression of either MELK or the average expression of CCNB1, MCM2, MKI67, PCNA, and TOP2A in each tumor was regressed against patient outcome. Dotted lines represent Z scores of 1.96, corresponding to a p-value of 0.05. The black line represents a linear regressions plotted against the data. (F) Bar graphs depict the number of cohorts in which MELK and a proliferation meta-gene are significantly associated with poor outcome in either univariate or bivariate models. The full results are presented in Supplementary file 3 and Supplementary file 4. (G) Kaplan-Meier curves displaying disease-specific survival in one breast cancer cohort (Pawitan et al., 2005). Patients were split into two populations based on the average expression of either MELK or the five-gene proliferation meta-gene.\n\nTo examine the link between MELK and cell division in cancer, we compared the levels of MELK expression with five well-characterized proliferation markers: MKI67, PCNA, CCNB1, MCM2, and TOP2A (Whitfield et al., 2006). In cohorts of patients with tumor types in which MELK levels have previously been associated with advanced disease, MELK expression was significantly correlated with each of the proliferation genes (median correlation\u00a0=\u00a00.82; Figure 5D). We then sought to determine whether the correlation between MELK expression and proliferation could explain the prognostic significance of MELK. To test this, we collected 15 breast cancer microarray datasets from patients with known clinical outcomes. For each patient cohort, we calculated Z scores from univariate Cox proportional hazards models, which assess the significance of a putative prognostic variable. A Z score greater than 1.96 indicates that increasing expression of a gene is associated with dismal prognosis at a p<0.05 threshold (Gentles et al., 2015). We found that MELK expression was significantly linked with poor outcome in 14 of 15 datasets (Supplementary file 3). Similarly, a proliferation meta-gene derived by averaging the normalized expression of MKI67, PCNA, CCNB1, MCM2, and TOP2A was significantly associated with poor outcome in 13 of 15 datasets (Supplementary file 3). Strikingly, we found that the Z scores generated by our univariate proliferation models were significantly correlated with the Z scores generated by the univariate MELK models: in patient cohorts in which proliferation was highly-prognostic, MELK expression was also highly-prognostic, and vice-versa (Figure 5E; R\u00a0=\u00a00.78, p<0.001). These analyses suggested that MELK expression and cell proliferation capture very similar clinical information. To test whether MELK expression remained prognostic when controlling for mitotic activity, we generated bivariate Cox models that included both MELK expression and the proliferation meta-gene (Supplementary file 4). In the bivariate models, MELK was significantly associated with patient outcome in only 2 of 15 datasets, demonstrating that considering tumor cell proliferation ablated MELK\u2019s clinical utility (Figure 5F). Thus, when tumors are stratified according to their proliferation level, MELK expression is no longer prognostic (Figure 5G). In total, these results suggest that the observed pattern of MELK expression in cancer can be explained by the fact that MELK is up-regulated in mitotic cells.\n\n## Discussion\n\nPre-clinical cancer research efforts apply different genetic and chemical tools (RNA interference, CRISPR, and small-molecule inhibitors) to a variety of artificial assays (in vitro proliferation, xenograft growth, etc.) in order to discover targets that will have clinical efficacy when inhibited in human patients. No single assay perfectly mimics the behavior of a tumor in a human cancer patient, and no single chemical or genetic tool exhibits absolute specificity. Nonetheless, we believe that by using multiple orthogonal approaches and assays, we can gain insight into the role that certain genes play in human malignancies. In this current manuscript, we report that combining CRISPR and a small-molecule inhibitor in a variety of assays failed to reveal a role for MELK in several cancer-related processes. These results suggest that anti-MELK monotherapies are unlikely to be effective cancer treatments.\n\nOur previous work demonstrated that MELK is dispensable for the proliferation of triple-negative breast cancer cells in vitro (Lin et al., 2017). Nonetheless, multiple cellular functions are dispensable for in vitro proliferation but required for tumor progression, including stem cell renewal, oxygen sensing, and chemotherapy resistance (Rotem et al., 2015; Zhong et al., 2011; Miller et al., 2017; Cidado et al., 2016). Although MELK has been implicated in each of these processes, our results demonstrate that MELK-knockout cancer cell lines grow at wild-type levels in a variety of assays designed to test these pathways. We speculate that, as has previously been reported for one MELK inhibitor and one set of MELK-targeting shRNA\u2019s (Huang et al., 2017), several previous studies of MELK function may have been compromised by off-target activity of the constructs and inhibitors that were used.\n\nTo assess MELK function in cancer, we used CRISPR/Cas9 to generate mutations in MELK in four different cancer cell lines. Of note, we observed variability between clones from the same parental cell line, and between clonal lines and the parental cell populations. These observations underscore the importance of assessing multiple independent clones and cell populations in CRISPR experiments. Furthermore, to rule out the possibility that our MELK-KO clones had evolved to tolerate the loss of MELK, we performed \u2018epistasis\u2019 experiments by treating these knockout clones with a MELK inhibitor. We reasoned that specific consequences of MELK inhibition would be detectable upon drug treatment in MELK-WT but not MELK-KO clones, while non-specific consequences of drug treatment would affect both genotypes equally. In all experiments conducted thus far, no phenotypes have been observed only in MELK-WT cells after HTH-01\u2013091 treatment, further verifying that MELK is dispensable for cancer cell growth. We suggest that these \u2018epistasis\u2019 experiments can be widely applied to assess the on-target consequences of acutely inhibiting potential cancer drug targets.\n\nInitial interest in blocking MELK function in cancer stemmed from the discovery that it was over-expressed across cancer types (Gray et al., 2005). Further research revealed that patients whose tumors expressed the highest levels of MELK had the worst clinical outcomes (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007; Kuner et al., 2013). As we observed no role for MELK as either an oncogene or a cancer dependency, we sought to instead investigate whether its cell cycle-dependent expression pattern could explain its prognostic value. Consistent with this hypothesis, we discovered that MELK transcript expression closely mirrors tumor mitotic activity. As actively-growing cancers appear to up-regulate thousands of genes involved in cell cycle progression when compared to quiescent normal tissue (Whitfield et al., 2006), this observation may explain why MELK is commonly over-expressed in different malignancies. Moreover, rapid cell division in tumors is indicative of tissue de-differentiation and aggressive disease; therefore, most cell cycle-regulated genes are also associated with poor clinical outcome (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015). We further demonstrated that controlling for cell proliferation ablates the prognostic significance of MELK expression, suggesting that this link may explain its connection with outcome in cancer.\n\nWhile many cell cycle genes are indeed suitable cancer drug targets (e.g. CDK4 and CDK6), other genes may be up-regulated during normal cell division but dispensable for this process (Venet et al., 2011). We suggest that MELK is an example of the latter. We believe that, if MELK does play a role in cancer, it may be detectable only in very limited circumstances, and likely in vivo. As MELK-knockout mice display no observable deficiencies, MELK\u2019s function may be redundant with other kinases (Wang et al., 2014). Future synthetic lethal screening and additional in vivo assays may clarify what role, if any, MELK plays in cancer biology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>A375</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Cal51</td>\n      <td>Dr. David Solomon and Dr. Todd Waldman</td>\n      <td>RRID:CVCL_1110</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>DLD1</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0248</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MDA-MB-231</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0062</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (rat)</td>\n      <td>Rat1</td>\n      <td>CSHL Cell Line Repository</td>\n      <td>RRID:CVCL_0512</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MCF10A</td>\n      <td>Dr. Camila Dos Santos</td>\n      <td>RRID:CVCL_0598</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (mouse)</td>\n      <td>3T3</td>\n      <td>CSHL Cell Line Repository</td>\n      <td>RRID:CVCL_0594</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>All MELK-knockout and Rosa26 control clonal cell lines (A375, Cal51, DLD1, MDA-MB-231)</td>\n      <td>This paper and Lin et al., (eLife 2017)</td>\n      <td></td>\n      <td>These cell lines were derived in this paper. Available from Dr. Jason Sheltzer.</td>\n    </tr>\n    <tr>\n      <td>Transfected construct</td>\n      <td>LRG 2.1 vector</td>\n      <td>Dr. Christopher Vakoc and Dr. Junwei Shi</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human and mouse)</td>\n      <td>MELK over expression plasmid</td>\n      <td>Vectorbuilder, Cyagen Corporation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MELK N terminal Antibody</td>\n      <td>Abcam</td>\n      <td>ab108529</td>\n      <td>1:3000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MELK C terminal Antibody</td>\n      <td>Cell Signal</td>\n      <td>2274S</td>\n      <td>1:10000 in 10% BSA TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ASK1</td>\n      <td>Abcam</td>\n      <td>ab45178</td>\n      <td>1:1000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-eIF4B</td>\n      <td>Cell Signal</td>\n      <td>3592</td>\n      <td>1:2000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cyclin B</td>\n      <td>Abcam</td>\n      <td>ab32053</td>\n      <td>1:10000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Phospho-ASK1</td>\n      <td>Cell Signal</td>\n      <td>3765</td>\n      <td>1:1000 in 5% BSA TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Phospho-eIF4B</td>\n      <td>Cell Signal</td>\n      <td>5399</td>\n      <td>1:1000 in 5% BSA TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MCL1</td>\n      <td>Cell Signal</td>\n      <td>5453</td>\n      <td>1:2000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Alpha-Tubulin</td>\n      <td>Sigma-Aldrich</td>\n      <td>T6199</td>\n      <td>1:20000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-365062</td>\n      <td>1:20000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit</td>\n      <td>Abcam</td>\n      <td>ab6721</td>\n      <td>1:50000 to 1:20000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse</td>\n      <td>Bio-Rad</td>\n      <td>1706516</td>\n      <td>1:50000 in 5% Milk TBST</td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>HTH-01\u2013091</td>\n      <td>Dr. Nathanael Gray DOI: 10.7554</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound,drug</td>\n      <td>OTSSP167</td>\n      <td>MedChem Express</td>\n      <td>HY-15512A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Survival Analysis</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/joan-smith/survival-analysis-scripts</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and culture conditions\n\nThe identity of each human cell line was verified by STR profiling (University of Arizona Genetics Core). A375 (RRID:CVCL_0132), Cal51 (RRID:CVCL_1110), DLD1 (RRID:CVCL_0248), MDA-MB-231 (RRID:CVCL_0062) cell lines were grown in DMEM supplemented with 10% FBS, 2 mM glutamine, and 100 U/mL penicillin and streptomycin. Rat1 (RRID:CVCL_0512) cells were grown in DMEM supplemented with 5% FBS, 2 mM glutamine, and 100 U/mL penicillin and streptomycin. 3T3 (RRID:CVCL_0594) cells were grown in DMEM supplemented with 10% bovine calf serum (BCS), 2 mM glutamine, and 100 U/mL penicillin and streptomycin. MCF10A (RRID:CVCL_0598) cells were grown in Mammary Epithelial Cell Growth Medium (Lonza,\u00a0Switzerland; Cat. No. CC-3150) supplemented with 5% horse serum, 100 ng/mL of cholera toxin (Sigma-Aldrich, St.\u00a0Louis,\u00a0MO;\u00a0Cat. No. C8052) and 100 U/mL penicillin and streptomycin. All cell lines were grown in a humidified environment at 37\u02daC and 5% CO2.\n\n### Retroviral plasmid over-expression\n\nMouse and human MELK cDNA was cloned into an MMLV vector and verified by sequencing (Vectorbuilder, Cyagen Corporation). Positive and negative control plasmids were acquired from Addgene: pBabe-Puro (Addgene; Cat. No. 1764), EGFRL858R (Addgene; Cat. No. 11012), and RasG12V (Addgene; Cat. No. 1768). Retrovirus was generated by transfecting plasmids into Plat-A cells (Cell BioLabs, San Diego, CA; Cat. No. RV-102) using the calcium-phosphate method (Smale, 2010). Virus was harvested 48\u201372 hr post transfection, filtered through a 0.45 \u03bcm syringe and applied to cells with 4 \u03bcg/mL polybrene. After 24 hr, the media was changed and cells were allowed to recover in fresh media for 2 days. Subsequently, the cells were split and the appropriate antibiotic was added to select for transduced cells.\n\n### Soft agar assays\n\nTo assay anchorage-independent growth, all cell lines except MCF10A were suspended at a cell count of 10,000 cells in a 0.35% Difco Agar Noble (VWR Scientific,\u00a0USA; Cat. No. 90000\u2013772) solution in a six-well plate. MCF10A cell lines were suspended at a cell count of 20,000 cells. The mixture was plated over a 0.5% Difco Agar Noble solution. Plates were allowed to solidify at room temperature for 1 hr and then placed in a 37\u02daC incubator overnight. 1 mL of normal growth media was added to each well the next day and every 3 days after (Borowicz et al., 2014). After 14 days, colony formation was quantified under 20x magnification.\n\n### Stress assays\n\nTo study the role of MELK in surviving stressful culture conditions, 30,000 MELK-KO and Rosa26 cells from DLD1 and MDA-MB-231 cell lines and 10,000 MELK-KO and Rosa26 cells from A375 and Cal51 cell lines were plated in the first column of a 24-well plate (Corning,\u00a0USA; Cat. No. 3526) and then five three-fold dilution were performed across the plate. For the low-glucose conditions, low-glucose DMEM (Thermo Fisher Scientific,\u00a0Waltham,\u00a0MA; Cat. No. 11885076) supplemented with 10% FBS, 2 mM glutamine, and 100 U/mL penicillin and streptomycin was added to the cells. For the low serum conditions, Cal51, DLD1, and MDA-MB-231 cell lines were cultured in DMEM supplemented with 1% FBS, 2 mM glutamine, and 100 U/mL penicillin and streptomycin, while the A375 cell line was cultured in 5% FBS, 2 mM glutamine, and 100 U/mL penicillin and streptomycin. For the hypoxic conditions, cells were cultured in normal media and then placed in a hypoxic incubator set at 37\u00b0C with 2% oxygen. After 10\u201314 days, cells were fixed with 100% methanol and stained with 0.5% crystal violet dissolved in 25% methanol.\n\n### Mammosphere formation assay\n\nMammosphere formation media was prepared using DMEM/F12 (Lonza; Cat. No. CC-3151) supplemented with 2 mM L-glutamine, 100 U/mL penicillin and streptomycin, 20 ng/mL recombinant human epidermal growth factor (Sigma Aldrich; Cat. No. E9644), 10 ng/mL recombinant human basic fibroblast growth factor (R and D Systems; 233-FB-025) and 1x B27 supplement (Invitrogen,\u00a0Waltham,\u00a0MA; Cat. No. 17504\u2013044) (Lombardo et al., 2015). Cells were plated at a density of 20,000 cells or 30,000 cells per well for the MDA-MB-231 and Cal51 cell lines respectively in a 6-well low attachment plate (Corning; Cat. No. CLS3814) with 3 mL of media. Fresh media was added to the wells every 3 days over the course of the assay. Mammospheres were measured 4 weeks post plating for the MDA-MB-231 cell lines and 2 weeks post plating for Cal51 cell lines.\n\n### Drug sensitivity assays\n\nTo quantify a cell line\u2019s sensitivity to a particular drug, 10,000 A375, DLD1, or MDA-MB-231 cells or 5000 Cal51 cells were plated in 100 \u00b5L of media in an 8\u00a0\u00d7\u00a03 matrix on a flat-bottomed 96-well plate (Corning; Cat. No. 3596). Cells were allowed 24 hr to attach, then fresh media was added to each well. The highest concentration of a drug was added onto the first row of cells and then six three-fold serial dilutions were performed. Cells were grown in the presence of the drug for 72 hr then trypsinized and counted using a MacsQuant Analyzer 10 (Milltenyi Biotec,\u00a0Germany). Replicate wells were averaged and then normalized to the cell count in the untreated wells. Normalized values were plotted in Prism 7 (Graphpad, San Diego, California) and fit to a curve using a four-parameter inhibition vs. concentration model. HTH-01\u2013091 was a kind gift of Hubert Huang and Nathanael Gray (Dana-Farber Institute). OTSSP167 was obtained from MedChem Express (Monmouth Junction, NJ; Cat. No. HY-15512A). Idarubicin, Oxaliplatin, Paciltacxel and Bleomycin were obtained from Selleck Chemicals (Houston,\u00a0TX;\u00a0Cat. No. S1228, S1224, S1150, and S1214). Fluorouracil was obtained from Sigma Aldrich (Cat. No. F6627-1G).\n\n### Western blot analysis\n\nWhole cell lysates were harvested using RIPA buffer (25 mM Tris, pH 7.4, 150 mM NaCl, 1% Triton X 100, 0.5% sodium deoxycholate, 0.1% sodium dodecyl sulfate, protease inhibitor cocktail, and phosphatase inhibitor cocktail). Protein concentration was quantified using the RC DC Protein Assay (Bio-Rad,\u00a0Hercules,\u00a0CA; Cat. No. 500\u20130119) or the Pierce BCA Protein Assay Kit (Thermo Fisher Scientific; Cat. No. 23225). Equal amounts of lysate were denatured and loaded onto an 8% SDS-PAGE gel. The protein was transferred onto a polyvinylidene difluoride membrane using the Trans-Blot Turbo Transfer System (Bio-Rad). Westerns with phospho-antibodies were blocked in 5% BSA, westerns with Anti-MELK C-Terminal (Cell Signal,\u00a0Danvers,\u00a0MA; Cat. No. 2274S) were blocked in 10% BSA, and all other antibodies were blocked with 5% milk. The following antibodies and dilutions were used: Anti-MELK N-Terminal (Abcam,\u00a0Cambridge,\u00a0MA; Cat. No. ab108529) at a dilution of 1:3000, Anti-MELK C-Terminal (Cell Signal; Cat. No. 2274S) at a dilution of 1:10000, Anti-elF4B (Cell Signal; Cat. No. 3592) at a dilution of 1:2000, Anti-ASK1 (Abcam, Cat. No. ab45178) at a dilution of 1:1000, Anti-cyclin B (Abcam; Cat. No. ab32053) at a dilution of 1:10000, Anti-Phospho-ASK1 (Cell Signal; 3765) at a dilution of 1:1000, Anti-Phospho-elF4B (Cell Signal; Cat. No. 5399) at a dilution of 1:1000, and Anti-MCL1 (Cell Signal; Cat. No. 5453) at a dilution of 1:2000. Blots were incubated with the primary antibody overnight at 4\u00b0C. Anti-alpha tubulin (Sigma-Aldrich; Cat. No. T6199) at a dilution of 1:20,000 or Anti-GAPDH (Santa Cruz Biotechnology, Santa Cruz, CA; Cat. No. sc-365062) at a dilution of 1:20,000 were used as loading controls. Membranes were washed at room temperature for an hour before they were incubated in secondary antibodies [Anti-Rabbit (Abcam; Cat. No. ab6721) at 1:50,000 for Anti-MELK and at 1:20,000 for all other antibodies or anti-mouse (Bio-Rad; Cat. No. 1706516) at 1:50,000 for Anti-tubulin and Anti-GAPDH)] for an hour.\n\n### Xenograft growth assays\n\nNude mice were obtained from The Jackson Laboratory (Bar Harbor, ME; Cat. No. 002019). To perform the xenograft injections, breast cancer cells were harvested and resuspended at a concentration of 108 cells/mL in 1X cold PBS. The cell suspension was then mixed 1:1 with growth factor reduced-matrigel (Corning; Cat. No. 47743\u2013720). Each mouse was injected subcutaneously in the left and right flanks with 100 \u00b5L of the cell suspension, containing 5 \u00d7 106 cells. Tumors were monitored by visual inspection routinely after injection. Once a tumor was visible, mice were measured every 3 days by caliper in duplicate. Tumor volume was calculated using the formula V = \u00bd (longer axis)(shorter axis)2. All mouse protocols were approved by the CSHL Institutional Animal Care and Use Committee.\n\n### CRISPR plasmid construction and virus generation\n\nGuide RNAs were previously described in Lin et al. (Lin et al., 2017). In short, oligonucleotides were cloned into the LRG 2.1 vector [a gift from Junwei Shi (University of Pennsylvania) and Chris Vakoc (Cold Spring Harbor Laboratory)] using a BsmBI digestion (Shalem et al., 2014). To produce virus, HEK293T cells were transfected using the calcium-phosphate method (Smale, 2010). Supernatant was harvested 48 to 72 hr post-transfection, filtered through a 0.45-\u03bcm syringe, and then applied to cells with 4 \u03bcg/mL polybrene (Smale, 2010). Guide RNAs used to disrupt MELK are listed in Supplementary file 1.\n\n### Analysis of CRISPR-mediated mutagenesis\n\nSingle cells isolated via fluorescence-activated cell sorting (FACS) were grown into clonal populations. Genomic DNA was extracted from these populations with the QIAmp DNA Mini kit (Qiagen\u00a0Germantown,\u00a0MD; Cat. No. 51304). The cut site regions targeted by the guide RNAs were amplified using the primers listed in Supplementary file 2. PCR products were then sequenced with the forward and reverse primer at the Cold Spring Harbor Laboratory sequencing facility to yield the \u2018Cut-site PCR\u2019 sequences shown in Figure 2\u2014figure supplement 1. To analyze individual alleles, PCR products were ligated into the pCR4-TOPO TA vector from the TOPO TA Cloning Kit (Thermo\u00a0Fisher Scientific; Cat. No. 450030). Ligated plasmids were transformed into One Shot Stbl3E. coli (Thermo\u00a0Fisher Scientific: Cat. No. C737303). Plasmids from 8 to 20 colonies were extracted using QIAprep Spin Miniprep Kit (Qiagen; Cat. No. 27104) and sequenced with the forward and reverse primer at the Cold Spring Harbor Laboratory sequencing facility.\n\n### Analysis of published gene expression data\n\nData from normal human tissues were acquired from (Uhl\u00e9n et al., 2015). Data from senescent fibroblasts were acquired from (Marthandan et al., 2015). Data from stimulated lymphocytes were acquired from (Abbas et al., 2005). Cancer patient cohorts and probeset definitions were downloaded from the Gene Expression Omnibus as described in Supplementary file 3 (Edgar et al., 2002). Data were cleaned and processed using python\u2019s pandas library to exclude missing values and to associate clinical outcomes with expression data. To generate the proliferation meta-gene, the expression of five proliferation-related genes (MKI67, PCNA, CCNB1, TOP2A, and MCM2) were collapsed by averaging. Cox proportional hazard models were constructed using the survival library in R and the coxph function as described in (Smith and Sheltzer, 2017). The Cox proportional hazard models for both univariate and bivariate analyses were run from a python script that used rpy2 to run R code from python. Source code is available on github (https://github.com/joan-smith/survival-analysis-scripts; a copy is archived at https://github.com/elifesciences-publications/survival-analysis-scripts)(Smith, 2016).\n",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "6020043e-1b06-4956-bcb4-014d1cc76e4d",
+      "submission_id": "e7f83247-c739-4c78-98d6-73366652a829",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeffrey Settleman, Calico Life Sciences United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.32838.056](https://doi.org/10.7554/eLife.32838.056)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Combining CRISPR/Cas9 mutagenesis and a small-molecule inhibitor to probe the function of MELK in cancer\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Charles Sawyers as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tony Hunter (Reviewer #1); David Stokoe (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have extended their analysis of the role of the MELK protein kinase in breast cancer cells. In their 2016 eLife paper, they re-examined the role of the MELK kinase, a mitotic kinase reported to be essential for basal breast carcinoma cell proliferation and be the target of OTS167, a small molecule MELK kinase inhibitor, in basal breast carcinoma (BBC). They found that CRISPR/Cas9-generated MELK knockout clones of two different TNBC breast cancer lines exhibited WT cell levels of proliferation, survival and anchorage independent growth and that MELK knockout cells remained sensitive to OTS167. They concluded that MELK is not required for TNBC cell proliferation and that OTS167 blocks growth in a MELK independent manner.\n\nIn this new study, they showed that stable overexpression of MELK in 3T3, Rat1-p53dd, and MCF10A cells did not promote colony growth or induce growth in soft agar. They also showed that colony formation and growth in soft agar of MELK-null clones of DLD1 (colorectal cancer), A375 (melanoma), Cal51 (breast cancer) and MDA-MB-231 (breast cancer) cells was similar to that of cells in which the Rosa26 locus had been targeted as a control; for Cal51 and MDA-MB-231 they showed that the MELK-null clones formed mammospheres as efficiently control cells. In addition, they found that the Cal51 and MDA-MB-231 MELK-null cells grew as well as Rosa26 control cells as flank xenografts in nude mice. Moreover, the MELK-null Cal51 and MDA-MB-231 cells were equally sensitive/resistant to H2O2, paclitaxel, idarubicin, bleomycin, oxaliplatin, and fluorouracil treatment, as their control counterparts. They also showed that acute inhibition of MELK in WT Cal51 and MDA-MB-231 cells or their MELK knockout derivatives with the highly-specific HTH-01-091MELK inhibitor caused no defect in proliferation. Finally, they re-analyzed publicly available data for a correlation between MELK expression and prognosis for breast cancer patients, and came to the conclusion that MELK expression is simply a marker for mitotic cells, and would therefore be expected to correlate with poor prognosis. These new data provide further evidence that the MELK kinase is not required for the tumorigenic properties of a variety of human cancer cell lines, including, at least for Cal51 cells, tumorigenesis.\n\nOverall, this is a well-designed and executed study that confirms the previous data from this group and the Gray group showing that the multiple previous reports of MELK requirement in tumor cells were likely plagued by off-target effects of RNAi and small molecule reagents. This is therefore a useful addition to the small body of literature supporting this conclusion that can balance the >30 papers proposing a MELK requirement.\n\nEssential revisions:\n\n1) Although the Cal51 xenograft data are reasonable, the MDA-MB-231 xenograft data in Figure 2G are simply not convincing The Rosa 26 c1 cells did not grow at all (this is unexpected given that MDA-MB-231 cells generally grow very aggressively as xenograft tumors), whereas the MDA-MB-231 KO c1 cell tumors grew reasonably well. In contrast, both the MDA-MB-231 KO c2 and Rosa26 c2 cells grew poorly and with odd kinetics. The authors need to clearly acknowledge these imperfections in their own data and explain why the MDA-MB-231 cell results look so strange.\n\n2) The Sanger sequencing of the PCR product from the knockout clones as shown is not a very informative presentation of the data. It would be more rigorous to pick ~10 clones of the PCR product after topo cloning and sequence these to get a more accurate representation of the gRNA-mediated alterations. Are the alterations shown homozygous, heterozygous, or hemizygous?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Combining CRISPR/Cas9 mutagenesis and a small-molecule inhibitor to probe the function of MELK in cancer\" for further consideration at eLife. Your revised article has been favorably evaluated by Charles Sawyers (Senior Editor) and a Reviewing Editor.\n\nThe revised manuscript has been improved; however, the title, as written, implies that a new function of MELK has been revealed, and does not adequately describe the key conclusion. While the key conclusion is actually quite similar to that reflected in the title of your previous eLife article, it would be more appropriate to change the title to something along those lines.\n",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a747868-d03a-44da-b87a-f9fc92aa25f8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C1",
+      "claim": "MELK over-expression is associated with aggressive disease in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK over-expression is associated with aggressive disease, and MELK has been implicated in numerous cancer-related processes, including chemotherapy resistance, stem cell renewal, and tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "febcb6fa-5d86-4f0a-bae7-68d89037adec",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C2",
+      "claim": "MELK has been implicated in chemotherapy resistance, stem cell renewal, and tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK over-expression is associated with aggressive disease, and MELK has been implicated in numerous cancer-related processes, including chemotherapy resistance, stem cell renewal, and tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5aafa115-e913-4ba8-a11c-ac0ed650030c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C3",
+      "claim": "Triple-negative breast cancer cell lines harboring CRISPR/Cas9-induced null mutations in MELK proliferate at wild-type levels in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we established that triple-negative breast cancer cell lines harboring CRISPR/Cas9-induced null mutations in MELK proliferate at wild-type levels in vitro (Lin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "f582f251-51eb-49f4-b7b1-2aea8fb629c6",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C4",
+      "claim": "Cells lacking MELK exhibit wild-type growth in vitro across cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generate several additional knockout clones of MELK and demonstrate that across cancer types, cells lacking MELK exhibit wild-type growth in vitro, under environmental stress, in the presence of cytotoxic chemotherapies, and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b061b229-97bd-4625-9a2d-e7c3da6d73a5",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C5",
+      "claim": "Cells lacking MELK exhibit wild-type growth under environmental stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generate several additional knockout clones of MELK and demonstrate that across cancer types, cells lacking MELK exhibit wild-type growth in vitro, under environmental stress, in the presence of cytotoxic chemotherapies, and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "7eddf338-c56e-4cde-ae49-2136816f1c00",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C6",
+      "claim": "Cells lacking MELK exhibit wild-type growth in the presence of cytotoxic chemotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generate several additional knockout clones of MELK and demonstrate that across cancer types, cells lacking MELK exhibit wild-type growth in vitro, under environmental stress, in the presence of cytotoxic chemotherapies, and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "cc155516-ca42-4c57-88b8-ceb38ff282a5",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C7",
+      "claim": "Cells lacking MELK exhibit wild-type growth in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generate several additional knockout clones of MELK and demonstrate that across cancer types, cells lacking MELK exhibit wild-type growth in vitro, under environmental stress, in the presence of cytotoxic chemotherapies, and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b57a10d1-829d-427d-9b7f-ec33b3b9423d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C8",
+      "claim": "Acute inhibition of MELK results in no specific anti-proliferative phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining our MELK-knockout clones with a recently described, highly specific MELK inhibitor, we further demonstrate that the acute inhibition of MELK results in no specific anti-proliferative phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using a MELK inhibitor combined with knockout clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2cc46465-f9b5-47f0-844e-555b71dd04f0",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C9",
+      "claim": "MELK expression is a correlate of tumor mitotic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of gene expression data from cohorts of cancer patients identifies MELK expression as a correlate of tumor mitotic activity, explaining its association with poor clinical prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of gene expression data from patient cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d2b39fc3-bea1-41cb-9818-920e56670194",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C10",
+      "claim": "MELK expression's correlation with tumor mitotic activity explains its association with poor clinical prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of gene expression data from cohorts of cancer patients identifies MELK expression as a correlate of tumor mitotic activity, explaining its association with poor clinical prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the correlation analysis presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "f0afa287-1bcf-498b-87d3-9f832545636e",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C11",
+      "claim": "MELK has been identified as a promising therapeutic target in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "The Maternal Embryonic Leucine Zipper Kinase (MELK) has been identified as a promising therapeutic target in multiple cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "801eebde-8e9d-4f58-9453-e773b91a8fc9",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C12",
+      "claim": "MELK has been implicated as a cancer dependency and putative drug target in melanoma, colorectal cancer, and triple-negative breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Maternal Embryonic Leucine Zipper Kinase (MELK) has been implicated as a cancer dependency and putative drug target in multiple cancer types, including melanoma, colorectal cancer, and triple-negative breast cancer (Chung et al., 2012; Speers et al., 2016; Wang et al., 2014; Ganguly et al., 2014a; Ganguly et al., 2014b; Janostiak et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2867dbb1-e6a3-4157-bbc7-b75a81818a3b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C13",
+      "claim": "High expression of MELK is associated with poor patient prognosis in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK is over-expressed in these cancers, and high expression of MELK is associated with poor patient prognosis (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007; Gray et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "4ca57d0c-d8ed-42f0-a97d-07d4da877748",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C14",
+      "claim": "Knockdown of MELK using RNA interference has been reported to block cancer cell proliferation and trigger cell cycle arrest or mitotic catastrophe.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, knockdown of MELK using RNA interference (RNAi) has been reported to block cancer cell proliferation and trigger cell cycle arrest or mitotic catastrophe (Speers et al., 2016; Wang et al., 2014; Gray et al., 2005; Kuner et al., 2013; Lin et al., 2007; Beke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1114e9d5-c234-472d-9fe4-83cf7ab8b1c3",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C15",
+      "claim": "Several companies have developed small-molecule MELK inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these pre-clinical results, several companies have developed small-molecule MELK inhibitors, and one MELK inhibitor (OTS167) is currently being tested in multiple clinical trials (ClinicalTrials.gov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to ClinicalTrials.gov.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "fee9a62c-6980-4539-962b-9adc5284e2dc",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C16",
+      "claim": "The MELK inhibitor OTS167 is currently being tested in multiple clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these pre-clinical results, several companies have developed small-molecule MELK inhibitors, and one MELK inhibitor (OTS167) is currently being tested in multiple clinical trials (ClinicalTrials.gov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to ClinicalTrials.gov.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "f9d2cb12-5425-48b8-9516-04743b92c741",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C17",
+      "claim": "The MELK inhibitor OTS167 remained effective against MELK-mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we demonstrated that the MELK inhibitor OTS167 remained effective against MELK-mutant cells, suggesting that OTS167 kills cells through an off-target mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b346b71d-8971-4244-894d-d6b387b8b25e",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C18",
+      "claim": "OTS167 kills cells through an off-target mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we demonstrated that the MELK inhibitor OTS167 remained effective against MELK-mutant cells, suggesting that OTS167 kills cells through an off-target mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that OTS167 affects MELK-mutant cells.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "47045e2a-124b-40be-86d6-b4784587a436",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C19",
+      "claim": "The shRNA vectors commonly used to study MELK kill cells in a MELK-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have been replicated by an independent group, who further demonstrated that the shRNA vectors commonly used to study MELK also kill cells in a MELK-independent manner (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to another group's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d8cd8580-988f-4dec-9271-7fcbfdfa9469",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C20",
+      "claim": "MELK expression remains one of the strongest predictors of patient mortality in diverse cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the conflicting in vitro data, MELK expression remains one of the strongest predictors of patient mortality in diverse cancer types (Smith and Sheltzer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "db715ac1-6c85-47fc-b32c-aa627e674c66",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C21",
+      "claim": "MELK has been implicated in cancer stem cell maintenance, chemotherapy resistance, anchorage-independent growth, and reactive oxygen species (ROS)-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, MELK has been implicated in several other cancer-related processes, including cancer stem cell maintenance, chemotherapy resistance, anchorage-independent growth, and reactive oxygen species (ROS)-signaling (Wang et al., 2014; Ganguly et al., 2014a; Beke et al., 2015; Kim et al., 2015; Seong et al., 2016; Choi et al., 2011; Gu et al., 2013; Hebbard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "8eaa4b61-2146-4a5c-b3b2-47c27adbc90b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C22",
+      "claim": "The over-expression of MELK has been reported to transform cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the over-expression of MELK has been reported to transform cells, suggesting that in addition to MELK's putative role as a cancer dependency, it may also function as a driver oncogene (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "81c9fabe-3604-46be-a124-9c68fefdbaaa",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C23",
+      "claim": "MELK may function as a driver oncogene.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the over-expression of MELK has been reported to transform cells, suggesting that in addition to MELK's putative role as a cancer dependency, it may also function as a driver oncogene (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from reported transformation ability.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "832562ce-ebde-43cd-b0ac-c8bcd936f725",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C24",
+      "claim": "CRISPR/Cas9 mutagenesis is prone to limitations including selection for secondary mutations during clonal expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "While RNA interference is susceptible to off-target interactions that confound experimental interpretation (Jackson et al., 2003, 2006), CRISPR/Cas9 mutagenesis is also prone to several important limitations. In particular, clonal cell lines harboring Cas9-induced modifications must be expanded from a single cell with a mutation of interest to several million cells. This intense pressure may select for secondary mutations that blunt any anti-proliferative consequences of the original mutation (Iwasa et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on CRISPR limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "cec0bffe-f49e-4254-a82c-f32eba2477ab",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C25",
+      "claim": "The immediate inhibition of a target with a small-molecule drug may induce a more severe phenotype than observed in a CRISPR-modified cell line subjected to evolutionary pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "In a therapeutic context, the immediate inhibition of a particular target achieved with a small-molecule drug may induce a more severe phenotype than observed in a CRISPR-modified cell line subjected to evolutionary pressure over the course of days or weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about differences between genetic and pharmacological approaches.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "c2fb2759-742b-4a6e-a6fc-c6da385a3e92",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C26",
+      "claim": "The over-expression of MELK was sufficient to induce anchorage-independent growth in Rat1 fibroblasts expressing dominant-negative p53 and MCF10A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been reported that the over-expression of MELK was sufficient to induce anchorage-independent growth in several cell lines, including Rat1 fibroblasts expressing dominant-negative p53 (p53dd) and the human mammary epithelial cell line MCF10A (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ebe9be25-bd58-4f57-9d6a-7d4285e8946f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C27",
+      "claim": "Full-length mouse or human MELK was over-expressed in all six cell lines generated relative to vector-transduced control cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed that full-length mouse or human MELK was over-expressed in all six cell lines that we generated relative to the level of MELK in vector-transduced control cell lines (Figure 1A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1A and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "768b7d6f-116f-4a82-aef4-ff4fbbf9a403",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C28",
+      "claim": "Both ectopic and endogenous MELK were stabilized and phosphorylated in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Gray et al., 2005; Badouel et al., 2010), we found that both ectopic and endogenous MELK were stabilized and phosphorylated in mitotic cells, suggesting that the transgenic MELK was functional (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data in Figure 1\u2014figure supplement 1 and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "67a8fc4f-427b-48c1-8419-4adc09ea6318",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C29",
+      "claim": "The transgenic MELK was functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Gray et al., 2005; Badouel et al., 2010), we found that both ectopic and endogenous MELK were stabilized and phosphorylated in mitotic cells, suggesting that the transgenic MELK was functional (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that transgenic MELK behaves like endogenous MELK in mitotic cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "508d7eef-f956-4dcf-950b-d9536cff4fd8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C30",
+      "claim": "The over-expression of driver oncogenes allows immortalized but non-transformed cell lines to form colonies when grown in soft agar.",
+      "claim_type": "EXPLICIT",
+      "source": "The over-expression of driver oncogenes allows immortalized but non-transformed cell lines to form colonies when grown in soft agar, a phenotype that is tightly linked with in vivo tumorigenicity (Shin et al., 1975; Colburn et al., 1978; Cifone and Fidler, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2bcf3cf3-87dc-470d-a791-dc130bbefa72",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C31",
+      "claim": "Anchorage-independent growth is tightly linked with in vivo tumorigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The over-expression of driver oncogenes allows immortalized but non-transformed cell lines to form colonies when grown in soft agar, a phenotype that is tightly linked with in vivo tumorigenicity (Shin et al., 1975; Colburn et al., 1978; Cifone and Fidler, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "0e95e402-859e-415c-91de-e3c90f361332",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C32",
+      "claim": "Cells transduced with H-RasG12V or EGFRL858R formed numerous colonies in soft agar.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cells that had been transduced with an empty vector exhibited minimal anchorage-independent growth, while cells transduced with H-RasG12V or EGFRL858R formed numerous colonies (Figure 1B\u2013C and E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B-C and E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "875a2ba0-461b-4ef0-aa1a-f4b7611dae66",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C33",
+      "claim": "Cells transduced with an empty vector exhibited minimal anchorage-independent growth.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cells that had been transduced with an empty vector exhibited minimal anchorage-independent growth, while cells transduced with H-RasG12V or EGFRL858R formed numerous colonies (Figure 1B\u2013C and E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B-C and E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1d46bfce-b789-4956-b213-42afec31d647",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C34",
+      "claim": "The over-expression of MELK fails to induce anchorage-independent growth in any of the six cell lines tested.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in multiple independent experiments, we failed to detect an increase in anchorage-independent growth in any of the six cell lines over-expressing either mouse or human MELK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from soft agar assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "4ba6b7dd-662b-4583-a051-f8b7608bd56d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C35",
+      "claim": "Under the conditions tested, the over-expression of MELK fails to transform cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, under the conditions tested, the over-expression of MELK fails to transform cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the soft agar assay data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "f4bffa01-cce4-4461-9a90-d4c2f43bb3eb",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C36",
+      "claim": "MELK was not required for cell division in Cal51 and MDA-MB-231 triple-negative breast cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that MELK was not required for cell division in two triple-negative breast cancer cell lines, Cal51 and MDA-MB-231 (Lin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ec673f7e-7067-48b9-9a8a-ffcff8b0a2a4",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C37",
+      "claim": "MELK has been reported to support growth in colorectal cancer and melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MELK has been reported to support growth in several other cancer types, including colorectal cancer and melanoma (Ganguly et al., 2014b; Janostiak et al., 2017; Gray et al., 2005; Choi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "e87d7c9c-5da4-48f5-953b-1a17904e4bff",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C38",
+      "claim": "MELK-knockout melanoma and colorectal cancer clones grew at wild-type levels in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK-KO melanoma and colorectal cancer clones grew at wild-type levels in vitro, demonstrating that MELK is dispensable for proliferation in these cancer types as well (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by proliferation data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "a0bf17bf-a370-4f85-b5cc-c377c38e2ab4",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C39",
+      "claim": "MELK is dispensable for proliferation in melanoma and colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK-KO melanoma and colorectal cancer clones grew at wild-type levels in vitro, demonstrating that MELK is dispensable for proliferation in these cancer types as well (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the proliferation data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "df69e293-9ab3-48dc-a001-569de68a2f2f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C40",
+      "claim": "MELK-KO and Rosa26 clones were equally sensitive to OTS167.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, MELK-KO and Rosa26 clones were equally sensitive to OTS167, verifying that this drug kills cells via an off-target effect across cancer types (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "c489ef3d-8f85-44ec-876c-d71faeb1dc79",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C41",
+      "claim": "OTS167 kills cells via an off-target effect across cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, MELK-KO and Rosa26 clones were equally sensitive to OTS167, verifying that this drug kills cells via an off-target effect across cancer types (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is inferred from the observation that MELK-KO cells are equally sensitive to OTS167.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3e13d31e-1b52-49a9-b0e3-5dd8b615459c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C42",
+      "claim": "Many genes that are non-essential for cell division in vitro may still play crucial roles in cancer by supporting other processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes that are non-essential for cell division in vitro may still play crucial roles in cancer by supporting other processes, including stem-cell renewal, resistance to anoikis, and angiogenesis (Rotem et al., 2015; Zhong et al., 2011; Miller et al., 2017; Cidado et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1ddbd4f4-f738-4e1b-84b9-160bf36b11ef",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C43",
+      "claim": "The loss of MELK failed to impair colony growth relative to control Rosa26 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal violet staining of these plates revealed that the loss of MELK failed to impair colony growth relative to the control Rosa26 cell lines (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by crystal violet staining data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "81063e09-362a-4b0a-98f2-d963c54861e0",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C44",
+      "claim": "One MELK-KO clone (MDA-MB-231 c1) grew consistently better than either control clone in the colony growth assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, one MELK-KO clone (MDA-MB-231 c1) grew consistently better than either control clone in this assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the colony growth assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5856a092-be76-46c8-a3cc-8048adb0d10b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C45",
+      "claim": "Significant variation in proliferative capacity has been described among independent clones of the MDA-MB-231 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant variation in proliferative capacity has previously been described among independent clones of the MDA-MB-231 cell line (Khan et al., 2017) and may arise due to heterogeneity in the parental population or secondary mutations acquired during cell line derivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "e0e14509-caad-45b0-83f4-c1abad12e4e2",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C46",
+      "claim": "Variation in proliferative capacity may arise due to heterogeneity in the parental population or secondary mutations acquired during cell line derivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant variation in proliferative capacity has previously been described among independent clones of the MDA-MB-231 cell line (Khan et al., 2017) and may arise due to heterogeneity in the parental population or secondary mutations acquired during cell line derivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed variation.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1e66191d-4ed9-4f52-80c4-ed9cda30708e",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C47",
+      "claim": "No significant difference in anchorage-independent growth was observed between MELK-KO cells and Rosa26 cells in every cell line tested.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no significant difference in anchorage-independent growth between MELK-KO cells and Rosa26 cells in every cell line tested (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by soft agar assay data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "aad6a182-bd68-49a0-9592-9992b9aac81c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C48",
+      "claim": "MELK has been implicated in the maintenance of breast cancer stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK has previously been implicated in the maintenance of breast cancer stem cells (Ganguly et al., 2014a; Gu et al., 2013; Kig et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "a9ad1d83-1f59-4906-8412-aee519e169c0",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C49",
+      "claim": "Mammosphere formation is a phenotype tightly linked with breast cancer stem cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested whether loss of MELK impairs mammosphere formation, a phenotype tightly linked with breast cancer stem cell activity (Grimshaw et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "03e293fc-4d15-42cb-8117-bbbf19a0d9a0",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C50",
+      "claim": "All MELK-KO clones were capable of forming mammospheres.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed inter-clonal variability in mammosphere growth, all MELK-KO clones were capable of forming mammospheres, and two MELK-KO clones exhibited consistently greater mammosphere formation than their wild-type controls (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mammosphere assay data shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "9536b2fb-e76a-4d57-a546-667aeace359c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C51",
+      "claim": "Two MELK-KO clones exhibited consistently greater mammosphere formation than their wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed inter-clonal variability in mammosphere growth, all MELK-KO clones were capable of forming mammospheres, and two MELK-KO clones exhibited consistently greater mammosphere formation than their wild-type controls (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mammosphere assay data shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d22492b6-71fa-4fb4-903c-82feaa7fcbd8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C52",
+      "claim": "MELK is dispensable for growth as a mammosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that MELK is dispensable for growth as a mammosphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the mammosphere assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "f3c3c3d9-3bf1-469e-8920-ea08e5a2afc6",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C53",
+      "claim": "23 of 34 injections with MELK-KO cells and 24 of 34 injections with Rosa26 cells resulted in detectable tumor formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all clones tested, 23 of 34 injections with MELK-KO cells and 24 of 34 injections with Rosa26 cells resulted in detectable tumor formation, and no significant growth defect was observed in any MELK-KO clone (Figure 2F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by xenograft data shown in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2e5aea7d-e074-40fe-aed9-6d6b85fde17d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C54",
+      "claim": "No significant growth defect was observed in any MELK-KO clone in xenograft assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all clones tested, 23 of 34 injections with MELK-KO cells and 24 of 34 injections with Rosa26 cells resulted in detectable tumor formation, and no significant growth defect was observed in any MELK-KO clone (Figure 2F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by xenograft data shown in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "7caa88d9-4bc9-4209-b350-f925c14ec9f0",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C55",
+      "claim": "MDA-MB-231 MELK-KO c1 clone exhibited superior growth in xenograft assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous assays, we observed superior growth in the MDA-MB-231 MELK-KO c1 clone, while MDA-MB-231 MELK-KO c2 and Rosa26 c2 grew slowly but at equivalent rates (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by xenograft data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "0388183b-3495-4e97-965e-aea50453c236",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C56",
+      "claim": "MDA-MB-231 is reported to grow aggressively in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow growth of MDA-MB-231 Rosa26 c1, MELK-KO c2, and Rosa26 c2 was unexpected, as MDA-MB-231 is reported to grow aggressively in vivo (Price et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "508e056d-61e5-4b38-a7be-ec0e393fe868",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C57",
+      "claim": "Cells in the parental MDA-MB-231 population exhibit different abilities to form tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the poor growth of many of our MDA-MB-231 clones could reflect the fact that cells in the parental population exhibit different abilities to form tumors, and by chance, we isolated several clones with limited tumor-initiating capacity (Fillmore and Kuperwasser, 2008; Charafe-Jauffret et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior literature on tumor heterogeneity.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "efaad5c7-527b-456f-b905-5244239b3ea4",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C58",
+      "claim": "Transduction with MELK-targeting gRNAs ablated MELK protein expression in MDA-MB-231 populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis verified that transduction with the MELK-targeting gRNAs ablated MELK protein expression (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3e03e326-5478-4583-8df5-2c980678f28b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C59",
+      "claim": "MELK-depleted MDA-MB-231 cell populations exhibited equivalent or superior tumor growth compared to control populations.",
+      "claim_type": "EXPLICIT",
+      "source": "After injection into nude mice, these cell populations grew more rapidly than any clonal cell line, and the MELK-depleted cells exhibited equivalent or superior tumor growth compared to the control populations (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by xenograft data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "158eba4b-efaf-430f-9130-6ed24fd31fe1",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C60",
+      "claim": "MELK is dispensable for the proliferation of cancer cells in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results demonstrate that MELK is dispensable for the proliferation of cancer cells in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the comprehensive set of in vitro and in vivo assays presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "411a7d3b-39d0-4587-bbbe-a111b7be641f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C61",
+      "claim": "MELK has been reported to phosphorylate eukaryotic translation initiation factor 4B (eIF4B).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a recent publication reported that MELK phosphorylates eukaryotic translation initiation factor 4B (eIF4B), and this phosphorylation event promotes cell survival by increasing translation of the anti-apoptotic protein MCL1 (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "e8ede35b-6455-419c-ab2b-a1fa80e53a2a",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C62",
+      "claim": "MELK phosphorylation of eIF4B promotes cell survival by increasing translation of MCL1.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a recent publication reported that MELK phosphorylates eukaryotic translation initiation factor 4B (eIF4B), and this phosphorylation event promotes cell survival by increasing translation of the anti-apoptotic protein MCL1 (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "fb781458-4296-42f9-8399-771a01c43d67",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C63",
+      "claim": "MELK-knockout A375, Cal51 and MDA-MB-231 cells showed normal levels of eIF4B phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, western blot analysis revealed normal levels of eIF4B phosphorylation in MELK-knockout A375, Cal51 and MDA-MB-231 cells (Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b61a6645-1126-4065-9021-8a168d657b59",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C64",
+      "claim": "MELK-KO cell lines continued to express MCL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, MELK-KO cell lines continued to express MCL1, the putative downstream target of eIF4B (Figure 3\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1fbfc759-1b7c-43b9-9508-66c0df772e20",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C65",
+      "claim": "MELK is not required for eIF4B phosphorylation or MCL1 translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that MELK is not required for eIF4B phosphorylation or MCL1 translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the western blot data showing normal eIF4B phosphorylation and MCL1 expression in MELK-KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2c665ff1-d1f0-46f7-8131-7109ecc40e7a",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C66",
+      "claim": "Developing tumors must survive in hypoxic and nutrient-poor conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing tumors must survive in hypoxic and nutrient-poor conditions (Vaupel et al., 1989), and MELK has been implicated in glucose signaling and in the detection of ROS (Seong et al., 2016; Jung et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "561f9a0e-730b-4cde-a366-56f49e74ea40",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C67",
+      "claim": "MELK has been implicated in glucose signaling and in the detection of ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing tumors must survive in hypoxic and nutrient-poor conditions (Vaupel et al., 1989), and MELK has been implicated in glucose signaling and in the detection of ROS (Seong et al., 2016; Jung et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "9d239809-b6c6-4509-9397-3d1ae2447edb",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C68",
+      "claim": "No difference in sensitivity to H2O2 was observed between MELK-KO and control Rosa26 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate ROS stress, we cultured cells in varying concentrations of H2O2, but we observed no difference in sensitivity between MELK-KO and control Rosa26 clones (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ccfedec6-d19a-4c3d-806a-38e9a1341c34",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C69",
+      "claim": "MELK has been suggested to contribute to ROS signaling by phosphorylating ASK1.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK has been suggested to contribute to ROS signaling by phosphorylating ASK1 (Jung et al., 2008); however, this protein remained phosphorylated at normal levels in cells lacking MELK (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "149adbd6-8562-4096-9b34-c06fcc76746b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C70",
+      "claim": "ASK1 remained phosphorylated at normal levels in cells lacking MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK has been suggested to contribute to ROS signaling by phosphorylating ASK1 (Jung et al., 2008); however, this protein remained phosphorylated at normal levels in cells lacking MELK (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5ed27de1-6096-487a-b4ea-e4c29bfa6381",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C71",
+      "claim": "MELK-KO clones exhibited wild-type levels of growth when cultured under hypoxic, serum-deprived, or glucose-limited conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "MELK-KO clones also exhibited wild-type levels of growth when cultured under hypoxic, serum-deprived, or glucose-limited conditions (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by crystal violet staining data shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "260f1dfb-4716-4edc-aaaf-975eddaac724",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C72",
+      "claim": "MELK is dispensable for proliferation under common metabolic stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that MELK is dispensable for proliferation under common metabolic stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the stress assay data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "30426a17-724a-4527-ad11-265de6eb0f9f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C73",
+      "claim": "Knocking down or inhibiting MELK sensitizes cells to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been previously reported that knocking down or inhibiting MELK sensitizes cells to DNA damage (Beke et al., 2015; Kim et al., 2015; Choi et al., 2011; Kig et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "39415ac8-61d6-40e0-b173-a7de5ea3f393",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C74",
+      "claim": "The loss of MELK failed to sensitize cells to five common chemotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the loss of MELK failed to sensitizes cells to five common chemotherapies (Figure 3E\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response data shown in Figure 3E-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5b31b7e5-f258-424c-baed-88eba03a17c6",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C75",
+      "claim": "MELK is dispensable for cell survival under metabolic and cytotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results demonstrate that MELK is dispensable for cell survival under metabolic and cytotoxic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the comprehensive stress and chemotherapy assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d63b37a2-a1fd-4d39-bf2b-8172c1498659",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C76",
+      "claim": "1 \u00b5M HTH-01\u2013091 triggered near-complete MELK degradation in Cal51, DLD1, and MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 1 \u00b5M HTH-01\u2013091 triggered near-complete MELK degradation in Cal51, DLD1, and MDA-MB-231 cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "437854cd-7477-43c1-9416-f68bf35a03c9",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C77",
+      "claim": "The loss of MELK after HTH-01\u2013091 treatment was not an indirect effect of cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of MELK was not an indirect effect of cell cycle arrest, as these cells maintained high levels of the mitotic marker cyclin B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that cyclin B levels remained high.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "28c04872-0c4c-41da-803b-5c1ad9bb642d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C78",
+      "claim": "Neither MELK-KO nor Rosa26 clones were affected by HTH-01\u2013091 treatment in colony formation and anchorage-independent growth assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the acute inhibition of MELK affected clonogenicity or anchorage-independent growth, we grew MELK-KO and Rosa26 cells on plastic or in soft agar in the presence of DMSO or 1 \u00b5M HTH-01\u2013091. Neither MELK-KO nor Rosa26 clones were affected by HTH-01\u2013091 treatment, verifying that MELK is dispensable for colony formation and anchorage-independent growth in these cells (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "301f9a0b-da8a-4647-8a5f-9aa0a32d7864",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C79",
+      "claim": "MELK is dispensable for colony formation and anchorage-independent growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the acute inhibition of MELK affected clonogenicity or anchorage-independent growth, we grew MELK-KO and Rosa26 cells on plastic or in soft agar in the presence of DMSO or 1 \u00b5M HTH-01\u2013091. Neither MELK-KO nor Rosa26 clones were affected by HTH-01\u2013091 treatment, verifying that MELK is dispensable for colony formation and anchorage-independent growth in these cells (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the HTH-01\u2013091 treatment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "633149e9-c25d-4c1b-a1a2-79f96d1fa275",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C80",
+      "claim": "HTH-01\u2013091 exhibited significant anti-proliferative effects only at concentrations above ~5 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a drug sensitivity assay revealed that HTH-01\u2013091 exhibited significant anti-proliferative effects only at concentrations above ~5 \u00b5M (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2dec2288-409f-4373-a377-e534857c7f8b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C81",
+      "claim": "The toxicity of HTH-01\u2013091 at high concentrations is likely a consequence of an off-target effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This toxicity is likely a consequence of an off-target effect, as these drug concentrations were found to affect Rosa26 and MELK-KO cells equivalently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that both Rosa26 and MELK-KO cells are equally affected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5a194949-1b17-42a6-a4fb-c189e81519ce",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C82",
+      "claim": "HTH-01\u2013091 treatment failed to sensitize Rosa26 clones to 5-fluorouracil or paclitaxel treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous results, HTH-01\u2013091 treatment failed to sensitize the Rosa26 clones to 5-florouracil or paclitaxel treatment (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "86b30998-81bb-48a7-816f-67d0d24474f8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C83",
+      "claim": "MELK inhibition failed to affect eIF4B phosphorylation and MCL1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we assessed the effect of HTH-01\u2013091 treatment on eIF4B phosphorylation and MCL1 expression, and found that MELK inhibition failed to affect either target (Figure 3\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "662c0e19-d44c-411e-8720-c78c69840f56",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C84",
+      "claim": "The acute loss of MELK results in no significant defect in cell viability, proliferation, or drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results demonstrate that the acute loss of MELK results in no significant defect in cell viability, proliferation, or drug resistance and suggest that our knockout clones have not acquired mutations that tolerize cells to the loss of MELK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the comprehensive HTH-01\u2013091 treatment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "a1445193-5426-4f04-bbc0-3d47b264cd68",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C85",
+      "claim": "The knockout clones have not acquired mutations that tolerize cells to the loss of MELK.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results demonstrate that the acute loss of MELK results in no significant defect in cell viability, proliferation, or drug resistance and suggest that our knockout clones have not acquired mutations that tolerize cells to the loss of MELK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that acute MELK inhibition produces the same result as genetic knockout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "79d4e237-2b20-4504-87f0-98ae930ca611",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C86",
+      "claim": "MELK is up-regulated in many cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, MELK is up-regulated in many cancer types (Gray et al., 2005), and high levels of MELK expression have been reported to confer a dismal clinical prognosis (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b06ef5b2-efed-4126-8589-09f16c5d153b",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C87",
+      "claim": "High levels of MELK expression have been reported to confer a dismal clinical prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, MELK is up-regulated in many cancer types (Gray et al., 2005), and high levels of MELK expression have been reported to confer a dismal clinical prognosis (Wang et al., 2014; Pickard et al., 2009; Phillips et al., 2006; Ryu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5f0a27b2-7373-48f4-bdb2-070b48b10c71",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C88",
+      "claim": "MELK expression is cell cycle-regulated, peaking in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that MELK expression is cell cycle-regulated, peaking in mitosis (Wang et al., 2014; Badouel et al., 2010), and gene signatures that capture mitotic activity have been found to be prognostic in multiple cancer types (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "87b6f668-4cd2-4a9c-b903-b4dd78717d8f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C89",
+      "claim": "Gene signatures that capture mitotic activity have been found to be prognostic in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that MELK expression is cell cycle-regulated, peaking in mitosis (Wang et al., 2014; Badouel et al., 2010), and gene signatures that capture mitotic activity have been found to be prognostic in multiple cancer types (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ba8cea46-fd6d-4b8e-970f-4cf639a931ea",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C90",
+      "claim": "MELK expression may function as an indirect proxy for rapid cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore considered the possibility that, rather than functioning as an oncogene or a cancer dependency, MELK expression could report cell division within a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the cell cycle-regulated nature of MELK.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "70b3b8da-8d0b-498a-96f9-09faf1466c14",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C91",
+      "claim": "In normal human tissue, MELK transcript expression was lowest in non-proliferative organs and highest in organs with on-going mitotic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal human tissue, MELK transcript expression was the lowest in non-proliferative organs, including the heart and skeletal muscle, while MELK expression was the highest in organs with on-going mitotic activity, including the bone marrow and testes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1ce8984e-8f68-4d1a-a1bf-b5558272b3d5",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C92",
+      "claim": "Across 32 tissue types, MELK levels were highly correlated with the expression of the proliferation marker MKI67 (R = 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across 32 tissue types, MELK levels were highly correlated with the expression of the proliferation marker MKI67 (R = 0.93).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3fd4b8d1-65fc-440c-99cb-c96d9a7a37f3",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C93",
+      "claim": "In human fibroblasts cultured until senescence, MELK expression decreased up to 11-fold between proliferating and arrested populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in human fibroblasts cultured until senescence, MELK expression decreased up to 11-fold between proliferating and arrested populations, while stimulating lymphocytes to divide increased MELK expression 20-fold (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "69d96bdb-1b62-44c9-bbdb-6956b8c7b1ec",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C94",
+      "claim": "Stimulating lymphocytes to divide increased MELK expression 20-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in human fibroblasts cultured until senescence, MELK expression decreased up to 11-fold between proliferating and arrested populations, while stimulating lymphocytes to divide increased MELK expression 20-fold (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5e9cf464-6a12-4173-a0c5-72e3766fd128",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C95",
+      "claim": "MELK levels reflect mitotic activity in diverse cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that MELK levels reflect mitotic activity in diverse cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the correlation data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "455076ba-8e9c-4109-8001-f8a5ad4ad328",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C96",
+      "claim": "In cohorts of patients with breast cancer, glioma, or melanoma, MELK expression was significantly correlated with five proliferation markers (median correlation = 0.82).",
+      "claim_type": "EXPLICIT",
+      "source": "In cohorts of patients with tumor types in which MELK levels have previously been associated with advanced disease, MELK expression was significantly correlated with each of the proliferation genes (median correlation = 0.82; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "34d622ed-a3a8-4c7f-ad12-909c68a63b7f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C97",
+      "claim": "MELK expression was significantly linked with poor outcome in 14 of 15 breast cancer datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MELK expression was significantly linked with poor outcome in 14 of 15 datasets (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Cox proportional hazards analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "a4e79fa1-cf45-4fa1-8787-853a1cbdd1c4",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C98",
+      "claim": "A proliferation meta-gene was significantly associated with poor outcome in 13 of 15 breast cancer datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a proliferation meta-gene derived by averaging the normalized expression of MKI67, PCNA, CCNB1, MCM2, and TOP2A was significantly associated with poor outcome in 13 of 15 datasets (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Cox proportional hazards analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "300b5152-b7b2-4511-aa4a-617b8ab852c7",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C99",
+      "claim": "The Z scores generated by univariate proliferation models were significantly correlated with the Z scores generated by univariate MELK models (R = 0.78, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that the Z scores generated by our univariate proliferation models were significantly correlated with the Z scores generated by the univariate MELK models: in patient cohorts in which proliferation was highly-prognostic, MELK expression was also highly-prognostic, and vice-versa (Figure 5E; R = 0.78, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "eeb9548d-db0d-4fc2-a120-b4f0d1f97be1",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C100",
+      "claim": "MELK expression and cell proliferation capture very similar clinical information.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses suggested that MELK expression and cell proliferation capture very similar clinical information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the high correlation between MELK and proliferation Z scores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b1b20c83-482e-4122-aae5-194b8c81fab7",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C101",
+      "claim": "In bivariate models, MELK was significantly associated with patient outcome in only 2 of 15 breast cancer datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bivariate models, MELK was significantly associated with patient outcome in only 2 of 15 datasets, demonstrating that considering tumor cell proliferation ablated MELK's clinical utility (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by bivariate Cox proportional hazards analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "1144ab93-56cb-406c-9a39-28d4c20d2cf3",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C102",
+      "claim": "Considering tumor cell proliferation ablated MELK's clinical utility.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bivariate models, MELK was significantly associated with patient outcome in only 2 of 15 datasets, demonstrating that considering tumor cell proliferation ablated MELK's clinical utility (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on the bivariate analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "92133066-06fa-452f-a478-f3e0a1264580",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C103",
+      "claim": "When tumors are stratified according to their proliferation level, MELK expression is no longer prognostic.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when tumors are stratified according to their proliferation level, MELK expression is no longer prognostic (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Kaplan-Meier analysis shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "4a624684-e030-4cba-a4e1-f8f98eb2904f",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C104",
+      "claim": "The observed pattern of MELK expression in cancer can be explained by the fact that MELK is up-regulated in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, these results suggest that the observed pattern of MELK expression in cancer can be explained by the fact that MELK is up-regulated in mitotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the comprehensive gene expression and survival analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "e8003c8c-9374-46c0-a25d-91b3bf0ba724",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C105",
+      "claim": "Combining CRISPR and a small-molecule inhibitor in a variety of assays failed to reveal a role for MELK in several cancer-related processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this current manuscript, we report that combining CRISPR and a small-molecule inhibitor in a variety of assays failed to reveal a role for MELK in several cancer-related processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "435eb873-4830-4de3-a9a4-12dd4f127f01",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C106",
+      "claim": "Anti-MELK monotherapies are unlikely to be effective cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that anti-MELK monotherapies are unlikely to be effective cancer treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the comprehensive experimental data showing MELK is dispensable.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "cf212ec6-3c03-411f-89c8-2bc9de6e8e93",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C107",
+      "claim": "Multiple cellular functions are dispensable for in vitro proliferation but required for tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, multiple cellular functions are dispensable for in vitro proliferation but required for tumor progression, including stem cell renewal, oxygen sensing, and chemotherapy resistance (Rotem et al., 2015; Zhong et al., 2011; Miller et al., 2017; Cidado et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "0e1830b3-9ff5-4978-9f4d-42786971dcee",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C108",
+      "claim": "Several previous studies of MELK function may have been compromised by off-target activity of the constructs and inhibitors that were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that, as has previously been reported for one MELK inhibitor and one set of MELK-targeting shRNA's (Huang et al., 2017), several previous studies of MELK function may have been compromised by off-target activity of the constructs and inhibitors that were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for discrepancies with prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5605ccd1-64fe-47ca-ace6-3150bdb89a89",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C109",
+      "claim": "Variability was observed between clones from the same parental cell line, and between clonal lines and the parental cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we observed variability between clones from the same parental cell line, and between clonal lines and the parental cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "720a6fc8-ba10-4df7-a084-95345825516c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C110",
+      "claim": "It is important to assess multiple independent clones and cell populations in CRISPR experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations underscore the importance of assessing multiple independent clones and cell populations in CRISPR experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the observed variability.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "6c5584fd-96c5-4502-85c7-dc9b77f0143c",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C111",
+      "claim": "'Epistasis' experiments can be widely applied to assess the on-target consequences of acutely inhibiting potential cancer drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that these 'epistasis' experiments can be widely applied to assess the on-target consequences of acutely inhibiting potential cancer drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological suggestion based on the approach used in this study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d59e151b-8f36-4d09-8eab-8eba463e2322",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C112",
+      "claim": "MELK transcript expression closely mirrors tumor mitotic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As we observed no role for MELK as either an oncogene or a cancer dependency, we sought to instead investigate whether its cell cycle-dependent expression pattern could explain its prognostic value. Consistent with this hypothesis, we discovered that MELK transcript expression closely mirrors tumor mitotic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the gene expression correlation analyses presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "c0117ed8-3a9a-4c70-8e6b-27fe3f5a7e0d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C113",
+      "claim": "Actively-growing cancers appear to up-regulate thousands of genes involved in cell cycle progression when compared to quiescent normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As actively-growing cancers appear to up-regulate thousands of genes involved in cell cycle progression when compared to quiescent normal tissue (Whitfield et al., 2006), this observation may explain why MELK is commonly over-expressed in different malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "dadc71d5-67ef-4d90-9c99-e498f764c8cf",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C114",
+      "claim": "Rapid cell division in tumors is indicative of tissue de-differentiation and aggressive disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rapid cell division in tumors is indicative of tissue de-differentiation and aggressive disease; therefore, most cell cycle-regulated genes are also associated with poor clinical outcome (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "23cfdd8d-4305-4d43-9cff-af09cace70a8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C115",
+      "claim": "Most cell cycle-regulated genes are associated with poor clinical outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rapid cell division in tumors is indicative of tissue de-differentiation and aggressive disease; therefore, most cell cycle-regulated genes are also associated with poor clinical outcome (Smith and Sheltzer, 2017; Venet et al., 2011; Gentles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ab362d0a-6c2c-4c9a-8253-21bc7c3e52d3",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C116",
+      "claim": "Controlling for cell proliferation ablates the prognostic significance of MELK expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that controlling for cell proliferation ablates the prognostic significance of MELK expression, suggesting that this link may explain its connection with outcome in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bivariate Cox analysis presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "195d8cc0-3c24-4390-9024-545197cc335a",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C117",
+      "claim": "Many cell cycle genes are suitable cancer drug targets (e.g. CDK4 and CDK6).",
+      "claim_type": "EXPLICIT",
+      "source": "While many cell cycle genes are indeed suitable cancer drug targets (e.g. CDK4 and CDK6), other genes may be up-regulated during normal cell division but dispensable for this process (Venet et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge and a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "fd71fee6-3595-421b-a808-b94366040f67",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C118",
+      "claim": "Some genes may be up-regulated during normal cell division but dispensable for this process.",
+      "claim_type": "EXPLICIT",
+      "source": "While many cell cycle genes are indeed suitable cancer drug targets (e.g. CDK4 and CDK6), other genes may be up-regulated during normal cell division but dispensable for this process (Venet et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3b103bad-8291-4df7-aba6-0fef8d8e99e8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C119",
+      "claim": "MELK is an example of a gene that is up-regulated during cell division but dispensable for this process.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that MELK is an example of the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "c74e6bd6-ed04-4bf6-a39d-aa43c3360f81",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C120",
+      "claim": "MELK-knockout mice display no observable deficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As MELK-knockout mice display no observable deficiencies, MELK's function may be redundant with other kinases (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3d297311-983d-40a1-a2f7-4921e7096b3d",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C121",
+      "claim": "MELK's function may be redundant with other kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "As MELK-knockout mice display no observable deficiencies, MELK's function may be redundant with other kinases (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of phenotype in MELK-knockout mice.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "aa9e1259-f57e-48d3-9532-2b1ca7fdfd31",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "claim_id": "C122",
+      "claim": "If MELK plays a role in cancer, it may be detectable only in very limited circumstances, and likely in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that, if MELK does play a role in cancer, it may be detectable only in very limited circumstances, and likely in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MELK overexpression does not induce anchorage-independent growth in immortalized cell lines. The authors tested whether MELK overexpression could transform Rat1-p53dd, MCF10A, and 3T3 cells by assessing soft agar colony formation. While positive controls (H-RasG12V and EGFRL858R) formed numerous colonies, MELK-overexpressing cells failed to show increased anchorage-independent growth compared to vector controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 provide strong experimental evidence from soft agar assays with appropriate positive and negative controls across multiple cell lines. Western blots confirm MELK overexpression (C27), and functional validation shows the transgenic MELK behaves like endogenous MELK (C28-C29). The failure to replicate prior findings (C26) is well-documented with quantitative data shown in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "decf6988-5618-4501-ae9b-bbfe64b58891",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MELK is dispensable for proliferation in melanoma and colorectal cancer cell lines. The authors generated MELK-knockout clones in A375 (melanoma) and DLD1 (colorectal cancer) cell lines and demonstrated that these cells proliferate at wild-type levels in vitro. Additionally, both MELK-KO and control cells showed equal sensitivity to the putative MELK inhibitor OTS167.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by proliferation data (Figure 2\u2014figure supplement 1C) and dose-response curves (Figure 2\u2014figure supplement 1D). The equal sensitivity of MELK-KO and Rosa26 cells to OTS167 provides strong evidence for off-target effects. Sequencing and western blot validation of knockouts (Figure 2\u2014figure supplement 1A-B) strengthen these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "2b61da67-dae9-4c7f-bd51-4060adc0c372",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MELK loss does not impair colony formation or anchorage-independent growth in cancer cell lines. Serial dilution colony formation assays and soft agar assays showed no consistent growth defect in MELK-KO cells compared to Rosa26 controls across multiple cancer cell lines (A375, Cal51, DLD1, MDA-MB-231).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by crystal violet staining data (Figure 2A) and soft agar quantification (Figure 2B-C). The observation of inter-clonal variability (C44-C46) is appropriately acknowledged and contextualized with prior literature (C45). The use of multiple independent clones strengthens the conclusions despite observed variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "59a27be8-1ade-4126-be9b-84cdcfb62061",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MELK is dispensable for mammosphere formation in breast cancer cells. Despite prior reports implicating MELK in breast cancer stem cell maintenance, all MELK-KO clones were capable of forming mammospheres, with some showing enhanced mammosphere formation compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by mammosphere assay data (Figure 2D-E). The observation that some MELK-KO clones showed superior mammosphere formation (C51) actually strengthens the conclusion that MELK is dispensable. The link between mammosphere formation and stem cell activity (C49) is well-established in the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "c8870563-0404-4728-9b22-00ec00cb4a4a",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MELK is not required for tumor formation or growth in vivo. Xenograft experiments with multiple MELK-KO and Rosa26 clones showed no significant growth defect in MELK-KO tumors. To address concerns about clonal variability, the authors also tested MELK-depleted cell populations (not clones), which showed equivalent or superior tumor growth compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by comprehensive xenograft data (Figure 2F-G and Figure 2\u2014figure supplement 2B). The authors appropriately address the unexpected slow growth of some clones (C56-C57) by testing non-clonal populations (C58-C59), which strengthens the overall conclusion. The observation of inter-clonal variability is consistent with prior literature (C56-C57) and does not undermine the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MELK is not required for eIF4B phosphorylation or MCL1 expression. Despite prior reports that MELK phosphorylates eIF4B to promote MCL1 translation and cell survival, western blot analysis showed normal levels of phospho-eIF4B and MCL1 in MELK-knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by western blot data across multiple cell lines (Figure 3\u2014figure supplement 1A-E). The contradiction with prior literature (C61-C62) is clearly documented. However, the authors do not provide kinase assays or rescue experiments to definitively rule out MELK's role in eIF4B phosphorylation, which would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MELK is dispensable for proliferation under metabolic stress conditions. MELK-KO cells showed wild-type growth under hypoxic, serum-deprived, and glucose-limited conditions, and exhibited normal sensitivity to ROS stress (H2O2). Additionally, ASK1 phosphorylation was maintained at normal levels in MELK-KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 are supported by dose-response curves (Figure 3A) and crystal violet staining under various stress conditions (Figure 3B-D). Western blot data showing normal ASK1 phosphorylation (C70, Figure 3\u2014figure supplement 1F) contradicts prior reports (C69) and strengthens the conclusion. The comprehensive testing across multiple stress conditions is a strength of this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "ce292ccc-573a-479c-8fb3-dbc3cff80358",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MELK loss does not sensitize cells to chemotherapy. Despite prior reports that MELK knockdown or inhibition sensitizes cells to DNA damage, MELK-KO cells showed no increased sensitivity to five common chemotherapies (idarubicin, oxaliplatin, paclitaxel, bleomycin, and fluorouracil).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by comprehensive dose-response data across multiple chemotherapies and cell lines (Figure 3E-I). The contradiction with prior literature (C73) is clearly documented. The testing of multiple drugs and cell lines strengthens the conclusion, though the authors could have tested additional DNA-damaging agents to be more comprehensive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "7da48c81-6d1a-4311-bec5-8443660fb235",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Acute pharmacological inhibition of MELK does not impair cancer cell growth or function. Using the specific MELK inhibitor HTH-01-091, the authors showed that 1 \u00b5M drug treatment caused near-complete MELK degradation without affecting colony formation, anchorage-independent growth, or chemotherapy sensitivity. Higher concentrations (>5 \u00b5M) showed toxicity that affected both MELK-KO and Rosa26 cells equally, indicating off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C85 are supported by western blot data (Figure 4A), colony formation assays (Figure 4B-C), dose-response curves (Figure 4D-E), and additional western blots (Figure 3\u2014figure supplement 1G-H). The 'epistasis' experimental design combining genetic knockout with pharmacological inhibition is a major strength, addressing concerns about compensatory adaptation in CRISPR clones (C24-C25). The equal sensitivity of MELK-KO and Rosa26 cells to high drug concentrations (C81) provides strong evidence for off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "85733b85-4316-4844-ba38-546454752529",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MELK expression correlates with mitotic activity in normal and cancer tissues. Analysis of gene expression data showed that MELK levels are highest in proliferative tissues and lowest in non-proliferative tissues. MELK expression was highly correlated with the proliferation marker MKI67 (R=0.93) across 32 tissue types, and MELK expression decreased dramatically in senescent fibroblasts while increasing 20-fold in stimulated lymphocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 are supported by comprehensive gene expression analysis across multiple datasets (Figure 5A-C). The high correlation with MKI67 (C92) and the dramatic changes in senescent fibroblasts and stimulated lymphocytes (C93-C94) provide strong evidence. The analysis appropriately uses published datasets and the conclusions are well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MELK's prognostic value in cancer is explained by its correlation with tumor proliferation. In breast cancer patient cohorts, MELK expression was significantly correlated with five proliferation markers (median R=0.82). While MELK was prognostic in univariate models (14/15 datasets), it lost prognostic significance in bivariate models controlling for proliferation (2/15 datasets). The Z-scores from MELK and proliferation models were highly correlated (R=0.78, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C104 are supported by comprehensive survival analysis across 15 breast cancer datasets (Figure 5D-G, Supplementary files 3-4). The statistical approach using Cox proportional hazards models is appropriate. The key finding that MELK loses prognostic significance when controlling for proliferation (C101-C103) is well-demonstrated through bivariate modeling and Kaplan-Meier curves stratified by proliferation level. This provides a mechanistic explanation for MELK's association with poor prognosis without requiring a functional role in cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "98aeb042-fc34-4fe3-9381-b35457854f72",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature has established MELK as a promising therapeutic target based on its overexpression in cancers, association with poor prognosis, and reported roles in various cancer-related processes. These claims summarize the existing literature that motivated the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C16, C20-C23 are all supported by citations to prior literature. These claims accurately represent the published work that established MELK as a cancer drug target. The authors appropriately cite the relevant papers and do not misrepresent the prior findings. Claim C23 is appropriately marked as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "d79bbcfd-6867-49f5-8463-82e3382a59d3",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work by the authors and others has shown that MELK knockout cells proliferate normally and that MELK inhibitors have off-target effects. These claims reference the authors' previous publication and independent replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C19, C36 are supported by citations to the authors' previous work (Lin et al., 2017) and independent replication (Huang et al., 2017). These claims accurately represent the prior findings that motivated the current, more comprehensive study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "7bea9643-d07e-4ab1-83ec-834ddf0b84f2",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological considerations regarding CRISPR and cancer biology. The authors discuss limitations of CRISPR (potential for compensatory mutations during clonal expansion) and note that some genes dispensable for in vitro proliferation may still be important for tumor progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C42, C107 are supported by citations to relevant literature and represent established knowledge in the field. These claims appropriately contextualize the experimental approach and acknowledge potential limitations. The discussion of CRISPR limitations (C24-C25) motivates the use of the acute inhibitor experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge and contextual claims about cancer biology, cell cycle regulation, and experimental methods. These claims provide context for interpreting the experimental results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C45-C46, C49, C56-C57, C66, C88-C89, C113-C115, C117-C118, C120-C121 are all supported by citations to relevant literature and represent established knowledge in cancer biology and cell biology. These claims appropriately contextualize the findings and are not misrepresentations of the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    },
+    {
+      "id": "3979b5c6-64c5-4653-9a61-7b6382df6dff",
+      "content_id": "87041e92-4898-48a3-8e0c-986fb230b7ed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Summary conclusions and methodological recommendations. The authors conclude that MELK is unlikely to be an effective therapeutic target, speculate about reasons for discrepancies with prior literature, and recommend best practices for CRISPR experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106, C112, C116, C119 represent well-supported conclusions based on the comprehensive experimental data presented. Claims C108, C110-C111 are reasonable methodological recommendations based on the observed inter-clonal variability (C109). Claim C122 is appropriately speculative about potential future findings. These conclusions are appropriately cautious and well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T23:19:47.946708Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2fb2759-742b-4a6e-a6fc-c6da385a3e92",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "ebe9be25-bd58-4f57-9d6a-7d4285e8946f",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "768b7d6f-116f-4a82-aef4-ff4fbbf9a403",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "67a8fc4f-427b-48c1-8419-4adc09ea6318",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "508d7eef-f956-4dcf-950b-d9536cff4fd8",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "2bcf3cf3-87dc-470d-a791-dc130bbefa72",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "0e95e402-859e-415c-91de-e3c90f361332",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "875a2ba0-461b-4ef0-aa1a-f4b7611dae66",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "1d46bfce-b789-4956-b213-42afec31d647",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "4ba6b7dd-662b-4583-a051-f8b7608bd56d",
+      "result_id": "717e7df4-528a-45e4-b9f3-0d30ddb2caf8"
+    },
+    {
+      "claim_id": "f4bffa01-cce4-4461-9a90-d4c2f43bb3eb",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "ec673f7e-7067-48b9-9a8a-ffcff8b0a2a4",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "e87d7c9c-5da4-48f5-953b-1a17904e4bff",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "a0bf17bf-a370-4f85-b5cc-c377c38e2ab4",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "df69e293-9ab3-48dc-a001-569de68a2f2f",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "c489ef3d-8f85-44ec-876c-d71faeb1dc79",
+      "result_id": "decf6988-5618-4501-ae9b-bbfe64b58891"
+    },
+    {
+      "claim_id": "1ddbd4f4-f738-4e1b-84b9-160bf36b11ef",
+      "result_id": "2b61da67-dae9-4c7f-bd51-4060adc0c372"
+    },
+    {
+      "claim_id": "81063e09-362a-4b0a-98f2-d963c54861e0",
+      "result_id": "2b61da67-dae9-4c7f-bd51-4060adc0c372"
+    },
+    {
+      "claim_id": "5856a092-be76-46c8-a3cc-8048adb0d10b",
+      "result_id": "2b61da67-dae9-4c7f-bd51-4060adc0c372"
+    },
+    {
+      "claim_id": "e0e14509-caad-45b0-83f4-c1abad12e4e2",
+      "result_id": "2b61da67-dae9-4c7f-bd51-4060adc0c372"
+    },
+    {
+      "claim_id": "1e66191d-4ed9-4f52-80c4-ed9cda30708e",
+      "result_id": "2b61da67-dae9-4c7f-bd51-4060adc0c372"
+    },
+    {
+      "claim_id": "aad6a182-bd68-49a0-9592-9992b9aac81c",
+      "result_id": "59a27be8-1ade-4126-be9b-84cdcfb62061"
+    },
+    {
+      "claim_id": "a9ad1d83-1f59-4906-8412-aee519e169c0",
+      "result_id": "59a27be8-1ade-4126-be9b-84cdcfb62061"
+    },
+    {
+      "claim_id": "03e293fc-4d15-42cb-8117-bbbf19a0d9a0",
+      "result_id": "59a27be8-1ade-4126-be9b-84cdcfb62061"
+    },
+    {
+      "claim_id": "9536b2fb-e76a-4d57-a546-667aeace359c",
+      "result_id": "59a27be8-1ade-4126-be9b-84cdcfb62061"
+    },
+    {
+      "claim_id": "d22492b6-71fa-4fb4-903c-82feaa7fcbd8",
+      "result_id": "59a27be8-1ade-4126-be9b-84cdcfb62061"
+    },
+    {
+      "claim_id": "f3c3c3d9-3bf1-469e-8920-ea08e5a2afc6",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "2e5aea7d-e074-40fe-aed9-6d6b85fde17d",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "7caa88d9-4bc9-4209-b350-f925c14ec9f0",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "0388183b-3495-4e97-965e-aea50453c236",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "508e056d-61e5-4b38-a7be-ec0e393fe868",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "efaad5c7-527b-456f-b905-5244239b3ea4",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "3e03e326-5478-4583-8df5-2c980678f28b",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "158eba4b-efaf-430f-9130-6ed24fd31fe1",
+      "result_id": "c8870563-0404-4728-9b22-00ec00cb4a4a"
+    },
+    {
+      "claim_id": "411a7d3b-39d0-4587-bbbe-a111b7be641f",
+      "result_id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2"
+    },
+    {
+      "claim_id": "e8ede35b-6455-419c-ab2b-a1fa80e53a2a",
+      "result_id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2"
+    },
+    {
+      "claim_id": "fb781458-4296-42f9-8399-771a01c43d67",
+      "result_id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2"
+    },
+    {
+      "claim_id": "b61a6645-1126-4065-9021-8a168d657b59",
+      "result_id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2"
+    },
+    {
+      "claim_id": "1fbfc759-1b7c-43b9-9508-66c0df772e20",
+      "result_id": "3076fad9-a032-48d3-a7b4-899b8f8fcdb2"
+    },
+    {
+      "claim_id": "2c665ff1-d1f0-46f7-8131-7109ecc40e7a",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "561f9a0e-730b-4cde-a366-56f49e74ea40",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "9d239809-b6c6-4509-9397-3d1ae2447edb",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "ccfedec6-d19a-4c3d-806a-38e9a1341c34",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "149adbd6-8562-4096-9b34-c06fcc76746b",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "5ed27de1-6096-487a-b4ea-e4c29bfa6381",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "260f1dfb-4716-4edc-aaaf-975eddaac724",
+      "result_id": "5d80306c-6d21-49cc-aef3-029ee9c1a79a"
+    },
+    {
+      "claim_id": "30426a17-724a-4527-ad11-265de6eb0f9f",
+      "result_id": "ce292ccc-573a-479c-8fb3-dbc3cff80358"
+    },
+    {
+      "claim_id": "39415ac8-61d6-40e0-b173-a7de5ea3f393",
+      "result_id": "ce292ccc-573a-479c-8fb3-dbc3cff80358"
+    },
+    {
+      "claim_id": "5b31b7e5-f258-424c-baed-88eba03a17c6",
+      "result_id": "ce292ccc-573a-479c-8fb3-dbc3cff80358"
+    },
+    {
+      "claim_id": "d63b37a2-a1fd-4d39-bf2b-8172c1498659",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "437854cd-7477-43c1-9416-f68bf35a03c9",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "28c04872-0c4c-41da-803b-5c1ad9bb642d",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "301f9a0b-da8a-4647-8a5f-9aa0a32d7864",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "633149e9-c25d-4c1b-a1a2-79f96d1fa275",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "2dec2288-409f-4373-a377-e534857c7f8b",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "5a194949-1b17-42a6-a4fb-c189e81519ce",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "86b30998-81bb-48a7-816f-67d0d24474f8",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "662c0e19-d44c-411e-8720-c78c69840f56",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "a1445193-5426-4f04-bbc0-3d47b264cd68",
+      "result_id": "7da48c81-6d1a-4311-bec5-8443660fb235"
+    },
+    {
+      "claim_id": "79d4e237-2b20-4504-87f0-98ae930ca611",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "b06ef5b2-efed-4126-8589-09f16c5d153b",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "5f0a27b2-7373-48f4-bdb2-070b48b10c71",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "87b6f668-4cd2-4a9c-b903-b4dd78717d8f",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "ba8cea46-fd6d-4b8e-970f-4cf639a931ea",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "70b3b8da-8d0b-498a-96f9-09faf1466c14",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "1ce8984e-8f68-4d1a-a1bf-b5558272b3d5",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "3fd4b8d1-65fc-440c-99cb-c96d9a7a37f3",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "69d96bdb-1b62-44c9-bbdb-6956b8c7b1ec",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "5e9cf464-6a12-4173-a0c5-72e3766fd128",
+      "result_id": "85733b85-4316-4844-ba38-546454752529"
+    },
+    {
+      "claim_id": "455076ba-8e9c-4109-8001-f8a5ad4ad328",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "34d622ed-a3a8-4c7f-ad12-909c68a63b7f",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "a4e79fa1-cf45-4fa1-8787-853a1cbdd1c4",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "300b5152-b7b2-4511-aa4a-617b8ab852c7",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "eeb9548d-db0d-4fc2-a120-b4f0d1f97be1",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "b1b20c83-482e-4122-aae5-194b8c81fab7",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "1144ab93-56cb-406c-9a39-28d4c20d2cf3",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "92133066-06fa-452f-a478-f3e0a1264580",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "4a624684-e030-4cba-a4e1-f8f98eb2904f",
+      "result_id": "b9dbf27c-c26c-4a80-a0ab-5c8af8ae49bd"
+    },
+    {
+      "claim_id": "4a747868-d03a-44da-b87a-f9fc92aa25f8",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "febcb6fa-5d86-4f0a-bae7-68d89037adec",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "f0afa287-1bcf-498b-87d3-9f832545636e",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "801eebde-8e9d-4f58-9453-e773b91a8fc9",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "2867dbb1-e6a3-4157-bbc7-b75a81818a3b",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "4ca57d0c-d8ed-42f0-a97d-07d4da877748",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "1114e9d5-c234-472d-9fe4-83cf7ab8b1c3",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "fee9a62c-6980-4539-962b-9adc5284e2dc",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "d8cd8580-988f-4dec-9271-7fcbfdfa9469",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "db715ac1-6c85-47fc-b32c-aa627e674c66",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "8eaa4b61-2146-4a5c-b3b2-47c27adbc90b",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "81c9fabe-3604-46be-a124-9c68fefdbaaa",
+      "result_id": "98aeb042-fc34-4fe3-9381-b35457854f72"
+    },
+    {
+      "claim_id": "5aafa115-e913-4ba8-a11c-ac0ed650030c",
+      "result_id": "d79bbcfd-6867-49f5-8463-82e3382a59d3"
+    },
+    {
+      "claim_id": "f9d2cb12-5425-48b8-9516-04743b92c741",
+      "result_id": "d79bbcfd-6867-49f5-8463-82e3382a59d3"
+    },
+    {
+      "claim_id": "b346b71d-8971-4244-894d-d6b387b8b25e",
+      "result_id": "d79bbcfd-6867-49f5-8463-82e3382a59d3"
+    },
+    {
+      "claim_id": "47045e2a-124b-40be-86d6-b4784587a436",
+      "result_id": "d79bbcfd-6867-49f5-8463-82e3382a59d3"
+    },
+    {
+      "claim_id": "f4bffa01-cce4-4461-9a90-d4c2f43bb3eb",
+      "result_id": "d79bbcfd-6867-49f5-8463-82e3382a59d3"
+    },
+    {
+      "claim_id": "832562ce-ebde-43cd-b0ac-c8bcd936f725",
+      "result_id": "7bea9643-d07e-4ab1-83ec-834ddf0b84f2"
+    },
+    {
+      "claim_id": "cec0bffe-f49e-4254-a82c-f32eba2477ab",
+      "result_id": "7bea9643-d07e-4ab1-83ec-834ddf0b84f2"
+    },
+    {
+      "claim_id": "3e13d31e-1b52-49a9-b0e3-5dd8b615459c",
+      "result_id": "7bea9643-d07e-4ab1-83ec-834ddf0b84f2"
+    },
+    {
+      "claim_id": "cf212ec6-3c03-411f-89c8-2bc9de6e8e93",
+      "result_id": "7bea9643-d07e-4ab1-83ec-834ddf0b84f2"
+    },
+    {
+      "claim_id": "508d7eef-f956-4dcf-950b-d9536cff4fd8",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "2bcf3cf3-87dc-470d-a791-dc130bbefa72",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "5856a092-be76-46c8-a3cc-8048adb0d10b",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "e0e14509-caad-45b0-83f4-c1abad12e4e2",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "a9ad1d83-1f59-4906-8412-aee519e169c0",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "0388183b-3495-4e97-965e-aea50453c236",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "508e056d-61e5-4b38-a7be-ec0e393fe868",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "2c665ff1-d1f0-46f7-8131-7109ecc40e7a",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "5f0a27b2-7373-48f4-bdb2-070b48b10c71",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "87b6f668-4cd2-4a9c-b903-b4dd78717d8f",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "c0117ed8-3a9a-4c70-8e6b-27fe3f5a7e0d",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "dadc71d5-67ef-4d90-9c99-e498f764c8cf",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "23cfdd8d-4305-4d43-9cff-af09cace70a8",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "195d8cc0-3c24-4390-9024-545197cc335a",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "fd71fee6-3595-421b-a808-b94366040f67",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "c74e6bd6-ed04-4bf6-a39d-aa43c3360f81",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "3d297311-983d-40a1-a2f7-4921e7096b3d",
+      "result_id": "adf40067-29c6-4dd8-a3e9-7d7a9c90a1e7"
+    },
+    {
+      "claim_id": "e8003c8c-9374-46c0-a25d-91b3bf0ba724",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "435eb873-4830-4de3-a9a4-12dd4f127f01",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "0e1830b3-9ff5-4978-9f4d-42786971dcee",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "5605ccd1-64fe-47ca-ace6-3150bdb89a89",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "720a6fc8-ba10-4df7-a084-95345825516c",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "6c5584fd-96c5-4502-85c7-dc9b77f0143c",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "d59e151b-8f36-4d09-8eab-8eba463e2322",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "ab362d0a-6c2c-4c9a-8253-21bc7c3e52d3",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "3b103bad-8291-4df7-aba6-0fef8d8e99e8",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    },
+    {
+      "claim_id": "aa9e1259-f57e-48d3-9532-2b1ca7fdfd31",
+      "result_id": "3979b5c6-64c5-4653-9a61-7b6382df6dff"
+    }
+  ],
+  "comparisons": []
+}

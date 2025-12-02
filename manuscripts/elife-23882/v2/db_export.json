@@ -1,0 +1,2086 @@
+{
+  "submission": {
+    "id": "dacaccce-c8d6-4ab1-95af-caf0aa0eeb82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:15:32.186842Z",
+    "updated_at": "2025-12-01T20:15:32.186842Z"
+  },
+  "content": [
+    {
+      "id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "submission_id": "dacaccce-c8d6-4ab1-95af-caf0aa0eeb82",
+      "content_type": "manuscript",
+      "content_text": "# Modeling of axonal endoplasmic reticulum network by spastic paraplegia proteins\n\n## Authors\n\n- Belgin Yal\u00e7\u0131n<sup>1</sup>\n- Lu Zhao<sup>1</sup> ([ORCID: 0000-0001-7528-4034](https://orcid.org/0000-0001-7528-4034))\n- Martin Stofanko<sup>1</sup>\n- Niamh C O'Sullivan<sup>1</sup>\n- Zi Han Kang<sup>1</sup>\n- Annika Roost<sup>1</sup>\n- Matthew R Thomas<sup>1</sup>\n- Sophie Zaessinger<sup>1</sup>\n- Olivier Blard<sup>1</sup>\n- Alex L Patto<sup>1</sup>\n- Anood Sohail<sup>1</sup>\n- Valentina Baena<sup>2</sup>\n- Mark Terasaki<sup>2</sup>\n- Cahir J O'Kane<sup>1</sup> ([ORCID: 0000-0002-3488-2078](https://orcid.org/0000-0002-3488-2078)) \u2020\n\n### Affiliations\n\n1. Department of Genetics University of Cambridge Cambridge United Kingdom\n2. Department of Cell Biology University of Connecticut Health Center Farmington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxons contain a smooth tubular endoplasmic reticulum (ER) network that is thought to be continuous with ER throughout the neuron; the mechanisms that form this axonal network are unknown. Mutations affecting reticulon or REEP proteins, with intramembrane hairpin domains that model ER membranes, cause an axon degenerative disease, hereditary spastic paraplegia (HSP). We show that Drosophila axons have a dynamic axonal ER network, which these proteins help to model. Loss of HSP hairpin proteins causes ER sheet expansion, partial loss of ER from distal motor axons, and occasional discontinuities in axonal ER. Ultrastructural analysis reveals an extensive ER network in axons, which shows larger and fewer tubules in larvae that lack reticulon and REEP proteins, consistent with loss of membrane curvature. Therefore HSP hairpin-containing proteins are required for shaping and continuity of axonal ER, thus suggesting roles for ER modeling in axon maintenance and function.\n\n## Introduction\n\nAxons allow long-range bidirectional communication in neurons. They carry action potentials along their plasma membrane from dendrites and cell body to presynaptic terminals; and they transport cell components and signaling complexes using motor proteins, anterogradely and retrogradely. Another potential route for communication along axons is endoplasmic reticulum (ER); axons possess a network of ER tubules, which appears physically continuous both locally (Tsukita and Ishikawa, 1976; Villegas et al., 2014) and with ER throughout the neuron (Lindsey and Ellisman, 1985; Terasaki et al., 1994). The physical continuity of ER and its ensuing potential for long-distance communication has been likened to a \u2018neuron within a neuron\u2019 (Berridge, 1998).\n\nAxonal ER appears mostly tubular and smooth, with some cisternae (Tsukita and Ishikawa, 1976; Lindsey and Ellisman, 1985; Villegas et al., 2014). Some rough ER is likely to be present too: numerous mRNAs are found in both growing and mature axons (Zivraj et al., 2010; Shigeoka et al., 2016), and local axonal translation can occur in response to injury (Ben-Yaakov et al., 2012; Perry et al., 2012). However, rough ER sheets (Tsukita and Ishikawa, 1976; Villegas et al., 2014), and markers of protein export and folding that are characteristic of rough ER (R\u00f6per, 2007; O'Sullivan et al., 2012), are relatively sparse in mature axons. Axonal ER therefore likely has major roles other than protein export; these could include lipid biosynthesis (Tidhar and Futerman, 2013; Vance, 2015), calcium homeostasis and signaling (Ross, 2012), and coordination of organelle physiology (Phillips and Voeltz, 2016). The continuity of the ER network suggests that some of these roles might have long-range as well as local functions; indeed, an ER-dependent propagating calcium wave is seen after axotomy of Caenorhabditis elegans or mammalian dorsal root ganglion neurons (Ghosh-Roy et al., 2010; Cho et al., 2013).\n\nA strong hint of the importance of ER in axons is found in Hereditary Spastic Paraplegia (HSP), a group of axon degeneration disorders characterized by progressive spasticity and weakness of the lower limbs (Blackstone et al., 2011; Blackstone, 2012). Mutations affecting spastin, atlastin-1, reticulon-2, REEP1 and REEP2 account for most cases of autosomal dominant \u2018pure\u2019 HSP (Hazan et al., 1999; Zhao et al., 2001; Z\u00fcchner et al., 2006; Montenegro et al., 2012; Esteves et al., 2014). These proteins share a common feature of one or two hydrophobic hairpin-loops inserted in the ER membrane, promoting ER membrane curvature in a process termed hydrophobic wedging (Voeltz et al., 2006). Proteins of the REEP and reticulon families localize preferentially to tubular or smooth ER, and their loss results in disruption of ER tubular organization (Shibata et al., 2006; Voeltz et al., 2006; Park et al., 2010; Shibata et al., 2010); they may also contribute to modeling of rough ER sheets by stabilizing their curved edges (Shibata et al., 2009).\n\nWhat is the link between ER modeling and axon structure and function? HSP-causing mutations often appear to cause loss of protein expression or function (Beetz et al., 2013; Novarino et al., 2014), and the ability of hairpin-loop proteins to form homomeric and heteromeric complexes (Shibata et al., 2008) allows some point mutations to have dominant negative effects (Z\u00fcchner et al., 2006; Beetz et al., 2012). Therefore loss of normal ER modeling appears to compromise axon maintenance and function. Given the roles of hairpin-loop proteins in ER modeling, we aimed to test the model that hairpin-loop-containing HSP proteins organize the axonal ER network. Since reticulon and REEP family proteins are redundantly required for most peripheral ER tubules in yeast (Voeltz et al., 2006), we focus on the requirement for these two families in axons. We previously showed that knockdown of the Drosophila reticulon Rtnl1 causes expansion of epidermal ER sheets, and partial loss of smooth ER marker from distal but not proximal motor axons (O'Sullivan et al., 2012). Here we show that REEP proteins have similar roles. We also show that simultaneous loss of reticulon and REEP family members leads to a range of axonal ER phenotypes, including a reduced network with fewer and larger tubules, and occasional gaps in the network. Our work implicates hairpin-loop-containing HSP proteins as important players in the axonal ER network, and suggests further models for how the network is organized.\n\n## Results\n\n### Two widely expressed REEP proteins, ReepA and ReepB, localize to the endoplasmic reticulum\n\nThe reticulon and REEP families of double-hairpin-containing proteins are collectively responsible for formation or maintenance of most peripheral ER tubules in yeast (Voeltz et al., 2006). We previously showed that the Drosophila reticulon ortholog Rtnl1 was strongly localized in axons, and that its knockdown caused partial loss of a smooth ER marker in posterior larval segmental axons (O'Sullivan et al., 2012). To test the roles of Drosophila REEP proteins in axonal ER localization, we first dissected the ortholog relationships between the six Drosophila and six human REEP proteins. Multiple sequence alignment of mammalian and Drosophila REEP protein sequences suggested that CG42678 was the single Drosophila ortholog of mammalian REEP1-REEP4 (Figure 1A). CG42678 has previously been designated Reep1 (http://flybase.org/reports/FBgn0261564.html), but we propose the name ReepA to reflect its orthology to the four mammalian genes REEP1-REEP4. Mammalian REEP5 and REEP6 appeared to share two Drosophila orthologs, CG8331 and CG4960 (Figure 1). We designated CG8331 as ReepB because of its widespread expression (www.flyatlas.org; Chintapalli et al., 2007) and slower rate of evolutionary sequence divergence (Supplementary file 1). We excluded CG4690 and three additional Drosophila REEP genes from further study, since their expression was restricted to testes and larval fat body (www.flyatlas.org; Chintapalli et al., 2007), and their faster rate of evolutionary sequence divergence (Supplementary file 1, and reflected in longer branch lengths in Figure 1A), suggesting poorly conserved function.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig1-v2.jpg)\n\n**Figure 1.:** (A) A dendrogram based on ClustalW sequence alignment of Drosophila and human REEP proteins shows two branches corresponding to human REEP1-4 (CG42678) and human REEP5-6. Broken lines represent Drosophila REEP proteins that are evolving rapidly (Supplementary file 1), reflected by longer branch lengths. Sequences used are NP_075063.1, NP_057690.2, NP_001001330.1, NP_079508.2, NP_005660.4, NP_612402.1, NP_726266.1, NP_610936.2, NP_651429.1, NP_611831.2, NP_572730.1, NP_726366.1. (B) Rtnl1 genomic and transcript map, showing the region deleted in Rtnl1\u2212 by excision of P-element NP7026 (Wakefield and Tear, 2006; Figure 1\u2014figure supplement 1), the RHD domain (Pfam 02453) and its coordinates in protein isoform G, the Rtnl1::YFP exon trap insertion CPTI001291 (green triangle), and the fragment targeted by GD RNAi 7866. Map and coordinates are from the Drosophila Genome Browser (www.flybase.org, version R6.04), here and in subsequent panels; light regions in transcripts represent coding regions, dark shaded regions represent untranslated regions. (C) ReepA genomic and transcript map showing the region deleted in ReepA\u2212 by excision of P-element CB-0501\u20133, the position of the DP1 domain (Pfam 03134) and its coordinates in protein isoforms H and J. GFP insertion sites for ReepA1::GFP, ReepA2::GFP and ReepA3::GFP fusions are shown with green triangles. (D) ReepB genomic and transcript map showing the region deleted in ReepB\u2212 by excision of P-element EY05130, the position of the DP1 domain (Pfam 03134) and its coordinates in protein isoforms A and D). (E\u2013I) Confocal sections showing localization of ReepA::GFP isoforms and ReepB::GFP. (E) Overlap of ReepA1::GFP and ReepB::GFP with anti-KDEL labeling in larval epidermal cells. To facilitate display of weaker ReepA1::GFP, the GFP channel in wild-type control (WT) and ReepA::GFP images has been brightened four times as much as for ReepB::GFP. (F) Expression of ReepA3::GFP and ReepB::GFP in third instar ventral nerve cord. The GFP channels for WT and ReepA::GFP have been brightened by twice as much as for ReepB::GFP. VNCs are outlined with yellow dashed lines. Arrowheads show ReepB::GFP extending into peripheral nerves. (G) A single confocal section of a peripheral nerve, showing ReepB::GFP localized continuously along its length. (H) Double labeling of an NMJ for ReepB::GFP and the mainly postsynaptic marker Dlg, showing ReepB::GFP in an axon emerging from nerve bundles (arrowhead) to extend to the NMJ, as well as in axons traversing the muscle surface (arrow); note the dispersed ReepB::GFP staining also in the underlying muscle. (I) Double labeling of ReepA::GFP and ReepB::GFP lines for GFP and Dlg (mainly postsynaptic) shows presynaptic expression of ReepB::GFP. (J) GFP expression in a wildtype negative control (WT), or from Rtnl1::GFP expressed in two closely apposed motor neurons by m12-GAL4. Scale bars 10 \u00b5m, except F, 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** BLASTN searches of the Drosophila genome, using the sequences of (A) Rtnl11, (B) ReepA541 and (C) ReepB48 mutations as queries, show the coordinates of each molecular lesion in the genome, as gaps in alignments between mutant and genomic sequences. The ReepA541 and ReepB48 sequences highlighted in yellow show P element footprints left at the excision sites.\n\nA Rtnl1::YFP exon trap, Rtnl1CPTI001291 (Figure 1B) was previously shown to localize to ER, including in axons (O'Sullivan et al., 2012). To study localization of ReepA and ReepB, we recombineered C-terminal GFP-tagged versions of these (Figure 1C,D) using P[acman] genomic clones (Venken et al., 2009). For ReepA, we generated EGFP fusions at three different C-termini (Figure 1C), that we called ReepA1::GFP (for protein isoforms D, E, G), ReepA2::GFP (for protein isoforms H, I, J, K) and ReepA3::GFP (for protein isoforms L, R, S). In epidermal cells, we detected weak expression of ReepA1::GFP, but not of the other ReepA::GFP fusions; ReepB::GFP showed stronger expression still, and both fusions overlapped with an ER marker (KDEL; Figure 1E), similar to REEP proteins in other organisms (Voeltz et al., 2006; Shibata et al., 2008; Park et al., 2010). ReepB::GFP was also more strongly expressed in third instar larval CNS than ReepA3::GFP, which was the only ReepA::GFP fusion that we detected there (Figure 1F). ReepB::GFP, but no ReepA::GFP fusion, was also detected in segmental nerves (Figure 1F,G), and in individual axons emerging from nerve bundles leading to the NMJ (Figure 1H). ReepB::GFP, but none of the ReepA::GFP fusions, localized as a mostly continual structure along the length of presynaptic terminals of neuromuscular junctions (NMJs) (Figure 1H,I). We did not have a UAS-ReepB construct available, but UAS-Rtnl1::GFP (Rao et al., 2016) expressed in two adjacent motor neurons using m12-GAL4 (Xiong et al., 2010) also showed strong axonal localization. We therefore conclude that ReepB::GFP localizes in axonal and presynaptic ER, similar to Rtnl1::YFP (O'Sullivan et al., 2012), but that none of the ReepA::GFP fusions is detectable in axonal or presynaptic ER.\n\nAn Rtnl1 loss-of-function mutant, Rtnl11 (Wakefield and Tear, 2006), hereafter referred to as Rtnl1\u2212, lacks the hydrophobic hairpin loop domain (RHD region) that induces ER membrane curvature (Figure 1B; Figure 1\u2014figure supplement 1). We also used P-transposase-mediated imprecise excision to generate ReepA\u2212 and ReepB\u2212 mutants, both of which lack most of the curvature-mediating DP1 hairpin domains (Figure 1B,C; Figure 1\u2014figure supplement 1).\n\n### Rtnl1\u2212 and ReepA\u2212 ReepB\u2212 larval epidermal cells display an abnormal ER network\n\nFirst, we asked whether Drosophila reticulon and REEP proteins contribute to ER network organization in third instar larval epidermal cells; Rtnl1 knockdown leads to a more diffuse ER network organization and expansion of ER sheets in these cells, compared to wild-type controls (O'Sullivan et al., 2012). Rtnl1\u2212 mutant larvae also showed loss of ER network organization (Figure 2A). Intensity of KDEL labeling along a line from the nucleus to cell periphery displayed fluctuating intensity, reflecting the reticular distribution of KDEL in wild-type larvae, but less fluctuation in Rtnl1\u2212 larvae; overall levels of KDEL remained unchanged (Figure 2A). Similarly, loss of both ReepA and ReepB, but not loss of either gene alone, made KDEL levels in larval epidermal cells fluctuate less than in controls. Mean intensity of KDEL staining was decreased in all ReepA and ReepB mutant genotypes, and fluctuation in intensity was increased in ReepB\u2212 larvae (Figure 2B). Since confocal analysis suggests altered organization of ER in epidermal cells, but does not have sufficient resolution to reveal the details of how it is altered, we performed electron microscopy of epidermal cells. This revealed that ReepA\u2212 ReepB\u2212 double mutant epidermal cells showed longer ribosome studded sheet ER profiles, compared to controls, and to ReepA\u2212 and ReepB\u2212 single mutants (Figure 2C). This mutant phenotype is similar to, although less severe than loss of Rtnl1 (O'Sullivan et al., 2012). ReepA\u2212 ReepB\u2212 mutants also showed increased ER stress in epidermal cells (Figure 2D) but not in CNS (Figure 2E). Therefore, Rtnl1 and REEP proteins shape the ER network in Drosophila, and their loss disrupts ER organization, causing longer ER sheet profiles.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig2-v2.jpg)\n\n**Figure 2.:** (A) KDEL distribution in third instar larval epidermal cells appears diffuse in Rtnl1\u2212 larvae compared to a more reticular staining in wild-type (WT) larvae. Micrographs show 1.5 \u00b5m z-projections of confocal sections. KDEL intensity along yellow lines from nuclear envelope to the cell periphery shows less fluctuation in Rtnl1\u2212 (blue dotted line on line graph) than in WT larvae (black line on line graph). Fluctuation of intensity is quantified using the local normalized variance of intensity (variance/mean for rolling 10-pixel windows) over a 12 \u00b5m line for each cell. n\u00a0=\u00a061 epidermal cells from 12 larvae, 3\u20135 cells from each larva, from 3\u00a0independent experiments. (B) KDEL distribution in third instar larval epidermal cells shows less spatial fluctuation in ReepA\u2212 ReepB\u2212 double mutant larvae compared to ReepA+ (WT), and ReepA\u2212 and ReepB\u2212 single mutant larvae. This is confirmed by quantification as in A); overall KDEL intensity is reduced in all ReepA and ReepB mutant genotypes. n\u00a0=\u00a045\u201361 epidermal cells in total from 12 to 16 different larvae, 3\u20135 cells from each larva, from 6 independent experiments. Intensity datapoints are experimentwise averages of multiple larvae, compared by paired t-tests, since larva-wise data were too significantly different to pool across experiments in this case. (C) Electron micrographs show increased ER sheet profile length in ReepA\u2212 ReepB\u2212 double mutant third instar larval epidermal cells compared to single ReepA\u2212 and ReepB\u2212 mutants and controls. Arrowheads, ER sheets; M, mitochondria. (n\u00a0=\u00a056\u201358 cells in total from three independent larvae, 18\u201319 cells from each. (D,E) ReepA\u2212 ReepB\u2212 double mutant larvae have an increased ER stress response compared to a ReepA+\u00a0(WT) control, measured by Xbp1::GFP expression, in larval epidermis (D) but not in neuronal cell bodies (E). Graphs show quantification of Xbp1::GFP staining intensity relative to controls. (n\u00a0=\u00a012\u201315 larvae). All graphs show individual datapoints and mean\u00a0\u00b1SEM. Occasional outlier datapoints off the top of the scale are omitted from graphs but included in statistical analyses. ns, p>0.05; *p<0.02; **p<0.005; ***p<0.0003; ****p<0.0001, two-tailed Student\u2019s t-test. Scale bars: A, B,\u00a0D,\u00a0E, 10 \u00b5m; C, 0.5 \u00b5m).\n\n### Loss of Rtnl1 or ReepB causes partial loss of axonal ER marker from posterior axons\n\nTo understand the roles of reticulon and REEPs in axonal ER organization, we labeled axonal ER by expressing Acsl::myc (O'Sullivan et al., 2012) in two adjacent motor neurons using m12-GAL4 (Xiong et al., 2010). Loss of Rtnl1 caused partial loss of Acsl::myc from posterior (segment A6) axons, but not from anterior axons (segment A2); it also caused Acsl::myc staining to appear more irregular in posterior but not anterior axons, reflected in a higher coefficient of variation (SD/mean) of Acsl::myc staining intensity along the length of posterior axons lacking Rtnl1, compared to wild-type (Figure 3A). These Rtnl1 loss-of-function phenotypes were found either on targeted knockdown of Rtnl1 in these motor axons or in Rtnl1\u2212 mutant larvae, and the Rtnl1\u2212 mutant phenotypes could be partially rescued by one copy of an Rtnl1Pacman genomic clone (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig3-v2.jpg)\n\n**Figure 3.:** (A) Effects of Rtnl1 loss on ER, visualized by Acsl::myc expressed in two adjacent motor axons using m12-GAL4. Images show effects of Rtnl1 knockdown, Rtnl1\u2212 mutation, rescue of Rtnl1\u2212 by Rtnl1Pacman and respective ReepA+ control (WT) axons. Graphs show mean staining intensity (top graphs) or coefficient of variation of intensity (bottom graphs) as a measurement of staining variability along the length of each axon. Rtnl1 loss leads to partial loss of Acsl::myc in posterior but not anterior axons (top graphs), and to some disorganization of posterior axonal ER seen by increased coefficient of variation of Acsl::myc staining intensity. There is partial rescue of Rtnl1 phenotypes by one copy of a Rtnl1Pacman genomic clone. n\u00a0=\u00a015\u201320 larvae per genotype pooled from 5 independent experiments for RNAi; n\u00a0=\u00a024\u201336 larvae per genotype from 10 to 12 independent experiments for Rtnl1\u2212 mutant. Graphs show individual datapoints with mean\u00a0\u00b1SEM; ns, p>0.05; *p<0.03; **p<0.005; two-tailed unpaired Student\u2019s t-test; two-tailed paired Student\u2019s t-test was used when larva-wise data were too significantly different across experiments (p<0.05, ANOVA) to pool. (B) Effects of ReepA or ReepB loss on axonal ER. ReepB knockdown or ReepB\u2212 mutation, but not ReepA mutation, causes partial loss of smooth ER marker Acsl::myc in posterior but not in anterior motor axons. The ReepB\u2212 phenotype can be mostly rescued by one copy of a genomic ReepB::GFP clone. A ReepA\u2212 ReepB\u2212 double mutant shows a similar phenotype to a ReepB\u2212 single mutant. ReepA\u2212 ReepB\u2212 double mutant, but not single ReepA\u2212 or ReepB\u2212 mutants, show increased coefficient of variation of Acsl::myc staining levels in posterior axons; n\u00a0=\u00a07\u201347 larvae from 4 to 11 independent experiments. All graphs show individual datapoints with mean\u00a0\u00b1SEM; occasional outlier datapoints off the top of the scale are omitted from graphs but included in statistical analyses. ns, p>0.05; *p<0.04 **p<0.01. ReepB RNAi was analyzed using two-tailed unpaired Student\u2019s t-tests; multiple comparisons of ReepA and ReepB mutant genotypes were analyzed by ANOVA followed by post-hoc Tukey HSD tests. Scale bars, 10 \u00b5m.\n\nReepA\u2212 mutants showed no loss of Acsl::myc from axons. Similar to Rtnl1 loss of function, ReepB\u2212 mutants showed partial loss of Acsl::myc from posterior but not anterior motor axons (Figure 3B); this phenotype was partially rescued with one copy of a genomic ReepB::GFP clone, and was also observed on ReepB knockdown in m12-GAL4-expressing neurons (Figure 3B). A ReepA\u2212 ReepB\u2212 double mutant showed loss of Acsl::myc from posterior axons, that was similar to that seen in ReepB\u2212 mutants (Figure 3B). ReepA\u2212 ReepB\u2212 double mutant larvae, but not ReepA\u2212 single mutants, showed an increased coefficient of variation of Acsl::myc staining intensity in posterior but not in anterior axons; ReepB mutant and knockdown axons both showed a slight increase in coefficient of variation in posterior axons, although this was not significant for ReepB mutants (Figure 3B). In summary, loss of either Rtnl1 or at least ReepB alters axonal ER distribution in posterior motor axons, therefore supporting roles for these two protein families in axonal ER organization; in contrast loss of ReepA has either subtle or no effects.\n\n### Rtnl1\u2212 and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutants disrupt axon ER integrity and axon transport\n\nSince loss of both reticulon and REEP families in yeast removes most peripheral ER tubules (Voeltz et al., 2006), we tested whether loss of both protein families in Drosophila might have similarly severe effects on axonal ER. Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants were viable and fertile as adults, but survived poorly beyond two weeks of adulthood, compared to 4\u20135 weeks for wild-type adults. Triple mutant larvae showed increased fluctuation of Acsl::myc staining intensity along motor axons compared to wild-type, mainly in middle parts (segment A4 and A5) of longer axons. At its most extreme, this manifested as fragmentation of Acsl::myc labeling, which was never seen in wild-type axons (Figure 4A,B). When gaps in labeling were found in the central regions of axons, labeling in the anterior and posterior parts of the same axons was usually continuous (Figure 4A). Double labeling of plasma membrane (CD4::tdGFP) and axonal ER (Acsl::myc) showed no effect on axonal plasma membrane in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant compared to control axons (Figure 4\u2014figure supplement 1), implying that the phenotype was limited to ER and did not affect axon integrity. To compare genotypes and labels, we quantified irregular labeling along a 45 \u00b5m stretch of axon traversing the larval A4/A5 region in two ways: first we measured gaps in labeling, defined as intensity below a threshold that could consistently distinguish labeled axons above background labeling in the nerve; and second, we quantified the coefficient of variation of labeling intensity along the axon (Figure 4C,D). Rtnl1 loss-of-function axons, but not ReepA\u2212 ReepB\u2212 mutant axons, also showed a mild ER fragmentation phenotype (Figure 4A,B). Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 larvae also showed a fragmentation phenotype similar to Rtnl1\u2212 ReepA\u2212 ReepB\u2212, suggesting that loss of Rtnl1 is essential for it (Figure 4B). Rtnl1\u2212 ReepB\u2212 double mutant axons also showed a similar phenotype to Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants. Therefore, loss of Rtnl1 causes a mild irregular organization of axonal ER, and this phenotype is exacerbated by loss of ReepB, with no detectable contribution of ReepA loss; and loss of both Reep proteins has no apparent effect.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig4-v2.jpg)\n\n**Figure 4.:** (A) Rtnl1\u2212 larvae and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae sometimes show fragmented axonal ER labeling in the middle parts (segment A5) of long motor axons that express Acsl::myc under control of m12-GAL4. Anterior (segment A2) and posterior (segment A6) portions of the same motor axons show continuous ER labeling. Arrowheads show gaps in Acsl::myc staining; brighter versions of the same images show gaps in staining in mutants but not wild-type\u00a0(WT), even when brightness of remaining staining is saturating. (B) Panels show three examples of the range of Acsl::myc distributions found in the middle parts of long motor axons of each genotype of ReepA+ (WT), Rtnl1\u2212, Rtnl1\u2212 rescued with a Rtnl1Pacman construct, ReepA\u2212 ReepB\u2212 and Rtnl1\u2212 ReepB\u2212 double mutants, Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant, and Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 larvae. A variety of phenotypes, from continuous to fragmented Acsl::myc labeling, are found in genotypes that lack Rtnl1, and tend to be more severe in genotypes that also lack ReepB. Insets show examples of gaps in ER continuity (arrowheads) at higher magnification. Scale bars 10 \u00b5m, and 5 \u00b5m in higher zoom images. (C) Percentages of a 45 \u00b5m length in the middle (A4/A5 segment) of each axon that lacks Acsl::myc staining, using an intensity threshold of 20 on a scale of 0\u2013255. Individual axons are plotted, together with median and interquartile range; comparisons use Mann-Whitney U-tests. All genotypes that lack Rtnl1 show more gaps than WT; Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants do not differ from Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 or Rtnl1\u2212 ReepB\u2212 double mutants, but are significantly more severe than Rtnl1\u2212 single mutants. (D) The coefficient of variation of Acsl::myc labeling in middle axon portions is increased in genotypes lacking Rtnl1, relative to controls. Graphs show individual datapoints with mean\u00a0\u00b1SEM; occasional outlier datapoints off the top of the scale are omitted from graphs but included in statistical analyses. Comparison between Rtnl1\u2212 and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant genotypes was analyzed by two-tailed Student\u2019s t-test, other multiple comparisons by ANOVA followed by Dunnett\u2019s T3 test. ns, p>0.05; *p<0.04; **p<0.01; ***p<0.0005; ****p<0.0001; individual axons are plotted from 3 to 20 independent experiments, each with 2\u20133 different larvae for each genotype.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Coefficient of variation for plasma membrane labeling along axon length is unchanged in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant compared to control (WT) axons, whereas the ER to plasma membrane ratio of the coefficient of variation is increased. Higher zoom images of the boxed areas show gaps (yellow arrowheads) and brightly labeled axonal ER accumulations. Graphs show mean\u00a0\u00b1SEM; *p<0.02, two-tailed Student\u2019s t-test; n\u00a0=\u00a05 different larvae from 3 independent experiments.\n\nTo confirm the physical continuity of ER in normal axons, and that gaps in Acsl::myc staining in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons reflect physical gaps in the ER network, we also visualized ER using fluorescent protein markers. The lipase CG9186::GFP (Thiel et al., 2013), Rtnl1::GFP (Rao et al., 2016) and tdTomato::Sec61\u03b2 (Summerville et al., 2016) all localize to ER, and all showed continuous labeling in wild-type (ReepA+) axons (Figure 5A; Figure 5\u2014figure supplement 1A). However, CG9186::GFP showed occasional gaps in triple mutant axons (Figure 5A), with at least one gap per larva visible by confocal microscopy in 6/17 larvae. Since confocal imaging might not reveal all physical discontinuities, and since gaps in marker distribution might not mean gaps in ER distribution, we probed the physical continuity of CG9186::GFP labeling using fluorescence recovery after photobleaching (FRAP). After bleaching a 12 \u00b5m length of axon in either wild-type axons or in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons lacking gaps, we observed rapid recovery of fluorescence from both ends of the bleached region (Figure 5; Figure 5\u2014figure supplement 1B; Video 1), suggesting no physical barrier to CG9186::GFP diffusion. The kinetics of recovery were similar between wildtype and triple mutant axons (Figure 5B\u2013D). We also performed FRAP on regions next to gaps in CG9186::GFP labeling in triple mutant axons (Figure 5A); here we observed good recovery of fluorescence from the end of the bleached region opposite the gap, but no recovery across the gap (Figure 5; Figure 5\u2014figure supplement 1C; Videos 2\u20134), suggesting that gaps in CG9186::GFP labelling were also physical barriers to diffusion of CG9186::GFP, and hence gaps in the ER network.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative FRAP assay images from ReepA+ (WT) or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons in which ER was visualized using CG9186::GFP expression driven in two motor axons by m12-GAL4. One triple mutant axon shows a gap in labeling (arrowheads). Regions of interest (12 \u00b5m, between dashed lines) were photobleached. Fluorescence was visualized before photobleaching (\u2018pre\u2019), and during recovery over 200 s. A kymograph was generated for each axon indicated by an arrow in the top panel. Most areas of intense and less intense ER labeling remain stable over time (e.g. black arrows below kymographs); occasional movements of ER features are indicated by white arrows in kymographs. (B) Relative fluorescence intensities within the photobleached region were plotted (mean\u00a0\u00b1SEM) during recovery for wild-type axons or for triple mutant axons lacking ER gaps. (C\u2013D) Quantification of half recovery time (C) and rate constant (D) for wild-type and triple mutant axons lacking gaps, with median and interquartile range. Data in B\u2013D are from seven recordings from 4 wild-type larvae, and 20 recordings from 14 mutant larvae. ns, p>0.05; Mann-Whitney U test. Scale bars, 5 \u00b5m. (E) Representative kymographs from time-lapse recording of CG9186::GFP in unbleached single ReepA+ (WT) or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons lacking gaps. The left panel shows retrograde movement of a\u00a0~\u00a03 \u00b5m length of ER labeling (arrows); the right panel shows anterograde movement of a\u00a0~\u00a05 \u00b5m stretch of ER labeling (arrows). Retrograde movements of labeled puncta are seen in both panels (arrowheads).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Time series and kymographs of two closely apposed motor axons expressing either Rtnl1::GFP or Sec61b\u03b2::tdTomato ER markers under control of m12-GAL4. Images show continuity of ER staining in axons, and kymographs show stability of most ER features over the acquisition time. (B) Kymographs showing fluorescence recovery after photobleaching in two ReepA+ (WT) axons, or in two Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons lacking ER gaps. Recovery proceeds from both ends of the bleached region (dotted lines). Most ER features seen before bleaching (top line of kymographs) can also be seen after recovery, implying that recovery proceeds by protein diffusion, not by movement of ER structures. (C) Kymographs showing fluorescence recovery after photobleaching immediately distal to gaps in ER staining, in four Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons. Recovery proceeds only from the distal end of the bleached region (dotted lines) opposite the gap, but not across the proximal gap. While most ER gaps and many\u00a0other features are stable, one axon shows a retrogradely moving particle (white arrowhead), and one shows anterograde movement of ER that closes one gap and opens another more proximally (white asterisk).\n\n![Video 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-media1.mp4.jpg)\n\n**Video 1.:** Wild-type (WT)\u00a0axons expressing CG9186::GFP under control of m12-GAL4 were photobleached as described in Figure 5A. The video shows 2 s of pre-bleach images and 200 s of post-bleach images at one frame every 5 s. The bleached area is shown with a rectangle in the bleaching frame.\n\n![Video 2.](https://cdn.elifesciences.org/articles/23882/elife-23882-media2.mp4.jpg)\n\n**Video 2.:** Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons expressing CG9186::GFP were photobleached and imaged as in Video 1, in a region immediately distal to a gap (between white arrows) in ER labeling in one axon.\n\n![Video 3.](https://cdn.elifesciences.org/articles/23882/elife-23882-media3.mp4.jpg)\n\n**Video 3.:** Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons expressing CG9186::GFP were photobleached and imaged immediately distal to an ER gap as in Video 2. A labeled particle (white arrow) can be seen moving retrogradely across the ER gap (white arrowhead).\n\n![Video 4.](https://cdn.elifesciences.org/articles/23882/elife-23882-media4.mp4.jpg)\n\n**Video 4.:** Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons expressing CG9186::GFP were photobleached and imaged immediately distal to an ER gap as in Video 2. Anterograde movement of a 5 \u00b5m length of ER simultaneously closes up a gap distal to it (first white arrow) and opens up a new gap (second white arrow) proximal to it. A kymograph from this preparation is shown in Figure 5\u2014figure supplement 1C.\n\nDuring live imaging, we also followed the stability of the ER network in both wild-type and mutant axons. Features such as higher or lower levels of CG9186::GFP labelling (which could reflect variation in the numbers of tubules, or the presence of structures like cisternae) were mostly stable throughout a 200 s acquisition period (Figure 5A,E; Figure 5\u2014figure supplement 1). However, we also observed some dynamic features, including anterograde or retrograde movement of more brightly labeled regions (Figure 5A,E) perhaps representing movement of ER tubules detached from the ER network, and retrograde movement of labeled puncta (Figure 5E; Figure 5\u2014figure supplement 1C; Video 3), at around 0.3 \u00b5m/s. While most gaps in ER labeling in triple mutants were stable over 200 s (7 out of 8 gaps imaged, including Videos 2\u20133), in one case a gap was closed up by anterograde movement of a 5 \u00b5m length of ER proximal to the gap, which simultaneously opened up a new gap proximal to the moving section (Figure 5\u2014figure supplement 1C; Video 4). In one case a labeled punctum moved retrogradely across an ER gap without pausing (Figure 5\u2014figure supplement 1C), implying that microtubule-based transport was intact. Therefore, live imaging and photobleaching of CG9186::GFP both suggest that ER is normally continuous in axons, that loss of reticulon and REEP proteins leads to occasional gaps in ER labeling that represent physical breaks of ER continuity, and that ER network organization in axons shows both static and dynamic features.\n\nWe also tested for possible defects in axon transport by staining for abnormal accumulation of the synaptic vesicle protein CSP in axons. Rtnl1\u2212 larvae and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae showed large accumulations of CSP in many peripheral nerves. The large accumulations of CSP in Rtnl1\u2212 larvae could be rescued by two copies of a Rtnl1Pacman genomic clone (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig6-v2.jpg)\n\n**Figure 6.:** (A) Peripheral nerves of Rtnl1\u2212 and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae show larger accumulations of synaptic vesicle protein CSP (e.g. yellow arrows), and smaller elongated CSP puncta (e.g. yellow arrowheads). In contrast, control larvae (WT)\u00a0and ReepA\u2212 ReepB\u2212 double mutant larvae show an even distribution of small round CSP puncta. CSP accumulations are not significantly bigger in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants than in Rtnl1\u2212 mutants. The CSP accumulations in Rtnl1\u2212 larvae can be rescued by two copies of a Rtnl1Pacman genomic clone. All axons shown are crossing abdominal segment A2. (B) Graph shows mean\u00a0\u00b1SEM; n\u00a0=\u00a016\u201392 axons from 8 to 46 larvae, from 3 different experiments. ns, p>0.05; **p<0.006; ****p<0.0001, two-tailed Student\u2019s t-test. Scale bar, 10 \u00b5m).\n\n### Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant nerves show ER abnormalities in axons and glia\n\nTo better understand wild-type axonal ER organization, and the mutant phenotypes seen in confocal microscopy, we performed electron microscopy (EM) on 60-nm-thick serial sections of third instar peripheral nerves. Peripheral nerves contain both motor and sensory axons, arranged in fascicles, and wrapped in three main classes of glial cell (Stork et al., 2008; Matzat et al., 2015). We used ROTO staining (Tapia et al., 2012; Terasaki et al., 2013) to preferentially highlight cellular membranes including ER.\n\nWild-type larvae showed a network of ER tubules, in every axon that could be observed (Figure 7A left; serial sections in Video 5). Tubule outer diameter averaged around 40 nm (Figure 7B,C), and axons contained an average of around 1.6 ER tubules in each cross-section (Figure 7D,E). Reconstruction (Figure 7F left; Supplementary file 2) showed a tubular network with multiple branches, some dead ends, and continuity along nearly every axon sectioned. ER tubules often showed proximity to mitochondria or plasma membrane (Figure 7G left). We also found occasional structures resembling small patches of ER sheets with an adjoining cisterna (Figure 7H), continuous with the tubular ER network (Video 6), at a frequency averaging around one per 20 \u00b5m per axon.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig7-v2.jpg)\n\n**Figure 7.:** (A) EMs of peripheral nerve axons from wild-type ReepA+ (WT,\u00a0left) or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant (right) larvae. Arrowheads indicate ER tubules (seen as continuous structures in serial sections in Videos 5 and 7). Triple mutant axons show enlarged ER tubules, sometimes with a clear lumen (arrows), seldom observed in wild-type. Quantification of ER tubule diameter (B,C) and tubules per axon cross-section (D,E) in control and mutant larvae. Data from individual ER tubules or axons are shown in B and D, averaged larval values, mean\u00a0\u00b1SEM in C and E. (F) 3D reconstruction of a 4.5 \u00b5m axon segment from wild-type (left) or mutant (right) peripheral nerves, generated from 75 serial 60 nm sections, showing ER (green), mitochondria (magenta) and plasma membrane (gray). Interactive versions of the reconstructions are in Supplementary files 2 and 3. (G) Electron micrographs of peripheral nerve axons from wild-type (ReepA+, left) or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant (right) larvae, showing proximity of ER to mitochondria (arrowheads) or plasma membrane (arrows). (H) Representative EM of short ER sheet (arrowhead) and cisterna (asterisk) from a wild-type larva; further sections in Video 6. (I) section of an axonal swelling from a wild-type larva showing mitochondria (m), vesicles (v), and a large clear cisterna (c); further sections in Video 8. (J) Serial EM sections show ER discontinuity in two mutant axons: axon 1 lacks ER tubules in sections z6-z14 and axon 3 in sections z1-z11; neighboring axons (e.g. axon 2) show a continuous ER network. (K) 3D reconstruction of a 4.5 \u00b5m axon segment from mutant peripheral nerves, generated from 75 serial 60 nm sections, showing multiple gaps (indicated by arrows). ER is in green and plasma membrane in gray. Raw EM data and an interactive version of the reconstruction are in Video 9 and Supplementary file 4, respectively. (L) Frequency of axons with gaps in the 4.5 \u00b5m lengths analyzed. ER gap length (M), numbers of ER gaps per \u00b5m (N), and proportion of axon length with gaps (O) in affected axons. In M\u2013O, top graphs show data from individual ER gaps (M) or individual axons (N\u2013O), with second and third quartiles and 5th and 95th percentiles; bottom graphs show averaged larval values, mean\u00a0\u00b1SEM. In all graphs, ns p>0.05; *p<0.04; **p<0.003; ****p<0.0001; Mann-Whitney U test for B, D, top graphs in M\u2013O; two-tailed Student\u2019s T test for C, E, L, bottom graphs in M\u2013O. Scale bars, 500 nm.\n\n![Video 5.](https://cdn.elifesciences.org/articles/23882/elife-23882-media5.mp4.jpg)\n\n**Video 5.:** The sixth section in the series is shown in Figure 7A (left). ER tubules were identified as darkly stained structures present for multiple sections. See Figure 7A for annotations.\n\n![Video 6.](https://cdn.elifesciences.org/articles/23882/elife-23882-media6.mp4.jpg)\n\n**Video 6.:** Arrows indicate short ER sheets and associated cisternae, present across multiple sections. Note that these structures usually appear continuous with tubules in adjacent sections.\n\nIf Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae have less ER membrane curvature, we would expect them to have larger ER tubules, fewer tubules per section, loss of tubules, or a combination of these. EM revealed all these mutant phenotypes to varying degrees (Figure 7). ER tubule diameter was increased to around 60 nm (Figure 7B,C), allowing a lumen to be seen in some tubules (Figure 7A right; Video 7) that was rarely seen in wild-type (Figure 7A left; Video 5), and most triple mutant axons exhibited only a single ER tubule (Figure 7D,E). Reconstructions (Figure 7F right; Supplementary file 3) showed a less extensive ER network in mutant axons. Frequent contacts of ER with mitochondria and plasma membrane were found in both wild-type and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7G). Both wild-type and mutant axons showed swellings containing mitochondria and clusters of vesicles resembling synaptic vesicles (Figure 7I; Video 8). We did not detect large swellings with synaptic vesicle materials similar to those seen with confocal microscopy (Figure 6), but this may reflect the much shorter lengths of nerve examined by EM, around 5 \u00b5m compared to around 50 \u00b5m in confocal.\n\n![Video 7.](https://cdn.elifesciences.org/articles/23882/elife-23882-media7.mp4.jpg)\n\n**Video 7.:** The sixth section in the series is shown in Figure 7A (right). ER tubules were identified as darkly stained structures present for multiple sections. See Figure 7A for annotations.\n\n![Video 8.](https://cdn.elifesciences.org/articles/23882/elife-23882-media8.mp4.jpg)\n\n**Video 8.:** An axon with a swelling is highlighted in the first frame. Sections show accumulated mitochondria, vesicles, and a large clear cisterna, as labeled in Figure 7I.\n\nSerial EM sections also revealed variable fragmentation of ER in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7J,K), consistent with that seen using confocal microscopy (Figure 4). Some discontinuity of the ER network was observed in about 10% of wild-type or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7L). However, gaps in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7J,K; Video 9; Supplementary file 4) were longer (Figure 7M), and slightly more numerous (but not significantly when averaged across larvae; Figure 7N) than in wild-type axons, resulting in nearly a four-fold increase in the length of affected axons that lacked ER tubules (Figure 7O).\n\n![Video 9.](https://cdn.elifesciences.org/articles/23882/elife-23882-media9.mp4.jpg)\n\n**Video 9.:** An axon with gaps in its ER network is highlighted in the first frame. Continuous ER tubules were identified as the presence of signals at the same position for three or more sections. Given the varying brightness and contrast of EM sections, faint staining that coincided with a tubule signal in adjacent sections was also considered as an ER tubule. Complete loss of ER tubules from three or more sections was defined as a gap.\n\nRtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant peripheral nerves also showed glial cell phenotypes. Wild-type peripheral nerves are surrounded by an outer perineurial glial cell, and just beneath this a subperineurial glial cell; axons or axon fascicles are wrapped imperfectly by a wrapping glia cell (Stork et al., 2008; Matzat et al., 2015). All glial classes, but particularly subperineurial glia, showed a trend towards increased ER sheet profile length compared to control cells (Figure 8A\u2013I), similar to Rtnl1 knockdown (O'Sullivan et al., 2012) or ReepA\u2212 ReepB\u2212 double mutant (Figure 2) epidermal cells. Triple mutant wrapping glia also displayed more extensive wrapping, sometimes completely ensheathing axons, which was rarely observed in control nerve sections (Figure 8J\u2013M; Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig8-v2.jpg)\n\n**Figure 8.:** (A\u2013B) EMs of peripheral nerve sections from ReepA+ (WT)\u00a0(A) or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant (B) larvae. Perineurial, subperineurial, and wrapping glial cells are shaded green, blue, and magenta, respectively. (C\u2013H) Higher magnification images of perineurial (C,F), subperineurial (D,G), and wrapping (E,H) glia from wild-type (C\u2013E) or mutant (F\u2013H) nerve sections, showing ER tubules (white arrows; confirmed as tubules by presence in adjacent sections) and sheets (white arrowheads). Note the longer ER sheet profiles and fewer ER tubules in the subperineurial (G) and wrapping glial cells (H) of mutant nerves. Asterisks show mitochondria; yellow arrowheads show glial plasma membrane, identified by its continuity. (I) ER sheet profile length in control and mutant glial cells from 3 wild-type and 4 mutant larvae. Top graphs represent all individual sheet profiles, with second and third quartiles and 5th and 95th percentiles; bottom graphs show averaged larval values, showing mean\u00a0\u00b1SEM. Two-way ANOVA showed a significant effect of genotype (p<0.002) but not glial class (p>0.3) on ER sheet length, with no interaction between factors (p>0.3). (J,K) Sketches of wild-type (J) and mutant (K) wrapping glial cells, showing excess processes in the triple mutant. Asterisks indicate completely wrapped one-axon or two-axon fascicles, rarely seen in wild-type nerve sections. More examples of each phenotype are in Figure 8\u2014figure supplement 1. (L\u2013M) Quantification of wrapping glial membrane profile length per nerve cross-section (L) and percentage of axons that are wrapped individually or as two-axon fascicles (M) in wild-type and mutant nerve sections (mean\u00a0\u00b1SEM). ns, p>0.05; *p<0.05; ***p<0.001; ****p<0.0001. Mann-Whitney U test (I), top graphs); two-tailed Student\u2019s t-test (I), bottom graphs; L,\u00a0M,). Scale bars, 1 \u00b5m.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23882/elife-23882-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Sketches of wild-type (ReepA+, upper) and mutant (lower) wrapping glial cells were abstracted from cross-sections of peripheral nerves. Excess formation of processes were observed in triple mutants.\n\n## Discussion\n\nThe existence of a tubular axonal ER network has been known for decades. Nevertheless, the cellular mechanisms that organize a compartment that is usually distributed throughout cells, along the great lengths of axons, are until now largely unknown. The finding that several causative genes for the axon degenerative disease HSP encode ER modeling proteins, suggests a link between ER modeling and axon function or maintenance, and provides candidate proteins that may be instrumental in structure and function of the axon ER network. These candidates include several hairpin-loop-containing HSP proteins, of the spastin, atlastin, reticulon, REEP, and Arl6IP1 families, that influence ER structure in situations including yeast, mammalian cultured cells, and neuronal cell bodies in vivo (Shibata et al., 2006; Voeltz et al., 2006; Hu et al., 2008; Shibata et al., 2009; Park et al., 2010; Shibata et al., 2010). The HSP-related protein families that model ER, and some other proteins that interact with them, share a common feature of one or two intramembrane hairpin loops that can insert into the cytosolic face of the ER membrane, thereby recognizing or inducing curvature. This property makes the reticulon and REEP(DP1) families together responsible for most peripheral ER tubules in yeast, and contribute to the curved edges of ER sheets (Voeltz et al., 2006; Hu et al., 2008). The latter property may explain the expansion of ER sheets in Drosophila lacking the reticulon Rtnl1 (O'Sullivan et al., 2012) and in REEP1 homozygous mutant mice (Beetz et al., 2013).\n\nGiven this background, we set out to test how far the reticulon and REEP families contribute to axonal ER organization. REEP1 homozygous mutant mice were not previously tested for effects on axonal ER, although knockdown of Drosophila Rtnl1 led to partial loss of smooth ER marker in distal motor axons (O'Sullivan et al., 2012). Here we build on this work by analyzing mutants of all the widely expressed and highest conserved members of the reticulon and REEP families in Drosophila: Rtnl1, an ortholog of all four human reticulons (O'Sullivan et al., 2012); ReepA, an ortholog of human REEP1-REEP4; and ReepB, an ortholog of human REEP5-REEP6. We monitored phenotypes of these mutants, singly and in combination, by confocal microscopy of axonal ER markers in small numbers of motor neurons, live imaging and photobleaching of ER, and EM using membrane-specific staining.\n\nConfocal microscopy revealed a partial loss of ER marker in distal but not in more proximal motor axons in Rtnl1 and in ReepB mutants. Although the only REEP genes identified as causative for HSP are REEP1 and REEP2, loss of their ortholog ReepA had at most only mild effects on axonal ER (Figures 3 and 4). The stronger axonal ER phenotypes of ReepB or Rtnl1 loss of function, compared to ReepA\u2212 mutants, is consistent with the higher levels of ReepB and Rtnl1 expression, judged by transcriptomics (www.flyatlas.com), and the detection of ReepB and Rtnl1 but not ReepA fusions in peripheral nerves (Figure 1F,G; O'Sullivan et al., 2012) or individual axons (Figure 1H,J). The partial loss of distal axonal ER marker in both mutants and motor-neuron knockdowns, of either Rtnl1 or ReepB (Figure 3; O'Sullivan et al., 2012), and qualitatively similar ER fragmentation phenotypes in Rtnl1 ReepA ReepB triple loss-of-function genotypes, obtained using either Rtnl1 mutants or motor-neuron knockdown (Figure 4), suggest that the axonal ER phenotypes are cell autonomous in motor neurons.\n\nGiven the joint and partly redundant requirement of the reticulon and REEP families for ER tubule formation in yeast (Voeltz et al., 2006), we tested whether this was also true for axonal ER. Flies lacking Rtnl1, ReepA and ReepB \u2013 probably equivalent to mammals lacking all four reticulons and all six REEPs, and homozygous viable \u2013 indeed showed more extreme ER phenotypes than axons lacking either Rtnl1 or ReepA and ReepB alone (Figures 3 and 4). However, only a fraction of mutant axons showed severe fragmentation, and even affected axons still had continuous labeling of axons with ER marker through much of their length. ER fragmentation in the middle parts of long axons might be a consequence of axon expansion during larval growth, in which the somatic and presynaptic ends of the axon are gradually pulled apart, with insufficient ER-modeling proteins to maintain the expanding tubular network throughout the axoplasm. Therefore reticulon and REEP proteins are present in axons and have roles in ER organization there \u2013 but since triple mutant axons still mostly possess ER, there must be additional proteins required too. These might be found among the increasing number of other HSP genes that encode ER proteins with possible hairpins, such as Arl6IP1/SPG61, which affects ER organization (Novarino et al., 2014; Yamamoto et al., 2014; Fowler and O'Sullivan, 2016), or C19orf12/SPG43 (Landour\u00e9 et al., 2013). The variable nature of the triple mutant fragmentation phenotype might reflect stochastic variation in the amounts of such proteins, the amount of ER present, external factors like physical stresses during larval movement, or dynamic fluctuations in the local levels and connections of ER tubules. The tubular ER network is highly dynamic in non-neuronal cells (Nixon-Abell et al., 2016; Valm et al., 2017) and in axons our live imaging suggests dynamic features superimposed on a structure that is largely stable over the 1\u20132 min of imaging (Figure 5).\n\nEM examination of wild-type axonal ultrastructure revealed that ER tubules were effectively ubiquitous in Drosophila peripheral nerve sections, as seen previously in mammalian neurons (Tsukita and Ishikawa, 1976; Villegas et al., 2014), albeit with fewer tubules, presumably reflecting the smaller diameters of the axons examined here. Reconstruction over several \u00b5m showed a continuous network of ER tubules in most axons examined, in agreement with the ER continuity found in neurons by lipid dye labeling (Terasaki et al., 1994), and recently in reconstructions of serial sections from focused ion beam SEM (Wu et al., 2017). However, in a few axons, we found short lengths of axon with no detectable ER (Figure 7J\u2013O). There could be several reasons for this: Terasaki et al. (1994) only assessed continuity in dendrites, cell body and proximal axon; some of the gaps we observe in EM could be short transient gaps in a dynamic network; some of the apparent gaps could be \u2018thin ER\u2019 observed using higher-resolution focused-ion-beam SEM (Wu et al., 2017), but that might be missed using our approach; larval axons with low diameters might be intrinsically more susceptible to occasional gaps in the ER network, than wider axons with more tubules; and we might occasionally miss an ER tubule due to weaker staining, or close proximity to other structures like plasma membrane. We also observed occasional small ER sheet-like structures in wild-type axons (Figure 7H; Video 6). Although we do not see ribosomes on these, this could be due to lack of staining by the ROTO protocol. As discussed above, rough ER and translation are relatively sparse in axons, but low levels of rough ER are possible, and consistent with the occasional sheet structures observed here.\n\nEM also showed phenotypes consistent with loss of ER membrane curvature in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons (Figure 7). Mutant axons had ER tubules of larger diameter, fewer tubules per axon cross-section, and consistent with our confocal data (Figure 4), longer gaps in the ER network than wild-type, although most parts of most mutant axons examined still had a continuous ER network (Figure 7). These mutant phenotypes could potentially have physiological consequences. Larger tubules could potentially store and release more calcium than thinner ones, while the reduced network could make the role of the ER in calcium buffering or release more localized. The less extensive ER network in mutants might also reduce the amount of contact between ER and other organelles, with consequences for calcium and lipid homeostasis that require these contacts, or for regulation of mitochondrial fission (Friedman et al., 2011) \u2013 although the continuing proximity of ER to mitochondria and plasma membrane in mutants means that any effects are presumably quantitative rather than qualitative. The reduced curvature of ER membrane in mutants might also influence their protein composition, since many membrane proteins have mechanisms for recognizing differential membrane curvature (Antonny, 2011). The occasional lack of continuity could prevent propagation of ER-dependent Ca2+ signals like those seen in injured mammalian sensory neurons (Cho et al., 2013); it could also cause local impairments in Ca2+ or lipid homeostasis that could lead to local transport inhibition, as is the case for mitochondrial transport (Wang and Schwarz, 2009), although lack of ER continuity does not appear to directly prevent axon transport (Figure 5\u2014figure supplement 1C; Video 3). Sporadic lack of ER continuity might explain the preferential sensitivity of distal longer axons to HSPs, since these would be more likely to suffer from a gap in ER continuity to the cell body, compared to proximal or shorter axons. In this model, disease-causing alleles in single hairpin-encoding genes could promote degeneration in distal motor axons by increasing the probability of such gaps, dependent on factors such as age, axon length or diameter, and ER tubule density and dynamics.\n\nThe apparent ubiquity of ER in axons, the extent of its continuity over long distances, and the preferential susceptibility of distal longer axons to mutations that affect ER-modeling proteins, all point to important physiological roles of this compartment and of its continuity. In this work we have begun to reveal the mechanisms that determine its organization. We have shown roles for two protein families that contain HSP disease gene products, in influencing the shape of individual tubules and the axonal ER network, with potential physiological consequences that would also be affected by mutations in these genes. Understanding the consequences of axonal ER structural defects for ER dynamics and axonal physiology, both in the genotypes we have described here, and in other genotypes that might also affect axonal ER organization, will provide models for the potential physiological defects in HSP and other axon degeneration diseases.\n\n## Materials and methods\n\n### Drosophila genetics\n\nReepA541 (referred to as ReepA\u2212), and ReepB48 (referred as ReepB\u2212) mutants were generated by imprecise excision of P elements CB-0501\u20133 (RRID:DGGR_123207) and EY05130 (RRID:BDSC_16636) shown in Figure 1. A precise excision generated in these experiments, ReepA+C591 (referred to as ReepA+) was used as a genetic background control where feasible. Rtnl11, referred as Rtnl1\u2212, was a gift from G. Tear (Wakefield and Tear, 2006; FlyBase ID FBal0246222). Rtnl1\u2212, ReepA\u2212\u00a0and\u00a0ReepB\u2212 recombinants\u00a0were generated by meiotic recombination on the second chromosome, and recombinants were screened using PCR primers (Supplementary file 5) to diagnose wild-type or mutant alleles of all three genes. Mutant and wild-type stocks were frequently genotyped to ensure that experimental flies were not contaminated. For knockdown experiments, either UAS-Rtnl1-RNAi line 7866 (construct GD900, which has no predicted off-targets; FlyBase ID FBti0098310), or the w1118 control stock, 60000 (both obtained from the Vienna Drosophila RNAi Center, www.vdrc.at), or the UAS-ReepB-RNAi line 8331 R-3 (National Institute of Genetics Fly Stock Center, Japan; FlyBase ID FBal0275953) was crossed with UAS-Dcr2; CyO/If; m12-GAL4, UAS-Acsl::myc. UAS-Dcr2 (RRID:BDSC_24648; Dietzl et al., 2007) was also present for knockdown in Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 larvae. Other fly stocks used were P{UAS-Acsl.715.MycC}3 (RRID:BDSC_32330; Zhang et al., 2009), PBac{681.P.FSVS-1}Rtnl1CPTI001291 (RRID:DGGR_115146; Wakefield and Tear, 2006), m12-GAL4 (Xiong et al., 2010; RRID:BDSC_2702), UAS-Rtnl1::GFP (Rao et al., 2016),\u00a0{UAS-Xbp1.EGFP.LG}4\u00a0(RRID:BDSC_39719;\u00a0Ryoo et al., 2007) and UAS-tdTomato::Sec61\u03b2 (RRID:BDSC_64746; Summerville et al., 2016). A second-chromosome insertion of P{UAS-CG9186::GFP} (Thiel et al., 2013) was mobilized onto the third chromosome using the P transposase source P{\u22062\u20133}99B (Robertson et al., 1988; RRID:BDSC_3612), and expressed using m12-GAL4 in either a ReepA+ or an Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant second chromosome background.\n\nFor rescue of Rtnl11 we generated transgenic flies carrying P[acman] clone CH322-124P15 inserted at attP2 on chromosome 3 (Bloomington stock 25710), referred to as Rtnl1Pacman (Venken et al., 2009). For C-terminal EGFP-LAP-tagging of ReepA and ReepB we used recombineering with the P[acman] system with minor modifications (Venken et al., 2009), utilizing the CH322-97D15 (ReepA) and CH322-16N11 (ReepB) BAC clones (BPRC; http://bacpac.chori.org). An EGFP-LAP-tagging cassette was amplified from R6Kamp-LAP(GFP) (Poser et al., 2008) using primers (Supplementary file 5) with 50 bp homology to the corresponding Reep clone and around 20 bp of homology to the tagging cassette, and used to transform the recombineering E. coli SW102 strain. Correct clones were verified at every step by PCR and/or restriction digestion. DNA for Drosophila transformation was extracted using a PureLink HiPure Maxiprep kit (Invitrogen), and injected into y w M(eGFP, vasa-integrase,dmRFP)ZH-2A; M(attP)ZH-51D or y w M(eGFP,vasa-integrase,dmRFP)ZH-2A; M(attP) ZH-86Fb (RRID:BDSC_24483 or RRID:BDSC_24749, respectively) at the Department of Genetics embryo injection facility, University of Cambridge, UK. Transformant lines were screened for the presence of the insert by PCR and GFP fluorescence. The primers used are described in Supplementary file 5.\n\nBLAST sequence searches were used to define genome coordinates of P-element excisions, and Pfam domain coordinates in coding regions, and compare protein divergence rates. They were performed at the National Center for Biotechnology Information (www.ncbi.nlm.nih.gov). REEP dendrograms were drawn from a ClustalW alignment (Larkin et al., 2007) using the neighbor-joining algorithm in MEGA 5.05 (Tamura et al., 2011).\n\n### Histology and immunomicroscopy\n\nThird instar larvae were dissected in chilled Ca2+-free HL3 solution (Stewart et al., 1994), and fixed for 30 min in PBS with 4% formaldehyde. Dissected Drosophila preparations were permeabilized in PBS containing 0.3% Triton X-100 (PBT)\u00a0at room temperature, and blocked in PBT with 4% bovine serum albumin for 30 min at room temperature. Primary antibodies were: Csp (6D6, RRID:AB_10013286, 1:50; Zinsmaier et al., 1994), Dlg (4F3, RRID:AB_2314321, 1:100; Parnas et al., 2001), (both from the Developmental Studies Hybridoma Bank, Iowa, USA), GFP (Ab6556, RRID:AB_305564, 1:600 Abcam, UK), HRP (P97899, RRID:AB_2314650, 1:300, Sigma), KDEL (Ab50601, RRID:AB_880636, 1:25, Abcam, UK), myc (2272, RRID:AB_331667, 1:25, Cell Signaling, USA). Fixed preparations were mounted in Vectashield (Vector Laboratories, USA, RRID:AB_2336789), and images were collected using EZ-C1 acquisition software (Nikon) on a Nikon Eclipse C1si confocal microscope (Nikon Instruments, UK). Images were captured using 10x/0.30NA, or a 60x/1.4NA oil objective.\n\n### Analysis of ER structure\n\nConfocal images were analyzed blind to genotype using ImageJ (Schneider et al., 2012). Images of entire epidermal cells were obtained as z-projections of three consecutive sections. Using the line tool of ImageJ a 12 \u00b5m line was drawn from the nuclear envelope towards the periphery of each cell analyzed. Pixel intensity along the line was recorded in an Excel file. Local variance of intensity was calculated by dividing the rolling variance of the intensity (in 10-pixel windows), by the rolling mean intensity, all along the line.\n\nProximal (anterior) axons were imaged from segment A2, middle images were from the end of segment A4 and A5, distal (posterior) axons were imaged from segment A6 of third instar larvae. Mean gray intensity for single-axon images was measured by drawing a 45 \u00b5m line, either along both M12-GAL4-expressing axons (where they could not be separated), or along the most strongly labeled axon (where they appeared as separate axons), and quantifying gray intensity (0\u2013255) by ImageJ; occasional images with saturated pixels were excluded from analysis after blinding. Coefficient of variation was calculated by dividing the standard deviation of staining intensity by the mean; occasional images with faint staining throughout the axon were excluded from analysis after blinding. Gaps were defined as regions where staining intensity was less than 20 (out of 255), after background subtraction.\n\n### Live imaging and FRAP\n\nFRAP experiments were performed on a Nikon Eclipse C1si confocal microscope (Nikon Instruments, UK), using a 20 mW Argon laser and a 40\u00d7 0.8 N.A. water dipping objective. Third instar larvae were dissected and incubated in chilled Ca2+-free HL3 solution (Stewart et al., 1994). Time-lapse images were acquired on a\u00a0single focal plane every 0.5 or 1 s for 40 loops. For FRAP, a defined region of interest (12 \u00d7 4 \u00b5m) was photobleached at full laser power (488 nm) for two iterations at a\u00a0scan speed of 0.5 frame/s. Postbleaching images were acquired on a single focal plane at 15% laser power once every 5 s for 200 s. Experiments were completed within 20 min after dissection. Kymographs were generated for a hand-drawn line selection along the axon using the Multiple Kymograph plugin in Fiji (Schindelin et al., 2012). Average fluorescence intensity of each axon in each frame was measured by creating a line selection along the axon. After subtracting background (average intensity in a nearby non-GFP-expressing region within the segmental nerve), the intensity of the bleached region was normalized to the average intensity cross the axon length in the same frame. Then the data were further normalized by taking the prebleaching intensity as 100% and bleach intensity as 0. Normalized postbleaching data were plotted and fitted to a single exponential function to calculate rate constant (k) and half time (t1/2): I(t)=A(1-e\u2212kt), in which I(t) represents the fluorescence intensity at time point t, A the highest postbleaching intensity.\n\n### Electron microscopy\n\nFor epidermal cell EM, larvae were prepared and fixed as described by O'Sullivan et al. (2012). Transverse sections were cut on a Leica Ultracut UCT ultra-microtome at 70 nm, using a diamond knife, and contrasted with uranyl acetate and lead citrate (for epidermal cells). Sections were viewed using a Tecnai G2 electron microscope operated at 120 kV, and an AMT XR60B camera running the Deben software in the Cambridge\u00a0Advanced\u00a0Imaging Centre, School of Biology, University of Cambridge.\n\nFor EM of peripheral nerves, we used a ROTO protocol (Tapia et al., 2012; Terasaki et al., 2013) to highlight membranes. Third instar larvae were dissected in HL3 solution and fixed in 0.05 M sodium cacodylate (pH 7.4) containing 4% formaldehyde, 2% vacuum distilled glutaraldehyde, and 0.2% CaCl2), at 4\u00b0C for 6 hr. Larvae were dissected as for confocal analysis, but leaving overlying organs such as gut and fat body attached, to reduce loss of peripheral nerves during processing. Preparations were then washed 3 times for 10 min each at 4\u00b0C using cold cacodylate buffer with 2 mM CaCl2. A solution of 3% potassium ferricyanide in 0.3 M cacodylate buffer with 4 mM CaCl2 was mixed with an equal volume of 4% aqueous osmium tetroxide; larval preparations were incubated in this solution at 4\u00b0C for 1\u201312 hr, then rinsed with deionized water at room temperature 5 times for 3 min each. Thiocarbohydrazide solution was prepared by adding 0.1 g thiocarbohydrazide to 10 ml deionized water, kept in a 60\u00b0C oven in a secondary embedding pot for 1 hr, swirled every 10 min to facilitate dissolution, and filtered through two 9 cm filter papers just before use. Larval preparations were incubated in thiocarbohydrazide solution for 20\u201330 min at room temperature and covered with foil to protect from light. Then they were rinsed with deionized water at room temperature 5 times for 3 min each, incubated in 2% osmium tetroxide for 30\u201360 min at room temperature, and rinsed with deionized water at room temperature 5 times for 3 min each. Preparations were incubated in 1% uranyl acetate (maleate-buffered to pH 5.5) at 4\u00b0C overnight and rinsed with deionized water at room temperature 5 times for 3 min each. Then they were incubated in lead aspartate solution (0.66 g lead nitrate dissolved in 100 ml 0.03 M aspartic acid, pH adjusted to 5.5 with 1 M KOH) at 60\u00b0C for 30 min and rinsed with deionized water at room temperature 5 times for 3 min. Then they were dehydrated twice with 50%, 70%, 90% and 100% ethanol, twice with dried ethanol, twice with dried acetone and twice with dry acetonitrile. Preparations were incubated in 50/50 acetonitrile/Quetol 651 overnight at room temperature, three times for 24 hr each in Quetol epoxy resin 651 (Agar Scientific, Stansted, UK) and three times for 24 hr each in Quetolepoxy resin 651 with BDMA (dimethylbenzylamine). They were then incubated at 60\u00b0C for at least 48 hr.\n\nSerial 60-nm-thick transverse sections were cut in the larval abdominal region, visualized using scanning EM, and images were aligned for analysis of serial sections and reconstruction, as described by Terasaki et al. (2013).\n\n### Axonal EM analyses\n\nTo quantify axonal ER tubule diameter, non-axonal staining was removed manually, and ER tubule profiles were identified based on the local threshold in a single cross-section, and the presence of signals at the same position in adjacent sections. The minimum Feret diameter of each tubule was measured using ImageJ Fiji (https://fiji.sc) via the Analyze Particles command. ER numbers per axon were counted manually for all axons detected in the nerve. 3D reconstruction was carried out using the Fiji TrakEM2 plug-in. To quantify gaps in the tubule network, each axon was analyzed throughout the entire stack of sections. To allow for occasional lightly stained or blurred sections, only complete loss of ER tubules from three or more consecutive\u00a0sections in an axon was defined as a gap. Continuous ER tubules were identified as the presence of signals at the same position for three or more consecutive\u00a0sections. Given the varying brightness and contrast of EM sections, faint staining that coincided with a tubule signal in adjacent sections was also considered as an ER tubule. Color shading and sketches drawn in Figure 8 were processed in Adobe Photoshop CS6. For quantification of glial ER sheet length, individual ER sheet profiles were measured using Fiji via the line tool and Measure command. Wrapped axons were defined as one-axon or two-axon fascicles which were completely wrapped by glial cells and isolated from other neighboring axons.\n\n### Statistical analysis\n\nStatistical analyses were performed in GraphPad Prism 6 or IBM SPSS 22. Data were analyzed by two-tailed Student\u2019s t-tests or ANOVA followed by post-hoc tests (for comparison of datapoints that were means of raw measurements and hence expected to be normally distributed), or by Mann-Whitney U tests (for data that were not normally distributed). Multiple comparisons after ANOVA were performed by a Tukey HSD test when equal variances were found, or otherwise by Dunnett\u2019s T3 test. Bar graphs and scatter plots show mean\u00a0\u00b1SEM; box plots show median with interquartile range, and the 5% and 95% percentiles as whiskers. Sample sizes are reported in figures. No outliers were excluded from analysis after quantification; data were only excluded from analysis if they were unanalyzable, i.e. when confocal images were too faint or saturated, and EM images lacked clearly identifiable plasma or ER membranes. Most data were analyzed and presented as individual axon or larval datapoints, unpaired between genotypes. For two comparisons where ANOVA showed significant (p<0.05) experiment-to-experiment differences within a genotype (Figures 2B and 3A), data were averaged within each independent experiment to produce experiment-wise datapoints, which were compared using two-tailed paired t-tests. P levels are indicated as ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, or ****p<0.0001, except where indicated otherwise, when criteria could be defined more stringently.\n",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "13a32c45-a803-4249-8acd-bbadbfe8a479",
+      "submission_id": "dacaccce-c8d6-4ab1-95af-caf0aa0eeb82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Howard Hughes Medical Institute, Baylor College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23882.031](https://doi.org/10.7554/eLife.23882.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Modeling of axonal endoplasmic reticulum network by spastic paraplegia proteins\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Hugo Bellen as the Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Vivek Venkatachalam.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThis paper describes a role, in Drosophila, of two REEP proteins that are homologues of human spastic paraplegia disease genes. Specifically, the effects of these REEP homologues on endoplasmic reticulum geometry are categorized using confocal light microscopy and serial electron microscopy. These REEP proteins are shown to reduce ER membrane curvature in axons of Drosophila larvae.\n\nThe cell biology question of how reticulon and REEP proteins contribute to ER structure and function is important. This paper uses a series of fly lines to gain insight into the roles of axonal ER and the cellular mechanisms underlying axon degeneration disorders. The molecular genetics tools used in this study are impressive. The paper has four new GFP knock in lines and single and double and triple KO lines. The roles of these proteins have been broadly defined in single cell models, but taking this in vivo is an important issue. In addition, the new fly lines are novel disease models, and the work is directly relevant to these human diseases. Previous work has demonstrated the role of a reticulon orthologue in shaping Drosophila axonal ER. This work builds on that to describe the individual and combined effects of reticulon and REEP on axonal ER geometry.\n\nThe primary conclusion is that REEPA (an orthologue of mammalian REEP1-REEP4) and REEPB (orthologous to mammalian REEP5 and REEP6) work with reticulon to enhance curvature in axonal ER, and also promote the formation of continuous ER tracts over the length of an axon. These conclusions are well-supported by both the light microscopy and electron microscopy data presented.\n\nMajor Issues:\n\nA major issue is that it is not clear what the REEP/ reticulon proteins do on and to the axonal ER.\n\nThere are no images showing these proteins in the axons. It is also difficult to see any synaptic ReepA, while ReepB signal is very low (and even so, this is distinct to the issue of axonal-ER). Therefore, defects in axonal ER structure could derive from loss of REEPs/ Rtnl1 in the cell body that, in turn, induces secondary dysfunctions across the cell \u2013 a different conclusion to that implied by the authors. Data showing that the ER in the neuronal cell body is normal (if the case, and this is maybe unlikely) would help support the concept that these shaping proteins work directly on the axonal ER. Showing their localization in axons also seems crucial. The fact that ReepA is expressed at very low levels compared to ReepB (based on GFP signal), while only the double KO shows phenotypes, is also surprising and something that the authors could comment on.\n\nOn a related note, it is not 100% clear that the defects of axonal ER are cell autonomous to loss of REEP/ reticulons from motor neurons. Indeed, since data in Figure 7 shows defects in surrounding glia. The authors should confirm at the level of assessing motor neuron specific RNAi that the motor neuron phenotypes are cell autonomous (given that MARCM type clonal analysis with combined alleles is difficult).\n\nAnother question is whether the EM of Figure 6 definitely assesses \"ER\". Is it absolutely clear that these structures aren't related to the stalled synaptic vesicles -are these also seen in the TEM?\n\nThe authors' conclusion that the ER shaping proteins are required for ER continuity is also not fully supported. This conclusion primarily comes immunofluorescence signal of one smooth ER marker \u2013 that could be disturbed while the ER is structurally less affected. The ultrastructural analysis is inconclusive since Figure 6L shows that the% of axons where the ER has gaps is similar between controls and the triple KO genotype. Furthermore, classically this is assessed by live cell photobleaching experiments. Thus, to infer the conclusion that the ER is normally continuous, and this is lost in the disease-model animals, live cell imaging experiments should be attempted and are feasible with larval motor neuron preparation.\n\nHow the axonal ER is functionally important / the roles of axonal REEPs/ Rtnl1 also remains less investigated than expected. This is related to one of the points above; it is difficult to dissect without first proving that REEPs / Rtnl1 loss has (at least somewhat) specific effects on the axonal ER. The finding that synaptic vesicle trafficking is stalled is difficult to understand in this respect. Is this something where the axonal ER is particularly important, or could it be a symptom of broad cellular dysfunction?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Modeling of axonal endoplasmic reticulum network by spastic paraplegia proteins\" for further consideration at eLife. Your revised article has been favorably evaluated by Anna Akhmanova (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nCan you please address with textual changes or by overexpression studies the comments of Reviewer 3.\n\nReviewer #2:\n\nThe modifications made by the authors satisfactorily address all of my previous concerns. I recommend publication.\n\nReviewer #3:\n\nThe authors have added significant new data with the photobleaching experiment. I now only have minor comments (stemming from the original critique) that can probably be addressed by modifying the text.\n\nFirstly is the issue of whether Reep/ Rtnl1 proteins are definitely localized in axonal ER. I see that Figure 1F shows presynaptic signal, but I still don't see images of HSP proteins in axonal ER that are equivalent to the images showing axonal ER labeled by Acsl::myc (Figure 3 and 4, etc.). It may be that their native levels are too low to detect, although in this case overexpression of tagged proteins would be nice so we at least know that they can localize in axonal ER. I feel the authors should explain this lack of data and/ or discuss if it is a detection problem. As written, the paper gives one conclusion: axonal-ER defects are a direct consequence of losing axonal HSP proteins. However, it is also possible that axonal-ER defects occur indirectly because HSP proteins are lost from the main cell body/ synapse. The failure to show them localizing in the axonal ER amplifies this, although I do also see the argument that the presence of axonal ER defects is important to report independent of whether it is direct or indirect to these proteins shaping this particular ER region.\n\nThe authors can perhaps add a sentence or two to highlight the data on the cell-autonomous nature of the loss of function defects. Particularly since they show glial abnormalities in the final figure in the genetic background where most experiments are performed.\n\nSince this manuscript has been under review, a new paper on ER structure in neurons was published by Wu, et al., in PNAS. This could be integrated and referenced in the text as it has important data on how we understand ER organization in a neuron (no conflict or overlap with the data here).\n",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7a0c9e76-94e4-4c51-9b89-4029fa00f810",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C1",
+      "claim": "Axons contain a smooth tubular endoplasmic reticulum (ER) network that is thought to be continuous with ER throughout the neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Axons contain a smooth tubular endoplasmic reticulum (ER) network that is thought to be continuous with ER throughout the neuron",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on ER continuity in neurons",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "79d5803f-fc72-4dc2-8555-87038a0528c5",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C2",
+      "claim": "Mutations affecting reticulon or REEP proteins cause hereditary spastic paraplegia (HSP), an axon degenerative disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations affecting reticulon or REEP proteins, with intramembrane hairpin domains that model ER membranes, cause an axon degenerative disease, hereditary spastic paraplegia (HSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge and citations in the manuscript",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "da771813-b985-4ec2-b549-1b6fb6272cf7",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C3",
+      "claim": "Drosophila axons have a dynamic axonal ER network.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Drosophila axons have a dynamic axonal ER network, which these proteins help to model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations including live imaging data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "233f134f-c27e-4827-9fd3-1bf0f0bd41cb",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C4",
+      "claim": "Loss of HSP hairpin proteins causes ER sheet expansion in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of HSP hairpin proteins causes ER sheet expansion, partial loss of ER from distal motor axons, and occasional discontinuities in axonal ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 2 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "2e15e44c-d0a0-46a0-b158-9da9983b6b7d",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C5",
+      "claim": "Loss of HSP hairpin proteins causes partial loss of ER from distal motor axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of HSP hairpin proteins causes ER sheet expansion, partial loss of ER from distal motor axons, and occasional discontinuities in axonal ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "da4017ac-0988-4df5-8765-5d307420270c",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C6",
+      "claim": "Loss of HSP hairpin proteins causes occasional discontinuities in axonal ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of HSP hairpin proteins causes ER sheet expansion, partial loss of ER from distal motor axons, and occasional discontinuities in axonal ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy and EM data shown in Figures 4, 5, and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "d906e1f3-a0fb-4792-9628-e3bb973ef823",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C7",
+      "claim": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae show larger and fewer ER tubules in axons compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultrastructural analysis reveals an extensive ER network in axons, which shows larger and fewer tubules in larvae that lack reticulon and REEP proteins, consistent with loss of membrane curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electron microscopy measurements shown in Figure 7B-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e14026eb-35ea-44ce-974b-c615dec61683",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C8",
+      "claim": "HSP hairpin-containing proteins are required for shaping and continuity of axonal ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore HSP hairpin-containing proteins are required for shaping and continuity of axonal ER, thus suggesting roles for ER modeling in axon maintenance and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental observations including confocal microscopy, FRAP, and EM data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "59b5f8cc-2085-4b16-a5eb-0a805c4ce409",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C9",
+      "claim": "Axonal ER appears mostly tubular and smooth, with some cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal ER appears mostly tubular and smooth, with some cisternae (Tsukita and Ishikawa, 1976; Lindsey and Ellisman, 1985; Villegas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior ultrastructural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "ec59c237-0ea7-4520-b947-d7c6f5a7e38a",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C10",
+      "claim": "Numerous mRNAs are found in both growing and mature axons.",
+      "claim_type": "EXPLICIT",
+      "source": "numerous mRNAs are found in both growing and mature axons (Zivraj et al., 2010; Shigeoka et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7b3287eb-478e-41ca-a2e6-316059d48f8c",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C11",
+      "claim": "Local axonal translation can occur in response to injury.",
+      "claim_type": "EXPLICIT",
+      "source": "local axonal translation can occur in response to injury (Ben-Yaakov et al., 2012; Perry et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "047370cb-cdc1-462c-b4ea-0a8bae85b42e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C12",
+      "claim": "Rough ER sheets and markers of protein export and folding are relatively sparse in mature axons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rough ER sheets (Tsukita and Ishikawa, 1976; Villegas et al., 2014), and markers of protein export and folding that are characteristic of rough ER (R\u00f6per, 2007; O'Sullivan et al., 2012), are relatively sparse in mature axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies including authors' own work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "82069097-b79c-4b74-8ca7-e2830ba644d7",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C13",
+      "claim": "Axonal ER likely has major roles in lipid biosynthesis, calcium homeostasis and signaling, and coordination of organelle physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal ER therefore likely has major roles other than protein export; these could include lipid biosynthesis (Tidhar and Futerman, 2013; Vance, 2015), calcium homeostasis and signaling (Ross, 2012), and coordination of organelle physiology (Phillips and Voeltz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on known ER functions and citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "127c6220-e2f4-4949-8069-887556908972",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C14",
+      "claim": "An ER-dependent propagating calcium wave is seen after axotomy of C. elegans or mammalian dorsal root ganglion neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, an ER-dependent propagating calcium wave is seen after axotomy of Caenorhabditis elegans or mammalian dorsal root ganglion neurons (Ghosh-Roy et al., 2010; Cho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior experimental studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "bfd10adc-f1f6-4543-b843-2964d6c1767e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C15",
+      "claim": "Mutations affecting spastin, atlastin-1, reticulon-2, REEP1 and REEP2 account for most cases of autosomal dominant 'pure' HSP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations affecting spastin, atlastin-1, reticulon-2, REEP1 and REEP2 account for most cases of autosomal dominant 'pure' HSP (Hazan et al., 1999; Zhao et al., 2001; Z\u00fcchner et al., 2006; Montenegro et al., 2012; Esteves et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior genetic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "c9193232-9aa7-4dd3-a4ff-7bbde3db2a3a",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C16",
+      "claim": "REEP and reticulon family proteins share a common feature of one or two hydrophobic hairpin-loops inserted in the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins share a common feature of one or two hydrophobic hairpin-loops inserted in the ER membrane, promoting ER membrane curvature in a process termed hydrophobic wedging (Voeltz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior structural/biochemical work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "32ea7a74-498b-41c4-a52b-9c2b0d9864d1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C17",
+      "claim": "REEP and reticulon proteins promote ER membrane curvature through hydrophobic wedging.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins share a common feature of one or two hydrophobic hairpin-loops inserted in the ER membrane, promoting ER membrane curvature in a process termed hydrophobic wedging (Voeltz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior mechanistic work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7896b92b-a6e2-43a1-a91a-c362033072c1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C18",
+      "claim": "REEP and reticulon family proteins localize preferentially to tubular or smooth ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins of the REEP and reticulon families localize preferentially to tubular or smooth ER, and their loss results in disruption of ER tubular organization (Shibata et al., 2006; Voeltz et al., 2006; Park et al., 2010; Shibata et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior localization studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "d52b786e-1573-4f66-9357-b4f19d0e1fb3",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C19",
+      "claim": "Loss of REEP and reticulon proteins results in disruption of ER tubular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins of the REEP and reticulon families localize preferentially to tubular or smooth ER, and their loss results in disruption of ER tubular organization (Shibata et al., 2006; Voeltz et al., 2006; Park et al., 2010; Shibata et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior functional studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "fb89797c-7a3b-480c-8ddc-603b8b03565b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C20",
+      "claim": "REEP and reticulon proteins may contribute to modeling of rough ER sheets by stabilizing their curved edges.",
+      "claim_type": "EXPLICIT",
+      "source": "they may also contribute to modeling of rough ER sheets by stabilizing their curved edges (Shibata et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative claim supported by citation",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4ec27da0-9ed6-4c09-be2b-d3cb95d8c230",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C21",
+      "claim": "HSP-causing mutations often appear to cause loss of protein expression or function.",
+      "claim_type": "EXPLICIT",
+      "source": "HSP-causing mutations often appear to cause loss of protein expression or function (Beetz et al., 2013; Novarino et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior genetic/functional studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "f100b943-f934-4b4f-adce-6be1eeb687d9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C22",
+      "claim": "The ability of hairpin-loop proteins to form homomeric and heteromeric complexes allows some point mutations to have dominant negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "the ability of hairpin-loop proteins to form homomeric and heteromeric complexes (Shibata et al., 2008) allows some point mutations to have dominant negative effects (Z\u00fcchner et al., 2006; Beetz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior biochemical and genetic studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "27acc1fd-e2f7-4a98-a644-8aa772b456d2",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C23",
+      "claim": "Reticulon and REEP family proteins are redundantly required for most peripheral ER tubules in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Since reticulon and REEP family proteins are redundantly required for most peripheral ER tubules in yeast (Voeltz et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior yeast genetic study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4bd8ace8-d26b-4ed7-8650-a6a41835b992",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C24",
+      "claim": "Knockdown of Drosophila reticulon Rtnl1 causes expansion of epidermal ER sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that knockdown of the Drosophila reticulon Rtnl1 causes expansion of epidermal ER sheets, and partial loss of smooth ER marker from distal but not proximal motor axons (O'Sullivan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "75f05d26-12ea-401b-a166-0bd76a69dfb7",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C25",
+      "claim": "Knockdown of Drosophila reticulon Rtnl1 causes partial loss of smooth ER marker from distal but not proximal motor axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that knockdown of the Drosophila reticulon Rtnl1 causes expansion of epidermal ER sheets, and partial loss of smooth ER marker from distal but not proximal motor axons (O'Sullivan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to authors' prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "3f697869-bf69-4428-9242-cfd0b1473553",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C26",
+      "claim": "CG42678 is the single Drosophila ortholog of mammalian REEP1-REEP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple sequence alignment of mammalian and Drosophila REEP protein sequences suggested that CG42678 was the single Drosophila ortholog of mammalian REEP1-REEP4 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "26da7810-d79b-444e-bde5-1fb3d0c3ec3a",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C27",
+      "claim": "Mammalian REEP5 and REEP6 share two Drosophila orthologs, CG8331 and CG4960.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian REEP5 and REEP6 appeared to share two Drosophila orthologs, CG8331 and CG4960 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment analysis shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "16009bb9-941f-4c5c-8354-7116c3ae753d",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C28",
+      "claim": "ReepA1::GFP and ReepB::GFP overlap with anti-KDEL labeling in larval epidermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap of ReepA1::GFP and ReepB::GFP with anti-KDEL labeling in larval epidermal cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "d93acd4f-912d-49c0-8df9-a47ebbb182f8",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C29",
+      "claim": "ReepB::GFP is more strongly expressed in third instar larval CNS than ReepA3::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "ReepB::GFP was also more strongly expressed in third instar larval CNS than ReepA3::GFP, which was the only ReepA::GFP fusion that we detected there (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "deb805ef-9e99-4af8-8f8f-9131f2ee37e0",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C30",
+      "claim": "ReepB::GFP localizes continuously along the length of peripheral nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "A single confocal section of a peripheral nerve, showing ReepB::GFP localized continuously along its length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "6b3da5fa-8893-4de8-a3eb-d4068160066b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C31",
+      "claim": "ReepB::GFP localizes as a mostly continual structure along the length of presynaptic terminals of neuromuscular junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "ReepB::GFP, but none of the ReepA::GFP fusions, localized as a mostly continual structure along the length of presynaptic terminals of neuromuscular junctions (NMJs) (Figure 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 1H,I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "c0fd2c97-7745-4fee-90df-db949840704b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C32",
+      "claim": "Rtnl1\u2212 mutant larvae show loss of ER network organization in epidermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1\u2212 mutant larvae also showed loss of ER network organization (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4b232120-99a8-472a-ad3a-824199584a2e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C33",
+      "claim": "Intensity of KDEL labeling fluctuates less in Rtnl1\u2212 larvae compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Intensity of KDEL labeling along a line from the nucleus to cell periphery displayed fluctuating intensity, reflecting the reticular distribution of KDEL in wild-type larvae, but less fluctuation in Rtnl1\u2212 larvae",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative analysis of confocal images in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "cc9b78ae-d70b-49ae-b325-c967cd2d78eb",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C34",
+      "claim": "Loss of both ReepA and ReepB makes KDEL levels in larval epidermal cells fluctuate less than in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loss of both ReepA and ReepB, but not loss of either gene alone, made KDEL levels in larval epidermal cells fluctuate less than in controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative analysis of confocal images in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "12c04223-114c-4def-9018-1af906e06cd4",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C35",
+      "claim": "ReepA\u2212 ReepB\u2212 double mutant epidermal cells show longer ribosome studded sheet ER profiles compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that ReepA\u2212 ReepB\u2212 double mutant epidermal cells showed longer ribosome studded sheet ER profiles, compared to controls, and to ReepA\u2212 and ReepB\u2212 single mutants (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy measurements in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "948ff95f-0e38-4b24-9bc8-e07930d57c95",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C36",
+      "claim": "ReepA\u2212 ReepB\u2212 mutants show increased ER stress in epidermal cells but not in CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "ReepA\u2212 ReepB\u2212 mutants also showed increased ER stress in epidermal cells (Figure 2D) but not in CNS (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Xbp1::GFP reporter expression in Figure 2D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "358a8429-8ccc-4b07-b7f2-34684ad22013",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C37",
+      "claim": "Loss of Rtnl1 causes partial loss of Acsl::myc from posterior axons but not from anterior axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rtnl1 caused partial loss of Acsl::myc from posterior (segment A6) axons, but not from anterior axons (segment A2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8400ff19-1953-4def-83a5-d91c23a342dc",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C38",
+      "claim": "Loss of Rtnl1 causes Acsl::myc staining to appear more irregular in posterior but not anterior axons.",
+      "claim_type": "EXPLICIT",
+      "source": "it also caused Acsl::myc staining to appear more irregular in posterior but not anterior axons, reflected in a higher coefficient of variation (SD/mean) of Acsl::myc staining intensity along the length of posterior axons lacking Rtnl1, compared to wild-type (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative analysis of confocal images in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8c2cf0e6-a516-4dc4-b63a-949feb54bfca",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C39",
+      "claim": "The Rtnl1\u2212 mutant phenotypes can be partially rescued by one copy of an Rtnl1Pacman genomic clone.",
+      "claim_type": "EXPLICIT",
+      "source": "the Rtnl1\u2212 mutant phenotypes could be partially rescued by one copy of an Rtnl1Pacman genomic clone (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genetic rescue experiment shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "66de4fb0-b66c-4bc0-801d-df4c34655aa9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C40",
+      "claim": "ReepB\u2212 mutants show partial loss of Acsl::myc from posterior but not anterior motor axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Rtnl1 loss of function, ReepB\u2212 mutants showed partial loss of Acsl::myc from posterior but not anterior motor axons (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "b492dea6-9de8-4eec-91c5-0262806d30ff",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C41",
+      "claim": "The ReepB\u2212 phenotype can be mostly rescued by one copy of a genomic ReepB::GFP clone.",
+      "claim_type": "EXPLICIT",
+      "source": "this phenotype was partially rescued with one copy of a genomic ReepB::GFP clone, and was also observed on ReepB knockdown in m12-GAL4-expressing neurons (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genetic rescue experiment shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "ea32a3d4-dac4-4ee3-a386-f694d44f90c1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C42",
+      "claim": "ReepA\u2212 mutants show no loss of Acsl::myc from axons.",
+      "claim_type": "EXPLICIT",
+      "source": "ReepA\u2212 mutants showed no loss of Acsl::myc from axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4da11ee0-1bed-4ace-bdb9-ef2aa097a416",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C43",
+      "claim": "A ReepA\u2212 ReepB\u2212 double mutant shows loss of Acsl::myc from posterior axons similar to ReepB\u2212 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "A ReepA\u2212 ReepB\u2212 double mutant showed loss of Acsl::myc from posterior axons, that was similar to that seen in ReepB\u2212 mutants (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e8fa2995-1382-46c2-b2c3-4276f06e0356",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C44",
+      "claim": "ReepA\u2212 ReepB\u2212 double mutant larvae show increased coefficient of variation of Acsl::myc staining intensity in posterior but not anterior axons.",
+      "claim_type": "EXPLICIT",
+      "source": "ReepA\u2212 ReepB\u2212 double mutant larvae, but not ReepA\u2212 single mutants, showed an increased coefficient of variation of Acsl::myc staining intensity in posterior but not in anterior axons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative analysis of confocal images in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "1b4fbea5-2958-4212-a3ae-f64f925b25df",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C45",
+      "claim": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants are viable and fertile as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants were viable and fertile as adults, but survived poorly beyond two weeks of adulthood, compared to 4\u20135 weeks for wild-type adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed phenotype from maintaining fly stocks",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "bbf31744-74b6-4f8c-a6d5-93b36cff3567",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C46",
+      "claim": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants survive poorly beyond two weeks of adulthood, compared to 4\u20135 weeks for wild-type adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants were viable and fertile as adults, but survived poorly beyond two weeks of adulthood, compared to 4\u20135 weeks for wild-type adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed phenotype from maintaining fly stocks",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "aa44413a-b594-4f29-a941-4f9cf8d1ef3e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C47",
+      "claim": "Triple mutant larvae show increased fluctuation of Acsl::myc staining intensity along motor axons compared to wild-type, mainly in middle parts of longer axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple mutant larvae showed increased fluctuation of Acsl::myc staining intensity along motor axons compared to wild-type, mainly in middle parts (segment A4 and A5) of longer axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "0ce3b692-0ec4-454b-8806-8fe314990def",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C48",
+      "claim": "At its most extreme, increased fluctuation of Acsl::myc manifests as fragmentation of Acsl::myc labeling in triple mutant axons, which is never seen in wild-type axons.",
+      "claim_type": "EXPLICIT",
+      "source": "At its most extreme, this manifested as fragmentation of Acsl::myc labeling, which was never seen in wild-type axons (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "2ecae0bb-97d3-4852-819f-69286e81d92c",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C49",
+      "claim": "When gaps in labeling are found in the central regions of axons, labeling in the anterior and posterior parts of the same axons is usually continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "When gaps in labeling were found in the central regions of axons, labeling in the anterior and posterior parts of the same axons was usually continuous (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "0c0b8e88-8cf3-4845-9eb1-fc944823c861",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C50",
+      "claim": "Double labeling shows no effect on axonal plasma membrane in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant compared to control axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Double labeling of plasma membrane (CD4::tdGFP) and axonal ER (Acsl::myc) showed no effect on axonal plasma membrane in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant compared to control axons (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "bdf68d86-e581-469d-948d-4281637b149d",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C51",
+      "claim": "The ER fragmentation phenotype is limited to ER and does not affect axon integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that the phenotype was limited to ER and did not affect axon integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from plasma membrane labeling data in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "ca00c626-769b-434c-8aea-76bf59fc0abd",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C52",
+      "claim": "Rtnl1 loss-of-function axons show a mild ER fragmentation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1 loss-of-function axons, but not ReepA\u2212 ReepB\u2212 mutant axons, also showed a mild ER fragmentation phenotype (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "5049a775-0265-4053-b823-e37f904abbc7",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C53",
+      "claim": "ReepA\u2212 ReepB\u2212 mutant axons do not show an ER fragmentation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1 loss-of-function axons, but not ReepA\u2212 ReepB\u2212 mutant axons, also showed a mild ER fragmentation phenotype (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "f38e15d8-5b05-4ff3-aa48-eedadf997c4e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C54",
+      "claim": "Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 larvae show a fragmentation phenotype similar to Rtnl1\u2212 ReepA\u2212 ReepB\u2212, suggesting that loss of Rtnl1 is essential for it.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1(RNAi) ReepA\u2212 ReepB\u2212 larvae also showed a fragmentation phenotype similar to Rtnl1\u2212 ReepA\u2212 ReepB\u2212, suggesting that loss of Rtnl1 is essential for it (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 4B, with inference about Rtnl1 requirement",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "92f5e40b-1800-4e72-941e-568fd739b8b5",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C55",
+      "claim": "Rtnl1\u2212 ReepB\u2212 double mutant axons show a similar phenotype to Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1\u2212 ReepB\u2212 double mutant axons also showed a similar phenotype to Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy and quantification in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "6aa180be-7d28-4e2d-867a-2b8daad424d4",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C56",
+      "claim": "Loss of Rtnl1 causes irregular organization of axonal ER, and this phenotype is exacerbated by loss of ReepB, with no detectable contribution of ReepA loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, loss of Rtnl1 causes a mild irregular organization of axonal ER, and this phenotype is exacerbated by loss of ReepB, with no detectable contribution of ReepA loss",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of multiple genotypes in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "94027b34-0c2d-4680-8dc7-1875e7e9eadb",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C57",
+      "claim": "CG9186::GFP, Rtnl1::GFP and tdTomato::Sec61\u03b2 all localize to ER and show continuous labeling in wild-type axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipase CG9186::GFP (Thiel et al., 2013), Rtnl1::GFP (Rao et al., 2016) and tdTomato::Sec61\u03b2 (Summerville et al., 2016) all localize to ER, and all showed continuous labeling in wild-type (ReepA+) axons (Figure 5A; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 5A and Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "0e8fab45-d10f-46c4-98e1-859bd21812d4",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C58",
+      "claim": "CG9186::GFP shows occasional gaps in triple mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CG9186::GFP showed occasional gaps in triple mutant axons (Figure 5A), with at least one gap per larva visible by confocal microscopy in 6/17 larvae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "206edbbf-ffe1-400c-a87e-6d49ee74b736",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C59",
+      "claim": "After bleaching a 12 \u00b5m length of axon in either wild-type or triple mutant axons lacking gaps, rapid recovery of fluorescence from both ends of the bleached region is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "After bleaching a 12 \u00b5m length of axon in either wild-type axons or in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons lacking gaps, we observed rapid recovery of fluorescence from both ends of the bleached region (Figure 5; Figure 5\u2014figure supplement 1B; Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRAP experiments in Figure 5 and Video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e1a230b6-45db-4070-bfe2-b8586c6e7bba",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C60",
+      "claim": "The kinetics of fluorescence recovery after photobleaching are similar between wildtype and triple mutant axons lacking gaps.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics of recovery were similar between wildtype and triple mutant axons (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantitative FRAP analysis in Figure 5B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "c35b691d-120e-4709-a65d-3a25682be8e0",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C61",
+      "claim": "In regions next to gaps in CG9186::GFP labeling in triple mutant axons, good recovery of fluorescence from the end opposite the gap is observed, but no recovery across the gap.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed FRAP on regions next to gaps in CG9186::GFP labeling in triple mutant axons (Figure 5A); here we observed good recovery of fluorescence from the end of the bleached region opposite the gap, but no recovery across the gap (Figure 5; Figure 5\u2014figure supplement 1C; Videos 2\u20134)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by FRAP experiments in Figure 5 and Videos 2-4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "1ba37c22-18bc-4031-ad0f-5abf2321f702",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C62",
+      "claim": "Gaps in CG9186::GFP labelling are physical barriers to diffusion of CG9186::GFP, and hence gaps in the ER network.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that gaps in CG9186::GFP labelling were also physical barriers to diffusion of CG9186::GFP, and hence gaps in the ER network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP experiments showing no recovery across gaps",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "3ca795a3-cf6f-4be0-8f91-37676c329aee",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C63",
+      "claim": "Features such as higher or lower levels of CG9186::GFP labelling are mostly stable throughout a 200 s acquisition period.",
+      "claim_type": "EXPLICIT",
+      "source": "Features such as higher or lower levels of CG9186::GFP labelling (which could reflect variation in the numbers of tubules, or the presence of structures like cisternae) were mostly stable throughout a 200 s acquisition period (Figure 5A,E; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging in Figure 5A,E and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "b5624e3c-8ce4-47a8-b97c-675b915b4d6b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C64",
+      "claim": "Anterograde or retrograde movement of more brightly labeled ER regions is observed during live imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed some dynamic features, including anterograde or retrograde movement of more brightly labeled regions (Figure 5A,E) perhaps representing movement of ER tubules detached from the ER network",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging in Figure 5A,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4954fe36-a871-45f5-873c-953e1ea811cc",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C65",
+      "claim": "Retrograde movement of labeled puncta at around 0.3 \u00b5m/s is observed during live imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "and retrograde movement of labeled puncta (Figure 5E; Figure 5\u2014figure supplement 1C; Video 3), at around 0.3 \u00b5m/s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging and kymograph analysis in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "aef6ebf8-32fe-4ae4-861a-aa88239a47ff",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C66",
+      "claim": "Most gaps in ER labeling in triple mutants are stable over 200 s (7 out of 8 gaps imaged).",
+      "claim_type": "EXPLICIT",
+      "source": "While most gaps in ER labeling in triple mutants were stable over 200 s (7 out of 8 gaps imaged, including Videos 2\u20133)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by live imaging observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "60f3d583-85e2-4118-bb2d-85ba05aca697",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C67",
+      "claim": "In one case, a gap was closed up by anterograde movement of a 5 \u00b5m length of ER proximal to the gap, which simultaneously opened up a new gap proximal to the moving section.",
+      "claim_type": "EXPLICIT",
+      "source": "in one case a gap was closed up by anterograde movement of a 5 \u00b5m length of ER proximal to the gap, which simultaneously opened up a new gap proximal to the moving section (Figure 5\u2014figure supplement 1C; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging in Figure 5\u2014figure supplement 1C and Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "583fb9c0-3aaf-42ac-95c7-30d4e1c82469",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C68",
+      "claim": "In one case, a labeled punctum moved retrogradely across an ER gap without pausing, implying that microtubule-based transport was intact.",
+      "claim_type": "EXPLICIT",
+      "source": "In one case a labeled punctum moved retrogradely across an ER gap without pausing (Figure 5\u2014figure supplement 1C), implying that microtubule-based transport was intact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging in Figure 5\u2014figure supplement 1C, with inference about transport",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "a75d53bc-0c76-4586-9d12-0d0a828e1d31",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C69",
+      "claim": "ER is normally continuous in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, live imaging and photobleaching of CG9186::GFP both suggest that ER is normally continuous in axons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP and live imaging data in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "bcd1c5a5-0e67-42cb-abf6-407aa9c8c7da",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C70",
+      "claim": "Loss of reticulon and REEP proteins leads to occasional gaps in ER labeling that represent physical breaks of ER continuity.",
+      "claim_type": "EXPLICIT",
+      "source": "that loss of reticulon and REEP proteins leads to occasional gaps in ER labeling that represent physical breaks of ER continuity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP experiments showing no recovery across gaps",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "844756e0-9b92-43fb-a744-cd2272ae8a83",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C71",
+      "claim": "ER network organization in axons shows both static and dynamic features.",
+      "claim_type": "EXPLICIT",
+      "source": "and that ER network organization in axons shows both static and dynamic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from live imaging observations in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e7f3a887-d63e-487d-b306-37fd2cffd186",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C72",
+      "claim": "Rtnl1\u2212 larvae and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae show large accumulations of CSP in many peripheral nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Rtnl1\u2212 larvae and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae showed large accumulations of CSP in many peripheral nerves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by confocal microscopy in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7828b18c-77ca-4a36-b4f0-3f90ce94a8f9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C73",
+      "claim": "The large accumulations of CSP in Rtnl1\u2212 larvae can be rescued by two copies of a Rtnl1Pacman genomic clone.",
+      "claim_type": "EXPLICIT",
+      "source": "The large accumulations of CSP in Rtnl1\u2212 larvae could be rescued by two copies of a Rtnl1Pacman genomic clone (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genetic rescue experiment in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "a59215b9-5bed-4bd8-b5a6-4e79e6213ce1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C74",
+      "claim": "Wild-type larvae show a network of ER tubules in every axon that could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type larvae showed a network of ER tubules, in every axon that could be observed (Figure 7A left; serial sections in Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7A and Video 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "5c4bc887-2f0f-4fa0-b677-b5f66ceaa475",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C75",
+      "claim": "ER tubule outer diameter in wild-type axons averages around 40 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Tubule outer diameter averaged around 40 nm (Figure 7B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from electron microscopy images in Figure 7B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "865b00fd-184b-4b04-aef6-5f3ae5a76ad9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C76",
+      "claim": "Wild-type axons contain an average of around 1.6 ER tubules in each cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "and axons contained an average of around 1.6 ER tubules in each cross-section (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from electron microscopy images in Figure 7D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8b63d384-4ce2-4efd-b8c6-0bffb15ab390",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C77",
+      "claim": "3D reconstruction shows a tubular ER network with multiple branches, some dead ends, and continuity along nearly every axon sectioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstruction (Figure 7F left; Supplementary file 2) showed a tubular network with multiple branches, some dead ends, and continuity along nearly every axon sectioned.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by 3D reconstruction from serial EM sections in Figure 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "351a1d0c-9a6b-4257-b85c-f36f58cb7b5e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C78",
+      "claim": "ER tubules often show proximity to mitochondria or plasma membrane in wild-type axons.",
+      "claim_type": "EXPLICIT",
+      "source": "ER tubules often showed proximity to mitochondria or plasma membrane (Figure 7G left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "b73d441e-f72d-4475-ad32-03950d29136b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C79",
+      "claim": "Occasional structures resembling small patches of ER sheets with an adjoining cisterna are found in wild-type axons, continuous with the tubular ER network, at a frequency averaging around one per 20 \u00b5m per axon.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found occasional structures resembling small patches of ER sheets with an adjoining cisterna (Figure 7H), continuous with the tubular ER network (Video 6), at a frequency averaging around one per 20 \u00b5m per axon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7H and Video 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "54d06e9f-2e20-4ff6-bb0a-45eec9a31e8f",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C80",
+      "claim": "ER tubule diameter is increased to around 60 nm in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "ER tubule diameter was increased to around 60 nm (Figure 7B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from electron microscopy images in Figure 7B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "87492e2c-16e9-45e2-ad5b-4e423afc1f41",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C81",
+      "claim": "A lumen can be seen in some ER tubules in triple mutant axons, which is rarely seen in wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "allowing a lumen to be seen in some tubules (Figure 7A right; Video 7) that was rarely seen in wild-type (Figure 7A left; Video 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7A and Videos 5, 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4192a163-9c11-4184-8e3c-be1ac04d8a11",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C82",
+      "claim": "Most triple mutant axons exhibit only a single ER tubule per cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "and most triple mutant axons exhibited only a single ER tubule (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from electron microscopy images in Figure 7D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "be983467-c5b6-4347-9af2-9c84be1e8c8e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C83",
+      "claim": "Reconstructions show a less extensive ER network in mutant axons compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstructions (Figure 7F right; Supplementary file 3) showed a less extensive ER network in mutant axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by 3D reconstruction from serial EM sections in Figure 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e6ff7858-eb64-4f0a-b2d5-0e0ae7563cd9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C84",
+      "claim": "Frequent contacts of ER with mitochondria and plasma membrane are found in both wild-type and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequent contacts of ER with mitochondria and plasma membrane were found in both wild-type and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7719732d-7cb0-4983-9db9-b555ee178be8",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C85",
+      "claim": "Both wild-type and mutant axons show swellings containing mitochondria and clusters of vesicles resembling synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Both wild-type and mutant axons showed swellings containing mitochondria and clusters of vesicles resembling synaptic vesicles (Figure 7I; Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 7I and Video 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "a9c7107c-7d89-41dc-a20a-abce33f7fe72",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C86",
+      "claim": "Some discontinuity of the ER network is observed in about 10% of wild-type or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Some discontinuity of the ER network was observed in about 10% of wild-type or Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from serial EM sections in Figure 7L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e7b4bfe6-2ce5-43e6-87d4-dfcbb72df4c8",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C87",
+      "claim": "Gaps in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons are longer than in wild-type axons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, gaps in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons (Figure 7J,K; Video 9; Supplementary file 4) were longer (Figure 7M)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from serial EM sections in Figure 7M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "3ec72b24-492f-48b3-947c-d1d1e0350194",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C88",
+      "claim": "Gaps in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant axons are slightly more numerous than in wild-type, but not significantly when averaged across larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "and slightly more numerous (but not significantly when averaged across larvae; Figure 7N) than in wild-type axons",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from serial EM sections in Figure 7N",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "c00e0e54-3033-474b-927e-7a121f29978e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C89",
+      "claim": "The length of affected axons that lack ER tubules is nearly four-fold increased in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutants compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in nearly a four-fold increase in the length of affected axons that lacked ER tubules (Figure 7O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from serial EM sections in Figure 7O",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "0622ff68-c951-4da2-8d29-4046ac16da96",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C90",
+      "claim": "All glial classes, but particularly subperineurial glia, show a trend towards increased ER sheet profile length in Rtnl1\u2212 ReepA\u2212 ReepB\u2212 mutant nerves compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "All glial classes, but particularly subperineurial glia, showed a trend towards increased ER sheet profile length compared to control cells (Figure 8A\u2013I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from electron microscopy images in Figure 8A-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8e0af8a3-bec7-40bb-9835-0f5d25d5a3c9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C91",
+      "claim": "Triple mutant wrapping glia display more extensive wrapping, sometimes completely ensheathing axons, which is rarely observed in control nerve sections.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple mutant wrapping glia also displayed more extensive wrapping, sometimes completely ensheathing axons, which was rarely observed in control nerve sections (Figure 8J\u2013M; Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electron microscopy in Figure 8J-M and Figure 8\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8935b885-4bdb-4576-a3a3-5f4422ecab77",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C92",
+      "claim": "The tubular ER network is highly dynamic in non-neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubular ER network is highly dynamic in non-neuronal cells (Nixon-Abell et al., 2016; Valm et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7a6ad549-1808-43ba-8a44-c040e3b22eea",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C93",
+      "claim": "In axons, live imaging suggests dynamic features superimposed on a structure that is largely stable over 1\u20132 min of imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "and in axons our live imaging suggests dynamic features superimposed on a structure that is largely stable over the 1\u20132 min of imaging (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging data in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "ca99a928-6ae8-4115-ae86-7bed3e8c4c76",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C94",
+      "claim": "ER tubules are effectively ubiquitous in Drosophila peripheral nerve sections.",
+      "claim_type": "EXPLICIT",
+      "source": "EM examination of wild-type axonal ultrastructure revealed that ER tubules were effectively ubiquitous in Drosophila peripheral nerve sections, as seen previously in mammalian neurons (Tsukita and Ishikawa, 1976; Villegas et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by electron microscopy observations, with comparison to prior studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "eac6d019-9da3-4cba-b4dd-df593e82f284",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C95",
+      "claim": "Reconstruction over several \u00b5m shows a continuous network of ER tubules in most axons examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstruction over several \u00b5m showed a continuous network of ER tubules in most axons examined, in agreement with the ER continuity found in neurons by lipid dye labeling (Terasaki et al., 1994), and recently in reconstructions of serial sections from focused ion beam SEM (Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 3D reconstruction from serial EM sections, with comparison to prior studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e1880cd8-a9b3-4a24-a112-e84a093581db",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C96",
+      "claim": "In a few axons, short lengths of axon with no detectable ER are found.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a few axons, we found short lengths of axon with no detectable ER (Figure 7J\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by serial EM sections in Figure 7J-O",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "60bf7af1-7676-4622-8e26-4d6539be9ad1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C97",
+      "claim": "Larger ER tubules could potentially store and release more calcium than thinner ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger tubules could potentially store and release more calcium than thinner ones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about physiological consequences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "1fc818b6-8be2-4121-81cd-276e2b4390c6",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C98",
+      "claim": "The reduced ER network in mutants could make the role of the ER in calcium buffering or release more localized.",
+      "claim_type": "EXPLICIT",
+      "source": "while the reduced network could make the role of the ER in calcium buffering or release more localized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about physiological consequences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "cacab2e7-6981-43a7-94e1-327489a4ad95",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C99",
+      "claim": "The less extensive ER network in mutants might reduce the amount of contact between ER and other organelles, with consequences for calcium and lipid homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The less extensive ER network in mutants might also reduce the amount of contact between ER and other organelles, with consequences for calcium and lipid homeostasis that require these contacts, or for regulation of mitochondrial fission (Friedman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about physiological consequences, with citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "2fee2623-4d01-47f4-9bdf-e243cef080d9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C100",
+      "claim": "The reduced curvature of ER membrane in mutants might influence protein composition, since many membrane proteins have mechanisms for recognizing differential membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced curvature of ER membrane in mutants might also influence their protein composition, since many membrane proteins have mechanisms for recognizing differential membrane curvature (Antonny, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference with citation to prior work on membrane curvature sensing",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "447b7e2e-3691-4995-bbcc-e25352ab863b",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C101",
+      "claim": "The occasional lack of ER continuity could prevent propagation of ER-dependent Ca2+ signals like those seen in injured mammalian sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The occasional lack of continuity could prevent propagation of ER-dependent Ca2+ signals like those seen in injured mammalian sensory neurons (Cho et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference with citation to prior work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "445deb94-ad1a-42ec-bdc5-d66d528ebdc9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C102",
+      "claim": "Lack of ER continuity could cause local impairments in Ca2+ or lipid homeostasis that could lead to local transport inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "it could also cause local impairments in Ca2+ or lipid homeostasis that could lead to local transport inhibition, as is the case for mitochondrial transport (Wang and Schwarz, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference with citation to prior work on mitochondrial transport",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "2e0c51b2-c458-48dd-8807-fdad7bbf58ed",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C103",
+      "claim": "Lack of ER continuity does not appear to directly prevent axon transport.",
+      "claim_type": "EXPLICIT",
+      "source": "although lack of ER continuity does not appear to directly prevent axon transport (Figure 5\u2014figure supplement 1C; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by observation of particle movement across gaps in Figure 5\u2014figure supplement 1C and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "5e578cf0-39a5-4a60-bd2c-0338bf96f57f",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C104",
+      "claim": "Sporadic lack of ER continuity might explain the preferential sensitivity of distal longer axons to HSPs, since these would be more likely to suffer from a gap in ER continuity to the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporadic lack of ER continuity might explain the preferential sensitivity of distal longer axons to HSPs, since these would be more likely to suffer from a gap in ER continuity to the cell body, compared to proximal or shorter axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model to explain disease phenotypes",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "39320a6a-2e63-4ea5-a505-f7c3bd563016",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C105",
+      "claim": "Disease-causing alleles in single hairpin-encoding genes could promote degeneration in distal motor axons by increasing the probability of gaps in ER continuity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, disease-causing alleles in single hairpin-encoding genes could promote degeneration in distal motor axons by increasing the probability of such gaps, dependent on factors such as age, axon length or diameter, and ER tubule density and dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model to explain disease mechanisms",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "990fa40d-f806-453f-ba1b-bd5ec9e12f40",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "claim_id": "C106",
+      "claim": "The apparent ubiquity of ER in axons, the extent of its continuity over long distances, and the preferential susceptibility of distal longer axons to mutations affecting ER-modeling proteins all point to important physiological roles of this compartment and of its continuity.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent ubiquity of ER in axons, the extent of its continuity over long distances, and the preferential susceptibility of distal longer axons to mutations that affect ER-modeling proteins, all point to important physiological roles of this compartment and of its continuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from multiple observations in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d94012da-bc35-4317-8b75-ff030dc6a606",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify and characterize Drosophila REEP orthologs. CG42678 (ReepA) is the ortholog of mammalian REEP1-4, while CG8331 (ReepB) and CG4960 are orthologs of mammalian REEP5-6. ReepB::GFP localizes to ER in epidermal cells, CNS, peripheral nerves, and presynaptic terminals, while ReepA::GFP shows weaker expression and is not detected in axons or presynaptic terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are well-supported by sequence alignment data (Figure 1A) and confocal microscopy showing localization patterns (Figure 1E-I). The orthology assignments are based on phylogenetic analysis, and the differential expression and localization of ReepA and ReepB are clearly demonstrated with appropriate imaging controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "60b231db-3268-4557-acbe-df39a6f1b40e",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of Rtnl1 or both ReepA and ReepB disrupts ER network organization in larval epidermal cells. Rtnl1\u2212 and ReepA\u2212 ReepB\u2212 double mutants show reduced spatial fluctuation of KDEL staining, indicating loss of reticular ER organization. ReepA\u2212 ReepB\u2212 mutants also show longer ER sheet profiles by EM and increased ER stress in epidermis but not CNS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by quantitative confocal microscopy analysis (Figure 2A-B), electron microscopy measurements (Figure 2C), and ER stress reporter expression (Figure 2D-E). The quantification methods are appropriate, with sufficient sample sizes and statistical testing. The tissue-specific ER stress response is an interesting observation that is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "03b3019e-4e7e-4036-a941-a167a063093d",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of Rtnl1 or ReepB causes partial loss and irregular distribution of axonal ER marker Acsl::myc specifically in posterior (distal) but not anterior (proximal) motor axons. ReepA loss alone has no detectable effect, and ReepA\u2212 ReepB\u2212 double mutants phenocopy ReepB\u2212 single mutants. The phenotypes can be partially rescued by genomic clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are well-supported by confocal microscopy with quantification of both mean intensity and coefficient of variation (Figure 3A-B). The position-dependent effects are clearly demonstrated, genetic rescue experiments validate specificity, and the lack of ReepA contribution is consistently shown. Statistical analyses are appropriate with adequate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "3210d263-279b-4578-ab38-d20b55aeb869",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutants are viable but show reduced adult lifespan and severe axonal ER fragmentation phenotypes. Triple mutants show increased fluctuation and gaps in Acsl::myc labeling in middle portions of long axons, while anterior and posterior regions remain continuous. The phenotype is limited to ER and does not affect axon integrity. Rtnl1 loss is essential for the fragmentation phenotype, with ReepB loss exacerbating it and no detectable ReepA contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C56 are supported by extensive confocal microscopy with quantitative analysis of gaps and intensity variation (Figure 4). The plasma membrane labeling control (C50-C51) appropriately demonstrates that the phenotype is ER-specific. The genetic dissection showing Rtnl1 requirement and ReepB enhancement is thorough. However, the lifespan observation (C45-C46) lacks quantitative data and formal survival analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "e5bf634c-0268-40b1-981c-af7ee92a73b0",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple ER markers show continuous labeling in wild-type axons, with occasional gaps in triple mutants. FRAP experiments demonstrate that ER is physically continuous in wild-type and ungapped mutant axons, with similar recovery kinetics. Gaps in triple mutant axons represent physical barriers to diffusion, confirming breaks in ER continuity. Live imaging reveals both static and dynamic features of the axonal ER network, including stable structures and occasional movements of ER regions and puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C71 are strongly supported by complementary approaches: confocal microscopy of multiple ER markers, quantitative FRAP analysis with appropriate controls (Figure 5), and live imaging with kymograph analysis. The FRAP experiments elegantly demonstrate physical continuity in wild-type and physical breaks at gaps in mutants. The dynamic imaging provides important insights into ER network behavior. Sample sizes are adequate and quantification is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "2337c9af-7542-436d-b1e1-1053147c79c5",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rtnl1\u2212 and Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant larvae show large accumulations of synaptic vesicle protein CSP in peripheral nerves, which can be rescued by genomic Rtnl1 clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by confocal microscopy and quantification (Figure 6), with genetic rescue demonstrating specificity. This suggests axonal transport defects. However, the manuscript notes that similar large accumulations were not observed in the much shorter EM sections, raising questions about the frequency and distribution of these accumulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wild-type Drosophila axons contain an extensive network of ER tubules with ~40 nm outer diameter, averaging ~1.6 tubules per cross-section. 3D reconstruction shows a continuous tubular network with branches and occasional dead ends. ER tubules frequently contact mitochondria and plasma membrane. Occasional small ER sheet-like structures with cisternae are found at ~1 per 20 \u03bcm per axon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 are well-supported by serial section electron microscopy with ROTO staining, quantitative measurements, and 3D reconstruction (Figure 7A-H, Videos 5-6). The methodology is rigorous with appropriate sample sizes. The characterization of wild-type axonal ER ultrastructure is thorough and provides important baseline data. Measurements are clearly presented with statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "59e3f9f3-0c37-491c-a08e-88616e9cd941",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant axons show increased ER tubule diameter (~60 nm vs ~40 nm), visible lumens, and reduced tubule numbers (mostly single tubules per section). 3D reconstructions show a less extensive ER network. ER-mitochondria and ER-plasma membrane contacts remain frequent. Both wild-type and mutant axons show swellings with mitochondria and vesicle clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 are strongly supported by quantitative EM analysis with statistical comparisons (Figure 7A-G, I). The increased tubule diameter and reduced tubule number are consistent with loss of membrane curvature. The maintenance of organelle contacts is an important observation. Sample sizes are adequate and measurements are rigorously quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "0441cb71-811b-4d22-a252-c33a3742ebcf",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "About 10% of both wild-type and triple mutant axons show some ER discontinuity in the ~4.5 \u03bcm sections analyzed. However, gaps in triple mutant axons are significantly longer than in wild-type, though not significantly more numerous when averaged across larvae. This results in a nearly four-fold increase in total axon length lacking ER tubules in triple mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 are supported by systematic analysis of serial EM sections with clear quantification (Figure 7J-O). The finding that gap frequency is similar but gap length is increased is important. However, the relatively short lengths analyzed (~4.5 \u03bcm) and the 10% frequency in wild-type raise questions about whether some wild-type 'gaps' might be technical artifacts or very thin ER missed by the method, as the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "5baec6dd-7c6c-4033-9b3e-53cfe0791ad1",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rtnl1\u2212 ReepA\u2212 ReepB\u2212 triple mutant peripheral nerves show glial phenotypes. All glial classes, particularly subperineurial glia, show a trend toward increased ER sheet profile length. Triple mutant wrapping glia display more extensive wrapping, sometimes completely ensheathing individual axons, which is rare in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by EM analysis with quantification (Figure 8). The increased ER sheet length in glia is consistent with the epidermal cell phenotype. The wrapping glia phenotype is interesting but its relationship to ER defects is unclear\u2014it could be a secondary response to axonal dysfunction. Statistical analysis shows significant effects for subperineurial and wrapping glia.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "f97ead48-6883-497f-9750-aa01f88d73b8",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Drosophila axons have a dynamic axonal ER network with both static and dynamic features. Live imaging shows that most ER features are stable over 1-2 minutes, but some dynamic movements of ER regions and puncta occur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C93 are supported by live imaging data (Figure 5). The characterization of ER dynamics is appropriate given the imaging timeframe. However, the 1-2 minute observation window is relatively short, and longer-term dynamics remain unexplored. The claim of a 'dynamic' network is somewhat qualified by the predominance of stable features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "8ea88eee-043d-4577-a0f8-8818a6e206bb",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Loss of HSP hairpin proteins (reticulon and REEP) causes ER sheet expansion, partial loss of ER from distal motor axons, occasional discontinuities in axonal ER, and larger/fewer ER tubules consistent with loss of membrane curvature. These proteins are required for shaping and continuity of axonal ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 represent the main conclusions of the paper, synthesizing results from multiple experimental approaches (confocal microscopy, FRAP, EM). The evidence from Figures 2-7 collectively supports these conclusions. The interpretation that these phenotypes result from loss of membrane curvature is well-justified by the known functions of these proteins and the observed increase in tubule diameter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "a587b6c4-d363-46c1-8278-2ab9b3aaccb2",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ER tubules are effectively ubiquitous in Drosophila peripheral nerve axons. 3D reconstruction shows continuous ER networks in most axons examined, consistent with prior studies. However, short lengths of axon with no detectable ER are found in a few axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 are supported by systematic EM analysis (Figure 7, Videos 5-9). The finding of ubiquitous ER is consistent with prior work in mammalian neurons. The authors appropriately acknowledge several possible explanations for the occasional gaps observed even in wild-type, including technical limitations of the method. The comparison to prior studies strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "d91e8d46-5902-4bee-b536-4c2517f86c62",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Lack of ER continuity does not appear to directly prevent axon transport, as evidenced by observation of a labeled punctum moving retrogradely across an ER gap without pausing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is based on a single observation (Figure 5\u2014figure supplement 1C, Video 3). While this observation is interesting and suggests that microtubule-based transport can occur across ER gaps, a single event is insufficient to conclude that ER gaps do not affect transport. The CSP accumulation data (C72) actually suggest transport defects may occur. More systematic analysis would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose several speculative models for how ER structural defects might affect axonal physiology and contribute to HSP pathology, including effects on calcium storage/release, organelle contacts, protein composition, signal propagation, and preferential vulnerability of distal long axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C105 are explicitly speculative inferences about potential physiological consequences and disease mechanisms. While these are reasonable hypotheses based on known ER functions and the observed phenotypes, they are not directly tested in this study. The authors appropriately present these as possibilities ('could,' 'might') rather than established facts. These represent important directions for future work but should not be considered supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "b294e45a-804c-499b-8aee-cd406a760493",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide background on axonal ER structure and function, HSP genetics, and the roles of reticulon and REEP proteins in ER modeling, drawing on established literature and their prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C25 represent background knowledge and prior work that is appropriately cited. These claims establish the context and rationale for the current study. The citations appear accurate and comprehensive. The authors' prior work on Rtnl1 (C24-C25) provides important foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    },
+    {
+      "id": "7278ebe2-5e8b-4c31-9599-41da29937713",
+      "content_id": "015e9506-fd5e-4e36-897a-e855301361c8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The apparent ubiquity of ER in axons, its continuity over long distances, and the preferential susceptibility of distal longer axons to mutations affecting ER-modeling proteins all point to important physiological roles of this compartment and its continuity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is a reasonable synthesis of the study's findings and their implications. The ubiquity and continuity of axonal ER are demonstrated by the EM data, and the position-dependent effects of mutations (stronger in distal axons) are clearly shown. This conclusion appropriately integrates the experimental observations with the disease context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:15:32.186842Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f697869-bf69-4428-9242-cfd0b1473553",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "26da7810-d79b-444e-bde5-1fb3d0c3ec3a",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "16009bb9-941f-4c5c-8354-7116c3ae753d",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "d93acd4f-912d-49c0-8df9-a47ebbb182f8",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "deb805ef-9e99-4af8-8f8f-9131f2ee37e0",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "6b3da5fa-8893-4de8-a3eb-d4068160066b",
+      "result_id": "d94012da-bc35-4317-8b75-ff030dc6a606"
+    },
+    {
+      "claim_id": "c0fd2c97-7745-4fee-90df-db949840704b",
+      "result_id": "60b231db-3268-4557-acbe-df39a6f1b40e"
+    },
+    {
+      "claim_id": "4b232120-99a8-472a-ad3a-824199584a2e",
+      "result_id": "60b231db-3268-4557-acbe-df39a6f1b40e"
+    },
+    {
+      "claim_id": "cc9b78ae-d70b-49ae-b325-c967cd2d78eb",
+      "result_id": "60b231db-3268-4557-acbe-df39a6f1b40e"
+    },
+    {
+      "claim_id": "12c04223-114c-4def-9018-1af906e06cd4",
+      "result_id": "60b231db-3268-4557-acbe-df39a6f1b40e"
+    },
+    {
+      "claim_id": "948ff95f-0e38-4b24-9bc8-e07930d57c95",
+      "result_id": "60b231db-3268-4557-acbe-df39a6f1b40e"
+    },
+    {
+      "claim_id": "358a8429-8ccc-4b07-b7f2-34684ad22013",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "8400ff19-1953-4def-83a5-d91c23a342dc",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "8c2cf0e6-a516-4dc4-b63a-949feb54bfca",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "66de4fb0-b66c-4bc0-801d-df4c34655aa9",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "b492dea6-9de8-4eec-91c5-0262806d30ff",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "ea32a3d4-dac4-4ee3-a386-f694d44f90c1",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "4da11ee0-1bed-4ace-bdb9-ef2aa097a416",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "e8fa2995-1382-46c2-b2c3-4276f06e0356",
+      "result_id": "03b3019e-4e7e-4036-a941-a167a063093d"
+    },
+    {
+      "claim_id": "1b4fbea5-2958-4212-a3ae-f64f925b25df",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "bbf31744-74b6-4f8c-a6d5-93b36cff3567",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "aa44413a-b594-4f29-a941-4f9cf8d1ef3e",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "0ce3b692-0ec4-454b-8806-8fe314990def",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "2ecae0bb-97d3-4852-819f-69286e81d92c",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "0c0b8e88-8cf3-4845-9eb1-fc944823c861",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "bdf68d86-e581-469d-948d-4281637b149d",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "ca00c626-769b-434c-8aea-76bf59fc0abd",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "5049a775-0265-4053-b823-e37f904abbc7",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "f38e15d8-5b05-4ff3-aa48-eedadf997c4e",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "92f5e40b-1800-4e72-941e-568fd739b8b5",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "6aa180be-7d28-4e2d-867a-2b8daad424d4",
+      "result_id": "3210d263-279b-4578-ab38-d20b55aeb869"
+    },
+    {
+      "claim_id": "94027b34-0c2d-4680-8dc7-1875e7e9eadb",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "0e8fab45-d10f-46c4-98e1-859bd21812d4",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "206edbbf-ffe1-400c-a87e-6d49ee74b736",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "e1a230b6-45db-4070-bfe2-b8586c6e7bba",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "c35b691d-120e-4709-a65d-3a25682be8e0",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "1ba37c22-18bc-4031-ad0f-5abf2321f702",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "3ca795a3-cf6f-4be0-8f91-37676c329aee",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "b5624e3c-8ce4-47a8-b97c-675b915b4d6b",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "4954fe36-a871-45f5-873c-953e1ea811cc",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "aef6ebf8-32fe-4ae4-861a-aa88239a47ff",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "60f3d583-85e2-4118-bb2d-85ba05aca697",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "583fb9c0-3aaf-42ac-95c7-30d4e1c82469",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "a75d53bc-0c76-4586-9d12-0d0a828e1d31",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "bcd1c5a5-0e67-42cb-abf6-407aa9c8c7da",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "844756e0-9b92-43fb-a744-cd2272ae8a83",
+      "result_id": "e5bf634c-0268-40b1-981c-af7ee92a73b0"
+    },
+    {
+      "claim_id": "e7f3a887-d63e-487d-b306-37fd2cffd186",
+      "result_id": "2337c9af-7542-436d-b1e1-1053147c79c5"
+    },
+    {
+      "claim_id": "7828b18c-77ca-4a36-b4f0-3f90ce94a8f9",
+      "result_id": "2337c9af-7542-436d-b1e1-1053147c79c5"
+    },
+    {
+      "claim_id": "a59215b9-5bed-4bd8-b5a6-4e79e6213ce1",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "5c4bc887-2f0f-4fa0-b677-b5f66ceaa475",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "865b00fd-184b-4b04-aef6-5f3ae5a76ad9",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "8b63d384-4ce2-4efd-b8c6-0bffb15ab390",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "351a1d0c-9a6b-4257-b85c-f36f58cb7b5e",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "b73d441e-f72d-4475-ad32-03950d29136b",
+      "result_id": "4e2db7a0-ad6a-4684-bc74-e71151fcf69f"
+    },
+    {
+      "claim_id": "54d06e9f-2e20-4ff6-bb0a-45eec9a31e8f",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "87492e2c-16e9-45e2-ad5b-4e423afc1f41",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "4192a163-9c11-4184-8e3c-be1ac04d8a11",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "be983467-c5b6-4347-9af2-9c84be1e8c8e",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "e6ff7858-eb64-4f0a-b2d5-0e0ae7563cd9",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "7719732d-7cb0-4983-9db9-b555ee178be8",
+      "result_id": "59e3f9f3-0c37-491c-a08e-88616e9cd941"
+    },
+    {
+      "claim_id": "a9c7107c-7d89-41dc-a20a-abce33f7fe72",
+      "result_id": "0441cb71-811b-4d22-a252-c33a3742ebcf"
+    },
+    {
+      "claim_id": "e7b4bfe6-2ce5-43e6-87d4-dfcbb72df4c8",
+      "result_id": "0441cb71-811b-4d22-a252-c33a3742ebcf"
+    },
+    {
+      "claim_id": "3ec72b24-492f-48b3-947c-d1d1e0350194",
+      "result_id": "0441cb71-811b-4d22-a252-c33a3742ebcf"
+    },
+    {
+      "claim_id": "c00e0e54-3033-474b-927e-7a121f29978e",
+      "result_id": "0441cb71-811b-4d22-a252-c33a3742ebcf"
+    },
+    {
+      "claim_id": "0622ff68-c951-4da2-8d29-4046ac16da96",
+      "result_id": "5baec6dd-7c6c-4033-9b3e-53cfe0791ad1"
+    },
+    {
+      "claim_id": "8e0af8a3-bec7-40bb-9835-0f5d25d5a3c9",
+      "result_id": "5baec6dd-7c6c-4033-9b3e-53cfe0791ad1"
+    },
+    {
+      "claim_id": "da771813-b985-4ec2-b549-1b6fb6272cf7",
+      "result_id": "f97ead48-6883-497f-9750-aa01f88d73b8"
+    },
+    {
+      "claim_id": "7a6ad549-1808-43ba-8a44-c040e3b22eea",
+      "result_id": "f97ead48-6883-497f-9750-aa01f88d73b8"
+    },
+    {
+      "claim_id": "233f134f-c27e-4827-9fd3-1bf0f0bd41cb",
+      "result_id": "8ea88eee-043d-4577-a0f8-8818a6e206bb"
+    },
+    {
+      "claim_id": "2e15e44c-d0a0-46a0-b158-9da9983b6b7d",
+      "result_id": "8ea88eee-043d-4577-a0f8-8818a6e206bb"
+    },
+    {
+      "claim_id": "da4017ac-0988-4df5-8765-5d307420270c",
+      "result_id": "8ea88eee-043d-4577-a0f8-8818a6e206bb"
+    },
+    {
+      "claim_id": "d906e1f3-a0fb-4792-9628-e3bb973ef823",
+      "result_id": "8ea88eee-043d-4577-a0f8-8818a6e206bb"
+    },
+    {
+      "claim_id": "e14026eb-35ea-44ce-974b-c615dec61683",
+      "result_id": "8ea88eee-043d-4577-a0f8-8818a6e206bb"
+    },
+    {
+      "claim_id": "ca99a928-6ae8-4115-ae86-7bed3e8c4c76",
+      "result_id": "a587b6c4-d363-46c1-8278-2ab9b3aaccb2"
+    },
+    {
+      "claim_id": "eac6d019-9da3-4cba-b4dd-df593e82f284",
+      "result_id": "a587b6c4-d363-46c1-8278-2ab9b3aaccb2"
+    },
+    {
+      "claim_id": "e1880cd8-a9b3-4a24-a112-e84a093581db",
+      "result_id": "a587b6c4-d363-46c1-8278-2ab9b3aaccb2"
+    },
+    {
+      "claim_id": "2e0c51b2-c458-48dd-8807-fdad7bbf58ed",
+      "result_id": "d91e8d46-5902-4bee-b536-4c2517f86c62"
+    },
+    {
+      "claim_id": "60bf7af1-7676-4622-8e26-4d6539be9ad1",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "1fc818b6-8be2-4121-81cd-276e2b4390c6",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "cacab2e7-6981-43a7-94e1-327489a4ad95",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "2fee2623-4d01-47f4-9bdf-e243cef080d9",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "447b7e2e-3691-4995-bbcc-e25352ab863b",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "445deb94-ad1a-42ec-bdc5-d66d528ebdc9",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "5e578cf0-39a5-4a60-bd2c-0338bf96f57f",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "39320a6a-2e63-4ea5-a505-f7c3bd563016",
+      "result_id": "4e0a3130-180e-4c73-9ec6-fb7182b0f7d9"
+    },
+    {
+      "claim_id": "7a0c9e76-94e4-4c51-9b89-4029fa00f810",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "79d5803f-fc72-4dc2-8555-87038a0528c5",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "59b5f8cc-2085-4b16-a5eb-0a805c4ce409",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "ec59c237-0ea7-4520-b947-d7c6f5a7e38a",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "7b3287eb-478e-41ca-a2e6-316059d48f8c",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "047370cb-cdc1-462c-b4ea-0a8bae85b42e",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "82069097-b79c-4b74-8ca7-e2830ba644d7",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "127c6220-e2f4-4949-8069-887556908972",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "bfd10adc-f1f6-4543-b843-2964d6c1767e",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "c9193232-9aa7-4dd3-a4ff-7bbde3db2a3a",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "32ea7a74-498b-41c4-a52b-9c2b0d9864d1",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "7896b92b-a6e2-43a1-a91a-c362033072c1",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "d52b786e-1573-4f66-9357-b4f19d0e1fb3",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "fb89797c-7a3b-480c-8ddc-603b8b03565b",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "4ec27da0-9ed6-4c09-be2b-d3cb95d8c230",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "f100b943-f934-4b4f-adce-6be1eeb687d9",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "27acc1fd-e2f7-4a98-a644-8aa772b456d2",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "4bd8ace8-d26b-4ed7-8650-a6a41835b992",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "75f05d26-12ea-401b-a166-0bd76a69dfb7",
+      "result_id": "b294e45a-804c-499b-8aee-cd406a760493"
+    },
+    {
+      "claim_id": "990fa40d-f806-453f-ba1b-bd5ec9e12f40",
+      "result_id": "7278ebe2-5e8b-4c31-9599-41da29937713"
+    }
+  ],
+  "comparisons": []
+}

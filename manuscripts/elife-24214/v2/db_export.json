@@ -1,0 +1,2185 @@
+{
+  "submission": {
+    "id": "3f7d67a6-e7e2-4543-a692-c8f4df6448ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:07:01.694737Z",
+    "updated_at": "2025-12-01T19:07:01.694737Z"
+  },
+  "content": [
+    {
+      "id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "submission_id": "3f7d67a6-e7e2-4543-a692-c8f4df6448ed",
+      "content_type": "manuscript",
+      "content_text": "# Digitizing mass spectrometry data to explore the chemical diversity and distribution of marine cyanobacteria and algae\n\n## Authors\n\n- Tal Luzzatto-Knaan<sup>1</sup> ([ORCID: 0000-0002-8392-0501](https://orcid.org/0000-0002-8392-0501)) \u2020\n- Neha Garg<sup>1</sup>\n- Mingxun Wang<sup>2</sup>\n- Evgenia Glukhov<sup>3</sup>\n- Yao Peng<sup>4</sup>\n- Gail Ackermann<sup>5</sup>\n- Amnon Amir<sup>5</sup>\n- Brendan M Duggan<sup>1</sup>\n- Sergey Ryazanov<sup>6</sup>\n- Lena Gerwick<sup>3</sup>\n- Rob Knight<sup>5</sup>\n- Theodore Alexandrov<sup>1</sup>\n- Nuno Bandeira<sup>1</sup>\n- William H Gerwick<sup>1</sup> \u2020\n- Pieter C Dorrestein<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences University of California San Diego San Diego United States\n2. Center for Computational Mass Spectrometry and Department of Computer Science and Engineering University of California San Diego San Diego United States\n3. Center for Marine Biotechnology and Biomedicine Scripps Institution of Oceanography, University of California San Diego San Diego United States\n4. Department of Chemistry and Biochemistry University of California San Diego San Diego United States\n5. Departments of Pediatrics and Computer Science and Engineering University of California San Diego San Diego United States\n6. European Molecular Biology Laboratory Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural product screening programs have uncovered molecules from diverse natural sources with various biological activities and unique structures. However, much is yet underexplored and additional information is hidden in these exceptional collections. We applied untargeted mass spectrometry approaches to capture the chemical space and dispersal patterns of metabolites from an in-house library of marine cyanobacterial and algal collections. Remarkably, 86% of the metabolomics signals detected were not found in other available datasets of similar nature, supporting the hypothesis that marine cyanobacteria and algae possess distinctive metabolomes. The data were plotted onto a world map representing eight major sampling sites, and revealed potential geographic locations with high chemical diversity. We demonstrate the use of these inventories as a tool to explore the diversity and distribution of natural products. Finally, we utilized this tool to guide the isolation of a new cyclic lipopeptide, yuvalamide A, from a marine cyanobacterium.\n\n## Introduction\n\nThe marine environment is extraordinarily rich in both biological and chemical diversity. It is estimated that nearly 90% of all organisms living on earth inhabit marine and coastal environments (Blunt et al., 2012; Kiuru et al., 2014). Moreover, marine organisms are recognized as an extremely rich source of novel chemical entities that have potential utility in medicine, personal health care, cosmetics, biotechnology and agriculture (Gerwick and Moore, 2012; Kiuru et al., 2014; La Barre, 2014; Rastogi and Sinha, 2009). Marine cyanobacteria (\u2018blue-green algae\u2019) are considered the most ancient group of oxygenic photosynthetic organisms, having appeared on earth some three billion years ago. It is thought that their extensive evolutionary history explains, at least in part, the extensive nature of their structurally-unique and biologically-active natural products (Burja et al., 2001; Chlipala et al., 2011; Schopf, 2012; Whitton and Potts, 2012). Indeed, since the 1970s, several hundred unique chemical entities have been discovered from marine cyanobacteria, and these have been found to possess a remarkable spectrum of biological activities including anticancer, anti-inflammatory, antibacterial, anti-parasitic, neuromodulatory, and antiviral, among others (Blunt et al., 2015; Nunnery et al., 2010; Tan, 2007; Villa and Gerwick, 2010). Examples of marine cyanobacterial natural products that are under investigation for anticancer applications include the cyclodepsipeptides apratoxin A and F, the nitrogen-containing lipid curacin A and the lipopeptides dolastatin 10 and carmaphycin B (Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010). These natural product templates have inspired the synthesis of lead compounds using medicinal chemistry approaches, and have resulted in one clinically approved drug (Brentuximab vedotin) for the treatment of cancer; several others are in various stages of clinical and preclinical evaluation (Gerwick and Moore, 2012; Luesch et al., 2001a; 2001b; Tan et al., 2010; Tidgewell et al., 2010; Uzair et al., 2012). Unfortunately, such fruitful natural product materials, rich with so much unexplored potential, oftentimes disappear upon completion of academic careers and closing of laboratories.\n\nIn this study, we used a mass spectrometry based approach to digitize (convert to data format that can be stored, shared and analyzed by computational tools) the chemical inventory of an established marine cyanobacteria and algae collection in order to better evaluate its diversity and probe for novel natural products. Additionally, while a number of biologically potent natural products have been isolated from marine cyanobacteria and algae, the overall molecular profile of these organisms has not been compared to other classes of bacteria or terrestrial/freshwater cyanobacteria (Chlipala et al., 2011). To address this, we analyzed the crude extracts of a relatively large number of algae and cyanobacteria, as well as their derived chromatographic fractions, by high resolution liquid chromatography tandem mass spectrometry (HR-LC-MS/MS). We then compared this metabolomics dataset to four existing public datasets [Mass spectrometry Interactive Virtual Environment (MassIVE) repository] within the Global Natural Product Social (GNPS) platform (Wang et al., 2016).\n\nThe marine samples used in this study were derived from over 300 field collections from locations in the Indian, Indo-Pacific, Central and South Pacific, and Western Atlantic (Caribbean) oceans with initial field taxonomic identifications as predominantly cyanobacteria and macro-algae. It should be noted that these are environmental samples, and therefore are inherently communities of organisms and are not single axenic cultures. Additionally, three samples were from non-axenic laboratory cultures of the cyanobacteria Phormidium (No.1646) and Lyngbya (No. 1933, 1963); the latter two were recently classified as Moorea (Supplementary file 1) (Engene et al., 2012). From both a chemical and biosynthetic perspective, these three cultures represent the most intensively studied organisms in this dataset (Engene et al., 2012; Kleigrewe et al., 2015; Mevers et al., 2014; Pereira et al., 2010; Williamson et al., 2002). While these and other of our cultured filamentous cyanobacteria cannot yet be grown axenically, their MS-derived molecular data represent marine cyanobacterial metabolomics markers that aid in data analysis. Furthermore, in exploring the chemical diversity of marine cyanobacterial and algal assemblages, we established a cartographic platform that combines LC-MS data and geographic locations that facilitates the discovery of new chemical scaffolds as well as identifies geographical areas of high chemical diversity (Boeuf and Kornprobst, 2009). The discovery of such \u2018hotspots\u2019 may reveal new patterns of phylogenetic diversity as well as identify geographical areas with enhanced bioprospecting opportunities.\n\nAssessment of the chemical diversity of these marine cyanobacterial and algal collections involved four major steps: (1) Collection - including permits, field collection, transport, extraction, fractionation and metadata recording; (2) Data acquisition and digitization in public repository - by LC-HRMS/MS to generate molecular fingerprints; (3) Data analysis and visualization - clustering similarly structured compounds as molecular families within the GNPS platform, identification of known molecules and assessing the richness and diversity between as well as within samples; (4) Discovery - identification of geographical patterns of distribution, differentiating common from regiospecific natural products, dereplication of new derivatives and the discovery of previously uncharacterized natural products.\n\n## Results\n\nOver the past 30 years, a significant number of cyanobacterial and algal collections were obtained under the appropriate governmental permits using scuba diving and snorkeling in the Caribbean (Puerto Rico, Grenada, Panama), Central and South Pacific (Hawaii, Palmyra Atoll, French Polynesia, Fiji), Indo-Pacific (Indonesia, Papua New Guinea), and Indian Oceans (Madagascar, South Africa). These collections represent natural assemblages of benthic filamentous marine cyanobacteria and various classes of macro-algae (Rhodophyta, Chlorophyta and Phaeophyceae). Each collection was extracted (CH2Cl2/MeOH, 2:1) and fractionated using a standardized vacuum liquid chromatography protocol (Supplementary file 1). Approximately 2600 fractions originating from 317 marine collections, including the unfractionated crude samples, were analyzed by reversed phase ultra-performance liquid chromatography (RP-UPLC) coupled with high resolution quadrupole time-of-flight mass spectrometry (HR-qTOF-MS) to obtain retention times and MS and tandem MS/MS fragmentation spectra (LC-MS/MS). Nearly 6000 spectra were collected for each LC-MS/MS run, generating in excess of 15.6 million spectra for the samples in this study.\n\nThese data were analyzed using the GNPS platform enabling the extensive organization of the LC-MS/MS data (Wang et al., 2016). GNPS detected features (i.e. molecules) based on MS/MS spectra and MS intensities. Further, some of these MS/MS spectra were identified by matching to spectral libraries available on GNPS. Even in the absence of MS/MS spectral matching to known reference MS/MS spectra, GNPS molecular networking can associate structurally related molecules that exhibit similar MS/MS fragmentation patterns into molecular families (Watrous et al., 2012; Yang et al., 2013).\n\n### Comparative metabolomics and chemical diversity of large scale datasets\n\nFew tools allow assessment of the chemical diversity within large and diverse MS datasets such as those in the current study (Bouslimani et al., 2014; Charlop-Powers et al., 2015; Luzzatto-Knaan et al., 2015; Purves et al., 2016). To determine whether this collection of marine cyanobacterial and algal communities possessed unique chemical diversity, the LC-MS/MS data were analyzed with publicly available data sets accessed via the GNPS-MassIVE database (For datasets see methods) (Wang et al., 2016). These datasets include LC-MS/MS data from terrestrial and marine actinobacteria (1000 samples), lichens (132 samples), marine sponges and corals (260 samples) and freshwater cyanobacteria (535 samples). Collection of all datasets was acquired using tandem mass spectrometry to obtain unique fragmentation fingerprints for each detected molecule.\n\nTo evaluate the chemical diversity of these source materials, we employed diverse MS-based informatic approaches, including multivariate analyses and molecular networking. Multivariate approaches, such as principal component analysis (PCA) and partial least squares-discriminant analysis, (PLS-DA), have been widely employed to assess the chemical diversity of metabolomics data (Worley and Powers, 2013). Here, for comprehensive metabolomics analysis, we applied principal coordinate analysis (PCoA), a statistical method that provides an overview of the dissimilarities between samples based on the metabolome of an individual sample relative to all other samples in the analysis (He et al., 2015) The relatedness between samples is calculated by the dissimilarity distance matrix and displayed in a three-dimensional plot where each sphere represents a sample with specific MS/MS features. We utilized the Bray-Curtis distance matrix applied to all MS/MS features, as exported from GNPS, using the QIIME platform (Caporaso et al., 2010). The separation of the samples in PCoA space highlights the differences between the various origins of the samples (Figure 1A). The lichen samples separate from the marine associated samples, although they overlap the spatial distributions of some cyanobacteria populations, perhaps because most lichens contain cyanobacteria, bacteria and fungi (Mushegian et al., 2011). Interestingly, among the five environmental samples, the marine cyanobacteria/algae and freshwater cyanobacteria are more similar in their metabolomics profiles than any other of the source materials, even though the two aquatic environments are quite distinct (Figure 1A). Nevertheless, while presenting the highest similarity compared to the other datasets, the marine cyanobacteria/algae and freshwater cyanobacteria samples show a clear differentiation in their chemical inventories (Figure 1B). To quantify the common and differential chemical features driving these distances, we generated a Venn diagram using the MS/MS features. (Figure 1C,). This analysis revealed that only 13.7% of the marine cyanobacteria/algae molecular features overlapped with other datasets, highlighting that 86.3% were features unique to these collections. Among the molecular commonalities, a number of the mass spectrometry signals were identified as matches to reference spectra in GNPS. These included a mixture of primary metabolites such as amino acids, fatty acids, structural lipids, pheophytin and pheophorbide A (chlorophyll derived products), as well as common mass spectrometry background signals such as formate clusters, plasticizers and polymers. Remarkably, despite being most similar by PCoA analysis, no reference MS/MS spectra of the known freshwater cyanobacterial natural products matched with our marine cyanobacteria and algal collection dataset.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig1-v2.jpg)\n\n**Figure 1.:** (A) PCoA plots of 300 samples randomly selected from each dataset display the distance between samples based on molecular features using Bray-Curtis dissimilarity matrix. (B) Marine cyanobacteria and algae and freshwater cyanobacteria. Laboratory cultures of Phormidium 1646, Lyngbya 1933 are highlighted in red circles. Each sphere represents the full sample metabolome (C) Venn diagram display of overlapping MS/MS features. Percentage of overlapping features with the marine cyanobacteria and algae dataset are given in parenthesis in their respective colors (Supplementary file 1).\n\nIn exploring the chemical diversity of the marine cyanobacteria and algae communities, we hypothesized that either the organism collected (cyanobacterial or algal) or the geographical location was responsible for sample-to-sample metabolomics differences (Figure 2). Our PCoA analysis did not indicate differentiation based on field annotations as algal versus cyanobacterial (Figure 2A), and the non-significant clustering based on geographical origin, highlights the vast chemical diversity of samples within the same region (Figure 2B). PCA, the most common dimensionality reduction and visualization method used for metabolomics analysis, displayed a parallel outcome with minor trends being observed (Supplementary file 1, Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig2-v2.jpg)\n\n**Figure 2.:** PCoA plots of crude extract molecular features using Bray-Curtis, dissimilarity matrix. Each point represents a single sample and points are colored by metadata. (A) PCoA plot shows the distance between samples based on field identified classification. (B) PCoAs color coded by geographical origin shows the distance of all locations together (B: upper panel) and the individual PCoA plots of the four collection sites with most samples (B: lower panel). Laboratory cultures of Phormidium 1646, Lyngbya 1933 and Lyngbya 1963 are highlighted in orange circles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** PCA was performed using Bruker Profile Analysis software version 2.1. Samples are displayed by collection location as described in the legend. NAC-Curacao, PAB-Panama Bocas del Toro, PAC-Panama Coiba, PAG-Panama Gulf of Chiriqui, PAP-Panama Portobelo, PAL-Palmyra Atoll, PNG-Papua New Guinea.\n\nConstruction of fraction libraries has become a common strategy to make more efficient the discovery of bioactive molecules in natural products studies so as to reduce sample complexity for biological screening as well as increase the titer of minor constituents (Bugni et al., 2008; Harvey et al., 2015). In the current analysis, the fraction library yielded over five times the number of molecular features compared to the crude extracts, thereby enabling a more thorough assessment of chemical richness and diversity (Figure 3A). The fraction library resulted in 1094 molecular families compared to 132 in the crude extract analysis. This tenfold difference highlights the advantage of using fraction libraries for chemical and biological assay screens. By comparing the number of features as well as the number of underlying spectra for a given molecular family (Nguyen et al., 2013), we could identify particular chemical scaffolds that are more diverse in their structural variations and are more abundant in our collections. For example, the barbamide molecular family (Figure 3B) is comprised of 40 molecular features represented in 985 individual spectra and found in 75 collections. By contrast, the palmyrolide A molecular family has only two associated features and consists of 32 spectra that are found in five collections (Figure 3B). Using a rarefaction analysis, both the crude extracts and the fraction library were found to level off under the current experimental conditions of analysis, indicating that the sample collections are saturating the chemical diversity of these materials (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig3-v2.jpg)\n\n**Figure 3.:** (A) Rarefaction curve of cyanobacteria collection library showing the chemical richness of crude extracts vs. the fraction library. (B) Abundance of molecular families: Bars represent the number of features and spectra comprising each molecular family clustered by GNPS molecular networking. (C) Bar chart depicting both the total number of extracts from a given location and the percent contribution of unique features to the entire dataset. (D) Pie chart representing the percentage of unique molecular features attributed to origin of the sample. HI-Hawaii, NAC-Curacao, PAB-Panama Bocas del Toro, PAC-Panama Coiba, PAG-Panama Gulf of Chiriqui, PAP-Panama Portobelo, PAL-Palmyra Atoll, PNG-Papua New Guinea.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Molecular networking generated using MSV000078568/MSV000078892 datasets by http://gnps.ucsd.edu and visualized in Cytoscape. A-malyngamides [M+H]+, B-barbamides [M+H]+, C-curacins [M+H]+, D-hectochlorins [M+H]+, E-viequeamides [M+Na]+, F-carmabins [M+H]+, G-palmyramides [M+Na]+, H-palmyramides [M+H]+, I-dolastatins [M\u00a0+\u00a02 hr]+, J- cyanolides [M+H]+, K-apratoxins [M+H]+, L-hoiamides [M+H]+, M-hoiamides [M+Na]+, N-majusculamides [M+Na]+, O-hectochlorins [M+Na]+, P-palmyrolides [M+H]+. Spectral data dereplicated by fragmentation patterns present in spectral libraries available on GNPS. Nodes are color-coded by the geographical origin of the sample and labeled with parent mass (m/z). Edge thickness represents the cosine similarity score. Insets on right hand side depict the (B) barbamide and (C) cyanolide molecular families. Shown for each are the standard library spectrum (upper panel) and the matching sample spectrum from within the same node (lower panel).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Identification of apratoxin B based on library standards enabled dereplication of 5 known apratoxins (A, D, F, G, and H). Additional apratoxin derivatives were characterized based on mass differences of functional groups.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Based on barbamide (1) dereplication, peaks assigned to fragments enable the characterization of N-demethylbarbamide (2) and a substitution of the Phe and Leu groups as a new barbamide derivative (3).\n\n### Mapping the distribution of marine natural products\n\nTo identify locations of high chemical diversity among sampling sites represented in this study (locations with more unique natural products compared to other regions), we compared the MS/MS features found only in a single location to the overall diversity of the entire dataset (Figure 3C and D). To do this, we normalized the contribution of features from a single location to a percentage contribution as some locations were sampled more frequently than others based on metadata information collected across three decades (Figure 3C). For example, approximately 4% of all MS/MS features contributing to the overall diversity are from Panama-Bocas del Toro (PAB) whereas about 7\u20138% are each contributed from Panama-Portobelo (PAP) and Palmyra Atoll (PAL), and 20% are from Papua New Guinea (PNG) (Figure 3D).\n\nTo explore the chemical nature of differentially produced metabolites in the marine cyanobacterial and algal sample collections, GNPS based molecular networking was used and the network was visualized in Cytoscape (For molecular network and Cytoscape file see Materials and methods, Figure 3\u2014figure supplement 1) (Purves et al., 2016; Shannon et al., 2003; Watrous et al., 2012). As MS/MS spectral alignment detects molecular features, a set of structurally related features connected by edges is termed a \u2018molecular family\u2019. Experimental MS/MS spectra were dereplicated (also described as \u2018finding known unknowns\u2019 by the metabolomics community) against the community contributed mass spectral \u2018GNPS library\u2019 and third party spectral libraries including MassBank, HMDB, ReSpect and NIST 2014 housed within GNPS analysis infrastructure (Horai et al., 2010; Johnson and Lange, 2015; Sawada et al., 2012; Wang et al., 2016; Wishart et al., 2013). This is currently the largest molecular network generated and only possible through the GNPS interface (Wang et al., 2016). From the more than 15.6 million spectra collected, 6249 MS/MS spectra were dereplicated to existing publicly accessible reference data, with 91 of the matches to previously characterized cyanobacterial and algal derived natural products from 30 molecular families (Nguyen et al., 2013). The spectral library matches from the marine cyanobacteria/algae collection included: 74 matches to the GNPS library, 7 matches to the NIH pharmacologically active compounds library, 3 matches to the NIH natural product library, 1 match to the NIH clinical collection, 1 match to the FDA natural products library and 5 matches to the Faulkner legacy library. This is a match rate of about 0.04% which is much lower than database matches of the average untargeted metabolomics experiments (1.8%, [Wang et al., 2016]) and metabolomics analyses of model samples such as E. coli, human cell lines, mice or humans (da Silva et al., 2015). The low match rate to existing natural product libraries within GNPS highlights that these marine cyanobacterial/algal communities are significantly underexplored from a chemical perspective.\n\nThe hundreds of unannotated molecular families from these samples suggest that they contain a significant number of natural products that remain uncharacterized. Molecular networking allows putative structural propagation through a molecular family because most molecules of similar structure fragment similarly. By investigating selected molecular families, we identified previously characterized metabolites and previously undescribed derivatives (Supplementary file 2 and Figure 3\u2014figure supplements 2\u00a0and\u00a03). For example, we identified the spectral cluster representing the apratoxin molecular family by a spectral match to the apratoxin B library standard. Further dereplication of this molecular family using literature information and manual analysis of MS/MS spectra revealed several known apratoxin derivatives (A, D, F, G, H) (Figure 3\u2014figure supplement 2) (Luesch et al., 2002; Tidgewell et al., 2010; Watrous et al., 2012; Yang et al., 2013). Additional apratoxin derivatives are suggested on the basis of mass differences of common functional groups (Figure 3\u2014figure supplement 2). Further, GNPS identified a molecular family comprised of the barbamides (Orjala and Gerwick, 1996). Within this molecular family, we were able to deduce several candidate derivatives based on fragmentation patterns and presence of chlorine isotopes (Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 3 [1]) (Orjala and Gerwick, 1996; Yang et al., 2013). For example, a 14 Da decrease from the y ion of barbamide most likely results from loss of the amide methyl group, leading to N-desmethyl barbamide (Figure 3\u2014figure supplement 3 [2]). O-desmethyl barbamide was previously published and is identifiable by the loss of 14 Da from the characteristic MS/MS fragment containing the three chlorine atoms (m/z 242.98) (Kim et al., 2012). The 34 Da reduction from the y ion appears to be associated with the substitution of the Phe group by Leu, a conservative hydrophobic replacement for A-domains that accept Phe in the NRPS-based biosynthesis of barbamide. Such a conservative substitution has previously been observed in other NRPS biosynthetic systems (Figure 3\u2014figure supplement 3 [3]) (Flatt et al., 2006). This exchange of amino acids gives rise to a new molecular entity; however, it is reminiscent of related compounds, such as dysidin, which was isolated from the cyanobacteria-harboring sponge Dysidea herbacea (Ilardi and Zakarian, 2011).\n\nBecause a majority (55%, Figure 3D) of molecules detected in this dataset were found in more than one sampling location, we explored the spatial distribution and abundance of specific natural products using binning networks. For this visualization, the abundance/presence of a metabolite was correlated to the eight collection sites. In the network, each node represents a distribution pattern of molecules, where the node size and color correspond to the relative number of features that share the same distribution (Figure 4). Of the 256 conceivable regiospecific patterns (based on the eight collection sites) some molecules share similar distribution patterns, while some distribution patterns are absent or very minor in their abundance (light colored nodes). To visualize the distribution of select molecules identified via molecular networking, in our eight major sampling sites, MS/MS feature intensity values were projected onto a 2D geographical map based on GPS coordinates using the open-source tool \u2018ili (an open-source tool for 2D and 3D data visualization created by our laboratories, https://github.com/ili-toolbox/ili [Protsyuk et al., 2017],\u00a0available as a Google Chrome app; a copy is archived at\u00a0https://github.com/elifesciences-publications/ili) (see legend of Figure 4 for more information). For example, out of the 33,481 detected features, dolastatin 10 along with 72 other chemical features share the same widespread distribution pattern (Cura\u00e7ao (NAC), PAB, Panama-Coiba (PAC), PAL, PAP, PNG), while palmyramide A and 3033 other chemical features are endemic to PAL, at least within the scope of this data set, and are not found in any of the other sampling locations. Additionally, while barbamide is widely distributed, putative analogs are encountered relatively infrequently (Figure 4B and Figure 3\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig4-v2.jpg)\n\n**Figure 4.:** (A) Features were binned by their distribution patterns across the eight main geographical locations, each bin represented by a node with edges linking bins differing by one location. Number of features in each bin is presented according to size and color scale from white (0) to red (10,000) as indicated by the scale bar on the top. Spatial patterns are represented for selected natural products within these bins. Inserts in each map display zoomed-in sections of Panama, Cura\u00e7ao and Papua New Guinea. Each sample is designated to a specific coordinate based on GPS coordinates of the collection site (multiple samples are represented by spots placed around the collection site). See the URL provided below. (B) Spatial maps display chemogeographical distribution and abundance of barbamide (1) and two barbamide analogs (2, 3). Relative abundance is presented by Jet color scale from low (blue) to high (red). HI-Hawaii, NAC-Cura\u00e7ao, PAB-Panama Bocas del Toro, PAC-Panama Coiba, PAG-Panama Gulf of Chiriqui, PAP-Panama Portobelo, PAL-Palmyra Atoll, PNG-Papua New Guinea.(To use the open source tool \u2018ili\u00a0please open the\u00a0following link in Google Chrome:\u00a0http://ili-toolbox.github.io/?cyano/bg.png;cyano/intensities.csv. Please\u00a0wait until the data is loaded and visualized, then click on the Mapping submenu, and change the scale to Logarithmic, and Color map to Jet. For flipping through maps corresponding to different molecules, please click on the name of the molecule shown above the colorbar and select another molecule either with a click or with up-down arrow keys. Alternatively, you can refer to the example tab and choose cyanobacteria natural products.\u00a0If you experience any problems, please contact theodore.alexandrov@embl.de.)\n\n### Discovery of new natural products\n\nTo emphasize the application of MS-based geographic network analyses for the discovery of uncharacterized natural products, we examined several chemical features from locations of high chemical diversity, namely the PAP, PAL and PNG sites. One sample was chosen from PAP and targeted for the isolation of an m/z 536.333 molecule from a cluster with no described family members (For molecular network see Materials and methods, molecular family #483). This specific molecular feature was observed in several cyanobacterial collections of Lyngbya from PAP obtained in different years from 2007 to 2013 (collections in Dec 2007, Sept 2010 and Jan 2013). The MS/MS data indicated that this compound was peptidic and contained the amino acids glycine, valine (or N-methyl glycine), leucine or isoleucine, and 2-hydroxyvaleric acid (Hiv). The presence of this latter residue suggested it was the product of a non-ribosomal peptide synthetase (NRPS) (Kehr et al., 2011). An additional residue was observed corresponding to the fragment mass m/z 149.094, compatible with the formula C10H13O+. Further analysis of the sequential fragment losses suggested a putative structure of [Gly-Ile/Leu-Hiv-Val-C10H13O]+. A search for a putative peptide with a molecular mass m/z 536.333 in various chemical databases (Blunt et al., 2015, Blunt et al., 2012; Luzzatto-Knaan et al., 2015; http://pubs.rsc.org/marinlit/) was unsuccessful, suggesting that this natural product was uncharacterized.\n\nIn order to confirm the mass spectrometry-based partial structural assignment, we isolated and structurally characterized this natural product of mass m/z 536.333 (Figure 5, Figure 5\u2014figure supplements 1\u00a0and\u00a02, Supplementary file 3 [4]). Isolation of compound 4, given the common name of \u2018yuvalamide A\u2019, was guided by LC-MS analyses. NMR analysis (DMSO-d6) of the pure compound confirmed the presence of Gly, Val, Ile, and hydroxyisovaleric acid, and revealed the presence of 2,2-dimethyl-3-hydroxy-7-octynoic (Dhoya) as the C10H13O+ fragment (Figure 5, Figure 5\u2014figure supplements 1\u00a0and\u00a02, Supplementary file 3). These NMR-based determinations correlate well with the structural predictions obtained by mass spectrometry.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig5-v2.jpg)\n\n**Figure 5.:** (A) Molecular families and the spatial distribution of yuvalamide A [M+H]+ and [M+Na]+ ions are highlighted within yellow circles. MS/MS spectra display the linear structure for the non-ribosomal peptide (NRP) fragments Gly-Ile-Hiv-Val. (B) for the [M+H]+ and the (C) [M+Na]+ ions. (D) The full elucidated structure of yuvalamide A (4) as confirmed by NMR analysis (Figure 5\u2014figure supplements 1\u00a0and\u00a02, Supplementary file 3).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) 1H NMR spectrum of yuvalamide A with COSY and key HMBC correlations (600 Hz, DMSO-d6). (B) HMBC correlation of Dhoya-H3 - Gly-CO. (C) HMBC correlation of Dhoya-H6 - C7 and H6-C8.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The theoretical masses of predicted MS/MS fragments of yuvalamide A are shown in the top panel. The observed masses of these MS/MS fragments are labelled in the acquired spectrum.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24214/elife-24214-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Additional putative yuvalamide analogs observed in the molecular family.\u00a0Molecular families of [M+H]+ and [M+Na]+ ions highlighting yuvalamide A (4) (Gly-Ile-Hiv-Val-Dhoya) in yellow and the putative yuvalamide B (5) characterized as Dhoea analogue (Gly-Ile-Hiv-Val-Dhoea) in green circles. Two additional putative analogs characterized\u00a0522.3\u00a0m/z [M+H]+ (Gly-C10H17NO3-Val-Dhoya) and\u00a0572.3\u00a0m/z [M+Na]+ (Gly-Ile-MeHiv-Val-Dhoya). One analog with an [M+H]+ m/z 522.3156 (14 Da smaller than compound 4) displayed a similar, but not identical fragmentation pattern to yuvalamide A (Figure 5\u2014figure supplement 3). The linear order we propose is Gly-[C10H17NO3]-Val-Dhoya, as the \u221214 Da change is located in the Ile - Hiv residue region when compared to yuvalamide A. This is likely due to the promiscuous behavior of A domains in the NRPS biosynthetic assembly. Such promiscuous behavior where one amino acid is substituted by another, is quite common in non-ribosomal peptides, and results from similar amino acids being recognized by the cognate adenylation domain (Crawford et al., 2011). Another yuvalamide analog with a 572.3303 m/z (Figure 5\u2014figure supplement 3) that clusters with the sodiated yuvalamide molecular family possess a similar fragmentation pattern to the yuvalamide A but with an increase in 14 Da. This shift is likely due to presence of additional methyl group and the fragmentation suggests this methyl is near the Hiv residue.\n\nThe other chemical entities in the yuvalamide A molecular family were present at very low abundance, preventing their isolation and structural analysis by NMR. However, based on the structure of yuvalamide A and its fragmentation pattern by LC-ESI-MS/MS, we deduced putative structures of these co-metabolites. An analog of yuvalamide A (Figure 5\u2014figure supplement 3 compound 5, yuvalamide B, [M+H]+ m/z 538.3487, [M+Na]+ m/z 560.3320) was detected by HRMS. Its fragmentation was nearly identical to compound 4, differing only in the fragment belonging to Dhoya, suggesting this to be the alkene analog 2,2-dimethyl-3-hydroxy-7-octenoic acid (Dhoea). Co-occurring analogs possessing the Dhoya or Dhoea unit have been observed previously in marine cyanobacterial natural extracts. The Dhoya subunit is usually the more abundant of the two, as observed in this case for yuvalamide A (Boudreau et al., 2012; Han et al., 2005, 2011; Luesch et al., 2001; Sitachitta et al., 2000; Wan and Erickson, 2001). Moreover, the geographical distribution of yuvalamide B is the same as yuvalamide A (Figure 5), supporting the proposal that these share a common biosynthetic origin. Two additional yuvalamide analogs were observed and tentative structures were assigned based on MS (Figure 5\u2014figure supplement 3).\n\n## Discussion\n\nOver the last 40 years, a number of academic natural product discovery programs have generated unique and significant collections from a variety of sources. However, the samples as well as the associated collection and characterization information is often buried in individual laboratory materials and documentation, and frequently this disappears with academic turnovers. To explore a new paradigm for characterizing and preserving such information over a longer time period for the community at large, we harnessed recent advances and metabolomics approaches to deeply annotate the metabolomes of these collections. We then evaluated this rich dataset along with collection information for its diversity, distribution and discovery of new natural products.\n\nTo date, biodiversity studies have mostly relied on available genomic information (Bowen et al., 2013; Passarini et al., 2015). While organisms might be phylogenetically related, their metabolomic repertoire may vary greatly. The detection of biosynthetic gene clusters indicates natural product potential, and has been successfully employed to predict new molecules, especially of the core structure (Medema and Fischbach, 2015; Medema et al., 2015; Owen et al., 2015; Walsh, 2015). However, post assembly modifications (e.g. halogenations, oxidations, methylations) are often times difficult to predict without the structures in hand, and therefore genomic analyses do not provide a complete assessment of the secondary metabolomes. Chemical diversity represents the expression of that genetic potential and offers a new strategy to explore differences and to evaluate the diversity encrypted in complex samples and various environments. Herein, we broadly inventoried the molecules that are present in a large library of field collected marine algae and cyanobacteria using LC-MS/MS. Using the mass spectrometry detectable natural products from each sample, the chemodiversity and the regional patterns of these samples were characterized.\n\nIt is reported in the literature that marine cyanobacteria are an exceptional source for diverse new natural products (Blunt et al., 2015; Burja et al., 2001; Engene et al., 2011; Kiuru et al., 2014; Tan, 2007). However, this perception is difficult to assess quantitatively in comparison to other marine or terrestrial life forms. To gain insights into how unique are the secondary metabolites of marine cyanobacteria and algae, we compared these MS data with other metabolomic data sets that are available from the public domain.\n\nThe mass spectrometry data from marine cyanobacteria/algae collections obtained over the past 30 years indicate that, at a global level, this group is rich in metabolite features that do not overlap with other available metabolomic data sets (Figure 1C). Common multivariate analyses used for metabolomics were successful in distinguishing the different datasets based on their unique metabolomic inventories.\n\nKey to a chemical pattern analysis is the ability to organize molecules on the basis of structural features along with their associated metadata attributes. GNPS molecular networking generates molecular features that are based upon fragmentation similarity, thereby providing resolution at the individual molecular level. This approach also enables the rapid matching of spectra to known molecules by comparison with various natural product MS/MS libraries (Nguyen et al., 2016; Wang et al., 2016; Yang et al., 2013). In this regard, the MS/MS spectrum of a molecule is a unique molecular signature or barcode. When structurally similar molecules are fragmented, the resulting MS/MS spectra are very often quite similar because they contain similarly positioned labile bonds (Wang et al., 2016). Using molecular networking, a visual representation of these \u2018barcodes\u2019 is produced by grouping similar patterns. Molecular networking enables the evaluation of the MS/MS based detectable chemical space, and groups molecules that have similar biosynthetic origins and resultant structures. At the organism level (e.g. invertebrates, plants, corals), marine environments such as the Papua New Guinea archipelago (PNG) are considered to be biodiversity \u2018hotspots\u2019 (Bowen et al., 2013). However, not only is PNG a biodiversity hotspot, molecular networking quantitatively revealed that this region is rich in the presence of unique natural products compared to other sampled locations in this study (Figure 3) (Bowen et al., 2013; La Barre, 2014). Although this is demonstrated here for these marine algal and cyanobacterial collections, it would be interesting to evaluate if high biodiversity always correlates with high chemical diversity, and as a corollary, how chemical diversity changes upon a shift in biodiversity. The geographical patterns of molecule distribution could be further investigated via the tools presented here, given the appropriate sampling strategy. While molecular networking revealed the locations with lowest and highest chemical diversity, visualizing these data on a world map enabled assessment of the distribution patterns of specific molecules within the eight sampled regions. This analysis also enabled targeting samples with higher abundance of molecules of interest, and may therefore assist in characterizing exceptionally high-producers of natural products. We have demonstrated that some chemical entities were found in common to multiple locations (e.g. barbamide, dolastatin 10) whereas others appeared to be unique and endemic to specific sampling sites (e.g. hoiamide B, palmyramide) (Figure 4). This observation is supported by site resampling over several years, an insight gained as a distinctive attribute of this unique collection of marine samples.\n\nAdditional tracing of the metadata associated with a given molecular family can assist in identification of the producing organism, and facilitate future biosynthetic and ecological investigations (Coates et al., 2014; Harvey et al., 2015; Kleigrewe et al., 2015; Leal et al., 2016; Owen et al., 2013). Finally, we demonstrated the utility of this overall approach through the discovery and subsequent structural elucidation and geographical distribution of yuvalamide A (4), reported here for the first time.\n\n### Conclusion\n\nThe integration of molecular networking with geographical mapping revealed that marine algae and cyanobacteria have widely varying metabolite distributions. As we can see in this dataset most molecules are broadly distributed in disparate physical locations, whereas others are highly specific to particular locations. Whether this specificity to a given location is due to unique species with distinct metabolic capabilities, or to specific environmental factors regulating expression of these compounds, is unknown at present. Moreover, field collections are a complex mixture of microorganisms that hold a unique repertoire of natural products that may not be discoverable under laboratory conditions, even with sequenced strains. Therefore, our approach is uniquely capable of organizing the vast chemical diversity present in these complex environmental samples. Further, this approach could be used to identify locations with a higher level of chemical diversity as well as distribution patterns of natural products, potentially giving insights into their ecological roles. In turn, these perceptions may facilitate the search for novel natural products of utility to biomedicine and biotechnology.\n\n## Materials and methods\n\n### Collection and culturing\n\nA total of 317 diverse marine cyanobacterial and benthic algae collections were hand-collected in Panama, Papua New Guinea, Hawaii, Madagascar, Palmyra Atoll, Cura\u00e7ao, and a few other tropical marine sites at depths from 0.3 to 20 m with the aid of snorkel or scuba gear (Supplementary file 1). GPS location, preliminary field taxonomic identification of the specimens, and depth of collection were noted for most collections. Samples for subsequent chemical extraction were strained through a mesh bag to remove excess seawater, preserved in equal volumes of seawater and ethanol, transported to the laboratory, and stored at \u22124\u00b0C or \u221220\u00b0C until workup. Live samples of marine cyanobacteria were brought back to the laboratory in vented tissue culture flasks with 0.2 \u00b5m filtered native seawater and subsequently isolated to mono-cultures. These were cultured in SWBG-11 media with 35 g/L Instant Ocean (Aquarium Systems Inc.). Mono-cultures were grown at 28\u00b0C in a 16 hr light/8 hr dark cycle with a light intensity of\u00a0~7 \u00b5mol photon/s/m2 provided by 40 W cool white fluorescent lights. Specific collection information is described in the Supporting Information.\n\n### Extraction library\n\nChemistry samples were extracted repetitively with CH2Cl2:MeOH 2:1, dried in vacuo, and in most cases, fractionated into nine fractions (A-I) by silica gel vacuum liquid chromatography (VLC) using a stepwise gradient of hexanes/EtOAc and EtOAc/MeOH. Each fraction and crude extract was re-suspended at 5 mg/mL in pure DMSO and stored in 96-well plates at \u221220\u00b0C until analysis.\n\n### UHPLC-MS/MS analysis\n\nThe extracted metabolites were analyzed with an UltiMate 3000 UHPLC system (Thermo Scientific) using a Kinetex\u00a01.7 \u00b5m C18 reversed phase UHPLC column (50 \u00d7 2.1 mm) and Maxis Impact Q-TOF mass spectrometer (Bruker Daltonics) equipped with an ESI source. The data were acquired in positive ionization mode for parent mass (MS1) and tandem MS for molecular fragmentation (MS2). Amount of material injected from each sample was 3.3 \u00b5g. The data were acquired in positive ionization mode for parent mass (MS1) and tandem MS for molecular fragmentation (MS2). The gradient employed for chromatographic separation was 5% solvent B (ACN/H2O/formic acid 98%/2%/0.1%) with solvent A (H2O/ACN/formic acid 98%/2%/0.1%) for 1.5 min, a step gradient of 5% to 50% B in 0.5 min, held at 50% B for 2 min, a second gradient of 50\u2013100% B in 6 min, held at 100% B for 0.5 min, 100\u20135% B in 0.5 min and kept at 5% B for 0.5 min at a flow rate of 0.5 mL/min throughout the run. The MS analysis was performed on a Maxis QTOF mass spectrometer (Bruker Daltonics), controlled by the Otof Control and Hystar software packages (Bruker Daltonics), and equipped with ESI source. MS spectra were acquired as previously described (Garg et al., 2015).\n\n### Molecular networking\n\nA molecular network was created using the online workflow at GNPS (Wang et al., 2016). To de-noise, the data was filtered by removing all MS/MS peaks within\u00a0\u00b117 Da of the precursor m/z. MS/MS spectra were filtered by choosing only the top six peaks in the\u00a0\u00b150 Da window throughout the spectrum. The data were clustered with MS-Cluster with a parent mass tolerance of 1.0 Da and a MS/MS fragment ion tolerance of 0.5 Da to create consensus spectra. Consensus spectra that contained less than three spectra were discarded. A network was then created where edges were filtered to have a cosine score above 0.6 and more than four matched peaks. Further edges between two nodes were kept in the network if and only if each of the nodes appeared in each other's respective top 10 most similar nodes. The spectra in the network were then searched against GNPS spectral libraries. The library spectra were filtered in the same manner as the input data. The networking output was visualized using Cytoscape 2.8.3 free software (Shannon et al., 2003) and organized using the FM3 force directed layout (Hachul and Junger, 2004). Follow the link to the GNPS molecular network of multiple datasets: http://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=e69c25e3fbcf4c09b6e0c75633565f95. Links to the cyanobacteria/algae datasets: ftp://massive.ucsd.edu/MSV000078568, ftp://massive.ucsd.edu/MSV000078892 and the corresponding network on GNPS: http://gnps.ucsd.edu/ProteoSAFe/status.jsp?task=0837888b3dab43efa5bf9a50254c7c8f. For the Cytoscape file ftp://massive.ucsd.edu/MSV000078568/other/.\n\n### Statistics and diversity analysis\n\nThe MS/MS data tables generated by GNPS for all analyzed extracts and fractions was converted to a BIOM table (http://biom-format.org/) (McDonald et al., 2012). Each of the tables was then used for calculation the sample-sample distance metrics using binary metric (Binary-Jaccard) using QIIME (Caporaso et al., 2010) version 1.9. Principal coordinates were calculated and visualized based on various metadata categories (region, organism etc.) using EMPeror (V\u00e1zquez-Baeza et al., 2013). Rarefaction curves of 20 random iterations were generated by GNPS.\n\n### Spatial mapping of mass spectrometry data\n\nSpatial molecular maps were created with background map from a Google Map screenshot with several regions of interest enlarged and plotted as insets to the overview map. By visual examination, we assigned to each sampling spot the (x,y) pixel coordinates on the background map based on GPS coordinates taken at the time of collection. For multiple samples from the same location, spots were placed in adjacent locations. For each node of the molecular network generated in GNPS, we considered the area under the curve of all mapped spots, scaled them from 0% to 100% and assigned colors to all intensities by using the \u2018jet\u2019 color map, color-coding low intensities with blue, high intensities red, and other intensities with a colored gradient between blue and red. The rendering of the maps was performed by the \u2018ili tool for 2D and 3D spatial mapping (https://github.com/ili-toolbox/ili). The color was made gradually disappearing with highest intensity at the center of the sampling location and almost no intensity at the boundary of the spot. For this, a logarithmic combination of the default color and assigned color was used, with the coefficient exponentially depending on the distance from the sampling spot center.\n\n### Structure elucidation of yuvalamide A (4)\n\nA preliminary structure was deduced based on a HRMS (C28H45N3O7, 8\u00b0 unsaturation) and HRMS/MS (Bruker Daltonics Maxis Impact qTOF) fragment analysis. Exact masses observed were [M+H]+ m/z 536.3335 and [M+Na]+ m/z 558.3155 corresponding to a molecular formula of C28H45N3O7 (<0.9 ppm). Neutral losses of glycine, leucine/isoleucine and valine were observed. An additional loss matching the formula of 2-hydroxyisovaleric acid (Hiv) was observed suggesting yuvalamide was a non-ribosomal peptide. This MS-based fragment analysis suggested a Gly-Ile/Leu-Hiv-Val sequence with an additional C10H13O fragment. The peptide appeared to be cyclic based on degrees of unsaturation, and by database query, was a new compound.\n\nAnalysis of 2D NMR data (gCOSY, TOCSY, HSQC, HMBC) confirmed three of the five substructures (Val, Hiv, Gly) and clarified the structures of the remaining two (Figure 5\u2014figure supplement 1, Supplementary file 3). The Ile/Leu substructure was identified as Ile from COSY correlations between the beta protons at 1.96 ppm and a methyl group at \u03b4 0.86, the beta protons at \u03b4 1.96 and a pair of germinal protons at \u03b4 1.49 and 1.13, and between the geminal protons to a second methyl group at \u03b4 0.81. Finally, a 2,2-dimethyl-3-hydroxyoctynoic acid (Dhoya) residue was similarly identified. The gem-dimethyl arrangement was revealed by key HMBC correlations from CH3-9/10Dhoya to the carbonyl carbon C-1Dhoya, quaternary carbon C-2Dhoya, and oxygenated methine CH-3Dhoya. This latter resonance was connected by COSY to a linear sequence of three methylene groups, the terminal methylene of which was long range coupled to alkynyl carbons (\u03b4C 71.7 and 84.5), one of which (\u03b4C 84.5) showed a HMBC correlation to a terminal alkynyl proton (\u03b4H 2.78). The assembly of these substructures into an overall cyclic depsipeptide structure was enabled by a key HMBC correlation between Dhoya H3 (\u03b4H 4.71) and the Gly carbonyl (\u03b4C 168.6) (Figure 5\u2014figure supplement 1/2, Supplementary file 3). Additional HMBC correlations linking all the substructures verified the MS/MS-deduced sequence described above (Figure 5\u2014figure supplements 1\u00a0and\u00a02, Supplementray file 3).\n",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "06e3737f-d7d6-40bf-9d4b-e558c855963e",
+      "submission_id": "3f7d67a6-e7e2-4543-a692-c8f4df6448ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emmanuel Gaquerel, University of Heidelberg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24214.026](https://doi.org/10.7554/eLife.24214.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Digitizing mass spectrometry data to explore the chemical diversity and distribution of marine cyanobacteria and algae\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ian Baldwin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Tim Bugni (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis article by Luzzatto-Knaan et al. employs advances in MS/MS molecular networking developed in the Dorrestein lab to \"capture the chemical space and dispersal patterns\" of natural products from a set of samples from previous sample campaigns. The strength of the approach taken by the authors relies on the use of high-resolution MS/MS data to digitize the chemical inventory of the existing marine cyanobacteria and algae collection. This approach is combined with a systematic clustering, within the GNPS platform (https://gnps.ucsd.edu/), of the resulting molecular and fragmentation data according to compound families and in order to visualize the diversity, richness and geographical distribution of different classes of natural products.\n\nImportantly, by placing non-targeted MS/MS structural data processing at the forefront, this study represents an important shift from previous natural screening procedures that are typically guided by low-to-medium-throughput molecule bioactivity screening procedures. This analysis also confirms that marine cyanobacterial/algal communities are significantly under-explored from a chemical perspective. As such, the vast amount of information rapidly parsed through the GNPS-based approach may guide the isolation of new groups of metabolites, like the newly described metabolite yuvalamide A or of derivatives of known groups of metabolites such as the barbamides analogs and yuvalamide B.\n\nAll three reviewers were generally positive about the work presented in this study. Especially, all agreed that the authors generated an impressive amount of data and presented elaborated classification and visualization approaches to systematically evaluate these data. As the GNPS database continues to grow, the types of analyses presented in this study will certainly be able to answer questions that were previously not tractable.\n\nHowever, important concerns were raised regarding shortcomings in biological and geographical sampling design and how these hamper some of the conclusions drawn by the authors. Essential revisions are therefore needed in which conclusions most specifically with respect to geographical specificity should be toned down.\n\nEssential revisions:\n\n1) One major concern raised by the reviewers relates to the conclusions reached by the authors regarding geographical specificity. The observation of regiospecific clusters is interesting but since no targeted sampling covering the same phyla in the respective regions has been done, the clustering does not necessarily relate to the geographic location but may translate from sampling biases. Hence, a quantitative evaluation and discussion as performed in Figure 3 is problematic despite the effort for normalization. Also, plotting the data on a world map gives a nice picture but in the light of the small sample size (only 8 locations sampled) the suggested comprehensive global character of the study is not established. For all these reasons, generalizations in the text regarding the interpretation of regiospecific clusters are problematic and should be avoided during the revision: e.g. \"To visualize the global distribution of select molecules\" should rather read \u201cto visualize the distribution [\u2026] in our 8 sampling sites \". Along with this, authors should remove the core conclusion that this study comprehensively visualizes molecules that are distributed based on geography. Instead, we recommend that authors highlight that, given the appropriate sampling strategy, the geographical importance of molecule distribution could be investigated via the tools presented.\n\n2) Figures 2B and C do not clearly show regiospecific clustering. For example, the Papua New Guinea samples seem to be found throughout the figure. Since the figure is plotting dissimilarity relationships, it seems counterintuitive to use such a measure to understand regiospecific clustering. A similarity relationship might more clearly show regiospecific clustering. Also, while the collections of Panama are divided to three distinct locations the collections, in what I consider a larger area, Papua New Guinea is treated as one location. If one merges the diversities from Panama it gives the same percentage as PNG. Could the authors comment on this point, which echoes with the above recommendation to tone down conclusions about geographical specificity?\n\n3) Another concern is related to the selection of organisms includes (quite arbitrary) benthic filamentous marine cyanobacteria and various classes of macro-algae (Rhodophyta, Chlorophyta and Phaeophyceae) predominantly collected from warm waters (Carribean, Indo-Pacific, Indian Ocean\u2026). It is nice to see but no surprise that MS/MS features for marine cyanobacteria and algae are different from marine and terrestrial actinobacteria, lichens, freshwater cyanobacteria and corals. In relation with the previous points on geographic specificity, the authors should more explicitly acknowledge this biological bias in the text.\n\n4) Along the same line, the authors state that \"86.3% were features that were unique to these collections.\" In some way, the authors should provide a better method of capturing the current state of GNPS to provide a benchmark. While Figure 1C provides the number of molecular features, it would be useful to have a better understanding of the number of molecules present in GNPS at the time the comparison was made. Perhaps, this information is captured in Supplementary file 4. Looking at Figure 1C, it appears that most of GNPS might be comprised of data from cyanobacteria. How many of those features are represented in the current study? This information will be important for the reader to understand what the comparison entails.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Digitizing mass spectrometry data to explore the chemical diversity and distribution of marine cyanobacteria and algae\" for further consideration at eLife. Your revised article has been favorably evaluated by Ian Baldwin (Senior Editor) and the Reviewing Editor.\n\nThe revised manuscript is an improvement in terms of clarity of interpretation of the region-specific metabolome mining analysis in light of technically-understandable shortcomings. Also, we agree with the authors that the lack of a comprehensive global character does not contradict the advances and potential impact of the work. However, we felt that the following points needed further considerations before this manuscript can be accepted for publication:\n\n1) First, the Abstract still conveys the general idea that the authors conducted a comprehensive regio-specific analysis while only 8 sampling sites were considered. As discussed in the first round of review, this is a technically understandable shortcoming which does not alter the validity of the MS/MS and data analysis approaches, but the fact that the study is limited to 8 sampling sites should be stated in the Abstract.\n\n2) The lower panel of Figure 2 which is referred to as panel C in the third paragraph of the subsection \u201cComparative metabolomics and chemical diversity of large scale datasets\u201d is not labelled accordingly in the figure. This minor labelling discrepancy should be corrected.\n\n3) Point 3 raised during the review concerned the interpretation of the comparison of features derived from Panama and Papua New Guinea (PNG) samplings to the overall chemical diversity across sampling sites. Most notably, if one merges the explained chemical diversities from Panama, it results in the same percentage as PNG. Considering the sampling diversity and existing metadata, the authors in their response to this point do not agree with the suggestion of merging the chemical diversity analyses inferred for each of the Panama current location categories. This argument for not merging the Panama location categories is reasonable; however, we feel that it remains inappropriate to draw the particular strong conclusion: \"these numbers suggest that even though the sample sizes were similar, the detected chemical diversity varies greatly with PNG possessing the greatest chemical richness\". This final sentence of the paragraph could be removed without altering the overall description of the value of the analytical approach used to explain sampling site-specific chemical diversity.\n\n4) Finally, since the term \"digitizing\" or \"digitization\" is used in the title as well as throughout the text as a cornerstone step in the authors' workflow, it may be helpful for readers that one or two sentences are added to precisely define this term from a technical standpoint. Readers from different backgrounds will have different expectations as to what is meant by \"digitizing\".\n",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f28b26f-9e22-4f09-9c16-9ffb3622d9e3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C1",
+      "claim": "Nearly 90% of all organisms living on earth inhabit marine and coastal environments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that nearly 90% of all organisms living on earth inhabit marine and coastal environments (Blunt et al., 2012; Kiuru et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blunt et al., 2012 and Kiuru et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "0ae2b99b-24ca-49c6-823c-ef4a6dd8c3cd",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C2",
+      "claim": "Marine organisms are recognized as an extremely rich source of novel chemical entities that have potential utility in medicine, personal health care, cosmetics, biotechnology and agriculture.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, marine organisms are recognized as an extremely rich source of novel chemical entities that have potential utility in medicine, personal health care, cosmetics, biotechnology and agriculture (Gerwick and Moore, 2012; Kiuru et al., 2014; La Barre, 2014; Rastogi and Sinha, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gerwick and Moore, 2012; Kiuru et al., 2014; La Barre, 2014; Rastogi and Sinha, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3bad55ea-5c74-4124-b6df-f2c64eb3a2e2",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C3",
+      "claim": "Marine cyanobacteria are considered the most ancient group of oxygenic photosynthetic organisms, having appeared on earth some three billion years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Marine cyanobacteria ('blue-green algae') are considered the most ancient group of oxygenic photosynthetic organisms, having appeared on earth some three billion years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about cyanobacteria evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "346021e3-faba-4de2-a2aa-6947e356929c",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C4",
+      "claim": "The extensive evolutionary history of marine cyanobacteria explains, at least in part, the extensive nature of their structurally-unique and biologically-active natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that their extensive evolutionary history explains, at least in part, the extensive nature of their structurally-unique and biologically-active natural products (Burja et al., 2001; Chlipala et al., 2011; Schopf, 2012; Whitton and Potts, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burja et al., 2001; Chlipala et al., 2011; Schopf, 2012; Whitton and Potts, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "2e67d73c-782d-4374-9d05-a85ac5b5d461",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C5",
+      "claim": "Since the 1970s, several hundred unique chemical entities have been discovered from marine cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, since the 1970s, several hundred unique chemical entities have been discovered from marine cyanobacteria, and these have been found to possess a remarkable spectrum of biological activities including anticancer, anti-inflammatory, antibacterial, anti-parasitic, neuromodulatory, and antiviral, among others (Blunt et al., 2015; Nunnery et al., 2010; Tan, 2007; Villa and Gerwick, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blunt et al., 2015; Nunnery et al., 2010; Tan, 2007; Villa and Gerwick, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a7d768ac-ddf0-40e4-a18e-1ebd2d80d1d6",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C6",
+      "claim": "Marine cyanobacterial natural products possess a remarkable spectrum of biological activities including anticancer, anti-inflammatory, antibacterial, anti-parasitic, neuromodulatory, and antiviral activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, since the 1970s, several hundred unique chemical entities have been discovered from marine cyanobacteria, and these have been found to possess a remarkable spectrum of biological activities including anticancer, anti-inflammatory, antibacterial, anti-parasitic, neuromodulatory, and antiviral, among others (Blunt et al., 2015; Nunnery et al., 2010; Tan, 2007; Villa and Gerwick, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blunt et al., 2015; Nunnery et al., 2010; Tan, 2007; Villa and Gerwick, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "78c382c2-7a26-4977-8018-6188d0803eaa",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C7",
+      "claim": "Apratoxin A and F are cyclodepsipeptides from marine cyanobacteria under investigation for anticancer applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of marine cyanobacterial natural products that are under investigation for anticancer applications include the cyclodepsipeptides apratoxin A and F, the nitrogen-containing lipid curacin A and the lipopeptides dolastatin 10 and carmaphycin B (Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "757408f9-efaf-49ff-938c-a78adf87a580",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C8",
+      "claim": "Curacin A is a nitrogen-containing lipid from marine cyanobacteria under investigation for anticancer applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of marine cyanobacterial natural products that are under investigation for anticancer applications include the cyclodepsipeptides apratoxin A and F, the nitrogen-containing lipid curacin A and the lipopeptides dolastatin 10 and carmaphycin B (Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "cbe5f77c-6ff8-4727-b6e3-8e487a3dc361",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C9",
+      "claim": "Dolastatin 10 and carmaphycin B are lipopeptides from marine cyanobacteria under investigation for anticancer applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of marine cyanobacterial natural products that are under investigation for anticancer applications include the cyclodepsipeptides apratoxin A and F, the nitrogen-containing lipid curacin A and the lipopeptides dolastatin 10 and carmaphycin B (Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bai et al., 1990; Blokhin et al., 1995; Luesch et al., 2001a, 2001b; Pereira et al., 2012; Tidgewell et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a0336660-8f13-4c70-bcdb-fdb2aeb7b6dc",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C10",
+      "claim": "Marine cyanobacterial natural product templates have inspired the synthesis of lead compounds using medicinal chemistry approaches, resulting in one clinically approved drug (Brentuximab vedotin) for the treatment of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These natural product templates have inspired the synthesis of lead compounds using medicinal chemistry approaches, and have resulted in one clinically approved drug (Brentuximab vedotin) for the treatment of cancer; several others are in various stages of clinical and preclinical evaluation (Gerwick and Moore, 2012; Luesch et al., 2001a; 2001b; Tan et al., 2010; Tidgewell et al., 2010; Uzair et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gerwick and Moore, 2012; Luesch et al., 2001a; 2001b; Tan et al., 2010; Tidgewell et al., 2010; Uzair et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "86e84894-1319-4258-821f-3946548208cd",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C11",
+      "claim": "Several marine cyanobacterial natural product-derived compounds are in various stages of clinical and preclinical evaluation.",
+      "claim_type": "EXPLICIT",
+      "source": "These natural product templates have inspired the synthesis of lead compounds using medicinal chemistry approaches, and have resulted in one clinically approved drug (Brentuximab vedotin) for the treatment of cancer; several others are in various stages of clinical and preclinical evaluation (Gerwick and Moore, 2012; Luesch et al., 2001a; 2001b; Tan et al., 2010; Tidgewell et al., 2010; Uzair et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gerwick and Moore, 2012; Luesch et al., 2001a; 2001b; Tan et al., 2010; Tidgewell et al., 2010; Uzair et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "9a8904df-001a-45de-86f6-1b41ec608a21",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C12",
+      "claim": "The study analyzed crude extracts of a relatively large number of algae and cyanobacteria, as well as their derived chromatographic fractions, by high resolution liquid chromatography tandem mass spectrometry (HR-LC-MS/MS).",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we analyzed the crude extracts of a relatively large number of algae and cyanobacteria, as well as their derived chromatographic fractions, by high resolution liquid chromatography tandem mass spectrometry (HR-LC-MS/MS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "1b5221ab-5b22-43f4-8508-674a18fe32df",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C13",
+      "claim": "The metabolomics dataset was compared to four existing public datasets within the Global Natural Product Social (GNPS) platform.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compared this metabolomics dataset to four existing public datasets [Mass spectrometry Interactive Virtual Environment (MassIVE) repository] within the Global Natural Product Social (GNPS) platform (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the comparative analysis methodology with citation to Wang et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ca96a836-5552-486e-b20c-6dc5081f4808",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C14",
+      "claim": "The marine samples used in this study were derived from over 300 field collections from locations in the Indian, Indo-Pacific, Central and South Pacific, and Western Atlantic (Caribbean) oceans.",
+      "claim_type": "EXPLICIT",
+      "source": "The marine samples used in this study were derived from over 300 field collections from locations in the Indian, Indo-Pacific, Central and South Pacific, and Western Atlantic (Caribbean) oceans with initial field taxonomic identifications as predominantly cyanobacteria and macro-algae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the sample collection details",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "def788fe-0441-42d3-bdb8-acbefd15542a",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C15",
+      "claim": "The field collections had initial taxonomic identifications as predominantly cyanobacteria and macro-algae.",
+      "claim_type": "EXPLICIT",
+      "source": "The marine samples used in this study were derived from over 300 field collections from locations in the Indian, Indo-Pacific, Central and South Pacific, and Western Atlantic (Caribbean) oceans with initial field taxonomic identifications as predominantly cyanobacteria and macro-algae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the taxonomic composition of samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "4866c1eb-8fca-46c7-a2f7-ae9c24d104ef",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C16",
+      "claim": "The samples are environmental samples and are inherently communities of organisms and are not single axenic cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that these are environmental samples, and therefore are inherently communities of organisms and are not single axenic cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the nature of the samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "198cc055-989f-4e2e-ace2-09d5f75d84b0",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C17",
+      "claim": "Three samples were from non-axenic laboratory cultures of the cyanobacteria Phormidium (No.1646) and Lyngbya (No. 1933, 1963).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, three samples were from non-axenic laboratory cultures of the cyanobacteria Phormidium (No.1646) and Lyngbya (No. 1933, 1963); the latter two were recently classified as Moorea (Supplementary file 1) (Engene et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes specific cultured samples with citation to Engene et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "f54feb9e-78e2-4829-83af-1e2f4e169324",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C18",
+      "claim": "Lyngbya samples No. 1933 and 1963 were recently classified as Moorea.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, three samples were from non-axenic laboratory cultures of the cyanobacteria Phormidium (No.1646) and Lyngbya (No. 1933, 1963); the latter two were recently classified as Moorea (Supplementary file 1) (Engene et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Engene et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "882639f0-e0bd-4883-8f5d-de05ad17c594",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C19",
+      "claim": "The three laboratory cultures (Phormidium 1646, Lyngbya 1933, 1963) represent the most intensively studied organisms in this dataset from both a chemical and biosynthetic perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "From both a chemical and biosynthetic perspective, these three cultures represent the most intensively studied organisms in this dataset (Engene et al., 2012; Kleigrewe et al., 2015; Mevers et al., 2014; Pereira et al., 2010; Williamson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Engene et al., 2012; Kleigrewe et al., 2015; Mevers et al., 2014; Pereira et al., 2010; Williamson et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "d8e1a2cf-9caa-41e1-a635-2c7b05fff67d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C20",
+      "claim": "Approximately 2600 fractions originating from 317 marine collections were analyzed by reversed phase ultra-performance liquid chromatography (RP-UPLC) coupled with high resolution quadrupole time-of-flight mass spectrometry (HR-qTOF-MS).",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 2600 fractions originating from 317 marine collections, including the unfractionated crude samples, were analyzed by reversed phase ultra-performance liquid chromatography (RP-UPLC) coupled with high resolution quadrupole time-of-flight mass spectrometry (HR-qTOF-MS) to obtain retention times and MS and tandem MS/MS fragmentation spectra (LC-MS/MS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental methodology and sample numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "97128572-fa67-4a3c-9a47-ef8b05f5af6b",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C21",
+      "claim": "Nearly 6000 spectra were collected for each LC-MS/MS run, generating in excess of 15.6 million spectra for the samples in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly 6000 spectra were collected for each LC-MS/MS run, generating in excess of 15.6 million spectra for the samples in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the data acquisition results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ad9224b1-1fa5-48ee-baed-2c04d7cf3347",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C22",
+      "claim": "GNPS detected features (i.e. molecules) based on MS/MS spectra and MS intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "GNPS detected features (i.e. molecules) based on MS/MS spectra and MS intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the GNPS analysis methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "6590d898-faf9-4e8a-863c-69c41512a12e",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C23",
+      "claim": "GNPS molecular networking can associate structurally related molecules that exhibit similar MS/MS fragmentation patterns into molecular families.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the absence of MS/MS spectral matching to known reference MS/MS spectra, GNPS molecular networking can associate structurally related molecules that exhibit similar MS/MS fragmentation patterns into molecular families (Watrous et al., 2012; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Watrous et al., 2012; Yang et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "8315c099-e09b-4c0e-8d1a-49e64d1ab2ab",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C24",
+      "claim": "The publicly available datasets used for comparison include LC-MS/MS data from terrestrial and marine actinobacteria (1000 samples), lichens (132 samples), marine sponges and corals (260 samples) and freshwater cyanobacteria (535 samples).",
+      "claim_type": "EXPLICIT",
+      "source": "These datasets include LC-MS/MS data from terrestrial and marine actinobacteria (1000 samples), lichens (132 samples), marine sponges and corals (260 samples) and freshwater cyanobacteria (535 samples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the comparison datasets used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "95664468-cc4d-4dfc-abec-2e0212c012c9",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C25",
+      "claim": "The lichen samples separate from the marine associated samples in PCoA analysis, although they overlap the spatial distributions of some cyanobacteria populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The lichen samples separate from the marine associated samples, although they overlap the spatial distributions of some cyanobacteria populations, perhaps because most lichens contain cyanobacteria, bacteria and fungi (Mushegian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from PCoA analysis with citation to Mushegian et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "b6ae2513-ef37-479d-9da6-16d87f46d7c5",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C26",
+      "claim": "Most lichens contain cyanobacteria, bacteria and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "The lichen samples separate from the marine associated samples, although they overlap the spatial distributions of some cyanobacteria populations, perhaps because most lichens contain cyanobacteria, bacteria and fungi (Mushegian et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mushegian et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7a2e6ec7-8671-4438-8681-8718d6c78d95",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C27",
+      "claim": "Among the five environmental samples, the marine cyanobacteria/algae and freshwater cyanobacteria are more similar in their metabolomics profiles than any other of the source materials.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, among the five environmental samples, the marine cyanobacteria/algae and freshwater cyanobacteria are more similar in their metabolomics profiles than any other of the source materials, even though the two aquatic environments are quite distinct (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from PCoA analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "0b589b7a-3bc5-48dd-a044-c542c7e9bffc",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C28",
+      "claim": "The marine cyanobacteria/algae and freshwater cyanobacteria samples show a clear differentiation in their chemical inventories.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, while presenting the highest similarity compared to the other datasets, the marine cyanobacteria/algae and freshwater cyanobacteria samples show a clear differentiation in their chemical inventories (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from PCoA analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "d3756f19-e789-453c-b38a-db03e3b4235b",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C29",
+      "claim": "Only 13.7% of the marine cyanobacteria/algae molecular features overlapped with other datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that only 13.7% of the marine cyanobacteria/algae molecular features overlapped with other datasets, highlighting that 86.3% were features unique to these collections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from Venn diagram analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "de330131-17fa-47e5-afd8-57170d4d8d86",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C30",
+      "claim": "86.3% of the marine cyanobacteria/algae molecular features were unique to these collections.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that only 13.7% of the marine cyanobacteria/algae molecular features overlapped with other datasets, highlighting that 86.3% were features unique to these collections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from Venn diagram analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "167b2a40-2048-4cdc-b49e-35a834b0a207",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C31",
+      "claim": "Among the molecular commonalities, a number of the mass spectrometry signals were identified as matches to reference spectra in GNPS, including a mixture of primary metabolites such as amino acids, fatty acids, structural lipids, pheophytin and pheophorbide A (chlorophyll derived products), as well as common mass spectrometry background signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the molecular commonalities, a number of the mass spectrometry signals were identified as matches to reference spectra in GNPS. These included a mixture of primary metabolites such as amino acids, fatty acids, structural lipids, pheophytin and pheophorbide A (chlorophyll derived products), as well as common mass spectrometry background signals such as formate clusters, plasticizers and polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from GNPS spectral matching",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "5dcff4bb-1c4f-4f38-8e2b-89750e33ca0e",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C32",
+      "claim": "Despite being most similar by PCoA analysis, no reference MS/MS spectra of the known freshwater cyanobacterial natural products matched with the marine cyanobacteria and algal collection dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, despite being most similar by PCoA analysis, no reference MS/MS spectra of the known freshwater cyanobacterial natural products matched with our marine cyanobacteria and algal collection dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from comparative spectral matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "4da595d1-90a4-44cf-bbf3-5069a7efe272",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C33",
+      "claim": "PCoA analysis did not indicate differentiation based on field annotations as algal versus cyanobacterial.",
+      "claim_type": "EXPLICIT",
+      "source": "Our PCoA analysis did not indicate differentiation based on field annotations as algal versus cyanobacterial (Figure 2A), and the non-significant clustering based on geographical origin, highlights the vast chemical diversity of samples within the same region (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from PCoA analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "2ec36f44-bade-454c-8a14-d15f1e015039",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C34",
+      "claim": "The non-significant clustering based on geographical origin highlights the vast chemical diversity of samples within the same region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our PCoA analysis did not indicate differentiation based on field annotations as algal versus cyanobacterial (Figure 2A), and the non-significant clustering based on geographical origin, highlights the vast chemical diversity of samples within the same region (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from PCoA analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "179de95e-fec5-4b2c-988c-f73de95eeffd",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C35",
+      "claim": "The fraction library yielded over five times the number of molecular features compared to the crude extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current analysis, the fraction library yielded over five times the number of molecular features compared to the crude extracts, thereby enabling a more thorough assessment of chemical richness and diversity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "9628b831-dc25-4b6e-81ab-1be10eb2d554",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C36",
+      "claim": "The fraction library resulted in 1094 molecular families compared to 132 in the crude extract analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction library resulted in 1094 molecular families compared to 132 in the crude extract analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from molecular networking analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "aea189c0-1d0e-43a9-acf3-8284ac0406a3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C37",
+      "claim": "The barbamide molecular family is comprised of 40 molecular features represented in 985 individual spectra and found in 75 collections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the barbamide molecular family (Figure 3B) is comprised of 40 molecular features represented in 985 individual spectra and found in 75 collections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from molecular networking analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3533ca97-367d-4b61-9517-593a90c13f36",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C38",
+      "claim": "The palmyrolide A molecular family has only two associated features and consists of 32 spectra that are found in five collections.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the palmyrolide A molecular family has only two associated features and consists of 32 spectra that are found in five collections (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from molecular networking analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "67487b16-c205-4bf0-8b85-4b52bce35e75",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C39",
+      "claim": "Both the crude extracts and the fraction library were found to level off under the current experimental conditions of analysis using rarefaction analysis, indicating that the sample collections are saturating the chemical diversity of these materials.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a rarefaction analysis, both the crude extracts and the fraction library were found to level off under the current experimental conditions of analysis, indicating that the sample collections are saturating the chemical diversity of these materials (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from rarefaction analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "997c0601-e4ab-4ab8-9b96-0be36936490a",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C40",
+      "claim": "Approximately 4% of all MS/MS features contributing to the overall diversity are from Panama-Bocas del Toro (PAB).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, approximately 4% of all MS/MS features contributing to the overall diversity are from Panama-Bocas del Toro (PAB) whereas about 7\u20138% are each contributed from Panama-Portobelo (PAP) and Palmyra Atoll (PAL), and 20% are from Papua New Guinea (PNG) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from geographical distribution analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7f4b2f1a-5538-419c-8a21-7dd2b3ce2c3c",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C41",
+      "claim": "About 7\u20138% of all MS/MS features are each contributed from Panama-Portobelo (PAP) and Palmyra Atoll (PAL).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, approximately 4% of all MS/MS features contributing to the overall diversity are from Panama-Bocas del Toro (PAB) whereas about 7\u20138% are each contributed from Panama-Portobelo (PAP) and Palmyra Atoll (PAL), and 20% are from Papua New Guinea (PNG) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from geographical distribution analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "98d4b683-0d54-4218-8dbd-69ad175f4b12",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C42",
+      "claim": "20% of all MS/MS features are from Papua New Guinea (PNG).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, approximately 4% of all MS/MS features contributing to the overall diversity are from Panama-Bocas del Toro (PAB) whereas about 7\u20138% are each contributed from Panama-Portobelo (PAP) and Palmyra Atoll (PAL), and 20% are from Papua New Guinea (PNG) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from geographical distribution analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "74c680d3-7ad2-41ba-bd82-04bae64c2ab2",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C43",
+      "claim": "From the more than 15.6 million spectra collected, 6249 MS/MS spectra were dereplicated to existing publicly accessible reference data.",
+      "claim_type": "EXPLICIT",
+      "source": "From the more than 15.6 million spectra collected, 6249 MS/MS spectra were dereplicated to existing publicly accessible reference data, with 91 of the matches to previously characterized cyanobacterial and algal derived natural products from 30 molecular families (Nguyen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from spectral matching analysis with citation to Nguyen et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "72d52cf4-0f44-4880-acda-45f3aa171b6d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C44",
+      "claim": "91 of the spectral matches were to previously characterized cyanobacterial and algal derived natural products from 30 molecular families.",
+      "claim_type": "EXPLICIT",
+      "source": "From the more than 15.6 million spectra collected, 6249 MS/MS spectra were dereplicated to existing publicly accessible reference data, with 91 of the matches to previously characterized cyanobacterial and algal derived natural products from 30 molecular families (Nguyen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from spectral matching analysis with citation to Nguyen et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "6c6a012a-066e-4081-aa68-7f290fc1dd96",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C45",
+      "claim": "The spectral library matches from the marine cyanobacteria/algae collection included: 74 matches to the GNPS library, 7 matches to the NIH pharmacologically active compounds library, 3 matches to the NIH natural product library, 1 match to the NIH clinical collection, 1 match to the FDA natural products library and 5 matches to the Faulkner legacy library.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral library matches from the marine cyanobacteria/algae collection included: 74 matches to the GNPS library, 7 matches to the NIH pharmacologically active compounds library, 3 matches to the NIH natural product library, 1 match to the NIH clinical collection, 1 match to the FDA natural products library and 5 matches to the Faulkner legacy library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative breakdown of spectral matches by library source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "57a11e87-cefc-423d-b4fc-25cd254cb3c6",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C46",
+      "claim": "The match rate is about 0.04% which is much lower than database matches of the average untargeted metabolomics experiments (1.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "This is a match rate of about 0.04% which is much lower than database matches of the average untargeted metabolomics experiments (1.8%, [Wang et al., 2016]) and metabolomics analyses of model samples such as E. coli, human cell lines, mice or humans (da Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison with citation to Wang et al., 2016 and da Silva et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "0a3fed72-9eb3-4e95-b006-d2bc0b8e1ff3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C47",
+      "claim": "The low match rate to existing natural product libraries within GNPS highlights that these marine cyanobacterial/algal communities are significantly underexplored from a chemical perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "The low match rate to existing natural product libraries within GNPS highlights that these marine cyanobacterial/algal communities are significantly underexplored from a chemical perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the low match rate data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "df2b0a06-6447-4c74-ad55-3603abf550a6",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C48",
+      "claim": "The hundreds of unannotated molecular families from these samples suggest that they contain a significant number of natural products that remain uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "The hundreds of unannotated molecular families from these samples suggest that they contain a significant number of natural products that remain uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the molecular networking results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "e57dc3f3-d3c5-485d-9a1d-2dd9a19d58bb",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C49",
+      "claim": "Molecular networking allows putative structural propagation through a molecular family because most molecules of similar structure fragment similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular networking allows putative structural propagation through a molecular family because most molecules of similar structure fragment similarly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established principles of mass spectrometry fragmentation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "69fc8396-6c24-40ff-a289-c7890602ad42",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C50",
+      "claim": "The apratoxin molecular family was identified by a spectral match to the apratoxin B library standard.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified the spectral cluster representing the apratoxin molecular family by a spectral match to the apratoxin B library standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from spectral matching analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "cccf2adf-e98b-467f-8710-037cd88d7b8d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C51",
+      "claim": "Further dereplication of the apratoxin molecular family using literature information and manual analysis of MS/MS spectra revealed several known apratoxin derivatives (A, D, F, G, H).",
+      "claim_type": "EXPLICIT",
+      "source": "Further dereplication of this molecular family using literature information and manual analysis of MS/MS spectra revealed several known apratoxin derivatives (A, D, F, G, H) (Figure 3\u2014figure supplement 2) (Luesch et al., 2002; Tidgewell et al., 2010; Watrous et al., 2012; Yang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from dereplication analysis with citations to Luesch et al., 2002; Tidgewell et al., 2010; Watrous et al., 2012; Yang et al., 2013, shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "56de03e4-2d37-48c5-9e0b-692c057816c7",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C52",
+      "claim": "Additional apratoxin derivatives are suggested on the basis of mass differences of common functional groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional apratoxin derivatives are suggested on the basis of mass differences of common functional groups (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from mass spectrometry data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a02a045c-1ada-4991-b8a3-35d52ffa9f5d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C53",
+      "claim": "A 14 Da decrease from the y ion of barbamide most likely results from loss of the amide methyl group, leading to N-desmethyl barbamide.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a 14 Da decrease from the y ion of barbamide most likely results from loss of the amide methyl group, leading to N-desmethyl barbamide (Figure 3\u2014figure supplement 3 [2]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from MS/MS fragmentation pattern shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "91cb946c-9d7e-44fc-bbcb-d02cd24e9dbb",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C54",
+      "claim": "O-desmethyl barbamide was previously published and is identifiable by the loss of 14 Da from the characteristic MS/MS fragment containing the three chlorine atoms (m/z 242.98).",
+      "claim_type": "EXPLICIT",
+      "source": "O-desmethyl barbamide was previously published and is identifiable by the loss of 14 Da from the characteristic MS/MS fragment containing the three chlorine atoms (m/z 242.98) (Kim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "758ac798-45f3-448a-a11c-bcd1ed2be621",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C55",
+      "claim": "The 34 Da reduction from the y ion appears to be associated with the substitution of the Phe group by Leu, a conservative hydrophobic replacement for A-domains that accept Phe in the NRPS-based biosynthesis of barbamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The 34 Da reduction from the y ion appears to be associated with the substitution of the Phe group by Leu, a conservative hydrophobic replacement for A-domains that accept Phe in the NRPS-based biosynthesis of barbamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MS/MS fragmentation pattern and knowledge of NRPS biosynthesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "1617d084-5724-4adb-b381-f77507aad005",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C56",
+      "claim": "Such a conservative substitution has previously been observed in other NRPS biosynthetic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a conservative substitution has previously been observed in other NRPS biosynthetic systems (Figure 3\u2014figure supplement 3 [3]) (Flatt et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Flatt et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "5d19670d-cf0f-44cb-923c-7660b6c204eb",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C57",
+      "claim": "55% of molecules detected in this dataset were found in more than one sampling location.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a majority (55%, Figure 3D) of molecules detected in this dataset were found in more than one sampling location, we explored the spatial distribution and abundance of specific natural products using binning networks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from geographical distribution analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3448b5e2-3f61-4377-9d30-c8ae15743e07",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C58",
+      "claim": "Dolastatin 10 along with 72 other chemical features share the same widespread distribution pattern (Cura\u00e7ao (NAC), PAB, Panama-Coiba (PAC), PAL, PAP, PNG).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, out of the 33,481 detected features, dolastatin 10 along with 72 other chemical features share the same widespread distribution pattern (Cura\u00e7ao (NAC), PAB, Panama-Coiba (PAC), PAL, PAP, PNG), while palmyramide A and 3033 other chemical features are endemic to PAL, at least within the scope of this data set, and are not found in any of the other sampling locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from geographical distribution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3e72b756-16dc-4a6d-9a0b-d4199dacb7b7",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C59",
+      "claim": "Palmyramide A and 3033 other chemical features are endemic to PAL and are not found in any of the other sampling locations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, out of the 33,481 detected features, dolastatin 10 along with 72 other chemical features share the same widespread distribution pattern (Cura\u00e7ao (NAC), PAB, Panama-Coiba (PAC), PAL, PAP, PNG), while palmyramide A and 3033 other chemical features are endemic to PAL, at least within the scope of this data set, and are not found in any of the other sampling locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from geographical distribution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "2d8402e0-ec81-4a0d-9ab2-bd987b60a3d2",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C60",
+      "claim": "While barbamide is widely distributed, putative analogs are encountered relatively infrequently.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while barbamide is widely distributed, putative analogs are encountered relatively infrequently (Figure 4B and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from geographical distribution analysis shown in Figure 4B and Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "e6a736d9-f526-4ab2-a35e-f840240c7a3a",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C61",
+      "claim": "Papua New Guinea (PNG) is not only a biodiversity hotspot but is also rich in the presence of unique natural products compared to other sampled locations in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not only is PNG a biodiversity hotspot, molecular networking quantitatively revealed that this region is rich in the presence of unique natural products compared to other sampled locations in this study (Figure 3) (Bowen et al., 2013; La Barre, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from molecular networking analysis shown in Figure 3, with citations to Bowen et al., 2013; La Barre, 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "b8352c33-0e5c-40e3-a550-838b26a09afd",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C62",
+      "claim": "One sample was chosen from PAP and targeted for the isolation of an m/z 536.333 molecule from a cluster with no described family members.",
+      "claim_type": "EXPLICIT",
+      "source": "One sample was chosen from PAP and targeted for the isolation of an m/z 536.333 molecule from a cluster with no described family members (For molecular network see Materials and methods, molecular family #483).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "fc2bb794-a636-4112-9c03-7136a95d12d0",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C63",
+      "claim": "This specific molecular feature (m/z 536.333) was observed in several cyanobacterial collections of Lyngbya from PAP obtained in different years from 2007 to 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "This specific molecular feature was observed in several cyanobacterial collections of Lyngbya from PAP obtained in different years from 2007 to 2013 (collections in Dec 2007, Sept 2010 and Jan 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from MS data across multiple collections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "1b683cfa-1bed-4698-9865-bab598d79b11",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C64",
+      "claim": "The MS/MS data indicated that the m/z 536.333 compound was peptidic and contained the amino acids glycine, valine (or N-methyl glycine), leucine or isoleucine, and 2-hydroxyvaleric acid (Hiv).",
+      "claim_type": "EXPLICIT",
+      "source": "The MS/MS data indicated that this compound was peptidic and contained the amino acids glycine, valine (or N-methyl glycine), leucine or isoleucine, and 2-hydroxyvaleric acid (Hiv).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from MS/MS fragmentation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "4d8c8616-2465-4111-89b8-712944361795",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C65",
+      "claim": "The presence of 2-hydroxyvaleric acid (Hiv) suggested the m/z 536.333 compound was the product of a non-ribosomal peptide synthetase (NRPS).",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of this latter residue suggested it was the product of a non-ribosomal peptide synthetase (NRPS) (Kehr et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural features with citation to Kehr et al., 2011",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "770fa3bc-a591-4a69-88c2-9278e2a3dd86",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C66",
+      "claim": "An additional residue was observed corresponding to the fragment mass m/z 149.094, compatible with the formula C10H13O+.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional residue was observed corresponding to the fragment mass m/z 149.094, compatible with the formula C10H13O+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from MS/MS fragmentation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "d11af06d-09ca-408b-aaeb-31813e6f8bb7",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C67",
+      "claim": "Further analysis of the sequential fragment losses suggested a putative structure of [Gly-Ile/Leu-Hiv-Val-C10H13O]+.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the sequential fragment losses suggested a putative structure of [Gly-Ile/Leu-Hiv-Val-C10H13O]+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MS/MS fragmentation pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "17535e8e-66fd-4665-b837-53d6d2bb3ba8",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C68",
+      "claim": "A search for a putative peptide with a molecular mass m/z 536.333 in various chemical databases was unsuccessful, suggesting that this natural product was uncharacterized.",
+      "claim_type": "EXPLICIT",
+      "source": "A search for a putative peptide with a molecular mass m/z 536.333 in various chemical databases (Blunt et al., 2015, Blunt et al., 2012; Luzzatto-Knaan et al., 2015; http://pubs.rsc.org/marinlit/) was unsuccessful, suggesting that this natural product was uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from database searching with citations to Blunt et al., 2015, Blunt et al., 2012; Luzzatto-Knaan et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ee2d56a9-020d-4426-800e-4a52ca1f7042",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C69",
+      "claim": "The isolated compound 4 was given the common name of 'yuvalamide A'.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to confirm the mass spectrometry-based partial structural assignment, we isolated and structurally characterized this natural product of mass m/z 536.333 (Figure 5, Figure 5\u2014figure supplements 1 and 2, Supplementary file 3 [4]). Isolation of compound 4, given the common name of 'yuvalamide A', was guided by LC-MS analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the newly discovered compound",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "aaee9bba-d3dd-412b-bc1b-20a6064543f6",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C70",
+      "claim": "NMR analysis (DMSO-d6) of yuvalamide A confirmed the presence of Gly, Val, Ile, and hydroxyisovaleric acid.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR analysis (DMSO-d6) of the pure compound confirmed the presence of Gly, Val, Ile, and hydroxyisovaleric acid, and revealed the presence of 2,2-dimethyl-3-hydroxy-7-octynoic (Dhoya) as the C10H13O+ fragment (Figure 5, Figure 5\u2014figure supplements 1 and 2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from NMR structural analysis shown in Figure 5 and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a437e91f-94f7-46b9-a009-7cc407665c8a",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C71",
+      "claim": "NMR analysis revealed the presence of 2,2-dimethyl-3-hydroxy-7-octynoic (Dhoya) as the C10H13O+ fragment in yuvalamide A.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR analysis (DMSO-d6) of the pure compound confirmed the presence of Gly, Val, Ile, and hydroxyisovaleric acid, and revealed the presence of 2,2-dimethyl-3-hydroxy-7-octynoic (Dhoya) as the C10H13O+ fragment (Figure 5, Figure 5\u2014figure supplements 1 and 2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from NMR structural analysis shown in Figure 5 and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "eb9afa77-ab10-4af0-9dcf-4bec774f926e",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C72",
+      "claim": "The NMR-based determinations correlate well with the structural predictions obtained by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "These NMR-based determinations correlate well with the structural predictions obtained by mass spectrometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of NMR and MS results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "0fc71908-ea27-404c-bb9b-a85d05907bad",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C73",
+      "claim": "Yuvalamide A has the molecular formula C28H45N3O7.",
+      "claim_type": "EXPLICIT",
+      "source": "A preliminary structure was deduced based on a HRMS (C28H45N3O7, 8\u00b0 unsaturation) and HRMS/MS (Bruker Daltonics Maxis Impact qTOF) fragment analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from high resolution mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "70668d39-31d4-4cf1-8653-b8a00e321e44",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C74",
+      "claim": "Yuvalamide A has exact masses observed as [M+H]+ m/z 536.3335 and [M+Na]+ m/z 558.3155.",
+      "claim_type": "EXPLICIT",
+      "source": "Exact masses observed were [M+H]+ m/z 536.3335 and [M+Na]+ m/z 558.3155 corresponding to a molecular formula of C28H45N3O7 (<0.9 ppm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from high resolution mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "06727c7d-4b14-41a9-95a5-8162cb073b50",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C75",
+      "claim": "The mass accuracy for yuvalamide A was less than 0.9 ppm.",
+      "claim_type": "EXPLICIT",
+      "source": "Exact masses observed were [M+H]+ m/z 536.3335 and [M+Na]+ m/z 558.3155 corresponding to a molecular formula of C28H45N3O7 (<0.9 ppm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from high resolution mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3023cdcd-076b-40c1-a8dc-8556208d0972",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C76",
+      "claim": "Yuvalamide A is a cyclic depsipeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of these substructures into an overall cyclic depsipeptide structure was enabled by a key HMBC correlation between Dhoya H3 (\u03b4H 4.71) and the Gly carbonyl (\u03b4C 168.6) (Figure 5\u2014figure supplement 1/2, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from NMR structural analysis shown in Figure 5\u2014figure supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "b8218384-9c5b-4046-a4fa-9a3f29ca7c6d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C77",
+      "claim": "An analog of yuvalamide A (yuvalamide B, [M+H]+ m/z 538.3487, [M+Na]+ m/z 560.3320) was detected by HRMS.",
+      "claim_type": "EXPLICIT",
+      "source": "An analog of yuvalamide A (Figure 5\u2014figure supplement 3 compound 5, yuvalamide B, [M+H]+ m/z 538.3487, [M+Na]+ m/z 560.3320) was detected by HRMS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from high resolution mass spectrometry shown in Figure 5\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "113e9992-ff1a-4346-bb9f-e80c5eb0225d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C78",
+      "claim": "Yuvalamide B's fragmentation was nearly identical to yuvalamide A, differing only in the fragment belonging to Dhoya, suggesting this to be the alkene analog 2,2-dimethyl-3-hydroxy-7-octenoic acid (Dhoea).",
+      "claim_type": "EXPLICIT",
+      "source": "Its fragmentation was nearly identical to compound 4, differing only in the fragment belonging to Dhoya, suggesting this to be the alkene analog 2,2-dimethyl-3-hydroxy-7-octenoic acid (Dhoea).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from MS/MS fragmentation pattern comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "140bd246-f329-4a07-9ccd-8b97b6cc7172",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C79",
+      "claim": "Co-occurring analogs possessing the Dhoya or Dhoea unit have been observed previously in marine cyanobacterial natural extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-occurring analogs possessing the Dhoya or Dhoea unit have been observed previously in marine cyanobacterial natural extracts. The Dhoya subunit is usually the more abundant of the two, as observed in this case for yuvalamide A (Boudreau et al., 2012; Han et al., 2005, 2011; Luesch et al., 2001; Sitachitta et al., 2000; Wan and Erickson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boudreau et al., 2012; Han et al., 2005, 2011; Luesch et al., 2001; Sitachitta et al., 2000; Wan and Erickson, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "fba7f5ef-b55e-4678-b9b0-f6d03d3ae254",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C80",
+      "claim": "The Dhoya subunit is usually the more abundant than Dhoea, as observed in this case for yuvalamide A.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-occurring analogs possessing the Dhoya or Dhoea unit have been observed previously in marine cyanobacterial natural extracts. The Dhoya subunit is usually the more abundant of the two, as observed in this case for yuvalamide A (Boudreau et al., 2012; Han et al., 2005, 2011; Luesch et al., 2001; Sitachitta et al., 2000; Wan and Erickson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from data with citations to Boudreau et al., 2012; Han et al., 2005, 2011; Luesch et al., 2001; Sitachitta et al., 2000; Wan and Erickson, 2001",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7d14b658-e6e6-4f2f-80eb-f85821a846e4",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C81",
+      "claim": "The geographical distribution of yuvalamide B is the same as yuvalamide A.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the geographical distribution of yuvalamide B is the same as yuvalamide A (Figure 5), supporting the proposal that these share a common biosynthetic origin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from geographical distribution analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7b5cbce8-5f2e-4ed4-84d6-b477549a174f",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C82",
+      "claim": "Yuvalamide A and B share a common biosynthetic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the geographical distribution of yuvalamide B is the same as yuvalamide A (Figure 5), supporting the proposal that these share a common biosynthetic origin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from geographical distribution and structural similarity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "4cb967c0-e12a-412f-b9d5-cd6400a3b7b7",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C83",
+      "claim": "Two additional yuvalamide analogs were observed and tentative structures were assigned based on MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Two additional yuvalamide analogs were observed and tentative structures were assigned based on MS (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mass spectrometry analysis shown in Figure 5\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "63815457-c4a6-411b-a48d-88ace3e7ad11",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C84",
+      "claim": "While organisms might be phylogenetically related, their metabolomic repertoire may vary greatly.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, biodiversity studies have mostly relied on available genomic information (Bowen et al., 2013; Passarini et al., 2015). While organisms might be phylogenetically related, their metabolomic repertoire may vary greatly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about metabolomics with citations to Bowen et al., 2013; Passarini et al., 2015",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "c1297a2c-ff89-4c14-86a0-147ae5715867",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C85",
+      "claim": "The detection of biosynthetic gene clusters indicates natural product potential and has been successfully employed to predict new molecules, especially of the core structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of biosynthetic gene clusters indicates natural product potential, and has been successfully employed to predict new molecules, especially of the core structure (Medema and Fischbach, 2015; Medema et al., 2015; Owen et al., 2015; Walsh, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Medema and Fischbach, 2015; Medema et al., 2015; Owen et al., 2015; Walsh, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "31dea3c9-8f2f-4c92-9060-9a17e69d269f",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C86",
+      "claim": "Post assembly modifications (e.g. halogenations, oxidations, methylations) are often times difficult to predict without the structures in hand.",
+      "claim_type": "EXPLICIT",
+      "source": "However, post assembly modifications (e.g. halogenations, oxidations, methylations) are often times difficult to predict without the structures in hand, and therefore genomic analyses do not provide a complete assessment of the secondary metabolomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of biosynthetic prediction limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "54a26ccd-4eca-4107-9908-0964efa169f9",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C87",
+      "claim": "Genomic analyses do not provide a complete assessment of the secondary metabolomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, post assembly modifications (e.g. halogenations, oxidations, methylations) are often times difficult to predict without the structures in hand, and therefore genomic analyses do not provide a complete assessment of the secondary metabolomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from limitations of genomic prediction",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "6cccafa2-e2d4-420d-a8be-ca93a4670ec3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C88",
+      "claim": "Chemical diversity represents the expression of genetic potential and offers a new strategy to explore differences and to evaluate the diversity encrypted in complex samples and various environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical diversity represents the expression of that genetic potential and offers a new strategy to explore differences and to evaluate the diversity encrypted in complex samples and various environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual statement about the study approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "e84ee2f5-7d17-4ed7-8ea5-8c013c71e7a2",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C89",
+      "claim": "Marine cyanobacteria are reported in the literature to be an exceptional source for diverse new natural products.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reported in the literature that marine cyanobacteria are an exceptional source for diverse new natural products (Blunt et al., 2015; Burja et al., 2001; Engene et al., 2011; Kiuru et al., 2014; Tan, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blunt et al., 2015; Burja et al., 2001; Engene et al., 2011; Kiuru et al., 2014; Tan, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "e0221633-fd86-4cae-ba49-993200806a29",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C90",
+      "claim": "The mass spectrometry data from marine cyanobacteria/algae collections obtained over the past 30 years indicate that, at a global level, this group is rich in metabolite features that do not overlap with other available metabolomic data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass spectrometry data from marine cyanobacteria/algae collections obtained over the past 30 years indicate that, at a global level, this group is rich in metabolite features that do not overlap with other available metabolomic data sets (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from comparative metabolomics analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ac97cef6-e538-4b81-83d0-4af6e1c7b801",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C91",
+      "claim": "Common multivariate analyses used for metabolomics were successful in distinguishing the different datasets based on their unique metabolomic inventories.",
+      "claim_type": "EXPLICIT",
+      "source": "Common multivariate analyses used for metabolomics were successful in distinguishing the different datasets based on their unique metabolomic inventories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from multivariate statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "88e95bc2-9e08-44c6-a7d4-6f8cf43083f3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C92",
+      "claim": "The MS/MS spectrum of a molecule is a unique molecular signature or barcode.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the MS/MS spectrum of a molecule is a unique molecular signature or barcode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established principles of mass spectrometry",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a6fe11d4-29cf-43b1-b6d7-ea3f11a83ebe",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C93",
+      "claim": "When structurally similar molecules are fragmented, the resulting MS/MS spectra are very often quite similar because they contain similarly positioned labile bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "When structurally similar molecules are fragmented, the resulting MS/MS spectra are very often quite similar because they contain similarly positioned labile bonds (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry principles with citation to Wang et al., 2016",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "b57dfb42-ad2d-4bd3-95dc-a7bf597472ed",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C94",
+      "claim": "Molecular networking enables the evaluation of the MS/MS based detectable chemical space, and groups molecules that have similar biosynthetic origins and resultant structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular networking enables the evaluation of the MS/MS based detectable chemical space, and groups molecules that have similar biosynthetic origins and resultant structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of molecular networking capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "35bacea5-f984-449e-b96b-958ac2a55751",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C95",
+      "claim": "Papua New Guinea archipelago (PNG) is considered to be a biodiversity hotspot at the organism level (e.g. invertebrates, plants, corals).",
+      "claim_type": "EXPLICIT",
+      "source": "At the organism level (e.g. invertebrates, plants, corals), marine environments such as the Papua New Guinea archipelago (PNG) are considered to be biodiversity 'hotspots' (Bowen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bowen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "09aea8e3-c4ba-4067-9b0d-de1bf8322b7a",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C96",
+      "claim": "Some chemical entities were found in common to multiple locations (e.g. barbamide, dolastatin 10) whereas others appeared to be unique and endemic to specific sampling sites (e.g. hoiamide B, palmyramide).",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that some chemical entities were found in common to multiple locations (e.g. barbamide, dolastatin 10) whereas others appeared to be unique and endemic to specific sampling sites (e.g. hoiamide B, palmyramide) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from geographical distribution analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ef872e85-4222-4bfb-8e19-f3fa1e904318",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C97",
+      "claim": "This observation is supported by site resampling over several years.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is supported by site resampling over several years, an insight gained as a distinctive attribute of this unique collection of marine samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from temporal sampling analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a5cc725f-6723-42f7-9dcc-2d5f56762dc0",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C98",
+      "claim": "Tracing the metadata associated with a given molecular family can assist in identification of the producing organism, and facilitate future biosynthetic and ecological investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional tracing of the metadata associated with a given molecular family can assist in identification of the producing organism, and facilitate future biosynthetic and ecological investigations (Coates et al., 2014; Harvey et al., 2015; Kleigrewe et al., 2015; Leal et al., 2016; Owen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coates et al., 2014; Harvey et al., 2015; Kleigrewe et al., 2015; Leal et al., 2016; Owen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ec78d8eb-4217-47cd-85a1-a6441b495b58",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C99",
+      "claim": "The integration of molecular networking with geographical mapping revealed that marine algae and cyanobacteria have widely varying metabolite distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of molecular networking with geographical mapping revealed that marine algae and cyanobacteria have widely varying metabolite distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "77ffaab9-b8d6-4c38-9a33-c74b7b185d33",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C100",
+      "claim": "Most molecules in this dataset are broadly distributed in disparate physical locations, whereas others are highly specific to particular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "As we can see in this dataset most molecules are broadly distributed in disparate physical locations, whereas others are highly specific to particular locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from geographical distribution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "51586b6e-bc1a-42f7-8749-7e67e74c5546",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C101",
+      "claim": "Whether the specificity of molecules to a given location is due to unique species with distinct metabolic capabilities, or to specific environmental factors regulating expression of these compounds, is unknown at present.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether this specificity to a given location is due to unique species with distinct metabolic capabilities, or to specific environmental factors regulating expression of these compounds, is unknown at present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of uncertainty about mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "4aec2eff-6665-4fbd-bdd6-a3b4a216a44c",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C102",
+      "claim": "Field collections are a complex mixture of microorganisms that hold a unique repertoire of natural products that may not be discoverable under laboratory conditions, even with sequenced strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, field collections are a complex mixture of microorganisms that hold a unique repertoire of natural products that may not be discoverable under laboratory conditions, even with sequenced strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of natural product discovery and microbial ecology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "f7515656-3e7f-4683-8678-a454d5942106",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C103",
+      "claim": "This approach is uniquely capable of organizing the vast chemical diversity present in complex environmental samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our approach is uniquely capable of organizing the vast chemical diversity present in these complex environmental samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion about the study's methodological contribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ba0cb927-6042-44ee-9677-a06e53fda18f",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C104",
+      "claim": "This approach could be used to identify locations with a higher level of chemical diversity as well as distribution patterns of natural products, potentially giving insights into their ecological roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this approach could be used to identify locations with a higher level of chemical diversity as well as distribution patterns of natural products, potentially giving insights into their ecological roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a35beb75-12d9-40d1-8f9c-142462b70c3b",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "claim_id": "C105",
+      "claim": "These perceptions may facilitate the search for novel natural products of utility to biomedicine and biotechnology.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, these perceptions may facilitate the search for novel natural products of utility to biomedicine and biotechnology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc4c233f-323d-43a0-a9de-28bece97c156",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Marine cyanobacteria represent an ancient group of organisms with extensive evolutionary history that has produced a rich diversity of structurally unique and biologically active natural products with various therapeutic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by multiple literature citations establishing the background context. These claims describe established knowledge about marine biodiversity, cyanobacterial evolution, and natural product diversity, all appropriately referenced to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7812f729-e0bf-484f-92fa-e4750685df0f",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Several marine cyanobacterial natural products including apratoxins, curacin A, dolastatin 10, and carmaphycin B are under investigation for anticancer applications, with one derivative (Brentuximab vedotin) achieving clinical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 are supported by appropriate citations to prior work. These claims establish the translational potential of marine cyanobacterial natural products and provide important context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study analyzed approximately 2600 fractions from 317 marine collections (predominantly cyanobacteria and algae) from multiple ocean locations using HR-LC-MS/MS, generating over 15.6 million spectra that were compared to four public datasets within the GNPS platform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C21 describe the experimental design and sample collection methodology. The scale of data collection (15.6 million spectra from 2600 fractions) is clearly documented, and the use of environmental samples (not axenic cultures) is appropriately noted as a limitation. The methodology is well-described and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "66ea2385-a8c8-433a-8e81-91b2c3d569ff",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GNPS molecular networking was used to detect molecular features and associate structurally related molecules into molecular families, with comparison to datasets from actinobacteria, lichens, marine sponges/corals, and freshwater cyanobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe the analytical approach using established GNPS methodology (appropriately cited). The comparison datasets are clearly enumerated with sample numbers, providing transparency for the comparative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "2c1b912f-7539-4d78-97ee-9543e75da1de",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PCoA analysis revealed that marine cyanobacteria/algae and freshwater cyanobacteria show the highest metabolomic similarity among the five datasets, yet still display clear differentiation in their chemical inventories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by PCoA analysis shown in Figure 1A-B. The observation that lichen samples overlap with some cyanobacteria populations is reasonably explained by the known microbial composition of lichens (C26, appropriately cited). The finding of similarity yet differentiation between marine and freshwater cyanobacteria is clearly visualized in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "db077263-3928-413d-b7c6-75a9d9fa9e64",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Only 13.7% of marine cyanobacteria/algae molecular features overlapped with other datasets, with 86.3% being unique to these collections. Despite metabolomic similarity, no known freshwater cyanobacterial natural products matched the marine dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 present quantitative results from Venn diagram analysis (Figure 1C). The 86.3% uniqueness is a striking finding that supports the study's central thesis about marine cyanobacterial chemical distinctiveness. The lack of spectral matches to known freshwater compounds (C32) is particularly notable given the PCoA similarity and strengthens the novelty claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "ab3d43b3-4bc7-4e5e-8c48-5394355d6219",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PCoA analysis showed no significant differentiation based on field taxonomic classification (algae vs. cyanobacteria) or geographical origin, highlighting vast chemical diversity within regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by Figure 2A-B. However, the interpretation requires caution: the lack of clustering could reflect (1) true chemical similarity across taxa/regions, (2) misidentification in field annotations, (3) the environmental (non-axenic) nature of samples, or (4) insufficient sampling. The authors appropriately note this highlights diversity rather than claiming absence of patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "2c81c9b4-3863-45fd-a62a-d90a01243ec3",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The fraction library yielded over five times more molecular features than crude extracts (1094 vs. 132 molecular families), with rarefaction analysis indicating saturation of chemical diversity under current analytical conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C39 are supported by quantitative data in Figure 3A. The five-fold increase demonstrates the value of fractionation for chemical diversity assessment. The rarefaction analysis (C39) is important for validating sampling completeness, though 'saturation' should be interpreted as saturation under the specific MS/MS conditions used, not absolute chemical saturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "1b7fc8da-e1db-470d-a637-ca68f7cff0e0",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Molecular families vary greatly in size and distribution, with barbamide comprising 40 features in 985 spectra across 75 collections, while palmyrolide A has only 2 features in 32 spectra across 5 collections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 provide specific quantitative examples from molecular networking analysis (Figure 3B). These data illustrate the range of natural product abundance and distribution patterns, supporting the study's characterization of chemical diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "8302abf9-5906-46be-8178-b94708a05020",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Geographical analysis revealed that Papua New Guinea contributes 20% of unique MS/MS features, while Panama-Bocas del Toro contributes ~4%, and Panama-Portobelo and Palmyra Atoll each contribute 7-8%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 present quantitative geographical distribution data from Figure 3D. These percentages are normalized for sampling effort (as stated in the text), making them valid comparisons. PNG's 20% contribution supports its designation as a chemical diversity hotspot.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "a8502cb4-cc02-41f8-924b-a45981fd5425",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "From 15.6 million spectra, only 6249 (0.04%) matched existing reference data, with 91 matches to known cyanobacterial/algal natural products from 30 molecular families, indicating these communities are significantly underexplored chemically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 present the dereplication results with appropriate quantification. The 0.04% match rate is validly compared to the 1.8% average for metabolomics experiments (C46, appropriately cited). The conclusion of being 'underexplored' (C47) is reasonable given the low match rate, though it could also reflect the specialized nature of marine cyanobacterial chemistry rather than just lack of prior study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Molecular networking identified hundreds of unannotated molecular families and enabled structural propagation within families, exemplified by identification of the apratoxin family through spectral matching to apratoxin B, revealing known derivatives (A, D, F, G, H) and suggesting additional analogs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 describe the molecular networking approach and its application to the apratoxin family (Figure 3\u2014figure supplement 2). The identification of known apratoxins validates the method, while the suggestion of additional derivatives (C52) is appropriately tentative, based on mass differences of common functional groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "5197dc5e-b007-46f7-b109-e82a83983886",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Analysis of the barbamide molecular family revealed putative derivatives including N-desmethyl barbamide (14 Da loss), O-desmethyl barbamide (previously published), and a Phe-to-Leu substitution variant (34 Da reduction), consistent with known NRPS biosynthetic flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 present structural interpretations from MS/MS fragmentation patterns (Figure 3\u2014figure supplement 3). The N-desmethyl assignment (C53) is reasonable based on the 14 Da loss. The O-desmethyl compound (C54) is validated by prior publication. The Phe-to-Leu substitution (C55-C56) is a reasonable inference supported by NRPS biosynthetic knowledge and prior examples, though NMR confirmation would strengthen these assignments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "26ecb997-d38e-4fdb-94f8-55578abab111",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "55% of molecules were found in multiple locations, with dolastatin 10 showing widespread distribution across six locations, while palmyramide A and 3033 other features are endemic to Palmyra Atoll. Barbamide is widely distributed but its analogs are rare.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 present geographical distribution patterns from binning network analysis (Figure 4). The quantification is clear and the contrasting patterns (widespread vs. endemic) are well-documented. However, 'endemic' should be interpreted as 'unique within this dataset' rather than absolute endemism, as sampling is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "c39c3fb0-387c-423f-9589-39b046501c75",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Papua New Guinea is not only a biodiversity hotspot at the organism level but also exhibits high chemical diversity with unique natural products compared to other sampled locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by molecular networking analysis (Figure 3) and appropriately cited literature on PNG biodiversity. The correlation between organismal and chemical diversity is an important finding, though the causal relationship is not established (correlation vs. causation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "dcd2e714-8123-44e6-a09d-14beecbda489",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A molecule with m/z 536.333 was targeted from Panama-Portobelo samples collected across multiple years (2007-2013). MS/MS analysis indicated a peptidic structure containing Gly, Val/N-MeGly, Leu/Ile, Hiv, and a C10H13O+ fragment, suggesting an NRPS product with putative structure [Gly-Ile/Leu-Hiv-Val-C10H13O]+. Database searches were unsuccessful, indicating a novel compound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 describe the MS-based discovery workflow for yuvalamide A. The temporal consistency across collections (C63) strengthens confidence in the finding. The MS/MS-based structural predictions (C64-C67) are reasonable and appropriately tentative. The database search (C68) was thorough, including multiple resources. The inference of NRPS origin from Hiv (C65) is well-supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "48771da2-47b2-4c31-8097-742da6b4b879",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The isolated compound yuvalamide A (C28H45N3O7, exact mass 535.3258) was structurally characterized by NMR, confirming the presence of Gly, Val, Ile, and hydroxyisovaleric acid, and revealing 2,2-dimethyl-3-hydroxy-7-octynoic acid (Dhoya) as the C10H13O+ fragment. NMR determinations correlated well with MS predictions, confirming a cyclic depsipeptide structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C76 present the complete structural elucidation of yuvalamide A. The molecular formula (C73) and exact masses (C74) are determined with excellent accuracy (<0.9 ppm, C75). NMR analysis (C70-C71, Figure 5 and supplements) provides definitive structural confirmation. The correlation between MS and NMR data (C72) validates the MS-based prediction approach. The cyclic depsipeptide assignment (C76) is supported by key HMBC correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Yuvalamide B, an alkene analog containing Dhoea instead of Dhoya, was detected with nearly identical fragmentation to yuvalamide A. The co-occurrence of Dhoya/Dhoea analogs is consistent with prior observations in marine cyanobacteria, with Dhoya typically more abundant. Identical geographical distribution supports common biosynthetic origin. Two additional yuvalamide analogs were tentatively identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 describe yuvalamide analogs. The yuvalamide B assignment (C77-C78) is reasonable based on MS/MS similarity and the 2 Da mass difference consistent with alkyne-to-alkene conversion. The precedent for Dhoya/Dhoea co-occurrence (C79-C80) is well-cited. The identical geographical distribution (C81) supporting common biosynthetic origin (C82) is a strong inference. The tentative assignment of additional analogs (C83) is appropriately cautious given the lack of isolation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "baa94af6-a724-429a-af51-d0f462a2801d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "While genomic approaches can predict biosynthetic potential and core structures, post-assembly modifications are difficult to predict without structures in hand. Therefore, genomic analyses do not provide complete assessment of secondary metabolomes, and chemical diversity represents the expression of genetic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 present the conceptual framework for metabolomics-based diversity assessment. The limitations of genomic prediction (C85-C87) are well-established and appropriately cited. The argument that chemical diversity complements genomic approaches (C88) is logical and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "c43b0b46-9ccd-43e1-aa91-d8edc9b14f21",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Marine cyanobacteria are reported as exceptional sources of diverse natural products. Mass spectrometry data from 30 years of collections indicate this group is rich in metabolite features that do not overlap with other datasets, with multivariate analyses successfully distinguishing datasets based on unique metabolomic inventories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 summarize key findings. C89 is well-supported by literature citations. C90 is supported by the Venn diagram analysis (Figure 1C). C91 is supported by PCoA results. These claims effectively synthesize the comparative metabolomics results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "602aab8b-a1c0-4060-a774-065e913519ac",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "MS/MS spectra serve as unique molecular signatures, with structurally similar molecules producing similar spectra due to similarly positioned labile bonds. Molecular networking enables evaluation of MS/MS-based chemical space and groups molecules with similar biosynthetic origins and structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 describe the theoretical basis of molecular networking. These principles are well-established in mass spectrometry and appropriately cited (C93). The claims accurately represent the capabilities and limitations of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3317eaac-792d-43b5-81aa-648cbd6ccfc6",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Papua New Guinea is a biodiversity hotspot at the organism level. Some chemical entities (barbamide, dolastatin 10) are found across multiple locations while others (hoiamide B, palmyramide) are endemic to specific sites, with this observation supported by site resampling over several years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 synthesize biodiversity and distribution findings. C95 is supported by appropriate citation. C96 is supported by geographical distribution analysis (Figure 4). C97 adds important temporal validation through resampling, strengthening confidence in the distribution patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "3213dc9b-2cfc-40fc-80d6-7194440925f8",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Integration of molecular networking with geographical mapping revealed widely varying metabolite distributions in marine algae and cyanobacteria, with most molecules broadly distributed across disparate locations while others are highly location-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 summarize the geographical mapping results. C98 is supported by appropriate citations for the metadata tracing approach. C99-C100 accurately summarize the distribution patterns observed in the study (Figure 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "b10332bc-cc42-4a84-9418-2c8ec8aad80d",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Whether location-specific molecules result from unique species with distinct metabolic capabilities or environmental factors regulating compound expression is currently unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 appropriately acknowledges uncertainty about mechanisms underlying distribution patterns. This is an honest assessment of the study's limitations\u2014the observational nature of the data cannot distinguish between species-level and environmental drivers of chemical diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    },
+    {
+      "id": "eee171c8-0a39-4ba8-999c-48d92a1b1575",
+      "content_id": "532b8c29-8998-4456-b47e-01fca6923853",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Field collections contain complex microbial mixtures with unique natural product repertoires not discoverable under laboratory conditions. This approach uniquely organizes vast chemical diversity in environmental samples and could identify high-diversity locations and distribution patterns, potentially revealing ecological roles and facilitating discovery of biomedically useful natural products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C105 present conclusions and future directions. C102 is a reasonable assertion based on general knowledge of microbial ecology. C103 is supported by the demonstrated capabilities of the approach. However, C104-C105 are speculative about future applications ('could be used,' 'potentially,' 'may facilitate'). While these are reasonable projections, they represent hypotheses rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:07:01.694737Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f28b26f-9e22-4f09-9c16-9ffb3622d9e3",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "0ae2b99b-24ca-49c6-823c-ef4a6dd8c3cd",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "3bad55ea-5c74-4124-b6df-f2c64eb3a2e2",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "346021e3-faba-4de2-a2aa-6947e356929c",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "2e67d73c-782d-4374-9d05-a85ac5b5d461",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "a7d768ac-ddf0-40e4-a18e-1ebd2d80d1d6",
+      "result_id": "cc4c233f-323d-43a0-a9de-28bece97c156"
+    },
+    {
+      "claim_id": "78c382c2-7a26-4977-8018-6188d0803eaa",
+      "result_id": "7812f729-e0bf-484f-92fa-e4750685df0f"
+    },
+    {
+      "claim_id": "757408f9-efaf-49ff-938c-a78adf87a580",
+      "result_id": "7812f729-e0bf-484f-92fa-e4750685df0f"
+    },
+    {
+      "claim_id": "cbe5f77c-6ff8-4727-b6e3-8e487a3dc361",
+      "result_id": "7812f729-e0bf-484f-92fa-e4750685df0f"
+    },
+    {
+      "claim_id": "a0336660-8f13-4c70-bcdb-fdb2aeb7b6dc",
+      "result_id": "7812f729-e0bf-484f-92fa-e4750685df0f"
+    },
+    {
+      "claim_id": "86e84894-1319-4258-821f-3946548208cd",
+      "result_id": "7812f729-e0bf-484f-92fa-e4750685df0f"
+    },
+    {
+      "claim_id": "9a8904df-001a-45de-86f6-1b41ec608a21",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "1b5221ab-5b22-43f4-8508-674a18fe32df",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "ca96a836-5552-486e-b20c-6dc5081f4808",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "def788fe-0441-42d3-bdb8-acbefd15542a",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "4866c1eb-8fca-46c7-a2f7-ae9c24d104ef",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "198cc055-989f-4e2e-ace2-09d5f75d84b0",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "f54feb9e-78e2-4829-83af-1e2f4e169324",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "882639f0-e0bd-4883-8f5d-de05ad17c594",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "d8e1a2cf-9caa-41e1-a635-2c7b05fff67d",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "97128572-fa67-4a3c-9a47-ef8b05f5af6b",
+      "result_id": "0a11725c-9f8e-4d1f-90d9-d70100aa2ab1"
+    },
+    {
+      "claim_id": "ad9224b1-1fa5-48ee-baed-2c04d7cf3347",
+      "result_id": "66ea2385-a8c8-433a-8e81-91b2c3d569ff"
+    },
+    {
+      "claim_id": "6590d898-faf9-4e8a-863c-69c41512a12e",
+      "result_id": "66ea2385-a8c8-433a-8e81-91b2c3d569ff"
+    },
+    {
+      "claim_id": "8315c099-e09b-4c0e-8d1a-49e64d1ab2ab",
+      "result_id": "66ea2385-a8c8-433a-8e81-91b2c3d569ff"
+    },
+    {
+      "claim_id": "95664468-cc4d-4dfc-abec-2e0212c012c9",
+      "result_id": "2c1b912f-7539-4d78-97ee-9543e75da1de"
+    },
+    {
+      "claim_id": "b6ae2513-ef37-479d-9da6-16d87f46d7c5",
+      "result_id": "2c1b912f-7539-4d78-97ee-9543e75da1de"
+    },
+    {
+      "claim_id": "7a2e6ec7-8671-4438-8681-8718d6c78d95",
+      "result_id": "2c1b912f-7539-4d78-97ee-9543e75da1de"
+    },
+    {
+      "claim_id": "0b589b7a-3bc5-48dd-a044-c542c7e9bffc",
+      "result_id": "2c1b912f-7539-4d78-97ee-9543e75da1de"
+    },
+    {
+      "claim_id": "d3756f19-e789-453c-b38a-db03e3b4235b",
+      "result_id": "db077263-3928-413d-b7c6-75a9d9fa9e64"
+    },
+    {
+      "claim_id": "de330131-17fa-47e5-afd8-57170d4d8d86",
+      "result_id": "db077263-3928-413d-b7c6-75a9d9fa9e64"
+    },
+    {
+      "claim_id": "167b2a40-2048-4cdc-b49e-35a834b0a207",
+      "result_id": "db077263-3928-413d-b7c6-75a9d9fa9e64"
+    },
+    {
+      "claim_id": "5dcff4bb-1c4f-4f38-8e2b-89750e33ca0e",
+      "result_id": "db077263-3928-413d-b7c6-75a9d9fa9e64"
+    },
+    {
+      "claim_id": "4da595d1-90a4-44cf-bbf3-5069a7efe272",
+      "result_id": "ab3d43b3-4bc7-4e5e-8c48-5394355d6219"
+    },
+    {
+      "claim_id": "2ec36f44-bade-454c-8a14-d15f1e015039",
+      "result_id": "ab3d43b3-4bc7-4e5e-8c48-5394355d6219"
+    },
+    {
+      "claim_id": "179de95e-fec5-4b2c-988c-f73de95eeffd",
+      "result_id": "2c81c9b4-3863-45fd-a62a-d90a01243ec3"
+    },
+    {
+      "claim_id": "9628b831-dc25-4b6e-81ab-1be10eb2d554",
+      "result_id": "2c81c9b4-3863-45fd-a62a-d90a01243ec3"
+    },
+    {
+      "claim_id": "67487b16-c205-4bf0-8b85-4b52bce35e75",
+      "result_id": "2c81c9b4-3863-45fd-a62a-d90a01243ec3"
+    },
+    {
+      "claim_id": "aea189c0-1d0e-43a9-acf3-8284ac0406a3",
+      "result_id": "1b7fc8da-e1db-470d-a637-ca68f7cff0e0"
+    },
+    {
+      "claim_id": "3533ca97-367d-4b61-9517-593a90c13f36",
+      "result_id": "1b7fc8da-e1db-470d-a637-ca68f7cff0e0"
+    },
+    {
+      "claim_id": "997c0601-e4ab-4ab8-9b96-0be36936490a",
+      "result_id": "8302abf9-5906-46be-8178-b94708a05020"
+    },
+    {
+      "claim_id": "7f4b2f1a-5538-419c-8a21-7dd2b3ce2c3c",
+      "result_id": "8302abf9-5906-46be-8178-b94708a05020"
+    },
+    {
+      "claim_id": "98d4b683-0d54-4218-8dbd-69ad175f4b12",
+      "result_id": "8302abf9-5906-46be-8178-b94708a05020"
+    },
+    {
+      "claim_id": "74c680d3-7ad2-41ba-bd82-04bae64c2ab2",
+      "result_id": "a8502cb4-cc02-41f8-924b-a45981fd5425"
+    },
+    {
+      "claim_id": "72d52cf4-0f44-4880-acda-45f3aa171b6d",
+      "result_id": "a8502cb4-cc02-41f8-924b-a45981fd5425"
+    },
+    {
+      "claim_id": "6c6a012a-066e-4081-aa68-7f290fc1dd96",
+      "result_id": "a8502cb4-cc02-41f8-924b-a45981fd5425"
+    },
+    {
+      "claim_id": "57a11e87-cefc-423d-b4fc-25cd254cb3c6",
+      "result_id": "a8502cb4-cc02-41f8-924b-a45981fd5425"
+    },
+    {
+      "claim_id": "0a3fed72-9eb3-4e95-b006-d2bc0b8e1ff3",
+      "result_id": "a8502cb4-cc02-41f8-924b-a45981fd5425"
+    },
+    {
+      "claim_id": "df2b0a06-6447-4c74-ad55-3603abf550a6",
+      "result_id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e"
+    },
+    {
+      "claim_id": "e57dc3f3-d3c5-485d-9a1d-2dd9a19d58bb",
+      "result_id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e"
+    },
+    {
+      "claim_id": "69fc8396-6c24-40ff-a289-c7890602ad42",
+      "result_id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e"
+    },
+    {
+      "claim_id": "cccf2adf-e98b-467f-8710-037cd88d7b8d",
+      "result_id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e"
+    },
+    {
+      "claim_id": "56de03e4-2d37-48c5-9e0b-692c057816c7",
+      "result_id": "bf9100d8-376c-4c44-a86f-d0af4bfb4b8e"
+    },
+    {
+      "claim_id": "a02a045c-1ada-4991-b8a3-35d52ffa9f5d",
+      "result_id": "5197dc5e-b007-46f7-b109-e82a83983886"
+    },
+    {
+      "claim_id": "91cb946c-9d7e-44fc-bbcb-d02cd24e9dbb",
+      "result_id": "5197dc5e-b007-46f7-b109-e82a83983886"
+    },
+    {
+      "claim_id": "758ac798-45f3-448a-a11c-bcd1ed2be621",
+      "result_id": "5197dc5e-b007-46f7-b109-e82a83983886"
+    },
+    {
+      "claim_id": "1617d084-5724-4adb-b381-f77507aad005",
+      "result_id": "5197dc5e-b007-46f7-b109-e82a83983886"
+    },
+    {
+      "claim_id": "5d19670d-cf0f-44cb-923c-7660b6c204eb",
+      "result_id": "26ecb997-d38e-4fdb-94f8-55578abab111"
+    },
+    {
+      "claim_id": "3448b5e2-3f61-4377-9d30-c8ae15743e07",
+      "result_id": "26ecb997-d38e-4fdb-94f8-55578abab111"
+    },
+    {
+      "claim_id": "3e72b756-16dc-4a6d-9a0b-d4199dacb7b7",
+      "result_id": "26ecb997-d38e-4fdb-94f8-55578abab111"
+    },
+    {
+      "claim_id": "2d8402e0-ec81-4a0d-9ab2-bd987b60a3d2",
+      "result_id": "26ecb997-d38e-4fdb-94f8-55578abab111"
+    },
+    {
+      "claim_id": "e6a736d9-f526-4ab2-a35e-f840240c7a3a",
+      "result_id": "c39c3fb0-387c-423f-9589-39b046501c75"
+    },
+    {
+      "claim_id": "b8352c33-0e5c-40e3-a550-838b26a09afd",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "fc2bb794-a636-4112-9c03-7136a95d12d0",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "1b683cfa-1bed-4698-9865-bab598d79b11",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "4d8c8616-2465-4111-89b8-712944361795",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "770fa3bc-a591-4a69-88c2-9278e2a3dd86",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "d11af06d-09ca-408b-aaeb-31813e6f8bb7",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "17535e8e-66fd-4665-b837-53d6d2bb3ba8",
+      "result_id": "dcd2e714-8123-44e6-a09d-14beecbda489"
+    },
+    {
+      "claim_id": "ee2d56a9-020d-4426-800e-4a52ca1f7042",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "aaee9bba-d3dd-412b-bc1b-20a6064543f6",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "a437e91f-94f7-46b9-a009-7cc407665c8a",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "eb9afa77-ab10-4af0-9dcf-4bec774f926e",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "0fc71908-ea27-404c-bb9b-a85d05907bad",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "70668d39-31d4-4cf1-8653-b8a00e321e44",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "06727c7d-4b14-41a9-95a5-8162cb073b50",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "3023cdcd-076b-40c1-a8dc-8556208d0972",
+      "result_id": "48771da2-47b2-4c31-8097-742da6b4b879"
+    },
+    {
+      "claim_id": "b8218384-9c5b-4046-a4fa-9a3f29ca7c6d",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "113e9992-ff1a-4346-bb9f-e80c5eb0225d",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "140bd246-f329-4a07-9ccd-8b97b6cc7172",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "fba7f5ef-b55e-4678-b9b0-f6d03d3ae254",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "7d14b658-e6e6-4f2f-80eb-f85821a846e4",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "7b5cbce8-5f2e-4ed4-84d6-b477549a174f",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "4cb967c0-e12a-412f-b9d5-cd6400a3b7b7",
+      "result_id": "7847a03a-e1fd-408e-a83a-adf9b3334c3e"
+    },
+    {
+      "claim_id": "63815457-c4a6-411b-a48d-88ace3e7ad11",
+      "result_id": "baa94af6-a724-429a-af51-d0f462a2801d"
+    },
+    {
+      "claim_id": "c1297a2c-ff89-4c14-86a0-147ae5715867",
+      "result_id": "baa94af6-a724-429a-af51-d0f462a2801d"
+    },
+    {
+      "claim_id": "31dea3c9-8f2f-4c92-9060-9a17e69d269f",
+      "result_id": "baa94af6-a724-429a-af51-d0f462a2801d"
+    },
+    {
+      "claim_id": "54a26ccd-4eca-4107-9908-0964efa169f9",
+      "result_id": "baa94af6-a724-429a-af51-d0f462a2801d"
+    },
+    {
+      "claim_id": "6cccafa2-e2d4-420d-a8be-ca93a4670ec3",
+      "result_id": "baa94af6-a724-429a-af51-d0f462a2801d"
+    },
+    {
+      "claim_id": "e84ee2f5-7d17-4ed7-8ea5-8c013c71e7a2",
+      "result_id": "c43b0b46-9ccd-43e1-aa91-d8edc9b14f21"
+    },
+    {
+      "claim_id": "e0221633-fd86-4cae-ba49-993200806a29",
+      "result_id": "c43b0b46-9ccd-43e1-aa91-d8edc9b14f21"
+    },
+    {
+      "claim_id": "ac97cef6-e538-4b81-83d0-4af6e1c7b801",
+      "result_id": "c43b0b46-9ccd-43e1-aa91-d8edc9b14f21"
+    },
+    {
+      "claim_id": "88e95bc2-9e08-44c6-a7d4-6f8cf43083f3",
+      "result_id": "602aab8b-a1c0-4060-a774-065e913519ac"
+    },
+    {
+      "claim_id": "a6fe11d4-29cf-43b1-b6d7-ea3f11a83ebe",
+      "result_id": "602aab8b-a1c0-4060-a774-065e913519ac"
+    },
+    {
+      "claim_id": "b57dfb42-ad2d-4bd3-95dc-a7bf597472ed",
+      "result_id": "602aab8b-a1c0-4060-a774-065e913519ac"
+    },
+    {
+      "claim_id": "35bacea5-f984-449e-b96b-958ac2a55751",
+      "result_id": "3317eaac-792d-43b5-81aa-648cbd6ccfc6"
+    },
+    {
+      "claim_id": "09aea8e3-c4ba-4067-9b0d-de1bf8322b7a",
+      "result_id": "3317eaac-792d-43b5-81aa-648cbd6ccfc6"
+    },
+    {
+      "claim_id": "ef872e85-4222-4bfb-8e19-f3fa1e904318",
+      "result_id": "3317eaac-792d-43b5-81aa-648cbd6ccfc6"
+    },
+    {
+      "claim_id": "a5cc725f-6723-42f7-9dcc-2d5f56762dc0",
+      "result_id": "3213dc9b-2cfc-40fc-80d6-7194440925f8"
+    },
+    {
+      "claim_id": "ec78d8eb-4217-47cd-85a1-a6441b495b58",
+      "result_id": "3213dc9b-2cfc-40fc-80d6-7194440925f8"
+    },
+    {
+      "claim_id": "77ffaab9-b8d6-4c38-9a33-c74b7b185d33",
+      "result_id": "3213dc9b-2cfc-40fc-80d6-7194440925f8"
+    },
+    {
+      "claim_id": "51586b6e-bc1a-42f7-8749-7e67e74c5546",
+      "result_id": "b10332bc-cc42-4a84-9418-2c8ec8aad80d"
+    },
+    {
+      "claim_id": "4aec2eff-6665-4fbd-bdd6-a3b4a216a44c",
+      "result_id": "eee171c8-0a39-4ba8-999c-48d92a1b1575"
+    },
+    {
+      "claim_id": "f7515656-3e7f-4683-8678-a454d5942106",
+      "result_id": "eee171c8-0a39-4ba8-999c-48d92a1b1575"
+    },
+    {
+      "claim_id": "ba0cb927-6042-44ee-9677-a06e53fda18f",
+      "result_id": "eee171c8-0a39-4ba8-999c-48d92a1b1575"
+    },
+    {
+      "claim_id": "a35beb75-12d9-40d1-8f9c-142462b70c3b",
+      "result_id": "eee171c8-0a39-4ba8-999c-48d92a1b1575"
+    }
+  ],
+  "comparisons": []
+}

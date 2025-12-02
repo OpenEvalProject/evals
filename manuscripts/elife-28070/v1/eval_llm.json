@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22"
+    ],
+    "result": "The study analyzed 620 cancer cell lines using SNP arrays, comprising 279 female-derived and 341 male-derived lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, and C22 provide consistent data about the study cohort with appropriate citation (Greenman et al., 2010). The sample size and sex distribution are clearly stated and form the basis for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cancer cell lines show preferential loss of sex chromosomes (Y in males ~40%, inactive X in females ~37%) compared to autosomes (median ~13% LOH), with high correlation between sexes (R=0.94) and slight size-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide quantitative LOH data with statistical support (correlation coefficient, p-value for size effect). The inference that inactive X is lost (C30) is reasonably supported by expression data showing X expression is maintained. Figure 1A provides visual confirmation of the pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C116"
+    ],
+    "result": "Male and female cancer cell lines converge toward a 'de-sexualized' state through loss of Y and inactive X chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32, and C116 represent interpretations of the LOH data (C29, C31). The convergence is well-supported by the similar rates of sex chromosome loss in both sexes and the resulting single active X chromosome state. However, C116's claim about 'more efficient proliferation' lacks direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "Approximately half of cancer cell lines gain an extra active X chromosome following loss of Y or inactive X, with XIST silencing confirming X activation and increased X-linked gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45 provide converging evidence from multiple data types: chromosome counts (C37, C44), XIST expression (C38, C39), and X-linked gene expression (C40, C41). Figure 1B-F supports these findings. The consistency across male and female lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FISH validation in A549 and HeLa cell lines confirms that most cells contain two or more active X chromosomes with modest within-line heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe validation experiments with FISH. Figure 2 provides visual and quantitative data supporting the presence of multiple X chromosomes. The authors acknowledge limited sample size (C51) but reasonably conclude heterogeneity doesn't undermine conclusions. This provides important validation of the SNP array data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cancer cell lines show elevated X-to-autosome expression ratio (EX/A ~1.0) compared to normal cell lines (EX/A ~0.84), representing approximately 15% increase, consistent across different expression thresholds and RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide quantitative EX/A measurements with appropriate controls (varying thresholds, different data types). Figure 3A-B and supplementary figures support the findings. The consistency across methods strengthens the conclusion. However, the normal cell line sample size is much smaller (17 and 24 vs. 279 and 341), which could affect the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Autosomes evolve cohesively as a set, with cell lines showing peaks at diploid and triploid states, and the 13 largest autosomes gaining copies in a coordinated manner (p=0.0021) rather than independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C73 describe autosome evolution patterns supported by chromosome number distributions (Figure 4A) and HeLa subline sequencing data (C70-C72). The statistical test (\u03c7\u00b2 test, p=0.0021, C72) supports coordinated gain. The methodological choice to focus on the 13 largest chromosomes (C67-C69) is justified by biological reasoning about trisomy viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Most cell lines have C(1:2) (37.4%) or C(2:3) (29.2%) karyotypes, with the high frequency of C(2:3) being unexpected since intermediate genotypes C(2:2) and C(1:3) are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 describe the C(Xa:A) genotype distribution with quantitative data. Figure 4D provides visual support. The observation that C(2:3) is common despite rare intermediates (C78) is well-documented and forms the basis for the modeling work. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A neutral evolution model predicts genotype frequencies in descending order C(1:2) > C(2:2) > C(2:3), which contradicts the observed high frequency of C(2:3), rejecting neutral evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 describe the neutral model and its predictions. The mathematical framework (Equations 1-2) is presented, and the comparison with observations (C84-C85) clearly shows incompatibility. Figure 5B illustrates the discrepancy. The logic is sound, though the model makes simplifying assumptions about transition rates and grouping of genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Theoretical modeling incorporating fitness differences suggests C(2:3) has higher fitness than the wild-type C(1:2), requiring s<0 and t>0 to match observed genotype frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C90 describe model predictions requiring specific fitness parameters. While the model can fit the data with appropriate parameters (Figure 5C), the authors acknowledge in the Methods that they cannot estimate selection strength due to unknown culture history (vT parameter). The conclusion about relative fitness is qualitatively supported but quantitatively uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The evolution toward C(2:3) in free-living cells may reflect incomplete dosage compensation in mammalian sex chromosome evolution and suggests different fitness optima for unicellular versus multicellular states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C110 represent speculative interpretations about sex chromosome evolution and dosage compensation. While the observation of evolution toward C(2:3) is well-supported, the connection to ancestral sex chromosome evolution (C108-C110) is speculative. The reasoning is logical but lacks direct experimental support for the evolutionary implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The genome-wide low rate of LOH and strong correlation between sexes suggests natural selection maintains balanced chromosome complements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide reasonable inferences from the LOH data (C26-C28). The low median LOH rate (~13%) and high correlation (R=0.94) are consistent with selection against chromosome loss. However, alternative explanations (e.g., technical factors, cell viability constraints) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The karyotypic convergence to C(2:3) is unusual in cancer evolution, which typically shows divergence rather than convergence at the gene level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 contextualize the findings within cancer evolution. The citations to TCGA data (C103-C105) support the general pattern of divergence in cancer. The contrast with the observed karyotypic convergence is valid, though the comparison between gene-level and chromosome-level evolution may not be entirely parallel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25",
+      "C46",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background context on cell line evolution, karyotypic instability, and differences between cancer and normal cell lines in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20, C25, C46, C91-C96 provide background knowledge with appropriate citations. These establish the conceptual framework for the study. The statements are generally well-supported by the cited literature, though they represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Speculative discussion about whether tumorigenesis represents evolution toward unicellularity and implications for cancer cell organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C111-C115 present speculative interpretations about cancer evolution and cellular organization. While C113 cites supporting evidence, the overall framework remains speculative. The alternative views (C114) are acknowledged, but the study doesn't provide direct evidence to distinguish between these hypotheses.",
+    "result_type": "MINOR"
+  }
+]

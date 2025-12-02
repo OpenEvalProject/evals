@@ -1,0 +1,2364 @@
+{
+  "submission": {
+    "id": "56eb17cb-c1ad-422d-9f65-b3850377a357",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:33:19.142607Z",
+    "updated_at": "2025-12-02T01:33:19.142607Z"
+  },
+  "content": [
+    {
+      "id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "submission_id": "56eb17cb-c1ad-422d-9f65-b3850377a357",
+      "content_type": "manuscript",
+      "content_text": "# Insights into the ubiquitin transfer cascade catalyzed by the Legionella effector SidC\n\n## Authors\n\n- David Jon Wasilko<sup>1</sup> ([ORCID: 0000-0002-6227-5902](https://orcid.org/0000-0002-6227-5902))\n- Qingqiu Huang<sup>3</sup>\n- Yuxin Mao<sup>1</sup> ([ORCID: 0000-0002-5064-1397](https://orcid.org/0000-0002-5064-1397)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n2. Weill Institute for Cell and Molecular Biology Cornell University Ithaca United States\n3. MacCHESS Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe causative agent of Legionnaires\u2019 disease, Legionella pneumophila, delivers more than 330 virulent effectors to its host to establish an intracellular membrane-bound organelle called the Legionella containing vacuole. Among the army of Legionella effectors, SidC and its paralog SdcA have been identified as novel bacterial ubiquitin (Ub) E3 ligases. To gain insight into the molecular mechanism of SidC/SdcA as Ub ligases, we determined the crystal structures of a binary complex of the N-terminal catalytic SNL domain of SdcA with its cognate E2 UbcH5C and a ternary complex consisting of the SNL domain of SidC with the Ub-linked E2 UbcH7. These two structures reveal the molecular determinants governing the Ub transfer cascade catalyzed by SidC. Together, our data support a common mechanism in the Ub transfer cascade in which the donor Ub is immobilized with its C-terminal tail locked in an extended conformation, priming the donor Ub for catalysis.\n\n## Introduction\n\nLegionella pneumophila is an intracellular opportunistic human pathogen that causes a severe form of pneumonia termed Legionnaires\u2019 disease (Cunha et al., 2016; Rowbotham, 1980). Following phagocytic uptake, Legionella uses a Dot/Icm (Defective organelle trafficking/Intracellular multiplication) type IV secretion system to secrete over 330 effector proteins into the host cytosol (Ensminger, 2016; Qiu and Luo, 2017). The concerted action of these effectors leads to the formation of the LCV (Legionella-containing vacuole), an organelle that prevents lysosome-mediated degradation of the invading bacteria while also serving as a replicative niche (Isberg et al., 2009; Swanson and Isberg, 1995; Tilney et al., 2001). Although the biological functions of most Legionella effectors are as yet unknown, a number of effectors have been shown to modulate a rather diverse array of host cellular processes, including membrane trafficking, cellular signaling, lipid metabolism, and in particular, the host ubiquitination pathway (Hubber et al., 2013; Hubber and Roy, 2010; Lin and Machner, 2017; Qiu and Luo, 2017).\n\nUbiquitination is an essential eukaryotic posttranslational modification involved in myriad cellular activities. Ub is covalently attached to substrates in a three-enzyme cascade (Hershko and Ciechanover, 1998). Ub is first activated by an E1 activating enzyme, then transferred to one of approximately 30 E2 conjugating enzymes, and finally ligated to a substrate by one of hundreds of E3 Ub ligases. The E3 ligases, which play a crucial role in the ubiquitination cascade, can be divided into three major classes: Really Interesting New Gene (RING) E3s (Deshaies and Joazeiro, 2009), Ring-Between-Ring (RBR) E3s (Aguilera et al., 2000), and Homologous to E6AP C-terminus (HECT) E3s (Huibregtse et al., 1995; Rotin and Kumar, 2009). Each of the three classes of E3s uses a distinct strategy to transfer Ub (Berndsen and Wolberger, 2014). The RING E3s promote a \u2018closed conformation\u2019 of the E2~Ub by locking the C-terminus of Ub into the active site groove on the E2 to facilitate direct Ub transfer from the E2~Ub to a substrate (Dou et al., 2012; Plechanovov\u00e1 et al., 2012; Pruneda et al., 2012). The HECT E3s catalyze two distinct reactions: a transthiolation reaction, which transfers Ub from E2~Ub to the E3 catalytic cysteine residue; and a subsequent aminolysis reaction, which transfers Ub from E3~Ub to a substrate lysine (Huibregtse et al., 1995). The third class, the RBR family of E3 ligases, shares features of both RING and HECT E3s and utilizes a hybrid mechanism for Ub transfer (Dove et al., 2016; Wenzel et al., 2011). Besides the three major classes of E3 ligases found in eukaryotes, a large number of bacterial pathogens encode a variety of effectors that mimic either the RING or HECT type E3 ligases. However, some of these bacterially encoded E3 ligases have little sequence or structural homology to any other E3s (Ashida et al., 2014; Huibregtse and Rohde, 2014). For example, the Salmonella protein SopA and the Escherichia coli protein NleL possess E3 ligase activity dependent on a catalytic cysteine and interact with E2s that contain a conserved phenylalanine residue yet show little sequence identity to known HECT E3s (Kamadurai et al., 2013; Lin et al., 2012). How these unique E3 ligases catalyze Ub conjugation remains elusive.\n\nThe Legionella effector protein SidC and its paralog SdcA have been shown to be required for the recruitment of ER proteins and ubiquitin signals to the LCV during an infection (Hsu et al., 2014). Our previous work has further shown that the SidC and SdcA are bona fide Ub E3 ligases (Hsu et al., 2014; Luo et al., 2015). SidC contains an N-terminal Ub Ligase (SNL) domain, a P4C domain that specifically binds phosphatidylinositol-4-phosphate (Luo et al., 2015; Ragaz et al., 2008) and a C-terminal portion of unknown function. Despite the lack of sequence or structural homology of SidC to any known eukaryotic E3s, the SNL domain of SidC uses a conserved cysteine as its catalytic residue, which is reminiscent of the eukaryotic HECT family of E3s. Our previous structural studies revealed that the SNL domain of SidC contains two lobes, a larger main lobe harboring the catalytic cysteine and a smaller E2-binding lobe connected to main lobe via two flexible linker peptides (Hsu et al., 2014; Luo et al., 2015). However, the molecular mechanism of this unique family of bacterial Ub E3 ligases is largely unknown.\n\nTo gain insight into the molecular basis of the ubiquitination reaction catalyzed by SidC/SdcA, we determined crystal structures of two SidC/SdcA complexes: a binary complex of the SNL domain of SdcA with the E2 UbcH5C and a ternary complex of the SNL domain of SidC with the E2 UbcH7 covalently linked to ubiquitin (UbcH7~Ub). The complex structures reveal that upon binding of E2~Ub, the INS lobe undergoes a drastic swiveling to close a nearly 80 \u00c5 gap between the two catalytic cysteines of the E2 and E3, respectively. As a consequence, the donor Ub is clamped between the INS and main lobes and makes an extensive network of contacts with the SNL domain. In particular, the C-terminal tail of the donor Ub adopts an extended \u03b2 conformation and zip-pairs with a short \u03b2-strand upstream of the catalytic cysteine of the SNL domain. Mutations that interfere with the interactions between the donor Ub and the E3 ligase impede the ligase activity. Thus, our data not only reveal the catalytic mechanism of a unique family of bacterial E3 ligases, but also underpin a general concept of the ubiquitination reaction that efficient Ub transfer requires the donor Ub to be placed in a stationary position with the C-terminal tail of the donor Ub locked at the catalytic site.\n\n## Results\n\n### Overall structure of the SdcA-UbcH5C complex\n\nAs the first step in deciphering the mechanism of the SidC family of Ub E3 ligases, we sought to investigate how SidC recognizes E2. Our previous studies showed that SidC and SdcA preferentially carry out ubiquitination when either UbcH5C (UBE2D3) or UbcH7 (UBE2L3) serves as the E2 (Hsu et al., 2014). We screened all combinations of the SNL domain of SidC and SdcA with either UbcH5C or UbcH7 in crystallization trials and successfully obtained crystals formed by the SNL domain of SdcA (a.a. 1\u2013538) and UbcH5C. The crystals diffracted to 3.0 \u00c5 and the structure of the binary complex was solved using molecular replacement using our previously determined SidC (a.a.1\u2013542) structure as the search model. The final structural model was refined to an R-factor of 20.3 and a free R-factor of 27.1 (Table 1). The SNL domain of SdcA, which shares about 72% sequence homology to SidC, has a bilobed structure containing a large main lobe where the catalytic cysteine (C45) resides and a smaller inserted lobe (INS lobe) (Figure 1). We have previously shown that the SNL domain of wild type SidC forms a complex with E2~Ub, but SidC lacking the INS lobe fails to do so (Luo et al., 2015). In agreement with this observation, the binary complex structure reveals that the INS lobe indeed mediates direct binding with the E2, UbcH5C. The overall structure of the complex has an elongated arch-like shape. Strikingly, the catalytic cysteine of UbcH5C (C85) is about 80 \u00c5 away from the catalytic C45 of the SNL domain (Figure 1B\u2013E). This structural feature indicates that a drastic conformational rearrangement is required for the INS lobe to bring the two catalytic cysteines within attacking distance for efficient Ub transfer between the E2 and the E3.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain architecture of a member of the SidC family of Ub E3 ligase. (SNL: SidC N-terminal Ub E3 ligase; INS: insertion lobe; P4C: PI(4)P binding of SidC; CTD: C-terminal domain.) (B\u2013C) Two orthogonal views of a ribbon diagram of the SNL domain of SdcA (blue: main lobe; green: INS lobe domain) in complex with UbcH5C (pink). The catalytic cysteines of both SdcA (C45) and UbcH5C are shown as red spheres. Note that the distance between the two cysteines is about\u00a0~80 \u00c5. (D\u2013E) Two orthogonal views of the SdcA-UbcH5C complex presented in surface.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>UbcH7\u00a0~\u00a0Ub SidC SNL (PDB ID: 6CP2)</th>\n      <th>UbcH5C-SdcA SNL (PDB ID: 6CP0)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P6522</td>\n      <td>C2221</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>101.522, 101.522, 352.302</td>\n      <td>135.550, 142.202, 118.333</td>\n    </tr>\n    <tr>\n      <td>a, b, g (\u00b0)</td>\n      <td>90.0, 90.0, 120.0</td>\n      <td>90.0, 90.0, 90.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)*</td>\n      <td>50.0\u20132.90 (2.95\u20132.90)</td>\n      <td>50.00\u20132.90 (2.95\u20132.90)</td>\n    </tr>\n    <tr>\n      <td>Rsym\u2020\u00a0(%)</td>\n      <td>14.0 (80.2)</td>\n      <td>12.5 (95.3)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>30.3 (16.6)</td>\n      <td>8.8 (2.7)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.9 (99.9)</td>\n      <td>96.4 (91.5)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>13.8 (14.6)</td>\n      <td>4.0 (3.7)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>2.9</td>\n      <td>3.0</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>27,387</td>\n      <td>23,102</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree\u2021 (%)</td>\n      <td>21.7/28.3</td>\n      <td>20.3/27.1</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.0113</td>\n      <td>0.0106</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.4734</td>\n      <td>1.4619</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Preferred (%)</td>\n      <td>96.84</td>\n      <td>96.94</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>3.16</td>\n      <td>3.06</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Values in parentheses are for highest-resolution shell.\u2020Rsym = \u03a3h\u03a3i|II(h) \u2212<I(h)|/\u03a3h\u03a3iII(h).\u2021Rcrys = \u03a3(|Fobs|\u2212k|Fcal|)/\u03a3|Fobs|. Rfree was calculated for 5% of reflections randomly excluded from the refinement._\n\n### Overall structure of the SidC-UbcH7~Ub complex\n\nTo gain insight into how this conformational rearrangement occurs during catalysis, we sought to determine the structure of the SNL domain in complex with a Ub-charged E2. To overcome the labile nature of a thioester bond, the catalytic cysteines of both UbcH5C and UbcH7 were mutated to lysine to form an E2~Ub complex linked by a stable isopeptide bond. In addition, to enhance the stability of the E3s, the catalytic cysteines of SidC (C46) and SdcA (C45) were mutated to alanine. We then performed crystallization screens for all four possible combinations of SidC or SdcA with UbcH5C~Ub or UbcH7~Ub, and obtained crystals of the SNL domain of SidC with UbcH7~Ub when mixed together in a 1:1.2 molar ratio. Although the crystals diffracted poorly with the conventional flash-frozen cryoprotection method, the crystals diffracted to 2.9 \u00c5 when cryo-cooled under high-pressure (Huang et al., 2016). The structure of the ternary complex was also solved via molecular replacement using the main lobe of SidC as the search model, and the final structure was refined to an R-factor of 21.7 and a free R-factor of 28.3 (Table 1). The SidC-UbcH7~Ub complex has a more globular, compact structure (Figure 2). In the ternary complex, the SNL domain of SidC maintains an arch-like shape, although with a shortened span compared to the SNL domain of SdcA in the binary complex. UbcH7 interacts with both the main and INS lobes of the SNL domain. The surface area of the INS lobe that mediates the binding with UbcH7 is nearly identical to that observed in the SdcA-UbcH5C binary complex. The Ub moiety is tightly clamped between the INS and main lobes, filling the space under the \u2018arch\u2019. Remarkably, the distance between the two C\u03b1 atoms of the catalytic residues of the E2 (C86K) and the E3 (C46A) is reduced to\u00a0~9 \u00c5 (from\u00a0~80 \u00c5 in the binary complex) and the C-terminal carbonyl group of the donor Ub is within attacking distance from the modeled sulfhydryl group of C46A on SidC (Figure 2A\u2013D). This dramatic structural rearrangement is mainly caused by a swinging motion made by the E2-binding INS lobe.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Two orthogonal views of the SidC-UbcH7~Ub complex structure. The SNL domain of SidC is shown in surface with the main lobe colored in blue and INS lobe in green. UbcH7 (pink) and the donor Ub (yellow) are shown in ribbon. The catalytic cysteines of both SidC (C46) and UbcH7 (C86) are shown in red. (C\u2013D) Two orthogonal views of the SidC-UbcH7~Ub ternary complex in surface representation.\n\n### Conformational flexibility of the E2-binding INS lobe\n\nThe INS lobe is hinge-anchored to the main lobe through two flexible loops (Figure 1B). A structural comparison of the SNL domains from the two complexes and two previously reported SidC structures reveals that the INS lobe swings within a range of 900 between the most extended conformation observed in the SdcA-UbcH5C complex and the most compact conformation found in the SidC-UbcH7~Ub complex, with the previously solved structures of SidC apo-enzymes falling in the middle (Figure 3A\u2013B and Figure 3\u2014figure supplement 1). Large conformational changes have commonly been observed in HECT-type E3 ligases. The classic HECT domain comprises a larger E2-binding N-lobe and a smaller C-lobe that harbors the catalytic cysteine. Structural studies have shown that a flexible hinge-like linker between the two lobes to allows the C-lobe cysteine to approach the E2~Ub thioester for the transthiolation reaction, or move in close proximity to a substrate lysine for the aminolysis reaction in the second step of catalysis (Huang et al., 1999; Kamadurai et al., 2013; Kamadurai et al., 2009; Verdecia et al., 2003) (Figure 3C). Similar conformational changes were also observed in bacterial HECT-like E3 ligases (Lin et al., 2012) (Figure 3D). In all known HECT or HECT-like E3s, the catalytic cysteine residing at the edge of the smaller C-lobe cycles between interacting with the E2~Ub thioester and the substrate lysine, owing to the rotational motion of the C-lobe. However, SidC differs in that the larger main lobe containing the catalytic cysteine likely harbors the substrate binding site and thus considered as the stationary lobe relative to the potential substrate binding site, while the E2-binding INS lobe recruits E2~Ub and delivers Ub to the catalytic cysteine through a large swiveling conformational shift. This variation suggests that SidC might use a different mechanism for Ub transfer (discussed below).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overlay of structures of the SNL domains of SidC/SdcA. Four structures were superimposed based on the C\u03b1 atoms of the main lobe. The INS lobes adopt a wide range of conformations relative to the main lobe and are colored in red (SdcA-UbcH5C complex), green (SidC 1\u2013542, PDB ID 4TRG), blue (SidC 1\u2013871, PDB ID 4ZUZ), and purple (SidC-UbcH7~Ub), respectively. (B) An orthogonal view of the four superimposed structures shown in surface. The INS lobes are colored with the same scheme as in (A). (C) Structural overlay of HECT domains with their N-lobes superimposed. The C-lobes are colored red (NEDD4L-UbcH5B~Ub, PDB 3JW0), blue (NEDD4~Ub, PDB 4BBN), green (E6AP-UbcH7, PDB 1D5F), and purple (Rsp5~Ub sub, PDB 4LCD), respectively. The E2 binding site is indicated by a curved dashed line. (D) Structural overlay of two HECT-like bacterial E3s. The E2-binding N-lobe is superimposed. The mobile C-lobe is colored in red (SopA-UbcH7, PDB 3SY2) and blue (NleL-UbcH7, PDB 3SQV), respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A comparison of the connecting loops between the INS and main lobe in the SdcA-UbcH5C binary complex and the SidC-UbcH7~Ub ternary complex. (B) A comparison of the same connecting loops in SidC542 apo enzyme and the SidC-UbcH7~Ub ternary complex. (C) A comparison of the same connecting loops in the\u00a0SidC871 apo enzyme and the SidC-UbcH7~Ub ternary complex. Note: In all three panels, the SidC-UbcH7~Ub ternary complex has the same orientation. The other structure was superimposed onto the SidC-UbcH7~Ub ternary complex structure based on the C\u03b1 atoms of the main lobe.\n\n### Structural determinants for E2 recognition by SidC\n\nA comparison of the SdcA-UbcH5C interface with that observed in the SidC-UbcH7~Ub complex reveals common structural determinants for E2 recognition. Both SdcA and SidC apply a similar surface area of about 950 \u00c52 on the INS lobe to bind a region around the conserved E2 loop4 phenylalanine (UbcH5C F62 and UbcH7 F63) (Figure 4A), which is the pivotal residue mediating the binding with HECT E3s (Nuber and Scheffner, 1999). Further structural analysis reveals two key determinants governing the binding between the INS lobes with E2s. First, the conserved E2 loop4 phenylalanine is placed into a hydrophobic pocket on the INS lobe in both SdcA and SidC (Figure 4\u2014figure supplement 1). In SdcA, this hydrophobic pocket is lined with residues I285, A286, and Y273 (Figure 4B). Likewise, the hydrophobic pocket on the SidC INS lobe is formed by residues Y292, L297, M298, L299, and A316. Similar to HECT E3s, these residues are not conserved although the hydrophobic nature of the pocket is maintained. Second, the interaction between E2 and SdcA/SidC is also mediated by complementary electrostatic interactions. The interface surrounding the loop4 phenylalanine on both UbcH5C and UbcH7 has a positive electrostatic potential, while the corresponding interface on the INS lobe of both SdcA and SidC is negatively charged (Figure 4\u2014figure supplement 2). In the SdcA-UbcH5C complex, residues K4 and K63 of UbcH5C form salt bridges with SdcA residues D287 and D305. Moreover, the R5 side chain of UbcH5C H-bonds with the main chain carbonyl group of A286 of SdcA (Figure 4B). Similarly, in the SidC-UbcH7~Ub complex, K9 of UbcH7 salt bridges with SidC D301 and R6 and K100 of UbcH7 form H-bonds with the carbonyl group of SidC L297 and L299, respectively (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structural superposition of the INS lobe of SdcA (green) and its bound E2 UbcH5C (pink) with the INS lobe of SidC (light green) and its bound UbcH7 (light pink). (B) Zoomed-in view of SdcA/UbcH5C interface. (C) Detailed interactions at the interface of SidC/UbcH7. (D) Single turnover activity assays of UbcH7 mutants at the SidC/UbcH7 interface. Top panel: representative SDS-gel of UbcH7~Ub complex remaining at the indicated time points. Bottom panel: Quantified intensity of UbcH7~Ub at the indicated time points. The error bar represents the standard deviation of three independent experiments. (E) Single turnover activity assays of SidC mutants at its E2 binding interface.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The interaction between UbcH5C (shown in pink ribbon) and the INS lobe (shown in surface) of SdcA. The INS lobe is colored based on the hydrophobicity of surface residues with the most polar residues in white and most hydrophobic residues in green. Note that the canonical E3-interacting F62 of UbcH5C is accommodated in a hydrophobic pocket on the INS domain. (B) The interaction between UbcH7 (shown in light pink ribbon) and the INS lobe (shown in surface) of SidC.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The interaction between UbcH5C (shown in surface) and the INS lobe (shown in ribbon) of SdcA. Note that the surface area on UbcH5C mediated the binding with the SdcA INS lobe is positively charged. (B) Same interface as shown in (A). UbcH5C is shown in ribbon, while the INS lobe is shown in surface. Note that the E2-binding area is highly negatively charged. (C) and (D) Surface and ribbon representations of the interface between UbcH7 and the INS lobe of SidC. Note that similar to SdcA-UbcH5C, the interface on UbcH7 is positively charged (C) while the interface on the INS lobe of SidC is negatively charged (D). The surface is colored based on electrostatic potential with positively charged regions in blue (+5 kcal/electron) and negatively charged surface in red (\u22125 kcal/electron).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative SDS-gel of ester bond-linked UbcH5C~Ub complex remaining at the indicated time points. (B) Quantified intensity of UbcH5C~Ub at the indicated time points. The error bar represents the standard deviation of three independent experiments.\n\nTo validate the importance of the two types of interactions at the E2-E3 interface, we selectively mutagenized residues at the SidC-UbcH7 interface and analyzed the enzymatic activities of those mutants. Owing to the rapid transthiolation reaction catalyzed by SidC/SdcA, we used the ester-linked UbcH7~Ub (UbcH7 C86S was precharged with Ub by E1) in experiments to measure the single-turnover rate of UbcH7~Ub. The activity of the F63A mutant was substantially reduced compared to wild type (Figure 4D), suggesting that the hydrophobic loop4 phenylalanine is indispensable for E2 recognition by SidC/SdcA. Moreover, the R6A mutant, designed to disrupt electrostatic and H-bonding interactions with SidC, also showed a severe impairment of activity. On the other hand, mutations of the SNL domain of SidC also displayed variable effects on the enzymatic activity. A disruption of the hydrophobic pocket by the L297D/L299D double mutant substantially impaired the activity while the single M298S mutant showed no obvious effect. Interestingly, the A316Y mutant, which was expected to maintain the hydrophobic nature of the pocket but with a reduced pocket size due to its bulky side chain, displayed a moderate effect (Figure 4E). The hydrophobic interaction appears to be conserved between SdcA and its cognate E2 UbcH5C. The Ub transfer activity was substantially reduced when the loop4 phenylalanine F62 in UbcH5C was mutated to alanine or when the hydrophobic pocket in the INS lobe of SdcA was disrupted by the A286Y mutant (Figure 4\u2014figure supplement 3). Together, our data support that both the hydrophobic and electrostatic/H-bond interactions at the E2-INS interface are crucial for E2 recognition and thus the catalytic function of SidC/SdcA.\n\n### The C-terminal tail of the donor Ub is locked at the E3 catalytic site\n\nThe SidC-UbcH7~Ub structure further reveals how the donor Ub is positioned on the SidC SNL domain and primed for transfer. The donor Ub, which is covalently attached to UbcH7, extends away from the E2 and is trapped between the INS and the main lobes of the SNL domain (Figure 5A). Notably, the C-terminal tail of the donor Ub adopts a \u03b2-strand conformation and pairs in parallel with a short \u03b2-strand upstream of the catalytic cysteine. This \u03b2-sheet augmentation interaction was also observed in the donor Ub that was covalently attached to the HECT domain of Nedd4 (Maspero et al., 2013). The interaction between the donor Ub C-terminal tail and the SNL domain is further reinforced by sidechain-mediated H-bonds and salt bridges. The hydroxyl group of SidC T45 H-bonds with the amino group of Ub G75. Strikingly, R74 of the donor Ub forms a bidentate salt bridge with the highly conserved SidC D43 and a salt bridge with another conserved aspartic residue D51. Disruption of these interactions substantially hampers SidC activity as evidenced by the loss of activity of the D43R mutant, which disrupts the bidentate salt bridge, as well as the T45V mutant, which eliminates the hydrogen bond (Figure 5C). These results suggest that locking the C-terminal tail of the donor Ub at the E3 catalytic site is crucial for the reaction.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig5-v2.jpg)\n\n**Figure 5.:** (A) Overall view of the interaction of the donor Ub with the SNL domain of SidC. (B) Detailed interactions of the C-terminal tail of the donor Ub at the main lobe active site. (C) Single turnover activity assays of SidC mutants of residues that interact with the Ub C-terminal tail.\n\n### The donor Ub is held stationary between the INS and main lobes during catalysis\n\nBesides the locked C-terminal tail, the donor Ub also makes extensive contacts with both the INS lobe and main lobe of the SNL domain by burying\u00a0~2900 \u00c52 of surface area (Figure 6A). Surface complementarity plays a significant role at the interface between the Ub and the INS lobe. The Ub loop containing K48 protrudes into a shallow groove on the INS domain with the hydrophobic I44 patch embedded at the interface. Surrounding the K48 loop, a network of H-bonds and electrostatic interactions are formed at the interface (Figure 6B). In particular, the carbonyl and \u03b5-amino group of K48 H-bonds with the main chain amino and carbonyl groups on the INS lobe, respectively. Furthermore, K6 and R42 form electrostatic interactions with D271 and D319 of the INS lobe. The donor Ub also makes extensive contacts with the main lobe (Figure 6A). In addition to the C-terminal tail, the carboxyl end of the first \u03b1-helix of Ub forms hydrogen bonds and salt bridges with H504 and K505 on the main lobe (Figure 6B). To assess the importance of contacts between the SNL domain and the donor Ub, several residues on the SNL domain that make electrostatic interactions with Ub were mutated to residues carrying opposite charges. Both the D271R and the D319R mutants on the INS lobe largely impair SidC activity, as does the H504D/K505D double mutant on the main lobe. A sequence and structural comparison of SidC with SdcA indicates that residues involved in Ub binding are conserved in SdcA (Figure 6\u2014figure supplement 1). Indeed, the Ub transfer activity was also substantially impaired when mutations of these conserved Ub-binding residues were introduced in SdcA (Figure 6\u2014figure supplement 2). Taken together, these results indicate that the tight binding of the donor Ub by both SNL domain lobes is required for efficient catalysis and may also help prevent the reverse transthiolation reaction (handing the donor Ub back to the E2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig6-v2.jpg)\n\n**Figure 6.:** (A) Overall view of the donor Ub bound on the SNL domain of SidC. (B) Detailed network of interactions between the donor Ub and the INS lobe. H-bonds are illustrated with dashed lines. (C) Zoomed-in view of the interaction between the main lobe and the carboxyl end of the first \u03b1-helix of Ub. (D) Single turnover activity assays of SidC mutants of selected residues at the interface between the donor Ub and the SNL domain.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The sequence alignment was calculated by Clustal Omega and colored by the Multiple Align Show online server. The INS and main lobes and the two linker peptides between the two lobes are labeled on the top of the sequences. Residues in either SidC or SdcA selected for mutagenesis and used in the enzymatic assays are labeled with red (catalytic residue), blue (at the E2 interface), gold (involved in Ub binding), or purple (forms the acidic patch near the catalytic site) triangles. Entrez database accession numbers are as follows: SidC, GI: 40792743; SdcA, GI: 52629829.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Representative SDS-gel of ester bond-linked UbcH5C~Ub complex remaining at the indicated time points. (B) Quantified intensity of UbcH5C~Ub at the indicated time points. The error bar represents the standard deviation of three independent experiments.\n\n### Acidic residues near the catalytic cysteine are crucial for E3 activity\n\nA structure-based conservation analysis of the SNL domain with the ConSurf server (Ashkenazy et al., 2016) revealed a surface patch around the catalytic site enriched with conserved residues (Figure 7A). Besides the residues (N44, T45, and C46) comprising the catalytic motif, two invariable aspartic residues (D168, D446) and a histidine residue (H444) constitute a major part of the conserved patch (Figure 7B). Although in the SidC-UbcH7~Ub ternary complex the distance of these residues from the catalytic cysteine ranges between 10 and\u00a014 \u00c5, due to the flexible nature of the catalytic loop, these acidic residues can be in close proximity, about 5 \u00c5 away from the catalytic cysteine as observed in the SdcA-UbcH5C binary complex (Figure 7\u2014figure supplement 1). It has frequently been observed that acidic residues are present in the vicinity the catalytic cysteine in HECT or HECT-like E3s. These acidic residues were proposed to either guide the substrate lysine into the active site and/or to deprotonate the \u03b5-amino group of the approaching substrate lysine in Ub ligation (Kamadurai et al., 2013; Lin et al., 2012). In particular, residue H887 in the RBR family ligase, HOIP, acts as a general base to activate the incoming \u03b1-amino group for linear Ub chain formation (Stieglitz et al., 2013). Similar acidic residues, such as D117 in UbcH5B and D127 in Ubc9, were also found in the vicinity of the catalytic cysteine in E2s\u00a0(Berndsen et al., 2013; Dou et al., 2012; Plechanovov\u00e1 et al., 2012; Yunus and Lima, 2006). In the case of SidC, D168 may function as a guide or directly as a general base for the deprotonation of the attacking lysine. Although slightly further away, D446 forms a hydrogen bond with H444 and thus may indirectly activate the attacking lysine through the deprotonation of H444. Indeed, single amino acid substitutions of either of these three conserved residues markedly impaired the ligase activity of the SNL domain (Figure 7C and D). Together, our data reveal an important role for a cluster of invariable acidic residues at the active site in SidC catalyzed ubiquitination.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig7-v2.jpg)\n\n**Figure 7.:** (A) Surface conservation analysis of the SNL domain. The conservation was calculated from all SidC homologous sequences from all Legionella species with available genomic sequences using the ConSurf server, with the most conserved residues colored in purple and the least conserved residues in cyan. Note that the catalytic site of the SNL domain is concentrated with the most conserved residues. (B) A zoomed-in view of the most conserved residues at the catalytic site, including H444 and two acidic residues, D168 and D446. (C) Multiple turnover ubiquitination activity assays of SidC mutants of the conserved residues near the SidC active site monitored by the consumption of Ub. Left panel: representative SDS-gel of Ub remaining by the ubiquitination reaction at the indicated time points. Right panel: Quantified intensity of the remaining Ub at the indicated time points. The error bar represents the standard deviation of three independent experiments.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36154/elife-36154-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Active site of SidC in the SidC-UbcH7~Ub ternary complex. (B) Active site of SdcA in SdcA-UbcH5C binary complex. The flexibility of the loop harboring the catalytic cysteine allows the catalytic cysteine to come inclose proximity to the conserved acidic patch.\n\n## Discussion\n\nIn this study we present the crystal structures of two homologous Legionella Ub E3 ligases SidC/SdcA in complex with a human E2 enzyme alone and an E2 covalently conjugated to ubiquitin. These two structures capture SidC in the stage of E2 recognition, and the following stage at which the donor Ub is positioned for transfer from the E2 to the E3. These two catalytic intermediate snapshots allow us to postulate the mechanism of SidC-catalyzed ubiquitination. Although SidC has no sequence or structural homology to any other E3s, the catalytic SNL domain of SidC contains two lobes, a smaller INS lobe that mediates the binding with E2 and a larger main lobe that carries the catalytic cysteine. The E2-binding INS lobe undergoes a large swinging movement around two hinge peptides that connect the INS lobe to the main lobe. Through the swiveling motion of the INS lobe, E2~Ub is brought into the vicinity of the catalytic site on the main lobe. The donor Ub makes extensive contacts with both the INS and the main lobe and is tightly \u2018trapped\u2019 on the SNL domain with its C-terminal tail engaged in a \u03b2-strand augmentation interaction with a \u03b2-strand upstream of the catalytic cysteine. Since the catalytic cysteine is at a fixed a position at the center of the catalytic site, it is likely that the donor Ub will maintain the same tightly bound state after the transthiolation reaction, ready for ligation with a substrate lysine during the second step. Several acidic residues neighboring the catalytic site may function to guide and/or activate attacking lysine residues to facilitate Ub ligation.\n\nThe structural organization of SidC is reminiscent of the N- and C-lobes in HECT E3s. However, notable differences exist between SidC and HECT E3s. First, in contrast to SidC, the E2-binding N-lobe of HECT E3s is relatively stationary in reference to the substrate binding site, while the catalytic cysteine-bearing C-lobe rotates around the linking peptide between the two lobes to relay the donor Ub from the E2 to a substrate. Second, the donor Ub on HECT E3s makes contacts nearly exclusively with the C-lobe while the donor Ub is clamped between the INS and main lobes and buries much larger surface areas on both the donor Ub and the SNL domain. The third prominent difference is that unlike the stationary donor Ub on SidC, the donor Ub loaded on the C-lobe of HECT E3s undergoes another drastic rotational movement to approach the substrate lysine after the E3~Ub intermediate is formed (Kamadurai et al., 2013).\n\nDespite these notable mechanistic differences, our studies of this unique family of bacterial E3s also provide exemplary insights into the general theme of ubiquitination reactions. It has been commonly observed that immobilizing the Ub thioester can enhance the efficiency of Ub transfer (Dou et al., 2012; Maspero et al., 2013; Plechanovov\u00e1 et al., 2012). In the structure of the dimeric RING domain of RNF4 in complex with UbcH5A~Ub, the donor Ub is stabilized by interactions with the both RING protomers and the carboxyl terminus of the donor Ub is locked into an active site groove on the E2 (Plechanovov\u00e1 et al., 2012). In the structure that mimics the HECT~Ub thioester intermediate (Maspero et al., 2013) and the structure of the HECT domain of Rsp5 crosslinked with a donor Ub and a peptide substrate (Kamadurai et al., 2013), Both of the donor Ubs bind to the C-lobe in a similar fashion with their C-terminal tails locked in an extended conformation. The structure of SidC-UbcH7~Ub provides an outstanding example of how the donor Ub is tightly locked on the E3 catalytic domain throughout the two-step ubiquitination reaction. Our results support a unifying concept that a reduction of the inherent conformational flexibility of the donor Ub thioester on both E2 and E3 is essential for efficient Ub transfer in the ubiquitination cascade.\n\n## Materials and methods\n\n### Cloning and mutagenesis\n\nSidC and SdcA were prepared as previously described (Hsu et al., 2014). In vitro site-directed mutagenesis was used to generate single or multiple point mutations in UbcH5C, UbcH7, SdcA538, and Sid542 using complimentary oligonucleotide primer pairs containing the requisite base substitutions. His-TEV-Ub was generated by PCR amplification of Ub with flanking BamH1 and Xho1 sites. The PCR product was digested and inserted into a pET-His-TEV vector containing an N-terminal 6x-His tag upstream of a TEV cleavage site.\n\n### Protein expression and purification\n\nE. coli Rosetta strains harboring the appropriate expression plasmids were grown in Luria-Bertani medium supplemented with 34 \u03bcg/ml chloramphenicol and either 50 \u03bcg/ml kanamycin or 100 \u03bcg/ml ampicillin, and grown to mid-log phase. Protein expression was induced overnight at 18\u00b0C with 0.2 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG). Harvested cells were resuspended in buffer containing 150 mM NaCl, 50 mM Tris-HCl pH 8.0, and 1 mM PMSF, and lysed by sonication. The lysate was clarified by centrifugation at 31,000 x g for 45 min at 4\u00b0C, and incubated with cobalt resin (Gold-Bio) for 1.5 hr at 4\u00b0C. Bound proteins were washed extensively with lysis buffer. UbcH5C, UbcH7, SdcA538, and SidC542 were incubated with the SUMO-specific protease Ulp1, to release the desired protein and leave the His-SUMO tag conjugated to the resin. The eluted protein samples were further purified using size-exclusion chromatography (HiLoad Superdex 16/600 S200, GE Lifesciences), and assessed for purity via SDS-PAGE. The fractions corresponding to purified protein were collected, pooled, and concentrated in 150 mM NaCl, 20 mM Tris-HCl, pH 7.5. His-TEV-Ub was bound to cobalt resin, washed extensively, and eluted in 300 mM imidazole, 150 mM NaCl, and 50 mM Tris-HCl pH 8.0, before proceeding to size exclusion chromatography.\n\nHuman E1 was purified by reacting with ubiquitin-conjugated to Affi-Gel 10 (Bio-Rad) resin. Briefly, His-TEV-Ub K6 (containing only Lys6, with all other lysines mutated to arginine) was conjugated to the Affi-Gel resin via the primary amine of K6 in 150 mM NaCl, 50 mM HEPES pH 8.0, and then equilibrated in 50 mM Tris-HCl pH 8.0. After lysate clarification, 200 mM ATP, 6 mM creatine phosphate, and 50 U creatine phosphokinase was added to the hE1 supernatant, which was incubated with the Ub-Affi-Gel resin and nutated for 1 hr at 4\u00b0C. The mixture was poured into a column and after flow-through collection, the column was washed with 20 column volumes of 0.5 M KCl, 50 mM Tris-HCl pH 8.0. hE1 was eluted in 10 mM DTT, 50 mM Tris-HCl pH 8.0, and a buffer exchange into 150 mM NaCl, 50 mM Tris-HCl pH 8.0 was performed using a centrifugal filter before proceeding to further size exclusion chromatography purification.\n\n### In vitro ubiquitination assays\n\nFor single turnover assays, UbcH7 C86S was used to generate stable, ester-linked UbcH7~Ub. 2 \u03bcM hE1, 34 \u03bcM UbcH7 C86S, and 203 \u03bcM ubiquitin were incubated in 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1.8 U inorganic pyrophosphatase, 1.8 U creatine phosphokinase, and 21 mM creatine phosphate at 37\u00b0C for 8 hr. After the reaction, a centrifugal buffer-exchange was performed (to remove Mg+2 and ATP) and a final concentration of 2 mM EDTA was added to chelate any remaining Mg+2. The single turnover reaction was performed at room temperature in a total volume of 100 \u03bcl. In the reacrtion, 8 \u03bcM of ester-linked UbcH7~Ub was mixed with 0.9 \u03bcM SidC and 80 \u03bcM UbcH5C was added to the reaction, to act as a substrate proxy for SidC activity. The reaction mixture was sampled at the indicated time points and quenched with SDS loading buffer containing 5 mM \u03b2-mercaptoethanol. The samples were separated by SDS-PAGE and stained with Coomassie blue. A LI-COR Odyssey scanner was used to image the Coomassie-stained gels, and the ImageStudio software package (LI-COR) was used to quantify the bands. The results were averaged from three independent experiments, and plotted using Graphpad Prism (Graphpad).\n\nSince there are no confirmed substrates that can be specifically ubiquitinated by SidC, in our single turnover assays we used UbcH5C as a substrate proxy. In fact, in our in vitro ubiquitination reaction, E2s were observed to be ubiquitinated by SidC. The time-dependent accumulation of mono-ubiquitinated UbcH7 migrated at the same size as the ester-linked UbcH7~Ub on an SDS gel. Thus the turnover of ester-linked UbcH7~Ub cannot be distinguished on an SDS gel. By adding an excessive amount of UbcH5C as a substrate proxy, it can prevent/compete SidC mediated ubiquitination of discharged UbcH7. Moreover, since the mono-ubiquitinated UbcH5C migrated at a different size compared to the ester-linked UbcH7~Ub, the consumption of ester-linked UbcH7~Ub can be visualized by SDS-PAGE in a time-dependent manner. The single turnover assay for SdcA was carried out similarly as described above. However, ester-linked UbcH5C~Ub was used in the assay and UbcH7 was used as the substrate proxy. The ubiquitin consumption assays were performed using 2 \u03bcM hE1, 3.4 \u03bcM UbcH7, 37.5 \u03bcM Ub, and 5.1 \u03bcM SidC542 (WT or catalytic site mutant) in Tris-HCl pH 8.0, MgCl2, 1.8 U inorganic pyrophosphatase (Sigma-Aldrich), 1.8 U creatine phosphokinase (Sigma-Aldrich), and 21 mM creatine phosphate (Sigma-Aldrich) at 37\u00b0C for the indicated timepoints. Samples were analyzed by SDS-PAGE and quantification of the reaction was carried out similarly as described above.\n\n### SdcA/UbcH5C and SidC/UbcH7~Ub complex formation\n\nTo form the binary complex, SdcA and UbcH5C were mixed in a 1:1.2 molar ratio, incubated for 1 hr at 4\u00b0C, and concentrated to a final SdcA concentration of 10 mg/ml. To form the SidC-UbcH7~Ub ternary complex, UbcH7~Ub was first generated using an in vitro ubiquitination reaction. 2 \u03bcM hE1, 34 \u03bcM UbcH7 C86K, and 203 \u03bcM His-TEV-ubiquitin were incubated in 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1.8 U inorganic pyrophosphatase, 1.8 U creatine phosphokinase, and 21 mM creatine phosphate at 37\u00b0C for 24 hr. The reaction was mixed with cobalt resin (Gold-Bio) equilibrated in 150 mM NaCl, 50 mM Tris-HCl pH 8.0 and rotated for 2 hr at 4\u00b0C. After extensive washing with 150 mM NaCl, 50 mM Tris-HCl pH 8.0 (to remove unreacted UbcH7), bound proteins were eluted in 300 mM imidazole, 150 mM NaCl, 50 mM Tris-HCl pH 8.0. 0.5 mM EDTA and 1 mM DTT was added to the elution, and the His-TEV tag of ubiquitin was removed via TEV protease cleavage at room temperature for 4 hr. Following cleavage, a buffer exchange into 150 mM NaCl, 50 mM Tris-HCl pH 8.0 was performed using a 10 kDa centrifugal filter (Amicon). The protein solution was incubated with equilibrated cobalt resin again for 2 hr at 4\u00b0C, and UbcH7~Ub was collected in the flow-through fraction. Another centrifugal buffer exchange was performed into 20 mM NaCl, 20 mM Tris-HCl pH 7.0. The protein was passed through a HiTrap QP HP anion exchange column (GE Lifesciences) equilibrated in 20 mM NaCl, 20 mM Tris-HCl pH 7.0, and loaded onto a HiTrap SP HP cation exchange column (GE Lifesciences) in the same buffer. UbcH7~Ub was eluted using a continuous gradient of 500 mM NaCl, 20 mM Tris-HCl pH 7.0. Fractions containing UbcH7~Ub were concentrated and further purified using size-exclusion chromatography (HiLoad Superdex 16/600 S200, GE Lifesciences). The SidC-UbcH7~Ub complex was formed by incubation of SidC with UbcH7~Ub in a 1:1.2 molar ratio for 1 hr at 4\u00b0C and the complex was concentrated to a final SidC concentration of 10 mg/ml.\n\n### Crystallization, data collection, and processing\n\nInitial crystallization screens were carried out using a Crystal Phoenix liquid handling robot (Art Robbins Instruments) at room temperature. Crystals were grown at room temperature by hanging drop vapor diffusion by mixing 1.5 \u03bcl of protein with an equal volume of mother liquor. Small plate-like SdcA-UbcH5C crystals were formed after 2 days in 1.5 M ammonium sulfate, 3% glycerol, 0.1 M HEPES pH 7.5. The crystals were soaked in cryoprotectant solution containing the crystallization condition supplemented with 20% glycerol, and flash frozen in a stream of liquid nitrogen. Hexagonal rod-shaped SidC-UbcH7~Ub crystals formed after 4 days at room temperature in 16% PEG 3000, 0.1 M Tris pH 9.0. These crystals failed to diffract to high resolution under conventional cryo-cooling conditions. Therefore a high-pressure cryo-cooling strategy was employed to pressurize the crystals at 380 MPa for 20 min using the capillary shielding method before frozen in liquid nitrogen (Huang et al., 2016; Kim et al., 2005). Diffraction data sets were collected at MacCHESS beamline A1 at the Cornell High Energy Synchrotron Source, and indexed, integrated, and scaled with HKL-2000 (Otwinowski and Minor, 1997). The SdcA-UbcH5C crystal belonged to the space group C2221 with unit cell dimensions a\u00a0=\u00a0135.55 \u00c5, b\u00a0=\u00a0142.20 \u00c5, c\u00a0=\u00a0118.33 \u00c5, \u03b1 = \u03b2 = \u03b3\u00a0=\u00a090.0\u00b0. The SidC-UbcH7~Ub crystal belonged to the space group P6522 with unit cell dimensions a\u00a0=\u00a0101.52 \u00c5, b\u00a0=\u00a0101.52 \u00c5, c\u00a0=\u00a0352.302 \u00c5, \u03b1 = \u03b2\u00a0=\u00a090.0\u00b0, \u03b3\u00a0=\u00a0120.0\u00b0. There is one complex molecule in the asymmetric unit of each of the crystals.\n\n### Structure determination and refinement\n\nBoth structures were solved by molecular replacement using the SNL domain main lobe of the SidC542 structure (PDB ID: 4RTH) as the search model with the AMoRe program (Trapani and Navaza, 2008) of the CCP4 suite (Collaborative Computational Project, 1994). Iterative cycles of model building and refinement were performed using COOT (Emsley and Cowtan, 2004) and refmac5 (Murshudov et al., 1997) of the CCP4 suite.\n\n### Computational analysis and graphic presentation of protein structure\n\nProtein surface conservation was calculated by the online ConSurf server (http://consurf.tau.ac.il) (Ashkenazy et al., 2016). Surface hydrophobicity coloring was based on the defined hydrophobic scale (Eisenberg et al., 1984). Surface electrostatic potential was calculated with the APBS (Baker et al., 2001) plugin in PyMOL. All structural figures were generated using PyMOL (The PyMOL Molecular Graphics System, Version 1.8.X, Schr\u00f6dinger, LLC). The sequences of SidC and SdcA were aligned using Clustal Omega (Sievers et al., 2011) and colored by the Multiple Align Show online server (http://www.bioinformatics.org/sms/index.html).\n",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "79f6fab7-f2c7-47dd-b798-8048ce48fc27",
+      "submission_id": "56eb17cb-c1ad-422d-9f65-b3850377a357",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cynthia Wolberger, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36154.023](https://doi.org/10.7554/eLife.36154.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Insights into the ubiquitin transfer cascade catalyzed by the Legionella effector SidC\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ivan Dikic as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports two important structures of Legionella-encoded ubiquitin ligases, SdcA and SidC, with an E2 (SdcA-UbcH5) or with a ubiquitin-charged E2 mimetic (SidC-UbcH7-Ub), respectively. SdcA and SidC are among recently discovered ubiquitin ligases encoded by intracellular bacterial pathogens that are introduced into host cells by bacterial secretion systems to alter the biology of the host cell. SdcA/SidC are unique enzymes with no structural or sequence similarly to eukaryotic ubiquitin ligases, yet mechanistically they are similar to HECT E3s in that they function through an E3-Ub thioester intermediate. Other examples of such HECT-like bacterial E3s have been reported previously (Salmonella SopA, E. coli NleL, Shigella IpaH enzymes) but the Legionella enzymes are structurally and mechanistically distinct from these enzymes. The structures presented here yield important insight into the conformational changes that are associated with some aspects of the catalytic cycle of the SdcA/SidC enzymes and are another remarkable example of how bacterial E3s have evolved independently to mechanistically mimic their eukaryotic counterparts. This will be of high general interest to those in the ubiquitin and bacterial pathogen fields.\n\nEssential revisions:\n\n1) The ubiquitination assays were not well-described, making it difficult to understand the rationale for some experiments as well as to evaluate the results. The Materials and methods section should be expanded to describe both single turnover and ubiquitination experiments in greater detail, including all protein concentrations, incubation times and buffer conditions, and without referring forward to other sections. The authors should explain what is meant by use of UbcH5C as a \"substrate proxy\" as well as the rationale for performing the single turnover experiments in this way. Since UbcH5 and UbcH7 bind to both ligases, a concern is that the 80 \u00b5M UbcH5B may compete with UBbcH7 for binding to the E3. Further details on the assays could help clarify this issue. The authors should explain what the substrate is for \"ligase activity\" and full gels should be shown in supplementary data for these assays (Figure 7).\n\n2) The authors compare structures of SdcA bound to UbcH5 with that of SidC bound to UbcH7-Ub and assume that the E3s and E2 are interchangeable. In light of the different reactivities previously reported, at least a few mutant assays should be performed with both E2s and both E3s to confirm that the mechanism is conserved and not a property of a given E2 or E3.\n\n3) The authors previously showed that K48R mutations affect SidC ubiquitination activity, which was interpreted solely in light of chain specificity. However, the new structures show that K48 of the donor ubiquitin protrudes into a groove on the INS domain, suggesting that the behavior of K48R substitutions might be due to effects on catalysis. It would be optimal if the authors could test this directly. At the very least, they should discuss how their previous finding might be reinterpreted in light of the new structures.\n\n4) The effect of mutations of D168, D446 and H444 are interpreted as impacting activation of the attacking substrate lysine, as observed in E2 enzymes. However, these residues are too far from the active site C46 (mutated to Ala in the structure) for this to be plausible; D168 and D446 are 12 \u2013 14 \u00c5 from the \u03b2 carbon of residue 46 and H44 is 10 \u00c5 away. These mutations must impact activity through a different mechanism, which should be considered and described. If it were possible to use the single turnover versus ubiquitin consumption assays to separate effects on transthiolation versus the aminolysis reaction, this could help in explaining the effect of these mutations.\n\n5) The SidC structure was determined in complex with a ubiquitin-E2 conjugate where the active site Cys of the E2 was replaced with a Lys to form a stable isopeptide-linked complex. It is then stated that the active site Cys of the E3 was altered to Ala \"to enhance the stability of the E3\". This requires some clarification, as it is not clear why this would stabilize the E3, and since the E2-Ub complex was stable, discharge to the E3 was not a possibility.\n",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8982e45-cfaa-4433-903f-5a8178609ce3",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C1",
+      "claim": "Legionella pneumophila is the causative agent of Legionnaires' disease",
+      "claim_type": "EXPLICIT",
+      "source": "The causative agent of Legionnaires' disease, Legionella pneumophila, delivers more than 330 virulent effectors to its host to establish an intracellular membrane-bound organelle called the Legionella containing vacuole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing this relationship",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3e026597-7425-4af5-8099-5327150640f3",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C2",
+      "claim": "Legionella pneumophila delivers more than 330 virulent effectors to its host",
+      "claim_type": "EXPLICIT",
+      "source": "The causative agent of Legionnaires' disease, Legionella pneumophila, delivers more than 330 virulent effectors to its host to establish an intracellular membrane-bound organelle called the Legionella containing vacuole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the number of effectors, supported by established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "10a50a6f-1cfe-4b90-81e6-34494320cd40",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C3",
+      "claim": "Legionella pneumophila establishes an intracellular membrane-bound organelle called the Legionella containing vacuole",
+      "claim_type": "EXPLICIT",
+      "source": "The causative agent of Legionnaires' disease, Legionella pneumophila, delivers more than 330 virulent effectors to its host to establish an intracellular membrane-bound organelle called the Legionella containing vacuole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Legionella infection biology",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "c0c259f4-bf1e-4f7b-a3ba-f4b0bf055712",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C4",
+      "claim": "SidC and its paralog SdcA have been identified as novel bacterial ubiquitin E3 ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Among the army of Legionella effectors, SidC and its paralog SdcA have been identified as novel bacterial ubiquitin (Ub) E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior research establishing the E3 ligase activity of these proteins",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "32cc9f6b-f8ea-4dc2-8325-327631e62422",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C5",
+      "claim": "The crystal structure of a binary complex of the N-terminal catalytic SNL domain of SdcA with its cognate E2 UbcH5C was determined",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the molecular mechanism of SidC/SdcA as Ub ligases, we determined the crystal structures of a binary complex of the N-terminal catalytic SNL domain of SdcA with its cognate E2 UbcH5C and a ternary complex consisting of the SNL domain of SidC with the Ub-linked E2 UbcH7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d830ee35-cc43-4f4c-80c2-1f2c2488c8be",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C6",
+      "claim": "The crystal structure of a ternary complex consisting of the SNL domain of SidC with the Ub-linked E2 UbcH7 was determined",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the molecular mechanism of SidC/SdcA as Ub ligases, we determined the crystal structures of a binary complex of the N-terminal catalytic SNL domain of SdcA with its cognate E2 UbcH5C and a ternary complex consisting of the SNL domain of SidC with the Ub-linked E2 UbcH7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "608c5f5e-c5e7-4490-8e45-f30437dd5a3a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C7",
+      "claim": "The two structures reveal the molecular determinants governing the Ub transfer cascade catalyzed by SidC",
+      "claim_type": "EXPLICIT",
+      "source": "These two structures reveal the molecular determinants governing the Ub transfer cascade catalyzed by SidC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "58b0d5ef-1c5d-4246-8118-037d3bdc182f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C8",
+      "claim": "The donor Ub is immobilized with its C-terminal tail locked in an extended conformation during the Ub transfer cascade",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data support a common mechanism in the Ub transfer cascade in which the donor Ub is immobilized with its C-terminal tail locked in an extended conformation, priming the donor Ub for catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion supported by structural observations in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "6e30be58-cb4c-4480-8423-6e7001442599",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C9",
+      "claim": "Legionella pneumophila is an intracellular opportunistic human pathogen",
+      "claim_type": "EXPLICIT",
+      "source": "Legionella pneumophila is an intracellular opportunistic human pathogen that causes a severe form of pneumonia termed Legionnaires' disease (Cunha et al., 2016; Rowbotham, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "705cac0e-6f43-4d2d-a671-cfcc90924271",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C10",
+      "claim": "Legionella pneumophila causes a severe form of pneumonia termed Legionnaires' disease",
+      "claim_type": "EXPLICIT",
+      "source": "Legionella pneumophila is an intracellular opportunistic human pathogen that causes a severe form of pneumonia termed Legionnaires' disease (Cunha et al., 2016; Rowbotham, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "15779332-5412-4629-b715-bea2cc4c20ff",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C11",
+      "claim": "Legionella uses a Dot/Icm type IV secretion system to secrete over 330 effector proteins into the host cytosol following phagocytic uptake",
+      "claim_type": "EXPLICIT",
+      "source": "Following phagocytic uptake, Legionella uses a Dot/Icm (Defective organelle trafficking/Intracellular multiplication) type IV secretion system to secrete over 330 effector proteins into the host cytosol (Ensminger, 2016; Qiu and Luo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Legionella infection mechanism, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "7504e369-c077-44f5-ad9a-781b577407a8",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C12",
+      "claim": "The concerted action of Legionella effectors leads to the formation of the LCV",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted action of these effectors leads to the formation of the LCV (Legionella-containing vacuole), an organelle that prevents lysosome-mediated degradation of the invading bacteria while also serving as a replicative niche (Isberg et al., 2009; Swanson and Isberg, 1995; Tilney et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "eddaf015-1ca5-4760-bec5-0ce6894f46c5",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C13",
+      "claim": "The LCV prevents lysosome-mediated degradation of the invading bacteria",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted action of these effectors leads to the formation of the LCV (Legionella-containing vacuole), an organelle that prevents lysosome-mediated degradation of the invading bacteria while also serving as a replicative niche (Isberg et al., 2009; Swanson and Isberg, 1995; Tilney et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b7736962-55fe-4fdb-9232-5daf86675214",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C14",
+      "claim": "The LCV serves as a replicative niche for Legionella",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted action of these effectors leads to the formation of the LCV (Legionella-containing vacuole), an organelle that prevents lysosome-mediated degradation of the invading bacteria while also serving as a replicative niche (Isberg et al., 2009; Swanson and Isberg, 1995; Tilney et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "84cd9eb1-645e-4f54-a1b9-64b1e7bdd74a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C15",
+      "claim": "The biological functions of most Legionella effectors are as yet unknown",
+      "claim_type": "EXPLICIT",
+      "source": "Although the biological functions of most Legionella effectors are as yet unknown, a number of effectors have been shown to modulate a rather diverse array of host cellular processes, including membrane trafficking, cellular signaling, lipid metabolism, and in particular, the host ubiquitination pathway (Hubber et al., 2013; Hubber and Roy, 2010; Lin and Machner, 2017; Qiu and Luo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ae025ef3-db47-44d2-a935-57f1737eb594",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C16",
+      "claim": "Some Legionella effectors modulate membrane trafficking, cellular signaling, lipid metabolism, and the host ubiquitination pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Although the biological functions of most Legionella effectors are as yet unknown, a number of effectors have been shown to modulate a rather diverse array of host cellular processes, including membrane trafficking, cellular signaling, lipid metabolism, and in particular, the host ubiquitination pathway (Hubber et al., 2013; Hubber and Roy, 2010; Lin and Machner, 2017; Qiu and Luo, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "2a261557-6240-4616-96b4-236610da3ca2",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C17",
+      "claim": "Ubiquitination is an essential eukaryotic posttranslational modification involved in myriad cellular activities",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination is an essential eukaryotic posttranslational modification involved in myriad cellular activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of cell biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "aaa83e26-a7ca-4d08-81b1-074568874784",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C18",
+      "claim": "Ub is covalently attached to substrates in a three-enzyme cascade",
+      "claim_type": "EXPLICIT",
+      "source": "Ub is covalently attached to substrates in a three-enzyme cascade (Hershko and Ciechanover, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "18b11498-01d4-48f6-b0e0-c10ba72a22b0",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C19",
+      "claim": "Ub is first activated by an E1 activating enzyme, then transferred to one of approximately 30 E2 conjugating enzymes, and finally ligated to a substrate by one of hundreds of E3 Ub ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Ub is first activated by an E1 activating enzyme, then transferred to one of approximately 30 E2 conjugating enzymes, and finally ligated to a substrate by one of hundreds of E3 Ub ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ubiquitination cascade",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "7e73d741-96f4-44d1-a447-b2c88d7acb8b",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C20",
+      "claim": "E3 ligases can be divided into three major classes: RING E3s, RBR E3s, and HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "The E3 ligases, which play a crucial role in the ubiquitination cascade, can be divided into three major classes: Really Interesting New Gene (RING) E3s (Deshaies and Joazeiro, 2009), Ring-Between-Ring (RBR) E3s (Aguilera et al., 2000), and Homologous to E6AP C-terminus (HECT) E3s (Huibregtse et al., 1995; Rotin and Kumar, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ff3c82a9-5bb5-4010-bbca-bdf08e6ff61c",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C21",
+      "claim": "Each of the three classes of E3s uses a distinct strategy to transfer Ub",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three classes of E3s uses a distinct strategy to transfer Ub (Berndsen and Wolberger, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "65959849-aaec-48e6-a3a2-d28065c0056e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C22",
+      "claim": "RING E3s promote a 'closed conformation' of the E2~Ub by locking the C-terminus of Ub into the active site groove on the E2 to facilitate direct Ub transfer from the E2~Ub to a substrate",
+      "claim_type": "EXPLICIT",
+      "source": "The RING E3s promote a 'closed conformation' of the E2~Ub by locking the C-terminus of Ub into the active site groove on the E2 to facilitate direct Ub transfer from the E2~Ub to a substrate (Dou et al., 2012; Plechanovov\u00e1 et al., 2012; Pruneda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RING E3 mechanism, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b2615567-ce15-4e9c-943c-7cfd17899cbc",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C23",
+      "claim": "HECT E3s catalyze a transthiolation reaction that transfers Ub from E2~Ub to the E3 catalytic cysteine residue",
+      "claim_type": "EXPLICIT",
+      "source": "The HECT E3s catalyze two distinct reactions: a transthiolation reaction, which transfers Ub from E2~Ub to the E3 catalytic cysteine residue; and a subsequent aminolysis reaction, which transfers Ub from E3~Ub to a substrate lysine (Huibregtse et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HECT E3 mechanism, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d5ba27b3-b7e9-4bcf-910c-54c3e76b0514",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C24",
+      "claim": "HECT E3s catalyze an aminolysis reaction that transfers Ub from E3~Ub to a substrate lysine",
+      "claim_type": "EXPLICIT",
+      "source": "The HECT E3s catalyze two distinct reactions: a transthiolation reaction, which transfers Ub from E2~Ub to the E3 catalytic cysteine residue; and a subsequent aminolysis reaction, which transfers Ub from E3~Ub to a substrate lysine (Huibregtse et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HECT E3 mechanism, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "239f7a18-174c-4e70-8fa5-edcf451cf5de",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C25",
+      "claim": "RBR family E3 ligases share features of both RING and HECT E3s and utilize a hybrid mechanism for Ub transfer",
+      "claim_type": "EXPLICIT",
+      "source": "The third class, the RBR family of E3 ligases, shares features of both RING and HECT E3s and utilizes a hybrid mechanism for Ub transfer (Dove et al., 2016; Wenzel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b88db1d2-3aea-4f78-82b2-7b057ebc575f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C26",
+      "claim": "A large number of bacterial pathogens encode effectors that mimic either the RING or HECT type E3 ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the three major classes of E3 ligases found in eukaryotes, a large number of bacterial pathogens encode a variety of effectors that mimic either the RING or HECT type E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1780a552-1523-49d1-a28b-555bf873f1ec",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C27",
+      "claim": "Some bacterially encoded E3 ligases have little sequence or structural homology to any other E3s",
+      "claim_type": "EXPLICIT",
+      "source": "However, some of these bacterially encoded E3 ligases have little sequence or structural homology to any other E3s (Ashida et al., 2014; Huibregtse and Rohde, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "fb2212ab-3011-469f-a96f-b3a41eaf250c",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C28",
+      "claim": "The Salmonella protein SopA and the Escherichia coli protein NleL possess E3 ligase activity dependent on a catalytic cysteine",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Salmonella protein SopA and the Escherichia coli protein NleL possess E3 ligase activity dependent on a catalytic cysteine and interact with E2s that contain a conserved phenylalanine residue yet show little sequence identity to known HECT E3s (Kamadurai et al., 2013; Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "6e1b1724-1754-4a46-93e6-c03b5dab568f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C29",
+      "claim": "SopA and NleL interact with E2s that contain a conserved phenylalanine residue",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Salmonella protein SopA and the Escherichia coli protein NleL possess E3 ligase activity dependent on a catalytic cysteine and interact with E2s that contain a conserved phenylalanine residue yet show little sequence identity to known HECT E3s (Kamadurai et al., 2013; Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "100e05d2-d943-496d-b9be-a4d853ac6252",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C30",
+      "claim": "SopA and NleL show little sequence identity to known HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Salmonella protein SopA and the Escherichia coli protein NleL possess E3 ligase activity dependent on a catalytic cysteine and interact with E2s that contain a conserved phenylalanine residue yet show little sequence identity to known HECT E3s (Kamadurai et al., 2013; Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ead45c96-17ee-4516-a3b2-c6bdf9cfa86e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C31",
+      "claim": "SidC and SdcA are required for the recruitment of ER proteins and ubiquitin signals to the LCV during an infection",
+      "claim_type": "EXPLICIT",
+      "source": "The Legionella effector protein SidC and its paralog SdcA have been shown to be required for the recruitment of ER proteins and ubiquitin signals to the LCV during an infection (Hsu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "851f5676-ac86-4cac-bd6b-698739bd75d4",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C32",
+      "claim": "SidC and SdcA are bona fide Ub E3 ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has further shown that the SidC and SdcA are bona fide Ub E3 ligases (Hsu et al., 2014; Luo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior work by the authors, supported by citations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "92ba82d3-3e35-44aa-82f2-c1cbb9866d7f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C33",
+      "claim": "SidC contains an N-terminal Ub Ligase (SNL) domain",
+      "claim_type": "EXPLICIT",
+      "source": "SidC contains an N-terminal Ub Ligase (SNL) domain, a P4C domain that specifically binds phosphatidylinositol-4-phosphate (Luo et al., 2015; Ragaz et al., 2008) and a C-terminal portion of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SidC domain structure, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "c059c3c2-7cd3-4e39-9c57-ac92c735045d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C34",
+      "claim": "SidC contains a P4C domain that specifically binds phosphatidylinositol-4-phosphate",
+      "claim_type": "EXPLICIT",
+      "source": "SidC contains an N-terminal Ub Ligase (SNL) domain, a P4C domain that specifically binds phosphatidylinositol-4-phosphate (Luo et al., 2015; Ragaz et al., 2008) and a C-terminal portion of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "86a19466-e66b-42f0-93de-77a12faa8387",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C35",
+      "claim": "SidC contains a C-terminal portion of unknown function",
+      "claim_type": "EXPLICIT",
+      "source": "SidC contains an N-terminal Ub Ligase (SNL) domain, a P4C domain that specifically binds phosphatidylinositol-4-phosphate (Luo et al., 2015; Ragaz et al., 2008) and a C-terminal portion of unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding SidC structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "4d6c0787-66c9-435d-8fd7-44e0cce8d2ac",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C36",
+      "claim": "SidC has no sequence or structural homology to any known eukaryotic E3s",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the lack of sequence or structural homology of SidC to any known eukaryotic E3s, the SNL domain of SidC uses a conserved cysteine as its catalytic residue, which is reminiscent of the eukaryotic HECT family of E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SidC",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "60bf9bb1-b1f4-4888-bc4f-b3c4d47da8e0",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C37",
+      "claim": "The SNL domain of SidC uses a conserved cysteine as its catalytic residue",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the lack of sequence or structural homology of SidC to any known eukaryotic E3s, the SNL domain of SidC uses a conserved cysteine as its catalytic residue, which is reminiscent of the eukaryotic HECT family of E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SidC mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e943bbf1-90df-4e75-81e0-67f523bcab34",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C38",
+      "claim": "The SNL domain of SidC contains two lobes: a larger main lobe harboring the catalytic cysteine and a smaller E2-binding lobe connected to main lobe via two flexible linker peptides",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous structural studies revealed that the SNL domain of SidC contains two lobes, a larger main lobe harboring the catalytic cysteine and a smaller E2-binding lobe connected to main lobe via two flexible linker peptides (Hsu et al., 2014; Luo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior structural studies by the authors, supported by citations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3ef9475a-2b6a-4e5c-8487-7ebcb5a0bfb0",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C39",
+      "claim": "SidC and SdcA preferentially carry out ubiquitination when either UbcH5C or UbcH7 serves as the E2",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies showed that SidC and SdcA preferentially carry out ubiquitination when either UbcH5C (UBE2D3) or UbcH7 (UBE2L3) serves as the E2 (Hsu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior studies by the authors, supported by citation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "24f84438-dc77-4385-9af4-cda53bcc932e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C40",
+      "claim": "Crystals of the SNL domain of SdcA with UbcH5C diffracted to 3.0 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "The crystals diffracted to 3.0 \u00c5 and the structure of the binary complex was solved using molecular replacement using our previously determined SidC (a.a.1\u2013542) structure as the search model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "976d8186-5bce-4856-a71d-094e3e4689ed",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C41",
+      "claim": "The structure of the SdcA-UbcH5C binary complex was refined to an R-factor of 20.3 and a free R-factor of 27.1",
+      "claim_type": "EXPLICIT",
+      "source": "The final structural model was refined to an R-factor of 20.3 and a free R-factor of 27.1 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d43c7d81-2864-47c2-a85d-7988c5edab86",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C42",
+      "claim": "The SNL domain of SdcA shares about 72% sequence homology to SidC",
+      "claim_type": "EXPLICIT",
+      "source": "The SNL domain of SdcA, which shares about 72% sequence homology to SidC, has a bilobed structure containing a large main lobe where the catalytic cysteine (C45) resides and a smaller inserted lobe (INS lobe) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about sequence similarity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "9e844897-be50-43ee-b893-957f5e1408ef",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C43",
+      "claim": "The SNL domain of SdcA has a bilobed structure containing a large main lobe where the catalytic cysteine (C45) resides and a smaller inserted lobe (INS lobe)",
+      "claim_type": "EXPLICIT",
+      "source": "The SNL domain of SdcA, which shares about 72% sequence homology to SidC, has a bilobed structure containing a large main lobe where the catalytic cysteine (C45) resides and a smaller inserted lobe (INS lobe) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by the crystal structure and Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "7a1cac90-4b8b-40c2-bf9f-300ec51e7203",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C44",
+      "claim": "SidC lacking the INS lobe fails to form a complex with E2~Ub",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the SNL domain of wild type SidC forms a complex with E2~Ub, but SidC lacking the INS lobe fails to do so (Luo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior work by the authors, supported by citation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "59821da2-7542-4436-9379-4a103d0804bc",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C45",
+      "claim": "The INS lobe mediates direct binding with the E2, UbcH5C",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this observation, the binary complex structure reveals that the INS lobe indeed mediates direct binding with the E2, UbcH5C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "94e04202-ff7f-43d7-9840-f97d6f404bef",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C46",
+      "claim": "The catalytic cysteine of UbcH5C (C85) is about 80 \u00c5 away from the catalytic C45 of the SNL domain in the SdcA-UbcH5C binary complex",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the catalytic cysteine of UbcH5C (C85) is about 80 \u00c5 away from the catalytic C45 of the SNL domain (Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the current study, supported by Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "587bb194-bc98-4f83-802e-96404109699e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C47",
+      "claim": "A drastic conformational rearrangement is required for the INS lobe to bring the two catalytic cysteines within attacking distance for efficient Ub transfer between the E2 and the E3",
+      "claim_type": "EXPLICIT",
+      "source": "This structural feature indicates that a drastic conformational rearrangement is required for the INS lobe to bring the two catalytic cysteines within attacking distance for efficient Ub transfer between the E2 and the E3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural observation of the large distance between catalytic cysteines",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "5935f28b-2555-4cd3-9c17-36bb1c8dc586",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C48",
+      "claim": "Crystals of the SNL domain of SidC with UbcH7~Ub diffracted to 2.9 \u00c5 when cryo-cooled under high-pressure",
+      "claim_type": "EXPLICIT",
+      "source": "Although the crystals diffracted poorly with the conventional flash-frozen cryoprotection method, the crystals diffracted to 2.9 \u00c5 when cryo-cooled under high-pressure (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1a4e8e62-562b-419a-acd8-2d7afc3eee92",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C49",
+      "claim": "The structure of the SidC-UbcH7~Ub ternary complex was refined to an R-factor of 21.7 and a free R-factor of 28.3",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the ternary complex was also solved via molecular replacement using the main lobe of SidC as the search model, and the final structure was refined to an R-factor of 21.7 and a free R-factor of 28.3 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "81aab65c-d470-4455-af09-c675ce9aa759",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C50",
+      "claim": "The SidC-UbcH7~Ub complex has a more globular, compact structure compared to the binary complex",
+      "claim_type": "EXPLICIT",
+      "source": "The SidC-UbcH7~Ub complex has a more globular, compact structure (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d706d464-67bd-45fb-96e5-5b796ae5a521",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C51",
+      "claim": "UbcH7 interacts with both the main and INS lobes of the SNL domain in the ternary complex",
+      "claim_type": "EXPLICIT",
+      "source": "UbcH7 interacts with both the main and INS lobes of the SNL domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "9f18cc7e-264f-4359-a528-31a36b42bd8d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C52",
+      "claim": "The Ub moiety is tightly clamped between the INS and main lobes in the ternary complex",
+      "claim_type": "EXPLICIT",
+      "source": "The Ub moiety is tightly clamped between the INS and main lobes, filling the space under the 'arch'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1f4feec1-be15-4932-a649-0c408ae275ff",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C53",
+      "claim": "The distance between the two C\u03b1 atoms of the catalytic residues of the E2 (C86K) and the E3 (C46A) is reduced to ~9 \u00c5 in the ternary complex",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the distance between the two C\u03b1 atoms of the catalytic residues of the E2 (C86K) and the E3 (C46A) is reduced to ~9 \u00c5 (from ~80 \u00c5 in the binary complex) and the C-terminal carbonyl group of the donor Ub is within attacking distance from the modeled sulfhydryl group of C46A on SidC (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the current study, supported by Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "87c9284a-a18b-4fbc-80ee-b7982799a44e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C54",
+      "claim": "The dramatic structural rearrangement from binary to ternary complex is mainly caused by a swinging motion made by the E2-binding INS lobe",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic structural rearrangement is mainly caused by a swinging motion made by the E2-binding INS lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the two structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f5f50fa3-fdee-4a36-8d07-dd09bb7d88d7",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C55",
+      "claim": "The INS lobe swings within a range of 90\u00b0 between the most extended conformation observed in the SdcA-UbcH5C complex and the most compact conformation found in the SidC-UbcH7~Ub complex",
+      "claim_type": "EXPLICIT",
+      "source": "A structural comparison of the SNL domains from the two complexes and two previously reported SidC structures reveals that the INS lobe swings within a range of 900 between the most extended conformation observed in the SdcA-UbcH5C complex and the most compact conformation found in the SidC-UbcH7~Ub complex, with the previously solved structures of SidC apo-enzymes falling in the middle (Figure 3A\u2013B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison from the current study, supported by Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d7226270-9ce6-4f92-bb23-3540eee0a26d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C56",
+      "claim": "Large conformational changes have commonly been observed in HECT-type E3 ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Large conformational changes have commonly been observed in HECT-type E3 ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "09ff1541-546a-4a1b-9a0b-d5dfcad9c6fa",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C57",
+      "claim": "The classic HECT domain comprises a larger E2-binding N-lobe and a smaller C-lobe that harbors the catalytic cysteine",
+      "claim_type": "EXPLICIT",
+      "source": "The classic HECT domain comprises a larger E2-binding N-lobe and a smaller C-lobe that harbors the catalytic cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HECT domain structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "257159e2-381e-4348-a5b1-48a16c97d2e2",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C58",
+      "claim": "A flexible hinge-like linker between the two lobes allows the C-lobe cysteine to approach the E2~Ub thioester for the transthiolation reaction in HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies have shown that a flexible hinge-like linker between the two lobes to allows the C-lobe cysteine to approach the E2~Ub thioester for the transthiolation reaction, or move in close proximity to a substrate lysine for the aminolysis reaction in the second step of catalysis (Huang et al., 1999; Kamadurai et al., 2013; Kamadurai et al., 2009; Verdecia et al., 2003) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and illustrated in Figure 3C",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "4eb4b597-7df6-4e9f-8eea-79f622ebdedd",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C59",
+      "claim": "Similar conformational changes were observed in bacterial HECT-like E3 ligases",
+      "claim_type": "EXPLICIT",
+      "source": "Similar conformational changes were also observed in bacterial HECT-like E3 ligases (Lin et al., 2012) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citation and illustrated in Figure 3D",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f6fed720-7843-4487-af01-1b67e6689875",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C60",
+      "claim": "In SidC, the larger main lobe containing the catalytic cysteine likely harbors the substrate binding site",
+      "claim_type": "EXPLICIT",
+      "source": "However, SidC differs in that the larger main lobe containing the catalytic cysteine likely harbors the substrate binding site and thus considered as the stationary lobe relative to the potential substrate binding site, while the E2-binding INS lobe recruits E2~Ub and delivers Ub to the catalytic cysteine through a large swiveling conformational shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations and comparison with HECT E3s",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "27912b94-0223-469f-b8f6-61ae6fe16519",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C61",
+      "claim": "The E2-binding INS lobe recruits E2~Ub and delivers Ub to the catalytic cysteine through a large swiveling conformational shift",
+      "claim_type": "EXPLICIT",
+      "source": "However, SidC differs in that the larger main lobe containing the catalytic cysteine likely harbors the substrate binding site and thus considered as the stationary lobe relative to the potential substrate binding site, while the E2-binding INS lobe recruits E2~Ub and delivers Ub to the catalytic cysteine through a large swiveling conformational shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on structural observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f0a2102c-0770-4311-a369-4bcc937f2253",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C62",
+      "claim": "SidC might use a different mechanism for Ub transfer compared to HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "This variation suggests that SidC might use a different mechanism for Ub transfer (discussed below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on structural differences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "04bbf024-aadb-4257-98e1-432280b946d9",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C63",
+      "claim": "Both SdcA and SidC apply a similar surface area of about 950 \u00c52 on the INS lobe to bind a region around the conserved E2 loop4 phenylalanine",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the SdcA-UbcH5C interface with that observed in the SidC-UbcH7~Ub complex reveals common structural determinants for E2 recognition. Both SdcA and SidC apply a similar surface area of about 950 \u00c52 on the INS lobe to bind a region around the conserved E2 loop4 phenylalanine (UbcH5C F62 and UbcH7 F63) (Figure 4A), which is the pivotal residue mediating the binding with HECT E3s (Nuber and Scheffner, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the current study, supported by Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "4c77b5b3-0b9f-4bcc-abab-09434c5ee814",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C64",
+      "claim": "The conserved E2 loop4 phenylalanine is the pivotal residue mediating the binding with HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "Both SdcA and SidC apply a similar surface area of about 950 \u00c52 on the INS lobe to bind a region around the conserved E2 loop4 phenylalanine (UbcH5C F62 and UbcH7 F63) (Figure 4A), which is the pivotal residue mediating the binding with HECT E3s (Nuber and Scheffner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "078f08e3-4dd2-45ab-939a-170d2df863ca",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C65",
+      "claim": "The conserved E2 loop4 phenylalanine is placed into a hydrophobic pocket on the INS lobe in both SdcA and SidC",
+      "claim_type": "EXPLICIT",
+      "source": "Further structural analysis reveals two key determinants governing the binding between the INS lobes with E2s. First, the conserved E2 loop4 phenylalanine is placed into a hydrophobic pocket on the INS lobe in both SdcA and SidC (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d5aff958-7b9e-405c-a319-0e4dbc33975e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C66",
+      "claim": "In SdcA, the hydrophobic pocket is lined with residues I285, A286, and Y273",
+      "claim_type": "EXPLICIT",
+      "source": "In SdcA, this hydrophobic pocket is lined with residues I285, A286, and Y273 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "70560ea0-7662-4e58-8fda-a28c622188db",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C67",
+      "claim": "The hydrophobic pocket on the SidC INS lobe is formed by residues Y292, L297, M298, L299, and A316",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the hydrophobic pocket on the SidC INS lobe is formed by residues Y292, L297, M298, L299, and A316.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3efea0f4-1057-4623-bb3d-5683c7f4d8fc",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C68",
+      "claim": "The interaction between E2 and SdcA/SidC is mediated by complementary electrostatic interactions",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the interaction between E2 and SdcA/SidC is also mediated by complementary electrostatic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e145821a-4a90-4c51-8c4c-9bc9f0897040",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C69",
+      "claim": "The interface surrounding the loop4 phenylalanine on both UbcH5C and UbcH7 has a positive electrostatic potential",
+      "claim_type": "EXPLICIT",
+      "source": "The interface surrounding the loop4 phenylalanine on both UbcH5C and UbcH7 has a positive electrostatic potential, while the corresponding interface on the INS lobe of both SdcA and SidC is negatively charged (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "c74873c1-813b-4c2a-b863-801da8126062",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C70",
+      "claim": "The corresponding interface on the INS lobe of both SdcA and SidC is negatively charged",
+      "claim_type": "EXPLICIT",
+      "source": "The interface surrounding the loop4 phenylalanine on both UbcH5C and UbcH7 has a positive electrostatic potential, while the corresponding interface on the INS lobe of both SdcA and SidC is negatively charged (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "38c12c40-9d3b-446b-9da6-624d40c6b727",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C71",
+      "claim": "In the SdcA-UbcH5C complex, residues K4 and K63 of UbcH5C form salt bridges with SdcA residues D287 and D305",
+      "claim_type": "EXPLICIT",
+      "source": "In the SdcA-UbcH5C complex, residues K4 and K63 of UbcH5C form salt bridges with SdcA residues D287 and D305.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1ffef738-4c03-4f8b-a98e-4df51b68fc0d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C72",
+      "claim": "The R5 side chain of UbcH5C H-bonds with the main chain carbonyl group of A286 of SdcA",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the R5 side chain of UbcH5C H-bonds with the main chain carbonyl group of A286 of SdcA (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d7aedd71-7e39-445f-ae32-0bcedc8bf8ca",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C73",
+      "claim": "In the SidC-UbcH7~Ub complex, K9 of UbcH7 salt bridges with SidC D301",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the SidC-UbcH7~Ub complex, K9 of UbcH7 salt bridges with SidC D301 and R6 and K100 of UbcH7 form H-bonds with the carbonyl group of SidC L297 and L299, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b1f08f0c-f07a-47c8-ba20-40da7369bbf3",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C74",
+      "claim": "R6 and K100 of UbcH7 form H-bonds with the carbonyl group of SidC L297 and L299, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the SidC-UbcH7~Ub complex, K9 of UbcH7 salt bridges with SidC D301 and R6 and K100 of UbcH7 form H-bonds with the carbonyl group of SidC L297 and L299, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ebc89a7f-2705-45bc-a8e9-0e837c26c9f4",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C75",
+      "claim": "The activity of the UbcH7 F63A mutant was substantially reduced compared to wild type",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of the F63A mutant was substantially reduced compared to wild type (Figure 4D), suggesting that the hydrophobic loop4 phenylalanine is indispensable for E2 recognition by SidC/SdcA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b091dd56-691a-46f4-b6b2-3a9d0298d99e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C76",
+      "claim": "The hydrophobic loop4 phenylalanine is indispensable for E2 recognition by SidC/SdcA",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of the F63A mutant was substantially reduced compared to wild type (Figure 4D), suggesting that the hydrophobic loop4 phenylalanine is indispensable for E2 recognition by SidC/SdcA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1f432c56-1e0f-46cf-9e7c-bd7a89c7f41d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C77",
+      "claim": "The UbcH7 R6A mutant showed a severe impairment of activity",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the R6A mutant, designed to disrupt electrostatic and H-bonding interactions with SidC, also showed a severe impairment of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "0db202eb-a4ef-429f-87f4-3d114412f6b7",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C78",
+      "claim": "The SidC L297D/L299D double mutant substantially impaired the activity",
+      "claim_type": "EXPLICIT",
+      "source": "A disruption of the hydrophobic pocket by the L297D/L299D double mutant substantially impaired the activity while the single M298S mutant showed no obvious effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ab7ae62b-d5e9-49cd-a8ed-30c3a0b76186",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C79",
+      "claim": "The SidC M298S mutant showed no obvious effect on activity",
+      "claim_type": "EXPLICIT",
+      "source": "A disruption of the hydrophobic pocket by the L297D/L299D double mutant substantially impaired the activity while the single M298S mutant showed no obvious effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b7fb5d30-c9a9-423d-aab8-3068682ebd6b",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C80",
+      "claim": "The SidC A316Y mutant displayed a moderate effect on activity",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the A316Y mutant, which was expected to maintain the hydrophobic nature of the pocket but with a reduced pocket size due to its bulky side chain, displayed a moderate effect (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d334a103-be6b-4e91-a2cb-90d0af722b93",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C81",
+      "claim": "The Ub transfer activity was substantially reduced when the loop4 phenylalanine F62 in UbcH5C was mutated to alanine",
+      "claim_type": "EXPLICIT",
+      "source": "The Ub transfer activity was substantially reduced when the loop4 phenylalanine F62 in UbcH5C was mutated to alanine or when the hydrophobic pocket in the INS lobe of SdcA was disrupted by the A286Y mutant (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "780f780b-6349-4fdf-822e-1a6a07c3ef64",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C82",
+      "claim": "The Ub transfer activity was substantially reduced when the hydrophobic pocket in the INS lobe of SdcA was disrupted by the A286Y mutant",
+      "claim_type": "EXPLICIT",
+      "source": "The Ub transfer activity was substantially reduced when the loop4 phenylalanine F62 in UbcH5C was mutated to alanine or when the hydrophobic pocket in the INS lobe of SdcA was disrupted by the A286Y mutant (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f47430a4-6242-4bab-8d63-341dc132effe",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C83",
+      "claim": "Both the hydrophobic and electrostatic/H-bond interactions at the E2-INS interface are crucial for E2 recognition and the catalytic function of SidC/SdcA",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data support that both the hydrophobic and electrostatic/H-bond interactions at the E2-INS interface are crucial for E2 recognition and thus the catalytic function of SidC/SdcA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "24f5814a-e59c-491f-9ee7-32965f2cef0a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C84",
+      "claim": "The donor Ub extends away from the E2 and is trapped between the INS and the main lobes of the SNL domain",
+      "claim_type": "EXPLICIT",
+      "source": "The donor Ub, which is covalently attached to UbcH7, extends away from the E2 and is trapped between the INS and the main lobes of the SNL domain (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3664288d-67cc-4824-b214-d4df177e70ab",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C85",
+      "claim": "The C-terminal tail of the donor Ub adopts a \u03b2-strand conformation and pairs in parallel with a short \u03b2-strand upstream of the catalytic cysteine",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the C-terminal tail of the donor Ub adopts a \u03b2-strand conformation and pairs in parallel with a short \u03b2-strand upstream of the catalytic cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d6e86fb9-2f04-4b3c-b808-90848f74b31f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C86",
+      "claim": "The \u03b2-sheet augmentation interaction between the donor Ub C-terminal tail and the SNL domain was also observed in the donor Ub that was covalently attached to the HECT domain of Nedd4",
+      "claim_type": "EXPLICIT",
+      "source": "This \u03b2-sheet augmentation interaction was also observed in the donor Ub that was covalently attached to the HECT domain of Nedd4 (Maspero et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3b652803-2eb9-4c3b-9d72-7a29125d4347",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C87",
+      "claim": "The hydroxyl group of SidC T45 H-bonds with the amino group of Ub G75",
+      "claim_type": "EXPLICIT",
+      "source": "The hydroxyl group of SidC T45 H-bonds with the amino group of Ub G75.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "379101d6-8a34-4846-970e-3ae11395bbb5",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C88",
+      "claim": "R74 of the donor Ub forms a bidentate salt bridge with the highly conserved SidC D43",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, R74 of the donor Ub forms a bidentate salt bridge with the highly conserved SidC D43 and a salt bridge with another conserved aspartic residue D51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d9065ed1-835a-43e1-ae16-103bf5786e38",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C89",
+      "claim": "R74 of the donor Ub forms a salt bridge with SidC D51",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, R74 of the donor Ub forms a bidentate salt bridge with the highly conserved SidC D43 and a salt bridge with another conserved aspartic residue D51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "358ee7b8-aef8-4b43-9943-6a52efec1995",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C90",
+      "claim": "The SidC D43R mutant shows loss of activity",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of these interactions substantially hampers SidC activity as evidenced by the loss of activity of the D43R mutant, which disrupts the bidentate salt bridge, as well as the T45V mutant, which eliminates the hydrogen bond (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "2178d55d-b0a1-4397-b933-f7c35d3a6b57",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C91",
+      "claim": "The SidC T45V mutant shows loss of activity",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of these interactions substantially hampers SidC activity as evidenced by the loss of activity of the D43R mutant, which disrupts the bidentate salt bridge, as well as the T45V mutant, which eliminates the hydrogen bond (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "907619c1-3af1-46e6-a1d0-8b1a2e4fdb70",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C92",
+      "claim": "Locking the C-terminal tail of the donor Ub at the E3 catalytic site is crucial for the reaction",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that locking the C-terminal tail of the donor Ub at the E3 catalytic site is crucial for the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ec2133e8-0dc0-403e-95c6-afe05e21b352",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C93",
+      "claim": "The donor Ub makes extensive contacts with both the INS lobe and main lobe of the SNL domain by burying ~2900 \u00c52 of surface area",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the locked C-terminal tail, the donor Ub also makes extensive contacts with both the INS lobe and main lobe of the SNL domain by burying ~2900 \u00c52 of surface area (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the current study, supported by Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "d04e7159-c852-443d-aad3-bc6cb7e49403",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C94",
+      "claim": "The Ub loop containing K48 protrudes into a shallow groove on the INS domain with the hydrophobic I44 patch embedded at the interface",
+      "claim_type": "EXPLICIT",
+      "source": "The Ub loop containing K48 protrudes into a shallow groove on the INS domain with the hydrophobic I44 patch embedded at the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "762c1fbb-9b3d-442c-b21b-f7b54d365548",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C95",
+      "claim": "The carbonyl and \u03b5-amino group of K48 H-bonds with the main chain amino and carbonyl groups on the INS lobe, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the carbonyl and \u03b5-amino group of K48 H-bonds with the main chain amino and carbonyl groups on the INS lobe, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "fcee406d-91b5-4b42-983b-cc93b2792bbe",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C96",
+      "claim": "K6 and R42 of Ub form electrostatic interactions with D271 and D319 of the INS lobe",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, K6 and R42 form electrostatic interactions with D271 and D319 of the INS lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f72478f8-fba0-4d81-b32f-2e6466e1de65",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C97",
+      "claim": "The carboxyl end of the first \u03b1-helix of Ub forms hydrogen bonds and salt bridges with H504 and K505 on the main lobe",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the C-terminal tail, the carboxyl end of the first \u03b1-helix of Ub forms hydrogen bonds and salt bridges with H504 and K505 on the main lobe (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "6f7eb423-de1e-4795-b5be-03ebb0e19854",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C98",
+      "claim": "The SidC D271R mutant largely impairs SidC activity",
+      "claim_type": "EXPLICIT",
+      "source": "Both the D271R and the D319R mutants on the INS lobe largely impair SidC activity, as does the H504D/K505D double mutant on the main lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "4c9340f3-c356-432d-98b2-fa3da2ba1be3",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C99",
+      "claim": "The SidC D319R mutant largely impairs SidC activity",
+      "claim_type": "EXPLICIT",
+      "source": "Both the D271R and the D319R mutants on the INS lobe largely impair SidC activity, as does the H504D/K505D double mutant on the main lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "5da94c2b-97c1-4a8c-8c09-e2f56fb81cbd",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C100",
+      "claim": "The SidC H504D/K505D double mutant largely impairs SidC activity",
+      "claim_type": "EXPLICIT",
+      "source": "Both the D271R and the D319R mutants on the INS lobe largely impair SidC activity, as does the H504D/K505D double mutant on the main lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "ea9cc55f-dfca-47c5-83f8-47aaba0970bf",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C101",
+      "claim": "Residues involved in Ub binding are conserved in SdcA",
+      "claim_type": "EXPLICIT",
+      "source": "A sequence and structural comparison of SidC with SdcA indicates that residues involved in Ub binding are conserved in SdcA (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative analysis from the current study, supported by Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e60e629f-7cb6-41f9-8cbd-31366532deb1",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C102",
+      "claim": "The Ub transfer activity was substantially impaired when mutations of conserved Ub-binding residues were introduced in SdcA",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Ub transfer activity was also substantially impaired when mutations of these conserved Ub-binding residues were introduced in SdcA (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f358c99b-f9c9-428f-be66-ab6ee619d697",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C103",
+      "claim": "The tight binding of the donor Ub by both SNL domain lobes is required for efficient catalysis",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the tight binding of the donor Ub by both SNL domain lobes is required for efficient catalysis and may also help prevent the reverse transthiolation reaction (handing the donor Ub back to the E2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e9d341a0-abb6-442a-907c-4c832fa01a37",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C104",
+      "claim": "The tight binding of the donor Ub may help prevent the reverse transthiolation reaction",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the tight binding of the donor Ub by both SNL domain lobes is required for efficient catalysis and may also help prevent the reverse transthiolation reaction (handing the donor Ub back to the E2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the structural and functional data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "53ccedcd-1bb4-4635-b524-fa7f6cae363b",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C105",
+      "claim": "Two invariable aspartic residues (D168, D446) and a histidine residue (H444) constitute a major part of a conserved patch around the catalytic site",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the residues (N44, T45, and C46) comprising the catalytic motif, two invariable aspartic residues (D168, D446) and a histidine residue (H444) constitute a major part of the conserved patch (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from conservation analysis, supported by Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b927d8fa-8a4f-4caf-8014-69a460874f9a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C106",
+      "claim": "In the SidC-UbcH7~Ub ternary complex, the distance of D168, D446, and H444 from the catalytic cysteine ranges between 10 and 14 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "Although in the SidC-UbcH7~Ub ternary complex the distance of these residues from the catalytic cysteine ranges between 10 and 14 \u00c5, due to the flexible nature of the catalytic loop, these acidic residues can be in close proximity, about 5 \u00c5 away from the catalytic cysteine as observed in the SdcA-UbcH5C binary complex (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement from the current study, supported by Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "fc6da8c0-fc7f-4c18-bdda-6cfdc663e245",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C107",
+      "claim": "Due to the flexible nature of the catalytic loop, acidic residues can be in close proximity, about 5 \u00c5 away from the catalytic cysteine as observed in the SdcA-UbcH5C binary complex",
+      "claim_type": "EXPLICIT",
+      "source": "Although in the SidC-UbcH7~Ub ternary complex the distance of these residues from the catalytic cysteine ranges between 10 and 14 \u00c5, due to the flexible nature of the catalytic loop, these acidic residues can be in close proximity, about 5 \u00c5 away from the catalytic cysteine as observed in the SdcA-UbcH5C binary complex (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the current study, supported by Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "83573cdb-38d2-454d-b475-960cfd44f4c4",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C108",
+      "claim": "Acidic residues in the vicinity of the catalytic cysteine in HECT or HECT-like E3s were proposed to guide the substrate lysine into the active site and/or deprotonate the \u03b5-amino group of the approaching substrate lysine",
+      "claim_type": "EXPLICIT",
+      "source": "These acidic residues were proposed to either guide the substrate lysine into the active site and/or to deprotonate the \u03b5-amino group of the approaching substrate lysine in Ub ligation (Kamadurai et al., 2013; Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "827a35bf-bf04-4081-af95-59f8fd9c4e34",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C109",
+      "claim": "Residue H887 in the RBR family ligase HOIP acts as a general base to activate the incoming \u03b1-amino group for linear Ub chain formation",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, residue H887 in the RBR family ligase, HOIP, acts as a general base to activate the incoming \u03b1-amino group for linear Ub chain formation (Stieglitz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "5cb41eb8-b91e-43e3-89bb-0e263be90978",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C110",
+      "claim": "D117 in UbcH5B and D127 in Ubc9 are acidic residues found in the vicinity of the catalytic cysteine in E2s",
+      "claim_type": "EXPLICIT",
+      "source": "Similar acidic residues, such as D117 in UbcH5B and D127 in Ubc9, were also found in the vicinity of the catalytic cysteine in E2s (Berndsen et al., 2013; Dou et al., 2012; Plechanovov\u00e1 et al., 2012; Yunus and Lima, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "551bef7e-4681-428c-bf8a-fcde60e21d13",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C111",
+      "claim": "D168 in SidC may function as a guide or directly as a general base for the deprotonation of the attacking lysine",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of SidC, D168 may function as a guide or directly as a general base for the deprotonation of the attacking lysine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on structural observations and comparison with other E3s",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "59196828-36ed-4e3e-946f-b5704db31183",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C112",
+      "claim": "D446 in SidC may indirectly activate the attacking lysine through the deprotonation of H444",
+      "claim_type": "EXPLICIT",
+      "source": "Although slightly further away, D446 forms a hydrogen bond with H444 and thus may indirectly activate the attacking lysine through the deprotonation of H444.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on structural observations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "af934563-6ec7-4d85-8f72-a83723cb35e1",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C113",
+      "claim": "Single amino acid substitutions of D168, D446, or H444 markedly impaired the ligase activity of the SNL domain",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, single amino acid substitutions of either of these three conserved residues markedly impaired the ligase activity of the SNL domain (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study, supported by Figure 7C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e3a7f046-7383-4983-8554-8b260a6aa45d",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C114",
+      "claim": "A cluster of invariable acidic residues at the active site plays an important role in SidC catalyzed ubiquitination",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data reveal an important role for a cluster of invariable acidic residues at the active site in SidC catalyzed ubiquitination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "851a894f-12aa-4f6d-ae25-e47e3fb1f3f1",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C115",
+      "claim": "The structural organization of SidC is reminiscent of the N- and C-lobes in HECT E3s",
+      "claim_type": "EXPLICIT",
+      "source": "The structural organization of SidC is reminiscent of the N- and C-lobes in HECT E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation based on structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "cafc4924-0a61-4b62-9cb1-2f23a563db04",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C116",
+      "claim": "In HECT E3s, the E2-binding N-lobe is relatively stationary in reference to the substrate binding site, while the catalytic cysteine-bearing C-lobe rotates around the linking peptide",
+      "claim_type": "EXPLICIT",
+      "source": "First, in contrast to SidC, the E2-binding N-lobe of HECT E3s is relatively stationary in reference to the substrate binding site, while the catalytic cysteine-bearing C-lobe rotates around the linking peptide between the two lobes to relay the donor Ub from the E2 to a substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HECT E3 mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "f274ab48-2e58-4035-bf1a-81ea58600366",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C117",
+      "claim": "The donor Ub on HECT E3s makes contacts nearly exclusively with the C-lobe",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the donor Ub on HECT E3s makes contacts nearly exclusively with the C-lobe while the donor Ub is clamped between the INS and main lobes and buries much larger surface areas on both the donor Ub and the SNL domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HECT E3s compared with the current structural findings",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "a4e392ab-171f-473d-9bd9-41843e70d583",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C118",
+      "claim": "The donor Ub loaded on the C-lobe of HECT E3s undergoes a drastic rotational movement to approach the substrate lysine after the E3~Ub intermediate is formed",
+      "claim_type": "EXPLICIT",
+      "source": "The third prominent difference is that unlike the stationary donor Ub on SidC, the donor Ub loaded on the C-lobe of HECT E3s undergoes another drastic rotational movement to approach the substrate lysine after the E3~Ub intermediate is formed (Kamadurai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "86facfb9-a07d-48eb-b9dd-6167eebf6123",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C119",
+      "claim": "Immobilizing the Ub thioester can enhance the efficiency of Ub transfer",
+      "claim_type": "EXPLICIT",
+      "source": "It has been commonly observed that immobilizing the Ub thioester can enhance the efficiency of Ub transfer (Dou et al., 2012; Maspero et al., 2013; Plechanovov\u00e1 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "1162dbfe-700b-46fc-8c0d-643e0e4e4ba5",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C120",
+      "claim": "In the structure of the dimeric RING domain of RNF4 in complex with UbcH5A~Ub, the donor Ub is stabilized by interactions with both RING protomers and the carboxyl terminus of the donor Ub is locked into an active site groove on the E2",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure of the dimeric RING domain of RNF4 in complex with UbcH5A~Ub, the donor Ub is stabilized by interactions with the both RING protomers and the carboxyl terminus of the donor Ub is locked into an active site groove on the E2 (Plechanovov\u00e1 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b75430d2-ad0a-4d37-b0aa-f80a04fd2f2a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C121",
+      "claim": "In structures that mimic the HECT~Ub thioester intermediate and the HECT domain of Rsp5 crosslinked with a donor Ub and a peptide substrate, both donor Ubs bind to the C-lobe with their C-terminal tails locked in an extended conformation",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure that mimics the HECT~Ub thioester intermediate (Maspero et al., 2013) and the structure of the HECT domain of Rsp5 crosslinked with a donor Ub and a peptide substrate (Kamadurai et al., 2013), Both of the donor Ubs bind to the C-lobe in a similar fashion with their C-terminal tails locked in an extended conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "6c54b566-7b91-4edb-86a6-eef6cc08b253",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C122",
+      "claim": "The structure of SidC-UbcH7~Ub provides an example of how the donor Ub is tightly locked on the E3 catalytic domain throughout the two-step ubiquitination reaction",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of SidC-UbcH7~Ub provides an outstanding example of how the donor Ub is tightly locked on the E3 catalytic domain throughout the two-step ubiquitination reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "df3f37fe-5559-40b0-adcd-f6ee66c6509e",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C123",
+      "claim": "A reduction of the inherent conformational flexibility of the donor Ub thioester on both E2 and E3 is essential for efficient Ub transfer in the ubiquitination cascade",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a unifying concept that a reduction of the inherent conformational flexibility of the donor Ub thioester on both E2 and E3 is essential for efficient Ub transfer in the ubiquitination cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the current study and comparison with other E3 mechanisms",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "7df7d11f-0717-4e32-a827-4f4b03b232e8",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "claim_id": "C124",
+      "claim": "The donor Ub will likely maintain the same tightly bound state after the transthiolation reaction, ready for ligation with a substrate lysine during the second step",
+      "claim_type": "EXPLICIT",
+      "source": "Since the catalytic cysteine is at a fixed a position at the center of the catalytic site, it is likely that the donor Ub will maintain the same tightly bound state after the transthiolation reaction, ready for ligation with a substrate lysine during the second step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on structural observations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65c10572-64c7-47f9-b38c-b9905746046f",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined crystal structures of two SidC/SdcA complexes: a binary complex of SdcA SNL domain with E2 UbcH5C (3.0 \u00c5 resolution, R-factor 20.3%, Rfree 27.1%) and a ternary complex of SidC SNL domain with UbcH7~Ub (2.9 \u00c5 resolution using high-pressure cryo-cooling, R-factor 21.7%, Rfree 28.3%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C40, C41, C48, and C49 provide crystallographic data with appropriate resolution and refinement statistics. The structures were solved by molecular replacement and refined to acceptable R-factors. High-pressure cryo-cooling was successfully employed for the ternary complex. The data quality metrics support the structural determinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "33c43974-16af-4ff2-bf41-851b040bae35",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The binary complex structure reveals that SdcA SNL domain (72% homologous to SidC) has a bilobed architecture with the INS lobe mediating E2 binding, but the catalytic cysteines of E2 (C85) and E3 (C45) are ~80 \u00c5 apart, indicating a large conformational rearrangement is required for catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 describe structural observations directly from the crystal structure with specific distance measurements. The inference about conformational rearrangement (C47) is logically supported by the large distance between catalytic residues. The bilobed structure and INS lobe function are consistent with prior work (C44).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "7c1cb9c0-af15-4667-b059-711913ab859a",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ternary complex structure shows a compact conformation where the donor Ub is clamped between INS and main lobes, reducing the distance between catalytic cysteines from ~80 \u00c5 to ~9 \u00c5 through a swinging motion of the INS lobe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 describe structural observations from the ternary complex with quantitative distance measurements. The dramatic reduction in catalytic cysteine distance (C53) and the mechanistic interpretation of INS lobe movement (C54) are well-supported by comparing the two structures. Figure 2 provides visual confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "c706be04-d660-46f6-a5d2-4cb7acca6701",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Structural comparison reveals the INS lobe swings through a 90\u00b0 range between extended and compact conformations. Unlike HECT E3s where the catalytic C-lobe is mobile, in SidC the main lobe (containing the catalytic cysteine) is stationary while the E2-binding INS lobe is mobile, suggesting a different mechanism for Ub transfer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 compare SidC structures with each other and with HECT E3s. The 90\u00b0 swing measurement (C55) is supported by structural superposition (Figure 3). The mechanistic differences from HECT E3s (C60-C62) are logical inferences based on structural observations, though C60 and C62 contain speculative elements appropriately qualified with 'likely' and 'might'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both SdcA and SidC use ~950 \u00c5\u00b2 of the INS lobe surface to bind E2s through two key determinants: (1) a hydrophobic pocket accommodating the conserved E2 loop4 phenylalanine (F62 in UbcH5C, F63 in UbcH7), and (2) complementary electrostatic interactions between positively charged E2 surfaces and negatively charged INS lobe surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74 provide detailed structural characterization of the E2-E3 interface with specific residue interactions, surface area measurements, and electrostatic complementarity. The observations are supported by crystal structures and Figure 4. The conserved phenylalanine interaction is consistent with HECT E3 recognition (C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b9f15824-eea5-444e-ac45-68bb0950de92",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutagenesis of E2-E3 interface residues substantially impairs activity: UbcH7 F63A and R6A mutants show severe defects, as do SidC L297D/L299D and SdcA A286Y mutants disrupting the hydrophobic pocket, while SidC M298S has no effect and A316Y shows moderate impairment, demonstrating that both hydrophobic and electrostatic interactions are crucial for E2 recognition and catalytic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C83 present mutagenesis data testing structural predictions. The activity assays (Figure 4D-E) show clear differential effects of mutations targeting hydrophobic versus electrostatic interactions. The conclusion (C83) is well-supported by the systematic mutagenesis approach. Controls (wild-type and catalytic mutants) are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "612111de-7322-4ecc-8799-da89761dbdc8",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The donor Ub C-terminal tail adopts an extended \u03b2-strand conformation that pairs with a \u03b2-strand upstream of the catalytic cysteine, with specific interactions including T45-G75 H-bond and R74 forming bidentate salt bridges with D43 and D51. Mutations disrupting these interactions (D43R, T45V) abolish activity, demonstrating that locking the C-terminal tail is crucial for catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C92 describe the donor Ub positioning with specific structural interactions validated by mutagenesis. The \u03b2-sheet augmentation (C85) is consistent with HECT E3 structures (C86). The mutagenesis data (C90-C91, Figure 5C) directly support the functional importance of these interactions. The conclusion (C92) is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b13d755d-036f-48c0-8a6b-9a1715b057d7",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The donor Ub makes extensive contacts with both lobes (~2900 \u00c5\u00b2 buried surface), including the I44 hydrophobic patch, K48 loop interactions, and electrostatic contacts (K6-D271, R42-D319) with the INS lobe, plus interactions between the first \u03b1-helix and main lobe residues H504/K505. Mutations of these residues (D271R, D319R, H504D/K505D) in both SidC and SdcA substantially impair activity, indicating tight Ub binding is required for efficient catalysis and may prevent reverse transthiolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C104 characterize extensive Ub-E3 interactions with quantitative measurements and validate them through mutagenesis in both SidC and SdcA. The activity assays (Figure 6D, Figure 6\u2014figure supplement 2) show consistent impairment across multiple mutants. The conclusion about catalytic efficiency (C103) is supported, though the speculation about preventing reverse reaction (C104) is appropriately qualified with 'may'.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "8b65ad27-be8c-40a1-ae89-767caa41fbed",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Conservation analysis reveals a cluster of acidic residues (D168, D446, H444) near the catalytic site. Although 10-14 \u00c5 away in the ternary complex, loop flexibility allows them to approach within ~5 \u00c5 of the catalytic cysteine. These residues, analogous to those in HECT and RBR E3s, may guide or deprotonate the attacking lysine. Mutations of D168, D446, or H444 markedly impair ligase activity, revealing their important catalytic role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C114 identify conserved catalytic residues through sequence analysis (Figure 7A-B) and validate their function through mutagenesis (Figure 7C-D). The structural observations about distances and flexibility (C106-C107) are supported by comparing structures. The mechanistic proposals (C111-C112) are appropriately speculative ('may function'), drawing on established knowledge of other E3s (C108-C110). The mutagenesis strongly supports functional importance (C113-C114).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The structures reveal molecular determinants of the Ub transfer cascade and support a common mechanism where the donor Ub is immobilized with its C-terminal tail locked in extended conformation. While SidC's organization resembles HECT E3s, key differences exist: the mobile lobe is E2-binding (not catalytic), the donor Ub is clamped between both lobes (not just one), and the donor Ub remains stationary (unlike HECT E3s). This supports a unifying concept that reducing conformational flexibility of the donor Ub thioester is essential for efficient Ub transfer across the ubiquitination cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C115-C123 synthesize the structural findings into mechanistic insights. The comparison with HECT E3s (C115-C118) is well-supported by structural data and literature. The general principle about Ub immobilization (C119-C123) is supported by the current structures and comparison with RING and HECT E3 structures from the literature (C120-C121). The unifying concept (C123) is a reasonable generalization from multiple E3 families.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "3ef18dc1-5de7-46a6-8a50-d233fc740a18",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The donor Ub will likely maintain the same tightly bound state after transthiolation, ready for substrate ligation in the second step, since the catalytic cysteine is at a fixed position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C124 is a speculative inference about the post-transthiolation state that is not directly observed in the structures. While the reasoning is logical based on the fixed position of the catalytic cysteine, this represents a hypothesis about a catalytic intermediate not captured experimentally. The claim is appropriately qualified with 'likely' but lacks direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on Legionella pneumophila: it is an intracellular opportunistic pathogen causing Legionnaires' disease, uses a Dot/Icm type IV secretion system to deliver >330 effectors that establish the LCV (preventing lysosomal degradation while serving as a replicative niche), and these effectors modulate host processes including ubiquitination, though most effector functions remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C9-C16 provide established background knowledge about Legionella biology, all supported by appropriate citations to prior literature. These are not novel findings but contextual information for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "b952d600-cc00-4a6d-b8bf-22ab554374e8",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on ubiquitination: Ub is attached to substrates via a three-enzyme cascade (E1, E2, E3). E3 ligases are divided into three major classes (RING, HECT, RBR) using distinct transfer mechanisms. Bacterial pathogens encode E3 mimics, some with little homology to eukaryotic E3s, such as SopA and NleL which use catalytic cysteines and interact with conserved E2 phenylalanines despite lacking HECT homology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C30 provide established background on the ubiquitination system and bacterial E3 ligases, all supported by appropriate citations. This contextual information is accurate but not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "329cd62b-129d-4443-a7c3-faffd816f583",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on SidC/SdcA: These Legionella effectors are required for recruiting ER proteins and ubiquitin signals to the LCV and are bona fide E3 ligases. SidC contains an SNL domain (using a catalytic cysteine), a PI(4)P-binding P4C domain, and a C-terminal region of unknown function. The SNL domain has a bilobed structure (main lobe with catalytic cysteine, INS lobe for E2 binding) and preferentially uses UbcH5C or UbcH7 as E2s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 summarize prior work on SidC/SdcA, including the authors' previous studies (C32, C38, C39). These are established findings that provide context for the current structural work, appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    },
+    {
+      "id": "0b116787-fc1b-48ff-9b74-b7f34e6f4115",
+      "content_id": "26f7ac57-0c28-405f-83eb-5fba2ec65d27",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SidC and SdcA have been identified as novel bacterial ubiquitin E3 ligases among Legionella effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 states an established finding from prior research (supported by citations) that provides motivation for the current structural study. This is background information rather than a novel result of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:33:19.142607Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32cc9f6b-f8ea-4dc2-8325-327631e62422",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "d830ee35-cc43-4f4c-80c2-1f2c2488c8be",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "24f84438-dc77-4385-9af4-cda53bcc932e",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "976d8186-5bce-4856-a71d-094e3e4689ed",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "5935f28b-2555-4cd3-9c17-36bb1c8dc586",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "1a4e8e62-562b-419a-acd8-2d7afc3eee92",
+      "result_id": "65c10572-64c7-47f9-b38c-b9905746046f"
+    },
+    {
+      "claim_id": "d43c7d81-2864-47c2-a85d-7988c5edab86",
+      "result_id": "33c43974-16af-4ff2-bf41-851b040bae35"
+    },
+    {
+      "claim_id": "9e844897-be50-43ee-b893-957f5e1408ef",
+      "result_id": "33c43974-16af-4ff2-bf41-851b040bae35"
+    },
+    {
+      "claim_id": "59821da2-7542-4436-9379-4a103d0804bc",
+      "result_id": "33c43974-16af-4ff2-bf41-851b040bae35"
+    },
+    {
+      "claim_id": "94e04202-ff7f-43d7-9840-f97d6f404bef",
+      "result_id": "33c43974-16af-4ff2-bf41-851b040bae35"
+    },
+    {
+      "claim_id": "587bb194-bc98-4f83-802e-96404109699e",
+      "result_id": "33c43974-16af-4ff2-bf41-851b040bae35"
+    },
+    {
+      "claim_id": "81aab65c-d470-4455-af09-c675ce9aa759",
+      "result_id": "7c1cb9c0-af15-4667-b059-711913ab859a"
+    },
+    {
+      "claim_id": "d706d464-67bd-45fb-96e5-5b796ae5a521",
+      "result_id": "7c1cb9c0-af15-4667-b059-711913ab859a"
+    },
+    {
+      "claim_id": "9f18cc7e-264f-4359-a528-31a36b42bd8d",
+      "result_id": "7c1cb9c0-af15-4667-b059-711913ab859a"
+    },
+    {
+      "claim_id": "1f4feec1-be15-4932-a649-0c408ae275ff",
+      "result_id": "7c1cb9c0-af15-4667-b059-711913ab859a"
+    },
+    {
+      "claim_id": "87c9284a-a18b-4fbc-80ee-b7982799a44e",
+      "result_id": "7c1cb9c0-af15-4667-b059-711913ab859a"
+    },
+    {
+      "claim_id": "f5f50fa3-fdee-4a36-8d07-dd09bb7d88d7",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "d7226270-9ce6-4f92-bb23-3540eee0a26d",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "09ff1541-546a-4a1b-9a0b-d5dfcad9c6fa",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "257159e2-381e-4348-a5b1-48a16c97d2e2",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "4eb4b597-7df6-4e9f-8eea-79f622ebdedd",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "f6fed720-7843-4487-af01-1b67e6689875",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "27912b94-0223-469f-b8f6-61ae6fe16519",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "f0a2102c-0770-4311-a369-4bcc937f2253",
+      "result_id": "c706be04-d660-46f6-a5d2-4cb7acca6701"
+    },
+    {
+      "claim_id": "04bbf024-aadb-4257-98e1-432280b946d9",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "4c77b5b3-0b9f-4bcc-abab-09434c5ee814",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "078f08e3-4dd2-45ab-939a-170d2df863ca",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "d5aff958-7b9e-405c-a319-0e4dbc33975e",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "70560ea0-7662-4e58-8fda-a28c622188db",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "3efea0f4-1057-4623-bb3d-5683c7f4d8fc",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "e145821a-4a90-4c51-8c4c-9bc9f0897040",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "c74873c1-813b-4c2a-b863-801da8126062",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "38c12c40-9d3b-446b-9da6-624d40c6b727",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "1ffef738-4c03-4f8b-a98e-4df51b68fc0d",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "d7aedd71-7e39-445f-ae32-0bcedc8bf8ca",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "b1f08f0c-f07a-47c8-ba20-40da7369bbf3",
+      "result_id": "e4c3e999-16bd-4a3a-a054-f4770dd949b3"
+    },
+    {
+      "claim_id": "ebc89a7f-2705-45bc-a8e9-0e837c26c9f4",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "b091dd56-691a-46f4-b6b2-3a9d0298d99e",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "1f432c56-1e0f-46cf-9e7c-bd7a89c7f41d",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "0db202eb-a4ef-429f-87f4-3d114412f6b7",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "ab7ae62b-d5e9-49cd-a8ed-30c3a0b76186",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "b7fb5d30-c9a9-423d-aab8-3068682ebd6b",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "d334a103-be6b-4e91-a2cb-90d0af722b93",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "780f780b-6349-4fdf-822e-1a6a07c3ef64",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "f47430a4-6242-4bab-8d63-341dc132effe",
+      "result_id": "b9f15824-eea5-444e-ac45-68bb0950de92"
+    },
+    {
+      "claim_id": "24f5814a-e59c-491f-9ee7-32965f2cef0a",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "3664288d-67cc-4824-b214-d4df177e70ab",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "d6e86fb9-2f04-4b3c-b808-90848f74b31f",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "3b652803-2eb9-4c3b-9d72-7a29125d4347",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "379101d6-8a34-4846-970e-3ae11395bbb5",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "d9065ed1-835a-43e1-ae16-103bf5786e38",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "358ee7b8-aef8-4b43-9943-6a52efec1995",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "2178d55d-b0a1-4397-b933-f7c35d3a6b57",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "907619c1-3af1-46e6-a1d0-8b1a2e4fdb70",
+      "result_id": "612111de-7322-4ecc-8799-da89761dbdc8"
+    },
+    {
+      "claim_id": "ec2133e8-0dc0-403e-95c6-afe05e21b352",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "d04e7159-c852-443d-aad3-bc6cb7e49403",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "762c1fbb-9b3d-442c-b21b-f7b54d365548",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "fcee406d-91b5-4b42-983b-cc93b2792bbe",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "f72478f8-fba0-4d81-b32f-2e6466e1de65",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "6f7eb423-de1e-4795-b5be-03ebb0e19854",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "4c9340f3-c356-432d-98b2-fa3da2ba1be3",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "5da94c2b-97c1-4a8c-8c09-e2f56fb81cbd",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "ea9cc55f-dfca-47c5-83f8-47aaba0970bf",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "e60e629f-7cb6-41f9-8cbd-31366532deb1",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "f358c99b-f9c9-428f-be66-ab6ee619d697",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "e9d341a0-abb6-442a-907c-4c832fa01a37",
+      "result_id": "b13d755d-036f-48c0-8a6b-9a1715b057d7"
+    },
+    {
+      "claim_id": "53ccedcd-1bb4-4635-b524-fa7f6cae363b",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "b927d8fa-8a4f-4caf-8014-69a460874f9a",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "fc6da8c0-fc7f-4c18-bdda-6cfdc663e245",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "83573cdb-38d2-454d-b475-960cfd44f4c4",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "827a35bf-bf04-4081-af95-59f8fd9c4e34",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "5cb41eb8-b91e-43e3-89bb-0e263be90978",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "551bef7e-4681-428c-bf8a-fcde60e21d13",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "59196828-36ed-4e3e-946f-b5704db31183",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "af934563-6ec7-4d85-8f72-a83723cb35e1",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "e3a7f046-7383-4983-8554-8b260a6aa45d",
+      "result_id": "8b65ad27-be8c-40a1-ae89-767caa41fbed"
+    },
+    {
+      "claim_id": "608c5f5e-c5e7-4490-8e45-f30437dd5a3a",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "58b0d5ef-1c5d-4246-8118-037d3bdc182f",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "851a894f-12aa-4f6d-ae25-e47e3fb1f3f1",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "cafc4924-0a61-4b62-9cb1-2f23a563db04",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "f274ab48-2e58-4035-bf1a-81ea58600366",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "a4e392ab-171f-473d-9bd9-41843e70d583",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "86facfb9-a07d-48eb-b9dd-6167eebf6123",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "1162dbfe-700b-46fc-8c0d-643e0e4e4ba5",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "b75430d2-ad0a-4d37-b0aa-f80a04fd2f2a",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "6c54b566-7b91-4edb-86a6-eef6cc08b253",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "df3f37fe-5559-40b0-adcd-f6ee66c6509e",
+      "result_id": "0a2d134d-7d9f-4301-bfc6-869ab7d0f71b"
+    },
+    {
+      "claim_id": "7df7d11f-0717-4e32-a827-4f4b03b232e8",
+      "result_id": "3ef18dc1-5de7-46a6-8a50-d233fc740a18"
+    },
+    {
+      "claim_id": "f8982e45-cfaa-4433-903f-5a8178609ce3",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "3e026597-7425-4af5-8099-5327150640f3",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "10a50a6f-1cfe-4b90-81e6-34494320cd40",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "6e30be58-cb4c-4480-8423-6e7001442599",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "705cac0e-6f43-4d2d-a671-cfcc90924271",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "15779332-5412-4629-b715-bea2cc4c20ff",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "7504e369-c077-44f5-ad9a-781b577407a8",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "eddaf015-1ca5-4760-bec5-0ce6894f46c5",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "b7736962-55fe-4fdb-9232-5daf86675214",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "84cd9eb1-645e-4f54-a1b9-64b1e7bdd74a",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "ae025ef3-db47-44d2-a935-57f1737eb594",
+      "result_id": "9fce2ba1-3f40-41e1-bcb2-e2710920bb0c"
+    },
+    {
+      "claim_id": "2a261557-6240-4616-96b4-236610da3ca2",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "aaa83e26-a7ca-4d08-81b1-074568874784",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "18b11498-01d4-48f6-b0e0-c10ba72a22b0",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "7e73d741-96f4-44d1-a447-b2c88d7acb8b",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "ff3c82a9-5bb5-4010-bbca-bdf08e6ff61c",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "65959849-aaec-48e6-a3a2-d28065c0056e",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "b2615567-ce15-4e9c-943c-7cfd17899cbc",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "d5ba27b3-b7e9-4bcf-910c-54c3e76b0514",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "239f7a18-174c-4e70-8fa5-edcf451cf5de",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "b88db1d2-3aea-4f78-82b2-7b057ebc575f",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "1780a552-1523-49d1-a28b-555bf873f1ec",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "fb2212ab-3011-469f-a96f-b3a41eaf250c",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "6e1b1724-1754-4a46-93e6-c03b5dab568f",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "100e05d2-d943-496d-b9be-a4d853ac6252",
+      "result_id": "b952d600-cc00-4a6d-b8bf-22ab554374e8"
+    },
+    {
+      "claim_id": "ead45c96-17ee-4516-a3b2-c6bdf9cfa86e",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "851f5676-ac86-4cac-bd6b-698739bd75d4",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "92ba82d3-3e35-44aa-82f2-c1cbb9866d7f",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "c059c3c2-7cd3-4e39-9c57-ac92c735045d",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "86a19466-e66b-42f0-93de-77a12faa8387",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "4d6c0787-66c9-435d-8fd7-44e0cce8d2ac",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "60bf9bb1-b1f4-4888-bc4f-b3c4d47da8e0",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "e943bbf1-90df-4e75-81e0-67f523bcab34",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "3ef9475a-2b6a-4e5c-8487-7ebcb5a0bfb0",
+      "result_id": "329cd62b-129d-4443-a7c3-faffd816f583"
+    },
+    {
+      "claim_id": "c0c259f4-bf1e-4f7b-a3ba-f4b0bf055712",
+      "result_id": "0b116787-fc1b-48ff-9b74-b7f34e6f4115"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Gene duplication confers a weak selective advantage (~0.08-0.1%) by reducing gene expression inaccuracies from molecular noise and suboptimal regulation. This is demonstrated through stochastic simulations showing that duplicates produce more accurate responses (25% increase in mutual information) and reduce expression variance by 15-50% depending on noise type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C25-C29 provide converging computational evidence from a well-defined mathematical model of the lac system. The stochastic simulations demonstrate noise buffering (C25, C28-C29), increased information transfer (C26), and quantified selective advantage (C27). The model parameters are based on experimental data from Dekel and Alon 2005, providing empirical grounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The selective advantage of gene duplication depends on environmental and noise conditions: it is maximal at intermediate lactose concentrations and high intrinsic noise levels, but decreases with extrinsic noise or high environmental variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C31, C34-C36 are supported by systematic computational analysis shown in Figures 3g and 4c-e. The results logically follow from the noise buffering mechanism: intrinsic noise can be reduced by duplication while extrinsic noise affects both copies equally (C35). The intermediate lactose optimum corresponds to maximal system sensitivity (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C88"
+    ],
+    "result": "Population genetic dynamics with the mean selection coefficient accurately predicts the frequency increase of duplicates in in silico evolution experiments, demonstrating that this single parameter captures the complex stochastic evolutionary dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C88 are supported by in silico evolution experiments (Figure 4b) showing agreement between theoretical predictions and simulations. The validation across multiple conditions (varying noise, lactose dose, variance) strengthens this result. However, the simulations use simplified assumptions (no mutations, serial dilution) that may not fully capture natural population dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gene duplicates undergo recurrent formation and deletion at high rates, reaching equilibrium frequencies that prevent fixation by drift under neutral conditions. In bacteria, equilibrium is reached in ~68 generations with ~0.1% frequency, while in Drosophila transient periods exceed 10^6 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are well-supported by empirical data from cited studies (Reams et al. 2010, Schrider et al. 2013) and theoretical population genetic analysis. The formation-deletion balance model (C40, Figure 5a-b) logically explains why neutral fixation is prevented (C42), contradicting conventional wisdom. The organism-specific calculations (C43, C45) follow from the empirical rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Most new-born duplicates with doubled expression are deleterious (selection coefficients -28% to -1%), but effectively neutral conditions can arise in higher eukaryotes due to larger genome size and smaller population size, or in bacteria at very low lactose concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by fitness calculations from the model (C50, Figure 5c-d) and population genetic principles (C54). The genome size scaling (C51-C52, C109) is based on Lynch and Marinov 2015. The effectively neutral regime at low lactose (C55) follows logically from the fitness landscape. However, the assumption of doubled expression (C48) may not always hold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Adaptive gene duplications can arise through a two-step process: promoter mutations reducing expression by ~50% followed by duplication restoring wild-type levels. This yields a selection coefficient of 0.19% and global fixation probability of 3\u00d710^-7 in E. coli, much higher than neutral expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 present a novel mechanistic pathway supported by mutation distribution data (C57, C112 from Otwinowski and Nemenman 2013), mutation rate calculations (C58-C59), and fitness modeling (C60). The fixation probability calculation (C64) integrates multiple empirical parameters. However, C61-C62 note that high deletion rates in bacteria may still prevent fixation, and the calculation requires specific genetic contexts (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In Drosophila melanogaster, the global fixation probability for adaptive duplicates is estimated at 10^-5, higher than neutral expectations, based on mutation rates of 5\u00d710^-9 mut/bp/gen and the observation that complete gene duplications have little fitness impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 extend the bacterial analysis to Drosophila using empirical mutation rates (C66 from Schrider et al. 2013) and fitness effects (C67 from Emerson et al. 2008). The calculation follows the same logic as for bacteria. However, the fitness neutrality of duplications in Drosophila (C67) may be context-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A comprehensive model explains gene duplication fixation across organisms: higher eukaryotes can fix duplicates by drift (sector A), all organisms can fix by noise reduction if deletion rates are low (sector B), rapid environmental changes favor prokaryotes/lower eukaryotes (sector C), and prolonged changes allow fixation in any organism (sector D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 synthesize the study's findings into a unified framework (Figure 7). The model integrates genome size, population size, deletion rates, and environmental dynamics. Each sector is supported by prior results and citations. However, C82 about novel function exploration is more speculative. The framework provides testable predictions but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Gene duplication can be positively selected as an architecture enhancing information transfer in genetic networks through noise mitigation. This is most favorable when intrinsic noise is preponderant, such as in nutrient-rich media with low expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 present the main conceptual conclusion supported by the computational results. C83 is directly demonstrated by the simulations. C84 reinterprets existing observations (Keane et al. 2014) in light of the new mechanism. C85-C87 specify conditions for intrinsic noise dominance with supporting citations. The logic is sound but relies on the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The theory generates testable predictions: gene expression should be maintained upon duplication (gene dosage sharing), noisy genes should be more duplicable when noise is deleterious, TATA box enrichment in duplicates reflects high noise, essential genes should be less duplicable, and local genetic context determines fixation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 present testable predictions logically derived from the theory. Some predictions are supported by existing data (C90-C91 cite expression studies, C92-C93 cite yeast data, C95 connects two cited observations). Others are novel predictions (C89, C94, C96-C97). The predictions are internally consistent with the model but require direct experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Empirical examples in E. coli and yeast show duplicates with maintained expression levels (gntK/idnK, fsaA/fsaB) and preservation of ancestral function, consistent with the noise reduction mechanism, though alternative explanations exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C75 cite empirical observations that are consistent with the theory but do not definitively prove the mechanism. C70-C71 show maintained expression in some duplicates (Qian et al. 2010, DeLuna et al. 2008). C72-C75 describe specific E. coli examples with speculation about noise reduction (C75). These are suggestive but not conclusive evidence, as other mechanisms could explain the same patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The E. coli lac system exhibits a fitness trade-off where lactose provides benefit through metabolism but LacZ expression imposes cost. The actual regulation is near-optimal, with maximal sensitivity at intermediate lactose doses where information transfer is highest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 characterize the model system using established knowledge (C18, C24) and experimental data from Dekel and Alon 2005 (C19-C21). The near-optimal regulation (C21-C22) is demonstrated by comparing actual and optimal dose-response curves with statistical testing (p=0.02). The sensitivity analysis (C23) is shown in Figure 1f. This provides solid foundation for the duplication analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The mathematical model defines fitness as W = W0\u00b7(1 + B - C) with Michaelis-Menten benefit and resource-limited cost functions, incorporates log-normal noise distributions for intrinsic and extrinsic fluctuations, and uses standard population genetic formulas for selection and fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C117 describe the mathematical framework in Materials and Methods. The fitness model (C100-C104) uses experimentally fitted parameters from Dekel and Alon 2005. The noise model (C105-C108) follows established approaches (Elowitz et al. 2002) with validated parameter ranges (C107). Population genetic formulas (C115-C117) are standard. The model is well-defined and computationally reproducible, though some simplifications are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Classical theory predicts gene loss under neutrality, while existing hypotheses for positive selection include increased expression demand, functional backup for mutation accumulation, and error compensation. However, these hypotheses have limitations in explaining early-phase fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17 review prior work and identify gaps in understanding. The claims accurately represent cited literature (Kimura 1983, Lynch and Conery 2000-2003, Riehle et al. 2001, etc.) and logically critique existing hypotheses (C11-C15). This establishes the motivation for the study. The characterization of prior work appears accurate based on the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47"
+    ],
+    "result": "Genome rearrangement rates, particularly gene relocation, greatly condition duplicate fixation by reducing effective deletion rates and shifting the intrinsic-extrinsic noise balance toward more uncoupled responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C47 discuss the role of genome rearrangements supported by citations (Wong and Wolfe 2005, Becskei et al. 2005). The logic is sound: relocation reduces deletion probability and increases noise independence between copies. However, the quantitative impact is not fully explored in the model, and relocation rates are mentioned but not integrated into the main calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Precise experimental determination of molecular rates of gene copy number variation would reveal the extent to which natural selection has rivaled genetic drift in shaping complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 proposes an important future research direction that logically follows from the study's findings. The statement is reasonable given the sensitivity of fixation probabilities to formation/deletion rates demonstrated in the results. This is a valid call for experimental work rather than a testable claim from the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "BMP signaling rapidly shifts from near-uniform to a ventral gradient over ~3 hours during early zebrafish development. The measured pSmad1/5/9 gradient formation kinetics are consistent with Models 1, 2, 4, and 5, but not Model 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by experimental pSmad1/5/9 immunostaining data (Figure 1A+B, Videos 1-5) and comparison with model simulations (Figure 1C-G). The temporal dynamics and spatial distribution are well-documented, and the model comparisons are appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C6",
+      "C66"
+    ],
+    "result": "In chordin mutants, BMP signaling is increased in dorso-lateral domains but ventral peak levels are not significantly affected. This pattern is consistent with Models 1-3 but inconsistent with Models 4 and 5, demonstrating that Chordin does not actively establish peak ventral BMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C6, and C66 are supported by quantitative pSmad1/5/9 measurements in chordin mutants (Figure 2F-H) with appropriate statistical analysis (p-values shown in Figure 2H). The data clearly show dorso-lateral expansion without significant ventral changes, ruling out Models 4 and 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C28",
+      "C4",
+      "C67"
+    ],
+    "result": "Fluorescently tagged BMP2b and Chordin fusion proteins are functional and both diffuse in the extracellular space, rapidly forming concentration gradients over one hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C28, C4, and C67 are supported by rescue experiments (Figure 3C), transplantation experiments with light sheet microscopy (Figure 3F-I, Videos 7-8), and western blot validation (Figure 3\u2014figure supplement 1). The functional validation and gradient formation kinetics are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Chordin-sfGFP forms gradients with moderately longer range than BMP2b-sfGFP, with 50% signal decay at 50-60 \u03bcm versus 30-40 \u03bcm at 60 minutes post-transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by quantitative gradient measurements from transplantation experiments (Figure 3H+I). The specific distance measurements are clearly documented and reproducible across multiple embryos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "BMP2b-Dendra2 and Chordin-Dendra2 have similar clearance rate constants (half-lives ~130 and ~120 min), indicating that differential protein stabilities cannot account for their different distributions and contradicting Models 3 and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by FDAP experiments (Figure 4A+B) with appropriate sample sizes (n=22 for BMP2b, n=6 for Chordin) and model fitting. The similar half-lives directly contradict the differential stability assumptions of Models 3 and 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "BMP2b has effective diffusion coefficients of 2-3 \u03bcm\u00b2/s and Chordin has 6-7 \u03bcm\u00b2/s measured by FRAP. These measurements are most consistent with Models 1 and 4, which assume BMP has moderately lower diffusivity than Chordin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by FRAP experiments (Figure 4C-E) with appropriate replicates and error estimates. The measured diffusion coefficients are consistent with independent measurements (Zinski et al., 2017) and directly test model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C68",
+      "C69"
+    ],
+    "result": "BMP2b-sfGFP and Chordin-sfGFP have high local free diffusion coefficients (46 and 59 \u03bcm\u00b2/s by FCS) but reduced effective diffusivities at the global scale (2-7 \u03bcm\u00b2/s by FRAP), suggesting binding to immobile extracellular molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C68, and C69 are supported by FCS measurements (Figure 4F) with appropriate sample sizes (n=17 and n=19 measurements) and comparison with FRAP data. The scale-dependent diffusion is well-documented, though the mechanistic explanation (C49) remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Sizzled-sfGFP has an effective diffusion coefficient of 9.7 \u00b1 3.2 \u03bcm\u00b2/s, consistent with Model 3 but not Model 4, which requires ~25-fold higher Sizzled mobility relative to BMP/Chordin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C57 are supported by FRAP measurements (Figure 4E, Figure 4\u2014figure supplement 1D) and comparison with model requirements. The measured diffusivity is within the same order of magnitude as BMP/Chordin, contradicting Model 4's assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Model 3 parameterized with measured diffusion coefficients can form ventral-dorsal gradients, but the kinetics do not match experimental pSmad1/5/9 distribution profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by simulations (Figure 4\u2014figure supplement 1F-J) using experimentally measured parameters. While gradients form, the temporal dynamics are inconsistent with observations, providing evidence against Model 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C5",
+      "C72"
+    ],
+    "result": "Chordin overexpression does not significantly change BMP2b effective diffusivity measured by FRAP, contradicting the shuttling hypothesis that Chordin enhances BMP mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C5, and C72 are supported by FRAP experiments with Chordin co-expression (Figure 4G) showing no significant difference in BMP2b diffusivity. Statistical comparisons are provided, directly testing a key prediction of Model 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C78"
+    ],
+    "result": "BMP2b-sfGFP gradients are only slightly steeper with neighboring Chordin-expressing clones, and simulations with measured parameters show no significant BMP redistribution, indicating shuttling is not relevant for early dorsal-ventral patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 and C78 are supported by double transplantation experiments (Figure 5C-D, Videos 9-10) and simulations (Figure 5E-F). The minor observed effect is insufficient to account for gradient formation on relevant timescales, providing strong evidence against shuttling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C7",
+      "C8"
+    ],
+    "result": "The experimental findings rule out Models 2, 3, and 5, are consistent with Models 1 and 4, but are most consistent with Model 1 (graded source-sink with mobile BMP), challenging self-regulating reaction-diffusion and shuttling models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C73, C7, and C8 represent the synthesis of all experimental results. The systematic testing of model predictions through multiple independent experimental approaches (stability, diffusivity, mutant phenotypes, shuttling tests) provides strong support for Model 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C45"
+    ],
+    "result": "BMP2b diffusion observed in zebrafish contrasts with Model 2's assumption of immobile BMP and previous observations of no long-range BMP4 signaling in Xenopus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, and C45 are supported by gradient formation experiments (Figure 3F-I) and FRAP data demonstrating BMP2b mobility. This directly contradicts Model 2 and highlights species-specific differences with Xenopus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Model 1 has limitations: it does not account for other dorsal-ventral regulators (ADMP, Sizzled, Follistatin, Noggin), and rescue experiments with uniform expression suggest opposing sources are not strictly required if one component is biased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 acknowledge important limitations of Model 1. The rescue data (Figure 3C, citations) and discussion of missing regulators are appropriately presented as caveats requiring future refinement of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C49"
+    ],
+    "result": "The difference between BMP2b and Chordin gradient ranges could be due to differences in diffusivity or stability, with the scale-dependent diffusion hypothesized to result from binding to immobile extracellular molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33 and C49 are speculative interpretations. While C33 is supported by subsequent measurements showing diffusivity differences, C49 remains a hypothesis without direct experimental validation of binding to extracellular molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "Other BMPs (BMP4, BMP7, ADMP) might be shuttled by Chordin/Tolloid interactions, potentially explaining mild ventral tail fin defects in tolloid mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C81 are speculative possibilities not tested in the current study. While supported by citations to tolloid mutant phenotypes, these remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on dorsal-ventral patterning: The BMP/Chordin system controls dorsal-ventral axis formation, with BMP inducing ventral fates and Chordin inhibiting BMP dorsally. Expression patterns show ventrally biased bmp and dorsally restricted chordin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C15 represent established knowledge in developmental biology, appropriately cited and providing necessary context for the study. These are well-supported by extensive literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C34",
+      "C50",
+      "C51",
+      "C58",
+      "C61",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C82",
+      "C87"
+    ],
+    "result": "Background on models and prior work: Five models make different assumptions about BMP/Chordin diffusion and stability. Shuttling models have gained prominence but their fundamental tenets have not been directly tested. Alternative explanations for scale-invariant patterning exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C34, C50, C51, C58, C61, C75-C77, C80, C82, and C87 provide essential background on existing models and prior work, appropriately cited and accurately representing the literature and model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C74"
+    ],
+    "result": "The rapid gradient formation is consistent with rapid dorsal-ventral patterning timing, and conclusions are consistent with a complementary study by Zinski et al., 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C74 represent appropriate contextual interpretations. The consistency with developmental timing is logical, and agreement with independent work (Zinski et al., 2017) strengthens the conclusions.",
+    "result_type": "MINOR"
+  }
+]

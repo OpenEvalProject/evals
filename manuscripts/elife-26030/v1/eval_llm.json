@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C37",
+      "C38"
+    ],
+    "result": "R172K mutant IDH2 exhibits loss of isocitrate-dependent NADPH production compared to wild-type IDH2. Wild-type IDH2 showed significantly increased NADPH production (0.49 change in OD340) compared to vector control (0.094), while R172K mutant IDH2 (0.12) was not significantly different from vector control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C24-C26 provide quantitative experimental data (n=7 with SD) showing wild-type IDH2 produces significantly more NADPH than R172K mutant or vector control. Statistical analysis (C37-C38) confirms wild-type vs. vector is significant (p=0.0023 corrected) while mutant vs. vector is not (p=0.51 corrected), supporting the loss-of-function phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40"
+    ],
+    "result": "R172K mutant IDH2 exhibits gain of function for alpha-ketoglutarate-dependent NADPH consumption. R172K mutant IDH2 showed significantly increased NADPH consumption (0.022 change in OD340) compared to wild-type IDH2 (0.0034) and vector control (0.0019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C32 provide quantitative data (n=7 with SD) demonstrating R172K mutant consumes significantly more NADPH than wild-type or vector control. Statistical analysis (C39-C40) confirms mutant vs. vector is significant (p=0.0023 corrected) while wild-type vs. vector is not (p>0.99), supporting the gain-of-function phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "R172K mutant IDH2 produces elevated intracellular 2HG levels. Cells expressing R172K mutant IDH2 showed over 600-fold higher 2HG/glutamate ratios compared to wild-type IDH2 and vector control at both 24 and 48 hours post-transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41 report >600-fold increase in 2HG levels in R172K mutant cells based on GC-MS analysis. Statistical tests (C44-C45) show highly significant differences (p<10^-8 at 48hr, p=0.0039 at 24hr corrected) between mutant and controls, with n=10 biological replicates providing robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "AML patient samples with IDH1 or IDH2 mutations exhibit elevated 2HG levels compared to wild-type IDH samples. All wild-type IDH samples showed 2HG/glutamate ratios <1%, while all samples with IDH1 or IDH2 mutations showed ratios >1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C47 show clear separation between mutant and wild-type samples. However, statistical analysis reveals mixed results: IDH2 mutations (C55, p=0.0082 corrected) and combined IDH1/IDH2 (C56, p=0.00016 corrected) are significant, but IDH1 alone (C54, p=0.063 corrected) is not statistically significant after Bonferroni correction. The small sample size (n=4 per group) limits power for the IDH1 comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C59",
+      "C60"
+    ],
+    "result": "Replication of isocitrate-dependent NADPH production assay shows directional consistency with original study but quantitative differences. The replication observed similar patterns (wild-type>mutant\u2248vector) but with lower absolute OD340 changes than the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C29 compare replication to original data. While absolute values differ (replication: WT=0.49 vs original: WT=~1.3), the qualitative pattern is consistent. Meta-analysis (C59-C60) shows R172K mutant slope from original study falls within 95% CI of replication, but wild-type and vector do not, suggesting methodological differences affect magnitude but not direction of effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C63",
+      "C64"
+    ],
+    "result": "Replication of intracellular 2HG measurements shows directional consistency with original study. The replication observed >600-fold increase in R172K mutant cells compared to ~100-fold in the original study, with differences attributed to detection limits in control samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C43 compare replication to original study. The higher fold-change in replication (>600\u00d7 vs ~100\u00d7) is explained by lower detection limits in controls rather than differences in mutant samples. Meta-analysis (C63-C64) confirms R172K mutant values from original study fall within 95% CI of replication, while controls do not, supporting the interpretation that detection sensitivity differs but biological effect is consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C49",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Meta-analysis of AML patient samples with IDH1 mutations shows heterogeneity between original and replication studies. While both studies show elevated 2HG in IDH1 mutant samples, effect sizes differ substantially (original: d=8.40 vs replication: d=2.23) and meta-analysis is not statistically significant (p=0.114).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 report meta-analysis results showing non-overlapping confidence intervals between studies and significant heterogeneity (Cochran's Q p=0.031). The replication shows lower 2HG/glutamate ratios in mutant samples (0.20 vs ~0.8 in original, C49) and better detection limits in wild-type samples (C48). This suggests technical differences in sample handling or measurement sensitivity may contribute to heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Meta-analysis of AML patient samples with IDH2 mutations or combined IDH1/IDH2 mutations shows consistency between original and replication studies. Effect sizes overlap between studies and meta-analyses are highly significant (IDH2: p=1.12\u00d710^-6; IDH1/IDH2: p=5.73\u00d710^-9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 report meta-analysis results showing overlapping confidence intervals between original and replication studies for both IDH2 and combined IDH1/IDH2 comparisons. The point estimates fall within each other's confidence intervals (C73), and meta-analyses show highly significant effects despite some quantitative differences in absolute 2HG levels (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Multiple factors may contribute to quantitative differences between original and replication studies, including methodological parameters, cell line drift, GC-MS settings, and biological variables affecting IDH metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C74-C78 identify potential sources of variation supported by citations to relevant literature. C36 specifically addresses observed OD340 differences and cites appropriate methodological references. These factors provide plausible explanations for quantitative differences while maintaining qualitative consistency, though their specific contributions remain speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Protocol modifications were necessary to achieve adequate signal-to-noise ratios in enzymatic assays. Protein concentrations were increased 50-fold (oxidative assay) and 10-fold (reductive assay), and substrate concentrations were increased 4-fold (isocitrate) and 2-fold (alpha-ketoglutarate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 document substantial protocol deviations from the registered report with clear justification (inability to detect signal above noise, substrate saturation). These modifications are transparently reported and likely contribute to quantitative differences from the original study (C36), but the biological conclusions remain consistent. The need for such large adjustments raises questions about the original protocol specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cell culture and molecular biology methods were performed with appropriate quality controls. HEK293T cells were authenticated by STR profiling, confirmed mycoplasma-free, and expression vectors were sequence-verified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe standard cell culture conditions and quality control measures. STR profiling (C82) and mycoplasma testing (C81) confirm cell line identity and purity. Vector construction and verification (C83-C84) are appropriately documented. These quality controls support the validity of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "AML patient samples were obtained with appropriate ethical approval and prescreened for IDH mutational status. Samples were processed by Ficoll separation and cryopreserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 document appropriate ethical approval (IRB protocol CIC 9805, C93), sample source (Roswell Park Cancer Institute, C91), prescreening strategy (C92), and processing methods (C94). The prescreening approach differs from the original study but allows for adequate sample sizes in each genotype group, which is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Metabolite extraction and GC-MS analysis were performed using standard methods with appropriate metabolite identification. Data were deposited in a public repository (Metabolomics Workbench ST000548).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe metabolite extraction (rapid quenching at -80\u00b0C, C96), GC-MS analysis with authentic standards for identification (C97), and data deposition (C98). The methods are appropriate for metabolomics analysis and data sharing practices are exemplary. However, C107 notes a 1:4 dilution was added due to unspecified parameters in the original study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Statistical analyses were pre-registered and performed using appropriate software (R version 3.3.2). The pre-registration occurred before experimental work began.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 document use of appropriate statistical software and pre-registration of analysis plans before data collection. This represents best practices for reproducibility and reduces risk of p-hacking or selective reporting. The pre-registration is publicly accessible (https://osf.io/t873r/).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Alternative analysis using extracted ion chromatograms (EIC) instead of total ion chromatograms (TIC) for AML patient samples yielded statistically significant results for all comparisons, including IDH1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 reports that EIC analysis found all effects statistically significant (IDH1: p=0.037, IDH2: p=0.0049, IDH1/IDH2: p=4.84\u00d710^-5, all corrected). This contrasts with TIC analysis where IDH1 alone was not significant (C57). The EIC method may provide better sensitivity for low-abundance metabolites, though the choice between TIC and EIC should be pre-specified to avoid analytical flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Detection of low levels of 2HG in wild-type IDH samples is consistent with other published studies and may reflect normal metabolic errors. The utility of 2HG as a biomarker varies by cancer type and sample source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 cite multiple studies supporting background 2HG detection in wild-type samples and discuss biomarker utility across different contexts. These claims appropriately contextualize the findings within the broader literature. However, C53 includes speculation about the blood-brain barrier that, while plausible and cited, represents interpretation rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction accurately summarizes prior work on IDH mutations, including the original Ward et al. 2010 findings, subsequent confirmatory studies, detection of 2HG in various patient samples, and ongoing clinical trials targeting mutant IDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 provide appropriate background context through citations to relevant literature. These claims accurately represent the state of knowledge regarding IDH mutations, 2HG production, biomarker development, and therapeutic targeting. The citations appear appropriate and the summary is consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "HEK293T cells endogenously express wild-type IDH2, making them an appropriate model system for studying effects of ectopic mutant IDH2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 states established knowledge about HEK293T cells. This is a well-documented characteristic of this cell line and provides appropriate justification for the experimental design. The presence of endogenous wild-type IDH2 means the system tests mutant effects in the context of normal IDH2 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Meta-analysis of alpha-ketoglutarate-dependent NADPH consumption shows partial consistency between original and replication studies. Vector control slopes overlap between studies, but R172K mutant and wild-type IDH2 slopes do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 report that only vector control slopes from the original study fall within the 95% CI of the replication, while R172K mutant and wild-type slopes do not. This suggests quantitative differences in the assay despite qualitative consistency (both studies show mutant>wild-type\u2248vector). The substantial protocol modifications (C102-C103) likely contribute to these differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Multiple protocol deviations from the registered report were necessary and transparently documented, including vector substitution, protein extraction method, Western blot loading control, derivatization reagent clarification, and sample dilution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C104-C107 document various protocol deviations with justifications. Most are minor (vector substitution due to availability, C101; homogenization vs sonication, C104; loading control change due to overlap, C105; reagent clarification, C106) or necessary due to missing information (dilution factor, C107). Transparent reporting of deviations is appropriate, though the number of modifications highlights challenges in exact replication.",
+    "result_type": "MINOR"
+  }
+]

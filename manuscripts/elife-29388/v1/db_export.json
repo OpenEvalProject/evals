@@ -1,0 +1,1835 @@
+{
+  "submission": {
+    "id": "929962e5-d533-447f-9cfd-c7823ac51cc8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:51:25.675824Z",
+    "updated_at": "2025-12-01T21:51:25.675824Z"
+  },
+  "content": [
+    {
+      "id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "submission_id": "929962e5-d533-447f-9cfd-c7823ac51cc8",
+      "content_type": "manuscript",
+      "content_text": "# CHIP as a membrane-shuttling proteostasis sensor\n\n## Authors\n\n- Yannick Kopp<sup>1</sup>\n- Wei-Han Lang<sup>1</sup>\n- Tobias B Schuster<sup>1</sup>\n- Adri\u00e1n Mart\u00ednez-Lim\u00f3n<sup>1</sup>\n- Harald F Hofbauer<sup>1</sup> ([ORCID: 0000-0003-2617-5901](https://orcid.org/0000-0003-2617-5901))\n- Robert Ernst<sup>1</sup>\n- Giulia Calloni<sup>1</sup>\n- R Martin Vabulas<sup>1</sup> ([ORCID: 0000-0001-8519-4489](https://orcid.org/0000-0001-8519-4489)) \u2020\n\n### Affiliations\n\n1. Buchmann Institute for Molecular Life Sciences Goethe University Frankfurt Frankfurt am Main Germany\n2. Institute of Biophysical Chemistry Goethe University Frankfurt Frankfurt am Main Germany\n3. Institute of Biochemistry Goethe University Frankfurt Frankfurt am Main Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCells respond to protein misfolding and aggregation in the cytosol by adjusting gene transcription and a number of post-transcriptional processes. In parallel to functional reactions, cellular structure changes as well; however, the mechanisms underlying the early adaptation of cellular compartments to cytosolic protein misfolding are less clear. Here we show that the mammalian ubiquitin ligase C-terminal Hsp70-interacting protein (CHIP), if freed from chaperones during acute stress, can dock on cellular membranes thus performing a proteostasis sensor function. We reconstituted this process in vitro and found that mainly phosphatidic acid and phosphatidylinositol-4-phosphate enhance association of chaperone-free CHIP with liposomes. HSP70 and membranes compete for mutually exclusive binding to the tetratricopeptide repeat domain of CHIP. At new cellular locations, access to compartment-specific substrates would enable CHIP to participate in the reorganization of the respective organelles, as exemplified by the fragmentation of the Golgi apparatus (effector function).\n\n## Introduction\n\nOrganisms are constantly exposed to environmental variation which, when excessive and requiring adaptation, is called stress. At the cellular level, different stressors can damage proteins affecting their native structure and thus causing loss of function. A prototypic example is the heat shock that leads to protein misfolding, aggregation and cellular toxicity. To keep the cellular proteome in structural and functional balance, called proteostasis, a network of specialized proteins has evolved (Balch et al., 2008; Balchin et al., 2016). The proteostasis network (PN) is responsible for protein refolding and, in case of the unrepairable damage, degradation. Different classes of molecular chaperones assist during refolding and E3 ubiquitin ligases are involved in degradation function (Amm et al., 2014; Balchin et al., 2016). Both chaperones and E3 ligases are helped by a number of obligate and optional protein cofactors that increase the specificity, precision and efficiency of the respective reactions.\n\nC-terminal Hsp70-interacting protein (CHIP) is a paradigm example of how protein folding and degradation pathways cooperate during protein quality control (Arndt et al., 2007). Initially identified as a cytosolic cochaperone (Ballinger et al., 1999), CHIP was shortly afterwards discovered to be a U-box E3 ubiquitin ligase. It was found to engage with HSP70 and HSP90 molecular chaperones which act as adaptors to detect substrate proteins (Jiang et al., 2001; Murata et al., 2001). CHIP interacts with the chaperones through the N-terminal tetratricopeptide repeat (TPR) domain. The C-terminal tails of chaperones determines the specificity and affinity of this association, which is rather low (Wang et al., 2011; Zhang et al., 2005). Weak interaction implies dynamic and transient collaboration between CHIP and the chaperones; however, a detailed atomic and kinetic understanding of the collaboration is missing.\n\nOne key question regarding proteostasis is the molecular and functional differences in space and time at different levels of biological organization: organisms, tissues and cells (Powers et al., 2009). Considerable progress has been achieved in elucidating signaling and metabolic mechanisms associated with proteostasis changes during organism aging (Ben-Zvi et al., 2009; Taylor and Dillin, 2011) and differences of PN composition and stress response across tissues (Guisbert et al., 2013; Tebbenkamp and Borchelt, 2010). At the level of single cells, an obvious strategy to deal with proteostasis load is to accumulate it in distinct subcellular structures and, in the case of duplication, to inherit it asymmetrically in mother and daughter cells (Escusa-Toret et al., 2013; Kaganovich et al., 2008; Miller et al., 2015; Sontag et al., 2014). Several cellular locations are used to concentrate damaged proteins, such as the perinuclear endoplasmic reticulum or perivacuolar space (Kaganovich et al., 2008). A number of PN components, including molecular chaperones from HSP70 and HSP90 families but also the cochaperones HSP40 and HSP110, were shown to be involved in sorting misfolded proteins to the deposition sites (Sontag et al., 2014).\n\nMechanisms leading to the rearrangement of the cellular architecture during proteostasis stress are less clear. How do organelles change to support the sequestration of a misfolded proteome? Is protein quality control machinery involved in this aspect of the stress response? Here we report our finding that chaperone-binding ubiquitin ligase CHIP has the capacity to sense an acute deficiency of HSP70 in the cytosol and relocalize to membrane-bound organelles enriched in phosphatidic acid and phosphatidylinositol-4-phosphate. We describe the structural elements in CHIP which determine its function as a stress sensor. Finally, with the fragmentation of the Golgi apparatus, we provide an example that the relocalization of PN components is capable of reorganizing the cellular architecture.\n\n## Results\n\n### Chaperone-free CHIP interacts with cellular membranes and phospolipids\n\nShortly upon exposing EGFP-CHIP-transfected murine embryonic fibroblasts to 43\u00b0C, cells with membranous CHIP localization could be identified (Figure 1a, Figure 1\u2014figure supplement 1a). CHIP association with membranes was lost if the samples had been fixed with paraformaldehyde before microscopy indicating a dynamic nature of the interaction. EGFP localization did not change during heat shock (Figure 1\u2014figure supplement 1b). To exclude metabolic effects of heat shock and to implicate temporal deficiency of molecular chaperones as a reason for CHIP relocalization to cellular membranes, we next used inhibitors of CHIP-interacting chaperones. At 37\u00b0C, acute inhibition of HSP70 and HSP90 with VER-155008 and 17-AAG, respectively, leads to the appearance of EGFP-CHIP, but not of EGFP, at the plasma membrane (Figure 1\u2014figure supplement 1c) - similar to that taking place during heat shock. CHIP relocalization to membranes showed some specificity and was not induced by arsenite treatment (Figure 1\u2014figure supplement 1d).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig1-v1.jpg)\n\n**Figure 1.:** (a) Heat shock (43\u00b0C) mobilizes transiently transfected EGFP-CHIP for binding to membranes. Scale bar 10 \u03bcm. ***p<0.001, chi-square analysis; N\u00a0=\u00a03 independent experiments (mean\u00a0\u00b1\u00a0SD). (b) CHIP loses its association with HSC70 during acute heat shock, 43\u00b0C for 60 min, as determined by immunoprecipitation (mean\u00a0\u00b1\u00a0SD). ***p<0.001, t-test analysis; N\u00a0=\u00a04 independent experiments. One representative western blot is shown. (c) A fraction of endogenous CHIP in membranes exists in chaperone-free dimeric state as determined by subcellular fractionation and chemical crosslinking. Xlink, cross-linked samples; Pept, C-terminal octapepeptide from HSP70; M, monomer; D, dimer. One representative western blot out of three independent experiments is shown. (d) K30A mutant CHIP resides at the cellular membranes (mean\u00a0\u00b1\u00a0SD). Scale bar 10 \u03bcm. One representative out of three independent experiments is shown. ***p<0.001, chi-square analysis; N\u00a0=\u00a03 independent experiments. (e) Chaperone-free wild-type CHIP and K30A variant bind to a set of cellular phospholipids as determined by lipid-binding assay. Ptd, phosphatidyl; P, phosphate. One representative out of three independent experiments is shown. (f) Phosphatidylinositol monophosphates are recognized by wild-type chaperone-free CHIP as determined by lipid-binding assay. One representative out of three independent experiments is shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Comparison of steady-state levels of endogenous CHIP and EGFP-CHIP 24 hr after transfection by means of western blotting with anti-CHIP antibody (mean\u00a0\u00b1\u00a0SD). ***p<0.001, t-test analysis, N\u00a0=\u00a03 independent experiments. (b) Heat shock at 43\u00b0C does not cause EGFP association with membranes. One representative out of three independent experiments is shown. Scale bar 10 \u03bcm. (c) Inhibitors of HSP70 (20 \u03bcM VER-155008 for 4 hr) and HSP90 (20 \u03bcM 17-AAG for 4 hr) mimic the heat shock effect in regard to CHIP relocalization to membranes in murine fibroblasts (mean\u00a0\u00b1\u00a0SD). EGFP-transfected cells were used as control. One representative experiment out of three is shown. Scale bar 10 \u03bcm. ***p<0.001, chi-square analysis; N\u00a0=\u00a03 independent experiments. (d) 0.5 mM arsenite treatment for 30 min does not induce CHIP relocalization to membranes in murine fibroblasts (mean\u00a0\u00b1\u00a0SD). #, no statistically significant difference according to chi-square analysis; N\u00a0=\u00a03 independent experiments. Immunofluorescent staining of eIF4A (red) was used to confirm stress granule formation. DAPI staining in blue. (e) HSC70 does not bind to anti-FLAG matrix in empty vector-transfected cell lysates. One representative experiment out of four is shown. (f) Chemical crosslinking captures CHIP dimers and oligomers in vitro as determined by Coomassie Blue-stained reducing SDS-PAGE gel. M, monomers; D, dimers. One representative out of three experiments is shown. (g) CHIP oligomers cannot be fully disassembled by excess of C-terminal octapeptide from HSP70 (Pept) in vitro as determined by Coomassie Blue-stained reducing SDS-PAGE gel. Xlink, crosslinked samples; M, monomers; D, dimers. One representative out of three experiments is shown. (h) K30A mutation affects CHIP binding to HSP70 as measured by isothermal titration calorimetry using C-terminal octapeptide of HSP70 at 37\u00b0C. WT, K30A, wild-type CHIP and K30A mutant, respectively. (i) WT and K30A mutant CHIP have similar steady-state levels upon transient transfection as determined by western blotting. GAPDH was used as loading control. One representative out of three independent experiments is shown.\n\nMisfolded and aggregating polypeptides recruit heat shock proteins (HSPs) along with other components of the PN for shielding, refolding or degradation (Balchin et al., 2016). Because the HSP-CHIP association is rather weak (Assimon et al., 2015), we reason that sequestration of chaperones with aggregating proteins could lead to the appearance of chaperone-free CHIP in vivo, at least temporarily until more HSPs accumulate following transcriptional upregulation. Indeed, transiently transfected CHIP partially lost its association with HSC70 during acute heat shock as determined by immunoprecipitation (Figure 1b, Figure 1\u2014figure supplement 1e). To detect chaperone-free endogenous CHIP in membranes, subcellular fractionation combined with chemical crosslinking was performed. In preliminary experiments with recombinant protein, the conditions to capture CHIP in its naturally dimeric state (Nikolay et al., 2004) were established (Figure 1\u2014figure supplement 1f,g). CHIP association with molecular chaperones is determined mainly by its N-terminal tetratricopeptide repeat (TPR) domain interacting with last several amino acids of HSP70 or HSP90 (Wang et al., 2011; Zhang et al., 2005). When added to cellular lysates, the C-terminal HSP70 octapeptide GPTIEEVD dissociated high-molecular-weight species (CHIP-chaperone complexes) leading to the appearance of an HSP-stripped CHIP dimer (Figure 1c, lane 8). Presence of a crosslinked dimer, even in the absence of the chaperone-competing peptide, in the membrane fraction (Figure 1c, lane 10) indicated that endogenous membrane-associated CHIP was at least partially chaperone-free.\n\nTo further investigate the possibility that it is the chaperone-free CHIP that interacts with cellular membranes, we used a TPR domain mutant K30A with impaired binding to chaperones. Isothermal titration calorimetry using octapeptide GPTIEEVD confirmed the weak binding to wild-type CHIP (Kd\u00a0=\u00a05 \u03bcM when measured at 37\u00b0C) which was further reduced in case of K30A mutant (Figure 1\u2014figure supplement 1h). As predicted, a membranous localization of EGFP-CHIP-K30A was observed when compared to its wild-type version (Figure 1d). The difference could not be explained by different steady-state levels of the proteins upon transient transfection (Figure 1\u2014figure supplement 1i). To exclude localization differences due to altered lipid binding specificity, we probed the respective recombinant proteins on lipid arrays in vitro. Chaperone-free CHIP and the K30A variant showed a similar binding pattern thus excluding accidental formation of a novel determinant of membrane association by the mutation. (Figure 1e). Finally, analysis of a broad spectrum of cellular phospholipids revealed CHIP specificity mainly to phosphatidic acid (PA) and phosphatidylinositol monophosphates (PIP), especially PI4P (Figure 1f). Binding to phosphatidylinositol-bisphosphates was reduced and there was no binding to phosphatidylinositol-3,4,5-trisphosphate detected, arguing against a trivial electrostatic interaction but pointing instead to high stereospecificity (Sudhahar et al., 2008).\n\nIn summary, we found that chaperone-free CHIP was able to interact with cellular membranes in vivo and a distinct set of phospholipids in vitro.\n\n### Membranes and chaperones compete for TPR domain of CHIP in vitro\n\nTo analyze the details of the interaction, we reconstituted CHIP association with membranes in vitro using the recombinantly purified chaperone-free wild-type protein and 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) liposomes. A liposome floatation assay revealed cofloatation of CHIP which was strongly enhanced when liposomes were supplemented with 20% PA (Figure 2a). CHIP also interacted with liposomes in a liposome pelleting assay, in which pelleting was increased in the presence of PA and also by 1% PI4P, but to a lesser extent (Figure 2b). Increase of PI4P to 5% strongly enhanced association of liposomes with CHIP (Figure 2\u2014figure supplement 1a). On the other hand, 5% PA was insufficient to strengthen binding of CHIP onto liposomes (Figure 2\u2014figure supplement 1a). Notably, CHIP associated with 20% PA- or 5% PI4P-containing liposomes very efficiently, reaching up to 50\u201360% of input values, which allowed us to use Coomassie Blue-stained SDS-PAGE gels as readout.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig2-v1.jpg)\n\n**Figure 2.:** (a) Phosphatidic acid (PA) enhances CHIP association with DOPC-liposomes in floatation assays. T, M, B, top, middle, bottom of the gradient, respectively. One representative western blot out of three independent experiments is shown. (b) PA strongly and phosphatidylinositol-4-phosphate (PI4P) weakly enhance CHIP association with DOPC-liposomes in pelleting assay (mean\u00a0\u00b1\u00a0SD). **p<0.01, t-test analysis; N\u00a0=\u00a03 independent experiments. One representative Coomassie Blue-stained gel is shown. (c) TPR domain mediates binding of CHIP to indicated liposomes in pelleting assay (mean\u00a0\u00b1\u00a0SD). Schematic depiction of protein variants used to test binding to liposomes indicates N-terminal TPR domain and C-terminal U-Box of CHIP. ***p<0.001, **p<0.01, *p<0.05, t-test analysis; N\u00a0=\u00a03 independent experiments. Representative Coomassie Blue-stained gels are shown. (d) C-terminal HSP70 (260 amino acid fragment, HSP70-C) affects association of CHIP with liposomes during liposome pelleting (mean\u00a0\u00b1\u00a0SD). ***p<0.001, **p<0.01, t-test analysis; N\u00a0=\u00a04 independent experiments. One representative western blot is shown. (e) HSP70-C in ten-fold molar excess blocks interaction of CHIP with phospholipids as determined by lipid-binding assay. One representative out of three independent experiments is shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) 5% phosphatidylinositol-4-phosphate (PI4P) strongly enhance CHIP association with DOPC-liposomes in pelleting assay. 5% phosphatidic acid (PA) was insufficient to enhance binding of CHIP to DOPC-liposomes (mean\u00a0\u00b1\u00a0SD). ***p<0.001, # indicates no significant difference, t-test analysis; N\u00a0=\u00a03 independent experiments. One representative Coomassie Blue-stained gel is shown. (b) TPR-reactive antibody (anti-N-terminal CHIP) cannot interact with lipid-bound CHIP in lipid-binding assay. One representative out of three independent experiments is shown. (c) N- and C-terminal CHIP-reactive antibodies show comparable sensitivity against recombinant CHIP. (d) Indicated proteins are not pelleted if centrifuged in the absence of liposomes. One representative Coomassie Blue-stained gel out of three independent experiments is shown. (e) TPR domain binding to DOPC-liposomes containing 5% phosphatidic acid in pelleting assay (mean\u00a0\u00b1\u00a0SD). ***p<0.001, *p<0.05, t-test analysis; N\u00a0=\u00a03 independent experiments. One representative Coomassie Blue stained gel is shown.\n\nThe lipid array analyses in Figure 1e,f were performed with the antibody recognizing the C-terminal epitope of human CHIP (251\u2013268 aa). Surprisingly, the antibody recognizing the N-terminal epitope (18\u201337 aa) failed to detect CHIP bound to lipids (Figure 2\u2014figure supplement 1b,c). Given the comparable sensitivities of the C-terminal and N-terminal antibodies when tested with recombinant CHIP (Figure 2\u2014figure supplement 1c), the result suggested that the N-terminal part of CHIP, the tetratricopeptide repeat (TPR) domain, must be involved in the interaction with lipids thereby hindering its recognition by the respective antibody. TPR domains are found in numerous proteins where they usually mediate protein-protein interactions (Zeytuni and Zarivach, 2012). However, there is at least one example of a TPR domain-lipid interaction as in the case of protein phosphatase 5 binding fatty acids (Chen and Cohen, 1997). To test the assumption that the TPR domain from CHIP has dual \u2013 protein and lipid - specificity, we cloned and purified the isolated TPR domain and TPR domain-free CHIP (Figure 2c, upper panel outlining the deletions). We decided to include the neighboring N- and C-terminal regions while preparing the recombinant TPR domain in order to preserve its functional and structural integrity. According to deuterium exchange measurements, the N-terminal tail is very dynamic extending this flexibility over the first two \u03b1-helices in the TPR domain (Graf et al., 2010); from the other side, 16 C-terminal \u03b1-helical amino acids seem to cap the last tetratricopeptide repeat (Zhang et al., 2005). The truncated proteins remained soluble and did not pellet during ultracentrifugation (Figure 2\u2014figure supplement 1d). The liposome cosedimentation analyses confirmed that the TPR domain is required for the interaction with membranes containing either PA or PI4P (Figure 2c). Notably, the isolated TPR domain bound to the PA-containing liposomes more strongly than the parental full-length protein reaching ca. 160% efficiency of the full-length protein. The relatively high PA concentration (20%) in liposomes seems not to be a reason of this effect, because the TPR domain still surpassed the full-length CHIP in binding capacity when liposomes with lower concentration (5%) of PA were tested (Figure 2\u2014figure supplement 1e). The high flexibility and asymmetry of CHIP dimers (Graf et al., 2010; Zhang et al., 2005) possibly influence the dynamics of membrane interaction (e.g. on- and off-rates) which might differ in case of the isolated TPR domains. The argument of dynamic interaction fits well with our microscopy data where fixation of the samples were found to affect the membrane localization of chaperone-free CHIP.\n\nHaving established an in vitro model, we sought to test directly the notion that the abundance of molecular chaperones regulates CHIP association with membranes. The 260 amino acid-long C-terminal domain of HSP70 (HSP70-C) was used instead of the full-length protein to exclude N-terminal ATPase effects. Surprisingly, even the substoichiometric amount of 1 \u03bcM HSP70-C efficiently prevented CHIP from interacting with liposomes (Figure 2d). Preincubation of CHIP with an equimolar amount of HSP70-C blocked the association of CHIP with liposomes to ca. 30% of the control. Likewise, incubation of CHIP with lipid arrays in the presence of HSP70-C resulted in complete loss of binding to phosphatidylinositol monophosphates and only residual interaction with phosphatidic acid (Figure 2e).\n\nIn summary, the TPR domain was observed to mediate the binding of CHIP to liposomes in vitro. Molecular chaperones binding to TPR compete with lipids for this interaction efficiently.\n\n### A positively charged patch is required for CHIP binding to phospholipids\n\nBecause TPR domain-less CHIP still showed residual binding to phosphatidic acid-containing liposomes, we assumed additional lipid-interacting determinants. Basic amino acid motifs in polypeptides often play an important role in recognition of negatively\u00a0charged phospholipids (Stahelin et al., 2014). Inspection of the CHIP sequence revealed two patches of positively charged amino acids which we named m1 (143\u2013146 aa: KKKR) and m2 (221\u2013225 aa: KRKKR) (Figure 3\u2014figure supplement 1a). Both motifs are outside of the TPR domain and are evolutionary conserved (Figure 3a, Figure 3\u2014figure supplement 1a). When m1 was mutated to alanines, the specificity of lipid binding and association with cellular membranes was not affected (Figure 3b,c, Figure 3\u2014figure supplement 1b). However, partial exchange of m2 with alanines impaired CHIP-lipid interaction in vitro (Figure 3b) and efficiently released chaperone-free EGFP-CHIP-K30A from membranes in living cells (Figure 3c). Contrary to wild-type CHIP, m2 mutant was strongly present not only in the cytosol, but in the nucleus as well. The positively charged patches m1 and m2 seem to be very similar and they are spatially in close proximity as judged from the crystal structure (Figure 3a). Therefore, it is likely that the neighboring amino acids contribute to the striking difference in the subcellular localization when m1 and m2 mutants are compared. An alternative explanation would be the different flexibility of the patches. When compared to m1, m2 is localized in a more dynamic part of the middle domain that fluctuates between unfolded coil and \u03b1-helical conformation (Graf et al., 2010). At this stage, it is unclear whether coil or \u03b1-helical structure contributes to the interaction of CHIP with phospholipids.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig3-v1.jpg)\n\n**Figure 3.:** (a) Surface representation of CHIP dimer (PDB entry 2c2l) with TPR domains colored green. m1, m2, positively charged patches colored red. (b) m2-mutation (m2\u0394) affects CHIP interaction with phospholipids in vitro as determined by lipid-binding assay. One representative out of three independent experiments is shown. (c) m2\u0394 CHIP loses association with membranes in vivo. Scale bar 20 \u03bcm. #, no statistically significant difference according to chi-square analysis; N\u00a0=\u00a03 independent experiments (mean\u00a0\u00b1\u00a0SD).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Alignment of CHIP sequences from human (Hs, Homo sapiens), mouse (Ms, Mus musculus), chicken (Gg, Gallus gallus), xenopus (Xt, Xenopus tropicalis), fugu (Tr, Takifugu rubripes), and fruitfly (Dm, Drosophila melanogaster). TPR domain and U-box are marked by green and black boxes, respectively. Two positively charged patches are conserved and labelled m1 and m2. (b) Purified wild-type CHIP (WT) and its m1-mutated variant (m1\u0394) show similar phospholipid binding specificity as determined by lipid-binding assay. One representative out of three experiments is shown.\n\nA closer look at the asymmetric CHIP dimer (PDB 2C2L) reveals that only one m2 patch is exposed for a possible interaction with a flat membrane, the other being on the concave side of the dimer (Figure 3a). If docked to the surface involving m2, the TPR domain of the respective protomer would not be able to interact with a bulky chaperone any more (Figure 3a). This steric argument supports the assumption that CHIP association with membranes is prevented by bound HSP70 or HSP90.\n\n### CHIP remains active on membranes\n\nSince lipid binding can influence the activity of enzymes (Fang et al., 2001; Leonard and Hurley, 2011), we sought to assess the ubiquitylation function of CHIP upon interaction with membranes. None of the structural analyses revealed differences between soluble and liposome-associated protein implying full functionality of CHIP on membranes. First, CHIP remained dimeric and was still capable of oligomerization (Figure 4a). This is an important finding since monomerization of CHIP by the steroid detergent deoxycholate (Figure 4\u2014figure supplement 1a) was shown to reversibly inactivate its ubiquitin ligase activity (Nikolay et al., 2004). The higher amount of oligomers from liposome samples does not necessarily mean that oligomerization is stronger on the liposomes. Because of the experimental constraints (due to dilution of non-bound protein in the supernatant), the input CHIP for the crosslinking reaction is less concentrated and thus cannot be compared quantitatively to the liposome-bound samples. The amount of secondary structure elements did not change upon binding to liposomes (Figure 4b), although CHIP is known to be a rather labile protein (Graf et al., 2010). Consistently, the susceptibility to protease hydrolysis on liposomes did not change (Figure 4\u2014figure supplement 1b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig4-v1.jpg)\n\n**Figure 4.:** (a) CHIP can oligomerize on PA-containing liposomes (Lipos) as determined by chemical crosslinking. Xlink, crosslinked samples. (b) CHIP does not change its global content of secondary structures upon binding to liposomes as determined by CD spectroscopy. Mean values (from three independent experiments) at respective wavelength are plotted. (c) While attached to liposomes, CHIP remains capable to ubiquitylate the substrate protein NQO1 and form unattached K63-conjugated chains. In vitro ubiquitylation assays were performed using as E2 either UbcH5a (for substrate and auto-ubiquitylation) or the heterodimer Ubc13/Uev1a (for unattached ubiquitin K63 conjugation). One representative out of three independent experiments is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Chemical crosslinking reveals that deoxycholate (DCh) monomerizes CHIP in vitro as determined by Coomassie Blue-stained reducing SDS-PAGE gel. Xlink, crosslinked samples; M, monomer; D, dimer. One representative out of three experiments is shown. (b) CHIP association with membranes does not change its sensitivity to proteolysis (mean\u00a0\u00b1\u00a0SD). Black, CHIP in solution, red, CHIP on liposomes. # indicates no significant difference, t-test analysis; N\u00a0=\u00a03 independent experiments. One representative Coomassie Blue-stained gel is shown.\n\nAs an E3 ubiquitin ligase, CHIP collaborates with several E2 ubiquitin-conjugating enzymes providing similar binding surface for interaction (Xu et al., 2008; Zhang et al., 2005). We used UbcH5a and Ubc13/Uev1a to compare soluble and membrane-bound CHIP regarding its K48- and K63-ubiquitylation activity, respectively (Figure 4c). NAD(P)H:quinone oxidoreductase 1 (NQO1) P187S mutant served as a substrate protein because it is known to be ubiquitylated by CHIP with and without assistance of chaperones (Mart\u00ednez-Lim\u00f3n et al., 2016; Tsvetkov et al., 2011). Auto-ubiquitylation of CHIP is supported by UbcH5a as well (Zhang et al., 2005) and seemed to proceed somewhat stronger on liposomes (Figure 4c). K63-based ubiquitin polymerization by CHIP does not require a substrate protein (Zhang et al., 2005) and, contrary to auto-ubiquitylation, was slightly weaker on liposomes (Figure 4c). Ubiquitin K63-linking activity is especially interesting because it is known to regulate a number of membrane-related processes, such as receptor internalization, multivesicular body formation and autophagy (Erpapazoglou et al., 2014).\n\nIn summary, since no qualitative differences could be detected comparing the soluble and liposome-bound ligase, we concluded that CHIP on membranes remains functional and is capable of ubiquitylating the newly encountered subcellular proteome and produce free K63-linked ubiquitin chains.\n\n### CHIP reorganizes the cellular proteome and architecture\n\nPresuming activity of membrane-bound CHIP, we finally wanted to get insight into its cellular functions by identifying interactors of and proteome changes caused by chaperone-free CHIP. To avoid dimerization of the transfected K30A variant with the endogenous wild-type CHIP, CHIP-deficient mouse embryonic fibroblasts were used in the subsequent experiments (Figure 5\u2014figure supplement 1a). CHIP was implicated in HSF1 activation during stress response (Dai et al., 2003). However, early translocation of HSF1 into nucleus during heat shock was not affected by the absence of CHIP (Figure 5\u2014figure supplement 1b). For comparison, we sought conditions when CHIP-K30A loses its membrane localization. One of the cellular pathways that generates CHIP-interacting phosphatidic acid (PA) is the hydrolysis of phosphatidylcholine by members of the phospholipase D (PLD) family (Foster et al., 2014). The PLD isoform-unspecific inhibitor FIPI and the inhibitor of PLD1 (VU0155069), but not that of PLD2 (CAY10594), efficiently released chaperone-free CHIP into the cytosol (Figure 5a). This was not due to changes in the abundance of CHIP (Figure 5\u2014figure supplement 1c) or general disturbance of membrane structure as controlled by the correct localization of farnesylated EGFP (Figure 5\u2014figure supplement 1d). From the other side, it was also possible to release chaperone-free CHIP from the plasma membrane using inhibitors of PI4P-generating type III phosphoinositol-4 kinases (PI4KIII) (Figure 5\u2014figure supplement 1e,f). Wortmannin is a specific inhibitor of PI3K, however, it inhibits PI4KIII if used at higher concentrations (Nakanishi et al., 1995). Mass spectrometry analysis of EGFP-CHIP-K30A pull-downs from transiently transfected fibroblasts in the absence and presence of a PLD1 inhibitor was performed (Figure 5\u2014source data 1). The comparison of CHIP over background enrichment allowed high-confidence identification of a set of chaperone-free CHIP interactors (Figure 5b, Figure 5\u2014source data 2). Chaperone-independent ubiquitylation by CHIP has been sporadically reported in several instances; however, to our knowledge, this is the first high-throughput in vivo identification of CHIP interactors/substrates not associated via TPR-bound HSP70 or HSP90. Interestingly, more proteins interacted with chaperone-free CHIP when it was released into the cytosol (Figure 5b) suggesting pronounced \u2018stickiness\u2019 of the mislocalized ligase. The overlap between substrate sets was minimal (Figure 5c), which can be considered as biochemical verification of altered localization upon PLD1 inhibition. Most of the interactors reside at the plasma membrane or at one of the organelles confirming the broad potential of chaperone-free CHIP to modify cellular architecture (Figure 5d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig5-v1.jpg)\n\n**Figure 5.:** (a) Inhibition of phospholipase D (PLD) releases EGFP-CHIP-K30A from cellular membranes. FIPI, isoform independent inhibitor of PLD; VU0155069 and CAY10594, inhibitors of PLD1 and PLD2, respectively. Scale bar 20 mm. *p<0.05, chi-square analysis; N = 4 independent experiments (mean \u00b1 SD). (b) Interactors of EGFP-CHIP-K30A in transiently transfected murine embryonic fibroblasts (MEF). Phospholipase D was inhibited using 500 nM VU0155069. EGFP pulldowns were prepared as detailed in Methods and label-free mass spectrometry was used to quantitate proteins associated with CHIP. N = 5 biologically independent experiments. Volcano plots indicate average enrichment of individual protein levels. Red color marks significantly enriched proteins as determined by two sample t-test (p-value<0.05) (c) Minimal overlap of CHIP interactors from control and upon phospholipase D inhibition visualized by a venn diagram. (d) Subcellular localization of CHIP interactors as assigned by GeneCards database (www.genecards.org). According to the database, proteins may display multiple localizations. The scales of y-axis were adjusted according to the interactome sizes (19 versus 47). (e) Label-free quantitative mass spectrometry was used to determine proteome changes in MEFs upon overexpression of CHIP for 24 hr (N = 4). Volcano plot indicates average changes of individual protein levels. Red color marks significantly changed proteins as determined by two sample t-test (p-value<0.05). (f) GOBPslim terms enriched above two in the group of proteins significantly changed upon CHIP overexpression. Fisher exact test was used to determine statistical significance. (g) Morphology of the Golgi apparatus upon transient CHIP overexpression in MEFs assessed by co-transfected Golgi marker. DAPI stain in blue. Scale bar 5 mm. ***p<0.001, chi-square analysis; N = 3 independent experiments (mean \u00b1 SD). (h) Fragmentation of Golgi apparatus during heat shock in wild-type (WT) and CHIP knock-out MEFs (CHIP K.O.). Fraction of cells with fragmented Golgi at 37\u00b0C was set to 1. Increase of cells with fragmented Golgi after 30 min at 43\u00b0C is plotted as mean \u00b1 SD from three independent experiments. **p<0.01, t-test analysis.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29388/elife-29388-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Murine embryonic fibroblasts (MEF) lacking CHIP (CHIP K.O.) were engineered using CRISPR/Cas9 system. GAPDH was used as loading control. (b) HSF1 translocation into nucleus after 60 min at 43\u00b0C was analyzed by means of nuclei isolation as detailed in Materials and methods. Lamin B1 and GAPDH were used as markers of nuclei and cytosol, respectively. One representative out of three independent experiments is shown. (c) Phospholipase D inhibitors do not affect steady-state levels of transiently transfected EGFP-CHIP-K30A in MEFs as determined by western blotting. Samples were normalized to have the same protein concentration before loading on gel. One representative out of three independent experiments is shown. (d) Phospholipase D inhibitors do not affect membrane localization of transiently transfected farnesylated EGFP in MEFs. One representative out of three independent experiments is shown. Scale bar 20 \u03bcm. (e) Inhibition of type III phosphatidylinositol-4 kinases (PI4KIII) by wortmannin causes an acute undocking of EGFP-CHIP-K30A from cellular membranes (mean\u00a0\u00b1\u00a0SD). ***p<0.001, # indicates no significant difference, t-test analysis; N\u00a0=\u00a03 independent experiments. (f) Inhibition of PI4KIII\u03b2 by its specific inhibitor IN-10 for 20 min undocks EGFP-CHIP-K30A, but not farnesylated EGFP (EGFP-F) from cellular membranes (mean\u00a0\u00b1\u00a0SD). ***p<0.001, # indicates no significant difference, t-test analysis; N\u00a0=\u00a03 independent experiments. (g) EGFP and CHIP co-transfected MEFs were sorted using FACS to enrich the transfected population from 33% to 92%. One representative out of four independent experiments is shown. The sorted cells were lysed and analyzed by quantitative mass spectrometry as detailed in Materials and methods. (h) Overlap of identified proteins in four biologically independent experiments. (i) Average changes of quantified proteins from GOBPslim group \u2018Golgi organization\u2019. N\u00a0=\u00a04 biologically independent experiments. (j) Inhibition of the Golgi fragmentation by co-transfected HSP70, but not by HSP70 mutant with altered CHIP-binding tail (HSP70\u0394D) (mean\u00a0\u00b1\u00a0SD). **p<0.01, # indicates no significant difference, t-test analysis; N\u00a0=\u00a03 independent experiments.\n\nTo set up conditions that avoid the confounding side-effects of heat shock yet freeing wild-type CHIP from chaperones, we transiently overexpressed the untagged ligase (together with low amounts of EGFP for the identification of the transfectants) in CHIP-deficient murine embryonic fibroblasts. We chose to use wild-type CHIP instead of K30A variant here since the interaction of the latter with E2 ubiquitin-conjugating enzymes was reported to be affected (Narayan et al., 2015). As a control, EGFP-only transfected fibroblasts were used. 24 hr later, the cells were sorted to enrich the transfected cells from one third to an almost pure population (Figure 5\u2014figure supplement 1g) and proteome changes were measured by means of label-free quantitative mass spectrometry (Figure 5\u2014source data 3). Correlation of the measured intensities from four independent experiments revealed robust repeatability resulting in a highly overlapping set of measured proteins (Figure 5\u2014figure supplement 1h) and allowing identification of 56 significant changes (Figure 5e, Figure 5\u2014source data 4). There were more proteins with a reduced rather than an increased abundance, 37 versus 19, respectively, which is an expected bias considering the involvement of CHIP in protein degradation. The accumulation of at least some of the proteins might be a consequence of the recently discovered noncanonical ubiquitylation by CHIP (Ronnebaum et al., 2013); however, indirect degradation loops leading to the abundance changes are conceivable as well.\n\nGolgi-specific phosphatidylinositol-4-phosphate (Stahelin et al., 2014) showed specificity to CHIP in lipid array experiments (Figure 1f). GO analysis of CHIP interactors scored \u2018Golgi organization\u2019 GOBPslim term (biological processes) as the second-highest enrichment among significantly changed proteins (Figure 5f). This is especially interesting because the Golgi apparatus is known to fragment under heat shock (Petrosyan and Cheng, 2014; Welch and Suhan, 1985). Coexpression of the \u03b2\u22121,4-galactosyltransferase1-EGFP marker (Cole et al., 1996) verified fragmentation of the Golgi apparatus following CHIP overexpression (Figure 5g). In a complementary setup, CHIP-deficient fibroblasts failed to increase fragmentation of the Golgi apparatus during heat shock (Figure 5h) further supporting the involvement of CHIP in the reorganization of membrane-bound organelles during proteostasis stress. In addition to the changes in the \u2018Golgi organization\u2019 group (Figure 5\u2014figure supplement 1i), several other components related to the Golgi apparatus were affected by CHIP overexpression as well. Some proteins showed lower abundance, for example, Golgi integral membrane protein 4 (Golim4) was reduced to 62% of its normal levels; others were upregulated, for example, the amount of Rab GDP dissociation inhibitor Gdi2 doubled. It will be interesting to uncover the exact mechanisms and functional consequences of Golgi fragmentation by chaperone-free CHIP (effector function). The central role of chaperone availability in this mechanism is supported by the observation that the overexpression of HSP70 inhibited fragmentation of the Golgi apparatus by CHIP (Figure 5\u2014figure supplement 1j).\n\n## Discussion\n\nEarly on, CHIP was shown to participate in the quality control and degradation of membrane proteins. The best-known example among its substrates is the \u0394F508 mutant of chloride channel CFTR (Meacham et al., 2001). Many molecular details regarding the recognition and ubiquitylation of membrane proteins by CHIP in vivo and in vitro have been elucidated since (Matsumura et al., 2013; Younger et al., 2006). The unifying aspect of the analyzed processes has been the recognition of substrates by CHIP-bound molecular chaperones HSP70 and HSP90 (Arndt et al., 2007). In addition to the endoplasmic reticulum-related quality control, CHIP has been shown to participate in the quality control of plasma membrane-resident proteins (Okiyoneda et al., 2010). This activity also entails the participation of HSP70 and HSP90 (Okiyoneda et al., 2010). In contrast, here we describe the function of CHIP which relies on the chaperone-independent recruitment of the ubiquitin ligase to membrane-bound subcellular compartments. In fact, association with a chaperone would suppress this pathway of CHIP recruitment to membranes because its TPR domain is responsible for the mutually exclusive binding to either chaperones or membranes. It remains to be clarified how an additional determinant of the phospholipid specificity, the m2 patch, contributes to the TPR domain-driven association of CHIP with membranes. An electrostatic attraction of the positively charged cluster to the negatively charged membrane surfaces can be hypothesized, but remains to be tested. Indeed, a similar positively charged patch in vicinity of m2 does not influence CHIP interaction with lipids (Figure 3). At this stage, an allosteric effect upon the TPR domain cannot be excluded, especially because of the high flexibility of CHIP in general and of the m2 patch in particular (Graf et al., 2010).\n\nMembrane specificity of chaperone-free CHIP is key to understanding CHIP-assisted reorganization of the cellular architecture during severe conformational stress. We addressed this question by means of analytical in vitro approaches which revealed the preference of the ligase for phosphatidic acid (PA) and phosphatidylinositol monophosphates. PA is interesting in the context of stress response for several reasons. First, in plants PA is known to be involved in response to many diverse stressors, such as high salt, drought, cold, aluminium exposure, to mention a few (Liu et al., 2013). Second, the constitutive levels of PA in membranes are comparably high, yet they can change to functionally significant extents depending on metabolic or stress conditions (Fang et al., 2001). Third, the involvement of PA-generating enzymes from the phospholipase D family in diverse pathologies has been established, advancing the development of therapeutics and thus creating possibilities to intervene (Frohman, 2015). In this regard, Alzheimer\u2019s disease is an interesting example, having been associated with different isoforms of phospholipase D. On the other hand, phosphatidylinositol monophosphates (PIPs) are less abundant, but highly relevant as tags of organelle identity. For example, PI3P is enriched on early endosomes and PI4P marks the Golgi apparatus and plasma membrane (Hammond and Balla, 2015). PI3P and PI5P are less abundant than PI4P (ca. ten and hundred times, respectively) (Hammond and Balla, 2015), thus their affinity to CHIP might be an evolutionary byproduct with little functional consequences. At this stage, the relative importance of PA versus PI4P for in vivo relocalization of CHIP during stress remains unclear.\n\nDiscussing cellular localization approaches, we would like to emphasize the highly dynamic nature of CHIP interaction with membranes. It is strikingly evidenced by the undocking of CHIP from membranes during paraformaldehyde fixation of the samples, a standard processing before fluorescence microscopy. Another challenge is the highly suprastoichiometric amounts of chaperones with respect to CHIP levels in the cytosol which prevents freeing of CHIP even under stress conditions.\n\nSummarizing, we propose a simple mechanism of how mammalian cells can sense the catastrophic extent of protein misfolding and aggregation in the cytosol and how membraneous compartments are acutely modified in response. Under normal conditions, HSP70- and HSP90-interacting proteins, such as CHIP, are associated with molecular chaperones and remain in the cytosol because their compartment-targeting determinants are shielded by that association. Acute conformational stress leads to accumulation of misfolded species with a high affinity for chaperones that, in turn, bind to the fresh aggregates following the law of mass action. Previous interactors of chaperones are now freed from shielding, thereby exposing their compartment-specific determinants allowing them to depart to new destinations. There, depending on functional specialization, relocalized proteins turn into effectors and modify newly encountered sets of proteins. Specifically in the case of CHIP, this would involve docking onto phosphatidic acid- and phosphatidylinositol-4-phosphate-enriched cellular compartments and subsequent ubiquitylation of compartment-specific proteins. The small fraction of relocalized CHIP indicates that the PN in the given cell line is strong enough to handle the ensuing misfolding and aggregation, with most of CHIP remaining in the cytosol (Figure 1a).\n\nImmediate reorganization and adaptation of organelles is a less understood aspect of cytosolic stress response compared to the transcriptional and post-transcriptional reactions, such as HSF1-driven activation of stress gene transcription (Akerfelt et al., 2010) or eIF2\u03b1-mediated attenuation of protein synthesis (Schneider and Bertolotti, 2015). Importantly, the final outcome of the organelle reorganization probably depends on the capacity of a given cell to upregulate compensatory amounts of molecular chaperones. For the sake of the whole organism, metazoans might need to identify and sacrifice those cells which have failed to do so. An altruistic self-sacrifice involving membrane-bound organelles can be envisioned as an extension of the mechanism we propose. Although reversible under limited heat shock, Golgi fragmentation is a well-known marker or even the cause of cellular toxicity upon different stressors, including protein aggregation (Alvarez-Miranda et al., 2015; Haase and Rabouille, 2015).\n\nDissociation of CHIP from molecular chaperones under conformational stress resembles activation of HSF1 when the liberated protein trimerizes and translocates to the site of its transcriptional activity (Morimoto, 1993). However, molecular determinants of the inhibitory interaction between chaperones and HSF1 are less clear compared to the TPR-based mechanism described here. Involvement of the TPR domain poses a question regarding the generality of the mechanism. In addition to CHIP, a number of other members from the PN, such as HOP, DnaJC7, FKBP51, FKBP52 among others, engage their TPR domains to interact with HSP70 and HSP90 (Assimon et al., 2015). The organelle adaptation described here, if used by other co-chaperones with distinct functionality, would diversify the response to acute stress. Finally, unmasking of the determinants of cellular localization must not be restricted to protein misfolding. For example, C-terminal phosphorylation of HSP70 and HSP90, such as that which takes place during a proliferative boost, was shown to critically affect TPR domain-based associations (Muller et al., 2013). Thus, comprehension of the scope and details of the subcellular reorganization of protein quality control machinery bears wide biological implications.\n\n## Materials and methods\n\n### Reagents, plasmids and antibodies\n\nPhospholipase D inhibitors FIPI, VU0155069 and CAY10594 were purchased from Caymen Chemicals\u00a0(Ann Arbor, MI), wortmannin from Enzo\u00a0(Farmingdale,\u00a0NY), PI4KIII\u03b2 inhibitor IN-10 from MedChem Express (Monmouth Junction, NJ), HSP70 inhibitor VER-155008 from Sigma-Aldrich\u00a0(St.\u00a0Louis,\u00a0MO), HSP90 inhibitor 17-(Allylamino)\u221217-demethoxygeldanamycin (17-AAG) from Biomol\u00a0(Germany). 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) and 1,2-dipalmitoyl-sn-glycero-3-phosphate (phosphatidic acid, PA) were from Avanti Polar Lipids\u00a0(Alabaster,\u00a0AL), 1,2-dipalmitoyl-sn-glycero-3-phosphoinositol-4-phosphate (phosphadtidylinositol-4-phosphate, PI4P) was from Echelon Bioscience\u00a0(Salt Lake City, UT). All other chemicals were from Sigma-Aldrich if not indicated otherwise. Octapeptide GPTIEEVD was custom-synthetized by GenScript\u00a0(Piscataway, NJ).\n\nFor mammalian expression of EGFP, the expression vector pEGFP-N1 from Clontech\u00a0(Mountain View, CA) was used. N-terminal EGFP-CHIP fusion protein was constructed by cloning human CHIP coding sequence in pEGFP-C2 vector (Clontech) using HindIII and BamHI restriction sites. A fusion between the N-terminal\u03b2\u22121,4-galactosyltransferase1 and EGFP was used as a marker of the Golgi apparatus, farnesylated EGFP as a marker of plasma membrane (both constructs from Clontech). Untagged and 3xFLAG-tagged human CHIP for mammalian expression were constructed in pCMV-10 vector (Sigma-Aldrich). HSP70 was amplified from human cDNA and cloned into pcDNA3.\u00a01 expression vector without a tag. HSP70 lacking the last amino acid (HSP70\u0394D) was prepared by site-directed mutagenesis. Vectors of full-length CHIP, UbcH5a and mutant NQO1 for bacterial expression were prepared as described (Mart\u00ednez-Lim\u00f3n et al., 2016). The TPR domain bacterial expression vector (TPR) was created by exchanging glutamate152 codon to a stop codon in the full-length CHIP vector. CHIP without TPR domain (\u0394TPR) was cloned by deleting the sequence between serine25 and argininge130 by means of PCR. To construct the bacterial expression vector HSP70-C, the sequence of human HSPA1A coding last 260 amino acids of the protein was cloned into pPROEX HT (Invitrogen,\u00a0Waltham,\u00a0MA). Site-directed mutagenesis was used to create K to A (30 aa), KKK to AAA (143\u2013145 aa) and KRKK to AAAA (221\u2013224 aa) mutants of CHIP in respective vectors for mammalian and bacterial expression.\n\nAntibody against ubiquitin (P4D1) was from Santa Cruz Biotechnology\u00a0(Dallas,\u00a0TX), antibodies against eIF4E (9742), HSF1 (D3L8I) lamin B1 (D9V6H) and GAPDH (14C10) were from Cell Signaling\u00a0(Danvers,\u00a0MA). Anti-C-CHIP (C9243), anti-N-CHIP (C9118) and anti-NQO1 (N5288) antibodies were from Sigma-Aldrich. Anti-HSC70 (1B5) was from Enzo.\n\n### Cell culture and transfection\n\nImmortalized murine embryonic fibroblasts (MEF) were gift from Dr. A. Reichert (D\u00fcsseldorf University). The identity of the cells has been authenticated by analyzing highly\u00a0polymorphic short tandem repeat loci (Microsynth,\u00a0Switzerland). Cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamine, 100 IU/ml penicillin G, 100 \u00b5g/ml streptomycin sulphate and non-essential amino acids (Gibco,\u00a0Waltham,\u00a0MA) at 37\u00b0C and 5% CO2 in a humidified incubator. MEF clones lacking CHIP (\u0394CHIP) were engineered using CRISPR/Cas9 system (Ran et al., 2013). pSpCas9n(BB)\u22122A-GFP (PX461) and pSpCas9n(BB)\u22122A-Puro (PX462) plasmids were a gift from Feng Zhang (Addgene #48140 and # 48141). Cell lines were free of Mycoplasma contamination according to the PCR Mycoplasma test kit II (AppliChem,\u00a0Germany).\n\nFor microscopy of CHIP localization, 4 \u00d7 106 MEF cells were transfected by means of electroporation with 10 \u00b5g EGFP-CHIP or EGFP-CHIP-K30A. Transfected cells were seeded on poly-lysine-coated cover slides in a 12-well plate. 6 hr after transfection medium was exchanged. 24 hr after transfection cells were processed for microscopy without fixation as specified below.\n\nFor phospholipase D inhibitor experiments, 2 \u00d7 105 MEF cells per well were seeded on poly-lysine-coated cover slides in a 12-well plate. Transfection was carried out 10 hr later using 1 mg/ml polyethylenimin (PEI) solution and 1 \u00b5g of EGFP-CHIP-K30A (9:1 PEI to DNA ratio). Medium was exchanged 12 hr after transfection. 24 hr after transfection PLD inhibitors or DMSO were added in serum-free DMEM. 12 hr after inhibitor treatment slides were processed for microscopy without fixation as specified below.\n\nFor live imaging during heat stress, 0.1 \u00d7 106 MEF cells per well were seeded in a 24-well Cell Imaging Plate with clear film bottom (Eppendorf,\u00a0Germany). Cells were transfected with 1 \u00b5g EGFP-CHIP or EGFP as control (6:1 PEI to DNA ratio).\n\nFor analysis of CHIP relocalization to the plasma membrane upon HSP70 and HSP90 inhibition, 2 \u00d7 105 MEF cells per well were seeded in a 12-well plate on poly-lysine coated cover slides. Cells were transfected with 1 \u00b5g EGFP-CHIP or EGFP as control (6:1 PEI to DNA ratio). 20 \u00b5M VER-155008 or 20 \u00b5M 17-AAG were added in serum-free medium 24 hr later and incubated for 4 hr before mounting for microscopy without fixation.\n\nFor MS analysis of chaperone-free CHIP interactors, 4 \u00d7 106 \u0394CHIP MEF were seeded on 10 cm dishes. Transfection was carried out 10 hr later with 10 \u00b5g EGFP-CHIP-K30A or empty vector (6:1 PEI to DNA ratio). Medium was refreshed 12 hr past transfection. For treatment with PLD inhibitors, the medium was exchanged 24 hr past transfection to DMEM with no FBS and containing 500 nM PLD inhibitor (VU0155069) or DMSO. 12 hr later cells were washed with PBS and harvested for lysis.\n\nFor label-free mass spectrometry analysis, two times 8 \u00d7 106 \u0394CHIP MEF (clone 22) were each co-transfected with 3 \u00b5g EGFP and 30 \u00b5g CHIP or 30 \u00b5g control vector by electroporation. Transfected cells were seeded on two 10 cm dishes and medium was exchanged 6 hr later. 24 hr after transfection, cells were trypsinized, pooled to a concentration of 10 \u00d7 106 cells/ml and sorted using S3 cell sorter (Bio-Rad Laboratories,\u00a0Hercules,\u00a0CA).\n\nFor analysis of Golgi morphology, 2 \u00d7 105 \u0394CHIP MEF (clone 22) per well were seeded on poly-lysine-coated cover slides in a 12-well plate. At 70% confluence and 24 hr after seeding, medium was exchanged and cells were transfected with a 1 mg/ml PEI solution using 200 ng \u03b2\u22121,4-galactosyltransferase1-EGFP and 800 ng CHIP (9:1 PEI to DNA ratio). Controls were transfected with an equivalent amount of empty plasmid. 36 hr past transfection cells were fixed and processed for microscopy as described below.\n\nFor analysis of Golgi morphology under heat stress, 2 \u00d7 105 \u0394CHIP and WT MEF were seeded on poly-lysine-coated cover slides in a 12-well plate. At 70% confluence and 24 hr past seeding, medium was refreshed and cells were transfected with a 1 mg/ml PEI solution (9:1 PEI to DNA ratio) using 1 \u00b5g \u03b2\u22121,4-galactosyltransferase1-EGFP (Clontech).\n\n### Immunoprecipitation and western blotting\n\nFor immunoprecipitation, 8 \u00d7 106 MEF were electroporated at 300V and 950 \u03bcF in 400 \u03bcl intracellular buffer/25% FBS using 20 \u03bcg 3xFLAG-CHIP or empty vector (40 \u03bcg total DNA). Cells were washed and plated on 10-cm tissue culture dishes in 10% FBS/DMEM; 6 hr later medium was refreshed. 24 hr after transfection, medium was supplemented with 25 mM HEPES NaOH pH 7.4, cells were exposed to 43\u00b0C for 60 min, washed twice with PBS, scraped from the plates and lysed in 450 \u03bcl lysis buffer (20 mM HEPES KOH pH 7.4, 100 mM KCl, 10 mM MgCl2, 20 mM sodium molibdate, 10% (w/v) glycerol, 0.5% (v/v) IGEPAL) with protease inhibitors. Lysates were pulse-sonicated to shear DNA, incubated on ice for 15 min, centrifuged at 10,000 g for 10 min and normalized in regard to protein concentration. Immunoprecipitation was performed using 1 \u03bcl M2 affinity gel (Sigma) and 9 \u03bcl Protein G sepharose (GE Healthcare,\u00a0Chicago,\u00a0IL) for 2 hr at 4\u00b0C. The precipitates on mini-cartridges were washed three times with lysis buffer and eluted with 40 \u03bcl sample buffer at 95\u00b0C for 3 min. \u03b2-mercaptoethanol was added to the eluates which were then analyzed by SDS-PAGE and western blotting using anti-FLAG and anti-HSC70 antibodies. Chemiluminescence images were acquired with the ChemiDoc MP imaging system and bands quantified using Image Lab 5.0 software (both from Bio-Rad Laboratories).\n\n### Fluorescence microscopy\n\nZeiss LSM 780 inverted confocal microscope with a 63x oil immersion objective was used.\n\nFor microscopy analysis of CHIP localization, samples were not fixed. Cover slides with living cells were mounted in culture medium on glass slides with parafilm spacers. Cover slides were sealed with vaseline and immediately imaged at RT. For live imaging during heat stress, the plate was moved to the microscope incubator at 37\u00b0C and 5% CO2. Cells were imaged 24 hr after transfection at the respective temperature. For analysis of Golgi morphology upon CHIP overexpression, cover-slides were washed twice with PBS before cells were fixed with 4% paraformaldehyde for 20 min at RT. Cells were washed three times with PBS and subsequently stained with 1 \u00b5g/ml DAPI for 3 min at RT. After removing residual DAPI by washing three times with PBS, cells were mounted in PBS onto glass slides and sealed using nail polish. For quantification, fields of view were chosen randomly. For analysis of Golgi morphology during heat shock, cells were incubated at 43\u00b0C for 30 min, then fixed with 4% PFA and stained with DAPI.\n\nMembrane localization and Golgi morphology were analyzed manually using ImageJ from following numbers of cells (average of at least three independent experiments): 92 (Figure 1a), 142 (Figure 1d), 90 (Figure 1\u2014figure supplement 1b), 125 (Figure 1\u2014figure supplement 1c), 149 (Figure 1\u2014figure supplement 1d), 84 (Figure 3c), 130 (Figure 5a), 206 (Figure 5g), 240 (Figure 5h), 93 (Figure 5\u2014figure supplement 1d), and\u00a0137 (Figure 5\u2014figure supplement 1j). In case of Figure 5\u2014figure supplement 1e and f, the same cells were followed upon addition of inhibitors: 47 and 79, respectively.\n\n### Immunofluorescence\n\nFor staining of stress granules after arsenite treatment, cells on polylysine-coated cover slides were washed three times with PBS and fixed for 15 min with 4% PFA at RT. Following washing with PBS, cells were permeabilized with acetone for 5 min at \u221220\u00b0C. Remaining acetone was removed by three washing steps before addition of 1% BSA/PBS for 1 hr at RT. Anti-eIF4E antibody (Cell Signaling) was used in a 1:100 dilution in 1% BSA/PBS for 1 hr at RT. Cover-slides were washed three times with PBS before addition of anti-rabbit IgG Fab2 Alexa Fluor (R) 647 (Cell Signaling, 4414) at 1:1000 in 1% BSA/PBS and incubated for 1 hr at RT protected from light. Aspiration of secondary antibody was followed by three washing steps with PBS and DAPI staining.\n\n### Subcellular fractionation and chemical crosslinking\n\nCells were cultured on a 10 cm dish to 80\u201390% confluence. 20 \u00d7 106 cells/ml suspension was lysed in subcellular fractionation buffer (SF: 250 mM sucrose, 20 mM HEPES KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, protease inhibitor mix from Sigma). Cells were disrupted by passing thirty times through a 26 G needle. The suspension was cleared by centrifugation at 4\u00b0C and 720 g for 5 min and two times at 10,000 g for 5 min. The cytosolic fraction was prepared by ultracentrifugation of the supernatant at 100,000 g for 1 hr at 4\u00b0C in a TLA120.1 fixed angle rotor (Beckman,\u00a0Indianapolis,\u00a0IN). The transparent membrane pellet was washed once with 400 \u00b5l SF buffer and then ultracentrifuged at 100,000 g for 45 min at 4\u00b0C. The washed pellet (membrane fraction) was resuspended in 80 \u00b5l CHIP lysis buffer (20 mM HEPES KOH pH 7.5, 100 mM KCl, 10 mM MgCl2, 10% (v/v) glycerol, 0.5% (v/v) IGEPAL). 20 \u00b5l of total lysate, cytosolic and membrane fractions were incubated with 800 \u03bcM HSP70 C-terminal peptide GPTIEEVD for 30 min at 37\u00b0C followed by crosslinking with 0.025% glutaraldehyde for 10 min at 30\u00b0C. Crosslinking reaction was quenched with 100 mM Tris HCl pH 7.5 and analyzed by western blotting with anti-CHIP antibody.\n\n### Recombinant protein purification\n\nHuman recombinant full length CHIP and its truncated versions were purified from Escherichia coli BL21 cells using Glutathion Sepharose 4B (GE Healthcare). Sepharose-bound GST-CHIP was subjected to overnight treatment with PreScission protease and the released tag-free protein was collected. Size exclusion chromatography on a HiLoad Superdex 200 column (GE Healthcare) followed to ensure the purity and homogeneity of proteins. All CHIP variants were kept in HSP70 buffer (25 mM HEPES KOH pH 7.5, 150 mM KCl, 5 mM MgCl2, 5% glycerol, 1 mM DTT).\n\nHuman C-terminal HSP70 6xHis-tagged N-terminally was purified from Escherichia coli BL21 cells using 1 ml HisTrap column (GE Healthcare). Bound protein was eluted by applying an imidazole gradient. Fractions containing the protein were subjected to size exclusion chromatography using HiLoad Superdex 200 in HSP70 buffer. His-NQO1, His-UbcH5a, His-Uev1a and His-Ubc13 were purified similarly except that PBS/1 mM DTT was used during size exclusion chromatography. Purity of recombinant protein was evaluated by SDS-PAGE and Coomassie BB G-250 (CBB) staining. Concentration of proteins was determined measuring absorbance at 280 nm and using ProtParam (ExPASy) to calculate respective extinction coefficients. Proteins were aliquoted, snap-frozen and stored at \u221280\u00b0C.\n\n### Isothermal titration calorimetry\n\nITC was carried out using a Nano ITC (TA instruments). The calorimetry cell contained 10 \u00b5M of the respective protein in HSP70 buffer. The 500-\u00b5l titration syringe was loaded with 200 \u00b5M GPTIEEVD peptide. Titrations were carried out performing 25 injections of 8 \u03bcl every 3 min. Data were acquired at 350 rpm stirring speed and constant temperature at 37\u00b0C. Heats of dilution were determined by injecting peptide into buffer. Corrected data were fitted to independent binding model using NanoAnalize Software (TA Instruments,\u00a0New Castle, DE).\n\n### Liposome preparation\n\nLiposomes were prepared by mixing 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) with indicated amount (wt/wt) of either 1,2-dipalmitoyl-sn-glycero-3-phosphate (phosphatidic acid) or (wt/wt) 1,2-dipalmitoyl-sn-glycero-3-phosphoinositol-4-phosphate (PI4P) in a 1.5 ml reaction tube (Eppendorf). Lipid mixtures were dried under a nitrogen stream and kept for 1 hr under vacuum. Liposomes were rehydrated in 1 ml filtered reconstitution buffer (25 mM HEPES KOH pH 7.5, 50 mM NaCl) to a concentration of 10 mM lipids. Liposomes were reconstituted by shaking at 2000 rpm for 1 hr at 50\u00b0C, followed by sonication for 1 hr at 50\u00b0C in a water bath. The liposome suspension was subjected to five freeze-thaw cycles in liquid nitrogen to promote unilamellar vesicle formation, aliquoted in 200 \u00b5l and pulse-sonicated for 8 s at 45% output with MS72 sonotrode (Bandelin) to create a population of homogenously sized liposomes as determined using NanoSight (Malvern Instruments). Sonicated liposomes were pooled, aliquoted again, snap-frozen and stored at \u221280\u00b0C.\n\n### Liposome floatation assay\n\n1 mM liposomes and 0.5 \u00b5M CHIP were incubated in 150 \u00b5l reconstitution buffer for 30 min at 37\u00b0C. The suspension was adjusted to 30% sucrose by adding 100 \u00b5l of a 75% (w/v) sucrose solution in reconstitution buffer. The resulting high-sucrose solution was transferred to a 500 \u00b5l ultracentrifugation tube and overlaid with 200 \u00b5l of a 25% (w/v) sucrose solution and 50 \u00b5l reconstitution buffer. The sample was centrifuged at 240,000 g in a TLA120.1 fixed angle rotor for 1 hr at 25\u00b0C. The bottom (250 \u00b5l), middle (150 \u00b5l) and top (50 \u00b5l) fractions were collected from bottom to top using a 100 \u00b5l Hamilton syringe. Resulting fractions were analyzed by SDS-PAGE and western blotting after loading dilution-corrected amount of respective fractions.\n\n### Liposome pelleting assay\n\n2 mM liposomes were mixed with 2 \u00b5M recombinant protein in 50 \u00b5l reconstitution buffer. The suspension was incubated shaking at 450 rpm for 30 min at 37\u00b0C. Liposomes with bound protein were sedimented by ultracentrifugation at 100,000 g for 30 min at 25\u00b0C. Liposome pellet was washed with 50 \u00b5l of reconstitution buffer and sedimented again at 100,000 g for 30 min at 25\u00b0C. The pellet was resuspended in 10 \u00b5l reconstitution buffer, resolved by SDS-PAGE and analyzed by CBB staining. Images were acquired with ChemiDoc MP imaging system and quantified using Image Lab 5.0 software (both from Bio-Rad Laboratories). For competition assays, indicated amounts of C-terminal HSP70 were preincubated with 2 \u00b5M CHIP for 20 min at 37\u00b0C prior to co-sedimentation.\n\n### Lipid-binding assay\n\nMembrane-immobilized lipids (Membrane lipid strips P-6002 and PIP strips P-6001) were purchased from Echelon Research Laboratories. The strips were incubated with blocking buffer (3% fatty acid free BSA, 0.1% (v/v) Tween-20 in PBS pH 7.5) for 1 hr at RT. 0.5 \u00b5g/ml of purified wild-type or mutant CHIP was added in blocking buffer and incubated for 1 hr at RT. Strips were washed and bound proteins were detected using anti-C-CHIP antibody. For competition experiments, ten times molar excess of C-terminal HSP70 was added to CHIP in blocking buffer.\n\n### Chemical crosslinking in vitro\n\n5 \u00b5M of recombinant CHIP were crosslinked with 0.025% glutaraldehyde for 10 min at 30\u00b0C unless indicated otherwise. Crosslinking reaction was quenched with 100 mM Tris HCl pH 7.5 for 10\u201315 min at RT. Where indicated, HSP70 peptide at 800 \u03bcM was pre-incubated at 30\u00b0C for 20 min before adding glutaraldehyde. Crosslinking on 20% PA-containing liposomes was performed after centrifugation on the resuspended pellet. For CHIP monomerization, fresh 10% sodium deoxycholate stock solution was used. Crosslinks were analyzed with SDS-PAGE and CBB staining.\n\n### CD spectroscopy\n\nFar-UV CD spectra of 10 \u00b5M CHIP in solution or bound to 20% PA-containing liposomes were recorded on a Jasco J-810 spectropolarimeter at 37\u00b0C in 10 mM KH2PO4 pH 7.5. Prior to measurement, samples were pre-incubated for 30 min at 37\u00b0C. Control samples without liposomes were supplemented with an equivalent amount of reconstitution buffer. Three repeat scans were obtained for each sample and subtracted from buffer alone baseline. Data were collected in 1 mm path cell (Helma Analytics) from 250 nm to 200 nm in 1 nm steps at 50 nm/min.\n\n### Protease sensitivity assay\n\nCHIP pelleted with 20% PA-containing liposomes was subjected to 0.5 ng/\u00b5l trypsin treatment at 37\u00b0C. Hydrolysis was stopped by adding hot reducing SDS sample buffer and boiling for 5 min. Samples were analyzed by SDS-PAGE and CBB staining. For controls without liposomes, protein was used at concentration assuming 30% binding to liposomes. Images were acquired with ChemiDoc MP imaging system and quantified using Image Lab 5.0 software (both from Bio-Rad Laboratories).\n\n### In vitro ubiqitylation\n\nIn vitro ubiquitylation was performed in 50 mM Tris HCl pH 7.5, 50 mM NaCl, 10 mM MgCl2, 2 mM DTT and 2 mM ATP. Reactions contained 100 nM UBE1 (Boston Biochem,\u00a0Cambridge, MA), 2 \u00b5M either UbcH5a or Uev1A/Ubc13, 5 \u00b5M CHIP and 100 mM ubiquitin from bovine erythrocytes (Sigma-Aldrich). 2.5 \u00b5M NQO1 P187S mutant was added as substrate where indicated. Reactions proceeded at 37\u00b0C for 1 hr and then were stopped by adding reducing SDS sample buffer and boiling samples at 95\u00b0C for 5 min. Protein modification was analyzed by SDS-PAGE and immunoblotting using antibodies against NQO1, CHIP and ubiquitin. Where indicated, CHIP pelleted with 20% PA-containing liposomes was used instead of soluble protein.\n\n### Isolation of nuclei\n\nTo analyze the translocation of HSF1 into nucleus, the lysis gradient protocol (Schatzlmaier et al., 2015) with small modifications was used. Cells were seeded on two 10 mm plates at 5 \u00d7 106 cells/plate per condition and medium exchanged 6 hr later. Next day, lysis gradient containing 0.5% NP-40 and 0.5% n-dodecyl-\u03b2-d-maltoside (DDM) was prepared freshly before heat shock. Cells were heat shocked at 43\u00b0C for 60 min, washed with cold PBS and scraped into 700 \u03bcl cold 10% DMEM. Cell suspension (7.5 \u00d7 106) was loaded onto lysis gradient in a 14 ml tube and centrifuged at 1000 g for 10 min at 4\u00b0C. Isolated nuclei from the lower interface were washed with 600 \u03bcl of nuclei isolation buffer (0.25 M sucrose, 10 mM Tris HCl pH 7.4, 25 mM KCl, 5 mM MgCl2) at 1000 g for 10 min at 4\u00b0C twice. Washed nuclei were resuspended in 100 \u03bcl CHIP lysis buffer, incubated on ice for 15 min and then sonicate for 10 s at 52% output with MS72 sonotrode (Bandelin,\u00a0Germany). Samples were normalized and the amount of HSF1 in nuclei was analyzed by western blotting.\n\n### Mass spectrometry\n\n#### Sample preparation\n\n##### Pulldowns\n\nCells were lysed in 300 \u00b5l lysis buffer (10 mM Tris HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 10 mM Na2MoO4, 0.5% NP-40) and DNA was sheared by sonication for 3 s. The lysate was cleared by centrifugation at 12,000 g for 15 min and protein amount was normalized to 1.25 \u00b5g/\u00b5l using dilution buffer (10 mM Tris HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 10 mM Na2MO4). The lysate was incubated with 20 \u03bcl of GFP-Trap-M magnetic beads (ChromoTek,\u00a0Germany) for 90 min at 4\u00b0C. Beads were washed thrice with dilution buffer and twice with MS wash buffer (20 mM Tris HCl pH 7.5, 150 mM NaCl) and then snap-frozen in liquid nitrogen and stored at \u221280\u00b0C until further processing. Beads were re-suspended in 50 \u03bcl 8 M urea, 50 mM Tris HCl pH 8.5, reduced with 10 mM DTT for 30 min and alkylated with 40 mM chloroacetamide for 20 min at 22\u00b0C. Urea was diluted to a final concentration of 2 M with 25 mM Tris HCl pH 8.5, 10% acetonitrile and proteins were digested with trypsin/lysC mix (mass spec grade, Promega,\u00a0Madison,\u00a0WI) overnight at 24\u00b0C. Acidified peptides (0.1% trifluoroacetic acid final concentration) were desalted and fractionated on combined C18/strong cation exchange StageTips. Peptides were dried and resolved in 1% acetonitrile, 0.1% formic acid.\n\n##### Proteomes\n\nCells were lysed in 150 \u00b5l lysis buffer (10% SDS, 150 mM NaCl, 100 mM Hepes NaOH pH 7.6) and DNA was sheared by sonication for 5 s. Cell lysates were cleared by centrifugation at 16,000 g for 3 min. 20 \u00b5g of total protein were diluted in 4% (w/v) SDS, 100 mM HEPES/NaOH pH 7.6, 150 mM NaCl, 0.1 M DTT and heated at 95\u00b0C for 5 min. The lysates were then mixed with 200 \u00b5l 8 M urea, 50 mM Tris/HCl, pH 8.5 and loaded onto spin filters with 30 kDa cut-off (Microcon,\u00a0Merck,\u00a0Germany). The filter-aided sample preparation protocol (FASP) was essentially followed (Wi\u015bniewski et al., 2009). Proteins were digested overnight with trypsin (sequencing grade, Promega). According to Kulak et al. (2014), acidified peptides (0.1% trifluoroacetic acid final concentration) were desalted with C18 StageTips and fractionated with strong cation exchange (SCX) StageTips. The C18 trans-elution fraction was combined with the first of 6 SCX fractions. Peptides were dried and resolved in 1% acetonitrile, 0.1% formic acid.\n\n##### LC-MS/MS\n\nLC-MS/MS was performed on a Q Exactive Plus equipped with an ultra-high pressure liquid chromatography unit Easy-nLC1000 and a Nanospray Flex Ion-Source (all three from Thermo Fisher Scientific,\u00a0Waltham,\u00a0MA). Peptides were separated on an in-house packed column (100 \u00b5m inner diameter, 30 cm length, 2.4 \u00b5m Reprosil-Pur C18 resin [Dr. Maisch GmbH,\u00a0Germany]) using a gradient from mobile phase A (4% acetonitrile, 0.1% formic acid) to 30% mobile phase B (80% acetonitrile, 0.1% formic acid) for 60 min followed by a second step to 60% B for 30 min, with a flow rate of 250 nl/min. MS data were recorded in data-dependent mode selecting the 10 most abundant precursor ions for HCD fragmentation. The full MS scan range was set from 200 to 2000 m/z with a resolution of 70,000. Ions with a charge\u00a0\u22652 were selected for MS/MS scan with a resolution of 17,500 and an isolation window of 2 m/z. Dynamic exclusion of selected ions was set to 30 s. Data were acquired using the Xcalibur software (Thermo Fisher Scientific).\n\n#### Data analysis\n\nMS raw files were analyzed with Max Quant (version 1.5.3.30) (Cox and Mann, 2008). The spectra were searched against the UniProtKB mouse FASTA database (downloaded in January 2016) for protein identification with a false discovery rate of 1%. Unidentified features were matched between runs in a time window of 2 min. Hits in three categories (false positives, only identified by site, and known contaminants) were excluded from further analysis. For label-free quantification (LFQ), the minimum ratio count was set to 1. Bioinformatic data analysis was performed using Perseus (version 1.5.2.6) (Tyanova et al., 2016). Statistical analysis between different conditions was performed on logarithmized LFQ intensities for those proteins that were found to be quantified in at least four out of five biological replicates (for pulldowns) or in at least three out of four biological replicates (for proteomes). Three\u00a0significantly changed proteins showing high fluctuation (standard deviation higher than the respective average value) were excluded from in proteome analysis.\n\n### Structure analysis\n\nCHIP sequences from different organisms were compared using the multiple alignment tool T-coffee (Notredame et al., 2000) and the alignment was visualized with ESPript 3 (Robert and Gouet, 2014). UCSF Chimera (Pettersen et al., 2004) was used to analyze the predicted lipid-binding sites on CHIP (PDB 2c2l).\n\n### Statistical analysis\n\nAll repetitions in this study were independent biological repetitions performed at least three times if not specified differently. To identify significantly changed proteins, a two-sample t-test analysis of grouped biological replicates was performed using a p-value cutoff of 0.05. Categorical annotation was added in Perseus and a Fisher exact test with a p-value threshold of 0.05 was run for GOslim term enrichment analysis. Statistical significance for categoric readouts in microscopy (membrane versus cytosol localization and Golgi apparatus fragmentation) were analyzed by chi-square analysis. Means and standard deviations were calculated from at least three independent experiments.\n",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "8f0dc312-7786-415b-80dc-d2c6aed82965",
+      "submission_id": "929962e5-d533-447f-9cfd-c7823ac51cc8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Davis Ng, Temasek Life Sciences Laboratory National University of Singapore Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29388.017](https://doi.org/10.7554/eLife.29388.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"CHIP as a membrane-shuttling proteostasis sensor\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Davis Ng is a member of our Board of Reviewing Editors and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Vytas A Bankaitis (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors propose the intriguing hypothesis that the Hsp70 associated E3 enzyme CHIP associates with specific membrane lipids to act as a \"proteostasis sensor\". The data supporting this role consist of intracellular localization of CHIP-EGFP under varying conditions, cell fractionation experiments, filter binding assays of CHIP to specific lipids, liposome binding experiments, and CHIP pull-down experiments coupled with MS. In general, the data are convincing that Hsp70 unassociated CHIP can associate with lipids and this association is related to membrane fragmentation caused by stress. The reviewers are in agreement that the study is interesting, breaks new ground, and appropriate for publication in eLife. However, the reviewers also agree that substantial gaps remain that can be ameliorated with some additional experimentation. Of particular concern is the functional relationship between CHIP relocalization and Golgi fragmentation. The reviewers also suggest another round of text editing (perhaps with assistance of colleague not directly involved in the work) to improve the readability and clarity of the manuscript.\n\nEssential revisions:\n\n1) It would be useful to quantify plasma membrane association for images other than the heat shock. For example, quantification of plasma membrane association of CHIP for images as shown in Figure 1D and Figure 1\u2014figure supplement 1C. Considering the subtlety of some of this phenotype (only ~20% of cells for the quantified heat shock), this is important to demonstrate the indicated effects.\n\n2) It would be interesting to see how universal this response is to other types of cytosolic stress. For example, As(III) induces protein misfolding in the cytosol and activation of the HSR. It would be interesting to see if As(III) induces a similar response.\n\n3) It's unclear how the CHIP membrane association phenotype integrates with other aspects of stress signaling. Does this membrane association integrate with HSF1 signaling, and if so, does CHIP membrane association require HSF1?\n\n4) Additional experiments to follow up on proteomic results are required. Are the membrane proteins identified as CHIP interactors ubiquitinated by this E3 ligase or does CHIP influence their activity through other mechanisms. There is no need to follow-up on all of the 'hits' but some follow-up on at least one hit seems appropriate.\n\n5) All of the membrane-association images presented show few cells and are of rather poor resolution. These need to be improved. To what membranes does CHIP relocalize to? Are these Golgi membranes as the proteomics data would suggest? Double-label imaging experiments should be done to address this point.\n\n6) As follow-up to comment 5, the authors should present statistics that indicate how many cells were imaged and how many showed the phenotypes they claim as 'representative'. This is the standard way to describe data of this sort.\n\n7) From this reviewer's perspective, a better case can be made that it is PI4P that is the key sensing ligand for CHIP relocalization to membranes. The crude fat-blot experiments of Figure 2E and Figure 3B at least do not make a compelling case that PA is a regulatory lipid as excess chaperone does not strongly affect the binding. Yet the follow-up experiments focus on PLD. Perhaps PA strongly potentiates CHIP-binding to PI4P \u2013 that is, low PA enhances CHIP-binding affinity for PI4P. That possibility is consistent with all of the data and it can be tested in an appropriately-designed liposome flotation assay. Also, does knockdown/inhibition of \u03c0 4-OH kinase prohibit CHIP relocalization to intracellular membranes?\n\n8) As follow-up to comment 7, PLD1 and PLD2 single and double knockout mice are viable and, curiously, these seem better protected against prion disease. This is not the expected outcome if one embraces the conclusion of this study. While this reviewer is not asking the authors to solve everything, the point is that maybe PA itself is a secondary factor with PI4P being the main player. If the data still point to PA, then the authors should at least comment on the mouse data in the context of their findings.\n\n9) What happens to Golgi fragmentation is the CHIP-less MEFs are reconstituted with the m1 and m2 deletion forms of CHIP?\n",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "16caab5f-b9bd-4560-b296-059ae9544742",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C1",
+      "claim": "EGFP-CHIP-transfected murine embryonic fibroblasts exposed to 43\u00b0C show cells with membranous CHIP localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly upon exposing EGFP-CHIP-transfected murine embryonic fibroblasts to 43\u00b0C, cells with membranous CHIP localization could be identified (Figure 1a, Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 1a and Figure 1\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a914f3aa-516f-4bbe-8a08-1dd70fd700b7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C2",
+      "claim": "CHIP association with membranes is lost if samples are fixed with paraformaldehyde before microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP association with membranes was lost if the samples had been fixed with paraformaldehyde before microscopy indicating a dynamic nature of the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation indicating dynamic nature of interaction",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9df30e8e-e032-46bb-8c3a-3da1cd973044",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C3",
+      "claim": "EGFP localization does not change during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP localization did not change during heat shock (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 1\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "d04e16bf-a590-4e6a-b3bd-f82f71aba760",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C4",
+      "claim": "Acute inhibition of HSP70 and HSP90 at 37\u00b0C leads to appearance of EGFP-CHIP at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "At 37\u00b0C, acute inhibition of HSP70 and HSP90 with VER-155008 and 17-AAG, respectively, leads to the appearance of EGFP-CHIP, but not of EGFP, at the plasma membrane (Figure 1\u2014figure supplement 1c) - similar to that taking place during heat shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 1\u2014figure supplement 1c using specific inhibitors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "81b88b10-087c-45fe-9c0b-d68d77f851b7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C5",
+      "claim": "CHIP relocalization to membranes is not induced by arsenite treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP relocalization to membranes showed some specificity and was not induced by arsenite treatment (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 1\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "3a497028-8a4c-4bac-b622-2db92fd263c8",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C6",
+      "claim": "CHIP loses its association with HSC70 during acute heat shock at 43\u00b0C for 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transiently transfected CHIP partially lost its association with HSC70 during acute heat shock as determined by immunoprecipitation (Figure 1b, Figure 1\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "cfb8cfc7-dd54-4f0f-9ad2-b58e817cc875",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C7",
+      "claim": "A fraction of endogenous CHIP in membranes exists in chaperone-free dimeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of a crosslinked dimer, even in the absence of the chaperone-competing peptide, in the membrane fraction (Figure 1c, lane 10) indicated that endogenous membrane-associated CHIP was at least partially chaperone-free.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by subcellular fractionation and chemical crosslinking data in Figure 1c",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "ab404bbd-5a79-4ddb-a941-6c09ffd24394",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C8",
+      "claim": "K30A mutant CHIP shows increased membrane localization compared to wild-type CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, a membranous localization of EGFP-CHIP-K30A was observed when compared to its wild-type version (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "0440e992-138e-4fe9-8d61-add0382ef93a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C9",
+      "claim": "Chaperone-free CHIP and K30A variant show similar binding patterns to phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Chaperone-free CHIP and the K30A variant showed a similar binding pattern thus excluding accidental formation of a novel determinant of membrane association by the mutation. (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lipid array data in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "8085e7ac-6776-4262-a0b6-8cbb52ba7286",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C10",
+      "claim": "CHIP shows specificity mainly to phosphatidic acid (PA) and phosphatidylinositol monophosphates (PIP), especially PI4P.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, analysis of a broad spectrum of cellular phospholipids revealed CHIP specificity mainly to phosphatidic acid (PA) and phosphatidylinositol monophosphates (PIP), especially PI4P (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lipid-binding assay data in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "31b332da-c33e-4bbd-b57b-77cad8b38986",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C11",
+      "claim": "CHIP binding to phosphatidylinositol-bisphosphates is reduced compared to monophosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding to phosphatidylinositol-bisphosphates was reduced and there was no binding to phosphatidylinositol-3,4,5-trisphosphate detected, arguing against a trivial electrostatic interaction but pointing instead to high stereospecificity (Sudhahar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with citation to support stereospecificity interpretation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "884c5f29-cb65-4a2d-ac9c-ac080655e37c",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C12",
+      "claim": "CHIP does not bind to phosphatidylinositol-3,4,5-trisphosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding to phosphatidylinositol-bisphosphates was reduced and there was no binding to phosphatidylinositol-3,4,5-trisphosphate detected, arguing against a trivial electrostatic interaction but pointing instead to high stereospecificity (Sudhahar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with citation to support stereospecificity interpretation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "f4e4f15f-1ddc-4e67-960b-01b14d834eaa",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C13",
+      "claim": "20% PA enhances CHIP cofloatation with DOPC liposomes in floatation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "A liposome floatation assay revealed cofloatation of CHIP which was strongly enhanced when liposomes were supplemented with 20% PA (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by liposome floatation assay data in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9054bb62-2ea9-486e-a6c3-8d72a4de886b",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C14",
+      "claim": "PA and PI4P enhance CHIP association with liposomes in pelleting assays.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP also interacted with liposomes in a liposome pelleting assay, in which pelleting was increased in the presence of PA and also by 1% PI4P, but to a lesser extent (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by liposome pelleting assay data in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "cbba6ae1-0ac8-4ba2-a172-3140888c242a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C15",
+      "claim": "5% PI4P strongly enhances association of liposomes with CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of PI4P to 5% strongly enhanced association of liposomes with CHIP (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pelleting assay data in Figure 2\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "61b542be-be53-4854-afc0-2155732cd898",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C16",
+      "claim": "5% PA is insufficient to strengthen binding of CHIP onto liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, 5% PA was insufficient to strengthen binding of CHIP onto liposomes (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pelleting assay data in Figure 2\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "77ba58d3-237e-4b06-99c3-3c6114184b9f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C17",
+      "claim": "CHIP associates with 20% PA- or 5% PI4P-containing liposomes very efficiently, reaching up to 50\u201360% of input values.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CHIP associated with 20% PA- or 5% PI4P-containing liposomes very efficiently, reaching up to 50\u201360% of input values, which allowed us to use Coomassie Blue-stained SDS-PAGE gels as readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from pelleting assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a085d8c3-04dc-40e5-b97b-2551c35eae40",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C18",
+      "claim": "The TPR domain mediates binding of CHIP to liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The liposome cosedimentation analyses confirmed that the TPR domain is required for the interaction with membranes containing either PA or PI4P (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pelleting assay data with truncated proteins in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "1467a911-0208-4367-b48e-f88cb253bdec",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C19",
+      "claim": "The isolated TPR domain binds to PA-containing liposomes more strongly than the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the isolated TPR domain bound to the PA-containing liposomes more strongly than the parental full-length protein reaching ca. 160% efficiency of the full-length protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison from pelleting assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "85c3f3c4-8c95-44fd-9193-98a989103735",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C20",
+      "claim": "Substoichiometric amounts (1 \u03bcM) of HSP70-C efficiently prevent CHIP from interacting with liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, even the substoichiometric amount of 1 \u03bcM HSP70-C efficiently prevented CHIP from interacting with liposomes (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "c9c6889d-0b99-47ea-aa76-485c866a08af",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C21",
+      "claim": "Preincubation of CHIP with equimolar amount of HSP70-C blocks association of CHIP with liposomes to ca. 30% of control.",
+      "claim_type": "EXPLICIT",
+      "source": "Preincubation of CHIP with an equimolar amount of HSP70-C blocked the association of CHIP with liposomes to ca. 30% of the control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from competition assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b7d657a8-7c41-4591-88d2-a1fe16b7d492",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C22",
+      "claim": "Ten-fold molar excess of HSP70-C results in complete loss of CHIP binding to phosphatidylinositol monophosphates and only residual interaction with phosphatidic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, incubation of CHIP with lipid arrays in the presence of HSP70-C resulted in complete loss of binding to phosphatidylinositol monophosphates and only residual interaction with phosphatidic acid (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lipid-binding assay data in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "5e315937-4876-45f4-af75-4b73c8b55d94",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C23",
+      "claim": "TPR domain-less CHIP shows residual binding to phosphatidic acid-containing liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TPR domain-less CHIP still showed residual binding to phosphatidic acid-containing liposomes, we assumed additional lipid-interacting determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation leading to hypothesis of additional binding determinants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "eac935df-ad8b-4c6b-b3c7-1ba4f8340984",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C24",
+      "claim": "CHIP contains two patches of positively charged amino acids: m1 (143\u2013146 aa: KKKR) and m2 (221\u2013225 aa: KRKKR).",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the CHIP sequence revealed two patches of positively charged amino acids which we named m1 (143\u2013146 aa: KKKR) and m2 (221\u2013225 aa: KRKKR) (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sequence analysis shown in Figure 3\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7676d542-1421-439e-890b-7d68c1b1819b",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C25",
+      "claim": "Both m1 and m2 motifs are outside of the TPR domain and are evolutionary conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Both motifs are outside of the TPR domain and are evolutionary conserved (Figure 3a, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment and structural analysis in Figure 3a and Figure 3\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "f18ffbe1-b342-4241-8983-32f9b9bc27d1",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C26",
+      "claim": "m1 mutation to alanines does not affect specificity of lipid binding or association with cellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "When m1 was mutated to alanines, the specificity of lipid binding and association with cellular membranes was not affected (Figure 3b,c, Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lipid-binding assay and microscopy data in Figure 3b,c and Figure 3\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "86b02292-fa81-4719-9bb0-44105a05de13",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C27",
+      "claim": "Partial exchange of m2 with alanines impairs CHIP-lipid interaction in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, partial exchange of m2 with alanines impaired CHIP-lipid interaction in vitro (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lipid-binding assay data in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "5f6afc77-d81b-4b32-8433-72d8abd5ecc5",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C28",
+      "claim": "m2 mutation efficiently releases chaperone-free EGFP-CHIP-K30A from membranes in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, partial exchange of m2 with alanines impaired CHIP-lipid interaction in vitro (Figure 3b) and efficiently released chaperone-free EGFP-CHIP-K30A from membranes in living cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6b3dd60b-d548-4077-8b14-c0014bf3c857",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C29",
+      "claim": "m2 mutant CHIP is present in both cytosol and nucleus, unlike wild-type CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to wild-type CHIP, m2 mutant was strongly present not only in the cytosol, but in the nucleus as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from microscopy experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "16266967-3f0a-4fbe-984e-0f92d3beb6b6",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C30",
+      "claim": "CHIP remains dimeric on liposomes and is capable of oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "First, CHIP remained dimeric and was still capable of oligomerization (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chemical crosslinking data in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7f806ce7-8f56-4f99-964f-61150d67250d",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C31",
+      "claim": "Monomerization of CHIP by deoxycholate reversibly inactivates its ubiquitin ligase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an important finding since monomerization of CHIP by the steroid detergent deoxycholate (Figure 4\u2014figure supplement 1a) was shown to reversibly inactivate its ubiquitin ligase activity (Nikolay et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crosslinking data in Figure 4\u2014figure supplement 1a and citation to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9f92d9a6-37ba-40c2-987f-4513eb659ef8",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C32",
+      "claim": "The amount of secondary structure elements in CHIP does not change upon binding to liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of secondary structure elements did not change upon binding to liposomes (Figure 4b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "41c9b19a-719b-4bfd-8c96-4f23b35bd48f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C33",
+      "claim": "The susceptibility of CHIP to protease hydrolysis on liposomes does not change.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the susceptibility to protease hydrolysis on liposomes did not change (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by protease sensitivity assay data in Figure 4\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9d82c9bf-0348-4fd7-88dd-8e24b7901382",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C34",
+      "claim": "CHIP on liposomes can ubiquitylate substrate protein NQO1.",
+      "claim_type": "EXPLICIT",
+      "source": "While attached to liposomes, CHIP remains capable to ubiquitylate the substrate protein NQO1 and form unattached K63-conjugated chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro ubiquitylation assay data in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "629ded70-ae93-4b18-9405-178ae6e3ac09",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C35",
+      "claim": "CHIP on liposomes can form unattached K63-conjugated ubiquitin chains.",
+      "claim_type": "EXPLICIT",
+      "source": "While attached to liposomes, CHIP remains capable to ubiquitylate the substrate protein NQO1 and form unattached K63-conjugated chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro ubiquitylation assay data in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "0049453a-fed4-4f64-9039-349f2df1f727",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C36",
+      "claim": "Auto-ubiquitylation of CHIP proceeds somewhat stronger on liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Auto-ubiquitylation of CHIP is supported by UbcH5a as well (Zhang et al., 2005) and seemed to proceed somewhat stronger on liposomes (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro ubiquitylation assay data in Figure 4c and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a9d90dd3-b903-4bdb-9667-d36f265e0aa6",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C37",
+      "claim": "K63-based ubiquitin polymerization by CHIP is slightly weaker on liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "K63-based ubiquitin polymerization by CHIP does not require a substrate protein (Zhang et al., 2005) and, contrary to auto-ubiquitylation, was slightly weaker on liposomes (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro ubiquitylation assay data in Figure 4c and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "bafc2521-6647-473c-963a-f6e822515a70",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C38",
+      "claim": "Ubiquitin K63-linking activity regulates membrane-related processes such as receptor internalization, multivesicular body formation and autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin K63-linking activity is especially interesting because it is known to regulate a number of membrane-related processes, such as receptor internalization, multivesicular body formation and autophagy (Erpapazoglou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "157035cd-8c04-4669-a33f-1c964739fcb4",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C39",
+      "claim": "Early translocation of HSF1 into nucleus during heat shock is not affected by the absence of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP was implicated in HSF1 activation during stress response (Dai et al., 2003). However, early translocation of HSF1 into nucleus during heat shock was not affected by the absence of CHIP (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nuclei isolation data in Figure 5\u2014figure supplement 1b and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7395d69d-e6aa-427c-9fc0-7e8c43441a8e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C40",
+      "claim": "PLD isoform-unspecific inhibitor FIPI and PLD1 inhibitor VU0155069 efficiently release chaperone-free CHIP into the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLD isoform-unspecific inhibitor FIPI and the inhibitor of PLD1 (VU0155069), but not that of PLD2 (CAY10594), efficiently released chaperone-free CHIP into the cytosol (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a706b89f-1395-42f6-8d1a-7e20fda6c69e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C41",
+      "claim": "PLD2 inhibitor CAY10594 does not release chaperone-free CHIP into the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLD isoform-unspecific inhibitor FIPI and the inhibitor of PLD1 (VU0155069), but not that of PLD2 (CAY10594), efficiently released chaperone-free CHIP into the cytosol (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "79758372-4e67-42bf-a9a2-7a3080be5d68",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C42",
+      "claim": "PLD inhibitors do not change the abundance of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not due to changes in the abundance of CHIP (Figure 5\u2014figure supplement 1c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data in Figure 5\u2014figure supplement 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7e58ca74-3e0f-482f-82df-a445f3b45034",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C43",
+      "claim": "PLD inhibitors do not cause general disturbance of membrane structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not due to changes in the abundance of CHIP (Figure 5\u2014figure supplement 1c) or general disturbance of membrane structure as controlled by the correct localization of farnesylated EGFP (Figure 5\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data of farnesylated EGFP in Figure 5\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6819c56f-99e6-48cb-b3f6-fadfb5be5454",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C44",
+      "claim": "Inhibitors of PI4P-generating type III phosphoinositol-4 kinases (PI4KIII) release chaperone-free CHIP from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "From the other side, it was also possible to release chaperone-free CHIP from the plasma membrane using inhibitors of PI4P-generating type III phosphoinositol-4 kinases (PI4KIII) (Figure 5\u2014figure supplement 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5\u2014figure supplement 1e,f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "1af7e7d1-6a90-4c45-a9a6-77019c8cc5ba",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C45",
+      "claim": "Wortmannin inhibits PI4KIII at higher concentrations despite being a specific inhibitor of PI3K.",
+      "claim_type": "EXPLICIT",
+      "source": "Wortmannin is a specific inhibitor of PI3K, however, it inhibits PI4KIII if used at higher concentrations (Nakanishi et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "ad2a6f3d-cf98-4f58-ac72-8a1ac28fe0c6",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C46",
+      "claim": "More proteins interact with chaperone-free CHIP when it is released into the cytosol compared to membrane-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, more proteins interacted with chaperone-free CHIP when it was released into the cytosol (Figure 5b) suggesting pronounced 'stickiness' of the mislocalized ligase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data in Figure 5b",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b85cf5dc-1782-45d6-9708-ce144c6812fb",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C47",
+      "claim": "The overlap between CHIP substrate sets in control and PLD1 inhibition conditions is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap between substrate sets was minimal (Figure 5c), which can be considered as biochemical verification of altered localization upon PLD1 inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Venn diagram in Figure 5c",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "ad6cd873-540c-44e4-8c66-dcb88cc79492",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C48",
+      "claim": "Most CHIP interactors reside at the plasma membrane or at one of the organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the interactors reside at the plasma membrane or at one of the organelles confirming the broad potential of chaperone-free CHIP to modify cellular architecture (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by subcellular localization analysis in Figure 5d",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "bae913b0-5cc8-4b66-80ca-9845a36b45c7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C49",
+      "claim": "56 proteins show significant abundance changes upon CHIP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation of the measured intensities from four independent experiments revealed robust repeatability resulting in a highly overlapping set of measured proteins (Figure 5\u2014figure supplement 1h) and allowing identification of 56 significant changes (Figure 5e, Figure 5\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data in Figure 5e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7dc33850-7809-4ce0-8c10-612c31d2b110",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C50",
+      "claim": "More proteins show reduced abundance (37) than increased abundance (19) upon CHIP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "There were more proteins with a reduced rather than an increased abundance, 37 versus 19, respectively, which is an expected bias considering the involvement of CHIP in protein degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis from mass spectrometry with interpretation based on CHIP's known function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "d53c9b80-5939-420a-8f1a-378233382cd4",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C51",
+      "claim": "'Golgi organization' GOBPslim term is the second-highest enrichment among significantly changed proteins upon CHIP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of CHIP interactors scored 'Golgi organization' GOBPslim term (biological processes) as the second-highest enrichment among significantly changed proteins (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO enrichment analysis in Figure 5f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "e219e83e-0bae-41d6-b569-0f850cbbb22c",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C52",
+      "claim": "The Golgi apparatus fragments under heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially interesting because the Golgi apparatus is known to fragment under heat shock (Petrosyan and Cheng, 2014; Welch and Suhan, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "cff6eb6c-a949-4c1a-8341-a8ead21e3d93",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C53",
+      "claim": "CHIP overexpression causes fragmentation of the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of the \u03b2\u22121,4-galactosyltransferase1-EGFP marker (Cole et al., 1996) verified fragmentation of the Golgi apparatus following CHIP overexpression (Figure 5g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5g and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "f6e1f23d-7e05-438e-90c3-c42620ca57b0",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C54",
+      "claim": "CHIP-deficient fibroblasts fail to increase fragmentation of the Golgi apparatus during heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "In a complementary setup, CHIP-deficient fibroblasts failed to increase fragmentation of the Golgi apparatus during heat shock (Figure 5h) further supporting the involvement of CHIP in the reorganization of membrane-bound organelles during proteostasis stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "cc44c20a-ca02-4dc5-8fd6-18cd958ea242",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C55",
+      "claim": "Overexpression of HSP70 inhibits fragmentation of the Golgi apparatus by CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The central role of chaperone availability in this mechanism is supported by the observation that the overexpression of HSP70 inhibited fragmentation of the Golgi apparatus by CHIP (Figure 5\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data in Figure 5\u2014figure supplement 1j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a3229b72-b92c-4eb9-8fde-96778a388a5a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C56",
+      "claim": "Golgi integral membrane protein 4 (Golim4) is reduced to 62% of normal levels upon CHIP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Some proteins showed lower abundance, for example, Golgi integral membrane protein 4 (Golim4) was reduced to 62% of its normal levels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "61221c10-37bb-4197-ad76-ce7e407c1f29",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C57",
+      "claim": "The amount of Rab GDP dissociation inhibitor Gdi2 doubles upon CHIP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "others were upregulated, for example, the amount of Rab GDP dissociation inhibitor Gdi2 doubled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from mass spectrometry",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "07349ee6-062a-4c66-afd8-9a1c79f0fd02",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C58",
+      "claim": "CHIP was initially identified as a cytosolic cochaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially identified as a cytosolic cochaperone (Ballinger et al., 1999), CHIP was shortly afterwards discovered to be a U-box E3 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "2da4276b-cf24-44ec-afcd-63ad5575ec3f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C59",
+      "claim": "CHIP is a U-box E3 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially identified as a cytosolic cochaperone (Ballinger et al., 1999), CHIP was shortly afterwards discovered to be a U-box E3 ubiquitin ligase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b0cf8211-75e3-4e0e-8d53-70eeb207fd6a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C60",
+      "claim": "CHIP engages with HSP70 and HSP90 molecular chaperones which act as adaptors to detect substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found to engage with HSP70 and HSP90 molecular chaperones which act as adaptors to detect substrate proteins (Jiang et al., 2001; Murata et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "bbce128f-01fa-4cb6-a7b7-1ff34a78d86d",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C61",
+      "claim": "CHIP interacts with chaperones through the N-terminal tetratricopeptide repeat (TPR) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP interacts with the chaperones through the N-terminal tetratricopeptide repeat (TPR) domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about CHIP structure-function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "20445c69-6635-49a9-bea8-a50d5a49d41b",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C62",
+      "claim": "The C-terminal tails of chaperones determine the specificity and affinity of association with CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal tails of chaperones determines the specificity and affinity of this association, which is rather low (Wang et al., 2011; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "ba30f07b-84bf-49d1-8fdf-d74213a2a0e7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C63",
+      "claim": "The association between CHIP and chaperones is rather low affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal tails of chaperones determines the specificity and affinity of this association, which is rather low (Wang et al., 2011; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "5cb918de-1037-4cc5-b4c2-c623d342032a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C64",
+      "claim": "Weak interaction between CHIP and chaperones implies dynamic and transient collaboration.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak interaction implies dynamic and transient collaboration between CHIP and the chaperones; however, a detailed atomic and kinetic understanding of the collaboration is missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from known weak interaction",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6d2b80c2-40fa-4f2d-9035-9c336a8d7602",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C65",
+      "claim": "Cells accumulate damaged proteins in distinct subcellular structures and inherit them asymmetrically in mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of single cells, an obvious strategy to deal with proteostasis load is to accumulate it in distinct subcellular structures and, in the case of duplication, to inherit it asymmetrically in mother and daughter cells (Escusa-Toret et al., 2013; Kaganovich et al., 2008; Miller et al., 2015; Sontag et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "2031efce-448c-4c78-b873-12155aceb00e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C66",
+      "claim": "Several cellular locations are used to concentrate damaged proteins, such as the perinuclear endoplasmic reticulum or perivacuolar space.",
+      "claim_type": "EXPLICIT",
+      "source": "Several cellular locations are used to concentrate damaged proteins, such as the perinuclear endoplasmic reticulum or perivacuolar space (Kaganovich et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6e65a534-3565-44f3-8b2a-94fc59a0bb6e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C67",
+      "claim": "HSP70, HSP90, HSP40, and HSP110 are involved in sorting misfolded proteins to deposition sites.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of PN components, including molecular chaperones from HSP70 and HSP90 families but also the cochaperones HSP40 and HSP110, were shown to be involved in sorting misfolded proteins to the deposition sites (Sontag et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "031deeb7-ac87-4545-be45-11ea141e443f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C68",
+      "claim": "The \u0394F508 mutant of chloride channel CFTR is a well-known substrate of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-known example among its substrates is the \u0394F508 mutant of chloride channel CFTR (Meacham et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "0b0c015a-87bc-4ee1-ad5c-91b0bd5f32b7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C69",
+      "claim": "CHIP participates in quality control of plasma membrane-resident proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the endoplasmic reticulum-related quality control, CHIP has been shown to participate in the quality control of plasma membrane-resident proteins (Okiyoneda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "ea6383b3-62c8-49a1-ae86-f09bb1d8636c",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C70",
+      "claim": "Quality control of plasma membrane-resident proteins by CHIP entails participation of HSP70 and HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity also entails the participation of HSP70 and HSP90 (Okiyoneda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "c2894afa-dca3-4522-93fb-f39f8c0d1bdc",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C71",
+      "claim": "In plants, PA is involved in response to many diverse stressors including high salt, drought, cold, and aluminium exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in plants PA is known to be involved in response to many diverse stressors, such as high salt, drought, cold, aluminium exposure, to mention a few (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "d935b402-077d-42cd-8281-6d3f859a0938",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C72",
+      "claim": "The constitutive levels of PA in membranes are comparably high but can change to functionally significant extents depending on metabolic or stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the constitutive levels of PA in membranes are comparably high, yet they can change to functionally significant extents depending on metabolic or stress conditions (Fang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "a803d1f8-94cf-4e0a-b165-919f64457229",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C73",
+      "claim": "Phospholipase D family enzymes have been associated with diverse pathologies including Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the involvement of PA-generating enzymes from the phospholipase D family in diverse pathologies has been established, advancing the development of therapeutics and thus creating possibilities to intervene (Frohman, 2015). In this regard, Alzheimer's disease is an interesting example, having been associated with different isoforms of phospholipase D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "d39cae0d-f1d8-435e-91d3-712ad6af735a",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C74",
+      "claim": "PI3P is enriched on early endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PI3P is enriched on early endosomes and PI4P marks the Golgi apparatus and plasma membrane (Hammond and Balla, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "871ec1d1-92c5-438c-9941-640ee293b5eb",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C75",
+      "claim": "PI4P marks the Golgi apparatus and plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PI3P is enriched on early endosomes and PI4P marks the Golgi apparatus and plasma membrane (Hammond and Balla, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "82790bcd-676c-4c99-a067-2f84bf482bca",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C76",
+      "claim": "PI3P and PI5P are less abundant than PI4P (ca. ten and hundred times, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "PI3P and PI5P are less abundant than PI4P (ca. ten and hundred times, respectively) (Hammond and Balla, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6a96d1c5-a162-4434-b5ed-64b7c83b23d9",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C77",
+      "claim": "HSF1-driven activation of stress gene transcription is a transcriptional reaction to cytosolic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediate reorganization and adaptation of organelles is a less understood aspect of cytosolic stress response compared to the transcriptional and post-transcriptional reactions, such as HSF1-driven activation of stress gene transcription (Akerfelt et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "0f4320d5-d1f8-458c-8e47-2030fb1fef86",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C78",
+      "claim": "eIF2\u03b1-mediated attenuation of protein synthesis is a post-transcriptional reaction to cytosolic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediate reorganization and adaptation of organelles is a less understood aspect of cytosolic stress response compared to the transcriptional and post-transcriptional reactions, such as HSF1-driven activation of stress gene transcription (Akerfelt et al., 2010) or eIF2\u03b1-mediated attenuation of protein synthesis (Schneider and Bertolotti, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "fee742d7-2aa9-4467-9af6-2944675fb091",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C79",
+      "claim": "Golgi fragmentation is a marker or cause of cellular toxicity upon different stressors, including protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although reversible under limited heat shock, Golgi fragmentation is a well-known marker or even the cause of cellular toxicity upon different stressors, including protein aggregation (Alvarez-Miranda et al., 2015; Haase and Rabouille, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "7ad8a23c-045a-4584-8b7d-7ef4f1a07356",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C80",
+      "claim": "Dissociation of CHIP from molecular chaperones under conformational stress resembles activation of HSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation of CHIP from molecular chaperones under conformational stress resembles activation of HSF1 when the liberated protein trimerizes and translocates to the site of its transcriptional activity (Morimoto, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known mechanism with citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "39140f4d-ae1f-4408-becf-6c4e6e70912b",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C81",
+      "claim": "Liberated HSF1 trimerizes and translocates to the site of its transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation of CHIP from molecular chaperones under conformational stress resembles activation of HSF1 when the liberated protein trimerizes and translocates to the site of its transcriptional activity (Morimoto, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9500b004-fba6-43d1-b548-b2a6bf1e2208",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C82",
+      "claim": "HOP, DnaJC7, FKBP51, and FKBP52 engage their TPR domains to interact with HSP70 and HSP90.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to CHIP, a number of other members from the PN, such as HOP, DnaJC7, FKBP51, FKBP52 among others, engage their TPR domains to interact with HSP70 and HSP90 (Assimon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "4ba542a8-fc7a-4470-b0bf-b6f660aa10e4",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C83",
+      "claim": "C-terminal phosphorylation of HSP70 and HSP90 critically affects TPR domain-based associations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, C-terminal phosphorylation of HSP70 and HSP90, such as that which takes place during a proliferative boost, was shown to critically affect TPR domain-based associations (Muller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "d8f34242-0407-4636-9071-7d749889f06e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C84",
+      "claim": "The mammalian ubiquitin ligase CHIP can dock on cellular membranes when freed from chaperones during acute stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the mammalian ubiquitin ligase C-terminal Hsp70-interacting protein (CHIP), if freed from chaperones during acute stress, can dock on cellular membranes thus performing a proteostasis sensor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study summarized in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "c51547e8-e29c-45c9-8cc0-15674090d7f6",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C85",
+      "claim": "HSP70 and membranes compete for mutually exclusive binding to the tetratricopeptide repeat domain of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "HSP70 and membranes compete for mutually exclusive binding to the tetratricopeptide repeat domain of CHIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study summarized in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9c469742-b2df-418c-ab69-8c4d56b087a3",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C86",
+      "claim": "CHIP participates in the fragmentation of the Golgi apparatus as an effector function.",
+      "claim_type": "EXPLICIT",
+      "source": "At new cellular locations, access to compartment-specific substrates would enable CHIP to participate in the reorganization of the respective organelles, as exemplified by the fragmentation of the Golgi apparatus (effector function).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study summarized in abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "bcdb1a6f-4ac7-4e5c-a66c-2d0a58544824",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C87",
+      "claim": "The proteostasis network is responsible for protein refolding and degradation in case of unrepairable damage.",
+      "claim_type": "EXPLICIT",
+      "source": "To keep the cellular proteome in structural and functional balance, called proteostasis, a network of specialized proteins has evolved (Balch et al., 2008; Balchin et al., 2016). The proteostasis network (PN) is responsible for protein refolding and, in case of the unrepairable damage, degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9224a322-35fd-4466-b8cb-7e45ab80039f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C88",
+      "claim": "Different classes of molecular chaperones assist during refolding and E3 ubiquitin ligases are involved in degradation function.",
+      "claim_type": "EXPLICIT",
+      "source": "Different classes of molecular chaperones assist during refolding and E3 ubiquitin ligases are involved in degradation function (Amm et al., 2014; Balchin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "0c1ca5a5-ccbd-4385-9362-e70d806b20eb",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C89",
+      "claim": "CHIP is a paradigm example of how protein folding and degradation pathways cooperate during protein quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "C-terminal Hsp70-interacting protein (CHIP) is a paradigm example of how protein folding and degradation pathways cooperate during protein quality control (Arndt et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "483cfe63-d5bd-46d5-9187-6171d9924572",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C90",
+      "claim": "Considerable progress has been achieved in elucidating signaling and metabolic mechanisms associated with proteostasis changes during organism aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Considerable progress has been achieved in elucidating signaling and metabolic mechanisms associated with proteostasis changes during organism aging (Ben-Zvi et al., 2009; Taylor and Dillin, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "14769571-4460-4e26-9ccd-4842f57c3aec",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C91",
+      "claim": "There are differences in PN composition and stress response across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Considerable progress has been achieved in elucidating signaling and metabolic mechanisms associated with proteostasis changes during organism aging (Ben-Zvi et al., 2009; Taylor and Dillin, 2011) and differences of PN composition and stress response across tissues (Guisbert et al., 2013; Tebbenkamp and Borchelt, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "07e2435f-fe31-4e31-8cf6-d9c0e47554ae",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C92",
+      "claim": "Protein phosphatase 5 binds fatty acids through its TPR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is at least one example of a TPR domain-lipid interaction as in the case of protein phosphatase 5 binding fatty acids (Chen and Cohen, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6e69352e-5349-4d6f-970e-613294bdac1d",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C93",
+      "claim": "The N-terminal tail of CHIP is very dynamic extending flexibility over the first two \u03b1-helices in the TPR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "According to deuterium exchange measurements, the N-terminal tail is very dynamic extending this flexibility over the first two \u03b1-helices in the TPR domain (Graf et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "88f38130-0f22-438a-99e3-182460dd66e8",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C94",
+      "claim": "16 C-terminal \u03b1-helical amino acids cap the last tetratricopeptide repeat of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "from the other side, 16 C-terminal \u03b1-helical amino acids seem to cap the last tetratricopeptide repeat (Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "822d19a5-0344-48ea-a3ef-e8ae14b1d9e9",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C95",
+      "claim": "The K30A mutation in CHIP affects binding to HSP70 as measured by isothermal titration calorimetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Isothermal titration calorimetry using octapeptide GPTIEEVD confirmed the weak binding to wild-type CHIP (Kd = 5 \u03bcM when measured at 37\u00b0C) which was further reduced in case of K30A mutant (Figure 1\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ITC data in Figure 1\u2014figure supplement 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "008b7f18-f7c3-4820-bed8-7fbaf4430349",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C96",
+      "claim": "Wild-type CHIP binds to HSP70 octapeptide GPTIEEVD with Kd = 5 \u03bcM at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Isothermal titration calorimetry using octapeptide GPTIEEVD confirmed the weak binding to wild-type CHIP (Kd = 5 \u03bcM when measured at 37\u00b0C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from ITC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b3c9fa80-83ad-4d80-b81f-55b4920398fc",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C97",
+      "claim": "CHIP naturally exists as a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In preliminary experiments with recombinant protein, the conditions to capture CHIP in its naturally dimeric state (Nikolay et al., 2004) were established",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "f98d01c8-9a17-4f64-9d40-e31d40eb8365",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C98",
+      "claim": "Basic amino acid motifs in polypeptides often play an important role in recognition of negatively charged phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic amino acid motifs in polypeptides often play an important role in recognition of negatively charged phospholipids (Stahelin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "edfeb246-c637-4469-b25a-db448fa0e0c1",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C99",
+      "claim": "CHIP can collaborate with several E2 ubiquitin-conjugating enzymes providing similar binding surface for interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "As an E3 ubiquitin ligase, CHIP collaborates with several E2 ubiquitin-conjugating enzymes providing similar binding surface for interaction (Xu et al., 2008; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "35fed34a-7f9b-4933-a977-b7e270f97b58",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C100",
+      "claim": "NQO1 P187S mutant is ubiquitylated by CHIP with and without assistance of chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD(P)H:quinone oxidoreductase 1 (NQO1) P187S mutant served as a substrate protein because it is known to be ubiquitylated by CHIP with and without assistance of chaperones (Mart\u00ednez-Lim\u00f3n et al., 2016; Tsvetkov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "31ca1c4d-61e3-4f23-9e7b-88fd37ee7429",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C101",
+      "claim": "K63-based ubiquitin polymerization by CHIP does not require a substrate protein.",
+      "claim_type": "EXPLICIT",
+      "source": "K63-based ubiquitin polymerization by CHIP does not require a substrate protein (Zhang et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "70a65bbb-c5be-4d6b-94ac-81d6489708a7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C102",
+      "claim": "Hydrolysis of phosphatidylcholine by phospholipase D family generates phosphatidic acid (PA).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the cellular pathways that generates CHIP-interacting phosphatidic acid (PA) is the hydrolysis of phosphatidylcholine by members of the phospholipase D (PLD) family (Foster et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "1891f4a3-725b-4b75-a3a8-0beff9c8e55e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "claim_id": "C103",
+      "claim": "The K30A mutation in CHIP does not affect interaction with E2 ubiquitin-conjugating enzymes according to one report.",
+      "claim_type": "IMPLICIT",
+      "source": "We chose to use wild-type CHIP instead of K30A variant here since the interaction of the latter with E2 ubiquitin-conjugating enzymes was reported to be affected (Narayan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work indicating K30A affects E2 interaction",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa17170e-22a1-42af-ba0b-f85f321d36d7",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Heat shock at 43\u00b0C and pharmacological inhibition of HSP70/HSP90 induce CHIP relocalization to cellular membranes in a stress-specific manner. This relocalization is dynamic (lost upon paraformaldehyde fixation) and is not observed with EGFP alone or upon arsenite treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide converging evidence from microscopy showing CHIP membrane localization under heat shock (C1) and chaperone inhibition (C4), with appropriate controls (C3, C5) and demonstration of dynamic interaction (C2). The use of multiple stressors and controls strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "60115eea-32d2-40b1-b047-1115f4ef9a77",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CHIP dissociates from HSC70 during heat shock, and a fraction of endogenous membrane-associated CHIP exists in a chaperone-free dimeric state. The K30A mutant with reduced HSP70 binding affinity shows increased membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 demonstrate through immunoprecipitation (C6), crosslinking (C7), and microscopy (C8) that CHIP-chaperone dissociation correlates with membrane localization. ITC data (C95, C96) quantitatively confirms the K30A mutation reduces HSP70 binding, providing mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6346e458-dabd-4c91-9e00-24774cea4e52",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CHIP shows specific binding to phosphatidic acid (PA) and phosphatidylinositol monophosphates (especially PI4P), with reduced binding to bisphosphates and no binding to trisphosphates, indicating stereospecific rather than electrostatic interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are supported by lipid array data showing consistent binding patterns between wild-type and K30A CHIP (C9), specific lipid preferences (C10), and differential binding to phosphoinositides (C11, C12). The stereospecificity argument is reasonable given the binding pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro reconstitution demonstrates that 20% PA or 5% PI4P strongly enhance CHIP association with DOPC liposomes (reaching 50-60% binding efficiency), while 5% PA is insufficient. Both floatation and pelleting assays confirm these interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 provide quantitative in vitro data from multiple complementary assays (floatation and pelleting) showing concentration-dependent lipid effects on CHIP-membrane binding. The high binding efficiency (C17) enabled use of Coomassie staining, indicating robust interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "5bdf9159-a321-4a20-a24d-97e855d4063f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The TPR domain is required for CHIP binding to PA- and PI4P-containing liposomes, with the isolated TPR domain binding more strongly (160% efficiency) than full-length CHIP. However, TPR-less CHIP retains residual PA binding, suggesting additional lipid-binding determinants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C23 are supported by pelleting assays with truncated proteins. The enhanced binding of isolated TPR (C19) is interesting but the authors acknowledge uncertainty about the mechanism. The residual binding of \u0394TPR (C23) logically leads to investigation of additional binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "38b21f8a-3eff-49ac-a464-8be77347fe6e",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HSP70 C-terminal domain (HSP70-C) efficiently competes with membranes for CHIP binding, with substoichiometric amounts (1 \u03bcM) preventing liposome interaction and equimolar amounts reducing binding to ~30% of control. Ten-fold excess HSP70-C eliminates PI4P binding and leaves only residual PA interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 demonstrate through competition assays that HSP70 and membranes compete for CHIP binding. The quantitative data showing dose-dependent inhibition and differential effects on PA vs. PI4P binding are well-supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CHIP contains two conserved positively charged patches (m1: KKKR at 143-146aa; m2: KRKKR at 221-225aa) outside the TPR domain. Mutation of m2 but not m1 impairs lipid binding in vitro and releases CHIP from membranes in cells, with m2 mutant showing nuclear localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by sequence analysis, mutagenesis, lipid binding assays, and microscopy. The differential effects of m1 vs. m2 mutations are clearly demonstrated. However, the mechanism explaining why m2 but not m1 is critical remains speculative (acknowledged by authors).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "284398b5-6f74-4f72-ae1a-1be9371a42cb",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CHIP remains dimeric and capable of oligomerization when bound to liposomes, with no changes in secondary structure content or protease sensitivity, indicating that membrane binding does not alter CHIP's overall structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by crosslinking (C30), CD spectroscopy (C32), and protease sensitivity assays (C33). The reference to deoxycholate-induced monomerization (C31) provides important context. These structural analyses support functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "8ba7ebb2-cab1-4717-9481-5f764ef3a4db",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Membrane-bound CHIP retains ubiquitin ligase activity, capable of ubiquitylating substrate NQO1 and forming K63-linked ubiquitin chains. Auto-ubiquitylation appears somewhat stronger on liposomes while K63 polymerization is slightly weaker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by in vitro ubiquitylation assays with appropriate E2 enzymes. The qualitative differences in auto-ubiquitylation vs. K63 polymerization on liposomes are noted but appear modest. The functional retention of activity is the key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "6477407f-32e1-4868-93b2-53495b5f9bcb",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of PLD1 (but not PLD2) or PI4KIII releases chaperone-free CHIP from membranes to the cytosol without affecting CHIP abundance or general membrane structure, confirming that PA and PI4P mediate CHIP membrane localization in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 provide strong evidence through isoform-specific inhibitors and appropriate controls (farnesylated EGFP, CHIP levels). The specificity for PLD1 over PLD2 (C40-C41) and the use of PI4KIII inhibitors (C44) support the lipid-specificity findings from in vitro studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "bd639f96-6807-4ce0-85fd-a27347d298ad",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis reveals that more proteins interact with cytosolic (PLD1-inhibited) chaperone-free CHIP than membrane-bound CHIP, with minimal overlap between the two interactome sets. Most interactors localize to plasma membrane or organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by quantitative mass spectrometry with appropriate replicates (N=5). The minimal overlap (C47) biochemically validates the altered localization. The subcellular localization analysis (C48) is based on database annotation which may have limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b191c256-4be8-466d-a688-76c0ed49f129",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CHIP overexpression causes 56 significant proteome changes (37 decreased, 19 increased) with 'Golgi organization' as the second-highest enriched GO term. CHIP overexpression induces Golgi fragmentation, while CHIP-deficient cells fail to increase Golgi fragmentation during heat shock. HSP70 overexpression inhibits CHIP-induced Golgi fragmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C53-C55 are supported by quantitative proteomics (N=4) and microscopy with appropriate controls. The complementary gain-of-function (C53) and loss-of-function (C54) experiments strengthen the conclusion. The HSP70 rescue (C55) supports the chaperone-dependence of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "f0308cbd-1c56-4905-8278-c75a49571b75",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Early HSF1 translocation to the nucleus during heat shock is not affected by CHIP absence, indicating CHIP does not regulate this aspect of the heat shock response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by nuclei isolation experiments comparing wild-type and CHIP knockout cells. This negative result is important for defining the scope of CHIP's role in stress response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "9123e5b5-acfc-4f9e-ac50-505d24dcbdaa",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Specific Golgi proteins show altered abundance upon CHIP overexpression: Golim4 decreases to 62% while Gdi2 doubles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 provide specific examples from the proteomics data. These are descriptive findings that support the broader Golgi reorganization phenotype but require further mechanistic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    },
+    {
+      "id": "b4b66d03-78c6-4c09-8025-4a278154582c",
+      "content_id": "a3a16e4a-7f3e-4805-8705-c3efa37ec164",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study demonstrates that mammalian CHIP functions as a proteostasis sensor by docking on cellular membranes when freed from chaperones during acute stress, with HSP70 and membranes competing for mutually exclusive TPR domain binding, enabling CHIP to participate in organelle reorganization such as Golgi fragmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 represent the main conclusions synthesized from multiple lines of evidence presented throughout the manuscript. The sensor function (C84), competitive binding mechanism (C85), and effector function (C86) are well-supported by the collective data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:51:25.675824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16caab5f-b9bd-4560-b296-059ae9544742",
+      "result_id": "aa17170e-22a1-42af-ba0b-f85f321d36d7"
+    },
+    {
+      "claim_id": "a914f3aa-516f-4bbe-8a08-1dd70fd700b7",
+      "result_id": "aa17170e-22a1-42af-ba0b-f85f321d36d7"
+    },
+    {
+      "claim_id": "9df30e8e-e032-46bb-8c3a-3da1cd973044",
+      "result_id": "aa17170e-22a1-42af-ba0b-f85f321d36d7"
+    },
+    {
+      "claim_id": "d04e16bf-a590-4e6a-b3bd-f82f71aba760",
+      "result_id": "aa17170e-22a1-42af-ba0b-f85f321d36d7"
+    },
+    {
+      "claim_id": "81b88b10-087c-45fe-9c0b-d68d77f851b7",
+      "result_id": "aa17170e-22a1-42af-ba0b-f85f321d36d7"
+    },
+    {
+      "claim_id": "3a497028-8a4c-4bac-b622-2db92fd263c8",
+      "result_id": "60115eea-32d2-40b1-b047-1115f4ef9a77"
+    },
+    {
+      "claim_id": "cfb8cfc7-dd54-4f0f-9ad2-b58e817cc875",
+      "result_id": "60115eea-32d2-40b1-b047-1115f4ef9a77"
+    },
+    {
+      "claim_id": "ab404bbd-5a79-4ddb-a941-6c09ffd24394",
+      "result_id": "60115eea-32d2-40b1-b047-1115f4ef9a77"
+    },
+    {
+      "claim_id": "822d19a5-0344-48ea-a3ef-e8ae14b1d9e9",
+      "result_id": "60115eea-32d2-40b1-b047-1115f4ef9a77"
+    },
+    {
+      "claim_id": "008b7f18-f7c3-4820-bed8-7fbaf4430349",
+      "result_id": "60115eea-32d2-40b1-b047-1115f4ef9a77"
+    },
+    {
+      "claim_id": "0440e992-138e-4fe9-8d61-add0382ef93a",
+      "result_id": "6346e458-dabd-4c91-9e00-24774cea4e52"
+    },
+    {
+      "claim_id": "8085e7ac-6776-4262-a0b6-8cbb52ba7286",
+      "result_id": "6346e458-dabd-4c91-9e00-24774cea4e52"
+    },
+    {
+      "claim_id": "31b332da-c33e-4bbd-b57b-77cad8b38986",
+      "result_id": "6346e458-dabd-4c91-9e00-24774cea4e52"
+    },
+    {
+      "claim_id": "884c5f29-cb65-4a2d-ac9c-ac080655e37c",
+      "result_id": "6346e458-dabd-4c91-9e00-24774cea4e52"
+    },
+    {
+      "claim_id": "f4e4f15f-1ddc-4e67-960b-01b14d834eaa",
+      "result_id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f"
+    },
+    {
+      "claim_id": "9054bb62-2ea9-486e-a6c3-8d72a4de886b",
+      "result_id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f"
+    },
+    {
+      "claim_id": "cbba6ae1-0ac8-4ba2-a172-3140888c242a",
+      "result_id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f"
+    },
+    {
+      "claim_id": "61b542be-be53-4854-afc0-2155732cd898",
+      "result_id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f"
+    },
+    {
+      "claim_id": "77ba58d3-237e-4b06-99c3-3c6114184b9f",
+      "result_id": "95b70cdf-da59-45c2-ad95-ef2e9e11f66f"
+    },
+    {
+      "claim_id": "a085d8c3-04dc-40e5-b97b-2551c35eae40",
+      "result_id": "5bdf9159-a321-4a20-a24d-97e855d4063f"
+    },
+    {
+      "claim_id": "1467a911-0208-4367-b48e-f88cb253bdec",
+      "result_id": "5bdf9159-a321-4a20-a24d-97e855d4063f"
+    },
+    {
+      "claim_id": "5e315937-4876-45f4-af75-4b73c8b55d94",
+      "result_id": "5bdf9159-a321-4a20-a24d-97e855d4063f"
+    },
+    {
+      "claim_id": "85c3f3c4-8c95-44fd-9193-98a989103735",
+      "result_id": "38b21f8a-3eff-49ac-a464-8be77347fe6e"
+    },
+    {
+      "claim_id": "c9c6889d-0b99-47ea-aa76-485c866a08af",
+      "result_id": "38b21f8a-3eff-49ac-a464-8be77347fe6e"
+    },
+    {
+      "claim_id": "b7d657a8-7c41-4591-88d2-a1fe16b7d492",
+      "result_id": "38b21f8a-3eff-49ac-a464-8be77347fe6e"
+    },
+    {
+      "claim_id": "eac935df-ad8b-4c6b-b3c7-1ba4f8340984",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "7676d542-1421-439e-890b-7d68c1b1819b",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "f18ffbe1-b342-4241-8983-32f9b9bc27d1",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "86b02292-fa81-4719-9bb0-44105a05de13",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "5f6afc77-d81b-4b32-8433-72d8abd5ecc5",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "6b3dd60b-d548-4077-8b14-c0014bf3c857",
+      "result_id": "5270cfb6-e134-4ea1-92d0-fbc74cdedc6f"
+    },
+    {
+      "claim_id": "16266967-3f0a-4fbe-984e-0f92d3beb6b6",
+      "result_id": "284398b5-6f74-4f72-ae1a-1be9371a42cb"
+    },
+    {
+      "claim_id": "7f806ce7-8f56-4f99-964f-61150d67250d",
+      "result_id": "284398b5-6f74-4f72-ae1a-1be9371a42cb"
+    },
+    {
+      "claim_id": "9f92d9a6-37ba-40c2-987f-4513eb659ef8",
+      "result_id": "284398b5-6f74-4f72-ae1a-1be9371a42cb"
+    },
+    {
+      "claim_id": "41c9b19a-719b-4bfd-8c96-4f23b35bd48f",
+      "result_id": "284398b5-6f74-4f72-ae1a-1be9371a42cb"
+    },
+    {
+      "claim_id": "9d82c9bf-0348-4fd7-88dd-8e24b7901382",
+      "result_id": "8ba7ebb2-cab1-4717-9481-5f764ef3a4db"
+    },
+    {
+      "claim_id": "629ded70-ae93-4b18-9405-178ae6e3ac09",
+      "result_id": "8ba7ebb2-cab1-4717-9481-5f764ef3a4db"
+    },
+    {
+      "claim_id": "0049453a-fed4-4f64-9039-349f2df1f727",
+      "result_id": "8ba7ebb2-cab1-4717-9481-5f764ef3a4db"
+    },
+    {
+      "claim_id": "a9d90dd3-b903-4bdb-9667-d36f265e0aa6",
+      "result_id": "8ba7ebb2-cab1-4717-9481-5f764ef3a4db"
+    },
+    {
+      "claim_id": "7395d69d-e6aa-427c-9fc0-7e8c43441a8e",
+      "result_id": "6477407f-32e1-4868-93b2-53495b5f9bcb"
+    },
+    {
+      "claim_id": "a706b89f-1395-42f6-8d1a-7e20fda6c69e",
+      "result_id": "6477407f-32e1-4868-93b2-53495b5f9bcb"
+    },
+    {
+      "claim_id": "79758372-4e67-42bf-a9a2-7a3080be5d68",
+      "result_id": "6477407f-32e1-4868-93b2-53495b5f9bcb"
+    },
+    {
+      "claim_id": "7e58ca74-3e0f-482f-82df-a445f3b45034",
+      "result_id": "6477407f-32e1-4868-93b2-53495b5f9bcb"
+    },
+    {
+      "claim_id": "6819c56f-99e6-48cb-b3f6-fadfb5be5454",
+      "result_id": "6477407f-32e1-4868-93b2-53495b5f9bcb"
+    },
+    {
+      "claim_id": "ad2a6f3d-cf98-4f58-ac72-8a1ac28fe0c6",
+      "result_id": "bd639f96-6807-4ce0-85fd-a27347d298ad"
+    },
+    {
+      "claim_id": "b85cf5dc-1782-45d6-9708-ce144c6812fb",
+      "result_id": "bd639f96-6807-4ce0-85fd-a27347d298ad"
+    },
+    {
+      "claim_id": "ad6cd873-540c-44e4-8c66-dcb88cc79492",
+      "result_id": "bd639f96-6807-4ce0-85fd-a27347d298ad"
+    },
+    {
+      "claim_id": "bae913b0-5cc8-4b66-80ca-9845a36b45c7",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "7dc33850-7809-4ce0-8c10-612c31d2b110",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "d53c9b80-5939-420a-8f1a-378233382cd4",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "cff6eb6c-a949-4c1a-8341-a8ead21e3d93",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "f6e1f23d-7e05-438e-90c3-c42620ca57b0",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "cc44c20a-ca02-4dc5-8fd6-18cd958ea242",
+      "result_id": "b191c256-4be8-466d-a688-76c0ed49f129"
+    },
+    {
+      "claim_id": "157035cd-8c04-4669-a33f-1c964739fcb4",
+      "result_id": "f0308cbd-1c56-4905-8278-c75a49571b75"
+    },
+    {
+      "claim_id": "a3229b72-b92c-4eb9-8fde-96778a388a5a",
+      "result_id": "9123e5b5-acfc-4f9e-ac50-505d24dcbdaa"
+    },
+    {
+      "claim_id": "61221c10-37bb-4197-ad76-ce7e407c1f29",
+      "result_id": "9123e5b5-acfc-4f9e-ac50-505d24dcbdaa"
+    },
+    {
+      "claim_id": "d8f34242-0407-4636-9071-7d749889f06e",
+      "result_id": "b4b66d03-78c6-4c09-8025-4a278154582c"
+    },
+    {
+      "claim_id": "c51547e8-e29c-45c9-8cc0-15674090d7f6",
+      "result_id": "b4b66d03-78c6-4c09-8025-4a278154582c"
+    },
+    {
+      "claim_id": "9c469742-b2df-418c-ab69-8c4d56b087a3",
+      "result_id": "b4b66d03-78c6-4c09-8025-4a278154582c"
+    }
+  ],
+  "comparisons": []
+}

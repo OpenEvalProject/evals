@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The BMP signaling gradient in zebrafish undergoes dynamic changes during development from 4.7 to 6.7 hpf, with a 2-fold intensification in the ventral-most region and a 3-5 fold increase in gradient slope in ventrolateral regions. These changes are not explained by the ~70% increase in cell number, which occurs uniformly throughout the embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide quantitative measurements of P-Smad5 gradient changes over time, supported by Figure 2F-G. Claims C36-C41 demonstrate that cell number increases uniformly but does not account for the localized gradient changes, with statistical support from embryo-to-embryo variability analysis (Figure 2H-I). The data and inference are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The bmp2b expression domain does not change in chordin mutants before 5.7 hpf, indicating that bmp transcriptional feedback is not active during early gradient formation (4.7-5.7 hpf). Changes in P-Smad5 in chordin mutants at 4.7 hpf precede changes in bmp expression, which only occur by 7 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by in situ hybridization measurements (Figure 3D-E) showing no change in bmp2b domain size before 5.7 hpf in chordin mutants, combined with P-Smad5 data (Figure 6A-C) showing earlier changes. The temporal sequence clearly demonstrates that transcriptional feedback cannot account for early gradient changes. Domain size measurements (C42-C43) provide necessary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Chordin does not shuttle BMP ligand during zebrafish DV patterning. Loss of chordin causes increased P-Smad5 in lateral regions but no decrease in ventral regions, and BMP overexpression demonstrates that ventral signaling is not saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide direct experimental evidence from chordin mutant P-Smad5 measurements (Figure 6C-F) showing lateral increases but no ventral decreases. Claims C59-C61 from BMP overexpression experiments (Figure 6G) confirm that ventral signaling is not saturated, ruling out technical limitations. The inference in C57 that shuttling does not occur is well-supported by the absence of the expected ventral decrease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational modeling constrained by experimental data rules out shuttling and transcriptional mechanisms for BMP gradient formation. Of simulations fitting WT data, only source-sink and counter-gradient mechanisms remain compatible with chordin mutant and heterozygote data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 establish the initial computational screen results. Claims C67-C70 show progressive constraint by experimental data, with all shuttling simulations deviating >17% from chordin mutant data (C69). Claims C47, C49-C50 demonstrate incompatibility of transcriptional and counter-gradient mechanisms. The computational approach is well-documented with clear classification criteria (Figure 4C), though the 8% deviation threshold and mechanism classification criteria could benefit from additional justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Source-sink and counter-gradient mechanisms require distinct biophysical parameters. Source-sink requires high BMP diffusivity (>1 \u03bcm\u00b2/s) and range (>60 \u03bcm), while counter-gradient requires high Chordin diffusivity (>2 \u03bcm\u00b2/s) and range (>40 \u03bcm) with low Tolloid cleavage rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C71-C73 describe parameter requirements derived from computational modeling (Figures 5, 7). The parameter constraints are internally consistent with the mechanism definitions and are well-illustrated. However, the biological plausibility of these parameter ranges and their relationship to measured values could be more explicitly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "BMP2b diffuses relatively freely in zebrafish embryos with an effective diffusivity of 4.4 \u00b1 0.4 \u03bcm\u00b2/s, measured by FRAP. This diffusivity is consistent with 1,421 source-sink simulations but only 31 counter-gradient simulations, which require very high BMP decay rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide FRAP measurements with appropriate controls (Venus alone, chordin-deficient embryos). The measured diffusivity is precise (n=5, SEM reported) and the Venus control (C88-C89) validates that the tag does not limit diffusion. Claims C90-C93 integrate these measurements with modeling results (Figure 8H), showing strong support for source-sink over counter-gradient mechanisms. The FRAP methodology appears sound, though effective vs. intrinsic diffusivity is appropriately acknowledged (C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "BMP ligand lifetime in zebrafish embryos is estimated at 30-50 minutes based on P-Smad5 persistence after BMP protein injection. This lifetime is consistent with source-sink simulations but inconsistent with the high decay rates required for counter-gradient simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C96 combine two prior experimental observations to infer BMP lifetime, but this inference involves assumptions about P-Smad5 dynamics that may not be precise. Claims C97-C98 compare this inferred lifetime to modeling requirements, but the uncertainty in the lifetime estimate (30-50 min range) and the indirect nature of the measurement limit confidence. The logic is sound but relies heavily on prior work and indirect inference rather than direct measurement in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "A source-sink mechanism, rather than shuttling or transcriptional mechanisms, establishes the BMP gradient in zebrafish DV patterning. This mechanism relies on BMP diffusing from ventral production sites to a dorsal sink of Chordin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the paper, synthesizing results from multiple experimental and computational approaches. The exclusion of shuttling (C3) is strongly supported by chordin mutant data. The exclusion of transcriptional mechanisms (C4) is supported by timing of bmp expression changes. The support for source-sink (C5-C6) comes from the combination of BMP diffusivity measurements, computational modeling, and mutant phenotypes. While individual lines of evidence are strong, the conclusion represents an inference from multiple datasets rather than direct demonstration of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The BMP signaling gradient in zebrafish is robust to chordin heterozygosity (50% Chordin reduction) but not to complete loss of Chordin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides direct experimental evidence that chordin heterozygotes have indistinguishable P-Smad5 gradients from WT at 5.7 hpf (Figure 6J). Claims C65-C66 are logical inferences from comparing heterozygote and homozygous mutant data. The result is straightforward and well-supported, though the assumption that heterozygotes have exactly 50% Chordin levels is not directly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "When bmp expression is modeled to match the P-Smad5 gradient, only source-sink simulations fit WT and chordin mutant data; no transcriptional mechanism simulations fit unless bmp expression changes in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 report computational modeling results with altered input assumptions (Figure 7K-K'). Claim C76 provides the logical explanation for why transcriptional mechanisms fail. This result demonstrates the incompatibility of transcriptional and counter-gradient mechanisms (C50) and provides additional support for source-sink mechanisms. The modeling approach is sound, though it represents a hypothetical scenario rather than the measured bmp expression profile.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C101"
+    ],
+    "result": "Uniform Chordin expression can rescue chordin mutants, and computational modeling shows that 426 source-sink solutions maintain WT gradients with uniform Chordin production, all generating dorsal-high, ventral-low Chordin gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 establishes the experimental observation of rescue with uniform chordin expression. Claim C101 shows that source-sink mechanisms can accommodate this observation through post-translational gradient formation (Figure 8I). This result provides additional support for source-sink over counter-gradient mechanisms. However, the modeling assumes uniform production without titration, and the biological mechanism generating the Chordin gradient from uniform production is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Zebrafish and Drosophila BMP gradients differ fundamentally in shape, timescale, and mechanism. Drosophila-like simulations in zebrafish require high Chordin and BMP-Chordin mobility with specific Tolloid cleavage properties that differ from zebrafish-compatible simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 establish the differences between zebrafish and Drosophila gradients based on current data and literature. Claims C108-C112 describe computational modeling of Drosophila-like conditions in zebrafish (Figure 9), showing distinct parameter requirements. This comparative analysis is well-executed and provides insight into mechanism evolution, though it represents computational exploration rather than direct experimental validation of Drosophila mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Source-sink and counter-gradient mechanisms differ in where Chordin binds BMP along the DV axis. In source-sink, Chordin binds BMP dorsally creating a sink that drives BMP flux, while in counter-gradient, Chordin binds BMP more broadly. The mechanisms are not mutually exclusive and source-sink is more robust to parameter changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe mechanistic differences between source-sink and counter-gradient mechanisms based on analysis of representative simulations (Figure 10). Claim C121 appropriately notes that mechanisms need not be exclusive. Claim C122 infers greater robustness of source-sink based on the number of compatible simulations. The analysis is sound, though the robustness claim could benefit from more formal sensitivity analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The Bmp2b-Venus fusion protein is functional, as demonstrated by its ability to ventralize WT embryos and rescue Bmp2b-deficient embryos to WT phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 provide validation of the FRAP construct through phenotypic assays (Figure 8B). The ventralization and rescue experiments demonstrate that the Venus tag does not abolish BMP activity. This validation is essential for interpreting the FRAP results, though more quantitative assessment of activity (e.g., dose-response) would strengthen confidence that the fusion protein behaves identically to native BMP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Chordin and Sog differ in Tolloid processing: Chordin can be cleaved whether bound to BMP or not, while Sog is only cleaved when bound. This differential processing is necessary for effective shuttling in Drosophila but is not an inherent requirement of shuttling mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 state established biochemical differences from literature. Claims C115-C116 cite experimental evidence that preferential BMP-Sog cleavage is necessary for Drosophila shuttling. Claim C117 is an inference from computational modeling showing shuttling simulations with different cleavage properties. The logic is sound, though C117 represents a computational inference rather than experimental demonstration.",
+    "result_type": "MINOR"
+  }
+]

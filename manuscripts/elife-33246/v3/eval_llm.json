@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Isolated mitochondria cannot synthesize NAD from nicotinamide (NAM). The authors tested muscle and liver mitochondria with NAM \u00b1 PRPP and found no NAD synthesis, contradicting prior reports suggesting mitochondrial Nampt activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54, C55 provide direct experimental evidence (Figures 2a-b) showing no NAD synthesis from NAM in isolated mitochondria from muscle or liver, even with PRPP supplementation. Claims C85-C88 contextualize this finding against prior literature and note that neither Nampt nor PRPP synthetase are in MitoCarta2.0, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57"
+    ],
+    "result": "Isolated mitochondria synthesize NAD from NMN in a time-, concentration-, and energy-dependent manner. NMN maintained NAD levels in state 3 mitochondria, and synthesis was attenuated by FCCP or rotenone but supported by ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, C49-C53 are supported by experimental data in Figures 1a-f showing dose-dependent, time-dependent, and ATP-dependent NAD synthesis from NMN. Claims C56-C57 show Gallotannin (NMNAT inhibitor) reduced synthesis while FK866 (Nampt inhibitor) had no effect, confirming NMN is the substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C58",
+      "C59",
+      "C90"
+    ],
+    "result": "NAD synthesized from NMN in isolated mitochondria does not localize to the mitochondrial matrix and does not restore respiratory capacity. The vast majority of NAD generated from NMN ends up outside the organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59, C90 are directly supported by Figure 3b showing NAD accumulation in supernatant rather than pellet after NMN treatment. Claims C7, C58 are supported by Figure 3a showing no recovery of state 3 respiration despite increased NAD. This is a critical finding distinguishing extramitochondrial from matrix NAD synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C91",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The majority of NMNAT activity in isolated mitochondria is dependent on contaminating nuclear NMNAT1, not mitochondrial NMNAT3. CRISPR targeting of NMNAT1 reduced mitochondrial NAD synthesis from NMN and increased susceptibility to NAD depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C91, C127 are supported by Figure 6b showing loss of NMN-to-NAD conversion in NMNAT1-targeted cells. Claims C123-C126 provide additional characterization. Claim C128 shows proteinase K treatment (removing outer membrane proteins) reduced NMN conversion without affecting respiration, supporting contamination rather than functional mitochondrial NMNAT activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "High concentrations (5-10 mM) of exogenous NAD increase matrix NAD content and slow the decline in respiratory capacity in isolated mitochondria held in state 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by experimental data in Figures 3c-d showing that 10 mM external NAD prevented loss of matrix NAD and slowed respiratory decline. The authors note this concentration exceeds physiological whole-cell NAD but may approximate matrix concentrations, suggesting concentration-dependent import.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C63",
+      "C64",
+      "C101",
+      "C102"
+    ],
+    "result": "Treating cells with doubly-labeled nicotinamide riboside (NR) results in doubly-labeled NAD in mitochondria, demonstrating that cytosolic NMN contributes to mitochondrial NAD without degradation to nicotinamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C45, C63-C64 are supported by isotope labeling data in Figures 4b-c showing high proportions of doubly-labeled NMN and NAD in mitochondria. Claims C101-C102 provide the logical interpretation: double labeling proves no nicotinamide intermediate step. However, this experiment does not distinguish whether NMN or NAD is the imported species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C104",
+      "C105"
+    ],
+    "result": "Experiments with doubly-labeled nicotinic acid riboside (NAR) demonstrate that NAD(H), rather than NMN, is the imported species into mitochondria. NAR labels cytosolic NAD without labeling NMN, and mitochondrial NAD labeling matches cytosolic NAD labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C47, C104-C105 are supported by Figures 6 and 7 showing that when technical artifacts were overcome (CRISPR enlargement of NMN pool or direct LC-MS injection), NAR treatment labeled mitochondrial NAD without labeling NMN. Claims C70-C73 provide the critical interpretation: mitochondrial NAD labeling approaching cytosolic NAD (not NMN) proves direct NAD import. This is the key experiment distinguishing NAD from NMN import.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75"
+    ],
+    "result": "Technical controls demonstrate that NAR contained no NR contamination, nicotinic acid-containing nucleotides are excluded from mitochondria, and spontaneous NAD hydrolysis during extraction can artifactually generate NMN signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C69, C74-C75 are supported by Figures 5c, 5e-f, and 7a-b showing NR detection limits, NAD hydrolysis in aqueous solutions, and elimination of artifact by direct LC-MS injection. Claim C68 is supported by Figure 5d showing NAMN/NAAD exclusion from mitochondria. These controls are essential for interpreting the NAR labeling experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C78",
+      "C83",
+      "C100",
+      "C106",
+      "C121"
+    ],
+    "result": "Mammalian mitochondria (murine and human) are capable of directly importing intact NAD or NADH, as demonstrated by isotopic labeling studies with NR and NAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C78, C83, C100, C106, C121 represent the main conclusion of the study. This is supported by the convergence of evidence from NAR labeling experiments (Figures 6-7) showing mitochondrial NAD labeling without NMN labeling, and direct NAD uptake experiments (Figure 3c-d) showing high-concentration NAD can enter mitochondria. The isotopic labeling provides the strongest evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C122"
+    ],
+    "result": "The results challenge the view that mitochondrial inner membranes are impermeable to pyridine nucleotides and suggest the existence of an unrecognized mammalian NAD(H) transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C122 are logical inferences from the experimental data showing NAD import. The challenge to impermeability (C10) is well-supported by the NAR labeling and direct NAD uptake data. The suggestion of an unknown transporter (C11, C122) is a reasonable inference, though the transporter itself is not identified. This represents appropriate speculation based on solid evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Mitochondria isolated from NAR-treated C2C12, HEK293, and HL-60 cells contained labeled NAD in the absence of detectable NMN, confirming NAD import across multiple cell types including human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by Figure 7c-d showing doubly-labeled NAD in mitochondria from NAR-treated cells without detectable NMN labeling. This extends the finding from mouse myotubes to human cell lines, strengthening the generalizability of the NAD import mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "NMNAT1-targeted myotubes had dramatically increased NMN content, which was attenuated by rescue with human NMNAT1 cDNA that also enhanced NAD synthesis from NMN by isolated mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by Figures 6c and Figure 6\u2014figure supplement 3 showing NMN accumulation in NMNAT1 knockout cells and rescue by human NMNAT1. This provides additional validation of the CRISPR targeting and confirms NMNAT1's role in converting NMN to NAD, supporting the interpretation that NMNAT1 contamination explains mitochondrial prep activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C89",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors acknowledge that their findings do not exclude contributions from intramitochondrial NAD synthesis or NMN import via NMNAT3, and cite evidence suggesting both NMN and NAD import may contribute to the mitochondrial NAD pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C89, C115 represent appropriate acknowledgment of study limitations. Claims C116-C118 cite Cambronne et al. showing mitochondrial NAD sensitivity to both NMNAT2 and NMNAT3 depletion, suggesting multiple pathways. This represents scientifically appropriate caution and acknowledgment that the study demonstrates NAD import but does not exclude other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing the importance of mitochondrial NAD in fuel selection, circadian rhythms, cell survival, and as a cofactor for electron transport and sirtuins, while noting incomplete understanding of mitochondrial NAD pool maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C17 are background knowledge claims supported by appropriate citations. These establish the biological importance and context for the study but are not novel findings. They accurately represent the state of knowledge and provide appropriate motivation for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background claims summarizing prior literature on NAD biosynthesis pathways, NMNAT isoforms and their localization, conflicting evidence about mitochondrial NAD sources, and the absence of known mammalian NAD transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C41 accurately summarize prior literature with appropriate citations, establishing the scientific controversy about mitochondrial NAD sources (NAM vs. NMN vs. NAD import) and the conflicting evidence about NMNAT3 function. These provide essential context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion claims contextualizing findings within prior literature on NAD transporters in yeast/plants, previous evidence for mammalian mitochondrial NAD uptake, failed attempts to identify mammalian NAD transporters, and the toxic effects of expressing plant NAD transporter AtNDT2 in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C85-C87, C92-C99, C107-C114 provide appropriate discussion of prior work, including Rustin et al. and Felici et al. on NAD uptake, the absence of identified mammalian transporters, and the AtNDT2 toxicity. Claim C114 offers reasonable speculation that AtNDT2 toxicity may reflect its specific properties rather than general NAD transport effects. These appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C103"
+    ],
+    "result": "Background claims about NR conversion to NMN by NRKs and NAR conversion to NAD via NAMN and NAAD, establishing the metabolic pathways relevant to the isotope labeling strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C103 are established biochemical knowledge supported by appropriate citations. These are essential for understanding the experimental design using NR and NAR as tracers to differentially label NMN vs. NAD pools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C65"
+    ],
+    "result": "Isolated mitochondria in state 1 rapidly lose NAD(H) content, and the slightly more rapid appearance of doubly-labeled NAD in whole cell lysates vs. mitochondria suggests some NAD synthesis occurs outside organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is an experimental observation (though data not shown). Claim C65 is a reasonable inference from Figure 4 kinetic data suggesting extramitochondrial NAD synthesis. These are minor observations supporting the overall model but not central findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Targeting NMNAT2 or NMNAT3 with CRISPR did not lead to obvious changes in pyridine nucleotide distribution in C2C12 myotubes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by Figure 6d showing no major changes in NAD/NMN levels when NMNAT2 or NMNAT3 are targeted. This negative result contrasts with NMNAT1 targeting and suggests these isoforms may be less critical in this cell type, though the authors appropriately note (C115-C118) that other evidence suggests NMNAT3 contributes to mitochondrial NAD.",
+    "result_type": "MINOR"
+  }
+]

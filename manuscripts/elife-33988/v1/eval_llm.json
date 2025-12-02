@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32",
+      "C37",
+      "C67"
+    ],
+    "result": "The zebrafish lateral-line neuromast displays a consistent, complex wiring pattern characterized by three features: specificity (each nerve terminal receives innervation from hair cells of a single directional sensitivity), redundancy (multiple terminals innervate each hair cell), and dominance (a hierarchy exists among terminals). This was determined using SBFSEM analysis of eight wild-type neuromasts, revealing an average of 9.3 neuronal branches per neuromast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C32, C37, and C67 collectively establish the main finding through comprehensive SBFSEM data from multiple specimens. The quantitative data (9.3 branches per neuromast, specificity metrics showing only 4/344 synapses with opposite polarity, 92% polarity-specific contact area) strongly support the three characteristics of specificity, redundancy, and dominance. The consistency across eight specimens validates the reproducibility of the pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Polarity-specific innervation in neuromasts is mediated by direct, short-range interactions between hair cells and axonal terminals, not by spatial segregation or third-party cells. Specificity is established early (as soon as synaptic ribbons appear) and increases with hair cell age, with 92% of contact area being polarity-specific and only 4 of 344 presynaptic active zones showing cross-polarity innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide converging evidence for the mechanism of specificity through quantitative SBFSEM data, developmental analysis, and spatial relationship assessment. The observation that terminals are perisynaptic to both polarities yet maintain specificity (C46), combined with the absence of intervening cells (C51) and early establishment of specificity (C48), strongly supports direct cell-cell recognition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C116",
+      "C117"
+    ],
+    "result": "Hair cells display redundant innervation that increases during maturation. The average number of synaptic partners per hair cell increases from one (5-15 hr post-mitosis) to two (>15 hr), while perisynaptic associations expand to include up to nine terminals per compartment. Non-synaptic contacts show a bias toward terminals of the opposing polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C116-C117 are supported by quantitative developmental analysis from the SBFSEM data (Figure 4B). The progression from single to multiple partners and the increasing perisynaptic associations are well-documented. However, the functional significance of opposing-polarity contacts (C56) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C118"
+    ],
+    "result": "Neuromast innervation exhibits a hierarchy of dominance where one terminal of each polarity accounts for the majority of synapses and contact area. Dominance increases with hair cell age (from 34% to 75% of ribbon synapses) and is a property of individual axonal branches rather than entire neurons. Each neuromast contains a dominant terminal, a secondary terminal with ~50% of the dominant's connections, and additional minor terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C62, C118 are well-supported by quantitative SBFSEM data showing the dominance hierarchy (Figure 4C-D). The developmental progression and the observation that dominance is branch-specific (C62, inferred from cited literature) are consistent. The characterization of secondary and tertiary terminals (C118) provides a complete picture of the hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Specificity takes precedence over dominance in determining innervation patterns. The least dominant terminal of the appropriate polarity can form synapses even when the most dominant terminal of the opposing polarity is adjacent, and there are no cases where dominance supersedes specificity. Within polarity-specific subsets, competition determines the innervation partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by systematic analysis of all synaptic connections in the SBFSEM data. The absence of any cases where dominance overrides specificity (C65) is a strong negative result from comprehensive data. The inference about competition within polarity subsets (C66) logically follows from the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In trilobite (vangl2) mutants, hair cells have random orientations and positions, yet sibling cells maintain distinct innervation identities. Each terminal is innervated by only one sibling per pair (only 1/101 ribbons showed dual sibling innervation), but the chemical identities are randomly distributed between siblings. The mutants retain redundancy and dominance patterns similar to wild-type, but lose position-based specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C24, C70-C76 are supported by SBFSEM analysis of four trilobite mutant neuromasts. The quantitative data (73% of ribbons showing mixed anterior/posterior innervation, 1/101 ribbons with dual sibling innervation) strongly support the dissociation of positional information from innervation identity. The preservation of redundancy and dominance (C76) demonstrates that these features are independent of the planar cell polarity pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Synaptic activity is neither necessary nor sufficient for polarity-specific innervation. In trilobite mutants, 14 neurons innervated by multiple hair cells preferentially formed synapses with hair cells of dissimilar or opposite mechanosensitivity rather than similar orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by combined confocal and SBFSEM analysis of trilobite mutants. The observation that neurons avoid hair cells with similar mechanosensitivity (C78) directly contradicts activity-based models. C77 cites prior literature for the 'not necessary' component, while the current data establish 'not sufficient.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C94"
+    ],
+    "result": "Notch signaling mediates the asymmetric allocation of factors responsible for innervation specificity. In Notch-overexpressing larvae, all hair cells have uniform anterior polarity, and 93% of synapses are formed with terminals innervated by both anterior and posterior hair cells. Both siblings in every pair innervate the same terminal, indicating failure of asymmetric identity allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C82-C86, C94 are supported by SBFSEM analysis of two Notch-overexpressing neuromasts. The quantitative data (93% mixed innervation, 100% of sibling pairs sharing terminals) strongly support the role of Notch in asymmetric identity allocation. The inference that Notch mediates asymmetric allocation (C86, C94) is well-supported by the complete loss of sibling specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C123",
+      "C124"
+    ],
+    "result": "Notch-overexpressing mutants retain redundancy and dominance despite losing specificity. Each neuromast shows one highly dominant and one moderately dominant terminal. When all hair cells adopt uniform polarity, terminals of the opposing subset can outcompete some polarity-appropriate but low-dominance terminals, though there are limits to this competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91, C123-C124 are supported by quantitative comparison of Notch-overexpressing and wild-type SBFSEM data. The preservation of redundancy and dominance (C88) demonstrates these are independent of specificity. The observation of limited cross-polarity innervation (C123-C124) suggests competition has boundaries, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Comparative connectomics dissociates hair cell phenotypes: the canonical planar-cell-polarity pathway (vangl2) controls angular orientation and affects anteroposterior positioning but not innervation identity allocation, while Notch signaling mediates asymmetric allocation of innervation specificity factors. The similarity between Notch-overexpression and Emx2 knockout phenotypes suggests Emx2 is one of the asymmetrically allocated factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are well-supported by the contrasting phenotypes of trilobite and Notch mutants. C95-C96 regarding Emx2 are supported by comparison with cited literature showing similar phenotypes, though this is correlative rather than direct evidence. The dissociation of phenotypes (C92) is a key conceptual advance enabled by the comparative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C121",
+      "C122"
+    ],
+    "result": "Each neuromast contains one efferent terminal that contacts every hair cell without forming ribbon synapses. This terminal displays presynaptic vesicles and postsynaptic cisterns. Because it innervates hair cells of both polarities, the efferent system likely nonspecifically desensitizes the neuromast rather than adjusting directional sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by SBFSEM data showing consistent efferent terminal morphology and connectivity. The identification as efferent (C39) is based on established ultrastructural criteria. The functional inference (C121) is logical given the non-selective innervation pattern, though C122 is speculative about specific function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The neuromast connectome represents the first example of systematic neural miswiring delineated by SBFSEM and offers a tractable vertebrate system for studying synaptic targeting. Each connectome requires only 12 hr of microscopy and 500 hr of annotation, a fraction of resources needed for other SBFSEM studies. The system allows developmental analysis within single datasets and provides 528 billion annotated voxels for machine learning applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by comparison with cited literature and the data presented. The resource requirements (C98-C99) are factual descriptions. C97 is a claim about novelty that depends on the authors' knowledge of the field. C100 is speculative about future improvements. C101-C102 describe advantages demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Afferent terminals show varied morphologies: 16% display minimal branching and taper immediately inside neuromasts, while 84% occupy perisynaptic compartments. Of those in perisynaptic compartments, 74% make membrane contacts at hair cell bases and 59% are postsynaptic at ribbon synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by quantitative analysis of SBFSEM data from wild-type specimens. These percentages provide a detailed characterization of terminal morphology and connectivity patterns. The data are descriptive and well-documented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "In all six observed nascent hair cells that contacted terminals but lacked ribbon synapses, the cells made predominant or exclusive contact with terminals whose innervation by mature neighbors indicated rostrad sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is based on only six observations, which is a very small sample size. While the pattern is consistent (6/6), this could represent sampling bias or a developmental stage-specific phenomenon. The claim suggests specificity doesn't arise from precocious terminal arrival, but the limited data and potential confounding factors (e.g., all six showing the same polarity preference) make this conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Confocal microscopy of 14 individually labeled neurons found no instances of bifurcated axons extending terminals into a neuromast, contrasting with previous estimates of 2-4 neurons per neuromast. The current study found an average of 9.3 neuronal branches per neuromast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by the confocal microscopy data (C35, n=14) and SBFSEM data (C37, n=8 neuromasts). The discrepancy with prior literature (C36) is clearly documented. However, the sample size for confocal microscopy is modest, and the distinction between 'branches' and 'neurons' requires careful interpretation of the long-range connectivity data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "A machine learning classifier was trained on 88 hair cells (70% training, 30% test) using cellular features to assign age categories to hair cells lacking preimaging data. Gradient Boosting and Decision Tree algorithms yielded the best classification scores, and all assignments were consistent with age-associated phenotypic characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C141-C144 describe the machine learning methodology and validation. The approach is sound with appropriate train/test split. The validation against phenotypic characteristics (C144) provides confidence, though the specific accuracy metrics are not reported. The method enabled analysis of specimens with limited preimaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SBFSEM imaging was performed with 30 nm z-steps and 6 nm \u00d7 6 nm lateral resolution. Data analysts manually contoured cellular features with \u00b160 nm precision. Contact areas were computed automatically using Python/Shapely, considering membranes in contact if separated by <60 nm with no intervening traces. The algorithm was validated against human assessments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C139 provide detailed methodological descriptions that are internally consistent and follow established SBFSEM practices. The precision estimates (C135), contact algorithm parameters (C136), and validation procedures (C137) are appropriate for the resolution of the data. These methods enable the quantitative analyses presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The study characterized wiring at 3-4 dpf, so any subsequent alterations during late larval, juvenile, or adult stages would have gone undetected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is an acknowledged limitation of the study. This is a straightforward statement about the temporal scope of the data collection and appropriately notes that developmental changes outside this window were not assessed. This limitation is important for interpreting the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The redundant, hierarchical neuronal associations may enable hair cells to maintain innervation if neurons are compromised, and the presence of multiple terminals with graded sensitivity may allow more refined stimulus detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 are speculative functional interpretations of the observed redundancy and dominance patterns. While these are plausible hypotheses, they are not tested in the current study. The manuscript appropriately presents these as possibilities ('may enable,' 'offers the possibility') rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The neuromast system will be valuable for characterizing genes underlying neuronal competition and combinatorial innervation, defining interactions between planar-cell-polarity and Notch signaling pathways, complementing large-scale connectomics, and providing insights into ribbon synapse development in the inner ear and vertebrate microcircuits generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C108 are forward-looking statements about potential future applications. While the current work establishes the neuromast as a tractable system, these claims about future value are speculative. The system's advantages are demonstrated, but the specific future insights mentioned remain to be realized.",
+    "result_type": "MINOR"
+  }
+]

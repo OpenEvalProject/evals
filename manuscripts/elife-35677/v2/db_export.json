@@ -1,0 +1,1731 @@
+{
+  "submission": {
+    "id": "1c85c032-cc15-4b6a-b6b7-34757aea4403",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:34:31.791692Z",
+    "updated_at": "2025-12-02T00:34:31.791692Z"
+  },
+  "content": [
+    {
+      "id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "submission_id": "1c85c032-cc15-4b6a-b6b7-34757aea4403",
+      "content_type": "manuscript",
+      "content_text": "# Specific Eph receptor-cytoplasmic effector signaling mediated by SAM\u2013SAM domain interactions\n\n## Authors\n\n- Yue Wang<sup>1</sup>\n- Yuan Shang<sup>2</sup>\n- Jianchao Li<sup>2</sup> ([ORCID: 0000-0002-8921-1626](https://orcid.org/0000-0002-8921-1626))\n- Weidi Chen<sup>1</sup>\n- Gang Li<sup>1</sup>\n- Jun Wan<sup>1</sup>\n- Wei Liu<sup>1</sup> ([ORCID: 0000-0001-8250-2562](https://orcid.org/0000-0001-8250-2562)) \u2020\n- Mingjie Zhang<sup>1</sup> ([ORCID: 0000-0001-9404-0190](https://orcid.org/0000-0001-9404-0190)) \u2020\n\n### Affiliations\n\n1. Shenzhen Key Laboratory for Neuronal Structural Biology, Biomedical Research Institute Shenzhen Peking University-The Hong Kong University of Science and Technology Medical Center Shenzhen China\n2. Division of Life Science, State Key Laboratory of Molecular Neuroscience Hong Kong University of Science and Technology Kowloon China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Eph receptor tyrosine kinase (RTK) family is the largest subfamily of RTKs playing critical roles in many developmental processes such as tissue patterning, neurogenesis and neuronal circuit formation, angiogenesis, etc. How the 14 Eph proteins, via their highly similar cytoplasmic domains, can transmit diverse and sometimes opposite cellular signals upon engaging ephrins is a major unresolved question. Here, we systematically investigated the bindings of each SAM domain of Eph receptors to the SAM domains from SHIP2 and Odin, and uncover a highly specific SAM\u2013SAM interaction-mediated cytoplasmic Eph-effector binding pattern. Comparative X-ray crystallographic studies of several SAM\u2013SAM heterodimer complexes, together with biochemical and cell biology experiments, not only revealed the exquisite specificity code governing Eph/effector interactions but also allowed us to identify SAMD5 as a new Eph binding partner. Finally, these Eph/effector SAM heterodimer structures can explain many Eph SAM mutations identified in patients suffering from cancers and other diseases.\n\n## Introduction\n\nThe Eph (erythropoietin-producing hepatocyte) transmembrane receptor tyrosine kinase superfamily, with its first member identified30 years ago (Hirai et al., 1987), contains 14 members in mammals and is the largest among all receptor tyrosine kinase families (Lemmon and Schlessinger, 2010; Manning et al., 2002; Murai and Pasquale, 2003). Chiefly based on their engaging ephrin ligands, Eph receptors are classified into the EphA and EphB subfamilies, each with nine and five members in mammals, respectively (Eph Nomenclature Committee , 1997; Gale et al., 1996; Murai and Pasquale, 2003). Owing to broad expressions in essentially all tissues and at every life stage, Ephrin-Eph signaling regulates many cellular processes both during development and in developed animals such as stem cell maintenance and differentiations, tissue morphogenesis, and tissue\u2013tissue boundary formation (Batlle and Wilkinson, 2012; Genander and Fris\u00e9n, 2010; J\u00fclich et al., 2009; McMillen and Holley, 2015; Munarini et al., 2002; Park et al., 2011; Poliakov et al., 2004). Not surprisingly, mutations of ephrins and Ephs are known to cause many forms of diseases including cancers and brain disorders (Boyd et al., 2014; Chen et al., 2008; Hahn et al., 2012; Kania and Klein, 2016; Merlos-Su\u00e1rez and Batlle, 2008; Pasquale, 2008; Zhuang et al., 2012).\n\nEphrin ligand binding-mediated inter-cellular signaling is the classic mode of Eph receptor signaling (also known as ephrin-Eph \u2018forward\u2019 signaling), which is responsible for the majority of cellular functions characterized for the ephrin-Eph signaling (Pitulescu and Adams, 2010; Taylor et al., 2017; Yokoyama et al., 2001). Presumably, the versatile forward ephrin-Eph signals are transmitted by the cytoplasmic portion of Eph receptors. However, the cytoplasmic portion of all 14 Eph receptors are highly similar, each containing a membrane-juxtaposing kinase domain, a protein-binding SAM domain immediately followed by a short carboxyl tail PDZ domain-binding motif (PBM) (Figure 1A). The cytoplasmic portions of Eph receptors are often presumed to function similarly. However, multiple Eph receptors are typically co-expressed in one tissue. Paradoxically, it has been observed that two different Eph receptors on the same cell type can respond to a single ephrin ligand but elicit opposite cellular responses. For example, ephrin-A5 binds to EphA2 and EphA4 with similar affinity but induces cell adhesion or cell collapse, respectively (Cooper et al., 2008; Zhou et al., 2007), although different multimerization modes of EphA2 and EphA4 extracellular domains induced by ephrin-A5 binding can also contribute to the opposite cell spreading phenotype (Seiradake et al., 2013). Therefore, the cytoplasmic domains of Eph receptors must be able to engage different intracellular effectors in response to ephrin ligands. How specific Eph receptor cytoplasmic domain-mediated signaling might occur has been a major unresolved question in the ephrin-Eph signaling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagrams showing the domain organizations of EphA2, SHIP2 and Odin. (B\u2013C) Analytical gel-filtration chromatography (B) and ITC-based measurements (C) showing the interaction between EphA2 SAM and SHIP2 SAM. (D) Summary of the dissociation constants between Eph SAMs and SHIP2/Odin SAMs. All binding affinities were derived from ITC-based assays. (E\u2013F) Analytical gel-filtration chromatography (E) and ITC-based measurements (F) of the binding of EphA2 SAM to Odin SAM.\n\nWe reasoned that the SAM domain of each Eph receptor is likely to play a role in specifying their cytoplasmic effector engagements for the following two reasons. First, SAM domain is a well-known protein\u2013protein interaction module (Qiao and Bowie, 2005), and the SAM domain of EphA2 is known to bind to SAM domain from SHIP2 (SH2 domain-containing Inositol 5'-Phosphatase 2, aka INPPL1 for INositol Polyphosphate Phosphatase-Like protein 1) and Odin (aka Anks1a) (Kim et al., 2010; Lee et al., 2012; Leone et al., 2009; Mercurio et al., 2012; Zhuang et al., 2007), though the binding properties of the SAM domains from other Eph receptors are largely unknown. Second, although the PBM sequences of Eph receptors are somewhat different, the short PBM-mediated target bindings are rather promiscuous (Ye and Zhang, 2013) and thus unlikely to be fully responsible for the very diverse Eph intracellular signaling events. In this study, we systematically characterized and compared the bindings of the SAM domain from every Eph receptor to the SAM domains from SHIP2 and Odin. This characterization revealed a highly specific Eph SAM and effector SAM-binding pattern. We then elucidated the mechanistic basis governing such specific Eph SAM and effector SAM binding by solving several pairs of the SAM-SAM heterodimer complexes structures. Such comparative structural analysis, together with biochemical, bioinformatics and cell biology studies, revealed an exquisitely specific effector binding code mediated by the Eph SAM domains, which helps to answer the major question on the ephrin-Eph forward signaling specificity. Additionally, our study also provides mechanistic explanations to numerous disease-causing mutations identified in the SAM domains of Eph receptors, and allows us to discover SAMD5 as a new intracellular effector of Eph receptors.\n\n## Results\n\n### Interactions between Eph SAM domains and SHIP2 SAM or Odin SAM1\n\nSHIP2 is a mammalian inositol polyphosphate 5-phosphatases and is the only member in the family that contains a C-terminal SAM domain (Figure 1A). It has been reported that SHIP2 was a binding partner of EphA2 through SAM\u2013SAM interaction (Lee et al., 2012; Leone et al., 2009). We first confirmed this interaction. Both Eph SAM and SHIP2 SAM alone behaved as homogeneous monomers in solution as indicated by the analytical gel filtration analysis (Figure 1B). While the 1:1 mixture of EphA2 SAM and SHIP2 SAM was eluted at a smaller volume than the individual proteins, suggesting the formation of a hetero SAM-SAM complex (Figure 1B). ITC (Isothermal Titration Calorimetry) experiment revealed that EphA2 SAM bound to SHIP2 SAM with a dissociation constant (Kd) of\u00a0~2.22 \u03bcM at a 1:1 stoichiometry (Figure 1C). We then measured the binding affinities of SHIP2 SAM with the SAM domain from other members of Eph receptors by ITC. We found that only the SAM domains of EphA1/EphA2/EphA6 specifically bound to SHIP2 SAM, and the rest of Eph SAM domains displayed no detectable binding to SHIP2 SAM (Figure 1D).\n\nOdin was reported to be another binding partner of EphA2 (Kim et al., 2010; Mercurio et al., 2012), and the interaction had been implicated in affecting the stability of EphA2 by modulating its ubiquitination process (Kim et al., 2010). We also verified the interactions between Odin and Eph receptors SAM domains (Figure 1E\u00a0and\u00a0F). The results showed that, similar to SHIP2 SAM, Odin SAM1 only selectively bound to the SAM domains from EphA1/EphA2/EphA6 (Figure 1D). The quantitative and systematic binding results shown in Figure 1D indicated that the interactions between Eph SAMs and their downstream effectors were highly specific.\n\n### Overall structures of the EphA2/SHIP2 and EphA6/Odin SAM-SAM complexes\n\nTo elucidate the molecular mechanism governing the specificity of the bindings of SHIP2 SAM and Odin SAM1 to Eph receptors, we determined the crystal structure of the SHIP2 SAM-EphA2 SAM complex and the Odin SAM1-EphA6 SAM complex at the 1.5 \u00c5 and 1.3 \u00c5 resolutions, respectively (Table 1). The crystals diffracting at very high resolutions of both complexes were facilitated by fusing the Eph SAM domain to the C-terminal tail of the SHIP2 SAM or Odin SAM1 with a flexible linker (14 residues \u2018SSGENLYFQSGSSG\u2019 for the SHIP2 SAM-EphA2 SAM complex; 17 residues \u2018PSGSSGENLYFQSGSSG\u2019 for the Odin SAM1-EphA6 SAM complex). The covalent linkage did not appear to affect the overall structure of the complexes, as the linkers in both complexes are sufficiently long and flexible (Figure 2\u2014figure supplement 1).\n\n**Table 1.**\n Statistics of X-ray crystallographic data collection and model refinement\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"5\">Data collection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Dataset</td>\n      <td>EphA2/SHIP2</td>\n      <td>EphA6/Odin</td>\n      <td>EphA5/SAMD5</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>C2</td>\n      <td>P212121</td>\n      <td>C2</td>\n    </tr>\n    <tr>\n      <td>Unit cell (a, b, c, \u00c5)</td>\n      <td>138.283, 43.344, 46.377</td>\n      <td>38.985, 85.042, 98.383</td>\n      <td>98.195, 29.651, 54.170</td>\n    </tr>\n    <tr>\n      <td>Unit cell (\u03b1, \u03b2, \u03b3, \u00b0)</td>\n      <td>90, 95.354, 90</td>\n      <td>90, 90, 90</td>\n      <td>90, 109.952, 90</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.97915</td>\n      <td>0.97915</td>\n      <td>0.97961</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>50.00\u20131.50 (1.53\u20131.50)</td>\n      <td>50.00\u20131.30 (1.32\u20131.30)</td>\n      <td>50.00\u20131.90 (1.93\u20131.90)</td>\n    </tr>\n    <tr>\n      <td>No. of unique reflections</td>\n      <td>43485 (2131)</td>\n      <td>79398 (3792)</td>\n      <td>11829 (575)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>3.6 (3.5)</td>\n      <td>5.9 (5.7)</td>\n      <td>3.2 (3.2)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3</td>\n      <td>37.9 (2.4)</td>\n      <td>39.2 (2.1)</td>\n      <td>25.7 (1.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.0 (98.1)</td>\n      <td>97.8 (95.1)</td>\n      <td>99.1 (100.0)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)*</td>\n      <td>4.7 (62.4)</td>\n      <td>5.4 (90.3)</td>\n      <td>5.3 (77.1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Structure refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50.0\u20131.50 (1.55\u20131.50)</td>\n      <td>50.0\u20131.30 (1.35\u20131.30)</td>\n      <td>50.0\u20131.90 (1.96\u20131.90)</td>\n    </tr>\n    <tr>\n      <td>Rcryst\u2020/Rfree\u2021</td>\n      <td>0.1434 (0.2686)/ 0.1911 (0.3129)</td>\n      <td>0.1695 (0.2565)/ 0.1987 (0.2671)</td>\n      <td>0.1938 (0.3256)/ 0.2340 (0.3282)</td>\n    </tr>\n    <tr>\n      <td>Rmsd bonds (\u00c5)/angles (\u00b0)</td>\n      <td>0.009/1.22</td>\n      <td>0.010/1.52</td>\n      <td>0.015/1.67</td>\n    </tr>\n    <tr>\n      <td>Average B factor (\u00c52)\u00a7</td>\n      <td>30.8</td>\n      <td>22.8</td>\n      <td>30.1</td>\n    </tr>\n    <tr>\n      <td>No. of protein atoms</td>\n      <td>2046</td>\n      <td>2745</td>\n      <td>1058</td>\n    </tr>\n    <tr>\n      <td>No. of other atoms</td>\n      <td>273</td>\n      <td>443</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>No. of reflections</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Working set</td>\n      <td>41244 (4003)</td>\n      <td>77272 (7372)</td>\n      <td>11252 (1065)</td>\n    </tr>\n    <tr>\n      <td>Test set</td>\n      <td>2186 (227)</td>\n      <td>1947 (190)</td>\n      <td>565 (57)</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot (%)\u00a7</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored regions</td>\n      <td>99.2</td>\n      <td>99.1</td>\n      <td>98.5</td>\n    </tr>\n    <tr>\n      <td>Allowed regions</td>\n      <td>0.8</td>\n      <td>0.9</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_Numbers in parentheses represent the value for the highest resolution shell.*\u00a0Rmerge =\u03a3|Ii - Im|/\u03a3Ii, where Ii is the intensity of the measured reflection and Im is the mean intensity of all symmetry-related reflections.\u2020\u00a0Rcryst = \u03a3||Fobs| - |Fcalc||/\u03a3|Fobs|, where Fobs and Fcalc are observed and calculated structure factors.\u2021\u00a0Rfree = \u03a3T||Fobs| - |Fcalc||/\u03a3T|Fobs|, where T is a test data set randomly chosen and set aside prior to refinement. For EphA6-Odin, 2.5% of total reflections were enough for the test set during refinement. For EphA2-SHIP2 and EphA5-SAMD5, 5% of total reflections were chosen as test sets.\u00a7\u00a0B factors and Ramachandran plot statistics are calculated using MOLPROBITY (Chen et al., 2010)._\n\nThe two complex structures adopt an essentially identical End-Helix/Mid-Loop binding mode, in which positively charged residues from the N-terminal end of \u03b15 (End-Helix) of EphA2/EphA6 bind to negatively charged residues from the loop connecting \u03b12-\u03b14 (Mid-Loop) from SHIP2/Odin, forming the well-known tail-to-head SAM domain heterodimer (Figure 2A\u2013E) (Qiao and Bowie, 2005). The structures determined in this study were also consistent with an earlier NMR-derived EphA2 SAM/SHIP2 SAM heterodimer (Lee et al., 2012; Leone et al., 2009). However, it should be noticed that some of the critical features mediating the specific SAM\u2013SAM interaction revealed in our study were not revealed in the NMR structures (Figure 2 and Figure 2\u2014figure supplement 2), likely due to insufficient distance restraints of the NMR experiments. To avoid redundancy, we will not describe the detailed binding interactions of the two complexes here, except that we further validated some of such charge\u2013charge interactions using site substitution approach (Figure 2H). The structures of the complexes also revealed that the surfaces of the EphA2/EphA6 SAM Mid-Loop do not complement with the surfaces of the End-Helix of their own or with those of the SHIP2/Odin SAM domains (Figure 2\u2014figure supplement 3), explaining that these four SAM domains neither form homo-oligomers nor polymerize into hetero-oligomers (Knight et al., 2011; Qiao and Bowie, 2005; Stapleton et al., 1999; Thanos et al., 1999). A noticeable feature in both complexes is that the backbone methylene of a Gly residue at the beginning of \u03b15 from Eph SAM (Gly954A2/Gly1104A6) is in close contact with an aromatic residue from SHIP2/Odin SAM (Trp1221SHIP2/Phe738Odin) (Figure 2B\u00a0and\u00a0D and Figure 2\u2014figure supplement 4). As such, replacing Gly at the beginning of \u03b15 of Eph SAM with any other amino acid residues will introduce steric hindrance in preventing their binding to SHIP2/Odin SAM. It is further noted that Gly is highly preferred at the beginning of \u03b15 among Eph SAM domains (12 out of the 14 members are Gly; see Figure 2\u2014figure supplement 5A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-v2.jpg)\n\n**Figure 2.:** (A and C) Ribbon representations of the EphA2 SAM-SHIP2 SAM (A) and the EphA6 SAM-Odin SAM1 (C) complex structures. (B and D) Details of the interfaces in the EphA2 SAM-SHIP2 SAM (B) and EphA6 SAM-Odin SAM1 (D) complexes. Key residues are shown with the stick model. Salt bridges and hydrogen bonds are indicated with dashed lines. The Gly-aromatic residue pairs (Gly954A2/Gly1104A6 and Trp1221SHIP2/Phe738Odin) are indicated with red dashed circles. (E) Superposition of two the EphA2 SAM-SHIP2 SAM and the EphA6 SAM-Odin SAM1 complex structures with the critical R958/F1226 and R1108/F743 pairs highlighted with the stick model. (F\u2013G) Details of the planar cation-\u03c0 interaction between EphA2 R958 and SHIP2 F1226 (F), and EphA6 R1108 and Odin F743 (G). Note the planar alignment of the \u03c0 electrons of the Arg sidechain and the neighboring peptide backbones in both structures. (H) Summary of the ITC-derived results showing that the mutations of the critical residues in the SAM domain interface can dramatically affect the bindings of EphA SAMs to the SAM domains from SHIP2 or Odin. (I) The Bindings of EphA2 SAM or its various mutants to the full-length SHIP2 by the GST pull-down assay. (J) The bindings of SHIP2 SAM or its F1226L-mutant to the full-length WT GFP-EphA2 analyzed by the GST pull-down assay. (K) GST pull-down assay showing that the K857R mutant of EphA5 SAM gained its binding to SHIP2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Ribbon diagram of the SHIP2 SAM-EphA2 SAM (left) and Odin SAM1-EphA6 SAM (right) structures. The 14-residue fusion linker is not defined in the electron density map in the SHIP2 SAM-EphA2 SAM structure and shown as the dashed line. The 17-residue fusion linker is well defined and stabilized by crystal packing in the Odin SAM1-EphA6 SAM structure. The grey dotted lines show the distances between the C-terminus of SHIP2 SAM or Odin SAM1 and the corresponding Eph SAM N-terminus is\u00a0~\u00a023 \u00c5 and\u00a0~\u00a020 \u00c5, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overall structure of an earlier NMR-derived EphA2 SAM/SHIP2 SAM heterodimer shown at the same view as our crystal structure in Figure 2A. (B) The Arg958A2/Phe1226SHIP2 cation-\u03c0 interaction revealed in our study was not defined in the NMR experiments as shown by four representative structures from the ensemble deposited.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Open-book views of the surfaces of the EphA2/SHIP2 SAM\u2013SAM interfaces showing the charge complementation. The corresponding End-Helix surface of SHIP2 is not positively charged compared with the End-Helix surface of EphA2 SAM and the corresponding Mid-Loop surface of EphA2 is not negatively charged compared with the Mid-Loop surface of SHIP2 SAM. The surface electrostatic potentials were calculated by APBS and contoured at 3.5 kBT/eC.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The backbone methylene of a Gly residue at the beginning of \u03b15 from Eph SAM (Gly954A2/Gly1104A6) is in close contact with an aromatic residue from SHIP2/Odin SAM (Trp1221SHIP2/Phe738Odin) (A and B). In the EphA5/SAMD5 complex, Gly853 is in close contact with G27SAMD5 backbone and V32SAMD5 sidechain (C). The black dashed lines indicate the distances between two atoms are within 4 \u00c5.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Sequence alignments of all human Eph SAM domains (A) and members of EphA2 (B), EphA6 (C) and EphA5 (D) from 4 to 5 representative vertebrate species. The secondary structure elements are labeled according to the EphA2 SAM structure. Residues that are identical and highly similar are indicated in red and yellow boxes, respectively. The critical residues for Eph SAM interaction specificity described in the manuscript are indicated with blue arrows.\n\nThe very high-resolution crystal structures of the two complexes also allowed us to identify a unique interaction feature that is critical for the exquisite specific interaction between the EphA2/A6 SAM domain and SHIP2/Odin SAM domains. Taking the EphA2/SHIP2 complex as the example, a special cation-\u03c0 interaction between the Arg958A2 and Phe1226SHIP2 was uncovered by the high-resolution crystal structure (Figure 2F). The guanidinium group of Arg958A2 forms hydrogen bond network with Asp1222SHIP2 and His955A2 on one side and with the backbone carbonyl oxygen of Ile917A2. As such the guanidinium plane of Arg958A2 (and its delocalized \u03c0-system) is in the same plane with the \u03c0-system of the planer peptide bond between Ile917A2 and Lys918A2, forming energetically favorable \u03c0-\u03c0 stacking with the benzene ring of Phe1226SHIP2 (Figure 2F) (Ma and Dougherty, 1997). The exactly same interaction pattern occurs for the EphA6/Odin complex (Figure 2G). It is predicted that alteration of any of the interactions in the above-described \u03c0-\u03c0 stacking will perturb the binding of EphA2/6 to SHIP2 or Odin. The most subtle substitution of Arg is probably by the positively charged Lys. Consistent with the binding pattern, the corresponding residue of Arg958 in EphA2 is also found in EphA1 and A6, which could interact with SHIP2 and Odin. Whereas the rest of Eph SAMs contain a Lys in this position except EphA10, which is an Ala (Figure 2\u2014figure supplement 5). Based on the structures shown in Figure 2F, replacing Arg958A2 with Lys would eliminate the planar \u03c0-system formed by Arg958A2 and the Ile917A2-Lys918A2 peptide bond and thus seriously weaken the binding, even though the positive charge at the site is retained. Totally consistent with this structural analysis, substitution of Arg958A2 with Lys completely eliminated the bindings of EphA2 SAM to SHIP2 SAM or Odin SAM (Figure 2H\u00a0and\u00a0I). Correspondingly, substitution of Phe1226 of SHIP2 SAM with non-aromatic hydrophobic residues (e.g. Leu or Ala) also totally eliminated the binding between SHIP2 SAM and EphA2 SAM (Figure 2H\u00a0and\u00a0J). Additionally, replacing Asp1222 in SHIP2 SAM with Ala also eliminated the binding between SHIP2 and EphA2, highlighting the importance of the hydrogen bond between Asp1222SHIP2 and Arg958A2 in stabilizing the guanidinium group of Arg958 (Figure 2H). We mined COSMIC cancer somatic mutation database (Forbes et al., 2017; http://cancer.sanger.ac.uk/cosmic) and found that an Arg957 (corresponding to mouse Arg958) to Cys somatic mutation of EphA2 has been detected in ovary carcinoma patients. As expected, substitution of Arg with Cys also completely eliminated EphA2 SAM\u2019s binding to the SHIP2 or Odin (Figure 2H\u00a0and\u00a0I).\n\nThe above structural and biochemical analysis highlights the critical role and the exquisite selectivity of Arg958 in EphA2 (or the corresponding Arg in EphA1/EphA6) in terms of bindings to the effectors such as SHIP2 and Odin. We pushed this concept further by testing whether we might be able to convert a non SHIP2/Odin binding Eph SAM domain into a binding one by simply substituting the Lys at the position corresponding Arg958A2 to Arg (i.e. a single residue \u2018gain-of-function\u2019 mutation). We chose EphA5 SAM domain to test this hypothesis, as it shares\u00a0~50% sequence identity to EphA2 SAM but has no or minimal binding to SHIP2 or Odin (Figure 2H). Satisfyingly, substituting Lys857 (corresponding Arg958A2) with Arg converted EphA5 SAM into a SHIP2 binding SAM domain, though the binding was still relatively weak. The same substitution also enhanced EphA5 SAM\u2019s binding to Odin SAM1 by more than 100-fold (Figure 2H, bottom). Taken together, the above structural and biochemical analysis highlighted that the SAM\u2013SAM domain interactions between Eph receptors and their cytoplasmic effectors are highly specific.\n\n### Specific SAM domain-mediated effector binding is required for ligand-induced cell repulsion function of EphA2\n\nWe next tested the cellular function of the specific SAM domain-mediated effector association of the EphA2. DU145 cells, which have a low expression level of endogenous EphA2 receptors, were used to study its ligand-induced inhibition of cell spreading (Barquilla et al., 2016; Lee et al., 2012; Miao et al., 2000; Shi et al., 2017). To focus our studies on the forward signal pathway of EphA2, we chose to engage the EphA2 receptor by adding soluble ephrinA1-Fc chimera to the cell culture media. To minimize potential trans signaling from neighboring cells, all experiments were performed in low-density cultures (at about 30% confluency or below). Cells were infected with the lenti-virus containing the 3\u00a0\u00d7\u00a0Flag tagged EphA2 FL WT, EphA2-R958K, EphA2 with the SAM domain deleted (EphA2 delSAM), and EphA2 with its SAM substituted by EphA5 SAM (EphA2-SAMA5 chimera). Cells infected with the 3\u00a0\u00d7\u00a0Flag tagged GFP were the negative controls. As expected and consistent with the previous reports (Barquilla et al., 2016; Shi et al., 2017), in response to ephrinA1-Fc stimulation, cells expressing the wild-type full-length EphA2 receptor dramatically retracted and became rounded, whereas the negative control cells did not respond to ephrinA1 (Figure 3A and quantified in Figure 3B). Using this specific EphA2-mediated cell rounding assay, the repulsion phenotype of the cells expressing EphA2 delSAM, EphA2 R958K or EphA2-SAMA5 chimera (each expressed at a similar level with that of EphA2 WT; Figure 3C) were evaluated. None of them displayed ephrinA1-induced cell rounding (Figure 3A and B), indicating that the highly specific EphA2 SAM domain-mediated effector association is required for the cell spreading function of EphA2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig3-v2.jpg)\n\n**Figure 3.:** (A) Selected images showing the morphologies of DU145 cells expressing the wild-type or various mutants of EphA2 before and after ephrin A1-Fc treated. Cells were stained for F-actin with fluorescent phallodin (red), and nuclei were labelled with DAPI (blue). (B) Quantification of the cell areas of DU145 cells expressing various constructs. Data represents the mean\u00a0\u00b1SEM from four independent experiments with each experiment of at least 400 cells (***, p<0.001 by Two-way ANOVA with multiple comparisons test). (C) Western blot analysis showing the expression levels of different EphA2 (anti-Flag) constructs.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Selected images showing the morphologies of DU145 cells infected with lenti-virus expressing EphA2 or the GFP control, with or without SHIP2-SAM co-expression. These cells were further divided into two groups, with or without ephrin A1-Fc treatment. SHIP2-SAM was detected by antibody against Myc-tag (green). Cells were stained for F-actin with fluorescent phalloidin (red) and nuclei were labeled with DAPI (blue). (B) Quantification of the cell sizes of DU145 cells expressing various proteins. Data represent the mean\u00a0\u00b1\u00a0SEM from four independent experiments with each experiment of at least 500 cells (***, p<0.001 by Two-way ANOVA with multiple comparisons test). (C) Western blot analysis showing the expression levels of EphA2 (anti-Flag) and SHIP2-SAM (anti-Myc) in transfected cells in each group. GAPDH serves as the loading control.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative images of cells expressing different EphA2 constructs before and after ephrin A1-Fc treatment at different time points. Retraction of processes (exampled by an arrow in each image and enlarged in the insert) only observed in ephrin A1-Fc treated HEK293T cells expressing WT full-length GFP-EphA2. In contrast, no retractions were observed in cells expressing EphA2 R958K, EphA2 R958C or the GFP control. (B) Quantification of the cell areas of HEK293T cells expressing various constructs. Data represent the mean\u00a0\u00b1\u00a0SEM from four independent experiments with each experiment of at least 500 cells. (***, p<0.001 by Two-way ANOVA with multiple comparisons test). (C) Protein expression levels of WT EphA2 and its mutants were detected by western blot using anti-EphA2 antibody.\n\nWe next performed cell spreading assay by transfecting SHIP2-SAM to cells infected with lenti-virus expressing EphA2 or the GFP control. The data showed that overexpressing SHIP2-SAM effectively reversed the cell collapse phenotype caused by ephrinA1 activation of EphA2, whereas over-expressing SHIP2-SAM did not lead to any observable changes in the GFP control (Figure 3\u2014figure supplement 1), indicating that this blocking effect by SHIP2-SAM is EphA2-dependent.\n\nArg957 (corresponding to Arg958 of mouse EphA2 SAM), which is found to be mutated to Cys in patients with ovary carcinoma, is located in the SAM-SAM binding interface. We also tested the impact of this mutation as well as the R958K mutation using HEK293T cells, another cell line widely used for cell spreading assay (Lawrenson et al., 2002; Yamazaki et al., 2009). Similar to the R958K mutation in the DU145 cells assay, we also observed that HEK293T cells expressing either of the EphA2 R958C or R958K mutants lost the capacity to undergo ephrinA1-induced retraction, whereas cells expressing EphA2 WT showed effective ephrinA1-induced retractions (Figure 3\u2014figure supplement 2).\n\n### SAMD5 as a new effector of eph SAM\n\nThe above crystal structures of EphA2-SHIP2 and EphA6-Odin revealed the importance of the negatively charged residues within the \u03b12-\u03b13 loop and at the beginning of the \u03b14 helix of SAM domain in binding to Eph SAM (Figure 2 and Figure 4A). We tried to look for new binding partners for Eph SAMs. By inspecting each of the 163 SAM domains in 127 mouse SAM domain containing proteins (SMART\u2019s nrdb database: http://smart.embl-heidelberg.de/), we found several potential candidates that may interact with Eph SAM. AIDA1, also named as Ankyrin repeat and sterile alpha motif domain-containing protein 1B (Anks1b), is a paralog of Odin (Anks1a) and thus its SAM1 domain is expected to bind to EphA2/A6 SAM with the same mode and specificity as Odin SAM1 does. Another promising candidate is SAMD5, whose SAM domain is similar to SHIP2 SAM (Figure 4A) and highly expressed in breast cancer cells and mainly cytoplasmic (Lo et al., 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sequence alignment of the SAM domains of SHIP2, Odin and two potential interaction partners (AIDA1 and SAMD5). (B and C) ITC (B) and analytical gel-filtration chromatography (C) showing that SAMD5 binds to EphA5 SAM. (D) ITC-derived dissociation constants showing that SAM domains from EphA5-8 and EphB1-4 bind to SAMD5 SAM.\n\nWe purified SAMD5 SAM and measured its binding to the SAM domain of every Eph receptor. Indeed, SAMD5 SAM was found to be a strong binder of Eph SAM domains such as EphA5 and others (Figure 4B\u2013D). Surprisingly, although the amino acid sequence of SAMD5 SAM can be aligned well (the key binding residues in particular) with the SAM domain sequences of SHIP2 and Odin (Figure 4A, top), SAMD5 bound to EphA5-8 and EphB1-4 SAM domains with strong affinities but only weakly to EphA1/2 SAM domains (Figure 4D). This biochemical data further substantiated that the SAM domains of Eph receptors can provide diverse binding specificities to their effectors.\n\n### EphA5/SAMD5 SAM-SAM complex structure reveals the binding specificity\n\nTo delineate the mechanism governing the Eph/SAMD5 interaction, we solved the EphA5/SAMD5 SAM\u2013SAM complex crystal structure at the resolution of 1.9 \u00c5 (Table 1). Similar to that of EphA2/SHIP2 or EphA6/Odin, EphA5 SAM also uses its End-Helix to interact with the Mid-Loop SAMD5 SAM (Figure 5A\u00a0and\u00a0B). However, their detailed binding mechanisms are quite different. The most prominent difference is that the EphA5/SAMD5 SAM-SAM does not contain the \u03c0-\u03c0 stacking observed in the EphA2/SHIP2 and EphA6/Odin complexes (Figure 5C). Instead, the EphA5/SAMD5 SAM-SAM is essentially completely mediated by charge\u2013charge and hydrogen bonding interactions (Figure 5C). Perturbation of these interactions invariably weakened the interaction (Figure 5E). Similar to what we observed in the EphA2/SHIP2 and EphA6/Odin structures, Gly853A5 at the beginning of \u03b15 in EphA5 SAM is also critical for its binding to SAMD5 SAM. The backbone amine of Gly853A5 forms a strong hydrogen bond with Tyr27SAMD5 sidechain hydroxyl group (Figure 5C). This hydrogen bond brings the \u03b12-\u03b13 loop of SAMD5 very close to \u03b15 of EphA5 (Figure 2\u2014figure supplement 4C), and the site has no room to accommodate any residues with side chains, further highlighting the importance of a Gly at this position in the Eph SAM domains (Figure 2\u2014figure supplement 5A). To our surprise, substitution of Tyr27SAMD5 with Phe completely eliminated SAMD5\u2019s binding to EphA5 (Figure 5E), indicating the critical role of the Gly853A5-Tyr27SAMD5 hydrogen binding in addition to their steric role.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig5-v2.jpg)\n\n**Figure 5.:** (A) Ribbon diagram showing the overall structure of the EphA5/SAMD5 complex. (B) Superposition of the EphA5/SAMD5 and EphA2/SHIP2 complex structures by aligning EphA5 and EphA2 together. SAMD5 and SHIP2 use different surfaces to interact with the same site on the SAM domains from EphA5 and EphA2. (C) Stereo view of the detailed interaction of the EphA5/SAMD5 complex. Key residues are shown with the stick model. Salt bridges and hydrogen bonds are indicated with dashed lines. (D) Structure model showing that V852P mutation of EphA5 will introduce steric hindrance with Tyr27 and Asp40 from SAMD5 and thus impair the binding. (E) ITC-derived dissociation constants showing mutations of critical residues weaken or abolish the binding between SAMD5 and EphA5, and a gain-of-function mutation of EphA2 SAM (P953A) with enhanced binding to SAMD5.\n\nOur crystal structure of the EphA5/SAMD5 complex can explain why SAMD5 does not bind to EphA1-4, EphA10, and EphB6. For the SAM domains from EphA3/EphA4/EphA10/EphB6, each has one or more of the key residues missing (e.g. EphA10 and EphB6 are missing Gly at the beginning of \u03b15, and EphA3/4 SAMs are missing positively charged Lys at the end of \u03b12 or in the middle of \u03b15; Figure 2\u2014figure supplement 5). For the EphA1/EphA2 SAM domains, although all the key residues are present, it is noticed that a Pro residue is at the position corresponding to Val852A5 (Figure 2\u2014figure supplement 5). The sidechain pyrrolidine ring of Pro would introduce steric hindrance with Asp40, and thus may perturb SAMD5 from binding to EphA1/EphA2 SAM domains (Figure 5D), resulting in low affinities (Figure 4D). Supporting this analysis, replacing Val825 of EphA5 SAM with a Pro led to about 10-fold affinity decrease in its binding to SAMD5. Additionally, substitution Pro953 in EphA2 with a smaller residue Ala increased its SAMDs SAM binding by more than 10 fold (Figure 5E). Finally, EphA6 SAM could bind to both SAMD5 and SHIP2/Odin SAM domains (Figure 1D and 4D), since it satisfies the binding criteria of both types.\n\n### Disease mutations of Eph SAM domains\n\nEph receptors mediate cell-cell contact signaling and are vital for cell adhesion and migration (Kania and Klein, 2016). It is not surprising that mutations of Eph receptors can cause various human diseases including cancers (Barquilla and Pasquale, 2015; Boyd et al., 2014; Gaitanos et al., 2015; Genander and Fris\u00e9n, 2010; Kania and Klein, 2016; Pasquale, 2005; 2008; 2010). We surveyed the COSMIC cancer somatic mutation database (Forbes et al., 2017; http://cancer.sanger.ac.uk/cosmic; a collection of somatic mutations found in cancer patients mainly from large-scale genome sequencing studies) and found that numerous mutations occur in almost every subtype of Eph genes except for EphB6. A significant number of these mutations fell into the SAM domain regions (Figure 6A). The biochemical and structural information provided in this study allowed us to test the impact of these mutations found in cancer patients in terms of binding to the cytoplasmic effectors including SHIP2 and SAMD5. For the practical workload reason, we chose to investigate the mutation sites that are at the positions critical for the SAM/SAM interactions analyzed in our structural studies shown in Figure 2 and 5, and are shaded in orange in Figure 6A. We purified each of these mutant SAM domains of Eph proteins, and measured their individual bindings to SHIP2 SAM or SAMD5 SAM by ITC-based assays. The results are summarized in Figure 6B and C. As expected, EphA1 R966C, EphA2 R957C, and EphA6 R1014Q mutations (the cation-\u03c0 forming Arg at \u03b15 helix) totally abolished their binding to SHIP2 (Figure 6B). Similar deleterious effect can also be seen in EphA1 \u03b11-\u03b12 loop mutation R926G (Figure 6B). EphA5 G1014S, EphA7 G972V, and EphB3 G974D mutations disrupted their binding to SAMD5 (Figure 6C), further supporting our structural finding that the sidechain-less Gly at the beginning of \u03b15 is critical (Figure 2\u2014figure supplement 4). Mutations on other critical sites such as EphA5 K1018M, EphA6 R1014Q, EphA8 R943H, and EphB1 K926M, A961T all weakened or even disrupted their binding to SAMD5 (Figure 6C). Taken together, the above analysis of the impact of the Eph SAM mutations found in cancer patients illustrated the tremendous values of the structural and biochemical studies of Eph SAM-mediated target interactions presented in the current study.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35677/elife-35677-fig6-v2.jpg)\n\n**Figure 6.:** (A) Sequence alignments of Eph SAMs. The secondary structure elements are labeled according to the EphA2 SAM structure. Residues that are identical and highly similar are shown in red and green, respectively. The residues critical in the SAM\u2013SAM interactions are shaded in orange. Mutations within the SAM domain of all Eph receptors found in cancer patients are indicated in grey or magenta. The residues indicated in magenta were experimentally tested and shown in B and C. (B) Summary of the impacts of selected mutations of EphA1, A2, A6 identified in cancer patients (see panel A) on the SHIP2 binding. (C) Summary the impacts of selected mutations of EphA5, A6, A7, A8 and EphB1, B2, B3 identified in cancer patients (see panel A) on the SAMD5 binding.\n\n## Discussion\n\nSince the discovery of the Eph receptors three decades ago, numerous efforts have been invested in elucidating ligand-induced signaling mechanisms of this classical family of RTKs in many biological processes. However, in contrast to the explosive amount of information on the functions uncovered, our understandings of the forward signaling mechanisms of the receptors are relatively poor. It is particularly unclear how Eph receptors may engage their specific cytoplasmic effectors to transmit biological signals using their highly similar cytoplasmic domains. At present, very little knowledge is available on what downstream targets of Eph receptors are and whether each Eph receptor engages different cytoplasmic effectors upon ligand binding, and this has seriously hampered our understanding on the action mechanisms of this family of RTKs in both physiological and patho-physiological conditions.\n\nIn this study, we performed systematic biochemical and structural studies of the bindings of three SAM domains, two from previously identified Eph-binding proteins (SHIP2 and Odin) and one from a new Eph-binding protein discovered in this study (SAMD5), to the SAM domains from every Eph receptor. Our study reveals that the Eph SAM domains have exquisitely specific target SAM domain-binding properties, although their overall SAM-SAM heterodimer formation modes are very similar. The binding affinities for all the interactions reported here are in the submicromolar to micromolar range. In living cells, their binding avidities are likely to be further enhanced due to the following two reasons. First, Eph receptors are known to multimerize upon ligand activation, mainly via their extracellular domains (Janes et al., 2012; Seiradake et al., 2013). The multimerization of the extracellular domains can bring a number of Eph cytoplasmic tails in close proximity. Second, several studies have revealed that effectors like SHIP2 can be recruited to the cell membrane via SH2 domain mediated interactions to other cell surface receptors (Pesesse et al., 2001; Wang et al., 2004). These two mechanisms can increase the local concentrations of Ephs and their downstream targets, and thus enhance their binding avidities. This result provides a partial answer in rationalizing diverse functions of Eph receptors that can be induced by the same or similar ephrin ligand(s). It is anticipated that there exist additional SAM domain-containing proteins capable of binding to Eph receptors. Since there are 110 SAM domain-containing proteins in addition to the 14 Eph receptors and three Eph-binding proteins studied here, one approach to identify new Eph SAM-binding proteins is to survey bindings of all 14 Eph SAM domains to the rest of the SAM domains in the human proteome using purified recombinant proteins by protein array-based methods.\n\nWe demonstrated that, unlike many other previously characterized polymer forming SAM domains, every Eph receptor SAM domain adopts stable monomers in solution (Harada et al., 2008; Knight et al., 2011; Stapleton et al., 1999; Thanos et al., 1999; Wang et al., 2016). Additionally, no SAM\u2013SAM hetero-complexes between Eph SAM domains could form (data not shown). The structures solved in this study revealed that the SAM domains from EphA2, EphA5, and EphA6 all bind to its effector SAM domain using their respective End-Helix. It is noticed that every Eph SAM domain also contains an extremely conserved Mid-Loop (see EphA2/EphA5/EphA6 SAM sequence alignments in Figure 2\u2014figure supplement 5B\u2013D for an example). It is compelling to speculate that at least some Eph SAM domains may also use their Mid-Loops to bind to the End-Helix of their effector SAM domains. This hypothesis is further supported by the observation that many residues in the Mid-Loop regions of Eph SAM domains are found to be mutated in cancer patients (Figure 6A).\n\nThe structures of Eph SAM domains in complex with the SAM domains of several different effectors presented in this study are very useful in interpreting numerous mutations/variants found in the Eph SAM domains in patients with different diseases (e.g. cancers analyzed in Figure 6). It is expected that not all mutations occur in the SAM domains will alter functions of Eph receptors. The structures of the SAM\u2013SAM complexes presented in this work, coupled with amino acid sequence-based analysis, readily predict the following three categories of mutations that will likely alter functions of Eph receptors via changing their SAM domain structures and effector binding. First, mutations of residues in the folding core or residues playing other critical structural roles (e.g. residues highlighted in red in Figure 6A) may impair the overall structure and thus effector binding of Eph SAM domains. We tested a few of such mutations (e.g. EphA2 W913C and D944N), and found that these SAM mutants invariably expressed as inclusion bodies (data not shown). Second, mutations occur in the End-Helix region of Eph SAM domains. This category of Eph SAM domain mutants often has defects or even total impairments in binding to their effectors (Figure 6B\u00a0and\u00a0C), and thus are expected to have impaired downstream signaling. Third, mutations occur in the Mid-Loop region of the Eph SAM domains may also impair their binding to effector SAM domain as we mentioned above, although this prediction will need to be verified. We propose that the Eph SAM mutations found in patients that fall into the above three categories will have higher chance to be disease-relevant mutations and thus are given higher priority to be investigated. Certainly, it cannot be ruled out that mutations of the Eph SAM domains that are outside the three categories may also impair functions of Eph receptors, perhaps via still unknown SAM domain-mediated target bindings.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Invitrogen</td>\n      <td>Cat #C600003</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>DU145</td>\n      <td>ATCC</td>\n      <td>Cat #HTB-81; RRID:CVCL_0105</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>Cat #CRL-3216; RRID:CVCL_0063</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Lenti-virus)</td>\n      <td>pLVX-CMV-EGFP-3 \u00d7Flag-CoPuroR</td>\n      <td>Shanghai Taitool Bioscience Co., Ltd</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Lenti-virus)</td>\n      <td>pLVX-CMV-EphA2 \u22123\u00a0\u00d7\u00a0Flag-CoPuroR</td>\n      <td>Shanghai Taitool Bioscience Co., Ltd</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Lenti-virus)</td>\n      <td>pLVX-CMV-EphA2 -R958K-3\u00d7Flag-CoPuroR</td>\n      <td>Shanghai Taitool Bioscience Co., Ltd</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Lenti-virus)</td>\n      <td>pLVX-CMV-EphA2 delSAM-3\u00a0\u00d7\u00a0Flag-CoPuroR</td>\n      <td>Shanghai Taitool Bioscience Co., Ltd</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Lenti-virus)</td>\n      <td>pLVX-CMV-EphA2- SAMA5\u22123\u00a0\u00d7\u00a0Flag-CoPuroR</td>\n      <td>Shanghai Taitool Bioscience Co., Ltd</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (plasmid)</td>\n      <td>GFP-EphA2</td>\n      <td>This paper</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (plasmid)</td>\n      <td>GFP-EphA2-R958K</td>\n      <td>This paper</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (plasmid)</td>\n      <td>GFP-EphA2-R958C</td>\n      <td>This paper</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (plasmid)</td>\n      <td>Myc-SHIP2-SAM</td>\n      <td>This paper</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>monoclonal Anti-Flag M2, clone M2</td>\n      <td>Sigma</td>\n      <td>Cat #F3165; RRID:AB_259529</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myc (9B11) mouse mAb</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat #2276; RRID: AB_331783</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-EphA2 (D4A2) XP Rabbit mAb</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat #6997; RRID:AB_10827743</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH (D16H11) XP Rabbit mAb</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat #5174; RRID:AB_10622025</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Mouse Ephrin-A1-Fc Chimera</td>\n      <td>R and D Systems</td>\n      <td>Cat #602-A1</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Clone Express II, One-Step Cloning Kit</td>\n      <td>Vazyme Biotech Co., Ltd</td>\n      <td>Cat #C112</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ViaFect transfection reagent</td>\n      <td>Promega Corporation</td>\n      <td>Cat #E4981</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhodamine Phalloidin</td>\n      <td>Cytoskeleton Inc.</td>\n      <td>Cat #PHDR1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin7.0</td>\n      <td>OriginLab</td>\n      <td>http://www.originlab.com/; RRID: SCR_002815</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Software Inc.</td>\n      <td>http://www.graphpad.com/scientific-software/prism/; RRID: SCR_002798</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HKL2000</td>\n      <td>HKL Research Inc.</td>\n      <td>http://www.hkl-xray.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CCP4</td>\n      <td>PMID: 21460441</td>\n      <td>http://www.ccp4.ac.uk/; RRID: SCR_007255</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>PMID: 20124702</td>\n      <td>http://www.phenix-online.org/; RRID: SCR_014224</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>DeLano Scientific LLC</td>\n      <td>http://www.pymol.org/; RRID: SCR_000305</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ASTRA6.1</td>\n      <td>Wyatt Technology Corporation</td>\n      <td>http://www.wyatt.com/products/software/astra.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>https://imagej.nih.gov/ij/; RRID: SCR_003070</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Sigma</td>\n      <td>Cat #D9542</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nDNA encoding EphA2 SAM (NP_034269.2, residues 901\u2013977), SHIP2 SAM (NP_034697.2, residues 1201\u20131257), Odin SAM1 (NP_852078.1, residues 712\u2013776) and SAMD5 SAM (NP_796245.2, residues 1\u201366) were amplified from Mus musculus cDNA libraries as the template and individually cloned into a modified pET vector (Liu et al., 2011). All mutants were created using the standard two-step PCR methods. The fusion constructs of SHIP2 SAM/EphA2 SAM and Odin SAM1/EphA6 SAM each contained a TEV protease recognition site \u2018ENLYFQ\u2019 flanked by several Gly-Ser repeats as the flexible linkers.\n\nRecombinant proteins with N-terminal His6-tag were expressed E.coli BL21 (DE3) strain. Expressed proteins were purified by the Ni2+-NTA Sepharose 6 Fast Flow beads (GE Healthcare,\u00a0China) affinity chromatography followed by a Superdex-200 prep grade size-exclusion chromatography (GE Healthcare) in a buffer containing 50 mM Tris, pH 7.5, 100 mM NaCl, 1 mM DTT, and 1 mM EDTA. The N-terminal His-tag of each protein was cleaved by 3C protease and removed by another step of size-exclusion chromatography.\n\n### Analytical gel-filtration chromatography\n\nAnalytical gel-filtration chromatography was performed on an AKTA system (GE Healthcare) using the Superose 12 10/300 GL column. Protein samples (each with 100 \u00b5L at 50 \u00b5M) were injected into the column pre-equilibrated with a buffer containing 50 mM Tris, pH 7.5, 100 mM NaCl, 1 mM DTT, and 1 mM EDTA.\n\n### Isothermal titration calorimetry assay\n\nIsothermal titration calorimetry experiments were carried out on the MicroCal ITC200 calorimeter (Malvern,\u00a0UK) at 25\u00b0C. The concentration of the injected samples in the syringe was 500 \u03bcM, and the concentration of the samples in the cell was fixed at 50 \u03bcM. The sample in the syringe was sequentially injected into the sample cell with a time interval of 150 s (0.5 \u03bcL for the first injection and 2 \u03bcL each for the following 19 injections). The titration data were analyzed by the Origin 7.0 software and fitted with the one-site binding model.\n\n### Protein crystallography\n\nThe SHIP2 SAM-EphA2 SAM fusion protein (with a 14-residue linker \u2018SSGENLYFQSGSSG\u2019), the Odin SAM-EphA6 SAM fusion protein (with a 17-residue linker \u2018PSGSSGENLYFQSGSSG\u2019), and a 1:1 mixture of SAMD5 SAM and EphA5 SAM were concentrated to\u00a0~10\u201320 mg/mL for crystallization. Crystals were obtained at 16\u00b0C by the sitting-drop vapor diffusion against 80 \u03bcL well solution using 48-well format crystallization plates. SHIP2 SAM-EphA2 SAM complex crystals were grown in a buffer containing 0.2 M Succinic acid pH 7.0, 20% w/v Polyethylene glycol 3350. Odin SAM1-EphA6 complex crystals were grown in a buffer containing 0.1 M HEPES sodium pH 7.5, 1.5 M lithium sulfate monohydrate. SAMD5 SAM-EphA5 SAM complex crystals were grown in a buffer containing 0.2 M ammonium acetate, 0.1 M BIS-TRIS pH 5.5, 25% w/v Polyethylene glycol 3350. Crystals were soaked in the crystallization solution containing additional 5% (for SHIP2/EphA2 and SAMD5/EphA5) or 20% (for Odin/EphA6) v/v glycerol for cryo-protection. Diffraction data were collected at the Shanghai Synchrotron Radiation Facility BL17U1 at 100 K. Data were processed and scaled using HKL2000 (Otwinowski and Minor, 1997).\n\nStructures were all solved by molecular replacement with the EphA2 SAM domain (PDB: 3KKA) and the SHIP2 SAM domain (PDB: 2K4P) or the Odin first SAM domain (PDB: 2LMR) structures as the searching models using PHASER (McCoy et al., 2007). Further manual model buildings and refinements were completed iteratively using Coot (Emsley et al., 2010) and PHENIX (Adams et al., 2010) or Refmac5 (Murshudov et al., 2011). The final models were validated by MolProbity (Chen et al., 2010). The final refinement statistics are summarized in Table 1. The structure figures were prepared by PyMOL (http://www.pymol.org). The structure factors and the coordinates of the structures reported in this work have been deposited to PDB under the accession codes of 5ZRX, 5ZRY and 5ZRZ for the EphA2/SHIP2, EphA6/Odin and EphA5/SAMD5 complex structures, respectively.\n\n### GST pulldown assays\n\nGST-tagged EphA2, EphA5, SHIP2, SAMD5 SAM domains and their mutant proteins or GST alone were incubated with HEK293T cell lysates expressing the GFP-tagged target proteins for 1 hr at 4\u00b0C. The mixture was then loaded onto 20 \u03bcL Glutathione Sepharose 4B beads (GE Healthcare) in PBS buffer for 0.5 hr at 4\u00b0C. After washing twice, the proteins captured by the beads were eluted by boiling with SDS-PAGE loading buffer, resolved by SDS-PAGE and detected by an anti-GFP antibody using western blotting.\n\n### Cell spreading assay\n\nBoth DU145 and HEK293T cells were cultured in Dulbecco\u2019s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), and 1% of penicillin-streptomycin at 37\u00b0C with 5% CO2. HEK293T cells were transfected with GFP-tagged full-length wild type EphA2, EphA2-R958K, EphA2-R958C and GFP alone using ViaFect Transfection Reagent (Promega, Madison, WI) as per manufacturer\u2019s protocol. The full-length wild type EphA2, EphA2-R958K, EphA2 delSAM, EphA2-SAMA5 chimera and GFP control, each with a C-terminal 3 \u00d7 Flag tag, were individually cloned into the pLVX plasmid for commercial viral packaging (Shanghai Taitool Bioscience Co. Ltd, China). All infectious lenti-viruses were produced in HEK293T cells by co-transfected with the VSV-G glycoprotein expressing plasmid pMD2.G and pCMV\u0394R8.91 packaging construct. The lenti-viruses were used to infect DU145 cells and selected with 1 \u03bcg/mL puromycin for ten days. For experiments involving SHIP2-SAM, DU145 cells infected with lenti-virus expressing GFP control or full-length wild type EphA2 were further transfected with Myc-tagged SHIP2-SAM using ViaFect Transfection Reagent (Promega). The expression levels of proteins were verified by immunoblotting. These cells were not individually authenticated and not found to be on the list of commonly misidentified cell lines (International Cell Line Authentication Committee). Cells were tested negative for mycoplasma contamination by cytoplasmic DAPI staining.\n\nCells were preserved to passage into a chamber (ibid \u03bc-Slide VI0.4, Germany), starved for 4 hr in serum-free medium, and then stimulated with ephrinA1-Fc (R and D Systems, 1 \u03bcg/mL in PBS) for 30 min at 37\u00b0C. The cells were then fixed for 15 min with 4% paraformaldehyde in PBS and stained with rhodamine-conjugated phalloidin for 30 min. Cell morphologies were analyzed with a Zeiss Confocal microscope (LSM710) or an Olympus fluorescence microscope (BX61) equipped with a digital camera with a 20\u00a0\u00d7\u00a0objective lens. The cell areas were measured using the ImageJ software (https://imagej.nih.gov/ij/). Two-way ANOVA with multiple comparisons test was used to compare cell areas among different experimental groups, and presented with the GraphPad Prism software.\n",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "57bb6881-08e2-4178-a556-64efa3b36b1f",
+      "submission_id": "1c85c032-cc15-4b6a-b6b7-34757aea4403",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, J.W. Goethe-University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35677.029](https://doi.org/10.7554/eLife.35677.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Specific Eph Receptor-Cytoplasmic Effector Signaling Mediated by SAM-SAM Domain Interactions\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom, Volker D\u00f6tsch (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript gives in great detail a systematic analysis of the interactions of the SAM domains of EphA (and EphB) receptors with other known SAM-domain containing proteins (ODIN and SHIP2) and identify a new SAM-domain containing protein interacting with some of the EphA SAM domains.\n\nThe paper is interesting since it further describes in very structural detail the specificity in the interaction between these SAM proteins and various EphA and EphB proteins, which will be helpful in the future to further decipher/understand the differential activities of individual EphAs after activation by ephrinAs, which is at present difficult to explain given the highly similar intracellular domains including, for example, the promiscuity of the COOH terminal PDZ motifs.\n\nEssential revisions:\n\n1) PDB submission codes should be provided.\n\n2) A binding constant of 2.2 \u03bcM is still rather weak considering cellular concentrations. In principle such weak binding can be functional through multimerization effects (although no multimerization seems to occur with the investigated SAM domains) or higher local concentrations in specific compartments (such as near the membrane). This should be discussed.\n\n3) Related to this, is there any evidence that SAM domains of different Eph receptors can mediate receptor clustering / heterocomplex formation?\n\n4) It would be interesting to study functionally the role of the SAM-SHIP2 or SAM-ODIN proteins using the cell spreading assay (Figure 3). The authors should explore the concept that one or both of these molecules are involved in cell spreading, thus dominant-negative forms of these proteins should be tested whether they can block the reduction in cell spreading after ephrinA1 application. This analysis could include also different EphA receptors.\n\n5) Related to this, the authors postulate that specificity of different Ephs for particular downstream SAMs influences their signalling output. Which downstream SAM proteins are recruited in the spreading assay, and does this depend on the receptor type or mutant used? Is SamD5 involved?\n\n6) Data demonstrating that the analysed cells express the different Eph constructs to a similar level is missing. The essay requires staining for Eph, to make sure that the different constructs tested were expressed at a similar level in the cells analysed. It is best to analyse only those cells that express the receptor at a similar level.\n",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "030d7c30-14f7-4741-85d6-73c0a87ca752",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C1",
+      "claim": "The Eph receptor tyrosine kinase (RTK) family is the largest subfamily of RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eph receptor tyrosine kinase (RTK) family is the largest subfamily of RTKs playing critical roles in many developmental processes such as tissue patterning, neurogenesis and neuronal circuit formation, angiogenesis, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5e794d8b-78d1-4418-a5c5-8ef7c3dea98a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C2",
+      "claim": "Eph receptors play critical roles in tissue patterning, neurogenesis and neuronal circuit formation, and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eph receptor tyrosine kinase (RTK) family is the largest subfamily of RTKs playing critical roles in many developmental processes such as tissue patterning, neurogenesis and neuronal circuit formation, angiogenesis, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "6655dc58-660b-436b-a214-f8cfcc6ca25b",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C3",
+      "claim": "There are 14 Eph proteins in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "How the 14 Eph proteins, via their highly similar cytoplasmic domains, can transmit diverse and sometimes opposite cellular signals upon engaging ephrins is a major unresolved question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated explicitly in the abstract and introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ffa89fa8-b281-49eb-aa8d-ea2911495f95",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C4",
+      "claim": "The cytoplasmic domains of all 14 Eph receptors are highly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cytoplasmic portion of all 14 Eph receptors are highly similar, each containing a membrane-juxtaposing kinase domain, a protein-binding SAM domain immediately followed by a short carboxyl tail PDZ domain-binding motif (PBM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8f0ecab4-982a-4486-91fd-1fc09051476b",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C5",
+      "claim": "Each Eph receptor cytoplasmic domain contains a membrane-juxtaposing kinase domain, a protein-binding SAM domain, and a short carboxyl tail PDZ domain-binding motif (PBM).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cytoplasmic portion of all 14 Eph receptors are highly similar, each containing a membrane-juxtaposing kinase domain, a protein-binding SAM domain immediately followed by a short carboxyl tail PDZ domain-binding motif (PBM) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ca7462dc-5542-495a-a4ba-3cebea858269",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C6",
+      "claim": "The study systematically investigated the bindings of each SAM domain of Eph receptors to the SAM domains from SHIP2 and Odin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we systematically investigated the bindings of each SAM domain of Eph receptors to the SAM domains from SHIP2 and Odin, and uncover a highly specific SAM\u2013SAM interaction-mediated cytoplasmic Eph-effector binding pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e2f19a0f-e7f5-4790-8772-83ea688272c1",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C7",
+      "claim": "The study uncovered a highly specific SAM\u2013SAM interaction-mediated cytoplasmic Eph-effector binding pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we systematically investigated the bindings of each SAM domain of Eph receptors to the SAM domains from SHIP2 and Odin, and uncover a highly specific SAM\u2013SAM interaction-mediated cytoplasmic Eph-effector binding pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e5ffe4ee-e9ca-43f7-80e3-22555ad97bb8",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C8",
+      "claim": "The study identified SAMD5 as a new Eph binding partner.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these Eph/effector SAM heterodimer structures can explain many Eph SAM mutations identified in patients suffering from cancers and other diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "bb36ee11-14f4-47cd-a793-c524d9913b1f",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C9",
+      "claim": "The Eph receptor superfamily contains 14 members in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eph (erythropoietin-producing hepatocyte) transmembrane receptor tyrosine kinase superfamily, with its first member identified30 years ago (Hirai et al., 1987), contains 14 members in mammals and is the largest among all receptor tyrosine kinase families (Lemmon and Schlessinger, 2010; Manning et al., 2002; Murai and Pasquale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b96ae337-2156-4ae2-a571-5827721610f7",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C10",
+      "claim": "The first member of the Eph receptor family was identified 30 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eph (erythropoietin-producing hepatocyte) transmembrane receptor tyrosine kinase superfamily, with its first member identified30 years ago (Hirai et al., 1987), contains 14 members in mammals and is the largest among all receptor tyrosine kinase families (Lemmon and Schlessinger, 2010; Manning et al., 2002; Murai and Pasquale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to Hirai et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ce60f0b4-94d6-4828-a640-405adce66f0e",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C11",
+      "claim": "Eph receptors are classified into the EphA and EphB subfamilies based on their engaging ephrin ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Chiefly based on their engaging ephrin ligands, Eph receptors are classified into the EphA and EphB subfamilies, each with nine and five members in mammals, respectively (Eph Nomenclature Committee , 1997; Gale et al., 1996; Murai and Pasquale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e5603fe0-a5bb-4971-953d-fa550e0f552a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C12",
+      "claim": "The EphA subfamily has nine members in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Chiefly based on their engaging ephrin ligands, Eph receptors are classified into the EphA and EphB subfamilies, each with nine and five members in mammals, respectively (Eph Nomenclature Committee , 1997; Gale et al., 1996; Murai and Pasquale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b48d2504-e9ee-439d-b774-48eb465d662a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C13",
+      "claim": "The EphB subfamily has five members in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Chiefly based on their engaging ephrin ligands, Eph receptors are classified into the EphA and EphB subfamilies, each with nine and five members in mammals, respectively (Eph Nomenclature Committee , 1997; Gale et al., 1996; Murai and Pasquale, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "c95c6c9b-8379-4500-9a0a-f28f4acb74ab",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C14",
+      "claim": "Ephrin-Eph signaling regulates stem cell maintenance and differentiations, tissue morphogenesis, and tissue\u2013tissue boundary formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to broad expressions in essentially all tissues and at every life stage, Ephrin-Eph signaling regulates many cellular processes both during development and in developed animals such as stem cell maintenance and differentiations, tissue morphogenesis, and tissue\u2013tissue boundary formation (Batlle and Wilkinson, 2012; Genander and Fris\u00e9n, 2010; J\u00fclich et al., 2009; McMillen and Holley, 2015; Munarini et al., 2002; Park et al., 2011; Poliakov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "6ac47be9-9018-4546-81d6-8287a4f3fd24",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C15",
+      "claim": "Mutations of ephrins and Ephs cause many forms of diseases including cancers and brain disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, mutations of ephrins and Ephs are known to cause many forms of diseases including cancers and brain disorders (Boyd et al., 2014; Chen et al., 2008; Hahn et al., 2012; Kania and Klein, 2016; Merlos-Su\u00e1rez and Batlle, 2008; Pasquale, 2008; Zhuang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ac65f9ad-a22c-4378-bdcc-1d4df59569b7",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C16",
+      "claim": "Ephrin ligand binding-mediated inter-cellular signaling is the classic mode of Eph receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Ephrin ligand binding-mediated inter-cellular signaling is the classic mode of Eph receptor signaling (also known as ephrin-Eph 'forward' signaling), which is responsible for the majority of cellular functions characterized for the ephrin-Eph signaling (Pitulescu and Adams, 2010; Taylor et al., 2017; Yokoyama et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "49be2bd9-cebf-431c-93b3-d5dbf2ba89fd",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C17",
+      "claim": "Ephrin-A5 binds to EphA2 and EphA4 with similar affinity but induces cell adhesion or cell collapse, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ephrin-A5 binds to EphA2 and EphA4 with similar affinity but induces cell adhesion or cell collapse, respectively (Cooper et al., 2008; Zhou et al., 2007), although different multimerization modes of EphA2 and EphA4 extracellular domains induced by ephrin-A5 binding can also contribute to the opposite cell spreading phenotype (Seiradake et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5b07dd65-1be3-4213-9b6a-63de1a2eff4e",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C18",
+      "claim": "SHIP2 is a mammalian inositol polyphosphate 5-phosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "SHIP2 is a mammalian inositol polyphosphate 5-phosphatases and is the only member in the family that contains a C-terminal SAM domain (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "be415aa4-a3e2-40a8-b17f-b2714d5af31f",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C19",
+      "claim": "SHIP2 is the only member in the inositol polyphosphate 5-phosphatase family that contains a C-terminal SAM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "SHIP2 is a mammalian inositol polyphosphate 5-phosphatases and is the only member in the family that contains a C-terminal SAM domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e256811a-8e74-4a17-ad76-4ebcf32215ae",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C20",
+      "claim": "SHIP2 was reported to be a binding partner of EphA2 through SAM\u2013SAM interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that SHIP2 was a binding partner of EphA2 through SAM\u2013SAM interaction (Lee et al., 2012; Leone et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "febebf74-0d5d-49cc-8017-2c5b1d12a9c1",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C21",
+      "claim": "EphA2 SAM and SHIP2 SAM each behave as homogeneous monomers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Eph SAM and SHIP2 SAM alone behaved as homogeneous monomers in solution as indicated by the analytical gel filtration analysis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8aba32fe-90d1-42d6-819e-396f0d2020cb",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C22",
+      "claim": "A 1:1 mixture of EphA2 SAM and SHIP2 SAM forms a hetero SAM-SAM complex.",
+      "claim_type": "EXPLICIT",
+      "source": "While the 1:1 mixture of EphA2 SAM and SHIP2 SAM was eluted at a smaller volume than the individual proteins, suggesting the formation of a hetero SAM-SAM complex (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "c11040f0-3dcd-47ea-8c01-7dfdac305a23",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C23",
+      "claim": "EphA2 SAM binds to SHIP2 SAM with a dissociation constant (Kd) of ~2.22 \u03bcM at a 1:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC (Isothermal Titration Calorimetry) experiment revealed that EphA2 SAM bound to SHIP2 SAM with a dissociation constant (Kd) of ~2.22 \u03bcM at a 1:1 stoichiometry (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5209b2b9-a23b-4d78-ac28-eaf381d83a2e",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C24",
+      "claim": "Only the SAM domains of EphA1/EphA2/EphA6 specifically bind to SHIP2 SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only the SAM domains of EphA1/EphA2/EphA6 specifically bound to SHIP2 SAM, and the rest of Eph SAM domains displayed no detectable binding to SHIP2 SAM (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "d6ad50ef-85b7-4990-bb99-0d5df7968091",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C25",
+      "claim": "Odin was reported to be a binding partner of EphA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Odin was reported to be another binding partner of EphA2 (Kim et al., 2010; Mercurio et al., 2012), and the interaction had been implicated in affecting the stability of EphA2 by modulating its ubiquitination process (Kim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "be1fb606-37a9-4435-9d90-387090776a1f",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C26",
+      "claim": "The interaction between Odin and EphA2 affects the stability of EphA2 by modulating its ubiquitination process.",
+      "claim_type": "EXPLICIT",
+      "source": "Odin was reported to be another binding partner of EphA2 (Kim et al., 2010; Mercurio et al., 2012), and the interaction had been implicated in affecting the stability of EphA2 by modulating its ubiquitination process (Kim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "0f065a9c-0310-4c6d-a261-96a343da6651",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C27",
+      "claim": "Odin SAM1 only selectively binds to the SAM domains from EphA1/EphA2/EphA6.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that, similar to SHIP2 SAM, Odin SAM1 only selectively bound to the SAM domains from EphA1/EphA2/EphA6 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b08d3c8e-c097-4d90-942a-ec949eeceb86",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C28",
+      "claim": "The interactions between Eph SAMs and their downstream effectors are highly specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantitative and systematic binding results shown in Figure 1D indicated that the interactions between Eph SAMs and their downstream effectors were highly specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "bd534e8b-8c87-4c08-ae21-bce6538b4532",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C29",
+      "claim": "The crystal structure of the SHIP2 SAM-EphA2 SAM complex was determined at 1.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate the molecular mechanism governing the specificity of the bindings of SHIP2 SAM and Odin SAM1 to Eph receptors, we determined the crystal structure of the SHIP2 SAM-EphA2 SAM complex and the Odin SAM1-EphA6 SAM complex at the 1.5 \u00c5 and 1.3 \u00c5 resolutions, respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "47905eda-069e-43f6-a515-14f4e54fbc0c",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C30",
+      "claim": "The crystal structure of the Odin SAM1-EphA6 SAM complex was determined at 1.3 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate the molecular mechanism governing the specificity of the bindings of SHIP2 SAM and Odin SAM1 to Eph receptors, we determined the crystal structure of the SHIP2 SAM-EphA2 SAM complex and the Odin SAM1-EphA6 SAM complex at the 1.5 \u00c5 and 1.3 \u00c5 resolutions, respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "51323721-1c24-472d-a84b-e5e765b7f4bd",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C31",
+      "claim": "The EphA2/SHIP2 and EphA6/Odin complex structures adopt an essentially identical End-Helix/Mid-Loop binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "The two complex structures adopt an essentially identical End-Helix/Mid-Loop binding mode, in which positively charged residues from the N-terminal end of \u03b15 (End-Helix) of EphA2/EphA6 bind to negatively charged residues from the loop connecting \u03b12-\u03b14 (Mid-Loop) from SHIP2/Odin, forming the well-known tail-to-head SAM domain heterodimer (Figure 2A\u2013E) (Qiao and Bowie, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "776b80db-09cd-40e0-bf2f-1faff67dd2f1",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C32",
+      "claim": "The backbone methylene of Gly954A2/Gly1104A6 is in close contact with Trp1221SHIP2/Phe738Odin.",
+      "claim_type": "EXPLICIT",
+      "source": "A noticeable feature in both complexes is that the backbone methylene of a Gly residue at the beginning of \u03b15 from Eph SAM (Gly954A2/Gly1104A6) is in close contact with an aromatic residue from SHIP2/Odin SAM (Trp1221SHIP2/Phe738Odin) (Figure 2B and D and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B, D, and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "1d8039c6-8eb2-4662-8048-a75432457840",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C33",
+      "claim": "Replacing Gly at the beginning of \u03b15 of Eph SAM with any other amino acid residues will introduce steric hindrance preventing binding to SHIP2/Odin SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, replacing Gly at the beginning of \u03b15 of Eph SAM with any other amino acid residues will introduce steric hindrance in preventing their binding to SHIP2/Odin SAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5520c094-4318-418c-a69e-9c45b96a5110",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C34",
+      "claim": "Gly is highly preferred at the beginning of \u03b15 among Eph SAM domains (12 out of 14 members).",
+      "claim_type": "EXPLICIT",
+      "source": "It is further noted that Gly is highly preferred at the beginning of \u03b15 among Eph SAM domains (12 out of the 14 members are Gly; see Figure 2\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2\u2014figure supplement 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ec83ea8c-ddf0-4cec-ac35-823f1958525d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C35",
+      "claim": "A special cation-\u03c0 interaction between Arg958A2 and Phe1226SHIP2 is critical for the specific interaction between EphA2 SAM and SHIP2 SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "The very high-resolution crystal structures of the two complexes also allowed us to identify a unique interaction feature that is critical for the exquisite specific interaction between the EphA2/A6 SAM domain and SHIP2/Odin SAM domains. Taking the EphA2/SHIP2 complex as the example, a special cation-\u03c0 interaction between the Arg958A2 and Phe1226SHIP2 was uncovered by the high-resolution crystal structure (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "10d16d28-e664-42ac-ac56-d64950253562",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C36",
+      "claim": "The guanidinium group of Arg958A2 forms a hydrogen bond network with Asp1222SHIP2 and His955A2 on one side and with the backbone carbonyl oxygen of Ile917A2.",
+      "claim_type": "EXPLICIT",
+      "source": "The guanidinium group of Arg958A2 forms hydrogen bond network with Asp1222SHIP2 and His955A2 on one side and with the backbone carbonyl oxygen of Ile917A2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "bda0b373-830b-4830-8620-6c2169eda9cd",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C37",
+      "claim": "The guanidinium plane of Arg958A2 forms energetically favorable \u03c0-\u03c0 stacking with the benzene ring of Phe1226SHIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "As such the guanidinium plane of Arg958A2 (and its delocalized \u03c0-system) is in the same plane with the \u03c0-system of the planer peptide bond between Ile917A2 and Lys918A2, forming energetically favorable \u03c0-\u03c0 stacking with the benzene ring of Phe1226SHIP2 (Figure 2F) (Ma and Dougherty, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "0dcab991-7734-4c04-a0a0-32d777d58be4",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C38",
+      "claim": "Substitution of Arg958A2 with Lys completely eliminated the bindings of EphA2 SAM to SHIP2 SAM or Odin SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Totally consistent with this structural analysis, substitution of Arg958A2 with Lys completely eliminated the bindings of EphA2 SAM to SHIP2 SAM or Odin SAM (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "f0ab36a0-3847-4f23-983c-cd3ad2e35065",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C39",
+      "claim": "Substitution of Phe1226 of SHIP2 SAM with Leu or Ala totally eliminated the binding between SHIP2 SAM and EphA2 SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, substitution of Phe1226 of SHIP2 SAM with non-aromatic hydrophobic residues (e.g. Leu or Ala) also totally eliminated the binding between SHIP2 SAM and EphA2 SAM (Figure 2H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ef08c063-005c-4df4-9576-1c3db4cc05f1",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C40",
+      "claim": "Replacing Asp1222 in SHIP2 SAM with Ala eliminated the binding between SHIP2 and EphA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, replacing Asp1222 in SHIP2 SAM with Ala also eliminated the binding between SHIP2 and EphA2, highlighting the importance of the hydrogen bond between Asp1222SHIP2 and Arg958A2 in stabilizing the guanidinium group of Arg958 (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "14b45ff0-ba01-4fb7-9f0a-43b3ca640af5",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C41",
+      "claim": "An Arg957 to Cys somatic mutation of EphA2 has been detected in ovary carcinoma patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We mined COSMIC cancer somatic mutation database (Forbes et al., 2017; http://cancer.sanger.ac.uk/cosmic) and found that an Arg957 (corresponding to mouse Arg958) to Cys somatic mutation of EphA2 has been detected in ovary carcinoma patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation to the COSMIC database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "4eee0dc4-f425-4b01-9e03-7d01c1a2e1a5",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C42",
+      "claim": "Substitution of Arg with Cys in EphA2 completely eliminated EphA2 SAM's binding to SHIP2 or Odin.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, substitution of Arg with Cys also completely eliminated EphA2 SAM's binding to the SHIP2 or Odin (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8ea3a900-b47b-47ce-81cf-1a3a0ab0e24a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C43",
+      "claim": "Substituting Lys857 of EphA5 SAM with Arg converted EphA5 SAM into a SHIP2 binding SAM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Satisfyingly, substituting Lys857 (corresponding Arg958A2) with Arg converted EphA5 SAM into a SHIP2 binding SAM domain, though the binding was still relatively weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "86b42a35-b8e3-4320-a8c2-1c79b2b1212d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C44",
+      "claim": "The K857R substitution in EphA5 SAM enhanced EphA5 SAM's binding to Odin SAM1 by more than 100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The same substitution also enhanced EphA5 SAM's binding to Odin SAM1 by more than 100-fold (Figure 2H, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "a440508e-5a2b-4879-bab6-38ab91376d84",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C45",
+      "claim": "Specific SAM domain-mediated effector binding is required for ligand-induced cell repulsion function of EphA2.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the cellular function of the specific SAM domain-mediated effector association of the EphA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by cell biology experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "2d947af7-58ed-43a6-8fd4-1dffc48d58f8",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C46",
+      "claim": "DU145 cells have a low expression level of endogenous EphA2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "DU145 cells, which have a low expression level of endogenous EphA2 receptors, were used to study its ligand-induced inhibition of cell spreading (Barquilla et al., 2016; Lee et al., 2012; Miao et al., 2000; Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e9c40a47-972e-4b33-87f3-76ab01056798",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C47",
+      "claim": "Cells expressing wild-type full-length EphA2 receptor dramatically retracted and became rounded in response to ephrinA1-Fc stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected and consistent with the previous reports (Barquilla et al., 2016; Shi et al., 2017), in response to ephrinA1-Fc stimulation, cells expressing the wild-type full-length EphA2 receptor dramatically retracted and became rounded, whereas the negative control cells did not respond to ephrinA1 (Figure 3A and quantified in Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3A and B with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "74fe2680-b453-43f8-87b3-a7ea2fccfe4c",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C48",
+      "claim": "Cells expressing EphA2 delSAM, EphA2 R958K, or EphA2-SAMA5 chimera did not display ephrinA1-induced cell rounding.",
+      "claim_type": "EXPLICIT",
+      "source": "None of them displayed ephrinA1-induced cell rounding (Figure 3A and B), indicating that the highly specific EphA2 SAM domain-mediated effector association is required for the cell spreading function of EphA2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "adb27c38-b444-4c20-8d90-b66414a5cedc",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C49",
+      "claim": "Overexpressing SHIP2-SAM effectively reversed the cell collapse phenotype caused by ephrinA1 activation of EphA2.",
+      "claim_type": "EXPLICIT",
+      "source": "The data showed that overexpressing SHIP2-SAM effectively reversed the cell collapse phenotype caused by ephrinA1 activation of EphA2, whereas over-expressing SHIP2-SAM did not lead to any observable changes in the GFP control (Figure 3\u2014figure supplement 1), indicating that this blocking effect by SHIP2-SAM is EphA2-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "74fe9eff-09b0-4e8d-aad5-1e22b0abe11a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C50",
+      "claim": "SAMD5 SAM is similar to SHIP2 SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Another promising candidate is SAMD5, whose SAM domain is similar to SHIP2 SAM (Figure 4A) and highly expressed in breast cancer cells and mainly cytoplasmic (Lo et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4A with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5bc019b5-61c3-41ab-8833-f7013a55927f",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C51",
+      "claim": "SAMD5 is highly expressed in breast cancer cells and mainly cytoplasmic.",
+      "claim_type": "EXPLICIT",
+      "source": "Another promising candidate is SAMD5, whose SAM domain is similar to SHIP2 SAM (Figure 4A) and highly expressed in breast cancer cells and mainly cytoplasmic (Lo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e6c1a4ae-f962-4109-b100-99cbaa0cb8ef",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C52",
+      "claim": "SAMD5 SAM binds to EphA5-8 and EphB1-4 SAM domains with strong affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, although the amino acid sequence of SAMD5 SAM can be aligned well (the key binding residues in particular) with the SAM domain sequences of SHIP2 and Odin (Figure 4A, top), SAMD5 bound to EphA5-8 and EphB1-4 SAM domains with strong affinities but only weakly to EphA1/2 SAM domains (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "2780cd1b-6506-4151-8abe-d3398bf4d088",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C53",
+      "claim": "SAMD5 binds only weakly to EphA1/2 SAM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, although the amino acid sequence of SAMD5 SAM can be aligned well (the key binding residues in particular) with the SAM domain sequences of SHIP2 and Odin (Figure 4A, top), SAMD5 bound to EphA5-8 and EphB1-4 SAM domains with strong affinities but only weakly to EphA1/2 SAM domains (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ddca0f9d-9501-4e38-930e-f9faa1f3e08d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C54",
+      "claim": "The crystal structure of the EphA5/SAMD5 SAM\u2013SAM complex was solved at 1.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To delineate the mechanism governing the Eph/SAMD5 interaction, we solved the EphA5/SAMD5 SAM\u2013SAM complex crystal structure at the resolution of 1.9 \u00c5 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "745b2273-81c0-4b17-9d40-2f1b4d115bb8",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C55",
+      "claim": "EphA5 SAM uses its End-Helix to interact with the Mid-Loop of SAMD5 SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to that of EphA2/SHIP2 or EphA6/Odin, EphA5 SAM also uses its End-Helix to interact with the Mid-Loop SAMD5 SAM (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "d970ade4-05a4-4f97-9369-006591c5e883",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C56",
+      "claim": "The EphA5/SAMD5 SAM-SAM complex does not contain the \u03c0-\u03c0 stacking observed in the EphA2/SHIP2 and EphA6/Odin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their detailed binding mechanisms are quite different. The most prominent difference is that the EphA5/SAMD5 SAM-SAM does not contain the \u03c0-\u03c0 stacking observed in the EphA2/SHIP2 and EphA6/Odin complexes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "0f78f0a6-2716-4a7d-b08b-95a46a0b9830",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C57",
+      "claim": "The EphA5/SAMD5 SAM-SAM interaction is essentially completely mediated by charge\u2013charge and hydrogen bonding interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the EphA5/SAMD5 SAM-SAM is essentially completely mediated by charge\u2013charge and hydrogen bonding interactions (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ac60415a-69f2-4c4d-8f39-3c5a99d5c2b6",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C58",
+      "claim": "The backbone amine of Gly853A5 forms a strong hydrogen bond with Tyr27SAMD5 sidechain hydroxyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "The backbone amine of Gly853A5 forms a strong hydrogen bond with Tyr27SAMD5 sidechain hydroxyl group (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b02fd537-6349-4506-8a09-2aeb1c4e8a91",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C59",
+      "claim": "Substitution of Tyr27SAMD5 with Phe completely eliminated SAMD5's binding to EphA5.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, substitution of Tyr27SAMD5 with Phe completely eliminated SAMD5's binding to EphA5 (Figure 5E), indicating the critical role of the Gly853A5-Tyr27SAMD5 hydrogen binding in addition to their steric role.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "0e2c5dee-8a97-4c90-a6f3-6c40530f70dd",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C60",
+      "claim": "A Pro residue at the position corresponding to Val852A5 in EphA1/EphA2 SAM domains introduces steric hindrance that perturbs SAMD5 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For the EphA1/EphA2 SAM domains, although all the key residues are present, it is noticed that a Pro residue is at the position corresponding to Val852A5 (Figure 2\u2014figure supplement 5). The sidechain pyrrolidine ring of Pro would introduce steric hindrance with Asp40, and thus may perturb SAMD5 from binding to EphA1/EphA2 SAM domains (Figure 5D), resulting in low affinities (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D and Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "2fde63ac-5a8a-438d-86e0-7237a2866cfb",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C61",
+      "claim": "Replacing Val825 of EphA5 SAM with Pro led to about 10-fold affinity decrease in its binding to SAMD5.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this analysis, replacing Val825 of EphA5 SAM with a Pro led to about 10-fold affinity decrease in its binding to SAMD5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "fc632a2a-e1e3-4b48-ad42-4f6b378d61f9",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C62",
+      "claim": "Substitution of Pro953 in EphA2 with Ala increased its SAMD5 SAM binding by more than 10 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, substitution Pro953 in EphA2 with a smaller residue Ala increased its SAMDs SAM binding by more than 10 fold (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "7cd0e1b5-5466-4bb6-ab98-4feb83b5c25d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C63",
+      "claim": "Numerous mutations occur in almost every subtype of Eph genes except for EphB6 in cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We surveyed the COSMIC cancer somatic mutation database (Forbes et al., 2017; http://cancer.sanger.ac.uk/cosmic; a collection of somatic mutations found in cancer patients mainly from large-scale genome sequencing studies) and found that numerous mutations occur in almost every subtype of Eph genes except for EphB6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation to the COSMIC database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "fd57a787-7d44-49d6-84cd-1fc4fe8a62e0",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C64",
+      "claim": "A significant number of mutations in Eph genes fall into the SAM domain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant number of these mutations fell into the SAM domain regions (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e422e2de-76fb-4c61-8c39-9f549a562309",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C65",
+      "claim": "EphA1 R966C, EphA2 R957C, and EphA6 R1014Q mutations totally abolished their binding to SHIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, EphA1 R966C, EphA2 R957C, and EphA6 R1014Q mutations (the cation-\u03c0 forming Arg at \u03b15 helix) totally abolished their binding to SHIP2 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b22fa2a1-6358-41f8-80c9-ce3fd40cbe95",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C66",
+      "claim": "EphA5 G1014S, EphA7 G972V, and EphB3 G974D mutations disrupted their binding to SAMD5.",
+      "claim_type": "EXPLICIT",
+      "source": "EphA5 G1014S, EphA7 G972V, and EphB3 G974D mutations disrupted their binding to SAMD5 (Figure 6C), further supporting our structural finding that the sidechain-less Gly at the beginning of \u03b15 is critical (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6C and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8357e0dd-513e-41f6-a049-4eebc1d8d196",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C67",
+      "claim": "Mutations on critical sites such as EphA5 K1018M, EphA6 R1014Q, EphA8 R943H, and EphB1 K926M, A961T all weakened or disrupted their binding to SAMD5.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations on other critical sites such as EphA5 K1018M, EphA6 R1014Q, EphA8 R943H, and EphB1 K926M, A961T all weakened or even disrupted their binding to SAMD5 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "f2f15314-8451-4901-b3e0-c53c2526f9fe",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C68",
+      "claim": "Every Eph receptor SAM domain adopts stable monomers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that, unlike many other previously characterized polymer forming SAM domains, every Eph receptor SAM domain adopts stable monomers in solution (Harada et al., 2008; Knight et al., 2011; Stapleton et al., 1999; Thanos et al., 1999; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "54e68bf7-6c1f-4c17-b36b-d23fd2057d7a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C69",
+      "claim": "No SAM\u2013SAM hetero-complexes between Eph SAM domains could form.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, no SAM\u2013SAM hetero-complexes between Eph SAM domains could form (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "f64c88e8-7515-41b5-bbf7-a1e91d1dff4a",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C70",
+      "claim": "The SAM domains from EphA2, EphA5, and EphA6 all bind to their effector SAM domain using their respective End-Helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures solved in this study revealed that the SAM domains from EphA2, EphA5, and EphA6 all bind to its effector SAM domain using their respective End-Helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "40673e72-d485-4870-8ce1-da3cdd12e5d4",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C71",
+      "claim": "Every Eph SAM domain contains an extremely conserved Mid-Loop.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noticed that every Eph SAM domain also contains an extremely conserved Mid-Loop (see EphA2/EphA5/EphA6 SAM sequence alignments in Figure 2\u2014figure supplement 5B\u2013D for an example).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Figure 2\u2014figure supplement 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b53b85c2-15a9-412f-9bdb-d3d5b18d00a4",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C72",
+      "claim": "At least some Eph SAM domains may use their Mid-Loops to bind to the End-Helix of their effector SAM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "It is compelling to speculate that at least some Eph SAM domains may also use their Mid-Loops to bind to the End-Helix of their effector SAM domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "14a45a0d-50c7-4d13-9106-6f07ec1db1ec",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C73",
+      "claim": "Many residues in the Mid-Loop regions of Eph SAM domains are found to be mutated in cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is further supported by the observation that many residues in the Mid-Loop regions of Eph SAM domains are found to be mutated in cancer patients (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "05addf27-a7b6-4c54-a0ea-8a755c304c70",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C74",
+      "claim": "The structures of the SAM\u2013SAM complexes can predict three categories of mutations that will likely alter functions of Eph receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of the SAM\u2013SAM complexes presented in this work, coupled with amino acid sequence-based analysis, readily predict the following three categories of mutations that will likely alter functions of Eph receptors via changing their SAM domain structures and effector binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8b4e111c-2b12-4c5d-9510-ba79cb6424e0",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C75",
+      "claim": "Mutations of residues in the folding core or residues playing critical structural roles may impair the overall structure and effector binding of Eph SAM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mutations of residues in the folding core or residues playing other critical structural roles (e.g. residues highlighted in red in Figure 6A) may impair the overall structure and thus effector binding of Eph SAM domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Figure 6A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ed23f138-27c7-4ae2-8f80-80ac8cc48373",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C76",
+      "claim": "Mutations in the End-Helix region of Eph SAM domains often have defects or total impairments in binding to their effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, mutations occur in the End-Helix region of Eph SAM domains. This category of Eph SAM domain mutants often has defects or even total impairments in binding to their effectors (Figure 6B and C), and thus are expected to have impaired downstream signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5f8c87fc-f314-46ed-adc4-939aa25f5be0",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C77",
+      "claim": "Mutations in the Mid-Loop region of Eph SAM domains may impair their binding to effector SAM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, mutations occur in the Mid-Loop region of the Eph SAM domains may also impair their binding to effector SAM domain as we mentioned above, although this prediction will need to be verified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a prediction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "91cf6bd6-3ae2-45bd-9e35-a457c218bff0",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C78",
+      "claim": "The binding affinities for all Eph SAM-effector SAM interactions are in the submicromolar to micromolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding affinities for all the interactions reported here are in the submicromolar to micromolar range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on ITC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "b1015862-f311-494a-a5f0-45d414b251ea",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C79",
+      "claim": "Eph receptors multimerize upon ligand activation, mainly via their extracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Eph receptors are known to multimerize upon ligand activation, mainly via their extracellular domains (Janes et al., 2012; Seiradake et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "d689b566-7ad8-4154-922b-bf64ff138850",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C80",
+      "claim": "SHIP2 can be recruited to the cell membrane via SH2 domain mediated interactions to other cell surface receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, several studies have revealed that effectors like SHIP2 can be recruited to the cell membrane via SH2 domain mediated interactions to other cell surface receptors (Pesesse et al., 2001; Wang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "a2a5e942-1797-42fe-a74c-6f501c35abd2",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "claim_id": "C81",
+      "claim": "There are 110 SAM domain-containing proteins in addition to the 14 Eph receptors and three Eph-binding proteins studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there are 110 SAM domain-containing proteins in addition to the 14 Eph receptors and three Eph-binding proteins studied here, one approach to identify new Eph SAM-binding proteins is to survey bindings of all 14 Eph SAM domains to the rest of the SAM domains in the human proteome using purified recombinant proteins by protein array-based methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Eph receptor tyrosine kinase family is the largest RTK subfamily with 14 members in mammals, classified into EphA (9 members) and EphB (5 members) subfamilies based on ephrin ligand binding. These receptors play critical roles in developmental processes including tissue patterning, neurogenesis, neuronal circuit formation, and angiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C9-C13 are well-established facts about Eph receptors supported by multiple citations to prior literature. The classification, number of family members, and biological roles are consistently stated across the abstract and introduction with appropriate references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "c869e44d-82cd-437f-8d69-49fd23cec478",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All 14 Eph receptors have highly similar cytoplasmic domains, each containing a membrane-juxtaposing kinase domain, a protein-binding SAM domain, and a short carboxyl tail PDZ domain-binding motif (PBM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 describe the conserved domain architecture of Eph receptors, which is stated explicitly in the text and illustrated in Figure 1A. This is established knowledge supported by the schematic diagram.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "389cf54f-43ef-4693-9541-0aac536ba916",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic binding studies revealed that only EphA1/EphA2/EphA6 SAM domains specifically bind to SHIP2 SAM and Odin SAM1, demonstrating highly specific SAM-SAM interaction-mediated Eph-effector binding patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C24-C28 are supported by comprehensive ITC binding data shown in Figure 1D. The systematic screening of all 14 Eph SAM domains against SHIP2 and Odin SAM domains provides strong quantitative evidence for the specificity of these interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "e86d84e1-abe0-4fd9-91d5-b84f3182c542",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EphA2 SAM and SHIP2 SAM each behave as monomers in solution, but form a 1:1 heterodimeric complex with a dissociation constant of ~2.22 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by analytical gel filtration data (Figure 1B) and ITC measurements (Figure 1C). The data clearly demonstrate monomeric behavior of individual SAM domains and heterodimer formation upon mixing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "f3c17ce8-f217-45ff-8fd0-7c6410d62b50",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Crystal structures of SHIP2 SAM-EphA2 SAM (1.5 \u00c5) and Odin SAM1-EphA6 SAM (1.3 \u00c5) complexes reveal an essentially identical End-Helix/Mid-Loop binding mode forming tail-to-head SAM domain heterodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by high-resolution crystal structures with excellent refinement statistics (Table 1) and detailed structural analysis shown in Figure 2A-E. The structures are deposited in the PDB, allowing independent verification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "4ddbd821-e096-4c4c-a91c-2c0e305776c2",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A conserved Gly residue at the beginning of \u03b15 in Eph SAM domains (present in 12 of 14 members) is critical for binding, as its backbone methylene is in close contact with aromatic residues from SHIP2/Odin SAM, and substitution with any other residue would introduce steric hindrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by structural data (Figure 2B, D, and Figure 2\u2014figure supplement 4) and sequence analysis (Figure 2\u2014figure supplement 5A). The structural rationale for Gly conservation is clearly demonstrated, though direct mutagenesis data for this specific position is not shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A special cation-\u03c0 interaction between Arg958A2 and Phe1226SHIP2 is critical for specific EphA2-SHIP2 binding. The guanidinium group of Arg958A2 forms a hydrogen bond network and \u03c0-\u03c0 stacking with Phe1226SHIP2. Substitution of Arg958A2 with Lys or Cys, or Phe1226SHIP2 with Leu/Ala, completely eliminates binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are strongly supported by high-resolution structural data (Figure 2F) and comprehensive mutagenesis experiments (Figure 2H-J). The structural basis for specificity is clearly demonstrated, and the functional importance is validated by ITC and GST pull-down assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "73263672-fd2b-4175-8fd6-6ae037063183",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An Arg957 to Cys somatic mutation of EphA2 detected in ovary carcinoma patients completely eliminates EphA2 SAM's binding to SHIP2 or Odin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by database mining (COSMIC) and experimental validation (Figure 2H-I). The mutation is documented in cancer patients, and its functional impact on binding is directly tested and confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "454b9256-f4fb-4bf2-a658-815adf4fc5fc",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A single K857R substitution in EphA5 SAM converts it into a SHIP2-binding SAM domain and enhances binding to Odin SAM1 by more than 100-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 demonstrate a gain-of-function mutation that validates the structural model. The data in Figure 2H show quantitative binding improvements, though the SHIP2 binding remains relatively weak. This is a strong test of the specificity determinants identified structurally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "47f93552-1f68-4130-86e9-b416ffadcda1",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Specific SAM domain-mediated effector binding is required for ligand-induced cell repulsion function of EphA2. DU145 cells expressing wild-type EphA2 show dramatic retraction and rounding upon ephrinA1-Fc stimulation, while cells expressing EphA2 delSAM, R958K, or EphA2-SAMA5 chimera do not respond.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by cell biology experiments (Figure 3A-C) with appropriate controls and quantification. The functional importance of SAM-mediated interactions is demonstrated, though the experiments are performed in a single cell line (DU145) with low endogenous EphA2 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "388f9bc9-83ad-4064-b69a-52d8702689d4",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpressing SHIP2-SAM effectively reverses the cell collapse phenotype caused by ephrinA1 activation of EphA2 in an EphA2-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by data in Figure 3\u2014figure supplement 1 showing that SHIP2-SAM overexpression blocks EphA2-mediated cell rounding. The specificity is demonstrated by lack of effect in GFP control cells. This provides functional validation of the SAM-SAM interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "eb757525-bd00-4941-a7e4-3d6c3336c101",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SAMD5, whose SAM domain is similar to SHIP2 SAM and is highly expressed in breast cancer cells, binds to EphA5-8 and EphB1-4 SAM domains with strong affinities but only weakly to EphA1/2 SAM domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by sequence alignment (Figure 4A), ITC data (Figure 4B-D), and citation to prior work on SAMD5 expression. The discovery of SAMD5 as a new Eph binding partner with distinct specificity is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The EphA5/SAMD5 SAM-SAM complex structure (1.9 \u00c5) reveals that EphA5 SAM uses its End-Helix to interact with SAMD5 Mid-Loop, but unlike EphA2/SHIP2 and EphA6/Odin complexes, the interaction is mediated by charge-charge and hydrogen bonding rather than \u03c0-\u03c0 stacking. A critical hydrogen bond between Gly853A5 backbone and Tyr27SAMD5 hydroxyl is essential, as Y27F substitution eliminates binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 are supported by crystal structure data (Table 1, Figure 5A-C) and mutagenesis experiments (Figure 5E). The structural differences from EphA2/SHIP2 are clearly demonstrated, and the functional importance of key interactions is validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "4522d440-897d-4a6d-bd16-34bd4a075ae9",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A Pro residue at position 953 in EphA1/EphA2 SAM domains introduces steric hindrance with SAMD5 Asp40, explaining weak SAMD5 binding. V852P substitution in EphA5 decreases SAMD5 binding ~10-fold, while P953A substitution in EphA2 increases SAMD5 binding >10-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by structural modeling (Figure 5D) and mutagenesis data (Figure 5E). The reciprocal gain- and loss-of-function mutations provide strong evidence for the proposed steric mechanism explaining binding specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "f082ee77-3785-4e7a-b269-02987f8bd200",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Analysis of COSMIC cancer mutation database reveals numerous mutations in Eph SAM domains. Mutations at critical binding residues (e.g., EphA1 R966C, EphA2 R957C, EphA6 R1014Q, EphA5 G1014S, EphA7 G972V, EphB3 G974D) abolish or severely weaken binding to SHIP2 or SAMD5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by database mining and systematic mutagenesis experiments (Figure 6A-C). The functional impact of patient-derived mutations is directly tested, providing clinical relevance to the structural findings. However, causality between these mutations and cancer is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "837c13ee-1101-412e-a6ca-63ec8d877dc3",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Every Eph receptor SAM domain adopts stable monomers in solution, and no SAM-SAM hetero-complexes between Eph SAM domains can form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are stated in the Discussion with supporting citations and reference to unpublished data. While the monomeric behavior is consistent with gel filtration data shown for specific examples, the claim about all 14 Eph SAMs is not fully documented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "56cb9d70-6d3d-427e-bd26-e2cfd9662e02",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The SAM domains from EphA2, EphA5, and EphA6 all bind effector SAM domains using their End-Helix. Every Eph SAM domain contains an extremely conserved Mid-Loop, suggesting some Eph SAMs may use their Mid-Loops to bind End-Helix of effector SAM domains. This hypothesis is supported by cancer mutations in Mid-Loop regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 are supported by structural data, but C72 is explicitly stated as speculation. While C73 provides circumstantial support from mutation data (Figure 6A), the hypothesis that Eph Mid-Loops bind effector End-Helices remains untested and speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "de0c8469-56a3-4136-abe0-858ef628f25b",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The SAM-SAM complex structures predict three categories of disease-relevant mutations: (1) mutations in folding core affecting overall structure, (2) mutations in End-Helix region impairing effector binding, and (3) mutations in Mid-Loop region potentially impairing effector binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by structural analysis and experimental validation (Figure 6). However, C77 regarding Mid-Loop mutations is acknowledged as requiring verification. The predictive framework is useful but category 3 remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "97453db2-bbfd-46c9-93f3-a64a5c9cc53d",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Eph SAM-effector SAM binding affinities are in the submicromolar to micromolar range. In cells, binding avidity is likely enhanced by Eph receptor multimerization upon ligand activation and recruitment of effectors like SHIP2 to the membrane via SH2 domain interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is directly supported by ITC data throughout the manuscript. Claims C79-C80 are supported by citations to prior work. The discussion of avidity enhancement is reasonable but speculative, as it is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "5d871e1e-2e49-464d-9b2c-ff0f2b55168e",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Ephrin-Eph signaling regulates diverse cellular processes including stem cell maintenance, tissue morphogenesis, and tissue boundary formation. Mutations cause diseases including cancers and brain disorders. The classic forward signaling mode is responsible for most characterized functions, though paradoxically, ephrin-A5 induces opposite responses (adhesion vs. collapse) in EphA2 vs. EphA4 despite similar binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are background information supported by multiple citations to prior literature. These establish the biological context and the central question of how similar cytoplasmic domains mediate diverse signaling outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SHIP2 is a mammalian inositol polyphosphate 5-phosphatase and the only family member with a C-terminal SAM domain. SHIP2 and Odin were previously reported as EphA2 binding partners, with the Odin interaction affecting EphA2 stability through ubiquitination modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C25-C26 are background information supported by citations to prior work. These establish the known Eph-effector interactions that motivated the systematic study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    },
+    {
+      "id": "726b03b4-469d-4fcc-99d6-3afd07dfefb8",
+      "content_id": "168c99ef-f226-49b7-b93c-e3284b80d1ee",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "There are 110 SAM domain-containing proteins in addition to the 14 Eph receptors and three Eph-binding proteins studied, suggesting protein array-based screening could identify additional Eph SAM-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is stated in the Discussion as a proposal for future work. The number of SAM domain proteins is presented as established knowledge, and the suggested approach is reasonable but not tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:34:31.791692Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "030d7c30-14f7-4741-85d6-73c0a87ca752",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "5e794d8b-78d1-4418-a5c5-8ef7c3dea98a",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "6655dc58-660b-436b-a214-f8cfcc6ca25b",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "bb36ee11-14f4-47cd-a793-c524d9913b1f",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "b96ae337-2156-4ae2-a571-5827721610f7",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "ce60f0b4-94d6-4828-a640-405adce66f0e",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "e5603fe0-a5bb-4971-953d-fa550e0f552a",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "b48d2504-e9ee-439d-b774-48eb465d662a",
+      "result_id": "c80b75a6-3d0f-421b-9d0f-195d2ea26fc5"
+    },
+    {
+      "claim_id": "ffa89fa8-b281-49eb-aa8d-ea2911495f95",
+      "result_id": "c869e44d-82cd-437f-8d69-49fd23cec478"
+    },
+    {
+      "claim_id": "8f0ecab4-982a-4486-91fd-1fc09051476b",
+      "result_id": "c869e44d-82cd-437f-8d69-49fd23cec478"
+    },
+    {
+      "claim_id": "ca7462dc-5542-495a-a4ba-3cebea858269",
+      "result_id": "389cf54f-43ef-4693-9541-0aac536ba916"
+    },
+    {
+      "claim_id": "e2f19a0f-e7f5-4790-8772-83ea688272c1",
+      "result_id": "389cf54f-43ef-4693-9541-0aac536ba916"
+    },
+    {
+      "claim_id": "5209b2b9-a23b-4d78-ac28-eaf381d83a2e",
+      "result_id": "389cf54f-43ef-4693-9541-0aac536ba916"
+    },
+    {
+      "claim_id": "0f065a9c-0310-4c6d-a261-96a343da6651",
+      "result_id": "389cf54f-43ef-4693-9541-0aac536ba916"
+    },
+    {
+      "claim_id": "b08d3c8e-c097-4d90-942a-ec949eeceb86",
+      "result_id": "389cf54f-43ef-4693-9541-0aac536ba916"
+    },
+    {
+      "claim_id": "febebf74-0d5d-49cc-8017-2c5b1d12a9c1",
+      "result_id": "e86d84e1-abe0-4fd9-91d5-b84f3182c542"
+    },
+    {
+      "claim_id": "8aba32fe-90d1-42d6-819e-396f0d2020cb",
+      "result_id": "e86d84e1-abe0-4fd9-91d5-b84f3182c542"
+    },
+    {
+      "claim_id": "c11040f0-3dcd-47ea-8c01-7dfdac305a23",
+      "result_id": "e86d84e1-abe0-4fd9-91d5-b84f3182c542"
+    },
+    {
+      "claim_id": "bd534e8b-8c87-4c08-ae21-bce6538b4532",
+      "result_id": "f3c17ce8-f217-45ff-8fd0-7c6410d62b50"
+    },
+    {
+      "claim_id": "47905eda-069e-43f6-a515-14f4e54fbc0c",
+      "result_id": "f3c17ce8-f217-45ff-8fd0-7c6410d62b50"
+    },
+    {
+      "claim_id": "51323721-1c24-472d-a84b-e5e765b7f4bd",
+      "result_id": "f3c17ce8-f217-45ff-8fd0-7c6410d62b50"
+    },
+    {
+      "claim_id": "776b80db-09cd-40e0-bf2f-1faff67dd2f1",
+      "result_id": "4ddbd821-e096-4c4c-a91c-2c0e305776c2"
+    },
+    {
+      "claim_id": "1d8039c6-8eb2-4662-8048-a75432457840",
+      "result_id": "4ddbd821-e096-4c4c-a91c-2c0e305776c2"
+    },
+    {
+      "claim_id": "5520c094-4318-418c-a69e-9c45b96a5110",
+      "result_id": "4ddbd821-e096-4c4c-a91c-2c0e305776c2"
+    },
+    {
+      "claim_id": "ec83ea8c-ddf0-4cec-ac35-823f1958525d",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "10d16d28-e664-42ac-ac56-d64950253562",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "bda0b373-830b-4830-8620-6c2169eda9cd",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "0dcab991-7734-4c04-a0a0-32d777d58be4",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "f0ab36a0-3847-4f23-983c-cd3ad2e35065",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "ef08c063-005c-4df4-9576-1c3db4cc05f1",
+      "result_id": "ad59c1fa-7b9e-4743-8df7-3bccbf994f33"
+    },
+    {
+      "claim_id": "14b45ff0-ba01-4fb7-9f0a-43b3ca640af5",
+      "result_id": "73263672-fd2b-4175-8fd6-6ae037063183"
+    },
+    {
+      "claim_id": "4eee0dc4-f425-4b01-9e03-7d01c1a2e1a5",
+      "result_id": "73263672-fd2b-4175-8fd6-6ae037063183"
+    },
+    {
+      "claim_id": "8ea3a900-b47b-47ce-81cf-1a3a0ab0e24a",
+      "result_id": "454b9256-f4fb-4bf2-a658-815adf4fc5fc"
+    },
+    {
+      "claim_id": "86b42a35-b8e3-4320-a8c2-1c79b2b1212d",
+      "result_id": "454b9256-f4fb-4bf2-a658-815adf4fc5fc"
+    },
+    {
+      "claim_id": "a440508e-5a2b-4879-bab6-38ab91376d84",
+      "result_id": "47f93552-1f68-4130-86e9-b416ffadcda1"
+    },
+    {
+      "claim_id": "2d947af7-58ed-43a6-8fd4-1dffc48d58f8",
+      "result_id": "47f93552-1f68-4130-86e9-b416ffadcda1"
+    },
+    {
+      "claim_id": "e9c40a47-972e-4b33-87f3-76ab01056798",
+      "result_id": "47f93552-1f68-4130-86e9-b416ffadcda1"
+    },
+    {
+      "claim_id": "74fe2680-b453-43f8-87b3-a7ea2fccfe4c",
+      "result_id": "47f93552-1f68-4130-86e9-b416ffadcda1"
+    },
+    {
+      "claim_id": "adb27c38-b444-4c20-8d90-b66414a5cedc",
+      "result_id": "388f9bc9-83ad-4064-b69a-52d8702689d4"
+    },
+    {
+      "claim_id": "74fe9eff-09b0-4e8d-aad5-1e22b0abe11a",
+      "result_id": "eb757525-bd00-4941-a7e4-3d6c3336c101"
+    },
+    {
+      "claim_id": "5bc019b5-61c3-41ab-8833-f7013a55927f",
+      "result_id": "eb757525-bd00-4941-a7e4-3d6c3336c101"
+    },
+    {
+      "claim_id": "e6c1a4ae-f962-4109-b100-99cbaa0cb8ef",
+      "result_id": "eb757525-bd00-4941-a7e4-3d6c3336c101"
+    },
+    {
+      "claim_id": "2780cd1b-6506-4151-8abe-d3398bf4d088",
+      "result_id": "eb757525-bd00-4941-a7e4-3d6c3336c101"
+    },
+    {
+      "claim_id": "ddca0f9d-9501-4e38-930e-f9faa1f3e08d",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "745b2273-81c0-4b17-9d40-2f1b4d115bb8",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "d970ade4-05a4-4f97-9369-006591c5e883",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "0f78f0a6-2716-4a7d-b08b-95a46a0b9830",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "ac60415a-69f2-4c4d-8f39-3c5a99d5c2b6",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "b02fd537-6349-4506-8a09-2aeb1c4e8a91",
+      "result_id": "a3f4c9f8-0359-4186-bf52-7b7642d06c6d"
+    },
+    {
+      "claim_id": "0e2c5dee-8a97-4c90-a6f3-6c40530f70dd",
+      "result_id": "4522d440-897d-4a6d-bd16-34bd4a075ae9"
+    },
+    {
+      "claim_id": "2fde63ac-5a8a-438d-86e0-7237a2866cfb",
+      "result_id": "4522d440-897d-4a6d-bd16-34bd4a075ae9"
+    },
+    {
+      "claim_id": "fc632a2a-e1e3-4b48-ad42-4f6b378d61f9",
+      "result_id": "4522d440-897d-4a6d-bd16-34bd4a075ae9"
+    },
+    {
+      "claim_id": "7cd0e1b5-5466-4bb6-ab98-4feb83b5c25d",
+      "result_id": "f082ee77-3785-4e7a-b269-02987f8bd200"
+    },
+    {
+      "claim_id": "fd57a787-7d44-49d6-84cd-1fc4fe8a62e0",
+      "result_id": "f082ee77-3785-4e7a-b269-02987f8bd200"
+    },
+    {
+      "claim_id": "e422e2de-76fb-4c61-8c39-9f549a562309",
+      "result_id": "f082ee77-3785-4e7a-b269-02987f8bd200"
+    },
+    {
+      "claim_id": "b22fa2a1-6358-41f8-80c9-ce3fd40cbe95",
+      "result_id": "f082ee77-3785-4e7a-b269-02987f8bd200"
+    },
+    {
+      "claim_id": "8357e0dd-513e-41f6-a049-4eebc1d8d196",
+      "result_id": "f082ee77-3785-4e7a-b269-02987f8bd200"
+    },
+    {
+      "claim_id": "f2f15314-8451-4901-b3e0-c53c2526f9fe",
+      "result_id": "837c13ee-1101-412e-a6ca-63ec8d877dc3"
+    },
+    {
+      "claim_id": "54e68bf7-6c1f-4c17-b36b-d23fd2057d7a",
+      "result_id": "837c13ee-1101-412e-a6ca-63ec8d877dc3"
+    },
+    {
+      "claim_id": "f64c88e8-7515-41b5-bbf7-a1e91d1dff4a",
+      "result_id": "56cb9d70-6d3d-427e-bd26-e2cfd9662e02"
+    },
+    {
+      "claim_id": "40673e72-d485-4870-8ce1-da3cdd12e5d4",
+      "result_id": "56cb9d70-6d3d-427e-bd26-e2cfd9662e02"
+    },
+    {
+      "claim_id": "b53b85c2-15a9-412f-9bdb-d3d5b18d00a4",
+      "result_id": "56cb9d70-6d3d-427e-bd26-e2cfd9662e02"
+    },
+    {
+      "claim_id": "14a45a0d-50c7-4d13-9106-6f07ec1db1ec",
+      "result_id": "56cb9d70-6d3d-427e-bd26-e2cfd9662e02"
+    },
+    {
+      "claim_id": "05addf27-a7b6-4c54-a0ea-8a755c304c70",
+      "result_id": "de0c8469-56a3-4136-abe0-858ef628f25b"
+    },
+    {
+      "claim_id": "8b4e111c-2b12-4c5d-9510-ba79cb6424e0",
+      "result_id": "de0c8469-56a3-4136-abe0-858ef628f25b"
+    },
+    {
+      "claim_id": "ed23f138-27c7-4ae2-8f80-80ac8cc48373",
+      "result_id": "de0c8469-56a3-4136-abe0-858ef628f25b"
+    },
+    {
+      "claim_id": "5f8c87fc-f314-46ed-adc4-939aa25f5be0",
+      "result_id": "de0c8469-56a3-4136-abe0-858ef628f25b"
+    },
+    {
+      "claim_id": "91cf6bd6-3ae2-45bd-9e35-a457c218bff0",
+      "result_id": "97453db2-bbfd-46c9-93f3-a64a5c9cc53d"
+    },
+    {
+      "claim_id": "b1015862-f311-494a-a5f0-45d414b251ea",
+      "result_id": "97453db2-bbfd-46c9-93f3-a64a5c9cc53d"
+    },
+    {
+      "claim_id": "d689b566-7ad8-4154-922b-bf64ff138850",
+      "result_id": "97453db2-bbfd-46c9-93f3-a64a5c9cc53d"
+    },
+    {
+      "claim_id": "c95c6c9b-8379-4500-9a0a-f28f4acb74ab",
+      "result_id": "5d871e1e-2e49-464d-9b2c-ff0f2b55168e"
+    },
+    {
+      "claim_id": "6ac47be9-9018-4546-81d6-8287a4f3fd24",
+      "result_id": "5d871e1e-2e49-464d-9b2c-ff0f2b55168e"
+    },
+    {
+      "claim_id": "ac65f9ad-a22c-4378-bdcc-1d4df59569b7",
+      "result_id": "5d871e1e-2e49-464d-9b2c-ff0f2b55168e"
+    },
+    {
+      "claim_id": "49be2bd9-cebf-431c-93b3-d5dbf2ba89fd",
+      "result_id": "5d871e1e-2e49-464d-9b2c-ff0f2b55168e"
+    },
+    {
+      "claim_id": "5b07dd65-1be3-4213-9b6a-63de1a2eff4e",
+      "result_id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8"
+    },
+    {
+      "claim_id": "be415aa4-a3e2-40a8-b17f-b2714d5af31f",
+      "result_id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8"
+    },
+    {
+      "claim_id": "e256811a-8e74-4a17-ad76-4ebcf32215ae",
+      "result_id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8"
+    },
+    {
+      "claim_id": "d6ad50ef-85b7-4990-bb99-0d5df7968091",
+      "result_id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8"
+    },
+    {
+      "claim_id": "be1fb606-37a9-4435-9d90-387090776a1f",
+      "result_id": "8ec66550-02b3-437e-b39e-f31bb4c70bd8"
+    },
+    {
+      "claim_id": "a2a5e942-1797-42fe-a74c-6f501c35abd2",
+      "result_id": "726b03b4-469d-4fcc-99d6-3afd07dfefb8"
+    }
+  ],
+  "comparisons": []
+}

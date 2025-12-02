@@ -1,0 +1,1538 @@
+{
+  "submission": {
+    "id": "bf16f397-7571-46e4-832f-61b57607aa8a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T19:21:16.444997Z",
+    "updated_at": "2025-12-01T19:21:16.444997Z"
+  },
+  "content": [
+    {
+      "id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "submission_id": "bf16f397-7571-46e4-832f-61b57607aa8a",
+      "content_type": "manuscript",
+      "content_text": "# Cooperation between a hierarchical set of recruitment sites targets the X chromosome for dosage compensation\n\n## Authors\n\n- Sarah Elizabeth Albritton<sup>1</sup> ([ORCID: 0000-0001-6093-9560](https://orcid.org/0000-0001-6093-9560))\n- Anna-Lena Kranz<sup>1</sup>\n- Lara Heermans Winterkorn<sup>1</sup>\n- Lena Annika Street<sup>1</sup>\n- Sevinc Ercan<sup>1</sup> ([ORCID: 0000-0001-7297-1648](https://orcid.org/0000-0001-7297-1648)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Center for Genomics and Systems Biology New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn many organisms, it remains unclear how X chromosomes are specified for dosage compensation, since DNA sequence motifs shown to be important for dosage compensation complex (DCC) recruitment are themselves not X-specific. Here, we addressed this problem in C. elegans. We found that the DCC recruiter, SDC-2, is required to maintain open chromatin at a small number of primary DCC recruitment sites, whose sequence and genomic context are X-specific. Along the X, primary recruitment sites are interspersed with secondary sites, whose function is X-dependent. A secondary site can ectopically recruit the DCC when additional recruitment sites are inserted either in tandem or at a distance (>30 kb). Deletion of a recruitment site on the X results in reduced DCC binding across several megabases surrounded by topologically associating domain (TAD) boundaries. Our work elucidates that hierarchy and long-distance cooperativity between gene-regulatory elements target a single chromosome for regulation.\n\n## Introduction\n\nEukaryotic genomes are large, encompassing thousands of genes and spanning across millions of base pairs. In order to fit within the limiting confines of the nucleus, genomic DNA is compacted in a hierarchical manner. Linear DNA wraps around histones to form nucleosomes. A string of nucleosomes makes up the chromatin fibers, which further organize into variably sized topologically associating domains (TADs) (Dekker and Heard, 2015; Matharu and Ahanger, 2015). Finally, each chromosome occupies an individual territory within the nucleus (Dekker and Mirny, 2016; Denker and de Laat, 2016). Importantly, this genome organization is a dynamic process with implications for transcriptional regulation. For example, nucleosome positioning regulates transcription factor (TF) binding at promoters and enhancers, which in turn interact via long-range chromatin looping. At the domain-scale, the coordinated regulation of many genes across hundreds of kilobases of DNA has been observed in several organisms (Cohen et al., 2000; Scott-Boyer and Deschepper, 2013; Spellman and Rubin, 2002). For instance, the coordinated regulation of gene clusters, such as the Hox genes, can span hundreds of kilobases and requires the specific recruitment of regulatory proteins (Bauer et al., 2016). How gene regulatory complexes are specifically targeted to large chromosomal domains remains poorly understood. Research on the X-specific targeting of dosage compensation machinery in various animals helps to elucidate the molecular mechanisms that specifically target chromosomal domains for transcriptional co-regulation.\n\nX chromosome dosage compensation refers to mechanisms that equalize X chromosome gene expression between males (XY) and females (XX) of diploid species wherein sex is determined by differences in X chromosome copy number (Adler et al., 1997; Albritton et al., 2014; Chen and Zhang, 2015; Deng et al., 2011; Lin et al., 2012, Lin et al., 2011; Veitia et al., 2015; Wheeler et al., 2016). Here, we focus on the transcriptional regulatory mechanisms that act to restore X expression balance between the sexes. In wild type mammals, X expression balance is achieved via X inactivation, wherein one of the two female X chromosomes is transcriptionally silenced during development (Heard and Disteche, 2006). In Drosophila melanogaster, the male-specific lethal (MSL) complex binds to the single X chromosome in males where it upregulates transcription two-fold (Conrad and Akhtar, 2012). In Caenorhabditis elegans, both hermaphrodite X chromosomes are targeted by the dosage compensation complex (DCC), resulting in a two-fold downregulation of expression from each (Ercan and Lieb, 2009; Ercan, 2015). Although the mechanisms are diverse, in each case, a protein complex is specifically targeted to the X chromosome in only the sex where it regulates transcription (Ercan, 2015).\n\nThe working model for X-specific binding of the different dosage compensation complexes involves a two-step strategy: recruitment and spreading (Ercan, 2015). While the mechanism of spreading has been observed to be sequence-independent (Ercan et al., 2009; Kelley et al., 1999; Sun and Birchler, 2009), in both C. elegans and D. melanogaster, recruitment is accomplished in part by short DNA sequence motifs (Alekseyenko et al., 2012, Alekseyenko et al., 2008; Ercan et al., 2007; Jans et al., 2009). Although important for DCC and MSL recruitment, the DNA sequence motifs are not sufficient to explain X-specificity. In both species, motif sequence is found across the genome, and is only slightly enriched on the X chromosome (Alekseyenko et al., 2012, Alekseyenko et al., 2008; Ercan et al., 2007; Jans et al., 2009). This epitomizes an important open question in general mechanisms of domain-scale gene regulation: how are gene regulatory complexes specifically targeted to large chromosomal domains when their corresponding recruitment motifs lack domain-specificity. In this study, we combined systematic ChIP-seq analysis with recruitment mutants and targeted genome editing to determine how the C. elegans DCC is specifically recruited to the X chromosomes. Our work offers an answer to the specificity question, indicating that hierarchy and long-distance cooperation between a set of motif-containing recruitment sites restricts binding of the DCC to the X chromosomes.\n\nAt the core of the DCC is a condensin complex (hereafter condensin DC) (Csankovszki et al., 2009a, Csankovszki et al., 2009b) (Figure 1A). Condensins are evolutionarily conserved protein complexes, most often cited for their role in chromosome condensation and segregation during cell division (reviewed in [Hirano, 2016]). Recent work also suggests key roles for condensins in gene regulation during interphase (Cobbe et al., 2006; Kranz et al., 2013; Longworth et al., 2012; Rawlings et al., 2011; Dej et al., 2004; Lupo et al., 2001). Condensins are composed of a dimerizing pair of structural maintenance of chromosomes proteins (SMC-2 and SMC-4) that interact with three chromosome-associated polypeptides (CAPs). C. elegans condensin DC shares four out of five subunits (MIX-1\u00a0[Lieb et al., 1998], DPY-26\u00a0[Plenefisch et al., 1989], DPY-28\u00a0[Plenefisch et al., 1989], and CAPG-1\u00a0[Csankovszki et al., 2009b]) with the canonical condensin I, distinguished only by the SMC-4 variant, DPY-27 (Csankovszki et al., 2009a, Csankovszki et al., 2009b). Condensin DC interacts with at least five non-condensin proteins, SDC-1,2,3, DPY-30, and DPY-21, which together form the genetically defined DCC (Meyer, 2005). With the exception of SDC-1 and DPY-21, all DCC subunits are essential (Plenefisch et al., 1989; Villeneuve and Meyer, 1990). DPY-30, in addition to its role in dosage compensation, is a subunit of the highly conserved MLL/COMPASS complex, which methylates histone H3 at lysine 4 (H3K4) (Pferdehirt et al., 2011; Li and Kelly, 2011; Shilatifard, 2008; Hsu and Meyer, 1994).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig1-v1.jpg)\n\n**Figure 1.:** (A) The C. elegans dosage compensation complex (DCC) is composed of a modified condensin complex (condensin DC) which is distinguished from condensin I by the SMC-4 variant, DPY-27. The non-condensin subunits SDC-2, SDC-3, and DPY-30 are required for DCC recruitment to the X chromosomes. (B) Peak distribution across each of the six chromosomes. (C) Representative ChIP-seq enrichment for an 80 kb window that includes recruitment element on the X, rex-8. Recruitment sites on the X chromosome were defined as a 400 bp window centered on the SDC-2 ChIP-seq summits that overlap with SDC-3, DPY-30, and DPY-27 peaks and that do not show significant H3K4me3 enrichment. (D) Recruitment sites identified in this study (n\u00a0=\u00a064) largely overlap with sequences previously shown to recruit DCC to multi-copy extrachromosomal array (n\u00a0=\u00a047) (Jans et al., 2009; Pferdehirt et al., 2011; McDonel et al., 2006).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SDC-2, SDC-3, DPY-30, DPY-27, and H3K4me3 ChIP-seq enrichment data is plotted for a 1 Mb window. Three previously identified rex-sites (rex-8 (rank 1), rex-28 (rank 35), and rex-29 (rank 50)) are identified as recruitment sites in this study. One previously identified rex-site (rex-27) shows little DCC enrichment and high H3K4me3 enrichment. (B) Plots showing SDC-3 and DPY-27 average ChIP enrichment across a 1 kb window centered on the peak summit. The top three recruitment sites (rank 1\u20133) are shown in pink; recruitment sites ranked 31\u201333 are shown in green; recruitment sites ranked 62\u201364 are shown in blue. Rex-22, rex-27, and rex-30, shown previously to recruit to array but not called recruitment sites in this study, are shown in gray.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Boxplots indicating SDC-2 ChIP-seq enrichment score across each of the defined classes: strong recruitment sites (n\u00a0=\u00a017), intermediate recruitment sites (n\u00a0=\u00a016), weak recruitment sites (n\u00a0=\u00a031), and peaks excluded by H3K4me3 enrichment (n\u00a0=\u00a09). B) Representative ChIP-seq enrichment for a 100 kb window that includes a peak excluded by H3K4me3 enrichment.\n\nFluorescence microscopy using DCC-specific antibodies indicated that the DCC binds to both hermaphrodite X chromosomes (Chuang et al., 1996; Dawes et al., 1999). Subsequent high-resolution ChIP-chip and ChIP-seq experiments revealed a pattern of DCC binding that\u00a0supports the recruitment and spreading hypothesis (Ercan et al., 2009, Ercan et al., 2007; Jans et al., 2009). The recruitment sites show high levels of DCC binding, while sites of spreading show comparatively weaker DCC binding and frequently overlap with promoters and enhancers (Ercan et al., 2009, Ercan et al., 2007; Kranz et al., 2013). DCC spreading is independent of X chromosome sequence as the complex is able to spread into autosomal sequence fused to the end of the X (Ercan et al., 2009). Interestingly, condensin DC spreads more effectively than the recruiter proteins SDC-2 and SDC-3 (Ercan et al., 2009), highlighting the distinction between recruitment and spreading. Recruitment of the DCC to the X chromosomes is dependent on SDC-2, SDC-3, and DPY-30: SDC-3 binding requires both SDC-2 and DPY-30 (Davis and Meyer, 1997); DPY-30 binding requires both SDC-2 and SDC-3 (Pferdehirt et al., 2011). Only SDC-2 can localize to the X chromosomes in the absence of other complex members (Dawes et al., 1999).\n\nIdentification of DNA sequences capable of autonomously recruiting the DCC has previously been conducted using extrachromosomal arrays (Csankovszki et al., 2004; McDonel et al., 2006). Briefly, the DNA fragment to be tested is injected into the worm where it forms a multi-copy array. Fluorescence microscopy is then utilized to assess DCC recruitment to the extrachromosomal sequence. However, the array-based assay is limiting in both function (in that it is not feasible to test every possible X chromosome sequence) and in specificity (in that assaying recruitment to artificial, multi-copy arrays can result in false positives). Here, to overcome these limitations, we used a genomics approach to identify and categorize DCC recruitment sites in the context of the native X chromosome. To better understand how a limited number of recruitment sites function to specifically target the DCC to the X, we investigated the role of DNA sequence and chromatin accessibility on recruitment site activity, and performed targeted genome editing to test recruitment site function.\n\nHere, we found that DCC recruitment to the X chromosomes is initiated by a small number of strong recruitment sites that contain clusters of a 12 bp DNA sequence motif. Strong recruitment sites display significant overlap with annotated high occupancy transcription factor target (HOT) sites and are marked by DNA-encoded nucleosome occupancy, two features that distinguish motif clusters on the X from those on the autosomes. Strong recruitment sites are distributed along the length of the X chromosome, interspersed by weaker sites whose recruitment function is X-chromosome dependent. We addressed the X-dependent activity of recruitment sites by ectopically inserting recruitment sequence into both the autosomes and the X chromosome. While the ectopic insertion of a recruitment site in single copy failed to fully recruit the DCC to an autosome, both increased copy number and the insertion of additional recruitment sequences at a distance significantly increased DCC recruitment to an ectopic site, suggesting that cooperation between multiple recruitment sites is necessary for robust DCC binding on the X. Furthermore, deletion of a recruitment site resulted in moderate but significant reduction of DCC binding centered on the deleted site and surrounded by strong TAD boundaries. This result suggests that recruitment by multiple sites and subsequent spreading of the DCC in cis within distinct chromosomal domains establishes the full DCC binding pattern. Overall, our work demonstrates that cooperation between a hierarchical set of recruitment sites specifically targets the C. elegans dosage compensation complex to the X chromosomes.\n\n## Results\n\n### Determining DCC recruitment sites using ChIP-seq data\n\nPreviously, extrachromosomal array based assays were used to demonstrate the ability of a DNA fragment to autonomously recruit the DCC, independent of the X chromosome. This technique was used to identify 47 recruitment elements on the X, named rex-1 through rex-47 (Jans et al., 2009; Pferdehirt et al., 2011; McDonel et al., 2006). However, extrachromosomal arrays carry multiple copies of the sequence being tested leaving these assays susceptible to false positives. Many sequences shown to recruit the DCC to a multi-copy extrachromosomal array show little to no DCC binding in ChIP-seq experiments (Figure 1\u2014figure supplement 1A). Here, to identify sequences that recruit the DCC in the context of the native X chromosome, we used C. elegans mixed developmental stage embryos (~100 cell stage and higher obtained by bleaching adults and\u00a0using similar growth conditions between strains) to perform ChIP-seq analysis of SDC-2, SDC-3, and DPY-30, the proteins required for DCC recruitment (Pferdehirt et al., 2011; Dawes et al., 1999; Davis and Meyer, 1997). Consistent with previous work (Ercan et al., 2009), we found that SDC-2 binding is enriched on the X chromosome: 336 out of 659 (51%) binding sites are on the X. Similarly, 54% (389/719) of SDC-3 and 29% (254/868) of DPY-30 binding peaks are on the X chromosome. The condensin DC portion of the complex, as assayed by DPY-27 ChIP-seq (Kranz et al., 2013), is largely restricted to the X chromosome: over 99% (2546/2564) of DPY-27 binding peaks are on the X. Peak distribution (Figure 1B) and a representative window of ChIP-seq enrichment for SDC-2, SDC-3, DPY-30, DPY-27, and H3K4me3 (a marker of COMPASS activity [Shilatifard, 2008, Shilatifard, 2012; Xiao et al., 2011]) (Figure 1C) are shown. As a side note, among the 336 autosomal SDC-2 binding peaks, 206 (61.3%) overlap with both SDC-3 and DPY-30 but fail to recruit condensin DC, suggesting a DCC-independent role for the recruiter proteins at these sites.\n\nPrevious work has demonstrated that high levels of DCC ChIP enrichment are predictive of recruitment activity (Jans et al., 2009). Thus, in order to define a list of DCC recruitment sites, we began by identifying the 100 strongest SDC-2 ChIP-seq binding peaks in the genome. Of these, 92 overlap with both SDC-3 and DPY-30 binding peaks. DPY-30, as a member of MLL/COMPASS, is associated with the histone modification H3K4me3 (Shilatifard, 2008, Shilatifard, 2012; Xiao et al., 2011). To remove sites of COMPASS activity, we eliminated peaks that overlap with H3K4me3 enrichment. Lastly, we looked for the presence of condensin DC binding by requiring overlap with a DPY-27 binding peak on the X chromosome. Our criteria for defining recruitment sites was strict; 9 DCC binding loci on the X chromosome were eliminated due to high enrichment of H3K4me3 (Figure 1\u2014figure supplement 2). Our finalized list of 64 recruitments sites contains 32 out of 47 (68%) rex-sites that were shown previously to recruit the DCC to extrachromosomal arrays (Figure 1D, Supplementary file 1D). The remaining 15 previously identified rex sites either lack binding of one or more DCC subunits (14/15) and/or overlap with H3K4me3 enrichment (6/15), indicating COMPASS activity. For clarity, when referring to loci identified by our ChIP-seq enrichment method we will use the term \u2018recruitment site.\u2019 When referring to a specific sequence that has been previously shown to recruit the DCC to array we will use the term \u2018rex-site.\u2019 ChIP-seq enrichment at recruitment sites, both endogenous and ectopic, will be referred to as \u2018DCC recruitment.\u2019 ChIP-seq enrichment at all other genomic loci will be referred to as \u2018DCC binding.\u2019\n\n### SDC-2 recognizes and binds a set of strong recruitment sites in the absence of other DCC members\n\nCloser examination revealed that ChIP enrichment scores at the recruitment sites vary greatly; some sites appear to recruit the DCC much more robustly than others (Figure 1\u2014figure supplement 1B). Recruitment sites were ranked by their SDC-2, SDC-3, DPY-30, and DPY-27 ChIP enrichment scores and separated into three strength classes using k-means clustering (Figure 2A). We identified 17 strong, 16 intermediate, and 31 weak recruitment sites. Strong recruitment sites are spaced roughly 1 Mb apart along the length of the X chromosome and are interspersed by both weak and intermediate strength sites (Figure 2B). This observed pattern of recruitment site localization and strength suggested that X-specific recruitment of the DCC is hierarchical, initialized by DCC binding at a subset of strong recruitment sites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heatmaps showing ChIP-seq enrichment for the DCC recruiter proteins, SDC-2, SDC-3, and DPY-30, the condensin DC subunit DPY-27, and the histone modification H3K4me3. Heatmaps are plotted across a 3 kb window centered on the 64 recruitment sites. Based on the DCC ChIP enrichment scores, the recruitment sites are categorized into three strength classes (strong, intermediate, weak) using k-means clustering (n\u00a0=\u00a03). (B) The strong DCC recruitment sites (pink, n\u00a0=\u00a017) are scattered across the X chromosome. Intermediate (n\u00a0=\u00a016) and weak (n\u00a0=\u00a031) recruitment sites (gray) are distributed in between. The median distance between recruitment sites is\u00a0~90 kb. SDC-2 enrichment across the length of the X chromosome was plotted using IGV. (C) In an sdc-3 null mutant, SDC-2 binds the strongest recruitment sites, indicating hierarchy of recruitment. As in (A), heatmaps indicating SDC-2 ChIP-seq enrichment are plotted across a 3 kb window centered on the 64 recruitment sites. Data from wild-type, sdc-3 null, and sdc-2 null are all plotted on the same scale. Density plots above each heatmap indicate the average ChIP enrichment score for each recruitment class plotted across the 3 kb window. Strong sites are plotted in pink, intermediate in blue, and weak in grey.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatterplot comparing SDC-2 ChIP-seq enrichment between wild-type (N2) and the sdc-3 null mutant. Briefly, the X chromosome was divided into 200 bp windows with a step size of 100 bp. Average SDC-2 enrichment across the window was calculated and plotted. Windows that overlap with a strong recruitment site are plotted in red, intermediate site in teal, and weak site in green. For each recruitment strength class, the best fit linear model was determined and plotted. Slopes of the best-fit lines are indicated (strong\u00a0=\u00a028.190, intermediate\u00a0=\u00a00.420, weak\u00a0=\u00a00.16). Arrowhead indicates windows overlapping with a\u00a0region of the X chromosome deleted in the sdc-3 null background. (B) Scatterplot comparing SDC-2 enrichment in wild-type (N2) versus the log2 change in enrichment in the sdc-3 null for all 64 recruitment sites. Each point represents an average across a 40 bp window centered at the recruitment site summit. Dividing the entire X chromosome into 40 bp window revealed an average log2 ratio of \u22121.280 (horizontal line). Strong recruitment sites are shown in red, intermediate site in teal, and weak site in green. Arrowhead indicates window overlapping with region of the X chromosome deleted in the sdc-3 null background.\n\nAmong the DCC subunits, only SDC-2 can localize to the X chromosome in the absence of other complex members and only SDC-2 is required for proper localization of all other dosage compensation proteins (Dawes et al., 1999). Under a model of recruitment site strength hierarchy, we predicted that the strongest recruitment sites might be acting as initial DCC entry sites. If correct, then SDC-2 ChIP-seq performed in an sdc-3 null mutant strain (in which only SDC-2 can localize to the X) should reveal binding only at the strongest recruitment sites. Indeed, in sdc-3 (y126) null mutant embryos, SDC-2 binds to 16 out of 17 strong, 11 out of 16 intermediate, and only 2 out of 31 weak recruitment sites (Figure 2C). The single strong site that fails to recruit SDC-2 is in a region that is deleted in the sdc-3 null mutant.\n\nTo test the possibility of an equivalent reduction of SDC-2 binding across all sites on the X chromosome in the sdc-3 mutant, we plotted SDC-2 enrichment across the X chromosome in wild-type animals versus the sdc-3 mutant (Figure 2\u2014figure supplement 1A). We observe a striking difference between changes in SDC-2 binding at the strong versus the weaker recruitment sites. Across the length of the X chromosome, the background SDC-2 enrichment is reduced (median log2 ratio of \u22121.280, Figure 2\u2014figure supplement 1B). Weak recruitment sites exhibit a markedly lower log2 ratio (median \u22123.042). In contrast, strong recruitment sites have a median log2 ratio of \u22121.057. Retainment of SDC-2 enrichment specifically at the strong recruitment sites in animals lacking sdc-3 is consistent with hierarchical binding of SDC-2 at recruitment sites.\n\nAdditionally, the pattern of SDC-2 ChIP-seq enrichment in the sdc-3 null suggests that SDC-2 binding is restricted to the initial recognition sites. Compared to wild-type, we see only a narrow window of SDC-2 binding in the sdc-3 null strain, indicating that SDC-2 fails to spread in the absence of other DCC members (Figure 2C). As a control, ChIP-seq analysis in sdc-2 (y74) null mutant embryos revealed a complete lack of SDC-2 binding at all 64 recruitment sites (Figure 2C). In sum, these observations suggest that our categorization of recruitment sites into stronger and weaker classes using the pattern of DCC ChIP enrichment reflects the hierarchy of recruitment. Strong recruitment sites are the initial entry points for DCC binding, which allows for DCC binding at weaker recruitment sites.\n\n### SDC-2 is required to maintain open chromatin at strong recruitment sites, which display intrinsic DNA-encoded nucleosome occupancy\n\nSDC-2 is a novel 344.4kD protein unique to Caenorhabditis (Nusbaum and Meyer, 1989) and the only hermaphrodite-specific member of the DCC. All other complex subunits are maternally loaded into the embryo (Dawes et al., 1999; Stoeckius et al., 2014) and remain diffuse in the nucleus prior to the onset of sdc-2 expression at around the 40 cell stage (Dawes et al., 1999). While we cannot exclude the possibility that, prior to sdc-2 expression, some condensin DC is loosely associated with all chromosomes, previous work indicates that SDC-2 is required for X-specific enrichment of condensin DC binding (Dawes et al., 1999). Despite its importance in recruiting the DCC to the X chromosomes, it remains unclear how SDC-2 is able to specifically recognize and bind to the X. Toward understanding the mechanism underlying X-recognition by SDC-2, we examined histone occupancy at recruitment sites, reasoning that initial recruitment to stronger sites might be the result of those sites being inherently more open prior to the onset of sdc-2 expression. We performed histone H3 ChIP-seq in wild-type and sdc-2 null mutant embryos, using the sdc-2 null strain as a proxy to measure nucleosome occupancy before the onset of sdc-2 expression. While wild-type H3 data indicated a tendency for open chromatin at all recruitment sites (Figure 3A, left), we observed a marked increase in H3 enrichment, specifically at the strong recruitment sites, in the sdc-2 null mutant (Figure 3A, right). Interestingly, a nucleosome occupancy model trained on in vitro sequence preferences (Ercan et al., 2011) predicts high nucleosome occupancy at DCC recruitment sites (Figure 3B). These results suggest that SDC-2 is required for open chromatin at the recruitment sites which themselves encode for high nucleosome occupancy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig3-v1.jpg)\n\n**Figure 3.:** (A) Heatmaps showing H3 ChIP-seq enrichment across a 1 kb window centered on the 64 recruitment sites. Wild-type data (left) indicates open chromatin at all recruitment sites. Data from an sdc-2 null strain (right) indicates increase in H3 enrichment, especially at the strong recruitment sites. Density plots above each heatmap indicate the average ChIP enrichment score for each recruitment class. (B) Heatmap indicates the probability of nucleosome occupancy across a 1 kb window centered on the recruitment sites. Probability ranges from 0.0 (yellow) to 1.0 (green). DNA-encoded nucleosome occupancy signal is highest at the center of the recruitment sites.\n\n### The 12 bp DNA sequence motif and its nucleosomal context have a role in DCC recruitment\n\nPrevious work using either array-characterized rex-sites (Jans et al., 2009; McDonel et al., 2006) or DCC ChIP-chip data (Ercan et al., 2009, Ercan et al., 2007) independently identified a short DNA sequence motif enriched at DCC recruitment sites. Extrachromosomal arrays bearing wild-type motif sequence were shown to recruit the DCC while arrays with motif mutations failed to recruit (McDonel et al., 2006), indicating that motif sequence is important for DCC binding. However, the motif is only slightly enriched (~3 fold) on the X (Ercan et al., 2007; Jans et al., 2009), and copies of the motif on autosomes do not recruit the DCC. To investigate the role of the motif in X-specific recruitment of the DCC, we first redefined the 12 bp motif using higher resolution ChIP-seq data (Figure 4A). Similar to the previously identified sequences, the 12 bp motif contains an 8 bp GCGCAGGG core with variable specificities for the surrounding nucleotides. We scanned the whole genome for motif occurrences using the Transcription Factor Affinity Prediction (TRAP) tool (Thomas-Chollier et al., 2011), generating a genome-wide list of motif match locations and associated affinity scores (Supplementary file 1E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig4-v1.jpg)\n\n**Figure 4.:** (A) The 12 bp recruitment motif identified using high-resolution SDC-2 ChIP-seq data. (B) Motif distribution is plotted for chromosomes I through V (shades of gray) and chromosome X (purple). Motif enrichment is dependent on score-cutoff. Weaker motifs (score\u00a0<7) are randomly distributed across the chromosomes. Strong motifs (score\u00a0\u22657) are enriched on the X chromosome. Perfect score motifs (score 10, sequence ATCGCGCAGGGA) show almost complete X-specificity: 10/11 (91%) are on the X. (C) Heatmaps showing H3 ChIP-seq enrichment from wild-type (left) and sdc-2 null (right) embryos, plotted across a 1 kb window centered on all strong motifs of score\u00a0\u22657. Motifs are sorted by H3 enrichment in wild-type, and divided into three categories: Bound\u00a0by\u00a0DCC on the X (n\u00a0=\u00a050), unbound on the X (n\u00a0=\u00a045), and unbound on the autosomes (n\u00a0=\u00a0184). Here, we define \u2018bound\u2019 as the overlap of both SDC-3 and DPY-27 binding. There are no bound motifs on the autosomes. (D) Heatmap indicates the probability of nucleosome occupancy across a 1 kb window centered on the motifs. As in (C), motifs are sorted by H3 enrichment in wild-type. (E) Boxplot indicates intrinsic nucleosome occupancy for a 150 bp window centered on each motif. Bound motifs (dark purple, median 0.616) have significantly higher DNA-encoded nucleosome occupancy compared to unbound motifs on the X (light purple, median 0.4865) and motifs on the autosomes (grey, median 0.503). Significance calculated using one-tailed students t-test (** p-value<0.01, *** p-value<0.001).\n\nWe found that X-enrichment of the 12 bp recruitment motif is sensitive to affinity score cut-off. Motifs with a score of less than seven are randomly distributed throughout the genome while those with a score of seven or greater are approximately three fold enriched on the X. The X chromosome contains 43% (47/110) of motifs with a score of 8 or better, 64% (20/31) with a score of 9 or better, and 91% (10/11) of perfect match motifs (ATCGCGCAGGGA) (Figure 4B). Based on this enrichment pattern, we define strong motifs to be those with a score of 7 or better. Strong motifs are enriched\u00a0on, but not specific to, the X chromosome. There are 184 strong motifs distributed across the five autosomes, none of which are bound by the DCC. And while all motifs with a perfect score of 10 recruit the DCC in the context of the X chromosome (i.e. all of them overlap with a recruitment site), the single perfect autosomal motif fails to recruit the DCC (Figure 5\u2014figure supplement 1). Additionally, we find that, of the 95 strong motifs on the X chromosome, only 50 (52%) are bound by the DCC. This result parallels the general observation that many TFs bind only a subset of their potential binding motifs (D'haeseleer, 2006).\n\nBecause chromatin accessibility often functions to regulate TF binding, we reasoned that unbound motifs on both the X and the autosomes might be precluded from DCC binding due to the presence of nucleosomes. To test this, we plotted histone H3 ChIP-seq enrichment across 1 kb windows centered at all of the strong motifs in the genome (n\u00a0=\u00a0279) (Figure 4C). We found that bound motifs are, indeed, depleted of histones. However, several motifs on both the X chromosome and the autosomes exhibit similar histone depletion, yet are not bound by the DCC. Therefore, motif accessibility is insufficient to predict DCC binding.\n\nBecause we observe an increase in H3 enrichment at strong recruitment sites in the absence of SDC-2 (Figure 3A), we reasoned that SDC-2 might be similarly required for open chromatin at strong motifs. In the absence of SDC-2, H3 occupancy increases specifically at motif sequences that are bound by the DCC in wild-type animals (Figure 4C). Increased H3 occupancy reflects the nucleosome occupancy predicted by the in vitro model (Figure 4D). Interestingly, DCC bound motifs have, on average, higher predicted nucleosome occupancy than unbound motifs on either the X or the autosomes (Figure 4E). Combined with our previous observation that recruitment sites are characterized by high intrinsic nucleosome occupancy (Figure 3A), our data suggests a role for nucleosome positioning in DCC binding and recruitment.\n\n### Motif clustering and overlap with HOT sites confer X-specificity to the strong DCC recruitment sites\n\nWhile enriched on the X chromosome, the 12 bp motif is also found on all five of the autosomes. However, unlike on the autosomes where motifs are more randomly dispersed, motifs on the X tend to cluster together in linear space (Ercan et al., 2007). Here, we refined the analysis of motif clustering by defining a motif cluster to be a strong motif (score\u00a0\u22657) flanked within 200 bp by at least one other motif with a score of 5 or better. Using this definition, we identified 17 homotypic motif clusters on the X chromosome, all of which are bound by the DCC and all of which are contained within a recruitment site (Figure 5A). Significantly, of the 10 perfect motif matches on the X chromosome, nine are contained within a motif cluster and are centered at a strong recruitment site. Two of the strongest recruitment sites, rex-14 and rex-32, each contain two perfect motifs (score\u00a0=\u00a010). Overall, motif clustering is a characteristic of strong recruitment sites. Among the 17 strong sites, six contain a cluster of two motifs and five contain a cluster of three motifs. These observations suggest that motif clustering on the X is important for DCC recruitment. However, clustering alone cannot fully distinguish the X from the autosomes. Using our definition, we find five motif clusters on the autosomes, none of which recruit the DCC (Figure 5\u2014figure supplement 1). All five autosomal clusters have only one strong motif and one weaker motif. In addition, each autosome contains at most, two motif clusters (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig5-v1.jpg)\n\n**Figure 5.:** (A) A motif cluster is defined as a strong motif (score\u00a0\u22657) flanked within 200 bp by a second motif. Motif locations plotted for each of the 22 motif clusters: 17 are X- linked (11 at strong recruitment sites, six at weaker recruitment sites) and five are on the autosomes. Plots are centered on the strongest motif in each cluster. Weak motifs (score 5\u20137) are shown in gray; strong motifs (score 7\u20139) are shown in black; perfect matches (score\u00a0=\u00a010) are shown in pink. For simplicity, motif scores (Supplementary file 1E) are rounded down to the nearest whole integer. (B) Plot demonstrating overlap between recruitment sites and motif clusters, motif strength, HOT sites, and tRNAs. Black box indicates presence and white box indicates absence of a given overlap. For motifs, pink box indicates presence of a perfect score motif (score\u00a0=\u00a010); black box indicates presence of a strong motif (score 7\u20139); grey box indicates presence of a weak motif (score 5\u20137). Significance of overlap is calculated for the entire set of 64 recruitment sites using permutation test (overlapPermTest function of the regioneR package (Fruciano et al., 2016), 100 permutations, ** p-value<0.01). The reported \u2018n. overlap\u2019 refers to the number of indicated genomic annotation that overlaps with at least one recruitment site. Overlap with HOT site is a characteristic of strong recruitment sites. Overlap with tRNAs is a characteristic of weaker recruitment sites. (C) Heatmaps showing H3 ChIP-seq enrichment from wild-type (left) and sdc-2 null (right) embryos, plotted across a 3 kb window centered on annotated HOT sites. HOT sites on the X are divided into two categories: those that overlap with a recruitment site and those that do not. HOT sites from chromosome V are representative of all autosomal HOT sites. SDC-2 is required for opening chromatin at the HOT DCC recruitment sites on the X.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** SDC-2, SDC-3, DPY-30, DPY-27, and H3K4me3 ChIP-seq enrichment is plotted across a 3 kb window centered on a representative recruitment site from each strength class, and for two autosomal loci (the perfect autosomal motif and the autosomal motif cluster used in Figure 6E) that do not recruit the DCC.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Black box indicates presence and white box indicates absence of a given overlap. Significance of overlap is calculated using permutation test (overlapPermTest function of the regioneR package (Fruciano et al., 2016), 100 permutations, ** p-value<0.01)). Red box indicates enrichment of overlap; blue box indicates depletion. The reported \u2018n. overlap\u2019 refers to the number of indicated genomic annotation that overlaps with at least one recruitment site. References for genomic annotations can be found in Supplementary file 1F.\n\nAlone, neither motif sequence nor motif clustering nor nucleosome occupancy is able to explain X-specificity of DCC recruitment. Subsequently, in order to identify additional factors that distinguish DCC recruitment sites on the X, we looked for significant overlap with various genomic annotations (Figure 5B). References for annotations can be found in Supplementary file 1F, and a more exhaustive overlap plot can be found in Figure 5\u2014figure supplement 2. Previous work has demonstrated significant enrichment of condensin I binding at tRNA genes in yeast, chicken and C. elegans (Kranz et al., 2013; D'Ambrosio et al., 2008; Haeusler et al., 2008; Kim et al., 2013). Of the 638 annotated C. elegans tRNA genes, 286 (44.8%) are on the X chromosome. Of these, 178 (62.2%) overlap with a condensin DC binding site on the X chromosome, as assayed by DPY-27 ChIP-seq. Interestingly, 16 out of 64 DCC recruitment sites overlap with a tRNA gene (Figure 5B). This overlap occurs largely at weak recruitment sites, suggesting that canonical condensin recruitment mechanisms at tRNAs may help to reinforce condensin DC binding on the X chromosome downstream of DCC recruitment at strong sites.\n\nInterestingly, the set of strong recruitment sites is distinguished by an overlap with HOT sites, defined as genomic regions that are bound by a high number of TFs (38 or more of the 57 TFs assayed in [Van Nostrand and Kim, 2013]) without their corresponding motifs (modENCODE Consortium et al., 2010) (Figure 5B). Among the 17 strong recruitment sites, 16 fall within the boundaries of an annotated HOT site (Van Nostrand and Kim, 2013). In C. elegans, HOT sites tend to be CpG-rich and typically show characteristics of open chromatin, including nucleosome depletion (Chen et al., 2014). Our H3 data confirms a lack of histone binding at all annotated HOT sites (Figure 5C). In the sdc-2 null mutant, H3 becomes enriched only at those HOT sites that overlap with a recruitment site, indicating that SDC-2 binding is necessary to keep these HOT sites open. Strikingly, while none of the five autosomal motif clusters are HOT, we find that 11 out of 12 motif clusters on the X chromosome both overlap with a HOT site and are characterized as strong recruitment sites. Importantly, this overlap between homotypic motif clusters and HOT sites on the X chromosome fully distinguishes the X from the autosomes.\n\n### Ectopic insertion of rex-1 fails to robustly recruit the DCC to an autosome\n\nOur analysis has thus far demonstrated that the 17 strong recruitment sites are distinguished from other motif containing sites in the genome by motif clustering, chromatin structure, and overlap with annotated HOT sites. In addition, these strong recruitment sites are bound by SDC-2 in the absence of other DCC subunits, suggesting a hierarchy of DCC recruitment among the recruitment sites. The presence of weaker recruitment sites that are not as easily distinguishable from autosomal sequence suggests that these sites might be active only in the context of the X chromosome. X chromosome dependence of a subset of recruitment sites is consistent with previous work that demonstrated the inability of some large X chromosome duplications to recruit the DCC when detached from the rest of the chromosome (Blauwkamp and Csankovszki, 2009).\n\nTo test X-dependence of recruitment site activity, we ectopically inserted\u00a0~400 bp of recruitment site sequence into autosomal loci that do not bind the DCC in wild-type animals. Rex-1, here categorized as an intermediate strength site, was the first recruitment sequence identified by multi-copy extrachromosomal array analysis (McDonel et al., 2006). We reasoned that if rex-1 is sufficient to autonomously recruit the DCC, then inserting 400 bp of rex-1 sequence into the chromosome II MosSci site should result in ectopic DCC binding. We used ChIP-qPCR to assay for the presence of both SDC-3 (recruiter protein) and DPY-27 (condensin DC) at the autosomal locus.\n\nChIP-qPCR is a powerful tool for quantitatively determining the amount of antibody-immunoprecipitated DNA. However, the assay is sensitive to the inherent variability of ChIP between biological replicates, necessitating proper controls for normalization. To account for background noise, we used the \u2206\u2206Ct method to calculate fold enrichment over input compared to a negative control locus. To account for between-replicate differences in ChIP efficiency, we internally normalized fold enrichment to a positive control (i.e. the endogenous locus). Experiments were done in biological triplicate and final ChIP-qPCR results were plotted as percent of endogenous recruitment, allowing comparison across experimental set ups.\n\nChIP-qPCR results indicate that rex-1 sequence recruits SDC-3 and DPY-27 at a much lower level when inserted in single copy into chromosome II (Figure 6A). Respectively, SDC-3 and DPY-27 qChIP enrichment reaches only 25.79% and 12.40% of endogenous site levels. In contrast, sequence from the strongest recruitment site, rex-8, inserted in single copy at the same locus binds SDC-3 and DPY-27 at 46.56% and 21.89% of endogenous rex-8 levels, respectively. We conclude that rex-8, which contains a cluster of three motifs and overlaps with a HOT site in the native X chromosome, is a strong DCC recruiter and is sufficient to ectopically recruit the complex to an autosome, albeit at reduced levels compared to the endogenous site.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig6-v1.jpg)\n\n**Figure 6.:** (A) SDC-3 (left, blue) and DPY-27 (right, brown) ChIP-qPCR data is plotted for the indicated ectopic insertions. ChIP-qPCR is plotted as percent of endogenous recruitment, that\u00a0is, recruitment at the ectopic site is compared to recruitment at the corresponding endogenous sequence. MosSci was used to insert rex-1 and rex-8 sequence into the same locus on chromosome II. Bombardment was used to insert rex-1 sequence in three-copy on chromosome III and eight-copy on chromosome I. CRISPR was used to insert rex-1 sequence in single copy on chromosome X. Information on strain generation is available in Supplementary file 1A. Significance is tested using one-tailed t-test assuming unequal variance (*p-value<0.05; **p-value<0.01). (B) DPY-27 ChIP-seq data comparing wild-type average and three biological replicates of the ChIP-seq data in the strain bearing an ectopic insertion of rex-1 in single copy in chromosome X. The insertion site is indicated as the dashed line. Inserted rex-1 sequence is not shown, as ChIP-seq enrichment at the ectopic sequence is confounded by binding at the endogenous site. Location of the novel spreading peak in the insertion strain is indicated by the red arrowhead. (C) As in (A), SDC-3 and DPY-27 ChIP-qPCR data is plotted as percent of endogenous recruitment. Dashed circle indicates ectopic site being assayed in ChIP-qPCR. CRISPR was used to insert rex-8 sequence 30 kb downstream and 50 kb upstream of the ectopic rex-1 sequence on chromosome II. (D) As in (C), dashed circle indicates the ectopic site being assayed. (E) CRISPR was used to insert a motif cluster from chromosome V into the ectopic chromosome X site. Because the chromosome V site does not normally recruit the DCC, SDC-3 and DPY-27 ChIP-qPCR data is plotted as percent of endogenous rex-1 recruitment. (F) Boxplot indicates intrinsic nucleosome occupancy for a 150 bp window centered on either motif or recruitment site as indicated. Recruitment sites with no motifs (light green, median 0.684) have significantly higher DNA-encoded nucleosome occupancy compared to recruitment sites containing motifs (dark green, median 0.583). Motif clusters on the X (dark blue, median 0.604) have higher DNA-encoded nucleosome occupancy compared to motif clusters on the autosomes (light blue, median 0.548). Rex-1 has a nucleosome occupancy score of 0.732; the chromosome V motif cluster has a nucleosome occupancy score of 0.450).\n\nInterestingly, when we insert the same 400 bp rex-1 sequence in single-copy into the X chromosome (at a site that does not normally recruit the DCC) the sequence is able to robustly recruit the DCC, even exceeding endogenous levels (Figure 6A). ChIP-seq data also revealed a novel DCC spreading peak just upstream of the rex-1 insertion site on the X (Figure 6B). Although many DCC spreading sites are located in X-linked promoters, this new spreading site is in an un-annotated region. We do not yet understand what may be driving the DCC to spread to this sequence in the ectopic strain where it fails to do so on the wild-type chromosome.\n\n### Multiple recruitment sites cooperate to recruit the DCC to the X chromosome\n\nSingle-copy rex-1 sequence fails to fully recruit the DCC to an autosome, but is sufficient to (both ectopically and endogenously) recruit the DCC to the X chromosome, suggesting X-dependency of rex-1 activity. DCC recruitment at weaker sites on the X may be dependent on cooperation between multiple recruitment sites. Alternatively, activation of weaker recruitment sites may strictly require the presence of a strong recruitment site. We distinguished between these possibilities by inserting multiple-copies of rex-1 sequence into two different autosomal loci. If rex-1 function is dependent on activation by strong recruitment sites, then increasing copy number should have no effect on ectopic recruitment. Alternatively, if multiple recruitment sites function to cooperatively recruit the DCC, then ectopic recruitment should improve upon increased copy-number. Indeed, inserting rex-1 sequence in three and eight copies respectively increased DPY-27 enrichment to 61.49% and 99.89% of endogenous rex-1 binding (Figure 6A). SDC-3 enrichment similarly increased to 80.98% and 50.08% of endogenous levels (Figure 6A). These results indicate that rex-1 sequence in multiple-copy is sufficient to cooperatively recruit the DCC in the absence of strong recruitment sites. This suggests that the presence of strong recruitment sites in the context of the X chromosome enhances and reinforces cooperativity.\n\nGiven that the median distance between recruitment sites on the X is\u00a0~90 kb (ranging from 1543 bp to 1.2 Mb), cooperation between sites is likely long-range. To test the ability of recruitment sites to cooperate over long-distances, we used CRISPR to sequentially insert 400 bp of rex-8 sequence\u00a0~30 kb downstream and\u00a0~50 kb upstream of the single ectopic rex-1 that failed to recruit by itself on chromosome II (Figure 6C). Notably, we observe similar levels of ectopic recruitment to rex-8 sequence at three independent insertion loci, suggesting little position effect on recruitment ability (Figure 6D). Upon addition of rex-8 at a single locus\u00a0~30 kb downstream, recruitment of DPY-27 to the ectopic rex-1 increased\u00a0~1.5 fold (Figure 6C). Insertion of rex-8 at a second site\u00a0~50 kb upstream resulted in further increase in both SDC-3 and DPY-27 binding at the ectopic rex-1 locus (Figure 6C). It is remarkable that, without prior knowledge of the mechanism of long-range cooperativity, insertion of rex-8 sequence at two distant loci resulted in increased ectopic recruitment to the single copy rex-1 sequence. These results suggest that strong and weak recruitment sites, dispersed across the length of the X chromosome, cooperatively define a recruiting environment that restricts DCC binding to the X chromosome.\n\nRecent HiC data indicated that interactions between recruitment sites are among the most prominent long-distance contacts on the X chromosome (Crane et al., 2015). These interactions are largely DCC dependent as many are lost in an sdc-2 mutant. We used the same data to determine recruitment site interactions, limiting our analysis to interaction scores above a 99% quantile threshold. Accordingly, we found that 62 out of 64 recruitment sites interact with at least one other recruitment site in the wild-type worm (Figure 5\u2014figure supplement 2). This level of site-to-site contact is highly significant (p<0.001, permutation test). In the sdc-2 mutant, the number of interactions is reduced: 35 out of 64 recruitment sites interact with at least one other site. In Drosophila, 3D interaction between high affinity sites facilitates spreading of the dosage compensation complex across the X chromosome (Ram\u00edrez et al., 2015). One possible explanation for DCC recruitment to weaker sites, especially to those lacking a motif, is that the complex utilizes pre-established spatial proximity to spread from strong sites. Increased DCC binding might reinforce recruitment site interactions, helping to establish the observed X chromosome conformation (Crane et al., 2015).\n\n### An autosomal 12 bp motif cluster fails to recruit the DCC to the X chromosome\n\nBecause most strong recruitment sites are composed of motif clusters, and because recruitment sites bind the DCC more effectively in the context of the X chromosome, we next tested sufficiency of a motif cluster to recruit the complex when inserted into the X chromosome. To this end, we inserted one of the five identified autosomal motif clusters (containing two motifs) into the X chromosome. We selected this autosomal motif cluster because it contained the strongest scoring motifs (scores 9.5 and 6.25) separated by the shortest genomic distance (68 bp), and was most similar to motif clusters found at strong recruitment sites on the X. To eliminate any potential position effects, we inserted the motif cluster into the same X chromosomal locus where ectopic rex-1 robustly recruited the DCC (Figure 6A). The autosomal motif cluster failed to strongly recruit the DCC to the X chromosome (Figure 6E). This result suggests that motif clustering alone is not sufficient for DCC recruitment, even in the context of the X chromosomes. Because we found that strong recruitment sites containing motif clusters overlap with HOT sites and encode for high intrinsic nucleosome occupancy, we reasoned that flanking DNA sequence and/or chromatin structure is important for DCC recruitment. Compared to motif clusters on the X chromosome (median 0.604), autosomal motif clusters have lower intrinsic nucleosome occupancy (median 0.548) (Figure 6F). Interestingly, recruitment sites that do not contain motifs have significantly higher intrinsic nucleosome occupancy than recruitment sites that do contain motifs (Figure 6F), suggesting that a specific DNA or chromatin structure is important for recruitment activity.\n\n### Single recruitment site deletions affect DCC binding across large chromosomal domains defined by TAD boundaries\n\nWe reasoned that, if recruitment sites act cooperatively to achieve robust and X-specific DCC localization, then deleting a single site on the X chromosome should reveal long-range effects on DCC binding. Using CRISPR, we deleted three recruitment sites on the X chromosome: two strong sites, rex-40 and rex-41 are respectively the left and the rightmost strong sites on the X, while the intermediate strength rex-1 lies\u00a0~4 Mb into the X chromosome (Figure 7\u2014figure supplement 1A). Deletions were confirmed by Sanger sequencing (Figure 7\u2014figure supplement 2). Compared to wild-type, DPY-27 ChIP-seq data in the rex-41 deletion strain indicates that the DCC binding profile is largely unchanged along the length of the X chromosome (Figure 7\u2014figure supplement 1B,C). This suggests that DCC recruitment is a robust process; cooperation between the remaining recruitment sites is capable of countering the effect of a single recruitment site deletion.\n\nAlthough gross changes are not apparent, we observed a subtle reduction in DCC binding upon rex-41 deletion. We used a sliding window analysis, an assay more sensitive to slight alterations in DCC enrichment, to determine both the level and significance of change in DCC binding upon recruitment site deletion. Briefly, a 2 Mb window was stepped across each of the\u00a0~2500 DPY-27 binding sites on the X chromosome\u00a0(median step\u00a0size of\u00a04.8kb). At each step, the mean log2 ChIP-seq ratio between wild-type and recruitment site deletion strain was calculated from all binding sites within the window. To allow comparison across experiments, mean values were normalized using the log2 ratio at the rex-8 locus and percent deviation from wild-type was plotted. Significance of reduced DCC binding was calculated using students t-test, comparing log2 ratio of DPY-27 binding within a window to binding across the X chromosome. This analysis revealed a significant decrease of\u00a0~10\u201320% in DCC binding across\u00a0~1\u20132 Mb regions surrounding each individual deletion (Figure 7A). Additional analyses using 1 Mb and 500 kb windows indicate similar results (Figure 7\u2014figure supplement 3). DPY-27 ChIP-seq data from a set-4 mutant strain (defective in dosage compensation but not in DCC localization) revealed no localized reduction of DCC binding, validating the analysis and confirming that the effect on DCC binding is specific to the deletion strains (Figure 7\u2014figure supplement 4). Additionally, mRNA-seq data from the rex-41 deletion strain indicated a significant increase in local gene expression in the affected region, consistent with reduced DCC binding (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-v1.jpg)\n\n**Figure 7.:** (A) DPY-27 ChIP-seq data was used to calculate percent deviation from wild-type in three different recruitment site deletion strains. Briefly, the log2 ratio between wild-type and deletion strain was calculated for all DPY-27 ChIP-seq peaks and compared to a positive control locus (rex-8, the strongest recruitment site). A variable-step sliding window (window size of 2 Mb stepped across each DPY-27 peak) was used to calculate average deviation from wild-type binding. Regions shown in pink have significantly decreased DPY-27 enrichment compared to the rest of the chromosome, p-value<0.05, determined by one tailed students t-test, comparing log2 ratios in an individual window to log2 ratios across the whole X chromosome. In each experiment, the deleted recruitment site is indicated by a dashed line. Green lines (darker with stronger insulation activity) indicate TAD boundaries (as described in [Crane et al., 2015]). (B) mRNA-seq data comparing rex-41 deletion strain to wild-type is shown. Boxplot indicates the log2 ratio between deletion and wild-type for 500 kb windows tiled contiguously across the X chromosome. The rightmost window, shown in pink, contains a significant number of genes with increased transcription compared to wild-type (fisher test, p-value=0.0126). Asterisks mark windows with p-value<0.05). (C) Summed distance between borders of deletion-affected regions from all three recruitment site deletions in (A) and nearest TAD boundary (min: 54 kb, max: 230 kb) is closer than expected by chance alone (average: 313 kb). Shuffling the boundaries of deletion-affected regions (10000 permutations) produced a normal distribution wherein the observed proximity to TAD borders is expected to occur less than 7% of the time by chance. Shown is the distribution of the summed total distance between permuted deletion boundaries and nearest TAD boundary expressed as a log10 value.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Cartoon indicating location and size of the deleted recruitment sites in Figure 7. Recruitment sites are shown as light blue boxes. Strong motifs are shown in pink, weak motifs are shown in blue. Deleted regions are indicated by dashed boxes. Rex-41 is part of an inverted repeat. The sgRNA used to delete rex-41 (ranked #12) simultaneously deleted its sister recruitment site (ranked #20) 1 kb downstream. (B) DPY-27 ChIP-seq enrichment for the right-most 1 Mb of the X chromosome. Data from wild-type, \u2206rex-41, \u2206rex-1, and \u2206rex-40 is plotted. Dashed box around rex-41 shows lack of recruitment to this site is specific to the \u2206rex-41 strain. (C) Overlap of SDC-3 and DPY-27 peaks in wild-type and \u2206rex-41 indicate that the gross pattern of DCC binding across the X is not changed in the deletion strain.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Sequence that is deleted is capitalized and in italics. Strong motifs are given in pink; weak motifs are given in blue. The rex-40 deletion bears a small insert of dpy-10 sequence, indicated in red.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** As in Figure 7, DPY-27 ChIP-seq data was used to calculate percent deviation from wild-type. Analysis was repeated for 2 Mb, 1 Mb, and 500 kb windows.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-figsupp4-v1.jpg)\n\n**Figure 7\u2014figure supplement 4.:** As in Figure 7, DPY-27 ChIP-seq data was used to calculate percent deviation from wild-type. The set-4(n4600) mutation affects DCC function but not localization. TAD boundaries are shown in green. Regions with significantly decreased DPY-27 enrichment are shown in pink.\n\n![Figure 7\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig7-figsupp5-v1.jpg)\n\n**Figure 7\u2014figure supplement 5.:** (A) Motif directionality for all strong motifs (score\u00a0\u22657) contained within annotated recruitment sites across the length of the X chromosome. The numbers in parenthesis indicate the rank of each recruitment site. Motifs on the plus strand are shown in yellow. Motifs on the minus strand are shown in blue. Locations of the recruitment sites are indicated.\u00a0Strong recruitment sites are shown in pink, intermediate in blue, weak in grey.\u00a0Insulation boundaries are plotted below the recruitment sites for reference. Insulation boundary strength is indicated: strongest boundaries are in dark green, weakest boundaries in light green.\u00a0HiC data from (Crane et al., 2015) was used to plot the top 35% of contacts involving recruitment sites. (B) Table listing all recruitment sites, which contain at least one motif. Strong recruitment sites are highlighted. Motif directionality is indicated.\n\nInterestingly, the edges of the regions with significant DCC depletion upon rex deletion align with published TAD boundaries on the X chromosome (Crane et al., 2015) (Figure 7A). This observed proximity, calculated by summing the distance between the edges of the DCC depleted regions and the nearest TAD boundary for all three deletions, is expected by chance less than 7% of the time (permutation test, Figure 7C). One possibility is that DCC spreading from recruitment sites is limited to sequences contained within the same TAD. TADs spanning 1\u20132 Mb have been observed in mammals (Dixon et al., 2012; Nora et al., 2012) and C. elegans (Crane et al., 2015; Gabdank et al., 2016), while smaller domains have been identified in Drosophila (50\u2013100 kb) (Hou et al., 2012; Sexton et al., 2012). Recent work in C. elegans suggests a link between TAD formation and dosage compensation as X chromosome TADs are significantly altered in a dosage compensation mutant (Crane et al., 2015). In addition, several recruitment sites coincide with annotated TAD boundaries on the C. elegans X, suggesting that strong recruitment at one site may prevent spreading across this site. Alternatively, condensin DC may be loaded along the entire length of the X chromosome before spreading, halting at recruitment sites bound by SDC proteins and resulting in condensin DC enrichment at these sites.\n\nThis idea is reminiscent of current models of TAD formation wherein loop extrusion by complexes such as cohesin or condensin form progressively larger loops until stopped by TAD boundaries (Sanborn et al., 2015; Nasmyth, 2001; Goloborodko et al., 2016; Fudenberg et al., 2016). In these models, boundary elements bound by CTCF block loop extrusion in an orientation dependent manner (Fudenberg et al., 2016; Rao et al., 2014). In humans, CTCF sites occur predominantly in a convergent orientation (Rao et al., 2014). Though C. elegans lack CTCF, we reasoned that motif orientation at recruitment sites might play a similar role. To investigate this possibility, we plotted and listed (Figure 7\u2014figure supplement 5A and B) the orientation of motifs contained within recruitment sites across the X chromosome, but saw no obvious pattern linking motif orientation to the location of the top HiC contacts. However, it is possible that not all the motifs within a recruitment site are functional. Therefore, given the negative data, we cannot comment on the potential importance of motif orientation in DCC recruitment-mediated TAD organization. Future studies analyzing DCC binding and chromosomal interactions in various recruitment site deletion strains will be needed to elucidate the conservation and diversification of the mechanisms that control condensin recruitment, condensin spreading, and the\u00a0formation of TAD structures across different systems.\n\n## Discussion\n\nThe C. elegans DCC is an essential gene regulatory complex, responsible for chromosome-wide repression of X transcription in hermaphrodites (Plenefisch et al., 1989; Kramer et al., 2015). DCC localization and function is restricted to the hermaphrodite X chromosomes by sex-specific expression of sdc-2 beginning around the 40 cell stage (Dawes et al., 1999). X-specific binding is hypothesized to include two-steps: initial recognition of the X chromosome (dependent on SDC-2, SDC-3, and DPY-30 (Pferdehirt et al., 2011; Dawes et al., 1999; Davis and Meyer, 1997)), followed by DCC spreading (Ercan et al., 2009). Although the players were known, the exact mechanism that restricts DCC binding to the X chromosome remained unresolved. Our work provides a clear model for how the DCC specifically binds to the C. elegans X chromosomes (Figure 8). We propose that initial recruitment involves SDC-2 recognition of nucleosome occupied motif clusters within a HOT context marking a small number of X-specific strong recruitment sites. DCC binding at these strong sites initiates an environment amenable to subsequent DCC recruitment at weaker sites. From the recruitment sites, the DCC is able to spread across large chromosomal domains flanked by TAD boundaries. Hierarchical and cooperative DCC recruitment followed by long-range spreading results in DCC binding along the length of the X chromosome. Notably, hierarchy of DCC recruitment, initiating at the strong sites, requires that only few sites on the X need to be distinguished from autosomes while cooperativity between the recruitment sites ensures robust targeting of the DCC to large X chromosomal domains.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23645/elife-23645-fig8-v1.jpg)\n\n**Figure 8.:** (A) Initial X-recognition occurs at a subset of strong recruitment sites marked by motif clustering, overlap with HOT sites, and intrinsic nucleosome occupancy encoded in DNA. We hypothesize that nucleosome eviction at these HOT sites may be the function of SDC-2 and may\u00a0additionally\u00a0rely on yet-unidentified chromatin remodeling factors. SDC-2 binding is necessary to keep these sites open and allows for DCC binding. It is possible that, prior to sdc-2 expression, closed chromatin prevents improper DCC loading in early embryogenesis, thus ensuring hermaphrodite specificity. Furthermore, initial loading of DCC at a limited number of X-chromosome specific sites would decrease the evolutionary pressure to select for the 12 bp motif at every recruitment site. (B) Our working model is that DCC recruitment to strong recruitment sites (1) allows activation of the weaker recruitment sites (2) and spreading of the DCC within topologically associating domains (3). Robust recruitment is dependent on long-range cooperativity, which may function through some combination of long-distance physical interactions, high DCC concentration mediated by DCC sequestration, DCC post-translational modifications, and DCC spreading. (C) Cooperation between a set of hierarchical recruitment sites restricts DCC binding to the X chromosomes, establishing large, chromosome-wide transcriptionally repressive domains within the nucleus.\n\n### X-recognition by the DCC occurs at a set of strong recruitment sites marked by motif clustering, intrinsic nucleosome occupancy, and overlap with HOT sites\n\nIn the absence of SDC-3, the hermaphrodite specific SDC-2 recognizes and binds only the strongest recruitment sites on the X chromosome (Figure 2C). This observation, combined with evidence that DCC enrichment at ectopic rex-8 (a strong recruitment site) exceeds that of ectopic rex-1 (an intermediate recruitment site) (Figure 6A), is highly suggestive of a recruitment site hierarchy. Recruitment site hierarchy was recently suggested as a mechanism to specify Drosophila MSL binding to the male X chromosome. Sites of initial recruitment, termed PionX, contain a novel motif specified by DNA sequence and shape that serve to distinguish the X chromosome from the autosomes (Villa et al., 2016). Similarly, we find here that DCC binding on the C. elegans X is initiated at a subset of strong recruitment sites distinguished from weaker sites by the presence of 12 bp motif clusters, intrinsic nucleosome occupancy, and overlap with HOT sites. While each of these factors by themselves cannot distinguish the X chromosome from the autosomes, in combination they define a unique set of X-specific DCC recruitment sites. Interestingly, two strong recruitment sites lack motif sequence. It is possible that some yet-unidentified signal (an alternative DNA motif, histone modification, non-coding RNA or long range interaction) may be guiding the DCC to these sites.\n\nOur work indicates that SDC-2 is required for maintaining open chromatin at strong DCC recruitment sites (Figure 3A). Additionally, the 12 bp motifs bound by the DCC on the X chromosome are predicted to have higher nucleosome occupancy than motifs that remain unbound (Figure 4E). We reason that closed chromatin at the strong recruitment sites prevents the DCC binding prior to sdc-2 expression, thus ensuring hermaphrodite-specific recruitment of the dosage compensation machinery. This is similar to a recently described mechanism in Drosophila wherein the Zelda pioneer protein activates early enhancers by reducing intrinsic nucleosome occupancy and allowing TFs to bind (Sun et al., 2015). It is not yet clear if SDC-2 acts as a pioneer factor, mediating DCC recruitment by increasing DNA accessibility. Alternatively, some yet unidentified factor(s) might work with or in advance of SDC-2 to recognize and evict nucleosomes. For instance, overlap of clustered 12 bp motifs with annotated HOT sites may reflect interaction between SDC-2 and various TFs in establishing open chromatin at recruitment sites. Recent work in fission yeast has proposed a role for transcriptional co-activators Gcn5 and RSC in evicting nucleosomes prior to condensin binding (Toselli\u2010-Mollereau et al., 2016). Notably, it remains unclear how SDC-2 is able to recognize the 12 bp motif, as it contains no known DNA binding domains.\n\n### Multiple recruitment sites cooperate to robustly recruit the DCC to large X chromosomal domains\n\nEctopic insertion of recruitment site sequence (Figure 6A,C) and deletion of recruitment sites on the X (Figure 7A) revealed an important feature of DCC recruitment: the cooperativity of recruitment sites over long distance. In single copy, both rex-1 and rex-8 recruited the DCC to an autosomal locus at a fraction of their activity on the X. While it is possible that reduced ectopic recruitment is a consequence of chromosomal location, our data shows little evidence for positional effects. We found that rex-1 sequence inserted in three copies at a secondary autosomal locus similarly showed reduced rex-1 activity compared to the endogenous site (Figure 6A), and ectopic recruitment to rex-8 sequence was largely consistent between three chromosome II insertion sites (Figure 6D). Additionally, others have recently reported that rex-32 (a strong recruitment site) recruits the DCC to multiple sites across the genome (Wheeler et al., 2016). In light of these observations, lack of ectopic DCC recruitment to single-copy autosomal rex-1 sequence suggests that recruitment activity of this intermediate strength recruitment site is X-dependent, requiring the cooperation of nearby sites. The importance of recruitment site cooperativity is supported by previous observations that several X chromosome duplications containing recruitment sites do not recruit the DCC when detached from the X (Csankovszki et al., 2004; Blauwkamp and Csankovszki, 2009). Here, we found that adding multiple recruitment site sequence either nearby (Figure 6A) or at a distance (Figure 6C) increased ectopic rex-1 recruitment, while recruitment site deletions resulted in reduced DCC binding across large chromosomal domains (Figure 7A). Together these results demonstrate the functional importance of cooperation between multiple recruitment sites in establishing robust DCC binding to the X chromosome.\n\n### A distinction between condensin DC and SDC subunits of the DCC\n\nNotably, our ChIP-qPCR data suggests a distinction between recruitment of the condensin DC core and the SDC subunits. In single-copy ectopic rex-1 and rex-8 insertions, SDC-3 was recruited better than DPY-27 (Figure 6A). Adding additional recruitment sites nearby resulted in comparatively larger gains in DPY-27 enrichment, suggesting a greater role for cooperativity in the recruitment of condensin DC. Previous work has also demonstrated a difference in the X-chromosome binding pattern between condensin DC and the SDC proteins (Ercan and Lieb, 2009). By comparing DCC subunit binding between a well-defined site of spreading and a site of recruitment, it was shown that condensin DC spreads more effectively than both SDC-2 and SDC-3 (Ercan and Lieb, 2009). Lastly, our ChIP-seq data indicates the presence of the DCC recruitment module (SDC-2, SDC-3, and DPY-30) at scattered sites across all autosomes that fail to recruit condensin DC. These differences, combined with a lack of biochemical evidence for an intact DCC, are highly suggestive of distinct mechanisms governing recruitment of the SDC proteins and of condensin DC. While SDC proteins recognize and target specific sites on the X and the autosomes, condensin DC binding is much more dependent on cooperativity of multiple recruitment sites on the X.\n\n### Role of long-range cooperativity and nuclear localization in X-specific DCC targeting\n\nBecause recruitment sites are separated by a median distance of\u00a0~90 kb (544 bp \u2013 1.2 Mb) in the native X chromosome, we expect cooperation to act over long-distances. But what is the mechanism governing recruitment site cooperativity? We can imagine several possibilities, none of which are mutually exclusive. First, cooperative 3D interactions between recruitment sites (Crane et al., 2015) might reinforce DCC binding by increasing the local concentration of condensin DC. Previous work indicates that DCC binding alters the nuclear positioning of the X chromosome (Sharma et al., 2014) and compacts it by\u00a0~40% (Lau et al., 2014). It has been postulated that condensin complexes induce chromosome compaction by introducing and stabilizing long-range contacts between distant chromosomal loci (Cuylen and Haering, 2011; Thadani et al., 2012). Indeed, condensin, similar to cohesin, can entrap DNA, mediating interactions between distant chromosomal sites (Cuylen et al., 2011, Cuylen et al., 2013). Recent work in fission yeast demonstrated the ability of condensin to drive long-range associations across distances spanning 100 kb to 1 Mb (Kim et al., 2016). Similarly, SDC-2 depletion, which results in lack of condensin DC recruitment to the X, reduced the number of 3D contacts between recruitment sites (Crane et al., 2015). It is possible that DCC binding strengthens pre-existing X chromosome contacts while simultaneously inducing conformational changes that mediate interactions between recruitment sites and that these direct 3D interactions allow for the cooperative recruitment of the DCC.\n\nWe envision that physical interaction between the DCC recruitment sites (Crane et al., 2015) paired with X chromosome compaction (Lau et al., 2014) may generate a nuclear compartment of high DCC concentration. Sequestration of the DCC to a compacted X chromosome territory may function in restricting re-loading of the DCC to the X chromosome. Potential recruitment sites on the autosomes would not benefit from this increased concentration of the DCC and would fail to maintain DCC binding. This model is reminiscent of transcription factories wherein stable nuclear compartments containing a high local concentration of Pol II lower the threshold for preinitiation complex formation for all nearby promoters (Cook, 2010). A surplus of DCC would reinforce complex binding at strong sites while simultaneously allowing for DCC recruitment to weaker recruitment sites. Clustering of recruitment sites in the nucleus to generate a compartment for DCC loading is an effective and elegant mechanism by which to cooperatively and specifically recruit the DCC to the X chromosomes.\n\nSecond, it was shown that in vivo depletion of SUMO significantly disrupts DCC recruitment to the X chromosomes (Pferdehirt and Meyer, 2013). Although it is not clear if this effect is direct, western blot and mass-spectrometry analyses indicated that SDC-3, DPY-27, and DPY-28 are targets of SUMOylation (Pferdehirt and Meyer, 2013). DPY-28, the non-SMC subunit that functions in both condensin I and condensin DC, is SUMOylated only in the context of the DCC (Pferdehirt and Meyer, 2013). It may be that successive SUMOylation of DCC subunits at multiple recruitment sites along the X somehow modulates DCC dynamics on the chromatin, perhaps increasing DCC affinity at recruitment sites, thereby reinforcing X specificity.\n\nFinally, recruitment site cooperativity may be mediated through condensin DC spreading. It has been proposed that after recruitment, the DCC spreads along the length of the chromosome (Ercan et al., 2009). Spreading may be achieved by sliding of condensin DC ring along the chromatin. Alternatively, condensin DC may hop to distant chromosomal loci via long-range interactions between recruitment and spreading sites. The mechanism of DCC spreading remains unknown. Notably, the size of the region affected by a recruitment site deletion is similar to the distance that the DCC can spread from the X chromosome into autosomal sequence (Ercan et al., 2009). In three X;A fusion chromosomes, levels of DCC enrichment on autosomal sequence was shown to be inversely proportional to the distance from the fused end of the X chromosome. Similarly, reduced DCC binding near a deleted recruitment site is also dependent on proximity to the deletion (Figure 7A). The observed pattern of decreased DCC binding in the recruitment site deletion strains suggests that DCC spreading is restricted to TAD boundaries. In mouse embryonic cells, deletion of a boundary element within the Hox locus resulted in spreading of active chromatin across the border (Narendra et al., 2015). Spreading of SMC complexes such as cohesin and condensin, as well as other chromatin regulating proteins may be limited by the TAD boundaries. The DCC is also implicated in the creation of the TAD boundaries themselves (Crane et al., 2015), suggesting that the mechanism by which the DCC is loaded onto and spreads across the chromosome may influence boundary formation. Mechanistically, spreading may serve to both establish and reinforce DCC binding sites across the length of the X chromosome.\n\nIt is not clear if cooperativity also contributes to the X-specific recruitment of the Drosophila MSL complex. Although the strategies are distinct, X-specific binding of the C. elegans DCC and the Drosophila MSL show significant parallels. In both, a DNA sequence motif is important for recruitment, but is not specific to the X chromosome (Conrad and Akhtar, 2012; Alekseyenko et al., 2012, Alekseyenko et al., 2008). Recent work has indicated that GA repeat expansion around an 8 bp motif core helps specify MSL binding at high affinity sites, mediated through CLAMP zinc-finger binding (Kuzu et al., 2016). This dinucleotide expansion may serve to distinguish X and autosomal motif sites (Kuzu et al., 2016). However, just like the DCC recruiters (SDC-2, SDC-3 and DPY-30), CLAMP binds to autosomal loci independent of MSL (Soruco et al., 2013). Previous studies found that ectopic insertion of Drosophila high affinity MSL recruitment sites are sufficient to recruit the MSL complex to an autosome (Kelley et al., 1999; Alekseyenko et al., 2008). Although the level of this ectopic recruitment was not precisely quantified, it results in spreading to nearby active genes where the complex functions to up-regulate transcription (Ram\u00edrez et al., 2015). It would be interesting to determine if the specific recruitment of Drosophila MSL to the X chromosome also involves cooperativity between high affinity sites on the X.\n\n### Specificity of condensin targeting to chromosomes\n\nCondensin complexes are conserved from yeast to humans, functioning in both chromosome condensation during cell division and gene regulation during interphase (Hirano, 2016; Cobbe et al., 2006; Hirano, 2012; Lau and Csankovszki, 2014). Studies in several organisms have revealed high-resolution condensin binding patterns, demonstrating that condensin complexes bind to distinct intergenic sites that are enriched for promoters and enhancers (Kranz et al., 2013; Pferdehirt et al., 2011; Kim et al., 2013; Dowen et al., 2013). In yeast, the TATA box binding protein (TBP), the histone acetyltransferase, Gcn5, and the RSC remodeling complex have been shown to recruit condensin to its chromosomal binding sites (Toselli\u2010-Mollereau et al., 2016; Iwasaki et al., 2015). While the metazoan condensin recruiters remain largely uncharacterized (Piazza et al., 2013), our previous work indicated that, similar to condensin DC, the C. elegans condensin II complex binds to DCC recruitment sites in an SDC-2 dependent manner (Kranz et al., 2013). It remains unclear if, similar to condensin DC, recruitment is cooperative for canonical condensins. Interestingly, in yeast, tRNA genes that recruit condensin cluster in three-dimensional space and this clustering is, in part, mediated by condensin itself (Haeusler et al., 2008). Furthermore, yeast ribosomal DNA (rDNA) repeat region robustly recruits condensin in a FOB1 dependent manner (Johzuka et al., 2006). It is possible that the repetitive structure of the rDNA locus allows for cooperative recruitment through multiple tandem copies of the recruiting sequence. Notably, the weaker DCC recruitment sites are enriched at tRNA gene loci, suggesting that once the initial X-specific sites recruit the DCC, common mechanisms of condensin loading help to maintain DCC binding on the X chromosomes.\n\n### Long-range cooperation in genome organization and transcriptional regulation\n\nOur model postulates that long-range cooperation between a hierarchical set of recruitment sites allows for the robust and specific targeting of the DCC to the X chromosomes without the necessity of evolving and maintaining domain-specific motifs at every recruitment site. This model has important implications for TF targeting and domain-level transcriptional regulation in eukaryotic genomes. Recent work in various organisms has begun to focus on the functional role of cooperation between regulatory elements. For example, in Drosophila, tandem gene duplications often exhibit higher than 2-fold increased transcription, potentially due to the additive effects of transcription factors binding identical sites on both gene copies (Loehlin and Carroll, 2016). In human B cells, long-range enhancer interactions help explain lineage-specific control of Tcrb recombination (Proudhon et al., 2016). In yeast, cooperation between mating-type silencers leads to transcriptional repression (Boscheron et al., 1996). Finally, similar to how weak recruitment sites bind the DCC only in multiple copies or in the context of the X chromosome, it has been proposed that some Drosophila Polycomb domains with weak binding sites may recruit the Polycomb group protein, PHO, through cooperation between high affinity sites (Schuettengruber et al., 2014). From yeast, to flies, to humans, cooperative interactions in 3D space are increasingly being used to explain genome-targeting specificities of proteins important in processes ranging from recombination to transcriptional silencing. We add to this list a clear paradigm for studying the genetic mechanisms behind long-range cooperativity: recruitment of the dosage compensation complex to the C. elegans X chromosomes.\n\n## Materials and methods\n\n### Worm strains and growth\n\nWild-type (N2), ERC06 (knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119(ed3) III), ERC08 (knuIs6[pSE-02(400bprex-1SNP), unc-119(+))] I; unc-119(ed3) III), ERC09 (knuIs7[pSE-02(400bprex-1SNP), unc-119(+))] III; unc-119(ed3) III), ERC38 (ers30[delX:17544437\u201317544484, delX:17545624\u201317545624]), ERC51 (ersIs17[SNP400bp_rex1, X:14373144]), ERC54 (ers20[delX:4394846\u20134396180]; knuIs6[pSE-02 (400bprex-1SNP), unc-119(+))] I; unc-119(ed3) III), ERC64 (ers28[delX:806628\u2013806813]; knuIs6[pSE-02(400bprex-1SNP), unc-119(+))] I; unc-119(ed3) III), ERC61 (ersSi25[wt400bp_rex8, cb-unc-119(+)] II; unc-119(ed3) III), ERC62 (ersIs26[X:11093923-11094322[rex-8], II: 8449965); knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119(ed3) III), ERC63 (ersIs27[X:11093923-11094322[rex-8], II:8371600, II:8449968); knuSi254[SNP400bprex-1, unc-119(+)] II; unc-119(ed3) III), ERC66 (ersIs30[V:14040305-14040785[chrV_clusteredmotifs], X:14373144]), TY2205 (her-1(e1520) sdc-3(y126) V; xol-1(y9) X), TY1072 (her-1(e1520) V; sdc-2 (y74) X), MT14911 (set-4 (n4600) II).\n\nInformation regarding strain names, genotype, and generation of all new strains, used in this study can be found in Supplementary file 1A. Briefly, for all insertion strains, 400 bp of either rex-1 (chrX:4395400\u20134395799, WS220) or rex-8 sequence (chrX:11093923\u201311094322, WS220), (centered at the DCC ChIP binding peak summit and containing recruitment motif sequence) was integrated into an ectopic genomic location using MosSci (Zeiser et al., 2011), bombardment, or CRISPR (Dickinson and Goldstein, 2016) based techniques. In the bombardment strains (ERC08 and ERC09), insertion sites were mapped using genomic DNA paired end Illumina sequencing data. We isolated discordant read pairs that connected bombarded plasmid sequence to a specific region of the genome, eliminating spurious connections by comparing against paired-end sequencing data obtained from wild-type N2 genomic DNA. Insertion copy-numbers were calculated using qPCR analysis of genomic DNA, normalizing against a negative control region in the genome, and using the single-copy insertion strain (ERC06) generated by MosSCI as a positive control reference. Deletion strains were generated using CRISPR; sgRNAs were designed flanking recruitment site sequence, ensuring deletion of all identified 12 bp motifs contained within. PCR followed by Sanger sequencing was used to validate insertions and deletions. Deleted sequences and the motifs contained within can be found in Figure 7\u2014figure supplement 3. Strains were maintained at 20\u00b0C on NGM agar plates using standard C. elegans growth methods. Mixed stage embryos were isolated from gravid adults by bleaching. For ChIP experiments, embryo samples were fixed by treating with 2% formaldehyde for 30 min. For RNA experiments, embryo samples were resuspended in 10 volumes of Trizol.\n\n### Antibodies, ChIP-seq, and ChIP-qPCR\n\nSupplementary file 1B includes the list of the ChIP experiments and information on the antibodies. For ChIP, embryos were washed and dounce homogenized in FA buffer (50 mM HEPES/KOH pH 7.5, 1 mM EDTA, 1% Triton X-100, 0.1% sodium deoxycholate; 150 mM NaCl). Sarkosyl (0.1% sodium lauroyl sarcosinate) was added before sonicating to obtain chromatin fragments between 200 and 800 bp in length. As in Ercan et al., 2007, 1 to 2 mg of embryo extract and 3 to 8 ug of antibody was used per ChIP. For library preparation, half of the ChIP DNA was ligated to Illumina TruSeq adapters and amplified by PCR. Library DNA between 250 and 500 bp was gel purified. Single-end 50 bp sequencing was performed using the Illumina HiSeq-2000 at the New York University Center for Genomics and Systems Biology, New York, NY. ChIP-qPCR was performed using 4\u20135% of each ChIP sample and the corresponding diluted input DNA, as described in Mukhopadhyay et al. (2008). KAPA SYBR FAST 2X qPCR Master Mix (Kapa Biosystems, MA) was used in 20 \u03bcl reactions and performed on the Roche LightCycler 480\u00a0system. Data (input and chip sample) were used to calculate \u2206\u2206Ct between experimental and control loci. Briefly, \u2206\u2206Ct = (experimental Ct \u2013control Ct) ChIP \u2013(experimental Ct \u2013control Ct) input. Enrichment over background for both endogenous and ectopic loci was calculated as 2-\u2206\u2206Ct. Percent endogenous recruitment was then calculated by taking the ratio of ectopic enrichment over endogenous enrichment and multiplying by 100. Because background enrichments are variable between biological replicates, \u2206\u2206Ct and percent endogenous were calculated individually for each replicate. DNA sequence for the qPCR primers and product sizes are given in Supplementary file 1C.\n\n### ChIP-seq data processing\n\nWe aligned 50 bp single-end reads to C. elegans genome version WS220 using bowtie version 1.0.1 (Langmead et al., 2009), allowing two mismatches in the seed, returning only the best alignment, and restricting multiple alignments to, at most, four sites in the genome. Mapped reads from ChIP and input were used to call peaks and obtain read coverage per base using MACS version 1.4.2 (Zhang et al., 2008) with default parameters. Coverage per base was normalized to the genome-wide median coverage (excluding the mitochondrial chromosome). Final ChIP enrichment scores per base were obtained by subtracting matching input coverage. We merged replicates by taking the average ChIP enrichment scores at every position in the genome. For the sdc-2 and sdc-3 null mutants (each of which have altered X:A ratios), X and autosomal reads were processed separately and final ChIP enrichment scores were combined after normalization. Raw data files and wiggle tracks of ChIP enrichment per base pair are provided at NCBI\u2019s Gene Expression Omnibus(Edgar et al., 2002) database under accession number [GEO: GSE87741]. Basic statistics and the GEO number for each ChIP-seq data are provided in Supplementary file 1B.\n\nTo determine a set of binding sites for each protein, we imposed a majority rule using the biological replicates, as explained in Kranz et al., 2013. Briefly, reads from the replicates were combined using samtools version 0.1.19 (Li et al., 2009) and MACS was used to call peaks at a stringent p-value cutoff e-10. Only those peaks from the combined set that were also present in the majority of the individual replicates were included in the final peak set. Peak summits were determined as the position with the maximum ChIP enrichment score in the combined average. To avoid penalization of long peaks with multiple summits, peaks were split into smaller peaks using PeakAnalyzer version 1.4 (Salmon-Divon et al., 2010), with the minimum height being equal to the median coverage at all determined summits of the given data set and a separation float of 0.85. The analysis scripts are written in R and Perl and are available as Source code 1.\n\n### mRNA-seq\n\nWorms were collected and stored in ten volumes of Trizol (Invitrogen). Samples were freeze-cracked five times and RNA purification was done according to the manufacturer protocol. Isolated RNA was cleaned up using the Qiagen RNeasy kit. The mRNA was purified using Sera-Mag Oligo (dT) beads (Thermo Scientific) from at least 1 ug of total RNA. Stranded mRNA-seq libraries were prepared based on incorporation of dUTPs during cDNA synthesis using a previously described protocol (Parkhomchuk et al., 2009). Single-end 50 bp sequencing was performed using the Illumina HiSeq-2000. Reads were aligned to genome version WS220 with Tophat version 2.0.0 (Trapnell et al., 2012) using default parameters. For each biological replicate, read numbers and mapping percentages (which refer to the percentage of unique reads with at least one alignment) can be found in Supplementary file 1B. Count data was calculated using HTSeq version 0.6.1 (Anders et al., 2015) and normalized using the R package DESeq (Anders and Huber, 2010). The raw reads and counts can be obtained from GEO under accession number [GEO: GSE87741].\n\n### Identification of recruitment sites\n\nTo estimate the strongest binding sites (foci [Ercan et al., 2007]) for SDC-2, a mixture distribution with two components was assumed: one for the majority of binding sites with low coverage and one for binding sites with an extremely high coverage at the peak summits. To differentiate between binding sites with strong and low coverage, the coverage at the peak summits of all binding sites was used to estimate the parameters of a mixture distribution with the function normalmixEM from the mixtools package version 1.0.3 (Benaglia et al., 2009) in R version 3.2.1 (R Core Team, 2015). SDC-2 peaks overlapping with SDC-3, DPY-30, and DPY-27 but not overlapping with H3K4me3 peaks were successively determined using the command intersectBed of the BEDTools suite version 2.12.0 (Quinlan and Hall, 2010). Deeptools version 2.2.3 (Ram\u00edrez et al., 2016) was used to rank order recruitment sites based on SDC-2, SDC-3, DPY-30, and DPY-27 ChIP enrichment for a 3 kb window centered on the peak summit. Recruitment sites were clustered into three categories (strong, intermediate, and weak) using k-means clustering (n = 3). Recruitment site coordinates and rankings can be found in Supplementary file 1D.\n\n### Motif analysis\n\nDNA sequence of\u00a0\u00b1100 bp around the summit of the top 200 SDC-2 ChIP-seq binding peaks was used to identify potential binding motifs using MDScan (Liu et al., 2002). The position weight matrix of the top motif was used to scan and score the whole genome using TRAP (Thomas-Chollier et al., 2011). Resulting TRAP affinity scores were standardized to a 0 to 10 scale. Motif locations and scores can be found in Supplementary file 1E.\n",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "3d150d5f-b79d-4df3-affc-a66685a76441",
+      "submission_id": "bf16f397-7571-46e4-832f-61b57607aa8a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edith Heard, Institut Curie , France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23645.025](https://doi.org/10.7554/eLife.23645.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cooperation between a hierarchical set of recruitment sites targets the X chromosome for dosage compensation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript Albritton et al. investigate the targeting mechanisms for the dosage compensation machinery in C. elegans. The nature of the sequences/chromatin features that are required for the targeting of the DCC have been sought, and although rex sequences that are enriched on the X chromosome have indeed been found, unique X-linked sequences do not appear to exist and the question of DCC targeting specificity is still very much open. The authors use ChIP-seq data in embryos, for various DCC components (including SDC-2, SDC-3, DPY-30, DPY-27) and H3K4me3 to identify potential features that can explain X-specificity. The present study analyzed ChIP-seq data for SDC-2, SDC-3, DPY-30, DPY-27 and H3K4me3 in C. elegans embryos to identify the 64 strongest binding sites (for DCC subunits that do not overlap with H3K4me3), all of which are on the X, and then analyzed the features of the 17 strongest binding sites in that set of 64. Their analysis supports the existence of a relatively small number of recruitment sites that share several features which together confer X specificity. Those features include a high-scoring binding sequence, other nearby binding sequences, a HOT domain, and intrinsic DNA-driven nucleosome occupancy. The authors also perform elegant functional studies \u2013 deletions and knock-ins of predicted recruitment sites. The emerging model is that SDC-2 and other DCC subunits are initially recruited to relatively few strong recruitment sites, spread to nearby weaker recruitment sites via cooperativity, and can further spread within TADs. The paper is well written and represents a significant advance with novel mechanistic insights into the process of dosage compensation in C. elegans, although some points need to be addressed:\n\nMain Points:\n\n1) Figure 2C shows reduced association of SDC-2 with X recruitment sites in sdc-3 mutants. The authors interpret this as persistent association with the strong sites and loss of association with the intermediate and weak sites and use this as evidence for a hierarchy of recruitment between strong and weak sites. Another interpretation is that SDC-2 association is equivalently reduced at all sites. A possible way to examine this further is via a scatter plot and correlation analysis of SDC-2 binding in wild type versus SDC-2 binding in the sdc-3 mutant. That might help illuminate if in the sdc-3 mutant the level of SDC-2 binding is reduced equivalently or not on strong, intermediate, and weak recruitment sites. It could also be used to address if there are new SDC-2 binding sites in sdc-3 compared to wild type.\n\n2) In Figure 5, how were HOT sites defined i.e. how many TFs bound?\n\n3) The authors should be more cautious regarding the claim that SDC-2 opens chromatin for initial DCC recruitment. They base themselves on the presence of H3 in sdc-2 null mutant at the rex sites (Figure 3A). However, in the absence of SDC-2, this site is not bound by the DCC, which allows it to be chromatinized (hence H3 presence). With the current data, it is difficult to distinguish between chromatin opening and simple occupancy of the site by the DCC (in wild-type animals).\n\n4) Related to the above point, can the authors distinguish if Sdc-2 acts to load the DCC as opposed to trigger focal enrichment (ChIP-seq peaks) at the Sdc-2 binding sites? This could be addressed by analyzing the total number of condensin ChIP-seq tags across the X chromosome (not just peaks) in Sdc-2 (and -3) mutants. If numbers are similar this implies that condensin can still be loaded on the X even without Sdc-2, and that Sdc-2 is therefore likely to be important for concentrating condensin at its binding sites, rather than loading it. Alternatively, if condensin is still present diffusely on the X in Sdc-2 mutants, then the authors might wish to consider a model whereby long range cooperativity arises by pairs of Sdc-2 bound sites blocking the translocation of condensin, leading to focal condensin enrichment, accumulation of chromatin loops and formation of a TAD boundary (see below).\n\n5) The part of the paper dealing with TADs raises some very interesting and important issues but merits some clarification and further analyses:\n\n\u2013 In Figure 7A, a horizontal line indicating zero would be helpful. For the rex-41 deletion, the DPY-27 signal appears to be consistently below zero for maybe 5MB, across several strong TAD boundaries. Similarly for rex-40.\n\n\u2013 The authors chose a 1MB window to average the DPY-27 signal, and report a \"significant decrease in DCC binding across ~1-2 MB regions surrounding each deletion\". But with a large 1 MB window the smallest regions that can be detected as DCC depleted seem to be 1-2MB. If DCC depletion were highly localized, for example lost only on one strong DCC site, it is conceivable that it would significantly lower the DPY-27 signal on smoothing windows 1MB in both directions, even though DPY-27 reduction is narrowly localized. It would be helpful to see the data analyzed with significantly smaller smoothing windows in addition to the large-window analysis.\n\n\u2013 The authors state that to be able to compare the DPY-27 signal between wild type and each rex deletion strain, they first normalized each to their respective rex-8 locus DPY-27 signal. Are the authors confident that DPY-27 signal at the rex-8 locus is unaffected in the rex site deletions, e.g. that there is not a global reduction of DPY-27?\n\n\u2013 In Figure 7B. A horizontal line indicating zero would again be helpful. In addition to the right-most box, 10th from the right box also has an asterisk and is therefore significantly upregulated? The p-values seem not to be very strong. Were they corrected for multiple hypothesis testing? The authors tested >30 boxes, which would make a corrected p-value significantly higher.\n\n\u2013 In Figure 7C. This panel addresses an important point. Please explain what this analysis shows.\n\n6) An analysis of rex site orientation would be very informative. Current models of TAD formation suggested by the Mirny and the Liebermann-Aiden laboratories (PMIDs 27210764, 27224481, 26499245), based on an early model from Kim Nasmyth suggest a loop extrusion model involving complexes (e.g. SMC) that are stopped by proteins bound at oriented boundaries (CTCF sites in mammalian cells). The parallel for rex sites with the mammalian Cohesin / CTCF system is striking. The authors could explore the orientation of the motifs presented in Figure 4 at recruitment sites (cf. Rao et al. Cell 2014) to see whether pairs of neighboring strong / weak sites tend to be in a specific configuration (convergent, divergent or tandem). In particular they could assess whether orientation of sites inside clusters correlates with DCC recruitment strength and could potentially explain some results presented in Figure 6 (the orientation is not described in these experiments). This could also be investigated for the TAD boundaries that are found to interact. In this regard, the Crane paper suggests that the strongest rex sites are associated with TAD boundaries, while the model in this paper suggests that strong sites are located inside TADs. A line-up of the relative positions of TAD boundaries and strong/weak recruitment sites will shed light on this. And Figure 8 should be accordingly modified. It would also be informative to show condensin enrichment over oriented strong / weak sites.\n\n7) More detailed information on the bioinformatics approaches \u2013 normalization procedures \u2013 for the different data sets should be provided. The use of the mixtools package should be better described. Ideally the authors could provide scripts as part of the paper, or even the entire analysis as in some recent cases (PMID 27919068).\n\n8) The authors should correct/modify several statements:i) In Abstract: \"SDC-2 is required to open chromatin\" \u2013 please moderate this statement.ii) The second paragraph of the Introduction \u2013 the authors introduce dosage compensation and focus only on male / female differences \u2013 they should also discuss X:A ratio dosage compensation.iii) In the same paragraph the authors state that in each case of dosage compensation a protein complex is specifically targeted to the X in only the sex where is regulates transcription: this is not true in mammals, Xist RNA is expressed from the X only when there are 2 or more X chromosomes, regardless of whether there is a Y present or not: thus in XO females, as in XY males, there is no targeting of Xist and its protein partners to the X.iv) The authors state in this paragraph that the targeting of the DCC involves a 2-step strategy \u2013 recruitment and spreading \u2013 again this is a proposal \u2013 it should not be stated as a fact.v) At the end of their introduction the authors mention TADs \u2013 they do not describe what these correspond to at all \u2013 and it is not clear that TADs are universal entities (for example, see review by Dekker and Heard 2015), particularly in C. elegans (Crane et al., 2015) where they only appear to exist on the dosage compensated X. The authors should explain and cite appropriate references.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cooperation between a hierarchical set of recruitment sites targets the X chromosome for dosage compensation\" for further consideration at eLife. Your revised article has been favorably evaluated by Kevin Struhl (Senior editor), and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are a few remaining issues that need to be addressed before acceptance, as outlined in the reviewers comments.\n\nOne particular point concerns the new H3 data provided in Figure 3\u2014figure supplement 1. This data is not strong and the H3 plots should probably be left out. Also, in Figure 7C, it is important to explain if the vertical pink line represents 1 or all 3 deletion-affected regions. In Figure 7\u2014figure supplement 5, the TAD boundaries as defined by Crane et al. should also be shown on the same graph. Once these changes and the other minor points outlined below are taken into account your paper will be ready for acceptance.\n\nReviewer #1:\n\nThe authors have addressed most of the issues raised and have improved their manuscript according to many of the suggestions from the reviewers.\n\nThere are just a couple of points that are discussed in the response to reviewers points but that merit inclusion in the revised text:\n\nPoint 4 \"While we cannot exclude the possibility that, prior to sdc-2 expression, some DPY-27 is loosely associated with all chromosomes, the current data suggest that SDC-2 is required for X-specific loading of condensin DC.\"\n\nReviewer #2:\n\nThis revised submission is certainly improved and almost ready for publication.\n\nThe new analysis shown in Figure 2\u2014figure supplement 1 is nice. We are a bit surprised that in panel B all of the intermediate sites and some of the strong sites display more loss of SDC-2 in the sdc-3 mutant than the average across the X. Is the X average of -1.280 in panel B driven by many regions of the X having low levels of SDC-2 in both N2 and sdc-3 (the leftward cloud of gray spots in panel A)? In the main text, I suggest changing \"To eliminate the possibility\" to \"To test the possibility\" to avoid having a bias toward certain expected results.\n\nAre the authors convinced by Figure 3\u2014figure supplement 1 that H3 is enriched at the strong sites in EE? The EE profiles look noisy and would need error bars. Most of the EE samples generated by modENCODE were not that early (not necessarily skewed for <40-cell stage as mentioned in subsection \u201cSDC-2 is required to maintain open chromatin at strong recruitment sites, which display intrinsic DNA-encoded nucleosome occupancy\u201d, and later-stage embryos containing more nuclei might dominate ChIP patterns), so using them as representative of pre-DC seems risky. Finally, why are the scales different in Figure 3A and Figure 3\u2014figure supplement 1?\n\nIn the legend to Figure 7C, please explain the pink vertical line. Does it represent 1 or all 3 deletion-affected regions?\n\nIn the legend to Figure 7\u2014figure supplement 5A, please explain that the numbers in parentheses in panel A are the ranks. In the legend, the sentence \"Recent HiC data\" needs to be fixed.\n\nReviewer #3:\n\nThis revised version of the manuscript by Albritton et al. integrates all major modifications which we requested on the first review round. Technically, the paper is currently very good and the interpretations of the data careful.\n\nI was however a little frustrated by the analysis of the TAD boundary/rex site orientation and the subsequent discussion, which is limited to the old loading-spreading model.\n",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bbb84df2-d2b9-4653-bce4-1b2930c242dc",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C1",
+      "claim": "The C. elegans dosage compensation complex (DCC) is composed of a modified condensin complex (condensin DC) which is distinguished from condensin I by the SMC-4 variant, DPY-27.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans dosage compensation complex (DCC) is composed of a modified condensin complex (condensin DC) which is distinguished from condensin I by the SMC-4 variant, DPY-27.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text and illustrated in Figure 1A showing the DCC composition.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e0b3178f-0d4e-442d-a872-a3cb6543d779",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C2",
+      "claim": "Condensin DC shares four out of five subunits (MIX-1, DPY-26, DPY-28, and CAPG-1) with the canonical condensin I.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans condensin DC shares four out of five subunits (MIX-1 [Lieb et al., 1998], DPY-26 [Plenefisch et al., 1989], DPY-28 [Plenefisch et al., 1989], and CAPG-1 [Csankovszki et al., 2009b]) with the canonical condensin I, distinguished only by the SMC-4 variant, DPY-27 (Csankovszki et al., 2009a, Csankovszki et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on condensin DC composition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e6a1027b-4c30-41e6-9415-242cb7d102d8",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C3",
+      "claim": "The non-condensin subunits SDC-2, SDC-3, and DPY-30 are required for DCC recruitment to the X chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-condensin subunits SDC-2, SDC-3, and DPY-30 are required for DCC recruitment to the X chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1A caption.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "c6d94494-3976-4731-8d36-19ebdcf73828",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C4",
+      "claim": "51% (336 out of 659) of SDC-2 binding sites are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Ercan et al., 2009), we found that SDC-2 binding is enriched on the X chromosome: 336 out of 659 (51%) binding sites are on the X.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from ChIP-seq data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "bcf6972c-92d0-4ef0-9a92-369250b393cb",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C5",
+      "claim": "54% (389/719) of SDC-3 binding peaks are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 54% (389/719) of SDC-3 and 29% (254/868) of DPY-30 binding peaks are on the X chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from ChIP-seq data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "95682c22-3e8d-4f5d-a851-92be014b49bb",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C6",
+      "claim": "29% (254/868) of DPY-30 binding peaks are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 54% (389/719) of SDC-3 and 29% (254/868) of DPY-30 binding peaks are on the X chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from ChIP-seq data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "a4cffd7f-5632-4e38-a2c8-b28e740bae34",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C7",
+      "claim": "Over 99% (2546/2564) of DPY-27 binding peaks are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The condensin DC portion of the complex, as assayed by DPY-27 ChIP-seq (Kranz et al., 2013), is largely restricted to the X chromosome: over 99% (2546/2564) of DPY-27 binding peaks are on the X.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from ChIP-seq data analysis, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "f2230229-b34b-4f00-ae7a-88794f740012",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C8",
+      "claim": "64 recruitment sites were identified on the X chromosome using ChIP-seq enrichment criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finalized list of 64 recruitments sites contains 32 out of 47 (68%) rex-sites that were shown previously to recruit the DCC to extrachromosomal arrays (Figure 1D, Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from systematic ChIP-seq analysis with defined criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "d1e238c5-7e1c-4415-b713-3d0f11c31cf8",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C9",
+      "claim": "The 64 recruitment sites contain 32 out of 47 (68%) rex-sites that were previously shown to recruit the DCC to extrachromosomal arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finalized list of 64 recruitments sites contains 32 out of 47 (68%) rex-sites that were shown previously to recruit the DCC to extrachromosomal arrays (Figure 1D, Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between current ChIP-seq data and previous array-based studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "9fa909df-88ba-4bf8-86b3-1d9a2f9b92c1",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C10",
+      "claim": "Recruitment sites were categorized into three strength classes: 17 strong, 16 intermediate, and 31 weak recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 17 strong, 16 intermediate, and 31 weak recruitment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on k-means clustering of ChIP enrichment scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "2710cc54-8a7f-4ad1-b2fb-7580f8692db2",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C11",
+      "claim": "Strong recruitment sites are spaced roughly 1 Mb apart along the length of the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong recruitment sites are spaced roughly 1 Mb apart along the length of the X chromosome and are interspersed by both weak and intermediate strength sites (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed pattern from ChIP-seq data visualization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "978c5cf3-a764-45dd-89e1-08ab51d28668",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C12",
+      "claim": "In an sdc-3 null mutant, SDC-2 binds to 16 out of 17 strong recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in sdc-3 (y126) null mutant embryos, SDC-2 binds to 16 out of 17 strong, 11 out of 16 intermediate, and only 2 out of 31 weak recruitment sites (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-seq data from sdc-3 null mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "2ecf5b99-a86e-48ee-8b87-2d081b21fd8d",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C13",
+      "claim": "In an sdc-3 null mutant, SDC-2 binds to 11 out of 16 intermediate recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in sdc-3 (y126) null mutant embryos, SDC-2 binds to 16 out of 17 strong, 11 out of 16 intermediate, and only 2 out of 31 weak recruitment sites (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-seq data from sdc-3 null mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "9aa86416-2e26-4be5-ac89-c68ea10b0702",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C14",
+      "claim": "In an sdc-3 null mutant, SDC-2 binds to only 2 out of 31 weak recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in sdc-3 (y126) null mutant embryos, SDC-2 binds to 16 out of 17 strong, 11 out of 16 intermediate, and only 2 out of 31 weak recruitment sites (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-seq data from sdc-3 null mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "6ffddfe5-0610-4cd2-ab16-05b9f198da43",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C15",
+      "claim": "SDC-2 is required to maintain open chromatin at strong recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DCC recruiter, SDC-2, is required to maintain open chromatin at a small number of primary DCC recruitment sites, whose sequence and genomic context are X-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "H3 ChIP-seq data comparing wild-type and sdc-2 null mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "5a44fb12-e8a4-40d1-b68f-052756f2ab10",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C16",
+      "claim": "Strong recruitment sites display DNA-encoded nucleosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DCC recruiter, SDC-2, is required to maintain open chromatin at a small number of primary DCC recruitment sites, whose sequence and genomic context are X-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Nucleosome occupancy model predictions compared with H3 ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "913152ab-de35-43d6-b2fd-07cb7903af8f",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C17",
+      "claim": "A 12 bp DNA sequence motif with an 8 bp GCGCAGGG core is enriched at DCC recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the previously identified sequences, the 12 bp motif contains an 8 bp GCGCAGGG core with variable specificities for the surrounding nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Motif analysis using SDC-2 ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "ccfd537f-53bf-4b2a-b44c-69218c017d12",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C18",
+      "claim": "The 12 bp motif is only slightly enriched (~3 fold) on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the motif is only slightly enriched (~3 fold) on the X (Ercan et al., 2007; Jans et al., 2009), and copies of the motif on autosomes do not recruit the DCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Genome-wide motif scanning and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "f80c1848-4622-4738-a0f1-aee30df29fd3",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C19",
+      "claim": "91% (10/11) of perfect match motifs (score 10) are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The X chromosome contains 43% (47/110) of motifs with a score of 8 or better, 64% (20/31) with a score of 9 or better, and 91% (10/11) of perfect match motifs (ATCGCGCAGGGA) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Motif scoring and distribution analysis across the genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "c0256d2b-4875-4275-af96-43d01fa14417",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C20",
+      "claim": "Of the 95 strong motifs on the X chromosome, only 50 (52%) are bound by the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we find that, of the 95 strong motifs on the X chromosome, only 50 (52%) are bound by the DCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of motif locations with DCC ChIP-seq binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e2d9a8a5-f6fd-471d-be60-0cd6369dba63",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C21",
+      "claim": "DCC bound motifs have significantly higher predicted nucleosome occupancy than unbound motifs on either the X or the autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DCC bound motifs have, on average, higher predicted nucleosome occupancy than unbound motifs on either the X or the autosomes (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of nucleosome occupancy predictions for different motif categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "892edd9a-d032-444f-a5aa-ee2505dc8c5e",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C22",
+      "claim": "17 homotypic motif clusters were identified on the X chromosome, all of which are bound by the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this definition, we identified 17 homotypic motif clusters on the X chromosome, all of which are bound by the DCC and all of which are contained within a recruitment site (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Motif clustering analysis combined with DCC binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "45f4d115-faf7-4ea0-b7d4-7261ca7afee9",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C23",
+      "claim": "Five motif clusters were found on the autosomes, none of which recruit the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clustering alone cannot fully distinguish the X from the autosomes. Using our definition, we find five motif clusters on the autosomes, none of which recruit the DCC (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Motif clustering analysis combined with DCC binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "01ce9d64-1b5a-4b78-bee3-d5ab05c92fae",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C24",
+      "claim": "16 out of 17 strong recruitment sites overlap with annotated HOT sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 17 strong recruitment sites, 16 fall within the boundaries of an annotated HOT site (Van Nostrand and Kim, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overlap analysis with published HOT site annotations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "ed9d5c7e-c31c-42fc-a4fc-0e7c91c8d14e",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C25",
+      "claim": "11 out of 12 motif clusters on the X chromosome both overlap with a HOT site and are characterized as strong recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, while none of the five autosomal motif clusters are HOT, we find that 11 out of 12 motif clusters on the X chromosome both overlap with a HOT site and are characterized as strong recruitment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Combined analysis of motif clusters, HOT sites, and recruitment site strength.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "8e55a803-feb9-4065-ae0c-22140a5edbcf",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C26",
+      "claim": "Rex-1 sequence inserted in single copy into chromosome II recruits SDC-3 at 25.79% and DPY-27 at 12.40% of endogenous site levels.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-qPCR results indicate that rex-1 sequence recruits SDC-3 and DPY-27 at a much lower level when inserted in single copy into chromosome II (Figure 6A). Respectively, SDC-3 and DPY-27 qChIP enrichment reaches only 25.79% and 12.40% of endogenous site levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from ectopic insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "b9d7b177-8544-4a97-b87f-64f7b38f898a",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C27",
+      "claim": "Rex-8 sequence inserted in single copy at the same chromosome II locus binds SDC-3 at 46.56% and DPY-27 at 21.89% of endogenous rex-8 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sequence from the strongest recruitment site, rex-8, inserted in single copy at the same locus binds SDC-3 and DPY-27 at 46.56% and 21.89% of endogenous rex-8 levels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "ChIP-qPCR measurements from ectopic insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "98cd8e53-a1db-4b88-9e7f-63bd70cd83b7",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C28",
+      "claim": "Rex-1 sequence inserted in single copy into the X chromosome is able to robustly recruit the DCC, even exceeding endogenous levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we insert the same 400 bp rex-1 sequence in single-copy into the X chromosome (at a site that does not normally recruit the DCC) the sequence is able to robustly recruit the DCC, even exceeding endogenous levels (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from ectopic X chromosome insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "a76a26f8-44ef-457e-90d3-4f0c35c7b811",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C29",
+      "claim": "Inserting rex-1 sequence in three copies increased DPY-27 enrichment to 61.49% of endogenous rex-1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inserting rex-1 sequence in three and eight copies respectively increased DPY-27 enrichment to 61.49% and 99.89% of endogenous rex-1 binding (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from multi-copy insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "4b220ca6-f51a-4833-9f51-3c2b7f64eaee",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C30",
+      "claim": "Inserting rex-1 sequence in eight copies increased DPY-27 enrichment to 99.89% of endogenous rex-1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inserting rex-1 sequence in three and eight copies respectively increased DPY-27 enrichment to 61.49% and 99.89% of endogenous rex-1 binding (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from multi-copy insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "b432cb31-e400-42ba-8e84-0449c1c49ff8",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C31",
+      "claim": "The median distance between recruitment sites on the X is ~90 kb, ranging from 1543 bp to 1.2 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the median distance between recruitment sites on the X is ~90 kb (ranging from 1543 bp to 1.2 Mb), cooperation between sites is likely long-range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Distance calculation from recruitment site coordinates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "d1ef9c2f-88d1-4159-992e-85284e52d030",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C32",
+      "claim": "Insertion of rex-8 sequence ~30 kb downstream of ectopic rex-1 increased DPY-27 recruitment to rex-1 by ~1.5 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of rex-8 at a single locus ~30 kb downstream, recruitment of DPY-27 to the ectopic rex-1 increased ~1.5 fold (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from strain with multiple ectopic insertions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "3802b218-e2c7-4357-8011-96313b4ed773",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C33",
+      "claim": "Insertion of rex-8 at a second site ~50 kb upstream resulted in further increase in both SDC-3 and DPY-27 binding at the ectopic rex-1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Insertion of rex-8 at a second site ~50 kb upstream resulted in further increase in both SDC-3 and DPY-27 binding at the ectopic rex-1 locus (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from strain with multiple ectopic insertions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "15d440e0-c75c-4e60-a6f1-7a008e54e7de",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C34",
+      "claim": "An autosomal motif cluster inserted into the X chromosome failed to strongly recruit the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "The autosomal motif cluster failed to strongly recruit the DCC to the X chromosome (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR measurements from ectopic insertion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e59bde2c-918f-4fc2-90ad-60da28fad0f1",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C35",
+      "claim": "Deletion of recruitment sites resulted in a significant decrease of ~10\u201320% in DCC binding across ~1\u20132 Mb regions surrounding each individual deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a significant decrease of ~10\u201320% in DCC binding across ~1\u20132 Mb regions surrounding each individual deletion (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sliding window analysis of DPY-27 ChIP-seq data from deletion strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "661866ee-67b2-4dda-86ab-4635248afc58",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C36",
+      "claim": "mRNA-seq data from the rex-41 deletion strain indicated a significant increase in local gene expression in the affected region, consistent with reduced DCC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mRNA-seq data from the rex-41 deletion strain indicated a significant increase in local gene expression in the affected region, consistent with reduced DCC binding (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "mRNA-seq analysis comparing deletion strain to wild-type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "d248ad5d-778c-4f0a-9c52-5081208c9dac",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C37",
+      "claim": "The edges of regions with significant DCC depletion upon rex deletion align with published TAD boundaries on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the edges of the regions with significant DCC depletion upon rex deletion align with published TAD boundaries on the X chromosome (Crane et al., 2015) (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of DCC depletion regions with published TAD boundary data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "32124c0f-4a6c-480e-8012-069995cca0b7",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C38",
+      "claim": "The observed proximity between DCC depleted region edges and TAD boundaries is expected by chance less than 7% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "This observed proximity, calculated by summing the distance between the edges of the DCC depleted regions and the nearest TAD boundary for all three deletions, is expected by chance less than 7% of the time (permutation test, Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical permutation test analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "703b682d-28b7-46ad-82ed-f86dafcaf018",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C39",
+      "claim": "62 out of 64 recruitment sites interact with at least one other recruitment site in wild-type worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that 62 out of 64 recruitment sites interact with at least one other recruitment site in the wild-type worm (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of published HiC data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "d0bc1a09-a485-45da-ac29-8137796c3d80",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C40",
+      "claim": "In the sdc-2 mutant, 35 out of 64 recruitment sites interact with at least one other site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sdc-2 mutant, the number of interactions is reduced: 35 out of 64 recruitment sites interact with at least one other site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of published HiC data from sdc-2 mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "13c370cf-f698-4855-83cb-308cd7488fca",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C41",
+      "claim": "Only SDC-2 can localize to the X chromosomes in the absence of other complex members.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the DCC subunits, only SDC-2 can localize to the X chromosome in the absence of other complex members and only SDC-2 is required for proper localization of all other dosage compensation proteins (Dawes et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "c20a8881-c9fb-4178-811b-75794bb7e3ce",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C42",
+      "claim": "SDC-3 binding requires both SDC-2 and DPY-30.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of the DCC to the X chromosomes is dependent on SDC-2, SDC-3, and DPY-30: SDC-3 binding requires both SDC-2 and DPY-30 (Davis and Meyer, 1997); DPY-30 binding requires both SDC-2 and SDC-3 (Pferdehirt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "439cdf8d-0ab3-4246-922f-4ae8ab1bdabe",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C43",
+      "claim": "DPY-30 binding requires both SDC-2 and SDC-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of the DCC to the X chromosomes is dependent on SDC-2, SDC-3, and DPY-30: SDC-3 binding requires both SDC-2 and DPY-30 (Davis and Meyer, 1997); DPY-30 binding requires both SDC-2 and SDC-3 (Pferdehirt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "7860996c-0ae2-4086-8680-47a4a34ff1ab",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C44",
+      "claim": "DCC spreading is independent of X chromosome sequence as the complex is able to spread into autosomal sequence fused to the end of the X.",
+      "claim_type": "EXPLICIT",
+      "source": "DCC spreading is independent of X chromosome sequence as the complex is able to spread into autosomal sequence fused to the end of the X (Ercan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "bb94cbff-b546-4a35-9067-e082062cd393",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C45",
+      "claim": "Condensin DC spreads more effectively than the recruiter proteins SDC-2 and SDC-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, condensin DC spreads more effectively than the recruiter proteins SDC-2 and SDC-3 (Ercan et al., 2009), highlighting the distinction between recruitment and spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "438a278f-c341-4fc3-8d8c-4eedfe0a5014",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C46",
+      "claim": "Among the 336 autosomal SDC-2 binding peaks, 206 (61.3%) overlap with both SDC-3 and DPY-30 but fail to recruit condensin DC.",
+      "claim_type": "EXPLICIT",
+      "source": "As a side note, among the 336 autosomal SDC-2 binding peaks, 206 (61.3%) overlap with both SDC-3 and DPY-30 but fail to recruit condensin DC, suggesting a DCC-independent role for the recruiter proteins at these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of ChIP-seq data showing differential binding patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "cc6919cf-456c-464c-a23b-bd41d5868f60",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C47",
+      "claim": "DPY-30, in addition to its role in dosage compensation, is a subunit of the highly conserved MLL/COMPASS complex, which methylates histone H3 at lysine 4 (H3K4).",
+      "claim_type": "EXPLICIT",
+      "source": "DPY-30, in addition to its role in dosage compensation, is a subunit of the highly conserved MLL/COMPASS complex, which methylates histone H3 at lysine 4 (H3K4) (Pferdehirt et al., 2011; Li and Kelly, 2011; Shilatifard, 2008; Hsu and Meyer, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on DPY-30 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "bcd5c000-a4e6-480e-8f3e-f30ee1d23c98",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C48",
+      "claim": "With the exception of SDC-1 and DPY-21, all DCC subunits are essential.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of SDC-1 and DPY-21, all DCC subunits are essential (Plenefisch et al., 1989; Villeneuve and Meyer, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "f447775e-7731-4e54-bcf1-f7311a2ead19",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C49",
+      "claim": "In wild type mammals, X expression balance is achieved via X inactivation, wherein one of the two female X chromosomes is transcriptionally silenced during development.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type mammals, X expression balance is achieved via X inactivation, wherein one of the two female X chromosomes is transcriptionally silenced during development (Heard and Disteche, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on mammalian dosage compensation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "f5f5c6c0-6771-4f8e-9f26-daa6d2d7ca67",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C50",
+      "claim": "In Drosophila melanogaster, the male-specific lethal (MSL) complex binds to the single X chromosome in males where it upregulates transcription two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila melanogaster, the male-specific lethal (MSL) complex binds to the single X chromosome in males where it upregulates transcription two-fold (Conrad and Akhtar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on Drosophila dosage compensation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "12aa80d7-bb58-4fe9-b65f-ad0cd3e66806",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C51",
+      "claim": "In Caenorhabditis elegans, both hermaphrodite X chromosomes are targeted by the dosage compensation complex (DCC), resulting in a two-fold downregulation of expression from each.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caenorhabditis elegans, both hermaphrodite X chromosomes are targeted by the dosage compensation complex (DCC), resulting in a two-fold downregulation of expression from each (Ercan and Lieb, 2009; Ercan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on C. elegans dosage compensation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "af0f4cae-b0ec-44d4-a720-e510229aaac3",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C52",
+      "claim": "Recruitment sites with no motifs have significantly higher DNA-encoded nucleosome occupancy compared to recruitment sites containing motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recruitment sites that do not contain motifs have significantly higher intrinsic nucleosome occupancy than recruitment sites that do contain motifs (Figure 6F), suggesting that a specific DNA or chromatin structure is important for recruitment activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of nucleosome occupancy predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "864a103d-3d5d-4dd6-976c-1cf118754505",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C53",
+      "claim": "Motif clusters on the X have higher DNA-encoded nucleosome occupancy compared to motif clusters on the autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to motif clusters on the X chromosome (median 0.604), autosomal motif clusters have lower intrinsic nucleosome occupancy (median 0.548) (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of nucleosome occupancy predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "926e9698-ad4e-4059-b4e3-81d6f7382b68",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C54",
+      "claim": "Of the 638 annotated C. elegans tRNA genes, 286 (44.8%) are on the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 638 annotated C. elegans tRNA genes, 286 (44.8%) are on the X chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of tRNA gene annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e72c887b-7b53-4053-8915-69838b130e67",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C55",
+      "claim": "Of the 286 tRNA genes on the X chromosome, 178 (62.2%) overlap with a condensin DC binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 178 (62.2%) overlap with a condensin DC binding site on the X chromosome, as assayed by DPY-27 ChIP-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overlap analysis of tRNA genes with DPY-27 ChIP-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "a8091315-627b-47d4-96d4-5b4c3d116ee9",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C56",
+      "claim": "16 out of 64 DCC recruitment sites overlap with a tRNA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 16 out of 64 DCC recruitment sites overlap with a tRNA gene (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Overlap analysis of recruitment sites with tRNA gene annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "d64adf13-0bee-41d2-8a29-2863ee547a84",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C57",
+      "claim": "Overlap with tRNA genes occurs largely at weak recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This overlap occurs largely at weak recruitment sites, suggesting that canonical condensin recruitment mechanisms at tRNAs may help to reinforce condensin DC binding on the X chromosome downstream of DCC recruitment at strong sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of tRNA overlap by recruitment site strength category.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "3919d5fc-fbbf-4d41-bc3e-c4d8b14b534d",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C58",
+      "claim": "SDC-2 expression begins around the 40 cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "All other complex subunits are maternally loaded into the embryo (Dawes et al., 1999; Stoeckius et al., 2014) and remain diffuse in the nucleus prior to the onset of sdc-2 expression at around the 40 cell stage (Dawes et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e329062b-4980-4264-9f5e-f0969644c29a",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C59",
+      "claim": "All DCC subunits except SDC-2 are maternally loaded into the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "All other complex subunits are maternally loaded into the embryo (Dawes et al., 1999; Stoeckius et al., 2014) and remain diffuse in the nucleus prior to the onset of sdc-2 expression at around the 40 cell stage (Dawes et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "9d7082a8-8d7b-4f94-b0a6-a4f8e7e9a733",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C60",
+      "claim": "SDC-2 is a novel 344.4kD protein unique to Caenorhabditis.",
+      "claim_type": "EXPLICIT",
+      "source": "SDC-2 is a novel 344.4kD protein unique to Caenorhabditis (Nusbaum and Meyer, 1989) and the only hermaphrodite-specific member of the DCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous characterization of SDC-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "2d4bcab5-c668-4210-822b-05cfbc2716e8",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C61",
+      "claim": "SDC-2 is the only hermaphrodite-specific member of the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "SDC-2 is a novel 344.4kD protein unique to Caenorhabditis (Nusbaum and Meyer, 1989) and the only hermaphrodite-specific member of the DCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous characterization of SDC-2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "26e16236-0e3f-48b5-86ec-d0decb6afede",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C62",
+      "claim": "In vivo depletion of SUMO significantly disrupts DCC recruitment to the X chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it was shown that in vivo depletion of SUMO significantly disrupts DCC recruitment to the X chromosomes (Pferdehirt and Meyer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous research on SUMO and DCC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "45275a76-cd3e-4d74-950a-1779da67830d",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C63",
+      "claim": "SDC-3, DPY-27, and DPY-28 are targets of SUMOylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is not clear if this effect is direct, western blot and mass-spectrometry analyses indicated that SDC-3, DPY-27, and DPY-28 are targets of SUMOylation (Pferdehirt and Meyer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "72a871ef-7183-45b7-9a6a-798a91115f03",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C64",
+      "claim": "DPY-28 is SUMOylated only in the context of the DCC.",
+      "claim_type": "EXPLICIT",
+      "source": "DPY-28, the non-SMC subunit that functions in both condensin I and condensin DC, is SUMOylated only in the context of the DCC (Pferdehirt and Meyer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "f487fb0d-3b6a-43bb-a8d2-f37055f41ae2",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C65",
+      "claim": "DCC binding alters the nuclear positioning of the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work indicates that DCC binding alters the nuclear positioning of the X chromosome (Sharma et al., 2014) and compacts it by ~40% (Lau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "8e29a8ac-cf03-4cd3-a180-c41b00203e43",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C66",
+      "claim": "DCC binding compacts the X chromosome by ~40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work indicates that DCC binding alters the nuclear positioning of the X chromosome (Sharma et al., 2014) and compacts it by ~40% (Lau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "83dc02e2-424d-43a4-90ae-e38c7226727d",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C67",
+      "claim": "SDC-2 depletion reduced the number of 3D contacts between recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SDC-2 depletion, which results in lack of condensin DC recruitment to the X, reduced the number of 3D contacts between recruitment sites (Crane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous HiC studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "a37b691c-4fd1-41dc-8a5d-47415325928f",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C68",
+      "claim": "X chromosome TADs are significantly altered in a dosage compensation mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in C. elegans suggests a link between TAD formation and dosage compensation as X chromosome TADs are significantly altered in a dosage compensation mutant (Crane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous HiC studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "2012fb9e-2fe2-4b21-98a8-66b052f05583",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C69",
+      "claim": "Several recruitment sites coincide with annotated TAD boundaries on the C. elegans X.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several recruitment sites coincide with annotated TAD boundaries on the C. elegans X, suggesting that strong recruitment at one site may prevent spreading across this site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of recruitment site locations with TAD boundary annotations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "de040c0b-34ba-4f24-8ce4-714df64c564e",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C70",
+      "claim": "Hierarchy and long-distance cooperativity between gene-regulatory elements target a single chromosome for regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work elucidates that hierarchy and long-distance cooperativity between gene-regulatory elements target a single chromosome for regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "cb7e040a-6f30-4c87-aae6-c38f39641627",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C71",
+      "claim": "A secondary site can ectopically recruit the DCC when additional recruitment sites are inserted either in tandem or at a distance (>30 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "A secondary site can ectopically recruit the DCC when additional recruitment sites are inserted either in tandem or at a distance (>30 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ectopic insertion experiments with multiple recruitment sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "ccc32083-34e5-4acd-bce3-ec38d3afad50",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C72",
+      "claim": "Deletion of a recruitment site on the X results in reduced DCC binding across several megabases surrounded by topologically associating domain (TAD) boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of a recruitment site on the X results in reduced DCC binding across several megabases surrounded by topologically associating domain (TAD) boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis of recruitment site deletion strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "7c9bc7ff-816d-4346-b7df-714162d06b3e",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C73",
+      "claim": "Initial recruitment involves SDC-2 recognition of nucleosome occupied motif clusters within a HOT context marking a small number of X-specific strong recruitment sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that initial recruitment involves SDC-2 recognition of nucleosome occupied motif clusters within a HOT context marking a small number of X-specific strong recruitment sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of multiple experimental observations into a model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "36c1abd2-582c-4ca4-88d0-0066861017ad",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C74",
+      "claim": "DCC binding at strong sites initiates an environment amenable to subsequent DCC recruitment at weaker sites.",
+      "claim_type": "EXPLICIT",
+      "source": "DCC binding at these strong sites initiates an environment amenable to subsequent DCC recruitment at weaker sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from hierarchical binding patterns and cooperativity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "ac2b086a-9d65-4eb9-ae8c-5f47d147681c",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C75",
+      "claim": "From the recruitment sites, the DCC is able to spread across large chromosomal domains flanked by TAD boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "From the recruitment sites, the DCC is able to spread across large chromosomal domains flanked by TAD boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from deletion experiments showing TAD-bounded effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "fd59ec11-4d61-49fe-b2cc-d7c2b801e2ac",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "claim_id": "C76",
+      "claim": "Hierarchical and cooperative DCC recruitment followed by long-range spreading results in DCC binding along the length of the X chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical and cooperative DCC recruitment followed by long-range spreading results in DCC binding along the length of the X chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion integrating multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c935fa97-37fc-4d6b-945c-34316b4267a2",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The C. elegans dosage compensation complex (DCC) consists of a modified condensin complex (condensin DC) that shares four of five subunits with condensin I but is distinguished by the SMC-4 variant DPY-27, along with non-condensin subunits SDC-2, SDC-3, and DPY-30 required for X chromosome recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe the established composition of the DCC based on prior literature (C2) and are illustrated in Figure 1A. These are well-established facts about the DCC structure supported by multiple citations and consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "45fa5096-bf6f-406c-9506-de4b97513a28",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ChIP-seq analysis reveals that DCC subunits show X chromosome enrichment, with 51% of SDC-2, 54% of SDC-3, and 29% of DPY-30 binding sites on the X, while condensin DC (DPY-27) binding is highly X-specific at over 99%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 present ChIP-seq data from this study showing differential X chromosome enrichment among DCC subunits. The data are internally consistent and supported by Figure 1B. The high X-specificity of DPY-27 versus recruiter proteins is a key observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "9277ab1f-d386-4654-9872-84c071e1f470",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "64 DCC recruitment sites were identified on the X chromosome using systematic ChIP-seq criteria, capturing 68% of previously identified rex-sites, and these sites were categorized into 17 strong, 16 intermediate, and 31 weak recruitment sites based on ChIP enrichment, with strong sites spaced approximately 1 Mb apart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 describe the systematic identification and classification of recruitment sites using clearly defined ChIP-seq criteria. The hierarchical categorization is supported by k-means clustering (C10) and validated by overlap with prior array-based studies (C9). Figure 2A-B provides visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "0c2114cd-60e1-4a77-ba41-4d7c7712e303",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In sdc-3 null mutants, SDC-2 preferentially binds to strong recruitment sites (16/17) compared to intermediate (11/16) and weak sites (2/31), demonstrating hierarchical recruitment where SDC-2 is required to maintain open chromatin at strong sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 present ChIP-seq data from sdc-3 null mutants showing differential SDC-2 binding by site strength (Figure 2C). C15 is supported by H3 ChIP-seq comparing wild-type and sdc-2 null (Figure 3A). Together these demonstrate recruitment hierarchy and SDC-2's role in chromatin accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A 12 bp DNA sequence motif with GCGCAGGG core is enriched at recruitment sites but shows only ~3-fold X chromosome enrichment genome-wide; strong motifs (score \u22657) show greater X enrichment with 91% of perfect matches on X, yet only 52% of strong X-linked motifs are DCC-bound, and bound motifs have higher predicted nucleosome occupancy than unbound motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 describe motif analysis with clear methodology (TRAP scoring) and present data showing the motif is necessary but insufficient for DCC binding. The nucleosome occupancy predictions (C21, Figure 4E) and binding statistics (C20) are well-supported. This addresses a key specificity question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "5da909f1-ba83-457e-b39a-3a62980c7464",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "17 homotypic motif clusters on the X chromosome are all DCC-bound and contained within recruitment sites, while 5 autosomal motif clusters fail to recruit DCC; strong recruitment sites show significant overlap with HOT sites (16/17), and 11/12 X-linked motif clusters both overlap HOT sites and are strong recruitment sites, fully distinguishing X from autosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 demonstrate that motif clustering combined with HOT site overlap distinguishes X from autosomes. The data are clearly presented in Figures 5A-B with statistical validation. This is a critical finding explaining X-specificity beyond motif sequence alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ectopic insertion experiments show that rex-1 in single copy on chromosome II recruits DCC at only 12-26% of endogenous levels, while rex-8 recruits at 22-47%; however, rex-1 on the X chromosome recruits robustly (exceeding endogenous levels), and increasing rex-1 copy number on autosomes to 3 or 8 copies increases recruitment to 61% and 100% respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 present ChIP-qPCR data from multiple ectopic insertion strains (Figure 6A). The experiments are well-controlled with biological replicates and appropriate normalization. The copy-number dependence demonstrates cooperativity, though positional effects cannot be fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "e1318cfc-bba2-4494-a97e-ea8b0a539b40",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recruitment sites are separated by a median distance of ~90 kb (range 1.5 kb to 1.2 Mb), and long-range cooperativity is demonstrated by sequential insertion of rex-8 sites at 30 kb and 50 kb from ectopic rex-1, which progressively increased DCC recruitment to the weak rex-1 site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 and C71 demonstrate long-range cooperativity through CRISPR-mediated sequential insertions (Figure 6C). The experimental design directly tests cooperativity over distances relevant to endogenous site spacing. The progressive increase in recruitment with additional sites is compelling evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "3600773a-fc0f-486c-b52c-2f96616c85fc",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An autosomal motif cluster inserted into the X chromosome failed to strongly recruit DCC; recruitment sites without motifs have significantly higher DNA-encoded nucleosome occupancy than sites with motifs, and X-linked motif clusters have higher nucleosome occupancy than autosomal clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C52-C53 show that motif clustering alone is insufficient (Figure 6E-F) and that DNA-encoded nucleosome occupancy distinguishes functional sites. The nucleosome occupancy predictions are based on an established model (Ercan et al., 2011) and show statistically significant differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Deletion of individual recruitment sites (rex-40, rex-1, rex-41) results in 10-20% reduction in DCC binding across 1-2 Mb regions flanked by TAD boundaries, with corresponding increases in local gene expression; the alignment of DCC-depleted region edges with TAD boundaries is statistically significant (p<0.07).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C72 present ChIP-seq and RNA-seq data from three deletion strains analyzed with sliding windows (Figure 7A-C). The TAD boundary alignment is supported by permutation testing. The modest effect size (10-20%) is consistent with redundancy among recruitment sites. Control experiments with set-4 mutant validate the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "66f41cae-2b4a-497f-a8d7-f3f37f5dec13",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Analysis of published HiC data shows that 62/64 recruitment sites interact with at least one other recruitment site in wild-type, reduced to 35/64 in sdc-2 mutant, indicating DCC-dependent long-range interactions between recruitment sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 analyze published HiC data (Crane et al., 2015) to show recruitment site interactions. The analysis is appropriate and the reduction in interactions in sdc-2 mutant supports DCC-dependent 3D organization. However, this is secondary analysis of published data rather than new experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "741c2df5-dbc5-41cc-9cab-700476cb4a5f",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Of 638 C. elegans tRNA genes, 286 (44.8%) are on the X chromosome, with 178 (62.2%) overlapping condensin DC binding sites; 16/64 recruitment sites overlap tRNA genes, predominantly at weak sites, suggesting canonical condensin recruitment mechanisms reinforce DCC binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 present overlap analysis between tRNA genes and DCC binding/recruitment sites. The enrichment at weak sites (C57) is an interesting observation supported by the data, though the mechanistic interpretation is speculative. The connection to canonical condensin recruitment is reasonable given prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose a model where initial DCC recruitment involves SDC-2 recognition of nucleosome-occupied motif clusters within HOT contexts at strong X-specific sites, which initiates an environment for recruitment at weaker sites, followed by spreading across TAD-bounded domains, resulting in chromosome-wide DCC binding through hierarchy and long-distance cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C73-C76 synthesize the experimental findings into a comprehensive model. While these are interpretive claims, they are well-supported by the collective evidence from ChIP-seq, ectopic insertions, deletions, and chromatin analysis. The model integrates multiple lines of evidence coherently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    },
+    {
+      "id": "dcfc59de-b921-471c-b265-8e659559692c",
+      "content_id": "e3c5576d-335f-489f-8752-a7e6815de35a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on DCC composition, dependencies, spreading, developmental timing, SUMOylation, 3D organization, and comparison to dosage compensation in other organisms is provided based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C69 (excluding those already grouped) represent background knowledge from cited literature. These establish context for the current work and are appropriately attributed to prior studies. They are not new findings but necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T19:21:16.444997Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bbb84df2-d2b9-4653-bce4-1b2930c242dc",
+      "result_id": "c935fa97-37fc-4d6b-945c-34316b4267a2"
+    },
+    {
+      "claim_id": "e0b3178f-0d4e-442d-a872-a3cb6543d779",
+      "result_id": "c935fa97-37fc-4d6b-945c-34316b4267a2"
+    },
+    {
+      "claim_id": "e6a1027b-4c30-41e6-9415-242cb7d102d8",
+      "result_id": "c935fa97-37fc-4d6b-945c-34316b4267a2"
+    },
+    {
+      "claim_id": "c6d94494-3976-4731-8d36-19ebdcf73828",
+      "result_id": "45fa5096-bf6f-406c-9506-de4b97513a28"
+    },
+    {
+      "claim_id": "bcf6972c-92d0-4ef0-9a92-369250b393cb",
+      "result_id": "45fa5096-bf6f-406c-9506-de4b97513a28"
+    },
+    {
+      "claim_id": "95682c22-3e8d-4f5d-a851-92be014b49bb",
+      "result_id": "45fa5096-bf6f-406c-9506-de4b97513a28"
+    },
+    {
+      "claim_id": "a4cffd7f-5632-4e38-a2c8-b28e740bae34",
+      "result_id": "45fa5096-bf6f-406c-9506-de4b97513a28"
+    },
+    {
+      "claim_id": "f2230229-b34b-4f00-ae7a-88794f740012",
+      "result_id": "9277ab1f-d386-4654-9872-84c071e1f470"
+    },
+    {
+      "claim_id": "d1e238c5-7e1c-4415-b713-3d0f11c31cf8",
+      "result_id": "9277ab1f-d386-4654-9872-84c071e1f470"
+    },
+    {
+      "claim_id": "9fa909df-88ba-4bf8-86b3-1d9a2f9b92c1",
+      "result_id": "9277ab1f-d386-4654-9872-84c071e1f470"
+    },
+    {
+      "claim_id": "2710cc54-8a7f-4ad1-b2fb-7580f8692db2",
+      "result_id": "9277ab1f-d386-4654-9872-84c071e1f470"
+    },
+    {
+      "claim_id": "978c5cf3-a764-45dd-89e1-08ab51d28668",
+      "result_id": "0c2114cd-60e1-4a77-ba41-4d7c7712e303"
+    },
+    {
+      "claim_id": "2ecf5b99-a86e-48ee-8b87-2d081b21fd8d",
+      "result_id": "0c2114cd-60e1-4a77-ba41-4d7c7712e303"
+    },
+    {
+      "claim_id": "9aa86416-2e26-4be5-ac89-c68ea10b0702",
+      "result_id": "0c2114cd-60e1-4a77-ba41-4d7c7712e303"
+    },
+    {
+      "claim_id": "6ffddfe5-0610-4cd2-ab16-05b9f198da43",
+      "result_id": "0c2114cd-60e1-4a77-ba41-4d7c7712e303"
+    },
+    {
+      "claim_id": "5a44fb12-e8a4-40d1-b68f-052756f2ab10",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "913152ab-de35-43d6-b2fd-07cb7903af8f",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "ccfd537f-53bf-4b2a-b44c-69218c017d12",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "f80c1848-4622-4738-a0f1-aee30df29fd3",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "c0256d2b-4875-4275-af96-43d01fa14417",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "e2d9a8a5-f6fd-471d-be60-0cd6369dba63",
+      "result_id": "5dc2e2e3-e5ef-40a5-ba77-34e0e8467c7c"
+    },
+    {
+      "claim_id": "892edd9a-d032-444f-a5aa-ee2505dc8c5e",
+      "result_id": "5da909f1-ba83-457e-b39a-3a62980c7464"
+    },
+    {
+      "claim_id": "45f4d115-faf7-4ea0-b7d4-7261ca7afee9",
+      "result_id": "5da909f1-ba83-457e-b39a-3a62980c7464"
+    },
+    {
+      "claim_id": "01ce9d64-1b5a-4b78-bee3-d5ab05c92fae",
+      "result_id": "5da909f1-ba83-457e-b39a-3a62980c7464"
+    },
+    {
+      "claim_id": "ed9d5c7e-c31c-42fc-a4fc-0e7c91c8d14e",
+      "result_id": "5da909f1-ba83-457e-b39a-3a62980c7464"
+    },
+    {
+      "claim_id": "8e55a803-feb9-4065-ae0c-22140a5edbcf",
+      "result_id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6"
+    },
+    {
+      "claim_id": "b9d7b177-8544-4a97-b87f-64f7b38f898a",
+      "result_id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6"
+    },
+    {
+      "claim_id": "98cd8e53-a1db-4b88-9e7f-63bd70cd83b7",
+      "result_id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6"
+    },
+    {
+      "claim_id": "a76a26f8-44ef-457e-90d3-4f0c35c7b811",
+      "result_id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6"
+    },
+    {
+      "claim_id": "4b220ca6-f51a-4833-9f51-3c2b7f64eaee",
+      "result_id": "3b00cf1c-57c6-449d-89e5-b1a4ca0316a6"
+    },
+    {
+      "claim_id": "b432cb31-e400-42ba-8e84-0449c1c49ff8",
+      "result_id": "e1318cfc-bba2-4494-a97e-ea8b0a539b40"
+    },
+    {
+      "claim_id": "d1ef9c2f-88d1-4159-992e-85284e52d030",
+      "result_id": "e1318cfc-bba2-4494-a97e-ea8b0a539b40"
+    },
+    {
+      "claim_id": "3802b218-e2c7-4357-8011-96313b4ed773",
+      "result_id": "e1318cfc-bba2-4494-a97e-ea8b0a539b40"
+    },
+    {
+      "claim_id": "cb7e040a-6f30-4c87-aae6-c38f39641627",
+      "result_id": "e1318cfc-bba2-4494-a97e-ea8b0a539b40"
+    },
+    {
+      "claim_id": "15d440e0-c75c-4e60-a6f1-7a008e54e7de",
+      "result_id": "3600773a-fc0f-486c-b52c-2f96616c85fc"
+    },
+    {
+      "claim_id": "af0f4cae-b0ec-44d4-a720-e510229aaac3",
+      "result_id": "3600773a-fc0f-486c-b52c-2f96616c85fc"
+    },
+    {
+      "claim_id": "864a103d-3d5d-4dd6-976c-1cf118754505",
+      "result_id": "3600773a-fc0f-486c-b52c-2f96616c85fc"
+    },
+    {
+      "claim_id": "e59bde2c-918f-4fc2-90ad-60da28fad0f1",
+      "result_id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b"
+    },
+    {
+      "claim_id": "661866ee-67b2-4dda-86ab-4635248afc58",
+      "result_id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b"
+    },
+    {
+      "claim_id": "d248ad5d-778c-4f0a-9c52-5081208c9dac",
+      "result_id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b"
+    },
+    {
+      "claim_id": "32124c0f-4a6c-480e-8012-069995cca0b7",
+      "result_id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b"
+    },
+    {
+      "claim_id": "ccc32083-34e5-4acd-bce3-ec38d3afad50",
+      "result_id": "7c25c364-bb65-4b74-bd8d-f886600ddc2b"
+    },
+    {
+      "claim_id": "703b682d-28b7-46ad-82ed-f86dafcaf018",
+      "result_id": "66f41cae-2b4a-497f-a8d7-f3f37f5dec13"
+    },
+    {
+      "claim_id": "d0bc1a09-a485-45da-ac29-8137796c3d80",
+      "result_id": "66f41cae-2b4a-497f-a8d7-f3f37f5dec13"
+    },
+    {
+      "claim_id": "926e9698-ad4e-4059-b4e3-81d6f7382b68",
+      "result_id": "741c2df5-dbc5-41cc-9cab-700476cb4a5f"
+    },
+    {
+      "claim_id": "e72c887b-7b53-4053-8915-69838b130e67",
+      "result_id": "741c2df5-dbc5-41cc-9cab-700476cb4a5f"
+    },
+    {
+      "claim_id": "a8091315-627b-47d4-96d4-5b4c3d116ee9",
+      "result_id": "741c2df5-dbc5-41cc-9cab-700476cb4a5f"
+    },
+    {
+      "claim_id": "d64adf13-0bee-41d2-8a29-2863ee547a84",
+      "result_id": "741c2df5-dbc5-41cc-9cab-700476cb4a5f"
+    },
+    {
+      "claim_id": "7c9bc7ff-816d-4346-b7df-714162d06b3e",
+      "result_id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac"
+    },
+    {
+      "claim_id": "36c1abd2-582c-4ca4-88d0-0066861017ad",
+      "result_id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac"
+    },
+    {
+      "claim_id": "ac2b086a-9d65-4eb9-ae8c-5f47d147681c",
+      "result_id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac"
+    },
+    {
+      "claim_id": "fd59ec11-4d61-49fe-b2cc-d7c2b801e2ac",
+      "result_id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac"
+    },
+    {
+      "claim_id": "de040c0b-34ba-4f24-8ce4-714df64c564e",
+      "result_id": "cf8d4765-cbc8-4f59-9ec4-49262b07c4ac"
+    },
+    {
+      "claim_id": "13c370cf-f698-4855-83cb-308cd7488fca",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "c20a8881-c9fb-4178-811b-75794bb7e3ce",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "439cdf8d-0ab3-4246-922f-4ae8ab1bdabe",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "7860996c-0ae2-4086-8680-47a4a34ff1ab",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "bb94cbff-b546-4a35-9067-e082062cd393",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "438a278f-c341-4fc3-8d8c-4eedfe0a5014",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "cc6919cf-456c-464c-a23b-bd41d5868f60",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "bcd5c000-a4e6-480e-8f3e-f30ee1d23c98",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "f447775e-7731-4e54-bcf1-f7311a2ead19",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "f5f5c6c0-6771-4f8e-9f26-daa6d2d7ca67",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "12aa80d7-bb58-4fe9-b65f-ad0cd3e66806",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "3919d5fc-fbbf-4d41-bc3e-c4d8b14b534d",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "e329062b-4980-4264-9f5e-f0969644c29a",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "9d7082a8-8d7b-4f94-b0a6-a4f8e7e9a733",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "2d4bcab5-c668-4210-822b-05cfbc2716e8",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "26e16236-0e3f-48b5-86ec-d0decb6afede",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "45275a76-cd3e-4d74-950a-1779da67830d",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "72a871ef-7183-45b7-9a6a-798a91115f03",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "f487fb0d-3b6a-43bb-a8d2-f37055f41ae2",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "8e29a8ac-cf03-4cd3-a180-c41b00203e43",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "83dc02e2-424d-43a4-90ae-e38c7226727d",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "a37b691c-4fd1-41dc-8a5d-47415325928f",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    },
+    {
+      "claim_id": "2012fb9e-2fe2-4b21-98a8-66b052f05583",
+      "result_id": "dcfc59de-b921-471c-b265-8e659559692c"
+    }
+  ],
+  "comparisons": []
+}

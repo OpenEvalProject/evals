@@ -1,0 +1,2347 @@
+{
+  "submission": {
+    "id": "dd32735a-a7ea-49f3-b0cc-a8103581c4e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:54:39.598314Z",
+    "updated_at": "2025-12-01T22:54:39.598314Z"
+  },
+  "content": [
+    {
+      "id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "submission_id": "dd32735a-a7ea-49f3-b0cc-a8103581c4e5",
+      "content_type": "manuscript",
+      "content_text": "# Automated cell-type classification in intact tissues by single-cell molecular profiling\n\n## Authors\n\n- Monica Nagendran<sup>1</sup>\n- Daniel P Riordan<sup>3</sup>\n- Pehr B Harbury<sup>3</sup> ([ORCID: 0000-0002-3657-5485](https://orcid.org/0000-0002-3657-5485)) \u2020\n- Tushar J Desai<sup>1</sup> ([ORCID: 0000-0002-8794-5319](https://orcid.org/0000-0002-8794-5319)) \u2020\n\n### Affiliations\n\n1. Department of Internal Medicine, Division of Pulmonary & Critical Care Stanford University School of Medicine Stanford United States\n2. Institute for Stem Cell Biology and Regenerative Medicine Stanford University School of Medicine Stanford United States\n3. Department of Biochemistry Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA major challenge in biology is identifying distinct cell classes and mapping their interactions in vivo. Tissue-dissociative technologies enable deep single cell molecular profiling but do not provide spatial information. We developed a proximity ligation in situ hybridization technology (PLISH) with exceptional signal strength, specificity, and sensitivity in tissue. Multiplexed data sets can be acquired using barcoded probes and rapid label-image-erase cycles, with automated calculation of single cell profiles, enabling clustering and anatomical re-mapping of cells. We apply PLISH to expression profile ~2900 cells in intact mouse lung, which identifies and localizes known cell types, including rare ones. Unsupervised classification of the cells indicates differential expression of \u2018housekeeping\u2019 genes between cell types, and re-mapping of two sub-classes of Club cells highlights their segregated spatial domains in terminal airways. By enabling single cell profiling of various RNA species in situ, PLISH can impact many areas of basic and medical research.\n\n## Introduction\n\nIn parallel with the development of single-cell RNA sequencing (scRNA-seq), there have been rapid advances in single-molecule in situ hybridization (smISH) techniques that localize RNAs of interest directly in fixed cells (Shah et al., 2016; Huss et al., 2015; Chen et al., 2015; Wang et al., 2012; Larsson et al., 2010; Raj et al., 2008; Femino et al., 1998). These smISH techniques involve hybridization of fluorescently-labeled oligonucleotide probes, typically 24\u201396 per gene, to mark individual RNA molecules with a discrete, diffraction-limited punctum that can be quantitatively analyzed by fluorescence microscopy. smISH has been used in cultured cells to study the subcellular distribution of RNAs (reviewed in [Buxbaum et al., 2015]), the consequences of stochastic noise on gene expression (Raj et al., 2010; Raj et al., 2006), and the impact of cell shape and environment on expression programs (Moffitt et al., 2016a; Battich et al., 2015).\n\nAn increasingly important application for smISH is the simultaneous localization of customized panels of transcripts in tissue, which is used to validate putative cell subtypes identified by scRNA-seq studies (Gr\u00fcn and van Oudenaarden, 2015). Performing smISH in intact tissue can also reveal the spatial relationship between the cells expressing secreted signaling factors and the cells expressing the corresponding receptors, information that current scRNA-seq approaches cannot resolve because they require tissue dissociation with irretrievable loss of spatial context. Finally, when applied on a genome-wide scale in tissues, smISH has the potential to entirely bypass scRNA-seq as an upfront discovery tool.\n\nThe development of multiplexed smISH for use in tissue has been challenging due to autofluorescent background and light scattering (Shah et al., 2016; Sylwestrak et al., 2016; Moffitt et al., 2016b; Chen et al., 2016; Choi et al., 2014; Lyubimova et al., 2013). One strategy for addressing this problem is to amplify probe signals by the hybridization chain reaction (HCR, reviewed in (Choi et al., 2016); see also (Wang et al., 2012) for branched-DNA amplification), which provides up to five orthogonal detection channels. Higher levels of multiplexing can be achieved by repeated cycles of RNA in situ hybridization followed by a re-amplification step (Shah et al., 2016), but because a single round of probe hybridization in tissue sections takes hours, multiplexing with HCR is laborious. Unamplified smISH techniques have the practical advantage that hundreds of endogenous RNA species can be barcoded in a single reaction, and then read out with rapid label-image-erase cycles (Moffitt et al., 2016b; Moffitt et al., 2016c), but these do not provide adequate signal in tissues.\n\nIdeally, a technique for high-throughput profiling would combine all of the RNA probe hybridization and signal amplification steps into a single reaction. Previously, Nilsson and colleagues presented an elegant enzymatic solution to this problem (Larsson et al., 2010; Ke et al., 2013). They used barcoded padlock probes to label cDNA molecules in cells and tissues, and rolling-circle amplification (RCA) to transform the circularized probes into long tandem repeats. The approach worked in tissues and handled an unbounded number of orthogonal amplification channels. The only limitations were that the RNA-detection efficiency was capped at about 15% (each transcript could only be probed at a single site because the 3' end of the cDNA served as the replication primer), and that the approach required an in situ reverse transcription step with specialized and costly locked nucleic-acid primers.\n\nHere, we report an in situ hybridization technique with performance characteristics that enable rapid and scalable single-cell expression profiling in tissue. Our approach is a simplified variant of the padlock/RCA technique which replaces padlock probes with RNA-templated proximity ligation\u00a0(S\u00f6derberg et al., 2006;\u00a0Frei et al., 2016) at Holliday junctions (Labib et al., 2013); hence, we term it proximity ligation in situ hybridization (PLISH). As demonstrated below, PLISH generates data of exceptionally high signal-to-noise. Multiplexed hybridization and signal amplification of all target RNA species is carried out in a single parallel reaction, and the RNAs are then localized with rapid label-image-erase cycles. PLISH exhibits high detection efficiency because it probes multiple sites in each target RNA, and high specificity because of the proximity ligation mechanism. PLISH utilizes only commodity reagents, so it can be scaled up inexpensively to cover many genes. It works well on conventional formalin-fixed tissues that have been cryo- or paraffin-embedded, and can be performed concurrently with immunostaining, making it extremely versatile. Using the murine lung as a characterized model tissue, we show that multiplexed PLISH can rediscover and spatially map the distinct cell types of a tissue in an automated and unsupervised fashion. An unexpected discovery from this experiment is that murine Club cells separate into two populations that differ molecularly and segregate anatomically. PLISH constitutes a novel, single cell spatial-profiling technology that combines high performance, versatility and low cost. Because of its technical simplicity, it will be accessible to a broad scientific community.\n\n## Results\n\n### Proximity ligation in situ hybridization (PLISH)\n\nProximity ligation at Holliday junctions offers a simple mechanism for the amplified detection of RNA\u00a0(Labib et al., 2013). First, a transcript is targeted with a pair of oligonucleotide 'H' probes designed to hybridize at adjacent positions along its sequence (Figure 1A). The left H probe includes a single-stranded 5' overhang while the right probe includes a 3' overhang. Importantly, target RNAs can be tiled with H probe pairs at multiple sites, which is critical for efficient detection of low abundance transcripts (Figure 1B). The overhangs are then hybridized to 'bridge' and linear 'circle' oligonucleotides with embedded barcode sequences to form a Holliday junction structure, after which ligation at the nick sites creates a closed circle. Finally, the 3' end of the right H probe primes rolling-circle replication, which generates a long single-stranded amplicon of tandem repeats. Addition of fluorescently-labeled 'imager' oligonucleotides complementary to the barcodes generates an extremely bright punctum at the site of each labeled transcript. Because each barcode sequence is unique, the puncta derived from different target RNAs can be labeled with different colors (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig1-v3.jpg)\n\n**Figure 1.:** (A) Mechanism of RNA detection by PLISH. Left (HL) and right (HR) DNA 'H' probes targeting adjacent sites hybridize to a target RNA. Subsequent addition of circle and bridge oligonucleotides harboring a specific 'barcode' sequence (red dash) results in an RNA-DNA Holliday junction. The nicks in the junction are then sealed by ligation to create a covalently closed circle, and rolling-circle amplification (RCA) generates complementary tandem repeats. The single-stranded amplicons are detected with a fluorescently-labeled 'imager' oligonucleotide (red star) that is complementary to the specific 'barcode' sequence. See note in 1C. (B) To increase efficiency of detection for low abundance transcripts, H probe pairs embedded with the same barcode sequence can be 'tiled' along the length of the target mRNA. (C) Up to five distinct transcripts can be simultaneously detected using five different barcode sequences (one unique sequence for each RNA), and five complementary imager oligonucleotides that are conjugated to spectrally-distinct fluorophores. (D) PLISH RNA detection requires coincident hybridization of both left and right H probes, and redundant probesets increase detection efficiency. Cultured HCT116 cells were stained with one (left panel) or ten (middle panel) pairs of H probes targeting the SOX4 transcript. Many more RNA molecules are detected with ten probesets. No puncta are observed when the RNA-recognition sequences of the left H probes are scrambled (right panel). SOX4, SRY-box 4; Scale bar, 10 \u03bcm. (E) PLISH RNA detection in tissues is highly sequence-specific. Mouse lung was hybridized with a single pair of H probes targeting nucleotides 228\u2013268 of the Scgb1a1 transcript. The section in the bottom row was pre-incubated with a 60-base antisense blocking oligonucleotide complementary to nucleotides 219\u2013278, whereas the section in the top row was pre-incubated with a scrambled 60-base blocking oligonucleotide. The antisense blocking oligonucleotide dramatically reduces the Scgb1a1 signal (bottom), whereas the scrambled blocking oligonucleotide has no effect (top). Note that the PLISH signal is tightly restricted to the bronchial Club cells (arrow). The dashed lines indicate the basal surface of bronchial epithelium. Scgb1a1, secretoglobin family 1A1 member 1; Scale bar, 40 \u03bcm. (F) PLISH RNA detection sensitivity in cultured cells matches single-cell qPCR sensitivity. FPKM values for 36 mRNAs are plotted against the fraction of HCT116 cells in which they were detected by single-cell qPCR (Wu et al., 2014) (filled black circles) or by PLISH (red inverted triangles). The black line is the prediction of a Poisson sampling model for the fraction of cells with at least one transcript, assuming that the transcript abundance increases proportionately with FPKM, and that one FPKM unit corresponds to 2.5 copies per cell. The inset shows PLISH staining for CASP9, which has an FPKM value of 2. CASP9, caspase 9; FPKM, Fragments Per Kilobase of transcript per Million mapped reads; qPCR, quantitative reverse transcription polymerase chain reaction; Scale bar, 20 \u03bcm. (G) RNA abundances measured by PLISH and by single-cell RNA sequencing are highly correlated. A log-log plot showing the average single-cell FPKM value for 10 mRNAs in HCT116 cells (Wu et al., 2014) plotted against the number of puncta per cell per probe measured by PLISH. Multiple points at each FPKM value are independent experiments. The data fit to a line of slope 1 with R2 = 0.8.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) An unprocessed micrograph of mouse lung interrogated with H probes targeting Scgb1a1 (red) and DAPI (white). The yellow line demarcates a region of the micrograph used to measure the background signal. Scale bar, 50 \u03bcm. (B) A plot of pixel intensities in the red channel from the image in panel A. The intensities ranged from 0 to 255. (C) A zoomed-in histogram of the red pixel intensities within the field demarcated by the yellow line, which was used to measure the background signal. 435,175 of these 435,200 background pixels had 0 counts (the vertical axis is truncated), and the mean intensity was 1.3*10^\u22124 counts. (D) A histogram of the red pixel intensities for all the non-zero pixels in panel A. The mean intensity of the non-zero pixels was 42 counts. (E) A micrograph of PLISH puncta for PP1A (green) and DAPI (blue) in cultured HCT116 cells. PP1A, protein phosphatase 1A; Scale bar, 10 \u03bcm. (F) A histogram of the integrated intensities for the PLISH puncta in panel E (filled circles). The histogram fitted well to a negative binomial distribution with a single 'fail' event (open circles). Mean-events-to-failure parameters between 1000 and 60,000 gave similar agreement with the data.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Mouse lung co-stained for Sftpc by indirect immunohistochemistry (red) and PLISH (green) with DAPI (blue). 181 of 184 PLISH+\u00a0cells were also antibody+, and 181 of 195 antibody+\u00a0cells were PLISH+. White arrows indicate representative co-labeled AT2 cells. Dotted lines demarcate alveolar septae. AT2, alveolar epithelial type II; Scale bar, 40 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Double in situ hybridization for Axin2 using HCR and PLISH was performed in mouse lung. HCR signals (yellow arrowheads, third panel) were identified based on overlap of puncta from two different HCR channels, and PLISH puncta were imaged in the same field (white arrowheads, fourth panel). Colocalized HCR and PLISH puncta are enumerated (dashed orange circles) in the fifth panel. Over three fields of view, we observed 92 HCR puncta and 140 PLISH puncta, with 29 cases of co-localized HCR and PLISH signal. Thus, the four PLISH probe pairs gave a combined detection efficiency of 32%, with a per-site efficiency of 9%. Dashed line demarcates alveolar septae. Scale bar, 40 \u03bcm.\n\nTo implement PLISH, we adapted protocols for antibody-based proximity ligation (S\u00f6derberg et al., 2006). The technique utilizes conventional oligonucleotides, two commercially available enzymes, and procedures familiar to molecular biologists. The ligase and polymerase enzymes are less than half the size of an immunoglobulin G, and they diffuse at least as rapidly as the 60mer DNA hairpins used for HCR amplification (Choi et al., 2014; Joubert et al., 2003; Lapham et al., 1997; Modrich et al., 1973). Our initial studies produced bright puncta that were absent if any of the oligonucleotide or enzyme reagents was withheld. The signal from the individual RCA amplicons exceeded cellular and tissue fluorescence background by more than 30-fold, rendering autofluorescence inconsequential (Figure 1\u2014figure supplements 1A\u2013B and [Jarvius et al., 2006; Blab et al., 2004]). Histograms of puncta intensities fit to a negative binomial distribution, as expected for a DNA replication process that terminates stochastically and irreversibly (Figure 1\u2014figure supplement 1C\u2013F). The coefficients of variation for the puncta intensity distributions were typically between one and two.\n\n### Highly specific and sensitive detection of RNA transcripts\n\nThe requirement for coincident hybridization of two probes at adjacent sites in an RNA transcript should make PLISH highly specific. To evaluate this, we performed several experiments. First, we used PLISH to detect the transcription factor SRY-box 4 (SOX4) in cultured HCT116 cells. A pool of ten H probesets exhibited much higher RNA detection efficiency than a single H probeset, as expected (Figure 1D). However, when the RNA-recognition sequence of either the left or right H probe in each set was scrambled, there were no detectable puncta. Thus, both H probes had to be correctly targeted to generate a signal. Second, we tested the sequence-specificity of the PLISH signal in tissue by pre-incubating samples with antisense 'blocking' oligonucleotides complementary to the target RNA at the H probe hybridization sites. For these experiments, we stained mouse lung sections for secretoglobin 1a1 (Scgb1a1), a marker of airway Club cells. Antisense oligonucleotides drastically attenuated the number of PLISH puncta, whereas scrambled blocking oligonucleotides of the same length had no apparent effect (Figure 1E). Third, we analyzed murine lung sections for the co-localization of the mRNA transcript and protein product of surfactant protein C (Sftpc), which is expressed in alveolar epithelial type II (AT2) cells. Of the cells that were positive for PLISH signal, 98.5% were also positive for antibody staining (n\u00a0=\u00a0184, Figure 1\u2014figure supplement 2). This level of specificity is excellent relative to HCR-amplified smISH, where off-target binding of hybridization probes can account for a quarter of the observed puncta (Shah et al., 2016).\n\nTo quantify the sensitivity and accuracy of RNA detection, we benchmarked PLISH measurements against a reference-standard dataset of single-cell, quantitative reverse transcription polymerase chain reaction (qPCR) and RNA-seq measurements on HCT116 cells (Wu et al., 2014). For genes with fragment-per-kilobase-per-million-read (FPKM) values greater than one, the single-cell qPCR technique detected mRNA in\u00a0>90% of the cells (Figure 1F). However, the fraction of transcript-positive cells dropped quickly between FPKM values of 1 and 0.1. A fit of the qPCR data to a Poisson sampling model suggested that an FPKM value of one corresponded to 2.5 copies per cell (see also [Marinov et al., 2014; Battich et al., 2013]). The PLISH technique detected RNA transcripts with a sensitivity comparable to single-cell qPCR. For example, Caspase-9 (CASP9) has an FPKM value of 2, and it was observed in 100% of the cells by PLISH. We detected an average of 8 puncta per cell, which is consistent with the prediction of 5 copies per cell from the fit to the qPCR data (Figure 1F, inset). For a set of ten genes covering the full spectrum of expression levels in HCT116 cells, the number of PLISH puncta per cell correlated with bulk FPKM values (Figure 1G).\n\nTo quantify RNA-detection efficiency in tissue, we marked a set of axin 2 (Axin2) transcripts in mouse lung sections using an HCR-amplified smISH procedure (Choi et al., 2014) and then determined the fraction of the marked transcripts that could be identified by PLISH. We chose the Axin2 gene because of its low expression level in the lung. HCR detected a sparse population of cells with one to two puncta each (the HCR detection efficiency was low because we used a single HCR probe rather than 24). PLISH puncta generated with a pool of four H probe pairs co-localized with 32% of the HCR puncta (Figure 1\u2014figure supplement 3). Thus, the four PLISH probesets detected Axin2 transcripts with a composite efficiency of 32% and an average per-site efficiency of 9%. This probe efficiency matches or exceeds that of other smISH techniques. The PLISH detection efficiency can be tuned on a per gene basis by altering the number of H probe pairs. Decreasing the number of probesets pro-rates the number of puncta from highly-expressed genes, while increasing the number of probesets can facilitate sensitive detection of very low-abundance transcripts.\n\n### Visualization of molecular and histological features in tissue\n\nWe next characterized the performance of PLISH for low-plex RNA localization in tissues. This experimental format uses a disposable hybridization chamber that is sealed to a coverslip or slide surrounding a tissue section (Figure 2A). PLISH detection of up to 5 RNA species is accomplished by stepwise application of reagents through the inlet and outlet ports of the chamber. The puncta from each RNA species are then labeled in a unique color by hybridization to 'imager' oligonucleotides with spectrally-distinct fluorophores. After imaging, the fluorescence micrographs are interpreted by direct visual inspection. We aimed to test whether PLISH provides single-molecule and single-cell resolution in tissues, whether it robustly detects low-abundance RNA species, whether the spatial distribution of RNA is consistent with prior knowledge, whether PLISH is compatible with simultaneous immunostaining, and whether it is compatible with formalin-fixed, paraffin-embedded (FFPE) samples.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig2-v3.jpg)\n\n**Figure 2.:** (A) PLISH experimental workflow. After an initial probe hybridization and enzymatic amplification step, up to five distinct channels can be simultaneously detected and imaged by conventional fluorescence microscopy, enabling direct visualization of RNA abundance. (B) PLISH detects single RNA molecules with single-cell resolution in tissues. PLISH staining for Foxj1 (white) and Scgb1a1 (red) in the bronchial epithelium of mouse lung shows a single ciliated cell (Foxj1+, arrowhead and asterisk) between Club cells (Scgb1a1+) in a planar view (top) and with orthogonal reconstruction (bottom). Note the discrete white puncta in the ciliated cell, which correspond to single Foxj1 transcripts. Dashed lines indicate the lateral and solid lines indicate the basal surface of airways. Foxj1, forkhead box J1; Scgb1a1, secretoglobin family 1A member 1; Scale bars, 10 \u03bcm. (C) Simultaneous RNA and protein detection in FFPE sections. FFPE human lung co-stained by PLISH (SCGB1A1, red) and indirect immunohistochemistry (anti-KRT5, grey) shows the expected localization of Club cells (SCGB1A1+, arrow) and basal cells (KRT5+, arrowhead) along the bronchial (Br) epithelium. Solid lines indicate the basal surface of airways. FFPE, formalin-fixed, paraffin-embedded; KRT5, keratin 5; SCGB1A1, secretoglobin family 1A member 1; Scale bar, 5 \u03bcm. (D) Discrimination of AT2 cells from macrophages by visual inspection of RNA abundance. PLISH staining in mouse lung for Lyz2 (purple) and Sftpc (green) allows clear discrimination of alveolar macrophages (Lyz2+ Sftpc-, white arrow) from AT2 cells (Sftpc+ Lyz2+, yellow arrow). AT2, Alveolar epithelial type II; Lyz2, lysozyme 2; Mac, macrophage; Sftpc, surfactant protein C; Scale bar, 20 \u03bcm. (E) Discrimination of AT2 cells from BASC cells by visual inspection of RNA abundance. PLISH staining for the Club cell marker (Scgb1a1, red) and AT2 cell marker (Sftpc, green) shows AT2 (Sftpc+), Club (Scgb1a1+) and BASC (Sftpc+ Scgb1a1Lo) cells. Note the discrete red puncta in the 'BASC' cells, which correspond to single Scgb1a1 transcripts. The cell types localize appropriately, with the AT2 cell in an alveolus (white arrow), the Club cells in the terminal bronchiole, and the double-positive BASCs at the bronchioalveolar junction (yellow arrows). Dashed lines demarcate the airway. AT2, alveolar epithelial type II; BASC, bronchioalveolar stem cell; Scgb1a1, secretoglobin family 1A member 1; Sftpc, surfactant protein C; Scale bar, 20 \u03bcm. (F) PLISH in patient tissue samples for molecular analysis of human disease. PLISH staining for SFTPC (green) in non-IPF human lung (left) marks AT2 cells (white arrow) distributed within alveolar septae (dashed lines). The adjacent panels show a magnified image of healthy cuboidal AT2 cells (dashed circles). PLISH staining in IPF human lung (right) shows densely cellular regions with architectural distortion of alveolar septae (dashed lines). SFTPCHi AT2 cells are inappropriately clustered (white arrowheads) and have abnormal flattened morphologies, as seen at higher magnification in right panels (dashed ellipses). AT2, alveolar epithelial type II; IPF, Idiopathic Pulmonary Fibrosis; SFTPC, surfactant protein C; Scale bar, 100 \u03bcm.\n\nFirst, we analyzed murine lung sections for RNA expression of the ciliated-cell marker Forkhead box J1 (Foxj1), and the Club-cell marker Scgb1a1. Foxj1 is a low-abundance transcript with an FPKM value of 10 in ciliated cells, as measured by scRNA-seq (Treutlein et al., 2014). We observed single cells with multiple discrete Foxj1 puncta in the terminal bronchiolar epithelium, surrounded by numerous strongly Scgb1a1 positive cells (Figure 2B). These data establish PLISH's single-molecule and single-cell resolution in tissues, and its ability to detect low-abundance transcripts.\n\nSecond, we analyzed human lung FFPE sections for RNA expression of SCGB1A1, and for protein expression of the basal cell marker, Keratin 5 (KRT5). To do this, we appended two antibody incubation steps to the standard PLISH protocol. Strongly SCGB1A1 positive cells were localized to the lumen of the airways, overlying KRT5 positive cells (Figure 2C), matching the known anatomical distribution of Club and basal cells, respectively. These data establish PLISH's compatibility with simultaneous immunostaining, and with FFPE samples.\n\nThird, we analyzed murine lung sections for RNA expression of three genes: the AT2 cell marker Sftpc, the macrophage-enriched marker Lysozyme 2 (Lyz2), and Scgb1a1. Overlays of the three channels provided a striking visual depiction of the different cell types. Macrophages were bright in the Lyz2 channel, but absent in the other channels (Figure 2D). AT2 cells were bright in the Sftpc channel, moderately bright in the Lyz2 channel and absent in the Scgb1a1 channel (Figure 2D, white cells in the overlay). Club cells were very bright in the Scgb1a1 channel, but otherwise absent (Figure 2E). Finally, putative bronchioalveolar stem cells (Kim et al., 2005) (BASCs) were bright in the Sftpc channel with a weak punctate signal in the Scgb1a1 channel (Figure 2E). Thus, raw PLISH data can be interpreted without any computational processing, made possible by PLISH's exceptional signal-to-noise in tissues.\n\nWe also evaluated how PLISH performs in primary samples of diseased human tissue, to assess whether it will be useful for molecular analysis of the many human diseases that cannot be accurately modeled in animals. One example is idiopathic pulmonary fibrosis (IPF), a fatal lung disease of unknown pathogenesis (Travis et al., 2013). The diagnosis of IPF is based on the presence of specific histological features, including clusters of spindle-shaped fibroblasts, stereotyped 'honeycomb' cysts, and epithelial cell hyperplasia. In this regard, single-cell profiling approaches that operate on dissociated tissue (Xu et al., 2016) are intrinsically limited because they cannot correlate molecular data with cytologic and spatial features. As a preliminary test, we used PLISH to analyze RNA expression of the AT2 cell marker SFTPC in resected lung tissue from control and IPF patients. In contrast to the uniformly cuboidal SFTPC-expressing AT2 cells distributed throughout alveoli of non-IPF lungs (Figure 2F), we observed clusters of SFTPCHi cells of heterogeneous size and varying degrees of flattening lining the airspace lumen of IPF lungs. Surprisingly, many cells that did not appear to be epithelial (i.e., they were not lining an airway lumen) expressed SFTPC at low levels. Based on this pilot experiment, PLISH should be a suitable tool for building atlases of RNA expression in human disease. The PLISH data can be overlaid with monoclonal antibody staining patterns that are the mainstay of pathologic diagnosis and classification.\n\n### Multiplexed and iterative PLISH in tissues\n\nHighly multiplexed measurement of different RNA species requires iterated data collection cycles, since conventional fluorescence microscopy only provides up to five channels (Figure 3A). The data collection cycles include fluorescent labeling of a subset of the 'barcodes' (i.e., unique nucleotide sequences complementary to fluorescently labeled 'imager' oligonucleotides) in a sample, imaging of the labeled transcripts, and erasure of the fluorescent signal. Ideally, the cycles should be fast, and the erasure should not cause any mechanical or chemical damage to the sample. Consistent with prior work, we found that PLISH puncta could be imaged in the presence of a 3 nM background of freely-diffusing imager oligonucleotides (Figure 3\u2014figure supplements 1A and [Blab et al., 2004]). This allowed us to streamline data collection by eliminating a wash step, and also presented a simple erasure strategy. By using short imager oligonucleotides that equilibrate rapidly on and off of RCA amplicons (Jungmann et al., 2014), we could erase fluorescence from a previous cycle by a simple buffer exchange (Figure 3\u2014figure supplement 1B). We also established an erasure method based on uracil-containing imager oligonucleotides, which were removed with a 15 min enzymatic digestion (Figure 3\u2014figure supplement 1C). Thus, we could image PLISH puncta in five different color channels with spectrally-distinct fluorophores, and we were able to complete cycles in as little as 20 min, which approaches the cycle time of an Illumina MiSeq instrument (https://support.illumina.com).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig3-v3.jpg)\n\n**Figure 3.:** (A) Multiplexed PLISH experimental workflow. Probes for many different RNAs are hybridized and amplified in a single reaction. The PLISH amplicons marking four RNA species are then labeled with four fluorescent imager oligonucleotides, imaged on a microscope, and 'erased' by elimination of the imager oligonucleotides. Amplicons marking a different subset of four RNAs are then labeled with four new imager oligonucleotides, imaged, and erased. This cycle is repeated until all of the RNA species have been visualized and photo-documented. The images are automatically aligned and processed, and the signal for each RNA species in each cell is summed to produce single-cell expression profiles. Unsupervised k-means clustering of the expression profiles (or other computational tools) empirically identifies distinct cell classes. t-SNE plots (or other data visualization tools) show the differences in gene expression and the classification for all of the cells in a tissue. The location of individual cells or cell classes is spatially remapped onto images of the tissue in order to integrate molecular, histological, and spatial features. (B) A multiplexed PLISH data set. Eight different transcripts in mouse lung were visualized with two label-image-erase cycles. A micrograph for each channel in one field of view is shown. Solid lines indicate the basal surface of airways and dashed lines indicate alveolar septae. Actb, beta actin; Ager, advanced glycosylation end product-specific receptor; Ftl1, ferritin light polypeptide 1; Gapdh, glyceraldehyde-3-phosphate dehydrogenase; Lyz2, lysozyme 2; Scgb1a1, secretoglobin family 1A member 1; Sftpc, surfactant protein C; Xist, inactive X specific transcripts. Scale bar, 80 \u03bcm. (C) Automated cell classification. K-means clustering partitions\u00a0~2900 single cells into one of ten molecularly distinct classes, with the expression profile of each cluster centroid displayed in a heat map. Based on marker gene expression, individual clusters were inferred to be macrophages (mac, white), two classes of AT2 cells (light and dark green), two classes of Club cells (light and dark cyan), AT1 cells (red), and four categories of unassigned cell types (shades of blue, purple, and orange). (D) An overview of the cells in a murine lung. Differences in gene expression for\u00a0~2900 cells are displayed as a two-dimensional t-SNE plot. Each cell is represented by a single dot, colored according to its cluster assignment. Labels mark the location of each cell class. The yellow arrowhead indicates a small island of cells that exhibit the profile of BASCs. AT1, alveolar epithelial type I cell; AT2, alveolar epithelial type II cell; BASC, bronchioalveolar stem cell; Mac, macrophage.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Imaging with and without washout of fluorophore-labeled 'imager' oligonucleotides gives identical signal-to-noise ratios. Mouse lung tissue sections were interrogated with a single PLISH probe pair targeting Sftpc (green). In the top panel, the tissue section was hybridized with 100 nM imager oligonucleotides then washed (to remove excess imager oligonucleotides) prior to imaging, which took 30\u201360 min. In the bottom panel, the tissue section was hybridized with 3 nM imager oligonucleotides then imaged without a wash step, taking only 5 min. Bronchioles indicated by dashed lines. Sftpc, surfactant protein C; Scale bar, 40 \u03bcm. (B) Signal erasure by dissociation of short imager oligonucleotides. PLISH puncta for Sftpc (green) were visualized with short (11 base pair) imager oligonucleotides (first column). The signal was then erased by washing at 37\u00b0C for 15 min and re-imaged (middle column), showing no residual fluorescence. The sample was then re-stained with short imager oligonucleotides and re-imaged (third column), showing re-emergence of the fluorescent signal. The cycle time was 25 min. Bronchioles indicated by dashed lines. Sftpc, surfactant protein C; Scale bar, 40 \u03bcm. (C) Signal erasure by enzymatic digestion of imager oligonucleotides. PLISH puncta for Xist (green) were visualized in mouse lung with uracil-containing imager oligonucleotides (left panel). The tissue section was then incubated with the New England Biolabs USER enzyme cocktail at 37\u00b0C for 20 min to digest the imager oligonucleotides and re-imaged (middle panel), then re-stained with a new set of imager oligonucleotides for Ager (green, right panel). The cycle time was 25 min. Ager, advanced glycosylation end product-specific receptor; Xist, inactive X specific transcripts; Scale bar, 20 \u03bcm.\n\nTo demonstrate and validate the multiplexing capacity of PLISH, we co-localized the mRNA of eight selected genes in\u00a0~2900 single cells from an adult mouse lung (Figure 3B). Our panel included four commonly used lung cell type markers that have been previously characterized, and four ubiquitously expressed genes. The targeted transcripts were Sftpc (AT2 cells), advanced glycosylation end product-specific receptor (Ager, AT1 cells), Scgb1a1 (Club cells), Lyz2 (macrophage and AT2 cell subset), ferritin light polypeptide 1 (Ftl1), beta actin (Actb), inactive X specific transcripts (Xist), and glyceraldehyde-3-phosphate dehydrogenase (Gapdh). The eight RNA species were barcoded in a single PLISH reaction, and the data were collected with a pair of label-image-erase cycles using the enzymatic erasure approach described above (Figure 3A). A nuclear counterstain (DAPI) and transmitted light micrograph were also obtained.\n\nTo quantify the expression of all eight genes on a per-cell basis, we created a PLISH-specific pipeline in CellProfiler, an open-source software package (Kamentsky et al., 2011). The pipeline first identified nuclei in the DAPI channel, which were used as anchor points for expansion to full-cell assignments. Fortuitously, the bulk of the detected mRNAs in AT1 cells, which have an extremely flat and broad morphology, were clustered around the nuclei. We summed the PLISH signal for each gene in the nuclear and peri-nuclear regions of each cell, and saved the results as single-cell expression profiles indexed on anatomical location. We also created a utility to pseudocolor cells in a transmitted light micrograph according to their inferred cell type (see below), so that we could visualize the relationship between cellular gene expression and anatomical localization.\n\n### Automated cell classification and insights into lung biology\n\nAn important scientific challenge is to identify and map all of the molecularly distinct cell types that make up complex tissues, and in situ single-cell profiling should be a powerful tool for working towards this goal. As a proof-of-concept for this, we asked whether known lung cell types could be rediscovered by an automated and unsupervised analysis of our multiplexed PLISH data set. We used two standard data analysis tools, K-means clustering (Figure 3C) and t-distributed stochastic neighbor embedding (van der Maaten and Hinton, 2008) (t-SNE, Figure 3D), to classify and visualize the entire population of cells. The automated analysis identified ten cell classes, four of which were labeled 'other' because they were defined primarily by 'signature' profiles of ubiquitously-expressed genes. The remaining six classes were associated with a known lung cell type based on marker-gene expression. The Sftpc and Scgb1a1 positive cell classes were labeled as AT2 and Club, respectively, while the Lyz2 positive class was labeled as macrophage (one of the two AT2 cell classes was also Lyz2 positive as previously reported in (Desai et al., 2014), Figure 4\u2014figure supplement 1A). The cell class with the highest Ager expression was labeled as AT1, but Ager mRNA was also detected in a subset of AT2 and Club cells, and in one of the four 'other' cell classes, indicating it is not particularly specific for AT1 cells. We validated the PLISH results by indirect immunohistochemistry (Figure 4\u2014figure supplement 1B) and by comparison with previously published scRNA-seq data (Figure 4\u2014figure supplement 1C), which confirmed the low specificity of Ager for AT1 cells. We also analyzed the RNA expression of Akap5, another transcript that is highly-enriched in AT1 cells (Treutlein et al., 2014), and found that its localization correlated closely with Ager's (Figure 4\u2014figure supplement 1D).\n\nFor a higher-resolution analysis of cellular gene expression, we examined the expression pattern of individual genes in re-colored t-SNE plots (Figure 4A). We found a small cloud of cells between the Club and AT2 clusters that expressed both Sftpc and Scgb1a1. On the basis of this dual expression, we assigned them as the BASC type (Kim et al., 2005). We also noted that Lyz2 expression partitioned the AT2 cells into two classes designated Lyz2+ and Lyz2-, while Actb segregated Club cells into two classes designated ActbHi and ActbLo. Gapdh was the most uniformly expressed transcript, consistent with its role as a 'housekeeping' gene (Figure 4B). Ftl1 expression was highest in alveolar macrophages, as expected, where it is believed to play a role in processing iron from ingested red blood cells (McGowan and Henley, 1988). Unexpectedly, Ftl1 was also highly expressed in Club cells. Actb expression was highest in macrophages, presumably because of its functional role in motility, and in AT1 cells, which must maintain a flat morphology and expansive cytoskeleton (Foster et al., 2010).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig4-v3.jpg)\n\n**Figure 4.:** (A) Specificity and promiscuity in marker gene expression. t-SNE plots are colored according to the expression of four cell-type marker genes. High expression (yellow) in the first two panels highlights AT2 and Club cells, as indicated, while the arrowhead indicates rare double-positive BASCs. The third panel shows high levels of Ager in AT1 cells (arrow), but promiscuous expression in a subset of AT2, Club1 and Otherb cell classes (red arrowheads). Lyz2 expression in the fourth panel is restricted to the macrophage and AT21 classes. Note that differential Lyz2 expression splits the canonical AT2 cell type into two sub-classes (AT21 and the AT22). (B) Differential expression of 'housekeeping' genes in canonical cell types. t-SNE plots are colored according to the expression of three ubiquitous 'housekeeping' genes. Gapdh (left) is the most evenly and broadly distributed, while Ftl1 (middle) is highest in the macrophage and Club cell classes. Actb is the\u00a0highest in the macrophage and AT1 cell classes. Unexpectedly, differential Actb expression splits the canonical Club cell type into two sub-classes (Club1 and Club2). (C) Spatial organization of lung cell classes. The nuclei of cells in a transmitted light image of a bronchioalveolar duct junction (BADJ) are pseudocolored according to their basic cluster assignment. The Club class (cyan) localizes to the bronchial epithelium, while the AT1 (red) and AT2 (green) cell classes are distributed throughout the alveolar compartment. The macrophage class (white) is primarily found in the alveolar lumen. Rare BASCs (yellow) localize precisely to the bronchioalveolar junctions (arrow), where they have been shown to reside by immunostaining (Kim et al., 2005) (Figure 4C and Figure 4\u2014figure supplement 1E). This image demonstrates how PLISH can be used to localize specific cells of interest within their anatomical context. Solid lines indicate the basal surface of airways and dashed lines demarcate alveolar septae. Scale bar, 80 \u03bcm. (D) Spatial organization in the terminal airway. The nuclei in three terminal airway fields of view are pseudocolored according to their cluster assignment. Note the presence of both Club1 and Club2 cell classes (light and dark cyan), and all four Other cell classes. The Otherd class (orange) is enriched in pulmonary arteries, indicated by black dashed lines, and therefore might represent endothelial or perivascular cells. Solid lines indicate the basal surface of airways, black dashed lines indicate pulmonary arteries, and dashed white lines demarcate alveolar septae. Ar, artery; Scale bar, 80 \u03bcm. (E) Two sub-classes of Club cells, defined by a difference in Actb expression, segregate anatomically. Club cells in the three fields of view from panel D are pseudocolored with enhanced contrast, revealing a striking spatial pattern. The Club1 sub-class (cyan, ActbHi AgerLo) localizes to the BADJ, whereas the Club2 sub-class (blue, ActbLo Ager\u2013) segregates more proximally in the terminal airways. Differential Actb expression might reflect region-specific differences in mechanical stress. The integration of molecular and spatial information in this image reveals biology that would be missed with either piece of information alone. Solid lines indicate the basal surface of airways, black dashed lines indicate pulmonary arteries, and dashed white lines demarcate alveolar septae. Ar, artery; BADJ, bronchioalveolar duct junction; Scale bar, 80 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/30510/elife-30510-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Lyz2+/EGFP mouse lung stained with anti-GFP (green) to mark Lyz2+ cells, anti-Sftpc (red, AT2), and anti-Cdh1 (white, epithelial) discriminates three cell populations. Macrophages (arrowhead, Lyz2+ Sftpc- Cdh1-), AT21 (Sftpc+ Lyz2+ Cdh1+) and AT22 (Sftpc+ Lyz2- Cdh1+). AT2 cells indicated by arrows. Dashed line indicates basal surface of bronchiole. AT2, alveolar epithelial type II; Mac, macrophage; Cdh1, cadherin 1; Lyz2, lysozyme 2; Sftpc, surfactant protein C; Scale bar, 40 \u03bcm. (B) Anti-Ager (red) labels the apical surface of cells in the bronchial epithelium (arrowheads). Dashed lines indicate the basal surface of airways. Ager, advanced glycosylation end product-specific receptor; BADJ, bronchioalveolar duct junction; Scale bar, 20 \u03bcm. (C) Heat-map of single cell RNA-sequencing (Treutlein et al., 2014) of Club (cyan bar) and AT2 (green bar) cells shows low expression of Ager in a subset of cells from both populations, supporting demonstration by PLISH of promiscuous expression of this AT1 cell marker. Note also broad expression of Lyz2 by AT2 cells (see t-SNE of Ager and Lyz2 in Figure 4A). AT1, alveolar epithelial type I; AT2, alveolar epithelial type II; Ager, advanced glycosylation end product-specific receptor; Lyz2, lysozyme 2. (D) Mouse lung co-stained for known (Ager, green) and novel (Treutlein et al., 2014) (Akap5, red) AT1 markers by PLISH. Arrowheads indicate representative AgerHi AT1 cells also expressing Akap5. Area in dashed box shown enlarged in right panels. Dashed lines demarcate alveolar septae. AT1, alveolar epithelial type I; Ager, advanced glycosylation end product-specific receptor; Akap5, A-Kinase Anchoring Protein 5; Scale bars, 50 \u03bcm. (E) Mouse lung stained with anti-Scgb1a1 (green) and anti-Sftpc (red) shows double positive BASCs (yellow arrowheads) localized to the BADJ. Dashed lines indicate the basal surface of airway epithelium; BADJ, bronchioalveolar duct junction; Scgb1a1, secretoglobin family 1a member 1; Sftpc, surfactant protein C; Scale bar, 40 \u03bcm.\n\nTo validate the PLISH results, we pseudocolored the cells in transmitted-light images according to their class (Figure 4C\u2013D). Importantly, no spatial information was included in the k-means clustering. Several observations confirmed the accuracy of the automated classification. First, the Club cell class mapped perfectly onto the bronchial epithelium, while cells from the AT1 and AT2 classes were distributed throughout the alveolar compartment. The rare BASCs also localized precisely to the bronchioalveolar junctions, where they have been shown to reside by immunostaining (Kim et al., 2005) (Figure 4C and Figure 4\u2014figure supplement 1E). The macrophage class was primarily found inside the alveolar lumen, and many exhibited a characteristic rounded cell shape. The Otherd class of cells was enriched in pulmonary arteries, and therefore might represent endothelial or perivascular cells. We further observed a striking spatial segregation of the two Club cell classes. ActbHi Club cells clustered together at the bronchial terminus, while ActbLo Club cells populated more proximal domains (Figure 4D\u2013E). While the significance of this pattern is not immediately obvious, it emphasizes how PLISH can readily integrate molecular and spatial features of single cells to generate insights that would be missed with either piece of information alone.\n\n## Discussion\n\nPLISH represents a practical technology for multiplexed expression profiling in tissues. It combines high performance in four key areas: specificity, detection efficiency, signal-to-noise and speed. The specificity derives from coincidence detection, which requires two probes to hybridize next to one another for signal generation. Efficient detection of low-abundance transcripts is accomplished by targeting multiple sites along the RNA sequence. Enzymatic amplification produces extremely bright puncta, and allows many different RNA transcripts to be marked with unique barcodes in one step. The different RNA transcripts can then be iteratively detected to rapidly generate high dimensional data.\n\nWhile low-plex PLISH on a handful of different genes can be valuable, the PLISH technology is also scalable, without requiring specialized microscopes (or other equipment), software, or computational expertise. The oligonucleotides and enzymes are inexpensive and commercially available from multiple vendors. The H probes are the cost-limiting reagent, but can be synthesized in pools (Murgha et al., 2014; Beliveau et al., 2012). Assuming five pairs of H probes for each target RNA species, and 20 cents for a 40mer oligonucleotide, the cost of PLISH reagents amounts to $3 per gene. It should therefore be practical to simultaneously interrogate entire molecular systems, such as signaling pathways or super-families of adhesion receptors. The high specificity and signal-to-noise of PLISH will be advantageous for deep profiling, where non-specific background increases with increasingly complex mixtures of hybridization probes (Moffitt et al., 2016c).\n\nOur initial studies demonstrate PLISH's capacity for rapid, automated and unbiased cell-type classification, and illustrate how it can complement single-cell RNA sequencing (sc-RNAseq). Sc-RNAseq offers greater gene depth than in situ hybridization approaches, but it is less sensitive, fails to capture spatial information, and induces artefactual changes in gene expression during tissue dissociation (van den Brink et al., 2017; Lee et al., 2015). PLISH provides the missing cytological and spatial information, and it is applied to intact tissues. Going forward, sequencing can be used to nominate putative cell types and molecular states based on the coordinate expression of 'signature genes', and multiplexed PLISH can be used to distinguish true biological variation from technical noise and experimentally-induced perturbations. Importantly, multiplexed PLISH provides the tissue context of distinct cell populations, which is essential for understanding the higher-order organization of intact systems like solid tumors and developing organs. In diseases like IPF where morphology and gene expression are severely deranged (Xu et al., 2016), histological, cytological and spatial features may even be essential for making biological sense of sequencing data.\n\nCurrently, efforts are underway to more deeply characterize cellular states by integrating diverse types of molecular information. We have already demonstrated the combined application of PLISH with conventional immunostaining. Going one step further, oligonucleotide-antibody conjugates make it possible to mix and match protein and RNA targets in a multiplexed format (Weibrecht et al., 2013). The generation of comprehensive, multidimensional molecular maps of intact tissues, in both healthy and diseased states, will have a fundamental impact on basic science and medicine.\n\n## Materials and methods\n\n### Materials\n\nUnless otherwise specified, all reagents were from Thermo-Fisher and Sigma-Aldrich. Oligonucleotides were purchased from Integrated DNA Technologies. T4 polynucleotide kinase, T4 ligase, USER enzyme and their respective buffers were purchased from New England Biolabs. Nxgen phi29 polymerase and its buffer were purchased from Lucigen.\n\nAbbreviations: BSA, bovine serum albumin; DAPI, 4,6-diamidino-2-phenylindole; DEPC, diethylpyrocarbonate; EDTA, ethylenediaminetetraacetic acid; min, minutes; PBS, phosphate buffered saline; PFA, paraformaldehyde; RCA, rolling circle amplification; RT, room temperature. All oligonucleotide sequences are listed in Supplementary file 1.\n\n### Sample preparation\n\nHCT116 cells (ATCC; CCL-247) were authenticated by HLA typing and confirmed negative for Mycoplasma contamination using PCR. Cells were grown on poly-lysine coated #1.5 coverslips (Fisherbrand 12\u2013544 G) using standard cell culture protocols until they reached the desired confluency. The cells were rinsed in 1X PBS and fixed in 3.7% formaldehyde with 0.1% DEPC at RT for 20 min. The fixed cells were treated with 10 mM citrate buffer (pH 6.0) at 70\u00b0C for 30 min, dehydrated in an ethanol series, then enclosed by application of a seal chamber (Grace Biolabs 621505) to the coverslip.\n\nLungs were collected from adult B6 mice (Jackson Labs) and fixed by immersion in 4% PFA as previously described (Desai et al., 2014). Non-IPF human lung tissue was obtained from a surgical resection, and IPF tissue from an explant. All mouse and human research were approved by the Institutional Animal Care and Use Committee and Internal Review Board, respectively, at Stanford University. The tissues were fixed by immersion in 10% neutral buffered formalin in PBS at 4\u00b0C overnight under gentle rocking, cryoprotected in 30% sucrose at 4\u00b0C overnight, submerged in OCT (Tissue Tek) in an embedding mold, frozen on dry ice, and stored at \u221280\u00b0C. 20 \u03bcm sections were cut on a cryostat (LeicaCM 3050S) and collected on either poly-lysine coated #1.5 coverslips or glass slides (Fisherbrand Superfrost), air dried for 10 min, and post-fixed with 4% PFA at RT for 20 min. The human lung tissue in Figure 2A was formalin-fixed and paraffin-embedded (FFPE) according to standard protocols, and 20 \u03bcm sections were cut on a microtome and collected on glass slides. The FFPE sections were deparaffinized by immersion in Histoclear (National Diagnostics, HS-200) for 3 \u00d7 5 min, then dehydrated in an ethanol series and post-fixed with 4% PFA at RT for 20 min. Tissue sections were treated with 10 mM citrate buffer (pH 6.0) containing 0.05% lithium dodecyl sulfate at 70\u00b0C for 30 min, or in some experiments, with 0.1 mg/ml Pepsin in 0.1M HCl for 8 min at 37\u00b0C and dehydrated in an ethanol series. Following treatment, sections were air dried for 10 min and enclosed by application of a seal chamber.\n\n### PLISH probe design and preparation\n\nTarget RNAs were probed at\u00a0~40 nucleotide detection sites, with 1 to 10 sites per RNA species depending on expression level. NCBI BLAST searches were used to eliminate detection sites that shared 10 or more contiguous nucleotides with a non-target RNA. The detection sites were also selected to minimize self-complementarity as indicated by the IDT oligo analyzer. Each detection site was targeted with a pair of H probes designated HL (left H probe) and HR (right H probe). The HL and HR probes included\u00a0~20 nucleotide binding sequences that were complementary respectively to the 5' and 3' halves of the detection site. The binding sequences were chosen so that the 5' end of the HL binding sequence and the 3' end of the HR binding sequence would abut at a 5\u2019-AG-3\u2019 or a 5\u2019-TA-3\u2019 dinucleotide in the target RNA. The lengths of the binding sequences were adjusted so that the melting temperature of the corresponding DNA duplex would fall between 45\u201365\u00b0C as computed by IDT Oligo analyzer using default settings of 0.25 \u03bcM oligo concentration and 50 mM salt concentration. To generate H probes, suitable HL and HR binding sequences were catenated at their respective 5' and 3' ends with overhang sequences taken from one of eight modular design templates (Supplementary file 1). The left and right overhang sequences in each design template were complementary to a specific bridge (B) and circle (C) oligonucleotide, which directed a desired fluorescent readout. The design templates reported here utilized a common 31 base oligonucleotide for the bridge. Following previous work (S\u00f6derberg et al., 2006), the circle oligonucleotides were\u00a0~60 bases long with 11 base regions of complementarity to cognate H probes on either end. The circle sequences were chosen to minimize self-complementarity. Each imager oligonucleotide was complementary to a barcode embedded in one of the C oligonucleotides, allowing unique detection of the corresponding RCA amplicon.\n\nThe H-probe oligonucleotides were ordered on a 25 nanomole scale with standard desalting. The B and C oligonucleotides were ordered on a 100 nanomole scale with HPLC purification, and phosphorylated with T4 polynucleotide kinase according to the manufacturer recommendations. Imager oligonucleotides were purchased either as HPLC-purified fluorophore conjugates (A488, Texas Red, Cy3, Cy5), or as amine-modified oligonucleotides that were subsequently coupled to Pacific Blue-NHS ester according to the manufacturer recommendations.\n\n### PLISH barcoding procedure\n\nSix buffers were used for PLISH barcoding: H-probe buffer (1M sodium trichloroacetate, 50 mM Tris pH 7.4, 5 mM EDTA, 0.2 mg/mL Heparin), bridge-circle buffer (2% BSA, 0.2 mg/mL heparin, 0.05% Tween-20, 1X T4 ligase buffer in RNAse-free water), PBST (PBS\u00a0+\u00a00.1% Tween-20), ligation buffer (10 CEU/\u03bcl T4 DNA ligase, 2% BSA, 1X T4 ligase buffer, 1% RNaseOUT and 0.05% Tween-20 in RNAse-free water), labeling buffer (2x SSC/20% formamide in RNAse-free water), and RCA buffer (1 U/\u03bcl Nxgen phi29 polymerase, 1X Nxgen phi29 polymerase buffer, 2%BSA, 5% glycerol, 10 mM dNTPs, 1% RNaseOUT in RNAse-free water).\n\nAn H cocktail was prepared by mixing H probes in H-probe buffer at a final concentration of 100 nM each. If an RNA was targeted with more than five probe sets, the concentrations of the H probes for that RNA were pro-rated so that their sum did not exceed 1000 nM. A BC cocktail was also prepared by mixing B and C oligonucleotides in bridge-circle buffer at a final concentration of 6 \u03bcM each.\n\nSingle-step barcoding was performed in sealed chambers. The workflow consisted of three steps: (i) The sample was incubated in the H cocktail at 37\u00b0C for 2 hr. The sample was then washed 4 \u00d7 5 min with H-probe buffer at RT, and incubated in the BC cocktail at 37\u00b0C for 1 hr. (ii) Following a 5 min wash with PBST at RT, the sample was incubated in ligation buffer at 37\u00b0C for 1 hr. (iii) The sample was washed 2 \u00d7 5 min with labeling buffer at RT, and washed with 1X Nxgen phi29 polymerase buffer at RT for 5 min. The sample was then incubated in RCA buffer at 37\u00b0C for 2 hr (typical for cultured cells) to overnight (typical for tissue). Finally, the sample was washed 2 \u00d7 5 min with labeling buffer.\n\n### Imaging\n\nBarcoded PLISH samples were fluorescently labeled by two different procedures, designated 'washout' and 'fast'. In the washout procedure, the sample was incubated with imager oligonucleotides in imager buffer (labeling buffer with 0.2 mg/mL heparin) at a final concentration of 100 nM each for 30 min, and then washed 2 \u00d7 5 min with PBST at RT. In the fast procedure, the sample was incubated for 5 min with imager oligonucleotides in imager buffer at a final concentration of 3 nM each, and then imaged immediately. Samples that did not require label-image-erase cycles were stained with DAPI (stock 1 mg/ml; final concentration - 1:1000 in PBS) for 5 min and mounted in H-1000 Vectashield mounting medium (Vector).\n\nData were collected by confocal microscopy (Leica Sp8 and Zeiss LSM 800) using a 40X oil immersion or a 25X water immersion objective lens. 20 \u03bcm z-stacks were scanned, and maximum projection images were saved for analysis. For 5-color experiments, DAPI was added after the Pacific Blue channel had been imaged, and the Texas Red and Cy3 channels were linearly unmixed using Zeiss software. Transmitted light images were acquired on a Leica Sp8 confocal microscope using the 488 nm Argon laser and the appropriate PMT-TL detector. Images from serial rounds of data collection were aligned using the nuclear stain from each round as a fiducial marker. Unless otherwise stated, imaging data of cells and mouse lung tissue are representative of three independent experiments with\u00a0\u22654 fields of view each. Imaging data of human lung tissue are representative of two independent experiments with\u00a0\u22654 fields of view each.\n\n### PLISH and HCR co-localization\n\nHCR was performed following a published protocol (Choi et al., 2014) with probes that targeted two sites covering nucleotides 621\u2013670 and 1159\u20131208 in the mouse Axin2 transcript, and AlexaFluor 488-/AlexaFluor 647-labeled amplifier oligonucleotides. The samples were then processed for PLISH with H probes targeting four sites covering nucleotides 347\u2013386, 1878\u20131917, 2412\u20132451 and 2956\u20132995 in the Axin2 transcript, and imaged using a Cy3-labeled imager oligonucleotide.\n\n### PLISH with concurrent immunohistochemistry\n\nPLISH barcoding was performed as described above. Subsequently, the sample was washed 3 \u00d7 5 min with PBST at RT, and incubated in blocking solution (50 \u03bcl/ml [5%] normal goat serum, 1 \u03bcl/ml [0.1%] Triton X-100, 5 mM EDTA and 0.03 g/ml [3%] BSA in PBS) at RT for 1 hr. The sample was then incubated with primary antibody (Rabbit anti-pro-Sftpc, Millipore, 1:500 or Rabbit anti-Cytokeratin 5, Abcam Ab193895, 1:400) in blocking solution at 37\u00b0C for 2 hr under gentle rocking, washed 4 \u00d7 5 min with PBST at RT, and incubated with secondary antibody (Goat anti-Rabbit-Cy5, Jackson Lab, 1:250) and DAPI (1:1000) in blocking solution at RT for 1 hr. The sample was washed 3 \u00d7 5 min in PBST at RT and mounted in H-1000 Vectashield.\n\n### Antisense blocking oligonucleotide\n\nMouse lung tissue cryosections were collected on slides, post-fixed and processed as described above. The samples were incubated with a 60-base oligonucleotide complementary to nucleotides 219\u2013278 in the Scgb1a1 mRNA, or with a scrambled 60-base oligonucleotide, at 100 nM final concentration in H-probe buffer at 37\u00b0C for 2 hr. The samples were then washed 2 \u00d7 5 min with H-probe buffer at RT, and processed for PLISH using H probes that targeted nucleotides 229\u2013268 in the Scgb1a1 transcript.\n\n### Signal erasure for iterative cycles of PLISH\n\nTo perform enzymatic erasure, 15\u201320 base imager oligonucleotides were ordered with the dT nucleotides replaced by dU nucleotides. Following imaging, the signal was erased by incubating the sample with 0.1 U/\u03bcL USER enzyme in 1X USER enzyme buffer at 37\u00b0C for 20 min, followed by washing 2 \u00d7 3 min with PBST at RT. To perform rapid erasure, short 10\u201311 base oligonucleotides were ordered. Following imaging, the signal was erased by incubating the sample with PBST at 37\u00b0C for 15 min.\n\n### Correlative immunostaining\n\nLungs collected from B6 and the Lyz2+/EGFP mouse strains (Faust et al., 2000) were fixed and immunostained as whole mounts as previously described (Desai et al., 2014). Primary antibodies were chicken anti-GFP (Abcam ab13970), rat anti-Ecad/Cdh1 (Invitrogen ECCD-2), goat anti-Scgb1a1 (gift from Barry Stripp), rabbit anti-pro-Sftpc (Chemicon AB3786), and rat anti-Ager (R and D MAB1179). Fluorophore-conjugated secondary antibodies raised in Goat (Invitrogen) or Donkey (Jackson Labs) were used at 1:250 and DAPI at 1:1000.\n\n### Data analysis\n\nFIJI was used to pseudocolor unprocessed micrographs for display as three-color overlays. A custom CellProfiler (Kamentsky et al., 2011) pipeline (Source code 1) was created to measure RNA signal intensities at the single-cell level. Briefly, the centers of cell nuclei were first identified as maxima in a filtered DAPI image, and associated with a numerical index. Nuclear boundaries were assigned by a propagation algorithm, and then expanded by\u00a0~1 micron to define sampling areas. The following data were then recorded: (i) average pixel intensities for each data channel over each sampling area; (ii) the coordinates of the sampling areas; (iii) shape metrics for the corresponding nuclei; and (iv) an image with the boundary pixels of each nucleus set equal to the associated index value. For each RNA species, the PLISH data were first normalized onto a 0:10 scale by dividing through by the largest value observed in any cell over all of the fields of view, and then multiplying by ten. The data were then log-transformed onto a \u22121:1 scale by the operation: transformed_data\u00a0=\u00a0log(0.1\u00a0+\u00a0normalized_data). Custom Matlab scripts were used to perform hierarchical clustering of the log-transformed single-cell expression profiles, to generate heatmaps, and to create images with the boundary pixels of each nucleus colored according to a cluster assignment (Source code 1). Custom R scripts were used for k-means clustering and to make t-SNE projection plots (Source code 1).\n",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "7cbf04b2-d85b-4d7d-a9f1-1f6c9aa7ddaf",
+      "submission_id": "dd32735a-a7ea-49f3-b0cc-a8103581c4e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jay Rajagopal, Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.30510.018](https://doi.org/10.7554/eLife.30510.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Automated cell type classification in intact tissues by single-cell molecular profiling\" for consideration by eLife. Your article has been evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWhile all three reviewers agree that the techniques presented in this manuscript are valuable to the community, all three note there is no substantive biological advance in terms of new knowledge. Furthermore, the imaging data requires improvement as below and low-level transcript detection might add to this paper that should be published in a methods journal. Additionally, novel markers and their expression pattern should be described even in a methods paper.\n\nReviewer #1:\n\nIn this study, Nagendran et al. validate the use of an improved version of RNA in situ hybridization that they name PLISH, which utilizes rolling circle amplification rather than the proprietary amplification procedures commercially available (i.e. RNAScope, ViewRNA, etc.), thus providing an accessible tool for the broad scientific community. They demonstrate sensitivity and specificity of PLISH, as well as an application in tissue as opposed to only cultured cells.\n\nHowever, they make many claims that are not supported by the data and are not particular improvements on previous technology. For example, PLISH puncta in tissues are not on par with IF, and do not offer any subcellular resolution. They go on to use a clever approach to multiplexing and image analysis that overly complicates the presentation of a few data points attempting to mimic the computational approaches necessary for scRNASeq data. The novelty suggested in the cover letter with regard to new cell types is not reflected in the manuscript or the data.\n\nThis work is much better suited to a methods journal, as there is no exploratory work, and only validation and confirmation of what was already known. Overall, PLISH seems to be a poor-man's RNAScope/ViewRNA/etc\u2026 without the commercialization and therefore cost. While this is a great thing, some of the technical terms thrown around seem to be an attempt to differentiate PLISH from technologies upon which it is only building, not pioneering.\n\n1) Pixels in tissue images look highly saturated/blurry, even DAPI \u2013 why?\n\n-Does not help support claims of superior resolution/is not subcellular.\n\n2) PLISH gives puncta, as described, in cells, but looks like weak IF in tissues with no clear subcellular resolution (which is a major claim in the Introduction).\n\n3) Scale bars need to be in every separate image, especially in diseased vs. normal e.g. Figure 2.\n\n4) Dotted lines outlining relative structures, such as basement membrane/lumen, would make it easier to follow.\n\n5) Define \"technical terms\" if this is to be \"biologist friendly\" \u2013 \"imager oligonucleotide\" is not clear without a search in the Materials and methods. Workflow in Figure 4 is not readily apparent or obvious. As a major aspect of PLISH, this would be easier appreciated if described more thoroughly.\n\n6) Usage of terms like \"barcode\" and \"imager nt\" make something that is not complex much more complicated and \"jargon-y\" than necessary. \"RCA followed by hybridization of a fluorescently labeled nt probe\" would be much simpler.\n\n7) The inclusion of number of cells (2900) and visualization of the data in tSNE plots deceivingly equates PLISH to a sequencing approach, rather than a standard snapshot visualization tool.\n\n8) Higher mag images are needed for Figure 3A-C to support the claim that this is \"on par with IF\" \u2013 the current images are not on par with IF and hardly support the presence of a putative BASC, while the IF in Figure 4\u2014figure supplement 2E is much clearer.\n\n9) Figure 3DE \u2013 what is the \"other\"? How does is fit in with what we already know, since these are a set of well-characterized genes? Should rework the text/figure in 3D to better lead into the application of this aspect of PLISH in Figure 4.\n\nGeneral comments:\n\nOverall, this is a highly technical paper that defines a tool. The authors clearly realize this, as they have filed a patent on PLISH. The concept is interesting and its application has great potential, yet it is not as excitingly novel as the text implies. While indeed an improvement on current technologies, this is fit for a methods report rather than a scientific article. The data are confirmatory rather than exploratory, and serve mainly as tool validation.\n\nThe focus on BASCs does not help the authors' case, as these are a controversial cell type not found in humans, and the IF images were more convincing than the PLISH data.\n\nIf the authors tackled more profound and subtle questions with PLISH, and in human samples (such as identifying the human BASC), then this would be less a tools paper and more a scientific article.\n\nFinally, the overall tone describing this technology is overly ambitious and exceedingly strong. While this is fantastic work at method development and optimization (as well as creating accessibility), it falls short of being an original research article. The cover letter overstates the novelty.\n\nReviewer #2:\n\nThis manuscript tackles an important question: how to obtain spatial information about RNA expression in a high-throughput fashion. It presents a technique the authors call PLISH which is an improved variation of the \"in situ sequencing\" technique published in 2013. The manuscript convincingly demonstrates that in cultured cells the PLISH technique can detect a variety of transcripts which are expressed at different levels and that PLISH detection levels correlate extremely well with FPKM values obtained by RNA-seq. In addition, they provide proof-of-principle that in tissue sections their technique can be used in a multiplex fashion to detect highly-expressed transcripts with very good specificity e.g. the blocking of the Scgb1a1 signal by antisense oligos, but not scrambled oligos, in Figure 1F is very impressive given how highly Scgb1a1 is transcribed.\n\nBeyond Figure 1, the additional experiments presented all show that the PLISH technique works well in mouse and human lung sections (which are complex tissues) when highly-expressed mRNAs are detected.\n\nHowever, no biological insights are presented. For example, Figure 2 shows that the technique basically works in formalin-fized paraffin embedded human samples using extremely highly expressed transcripts, but these results had previously been obtained by immunostaining so no biological insights are presented. Note: the cell shape changes that are described in the text for SpC+ cells are not visible in the image on the merged pdf.\n\nThe analysis of adult mouse lungs \u2013 Figures 3 and 4 is a bit disappointing. This is solid proof-of-principle that the PLISH technique works. However, these transcripts are all highly expressed \u2013 no real biological insights are gained at all here. To publish in eLife I would at least expect to see low level transcripts detected, or some new biology, in addition to the proof of principal work shown here. No prior evidence springs to mind as to what the 2 types of club cells could be \u2013 prox and dist, but this change in B-actin could be purely structural to do with cell size/shape in different parts of the airways.\n\n\"Proper\" analysis of a tissue section using probes to transcripts that are thought to be expressed at low levels, in addition to highly expressed genes such as Sftpc, is required. Plus some biological insight.\n\nReviewer #3:\n\nThe present study by the Desai lab shows the development of a proximity ligation in situ hybridization technology and its use to examine various cell type markers in the mouse and human lung. The technique appears to work well and if employed correctly could enhance studies on human tissue samples where histology is possible but isolation of single cells is limited. One limitation of the current study is that it does not extend our understanding of lung cell heterogeneity as most if not all of the markers examined have already been extensively characterized in the lung.\n\n1) Much of the histology shown is at far too low of a magnification to assess the patterns of expression. The authors should provide high mag pictures in all situations, especially for the alveolar region as it is difficult to assess where the positive cells are located. Use of 3D reconvolution (i.e. IMARIS) would be helpful.\n\n2) It would be nice for the authors to show data from some new novel markers that were isolated from the current study. This would provide novel insight into how this technique has advantages over other techniques.\n\n3) A lot of the co-staining is difficult to assess. These data may be helped by higher mag imaging.\n\n4) In the scRNA-seq experiment, was this done on whole lung cell suspension or Epcam+? It is not mentioned in the paper that I can see.\n\n5) Many of the figures need better annotation. It\u2019s very hard to interpret what some of the panels are trying to convey.\n",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44cc8b5c-b520-4d30-9038-c82bab558c4f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C1",
+      "claim": "PLISH generates signals that exceed cellular and tissue fluorescence background by more than 30-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal from the individual RCA amplicons exceeded cellular and tissue fluorescence background by more than 30-fold, rendering autofluorescence inconsequential (Figure 1\u2014figure supplements 1A\u2013B and [Jarvius et al., 2006; Blab et al., 2004]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1\u2014figure supplements 1A\u2013B showing background measurements and by citations to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6c3d63ae-f993-4b01-b0dd-eb13f5476e24",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C2",
+      "claim": "Histograms of PLISH puncta intensities fit to a negative binomial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Histograms of puncta intensities fit to a negative binomial distribution, as expected for a DNA replication process that terminates stochastically and irreversibly (Figure 1\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1C\u2013F and by inference about DNA replication processes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "12cb339d-dece-46da-af9a-baa0fc57bdc9",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C3",
+      "claim": "The coefficients of variation for PLISH puncta intensity distributions were typically between one and two.",
+      "claim_type": "EXPLICIT",
+      "source": "The coefficients of variation for the puncta intensity distributions were typically between one and two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b9f83d8b-42b2-4e4c-828a-398adbc4f201",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C4",
+      "claim": "A pool of ten H probesets exhibited much higher RNA detection efficiency than a single H probeset.",
+      "claim_type": "EXPLICIT",
+      "source": "A pool of ten H probesets exhibited much higher RNA detection efficiency than a single H probeset, as expected (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "48461a36-783a-4102-8645-ed4353d724d9",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C5",
+      "claim": "When the RNA-recognition sequence of either the left or right H probe in each set was scrambled, there were no detectable puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the RNA-recognition sequence of either the left or right H probe in each set was scrambled, there were no detectable puncta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "8b0310f0-3429-423e-bcd4-b62d13d1be64",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C6",
+      "claim": "Both H probes must be correctly targeted to generate a PLISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both H probes had to be correctly targeted to generate a signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the scrambled probe experiment results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "96f011a6-ddcc-4032-bb9e-b4aad81d2d3b",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C7",
+      "claim": "Antisense oligonucleotides drastically attenuated the number of PLISH puncta for Scgb1a1.",
+      "claim_type": "EXPLICIT",
+      "source": "Antisense oligonucleotides drastically attenuated the number of PLISH puncta, whereas scrambled blocking oligonucleotides of the same length had no apparent effect (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "4e7bb467-338b-4fc6-9c8b-3c89cac7c87c",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C8",
+      "claim": "98.5% of cells positive for PLISH signal for Sftpc were also positive for antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the cells that were positive for PLISH signal, 98.5% were also positive for antibody staining (n = 184, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from co-localization experiment shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "45d0ca39-606d-4245-b965-42dbecb21bff",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C9",
+      "claim": "PLISH specificity is excellent relative to HCR-amplified smISH, where off-target binding can account for a quarter of observed puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "This level of specificity is excellent relative to HCR-amplified smISH, where off-target binding of hybridization probes can account for a quarter of the observed puncta (Shah et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to published data on HCR-amplified smISH",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "0e8e3e5f-5e3e-4c11-9d83-c513a1f420a6",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C10",
+      "claim": "For genes with FPKM values greater than one, single-cell qPCR detected mRNA in >90% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For genes with fragment-per-kilobase-per-million-read (FPKM) values greater than one, the single-cell qPCR technique detected mRNA in >90% of the cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference dataset from Wu et al., 2014 and shown in Figure 1F",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "dd758bdd-b739-4c14-af12-3b8954e6b855",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C11",
+      "claim": "An FPKM value of one corresponds to 2.5 copies per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A fit of the qPCR data to a Poisson sampling model suggested that an FPKM value of one corresponded to 2.5 copies per cell (see also [Marinov et al., 2014; Battich et al., 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from fitting qPCR data to a Poisson model, supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "9ad2bdd9-3cdd-409d-a313-99c3cd45353e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C12",
+      "claim": "PLISH detects RNA transcripts with a sensitivity comparable to single-cell qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLISH technique detected RNA transcripts with a sensitivity comparable to single-cell qPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of PLISH data to qPCR reference data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c43886ff-fff8-4432-be9d-65ab0156f118",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C13",
+      "claim": "CASP9 has an FPKM value of 2 and was observed in 100% of cells by PLISH.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Caspase-9 (CASP9) has an FPKM value of 2, and it was observed in 100% of the cells by PLISH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from PLISH experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "a5d2c20f-7223-42c4-8493-6fe607056446",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C14",
+      "claim": "PLISH detected an average of 8 puncta per cell for CASP9.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an average of 8 puncta per cell, which is consistent with the prediction of 5 copies per cell from the fit to the qPCR data (Figure 1F, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from PLISH experiment shown in Figure 1F inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "83da8be4-a5d6-4677-aa24-f67c6ba57f5f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C15",
+      "claim": "For ten genes covering the full spectrum of expression levels in HCT116 cells, the number of PLISH puncta per cell correlated with bulk FPKM values.",
+      "claim_type": "EXPLICIT",
+      "source": "For a set of ten genes covering the full spectrum of expression levels in HCT116 cells, the number of PLISH puncta per cell correlated with bulk FPKM values (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation analysis shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "59530c05-7468-4a6e-aacf-e447b42f5cc4",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C16",
+      "claim": "Four PLISH probesets detected Axin2 transcripts with a composite efficiency of 32%.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the four PLISH probesets detected Axin2 transcripts with a composite efficiency of 32% and an average per-site efficiency of 9%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from co-localization experiment with HCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6534eec1-6e49-4b2f-88cf-afc1eb7d5966",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C17",
+      "claim": "PLISH has an average per-site detection efficiency of 9% for Axin2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the four PLISH probesets detected Axin2 transcripts with a composite efficiency of 32% and an average per-site efficiency of 9%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from co-localization experiment with HCR",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "ef5a43de-e872-4ba6-8a63-e1a6480068a0",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C18",
+      "claim": "PLISH detection efficiency matches or exceeds that of other smISH techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "This probe efficiency matches or exceeds that of other smISH techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to other techniques based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "7c09dede-3776-4119-82ec-3352d3fc4f13",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C19",
+      "claim": "PLISH detection efficiency can be tuned on a per gene basis by altering the number of H probe pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLISH detection efficiency can be tuned on a per gene basis by altering the number of H probe pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a property of the technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "4308bfc6-db18-463a-9409-8c8f95fe4257",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C20",
+      "claim": "PLISH provides single-molecule resolution in tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We aimed to test whether PLISH provides single-molecule and single-cell resolution in tissues, whether it robustly detects low-abundance RNA species, whether the spatial distribution of RNA is consistent with prior knowledge, whether PLISH is compatible with simultaneous immunostaining, and whether it is compatible with formalin-fixed, paraffin-embedded (FFPE) samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by observation of discrete Foxj1 puncta in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "0afda134-d9fc-4560-b533-8fd2551b635d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C21",
+      "claim": "PLISH provides single-cell resolution in tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These data establish PLISH's single-molecule and single-cell resolution in tissues, and its ability to detect low-abundance transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by observation of single ciliated cells in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "9db78f5a-6068-41c9-90db-71cb313089fb",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C22",
+      "claim": "Foxj1 is a low-abundance transcript with an FPKM value of 10 in ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Foxj1 is a low-abundance transcript with an FPKM value of 10 in ciliated cells, as measured by scRNA-seq (Treutlein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced from published scRNA-seq data",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2d332f08-2ee6-43c6-b871-d1aedfe2c2d7",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C23",
+      "claim": "PLISH is compatible with simultaneous immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "These data establish PLISH's compatibility with simultaneous immunostaining, and with FFPE samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by co-staining for SCGB1A1 RNA and KRT5 protein in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "49d73e80-9199-4a74-be90-1737b45250d1",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C24",
+      "claim": "PLISH is compatible with FFPE samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These data establish PLISH's compatibility with simultaneous immunostaining, and with FFPE samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by successful staining of FFPE human lung in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2ac3045d-487c-41e1-9dc7-ec67a59c2939",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C25",
+      "claim": "SCGB1A1 positive cells localize to the lumen of airways, overlying KRT5 positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strongly SCGB1A1 positive cells were localized to the lumen of the airways, overlying KRT5 positive cells (Figure 2C), matching the known anatomical distribution of Club and basal cells, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2C and consistent with known anatomy",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b0cdfd8e-be71-4380-a9f0-6f53b08a12c1",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C26",
+      "claim": "The spatial distribution of SCGB1A1 and KRT5 matches the known anatomical distribution of Club and basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strongly SCGB1A1 positive cells were localized to the lumen of the airways, overlying KRT5 positive cells (Figure 2C), matching the known anatomical distribution of Club and basal cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to established anatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "40dc5581-ece1-42ff-be81-dc62c162f283",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C27",
+      "claim": "Macrophages are bright in the Lyz2 channel but absent in the Sftpc and Scgb1a1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages were bright in the Lyz2 channel, but absent in the other channels (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "7b6c2fe2-a1e0-439f-9e34-5b4abfe66bcc",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C28",
+      "claim": "AT2 cells are bright in the Sftpc channel, moderately bright in the Lyz2 channel, and absent in the Scgb1a1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "AT2 cells were bright in the Sftpc channel, moderately bright in the Lyz2 channel and absent in the Scgb1a1 channel (Figure 2D, white cells in the overlay).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "bf493bce-9b6c-488c-85a3-f2a261c2eafc",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C29",
+      "claim": "Club cells are very bright in the Scgb1a1 channel but otherwise absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Club cells were very bright in the Scgb1a1 channel, but otherwise absent (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "5a1191d6-11d1-41ad-80ed-b478a2ddeff1",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C30",
+      "claim": "Putative BASCs are bright in the Sftpc channel with a weak punctate signal in the Scgb1a1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, putative bronchioalveolar stem cells (Kim et al., 2005) (BASCs) were bright in the Sftpc channel with a weak punctate signal in the Scgb1a1 channel (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2E and referenced to prior work on BASCs",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "019df457-239f-4345-b975-782cb7aa03e4",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C31",
+      "claim": "Raw PLISH data can be interpreted without any computational processing due to exceptional signal-to-noise in tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, raw PLISH data can be interpreted without any computational processing, made possible by PLISH's exceptional signal-to-noise in tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability to visually distinguish cell types in Figures 2D-E",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "0589103f-9ec8-4225-9572-bfe4b7949443",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C32",
+      "claim": "Idiopathic pulmonary fibrosis (IPF) is a fatal lung disease of unknown pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "One example is idiopathic pulmonary fibrosis (IPF), a fatal lung disease of unknown pathogenesis (Travis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Travis et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "de8b6c0e-3de4-484f-9d3d-bc4aee3922f6",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C33",
+      "claim": "The diagnosis of IPF is based on the presence of specific histological features, including clusters of spindle-shaped fibroblasts, stereotyped 'honeycomb' cysts, and epithelial cell hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "The diagnosis of IPF is based on the presence of specific histological features, including clusters of spindle-shaped fibroblasts, stereotyped 'honeycomb' cysts, and epithelial cell hyperplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established medical knowledge about IPF diagnosis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2a69e6f9-dfe1-4454-84b6-5b83eb48a19d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C34",
+      "claim": "Single-cell profiling approaches that operate on dissociated tissue cannot correlate molecular data with cytologic and spatial features.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, single-cell profiling approaches that operate on dissociated tissue (Xu et al., 2016) are intrinsically limited because they cannot correlate molecular data with cytologic and spatial features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about limitations of dissociation-based methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c2f63adb-d4da-4fba-a4c8-69721bc4f770",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C35",
+      "claim": "In non-IPF lungs, SFTPC-expressing AT2 cells are uniformly cuboidal and distributed throughout alveoli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the uniformly cuboidal SFTPC-expressing AT2 cells distributed throughout alveoli of non-IPF lungs (Figure 2F), we observed clusters of SFTPCHi cells of heterogeneous size and varying degrees of flattening lining the airspace lumen of IPF lungs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b3e019cc-5245-4c36-8f46-c5ebb0f105da",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C36",
+      "claim": "In IPF lungs, clusters of SFTPCHi cells of heterogeneous size and varying degrees of flattening line the airspace lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the uniformly cuboidal SFTPC-expressing AT2 cells distributed throughout alveoli of non-IPF lungs (Figure 2F), we observed clusters of SFTPCHi cells of heterogeneous size and varying degrees of flattening lining the airspace lumen of IPF lungs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "ac33cd87-f31e-4aa8-bf59-05ae56a6f553",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C37",
+      "claim": "Many cells in IPF lungs that did not appear to be epithelial expressed SFTPC at low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, many cells that did not appear to be epithelial (i.e., they were not lining an airway lumen) expressed SFTPC at low levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in IPF tissue analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "0d44f5d0-9790-4b50-97d8-b9dfbbcc0e28",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C38",
+      "claim": "PLISH should be a suitable tool for building atlases of RNA expression in human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this pilot experiment, PLISH should be a suitable tool for building atlases of RNA expression in human disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from successful application to IPF tissue",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "7a56d91d-56ab-41f7-99a3-32811c9e5cf3",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C39",
+      "claim": "PLISH puncta can be imaged in the presence of a 3 nM background of freely-diffusing imager oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior work, we found that PLISH puncta could be imaged in the presence of a 3 nM background of freely-diffusing imager oligonucleotides (Figure 3\u2014figure supplements 1A and [Blab et al., 2004]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in Figure 3\u2014figure supplement 1A and consistent with cited prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "f4015489-0567-4eb9-8106-918c585dbf99",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C40",
+      "claim": "Fluorescence from PLISH puncta can be erased by a simple buffer exchange using short imager oligonucleotides that equilibrate rapidly on and off of RCA amplicons.",
+      "claim_type": "EXPLICIT",
+      "source": "By using short imager oligonucleotides that equilibrate rapidly on and off of RCA amplicons (Jungmann et al., 2014), we could erase fluorescence from a previous cycle by a simple buffer exchange (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in Figure 3\u2014figure supplement 1B and referenced to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "52117d69-f14e-4345-a799-40873b2200b2",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C41",
+      "claim": "An erasure method based on uracil-containing imager oligonucleotides can be accomplished with a 15 min enzymatic digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "We also established an erasure method based on uracil-containing imager oligonucleotides, which were removed with a 15 min enzymatic digestion (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "a26bf5b7-f24a-4387-9a9b-9db52a01a1ce",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C42",
+      "claim": "PLISH label-image-erase cycles can be completed in as little as 20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we could image PLISH puncta in five different color channels with spectrally-distinct fluorophores, and we were able to complete cycles in as little as 20 min, which approaches the cycle time of an Illumina MiSeq instrument (https://support.illumina.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement of cycle time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2ed2c667-dd90-4b13-af82-dcabd0b2f582",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C43",
+      "claim": "The PLISH cycle time approaches the cycle time of an Illumina MiSeq instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we could image PLISH puncta in five different color channels with spectrally-distinct fluorophores, and we were able to complete cycles in as little as 20 min, which approaches the cycle time of an Illumina MiSeq instrument (https://support.illumina.com).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known sequencing instrument cycle time",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c70e8c6d-0c35-486e-b7ba-6def0fce9142",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C44",
+      "claim": "Eight different transcripts in mouse lung were visualized with two label-image-erase cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate and validate the multiplexing capacity of PLISH, we co-localized the mRNA of eight selected genes in ~2900 single cells from an adult mouse lung (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described experimental design and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "cfec5385-aa65-443f-b012-4fae8b04f899",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C45",
+      "claim": "The multiplexed PLISH experiment analyzed ~2900 single cells from adult mouse lung.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate and validate the multiplexing capacity of PLISH, we co-localized the mRNA of eight selected genes in ~2900 single cells from an adult mouse lung (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "885f3f79-ca1b-4673-9f40-69e85bdea18a",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C46",
+      "claim": "The bulk of detected mRNAs in AT1 cells were clustered around the nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortuitously, the bulk of the detected mRNAs in AT1 cells, which have an extremely flat and broad morphology, were clustered around the nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed during data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "3e7890ec-7c34-4b5e-82a3-33586e913776",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C47",
+      "claim": "Automated and unsupervised analysis of multiplexed PLISH data identified ten cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "The automated analysis identified ten cell classes, four of which were labeled 'other' because they were defined primarily by 'signature' profiles of ubiquitously-expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of k-means clustering analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "625fc6f9-25e5-4be0-ab26-d0936082e401",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C48",
+      "claim": "Six of the ten identified cell classes were associated with a known lung cell type based on marker-gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining six classes were associated with a known lung cell type based on marker-gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of clustering analysis and marker gene interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "314e84a4-2e4e-41a9-9ce5-3637974a5a74",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C49",
+      "claim": "One of the two AT2 cell classes is Lyz2 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sftpc and Scgb1a1 positive cell classes were labeled as AT2 and Club, respectively, while the Lyz2 positive class was labeled as macrophage (one of the two AT2 cell classes was also Lyz2 positive as previously reported in (Desai et al., 2014), Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in clustering analysis and validated in Figure 4\u2014figure supplement 1A, consistent with prior publication",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "e98495f8-4a39-4410-bb99-67dcfe3b5a78",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C50",
+      "claim": "Ager mRNA is not particularly specific for AT1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell class with the highest Ager expression was labeled as AT1, but Ager mRNA was also detected in a subset of AT2 and Club cells, and in one of the four 'other' cell classes, indicating it is not particularly specific for AT1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in PLISH data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2bde3962-3227-4178-8d1c-0e2a01342d33",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C51",
+      "claim": "Indirect immunohistochemistry and scRNA-seq data confirmed the low specificity of Ager for AT1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the PLISH results by indirect immunohistochemistry (Figure 4\u2014figure supplement 1B) and by comparison with previously published scRNA-seq data (Figure 4\u2014figure supplement 1C), which confirmed the low specificity of Ager for AT1 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Validated by immunohistochemistry in Figure 4\u2014figure supplement 1B and scRNA-seq comparison in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "d219000f-7a7c-4fc1-b249-bdfb92864911",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C52",
+      "claim": "Akap5 RNA expression localization correlates closely with Ager's.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the RNA expression of Akap5, another transcript that is highly-enriched in AT1 cells (Treutlein et al., 2014), and found that its localization correlated closely with Ager's (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 4\u2014figure supplement 1D and referenced to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "fc09cf46-ea39-4ae5-ab85-a2a8d1efefa8",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C53",
+      "claim": "A small cloud of cells between the Club and AT2 clusters expressed both Sftpc and Scgb1a1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a small cloud of cells between the Club and AT2 clusters that expressed both Sftpc and Scgb1a1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in t-SNE analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "21ef1740-86f2-478f-88d2-aca0b362706f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C54",
+      "claim": "Cells expressing both Sftpc and Scgb1a1 were assigned as the BASC type.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of this dual expression, we assigned them as the BASC type (Kim et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from dual marker expression and referenced to prior work on BASCs",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c8d3cbc6-4349-4dd9-9aa1-c8d4834c58fa",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C55",
+      "claim": "Lyz2 expression partitions AT2 cells into two classes designated Lyz2+ and Lyz2-.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that Lyz2 expression partitioned the AT2 cells into two classes designated Lyz2+ and Lyz2-, while Actb segregated Club cells into two classes designated ActbHi and ActbLo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in t-SNE analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "3a0bd43d-f590-4e0f-bbd3-34e2eaca10b8",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C56",
+      "claim": "Actb expression segregates Club cells into two classes designated ActbHi and ActbLo.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that Lyz2 expression partitioned the AT2 cells into two classes designated Lyz2+ and Lyz2-, while Actb segregated Club cells into two classes designated ActbHi and ActbLo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in t-SNE analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "f0caca15-2d58-46e1-85aa-942a13898da5",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C57",
+      "claim": "Gapdh is the most uniformly expressed transcript, consistent with its role as a 'housekeeping' gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Gapdh was the most uniformly expressed transcript, consistent with its role as a 'housekeeping' gene (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 4B and consistent with established knowledge about housekeeping genes",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "aa3a5593-d182-4701-a37b-822018b28a68",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C58",
+      "claim": "Ftl1 expression is highest in alveolar macrophages, where it is believed to play a role in processing iron from ingested red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ftl1 expression was highest in alveolar macrophages, as expected, where it is believed to play a role in processing iron from ingested red blood cells (McGowan and Henley, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in PLISH data and referenced to prior work on Ftl1 function",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "dda75a39-abc8-4df9-9f01-745134552db9",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C59",
+      "claim": "Ftl1 is highly expressed in Club cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, Ftl1 was also highly expressed in Club cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in PLISH data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "bf67ed90-be5b-4714-b773-ebb958fbf934",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C60",
+      "claim": "Actb expression is highest in macrophages, presumably because of its functional role in motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Actb expression was highest in macrophages, presumably because of its functional role in motility, and in AT1 cells, which must maintain a flat morphology and expansive cytoskeleton (Foster et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in PLISH data and inferred from known function of Actb",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "4a5a145e-c434-4d80-9cfd-a3ef0569489f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C61",
+      "claim": "Actb expression is highest in AT1 cells, which must maintain a flat morphology and expansive cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Actb expression was highest in macrophages, presumably because of its functional role in motility, and in AT1 cells, which must maintain a flat morphology and expansive cytoskeleton (Foster et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in PLISH data and inferred from known AT1 cell morphology",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "3cb2e1fd-1a3a-48c9-8127-5e91cd541596",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C62",
+      "claim": "The Club cell class mapped perfectly onto the bronchial epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the Club cell class mapped perfectly onto the bronchial epithelium, while cells from the AT1 and AT2 classes were distributed throughout the alveolar compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "17d164c5-f158-4114-b620-752b3a5a5233",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C63",
+      "claim": "AT1 and AT2 cells are distributed throughout the alveolar compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the Club cell class mapped perfectly onto the bronchial epithelium, while cells from the AT1 and AT2 classes were distributed throughout the alveolar compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6e49e50b-5354-4eff-890b-abb632c316ff",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C64",
+      "claim": "Rare BASCs localize precisely to the bronchioalveolar junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "The rare BASCs also localized precisely to the bronchioalveolar junctions, where they have been shown to reside by immunostaining (Kim et al., 2005) (Figure 4C and Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 4C and validated in Figure 4\u2014figure supplement 1E, consistent with prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "20b58d1f-68d9-43c7-99b2-d0f3cb12a517",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C65",
+      "claim": "The macrophage class is primarily found inside the alveolar lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The macrophage class was primarily found inside the alveolar lumen, and many exhibited a characteristic rounded cell shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "182060d7-61cf-450d-a7c7-57b9741d1f6e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C66",
+      "claim": "Many macrophages exhibited a characteristic rounded cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The macrophage class was primarily found inside the alveolar lumen, and many exhibited a characteristic rounded cell shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "33c6aa46-b532-428f-a3da-a2ff3a1d9b52",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C67",
+      "claim": "The Otherd class of cells is enriched in pulmonary arteries and might represent endothelial or perivascular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Otherd class of cells was enriched in pulmonary arteries, and therefore might represent endothelial or perivascular cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping and inferred from anatomical location",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "693557ea-08ff-48ef-91fe-b44eb39a2f0d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C68",
+      "claim": "ActbHi Club cells cluster together at the bronchial terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "ActbHi Club cells clustered together at the bronchial terminus, while ActbLo Club cells populated more proximal domains (Figure 4D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in spatial remapping shown in Figure 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "d6f1ddb8-77c1-4ff6-b595-6a2e00006d21",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C69",
+      "claim": "ActbLo Club cells populate more proximal domains of the terminal airways.",
+      "claim_type": "EXPLICIT",
+      "source": "ActbHi Club cells clustered together at the bronchial terminus, while ActbLo Club cells populated more proximal domains (Figure 4D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in spatial remapping shown in Figure 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "649d3aa1-304f-4322-932c-5d71d2c31dca",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C70",
+      "claim": "Two sub-classes of Club cells, defined by differential Actb expression, segregate anatomically.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed a striking spatial segregation of the two Club cell classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in spatial remapping shown in Figure 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "53432903-05b9-47d8-a373-0a8abd796723",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C71",
+      "claim": "PLISH can integrate molecular and spatial features of single cells to generate insights that would be missed with either piece of information alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While the significance of this pattern is not immediately obvious, it emphasizes how PLISH can readily integrate molecular and spatial features of single cells to generate insights that would be missed with either piece of information alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discovery of spatially segregated Club cell subclasses",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "97dbf791-e689-4f8a-9713-fb898abe6a52",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C72",
+      "claim": "PLISH specificity derives from coincidence detection, which requires two probes to hybridize next to one another for signal generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity derives from coincidence detection, which requires two probes to hybridize next to one another for signal generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the mechanism underlying PLISH specificity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c59a13b0-c9eb-4245-8d24-3d1efd49ea45",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C73",
+      "claim": "Efficient detection of low-abundance transcripts by PLISH is accomplished by targeting multiple sites along the RNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient detection of low-abundance transcripts is accomplished by targeting multiple sites along the RNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the mechanism for efficient detection",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "1354a92f-b9a9-4f1a-853a-949726c18104",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C74",
+      "claim": "Enzymatic amplification in PLISH produces extremely bright puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic amplification produces extremely bright puncta, and allows many different RNA transcripts to be marked with unique barcodes in one step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of the PLISH technique",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2e587f03-af63-46a6-bac1-bb4cccd6bb50",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C75",
+      "claim": "PLISH allows many different RNA transcripts to be marked with unique barcodes in one step.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymatic amplification produces extremely bright puncta, and allows many different RNA transcripts to be marked with unique barcodes in one step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of the PLISH technique",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b0ef86c0-e2ed-4036-aa51-ba652badaedf",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C76",
+      "claim": "PLISH is scalable without requiring specialized microscopes, software, or computational expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "While low-plex PLISH on a handful of different genes can be valuable, the PLISH technology is also scalable, without requiring specialized microscopes (or other equipment), software, or computational expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of the PLISH technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "f70a23c2-3a1e-4a10-973e-efa3ebd00623",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C77",
+      "claim": "PLISH oligonucleotides and enzymes are inexpensive and commercially available from multiple vendors.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligonucleotides and enzymes are inexpensive and commercially available from multiple vendors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of PLISH reagents",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "4c89607b-05be-410e-9eef-3b1930b9b31c",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C78",
+      "claim": "H probes are the cost-limiting reagent for PLISH but can be synthesized in pools.",
+      "claim_type": "EXPLICIT",
+      "source": "The H probes are the cost-limiting reagent, but can be synthesized in pools (Murgha et al., 2014; Beliveau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated cost consideration with reference to pooled synthesis methods",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "e66b6533-fa8a-4ac7-b273-c01ad9f90923",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C79",
+      "claim": "The cost of PLISH reagents amounts to $3 per gene, assuming five pairs of H probes and 20 cents for a 40mer oligonucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming five pairs of H probes for each target RNA species, and 20 cents for a 40mer oligonucleotide, the cost of PLISH reagents amounts to $3 per gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated cost estimate based on stated assumptions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6c17bbb8-90cf-45ad-a72a-cf62aff9908b",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C80",
+      "claim": "It is practical to simultaneously interrogate entire molecular systems with PLISH, such as signaling pathways or super-families of adhesion receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It should therefore be practical to simultaneously interrogate entire molecular systems, such as signaling pathways or super-families of adhesion receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the scalability and cost-effectiveness of PLISH",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "f4417026-1575-4e03-8859-63f1dd6e0ae9",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C81",
+      "claim": "The high specificity and signal-to-noise of PLISH is advantageous for deep profiling, where non-specific background increases with increasingly complex mixtures of hybridization probes.",
+      "claim_type": "EXPLICIT",
+      "source": "The high specificity and signal-to-noise of PLISH will be advantageous for deep profiling, where non-specific background increases with increasingly complex mixtures of hybridization probes (Moffitt et al., 2016c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred advantage based on PLISH properties and referenced to prior work on probe complexity",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "145707a3-a619-4e90-9801-687297a26dcd",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C82",
+      "claim": "PLISH has capacity for rapid, automated and unbiased cell-type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies demonstrate PLISH's capacity for rapid, automated and unbiased cell-type classification, and illustrate how it can complement single-cell RNA sequencing (sc-RNAseq).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the multiplexed lung experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6be35bb0-2882-4c73-b779-d73ea29be474",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C83",
+      "claim": "Sc-RNAseq offers greater gene depth than in situ hybridization approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Sc-RNAseq offers greater gene depth than in situ hybridization approaches, but it is less sensitive, fails to capture spatial information, and induces artefactual changes in gene expression during tissue dissociation (van den Brink et al., 2017; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to scRNA-seq based on established knowledge and cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "cb9d2659-65be-4f18-aec6-b4d4605a3e2d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C84",
+      "claim": "Sc-RNAseq is less sensitive than PLISH.",
+      "claim_type": "EXPLICIT",
+      "source": "Sc-RNAseq offers greater gene depth than in situ hybridization approaches, but it is less sensitive, fails to capture spatial information, and induces artefactual changes in gene expression during tissue dissociation (van den Brink et al., 2017; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to scRNA-seq based on established knowledge and cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "45ca8b51-1f93-43c5-81f0-1cb05ab79020",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C85",
+      "claim": "Sc-RNAseq fails to capture spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "Sc-RNAseq offers greater gene depth than in situ hybridization approaches, but it is less sensitive, fails to capture spatial information, and induces artefactual changes in gene expression during tissue dissociation (van den Brink et al., 2017; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inherent limitation of dissociation-based methods, cited references",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6387cfdb-3521-4eea-ae9d-0d6357fc828d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C86",
+      "claim": "Sc-RNAseq induces artefactual changes in gene expression during tissue dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sc-RNAseq offers greater gene depth than in situ hybridization approaches, but it is less sensitive, fails to capture spatial information, and induces artefactual changes in gene expression during tissue dissociation (van den Brink et al., 2017; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from van den Brink et al., 2017 and Lee et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "7233f8c9-0f28-4b6a-9c02-56e6c8ed3e85",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C87",
+      "claim": "PLISH provides cytological and spatial information that is missing from sc-RNAseq.",
+      "claim_type": "EXPLICIT",
+      "source": "PLISH provides the missing cytological and spatial information, and it is applied to intact tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated advantage of PLISH over scRNA-seq",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "a206b04d-9dd8-4e33-a712-dc4a7cc23b72",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C88",
+      "claim": "PLISH is applied to intact tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "PLISH provides the missing cytological and spatial information, and it is applied to intact tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of PLISH",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "9409a241-75c6-45f7-933d-b6344576b82c",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C89",
+      "claim": "Multiplexed PLISH can distinguish true biological variation from technical noise and experimentally-induced perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Going forward, sequencing can be used to nominate putative cell types and molecular states based on the coordinate expression of 'signature genes', and multiplexed PLISH can be used to distinguish true biological variation from technical noise and experimentally-induced perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed application based on PLISH capabilities",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "2b46df20-10f6-4b6a-900a-5445ec93ac2a",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C90",
+      "claim": "Multiplexed PLISH provides the tissue context of distinct cell populations, which is essential for understanding the higher-order organization of intact systems like solid tumors and developing organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, multiplexed PLISH provides the tissue context of distinct cell populations, which is essential for understanding the higher-order organization of intact systems like solid tumors and developing organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated advantage of PLISH for understanding tissue organization",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "99c27acd-8940-42aa-9a9d-e8ffd4e5ae36",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C91",
+      "claim": "In diseases like IPF where morphology and gene expression are severely deranged, histological, cytological and spatial features may be essential for making biological sense of sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "In diseases like IPF where morphology and gene expression are severely deranged (Xu et al., 2016), histological, cytological and spatial features may even be essential for making biological sense of sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred importance based on disease characteristics and cited reference",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b96e63c2-a5dc-4d1a-b5de-176d40c9f838",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C92",
+      "claim": "PLISH can be combined with conventional immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "We have already demonstrated the combined application of PLISH with conventional immunostaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "36563c50-79c8-4714-ac48-b1caa1120745",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C93",
+      "claim": "Oligonucleotide-antibody conjugates make it possible to mix and match protein and RNA targets in a multiplexed format.",
+      "claim_type": "EXPLICIT",
+      "source": "Going one step further, oligonucleotide-antibody conjugates make it possible to mix and match protein and RNA targets in a multiplexed format (Weibrecht et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced to prior work on oligonucleotide-antibody conjugates",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "83a26ee2-7cba-4f10-9807-91ced2cc836e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C94",
+      "claim": "The generation of comprehensive, multidimensional molecular maps of intact tissues will have a fundamental impact on basic science and medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of comprehensive, multidimensional molecular maps of intact tissues, in both healthy and diseased states, will have a fundamental impact on basic science and medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about future impact",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "95ed9c31-0871-40cd-9b83-1a96dbc2041e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C95",
+      "claim": "PLISH utilizes only commodity reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "PLISH utilizes only commodity reagents, so it can be scaled up inexpensively to cover many genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property of PLISH reagents",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "67987217-3752-4a06-9ecd-c854c2a34c47",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C96",
+      "claim": "PLISH works well on conventional formalin-fixed tissues that have been cryo- or paraffin-embedded.",
+      "claim_type": "EXPLICIT",
+      "source": "It works well on conventional formalin-fixed tissues that have been cryo- or paraffin-embedded, and can be performed concurrently with immunostaining, making it extremely versatile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated in experiments with both cryo and FFPE samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "8ce94217-bdb6-454d-8008-7eafa1767ff5",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C97",
+      "claim": "PLISH can be performed concurrently with immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "It works well on conventional formalin-fixed tissues that have been cryo- or paraffin-embedded, and can be performed concurrently with immunostaining, making it extremely versatile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "e637bb3b-6c10-4947-8db5-ed156732cb53",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C98",
+      "claim": "Murine Club cells separate into two populations that differ molecularly and segregate anatomically.",
+      "claim_type": "EXPLICIT",
+      "source": "An unexpected discovery from this experiment is that murine Club cells separate into two populations that differ molecularly and segregate anatomically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discovered through multiplexed PLISH analysis shown in Figure 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "210c7f34-627b-420f-8ef1-48ce547382bc",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C99",
+      "claim": "PLISH constitutes a novel, single cell spatial-profiling technology that combines high performance, versatility and low cost.",
+      "claim_type": "EXPLICIT",
+      "source": "PLISH constitutes a novel, single cell spatial-profiling technology that combines high performance, versatility and low cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on demonstrated properties",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "fecd0610-cfcc-47ab-bc0d-5fb9e8ce7408",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C100",
+      "claim": "Because of its technical simplicity, PLISH will be accessible to a broad scientific community.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its technical simplicity, it will be accessible to a broad scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the use of standard reagents and equipment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b444f34c-aeff-4221-911f-900504bb1ea1",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C101",
+      "claim": "Proximity ligation at Holliday junctions offers a simple mechanism for the amplified detection of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Proximity ligation at Holliday junctions offers a simple mechanism for the amplified detection of RNA (Labib et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced to prior work on proximity ligation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "fa579550-e671-4c97-a978-68cf04c2c7b1",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C102",
+      "claim": "Target RNAs can be tiled with H probe pairs at multiple sites, which is critical for efficient detection of low abundance transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, target RNAs can be tiled with H probe pairs at multiple sites, which is critical for efficient detection of low abundance transcripts (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated design principle illustrated in Figure 1B",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "618635cc-029b-45a9-b175-48dd85fc8112",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C103",
+      "claim": "Rolling-circle replication generates a long single-stranded amplicon of tandem repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the 3' end of the right H probe primes rolling-circle replication, which generates a long single-stranded amplicon of tandem repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the RCA mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6a968cf4-7901-4786-8dba-327af872e4e5",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C104",
+      "claim": "Addition of fluorescently-labeled 'imager' oligonucleotides complementary to the barcodes generates an extremely bright punctum at the site of each labeled transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of fluorescently-labeled 'imager' oligonucleotides complementary to the barcodes generates an extremely bright punctum at the site of each labeled transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the detection mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "668dc71e-c3e9-46ba-b2d0-a205c41c5228",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C105",
+      "claim": "Each barcode sequence is unique, allowing puncta derived from different target RNAs to be labeled with different colors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each barcode sequence is unique, the puncta derived from different target RNAs can be labeled with different colors (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated design principle illustrated in Figure 1C",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "db9affb9-f7d5-421f-9e4a-7f70983352d8",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C106",
+      "claim": "PLISH adapted protocols for antibody-based proximity ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "To implement PLISH, we adapted protocols for antibody-based proximity ligation (S\u00f6derberg et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced to prior work on proximity ligation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c13702fa-4f02-4f65-add0-23571308336f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C107",
+      "claim": "PLISH utilizes conventional oligonucleotides, two commercially available enzymes, and procedures familiar to molecular biologists.",
+      "claim_type": "EXPLICIT",
+      "source": "The technique utilizes conventional oligonucleotides, two commercially available enzymes, and procedures familiar to molecular biologists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of PLISH reagents and methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "198f5a1e-9caf-4cbf-ab49-f7739d6cdede",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C108",
+      "claim": "The ligase and polymerase enzymes used in PLISH are less than half the size of an immunoglobulin G.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligase and polymerase enzymes are less than half the size of an immunoglobulin G, and they diffuse at least as rapidly as the 60mer DNA hairpins used for HCR amplification (Choi et al., 2014; Joubert et al., 2003; Lapham et al., 1997; Modrich et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated property with citations to support diffusion rates",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "f35ec0ea-d0c0-4d97-bbe0-475db63817ee",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C109",
+      "claim": "The ligase and polymerase enzymes used in PLISH diffuse at least as rapidly as the 60mer DNA hairpins used for HCR amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligase and polymerase enzymes are less than half the size of an immunoglobulin G, and they diffuse at least as rapidly as the 60mer DNA hairpins used for HCR amplification (Choi et al., 2014; Joubert et al., 2003; Lapham et al., 1997; Modrich et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from size comparison and cited references on diffusion",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "bb21c8cd-1468-44ec-a81e-d6adfda56f16",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C110",
+      "claim": "Initial PLISH studies produced bright puncta that were absent if any of the oligonucleotide or enzyme reagents was withheld.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial studies produced bright puncta that were absent if any of the oligonucleotide or enzyme reagents was withheld.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated experimental observation demonstrating specificity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c6ce5188-3524-492d-a930-202bbe07aeb4",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C111",
+      "claim": "181 of 184 PLISH+ cells for Sftpc were also antibody+.",
+      "claim_type": "EXPLICIT",
+      "source": "181 of 184 PLISH+ cells were also antibody+, and 181 of 195 antibody+ cells were PLISH+.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative data from Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "59e178c4-c695-40dc-b8b3-408c08109168",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C112",
+      "claim": "181 of 195 antibody+ cells for Sftpc were PLISH+.",
+      "claim_type": "EXPLICIT",
+      "source": "181 of 184 PLISH+ cells were also antibody+, and 181 of 195 antibody+ cells were PLISH+.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative data from Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "83056ca9-3505-42ce-807e-6e5b278bc1db",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C113",
+      "claim": "Over three fields of view, 92 HCR puncta and 140 PLISH puncta were observed for Axin2, with 29 cases of co-localized HCR and PLISH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Over three fields of view, we observed 92 HCR puncta and 140 PLISH puncta, with 29 cases of co-localized HCR and PLISH signal.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative data from Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "ff906edf-fbad-409f-8a2c-1cd69647e106",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C114",
+      "claim": "435,175 of 435,200 background pixels had 0 counts in the red channel.",
+      "claim_type": "EXPLICIT",
+      "source": "435,175 of these 435,200 background pixels had 0 counts (the vertical axis is truncated), and the mean intensity was 1.3*10^\u22124 counts.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative measurement from Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "a7b0d2ff-408e-40b7-987b-49e665f43f91",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C115",
+      "claim": "The mean intensity of background pixels was 1.3*10^\u22124 counts.",
+      "claim_type": "EXPLICIT",
+      "source": "435,175 of these 435,200 background pixels had 0 counts (the vertical axis is truncated), and the mean intensity was 1.3*10^\u22124 counts.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative measurement from Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "1de3e174-03f3-4519-b42b-c7b5ef4db5ae",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C116",
+      "claim": "The mean intensity of non-zero pixels was 42 counts.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean intensity of the non-zero pixels was 42 counts.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Quantitative measurement from Figure 1\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "d1359a7b-4dda-475d-af10-8c0ca333a003",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "claim_id": "C117",
+      "claim": "Mean-events-to-failure parameters between 1000 and 60,000 gave similar agreement with the negative binomial distribution fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean-events-to-failure parameters between 1000 and 60,000 gave similar agreement with the data.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Statistical analysis from Figure 1\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "63844d01-e636-4825-951b-7910b159855a",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PLISH generates extremely bright signals with exceptional signal-to-noise ratio. RCA amplicons exceed cellular and tissue autofluorescence background by more than 30-fold, with puncta intensities fitting a negative binomial distribution and coefficients of variation between 1-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C114-C117 provide converging quantitative evidence from Figure 1 supplements showing background measurements (mean intensity 1.3\u00d710\u207b\u2074 counts vs. 42 counts for signal), distribution fitting, and statistical characterization. The 30-fold signal enhancement is well-documented and consistent with the stochastic RCA amplification mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "11132640-0cfc-4902-8cb0-06cc34f98223",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PLISH exhibits high specificity through coincidence detection requiring both left and right H probes to hybridize adjacently. Scrambling either probe eliminates signal, and antisense blocking oligonucleotides drastically attenuate puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C110 demonstrate specificity through multiple orthogonal controls: scrambled probes (C5), antisense blocking (C7), and reagent omission (C110). The requirement for dual probe binding (C6) is directly supported by the scrambling experiments shown in Figure 1D-E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "3a7c5ad0-27d4-475e-863b-a76a0a86c044",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PLISH demonstrates 98.5% concordance with antibody staining for Sftpc in AT2 cells (181/184 PLISH+ cells were antibody+, and 181/195 antibody+ cells were PLISH+).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C111, and C112 provide precise quantitative co-localization data from Figure 1 supplement 2 with n=184 and n=195 cells analyzed. The high concordance (>92% in both directions) validates PLISH specificity against an orthogonal protein detection method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PLISH detection efficiency matches or exceeds other smISH techniques, with 32% composite efficiency (9% per-site) for Axin2 using four probe pairs, superior to HCR-amplified smISH where off-target binding accounts for 25% of puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C16-C18, and C113 provide quantitative efficiency measurements from HCR co-localization experiments (29/92 HCR puncta detected by PLISH) and comparative benchmarking. The 9% per-site efficiency is reasonable for smISH and the specificity advantage over HCR is supported by citation to Shah et al., 2016.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PLISH sensitivity matches single-cell qPCR, detecting mRNA in >90% of cells for genes with FPKM>1. For CASP9 (FPKM=2), PLISH detected 8 puncta/cell, consistent with the predicted 5 copies/cell from Poisson modeling (1 FPKM = 2.5 copies/cell).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 provide systematic sensitivity validation against reference qPCR data (Wu et al., 2014) shown in Figure 1F-G. The Poisson model fit (C11) and specific CASP9 example (C13-C14) demonstrate quantitative agreement. Correlation across 10 genes (C15) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "d8da841e-7461-402a-90ef-d5cd3ef43589",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PLISH detection efficiency can be tuned per gene by varying the number of H probe pairs, enabling efficient detection of low-abundance transcripts through tiling multiple sites along the RNA sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C73, and C102 describe a key design principle demonstrated in Figure 1B and validated by the efficiency experiments (C4). The ability to tile multiple probe pairs is fundamental to PLISH's sensitivity advantage and is directly supported by experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "9cefced1-753d-4ce8-8eb9-ca2a3d583c55",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PLISH provides single-molecule and single-cell resolution in tissues, detecting discrete puncta for low-abundance transcripts like Foxj1 (FPKM=10) in individual ciliated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by Figure 2B showing discrete Foxj1 puncta in single ciliated cells. The FPKM value (C22) is appropriately cited from Treutlein et al., 2014. Visual evidence of single-molecule resolution is clear in the microscopy data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "a5007f65-6b85-4035-b430-51483d26abdb",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PLISH is compatible with simultaneous immunostaining and works on both cryo-preserved and FFPE tissue samples, demonstrated by co-staining for SCGB1A1 RNA and KRT5 protein in human lung.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C92-C97 are directly supported by Figure 2C showing successful co-staining in FFPE human lung. The methods section describes protocols for both sample types. This versatility is important for clinical applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "d70bb4be-2106-44d8-b892-cc7e9bacc744",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PLISH enables visual discrimination of lung cell types without computational processing due to exceptional signal-to-noise. Macrophages, AT2 cells, Club cells, and BASCs exhibit distinct marker expression patterns matching known anatomical distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 describe cell type identification from Figure 2D-E. The spatial distributions match established lung anatomy (C26), and the ability to visually distinguish cell types (C31) is demonstrated by the clear separation of marker expression patterns. This validates both specificity and signal quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PLISH successfully profiles diseased human tissue (IPF), revealing abnormal SFTPC+ cell morphologies and distributions that differ from healthy controls, demonstrating utility for building disease atlases where spatial context is essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 describe IPF analysis from Figure 2F. The morphological differences between IPF and control tissue (C35-C37) are clearly documented. While this is a pilot study, the results support PLISH's applicability to human disease (C38), though more extensive validation would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "c4a41f05-d50c-454f-9e7c-9213806c146d",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PLISH enables rapid multiplexing through label-image-erase cycles completed in 20 minutes using either buffer exchange of short oligonucleotides or enzymatic digestion of uracil-containing imagers, approaching Illumina MiSeq cycle times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 describe two erasure methods validated in Figure 3 supplements 1A-C. The 20-minute cycle time (C42) is directly stated and the comparison to MiSeq (C43) provides useful context. Both erasure methods are experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiplexed PLISH profiled 8 genes in ~2,900 single cells from mouse lung, with automated k-means clustering identifying 10 cell classes including 6 known lung cell types, demonstrating capacity for rapid, automated, unbiased cell-type classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 and C82 describe the multiplexing experiment shown in Figures 3B-C. The sample size (C45), number of identified classes (C47), and automated analysis (C82) are well-documented. The fortuitous perinuclear mRNA clustering in AT1 cells (C46) is noted as facilitating analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "8f4bdf74-4ca0-4a12-bc4e-8909d5e521e4",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PLISH reveals that Ager is not specific for AT1 cells, being expressed in subsets of AT2 and Club cells. One AT2 subclass is Lyz2+. These findings were validated by immunohistochemistry and scRNA-seq data, with Akap5 showing similar localization to Ager.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 describe marker promiscuity validated in Figure 4 supplement 1A-D. The Lyz2+ AT2 subclass (C49) is confirmed by immunostaining and cited prior work (Desai et al., 2014). The low Ager specificity (C50-C51) is validated by multiple orthogonal methods. This represents an important biological finding enabled by PLISH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "3549486f-6d3a-489f-9c65-1fa669c72f6c",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "t-SNE analysis identified rare BASCs expressing both Sftpc and Scgb1a1, and revealed that Lyz2 partitions AT2 cells into two subclasses while Actb segregates Club cells into ActbHi and ActbLo populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 describe cell subtype identification from t-SNE analysis in Figure 4A. The BASC assignment (C54) is appropriately referenced to Kim et al., 2005. The identification of AT2 and Club cell subclasses based on differential gene expression is clearly supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "bdd2d6d4-1f40-401f-9865-f96f493e648e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Differential expression of 'housekeeping' genes reveals cell-type-specific patterns: Gapdh is uniformly expressed, Ftl1 is highest in macrophages and unexpectedly in Club cells, and Actb is highest in macrophages and AT1 cells, consistent with functional requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe housekeeping gene expression patterns from Figure 4B. The Gapdh uniformity (C57) validates its housekeeping role. The Ftl1 pattern (C58-C59) includes an unexpected finding in Club cells. The Actb pattern (C60-C61) is logically linked to cellular functions with appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "8ef71169-acb8-423d-a834-4aae20c78044",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Spatial remapping validates automated cell classification: Club cells localize to bronchial epithelium, AT1/AT2 cells to alveoli, BASCs to bronchioalveolar junctions, macrophages to alveolar lumen with rounded morphology, and Otherd cells to pulmonary arteries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 describe spatial validation from Figure 4C-D. The anatomical localizations match known lung biology and validate the unsupervised clustering (no spatial information was used in classification). The BASC localization (C64) is confirmed by citation to Kim et al., 2005.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PLISH discovered that murine Club cells segregate into two anatomically distinct populations: ActbHi cells cluster at the bronchial terminus while ActbLo cells populate proximal domains, demonstrating PLISH's ability to integrate molecular and spatial features for novel biological insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 and C98 describe a novel finding from Figure 4D-E. The spatial segregation of Club cell subclasses is clearly documented and represents a discovery enabled by PLISH's combined molecular and spatial profiling. While the biological significance is unclear (C71), the observation is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PLISH combines high performance (specificity via coincidence detection, bright puncta via RCA, multiplexing via barcoding) with practical advantages: uses commodity reagents, costs ~$3/gene, requires no specialized equipment, and is technically simple and accessible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 and C95-C100 summarize PLISH's technical advantages. The cost calculation (C79) is transparent and reasonable. The accessibility claims (C76, C100) are supported by the use of standard reagents and equipment described in methods. These represent important practical advantages for technology adoption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PLISH enables interrogation of entire molecular systems (pathways, receptor families) and is advantageous for deep profiling where background increases with probe complexity. It can distinguish biological variation from technical artifacts and provides essential spatial context for understanding tissue organization and diseased states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 and C89-C91 make forward-looking statements about PLISH applications. While logically sound based on demonstrated capabilities, these are largely speculative (C89 explicitly labeled as speculation). The advantages for deep profiling (C81) and disease analysis (C91) are reasonable inferences but lack direct experimental validation in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "PLISH complements scRNA-seq by providing spatial and cytological information that scRNA-seq lacks, while scRNA-seq offers greater gene depth. ScRNA-seq is less sensitive, loses spatial information, and induces artifactual expression changes during dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 compare PLISH to scRNA-seq. The complementary strengths are appropriately characterized with citations (van den Brink et al., 2017; Lee et al., 2015) supporting the dissociation artifacts (C86). The comparison is fair and acknowledges scRNA-seq's advantage in gene depth (C83).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "ffd46721-828e-4b33-a2bd-f0d16e05acc0",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Oligonucleotide-antibody conjugates enable mixing protein and RNA targets in multiplexed format, and comprehensive molecular maps of tissues will fundamentally impact basic science and medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 references prior work (Weibrecht et al., 2013) on oligonucleotide-antibody conjugates but doesn't demonstrate this capability. Claim C94 is speculative about future impact. While plausible, these claims lack direct experimental support in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    },
+    {
+      "id": "26c3a935-effb-479d-b7f2-cb4f45567bd9",
+      "content_id": "55f3d079-4ec1-4418-81ba-3881ff76a717",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "PLISH mechanism: proximity ligation at Holliday junctions adapted from antibody-based protocols, using conventional oligonucleotides and two commercial enzymes (ligase and polymerase) that are small and diffuse rapidly, enabling RCA to generate bright, uniquely barcoded puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C109 describe PLISH's molecular mechanism with appropriate citations (Labib et al., 2013; S\u00f6derberg et al., 2006). The enzyme properties (C108-C109) are supported by multiple citations on size and diffusion. This provides clear mechanistic understanding of how PLISH works.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:54:39.598314Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44cc8b5c-b520-4d30-9038-c82bab558c4f",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "6c3d63ae-f993-4b01-b0dd-eb13f5476e24",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "12cb339d-dece-46da-af9a-baa0fc57bdc9",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "ff906edf-fbad-409f-8a2c-1cd69647e106",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "a7b0d2ff-408e-40b7-987b-49e665f43f91",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "1de3e174-03f3-4519-b42b-c7b5ef4db5ae",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "d1359a7b-4dda-475d-af10-8c0ca333a003",
+      "result_id": "63844d01-e636-4825-951b-7910b159855a"
+    },
+    {
+      "claim_id": "b9f83d8b-42b2-4e4c-828a-398adbc4f201",
+      "result_id": "11132640-0cfc-4902-8cb0-06cc34f98223"
+    },
+    {
+      "claim_id": "48461a36-783a-4102-8645-ed4353d724d9",
+      "result_id": "11132640-0cfc-4902-8cb0-06cc34f98223"
+    },
+    {
+      "claim_id": "8b0310f0-3429-423e-bcd4-b62d13d1be64",
+      "result_id": "11132640-0cfc-4902-8cb0-06cc34f98223"
+    },
+    {
+      "claim_id": "96f011a6-ddcc-4032-bb9e-b4aad81d2d3b",
+      "result_id": "11132640-0cfc-4902-8cb0-06cc34f98223"
+    },
+    {
+      "claim_id": "bb21c8cd-1468-44ec-a81e-d6adfda56f16",
+      "result_id": "11132640-0cfc-4902-8cb0-06cc34f98223"
+    },
+    {
+      "claim_id": "4e7bb467-338b-4fc6-9c8b-3c89cac7c87c",
+      "result_id": "3a7c5ad0-27d4-475e-863b-a76a0a86c044"
+    },
+    {
+      "claim_id": "c6ce5188-3524-492d-a930-202bbe07aeb4",
+      "result_id": "3a7c5ad0-27d4-475e-863b-a76a0a86c044"
+    },
+    {
+      "claim_id": "59e178c4-c695-40dc-b8b3-408c08109168",
+      "result_id": "3a7c5ad0-27d4-475e-863b-a76a0a86c044"
+    },
+    {
+      "claim_id": "45d0ca39-606d-4245-b965-42dbecb21bff",
+      "result_id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49"
+    },
+    {
+      "claim_id": "59530c05-7468-4a6e-aacf-e447b42f5cc4",
+      "result_id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49"
+    },
+    {
+      "claim_id": "6534eec1-6e49-4b2f-88cf-afc1eb7d5966",
+      "result_id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49"
+    },
+    {
+      "claim_id": "ef5a43de-e872-4ba6-8a63-e1a6480068a0",
+      "result_id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49"
+    },
+    {
+      "claim_id": "83056ca9-3505-42ce-807e-6e5b278bc1db",
+      "result_id": "539b3c7d-6de2-4222-9cbf-4eab3f99dc49"
+    },
+    {
+      "claim_id": "0e8e3e5f-5e3e-4c11-9d83-c513a1f420a6",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "dd758bdd-b739-4c14-af12-3b8954e6b855",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "9ad2bdd9-3cdd-409d-a313-99c3cd45353e",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "c43886ff-fff8-4432-be9d-65ab0156f118",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "a5d2c20f-7223-42c4-8493-6fe607056446",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "83da8be4-a5d6-4677-aa24-f67c6ba57f5f",
+      "result_id": "e3b57988-6023-4e0a-b51b-ac5e95f0b91d"
+    },
+    {
+      "claim_id": "7c09dede-3776-4119-82ec-3352d3fc4f13",
+      "result_id": "d8da841e-7461-402a-90ef-d5cd3ef43589"
+    },
+    {
+      "claim_id": "c59a13b0-c9eb-4245-8d24-3d1efd49ea45",
+      "result_id": "d8da841e-7461-402a-90ef-d5cd3ef43589"
+    },
+    {
+      "claim_id": "fa579550-e671-4c97-a978-68cf04c2c7b1",
+      "result_id": "d8da841e-7461-402a-90ef-d5cd3ef43589"
+    },
+    {
+      "claim_id": "4308bfc6-db18-463a-9409-8c8f95fe4257",
+      "result_id": "9cefced1-753d-4ce8-8eb9-ca2a3d583c55"
+    },
+    {
+      "claim_id": "0afda134-d9fc-4560-b533-8fd2551b635d",
+      "result_id": "9cefced1-753d-4ce8-8eb9-ca2a3d583c55"
+    },
+    {
+      "claim_id": "9db78f5a-6068-41c9-90db-71cb313089fb",
+      "result_id": "9cefced1-753d-4ce8-8eb9-ca2a3d583c55"
+    },
+    {
+      "claim_id": "2d332f08-2ee6-43c6-b871-d1aedfe2c2d7",
+      "result_id": "a5007f65-6b85-4035-b430-51483d26abdb"
+    },
+    {
+      "claim_id": "49d73e80-9199-4a74-be90-1737b45250d1",
+      "result_id": "a5007f65-6b85-4035-b430-51483d26abdb"
+    },
+    {
+      "claim_id": "b96e63c2-a5dc-4d1a-b5de-176d40c9f838",
+      "result_id": "a5007f65-6b85-4035-b430-51483d26abdb"
+    },
+    {
+      "claim_id": "67987217-3752-4a06-9ecd-c854c2a34c47",
+      "result_id": "a5007f65-6b85-4035-b430-51483d26abdb"
+    },
+    {
+      "claim_id": "8ce94217-bdb6-454d-8008-7eafa1767ff5",
+      "result_id": "a5007f65-6b85-4035-b430-51483d26abdb"
+    },
+    {
+      "claim_id": "2ac3045d-487c-41e1-9dc7-ec67a59c2939",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "b0cdfd8e-be71-4380-a9f0-6f53b08a12c1",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "40dc5581-ece1-42ff-be81-dc62c162f283",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "7b6c2fe2-a1e0-439f-9e34-5b4abfe66bcc",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "bf493bce-9b6c-488c-85a3-f2a261c2eafc",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "5a1191d6-11d1-41ad-80ed-b478a2ddeff1",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "019df457-239f-4345-b975-782cb7aa03e4",
+      "result_id": "d70bb4be-2106-44d8-b892-cc7e9bacc744"
+    },
+    {
+      "claim_id": "0589103f-9ec8-4225-9572-bfe4b7949443",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "de8b6c0e-3de4-484f-9d3d-bc4aee3922f6",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "2a69e6f9-dfe1-4454-84b6-5b83eb48a19d",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "c2f63adb-d4da-4fba-a4c8-69721bc4f770",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "b3e019cc-5245-4c36-8f46-c5ebb0f105da",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "ac33cd87-f31e-4aa8-bf59-05ae56a6f553",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "0d44f5d0-9790-4b50-97d8-b9dfbbcc0e28",
+      "result_id": "b6c0cf80-4c94-4d70-b284-cbc36bd3a5e6"
+    },
+    {
+      "claim_id": "7a56d91d-56ab-41f7-99a3-32811c9e5cf3",
+      "result_id": "c4a41f05-d50c-454f-9e7c-9213806c146d"
+    },
+    {
+      "claim_id": "f4015489-0567-4eb9-8106-918c585dbf99",
+      "result_id": "c4a41f05-d50c-454f-9e7c-9213806c146d"
+    },
+    {
+      "claim_id": "52117d69-f14e-4345-a799-40873b2200b2",
+      "result_id": "c4a41f05-d50c-454f-9e7c-9213806c146d"
+    },
+    {
+      "claim_id": "a26bf5b7-f24a-4387-9a9b-9db52a01a1ce",
+      "result_id": "c4a41f05-d50c-454f-9e7c-9213806c146d"
+    },
+    {
+      "claim_id": "2ed2c667-dd90-4b13-af82-dcabd0b2f582",
+      "result_id": "c4a41f05-d50c-454f-9e7c-9213806c146d"
+    },
+    {
+      "claim_id": "c70e8c6d-0c35-486e-b7ba-6def0fce9142",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "cfec5385-aa65-443f-b012-4fae8b04f899",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "885f3f79-ca1b-4673-9f40-69e85bdea18a",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "3e7890ec-7c34-4b5e-82a3-33586e913776",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "625fc6f9-25e5-4be0-ab26-d0936082e401",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "145707a3-a619-4e90-9801-687297a26dcd",
+      "result_id": "004060d2-2ed3-43d1-a2be-acffd4b1fe27"
+    },
+    {
+      "claim_id": "314e84a4-2e4e-41a9-9ce5-3637974a5a74",
+      "result_id": "8f4bdf74-4ca0-4a12-bc4e-8909d5e521e4"
+    },
+    {
+      "claim_id": "e98495f8-4a39-4410-bb99-67dcfe3b5a78",
+      "result_id": "8f4bdf74-4ca0-4a12-bc4e-8909d5e521e4"
+    },
+    {
+      "claim_id": "2bde3962-3227-4178-8d1c-0e2a01342d33",
+      "result_id": "8f4bdf74-4ca0-4a12-bc4e-8909d5e521e4"
+    },
+    {
+      "claim_id": "d219000f-7a7c-4fc1-b249-bdfb92864911",
+      "result_id": "8f4bdf74-4ca0-4a12-bc4e-8909d5e521e4"
+    },
+    {
+      "claim_id": "fc09cf46-ea39-4ae5-ab85-a2a8d1efefa8",
+      "result_id": "3549486f-6d3a-489f-9c65-1fa669c72f6c"
+    },
+    {
+      "claim_id": "21ef1740-86f2-478f-88d2-aca0b362706f",
+      "result_id": "3549486f-6d3a-489f-9c65-1fa669c72f6c"
+    },
+    {
+      "claim_id": "c8d3cbc6-4349-4dd9-9aa1-c8d4834c58fa",
+      "result_id": "3549486f-6d3a-489f-9c65-1fa669c72f6c"
+    },
+    {
+      "claim_id": "3a0bd43d-f590-4e0f-bbd3-34e2eaca10b8",
+      "result_id": "3549486f-6d3a-489f-9c65-1fa669c72f6c"
+    },
+    {
+      "claim_id": "f0caca15-2d58-46e1-85aa-942a13898da5",
+      "result_id": "bdd2d6d4-1f40-401f-9865-f96f493e648e"
+    },
+    {
+      "claim_id": "aa3a5593-d182-4701-a37b-822018b28a68",
+      "result_id": "bdd2d6d4-1f40-401f-9865-f96f493e648e"
+    },
+    {
+      "claim_id": "dda75a39-abc8-4df9-9f01-745134552db9",
+      "result_id": "bdd2d6d4-1f40-401f-9865-f96f493e648e"
+    },
+    {
+      "claim_id": "bf67ed90-be5b-4714-b773-ebb958fbf934",
+      "result_id": "bdd2d6d4-1f40-401f-9865-f96f493e648e"
+    },
+    {
+      "claim_id": "4a5a145e-c434-4d80-9cfd-a3ef0569489f",
+      "result_id": "bdd2d6d4-1f40-401f-9865-f96f493e648e"
+    },
+    {
+      "claim_id": "3cb2e1fd-1a3a-48c9-8127-5e91cd541596",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "17d164c5-f158-4114-b620-752b3a5a5233",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "6e49e50b-5354-4eff-890b-abb632c316ff",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "20b58d1f-68d9-43c7-99b2-d0f3cb12a517",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "182060d7-61cf-450d-a7c7-57b9741d1f6e",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "33c6aa46-b532-428f-a3da-a2ff3a1d9b52",
+      "result_id": "8ef71169-acb8-423d-a834-4aae20c78044"
+    },
+    {
+      "claim_id": "693557ea-08ff-48ef-91fe-b44eb39a2f0d",
+      "result_id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e"
+    },
+    {
+      "claim_id": "d6f1ddb8-77c1-4ff6-b595-6a2e00006d21",
+      "result_id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e"
+    },
+    {
+      "claim_id": "649d3aa1-304f-4322-932c-5d71d2c31dca",
+      "result_id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e"
+    },
+    {
+      "claim_id": "53432903-05b9-47d8-a373-0a8abd796723",
+      "result_id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e"
+    },
+    {
+      "claim_id": "e637bb3b-6c10-4947-8db5-ed156732cb53",
+      "result_id": "4bdf531c-b6c4-4b63-b1a5-b5258577dd0e"
+    },
+    {
+      "claim_id": "97dbf791-e689-4f8a-9713-fb898abe6a52",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "1354a92f-b9a9-4f1a-853a-949726c18104",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "2e587f03-af63-46a6-bac1-bb4cccd6bb50",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "b0ef86c0-e2ed-4036-aa51-ba652badaedf",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "f70a23c2-3a1e-4a10-973e-efa3ebd00623",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "4c89607b-05be-410e-9eef-3b1930b9b31c",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "e66b6533-fa8a-4ac7-b273-c01ad9f90923",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "95ed9c31-0871-40cd-9b83-1a96dbc2041e",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "210c7f34-627b-420f-8ef1-48ce547382bc",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "fecd0610-cfcc-47ab-bc0d-5fb9e8ce7408",
+      "result_id": "6e388bad-b4c7-40c9-9168-6edf4eb0fcb6"
+    },
+    {
+      "claim_id": "6c17bbb8-90cf-45ad-a72a-cf62aff9908b",
+      "result_id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f"
+    },
+    {
+      "claim_id": "f4417026-1575-4e03-8859-63f1dd6e0ae9",
+      "result_id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f"
+    },
+    {
+      "claim_id": "9409a241-75c6-45f7-933d-b6344576b82c",
+      "result_id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f"
+    },
+    {
+      "claim_id": "2b46df20-10f6-4b6a-900a-5445ec93ac2a",
+      "result_id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f"
+    },
+    {
+      "claim_id": "99c27acd-8940-42aa-9a9d-e8ffd4e5ae36",
+      "result_id": "43e9c483-f6b3-4b83-b417-99f81c93cc0f"
+    },
+    {
+      "claim_id": "6be35bb0-2882-4c73-b779-d73ea29be474",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "cb9d2659-65be-4f18-aec6-b4d4605a3e2d",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "45ca8b51-1f93-43c5-81f0-1cb05ab79020",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "6387cfdb-3521-4eea-ae9d-0d6357fc828d",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "7233f8c9-0f28-4b6a-9c02-56e6c8ed3e85",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "a206b04d-9dd8-4e33-a712-dc4a7cc23b72",
+      "result_id": "0d930b77-030b-4562-bed8-48a1b0bf2bfe"
+    },
+    {
+      "claim_id": "36563c50-79c8-4714-ac48-b1caa1120745",
+      "result_id": "ffd46721-828e-4b33-a2bd-f0d16e05acc0"
+    },
+    {
+      "claim_id": "83a26ee2-7cba-4f10-9807-91ced2cc836e",
+      "result_id": "ffd46721-828e-4b33-a2bd-f0d16e05acc0"
+    },
+    {
+      "claim_id": "b444f34c-aeff-4221-911f-900504bb1ea1",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "618635cc-029b-45a9-b175-48dd85fc8112",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "6a968cf4-7901-4786-8dba-327af872e4e5",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "668dc71e-c3e9-46ba-b2d0-a205c41c5228",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "db9affb9-f7d5-421f-9e4a-7f70983352d8",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "c13702fa-4f02-4f65-add0-23571308336f",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "198f5a1e-9caf-4cbf-ab49-f7739d6cdede",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    },
+    {
+      "claim_id": "f35ec0ea-d0c0-4d97-bbe0-475db63817ee",
+      "result_id": "26c3a935-effb-479d-b7f2-cb4f45567bd9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C16",
+      "C17",
+      "C92"
+    ],
+    "result": "Trypanosomes lack selective transcription of individual protein-coding genes by RNA polymerase II, requiring post-transcriptional regulation of mRNA levels. Genes are transcribed polycistronically and processed by trans-splicing to produce individual mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10, C16, C17, and C92 collectively establish the foundational biology of trypanosome gene expression. These claims are well-supported by extensive citations to established literature (Van der Ploeg 1986, Worthey et al. 2003, Sutton and Boothroyd 1986, etc.) and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A novel codon usage metric (geCAI) was developed that maximizes correlation between codon choice and mRNA abundance. geCAI differs from conventional CAI by using a global rather than local constraint on codon weights, achieving a Spearman's rank correlation of \u03c1 = 0.55 with mRNA levels for 5136 single-copy genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C44, and C97-C101 describe the development and performance of geCAI. The methodology is clearly described, the computational approach is documented with available code (C3 evidence), and the correlation coefficient (\u03c1 = 0.55, C44) is supported by data in Figure 3C. The key innovation\u2014global vs. local constraints\u2014is well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Conventional codon metrics (CAI and tAI) showed limited correlation with mRNA levels in trypanosomes (\u03c1 = 0.16 and \u03c1 = 0.13 respectively), likely because they assume equivalent effectiveness of optimal codons across amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C52-C53 provide comparative data showing geCAI outperforms CAI and tAI, supported by Figure 3\u2014figure supplement 1 and Supplementary file 6B. Claims C49-C50 explain the theoretical limitation of these metrics with citation support (Gardin et al. 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Initial observations showed that adjusting codon usage in a transgene was more effective at reducing expression than modifications to UTRs or splice sites, and that codon-altered mRNA levels correlated with protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the initial observations that motivated the study. These are supported by data in Figure 1, Figure 1\u2014figure supplement 1, and Figure 2\u2014figure supplement 1. The experimental design is clear and the observations are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "GFP fluorescence measured by flow cytometry is a valid proxy for total GFP protein, with a Pearson's correlation of R\u00b2 = 0.965 between fluorescence and western blot quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 validate the use of fluorescence as a protein measurement. This is supported by rigorous comparison data in Figure 2\u2014figure supplement 2, including standard curves and multiple independent clones. The high correlation coefficient provides strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "geCAI scores predicted GFP protein abundance with 84% accuracy (r\u00b2 = 0.84) and mRNA levels with 92% accuracy (r\u00b2 = 0.92) over a ~25-fold range. Codon use was the major determinant of steady-state mRNA and protein levels for transgenes with identical UTRs and genomic integration sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C54-C58 present the core experimental validation of geCAI using GFP reporters. The data in Figure 4A-B strongly support these claims, with high correlation coefficients and appropriate experimental controls (identical UTRs, integration sites, amino acid sequences). The 25-fold range is comparable to endogenous variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cytosolic ribosomal protein mRNAs have significantly higher geCAI scores (mean 0.439 \u00b1 0.034) than mitochondrial ribosomal protein mRNAs (mean 0.378 \u00b1 0.033), with p < 0.00001, consistent with higher abundance of cytosolic ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide validation of geCAI using endogenous genes with known differential expression. The statistical analysis is appropriate (unpaired t-test), the p-value is highly significant, and the biological interpretation is sound. Data are shown in Figure 5 and Supplementary file 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C95",
+      "C96"
+    ],
+    "result": "GFP mRNAs with lower geCAI scores had shorter half-lives after inhibition of trans-splicing with sinefungin. GFPs with highest geCAI scores (0.547, 0.520) showed no decay over 60 min, while those with lower scores (0.493, 0.432, 0.375) decayed inversely proportional to geCAI, with half-lives between 10-80 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C95-C96 demonstrate that geCAI predicts mRNA turnover rates. The sinefungin experiments in Figure 6 provide clear time-course data with three independent clones per construct. The range of half-lives matches published endogenous mRNA data (Fadda et al. 2014, C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "geCAI scores showed significant correlation with published mRNA half-life data (\u03c1 = 0.22-0.33), explaining a significant proportion of variance in mRNA turnover rates at the transcriptome level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 extend the half-life analysis to genome-wide data. The correlations are modest but statistically significant, supported by Figure 6\u2014figure supplement 1. The variation in correlation coefficients between different geCAI calculations is acknowledged and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Blocking translation with a 48 bp hairpin in the 5'UTR stabilized GFP mRNAs, with stabilization inversely proportional to geCAI score (1.4-fold for high geCAI to 14-fold for low geCAI). This demonstrates that translation is necessary for geCAI-mediated mRNA turnover and that differences result from active destabilization rather than inherent sequence instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 provide mechanistic insight through translation-blocking experiments. The data in Figure 7 and Supplementary files 6C-E clearly show no GFP protein expression with hairpins and increased mRNA stability inversely proportional to geCAI. The logic connecting these observations to the conclusions is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A 12 bp stem loop reduced translation frequency 9-fold (to 11% of control) but caused only modest reduction in mRNA levels (to 76%, p=0.13), suggesting geCAI-mediated turnover depends on ribosome progression rate rather than translation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 present clear experimental data from Figure 8. However, C79-C80 make mechanistic inferences that are not fully supported. The p=0.13 for mRNA difference (C78) indicates the reduction is not statistically significant, yet the authors conclude translation frequency has \"only a small effect.\" The inference about ribosome progression vs. frequency (C80) is speculative and marked as such in the evidence. Additional experiments would be needed to distinguish these mechanisms definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Ribosome density showed weak correlation with geCAI (R\u00b2 = 0.141-0.244), and there is great variation in ribosome density among mRNAs with similar expression levels. This suggests translation frequency/ribosome density alone is insufficient to determine mRNA turnover, and geCAI-mediated turnover depends on additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 analyze the relationship between ribosome density and geCAI using published ribosome profiling data. The weak correlations (C84) and variation in density at similar expression levels (C82) are supported by data in Supplementary file 10. The inference that additional factors are involved (C86) is reasonable given the incomplete correlation, though marked as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Developmentally regulated mRNAs deviate from geCAI predictions: PCF-upregulated mRNAs are expressed higher than predicted, while PCF-downregulated mRNAs are expressed lower than predicted. This indicates developmental regulation involves both stabilization and destabilization pathways that modulate geCAI-determined levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 analyze developmentally regulated genes, supported by data in Figure 9. The bidirectional deviation from geCAI predictions provides evidence for both stabilizing and destabilizing regulatory mechanisms. The inference (C89) is logical and well-supported by the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C109",
+      "C121",
+      "C129"
+    ],
+    "result": "Codon use is central to regulation of mRNA levels in trypanosomes, with geCAI scores predicting constitutively expressed mRNA levels. The half-life of most mRNAs is set by a translation-associated process, likely involving ribosome progression speed similar to mechanisms in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C109, C121, and C129 represent the main conclusions of the study. These are well-supported by the collective experimental evidence: geCAI development and validation (Figures 3-4), half-life measurements (Figure 6), translation-blocking experiments (Figures 7-8), and comparison with yeast mechanisms (citations). The lack of transcriptional regulation in trypanosomes makes the codon effect particularly apparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Only six codons have geCAI value of 1, and there is unexpected variation between codons for similar amino acids (e.g., serine codons all <0.25 while threonine codons range 0.75-1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe observations from the calculated geCAI values in Table 1 and Figure 3B. These are straightforward observations from the data, though the biological explanation for the variation remains unclear (acknowledged in the text).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C105"
+    ],
+    "result": "A mid-log phase PCF cell contains ~50,000 mRNA molecules, with 20 TPM equivalent to one mRNA/cell. Most single-copy genes are expressed at 1-40 mRNAs per diploid gene pair per cell, with geCAI enabling prediction of expression ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C105 provide quantitative context for mRNA abundance. C45 is supported by citation (Dhalia et al. 2006), C46-C47 are calculations based on this value, and C105 interprets the predictive power of geCAI. These provide useful biological context for the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C59"
+    ],
+    "result": "Determinants of mRNA levels exist beyond codon use, potentially including differential transcription rates of polycistronic units and developmental regulation in other life stages. Discrepancies between geCAI predictions and observed levels indicate action of other regulatory mechanisms like RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 and C59 acknowledge limitations and alternative explanations. These are appropriately cautious statements about factors that could contribute to variation around geCAI predictions. C107 is marked as speculation, which is appropriate. C59 provides a useful interpretive framework for deviations from predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Developmentally regulated mRNAs show deviations from geCAI predictions consistent with cis-element-mediated stabilization or destabilization. The weak correlation between geCAI and ribosome density, and the minimal effect of reduced translation frequency on mRNA levels, suggest translation initiation frequency and mRNA stability are not necessarily linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 interpret developmental regulation data with appropriate citations. Claims C113-C115 draw inferences from the ribosome density and 12 bp hairpin data. While C115 is marked as speculation, the overall interpretation is reasonable given the data, though additional experiments would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C130"
+    ],
+    "result": "Similar codon-dependent mRNA stability mechanisms exist in yeast (involving DHH1 helicase and NOT1 deadenylase). Trypanosomes have a DHH1 orthologue that co-precipitates with the NOT complex. If the mechanism is conserved, it likely has ancient evolutionary origins dating to the last eukaryotic common ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 describe the yeast mechanism with appropriate citations. Claims C122-C125 establish the presence of orthologous machinery in trypanosomes with citation support. Claim C130 is marked as speculation about evolutionary origins, which is appropriate given the comparative evidence. The logic is sound though the mechanistic conservation remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Codon choice is a major determinant of mRNA levels in yeast (operating through DHH1/NOT1) and maternal mRNA turnover in zebrafish and Drosophila. Changes in tRNA pools may regulate gene expression during developmental transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C126-C128 summarize prior work in other organisms with appropriate citations (Presnyak et al. 2015, Radhakrishnan et al. 2016, Mishima et al. 2016, Bazzini et al. 2016, Bloom-Ackermann et al. 2014). These provide important context for the trypanosome findings. C127 is appropriately marked as speculation.",
+    "result_type": "MINOR"
+  }
+]

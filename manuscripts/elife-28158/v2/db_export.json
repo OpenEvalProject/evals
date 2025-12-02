@@ -1,0 +1,1609 @@
+{
+  "submission": {
+    "id": "67d492da-6589-4096-943b-4a64422a7d98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:09:44.664127Z",
+    "updated_at": "2025-12-01T21:09:44.664127Z"
+  },
+  "content": [
+    {
+      "id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "submission_id": "67d492da-6589-4096-943b-4a64422a7d98",
+      "content_type": "manuscript",
+      "content_text": "# Rapid whole brain imaging of neural activity in freely behaving larval zebrafish (Danio rerio)\n\n## Authors\n\n- Lin Cong<sup>1</sup>\n- Zeguan Wang<sup>2</sup>\n- Yuming Chai<sup>2</sup>\n- Wei Hang<sup>1</sup>\n- Chunfeng Shang<sup>1</sup>\n- Wenbin Yang<sup>2</sup>\n- Lu Bai<sup>1</sup>\n- Jiulin Du<sup>1</sup>\n- Kai Wang<sup>1</sup> ([ORCID: 0000-0001-7858-944X](https://orcid.org/0000-0001-7858-944X)) \u2020\n- Quan Wen<sup>2</sup> ([ORCID: 0000-0003-0268-8403](https://orcid.org/0000-0003-0268-8403)) \u2020\n\n### Affiliations\n\n1. Institute of Neuroscience, State Key Laboratory of Neuroscience, CAS Center for Excellence in Brain Science and Intelligence Technology Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences Shanghai China\n2. Center for Integrative Imaging, Hefei National Laboratory for Physical Sciences at Microscale, CAS Center for Excellence in Brain Science and Intelligence Technology, School of Life Sciences University of Science and Technology of China Hefei China\n3. University of Chinese Academy of Sciences Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe internal brain dynamics that link sensation and action are arguably better studied during natural animal behaviors. Here, we report on a novel volume imaging and 3D tracking technique that monitors whole brain neural activity in freely swimming larval zebrafish (Danio rerio). We demonstrated the capability of our system through functional imaging of neural activity during visually evoked and prey capture behaviors in larval zebrafish.\n\n## Introduction\n\nA central goal in systems neuroscience is to understand how distributed neural circuitry dynamics drive animal behaviors. The emerging field of optical neurophysiology allows monitoring (Kerr and Denk, 2008; Dombeck et al., 2007) and manipulating (Wyart et al., 2009; Boyden et al., 2005; Zhang et al., 2007) the activities of defined populations of neurons that express genetically encoded activity indicators (Chen et al., 2013; Tian et al., 2009) and light-activated proteins (Kerr and Denk, 2008; Boyden et al., 2005; Zhang et al., 2007; Luo et al., 2008). Larval zebrafish (Danio rerio) are an attractive model system to investigate the neural correlates of behaviors owing to their small brain size, optical transparency, and rich behavioral repertoire (Friedrich et al., 2010; Ahrens and Engert, 2015). Whole brain imaging of larval zebrafish using light sheet/two-photon microscopy holds considerable potential in creating a comprehensive functional map that links neuronal activities and behaviors (Ahrens et al., 2012; Ahrens et al., 2013; Engert, 2014).\n\nRecording neural activity maps in larval zebrafish has been successfully integrated with the virtual reality paradigm: closed-loop fictive behaviors in immobilized fish can be monitored and controlled via visual feedback that varies according to the electrical output patterns of motor neurons (Ahrens et al., 2012; Engert, 2012). The behavioral repertoire, however, may be further expanded in freely swimming zebrafish whose behavioral states can be directly inferred and when sensory feedback loops are mostly intact and active. For example, it is likely that vestibular as well as proprioceptive feedbacks are perturbed in immobilized zebrafish (Engert, 2012; Bianco et al., 2012). The crowning moment during hunting behavior (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013) \u2014 when a fish succeeds in catching a paramecium \u2014 cannot be easily replicated in a virtual reality setting. Therefore, whole brain imaging in a freely swimming zebrafish may allow optical interrogation of brain circuits underlying a range of less explored behaviors.\n\nAlthough whole brain functional imaging methods are available for head-fixed larval zebrafish, imaging a speeding brain imposes many technical challenges. Current studies on freely swimming zebrafish are either limited to non-imaging optical systems (Naumann et al., 2010) or wide field imaging at low resolution (Muto et al., 2013). While light sheet microscopy (LSM) has demonstrated entire brain coverage and single neuron resolution in restrained zebrafish (Ahrens et al., 2013), it lacks the speed to follow rapid fish movement. Moreover, in LSM, the sample is illuminated from its side, a configuration that is difficult to be integrated with a tracking system. Conventional light field microscopy (LFM) (Broxton et al., 2013; Prevedel et al., 2014) is a promising alternative due to its higher imaging speed; however, its spatial resolution is relatively low. Specialized LFMs for monitoring neural activity utilizing temporal information were also developed recently (P\u00e9gard et al., 2016; N\u00f6bauer et al., 2017), which rely on spatiotemporal sparsity of fluorescent signals and cannot be applied to moving animals.\n\nHere, we describe a fast 3D tracking technique and a novel volume imaging method that allows whole brain calcium imaging with high spatial and temporal resolution in freely behaving larval zebrafish. Zebrafish larvae possess extraordinary mobility. They can move at an instantaneous velocity up to 50 mm/s (Severi et al., 2014) and acceleration of 1 g (9.83 m/s2). To continuously track fish motion, we developed a high-speed closed-loop system in which (1) customized machine vision software allowed rapid estimation of fish movement in both the x-y and z directions; and, (2) feedback control signals drove a high-speed motorized x-y stage (at 300 Hz) and a piezo z stage (at 100 Hz) to retain the entire fish head within the field of view of a high numerical aperture (25\u00d7, NA\u00a0=\u00a01.05) objective.\n\nLarval zebrafish can make sudden and swift movements that easily cause motion blur and severely degrade imaging quality. To overcome this obstacle, we developed a new eXtended field of view LFM (XLFM). The XLFM can image sparse neural activity over the larval zebrafish brain at near single cell resolution and at a volume rate of 77 Hz, with the aid of genetically encoded calcium indicator GCamp6f. Furthermore, the implementation of flashed fluorescence excitation (200 \u03bcs in duration) allowed blur-free fluorescent images to be captured when a zebrafish moved at a speed up to 10 mm/s. The seamless integration of the tracking and imaging system made it possible to reveal rich whole brain neural dynamics during natural behavior with unprecedented resolution. We demonstrated the ability of our system during visually evoked and prey capture behaviors in larval zebrafish.\n\n## Results\n\nThe newly developed XLFM is based on the general principle of light field (Adelson and Wang, 1992) and can acquire 3D information from a single camera frame. XLFM greatly relaxed the constraint imposed by the tradeoff between spatial resolution and imaging volume coverage in conventional LFM. This achievement relies on optics and in computational reconstruction techniques. First, a customized lenslet array (Figure 1a, Figure 1\u2014figure supplement 1) was placed at the rear pupil plane of the imaging objective, instead of at the imaging plane as in LFM. Therefore, in ideal conditions, a 2D spatially invariant point spread function (PSF) could be defined and measured; in practice, the PSF was approximately spatially invariant (see Materials\u00a0and\u00a0methods). Second, the aperture size of each micro-lens was decoupled from their interspacing and spatial arrangement, so that both the imaging volume and the resolution could be optimized simultaneously given the limited imaging sensor size. Third, multifocal imaging (Abrahamsson et al., 2013; Perwass and Wietzke, 2012) was introduced to further increase the depth of view by dividing the micro-lenses array into two groups whose focal planes were at different axial positions (Figure 1b and c, Figure 1\u2014figure supplements 3 and 4). Fourth, a new computational algorithm based on optical wave theory was developed to reconstruct the entire 3D volume from one image (Figure 1\u2014figure supplement 5) captured by a fast camera (see Materials\u00a0and\u00a0methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of XLFM. Lenslet array position was conjugated to the rear pupil plane of the imaging objective. Excitation laser (blue) provided uniform illumination across the sample. (b\u2013c) Point sources at two different depths formed, through two different groups of micro-lenses, sharp images on the imaging sensor, with positional information reconstructed from these distinct patterns. (d) Maximum intensity projections (MIPs) on time and space of time series volume images of an agarose-restrained larval zebrafish with pan-neuronal nucleus-localized GCaMP6f (huc:h2b-gcamp6f) fluorescence labeling. (e) Normalized neuronal activities of selected neurons exhibited increasing calcium responses after the onset of light stimulation at t\u00a0=\u00a00. Neurons were ordered by the onset time when the measured fluorescence signals reached 20% of their maximum. (f) Selected neurons in (e) were color coded based on their response onset time. Scale bar is 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Customized lenslet array consisted of 27 customized micro-lenses embedded in an aluminum plate with 27 drilled holes. (a) Micro-lenses were divided into two groups (A or B), illustrated in yellow and green, respectively. (b) Micro-lens had a diameter of 1.3 mm and focal length of 26 mm. (c). The aluminum housing plate had a 1.3 mm diameter aperture on one side and 1 mm diameter aperture on the other side. Group A and Group B micro-lenses were displaced axially.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Maximum intensity projections (MIPs) of the measured raw PSF stack. The stack was 2048 pixels\u00a0\u00d7\u00a02048 pixels\u00d7200 pixels with a voxel size of 1.6 \u00b5m\u00a0\u00d7\u00a01.6 \u03bcm \u00d7 2 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Maximum intensity projections (MIP) of PSF_A. PSF_A was extracted from experimentally measured PSF (Figure 1\u2014figure supplement 2) according to individual micro-lens positions in group A.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Maximum intensity projections (MIP) of PSF_B. PSF_B was extracted from experimentally measured PSFs (Figure 1\u2014figure supplement 2) according to individual micro-lens positions in group B.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Raw fluorescence imaging data consisted of 27 sub-images of a larval zebrafish formed by 27 micro-lenses. Under the condition that the PSF is spatially invariant, which is satisfied apart from small aberrations, the algorithm can handle overlapping fish images.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Fourier transforms of raw images of a 0.5-$\\mum$ diameter fluorescent particle placed at different locations (x = \u2212400, 0, 400 \u03bcm; z = \u2212100, 0, 100 \u03bcm) were plotted in log scales. Dashed circles represent in-plane spatial frequency coordinates corresponding to spatial resolutions of 3.2 \u03bcm and 4 \u03bcm, respectively.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Characterization of axial resolution using a 0.5 \u03bcm diameter bright fluorescent particle. (a) Maximum intensity projection of an image stack consisting of the particle\u2019s fluorescent images captured at different z positions. (b) Analysis of the images formed by micro-lenses 1 and 2, indicated by sub-regions in (a). The first and second columns are the particle\u2019s fluorescent images captured at different z positions separated by 5 \u03bcm. The third column is the sum of columns 1 and 2. The fourth column is the Fourier analysis of column three using function: $fx=log\u2061(\u2131(x)$), where $\u2131(x)$ represents the Fourier transform. The fifth column is the deconvolution of column three using Wiener filtering method. Experimentally measured images of the bead at different z positions (z = \u2212100 \u03bcm, z\u00a0=\u00a00 \u03bcm and z\u00a0=\u00a0100 \u03bcm) are employed as PSFs to deconvolve different images (C1, C2 and C3), respectively.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Magnifications of 27 micro-lenses were measured at different locations across the field of view. A fluorescent bead originally placed at the center of the field of view (x, y, z\u00a0=\u00a00) was moved to six different locations (x\u00a0=\u00a0200 \u03bcm, 300 \u03bcm, 400 \u03bcm, \u2212200 \u03bcm, \u2212300 \u03bcm, \u2212400 \u03bcm, y\u00a0=\u00a00, z\u00a0=\u00a00). Six classes of the bead\u2019s image shifts, represented by different colors, were measured. Each class consisted of 27 image shifts formed by 27 micro-lenses. Within each class, image shifts were normalized to the one from the first micro-lens. The first 12 micro-lenses and the rest formed two different groups of micro-lenses: group B and group A, consistent with Figure 1\u2014figure supplements 3 and 4. The magnification variation of a single micro-lens across the field of view was small (<0.3%), suggesting that the spatial invariance of individual micro-lens\u2019 PSF was well preserved across the field of view of \u00d8\u00a0=\u00a0800 \u03bcm. The variation across different micro-lenses within one group (A/B) was more evident (~2%), suggesting that the combined PSF from different micro-lenses was not perfectly spatially invariant.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Maximum intensity projections (MIPs) of a reconstructed fluorescent bead positioned at different locations across the field of view. As the bead moved to the edge of the field of view, the reconstruction became distorted because the magnification variation of the micro-lenses led to spatial variance of total PSF. Scale bars are 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp10-v2.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Characterization of axial resolution using densely packed fluorescent particles (0.5 \u03bcm in diameter) at low SNR. (a) Synthetic XLFM raw image (Materials\u00a0and\u00a0methods) formed by two layers of fluorescent particles with different z positions. (b) Axial resolution at different depths characterized by the minimum separation of two particles in z, which can be resolved using the reconstruction algorithm (Materials\u00a0and\u00a0methods). (c) Left, reconstructed examples of X-Z projections of two particles located at different z positions (\u221270 \u03bcm, \u221230 \u03bcm, 30 \u03bcm, 70 \u03bcm) with different axial separations (6 \u03bcm, 5 \u03bcm, 5 \u03bcm, 6 \u03bcm); right, extracted intensity profiles of these examples.\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp11-v2.jpg)\n\n**Figure 1\u2014figure supplement 11.:** Characterization of the dependence of imaging resolution on the sparseness of the sample using computer simulation. (a) Maximum intensity projections (MIPs) of a numerically simulated (top) and reconstructed (bottom) larval zebrafish with randomly distributed active neurons. Red and green lines indicate positions where simulated (red) and reconstructed (green) cross-sections are compared. We assumed that the total number of neurons in the zebrafish brain is 80,000, and gradually increased the sparseness index \u03c1, the fraction of neurons activated at a given frame. (b\u2013d) Characterization of the reconstruction results for different \u03c1. Insets are magnified views of rectangular regions. Red and green dots are simulated and reconstructed neurons, respectively.\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig1-figsupp12-v2.jpg)\n\n**Figure 1\u2014figure supplement 12.:** Photobleaching was characterized by a total fluorescence intensity change of five 5 dpf zebrafish larval with nucleus-localized GCamp6f (huc:h2b-gcamp6f). Each fish was embedded in 1% agarose and continuously exposed to 2.5 mW/mm2 fluorescence excitation laser (488 nm) illumination. After\u00a0~100 min, corresponding to 300,000 volumes with a volume rate of 50 volumes/s, total fluorescence intensity dropped to half of that at the starting point. Random spikes corresponded to spontaneous neural activity. Fish were alive and swam normally when they were relieved from the agarose after imaging.\n\nWe first characterized the XLFM by imaging 0.5 \u03bcm diameter fluorescent beads. In our design, the system had ~ \u00d8800 \u03bcm in plane coverage (\u00d8 is the diameter of the lateral field of view) and more than 400 \u03bcm depth of view, within which an optimal resolution of 3.4 \u03bcm\u00a0\u00d7\u00a03.4 \u03bcm \u00d7 5 \u03bcm could be achieved over a depth of 200 \u03bcm (Figure 1\u2014figure supplements 6 and 7, Materials\u00a0and\u00a0methods). In the current implementation, however, the imaging performance suffered from the variation in the focal length of the micro-lenses (Figure 1\u2014figure supplement 8), which led to spatial variance of the PSF. As a result, the reconstruction performance and the achievable optimal resolution were shown to degrade beyond the volume of \u00d8500 \u03bcm\u00a0\u00d7\u00a0100 \u03bcm (Figure 1\u2014figure supplements 9 and 10). To minimize the reconstruction time while assuring whole brain coverage (~250 \u03bcm thick), all imaging reconstructions were carried out over a volume of \u00d8800 \u03bcm\u00a0\u00d7\u00a0400 \u03bcm.\n\nWe next characterized the imaging performance by considering more fluorescent light sources distributed within the imaging volume. The achievable optimal resolution depends on the sparseness of the sample, because the information captured by the image sensor was insufficient to assign independent values for all voxels in the entire reconstructed imaging volume. Given the total number of neurons (~80,000 [Hill et al., 2003]) in a larval zebrafish brain, we next introduced a sparseness index \u03c1, defined as the fraction of neurons in the brain active at a given instant, and used numerical simulation and our reconstruction algorithm to characterize the dependence of achievable resolution on \u03c1. We identified a critical \u03c1c \u2248 0.11, below which active neurons could be resolved at the optimal resolution (Figure 1\u2014figure supplement 11b). As \u03c1 increased, closely clustered neurons could no longer be well resolved (Figure 1\u2014figure supplement 11c\u2013d). Therefore, sparse neural activity is a prerequisite in XLFM for resolving individual neurons at the optimal resolution. Moreover, the above characterization assumed an aberration and scattering free environment; complex optical properties of biological tissue could also degrade the resolution (Ji, 2017).\n\nWe demonstrated the capabilities of XLFM by imaging the whole brain neuronal activities of a larval zebrafish (5 d post-fertilization [dpf]) at a speed of 77 volumes/s and relatively low excitation laser exposure of 2.5 mW/mm2 (Figure 1d, Video 1). The fluorescent intensity loss due to photobleaching reached\u00a0~50% when the zebrafish, which expressed pan-neuronal nucleus-labelled GCamp6f (huc:h2b-gcamp6f), was imaged continuously for\u00a0~100 min and over more than 300,000 volumes (Figure 1\u2014figure supplement 12, Video 2 and 3). To test whether XLFM could monitor fast changes in neuronal dynamics across the whole brain at high resolution (close to single neuron level), we first presented the larval zebrafish, restrained in low melting point agarose, with visual stimulation (~2.6 s duration). We found that different groups of neurons in the forebrain, midbrain, and hindbrain were activated at different times (Figure 1e\u2013f, Video 1 and 4), suggesting rapid sensorimotor transformation across different brain regions.\n\n![Video 1.](https://cdn.elifesciences.org/articles/28158/elife-28158-video1.mp4.jpg)\n\n**Video 1.:** Whole brain XLFM imaging of a 5 dpf agarose-embedded larval zebrafish expressing nucleus-localized GCamp6f (huc:h2b-gcamp6f). Light stimulation was introduced at time point t\u00a0=\u00a00. Whole brain activity was recorded at 77 volumes/s.\n\n![Video 2.](https://cdn.elifesciences.org/articles/28158/elife-28158-video2.mp4.jpg)\n\n**Video 2.:** Whole brain XLFM imaging of a 5 dpf agarose-embedded larval zebrafish expressing nucleus-localized GCamp6f (huc:h2b-gcamp6f). Spontaneous neural activity was recorded at 0.6 volumes/s.\n\n![Video 3.](https://cdn.elifesciences.org/articles/28158/elife-28158-video3.mp4.jpg)\n\n**Video 3.:** Whole brain XLFM imaging of a 5 dpf agarose-embedded larval zebrafish expressing cytoplasm-labeled GCamp6s (huc:gcamp6s). Spontaneous neural activity was recorded at 0.6 volumes/s.\n\n![Video 4.](https://cdn.elifesciences.org/articles/28158/elife-28158-video4.mp4.jpg)\n\n**Video 4.:** Whole brain XLFM imaging of a 5 dpf agarose-embedded larval zebrafish expressing cytoplasm-labeled GCamp6s (huc:gcamp6s). Light stimulation was introduced at time point t\u00a0=\u00a00. Whole brain activity was recorded at 50 volumes/s.\n\nTo track freely swimming larval zebrafish, we transferred fish into a water-filled chamber with a glass ceiling and floor. The 20 mm\u00a0\u00d7\u00a020 mm\u00a0\u00d7\u00a00.8 mm-sized chamber was coupled with a piezo actuator and mounted on a high-speed 2D motorized stage (Figure 2). A tracking camera monitored the lateral movement of the fish, and an autofocus camera, which captured light field images, monitored the axial movement of the fish head (Figure 2, Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig2-v2.jpg)\n\n**Figure 2.:** Larval zebrafish swam in a customized chamber with an optically transparent ceiling and floor. The water-filled chamber was mounted on a high-speed three-axis stage (PI M686 and PI P725KHDS). Customized LED rings generated dark field illumination of the zebrafish. The scattered light was collected by four cameras: two cameras below the chamber were used for x-y plane tracking and low magnification real-time (RT) analysis, respectively; two cameras above the chamber and after the imaging objective were used for Z autofocus and high magnification RT analysis. The positional information of the larval zebrafish, acquired from the tracking and autofocus system, was converted to feedback voltage signals to drive the three-axis stage and to compensate for fish movement. The functional imaging system, described in Figure 1, shared the same imaging objective placed above the swimming chamber. The 3D tracking, RT behavioral analysis, and functional imaging system were synchronized for accurate correlation between neural activity and behavioral output.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Autofocus camera behind a one-dimensional lenslet array captured triplet images of the fish head (up). Its autocorrelation function was computed (bottom). (b) Central line profile of the autocorrelation function was extracted and inter-fish distance was computed as local maximums in the autocorrelation function. (c) Axial shift of the fish head, calibrated by moving the piezo at a constant interval, changed linearly (red line) with inter-fish distance.\n\nReal-time machine vision algorithms allowed quick estimate of lateral (within 1 ms) and axial (~5 ms) head positions (see Materials\u00a0and\u00a0methods). The error signals in three dimensions, defined as the difference between the head position and set point, were calculated (Figure 3a) and converted to analog voltage signals through proportional-integral-derivative (PID) control to drive the motorized stage and z-piezo scanner. Tracking and autofocusing allowed for rapid compensation of 3D fish movement (300 Hz in x and y, 100 Hz in z, Figure 3a) and retainment of the fish head within the field of view of the imaging objective.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representative time varying error signals in three dimensions, defined as the difference between real head position and set point. Inset provides magnified view at short time interval. Lateral movement can be rapidly compensated for within a few milliseconds with an instantaneous velocity of up to 10 mm/s. The axial shift was small compared with the depth coverage (200 \u03bcm) during whole brain imaging, and thereby had minor effect on brain activity reconstruction. (b) Tracking images at four time points during prey capture behavior, acquired at low (left) and high (right) magnification simultaneously. Scale bars are 1 mm (left) and 200 \u03bcm (right). (c) Kinematics of behavioral features during prey capture. Shaded region marks the beginning and end of the prey capture process.\n\nOur tracking system permitted high-speed and high-resolution recording of larval zebrafish behaviors. With two cameras acquiring head and whole body videos simultaneously (Figure 2, Figure 3b), we recorded and analyzed in real time (see Materials\u00a0and\u00a0methods) the kinematics of key features during larval zebrafish prey capture (Figure 3b and c, Video 5 and 6). Consistent with several earlier findings (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013), eyes converged rapidly when the fish entered the prey capture state (Figure 3c). Other features that characterized tail and fin movement were also analyzed at high temporal resolution (Figure 3c).\n\n![Video 5.](https://cdn.elifesciences.org/articles/28158/elife-28158-video5.mp4.jpg)\n\n**Video 5.:** Tracking and real time kinematic analysis of larval zebrafish during prey capture behavior at low resolution. Recorded at 190 frames/s.\n\n![Video 6.](https://cdn.elifesciences.org/articles/28158/elife-28158-video6.mp4.jpg)\n\n**Video 6.:** Tracking and real time kinematic analysis of larval zebrafish during prey capture behavior at high resolution. Recorded at 160 frames/s.\n\nThe integration of the XLFM and 3D tracking system allowed us to perform whole brain functional imaging of a freely behaving larval zebrafish (Figure 2). We first replicated the light-evoked experiment (similar to Figure 1), albeit in a freely behaving zebrafish with pan-neuronal cytoplasm-labeled GCaMP6s (huc:gcamp6s), which exhibited faster and more prominent calcium response (Video 7). Strong activities were observed in the neuropil of the optical tectum and the midbrain after stimulus onset. The fish tried to avoid strong light exposure and made quick tail movement at\u00a0~60 Hz. Whole brain neural activity was monitored continuously during the light-evoked behavior, except for occasional blurred frames due to the limited speed and acceleration of the tracking stage.\n\n![Video 7.](https://cdn.elifesciences.org/articles/28158/elife-28158-video7.mp4.jpg)\n\n**Video 7.:** Whole brain XLFM imaging of a 7 dpf freely swimming larval zebrafish expressing cytoplasm-labeled GCamp6s (huc:gcamp6s). Light stimulation was introduced at time point t\u00a0=\u00a00. Whole brain activities were recorded at 77 volumes/s and with a flashed excitation laser under 0.3 ms exposure time.\n\nNext, we captured whole brain neural activity during the entire prey capture process in freely swimming larval zebrafish (huc:gcamp6s, Video 8). When a paramecium moved into the visual field of the fish, groups of neurons, indicated as group one in Figure 4b, near the contralateral optical tectum of the fish were first activated (t1). The fish then converged its eyes onto the paramecium and changed its heading direction in approach (t2). Starting from t2, several groups of neurons in the hypothalamus, midbrain, and hindbrain, highlighted as groups two, three, and four in Figure 4b, were activated. It took the fish three attempts (Figure 4c) to catch and eat the paramecium. After the last try (t4), neuron activity in group one decreased gradually, whereas activities in the other groups of neurons continued to rise and persisted for\u00a0~1 s before the calcium signals decreased. The earliest tectal activity (group 1) responsible for prey detection found here is consistent with previous studies (Semmelhack et al., 2014; Bianco and Engert, 2015). Moreover, our data revealed interesting neural dynamics arising from other brain regions during and after successful prey capture. We also monitored similar behavior in a zebrafish expressing nucleus-localized GCamp6f (huc:h2b-gcamp6f) with better resolution but less prominent calcium response (Video 9).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/28158/elife-28158-fig4-v2.jpg)\n\n**Figure 4.:** (a) Renderings of whole brain calcium activity at six time points (up) and the corresponding behavioral images (bottom). Features used to quantify behavior were: fish-paramecium azimuth \u03b1; convergence angle between eyes \u03b2; head orientation \u03b3; and fish-paramecium distance d. (b) Maximum intensity projections of zebrafish brain with pan-neuronal cytoplasm-labeled GCaMP6s (huc:gcamp6s). Boundaries of four brain regions are color marked. (c) Neural dynamics inferred from GCaMP6 fluorescence changes in these four regions during the entire prey capture behavior (up) and the kinematics of behavioral features (bottom). Note that between t2 and t4, fish-paramecium distance d exhibits three abrupt kinks, representing the three attempts to catch prey.\n\n![Video 8.](https://cdn.elifesciences.org/articles/28158/elife-28158-video8.mp4.jpg)\n\n**Video 8.:** Whole brain XLFM imaging of an 11 dpf freely swimming larval zebrafish expressing cytoplasm-labeled GCamp6s (huc:gcamp6s). The entire process during which the larval zebrafish caught and ate the paramecium was recorded.\n\n![Video 9.](https://cdn.elifesciences.org/articles/28158/elife-28158-video9.mp4.jpg)\n\n**Video 9.:** Whole brain XLFM imaging of a 7 dpf freely swimming larval zebrafish expressing nucleus-localized GCamp6f (huc:h2b-gcamp6f). The entire process during which the larval zebrafish caught and ate the paramecium was recorded.\n\n## Discussion\n\nWhole brain imaging in freely behaving animals has been previously reported in Caenorhabditis elegans, by integrating spinning-disk confocal microscopy with a 2D tracking system (Venkatachalam et al., 2016; Nguyen et al., 2016). In the more remote past, Howard Berg pioneered the use of 3D tracking microscopy to study bacteria chemotaxis (Berg, 1971). However, the significant increase of animal size imposes challenges both in tracking and imaging technologies. The XLFM, derived from the general concept of light field imaging (Broxton et al., 2013; Adelson and Wang, 1992; Ng et al., 2005; Levoy et al., 2006), overcomes several critical limitations of conventional LFM and allows optimization of imaging volume, resolution, and speed simultaneously. Furthermore, it can be perfectly combined with flashed fluorescence excitation to capture blur-free images at high resolution during rapid fish movement. Taken together, we have developed a volume imaging and tracking microscopy system suitable for observing and capturing freely behaving larval zebrafish, which have\u00a0~80,000 neurons and can move two orders of magnitude faster than C. elegans.\n\nTracking and whole brain imaging of naturally behaving zebrafish provide an additional way to study sensorimotor transformation across the brain circuit. A large body of research suggests that sensory information processing depends strongly on the locomotor state of an animal (Niell and Stryker, 2010; Maimon et al., 2010; Chiappe et al., 2010). The ability to sense self-motion, such as proprioceptive feedback (Pearson, 1995) and efferent copy (Bell, 1981), can also profoundly shape the dynamics of the neural circuit and perception. To explore brain activity in swimming zebrafish, several studies have utilized an elegant tail-free embedding preparation (Severi et al., 2014; Portugues and Engert, 2011; Portugues et al., 2014), in which only the head of the fish is restrained in agarose for functional imaging. Nevertheless, it would be ideal to have physiological access to all neurons in defined behavioral states, where all sensory feedback loops remain intact and functional. Our XLFM-3D tracking system is one step towards this goal, and could be better exploited to explore the neural basis of more sophisticated natural behaviors, such as prey capture and social interaction, where the integration of multiple sensory feedbacks becomes critical.\n\nIn the XLFM, the camera sensor size limited the number of voxels and hence the number of neurons that could be reliably reconstructed. Our simulation suggested that the sparseness of neuronal activities is critical for optimal imaging volume reconstruction. A growing body of experimental data indeed suggests that population neuronal activities are sparse (Hrom\u00e1dka et al., 2008; Buzs\u00e1ki and Mizuseki, 2014) and sparse representation is useful for efficient neural computation (Olshausen and Field, 1996; Olshausen and Field, 2004). Given the total number of neurons in the larval zebrafish brain, we found that when the fraction of active neurons in a given imaging frame was less than \u03c1c \u2248 0.11, individual neurons could be resolved at optimal resolution. When population neural activity was dense (e.g., neurons have high firing rate and firing patterns have large spatiotemporal correlation), we obtained a coarse-grained neural activity map with reduced resolution.\n\nTo retain the fish head within the field of view of the imaging objective, our tracking system compensated for fish movement by continuously adjusting the lateral positions of the motorized stage. As a result, self-motion perceived by the fish was not exactly the same as that during natural behaviors. The linear acceleration of the swimming fish, encoded by vestibular feedback, was significantly underestimated. The perception of angular acceleration during head orientation remained largely intact. The relative flow velocity along the fish body, which was invariant upon stage translation, can still be detected by specific hair cells in the lateral line system (Coombs, 2014; Liao, 2010). Together, the interpretation of brain activity associated with self-motion must consider motion compensation driven by the tracking system.\n\nBoth tracking and imaging techniques can be improved in the future. For example, the current axial displacement employed by the piezo scanner had a limited travelling range (400 \u00b5m), and our swimming chamber essentially restrained the movement of the zebrafish in two dimensions. This limitation could be relaxed by employing axial translation with larger travelling range and faster dynamics. Furthermore, to avoid any potential disturbance of animal behaviors, it would be ideal if the imaging system moved, instead of the swimming chamber.\n\nIn XLFM, the performance degradation caused by focal length variation of the micro-lenses could be resolved by higher precision machining. In addition, the capability of XLFM could be further improved with the aid of technology development in other areas. With more pixels on the imaging sensor, we could resolve more densely labelled samples, and achieve higher spatial resolution without sacrificing imaging volume coverage by introducing more than two different focal planes formed by more groups of micro-lenses. With better imaging objectives that could provide higher numerical aperture and larger field of view at the same time, we could potentially image the entire nervous system of the larval zebrafish with single neuron resolution in all three dimensions. Additionally, the fast imaging speed of XLFM holds the potential for recording electrical activity when high signal-to-noise ratio (SNR) fluorescent voltage sensors become available (St-Pierre et al., 2014). Finally, the illumination-independent characteristic of XLFM is perfectly suitable for recording brain activities from bioluminescent calcium/voltage indicators in a truly natural environment, where light interference arising from fluorescence excitation can be eliminated (Naumann et al., 2010).\n\n## Materials\u00a0and\u00a0methods\n\n### XLFM\n\nThe imaging system (Figure 1) was a customized upright microscope. Along the fluorescence excitation light path, a blue laser (Coherent, OBIS 488 nm, 100 mW, USA) was expanded and collimated into a beam with a diameter of\u00a0~25 mm. It was then focused by an achromatic lens (focal length: 125 mm) and reflected by a dichroic mirror (Semrock, Di02-R488\u221225\u00d736, USA) into the back pupil of the imaging objective (Olympus, XLPLN25XWMP2, 25X, NA 1.05, WD 2 mm, Japan) to result in an illumination area of\u00a0~1.44 mm in diameter near the objective\u2019s focal plane. In the fluorescence imaging light path, excited fluorescence was collected by the imaging objective and transmitted through the dichroic mirror. A pair of achromatic lenses (focal lengths: F1\u00a0=\u00a0180 mm and F2\u00a0=\u00a0160 mm), arranged in 2F1\u00a0+2F2, were placed after the objective and dichroic mirror to conjugate the objective\u2019s back pupil onto a customized lenslet array (Figure 1\u2014figure supplement 1). The customized lenslet array was an aluminum plate with 27 holes (1.3 mm diameter aperture on one side and 1 mm diameter aperture on the other side, Source code file 1) housing 27 customized micro-lenses (1.3 mm diameter, focal length: 26 mm). The 27 micro-lenses were divided into two groups (Figure 1\u2014figure supplement 1) and an axial displacement of 2.5 mm was introduced between them. Apertures of 1 mm diameter on the aluminum plate were placed right at the objective\u2019s pupil plane so that all micro-lenses samples light at pupil plane even though they were displaced axially after apertures. Due to the blockage of light by the aluminum micro-lenses housing, 16% of the light after a 1.05 NA imaging objective was effectively collected by the camera. This efficiency is equivalent to using a 0.4 NA imaging objective. Finally, the imaging sensor of a sCMOS camera (Hamamatsu, Orca-Flash 4.0 v2, Japan) was placed at the middle plane between two focal planes formed by two different groups of micro-lenses. The total magnification of the imaging system was\u00a0~4, so one camera pixel (6.5 \u00b5m) corresponded to\u00a0~1.6 \u00b5m on the sample.\n\nWe developed a computational algorithm for 3D volume reconstruction, which required an accurately measured PSF (Figure 1\u2014figure supplement 2). The PSF was measured by recording images of a 500 nm diameter fluorescent bead sitting on a motorized stage under the objective. A stack of 200 images was recorded when the bead was scanned with a step size of 2 \u00b5m in the axial direction from 200 \u00b5m below the objective\u2019s focal plane to 200 \u00b5m above. Since the images formed by two different groups of micro-lenses were from different axial locations and had different magnifications, the measured raw PSF data were reorganized into two complementary parts: PSF_A and PSF_B (Figure 1\u2014figure supplements 3 and 4), according to the spatial arrangement of the micro-lenses. We took PSF_A stack, PSF_B stack, and a single frame of a raw image (2048\u00a0\u00d7\u00a02048 pixels) as inputs, and applied a newly developed algorithm to reconstruct the 3D volume.\n\n### Image reconstruction of XLFM\n\nThe reconstruction algorithm was derived from the Richardson-Lucy deconvolution. The goal was to reconstruct a 3D fluorescent object from a 2D image:\n\n$$\nObj(x,y,z)\n$$\n\nThe algorithm assumes that the real 3D object can be approximated by a discrete number of x-y planes at different z positions:\n\n$$\nObjx,y,z~Objx,y,z_{k}\n$$\n\nThe numbers and positions of these planes can be arbitrary, yet the Nyquist sampling rate should be chosen to optimize the speed and accuracy of the reconstruction.\n\nAs the imaging system consisted of two different groups of micro-lenses (Figure 1\u2014figure supplement 1), their PSFs (Figure 1\u2014figure supplements 3 and 4) each consisted of a stack of planes that were measured at the same chosen axial positions $z_{k}$:\n\n$$\nPSF_{A}(x,y,z_{k})\n$$\n\nAlthough the PSF was measured in imaging space, here we denote x and y as coordinates in object space to follow conventions in optical microscopy. Here and below, the combination of PSFA and PSFB is the total PSF.\n\nAdditionally, the images formed by two different groups of micro-lenses had different magnifications, which could be determined experimentally. The ratio between two different magnifications can be defined as:\n\n$$\n\\gamma=\\frac{MagnificationofgroupAmicrolenses}{MagnificationofgroupBmicrolenses}\n$$\n\nThen, the captured image on the camera can be estimated as:\n\n$$\nImg_{Est}(x,y)=\\sumk=1n{Obj_{A}(x,y,z_{k})\u2a02PSF_{A}(x,y,z_{k})+Obj_{B}(x,y,z_{k})\u2a02PSF_{B}(x,y,z_{k})},\n$$\n\n\n\n$$\nwhere\u00a0Obj_{A}(x,y,z_{k})=Obj_{B}(\\gammax,\\gammay,z_{k})\n$$\n\nThe operator $\u2a02$ represents 2D convolution. Here, x and y on the left hand side of the equation also represent coordinates in object space so that 2D convolution was carried out in the same coordinates.\n\nThe goal of the algorithm is to estimate the $Obj(x,y,z_{k})$ from the measured camera frame:\n\n$$\nImg_{Meas}x,y\n$$\n\nAccording to the Richardson-Lucy deconvolution algorithm, the iterative reconstruction can be expressed as:\n\n$$\nImg_{Est}^{i}(x,y)=\\sumk=1n{Obj_{A}^{i\u22121}(x,y,z_{k})\u2a02PSF_{A}(x,y,z_{k})+Obj_{B}^{i\u22121}(x,y,z_{k})\u2a02PSF_{B}(x,y,z_{k})}\n$$\n\n\n\n$$\nObj_{A}^{tmp}(x,y,z_{k})=Obj_{A}^{i\u22121}(x,y,z_{k}){\\frac{Img_{Meas}(x,y)}{Img_{Est}^{i}(x,y)}\u2a02PSF_{A}(\u2212x,\u2212y,z_{k})}\n$$\n\n\n\n$$\nObj_{B}^{tmp}(x,y,z_{k})=Obj_{B}^{i\u22121}(x,y,z_{k}){\\frac{Img_{Meas}(x,y)}{Img_{Est}^{i}(x,y)}\u2a02PSF_{B}(\u2212x,\u2212y,z_{k})}\n$$\n\n\n\n$$\nObj_{A}^{i}(x,y,z_{k})=w(z_{k})Obj_{A}^{tmp}(x,y,z_{k})+(1\u2212w(z_{k}))Obj_{B}^{tmp}(\\gammax,\\gammay,z_{k})\n$$\n\n\n\n$$\nObj_{B}^{i}(x,y,z_{k})=w(z_{k})Obj_{A}^{tmp}(\\frac{x}{\\gamma},\\frac{y}{\\gamma},z_{k})+(1\u2212w(z_{k}))Obj_{B}^{tmp}(x,y,z_{k})\n$$\n\nHere, $0\\leqw(z_{k})\\leq1$ is the weighting factor at different axial positions. The choice of $w(z_{k})$ can be arbitrary. Because the resolutions achieved by different groups of micro-lenses at different z positions were not the same, the weighting factor can take this effect into consideration by weighing higher quality information more than lower quality information. One simple choice is $wz_{k}=0.5$, that is, to weigh information from two groups of micro-lenses equally.\n\nThe starting estimate of the object can be any non-zero value. Near the end of the iterations, $Obj_{A}^{i}x,y,z_{k}$ and $Obj_{B}^{i}x,y,z_{k}$ are interchangeable, except with different magnifications. Either can be used as the resulting estimate of the 3D object.\n\nIn XLFM, together with its reconstruction algorithm, the diffraction of the 3D light field is properly considered by experimentally measured PSF. The raw imaging data can be fed into the algorithm directly without any preprocessing. Given that the PSF is spatially invariant, which is satisfied apart from small aberrations, the algorithm can handle overlapping fish images (Figure 1\u2014figure supplement 5). As a result, the field of view can be increased significantly. The reconstruction algorithm was typically terminated after 30 iterations when modifications in the estimated object became very small. The computation can speed up significantly via GPU. It took about 4 min to reconstruct one 3D volume using a desktop computer with a GPU (Nvidia Titan X). In comparison, the reconstruction ran\u00a0~20\u00a0\u00d7 slower using a CPU (Intel E5-2630v2) on a Dell desktop. The source code written in MATLAB can be found in the Source code file 2.\n\nThe 3D deconvolution method has been developed for conventional LFM (Broxton et al., 2013). Our method differs from Broxton et al. (2013) in several ways. (1) The optical imaging systems are different. (2) The definitions of PSFs are different. Ours defines a spatially invariant PSF (see below for detailed characterization), whereas Broxton et al. (2013) defined a spatially variant PSF, leading to increased computational complexity in the deconvolution algorithm. (3) The PSF in Broxton et al. (2013) was simulated based on a model derived from an ideal imaging system, whereas ours was measured experimentally. Furthermore, our system took practical conditions, such as a non-ideal imaging objective, actual positions of microlenses, the spectrum of received fluorescence signal et al., into consideration.\n\n### Characterization of the spatial invariance of PSF in XLFM\n\nThe definition of a 2D spatially invariant PSF fundamentally means that in an ideal optical microscopy system, the resulting image can be described as a 2D convolution between object and PSF. As discussed in the previous section, this operation forms the basis of our reconstruction algorithm.\n\nOne of the fundamental differences between XLFM and conventional LFM is the location of the microlens array. In XLFM, the microlens array is placed at the pupil plane and the image sensor is at imaging plane, whereas in conventional LFM, the microlens array is placed at the image plane and the image sensor is| at pupil plane. It is possible to define a spatially invariant PSF in XLFM because:\n\nBy definition, the imaging formation in an ideal optical imaging system is linear and spatially invariant, so spatially invariant PSFs for sub-imaging systems consisting of micro-lens A1 and A2 can be defined as:\n\n$$\nImage_{A1}=Object\u2a02PSF_{A1}\n$$\n\n\n\n$$\nImage_{A2}=Object\u2a02PSF_{A2}\n$$\n\nwhere $Image_{A1/2}$ are sub-images behind individual micro-lens. If we perform the convolution in the imaging space, the coordinates of $Object(x,y)$ should be scaled by the magnification factors of their sub-image systems, respectively. Now if the magnifications of different sub-image systems are the same, the summation of all PSFs formed by individual micro-lenses can be defined as a single PSF. In other words,\n\n$$\nImage_{A}=Image_{A1}+Image_{A2}=Object\u2a02(PSF_{A1}+PSF_{A2})=Object\u2a02PSF_{A}\n$$\n\n\n\n$$\nwhere\u00a0PSF_{A}=PSF_{A1}+PSF_{A2}\n$$\n\nExperimentally, the small variation of individual micro-lenses\u2019 focal length (Figure 1\u2014figure supplement 8) resulted in spatial variance of $PSF_{A}$ or $PSF_{B},$ but it does not affect the imaging formation theory of XLFM. The spatial variance led to degraded reconstruction performance, as shown in Figure 1\u2014figure supplement 9. This degradation was negligible near the center of the field of view, but became more evident near the edge of the field of view. This is because the PSF was measured near the center of the field of view. The reconstruction algorithm produces 27 estimates of the same object based on 27 sub-images. In the meanwhile, it tries to combine and align these estimates all together in the same coordinates. The position where the PSF is measured determines the origin of this coordinates. If the magnifications of different micro-lenses are different, the reconstruction will yield an image that is clear near the origin of the coordinates but blurred at the edge, as shown in in Figure 1\u2014figure supplement 9.\n\n### Resolution characterization of XLFM\n\nUnlike conventional microscopy, where the performance of the imaging system is fully characterized by the PSF at the focal plane, the capability of XLFM is better characterized as a function of positions throughout the imaging volume.\n\nWe first characterized the spatial resolution in the x-y plane by analyzing the spatial frequency support of the experimentally measured PSF from individual micro-lenses using a 0.5 \u00b5m diameter fluorescent bead. The optical transfer function (OTF), which is the Fourier transform of the PSF in the x-y plane, was extended to a spatial frequency of\u00a0~1/3.4 \u00b5m\u22121 (Figure 1\u2014figure supplement 6), a result that agreed well with the designed resolution at 3.4 \u03bcm, given that the equivalent NA of individual micro-lenses was 0.075.\n\nThe lateral resolution, measured from the raw PSF behind individual micro-lenses, was preserved across the designed cylindrical imaging volume of \u00d8800 \u03bcm\u00a0\u00d7\u00a0200 \u03bcm (Figure 1\u2014figure supplement 6). However, the reconstruction results (Figure 1\u2014figure supplement 9), which used total PSF (Figure 1\u2014figure supplement 2), exhibited resolution degradation when the fluorescent bead was placed more than 250 \u03bcm away from the center (Figure 1\u2014figure supplement 9). This discrepancy resulted from the variation in focal length of the micro-lenses (Figure 1\u2014figure supplement 8), which, in turn, led to spatial variance of the defined PSFA and PSFB. In principle, the designed lateral resolution of 3.4 \u00b5m could be preserved over a volume of \u00d8800 \u03bcm\u00a0\u00d7\u00a0200 \u03bcm by reducing focal length variation to below 0.3%\n\nWe next characterized the axial resolution of the XLFM. The XLFM gained axial resolution by viewing the object from large projection angles achieved by micro-lenses sitting near the edge of the objective\u2019s back pupil plane. For example, if two points of light source were located at the same position in the x-y plane, but were separated by $\\Deltaz$ in the axial direction, then one micro-lens in the XLFM could capture an image of these two points with a shift between them. The shift can be determined as:\n\n$$\nd=\\Deltaz*tan\\theta\n$$\n\nwhere $\\theta$ is the inclination angle inferred from the measured PSF (Figure 1\u2014figure supplement 2). If the two points in the image can be resolved, the two points separated by $\\Deltaz$ can be resolved by the imaging system. Since a micro-lens sitting in the outer layer of the array offered the largest inclination angle of 40 degree in our system, the axial resolution $dz$ can be directly calculated as:\n\n$$\ndz=\\frac{dxy}{tan\\theta_{max}}=\\frac{3.4\\mum}{tan\u2061(40\u00b0)}=4\\mum\n$$\n\nThe best way to confirm the theoretical estimate is to image two fluorescent beads with precisely controlled axial separations. However, this is technically very challenging. Instead, we pursued an alternative method that is equivalent to imaging two beads simultaneously:\n\nThe above method allowed us to experimentally characterize the axial resolution afforded by individual micro-lenses focusing at different z positions. We used a single fluorescent bead (0.5 $\\mum$ in diameter) with a high SNR (Figure 1\u2014figure supplement 7a). We imaged at different axial positions: z = \u2212100\u00a0$\\mum$, z\u00a0=\u00a00 $\\mum$, and z\u00a0=\u00a0100$\\mum$ (Figure 1\u2014figure supplement 7b). The third column is the combined images in column 1 and 2. The capability of resolving the two beads in the third column can be demonstrated by spatial frequency analysis (fourth column in Figure 1\u2014figure supplement 7b). The two line dips, indicating the existence of two beads instead of one rod in the fourth column, were confirmations of the resolving capability. This becomes more evident after deconvolution of the raw images (fifth column in Figure 1\u2014figure supplement 7b). Micro-lenses 1 and 2 could resolve two beads, separated by 5\u00a0$\\mum$, within the range of $-100$ \u03bcm\u2264z \u2264 0 and $0\\leqz\\leq100\\mum,respectively$. In other words, the complementary information provided by the two micro-lenses allowed the system to maintain a high axial resolution at 5\u00a0$\\mum$ across a $200\\mum$ depth.\n\nNext, we imaged densely packed fluorescent beads (0.5 $\\mum$ in diameter) with a low SNR (Figure 1\u2014figure supplement 10a), and used our reconstruction algorithm to determine the minimum axial separation between beads that could be resolved (Figure 1\u2014figure supplement 10b\u2013c). In this case, 5\u00a0$\\mum$ axial resolution could be preserved across a depth of 100\u00a0$\\mum$. The resolution decayed gradually to\u00a0~10\u00a0$\\mum$ at the edge of an imaging volume with a 400\u00a0$\\mum$ axial coverage (Figure 1\u2014figure supplement 10b). We believe that the optimal axial resolution at 5 \u00b5m could be achieved over an axial coverage of 200 \u03bcm by minimizing micro-lens focal length variation (Figure 1\u2014figure supplement 8).\n\nFinally, we characterized how the imaging performance depended upon the sparseness of the sample. Given the total number of neurons (~80,000) in a larval zebrafish brain, we introduced a sparseness index \u03c1, defined as the fraction of neurons in the brain active at an imaging frame, and used numerical simulation to characterize the dependence of achievable resolution on \u03c1. To this end, we simulated a zebrafish larva with uniformly distributed firing neurons (red dots in Figure 1\u2014figure supplement 11a). By convolving the simulated zebrafish with the experimentally measured PSFs (Figure 1\u2014figure supplements 3 and 4), we generated an image that mimicked the raw data captured by the camera. We then reconstructed the simulated neurons from this image, represented by green dots. When \u03c1 was equal to or less than 0.11, which corresponded to\u00a0~9000 neurons activated at a given instant, all active neurons, including those closely clustered, could be reconstructed with optimal resolution (Figure 1\u2014figure supplement 11b inset). As the sparseness index \u03c1 increased, the resolution degraded: nearby neurons merged laterally and elongated axially (Figure 1\u2014figure supplement 11c\u2013d). In all calculations, the Poisson noise was properly considered by assuming that each active neuron emitted 20,000 photons, 2.2% of which were collected by our imaging system.\n\nIn vivo resolution characterization is challenging due to a lack of bright and spot-like features in living animals. Additionally, achievable resolution depends on the optical properties of biological tissues, which can be highly heterogeneous and difficult to infer. The light scattering and aberration induced by biological tissue usually leads to degraded imaging performance (Ji, 2017; Ji et al., 2010; Wang et al., 2014; Wang et al., 2015).\n\n### XY tracking system\n\nTo compensate for lateral fish movement and retain the entire fish head within the field of view of a high NA objective (25\u00d7, NA\u00a0=\u00a01.05), a high-speed camera was used to capture fish motion (2 ms exposure time, 300 fps or higher, Basler aca2000-340kmNIR, Germany). We developed an FPGA-based RT system in LabVIEW that could rapidly identify the head position by processing the pixel stream data within the Cameralink card before the whole image was transferred to RAM. The error signal between the actual head position and the set point was then fed into the PID to generate output signals and control the movement of a high-speed motorized stage (PI M687 ultrasonic linear motor stage, Germany). In the case of large background noise, we alternatively performed conventional imaging processing in C/C++ (within 1 ms delay). The rate-limiting factor of our lateral tracking system was the response time of the stage (~300 Hz).\n\n### Autofocus system\n\nWe applied the principle of LFM to determine the axial movement of larval zebrafish. The autofocus camera (100 fps or higher, Basler aca2000-340kmNIR, Germany) behind a one-dimensional micro-lens array captured triplet images of the fish from different perspectives (Figure 2\u2014figure supplement 1a). Z motion caused an extension or contraction between the centroids of the fish head in the left and right sub-images, an inter-fish distance (Figure 2\u2014figure supplement 1b) that can be accurately computed from image autocorrelation. The inter-fish distance, multiplied by a pre-factor, can be used to estimate the z position of the fish, as it varies linearly with axial movement (Figure 2\u2014figure supplement 1c). The error signal between the actual axial position of the fish head and the set point was then fed into the PID to generate an output signal to drive a piezo-coupled fish container. The feedback control system was written in LabVIEW. The code was further accelerated by parallel processing and the closed loop delay was\u00a0~5 ms. The rate-limiting factor of the autofocus system was the settling time of the piezo scanner (PI P725KHDS, Germany, 400 \u03bcm travelling distance), which was about 10 ms.\n\n### Real-time behavioral analysis\n\nTwo high-speed cameras acquired dark-field images at high and low magnification, respectively, and customized machine vision software written in C/C\u00a0++\u00a0with the aid of OpenCV library was used to perform real-time behavioral analysis of freely swimming larval zebrafish. At high magnification, eye positions, their orientation, and convergence angle were computed; at low magnification, the contour of the whole fish, centerline, body curvature, and bending angle of the tail were computed. The high mag RT analysis was run at\u00a0~120 fps and the low mag RT analysis was run at\u00a0~180 fps. The source code can be found in the Source code file 3.\n\n### Ethics statement and animal handling\n\nAll animal handling and care were conducted in strict accordance with the guidelines and regulations set forth by the Institute of Neuroscience, Chinese Academy of Sciences, University of Science and Technology of China (USTC) Animal Resources Center, and University Animal Care and Use Committee. The protocol was approved by the Committee on the Ethics of Animal Experiments of the USTC (permit number: USTCACUC1103013).\n\nAll larval zebrafish (huc:h2b-gcamp6f and huc:gcamp6s) were raised in embryo medium under 28.5\u00b0C and a 14/10 hr light/dark cycle. Zebrafish were fed with paramecium from 4 dpf. For restrained experiments, 4\u20136 dpf zebrafish were embedded in 1% low melting point agarose. For freely moving experiments, 7\u201311 dpf zebrafish with 10% Hank\u2019s solution were transferred to a customized chamber (20 mm in diameter, 0.8 mm in depth), and 10\u201320 paramecia were added before the chamber was covered by a coverslip.\n\n### Neural activity analysis\n\nTo extract neural activity induced by visual stimuli (Figure 1e and f), time series 3D volume stacks were first converted to a single 3D volume stack, in which each voxel represented variance of voxel values over time. Candidate neurons were next extracted by identifying local maxima in the converted 3D volume stack. The region-of-interest (ROI) was set according to the empirical size of a neuron. The voxels around the local maxima were selected to represent neurons. The fluorescence intensity over each neuron\u2019s ROI was integrated and extracted as neural activity. Relative fluorescent changes $\\DeltaF/F_{0}$ were normalized to their maximum calcium response $\\DeltaF_{max}/F_{0}$ over time, and sorted according to their onset time when $\\DeltaF$ first reached 20% of its $\\DeltaF_{max}$ (Figure 1e and f) after the visual stimulus was presented.\n\n### Visual stimulation\n\nA short wavelength LED was optically filtered (short-pass optical filter with cut-off wavelength at 450 nm, Edmund #84\u2013704) to avoid light interference with fluorescence. It was then focused by a lens into a spot 2\u00a0~\u00a03 mm in diameter. The zebrafish was illuminated from its side. The total power of the beam was roughly 3 mW.\n\n### Statement of replicates and repeats in experiments\n\nEach experiment was repeated at least three times with similar experimental conditions. Imaging and video data acquired from behaviorally active larval zebrafish with normal huc:h2b-gcamp6f or huc:gcamp6s expression were used in the main figures and videos.\n",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "9a87d855-906d-440d-a6b6-85fa7c8b0d3b",
+      "submission_id": "67d492da-6589-4096-943b-4a64422a7d98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28158.034](https://doi.org/10.7554/eLife.28158.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rapid whole brain imaging of neural activities in freely behaving larval zebrafish\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ronald L Calabrese (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an exciting manuscript, which reports a new development in Light Field Microscopy (LFM). The authors developed a Light Field Microscope: eXtended (XLFM) field of view seamlessly integrated with an X-Y tracking system and an auto focus. XLFM can simultaneously image intact brain neural activities (over a volume of 800 \u00b5m X 800 \u00b5m X 200 \u00b5m) at ~ 3.4 \u00b5m X 3.4 \u00b5m X 5 \u00b5m spatial resolution and at 77 Hz volume rate, with the aid of genetically encoded calcium indicator GCamp6f in a freely moving larval zebrafish during visual stimulation and prey capture. They provide stunning videos and enough processed data to show the value of the new development for imaging activity across the brain during real behavior.\n\nThe work is nicely illustrated with exemplar data. This is not a full report on the science behind the experiments illustrated but rather a proof of principle. Exciting science is in the offing but a new technology is showcased, as is appropriate for a Tools and Resources paper.\n\nEssential revisions:\n\n1) We find this technology to be a significant advance. There are several technical issues, however, that must be resolved. Further clarifications to the text are needed about precisely what was done and how it was done. Some claims need to be more carefully worded to recognize the limitations of the technique and recognize other contributions. The writing should be improved. The expert reviews provide a detailed list of all the points that should be considered in revision. Rather than paraphrasing those reports, they are included in full to ensure that the detailed technological issues are well-stated.\n\n2) As stated explicitly in the expert reviews, software and design features must be made fully available to the scientific community with publication.\n\nReviewer #1:\n\n1) The chamber in which the freely moving larva swims is ONLY 0.8 mm deep. Thus the animal is sandwiched between glass plates with no real ability to move in the z-direction. Essentially, it moves in two dimensions. The authors should address this limitation in their approach.\n\nReviewer #2:\n\nIn Cong et al., two advances are reported. First, a tracking system is introduced capable of keeping a freely swimming larval zebrafish in one location most of the time. Second, a new form of light field microscopy is reported capable of fast 3D imaging. Putting these together constitutes a system for whole-brain imaging in freely swimming zebrafish larvae, with a resolution slightly below single-cell.\n\nIn my opinion this is a major advance and I am supportive of publication in eLife with a few improvements.\n\nFor background, previous efforts to perform whole-brain imaging in behaving animals consisted of light-sheet (slower than light-field) in head-restrained animals, or light-field (a variant with, I believe, lower spatial resolution) in head-restrained animals. Imaging in freely behaving animals has been done in C. elegans, which move more slowly than zebrafish. Thus, compared to previous work, the advances of this manuscript are considerable. Furthermore, imaging most of the brain in freely swimming animals in really impressive.\n\nPoints that should be addressed:\n\n1) The authors claim that the point spread function (PSF) is spatially invariant. This appears to be true if one considers the microscope an ideal optical system, but with non-ideal optics, it's unlikely. Even with a good objective, the entire system contributes to the PSF, and it's unlikely that all microlenses are diffraction limited over the entire field of view. Moreover, differential distortion between the sub-images would cause the full camera PSF to warp as the point source moves in the sample. So if Richardson-Lucy deconvolution only works with a spatially invariant PSF, and the true PSF is not fully spatially invariant, the question arises, What image artifacts do you get?\n\nThere may be multiple ways to answer this question. One path might be to (a) move a bead around a few x-y locations, including the extreme ones, and check how spatially invariant the PSF really is (and include the raw PSF volumes in the manuscript, e.g. by measuring them at two extreme points, shifting one by the predicted amount, and overlaying the two in different colors). (b) Next, assuming a spatially invariant PSF derived from one of the bead locations (e.g. the center), reconstruct a bead positioned at various points, including the edges of the volume, and quantify the spread of the point source in the reconstructed volume (this should have high brightness at the original bead position, plus dimmer pixel values spread at other locations, which should be quantified).\n\n2) A follow-up: if the PSF is not fully spatially invariant, what does this mean for the statement that overlapping sub-images are permitted (subsection \u201cImage reconstruction of XLFM\u201d)? My understanding is that the overlap is fine so long as the PSF is fully x-y invariant, and if not, then some artifacts will be introduced. The reasons and assumptions underlying this statement should be clarified in the text.\n\nFor clarity, points (1) and (2) are not criticisms of the system, only a call for characterization of the artifacts that the reconstruction algorithm introduces when using simplifying assumptions.\n\n3) The reconstruction algorithm (subsection \u201cImage reconstruction of XLFM\u201d) contains confusing notation (if I understand it correctly). The coordinates (x,y) on the left hand side of Equation 5, refer to image coordinates. But (x,y,z_k) on the right hand side refers to coordinates in the 3D volume. That's confusing, x and y should not be used for both. Moreover, I believe that PSF_A,B(x,y,z_k) are each 2 dimensional objects. So in reality, spelled out with all the indices, using ^superscript for volume coordinates and _subscript for image coordinates, I believe the equation is\n\nImgEst_(x',y') = sum {ObjA^(x,y,z_k) conv^(x,y,z_k) PSFA^(x,y,z_k)_(x',y') +.\u2026}\n\nExplaining this equation better, e.g. by writing it out as above or stating that Img_est is a 2D object in image coordinates, and PSF_A,B(x,y,z_k) is 2D in image space contingent on x,y,z_k in volume space, will make this section more understandable.\n\n4) Can the lateral resolution be measured instead of estimated?\n\n5) The manuscript says the reconstruction algorithm is based on optical wave theory. What do the authors mean by this? The algorithm is based on the assumption of a spatially invariant PSF and observations of how to apply Richardon-Lucy to sets of microlenses of different focal lengths. Where does this rely on optical wave theory instead of just classical optics?\n\n6) I assume CAD models of the microlens holder and the autofocus system exists, can these files be made available?\n\n7) Most of the code is said to be available (e.g. real-time behavioral analysis and 3D reconstruction), but in some cases it is not mentioned. Can the code for the tracking and autofocus system be made available?\n\nReviewer #3:\n\nMy overall opinion of the manuscript is positive. I think being able to image neuronal activity in a freely moving larval zebrafish is an advance and the current paper serves as a satisfactory proof of principle.\n\nI have some issues regarding the term \"whole-brain\" and the resolution claimed by the authors. The authors claim, or at least imply, that they can simultaneously (within 1 Orca camera frame which has a 2048 x 2048 pixel sensor) image 800 x 800 x 200 microns at 3.4 x 3.4 x 5 micron resolution. I find this very difficult to believe. Imaging with this resolution requires imaging 800/(3.4/2) = 470 pixels in both x and y for 200/(5/2) = 80 planes (the factor of 2 arise from Nyquist sampling). Given the sensor dimensions one can fit at most 25 planes into it (5 x 5). The authors show that they are able to use their microlens distribution to image 27. I do not believe there is enough information on the chip to have the claimed resolution. The authors may be able to distinguish 2 fluorescent particles 6 microns apart as in Figure 1\u2014figure supplement 7, but these are still sparse particles appearing in the center of their CMOS chip, not a densely fluorescent tissue as a pan-neuronally fluorescent larval zebrafish. I think my argument is corroborated by the data shown in Figure 4: this data does not have the resolution claimed and does not show the whole brain of the larva.\n\nThe above argument assumes that the fish's head is also perfectly in focus. The z extent of a larval zebrafish head at this age is ~ 250 microns, which will already be larger than the z field of view. The axial shift shown in Figure 3, typically 20 microns but up to 80 will greatly affect this. The authors mention they use a 500 fps camera for the lateral tracking, but do not (or I missed) the speed of their auto-focus camera for axial tracking: how fast is this?\n\nI do not think that these are \"deal-breakers\", but I think it is important for the authors to rewrite their claims and be explicit about what their system can't and can do (which is a lot). In the Discussion the authors claim to have developed a whole brain imaging setup: I am not sure what this means.\n\nFigure 1 looks at an agarose restrained larval zebrafish. The authors should be explicit about this in the text and the Figure caption (for example the name of the figure). I do not think that panel d presents maximum intensity projections \u2013 they are far too clean for this (the bottom panel looks more like a snapshot of a 3d rendering of the stack). Can the authors correct this in the caption or be explicit about what they are showing?\n\nClosed-loop systems have also been implemented in restrained fish with their tail free to move (e.g. Portugues and Engert 2011) which can remove the issue the authors mention relating to proprioception (Introduction paragraph two). The authors also mention improper vestibular feedback when fish are restrained, but in their setup, due to the closed look, the fish would also experience a reduced vestibular feedback: if the closed-loop was perfect the head would not move at all and the same vestibular deficits would be observed. If this is correct then the authors should comment on this.\n\nThe authors talk about \"visual stimulation. What does this visual stimulation consist of? This should be explained in the Materials and methods clearly.\n\nThe claim in Results paragraph seven is a strong one and I am not sure it is fully warranted. Given the resolution and the data shown I would omit the phrase \"for the first time\" and again, explain carefully what is meant (here and in other places) by the term \"whole brain\".\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Rapid whole brain imaging of neural activity in freely behaving larval zebrafish (Danio rerio)\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThis is an exciting manuscript, which reports a new development in Light Field Microscopy (LFM). The authors have made a strong effort at revising the manuscript in response to the last review. They have answered forthrightly almost every point raised and the manuscript is much stronger. There is still one major concern that must be addressed, and there some more minor concerns. The reviews are reproduced in their entirety to aid revision.\n\nMajor Concern\n\n1) As brought up by reviewer #3 the definition and technical details of the claimed resolution are not adequately documented and explained. The detailed comments of the reviewer should be fully addressed.\n\nReviewer #2:\n\nThe manuscript has improved and I think that most of our comments have been addressed.\n\nThe changes include a new piece of useful information: the non-idealness of the point spread function (PSF) has been measured, and attributed, in part, to small differences in focal lengths of the microlenses.\n\nI think this is great work and the revised version is even better. There are a few final comments I'd like to make,\n\nIn the subsection \u201cImage reconstruction of XLFM\u201d: \"Furthermore, our system took practical conditions, such as imaging system and light properties, into consideration.\" What does this mean; can this be explained better?\n\nAbout the reconstruction algorithm: The authors opt for sticking with the conventions and use the same indices x,y on both sides of the equation. This is ok, but in that case, some explanation should be added. For example,\n\n\"The 2D convolution is over x and y\" and \"Per convention in optics, x,y on both sides represent object space, even though in practice, x,y at the left will refer to image space on the camera chip and x,y on the right to the sample coordinates.\"\n\nIn the same section the authors seem to agree that the statement that the algorithm can deal with overlapping fish images depends on the invariance of the PSF, this information should be explicitly stated, i.e. include a statement like \"under the condition that the PSF is spatially invariant, which is satisfied apart from small aberrations, the algorithm can handle overlapping fish images\".\n\nResults paragraph one: \"Therefore, a spatially invariant point spread function (PSF) of the entire optical imaging system could be defined and measured (Figure 1\u2014figure supplement 2)\". Here also it would be good to mention that it's an approximately spatially invariant PSF.\n\nA reference to a recept paper from the Vaziri lab, Nobauer et al., 2017, should be included. (This is also about light field microscopy, but I want to emphasize that this does in no way diminish the impact of the current manuscript.)\n\nReviewer #3:\n\nAs I mentioned previously, I like the paper, and the authors have addressed most of the minor issues appropriately. There are two points which I am still not sure have been resolved.\n\n1) I do not believe the authors have fully addressed my previous point relating to resolution, which I reproduce below. This argument may be wrong, and I would be very happy if the authors could explain to me where my logic fails.\n\n\"I have some issues regarding the term \"whole-brain\" and the resolution claimed by the authors. The authors claim, or at least imply, that they can simultaneously (within 1 Orca camera frame which has a 2048 x 2048 pixel sensor) image 800 x 800 x 200 microns at 3.4 x 3.4 x 5 micron resolution. I find this very difficult to believe. Imaging with this resolution requires imaging 800/(3.4/2) = 470 pixels in both x and y for 200/(5/2) = 80 planes (the factor of 2 arise from Nyquist sampling). Given the sensor dimensions one can fit at most 25 planes into it (5 x 5). The authors show that they are able to use their microlens distribution to image 27.\u201d\n\nI am not worried about reconstructing the volume; that is not the point here. The issue is that of resolution and discriminability of points. This involves two aspects: the \"optical resolution\" of the imaging system and the sampling. The Rayleigh resolution criterion states the minimal distance resolvable is half the width of the first diffraction order. This depends on the wavelength of the light and the NA of the system. Ideal sampling is then obtained by using the Nyquist criterion: the inverse image of a pixel should be half the optical resolution of the system, so that there is a \"negative dip\" in between the two bright pixels.\n\nUsing this last sampling definition, the number of resolvable points can be estimated as follows:\n\n- every bright pixel has to be surrounded (in the chip) by a dark set of pixels.\n\n- the number of bright pixels you can have on the chip in this configuration is the number of resolvable points. This is a quarter of the number of pixels on the chip.\n\n- ideally, the inverse image of a pixel should be a quarter of the first diffraction order peak width, for sampling and optical resolution to be perfectly matched.\n\nWith a 2048 by 2048 chip, there are at most ~ 1 million resolvable points.\n\nThe authors claim they can resolve ~ 2.2 million (800 x 800 x 200 microns at 3.4 x 3.4 x 5 micron resolution).\n\nDeconvolution is a linear process, so XLFM may \"shuffle or combine\" the intensities of different pixels, but must do so in a linear way.\n\nIn addition, as the authors state, the NA of the objective (nominally 1.05) is greatly decreased (to an effective 0.4) because a lot of light is blocked by the array casing. The optical resolution of the system is bound to be significantly affected.\n\nFigure 1\u2014figure supplement 7 does try to address this issue, but I remain unconvinced because column 3 of panel b shows no dip whatsoever in between the two particles. This indicates to me that the authors are not using the Rayleigh criterion. It is definitely possible to separate two identical Gaussians whose positions differ by less than two SDs (situation which approximates to the Rayleigh criterion), but this is not what is usually called resolution.\n\n2) I am not sure I understand the authors' claims of a spatially invariant PSF. In Figure 1\u2014figure supplement 9 they in fact show it is not spatially invariant even within the focal plane (which they attribute to variation in the magnification across microlenses).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Rapid whole brain imaging of neural activity in freely behaving larval zebrafish (Danio rerio)\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and one reviewer.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below. Given that this would be a third round, we must now bring this process to a close with no possibility of further revisions.\n\nReviewer #3 concerns must be addressed more fully.\n\nI appreciate the authors' comments to the points I raised, but unfortunately I do not feel they have been addressed. I still believe there are two points which need to be addressed: the resolution and the PSF. I think both these points could be addressed by rewriting the manuscript and making claims that are both theoretically sound and supported by the data presented. Given that the manuscript is a proof of concept about an exciting and promising new imaging technique I think it is fundamental to be precise, as this paper will set the baseline for all future work involving this technique and other freely swimming whole brain imaging approaches.\n\n1) Resolution.\n\nThe authors have not addressed my argument or provided a counterargument. I still believe my argument is correct. I think the authors are under a misconception. As I mentioned in my previous report, the resolution of an optical system depends on only two things:\n\na) The optical resolution of the system that results in the Rayleigh criterion.b) The sampling resolution that results in the Nyquist criterion.\n\nSpecifically, the resolution does not depend on either the reconstruction (as suggested by the authors in answer to my first review) or the sparseness (as the authors argue in the answer to my second and third review).\n\nI repeat the basis of my argument. Given the dimensions of the chip, the number of resolvable points cannot be more than ~ (2000/2)^2 which is about 1 million. This assumes that a diffraction-limited point in the sample is images onto 1 pixel in the camera chip and that the whole chip is used. The first point is not true for the current system (see Figure 1\u2014figure supplement 9 in which a 0.5um bead results in at least 6 reconstructed pixels in the image). In fact, a one such diffraction limited spot will automatically be imaged onto 27 points just by construction). The second point is also not true for this system (see Figure 1\u2014figure supplement 5 in which only about half the chip is used). My estimate is that at most one fifth of this upper limit of the number of points can be resolved, about 200,000, and probably much closer to 100,000.\n\nParagraph two of the Results is now very confusing. In the second sentence, the authors state that they can image a field of view of ~ 800 x 800 x 200 \u03bcm with 3.4 x 3.4 x 5 \u03bcm resolution. This corresponds to 2 million resolvable points. This is probably a factor of 20 out. Then later in the paragraph it is claimed that it is 500 x 500 x 100 \u03bcm at this resolution. This corresponds to 400,000 points. First of all I think this is still way too high. And secondly I do not understand the contradictory statements in this paragraph. The resolution does not depend on the sparseness. In addition, one can interpolate and reconstruct at whatever desired resolution to make pretty images, so this does not play a role either.\n\n2) PSF.\n\nThe authors have developed a deconvolution algorithm that to my understanding calculates an effective PSF which they assume to be spatially invariant (in 3 dimensions) and which they then use to deconvolve their data. If this is true I think this is a statement that I am very happy with and support. In traditional lightfield microscopy it can be shown theoretically that the PSF is not spatially invariant. I cannot see why the setup presented by the authors would result in a spatially invariant PSF. If they claim this it should be shown theoretically (this is a methods paper). I agree that inhomogeneities arising from unequal microlens magnifications will contribute to worsen the spatial invariance of the PSF, as argued in Figure 1\u2014figure supplement 8. But I do not believe this is the only source for them, so I do not agree with the statement in the figure legend. In Figure 1\u2014figure supplement 9 the authors show that the PSF is not spatially invariant. And the data here relates to the \"focal plane z=0\" How does the PSF look at x=400um and z =100um? It will most likely look \"worse\" than that in the last panel of this figure. The authors seem to propose that the PSF of their imaging system is spatially invariant until it is not, away from the center of the field of view and the focal plane. This is not a rigorous scientific statement and not one which can be made in a methods paper that proposes a new imaging technique in a highly regarded journal such as eLife. I can definitely stand and support the argument put forward in the first sentence of this paragraph but if the authors claim spatial invariance they will have to either theoretically prove it or measure the PSF throughout the field of view and show it (and Figure 1\u2014figure supplement 9 contradicts this).\n",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "125926c7-773f-4066-8ee1-c06e3b641999",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C1",
+      "claim": "The XLFM can image sparse neural activity over the larval zebrafish brain at near single cell resolution and at a volume rate of 77 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The XLFM can image sparse neural activity over the larval zebrafish brain at near single cell resolution and at a volume rate of 77 Hz, with the aid of genetically encoded calcium indicator GCamp6f.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the imaging capabilities of XLFM including resolution and speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "54764c5e-a475-436a-a1b3-8597b48afd63",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C2",
+      "claim": "Larval zebrafish can move at an instantaneous velocity up to 50 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "They can move at an instantaneous velocity up to 50 mm/s (Severi et al., 2014) and acceleration of 1 g (9.83 m/s2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Severi et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "33963c14-91af-4116-8239-23b67eeb3a0c",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C3",
+      "claim": "Larval zebrafish can move with acceleration of 1 g (9.83 m/s2).",
+      "claim_type": "EXPLICIT",
+      "source": "They can move at an instantaneous velocity up to 50 mm/s (Severi et al., 2014) and acceleration of 1 g (9.83 m/s2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the acceleration capability of larval zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "ab397d17-cf3d-44c6-a8f7-983166c8815d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C4",
+      "claim": "The implementation of flashed fluorescence excitation (200 \u03bcs in duration) allowed blur-free fluorescent images to be captured when a zebrafish moved at a speed up to 10 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the implementation of flashed fluorescence excitation (200 \u03bcs in duration) allowed blur-free fluorescent images to be captured when a zebrafish moved at a speed up to 10 mm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the technical capability of the flashed excitation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "b42a8587-51ba-487f-9c0a-43335f42139f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C5",
+      "claim": "Larval zebrafish are an attractive model system to investigate the neural correlates of behaviors owing to their small brain size, optical transparency, and rich behavioral repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval zebrafish (Danio rerio) are an attractive model system to investigate the neural correlates of behaviors owing to their small brain size, optical transparency, and rich behavioral repertoire (Friedrich et al., 2010; Ahrens and Engert, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Friedrich et al., 2010 and Ahrens and Engert, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "1bf7182d-02dc-44e9-9431-803d4a2d2bf6",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C6",
+      "claim": "The total number of neurons in a larval zebrafish brain is approximately 80,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the total number of neurons (~80,000 [Hill et al., 2003]) in a larval zebrafish brain, we next introduced a sparseness index \u03c1, defined as the fraction of neurons in the brain active at a given instant, and used numerical simulation and our reconstruction algorithm to characterize the dependence of achievable resolution on \u03c1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hill et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "b43ecdbc-1c03-4af2-a739-a30b4a232b72",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C7",
+      "claim": "A critical sparseness index \u03c1c \u2248 0.11 was identified, below which active neurons could be resolved at the optimal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a critical \u03c1c \u2248 0.11, below which active neurons could be resolved at the optimal resolution (Figure 1\u2014figure supplement 11b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by numerical simulation data presented in Figure 1\u2014figure supplement 11b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "b9671f61-97ac-4560-a7b4-573f6ef89dd9",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C8",
+      "claim": "The fluorescent intensity loss due to photobleaching reached ~50% when the zebrafish was imaged continuously for ~100 min and over more than 300,000 volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescent intensity loss due to photobleaching reached ~50% when the zebrafish, which expressed pan-neuronal nucleus-labelled GCamp6f (huc:h2b-gcamp6f), was imaged continuously for ~100 min and over more than 300,000 volumes (Figure 1\u2014figure supplement 12, Video 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "00a80984-a197-4f9b-b404-7d985fa39e0f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C9",
+      "claim": "Different groups of neurons in the forebrain, midbrain, and hindbrain were activated at different times during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that different groups of neurons in the forebrain, midbrain, and hindbrain were activated at different times (Figure 1e\u2013f, Video 1 and 4), suggesting rapid sensorimotor transformation across different brain regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 1e-f and Videos 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4b911a4c-974a-4e34-a6be-e0d168367b88",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C10",
+      "claim": "The XLFM had ~ \u00d8800 \u03bcm in plane coverage and more than 400 \u03bcm depth of view.",
+      "claim_type": "EXPLICIT",
+      "source": "In our design, the system had ~ \u00d8800 \u03bcm in plane coverage (\u00d8 is the diameter of the lateral field of view) and more than 400 \u03bcm depth of view, within which an optimal resolution of 3.4 \u03bcm \u00d7 3.4 \u03bcm \u00d7 5 \u03bcm could be achieved over a depth of 200 \u03bcm (Figure 1\u2014figure supplements 6 and 7, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by characterization data in Figure 1\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "da583661-08ae-4629-a307-de62bd674a2f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C11",
+      "claim": "An optimal resolution of 3.4 \u03bcm \u00d7 3.4 \u03bcm \u00d7 5 \u03bcm could be achieved over a depth of 200 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "In our design, the system had ~ \u00d8800 \u03bcm in plane coverage (\u00d8 is the diameter of the lateral field of view) and more than 400 \u03bcm depth of view, within which an optimal resolution of 3.4 \u03bcm \u00d7 3.4 \u03bcm \u00d7 5 \u03bcm could be achieved over a depth of 200 \u03bcm (Figure 1\u2014figure supplements 6 and 7, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by characterization data in Figure 1\u2014figure supplements 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "36243f30-4601-433b-9784-e6224a6e741e",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C12",
+      "claim": "The imaging performance suffered from the variation in the focal length of the micro-lenses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current implementation, however, the imaging performance suffered from the variation in the focal length of the micro-lenses (Figure 1\u2014figure supplement 8), which led to spatial variance of the PSF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "0e022fd1-1b48-413d-84f3-7095feb7f98d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C13",
+      "claim": "The reconstruction performance and the achievable optimal resolution were shown to degrade beyond the volume of \u00d8500 \u03bcm \u00d7 100 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the reconstruction performance and the achievable optimal resolution were shown to degrade beyond the volume of \u00d8500 \u03bcm \u00d7 100 \u03bcm (Figure 1\u2014figure supplements 9 and 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplements 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "9b5c7b43-bc4e-4523-b0ff-f2eb9de9eba9",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C14",
+      "claim": "All imaging reconstructions were carried out over a volume of \u00d8800 \u03bcm \u00d7 400 \u03bcm to minimize the reconstruction time while assuring whole brain coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the reconstruction time while assuring whole brain coverage (~250 \u03bcm thick), all imaging reconstructions were carried out over a volume of \u00d8800 \u03bcm \u00d7 400 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the reconstruction volume used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "7c30d817-aa3b-448d-aaa5-1ed46f9a6940",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C15",
+      "claim": "The customized lenslet array was placed at the rear pupil plane of the imaging objective.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a customized lenslet array (Figure 1a, Figure 1\u2014figure supplement 1) was placed at the rear pupil plane of the imaging objective, instead of at the imaging plane as in LFM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly describes the optical configuration shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "5ff39bbe-f855-429a-ac8d-41fac7ed5165",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C16",
+      "claim": "In ideal conditions, a 2D spatially invariant point spread function (PSF) could be defined and measured in XLFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in ideal conditions, a 2D spatially invariant point spread function (PSF) could be defined and measured; in practice, the PSF was approximately spatially invariant (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the theoretical property of the PSF in XLFM.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "45a5d2d9-6bb9-4fdb-bd24-4edfefa9d10e",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C17",
+      "claim": "Multifocal imaging was introduced to further increase the depth of view by dividing the micro-lenses array into two groups whose focal planes were at different axial positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, multifocal imaging (Abrahamsson et al., 2013; Perwass and Wietzke, 2012) was introduced to further increase the depth of view by dividing the micro-lenses array into two groups whose focal planes were at different axial positions (Figure 1b and c, Figure 1\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and illustrated in Figures 1b, 1c, and supplements 3 and 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "476c8e2a-39db-4b54-9578-1ec91f351f1b",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C18",
+      "claim": "A new computational algorithm based on optical wave theory was developed to reconstruct the entire 3D volume from one image.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, a new computational algorithm based on optical wave theory was developed to reconstruct the entire 3D volume from one image (Figure 1\u2014figure supplement 5) captured by a fast camera (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly states the development of a new algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "882f2005-465e-4f7e-ac00-82338047c103",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C19",
+      "claim": "The tracking system compensated for fish movement by continuously adjusting the lateral positions of the motorized stage at 300 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking and autofocusing allowed for rapid compensation of 3D fish movement (300 Hz in x and y, 100 Hz in z, Figure 3a) and retainment of the fish head within the field of view of the imaging objective.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly states the tracking speed and references Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "b59c4c50-a9bb-4cb3-92f7-89383ed86900",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C20",
+      "claim": "The autofocus system compensated for axial fish movement at 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracking and autofocusing allowed for rapid compensation of 3D fish movement (300 Hz in x and y, 100 Hz in z, Figure 3a) and retainment of the fish head within the field of view of the imaging objective.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly states the autofocus speed and references Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "f7de7f80-12be-414b-a458-a5831e3f5a42",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C21",
+      "claim": "Eyes converged rapidly when the fish entered the prey capture state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with several earlier findings (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013), eyes converged rapidly when the fish entered the prey capture state (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and data shown in Figure 3c.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "48cd26c1-ed21-4980-bc6c-5bb6a27f56b6",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C22",
+      "claim": "When a paramecium moved into the visual field of the fish, groups of neurons near the contralateral optical tectum of the fish were first activated.",
+      "claim_type": "EXPLICIT",
+      "source": "When a paramecium moved into the visual field of the fish, groups of neurons, indicated as group one in Figure 4b, near the contralateral optical tectum of the fish were first activated (t1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c38e5640-1227-4635-9f95-37703cda7386",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C23",
+      "claim": "The earliest tectal activity (group 1) is responsible for prey detection.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest tectal activity (group 1) responsible for prey detection found here is consistent with previous studies (Semmelhack et al., 2014; Bianco and Engert, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Semmelhack et al., 2014 and Bianco and Engert, 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "f2b25a90-2f28-4a73-946e-a7ddd26dfd26",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C24",
+      "claim": "Whole brain imaging in freely behaving animals has been previously reported in Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole brain imaging in freely behaving animals has been previously reported in Caenorhabditis elegans, by integrating spinning-disk confocal microscopy with a 2D tracking system (Venkatachalam et al., 2016; Nguyen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Venkatachalam et al., 2016 and Nguyen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "cacf66bc-bdf4-4d00-b1e2-a4711db5b282",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C25",
+      "claim": "Howard Berg pioneered the use of 3D tracking microscopy to study bacteria chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the more remote past, Howard Berg pioneered the use of 3D tracking microscopy to study bacteria chemotaxis (Berg, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Berg, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "ee3d6480-c7fc-4a27-88c0-572ec35fc42a",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C26",
+      "claim": "The XLFM overcomes several critical limitations of conventional LFM and allows optimization of imaging volume, resolution, and speed simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The XLFM, derived from the general concept of light field imaging (Broxton et al., 2013; Adelson and Wang, 1992; Ng et al., 2005; Levoy et al., 2006), overcomes several critical limitations of conventional LFM and allows optimization of imaging volume, resolution, and speed simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the advantages of XLFM over conventional LFM, with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4695127d-974d-4eab-a17a-cde5d0190646",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C27",
+      "claim": "XLFM can be perfectly combined with flashed fluorescence excitation to capture blur-free images at high resolution during rapid fish movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it can be perfectly combined with flashed fluorescence excitation to capture blur-free images at high resolution during rapid fish movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this capability of XLFM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "ca8232b8-9516-4020-bc54-d13fb00fedf2",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C28",
+      "claim": "Sensory information processing depends strongly on the locomotor state of an animal.",
+      "claim_type": "EXPLICIT",
+      "source": "A large body of research suggests that sensory information processing depends strongly on the locomotor state of an animal (Niell and Stryker, 2010; Maimon et al., 2010; Chiappe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Niell and Stryker, 2010; Maimon et al., 2010; and Chiappe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "279c293c-fd0d-42a9-b9ec-1eab22fa3093",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C29",
+      "claim": "The ability to sense self-motion, such as proprioceptive feedback and efferent copy, can profoundly shape the dynamics of the neural circuit and perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to sense self-motion, such as proprioceptive feedback (Pearson, 1995) and efferent copy (Bell, 1981), can also profoundly shape the dynamics of the neural circuit and perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pearson, 1995 and Bell, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d40e91ae-b18b-4fa4-9967-b234d2920434",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C30",
+      "claim": "Population neuronal activities are sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of experimental data indeed suggests that population neuronal activities are sparse (Hrom\u00e1dka et al., 2008; Buzs\u00e1ki and Mizuseki, 2014) and sparse representation is useful for efficient neural computation (Olshausen and Field, 1996; Olshausen and Field, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hrom\u00e1dka et al., 2008 and Buzs\u00e1ki and Mizuseki, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "06bf4437-6af5-471f-9fb7-efbf4da6be65",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C31",
+      "claim": "Sparse representation is useful for efficient neural computation.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of experimental data indeed suggests that population neuronal activities are sparse (Hrom\u00e1dka et al., 2008; Buzs\u00e1ki and Mizuseki, 2014) and sparse representation is useful for efficient neural computation (Olshausen and Field, 1996; Olshausen and Field, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Olshausen and Field, 1996 and Olshausen and Field, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d49a8e01-62b8-4f16-88b4-cff25c5fc44f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C32",
+      "claim": "When the fraction of active neurons in a given imaging frame was less than \u03c1c \u2248 0.11, individual neurons could be resolved at optimal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the total number of neurons in the larval zebrafish brain, we found that when the fraction of active neurons in a given imaging frame was less than \u03c1c \u2248 0.11, individual neurons could be resolved at optimal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this finding from numerical simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "636601c2-baad-4835-91f8-749525700562",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C33",
+      "claim": "When population neural activity was dense, a coarse-grained neural activity map with reduced resolution was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "When population neural activity was dense (e.g., neurons have high firing rate and firing patterns have large spatiotemporal correlation), we obtained a coarse-grained neural activity map with reduced resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "5f285932-e53e-4461-bde8-979c57378a28",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C34",
+      "claim": "The linear acceleration of the swimming fish, encoded by vestibular feedback, was significantly underestimated due to motion compensation by the tracking system.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear acceleration of the swimming fish, encoded by vestibular feedback, was significantly underestimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of the tracking approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c9948ef2-a157-4ffe-b4c4-39cdffd060d0",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C35",
+      "claim": "The perception of angular acceleration during head orientation remained largely intact in the tracking system.",
+      "claim_type": "EXPLICIT",
+      "source": "The perception of angular acceleration during head orientation remained largely intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this aspect of the tracking system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "75e42fcc-2cc1-478a-9683-7d141df2254e",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C36",
+      "claim": "The relative flow velocity along the fish body was invariant upon stage translation and can still be detected by specific hair cells in the lateral line system.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative flow velocity along the fish body, which was invariant upon stage translation, can still be detected by specific hair cells in the lateral line system (Coombs, 2014; Liao, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Coombs, 2014 and Liao, 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "fdb401b7-8b42-4179-9617-e8425da283a3",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C37",
+      "claim": "The current axial displacement employed by the piezo scanner had a limited travelling range (400 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the current axial displacement employed by the piezo scanner had a limited travelling range (400 \u00b5m), and our swimming chamber essentially restrained the movement of the zebrafish in two dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this technical limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "927bf33b-6b4a-4d60-b771-57e9fa4c298d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C38",
+      "claim": "The swimming chamber essentially restrained the movement of the zebrafish in two dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the current axial displacement employed by the piezo scanner had a limited travelling range (400 \u00b5m), and our swimming chamber essentially restrained the movement of the zebrafish in two dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "2e0b9eda-2df2-42e1-9083-806e52be229f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C39",
+      "claim": "The performance degradation caused by focal length variation of the micro-lenses could be resolved by higher precision machining.",
+      "claim_type": "EXPLICIT",
+      "source": "In XLFM, the performance degradation caused by focal length variation of the micro-lenses could be resolved by higher precision machining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this potential improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "81bdfcdb-4c21-439b-b917-f6c4d5aa9ee0",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C40",
+      "claim": "With more pixels on the imaging sensor, more densely labelled samples could be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "With more pixels on the imaging sensor, we could resolve more densely labelled samples, and achieve higher spatial resolution without sacrificing imaging volume coverage by introducing more than two different focal planes formed by more groups of micro-lenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this potential improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "94d7bbd6-ec97-4591-84f0-e28cdb37e1de",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C41",
+      "claim": "The fast imaging speed of XLFM holds the potential for recording electrical activity when high signal-to-noise ratio (SNR) fluorescent voltage sensors become available.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the fast imaging speed of XLFM holds the potential for recording electrical activity when high signal-to-noise ratio (SNR) fluorescent voltage sensors become available (St-Pierre et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to St-Pierre et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "36eda645-7115-4cf0-ab8b-a4fdc89e442d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C42",
+      "claim": "The illumination-independent characteristic of XLFM is perfectly suitable for recording brain activities from bioluminescent calcium/voltage indicators in a truly natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the illumination-independent characteristic of XLFM is perfectly suitable for recording brain activities from bioluminescent calcium/voltage indicators in a truly natural environment, where light interference arising from fluorescence excitation can be eliminated (Naumann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Naumann et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d04462cc-d747-4f87-920f-68133d75ce39",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C43",
+      "claim": "Light sheet microscopy has demonstrated entire brain coverage and single neuron resolution in restrained zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "While light sheet microscopy (LSM) has demonstrated entire brain coverage and single neuron resolution in restrained zebrafish (Ahrens et al., 2013), it lacks the speed to follow rapid fish movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ahrens et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "6cf4e6a8-f620-41db-bc93-eaff138c99b0",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C44",
+      "claim": "Light sheet microscopy lacks the speed to follow rapid fish movement.",
+      "claim_type": "EXPLICIT",
+      "source": "While light sheet microscopy (LSM) has demonstrated entire brain coverage and single neuron resolution in restrained zebrafish (Ahrens et al., 2013), it lacks the speed to follow rapid fish movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of LSM.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d1a5a8f4-7d78-439a-8621-5b15a981a183",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C45",
+      "claim": "In light sheet microscopy, the sample is illuminated from its side, a configuration that is difficult to be integrated with a tracking system.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in LSM, the sample is illuminated from its side, a configuration that is difficult to be integrated with a tracking system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of LSM.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "fb59f2ba-46db-413e-98ba-b01d1af1568f",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C46",
+      "claim": "Conventional light field microscopy has relatively low spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional light field microscopy (LFM) (Broxton et al., 2013; Prevedel et al., 2014) is a promising alternative due to its higher imaging speed; however, its spatial resolution is relatively low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Broxton et al., 2013 and Prevedel et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c0872d0e-7421-4d40-921c-022672079846",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C47",
+      "claim": "Specialized LFMs for monitoring neural activity utilizing temporal information rely on spatiotemporal sparsity of fluorescent signals and cannot be applied to moving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specialized LFMs for monitoring neural activity utilizing temporal information were also developed recently (P\u00e9gard et al., 2016; N\u00f6bauer et al., 2017), which rely on spatiotemporal sparsity of fluorescent signals and cannot be applied to moving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to P\u00e9gard et al., 2016 and N\u00f6bauer et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "aa21641c-4bd8-4dab-875f-ab08c0aace50",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C48",
+      "claim": "Vestibular as well as proprioceptive feedbacks are likely perturbed in immobilized zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is likely that vestibular as well as proprioceptive feedbacks are perturbed in immobilized zebrafish (Engert, 2012; Bianco et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Engert, 2012 and Bianco et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "725c5af7-687f-4bb4-878e-38e6b2dad318",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C49",
+      "claim": "The crowning moment during hunting behavior when a fish succeeds in catching a paramecium cannot be easily replicated in a virtual reality setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The crowning moment during hunting behavior (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013) \u2014 when a fish succeeds in catching a paramecium \u2014 cannot be easily replicated in a virtual reality setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this limitation of virtual reality approaches, with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d995b7a7-9998-4719-8d8b-d1389cac02fa",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C50",
+      "claim": "Current studies on freely swimming zebrafish are either limited to non-imaging optical systems or wide field imaging at low resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Current studies on freely swimming zebrafish are either limited to non-imaging optical systems (Naumann et al., 2010) or wide field imaging at low resolution (Muto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Naumann et al., 2010 and Muto et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "29921fcf-9b60-44d3-9312-ae1af5c8c936",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C51",
+      "claim": "The imaging system was a customized upright microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "The imaging system (Figure 1) was a customized upright microscope.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly describes the imaging system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "236e95e2-5e91-4294-b0ae-2e4e0a48e349",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C52",
+      "claim": "A blue laser (Coherent, OBIS 488 nm, 100 mW, USA) was used for fluorescence excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the fluorescence excitation light path, a blue laser (Coherent, OBIS 488 nm, 100 mW, USA) was expanded and collimated into a beam with a diameter of ~25 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the excitation laser used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "077fdb31-34cc-45b1-8b44-43aea62478c0",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C53",
+      "claim": "The total magnification of the imaging system was ~4.",
+      "claim_type": "EXPLICIT",
+      "source": "The total magnification of the imaging system was ~4, so one camera pixel (6.5 \u00b5m) corresponded to ~1.6 \u00b5m on the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the magnification of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "f7767550-4722-4b0c-9638-608448c374f7",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C54",
+      "claim": "One camera pixel (6.5 \u00b5m) corresponded to ~1.6 \u00b5m on the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The total magnification of the imaging system was ~4, so one camera pixel (6.5 \u00b5m) corresponded to ~1.6 \u00b5m on the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the pixel-to-sample correspondence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "0e3b063e-47d4-4704-84b8-826ba2c70bfe",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C55",
+      "claim": "Due to the blockage of light by the aluminum micro-lenses housing, 16% of the light after a 1.05 NA imaging objective was effectively collected by the camera.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the blockage of light by the aluminum micro-lenses housing, 16% of the light after a 1.05 NA imaging objective was effectively collected by the camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the light collection efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "2fde3ed1-4d52-4ad4-900a-0ddb8f236a80",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C56",
+      "claim": "The light collection efficiency of 16% is equivalent to using a 0.4 NA imaging objective.",
+      "claim_type": "EXPLICIT",
+      "source": "This efficiency is equivalent to using a 0.4 NA imaging objective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this equivalence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "68975bff-9d81-441a-9328-17099c8922d0",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C57",
+      "claim": "It took about 4 min to reconstruct one 3D volume using a desktop computer with a GPU (Nvidia Titan X).",
+      "claim_type": "EXPLICIT",
+      "source": "It took about 4 min to reconstruct one 3D volume using a desktop computer with a GPU (Nvidia Titan X).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the reconstruction time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "fb538599-2eef-4381-b2bd-3fa02e3b719c",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C58",
+      "claim": "The reconstruction ran ~20 \u00d7 slower using a CPU (Intel E5-2630v2) compared to GPU.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the reconstruction ran ~20 \u00d7 slower using a CPU (Intel E5-2630v2) on a Dell desktop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the speed comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "8ee07de7-73d1-4142-a0fa-61ca56ad1f28",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C59",
+      "claim": "The optical transfer function (OTF) was extended to a spatial frequency of ~1/3.4 \u00b5m\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The optical transfer function (OTF), which is the Fourier transform of the PSF in the x-y plane, was extended to a spatial frequency of ~1/3.4 \u00b5m\u22121 (Figure 1\u2014figure supplement 6), a result that agreed well with the designed resolution at 3.4 \u03bcm, given that the equivalent NA of individual micro-lenses was 0.075.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "2befbfd3-3dad-42a3-928f-b7bc37804d83",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C60",
+      "claim": "The equivalent NA of individual micro-lenses was 0.075.",
+      "claim_type": "EXPLICIT",
+      "source": "The optical transfer function (OTF), which is the Fourier transform of the PSF in the x-y plane, was extended to a spatial frequency of ~1/3.4 \u00b5m\u22121 (Figure 1\u2014figure supplement 6), a result that agreed well with the designed resolution at 3.4 \u03bcm, given that the equivalent NA of individual micro-lenses was 0.075.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the equivalent NA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "9a670fe9-ec11-42f2-8902-e255e983f986",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C61",
+      "claim": "The lateral resolution was preserved across the designed cylindrical imaging volume of \u00d8800 \u03bcm \u00d7 200 \u03bcm when measured from the raw PSF behind individual micro-lenses.",
+      "claim_type": "EXPLICIT",
+      "source": "The lateral resolution, measured from the raw PSF behind individual micro-lenses, was preserved across the designed cylindrical imaging volume of \u00d8800 \u03bcm \u00d7 200 \u03bcm (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c68e0243-20cd-4af1-8b7e-79982fc1699e",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C62",
+      "claim": "The designed lateral resolution of 3.4 \u00b5m could be preserved over a volume of \u00d8800 \u03bcm \u00d7 200 \u03bcm by reducing focal length variation to below 0.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, the designed lateral resolution of 3.4 \u00b5m could be preserved over a volume of \u00d8800 \u03bcm \u00d7 200 \u03bcm by reducing focal length variation to below 0.3%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states this potential improvement.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "956230df-1fee-4f4b-9128-20f31d50df9d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C66",
+      "claim": "The optimal axial resolution at 5 \u00b5m could be achieved over an axial coverage of 200 \u03bcm by minimizing micro-lens focal length variation.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the optimal axial resolution at 5 \u00b5m could be achieved over an axial coverage of 200 \u03bcm by minimizing micro-lens focal length variation (Figure 1\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript directly states this potential improvement.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "ca213707-6f83-4dff-b36a-ab83991a73af",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C67",
+      "claim": "Each active neuron was assumed to emit 20,000 photons in the numerical simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In all calculations, the Poisson noise was properly considered by assuming that each active neuron emitted 20,000 photons, 2.2% of which were collected by our imaging system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "01c12c9e-d663-4774-b799-75a88141b155",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C68",
+      "claim": "2.2% of emitted photons were collected by the imaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "In all calculations, the Poisson noise was properly considered by assuming that each active neuron emitted 20,000 photons, 2.2% of which were collected by our imaging system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the collection efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4dff9dcb-a205-4ab0-aeeb-19e1c5aa61f4",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C69",
+      "claim": "The rate-limiting factor of the lateral tracking system was the response time of the stage (~300 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-limiting factor of our lateral tracking system was the response time of the stage (~300 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the rate-limiting factor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "377e69d2-4541-42b7-9406-1bb78ec00554",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C70",
+      "claim": "The closed loop delay of the autofocus system was ~5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The feedback control system was written in LabVIEW. The code was further accelerated by parallel processing and the closed loop delay was ~5 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the closed loop delay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "34f75c8b-f1a2-421b-9421-c2612b6c79be",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C71",
+      "claim": "The rate-limiting factor of the autofocus system was the settling time of the piezo scanner, which was about 10 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-limiting factor of the autofocus system was the settling time of the piezo scanner (PI P725KHDS, Germany, 400 \u03bcm travelling distance), which was about 10 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the rate-limiting factor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "d3742ecb-5744-4fb7-b583-e85fafd0a66e",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C72",
+      "claim": "The high magnification real-time analysis was run at ~120 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "The high mag RT analysis was run at ~120 fps and the low mag RT analysis was run at ~180 fps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the analysis speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4a618031-2a9d-4de1-aaf7-e59368f7c41d",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C73",
+      "claim": "The low magnification real-time analysis was run at ~180 fps.",
+      "claim_type": "EXPLICIT",
+      "source": "The high mag RT analysis was run at ~120 fps and the low mag RT analysis was run at ~180 fps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the analysis speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "e1a5e9bf-74c8-41e1-9f64-afef9170cacc",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C74",
+      "claim": "All larval zebrafish were raised in embryo medium under 28.5\u00b0C and a 14/10 hr light/dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All larval zebrafish (huc:h2b-gcamp6f and huc:gcamp6s) were raised in embryo medium under 28.5\u00b0C and a 14/10 hr light/dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the animal husbandry conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "ed7ed1dc-7fba-4065-9bf3-fd664b49b9ca",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C75",
+      "claim": "Zebrafish were fed with paramecium from 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish were fed with paramecium from 4 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the feeding protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "bc2cf0c7-5f3b-4f7e-8774-b2f6414101ab",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C76",
+      "claim": "For restrained experiments, 4\u20136 dpf zebrafish were embedded in 1% low melting point agarose.",
+      "claim_type": "EXPLICIT",
+      "source": "For restrained experiments, 4\u20136 dpf zebrafish were embedded in 1% low melting point agarose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "59dd2fb2-3590-4914-bf62-b9a05b711f99",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C77",
+      "claim": "For freely moving experiments, 7\u201311 dpf zebrafish were used.",
+      "claim_type": "EXPLICIT",
+      "source": "For freely moving experiments, 7\u201311 dpf zebrafish with 10% Hank's solution were transferred to a customized chamber (20 mm in diameter, 0.8 mm in depth), and 10\u201320 paramecia were added before the chamber was covered by a coverslip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "683510d0-905d-4433-bb32-dd426c8474b6",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "claim_id": "C78",
+      "claim": "Each experiment was repeated at least three times with similar experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each experiment was repeated at least three times with similar experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c60308d-41de-4c31-98fc-0eb9fa55e360",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The XLFM system achieves whole-brain imaging of larval zebrafish at 77 Hz volume rate with near single-cell resolution (3.4 \u03bcm \u00d7 3.4 \u03bcm \u00d7 5 \u03bcm) over a volume of \u00d8800 \u03bcm \u00d7 400 \u03bcm. The system uses a customized lenslet array at the pupil plane, multifocal imaging with two groups of micro-lenses, and a novel reconstruction algorithm based on optical wave theory. Flashed excitation (200 \u03bcs) enables blur-free imaging during fish movement up to 10 mm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C10, C11 provide direct experimental specifications supported by figures and methods. Claims C15-C18 describe the optical design innovations that enable these capabilities, with supporting citations and figure references. The technical specifications are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The XLFM imaging performance is limited by focal length variation in the micro-lenses, causing spatial variance of the PSF and degradation beyond \u00d8500 \u03bcm \u00d7 100 \u03bcm volume. While lateral resolution is preserved across \u00d8800 \u03bcm \u00d7 200 \u03bcm when measured from individual micro-lenses, reconstruction quality degrades at the edges. The authors suggest that reducing focal length variation to below 0.3% could preserve optimal resolution over the full designed volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 document observed limitations with supporting figure references (supplements 8-10). Claims C61-C62, C66 distinguish between theoretical capabilities and current implementation, appropriately noting that improvements are speculative. The characterization of limitations is thorough and honest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "519a05b4-4b85-4a78-8a5f-f36cb3832583",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Through numerical simulation, the authors identified a critical sparseness index \u03c1c \u2248 0.11 (approximately 9,000 of 80,000 neurons active), below which individual neurons can be resolved at optimal resolution. Above this threshold, resolution degrades and a coarse-grained activity map is obtained. Simulations assumed 20,000 photons per neuron with 2.2% collection efficiency and properly considered Poisson noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C32-C33 present simulation results with clear methodology (C67-C68) and supporting figures (supplement 11). The sparseness constraint is well-characterized and appropriately acknowledged as a fundamental limitation. The simulation parameters are explicitly stated, enabling reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The 3D tracking system compensates for fish movement at 300 Hz laterally (limited by stage response time) and 100 Hz axially (limited by piezo settling time of ~10 ms). The autofocus system has a closed-loop delay of ~5 ms. This enables retention of the fish head within the field of view during natural behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 state tracking speeds with figure support (3a). Claims C69-C71 identify rate-limiting factors with specific technical details. The system characterization is thorough and identifies bottlenecks clearly. The speeds are sufficient for the application as demonstrated in behavioral experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "252179a9-027e-414e-aba0-7a28304da802",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During visual stimulation in restrained zebrafish, different groups of neurons in forebrain, midbrain, and hindbrain were activated at different times, suggesting rapid sensorimotor transformation. During prey capture in freely behaving fish, neurons near the contralateral optical tectum were first activated when paramecium entered the visual field, consistent with prior studies identifying this as prey detection circuitry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C22 present experimental observations with supporting figures (1e-f, 4b) and videos. Claim C23 appropriately contextualizes findings with prior literature (Semmelhack et al., 2014; Bianco and Engert, 2015). The neural dynamics are clearly documented and interpretations are conservative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "5e514638-c719-4c24-ac48-143fb01160fd",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Eyes converged rapidly when the fish entered the prey capture state, consistent with several earlier findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 reports a behavioral observation supported by Figure 3c and multiple citations (Bianco et al., 2011; Patterson et al., 2013; Trivedi and Bollmann, 2013). This is a confirmatory finding that validates the tracking system's ability to capture known behaviors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "be804ebe-ae55-4f2e-96cf-ec5e111d3742",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The tracking system's motion compensation significantly underestimates linear acceleration (vestibular feedback) but preserves angular acceleration during head orientation. Relative flow velocity along the fish body remains invariant and detectable by lateral line hair cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 acknowledge important limitations of the tracking approach with appropriate citations (C36: Coombs, 2014; Liao, 2010). The authors appropriately discuss which sensory modalities are preserved versus perturbed. This honest assessment of limitations strengthens the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "cef2e03f-b9c2-41ed-8629-4a5124a0dc5b",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Photobleaching reached ~50% after continuous imaging for ~100 min (>300,000 volumes) in zebrafish expressing pan-neuronal nucleus-labeled GCamp6f at 2.5 mW/mm\u00b2 excitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 provides quantitative photobleaching characterization with supporting figure (supplement 12) and videos (2-3). The low excitation power and extended imaging duration demonstrate the system's suitability for long-term experiments. Sample size (n=5 fish) is stated in the figure legend.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "a6a95821-f981-4638-a282-614b9bbe0a21",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The current implementation has technical limitations: the piezo scanner has limited axial travel range (400 \u03bcm) and the swimming chamber restrains zebrafish movement to two dimensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 honestly acknowledge hardware limitations of the current system. These are straightforward technical constraints that are clearly stated and could be addressed in future implementations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "XLFM overcomes critical limitations of conventional light field microscopy (low resolution) and light sheet microscopy (insufficient speed for tracking, difficult side-illumination geometry). XLFM allows simultaneous optimization of imaging volume, resolution, and speed, and can be combined with flashed excitation for blur-free imaging during rapid movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 state advantages with supporting citations. Claims C43-C47 accurately characterize limitations of alternative approaches with appropriate citations (Ahrens et al., 2013; Broxton et al., 2013; Prevedel et al., 2014; P\u00e9gard et al., 2016; N\u00f6bauer et al., 2017). The comparative assessment is fair and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4db15afb-064f-461d-a600-cfbe12ba9d2b",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The optical transfer function extends to spatial frequency ~1/3.4 \u03bcm\u207b\u00b9, consistent with designed resolution of 3.4 \u03bcm given the equivalent NA of 0.075 for individual micro-lenses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide optical characterization with figure support (supplement 6). The OTF measurement validates the designed resolution, and the consistency between measured and theoretical values strengthens confidence in the system characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "236d33cf-3a0d-4fb6-b6db-2197a291547b",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Due to blockage by the aluminum micro-lens housing, 16% of light after the 1.05 NA objective is collected by the camera, equivalent to using a 0.4 NA objective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 quantify light collection efficiency and provide an intuitive equivalence. This is an important practical limitation that affects signal-to-noise ratio. The calculation appears straightforward given the geometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "f6a528ca-2f7f-4643-89d9-e939e53f4459",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "3D volume reconstruction takes approximately 4 minutes using a GPU (Nvidia Titan X), running ~20\u00d7 faster than CPU (Intel E5-2630v2) implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 provide computational performance benchmarks with specific hardware details. The reconstruction time is reasonable for post-hoc analysis but not real-time. The GPU acceleration factor is substantial and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "c80ed4d5-96ab-4f53-b80d-e699d2981676",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Real-time behavioral analysis runs at ~120 fps (high magnification) and ~180 fps (low magnification).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 specify real-time analysis speeds for the behavioral tracking system. These speeds are sufficient for the tracking requirements (300 Hz lateral, 100 Hz axial) and demonstrate the system's capability for closed-loop experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "7382ce74-fbfb-402a-8887-c162a5f01f5c",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future improvements could include: higher precision machining to reduce focal length variation, more camera pixels to resolve denser samples and achieve higher resolution, recording electrical activity with improved voltage sensors, and using bioluminescent indicators to eliminate excitation light interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C42 propose future improvements and applications. While C39-C40 are reasonable engineering improvements, they remain speculative without implementation. Claims C41-C42 depend on future sensor development (with appropriate citations). These are appropriate forward-looking statements but do not constitute current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "df9913da-0b0f-4212-83c2-c19d3a59ff24",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Larval zebrafish are an attractive model system with small brain size (~80,000 neurons), optical transparency, and rich behavioral repertoire. They can move at instantaneous velocities up to 50 mm/s and accelerations of 1 g (9.83 m/s\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C5-C6 provide background information about the model system with appropriate citations (Severi et al., 2014; Friedrich et al., 2010; Ahrens and Engert, 2015; Hill et al., 2003). These establish the motivation and technical requirements for the imaging system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "e219eba1-364a-4d83-98c0-4e6c2050503c",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work establishes that sensory processing depends on locomotor state, self-motion sensing shapes neural dynamics, and neural activity is sparse. Immobilization perturbs vestibular and proprioceptive feedback, and key behavioral moments (e.g., successful prey capture) cannot be replicated in virtual reality. Current freely swimming zebrafish studies are limited to non-imaging or low-resolution approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C48-C50 provide literature context with extensive appropriate citations. These establish the scientific motivation for developing whole-brain imaging in freely behaving animals. The characterization of prior work limitations is fair and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "83c4a3ad-1cce-44b0-a1e6-9fa5dfbb34c6",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Whole brain imaging in freely behaving animals has been reported in C. elegans using spinning-disk confocal microscopy with 2D tracking. Howard Berg pioneered 3D tracking microscopy for studying bacterial chemotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 cite relevant prior work (Venkatachalam et al., 2016; Nguyen et al., 2016; Berg, 1971) that established tracking microscopy approaches. This appropriately contextualizes the current work within the field's history.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "7515fbd2-1761-4e09-8435-3887538e1874",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The imaging system is a customized upright microscope using a 488 nm, 100 mW laser for excitation, with total magnification ~4\u00d7 (one camera pixel = 6.5 \u03bcm corresponds to ~1.6 \u03bcm on sample). All reconstructions were performed over \u00d8800 \u03bcm \u00d7 400 \u03bcm volume to balance reconstruction time and brain coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54, C14 provide technical specifications of the imaging system. These are straightforward methodological details that are clearly stated and internally consistent. The choice of reconstruction volume (C14) represents a practical compromise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    },
+    {
+      "id": "4f74babe-9c97-48ae-b16a-461d4b03b13a",
+      "content_id": "afa190fd-efe8-4628-8706-d19c5362fb08",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Zebrafish were raised at 28.5\u00b0C with 14/10 hr light/dark cycle and fed paramecium from 4 dpf. Restrained experiments used 4-6 dpf fish embedded in agarose; freely moving experiments used 7-11 dpf fish. Each experiment was repeated at least three times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 describe animal husbandry and experimental protocols. These are standard methodological details that are clearly stated. The statement of replicates (C78, n\u22653) is appropriate though minimal statistical detail is provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:09:44.664127Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "125926c7-773f-4066-8ee1-c06e3b641999",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "ab397d17-cf3d-44c6-a8f7-983166c8815d",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "4b911a4c-974a-4e34-a6be-e0d168367b88",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "da583661-08ae-4629-a307-de62bd674a2f",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "7c30d817-aa3b-448d-aaa5-1ed46f9a6940",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "5ff39bbe-f855-429a-ac8d-41fac7ed5165",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "45a5d2d9-6bb9-4fdb-bd24-4edfefa9d10e",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "476c8e2a-39db-4b54-9578-1ec91f351f1b",
+      "result_id": "9c60308d-41de-4c31-98fc-0eb9fa55e360"
+    },
+    {
+      "claim_id": "36243f30-4601-433b-9784-e6224a6e741e",
+      "result_id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a"
+    },
+    {
+      "claim_id": "0e022fd1-1b48-413d-84f3-7095feb7f98d",
+      "result_id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a"
+    },
+    {
+      "claim_id": "9a670fe9-ec11-42f2-8902-e255e983f986",
+      "result_id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a"
+    },
+    {
+      "claim_id": "c68e0243-20cd-4af1-8b7e-79982fc1699e",
+      "result_id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a"
+    },
+    {
+      "claim_id": "956230df-1fee-4f4b-9128-20f31d50df9d",
+      "result_id": "c2f02513-bf05-4d3c-8661-80fbeaf91a4a"
+    },
+    {
+      "claim_id": "b43ecdbc-1c03-4af2-a739-a30b4a232b72",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "d49a8e01-62b8-4f16-88b4-cff25c5fc44f",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "636601c2-baad-4835-91f8-749525700562",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "1bf7182d-02dc-44e9-9431-803d4a2d2bf6",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "ca213707-6f83-4dff-b36a-ab83991a73af",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "01c12c9e-d663-4774-b799-75a88141b155",
+      "result_id": "519a05b4-4b85-4a78-8a5f-f36cb3832583"
+    },
+    {
+      "claim_id": "882f2005-465e-4f7e-ac00-82338047c103",
+      "result_id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b"
+    },
+    {
+      "claim_id": "b59c4c50-a9bb-4cb3-92f7-89383ed86900",
+      "result_id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b"
+    },
+    {
+      "claim_id": "4dff9dcb-a205-4ab0-aeeb-19e1c5aa61f4",
+      "result_id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b"
+    },
+    {
+      "claim_id": "377e69d2-4541-42b7-9406-1bb78ec00554",
+      "result_id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b"
+    },
+    {
+      "claim_id": "34f75c8b-f1a2-421b-9421-c2612b6c79be",
+      "result_id": "73ec9ae9-2dab-46e9-8d79-c3c4390ca79b"
+    },
+    {
+      "claim_id": "00a80984-a197-4f9b-b404-7d985fa39e0f",
+      "result_id": "252179a9-027e-414e-aba0-7a28304da802"
+    },
+    {
+      "claim_id": "48cd26c1-ed21-4980-bc6c-5bb6a27f56b6",
+      "result_id": "252179a9-027e-414e-aba0-7a28304da802"
+    },
+    {
+      "claim_id": "c38e5640-1227-4635-9f95-37703cda7386",
+      "result_id": "252179a9-027e-414e-aba0-7a28304da802"
+    },
+    {
+      "claim_id": "f7de7f80-12be-414b-a458-a5831e3f5a42",
+      "result_id": "5e514638-c719-4c24-ac48-143fb01160fd"
+    },
+    {
+      "claim_id": "5f285932-e53e-4461-bde8-979c57378a28",
+      "result_id": "be804ebe-ae55-4f2e-96cf-ec5e111d3742"
+    },
+    {
+      "claim_id": "c9948ef2-a157-4ffe-b4c4-39cdffd060d0",
+      "result_id": "be804ebe-ae55-4f2e-96cf-ec5e111d3742"
+    },
+    {
+      "claim_id": "75e42fcc-2cc1-478a-9683-7d141df2254e",
+      "result_id": "be804ebe-ae55-4f2e-96cf-ec5e111d3742"
+    },
+    {
+      "claim_id": "b9671f61-97ac-4560-a7b4-573f6ef89dd9",
+      "result_id": "cef2e03f-b9c2-41ed-8629-4a5124a0dc5b"
+    },
+    {
+      "claim_id": "fdb401b7-8b42-4179-9617-e8425da283a3",
+      "result_id": "a6a95821-f981-4638-a282-614b9bbe0a21"
+    },
+    {
+      "claim_id": "927bf33b-6b4a-4d60-b771-57e9fa4c298d",
+      "result_id": "a6a95821-f981-4638-a282-614b9bbe0a21"
+    },
+    {
+      "claim_id": "ee3d6480-c7fc-4a27-88c0-572ec35fc42a",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "4695127d-974d-4eab-a17a-cde5d0190646",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "d04462cc-d747-4f87-920f-68133d75ce39",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "6cf4e6a8-f620-41db-bc93-eaff138c99b0",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "d1a5a8f4-7d78-439a-8621-5b15a981a183",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "fb59f2ba-46db-413e-98ba-b01d1af1568f",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "c0872d0e-7421-4d40-921c-022672079846",
+      "result_id": "c0108d43-7879-4d41-b1ab-4e86ee3b3759"
+    },
+    {
+      "claim_id": "8ee07de7-73d1-4142-a0fa-61ca56ad1f28",
+      "result_id": "4db15afb-064f-461d-a600-cfbe12ba9d2b"
+    },
+    {
+      "claim_id": "2befbfd3-3dad-42a3-928f-b7bc37804d83",
+      "result_id": "4db15afb-064f-461d-a600-cfbe12ba9d2b"
+    },
+    {
+      "claim_id": "0e3b063e-47d4-4704-84b8-826ba2c70bfe",
+      "result_id": "236d33cf-3a0d-4fb6-b6db-2197a291547b"
+    },
+    {
+      "claim_id": "2fde3ed1-4d52-4ad4-900a-0ddb8f236a80",
+      "result_id": "236d33cf-3a0d-4fb6-b6db-2197a291547b"
+    },
+    {
+      "claim_id": "68975bff-9d81-441a-9328-17099c8922d0",
+      "result_id": "f6a528ca-2f7f-4643-89d9-e939e53f4459"
+    },
+    {
+      "claim_id": "fb538599-2eef-4381-b2bd-3fa02e3b719c",
+      "result_id": "f6a528ca-2f7f-4643-89d9-e939e53f4459"
+    },
+    {
+      "claim_id": "d3742ecb-5744-4fb7-b583-e85fafd0a66e",
+      "result_id": "c80ed4d5-96ab-4f53-b80d-e699d2981676"
+    },
+    {
+      "claim_id": "4a618031-2a9d-4de1-aaf7-e59368f7c41d",
+      "result_id": "c80ed4d5-96ab-4f53-b80d-e699d2981676"
+    },
+    {
+      "claim_id": "2e0b9eda-2df2-42e1-9083-806e52be229f",
+      "result_id": "7382ce74-fbfb-402a-8887-c162a5f01f5c"
+    },
+    {
+      "claim_id": "81bdfcdb-4c21-439b-b917-f6c4d5aa9ee0",
+      "result_id": "7382ce74-fbfb-402a-8887-c162a5f01f5c"
+    },
+    {
+      "claim_id": "94d7bbd6-ec97-4591-84f0-e28cdb37e1de",
+      "result_id": "7382ce74-fbfb-402a-8887-c162a5f01f5c"
+    },
+    {
+      "claim_id": "36eda645-7115-4cf0-ab8b-a4fdc89e442d",
+      "result_id": "7382ce74-fbfb-402a-8887-c162a5f01f5c"
+    },
+    {
+      "claim_id": "54764c5e-a475-436a-a1b3-8597b48afd63",
+      "result_id": "df9913da-0b0f-4212-83c2-c19d3a59ff24"
+    },
+    {
+      "claim_id": "33963c14-91af-4116-8239-23b67eeb3a0c",
+      "result_id": "df9913da-0b0f-4212-83c2-c19d3a59ff24"
+    },
+    {
+      "claim_id": "b42a8587-51ba-487f-9c0a-43335f42139f",
+      "result_id": "df9913da-0b0f-4212-83c2-c19d3a59ff24"
+    },
+    {
+      "claim_id": "1bf7182d-02dc-44e9-9431-803d4a2d2bf6",
+      "result_id": "df9913da-0b0f-4212-83c2-c19d3a59ff24"
+    },
+    {
+      "claim_id": "ca8232b8-9516-4020-bc54-d13fb00fedf2",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "279c293c-fd0d-42a9-b9ec-1eab22fa3093",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "d40e91ae-b18b-4fa4-9967-b234d2920434",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "06bf4437-6af5-471f-9fb7-efbf4da6be65",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "aa21641c-4bd8-4dab-875f-ab08c0aace50",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "725c5af7-687f-4bb4-878e-38e6b2dad318",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "d995b7a7-9998-4719-8d8b-d1389cac02fa",
+      "result_id": "e219eba1-364a-4d83-98c0-4e6c2050503c"
+    },
+    {
+      "claim_id": "f2b25a90-2f28-4a73-946e-a7ddd26dfd26",
+      "result_id": "83c4a3ad-1cce-44b0-a1e6-9fa5dfbb34c6"
+    },
+    {
+      "claim_id": "cacf66bc-bdf4-4d00-b1e2-a4711db5b282",
+      "result_id": "83c4a3ad-1cce-44b0-a1e6-9fa5dfbb34c6"
+    },
+    {
+      "claim_id": "29921fcf-9b60-44d3-9312-ae1af5c8c936",
+      "result_id": "7515fbd2-1761-4e09-8435-3887538e1874"
+    },
+    {
+      "claim_id": "236e95e2-5e91-4294-b0ae-2e4e0a48e349",
+      "result_id": "7515fbd2-1761-4e09-8435-3887538e1874"
+    },
+    {
+      "claim_id": "077fdb31-34cc-45b1-8b44-43aea62478c0",
+      "result_id": "7515fbd2-1761-4e09-8435-3887538e1874"
+    },
+    {
+      "claim_id": "f7767550-4722-4b0c-9638-608448c374f7",
+      "result_id": "7515fbd2-1761-4e09-8435-3887538e1874"
+    },
+    {
+      "claim_id": "9b5c7b43-bc4e-4523-b0ff-f2eb9de9eba9",
+      "result_id": "7515fbd2-1761-4e09-8435-3887538e1874"
+    },
+    {
+      "claim_id": "e1a5e9bf-74c8-41e1-9f64-afef9170cacc",
+      "result_id": "4f74babe-9c97-48ae-b16a-461d4b03b13a"
+    },
+    {
+      "claim_id": "ed7ed1dc-7fba-4065-9bf3-fd664b49b9ca",
+      "result_id": "4f74babe-9c97-48ae-b16a-461d4b03b13a"
+    },
+    {
+      "claim_id": "bc2cf0c7-5f3b-4f7e-8774-b2f6414101ab",
+      "result_id": "4f74babe-9c97-48ae-b16a-461d4b03b13a"
+    },
+    {
+      "claim_id": "59dd2fb2-3590-4914-bf62-b9a05b711f99",
+      "result_id": "4f74babe-9c97-48ae-b16a-461d4b03b13a"
+    },
+    {
+      "claim_id": "683510d0-905d-4433-bb32-dd426c8474b6",
+      "result_id": "4f74babe-9c97-48ae-b16a-461d4b03b13a"
+    }
+  ],
+  "comparisons": []
+}

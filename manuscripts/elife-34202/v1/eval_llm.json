@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C72",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Using dynamic SILAC with mass spectrometry, the authors determined protein half-lives for over 5100 proteins in rat primary hippocampal cultures, with a median half-life of 5.4 days and a range from <1 to >20 days. The distribution is right-skewed with high quality metrics (mean SE ~0.007, median R\u00b2 0.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C20, C72 provide converging evidence with appropriate statistical measures of fit quality. The methodological innovation of a correction factor (C101) for residual light amino acids strengthens the approach. Sample sizes are large (>5100 proteins) and quality metrics demonstrate accurate measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C79",
+      "C80",
+      "C104",
+      "C105",
+      "C103"
+    ],
+    "result": "Validation using FUNCAT-PLA for four proteins (GM130, LaminB1, TrkB, Bassoon) showed strong correlation with MS-derived half-lives (Pearson r=0.983), though FUNCAT-PLA systematically yielded shorter half-lives, possibly due to AHA-containing protein instability or detection of rapidly degraded misfolded proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C79, C104-C105 demonstrate strong correlation between two independent methods. The systematic offset (C22) is acknowledged and potential explanations provided (C23, C80), showing appropriate scientific caution. The validation strengthens confidence in the MS measurements despite the offset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C81",
+      "C82"
+    ],
+    "result": "Protein turnover is influenced by subcellular localization: membrane proteins (plasma membrane, Golgi, ER) exhibit shorter-than-average half-lives, mitochondrial proteins are significantly longer-lived, while synaptic proteins as a group show no significant difference from the population average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C24-C30 provide consistent evidence from subcellular localization analysis. Statistical significance is reported for mitochondrial and membrane proteins. The counter-intuitive finding for mitochondria (C29) is appropriately noted. Mechanistic interpretations (C82) are supported by citations to degradation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C83"
+    ],
+    "result": "Protein half-lives correlate with cellular functions: short-lived proteins (<3 days) are enriched for receptors, signaling molecules, and cell adhesion molecules; intermediate half-lives (6-11 days) for ribosomal proteins; and long-lived proteins (12-15 days) for energy metabolism proteins, histones, and nuclear pore proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C35 demonstrate functional enrichment using Gene Ontology analysis with appropriate statistical correction (Bonferroni). The pattern supports an evolutionary optimization hypothesis (C83). Consistency with prior reports (C34-C35) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Within synapses, glutamate receptors exhibit shorter half-lives than the population average while GABA receptors are similar to average. Cell adhesion molecules (neuroligins, neurexins, N-cadherin) are relatively short-lived, while presynaptic proteins, especially those associated with synaptic vesicles (synapsins, Sv2, Munc proteins), are among the longest-lived synaptic proteins. Individual isoforms within protein families can show very different half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 provide detailed characterization of synaptic protein turnover with specific examples. The observation of isoform-specific differences (C41) adds biological insight. Data are presented in Figure 4 with appropriate visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C85",
+      "C86",
+      "C87",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Protein complex members exhibit more similar half-lives than randomly selected proteins, with variability correlating with complex dynamics: the dynamic spliceosome shows fastest turnover (~4.7 days mean), the static ATP synthase shows longest (11.2 days mean), and the nuclear pore complex shows highest variability reflecting its mixed static/dynamic architecture. Surprisingly, ribosomal proteins show substantial half-life variability despite being considered stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C85-C87, C106-C117 provide comprehensive analysis of 314 complexes with statistical comparison to random sampling (C42). Detailed structural mapping (Figure 5) strengthens the conclusions. The unexpected ribosomal variability (C87) is appropriately highlighted and discussed with mechanistic speculation supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "N-terminal sequence properties (N-end rule) show little impact on protein lifetimes in hippocampal cultures: no significant over- or under-representation of N-terminal amino acids in short- or long-lived protein fractions, and counterintuitively, more destabilizing N-terminal amino acids were found in long-lived proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 appropriately test the N-end rule hypothesis with negative results. The analysis is limited to proteins with single sequences (1797 proteins) which is methodologically sound. The conclusion (C51) appropriately weighs this against other factors like function and localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C92"
+    ],
+    "result": "Proteins in glia-enriched cultures exhibit significantly faster turnover than in neuron-enriched or mixed cultures, with a systematic shift of almost the entire proteome to faster half-lives. This difference is not explained by cell division, as demonstrated by similar Histone H3.1 half-lives (11.6 vs 11.2 days) between mixed and glia-enriched cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54, C57 demonstrate global differences with appropriate controls for cell division (C58-C60). The 75-78% proteome overlap (C55-C56) rules out compositional differences as explanation. Use of Histone H3.1 as a cell division marker (C59-C60) is well-justified by citations. Consistency with prior work (C92) strengthens conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The presence of glia modulates neuronal protein turnover: 169 proteins turn over faster in mixed cultures (enriched for ribosomal proteins, extracellular matrix, focal adhesion), while 68 proteins turn over faster in neuron-enriched cultures (enriched for glycolytic enzymes, neurotransmitter regulation, synaptic vesicle cycle proteins). The faster glycolytic enzyme turnover in neuron-enriched cultures may reflect increased metabolic activity compensating for loss of astrocyte-derived lactate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 provide quantitative analysis with statistical testing (p<0.05, Bonferroni corrected, \u22652 of 3 timepoints). The mechanistic interpretation for glycolysis (C65-C67, C94-C95) is well-reasoned and supported by the astrocyte-neuron lactate shuttle literature (C66). Supporting evidence from yeast (C96) strengthens the activity-turnover correlation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C93"
+    ],
+    "result": "Conditioned medium from glia does not significantly alter protein turnover in neuron-enriched cultures, indicating that differences in turnover between neuron-enriched and mixed cultures likely arise from physical/mechanical cell-cell interactions rather than secreted factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide critical mechanistic insight through a well-designed control experiment. The finding that proteins with differential turnover (C70) don't respond to conditioned medium strongly supports the cell-contact hypothesis (C71, C93). This distinguishes between paracrine and juxtacrine mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Both cell-type of origin and extracellular environment influence protein turnover. The in vitro half-lives (median 5.4 days) are comparable to prior cortical culture studies (4.2 days) but shorter than in vivo measurements (~9 days), with significant correlation (Spearman r=0.62, p<0.001) between in vitro and in vivo measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 represents the main conclusion, well-supported by the comparative analyses (C73-C78). The correlation with in vivo data (C76) validates the approach despite systematic differences. Appropriate speculation about causes of differences (C77) and consideration of developmental effects (C75, C78) demonstrate scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The dynamic SILAC approach has limitations: it cannot accurately distinguish between different sub-populations of the same protein with different stabilities, and may underrepresent rapidly degraded proteins that constitute low-abundant sub-populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 appropriately acknowledge methodological limitations. The discussion of non-exponential decay kinetics (C89) and detection bias toward stable populations (C91) shows appropriate scientific caution. These limitations are inherent to the steady-state labeling approach.",
+    "result_type": "MINOR"
+  }
+]

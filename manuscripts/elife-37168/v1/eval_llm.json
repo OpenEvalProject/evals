@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C102"
+    ],
+    "result": "Structure-activity relationship (SAR) studies demonstrate that the 2-amino-p-cresol A-ring is essential for 147-dependent ATF6 activation, while the B-ring tolerates substitutions and the linker length/flexibility is critical for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C38-C49, and C102 collectively present comprehensive SAR data from systematic analog synthesis and reporter assays (Figures 1B-E). The data consistently show that modifications to the A-ring abolish activity, linker variations reduce activity, and B-ring substitutions are tolerated with position-dependent effects. The experimental design is sound with appropriate controls (147, thapsigargin) and the conclusions are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60"
+    ],
+    "result": "147-dependent ATF6 activation requires metabolic oxidation by cytochrome P450 enzymes, as demonstrated by inhibition with the P450 inhibitor resveratrol and sensitivity to exogenous thiols (\u03b2-mercaptoethanol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C50-C54, and C60 are supported by pharmacological inhibition experiments (Figures 2B-E, Figure 3\u2014supplement 1B). Resveratrol specifically inhibits 147-dependent but not thapsigargin-dependent ATF6 activation, and BME reduces both 147 activity and protein conjugate formation. The selectivity controls (thapsigargin treatment) strengthen the conclusion that P450-dependent oxidation is specifically required for 147 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Metabolic activation of 147 produces an electrophile that covalently modifies cellular proteins, as demonstrated by affinity purification of 147-20 (alkyne-tagged analog) conjugates and competition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C55-C59 are supported by click chemistry-based affinity purification and SDS-PAGE analysis (Figure 3A-C). The alkyne analog 147-20 retains ATF6-activating activity and forms protein conjugates that are competed by excess 147 but not by the inactive analog 147-4. This competition experiment provides strong evidence that protein conjugate formation is mechanistically linked to ATF6 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "147 preferentially modifies ER-localized proteins, with 63% (12/19) of specifically labeled proteins annotated as ER residents, representing a 7.4-fold enrichment over expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32, C64, C68, and C69 are supported by comprehensive TMT-MuDPIT proteomic analysis across three cell types (Table 1). The statistical enrichment analysis using PANTHER (GO:0005783, FDR = 2.0 \u00d7 10\u207b\u2076) provides rigorous support for ER localization preference. The competition ratio methodology (147-20 vs. 147-20 + 147) effectively identifies specific targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The preferential modification of ER proteins by 147 is not a general property of electrophiles or quinone methide-forming compounds, as demonstrated by comparison with literature data and control compounds (celastrol, eugenol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C70-C75 are supported by comparative analysis with Backus et al. (2016) fragment electrophile data (Figure 4A) and experimental testing of eugenol and celastrol (Figure 4B, Figure 4\u2014supplement 1). The comparison shows that other electrophiles typically modify ~10% ER proteins versus 63% for 147, and control quinone methide-forming compounds do not activate the ERSE.Fluc reporter. This establishes the unique selectivity of 147.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C61",
+      "C66",
+      "C67"
+    ],
+    "result": "Protein disulfide isomerases (PDIs) are significantly enriched among proteins modified by 147, with six PDIs (PDIA1, PDIA3, PDIA4, PDIA6, TMX1, TXNDC5) identified representing >100-fold enrichment for redox homeostasis proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, C61, C66, and C67 are supported by mass spectrometry identification (Figure 3C, Table 1) and GO term enrichment analysis (GO:0045454, FDR = 6.6 \u00d7 10\u207b\u2079). The statistical enrichment is highly significant and the identification of multiple PDI family members across different experimental approaches (in-gel digestion and TMT-MuDPIT) provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C92",
+      "C96",
+      "C97"
+    ],
+    "result": "Genetic depletion of specific PDIs (PDIA3, PDIA4, PDIA5) by shRNA selectively impairs 147-dependent but not thapsigargin-dependent induction of the ATF6 target gene BiP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36, C92, C96, and C97 are supported by shRNA knockdown experiments with appropriate controls (Figure 5E-F, Figure 5\u2014supplement 1). The selective impairment of 147-dependent (but not Tg-dependent) BiP induction in PDIA3/4/5-depleted cells provides functional evidence linking PDI modification to ATF6 activation. The 25-50% knockdown levels are consistent with the partial labeling observed (Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "147 preferentially partitions to the ER, with 2.7-fold higher concentration in the ER fraction compared to cytosol, contributing to its selective modification of ER proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by LC-MS quantification of 147 in digitonin-separated cellular fractions (Figure 4\u2014supplement 2B). The fractionation was validated by immunoblotting for compartment-specific markers (ERdj3, HSC70). The observed enrichment provides a mechanistic explanation for ER-selective protein modification, though the authors appropriately note this is likely a lower limit given the relative volumes of cellular compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Only 24% of PDIA4 is covalently modified by 147-20, and this partial labeling is competed by excess 147 but not inactive analog 147-4, explaining why 147 does not impair general ER protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by quantitative immunoblotting of affinity-purified PDIA4 (Figure 4C). The partial labeling provides a mechanistic explanation for the selective ATF6 activation without global disruption of PDI-dependent protein folding (C80). The competition experiment with 147 vs. 147-4 confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Treatment with 147 promotes reduction of ATF6 disulfides (shown by gel shift), and this activation is inhibited by the ATF6 oligomer-stabilizing compound CP7, consistent with 147 promoting ATF6 monomer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by non-reducing gel analysis of FLAG-ATF6 (Figure 5B) and CP7 dose-response experiments (Figure 5C). The gel shift upon 147 treatment indicates disulfide reduction, and the CP7 inhibition demonstrates that preventing oligomer dissociation blocks 147 activity. These experiments provide mechanistic insight into how PDI modification leads to ATF6 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C37",
+      "C63"
+    ],
+    "result": "147 is a pro-drug that activates ATF6 through localized metabolic activation and selective covalent modification of ER-resident PDIs that regulate ATF6 activity, without directly modifying ATF6 itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C37, and C63 represent the integrated mechanistic model supported by the combination of: (1) P450-dependent activation (C30, C52), (2) ER-selective protein modification (C68-C69), (3) PDI targeting (C66-C67), (4) functional requirement for PDIs (C92, C96), (5) ATF6 reduction (C88), and (6) lack of direct ATF6 modification (C62, C65). The model is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Different PDIs show distinct roles in 147-dependent ATF6 activation: PDIA4 knockdown alone activates ATF6, while PDIA3/4/5 depletion impairs 147 activity, and PDIA1/6 depletion has minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93-C95 are supported by differential effects of PDI-specific shRNA knockdowns (Figure 5D-F). The observation that PDIA4 depletion alone increases basal BiP expression (C91) while also being required for 147 activity (C92) suggests complex regulatory roles. The selectivity among PDI family members is well-documented and provides insight into mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C65"
+    ],
+    "result": "147 does not directly modify ATF6 protein, as demonstrated by lack of FLAG-ATF6 labeling with 147-20 and absence of ATF6 in proteomic target lists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C65 are supported by immunoblot analysis of FLAG-ATF6 (Figure 3\u2014supplement 1C) and absence from TMT-MuDPIT data. This negative result is important for establishing that 147 acts indirectly through PDI modification rather than direct ATF6 modification. The use of overexpressed FLAG-ATF6 should have provided sufficient sensitivity to detect modification if present.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The mechanism of 147 activity depends on three structural features: (1) the 2-amino-p-cresol A-ring that can be oxidized to a quinone methide, (2) the B-ring and linker that confer selectivity, and (3) balanced reactivity that enables ER-localized protein modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 represent a synthesis of the SAR data (C28, C38-C49), metabolic activation data (C30, C52), and ER-selective modification data (C68-C69, C76). The three-feature model is well-supported by the experimental evidence, though the specific roles of the B-ring and linker in conferring selectivity (C103) remain somewhat speculative and would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C78",
+      "C79"
+    ],
+    "result": "The ER-selective protein modification by 147 is explained by: (1) P450-mediated oxidation occurring at the ER membrane, (2) preferential partitioning of 147 to the ER, and (3) shorter lifetime of the reactive quinone methide in the reducing cytosolic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C78, and C79 integrate established knowledge about P450 localization (C78, supported by citation) and cellular redox environments (C79, based on general knowledge) with the experimental partitioning data (C76). While C79 is inferred rather than directly tested, the reasoning is sound and consistent with known biochemistry. The multi-factor explanation for ER selectivity is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Compound 147 was previously identified as a preferential ATF6 activator through HTS, characterized by transcriptomics/proteomics, shown to reduce amyloidogenic protein secretion without affecting the endogenous proteome, and demonstrated to promote stem cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C24, and C27 are all supported by citations to prior work (Plate et al., 2016; Kroeger et al., 2018). These claims establish the context and prior characterization of 147. While the current manuscript does not re-demonstrate these findings, the citations appear appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The UPR is a three-armed stress-responsive signaling pathway initiated by ATF6, IRE1, and PERK that activates transcription factors to maintain ER proteostasis through distinct but overlapping mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe established UPR biology supported by multiple citations to foundational literature. These background claims provide necessary context for the study but do not represent novel findings. The descriptions are accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work has demonstrated that ATF6 activation can ameliorate disease-associated ER proteostasis defects in multiple contexts (amyloid diseases, cardiac ischemia, diabetes), and human genetic data suggest pharmacologic ATF6 activation would be well-tolerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by citations to prior research establishing the therapeutic potential of ATF6 activation. Claim C19 (tolerability inference) is appropriately qualified as 'likely' based on human genetic data (C18). These claims establish the translational rationale for developing ATF6 activators but do not represent findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ATF6 activation involves reduction of inter- and intra-molecular disulfides to form trafficking-competent monomers that are processed by S1P/S2P proteases, and this process is regulated by PDI activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C84-C87 describe established mechanisms of ATF6 activation supported by citations to prior research (Nadanaka et al., 2007; Nadanaka et al., 2006; Higa et al., 2014). These background claims provide mechanistic context for understanding how 147 works but do not represent novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C35"
+    ],
+    "result": "PDIs are known to regulate ATF6 activation by controlling the formation and dissolution of ATF6 disulfides critical for trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C35 are supported by citations to prior research (Higa et al., 2014) establishing the role of PDIs in ATF6 regulation. This background knowledge provides the rationale for investigating PDIs as targets of 147 but does not represent a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Treatment with 147 does not influence secretion of the endogenous secreted proteome or disulfide-bonded proteins dependent on PDIs for ER folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by citation to prior work (Plate et al., 2016). This observation is important for understanding the selectivity of 147's effects and is mechanistically explained by the partial PDI labeling shown in the current study (C81-C83), but the secretion data itself is from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "ATF6 activity induced by 147 diminishes 12 hours after single treatment, but sustained daily dosing over weeks can maintain activity to promote stem cell differentiation, suggesting complex feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C99 are both supported by citations to prior work (Plate et al., 2016; Kroeger et al., 2018). These observations about the temporal dynamics of 147 activity are relevant for understanding its mechanism and therapeutic potential but represent findings from prior studies rather than the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "147 is a 'precision electrophile' that selectively activates ATF6 without triggering other stress pathways (IRE1, PERK, heat shock, NRF2), unlike the structurally similar compound 132 that activates multiple UPR arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C106 are supported by citations to prior work (Plate et al., 2016) showing pathway selectivity by RNAseq and multiplex gene expression profiling. The comparison with compound 132 (Figure 5\u2014supplement 2) illustrates that selectivity is not inherent to the compound class. While the selectivity data is from prior work, it is important context for the mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The mechanism of 147 suggests opportunities for tissue-selective ATF6 activation by designing analogs with selectivity for specific P450s or PDIs, potentially explaining cell-type-specific activity of related compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C110 represent speculative discussion about future directions and potential applications. C107 is a general statement about therapeutic potential supported by citations. C108-C109 are explicitly speculative ('provides a potential opportunity') about future medicinal chemistry efforts. C110 offers a plausible explanation for prior observations but is not directly tested. These forward-looking claims are reasonable but not experimentally validated in the current study.",
+    "result_type": "MINOR"
+  }
+]

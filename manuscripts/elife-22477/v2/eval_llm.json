@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C114",
+      "C119"
+    ],
+    "result": "MPI depletion suppresses glycolysis and Warburg metabolism across zebrafish embryos, primary mammalian cells, and cancer cells. This is evidenced by decreased expression of key glycolytic enzymes (gpib, pfkmb, pfkma, Pfkm, Ldha), reduced glucose uptake (to 53% in MEFs), and decreased lactate production (49-74% of controls across systems).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by convergent evidence from multiple independent experimental systems (zebrafish morphants and mutants, MEFs, HCT116, SJSA, Hepa1-6 cells). RNA-seq, qPCR, enzyme assays, glucose uptake measurements, and lactate assays all consistently demonstrate glycolytic suppression. Statistical significance is reported for key measurements (p<0.05 for most comparisons), and biological replicates are indicated. The consistency across diverse model systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C14",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C66",
+      "C67",
+      "C68",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MPI loss induces p53 at both mRNA and protein levels in zebrafish embryos, primary MEFs, and cancer cell lines. In zebrafish, p53 mRNA increased 1.8-4.9 fold and protein increased 1.8-3.2 fold. Similar increases were observed in MEFs (1.6-fold mRNA, 2.1-fold protein) and cancer cells. This induction is conserved across species and is not due to morpholino off-target effects, as confirmed in mpimss7 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The p53 induction is robustly demonstrated across multiple independent systems with appropriate statistical testing (p<0.05 for most comparisons). The use of both morpholino knockdown and TALEN-generated mutants (C66-C68) effectively rules out off-target effects, a critical control for morpholino experiments. The consistency across zebrafish, mouse, and human systems, combined with correlation analysis in human tumor samples (C88), provides strong support for this conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C74",
+      "C75",
+      "C76",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MPI loss causes cell death and reduces cell proliferation. In zebrafish, this is evidenced by increased acridine orange and cleaved Caspase-3 staining, reduced survival (50% vs 77.3% at 13 dpf), and reduced occurrence of homozygous mutants. In mammalian cells, MPI depletion reduced cell counts by 26-41% and MTT signal to 69% of controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell death and reduced proliferation are demonstrated through multiple complementary assays (acridine orange, cleaved Caspase-3, survival analysis, cell counting, MTT) with appropriate statistical significance (p<0.05). The survival analysis in mpimss7 mutants provides genetic validation independent of morpholino effects. However, the MTT assay in MEFs has only N=2 for cell counting (C104), which is a limitation, though this is supported by the independent MTT assay (N=5, C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C116",
+      "C117"
+    ],
+    "result": "The morphological abnormalities, cell death, and glycolytic suppression caused by MPI loss are mediated through p53. Co-injection of p53 morpholino or use of p53 mutants substantially rescued morphological phenotypes (from 8.8% to 82-93% normal), prevented apoptosis, and partially restored lactate levels without affecting Mpi enzyme activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments provide strong evidence for p53-mediated effects. The use of both p53 morpholino co-injection and p53 null mutants strengthens the conclusion. The demonstration that Mpi activity is not altered by p53 loss (C71) is a critical control establishing that rescue is not due to secondary effects on Mpi. The partial restoration of lactate but not glucose uptake (C118) suggests complexity in the mechanism, which the authors acknowledge. Statistical significance is reported for key rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C120"
+    ],
+    "result": "MPI depletion leads to accumulation of fructose 6-phosphate (Fru6P). In MEFs, Fru6P levels were significantly increased following MPI knockdown (N=4, p=0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Fru6P accumulation is directly measured using a fluorometric coupled enzyme assay, providing biochemical evidence for the proposed mechanism. The statistical significance (p=0.027) with N=4 is adequate, though additional replicates would strengthen the finding. This measurement is critical as it provides the mechanistic link between MPI loss and HBP activation. The result is consistent with MPI's known enzymatic function converting Man6P to Fru6P.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C125",
+      "C126",
+      "C127",
+      "C134"
+    ],
+    "result": "MPI loss leads to engagement and activation of the hexosamine biosynthetic pathway (HBP). This is evidenced by increased Gfpt1 and Ogt protein levels in MPI-depleted systems, and the mechanism of p53 stabilization operates through HBP function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HBP activation is demonstrated by increased levels of key HBP enzymes (Gfpt1, Ogt) shown by western blot. The functional importance of HBP is established through rescue experiments using DON (GFPT1 inhibitor) and gfpt1 morpholino (C126), which dampened p53 activation. This provides strong evidence for the HBP-mediated mechanism. However, the western blots appear to be from single experiments without quantification across multiple replicates, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "MPI loss increases O-GlcNAcylation of proteins, including p53, leading to p53 stabilization. Total O-GlcNAc levels increased in MPI-depleted zebrafish and SJSA cells, and proximity ligation assays demonstrated increased O-GlcNAcylated p53. This effect was counteracted by HBP inhibition with DON.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increase in O-GlcNAcylation is demonstrated through multiple approaches: western blots for total O-GlcNAc, immunofluorescence in SJSA cells, and proximity ligation assay (PLA) specifically detecting O-GlcNAcylated p53. The PLA approach is particularly strong as it directly demonstrates the modification on p53. The rescue with DON treatment (C131, C139) provides functional validation. The quantification of PLA signal (C139, p<0.0001) strengthens the conclusion. This mechanistically links HBP activation to p53 stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C135",
+      "C136"
+    ],
+    "result": "Inhibiting the HBP through genetic (gfpt1 MO, ogt MO) and chemical methods (DON, OSMI-1) reverses p53 stabilization and rescues the MPI-deficient phenotype. DON treatment rescued morphological phenotypes from 8.8% to 86.4% normal (p<0.0001) and reduced p53 levels to near baseline without affecting Mpi activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments using multiple independent approaches (DON, OSMI-1, gfpt1 MO, ogt MO) provide strong evidence for the HBP-O-GlcNAcylation-p53 pathway. The dramatic morphological rescue (C123) with statistical significance (p<0.0001) is compelling. The demonstration that DON does not affect Mpi activity (C122) is a critical control. The use of both chemical inhibitors and genetic knockdown strengthens the conclusion by ruling out off-target effects of any single approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "p53 loss-of-function had negligible effect on preventing decreased glucose uptake following MPI depletion in p53 null MEFs (41% decrease, N=5, p<0.0001), suggesting p53-independent mechanisms also contribute to glucose uptake suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-documented with appropriate statistics (N=5, p<0.0001) and represents an important limitation to the p53-centric model. The authors acknowledge this complexity in their discussion, noting that glucose uptake suppression may involve additional mechanisms beyond p53. This honest reporting of results that don't fully fit the main model strengthens the overall credibility of the work. The finding is consistent with known roles of N-glycosylation in GLUT1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Phenotypes following MPI depletion are distinct from those caused by general N-glycosylation disruption with tunicamycin. Tunicamycin treatment yielded different morphological phenotypes, showed no acridine orange staining, and phenotypes persisted in p53 mutant background, indicating MPI-specific effects beyond N-glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical control experiment that distinguishes MPI's novel metabolic role from its known function in N-glycosylation. The use of tunicamycin as a general N-glycosylation inhibitor is appropriate, and its validation using the transferrin glycosylation assay (C78) confirms efficacy. The distinct phenotypes and p53-independence of tunicamycin effects (C80) provide strong evidence that MPI's effects on p53 and glycolysis are not simply due to disrupted N-glycosylation. This addresses a major alternative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C82",
+      "C83",
+      "C107"
+    ],
+    "result": "The experimental tools used to deplete MPI are validated and specific. Morpholino injection decreased Mpi activity to 27% in zebrafish, siRNA reduced MPI activity to 43% and protein to 35% in MEFs, and HCT116 cells showed 62% residual activity. The morpholino does not affect Pmm2, and phenotypes can be rescued by mpi mRNA or mannose supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of experimental tools is thorough and appropriate. Enzyme activity assays confirm knockdown efficiency, and the specificity control showing no effect on Pmm2 (C44) is important. The rescue with mpi mRNA and mannose (C45-C46) provides strong evidence for on-target effects. The varying degrees of knockdown across systems (27-62% residual activity) are well-documented and allow for dose-response interpretation. This methodological rigor strengthens confidence in all downstream results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "RNA-seq analysis of MPI-depleted zebrafish embryos revealed only modest changes in genes involved in N-glycosylation, suggesting that the dramatic phenotypes are not primarily due to N-glycosylation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data showing modest changes in N-glycosylation genes is important negative evidence that supports the novel metabolic role of MPI. This is consistent with prior mouse studies showing largely intact N-glycans in MPI knockout models (C39). However, RNA-seq measures transcription, not protein glycosylation status directly, so this is indirect evidence. The result is strengthened by the tunicamycin comparison experiments (C77-C81) which more directly address N-glycosylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In HCT116 colon cancer cells, moderate MPI depletion (62% residual activity) resulted in reduced expression of glycolytic genes (PFKM, PKM1, PKM2, LDHA decreased 21-40%), decreased lactate by 23%, and depleted ATP to 69% of controls, demonstrating that even partial MPI loss suppresses cancer cell metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HCT116 experiments extend the findings to a well-characterized cancer cell line where Warburg metabolism is known to be important. The dose-response relationship (moderate knockdown still producing significant effects) is valuable. Statistical significance is reported for all measurements (p<0.05). The ATP depletion (C113) provides functional evidence of metabolic disruption. The lower transfection efficiency (C107) is acknowledged, and the results are still significant despite this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C47",
+      "C90",
+      "C91",
+      "C98",
+      "C99",
+      "C115",
+      "C128",
+      "C129"
+    ],
+    "result": "Background and context claims establishing the importance of Warburg metabolism, MPI's enzymatic function, conservation, and clinical relevance of MPI-CDG. These include established knowledge about cancer metabolism, MPI's role in converting Man6P to Fru6P, its conservation across species, embryonic lethality of complete loss, and the unique clinical presentation of MPI-CDG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential context and are well-supported by appropriate citations to established literature. The citations appear accurate and relevant. The unique clinical presentation of MPI-CDG (C38) compared to other CDGs is an important observation that motivates the search for non-glycosylation functions of MPI. The biochemical facts about MPI's enzymatic activity (C29) and O-GlcNAcylation (C128-C129) are well-established. These contextual claims appropriately frame the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "The authors conclude that their findings reveal a previously unappreciated role for MPI in HBP and p53 regulation, conserved across species and shared between embryonic and cancer cells, which is distinct from but not necessarily at the expense of its role in N-linked glycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion is well-supported by the comprehensive data across multiple model systems. The conservation across species is demonstrated by experiments in zebrafish, mouse, and human cells. The distinction from N-glycosylation function is supported by the tunicamycin comparison and modest changes in N-glycosylation genes. The caveat 'not necessarily at the expense of' (C143) is appropriately cautious, acknowledging that both functions may coexist. The novelty claim is justified given the lack of prior literature connecting MPI to p53 regulation via HBP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "The authors suggest that MPI could be a potent anticancer drug target, as MPI depletion results in widespread dampening of glycolysis, halting cell growth and promoting death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C146: 'speculation, inference'). While the data showing glycolytic suppression and cell death in cancer cells (C114, C145) support the potential, several critical questions remain unanswered: (1) therapeutic window - would normal proliferating cells also be affected? (2) the embryonic lethality of complete MPI loss (C33-C35) raises toxicity concerns, (3) no in vivo tumor studies are presented, (4) the partial rescue of some phenotypes by p53 loss suggests cancer cells with p53 mutations might be resistant. This represents an interesting hypothesis for future work but is not a supported conclusion from the current data.",
+    "result_type": "MINOR"
+  }
+]

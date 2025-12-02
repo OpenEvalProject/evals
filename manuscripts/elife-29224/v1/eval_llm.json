@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C66"
+    ],
+    "result": "APEX-RIP is a novel method that combines APEX-catalyzed proximity biotinylation with RNA-protein crosslinking to isolate RNAs from multiple subcellular compartments using a single protocol. The method is described as simple, versatile, and not requiring special instrumentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the core methodology and its application to multiple compartments. Claims C21-C24 provide mechanistic details about APEX biotinylation chemistry from cited prior work. Claim C66 describes practical advantages. Together, these claims provide a coherent description of the method's design and capabilities, supported by both experimental data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C67"
+    ],
+    "result": "Mito-APEX2-RIP successfully enriched all 13 mitochondrially-encoded mRNAs, both rRNAs, and several tRNAs from the mitochondrial matrix with greater than 11-fold enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report specific enrichment data from RNA-Seq analysis with reference to Figure 1D. Claim C67 provides context about APEX2 being a more active variant. The enrichment of mitochondrial transcripts demonstrates proof-of-concept for the method in a well-characterized organelle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "APEX-RIP successfully mapped nuclear-cytoplasmic RNA distribution, enriching 5740 nuclear RNAs and 5367 cytosolic RNAs with contamination frequencies below 1.6%, and identified populations of RNAs with noncanonical localization patterns. The method rivals or outperforms Fractionation-Seq in both specificity and coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report quantitative enrichment data with low contamination. Claims C34-C35 identify unexpected RNA populations. Claims C38-C43 provide direct comparisons to Fractionation-Seq showing comparable or superior performance. The data are supported by ROC analysis and multiple metrics (contamination frequency, coverage of lncRNAs), providing strong evidence for the method's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69"
+    ],
+    "result": "HRP-KDEL APEX-RIP efficiently enriched ER-associated RNAs (19.5-fold average enrichment), while ERM-APEX2 showed only modest enrichment (1.49-fold), suggesting APEX-RIP does not have the same spatial specificity as proteomic labeling and may be limited by formaldehyde crosslinking perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide quantitative data showing differential performance between constructs. Claims C46-C47 present the authors' interpretation of these results. Claims C68-C69 provide context about HRP chemistry from prior work. The data clearly show a difference in performance, and the authors' interpretation about spatial specificity limitations is reasonable given the experimental results, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HRP-KDEL APEX-RIP enriched 2672 ER-associated RNAs with 96.5% specificity and 97% coverage, outperforming both Fractionation-Seq (91% specificity, 73% coverage) and proximity-dependent ribosome profiling (99.2% specificity, 70% coverage) in overall performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 report the performance metrics for APEX-RIP with specific quantitative values. Claims C52-C57 provide direct comparisons to alternative methods. The data are supported by ROC analysis, reference to established ER-resident proteins, and multiple independent datasets. The comparative analysis is thorough and supports the conclusion of superior overall performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of ER-associated RNAs revealed 135 mRNAs encoding mitochondrial proteins, with 62.7% coding for transmembrane proteins (vs. 20.4% in the general mitochondrial proteome) and 49% encoding outer mitochondrial membrane proteins (vs. 18% in bulk mitochondrial proteome), suggesting potential translation at mitochondria-ER contact sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 report specific quantitative enrichments with clear comparisons to background populations. The data show statistically meaningful enrichments of specific protein classes. While the interpretation about translation at contact sites is speculative, the enrichment data themselves are well-supported by the analysis presented in Figure 5A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65"
+    ],
+    "result": "APEX-RIP identified 104 candidate laminar RNAs (48 mRNAs and 56 noncoding RNAs) by intersecting ER-associated and nuclear RNA lists, representing RNAs potentially localized to the nuclear lamina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C64-C65 describe the identification of candidate laminar RNAs through computational intersection of datasets. While the computational approach is described and the numbers are reported, the authors themselves acknowledge this list is 'highly speculative' and that 'some portion may comprise experimental noise.' The method for identifying these candidates is indirect and lacks independent validation, making the result uncertain despite the clear reporting of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "APEX-RIP has specificity and sensitivity that rival or exceed conventional approaches, building on prior work showing APEX-catalyzed proximity biotinylation can generate proteomic maps with <5 nm spatial specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 makes a broad comparative statement about APEX-RIP performance. Claims C25-C28 cite prior proteomic work with APEX. However, the manuscript also shows (C46-C47) that APEX-RIP does NOT have the same spatial specificity as proteomic labeling. The claim about rivaling/exceeding conventional approaches is supported for some compartments (nucleus, ER) but not others (cytoplasmic face of ER), making the broad claim uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "RNA spatial compartmentalization is central to many biological processes across all kingdoms of life, including asymmetric cell division, body-pattern formation, neuronal signaling, and assembly of nuclear structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 establish the biological importance of RNA localization through citations to prior literature. These are background claims supported by cited references (Jung et al., 2014; Rinn and Guttman, 2014; Engreitz et al., 2016) and represent established knowledge in the field rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Mitochondria-ER junctions and nuclear lamina are recalcitrant to classical biochemical purification, making them challenging targets for conventional RNA localization methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 characterize these compartments as difficult to purify biochemically. This is presented as established knowledge motivating the development of APEX-RIP. The characterization is reasonable given the structural nature of these compartments (membrane contact sites and nuclear envelope-associated regions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "SNHG5 is a known cytoplasmic lncRNA that modulates staufen-mediated decay and influences colorectal tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe SNHG5 function based on cited literature (Derrien et al., 2012; Damas et al., 2016). This is background information used to validate the finding of cytoplasmic lncRNAs by APEX-RIP, not a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

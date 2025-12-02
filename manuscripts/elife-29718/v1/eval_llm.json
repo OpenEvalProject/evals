@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study employed an fMRI observational learning paradigm with 43 participants (after exclusions) who observed agents with similar or dissimilar food preferences make choices between slot machines with hidden food outcomes. The experimental design included proper controls, quality checks, and appropriate statistical thresholding procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 and C64-C78 collectively describe a well-designed experimental paradigm with appropriate methodological rigor. The sample size (n=43), exclusion criteria, quality control measures, and statistical procedures are clearly documented. The key manipulation (similar vs. dissimilar agents) and critical design feature (hidden outcomes) are properly implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "All participants successfully learned and correctly identified the preference rankings of both agents and correctly classified agents as similar or dissimilar to themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 report a manipulation check showing 100% accuracy in preference learning. While this perfect performance seems unusual, it is supported by Figure 1\u2014figure supplement 1 and represents a successful validation of the preference learning phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Participants successfully learned from observing agents, with choice ratios correlating with agent behavior (rs_sim=0.7, rs_dis=0.6). Performance was significantly worse in the dissimilar condition (p=0.04), with a non-symmetrical pattern: equal performance for best slots but increased worst-slot choices and decreased mid-slot choices in the dissimilar condition, suggesting a sophisticated strategy beyond simple imitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 present converging behavioral evidence with appropriate statistical tests. The Spearman correlations, t-tests, and pattern of results across slot types are internally consistent. The non-symmetrical performance pattern (C15-C17) provides key evidence against simple imitation, though the one-tailed test in C14 should be justified by a priori hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C37"
+    ],
+    "result": "Bayesian Model Selection demonstrated that inverse RL outperformed imitation RL and other candidate models (counterfactual imitation RL, preference-learning) in explaining participant behavior, particularly for choices involving the middle-preferred slot machine in the dissimilar condition. The models made distinct predictions as shown by confusion matrix analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 and C37 provide comprehensive model comparison evidence using appropriate Bayesian methods. The confusion matrix analysis (C23) validates that models are distinguishable. The specific advantage for mid-slot predictions (C24-C25) provides mechanistic insight. However, the manuscript should clarify whether BMS was performed on group or individual level and report exceedance probabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C38",
+      "C61"
+    ],
+    "result": "Dorsomedial prefrontal cortex (dmPFC) encoded expected values in agent-referential preference space rather than self-referential space, showing positive correlations with agent value signals in both similar and dissimilar conditions with no statistical difference between conditions. Bayesian Model Selection confirmed anterior dmPFC preferentially encoded inverse RL computations over imitation RL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C38, and C61 present converging fMRI evidence for agent-referential value representation. The critical test (positive correlation in both conditions, C26-C27) is properly controlled using leave-one-out procedures (C76). The voxelwise BMS analysis (C29) provides additional model-based support. Statistical thresholds are appropriate (FWE p<0.05, cluster-corrected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C62"
+    ],
+    "result": "TPJ/pSTS, pre-SMA, and dorsal striatum showed significant correlations with entropy reduction signals (learning/updating) from the inverse RL model in both similar and dissimilar conditions, with no significant differences between conditions, suggesting overlapping computational mechanisms for learning from similar and dissimilar agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C62 report consistent learning-related signals across multiple brain regions with appropriate statistical thresholding. The lack of condition differences (C32) is properly tested. However, the interpretation that entropy reduction reflects learning (C33) assumes the inverse RL model is correct, creating some circularity in the inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "No brain regions showed significant correlations with prediction error signals from the imitation RL model at the predefined statistical threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports a negative result with clearly stated statistical criteria (FWE p<0.05, cluster-corrected). This finding supports the inverse RL model by showing that imitation RL signals are not represented in the brain. However, negative results should be interpreted cautiously as they may reflect insufficient power or inappropriate model specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C56"
+    ],
+    "result": "Individual differences in dmPFC value representation for the dissimilar agent significantly predicted behavioral performance (social information integration index: r=0.39, p<0.01), while TPJ/pSTS activity did not show this relationship, suggesting dmPFC activity reflects the capacity to utilize learned representations to guide behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C56 present a brain-behavior correlation with appropriate statistics. The selective correlation with dmPFC but not TPJ/pSTS (C36) provides specificity. However, the SI index is a post-hoc constructed measure that may capitalize on chance, and the correlation (r=0.39) explains only 15% of variance. Replication would strengthen this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "The study demonstrates that inverse RL is an abstract cognitive process divorced from the observer's own values, with observers capable of representing expected values in agent preference space and then transforming this knowledge to compute values in their own preference space when making choices. This process involves the mentalizing network (TPJ, pSTS, dmPFC) with distinct functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C57-C60, and C63 synthesize the main findings into a coherent mechanistic account. The interpretation is well-supported by the convergence of behavioral modeling (C19-C25), neural encoding of agent-referential values (C26-C29), and brain-behavior correlations (C35). However, the claim of 'abstract' processing (C39) is an inference that could benefit from additional evidence such as generalization tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The manuscript distinguishes between imitation learning (copying agent actions without learning environment structure) and inverse RL (inferring hidden reward distributions from agent actions), arguing that inverse RL offers greater flexibility for learning from agents with diverging preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide clear conceptual definitions that are standard in the computational literature. The distinction is well-articulated and motivates the experimental design. The claim about inverse RL's flexibility (C44) is a theoretical assertion supported by the empirical results but could be more directly tested with additional experimental manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The manuscript reviews prior work on inverse RL in artificial intelligence, computational modeling of social inference, developmental emergence of preference understanding, vicarious reinforcement learning in neuroscience, and the mentalizing network, identifying a gap in understanding how observers infer environmental structure (not just agent traits) through observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 provide appropriate literature context with proper citations. The identified gap (C55) is legitimate and well-motivated. However, the characterization of vicarious RL as limited to observable rewards (C52) is accurate but somewhat oversimplified\u2014vicarious learning can involve model-based components. The review appropriately positions the current work within existing literature.",
+    "result_type": "MINOR"
+  }
+]

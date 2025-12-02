@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on medulloblastoma, establishing it as the most common malignant pediatric brain tumor with poor survival rates for SHH-type tumors (50-60%), and describes its classification into four subtypes with different cells of origin and prognoses. SHH-type tumors arise from cerebellar granule neuron precursors and can harbor mutations in the SHH pathway. Atoh1, crucial for cerebellar granule neuron development, can drive medulloblastoma formation when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent well-established background knowledge supported by appropriate citations. These claims provide context for the study but do not constitute novel findings. The citations appear appropriate and the statements align with current understanding of medulloblastoma biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Atoh1 heterozygosity reduces medulloblastoma tumor incidence and improves survival in the Nd2::SmoA1Tg mouse model. Tumor incidence dropped from 23.1% to 6.7% (over three-fold reduction) in Atoh1+/- mice compared to wildtype, with similar transgene expression but reduced Gli2 levels. This demonstrates that Atoh1 protein dosage is critical for medulloblastoma development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C27 are well-supported by survival curve data (Figure 1a) showing statistically significant differences (p<0.001) and western blot data (Figure 1\u2014figure supplement 1a) confirming similar transgene expression but reduced Gli2. The sample sizes are adequate (n=490 and n=159) and appropriate statistical tests were used (Log Rank test). The conclusion about Atoh1 dosage is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Using IP-MS on CD15-positive (tumor-initiating) and CD15-negative cells from Nd2::SmoA1Tg tumors, the authors discovered that tyrosine 78 (Y78) of Atoh1 is phosphorylated exclusively in tumor-initiating cells. CD15 marks tumor-initiating cells that can drive secondary tumor formation. Among 637 Atoh1-interacting proteins in CD15+ cells, only one tyrosine kinase, Jak2, was present exclusively in tumor-initiating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C53-C57 are supported by IP-MS data, functional validation showing only CD15+/Atoh1+ cells form secondary tumors (Figure 1\u2014figure supplement 1b), and immunofluorescence showing Y78 phosphorylation specifically in tumor-initiating cell islets (Figure 1c). The specificity of Y78 phosphorylation to tumor cells versus normal tissue is well-demonstrated. The IP-MS criteria (\u22652 independent experiments, \u22655 unique peptides) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C92"
+    ],
+    "result": "Tyrosine 78 phosphorylation of Atoh1 occurs in human SHH-type medulloblastoma samples but not in WNT-type tumors or normal adult cerebellar tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C92 are supported by western blot data from human patient samples (Figure 4e) showing Y78 phosphorylation specifically in SHH-type tumors. The comparison with WNT-type tumors and normal tissue provides important specificity controls. However, the sample size appears limited (n=2 per tumor type shown).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Y78 phosphorylation status does not alter Atoh1's interaction with E-protein binding partners or its nuclear-cytoplasmic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by co-IP experiments (Figure 2\u2014figure supplement 1a) and fractionation studies (Figure 2\u2014figure supplement 1b). These negative results are important controls showing that Y78 phosphorylation does not affect basic Atoh1 protein properties like partner binding or localization, focusing attention on other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Y78 phosphorylation dramatically increases Atoh1 protein stability. The phospho-mimetic Y78D mutant has triple the half-life of wildtype Atoh1, while RNA stability remains comparable across variants. This effect is consistent across three different medulloblastoma cell lines (DAOY, UW228, ONS-76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C43 are well-supported by protein stability assays using doxycycline withdrawal (Figure 2a, Figure 2\u2014figure supplement 1c-d) and RNA stability measurements (Figure 2\u2014figure supplement 1e). The use of three independent cell lines strengthens the findings. Half-life calculations are provided (Figure 2\u2014source data 1). The conclusion that phosphorylation affects protein but not RNA stability is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "Y78 phosphorylation increases Atoh1 transcriptional activity independent of protein stability effects. The phospho-mimetic Y78D mutant shows increased transcriptional activity in luciferase reporter assays even when steady-state protein levels are similar across variants. This represents a distinct effect from the stability increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44-C45, C48-C49 are supported by luciferase reporter assays (Figure 2b, Figure 2\u2014figure supplement 2b-c) showing increased activity for Y78D but not Y78F. The observation that steady-state levels are similar in luciferase lysates (Figure 2\u2014figure supplement 2a) while activity differs supports the conclusion of two distinct effects. Statistical significance is demonstrated (p<0.0001) with adequate replication (n=46 in duplicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Y78 phosphorylation affects cellular proliferation in vitro. The phospho-mimetic Y78D mutant causes hyper-proliferation while the phospho-dead Y78F mutant slightly decreases proliferation in all three medulloblastoma cell lines tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by proliferation assays in medullospheres from three cell lines (Figure 2\u2014figure supplement 2d-f). The consistent effects across multiple cell lines strengthen the conclusion. However, the magnitude of the Y78F decrease is described as 'slight' and statistical significance is not clearly indicated for this comparison in all cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Y78 phosphorylation increases tumor growth in vivo. In flank xenografts using DAOY cells, the phospho-mimetic Y78D mutant increased tumor weight by approximately 40% compared to wildtype or Y78F mutant, demonstrating that Y78 phosphorylation drives tumor growth through increased transcriptional activity and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by xenograft data (Figure 2c) with adequate sample size (n=6 per group) and statistical significance (p<0.01). The in vivo validation of the in vitro proliferation findings strengthens the overall conclusion. However, the use of flank xenografts in immunocompromised mice rather than orthotopic brain tumors is a limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript provides background on Jak2 function, noting that Janus kinases typically function downstream of cytokine signaling to activate STAT, MAPK, and PI3K-Akt pathways. However, non-canonical roles exist, including histone H3 phosphorylation, and most Jak2-regulated genes lack STAT binding motifs. Jak2 function in medulloblastoma had not been previously investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C76-C77 represent background knowledge supported by appropriate citations. These establish context for the novel finding that Jak2 phosphorylates Atoh1. The statement that Jak2 function in medulloblastoma was uninvestigated (C61) justifies the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Among candidate tyrosine kinases tested (Jak1-3, Tyk2, Ptk2), only Jak2 shows strong interaction with Atoh1 in BiFC assays and can phosphorylate wildtype Atoh1 at Y78 in a dose-dependent manner in vitro. The Y78F mutant abolishes this phosphorylation, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by BiFC data (Figure 3\u2014figure supplement 1a) and in vitro kinase assays (Figure 3\u2014figure supplement 1b). The systematic testing of multiple kinases and the specificity demonstrated by Y78F mutation strengthen the conclusion that Jak2 is the relevant kinase. The dose-dependent phosphorylation supports a direct enzymatic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Atoh1 and Jak2 are both expressed during cerebellar development and highly overexpressed in medulloblastoma tissue. Co-immunoprecipitation demonstrates a strong interaction between Atoh1 and Jak2 in malignant but not normal cerebellar tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by qRT-PCR data (Figure 3\u2014figure supplement 1c) and co-IP experiments (Figure 3a). The tumor-specific interaction is an important finding suggesting this is a pathological rather than developmental mechanism. The reciprocal co-IP (pulling down both Atoh1 and Jak2) strengthens confidence in the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Treatment with the Jak2 inhibitor AG490 drastically reduces both Jak2 and Atoh1 Y78 phosphorylation in cultured Shh-type medulloblastoma cells within one hour. This demonstrates that Jak2 is activated in Shh-type medulloblastoma where it interacts with and phosphorylates Atoh1 on Y78.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by western blot data (Figure 3b) showing rapid reduction in Y78 phosphorylation upon AG490 treatment. The short timeframe (1 hour) and specificity of the inhibitor support a direct relationship. However, AG490 specificity could be better validated\u2014while cited as 'highly specific,' off-target effects are possible and should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Jak2 influences Atoh1 transcriptional activity directly, independent of canonical Jak2 signaling pathways. Co-transfection of Jak2 dramatically increases Atoh1 activity, which is abolished by the Jak2 inhibitor AG490 but unaffected by inhibitors of STAT, PI3K, or MAPK pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C72-C75 are well-supported by luciferase reporter assays (Figure 3c, Figure 3\u2014figure supplement 1d-e) using pathway-specific inhibitors. The systematic testing of canonical pathways and their lack of effect strongly supports a non-canonical, direct mechanism. This is a key mechanistic finding. Statistical significance is robust (p<0.0001) with adequate replication (n=46 in duplicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Jak2 overexpression phenocopies the Y78D phospho-mimetic mutant, increasing Atoh1 stability to Y78D levels, increasing transcriptional activity, and promoting cellular proliferation in vitro. These effects are blocked by the Y78F phospho-mutant and by AG490 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by stability assays (Figure 3\u2014figure supplement 2), transcriptional reporter data, and proliferation assays (Figure 3\u2014figure supplement 3). The genetic (Y78F) and pharmacological (AG490) rescue experiments provide strong evidence that Jak2's effects on proliferation are mediated through Y78 phosphorylation. This connects the molecular mechanism to functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Jak2 inhibition via shRNA dramatically reduces tumor growth in vivo. Two different Jak2 shRNAs reduced tumor growth compared to control shRNA, with concomitant decreases in Y78 phosphorylation. Jak1 did not compensate for Jak2 loss. Immunofluorescence shows loss of Y78 phosphorylation in tumor-initiating cell clusters upon Jak2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C83-C87 are supported by xenograft data (Figure 4a) with adequate sample size (n=6), western blots (Figure 4b), and immunofluorescence (Figure 4c). The use of two independent shRNAs with potency-dependent effects strengthens confidence. The demonstration that Jak1 doesn't compensate addresses a potential confound. This provides strong in vivo validation of the therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C97"
+    ],
+    "result": "The authors conclude that Atoh1 is not expressed in postnatal normal brain but is specifically expressed in SHH-type medulloblastoma, where Y78 phosphorylation by Jak2 increases Atoh1 activity and stability, augmenting tumor-initiating cell proliferation. They propose that targeting this phosphorylation presents a viable therapeutic avenue without affecting healthy brain tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91, C97 represent the authors' main conclusions and therapeutic proposal. While the data supporting Y78 phosphorylation's role in tumor biology is strong (claims above), the therapeutic viability claim (C91, C97) is speculative. The statement that Atoh1 is 'not expressed in postnatal normal brain' (C88) may be overstated\u2014low-level expression or expression in specific contexts might occur. The therapeutic proposal requires additional validation including: (1) demonstration that Jak2 inhibition doesn't have unacceptable toxicity, (2) evidence that the effect is durable, (3) testing in orthotopic models, and (4) assessment of potential resistance mechanisms. The phrase 'could provide' appropriately indicates speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript provides background on Atoh1 regulation, noting that Gli2 is the primary Shh mediator in medulloblastoma and a direct target of Atoh1. Atoh1 regulation during cerebellar development involves Shh, BMP, and WNT signaling and is primarily transcriptional, though phosphorylation also influences Atoh1 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C28-C32 represent background knowledge supported by appropriate citations. These establish the regulatory context for Atoh1 and justify the focus on post-translational modification (phosphorylation) as an additional regulatory layer. The observation that Gli2 levels are reduced in Atoh1 heterozygous mice (C25) connects to this background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript describes the mouse model and cell lines used. Nd2::SmoA1Tg mice have constitutively active Shh signaling in cerebellar granule cells and spontaneously develop medulloblastomas. The DAOY cell line is noted to be more 'Shh-like' than other medulloblastoma cell lines used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe methodological details supported by appropriate citations. The acknowledgment that DAOY is more 'Shh-like' (C95) is important context given that multiple cell lines were used and not all may be ideal SHH-type models. This transparency is appropriate.",
+    "result_type": "MINOR"
+  }
+]

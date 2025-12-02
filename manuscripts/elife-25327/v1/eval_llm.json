@@ -1,0 +1,159 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a BFA-inducible system in Arabidopsis to block secretory traffic at specific sites (ER and TGN) by mutating BFA-insensitive ARF-GEFs and using estradiol-inducible expression of fluorescent SNARE partners. BFA treatment of gnl1 mutants blocks ER-Golgi traffic and retains KNOLLE in the ER, while BFA treatment of big3 mutants blocks TGN-to-division plane traffic and retains KNOLLE at TGN/BFA compartments. The inducible system allows detection of newly-made SNARE complexes without background expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 describe a well-controlled experimental system with appropriate genetic backgrounds, chemical treatments, and controls. The use of estradiol-inducible expression (C32-C33) addresses the asynchronous cell division problem, and the maintenance of cytokinesis frequency (C35) confirms that BFA treatment specifically blocks trafficking without affecting cell division initiation. The localization data (C34, C50) and controls (C51) support the effectiveness of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "Co-immunoprecipitation experiments with BFA-treated big3 mutants expressing EST-inducible YFP:NPSN11 or GFP:SNAP33 revealed that KNOLLE exists as part of two distinct cis-SNARE complexes at the TGN: (i) KNOLLE-SNAP33-VAMP721/722 and (ii) KNOLLE-NPSN11-SYP71-VAMP721/722. Each complex exclusively co-immunoprecipitates its own members but not members of the other complex, indicating KNOLLE is transported as part of pre-assembled cis-SNARE complexes from the TGN to the division plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49 present robust co-immunoprecipitation data with multiple critical controls: EST-induction requirement (C42), mixing experiments ruling out post-lysis complex formation (C43), BFA treatment not stimulating complex formation (C44), and specificity controls with PEP12 (C45). The reciprocal experiments with both YFP:NPSN11 and GFP:SNAP33 (C36-C41) provide strong evidence for two distinct pre-assembled complexes at the TGN. The data directly support the conclusion that KNOLLE forms cis-SNARE complexes before reaching the division plane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Co-immunoprecipitation experiments with BFA-treated gnl1 mutants expressing BFA-sensitive GNL1 and EST-inducible SNARE partners demonstrated that KNOLLE already exists as part of cis-SNARE complexes in the ER. The two distinct cytokinetic SNARE complexes are assembled at the ER and trafficked along the secretory pathway (ER \u2192 Golgi \u2192 TGN \u2192 division plane) as pre-assembled cis-SNARE complexes rather than as monomeric proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 extend the TGN findings to the ER using the gnl1 mutant system. The localization data (C50) confirms ER retention, the \u03b3COP control (C51) validates effective ER-Golgi blockade, and the co-IP data (C52-C53) demonstrate complex-specific interactions at the ER. This represents the key finding that SNARE complex assembly occurs at the ER, not at later trafficking stages or the division plane. The experimental design with two independent blockade points (ER and TGN) provides strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors propose a model where cis-SNARE complexes assembled at the ER are trafficked via COPII vesicles through Golgi/TGN, then incorporated into AP1/CCV vesicles for delivery to the division plane. At the division plane, NSF ATPase disassembles the cis-complexes, and SM protein KEULE assists monomeric KNOLLE in forming fusogenic trans-SNARE complexes that mediate vesicle fusion during cell-plate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C61 present a mechanistic model that integrates the current findings with prior work on NSF (C57) and KEULE (C58, C61). While the model is logical and consistent with the data showing cis-complex trafficking (C59-C60), the transformation from cis- to trans-SNARE complexes (C56) and the specific role of KEULE in this context are inferred rather than directly demonstrated. The model requires additional experimental validation of the disassembly and reassembly steps at the division plane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that trafficking of cis-SNARE complexes offers two advantages: (i) cis-SNARE complexes are energetically favorable, stable, inactive forms well-suited for transport that ensure stoichiometric delivery of SNARE partners, and (ii) this represents an economical strategy for meeting the high membrane-fusion demands of plant cytokinesis, where approximately one-third of the cell surface area must be produced at the division plane within ~30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C66 present functional interpretations of the cis-SNARE trafficking mechanism. While the biochemical properties of cis-SNARE complexes (C62, C64-C65) are supported by prior work, the proposed advantages (C63, C66) are speculative. The claim about stoichiometric delivery (C63) is logical but not directly tested, and the economic efficiency argument (C66) lacks quantitative support comparing cis-complex trafficking versus monomer trafficking. These remain plausible hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors speculate that long-distance trafficking of inactive cis-SNARE complexes ensures delivery of large quantities of SNARE proteins for plant cytokinesis and would facilitate directional growth processes during cell differentiation. They further propose this mechanism could apply to any major eukaryotic cell surface expansion requiring enhanced membrane fusion capacity beyond what local recycling of plasma membrane SNAREs can provide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8 and C69-C70 present speculative extensions of the findings. While the hypothesis is logical given the demands of plant cytokinesis, there is no direct experimental evidence that cis-SNARE trafficking is specifically required for the timing or scale of membrane delivery (C7), facilitates cell differentiation (C8), or operates in other eukaryotic surface expansion processes (C69-C70). These remain untested hypotheses that would require additional experimental systems and comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C46",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript provides extensive background on membrane fusion, SNARE proteins, plant versus animal cytokinesis, the KNOLLE SNARE system in Arabidopsis, KNOLLE trafficking and degradation pathways, and the BFA sensitivity system. This contextualizes the experimental approach and establishes the biological significance of the question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24, C29, C46, C67-C68 present established background knowledge supported by appropriate citations. These claims accurately represent prior work on SNARE biology, plant cytokinesis mechanisms, KNOLLE function and trafficking, and the differences between plant and animal cell division. The background appropriately motivates the experimental questions and provides necessary context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors' key findings are that blocking vesicle formation at the TGN revealed cis-SNARE complexes, these complexes were already assembled at the ER, and they transform into fusogenic trans-SNARE complexes after passage through Golgi/TGN to the cell division plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize the main experimental findings. C4 and C5 are directly supported by the co-immunoprecipitation data at TGN (C36-C49) and ER (C50-C54). C6 regarding transformation to fusogenic complexes is a reasonable inference from the data showing cis-complexes during trafficking and the known requirement for trans-complexes at the division plane, though the transformation mechanism itself is not directly demonstrated. Overall, these claims accurately represent the major conclusions supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  }
+]

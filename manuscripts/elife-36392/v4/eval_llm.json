@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C38",
+      "C72",
+      "C73",
+      "C74",
+      "C101"
+    ],
+    "result": "The authors developed a FLIM-FRET method to measure NDC80-kMT binding in living cells. The method uses mTurquoise2-labeled NDC80 as donor and FlAsH-labeled \u03b2-tubulin as acceptor, with TCSPC FLIM providing quantitative measurements of FRET fraction. The measured FRET fraction of 13% corresponds to 31% of NDC80 complexes bound to kMTs, with calibration performed through Monte Carlo simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide comprehensive experimental validation of the FLIM-FRET method with appropriate controls (C8, nocodazole treatment), calibration through Monte Carlo simulations (C9-C11), and conversion factors (C12). The method is well-characterized with F\u00f6rster radius determination (C9) and distance-dependent FRET analysis (C10). Claims C38, C72-C74, C101 provide additional methodological support including tubulin labeling efficiency and advantages of FLIM-FRET over intensity-based methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C41",
+      "C63",
+      "C64"
+    ],
+    "result": "NDC80-kMT binding increases during mitotic progression from 7% FRET fraction in early prometaphase to 18% in anaphase. Within prometaphase, centered kinetochores exhibit 2.0\u00b10.4 times higher NDC80 binding than off-centered kinetochores, with centered kinetochores showing temporal increases while off-centered kinetochores maintain constant binding at ~7% FRET fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are well-supported by FLIM-FRET measurements shown in Figure 2, demonstrating both temporal progression and spatial heterogeneity. The observation of different binding levels between centered and off-centered kinetochores (C14) strongly supports chromosome-autonomous regulation (C41). Claims C63-C64 provide reasonable interpretations, though C63 is speculative about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C42",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "NDC80-kMT binding is positively correlated with centromere tension (measured by K-K distance) across the full range of K-K distances (0.8-1.5 \u03bcm) in untreated, taxol-treated, and STLC-treated cells. NDC80 binding is also higher at trailing (polymerizing) kinetochores than leading (depolymerizing) kinetochores, and is independently regulated by K-K distance and kinetochore velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 demonstrate a robust positive correlation between NDC80 binding and K-K distance with strong statistical significance (p<0.00005) across multiple perturbations. The consistency across taxol and STLC treatments (C82-C83) strengthens the conclusion. Claims C17, C77-C78 show independent regulation by velocity and tension. The data from STLC-treated cells (C79-C80) provide additional support, though the interpretation of monotelic attachments (C81) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C84",
+      "C85"
+    ],
+    "result": "Aurora B kinase regulates NDC80-kMT binding in a graded manner through phosphorylation of the N-terminal tail of Hec1. Aurora B inhibition increases NDC80 FRET fraction from 9% to 18%, and phosphomimetic Hec1 mutants show graded decreases in NDC80 binding (16.0% for 9A-Hec1, 5.8% for 2D-Hec1, 4.8% for 9D-Hec1). The modulation predominantly occurs through Hec1 N-terminal tail phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are strongly supported by multiple complementary experiments: Aurora B inhibition (C22, C26), phosphomimetic mutants (C23), and rescue experiments (C24). The graded dependence (C27) is demonstrated both by mutant analysis and by correlating NDC80 binding with Aurora B sensor measurements. Claim C25 is well-supported by the substantially reduced response to Aurora B inhibition in 2D-Hec1 cells (C24). Claims C84-C85 provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C39"
+    ],
+    "result": "The tension dependency of NDC80-kMT binding requires phosphorylation of the N-terminal tail of Hec1. In 9A-Hec1-expressing cells (non-phosphorylatable mutant), the correlation between NDC80 FRET fraction and K-K distance is eliminated (p=0.20), despite these cells displaying significantly larger K-K distances than unperturbed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are well-supported by FLIM-FRET measurements in 9A-Hec1 cells shown in Figure 5A. The elimination of the correlation (C28) combined with the observation that K-K distances are actually larger in these cells (C29) provides strong evidence that phosphorylation is required for tension-dependent regulation (C30). This is a critical control demonstrating that the correlation is not simply due to changes in kMT number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The tension dependency of NDC80-kMT binding requires proper localization of Aurora B to centromeres via haspin kinase. Haspin inhibition by 5-ITu eliminates the correlation between NDC80 binding and K-K distance without affecting average NDC80 binding levels or K-K distances. Aurora B activity at kinetochores remains unchanged after haspin inhibition, suggesting two independent pools of Aurora B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate that haspin inhibition specifically eliminates tension dependency (C33) without affecting average binding (C32) or K-K distances (C31), providing strong evidence for the requirement of proper Aurora B localization (C40, C88). Claims C34-C35 show that Aurora B can still act on NDC80 after haspin inhibition, supporting the two-pool model (C90-C91). The observation that haspin inhibition removes correlation without affecting K-K distance distribution (C67) argues for causality from tension to NDC80 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C92",
+      "C93"
+    ],
+    "result": "The concentration of Aurora B at NDC80 (measured by INCENP-mCherry intensity) decreases linearly with increasing K-K distance in untreated and taxol-treated cells (p<10\u207b\u2076). After haspin inhibition, Aurora B concentration at NDC80 is greatly reduced and becomes independent of K-K distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C92 are well-supported by spinning-disk confocal microscopy measurements shown in Figure 6B. The anti-correlation between Aurora B concentration and K-K distance (C92) provides a mechanistic link between tension and NDC80 binding. The elimination of this correlation after haspin inhibition (C37) is consistent with the elimination of tension-dependent NDC80 binding. Claim C93 provides a reasonable inference connecting these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A mathematical model of Aurora B autoactivation and NDC80 phosphorylation quantitatively explains the tension dependency of NDC80-kMT binding. The model incorporates Aurora B autoactivation in trans, phosphatase activity, NDC80 phosphorylation, and NDC80-kMT binding, and successfully predicts both the nonlinear relationship between Aurora B concentration and NDC80 binding and the effects of haspin inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 describe a mathematical model that quantitatively fits multiple experimental datasets (Figures 4F, 7A, 7B). The model successfully predicts the nonlinear relationship between Aurora B concentration and NDC80 binding (C95-C97) and the effects of haspin inhibition (C98). The model provides a self-consistent explanation (C99) without requiring additional mechanisms (C100). However, the model makes several simplifying assumptions (two independent Aurora B pools, steady-state approximations) that should be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C71",
+      "C89"
+    ],
+    "result": "The authors propose that tension-dependent kMT detachment, which underlies error correction, results from tension-dependent NDC80-kMT binding, ultimately arising from nonlinear Aurora B autoactivation and phosphoregulation of NDC80. NDC80-kMT binding is proposed to be a major determinant of kMT detachment rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 and C71 are speculative proposals that extend beyond the direct measurements. While the correlations between NDC80 binding and kMT stability across multiple conditions (cited in C52-C56) are consistent with this model, the authors do not directly measure kMT detachment rates or error correction in this study. The proposal is reasonable and well-supported by indirect evidence and literature, but requires additional experiments directly measuring kMT detachment and error correction rates to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C51",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The increase in NDC80 binding with increasing tension is caused by changes in binding affinity rather than variations in the number of kMTs. This conclusion is based on the observation that taxol treatment reduces both tension and NDC80 binding despite increasing kMT number, and that the correlation is consistent across different perturbations. However, in circumstances with very few kMTs (e.g., early prometaphase), changes in kMT number can affect NDC80 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 provide a well-reasoned argument that affinity changes, not kMT number changes, drive the tension-dependent increase in NDC80 binding. The logic is sound: (1) taxol increases kMT number but decreases NDC80 binding (C51, C102); (2) the correlation is consistent across perturbations (C82-C83); (3) with ~20 kMTs per kinetochore and ~240 NDC80 complexes, only ~6 kMTs are needed for all NDC80 to reach binding sites (C103-C105). Claims C68-C70 acknowledge that kMT number can contribute in specific circumstances, providing appropriate nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript provides extensive background on NDC80 complex function, kinetochore-microtubule attachments, and error correction mechanisms, citing numerous prior studies. These include the role of NDC80 as the major kinetochore-microtubule coupler, the number of NDC80 complexes and kMTs per kinetochore, Aurora B regulation of NDC80 binding in vitro, and the relationship between NDC80 binding and kMT stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C43-C57 are well-supported by appropriate citations to prior literature. These claims establish the scientific context and rationale for the study. The citations appear accurate and relevant, though the reviewer cannot verify all cited work without examining the original papers. The claims about kMT stability correlating with NDC80 binding (C52-C57) are important for interpreting the significance of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C63",
+      "C66",
+      "C81"
+    ],
+    "result": "The manuscript includes several speculative interpretations and proposed mechanisms, including explanations for differential binding at leading/trailing kinetochores, effects of Aurora B inhibition on kMT detachment, temporal changes in centered kinetochores, and the role of haspin-independent Aurora B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C59, C63, C66, and C81 are explicitly speculative or use cautious language ('may underlie', 'we speculate', 'presumably'). These interpretations are reasonable given the data but lack direct experimental validation. For example, C58 proposes an explanation for in vitro observations based on the current results, C59 connects NDC80 binding to photoactivation experiments, and C63 speculates about the mechanism of temporal increases. These are appropriate scientific speculations but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

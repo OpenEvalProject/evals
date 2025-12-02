@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the theoretical framework for mutation rate evolution, citing prior work on the trade-offs between mutation supply and genetic load, the prevalence of hypermutators in clinical settings, and gaps in understanding the dynamics of mutation rates under near-lethal stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 are all supported by appropriate citations to prior literature and represent established knowledge in the field. These claims provide necessary background context and identify the knowledge gap that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors used E. coli exposed to high ethanol stress as a model system and found unexpected flexibility in cellular mutation rates in response to changes in selective pressure, with hypermutation arising during stress and declining once cells adapted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 summarize the main findings of the study and are supported by the experimental data presented throughout the manuscript. The model system choice is justified by citations, and the key findings are substantiated by multiple lines of evidence presented in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "5% ethanol represents near-lethal stress for E. coli, and growth dynamics under this condition depend on initial population size, with small populations showing highly dispersed growth curves indicative of mutation-driven adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 are supported by growth curve data in Figure 1 and Figure 1\u2014figure supplement 2. The characterization of 5% ethanol as near-lethal stress is well-documented, and the population size effects on growth dynamics are consistent with population genetics principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mutator mutants show increased growth rates compared to wild type when starting from small initial populations in 5% ethanol, but not from large populations, indicating that the advantage of hypermutation is primarily due to second-order selection rather than direct fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by statistical analysis of growth rate data (Figure 1b) and relative fitness measurements (Figure 1\u2014figure supplement 4). The interpretation that benefits arise from second-order selection is well-reasoned based on the population size-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In a long-term evolution experiment with 20 parallel E. coli lines exposed to gradually increasing ethanol concentrations over ~500 generations, only 8 of 20 lines developed tolerance to very high (\u22657%) ethanol concentrations while 12 lines achieved only low tolerance (\u22646%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the experimental design and outcomes, which are clearly documented in Figure 2 and the methods section. The bimodal distribution of outcomes is a key observation that motivates subsequent investigation of mutation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Evolved lines can be divided into two groups based on mutation rates (higher or lower than wild type), and this subdivision corresponds perfectly to ethanol tolerance levels, with a highly significant positive correlation (p<0.001) between mutation rate and ethanol tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by fluctuation assay data (Figure 3a) and Spearman correlation analysis (Figure 3b). The statistical significance is clearly reported and the correlation is visually apparent in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Whole genome sequencing revealed that high ethanol-tolerant lines accumulated many mutations with a mutational spectrum characteristic of MMR mutators, and mutations in MMR genes (mutS, mutL, mutH) were identified as the main cause of increased mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by whole genome sequencing data presented in Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3. The mutational spectrum analysis and identification of MMR mutations provide strong molecular evidence for the hypermutator phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A specific mutS point mutation (G100A) from an evolved line causes ~10-fold increased mutation rate, and both mutSG100A and \u0394mutS strains rapidly fix in competition against wild type under 5% ethanol, with \u0394mutS showing higher fitness than mutSG100A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by mutation rate measurements (Figure 4a), competition experiments (Figure 4b), and relative fitness calculations (Figure 4\u2014figure supplement 1b). The data demonstrate both the mutator phenotype and its selective advantage under ethanol stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Only a fraction of mutations are fixed in hypermutating lines, suggesting complex population structure with different subpopulations, and mutation rate can vary with population structure throughout evolution rather than being fixed after one mutator mutation spreads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by sequencing data showing low-frequency mutations (Figure 2\u2014figure supplement 2). The inference about population structure is reasonable given the data, though direct evidence of subpopulations would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mutation rates show dynamic patterns during evolution, with significant positive correlation (p<0.05) between changes in ethanol tolerance and mutation rate differences between consecutive time points, and ethanol itself does not change the dynamics caused by genomic mutation rate differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by mutation rate measurements at multiple time points (Figure 5a), correlation analysis (Figure 5b), and control experiments in the presence/absence of ethanol (Figure 5\u2014figure supplement 1). The statistical analysis is appropriate for the ordinal nature of the ethanol tolerance variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Mutation rates decrease quickly during periods of constant ethanol concentration, and this decrease is explained by accumulation of compensatory suppressor mutations rather than reversion of mutator mutations, as no reversions were found by targeted sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by mutation rate dynamics data (Figure 5a) and targeted sequencing results. The exclusion of reversion as a mechanism is based on direct sequencing evidence, making the inference about suppressor mutations reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Intermediate evolved strains show rapid decrease in viable cells upon entering stationary phase, with death rate constants positively associated with mutation rates, and constant death rates throughout the growth cycle, suggesting that genetic load and lethal mutations drive mortality-based selection for lower mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by viable cell count data (Figure 6\u2014figure supplement 1), death rate constant measurements (Figure 6b), and live-dead staining (Figure 6c, Figure 6\u2014figure supplement 2). The mechanistic interpretation linking genetic load to mortality is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Re-evolution of a high mutation rate intermediate point for 150 generations at constant ethanol concentration resulted in decreased mutation rate and mortality, and re-introducing high mutation rate by deleting mutS increased mortality and led to rapid outcompetition by the low mutation rate strain, confirming mutation rate and mortality as crucial factors driving evolution of mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by re-evolution experiments showing decreased mutation rate (Figure 7a), decreased mortality (Figure 7b), and competition experiments (Figure 7\u2014figure supplement 1). This experimental manipulation provides strong causal evidence for the mortality-driven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The main findings from the abstract state that hypermutation independently evolves during E. coli adaptation to high ethanol stress, hypermutator states are transitory and alternate with decreases in mutation rate, population mutation rates rise with higher stress and decline once adapted, and cellular mortality is the major force driving quick evolution of mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 accurately summarize the major findings that are supported by the experimental data presented throughout the manuscript. These represent the core contributions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The findings show how organisms balance robustness and evolvability, help explain hypermutation prevalence in antibiotic resistance and cancer, and suggest that targeting hypermutation could enable novel therapies and generation of stress-resistant industrial strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 represent broader implications and speculative applications of the findings. While the connection to robustness/evolvability balance is reasonable, the therapeutic and industrial applications (C101-C102) are speculative and would require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The rise of hypermutation is linked to second-order selection based on growth rate and lag time data, and may also be facilitated by wider, less deleterious-biased fitness effect distributions in harsh environments, with mutator mutations being beneficial primarily through increasing mutational supply rather than direct selective advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 represent mechanistic interpretations supported by the growth data (Figure 1) and literature citations. The dual explanation (second-order selection plus altered fitness landscapes) is well-reasoned, though the relative contributions are difficult to quantify.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Predominantly point mutations rather than knockouts were found in MMR genes, and mutators increase in frequency even at very low initial ratios (1:1000), suggesting direct beneficial effects of MMR mutations in addition to second-order selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by sequencing data (Figure 2\u2014figure supplement 3) and competition experiments (Figure 4). The argument for direct effects is logical given that very low frequency mutators shouldn't benefit from second-order selection alone, though the magnitude of direct effects remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Any increase in mutation rate, regardless of the disrupted cellular system, can confer selective benefit, with direct effects of MMR mutations having limited effect on initial selection but potentially affecting later fate of hypermutators by lowering costs of genetic load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by data showing benefits across multiple mutator types (Figure 1). The interpretation about relative importance of direct vs. indirect effects at different stages is reasonable but somewhat speculative (C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The speed of mutation rate alterations in this study differs from previous reports showing gradual decrease over \u22651000 generations, with much higher benefits of anti-mutators observed under near-lethal ethanol conditions allowing rapid, mortality-driven changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by comparison with cited literature (Wielgoss et al. 2013) and the rapid dynamics observed in Figure 5a. The contrast with previous work highlights the novelty of the findings under near-lethal stress conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "A range of mutation rates (10- to 100-fold increase) enables fast growth under near-lethal ethanol stress, substantiating theoretical predictions, and moderate mutators are more easily selected due to higher benefits than low mutation rate variants and lower long-term costs than high mutation rate variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 are supported by lag time data (Figure 1\u2014figure supplement 3) and comparison with theoretical work (Bjedov et al. 2003). The identification of an optimal range of mutation rates is a key finding that bridges theory and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Hypermutators have been observed in S. cerevisiae and other eukaryotic pathogens under ethanol and other stresses, with lower emergence in eukaryotes potentially explained by ploidy and larger genetic arsenal allowing alternative adaptive routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by appropriate citations and represent reasonable comparative discussion. The explanation for lower mutator frequency in eukaryotes is plausible but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The 12 low ethanol-tolerant lines lacking hypermutation may have acquired mutations in rpoZ or infB that increase sensitivity to higher ethanol levels, preventing further adaptation and acquisition of mutator alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C129 are based on limited sequencing data from only 2 of 12 low-tolerant lines. The mechanistic explanation (C128-C129) is speculative and would require experimental validation. This represents an interesting hypothesis but lacks sufficient support.",
+    "result_type": "MINOR"
+  }
+]

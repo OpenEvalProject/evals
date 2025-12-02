@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the biological and technical context: mammalian circuits receive 70-90% of synaptic inputs from distant sources, but current 3D EM volumes cannot encompass entire brains, leaving most input sources unidentified. This motivates the need for FluoEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 provide well-supported background from established knowledge and citations. The quantitative estimate (C9: 70-90% distal inputs) is properly cited, and the technical limitations (C11-C12) accurately reflect the state of the field. This contextual framing is appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Existing methods for combining fluorescent labels with EM have significant limitations: direct CLEM cannot scale to connectomic volumes, multiple electron-dense labels are challenging in mammals, and computational approaches for neurite registration do not scale to connectomic graph sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 accurately characterize prior work limitations through appropriate citations. The assessment that multi-color electron-dense labeling works in Drosophila (C21) but not mammals is properly qualified with 'to our knowledge.' The limitations are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "FluoEM enables identification of multi-color fluorescently labeled axons in dense EM data through correlated imaging and computational matching, reformulating the alignment problem as identifying the most likely EM axon that explains each LM fluorescence signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C27-C34 describe the FluoEM conceptual framework and workflow, which is demonstrated throughout the manuscript with experimental data. The workflow steps (C29-C33) are clearly documented and executed. The use of blood vessels as intrinsic fiducials (C34) is validated in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C42"
+    ],
+    "result": "In fluorescence imaging of mouse cortex with realistic labeling density, 95% of axons were reconstructable above 20 \u03bcm length, with reconstruction lengths of 70\u00b144 \u03bcm (green channel) and 134\u00b162 \u03bcm (red channel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C42 describe the LM reconstruction experiment with clear methodology and quantitative results shown in Figure 2a-c. The measurements were performed by two independent expert annotators, providing validation. Sample sizes (n=46 and n=42 axons) are adequate for the distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C4",
+      "C5",
+      "C101"
+    ],
+    "result": "Axonal trajectories in mouse cortex layer 1 become unique after 35 \u03bcm (90th percentile), with mean uniqueness length of 22\u00b110 \u03bcm (n=220 axons). This uniqueness of axonal trajectories is the key prerequisite enabling FluoEM when EM datasets are 40-50 \u03bcm in extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C4-C5, C101 present the critical axonal uniqueness measurements. The methodology is rigorous: all 220 axons traversing a 5\u00d75\u00d75 \u03bcm\u00b3 bounding box were reconstructed and analyzed. The uniqueness length measurements (Figure 2g) directly support the feasibility claim (C4) that 40-50 \u03bcm EM extent is sufficient. Statistical analysis across cortical layers (Figure 2\u2014figure supplement 1) confirms consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Correlated LM-EM imaging was successfully performed using blood vessel patterns as intrinsic fiducials, achieving coarse alignment precision of 2.7\u00b11.1 \u03bcm (n=7 control points) between a confocal LM dataset and high-resolution SBEM dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 describe the correlated imaging workflow with detailed methodology. The blood vessel-based alignment (Figure 3) is well-documented with clear visualization of corresponding structures. The alignment precision measurement (C62) is quantitative and appropriate for the coarse registration step. The approach is standard in the field (properly cited).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The first LM-to-EM axon match was achieved by reconstructing all 193 axons in a 5 \u03bcm\u00b3 search volume and identifying the unique EM axon that remained within 5 \u03bcm of the transformed LM axon beyond 42 \u03bcm distance. Validation by varicosity pattern matching showed 0.7\u00b10.6 \u03bcm correspondence (p<10\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 describe the initial matching procedure with clear methodology (Figure 4). The marching sphere algorithm (C68) systematically eliminates candidates. The varicosity-based validation (C72-C73) provides strong statistical evidence (randomization test, p<10\u207b\u2075) that the match is correct, not by chance. The approach is logically sound and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Iterative refinement using matched axons as additional constraints enabled efficient subsequent matching (several or one reconstruction attempt vs. 193 for first match). A total of 38 axons were matched using 284 control points, reducing registration error from 725\u00b1408 nm (affine) to 487\u00b1290 nm (free-form).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C78 demonstrate the iterative improvement strategy with quantitative validation. The dramatic reduction in effort (C76, Figure 5e) and improved registration precision (C78, Figure 5h) are well-documented. The use of 30 independent control points for validation (not used in registration) provides unbiased error estimates. The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "About 90% of fluorescent voxels in a 17-20 \u03bcm depth range were explained by 38 matched EM axons (4.6 mm total path length), requiring 195 total work hours (or 30 minutes for initial match when using varicosities as search criteria).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide quantitative assessment of matching completeness and effort. The 90% coverage (C79, Figure 5o) demonstrates near-complete matching in the test region. The work hour breakdown (C81) is detailed and transparent. The alternative varicosity-based approach (C82) shows substantial efficiency gains, validated by independent expert.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Post-hoc comparison revealed that 71% of axons were correctly reconstructed at the LM level, with 29% containing errors: 38% incorrect terminations, 31% incorrect continuations at overlaps, 23% missed branches, and 8% added branches. Labeling density was 1.2\u00b10.2% (tdTomato) and 1.4\u00b10.4% (eGFP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 provide systematic error analysis using EM as ground truth (Figure 6b-f). The independent expert reconstruction without knowledge of EM trajectories provides unbiased assessment. Error categorization is clear and quantitative. This analysis is valuable for understanding LM reconstruction limitations at the tested labeling densities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Of 255 LM-identified varicosities, 63% corresponded to presynaptic boutons in EM, while 37% were non-synaptic (mitochondria-containing, hollow thickenings, or myelinated). Larger varicosities were more likely synaptic, but no size range allowed unequivocal synapse inference from LM morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 provide important validation of LM-based synapse inference using EM ground truth (Figure 6g-o). The quantitative analysis (n=255 varicosities) is substantial. The finding that size correlates with but does not definitively predict synapse presence (C97) is clearly demonstrated in Figure 6n-o and important for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A second independent FluoEM experiment in mouse S1 cortex successfully matched 15 axons between LM and EM in 10 work hours, demonstrating reproducibility of the method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide crucial reproducibility evidence (Figure 6p-r). The second experiment in different cortical location with independent dataset demonstrates that FluoEM is not limited to a single preparation. The reduced time investment (10 hr vs 195 hr) reflects learning and optimization. This strengthens confidence in the method's general applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "FluoEM can be applied to a broad range of cortical and subcortical tissue where dense circuits receive distant projections. The method is compatible with other 3D EM techniques (FIB-SEM, ATUM-SEM) that provide 40-50 \u03bcm faithful reconstructions, though highly anisotropic axon bundles may require longer reconstruction lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 make reasonable inferences about FluoEM applicability based on demonstrated principles. The generalization to other brain regions (C102) is justified by the fundamental geometry of axonal trajectories. Compatibility with other EM methods (C105) logically follows from the geometric basis. The caveat about anisotropic axons (C103) is appropriately qualified as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "FluoEM is theoretically unlimited in color channels but practically limited by photodamage. Tissue withstood 2 hours of 3-channel imaging. The method can be extended by splitting volumes into 40-50 \u03bcm subvolumes, each imaged with different fluorescence channels, to multiplex color range without increasing photon dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 discuss practical considerations and extensions. The photodamage observation (C108) is empirical. The volume-splitting strategy (C111, Figure 7a-b) is a logical extension based on the uniqueness length measurements (C110). These are reasonable inferences from the demonstrated principles, appropriately presented as possibilities rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "FluoEM overcomes traditional LM labeling density limitations (1 in 1000-10,000 axons) by only requiring axons to be followed over the uniqueness length. A strategy using one sparse channel for accurate pre-alignment and other dense channels could enable matching with LM-reconstructable stretches as short as 5 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 discuss labeling density advantages. The traditional limitation (C112) is properly cited. The inference that FluoEM relaxes this constraint (C113) follows from the demonstrated matching approach. The proposed sparse/dense channel strategy (C114) is a reasonable optimization based on the alignment precision analysis (Figure 2k, 5h), appropriately presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "With varicosity-based matching, LM-to-EM matching consumes 20-30 minutes per axon. Extrapolating to a 1\u00d71\u00d70.1 mm\u00b3 volume would require ~5300 work hours. Future automation of EM reconstruction could further accelerate FluoEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 provide practical effort estimates. The 20-30 min per axon (C115) is empirically measured. The extrapolation (C116) uses transparent assumptions detailed in Methods. The speculation about automation (C117) is appropriately qualified and supported by citations to emerging methods. These projections are useful for planning but clearly distinguished from demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "FluoEM overcomes the major hurdle of limited color space for identifying multiple axonal input sources in parallel in large-scale dense EM reconstruction of mammalian neuronal circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is the overarching conclusion, supported by the collective evidence: demonstrated multi-color matching (38 axons in 2 channels), validation of matching accuracy (varicosity correspondence, 90% signal coverage), reproducibility (second experiment), and characterization of method parameters (uniqueness length, reconstruction length, alignment precision). The claim is justified by the presented work.",
+    "result_type": "MAJOR"
+  }
+]

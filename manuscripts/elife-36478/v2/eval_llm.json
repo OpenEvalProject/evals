@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C41"
+    ],
+    "result": "GltPh, a homotrimeric glutamate transporter, can be successfully dissociated by SDS and reassembled in lipid vesicles to produce a functional transporter (r-GltPh) that is structurally, functionally, and biochemically similar to the native protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C27 and C41 provide converging evidence from multiple experimental approaches (SEC, crosslinking, binding assays, transport assays) demonstrating successful reassembly. The KD values for Asp binding are similar (183\u00b116 nM native vs 216\u00b115 nM reassembled), transport activities are comparable, and SEC profiles match. The requirement for lipid vesicles (C21-C22) is clearly demonstrated by control experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Single-molecule FRET experiments demonstrate that reassembled GltPh (r-GltPh) exhibits conformational dynamics indistinguishable from native protein, sampling three FRET states with similar populations, transition frequencies (~0.03/s), and state lifetimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 present comprehensive smFRET data showing that r-GltPh samples the same three FRET states as native protein with comparable populations (76%/17%/7% vs 71%/16%/13%) and identical transition frequencies. The data directly demonstrate that the reassembly process preserves the native conformational dynamics of the transporter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C99"
+    ],
+    "result": "Using heteromeric GltPh transporters with one reporter subunit (L130W) and two test subunits (wild-type or R397A mutant), the authors directly demonstrate that substrate binding sites in GltPh are uncoupled, as Asp binding to test subunits does not affect binding to the reporter subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 provide strong evidence for lack of cooperativity. The KD values for the reporter subunit are similar whether test subunits are wild-type (455\u00b161 nM) or R397A mutant (356\u00b136 nM), and Hill coefficients are near unity (0.84\u00b10.08 and 1.05\u00b10.07). Since R397A test subunits remain largely unbound throughout titration (KD ~238 \u03bcM vs assay conditions), this directly tests and confirms the absence of inter-subunit coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C104",
+      "C105"
+    ],
+    "result": "Heteromeric GltPh with a single spin-labeled subunit dramatically simplifies DEER distance distributions compared to homotrimeric protein, yielding a single narrow peak at 52 \u00c5 that allows straightforward determination of the inward-facing conformational state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 demonstrate clear experimental advantage of heteromeric approach. Homomeric V216C/I294C GltPh yields broad, weakly structured distributions (40-70 \u00c5) due to multiple spin-spin distances, while heteromeric protein shows a single narrow peak at 52 \u00c5, consistent with the inward-facing state (predicted C\u03b1-C\u03b1 distance 48 \u00c5 vs 34 \u00c5 for outward-facing). This directly validates the utility of the heteromeric approach for DEER spectroscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The in vitro reassembly methodology is applicable to GltSm, a glutamate transporter homolog sharing 58% sequence identity with GltPh, producing functionally active reassembled protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 demonstrate successful application to GltSm with SEC, crosslinking, and transport data showing functional reassembly. This extends the methodology beyond GltPh, though the similarity to GltPh (58% identity, same trimeric architecture) limits the generality demonstrated by this example alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The in vitro reassembly methodology successfully applies to VcINDY, a homodimeric Na+-coupled succinate transporter with distinct topology from GltPh, producing functionally active reassembled protein with transport activity similar to native protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 provide comprehensive evidence for successful VcINDY reassembly using SDS dissociation, crosslinking confirmation of dimer formation, SEC showing similar elution profiles, and transport assays demonstrating comparable activity. The distinct fold and dimeric (vs trimeric) architecture of VcINDY compared to GltPh strengthens the claim of general applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The in vitro reassembly methodology successfully applies to CLC-ec1, a homodimeric Cl-/H+ antiporter with complex topology (18 helical segments with internal repeat), producing functionally active reassembled protein despite being one of the strongest known membrane protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C93 demonstrate successful reassembly of CLC-ec1 using a more stringent dissociation protocol (TCA/acetone precipitation, TFE treatment, lyophilization). Multiple lines of evidence support functional reassembly: SEC profiles match native protein, intrinsic fluorescence spectra are similar (emission maxima 333 nm, 46% decrease with SDS), and chloride flux activity is comparable to native protein. The complex topology and strong dimerization make this a particularly stringent test of the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The in vitro reassembly methodology involves gentle dissociation of multimeric proteins using SDS (which only partially unfolds subunits) followed by reassociation in lipid vesicles, which are required for successful reassembly. Success depends on avoiding extensive unfolding of subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 establish key mechanistic principles supported by experimental observations. The requirement for lipid vesicles is demonstrated by failure of reassembly in detergent alone (C112, Figure 1C). The importance of gentle dissociation is shown by differential success with stringent protocols (C110-C111). The speculation about lipid vesicles concentrating and orienting subunits (C113) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The reassembly mechanism likely differs between proteins: CLC-ec1 monomers may fold first then dimerize, while GltPh likely couples folding with trimer assembly due to its bowl-like structure that would expose polar regions if monomers were fully native.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C119 are largely speculative (C115, C118, C119 explicitly marked as speculation/inference). While C114 cites evidence for stable CLC-ec1 monomers, the proposed mechanisms for both proteins lack direct experimental support. The structural reasoning is logical but not tested experimentally in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Homomeric membrane proteins present challenges for spectroscopic studies because site-specific labeling results in multiple probes per complex, and existing approaches for generating heteromeric variants (concatenation, co-expression) suffer from low yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the background and motivation for the study. These are well-supported by citations and represent established knowledge in the field. The claims about challenges with homomeric proteins (C4-C5) and limitations of existing approaches (C6-C8) are logical and supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C120",
+      "C121"
+    ],
+    "result": "The heteromeric assembly approach has broad potential applications for studying multimeric proteins, including investigating lipid requirements for assembly, applying DEER and FRET spectroscopy to ion channels, and studying transporters with interfacial binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C100-C103, C106-C107, C120-C121 discuss general principles and potential applications. These are well-supported by citations and logical reasoning, though they represent future directions rather than results demonstrated in this work. The claims about Hill coefficients (C97-C98) and spectroscopic applications (C101-C103) are established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The L130W substitution in GltPh provides a spectroscopic probe for Asp binding (increase in fluorescence at 334 nm), while wild-type shows no change. The R397A substitution causes ~1300-fold decrease in Asp affinity (KD = 238 \u03bcM vs 0.183 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 present supporting experimental data for the heteromeric binding experiments. The fluorescence properties of L130W (C123-C125) are shown in Figure 3\u2014figure supplement 1, and the affinity change for R397A (C122) is shown in Figure 3\u2014figure supplement 2. These are straightforward characterization experiments that support the main binding studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "DEER spectroscopy measures dipolar coupling that depends on inter-spin distance as 1/r\u00b3, making it accurate for distance measurements in the range of 10-80 \u00c5 or longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe established principles of DEER spectroscopy supported by multiple citations. These represent background knowledge rather than new findings, providing context for the DEER experiments performed in the study.",
+    "result_type": "MINOR"
+  }
+]

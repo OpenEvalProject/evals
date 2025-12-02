@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "RNA-seq data quality and validation. The study obtained >160 million 100 bp paired-end reads per sample with at least 92% mapping to the mouse genome. Biological replicates at PN14 showed strong correlations for gene expression (r\u00b2=0.99) and alternative splicing (r\u00b2=0.90). RNA-seq predictions were validated by RT-PCR with r\u00b2=0.80 for splicing transitions between PN2 and PN28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 collectively demonstrate high-quality RNA-seq data with appropriate validation. The high mapping rates, strong replicate correlations, and RT-PCR validation provide robust evidence for data quality and reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Differential gene expression during postnatal muscle development. The study identified 4417 genes with differential expression (\u00b12.0 fold) comparing E18.5 to adult. The majority (56%, 3315 genes) changed between PN2 and PN14, with smaller proportions changing in other intervals: 8% (481 genes) from E18.5 to PN2, 11% (636 genes) from PN14 to PN28, and 25% (1496 genes) from PN28 to adult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by RNA-seq data analysis showing clear temporal patterns of gene expression changes. The data demonstrate that the PN2-PN14 interval is the most dynamic period for transcriptional changes during postnatal muscle development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Alternative splicing transitions during postnatal muscle development. The study identified 721 differential splicing events (\u0394PSI \u226515%) comparing E18.5 to adult. 67% of splicing events undergo transition during only one time interval. Of the 768 total splicing events, 32% occur specifically between PN2 and PN14, 13% between E18.5 and PN2, 5% between PN14 and PN28, and 16% between PN28 and adult. 77% of changes between PN2 and PN14 are cassette exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C27-C32 are well-supported by RNA-seq data showing temporal patterns of alternative splicing. The data demonstrate that PN2-PN14 is the most dynamic period for splicing transitions, with cassette exons being the predominant type of alternative splicing event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C74"
+    ],
+    "result": "Independence of alternative splicing and gene expression regulation. Only 18% of genes undergoing alternative splicing transitions between PN2 and PN14 also showed differential gene expression. Of 768 differential splicing events between E18.5 and adult, 31% do not exhibit differential gene expression, and 58% are within genes showing differential expression in a different time interval. Overall, 79% of genes with postnatal splicing transitions do not show significant gene expression changes in the same time interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C74 demonstrate that alternative splicing and gene expression are largely independent regulatory mechanisms during postnatal muscle development. The data consistently show minimal overlap between genes regulated by these two mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Conservation of splicing transitions between mouse and human. Of 17 splicing events tested, 11 (65%) underwent conserved transitions between mouse (PN2 to PN28) and human (22 weeks gestation to adult) skeletal muscle, defined as \u0394PSI \u226515% in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by RT-PCR data comparing mouse and human samples. The high conservation rate (65%) suggests functional importance of these splicing transitions, though the sample size is relatively small (n=17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Structural consequences of alternative exons on protein coding. Alternative exons that are multiples of three (135 exons) predominantly maintain the ORF (129/135), causing internal insertions or deletions. Alternative exons not multiples of three (88 exons) are enriched near mRNA ends: 22 are exclusively in UTRs, and 66 affect the ORF to produce alternative N- or C-termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by systematic analysis of alternative exon positions and reading frame effects. The data show clear patterns distinguishing in-frame from out-of-frame exons and their predicted protein consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Functional enrichment of differentially expressed and alternatively spliced genes. Genes with differential expression were enriched for mitochondrial function, while alternatively spliced genes were enriched for calcium handling, endocytosis, and cell junction categories. Calcium-related categories included 90 genes total (75 for expression, 21 for splicing), but only six genes showed both significant expression and splicing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by Ingenuity pathway analysis. The distinct functional enrichments for expression versus splicing further support the independence of these regulatory mechanisms and highlight calcium handling as a key process regulated by alternative splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Developmental changes in splicing regulator protein levels. Western blot analysis showed that Celf1, Celf2, and Mbnl2 protein levels decrease dramatically between PN7 and PN14 in gastrocnemius muscle. Mbnl1 protein expression is also reduced after PN7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by Western blot data. The timing of these protein level changes correlates with the dynamic period of splicing transitions (PN2-PN14), suggesting a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CELF1 and MBNL1 regulate distinct sets of calcium handling genes. Overexpression of hCELF1 and loss of Mbnl1 produced six and nine significant splicing changes, respectively, affecting 15 of 18 genes tested. Only two genes (Prkca and Ppp3cc) responded to both hCELF1 gain and Mbnl1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by RT-PCR analysis of transgenic and knockout mice. The data demonstrate that CELF1 and MBNL1 regulate largely distinct subsets of splicing events, with minimal overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Calcineurin A genes undergo postnatal splicing transitions. All three calcineurin A paralogs (Ppp3ca, Ppp3cb, Ppp3cc) show splicing transitions with \u0394PSI \u226515%, while calcineurin B genes do not. Ppp3cb and Ppp3cc have homologous 27 bp alternative exon 10a; Ppp3ca lacks this exon. Ppp3ca and Ppp3cb have alternatively spliced 30 bp exon 13 with nearly identical sequences; Ppp3cc exon 13 is constitutively included. All four alternative exons show increased inclusion during development. Exons 10a are skeletal muscle-specific, while exons 13 are included in multiple adult tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 are well-supported by RNA-seq and RT-PCR data showing detailed characterization of calcineurin A splicing patterns. The tissue-specific and developmental patterns suggest functional specialization of these isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Calcineurin A splicing affects NFATC3 localization in C2C12 cells. Differentiating C2C12 cultures reproduce developmental inclusion of Ppp3ca and Ppp3cb exon 13 but not Ppp3cc. Redirected splicing to fetal isoforms using ASOs caused significantly increased nuclear localization of Nfatc3, while Nfatc1 localization was unchanged. Nfatc2 mRNA levels are very low in differentiated C2C12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by RT-PCR and immunofluorescence data. The specific effect on Nfatc3 but not Nfatc1 demonstrates isoform-specific functional consequences of calcineurin A splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ASO-mediated redirected splicing of calcineurin A in adult FDB muscle. Three weeks after ASO delivery, all four calcineurin A exons underwent nearly complete switch to fetal splicing pattern, while non-targeting ASOs had no effect. Four non-targeted developmental splicing events (Atp2a1, Cacna1s, Prkca, Ppp1r12b) showed no significant differences, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by RT-PCR data showing efficient and specific redirected splicing. The lack of off-target effects on control splicing events validates the specificity of the ASO approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Functional consequences of redirected calcineurin A splicing on muscle contractility. Redirected splicing resulted in significant prolongation of twitch half relaxation time and strong trends toward increased peak twitch force and peak calcium (not statistically significant). Following tetanic stimulation (150 Hz), there was significant prolongation of half relaxation time and trends toward increased tetanic peak force and peak calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 show mixed statistical support. While half relaxation times show significant changes, the increases in peak force and calcium do not reach statistical significance despite showing trends. The sample size (n=3-4 mice) may be insufficient to detect these effects with adequate power. Additional replicates would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Effects of calcineurin A splicing on NFATC target gene expression. In FDB muscle with redirected calcineurin splicing, Myh1 showed significant change while Myh4 and Myh8 showed non-significant trends. Knockdown of Nfatc3 in C2C12 resulted in decreased Myh8 mRNA and a trend toward reduced Myh1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by RT-PCR data from both in vivo and in vitro experiments. The convergent results from redirected splicing (upregulation) and Nfatc3 knockdown (downregulation) support a causal relationship, though the effects are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Fetal calcineurin A isoforms have higher intrinsic phosphatase activity. The authors infer that fetal isoforms of Ppp3ca and Ppp3cb have intrinsically higher phosphatase activity than adult isoforms based on upregulation of NFATC target genes with redirected splicing in FDB muscle and downregulation upon Nfatc3 loss in C2C12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is an inference rather than a direct measurement. While the data on NFATC3 localization and target gene expression are consistent with increased phosphatase activity, direct biochemical measurement of phosphatase activity for fetal versus adult isoforms is needed to confirm this conclusion. Alternative explanations (e.g., altered substrate specificity, protein stability, or localization) have not been ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Overall conclusions about alternative splicing in postnatal muscle development. The study demonstrates that alternative splicing transitions during postnatal skeletal muscle development impact muscle physiology. The first 2 weeks after birth are particularly dynamic for both gene expression and splicing transitions. Calcium-handling functions are significantly enriched among alternatively spliced genes. Redirected splicing of calcineurin A to fetal isoforms slows muscle relaxation, promotes Nfatc3 nuclear localization, and affects expression of Nfatc transcription targets, demonstrating previously unknown isoform specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 represent the main conclusions of the study and are well-supported by the collective evidence from RNA-seq, functional assays, and mechanistic studies. The demonstration of functional consequences for calcineurin A splicing provides proof-of-principle that alternative splicing transitions have physiological importance during postnatal muscle development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on postnatal skeletal muscle development. The introduction establishes that there is a 50-fold increase in body weight during murine postnatal development (50% from skeletal muscle), myofiber number remains constant after birth, satellite cells decrease from 11% to 3% of nuclei between PN14 and week 17, tibialis anterior cross-sectional area increases 7-fold with 5-fold increase in force from PN1 to PN28, there is a 6-fold size-independent increase in intrinsic function, T-tubules and sarcoplasmic reticulum mature within 3 weeks, muscles switch from slow to fast fibers, and fast/slow fibers have different calcium concentrations (30 nM vs 50-60 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are background information supported by citations to prior literature. These establish the context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on alternative splicing. The introduction notes that 95% of human intron-containing genes are alternatively spliced, the majority of alternative splicing is not conserved, but tissue-specific or developmentally regulated alternative exons show high conservation suggesting functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are background information from prior literature establishing the context for studying alternative splicing. These are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

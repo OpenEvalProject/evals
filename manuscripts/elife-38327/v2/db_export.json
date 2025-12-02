@@ -1,0 +1,1724 @@
+{
+  "submission": {
+    "id": "7b6507d7-6f9f-4c35-b680-8b0ccb476c15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T02:06:07.071430Z",
+    "updated_at": "2025-12-02T02:06:07.071430Z"
+  },
+  "content": [
+    {
+      "id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "submission_id": "7b6507d7-6f9f-4c35-b680-8b0ccb476c15",
+      "content_type": "manuscript",
+      "content_text": "# Fizzy-Related dictates A cell cycle switch during organ repair and tissue growth responses in the Drosophila hindgut\n\n## Authors\n\n- Erez Cohen<sup>1</sup> ([ORCID: 0000-0003-2390-3707](https://orcid.org/0000-0003-2390-3707))\n- Scott R Allen<sup>1</sup> ([ORCID: 0000-0002-4809-0493](https://orcid.org/0000-0002-4809-0493))\n- Jessica K Sawyer<sup>2</sup>\n- Donald T Fox<sup>1</sup> ([ORCID: 0000-0002-0436-179X](https://orcid.org/0000-0002-0436-179X)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Duke University School of Medicine Durham United States\n2. Department of Pharmacology & Cancer Biology Duke University School of Medicine Durham United States\n3. Regeneration Next Initiative Duke University School of Medicine Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPloidy-increasing cell cycles drive tissue growth in many developing organs. Such cycles, including endocycles, are increasingly appreciated to drive tissue growth following injury or activated growth signaling in mature organs. In these organs, the regulation and distinct roles of different cell cycles remains unclear. Here, we uncover a programmed switch between cell cycles in the Drosophila hindgut pylorus. Using an acute injury model, we identify mitosis as the response in larval pyloric cells, whereas endocycles occur in adult pyloric cells. By developing a novel genetic method, DEMISE (Dual-Expression-Method-for-Induced-Site-specific-Eradication), we show the cell cycle regulator Fizzy-related dictates the decision between mitosis and endocycles. After injury, both cycles accurately restore tissue mass and genome content. However, in response to sustained growth signaling, only endocycles preserve epithelial architecture. Our data reveal distinct cell cycle programming in response to similar stimuli in mature vs. developmental states and reveal a tissue-protective role of endocycles.\n\n## Introduction\n\nThroughout development, cell cycle regulation is altered to build tissues and organs. Examples include the lack of gap phases to rapidly increase cell number in embryos of many species (Edgar and O'Farrell, 1990; Graham and Morgan, 1966; McKnight and Miller, 1977; Newport and Kirschner, 1982), ploidy-reducing meiotic divisions to produce haploid gametes (Kleckner, 1996), or ploidy-increasing cycles that enable rapid post-mitotic tissue growth (Calvi, 2013; Fox and Duronio, 2013; Hua and Orr-Weaver, 2017; Edgar et al., 2014).\n\nAfter development is completed, a diversity of cell cycle regulation is also found in mature adult tissues during injury repair. In many stem cell-based tissues, or in highly regenerative organs/organisms, mitotic cell cycles restore pre-injury cell number and size (Jiang et al., 2009; Mascr\u00e9 et al., 2012; Mauro, 1961; Poss et al., 2002; Ryoo et al., 2004; Yan et al., 2012). In contrast, we and others previously defined injury responses in the adult Drosophila hindgut and abdomen, tissues that lack mitotic divisions (Fox and Spradling, 2009; Losick et al., 2013; Sawyer et al., 2017). In these adult tissues, injury leads to an increase in cellular ploidy through endocycles (G/S cycles without M phase, see cell cycle nomenclature section of Materials\u00a0and\u00a0methods). These Drosophila responses have clear parallels in the hypertrophic tissue injury repair of mammals. Injured mammalian hearts alter their cell cycle programming from mitotic to ploidy-increasing cell cycles during defined periods in development (Porrello et al., 2011). As a result, cardiac cells typically undergo hypertrophy instead of hyperplasia in response to injury or sustained tissue growth signals such as from the Ras/Raf pathway (Hunter et al., 1995; Porrello et al., 2011; Wu et al., 2011; Yu et al., 2015). In the liver, injury can cause either mitotic or ploidy-increasing cell cycle responses (Gentric et al., 2015; Miyaoka et al., 2012; Nagy et al., 2001). Recently, the mouse kidney was discovered to endocycle in response to acute injury (Lazzeri et al., 2018). Thus, both during development and in post-development injury contexts, diverse cell cycle responses can occur.\n\nLittle is known about the molecular programming or functional consequence of distinct cell cycles used in injured adult tissues. One technical limitation to studying this question is the ability to conduct carefully targeted injury experiments while simultaneously performing genetic studies. Here, we introduce a new system termed Dual-Expression-Method-for-Induced-Site-specific-Eradication (DEMISE), which enables us to finely control and independently manipulate both injury and genetics in our system. Using this system, we uncover developmental regulation and functional differences between two injury-induced cell cycle programs in the Drosophila hindgut pyloric epithelium.\n\nThe pyloric epithelium is the only segment of the hindgut to persist throughout the lifespan of the fly. Taking advantage of this persistence, we uncover that when injured the same way, pyloric cells undergo mitotic cycles in larvae but undergo endocycles in mature adults. Further, using this tissue model and our new genetic system, we demonstrate that active inhibition of mitotic cyclins by the conserved Anaphase Promoting Complex/Cyclosome (APC/C) regulator Fizzy-related (Fzr) underlies the alteration in injury-induced cell cycle programs in the pyloric epithelium. We identify that by blocking entry into mitosis, Fzr-mediated endocycles protect the adult pylorus against disruptions in epithelial architecture and permeability under conditions of sustained tissue growth signaling. Together, our results suggest that in some mature tissues, endocycles may represent a tradeoff between loss of regenerative capacity and preservation of tissue architecture.\n\n## Results\n\n### Drosophila hindgut pyloric cells accurately replace lost genome content using two developmentally distinct responses\n\nWe previously demonstrated that the adult Drosophila hindgut pyloric epithelium (hereafter- pyloric cells) provides an accessible model to study tissue injury repair through endocycles (Fox and Spradling, 2009; Losick et al., 2013; Sawyer et al., 2017). Unlike many adult intestinal cells, pyloric cells are also a constituent segment of the larval hindgut. During metamorphosis, pyloric cells act as facultative progenitor cells, as they remodel the hindgut by undergoing mitotic cell division to both expand the larval pylorus into its adult form while also producing cells of the adult ileum, which replace the histolysed larval ileum (Figure 1A, Fox and Spradling, 2009; Robertson, 1936; Sawyer et al., 2017; Takashima et al., 2008). Thus, pyloric cells are capable of distinct cell cycles- mitotic cycles during organ remodeling (at metamorphosis) and endocycles during tissue injury repair (at adulthood).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of pyloric development. (B) Experimental injury scheme (see Results and Materials and methods). Numbers 1 and 2 are referenced in the text. (C\u2013F) Adult pylori. Anterior boundary marked by wg-LacZ (magenta), posterior boundary marked by Vha16-GFP (green), and nuclei (DAPI, white). Yellow box highlights the region shown in the adjacent high magnification inset (C\u2019,D\u2019,E\u2019). (C\u2013C\u2019) Uninjured adult pylorus. (D\u2013D\u2019) Injured L3 recovered to adult (E\u2013F). Adult pylorus injured for 24 hr (E\u2013E\u2019) or 48 hr (F) and recovered for 5 days. (G\u2013H) Quantification of pyloric ploidy (G) and cell number (H). (I) Quantification of pyloric total genome content. (J) Model of larval vs adult recovery from injury. For panels (G\u2013I) data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a05 animals, at least two replicates. ANOVA, Dunnett\u2019s multiple comparisons. Scale bars (C,D,E) 50 \u00b5m, (C\u2019,D\u2019,E\u2019,F\u2019) 5 um.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013D\u2019) Larval and adult pylori.\u00a0Cell death (TUNEL, green) and nuclei (DAPI, white). (A\u2013A\u2019) Uninjured larva. (B\u2013B\u2019)\u00a016 hr larval injury. (C\u2013C\u2019) Uninjured Adult. (D\u2013D\u2019) 24 hr adult injury. (E) Quantification of surviving larval pyloric cells\u00a0\u00b1\u00a0injury. Data represent mean\u00a0\u00b1\u00a0SEM N\u22655 animals, at least two replicates. Unpaired two-tailed t-test. (F\u2013G\u2019\u2019\u2019) Adult pyloric cells following injury and recovery. Membranes (FasIII, green) and nuclei (DAPI, magenta). Yellow outline highlights single cell membrane. (F) Uninjured. (F\u2019) Larval injury. (G) 12 hr adult injury. (G\u2019) 24 hr adult injury. (G\u2019\u2019) 36 hr adult injury. (H\u2013I) Quantification of single cell area in adults\u00a0\u00b1\u00a0injury as larvae (H) or adults (I). For panels (E,H,I) data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a04 animals, at least two replicates. Unpaired two-tailed t-test (E,H) and ANOVA with Dunnett\u2019s multiple comparison test (I). Scale bars (A\u2013D) 10 \u00b5m, (F\u2013G\u2019\u2019) 5 \u00b5m.\n\nWe tested two possible models for the difference in pyloric cell cycle programs. In one model, pyloric cell cycle program is dictated by the stimulus: that\u00a0is, induced apoptotic injury promotes endocycles while developmental gut histolysis promotes cell division. In a second alternative model, developmental status of the pylorus may solely govern cell cycle status, regardless of the type of injury. To distinguish between these possibilities, we injured the larval pylorus at the last developmental stage before metamorphosis (wandering third larval instar, L3) and allowed the animals to progress to adulthood. For tissue injury, we used temporal and spatial control of the pro-apoptotic genes head involution defective (hid) and reaper (rpr), as before (Materials and methods, Figure 1B, \u20181\u2019, Fox and Spradling, 2009; Losick et al., 2013; Sawyer et al., 2017). As a comparison, we injured adult pyloric cells using the same scheme (Figure 1B, \u20182\u2019). In both cases, we confirmed that our injury protocol causes pyloric cell death (Figure 1\u2014figure supplement 1A\u2013E). To clearly demarcate the recovered pylorus, we used reporters of pyloric boundaries (Figure 1C\u2013E). We then compared adult flies recovered from either larval or adult injury to identify any differences in the mode of pyloric recovery.\n\nWhile animals recovered from both larval and adult injury show no obvious defects in recovery of pyloric tissue mass, the response to larval and adult injury is strikingly different. When compared against uninjured animals (Figure 1C\u2013C\u2019), adult pyloric cells recovered from a larval injury (Figure 1D\u2013D\u2019) show no change in cell ploidy and remain diploid (Figure 1G). Additionally, larval injury does not change the number or size of cells recovered in adults (Figure 1H, Figure 1\u2014figure supplement 1F\u2013F\u2019,H). The ability to produce an adult gut of normal cell number and ploidy was impressive given that we eliminated a high percentage of larval pyloric cells by injury (Figure 1\u2014figure supplement 1E). In contrast, comparable injury to the adult pylorus persistently increases ploidy, decreases cell number, and increases cell size, as we previously reported (Figure 1E,G,H, Losick et al., 2013). However, it remained possible that the number of surviving cells following tissue injury dictates the pyloric response. To test this idea, we took advantage of the ability to finely tune injury level in our system (Materials and methods) and used varying durations (12\u201348 hr) of apoptotic gene expression to produce a linear decrease in cell survival (Figure 1F,H). Regardless of the severity of adult injury, cell number does not recover, whereas cell ploidy and cell size increases (Figure 1F,G, Figure 1\u2014figure supplement 1G\u2013I). Thus, developmental stage and not injury severity dictates the pyloric cell cycle response.\n\nOur quantitation of adult pyloric ploidy after injury revealed a proportional tissue injury response- ploidy increases closely track with the degree of cell number loss (Figure 1G\u2013H, R2\u00a0=\u00a00.97, p<0.002). These results suggested that regardless of developmental stage, the pylorus remains capable of closely replacing the number of genomes lost to injury. To test this model, we quantified the total genome content per pylorus (number of cells x ploidy) following injury recovery (Materials and methods). Our data show that regardless of injury severity or developmental stage, the pre-injury pyloric total genome content is fully recoverable (Figure 1I). These results indicate that through developmentally distinct cell cycle injury responses, the pylorus accurately restores genomic content in proportion to the injury stimulus (Figure 1J).\n\n### Distinct cell cycle programs underlie the distinct pyloric injury responses\n\nWe next analyzed the cell cycle responses of the two distinct pyloric injury recovery modes. Our cell ploidy and cell number quantitation suggest that larval pyloric cells are capable of producing new cells to regenerate the injured gut during metamorphosis, whereas adult pyloric cells have lost this regenerative ability. To assess this, we first traced the lineage of uninjured and injured larval hindgut cells during metamorphosis (Figure 2A, Figure 2\u2014figure supplement 1A). We previously used a low-background, low-frequency clonal marking system to demonstrate that single larval pyloric cells produce, on average, either\u00a0~5 adult pyloric cells or two adult ileal cells during metamorphosis, and afterwards cease to divide (Fox and Spradling, 2009). We reproduced these data in uninjured animals (Materials and methods, Figure 2C, Figure 2\u2014figure supplement 1B\u2013E). By comparison, in adults recovered from larval injury, clone size increases by\u00a0~3 fold on average (Figure 2D\u2013D\u2019, G,H, uninjured: 5.389\u00a0\u00b1\u00a00.5725 SEM, injured: 16.54\u00a0\u00b1\u00a01.863 SEM, p<0.0001). Our clonal data coupled with our cell counts suggest that approximately 75% of larval cells were eliminated using our injury protocol and were then recovered by compensatory proliferation. Clone size in the ileum also increases in response to injury, consistent with the model that these cells derive from the larval pylorus (Figure 2\u2014figure supplement 1C\u2013E). Further, these data show that remaining larval pyloric cells (approximately 25%) have the capability of increasing their mitotic capacity to completely regenerate the adult hindgut pylorus and ileum following acute injury.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Schematic of clone and injury induction in larvae (A) and adults (B). (C\u2013F\u2019) Clones in adult pylori. Clones (LacZ, green) and nuclei (DAPI, magenta). Yellow box highlights the region shown in the adjacent high magnification inset (C\u2019,D\u2019,E\u2019, F\u2019). (C\u2013D\u2019) Clones induced at L3 stage without injury (C\u2013C\u2019) or with injury (D\u2013D\u2019). (E\u2013F\u2019) Clones induced at adult stage without injury (E\u2013E\u2019) or with injury (F\u2013F\u2019). (G) Quantification of pyloric clone size\u00a0\u00b1injury. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a013 clones per condition,\u226513 animals per condition, at least two replicates. Unpaired two-tailed t-tests. (H) Fold change in clone size. (I\u2013K\u2019) Fly-FUCCI animals expressing GFP-E2F1_1\u2013230 (green), RFP-CycB_1\u2013266 (magenta) and nuclei (DAPI, white). (I\u2013I\u2019) Fly-FUCCI in the larval pylorus. (J) Cell cycle stages in larval pyloric cells. Yellow hash marks cell outline. (K\u2013K\u2019) Fly-FUCCI in the adult pylorus. (L) Model of cell cycle utilized by larvae vs adults after injury. Scale bars (C,D,E,F,I,K) 50 \u00b5m, (C\u2019,D\u2019,E\u2019,F\u2019,J)\u00a0=10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Clonal induction system used (see Materials and methods).\u00a0(B) Quantification of clones induced per animal. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a010 animals, at least two replicates. Unpaired, two-tail t-test. (C\u2013D\u2019) Adult ileum with clones induced at larval stage, with (D\u2013D\u2019) or without (C\u2013C\u2019) injury. Clones (LacZ, green), nuclei (DAPI, magenta). Yellow boxes highlight the region shown in adjacent high magnification insets. (E) Quantification of clone size in (C\u2013D\u2019). (F\u2013G\u2019) Adult ileum with clones induced at adult stage, with (G\u2013G\u2019) or without (F\u2013F\u2019) injury, labeling as in (C\u2013D\u2019). (H) Quantification of clone size in (F\u2013G\u2019). (I) PH3 staining (green) of Nuclei (DAPI, magenta) in the uninjured larval pylorus. (J\u2013K) Nuclei (DAPI, magenta) and EdU incorporation (green) in injured larval (J) and injured adult (K). Yellow arrows point to EdU incorporating pyloric cells. For (E\u2013H), data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a060 clones, N\u00a0\u2265\u00a010 animals, at least two replicates. Unpaired, two-tail t-test. Scale bars (C,D,F,G) 100 \u00b5m, (C\u2019,D\u2019,F\u2019,G\u2019) 10 \u00b5m, (I,J,K) 50 \u00b5m.\n\nIn contrast to larvae, inducing clones in adult pylori (Figure 2B) produces only single labeled cells (27/27 clones, Figure 2E). Our marking system does not require a cell division to generate single-labelled cells (Figure 2\u2014figure supplement 1A). Using this system, we did not see any expansion of single labeled cells into mitotic clones even after 20\u201330 days of recovery from a severe injury (Figure 2F\u2013H, uninjured: 1.00\u00a0\u00b1\u00a00 SEM, injured: 1.07\u00a0\u00b1\u00a00.07 SEM, p=0.99 and Figure 2\u2014figure supplement 1F\u2013H). In further support of our lineage data, the M-phase marker Phospho-Histone H3 (PH3) does not label adult pyloric cells (data not shown, Fox and Spradling, 2009; Sawyer et al., 2017), while it frequently labels larval pyloric cells (Figure 2\u2014figure supplement 1I). However, both larvae and adult pyloric cells incorporate the S-phase marker EdU following injury (Figure 2\u2014figure supplement 1J,K). Taken together, our cell cycle marker, lineage, and cell ploidy/number quantitation show that only larval pyloric cells divide while adult pyloric cells instead endocycle after injury.\n\nHaving determined the two distinct post-injury pyloric cell cycle responses, we next analyzed the pre-injury cell cycle status of both larval and adult pyloric cells. For this analysis, we used the Fly Fluorescent Ubiquitin-based Cell Cycle Indicator (Fly-FUCCI) system (Zielke et al., 2014). In the pylorus of uninjured larvae, the FUCCI components E2F11-230-GFP and Cyclin B1-266-mRFP are expressed in patterns consistent with the presence of G1, S, and G2/M cells (Figure 2I\u2013J). Coupled with our M phase data (Figure 2\u2014figure supplement 1I), we find that both before and after injury, larval pyloric cells undergo mitotic cycles, although injury leads to additional rounds of mitotic cycles (Figure 2L). In contrast, 100% of uninjured adult pyloric cells are E2F11-230-GFP positive and Cyclin B1-266-mRFP negative (Figure 2K), indicative of a quiescent/arrested G0/G1 state of these cells prior to their entry into injury-activated endocycles. Thus, pyloric injury at distinct developmental stages induces distinct cell cycle changes (Figure 2L).\n\n### DEMISE, a new method for dual control of site specific genetic ablation and transgene expression\n\nHaving identified developmental stage as a determinant of the distinct pyloric cell cycle injury responses, we next sought to identify molecular regulation of these responses. Our apoptotic injury system takes advantage of the temperature sensitive Gal80ts repressor to control Gal4-mediated expression of apoptotic genes (Brand and Perrimon, 1993; McGuire et al., 2004). While this enables fine control over the developmental stage, tissue location, and degree of injury, it also prevents use of the numerous Gal4-mediated gene knockdown tools such as the large collection of transgenic UAS-RNAi and now CRISPR lines (Dietzl et al., 2007; Lin et al., 2015; Ren et al., 2013; Wu et al., 2011). This is because any transgene-expressing cell would be dead using our standard apoptotic method. An ideal system would instead allow for separate control over injury and transgene expression.\n\nWe thus developed such a system, which we term DEMISE (Dual-Expression-Method-for-Induced-Site-specific-Eradication). DEMISE combines the Gal4/Gal80ts and FLP/FRT systems to induce developmentally-timed, tunable tissue-specific injury in a mosaic fashion while independently expressing any UAS-driven transgene of interest in the same tissue. Compared to our previous injury system, DEMISE adds an FRT-Stop-FRT cassette between a UAS promoter and the apoptotic rpr gene (Figure 3A). Thus, cell death and transgene expression are still under control of a tissue-specific Gal4 and temperature inactivation of Gal80ts (Figure 3A\u2019) but cell death also requires FLP-mediated removal of the Stop cassette. Temporal control of injury, as well as injury strength, is then achieved by timing expression of FLP under heat shock (hs) control (Figure 3A\u2019\u2019). In parallel, Gal4/Gal80ts drives expression of a transgene of interest independent of FLP-mediated cell death (Figure 3A\u2019,A\u2019\u2019). The result is that all cells of a given tissue can express a transgene (such as a gene knockdown RNAi), while a fraction of these cells (determined by degree of FLP induction) will be eliminated by injury (Figure 3A\u2019\u2019\u2019). This experimental design enables one to use the vast UAS-driven Drosophila transgene collection while also inducing a precise injury.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013A\u2019\u2019\u2019) DEMISE method and components (see Results and Materials and methods). (B\u2013D) Adult pylori. Transgene expression marked by UAS-NLS GFP (green), cell death (TUNEL, magenta), and nuclei (DAPI, white). (B\u2013B\u2019) No transgene expression at 18C. (C\u2013C\u2019) Transgene expression and no injury at 29C. (D\u2013D\u2019) Transgene expression and injury following heat shock (37C). (E) Quantification of pyloric transgene expression at different DEMISE stages. N\u00a0\u2265\u00a05 animals. (F) Quantification of pyloric cell death following heat shock. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a05 animals, at least two replicates. Unpaired two-tailed t-test. Scale bars (B\u2013D\u2019) 10 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B, C, D)\u00a0Schematic of DEMISE experiment conditions for corresponding wing disc images on the right.\u00a0GFP expression (green), FLP expression (magenta), apoptosis (red). (A\u2019-A\u2019, B\u2019-B\u2019, C\u2019-C\u2019) Nuclei (DAPI, white), transgene expression (UAS-NLS GFP, green) and TUNEL staining (magenta) of imaginal discs during DEMISE stages. (A-A\u2019\u2019) no transgene or site-specific cell death at low temperature (18C). (B-B\u2019\u2019) Transgene expression but no injury, in a site-specific manner in the engrailed region. (C-D) Heat shock activates mosaic injury within the engrailed region. (D\u2019) Quantification of TUNEL+ nuclei within the en\u00a0>Gal4 region before and after heat shock. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a05 animals, at least 2 replicates. Unpaired two-tail t-test. Scale bars 50 \u00b5m.\n\nTo test the efficacy of DEMISE, we generated a series of UAS-FRT-Stop-FRT-reaper insertions in the Drosophila genome (Materials and methods). We identified FLP/DEMISE combinations with both low background cell death (lack of leaky Stop cassette excision) along with robust apoptosis induction upon heat shock (Table 1). We began by examining larval wing imaginal discs, a frequently used model to study tissue regeneration in response to apoptotic injury (Halme et al., 2010; Harris et al., 2016; Smith-Bolton et al., 2009). We drove DEMISE expression in the posterior wing disc compartment with engrailed (en)\u00a0>\u00a0Gal4. Using temperature shifts and a UAS-GFP reporter, transgene expression is induced in the expected pattern (Figure 3\u2014figure supplement 1A\u2013C). Our transgene expression conditions do not induce cell death, as assayed by TUNEL (Figure 3\u2014figure supplement 1B). However, upon heat shock to induce FLP expression, robust cell death occurs in a mosaic pattern specifically in the engrailed domain (Figure 3\u2014figure supplement 1C\u2013D, Materials and methods).\n\n**Table 1.**\n DEMISE combinations tested in the hindgut\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Flip-out reaper insertion</th>\n      <th>Genotype</th>\n      <th>[ry[+t7.2]=hsFLP]1</th>\n      <th>[ry[+t7.2]=hsFLP]12</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>UAS-rprFLPout 10\u20133</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/CyO #Insertion 10\u20133</td>\n      <td>Leaky</td>\n      <td>Not leaky (used in paper)</td>\n    </tr>\n    <tr>\n      <td>UAS-rprFLPout 9\u20131</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/TM3Sb #Insertion 9\u20131</td>\n      <td>Leaky</td>\n      <td>Not leaky</td>\n    </tr>\n    <tr>\n      <td>UAS-rprFLPout 5\u20131</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/TM3Sb #Insertion 5\u20131</td>\n      <td>Leaky</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-rprFLPout 4\u20131</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/TM3Sb #Insertion 4\u20131</td>\n      <td>Not leaky</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UAS-rprFLPout 10\u20131</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/CyO #Insertion 10\u20131</td>\n      <td>Leaky</td>\n      <td>Leaky</td>\n    </tr>\n    <tr>\n      <td>UAS-rprFLPout 10\u20132</td>\n      <td>pUAST-FRT-STOP-FRT-rpr/TM3Sb #Insertion 10\u20132</td>\n      <td>Leaky</td>\n      <td>Leaky</td>\n    </tr>\n  </tbody>\n</table>\n\nWe then returned to the hindgut system and performed similar transgene expression controls (Figure 3B\u2013D). Again, using our most efficacious DEMISE/FLP combination in the hindgut, we can achieve a low background level of cell death (Figure 3C,D,F), followed by robust induction of cell death upon heat shock that occurs independently of transgene expression (Figure 3C\u2013F, Materials and methods). Our results establish DEMISE as a new method for inducing temporal and site-specific injury while maintaining independent control of transgene expression.\n\n### DEMISE reveals fizzy-related as a regulator of injury-mediated cell cycle programming\n\nAfter establishing DEMISE as a novel system to study molecular regulators of injury responses, we sought to identify genes that dictate which pyloric cell cycle program is induced by injury. Our pre-injury FUCCI data (Figure 2I\u2013K) provided a potential clue, as larval but not adult uninjured pyloric cells co-express the GFP-E2F11-230 and RFP-CycB1-266 FUCCI reporters, indicative of a G2/M state (Zielke et al., 2014). This led us to hypothesize that inhibition of mitotic cyclins in the adult pylorus may prevent entry into mitotic cycles after injury. Fizzy-related (Fzr), the Drosophila homolog of mammalian FZR1/CDH1, is a binding partner of the APC/C, which facilitates degradation of mitotic cyclins including Cyclin B. Fzr is also a well-known regulator of the endocycle in many cell types (Lehner and O'Farrell, 1989; Schaeffer et al., 2004; Sigrist and Lehner, 1997; Stormo and Fox, 2016) and fzr mutant cells can ectopically undergo mitotic cycles instead of endocycles (Schaeffer et al., 2004; Schoenfelder et al., 2014; Sigrist and Lehner, 1997). Thus, increased fzr expression in the adult pylorus is a plausible mechanism for the altered injury responses we observe.\n\nWe first asked whether fzr is upregulated in the adult pylorus. Indeed, using two independent fzr enhancer traps, fzr expression is high in the adult pylorus, whereas fzr is undetectable in the larval pylorus (Figure 4A\u2013B\u2019, Figure 4\u2014figure supplement 1L\u2013M\u2019). We next asked if elimination of fzr is sufficient to revert the adult pyloric injury response (endocycles) to the larval injury response (mitotic cycles). Using DEMISE, we expressed fzr RNAi in the hindgut throughout development (Figure 4C). Without injury, fzr knockdown did not noticeably alter hindgut development with the exception of the rectal papillae, where we previously identified a role for fzr in the pre-mitotic endocycles (Schoenfelder et al., 2014, Figure 4\u2014figure supplement 1A\u2013B). Following apoptotic injury induction, both control and fzr RNAi-expressing animals contain both TUNEL positive nuclei and pycnotic nuclei (Figure 4D\u2013F), which are more prevalent at the anterior pylorus as previously described (Fox and Spradling, 2009; Sawyer et al., 2017). Further, lack of fzr does not alter the number of adult pyloric cells entering the cell cycle as seen by BrdU staining (Figure 4\u2014figure supplement 1C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B\u2019) Expression of the fzrG0418 enhancer trap (LacZ expression, green or grey), nuclei (DAPI, magenta) in uninjured larval pylorus (A\u2013A\u2019) or adult pylorus (B\u2013B\u2019). Yellow dashed line marks pyloric boundaries. (C) Schematic of DEMISE, apoptosis (red) and fzr RNAi expression (green). (D\u2013E) Adult pylori. Cell death (TUNEL, green) and nuclei (DAPI, magenta). (D) Injury only (E) injury\u00a0+fzr RNAi. (F) Quantification of pyloric cell death\u00a0\u00b1fzr RNAi. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a05 animals, at least two replicates. ANOVA with Tukey\u2019s multiple comparisons. (G\u2013H) Pyloric nuclei (DAPI, white) after injury and 5 days recovery. (G) injury only. (H) Injury\u00a0+\u00a0fzr RNAi. (I) Quantification of pyloric cell number after 5 days recovery. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a05 animals, at least two replicates per condition. ANOVA with Dunnett\u2019s multiple comparisons. (J) Quantification of pyloric ploidy after 5 days recovery. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a04 animals, at least two replicates. Unpaired two-tailed t-test. (K\u2013L\u2019\u2019\u2019) Injured adult pylori. PH3 (green), Centrosomin (red), and nuclei (DAPI, magenta). Dashed line indicates pyloric boundaries. (K) Injury only (L) Injury\u00a0+\u00a0fzr RNAi. Yellow boxes highlight the region shown in adjacent high magnification insets (L\u2019\u2013L\u2019\u2019). (M) Proposed model for the role of APC/Fzr(Cdh1) in regulation of injury cell cycle responses. Scale bars (D,E) 20 \u00b5m, (G,H) 5 \u00b5m, (K,L) 50 \u00b5m (L\u2019\u2013L\u2019\u2019\u2019) 2 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013A\u2019) Rectal papillae, nuclei (DAPI, magenta) and Moesin-GFP (green) in control (A) and fzr RNAi (A\u2019).\u00a0(B\u2013B\u2019) Pyloric nuclei staining (DAPI, white) of uninjured control (B) and fzr RNAi (B\u2019). (C) Quantification of BrdU+ cells following adult injury in the absence or presence of fzr RNAi. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0\u2265\u00a03 animals, at least two replicates. Unpaired, two-tail t-test. (D\u2013E) Nuclei (DAPI, magenta), and EdU incorporation (green) in injured pylori of control (D) or fzr RNAi. (E). Corresponding insets highlight representative examples of EdU patterns from single cells. (F\u2013G) The transcription factor Hindsight (green), is not expressed in pyloric nuclei (DAPI, magenta) before (F) or after (G) injury. (H\u2013I) Pyloric nuclei (DAPI, white) of animals expressing a dominant-negative form of Notch throughout metamorphosis does not visibly alter pyloric morphology in uninjured (H) or injured animals (I). (J\u2013K) Rectal papillae (false color, green) and nuclei (DAPI, magenta) in uninjured control(J) or Notch dominant negative animals (K) (L\u2013M\u2019) fzrG0326 transcription reporter (LacZ, green or grey), nuclei (DAPI, magenta) in uninjured larval pylorus (L\u2013L\u2019) or adult pylorus (M\u2013M\u2019). (N\u2013O) DNA fluorescent in-situ hybridization for repetitive satellite region (AACAC(n), green) and nuclei (DAPI, magenta) in uninjured adults (N) and severely injured adults (O). Scale bars (A\u2013B) 50 \u00b5m (D,E) 10 \u00b5m, insets 2 \u00b5m (F\u2013G) 20 \u00b5m (H\u2013K) 50 \u00b5m, (L\u2013M\u2019) 50 \u00b5m, (N\u2013O) 25 \u00b5m.\n\nStrikingly, following 5 days of recovery from adult injury, the adult pylorus of fzr flies completely restores pre-injury cell number and ploidy (Figure 4G\u2013J). Further, during injury recovery, mitotic cells are visible in the adult fzr pylorus (5/7 animals), but not in control animals (0/17 animals, as assayed by PH3 and the centrosomal marker Centrosomin- Cnn, Figure 4K\u2013L\u2019\u2019\u2019). We noted one additional cell cycle alteration in fzr animals. Endocycles frequently exhibit under-replication of late-replicating sequences, which in Drosophila cluster in a DAPI \u2018bright-spot\u2019 (Belyaeva et al., 1998; Endow and Gall, 1975; Fox and Duronio, 2013; Gall et al., 1971; Nordman et al., 2011; Schoenfelder and Fox, 2015; Edgar et al., 2014). In control adults, pyloric cells undergoing injury-induced endocycles only exhibit early replication patterns (as assayed by BrdU, Figure 4\u2014figure supplement 1D), consistent with the S-phase pattern of many endocycling cells that undergo under-replication. In agreement with this idea, DNA FISH shows that a satellite DNA repeat that is commonly under-replicated in endocycling cells (Endow and Gall, 1975) does not increase in intensity in proportion to the obvious nuclear size increase induced by adult pyloric injury (Figure 4\u2014figure supplement 1N\u2013O). In contrast, fzr animals instead exhibit both early and late-S patterns after injury (Figure 4\u2014figure supplement 1E). This pattern suggests that fzr loss may also enable progression through late S-phase, possibly due to a role for the fzr target cyclin A in promoting late replication (SalleSall\u00e9 et al., 2012). Taken together, we find the two distinct injury-induced cell cycle programs in the pylorus are dictated by the action of Fzr, a conserved negative regulator of mitotic cyclins (Figure 4M).\n\nPrevious work on developmentally programmed switches from mitotic cycles to endocycles in Drosophila follicle cells also implicated a role for Fzr (Schaeffer et al., 2004). In this context, fzr is regulated upstream by Notch signaling and its transcriptional target Hindsight. Further, Notch frequently promotes endocycles in development and in adult tissue homeostasis (Deng et al., 2001; Guo and Ohlstein, 2015; Von Stetina et al., 2018). Therefore, we sought to determine if Notch is also used in an acute injury context to regulate the pyloric cell cycle program. Either with or without injury, adult pyloric cells do not express Hindsight, suggesting that this Notch target is not involved in the pyloric cell cycle injury response (Figure 4\u2014figure supplement 1F\u2013G). Further, expressing dominant negative Notch receptor throughout pupation using DEMISE does not prevent injury-mediated endocycles in the adult pylorus (Figure 4\u2014figure supplement 1H\u2013I), despite the fact that we observe expected Notch phenotypes in the rectal papillae (Figure 4\u2014figure supplement 1J\u2013K, Fox et al., 2010; Schoenfelder et al., 2014). Thus, unlike previous studies on developmental endocycles, our results suggest a Notch-independent, fzr-dependent alteration in injury cell cycle responses in the Drosophila pylorus.\n\n### Endocycles preserve intestinal architecture in response to sustained tissue growth signaling\n\nOur studies of fzr animals showed that the normally diploid adult pylorus is primed to endocycle rather than maintain cellular ploidy under injury conditions. Both mitotic cycles and endocycles are capable of restoring pre-injury genome number throughout the tissue. This raises the question of whether there are any benefits to the switch away from mitosis and towards endocycles following cell cycle re-entry in the adult pylorus. One possibility that we considered is that, in response to pro-growth signaling, endocycles may be better at preserving tissue architecture than mitotic cycles. Activation of the pro-growth signaling Ras pathway, which is well-known to drive cell number increases in many contexts, is also linked to ploidy increases in cardiac tissue in flies and mammals (Hunter et al., 1995; Wu et al., 2011; Yu et al., 2015). We thus examined if constitutive activation of the small GTPase Ras (RasV12) could be used as an experimental tool to ask whether a tissue undergoing endocycles or mitotic cycles responds differently under conditions of sustained tissue growth signaling.\n\nUsing similar methods to our injury induction protocol (Figure 5A), we expressed RasV12 in larvae and then examined the resulting adults (Figure 5B, \u20181\u2019). The pylorus of these animals is extremely expanded in size (Figure 5C,D). Cell number counts and size measurements show that larval RasV12 expression nearly triples the adult pyloric cell number without a substantial change in nuclear size (Figure 5G,H). This larval RasV12 response parallels the mitotic cell cycle response to injury in larvae, with the exception of a tissue overgrowth phenotype, which is likely due to sustained RasV12 expression overriding normal growth suppression signals. We next drove RasV12 expression in the adult (Figure 5B, \u20182\u2019), again in the absence of injury. As with larval RasV12 expression, the adult pylorus expands in size following RasV12 expression (Figure 5C,E). However, and in parallel with our injury results, we observe no increase in cell number, while instead the nuclear size increases (Figure 5G,H). These data are consistent with RasV12 inducing endocycles in the mature adult pylorus. Thus, sustained growth signaling through RasV12 expression can be used to mimic both the larval and adult injury cell cycle responses found in the pylorus.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic and (B) experimental design of sustained growth signaling expression. Numbers 1\u20133 in (B) are referenced in the text. (C\u2013F) Adult pyloric nuclei (DAPI, white)\u00a0\u00b1RasVV12 expression. (C) No transgene expression. (D) 48 hr RasV12 expression at L3. (E) 6 days RasV12 expression in adults. (F) 6 days RasV12 expression in adults\u00a0+\u00a0fzr RNAi. (G\u2013H) Quantification of adult pyloric cell number (G) and nuclear area (H). Data represent mean\u00a0\u00b1\u00a0SEM. For adult induction, N\u00a0\u2265\u00a05 animals, at least two replicates. ANOVA with Dunnett\u2019s multiple comparisons; For larval induction, N\u00a0\u2265\u00a04 animals, at least two replicates. Unpaired two-tailed t-test. (I\u2013K) Adult pylorus lateral membranes highlighted by FasIII staining (white). Distinct Z-sections of the hindgut positions shown in each image are illustrated by a red line in an inset in the bottom left, where a black circle represents the hindgut epithelium. \u2018M\u2019 indicates midgut position. (I\u2013I\u2019) No transgene expressed. (J\u2013J\u2019) 14 days RasV12 expression in adults. (K\u2013K\u2019) 14 days RasV12 expression in adults\u00a0+\u00a0fzr RNAi. Yellow outline highlights distorted epithelia. (L) Quantification of % animals with epithelial distortions. Data represent mean\u00a0\u00b1SEM, N\u00a0=\u00a03 experiments, N\u00a0\u2265\u00a024 animals per condition. (M) Quantification of % animals with permeable epithelial barrier. Data represent mean\u00a0\u00b1\u00a0SEM, N\u00a0=\u00a03 experiments, N\u00a0\u2265\u00a027 animals per condition. ANOVA with Tukey\u2019s multiple comparisons. (N) Model of tissue architecture in conditions of sustained growth signaling. Scale bars (C\u2013F,I\u2013K\u2019) 50 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38327/elife-38327-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A,B)\u00a0Adult pylori, nuclei (DAPI, white).\u00a0Distinct Z-sections of the hindgut positions shown in each image are illustrated by a red line in an inset in the bottom left, where a black circle represents the hindgut epithelium. (A,A\u2019) No transgene control, with most epithelial cells found in a single plane. (B-B\u2019) RasV12, fzr RNAi, with numerous epithelial cells in multiple Z-planes, highlighting tissue architecture distortion. (C-C\u2019\u2019\u2019) RasV12, fzr RNAi nuclei (DAPI, white, C and C\u2019\u2019) and cell membranes (green, C\u2019 and C\u2019\u2019\u2019) of RasV12, fzr RNAi animals. Yellow hashed highlights large regions of distorted tissue architecture. (D) Quantification of pyloric surface area in adults expressing no transgene, RasV12 or RasV12 and fzr RNAi. Data represent mean\u00a0\u00b1\u00a0SEM. N\u00a0\u2265\u00a05 animals, at least two replicates. ANOVA with Tukey\u2019s multiple comparisons.\n\nWe next used RasV12 expression as a model to examine whether endocycles or mitotic cycles confer any tissue-level difference in the adult pylorus under conditions of prolonged tissue growth signaling. To ask this question, we compared RasV12 expressing adults to adults expressing both RasV12 and fzr RNAi (Figure 5B \u20183\u2019). As in our injury studies, fzr suppresses nuclear size expansion in RasV12 expressing adults (Figure 5C,F,H). These results are consistent with a requirement of fzr for RasV12-driven endocycles in this tissue. Further, the overall pyloric cell number increases\u00a0~20% above controls in fzr RNAi\u00a0+\u00a0RasVV12 animals, consistent with a role of fzr in preventing aberrant cellular hyperplasia in the adult pylorus (Figure 5C,E\u2013G).\n\nIn further examination of RasV12 vs. fzr RNAi\u00a0+RasVV12 animals, we noticed an important difference with regards to intestinal epithelial architecture. Normally, the pyloric epithelia consists of a single cylindrical layer surrounding the hindgut lumen (Figure 5I\u2013I\u2019\u2019,\u00a0Figure 5\u2014figure supplement 1A\u2013A\u2019). The tissue expansion caused by RasV12 expression does not substantially distort this epithelial architecture (Figure 5J\u2013J\u2019). In contrast, in fzr RNAi\u00a0+RasVV12 animals, we noticed severe recurring abnormalities. Specifically, 23.3% (\u00b13.3% SEM) of fzr RNAi\u00a0+RasVV12 animals examined show severe distortions of the intestinal epithelial architecture, either into or away from the intestinal lumen (Figure 5K\u2013K\u2019, L, Figure 5\u2014figure supplement 1B\u2013C\u2019\u2019\u2019). These distortions were not caused by increased tissue area in fzr RNAi\u00a0+RasVV12 animals, as adult pyloric area actually decreases in these animals relative to animals expressing RasV12 alone (Figure 5\u2014figure supplement 1D, see Discussion for proposed mechanism). One possible consequence of the altered intestinal epithelial architecture that we observe is a compromised epithelial barrier. We thus tested whether RasV12 and/or fzr RNAi expression alters intestinal barrier function. Using the well-established \u2018Smurf\u2019 assay (Rera et al., 2011; see Materials and methods) we observed that only fzr RNAi\u00a0+RasVV12 animals show substantial permeability of the epithelial barrier. We note that the frequency of fzr RNAi\u00a0+RasVV12 animals with a permeable epithelial barrier (17.33%\u00a0\u00b1\u00a03.18% SEM, Figure 5M) is very similar to the proportion of animals of this same genotype with epithelial architecture distortions (Figure 5L vs. M), implying that these defects may be related. Thus, under conditions of prolonged growth signaling, endocycles protect the pyloric epithelium against hyperplasia, distortions in epithelial lumen architecture, and gut barrier permeability (Figure 5N).\n\n## Discussion\n\nThe diversity of cell cycle programming in mature tissues in response to tissue stresses such as injury or ectopic growth signaling are increasingly appreciated (\u00d8vreb\u00f8 and Edgar, 2018). Here, we use Drosophila pyloric cells as a model to understand not only the regulation, but also the implications, of using two different cell cycle programs in an adult tissue subject to injury/growth signaling stress. Capitalizing on this simplicity and our development of DEMISE as a highly manipulatable tissue injury system, here we delineated developmental and molecular parameters that determine whether Drosophila pyloric cells undergo mitotic cycles or ploidy-increasing endocycles. We then extended our findings by demonstrating that ploidy-increasing endocycles protect the adult pylorus, a normally quiescent tissue, from hyperplastic growth and epithelial architecture disruption. These findings highlight a potential protective effect of polyploidization over mitosis in a post-developmental setting, one that we suggest may prevent disease in diverse injured organs.\n\n### Polyploidy as a recurring tissue injury response and tissue architecture preservation mechanism\n\nTo date, many studies have viewed ploidy increases following tissue injury as either maladaptive or neutral. In the vertebrate heart, ploidy increases cause organ hypertrophy and overgrowth (Gonz\u00e1lez-Rosa et al., 2018; Li et al., 1996; Senyo et al., 2013; Steinhauser and Lee, 2011), a disease phenotype that increases heart wall thickness while decreasing valve size (Bonow et al., 2011). Unlike the vertebrate heart, tissue overgrowth does not commonly occur in the injured mammalian liver, which undergoes differing degrees of hepatocyte ploidy increases upon injury. However, likely due to competing contributions from mitosis of diploid hepatocytes or from liver stem cells, as well as an inherent flexibility in the cell cycles used to regenerate the liver (Chen et al., 2012; Diril et al., 2012; Lazzeri et al., 2018; Miyaoka et al., 2012; Nevzorova et al., 2009; Pandit et al., 2012) a role for ploidy in the repairing liver remains unclear. Relative to other tissue models involving ploidy increases, the adult pyloric response is simpler, as it does not occur in parallel to cell-cell fusion (Losick et al., 2013; Losick et al., 2016), divisions of diploid stem cells (Lin et al., 2018; Wang et al., 2015) and does not occur in cells that are already programmed to become polyploid regardless of injury (Tamori and Deng, 2013). Using our simpler system, we were able to more directly ask whether polyploidy has any advantage in tissue repair and tissue overgrowth, or rather is an aberrant response to injury.\n\nOur work here suggests that polyploidy can represent a regulated and potential beneficial tissue injury response. First, using the simplicity of our system, we discovered that ploidy increases in the repairing pylorus are perfectly tuned to replace the pre-injury number of genomes. This result suggests that the number of post-injury endocycles is tightly regulated and can be responsive to injury severity. While diploid mitotic cycles replace pre-injury genomes in the larva, endocycles do the same in the adult. Further, reverting adult endocycles to mitotic cycles in the injured adult also leads to the correct number of pre-injury cells with no ploidy increase, suggesting that both mitotic cycles and endocycles are able to accurately replace lost tissue mass/genome content. Future work can determine whether endocycling is triggered by mechanical stress, as suggested by recent work in the repairing zebrafish epicardium (Cao et al., 2017). Additionally, it will be interesting to determine whether there is any advantage to skipping late S-phase replication during endocycles, which occurs in wild-type but not in fzr animals during repair. Our results also mirror findings in the injured Drosophila abdomen where ploidy matching was also observed. However, our analysis is not complicated by parallel cell-cell fusion events (Losick et al., 2016).\n\nSecond, using a RasV12 model, we present evidence that endocycles enable the pylorus to resist tissue malformation and permeability phenotypes under conditions of sustained tissue growth signaling. Our findings in the post-developmental pylorus may mimic the finding in developing glia of the Drosophila blood-brain barrier, in which endocycles preserve tissue integrity during growth (Unhavaithaya and Orr-Weaver, 2012; Von Stetina et al., 2018). As activated Ras/Raf signaling reproduces the injury responsive cell cycles in our system and in injured cardiac tissues, this model may suggest that endocycles are employed in some tissues to maintain epithelial integrity in the face of stresses such as injury or excess growth signaling. One form of tissue stress may come from cell shape changes during mitosis, which depend on regulated changes in cell adhesion (Kunda et al., 2008; Lancaster et al., 2013). Future work can determine if such mitotic shape changes are incompatible with preserving pyloric tissue architecture.\n\nWe note that the pylorus has a potentially important similarity to other tissues exhibiting injury-induced ploidy increases such as the mammalian heart, liver, and kidney: these tissues are all normally quiescent or exhibiting very low cell turnover. In such tissues, stem cell-based divisions are not quickly rejuvenating the cell population, and thus cells with de novo mutations (such as dominant Ras mutations) may accumulate during aging. As a result, these long-lived tissues may require a strategy to minimize mitosis of any cell. While such quiescent tissues are then less reliant on mitosis to restore tissue mass, they can still employ ploidy-increasing cycles to accomplish the same goal. In line with this idea, we note that of any organ, the heart has one of the lowest incidences of cancers (Bisel et al., 1953; Leja et al., 2011), and a recent study also showed a tumor-protective role of polyploidy in the liver (Zhang et al., 2017). Future work can determine whether tumor protection or preservation of epithelial integrity is a general property of tissues prone to injury- or growth signal-induced ploidy increases.\n\n### Developmental vs. stress-induced endoreplication\n\nOur results show that, while both injury-induced and developmental endocycles rely on Fzr, the upstream regulation in the injury context does not involve regulation of Notch, a well-known developmental endoreplication regulator in flies and mammals (Cornejo et al., 2011; Deng et al., 2001; Domanitskaya and SchupbachSch\u00fcpbach, 2012; Mercher et al., 2008; Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Poirault-Chassac et al., 2010; Shcherbata et al., 2004; Sun and Deng, 2007; Von Stetina et al., 2018). Future work in our system can determine what factors converge on fzr regulation and the control of entry into mitosis or endocycles following pyloric injury. One candidate is the ecdysone steroid hormone receptor, which peaks in activity during metamorphosis, close to when the pyloric cell cycle injury response changes. It is somewhat surprising that loss of fzr alone is sufficient to restore pyloric mitosis, as the cyclin dependent kinase 1 (Cdk1) activator Cdc25/String is often required (Schaeffer et al., 2004; Von Stetina et al., 2018). Thus, in the pylorus, Cdk1 may be primed for activity but is kept inactive without its cyclin binding partners, which are negatively regulated by high levels of APC/Fzr. More broadly, further study of the mechanisms that alter cell cycle programming after tissue injury may also improve therapeutic efforts to regenerate injured organs.\n\nAnother question raised by our work is whether there are functional benefits to the altered pyloric cell cycle injury response. As our data suggest, in the normally quiescent adult stage, induced cell proliferation may be more detrimental for tissue integrity than induced endocycles. However, building new tissues during intestinal development necessitates the use of cell division. For poorly understood reasons, the Dipteran intestine is completely remodeled during metamorphosis, and cell divisions from the pylorus are the source of the majority of new hindgut cells (Aghajanian et al., 2016; Bodenstein, 1950; Fox and Spradling, 2009; Robertson, 1936; Sawyer et al., 2017; Takashima et al., 2008). This need for wholescale organ remodeling necessitates the ability to divide during larval/early pupal stages. Once organ remodeling is complete, the pylorus, which lacks stem cells, then ceases to divide (Fox and Spradling, 2009; Sawyer et al., 2017). Our data suggest that at this point, high fzr levels prevent any future cell division. Following injury, there may be an increased negative regulation of mitotic entry, as we and others have shown that polyploid cell division causes genomic instability (Davoli et al., 2010; Duncan et al., 2010; Fox et al., 2010; Hassel et al., 2014; Schoenfelder et al., 2014; Storchov\u00e1 et al., 2006). Future work can determine if mitotic integrity is compromised during mitotic re-entry in the adult pylorus.\n\n### DEMISE- a versatile tool for tissue injury and cell death studies\n\nIn addition to the new tissue injury biology presented here, we also introduce DEMISE as a method for dual control over tissue injury and transgene expression. We show that this system is amenable to injury studies in the imaginal disc, a widely used tissue injury system (Harris et al., 2016; Smith-Bolton et al., 2009). Other tissues with injury responses that we have not tested but that would benefit from DEMISE as a tool include the stem cell-based midgut (Apidianakis and Rahme, 2009; Buchon et al., 2009; Chatterjee and Ip, 2009; Jiang et al., 2009), the brain (Moreno et al., 2015), the abdomen (Losick et al., 2013; Losick et al., 2016), the muscle (Chaturvedi et al., 2017) and ovarian follicle cells (Tamori and Deng, 2013). Beyond studies of tissue injury, our inducible reaper transgene can be used in studies of apoptotic signaling, such as the regulation of \u2018undead\u2019 cells which contain active caspase signaling but persist and influence the behavior of neighboring cells (Deveraux et al., 1998; Fan and Bergmann, 2014; Hay et al., 1994; Ryoo et al., 2004).\n\nWhile many dual transgene systems in flies combine Gal4 with either LexA or Q systems (Kockel et al., 2016; Lai and Lee, 2006; Potter et al., 2010), there are vastly more currently available Gal4 and partner UAS lines than for these other systems, making our system more immediately employable for the most cell types/transgenes. Additionally, the use of a single Gal4 promoter for both injury and transgene activation provides tissue specificity and ensures both injury and transgenes are expressed in the same population of cells. However, use of the same promoter to drive injury and transgenes also creates a limitation to our system if one wants to study the response of cell population A on injury to population B. In such case, combining LexA/Q system injury with Gal4 transgene induction (or vice versa) would be necessary. Beyond Drosophila, we note that our system could be adapted for use in other organisms, by adapting existing FLP and Cre-mediated injury and gene knockout models.\n\nIn summary, this study highlights the utility of the Drosophila pylorus in identifying regulation and purposes of specific cell cycle programs induced by tissue injury. Future work in this system can continue to illuminate the role and regulation of variant cell cycles and polyploidy in tissue injury biology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species)</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gene (D. melanogaster)</td>\n      <td>fzr</td>\n      <td>NA</td>\n      <td>FBgn0262699</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>byn\u00a0&gt;\u00a0Gal4</td>\n      <td>Singer et al.,1996</td>\n      <td>FBal0137290</td>\n      <td>P{GawB}bynGal4</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>act\u00a0&gt;&gt;\u00a0LacZ</td>\n      <td>BDSC</td>\n      <td>Stock 6355</td>\n      <td>P{ry[+t7.2]=Act5C (FRT.polyA)lacZ.nls1}3, ry[506]</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>hsFLP12;Sco/CyO</td>\n      <td>BDSC</td>\n      <td>Stock 1929</td>\n      <td>P{ry[+t7.2]=hsFLP} 12, y[1] w[*]; sna[Sco]/CyO</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS fzr RNAi</td>\n      <td>VDRC</td>\n      <td>Stock 25550</td>\n      <td>w1118; P{GD9960}v25550</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS-Ras85DV12</td>\n      <td>BDSC</td>\n      <td>Stock 4847</td>\n      <td>w[1118]; P{w[+mC]=UAS-Ras85D.V12}TL1</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS-hid, UAS-reaper</td>\n      <td>Zhou et al 1997</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Fasciclin III</td>\n      <td>DSHB</td>\n      <td>7G10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Phospho-Histone H3</td>\n      <td>Cell Signaling</td>\n      <td>ab9706</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-BrdU</td>\n      <td>Serotec</td>\n      <td>3J9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Beta-Galactosidase</td>\n      <td>Abcam</td>\n      <td>ab9361</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUAST-FRT-Stop -FRT-rpr (DEMISE) plasmid</td>\n      <td>this paper</td>\n      <td></td>\n      <td>progenitor: pUAST-FRT-Stop-FRT-mCD8-GFP</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>pUAST-FRT-Stop- FRT-mCD8-GFP plasmid</td>\n      <td>Potter et al., 2010</td>\n      <td>addgene #24385</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>TUNEL</td>\n      <td>Roche</td>\n      <td>#12156792910</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly stocks\n\nFull genotypes are described at flybase.org. Except where indicated, flies were raised at 25C on standard Drosophila media (Archon Scientific, Durham). For larval experiments, animals were collected at wandering 3rd instar stage (L3). All adults dissected were older than 4 days. The following publicly available stocks were used in the study: wg\u00a0>\u00a0LacZ (#BS 1567), act\u00a0>>\u00a0LacZ(#BS 6355), hsFLP12;Sco/CyO (#BS 1929), UAS fzr RNAi (#VDRC 25550), fzrG0418 (#BS12297), fzrG0326 (BS#12241) and UAS-Ras85DV12 (#BS) where BS\u00a0=\u00a0Bloomington Stock Center and VDRC\u00a0=\u00a0Vienna Drosophila Resource Center. The following fly stocks were generously gifted to us: byn\u00a0>Gal4 (Shigeo Takashima- UCLA, Singer et al., 1996), fz3RFP (Andrea Page-McCaw, Vanderbilt), P(Vha16-1CA06708)/CyO (Carnegie Protein Trap Collection), UAS-hid, UAS-reaper (Zhou et al., 1997, Toshie Kai, Temasek Laboratory), UAS N RNAi and UAS N-DN (Sarah Bray, University of Cambridge).\n\n### Drosophila genetics\n\nAll UAS transgenes were induced by byn\u00a0>\u00a0Gal4 or en\u00a0>\u00a0Gal4. All temporally controlled UAS-transgene experiments involved culturing flies with a Gal80ts repressor driven by the tubulin promoter in the genetic background at 18C except during the desired period of expression, during which they were transferred to 29C as described in the appropriate figure panel and accompanying text. For adult injury, after eclosion, all animals were aged 4\u20137 days at 18C before injury as done previously (Fox and Spradling, 2009; Losick et al., 2013; Sawyer et al., 2017). For larval injury, we shifted animals at L3 stage to 29C for 16 hr, a sub lethal level of injury induction. Heat shock conditions to induce FLP were performed at 37C by heat shocking either three times for 45 min each with a 1\u20132 hr recovery in between (DEMISE experiments) or a single time for 25 min (cell lineage tracing experiments).\n\n### DEMISE\n\nThe DEMISE plasmid was generated by restriction digest of pUAST > Stop > mCD8-GFP plasmid (addgene #24385, Potter et al., 2010) using XhoI and StuI. An insert containing a rpr-cDNA, SV40NLS and SV40PolyA sequences was then synthesized to make a final vector pUAST-FRT-Stop-FRT-rpr (Bio Basic Inc, New York). The construct was then injected to embryos and six fly lines were selected to include the construct on either the 2nd or 3rd chromosome. DEMISE flies (pUAST-FRT-Stop-FRT-rpr/CyO; byn\u00a0>Gal4,Tub\u00a0>Gal80/TM6) were raised at 25C unless otherwise noted. Flies were crossed to hsFLP[12] to induce cell death. Apoptotic death was observed in the wing disc in less than 48 hr, while in the hindgut it was observed in less than 24 hr.\n\n### Antibodies and cell markers\n\nMarkers for ileal cells (Vha16[Ca06708]) and the hindgut-midgut boundary (wg-LacZ or fz3-RFP) were used to specify the pylorus from adjacent regions of the gut. BrdU labeling and colcemid (Sigma) feeding were performed as in Sawyer et al. (2017). For cell death quantifications, TUNEL was performed using in situ cell death detection kit (Roche, Basel, Switzerland) as described previously (Schoenfelder et al., 2014). For antibody staining, tissues were dissected in 1X PBS and immediately fixed in 1XPBS, 3.7% paraformaldehyde, 0.3% Triton-X for 30\u201345 min. Immunostaining was performed as described in Sawyer et al. (2017). The following antibodies were used in this study: Fasciclin III (FasIII, DSHB, 7G10, 1:50), Beta-Galactosidase (Abcam, ab9361, 1:1000), DCP1 (Cell Signaling, Asp261, 1:1000), BrdU (Serotec, 3J9, 1:200), Phospho-Histone H3 (Cell Signaling, #9706, 1:1000), Centrosomin (generous gift from Nasser Rusan lab, NIH/NHLBI, 1:10,000). All secondary antibodies used were Alexa Fluor dyes (Invitrogen, 1:500). Tissues were mounted in Vectashield (Vector Laboratories Inc.). Images were acquired with the following: an upright Zeiss AxioImager M.2 with Apotome processing (10X NA 0.3 EC Plan-Neofluar air lens or 20X NA 0.5 EC Plan-Neofluar air lens) or inverted Leica SP5 (40X NA 1.25 HCX PL APO oil immersion). Image analysis was performed using ImageJ (Schneider et al., 2012), including adjusting brightness/contract, Z projections, cell counts, cell area and integrated density quantification. DNA FISH was performed as in Beliveau et al. (2014). Cy5-labeled oligo-probes to the AACAC repeat were synthesized by Integrated DNA Technologies.\n\n### Ploidy measurements\n\nFor ploidy measurements, guts were dissected in 1X PBS and prepared as described previously (Losick et al., 2013). Total tissue ploidy was calculated by timing the average animal ploidy per injury condition with the average recovered cell number\u00a0\u00b1\u00a0STERR (DNA content * cell count).\n\n### Smurf assay for epithelial barrier integrity measurements\n\nFor measuring epithelial barrier integrity, we adapted the established Smurf assay (Rera et al., 2011). Flies were raised at 18C on standard Drosophila media (Archon Scientific, Durham) until 4\u20137 days post eclosion. Flies were then shifted to vials containing standard Drosophila media mixed with 0.5% Bromophenol blue, and were then kept at 29C and scored for gut permeability every 24 hr for 14 days.\n\n### Cell cycle nomenclature\n\n(C)refers to the haploid DNA content. We define a \u2018polyploid\u2019 cell as a somatic cell that contains more than the diploid number of chromosome sets. We define the \u2018endocycle\u2019 as any programmed cell cycle in which the genome reduplicates without any sign of mitotic entry. We define \u2018endoreplication\u2019 as a broader term encompassing any truncated cycle that generates polyploid cells. We note the use of other terms in the literature that refer to similar processes, and also note that such terms are not always used consistently. We thus adopt the terms used most consistently in the current literature (Edgar et al., 2014).\n\n### Statistical analysis and reporting\n\nStatistical analysis was performed using GraphPad Prism 7. Statistical tests and adjustments of P-values for multiple comparisons are detailed in figure legends. For all tests, P value reporting is as follows: (p>0.05,ns); (p<0.05,*); (p<0.01,**); (p<0.001,***); (p<0.0001, ****). Regression analysis for ploidy measurements and cell number was done using the formula log2(ploidy)x cell number, and a Pearson correlation analysis.\n",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "fe5ea48d-12ff-4a05-b8f9-36978756fc41",
+      "submission_id": "7b6507d7-6f9f-4c35-b680-8b0ccb476c15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruce Edgar, University of Utah United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38327.016](https://doi.org/10.7554/eLife.38327.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Cell Cycle Switch Dictates Organ Repair and Tissue Growth Responses in the Drosophila Hindgut\" for consideration by eLife. Your article has been reviewed by Marianne Bronner as the Senior Editor, a Reviewing Editor, and three reviewers. The following individual involved in review of your submission has agreed to reveal his identity: Norman Zielke (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript details the responses to injury of the larval and adult pyloris of Drosophila, and highlights two different modes of tissue repair, one employing mitotic cell proliferation (in the larva) and the other employing endocycling (in the adult). The authors provide ample, high quality data showing that this cell cycle switch is controlled mediated by Fizzy-related (Fzr), a known regulator of mitotic to endocycle transitions. The three reviewers were uniformly enthusiastic about the quality and significance of the manuscript and suggested relatively minor clarifications be added in revision.\n\nEssential revisions:\n\n1) The revisions suggested in the reviews, appended below in full, are nearly all editorial and should be simple to address in revision. Hopefully you can address all of the clarifications and corrections not requiring new data in your revision.\n\nAs reviewing editor, I also suggest that you try the gut permeability experiment requested by reviewer 3. This should be straightforward as protocols for such assays (the \"smurf\" assay) already exist. However, if this experiment proves technically difficult, too time consuming, or uninformative, it will not be required for publication.\n\n2) In addition, I'd like to mention one point that the reviews did not address, namely how Fzr is controlled developmentally. Is the switch to a Fzr-regulated endocycle mediated by induction of Fzr sometime during metamorphosis? Although I did see that you rule out hindsight and Notch as regulators, and propose a potential role for Ecdysone and EcR, I did not find data on Fzr protein or RNA expression in the pyloris during the transition. I believe such data are important for this story and should be included in some form. In your revision, please describe the pattern of Fzr expression by including new data, or the relevant citations if they exist. If these data are already included, I apologize for the oversight.\n\nReviewer #1\n\nThe manuscript \"A Cell Cycle Switch Dictates Organ Repair and Tissue Growth Responses in The Drosophila Hindgut\" by Cohen et al., describes the cell cycle response to acute cell ablation in the Drosophila hindgut. The manuscript is well written and the included data are of very high quality and accurately reflects the conclusions in the text. However, most of the obtained results are somewhat expected from the data that have been obtained in other model systems and/or context. The most striking finding of this study is the observation that tissue regeneration upon acute cell ablation in the adult pylorus of Fzr-depleted animals is mediated by mitotic cycles although these cells are normally primed to regenerate via endocycles. This is a significant finding, and thus this manuscript should qualify for publication in eLife after the minor problems listed below have been addressed.\n\n- To manipulate the tissue in a precise manner the authors have developed a new Flp/FRT-Gal80ts-based method termed DEMISE, which enables spatiotemporally controlled induction of the pro-apoptotic gene reaper as well as independent expression of UAS-transgenes such as Fzr-RNAi. This is a very elegant approach, but in my opinion does acute cell ablation with reaper not exactly reflect the kind of damage to which the cells in the hindgut are normally exposed? A hallmark of ageing is loss of intestinal integrity due to accumulation of cells with damaged DNA. Earlier work in hepatocytes with dysfunctional telomeres (Lazzerini-Denchi et al., 2006) demonstrated that liver regeneration in presence of DNA damage signals is mediated by endocycles, which led to the notion that damaged, but viable cells utilize endocycles instead of mitotic cycles to avoid mitotic errors and propagation of the damaged DNA. Therefore, the finding that acute cell ablation in the larval pylorus is compensated by additional mitotic cycles, could be rather a normal response to cell ablation in developing tissues, and thus not per se exclude that these cells could regenerate through endocycles. Therefore, it would be advisable to replace reaper by Cas9 and a \"sloppy\"-gRNA that introduces DSBs throughout the genome, to re-evaluate (perhaps in a further study) the question whether the cells in the larval pylorus have the capacity to regenerate by endocycles.\n\n- In subsection \u201cDEMISE reveals fizzy-related as a regulator of injury-mediated cell cycle programming\u201d, the authors state \"Our pre-injury FUCCI data (Figure 2I-K) provided a potential clue, as larval but not adult uninjured pyloric cells express the mitotic regulator CyclinB\", which is misleading as the Fly-FUCCI system doesn't reflect the expression levels of endogenous CyclinB. To make this statement the authors should utilize a Cyclin B antibody or a GFP-Trap.\n\n- In subsection \u201cDevelopmental vs. Stress-induced endoreplication\u201d, the authors state \"It is somewhat surprising that loss of fzr alone is sufficient to restore pyloric mitosis, as the cyclin dependent kinase 1 (Cdk1) activator Cdc25/String is often required (Schaeffer et al., 2004; Von Stetina et al., 2018)\". Stg/Cdc25 is an APC/C-Fzr target in the Drosophila embryo (Reber et al., 2006), so provided the Stg/Cdc25 transcript is present in these cells, Fzr-depletion could potentially lead also to accumulation Stg/Cdc25 and thereby promote the G2/M transition. Therefore, the authors should evaluate Stg/Cdc25 levels by antibody staining or GFP-trap.\n\nReviewer #2\n\nA variety of distinct cell cycle types apart from the canonical mitotic cell division cycle are encountered in eukaryotes. The manuscript by Cohen et al. reports experimental work addressing regulation and purpose of a switch from canonical to endocycle. The same lab has previously published a series of papers on this and related issues, primarily focusing on the hindgut in Drosophila larvae and adults. The current study builds on their steadily accumulated outstanding expertise. Their previous work has shown that pylorus cells in the adult hindgut respond to experimentally induced apoptosis that kills a substantial fraction of these cells. The surviving cells repair and restore the lost tissue mass by re-growing while progressing through endocycles. Here Cohen et al. compare the response to analogous experimentally induced apoptosis in the larval and adult pylorus. Well controlled experiments (expression of pro-apoptotic proteins in a tissue-specific and temporally controlled manner with the help of GAL4/GAL80ts) resulting in highly convincing data demonstrate clearly that tissue mass and in particular total gene content (DNA amount) is restored in both cases but via different routes: cell proliferation (growth paralleled by progression through mitotic cell cycles) in larvae versus endocycles (growth paralleled by genome amplification in the absence of mitosis) in adults.\n\nIn the second part of the manuscript the authors switch to a more sophisticated control of induced apoptosis. By combining GAL4/GAL80ts with Flp/FRT regulation they achieve experimental induction of apoptosis in a few random cells within a tissue where additional transgenes (including UAS-RNAi for knock down of some gene of interest) can be expressed (with tissue-specific and temporal control). They designate their control system as DEMISE. They exploit DEMISE for an analysis of the role of a particular cell cycle regulator that has been most consistently implicated in mitotic->endocycle switching in many labs and experimental systems. They arrive at a convincing demonstration that knockdown of this APC/C regulator Fzr/Cdh1 in the adult pylorus converts the repair route from adult to larval style.\n\nCohen et al., do not report about efforts towards clarification whether this change in the repair mode in the adult pylorus has any physiological consequences on the function of the repaired organ. Instead they switch to another type of damage in the final part of the manuscript. Instead of expressing a pro-apoptotic protein they now express activated Ras (RasV12) in larval or adult pylorus cells. This is shown to result in excessive growth accompanied by progression through mitotic cycles in larvae and through endocycles in adults. Again Fzr/Cdh1 knockdown is shown to convert these endocycles into mitotic cycles in adults. Finally, it is shown that repair of adult pylorus via mitotic cycles results in morphological organ deformations that are not observed after repair via endocycles, suggesting that an increased risk of tissue destabilization by mitosis/cytokinesis might explain why evolution might have favored repair by endocycles. While this proposal is not really new, I am not aware of any supportive evidence that comes anywhere close to what is nicely demonstrated here. While it can be debated whether the experimentally induced damage has much to do with physiological insults, it has certainly allowed precise and conclusive analyses. The writing is equally precise and convincing.\n\nReviewer #3\n\nThe manuscript by Cohen et al., reports that the Drosophila pylorus has different types of regeneration after injury that depends on developmental stage. The larval pylorus regenerates by mitosis, whereas the adult pylorus regenerates by endoreplication cell cycles. They show that the ubiquitin ligase Fzr (Cdh1), but not Notch, promotes endoreplication in the adult. Knockdown of Fzr caused adult pylorus cells to regenerate tissue mass by mitotic cell cycles instead of endoreplication cycles. They also showed that endoreplication cycles, but not mitotic cycles, in the adult pylorus resist perturbation of epithelial architecture caused by promotion of RasV12 over-expression. Along the way they develop a new system they call DEMISE, which permits independent induction of transgene expression and cell death to evaluate the contribution of genes and growth programs to tissue regeneration.\n\nThis is a quality study that reports very interesting findings relevant to the question of how the response to tissue injury differs during development. It should be of interest to a fairly broad readership. The experiments are well controlled, the manuscript is well-written, and it contains provocative ideas, but the discussion is a tad on the long side. I suggest below one simple experiment and have a few suggestions and questions.\n\n1) A major finding is that adult pyloric epithelial architecture is altered after Fzr RNAi and RasV12 overexpression. The authors speculate that this may compromise epithelial integrity. The authors should assess whether the hyperplasia increases pyloric epithelial permeability using standard dye or other assays.\n\n2) Is the epithelial outpouching/inpouching in RasV12 Fzr RNAi animals associated with piling up of epithelial cells?\n\n3) Was the combined effect of RasV12 over-expression and cell death tested, +/- Fzr RNAi, using the new DEMISE injury system?\n\n4) The authors discuss that polyploid cycles in the adult \"skip\" late replication. Please be clear whether this means a change in replication timing of genomic regions or under-replication as in other polyploid cells. It seems that the EdU labeling does not distinguish between these possibilities.\n\n5) The authors define their cell cycle nomenclature in the methods: \"We define the \"endocycle\" as any programmed cell cycle in which the genome reduplicates but chromosomes are not segregated into two daughter cells.\" That seems like too broad of a definition that would include cells that pass through various stages of an abortive mitosis / cytokinesis but fail to divide. These types of cycles are often called endomitotic. I know that there is not unanimity on the use of this terminology in the field, but are the authors promoting that all polyploid cycles with periodic S phase be called endocycles?\n",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1fb04e13-47d0-4038-82e9-8e4a9844a76f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C1",
+      "claim": "The Drosophila hindgut pylorus is the only segment of the hindgut to persist throughout the lifespan of the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyloric epithelium is the only segment of the hindgut to persist throughout the lifespan of the fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "cbe453f6-e910-40ea-a4ad-967f07a824cf",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C2",
+      "claim": "Larval pyloric cells undergo mitotic cycles during metamorphosis to expand the larval pylorus into its adult form and produce cells of the adult ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "During metamorphosis, pyloric cells act as facultative progenitor cells, as they remodel the hindgut by undergoing mitotic cell division to both expand the larval pylorus into its adult form while also producing cells of the adult ileum, which replace the histolysed larval ileum (Figure 1A, Fox and Spradling, 2009; Robertson, 1936; Sawyer et al., 2017; Takashima et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous work and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7d449b90-4c56-4c7c-93d5-f6d9f2bc182d",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C3",
+      "claim": "Pyloric cells are capable of distinct cell cycles: mitotic cycles during organ remodeling at metamorphosis and endocycles during tissue injury repair in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pyloric cells are capable of distinct cell cycles- mitotic cycles during organ remodeling (at metamorphosis) and endocycles during tissue injury repair (at adulthood).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on observations described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a6c8ab34-f4ff-4bb1-b649-010a1072ea8c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C4",
+      "claim": "Injury to larval pyloric cells at the L3 stage results in adult pyloric cells that remain diploid with no change in cell ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared against uninjured animals (Figure 1C\u2013C'), adult pyloric cells recovered from a larval injury (Figure 1D\u2013D') show no change in cell ploidy and remain diploid (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification shown in Figure 1G and images in Figure 1C-D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "acd6ac0e-4bd4-4a52-9948-b2d110426c78",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C5",
+      "claim": "Larval injury does not change the number or size of cells recovered in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, larval injury does not change the number or size of cells recovered in adults (Figure 1H, Figure 1\u2014figure supplement 1F\u2013F',H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 1H and supplementary figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "188a90a0-82e4-47d4-8693-6caef5c85100",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C6",
+      "claim": "Injury to adult pyloric cells persistently increases ploidy, decreases cell number, and increases cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, comparable injury to the adult pylorus persistently increases ploidy, decreases cell number, and increases cell size, as we previously reported (Figure 1E,G,H, Losick et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1E, G, H and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "3796bbc9-8c77-4d47-a0ca-788e09245c74",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C7",
+      "claim": "Regardless of the severity of adult injury, cell number does not recover, whereas cell ploidy and cell size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the severity of adult injury, cell number does not recover, whereas cell ploidy and cell size increases (Figure 1F,G, Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 1F, G and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "028c8a6a-6c77-4ce3-af96-1dc0954239aa",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C8",
+      "claim": "Developmental stage and not injury severity dictates the pyloric cell cycle response.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, developmental stage and not injury severity dictates the pyloric cell cycle response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experiments varying injury severity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7adde21d-14a5-4e0e-b575-994b80668ed2",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C9",
+      "claim": "Ploidy increases closely track with the degree of cell number loss in adult pyloric cells after injury (R2 = 0.97, p<0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantitation of adult pyloric ploidy after injury revealed a proportional tissue injury response- ploidy increases closely track with the degree of cell number loss (Figure 1G\u2013H, R2 = 0.97, p<0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of data in Figure 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "b945b3da-f9a6-4776-b937-e606e8a2dccb",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C10",
+      "claim": "Regardless of injury severity or developmental stage, the pre-injury pyloric total genome content is fully recoverable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that regardless of injury severity or developmental stage, the pre-injury pyloric total genome content is fully recoverable (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "6624250f-2f0c-474d-bce8-19d4f9793f84",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C11",
+      "claim": "Through developmentally distinct cell cycle injury responses, the pylorus accurately restores genomic content in proportion to the injury stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that through developmentally distinct cell cycle injury responses, the pylorus accurately restores genomic content in proportion to the injury stimulus (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from genome content quantification data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "012e5b25-cf77-4556-ac7c-3e3587acae82",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C12",
+      "claim": "Single larval pyloric cells produce, on average, either ~5 adult pyloric cells or two adult ileal cells during metamorphosis, and afterwards cease to divide.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously used a low-background, low-frequency clonal marking system to demonstrate that single larval pyloric cells produce, on average, either ~5 adult pyloric cells or two adult ileal cells during metamorphosis, and afterwards cease to divide (Fox and Spradling, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7a757575-1f10-45e6-88cc-f9446e534378",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C13",
+      "claim": "In adults recovered from larval injury, clone size increases by ~3 fold on average compared to uninjured animals (uninjured: 5.389 \u00b1 0.5725 SEM, injured: 16.54 \u00b1 1.863 SEM, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, in adults recovered from larval injury, clone size increases by ~3 fold on average (Figure 2D\u2013D', G,H, uninjured: 5.389 \u00b1 0.5725 SEM, injured: 16.54 \u00b1 1.863 SEM, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 2G, H with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "cfd40093-bde9-4928-933a-207075a35415",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C14",
+      "claim": "Approximately 75% of larval cells were eliminated using the injury protocol and were then recovered by compensatory proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clonal data coupled with our cell counts suggest that approximately 75% of larval cells were eliminated using our injury protocol and were then recovered by compensatory proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from clonal data and cell counts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "115fadf6-6141-4682-8d89-b8f3b3763d69",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C15",
+      "claim": "Remaining larval pyloric cells (approximately 25%) have the capability of increasing their mitotic capacity to completely regenerate the adult hindgut pylorus and ileum following acute injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these data show that remaining larval pyloric cells (approximately 25%) have the capability of increasing their mitotic capacity to completely regenerate the adult hindgut pylorus and ileum following acute injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from clonal analysis and cell count data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7790609e-8aa2-4589-ba71-354106f2bc4c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C16",
+      "claim": "Inducing clones in adult pylori produces only single labeled cells (27/27 clones).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to larvae, inducing clones in adult pylori (Figure 2B) produces only single labeled cells (27/27 clones, Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clonal analysis data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "621d23bd-0b7a-459d-a5a7-7400264b5d7a",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C17",
+      "claim": "No expansion of single labeled cells into mitotic clones was observed even after 20\u201330 days of recovery from a severe injury in adult pylori (uninjured: 1.00 \u00b1 0 SEM, injured: 1.07 \u00b1 0.07 SEM, p=0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, we did not see any expansion of single labeled cells into mitotic clones even after 20\u201330 days of recovery from a severe injury (Figure 2F\u2013H, uninjured: 1.00 \u00b1 0 SEM, injured: 1.07 \u00b1 0.07 SEM, p=0.99 and Figure 2\u2014figure supplement 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 2F-H and supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "3880b4a6-c92f-43f0-bdf3-294beae9caae",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C18",
+      "claim": "The M-phase marker Phospho-Histone H3 (PH3) does not label adult pyloric cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In further support of our lineage data, the M-phase marker Phospho-Histone H3 (PH3) does not label adult pyloric cells (data not shown, Fox and Spradling, 2009; Sawyer et al., 2017), while it frequently labels larval pyloric cells (Figure 2\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous work and supplementary figure data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "b2553f52-1fd6-4371-aaaa-cdee890388f3",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C19",
+      "claim": "Both larvae and adult pyloric cells incorporate the S-phase marker EdU following injury.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both larvae and adult pyloric cells incorporate the S-phase marker EdU following injury (Figure 2\u2014figure supplement 1J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU incorporation data in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "de2c4aa8-7ace-472e-9c16-d45382e7a61c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C20",
+      "claim": "Only larval pyloric cells divide while adult pyloric cells instead endocycle after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our cell cycle marker, lineage, and cell ploidy/number quantitation show that only larval pyloric cells divide while adult pyloric cells instead endocycle after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple lines of evidence including cell cycle markers, lineage tracing, and ploidy quantification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a077aa3a-2488-4205-aaf5-096334a9758f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C21",
+      "claim": "In the pylorus of uninjured larvae, the FUCCI components E2F11-230-GFP and Cyclin B1-266-mRFP are expressed in patterns consistent with the presence of G1, S, and G2/M cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pylorus of uninjured larvae, the FUCCI components E2F11-230-GFP and Cyclin B1-266-mRFP are expressed in patterns consistent with the presence of G1, S, and G2/M cells (Figure 2I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FUCCI reporter expression data in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "218836ea-81d6-46e7-9343-ca380e405fae",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C22",
+      "claim": "Both before and after injury, larval pyloric cells undergo mitotic cycles, although injury leads to additional rounds of mitotic cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with our M phase data (Figure 2\u2014figure supplement 1I), we find that both before and after injury, larval pyloric cells undergo mitotic cycles, although injury leads to additional rounds of mitotic cycles (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from FUCCI and M-phase marker data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "50c61004-3d29-494d-b653-e9b46cdb9c68",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C23",
+      "claim": "100% of uninjured adult pyloric cells are E2F11-230-GFP positive and Cyclin B1-266-mRFP negative, indicative of a quiescent/arrested G0/G1 state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 100% of uninjured adult pyloric cells are E2F11-230-GFP positive and Cyclin B1-266-mRFP negative (Figure 2K), indicative of a quiescent/arrested G0/G1 state of these cells prior to their entry into injury-activated endocycles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FUCCI reporter expression data in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "6c63b137-0a6b-4476-b2fb-289422a5dec0",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C24",
+      "claim": "Pyloric injury at distinct developmental stages induces distinct cell cycle changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pyloric injury at distinct developmental stages induces distinct cell cycle changes (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary conclusion from FUCCI and cell cycle marker data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "3949e805-b049-47d9-b077-29347d6c042b",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C25",
+      "claim": "DEMISE combines the Gal4/Gal80ts and FLP/FRT systems to induce developmentally-timed, tunable tissue-specific injury in a mosaic fashion while independently expressing any UAS-driven transgene of interest in the same tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus developed such a system, which we term DEMISE (Dual-Expression-Method-for-Induced-Site-specific-Eradication). DEMISE combines the Gal4/Gal80ts and FLP/FRT systems to induce developmentally-timed, tunable tissue-specific injury in a mosaic fashion while independently expressing any UAS-driven transgene of interest in the same tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the DEMISE method developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "0c4cab76-8623-4cf6-9248-f7d27276bd74",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C26",
+      "claim": "DEMISE adds an FRT-Stop-FRT cassette between a UAS promoter and the apoptotic rpr gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to our previous injury system, DEMISE adds an FRT-Stop-FRT cassette between a UAS promoter and the apoptotic rpr gene (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the DEMISE construct design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "93e1afb4-8b70-49e7-9925-2da3199def20",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C27",
+      "claim": "In DEMISE, cell death and transgene expression are under control of a tissue-specific Gal4 and temperature inactivation of Gal80ts, but cell death also requires FLP-mediated removal of the Stop cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cell death and transgene expression are still under control of a tissue-specific Gal4 and temperature inactivation of Gal80ts (Figure 3A') but cell death also requires FLP-mediated removal of the Stop cassette.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of DEMISE mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "fe3d45cd-b09b-40a9-9eaa-bc7af4d721d9",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C28",
+      "claim": "Using DEMISE, all cells of a given tissue can express a transgene while a fraction of these cells (determined by degree of FLP induction) will be eliminated by injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is that all cells of a given tissue can express a transgene (such as a gene knockdown RNAi), while a fraction of these cells (determined by degree of FLP induction) will be eliminated by injury (Figure 3A''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of DEMISE functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "1c10f678-ba48-40cd-b185-b4c4c86f334c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C29",
+      "claim": "Using DEMISE in larval wing imaginal discs, transgene expression is induced in the expected pattern without inducing cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Using temperature shifts and a UAS-GFP reporter, transgene expression is induced in the expected pattern (Figure 3\u2014figure supplement 1A\u2013C). Our transgene expression conditions do not induce cell death, as assayed by TUNEL (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in supplementary Figure 3-1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "0031de89-2e97-44e1-9195-0d525f735bfb",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C30",
+      "claim": "Upon heat shock to induce FLP expression in DEMISE, robust cell death occurs in a mosaic pattern specifically in the engrailed domain of wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon heat shock to induce FLP expression, robust cell death occurs in a mosaic pattern specifically in the engrailed domain (Figure 3\u2014figure supplement 1C\u2013D, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in supplementary Figure 3-1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "da23dfc6-7cc9-4f3b-a408-78cb7ca4ce4b",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C31",
+      "claim": "Using DEMISE in the hindgut, low background level of cell death can be achieved followed by robust induction of cell death upon heat shock that occurs independently of transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, using our most efficacious DEMISE/FLP combination in the hindgut, we can achieve a low background level of cell death (Figure 3C,D,F), followed by robust induction of cell death upon heat shock that occurs independently of transgene expression (Figure 3C\u2013F, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "99ad2da8-f7bc-41f8-af22-83a8ed5b024e",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C32",
+      "claim": "Fizzy-related (Fzr) is the Drosophila homolog of mammalian FZR1/CDH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Fizzy-related (Fzr), the Drosophila homolog of mammalian FZR1/CDH1, is a binding partner of the APC/C, which facilitates degradation of mitotic cyclins including Cyclin B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Fzr.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "deabd8d8-d9ce-4f0a-a0dd-6edad1536772",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C33",
+      "claim": "Fzr is a binding partner of the APC/C, which facilitates degradation of mitotic cyclins including Cyclin B.",
+      "claim_type": "EXPLICIT",
+      "source": "Fizzy-related (Fzr), the Drosophila homolog of mammalian FZR1/CDH1, is a binding partner of the APC/C, which facilitates degradation of mitotic cyclins including Cyclin B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about Fzr function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "236e60af-964b-4d57-9724-e965cb5afb47",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C34",
+      "claim": "Fzr is a well-known regulator of the endocycle in many cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Fzr is also a well-known regulator of the endocycle in many cell types (Lehner and O'Farrell, 1989; Schaeffer et al., 2004; Sigrist and Lehner, 1997; Stormo and Fox, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "ce405eb6-9d0d-4fb2-bea4-067952c079ce",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C35",
+      "claim": "fzr mutant cells can ectopically undergo mitotic cycles instead of endocycles.",
+      "claim_type": "EXPLICIT",
+      "source": "and fzr mutant cells can ectopically undergo mitotic cycles instead of endocycles (Schaeffer et al., 2004; Schoenfelder et al., 2014; Sigrist and Lehner, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "2e927075-61cc-4b04-a736-d9214e710029",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C36",
+      "claim": "Using two independent fzr enhancer traps, fzr expression is high in the adult pylorus, whereas fzr is undetectable in the larval pylorus.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using two independent fzr enhancer traps, fzr expression is high in the adult pylorus, whereas fzr is undetectable in the larval pylorus (Figure 4A\u2013B', Figure 4\u2014figure supplement 1L\u2013M').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enhancer trap expression data in Figure 4A-B' and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "084d72fa-0e77-478c-b1d5-3cf5ef3bf965",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C37",
+      "claim": "Without injury, fzr knockdown did not noticeably alter hindgut development with the exception of the rectal papillae.",
+      "claim_type": "EXPLICIT",
+      "source": "Without injury, fzr knockdown did not noticeably alter hindgut development with the exception of the rectal papillae, where we previously identified a role for fzr in the pre-mitotic endocycles (Schoenfelder et al., 2014, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by observation and citation to previous work, with data in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "17f091be-fcc5-4121-b3c4-4e5dd61e4e9f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C38",
+      "claim": "Following apoptotic injury induction, both control and fzr RNAi-expressing animals contain both TUNEL positive nuclei and pycnotic nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Following apoptotic injury induction, both control and fzr RNAi-expressing animals contain both TUNEL positive nuclei and pycnotic nuclei (Figure 4D\u2013F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TUNEL staining data in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7a4e51b1-29cf-4fb6-be16-7de02eb84d66",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C39",
+      "claim": "Lack of fzr does not alter the number of adult pyloric cells entering the cell cycle as seen by BrdU staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, lack of fzr does not alter the number of adult pyloric cells entering the cell cycle as seen by BrdU staining (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU quantification in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "b835d583-adf1-4039-8744-c600f4a6f217",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C40",
+      "claim": "Following 5 days of recovery from adult injury, the adult pylorus of fzr flies completely restores pre-injury cell number and ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, following 5 days of recovery from adult injury, the adult pylorus of fzr flies completely restores pre-injury cell number and ploidy (Figure 4G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 4G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "043497b9-aa11-4831-a170-95ffb7b0aede",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C41",
+      "claim": "During injury recovery, mitotic cells are visible in the adult fzr pylorus (5/7 animals), but not in control animals (0/17 animals).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, during injury recovery, mitotic cells are visible in the adult fzr pylorus (5/7 animals), but not in control animals (0/17 animals, as assayed by PH3 and the centrosomal marker Centrosomin- Cnn, Figure 4K\u2013L''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PH3 and Centrosomin staining data in Figure 4K-L'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "fc5368a8-1efe-4616-bab9-26dc92e33be7",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C42",
+      "claim": "In control adults, pyloric cells undergoing injury-induced endocycles only exhibit early replication patterns as assayed by BrdU.",
+      "claim_type": "EXPLICIT",
+      "source": "In control adults, pyloric cells undergoing injury-induced endocycles only exhibit early replication patterns (as assayed by BrdU, Figure 4\u2014figure supplement 1D), consistent with the S-phase pattern of many endocycling cells that undergo under-replication.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU staining pattern in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a0d196b5-2ad5-48c2-80e9-760c85fad8b7",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C43",
+      "claim": "DNA FISH shows that a satellite DNA repeat that is commonly under-replicated in endocycling cells does not increase in intensity in proportion to the nuclear size increase induced by adult pyloric injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this idea, DNA FISH shows that a satellite DNA repeat that is commonly under-replicated in endocycling cells (Endow and Gall, 1975) does not increase in intensity in proportion to the obvious nuclear size increase induced by adult pyloric injury (Figure 4\u2014figure supplement 1N\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by DNA FISH data in supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "c151f0d5-5e28-466f-97ad-04464a820cd0",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C44",
+      "claim": "In fzr animals, both early and late-S patterns are exhibited after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fzr animals instead exhibit both early and late-S patterns after injury (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU staining pattern in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "547aaea1-38a5-4ef9-a2a0-1ccc6dfe1660",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C45",
+      "claim": "The two distinct injury-induced cell cycle programs in the pylorus are dictated by the action of Fzr, a conserved negative regulator of mitotic cyclins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we find the two distinct injury-induced cell cycle programs in the pylorus are dictated by the action of Fzr, a conserved negative regulator of mitotic cyclins (Figure 4M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from fzr knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "06a651cb-a979-4a63-b8bb-b77f63c79d8e",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C46",
+      "claim": "Either with or without injury, adult pyloric cells do not express Hindsight.",
+      "claim_type": "EXPLICIT",
+      "source": "Either with or without injury, adult pyloric cells do not express Hindsight, suggesting that this Notch target is not involved in the pyloric cell cycle injury response (Figure 4\u2014figure supplement 1F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Hindsight staining data in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "9f63c386-35ae-4785-b721-a65232d4f812",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C47",
+      "claim": "Expressing dominant negative Notch receptor throughout pupation using DEMISE does not prevent injury-mediated endocycles in the adult pylorus.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, expressing dominant negative Notch receptor throughout pupation using DEMISE does not prevent injury-mediated endocycles in the adult pylorus (Figure 4\u2014figure supplement 1H\u2013I), despite the fact that we observe expected Notch phenotypes in the rectal papillae (Figure 4\u2014figure supplement 1J\u2013K, Fox et al., 2010; Schoenfelder et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in supplementary figures showing Notch manipulation effects.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "01e5a04a-5031-41df-b1eb-0e54d765177b",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C48",
+      "claim": "Unlike previous studies on developmental endocycles, the results suggest a Notch-independent, fzr-dependent alteration in injury cell cycle responses in the Drosophila pylorus.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike previous studies on developmental endocycles, our results suggest a Notch-independent, fzr-dependent alteration in injury cell cycle responses in the Drosophila pylorus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from Notch and fzr manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7d06e1f0-46c7-4458-8f58-a4466d3ae992",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C49",
+      "claim": "Activation of the pro-growth signaling Ras pathway is linked to ploidy increases in cardiac tissue in flies and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the pro-growth signaling Ras pathway, which is well-known to drive cell number increases in many contexts, is also linked to ploidy increases in cardiac tissue in flies and mammals (Hunter et al., 1995; Wu et al., 2011; Yu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "55077546-a129-4cf4-a90d-4cf24947f9f7",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C50",
+      "claim": "Larval RasV12 expression nearly triples the adult pyloric cell number without a substantial change in nuclear size.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell number counts and size measurements show that larval RasV12 expression nearly triples the adult pyloric cell number without a substantial change in nuclear size (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 5G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "d4c79e91-bcf6-45df-a71d-8bff70605bec",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C51",
+      "claim": "Following RasV12 expression in the adult, the adult pylorus expands in size with no increase in cell number, while instead the nuclear size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "As with larval RasV12 expression, the adult pylorus expands in size following RasV12 expression (Figure 5C,E). However, and in parallel with our injury results, we observe no increase in cell number, while instead the nuclear size increases (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 5G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "9a3ceeca-f2a9-4fb2-b627-00f1e274e4e8",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C52",
+      "claim": "These data are consistent with RasV12 inducing endocycles in the mature adult pylorus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with RasV12 inducing endocycles in the mature adult pylorus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from RasV12 expression data showing increased nuclear size without cell number increase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "79024613-d124-4263-9407-dc7df49bef32",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C53",
+      "claim": "fzr suppresses nuclear size expansion in RasV12 expressing adults.",
+      "claim_type": "EXPLICIT",
+      "source": "As in our injury studies, fzr suppresses nuclear size expansion in RasV12 expressing adults (Figure 5C,F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 5C, F, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a758d27a-b684-45dc-b4d5-9248e6577bcb",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C54",
+      "claim": "The overall pyloric cell number increases ~20% above controls in fzr RNAi + RasV12 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the overall pyloric cell number increases ~20% above controls in fzr RNAi + RasVV12 animals, consistent with a role of fzr in preventing aberrant cellular hyperplasia in the adult pylorus (Figure 5C,E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 5C, E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "d1886ff5-6818-4491-aa93-502b6f6e8cd9",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C55",
+      "claim": "The tissue expansion caused by RasV12 expression does not substantially distort the epithelial architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue expansion caused by RasV12 expression does not substantially distort this epithelial architecture (Figure 5J\u2013J').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 5J-J'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "b8446e68-7e94-4fd7-8944-3991cacd2b72",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C56",
+      "claim": "23.3% (\u00b13.3% SEM) of fzr RNAi +RasV12 animals examined show severe distortions of the intestinal epithelial architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 23.3% (\u00b13.3% SEM) of fzr RNAi +RasVV12 animals examined show severe distortions of the intestinal epithelial architecture, either into or away from the intestinal lumen (Figure 5K\u2013K', L, Figure 5\u2014figure supplement 1B\u2013C''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in Figure 5L and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "39c203fc-b414-40ba-b072-c8c9bdad0fd7",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C57",
+      "claim": "Adult pyloric area actually decreases in fzr RNAi +RasV12 animals relative to animals expressing RasV12 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "These distortions were not caused by increased tissue area in fzr RNAi +RasVV12 animals, as adult pyloric area actually decreases in these animals relative to animals expressing RasV12 alone (Figure 5\u2014figure supplement 1D, see Discussion for proposed mechanism).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification in supplementary Figure 5-1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7060bea3-e4b4-438d-a6f8-15fcb1fc4c8a",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C58",
+      "claim": "Only fzr RNAi +RasV12 animals show substantial permeability of the epithelial barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the well-established 'Smurf' assay (Rera et al., 2011; see Materials and methods) we observed that only fzr RNAi +RasVV12 animals show substantial permeability of the epithelial barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Smurf assay data and citation to the assay method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7710b0e3-21bd-4eb5-ae50-0d287a723bc1",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C59",
+      "claim": "The frequency of fzr RNAi +RasV12 animals with a permeable epithelial barrier (17.33% \u00b1 3.18% SEM) is very similar to the proportion of animals of this same genotype with epithelial architecture distortions.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the frequency of fzr RNAi +RasVV12 animals with a permeable epithelial barrier (17.33% \u00b1 3.18% SEM, Figure 5M) is very similar to the proportion of animals of this same genotype with epithelial architecture distortions (Figure 5L vs. M), implying that these defects may be related.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of quantifications in Figure 5L and 5M.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "85b309d5-ff20-4da8-b00a-6382ec8d7647",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C60",
+      "claim": "Under conditions of prolonged growth signaling, endocycles protect the pyloric epithelium against hyperplasia, distortions in epithelial lumen architecture, and gut barrier permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, under conditions of prolonged growth signaling, endocycles protect the pyloric epithelium against hyperplasia, distortions in epithelial lumen architecture, and gut barrier permeability (Figure 5N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from RasV12 and fzr manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "5c304cfe-d3fd-4ba3-ab88-8202ba6f44e1",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C61",
+      "claim": "Ploidy increases in the repairing pylorus are perfectly tuned to replace the pre-injury number of genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, using the simplicity of our system, we discovered that ploidy increases in the repairing pylorus are perfectly tuned to replace the pre-injury number of genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from genome content quantification data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "7c2b4886-071a-4cd5-989c-22ccc3c8ddd3",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C62",
+      "claim": "Reverting adult endocycles to mitotic cycles in the injured adult also leads to the correct number of pre-injury cells with no ploidy increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, reverting adult endocycles to mitotic cycles in the injured adult also leads to the correct number of pre-injury cells with no ploidy increase, suggesting that both mitotic cycles and endocycles are able to accurately replace lost tissue mass/genome content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from fzr knockdown experiments in injured adults.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "1d69a3ed-d1cb-4526-83a2-6e8e9856985d",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C63",
+      "claim": "Both mitotic cycles and endocycles are able to accurately replace lost tissue mass/genome content.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, reverting adult endocycles to mitotic cycles in the injured adult also leads to the correct number of pre-injury cells with no ploidy increase, suggesting that both mitotic cycles and endocycles are able to accurately replace lost tissue mass/genome content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of injury responses with and without fzr.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "c2e3dc34-7c6b-4117-bb5a-26370529d35d",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C64",
+      "claim": "Endocycles enable the pylorus to resist tissue malformation and permeability phenotypes under conditions of sustained tissue growth signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, using a RasV12 model, we present evidence that endocycles enable the pylorus to resist tissue malformation and permeability phenotypes under conditions of sustained tissue growth signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from RasV12 experiments comparing endocycles vs mitotic cycles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "738be4b2-3c37-47e8-aa80-01c3fb4561ec",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C65",
+      "claim": "Endocycles are employed in some tissues to maintain epithelial integrity in the face of stresses such as injury or excess growth signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As activated Ras/Raf signaling reproduces the injury responsive cell cycles in our system and in injured cardiac tissues, this model may suggest that endocycles are employed in some tissues to maintain epithelial integrity in the face of stresses such as injury or excess growth signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings in this study and comparison to cardiac tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "47c54490-9596-4f61-80df-128e40acd5b3",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C66",
+      "claim": "The heart has one of the lowest incidences of cancers of any organ.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this idea, we note that of any organ, the heart has one of the lowest incidences of cancers (Bisel et al., 1953; Leja et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "65338ff1-5407-42fe-b212-1dc41ce91751",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C67",
+      "claim": "A recent study showed a tumor-protective role of polyploidy in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "and a recent study also showed a tumor-protective role of polyploidy in the liver (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "19fb89e7-2b5e-4266-8b97-12fd9f101901",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C68",
+      "claim": "While both injury-induced and developmental endocycles rely on Fzr, the upstream regulation in the injury context does not involve regulation of Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, while both injury-induced and developmental endocycles rely on Fzr, the upstream regulation in the injury context does not involve regulation of Notch, a well-known developmental endoreplication regulator in flies and mammals (Cornejo et al., 2011; Deng et al., 2001; Domanitskaya and SchupbachSch\u00fcpbach, 2012; Mercher et al., 2008; Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Poirault-Chassac et al., 2010; Shcherbata et al., 2004; Sun and Deng, 2007; Von Stetina et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from Notch manipulation experiments and comparison to cited developmental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "2ea33b57-8f82-481e-9103-df6455be76af",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C69",
+      "claim": "Loss of fzr alone is sufficient to restore pyloric mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is somewhat surprising that loss of fzr alone is sufficient to restore pyloric mitosis, as the cyclin dependent kinase 1 (Cdk1) activator Cdc25/String is often required (Schaeffer et al., 2004; Von Stetina et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from fzr knockdown experiments with comparison to cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a002d587-0265-4c05-8394-48c21f63bb47",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C70",
+      "claim": "In the pylorus, Cdk1 may be primed for activity but is kept inactive without its cyclin binding partners, which are negatively regulated by high levels of APC/Fzr.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the pylorus, Cdk1 may be primed for activity but is kept inactive without its cyclin binding partners, which are negatively regulated by high levels of APC/Fzr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on fzr knockdown results and known Cdk1 regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "5ae89257-ecba-4446-ad64-26062013da90",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C71",
+      "claim": "In the normally quiescent adult stage, induced cell proliferation may be more detrimental for tissue integrity than induced endocycles.",
+      "claim_type": "EXPLICIT",
+      "source": "As our data suggest, in the normally quiescent adult stage, induced cell proliferation may be more detrimental for tissue integrity than induced endocycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on RasV12 experiments showing tissue architecture defects with mitosis.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "e5bc459e-3050-483c-a965-6e532d5b65e0",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C72",
+      "claim": "Building new tissues during intestinal development necessitates the use of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "However, building new tissues during intestinal development necessitates the use of cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about developmental requirements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "53142e35-1d02-40bd-91fb-618fcd6b3f1b",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C73",
+      "claim": "The Dipteran intestine is completely remodeled during metamorphosis, and cell divisions from the pylorus are the source of the majority of new hindgut cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For poorly understood reasons, the Dipteran intestine is completely remodeled during metamorphosis, and cell divisions from the pylorus are the source of the majority of new hindgut cells (Aghajanian et al., 2016; Bodenstein, 1950; Fox and Spradling, 2009; Robertson, 1936; Sawyer et al., 2017; Takashima et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "fd615edb-0786-43f2-b15f-a693343ce9f3",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C74",
+      "claim": "Once organ remodeling is complete, the pylorus, which lacks stem cells, then ceases to divide.",
+      "claim_type": "EXPLICIT",
+      "source": "Once organ remodeling is complete, the pylorus, which lacks stem cells, then ceases to divide (Fox and Spradling, 2009; Sawyer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "16de2df0-cf36-4ef8-9334-c8eac5ef3f26",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C75",
+      "claim": "At the point when organ remodeling is complete, high fzr levels prevent any future cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that at this point, high fzr levels prevent any future cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from fzr expression data and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "247b75bb-4ea6-4f55-bbdb-f55c10585bd8",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C76",
+      "claim": "Following injury, there may be an increased negative regulation of mitotic entry, as polyploid cell division causes genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Following injury, there may be an increased negative regulation of mitotic entry, as we and others have shown that polyploid cell division causes genomic instability (Davoli et al., 2010; Duncan et al., 2010; Fox et al., 2010; Hassel et al., 2014; Schoenfelder et al., 2014; Storchov\u00e1 et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citations to previous work on polyploid cell division.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "a80d4d0f-53b0-4c6e-9c3d-6b5154b6ec89",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C77",
+      "claim": "DEMISE is amenable to injury studies in the imaginal disc.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this system is amenable to injury studies in the imaginal disc, a widely used tissue injury system (Harris et al., 2016; Smith-Bolton et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments in wing imaginal discs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "f901aa1c-35ed-4a18-8067-148dcba561bf",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C78",
+      "claim": "Other tissues with injury responses that would benefit from DEMISE include the stem cell-based midgut, the brain, the abdomen, the muscle and ovarian follicle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Other tissues with injury responses that we have not tested but that would benefit from DEMISE as a tool include the stem cell-based midgut (Apidianakis and Rahme, 2009; Buchon et al., 2009; Chatterjee and Ip, 2009; Jiang et al., 2009), the brain (Moreno et al., 2015), the abdomen (Losick et al., 2013; Losick et al., 2016), the muscle (Chaturvedi et al., 2017) and ovarian follicle cells (Tamori and Deng, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications with citations to relevant tissue systems.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "c9f8b633-11dc-432c-9b87-65d636cea9e0",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C79",
+      "claim": "The inducible reaper transgene can be used in studies of apoptotic signaling, such as the regulation of 'undead' cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond studies of tissue injury, our inducible reaper transgene can be used in studies of apoptotic signaling, such as the regulation of 'undead' cells which contain active caspase signaling but persist and influence the behavior of neighboring cells (Deveraux et al., 1998; Fan and Bergmann, 2014; Hay et al., 1994; Ryoo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications with citations to relevant studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "19305718-a387-483d-af37-69a5f35d991c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C80",
+      "claim": "There are vastly more currently available Gal4 and partner UAS lines than for LexA or Q systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While many dual transgene systems in flies combine Gal4 with either LexA or Q systems (Kockel et al., 2016; Lai and Lee, 2006; Potter et al., 2010), there are vastly more currently available Gal4 and partner UAS lines than for these other systems, making our system more immediately employable for the most cell types/transgenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about available genetic tools with citations to other systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "b2d0176e-4da9-4740-829f-9c92a9551b8d",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C81",
+      "claim": "The use of a single Gal4 promoter for both injury and transgene activation provides tissue specificity and ensures both injury and transgenes are expressed in the same population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the use of a single Gal4 promoter for both injury and transgene activation provides tissue specificity and ensures both injury and transgenes are expressed in the same population of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of DEMISE design feature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "345c49f8-6b5c-4f09-817e-375a3ed04498",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "claim_id": "C82",
+      "claim": "DEMISE could be adapted for use in other organisms by adapting existing FLP and Cre-mediated injury and gene knockout models.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond Drosophila, we note that our system could be adapted for use in other organisms, by adapting existing FLP and Cre-mediated injury and gene knockout models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential adaptation to other organisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e42e78a3-81b5-4aba-9d6d-33f7f88785cd",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Drosophila hindgut pylorus persists throughout the fly's lifespan and exhibits distinct cell cycle programs: mitotic cycles during metamorphosis for organ remodeling and endocycles during adult injury repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the developmental context of the pylorus. C1 is a well-established anatomical fact, C2 is supported by citations and Figure 1A, and C3 is a logical synthesis of the observed behaviors. These claims provide the foundational context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "89260862-0e96-41b0-a904-751246855774",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Developmental stage, not injury severity, dictates the pyloric cell cycle response: larval injury results in diploid cells with normal cell number in adults, while adult injury increases ploidy, decreases cell number, and increases cell size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 are well-supported by quantitative data in Figures 1C-H and supplementary figures. The dose-response experiment (C7) and statistical analysis (C8) convincingly demonstrate that developmental stage is the key determinant. The data are internally consistent and appropriately analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "36e1bccf-3d44-4951-b8f3-8a0a760d7f6a",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The pylorus accurately restores total genome content after injury regardless of developmental stage or injury severity, with ploidy increases proportional to cell number loss (R\u00b2=0.97, p<0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 present a key finding supported by strong statistical correlation (Figure 1G-I). The regression analysis is appropriate and the conclusion that genome content is restored is well-supported. This represents a novel quantitative insight into injury response precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "93d6e554-b46c-41c7-9605-834fa143ff0f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Following larval injury, remaining pyloric cells (~25% of original) increase their mitotic capacity approximately 3-fold to regenerate the adult hindgut pylorus and ileum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by clonal analysis data (Figure 2C-D', G-H) with appropriate statistical testing (p<0.0001). The calculation that ~75% of cells were eliminated and recovered is a reasonable inference from the clonal and cell count data. C12 relies on prior published work which is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "12b9cd85-7171-4cc6-83d4-48a33ad96431",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Adult pyloric cells do not undergo mitotic division after injury but instead endocycle, as evidenced by single-cell clones, absence of M-phase markers, and presence of S-phase markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 are supported by multiple complementary lines of evidence: clonal analysis (27/27 single cells), PH3 staining, EdU incorporation, and ploidy measurements. The convergence of these independent methods strongly supports the conclusion that adult cells endocycle rather than divide.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "cfba8ba8-4bf8-41d9-a078-0bc89b0d4df2",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FUCCI reporter analysis reveals that larval pyloric cells cycle through G1, S, and G2/M phases before and after injury, while adult pyloric cells are arrested in G0/G1 before injury-induced endocycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by FUCCI reporter data (Figure 2I-K) and are consistent with the mitotic/endocycle distinction established by other methods. The interpretation of FUCCI patterns is standard and appropriate. This provides mechanistic insight into the cell cycle state differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DEMISE is a new genetic method that enables independent control of tissue-specific injury and transgene expression by combining Gal4/Gal80ts and FLP/FRT systems with an FRT-Stop-FRT-rpr construct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 describe and validate the DEMISE method. The system is clearly described (C25-C28) and validated in both wing discs (C29-C30) and hindgut (C31) with appropriate controls showing transgene expression without injury and injury induction upon heat shock. The data in Figure 3 and supplementary figures support the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "215274f3-bb4b-4419-85fa-b676d06317f1",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fizzy-related (Fzr) is the Drosophila homolog of mammalian FZR1/CDH1, functions as an APC/C binding partner that degrades mitotic cyclins, regulates endocycles, and when mutated can cause ectopic mitotic cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 present established knowledge about Fzr supported by multiple citations. These are background claims that set up the rationale for testing Fzr's role in the pyloric injury response. The claims are well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "c9bbd29a-9eff-4c72-a10a-eb5a8612c0e6",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Fzr expression is high in adult but undetectable in larval pylorus, and fzr knockdown does not substantially alter hindgut development or the number of cells entering the cell cycle after injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by enhancer trap data (Figure 4A-B'), developmental observations, TUNEL staining (Figure 4D-F), and BrdU quantification. The differential expression pattern is key to the hypothesis, and the controls showing injury still occurs are important for interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fzr knockdown in injured adult pylorus restores mitotic cycles, leading to recovery of pre-injury cell number and ploidy, with mitotic cells visible and both early and late S-phase replication patterns present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 present the key mechanistic finding supported by multiple lines of evidence: cell number/ploidy restoration (Figure 4G-J), PH3/Centrosomin staining showing mitotic cells (Figure 4K-L'''), and BrdU/DNA FISH showing replication patterns. The convergence of evidence strongly supports that Fzr dictates the cell cycle switch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "3d9d2acf-6111-44ee-89ef-1117db690d7c",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Unlike developmental endocycles, injury-induced endocycles in the pylorus are Notch-independent but Fzr-dependent, as shown by absence of Hindsight expression and lack of effect from dominant-negative Notch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by Hindsight staining (supplementary Figure 4F-G) and Notch manipulation experiments (supplementary Figure 4H-K). The controls showing expected Notch phenotypes in rectal papillae validate the approach. This distinguishes injury-induced from developmental endocycles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "948d23a1-c1f6-4067-b8e6-7600010f9ee6",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RasV12 expression mimics injury responses in a developmental stage-dependent manner: larval expression increases cell number without changing nuclear size, while adult expression increases nuclear size without increasing cell number, consistent with endocycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by quantification in Figure 5G-H. C49 provides literature context. The parallel between RasV12 and injury responses is well-demonstrated and provides a model for testing functional consequences of the different cell cycle programs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In RasV12-expressing adults, fzr knockdown suppresses nuclear size expansion, increases cell number by ~20%, and causes epithelial architecture distortions in 23.3% of animals, despite decreased tissue area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 are supported by quantification in Figure 5C-L and supplementary figures. The data show that preventing endocycles (via fzr knockdown) under growth signaling leads to tissue architecture defects. The quantification is appropriate and the observations are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "e8c164ce-012d-4f74-a33a-79b27fbbc41b",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Under sustained growth signaling, endocycles protect against epithelial barrier permeability, with only fzr RNAi + RasV12 animals showing substantial permeability (17.33% \u00b1 3.18% SEM), similar to the frequency of architecture distortions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by Smurf assay data (Figure 5M) and the correlation with architecture distortions (Figure 5L). The similar frequencies suggest the defects are related. This demonstrates a functional consequence of the cell cycle choice and represents a key finding about endocycle function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "d9736b9d-2d64-4186-bd8e-3a4c7cddd3c4",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Both mitotic cycles and endocycles accurately replace lost tissue mass and genome content, with ploidy increases perfectly tuned to replace pre-injury genome number and fzr knockdown restoring correct cell number without ploidy increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 synthesize findings from the injury and fzr experiments. The conclusion that both cell cycle types can accurately restore genome content is well-supported by the quantitative data in Figures 1 and 4. This represents an important conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "dd35626f-d46f-4734-b475-2e545a001858",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Endocycles enable tissues to resist malformation and permeability under sustained growth signaling, suggesting they may maintain epithelial integrity in response to injury or excess growth signaling in some tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is well-supported by the RasV12 experiments (Figure 5). C65 extends this to a broader speculation about tissue function, which is reasonable given the data but remains somewhat speculative. The core finding about tissue protection is solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "2886724f-4bb3-4fc3-a291-ab1750010c8f",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The heart has one of the lowest cancer incidences of any organ, and polyploidy has been shown to have a tumor-protective role in the liver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by appropriate citations to prior literature. These are contextual claims that support the discussion of potential benefits of polyploidy. The citations appear appropriate for these well-established observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "bb591387-c4cc-4a7b-ad1d-19648d7fb5d4",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Injury-induced endocycles rely on Fzr but not Notch signaling, and loss of fzr alone is sufficient to restore mitosis, possibly because Cdk1 is primed but kept inactive by APC/Fzr-mediated cyclin degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is well-supported by the experimental data. C69 is an observation supported by the data but notes surprise compared to other systems. C70 is a reasonable mechanistic speculation based on known Cdk1 regulation, though it remains speculative without direct testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In normally quiescent adult tissues, endocycles may be less detrimental than mitosis for tissue integrity, while development requires mitosis for organ building. High fzr levels prevent division after organ remodeling, possibly to avoid genomic instability from polyploid cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C76 mix well-supported observations (C73-C74 with citations, C75 with data) with reasonable speculation (C71, C76). C72 is a logical inference. The speculation is well-grounded in the data and literature but represents interpretation rather than direct demonstration. The mechanistic details remain to be fully tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    },
+    {
+      "id": "95af040b-88e1-4f63-b5ce-9df088f9bea1",
+      "content_id": "c3d2b579-b2d5-4109-84d1-216553a08784",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "DEMISE is applicable to multiple Drosophila tissues including imaginal discs and potentially midgut, brain, abdomen, muscle, and ovarian follicle cells, and could be adapted for other organisms. It offers advantages over LexA/Q systems due to more available Gal4/UAS lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is directly demonstrated by the wing disc experiments. C78-C79 and C82 are reasonable speculation about potential applications with appropriate citations. C80-C81 make valid points about the practical advantages of the system. The demonstrated applications support the method's utility, while the speculative applications are appropriately framed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T02:06:07.071430Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1fb04e13-47d0-4038-82e9-8e4a9844a76f",
+      "result_id": "e42e78a3-81b5-4aba-9d6d-33f7f88785cd"
+    },
+    {
+      "claim_id": "cbe453f6-e910-40ea-a4ad-967f07a824cf",
+      "result_id": "e42e78a3-81b5-4aba-9d6d-33f7f88785cd"
+    },
+    {
+      "claim_id": "7d449b90-4c56-4c7c-93d5-f6d9f2bc182d",
+      "result_id": "e42e78a3-81b5-4aba-9d6d-33f7f88785cd"
+    },
+    {
+      "claim_id": "a6c8ab34-f4ff-4bb1-b649-010a1072ea8c",
+      "result_id": "89260862-0e96-41b0-a904-751246855774"
+    },
+    {
+      "claim_id": "acd6ac0e-4bd4-4a52-9948-b2d110426c78",
+      "result_id": "89260862-0e96-41b0-a904-751246855774"
+    },
+    {
+      "claim_id": "188a90a0-82e4-47d4-8693-6caef5c85100",
+      "result_id": "89260862-0e96-41b0-a904-751246855774"
+    },
+    {
+      "claim_id": "3796bbc9-8c77-4d47-a0ca-788e09245c74",
+      "result_id": "89260862-0e96-41b0-a904-751246855774"
+    },
+    {
+      "claim_id": "028c8a6a-6c77-4ce3-af96-1dc0954239aa",
+      "result_id": "89260862-0e96-41b0-a904-751246855774"
+    },
+    {
+      "claim_id": "7adde21d-14a5-4e0e-b575-994b80668ed2",
+      "result_id": "36e1bccf-3d44-4951-b8f3-8a0a760d7f6a"
+    },
+    {
+      "claim_id": "b945b3da-f9a6-4776-b937-e606e8a2dccb",
+      "result_id": "36e1bccf-3d44-4951-b8f3-8a0a760d7f6a"
+    },
+    {
+      "claim_id": "6624250f-2f0c-474d-bce8-19d4f9793f84",
+      "result_id": "36e1bccf-3d44-4951-b8f3-8a0a760d7f6a"
+    },
+    {
+      "claim_id": "012e5b25-cf77-4556-ac7c-3e3587acae82",
+      "result_id": "93d6e554-b46c-41c7-9605-834fa143ff0f"
+    },
+    {
+      "claim_id": "7a757575-1f10-45e6-88cc-f9446e534378",
+      "result_id": "93d6e554-b46c-41c7-9605-834fa143ff0f"
+    },
+    {
+      "claim_id": "cfd40093-bde9-4928-933a-207075a35415",
+      "result_id": "93d6e554-b46c-41c7-9605-834fa143ff0f"
+    },
+    {
+      "claim_id": "115fadf6-6141-4682-8d89-b8f3b3763d69",
+      "result_id": "93d6e554-b46c-41c7-9605-834fa143ff0f"
+    },
+    {
+      "claim_id": "7790609e-8aa2-4589-ba71-354106f2bc4c",
+      "result_id": "12b9cd85-7171-4cc6-83d4-48a33ad96431"
+    },
+    {
+      "claim_id": "621d23bd-0b7a-459d-a5a7-7400264b5d7a",
+      "result_id": "12b9cd85-7171-4cc6-83d4-48a33ad96431"
+    },
+    {
+      "claim_id": "3880b4a6-c92f-43f0-bdf3-294beae9caae",
+      "result_id": "12b9cd85-7171-4cc6-83d4-48a33ad96431"
+    },
+    {
+      "claim_id": "b2553f52-1fd6-4371-aaaa-cdee890388f3",
+      "result_id": "12b9cd85-7171-4cc6-83d4-48a33ad96431"
+    },
+    {
+      "claim_id": "de2c4aa8-7ace-472e-9c16-d45382e7a61c",
+      "result_id": "12b9cd85-7171-4cc6-83d4-48a33ad96431"
+    },
+    {
+      "claim_id": "a077aa3a-2488-4205-aaf5-096334a9758f",
+      "result_id": "cfba8ba8-4bf8-41d9-a078-0bc89b0d4df2"
+    },
+    {
+      "claim_id": "218836ea-81d6-46e7-9343-ca380e405fae",
+      "result_id": "cfba8ba8-4bf8-41d9-a078-0bc89b0d4df2"
+    },
+    {
+      "claim_id": "50c61004-3d29-494d-b653-e9b46cdb9c68",
+      "result_id": "cfba8ba8-4bf8-41d9-a078-0bc89b0d4df2"
+    },
+    {
+      "claim_id": "6c63b137-0a6b-4476-b2fb-289422a5dec0",
+      "result_id": "cfba8ba8-4bf8-41d9-a078-0bc89b0d4df2"
+    },
+    {
+      "claim_id": "3949e805-b049-47d9-b077-29347d6c042b",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "0c4cab76-8623-4cf6-9248-f7d27276bd74",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "93e1afb4-8b70-49e7-9925-2da3199def20",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "fe3d45cd-b09b-40a9-9eaa-bc7af4d721d9",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "1c10f678-ba48-40cd-b185-b4c4c86f334c",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "0031de89-2e97-44e1-9195-0d525f735bfb",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "da23dfc6-7cc9-4f3b-a408-78cb7ca4ce4b",
+      "result_id": "c3c0b2d7-7fc6-42b8-8017-f3c7df5cd627"
+    },
+    {
+      "claim_id": "99ad2da8-f7bc-41f8-af22-83a8ed5b024e",
+      "result_id": "215274f3-bb4b-4419-85fa-b676d06317f1"
+    },
+    {
+      "claim_id": "deabd8d8-d9ce-4f0a-a0dd-6edad1536772",
+      "result_id": "215274f3-bb4b-4419-85fa-b676d06317f1"
+    },
+    {
+      "claim_id": "236e60af-964b-4d57-9724-e965cb5afb47",
+      "result_id": "215274f3-bb4b-4419-85fa-b676d06317f1"
+    },
+    {
+      "claim_id": "ce405eb6-9d0d-4fb2-bea4-067952c079ce",
+      "result_id": "215274f3-bb4b-4419-85fa-b676d06317f1"
+    },
+    {
+      "claim_id": "2e927075-61cc-4b04-a736-d9214e710029",
+      "result_id": "c9bbd29a-9eff-4c72-a10a-eb5a8612c0e6"
+    },
+    {
+      "claim_id": "084d72fa-0e77-478c-b1d5-3cf5ef3bf965",
+      "result_id": "c9bbd29a-9eff-4c72-a10a-eb5a8612c0e6"
+    },
+    {
+      "claim_id": "17f091be-fcc5-4121-b3c4-4e5dd61e4e9f",
+      "result_id": "c9bbd29a-9eff-4c72-a10a-eb5a8612c0e6"
+    },
+    {
+      "claim_id": "7a4e51b1-29cf-4fb6-be16-7de02eb84d66",
+      "result_id": "c9bbd29a-9eff-4c72-a10a-eb5a8612c0e6"
+    },
+    {
+      "claim_id": "b835d583-adf1-4039-8744-c600f4a6f217",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "043497b9-aa11-4831-a170-95ffb7b0aede",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "fc5368a8-1efe-4616-bab9-26dc92e33be7",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "a0d196b5-2ad5-48c2-80e9-760c85fad8b7",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "c151f0d5-5e28-466f-97ad-04464a820cd0",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "547aaea1-38a5-4ef9-a2a0-1ccc6dfe1660",
+      "result_id": "6de3d5aa-23ac-47bc-8ad4-2a6a728c9b7a"
+    },
+    {
+      "claim_id": "06a651cb-a979-4a63-b8bb-b77f63c79d8e",
+      "result_id": "3d9d2acf-6111-44ee-89ef-1117db690d7c"
+    },
+    {
+      "claim_id": "9f63c386-35ae-4785-b721-a65232d4f812",
+      "result_id": "3d9d2acf-6111-44ee-89ef-1117db690d7c"
+    },
+    {
+      "claim_id": "01e5a04a-5031-41df-b1eb-0e54d765177b",
+      "result_id": "3d9d2acf-6111-44ee-89ef-1117db690d7c"
+    },
+    {
+      "claim_id": "7d06e1f0-46c7-4458-8f58-a4466d3ae992",
+      "result_id": "948d23a1-c1f6-4067-b8e6-7600010f9ee6"
+    },
+    {
+      "claim_id": "55077546-a129-4cf4-a90d-4cf24947f9f7",
+      "result_id": "948d23a1-c1f6-4067-b8e6-7600010f9ee6"
+    },
+    {
+      "claim_id": "d4c79e91-bcf6-45df-a71d-8bff70605bec",
+      "result_id": "948d23a1-c1f6-4067-b8e6-7600010f9ee6"
+    },
+    {
+      "claim_id": "9a3ceeca-f2a9-4fb2-b627-00f1e274e4e8",
+      "result_id": "948d23a1-c1f6-4067-b8e6-7600010f9ee6"
+    },
+    {
+      "claim_id": "79024613-d124-4263-9407-dc7df49bef32",
+      "result_id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f"
+    },
+    {
+      "claim_id": "a758d27a-b684-45dc-b4d5-9248e6577bcb",
+      "result_id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f"
+    },
+    {
+      "claim_id": "d1886ff5-6818-4491-aa93-502b6f6e8cd9",
+      "result_id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f"
+    },
+    {
+      "claim_id": "b8446e68-7e94-4fd7-8944-3991cacd2b72",
+      "result_id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f"
+    },
+    {
+      "claim_id": "39c203fc-b414-40ba-b072-c8c9bdad0fd7",
+      "result_id": "cbc33564-a20a-4c6d-b5d8-2e846e05195f"
+    },
+    {
+      "claim_id": "7060bea3-e4b4-438d-a6f8-15fcb1fc4c8a",
+      "result_id": "e8c164ce-012d-4f74-a33a-79b27fbbc41b"
+    },
+    {
+      "claim_id": "7710b0e3-21bd-4eb5-ae50-0d287a723bc1",
+      "result_id": "e8c164ce-012d-4f74-a33a-79b27fbbc41b"
+    },
+    {
+      "claim_id": "85b309d5-ff20-4da8-b00a-6382ec8d7647",
+      "result_id": "e8c164ce-012d-4f74-a33a-79b27fbbc41b"
+    },
+    {
+      "claim_id": "5c304cfe-d3fd-4ba3-ab88-8202ba6f44e1",
+      "result_id": "d9736b9d-2d64-4186-bd8e-3a4c7cddd3c4"
+    },
+    {
+      "claim_id": "7c2b4886-071a-4cd5-989c-22ccc3c8ddd3",
+      "result_id": "d9736b9d-2d64-4186-bd8e-3a4c7cddd3c4"
+    },
+    {
+      "claim_id": "1d69a3ed-d1cb-4526-83a2-6e8e9856985d",
+      "result_id": "d9736b9d-2d64-4186-bd8e-3a4c7cddd3c4"
+    },
+    {
+      "claim_id": "c2e3dc34-7c6b-4117-bb5a-26370529d35d",
+      "result_id": "dd35626f-d46f-4734-b475-2e545a001858"
+    },
+    {
+      "claim_id": "738be4b2-3c37-47e8-aa80-01c3fb4561ec",
+      "result_id": "dd35626f-d46f-4734-b475-2e545a001858"
+    },
+    {
+      "claim_id": "47c54490-9596-4f61-80df-128e40acd5b3",
+      "result_id": "2886724f-4bb3-4fc3-a291-ab1750010c8f"
+    },
+    {
+      "claim_id": "65338ff1-5407-42fe-b212-1dc41ce91751",
+      "result_id": "2886724f-4bb3-4fc3-a291-ab1750010c8f"
+    },
+    {
+      "claim_id": "19fb89e7-2b5e-4266-8b97-12fd9f101901",
+      "result_id": "bb591387-c4cc-4a7b-ad1d-19648d7fb5d4"
+    },
+    {
+      "claim_id": "2ea33b57-8f82-481e-9103-df6455be76af",
+      "result_id": "bb591387-c4cc-4a7b-ad1d-19648d7fb5d4"
+    },
+    {
+      "claim_id": "a002d587-0265-4c05-8394-48c21f63bb47",
+      "result_id": "bb591387-c4cc-4a7b-ad1d-19648d7fb5d4"
+    },
+    {
+      "claim_id": "5ae89257-ecba-4446-ad64-26062013da90",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "e5bc459e-3050-483c-a965-6e532d5b65e0",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "53142e35-1d02-40bd-91fb-618fcd6b3f1b",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "fd615edb-0786-43f2-b15f-a693343ce9f3",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "16de2df0-cf36-4ef8-9334-c8eac5ef3f26",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "247b75bb-4ea6-4f55-bbdb-f55c10585bd8",
+      "result_id": "6fa20cdb-07cf-44db-98ae-0fa6a60e40d8"
+    },
+    {
+      "claim_id": "a80d4d0f-53b0-4c6e-9c3d-6b5154b6ec89",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    },
+    {
+      "claim_id": "f901aa1c-35ed-4a18-8067-148dcba561bf",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    },
+    {
+      "claim_id": "c9f8b633-11dc-432c-9b87-65d636cea9e0",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    },
+    {
+      "claim_id": "19305718-a387-483d-af37-69a5f35d991c",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    },
+    {
+      "claim_id": "b2d0176e-4da9-4740-829f-9c92a9551b8d",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    },
+    {
+      "claim_id": "345c49f8-6b5c-4f09-817e-375a3ed04498",
+      "result_id": "95af040b-88e1-4f63-b5ce-9df088f9bea1"
+    }
+  ],
+  "comparisons": []
+}

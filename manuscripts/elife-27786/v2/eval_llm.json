@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C87"
+    ],
+    "result": "Ribosome profiling in LPS-treated BMDMs identified 724 mRNAs with significant translation efficiency changes and demonstrated high-quality data with expected ribosome footprint characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12, and C87 collectively demonstrate that the ribosome profiling data are of high quality (showing expected offsets, codon periodicity, and CDS specificity) and reproducible between biological replicates. The identification of 724 differentially translated mRNAs (C1) is well-supported by the technical validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C85"
+    ],
+    "result": "The 3'UTRs of differentially translated mRNAs are enriched for binding motifs of multiple RNA-binding proteins expressed in activated BMDMs, suggesting widespread translational regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, and C85 are supported by computational motif enrichment analysis (Figure 1F) and gene ontology analysis (Figure 1\u2014figure supplement 1B). The enrichment of RBP binding motifs in differentially translated mRNAs provides strong evidence for translational regulatory networks, though functional validation is limited to Zfp36.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18"
+    ],
+    "result": "Zfp36 functions as a translation repressor as demonstrated by tethering experiments showing reduced luciferase activity and translatability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, and C18 are supported by tethering assay data (Figure 1\u2014figure supplement 4) showing that Zfp36 reduces both luciferase activity and mRNA translatability. The experimental design appropriately controls for mRNA level changes by calculating translatability as activity normalized to mRNA level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "TNF mRNA is translationally repressed in late stages of inflammation, shifting from polyribosomes to mRNP fractions between 1 and 6 hours post-LPS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C88-C90 are supported by multiple lines of evidence: ribosome profiling data (Figure 1\u2014figure supplement 2), translation efficiency calculations (Figure 1\u2014figure supplement 3A), and polysome profiling with qRT-PCR (Figure 1\u2014figure supplement 3B-C). The Gapdh control (C90) demonstrates specificity of the translational repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A Zfp36-V5 knock-in mouse was successfully generated using CRISPR/Cas9, producing phenotypically normal mice with endogenous Zfp36 expression levels and enabling specific detection and efficient isolation of Zfp36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are well-supported by genotyping data (Figure 2B, Figure 2\u2014figure supplement 1A), functional validation showing normal LPS response (Figure 2\u2014figure supplement 1B), Western blot data demonstrating specific detection (Figure 2C, Figure 2\u2014figure supplement 1C), and immunoprecipitation data showing efficient isolation (Figure 2D). The model is appropriately validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Endogenous Zfp36 directly interacts with Pabpc1 in an RNA-independent manner in activated BMDMs, as identified by quantitative proteomics and validated by co-immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C28 are supported by TMT-based quantitative proteomics (Figure 3B, Supplementary file 2) and multiple co-IP experiments with RNaseA and RNase1 treatment (Figure 3C-D, Figure 3\u2014figure supplement 1). The RNA-independence is convincingly demonstrated. However, C28's claim of 'direct' interaction is inferred rather than definitively proven (e.g., by in vitro binding assays).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C65"
+    ],
+    "result": "A minimal Pabpc1-interacting region on Zfp36 (amino acids 39-196, Zfp36-mF) was identified through structure-function mapping and overlaps with the RNA-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C65 are supported by systematic co-IP experiments with Zfp36 truncations (Figure 3E-F). The mapping is thorough and identifies a stable, specifically-interacting fragment. The overlap with the RNA-binding domain is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C33"
+    ],
+    "result": "Zfp36-mediated translational repression requires interaction with Pabpc1, as demonstrated by loss of repression with Zfp36 truncations lacking Pabpc1-binding ability and with poly(A)- mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C33 are supported by tethering experiments (Figure 4B, 4F) showing that Zfp36 truncations unable to bind Pabpc1 cannot repress translation, and that Zfp36 cannot repress poly(A)- mRNAs. The experimental logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The FLuc-5BoxB-MALAT1 reporter produces a poly(A)- transcript that is not bound by Pabpc1, as validated by poly(A) fractionation and RNA immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 are supported by poly(A) fractionation data (Figure 4C) and RNA-IP experiments (Figure 4D-E). The controls (histone mRNA, 18S rRNA, Gapdh) are appropriate and demonstrate the specificity of the poly(A)- status and lack of Pabpc1 binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CLIP-seq identified 280 Zfp36 target mRNAs in activated BMDMs with binding peaks predominantly in 3'UTRs and enriched for the UAUUUAUU motif, consistent with in vitro binding studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C91-C93 are supported by CLIP-seq data with appropriate quality metrics (Figure 5A-D, Supplementary file 3). The reproducibility between replicates is demonstrated (C92), and the identified motif (C36-C37) is consistent with known Zfp36 binding preferences. The inclusion of known targets (TNF, IL-6) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C71"
+    ],
+    "result": "Zfp36 target mRNAs are involved in cytokine and chemokine signaling pathways and include proinflammatory cytokines such as TNF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C71 are supported by gene ontology analysis (Figure 5E) and CLIP-seq data identifying specific targets. The biological relevance to inflammation is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Expression of the Zfp36-mF fragment reduces the endogenous Zfp36-Pabpc1 interaction by half and causes specific shifts of Zfp36 target mRNAs from mRNP to polyribosome fractions without affecting global polysome profiles or non-target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by co-IP quantification (Figure 6B-C), polysome profiling (Figure 6D-E), and appropriate controls (Gapdh as non-target, C42). The experimental design using the RNA-binding-deficient Zfp36-mF fragment is clever and avoids confounding effects of competitive RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Attenuation of the Zfp36-Pabpc1 interaction by Zfp36-mF expression results in minimal changes to TNF and IL-6 mRNA levels but significant increases in their protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by qRT-PCR (Figure 6F) and ELISA data (Figure 6G). The disconnect between mRNA and protein levels provides strong evidence for translational regulation. However, the statistical significance for IL-6 in supernatant is noted as not significant, which slightly weakens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The Zfp36-Pabpc1 interaction is required for translational repression of Zfp36's target mRNAs in resolving inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the collective evidence from C39-C45 showing that disrupting the Zfp36-Pabpc1 interaction leads to increased translation of target mRNAs. The connection to 'resolving inflammation' is inferred from the known role of Zfp36 and the identity of target mRNAs as proinflammatory cytokines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C97"
+    ],
+    "result": "Zfp36 represses translation at late initiation or post-initiation steps, similar to steps regulated by Pabpc1, as demonstrated by inhibition of both canonical and IRES-mediated translation including CrPV IRES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C50, and C97 are supported by bicistronic reporter assays (Figure 7B-C). The inhibition of CrPV IRES-mediated translation, which requires only the 40S subunit, provides strong evidence for the proposed mechanism. The logic connecting Zfp36's mechanism to Pabpc1's known functions is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72",
+      "C74",
+      "C76"
+    ],
+    "result": "A model is proposed where Zfp36 binds target mRNAs, interacts with Pabpc1 to repress translation, then recruits decay factors to promote mRNA degradation, facilitating the transition from translation-competent to degradation-prone states to resolve inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C70, C72, C74, and C76 represent a proposed model that integrates the experimental findings with prior literature. While the translational repression via Pabpc1 interaction is well-supported by the current data, the sequential recruitment of decay factors and the complete transition model are speculative and not directly tested in this study. The model is reasonable but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Not all Zfp36 target mRNAs identified by CLIP-seq are translationally repressed during the inflammatory response, possibly due to combinatorial regulation by multiple RBPs or context-dependent binding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by comparison of CLIP-seq targets (Supplementary file 3) with differentially translated mRNAs (Supplementary file 1). The proposed explanations (C78-C79) are speculative but reasonable. This observation highlights the complexity of translational regulation and is appropriately discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Pabpc1-interacting domain and mRNA decay factor-interacting domains are located in different regions of Zfp36, suggesting that translational repression and mRNA degradation are sequential steps, with translation repression potentially accelerating degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by structure-function mapping data (Figure 3E-F) and citations to literature on the relationship between translation and decay. The inference that these are sequential steps is logical but not directly demonstrated. The model is consistent with available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Targeting poly(A)-binding proteins by sequence-specific RBPs to repress mRNA translation represents a new mechanism of translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the novel findings of this study demonstrating the Zfp36-Pabpc1 interaction and its requirement for translational repression. While the mechanism is new in this specific context, the evaluation of novelty relative to all prior literature is challenging. The claim is appropriately framed as a new mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The Zfp36-V5 knock-in mouse approach provides biologically relevant mechanistic insights different from overexpression studies and can be applied to other RBPs lacking high-quality antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by the successful application of the knock-in approach and comparison with prior overexpression studies. The advantages of studying endogenous proteins in primary cells are well-articulated. Claim C82 is speculative regarding future applications but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C14",
+      "C15",
+      "C16",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C75",
+      "C95",
+      "C96"
+    ],
+    "result": "Background knowledge and prior literature establish the context for inflammatory responses, Zfp36 function, mRNA decay mechanisms, and translation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C14-C16, C49, C51-C57, C59-C64, C75, C95-C96 represent established knowledge and prior literature appropriately cited to provide context. These claims are well-supported by the cited references and general scientific knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "In Zfp36 knockout BMDMs, TNF mRNA increases ~2-fold but TNF protein increases ~5-fold compared to wild-type, indicating translational repression by Zfp36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by citation to Taylor et al., 1996. This prior observation is appropriately used to support the hypothesis that Zfp36 represses translation in primary BMDMs. The inference is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The 51-nt V5 tag knock-in sequence neither alters the Zfp36 promoter nor changes regulatory elements in the 3'UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is inferred from the observation that Zfp36-V5 mice are phenotypically normal and BMDMs respond normally to LPS (C21-C23). While not directly tested by sequencing or reporter assays, the inference is reasonable given the knock-in design and functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The study reveals widespread translational regulation in macrophage-mediated inflammatory responses and identifies Zfp36 as a translation repressor targeting Pabpc1, with implications for future studies of other RBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C86 represent summary statements of the main findings. C83 and C84 are well-supported by the collective experimental evidence. C86 is speculative regarding future work but appropriately framed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Appropriate quality control measures were implemented for cell lines, and data are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe methodological quality control and data availability. These are factual statements about procedures performed and are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The Zfp36-mF fragment contains a point mutation (F118N) that abolishes RNA-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by citation to Lai et al., 2002. This prior characterization is appropriately used to justify the experimental design using Zfp36-mF to avoid competitive RNA binding effects.",
+    "result_type": "MINOR"
+  }
+]

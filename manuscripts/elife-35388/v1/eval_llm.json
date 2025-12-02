@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "S. pombe and S. cerevisiae Ire1 orthologs are not functionally interchangeable despite sharing 29% overall sequence identity. Domain-swapping experiments reveal that lumenal domains (21% identity) can complement across species, but transmembrane/cytosolic domains (45% identity) cannot, indicating that the cytosolic domains are responsible for functional incompatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide convergent evidence from sequence analysis, growth assays, and domain-swapping experiments. The growth phenotypes (C2, C5, C7) are clearly shown in Figure 1D-E with appropriate controls, and protein expression is confirmed (Figure 1B-C). The conclusion that cytosolic domains drive incompatibility (C8) logically follows from the complementation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The Ire1 kinase/RNase domains determine substrate specificity in vivo. Only Ire1 constructs bearing S. pombe cytosolic domains process S. pombe RIDD substrates (GAS2, BIP1), while only constructs with S. cerevisiae cytosolic domains splice HAC1 mRNA. The reduced splicing efficiency of chimeras with S. pombe lumenal domains correlates with reduced oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are well-supported by multiple orthogonal assays (Northern blot, qPCR, RT-PCR, microscopy) shown in Figures 1F-H and supplements. The correlation between oligomerization and splicing efficiency (C14-C15) is supported by microscopy data, though the mechanistic link is inferred rather than directly demonstrated. The conclusion that kinase/RNase domains are the major determinant (C16) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In vitro RNA cleavage assays demonstrate that S. cerevisiae and S. pombe Ire1 kinase/RNase domains have reciprocal substrate preferences. S. cerevisiae Ire1 efficiently cleaves HAC1-derived substrates but cleaves S. pombe substrates 60-500 fold slower. S. pombe Ire1 efficiently cleaves its cognate substrates (BIP1, SPAC4G9.15, PLB1) but cleaves HAC1 substrates ~60 fold slower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C82-C89 present quantitative kinetic data from in vitro assays (Figure 2D-G) with calculated kobs values and error estimates. The fold-differences are substantial and consistent across multiple substrates. The reciprocal specificity pattern strongly supports the conclusion that RNase specificity is intrinsic to the kinase/RNase domains and not dependent on cellular factors (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The different Ire1 RNase specificities are intrinsic to the enzyme and not dependent on other cellular factors such as associated proteins or lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is strongly supported by the in vitro cleavage data (C17-C22, C82-C89) using purified recombinant kinase/RNase domains in the absence of cellular components. The reciprocal substrate preferences observed in vitro match the in vivo patterns, validating this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C90",
+      "C91"
+    ],
+    "result": "S. cerevisiae and S. pombe Ire1 recognize distinct RNA sequence and structural motifs. S. cerevisiae Ire1 requires CNG|CNGN or CNG|ANGN in a strictly conserved 7-membered loop, while S. pombe Ire1 requires UG|C and tolerates variable loop sizes (3-9 nucleotides). Both enzymes cleave a shared substrate (CUG|CAGC in a 7-mer loop) with similar efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by prior literature (C24-C25), DMS modification/structure prediction data for 14 S. pombe substrates (C26, Figure 3 supplement 1), and in vitro cleavage of a designed shared substrate (C28, Figure 3E with kobs values C90-C91). The conclusion about loop size tolerance (C27) is well-supported by the structural analysis of multiple substrates showing 3-9 membered loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In vivo mutagenesis experiments confirm divergent substrate preferences. S. pombe Ire1 fails to cleave a BIP1-HAC1 hybrid mRNA containing AG|C instead of the cognate UG|C motif, but a single A\u2192U mutation restoring the UG|C motif rescues cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by qPCR data (Figure 3G) showing loss and restoration of cleavage with single nucleotide changes. This elegant experiment directly tests the sequence specificity model and provides strong support for the conclusion of divergent substrate preferences (C31). The experimental design appropriately controls for structural context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "S. pombe cells contain functional mRNA ligation machinery. When provided with appropriate RNA substrates (via expression of Ire1 with S. cerevisiae cytosolic domains), S. pombe cells successfully ligate mRNA fragments, indicating that substrate RNA features determine post-cleavage fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by RT-PCR data (Figure 4A) showing successful splicing of a HAC1-derived reporter in S. pombe when cleaved by Ire1 constructs with S. cerevisiae cytosolic domains. This demonstrates that S. pombe has the ligation machinery and that substrate features are critical. However, the efficiency of ligation is not quantified, and it's unclear if this represents native S. pombe ligase activity or a fortuitous compatibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C68"
+    ],
+    "result": "Engineering non-conventional mRNA splicing in S. pombe is achieved by inserting a synthetic splicing cassette (derived from HAC1 mRNA with S. pombe-optimized cleavage sites) into BIP1 mRNA or a synthetic construct. The engineered substrates are efficiently spliced upon ER stress, demonstrating that RNA structural features determine cleavage fragment fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C68 are supported by RT-PCR data (Figures 4C, 4F) and sequencing verification (Figure 4D). The successful engineering of splicing in S. pombe by introducing appropriate structural elements provides strong support for the conclusion that RNA structure determines post-cleavage fate (C38). This represents a major achievement demonstrating understanding of the mechanistic principles. The splicing cassette design is based on prior work (Peschek et al., 2015) on XBP1 mRNA conformational rearrangement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two main conclusions emerge: (1) evolutionary divergence of Ire1 substrate specificity determines which mRNAs are cleaved in each species, and (2) mRNA structural features determine the fate of cleaved fragments. S. pombe can perform non-conventional splicing when provided with appropriate substrates, without requiring specialized components beyond the RNA ligase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 represent summary conclusions well-supported by the collective evidence from domain swapping (C1-C16), in vitro kinetics (C17-C23), RNA structure analysis (C24-C31), and engineering experiments (C32-C38, C68). The conclusion that no specialized components are needed (C42) is supported by successful splicing in S. pombe, though the authors appropriately note this is \"not optimized in evolution for efficiency.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "S. pombe Ire1 has promiscuous RNase specificity with broad substrate scope consistent with its RIDD function, while S. cerevisiae Ire1 has stringent specificity with HAC1 mRNA as its only cellular substrate, consistent with its specialized splicing function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by the loop size tolerance data (C27), the number of identified substrates in each species, and citations to prior work (Niwa et al., 2005). The functional interpretation linking specificity to biological role is reasonable and well-argued, though it represents an inference about evolutionary adaptation rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mammalian Ire1\u03b1 may display two distinct modes of RNase activity: a stringent mode for 7-mer loops (XBP1, BLOC1S1) and a promiscuous mode for variable loop sizes (RIDD substrates, 5-9 mers). Ire1\u03b1 may switch between these modes in response to UPR timing or physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C48 are supported by citations and data (Figure 4 supplement 2), but C49-C50 are explicitly speculative (\"may display,\" \"seems plausible\"). While the hypothesis is reasonable given the yeast data, it lacks direct experimental support in mammalian systems. The authors appropriately qualify these as predictions, but they remain untested hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mammalian Ire1\u03b2 preferentially cleaves ribosomal RNA at G|C sites, distinct from Ire1\u03b1's preference for XBP1 splicing. S. pombe Ire1 does not cleave rRNA, suggesting Ire1\u03b2's rRNA cleavage is a specialized function. Modulating Ire1 RNase specificity emerges as a general regulatory theme across species and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by citations to prior work. Claim C54 is supported by Northern blot data (Figure 1 supplement 1A-B) showing no rRNA cleavage by S. pombe Ire1. The general conclusion about modulating RNase specificity (C55) is a reasonable inference from the comparative analysis, though it represents a conceptual synthesis rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In S. cerevisiae, HAC1 mRNA is specifically targeted to Ire1 via a 3'UTR signal, conferring exquisite specificity despite other mRNAs containing the cleavage motif. In contrast, S. pombe and mammalian cells target substrates to the ER via the SRP pathway, allowing Ire1 to sample multiple substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by citations to prior work (Niwa et al., 2005; Arag\u00f3n et al., 2009; Hollien and Weissman, 2006; and others). These represent established findings from the literature that provide important context for interpreting the current results. The distinction between dedicated targeting (S. cerevisiae) and SRP-mediated targeting (S. pombe/mammals) helps explain the different substrate specificities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In mammalian cells, XBP1 mRNA splicing and RIDD substrate degradation are predicted to be separated post-Ire1 cleavage. XBP1 mRNA cleavage sites are coordinated by a zipper-like structure enabling exon ligation, while RIDD substrates lack such coordination and are degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is well-supported by multiple citations to prior work on XBP1 structure and ligation. Claim C61 is a reasonable inference from the contrast with XBP1. However, C59 is explicitly a prediction (\"we predict\") based on the S. pombe engineering results, not direct evidence in mammalian cells. The prediction is logical but remains to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background and context claims establishing the UPR, Ire1 function, evolutionary separation of splicing and RIDD in yeasts, and prior knowledge about substrate recognition and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C81 represent established background knowledge supported by extensive citations to prior literature. These provide essential context for the study but are not novel findings. They are appropriately cited and accurately represent the state of the field. C80 (tunicamycin mechanism) and C81 (GAS2 as RIDD target) are specific factual claims well-supported by prior work.",
+    "result_type": "MINOR"
+  }
+]

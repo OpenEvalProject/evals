@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13"
+    ],
+    "result": "In C. glabrata, Pho4 is required but Pho2 is dispensable for survival during phosphate starvation, and Pho2 is only partially required for inducing PHO genes including the secreted phosphatase PMU2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, and C13 are directly supported by experimental data shown in Figure 1A (phosphatase activity assays) and Figure 1B (growth assays under phosphate limitation). The data clearly demonstrate that deletion of PHO2 in C. glabrata does not eliminate phosphatase expression or prevent survival under phosphate starvation, in contrast to S. cerevisiae where Pho2 is essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Phylogenetic analysis across 16 Hemiascomycete species reveals that reduced dependence on Pho2 evolved specifically in the glabrata clade (C. glabrata, C. bracarensis, N. delphensis, and C. nivariensis), while the ancestral state was Pho2-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C23 are supported by comprehensive phylogenetic analysis combined with functional assays shown in Figure 2. The data demonstrate that PHO4 and PHO2 are conserved as single-copy genes across species, but only Pho4 orthologs from the glabrata clade can induce Pho5 expression in the absence of Pho2. The phylogenetic distribution supports the inference that Pho2-dependence is ancestral and reduced dependence is derived in the glabrata clade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "C. albicans Pho4 shows weak Pho2-independent activity, and C. albicans does not require Pho2 for survival or phosphatase induction under phosphate limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by phosphatase assays (Figure 2A) and growth/phosphatase assays (Figure 1) showing that C. albicans Pho4 can weakly induce Pho5 without Pho2, and that pho2\u0394 strains survive phosphate limitation. However, the evolutionary relationship to the glabrata clade reduction in Pho2-dependence remains unclear due to the inability to test the Y. lipolytica outgroup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The extent of reduction in Pho2 dependence varies quantitatively among glabrata clade Pho4 orthologs, suggesting that combinatorial regulation strength is a quantitative trait that can be fine-tuned by evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by quantitative phosphatase assay data in Figure 2B showing variation in Pho2-independence levels among the four glabrata clade species. The inference that this represents a quantitative evolutionary trait is reasonable given the observed continuous variation, though the mechanistic basis for this variation is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In the S. cerevisiae background, reduced Pho2-dependence of Pho4 orthologs correlates with increased numbers of induced genes, with glabrata clade Pho4 orthologs inducing substantially more genes (e.g., 212 for CgPho4 vs 40 for ScPho4) in a largely Pho2-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C41 are strongly supported by RNA-seq data (Figure 3) showing that Pho4 orthologs with reduced Pho2-dependence induce more genes, and that this expansion is not explained by expression level differences (Figure 3 supplements 1-2). The correlation between reduced Pho2-dependence and target expansion is demonstrated across multiple orthologs, and the effect is independent of phylogenetic distance, supporting a functional rather than phylogenetic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C52"
+    ],
+    "result": "CgPho4 binds to approximately 50% more genomic sites than ScPho4 in S. cerevisiae (115 vs 74 peaks), while maintaining the same DNA binding specificity (CACGTG E-box motif).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47, C50, and C52 are supported by ChIP-seq data (Figure 4A) showing expanded binding of CgPho4 compared to ScPho4. Motif analysis demonstrates that both proteins recognize the same consensus sequence, indicating that binding expansion is not due to altered DNA specificity. The quantification of binding sites is clearly presented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "CgPho4 DNA binding is largely independent of ScPho2, while ScPho4 binding is significantly reduced in the absence of ScPho2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C51 are supported by ChIP-seq data comparing binding with and without Pho2 (Figure 4B). Statistical analysis shows a significant difference (p < 0.01) in the effect of Pho2 deletion on ScPho4 vs CgPho4 binding. The data clearly demonstrate differential Pho2-dependence for DNA binding between the two orthologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "CgPho4 can access binding sites with higher nucleosome occupancy compared to ScPho4, suggesting enhanced ability to compete with nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by analysis of published nucleosome occupancy data showing statistically significant differences (p = 0.012, Figure 4C). However, the authors acknowledge that the small sample size (N=11 for CgPho4-only sites) may limit detection of small differences. The conclusion in C54 about enhanced nucleosome competition is reasonable but somewhat speculative given the limited sample size and lack of direct mechanistic evidence. Additional experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CgPho4 activates a higher percentage of bound genes (56% vs 29% for ScPho4) and does so largely independently of Pho2 (>90% of CgPho4 targets induced without Pho2), while all ScPho4 targets require ScPho2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by integration of ChIP-seq and RNA-seq data (Figure 4D). The quantitative differences in activation efficiency and Pho2-dependence are clearly demonstrated with appropriate statistical analysis. The data provide strong evidence for both increased activation probability and Pho2-independence of CgPho4 compared to ScPho4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The combination of enhanced nucleosome competition and higher activation probability upon binding underlies the expansion of CgPho4 targets in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 represent a mechanistic synthesis of the binding and expression data. While C59 (nucleosome competition) has some uncertainty due to sample size limitations, the overall model is well-supported by the combined ChIP-seq and RNA-seq data showing both expanded binding and increased activation efficiency. The proposed mechanism is consistent with all experimental observations, though direct mechanistic validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In C. glabrata, CgPho4 binds to 100 genomic sites recognizing the same CACGTG motif, and this binding is largely independent of CgPho2, with only 18% of binding sites showing CgPho2 influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by ChIP-exo data in C. glabrata (Figure 5A and source data). The high-resolution ChIP-exo technique provides strong evidence for binding site identification, motif conservation, and Pho2 co-binding patterns. The quantification of Pho2-dependent vs independent binding is clearly presented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In C. glabrata, >60% of CgPho4 target genes are induced primarily by CgPho4 acting alone, while only 11/79 genes depend on collaborative CgPho4-CgPho2 action, contrasting with S. cerevisiae where 23/28 genes require cooperative ScPho4-ScPho2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by mutant cycle analysis of RNA-seq data integrating ChIP-exo binding information (Figure 5B-C). The statistical decomposition of expression components (Pho4 alone, Pho2 alone, and collaborative effects) is methodologically sound with appropriate replication. The contrast with S. cerevisiae is supported by citation to previous work, providing strong evidence for the evolutionary shift in combinatorial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "While the PHO pathway in C. glabrata maintains its core phosphate homeostasis function, only 16 of 79 CgPho4 targets are involved in phosphate homeostasis, and the specific genes performing these functions are not fully conserved with S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by GO enrichment analysis and comparative genomics (Figure 6A). The conservation of function despite turnover of specific genes is well-documented with examples of paralogous and non-orthologous replacements. The quantification of phosphate homeostasis genes among CgPho4 targets is clearly presented, supporting the conclusion of functional expansion beyond the core pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CgPho4 targets in C. glabrata are enriched for genes involved in diverse stress responses, cell wall biosynthesis, cell adhesion, and carbohydrate metabolism, suggesting functional expansion of the PHO regulon beyond phosphate homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by GO enrichment analysis (Figure 6B and source data). The functional categories are statistically enriched and represent a substantial fraction of CgPho4 targets. Claim C85 regarding lack of overlap between CgPho4 targets in the two species (except phosphate homeostasis genes) is supported by comparative analysis, though the evolutionary interpretation requires caution as discussed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The PHO network shows evolutionary constraint in core regulatory components (Pho4 identity, DNA binding specificity, and regulation mechanism) but plasticity in combinatorial regulation, with PHO2's functional role dramatically reduced in C. glabrata despite gene conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 synthesize multiple lines of evidence including phylogenetic conservation (C86), mechanistic conservation (C87, supported by citation), DNA binding specificity (C88, supported by ChIP data), and prior literature (C89). The conclusion about evolutionary constraint and plasticity (C90-C91) is well-supported by the comprehensive dataset showing conserved core components but altered combinatorial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Reduction in co-activator dependence led to dramatic expansion of CgPho4 targets, potentially extending network function beyond phosphate homeostasis, with evidence suggesting CgPho4 evolved to be stronger in DNA binding and gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 represent major conclusions synthesizing the experimental data. C92 is strongly supported by the target expansion data. C93 is supported by functional annotation showing diverse target functions, though the word \"potentially\" appropriately indicates this is somewhat speculative. C94 is supported by the combined ChIP-seq and RNA-seq data (Figure 4), though the exact molecular mechanism remains unclear as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The PHO stress response network shows greater evolutionary plasticity in target genes (~20 in S. cerevisiae vs ~70 in C. glabrata) compared to developmental networks, consistent with the hypothesis that stress response networks can more readily acquire and shed targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is directly supported by the target gene counts from RNA-seq and ChIP data. Claims C96-C97 represent broader evolutionary interpretations supported by comparison to prior literature on developmental networks and stress-responsive gene evolution. While C96 is somewhat speculative, it is appropriately framed as a hypothesis and is consistent with the observed data and cited literature (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Trans evolution in CgPho4 altered co-activator dependence while conserving DNA binding specificity, resulting in rapid target expansion that may be faster than cis-regulatory evolution and allows sampling of many potential targets simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by extensive prior literature (multiple citations). C99 is strongly supported by the experimental data showing conserved motif recognition but expanded targets. Claims C100-C101 are more speculative comparisons to cis-regulatory evolution, appropriately framed as hypotheses about evolutionary mechanisms. The speculation is reasonable given the observed rapid expansion of targets without changes in DNA binding specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The reduction in Pho2-dependence likely evolved gradually, and cis-regulatory evolution may have accompanied trans evolution to fix beneficial targets while removing non-beneficial ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the quantitative variation in Pho2-dependence observed among glabrata clade species (Figures 2B and 3C). Claim C103 is appropriately framed as speculation about the interplay between trans and cis evolution. While speculative, this is a reasonable hypothesis given the gradual nature of the observed changes and represents appropriate scientific discussion of evolutionary mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Evolution of combinatorial regulation can lead to rapid gene regulatory network rewiring, potentially providing a convenient evolutionary 'switch' for altering network output, and may be an underappreciated mechanism in GRN evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 represent the major conceptual conclusions of the study. C104 is strongly supported by the comprehensive experimental evidence. C105 is appropriately framed as speculation about evolutionary implications. C106 is supported by the findings and prior literature (citation to Slattery et al., 2011), representing a reasonable generalization of the specific findings to broader principles of GRN evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "CgPho4 targets include genes involved in osmotic stress (7 genes), oxidative stress (7 genes), cell wall synthesis (9 genes), and cell adhesion (3 genes), traits relevant for host survival and virulence, with similar patterns observed in C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by functional annotation of CgPho4 targets with appropriate citations linking these functions to virulence. Claims C110-C113 are supported by citations to prior studies in C. glabrata and C. albicans, providing comparative context. The functional categorization is based on GO analysis and literature-based annotation, which is appropriate for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Stress responses in commensal species may have evolved to be more coordinated and acquired new virulence-linked targets to cope with distinct host stress profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 are appropriately framed as speculation combining observations from this study with prior literature (citation to Kasper et al., 2015). While the functional expansion of CgPho4 targets is well-documented, the specific hypothesis about coordinated stress responses and adaptation to host environments is speculative and would require additional comparative studies across commensal and non-commensal species to validate. The speculation is reasonable but represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

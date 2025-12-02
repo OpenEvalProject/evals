@@ -1,0 +1,457 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The Nur77-eGFP reporter specifically measures antigen-dependent BCR signaling in B cells in vivo under steady-state conditions, and does not reflect signaling through other receptors such as CD40, TLRs, BAFF, IL-4, CXCR4, or microbial pattern recognition receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 collectively demonstrate through multiple genetic knockouts (CD40L-/-, TLR7-/-, Unc93b1, MyD88-/-), germ-free vs. SPF conditions, and in vitro stimulation experiments that Nur77-eGFP expression in B cells is specifically driven by BCR-antigen interactions and not by other signaling pathways. The data in Table 1 and multiple supplementary figures provide comprehensive controls supporting this specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "IgD expression is necessary to establish and maintain a broad dynamic range of surface IgM expression across the B cell repertoire, allowing fine-tuning of BCR signaling responsiveness according to autoreactivity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are supported by data in Figure 1B-C showing that IgM expression varies 100-fold across WT B cells and inversely correlates with Nur77-eGFP (autoreactivity), while IgD remains invariant. In IgD-/- mice, the dynamic range of IgM is highly restricted, and GFPhi cells cannot fine-tune IgM-mediated signaling. This demonstrates IgD's role in maintaining IgM expression diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "IgM-/- B cells express approximately twice as much surface BCR as IgD-/- B cells due to compensatory upregulation, yet both genotypes show nearly identical Nur77-eGFP distributions. On a per-receptor basis, IgD is less efficient than IgM at inducing Nur77-eGFP in response to endogenous antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by data in Figure 1D-F showing compensatory BCR upregulation, equivalent GFP distributions despite different receptor levels (Figure 1E), and that IgD-only cells require more surface BCR to achieve equivalent GFP levels compared to IgM-only cells (Figure 1F). This demonstrates reduced per-receptor efficiency of IgD for sensing endogenous antigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "IgD BCR crosslinking in vitro induces equivalent or enhanced signaling compared to IgM, including Erk phosphorylation, calcium mobilization, S6 phosphorylation, CD86, and Nur77-eGFP upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by data in Figure 2A-F showing that anti-Ig\u03ba stimulation of IgD-only B cells produces equivalent pErk (Figure 2A-B), enhanced calcium and pS6 (Figure 2C and supplement 1A), and greater CD86 and Nur77-eGFP induction after 18hr (Figure 2D-F). Controls with F(ab')2 fragments confirm this is not due to Fc effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Despite robust in vitro signaling, IgD-only B cells show reduced Nur77-eGFP and MHC-II upregulation when cultured without exogenous stimulus, and exhibit depressed basal calcium ex vivo, indicating that IgD responds less efficiently than IgM to endogenous antigens encountered in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by data in Figure 2G-I showing that unstimulated IgD-only cells have lower Nur77-eGFP and MHC-II expression (Figure 2G-H) and depressed basal calcium (Figure 2I) compared to IgM-only cells. This contrasts with their enhanced responses to anti-Ig\u03ba in vitro, demonstrating differential sensing of endogenous vs. artificial antigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IgD-only marginal zone (MZ) and B1a cells express significantly less Nur77-eGFP than WT cells despite higher surface BCR levels. This difference persists even among B1a cells with common PtC specificity and in BAFF Tg mice, and is attributable to BCR isotype rather than repertoire differences or VDJ locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by data in Figure 3 showing reduced GFP in IgD-only MZ and B1a cells (Figure 3A), persistence of this difference in PtC-specific B1a cells (Figure 3B-C), and in BAFF Tg mice where repertoire selection is relaxed (Figure 3D-E). Controls using IgM+/- mice and IgHa/b mice confirm this is cell-intrinsic and isotype-dependent (Figure 3 supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "IgD-only B cells are virtually excluded from the B1a compartment but preferentially populate the MZ compartment in competitive settings, consistent with reduced BCR signaling in vivo. This skewing is primarily attributable to lack of IgM rather than lack of IgD, and is reduced by BAFF overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by data in Figure 4 showing competitive exclusion of IgD-only cells from B1a and enrichment in MZ (Figure 4B), consistent with the signal strength model (Figure 4 supplement 1A). Comparisons of IgM+/-, IgD+/-, and BAFF Tg mice (Figure 4C-F) demonstrate this is due to lack of IgM on IgD-only cells rather than lack of IgD on IgM-only cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In Lyn-/- mice, both IgD-only and IgM-only B cells show comparable polyclonal activation (CD86/CD69 upregulation) and germinal center differentiation, indicating that IgD can provide sufficient signals for these fates when BCR signaling is enhanced by loss of Lyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 are supported by data in Figure 5A-B and supplements showing equal precursor frequencies (Figure 5 supplement 1A-C), enhanced BCR signaling in both isotypes in Lyn-/- background (Figure 5 supplement 2A-B), comparable CD86/CD69 upregulation (Figure 5A), and equivalent GC contributions (Figure 5B and supplement 3B-C). This demonstrates IgD sufficiency for these fates under enhanced signaling conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "IgM-expressing B cells generate IgG2a/c anti-dsDNA autoantibodies in Lyn-/- mice, while IgD-only B cells are protected from generating these autoantibodies. The fluctuating titers suggest these antibodies are produced by short-lived plasma cells rather than long-lived plasma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by data in Figure 5C-G showing IgM-expressing cells (from either IgH locus) produce anti-dsDNA while IgD-only cells do not, with this being isotype-dependent (Figure 5 supplement 3D-E). The fluctuating titers (Figure 5C-D) and citations to human SLE data support the SLPC origin interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In Lyn-/- mice, IgM BCR is required for Ets1 downregulation and expansion of unswitched (IgM+) plasma cells in spleen. IgD-only Lyn-/- B cells do not downregulate Ets1, do not show unswitched PC expansion, and do not have elevated serum IgD, demonstrating a cell-intrinsic requirement for IgM in this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 are supported by data in Figure 6 showing Ets1 downregulation in Lyn-/- but not IgM-/- Lyn-/- B cells (Figure 6A), fourfold increase in splenic unswitched PCs in Lyn-/- mice that is absent in IgM-/- Lyn-/- mice (Figure 6B-C), corresponding serum antibody levels (Figure 6D-E), and cell-intrinsic confirmation in competitive settings (Figure 6F-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "After SRBC immunization, IgD-only B cells generate robust germinal center responses comparable to WT and IgM-only cells, but are significantly impaired in generating IgG1+ short-lived plasma cells. This difference is attributable to BCR isotype rather than VDJ locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by data in Figure 7A-F showing equivalent GC responses across all genotypes (Figure 7A-B, E) but impaired IgG1+ PC generation in IgD-only cells (Figure 7C-D, F). Controls using IgHa/b mice confirm this is isotype-dependent (Figure 7 supplement 1A-B). This demonstrates differential requirements for GC vs. SLPC fates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "After NP-RSA immunization, IgD-only B cells show intact early germinal center responses but significantly reduced IgG1+ plasma cells and NP-specific IgG1 titers at 7-8 days, confirming that IgD-only follicular B cells have defects in adopting SLPC fate in response to T-dependent immunization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 are supported by data in Figure 7G-I showing normal GC responses but reduced IgG1+ PCs and NP-specific IgG1 titers in IgD-only cells after NP-RSA immunization. This replicates the SRBC findings with a different T-dependent antigen, strengthening the conclusion about IgD's differential capacity for GC vs. SLPC fates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C129",
+      "C130",
+      "C161"
+    ],
+    "result": "IgD BCRs sense endogenous antigens more weakly than IgM BCRs in vivo despite robust signal transduction in vitro, leading to impaired cell fate decisions dependent on BCR signal strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C129-C130, and C161 represent the central conclusion of the study, supported by the collective evidence from Figures 1-7 showing: (1) reduced per-receptor GFP induction by IgD (Figure 1F), (2) robust in vitro but impaired ex vivo signaling (Figure 2), (3) reduced GFP in innate-like B cells (Figure 3), (4) skewed developmental fates (Figure 4), (5) protection from autoantibody production (Figure 5), (6) failure to expand unswitched PCs (Figure 6), and (7) impaired SLPC but intact GC responses to immunization (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors propose that impaired antigen sensing by IgD is conferred by structural properties of IgD (flexible hinge) or differential clustering with co-receptors, such that endogenous antigens presented in certain contexts do not efficiently trigger IgD signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C138 are mechanistic proposals that are speculative and not directly tested in this study. While the authors cite prior work on IgD structure (C18, C136) and co-receptor clustering (C136), they do not provide experimental evidence distinguishing between these mechanisms. The proposals are reasonable interpretations but require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Strong BCR signals favor SLPC over GC fate through Btk-dependent Ets1 downregulation. IgM is more efficient than IgD at promoting SLPC fate in response to endogenous antigens, and this is unlikely due to differences in antigen capture/presentation since GC entry (which requires T cell help) is intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 integrate prior literature (C145-C146, supported by citations) with the current findings showing IgM requirement for Ets1 downregulation and SLPC expansion in Lyn-/- mice (Figure 6), and the parallel between IgM-/- Lyn-/- and Btklo Lyn-/- mice (C150). The inference that antigen capture/presentation differences are unlikely (C148) is supported by intact GC responses of IgD-only cells (Figures 5B, 7E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C160",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors propose a model where IgM downregulation on autoreactive B cells limits their differentiation into SLPCs and prevents autoantibody secretion, while high IgD expression maintains survival and allows participation in T-dependent responses including germinal centers where autoreactivity can be 'redeemed' through somatic hypermutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152, C160, C162-C163 represent the authors' proposed unified model integrating their findings with prior work. The model is well-supported by the data showing: (1) IgD-only cells are protected from SLPC differentiation in response to endogenous antigens (Figures 5-6), (2) IgD is sufficient for GC entry (Figures 5B, 7E), (3) IgD provides survival signals (Figure 4C-D, C158), and (4) prior work showing autoreactive cells can be redeemed in GCs (C156). The model synthesizes the experimental findings into a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on B cell tolerance: Naive B cells co-express IgM and IgD with identical antigen-binding domains. Despite tolerance checkpoints during development, autoreactive B cells persist in the mature repertoire and are characterized by IgM downregulation, which has been proposed to mark autoreactive 'anergic' B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C12 provide established background knowledge supported by multiple citations to prior literature. These claims set up the biological context and rationale for the study. The characterization of the Nur77-eGFP reporter (C9-C10) is supported by prior work (Zikherman et al., 2012) and data in Figure 1A-B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on IgM and IgD: These isotypes are splice variants with identical antigen-binding domains and cytoplasmic tails but different Fc regions. IgD has a longer flexible hinge than IgM. Initial characterization showed substantial redundancy, though recent work suggested IgM uniquely responds to monovalent antigens while both respond to multivalent antigens. However, both can signal in response to soluble HEL in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 provide established background on IgM/IgD structure and function, supported by multiple citations. These claims highlight the apparent contradiction in the literature (C19 vs. C20) that motivates the current study's investigation of how these isotypes differentially respond to endogenous antigens in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C158"
+    ],
+    "result": "IgM-only B cells exhibit a disadvantage in the mature follicular compartment relative to IgD-only B cells, which is attributable to absence of IgD rather than excess IgM. This may reflect impaired positive selection or survival in absence of IgD, consistent with an obligate survival function for IgD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 and C158 are supported by data in Figure 4C-D showing competitive disadvantage of IgM-only cells in the Fo compartment, with WT and IgD-only cells competing equally well. This is consistent with prior observations (C75) and supports an IgD survival function. However, the mechanistic interpretation (C74) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "IgD-only B cells generate unswitched plasma cells in response to SRBC immunization in both non-competitive and competitive settings. Unswitched PC numbers correlate with MZ B cell numbers, and MZ B cells efficiently generate unswitched PCs even to T-dependent antigens, suggesting the unswitched PC response may originate from the MZ compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 are supported by data in Figure 7 supplement 1C-D showing intact unswitched PC responses by IgD-only cells, and the correlation with MZ numbers (Figure 4 supplements). The interpretation that unswitched PCs originate from MZ rather than Fo B cells (C123) is speculative but supported by the correlation and prior literature (C122, C124).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background on Lyn-/- mice: These mice develop lupus-like autoimmunity with anti-DNA antibodies. Polyclonal B cell activation and IgM plasma cell expansion are B cell-intrinsic, MyD88-independent phenotypes driven by enhanced BCR signaling through a Btk-Ets1-Blimp1 pathway. The IgM PC expansion arises from Fo B2 cells, not B1a cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C82, C96-C105 provide established background on the Lyn-/- model, supported by multiple citations to prior literature. These claims establish the rationale for using this model to test differential IgM vs. IgD function in response to endogenous antigens under conditions of enhanced BCR signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors address potential confounding factors: IgD is required for CXCR4 signaling, but Nur77-eGFP is insensitive to CXCR4. TLR ligands do not show selective dependence on IgM or IgD. The Fc-receptor for IgM may play a role, but all phenotypes are confirmed to be cell-intrinsic and independent of secreted IgM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 address potential alternative explanations for the observed differences between IgM and IgD. The controls showing Nur77-eGFP insensitivity to CXCR4 (Figure 1 supplement 1C) and TLR ligands (Figure 1 supplement 3A), and cell-intrinsic confirmation using heterozygous mice, strengthen the conclusion that differences are due to differential antigen sensing rather than other signaling pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C159"
+    ],
+    "result": "IgD is sufficient for germinal center differentiation, and autoreactive IgDhi IgMlo B cells may enter GCs with greater efficiency due to improved survival. Selection mechanisms within GCs must ensure that somatic hypermutation abolishes autoreactivity, and prior work shows autoreactive BCRs can be 'redeemed' by mutation. IgD may be essential for survival of autoreactive B cells to fill holes in the repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157, C159 integrate the current findings (IgD sufficiency for GC, Figures 5B, 7E) with prior literature on GC tolerance mechanisms and BCR redemption (C154, C156, C157). The survival function of IgD (C157, C159) is supported by competitive data (Figure 4) and prior work. These claims provide context for why autoreactive cells are retained rather than deleted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Summary of key findings: 5-10% of human naive B cells express autoreactive IGHV4-34 with IgM downregulation. In mice, IgD-only MZ and B1a cells show reduced Nur77-eGFP, IgD drives developmental patterns consistent with reduced antigen recognition, and IgD is less efficient than IgM at driving SLPC expansion but sufficient for GC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 summarize key findings from the manuscript. C21-C22 provide human context (supported by citations), while C23-C26 summarize the main experimental findings supported by data in Figures 3-7. These claims accurately reflect the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The authors reconcile prior contradictory findings by proposing that IgD's sensitivity to endogenous antigens lies between complete insensitivity and full sensitivity - IgD can sense endogenous antigens, just less efficiently than IgM. This is consistent with prior work showing both IgM and IgD can mediate anergy to high-affinity soluble antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 provide a synthesis of the current findings with prior literature. The conclusion that IgD has intermediate sensitivity (C127) is well-supported by the collective data showing IgD can signal in vitro and drive some fates (GC, polyclonal activation) but not others (SLPC expansion, autoantibody production). The consistency with prior anergy studies (C128) strengthens this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The authors speculate that relevant endogenous antigens may include non-inflammatory antigens from the gastrointestinal tract and may be membrane-bound, with recent studies highlighting the importance of membrane properties in BCR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133 are speculative statements about the nature of endogenous antigens. While C133 is supported by citations to prior work on membrane-bound antigens and BCR signaling mechanics, C132 is purely speculative. These claims identify important questions for future work but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Differential Nur77-eGFP induction by IgM and IgD is not attributable to differential dependence on CXCR4 or TLR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by data in Figure 1 supplement 1C and Figure 1 supplement 3A showing that neither CXCR4 ligand nor TLR ligands differentially affect IgM-only vs. IgD-only B cells. This control is important to rule out alternative explanations for the observed differences in GFP induction.",
+    "result_type": "MINOR"
+  }
+]

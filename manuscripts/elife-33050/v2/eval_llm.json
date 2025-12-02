@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C26",
+      "C28",
+      "C29",
+      "C97"
+    ],
+    "result": "The authors developed a novel computational method to identify antigen-specific TCR clonotypes shared due to convergent selection rather than convergent recombination. The method is based on a mechanistic model of V(D)J recombination, estimates generation probabilities using Monte Carlo simulation of 2\u00d710^9 recombination events, and can be applied to small patient cohorts without requiring healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C29 and C97 collectively describe the methodological framework. The approach is logically sound: convergently selected clonotypes should have lower generation probabilities than convergently recombined ones (C26), and the Monte Carlo estimation method (C29) addresses the computational intractability of direct calculation (C28). The method's basis in established V(D)J recombination models (Murugan et al., 2012; Marcou et al., 2017) provides theoretical grounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C75",
+      "C76",
+      "C77",
+      "C98",
+      "C102",
+      "C103"
+    ],
+    "result": "The method successfully validated previously identified CMV and T1D-associated TCR sequences. In 3 out of 4 datasets, MHC-multimer-validated antigen-specific sequences were ranked as most significant by the algorithm. Antigen-specific clonotypes showed lower generation probabilities than other clonotypes shared among the same number of donors, and model predictions agreed well with empirical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C98 report the key validation result with specific quantitative outcomes (3/4 datasets, Table 2). Claims C102-C103 and Figure 2 demonstrate that the method's predictions align with biological expectations and empirical observations. The use of independently validated sequences (C22) from public databases (C75) provides appropriate ground truth for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C103"
+    ],
+    "result": "The authors developed an axis transformation method to compare model predictions (P_post) with empirical data (P_data) on the same scale, enabling visual identification of outliers by their distance from the identity line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 describes the methodological development, and C103 confirms that the transformed visualization shows good agreement between model and data (Figure 2B). This is a straightforward technical contribution that facilitates interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The method identifies additional significant outliers beyond those reported in source studies and can diagnose intersample contamination by analyzing nucleotide-level sharing patterns. For the T1D-associated sequence CASSLVGGPSSEAFF, all 8 donors shared the identical nucleotide variant, which was absent from 19 simulated variants (18 unique), indicating contamination (p<10^-6 by Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe the discovery of additional outliers with three possible explanations. Claims C79-C87 provide a concrete contamination detection example with statistical support. The nucleotide diversity analysis is logically sound: true convergent recombination should produce diverse nucleotide sequences encoding the same amino acid, while contamination produces identical sequences. The Fisher's exact test provides appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "The model assumes all observed sequences passed thymic selection and uses a correction factor Q to account for the fraction of generated sequences that pass selection, differing from prior work (Elhanati et al., 2014) that learned sequence-specific selection factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C72 clearly state the modeling assumption. While this is a simplification compared to sequence-specific selection models, it is explicitly acknowledged and represents a reasonable trade-off for the method's intended application to small cohorts without controls. The correction factor Q is estimated empirically from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "Simulation analyses show that larger cohort sizes and effect sizes enable detection of lower-abundance clonotypes. However, very high sequencing depth can cause abundant, frequently-generated clones to be missed when found in all donors; this can be addressed by in silico downsampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C92 report findings from simulation studies (Figure 4), and C93 proposes a solution. The identification of this limitation is valuable, though the proposed downsampling solution (C93) is speculative and not empirically validated in the manuscript. The simulation framework appears sound for exploring parameter space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The required cohort size for identifying antigen-specific clonotypes depends on response strength and diversity. CMV and Herpesviridae can elicit responses comprising up to 10% of CD8+ cells in elderly individuals, while acute yellow fever vaccination responses reach 12% but contract rapidly. The peak immune response is the optimal timepoint for detecting antigen-specific TCRs in acute infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 discuss factors affecting method applicability, supported by citations to Khan et al., 2004 and Miller et al., 2008. The inference about optimal timing (C52) follows logically from the observation that acute responses contract post-peak (C51). These claims appropriately contextualize the method's requirements and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C32",
+      "C45"
+    ],
+    "result": "The method enables sequence-based prediction of T-cell abundances at the population level, identification of disease-associated clones, and distinction between private and public antigen-specific clonotypes. Extensive databases of condition-associated clones could provide disease diagnostics and extend clinical utility of repertoire sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42 and C32, C45 describe potential applications and capabilities. While the method demonstrates proof-of-concept for identifying known CMV/T1D sequences, the broader claims about population-level abundance prediction (C40) and distinguishing private from public clonotypes (C45) lack direct empirical validation in the manuscript. The diagnostic database concept (C42) is speculative about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The method is restricted to identifying public antigen-specific clonotypes, which may not exist for all antigens, as the diversity and publicness of T-cell responses varies substantially across antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 (supported by Dash et al., 2017) and C96 clearly acknowledge a fundamental limitation of the approach. This is an important and honest assessment of the method's scope, appropriately grounded in prior literature about antigen response variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The method could be extended to identify antigenic peptides via yeast-display libraries, applied to RNA-Seq datasets to discover novel antigen-specific TCRs, and contribute to building databases that increase clinical value of repertoire data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C60-C62 describe potential future applications. While C60 correctly notes that TCR extraction from RNA-Seq is possible (Bolotin et al., 2017; Brown et al., 2015), the other claims are speculative. No empirical validation of these extensions is provided, and practical challenges (e.g., RNA-Seq depth limitations, paired chain requirements) are not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C99"
+    ],
+    "result": "TCR and BCR are hypervariable immunoglobulins formed by V(D)J recombination that recognize antigens. Sequence sharing between repertoires occurs through convergent recombination (favoring high-probability sequences) or convergent selection (antigen-driven). Identical twins may also share clones via cord blood exchange in utero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, and C99 present established background knowledge about adaptive immunity and TCR sharing mechanisms. These are well-supported by the scientific literature and provide necessary context for the study. C11 is appropriately cited to Pogorelyy et al., 2017.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors describe an experimental system using the RTS1 replication fork barrier in fission yeast to study inter-repeat recombination at the ade6 locus. RTS1 in the active orientation (AO) blocks replication forks and induces >50-fold increase in recombination between ade6 heteroalleles, with recombination protein recruitment occurring within ~10 minutes and producing both deletions and gene conversions in a 40:60 ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 collectively establish the experimental system with appropriate citations and data (Figure 1B). The characterization of RTS1 as a unidirectional barrier, its effect on recombination frequency, and the protein dependencies are well-documented with both prior work and current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Addition of DNA spacers on the centromere-proximal side of RTS1-AO dramatically increases inter-repeat recombination, with a 5 kb spacer causing ~5.4-fold increase and ~10-fold increase in deletions specifically. These extra deletions (~90%) are Rad51-independent but Rad52-dependent, and do not occur spontaneously without RTS1-AO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by experimental data in Figures 1B, 1C, and 2. The dose-response relationship with spacer size, the specificity for centromere-proximal spacers, the genetic dependencies, and appropriate controls (spontaneous recombination, RTS1-IO) provide strong evidence for this novel phenomenon termed spacer-dependent deletions (SDDs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Deletion of ori1253, which delays the incoming replication fork by forcing it to travel from a more distant origin, suppresses SDDs by ~2.3-fold despite increasing overall recombination activity at RTS1-AO. This demonstrates that replication fork convergence is necessary for SDD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by data in Figure 3A and citations to prior work. The genetic manipulation (ori1253 deletion) has the predicted effect on Rad52 focus formation and recombination, and the counterintuitive suppression of SDDs despite increased overall recombination strongly supports the fork convergence requirement. Statistical significance (p<0.001) is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Insertion of Ter2/3 barriers downstream of RTS1-AO to delay the incoming fork similarly suppresses SDDs by ~1.6-fold while increasing overall recombination, providing independent confirmation that fork convergence promotes SDDs rather than replication restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by data in Figure 3B and Figure 3\u2014figure supplement 1. The Ter2/3 experiment provides orthogonal validation of the ori1253 deletion results, with appropriate characterization of Ter2/3 properties and statistical support (p<0.001). The convergent evidence from two independent methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A rad51\u0394 mutant, which impairs efficient replication restart, suppresses the reduction in SDDs observed when ori1253 is deleted, providing further support that fork convergence rather than restart promotes SDDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by data in Figure 3A and a citation establishing Rad51's role in restart. This genetic epistasis experiment provides additional mechanistic insight consistent with the fork convergence model, though the data presentation could be clearer regarding the magnitude of suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Loss of Exo1, which catalyzes 5' to 3' DNA strand resection, reduces SDDs by ~4.2-fold, a greater reduction than its effect on gene conversions (~2.2-fold) or baseline deletions (~2-fold), indicating that DNA resection plays an especially important role in SDD formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by data in Figure 4A with appropriate citations. The differential effects of exo1\u0394 on different recombination outcomes provide mechanistic insight. However, the inference in C90 about resection's 'especially important role' could be strengthened with statistical comparison of the fold-changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Loss of mus81 causes >2-fold reduction in SDDs in strains with 2 or 5 kb centromere-proximal spacers but has little effect on recombination without spacers, indicating that Mus81-Eme1 specifically promotes SDDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by data in Figure 4B with appropriate citations for Mus81-Eme1 function. The specificity for SDDs versus baseline recombination is clearly demonstrated, providing strong evidence for Mus81-Eme1's role in the IFSA mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Loss of fml1 causes ~2.7-fold increase in SDDs in strains with a 2 kb centromere-proximal spacer but has little effect on baseline deletions, indicating that Fml1 specifically limits SDDs while promoting Rad51-dependent gene conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by data in Figure 4C with appropriate citations. The opposing effect of fml1\u0394 on SDDs versus gene conversions provides important mechanistic insight into how Fml1 may regulate the IFSA pathway, though the molecular mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose the Inter-Fork Strand Annealing (IFSA) model: following RF collapse at RTS1-AO, the fork regresses and is resected by Exo1, generating a ssDNA tail bound by Rad52. During fork convergence, Rad52 anneals this tail to complementary ssDNA in the lagging strand gap of the incoming fork, creating an IFSA junction that is cleaved by Mus81-Eme1 to generate deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C110 present a mechanistic model that is consistent with the genetic data but remains largely speculative (evidence_type: SPECULATION, INFERENCE). While the model explains the observations, key steps (fork regression, strand annealing between forks, junction structure) lack direct experimental validation. The model is plausible but requires additional evidence such as physical detection of intermediates or direct demonstration of inter-fork annealing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Fml1 can catalyze fork regression and re-set regressed forks in vitro, and may limit SDD formation by modulating fork regression extent or by unwinding annealed strands prior to IFSA junction cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are supported by citations and unpublished data, but C113-C114 are speculative explanations for Fml1's suppressive effect on SDDs. While the in vitro activities are established, the connection to SDD suppression in vivo remains hypothetical without direct evidence linking these activities to the IFSA pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In vitro biochemical experiments demonstrate that Mus81-Eme1 can resolve a synthetic IFSA junction into two nicked/gapped linear duplex DNA products, with cleavage sites in strand 1 close to both four-way junction points as predicted by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by experimental data in Figure 6 with appropriate controls (catalytically inactive mutant). The in vitro data provide direct biochemical validation that Mus81-Eme1 can cleave the proposed IFSA junction structure in the predicted manner, though this does not prove the junction forms in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Non-canonical RF convergence can promote recombination between DNA repeats via IFSA, which involves Rad52-mediated strand annealing between converging forks. IFSA is distinct from previously described RTS1-induced recombination mechanisms due to its dependence on fork convergence, contrasting with RDR-associated template switching which is constrained by convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 summarize the main findings with appropriate citations. The distinction from prior mechanisms is well-supported by the genetic and temporal data showing fork convergence dependence. This represents a novel mechanism of genome instability at sites of non-canonical replication termination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "CNVs play prominent roles in human genetic diversity and disease. In the experimental system, IFSA occurs between DNA repeats sharing ~1.7 kb of homology and would be classified as NAHR, which is generally thought to occur during Rad51-mediated DSB repair in meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 provide appropriate context from prior research with citations. The classification of IFSA as a type of NAHR based on homology length is reasonable, though the mechanism differs from canonical NAHR. This contextualizes the findings within the broader field of structural variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The key IFSA proteins (Rad52, Mus81) are conserved in humans and act in the same pathway to process collapsed forks, making them likely present at sites of non-canonical fork convergence. Given that repetitive sequences comprise ~50% of the human genome, IFSA could potentially contribute to disease-associated SVs formed by mechanisms other than meiotic DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C137 are supported by citations, but C138-C142 involve speculative extrapolation to human disease. While the conservation of proteins and abundance of repeats are established, whether IFSA actually occurs in humans and contributes to pathogenic CNVs remains undemonstrated. The reasoning is logical but requires experimental validation in mammalian systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Many non-recurrent SVs associated with Alu elements have been proposed to form by FoSTeS or MMBIR. Whether IFSA could contribute to such deletions is unclear, as its tolerance for divergent sequences is unknown, though SSA efficiency drops dramatically with 20% sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 appropriately acknowledge limitations in current knowledge with supporting citations. The comparison to SSA's sequence divergence sensitivity (C145-C146) provides relevant context, though the applicability to IFSA remains to be determined. This represents an honest assessment of the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The average distance between mammalian replication origins (~150 kb) would limit IFSA-generated deletion sizes if it only occurs during fork convergence. However, IFSA might act between any collapsed and active fork in close proximity, potentially generating larger deletions or other SVs including acentric/dicentric chromosomes that could drive tumorigenesis through chromothripsis or oncogene amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C149 are supported by citation, but C150-C157 are highly speculative extensions of the model. While the scenarios are plausible given the proposed mechanism, they lack experimental support. The speculation about broader IFSA activity beyond converging forks and potential roles in cancer are interesting hypotheses requiring substantial future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "IFSA shares conceptual similarities with FoSTeS/MMBIR models involving strand annealing between forks, but differs in that FoSTeS/MMBIR involve microhomology and template switching with DNA synthesis, while IFSA involves longer homology without post-annealing synthesis. Some simple deletions attributed to MMEJ or FoSTeS/MMBIR might actually result from IFSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C165 appropriately compare IFSA to related models with citations. However, the suggestion that IFSA might explain deletions previously attributed to other mechanisms is speculative without reanalysis of existing data or demonstration that IFSA can function with microhomology. The distinctions between mechanisms are clearly articulated but the overlap remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "IFSA might be responsible for some cancer genome deletions attributed to MMEJ or FoSTeS/MMBIR, based on observations that CNV boundaries in cancers are replicated synchronously and share long-range interactions, and that Rad52 promotes MMEJ in some systems. If Rad52 can anneal strands with only microhomology at DSBs, it might do so during fork convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C171 are highly speculative, though based on reasonable inferences from cited literature. The connection between synchronous replication timing (C167) and IFSA is logical but unproven. The key assumption that IFSA can function with microhomology (C171) is untested and critical for the cancer relevance hypothesis. This represents interesting speculation requiring substantial validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The discovery of IFSA highlights a potential novel risk to genomic stability, though its significance for human pathogenic CNVs depends on its efficiency with limited sequence homology. IFSA might serve a beneficial function similar to SSA by aiding replication termination at problem sites to enable successful mitotic segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C173 appropriately summarize the implications with caveats about unknowns. Claims C174-C175 present interesting speculation about potential beneficial functions of IFSA, but this remains entirely hypothetical without experimental support. The parallel to SSA is conceptually reasonable but the proposed benefit requires demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C176",
+      "C177"
+    ],
+    "result": "Live cell imaging data show that inserting Ter2/3 downstream of RTS1-AO increases the percentage of cells with Rad52-YFP foci co-localizing with the RTS1 locus, indicating that fork convergence and termination prevents Rad52 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C177 are supported by data in Figure 3\u2014figure supplement 1 with appropriate citation to prior work. The imaging data provide direct cellular evidence for the temporal relationship between fork convergence and Rad52 recruitment, supporting the mechanistic model. Sample sizes are provided (n=123, n=44).",
+    "result_type": "MINOR"
+  }
+]

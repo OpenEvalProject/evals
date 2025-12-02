@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "AIM-100 induces dramatic oligomerization and endocytosis of DAT in multiple cell types and primary neurons. Treatment with AIM-100 (\u226510 \u00b5M) causes redistribution of DAT from the plasma membrane to intracellular vesicles with linear kinetics over 2 hours, resulting in ~75% reduction in surface DAT and >5-fold increase in SDS-resistant oligomers (~290 kDa). Oligomers are enriched in endosomes compared to the plasma membrane and are not formed through disulfide bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C32 are strongly supported by multiple complementary experimental approaches including live-cell imaging (C12-C13), quantitative antibody uptake assays (C14-C16), Western blotting with biotinylation (C16-C27), and validation in multiple cell lines and primary neurons (C28-C32). The linear kinetics (R\u00b2=0.9693, C14), dose-response relationship (C13), and biochemical quantification (C16-C17, C22-C23) provide robust evidence. The resistance to reducing agents (C20-C21) appropriately rules out disulfide-mediated oligomerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AIM-100 induces rapid clustering of DAT on the cell surface that precedes endocytosis. TIR-FM imaging reveals dramatic increase in diffraction-limited DAT spots (<200 nm) that peak at 10-20 minutes and gradually decline over 30 minutes. Approximately 35% of spots persist for >1 hour while others are transient (few minutes), with some spots showing lateral movement characteristic of endocytic vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are well-supported by TIR-FM time-lapse imaging data (Figure 3A-D). The temporal relationship between clustering (peaking at 10-20 min, C34) and endocytosis kinetics (linear over 2 hr, C14) supports the inference that clustering precedes endocytosis (C39). The quantitative analysis of spot dynamics (C35) and visual observations of lateral movement (C36) provide direct evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "FRET measurements demonstrate increased DAT oligomerization in living cells treated with AIM-100. The intensity of FRET from CFP to YFP was significantly higher in plasma membrane clusters and intracellular vesicles of AIM-100-treated cells compared to vehicle-treated cells, indicating higher probability or increased stability of DAT-DAT interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by sensitized FRET measurements in cells co-expressing CFP-DAT and YFP-DAT (Figure 3\u2014figure supplement 1D). The significant increase in FRETN values in AIM-100-treated cells provides direct evidence of enhanced oligomerization in living cells. The interpretation (C41) appropriately reflects established FRET principles linking increased FRET efficiency to closer proximity and/or increased stability of protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "AIM-100 effects are specific to DAT and do not induce oligomerization or endocytosis of the closely related transporters NET and SERT. Live-cell imaging and Western blotting show that GFP-NET and GFP-SERT remain predominantly monomeric and do not undergo clustering or endocytosis in response to AIM-100, demonstrating correlation between oligomerization and endocytosis specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C44 are well-supported by parallel experiments with NET and SERT (Figure 4). The negative results with structurally similar transporters strengthen the specificity argument and support the correlation between oligomerization and endocytosis (C44). The use of the same experimental conditions and detection methods (live-cell imaging and Western blotting) provides appropriate controls for the DAT experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cocaine inhibits AIM-100-induced DAT oligomerization and endocytosis in wild-type DAT but not in the W63A mutant, suggesting mutual exclusivity between AIM-100 effects and substrate binding site occupancy. The W63A mutation, which disrupts the outward-facing conformation and blocks cocaine binding, does not prevent AIM-100 effects, indicating that AIM-100 action does not require accessible substrate binding sites but cocaine binding can counteract AIM-100 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C45-C51 are supported by experiments with cocaine and the W63A mutant (Figures 5A-H). The differential cocaine sensitivity between wild-type and W63A mutant provides strong evidence for the mutual exclusivity hypothesis (C3) and suggests an allosteric mechanism. However, the inference that AIM-100 binds to DAT (C4) remains indirect; while consistent with the data, direct binding evidence is not provided. The cited literature on W63A properties (C47-C48) appropriately supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DAT substrates (dopamine, amphetamine) and the atypical inhibitor modafinil significantly reduce AIM-100-induced DAT oligomerization and endocytosis. These results demonstrate that occupancy of substrate binding sites inhibits AIM-100 effects and suggest that conformational shifts to occluded/inward-facing states are insufficient for AIM-100 action when substrates or inhibitors are bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by experiments with substrates and modafinil (Figure 6). The consistent inhibitory effects across multiple ligands strengthen the conclusion about substrate binding site occupancy (C54). The interpretation regarding conformational states (C55) is reasonable given the cited literature on modafinil's effects, though the conformational state inference is indirect. The data support mutual exclusivity between ligand binding and AIM-100 effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "AIM-100 decreases the Bmax of [\u00b3H]CFT binding to DAT by 26% without significantly affecting KD values, consistent with a non-competitive, allosteric mechanism of action. This binding pattern was observed consistently across five independent experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by radioligand binding assays (Figure 5\u2014figure supplement 1A-B). The statistical significance of Bmax decrease with unchanged KD across five experiments provides robust evidence for non-competitive inhibition. The interpretation of an allosteric mechanism (C57) is appropriate for this binding pattern. However, the experiments were performed at 20\u00b0C rather than 37\u00b0C to minimize endocytosis, which may affect the quantitative parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Internalized DAT accumulates in early/sorting endosomes (Rab5+, EEA.1+) but not in recycling endosomes (Rab11-), late endosomes (Rab7-), or lysosomes (LysoTracker-) following AIM-100 treatment. AIM-100 does not induce DAT degradation or ubiquitination, contrasting with PMA-induced PKC-dependent degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are well-supported by colocalization studies with endosomal markers (Figures 7-8) and cycloheximide chase experiments (Figure 8B-C). The high colocalization with early endosome markers (C58) and minimal colocalization with late endosome/lysosome markers (C60) are clearly demonstrated. The lack of degradation (C61) and ubiquitination (C62) over 2 hours is appropriately documented, though longer time courses might reveal eventual degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DAT internalized in the presence of AIM-100 does not recycle back to the plasma membrane during chase incubation, and cocaine cannot prevent continued endocytosis during the chase period. In contrast, AIM-100 does not inhibit recycling of DAT internalized via PKC activation, indicating cargo-specific effects. The robust endosomal accumulation results from both accelerated endocytosis and blocked recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by antibody uptake and chase experiments (Figure 9 and supplements). The lack of recycling (C63, C67) and continued endocytosis during chase (C64) are clearly demonstrated. The differential effect on PMA-induced versus AIM-100-induced internalized DAT (C68-C69) provides strong evidence for cargo-specificity. The synthesis of multiple observations (C70) is well-reasoned, though the relative contributions of blocked recycling versus accelerated endocytosis are not quantitatively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Monensin-induced constitutive DAT endocytosis results in significantly less endosomal accumulation than AIM-100-induced endocytosis, and monensin-dependent accumulation is not inhibited by cocaine. This indicates that AIM-100-induced accumulation involves both ineffective recycling and accelerated endocytosis via a mechanism distinct from constitutive endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by comparison experiments with monensin (Figure 9\u2014figure supplement 2). The quantitative difference in accumulation (C71) and differential cocaine sensitivity (C72) provide evidence for mechanistic differences. The conclusion (C73) appropriately synthesizes these observations, though the precise mechanisms underlying constitutive versus AIM-100-induced endocytosis remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AIM-100-induced DAT endocytosis is independent of Ack1 in PAE cells. Ack1 knockdown (65-80% depletion) does not prevent AIM-100-induced endocytosis, and the specific Ack1 inhibitor KRCA-0008 (IC50=18 nM) does not induce DAT oligomerization or endocytosis at concentrations up to 20 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by Ack1 knockdown experiments and pharmacological inhibition (Figure 10A-F). The robust AIM-100-induced endocytosis in Ack1-depleted cells (C75) and lack of effect with KRCA-0008 (C76) provide strong evidence against Ack1 involvement. This contradicts previous reports and is appropriately acknowledged in the Discussion. The cell-type specificity caveat is noted but does not undermine the conclusion for PAE cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Clathrin heavy chain (CHC) knockdown does not inhibit AIM-100-induced DAT endocytosis or oligomerization, while strongly inhibiting transferrin endocytosis as expected. However, CHC knockdown partially inhibits constitutive DAT endocytosis induced by monensin, suggesting that AIM-100 redirects DAT to a clathrin-independent pathway rather than simply disrupting membrane retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by CHC knockdown experiments (Figure 10A-C and supplements). The differential effects on AIM-100-induced versus transferrin endocytosis (C78-C79) and constitutive DAT endocytosis (C80) provide strong evidence for pathway specificity. The interpretation that AIM-100 redirects rather than disrupts (C81) is well-reasoned based on the differential CHC dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "AIM-100-induced DAT endocytosis occurs via a novel clathrin-independent mechanism that is independent of dynamin, cholesterol-rich microdomains, actin cytoskeleton, PKC, and multiple known CIE pathways (caveolae, CLIC/GEEC, Arf6, Rho-family GTPases, endophilin, micropinocytosis). Phospholipase D inhibition (FIPI) reduces endocytosis two-fold, and cdc42 inhibition (ML141) induces moderate DAT endocytosis, suggesting cdc42 involvement in surface retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C82-C89 are supported by extensive pharmacological and genetic inhibition experiments (Figure 11). The negative results with multiple pathway inhibitors (C82-C84, C88) systematically rule out known mechanisms. The partial effect of FIPI (C86) suggests phospholipase D involvement, consistent with its role in membrane dynamics (C87). The ML141 effect (C85) is appropriately interpreted as affecting retention rather than AIM-100-induced endocytosis. The conclusion of a novel mechanism (C89) is well-justified by the comprehensive exclusion of known pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose a mechanistic model where AIM-100 binds to DAT in a conformation favorable for oligomerization through an allosteric mechanism, leading to extensive surface clustering driven by hydrophobic mismatch. The clusters then undergo coat-independent endocytosis via spontaneous membrane invagination and scission, followed by endosomal retention. This may represent a quality-control mechanism for removing excess or oligomeric DAT from the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C10-C11, C117-C119, C121, C123-C124 represent a proposed mechanistic model that integrates the experimental findings but includes substantial speculation. While the allosteric mechanism is supported by binding data (C10, C57), the direct binding of AIM-100 to DAT is not demonstrated (C117-C118). The clustering-driven endocytosis model (C119, C121) is plausible given the temporal relationships and independence from known machinery (C123), but direct evidence for cargo-induced membrane remodeling is lacking. The quality-control hypothesis (C124) is speculative. The model is internally consistent with the data but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background claims about DAT function, structure, and regulation. DAT is responsible for dopamine clearance and is the principal target of psychostimulants. It belongs to the SLC6 family with 12 transmembrane domains and forms dimers/oligomers through unknown mechanisms. DAT oligomerization modulates transport activity and ER export, and DAT internalizes in response to multiple stimuli via both CME and CIE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are appropriately cited from established literature and represent accepted knowledge in the field. These background claims provide necessary context for the experimental work and are not contested by the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Discussion of DAT oligomerization in structural and mechanistic context. The authors claim this is the first example of chemically-enhanced non-covalent oligomerization of a multi-spanning transmembrane protein and discuss differences in oligomerization mechanisms between DAT, NET, and SERT, including potential roles of PIP2 binding site differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C105 involve interpretation and speculation about oligomerization mechanisms. The novelty claim (C97) may be overstated without comprehensive literature review. The molecular weight calculations suggesting trimers (C100) are reasonable but indirect. The proposed mechanistic differences between transporters (C102, C104-C105) are speculative, though consistent with the differential AIM-100 responses. The discussion appropriately acknowledges uncertainty but makes claims beyond what the data directly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Synthesis and interpretation of trafficking data. The authors argue that oligomerization and clustering correlate with and mechanistically drive endocytosis, and that dramatic endosomal accumulation results from synergistic effects of accelerated endocytosis and inefficient recycling. They propose that large oligomers cannot be efficiently packaged into recycling carriers and discuss potential lysosomal targeting on longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are well-supported by the correlation across multiple experimental conditions and temporal relationships. The proposed mechanism for recycling block (C109) is reasonable speculation based on oligomer size, though not directly tested. The comparison to receptor crosslinking (C110) and discussion of lysosomal targeting timescales (C111) appropriately contextualize the findings with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion of discrepancies with prior work and limitations of previous studies. The authors question whether their findings differ from Wu et al. (2015) regarding clathrin and cdc42 dependence, and discuss limitations of pitstop-2 as a clathrin inhibitor and uncertainties about Ack1's role in CME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 appropriately acknowledge discrepancies with prior work and cite literature on methodological limitations (pitstop-2 toxicity, C113-C114). The discussion is balanced and identifies potential sources of differences between studies (cell types, methods) without dismissing prior work. This represents appropriate scientific discourse about conflicting findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C122"
+    ],
+    "result": "Background on receptor clustering and cargo-induced membrane remodeling from literature. Clustering typically results from ligand-induced receptor dimerization, and transmembrane cargo-induced membrane remodeling has been proposed but rarely demonstrated experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C122 are appropriately cited from literature and provide context for the proposed mechanisms. These represent established concepts used to frame the current findings.",
+    "result_type": "MINOR"
+  }
+]

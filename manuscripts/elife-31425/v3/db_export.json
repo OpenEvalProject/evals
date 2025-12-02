@@ -1,0 +1,2602 @@
+{
+  "submission": {
+    "id": "a1add817-6905-483e-bd30-0e0c1a5e8a74",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:55:53.175021Z",
+    "updated_at": "2025-12-01T22:55:53.175021Z"
+  },
+  "content": [
+    {
+      "id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "submission_id": "a1add817-6905-483e-bd30-0e0c1a5e8a74",
+      "content_type": "manuscript",
+      "content_text": "# Persistent activity in a recurrent circuit underlies courtship memory in Drosophila\n\n## Authors\n\n- Xiaoliang Zhao<sup>1</sup> ([ORCID: 0000-0001-8787-076X](https://orcid.org/0000-0001-8787-076X))\n- Daniela Lenek<sup>2</sup>\n- Ugur Dag<sup>1</sup>\n- Barry J Dickson<sup>1</sup> ([ORCID: 0000-0003-0715-892X](https://orcid.org/0000-0003-0715-892X))\n- Krystyna Keleman<sup>1</sup> ([ORCID: 0000-0003-2044-1981](https://orcid.org/0000-0003-2044-1981)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus Ashburn United States\n2. Research Institute of Molecular Pathology Vienna Austria\n3. Queensland Brain Institute University of Queensland St Lucia Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecurrent connections are thought to be a common feature of the neural circuits that encode memories, but how memories are laid down in such circuits is not fully understood. Here we present evidence that courtship memory in Drosophila relies on the recurrent circuit between mushroom body gamma (MB\u03b3), M6 output, and aSP13 dopaminergic neurons. We demonstrate persistent neuronal activity of aSP13 neurons and show that it transiently potentiates synaptic transmission from MB\u03b3>M6 neurons. M6 neurons in turn provide input to aSP13 neurons, prolonging potentiation of MB\u03b3>M6 synapses over time periods that match short-term memory. These data support a model in which persistent aSP13 activity within a recurrent circuit lays the foundation for a short-term memory.\n\n## Introduction\n\nAs animals pursue their goals, their behavioral decisions are shaped by memories that encompass a wide range of time scales: from fleeting working memories relevant to the task at hand, to short-term and long-term memories of contingencies learned hours, days, or even years in the past. Working memory is thought to reflect persistent activity generated within neural networks, including recurrent circuits (Wang, 2001). In contrast, short-term memory (STM) and long-term memory (LTM) involves changes in synaptic efficacy due to functional and structural modification of synaptic connections (Kandel, 2001). However, the neural circuit mechanisms involved in the formation, persistence and transitions between these distinct forms of memory are not fully known.\n\nA robust form of memory in Drosophila is courtship memory, which can last from minutes to days, depending on the duration and intensity of training (Siegel and Hall, 1979; McBride et al., 1999). Na\u00efve Drosophila males eagerly court both virgin females, which are generally receptive, and mated females, which are not (Manning, 1967; Wolfner, 2003). However, upon rejection by mated females, they become subsequently less likely to court other mated females (Tompkins, 1984). This selective suppression of courtship towards mated females, called courtship conditioning, can be attributed to the enhanced sensitivity of experienced males to an inhibitory male pheromone deposited on the female during mating, cis-vaccenyl acetate (cVA) (Keleman et al., 2012).\n\nOlfactory memory in insects relies on the function of a central brain structure called the mushroom body (MB) (de Belle and Heisenberg, 1994; Heisenberg et al., 1985). The principal MB cells, the cholinergic Kenyon cells (KCs) (Barnstedt et al., 2016), receive input from sensory pathways in the dendritic calyx region and from dopaminergic neurons (DANs) in the axonal lobes of the MB. These MB lobes are compartmentalized, with each compartment innervated by specific classes of DANs and MB output neurons (MBONs) (Aso et al., 2014a; Mao and Davis, 2009). MBONs receive input from both KCs and DANs (Takemura et al., 2017).\n\nWe previously established that short-term courtship conditioning is mediated by the aSP13 class of DANs (also known as the PAM-\u03b35 neurons, [Aso et al., 2014a]), which innervate the MB\u03b35 compartment. The activity of aSP13 neurons is essential for courtship conditioning in experienced males and sufficient to induce conditioning in na\u00efve males (Keleman et al., 2012). Here we demonstrate that courtship memory also requires the corresponding MB\u03b3 KCs and the MB\u03b35 MBONs, the glutamatergic M6 neurons (also known as MBON-\u03b35\u03b2\u20192a neurons [Aso et al., 2014a]). Furthermore, we present evidence that MB\u03b3, M6, and aSP13 neurons form a recurrent circuit and that persistent activity of the aSP13 neurons mediates plasticity at the MB\u03b3 to M6 synapses that can last from minutes to hours. Consistent with this model, M6 activity is required not only for memory readout but also, like aSP13, for memory formation. These data support a model in which persistent aSP13 activity within the MB\u03b3>M6>aSP13 recurrent circuit lays the foundation for short-term courtship memory.\n\n## Results\n\n### Courtship experience modulates circuit properties between MB\u03b3 and M6 neurons\n\nWe confirmed the involvement of MB\u03b3 and M6 neurons in courtship conditioning by chronically silencing them using cell-type specific GAL4 drivers (Figure 1\u2014figure supplement 1) to express tetanus toxin light chain (UAS-TNT, an inhibitor of synaptic transmission; [Martin et al., 2002]). Single males of each genotype were trained by first pairing them for 1 hr with a single mated female, and then testing their courtship towards a fresh mated female after a 30 min rest period. We used automated video analysis to derive a courtship index (CI) for each male, defined as the percentage of time over a 10 min test period during which the male courts the female. A suppression index (SI) was then calculated as the relative reduction in the mean courtship indices of trained (CI+) versus na\u00efve (CI-) populations: SI\u00a0=\u00a0100*(1-CI+/CI-). Control flies expressing an inactive form of tetanus toxin (UAS-TNTQ) typically showed a SI of\u00a0~40\u201350% (Figure 1A,B; Supplementary file 1). By contrast, males in which M6 neurons or MB\u03b3 neurons were silenced with an inhibitory form of tetanus toxin (UAS-TNT) showed much less or no suppression (Figure 1A,B; Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig1-v3.jpg)\n\n**Figure 1.:** (A) Suppression indices (SI), calculated from mean courtship indices of male flies in which active (UAS-TNT) or inactive (UAS-TNTQ) tetanus toxin is expressed in MB\u03b3 neurons (1, VT044966-GAL4; 2, VT030413-GAL4). In this and other panels, statistical significance of differences from zero or from control groups is indicated as follows: ***p<0.001, **p<0.01, *p<0.05, n.s. p>0.05, permutation tests, see Supplementary file 1. (B) Suppression indices (SI), calculated from mean courtship indices of male flies in which active (UAS-TNT) or inactive (UAS-TNTQ) tetanus toxin is expressed in M6 neurons (1, VT014702-GAL4; 2, VT032411-GAL4). See Supplementary file 1. (C) Suppression indices (SI) of na\u00efve or experienced (exp) male flies upon thermogenetic activation of MB\u03b3 neurons (1, VT044966-GAL4). See Supplementary file 1. (D) Suppression indices (SI) of na\u00efve or experienced (exp) male flies upon thermogenetic activation of M6 neurons (2, VT032411-GAL4). See Supplementary file 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Maximum intensity projections from confocal images of whole central nervous systems of VT-GAL4 UAS-mCD8-GFP or VT-LexA LexAop-mCD8-GFP males, stained for presynaptic sites (magenta, mAb nc82) and anti-GFP (green). Scale bars, 50 \u03bcm.\n\nThe DAN inputs to a given MB compartment are believed to modulate synaptic transmission from MB neurons to MBONs, primarily through their presynaptic inputs onto the KCs\u00a0(Kim et al., 2007; Qin et al., 2012). Some studies have indicated that DANs enhance KC>MBON transmission (Cohn et al., 2015; Owald et al., 2015; Pla\u00e7ais et al., 2013; Pai et al., 2013), whereas others have suggested that DANs depress these synapses (Aso et al., 2014a; Hige et al., 2015; Owald et al., 2015; S\u00e9journ\u00e9 et al., 2011; Hattori et al., 2017; Lewis et al., 2015). The sign of modulation may therefore depend upon the context. We predicted that, if M6 is the relevant MBON for courtship conditioning, then artificial activation of M6 should suppress courtship. Moreover, if MB\u03b3>M6 transmission is modified by training, then M6 activation should be equally potent in experienced and na\u00efve males, whereas MB\u03b3 activation should be either more or less potent in experienced males, depending upon whether training potentiates or depresses MB\u03b3>M6 synapses.\n\nWe tested these predictions using the thermosensitive cation channel TrpA1 (open at 32\u00b0C and closed at 20\u00b0C) (Rosenzweig et al., 2005) to activate either MB\u03b3 or M6 cells. To measure the extent of courtship suppression we used unreceptive virgin females (pseudomated females) as testers, which do not elicit significant courtship suppression in experienced males (Keleman et al., 2012). For each condition, we determined a SI as the percentage reduction in courtship activity towards these unreceptive virgins in 10 min assays performed at 32\u00b0C compared to 20\u00b0C: SI\u00a0=\u00a0100*(1-CI32/CI20). We found that MB\u03b3 activation was significantly more potent in experienced males than in na\u00efve males, in which it had only a small effect on courtship (Figure 1C; Supplementary file 1). By contrast, M6 activation suppressed male courtship with equal potency in both na\u00efve and experienced males (Figure 1D; Supplementary file 1). We conclude from these data that courtship experience with mated females potentiates synaptic transmission from MB\u03b3 to M6 cells.\n\n### Dopamine modulates synaptic transmission from MB\u03b3 to M6 neurons\n\nTo examine synaptic transmission between MB\u03b3 and M6 neurons, we used optogenetics. We generated a step-function channelrhopodsin variant, SFOCatCh, that combines mutations to increase the off kinetics (SFO\u00a0=\u00a0C128S/D156A, [Yizhar et al., 2011]) with a single amino acid substitution to enhance the conductance of divalent cations (CatCh\u00a0=\u00a0L132C, [Kleinlogel et al., 2011]). We validated SFOCatCh by whole-cell patch clamp recording in olfactory projection neurons (Figure 2\u2014figure supplement 1). We used SFOCatCh in conjunction with GCaMP6s (Chen et al., 2013) to monitor calcium responses in whole explanted brains of na\u00efve males. The combination of SFOCatCh and GCaMP6s temporally uncouples the optical inputs required for activity manipulation and calcium imaging. In all experiments with SFOCatCh and GCaMP6s reported here, we imaged calcium responses during three consecutive 4 s periods, each of which was preceded by a 100 ms pulse of green, blue, or green light, respectively, to turn SFOCatCh OFF, ON, or OFF again (Figure 2A). This protocol thus provides a pre-stimulus baseline, a during-stimulus response, and a post-stimulus response. To assess whether and how dopamine modulates MB\u03b3>M6 transmission, we repeated this OFF/ON/OFF protocol 3 times at 3 min intervals: first without dopamine, then with either 0.1 mM or 1 mM dopamine delivered for the first second of each imaging period through a perfusion pipette positioned at the \u03b35 compartment, and finally following dopamine washout (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-v3.jpg)\n\n**Figure 2.:** (A) Experimental protocol. OFF and ON indicate 4 s imaging periods, preceded by 100 ms pulses of 540 nm or 470 nm light to switch SFOCatCh OFF and ON, respectively. Gray bars indicate 1 s focal perfusion into the \u03b35 compartment. Buffer, dopamine injection (DA) and washout trials are separated by 3 min intervals. (B) Representative calcium responses in M6 dendrites in the \u03b35 compartment. Scale bar, 10 \u03bcm. (C) Average \u0394F/F responses in M6 dendrites. n\u00a0=\u00a010. Mean\u00a0\u00b1\u00a0s.e.m. (D) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods of successive buffer, DA, and washout trials. n\u00a0=\u00a015, 17, 10 for 0, 0.1, and 1.0 mM DA, respectively. ***p<0.001, t-test. (E) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods of successive buffer, apomorphine, and washout trials. n\u00a0=\u00a012. *p<0.05, ***p<0.001, t-test. (F) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods of successive trials with buffer only, 1 mM DA, and DA plus 0.15 mM mecamylamine (Mec). n\u00a0=\u00a09. ***p<0.001, t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Patch-clamp recording from an olfactory projection neuron of a GH146-GAL4 UAS-SFOCatCh male. Blue and green bars indicate 100 ms pulses of 470 nm and 540 nm light. (B) and (C) Firing rate (B), n\u00a0=\u00a011 cell-attached recordings) and membrane potential (C), n\u00a0=\u00a04 whole-cell recordings of olfactory projection neurons during the first 5 s after stimulation with 470 nm or 540 nm light. Mean\u00a0\u00b1\u00a0s.e.m. ***p<0.001 for comparisons to zero, t-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative calcium responses in M6 axons. Experimental protocol as in Figure 2A. Scale bar, 10 \u03bcm. (B) Average \u0394F/F responses in M6 axons during the SFOCatCh ON periods of successive buffer, DA, and washout trials. n\u00a0=\u00a011, 10, 9 for 0, 0.1, and 1.0 mM DA, respectively. *p<0.05, **p<0.01, one-way ANOVA test.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) and (B) Representative calcium responses in M6 dendrites (A) and axons (B) of male brains expressing GCaMP6s in M6 neurons and CsChrimson in MB\u03b3 neurons, prior to (pre) and after (post) stimulation with 635 nm LED light Scale bar, 10 \u03bcm. Buffer, DA, and washout trials were performed at 3 min intervals. (C) Average \u0394F/F responses in M6 dendrites during successive buffer, DA, and washout trials. Light red bar indicates stimulation with 30 2 ms LED pulses at 30 Hz. Mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a012. (D) Average \u0394F/F responses in M6 dendrites during successive buffer, DA, and washout trials. n\u00a0=\u00a012, 7, 12 for 0, 0.1, and 1.0 mM DA, respectively. *p<0.1, ***p<0.001, one-way ANOVA test.\n\nWe could not detect any robust calcium response in either the dendrites (Figure 2B\u2013D) or axon termini (Figure 2\u2014figure supplement 2) of M6 when we activated MB\u03b3 with SFOCatCh in the absence of exogenous dopamine. However, a strong dose-dependent calcium response was consistently observed in trials with dopamine during the SFOCatCh ON period. In contrast, little or no response was observed during either the SFOCatCh OFF periods (Figure 2B\u2013D, Figure 2\u2014figure supplement 2) or the SFOCatCh ON period after dopamine washout (Figure 2B,C, Figure 2\u2014figure supplement 2). We obtained similar results when we applied the dopamine receptor agonist apomorphine rather than dopamine (Figure 2E), or used CsChrimson (Klapoetke et al., 2014) rather than SFOCatCh as the optogenetic activator (Figure 2\u2014figure supplement 3). The response to dopamine and SFOCatCh was completely abolished by application of the nicotinic acetylcholine receptor antagonist mecamylamine (Figure 2F), which blocks synaptic transmission from KCs to MBONs (Barnstedt et al., 2016). Together, these data indicate that cholinergic synaptic transmission from MB\u03b3 to M6 cells is initially weak but can be acutely potentiated by dopamine.\n\n### Repetitive stimulation of MB\u03b3 potentiates MB\u03b3 to M6 transmission\n\nWhereas we could not detect a strong calcium response in M6 MBONs upon MB\u03b3 activation in the absence of dopamine, others have observed calcium responses in various MBONs, including M6, upon activation of KCs without application of dopamine or DAN stimulation (Cohn et al., 2015; Owald et al., 2015). We noted however that in our initial control experiments without dopamine, in which we sometimes performed multiple trials on the same sample, a calcium response could indeed be detected in the later trials. This suggests that stimulus history may account for some of the variability in MBON responses to KC stimulation in the absence of dopamine or DAN activation. To explore this possibility more rigorously, we activated MB\u03b3 neurons with SFOCatCh using the same OFF/ON/OFF protocol as before, now repeating the stimulus every minute. The initial stimuli, as previously observed in the trials without exogenous dopamine, did not elicit a detectable GCaMP6s response in M6 neurons. However, after 3\u20134 trials a significant calcium response was observed (Figure 3A,B). This response increased upon each successive stimulation before reaching a plateau after approximately 20 trials. This response was blocked by the dopamine D1-type receptor antagonist SCH23390 (Figure 3C), regardless of whether it was applied during the induction or plateau phase. This suggests that, upon repetitive stimulation of MB\u03b3 neurons, endogenous dopamine enables synaptic transmission to M6 neurons. The most likely source of this endogenous dopamine supply is the aSP13 neurons. Indeed, by shifting GCaMP6s from M6 to aSP13, we confirmed that the aSP13 DANs respond in a similar manner as M6 to the repetitive activation of MB\u03b3 neurons (Figure 3E,F)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative calcium responses in M6 dendrites in the \u03b35 compartment upon repetitive optogenetic stimulation of MB\u03b3 neurons with SFOCatCh. (B) Time course of average \u0394F/F responses in M6 dendrites during potentiation, mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a016 for\u00a0+SFOCatCh, n\u00a0=\u00a06 for \u2013SFOCatCh. Inset, peak \u0394F/F responses, mean\u00a0\u00b1\u00a0s.e.m. ***p<0.001, t-test. (C) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods in M6 dendrites in the \u03b35 compartment in trials with SCH23390 present (grey shading) either during (top) or after (bottom) induction. (D) Time course of average \u0394F/F responses in M6 dendrites during potentiation (30 stimuli at 1 m intervals) and decay (stimulation at\u00a0~1 hr intervals), mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a019. Top, representative calcium responses at various time points, during the 3 \u00d7 4 s OFF/ON/OFF imaging periods. (E) Representative calcium responses in aSP13 axons in the \u03b35 compartment upon repetitive optogenetic stimulation of MB\u03b3 neurons with SFOCatCh. (F) Time course of average \u0394F/F responses in aSP13 axons during potentiation, mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a010 for\u00a0+SFOCatCh, n\u00a0=\u00a07 for \u2013SFOCatCh. Inset, peak \u0394F/F responses, mean\u00a0\u00b1\u00a0s.e.m. **p<0.01, t-test.\n\nTo determine how long MB\u03b3>M6 synapses remain potentiated after repetitive MB\u03b3\u00a0activation, we first induced potentiation with 30 pulses of MB\u03b3 activation at 1 min intervals, and then examined the response of M6 neurons to a single pulse of MB\u03b3\u00a0activation after 1, 2 or 3 hr. Potentiation at MB\u03b3>M6 synapses was barely diminished after 1 hr, but fell to about 50% of its initial level after 3 hr (Figure 3D). The persistence of potentiation at MB\u03b3>M6 synapses in these experiments is thus in line with the persistence of the courtship memory after a 30 min training period (Keleman et al., 2012).\n\n### Activation of the MB\u03b3>M6>aSP13 recurrent circuit elicits persistent aSP13 activity\n\nAnatomically, DANs and MBONs innervating the same MB compartment, have the potential to form recurrent loops, with MBONs providing input to DANs (Aso et al., 2014a; Takemura et al., 2017; Ichinose et al., 2015; Eichler et al., 2017; Owald et al., 2015). In particular, the axonal termini of M6 MBONs are closely apposed to the aSP13 dendrites (Aso et al., 2014a). We therefore tested whether activation of M6 neurons elicits a calcium response in aSP13 neurons by expressing SFOCatCh in M6 and GCaMP6s in aSP13. Indeed, acute activation of M6 neurons produced a strong calcium response in aSP13 (Figure 4A,B). This response was blocked by the NMDA receptor antagonist AP-5 (Figure 4C), consistent with glutamatergic transmission from M6 cells. Activation of MB\u03b3 neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-v3.jpg)\n\n**Figure 4.:** (A) Experimental protocol for M6 activation and aSP13 imaging, and representative calcium responses in aSP13 axons in the \u03b35 compartment. Scale bar, 10 \u03bcm. (B) Average \u0394F/F responses in aSP13 axons, mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a022. (C) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods in trials with (n\u00a0=\u00a09) or without 50 \u03bcM D-AP-5 (n\u00a0=\u00a022). ***p<0.001, t-test. (D) Average\u00a0\u0394F/F responses, imaged at 1 Hz after 200 s of post-stimulus section. (E) Experimental protocol for MB\u03b3 activation and aSP13 imaging, and representative calcium responses in aSP13 axons in the \u03b35 compartment. Scale bar, 10 \u03bcm. (F) Average \u0394F/F responses in aSP13 axons, mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a013. (G) Average\u00a0\u0394F/F responses during the SFOCatCh ON periods in trials with or without 1 mM DA, 50 \u03bcM AP-5, or 150 \u03bcM mecamylamine (Mec). n\u00a0=\u00a013, 13, 5,10, respectively. **p<0.01, ***p<0.001, t-test. (H) Average\u00a0\u0394F/F responses, imaged at 1 Hz after 200 s of post-stimulus section. (I) Suppression indices (SI) of male flies in which shits is expressed in M6 neurons, shifted to 32\u00b0C during training or testing, as indicated. ***p<0.001, **p<0.01, *p<0.05, permutation tests, see Supplementary file 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Average \u0394F/F responses in the \u03b35 compartment of males expressing both SFOCatCh and GCaMP6s in aSP13 neurons. Experimental protocol as in Figure 3A. Mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a06.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Average\u00a0\u0394F/F responses during the SFOCatCh ON periods with or without 50 \u03bcM AP-5. Mean\u00a0\u00b1\u00a0s.e.m. n\u00a0=\u00a06 and 9, respectively.\n\nWhereas the M6 response to MB\u03b3 activation was diminished in the post-stimulus OFF period in trials with dopamine (Figure 2B,C), the response of aSP13 neurons to either M6 or MB\u03b3\u00a0activation persisted into the post-stimulus SFOCatCh OFF period (Figure 4A,B,E and F). In each case, the calcium response in aSP13 gradually declined over a 2 min period (Figure 4D and H). The persistent response of aSP13 neurons is not an intrinsic property of aSP13 neurons, since it was not observed when SFOCatCh was used to activate the aSP13 neurons themselves (Figure 4\u2014figure supplement 1). Given that the response of aSP13 to MB\u03b3\u00a0or M6 activation is blocked by AP-5, we infer that this persistent activity is induced by glutamatergic transmission from M6 cells.\n\nThe persistent release of dopamine by aSP13 neurons for several minutes after stimulation could create a time window during which MB\u03b3\u00a0to M6 transmission is facilitated. Activation of MB\u03b3\u00a0neurons during this time window, as in our repetitive SFOCatCh activation experiments, would thus lead to further activation of M6 and aSP13, thereby creating a recurrent feedback circuit. We lack a reliable tripartite genetic means to test directly whether silencing aSP13 neurons blocks the GCaMP6 response in M6 upon repetitive activation of SFOCatCh in MB\u03b3.\u00a0We could confirm, however, that this prolonged M6 response is blocked by AP-5 (Figure 4\u2014figure supplement 2), which inhibits NMDA-type glutamate receptors and the\u00a0persistent response of aSP13 (Figure 4C).\n\nActivity of aSP13 neurons is strictly required during the training period of courtship conditioning (Keleman et al., 2012). The data presented here suggest that activation of aSP13 during training could open a time window of a several minutes during which MB\u03b3>M6 transmission is facilitated. In our training paradigm, males usually court mated females in a series of brief courtship on and off periods that could repetitively activate MB\u03b3\u00a0in the time window when aSP13 neurons are persistently activated and thus engage the recurrent MB\u03b3>M6>aSP13 circuit, thereby potentiating MB\u03b3>M6 transmission for a period of 2\u20133 hr. This leads to the somewhat counterintuitive prediction that M6 should not only act in memory retrieval, as generally assumed for MBONs, but should also be required for memory formation. To test this prediction, we conditionally silenced M6 neurons with a temperature-sensitive inhibitory form of dynamin (UAS-shits), which blocks synaptic transmission at 32\u00b0C but not at 22\u00b0C (Kitamoto, 2002). Single males were trained and tested as before, but kept at 22\u00b0C except for a brief shift to 32\u00b0C either during training or during testing. Males in which M6 neurotransmission was blocked either during training or during\u00a0testing had suppression indices indistinguishable from 0. Thus, whereas synaptic transmission from aSP13 is only required during memory acquisition (Keleman et al., 2012), M6 output is required during both acquisition and recall (Figure 4I; Supplementary file 2). We therefore propose that STM formation requires the MB\u03b3>M6>aSP13 recurrent circuit, whereas readout occurs through other M6-dependent pathways.\n\n## Discussion\n\nIn this study we have identified and characterized a tripartite MB\u03b3>M6>aSP13 recurrent circuit that is essential for courtship memory in Drosophila. Our behavioral and physiological data suggest the following model for the function of this feedback loop in short-term courtship memory. When a na\u00efve male courts a mated female, the aSP13 and MB\u03b3 neurons may both be activated, perhaps in response to behavioral rejection and olfactory stimuli presented by the female, respectively. Dopamine released by aSP13 neurons potentiates transmission from MB\u03b3 to M6 neurons, which in turn provide a recurrent excitatory glutamatergic input back onto aSP13 neurons. Upon activation by M6, aSP13 activity persists for several minutes, providing a short time window during which continued MB\u03b3 activity can further drive M6 and aSP13. Thus sustained, aSP13 activity can lead to a longer-lasting accumulation of dopamine in the \u03b35 compartment, facilitating MB\u03b3>M6 neurotransmission for up to 2\u20133 hr.\n\nThe timescales for these physiological processes in ex vivo brain preparations broadly match the dynamics of courtship training and short-term memory formation. In our standard training paradigm, the male typically courts the female over several minutes, during which he performs a series of courtship bouts, each lasting for several seconds. As a result, a behavioral memory forms that lasts for several hours (Keleman et al., 2012). Memory formation during training requires both M6 and aSP13, consistent with the notion that it reflects activation of the recurrent circuit (Figure 4 and [Keleman et al., 2012]). Memory readout requires M6 but not aSP13 (Figure 4 and [Keleman et al., 2012]), and so evidently does not involve the recurrent circuit. We infer that M6 suppresses courtship through other, aSP13-independent, pathways, and that its ability to do so is independent of experience. The consequence of training is to provide MB\u03b3\u00a0neurons with access to this M6-dependent courtship suppression pathway (Figure 1).\n\nTwo important open questions are, first, what mechanism underlies the persistent calcium response in aSP13, and second, how does potentiation of MB\u03b3>M6 synapses result in enhanced sensitivity to cVA, the hallmark of courtship memory (Keleman et al., 2012). The persistent response in aSP13 is evidently not an intrinsic property of aSP13, as it\u00a0is not induced when aSP13 neurons themselves are activated. This observation would also likely exclude reciprocal excitation between aSP13 and other DANs (Pla\u00e7ais et al., 2012). Persistent aSP13 activity is induced in response to transient M6 activation, and is not associated with any persistent activity of M6 neurons themselves. Thus, it is also unlikely to involve feedback from aSP13 and M6, although aSP13\u00a0>M6 synapses likely do exist (Eichler et al., 2017; Lin et al., 2007). One possibility is that aSP13 persistence reflects unusually prolonged activation of the glutamatergic M6\u00a0>aSP13 synapses, or perhaps lies within interposed but still unidentified circuit elements.\n\nGiven that M6 neurons activate a courtship suppression pathway, the potentiation of MB\u03b3>M6 neurotransmission may explain why MB\u03b3\u00a0activation suppresses courtship in trained but not na\u00efve flies. But MB\u03b3\u00a0neurons likely do not specifically respond to cVA (Caron et al., 2013; Gruntman and Turner, 2013), so this change alone cannot account for the enhanced sensitivity of trained flies to cVA. A small and variable subset of MB\u00a0\u03b3neurons do receive input from the olfactory pathway that processes cVA, but cVA is not required during training (Keleman et al., 2012) and it is difficult to envision any other mechanism by which aSP13-dependent plasticity could be specifically restricted to the cVA-responsive MB\u03b3 neurons. It is formally possible that, despite the broad potentiation of MB\u03b3 output synapses upon training, it is only the contribution of the cVA-responsive MB\u03b3 neurons that drives courtship suppression when the male subsequently encounters as mated female. Alternatively, it has been suggested that M6 neurons encode a generic aversive signal (Aso et al., 2014b), and so specificity to cVA might instead arise in downstream circuits that selectively integrate M6 output with the innate cVA-processing pathway from the lateral horn. In this regard, it is interesting to note that other MBONs have been implicated in courtship learning (Montague and Baker, 2016) or general aversion (Aso et al., 2014b), but M6 is the only MBON common to both.\n\nLate activation of the same aSP13 neurons in the time window of 8\u201310 hr after training is both necessary and sufficient to consolidate STM to LTM (Kr\u00fcttner et al., 2015). Thus, in the time window when STM would otherwise decay (Keleman et al., 2007), reactivation of the same MB\u03b3>M6>aSP13 recurrent circuit may instead consolidate it into LTM. The mechanism by which aSP13 neurons are reactivated is unknown, but is evidently dependent upon their activation within the MB\u03b3>M6>aSP13 recurrent circuit during training. It will be interesting to find out how this late aSP13 reactivation mechanism might relate to the mechanism that underlies persistent aSP13 activity during training.\n\nIn summary, our data suggest that a brief persistent activity of aSP13 neurons represents a neural correlate of courtship working memory, while the prolonged potentiation of MB\u03b3>M6 synapses corresponds to STM. We propose that persistent activity of the dopaminergic neurons in the MB\u03b3>M6>aSP13 feedback loop lays the foundation for formation of short-term courtship memory in Drosophila, and that later reactivation of the same recurrent circuit consolidates STM into LTM. Thus, in contrast to the prevailing view of memory progression in the Drosophila MB that distinct memory phases are located in different compartments or lobes (Aso and Rubin, 2016; Davis, 2011; Pascual and Pr\u00e9at, 2001), our data suggest that in the context of courtship conditioning, working memory, STM, and LTM all reside in the same \u03b35 compartment. Our conclusions do not preclude however, the involvement of other MB neurons in courtship memory (Montague and Baker, 2016) as it is conceivable that modulation, potentially of the opposite sign, of the appetitive memory pathways could be critical for courtship learning (Perisse et al., 2016). We therefore envision that distinct courtship memory types are not located in distinct circuits, but rather mediated by distinct processes within a common circuit. Encoding distinct memory phases within a common circuit may be an efficient mechanism for encoding memories for which the behavioral consequence is largely independent of timing and context (Fusi et al., 2005).\n\n## Materials and methods\n\n### Fly strains\n\nFlies for behavior experiments were reared in vials with standard cornmeal food at 25\u00b0C, or as indicated, at 60% humidity in a 12 hr:12 hr light:dark cycle. Flies for physiological experiments were reared on standard cornmeal food, supplemented with 500 \u03bcM all-trans-retinal, in dark.\n\nFor behavioral and physiological experiments we used VT-Gal4 and VT-LexA lines obtained from the VT library, a collection of 2 kb enhancer fragments, generated following the strategy of (Pfeiffer et al., 2008) (B.J.D., unpublished data), UAS-Kir2.1 (Nitabach et al., 2002), UAS-TNT/UAS-TNTQ (Martin et al., 2002), UAS-Shits (Kitamoto, 2002), UAS-TrpA1 (Rosenzweig et al., 2005), UAS-SFOCatCh (VIE-260b) (B.J.D., unpublished), 20xUAS-CsChrimson-tdTomato (SuHwattp5) and LexAop2-opGCaMPs (SuHwattp1) (gift from Barret Pfeiffer), LexAop-IVS-GCaMP6s-p10 (attp1) (Chen et al., 2013). Pseudomated females were (elav-Gal4/+UAS-SP/+) virgins (Keleman et al., 2012).\n\n### Behavior\n\nCourtship conditioning was performed as described (Siwicki and Ladewski, 2003). For training, solitary males (aged for 5\u20136 days) were placed in food chambers for 1 hr either with (trained) or without (na\u00efve) a single mated female. After training each male was recovered, allowed to rest for 30 min and tested with a fresh mated female. Tests were performed in 10 mm diameter chambers and videotaped for 10 min (JVC handyman, 30 GB HD). We used automated video analysis to derive a courtship index (CI) for each male, defined as the percentage of time over a 10 min test period during which the male courts the female.\n\n### Statistics\n\nA MATLAB script (permutation test) (Kamyshev et al., 1999) was used to for statistical comparison of SIs between two groups. Briefly, the entire set of courtship indices for both na\u00efve and trained flies were pooled and then randomly assorted into simulated na\u00efve and trained groups of the same size as the original data. A SI was calculated for each of 100,000 randomly permutated data sets, and P values were estimated for the null hypothesis that learning equals 0 (H0: SI\u00a0=\u00a00) or for the null hypothesis that experimental and control males learn equally well (H0: SI\u00a0=\u00a0SIc).\n\n### Immunohistochemistry\n\nFly brains and ventral nerve cords were dissected in Schneider\u2019s insect medium and fixed in 2% paraformaldehyde (PFA) at room temperature for 55 min. Tissues were washed in PBT (0.5% Triton X-100 in phosphate buffered saline (PBS)) and blocked using 5% normal goat serum) before incubation with antibodies (diluted in blocking solution in a volume of 200 \u03bcl per sample). Primary antibodies (rabbit anti-GFP A-11122 from Molecular Probes at 2 \u03bcg/ml and mouse anti-Bruchpilot nc82 hybridoma supernatant from DSHB at 1 \u03bcg/ml) were applied for 2\u20133 days. After a rinse and four 15 min washes in PBT, tissues were then incubated for 2\u20133 days with Alexa Fluor 488-conjugated goat anti-rabbit and Alexa Fluor 568-conjugated goat anti-mouse secondary antibodies (Molecular Probes; 2.5 \u03bcg/ml and 5 \u03bcg/ml, respectively). Each of the antibody incubations were done for 4 hr at room temperature before placing the samples at 4 \u02daC for the remainder of the incubation time. After a rinse and four 15 min washes in PBT, tissues were fixed with 4% PFA in PBS for 4 hr, followed by a rinse and four 15 min washes in PBT. Directly before mounting, tissues were rinsed and washed for 15 min in PBS to remove the Triton. The tissues were mounted on poly-L-lysine-coated cover slips and then dehydrated with 10 min ethanol baths of 30%, 50%, 75%, 95% and 3 \u00d7 100% followed by three 5 min washes in 100% xylene. Finally, mounted samples were embedded in xylene-based mounting medium (DPX; Electron Microscopy Science, Hatfield, PA) and dried for 2 days. Images were collected using an LSM710 confocal microscope (Zeiss, Germany) fitted with a Plan-Apochromat 20x/0.8 M27 objective.\n\n### SFOCatCh\n\nSFOCatCh was constructed from a synthetic ChR2 open reading frame with codon usage optimized for Drosophila, using mutagenic PCR to introduce the C128S and D156A substitutions to make it switchable (Yizhar et al., 2011) and the L132C mutation to increase cation conductance (Kleinlogel et al., 2011). The resulting coding fragment was inserted into a modified UAS vector for site-specific insertion at the VIE-260b landing site.\n\n### Two-photon calcium imaging\n\nFor ex vivo calcium imaging experiments, 5\u20137 days old na\u00efve males were briefly anesthetized on ice and brains were dissected out in calcium free external saline (ES) containing: 103 mM NaCl, 3 mM KCl, 5 mM TES (N-tris[hydroxymethyl]methyl-2-aminoethane sulfonic acid, a buffer chemical with peak performance around pH7.5), 10 mM trehalose, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 4 mM MgCl2, 7 mM sucrose, pH 7.4, 275 mOsm (Gu and O'Dowd, 2006). The brain explants were transferred into a custom-made imaging chamber and mounted with anterior side up. Brains were perfused with ES supplemented freshly with 2 mM calcium, at speed 2 mL/min, pre-saturated with mixture of 95% O2/5% CO2. All two-photon imaging were performed using 40x N.A. 0.75 water-immersion objective (N-Achroplan, Zeiss), on LSM 7 MP microscope (Zeiss) with a Ti:sapphire laser (Chameleon Vision II, Coherent, Santa Clara, CA). GCaMP was excited at 900 or 920 nm and emission signals were collected by GaAsP photomultiplier tubes (PMTs). Frame images (256 \u00d7 256 pixels) were acquired at 5\u201310 Hz. The region of interest (ROI) covers the entire bilateral medial \u03b35 lobe in MB. For consistency, imaging focus was kept approximately at the same level in different animal guided by axon position of M6 or aSP13.\n\n### Optogenetic stimulation and functional connectivity\n\nFor SFOCatCh experiments, neurons were activated with whole field light from a mercury lamp (X-cite 120 PC, Excelitas Technologies). Light was filtered by 38HE 470/40 nm and 43HE 550/25 nm (Zeiss), and pulse duration was controlled by a TTL-triggered shutter (Uniblitz, Rochester, NY). Light density was calculated by dividing light power to fields of view (FOV) of objective: 480 nm, 0.28 mW/mm2, and 540 nm, 0.86 mW/mm2.\n\nFor CsChrimson experiments, LED (pE-4000, CoolLED) was used to deliver 2 ms light pulse as stimulation. Light (peak 635 nm) trains were further filtered by 635/18 nm (Semrock, Rochester, NY) and delivered at 30 Hz for 1 s. Light density was calculated as 0.126 mW/mm2 when staying persistent during measurement at 635 nm.\n\n### Focal dopamine perfusion\n\nDopamine (DA) solution was prepared freshly before each experiment. DA solution was back-filled into a glass electrode with fine tip (~3 \u03bcm) shortly before each focal application. DA was injected (1 s, 5 p.s.i) in the medial \u03b35 lobe by Picospritzer-III (Parker, Cleveland, OH) (Cassenaer and Laurent, 2012). We controlled for dopamine diffusion by co-loading a fluorescent dye (Texas red 3000, 0,1 mg/ml) to the focal pipette and monitoring the dye distribution area during two-photon scanning.\n\n### Data analysis\n\nGCaMP imaging data was analyzed in a custom program modified from Sun et al., 2016. Fluorescence changes in intensity were calculated as \u0394F/F, where F is the average signals of the five frames before each stimulation. ROIs were chosen contained single optical plate with the neural processes of interest. Peak \u0394F/F represents mean \u0394F/F in continuous five frames responses (SFOCatCh ON) acquired during LTP procedure. All data represented as mean\u00a0\u00b1\u00a0s.e.m. All statistical analyses were performed in Graphpad Prism 7.0a. Data were analyzed by unpaired Student\u2019s t-test or one-way ANOVA test with post hoc Tukey\u2019s range tests.\n\n### Electrophysiology\n\nFor ex vivo patch-clamp recording from projection neurons (GH146-Gal4\u00a0>\u00a0UAS SFOCatCh\u00a0+\u00a0UAS\u00a0-mCD8::GFP) in antennal lobe brain explants were prepared as described in Ca imaging section, and recordings were performed as previously described (Gu and O'Dowd, 2006). Electrodes (5\u20137 M\u03a9) were filled with saline solution containing 140 mM potassium aspartate, 10 mM HEPES, 1 mM KCl, 4 mM MgATP, 0.5 mM Na3GTP, 1 mM EGTA, pH 7.3, and 265 mOsm. Cell-attached recording was performed in voltage-clamp mode with 0 mV holding potential. Whole-cell patch-clamp recording was performed in current-clamp mode with resting membrane potential around 55\u201365 mV. Signals were acquired by MultiClamp 700B amplifier, digitized at 10 kHz, and low-pass filtered at 5 kHz.\n",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "63fca022-1476-4c1c-a1df-08abe3f43469",
+      "submission_id": "a1add817-6905-483e-bd30-0e0c1a5e8a74",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.31425.021](https://doi.org/10.7554/eLife.31425.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Persistent activity in a recurrent circuit underlies courtship memory in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Josh Dubnau (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis impressive study by Zhao et al. addresses physiological correlates of courtship memories in Drosophila. The authors make use of the advantages Drosophila has to offer for addressing neural circuitry \u2013 genetic control over the activity of individual components of the local network to be studied \u2013 and combine these with pharmacological approaches. This study adds important knowledge on the physiological principles of the KC \u2013 MBON \u2013 DAN loop and also expands our understanding of the MB as central circuit during courtship conditioning.\n\nThe authors identify a novel role of the MBON M6 in memory acquisition and show that it works in concert with DANs that are activated for extended time periods via feed-forward excitation. Importantly the authors show that repetitive \u03b3 KC stimulation results in long lasting potentiation of the \u03b3 KC to M6 synapse, potentially reflecting the physiological correlate of short-term memory. This finding provides a possible link for recurrent activity and connects this to short-term memory formation\n\nEssential revisions:\n\n1) Subsection \u201cRepetitive stimulation of MBg potentiates MBg to M6 transmission\u201d. The authors describe \"This suggests that, upon repetitive stimulation of MBg neurons, endogenous dopamine enables synaptic transmission to M6 neurons, obviating the need for any exogenous supply.\" to explain the long-lasting responses of M6 neurons in Figure 3. This can be tested in a straightforward manner by examining the activity of aSP13 neurons (the endogenous supplier of dopamine) following the same protocol.\n\n2) If frequent (1 min interval) repetitive activation of MBg can induce prolonged responses of M6, can multiple co-application of MBg-activating light and DA every 3 min (modification of a protocol described in Figure 2) equally induce such responses as well? This protocol better resembles the stimuli that flies receive during courtship conditioning.\n\n3) One concern is the potential discrepancy between the in vivo settings and the in vitro protocols used here. The authors should explicitly discuss potential differences between in vivo and in vitro settings, as the timing, strength and duration of sensory cues may differ significantly. An experiment that the authors may wish to consider to partially address this gap would be to test whether (a) their OFF/ON/OFF protocols elicit immediate responses (first trial) in M6 of brains of experienced (trained) males and if so (b) whether responses would decay with a similar time course to the artificial stimulation?\n\n4) The findings presented strongly support a model in which MBgamma neurons are activated during training, leading to a recurrent/persistent feedback through M6 onto aSP13 DANs onto \u03b3 neurons. The authors state (Discussion section) that during training, \"MBgamma neurons are likely to be frequently activated during the period in which aSP13 activity persists, leading to a longer lasting potentiation of MBgamma>M6 transmission and its behavioral correlate STM\". And further, the authors conclude that the findings suggest a model in which \"working memory, STM and LTM all reside in the same \u03b3 compartment\", which is \"in contrast to the prevailing view of memory progression in the Drosophila MB\" where \"distinct memory phases are located in different compartments or lobes\".\n\nBut then how do the authors reconcile this with the lack of impact on courtship conditioning of shibireTS silencing of \u03b3 neurons (e.g. Baker lab, 2016) and the demonstrable impact of silencing in \u03b1/\u03b2 and prime lobes? Something is amiss. To be clear, I'm not demanding a resolution of this. I think the same perplexity exists in the Pavlovian olfactory memory field where we can rescue DopR with only \u03b3 expression but blocking output from \u03b3 seems to have little impact. Rather, I'm arguing that this can\u2019t be brushed under the carpet. It deserves explicit verbiage.\n\n5) Throughout the manuscript, the authors make use of dual control via Gal4 and LexA, often switching which downstream target is under Gal4 or LexA control. The Gal4 or LexA line in question is usually labeled in the figures, but nowhere in the ms are the genetics adequately described. This should be added, e.g. in figure legends, and/or text, and/or Materials and methods section.\n",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9851eef8-4504-4aec-93a5-7a53a764ac03",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C1",
+      "claim": "Recurrent connections are thought to be a common feature of the neural circuits that encode memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Recurrent connections are thought to be a common feature of the neural circuits that encode memories, but how memories are laid down in such circuits is not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established scientific thinking in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "3395ed8f-a30c-453b-b51c-64a1896ec47e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C2",
+      "claim": "Courtship memory in Drosophila relies on the recurrent circuit between mushroom body gamma (MB\u03b3), M6 output, and aSP13 dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present evidence that courtship memory in Drosophila relies on the recurrent circuit between mushroom body gamma (MB\u03b3), M6 output, and aSP13 dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "56fd8bfd-cf74-4906-9ed9-bd63b31569d5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C3",
+      "claim": "aSP13 neurons exhibit persistent neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate persistent neuronal activity of aSP13 neurons and show that it transiently potentiates synaptic transmission from MB\u03b3>M6 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through calcium imaging experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "96a15b7e-90b1-416e-ba04-1669e16d3acd",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C4",
+      "claim": "Persistent aSP13 activity transiently potentiates synaptic transmission from MB\u03b3 to M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate persistent neuronal activity of aSP13 neurons and show that it transiently potentiates synaptic transmission from MB\u03b3>M6 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by optogenetic and calcium imaging experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "0eb99dc4-5ff8-4c6a-a656-fda157442fd8",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C5",
+      "claim": "M6 neurons provide input to aSP13 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "M6 neurons in turn provide input to aSP13 neurons, prolonging potentiation of MB\u03b3>M6 synapses over time periods that match short-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by calcium imaging showing aSP13 response to M6 activation in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "521daf13-b666-4593-9a04-3cc2b14a5783",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C6",
+      "claim": "M6 input to aSP13 neurons prolongs potentiation of MB\u03b3>M6 synapses over time periods that match short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "M6 neurons in turn provide input to aSP13 neurons, prolonging potentiation of MB\u03b3>M6 synapses over time periods that match short-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the time course experiments in Figure 3D showing potentiation lasting 2-3 hours.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6e8d39e6-02c4-4566-960f-fce4a2a6a59a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C7",
+      "claim": "Working memory is thought to reflect persistent activity generated within neural networks, including recurrent circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Working memory is thought to reflect persistent activity generated within neural networks, including recurrent circuits (Wang, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "d282fcd4-3f41-420f-998d-40c475d03b04",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C8",
+      "claim": "Short-term memory (STM) and long-term memory (LTM) involve changes in synaptic efficacy due to functional and structural modification of synaptic connections.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, short-term memory (STM) and long-term memory (LTM) involves changes in synaptic efficacy due to functional and structural modification of synaptic connections (Kandel, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kandel, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a93a8a4a-2c82-4532-9c20-0bac2394ee57",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C9",
+      "claim": "Courtship memory in Drosophila can last from minutes to days, depending on the duration and intensity of training.",
+      "claim_type": "EXPLICIT",
+      "source": "A robust form of memory in Drosophila is courtship memory, which can last from minutes to days, depending on the duration and intensity of training (Siegel and Hall, 1979; McBride et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Siegel and Hall, 1979 and McBride et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "89389888-04b2-4f2b-8cfb-36824c54cd3b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C10",
+      "claim": "Na\u00efve Drosophila males eagerly court both virgin females and mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve Drosophila males eagerly court both virgin females, which are generally receptive, and mated females, which are not (Manning, 1967; Wolfner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Manning, 1967 and Wolfner, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "9ef54f85-9c96-4077-bcd9-ddf1ddb95d55",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C11",
+      "claim": "Virgin females are generally receptive to male courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve Drosophila males eagerly court both virgin females, which are generally receptive, and mated females, which are not (Manning, 1967; Wolfner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Manning, 1967 and Wolfner, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "893ca1a7-f573-4b30-bf4b-79c192a7b6d7",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C12",
+      "claim": "Mated females are not receptive to male courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Na\u00efve Drosophila males eagerly court both virgin females, which are generally receptive, and mated females, which are not (Manning, 1967; Wolfner, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Manning, 1967 and Wolfner, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7b5a1b66-5a96-4ba5-a01f-bfb1c74db1b5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C13",
+      "claim": "Upon rejection by mated females, males become subsequently less likely to court other mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon rejection by mated females, they become subsequently less likely to court other mated females (Tompkins, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tompkins, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "9bb5bed2-20ce-4a1c-a6c5-887b9bb6a5b1",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C14",
+      "claim": "Courtship conditioning is the selective suppression of courtship towards mated females.",
+      "claim_type": "EXPLICIT",
+      "source": "This selective suppression of courtship towards mated females, called courtship conditioning, can be attributed to the enhanced sensitivity of experienced males to an inhibitory male pheromone deposited on the female during mating, cis-vaccenyl acetate (cVA) (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the text with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "cbbf43bf-ed46-46a3-8098-07488e2332fc",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C15",
+      "claim": "Courtship conditioning can be attributed to the enhanced sensitivity of experienced males to cis-vaccenyl acetate (cVA).",
+      "claim_type": "EXPLICIT",
+      "source": "This selective suppression of courtship towards mated females, called courtship conditioning, can be attributed to the enhanced sensitivity of experienced males to an inhibitory male pheromone deposited on the female during mating, cis-vaccenyl acetate (cVA) (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "de96b21d-d2ac-483c-b655-e7e6bdc44054",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C16",
+      "claim": "cVA is an inhibitory male pheromone deposited on the female during mating.",
+      "claim_type": "EXPLICIT",
+      "source": "This selective suppression of courtship towards mated females, called courtship conditioning, can be attributed to the enhanced sensitivity of experienced males to an inhibitory male pheromone deposited on the female during mating, cis-vaccenyl acetate (cVA) (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "d62b9fa3-7ebd-4049-8496-11f84308a200",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C17",
+      "claim": "Olfactory memory in insects relies on the function of the mushroom body (MB).",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory memory in insects relies on the function of a central brain structure called the mushroom body (MB) (de Belle and Heisenberg, 1994; Heisenberg et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to de Belle and Heisenberg, 1994 and Heisenberg et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "dc2aa9aa-3d29-4cd2-89b1-1dc901c260bb",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C18",
+      "claim": "The principal MB cells are the cholinergic Kenyon cells (KCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The principal MB cells, the cholinergic Kenyon cells (KCs) (Barnstedt et al., 2016), receive input from sensory pathways in the dendritic calyx region and from dopaminergic neurons (DANs) in the axonal lobes of the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "76006f49-53ad-4756-9a37-02ff2f8290ae",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C19",
+      "claim": "Kenyon cells receive input from sensory pathways in the dendritic calyx region.",
+      "claim_type": "EXPLICIT",
+      "source": "The principal MB cells, the cholinergic Kenyon cells (KCs) (Barnstedt et al., 2016), receive input from sensory pathways in the dendritic calyx region and from dopaminergic neurons (DANs) in the axonal lobes of the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established anatomical connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "43eaec71-01ba-4a1b-9d3e-29330f71356b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C20",
+      "claim": "Kenyon cells receive input from dopaminergic neurons (DANs) in the axonal lobes of the MB.",
+      "claim_type": "EXPLICIT",
+      "source": "The principal MB cells, the cholinergic Kenyon cells (KCs) (Barnstedt et al., 2016), receive input from sensory pathways in the dendritic calyx region and from dopaminergic neurons (DANs) in the axonal lobes of the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established anatomical connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "5fa4b917-57ba-4998-b427-f9024ff43cc1",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C21",
+      "claim": "MB lobes are compartmentalized, with each compartment innervated by specific classes of DANs and MB output neurons (MBONs).",
+      "claim_type": "EXPLICIT",
+      "source": "These MB lobes are compartmentalized, with each compartment innervated by specific classes of DANs and MB output neurons (MBONs) (Aso et al., 2014a; Mao and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aso et al., 2014a and Mao and Davis, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "b4172685-0b8a-402f-9864-274da69cea40",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C22",
+      "claim": "MBONs receive input from both KCs and DANs.",
+      "claim_type": "EXPLICIT",
+      "source": "MBONs receive input from both KCs and DANs (Takemura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Takemura et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "4a49455a-1fc0-4cfb-9ba1-b1d866db8566",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C23",
+      "claim": "Short-term courtship conditioning is mediated by the aSP13 class of DANs.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established that short-term courtship conditioning is mediated by the aSP13 class of DANs (also known as the PAM-\u03b35 neurons, [Aso et al., 2014a]), which innervate the MB\u03b35 compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e4f277dc-85c7-42f0-a7f9-37cb77a4eb46",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C24",
+      "claim": "aSP13 neurons are also known as PAM-\u03b35 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established that short-term courtship conditioning is mediated by the aSP13 class of DANs (also known as the PAM-\u03b35 neurons, [Aso et al., 2014a]), which innervate the MB\u03b35 compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature clarification with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "238071e8-83ce-4556-9a9b-6a2ed8564f1b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C25",
+      "claim": "aSP13 neurons innervate the MB\u03b35 compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established that short-term courtship conditioning is mediated by the aSP13 class of DANs (also known as the PAM-\u03b35 neurons, [Aso et al., 2014a]), which innervate the MB\u03b35 compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical fact supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "869bec22-98e4-42f7-9640-1552855be4cc",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C26",
+      "claim": "The activity of aSP13 neurons is essential for courtship conditioning in experienced males.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of aSP13 neurons is essential for courtship conditioning in experienced males and sufficient to induce conditioning in na\u00efve males (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "740bf2cd-639b-41a8-b9f3-53488ac628e5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C27",
+      "claim": "The activity of aSP13 neurons is sufficient to induce conditioning in na\u00efve males.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of aSP13 neurons is essential for courtship conditioning in experienced males and sufficient to induce conditioning in na\u00efve males (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a7284726-7cc9-40cc-be99-ead592cac63a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C28",
+      "claim": "Courtship memory requires the corresponding MB\u03b3 KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that courtship memory also requires the corresponding MB\u03b3 KCs and the MB\u03b35 MBONs, the glutamatergic M6 neurons (also known as MBON-\u03b35\u03b2'2a neurons [Aso et al., 2014a]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the behavioral experiments in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "13a88566-0b71-4015-aa16-07d533b82e89",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C29",
+      "claim": "Courtship memory requires the MB\u03b35 MBONs, the glutamatergic M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that courtship memory also requires the corresponding MB\u03b3 KCs and the MB\u03b35 MBONs, the glutamatergic M6 neurons (also known as MBON-\u03b35\u03b2'2a neurons [Aso et al., 2014a]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the behavioral experiments in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "3354e5d2-1b48-47a5-bc6e-c9a0f828bfe7",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C30",
+      "claim": "M6 neurons are also known as MBON-\u03b35\u03b2'2a neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that courtship memory also requires the corresponding MB\u03b3 KCs and the MB\u03b35 MBONs, the glutamatergic M6 neurons (also known as MBON-\u03b35\u03b2'2a neurons [Aso et al., 2014a]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature clarification with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "1f82a3bd-7fed-4537-86db-14359dbf164a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C31",
+      "claim": "MB\u03b3, M6, and aSP13 neurons form a recurrent circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we present evidence that MB\u03b3, M6, and aSP13 neurons form a recurrent circuit and that persistent activity of the aSP13 neurons mediates plasticity at the MB\u03b3 to M6 synapses that can last from minutes to hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the connectivity and functional experiments shown in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7209e221-9852-4af1-8440-927ad7e21eff",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C32",
+      "claim": "Persistent activity of aSP13 neurons mediates plasticity at the MB\u03b3 to M6 synapses that can last from minutes to hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we present evidence that MB\u03b3, M6, and aSP13 neurons form a recurrent circuit and that persistent activity of the aSP13 neurons mediates plasticity at the MB\u03b3 to M6 synapses that can last from minutes to hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the time course experiments in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "992c28e1-d29f-4f27-9a67-d082c49df882",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C33",
+      "claim": "M6 activity is required for memory readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, M6 activity is required not only for memory readout but also, like aSP13, for memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the behavioral experiments in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e4cdca24-963a-476b-ac41-3326e0e9372f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C34",
+      "claim": "M6 activity is required for memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, M6 activity is required not only for memory readout but also, like aSP13, for memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the behavioral experiments in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e517c341-c74a-44f8-bdbb-58a97d31418f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C35",
+      "claim": "Persistent aSP13 activity within the MB\u03b3>M6>aSP13 recurrent circuit lays the foundation for short-term courtship memory.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support a model in which persistent aSP13 activity within the MB\u03b3>M6>aSP13 recurrent circuit lays the foundation for short-term courtship memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "bab4afe7-f557-4afa-8e5c-901e705729f6",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C38",
+      "claim": "Control flies expressing inactive tetanus toxin (UAS-TNTQ) typically show a suppression index of ~40\u201350%.",
+      "claim_type": "EXPLICIT",
+      "source": "Control flies expressing an inactive form of tetanus toxin (UAS-TNTQ) typically showed a SI of ~40\u201350% (Figure 1A,B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "4aa1d258-d383-4aa7-b7b9-27aca3a792e3",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C39",
+      "claim": "Males in which M6 neurons or MB\u03b3 neurons were silenced with tetanus toxin showed much less or no suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, males in which M6 neurons or MB\u03b3 neurons were silenced with an inhibitory form of tetanus toxin (UAS-TNT) showed much less or no suppression (Figure 1A,B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "cd288cf5-69d7-4d31-b971-651c20dcbaea",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C40",
+      "claim": "DAN inputs to a given MB compartment are believed to modulate synaptic transmission from MB neurons to MBONs, primarily through their presynaptic inputs onto the KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The DAN inputs to a given MB compartment are believed to modulate synaptic transmission from MB neurons to MBONs, primarily through their presynaptic inputs onto the KCs (Kim et al., 2007; Qin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2007 and Qin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "abe44fe5-2a8f-490c-b9b7-0a48920c44d0",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C41",
+      "claim": "Some studies have indicated that DANs enhance KC>MBON transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have indicated that DANs enhance KC>MBON transmission (Cohn et al., 2015; Owald et al., 2015; Pla\u00e7ais et al., 2013; Pai et al., 2013), whereas others have suggested that DANs depress these synapses (Aso et al., 2014a; Hige et al., 2015; Owald et al., 2015; S\u00e9journ\u00e9 et al., 2011; Hattori et al., 2017; Lewis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "74e9ca5e-3142-45c6-9260-498fa094d95d",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C42",
+      "claim": "Some studies have suggested that DANs depress KC>MBON synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have indicated that DANs enhance KC>MBON transmission (Cohn et al., 2015; Owald et al., 2015; Pla\u00e7ais et al., 2013; Pai et al., 2013), whereas others have suggested that DANs depress these synapses (Aso et al., 2014a; Hige et al., 2015; Owald et al., 2015; S\u00e9journ\u00e9 et al., 2011; Hattori et al., 2017; Lewis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6a7e189e-a0b9-46fe-b3d6-d5c4b4aa60bc",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C43",
+      "claim": "The sign of DAN modulation of KC>MBON transmission may depend upon the context.",
+      "claim_type": "EXPLICIT",
+      "source": "The sign of modulation may therefore depend upon the context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conflicting results from different studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ae6fa4f5-b989-4b9a-a8d3-29b4b1af4613",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C44",
+      "claim": "Artificial activation of M6 suppresses courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that, if M6 is the relevant MBON for courtship conditioning, then artificial activation of M6 should suppress courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is confirmed by the data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "d377b779-966c-4ba6-9859-054cb36ef314",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C45",
+      "claim": "M6 activation suppresses male courtship with equal potency in both na\u00efve and experienced males.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, M6 activation suppressed male courtship with equal potency in both na\u00efve and experienced males (Figure 1D; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "2230ab25-0507-4bdf-97c3-e03b6a04b883",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C46",
+      "claim": "MB\u03b3 activation is significantly more potent in experienced males than in na\u00efve males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MB\u03b3 activation was significantly more potent in experienced males than in na\u00efve males, in which it had only a small effect on courtship (Figure 1C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6b11b05f-eb4a-4a30-b6c0-ef933f6b1b1d",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C47",
+      "claim": "MB\u03b3 activation has only a small effect on courtship in na\u00efve males.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MB\u03b3 activation was significantly more potent in experienced males than in na\u00efve males, in which it had only a small effect on courtship (Figure 1C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "5e760c76-b71d-4c2e-bfe1-d6daa849c685",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C48",
+      "claim": "Courtship experience with mated females potentiates synaptic transmission from MB\u03b3 to M6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these data that courtship experience with mated females potentiates synaptic transmission from MB\u03b3 to M6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the differential effects of MB\u03b3 activation in na\u00efve vs. experienced males shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e8067cde-ec45-4502-8f73-32e9e166944d",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C49",
+      "claim": "Cholinergic synaptic transmission from MB\u03b3 to M6 cells is initially weak but can be acutely potentiated by dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that cholinergic synaptic transmission from MB\u03b3 to M6 cells is initially weak but can be acutely potentiated by dopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experiments in Figure 2 showing that M6 response to MB\u03b3 activation requires dopamine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a14f612e-0771-45f1-af04-e04dff6853e7",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C50",
+      "claim": "A strong dose-dependent calcium response was consistently observed in M6 neurons in trials with dopamine during the SFOCatCh ON period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a strong dose-dependent calcium response was consistently observed in trials with dopamine during the SFOCatCh ON period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "247440dd-5c6f-4f7f-8ec3-bcd41b502240",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C51",
+      "claim": "Little or no calcium response was observed in M6 neurons during the SFOCatCh OFF periods.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, little or no response was observed during either the SFOCatCh OFF periods (Figure 2B\u2013D, Figure 2\u2014figure supplement 2) or the SFOCatCh ON period after dopamine washout (Figure 2B,C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B-D and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "2a5e3099-fbab-4751-a52c-407b33a83c33",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C52",
+      "claim": "Little or no calcium response was observed in M6 neurons during the SFOCatCh ON period after dopamine washout.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, little or no response was observed during either the SFOCatCh OFF periods (Figure 2B\u2013D, Figure 2\u2014figure supplement 2) or the SFOCatCh ON period after dopamine washout (Figure 2B,C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B-C and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "82bae763-fb7f-4c50-bd9d-50e5cb59ffb1",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C53",
+      "claim": "The response of M6 to dopamine and SFOCatCh was completely abolished by application of the nicotinic acetylcholine receptor antagonist mecamylamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to dopamine and SFOCatCh was completely abolished by application of the nicotinic acetylcholine receptor antagonist mecamylamine (Figure 2F), which blocks synaptic transmission from KCs to MBONs (Barnstedt et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "25b79ac1-c7f2-4d50-92dd-ef69158c47cd",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C54",
+      "claim": "Mecamylamine blocks synaptic transmission from KCs to MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to dopamine and SFOCatCh was completely abolished by application of the nicotinic acetylcholine receptor antagonist mecamylamine (Figure 2F), which blocks synaptic transmission from KCs to MBONs (Barnstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "bf9da8e5-d450-40a3-80d3-e2c7ead7034f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C55",
+      "claim": "After 3\u20134 trials of repetitive MB\u03b3 stimulation, a significant calcium response was observed in M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 3\u20134 trials a significant calcium response was observed (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "566cadb4-8c6f-4617-924a-1b7a13c3f614",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C56",
+      "claim": "The M6 calcium response increased upon each successive stimulation before reaching a plateau after approximately 20 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This response increased upon each successive stimulation before reaching a plateau after approximately 20 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "62d655f6-cfc4-4c36-9d2d-f0cd7f774423",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C57",
+      "claim": "The M6 response to repetitive MB\u03b3 stimulation was blocked by the dopamine D1-type receptor antagonist SCH23390.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was blocked by the dopamine D1-type receptor antagonist SCH23390 (Figure 3C), regardless of whether it was applied during the induction or plateau phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ff7ee7ce-dbda-400d-96b7-da7fd8e9f597",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C58",
+      "claim": "Upon repetitive stimulation of MB\u03b3 neurons, endogenous dopamine enables synaptic transmission to M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, upon repetitive stimulation of MB\u03b3 neurons, endogenous dopamine enables synaptic transmission to M6 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the response is blocked by a dopamine receptor antagonist.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c75d490b-6296-4ca6-a463-c30bd8aea63a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C59",
+      "claim": "The most likely source of endogenous dopamine supply is the aSP13 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The most likely source of this endogenous dopamine supply is the aSP13 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the anatomical connectivity and the fact that aSP13 neurons are dopaminergic and innervate the same compartment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "1b556268-8bd6-4728-a86d-b9325607c896",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C60",
+      "claim": "aSP13 DANs respond in a similar manner as M6 to the repetitive activation of MB\u03b3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by shifting GCaMP6s from M6 to aSP13, we confirmed that the aSP13 DANs respond in a similar manner as M6 to the repetitive activation of MB\u03b3 neurons (Figure 3E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "b10cff86-6875-4c8a-a01b-ef7fb8a724c4",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C61",
+      "claim": "Potentiation at MB\u03b3>M6 synapses was barely diminished after 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentiation at MB\u03b3>M6 synapses was barely diminished after 1 hr, but fell to about 50% of its initial level after 3 hr (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "4518e850-63a1-429a-86a3-831f8148a72d",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C62",
+      "claim": "Potentiation at MB\u03b3>M6 synapses fell to about 50% of its initial level after 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentiation at MB\u03b3>M6 synapses was barely diminished after 1 hr, but fell to about 50% of its initial level after 3 hr (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "5ca02c57-100d-4d85-b0ea-5c2152bea15c",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C63",
+      "claim": "The persistence of potentiation at MB\u03b3>M6 synapses is in line with the persistence of the courtship memory after a 30 min training period.",
+      "claim_type": "EXPLICIT",
+      "source": "The persistence of potentiation at MB\u03b3>M6 synapses in these experiments is thus in line with the persistence of the courtship memory after a 30 min training period (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the physiological and behavioral timescales, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c74746a0-a71e-4ddd-bb87-f44da6a48866",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C64",
+      "claim": "DANs and MBONs innervating the same MB compartment have the potential to form recurrent loops, with MBONs providing input to DANs.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, DANs and MBONs innervating the same MB compartment, have the potential to form recurrent loops, with MBONs providing input to DANs (Aso et al., 2014a; Takemura et al., 2017; Ichinose et al., 2015; Eichler et al., 2017; Owald et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "cd05195e-a3b1-4ea7-9ba7-dfcc5bbf5596",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C65",
+      "claim": "The axonal termini of M6 MBONs are closely apposed to the aSP13 dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the axonal termini of M6 MBONs are closely apposed to the aSP13 dendrites (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Aso et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "3515ee2a-feb6-489a-9381-949cba433b26",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C66",
+      "claim": "Acute activation of M6 neurons produces a strong calcium response in aSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, acute activation of M6 neurons produced a strong calcium response in aSP13 (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "9d6116d2-8747-439a-8b44-3b2212cca28a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C67",
+      "claim": "The aSP13 response to M6 activation was blocked by the NMDA receptor antagonist AP-5.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was blocked by the NMDA receptor antagonist AP-5 (Figure 4C), consistent with glutamatergic transmission from M6 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ec95255b-e746-43de-8cb9-b9308305b924",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C68",
+      "claim": "The aSP13 response to M6 activation is consistent with glutamatergic transmission from M6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was blocked by the NMDA receptor antagonist AP-5 (Figure 4C), consistent with glutamatergic transmission from M6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the response is blocked by an NMDA receptor antagonist.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ebde7d18-8bfb-482b-bcef-0d8b49ca0c1f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C69",
+      "claim": "Activation of MB\u03b3 neurons with SFOCatCh elicits a strong calcium response in aSP13 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of MB\u03b3 neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c73199a5-9468-4763-a6e8-2de3025e8646",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C70",
+      "claim": "The aSP13 response to MB\u03b3 activation is dependent on glutamatergic neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of MB\u03b3 neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "fbb09823-65e5-4774-85d4-856de6f3e192",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C71",
+      "claim": "The aSP13 response to MB\u03b3 activation is dependent on cholinergic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of MB\u03b3 neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "517a2c14-b406-4c94-9ddc-cef1a82bc478",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C72",
+      "claim": "The aSP13 response to MB\u03b3 activation is dependent on dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of MB\u03b3 neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ae05b8a6-9fae-4d55-b14e-7a3b50b6d404",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C73",
+      "claim": "The calcium response in aSP13 neurons to M6 activation persists into the post-stimulus SFOCatCh OFF period.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the M6 response to MB\u03b3 activation was diminished in the post-stimulus OFF period in trials with dopamine (Figure 2B,C), the response of aSP13 neurons to either M6 or MB\u03b3 activation persisted into the post-stimulus SFOCatCh OFF period (Figure 4A,B,E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A, B, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a1d659c2-9ea1-4108-aef0-b7458ef8182f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C74",
+      "claim": "The calcium response in aSP13 neurons to MB\u03b3 activation persists into the post-stimulus SFOCatCh OFF period.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the M6 response to MB\u03b3 activation was diminished in the post-stimulus OFF period in trials with dopamine (Figure 2B,C), the response of aSP13 neurons to either M6 or MB\u03b3 activation persisted into the post-stimulus SFOCatCh OFF period (Figure 4A,B,E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A, B, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "62580932-2f9f-4bcd-8cf3-06341a142ede",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C75",
+      "claim": "The calcium response in aSP13 gradually declines over a 2 min period after M6 or MB\u03b3 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the calcium response in aSP13 gradually declined over a 2 min period (Figure 4D and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4D and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "2a99a3c0-b592-4211-abe8-24c36e243193",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C76",
+      "claim": "The persistent response of aSP13 neurons is not an intrinsic property of aSP13 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The persistent response of aSP13 neurons is not an intrinsic property of aSP13 neurons, since it was not observed when SFOCatCh was used to activate the aSP13 neurons themselves (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "00fe932d-71c9-4419-9dd3-7ea492dae6bd",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C77",
+      "claim": "The persistent activity of aSP13 is induced by glutamatergic transmission from M6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the response of aSP13 to MB\u03b3 or M6 activation is blocked by AP-5, we infer that this persistent activity is induced by glutamatergic transmission from M6 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the response is blocked by an NMDA receptor antagonist.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "0ebd0744-c744-47ea-b611-0fc654b2d012",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C78",
+      "claim": "Activity of aSP13 neurons is strictly required during the training period of courtship conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of aSP13 neurons is strictly required during the training period of courtship conditioning (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e068d48a-7f9d-4a02-8d33-a5e0b00d750b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C79",
+      "claim": "Synaptic transmission from aSP13 is only required during memory acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas synaptic transmission from aSP13 is only required during memory acquisition (Keleman et al., 2012), M6 output is required during both acquisition and recall (Figure 4I; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "f76cc3b0-2c65-4b15-a89a-856638a20758",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C80",
+      "claim": "M6 output is required during both memory acquisition and recall.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas synaptic transmission from aSP13 is only required during memory acquisition (Keleman et al., 2012), M6 output is required during both acquisition and recall (Figure 4I; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "b41d7fab-39ea-442b-95c6-82454765272e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C81",
+      "claim": "Males in which M6 neurotransmission was blocked during training had suppression indices indistinguishable from 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Males in which M6 neurotransmission was blocked either during training or during testing had suppression indices indistinguishable from 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "00c4857b-eefa-40c9-8f8d-e76fe2fde1a5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C82",
+      "claim": "Males in which M6 neurotransmission was blocked during testing had suppression indices indistinguishable from 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Males in which M6 neurotransmission was blocked either during training or during testing had suppression indices indistinguishable from 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "1a71d16c-728d-4918-968b-97391efe77c5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C83",
+      "claim": "STM formation requires the MB\u03b3>M6>aSP13 recurrent circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that STM formation requires the MB\u03b3>M6>aSP13 recurrent circuit, whereas readout occurs through other M6-dependent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of behavioral and physiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "3959f858-8d53-4931-b501-5a77b9219e43",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C84",
+      "claim": "Memory readout occurs through M6-dependent pathways that do not involve aSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that STM formation requires the MB\u03b3>M6>aSP13 recurrent circuit, whereas readout occurs through other M6-dependent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that M6 is required for both acquisition and recall, while aSP13 is only required for acquisition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "80674086-ab31-4136-8c8b-f6f8eeca9c9b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C85",
+      "claim": "When a na\u00efve male courts a mated female, the aSP13 and MB\u03b3 neurons may both be activated.",
+      "claim_type": "EXPLICIT",
+      "source": "When a na\u00efve male courts a mated female, the aSP13 and MB\u03b3 neurons may both be activated, perhaps in response to behavioral rejection and olfactory stimuli presented by the female, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the natural activation of these neurons during courtship.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "74eda580-4738-4266-9ec6-4f15bda049f0",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C86",
+      "claim": "Dopamine released by aSP13 neurons potentiates transmission from MB\u03b3 to M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine released by aSP13 neurons potentiates transmission from MB\u03b3 to M6 neurons, which in turn provide a recurrent excitatory glutamatergic input back onto aSP13 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experiments in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "97c1a9a8-8727-42cd-b3de-caf420f65471",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C87",
+      "claim": "M6 neurons provide a recurrent excitatory glutamatergic input back onto aSP13 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine released by aSP13 neurons potentiates transmission from MB\u03b3 to M6 neurons, which in turn provide a recurrent excitatory glutamatergic input back onto aSP13 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "16fecf92-a752-456d-97fa-26d8fedde250",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C88",
+      "claim": "Upon activation by M6, aSP13 activity persists for several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation by M6, aSP13 activity persists for several minutes, providing a short time window during which continued MB\u03b3 activity can further drive M6 and aSP13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4D and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8890b606-dc6a-4ea0-ac39-2ab535173cdb",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C89",
+      "claim": "Sustained aSP13 activity can lead to a longer-lasting accumulation of dopamine in the \u03b35 compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus sustained, aSP13 activity can lead to a longer-lasting accumulation of dopamine in the \u03b35 compartment, facilitating MB\u03b3>M6 neurotransmission for up to 2\u20133 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the persistent activity of aSP13 and the time course of potentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "cf04376c-51d1-44e7-b07d-2a44c674125e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C90",
+      "claim": "Sustained aSP13 activity facilitates MB\u03b3>M6 neurotransmission for up to 2\u20133 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus sustained, aSP13 activity can lead to a longer-lasting accumulation of dopamine in the \u03b35 compartment, facilitating MB\u03b3>M6 neurotransmission for up to 2\u20133 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the time course experiments in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "179a4f11-fdae-4240-bd3e-869d7cf86019",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C91",
+      "claim": "The timescales for physiological processes in ex vivo brain preparations broadly match the dynamics of courtship training and short-term memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The timescales for these physiological processes in ex vivo brain preparations broadly match the dynamics of courtship training and short-term memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the physiological and behavioral timescales.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "67fee180-3755-4fb2-8095-8822d973d3df",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C92",
+      "claim": "In the standard training paradigm, the male typically courts the female over several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our standard training paradigm, the male typically courts the female over several minutes, during which he performs a series of courtship bouts, each lasting for several seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral paradigm used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "1f2f2632-62ad-4b03-b6a9-8fe8d3a48542",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C93",
+      "claim": "During courtship training, the male performs a series of courtship bouts, each lasting for several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "In our standard training paradigm, the male typically courts the female over several minutes, during which he performs a series of courtship bouts, each lasting for several seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral paradigm used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "93d4598a-89ea-4e2a-acc1-1b7703373eb5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C94",
+      "claim": "Courtship training results in a behavioral memory that lasts for several hours.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a behavioral memory forms that lasts for several hours (Keleman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "83fb7d83-65be-4417-a534-248580339554",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C95",
+      "claim": "Memory formation during training requires both M6 and aSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory formation during training requires both M6 and aSP13, consistent with the notion that it reflects activation of the recurrent circuit (Figure 4 and [Keleman et al., 2012]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the behavioral experiments in Figure 4I and citation to Keleman et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "0d055bc1-fc86-4455-bf45-18696b4e02b9",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C96",
+      "claim": "Memory readout requires M6 but not aSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory readout requires M6 but not aSP13 (Figure 4 and [Keleman et al., 2012]), and so evidently does not involve the recurrent circuit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the behavioral experiments in Figure 4I and citation to Keleman et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "1e2909f7-0116-4d02-8461-3823cb046a52",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C97",
+      "claim": "Memory readout does not involve the recurrent circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory readout requires M6 but not aSP13 (Figure 4 and [Keleman et al., 2012]), and so evidently does not involve the recurrent circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that aSP13 is not required for memory readout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "f34d7552-ac4d-48c9-a327-eb49c0df68d1",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C98",
+      "claim": "M6 suppresses courtship through aSP13-independent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We infer that M6 suppresses courtship through other, aSP13-independent, pathways, and that its ability to do so is independent of experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that M6 activation suppresses courtship equally in na\u00efve and experienced males.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "5fa370f5-d66a-4ff1-b291-08c70f80db8e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C99",
+      "claim": "M6's ability to suppress courtship is independent of experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We infer that M6 suppresses courtship through other, aSP13-independent, pathways, and that its ability to do so is independent of experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that M6 activation suppresses courtship equally in na\u00efve and experienced males.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "164eb798-e482-4d51-807b-45ac92266cde",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C100",
+      "claim": "The consequence of training is to provide MB\u03b3 neurons with access to the M6-dependent courtship suppression pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequence of training is to provide MB\u03b3 neurons with access to this M6-dependent courtship suppression pathway (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential effects of MB\u03b3 activation in na\u00efve vs. experienced males shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "07ae97e3-4b6c-456c-a7ad-ba1f9b040a59",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C101",
+      "claim": "Persistent aSP13 activity is evidently not an intrinsic property of aSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "The persistent response in aSP13 is evidently not an intrinsic property of aSP13, as it is not induced when aSP13 neurons themselves are activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c36173d0-774d-4ff0-9e66-2b43e7b19560",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C102",
+      "claim": "Persistent aSP13 activity is induced in response to transient M6 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent aSP13 activity is induced in response to transient M6 activation, and is not associated with any persistent activity of M6 neurons themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "f2f7360c-6501-4a20-97ad-c37bbfc53977",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C103",
+      "claim": "Persistent aSP13 activity is not associated with any persistent activity of M6 neurons themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistent aSP13 activity is induced in response to transient M6 activation, and is not associated with any persistent activity of M6 neurons themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8235ea8a-687b-45fc-8544-927543a8835b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C104",
+      "claim": "Persistent aSP13 activity may reflect unusually prolonged activation of the glutamatergic M6>aSP13 synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that aSP13 persistence reflects unusually prolonged activation of the glutamatergic M6 >aSP13 synapses, or perhaps lies within interposed but still unidentified circuit elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism underlying persistent aSP13 activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7c8a789f-9974-4a02-bcef-97afb4837076",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C105",
+      "claim": "Persistent aSP13 activity may lie within interposed but still unidentified circuit elements.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that aSP13 persistence reflects unusually prolonged activation of the glutamatergic M6 >aSP13 synapses, or perhaps lies within interposed but still unidentified circuit elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the mechanism underlying persistent aSP13 activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "03896d82-e617-4ecc-a7ef-2258950fb4b4",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C106",
+      "claim": "M6 neurons activate a courtship suppression pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that M6 neurons activate a courtship suppression pathway, the potentiation of MB\u03b3>M6 neurotransmission may explain why MB\u03b3 activation suppresses courtship in trained but not na\u00efve flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral experiments in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7679c6cd-cf64-4355-9feb-7b3d1daed194",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C107",
+      "claim": "The potentiation of MB\u03b3>M6 neurotransmission may explain why MB\u03b3 activation suppresses courtship in trained but not na\u00efve flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that M6 neurons activate a courtship suppression pathway, the potentiation of MB\u03b3>M6 neurotransmission may explain why MB\u03b3 activation suppresses courtship in trained but not na\u00efve flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral experiments in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c2b9db35-117a-4815-986d-43da27e30c6f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C108",
+      "claim": "MB\u03b3 neurons likely do not specifically respond to cVA.",
+      "claim_type": "EXPLICIT",
+      "source": "But MB\u03b3 neurons likely do not specifically respond to cVA (Caron et al., 2013; Gruntman and Turner, 2013), so this change alone cannot account for the enhanced sensitivity of trained flies to cVA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Caron et al., 2013 and Gruntman and Turner, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e6990b27-2986-4e95-90a0-3194d06b80bd",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C109",
+      "claim": "A small and variable subset of MB \u03b3 neurons do receive input from the olfactory pathway that processes cVA.",
+      "claim_type": "EXPLICIT",
+      "source": "A small and variable subset of MB \u03b3neurons do receive input from the olfactory pathway that processes cVA, but cVA is not required during training (Keleman et al., 2012) and it is difficult to envision any other mechanism by which aSP13-dependent plasticity could be specifically restricted to the cVA-responsive MB\u03b3 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the connectivity of MB\u03b3 neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7cb6594a-e7ed-44ff-8a45-71b95d89e299",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C110",
+      "claim": "cVA is not required during training.",
+      "claim_type": "EXPLICIT",
+      "source": "A small and variable subset of MB \u03b3neurons do receive input from the olfactory pathway that processes cVA, but cVA is not required during training (Keleman et al., 2012) and it is difficult to envision any other mechanism by which aSP13-dependent plasticity could be specifically restricted to the cVA-responsive MB\u03b3 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keleman et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "67fec0ba-af02-4506-974c-a403de9099e4",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C111",
+      "claim": "M6 neurons encode a generic aversive signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it has been suggested that M6 neurons encode a generic aversive signal (Aso et al., 2014b), and so specificity to cVA might instead arise in downstream circuits that selectively integrate M6 output with the innate cVA-processing pathway from the lateral horn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Aso et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6a3f5a0d-694d-435d-97f5-34b9942941a1",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C112",
+      "claim": "Other MBONs have been implicated in courtship learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is interesting to note that other MBONs have been implicated in courtship learning (Montague and Baker, 2016) or general aversion (Aso et al., 2014b), but M6 is the only MBON common to both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Montague and Baker, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "702b398c-7f5e-42b5-98d0-af9ede63edb9",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C113",
+      "claim": "Other MBONs have been implicated in general aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is interesting to note that other MBONs have been implicated in courtship learning (Montague and Baker, 2016) or general aversion (Aso et al., 2014b), but M6 is the only MBON common to both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Aso et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "3ad9daaf-9a4b-40f7-8354-3f8bbb2133b3",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C114",
+      "claim": "M6 is the only MBON common to both courtship learning and general aversion.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is interesting to note that other MBONs have been implicated in courtship learning (Montague and Baker, 2016) or general aversion (Aso et al., 2014b), but M6 is the only MBON common to both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the citations to Montague and Baker, 2016 and Aso et al., 2014b.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "dd9db246-9935-4829-8a40-bbf9f531a82e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C115",
+      "claim": "Late activation of aSP13 neurons in the time window of 8\u201310 hr after training is both necessary and sufficient to consolidate STM to LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Late activation of the same aSP13 neurons in the time window of 8\u201310 hr after training is both necessary and sufficient to consolidate STM to LTM (Kr\u00fcttner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kr\u00fcttner et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a2197931-a348-4af8-b55a-2599a7dfbf28",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C116",
+      "claim": "In the time window when STM would otherwise decay, reactivation of the MB\u03b3>M6>aSP13 recurrent circuit may consolidate it into LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the time window when STM would otherwise decay (Keleman et al., 2007), reactivation of the same MB\u03b3>M6>aSP13 recurrent circuit may instead consolidate it into LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the integration of findings from this study and previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e7f0889b-9007-44c4-a8f8-4b4d1b220aa7",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C117",
+      "claim": "The mechanism by which aSP13 neurons are reactivated for LTM consolidation is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which aSP13 neurons are reactivated is unknown, but is evidently dependent upon their activation within the MB\u03b3>M6>aSP13 recurrent circuit during training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "f284f5e6-259e-4465-880d-f00125d21125",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C118",
+      "claim": "aSP13 reactivation for LTM consolidation is dependent upon their activation within the MB\u03b3>M6>aSP13 recurrent circuit during training.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which aSP13 neurons are reactivated is unknown, but is evidently dependent upon their activation within the MB\u03b3>M6>aSP13 recurrent circuit during training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for aSP13 activity during training.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "120b2d10-0798-49d5-8a41-bf68ee5b238f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C119",
+      "claim": "Brief persistent activity of aSP13 neurons represents a neural correlate of courtship working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data suggest that a brief persistent activity of aSP13 neurons represents a neural correlate of courtship working memory, while the prolonged potentiation of MB\u03b3>M6 synapses corresponds to STM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "07b21df1-3faa-48bf-86be-5fb0796b383c",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C120",
+      "claim": "Prolonged potentiation of MB\u03b3>M6 synapses corresponds to STM.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data suggest that a brief persistent activity of aSP13 neurons represents a neural correlate of courtship working memory, while the prolonged potentiation of MB\u03b3>M6 synapses corresponds to STM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "bfedc916-348d-4677-b52e-e5763565ba3f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C121",
+      "claim": "Persistent activity of the dopaminergic neurons in the MB\u03b3>M6>aSP13 feedback loop lays the foundation for formation of short-term courtship memory in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that persistent activity of the dopaminergic neurons in the MB\u03b3>M6>aSP13 feedback loop lays the foundation for formation of short-term courtship memory in Drosophila, and that later reactivation of the same recurrent circuit consolidates STM into LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "9c413c10-b302-4741-9983-d396ec334a19",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C122",
+      "claim": "Later reactivation of the MB\u03b3>M6>aSP13 recurrent circuit consolidates STM into LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that persistent activity of the dopaminergic neurons in the MB\u03b3>M6>aSP13 feedback loop lays the foundation for formation of short-term courtship memory in Drosophila, and that later reactivation of the same recurrent circuit consolidates STM into LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of findings from this study and previous work on LTM consolidation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e7b17454-8ac5-4d92-be18-7f99c9bda4fe",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C123",
+      "claim": "The prevailing view of memory progression in the Drosophila MB is that distinct memory phases are located in different compartments or lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to the prevailing view of memory progression in the Drosophila MB that distinct memory phases are located in different compartments or lobes (Aso and Rubin, 2016; Davis, 2011; Pascual and Pr\u00e9at, 2001), our data suggest that in the context of courtship conditioning, working memory, STM, and LTM all reside in the same \u03b35 compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Aso and Rubin, 2016; Davis, 2011; and Pascual and Pr\u00e9at, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "b8cd8358-76a6-4f77-a942-91dae29d9b68",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C124",
+      "claim": "In the context of courtship conditioning, working memory, STM, and LTM all reside in the same \u03b35 compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to the prevailing view of memory progression in the Drosophila MB that distinct memory phases are located in different compartments or lobes (Aso and Rubin, 2016; Davis, 2011; Pascual and Pr\u00e9at, 2001), our data suggest that in the context of courtship conditioning, working memory, STM, and LTM all reside in the same \u03b35 compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "d560ebf7-8589-48e7-95e3-7bafd6b9fc3b",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C125",
+      "claim": "Other MB neurons may be involved in courtship memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusions do not preclude however, the involvement of other MB neurons in courtship memory (Montague and Baker, 2016) as it is conceivable that modulation, potentially of the opposite sign, of the appetitive memory pathways could be critical for courtship learning (Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Montague and Baker, 2016 and Perisse et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "35ae8b39-1927-49e2-960a-99b0b22f7932",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C126",
+      "claim": "Modulation of the appetitive memory pathways could be critical for courtship learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusions do not preclude however, the involvement of other MB neurons in courtship memory (Montague and Baker, 2016) as it is conceivable that modulation, potentially of the opposite sign, of the appetitive memory pathways could be critical for courtship learning (Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Perisse et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "84ea2aa6-bdc4-4fe5-9a33-62ae21fdf398",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C127",
+      "claim": "Distinct courtship memory types are not located in distinct circuits, but rather mediated by distinct processes within a common circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore envision that distinct courtship memory types are not located in distinct circuits, but rather mediated by distinct processes within a common circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integration of all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6e35315f-3de9-4cae-b478-282230259898",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C128",
+      "claim": "Encoding distinct memory phases within a common circuit may be an efficient mechanism for encoding memories for which the behavioral consequence is largely independent of timing and context.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding distinct memory phases within a common circuit may be an efficient mechanism for encoding memories for which the behavioral consequence is largely independent of timing and context (Fusi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Fusi et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ff653060-3fdd-4d7e-81f2-a94808455c9f",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C129",
+      "claim": "SFOCatCh is a step-function channelrhopodsin variant that combines mutations to increase the off kinetics with a single amino acid substitution to enhance the conductance of divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a step-function channelrhopodsin variant, SFOCatCh, that combines mutations to increase the off kinetics (SFO = C128S/D156A, [Yizhar et al., 2011]) with a single amino acid substitution to enhance the conductance of divalent cations (CatCh = L132C, [Kleinlogel et al., 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool generated for this study, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c904e9a5-517b-41ab-8bc5-8954e4db74e9",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C130",
+      "claim": "The SFO mutations (C128S/D156A) increase the off kinetics of channelrhodopsin.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a step-function channelrhopodsin variant, SFOCatCh, that combines mutations to increase the off kinetics (SFO = C128S/D156A, [Yizhar et al., 2011]) with a single amino acid substitution to enhance the conductance of divalent cations (CatCh = L132C, [Kleinlogel et al., 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yizhar et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "a6a900dd-29c0-44eb-89b7-4cd1ce86eccf",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C131",
+      "claim": "The CatCh mutation (L132C) enhances the conductance of divalent cations in channelrhodopsin.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a step-function channelrhopodsin variant, SFOCatCh, that combines mutations to increase the off kinetics (SFO = C128S/D156A, [Yizhar et al., 2011]) with a single amino acid substitution to enhance the conductance of divalent cations (CatCh = L132C, [Kleinlogel et al., 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kleinlogel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "392581f0-e9ca-48d8-a5bf-ee367be5a18a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C132",
+      "claim": "The combination of SFOCatCh and GCaMP6s temporally uncouples the optical inputs required for activity manipulation and calcium imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We used SFOCatCh in conjunction with GCaMP6s (Chen et al., 2013) to monitor calcium responses in whole explanted brains of na\u00efve males. The combination of SFOCatCh and GCaMP6s temporally uncouples the optical inputs required for activity manipulation and calcium imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8e2b68d0-9a08-41a4-945b-fbecf526b1bc",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C133",
+      "claim": "We could not detect any robust calcium response in M6 dendrites when we activated MB\u03b3 with SFOCatCh in the absence of exogenous dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not detect any robust calcium response in either the dendrites (Figure 2B\u2013D) or axon termini (Figure 2\u2014figure supplement 2) of M6 when we activated MB\u03b3 with SFOCatCh in the absence of exogenous dopamine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "323c741b-3b35-418d-9ab4-d04da0c0418d",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C134",
+      "claim": "We could not detect any robust calcium response in M6 axon termini when we activated MB\u03b3 with SFOCatCh in the absence of exogenous dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not detect any robust calcium response in either the dendrites (Figure 2B\u2013D) or axon termini (Figure 2\u2014figure supplement 2) of M6 when we activated MB\u03b3 with SFOCatCh in the absence of exogenous dopamine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "f4ac611e-6c12-4674-89b2-5554a712f4e2",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C135",
+      "claim": "The initial stimuli in trials without exogenous dopamine did not elicit a detectable GCaMP6s response in M6 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial stimuli, as previously observed in the trials without exogenous dopamine, did not elicit a detectable GCaMP6s response in M6 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "bd3a10e9-24fb-4d43-817a-6a0529f74b92",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "claim_id": "C136",
+      "claim": "The prolonged M6 response to repetitive MB\u03b3 activation is blocked by AP-5.",
+      "claim_type": "EXPLICIT",
+      "source": "We could confirm, however, that this prolonged M6 response is blocked by AP-5 (Figure 4\u2014figure supplement 2), which inhibits NMDA-type glutamate receptors and the persistent response of aSP13 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "52081215-5b76-41c8-875b-ff74d4466d6a",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MB\u03b3 and M6 neurons are both required for courtship memory. Silencing either MB\u03b3 or M6 neurons with tetanus toxin (TNT) abolishes or greatly reduces courtship suppression compared to controls expressing inactive toxin (TNTQ), which show ~40-50% suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, C38, and C39 are well-supported by behavioral data in Figure 1A-B showing that silencing either MB\u03b3 or M6 neurons eliminates courtship memory, while controls show robust suppression. The experimental design includes appropriate controls (inactive toxin) and uses multiple GAL4 driver lines for each cell type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Courtship experience potentiates MB\u03b3 to M6 synaptic transmission. MB\u03b3 activation suppresses courtship significantly more in experienced males than na\u00efve males, while M6 activation suppresses courtship equally in both groups, indicating that training strengthens the MB\u03b3>M6 connection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48, C45, and C44 are supported by thermogenetic activation experiments in Figure 1C-D. The differential effect of MB\u03b3 activation (experience-dependent) versus M6 activation (experience-independent) provides strong evidence for experience-dependent potentiation at MB\u03b3>M6 synapses. The logic is sound and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "57830fd2-c05a-492a-8e10-5def9fcae34c",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dopamine acutely potentiates cholinergic synaptic transmission from MB\u03b3 to M6 neurons. M6 shows no calcium response to MB\u03b3 activation without dopamine, but exhibits strong dose-dependent responses when dopamine is present. This response is blocked by the nicotinic acetylcholine receptor antagonist mecamylamine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53, C133-C134 are well-supported by ex vivo calcium imaging experiments in Figure 2. The experiments include appropriate controls (no dopamine, dopamine washout), dose-response data, and pharmacological validation with mecamylamine. The use of SFOCatCh allows temporal separation of stimulation and imaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "63ed802b-ce1c-4000-86bc-1296672e6978",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Repetitive MB\u03b3 stimulation induces endogenous dopamine-dependent potentiation of MB\u03b3>M6 transmission. After 3-4 trials of repetitive MB\u03b3 activation, M6 shows significant calcium responses that increase with successive stimulations and plateau after ~20 trials. This response is blocked by dopamine D1 receptor antagonist SCH23390, and aSP13 dopaminergic neurons respond similarly to repetitive MB\u03b3 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60, C135 are supported by calcium imaging data in Figure 3A-C, E-F. The experiments demonstrate activity-dependent potentiation and identify aSP13 as the likely endogenous dopamine source. The pharmacological blockade with SCH23390 provides strong evidence for dopamine dependence. However, direct demonstration that aSP13 is the source (e.g., by silencing aSP13) is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "d5ea9fb5-b56b-4078-ab81-c43a5d2b92f0",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Potentiation at MB\u03b3>M6 synapses persists for 2-3 hours, matching the timescale of short-term courtship memory. Potentiation is barely diminished after 1 hour but falls to ~50% after 3 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by time-course experiments in Figure 3D. The temporal dynamics of synaptic potentiation align well with behavioral memory persistence. However, the comparison to behavioral memory timescales relies on citation to prior work rather than direct parallel behavioral measurements in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "ceba5c61-8cf9-46f3-96ca-4d6a5da21289",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M6 neurons provide glutamatergic input to aSP13 neurons. Activation of M6 produces strong calcium responses in aSP13 that are blocked by NMDA receptor antagonist AP-5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by calcium imaging and pharmacology in Figure 4A-C. The AP-5 blockade provides strong evidence for glutamatergic transmission. The anatomical proximity of M6 axons and aSP13 dendrites (cited from prior work) supports the functional connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "0eeed87f-0fa9-4ce3-9ada-73bdeb6f08ee",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MB\u03b3 activation elicits calcium responses in aSP13 that depend on glutamatergic, cholinergic, and dopaminergic transmission. This demonstrates functional connectivity through the MB\u03b3>M6>aSP13 pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by calcium imaging and pharmacology in Figure 4E-G. The requirement for multiple neurotransmitter systems is consistent with the proposed tripartite circuit. However, the experiments do not definitively prove the sequential pathway (could involve parallel pathways).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "80846fce-c630-4f58-b119-4cf1e24fac53",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "aSP13 neurons exhibit persistent activity lasting ~2 minutes after M6 or MB\u03b3 activation. This persistent activity is not intrinsic to aSP13 (not observed with direct aSP13 activation) and is induced by glutamatergic transmission from M6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 are supported by calcium imaging in Figure 4A-H and Figure 4\u2014figure supplement 1. The control experiment showing no persistence with direct aSP13 activation is critical. The AP-5 blockade supports glutamatergic induction. However, the mechanism underlying persistence remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "M6 activity is required for both memory acquisition and recall. Conditional silencing of M6 during either training or testing abolishes courtship memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82, C33-C34 are supported by conditional silencing experiments using shi^ts in Figure 4I. The dual requirement for M6 in both acquisition and recall is a key finding that distinguishes M6 from aSP13 (which is only required during acquisition). The experimental design appropriately controls temperature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Courtship memory relies on a recurrent MB\u03b3>M6>aSP13 circuit where persistent aSP13 activity lays the foundation for short-term memory. STM formation requires the recurrent circuit, while memory readout occurs through M6-dependent pathways that do not involve aSP13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31, C35, C83-C84, C121 represent the main conclusion integrating all experimental findings. The model is well-supported by: (1) behavioral requirements for all three cell types, (2) functional connectivity demonstrated by calcium imaging, (3) persistent aSP13 activity, (4) dopamine-dependent potentiation, and (5) differential requirements for M6 vs aSP13 in acquisition vs recall. The recurrent circuit architecture is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The proposed mechanism for short-term memory involves: (1) dopamine from aSP13 potentiates MB\u03b3>M6 transmission, (2) M6 provides recurrent glutamatergic input to aSP13, (3) aSP13 activity persists for minutes, creating a time window for further MB\u03b3 activation, (4) sustained aSP13 activity leads to dopamine accumulation facilitating MB\u03b3>M6 transmission for 2-3 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C32, C86-C90 describe the mechanistic model supported by the physiological data. Each component is experimentally validated: dopamine-dependent potentiation (Figure 2), persistent aSP13 activity (Figure 4), recurrent connectivity (Figure 4), and temporal dynamics (Figure 3D). The model coherently explains how transient activity leads to hours-long memory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "6f444638-173c-4d98-a03a-019059f87c69",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Brief persistent aSP13 activity represents working memory, prolonged MB\u03b3>M6 potentiation corresponds to short-term memory, and all memory phases reside in the same \u03b35 compartment rather than different compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C119-C120, C124 propose specific mappings of physiological processes to memory phases. While the temporal dynamics are consistent with this interpretation, the study does not directly measure working memory behaviorally or definitively demonstrate that all memory phases occur in the same compartment. The claim challenges prevailing views but requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "62fdcd55-0eee-4085-936d-a8edd59e67f5",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Later reactivation of the MB\u03b3>M6>aSP13 circuit may consolidate short-term memory into long-term memory. This is based on prior work showing aSP13 reactivation 8-10 hours after training is necessary and sufficient for LTM consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C122, C115-C116, C118 propose a role for the recurrent circuit in LTM consolidation based primarily on cited prior work (Kr\u00fcttner et al., 2015). The current study does not directly test this hypothesis or demonstrate late reactivation of the circuit. This is speculative extrapolation requiring future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c230b156-47ed-4400-be9d-e7799264f42c",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The timescales of physiological processes in ex vivo preparations match courtship training and memory dynamics. Training involves courtship bouts over several minutes, memory lasts several hours, and both M6 and aSP13 are required for memory formation while only M6 is required for readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C97 integrate behavioral and physiological timescales. The correspondence between ex vivo potentiation duration (2-3 hours) and behavioral memory persistence is compelling. The differential requirements for M6 vs aSP13 in acquisition vs recall are well-demonstrated. However, the behavioral training dynamics are described rather than quantitatively measured in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "5a440e0b-725c-4611-a02f-3d7b72ec183e",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "M6 suppresses courtship through aSP13-independent pathways in an experience-independent manner. Training provides MB\u03b3 neurons with access to this M6-dependent courtship suppression pathway through potentiation of MB\u03b3>M6 synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100, C106-C107 are supported by the differential effects of M6 vs MB\u03b3 activation in na\u00efve and experienced males (Figure 1C-D). The inference that M6 acts through aSP13-independent pathways for courtship suppression is logical given that M6 activation works equally in both groups. However, the downstream pathways are not identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "c8ed0885-f97e-498f-81c6-0c3248d344ce",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mechanism underlying persistent aSP13 activity is unknown. It is not intrinsic to aSP13, is induced by transient M6 activation, and may reflect prolonged activation of M6>aSP13 synapses or involve unidentified circuit elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C105 accurately describe the limitations in understanding persistent aSP13 activity. The negative result (no persistence with direct aSP13 activation) is important. The proposed mechanisms are speculative but reasonable. This represents an important open question for future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "be249161-817f-4ff1-84ba-62da00365310",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The mechanism for cVA specificity in courtship memory is unclear. MB\u03b3 neurons likely do not specifically respond to cVA, only a small subset receive cVA input, and cVA is not required during training. M6 may encode generic aversion with specificity arising downstream, and M6 is the only MBON implicated in both courtship learning and general aversion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111, C114 acknowledge an important gap in the model\u2014how broad MB\u03b3>M6 potentiation leads to cVA-specific memory. The discussion appropriately cites relevant literature and proposes alternative mechanisms. The identification of M6 as uniquely implicated in both courtship and aversion is a useful observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "47e1db43-d7c1-4653-a8f4-a8fcf69f45d3",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SFOCatCh is a novel optogenetic tool combining step-function (SFO) and calcium-conducting (CatCh) channelrhodopsin mutations. Combined with GCaMP6s, it temporally uncouples activity manipulation and calcium imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C132 describe the development and validation of SFOCatCh. The tool is validated by patch-clamp recordings (Figure 2\u2014figure supplement 1) and successfully used throughout the study. This represents an important methodological advance enabling the key experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "8735b537-d4f8-4755-a8a0-5219275379fd",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The prolonged M6 response to repetitive MB\u03b3 activation is blocked by AP-5, which inhibits NMDA receptors and persistent aSP13 responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C136 is supported by data in Figure 4\u2014figure supplement 2. This control experiment strengthens the conclusion that the recurrent circuit involving glutamatergic M6>aSP13 transmission underlies the prolonged M6 response. However, this is a supporting observation rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims about memory mechanisms, Drosophila courtship behavior, mushroom body anatomy, and prior work on courtship conditioning. These establish context and cite relevant literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C27, C40-C43, C54, C64-C65, C78-C79, C123, C125-C128 are background knowledge and citations to prior work. These are appropriately referenced and provide necessary context. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    },
+    {
+      "id": "13ac0d48-b4d5-4e05-b1f7-40471149f1ce",
+      "content_id": "2bc0453c-98c3-4de4-a808-c55c9a11d721",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Speculative claims about natural activation of neurons during courtship and mechanisms of aSP13 reactivation for LTM consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85 and C117 are explicitly speculative statements about aspects not directly tested in the study. These represent reasonable hypotheses for future investigation but are not supported by data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:55:53.175021Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7284726-7cc9-40cc-be99-ead592cac63a",
+      "result_id": "52081215-5b76-41c8-875b-ff74d4466d6a"
+    },
+    {
+      "claim_id": "13a88566-0b71-4015-aa16-07d533b82e89",
+      "result_id": "52081215-5b76-41c8-875b-ff74d4466d6a"
+    },
+    {
+      "claim_id": "bab4afe7-f557-4afa-8e5c-901e705729f6",
+      "result_id": "52081215-5b76-41c8-875b-ff74d4466d6a"
+    },
+    {
+      "claim_id": "4aa1d258-d383-4aa7-b7b9-27aca3a792e3",
+      "result_id": "52081215-5b76-41c8-875b-ff74d4466d6a"
+    },
+    {
+      "claim_id": "2230ab25-0507-4bdf-97c3-e03b6a04b883",
+      "result_id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8"
+    },
+    {
+      "claim_id": "6b11b05f-eb4a-4a30-b6c0-ef933f6b1b1d",
+      "result_id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8"
+    },
+    {
+      "claim_id": "5e760c76-b71d-4c2e-bfe1-d6daa849c685",
+      "result_id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8"
+    },
+    {
+      "claim_id": "d377b779-966c-4ba6-9859-054cb36ef314",
+      "result_id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8"
+    },
+    {
+      "claim_id": "ae6fa4f5-b989-4b9a-a8d3-29b4b1af4613",
+      "result_id": "8a77a5aa-1b8d-44e5-8f6c-3598800f71c8"
+    },
+    {
+      "claim_id": "e8067cde-ec45-4502-8f73-32e9e166944d",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "a14f612e-0771-45f1-af04-e04dff6853e7",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "247440dd-5c6f-4f7f-8ec3-bcd41b502240",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "2a5e3099-fbab-4751-a52c-407b33a83c33",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "82bae763-fb7f-4c50-bd9d-50e5cb59ffb1",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "8e2b68d0-9a08-41a4-945b-fbecf526b1bc",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "323c741b-3b35-418d-9ab4-d04da0c0418d",
+      "result_id": "57830fd2-c05a-492a-8e10-5def9fcae34c"
+    },
+    {
+      "claim_id": "bf9da8e5-d450-40a3-80d3-e2c7ead7034f",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "566cadb4-8c6f-4617-924a-1b7a13c3f614",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "62d655f6-cfc4-4c36-9d2d-f0cd7f774423",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "ff7ee7ce-dbda-400d-96b7-da7fd8e9f597",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "c75d490b-6296-4ca6-a463-c30bd8aea63a",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "1b556268-8bd6-4728-a86d-b9325607c896",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "f4ac611e-6c12-4674-89b2-5554a712f4e2",
+      "result_id": "63ed802b-ce1c-4000-86bc-1296672e6978"
+    },
+    {
+      "claim_id": "b10cff86-6875-4c8a-a01b-ef7fb8a724c4",
+      "result_id": "d5ea9fb5-b56b-4078-ab81-c43a5d2b92f0"
+    },
+    {
+      "claim_id": "4518e850-63a1-429a-86a3-831f8148a72d",
+      "result_id": "d5ea9fb5-b56b-4078-ab81-c43a5d2b92f0"
+    },
+    {
+      "claim_id": "5ca02c57-100d-4d85-b0ea-5c2152bea15c",
+      "result_id": "d5ea9fb5-b56b-4078-ab81-c43a5d2b92f0"
+    },
+    {
+      "claim_id": "3515ee2a-feb6-489a-9381-949cba433b26",
+      "result_id": "ceba5c61-8cf9-46f3-96ca-4d6a5da21289"
+    },
+    {
+      "claim_id": "9d6116d2-8747-439a-8b44-3b2212cca28a",
+      "result_id": "ceba5c61-8cf9-46f3-96ca-4d6a5da21289"
+    },
+    {
+      "claim_id": "ec95255b-e746-43de-8cb9-b9308305b924",
+      "result_id": "ceba5c61-8cf9-46f3-96ca-4d6a5da21289"
+    },
+    {
+      "claim_id": "ebde7d18-8bfb-482b-bcef-0d8b49ca0c1f",
+      "result_id": "0eeed87f-0fa9-4ce3-9ada-73bdeb6f08ee"
+    },
+    {
+      "claim_id": "c73199a5-9468-4763-a6e8-2de3025e8646",
+      "result_id": "0eeed87f-0fa9-4ce3-9ada-73bdeb6f08ee"
+    },
+    {
+      "claim_id": "fbb09823-65e5-4774-85d4-856de6f3e192",
+      "result_id": "0eeed87f-0fa9-4ce3-9ada-73bdeb6f08ee"
+    },
+    {
+      "claim_id": "517a2c14-b406-4c94-9ddc-cef1a82bc478",
+      "result_id": "0eeed87f-0fa9-4ce3-9ada-73bdeb6f08ee"
+    },
+    {
+      "claim_id": "ae05b8a6-9fae-4d55-b14e-7a3b50b6d404",
+      "result_id": "80846fce-c630-4f58-b119-4cf1e24fac53"
+    },
+    {
+      "claim_id": "a1d659c2-9ea1-4108-aef0-b7458ef8182f",
+      "result_id": "80846fce-c630-4f58-b119-4cf1e24fac53"
+    },
+    {
+      "claim_id": "62580932-2f9f-4bcd-8cf3-06341a142ede",
+      "result_id": "80846fce-c630-4f58-b119-4cf1e24fac53"
+    },
+    {
+      "claim_id": "2a99a3c0-b592-4211-abe8-24c36e243193",
+      "result_id": "80846fce-c630-4f58-b119-4cf1e24fac53"
+    },
+    {
+      "claim_id": "00fe932d-71c9-4419-9dd3-7ea492dae6bd",
+      "result_id": "80846fce-c630-4f58-b119-4cf1e24fac53"
+    },
+    {
+      "claim_id": "f76cc3b0-2c65-4b15-a89a-856638a20758",
+      "result_id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0"
+    },
+    {
+      "claim_id": "b41d7fab-39ea-442b-95c6-82454765272e",
+      "result_id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0"
+    },
+    {
+      "claim_id": "00c4857b-eefa-40c9-8f8d-e76fe2fde1a5",
+      "result_id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0"
+    },
+    {
+      "claim_id": "992c28e1-d29f-4f27-9a67-d082c49df882",
+      "result_id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0"
+    },
+    {
+      "claim_id": "e4cdca24-963a-476b-ac41-3326e0e9372f",
+      "result_id": "cbe12e81-0dd5-45e4-a6bf-6f393a9934e0"
+    },
+    {
+      "claim_id": "3395ed8f-a30c-453b-b51c-64a1896ec47e",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "1f82a3bd-7fed-4537-86db-14359dbf164a",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "e517c341-c74a-44f8-bdbb-58a97d31418f",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "1a71d16c-728d-4918-968b-97391efe77c5",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "3959f858-8d53-4931-b501-5a77b9219e43",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "bfedc916-348d-4677-b52e-e5763565ba3f",
+      "result_id": "6f05031a-1b4f-4fc5-8fe1-01ff17ed54e2"
+    },
+    {
+      "claim_id": "56fd8bfd-cf74-4906-9ed9-bd63b31569d5",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "96a15b7e-90b1-416e-ba04-1669e16d3acd",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "7209e221-9852-4af1-8440-927ad7e21eff",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "74eda580-4738-4266-9ec6-4f15bda049f0",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "97c1a9a8-8727-42cd-b3de-caf420f65471",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "16fecf92-a752-456d-97fa-26d8fedde250",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "8890b606-dc6a-4ea0-ac39-2ab535173cdb",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "cf04376c-51d1-44e7-b07d-2a44c674125e",
+      "result_id": "7a7e5903-7ebb-4fed-921b-582fdcb52fd5"
+    },
+    {
+      "claim_id": "120b2d10-0798-49d5-8a41-bf68ee5b238f",
+      "result_id": "6f444638-173c-4d98-a03a-019059f87c69"
+    },
+    {
+      "claim_id": "07b21df1-3faa-48bf-86be-5fb0796b383c",
+      "result_id": "6f444638-173c-4d98-a03a-019059f87c69"
+    },
+    {
+      "claim_id": "b8cd8358-76a6-4f77-a942-91dae29d9b68",
+      "result_id": "6f444638-173c-4d98-a03a-019059f87c69"
+    },
+    {
+      "claim_id": "9c413c10-b302-4741-9983-d396ec334a19",
+      "result_id": "62fdcd55-0eee-4085-936d-a8edd59e67f5"
+    },
+    {
+      "claim_id": "dd9db246-9935-4829-8a40-bbf9f531a82e",
+      "result_id": "62fdcd55-0eee-4085-936d-a8edd59e67f5"
+    },
+    {
+      "claim_id": "a2197931-a348-4af8-b55a-2599a7dfbf28",
+      "result_id": "62fdcd55-0eee-4085-936d-a8edd59e67f5"
+    },
+    {
+      "claim_id": "f284f5e6-259e-4465-880d-f00125d21125",
+      "result_id": "62fdcd55-0eee-4085-936d-a8edd59e67f5"
+    },
+    {
+      "claim_id": "179a4f11-fdae-4240-bd3e-869d7cf86019",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "67fee180-3755-4fb2-8095-8822d973d3df",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "1f2f2632-62ad-4b03-b6a9-8fe8d3a48542",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "93d4598a-89ea-4e2a-acc1-1b7703373eb5",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "83fb7d83-65be-4417-a534-248580339554",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "0d055bc1-fc86-4455-bf45-18696b4e02b9",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "1e2909f7-0116-4d02-8461-3823cb046a52",
+      "result_id": "c230b156-47ed-4400-be9d-e7799264f42c"
+    },
+    {
+      "claim_id": "f34d7552-ac4d-48c9-a327-eb49c0df68d1",
+      "result_id": "5a440e0b-725c-4611-a02f-3d7b72ec183e"
+    },
+    {
+      "claim_id": "5fa370f5-d66a-4ff1-b291-08c70f80db8e",
+      "result_id": "5a440e0b-725c-4611-a02f-3d7b72ec183e"
+    },
+    {
+      "claim_id": "164eb798-e482-4d51-807b-45ac92266cde",
+      "result_id": "5a440e0b-725c-4611-a02f-3d7b72ec183e"
+    },
+    {
+      "claim_id": "03896d82-e617-4ecc-a7ef-2258950fb4b4",
+      "result_id": "5a440e0b-725c-4611-a02f-3d7b72ec183e"
+    },
+    {
+      "claim_id": "7679c6cd-cf64-4355-9feb-7b3d1daed194",
+      "result_id": "5a440e0b-725c-4611-a02f-3d7b72ec183e"
+    },
+    {
+      "claim_id": "07ae97e3-4b6c-456c-a7ad-ba1f9b040a59",
+      "result_id": "c8ed0885-f97e-498f-81c6-0c3248d344ce"
+    },
+    {
+      "claim_id": "c36173d0-774d-4ff0-9e66-2b43e7b19560",
+      "result_id": "c8ed0885-f97e-498f-81c6-0c3248d344ce"
+    },
+    {
+      "claim_id": "f2f7360c-6501-4a20-97ad-c37bbfc53977",
+      "result_id": "c8ed0885-f97e-498f-81c6-0c3248d344ce"
+    },
+    {
+      "claim_id": "8235ea8a-687b-45fc-8544-927543a8835b",
+      "result_id": "c8ed0885-f97e-498f-81c6-0c3248d344ce"
+    },
+    {
+      "claim_id": "7c8a789f-9974-4a02-bcef-97afb4837076",
+      "result_id": "c8ed0885-f97e-498f-81c6-0c3248d344ce"
+    },
+    {
+      "claim_id": "c2b9db35-117a-4815-986d-43da27e30c6f",
+      "result_id": "be249161-817f-4ff1-84ba-62da00365310"
+    },
+    {
+      "claim_id": "e6990b27-2986-4e95-90a0-3194d06b80bd",
+      "result_id": "be249161-817f-4ff1-84ba-62da00365310"
+    },
+    {
+      "claim_id": "7cb6594a-e7ed-44ff-8a45-71b95d89e299",
+      "result_id": "be249161-817f-4ff1-84ba-62da00365310"
+    },
+    {
+      "claim_id": "67fec0ba-af02-4506-974c-a403de9099e4",
+      "result_id": "be249161-817f-4ff1-84ba-62da00365310"
+    },
+    {
+      "claim_id": "3ad9daaf-9a4b-40f7-8354-3f8bbb2133b3",
+      "result_id": "be249161-817f-4ff1-84ba-62da00365310"
+    },
+    {
+      "claim_id": "ff653060-3fdd-4d7e-81f2-a94808455c9f",
+      "result_id": "47e1db43-d7c1-4653-a8f4-a8fcf69f45d3"
+    },
+    {
+      "claim_id": "c904e9a5-517b-41ab-8bc5-8954e4db74e9",
+      "result_id": "47e1db43-d7c1-4653-a8f4-a8fcf69f45d3"
+    },
+    {
+      "claim_id": "a6a900dd-29c0-44eb-89b7-4cd1ce86eccf",
+      "result_id": "47e1db43-d7c1-4653-a8f4-a8fcf69f45d3"
+    },
+    {
+      "claim_id": "392581f0-e9ca-48d8-a5bf-ee367be5a18a",
+      "result_id": "47e1db43-d7c1-4653-a8f4-a8fcf69f45d3"
+    },
+    {
+      "claim_id": "bd3a10e9-24fb-4d43-817a-6a0529f74b92",
+      "result_id": "8735b537-d4f8-4755-a8a0-5219275379fd"
+    },
+    {
+      "claim_id": "9851eef8-4504-4aec-93a5-7a53a764ac03",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "6e8d39e6-02c4-4566-960f-fce4a2a6a59a",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "d282fcd4-3f41-420f-998d-40c475d03b04",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "a93a8a4a-2c82-4532-9c20-0bac2394ee57",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "89389888-04b2-4f2b-8cfb-36824c54cd3b",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "9ef54f85-9c96-4077-bcd9-ddf1ddb95d55",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "893ca1a7-f573-4b30-bf4b-79c192a7b6d7",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "7b5a1b66-5a96-4ba5-a01f-bfb1c74db1b5",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "9bb5bed2-20ce-4a1c-a6c5-887b9bb6a5b1",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "cbbf43bf-ed46-46a3-8098-07488e2332fc",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "de96b21d-d2ac-483c-b655-e7e6bdc44054",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "d62b9fa3-7ebd-4049-8496-11f84308a200",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "dc2aa9aa-3d29-4cd2-89b1-1dc901c260bb",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "76006f49-53ad-4756-9a37-02ff2f8290ae",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "43eaec71-01ba-4a1b-9d3e-29330f71356b",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "5fa4b917-57ba-4998-b427-f9024ff43cc1",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "b4172685-0b8a-402f-9864-274da69cea40",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "4a49455a-1fc0-4cfb-9ba1-b1d866db8566",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "e4f277dc-85c7-42f0-a7f9-37cb77a4eb46",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "238071e8-83ce-4556-9a9b-6a2ed8564f1b",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "869bec22-98e4-42f7-9640-1552855be4cc",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "740bf2cd-639b-41a8-b9f3-53488ac628e5",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "cd288cf5-69d7-4d31-b971-651c20dcbaea",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "abe44fe5-2a8f-490c-b9b7-0a48920c44d0",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "74e9ca5e-3142-45c6-9260-498fa094d95d",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "6a7e189e-a0b9-46fe-b3d6-d5c4b4aa60bc",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "25b79ac1-c7f2-4d50-92dd-ef69158c47cd",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "c74746a0-a71e-4ddd-bb87-f44da6a48866",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "cd05195e-a3b1-4ea7-9ba7-dfcc5bbf5596",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "0ebd0744-c744-47ea-b611-0fc654b2d012",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "e068d48a-7f9d-4a02-8d33-a5e0b00d750b",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "e7b17454-8ac5-4d92-be18-7f99c9bda4fe",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "d560ebf7-8589-48e7-95e3-7bafd6b9fc3b",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "35ae8b39-1927-49e2-960a-99b0b22f7932",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "84ea2aa6-bdc4-4fe5-9a33-62ae21fdf398",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "6e35315f-3de9-4cae-b478-282230259898",
+      "result_id": "e2dc41e7-1493-4d40-836c-c0a3b86f0c88"
+    },
+    {
+      "claim_id": "80674086-ab31-4136-8c8b-f6f8eeca9c9b",
+      "result_id": "13ac0d48-b4d5-4e05-b1f7-40471149f1ce"
+    },
+    {
+      "claim_id": "e7f0889b-9007-44c4-a8f8-4b4d1b220aa7",
+      "result_id": "13ac0d48-b4d5-4e05-b1f7-40471149f1ce"
+    }
+  ],
+  "comparisons": []
+}

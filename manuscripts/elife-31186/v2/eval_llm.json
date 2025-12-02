@@ -1,0 +1,472 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Truncation of the N-terminus (\u0394N) or C-terminus (\u0394C) of pdP2X7 reduces YO-PRO-1 uptake by >10-fold in HEK293 cells, while double truncation (\u0394NC) abolishes detectable uptake. Surface expression remains comparable, indicating reduced channel activity rather than trafficking defects. Patch clamp recordings show \u0394N reduces current density by ~50%, while \u0394C and \u0394NC reduce it to <10% of full-length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by experimental data from multiple complementary assays (dye uptake, surface biotinylation, and electrophysiology shown in Figure 1). The data consistently demonstrate that both termini contribute to channel function in HEK293 cells, with the CTD playing a more dominant role. Controls for surface expression strengthen the interpretation that effects are due to channel activity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Purified pdP2X7-\u0394NC reconstituted into POPE/POPG liposomes shows ATP-dependent Ca2+ uptake with EC50 of 29 \u03bcM for free ATP, comparable to the crystallized construct (40 \u03bcM). The receptor requires free ATP (not Ca-ATP complexes) for activation, similar to P2X2 and P2X4 subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by reconstitution experiments (Figure 2) showing functional Ca2+ permeability. The EC50 comparison with prior work and correction for Ca-ATP complexes strengthen the conclusion. The orientation control (C37, EndoH treatment) validates the experimental setup. The inference that NTD and CTD are not required for small cation permeation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Reconstituted pdP2X7-\u0394NC in liposomes shows robust, dose-dependent YO-PRO-1 uptake (EC50 21 \u03bcM, Hill coefficient 2.7) with immediate, monophasic kinetics. This demonstrates that pdP2X7 alone forms a dye-permeable pore without requiring N- or C-termini, and argues against pore dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are strongly supported by reconstitution data (Figure 2E-F). The immediate, monophasic response is a key observation arguing against dilation. The comparable EC50 and Hill coefficient between Ca2+ and YO-PRO-1 uptake strengthen the conclusion. This is a central finding that resolves controversy about whether P2X7 itself forms the dye-permeable pore.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In HEK-mimetic lipids (containing 25% cholesterol), pdP2X7-\u0394NC shows drastically attenuated Ca2+ and YO-PRO-1 uptake compared to POPE/POPG liposomes. Systematic lipid testing reveals POPG and SM facilitate channel activity (~7-fold for POPG), while cholesterol is the dominant antagonist. POPC and POPE show minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are well-supported by systematic lipid composition experiments (Figure 3). The experimental design appropriately controls for reconstitution efficiency. The conclusion that cholesterol is the dominant inhibitor is justified by the observation that HEK lipids (25% cholesterol) show low activity despite containing facilitating lipids (POPG, SM). This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cholesterol inhibits pdP2X7-\u0394NC in a dose-dependent manner, with effects visible at 5% and saturation at ~15%. Liposomes without cholesterol show activity comparable to POPE/POPG controls. P2X7 receptor activity depends heavily on lipid composition, particularly POPG, SM, and cholesterol concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by dose-response experiments (Figure 4) showing clear cholesterol concentration-dependent inhibition. The saturation at 15% is an important quantitative finding. Both YO-PRO-1 and Ca2+ uptake show similar patterns, strengthening the conclusion. This establishes the physiological relevance of cholesterol inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DPH anisotropy increases with cholesterol concentration (0-25%), indicating enhanced membrane rigidity. However, SM also increases rigidity while facilitating channel activity. Linear regression shows no significant correlation (R\u00b2=0.044) between DPH anisotropy and YO-PRO-1 uptake in the absence of cholesterol, indicating membrane rigidity is not the primary mechanism of cholesterol inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by DPH anisotropy measurements (Figure 5). The key observation that SM increases rigidity but facilitates activity effectively rules out rigidity as the primary mechanism. The statistical analysis (R\u00b2=0.044) appropriately supports the lack of correlation. This is important for mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "22-NBD-cholesterol shows dose-dependent binding to purified pdP2X7-\u0394NC (EC50 1.1 \u03bcM), with substantially higher fluorescence than no-protein controls. This demonstrates direct cholesterol-protein interaction via the transmembrane domain, rather than indirect effects through membrane fluidity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by fluorescence binding assays (Figure 6). The dose-dependent binding and appropriate controls (no protein) support specific interaction. Combined with the membrane rigidity data (C60-C66), this strongly supports direct binding as the mechanism. The EC50 value provides quantitative evidence of specific interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C78",
+      "C106"
+    ],
+    "result": "MCD treatment (cholesterol depletion) dramatically increases YO-PRO-1 uptake in HEK293 cells expressing constructs with the CRR (full-length, \u0394N, \u0394NC+CRR). No enhancement occurs in cholesterol-lacking Sf9 cells. pdP2X7-\u0394NC shows strong activity in Sf9 cells, consistent with reconstitution data. Extension of \u0394NC by just 9 residues (CRRc) nearly fully recovers activity with MCD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C77, C78, C106 are supported by cell-based assays in two different cell types (Figure 7). The Sf9 cell control (lacking cholesterol) is particularly important for demonstrating cholesterol-dependence. The minimal CRR extension result (C106) is a key finding identifying the critical region. Statistical significance is indicated for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Systematic CRR truncation shows the first 9 residues (C362-C370) are essential for facilitating activity. Individual cysteine mutations reveal C362S and C363S reduce activity by 40-60%, while C370S maintains strong activity. The double mutant C362S/C363S nearly abolishes activity. Cysteines outside this region (C373S, C374S, C377S) show strong activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by systematic mutagenesis experiments (Figure 8B-C). The experimental design appropriately uses MCD to reveal CRR effects. The truncation and point mutation data converge on C362/C363 as critical residues. The observation that C370S maintains activity despite CRRd truncation being inactive is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "C362S/C363S double mutation in full-length pdP2X7 abolishes YO-PRO-1 uptake, consistent with hP2X7 C363A data. Surface expression is unaffected by these mutations, indicating C362 and C363 enhance channel opening rather than affecting trafficking or assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by full-length receptor experiments and surface biotinylation (Figure 8 supplement 1). The consistency with prior hP2X7 data (C87) strengthens the conclusion. The surface expression control is critical for ruling out trafficking effects and supporting a direct role in channel gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C107",
+      "C108"
+    ],
+    "result": "pdP2X7-\u0394NC+CRRc is heavily labeled with palmitic acid analog 17-ODYA (much stronger than RalA control), while pdP2X7-\u0394NC (9 residues shorter) shows no labeling. This indicates cysteine residues in CRRc (C362, C363, C370) are palmitoylated, and this modification plays an important role in enhancing P2X7 channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C107-C108 are supported by click chemistry palmitoylation assays (Figure 9). The positive control (RalA) and negative control (\u0394NC) are appropriate. The strong labeling of \u0394NC+CRRc combined with mutagenesis data (C79-C85) provides converging evidence that palmitoylation of C362/C363/C370 is functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C131"
+    ],
+    "result": "Palmitoylation of the CRR in the C-terminus facilitates P2X7 channel opening and counteracts cholesterol inhibition. The CTD is not required for channel activity itself but depends on it to overcome cholesterol's inhibitory effects. The CTD facilitates activity through palmitoylated cysteines near the pore-lining helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, C131 represent integrative conclusions supported by multiple lines of evidence: reconstitution showing \u0394NC function (C43-C47), cholesterol inhibition (C55-C59), direct cholesterol binding (C67-C70), CRR rescue with MCD (C74), and palmitoylation (C91-C93). The logic connecting these observations is sound and represents the paper's main mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C129",
+      "C130"
+    ],
+    "result": "The P2X7 receptor itself constitutes an intrinsic dye-permeable pore whose activity depends substantially on lipid composition. The transmembrane helices are sufficient for pore formation; the CTD does not constitute a pore or recruit other pore-forming proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C129, C130 represent the paper's central conclusion, supported by reconstitution of purified \u0394NC showing dye uptake (C43-C47), lipid-dependent activity (C48-C59), and the ability to modulate activity through lipid composition alone. This directly addresses a major controversy in the field about whether P2X7 itself forms the pore.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C70"
+    ],
+    "result": "Cholesterol directly interacts with the P2X7 transmembrane domain (demonstrated with \u0394NC lacking both termini) and likely inhibits channel activity by binding to transmembrane helices rather than through membrane fluidity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C70 are supported by 22-NBD-cholesterol binding assays (Figure 6) showing dose-dependent interaction with \u0394NC, combined with membrane rigidity data (Figure 5) ruling out indirect effects. The use of \u0394NC is critical for demonstrating transmembrane domain interaction. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C47"
+    ],
+    "result": "The immediate and monophasic dye uptake kinetics in reconstituted liposomes indicate the P2X7 pore does not dilate over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C47 are supported by kinetic data from reconstitution experiments (Figure 2E). The immediate response without lag phase directly contradicts the pore dilation hypothesis. This addresses a significant controversy in the field, though the authors acknowledge this is based on kinetic observations rather than direct structural measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "P2X7 channel opening is facilitated by POPG or SM but not POPC or POPS. POPG is typically <2% in neuronal/blood cells but ~9% in alveolar macrophages. Macrophages contain only ~8% cholesterol, suggesting weaker cholesterol inhibition in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 combine experimental findings (C114 from Figure 3) with literature citations about lipid composition in different cell types. The experimental data on lipid effects are solid. The speculation about macrophages (C118) is reasonable given the lipid composition data, though it remains to be directly tested. This provides physiological context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Cholesterol diminishes channel activity of full-length P2X7, not just \u0394NC. The inhibitory effect is present for wild-type P2X7, as demonstrated by prior studies and MCD experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 are supported by cell-based MCD experiments (Figure 7A) and citation to Robinson et al., 2014. This addresses a potential concern that cholesterol effects might be specific to the truncated construct. The consistency between \u0394NC reconstitution and full-length cellular data strengthens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "NMDG-mediated currents are readily recorded from P2X7 without prolonged ATP application. Other P2X subtypes (P2X2-4) also show NMDG permeability, suggesting dye-permeable pore formation may be a common P2X receptor characteristic. Crystal structures show similar architectures for P2X3, 4, and 7 transmembrane channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are based on citations to recent literature (Harkat et al., 2017; Li et al., 2015) and structural studies. These claims provide important context for interpreting the current findings and suggest broader implications. However, these are not new experimental findings from this study but rather synthesis of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Activation of P2X7 receptors varies considerably depending on host cell lipid composition, which may explain inconsistent results from previous functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is a reasonable inference from the demonstrated lipid-dependent activity (C58-C59) and cell-type-specific lipid compositions (C115-C123). This provides a unifying explanation for field inconsistencies. However, this remains somewhat speculative as it requires assuming lipid composition differences were the primary variable in prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims about P2X7 receptor properties: it is a trimeric ATP-gated channel expressed in immune/glial cells, allows small cation permeation, forms a pore permeable to molecules up to ~900 Da, and has been implicated in various physiological and pathological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are background information supported by appropriate literature citations. These establish the context and significance of the study but are not new findings. They are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Summary of conflicting prior hypotheses about P2X7 pore formation: some studies support Panx1 involvement (C10-C14) while others challenge this (C15-C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 accurately summarize the controversy in the field regarding Panx1's role, with appropriate citations for both sides. This establishes the rationale for the current study but represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Summary of evidence for and against pore dilation: correlation between pore-lining residues and dye permeability (C18), time-dependent NMDG permeability (C19), challenges to dilation theory (C20-C21), and alternative interpretation of immediate large pore opening (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately summarize prior evidence regarding the pore dilation controversy, with appropriate citations. This provides context for the current study's findings on immediate, monophasic dye uptake (C44, C47, C99).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior work on the C-terminal domain: dye uptake depends on the CTD (C23-C24), which contains binding motifs (C25), is involved in assembly/trafficking (C26), and includes an 18-residue cysteine-rich region (CRR) proposed to play roles in lipid raft association, cholesterol binding, and channel gating (C27-C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 accurately summarize prior knowledge about the CTD with appropriate citations. Claim C27 is also directly observable in Figure 1A. This establishes the rationale for investigating the CRR but represents background rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Conflicting prior reports on CRR function: deletion diminishes hP2X7 activity without affecting surface expression (C71), but rat P2X7 CRR deletion maintains full activity (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 accurately represent conflicting prior findings with appropriate citations (Robinson et al., 2014; Allsopp and Evans, 2015 vs. Jiang et al., 2005). This establishes the controversy that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Prior suggestion that CTD cysteines, including those in CRR, may be palmitoylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by citation to Gonnord et al., 2009. This provides the rationale for investigating palmitoylation (C91-C93) but is not a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "NMDG permeability appears much less than Na+ permeability. The ratio may vary among P2X subtypes, with P2X7 potentially having the highest large molecule permeability, which could explain why dye-permeable pores are commonly observed for P2X7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is supported by citation to Harkat et al., 2017. However, C105 is speculative reasoning without direct experimental support. The authors acknowledge this is speculation ('may be'). While plausible, this hypothesis requires further testing and the current study does not provide comparative permeability data across P2X subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Speculative mechanisms for how palmitoylated C362/C363 might facilitate channel opening: altering TM2 tilting angles (C110), serving as an intracellular anchor (C111), or interacting with cholesterol bound to transmembrane helices (C112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 are explicitly speculative ('we speculate', 'may', 'it is also possible'). While these are reasonable hypotheses based on the structural location of C362/C363 and the demonstrated palmitoylation, they lack direct experimental support. These represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "A similar mechanism (cholesterol-palmitate interaction) has been proposed for \u03bc-opioid receptor homodimer stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by citation to Zheng et al., 2012. This provides precedent for the speculative mechanism proposed in C112 but is not a new finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "POPG is up-regulated in lymphoma cells overexpressing v-myc oncogene. This provides a potential mechanism for P2X7 hyper-activation in cancer, though it's uncertain if POPG up-regulation is common in other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is supported by citation to Eberlin et al., 2014. However, C120 is speculative ('it is uncertain', 'provides another potential mechanism'). While the connection between POPG up-regulation and P2X7 activation is logical given the experimental findings, the cancer relevance remains hypothetical without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "SM content varies widely across cell types (20-30% in RBCs, 4% in lymphoblasts). P2X7 activation triggers acid sphingomyelinase in microglia, degrading SM and triggering IL-1\u03b2 release. Sphingomyelinase deficiency causes Niemann-Pick disease; SM accumulation may hyper-activate P2X7 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 are supported by appropriate citations. However, C126 is speculative ('it is possible', 'may hyper-activate') without direct experimental evidence. While the connection is plausible given SM's facilitating effect on P2X7 (C51), the role in Niemann-Pick disease pathology remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Cholesterol-dependent increase in membrane rigidity is not the primary mechanism of P2X7 inhibition, as SM also increases rigidity while facilitating activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by the combination of DPH anisotropy data (Figure 5) and functional assays. This is essentially a restatement of C64-C66 and represents an important mechanistic conclusion.",
+    "result_type": "MAJOR"
+  }
+]

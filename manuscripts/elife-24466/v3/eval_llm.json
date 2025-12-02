@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C78",
+      "C79"
+    ],
+    "result": "RICE1 and RICE2 were identified as novel AGO10-interacting proteins through proteomics analysis of AGO10 complexes. Multiple orthogonal assays (LCI, co-IP, SEC, in vitro pull-down) confirmed direct, RNA-independent interactions between RICEs and both AGO1 and AGO10, with apparent preference for the PAZ domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide converging evidence from multiple independent experimental approaches (mass spectrometry, luciferase complementation, confocal microscopy, co-immunoprecipitation, size exclusion chromatography, and in vitro pull-down assays) demonstrating that RICE1 and RICE2 are bona fide AGO-interacting proteins. The RNA-independence of the interaction (C8) and domain mapping (C10) add mechanistic detail. The consistency across methods strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C64",
+      "C80"
+    ],
+    "result": "RICE1 and RICE2 function as 3'-to-5' exoribonucleases that specifically degrade single-stranded RNAs but not DNA or double-stranded RNA. The enzymes preferentially act on short RNAs (<40 nt) or longer unstructured RNAs, and require a free 3' end for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 present systematic in vitro enzymatic characterization using differentially labeled substrates (5' vs 3' labeled, linear vs circular, single-stranded vs double-stranded, various lengths). The directionality determination (C15) using differentially labeled substrates is methodologically sound. The substrate specificity tests (C12-C14, C17-C18) are comprehensive. RICE2 shows identical activity (C19), supporting functional redundancy. This is a well-supported biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "RICE1 is ubiquitously expressed throughout plant development, while RICE2 shows more restricted expression in specific tissues including meristems and vascular tissues. RICE1 transcripts are much more abundant than RICE2 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by GUS reporter assays (C20-C21) and RNA blot analysis (C22). The expression pattern data are consistent with potential functional redundancy but also tissue-specific roles. The methods are standard and appropriate for expression profiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C81",
+      "C82"
+    ],
+    "result": "RICEs positively regulate miRNA accumulation in vivo. Concurrent knockdown of both RICE1 and RICE2 decreased miRNA levels and increased target mRNA abundance, while overexpression of RICEs increased miRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 show that loss-of-function (via artificial miRNA knockdown) decreases miRNAs while gain-of-function (overexpression) increases miRNAs. The requirement for concurrent knockdown of both genes (C23) is consistent with functional redundancy suggested by expression data. The reciprocal effects of knockdown vs overexpression provide strong genetic evidence. Target mRNA upregulation (C24) is consistent with reduced miRNA function. Statistical analysis is provided (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The levels of miRNAs detected in these experiments represent miRNAs in mature RISC complexes in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is an inference based on established knowledge (cited as Wang et al., 2011) that free miRNAs outside RISC are negligible in Arabidopsis. This is a reasonable interpretation supported by prior literature, though it remains an inference rather than direct demonstration in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C63",
+      "C83"
+    ],
+    "result": "RICE1 crystal structure reveals a homohexameric assembly with DnaQ-like exonuclease fold. The structure shows \u03b1/\u03b2 fold architecture and exhibits structural homology to WRN-exo and ribonuclease D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 describe the crystal structure determination at 2.9 \u00c5 resolution. Crystallographic data are provided in Supplementary file 2, and the structure has been deposited (PDB 5V5F). Structural comparisons using DALI server provide quantitative similarity measures (r.m.s.d values). The hexameric assembly is observed in crystal lattice and confirmed by SEC data. This is a well-supported structural characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C65"
+    ],
+    "result": "RICE1 has a non-canonical active site lacking the conserved DEDD motif typical of DnaQ family exonucleases. Instead, key catalytic residues are D52, Y54, and E187. Mutations of these residues abolish enzymatic activity without affecting oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 identify the active site through structural analysis and validate it through mutagenesis. The SEC profiles of mutants (C37) demonstrate that loss of activity is not due to misfolding or oligomerization defects. The combination of structural and functional data strongly supports the identification of these non-canonical catalytic residues. This represents a novel catalytic mechanism within the DnaQ superfamily.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C66"
+    ],
+    "result": "RICE1 enzymatic activity does not require metal ions, unlike other DEDD superfamily members. No electron density for Mg2+ was observed in the crystal structure, and EDTA treatment did not affect enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide both structural (absence of electron density despite 5 mM MgSO4 in crystallization) and functional (EDTA insensitivity) evidence for metal-independent catalysis. This is unusual for the DnaQ superfamily and represents another novel biochemical feature. The convergence of structural and biochemical evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C85",
+      "C92"
+    ],
+    "result": "Overexpression of catalytically-inactive RICE1 mutants (D52A, Y54S) causes severe developmental defects and significantly reduces miRNA levels in a dominant-negative manner, with phenotypic severity proportional to expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate dominant-negative effects of catalytically-inactive mutants. The dose-dependent phenotypic severity (C41) and similarity to ago1 mutants and viral suppressor phenotypes (C40) support the interpretation. The reduction in miRNA levels (C42) mirrors the knockdown phenotype (C23), indicating that catalytic activity is required for RICE function in vivo. Multiple biological replicates and statistical analysis strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C67"
+    ],
+    "result": "The active site of RICE1 is uniquely located at the interface between subunits in the hexameric ring, with extensive intermolecular interactions including five salt bridges and ~2800 \u00c5\u00b2 buried surface area between neighboring molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe the unusual location of the active site based on crystal structure analysis. The specific identification of salt bridges (C45) and quantification of buried surface area (C46) provide detailed structural characterization. This interfacial active site is distinct from other DnaQ family members and has functional implications for oligomerization-dependent activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C84"
+    ],
+    "result": "Oligomerization is essential for RICE1 catalytic activity and protein stability. The R47E mutation disrupts hexamer formation and abolishes enzymatic activity, while oligomerization-defective mutants (R47E, D114A) are unstable in transgenic plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 demonstrate the requirement for oligomerization through structure-guided mutagenesis. SEC analysis shows that R47E produces monomers (C47) and D114A produces mixed oligomeric states (C48). The loss of enzymatic activity in R47E but not K119E (C49) directly links oligomerization to catalysis. The instability of these mutants in vivo (C51) despite comparable transcript levels provides additional evidence. This is a well-designed structure-function analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C73"
+    ],
+    "result": "RICE proteins do not promote miRNA accumulation by degrading miRNA* during RISC assembly. No enrichment of miRNA* was detected in AGO1 immunoprecipitates from RICE-compromised lines, and miRNA/miRNA* ratios remained largely unchanged. Both miRNA and miRNA* decreased coordinately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 systematically test and reject the hypothesis that RICEs clear miRNA* strands. Multiple approaches were used: AGO1 IP followed by sRNA blot (C53), qRT-PCR (C54), and sRNA-seq (C55-C57). The coordinated decrease of both miRNA and miRNA* (C54) and maintenance of miRNA/miRNA* ratios (C57) argue against selective miRNA* degradation. The sRNA-seq data provide genome-wide confirmation. This is a thorough analysis that rules out an alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C86",
+      "C93"
+    ],
+    "result": "Catalytically-inactive RICE1 causes accumulation of 5' cleavage fragments with significantly extended uridylation tails. The 3' uridylation tail length increased from ~2 nt in wild-type to ~3.5 nt in RICE1 D52A mutants, and the abundance of these fragments increased despite reduced cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 use al-RACE to characterize 5' cleavage fragments. The significantly longer uridylation tails in D52A mutants (C58) with statistical significance and multiple biological replicates provide strong evidence. The increased abundance of MYB33-5' fragments (C61) despite reduced cleavage (due to lower miRNA levels) indicates impaired clearance. This is the key mechanistic evidence linking RICE function to 5' fragment degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C87",
+      "C94"
+    ],
+    "result": "RICEs mediate the clearance of 5' uridylated fragments resulting from RISC cleavage and promote RISC recycling in vivo to maintain functional RISC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C87, and C94 represent the main conclusion integrating multiple lines of evidence: (1) RICE proteins are 3'-5' exoribonucleases specific for ssRNA, (2) they interact with AGO proteins, (3) loss of RICE function leads to accumulation of extended uridylated 5' fragments, (4) catalytically-inactive RICE acts dominant-negatively to reduce miRNA levels, and (5) RICE overexpression increases miRNA levels. The convergence of biochemical, structural, genetic, and molecular evidence strongly supports this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The lack of canonical DEDD motif, absence of metal ions, and interfacial location of the active site suggest a novel catalytic mechanism in RICEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a reasonable inference from the structural and biochemical characterization (C33-C39, C44, C65-C67). The combination of non-canonical active site residues, metal-independence, and interfacial catalysis distinguishes RICEs from other DnaQ family members. While the exact catalytic mechanism remains to be elucidated, the evidence clearly indicates it differs from canonical DEDD exonucleases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The RICE hexamer has distinct electrostatic properties with a negatively charged backside and positively charged patches around the active site on the front surface. The central pore has a diameter of ~21-22 \u00c5 and is rich in positively charged residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe surface electrostatic potential analysis from the crystal structure. The positively charged pore could facilitate substrate binding and orientation. The dimensions (~21-22 \u00c5) are consistent with accommodating single-stranded RNA. This structural feature may explain substrate specificity and processivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "RICEs do not affect miRNA biogenesis or AGO1 protein levels. Pri-miRNA abundance was unchanged in RICE-altered lines, and AGO1 protein levels remained stable or slightly increased when miRNAs were reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 rule out alternative mechanisms by which RICEs might affect miRNA levels. The pri-miRNA analysis (C71) excludes effects on transcription or primary processing. The AGO1 protein level analysis (C72) excludes effects on AGO1 stability. These negative results are important for defining the specific function of RICEs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C88",
+      "C95"
+    ],
+    "result": "A mechanistic model is proposed where prompt removal of cleaved products by RICEs promotes RISC recycling and maintains productive AGO-miRNA complexes, while retention of 5' fragments in the absence of RICE function leads to non-productive RISC and miRNA turnover, suggesting a link between target mRNA decay and miRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 and C88, C95 present a speculative mechanistic model. While the model is consistent with the experimental observations (accumulation of 5' fragments, reduced miRNA levels, dominant-negative effects), it involves several untested assumptions: (1) that 5' fragments are retained in RISC in the absence of RICE function, (2) that this retention causes miRNA turnover, and (3) that RISC recycling is rate-limiting for miRNA stability. Direct evidence for these steps (e.g., demonstration of 5' fragments bound to AGO proteins, measurement of RISC recycling rates) is not provided. The model is plausible but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Background knowledge claims about RISC function and uridylation of 5' cleavage fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 represent established knowledge about RISC-mediated cleavage and uridylation of 5' fragments, supported by citations to prior literature. These provide necessary context for the study.",
+    "result_type": "MINOR"
+  }
+]

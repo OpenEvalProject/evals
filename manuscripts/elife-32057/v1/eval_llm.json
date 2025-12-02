@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Localization precision for eYFP-tagged proteins was measured using multiple methods, yielding values of 24 nm (Thompson Equation), 27 nm (modified Thompson), and 16.2 nm (NeNA analysis). All localizations were confirmed to be within a 400 nm optical section.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods for calculating localization precision converge on similar values (16-27 nm), providing robust validation. The confirmation that all localizations are within 400 nm optical section demonstrates appropriate quality control for the super-resolution imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "FtsZ and EzrA are distributed non-uniformly within the septal annulus rather than forming a thin ring at the leading edge, with no discernible regular pattern within or across cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The autocorrelation analysis comparing experimental data to simulations with randomized angles (C20) and distance distributions (C21) provides quantitative evidence that these proteins do not form a thin ring. The comparison with simulations at various localization precisions strengthens the conclusion that the observed distribution is real and not an artifact of measurement uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "EzrA exhibits three distinct mobility populations (immobile, intermediate, and rapid) with mean diffusion coefficients of 0.20 \u00b1 0.01 \u03bcm\u00b2s\u207b\u00b9 in the septum and 0.28 \u00b1 0.03 \u03bcm\u00b2s\u207b\u00b9 outside. With ~305 \u00b1 23 total EzrA molecules per cell, at least ~100 molecules are not tightly associated with treadmilling FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-molecule tracking data provides quantitative measurements of EzrA mobility and copy number. The three-component gamma distribution model fitting (C25) is appropriate for heterogeneous protein mobility. The inference that ~100 EzrA molecules are not treadmilling (C29, C30) logically follows from the mobility data and copy number measurements, though this remains an estimate based on the proportion of the most mobile fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C53",
+      "C54"
+    ],
+    "result": "Peptidoglycan synthesis occurs in a diffuse pattern across the entire septum and cell periphery without discrete foci, even at the shortest labeling times (15 s), as revealed by localization microscopy with 7.5-9.9 nm precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of DAA labeling by LC-MS (C31) confirms the specificity of the method. The consistent observation of diffuse labeling at multiple time points (15 s to 5 min) with high localization precision (7.5-9.9 nm) provides strong evidence against focal peptidoglycan synthesis. The claim of superior precision compared to previous studies is supported by the technical measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In cells with incomplete septa, a 'gap' in new peptidoglycan synthesis exists at the mother cell wall-septum interface, but this region is filled with older peptidoglycan. After septal annulus completion, synthesis continues in two distinct zones for each daughter cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-color imaging with vancomycin (C37) provides direct evidence that the 'gap' regions lacking new DAA incorporation still contain peptidoglycan, distinguishing between absence of synthesis versus absence of peptidoglycan. The observation of two distinct zones after annulus completion (C38) is consistent with continued synthesis in daughter cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C57",
+      "C58"
+    ],
+    "result": "PC190723 treatment causes co-mislocalization of FtsZ, EzrA, and peptidoglycan synthesis, resulting in non-uniform peptidoglycan insertion and irregular cell wall thickening, suggesting peptidoglycan synthesis follows and may depend on FtsZ localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PC190723 experiments provide functional evidence linking FtsZ localization to peptidoglycan synthesis. The observation that peptidoglycan synthesis occurs where FtsZ accumulates after inhibition (C41, C57) supports the dependence relationship. However, the claim that 'all synthesis may depend on FtsZ' (C58) is appropriately qualified as speculative, as this is a perturbation experiment that may not reflect normal physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The S. aureus septum has a non-standard geometry where it is thinner at the leading edge and progressively thicker toward the lagging edge. This geometry dictates that peptidoglycan insertion cannot be confined to the leading edge and provides greater surface area for synthesis that increases as the septum closes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TEM observations (C45) provide direct morphological evidence for the non-standard septal geometry. The mathematical modeling (C48, C49) logically demonstrates that this geometry provides more surface area than a uniformly thick septum. The inference that this geometry necessitates distributed peptidoglycan insertion (C46, C51) follows logically from the morphological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The non-standard septal geometry is proposed to be advantageous by enabling more biosynthetic enzymes to work without steric hindrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C52) and represents an interpretation of potential evolutionary advantage. While the increased surface area is demonstrated, the claim about reduced steric hindrance and advantage to bacteria lacks direct experimental support and remains a plausible but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C61"
+    ],
+    "result": "The diffuse distribution of peptidoglycan insertion is corroborated by the distribution of divisome components FtsZ and EzrA, which occur in a zone rather than exclusively at the leading edge, with different proteins showing different mobilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial correlation between peptidoglycan synthesis patterns and divisome protein localization (C55, C56) provides mutual support for both observations. The differential mobility of proteins (C61) is supported by the single-molecule tracking data. This integration of multiple lines of evidence strengthens the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Three alternative models are proposed for divisome organization: multiple identical machines with component exchange, non-uniform machines with variable protein composition, or highly transient interactions without stable complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative models (C62, C63, C64) proposed to explain the observations but not directly tested. The data showing non-uniform distribution and differential mobility are consistent with all three models, but do not distinguish between them. Additional experiments would be needed to determine which model is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "EzrA fusions with eYFP, meYFP, GFP, and SNAP functionally complement the native ezrA deletion, showing similar growth rates (24 min doubling time) to wild-type (25 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The complementation data with multiple fluorescent tags and similar growth rates to wild-type provides strong evidence that the tagged proteins are functional. This validation is critical for interpreting all subsequent localization and dynamics experiments using these constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In the pbp4 mutant, DAA labeling is reduced but the proportion of off-septal labeling and the diffuse pattern of peptidoglycan synthesis remain unchanged compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pbp4 mutant analysis addresses previous literature implicating PBP4 in off-septal synthesis. The quantitative comparison showing no significant difference in off-septal labeling proportion (C68) and similar autocorrelations (C70) provides evidence that the diffuse synthesis pattern is not dependent on PBP4, though overall DAA incorporation is reduced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38"
+    ],
+    "result": "Peptidoglycan synthesis continues after septal annulus completion, with FtsZ remaining at the septum and synthesis occurring in two distinct zones for each daughter cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization microscopy images showing FtsZ at completed septa (C6, Figure 2a) and the observation of two distinct synthesis zones after annulus completion (C38) provide direct evidence for continued synthesis. This challenges the conventional view that division is complete when the annulus closes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C71"
+    ],
+    "result": "Peptidoglycan synthesis occurs across the developing septal surface in a diffuse pattern with a full width half maximum spread of ~230 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative measurement of ~230 nm FWHM spread (C71) from cross-sectional analysis provides specific dimensional information about the synthesis zone. This is consistent with the observed septal geometry and supports the diffuse synthesis model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "3D-SIM imaging revealed punctate distribution of EzrA at the division site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While 3D-SIM data is presented (C15), the authors explicitly note that 'honeycomb' artifacts could not be removed and may introduce artificial foci. This led them to use localization microscopy as a superior approach. The punctate appearance in 3D-SIM may be artifactual and is superseded by the higher-quality localization microscopy data showing diffuse distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "HADA incorporation does not cause mislocalization of FtsZ or EzrA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This control is stated but the data is explicitly not shown (C72). While this is an important control for interpreting the DAA labeling experiments, the lack of presented data makes it impossible to evaluate the claim. This should have been included in supplementary materials.",
+    "result_type": "MINOR"
+  }
+]

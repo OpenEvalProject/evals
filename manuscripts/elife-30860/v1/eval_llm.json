@@ -1,0 +1,435 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study generated a comprehensive mRNA expression time course of zebrafish development using poly(A) pulldown stranded RNA-seq across 18 time points from 1-cell to 5 days post-fertilization, with 5 biological replicates of 12 pooled embryos per time point, yielding an average of 3.8 million reads per sample and characterizing temporal expression profiles of 23,642 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C19-C24 collectively describe the experimental design and sequencing output. The methodology is clearly stated with specific numbers of time points, replicates, embryos per pool, and read depth. These are fundamental descriptive statistics of the dataset that are internally consistent and appropriate for the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Gene detection increases steadily during development with a transient reduction during gastrulation attributed to maternal mRNA degradation. Expression level distributions shift from bimodal at early stages to more normal distributions as development proceeds, consistent with increasing cellular heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe observed patterns in the data (C25, C27-C28) and provide biological interpretations (C26, C30) supported by citation to prior work (C29). The bimodal-to-unimodal transition is consistent with known developmental biology and is supported by reference to Hebenstreit et al., 2011.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RNA-seq data validation using H3K4me3 ChIP-seq shows that 83.0% of expressed genes at dome stage and 64.8% at prim-5 have promoter H3K4me3 peaks, while only 10.7% and 4.9% of non-expressed genes show overlap, respectively. The lower overlap at prim-5 is attributed to increased tissue-restricted expression and methodological sensitivity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide quantitative validation of RNA-seq data against orthogonal ChIP-seq data. The high overlap between expressed genes and H3K4me3 marks (83.0% and 64.8%) versus low overlap for non-expressed genes (10.7% and 4.9%) provides strong validation. The interpretation of lower overlap at later stages (C35-C36) is reasonable given increased cellular differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Principal component analysis demonstrates close clustering of biological replicates and smooth developmental progression, with the first six PCs explaining over 90% of variance (PC1 alone accounts for 58.2%). PC6 shows a spike coinciding with zygotic genome activation at dome stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe PCA results that demonstrate data quality (replicate clustering) and biological coherence (smooth temporal progression). The quantitative variance explained (>90% by 6 PCs, 58.2% by PC1) indicates strong structure in the data. The PC6 spike at ZGA (C41) represents a biologically meaningful signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C11"
+    ],
+    "result": "The dataset is made publicly accessible through multiple platforms: raw sequence data via European Nucleotide Archive, processed expression profiles (TPM/FPKM) via Expression Atlas with searchable interface, and genome browser visualization via Ensembl with stage-specific tracks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C42-C45 describe data accessibility and are straightforward statements about data deposition and visualization platforms. These are verifiable facts about where and how the data can be accessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C4"
+    ],
+    "result": "Of 23,642 detectable genes, 5,024 have automatically generated names (zgc:*, si:ch:*). These unnamed genes show enrichment at dome and gastrula stages (32.9-42.2%) compared to other stages (18.2-28.6%), and were associated with distinct developmental time points through temporal and functional transcript co-variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C48 provide quantitative characterization of unnamed genes in the dataset. The enrichment of unnamed genes at specific developmental stages (C48) is a clear quantitative observation. The association with developmental time points (C4) is supported by the clustering analyses described in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Graph-based clustering using BioLayout Express3D and Markov Cluster Algorithm produced 254 expression clusters from genes with Pearson correlation >0.94, with 238/254 clusters containing fewer than 100 genes and 11,439 genes assigned to clusters overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C131-C133 describe the clustering methodology and quantitative results. The approach is clearly described with specific parameters (Pearson r > 0.94) and produces interpretable cluster sizes. The numbers are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C134",
+      "C135"
+    ],
+    "result": "BioLayout clusters show distinct temporal expression patterns with biological coherence: 70 clusters have significant GO enrichments and 17 have ZFA enrichments. Specific examples include cluster 3 (maternal genes), cluster 5 (late expression), cluster 27 (homeobox transcription factors), and clusters 36/49 (blood clotting factors). Some clusters lack enrichments despite containing known developmental regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63, C134-C135 describe biological validation of clusters through GO/ZFA enrichment and specific examples. The quantitative enrichment results (70 GO, 17 ZFA) and specific cluster examples provide evidence of biological coherence. The observation that some clusters lack enrichments (C135) is honest reporting of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Genes not consistently expressed across all stages show GO enrichments for apoptosis and adaptive immune system terms (B-cell receptor signaling, immunoglobulin production), consistent with the adaptive immune system not fully developing until 3 weeks post-fertilization in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe GO enrichment results for non-consistently expressed genes and provide biological context through citation. The interpretation is reasonable given the developmental timeline of the zebrafish immune system (supported by citations in C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C5"
+    ],
+    "result": "Four BioLayout clusters (7, 23, 26, 135) show significant enrichment for chromosome 4 genes, with 153/168 being zinc finger domain-containing genes. These genes show coordinated expression with a burst from dome to 75% epiboly (4.3-8 hpf), with cluster 23 showing a particularly sharp peak. The unnamed genes in these clusters represent 30.6% of unnamed genes at gastrula stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C66-C72 describe a major finding about chromosome 4 zinc finger genes. The statistical enrichment (C66), domain annotation (C67), quantitative representation (C68), and temporal expression patterns (C69-C71) are all clearly documented. The coordinated expression interpretation (C72) is well-supported by the sharp temporal profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Of 311 NLR genes in the genome, 148 are expressed during the time course, but they show different expression patterns from zinc finger genes and only 9 are assigned to BioLayout clusters, demonstrating specificity of the chromosome 4 zinc finger gene expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide a negative control showing that the coordinated expression pattern is specific to zinc finger genes and not a general property of chromosome 4 genes. This strengthens the zinc finger gene finding by demonstrating specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Systematic analysis identified 62 chromosomal regions with co-expressed genes (mean pairwise Pearson r > 0.5), including the hoxda cluster and additional zinc finger gene groups on chromosomes 3, 15, and 22. For 26/62 regions, homologous genes maintain physical co-localization in mouse and human, but most have been split, suggesting no selective pressure for maintaining synteny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe a genome-wide analysis of chromosomal co-expression with clear methodology (sliding window, r > 0.5 threshold). The comparative genomics analysis (C79-C80) provides evolutionary context, though the interpretation about selective pressure (C80) is somewhat speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Analysis of 2,929 one-to-one teleost-specific paralogous gene pairs shows a distribution of correlation coefficients skewed toward positive correlations compared to random pairs, but with 50% below 0.45, suggesting widespread expression divergence. Among 683 pairs with anatomical expression data, 83.7% have less than 50% overlap in stage/anatomy annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86, C152-C154 describe paralogue analysis with clear quantitative results. The comparison to random pairs (C83) provides appropriate statistical context. The acknowledgment of limitations (C153) regarding spatial vs temporal divergence is appropriate. The interpretation of widespread divergence (C154) is supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C155",
+      "C156"
+    ],
+    "result": "GO enrichment analysis of paralogous pairs reveals neural and muscle development terms are enriched overall and especially in highly correlated pairs (r > 0.9), while negatively correlated pairs (r < -0.5) show limited enrichments, suggesting temporal divergence is mirrored by greater GO term diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90, C155-C156 describe GO enrichment patterns across different correlation ranges of paralogues. The pattern of enrichment correlating with expression correlation is biologically coherent. The interpretation linking temporal divergence to GO diversity (C90, C156) is reasonable though somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C157",
+      "C158"
+    ],
+    "result": "The RNA-seq data enabled Ensembl to create 127 new protein-coding gene annotations and 1,166 new transcripts in previously annotated genes for release 90 (total: 62,895 transcripts in 35,117 genes). The new genes are expressed at 3-fold lower levels on average and often in limited stages, potentially explaining why they were not previously annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96, C157-C158 describe concrete improvements to genome annotation with specific numbers. The observation that new genes are expressed at lower levels (C96, C158) provides a reasonable explanation for why they were missed previously. The integration into Ensembl release 90 is verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C170",
+      "C171"
+    ],
+    "result": "Differential isoform analysis using Salmon and maSigPro identified 5,043 genes with differential isoform usage across the time course, with 3,084 expressing more than two isoforms. The data refine current gene annotation and link splice isoforms to temporal expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C170-C171 describe differential isoform analysis with clear methodology (Salmon, maSigPro) and quantitative results. The numbers are substantial (5,043 genes, 3,084 with >2 isoforms) and the utility for annotation refinement (C171) is a reasonable conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Ensembl built 2,294 new lincRNAs using the RNA-seq data, of which 1,304 are detected in the dataset and 81 show differential isoform usage. These lincRNAs are shorter (mean 1,006 nt), have fewer exons (mean 3.04), and are expressed at lower levels (median 1.6 TPM) than protein-coding genes (median 7.3 TPM). Limited overlap with two previously published lincRNA sets likely reflects different identification methods. The 5' ends are not well-defined due to reliance on RNA-seq data without CAGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107, C159-C162 describe lincRNA annotation with clear quantitative characteristics. The comparison to protein-coding genes (C104-C105) and other lincRNA sets (C102-C103) provides context. The acknowledgment of 5' end annotation limitations (C106-C107) and suggestion for improvement (C162) shows appropriate recognition of methodological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Using dgcr8 and drosha mutant embryos to enrich for unprocessed pri-miRNAs, the study produced an improved pri-miRNA assembly with 398 transcripts overlapping 283 miRNA loci (42% increase from 220 loci in Ensembl v87). The assembly shows miRNAs are processed from primary transcripts with multiple isoforms and potentially multiple transcription start sites, enabling multi-level regulation. Some assembled constructs may be fragments requiring further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115, C163-C169 describe a clever experimental approach using processing mutants to improve pri-miRNA annotation. The quantitative improvement (42% increase, C165) is substantial. The observation of multiple isoforms (C166) is supported by citations. The acknowledgment of potential fragments (C168) and need for validation (C169) shows appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C175"
+    ],
+    "result": "Using the DeTCT 3' end sequencing method across 423 samples, 253,627 3' end regions were initially identified, filtered to 37,724 regions (strict) or 8,358 regions (stricter), with 1,552 genes having two or more 3' ends. Alternative 3' ends can result in different 3' UTRs, RNA-binding protein sites, microRNA regulation sites, or different coding sequences with distinct protein domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123, C175 describe 3' end analysis with clear methodology (DeTCT) and filtering strategy. The large initial number (253,627) and substantial filtering (to 8,358 stricter) shows appropriate quality control. The biological consequences described (C116-C118) are well-established. The consistency with prior work (C175) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C176"
+    ],
+    "result": "The gene pdlim5b exemplifies alternative 3' end usage with three alternative ends used at different developmental times: end 2 is used during cleavage/gastrula, all three during segmentation. Ends 1 and 2 would produce the same protein with different 3' UTRs, while end 3 would produce a protein lacking the C-terminal zinc finger domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128, C176 provide a specific, well-documented example of alternative 3' end usage with clear functional predictions. The temporal specificity (C125-C126) and predicted protein differences (C127-C128) are clearly stated and supported by the data shown in figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "GO enrichment analysis of 1,552 genes with multiple 3' ends shows enrichment for diverse biological processes without obvious tissue specificity, and no Pfam domain enrichments, suggesting alternative 3' end regulation is not restricted to particular gene classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 describe GO/Pfam enrichment results for genes with alternative 3' ends. The lack of specific enrichments (C129-C130) is an important negative result suggesting broad applicability of this regulatory mechanism rather than restriction to specific gene types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The chromosome 4 zinc finger genes may function in zygotic genome activation, potentially setting up/maintaining open chromatin for rapid gene activation, similar to Drosophila Zelda. Supporting evidence includes: (1) co-expression with H3K36 methyltransferases, (2) H3K36me association with active chromatin, (3) de-repression upon Kdm2aa loss, and (4) potential functional equivalence to mammalian KRAB zinc finger genes (absent in ray-finned fish) that suppress retrotransposons. The clusters also contain known developmental regulators (Tgf-beta, Wnt pathway, transcription factors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C151 present speculative interpretations about zinc finger gene function. While the expression timing coincides with ZGA (C138, C142) and supporting evidence is cited (C139-C149), these are hypotheses rather than demonstrated functions. The speculation is reasonable and well-supported by circumstantial evidence, but lacks direct functional validation. The alternative hypothesis about retrotransposon suppression (C146-C149) is equally plausible. This represents important hypothesis generation but not conclusive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C177"
+    ],
+    "result": "The improved temporal annotation of exon usage addresses the ongoing debate about reverse genetics approaches in zebrafish, where mutations may affect non-critical exons present only in transcript subsets. The data enable identification of critical exons and provide scope for temporally resolved transcript-specific knockout strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174, C177 connect the dataset to an important methodological issue in zebrafish genetics. The interpretation (C172) is supported by recent publications (C173). The value of the annotation for identifying critical exons (C174) and enabling transcript-specific approaches (C177) represents reasonable applications of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "A major aim was creating an accessible reference of normal mRNA expression during zebrafish development. The data are available as raw sequence (European Nucleotide Archive) and as pre-computed analyses enabling in-depth gene-by-gene examination, providing easy access and direct links to genomic databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 describe the study's goals and data accessibility. These are straightforward statements about data availability and utility that are verifiable and represent important contributions to the community.",
+    "result_type": "MINOR"
+  }
+]

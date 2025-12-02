@@ -1,0 +1,1825 @@
+{
+  "submission": {
+    "id": "4435f151-1ede-476f-9e1f-753e19792b10",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:41:29.747383Z",
+    "updated_at": "2025-12-02T00:41:29.747383Z"
+  },
+  "content": [
+    {
+      "id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "submission_id": "4435f151-1ede-476f-9e1f-753e19792b10",
+      "content_type": "manuscript",
+      "content_text": "# Microglial transglutaminase-2 drives myelination and myelin repair via GPR56/ADGRG1 in oligodendrocyte precursor cells\n\n## Authors\n\n- Stefanie Giera<sup>1</sup> ([ORCID: 0000-0002-7414-0562](https://orcid.org/0000-0002-7414-0562))\n- Rong Luo<sup>1</sup>\n- Yanqin Ying<sup>1</sup>\n- Sarah D Ackerman<sup>4</sup> ([ORCID: 0000-0001-8752-8972](https://orcid.org/0000-0001-8752-8972))\n- Sung-Jin Jeong<sup>1</sup>\n- Hannah M Stoveken<sup>6</sup>\n- Christopher J Folts<sup>1</sup> ([ORCID: 0000-0002-0448-3711](https://orcid.org/0000-0002-0448-3711))\n- Christina A Welsh<sup>2</sup> ([ORCID: 0000-0001-9802-725X](https://orcid.org/0000-0001-9802-725X))\n- Gregory G Tall<sup>6</sup>\n- Beth Stevens<sup>2</sup> ([ORCID: 0000-0003-4226-1201](https://orcid.org/0000-0003-4226-1201))\n- Kelly R Monk<sup>4</sup> \u2020\n- Xianhua Piao<sup>1</sup> ([ORCID: 0000-0001-7540-6767](https://orcid.org/0000-0001-7540-6767)) \u2020\n\n### Affiliations\n\n1. Division of Newborn Medicine, Department of Medicine Children's Hospital and Harvard Medical School Boston United States\n2. Department of Neurology F. M. Kirby Neurobiology Center, Children\u2019s Hospital and Harvard Medical School Boston United States\n3. Tongji Hospital, Tongji Medical College Huazhong University of Science and Technology Wuhan PR China\n4. Department of Developmental Biology Washington University School of Medicine St. Louis United States\n5. Department of Neural Development and Diseases Korea Brain Research Institute (KBRI) Daegu South Korea\n6. Department of Pharmacology University of Michigan Medical Center Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the central nervous system (CNS), myelin formation and repair are regulated by oligodendrocyte (OL) lineage cells, which sense and integrate signals from their environment, including from other glial cells and the extracellular matrix (ECM). The signaling pathways that coordinate this complex communication, however, remain poorly understood. The adhesion G protein-coupled receptor ADGRG1 (also known as GPR56) is an evolutionarily conserved regulator of OL development in humans, mice, and zebrafish, although its activating ligand for OL lineage cells is unknown. Here, we report that microglia-derived transglutaminase-2 (TG2) signals to ADGRG1 on OL precursor cells (OPCs) in the presence of the ECM protein laminin and that TG2/laminin-dependent activation of ADGRG1 promotes OPC proliferation. Signaling by TG2/laminin to ADGRG1 on OPCs additionally improves remyelination in two murine models of demyelination. These findings identify a novel glia-to-glia signaling pathway that promotes myelin formation and repair, and suggest new strategies to enhance remyelination.\n\n## Introduction\n\nMyelination of axons is essential for both efficient impulse conduction and for health of nerve fibers. During the development of the vertebrate central nervous system (CNS), myelin is produced and maintained by oligodendrocytes (OLs), which arise from a lineage-restricted, proliferative pool of OL precursor cells (OPCs). OPCs are abundant in the adult CNS, generating new oligodendrocytes and new myelin under conditions of myelin damage, as is seen in demyelinating diseases and in rodent models of demyelination. Unfortunately, the regenerative capacity of OPCs after injury is poor, necessitating further investigation into the molecular mechanisms that guide both developmental and post-injury induced OPC differentiation. A number of studies have identified cell-autonomous regulators of OPC proliferation and terminal differentiation into myelinating OLs, but our understanding of these processes remains incomplete (Emery, 2010; Nave and Werner, 2014; Hughes and Appel, 2016; Mitew et al., 2014). Furthermore, a comprehensive portrait that incorporates both cell-autonomous and -non-autonomous factors, including OPC interactions with other cell types and with extracellular matrix (ECM) proteins, is presently lacking (Mayoral and Chan, 2016; Colognato and Tzvetanova, 2011; Clemente et al., 2013; Wheeler and Fuss, 2016).\n\nCell-cell interactions with other glial populations, in particular microglia, influence OPC proliferation and maturation (Hagemeyer et al., 2017). While our understanding of the molecular mechanisms underlying OPC-microglial interactions during developmental myelination is limited, recent studies have offered some insight. For example, the nonspecific suppression of microglial function with the anti-inflammatory drug minocycline leads to a reduction in the numbers of neural progenitors and OPCs during postnatal CNS development, suggesting that a cell-cell interaction is critical to the maturation of the OL-lineage (Shigemoto-Mogami et al., 2014). By comparison, crosstalk between OPCs and microglia has been widely reported in the context of demyelinating insults (Miron et al., 2013), including in demyelinating diseases such as toxin-induced murine models of demyelination in which clearance of damaged myelin by microglia is necessary for OPC-dependent remyelination (Kotter et al., 2006). The molecular signaling pathways that mediate communication between microglia and oligodendrocyte lineage cells during development and repair, however, have not been fully delineated.\n\nSimilar gaps in knowledge exist for OPC communication with the ECM. The role of ECM proteins in modulating OPC proliferation and differentiation has been described (Jagielska et al., 2012; Urbanski et al., 2016). Nevertheless, the mechanisms through which OPCs communicate with the ECM and how these interactions are transduced into biologically- or therapeutically-relevant OPC behaviors remains to be elucidated.\n\nTo address the question of how OPCs integrate signals from the matrix and other glial cells, we focused on the family of adhesion G protein-coupled receptors (aGPCRs). Most aGPCRs possess a GPCR-Autoproteolysis-INducing (GAIN) domain that mediates autoproteolytic processing during protein maturation to generate an N- and a C-terminal fragment (NTF and CTF, respectively), which remain non-covalently associated on the cell surface (Langenhan et al., 2013; Hamann et al., 2015; Langenhan et al., 2016). These structural features make aGPCRs plausible transducers for cellular responses to ECM interactions, and specific aGPCRs have emerged as mechanical receptors and as transducers of cell-matrix interactions (Scholz et al., 2015; Petersen et al., 2015; Langenhan et al., 2016). Prior work has defined functions for several aGPCRs in the development of myelinating glial cells in both the peripheral and central nervous systems (Monk et al., 2009; Petersen et al., 2015; Ackerman et al., 2015; Giera et al., 2015; Langenhan et al., 2016; Shin et al., 2013; Ackerman et al., 2018). In particular, the aGPCR ADGRG1 (also known as GPR56) has been shown to regulate OL development and CNS myelination (Ackerman et al., 2015; Giera et al., 2015; Salzman et al., 2016).\n\nADGRG1 is an evolutionarily conserved regulator of OL development in zebrafish, mice, and humans (Ackerman et al., 2015; Giera et al., 2015). Loss-of-function mutations in ADGRG1 cause the devastating human brain malformation called\u00a0bilateral frontoparietal polymicrogyria (BFPP), which is comprised of a constellation of structural brain defects including CNS hypomyelination (Piao et al., 2004; Piao et al., 2005). Conditional deletion of Adgrg1 in OL lineage cells results in CNS hypomyelination, and this is specifically caused by deficiencies in ADGRG1 signaling in OPCs and immature OLs (Giera et al., 2015). Loss of Adgrg1 in mice and zebrafish decreases OPC proliferation, thereby leading to a reduced number of mature myelinating OLs and fewer myelinated axons in the CNS (Ackerman et al., 2015; Giera et al., 2015). However, the relevant ADGRG1 ligand during CNS myelination has not yet been defined.\n\nIn this study, we demonstrate that microglia-derived transglutaminase 2 (encoded by Tgm2) is a novel ADGRG1 ligand for OPCs. Microglia-specific deletion of Tgm2 leads to reduced OPC cell division, fewer mature OLs, and hypomyelination during postnatal CNS development, phenocopying the loss of Adgrg1. In vitro, we find that the activation of ADGRG1 by TG2 requires the ECM protein laminin to promote OPC proliferation. Moreover, we extend our analysis of the role ADGRG1-TG2 interactions in developmental myelination to mouse models of myelin damage. We provide evidence that OPC-specific deletion of Adgrg1 impairs CNS remyelination after toxin-induced demyelination, and that recombinant TG2 rescues remyelination failure in organotypic cerebellar slices in a ADGRG1-dependent manner. Taken together, these findings show that the tripartite signaling complex comprised of microglial TG2, extracellular laminin, and OPC ADGRG1 regulates OL development and myelin repair.\n\n## Results\n\n### Putative ligands of ADGRG1 are expressed in microglia\n\naGPCR ligand binding is solely mediated by its N-terminal fragment (NTF)(Hamann et al., 2015). To establish the distribution of an OPC-specific ADGRG1 ligand in the developing brain, we labeled putative ADGRG1 binding proteins in mouse corpus callosum (CC) tissue with a probe comprised of the ADGRG1 NTF fused to human immunoglobulin Fc fragment (ADGRG1N-hFc; Figure 1A). These studies were performed at postnatal day 5 (P5) when OPCs are actively proliferating. To identify the lineage of ADGRG1 ligand-expressing cells, we performed a series of double IHC experiments with ADGRG1N-hFc paired with Iba1 (to label microglia), GFAP (to label astrocytes), and PDGFR\u03b1 (to label OPCs). We observed robust and consistent putative ligand detection in microglia (Figure 1B and C), while no obvious putative ligand binding was detected in OPCs and only sparse signals were observed in astrocytes (Figure 1D\u2013G). Quantitative analyses showed that\u00a0~80% Iba1\u00a0+microglia and~20% of GFAP\u00a0+astrocytes express the putative ligand of ADGRG1 (Figure 1H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schema of ADGRG1 receptor. GAIN domain and ADGRG1N-hFc are shown. (B, D, and F) Double labeling of ADGRG1N-hFc (green) and Iba1 (B, red), GFAP (D, red), PDGFR\u03b1 (F, red) in P5 wt corpus callosum. DAPI, blue. Scale bar, 25 \u00b5m. (C, E, and G) Higher magnification of the boxed region in (B, D and\u00a0F). Scale bar, 10 \u00b5m. Staining was repeated N\u00a0=\u00a03\u20134 animals. (H) Quantification of double positive ADGRG1N-hFc+ and Iba+ cells and ADGRG1N-hFc+ and GFAP+ cells. N\u00a0=\u00a03\u20134 per staining.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Biotinylated ADGRG1N-mFc was used to purify ADGRG1 binding partner(s) from mixed glial cell (enriched in microglia and astrocytes) lysate. Protein complexes were subjected to SDS PAGE and tryptic peptide mass spectrometry protein identification after one-step purification with immobilized streptavidin. The whole lane was excised and subjected to tryptic peptide mass spectrometry (MS) protein identification analysis.\n\nTo identify the ligand of ADGRG1 in OPCs, we employed an in vitro proteomics approach. Biotinylated ADGRG1N-hFc was incubated with protein lysates isolated from cultured primary glial cells that were enriched for microglia and astrocytes, and streptavidin beads were used to capture biotinylated ADGRG1 and its glial-derived candidate binding partner(s) (Figure 1\u2014figure supplement 1). Purified complexes were then submitted for identification by mass spectrometry following digestion by trypsin. Proteins with more than five identified tryptic peptides from three independent experiments are listed in Table 1.\n\n**Table 1.**\n Summary of mass spectrometry results from three independent purifications.Total number of peptides sequences in each individual experiment specific for binding to ADGRG1N.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein name (Gene ID)</th>\n      <th>Peptide number (Exp1\u00a0+\u00a0Exp2+Exp3)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Plectin (Plec)</td>\n      <td>21\u00a0+\u00a022\u00a0+\u00a023</td>\n    </tr>\n    <tr>\n      <td>Transglutaminase 2 (Tgm2)</td>\n      <td>19\u00a0+\u00a020\u00a0+\u00a017</td>\n    </tr>\n    <tr>\n      <td>GPR56/ADGRG1 (Gpr56/Adgrg1)</td>\n      <td>12\u00a0+\u00a011\u00a0+\u00a09</td>\n    </tr>\n    <tr>\n      <td>Growth arrest-specific 6 (Gas6)</td>\n      <td>11\u00a0+\u00a09\u00a0+\u00a011</td>\n    </tr>\n    <tr>\n      <td>Sodium/potassium-transporting ATPase subunit alpha-1(Atp1a1)</td>\n      <td>8\u00a0+\u00a07\u00a0+\u00a09</td>\n    </tr>\n    <tr>\n      <td>Aspartyl-tRNA synthetase (Dars)</td>\n      <td>8\u00a0+\u00a03\u00a0+\u00a08</td>\n    </tr>\n    <tr>\n      <td>Membrane protein, palmitoylated 6 (Mpp6)</td>\n      <td>8\u00a0+\u00a05\u00a0+\u00a011</td>\n    </tr>\n    <tr>\n      <td>Microtubule-actin crosslinking factor 1 (Macf1)</td>\n      <td>8\u00a0+\u00a013\u00a0+\u00a08</td>\n    </tr>\n  </tbody>\n</table>\n\n### Tgm2 knockout mice display reduced myelination\n\nWe first focused our attention on TG2 because it is a known binding partner of ADGRG1 in melanoma cells (Xu et al., 2006). To evaluate the candidacy of TG2 as the ligand of ADGRG1 in OPCs, we investigated whether deleting Tgm2 phenocopies the myelination phenotype observed in Adgrg1 knockout mice. Indeed, we observed significantly reduced numbers of Plp+ OLs in the CC of Tgm2 knockout mice at both P14 and P28 compared to littermate controls (Figure 2A and B), with reductions in Plp+ OLs that are similar to reductions observed in Adgrg1 knockout mice (Giera et al., 2015). Similar to our analysis of callosal Plp+ OL density in adult Adgrg1-deficient mice (Giera et al., 2015) and consistent with a previous analysis of two-month-old Tgm2-deficient mice (Van Strien et al., 2011), four- to five-month-old Tgm2 knockout mice showed normal levels of Plp+ OLs (Figure 2\u2014figure supplement 1), indicating a gradual correction of OL numbers through adulthood.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative in situ hybridization (ISH) images of Plp (red) in the CC of P14 (top panel) and P28 (bottom panel) Tgm2+/- and Tgm2-/- mice. DAPI, blue. Scale bar,\u00a0100 \u00b5m. (B) Quantification of Plp+ oligodendrocytes from the CC of Tgm2+/- and Tgm2-/- P14 and P28 mice. * P=0.0484; N\u00a0=\u00a05 per genotype (P14); *p=0.0378; N\u00a0=\u00a04 per genotype (P28), unpaired t-test. (C) Representative TEM images from P28 CC of Tgm2+/+ and Tgm2-/- mice. Scale bar, 1 \u00b5m. (D) Percentage of myelinated axons in the CC of control (Tgm2+/+ and Tgm2+/-) and Tgm2-/- mice. *p=0.0299; N\u00a0=\u00a03 per genotype; unpaired t-test. (E) Scatter plot displaying g-ratio values in the CC of control and Tgm2-/- mice. (F) TG2 western blot on acutely isolated microglia, OPCs, astrocytes, and mature oligodendrocytes from the P7 neonatal brain. \u03b2-actin was used as loading control. (G) Representative ISH images of Plp (red) in the CC of P28 Tgm2fl/+;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre\u00a0+\u00a0mice. DAPI, blue. Scale bar, 100 \u00b5m. (H) Quantification of Plp+ oligodendrocytes in the CC of P28 Tgm2fl/+;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre\u00a0+\u00a0mice. **p=0.00850; N\u00a0=\u00a04 per genotype, unpaired t-test. Error bars are means\u00a0\u00b1\u00a0s.e.m (B, D, H).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative images of ISH of Plp in the CC of 4\u20135 month old Tgm2+/- and Tgm2-/- mice. Scale bar, 100 \u00b5m. DAPI, blue. (B) Quantification of Plp+ oligodendrocytes in the CC reveals similar numbers of OLs in the CC of Tgm2+/- and Tgm2-/- mice. * P=0.807, unpaired t-test, N\u00a0=\u00a03 per genotype. Error bars are means\u00a0\u00b1\u00a0s.e.m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Average g-ratio of myelin sheath thickness was comparable in control and Tgm2-/- mice. p=0.728, unpaired t-test, N\u00a0=\u00a03 per genotype. (B) The distribution of myelinated axons with respect to the axon diameter in the CC of control and Tgm2-/- mice. p=0.8291, two-way ANOVA, p=0.2524, Gaussian non-linear curve fit, N\u00a0=\u00a03 per genotype. (C) Axon diameter in the CC is comparable in control and Tgm2-/- mice. Mean\u00a0\u00b1\u00a0s.d.; p=0.8771; unpaired t-test; N\u00a0=\u00a03 per genotype. (D) Number of total axons (myelinated and unmyelinated) is comparable in the CC of in control and Tgm2-/- mice at P28. p=0.7947, unpaired t-test, N\u00a0=\u00a03 per genotype. Error bars are means\u00a0\u00b1\u00a0s.e.m (A\u2013D).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Representative images of ISH of Plp on P28 in the CC in Tgm2+/+ and Tgm2+/-\u00a0100\u00a0\u00b5m. Scale bar, 100 \u00b5m. DAPI, blue. (B) Quantification of Plp+ oligodendrocytes in the CC reveals similar numbers of OLs in the CC of Tgm2+/+ and Tgm2+/- mice. *p=0.6005, unpaired t-test, N\u00a0=\u00a03 per genotype. (C) Representative TEM images from P28 CC of Tgm2+/+ and Tgm2+/- mice. Scale bar, 1 \u00b5m. (D) Percentage of myelinated axons was quantified in the CC in Tgm2+/+ and Tgm2+/- mice. p=0.5129, unpaired t-test, N\u00a0=\u00a03 per genotype. Error bars are means\u00a0\u00b1\u00a0s.e.m (B, D).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Developmental expression of Tgm2 in murine microglia purified from whole brains (E10.5 through P) or brain regions (adult) at the indicated embryonic and postnatal ages. RNA-sequencing data was extracted from public database of (Matcovitch-Natan et al., 2016). Cx: cortex, Hp: hippocampus, SC: spinal cord.\n\nTransmission electron microscopy of P28 CC showed significantly fewer myelinated axons in Tgm2-/- mice compared to littermate controls (Figure 2C and D), whereas myelin thickness corrected for axon caliber (g-ratio), total axon numbers, and axon diameters were comparable between the two groups of animals (Figure 2E, Figure 2-figure supplement 2). A gene dosage effect was not apparent, as we detected no difference in the density of Plp+ OLs or the percentage of myelinated axons in CC between Tgm2+/+ and Tgm2+/- mice (Figure 2\u2014figure supplement 3). Taken together, these data support the finding that TG2 is the ligand of ADGRG1 in OPCs.\n\n### Microglia-specific ablation of Tgm2 reduces OL numbers\n\nRecent transcriptomic studies revealed that Tgm2 is primarily expressed by microglia in postnatal murine CNS cells (Zhang et al., 2014), with expression detected in purified embryonic, early postnatal, and adult microglia (Matcovitch-Natan et al., 2016) (Figure 2\u2014figure supplement 4). Consistent with these reports, our western blot analysis of freshly isolated, purified murine glial cells demonstrated selective enrichment in microglia, with no detectable TG2 protein in wildtype OPCs, OLs, astrocytes, or Tgm2-/- microglia (Figure 2F).\n\nTo test if microglial TG2 regulates developmental myelination, we studied the effect of conditionally deleting microglial Tgm2 on the production of mature OLs. Tgm2 floxed mice (Nanda et al., 2001) were crossed with Cx3cr1-Cre mice (Yona et al., 2013) where Cre recombinase expression is restricted to microglia. The numbers of Plp+ OLs in the CC of microglia-specific Tgm2 knockout mice (Tgm2fl/fl;Cx3cr1Cre+) were significantly reduced compared to littermate Tgm2fl/+;Cx3cr1Cre- controls (Figure 2G and H). Importantly, the reduction is comparable to what was observed in the constitutive Tgm2 knockout at P28 (Figure 2A and B), supporting the hypothesis that microglia are the primary source of TG2 during OL development.\n\n### TG2 promotes OPC proliferation and cell cycle progression\n\nNext, we investigated whether TG2 regulates OPC proliferation in the developing white matter, a function that has been previously documented for ADGRG1. Indeed, numbers of Pdgfra+ OPCs in the CC of Tgm2-/- mice were significantly reduced compared to controls at P14 (Figure 3A and B). Our previous studies showed that loss of Adgrg1 in the OL lineage causes premature cell cycle exit, resulting in a diminished size of Pdgfra+ OPC pools and fewer mature OLs (Giera et al., 2015). Therefore, we performed cell cycle exit assays (Figure 3C) and found significantly fewer BrdU+/Ki67+ double positive cells in the CC of Tgm2 knockouts compared to the controls (Figure 3D and E). Consistent with decreased OPC proliferation, we also observed an overall reduction in BrdU+ cells (Figure 3F) and fewer PDGFR\u03b1+/BrdU+ OPCs in Tgm2 knockout mice compared to littermate controls (Figure 3G and H). We conclude that OPCs prematurely exit the cell cycle in the absence of TG2, as we previously reported in Adgrg1-/- mice (Giera et al., 2015). Taken together, our data support a model in which microglial-derived TG2 promotes OPC proliferation via ADGRG1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative ISH images of Pdgfra (red) in the CC of P14 Tgm2+/- and Tgm2-/- mice. DAPI, blue. Scale bar, 100 \u00b5m. (B) Quantification of Pdgfra+ OPCs in the CC of control and Tgm2-/- mice. *p=0.0320, unpaired t-test, N\u00a0=\u00a06 per genotype. (C) Cartoon showing the cell cycle exit assay. (D) Representative images of double IHC of BrdU (red) and Ki67 (green) in the CC of P14 Tgm2+/- and Tgm2-/- mice that were pulsed with BrdU 24 hr earlier (arrows mark double positive Ki67+/BrdU+ cells). DAPI, blue. Scale bar, 50 \u00b5m. (E) The density of Ki67+/BrdU+ cells in the CC is lower in Tgm2-/- mice. *p=0.0207, unpaired t-test, N\u00a0=\u00a05 per genotype. (F) The density of BrdU+ cells in the CC is reduced in Tgm2-/- mice. **p=0.0099, unpaired t-test, N\u00a0=\u00a05 per genotype. (G) Representative images of double IHC of PDGFR\u03b1 (red) and BrdU (green) in the CC of P14 Tgm2+/- and Tgm2-/- mice (arrows mark double positive PDGFR\u03b1+/BrdU+cells). DAPI, blue. Scale bar, 50 \u00b5m. (H) The number of BrdU+/PDGFR\u03b1+ cells in the CC is reduced in Tgm2-/- mice. *p=0.0465, unpaired t-test, N\u00a0=\u00a04 per genotype. Error bars are means\u00a0\u00b1\u00a0s.e.m. (I) The effect of recombinant TG2 (rTG2) on OPC proliferation in basal condition, laminin-111 or fibronectin. rTG2 stimulates OPC proliferation only in the presence of laminin-111. *p=0.039, paired t-test, N\u00a0=\u00a03\u20136 per group. (J) The effect of wild type TG2 and its enzymatic dead mutant TG2-W241A proteins on OPC proliferation. Only wild type TG2 stimulates OPC proliferation. **p=0.0091; One-way ANOVA followed by Tukey post-hoc test, F(2,14) = 6.7, *p=0.05 (control vs. rTG2); n.s. p=0.70 (control vs. TG2-W241A); **p=0.0088 (TG2 vs. TG2-W241A); (K) Adgrg1-/- OPCs fail to respond to rTG2-enhanced proliferation. *p=0.0063, paired t-test, N\u00a0=\u00a05 per genotype. (L) Western blot analyses of CDK2 in acutely isolated OPCs from P7 Tgm2+/- and Tgm2-/- brains. The bracket indicates CDK2 protein isoform bands. \u03b2-actin was used as loading control. (M) CDK2 protein levels are reduced in the Tgm2-/- mice.\u00a0\u00b1=0.002, unpaired t-test, N\u00a0=\u00a03 per genotype. (N) Western blot of active RhoA (top panel) and total RhoA (bottom panel) in the CC of Tgm2+/+ and Tgm2-/- mice. (O) The relative level of active RhoA to total RhoA was diminished in the CC of Tgm2-/- mice compared to Tgm2+/+ control mice. *p=0.0207, unpaired t-test, N\u00a0=\u00a03 per genotype. Error bars are means\u00a0\u00b1\u00a0s.e.m (B, E, F, H, I, J, K, M, O).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013E) CRISPR-Cas9 technology was used to generate mutations in zebrafish gas6 (A), mpp6a (B), mpp6b (C), pleca (D), and plecb (E). (A) A CRISPR/Cas9 system guide RNA (gRNA) designed to disrupt exon 2 (targeted sequence highlighted blue and SexAI restriction enzyme site used for genotyping denoted) of gas6 generated gas6stl228, a 4 bp deletion predicted to result in a frameshift and premature STOP. Alignments of wt and mutant nucleotide sequences (top), and predicted wt (706 aa) and mutant (78 aa) protein sequences (bottom) shown. (B) A gRNA designed to disrupt the 3rd coding exon 5 (targeted sequence highlighted purple, and HpyCH4IV restriction enzyme site used for genotyping denoted) of mpp6a generated mpp6astl233, a 1 bp deletion predicted to result in a frameshift and premature STOP. Alignments of wt and mutant nucleotide sequences (top), and predicted wt (550 aa) and mutant (69 aa) protein sequences (bottom) shown. (C) A gRNA designed to disrupt exon 2 (targeted sequence highlighted green and BstNI restriction enzyme site used for genotyping denoted) of mpp6b generated mpp6bstl234, a 6 bp deletion predicted to result in a two amino acid deletion and a single amino acid change within the receptor targeting domain. Alignments of wt and mutant nucleotide sequences (top), and predicted wt (539 aa) and mutant (537 aa) protein sequences (bottom) shown. (D) A gRNA designed to disrupt exon 3 (targeted sequence highlighted orange, and DdeI restriction enzyme site used for genotyping denoted) of pleca generated plecastl261, a 20 bp deletion predicted to result in a frameshift and premature STOP. Alignments of wt and mutant nucleotide sequences (top), and predicted wt (4752 aa) and mutant (103 aa) protein sequences (bottom) shown. (E) A gRNA designed to disrupt the 3rd coding exon (targeted sequence highlighted yellow, and Hpy188III restriction enzyme site used for genotyping denoted) of plecb generated plecbstl236, a 13 bp deletion predicted to result in a frameshift and premature STOP. Alignments of wt and mutant nucleotide sequences (top), and predicted wt (4530 aa) and mutant (111 aa) protein sequences (bottom) shown. (F\u2013 O) Whole mount ISH showing mbp expression (CNS denoted by black arrows) at 5 days post-fertilization (dpf) in (F) gas6 control larva (wt and gas6stl228/+, N\u00a0=\u00a011/12), (G) gasstl228/stl228 mutant larva (N\u00a0=\u00a05/8), (H) mpp6a control larva (wt and mpp6astl233/+, N\u00a0=\u00a017/18), (I) mpp6astl233/stl233 mutant larva (N\u00a0=\u00a05/7), (J) mpp6b control larva (wt and mpp6bstl234/+, N\u00a0=\u00a024/24), (K) mpp6bstl234/stl234 (N\u00a0=\u00a04/4), (L) pleca control larva (wt and plecastl261/+, N\u00a0=\u00a018/18), (M) plecastl261/stl261mutant larva (N\u00a0=\u00a04/4), (N) plecb control larva (wt and plecbstl236/+, N\u00a0=\u00a036/38), and (O) plecbstl236/st\u2019236 mutant larva (N\u00a0=\u00a010/10). Dorsal views are shown for all, anterior to the left. No gross changes in mbp expression were observed in putative ligand mutants relative to sibling controls.\n\n### Other candidate ligands do not phenocopy loss of Adgrg1\n\nWe returned to our list of putative ADGRG1 ligands and asked if other candidates phenocopied the ablation of Adgrg1. Given that ADGRG1, like many aGPCRs, mediates cell-cell and cell-ECM interactions (Hamann et al., 2015; Langenhan et al., 2013), we prioritized the candidate binding partners of ADGRG1 by focusing on plasma membrane-associated and ECM proteins, and eliminated Atp1a1, Dars, and Macf1. Using zebrafish \u2013 a well-established model for studying myelination (Preston and Macklin, 2015; Ackerman and Monk, 2016), in which major classes of glia are present (Lyons and Talbot, 2014) and in which Adgrg1 function in OL development is conserved (Ackerman et al., 2015) \u2013 we screened the remaining candidates. We generated new mutant alleles of genes encoding the zebrafish orthologs of Gas6 (gas6), Mpp6 (mpp6a, mpp6b), and Plectin (pleca, plecb) using CRISPR/Cas9 genome editing (Figure 3\u2014figure supplement 1A\u2013E). Whole mount in situ hybridization (WISH) for myelin basic protein (mbp) at 5 days post-fertilization did not reveal CNS myelination phenotypes in any of the putative-ligand zebrafish mutants at this stage (Figure 3\u2014figure supplement 1F\u2013O), a time point at which adgrg1 zebrafish mutants exhibit reduced mbp expression (Ackerman et al., 2015). This lack of phenocopy suggested that Gas6, Mpp6, and Plectin do not function as ligands for ADGRG1 during OPC development. ADGRG1N was used as the bait for the pull-down assay; therefore, it is not surprising that ADGRG1 was detected in the MS analysis. Additionally, ADGRG1 has been reported to undergo trans-trans homophilic interactions (i.e., interactions between ADGRG1 NTFs expressed on adjacent cells) (Paavola et al., 2011) and so it is also possible that ADGRG1N-hFc probe immunoprecipated ADGRG1 itself.\n\n### TG2 functions together with laminin to stimulate OPC proliferation\n\nTo establish conditions for mechanistic investigation of the function of TG2 on OPC ADGRG1 during myelination, we performed in vitro analyses of wild-type (wt) and Adgrg1-/- OPC cell expansion in the presence of recombinant TG2 (rTG2). To our surprise, rTG2 failed to enhance the proliferation of wt OPCs grown on poly-D-lysine (Figure 3I). TG2 is present in the extracellular milieu and is capable of cross-linking ECM proteins, including laminin-111 (Aeschlimann et al., 1992; Belkin, 2011). In light of this interaction, and the observation that laminins are broadly detected in the postnatal CC and in close proximity with OPCs in vivo (Relucio et al., 2012), we tested the need for laminin-111 in promoting OPC proliferation in a ADGRG1- and TG2-dependent manner. We found that OPC proliferation was significantly increased in the presence of both rTG2 and laminin-111, but not in cells exposed to either protein alone (Figure 3I). Fibronectin, another ECM protein expressed in the CNS and crosslinked by TG2 (Lorand et al., 1988), did not enhance OPC proliferation in this assay (Figure 3I), suggesting specificity for laminin-111. These data support a model in which activated OPC ADGRG1 forms a signaling triad with TG2 and laminin-111 in order to support proliferation. To test this hypothesis, we generated an enzymatically dead TG2. TG2 can function as both GTPase intracellularly and crosslinking enzyme in the extracellular space (Lorand and Graham, 2003; Nakaoka et al., 1994). A single missense mutation, W241A, in the enzymatic core specifically abolishes its crosslinking enzymatic activity while preserving its GTPase function (Pinkas et al., 2007). Indeed, TG2-induced OPC proliferation in the presence of laminin-111 required the enzymatic crosslinking activity of TG2, as transamidation-inactive TG2-W241A mutant protein (Pinkas et al., 2007) failed to promote OPC proliferation (Figure 3J). To confirm that TG2 regulates OPC proliferation in a ADGRG1-dependent manner, we cultured OPCs derived from P5 Adgrg1+/+ or Adgrg1-/- mice in the presence of laminin-111, with or without rTG2. rTG2 did not promote proliferation of Adgrg1-/- OPCs (Figure 3K), further supporting a ADGRG1-dependent TG2 function on OPC proliferation.\n\n### TG2 and ADGRG1 upregulate pro-mitogenic signaling proteins\n\nNext, we investigated intracellular mechanisms linking the interaction between ADGRG1 and TG2 with OPC cell division. Cyclin-dependent kinase 2 (CDK2) regulates OPC cell cycle progression (Belachew et al., 2002; Jablonska et al., 2007), and we previously reported reductions in CDK2 protein levels in Adgrg1-null OPCs (Giera et al., 2015). Therefore, we investigated whether loss of Tgm2 caused similar reductions in CDK2. Indeed, western blot analysis of CDK2 in acutely isolated OPCs from P6 Tgm2-/- mice showed significantly decreased levels of CDK2 protein compared to littermate controls (Figure 3L and M).\n\nAn additional regulator of cell cycle progression is RhoA (Chircop, 2014), which was recently reported to function downstream of ADGRG1 activation in OPCs (Ackerman et al., 2015; Giera et al., 2015). Using a pull-down assay to specifically isolate activated RhoA in corpus callosal tissue of Tgm2-/- mice and littermate controls, we found that active RhoA was significantly reduced in Tgm2-/- CC (Figure 3N and O). This suggests that ADGRG1 activates RhoA to regulate OPC proliferation in a TG2-dependent manner.\n\n### ADGRG1 regulates remyelination in two murine models of demyelination\n\nHaving found that the interaction of microglial TG2 with OPC-derived ADGRG1 sustained OPC proliferation during developmental myelination, we next asked if this interaction was relevant during myelin repair in the adult CNS using two established murine models of toxin-induced demyelination. The finding that Tgm2 is highly expressed in purified adult microglia, and that this expression is not diminished in a murine model of MS additionally motivated us (Wlodarczyk et al., 2017) (Figure 4\u2014figure supplement 1A). Moreover, a previous report showed that Tgm2 knockout mice exhibit impaired remyelination following cuprizone exposure (Van Strien et al., 2011), leading us to hypothesize that the relevant OPC receptor for TG2 might be ADGRG1 in this remyelination model.\n\nTo study whether loss of OPC Adgrg1 impairs remyelination, we fed cuprizone to OPC-specific Adgrg1 knockout mice and littermate controls for 6 weeks and assessed remyelination status by analyzing myelin content after 0, 3, 7, and 10 days recovery (DR). Quantitative morphometry of Black-Gold-stained myelin revealed a significant decrease in remyelination at 7 and 10 DR in the CC of mice lacking Adgrg1 in OPCs compared with control littermates (Figure 4A and B). As we observed during CNS development, this reduction in myelin was accompanied by a reduction in the number of myelinating OLs (Figure 4C and Figure 4\u2014figure supplement 1B). In the focal de-/re-myelination model using injections of lysophosphatidylcholine (LPC) into the external capsule of the CC (Hammond et al., 2015) to create lesions, mice lacking Adgrg1 in OPCs had reduced numbers of myelinating OLs in the lesion 14 dpl (Figure 4D and E). Additionally, in the same LPC injection model, microglia-specific Tgm2 knockout mice had fewer myelinated axons in the lesion compared to control mice (Figure 4F and G), while g-ratio was unaffected (Figure 4H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of Black-Gold myelin staining of the corpus callosum of Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+ after cuprizone feeding for 6 weeks followed by recovery for 3 d (3 DR), 7 d (7 DR) and 10 d (10 DR) (dotted line outlines quantified region). Scale bar, 250 \u00b5m. (B) Percentage of remyelinated corpus callosum displayed significant decrease in myelination at 7 DR and 10 DR between Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+. *p=0.0285 (7 DR), N\u00a0=\u00a04 (cre-); N\u00a0=\u00a04 (cre+); *p=0.0416 (10 DR), N\u00a0=\u00a03 (cre-); N\u00a0=\u00a04 (cre+), unpaired t-test. (C) Number of GST\u03c0+ OLs are significantly decreased at 10 DR between Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+. *p=0.0457 (10 DR), N\u00a0=\u00a03 (cre-); N\u00a0=\u00a03 (cre+), unpaired t-test. (D) Representative images of GST\u03c0+ OLs in the corpus callosum of Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+ 14 days post-lesion (dotted line outlines quantified region). Scale bar, 200 \u00b5m. (E) Number of GST\u03c0+ OLs are significantly decreased 14 days post-lesion between Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+. *p=0.0133, N\u00a0=\u00a03 (cre-); N\u00a0=\u00a03 (cre+), unpaired t-test. (F) Representative TEM images from the CC of Tgm2fl/fl;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre\u00a0+\u00a0mice. Scale bar, 1 \u00b5m. (D) Percentage of myelinated axons in the CC of Tgm2fl/fl;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre\u00a0+\u00a0mice. *p=0.0493; N\u00a0=\u00a04 per genotype; unpaired t-test. (E) Scatter plot displaying g-ratio values in the CC of Tgm2fl/fl;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre\u00a0+\u00a0mice.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Expression of Tgm2 in murine microglia purified from naive or EAE brains. RNA-sequencing data was extracted from public database of (Wlodarczyk et al., 2017). (B) Representative images of GST\u03c0+ OLs of the corpus callosum of Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER\u00a0+\u00a0mice after cuprizone feeding for 6 weeks followed by recovery for 3 d (3 DR), 7 d (7 DR) and 10 d (10 DR) (dotted line outlines quantified region). Scale bar, 100 \u00b5m.\n\nTo further evaluate whether TG2 promotes remyelination through OPC ADGRG1, we conducted studies using an ex vivo model of LPC-induced de-/re-myelination in organotypic cerebellar slices (Birgbauer et al., 2004), in which demyelination and repair mechanisms differ from those induced by cuprizone (Blakemore and Franklin, 2008). Demyelination was induced by a 24 hr exposure to LPC, and after four days recovery we observed robust remyelination in wt cerebellar slices. By comparison, this remyelination was significantly impaired in cerebellar slices derived from OPC-specific Adgrg1-null mice (Figure 5A\u2013C). To test whether rTG2 could enhance remyelination, we added rTG2 to cerebellar slices during the recovery phase. Indeed, rTG2 increased myelination in both wt and Tgm2 single knockout cerebellar slices with 4 days of daily treatments (Figure 5D\u2013F). Excitingly, this effect appeared to be ADGRG1-dependent as increased remyelination was not observed in Tgm2/Adgrg1 double knockout slices (Figure 5D\u2013F). Taken together, the interaction between ADGRG1 and TG2 regulates efficient remyelination following cuprizone- and LPC-mediated injury.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative images of cerebellar slice cultures from P10 Adgrg1fl/fl;PdgfraCreER- and Adgrg1fl/fl;PdgfraCreER+\u00a0+ cerebella that were demyelinated with LPC for 24 hr followed by 4 days of recovery (4DR). Slices were labeled with NF200 (green) and MBP (red); myelinated fibers appear yellow in merged images. Scale bar, 100 \u00b5m. (B) Composite images created in Image J show myelinated axons (black) for quantification. (C) Percentage of myelinated axons after remyelination. Remyelination is reduced in cerebellar slices that lack OPC-derived ADGRG1. *p=0.0135, paired t-test, N\u00a0=\u00a05 per genotype. (D) Representative images of cerebellar slice cultures from P10 Adgrg1+/+;Tgm2+/+, Adgrg1+/+;Tgm2-/- and Adgrg1-/-;Tgm2-/- mouse cerebella that were demyelinated with LPC for 24 hr followed by 4 days of remyelination in the presence or absence of rTG2 (20 nM). Slices were immunostained with NF200 (green) and MBP (red); myelinated fibers appear yellow in merged images. Scale bar, 100 \u00b5m. (E) Composite images created in Image J show myelinated axons (black) for quantification. (F) Percentage of myelinated axons. Recombinant TG2 promotes remyelination in Adgrg1+/+;Tgm2+/+ and Adgrg1+/+;Tgm2-/-, but not Adgrg1-/-;Tgm2-/- cerebellar slices. *p=0.0475 (Adgrg1+/+;Tgm2+/+), *p=0.0197 (Adgrg1+/+;Tgm2-/-), paired t-test, N\u00a0=\u00a05\u20136 per genotype. Error bars are mean\u00a0\u00b1\u00a0s.e.m (C, F)..\n\n### Discussion\n\nThrough a combined approach utilizing molecular, cellular, and developmental biology as well as unbiased proteomics, we demonstrate that microglial TG2 is the ligand of OPC-derived ADGRG1. Although the importance of OPC ADGRG1 in developmental CNS myelination has been previously demonstrated (Ackerman et al., 2015; Giera et al., 2015; Salzman et al., 2016), the relevant ligand remained undefined and the role of ADGRG1 in myelin repair was not addressed. Here, we demonstrate that microglia-derived TG2 provides essential ligand activity for OPC-derived ADGRG1 during CNS myelination and that this signaling pathway is implicated in remyelination. This de-orphanization is a mandatory first step in the therapeutic exploitation of this novel pathway.\n\nThis study elucidates a novel role for microglia-ECM-OPC interactions in developmental myelination as well as in remyelination. It is known that laminin regulates oligodendrogenesis and CNS myelination by interacting with integrins and dystroglycan (Colognato and Tzvetanova, 2011; Colognato et al., 2004; Colognato et al., 2007; Colognato et al., 2002) and promotion of OPC proliferation in vivo (Relucio et al., 2012). Here, we present a new tripartite signaling complex \u2013 microglial TG2, ECM laminin, and ADGRG1 on OPCs \u2013 that drives OL development.\n\nTG2 is a member of the transglutaminase protein family; family members including TG2 function as crosslinking enzymes to ligate proteins between the \u03b5-amino group of a lysine residue and the \u03b3-carboxamide group of a glutamine residue (Fesus and Piacentini, 2002; Lai et al., 2017). Unlike other members of the transglutaminase family, TG2 can be found both in the intracellular and the extracellular spaces of various types of tissues. The intracellular portion of TG2 is thought to predominantly act as a signaling molecule that requires its GTPase activity (Nakaoka et al., 1994), whereas the extracellular portion of TG2 binds to proteins of the ECM and exerts its crosslinking enzymatic activity (Belkin, 2011). A single missense mutation (W241A) in the catalytic core of TG2 specifically abolishes its crosslinking enzymatic activity with other functions preserved (Pinkas et al., 2007). Interestingly, the enzymatic dead TG2 failed to promote OPC proliferation in vitro (Figure 3J), supporting the model that it functions as a crosslinking enzyme in regulating OL development and CNS myelin formation and repair.\n\nIt was previously reported that TG2 binds laminin-111 (Aeschlimann et al., 1992). In our study, we discovered that recombinant wt TG2, but not its enzymatic-dead counterpart, stimulates OPC proliferation via ADGRG1 in the presence of laminin-111. We speculate that TG2 interactions with ADGRG1 and laminin-111 modulate ECM properties including stiffness, thus promoting OPC proliferation (Jagielska et al., 2012). Although our study results support that ADGRG1-TG2-laminin-111 promotes OPC proliferation, it is possible that the same signaling triad could also regulates OPC differentiation. This model will be a subject of future investigation. It is worth noting that we focused our study in the white matter. Recent reports have described differences in gene expression, morphology, and metabolism of grey and white matter microglia and OPCs (Hagemeyer et al., 2017; Young et al., 2013). It will be an interesting research direction to evaluate whether there is a difference in microglial-ECM-OPC interactions in grey and white matter.\n\nWe show that TG2, contingent on its crosslinking activity and together with laminin-111, binds to the ADGRG1 NTF and initiates G-protein signaling (Figure 6). Activation of ADGRG1 in OPCs activates the small GTPase RhoA, a known downstream signaling protein, and additionally promotes the accumulation of the critical pro-mitotic cell cycle regulator CDK2. The latter finding is novel and offers new avenues of investigation into aGPCR-dependent regulation of cell cycle progression, a necessary step in generating OLs during myelination or remyelination.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/33385/elife-33385-fig6-v2.jpg)\n\n**Figure 6.:** TG2, secreted by microglia, binds ADGRG1 but fails to activate the receptor in the absence of ECM protein laminin-111. The binding of TG2 and laminin-111 to ADGRG1 leads to the dissociation of the ADGRG1 NTF from its CTF, allowing the tethered agonist to initiate G-protein signaling, culminating in activated RhoA, which promotes OPC proliferation. GAIN, GPCR-Autoproteolysis-INducing.\n\nIt is worth noting that loss of ADGRG1 does not cause as drastic OL development phenotypes compared to loss of other receptors such as GPR17 (Chen et al., 2009). Nevertheless, subtle fine-tuning of the developing brain is critically important for an organism as a whole: the complete loss of oligodendrocytes will be lethal, whereas dysregulation of myelin formation can cause diseases such as leukodystrophyies, and subtle dyshomeostasis could certainly disrupt brain development (Sharon et al., 2016). Although perturbations to the ADGRG1-TG2 pathway had mild effects on in vitro OPC proliferation, loss-of-function mutations in ADGRG1 manifest as CNS hypomyelination in humans (Giera et al., 2015; Piao et al., 2005; Piao et al., 2004), underscoring the importance of understanding ADGRG1 function in OL lineage cells.\n\nGiven the importance of myelin formation, maintenance, and repair in neurological diseases, these findings may be translated to clinical benefit in both developmental and acquired diseases of myelination. Pharmacological and biological modulators of ADGRG1 activity have recently been identified (Stoveken et al., 2016; Salzman et al., 2016). Furthermore, modulating TG2 expression and/or secretion, or developing peptidomimetic drugs could represent as viable therapeutic approaches in promoting remyelination. It will be important in future work to explore the intersection of therapeutic strategies to target aGPCRs with their cell-type-specific ligands, expression patterns, and contributions in human disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Adgrg1 knockout mice</td>\n      <td>Genentech/Lexicon Genetics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Tgm2 knockout mice</td>\n      <td>Dr. Gerry Melino, University of Rome, Italy PMID: 11113189</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Adgrg1fl/+</td>\n      <td>Dr. Xianhia Piao, Boston Children's Hospital, Boston MA, PMID: 25607655</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>PdgfraCre/ERT</td>\n      <td>Jackson Laboratory</td>\n      <td>Cat# 018280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Tgm2fl/+</td>\n      <td>Dr. Joan Cook-Mills, Northwestern University, Chicago, IL PMID: 11274171</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Cx3cr1Cre</td>\n      <td>Jackson Laboratory</td>\n      <td>Cat# 025524</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Thy1.2</td>\n      <td>Serotec</td>\n      <td>MCA02R</td>\n      <td>12 \u00b5l in 10 ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-GalC</td>\n      <td>Millipore</td>\n      <td>MAB342</td>\n      <td>12 \u00b5l in 10 ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-ADGRG1 (H11)</td>\n      <td>Dr. Xianhia Piao, Boston Children's Hospital, Boston MA, PMID: 21768377</td>\n      <td></td>\n      <td>(1:200) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-ADGRG1 (199)</td>\n      <td>Dr. Xianhia Piao, Boston Children's Hospital, Boston MA, PMID: 18509043</td>\n      <td></td>\n      <td>(1:200) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-MBP</td>\n      <td>Millipore</td>\n      <td>AB980</td>\n      <td>(1:200) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-Iba1</td>\n      <td>Wako</td>\n      <td>019\u201319741</td>\n      <td>(1:400) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-GFAP</td>\n      <td>Abcam</td>\n      <td>ab7260</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-NG2</td>\n      <td>Millipore</td>\n      <td>AB5320</td>\n      <td>(1:200) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-PDGFR\u03b1</td>\n      <td>BD Bioscience</td>\n      <td>558774</td>\n      <td>(1:500) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-PDGFR\u03b1</td>\n      <td>Cell Signaling Technologies</td>\n      <td>3164S</td>\n      <td>(1:500) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-Ki67</td>\n      <td>Affymetrix eBioscience</td>\n      <td>14-5698-80</td>\n      <td>(1:100) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-BrdU</td>\n      <td>Accurate Chemical and Scientific Corporation</td>\n      <td>OBT0030S</td>\n      <td>(1:100) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-RhoA</td>\n      <td>Cytoskeleton</td>\n      <td>ARH03-A</td>\n      <td>(1:500) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-CDK2</td>\n      <td>Santa Cruz</td>\n      <td>sc-6248</td>\n      <td>(1:1000) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-\u03b2-actin</td>\n      <td>Sigma</td>\n      <td>A5044</td>\n      <td>(1:5000) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-NF200</td>\n      <td>Sigma</td>\n      <td>N0142</td>\n      <td>(1:500) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-MBP</td>\n      <td>Abcam</td>\n      <td>ab7349</td>\n      <td>(1:200) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-GST\u03c0</td>\n      <td>Enzo</td>\n      <td>ADI-MSA-102-E</td>\n      <td>(1:500) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Ki67</td>\n      <td>BD Bioscience</td>\n      <td>550609</td>\n      <td>(1:100) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti mouse IgG-HRP</td>\n      <td>Sigma</td>\n      <td>A4416</td>\n      <td>(1:3000) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti mouse or rabbit IgG-HRP</td>\n      <td>Sigma</td>\n      <td>A6154</td>\n      <td>(1:3000) (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-mouse IgG-Alexa 488</td>\n      <td>ThermoFisher</td>\n      <td>A-11001</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rat IgG-Alexa 488</td>\n      <td>ThermoFisher</td>\n      <td>A-11006</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rat IgG-Alexa 546</td>\n      <td>ThermoFisher</td>\n      <td>A-11081</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rabbit IgG-Alexa 555</td>\n      <td>ThermoFisher</td>\n      <td>A-21428</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat anti-rabbit IgG-Alexa 546</td>\n      <td>ThermoFisher</td>\n      <td>A-11035</td>\n      <td>(1:1000) (IHC)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Pdgfra plasmid</td>\n      <td>Dr. Charles Stiles, Dana-Farber Cancer Institute, Boston, MA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plp plasmid</td>\n      <td>Addgene</td>\n      <td>22651</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1 common</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- CGAGAAGACTTC CGCTTCTG \u22123</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1 wt</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- AAAGTAGCTAAG ATGCTCTCC \u22123\u2019</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1 knockout</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- GCAGCGCATCG CCTTCTATC \u22123\u2019</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1fl/+ common</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- TGGTAGCTAACCTACT CCAGGAGC \u22123\u2032</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1fl/+ wt</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- GGTGACTTTGGTG TTCTGCACGAC \u22123\u2032</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Adgrg1fl/+ floxed</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td>5\u2032- CACGAGACTAGTGA GACGTGCTA \u22123\u2032</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>laminin I</td>\n      <td>R and D Systems</td>\n      <td>3400-010-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>fibronectin</td>\n      <td>Millipore</td>\n      <td>341668</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DIG RNA labeling kit</td>\n      <td>Roche Applied Science</td>\n      <td>11175025910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BlackGold</td>\n      <td>Millipore</td>\n      <td>AG105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-\u03b1-lyso-Lecithin, Egg Yolk</td>\n      <td>Millipore-Sigma</td>\n      <td>440154</td>\n      <td>LPC injections</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-\u03b1-Lysophosphatidylcholine from egg yolk</td>\n      <td>Sigma-Aldrich</td>\n      <td>L4129</td>\n      <td>for organotypic slice culture</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>T5648</td>\n      <td>100 mg/kg/day tamoxifen for five consecutive days for adults; 50 mg/kg/day for three consecutive days for pups</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad</td>\n      <td>GraphPad Software, La Jolla, CA 92037 USA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>(http://rsb.info.nih.gov/ij/)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse strains\n\nAll mice were treated according to the guidelines of the Animal Care and Use Committee at Boston Children's Hospital. The Adgrg1 knockout mice were obtained from Genentech/Lexicon Genetics. The mutant mice were originally created in a 129/BL6 background, but were derived into the FvB strain and bred into BALB/c strain resulting in a mixed genetic background of the mutant mice of 129/BL6/FvB/BALB/c (Li et al., 2008). Genotyping was performed by PCR using the following primers (Integrated DNA Technologies, Coralville, IA): A (5\u2032- CGAGAAGACTTCCGCTTCTG \u22123\u2019), B (5\u2032- AAAGTAGCTAAGATGCTCTCC \u22123\u2019), and Neo (5\u2032- GCAGCGCATCGCCTTCTATC \u22123\u2019). Tgm2 knockout mice were provided by Dr. Gerry Melino, University of Rome, Italy (De Laurenzi and Melino, 2001). For Adgrg1/Tgm2 double knockout mice, Adgrg1 knockout mice were bred with Tgm2 knockout mice. Adgrg1fl/+ mice were generated at the Mouse Gene Manipulation Core at Boston Children\u2019s Hospital (Giera et al., 2015). Genotyping was performed by PCR with the following primers: primer 1: 5\u2032- TGGTAGCTAACCTACTCCAGGAGC \u22123\u2032, primer 2: 5\u2032- GGTGACTTTGGTGTTCTGCACGAC \u22123\u2032 and primer 3: 5\u2032- CACGAGACTAGTGAGACGTGCTAC \u22123\u2032. PdgfraCre/ERT mice in a C57BL/6 background were purchased from Jackson Laboratory (Bar Harbor, ME;\u00a0Cat# 018280) (Kang et al., 2010) and were crossed with Adgrg1fl/fl mice to generate Adgrg11fl/fl;PdgfraCreERT+ mice and their littermate controls. Tgm2fl/+ mice were generously provided by Dr. Joan Cook-Mills (Northwestern University, Chicago, IL) (Nanda et al., 2001) and crossed with Cx3cr1Cre mice purchased from Jackson Laboratory (Bar Harbor, ME;\u00a0Cat# 025524) to generate Tgm2fl/fl;Cx3cr1Cre+ mice and their littermate controls.\n\n### Antibodies\n\nFor IHC or western blot analyses, we used the following primary antibodies: mouse anti-ADGRG1 (H11) (1:200) (Luo et al., 2011) and rabbit anti-ADGRG1 (199) (1:200) (Li et al., 2008), rabbit anti-MBP (Millipore,\u00a0Burlington, MA; Cat #AB980, 1:200), rabbit anti-Iba1 (Wako,\u00a0Richmond, VA; Cat# 019\u201319741, 1:400), rabbit anti-GFAP (Abcam,\u00a0Cambridge, MA ;Cat# ab7260, 1:1000), rabbit anti-NG2 (Millipore,\u00a0Burlington, MA; Cat #AB5320, 1:200), rat anti-PDGFR\u03b1 (BD Bioscience,\u00a0San Jose, CA ; Cat #558774, 1:500), rabbit anti-PDGFR\u03b1 (Cell Signaling Technologies,\u00a0Danvers, MA; Cat #3164S, 1:500), and rat anti-Ki67 (ThermoFisher, Waltham, MA ; Cat #14-5698-80, 1:100), rat anti-BrdU (Accurate Chemical and Scientific Corporation,\u00a0WESTBURY, NY; Cat #OBT0030S, 1:100), mouse anti-RhoA (Cytoskeleton,\u00a0Denver, CO; Cat# ARH03-A, 1:500), mouse anti-CDK2 (Santa Cruz,\u00a0Dallas, TX; Cat #sc-6248, 1:1000), mouse anti-\u03b2-actin (Sigma,\u00a0St. Louis,\u00a0MO; Cat #A5044, 1:5000), rabbit anti-GST\u03c0 (Enzo Life Sciences, Farmingdale, NY; Cat#ADI-MSA-102-E, 1:500), and mouse anti-Ki67 (BD Bioscience,\u00a0San Jose, CA; Cat #550609, 1:100). Secondary antibodies were goat anti-mouse or anti-rat conjugated with either Alexa 488 (ThermoFisher,\u00a0Waltham, MA, 1:1000) or Alexa 546 (ThermoFisher,\u00a0Waltham, MA, 1:1000) and goat anti-rabbit conjugated with Alexa 546 or 555 (ThermoFisher,\u00a0Waltham, MA, 1:1000), goat anti mouse or rabbit IgG-HRP (Sigma, Cat# A4416 or A6154, 1:3000).\n\n### OPC cultures\n\nOPCs were isolated from mixed male and female P5-8 Adgrg1+/+ or Adgrg1-/- mouse forebrains as previously described (Watkins et al., 2008; Wang et al., 2001). Briefly, OPCs were purified by negatively selecting with mouse anti-Thy1.2 (BioRad,\u00a0Hercules, CA; Cat #MCA02R) and mouse anti-GalC (Millipore,\u00a0Burlington, MA; Cat #MAB342), followed by mouse anti-O4 (O4 hybridoma supernatant) for positive selection. After releasing OPCs from the O4 plate by trypsinization, cells were resuspended in proliferation media containing PDGF-AA and NT-3 (PreproTech,\u00a0Rocky Hill, NJ ). OPCs were plated on coverslips coated with poly-D-lysine before coating with laminin I (R and D Systems,\u00a0Minneapolis, MN; Cat#3400-010-01) or fibronectin (Millipore, Burlington, MA;\u00a0Cat#341668) as previously described (Dugas et al., 2006). After 24 hr, rTG2 (2 nM) was added to the cultures and incubated for an additional 24 hr before fixation with 4% PFA and staining for PDGFR\u03b1 and Ki67.\n\n### Mixed glia culture\n\nMixed glia culture was isolated from P1 male and female wt forebrains, as previously described (Giera et al., 2015; O'Meara et al., 2011). Briefly, forebrains were dissociated and resulting cell suspension was cultured for 10 days in DMEM containing 10% FBS, 1% GlutaMax at 37\u00b0C and 8.5% CO2. The culture was shaken for 20 hr at 250 rpm and 37\u00b0C to remove OPCs. Mixed glial cells were cultured for another 5\u20137 days before being washed twice with PBS and collected.\n\n### Microglia isolation\n\nMicroglia were isolated as previously described (Cardona et al., 2006). Briefly, male and female P7 pups were perfused with ice-cold HBSS, before isolating and mincing the brains. The tissue was homogenized with a dounce homogenizer containing RPMI media before being mixed with stock isotonic percoll (SIP) creating a 30% SIP solution. This cell/SIP mixture was layered on top of a 70% SIP solution before being centrifuged. The resulting interphase containing the microglia was collected and washed with HBSS and cells were counted before being lysed for western blot analysis.\n\n### Cuprizone treatment\n\nAdgrg1fl/fl;PdgfraCreERT- and Adgrg1fl/fl;PdgfraCreERT+ adult mice (8\u201310 weeks old) were injected with 100 mg/kg/day tamoxifen for five consecutive days. Mice were fed a diet containing 0.2% (w/w) cuprizone (Envigo,\u00a0Indianapolis, IN) ad libitum for 6 weeks. A second pulse of tamoxifen was given at 4 weeks of cuprizone exposure, for 3 days with 100 mg/kg/day. After 6 weeks, mice were returned to normal feed for 3, 7 or 10 days of recovery (DR). Mice were perfused as described above at 0, 3, 7, 10 DR.\n\n### Black-Gold myelin staining\n\nCoronal brain sections were stained with Black Gold myelin stain (Millipore,\u00a0Burlington, MA; Cat# AG105) according to the manufacturer\u2019s protocol. Sections were imaged using Nikon Eclipse 80i microscope (Nikon,\u00a0Melville, NY). Representative images were obtained with the same exposure setting for control and mutant. Images of the corpus callosum were analyzed using NIH Image J software. The percentage of remyelinated area of the total corpus callosum was determined using a threshold procedure.\n\n### LPC injections\n\nAdgrg1fl/fl;PdgfraCreERT- and Adgrg1fl/fl;PdgfraCreERT+ male mice (8\u201310 weeks old) were injected with 100 mg/kg/day tamoxifen for five consecutive days from \u22126 dpl to \u22121 dpl. Mice (Adgrg1fl/fl;PdgfraCreERT- and Adgrg1fl/fl;PdgfraCreERT+ or Tgm2fl/fl;Cx3cr1Cre- and Tgm2fl/fl;Cx3cr1Cre+,8\u201310 weeks old) were anesthetized using isoflurane (3%) before either lysolecithin (LPC, 1% in saline, 2 \u00b5l, Millipore,\u00a0Burlington, MA) or saline was injected bilaterally using a Hamilton syringe in a stereotaxic apparatus at the following coordinates 1 mm anterior to bregma, 1.5 mm posterior to bregma and 3.0 mm deep as previously described (Hammond et al., 2015). Day of injection was denoted as 0 dpl. Mice were left for 14 dpl and subsequently perfused for either immunohistological analysis or transmission electron microscopy.\n\n### Cerebellum slice culture and LPC treatment\n\nAdgrg1fl/fl;PdgfraCreERT- and Adgrg1fl/fl;PdgfraCreERT+ P7 pups were injected with tamoxifen (50 mg kg\u22121) for 3 days before the cerebellar harvesting. All cerebella were harvested on P10 and placed in ice-cold Hank\u2019s buffer (ThermoFisher,\u00a0Waltham, MA) before being cut into 300 \u00b5m thick sagittal sections with a vibratome (Leica Biosystems,\u00a0Buffalo Grove, IL). Three slices were placed onto inserts (Millicell 0.4 \u00b5m, Millipore,\u00a0Burlington, MA) in media containing 50% MEM, 25% Horse Serum, 25% Hank\u2019s Buffer, 1% GlutaMax, 5 mg/ml Glucose. After 48 hr, the slices were incubated with 0.25 mg/ml lysolecithin (Sigma-Aldrich,\u00a0St. Louis,\u00a0MO\u00a0) for 24 hr. Afterward the slices were washed with media and remyelination was allowed to occur for 4 days, with or without 20 nM rTG2 protein as indicated in the figures by adding rTG2 to the media and slices. Slices were fixed with 4% PFA for 20 min, permeablized with 10% Triton-X 100 for 20 min and blocked with 10% goat serum, 1% bovine serum albumin (BSA) and 0.1% Triton X-100 in PBS for 1 hr at room temperature before being incubated with the primary antibody for neurofilament (mouse anti-NF200 antibody, SigmaAldrich\u00a0St. Louis,\u00a0MO\u00a0; Cat#N0142 1:500) and myelin (rat anti-MBP, Abcam,\u00a0Cambridge, MA; Cat#ab7349, 1:200) overnight at 4\u00b0C. Primary antibodies were visualized by incubating the sections with the appropriate fluorophore-conjugated secondary antibody for 1 hr at room temperature followed by staining of the nuclei with Hoechst 33342 (1:2000, ThermoFisher,\u00a0Waltham, MA). After mounting the slices, images were taken with Zeiss LSM 700 confocal microscope. Quantification of myelinated fibers was performed using NIH\u00a0Image J by subtracting background and applying threshold for both red and green channel, before measuring both myelinated and unmyelinated axon fibers.\n\n### Histology analyses\n\nMouse brains were harvested after perfusion, post-fixed with 4% PFA overnight, cryoprotected with 30% sucrose, and embedded in OCT. IHC was carried out as previously described (Jeong et al., 2012). Briefly, after antigen retrieval in Retrievagen A Solution (BD Bioscience, San Jose, CA ), brain sections were washed with 1x PBS, blocked with 10% goat serum, 1% bovine serum albumin (BSA) and 0.1% Triton X-100 in PBS for 1 hr at room temperature before being incubated with the primary antibody overnight at 4\u00b0C. Primary antibodies were visualized by incubating the sections with the appropriate fluorophore-conjugated secondary antibody for 1 hr at room temperature followed by staining of the nuclei with Hoechst 33342 (1:2000,\u00a0ThermoFisher, Waltham, MA ).\n\nIn situ hybridization was performed on 12 \u03bcm brain sections as previously described (Dugas et al., 2010; Bialas and Stevens, 2013). Probes targeting Plp (Addgene, Cambridge, MA;\u00a0Cat #22651) and Pdgfra (kind gift from Charles Stiles) were generated by digesting plasmids with EcoRI and HindIII, respectively. Sp6 and T7 polymerase were used to generate DIG-labeled RNA probes in vitro transcription (Roche Applied Science,\u00a0Indianapolis, IN; DIG RNA labeling kit) as per manufacturer\u2019s instructions. Hybridization occurred at 68 \u02daC and washes at 65 \u02daC. To detect the DIG-labeled probes, the TSA-Plus Cyanine three labeling system (Perkin Elmer,\u00a0Waltham, MA) was used according to the manufacturer\u2019s instructions.\n\nLigand binding in situ was performed on male and female P5 wt brains that were embedded into low-melting agarose and sectioned into 500 \u00b5m thick sections using a vibratome. Sections were washed with PBS before blocking for 30 min with 0.5% goat serum and 0.1% BSA, incubating with ADGRG1N-hFc for 30 min, followed with the appropriate secondary antibody for 30 min. Sections were fixed with 4% PFA for 30 min before being blocked with 10% goat serum, 1% BSA and 0.1% Triton-X 100 for 1 hr. Tissue was incubated with a marker for co-staining overnight at 4\u00b0C followed with the appropriate secondary antibody for 30 min.\n\nAll images were captured using a confocal LSM 510 NLO system or a Nikon Eclipse Ti inverted microscope (Nikon,\u00a0Melville, NY). Representative images were obtained with the same exposure setting for control and mutant.\n\n### Cell cycle exit assay\n\nCell cycle exit assays were performed as previously described (Giera et al., 2015). Briefly, proliferating cells were labeled with BrdU (50 mg kg\u22121) by intraperitoneal injection of male and female P13 Tgm2-/- pups and their littermate controls. Mouse brains were harvested 24 hr later, perfused, post-fixed with 4% PFA, cryoprotected with 30% sucrose, and embedded in OCT. Brain sections were processed for IHC with anti-BrdU and anti-Ki67 antibodies.\n\n### Western blot and GTP-Rho Pull-Down assay\n\nThe corpus callosa were dissected under a Leica stereo microscope (MZ 6; Leica Biosystems,\u00a0Buffalo Grove,\u00a0IL), followed by washes in 1x PBS and lysis in ice-cold RIPA buffer (1% Nonidet P-40, 50 mM Tris pH 7.6, 120 mM NaCl, 1 mM EDTA) containing protease inhibitor cocktail set 1 (Millipore, Burlington, MA). The lysates were cleared of insoluble materials by centrifugation at 16,000 x g for 10 min at 4\u00b0C. Protein concentration was determined by a Bio-Rad protein assay method (Bio-Rad,\u00a0Hercules,\u00a0CA) according to the manufacturer's protocol, and equal amounts of protein were used for SDS\u2013PAGE and western blot analysis. The GTP-Rho pull-down assay was performed as previously described (Luo et al., 2011); in short, tissues were pulverized on liquid nitrogen, lysed in 300 \u00b5l of ice-cold RIPA buffer containing protease inhibitors with a cell disruptor for 10 min and homogenized with a 26 G syringe needle. Equal amounts of total protein were incubated with 60 \u03bcg GST-RBD beads (Cytoskeleton,\u00a0Denver, CO) at 4\u00b0C for 90 min. The beads were washed twice with lysis buffer and once with TBS buffer. Bound Rho proteins were eluted by Laemmli sample buffer and detected by western blot using mouse monoclonal anti-RhoA antibody (Cytoskeleton,\u00a0Denver, CO).\n\n### Purification of ADGRG1 immunocomplexes\n\nADGRG1N and ADGRG1Ndel fusions proteins with either mFc or hFc tag were generated as previously described (Luo et al., 2011). BirA enzyme was used to in vitro biotinylate ADGRG1N-mFc-biotag protein as previously described (Stacey et al., 2002). Mixed glial cell lysate was incubated with biotinylated ADGRG1N protein in lysis buffer (20 mM Hepes [pH 7.3], 150 mM NaCl, and 5 mM MgCl2) with protein inhibitor mixture (Roche Applied Science,\u00a0Indianapolis, IN) and 1% Brij 96 (Sigma,\u00a0St.\u00a0Louis,\u00a0MO). Streptavidin beads (Sigma,\u00a0St.\u00a0Louis,\u00a0MO) were used to affinity purify immunocomplexes. ADGRG1-associated proteins were eluted in 2x SDS loading buffer, subjected to SDS/PAGE. The whole lane was used for MS at the Taplin Biological Mass Spectrometry at Havard Medical School. Mass spectrometry data were searched against the mouse International Protein Index (IPI mouse 339) database using the protein identification software Mascot (v2.2.04, Matrix Science,\u00a0Boston,\u00a0MA)(Luo et al., 2011).\n\n### Zebrafish stocks and rearing conditions\n\nZebrafish (Danio rerio) were maintained in the Washington University Zebrafish Consortium facility (http://zebrafish.wustl.edu/). All experiments were performed in compliance with Washington University's institutional animal protocols. Embryos were collected from pair-wise or harem matings and reared at 28.5\u00b0C in egg water (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4). All zebrafish lines used in these studies were generated in the wt (AB) background, including: gas6stl228, mpp6astl233, mpp6bstl234, plecastl261, and plecbstl236.\n\n### Zebrafish mutant generation\n\nZebrafish guide RNAs (gRNAs) were designed and generated and cas9 RNA was synthesized at the Genome Engineering and iPSC center at Washington University School of Medicine (St. Louis, MO). gRNA sequences were as follows:\n\ngas6: 5\u2019- CAGAACCCGCAGAGCCAACCAGG \u22123\u2019\n\nmpp6a: 5\u2019- GGCGGTTCAAAGTAATAACGTGG \u22123\u2019\n\nmpp6b: 5\u2019- GCAGCAGGTGTTGGATAACC \u22123\u2019\n\npleca: 5\u2019- AAAACTAGGGAATAAGACTG \u22123\u2019\n\nplecb: 5\u2019- TCCCTCCTGGAGGTCCTCTC \u22123\u2019\n\nSynthetic CRISPR guide mRNA was combined with cas9 synthetic mRNA and injected into 1 cell stage wt embryos (AB) at 100 pg quantities. To recover germ-line transmitted mutations, injected founders (F0s) were grown to adulthood, outcrossed to wt AB partners, and genomic DNA was extracted from individual F1 embryos for PCR amplification and restriction digest analysis of the targeted region. Genomic DNA from F1 embryos that showed disruption of the target site was then cloned using the TOPO TA Cloning kit (Invitrogen) and Sanger sequenced.\n\n### Zebrafish genotyping\n\nTo genotype individual larvae for phenotypic analyses, we used the following primers to amplify a 505 bp fragment of gas6 from genomic DNA: 5\u2019- CAGAAGAGCGAAAGTTTGAC \u22123\u2019 and 5\u2019- CACAGTGAACATCATCGAGT - 3\u2019. For gas6stl228/stl228, we performed restriction digest analysis using SexAI, which cleaves wt into a 219 bp and a 286 bp fragment, but is unable to cut mutant (501 bp). To amplify mpp6a, we used the following primers to amplify a 317 bp fragment from genomic DNA: 5\u2019- ACCCAGAGGCACTTGATTA \u22123\u2019 and 5\u2019- GGTTCCTTCAGGATGTTAGA - 3\u2019. For mpp6astl233/stl233, we performed restriction digest analysis using HpyCH4IV, which cleaves wt into a 93 bp and a 224 bp fragment, but is unable to cut mutant (316 bp). To amplify mpp6b, we used the following primers to amplify a 400 bp fragment from genomic DNA: 5\u2019- GGAAATGACCTCAGCAGAT \u22123\u2019 and 5\u2019- CATGCGTTTACCTCATTAGC - 3\u2019. For mpp6bstl234/stl234, we performed restriction digest analysis using BstNI, which cleaves wt into a 153 bp and a 247 bp fragment, but is unable to cut mutant (394 bp). To amplify pleca, we used the following primers to amplify a 660 bp fragment from genomic DNA: 5\u2019- GTGGCCTTACATGACATCTT \u22123\u2019 and 5\u2019- CTGAATGCTCACACAATCAC - 3\u2019. For plecastl261/stl261, we performed restriction digest analysis using DdeI, which cleaves wt into a 248 bp and a 412 bp fragment, but is unable to cut mutant (640 bp). To amplify plecb, we used the following primers to amplify a 182 bp fragment from genomic DNA: 5\u2019- ACTCATGGACTAACGTCTGC \u22123\u2019 and 5\u2019- GTTTTGACGTGGGATTAGAG - 3\u2019. For plecbstl236/stl236, we performed restriction digest analysis using Hpy188III, which cleaves wt into a 66 bp and a 103 bp fragment, but is unable to cut mutant (169 bp).\n\n### Whole mount in situ hybridization\n\nWhole-mount ISH was performed using standard protocols (Thisse and Thisse, 2008). In brief, embryos were fixed at 5 dpf in 4% PFA at 4\u00b0 C overnight, and then washed into 100% methanol for dehydration. Following dehydration, embryos were washed in 0.2% PBS-Tween (PBSTw), permeabilized in proteinase K (20 mg/\u00b5l diluted 1:1000 in 0.2% PBSTw), and incubated with a Digoxygenin-labeled riboprobe again mbp (Lyons et al., 2005) overnight at 65\u00b0 C in hybridization buffer (50% formamide). Following probe treatment, embryos were washed to remove formamide, blocked in 2% blocking medium supplemented with 10% normal sheep serum and 0.2% Triton, and incubated in primary antibody (anti-DIG, Fab fragments (1:2000), Product # 11214667001, Roche Applied Science,\u00a0Indianapolis, IN) overnight in block. Following primary antibody treatment, embryos were washed in maleic acid buffer with 0.2% triton, and developed by alkaline phosphatase treatment. After complete, embryos were post-fixed in 4% PFA and stored long-term in 70% glycerol. Embryos were mounted on slides and imaged at 10x with an AxioCam MRm on a light microscope (Zeiss Axio\u00a0Imager M2, Zeiss, San Diego, CA). Genotypes were obtained subsequent to larval analyses.\n\n### Transmission electron microscopy\n\nFor mice, postnatal male brains were fixed by perfusion followed by immersion in a mixture of 2% glutaraldehyde and 4% paraformaldehyde in 0.1M sodium cacodylate buffer, pH 7.4. After overnight fixation, brains were postfixed with 1% osmium tetroxide/1.5% potassium ferrocyanide for 1 hr, and after washing samples, were incubated in 1% aqueous uranyl acetate for 1 hr followed by subsequent dehydration in alcohol. The samples were incubated in propylene oxide for 1 hr and infiltrated overnight in a 1:1 mixture of propylene oxide and TAAB Epon (Marivac Canada Inc., St. Laurent, Canada). The next day, samples were embedded in TAAB Epon and polymerized at 60\u00b0C for 48 hr. Ultrathin sections (~60 nm) were cut on a Reichert Ultracut-S microtome, mounted on copper grids, stained with lead citrate, and examined with a JEOL 1200EX transmission electron microscope. Images were recorded with an AMT 2 k CCD camera. The photographs were analyzed using NIH\u00a0Image J Software (http://rsb.info.nih.gov/ij/) to calculate g-ratio and axon diameter. G-ratio was calculated as previously described (Roy et al., 2007).\n\n### Statistical analysis\n\nFor all studies, images were scored blinded to genotype and treatments prior to quantifications. For mouse studies, data is represented as mean\u00a0\u00b1\u00a0s.e.m and asterisks indicate significance: ***p\u22640.001; **p\u22640.01; *p\u22640.05. GRAPHPAD Prism Software (GraphPad Software, La Jolla, CA) was used to determine statistical significance between genotypes and treatments using unpaired or paired Student\u2019s t-tests, two-tailed and unequal variance depending on animals either being paired prior to data collection or not. For in vitro culture, animals were paired prior to isolation of OPCs. One-way ANOVA followed by Tukey post-hoc was used to analyze multiple treatment condition experiments. Sample size was not pre-determined by statistical methods, but was based on similar studies in the field.\n",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ed3139f8-c556-4f96-883c-361b32c4b5fe",
+      "submission_id": "4435f151-1ede-476f-9e1f-753e19792b10",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Klaus-Armin Nave, Max Planck Institute for Experimental Medicine Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33385.018](https://doi.org/10.7554/eLife.33385.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Microglial transglutaminase-2 drives myelination and myelin repair via GPR56/ADGRG1 in oligodendrocyte precursor cells\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript from Giera and colleagues describes a novel signaling pathway between microglia and oligodendrocyte lineage cells that promotes CNS myelination and remyelination. Previously, this group identified an important cell autonomous role for the adhesion G protein-coupled receptor GPR56 in oligodendrocyte development, but the relevant ligand for this receptor was unknown. In the current study, the investigators have identified one GPR56 ligand that appears to be critical and which points to a role of microglial cells in myelination control. Using the N-terminal fragment of recombinant GPR56 as a probe, the authors could label by IHC microglia in the developing white matter. By mass-spectrometry they identified as one GRP56 binding partner the protein TG2 (the product of the Tgm2 gene), a transglutaminase known to interact with GPR56 on melanoma cells. They studied Tgm2 KO mice, which are as hypomyelinated as GPR56 KO mice, with slightly fewer (proliferating) OPC, also as previously shown for GPR56 KO mice. By CRISPR mutagenesis in zebrafish, the authors then sorted out other candidates from their interaction screen.\n\nInterestingly, recombinant TG2 stimulated OPC proliferation in vitro only in the presence of laminin and the authors suggest that laminin is part of a tripartite signaling complex. The downstream signal seems to involve CDK2 and RhoA activity. Finally, the GPR56 KO mouse shows reduced recovery (myelin repair) from cuprizone and other forms of adult demyelination.\n\nOverall, the study is well done and will be of considerable interest. The identification of molecular insight into the influence of microglia on the CNS myelination process is of particular significance. Addressing the following points would make the manuscript more complete.\n\nMajor points:\n\n1) The authors test the role of TG2 in the myelination/remyelination processes using mouse models, and they use zebrafish mutants to test the remaining GPR56 candidate ligands (Table 1), none of which displayed an abnormal myelin phenotype. It would have been more thorough to include a TG2 mutant also in their zebrafish screen, which should phenocopy the GPR56 mutants and provide a positive control.\n\n2) The impression was shared by the referees that the phenotype of GPR56 and Tgm2 mutant mice is similar but not identical, which is an important issue if one wants to understand the role of GPR56 in the corresponding human leukodystrophy. Is the Tgm2 KO phenotype an arrest of development or a significant delay (same in the Cuprizone model)?\n\n3) The authors assess remyelination in their cuprizone studies using Black-Gold staining, which provides an indication that the TG2 mutants remyelinate less efficiently. Nevertheless, an EM analysis of these animals would greatly strengthen the conclusion. This is particularly important since the effects of the TG2 mutation on developmental myelination is relatively mild.\n\n4) The evidence for a \"signaling triad\" is suggestive, but not yet conclusive. If the functional \"transglutaminase\" domain of TG2 is mutated, this will likely delete the entire function of TG2. Why does that prove a direct interaction with laminin? Tgm2 can theoretically have another important target protein, and laminin could have a distinct role in driving OPC differentiation. That should be discussed.\n\n5) The authors demonstrate that recombinant TG2 added exogenously was able to enhance remyelination in the TG2 mutant slice culture experiments. Does a similar approach enhance remyelination of WT cultures? This would support a possible therapeutic benefit of enhancing GPR56 signaling. Are the microglial-ECM-OPC interactions the same in gray and white matter?\n\n6) It is a little unfortunate that we have learned little about the role of TG2 and microglia in this aspect of myelination control. Is the expression of Tgm2 developmentally regulated in microglia and is its expression affected by the demyelinating injury?\n",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8b91a27f-c76c-4437-88a6-444c06352aad",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C1",
+      "claim": "ADGRG1 (also known as GPR56) is an evolutionarily conserved regulator of OL development in humans, mice, and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The adhesion G protein-coupled receptor ADGRG1 (also known as GPR56) is an evolutionarily conserved regulator of OL development in humans, mice, and zebrafish, although its activating ligand for OL lineage cells is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing ADGRG1's role across species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "95d1c67d-3617-483b-a6d2-9ddabee19589",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C2",
+      "claim": "The activating ligand for ADGRG1 in OL lineage cells is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The adhesion G protein-coupled receptor ADGRG1 (also known as GPR56) is an evolutionarily conserved regulator of OL development in humans, mice, and zebrafish, although its activating ligand for OL lineage cells is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3326d724-eb57-4685-bded-c4e28132f468",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C3",
+      "claim": "Microglia-derived transglutaminase-2 (TG2) signals to ADGRG1 on OL precursor cells (OPCs) in the presence of the ECM protein laminin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that microglia-derived transglutaminase-2 (TG2) signals to ADGRG1 on OL precursor cells (OPCs) in the presence of the ECM protein laminin and that TG2/laminin-dependent activation of ADGRG1 promotes OPC proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "bcc7d074-835b-49b5-8162-5fde4477f5dd",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C4",
+      "claim": "TG2/laminin-dependent activation of ADGRG1 promotes OPC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that microglia-derived transglutaminase-2 (TG2) signals to ADGRG1 on OL precursor cells (OPCs) in the presence of the ECM protein laminin and that TG2/laminin-dependent activation of ADGRG1 promotes OPC proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data including in vitro proliferation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e96e2c98-5900-43f3-a8f9-7c4a1d48e381",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C5",
+      "claim": "Signaling by TG2/laminin to ADGRG1 on OPCs improves remyelination in two murine models of demyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling by TG2/laminin to ADGRG1 on OPCs additionally improves remyelination in two murine models of demyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cuprizone and LPC demyelination models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "968f97a3-0779-4eef-a09e-d17631c6e258",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C6",
+      "claim": "OPCs are abundant in the adult CNS, generating new oligodendrocytes and new myelin under conditions of myelin damage.",
+      "claim_type": "EXPLICIT",
+      "source": "OPCs are abundant in the adult CNS, generating new oligodendrocytes and new myelin under conditions of myelin damage, as is seen in demyelinating diseases and in rodent models of demyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about OPC biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "0262e186-892e-4b66-8333-86c5ab1f57fa",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C7",
+      "claim": "The regenerative capacity of OPCs after injury is poor.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the regenerative capacity of OPCs after injury is poor, necessitating further investigation into the molecular mechanisms that guide both developmental and post-injury induced OPC differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of myelin repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2c2049d9-3d58-466b-83a2-98cfc379f02e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C8",
+      "claim": "Cell-cell interactions with microglia influence OPC proliferation and maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell interactions with other glial populations, in particular microglia, influence OPC proliferation and maturation (Hagemeyer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "1e8245f6-7c9b-471c-b924-52b911cf1363",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C9",
+      "claim": "Nonspecific suppression of microglial function with minocycline leads to a reduction in the numbers of neural progenitors and OPCs during postnatal CNS development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the nonspecific suppression of microglial function with the anti-inflammatory drug minocycline leads to a reduction in the numbers of neural progenitors and OPCs during postnatal CNS development, suggesting that a cell-cell interaction is critical to the maturation of the OL-lineage (Shigemoto-Mogami et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "664b9bb9-4457-409c-9b80-a4b2016649db",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C10",
+      "claim": "Clearance of damaged myelin by microglia is necessary for OPC-dependent remyelination in toxin-induced murine models of demyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, crosstalk between OPCs and microglia has been widely reported in the context of demyelinating insults (Miron et al., 2013), including in demyelinating diseases such as toxin-induced murine models of demyelination in which clearance of damaged myelin by microglia is necessary for OPC-dependent remyelination (Kotter et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "9a2f9df3-5df6-4118-b865-120deccda59d",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C11",
+      "claim": "Most aGPCRs possess a GPCR-Autoproteolysis-INducing (GAIN) domain that mediates autoproteolytic processing during protein maturation to generate an N- and a C-terminal fragment (NTF and CTF, respectively), which remain non-covalently associated on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Most aGPCRs possess a GPCR-Autoproteolysis-INducing (GAIN) domain that mediates autoproteolytic processing during protein maturation to generate an N- and a C-terminal fragment (NTF and CTF, respectively), which remain non-covalently associated on the cell surface (Langenhan et al., 2013; Hamann et al., 2015; Langenhan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about aGPCR structure supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ffad82a0-8567-43c9-a4ab-5ff6e762198e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C12",
+      "claim": "Loss-of-function mutations in ADGRG1 cause bilateral frontoparietal polymicrogyria (BFPP), which includes CNS hypomyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in ADGRG1 cause the devastating human brain malformation called bilateral frontoparietal polymicrogyria (BFPP), which is comprised of a constellation of structural brain defects including CNS hypomyelination (Piao et al., 2004; Piao et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work on human genetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "84ec36bc-3450-49fe-b119-e97208c8a03f",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C13",
+      "claim": "Conditional deletion of Adgrg1 in OL lineage cells results in CNS hypomyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional deletion of Adgrg1 in OL lineage cells results in CNS hypomyelination, and this is specifically caused by deficiencies in ADGRG1 signaling in OPCs and immature OLs (Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "393944a1-e008-499f-b4d2-aa7d877e5074",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C14",
+      "claim": "Loss of Adgrg1 in mice and zebrafish decreases OPC proliferation, leading to a reduced number of mature myelinating OLs and fewer myelinated axons in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Adgrg1 in mice and zebrafish decreases OPC proliferation, thereby leading to a reduced number of mature myelinating OLs and fewer myelinated axons in the CNS (Ackerman et al., 2015; Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "32c28bcc-3b37-498e-bec0-7a864d3fa65c",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C15",
+      "claim": "Approximately 80% of Iba1+ microglia express putative ligand of ADGRG1 at P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses showed that ~80% Iba1 +microglia and~20% of GFAP +astrocytes express the putative ligand of ADGRG1 (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of immunohistochemistry data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "01c9d2ba-2692-4e47-ae58-4770d7dd4b8a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C16",
+      "claim": "Approximately 20% of GFAP+ astrocytes express putative ligand of ADGRG1 at P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analyses showed that ~80% Iba1 +microglia and~20% of GFAP +astrocytes express the putative ligand of ADGRG1 (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of immunohistochemistry data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "8a56ae03-d3ad-48fb-b949-16b33f1e830a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C17",
+      "claim": "No obvious putative ligand binding was detected in OPCs at P5.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed robust and consistent putative ligand detection in microglia (Figure 1B and C), while no obvious putative ligand binding was detected in OPCs and only sparse signals were observed in astrocytes (Figure 1D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "a64df80f-a859-4147-825d-6709b63b6549",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C18",
+      "claim": "TG2 is a known binding partner of ADGRG1 in melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first focused our attention on TG2 because it is a known binding partner of ADGRG1 in melanoma cells (Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "79673948-5826-4340-9b79-7c1db5331840",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C19",
+      "claim": "Tgm2 knockout mice have significantly reduced numbers of Plp+ OLs in the corpus callosum at P14 compared to littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed significantly reduced numbers of Plp+ OLs in the CC of Tgm2 knockout mice at both P14 and P28 compared to littermate controls (Figure 2A and B), with reductions in Plp+ OLs that are similar to reductions observed in Adgrg1 knockout mice (Giera et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "8aeb6eff-c967-405a-b141-a29c2583a9ed",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C20",
+      "claim": "Tgm2 knockout mice have significantly reduced numbers of Plp+ OLs in the corpus callosum at P28 compared to littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed significantly reduced numbers of Plp+ OLs in the CC of Tgm2 knockout mice at both P14 and P28 compared to littermate controls (Figure 2A and B), with reductions in Plp+ OLs that are similar to reductions observed in Adgrg1 knockout mice (Giera et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "03e9bb17-ea51-487c-a543-2a1bbf9193ca",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C21",
+      "claim": "Four- to five-month-old Tgm2 knockout mice showed normal levels of Plp+ OLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our analysis of callosal Plp+ OL density in adult Adgrg1-deficient mice (Giera et al., 2015) and consistent with a previous analysis of two-month-old Tgm2-deficient mice (Van Strien et al., 2011), four- to five-month-old Tgm2 knockout mice showed normal levels of Plp+ OLs (Figure 2\u2014figure supplement 1), indicating a gradual correction of OL numbers through adulthood.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3387306f-7635-4a2c-96c8-aa45a55026ac",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C22",
+      "claim": "P28 Tgm2-/- mice have significantly fewer myelinated axons in the corpus callosum compared to littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy of P28 CC showed significantly fewer myelinated axons in Tgm2-/- mice compared to littermate controls (Figure 2C and D), whereas myelin thickness corrected for axon caliber (g-ratio), total axon numbers, and axon diameters were comparable between the two groups of animals (Figure 2E, Figure 2-figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2040313c-7665-40f6-94e7-b3300e728b36",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C23",
+      "claim": "Myelin thickness corrected for axon caliber (g-ratio) is comparable between P28 Tgm2-/- mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy of P28 CC showed significantly fewer myelinated axons in Tgm2-/- mice compared to littermate controls (Figure 2C and D), whereas myelin thickness corrected for axon caliber (g-ratio), total axon numbers, and axon diameters were comparable between the two groups of animals (Figure 2E, Figure 2-figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 2E and Figure 2-figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "95add4a8-bbb6-461c-af6d-6ef5ad9fa012",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C24",
+      "claim": "Total axon numbers are comparable between P28 Tgm2-/- mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy of P28 CC showed significantly fewer myelinated axons in Tgm2-/- mice compared to littermate controls (Figure 2C and D), whereas myelin thickness corrected for axon caliber (g-ratio), total axon numbers, and axon diameters were comparable between the two groups of animals (Figure 2E, Figure 2-figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 2-figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "f3f130e5-a5f2-4d7f-b831-0be035d9499d",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C25",
+      "claim": "Axon diameters are comparable between P28 Tgm2-/- mice and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy of P28 CC showed significantly fewer myelinated axons in Tgm2-/- mice compared to littermate controls (Figure 2C and D), whereas myelin thickness corrected for axon caliber (g-ratio), total axon numbers, and axon diameters were comparable between the two groups of animals (Figure 2E, Figure 2-figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 2-figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "87432003-9ce1-4231-bf09-568f06981ba7",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C26",
+      "claim": "Tgm2 is primarily expressed by microglia in postnatal murine CNS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent transcriptomic studies revealed that Tgm2 is primarily expressed by microglia in postnatal murine CNS cells (Zhang et al., 2014), with expression detected in purified embryonic, early postnatal, and adult microglia (Matcovitch-Natan et al., 2016) (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior transcriptomic studies and data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ab015c6d-a802-42da-8372-8c1e1ed5d207",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C27",
+      "claim": "Western blot analysis of freshly isolated, purified murine glial cells demonstrated selective enrichment of TG2 in microglia, with no detectable TG2 protein in wildtype OPCs, OLs, astrocytes, or Tgm2-/- microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these reports, our western blot analysis of freshly isolated, purified murine glial cells demonstrated selective enrichment in microglia, with no detectable TG2 protein in wildtype OPCs, OLs, astrocytes, or Tgm2-/- microglia (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "238f4134-33d2-492f-b199-3a6aeec228d8",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C28",
+      "claim": "The numbers of Plp+ OLs in the corpus callosum of microglia-specific Tgm2 knockout mice (Tgm2fl/fl;Cx3cr1Cre+) were significantly reduced compared to littermate controls at P28.",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of Plp+ OLs in the CC of microglia-specific Tgm2 knockout mice (Tgm2fl/fl;Cx3cr1Cre+) were significantly reduced compared to littermate Tgm2fl/+;Cx3cr1Cre- controls (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ca5b35f7-80f3-44b7-9822-4ff32087640e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C29",
+      "claim": "The reduction in Plp+ OLs in microglia-specific Tgm2 knockout mice is comparable to what was observed in the constitutive Tgm2 knockout at P28.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the reduction is comparable to what was observed in the constitutive Tgm2 knockout at P28 (Figure 2A and B), supporting the hypothesis that microglia are the primary source of TG2 during OL development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of data from Figure 2G-H with Figure 2A-B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e24d0f86-68b4-467d-8c98-73ac755d65f4",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C30",
+      "claim": "Numbers of Pdgfra+ OPCs in the corpus callosum of Tgm2-/- mice were significantly reduced compared to controls at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, numbers of Pdgfra+ OPCs in the CC of Tgm2-/- mice were significantly reduced compared to controls at P14 (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ee568efb-5591-4736-aba8-27346c28af2c",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C31",
+      "claim": "Loss of Adgrg1 in the OL lineage causes premature cell cycle exit, resulting in a diminished size of Pdgfra+ OPC pools and fewer mature OLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies showed that loss of Adgrg1 in the OL lineage causes premature cell cycle exit, resulting in a diminished size of Pdgfra+ OPC pools and fewer mature OLs (Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "0a6de78d-0c38-4845-a215-8f94bfa6ca68",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C32",
+      "claim": "There are significantly fewer BrdU+/Ki67+ double positive cells in the corpus callosum of Tgm2 knockouts compared to controls at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed cell cycle exit assays (Figure 3C) and found significantly fewer BrdU+/Ki67+ double positive cells in the CC of Tgm2 knockouts compared to the controls (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3cfa14af-ffec-4e86-806e-ece9f393e37f",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C33",
+      "claim": "There is an overall reduction in BrdU+ cells in the corpus callosum of Tgm2 knockout mice compared to littermate controls at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with decreased OPC proliferation, we also observed an overall reduction in BrdU+ cells (Figure 3F) and fewer PDGFR\u03b1+/BrdU+ OPCs in Tgm2 knockout mice compared to littermate controls (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "a7d9f3c9-0fb6-4354-850d-5022c4a55c74",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C34",
+      "claim": "There are fewer PDGFR\u03b1+/BrdU+ OPCs in Tgm2 knockout mice compared to littermate controls at P14.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with decreased OPC proliferation, we also observed an overall reduction in BrdU+ cells (Figure 3F) and fewer PDGFR\u03b1+/BrdU+ OPCs in Tgm2 knockout mice compared to littermate controls (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "da28bff8-4d14-445a-a88a-781517aefe7e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C35",
+      "claim": "OPCs prematurely exit the cell cycle in the absence of TG2.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that OPCs prematurely exit the cell cycle in the absence of TG2, as we previously reported in Adgrg1-/- mice (Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cell cycle exit assay data and comparison to prior work on Adgrg1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2f005d9b-e13a-4f84-8b27-8c77c877a78a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C36",
+      "claim": "Recombinant TG2 (rTG2) failed to enhance the proliferation of wildtype OPCs grown on poly-D-lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, rTG2 failed to enhance the proliferation of wt OPCs grown on poly-D-lysine (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proliferation assay data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "afd3e90f-3408-4756-9add-c229d29d6d02",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C37",
+      "claim": "TG2 is present in the extracellular milieu and is capable of cross-linking ECM proteins, including laminin-111.",
+      "claim_type": "EXPLICIT",
+      "source": "TG2 is present in the extracellular milieu and is capable of cross-linking ECM proteins, including laminin-111 (Aeschlimann et al., 1992; Belkin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e00e518a-f342-452e-aa8c-e63fef961fd5",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C38",
+      "claim": "Laminins are broadly detected in the postnatal corpus callosum and in close proximity with OPCs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this interaction, and the observation that laminins are broadly detected in the postnatal CC and in close proximity with OPCs in vivo (Relucio et al., 2012), we tested the need for laminin-111 in promoting OPC proliferation in a ADGRG1- and TG2-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "37e9fddd-3f1e-439f-82fa-7e44ab32c165",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C39",
+      "claim": "OPC proliferation was significantly increased in the presence of both rTG2 and laminin-111, but not in cells exposed to either protein alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that OPC proliferation was significantly increased in the presence of both rTG2 and laminin-111, but not in cells exposed to either protein alone (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proliferation assay data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "d2b3f3b4-ae0b-42ac-b445-b3b8c2445854",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C40",
+      "claim": "Fibronectin did not enhance OPC proliferation in the presence of rTG2.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibronectin, another ECM protein expressed in the CNS and crosslinked by TG2 (Lorand et al., 1988), did not enhance OPC proliferation in this assay (Figure 3I), suggesting specificity for laminin-111.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proliferation assay data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "170ff11a-c420-42c2-bacb-e9c1b2826b03",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C41",
+      "claim": "TG2-induced OPC proliferation in the presence of laminin-111 required the enzymatic crosslinking activity of TG2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, TG2-induced OPC proliferation in the presence of laminin-111 required the enzymatic crosslinking activity of TG2, as transamidation-inactive TG2-W241A mutant protein (Pinkas et al., 2007) failed to promote OPC proliferation (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proliferation assay data using enzymatically dead TG2 mutant shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "aef07f42-234d-4c6a-838f-5d98dd5a17f3",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C42",
+      "claim": "rTG2 did not promote proliferation of Adgrg1-/- OPCs in the presence of laminin-111.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that TG2 regulates OPC proliferation in a ADGRG1-dependent manner, we cultured OPCs derived from P5 Adgrg1+/+ or Adgrg1-/- mice in the presence of laminin-111, with or without rTG2. rTG2 did not promote proliferation of Adgrg1-/- OPCs (Figure 3K), further supporting a ADGRG1-dependent TG2 function on OPC proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro proliferation assay data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "1cea0a54-9343-40b9-ba03-1afa7b96f95b",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C43",
+      "claim": "Cyclin-dependent kinase 2 (CDK2) regulates OPC cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclin-dependent kinase 2 (CDK2) regulates OPC cell cycle progression (Belachew et al., 2002; Jablonska et al., 2007), and we previously reported reductions in CDK2 protein levels in Adgrg1-null OPCs (Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "87773f4b-ae6f-4652-986a-99158e2dfdfd",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C44",
+      "claim": "Western blot analysis of CDK2 in acutely isolated OPCs from P6 Tgm2-/- mice showed significantly decreased levels of CDK2 protein compared to littermate controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, western blot analysis of CDK2 in acutely isolated OPCs from P6 Tgm2-/- mice showed significantly decreased levels of CDK2 protein compared to littermate controls (Figure 3L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 3L and M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3c838850-a516-4f56-b93b-47246be82a6f",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C45",
+      "claim": "RhoA is a regulator of cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional regulator of cell cycle progression is RhoA (Chircop, 2014), which was recently reported to function downstream of ADGRG1 activation in OPCs (Ackerman et al., 2015; Giera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2d4146db-f39c-493e-815f-cf81a5a48507",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C46",
+      "claim": "Active RhoA was significantly reduced in Tgm2-/- corpus callosum compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pull-down assay to specifically isolate activated RhoA in corpus callosal tissue of Tgm2-/- mice and littermate controls, we found that active RhoA was significantly reduced in Tgm2-/- CC (Figure 3N and O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RhoA pull-down assay data shown in Figure 3N and O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "c11bcc37-730f-43ed-84b5-85ec06b85c7f",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C47",
+      "claim": "Tgm2 is highly expressed in purified adult microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that Tgm2 is highly expressed in purified adult microglia, and that this expression is not diminished in a murine model of MS additionally motivated us (Wlodarczyk et al., 2017) (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work and data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "321b8643-2be4-454d-ab6a-3902ae226b3c",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C48",
+      "claim": "Tgm2 knockout mice exhibit impaired remyelination following cuprizone exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a previous report showed that Tgm2 knockout mice exhibit impaired remyelination following cuprizone exposure (Van Strien et al., 2011), leading us to hypothesize that the relevant OPC receptor for TG2 might be ADGRG1 in this remyelination model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "9c133326-d768-4b68-a945-b5d7314dabbc",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C49",
+      "claim": "Quantitative morphometry of Black-Gold-stained myelin revealed a significant decrease in remyelination at 7 and 10 days recovery in the corpus callosum of mice lacking Adgrg1 in OPCs compared with control littermates after cuprizone treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative morphometry of Black-Gold-stained myelin revealed a significant decrease in remyelination at 7 and 10 DR in the CC of mice lacking Adgrg1 in OPCs compared with control littermates (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Black-Gold myelin staining data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "a4d206d5-9d7c-4a76-b322-5ab1b80f7a11",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C50",
+      "claim": "The reduction in myelin after cuprizone treatment was accompanied by a reduction in the number of myelinating OLs in mice lacking Adgrg1 in OPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As we observed during CNS development, this reduction in myelin was accompanied by a reduction in the number of myelinating OLs (Figure 4C and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 4C and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "5c8b46a3-5e1b-4fee-a724-ab2baa604885",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C51",
+      "claim": "Mice lacking Adgrg1 in OPCs had reduced numbers of myelinating OLs in the lesion 14 days post-LPC injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In the focal de-/re-myelination model using injections of lysophosphatidylcholine (LPC) into the external capsule of the CC (Hammond et al., 2015) to create lesions, mice lacking Adgrg1 in OPCs had reduced numbers of myelinating OLs in the lesion 14 dpl (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ac0b6901-eca4-4e4d-9fa2-296bb785938c",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C52",
+      "claim": "Microglia-specific Tgm2 knockout mice had fewer myelinated axons in the lesion compared to control mice 14 days post-LPC injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the same LPC injection model, microglia-specific Tgm2 knockout mice had fewer myelinated axons in the lesion compared to control mice (Figure 4F and G), while g-ratio was unaffected (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 4F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e3187f4c-f2c0-414e-80e8-a015141bd5f3",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C53",
+      "claim": "G-ratio was unaffected in microglia-specific Tgm2 knockout mice 14 days post-LPC injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the same LPC injection model, microglia-specific Tgm2 knockout mice had fewer myelinated axons in the lesion compared to control mice (Figure 4F and G), while g-ratio was unaffected (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transmission electron microscopy data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3ec4c509-fab7-4d59-a9fc-0c3728be6d63",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C54",
+      "claim": "Remyelination was significantly impaired in cerebellar slices derived from OPC-specific Adgrg1-null mice after LPC-induced demyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Demyelination was induced by a 24 hr exposure to LPC, and after four days recovery we observed robust remyelination in wt cerebellar slices. By comparison, this remyelination was significantly impaired in cerebellar slices derived from OPC-specific Adgrg1-null mice (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by organotypic slice culture data shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ff5e9187-cb19-47be-bb76-9b3c73947f06",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C55",
+      "claim": "rTG2 increased myelination in both wildtype and Tgm2 single knockout cerebellar slices with 4 days of daily treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, rTG2 increased myelination in both wt and Tgm2 single knockout cerebellar slices with 4 days of daily treatments (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by organotypic slice culture data shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "57a2f4b3-8c75-4242-9646-d466bcd16d8e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C56",
+      "claim": "Increased remyelination by rTG2 was not observed in Tgm2/Adgrg1 double knockout slices.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, this effect appeared to be ADGRG1-dependent as increased remyelination was not observed in Tgm2/Adgrg1 double knockout slices (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by organotypic slice culture data shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "52f73360-0bcf-4381-8b9f-5cdeab5642ef",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C57",
+      "claim": "The interaction between ADGRG1 and TG2 regulates efficient remyelination following cuprizone- and LPC-mediated injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the interaction between ADGRG1 and TG2 regulates efficient remyelination following cuprizone- and LPC-mediated injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of the remyelination experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "c455abc4-9445-41d7-9e4f-c6cf872be1a5",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C58",
+      "claim": "Laminin regulates oligodendrogenesis and CNS myelination by interacting with integrins and dystroglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that laminin regulates oligodendrogenesis and CNS myelination by interacting with integrins and dystroglycan (Colognato and Tzvetanova, 2011; Colognato et al., 2004; Colognato et al., 2007; Colognato et al., 2002) and promotion of OPC proliferation in vivo (Relucio et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3f30fa80-825e-4477-bb50-cc3024ffb38a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C59",
+      "claim": "TG2 is a member of the transglutaminase protein family that functions as crosslinking enzymes to ligate proteins between the \u03b5-amino group of a lysine residue and the \u03b3-carboxamide group of a glutamine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "TG2 is a member of the transglutaminase protein family; family members including TG2 function as crosslinking enzymes to ligate proteins between the \u03b5-amino group of a lysine residue and the \u03b3-carboxamide group of a glutamine residue (Fesus and Piacentini, 2002; Lai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TG2 biochemistry supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "5e2b2ead-2f5b-4fba-851f-b90a99e4635e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C60",
+      "claim": "TG2 can be found both in the intracellular and the extracellular spaces of various types of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other members of the transglutaminase family, TG2 can be found both in the intracellular and the extracellular spaces of various types of tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TG2 localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "8787880a-4313-442e-af42-e35ea6b26479",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C61",
+      "claim": "The intracellular portion of TG2 is thought to predominantly act as a signaling molecule that requires its GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular portion of TG2 is thought to predominantly act as a signaling molecule that requires its GTPase activity (Nakaoka et al., 1994), whereas the extracellular portion of TG2 binds to proteins of the ECM and exerts its crosslinking enzymatic activity (Belkin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "c6e80044-85fc-4c36-88e2-85e2e2b33747",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C62",
+      "claim": "The extracellular portion of TG2 binds to proteins of the ECM and exerts its crosslinking enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular portion of TG2 is thought to predominantly act as a signaling molecule that requires its GTPase activity (Nakaoka et al., 1994), whereas the extracellular portion of TG2 binds to proteins of the ECM and exerts its crosslinking enzymatic activity (Belkin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "f682060f-1379-4538-be78-49c37454f535",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C63",
+      "claim": "A single missense mutation (W241A) in the catalytic core of TG2 specifically abolishes its crosslinking enzymatic activity with other functions preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "A single missense mutation (W241A) in the catalytic core of TG2 specifically abolishes its crosslinking enzymatic activity with other functions preserved (Pinkas et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2f627bdf-fd0d-48f9-b68c-b8edeb9990ad",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C64",
+      "claim": "TG2 binds laminin-111.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously reported that TG2 binds laminin-111 (Aeschlimann et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "56503479-fab3-4f89-b018-c7f6401785da",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C65",
+      "claim": "Recent reports have described differences in gene expression, morphology, and metabolism of grey and white matter microglia and OPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports have described differences in gene expression, morphology, and metabolism of grey and white matter microglia and OPCs (Hagemeyer et al., 2017; Young et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "81aff51a-0ff3-4918-abdd-937d7710563a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C66",
+      "claim": "Loss of ADGRG1 does not cause as drastic OL development phenotypes compared to loss of other receptors such as GPR17.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that loss of ADGRG1 does not cause as drastic OL development phenotypes compared to loss of other receptors such as GPR17 (Chen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "b97f0e49-129e-4983-ab37-e62edba7613e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C67",
+      "claim": "Loss-of-function mutations in ADGRG1 manifest as CNS hypomyelination in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Although perturbations to the ADGRG1-TG2 pathway had mild effects on in vitro OPC proliferation, loss-of-function mutations in ADGRG1 manifest as CNS hypomyelination in humans (Giera et al., 2015; Piao et al., 2005; Piao et al., 2004), underscoring the importance of understanding ADGRG1 function in OL lineage cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "bb9dab58-9540-4498-8edf-76ea9cec32fd",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C68",
+      "claim": "Pharmacological and biological modulators of ADGRG1 activity have recently been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological and biological modulators of ADGRG1 activity have recently been identified (Stoveken et al., 2016; Salzman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "c974886f-eb73-4727-9d50-267897736054",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C69",
+      "claim": "aGPCR ligand binding is solely mediated by its N-terminal fragment (NTF).",
+      "claim_type": "EXPLICIT",
+      "source": "aGPCR ligand binding is solely mediated by its N-terminal fragment (NTF)(Hamann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about aGPCR structure-function supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "92d840b8-e4ad-4acb-a951-206e6a0899e7",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C70",
+      "claim": "Putative ADGRG1 binding proteins were labeled in P5 mouse corpus callosum tissue using ADGRG1N-hFc probe.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish the distribution of an OPC-specific ADGRG1 ligand in the developing brain, we labeled putative ADGRG1 binding proteins in mouse corpus callosum (CC) tissue with a probe comprised of the ADGRG1 NTF fused to human immunoglobulin Fc fragment (ADGRG1N-hFc; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3d48dcc3-2c61-4f46-8f7a-275843a5af34",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C71",
+      "claim": "Robust and consistent putative ligand detection was observed in microglia at P5.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed robust and consistent putative ligand detection in microglia (Figure 1B and C), while no obvious putative ligand binding was detected in OPCs and only sparse signals were observed in astrocytes (Figure 1D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "f43c8772-292d-424b-b0d2-b47a034452cb",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C72",
+      "claim": "Only sparse putative ligand signals were observed in astrocytes at P5.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed robust and consistent putative ligand detection in microglia (Figure 1B and C), while no obvious putative ligand binding was detected in OPCs and only sparse signals were observed in astrocytes (Figure 1D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "9058966e-0237-49dd-a869-e8d4bdbb95bc",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C73",
+      "claim": "Biotinylated ADGRG1N-hFc was used to purify ADGRG1 binding partner(s) from mixed glial cell lysate enriched in microglia and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Biotinylated ADGRG1N-hFc was incubated with protein lysates isolated from cultured primary glial cells that were enriched for microglia and astrocytes, and streptavidin beads were used to capture biotinylated ADGRG1 and its glial-derived candidate binding partner(s) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach used for proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "9f92623d-e988-4132-af24-0c5c8e0414a2",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C74",
+      "claim": "Mass spectrometry identified Plectin, Transglutaminase 2, ADGRG1, Growth arrest-specific 6, and other proteins as putative ADGRG1 binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified complexes were then submitted for identification by mass spectrometry following digestion by trypsin. Proteins with more than five identified tryptic peptides from three independent experiments are listed in Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2f283f8f-d51f-4943-9edd-fba538564498",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C75",
+      "claim": "TG2 is a known binding partner of ADGRG1 in melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We first focused our attention on TG2 because it is a known binding partner of ADGRG1 in melanoma cells (Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "23d9b011-b763-4774-aed0-55b19359b109",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C76",
+      "claim": "No gene dosage effect was apparent for Tgm2, as no difference in the density of Plp+ OLs or the percentage of myelinated axons in corpus callosum was detected between Tgm2+/+ and Tgm2+/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A gene dosage effect was not apparent, as we detected no difference in the density of Plp+ OLs or the percentage of myelinated axons in CC between Tgm2+/+ and Tgm2+/- mice (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "4769122a-8ef6-4ae2-9526-d17e47be4d32",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C77",
+      "claim": "Whole mount in situ hybridization for myelin basic protein (mbp) at 5 days post-fertilization did not reveal CNS myelination phenotypes in zebrafish mutants of gas6, mpp6a, mpp6b, pleca, or plecb.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole mount in situ hybridization (WISH) for myelin basic protein (mbp) at 5 days post-fertilization did not reveal CNS myelination phenotypes in any of the putative-ligand zebrafish mutants at this stage (Figure 3\u2014figure supplement 1F\u2013O), a time point at which adgrg1 zebrafish mutants exhibit reduced mbp expression (Ackerman et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole mount in situ hybridization data shown in Figure 3\u2014figure supplement 1F-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "cc8c2e0b-7746-4b79-8c6e-73d26ce6babe",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C78",
+      "claim": "The lack of myelination phenotype in zebrafish mutants of gas6, mpp6a, mpp6b, pleca, and plecb suggested that these proteins do not function as ligands for ADGRG1 during OPC development.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of phenocopy suggested that Gas6, Mpp6, and Plectin do not function as ligands for ADGRG1 during OPC development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of phenotype in zebrafish mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "f1db038a-0b8e-4e81-a35a-a2fc1e904dbf",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C79",
+      "claim": "ADGRG1 has been reported to undergo trans-trans homophilic interactions (i.e., interactions between ADGRG1 NTFs expressed on adjacent cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ADGRG1 has been reported to undergo trans-trans homophilic interactions (i.e., interactions between ADGRG1 NTFs expressed on adjacent cells) (Paavola et al., 2011) and so it is also possible that ADGRG1N-hFc probe immunoprecipated ADGRG1 itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "38a47577-9c98-4069-8df7-23bfbe470940",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C80",
+      "claim": "TG2 can function as both GTPase intracellularly and crosslinking enzyme in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "TG2 can function as both GTPase intracellularly and crosslinking enzyme in the extracellular space (Lorand and Graham, 2003; Nakaoka et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "12b1ce44-f2c3-4caf-9de2-77c2785f4668",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C81",
+      "claim": "ADGRG1 activates RhoA to regulate OPC proliferation in a TG2-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ADGRG1 activates RhoA to regulate OPC proliferation in a TG2-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RhoA activation data in Tgm2-/- mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "a7cb9f85-f648-4e01-8e2f-ea675cf640c3",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C82",
+      "claim": "Microglial TG2 provides essential ligand activity for OPC-derived ADGRG1 during CNS myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that microglia-derived TG2 provides essential ligand activity for OPC-derived ADGRG1 during CNS myelination and that this signaling pathway is implicated in remyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "1aa3538e-fffa-4e7a-ba08-87eb587719c5",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C83",
+      "claim": "The ADGRG1-TG2 signaling pathway is implicated in remyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that microglia-derived TG2 provides essential ligand activity for OPC-derived ADGRG1 during CNS myelination and that this signaling pathway is implicated in remyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the remyelination experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "29097844-6158-4587-a6a2-5db17d9434f7",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C84",
+      "claim": "A tripartite signaling complex comprised of microglial TG2, extracellular laminin, and OPC ADGRG1 regulates OL development and myelin repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings show that the tripartite signaling complex comprised of microglial TG2, extracellular laminin, and OPC ADGRG1 regulates OL development and myelin repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "acf7f112-c789-4948-9e6b-7695661be036",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C85",
+      "claim": "TG2 interactions with ADGRG1 and laminin-111 may modulate ECM properties including stiffness, thus promoting OPC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that TG2 interactions with ADGRG1 and laminin-111 modulate ECM properties including stiffness, thus promoting OPC proliferation (Jagielska et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "24bda76f-7d43-4e4e-bf78-09bb938c3fc0",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C86",
+      "claim": "The same ADGRG1-TG2-laminin-111 signaling triad could also regulate OPC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our study results support that ADGRG1-TG2-laminin-111 promotes OPC proliferation, it is possible that the same signaling triad could also regulates OPC differentiation. This model will be a subject of future investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential additional functions of the signaling pathway.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "ac85f2ea-e46f-4f4b-bc1c-a8001b72ac95",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C87",
+      "claim": "TG2, contingent on its crosslinking activity and together with laminin-111, binds to the ADGRG1 NTF and initiates G-protein signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that TG2, contingent on its crosslinking activity and together with laminin-111, binds to the ADGRG1 NTF and initiates G-protein signaling (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic model supported by the combined experimental data and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "f6215f8d-35af-4fa2-8575-c69ec7eee968",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C88",
+      "claim": "Activation of ADGRG1 in OPCs activates the small GTPase RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ADGRG1 in OPCs activates the small GTPase RhoA, a known downstream signaling protein, and additionally promotes the accumulation of the critical pro-mitotic cell cycle regulator CDK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RhoA activation and CDK2 protein level data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2d189d72-fcff-4912-8650-6bf337cd36d7",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C89",
+      "claim": "Activation of ADGRG1 in OPCs promotes the accumulation of the critical pro-mitotic cell cycle regulator CDK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ADGRG1 in OPCs activates the small GTPase RhoA, a known downstream signaling protein, and additionally promotes the accumulation of the critical pro-mitotic cell cycle regulator CDK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the CDK2 protein level data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "00312081-2ffe-4de4-a9c8-4a5997600af5",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C90",
+      "claim": "The finding that ADGRG1 activation promotes CDK2 accumulation is novel and offers new avenues of investigation into aGPCR-dependent regulation of cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter finding is novel and offers new avenues of investigation into aGPCR-dependent regulation of cell cycle progression, a necessary step in generating OLs during myelination or remyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the novelty and significance of the CDK2 finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "8bd9fc1f-9e9e-445c-8fbf-956efe2442e3",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "claim_id": "C91",
+      "claim": "Modulating TG2 expression and/or secretion, or developing peptidomimetic drugs could represent viable therapeutic approaches in promoting remyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modulating TG2 expression and/or secretion, or developing peptidomimetic drugs could represent as viable therapeutic approaches in promoting remyelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using an ADGRG1 N-terminal fragment fusion protein (ADGRG1N-hFc) as a probe, the authors identified putative ADGRG1 ligands primarily in microglia (~80% Iba1+ cells) and to a lesser extent in astrocytes (~20% GFAP+ cells), but not in OPCs. Mass spectrometry of immunoprecipitated complexes identified TG2, Plectin, Gas6, and other proteins as candidate binding partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ligand binding approach using ADGRG1N-hFc is well-established for aGPCRs (C69). The immunohistochemistry data (C15-C17, C71-C72) with quantification (Figure 1H) clearly shows enrichment in microglia. The proteomics approach (C73-C74) is appropriately controlled and identifies multiple candidates. The convergence of tissue localization and biochemical identification provides strong support for microglial expression of ADGRG1 ligands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e157c513-fa83-40fc-ad27-0ccbcf65da91",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Constitutive Tgm2 knockout mice exhibit significantly reduced numbers of mature oligodendrocytes (Plp+ cells) and fewer myelinated axons in the corpus callosum at P14 and P28, phenocopying Adgrg1 knockout mice. However, oligodendrocyte numbers normalize by 4-5 months of age. Myelin thickness (g-ratio), total axon numbers, and axon diameters are unaffected, and there is no gene dosage effect in heterozygotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in situ hybridization (C19-C20, Figure 2A-B) and electron microscopy data (C22-C25, Figure 2C-E) are quantified with appropriate statistics showing significant reductions. The phenocopy of Adgrg1 knockout supports TG2 as a relevant ligand. The normalization in adults (C21) is consistent with compensatory mechanisms. Controls for heterozygotes (C76) strengthen the interpretation. The selective effect on oligodendrocyte numbers without affecting myelin quality or axon properties is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "acd0a27a-c4e7-451d-81ad-8f1fc9ec62a6",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microglia-specific deletion of Tgm2 using Cx3cr1-Cre results in reduced oligodendrocyte numbers comparable to constitutive knockout, demonstrating that microglia are the primary cellular source of TG2 during oligodendrocyte development. Western blot analysis confirms TG2 protein is selectively enriched in microglia and absent from OPCs, oligodendrocytes, and astrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conditional knockout experiment (C28-C29, Figure 2G-H) provides strong cell-type-specific evidence that microglial TG2 is responsible for the phenotype. The western blot data (C27, Figure 2F) directly demonstrates cell-type-specific expression. The transcriptomic data citations (C26) provide independent validation. The convergence of expression data, conditional genetics, and phenocopy establishes microglia as the relevant source.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "5742b268-727f-478f-9130-10ed142489a5",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tgm2 knockout mice show reduced OPC numbers and premature cell cycle exit, as evidenced by fewer Pdgfra+ OPCs, reduced BrdU+/Ki67+ double-positive cells, and fewer proliferating PDGFR\u03b1+/BrdU+ OPCs in the corpus callosum at P14, phenocopying the Adgrg1 knockout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell cycle exit assay (C32, Figure 3D-E) is appropriately designed with BrdU pulse-chase. Multiple proliferation markers (C30, C33-C34) converge on the same conclusion. The comparison to prior Adgrg1 work (C31, C35) strengthens the interpretation that TG2 acts through ADGRG1. Statistical significance is reported for all quantifications. The mechanistic link between reduced proliferation and fewer mature oligodendrocytes is logical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "61e74d03-9222-48d1-a04d-930a82dcfae0",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vitro, recombinant TG2 (rTG2) promotes OPC proliferation only in the presence of laminin-111, not fibronectin or poly-D-lysine alone. This effect requires TG2's enzymatic crosslinking activity (enzymatically-dead TG2-W241A mutant is inactive) and ADGRG1 on OPCs (rTG2 does not stimulate Adgrg1-/- OPCs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro proliferation assays (C36, C39-C42, Figure 3I-K) systematically test the requirements for TG2 function. The laminin-111 specificity (C39-C40) is demonstrated with appropriate ECM protein controls. The enzymatic requirement (C41) using a well-characterized mutant (C63) provides mechanistic insight. The ADGRG1-dependence (C42) directly links TG2 to the receptor. The experimental design with multiple controls and paired statistics is rigorous. However, the effect sizes appear modest (~20% increase), which should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "548dc30d-4b82-4fee-89a4-e85a349e9296",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Loss of Tgm2 results in decreased levels of the cell cycle regulator CDK2 in OPCs and reduced activation of RhoA in corpus callosum tissue, suggesting ADGRG1 activates RhoA to regulate OPC proliferation in a TG2-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The western blot data for CDK2 (C44, Figure 3L-M) and RhoA pull-down assay (C46, Figure 3N-O) are quantified with statistics. The connection to prior work on ADGRG1 signaling (C45) provides context. However, the mechanistic link between TG2/ADGRG1 and these downstream effectors is correlative rather than causally demonstrated. The inference (C81) is reasonable but would benefit from rescue experiments or direct manipulation of these pathways. The result is supported but the mechanism could be more rigorously established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "4340e617-c6ca-4176-981a-b0ef790b83b1",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Zebrafish mutants for other candidate ADGRG1 ligands identified by mass spectrometry (gas6, mpp6a, mpp6b, pleca, plecb) do not show CNS myelination defects at 5 days post-fertilization, suggesting these proteins do not function as ADGRG1 ligands during OPC development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The zebrafish genetic screen (C77, Figure 3\u2014figure supplement 1) provides negative data that helps prioritize TG2 as the relevant ligand. The CRISPR-generated mutants appear to be loss-of-function based on the molecular characterization. However, the evaluation is limited to a single developmental timepoint and uses mbp expression as the readout. Potential caveats include genetic compensation, redundancy, or later-onset phenotypes. The conclusion (C78) is appropriately cautious, stating these proteins do not function during OPC development rather than ruling them out entirely.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "OPC-specific deletion of Adgrg1 impairs remyelination in cuprizone and LPC demyelination models, with reduced myelin content and fewer oligodendrocytes. Microglia-specific Tgm2 deletion also reduces remyelination in the LPC model without affecting g-ratio, demonstrating the ADGRG1-TG2 axis is important for myelin repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The remyelination experiments use two well-established models (cuprizone and LPC) with appropriate recovery timepoints. The Black-Gold myelin staining (C49, Figure 4A-B) and oligodendrocyte counts (C50-C51) show consistent deficits. The microglia-specific Tgm2 deletion (C52-C53, Figure 4F-H) provides cell-type specificity. The g-ratio analysis (C53) indicates the deficit is in oligodendrocyte number rather than myelin quality. Statistical significance is reported throughout. The convergence of OPC-specific Adgrg1 and microglia-specific Tgm2 deletions strongly supports the biological relevance of this pathway in remyelination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "d4dbdaa6-6f96-468b-b7da-f15064f84607",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In organotypic cerebellar slice cultures, remyelination after LPC-induced demyelination is impaired in Adgrg1-null slices. Exogenous rTG2 enhances remyelination in wildtype and Tgm2-/- slices but not in Tgm2/Adgrg1 double knockout slices, demonstrating ADGRG1-dependent rescue by TG2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ex vivo slice culture system (C54-C56, Figure 5) provides a controlled environment to test TG2 function. The genetic controls (wildtype, single knockouts, double knockout) are appropriate. The ADGRG1-dependence of rTG2 rescue (C56) is the critical experiment demonstrating specificity. The quantification of myelinated axons appears rigorous. However, the manuscript does not specify whether investigators were blinded during quantification, which could introduce bias. The conclusion (C57) appropriately integrates the in vivo and ex vivo remyelination data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "c9823675-9ff3-4295-9960-22e154070e7e",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a tripartite signaling complex where microglial TG2, contingent on its crosslinking activity, binds to ADGRG1 on OPCs in the presence of extracellular laminin-111 to initiate G-protein signaling that promotes OPC proliferation during developmental myelination and myelin repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative model (C3, C4, C82, C84, C87, Figure 6) is well-supported by the collective data: (1) microglial expression of TG2, (2) genetic requirement for both TG2 and ADGRG1, (3) in vitro requirement for TG2, laminin, and enzymatic activity, (4) ADGRG1-dependent rescue by rTG2, and (5) effects in both development and repair. The model is consistent with known aGPCR biology and TG2 biochemistry. However, direct biochemical evidence for a ternary complex (TG2-laminin-ADGRG1) is not provided\u2014the model is inferred from functional data. Co-immunoprecipitation or structural studies would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "2128f0f5-0dfb-4683-b4e6-942d23b0df80",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Activation of ADGRG1 in OPCs activates RhoA and promotes accumulation of CDK2, with the authors noting that the CDK2 finding is novel for aGPCR-dependent regulation of cell cycle progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data supporting RhoA activation (C88) and CDK2 accumulation (C89) are presented in Figure 3. The novelty claim (C90) regarding CDK2 regulation by aGPCRs appears justified based on the literature context provided. However, as noted earlier, the mechanistic connection between ADGRG1 activation and these downstream effectors is correlative. The pathway from receptor activation to CDK2 accumulation is not elucidated. Additional experiments (e.g., testing if RhoA inhibition blocks CDK2 accumulation, or if CDK2 overexpression rescues proliferation defects) would strengthen the mechanistic claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "bee33eb4-d789-4d97-bb5d-04270b410230",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors establish the biological context that ADGRG1 is an evolutionarily conserved regulator of oligodendrocyte development with unknown ligand, that OPCs have poor regenerative capacity after injury, and that microglia-OPC interactions influence oligodendrocyte development and remyelination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C14) are appropriately supported by citations to prior literature. The claims about ADGRG1 function (C1, C12-C14) cite the authors' own prior work and others. The statements about OPC biology (C6-C7) and microglia-OPC interactions (C8-C10) are established knowledge. The claim that ADGRG1's ligand is unknown (C2) provides the rationale for the study. The aGPCR structural information (C11) is accurate. These claims appropriately frame the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors provide biochemical and structural context for TG2 and ADGRG1, including TG2's crosslinking activity, laminin binding, dual localization, and ADGRG1's ligand binding through its NTF and prior identification of TG2 as an ADGRG1 binding partner in melanoma cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic and structural claims (C37, C58-C64, C69, C75, C79-C80) are well-supported by citations to established literature. The information about TG2 biochemistry (C59-C63, C80) and laminin interactions (C37, C64) provides important context for interpreting the functional data. The prior identification of TG2-ADGRG1 interaction in melanoma (C18, C75) provides precedent. The aGPCR structural information (C69, C79) is accurate. These claims appropriately support the experimental design and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "25130c04-a4ca-477f-9897-99e901382e02",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss that ADGRG1 loss causes milder phenotypes than some other receptors but still manifests as CNS hypomyelination in humans, that regional differences exist in microglia and OPCs, and that ADGRG1 modulators have been identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These discussion points (C65-C68) appropriately contextualize the findings. The comparison to GPR17 (C66) acknowledges the relatively mild phenotype while the human genetics (C67) emphasizes clinical relevance. The mention of regional heterogeneity (C65) and available modulators (C68) are supported by citations and suggest future research directions. These claims provide balanced interpretation of the results' significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "7bcce9f3-df5b-4d5f-a7ad-16fc9a83cf8c",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that TG2-ADGRG1-laminin interactions may modulate ECM stiffness to promote OPC proliferation, that the same pathway might regulate OPC differentiation, and that modulating TG2 or developing peptidomimetic drugs could be therapeutic approaches for promoting remyelination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative claims (C85-C86, C91) about mechanisms and therapeutic potential. The ECM stiffness hypothesis (C85) is plausible given TG2's crosslinking activity and cited work on stiffness effects, but is not tested. The potential role in differentiation (C86) is acknowledged as future work. The therapeutic speculation (C91) is reasonable given the remyelination data but premature without additional validation. These speculations are appropriately framed as hypotheses rather than conclusions, but lack experimental support in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    },
+    {
+      "id": "38009bb7-7d76-4d75-884d-1d7edf175158",
+      "content_id": "e22b5450-c84e-49ca-a36d-e2606ccc8c56",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that signaling by TG2/laminin to ADGRG1 on OPCs improves remyelination in murine demyelination models and that the ADGRG1-TG2 signaling pathway is implicated in remyelination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C5, C83) are well-supported by the remyelination experiments in cuprizone and LPC models (C49-C53) and the ex vivo rescue experiments (C54-C56). The use of both OPC-specific Adgrg1 deletion and microglia-specific Tgm2 deletion, along with rTG2 rescue, provides strong evidence for the pathway's role in remyelination. The term 'improves' in C5 is appropriate given the rescue data. The conclusion is justified by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:41:29.747383Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32c28bcc-3b37-498e-bec0-7a864d3fa65c",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "01c9d2ba-2692-4e47-ae58-4770d7dd4b8a",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "8a56ae03-d3ad-48fb-b949-16b33f1e830a",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "92d840b8-e4ad-4acb-a951-206e6a0899e7",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "3d48dcc3-2c61-4f46-8f7a-275843a5af34",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "f43c8772-292d-424b-b0d2-b47a034452cb",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "9058966e-0237-49dd-a869-e8d4bdbb95bc",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "9f92623d-e988-4132-af24-0c5c8e0414a2",
+      "result_id": "5b4bcfa9-17dc-48bc-9457-797889d11dd3"
+    },
+    {
+      "claim_id": "a64df80f-a859-4147-825d-6709b63b6549",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "79673948-5826-4340-9b79-7c1db5331840",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "8aeb6eff-c967-405a-b141-a29c2583a9ed",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "03e9bb17-ea51-487c-a543-2a1bbf9193ca",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "3387306f-7635-4a2c-96c8-aa45a55026ac",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "2040313c-7665-40f6-94e7-b3300e728b36",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "95add4a8-bbb6-461c-af6d-6ef5ad9fa012",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "f3f130e5-a5f2-4d7f-b831-0be035d9499d",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "23d9b011-b763-4774-aed0-55b19359b109",
+      "result_id": "e157c513-fa83-40fc-ad27-0ccbcf65da91"
+    },
+    {
+      "claim_id": "87432003-9ce1-4231-bf09-568f06981ba7",
+      "result_id": "acd0a27a-c4e7-451d-81ad-8f1fc9ec62a6"
+    },
+    {
+      "claim_id": "ab015c6d-a802-42da-8372-8c1e1ed5d207",
+      "result_id": "acd0a27a-c4e7-451d-81ad-8f1fc9ec62a6"
+    },
+    {
+      "claim_id": "238f4134-33d2-492f-b199-3a6aeec228d8",
+      "result_id": "acd0a27a-c4e7-451d-81ad-8f1fc9ec62a6"
+    },
+    {
+      "claim_id": "ca5b35f7-80f3-44b7-9822-4ff32087640e",
+      "result_id": "acd0a27a-c4e7-451d-81ad-8f1fc9ec62a6"
+    },
+    {
+      "claim_id": "e24d0f86-68b4-467d-8c98-73ac755d65f4",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "ee568efb-5591-4736-aba8-27346c28af2c",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "0a6de78d-0c38-4845-a215-8f94bfa6ca68",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "3cfa14af-ffec-4e86-806e-ece9f393e37f",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "a7d9f3c9-0fb6-4354-850d-5022c4a55c74",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "da28bff8-4d14-445a-a88a-781517aefe7e",
+      "result_id": "5742b268-727f-478f-9130-10ed142489a5"
+    },
+    {
+      "claim_id": "2f005d9b-e13a-4f84-8b27-8c77c877a78a",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "afd3e90f-3408-4756-9add-c229d29d6d02",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "e00e518a-f342-452e-aa8c-e63fef961fd5",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "37e9fddd-3f1e-439f-82fa-7e44ab32c165",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "d2b3f3b4-ae0b-42ac-b445-b3b8c2445854",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "170ff11a-c420-42c2-bacb-e9c1b2826b03",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "aef07f42-234d-4c6a-838f-5d98dd5a17f3",
+      "result_id": "61e74d03-9222-48d1-a04d-930a82dcfae0"
+    },
+    {
+      "claim_id": "1cea0a54-9343-40b9-ba03-1afa7b96f95b",
+      "result_id": "548dc30d-4b82-4fee-89a4-e85a349e9296"
+    },
+    {
+      "claim_id": "87773f4b-ae6f-4652-986a-99158e2dfdfd",
+      "result_id": "548dc30d-4b82-4fee-89a4-e85a349e9296"
+    },
+    {
+      "claim_id": "3c838850-a516-4f56-b93b-47246be82a6f",
+      "result_id": "548dc30d-4b82-4fee-89a4-e85a349e9296"
+    },
+    {
+      "claim_id": "2d4146db-f39c-493e-815f-cf81a5a48507",
+      "result_id": "548dc30d-4b82-4fee-89a4-e85a349e9296"
+    },
+    {
+      "claim_id": "12b1ce44-f2c3-4caf-9de2-77c2785f4668",
+      "result_id": "548dc30d-4b82-4fee-89a4-e85a349e9296"
+    },
+    {
+      "claim_id": "4769122a-8ef6-4ae2-9526-d17e47be4d32",
+      "result_id": "4340e617-c6ca-4176-981a-b0ef790b83b1"
+    },
+    {
+      "claim_id": "cc8c2e0b-7746-4b79-8c6e-73d26ce6babe",
+      "result_id": "4340e617-c6ca-4176-981a-b0ef790b83b1"
+    },
+    {
+      "claim_id": "c11bcc37-730f-43ed-84b5-85ec06b85c7f",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "321b8643-2be4-454d-ab6a-3902ae226b3c",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "9c133326-d768-4b68-a945-b5d7314dabbc",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "a4d206d5-9d7c-4a76-b322-5ab1b80f7a11",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "5c8b46a3-5e1b-4fee-a724-ab2baa604885",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "ac0b6901-eca4-4e4d-9fa2-296bb785938c",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "e3187f4c-f2c0-414e-80e8-a015141bd5f3",
+      "result_id": "e8d8fd8d-2d68-4a82-9c73-0d7d5c41054e"
+    },
+    {
+      "claim_id": "3ec4c509-fab7-4d59-a9fc-0c3728be6d63",
+      "result_id": "d4dbdaa6-6f96-468b-b7da-f15064f84607"
+    },
+    {
+      "claim_id": "ff5e9187-cb19-47be-bb76-9b3c73947f06",
+      "result_id": "d4dbdaa6-6f96-468b-b7da-f15064f84607"
+    },
+    {
+      "claim_id": "57a2f4b3-8c75-4242-9646-d466bcd16d8e",
+      "result_id": "d4dbdaa6-6f96-468b-b7da-f15064f84607"
+    },
+    {
+      "claim_id": "52f73360-0bcf-4381-8b9f-5cdeab5642ef",
+      "result_id": "d4dbdaa6-6f96-468b-b7da-f15064f84607"
+    },
+    {
+      "claim_id": "3326d724-eb57-4685-bded-c4e28132f468",
+      "result_id": "c9823675-9ff3-4295-9960-22e154070e7e"
+    },
+    {
+      "claim_id": "bcc7d074-835b-49b5-8162-5fde4477f5dd",
+      "result_id": "c9823675-9ff3-4295-9960-22e154070e7e"
+    },
+    {
+      "claim_id": "a7cb9f85-f648-4e01-8e2f-ea675cf640c3",
+      "result_id": "c9823675-9ff3-4295-9960-22e154070e7e"
+    },
+    {
+      "claim_id": "29097844-6158-4587-a6a2-5db17d9434f7",
+      "result_id": "c9823675-9ff3-4295-9960-22e154070e7e"
+    },
+    {
+      "claim_id": "ac85f2ea-e46f-4f4b-bc1c-a8001b72ac95",
+      "result_id": "c9823675-9ff3-4295-9960-22e154070e7e"
+    },
+    {
+      "claim_id": "f6215f8d-35af-4fa2-8575-c69ec7eee968",
+      "result_id": "2128f0f5-0dfb-4683-b4e6-942d23b0df80"
+    },
+    {
+      "claim_id": "2d189d72-fcff-4912-8650-6bf337cd36d7",
+      "result_id": "2128f0f5-0dfb-4683-b4e6-942d23b0df80"
+    },
+    {
+      "claim_id": "00312081-2ffe-4de4-a9c8-4a5997600af5",
+      "result_id": "2128f0f5-0dfb-4683-b4e6-942d23b0df80"
+    },
+    {
+      "claim_id": "8b91a27f-c76c-4437-88a6-444c06352aad",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "95d1c67d-3617-483b-a6d2-9ddabee19589",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "968f97a3-0779-4eef-a09e-d17631c6e258",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "0262e186-892e-4b66-8333-86c5ab1f57fa",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "2c2049d9-3d58-466b-83a2-98cfc379f02e",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "1e8245f6-7c9b-471c-b924-52b911cf1363",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "664b9bb9-4457-409c-9b80-a4b2016649db",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "9a2f9df3-5df6-4118-b865-120deccda59d",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "ffad82a0-8567-43c9-a4ab-5ff6e762198e",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "84ec36bc-3450-49fe-b119-e97208c8a03f",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "393944a1-e008-499f-b4d2-aa7d877e5074",
+      "result_id": "bee33eb4-d789-4d97-bb5d-04270b410230"
+    },
+    {
+      "claim_id": "afd3e90f-3408-4756-9add-c229d29d6d02",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "c455abc4-9445-41d7-9e4f-c6cf872be1a5",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "3f30fa80-825e-4477-bb50-cc3024ffb38a",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "5e2b2ead-2f5b-4fba-851f-b90a99e4635e",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "8787880a-4313-442e-af42-e35ea6b26479",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "c6e80044-85fc-4c36-88e2-85e2e2b33747",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "f682060f-1379-4538-be78-49c37454f535",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "2f627bdf-fd0d-48f9-b68c-b8edeb9990ad",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "c974886f-eb73-4727-9d50-267897736054",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "2f283f8f-d51f-4943-9edd-fba538564498",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "f1db038a-0b8e-4e81-a35a-a2fc1e904dbf",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "38a47577-9c98-4069-8df7-23bfbe470940",
+      "result_id": "3811be6c-9d1e-4e8b-8565-c7a080edba8a"
+    },
+    {
+      "claim_id": "56503479-fab3-4f89-b018-c7f6401785da",
+      "result_id": "25130c04-a4ca-477f-9897-99e901382e02"
+    },
+    {
+      "claim_id": "81aff51a-0ff3-4918-abdd-937d7710563a",
+      "result_id": "25130c04-a4ca-477f-9897-99e901382e02"
+    },
+    {
+      "claim_id": "b97f0e49-129e-4983-ab37-e62edba7613e",
+      "result_id": "25130c04-a4ca-477f-9897-99e901382e02"
+    },
+    {
+      "claim_id": "bb9dab58-9540-4498-8edf-76ea9cec32fd",
+      "result_id": "25130c04-a4ca-477f-9897-99e901382e02"
+    },
+    {
+      "claim_id": "acf7f112-c789-4948-9e6b-7695661be036",
+      "result_id": "7bcce9f3-df5b-4d5f-a7ad-16fc9a83cf8c"
+    },
+    {
+      "claim_id": "24bda76f-7d43-4e4e-bf78-09bb938c3fc0",
+      "result_id": "7bcce9f3-df5b-4d5f-a7ad-16fc9a83cf8c"
+    },
+    {
+      "claim_id": "8bd9fc1f-9e9e-445c-8fbf-956efe2442e3",
+      "result_id": "7bcce9f3-df5b-4d5f-a7ad-16fc9a83cf8c"
+    },
+    {
+      "claim_id": "e96e2c98-5900-43f3-a8f9-7c4a1d48e381",
+      "result_id": "38009bb7-7d76-4d75-884d-1d7edf175158"
+    },
+    {
+      "claim_id": "1aa3538e-fffa-4e7a-ba08-87eb587719c5",
+      "result_id": "38009bb7-7d76-4d75-884d-1d7edf175158"
+    }
+  ],
+  "comparisons": []
+}

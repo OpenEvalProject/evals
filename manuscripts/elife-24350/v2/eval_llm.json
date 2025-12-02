@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A ternary lipid mixture (DOPC:DPPC:Cholesterol 1:2:1) forms phase-separated supported lipid bilayers with micrometer-sized Lo and Ld domains below ~37\u00b0C, with a 7\u00b0C shift in Tm compared to free-standing membranes due to mica support interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 collectively describe the experimental setup and characterization of phase-separated lipid bilayers. The observations are supported by TIRF microscopy data (C25, Figure 1B-E), the Tm shift is consistent with prior work on supported bilayers (C27), and the lipid composition is well-established for phase separation (C23). The experimental design and observations are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Both neutravidin and actin filaments partition into the Lo phase of phase-separated membranes, indicating that biotinylated lipid DSPE-PEG(2000)-Biotin strongly partitions to the Lo phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C31 are supported by direct microscopy observations (Figure 1B-C, Figure 2B-C) showing colocalization of labeled neutravidin and actin filaments with Lo domains. The inference that DSPE partitions to Lo phase (C29) logically follows from the experimental observations and is consistent across multiple experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C32"
+    ],
+    "result": "Medium-dense MACs cause formation of smaller lipid domains, with actin filaments acting as nucleation sites that drive lateral spatial distribution of domains during phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C32 are supported by microscopy data (Figure 2B) showing smaller domain sizes in the presence of medium-dense MACs. The conclusion that actin filaments act as nucleation sites (C32) is consistent with the observations and supported by citation to prior work (Honigmann et al., 2014). The experimental design appropriately controls for actin density effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Actin filament binding to phase-separated membranes is temperature-independent, but causes domain deformation that increases contour length over ~20 minutes to reach steady state, with final contour length increasing with temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are well-supported by quantitative time-lapse microscopy data (Figure 2C-F). The temperature-independence of actin binding (C33-C34) is demonstrated by fluorescence intensity measurements. The kinetics of domain deformation (C35-C36) and temperature dependence of final contour length (C37) are quantified with error bars and fitted to a theoretical model (Equation 1), showing good agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C70",
+      "C71"
+    ],
+    "result": "Addition of actin filaments reorganizes membrane domains, reaching a steady state where line tension and lateral crowding balance, with reorganization dependent on line tension and actin filament density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C70, and C71 describe the core finding of actin-induced domain reorganization. These are supported by multiple experimental observations across different conditions (Figures 1-2), quantitative measurements of contour length changes, and theoretical modeling (Equation 1, Figure 2E). The steady-state interpretation (C5) is supported by the kinetic data showing plateau behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Myosin-driven actomyosin contraction causes membrane domain deformation at phase boundaries within minutes, resulting in domain movement, shape changes (including inward ingression), and splitting or fusion events depending on domain type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are extensively supported by time-lapse microscopy data (Figure 3A,D,F,G and Videos 1-6). The observations are documented with multiple examples showing actomyosin cluster formation, domain deformation, and splitting/fusion events. The correlation between actomyosin movement and domain shape changes (C44) is directly visualized in the videos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "During actomyosin contraction, total Lo phase area remains constant while domain number changes (Ld domains increase via splitting in DOPC:DPPC:Cholesterol; Lo domains decrease via fusion in DOPC:PSM:Cholesterol), demonstrating active lateral reorganization across different lipid compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C51-C52 are supported by quantitative analysis (Figure 3B,E) showing constant Lo phase area but changing domain numbers over time. The observation of no decrease in total Lo area (C51) contrasts with prior work (K\u00f6ster et al., 2016) but is clearly documented. Testing two different lipid mixtures (C52) strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In lipid monolayers, actin filaments and neutravidin partition to the Le phase (opposite to bilayers), with low/medium-density MACs showing circular Lc domains and aligned actin filaments; myosin-driven contraction causes domain deformation, fusion, and stretching only in the presence of ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C58-C60 describe monolayer experiments that complement the bilayer studies. The observations are supported by confocal microscopy data (Figure 4A-D, Video 8). The opposite partitioning behavior compared to bilayers (C53-C54) is clearly documented. The ATP-dependence control (C60) is appropriate and strengthens the conclusion that effects are due to active myosin contraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Frictional forces from solid support in SLBs do not play a significant role in the observed domain reorganization phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the comparison between SLB and monolayer experiments showing similar domain reorganization effects (Figures 3-4). Since monolayers lack solid support friction but show comparable phenomena, this inference is reasonable. However, quantitative comparison of the magnitude of effects between systems would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Myosin-driven actin rearrangements actively move individual lipid domains via forces exerted at phase boundaries, causing shape changes, fusion, and splitting, providing a mechanism for lateral membrane reorganization without direct binding of membrane components to actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C72-C73, C75-C76 represent the central mechanistic conclusion. These are well-supported by extensive microscopy data (Figures 3-4, Videos 1-8) showing domain movement and deformation correlated with actomyosin activity. The proposed mechanism involving transition energy at phase boundaries (C73) is supported by theoretical considerations (C74) and experimental observations of local deformation at actin sites (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The high transition energy for lipid transfer between phases (~6-fold higher than boundary elongation energy) is the dictating driving force for phase deformation, with boundaries deforming locally at actin filament sites where actomyosin foci form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C77-C79 provide mechanistic interpretation supported by energetic calculations using literature values (C74) and experimental observations (C77). The calculation comparing transition energy to boundary elongation energy is straightforward and properly cited. The experimental observation that deformation occurs locally at actin sites (C77) supports the high transition energy mechanism over alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C69"
+    ],
+    "result": "Actin cortex remodeling may control dynamic rearrangements of membrane components without direct binding, potentially serving as a generic mechanism for cells to regulate lateral membrane organization in response to cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C63-C64, C69 represent speculative extrapolations from the in vitro findings to cellular function. While the in vitro data are solid, these claims are explicitly speculative (using 'may' and 'tempting to speculate'). The manuscript appropriately frames these as proposals rather than demonstrated facts. Direct evidence in cells would be needed to support these broader claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C61"
+    ],
+    "result": "At low/medium actin densities in monolayers, line tension energy dominates over actin wetting energy, allowing unrestricted Lc domain shapes; domain shapes appear stabilized after contraction by remaining actin filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56 and C61 are interpretations with limited direct experimental support. C56 is stated as an expectation ('we expect') without quantitative measurements of the competing energies. C61 uses tentative language ('seemed to be stabilized', 'probably') indicating uncertainty. Additional experiments measuring forces or testing predictions of this model would be needed to fully support these mechanistic interpretations.",
+    "result_type": "MINOR"
+  }
+]

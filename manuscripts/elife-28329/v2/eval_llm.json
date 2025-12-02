@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Heat stress (37\u00b0C) increases DNA circle propagation to daughter cells four-fold compared to optimal conditions (30\u00b0C, 2% glucose), while calorie restriction (0.1% glucose) has no effect. The propagation frequency at 37\u00b0C (0.17 \u00b1 0.01) is similar to that in bud6\u0394 mutant cells (0.13 \u00b1 0.01), which lack the nuclear diffusion barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide direct experimental measurements of DNA circle propagation frequencies under different conditions (Figure 1C). The four-fold increase at 37\u00b0C is statistically significant (p<0.01) and reproducible across multiple experiments. The similarity to bud6\u0394 mutant cells provides strong supporting evidence for barrier involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Heat stress shortens total anaphase duration by ~20% and specifically reduces early anaphase duration (3.4 vs 3.9 min at 30\u00b0C). Calorie restriction extends early anaphase to 5.2 min. Nuclear length increases slightly at 37\u00b0C but neck constriction is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 present direct time-lapse measurements with appropriate statistical analysis (Figure 2B, 2D). The shortened anaphase at 37\u00b0C contradicts the hypothesis that increased circle propagation results from longer anaphase, strengthening the alternative explanation that barrier weakening is responsible. Sample sizes are adequate (47-83 cells per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DNA circles exchange between mother and bud primarily during early anaphase, with propagation flux 6-8 fold higher in early versus late anaphase. Heat stress doubles the early anaphase propagation flux (0.06 vs 0.03 passages/min), while calorie restriction reduces it three-fold (0.01 passages/min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C36-C38 provide quantitative flux measurements normalized to time rather than total propagation frequency (Figure 2C, 4E). This normalization is critical for separating the effects of anaphase duration from barrier permeability. The data show that despite shorter anaphase at 37\u00b0C, the per-minute flux increases, supporting barrier weakening as the mechanism. Statistical significance is demonstrated (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "DNA circles remain attached to nuclear pore complexes (NPCs) during heat stress, with maintained correlation between circle and Nup82-GFP fluorescence intensity at both 30\u00b0C and 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by fluorescence intensity profile analysis (Figure 3). The 1.4-fold enrichment of Nup82-GFP at DNA circle locations is maintained at 37\u00b0C, ruling out circle detachment as the mechanism for increased propagation. The methodology is appropriate with adequate sample sizes (41-105 cells) and statistical validation (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Heat stress reduces nuclear membrane barrier strength by approximately half (BI = 24.6 vs 41.9 at 30\u00b0C), similar to bud6\u0394 mutants (BI = 25.3). Calorie restriction significantly strengthens the barrier (BI = 68.6). The cortical ER barrier is unaffected by these conditions, indicating specific regulation of the nuclear envelope barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present FLIP measurements with appropriate controls and statistical analysis (Figure 4D, Figure 4\u2014supplement 1). The opposite effects of heat stress and calorie restriction on barrier strength, combined with the specificity to nuclear versus cortical ER barriers, strongly support regulated modulation rather than passive physical effects. The bud6\u0394 control validates the measurement approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Constitutive activation of Pkc1 (PKC1-R398P) weakens the nuclear barrier (BI = 19.1 vs 41.9) and increases DNA circle propagation, independent of the MAP kinase cascade. Activation of Bck1 or deletion of Slt2 does not affect barrier strength, indicating Pkc1 acts through a distinct signaling branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 use genetic perturbations to dissect the signaling pathway (Figure 5B-C). The lack of effect from BCK1-20 activation (BI = 38.4) and the failure of slt2\u0394 to suppress PKC1-R398P effects (BI = 17.9) provide strong evidence for a non-canonical Pkc1 pathway. Multiple independent measurements support the conclusions, though the molecular mechanism downstream of Pkc1 remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C52"
+    ],
+    "result": "PKA and Tor1 pathways negatively regulate nuclear barrier strength. Constitutive activation of PKA (bcy1\u0394, BI = 19.9) or Tor1 (TOR1-A1957V, BI = 20.75) weakens the barrier, while Tor1 inhibition by rapamycin strengthens it (BI = 107).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C52 demonstrate consistent effects across multiple genetic and pharmacological perturbations (Figure 5D). The rapamycin dose-response and the similar barrier indices for PKA and Tor1 activation (~20) provide strong convergent evidence. However, the exact molecular targets and mechanisms remain unclear, and the claim that these are 'regulated traits' is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Calorie restriction suppresses the barrier-weakening effects of heat stress and PKC1-R398P mutation, restoring or enhancing barrier strength. Rapamycin treatment similarly rescues PKC1-R398P barrier defects (BI = 42.2). Calorie restriction also partially rescues bud6\u0394 barrier defects (BI = 57 vs 25.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 demonstrate epistatic relationships between pathways (Figure 5E). The rescue experiments are well-controlled and show that Tor1/PKA inhibition acts downstream of or parallel to Pkc1 and can overcome genetic barrier defects. The partial rescue of bud6\u0394 suggests additional regulatory mechanisms beyond the structural components. Statistical significance is demonstrated throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Calorie restriction restores DNA circle retention in heat-stressed cells (propagation frequency 0.06 vs 0.16 at 37\u00b0C in 2% glucose) and rescues the propagation defect in bud6\u0394 mutants (0.04 vs 0.12 in 2% glucose), demonstrating that barrier strengthening is sufficient to restore circle retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide the critical functional validation linking barrier strength to DNA circle retention (Figure 6). The restoration of circle retention by calorie restriction in both heat-stressed wild-type and bud6\u0394 mutant cells directly demonstrates causality. The measurements are consistent with earlier barrier strength measurements, and statistical significance is shown (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Heat stress extends median lifespan from 23 to 32.5 generations and reduces ERC accumulation 3.3-fold in aged cells. Calorie restriction at 37\u00b0C reduces lifespan back to 27 generations. Similarly, calorie restriction reduces bud6\u0394 lifespan from 39 to 28.5 generations, demonstrating that barrier weakening contributes to longevity extension under heat stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 integrate ERC measurements (Figure 7A) with replicative lifespan analysis (Figure 7B-C). The correlation between reduced ERCs, barrier weakening, and increased lifespan is consistent across conditions. The rescue of heat stress longevity by calorie restriction provides strong evidence for the proposed mechanism. However, the lifespan measurements have modest sample sizes (40-79 cells) and the ERC quantification is semi-quantitative. The conclusion (C63) is appropriately cautious ('at least in part').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Heat stress promotes longevity by relaxing DNA circle confinement through downregulation of the nuclear diffusion barrier, dependent on PKA and Tor1 pathways downstream of Pkc1. This redistribution of aging factors represents a mechanism for modulating longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 represent the main conclusions synthesizing all experimental results. The evidence chain is complete: heat stress \u2192 barrier weakening \u2192 increased circle propagation \u2192 reduced ERC accumulation \u2192 extended lifespan, with pathway dependencies established. The restoration experiments (calorie restriction rescuing both barrier function and lifespan) provide strong causal evidence. However, the mechanism is demonstrated specifically for heat stress and may not generalize to other longevity-promoting conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Barrier strength modulation is a regulated process involving specific signaling pathways (Pkc1, Tor1, PKA) rather than a direct physical consequence of temperature or nutrient availability. Pkc1 may modulate barrier strength through Tor1 and PKA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is well-supported by the specificity of effects (nuclear but not cortical ER barrier), genetic epistasis experiments, and pharmacological interventions. Claim C68 is more speculative, as the exact pathway architecture is not fully resolved. The epistasis experiments suggest Tor1/PKA act downstream, but direct biochemical evidence is lacking. The conclusion is appropriately tentative ('might modulate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Mathematical modeling predicts that >99% retention efficiency is required for wild-type aging curves, and slight reductions in retention efficiency have strong effects on longevity. The rDNA replication origin is activated in only ~60% of cell cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 cite established modeling work (Gillespie et al., 2004) to provide theoretical context for the experimental observations. These are appropriately cited as prior knowledge and help explain why the observed changes in retention (96% to 83%) have significant effects on lifespan. The claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Barrier opening and 'dumping' of aging factors to progeny is a mechanism for promoting longevity under heat stress, but not the only mechanism. Calorie restriction extends lifespan without affecting circle confinement, indicating alternative longevity mechanisms exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C79 present interpretive conclusions about mechanisms of longevity regulation. The data clearly show that barrier weakening contributes to heat stress longevity (rescue by calorie restriction), while calorie restriction itself uses a different mechanism (strengthens barrier yet extends lifespan). The conclusions are appropriately nuanced and acknowledge multiple mechanisms. The 'dumping' terminology is somewhat informal but captures the biological phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on yeast replicative aging: yeast cells age asymmetrically through budding, with mother cells accumulating aging factors including ERCs, protein aggregates, and damaged organelles. Diffusion barriers at the bud neck retain these factors in mothers. Mutants with impaired retention are long-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 establish the biological context through citations of prior work. These are accurately represented and appropriately cited. The claims provide essential background for understanding the current study but do not represent new findings. All statements are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Increased anaphase duration promotes DNA circle propagation by providing more time for diffusion from mother to bud.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 cites established knowledge (Gehlen et al., 2011) about the relationship between anaphase duration and circle propagation. This is used as a hypothesis to test in the current work, where it is ultimately shown NOT to explain the heat stress effect. The claim accurately represents prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Heat stress promotes longevity across multiple species (flies, worms, rats) and induces heat shock proteins (HSPs) that maintain proteostasis. HSP expression correlates with longevity and requires Hsp104 in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide comparative biology context through appropriate citations. These establish that heat stress longevity is conserved and typically attributed to HSP-mediated proteostasis maintenance. This context sets up the contrast with the current study's mechanism. The claims accurately represent cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Other aging factors such as protein aggregate precursors also depend on the diffusion barrier for mother cell confinement, suggesting barrier regulation may affect multiple aging factors beyond DNA circles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 cite prior work (Saarikangas et al., 2017) and extrapolate to suggest broader implications. Claim C77 is well-supported by citation. Claim C78 is appropriately speculative ('might affect') and represents a reasonable inference from the known biology, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Middle-aged mother cells cope better with heat stress than young cells. Some DNA circles and protein aggregates (e.g., Whi3 mnemons) may provide adaptive advantages under specific stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 cite prior work to support speculative discussion about potential adaptive benefits of aging factor redistribution. The citations are appropriate and the speculation is clearly framed as such. These claims provide context for interpreting why cells might regulate barrier permeability but are not central findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Diffusion barriers are conserved in metazoans, including neural stem cells where barrier strength changes during development and aging. Barrier regulation may be a conserved mechanism for modulating longevity and cell fate across organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85-C86 cite recent work showing barrier conservation (Moore et al., 2015; Lee et al., 2016). Claim C87 is highly speculative about conservation of the regulatory mechanism. While the structural conservation is established, whether the regulatory mechanism and its role in longevity are conserved is unknown. The claim is appropriately tentative ('might be') but represents significant extrapolation beyond the yeast data.",
+    "result_type": "MINOR"
+  }
+]

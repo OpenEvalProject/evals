@@ -1,0 +1,1976 @@
+{
+  "submission": {
+    "id": "5894ac0b-1202-4d94-819a-7373fc9099b7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:27:35.590892Z",
+    "updated_at": "2025-12-02T01:27:35.590892Z"
+  },
+  "content": [
+    {
+      "id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "submission_id": "5894ac0b-1202-4d94-819a-7373fc9099b7",
+      "content_type": "manuscript",
+      "content_text": "# Valid molecular dynamics simulations of human hemoglobin require a surprisingly large box size\n\n## Authors\n\n- Krystel El Hage<sup>1</sup> ([ORCID: 0000-0003-4837-3888](https://orcid.org/0000-0003-4837-3888))\n- Florent H\u00e9din<sup>1</sup> ([ORCID: 0000-0001-6341-7557](https://orcid.org/0000-0001-6341-7557))\n- Prashant K Gupta<sup>1</sup>\n- Markus Meuwly<sup>1</sup> ([ORCID: 0000-0001-7930-8806](https://orcid.org/0000-0001-7930-8806)) \u2020\n- Martin Karplus<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemistry University of Basel Basel Switzerland\n2. Department of Chemistry and Chemical Biology Harvard University, Cambridge Massachusetts United States\n3. Laboratoire de Chimie Biophysique ISIS, Universit\u00e9 de Strasbourg Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent molecular dynamics (MD) simulations of human hemoglobin (Hb) give results in disagreement with experiment. Although it is known that the unliganded (T0) and liganded (R4) tetramers are stable in solution, the published MD simulations of T0 undergo a rapid quaternary transition to an R-like structure. We show that T0 is stable only when the periodic solvent box contains ten times more water molecules than the standard size for such simulations. The results suggest that such a large box is required for the hydrophobic effect, which stabilizes the T0 tetramer, to be manifested. Even in the largest box, T0 is not stable unless His146 is protonated, providing an atomistic validation of the Perutz model. The possibility that extra large boxes are required to obtain meaningful results will have to be considered in evaluating existing and future simulations of a wide range of systems.\n\n## Introduction\n\nHuman hemoglobin is the paradigmatic model system for cooperativity in proteins. It transports oxygen from the lungs to the tissues and it is composed of two identical $\\alpha$-chains ($\\alpha1$ and $\\alpha2$) and two identical $\\beta\u2212$chains ($\\beta1$ and $\\beta2$). They form two identical dimers ($\\alpha1\\beta1$ and $\\alpha2\\beta2$), whose relative orientation differs significantly in the unliganded (T$_{0}$) and liganded (R$_{4}$) tetramer.\u00a0(Baldwin and Chothia, 1979) Although there is a vast literature on Hb and its cooperative mechanism\u00a0(Schechter, 2008), how it functions at the atomistic level is still not fully understood\u00a0(Cui and Karplus, 2008). The first insight into the mechanism was obtained from the low-resolution structures (5.5 \u00c5) of the hemoglobin tetramer\u00a0(Muirhead and Perutz, 1963), which showed that the heme groups were too distant to be able to interact directly. Monod, Wyman and Changeux formulated the allosteric (MWC) model\u00a0(Monod et al., 1965; Cui and Karplus, 2008) based on the structural transition between two quaternary structures (T and R) to explain the indirect interaction between the heme groups required for cooperative oxygen binding.\n\nHigher resolution (2.8 \u00c5) X-ray structures of unliganded and liganded hemoglobin\u00a0(Perutz, 1970) confirmed that there exist two quaternary structures (deoxy (T$_{0}$) and oxy (R$_{4}$)) for the tetramer and two tertiary structures for each individual chain (liganded and unliganded). Based on the structural results, as well as mutant data, Perutz, 1970) proposed a stereochemical mechanism for cooperativity, in which salt bridges (some with ionizable protons in the neutral pH range) provide the link between ligand-induced tertiary changes and the relative stability of the two quaternary structures. Shortly afterwards, the elements of the Perutz mechanism were incorporated into a structure-based statistical mechanical model\u00a0(Szabo and Karplus, 1972). The model provides a quantitative framework for the effects of specific tertiary structural changes induced by ligand binding on the relative stability of the T and R structures\u00a0(Szabo and Karplus, 1972; Gelin and Karplus, 1977). The shift of the equilibrium from T to R as a function of ligand concentration results in the sigmoidal (cooperative) ligand binding curve.\n\nSeveral papers using different force fields and simulation conditions have been published recently\u00a0(Hub et al., 2010; Yusuff et al., 2012) describing molecular dynamics (MD) simulations of the T and R states, including T$_{0}$ and R$_{4}$ for which 1.25 \u00c5 resolution X-ray structures are available (T$_{0}$, 2DN2; R$_{4}$, 2DN3)\u00a0(Park et al., 2006). Although R$_{4}$ was found to be stable for several hundred nanoseconds, the T$_{0}$ state was not. It was found to make a transition to an R-like state in the same time period\u00a0(see\u00a0also\u00a0Figure 1\u2014figure supplement 2). This occurs in spite of the fact that, experimentally, the T$_{0}$ state is about seven kcal/mol more stable than the R$_{0}$ state\u00a0(Edelstein, 1971), which is derived from the ratio of the dissociation constants of liganded and unliganded Hb of $6.7\\times10^{5}$\u00a0(Thomas and Edelstein, 1972).\n\nAlthough the rate of the T$_{0}$ to R$_{0}$ transition has not been measured directly, it can be estimated from the experimentally determined R$_{0}$ to T$_{0}$ transition rates and the R$_{0}$/T$_{0}$ equilibrium constant. For the unliganded hemoglobin tetramer, the R$_{0}$ to T$_{0}$ rate is about 20 $\\mu$s\u00a0(Sawicki and Gibson, 1976). With the equilibrium constant of [T$_{0}$/R$_{0}$] equal to $6.7\\times10^{5}$\u00a0(Edelstein, 1971; Thomas and Edelstein, 1972), the T$_{0}$ to R$_{0}$ rate is estimated to be on the order of seconds with the major contribution to the activation barrier arising from the equilibrium free energy difference (7 kcal/mol) between T$_{0}$ and R$_{0}$. There is, thus, a striking disagreement between the transition time observed in the simulations and the estimate from experiment.\n\n## Results and discussion\n\nThe instability of T$_{0}$ in the published simulations raises a fundamental question: What is wrong with them? In search for an answer, we focused on the hydrophobic effect\u00a0(Chothia et al., 1976; Lesk et al., 1985), which arises from the disruption of the bulk water hydrogen bond network around nonpolar groups\u00a0(Rossky et al., 1979; Cheng and Rossky, 1998). The theoretical analysis of Chandler and coworkers (Chandler, 2005; Chandler and Varilly, 2012) indicated that for large molecules, there was a \u2018dewetting\u2019 phenomenon that stabilizes a more compact structure. Chothia et al. (1976) noted that \"A larger surface area is buried in deoxy- than in methemoglobin as a result of tertiary and quaternary structure changes. [..] This implies that hydrophobicity stabilizes the deoxy structure, the free energy spent in keeping the subunits in a low-affinity conformation being compensated by hydrophobic free energy due to the smaller surface area accessible to solvent.\u2019 Such a stabilizing effect of T$_{0}$ should appear naturally in a MD simulation, but evidently did not do so in the published simulations\u00a0(Hub et al., 2010; Yusuff et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-v1.jpg)\n\n**Figure 1.:** Panel A: Overall structure of the $\\alpha1\\beta1\\alpha2\\beta2$ hemoglobin tetramer. The His146 side chains (green spheres) are specifically indicated. Panel B: Temporal change of the C$\\alpha$\u2013C$\\alpha$ distance between His146$_{\\beta1}$ and His146$_{\\beta2}$. The dashed lines (black, orange, red) indicate transition points for the 75, 90, and 120 box, respectively. Cyan and blue arrows indicate the values of the corresponding observable found for the deoxy T$_{0}$ (2DN2) and oxy R$_{4}$ (2DN3) states, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Tetrameric hemoglobin solvated in boxes of size: (from left to right) 75, 90, 120 and 150 \u00c5. Spheres correspond to Na$^{+}$ and Cl$^{\u2212}$ ions, added to neutralize the system and to achieve a biologically appropriate salt concentration of 0.15 mol/L.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Panel A: Overall structure of the $\\alpha1\\beta1\\alpha2\\beta2$ hemoglobin tetramer. The iron atoms (Fe, yellow spheres) and His146 side chains (green spheres) are specifically indicated. The angle $\\theta$ measures the angle between the two planes containing His146$_{\\beta1}$Fe$_{\\beta1}$Fe$_{\\alpha1}$ and His146$_{\\beta2}$Fe$_{\\beta2}$Fe$_{\\alpha2}$, respectively. Panel B: temporal change of (from top to bottom) the C$\\alpha$\u2013C$\\alpha$ distance between His146$_{\\beta1}$ and His146$_{\\beta2}$, the C$\\alpha$\u2013C$\\alpha$ distance between His143$_{\\beta1}$ and His143$_{\\beta2}$, C$\\alpha$ RMSD relative to the 2DN2 X-ray structure, and the angle $\\theta$. The dashed lines (black, orange, red) indicate transition points for the 75, 90, and 120 \u00c5 boxes, respectively. Cyan and blue arrows indicate the values of the corresponding observables found for the deoxy T$_{0}$ (2DN2) and oxy R$_{4}$ (2DN3) states, respectively. Top panel is also given in the main MS.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Local structural rearrangement of the C-terminus of the $\\beta$ chain.From top to bottom: the Ramachandran $\u03d5$-angle of His143, Lys144, Tyr145 and His146. Left panels report time series for $\\beta1$, and right panels those for $\\beta2$. Cyan and blue arrows indicate the corresponding values found in crystal structure of the deoxy (2DN2) and oxy (2DN3) state, respectively. Color code as in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Left: Interactions involving His146$_{\\beta}$. Right: Interactions involving His146$_{\\beta}$. From top to bottom: [a] water-mediated contact between (His146$_{\\beta}$)COO$^{\u2212}$\u2013OC(Pro37$_{\\alpha}$), [b] the salt bridge between (His146$_{\\beta}$)COO$^{\u2212}$\u2013NZ(Lys40$_{\\alpha}$), [c] the contact between (His146$_{\\beta}$)COO$^{\u2212}$\u2013NZ(Lys132$_{\\beta}$), [d] the contact between (His146$_{\\beta}$)COO$^{\u2212}$ and NE(His2$_{\\beta}$) and [e] the salt bridge between (His146$_{\\beta}$)NE2 and COO$^{\u2212}$(Asp94$_{\\beta}$). Cyan and blue arrows indicate the corresponding values found in crystal structure of the deoxy (2DN2) and oxy (2DN3) state, respectively. The dashed lines indicate breaking points along the 1$\\mu$s MD simulation and the black arrows indicates the first to break. The straight green line represents the averaged distance over 1 $\\mu$s of MD simulation for the 150 \u00c5 box as reference.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Close-up of the [600;650] and [440;520] ns interval of Figure 1\u2014figure supplement 1, illustrating the order of events for transitions in the 120 (left panel) and 90 \u00c5 box (right panel), respectively. Black arrows indicates the transmission of the structural modifications. (B) Structural details for every quantity from the 90 \u00c5 box at 10 and 800 ns, respectively. The dashed black arrow indicates the separation distance between $\\beta1$ and $\\beta2$.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Temporal structural changes of the C$\\alpha$\u2013C$\\alpha$ distance between His146$_{\\beta1}$ and His146$_{\\beta2}$ in the 75 \u00c5 box for different simulation conditions.Temporal structural changes of the C$\\alpha$\u2013C$\\alpha$ distance between His146$_{\\beta1}$ and His146$_{\\beta2}$, depending on the protonation state of His 146 in the 75 \u00c5 box with and without scaled protein-water interactions.\n\nHaving exhausted other possibilities (see Appendix for more details), we wondered whether the box size used for the MD simulations might be too small for the hydrophobic stabilization to be manifested. Because most of the simulation time is consumed by the waters, rather than the protein itself, which is of primary interest, a \u2018lore\u2019 has grown up about the minimal box size that can be used with periodic boundary conditions to carry out meaningful simulations. The standard requirement is that there must be at least five water molecules between any protein atom and the box boundary.\u00a0(Brooks et al., 1983, 2009) The box we first used was 75 \u00c5; the T$_{0}$ tetramer dimensions are approximately $54\\times49\\times50$ \u00c5, and there were 10,763 water molecules, as well as enough Na$^{+}$ and Cl$^{\u2212}$ ions to yield a 0.15 m/L molar concentration. All MD simulations were done in the $NPT$ ensemble (see SI for details).\n\nTo investigate the possibility that larger boxes were required for stabilizing T$_{0}$, we carried out 1$\\mu$s simulations with four cubic boxes, 75 \u00c5 (10,543 water molecules) 90 \u00c5 (20,756 water molecules), 120 \u00c5 (53,287) and 150 \u00c5 (105,073), see Figure 1\u2014figure supplement 1. In all these simulations, His146$_{\\beta1}$ and His146$_{\\beta2}$, which play an essential role in the Perutz model\u00a0(Perutz, 1970), were protonated. A comprehensive overview of the structural changes observed in the simulations of the four box sizes is provided in Figure 1. The essential result is that T$_{0}$ is stable for the entire simulation in the 150 \u00c5 box, while it is not in the smaller boxes (for details, see SI). Figure 2 shows the structures obtained at the end of the 1 $\\mu$s simulations, superposed on the X-ray structure that is more similar; that\u00a0is, the\u00a0oxy R$_{4}$ structure (2DN3) for the 90 and 120 \u00c5 simulations and the deoxy T$_{0}$ structure (2DN2) for the 150 \u00c5 box simulation\u00a0(see\u00a0also\u00a0Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig2-v1.jpg)\n\n**Figure 2.:** (A) Superposition of the 2DN3 structure and the Hb structure in the 90 \u00c5 box at $t=1000$ ns. (B) Superposition of the 2DN3 structure and the Hb structure in the 120 \u00c5 box at $t=1000$ ns. (C) Superposition of the 2DN2 structure and the structure in the 150 \u00c5 box at $t=1000$ ns. In each case the RMSDs (in \u00c5) to the 2DN2 and 2DN3 are also given.\n\n**Table 1.**\n C$\\alpha$ RMSD (in \u00c5) relative to the 2DN2 (T$_{0}$) and 2DN3 (R$_{4}$) X-ray structure\u00a0(Park et al., 2006) of the end point structures at 1 $\\mu$s.In bold structure to which a computed Hb structure is closest.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Structure</th>\n      <th>C\u03b1-C\u03b1 RMSD to 2DN2</th>\n      <th>C\u03b1-C\u03b1 RMSD to 2DN3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2DN2</td>\n      <td>\u2212</td>\n      <td>2.43</td>\n    </tr>\n    <tr>\n      <td>2DN3</td>\n      <td>2.43</td>\n      <td>\u2212</td>\n    </tr>\n    <tr>\n      <td>75 \u00c5 box</td>\n      <td>2.37</td>\n      <td>2.59</td>\n    </tr>\n    <tr>\n      <td>90 \u00c5 box</td>\n      <td>3.35</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>120 \u00c5 box</td>\n      <td>2.44</td>\n      <td>0.30</td>\n    </tr>\n    <tr>\n      <td>150 \u00c5 box</td>\n      <td>0.39</td>\n      <td>3.09</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig3-v1.jpg)\n\n**Figure 3.:** The average number of H-bonds per water molecule $<N_{H\u2212bonds}>$/molecule, from analyzing water-water hydrogen bonds, during 1 $\\mu$s MD simulations for all four box sizes and for three different donor-acceptor distance cutoffs: 2.8 (strong, top panels), 3.0 (medium, middle panels) and 3.3 \u00c5 (weak, bottom panels).The solid black lines are averages for time intervals corresponding to the lifetime of each state in each of the simulation boxes (see Figure 1): For the 75 \u00c5 box: 0 to 140 ns (first transition), 140 to 530 ns (second transition) and 530 to 1000 ns. For the 90 \u00c5 box: 0 to 470 ns, 470 to 780 ns and 780 to 1000 ns. For the 120 \u00c5 box: 0 to 620 ns, 620 to 920 ns, and 920 to 1000 ns. For the 150 \u00c5 box, the average is over the entire simulation since no transition occurs. The average reduction in $<N_{H\u2212bonds}>$/molecule is maximum (0.1) when weak H-bonds are included (cutoff 3.3 \u00c5, bottom row) and smallest (0.015) if only strong H-bonds (cutoff 2.8 \u00c5, top row) are analyzed. In the 120 \u00c5 box (third column) and for the strong H-bonds the loss in $<N_{H\u2212bonds}>$/molecule is insignificant but clearly increases when weak H-bonds are included. We also observe a significant decrease in the fluctuation of $<N_{H\u2212bonds}>$/molecule between simulations in the smallest and the largest box sizes and a pronounced drop in $<N_{H\u2212bonds}>$/molecule for the 75 and 90 \u00c5 boxes prior to the transitions, see insets.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Number $N$ of H-bonds and their fluctuations $\\deltaN$ for pure water and simulations including the protein for the four box sizes.Left column: Probability distribution of number of H-bonds $N$ relative to the average of the 150 \u00c5 box. Right column: probability distribution of the fluctuation $\\deltaN$ for each box individually. The left column illustrates the loss in the average number of $N$ relative to the 150 \u00c5 box for smaller box sizes. This loss increases with including medium ($d=3.0$ \u00c5) and weak ($d=3.3$ \u00c5) H-bonds. Solid lines for simulations including the protein, broken lines for pure water boxes. As can be seen (left column), for a box size of 150 \u00c5 (solid and broken green lines) the average number of Hbonds with and without protein changes only marginally, whereas for a 75 \u00c5 box these numbers (solid and broken black lines) differ considerably. Also, the $\\deltaN$ depends sensitively on the box size.\n\nIf the free energy difference between the T$_{0}$ and R$_{0}$states (7 kcal/mol, see above) were to arise entirely from the relative stability of the water-water network, this value corresponds to an energy difference of $10^{\u22124}$ kcal/mol per water molecule when comparing the 90 and 150 \u00c5 boxes, which differ by $\u224880,000$ water molecules. Such small energy differences are very difficult to capture in MD simulations and is not attempted here. However, it is interesting to note that the average number of hydrogen bonds per water molecule, $<N_{H\u2212bonds}>$/molecule (see Figure 3) shows such an effect: for the three smaller boxes the $<N_{H\u2212bonds}>$/molecule decreases by $10^{\u22123}$ to $10^{\u22124}$ with every transition. This is consistent with the estimated energy change per water molecule. Furthermore, Figure 3 demonstrates that the fluctuation of $<N_{H\u2212bonds}>$/molecule decreases with increasing box size which is the behaviour expected from statistical mechanics. It should be pointed out that the running averages were evaluated over time intervals between which transitions were observed, see Figure 1.\n\nBased on hydrodynamic arguments, Yeh and Hummer (2004) showed that the water self-diffusion coefficient, $D$, calculated from an MD simulation of pure water (without ions) in a periodic box, scales as $N^{\u22121/3}$, where $N$ is the number of particles. For the largest box they studied (40 \u00c5) the size correction was negligible. Interestingly, our simulation of the 75 \u00c5 box containing Hb yielded a value of $D$ that is much too small ($D=4.25\\times10^{\u22125}$ cm$^{2}$/s vs $D=5.95\\times10^{\u22125}$ cm$^{2}$/s); the latter is the correct value for the TIP3P water model. In Figure 4A, we show the results for the value of $D$ as a function of box size, plotted versus $1/L$ (nm$^{\u22121}$). As expected, all the pure water boxes are large enough so the calculated value agrees with the extrapolated value of Yeh and Hummer ($D=5.9\\times10^{\u22125}$cm$^{2}$/s) within statistical error. However, the calculated self-diffusion coefficient from MD simulations with Hb present, is identical to that of pure water only for the largest 150 \u00c5 box.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig4-v1.jpg)\n\n**Figure 4.:** (A) Water diffusion coefficients $D$ as a function of system size for systems with and without protein.\u00a0Also, results from Hummer et al. are shown for comparison and validation. (B) The water $D$ as a function of time for the first instability to occur. For the 75, 90, and 120 \u00c5 boxes instabilities were observed (see Figure 1) and scale linearly with the water $D$. The yellow symbol for the 150 \u00c5 box is the extrapolated value (700 ns).\n\nThe results described here suggest that the correct free energy of hemoglobin, at least to the extent that T$_{0}$ is stable relative to R$_{0}$, requires that the simulation be done in a box large enough so that the water environment behaves like bulk water. In Figure 4B, we plot the calculated $D\u2212$value for boxes containing Hb versus the time in ns when the first transition from the T$_{0}$ structure takes place. As can be seen, there is a linear relationship between the two. Of most interest is the fact that an extrapolation of the line indicates that in the 150 \u00c5 box, the first transition away from T$_{0}$ should take place at 700 ns. However, we have shown that in the 150 \u00c5 box, T$_{0}$ is still present at 1.4 $\\mu$s. This provides strong evidence that in a 150 \u00c5 box, T$_{0}$ is in fact stable. This linear dependence was not expected. It is an interesting result whose origin, though, still requires explanations at a molecular level. The result that the lifetime of the T$_{0}$ state increases systematically with the increase in box size effectively corresponds to multiple simulations. The T-state was finally found to be stable in the 150 \u00c5 box for 1.4 $\\mu$s, significantly longer than the extrapolated lifetime value (700 ns). The idea that $\\mu$s-plus simulations are needed has become a \u2018lore\u2019 (similar to the box size-related \u2018rule\u2019 investigated here) with the availability of bigger computers, even when they are not required for a particular problem, as is the case here.\n\nSimulations for all box sizes have also been done with His146 deprotonated. The results for that system showed that T$_{0}$ is stabilized in larger boxes, but after less than 100 ns a transition to an R-like state occurs. This provides direct evidence that His146 protonation is essential for stabilizing T$_{0}$, in accord with the Perutz model\u00a0(Perutz, 1970).\n\nTo relate the above results to the hydrophobic effect, we use the construct of Chandler\u00a0(Chandler, 2005), who showed (Figure 5A) that significant water depletion around a spherical hydrophobic solute is expected when its radius is larger than 1 nm (10 \u00c5). Since Hb is nearly spherical with a 2.8 nm radius, we calculated the $g(r)$ for the 90 and 150 \u00c5 box (see Figure 5B). The behavior in the 150 \u00c5 box is consistent with the expected water structuring, while for the 90 \u00c5 box it is not.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig5-v1.jpg)\n\n**Figure 5.:** (A) From Ref.\u00a0(Chandler, 2005) (Figure 3); the average equilibrium water density a distance $r+R$ from spherical cavities. $R$ is the (spherical) size of the solute. Solid lines for the ideal hydrophobe, dashed line when van der Waals interactions are present. (B) Results for Hb in water for the 90 \u00c5 (red) and 150 \u00c5 (green) box. The radius of Hb (2.8 nm) is intermediate between the two cases in panel A.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** A: From Ref.(Chandler, 2005) (Figure 3); the average equilibrium water density a distance $r+R$ from spherical cavities. $R$ is the (spherical) size of the solute and $r$ is the distance from the surface of the hydrophobe. Solid lines for the ideal hydrophobe, dashed line when van der Waals interactions are present. The radial distribution function reaches the bulk value $\u223c25$ \u00c5 away from the solute\u2019s surface. B: results for Hb in water for the 90 \u00c5 (red) and 150 \u00c5 (green) box. The radius of Hb (2.8 nm or 28 \u00c5) is intermediate between the two cases in panel A. The $r\u2212$coordinate is split in two segments the first (running from 0 to 28 \u00c5) is the region inside Hb. The second (from 0 to 45 \u00c5) is the region outside Hb. The radial distribution function reaches the bulk value $\u223c20$ \u00c5 away from the solute\u2019s surface.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Panel A: Time series for the number of water molecules in the central cylinder (see also Figure 5\u2014figure supplement 3) for 90 \u00c5 and 150 \u00c5 boxes. Panel B: radial distribution function $g(r)$ (solid lines) and $N(r)$ (dashed lines) for 90 and 150 \u00c5 boxes. The left panel shows the entire range $r$ of distances from the center of the protein and the right panel only that concerning the central cylinder. The value of $N(r=8.5)$ is 150 which is consistent with the results from explicit counting and confirms that the $g(r)$ is meaningful.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Distribution $P(N)$ of water molecules in the central cylinder for the different box sizes.Probability distribution of the number of water molecules inside Hb over 1\u00a0$\\mu$s of MD simulation depending on box size. The water count includes only waters in the central cylinder and not waters at the tetramerization interface. The region was defined as a cylinder of 8.5 \u00c5 radius and 22 \u00c5 of height and having as center the center of mass of the 4 Heme moieties.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Water at the $(\\alpha1\\beta2):(\\alpha2\\beta1)$ interface.The number of water molecules at the $(\\alpha1\\beta2):(\\alpha2\\beta1)$ interface from 1 $\\mu$s MD for the 90 \u00c5 box. (A) Time series of the $\\beta1:\\alpha2$ interface. (B) Time series of the $\\beta2:\\alpha1$ interface. (C) Illustration of the studied regions. The transitions occur at 480, 780 and 880 ns, respectively.\n\nThe full radial distribution function is reported in Figure 5\u2014figure supplement 1 and Figure 5\u2014figure supplement 2B shows the number of water molecules derived from it. It is found that up to a distance of 8.5 \u00c5 from the central cylinder $\u223c150$ water molecules are present which is consistent with explicit counting, see Figure 5\u2014figure supplement 2A, and Figure 5\u2014figure supplement 3 for the corresponding probability distribution function. Furthermore, the structural transitions are accompanied by pronounced dewetting and water penetration as shown in Figure 5\u2014figure supplement 4 for the 90 \u00c5 box.\n\nTo summarize, the T$_{0}$ state is only found to be thermodynamically stable if (i) the hydration water behaves like bulk water as judged from the self-diffusion coefficient, (ii) the number of hydrogen bonds per water molecule is large enough and its fluctuation around the average sufficiently small, see Figure 3\u2014figure supplement 1. Therefore, if water is not engaged in an adequate number of water-water H-bonds, solvent water is prone to attack the protein salt bridges, destabilizing them and eventually to break them.\n\nAs a more local measure of the effect of undersolvation the radial distribution function $g(r)$ around the (His146$_{\\beta1}$)CG\u2013O(water) was determined for all box sizes, see Figure 6. For the 150 \u00c5 box the $g(r)$ remains almost invariant whereas for the 120 \u00c5 box an appreciable change occurs during the time when the major structural transition at 920 ns takes place. For the smallest boxes, the local $g(r)$ is very variable, which supports the importance of locally structured water molecules for stabilizing the T$_{0}$ state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/35560/elife-35560-fig6-v1.jpg)\n\n**Figure 6.:** Averaged radial distribution functions $g(r)$ between His146 and water for the different box sizes and for simulation windows before, during and after the structural transitions (see Figure 1).Analysis for (A) the C-terminal (CT) of His146 and Water H (Hw) and (B) for C of His146 and water O (Ow). For the largest (150 \u00c5) box no appreciable change in $g(r)$ is found. The two peaks at 2.7 and 4.1 \u00c5 in (A) and the two peaks at 5 and 7.5 \u00c5 in (B) are due to a water network as indicated in the sketches. The sketches in A and B represent different views of the same snapshot taken from the MD simulation of the 150 \u00c5 box at $t=960$ ns and is used here as reference to describe the water network because this box represented a stable $g(r)$. Sketches in (A) emphasise the water network at the C-terminal of His146, and sketches in (B) emphasise the water network at the C$_{\\gamma}$ of His146. Waters W0, W1 and W2 are key structural waters (used as anchor) in the stability of the T state (they are framed with a black line). This network is stable for simulations in the largest box but unstable in the other boxes. His143 is singly protonated ($N\u03f5$) and His146 is doubly protonated (N$\\delta$ and N$\u03f5$).\n\nIn addition to the global behavior, local structural changes involving the two His146 residues were examined. The results (Figure 1\u2014figure supplement 3\u20135) show that for the largest box, the parameters examined (e.g. the salt bridge to Lys40, discussed by Perutz) fluctuate around the equilibrium values near those of the T$_{0}$ structure while for the smaller boxes there are abrupt changes, correlated with global structural transitions. The transition away from the T$_{0}$ structure extends over approximately 10 ns during which several important contacts are broken or formed, see Figure 1\u2014figure supplement 5A. This value suggests that the apparent activation energy from the simulations in the smaller solvent boxes is near zero, in contrast to an estimate on the order of seconds for the transition if the barrier arose from the 7 kcal/mol difference in stability.\n\nImportantly, the ability of the 150 \u00c5 box to stabilize the T-state starting from the R-like structure in the 120 \u00c5 box after 1 $\\mu$s was also explored. Solvating this structure in the 150 \u00c5 box, minimizing, heating and equilibrating it (see Materials\u00a0and\u00a0methods) and following the equilibrium dynamics for 1 $\\mu$s, the final RMSD compared to the 2DN2 (T-state) structure is 1.97 \u00c5 (2.55 compared to 2DN3 (R-state)) starting from an RMSD of 2.73 \u00c5 (with respect to 2DN2) and 1.42 \u00c5 (2DN3) at the beginning of the simulation (after heating and equilibration), respectively. Concomitantly, the His146$_{\\beta1}$\u2013His146$_{\\beta2}$ and His143$_{\\beta1}$\u2013His143$_{\\beta2}$ distances change from values typical for an R-state structure (both $\u223c12.6$ \u00c5) to 14.0 \u00c5 (for His143) and 18.0 (for His146) and approach separations indicative of a T-state structure (18.6 \u00c5 and 30.9 \u00c5) without, however, fully completing the transition to a T-state structure. As mentioned above, the R$_{0}$ to T$_{0}$ transition time is about 20 $\\mu$s, much longer than the simulation time.\n\nGiven the increasing use of molecular dynamics simulations to study conformational transitions in large proteins and in an explicit solvent environment, the present result that much larger boxes than those used standardly are required for what appears to be the hydrophobic effect to be manifested is of general interest. It has wide ranging implications for the interpretation and validity of previous simulations, as well as those to be undertaken in the future. Given that the magnitude of the effect is expected to depend on the size (and shape) of the molecule and its hydrophobicity, as well as possibly other properties\u00a0(Chandler, 2005), the requirement for the use of larger boxes in simulations will have to be investigated in each case. One particularly relevant situation where capturing the correct diffusional dynamics of the environment will play a crucial role is that in atomistic simulations for the crowded conditions\u00a0(Feig et al., 2017) that exist in entire cells or parts thereof\u00a0(Zhou et al., 2008). Possible errors in molecular dynamics simulation results for other phenomena, such as protein folding, for example, as well as for polymeric materials more generally have to be considered as well.\n\n## Materials and methods\n\nThe influence of solvent layers on the structural stability of hemoglobin tetramer is investigated using Molecular Dynamics (MD) simulations. Extended large-scale simulation were performed with the CHARMM36 all atom force-field\u00a0(Best et al., 2012) and the TIP3P water model\u00a0(Jorgensen et al., 1983) using version 5.1.4 of the GROMACS package\u00a0(Abraham et al., 2015) on GPUs.\n\nThe coordinates of the starting structure are taken from the X-ray structure of tetrameric human hemoglobin in the deoxy form, PDB code 2DN2 (1.25 \u00c5 resolution)\u00a0(Park et al., 2006). The protonation states of the histidines were based on the 2013 study of Zheng et al. and the terminal $\\beta$ histidines (His146) were both doubly protonated\u00a0(Zheng et al., 2013). The protein was solvated in four different cubic boxes of increasing size: 75, 90, 120 and 150 \u00c5. The system was neutralized by adding counter ions and the salt concentration of 0.15 m/L was achieved using Na$^{+}$ and Cl$^{\u2212}$. The total number of atoms is: 39,432 for the 75 \u00c5 box, having 10,543 water molecules and 42 Na$^{+}$ and 38 Cl$^{\u2212}$ ions; 72,142 for the 90 \u00c5 box, having 20,756 water molecules and 70 Na$^{+}$ and 66 Cl$^{\u2212}$ ions; 163,480 for the 120 \u00c5 box, having 53,287 water molecules and 160 Na$^{+}$ and 156 Cl$^{\u2212}$ ions; 318,911 for the 150 \u00c5 box, having 105,073 water molecules and 309 Na$^{+}$ and 305 Cl$^{\u2212}$ ions.\n\nFor the electrostatic interactions, particle-mesh Ewald (PME) was used with a grid spacing of 1 \u00c5, a relative tolerance of $10^{\u22126}$ and a cutoff of 10 \u00c5, together with a 10 \u00c5 switching for the Lennard-Jones (LJ) interactions. The LINCS algorithm\u00a0(Hess et al., 1997) was used for constraining bonds involving H-atoms. Each system was first energy minimized for 50,000 steps using steepest descent, heated from 0 to 300 K in increments of 10 K in $NVT$ for 300 ps, followed by 500 ps ($NVT$) and 500 ps of $NpT$ equilibration at $p=1$ atm with a time step of 2 fs. The center of mass of the protein was restrained to the center of mass of the simulation box. The Velocity Rescaling\u00a0(Bussi et al., 2007) (with $\\tau=0.1$ ps) and Parrinello-Rahman\u00a0(Parrinello and Rahman, 1981) methods were used for temperature and pressure control, respectively. The velocity rescaling method is an extension of the Berendsen thermostat to which a stochastic force chosen such as to generate a correct canonical distribution is added\u00a0(Bussi et al., 2007). The MD simulations for all systems were carried out for at least 1 $\\mu$s at constant temperature and pressure $(NpT)$ at 300 K and one atm with a time step of 2 fs and the $1\\sigma$ temperature fluctuations over the 1 $\\mu$s trajectories were 0.1 K for the 150 \u00c5 box and 0.5 K for the 90 \u00c5 box.\n\nWater self-diffusion coefficients $D$ were calculated for box sizes 75, 90, 120 and 150 \u00c5, in the presence and in the absence of Hb, over the entire 1 $\\mu$s trajectory. In the absence of the protein, the simulation boxes contained pure water systems (no ions were included). Including ions at physiological concentrations will typically change the water self-diffusion coefficient by 1% to 2%\u00a0(Kim et al., 2012). First, the mean square displacement (MSD) of all oxygen atoms from a set of initial positions was calculated using mass-weighted averages. Then, the diffusion constant was calculated from the slope of the mean-squared displacement $D_{PBC}=Lim_{t\u2192\u221e}\\frac{\u2202}{\u2202t}\\frac{\u27e8|r(t)\u2212r(0)|^{2}\u27e9}{6}$ averaged over all water molecules of a particular trajectory. Errors are estimated from the difference of the diffusion coefficients obtained from separate fits over the two halves of the fit interval.\n\nThe TIP3P self diffusion coefficient calculated in the simulation by Yeh et al. (using periodic boundary conditions) is $D_{PBC}=5.8\\times10^{\u22125}$ cm$^{2}$/s\u00a0(Yeh and Hummer, 2004). However, simulations of water at ambient conditions and a Lennard-Jones (LJ) fluid show that the diffusion coefficients depend on system size\u00a0(Allen and Tildesley, 1987). Thus, the diffusion coefficient corrected for system-size effects is $D_{0}=6.1\\times10^{\u22125}$ cm$^{2}$/s for an infinite system of TIP3P water at 298 K and ambient temperature\u00a0(Yeh and Hummer, 2004). For direct comparison of our values the error $\u03ba=L\\times(D_{0}\u2212D_{PBC})$ was subtracted from $D_{0}$. The resulting TIP3P value is $D_{0,corr}=5.95\\times10^{\u22125}$ cm$^{2}$/s.\n\nIn order to directly compare with the literature\u00a0(Yeh and Hummer, 2004) the 40 \u00c5 box was also considered here. The literature value of $D_{PBC}=5.65\\pm0.16$ ($10^{\u22125}$ cm$^{2}$/s) compares with $D_{PBC}=5.59\\pm0.013$ ($10^{\u22125}$ cm$^{2}$/s) computed here which validates the present simulations.\n",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "47f1a44e-920b-4255-b1f0-a8fdf31cf9e6",
+      "submission_id": "5894ac0b-1202-4d94-819a-7373fc9099b7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.35560.023](https://doi.org/10.7554/eLife.35560.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Valid Molecular Dynamics Simulations of Human Hemoglobin Require a Surprisingly Large Box Size\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a potentially interesting study in which the authors suggest that the stability of the T state of hemoglobin in molecular dynamics (MD) simulations depends critically on the size of the simulation box and that the T state remains stable only with a sufficiently large box containing a relatively large portion of bulk-like solvent. While this observation may bear important practical implications to MD simulation of biomolecules (and polymers in general), its statistical validity needs to be strengthened with further data, and the understanding of its origin requires further analyses.\n\nEssential revisions:\n\n1) The key observation was made based on four simulations in four different simulation boxes. Each simulation has been performed only once. Given the stochastic nature of protein conformational change in MD simulations, repeats of these simulations are essential to show that the observation is of statistical significance. Minimally, each simulation should be repeated once or twice, which should be practically manageable since each simulation is 1 microsecond long. Other simulations should be considered to help establish the key observation. For example, in the cover letter, the authors stated that they \"ran simulations starting with a partially decayed (i.e. R-state-like) structure from a 120 \u02daA3 box in the 150 \u02daA3 box and demonstrated that it progressed toward the T0 structure.\" These data would be very important, but it is not shown in the manuscript. The authors should show plots of all the distance, angles and RMSDs for this simulation so that it would be easier to assess the significance of their finding. They should also run the same system for an additional 1\u03bcs in the 120A box, to provide a fair comparison between the two. Various attempts by the authors to stabilize the T state, which is mentioned in the cover letter but largely not discussed in the main text or the supplemental information, should be reported with some details as well.\n\n2) A possible reason for the instability of the T state would be inaccuracies in the potential energy function, in particular for the Heme group. Also, the 3-point models used to describe water in the simulations are known to provide only a rather rough description of liquid water properties and there is no reason to believe that they would accurately capture the subtle balance of electrostatic and hydrophobic forces that modulate the relative stability of the T and R states. Comparison with previous works is complicated by the use of a different force-field (CHARMM36 (?), instead of the Amber and the Gromos force-fields used in previous works). These issues need to be discussed. Also, the reference for the Charmm36 force-field, which refers to paper for parametrization of the Charmm lipid force-field by mistake, needs to be corrected.\n\n3) The analyses to understand the origin of the possible phenomenon consisted of three parts, respectively concerning hydrogen bonds, diffusion, and radial distribution function of water molecules. The first two analyses showed that, with a larger simulation box, an average water molecule in the simulation increasingly takes up the bulk-water behavior. This is certainly sensible but also to be expected, as in a large box a larger portion of waters are not in the vicinity of the protein. Hemoglobin is a protein that contains a number of cavities and a water-filled channel. It is expected that water molecules in the cavities or in the channel will have a smaller diffusion coefficient and a smaller number of hydrogen bonds with respect to the bulk water. The analysis of the average water diffusion coefficient and number of hydrogen bonds as a function of box size (Figure 3 and 4) is merely showing convergence towards the bulk as the ratio between (water in cavities)/(bulk water) becomes smaller and smaller. The authors need to more clearly state their connection with the T stability of hemoglobin.\n\n4) The authors' underlying hypothesis appears to be that the deviation of water molecules in small boxes from the bulk behavior affects the magnitude of the hydrophobic effect, and that this effect differentially impacts the stability of the two states because the T state is structurally more compact and with less solvent exposed area than the R state. If so, this reasoning should be stated explicitly with necessary data.\n\n5) Figure 5A shows that the water RDF around a spherical solute approaches bulk behavior ~0.5-1 nm away from the solute, suggesting that a periodic box that is ~2 nm larger than the solute should give acceptable result. Figure 5B, however, is apparently at odds with the g(r) presented in Figure 5A, as bulk water behavior seems to be achieved only ~2.5 nm away from Hemoglobin. Figure 5\u2014figure supplement 1 presents the whole RDF profile. This RDF calculated in this manuscript appears to be wrong, as there is water in the center of Hemoglobin, so the RDF should have value close to 1 in the center. If this is a mistake, it should be corrected. Did the authors checked that at the beginning of the simulation water was actually placed in the central cavities of the protein and that this water was properly equilibrated?\n",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "922acf33-ce8d-45db-8ead-c64f4cc9faac",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C1",
+      "claim": "Recent molecular dynamics (MD) simulations of human hemoglobin give results in disagreement with experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent molecular dynamics (MD) simulations of human hemoglobin (Hb) give results in disagreement with experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a direct assertion about the state of recent MD simulations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "839e5e92-29a8-44be-91c0-f5624e40a39c",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C2",
+      "claim": "The unliganded (T0) and liganded (R4) tetramers of hemoglobin are stable in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is known that the unliganded (T0) and liganded (R4) tetramers are stable in solution, the published MD simulations of T0 undergo a rapid quaternary transition to an R-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known experimental fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "ce042359-742f-431a-84a3-acee33f03191",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C3",
+      "claim": "Published MD simulations of T0 undergo a rapid quaternary transition to an R-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is known that the unliganded (T0) and liganded (R4) tetramers are stable in solution, the published MD simulations of T0 undergo a rapid quaternary transition to an R-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from published simulations in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "8cef95d4-7c2d-4c5d-958c-410583a4a0a3",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C4",
+      "claim": "T0 is stable only when the periodic solvent box contains ten times more water molecules than the standard size for such simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that T0 is stable only when the periodic solvent box contains ten times more water molecules than the standard size for such simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract, supported by the simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "54dc90ac-747d-4323-acb2-24fe02f5ef5a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C5",
+      "claim": "A large box is required for the hydrophobic effect, which stabilizes the T0 tetramer, to be manifested.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that such a large box is required for the hydrophobic effect, which stabilizes the T0 tetramer, to be manifested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "223c986e-a7d0-4d9c-acbd-dbb616db4628",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C6",
+      "claim": "T0 is not stable unless His146 is protonated, even in the largest box.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the largest box, T0 is not stable unless His146 is protonated, providing an atomistic validation of the Perutz model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract and supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "93511796-bfb0-4122-8324-cf0fd7e0d6a2",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C7",
+      "claim": "The finding that His146 protonation is required for T0 stability provides an atomistic validation of the Perutz model.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the largest box, T0 is not stable unless His146 is protonated, providing an atomistic validation of the Perutz model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the simulation results to the Perutz model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e2c1d09b-ef54-48fd-9b40-51490385d5e3",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C8",
+      "claim": "Extra large boxes may be required to obtain meaningful results in simulations of a wide range of systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that extra large boxes are required to obtain meaningful results will have to be considered in evaluating existing and future simulations of a wide range of systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a broader implication in the abstract.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "1c71ccbe-ea10-4d92-83be-f00750b69ceb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C9",
+      "claim": "Human hemoglobin is the paradigmatic model system for cooperativity in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Human hemoglobin is the paradigmatic model system for cooperativity in proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "354c36e4-88c9-4fc4-a776-11f90f6d7c83",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C10",
+      "claim": "Hemoglobin transports oxygen from the lungs to the tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It transports oxygen from the lungs to the tissues and it is composed of two identical \u03b1-chains (\u03b11 and \u03b12) and two identical \u03b2\u2212chains (\u03b21 and \u03b22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about hemoglobin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "682e256f-b20c-451b-9c23-daa451a5ccbf",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C11",
+      "claim": "Hemoglobin is composed of two identical \u03b1-chains (\u03b11 and \u03b12) and two identical \u03b2-chains (\u03b21 and \u03b22).",
+      "claim_type": "EXPLICIT",
+      "source": "It transports oxygen from the lungs to the tissues and it is composed of two identical \u03b1-chains (\u03b11 and \u03b12) and two identical \u03b2\u2212chains (\u03b21 and \u03b22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge about hemoglobin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "50c3bf85-1c85-4348-a800-487ebae7e06c",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C12",
+      "claim": "The \u03b1 and \u03b2 chains form two identical dimers (\u03b11\u03b21 and \u03b12\u03b22).",
+      "claim_type": "EXPLICIT",
+      "source": "They form two identical dimers (\u03b11\u03b21 and \u03b12\u03b22), whose relative orientation differs significantly in the unliganded (T0) and liganded (R4) tetramer. (Baldwin and Chothia, 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "93391bda-26d6-494b-8326-f64c000230dd",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C13",
+      "claim": "The relative orientation of the dimers differs significantly in the unliganded (T0) and liganded (R4) tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "They form two identical dimers (\u03b11\u03b21 and \u03b12\u03b22), whose relative orientation differs significantly in the unliganded (T0) and liganded (R4) tetramer. (Baldwin and Chothia, 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "434958a0-d261-4aa4-a54f-e3b3e45b2bf6",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C14",
+      "claim": "How hemoglobin functions at the atomistic level is still not fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is a vast literature on Hb and its cooperative mechanism (Schechter, 2008), how it functions at the atomistic level is still not fully understood (Cui and Karplus, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "ae6adadd-5324-493d-872d-364c117ac39a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C15",
+      "claim": "The first insight into the hemoglobin mechanism was obtained from low-resolution structures (5.5 \u00c5) of the hemoglobin tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "The first insight into the mechanism was obtained from the low-resolution structures (5.5 \u00c5) of the hemoglobin tetramer (Muirhead and Perutz, 1963), which showed that the heme groups were too distant to be able to interact directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "9c7275dd-bafd-40aa-8e7d-df8183110caa",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C16",
+      "claim": "The heme groups in hemoglobin are too distant to be able to interact directly.",
+      "claim_type": "EXPLICIT",
+      "source": "The first insight into the mechanism was obtained from the low-resolution structures (5.5 \u00c5) of the hemoglobin tetramer (Muirhead and Perutz, 1963), which showed that the heme groups were too distant to be able to interact directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from structural studies with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "48ac4b83-10f5-4f71-8eb9-7f008c27f0bb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C17",
+      "claim": "Monod, Wyman and Changeux formulated the allosteric (MWC) model based on the structural transition between two quaternary structures (T and R) to explain the indirect interaction between the heme groups required for cooperative oxygen binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Monod, Wyman and Changeux formulated the allosteric (MWC) model (Monod et al., 1965; Cui and Karplus, 2008) based on the structural transition between two quaternary structures (T and R) to explain the indirect interaction between the heme groups required for cooperative oxygen binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact about the MWC model with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "d25c52c8-c3cc-4d0a-a380-855124d6c286",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C18",
+      "claim": "Higher resolution (2.8 \u00c5) X-ray structures of unliganded and liganded hemoglobin confirmed that there exist two quaternary structures (deoxy (T0) and oxy (R4)) for the tetramer and two tertiary structures for each individual chain (liganded and unliganded).",
+      "claim_type": "EXPLICIT",
+      "source": "Higher resolution (2.8 \u00c5) X-ray structures of unliganded and liganded hemoglobin (Perutz, 1970) confirmed that there exist two quaternary structures (deoxy (T0) and oxy (R4)) for the tetramer and two tertiary structures for each individual chain (liganded and unliganded).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "10fafc7e-050b-4e3c-b2c2-d6db0f6ebcad",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C19",
+      "claim": "Perutz proposed a stereochemical mechanism for cooperativity in which salt bridges (some with ionizable protons in the neutral pH range) provide the link between ligand-induced tertiary changes and the relative stability of the two quaternary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the structural results, as well as mutant data, Perutz, 1970) proposed a stereochemical mechanism for cooperativity, in which salt bridges (some with ionizable protons in the neutral pH range) provide the link between ligand-induced tertiary changes and the relative stability of the two quaternary structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact about the Perutz mechanism with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "8cd3fdf4-a0ea-4176-9031-52bbba3036e0",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C20",
+      "claim": "The elements of the Perutz mechanism were incorporated into a structure-based statistical mechanical model.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly afterwards, the elements of the Perutz mechanism were incorporated into a structure-based statistical mechanical model (Szabo and Karplus, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical fact with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "93c0c0ef-fc0d-4c31-934d-f32d226156b3",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C21",
+      "claim": "The structure-based statistical mechanical model provides a quantitative framework for the effects of specific tertiary structural changes induced by ligand binding on the relative stability of the T and R structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The model provides a quantitative framework for the effects of specific tertiary structural changes induced by ligand binding on the relative stability of the T and R structures (Szabo and Karplus, 1972; Gelin and Karplus, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the model with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "883ba07a-0c18-42f6-95a2-3df75f858f46",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C22",
+      "claim": "The shift of the equilibrium from T to R as a function of ligand concentration results in the sigmoidal (cooperative) ligand binding curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift of the equilibrium from T to R as a function of ligand concentration results in the sigmoidal (cooperative) ligand binding curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation of cooperativity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "2d37f49c-79de-4dd8-ae85-4ad77ef9be57",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C23",
+      "claim": "Several papers using different force fields and simulation conditions have been published recently describing molecular dynamics (MD) simulations of the T and R states, including T0 and R4.",
+      "claim_type": "EXPLICIT",
+      "source": "Several papers using different force fields and simulation conditions have been published recently (Hub et al., 2010; Yusuff et al., 2012) describing molecular dynamics (MD) simulations of the T and R states, including T0 and R4 for which 1.25 \u00c5 resolution X-ray structures are available (T0, 2DN2; R4, 2DN3) (Park et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a literature review with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "49d069e1-5da3-49d8-a092-15112e887585",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C24",
+      "claim": "1.25 \u00c5 resolution X-ray structures are available for T0 (2DN2) and R4 (2DN3).",
+      "claim_type": "EXPLICIT",
+      "source": "Several papers using different force fields and simulation conditions have been published recently (Hub et al., 2010; Yusuff et al., 2012) describing molecular dynamics (MD) simulations of the T and R states, including T0 and R4 for which 1.25 \u00c5 resolution X-ray structures are available (T0, 2DN2; R4, 2DN3) (Park et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural data with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "c8446d39-262b-4b29-90ba-4520f7276fa8",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C25",
+      "claim": "R4 was found to be stable for several hundred nanoseconds in published MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although R4 was found to be stable for several hundred nanoseconds, the T0 state was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from published simulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "b42cd534-1ada-48ed-93ad-6a4a2a8d0df5",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C26",
+      "claim": "The T0 state was found to make a transition to an R-like state in several hundred nanoseconds in published MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found to make a transition to an R-like state in the same time period (see also Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from published simulations and referenced to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "dda3a894-7e1d-4517-8a07-f23b87e321e6",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C29",
+      "claim": "The rate of the T0 to R0 transition has not been measured directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the rate of the T0 to R0 transition has not been measured directly, it can be estimated from the experimentally determined R0 to T0 transition rates and the R0/T0 equilibrium constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "f3f91461-1725-48dc-be5f-e063ef833534",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C30",
+      "claim": "For the unliganded hemoglobin tetramer, the R0 to T0 rate is about 20 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unliganded hemoglobin tetramer, the R0 to T0 rate is about 20 \u03bcs (Sawicki and Gibson, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as experimental data with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "75ac4dd7-cadd-4ba1-b47e-d3dee3bee0eb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C33",
+      "claim": "There is a striking disagreement between the transition time observed in the simulations and the estimate from experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, thus, a striking disagreement between the transition time observed in the simulations and the estimate from experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion comparing simulation and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "3a8bca9a-1784-4e15-8e7e-bbb6e81d1de2",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C34",
+      "claim": "The hydrophobic effect arises from the disruption of the bulk water hydrogen bond network around nonpolar groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In search for an answer, we focused on the hydrophobic effect (Chothia et al., 1976; Lesk et al., 1985), which arises from the disruption of the bulk water hydrogen bond network around nonpolar groups (Rossky et al., 1979; Cheng and Rossky, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "75c0110e-3c19-485e-a1e0-fecd0e04a611",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C35",
+      "claim": "For large molecules, there is a 'dewetting' phenomenon that stabilizes a more compact structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical analysis of Chandler and coworkers (Chandler, 2005; Chandler and Varilly, 2012) indicated that for large molecules, there was a 'dewetting' phenomenon that stabilizes a more compact structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical result with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "5e95cbe6-54f5-446e-8acf-96eb7c90b409",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C36",
+      "claim": "A larger surface area is buried in deoxy- than in methemoglobin as a result of tertiary and quaternary structure changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Chothia et al. (1976) noted that \"A larger surface area is buried in deoxy- than in methemoglobin as a result of tertiary and quaternary structure changes. [..] This implies that hydrophobicity stabilizes the deoxy structure, the free energy spent in keeping the subunits in a low-affinity conformation being compensated by hydrophobic free energy due to the smaller surface area accessible to solvent.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from Chothia et al. with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "8295c678-1c35-426a-bec0-abfa8e7c2d1e",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C37",
+      "claim": "Hydrophobicity stabilizes the deoxy structure, the free energy spent in keeping the subunits in a low-affinity conformation being compensated by hydrophobic free energy due to the smaller surface area accessible to solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Chothia et al. (1976) noted that \"A larger surface area is buried in deoxy- than in methemoglobin as a result of tertiary and quaternary structure changes. [..] This implies that hydrophobicity stabilizes the deoxy structure, the free energy spent in keeping the subunits in a low-affinity conformation being compensated by hydrophobic free energy due to the smaller surface area accessible to solvent.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation from Chothia et al. with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "ded5ca9b-4de6-4f6f-a66f-1eabc10c7692",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C38",
+      "claim": "Such a stabilizing effect of T0 should appear naturally in a MD simulation, but evidently did not do so in the published simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a stabilizing effect of T0 should appear naturally in a MD simulation, but evidently did not do so in the published simulations (Hub et al., 2010; Yusuff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about published simulations with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "9693c6b0-8970-42f3-a61b-30a70c3337e3",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C39",
+      "claim": "The standard box used was 75 \u00c5 with 10,763 water molecules, as well as enough Na+ and Cl\u2212 ions to yield a 0.15 m/L molar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The box we first used was 75 \u00c5; the T0 tetramer dimensions are approximately 54\u00d749\u00d750 \u00c5, and there were 10,763 water molecules, as well as enough Na+ and Cl\u2212 ions to yield a 0.15 m/L molar concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "350b3107-5ab4-46bb-a414-b559c6cb1235",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C40",
+      "claim": "The T0 tetramer dimensions are approximately 54\u00d749\u00d750 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The box we first used was 75 \u00c5; the T0 tetramer dimensions are approximately 54\u00d749\u00d750 \u00c5, and there were 10,763 water molecules, as well as enough Na+ and Cl\u2212 ions to yield a 0.15 m/L molar concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "40de0f6e-aacf-4b97-ac5f-5d967a0c5082",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C41",
+      "claim": "All MD simulations were done in the NPT ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "All MD simulations were done in the NPT ensemble (see SI for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "5d3fc4c9-5178-47cb-94dc-bb18f7fb4838",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C42",
+      "claim": "1 \u03bcs simulations were carried out with four cubic boxes: 75 \u00c5 (10,543 water molecules), 90 \u00c5 (20,756 water molecules), 120 \u00c5 (53,287 water molecules), and 150 \u00c5 (105,073 water molecules).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the possibility that larger boxes were required for stabilizing T0, we carried out 1\u03bcs simulations with four cubic boxes, 75 \u00c5 (10,543 water molecules) 90 \u00c5 (20,756 water molecules), 120 \u00c5 (53,287) and 150 \u00c5 (105,073), see Figure 1\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a description of the simulation setup with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "7621dc46-20d8-407c-8bc2-6719b2957ba7",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C43",
+      "claim": "In all simulations with different box sizes, His146\u03b21 and His146\u03b22 were protonated.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these simulations, His146\u03b21 and His146\u03b22, which play an essential role in the Perutz model (Perutz, 1970), were protonated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a94ebf19-21a0-409e-bf38-5b46ece298c1",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C44",
+      "claim": "His146\u03b21 and His146\u03b22 play an essential role in the Perutz model.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these simulations, His146\u03b21 and His146\u03b22, which play an essential role in the Perutz model (Perutz, 1970), were protonated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "b553a678-3c13-410a-890e-7bd019827af0",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C45",
+      "claim": "T0 is stable for the entire simulation in the 150 \u00c5 box.",
+      "claim_type": "EXPLICIT",
+      "source": "The essential result is that T0 is stable for the entire simulation in the 150 \u00c5 box, while it is not in the smaller boxes (for details, see SI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the main finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "22e39f66-7ae4-4c3f-bf1e-8d36e6c25d17",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C46",
+      "claim": "T0 is not stable in the smaller boxes (75, 90, and 120 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The essential result is that T0 is stable for the entire simulation in the 150 \u00c5 box, while it is not in the smaller boxes (for details, see SI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "621e77d0-b3cc-4f06-a281-2e7b736e3b2b",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C47",
+      "claim": "The structure at the end of the 90 \u00c5 box simulation is more similar to the oxy R4 structure (2DN3) than to the deoxy T0 structure (2DN2).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows the structures obtained at the end of the 1 \u03bcs simulations, superposed on the X-ray structure that is more similar; that is, the oxy R4 structure (2DN3) for the 90 and 120 \u00c5 simulations and the deoxy T0 structure (2DN2) for the 150 \u00c5 box simulation (see also Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result with reference to a figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "39334015-a84a-4331-a3da-512495735dd9",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C48",
+      "claim": "The structure at the end of the 120 \u00c5 box simulation is more similar to the oxy R4 structure (2DN3) than to the deoxy T0 structure (2DN2).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows the structures obtained at the end of the 1 \u03bcs simulations, superposed on the X-ray structure that is more similar; that is, the oxy R4 structure (2DN3) for the 90 and 120 \u00c5 simulations and the deoxy T0 structure (2DN2) for the 150 \u00c5 box simulation (see also Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result with reference to a figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a1bc21d4-870d-4d75-87fb-51e3a0c01e04",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C49",
+      "claim": "The structure at the end of the 150 \u00c5 box simulation is more similar to the deoxy T0 structure (2DN2) than to the oxy R4 structure (2DN3).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows the structures obtained at the end of the 1 \u03bcs simulations, superposed on the X-ray structure that is more similar; that is, the oxy R4 structure (2DN3) for the 90 and 120 \u00c5 simulations and the deoxy T0 structure (2DN2) for the 150 \u00c5 box simulation (see also Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result with reference to a figure and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "512fea8a-429b-4821-8e48-71f12021d8d8",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C52",
+      "claim": "Such small energy differences (10^-4 kcal/mol per water molecule) are very difficult to capture in MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such small energy differences are very difficult to capture in MD simulations and is not attempted here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of MD simulations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e06316b3-9e16-46e6-ab80-7442b5618936",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C54",
+      "claim": "The decrease in average number of hydrogen bonds per water molecule is consistent with the estimated energy change per water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the estimated energy change per water molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "36fc3323-add8-43f4-bc03-c2beac81b8d9",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C55",
+      "claim": "The fluctuation of <NH\u2212bonds>/molecule decreases with increasing box size.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Figure 3 demonstrates that the fluctuation of <NH\u2212bonds>/molecule decreases with increasing box size which is the behaviour expected from statistical mechanics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "79ea9d30-2acf-4898-9c33-f47f12cb0066",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C56",
+      "claim": "The decrease in fluctuation of <NH\u2212bonds>/molecule with increasing box size is the behavior expected from statistical mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Figure 3 demonstrates that the fluctuation of <NH\u2212bonds>/molecule decreases with increasing box size which is the behaviour expected from statistical mechanics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation connecting the observation to statistical mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "6db79961-00ee-4685-9dc5-017067616659",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C57",
+      "claim": "The running averages of <NH\u2212bonds>/molecule were evaluated over time intervals between which transitions were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out that the running averages were evaluated over time intervals between which transitions were observed, see Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological detail with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "5d40dd50-ecb3-4846-92d4-fc93bc7b62fa",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C59",
+      "claim": "For the largest box studied by Yeh and Hummer (40 \u00c5) the size correction was negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "For the largest box they studied (40 \u00c5) the size correction was negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from Yeh and Hummer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "73c893c9-f286-4013-b12c-b5f977a8e64c",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C63",
+      "claim": "The calculated self-diffusion coefficient from MD simulations with Hb present is identical to that of pure water only for the largest 150 \u00c5 box.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the calculated self-diffusion coefficient from MD simulations with Hb present, is identical to that of pure water only for the largest 150 \u00c5 box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e09fa1e2-9531-4628-9a36-740dc92133a8",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C64",
+      "claim": "There is a linear relationship between the calculated D-value for boxes containing Hb and the time in ns when the first transition from the T0 structure takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4B, we plot the calculated D\u2212value for boxes containing Hb versus the time in ns when the first transition from the T0 structure takes place. As can be seen, there is a linear relationship between the two.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "dceb913b-0b28-42f5-984b-c4e9d6b193ad",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C65",
+      "claim": "An extrapolation of the line relating D-value to transition time indicates that in the 150 \u00c5 box, the first transition away from T0 should take place at 700 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Of most interest is the fact that an extrapolation of the line indicates that in the 150 \u00c5 box, the first transition away from T0 should take place at 700 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the linear relationship.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "62537211-8396-4826-b225-fc9a3215065f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C66",
+      "claim": "In the 150 \u00c5 box, T0 is still present at 1.4 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have shown that in the 150 \u00c5 box, T0 is still present at 1.4 \u03bcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a4bd2847-73f7-430a-8b2f-025976114410",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C67",
+      "claim": "The fact that T0 is still present at 1.4 \u03bcs in the 150 \u00c5 box provides strong evidence that T0 is in fact stable in a 150 \u00c5 box.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides strong evidence that in a 150 \u00c5 box, T0 is in fact stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e26bd9c5-382d-44f4-817b-70d02fe7518f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C68",
+      "claim": "The linear dependence between D-value and transition time was not expected.",
+      "claim_type": "EXPLICIT",
+      "source": "This linear dependence was not expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comment on the finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "d4ef2634-3795-4082-801f-e6373a17016e",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C69",
+      "claim": "The origin of the linear dependence between D-value and transition time still requires explanations at a molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "It is an interesting result whose origin, though, still requires explanations at a molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "87bc8016-2e47-40a9-b295-65599d4a482d",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C70",
+      "claim": "Simulations for all box sizes have been done with His146 deprotonated.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations for all box sizes have also been done with His146 deprotonated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "4bc55810-9a7e-499d-9f08-9c86465e5a59",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C71",
+      "claim": "With His146 deprotonated, T0 is stabilized in larger boxes, but after less than 100 ns a transition to an R-like state occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "The results for that system showed that T0 is stabilized in larger boxes, but after less than 100 ns a transition to an R-like state occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "2ee80ad4-acb9-4c8d-a449-bb24ce1ece0b",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C72",
+      "claim": "The finding that T0 transitions to R-like state with His146 deprotonated provides direct evidence that His146 protonation is essential for stabilizing T0.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides direct evidence that His146 protonation is essential for stabilizing T0, in accord with the Perutz model (Perutz, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the simulation results with citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "dfccbee5-d6da-4f86-a447-5061373f27f2",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C73",
+      "claim": "The finding that His146 protonation is essential for stabilizing T0 is in accord with the Perutz model.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides direct evidence that His146 protonation is essential for stabilizing T0, in accord with the Perutz model (Perutz, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation connecting the simulation results to the Perutz model with citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "12d39d44-ee01-4cb1-aac7-b243335db715",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C74",
+      "claim": "Chandler showed that significant water depletion around a spherical hydrophobic solute is expected when its radius is larger than 1 nm (10 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "To relate the above results to the hydrophobic effect, we use the construct of Chandler (Chandler, 2005), who showed (Figure 5A) that significant water depletion around a spherical hydrophobic solute is expected when its radius is larger than 1 nm (10 \u00c5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from Chandler with citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "558db38a-a068-48a1-a206-18d54762d002",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C75",
+      "claim": "Hb is nearly spherical with a 2.8 nm radius.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Hb is nearly spherical with a 2.8 nm radius, we calculated the g(r) for the 90 and 150 \u00c5 box (see Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural property of Hb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "043accd4-8cd0-4544-8a1e-80f6f56d8fbb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C76",
+      "claim": "The behavior of g(r) in the 150 \u00c5 box is consistent with the expected water structuring.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior in the 150 \u00c5 box is consistent with the expected water structuring, while for the 90 \u00c5 box it is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "988084ed-26ea-40bd-aed9-cdc60a52cc4d",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C77",
+      "claim": "The behavior of g(r) in the 90 \u00c5 box is not consistent with the expected water structuring.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavior in the 150 \u00c5 box is consistent with the expected water structuring, while for the 90 \u00c5 box it is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "3002ad81-b8d4-4480-b6da-8625b0934cdf",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C78",
+      "claim": "The structural transitions are accompanied by pronounced dewetting and water penetration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the structural transitions are accompanied by pronounced dewetting and water penetration as shown in Figure 5\u2014figure supplement 4 for the 90 \u00c5 box.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "edeb9cc4-c5b3-45a8-92a5-93492164fb8a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C79",
+      "claim": "The T0 state is only found to be thermodynamically stable if the hydration water behaves like bulk water as judged from the self-diffusion coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, the T0 state is only found to be thermodynamically stable if (i) the hydration water behaves like bulk water as judged from the self-diffusion coefficient, (ii) the number of hydrogen bonds per water molecule is large enough and its fluctuation around the average sufficiently small, see Figure 3\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a summary conclusion from the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a941f352-3326-46b8-bfd0-19979e20cc0f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C80",
+      "claim": "The T0 state is only found to be thermodynamically stable if the number of hydrogen bonds per water molecule is large enough and its fluctuation around the average sufficiently small.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, the T0 state is only found to be thermodynamically stable if (i) the hydration water behaves like bulk water as judged from the self-diffusion coefficient, (ii) the number of hydrogen bonds per water molecule is large enough and its fluctuation around the average sufficiently small, see Figure 3\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a summary conclusion from the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "246effa9-0be2-4478-8729-cf24b3624fb7",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C81",
+      "claim": "If water is not engaged in an adequate number of water-water H-bonds, solvent water is prone to attack the protein salt bridges, destabilizing them and eventually to break them.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if water is not engaged in an adequate number of water-water H-bonds, solvent water is prone to attack the protein salt bridges, destabilizing them and eventually to break them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "002fb0af-c36d-400a-bd26-15d667f70c3a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C82",
+      "claim": "For the 150 \u00c5 box the g(r) around His146 remains almost invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 150 \u00c5 box the g(r) remains almost invariant whereas for the 120 \u00c5 box an appreciable change occurs during the time when the major structural transition at 920 ns takes place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "40e2d02c-2e50-4cb1-9eea-d54353c80a3b",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C83",
+      "claim": "For the 120 \u00c5 box an appreciable change in g(r) around His146 occurs during the time when the major structural transition at 920 ns takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 150 \u00c5 box the g(r) remains almost invariant whereas for the 120 \u00c5 box an appreciable change occurs during the time when the major structural transition at 920 ns takes place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "fae396ef-d3c7-4c71-a569-0dad9b9dc5c1",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C84",
+      "claim": "For the smallest boxes, the local g(r) around His146 is very variable.",
+      "claim_type": "EXPLICIT",
+      "source": "For the smallest boxes, the local g(r) is very variable, which supports the importance of locally structured water molecules for stabilizing the T0 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "b45d14fe-2b8c-46f9-9d06-ac0b6ef555cd",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C85",
+      "claim": "The variability of local g(r) around His146 in smallest boxes supports the importance of locally structured water molecules for stabilizing the T0 state.",
+      "claim_type": "EXPLICIT",
+      "source": "For the smallest boxes, the local g(r) is very variable, which supports the importance of locally structured water molecules for stabilizing the T0 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "9c1b3c38-4a61-4332-96a0-c4cccdf56b79",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C86",
+      "claim": "For the largest box, the parameters examined (e.g. the salt bridge to Lys40) fluctuate around the equilibrium values near those of the T0 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 1\u2014figure supplement 3\u20135) show that for the largest box, the parameters examined (e.g. the salt bridge to Lys40, discussed by Perutz) fluctuate around the equilibrium values near those of the T0 structure while for the smaller boxes there are abrupt changes, correlated with global structural transitions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "f62f461a-075f-4791-9403-75a2b660630e",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C87",
+      "claim": "For the smaller boxes there are abrupt changes in local structural parameters, correlated with global structural transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 1\u2014figure supplement 3\u20135) show that for the largest box, the parameters examined (e.g. the salt bridge to Lys40, discussed by Perutz) fluctuate around the equilibrium values near those of the T0 structure while for the smaller boxes there are abrupt changes, correlated with global structural transitions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "4c5bffb7-d0dc-4169-9c5d-8bbfdcf54804",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C88",
+      "claim": "The transition away from the T0 structure extends over approximately 10 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition away from the T0 structure extends over approximately 10 ns during which several important contacts are broken or formed, see Figure 1\u2014figure supplement 5A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the simulations with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "85cb22c6-736f-4403-ab67-840902f5a6e7",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C89",
+      "claim": "The apparent activation energy from the simulations in the smaller solvent boxes is near zero.",
+      "claim_type": "EXPLICIT",
+      "source": "This value suggests that the apparent activation energy from the simulations in the smaller solvent boxes is near zero, in contrast to an estimate on the order of seconds for the transition if the barrier arose from the 7 kcal/mol difference in stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the transition time.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "6c956855-6476-48db-8ae9-919151f9d034",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C90",
+      "claim": "The ability of the 150 \u00c5 box to stabilize the T-state starting from the R-like structure in the 120 \u00c5 box after 1 \u03bcs was explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the ability of the 150 \u00c5 box to stabilize the T-state starting from the R-like structure in the 120 \u00c5 box after 1 \u03bcs was also explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "bd18f1c1-4e82-4e1c-a973-4adba589076d",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C91",
+      "claim": "Solvating the R-like structure from the 120 \u00c5 box in the 150 \u00c5 box and following the equilibrium dynamics for 1 \u03bcs, the final RMSD compared to the 2DN2 (T-state) structure is 1.97 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Solvating this structure in the 150 \u00c5 box, minimizing, heating and equilibrating it (see Materials and methods) and following the equilibrium dynamics for 1 \u03bcs, the final RMSD compared to the 2DN2 (T-state) structure is 1.97 \u00c5 (2.55 compared to 2DN3 (R-state)) starting from an RMSD of 2.73 \u00c5 (with respect to 2DN2) and 1.42 \u00c5 (2DN3) at the beginning of the simulation (after heating and equilibration), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "c8e3492f-821e-4adb-8058-fab3aed6af20",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C92",
+      "claim": "The His146\u03b21\u2013His146\u03b22 and His143\u03b21\u2013His143\u03b22 distances change from values typical for an R-state structure to approach separations indicative of a T-state structure without fully completing the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, the His146\u03b21\u2013His146\u03b22 and His143\u03b21\u2013His143\u03b22 distances change from values typical for an R-state structure (both \u223c12.6 \u00c5) to 14.0 \u00c5 (for His143) and 18.0 (for His146) and approach separations indicative of a T-state structure (18.6 \u00c5 and 30.9 \u00c5) without, however, fully completing the transition to a T-state structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "da546402-c90f-4829-ba22-83f6c895854e",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C93",
+      "claim": "The R0 to T0 transition time is about 20 \u03bcs, much longer than the simulation time.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the R0 to T0 transition time is about 20 \u03bcs, much longer than the simulation time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison between experimental and simulation timescales.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "1b99c1e9-d765-44ab-8b53-d86145a09c59",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C94",
+      "claim": "The present result that much larger boxes than those used standardly are required for the hydrophobic effect to be manifested is of general interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the increasing use of molecular dynamics simulations to study conformational transitions in large proteins and in an explicit solvent environment, the present result that much larger boxes than those used standardly are required for what appears to be the hydrophobic effect to be manifested is of general interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a broader implication of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "7da58948-a080-47f3-a2f0-55f3509616ec",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C95",
+      "claim": "The finding has wide ranging implications for the interpretation and validity of previous simulations, as well as those to be undertaken in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "It has wide ranging implications for the interpretation and validity of previous simulations, as well as those to be undertaken in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a broader implication of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "4ce55492-3836-4a06-b74f-8d68661ff9c2",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C96",
+      "claim": "The magnitude of the box size effect is expected to depend on the size (and shape) of the molecule and its hydrophobicity, as well as possibly other properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the magnitude of the effect is expected to depend on the size (and shape) of the molecule and its hydrophobicity, as well as possibly other properties (Chandler, 2005), the requirement for the use of larger boxes in simulations will have to be investigated in each case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the generality of the findings with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "7e8d00fe-f800-45de-88a1-bf7a02eb2369",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C97",
+      "claim": "The requirement for the use of larger boxes in simulations will have to be investigated in each case.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the magnitude of the effect is expected to depend on the size (and shape) of the molecule and its hydrophobicity, as well as possibly other properties (Chandler, 2005), the requirement for the use of larger boxes in simulations will have to be investigated in each case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for future simulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "8d465492-05e3-4c06-a481-5822b013e620",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C98",
+      "claim": "Capturing the correct diffusional dynamics of the environment will play a crucial role in atomistic simulations for the crowded conditions that exist in entire cells or parts thereof.",
+      "claim_type": "EXPLICIT",
+      "source": "One particularly relevant situation where capturing the correct diffusional dynamics of the environment will play a crucial role is that in atomistic simulations for the crowded conditions (Feig et al., 2017) that exist in entire cells or parts thereof (Zhou et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the implications for cellular simulations with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "b1aed1f0-3b1b-48d3-ad53-d2cff202d42e",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C99",
+      "claim": "Possible errors in molecular dynamics simulation results for other phenomena, such as protein folding, as well as for polymeric materials more generally have to be considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Possible errors in molecular dynamics simulation results for other phenomena, such as protein folding, for example, as well as for polymeric materials more generally have to be considered as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e1da1f38-27d5-41ad-b38d-9c89949cf4ea",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C100",
+      "claim": "The influence of solvent layers on the structural stability of hemoglobin tetramer was investigated using Molecular Dynamics (MD) simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The influence of solvent layers on the structural stability of hemoglobin tetramer is investigated using Molecular Dynamics (MD) simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the study in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "4fa3ca0d-4e7a-4a04-a053-d635938dfa5f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C101",
+      "claim": "Extended large-scale simulation were performed with the CHARMM36 all atom force-field and the TIP3P water model using version 5.1.4 of the GROMACS package on GPUs.",
+      "claim_type": "EXPLICIT",
+      "source": "Extended large-scale simulation were performed with the CHARMM36 all atom force-field (Best et al., 2012) and the TIP3P water model (Jorgensen et al., 1983) using version 5.1.4 of the GROMACS package (Abraham et al., 2015) on GPUs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "1f1b3dea-3409-4d51-bdb3-a8a0ffa1311b",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C102",
+      "claim": "The coordinates of the starting structure are taken from the X-ray structure of tetrameric human hemoglobin in the deoxy form, PDB code 2DN2 (1.25 \u00c5 resolution).",
+      "claim_type": "EXPLICIT",
+      "source": "The coordinates of the starting structure are taken from the X-ray structure of tetrameric human hemoglobin in the deoxy form, PDB code 2DN2 (1.25 \u00c5 resolution) (Park et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "72073ad5-d098-4b75-8de5-395ed0db8daa",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C103",
+      "claim": "The protonation states of the histidines were based on the 2013 study of Zheng et al. and the terminal \u03b2 histidines (His146) were both doubly protonated.",
+      "claim_type": "EXPLICIT",
+      "source": "The protonation states of the histidines were based on the 2013 study of Zheng et al. and the terminal \u03b2 histidines (His146) were both doubly protonated (Zheng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "f2b28ad5-d1a5-4c66-84ed-f9976ba5f5bf",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C104",
+      "claim": "The protein was solvated in four different cubic boxes of increasing size: 75, 90, 120 and 150 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein was solvated in four different cubic boxes of increasing size: 75, 90, 120 and 150 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "04099d57-9d3e-4f3b-8e6b-e557f3a2d9af",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C105",
+      "claim": "The system was neutralized by adding counter ions and the salt concentration of 0.15 m/L was achieved using Na+ and Cl\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The system was neutralized by adding counter ions and the salt concentration of 0.15 m/L was achieved using Na+ and Cl\u2212.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "48c8db9a-71d8-4da2-aa3f-0f62e5afe9bb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C108",
+      "claim": "The LINCS algorithm was used for constraining bonds involving H-atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The LINCS algorithm (Hess et al., 1997) was used for constraining bonds involving H-atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "225382df-347b-4e1c-a8ce-f5623746ec9f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C109",
+      "claim": "Each system was first energy minimized for 50,000 steps using steepest descent.",
+      "claim_type": "EXPLICIT",
+      "source": "Each system was first energy minimized for 50,000 steps using steepest descent, heated from 0 to 300 K in increments of 10 K in NVT for 300 ps, followed by 500 ps (NVT) and 500 ps of NpT equilibration at p=1 atm with a time step of 2 fs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "1e47da30-3f05-46ce-9633-06abfbb7acc9",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C110",
+      "claim": "The center of mass of the protein was restrained to the center of mass of the simulation box.",
+      "claim_type": "EXPLICIT",
+      "source": "The center of mass of the protein was restrained to the center of mass of the simulation box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "ed8c99be-007b-4edc-ad01-fc05450a57a2",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C111",
+      "claim": "The Velocity Rescaling and Parrinello-Rahman methods were used for temperature and pressure control, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The Velocity Rescaling (Bussi et al., 2007) (with \u03c4=0.1 ps) and Parrinello-Rahman (Parrinello and Rahman, 1981) methods were used for temperature and pressure control, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "74b49021-6bd3-4d4c-bcb0-828ab46d796a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C112",
+      "claim": "The velocity rescaling method is an extension of the Berendsen thermostat to which a stochastic force chosen such as to generate a correct canonical distribution is added.",
+      "claim_type": "EXPLICIT",
+      "source": "The velocity rescaling method is an extension of the Berendsen thermostat to which a stochastic force chosen such as to generate a correct canonical distribution is added (Bussi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological explanation with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "3860ef54-d9e1-46de-b50b-1c3506ec14e5",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C113",
+      "claim": "The MD simulations for all systems were carried out for at least 1 \u03bcs at constant temperature and pressure (NpT) at 300 K and one atm with a time step of 2 fs.",
+      "claim_type": "EXPLICIT",
+      "source": "The MD simulations for all systems were carried out for at least 1 \u03bcs at constant temperature and pressure (NpT) at 300 K and one atm with a time step of 2 fs and the 1\u03c3 temperature fluctuations over the 1 \u03bcs trajectories were 0.1 K for the 150 \u00c5 box and 0.5 K for the 90 \u00c5 box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "133001d4-00f8-4391-917a-050402627aaf",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C114",
+      "claim": "The 1\u03c3 temperature fluctuations over the 1 \u03bcs trajectories were 0.1 K for the 150 \u00c5 box and 0.5 K for the 90 \u00c5 box.",
+      "claim_type": "EXPLICIT",
+      "source": "The MD simulations for all systems were carried out for at least 1 \u03bcs at constant temperature and pressure (NpT) at 300 K and one atm with a time step of 2 fs and the 1\u03c3 temperature fluctuations over the 1 \u03bcs trajectories were 0.1 K for the 150 \u00c5 box and 0.5 K for the 90 \u00c5 box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "e55cc802-f11c-4207-ba1d-2447762461ec",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C115",
+      "claim": "Water self-diffusion coefficients D were calculated for box sizes 75, 90, 120 and 150 \u00c5, in the presence and in the absence of Hb, over the entire 1 \u03bcs trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Water self-diffusion coefficients D were calculated for box sizes 75, 90, 120 and 150 \u00c5, in the presence and in the absence of Hb, over the entire 1 \u03bcs trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "bc362f09-60c8-470f-bc16-84a6ab7cdb7f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C116",
+      "claim": "In the absence of the protein, the simulation boxes contained pure water systems (no ions were included).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the protein, the simulation boxes contained pure water systems (no ions were included).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a9213544-d21d-4e4b-9fc5-6d7e1ae8f713",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "claim_id": "C117",
+      "claim": "Including ions at physiological concentrations will typically change the water self-diffusion coefficient by 1% to 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Including ions at physiological concentrations will typically change the water self-diffusion coefficient by 1% to 2% (Kim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior MD simulations of hemoglobin T0 state show disagreement with experiment: while T0 and R4 are experimentally stable in solution, published simulations show T0 rapidly transitioning to an R-like structure within hundreds of nanoseconds, contradicting the expected stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C23, C25-C26, C33, and C38 collectively establish the discrepancy between published MD simulations and experimental observations. The claims cite specific literature (Hub et al., 2010; Yusuff et al., 2012) and provide experimental context (C2, C30) showing T0 should be stable. The disagreement is explicitly stated (C33) and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "f4186d06-31e8-4551-8441-2b2511d621cd",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "T0 hemoglobin is stable in MD simulations only when using a 150 \u00c5 periodic box containing ~105,000 water molecules (10x standard size), while smaller boxes (75, 90, 120 \u00c5) show transitions to R-like structures. With His146 protonated, the 150 \u00c5 box maintains T0 stability for the entire 1 \u03bcs simulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42, C45-C49 provide the core experimental finding with specific structural data (RMSD values in Table 1 and Figure 2). The simulation setup is well-documented (C39-C43), methodology is described (C41), and results show clear box-size dependence. The 150 \u00c5 box result (C45, C49) contrasts with smaller boxes (C46-C48), providing strong evidence for the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "His146 protonation is essential for T0 stability: even in the 150 \u00c5 box, T0 is unstable when His146 is deprotonated, transitioning to R-like state in <100 ns. This provides atomistic validation of the Perutz model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C70-C73 demonstrate the critical role of His146 protonation through direct computational experiments. The deprotonated simulations (C70-C71) show rapid transitions even in large boxes, contrasting with stable protonated simulations (C6). The connection to the Perutz model (C7, C44, C73) is explicitly stated and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The large box requirement is attributed to the hydrophobic effect: proper manifestation of water structuring and dewetting around the hemoglobin tetramer requires sufficient bulk water. The 150 \u00c5 box shows expected water structuring behavior (g(r) analysis) while smaller boxes do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34-C37, C74-C78 provide the mechanistic interpretation linking box size to hydrophobic effects. The theoretical framework from Chandler (C35, C74) is appropriately cited, and the g(r) analysis (C76-C77) provides quantitative support. The dewetting observation (C78) and connection to buried surface area (C36-C37) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Water hydrogen bonding network analysis shows that T0 stability requires: (i) sufficient hydrogen bonds per water molecule with small fluctuations, and (ii) proper bulk-like water behavior. The average number of H-bonds per water decreases in smaller boxes, consistent with estimated energy differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C79-C81 describe the water H-bond analysis with reference to Figure 3. The statistical mechanics interpretation (C56) is appropriate, and the connection to T0 stability (C79-C80) is clearly stated. The mechanistic explanation (C81) linking H-bond deficiency to salt bridge destabilization is reasonable. The limitation regarding energy calculation (C52) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Water self-diffusion coefficient analysis reveals that only the 150 \u00c5 box produces bulk-like water dynamics. A linear relationship exists between D-value and T0 transition time, with extrapolation predicting 700 ns transition time for the 150 \u00c5 box, but T0 remains stable at 1.4 \u03bcs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 present the diffusion coefficient analysis with clear data (Figure 4). The linear relationship (C64) is demonstrated, and the extrapolation (C65) is explicitly stated. The fact that T0 persists beyond the predicted transition time (C66-C67) strengthens the stability conclusion. The acknowledgment that the linear relationship was unexpected (C68) and requires further explanation (C69) is appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "c1ced0c2-8a64-40cc-88b4-55346cce937a",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Local structural analysis around His146 shows that g(r) remains stable in the 150 \u00c5 box but varies significantly in smaller boxes during transitions. Salt bridge parameters fluctuate around T0 equilibrium values in large boxes but show abrupt changes correlated with global transitions in smaller boxes. Transitions occur over ~10 ns with near-zero apparent activation energy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C89 provide detailed local structural analysis with reference to supplementary figures. The g(r) stability difference (C82-C85) supports the water structuring hypothesis. The salt bridge analysis (C86-C87) connects local and global structural changes. The transition timescale (C88) and activation energy estimate (C89) are appropriately qualified as apparent values from the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "dc118125-4f22-4d1f-9a0f-8cfa9982429f",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Reversibility test: solvating an R-like structure from the 120 \u00c5 box in the 150 \u00c5 box leads to partial movement toward T-state (RMSD to T0 decreases from 2.73 to 1.97 \u00c5) but does not complete the transition within 1 \u03bcs, consistent with the experimental R0\u2192T0 transition time of ~20 \u03bcs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 describe a critical control experiment testing reversibility. The RMSD data (C91-C92) show partial structural recovery toward T-state, and the comparison to experimental timescales (C93) appropriately contextualizes why full transition is not observed. This strengthens the overall conclusion by demonstrating the 150 \u00c5 box captures proper thermodynamic behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The finding that extra large simulation boxes are required for proper hydrophobic effect manifestation has broad implications for MD simulations of proteins and other systems, particularly for crowded cellular environments, protein folding, and polymeric materials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C94-C99 discuss broader implications but are largely speculative (C8, C95-C99 are marked as SPECULATION). While the implications are reasonable given the hemoglobin results, no additional data is provided to support these generalizations. The authors appropriately note that box size requirements will need to be investigated case-by-case (C97), but the claims remain uncertain without further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Methodological details: simulations used CHARMM36 force field with TIP3P water, GROMACS 5.1.4, starting from 2DN2 crystal structure with His146 doubly protonated based on Zheng et al. 2013. Systems were equilibrated and run for \u22651 \u03bcs in NPT ensemble at 300K with appropriate protocols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C117 provide comprehensive methodological documentation with appropriate citations. Force field (C101), starting structure (C102), protonation states (C103), simulation protocols (C108-C113), and analysis methods (C115-C117) are clearly described. Temperature control validation (C114) and diffusion coefficient calculation details support reproducibility. The methodology appears sound and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    },
+    {
+      "id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b",
+      "content_id": "faf87968-8451-4217-b6d1-141cb4891f7f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on hemoglobin structure and cooperativity: hemoglobin is a paradigmatic cooperative system composed of \u03b1 and \u03b2 chains forming dimers with distinct T0 and R4 quaternary structures. The Perutz stereochemical mechanism and MWC model explain cooperativity through salt bridges linking tertiary and quaternary structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C22, C24, C29-C30 provide established background knowledge with appropriate citations (Perutz, Monod et al., Baldwin and Chothia, etc.). These are well-accepted facts in the hemoglobin literature and provide necessary context for the study. The claims accurately represent prior work and are properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:27:35.590892Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "922acf33-ce8d-45db-8ead-c64f4cc9faac",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "839e5e92-29a8-44be-91c0-f5624e40a39c",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "ce042359-742f-431a-84a3-acee33f03191",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "2d37f49c-79de-4dd8-ae85-4ad77ef9be57",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "c8446d39-262b-4b29-90ba-4520f7276fa8",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "b42cd534-1ada-48ed-93ad-6a4a2a8d0df5",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "75ac4dd7-cadd-4ba1-b47e-d3dee3bee0eb",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "ded5ca9b-4de6-4f6f-a66f-1eabc10c7692",
+      "result_id": "f674fb32-f8e6-4e45-ba54-fd68b919eacb"
+    },
+    {
+      "claim_id": "8cef95d4-7c2d-4c5d-958c-410583a4a0a3",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "9693c6b0-8970-42f3-a61b-30a70c3337e3",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "350b3107-5ab4-46bb-a414-b559c6cb1235",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "40de0f6e-aacf-4b97-ac5f-5d967a0c5082",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "5d3fc4c9-5178-47cb-94dc-bb18f7fb4838",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "7621dc46-20d8-407c-8bc2-6719b2957ba7",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "b553a678-3c13-410a-890e-7bd019827af0",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "22e39f66-7ae4-4c3f-bf1e-8d36e6c25d17",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "621e77d0-b3cc-4f06-a281-2e7b736e3b2b",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "39334015-a84a-4331-a3da-512495735dd9",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "a1bc21d4-870d-4d75-87fb-51e3a0c01e04",
+      "result_id": "f4186d06-31e8-4551-8441-2b2511d621cd"
+    },
+    {
+      "claim_id": "223c986e-a7d0-4d9c-acbd-dbb616db4628",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "93511796-bfb0-4122-8324-cf0fd7e0d6a2",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "7621dc46-20d8-407c-8bc2-6719b2957ba7",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "a94ebf19-21a0-409e-bf38-5b46ece298c1",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "87bc8016-2e47-40a9-b295-65599d4a482d",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "4bc55810-9a7e-499d-9f08-9c86465e5a59",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "2ee80ad4-acb9-4c8d-a449-bb24ce1ece0b",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "dfccbee5-d6da-4f86-a447-5061373f27f2",
+      "result_id": "4cde81a5-1ac5-4a9b-b057-1ce798497a0a"
+    },
+    {
+      "claim_id": "54dc90ac-747d-4323-acb2-24fe02f5ef5a",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "3a8bca9a-1784-4e15-8e7e-bbb6e81d1de2",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "75c0110e-3c19-485e-a1e0-fecd0e04a611",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "5e95cbe6-54f5-446e-8acf-96eb7c90b409",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "8295c678-1c35-426a-bec0-abfa8e7c2d1e",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "12d39d44-ee01-4cb1-aac7-b243335db715",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "558db38a-a068-48a1-a206-18d54762d002",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "043accd4-8cd0-4544-8a1e-80f6f56d8fbb",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "988084ed-26ea-40bd-aed9-cdc60a52cc4d",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "3002ad81-b8d4-4480-b6da-8625b0934cdf",
+      "result_id": "a1c6e317-da0d-4ff3-9c73-909e436ed74c"
+    },
+    {
+      "claim_id": "512fea8a-429b-4821-8e48-71f12021d8d8",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "e06316b3-9e16-46e6-ab80-7442b5618936",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "36fc3323-add8-43f4-bc03-c2beac81b8d9",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "79ea9d30-2acf-4898-9c33-f47f12cb0066",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "6db79961-00ee-4685-9dc5-017067616659",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "edeb9cc4-c5b3-45a8-92a5-93492164fb8a",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "a941f352-3326-46b8-bfd0-19979e20cc0f",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "246effa9-0be2-4478-8729-cf24b3624fb7",
+      "result_id": "6b5e9976-d60b-4ccc-b475-36ede06c0bdd"
+    },
+    {
+      "claim_id": "5d40dd50-ecb3-4846-92d4-fc93bc7b62fa",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "73c893c9-f286-4013-b12c-b5f977a8e64c",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "e09fa1e2-9531-4628-9a36-740dc92133a8",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "dceb913b-0b28-42f5-984b-c4e9d6b193ad",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "62537211-8396-4826-b225-fc9a3215065f",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "a4bd2847-73f7-430a-8b2f-025976114410",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "e26bd9c5-382d-44f4-817b-70d02fe7518f",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "d4ef2634-3795-4082-801f-e6373a17016e",
+      "result_id": "6d2b6115-fbe8-47ad-8086-5379f4fad1a4"
+    },
+    {
+      "claim_id": "002fb0af-c36d-400a-bd26-15d667f70c3a",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "40e2d02c-2e50-4cb1-9eea-d54353c80a3b",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "fae396ef-d3c7-4c71-a569-0dad9b9dc5c1",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "b45d14fe-2b8c-46f9-9d06-ac0b6ef555cd",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "9c1b3c38-4a61-4332-96a0-c4cccdf56b79",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "f62f461a-075f-4791-9403-75a2b660630e",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "4c5bffb7-d0dc-4169-9c5d-8bbfdcf54804",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "85cb22c6-736f-4403-ab67-840902f5a6e7",
+      "result_id": "c1ced0c2-8a64-40cc-88b4-55346cce937a"
+    },
+    {
+      "claim_id": "6c956855-6476-48db-8ae9-919151f9d034",
+      "result_id": "dc118125-4f22-4d1f-9a0f-8cfa9982429f"
+    },
+    {
+      "claim_id": "bd18f1c1-4e82-4e1c-a973-4adba589076d",
+      "result_id": "dc118125-4f22-4d1f-9a0f-8cfa9982429f"
+    },
+    {
+      "claim_id": "c8e3492f-821e-4adb-8058-fab3aed6af20",
+      "result_id": "dc118125-4f22-4d1f-9a0f-8cfa9982429f"
+    },
+    {
+      "claim_id": "da546402-c90f-4829-ba22-83f6c895854e",
+      "result_id": "dc118125-4f22-4d1f-9a0f-8cfa9982429f"
+    },
+    {
+      "claim_id": "e2c1d09b-ef54-48fd-9b40-51490385d5e3",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "1b99c1e9-d765-44ab-8b53-d86145a09c59",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "7da58948-a080-47f3-a2f0-55f3509616ec",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "4ce55492-3836-4a06-b74f-8d68661ff9c2",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "7e8d00fe-f800-45de-88a1-bf7a02eb2369",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "8d465492-05e3-4c06-a481-5822b013e620",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "b1aed1f0-3b1b-48d3-ad53-d2cff202d42e",
+      "result_id": "7f13e2ac-19dc-4264-84b5-208fe7d205b5"
+    },
+    {
+      "claim_id": "e1da1f38-27d5-41ad-b38d-9c89949cf4ea",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "4fa3ca0d-4e7a-4a04-a053-d635938dfa5f",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "1f1b3dea-3409-4d51-bdb3-a8a0ffa1311b",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "72073ad5-d098-4b75-8de5-395ed0db8daa",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "f2b28ad5-d1a5-4c66-84ed-f9976ba5f5bf",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "04099d57-9d3e-4f3b-8e6b-e557f3a2d9af",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "48c8db9a-71d8-4da2-aa3f-0f62e5afe9bb",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "225382df-347b-4e1c-a8ce-f5623746ec9f",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "1e47da30-3f05-46ce-9633-06abfbb7acc9",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "ed8c99be-007b-4edc-ad01-fc05450a57a2",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "74b49021-6bd3-4d4c-bcb0-828ab46d796a",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "3860ef54-d9e1-46de-b50b-1c3506ec14e5",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "133001d4-00f8-4391-917a-050402627aaf",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "e55cc802-f11c-4207-ba1d-2447762461ec",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "bc362f09-60c8-470f-bc16-84a6ab7cdb7f",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "a9213544-d21d-4e4b-9fc5-6d7e1ae8f713",
+      "result_id": "16d94599-b9b7-4a2b-8aaf-ae319af3bfad"
+    },
+    {
+      "claim_id": "1c71ccbe-ea10-4d92-83be-f00750b69ceb",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "354c36e4-88c9-4fc4-a776-11f90f6d7c83",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "682e256f-b20c-451b-9c23-daa451a5ccbf",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "50c3bf85-1c85-4348-a800-487ebae7e06c",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "93391bda-26d6-494b-8326-f64c000230dd",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "434958a0-d261-4aa4-a54f-e3b3e45b2bf6",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "ae6adadd-5324-493d-872d-364c117ac39a",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "9c7275dd-bafd-40aa-8e7d-df8183110caa",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "48ac4b83-10f5-4f71-8eb9-7f008c27f0bb",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "d25c52c8-c3cc-4d0a-a380-855124d6c286",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "10fafc7e-050b-4e3c-b2c2-d6db0f6ebcad",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "8cd3fdf4-a0ea-4176-9031-52bbba3036e0",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "93c0c0ef-fc0d-4c31-934d-f32d226156b3",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "883ba07a-0c18-42f6-95a2-3df75f858f46",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "49d069e1-5da3-49d8-a092-15112e887585",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "dda3a894-7e1d-4517-8a07-f23b87e321e6",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    },
+    {
+      "claim_id": "f3f91461-1725-48dc-be5f-e063ef833534",
+      "result_id": "51a93a03-56f5-43ad-adfc-3a6528fcd19b"
+    }
+  ],
+  "comparisons": []
+}

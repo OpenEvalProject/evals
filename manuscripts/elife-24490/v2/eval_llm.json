@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed FINDKIN, a novel cryo-EM method that combines conventional helical and single-particle approaches to locate bound kinesin motors on microtubules. FINDKIN uses a cross-correlation-based search algorithm that enumerates all possible binding patterns in overlapping search areas and applies a dual-frameset strategy (low- and high-defocus) to minimize model bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C34 collectively describe the FINDKIN methodology with clear procedural steps, validation on synthetic data (C35-C40), and strategic design choices to prevent noise bias. The method is well-documented with flowcharts and demonstrates technical innovation in addressing limitations of conventional helical reconstruction (C22-C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "FINDKIN validation on synthetic microtubules shows false negative rates below 0.2 across all tested conditions, while false positive rates are significantly lower at high defocus (~0.2) compared to low defocus (0.4-1.2), likely due to better preservation of low-resolution signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present systematic validation data with quantitative error rates under controlled conditions (noise, occupancy, defocus). The findings are supported by figures showing performance metrics and include mechanistic explanation for defocus-dependent performance (C39-C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "FINDKIN enabled determination of the first structure of a two-head-bound kinesin dimer on microtubules, revealing two motor domains at sequential sites along a protofilament with resolved secondary structure at sub-nanometer resolution and coiled coil density between the heads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C50-C62 describe the novel structural determination with multiple lines of evidence: resolved secondary structure (C51), coiled coil density (C54-C59), and independent validation from two binding patterns ('0110' and '011110', C61-C62). The ability to resolve secondary structure from a 20\u00c5-filtered reference model demonstrates absence of model bias (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The two-head-bound kinesin dimer structure reveals asymmetric conformations: the leading head exhibits weak nucleotide density, disordered switch I loop, undocked neck linker, and subdomain rotations (12-15\u00b0 P-loop, 5-9\u00b0 switch I/II), while the trailing head shows strong nucleotide density, ordered switch I loop, and docked neck linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C78 present multiple converging structural features distinguishing the two heads, supported by cross-correlation analysis (C63: scores 0.91-0.92 within head types vs 0.86-0.88 between types), density observations (C64-C66, C69-C72), and quantitative subdomain rotation measurements (C76-C77). The consistency across independent reconstructions strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The two-head-bound structure supports the 'alternating cleft' model: the trailing head resembles ATP-like monomeric kinesin (closed nucleotide cleft, open docking cleft), while the leading head resembles no-nucleotide state (open nucleotide cleft, closed docking cleft), as confirmed by cross-correlation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C80-C86 connect structural observations to the alternating cleft model with quantitative support from cross-correlation scores (C84-C85: trailing heads 0.73-0.74 with ATP-like vs 0.67 with apo; leading heads 0.77-0.78 with apo vs 0.69 with ATP-like). The structural features are consistent with predictions from prior monomeric studies (C73, C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A second population of singly-bound kinesin dimers was identified, where the attached motor domain adopts a novel conformation: ATP-like nucleotide cleft closure and ordered switch I loop, but with a disordered neck linker and no coiled coil density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C87-C94 describe a novel structural state with clear distinguishing features. The absence of diagonal kinesin density (C88) rules out alternative stepping configurations. The structural characterization includes nucleotide cleft state (C89), switch I loop (C90), subdomain orientations matching trailing head (C91), but distinct neck linker behavior (C92-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The different conformations of the two heads in the dimer arise from different neck linker orientations rather than different nucleotide conditions, providing direct evidence for neck linker-mediated allosteric coupling between the docking cleft and nucleotide cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 present a mechanistic explanation supported by the key observation that biochemically identical heads in the same environment exhibit different conformations (C98). The logical inference that neck linker orientation is the distinguishing factor (C99) is well-supported, and the alternating cleft model provides structural explanation (C100-C102). Direct visualization of this coupling (C103) is a major advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discrepancies between the dimer map and monomeric kinesin structures (residual nucleotide density in leading head, smaller P-loop rotation) may arise from either ATP binding in the leading head or contamination with singly-bound heads, with computational modeling supporting the contamination hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C116 identify important discrepancies and propose two non-mutually-exclusive explanations. While computational modeling (C112) supports the contamination artifact, the authors acknowledge that neither explanation can be definitively ruled out (C108, C116) and call for further experiments (C117). The uncertainty is appropriately recognized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The singly-bound head structure challenges the neck linker power stroke model, suggesting that neck linker docking may be entropy-driven and weaker than in monomeric kinesin, and that full neck linker docking may not be required for ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C125-C134 present mechanistic interpretations of the singly-bound head structure. The evidence against the power stroke model (C130-C131) is supported by comparison with prior EPR studies and consistency with recent nanogold imaging (C132). The inference about hydrolysis not requiring full docking (C133-C134) is supported by structural observations and consistent with recent kinetic studies (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors propose a model for the kinesin motility cycle where the two structural states (two-head-bound and singly-bound) represent consecutive states: ATP binding closes the nucleotide cleft without docking the neck linker (modeled by singly-bound head), followed by hydrolysis-accelerated neck linker docking enabling forward stepping, with inter-head tension gating ATP binding/hydrolysis in the leading head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C147 present a mechanistic model integrating the structural findings. While the model is logical and consistent with the structures and recent kinetic studies (C140 cites Milic 2014, Mickolajczyk 2015), it remains speculative as acknowledged by the authors (C143). The model makes testable predictions but requires future structural studies with ATP for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Experimental conditions used substoichiometric kinesin binding (~0.6 motor domain per tubulin dimer) to prevent oversaturation, yielding a ~5\u00c5 microtubule reconstruction. FINDKIN analysis required methodological refinements to address false negative errors and 'frame shift' contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe experimental design and methodological problem-solving. The substoichiometric binding strategy (C41-C42) addresses limitations of prior studies. The identification of contamination issues (C45-C46) and development of solutions using dual-frameset validation (C47-C49) demonstrates rigorous methodology, though it introduces selective noise bias at vacant sites (C49).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The presence of both two-head-bound and singly-bound dimers suggests an equilibrium between these states under the experimental conditions, though the relative proportions may vary with nucleotide analog type and cannot be directly correlated with biophysical experiments due to uncontrolled evaporation during sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C124 acknowledge unexpected findings and experimental limitations. The inference of equilibrium (C123) is reasonable but the inability to control ionic strength due to evaporation (C122) prevents definitive interpretation. The authors appropriately call for further experiments (C124) to determine biological significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "FINDKIN represents an important advance for studying heterogeneous helical polymers by enabling sorting of individual subunits into distinct structural classes, though current limitations include requirement for prior structural information and future development will incorporate likelihood/Bayesian frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 assess FINDKIN's broader impact and limitations. The advance over conventional methods (C150, C151-C152) is demonstrated by the successful application to kinesin dimers. The acknowledged limitations (C153-C154) and proposed future directions (C155) show appropriate self-assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The results disfavor the competing 'water cap' model for inter-head coordination, which involves melting of the C-terminus of the switch II helix and other structural features not observed in the dimer map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 presents a negative result regarding an alternative model. The inference is supported by the absence of expected structural features in the high-quality dimer map, though the evaluation is necessarily indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "The resolution estimates (~7\u00c5 for '010' and '0110', ~9\u00c5 for '011110') may be affected by over-refinement, as the observed secondary structure quality appears worse than expected for the reported resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 represents appropriate self-criticism about potential methodological limitations. The authors recognize the discrepancy between FSC-based resolution estimates and observed map quality, suggesting over-refinement as a probable cause and proposing future improvements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1037 @@
+{
+  "submission": {
+    "id": "93789589-7afc-4c02-bf24-85e247c58057",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:48:19.995117Z",
+    "updated_at": "2025-12-02T00:48:19.995117Z"
+  },
+  "content": [
+    {
+      "id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "submission_id": "93789589-7afc-4c02-bf24-85e247c58057",
+      "content_type": "manuscript",
+      "content_text": "# Striatal action-value neurons reconsidered\n\n## Authors\n\n- Lotem Elber-Dorozko<sup>1</sup> ([ORCID: 0000-0003-1235-8651](https://orcid.org/0000-0003-1235-8651)) \u2020\n- Yonatan Loewenstein<sup>1</sup> ([ORCID: 0000-0003-2577-2317](https://orcid.org/0000-0003-2577-2317))\n\n### Affiliations\n\n1. The Edmond & Lily Safra Center for Brain Sciences The Hebrew University of Jerusalem Jerusalem Israel\n2. Department of Neurobiology, The Alexander Silberman Institute of Life Sciences The Hebrew University of Jerusalem Jerusalem Israel\n3. The Federmann Center for the Study of Rationality The Hebrew University of Jerusalem Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is generally believed that during economic decisions, striatal neurons represent the values associated with different actions. This hypothesis is based on studies, in which the activity of striatal neurons was measured while the subject was learning to prefer the more rewarding action. Here we show that these publications are subject to at least one of two critical confounds. First, we show that even weak temporal correlations in the neuronal data may result in an erroneous identification of action-value representations. Second, we show that experiments and analyses designed to dissociate action-value representation from the representation of other decision variables cannot do so. We suggest solutions to identifying action-value representation that are not subject to these confounds. Applying one solution to previously identified action-value neurons in the basal ganglia we fail to detect action-value representations. We conclude that the claim that striatal neurons encode action-values must await new experiments and analyses.\n\n## Results\n\n### Identifying action-value neurons\n\nWe commence by examining the standard methods for identifying action-value neurons using a simulation of an operant learning experiment. We simulated a task, in which the subject repeatedly chooses between two alternative actions, which yield a binary reward with a probability that depends on the action. Specifically, each session in the simulation was composed of four blocks such that the probabilities of rewards were fixed within a block and varied between the blocks. The probabilities of reward in the blocks were (0.1,0.5), (0.9,0.5), (0.5,0.9) and (0.5,0.1) for actions 1 and 2, respectively (Figure 1A). The order of blocks was random and a block terminated when the more rewarding action was chosen more than 14 times within 20 consecutive trials (Ito and Doya, 2015a; Samejima et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig1-v2.jpg)\n\n**Figure 1.:** (A) Behavior of the model in an example session, composed of four blocks (separated by dashed vertical lines). The probabilities of reward for choosing actions 1 and 2 are denoted by the pair of numbers above the block. Black line denotes the probability of choosing action 1; vertical lines denote choices in individual trials, where red and blue denote actions 1 and 2, respectively, and long and short lines denote rewarded and unrewarded trials, respectively. (B) Neural activity. Firing rate (line) and spike-count (dots) of two example simulated action-value neurons in the session depicted in (A). The red and blue-labeled neurons represent $Q_{1}$ and $Q_{2}$, respectively. Black horizontal lines denote the mean spike count in the last 20 trials of the block. Error bars denote the standard error of the mean. The two asterisks denote p<0.01 (rank sum test). (C) Values. Thick red and blue lines denote $Q_{1}$ and $Q_{2}$, respectively. Note that the firing rates of the two neurons in (B) are a linear function of these values. Thin red and blue lines denote the estimates of $Q_{1}$ and $Q_{2}$, respectively, based on the choices and rewards in (A). The similarity between the thick and thin lines indicates that the parameters of the model can be accurately estimated from the behavior (see also Materials and methods). (D) and (E) Population analysis. (D) Example of 500 simulated action-value neurons from randomly chosen sessions. Each dot corresponds to a single neuron and the coordinates correspond to the t-values of the\u00a0regression of the spike counts on the estimated values of the two actions. Dashed lines at t=2 denote the significance boundaries. Color of dots denote significance: dark red and blue denote a significant regression coefficient on\u00a0exactly one estimated action-value, action 1 or action 2, respectively; light blue \u2013 significant regression coefficients on both estimated action-values with similar signs ($\u03a3Q)$); orange - significant regression coefficients on both estimated action-values with opposite signs ($\u0394Q)$); Black \u2013 no significant regression coefficients. The two simulated neurons in (B) are denoted by squares. (E) Fraction of neurons in each category, estimated from 20,000 simulated neurons in 1,000 sessions. Error bars denote the standard error of the mean. Dashed lines denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods).\n\nTo simulate learning behavior, we used the Q-learning framework (Equations 1 and 2 with $\\alpha=0.1$ and $\\beta=2.5$ (taken from distributions reported in [Kim et al., 2009]) and initial conditions $Q_{i}1=0.5$). As demonstrated in Figure 1A, the model learned: the probability of choosing the more rewarding alternative increased over trials (black line). To model the action-value neurons, we simulated neurons whose firing rate is a linear function of one of the two Q-values and whose spike count in a 1 sec trial is randomly drawn from a corresponding Poisson distribution (see Materials and methods). The firing rates and spike counts of two such neurons, representing action-values 1 and 2, are depicted in Figure 1B in red and blue, respectively.\n\nOne standard method for identifying action-value neurons is to compare neurons' spike counts after learning, at the end of the blocks (horizontal bars in Figure 1B). Considering the red-labeled Poisson neuron, the spike count in the last 20 trials of the second block, in which the probability of reward associated with action 1 was 0.9, was significantly higher than that count in the first block, in which the probability of reward associated with action 1 was 0.1 (p<0.01; rank sum test). By contrast, there was no significant difference in the spike counts between the third and fourth blocks, in which the probability of reward associated with action 1 was equal (p=0.91; rank sum test). This is consistent with the fact that the red-labeled neuron was an action 1-value neuron: its firing rate was a linear function of the value of action 1\u00a0(Figure 1B,\u00a0red) Similarly for the blue labeled neuron, the spike counts in the last 20 trials of the first two blocks were not significantly different (p=0.92; rank sum test), but there was a significant difference in the counts between the third and fourth blocks (p<0.001; rank sum test). These results are consistent with the probabilities of reward associated with action 2 and the fact that in our simulations, this neuron\u2019s firing rate was modulated by the value of action 2 (Figure 1B, blue).\n\nThis approach for identifying action-value neurons is limited, however, for several reasons. First, it considers only a fraction of the data, the last 20 trials in a block. Second, action-value neurons are not expected to represent the block average probabilities of reward. Rather, they will represent a subjective estimate, which is based on the subject-specific history of actions and rewards. Therefore, it is more common to identify action-value neurons by regressing the spike count on subjective action-values, estimated from the subject\u2019s history of choices and rewards (Funamizu et al., 2015; Ito and Doya, 2015a; Ito and Doya, 2015b; Kim et al., 2009; Lau and Glimcher, 2008; Samejima et al., 2005). Note that when studying behavior in experiments, we have no direct access to these estimated action-values, in particular because the values of the parameters $\\alpha$ and $\\beta$ are unknown. Therefore, following common practice, we estimated the values of $\\alpha$ and $\\beta$ from the model\u2019s sequence of choices and rewards using maximum likelihood, and used the estimated learning rate ($\\alpha$) and the choices and rewards to estimate the action-values (thin lines in Figure 1C, see Materials and methods). These estimates were similar to the true action-value, which underlay the model\u2019s choice behavior (thick lines in\u00a0Figure 1C).\n\nNext, we regressed the spike count of each simulated neuron on the two estimated action-values from its corresponding session. As expected, the t-value of the regression coefficient of the red-labeled action 1-value neuron was significant for the estimated $Q_{1}$\u00a0$t_{182}Q_{1}=4.05$ but not for the estimated $Q_{2}$\u00a0$t_{182}Q_{2}=-0.27$. Similarly, the t-value of the regression coefficient of the blue-labeled action 2-value neuron was significant for the estimated $Q_{2}$\u00a0$t_{182}Q_{2}=3.05$ but not for the estimated $Q_{1}$\u00a0$t_{182}Q_{1}=0.78$.\n\nA population analysis of the t-values of the two regression coefficients is depicted in\u00a0Figure 1D,E. As expected, a substantial fraction (42%) of the simulated neurons were identified as action-value neurons. Only 2% of the simulated neurons had significant regression coefficients with both action-values. Such neurons are typically classified as state $(\u03a3Q)$ or policy (also known as preference) $(\u0394Q)$ neurons, if the two regression coefficients have the same or different signs, respectively (Ito and Doya, 2015a). Note that despite the fact that by construction, all neurons were action-value neurons, not all of them were detected as such by this method. This failure occurred for two reasons. First, the estimated action-values are not identical to the true action-values, which determine the firing rates. This is because of the finite number of trials and the stochasticity of choice (note the difference, albeit small, between the thin and thick lines in Figure 1C). Second and more importantly, the spike count in a trial is only a noisy estimate of the firing rate because of the Poisson generation of spikes.\n\nSeveral prominent studies have implemented the methods we described in this section and reported that a substantial fraction (10\u201340% depending on significance threshold) of striatal neurons represent action-values (Ito and Doya, 2015a; Ito and Doya, 2015b; Samejima et al., 2005). In the next two sections we show that these methods, and similar methods employed by other studies (Cai et al., 2011; FitzGerald et al., 2012; Funamizu et al., 2015; Guitart-Masip et al., 2012; Her et al., 2016; Ito and Doya, 2009; Kim et al., 2013; Kim et al., 2009; Kim et al., 2012; 2007; Lau and Glimcher, 2008; Stalnaker et al., 2010; Wang et al., 2013; Wunderlich et al., 2009) are all subject to at least one of two major confounds.\n\n### Confound 1 \u2013 temporal correlations\n\n#### Simulated random-walk neurons are erroneously classified as action-value neurons\n\nThe red and blue-labeled neurons in Figure 1D were classified as action-value neurons because their t-values were improbable under the null hypothesis that the firing rate of the neuron is not modulated by action-values. The significance threshold (t\u00a0=\u00a02) was computed assuming that trials are independent in time. To see why this assumption is essential, we consider a case in which it is violated. Figure 2A depicts the firing rates and spike counts of two simulated Poisson neurons, whose firing rates follow a bounded Gaussian random-walk process:\n\n$$\nft+1=ft+zt_{+}\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two example random-walk neurons that appear as if they represent action-values. The red (top) and blue (bottom) lines denote the estimated action-values 1 and 2, respectively that were depicted in Figure 1C. Gray lines and gray dots denote the firing rates and the spike counts of two example random-walk neurons that were randomly assigned to this simulated session. Black horizontal lines denote the mean spike count in the last 20 trials of each block. Error bars denote the standard error of the mean. The two asterisks denote p<0.01 (rank sum test).\u00a0(B) and (C) Population analysis. Each random-walk neuron was regressed on the two estimated action-values, as in Figure 1D and E. Numbers and legend are the same as in Figure 1D and E. The two random-walk neurons in (A) are denoted by squares in (B). Dashed lines in (B) at t=2 denote the significance boundaries. Dashed lines in (C) denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). (D) Fraction of random-walk neurons classified as action-value neurons (red), and classified as state neurons ($\u03a3Q$)\u00a0or policy neurons ($\u0394Q$) (green) as a function of the magnitude of the diffusion parameter of random-walk ($\\sigma$). Light red and light green are standard error of the mean. Dashed lines denote the results for $\\sigma$=0.1, which is the value of the diffusion parameter used in (A)-(C). Initial firing rate for all neurons in the simulations is $f1=2.5$Hz.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) An example of operant learning by the covariance model (see Materials and methods). Legend is the same as in Figure 1A. (B) Two example covariance neurons that appear is if they represent action-values. The red (top) and blue (bottom) lines denote the calculated action-values 1 and 2, respectively, that were computed from the behavior of the model. Gray lines and gray dots denote the firing rates and the spike counts of two example covariance neurons. Black horizontal lines denote the mean spike count in the last 20 trials of each block. Error bars denote the standard error of the mean. The two asterisks denote p<0.01 (rank sum test). Legend is the same as in Figure 2A. (C) and (D) Population analysis. Same as in Figure 1D and E. Each simulated neuron was regressed on the computed action-values. The two simulated neurons in (B) are denoted by squares in (C). Results in (D) are based on 500 sessions with 2000 simulated neurons in a session. Legend is the same as in Figure 1D and E. Dashed lines in (C) at t\u00a0=\u00a02 denote the significance boundaries. Dashed lines in (D) denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). Error bars denote the\u00a0standard error of the mean. Following this standard approach, 43% of the covariance neurons were erroneously classified as representing action-values.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) and (B) motor cortex neurons (A) An example motor cortex neuron recorded in a BMI task, presented as if the sequence of spike counts of this neuron corresponds to the sequence of trials in a randomly chosen session of operant learning from the sessions used for the population analysis in Figure 1E. Gray dots denote the spike-counts. Black horizontal line denotes the mean spike counts in the last 20 trials of the assigned blocks. Error bars denote the standard error of the mean. The two asterisks denote p<0.01 (rank sum test). For each neuron, we computed the t-values of the regression of the spike count on the two corresponding estimated action-values. The red line denotes the action-value whose t-value exceeded 2 (in absolute value). (B) Population analysis. Left scatter plot, the t-values of 89 neurons regressed on the estimated action-values of 89\u00a0randomly selected sessions (same as Figure 1D). The neuron in (A) is denoted by a square. Dashed lines at t\u00a0=\u00a02 denote the significance boundaries. Right bar chart, fraction of neurons classified in each category, estimated by regressing each of the 89 motor cortex neurons on 80 different estimated action-values from 40 randomly selected sessions. Dashed lines denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). Error bars denote the standard error of the mean. Legend is the same as in Figure 1D and E. (C) and (D) auditory cortex neurons from (Hershenhoren et al., 2014). (C) Same as in (A) for an auditory cortex neuron in an anesthetized rat responding to the presentation of pure tones. (D) Population analysis. Left scatter plot, the t-values of 82 recorded sessions from auditory neurons regressed on the estimated action-values of 82\u00a0randomly selected sessions (same as (B)). The neuron in (C) is denoted by a square. Right bar chart, fraction of neurons classified in each category, estimated by regressing 125 recorded sessions from auditory cortex neurons on 80 different estimated action-values from 40 randomly selected sessions (in each session, 34% of recordings were excluded on average, see Materials and methods). Error bars denote the standard error of the mean. Following this standard approach, 36% of the motor cortex neurons and 23% of the auditory cortex neurons were erroneously classified as representing action-values.\u00a0These results demonstrate that the magnitude of non-stationarity in standard electrophysiological recordings is sufficient to result in an erroneous identification of neurons as representing action-values.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Population analysis on basal ganglia neurons. Spike counts were regressed on estimated action-values\u00a0that\u00a0were created in the same experimental setting as in Figure 1. To compare with the number of blocks and trials used in the original analysis, we simulated sessions with more blocks, so that the original four blocks were repeated in random permutation, and with a weaker bias towards the higher-valued action ($\\beta=1$). The average number of blocks and trials used in this analysis is 6 and 516.5, respectively. Left scatter plot, the t-values of\u00a0the 214 neurons from (Ito and Doya, 2009) in three different phases regressed on the estimated action-values from 642\u00a0randomly selected simulated sessions (same analysis as in Figure 2\u2014figure supplement 2B,D). Dashed lines at t\u00a0=\u00a02 denote the significance boundaries. Right bar chart, fraction of neurons classified in each category, estimated by regressing the\u00a0214 neurons in three different phases on 80 different estimated action-values from 40 randomly selected sessions (see Materials and methods). Dashed lines denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). Error bars denote the standard error of the mean. Legend is the same as in Figure 1D and E. This analysis erroneously classified 43% of the neurons as action-value neurons, despite the fact that these action-values were completely unrelated to the experimental session in which these neurons were recorded.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Conducting this analysis using the\u00a0four data sets and unrelated, simulated action-values we erroneously detect action-value representation in all data sets.\u00a0(A) (B) (C) and (D) denote the random-walk neurons, motor cortex neurons, auditory cortex neurons and basal ganglia neurons, respectively. Left, t-values from regressions of the original spike-count on the estimated action-values. Green triangles denote significant modulation by action-value according to the permuted spike-count analysis (see Materials and methods). Legend otherwise\u00a0is the same as in\u00a0Figure 1D.\u00a0Dashed black lines at t=2 denote the significance boundaries that would be used in the standard analysis. Right, fraction of neurons significantly modulated by action-value according to the permuted spike-count analysis across the population (0.05, expected by chance, is denoted by a horizontal dashed line). Error bars are standard error of the mean. Number of neurons used in (A) (B) (C) and (D) is the same as in\u00a0Figure 2,\u00a0Figure 2\u2014figure supplement 2A\u2013B,\u00a0Figure 2\u2014figure supplement 2C\u2013D\u00a0and\u00a0Figure 2\u2014figure supplement 3, respectively. Note that in all four cases the two t-values are correlated. This results from the correlation between $Q_{1}t$ and $Q_{2}t$ caused by the reward schedule in (Kim et al., 2009).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Following (Kim et al., 2013), we simulated the experimental settings in (Kim et al., 2013) to create simulated action-values (see also Meterials and methods on Figure 2\u2014figure supplement 4, with the same experimental design, but with a different statistical analysis) and conducted a multiple linear regression analysis on each of the unrelated data sets, using the simulated action-values and the following regression model: $s(t)=\\beta_{0}+\\beta_{1}Q_{1}(t)+\\beta_{2}Q_{2}(t)+\\beta_{3}C(t)+\\beta_{4}R(t)+\\beta_{5}C(t)\u22c5R(t)+\\beta_{6}CV(t)+\\beta_{7}s(t\u22121)+\\beta_{8}s(t\u22122)+\\beta_{9}s(t\u22123)+\u03f5(t)$ where $s(t)$ is the spike count in trial $t$, $Q_{1}t$ and $Q_{2}t$ are the estimated action-values in trial $t$, $Ct$ is the action chosen in trial $t$, $Rt$ is the reward in trial $t$, $Ct\u2219Rt$ is the interaction between choice and reward in trial $t$, where both are expressed as binary with values {-1,1}, $CV(t)$ is the value of the action that was chosen on trial $t$, $s(t\u22121),\u00a0s(t\u22122),\u00a0s(t\u22123)$ are the spike counts one, two and three trials prior to the\u00a0current trial, $\u03f5t$ is the residual error in trial $t$ and $\\beta_{0-9}$ are the regression parameters. (A) (B) (C) and (D) denote the random-walk neurons, motor cortex neurons, auditory cortex neurons and basal ganglia neurons, respectively. Left, t-values from the\u00a0regression\u00a0of the spike-counts\u00a0on\u00a0$Q_{1}$\u00a0and\u00a0$Q_{2}$\u00a0in the regression model. The significance boundaries for the t-values, denoted by dashed lines, are 2.3, corresponding to p<0.025. Right, fraction of neurons significantly modulated by action-value across the population (0.05, expected by chance, is denoted by a horizontal dashed line). Error bars are standard error of the mean. Number of neurons used in (A) (B) (C) and (D) is the same as in Figure 2,\u00a0Figure 2\u2014figure supplement 2A\u2013B,\u00a0Figure 2\u2014figure supplement 2C\u2013D\u00a0and Figure 2\u2014figure supplement 3, respectively. Legend is the same as in Figure 1D. Note that in all four cases the two t-values are correlated. This results from the correlation between $Q_{1}t$ and $Q_{2}t$ caused by the reward schedule in (Kim et al., 2013).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Following (Ito and Doya, 2009; Samejima et al., 2005) for each of the four data-sets (A) random-walk (B) motor cortex (C) auditory cortex and (D) basal ganglia neurons, spike counts in the last 20 trials in each block (from randomly assigned simulated experimental settings, the assignment was the same as in the standard analysis in Figure 2,\u00a0Figure 2\u2014figure supplement 2A\u2013B,\u00a0Figure 2\u2014figure supplement 2C\u2013D\u00a0and Figure 2\u2014figure supplement 3 ) were regressed on reward probabilities (e.g., (0.5,0.9)) in those blocks. This is similar to the analysis in the individual examples of Figures 1B and 2A,\u00a0Figure 2\u2014figure supplement 1B,\u00a0Figure 2\u2014figure supplement 2A, and Figure 2\u2014figure supplement 2C (in which two rank sum tests, and not regression, were used). Left of each panel denotes the t-values of the regressions of individual neurons (Dashed lines at t\u00a0=\u00a02 denote the significance boundaries) and right bar graphs denote the population statistics (Dashed lines denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). Number of neurons used in (A) (B) (C) and (D) is the same as in Figure 2, Figure 2\u2014figure supplement 2A\u2013B, Figure 2\u2014figure supplement 2C\u2013D and Figure 2\u2014figure supplement 3, respectively. Legend is the same as in Figure 1D and E. Note that for this analysis we considered significance using the threshold of p<0.05. By contrast, in (Ito and Doya, 2009) the same analysis was used with a significance threshold of p<0.01. For comparison, when considering the basal ganglia neurons with a significance threshold of p<0.01, the number of neurons that are erroneously classified as action-value neurons decreases from 37 \u00b1 3.3% to 26 \u00b1 3%.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Following (Ito and Doya, 2015a), we conducted a multiple linear regression analysis using unrelated action-values (the same action-values as in Figure 2\u2014figure supplement 6) and the following regression model:\u00a0$s(t)=\\beta_{0}+\\beta_{1}Q_{1}(t)+\\beta_{2}Q_{2}(t)+\\beta_{3}t+\\beta_{4}C(t)+\\beta_{5}C(t\u22121)+\\beta_{6}R(t)+\\beta_{7}R(t\u22121)+\u03f5(t)$Where $s(t)$ is the spike count in trial $t$, $Q_{1}t$ and $Q_{2}t$ are the estimated action-values in trial $t$, $Ct$ and $Ct-1$ are the actions chosen in trial $t$ and $t-1$, respectively, $Rt$ and $Rt-1$ are the rewards in trial $t$ and $t-1$, respectively, $\u03f5(t)$ is the residual error in trial $t$ and $\\beta_{0-7}$ are the regression parameters. (A) (B) (C) and (D) denote the random-walk neurons, motor cortex neurons, auditory cortex neurons and basal ganglia neurons, respectively. Left, t-values from regressions of the spike-counts on\u00a0$Q_{1}$\u00a0and\u00a0$Q_{2}$\u00a0in\u00a0the regression model. As in (Ito and Doya, 2015a), the significance boundaries for the t-values, denoted by dashed black lines, are 2.64, corresponding to p<0.01 (as opposed to p<0.05 elsewhere). Right bar graphs denote the population statistics. Dashed lines denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). Note, however, that the significance criterion is more stringent and the expected total number of identified action-value neurons by chance is only 2%. Number of neurons used in (A) (B) (C) and (D) is the same as in Figure 2, Figure 2\u2014figure supplement 2A\u2013B,\u00a0Figure 2\u2014figure supplement 2C\u2013D\u00a0and Figure 2\u2014figure supplement 3, respectively. Legend is the same as in Figure 1D and E.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Following (Wang et al., 2013) (whose main focus was state-value representation), we considered an unbiased classification of action-value neurons. (A) (B) (C) and (D) denote the random-walk neurons, motor cortex neurons, auditory cortex neurons and basal ganglia neurons, respectively. The t-values for the different neurons are identical to Figure 2\u2014figure supplement 6 (and unlike (Wang et al., 2013) this analysis used only the last 20 trials in each block). The f-value of each neuron was computed from the regression and a neuron was considered as non-significant (black dot) if p>0.01, denoted by the circle in the left panels. For the significant neurons, the dashed lines define eight equal-angle sectors, each corresponding to a different classification of the neuron. Right is the population analysis. Dashed lines denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). Note that the expected total number of identified significant neurons by chance is only 1%. Number of neurons used in (A) (B) (C) and (D) is the same as in Figure 2, Figure 2\u2014figure supplement 2A\u2013B, Figure 2\u2014figure supplement 2C\u2013D and Figure 2\u2014figure supplement 3, respectively. Legend is the same as in Figure 1D and E.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** In the spirit of the experiment conducted by (FitzGerald et al., 2012) we simulated an experiment, in which two different trial types are marked by cues, randomly selected every trial, and action-values are learned separately for each cue. Specifically, each session in this new design was created by a random intermingling of two different, randomly-selected sessions from those analyzed in Figure 1. The number of trials in the intermingled session was equal to the number of trials in one of the two randomly-selected original sessions.\u00a0As\u00a0a\u00a0result, we only used approximately the first half of each of the original sessions. We created 1000 such intermingled sessions. Next, we regressed the spike counts of neurons from each of the four data-sets (A) random-walk neurons, (B) motor cortex neurons (C) auditory cortex neurons and (D) basal ganglia neurons on the resulting intermingled estimated action-values. Left of each panel denotes the t-values of the regressions of individual neurons (Dashed lines at t\u00a0=\u00a02 denote the significance boundaries) and right bar graphs denote the population statistics (Dashed lines denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). Number of neurons used in (A) (B) (C) and (D) is the same as in Figure 2, Figure 2\u2014figure supplement 2A\u2013B, Figure 2\u2014figure supplement 2C\u2013D and Figure 2\u2014figure supplement 3, respectively. Legend is the same as in Figure 1D and E. These results show that even when using a design where trials are chosen randomly, there can still be temporal correlations in the predictors of the model. In this case, this occurs because the temporal correlations in each estimated action-value still create temporal correlations in the intermingled vector.\n\n![Figure 2\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig2-figsupp10-v2.jpg)\n\n**Figure 2\u2014figure supplement 10.:** We repeated the standard analysis with eight blocks,\u00a0so\u00a0that the four blocks from the experiment in Figure 1A were repeated twice, each time in random permutation. The mean length of the sessions was 347 trials (standard deviation 65 trials). For each of the three data-sets (A) random-walk neurons, (B) motor cortex neurons and (C) auditory cortex neurons, the spike-counts were regressed on the longer estimated action-values from the 8-block sessions (for auditory cortex analysis only 676 sessions with 370 or fewer trials were used). Left of each panel denotes the t-values of the regressions of individual neurons (Dashed lines at t\u00a0=\u00a02 denote the significance boundaries) and right bar graphs denote the population statistics (Dashed lines denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). Number of neurons used in (A), (B) and (C) is the same as in Figure 2, Figure 2\u2014figure supplement 2A\u2013B and Figure 2\u2014figure supplement 2C\u2013D, respectively. Legend is the same as in Figure 1D and E. We did not perform this analysis on the basal ganglia neurons because we already used longer sessions in the original analysis for these recordings (see Figure 2\u2014figure supplement 3).\n\nwhere $ft$ is the firing rate in trial $t$ (we consider epochs of 1 second as \u2018trials\u2019), $zt$ is a diffusion variable, randomly and independently drawn from a normal distribution with mean 0 and variance $\\sigma^{2}=0.01$ and $x_{+}$ denotes a linear-threshold function, $x_{+}=x$ if $x\\geq0$ and 0 otherwise.\n\nThese random-walk neurons are clearly not action-value neurons. Nevertheless, we tested them using the analyses depicted in Figure 1. To that goal, we randomly matched the trials in the simulation of the random-walk neurons (completely unrelated to the task) to the trials in the simulation depicted in Figure 1A. Then, we considered the spike counts of the random-walk neurons in the last 20 trials of each of the four blocks in Figure 1A (block being defined by the simulation of learning and is unrelated to the activity of the random-walk neurons). Surprisingly, when considering the top neuron in Figure 2A and utilizing the same analysis as in Figure 1B, we found that its spike count differed significantly between the first two blocks (p<0.01, rank sum test) but not between the last two blocks (p=0.28, rank sum test), similarly to the simulated action 1-value neuron of Figure 1B (red). Similarly, the spike count of the bottom random-walk neuron matched that of a simulated action 2-value neuron (compare with the blue-labeled neuron in Figure 1B; Figure 2A).\n\nMoreover, we regressed each vector of spike counts for 20,000 random-walk neurons on randomly matched estimated action-values from Figure 1E and computed the t-values (Figure 2B). This analysis erroneously classified 42% of these random-walk neurons as action-value neurons (see Figure 2C). In particular, the top and bottom random-walk neurons of Figure 2A were identified as action-value neurons for actions 1 and 2, respectively (squares in Figure 2B).\n\nTo further quantify this result, we computed the fraction of random-walk neurons erroneously classified as action-value neurons as a function of the diffusion parameter $\\sigma$ (Figure 2D). When $\\sigma$=0, the spike counts of the neurons in the different trials are independent and the number of random-walk neurons classified as action-value neurons is slightly less than 10%, the fraction expected by chance from a significance criterion of 5% and two statistical tests, corresponding to the two action-values. The larger the value of $\\sigma$, the higher the probability that a random-walk neuron will pass the selection criterion for at least one action-value and thus be erroneously classified as an action-value, state or policy neuron.\n\nThe excess action-value neurons in Figure 2 emerged because the significance boundary in the statistical analysis was based on the assumption that the different trials are independent from each other. In the case of a regression of a random-walk process on an action-value related variable, this assumption is violated. The reason is that in this case, both predictor (action-value) and the dependent variable (spike count) slowly change over trials, the former because of the learning and the latter because of the random drift. As a result, the statistic, which relates these two signals, is correlated between trials, violating the independence-of-trials assumption of the test. Because of these dependencies, the expected variance of the statistic (be it average spike count in 20 trials or the regression coefficient), which is calculated under the independence-of-trials assumption, is an underestimate of the actual variance. Therefore, the fraction of random-walk neurons classified as action-value neurons increases with the magnitude of the diffusion, which is directly related to the magnitude of correlations between spike counts in proximate trials (Figure 2D). The phenomenon of spurious significant correlations in time-series with temporal correlations has been described previously in the field of econometrics and a formal discussion of this issue can be found in (Granger and Newbold, 1974; Phillips, 1986).\n\n#### Is this confound relevant to the question of action-value representation in the striatum?\n\n##### Is a random-walk process a good description of striatal neurons\u2019 activity?\n\nThe Gaussian random-walk process is just an example of a temporally correlated firing rate and we do not argue that the firing rates of striatal neurons follow such\u00a0a process. However, any other type of temporal correlations, for\u00a0example, oscillations or trends, will violate the independence-of-trials assumption, and may lead to the erroneous classification of neurons as representing action-values. Such temporal correlations can also emerge from stochastic learning. For example, in Figure 2\u2014figure supplement 1 we consider a model of operant leaning that is based on covariance based synaptic plasticity (Loewenstein, 2008; Loewenstein, 2010; Loewenstein and Seung, 2006; Neiman and Loewenstein, 2013) and competition (Bogacz et al., 2006). Because such plasticity results in slow changes in the firing rates of the neurons, applying the analysis of Figure 1E to our simulations results in the erroneous classification of 43% of the simulated neurons as representing action-values. This is despite the fact that action-values are not computed as part of this learning, neither explicitly or implicitly.\n\n##### Are temporal correlations in neural recordings sufficiently strong to affect the analysis?\n\nTo test the relevance of this confound to experimentally-recorded neural activity, we repeated the analysis of Figure 2B,C on neurons recorded in two unrelated experiments: 89 neurons from extracellular recordings in the motor cortex of an awake monkey (Figure 2\u2014figure supplement 2A\u2013B) and 39 auditory cortex neurons recorded intracellularly in anaesthetized rats (Figure 2\u2014figure supplement 2C\u2013D; [Hershenhoren et al., 2014]). We regressed the spike counts on randomly matched estimated action-values from Figure 1E. In both cases we erroneously classified neurons as representing action-value in a fraction comparable to that reported in the striatum\u00a0(36\u00a0and\u00a023%, respectively).\n\n##### Strong temporal correlations in the striatum\n\nTo test the relevance of this confound to striatal neurons, we considered previous recordings from neurons in the nucleus accumbens (NAc) and ventral pallidum (VP) of rats in an operant learning experiment (Ito and Doya, 2009) and regressed their spike counts on simulated, unrelated action-values (using more blocks and trials than in Figure 1E, see Figure legend). Note that although the recordings were obtained during an operant learning task, the action-values that we used in the regression were obtained from simulated experiments and were completely unrelated to the true experimental settings. Again, we erroneously classified a substantial fraction of neurons (43%) as representing action-values, a fraction comparable to that reported in the striatum (Figure 2\u2014figure supplement 3).\n\n##### Haven't previous publications acknowledged this confound and successfully addressed it?\n\nWe conducted an extensive literature search to see whether previous studies have identified this confound and addressed it (see Materials and methods). Two studies noted that processes such as slow drift in firing rate may violate the independence-of-trials assumption of the statistical tests and suggested unique methods to address this problem (Kim et al., 2013; Kim et al., 2009): one method (Kim et al., 2009) relied on permutation of the spike counts within a block (Figure 2\u2014figure supplement 4, see Materials and methods) and another (Kim et al., 2013), used spikes in previous trials as predictors (Figure 2\u2014figure supplement 5). However, both approaches still erroneously classify unrelated recorded and random-walk neurons as action-value neurons (Figure 2\u2014figure supplements 4 and 5). The failure of both these approaches stems from the fact that a complete model of the learning-independent temporal correlations is lacking. As a result, these methods are unable to remove all the temporal correlations from the vector of spike-counts.\n\nOur literature search yielded four additional methods that have been used to identify action-value neurons. However, as depicted in Figure 2\u2014figure supplement 6 (corresponding to the analyses in [Ito and Doya, 2009; Samejima et al., 2005]), Figure 2\u2014figure supplement 7 (corresponding to the analysis in [Ito and Doya, 2015a]), Figure 2\u2014figure supplement 8 (corresponding to the analysis in [Wang et al., 2013]) and Figure 2\u2014figure supplement 9 (corresponding to a trial design experiment in [FitzGerald et al., 2012]), all these additional methods erroneously classify neurons from unrelated recordings and random-walk neurons as action-value neurons in numbers comparable to those reported in the striatum (Figure 2\u2014figure supplement 6\u20139). The fMRI analysis in (FitzGerald et al., 2012) focused on the difference between action-values rather than on the action-values themselves (see confound 2), and therefore we did not attempt to replicate it (and cannot attest to whether it is subject to the temporal correlations confound). We did, however, conduct the standard analysis on their unique experimental design - a trial-design experiment in which trials with different reward probabilities are randomly intermingled. Surprisingly, we erroneously detect action-value representation even when using this trial design (Figure 2\u2014figure supplement 9). This erroneous detection occurs because in this analysis, the regression\u2019s predictors are estimated action-values, which are temporally correlated. From this example it follows that even trial-design experiments may still be subject to the temporal correlations confound.\n\n##### Some previous publications used more blocks. Shouldn\u2019t adding blocks solve the problem?\n\nIn Figures 1 and 2 we considered a learning task composed of four blocks with a mean length of 174 trials (standard deviation 43 trials). It is tempting to believe that experiments with more blocks and trials (e.g., [Ito and Doya, 2009; Wang et al., 2013]) will be immune to this confound. The intuition is that the larger the number of trials, the less likely it is that a neuron that is not modulated by action-value (e.g., a random-walk neuron) will have a large regression coefficient on one of the action-values. Surprisingly,\u00a0however, this intuition is wrong. In Figure 2\u2014figure supplement 10 we show that doubling the number of blocks, so that the original blocks are repeated twice, each time in a random order, does not decrease the fraction of neurons erroneously classified as representing action-values. For the case of random-walk neurons, it can be shown that, contrary to this intuition, the fraction of erroneously identified action-value neurons is expected to increase with the number of trials (Phillips, 1986). This is because the expected variance of the regression coefficients under the null hypothesis is\u00a0inversely proportional to the degrees of freedom, which increase with the number of trials. As a result, the threshold for classifying a regression coefficient as significant decreases with the number of trials.\n\n#### Possible solutions to the temporal correlations confound\n\nThe temporal correlations confound has been acknowledged in the fMRI literature, and several methods have been suggested to address it, such as \u2018prewhitening\u2019\u00a0(Woolrich et al., 2001). However, these methods require prior knowledge, or an estimate of the predictor-independent temporal correlations. Both are impractical for the slow time-scale of learning and therefore are not applicable in the experiments we discussed.\n\nAnother suggestion is to assess the level of autocorrelations between trials in the data and to use it to predict the expected\u00a0fraction of erroneous classification of action-value neurons. However, using such a measure is problematic in the context of action-value representation because the autocorrelations relevant for the temporal correlations confound are those associated with the time-scale relevant for learning\u00a0- tens of trials. Computing such autocorrelations in experiments of a few hundreds of trials introduces substantial biases (Kohn, 2006; Newbold and Agiakloglou, 1993). Moreover, even when these autocorrelations are computed, it is not clear exactly\u00a0how they can be used to estimate the expected false positive rate for action-value classification.\n\nFinally, it has been suggested that the temporal correlation confound can be addressed by using repeating blocks and removing neurons whose activity is significantly different in identical blocks (Asaad et al., 2000; Mansouri et al., 2006). We applied this method by applying a design in which the four blocks of Figure 1 are repeated twice. However, even when this method was applied, a significant number of neurons were erroneously classified as representing action-values (Materials and methods).\n\nWe\u00a0therefore\u00a0propose two alternative approaches.\n\n##### Permutation analysis\n\nTrivially, an action-value neuron (or any task-related neuron) should be more strongly correlated with the action-value of the experimental session, in which the neuron was recorded, than with action-values of other sessions (recorded in different days). We propose to use this requirement in a permutation test, as depicted in Figure 3. We first consider the two simulated action-value neurons of Figure 1B. For each of the two neurons, we computed the t-values of the regression coefficients of the spike counts on each of the estimated action-values in all possible sessions (see Materials and methods). Figure 3A depicts the two resulting distributions of t-values. As a result of the temporal correlations, the 5% significance boundaries (vertical dashed lines), which are defined to be exceeded by exactly 5% of t-values in each distribution, are substantially larger (in absolute value) than 2, the standard significance boundaries. On\u00a0this\u00a0analysis, a neuron is significantly correlated with an action-value if the t-value of the regression on the action-value from its corresponding session exceeds the significance boundaries derived from the regression of its spike count on all possible action-values.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig3-v2.jpg)\n\n**Figure 3.:** (A) Red and blue correspond to red and blue - labeled neurons in Figure 1B. Arrow-heads denote the t-values from the\u00a0regressions on the estimated action-values from the session in which the neuron was simulated (depicted in Figure 1A). The red and blue histograms denote the t-values of the regressions of the spike-count on estimated action-values from different sessions in Figure 1E (Materials and methods). Dashed black lines denote the 5% significance boundary. In this analysis, the regression coefficient of neural activity on an action-value is significant if it exceeds these significance boundaries. Note that because of the temporal correlations, these significance boundaries are larger than \u00b12 (the significance boundaries in Figure 1,2). According to this permutation test the red-labeled but not the blue-labeled neuron is classified as an action-value neuron (B) Fraction of neurons classified in each category using the permutation analysis for the action-value neurons (green, Figure 1)\u00a0and random-walk neurons (yellow, Figure 2).Dashed lines denote the na\u00efve expected false positive rate from the significance threshold\u00a0(Materials and methods). Error bars denote the standard error of the mean. The test correctly identifies 29% of actual action-value neurons as such, while classification of random-walk neurons was at chance level. Analysis was done on 10,080 action-value neurons and 10,077 random-walk neurons from 504 simulated sessions (C) Light orange, fraction of basal ganglia neurons from (Ito and Doya, 2009) classified in each category when regressing the spike count of 214 basal ganglia neurons in three different experimental phases on the estimated action-values associated with their experimental session. This analysis classified 32% of neurons as representing action-values. Dark orange, fraction of basal ganglia neurons classified in each category when applying the permutation analysis. This test classified 3.6% of neurons as representing action-value. Dashed line denotes significance level of p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The standard analysis on the neuronal recordings taken from (Ito and Doya, 2009), using action-values estimated from the behavior in the sessions in which the neurons were recorded. The top and bottom scatter plots are identical, except for the significance boundries. They depict the t-values from the results of the regression of 640 of 642 neuronal recordings (214 neurons $\\times$ 3 phases) on the action-values that were estimated from the original experiment (see Materials and methods for estimation of action-values). Legend is the same as in Figure 1D and E (Dashed lines in the right panels at t=2,\u00a02.64 denote the significance boundaries and the dashed lines on the left panels denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). This analysis is different from the one used in (Ito and Doya, 2009), which was similar to the one described in (Figure 2\u2014figure supplement 6). Two neurons do not appear on the scatter plots, whose axes were bounded for ease of viewing. Their t-values were (2.44, 18.91) and (1.08, 16.96) for action-value 1 and 2, respectively. (B) For comparsion, we repeated the analysis using the random-walk neurons (Figure 2). The fraction of erroenusly\u00a0classified action-value neurons is comparable to that extracted from the experimental data. Remarkably, bias in favor of 'state'-representing neurons over 'policy'-representing neurons observed in the recorded neurons is also present in the random-walk neurons. This suggests that the overrepresentation of state neurons is not necessarily of biological significance.\n\nIndeed, when considering the Top (red) simulated action 1-value neuron, we find that its spike count has a significant regression coefficient on the estimated $Q_{1}$ from its session (red arrow) but not on the estimated $Q_{2}$ (blue arrow). Importantly, because the significance boundary exceeds 2, this approach is less sensitive than the original one (Figure 1) and indeed, the regression coefficients of the Bottom simulated neuron (blue) do not exceed the significance level (red and blue arrows) and thus this analysis fails to identify it as an action-value neuron. Considering the population of simulated action-value neurons of Figure 1, this analysis identified 29% of the action-value neurons of Figure 1 as such (Figure 3B, green), demonstrating that this analysis can identify action-value neurons. When considering the random-walk neurons (Figure 2), this method classifies only approximately 10% of the random-walk neurons as action-value neurons, as predicted by chance\u00a0(Figure 3B,\u00a0yellow). Similar results were obtained for the motor cortex and auditory cortex neurons (not shown).\n\n##### Permutation analysis of basal ganglia neurons\n\nImportantly, this permutation method can also be used to reanalyze the activity of previously\u00a0recorded neurons. To that goal, we considered the recordings reported in (Ito and Doya, 2009). The results of their model-free method (Figure 2\u2014figure supplement 6) imply that approximately 23% of the recorded neurons represent action-values at different phases of the experiment. As a first step, we estimated the action-values and regressed the spike counts in the different phases of the experiment on the estimated action-values, as in Figure 1 (activity in each phase is analyzed as if it is a different neuron; see Materials and methods). The results of this analysis implied that 32% of the neurons represent action values (p<0.01) (Figure 3\u2014figure supplement 1). Next, we applied the permutation analysis. Remarkably, this analysis yielded that only 3.6% of the neurons have a significantly higher regression coefficient on an action-value from their session than on other action-values (Figure 3C). Similar results were obtained when performing a similar model-free permutation analysis (regression of spike counts in the last 20 trials of the block on reward probabilities, not shown). These results raise the possibility that all or much of the apparent action-value representation in (Ito and Doya, 2009) is the result of the temporal correlations confound.\n\n##### Trial-design experiments\n\nAnother way of overcoming the temporal correlations confound is to use a trial design experiment. The idea is to randomly mix the reward probabilities, rather than use blocks as in Figure 1. For example, we propose the experimental design depicted in Figure 4A. Each trial is presented in one of four clearly\u00a0marked contexts (color coded). The reward probabilities associated with the two actions are fixed within a context but differ between the contexts. Within each context the participant learns to prefer the action associated with a higher probability of reward. Naively, we can regress the spike counts on the action-values estimated from behavior, as in Figure 1. However, because the estimated action-values are temporally correlated, this regression is still subject to the temporal correlations confound (Figure 2\u2014figure supplement 9). Alternatively, we can regress the spike counts on the reward probabilities. If the contexts are randomly mixed, then by construction, the reward probabilities are temporally independent. These reward probabilities are the objective action-values. After learning, the subjective action-values are expected to converge to these reward probabilities. Therefore, the reward probabilities can be used as proxies for the subjective action-values after a sufficiently large number of trials. It is thus possible to conduct a regression analysis on the spike counts at the end of the experiment, with reward probabilities as predictors that do not violate the independence assumption.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig4-v2.jpg)\n\n**Figure 4.:** (A) A Q-learning model was simulated in 1,000 sessions of 400 trials, where the original reward probabilities (same as in Figure 1A) were associated with different cues and appeared randomly. Learning was done separately for each cue. Top panel: The first 20 trials in an example session. Background colors denote the reward probabilities in each trial. Black circles denote the learned value of action-value 1 in each trial. Top and bottom black lines denote choices of action 1 and 2, respectively. Long and short lines denote rewarded and unrewarded trials, respectively. Bottom panels: Two examples of the grouping of trials with the same reward probabilities to show the continuity in learning. Note that the action-value changes only when action 1 is chosen because it is the action-value associated with action 1. (B) and (C) population analysis for action-value neurons. 20,000 action-value neurons were simulated from the model in (A), similarly to the action-value neurons in Figure 1. For each neuron, the spike-counts in the last 200 trials of the session were regressed on the reward probabilities (see Materials and methods). Legend is the same\u00a0as in Figure 1D\u2013E. Dashed lines in (B) at t=2 denote the significance boundaries. Dashed lines in (C) denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods). This analysis correctly identifies 59% of action-value neurons as such. (D) and (E) population analysis for random-walk neurons. 20,000 Random-walk neurons were simulated as in Figure 2. Same regression analysis as in (B) and (C). Only 8.5% of the\u00a0random-walk neurons were erroneously classified as representing action-values (9.5% chance level).\n\nTo demonstrate this method, we simulated learning in a session composed of 400 trials, randomly divided into 4 different contexts (Figure 4). Learning followed the Q-learning equations (Equations 1 and 2), independently for each context. Next, we simulated action-value neurons, whose firing rate is a linear function of the action-value in each\u00a0trial (dots in Figure 4A,\u00a0upper\u00a0panel). We regressed the spike counts of the neurons in the last 200 trials (approximately 50 trials in each context) on the corresponding reward probabilities (Figure 4B). Indeed, 59% of the neurons were classified this way as action-value neurons (Figure 4C,\u00a09.5% is chance level). By contrast, considering random-walk neurons, only 8.5% were erroneously classified as action-value neurons, a fraction expected by chance.\n\nThree previous studies used trial-designs to search for action-value representation in the striatum (Cai et al., 2011; FitzGerald et al., 2012; Kim et al., 2012). In two of them (Cai et al., 2011; Kim et al., 2012) the reward probabilities were explicitly cued and therefore their results can be interpreted in the framework of cue-values and not action-values (Padoa-Schioppa, 2011). Moreover, all these studies focused on significant neural modulation by both action-values or by their difference, analyses that support state or policy representations (Ito and Doya, 2015a). As discussed in details in the next section, policy representation can emerge without action-value representation (Darshan et al., 2014; Fiete et al., 2007; Fr\u00e9maux et al., 2010; Loewenstein, 2008; Loewenstein, 2010; Loewenstein and Seung, 2006; Neiman and Loewenstein, 2013; Seung, 2003; Urbanczik and Senn, 2009). Therefore, the results reported in (Cai et al., 2011; FitzGerald et al., 2012; Kim et al., 2012) cannot be taken as evidence for action-value representation in the striatum.\n\n### Confound 2 \u2013 correlated decision variables\n\nIn the previous sections we demonstrated that irrelevant temporal correlations may lead to the erroneous classification of neurons as representing action-values, even if their activity is task-independent. Here we address an unrelated confound. We show that neurons that encode different decision variables, in particular policy, may be erroneously classified as representing action-values. For clarity, we will commence by discussing this caveat independently of the temporal correlations confound. Specifically, we show that neurons whose firing rate encodes the policy (probability of choice) may be erroneously classified as representing action-values, even when this policy emerged in the absence of any implicit or explicit action-value representation. We will conclude by discussing a possible solution that addresses this and the temporal correlations confounds.\n\n#### Policy without action-value representation\n\nIt is well-known that operant learning can occur in the absence of any value computation, for\u00a0example, as a result of direct-policy learning (Mongillo et al., 2014). Several studies have shown that reward-modulated synaptic plasticity can implement direct-policy reinforcement learning (Darshan et al., 2014; Fiete et al., 2007; Fr\u00e9maux et al., 2010; Loewenstein, 2008; Loewenstein, 2010; Loewenstein and Seung, 2006; Neiman and Loewenstein, 2013; Seung, 2003; Urbanczik and Senn, 2009).\n\nFor concreteness, we consider a particular reinforcement learning algorithm, in which the probability of choice $Prat=1$ is determined by a single variable $W$ that is learned in accordance with\u00a0the REINFORCE learning algorithm (Williams, 1992): $Prat=1=\\frac{1}{1+e^{-W(t)}}$ where $\\DeltaWt=\\alpha\u2219(2\u2219Rt-1)\u2219(at-Prat=1)$, where $\\alpha$ is the learning rate, $Rt$ is the binary reward in trial $t$ and $at$ is a binary variable indicating whether action 1 was chosen in trial $t$. In our simulations $Wt=1=0$, $\\alpha=0.17$. For biological implementation of this algorithm see (Loewenstein, 2010; Seung, 2003).\n\nWe tested this model in the experimental\u00a0design of Figure 1\u00a0(Figure 5A). As expected, the model learned to prefer the action associated with a higher probability of reward, completing the four blocks within 228 trials on average (standard deviation 62 trials).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig5-v2.jpg)\n\n**Figure 5.:** (A) Behavior of the\u00a0model in\u00a0an example session, same as in Figure 1A for the direct-policy model. (B) Red and blue lines denote \u2018action-values\u2019 1 and 2, respectively, calculated from the choices and rewards in (A). Note that the model learned without any explicit or implicit calculation of action-values. The extraction of action-values in (B) is based on the fitting of Equation 1 to the learning behavior. (C) Strong correlation between policy from the direct-policy algorithm and action-values extracted by fitting Equation 1 to behavior. The three panels depict probability of choice as a function of the difference between the calculated action-values (left), \u2018$Q_{1}$\u2019\u00a0(center) and \u2018$Q_{2}$\u2019\u00a0(right). This correlation can cause policy neurons to be erroneously classified as representing action-values (D) and (E) Population analysis, same as in Figure 1D and E for the policy neurons. Legend and number of neurons are also as in Figure 1D and E. Dashed lines in (D) at t=2 denote the significance boundaries. Dashed lines in (E) denote the na\u00efve expected false positive rate from the significance threshold (see Materials and methods).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Regression analysis on policy neurons with choice as an added regressor. Following common experimental practice, we used the following regression model: $st=\\beta_{0}+\\beta_{1}Q_{1}t+\\beta_{2}Q_{2}t+\\beta_{3}(at=1)+\u03f5t$ where $s(t)$ is the spike count in trial $t$, $Q_{1}t$ and $Q_{2}t$ are the estimated action-values in trial $t$, $(at=1)$ is a binary variable indicating whether action 1 was chosen, $\u03f5t$ is the residual error in trial $t$ and $\\beta_{0-3}$ are the regression parameters. Simulated neurons are the same as in Figure 5E. Legend is the same as Figure 1D and E (Dashed lines in the right panels at t=2 denote the significance boundaries and the dashed lines on the left panels denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). (B) Unbiased analysis. Following (Wang et al., 2013), we considered an analysis in which the probability of erroneous classification for data that is not related to the task is equal between action-value 1, action-value 2, state and policy. The f-value of each neuron was computed from the regression on the two calculated action-values and a neuron was considered as non-significant (black dot) if p>0.05, denoted by the circle in the left figure. For the significant neurons, the dashed lines define 8 equal-angle sectors, each corresponding to a different classification of the neuron, similarly to Figure 2\u2014figure supplement 8. The figure on the right is the population analysis (Dashed lines denote the na\u00efve expected false positive rate from the significance threshold, see Materials and methods). Note that the fraction of neurons that is expected to be classified as action-value neurons by chance is only 2.5%. Simulated neurons are the same as in Figure 5E. Legend is the same as in Figure 1D and E. In the original paper, p<0.01 was used. For p<0.01 the analysis classifies 6% of neurons as action-value neurons (0.5% expected by chance) and 17% as $\u0394Q$ neurons (0.25% expected by chance).\n\n#### Spike count of neurons representing policy are correlated with estimated \u0394Q\n\nDespite the fact that the learning was value-independent, we can still fit a Q-learning model to the behavior, extract best-fit model parameters and compute action-values (see also Figure 2\u2014figure supplement 1). The computed action-values are presented in Figure 5B. Note that according to Equation 2, the probability of choice is a monotonic function of the difference between $Q_{1}$ and $Q_{2}$. Therefore, we expect that the probability of choice will be correlated with the computed $Q_{1}$ and $Q_{2}$, with opposite signs (Figure 5C).\n\nWe simulated policy neurons as Poisson neurons whose firing rate is a linear function of the policy $Pr(a(t)=1)$ (Materials and methods). Next, we regressed the spike counts of these neurons on the two action-values that were computed from behavior (same as in Figures 1D,E and 2B,C, Figure 2\u2014figure supplement 1C,D, \u2013 Figure 2\u2014figure supplement 2B,D, \u2013 Figure 2\u2014figure supplement 3). Indeed, as expected, 14% of the neurons were significantly correlated with both action values with opposite signs (chance level for each action value is 5%, na\u00efve chance level for both with opposite signs is 0.125%, see Materials and methods), as depicted in Figure 5D,E. These results demonstrate that neurons representing value-independent policy can be erroneously classified as representing $\u0394Q$.\n\n#### Neurons representing policy may be erroneously classified as action-value neurons\n\nSurprisingly, 38% of policy neurons were significantly correlated with exactly one estimated action-value, and therefore would have been classified as action-value neurons in the standard method of analysis (9.5% chance level).\n\nTo understand why this erroneous classification emerged, we note that a neuron is classified as representing an action-value if its spike count is significantly correlated with one of the action values, but not with the other. The confound that led to the classification of policy neurons as representing action-values is that a lack of statistically significant correlation is erroneously taken to imply lack of correlation. All policy neurons are modulated by the probability of choice, a variable that is correlated with the difference in the two action-values. Therefore, this probability of choice is expected to be correlated with both action-values, with opposite signs. However, because the neurons are Poisson, the spike count of the neurons is a noisy estimate of the probability of choice. As a result, in most cases (86%), the regression coefficients do not cross the significance threshold for both action-values. More often (38%), only one of them crosses the significance threshold, resulting in an erroneous classification of the neurons as representing action values.\n\n#### Is this confound relevant to the question of action-value representation in the striatum?\n\n##### If choice is included as a predictor, is policy representation still a relevant confound?\n\nIt is common, (although not ubiquitous) to attempt to differentiate action-value representation from choice representation by including choice as another regressor in the regression model (Cai et al., 2011; FitzGerald et al., 2012; Funamizu et al., 2015; Her et al., 2016; Ito and Doya, 2015a; Ito and Doya, 2015b; Kim et al., 2013; Kim et al., 2009; Kim et al., 2012; Lau and Glimcher, 2008). Such analyses may be expected to exclude policy neurons, whose firing rate is highly correlated with choice, from being classified as action-value neurons. However, repeating this analysis for the policy neurons of Figure 5, we still erroneously\u00a0classify 36% of policy neurons as action-value neurons (Figure 5\u2014figure supplement 1A).\n\nAn alternative approach has been to consider only those neurons whose spike count is not significantly correlated with choice (Stalnaker et al., 2010; Wunderlich et al., 2009). Repeating this analysis for\u00a0the Figure 5 policy neurons, we still find that 24% of the neurons are erroneously classified as action-value neurons (8% are classified as policy neurons).\n\n##### Is this confound the result of an analysis that is biased against policy representation?\n\nThe analysis depicted in Figures 1D,E, 2B,C, 4B\u2013E and 5D,E is biased towards classifying neurons as action-value neurons, at the expense of state or policy neurons, as noted by (Wang et al., 2013). This is because action-value classification is based on a single significant regression coefficient whereas policy or state classification requires two significant regression coefficients. Therefore, (Wang et al., 2013) have proposed an alternative approach. First, compute the statistical significance of the whole regression model for each neuron (using f-value). Then, classify those significant neurons according to the t-values corresponding\u00a0to the two action-values (Figure 5\u2014figure supplement 1B). Applying this analysis to the policy neurons of Figure 5 with a detection threshold of 5% we find that indeed, this method is useful in detecting which decision variables are more frequently represented (its major use in [Wang et al., 2013]): 25% of the neurons are classified as representing policy (1.25% expected by chance). Nevertheless, 12% of the neurons are still erroneously\u00a0classified as action-value neurons (2.5% expected by chance; Figure 5\u2014figure supplement 1B).\n\n##### Additional issues\n\nIn many cases, the term action-value was used, while the reported results were equally consistent with other decision variables. In some cases, significant correlation with both action-values (with opposite signs) or significant correlation with the difference between the action-values was used as evidence for \u2018action-value representations\u2019 (FitzGerald et al., 2012; Guitart-Masip et al., 2012; Kim et al., 2012; 2007; Stalnaker et al., 2010). Similarly, other papers did not distinguish between neurons whose activity is significantly correlated with one action-value and those whose activity is correlated with both action-values (Funamizu et al., 2015; Her et al., 2016; Kim et al., 2013; Kim et al., 2009). Finally, one study used a concurrent variable-interval schedule, in which the magnitudes of rewards associated with each action were anti-correlated (Lau and Glimcher, 2008). In such a design, the two probabilities of reward depend on past choices and therefore, the objective\u00a0values associated with the actions change\u00a0on\u00a0a trial-by-trial\u00a0basis and are, in general, correlated.\n\n#### A possible solution to the policy confound\n\nThe policy confound emerged because policy and action-values are correlated. To distinguish between the two possible representations, we should seek a variable that is correlated with the action-value but uncorrelated with the policy. Consider the sum of the two action-values. It is easy to see that $CorrQ_{1}+Q_{2},Q_{1}-Q_{2}\u221dVarQ_{1}-VarQ_{2}$. Therefore, if the variances of the two action-values are equal, their sum is uncorrelated with their difference. An action-value neuron is expected to be correlated with the sum of action-values. By contrast, a policy neuron, modulated by the difference in action-values is expected to be uncorrelated with this sum.\n\nWe repeated the simulations of Figure 4 (which addresses the temporal correlations confound), considering three types of neurons: action-value neurons (of Figure 1), random-walk neurons (of Figure 2), and policy neurons (of Figure 5). As in Figure 4, we considered the spike counts of the three types of neurons in the last 200 trials of the session, but now we regressed them on the sum of reward probabilities (state; in this experimental design the reward probabilities are also the objective action-values, which the subject learns). We found that only 4.5 and 6% of the random-walk and policy neurons, respectively, were significantly correlated with the sum of reward probabilities (5% chance\u00a0level). By contrast, 47% of the action-value neurons were significantly correlated with this sum.\n\nThis method is able to distinguish between policy and action-value representations. However, it will fail in the case of state representation because both state and action-values are correlated with the sum of probabilities of reward. To dissociate between state and action-value representations, we can consider the difference in reward probabilities because this difference is correlated with the action-values but is uncorrelated with the state. Regressing the spike count on both the sum and difference of the probabilities of reward, a random-walk neuron is expected to be correlated with none, a policy neuron is expected to be correlated only with the difference, whereas an action-value neuron is expected to be correlated with both (this analysis is inspired by Fig. S8b in (Wang et al., 2013) in which the predictors in the regression model were policy and state). We now classify a neuron that passes both significance tests as an action-value neuron. Indeed, for a significance threshold of p<0.05 (for each test), only 0.2% of the random-walk neurons and 5% of the policy neurons were classified as action-value neurons. By contrast, 32% of the action-value neurons were classified as such\u00a0(Figure 6). Note that in this analysis only when more than 5% of the neurons are classified as action-value neurons we have support for the hypothesis that there is action-value\u00a0representation rather than policy or state representation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34248/elife-34248-fig6-v2.jpg)\n\n**Figure 6.:** (A) The Q-learning model (Equations 1 and 2) was simulated in 1,000 sessions of 400 trials each, where the reward probabilities were associated with different cues and were randomly chosen in each trial, as in Figure 4. Learning occurred separately for each cue. In each session 20 action-value neurons, whose firing rate is proportional to the action-values (as in Figure 1) were simulated. For each neuron, the spike-counts in the last 200 trials of each session were regressed on the sum of the reward probabilities ($\u03a3Q$; state) and the difference of the reward probabilities ($\u0394Q$; policy, see Materials and methods). Each dot denotes the t-values of the two regression coefficients of each of 500 example neurons. Dashed lines at t=2 denote the significance boundaries. Neurons that had significant regression coefficients on both policy and state were identified as action-value neurons. Colors as in Figure 1D. (B) Population analysis revealed that 32% of the action-value neurons were identified as such. Error bars are the standard error of the mean. Dashed black line denotes the expected false positive rate from randomly modulated neurons. Dashed gray line denotes the expected false positive rate from policy or state neurons (see Materials and methods) (C) Same as in (A) with random-walk neurons, numbers are as in Figure 2. (D) Population analysis revealed that less than 1% of the random-walk neurons were erroneously classified as representing action-values. (E-F) To test the policy neurons, we simulated a direct-policy learning algorithm (as in Figure 5) in the same sessions as in (A-D). Learning occurred separately for each cue. In each session 20 policy neurons, whose firing rate is proportional to the probability of choice (as in Figure 5) were simulated. As in (A-D), the spike-counts in the last 200 trials of each session were regressed on the sum and difference of the reward probabilities. (E) Each dot denotes the t-values of the two regression coefficients of\u00a0each of 500 example neurons. (F) Population analysis. As expected, only 5% of the policy neurons were erroneously classified as representing action-values.\n\nA word of caution is that the analysis should be performed only after the learning converges. This is because stochastic fluctuations in the learning process may be reflected in the activities of neurons representing decision-related variables. As a result, policy or state-representing neurons may appear correlated with the orthogonal variables. For the same reason, any block-related heterogeneity in neural activity could\u00a0also result in this confound (O'Doherty, 2014).\n\nTo conclude, it is worthwhile repeating the key features of the analysis proposed in this section:\n\n## Discussion\n\nIn this paper, we performed a systematic literature search to discern the methods that have been previously used to infer the representation of action-values in the striatum. We showed that none of these methods overcome two critical confounds: (1) neurons with temporal correlations in their firing rates may be erroneously classified as representing action-values and (2) neurons whose activity co-varies with other decision variables, such as policy, may also be erroneously classified as representing action-values. Finally, we discuss possible experiments and analyses that can address the question of whether neurons encode action-values.\n\n### Temporal correlations and action-value representations\n\nIt is well known in statistics that the regression coefficient between two independent slowly-changing variables is on average larger (in absolute value) than this coefficient when the series are devoid of a temporal structure. If these temporal correlations are overlooked, the probability of a false-positive is underestimated (Granger and Newbold, 1974). When searching for action-value representation in a block design, then by construction, there are positive correlations in the predictor (action-values). Positive temporal correlations in the dependent variable (neural activity) will result in an inflation of the false-positive observations, compared with the na\u00efve expectation.\n\nThis confound occurs only when there are temporal correlations in both the predictor and the dependent variable. In a trial design, in which the predictor is chosen independently in each trial and thus has no temporal structure, we do not expect this confound. However, when studying incremental learning, it is difficult to randomize the predictor in each trial, making the task of identifying neural correlates of learning, and specifically action-values, challenging. With respect to the dependent variable (neural activity), temporal correlations in BOLD signal and their consequences have been discussed (Arbabshirani et al., 2014; Woolrich et al., 2001). Considering electrophysiological recordings, there have been attempts to remove these correlations, for\u00a0example, using previous spike counts as predictors (Kim et al., 2013). However, these are not sufficient because they are unable to remove all task-independent temporal correlations (see also Figure 2\u2014figure supplements 4\u201310). When repeating these analyses, we erroneously classified a fraction of neurons as representing action-value that is comparable to that reported in the striatum. The probability of a false-positive identification of a neuron as representing action-value depends on the magnitude and type of temporal correlations in the neural activity. Therefore, we cannot predict the fraction of erroneously classified neurons expected in various experimental settings and brain areas.\n\nOne may argue that the fact that action-value representations are reported mostly in a specific brain area, namely the striatum, is an indication that their identification there is not a result of the temporal correlations confound. However, because different brain regions are characterized by different spiking statistics, we expect different levels of erroneous identification of action-value neurons in different parts of the brain and in different experimental settings. Indeed, the fraction of erroneously identified action-value neurons differed between the auditory and motor cortices (compare B and D within Figure 2\u2014figure supplement 2). Furthermore, many studies reported action-value representation outside of the striatum, in brain areas including the supplementary motor area and presupplementary eye fields (Wunderlich et al., 2009), the substantia nigra/ventral tegmental area (Guitart-Masip et al., 2012) and ventromedial prefrontal cortex, insula and thalamus (FitzGerald et al., 2012).\n\nConsidering the ventral striatum, our analysis on recordings from (Ito and Doya, 2009) indicates that the identification of action-value representations there may have been erroneous, resulting from temporally correlated firing rates (Figure 3 and Figure 2\u2014figure supplement 3). It should be noted that the fraction of action-value neurons reported in (Ito and Doya, 2009) is low relative to other publications, a difference that has been attributed to the location of the recording in the striatum (ventral as opposed to dorsal). It would be interesting to apply this method to other striatal recordings (Ito and Doya, 2015a; Samejima et al., 2005; Wang et al., 2013). We were unable to directly analyze these recordings from the dorsal striatum because relevant raw data is not publicly available. However, previous studies have reported that the firing rates of dorsal-striatal neurons change slowly over time (Gouv\u00eaa et al., 2015; Mello et al., 2015). As a result, identification of apparent action-value representation in dorsal-striatal neurons may also be the result of this confound.\n\nTemporal correlations naturally emerge in experiments composed of multiple trials. Participants become satiated, bored, tired, etc., which may affect neuronal activity. In particular, learning in operant tasks is associated, by construction, with variables that are temporally correlated. If neural activity is correlated with performance (e.g., accumulated rewards in the last several trials) then it is expected to have temporal correlations, which may lead to an erroneous classification of the neurons as representing action-values.\n\n### Temporal correlations \u2013 beyond action-value representation\n\nAction-values are not the only example of slowly-changing variables. Any variable associated with incremental learning, motivation or satiation is expected to be temporally correlated. Even 'benign' behavioral variables, such as the location of the animal or the activation of different muscles may change at relatively long time-scales. When recording neural activity related to these variables, any temporal correlations in the neural recording, be it in fMRI, electrophysiology or calcium imaging may result in an erroneous identification of correlates of these behavioral variables because of the temporal correlation confound.\n\nIn general, the temporal correlation confound can be addressed by using the permutation analysis of Figure 3, which can provide strong support to the claim that the activity of a particular neuron or voxel co-varies with the behavioral variable. Therefore, the permutation test is a general solution for scientists studying slow processes such as learning. More challenging, however, is precisely identifying what the activity of the neuron represents (for example an action-value or policy). There are no easy solutions to this problem and therefore caution should be applied when interpreting the data.\n\n### Differentiating action-value from other decision variables\n\nAnother difficulty in identifying action-value neurons is that they are correlated with other decision variables such as policy, state or chosen-value. Therefore, finding a neuron that is significantly correlated with an action-value could be the byproduct of its being modulated by other decision variables, in particular policy. The problem is exacerbated by the fact that standard analyses (e.g., Figure 1D\u2013E) are biased towards classifying neurons as representing action-values at the expense of policy or state.).\n\nAs shown in Figure 6, policy representation can be ruled out by finding a representation that is orthogonal to policy, namely state representation. This solution leads us, however, to a serious conceptual issue. All analyses discussed so far are based on significance tests: we divide the space of hypothesis into the \u2018scientific claim\u2019 (e.g., neurons represent action-values) and the null hypothesis (e.g., neural activity is independent of the task). An observation that is not consistent with the null hypothesis is taken to support the alternative hypothesis.\n\nThe problem we faced with correlated variables is that the null hypothesis and the \u2018scientific claim\u2019 were not complementary. A neuron that represents policy is expected to be inconsistent with the null hypothesis that neural activity is independent of the task but it is not an action-value neuron. The solution proposed was to devise a statistical test that seeks to identify a representation that is correlated with action-value and is orthogonal to the policy hypothesis, in order to also rule out a policy representation.\n\nHowever, this does not rule out other decision-related representations. A \u2018pure\u2019 action-value neuron is modulated only by $Q_{1}$ or by $Q_{2}$. A \u2018pure\u2019 policy neuron is modulated exactly by $Q_{1}-Q_{2}$. More generally, we may want to consider the hypotheses that the neuron is modulated by a different combination of the action values, $a\u2219Q_{1}+b\u2219Q_{2}$, where a and b are parameters. For every such set of parameters a and b we can devise a statistical test to reject this hypothesis by considering the direction that is orthogonal to the vector $a,b$. In principle, this procedure should be repeated for every pair of parameters a and b that in not consistent with the action-value hypothesis.\n\nPut differently, in order to find neurons that represent action-values, we first need to define the set of parameters a and b such that a neuron whose activity is modulated by $a\u2219Q_{1}+b\u2219Q_{2}$ will be considered as representing an action-value. Only after this (arbitrary) definition is given, can we construct a set of statistical tests that will rule out the competing hypotheses, namely will rule out all values of a and b that are not in this set. The analysis of Figure 6 implicitly defined the set of a and b such that $a\\neqb$ and $a\\neq-b$ as the set of parameters that defines action-value representations. In practice, it is already very challenging to identify action-values using the procedure of Figure 6 and going beyond it seems impractical. Therefore, studying the distribution of t-values across the population of neurons may be more useful when studying representations of decision variables than asking questions about the significance of individual neurons.\n\nImportantly, the regression models described in this paper allow us to investigate only some types of representations, namely, linear combinations of the two action-values. However, value representations in learning models may fall outside of this regime. It has been suggested that in decision making, subjects\u00a0calculate\u00a0the ratio of action-values (Worthy et al., 2008), or that subjects compute, for each action, the probability that it is associated with the highest value (Morris et al., 2014). Our proposed solution cannot support or refute these alternative hypotheses. If these are taken as additional alternative hypotheses, a neuron should be classified as representing an action-value if its activity is also significantly modulated in the directions that are correlated with action-value and are orthogonal to these hypotheses. Clearly, it is never possible to construct an analysis that can rule out all possible alternatives.\n\nWe believe that the confounds that we described have been overlooked because the null hypothesis in the significance tests was not made explicit. As a result, the complementary hypothesis was not explicitly described and the conclusions drawn from rejecting the null hypothesis were too specific. That is, alternative plausible interpretations were ignored. It is important, therefore, to keep the alternative hypotheses explicit when analyzing the data, be it using significance tests or other methods, such as model comparison (Ito and Doya, 2015b).\n\n### Are action-value representations a necessary part of decision making?\n\nOne may argue that the question of whether neurons represent action-value, policy, state or some other correlated variable is not an interesting question. This is because all these correlated decision variables implicitly encode action-values. Even direct-policy models can be taken to implicitly encode action-values because policy is correlated with the difference between the action-values. However, we believe that the difference between action-value representation and representation of other variables is an important one, because it centers on the question of the computational model that underlies decision making in these tasks. Specifically, the implication of a finding that a population of neurons represents action-values is not that these neurons are involved somehow in decision making. Rather, we interpret this finding as supporting the hypothesis that action-values are explicitly computed in the brain, and that these action-values play a specific role in the decision making process. However, if the results are also consistent with various alternative computational models then this is not the case. Some consider action-value computation to be a necessary part of decision making. By contrast, however, we presented here two models of learning and decision making that do not entail this computation (Figure 2\u2014figure supplement 1, Figure 5). Other examples are discussed in (Mongillo et al., 2014; Shteingart and Loewenstein, 2014) and references therein.\n\n### Other indications for action-value representation\n\nSeveral trial-design experiments have associated cues with upcoming rewards and reported representations of expected reward, the upcoming action, or the interaction of action and reward (Cromwell and Schultz, 2003; Cromwell et al., 2005; Hassani et al., 2001; Hori et al., 2009; Kawagoe et al., 1998; Pasquereau et al., 2007). Another trial-design experiment reported representation of offer-value and chosen-value in the orbitofrontal cortex (Padoa-Schioppa and Assad, 2006). While such studies do not provide direct evidence for action-value representation, they do provide evidence for representation of closely\u00a0related decision variables (but see [O'Doherty, 2014]).\n\nThe involvement\u00a0of the basal ganglia in general and the striatum in particular in operant learning, planning and decision-making is well documented (Ding and Gold, 2010; McDonald and White, 1993; O'Doherty et al., 2004; Palminteri et al., 2012; Schultz, 2015; Tai et al., 2012; Thorn et al., 2010; Yarom and Cohen, 2011). However, there are alternatives to the possibility that the firing rate of striatal neurons represents action-values. First, as discussed above, learning and decision making do not entail action-value representation. Second, it is possible that action-value is represented elsewhere in the brain. Finally, it is also possible that the striatum plays an essential role in learning, but that the representation of decision variables there is distributed and neural activity of single neurons could reflect a complex combination of value-related features, rather than \u2018pure\u2019 decision variables. Such complex representations are typically found in artificial neural networks (Yamins and DiCarlo, 2016).\n\n### Action-value representation in the striatum requires further evidence\n\nConsidering the literature, both confounds have been partially acknowledged. Moreover, there have been some attempts to address them. However, as discussed above, even when these confounds were acknowledged and solutions were proposed, these solutions do not prevent the erroneous identification of action-value representation (see Figure 2\u2014figure supplements 4, 5 and 10, Figure 5\u2014figure supplement 1). We therefore conclude that to the best of our knowledge, all studies that have claimed to provide direct evidence that neuronal activity in the striatum is specifically modulated by action-value were either susceptible to the temporal correlations confound (Funamizu et al., 2015; Ito and Doya, 2009; 2015a; Ito and Doya, 2015b; Kim et al., 2013; Kim et al., 2009; Lau and Glimcher, 2008; Samejima et al., 2005; Wang et al., 2013), or reported results in a manner indistinguishable from policy (Cai et al., 2011; FitzGerald et al., 2012; Funamizu et al., 2015; Guitart-Masip et al., 2012; Her et al., 2016; Kim et al., 2013; Kim et al., 2009; Kim et al., 2012; 2007; Stalnaker et al., 2010; Wunderlich et al., 2009). Many studies presented action-value and policy\u00a0representations\u00a0separately, but were subject to the second confound (Ito and Doya, 2009; 2015a; Ito and Doya, 2015b; Lau and Glimcher, 2008; Samejima et al., 2005). Furthermore, it should be noted that not all studies investigating the relation between striatal activity and action-value representation have reported positive results. Several studies have reported that striatal activity is more consistent with direct-policy learning than with action-value learning (FitzGerald et al., 2014; Li and Daw, 2011) and one noted that lesions to the dorsal striatum do not impair action-value learning (Vo et al., 2014).\n\nFinally, we would like to emphasize that we do not claim that there is no representation of action-value in the striatum. Rather, our results show that special caution should be applied when relating neural activity to reinforcement-learning related variables. Therefore, the prevailing belief that neurons in the striatum represent action-values must await further tests that address the confounds discussed in this paper.\n\n## Materials and methods\n\n### Literature search\n\nIn order to thoroughly examine the finding of action-value neurons in the striatum, we conducted a literature search to find all the different approaches used to identify action-value representation in the striatum and see whether they are subject to at least one of the two confounds we described here.\n\nThe\u00a0key words \u2018action-value\u2019 and \u2018striatum\u2019 were searched for in Web-of-Knowledge, Pubmed and Google Scholar, returning 43, 21 and 980 results, respectively. In the first screening stage, we excluded all publications that did not report new experimental results (e.g., reviews and theoretical papers), focused on other brain regions, or did not address value-representation or learning. In the remaining publications, the abstract of the publication was read and the body of the article was searched for \u2018action-value\u2019 and \u2018striatum\u2019. After this step, articles in which it was possible to find description of action-value representation in the striatum were read thoroughly. The search included PhD theses, but none were found to report new relevant data, not found in papers. We identified 22 papers that directly related neural activity in the striatum to action-values. These papers included reports of single-unit recordings, fMRI experiments and manipulations of striatal activity.\n\nOf these, two papers have used the term action-value to refer to the value of the chosen action (also known as chosen-value) (Day et al., 2011; Seo et al., 2012) and therefore we do not discuss them.\n\nAn additional study (Pasquereau et al., 2007) used the expected reward and the chosen action as predictors of the neuronal activity and found neurons that were modulated by the expected reward, the chosen action and their interaction. The authors did not claim that these neurons represent action-values, but it is possible that these neurons were modulated by the values of specific actions. However, the representation of the value of the action when the action is not chosen is a crucial part of action-value representation which differentiates it from the representation of expected reward, and the values of the actions when they were not chosen were not analyzed in this study. Therefore, the results of this study cannot be taken as an indication for action-value representation, rather than other decision variables.\n\nA second group of 11 papers did not distinguish between action-value and policy representations (Cai et al., 2011; Funamizu et al., 2015; Her et al., 2016; Kim et al., 2013; Kim et al., 2009; Wunderlich et al., 2009), or reported policy representation (FitzGerald et al., 2012; Guitart-Masip et al., 2012; Kim et al., 2012; 2007; Stalnaker et al., 2010) in the striatum and therefore their findings do not necessarily imply action-value representation, rather than policy representation in the striatum (see confound 2).\n\nIn two additional papers, it was shown that the activation of striatal neurons changes animals\u2019 behavior, and the results were interpreted in the action-value framework (Lee et al., 2015; Tai et al., 2012). However, a change in policy does not entail an action-value representation (see, for example, Figure 5 and Figure 2\u2014figure supplement 1). Therefore, these papers were not taken as strong support to the striatal action-value representation hypothesis.\n\nFinally, six papers correlated action-values, separately from other decision variables, with neuronal activity in the striatum (Ito and Doya, 2009; 2015a; Ito and Doya, 2015b; Lau and Glimcher, 2008; Samejima et al., 2005; Wang et al., 2013). All of them used electrophysiological recordings of single units in the striatum. From these papers, only one utilized an analysis which is not biased towards identifying action-value neurons at the expense of policy and state neurons (Wang et al., 2013). All papers used block-design experiments where action-values are temporally correlated.\n\nTaken together, we concluded that previous reports on action-value representation in the striatum could reflect the representation of other decision variables or temporal correlations in the spike count that are not related to action-value learning.\n\n### The action-value neurons model (Figure 1,\u00a0Figure 4)\n\nTo model neurons whose firing rate is modulated by an action-value, we considered neurons whose firing rate changes according to:\n\n$$\nf(t)=B+K\u22c5r\u22c5(Q_{i}(t)\u22120.5)\n$$\n\nWhere $ft$ is the firing rate in trial $t$, $B=2.5$Hz is the baseline firing rate, $Q_{i}t$ is the action-value associated with one of the actions $i\\in1,2$, $K=2.35$Hz is the maximal modulation and $r$ denotes the neuron-specific level of modulation, drawn from a uniform distribution, $r~U-1,1$. The spike count in a trial was drawn from a Poisson distribution, assuming a 1 sec-long trial.\n\n### The policy neurons model (Figure 5)\n\nTo model neurons whose firing rate is modulated by the policy, we considered neurons whose firing rate changes according to:\n\n$$\nf(t)=B+K\u22c5r\u22c5(Pr(a(t)=1)\u22120.5)\n$$\n\nWhere $ft$ is the firing rate in trial $t$, $B=2.5$Hz is the baseline firing rate, $Prat=1$ is the probability of choosing action 1 in trial $t$ that changes in accordance with REINFORCE (Williams, 1992) (see also Figure 5 and corresponding text). $K=3$Hz is the maximal modulation and $r$ denotes the neuron-specific level of modulation, drawn from a uniform distribution, $r~U-1,1$. The spike count in a trial was drawn from a Poisson distribution, assuming a 1 sec-long trial.\n\n### The covariance neurons model (Figure 2\u2014figure supplement 1)\n\nIn the covariance based plasticity model the decision-making network is composed of two populations of Poisson neurons: each neuron is characterized by its firing rate and the spike count of a neuron in a trial (1 sec) is randomly drawn from a Poisson distribution. The chosen action corresponds to the population that fires more spikes in a trial (Loewenstein, 2010; Loewenstein and Seung, 2006). At the end of the trial, the firing rate of each of the neurons (in the two population) is updated according to $ft+1=ft+\u03b7\u2219R(t)\u2219st-ft$, where $ft$ is the firing rate in trial $t$, $\u03b7=0.07$ is the learning rate, $R(t)$ is the reward delivered in trial $t$ ($R(t)\\in0,1$ in our simulations) and $st$ is the measured (realized) firing rate in that trial, that is the spike count in the trial. The initial firing rate of all simulated neurons is 2.5Hz. The network model was tested in the operant learning task of Figure 1. A session was terminated (without further analysis) if the model was not able to choose the better option more than 14\u00a0out\u00a0of\u00a020 consecutive\u00a0times for at least 200 trials in the same block. This occurred on 20% of the sessions. We simulated two populations of 1,000 neurons in 500 successful sessions.\u00a0Note that because on average, the empirical firing rate is equal to the true firing rate, $ft=st$, changes in the firing rate are driven, on average, by the covariance of reward and the empirical firing rate: $\\Deltaft\u2261ft+1-ft=\u03b7\u2219covRt,st$(Loewenstein and Seung, 2006). The estimated action-values in Figure 2\u2014figure supplement 1 were computed from the actions and rewards of the covariance model by assuming the Q-learning model (Equations 1 and 2).\n\n### The motor cortex recordings (Figure 2\u2014figure supplement 2)\n\nThe data in Figure 2\u2014figure supplement 2A\u2013B was recorded by Oren Peles in Eilon Vaadia's lab. It was recorded from one female monkey (Macaca fascicularis) at 3 years of age, using a 10 \u00d7 10 microelectrode array (Blackrock Microsystems) with 0.4 mm inter-electrode distance. The array was implanted in the arm area of M1, under anesthesia and aseptic conditions.\n\nBehavioral Task: The Monkey sat in a behavioral setup, awake and performing a Brain Machine Interface (BMI) and sensorimotor combined task. Spikes and Local Field Potentials were extracted from the raw signals of 96 electrodes. The BMI was provided through real time communication between the data acquisition system and a custom-made software, which obtained the neural data, analyzed it and provided the monkey with the desired visual and auditory feedback, as well as the food reward. Each trial began with a visual cue, instructing the monkey to make a small hand movement to express alertness. The monkey was conditioned to enhance the power of beta band frequencies (20-30Hz) extracted from the LFP signal of 2 electrodes, receiving a visual feedback from the BMI algorithm. When a required threshold was reached, the monkey received one of 2 visual cues and following a delay period, had to report which of the cues it saw by pressing one of two buttons. Food reward and auditory feedback were delivered based on correctness of report. The duration of a trial was on average 14.2s. The inter-trial-interval was 3s following a correct trial and 5s after error trials. The data used in this paper, consists of spiking activity of 89 neurons recorded during the last second of inter-trial-intervals, taken from 600 consecutive trials in one recording session. Pairwise correlations were comparable to previously reported (Cohen and Kohn, 2011), $r_{SC}=0.047\\pm0.17$ (SD), ($r_{SC}=0.037\\pm0.21$ for pairs of neurons recorded from the same electrode).\n\nAnimal care and surgical procedures complied with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and with guidelines defined by the Institutional Committee for Animal Care and Use at the Hebrew University.\n\n### The auditory cortex recordings (Figure 2\u2014figure supplement 2)\n\nThe auditory cortex recordings appearing in Figure 2\u2014figure supplement 2C\u2013D are described in detail in (Hershenhoren et al., 2014).\u00a0In short, membrane potential was recorded intracellularly in the auditory cortex of halothane-anesthetized rats. The data consists of 125 experimental sessions recorded from 39 neurons. Each session consisted of 370 pure tone bursts.\u00a0Tone duration was 50 ms with 5 ms linear rise/fall ramps.\u00a0In the data presented here, trials began 50 ms prior to the onset of the tone burst. For each session, all trials were either 300 msec or 500 msec long. Trial length remained identical throughout a session and depended on smallest interval between two tones in each session.\u00a0Spike events were identified following high pass filtering with a corner frequency of 30Hz. Local maxima that were larger than 60 times the median of the absolute deviation from the median (MAD) were classified as spikes. The data presented here consists only of the spike counts in\u00a0each\u00a0trial, rather than the full membrane potential trace.\n\n### The basal ganglia recordings (Figure 3 and Figure 2\u2014figure supplement 3)\n\nThe basal ganglia recordings that are analyzed in Figure 3 and Figure 2\u2014figure supplement 3 are described in detail in (Ito and Doya, 2009). In short, rats performed a combination of a tone discrimination task and a reward-based free-choice task. Extracellular voltage was recorded in the behaving rats from the NAc and VP using an electrode bundle. Spike sorting was done using principal component analysis. In total, 148 NAc and 66 VP neurons across 52 sessions were used for analyses (In 18 of the 70 behavioral sessions there were no neural recordings).\n\n### Estimation of action-values from choices and rewards\n\nTo imitate experimental procedures, we regressed the spike counts on estimates of the action-values, rather than the subjective action-values that underlay model behavior (to which the experimentalist has no direct access). For that goal, for each session, we assumed that $Q_{i}1=0.5$ and found the set of parameters $\\alpha^$ and $\\beta^$ that yielded the estimated action-values that best fit the sequences of actions in each experiment by maximizing the likelihood of the sequence. Action-values were estimated from Equation 1, using these estimated parameters and the sequence of actions and rewards. Overall, the estimated values of the parameters $\\alpha$ and $\\beta$ were comparable to the actual values used: on average, $\\alpha^=0.12\\pm0.09$ (standard deviation) and $\\beta^=2.6\\pm0.7$ (compare with $\\alpha$=0.1 and $\\beta$=2.5).\n\n### Exclusion of neurons\n\nFollowing standard procedures\u00a0(Samejima et al., 2005), a sequence of spike-counts, either simulated or experimentally measured was excluded due to low firing rate if the mean spike count in all blocks was smaller than 1. This procedure excluded 0.02% (4/20,000) of the random-walk neurons and 0.03% (285/1,000,000) of the covariance-based plasticity neurons. Considering the auditory cortex recordings, we assigned each of the 125 spike counts to 40 randomly-selected sessions. 23% of the neural recordings (29/125) were excluded in all 40 sessions. Because blocks are defined differently in different sessions, some neural recordings were excluded only when assigned to some sessions but not others. Of the remaining 96 recordings, 14% of the recordings\u00a0\u00d7\u00a0sessions were also excluded. Similarly, considering the basal ganglia neurons, we assigned each of the 642 recordings (214\u00a0\u00d7\u00a03 phases) to 40 randomly-selected sessions. 11% (74/(214\u00a0\u00d7\u00a03)) of the recordings were excluded in all 40 sessions. Of the remaining 568 recordings, 9% of the recordings\u00a0\u00d7\u00a0sessions were also excluded. None of the simulated action-value neurons (0/20,000) or the motor cortex neurons (0/89) were excluded.\n\n### Statistical analyses\n\nThe computation of the t-values of the regression of the spike counts on the estimated action-values (as in Figures 1, 2 and 5, Figure 2\u2014figure supplement 1, \u2013 Figure 2\u2014figure supplement 2, \u2013Figure 2\u2014figure supplement 3) was done using the following regression model:\n\n$$\ns(t)=\\beta_{0}+\\beta_{1}Q_{1}(t)+\\beta_{2}Q_{2}(t)+\u03f5(t)\n$$\n\nWhere $st$ is the spike count in trial $t$, $Q_{1}t$ and $Q_{2}t$ are the estimated action-values in trial $t$, $\u03f5t$ is the residual error in trial $t$ and $\\beta_{0-2}$ are the regression parameters.\n\nThe computation of the t-values of the regression of the spike counts on the reward probabilities in the trial design experiment (as in Figure 4) was done using the following regression model:\n\n$$\ns(t)=\\beta_{0}+\\beta_{1}RP_{1}(t)+\\beta_{2}RP_{2}(t)+\u03f5(t)\n$$\n\nWhere\u00a0$t$ denotes the trial. Only the last 200 trials of the session were anlyzed. $s(t)$ is the mean spike count, $RP_{1}t$ and $RP_{2}t$ are the reward probabilities corresponding\u00a0to action 1 or action 2, respectively (in this experimental design $RP$ could be 0.1,0.5 or 0.9), $\u03f5t$ is the residual error and $\\beta_{0-2}$ are the regression parameters.\n\nThe computation of the t-values of the regression of the spike counts on state and policy in a trial design experiment\u00a0(as\u00a0in\u00a0Figure 6)\u00a0was done using the following regression model:\n\n$$\ns(t)=\\beta_{0}+\\beta_{1}[RP_{1}(t)+RP_{2}(t)]+\\beta_{2}[RP_{1}(t)\u2212RP_{2}(t)]+\u03f5(t)\n$$\n\nAll variables and parameters are the same as in Equation 7\n\nAll regression analyses were done using regstats in MATLAB (version 2016A).\n\nTo compare the spike counts of the example neurons, in the last 20 trials of\u00a0each\u00a0block (Figure 1B; Figure 2\u2014figure supplement 1B; Figure 2\u2014figure supplement 2A; Figure 2\u2014figure supplement 2C; Figure 2A)\u00a0we executed the Wilcoxon rank sum test, using ranksum in MATLAB. All tests were two-tailed.\n\nSignificance of t-values slightly depends on session length. For the session lengths we considered, 0.05 significance bounds varied between 1.962 and 1.991. For consistency, we chose a single conservative bound of 2. Similarly, 0.025 and 0.01 significance bounds were chosen to be 2.3 and 2.64, respectively.\n\nFor all significance boundaries the false positive thresholds were computed naively, that\u00a0is, assuming the analysis is not confounded in any way and that the two predictors are not correlated with each other. For example, assuming the false positive rate from a single t-test for a significant regression coefficient is $P$, for the standard analysis, the false positive rate for each action-value classification was defined as $P\u2219(1-P)$, and the false positive rate was equal for state and policy classification and was defined as $P^{2}/2$. In Figure 6 the false positive rate computed for random-walk neurons was $P^{2}/2$ for each action-value\u00a0classification, and the false positive rate computed for state or policy neurons was $P/2$ for each action-value\u00a0classification.\n\n### Permutation test (Figure 3)\n\nFor each action-value and random-walk neuron, we computed the t-values of the regressions of its spike-count on estimated action-values from the sessions of Figure 1E. Because the number of trials can affect the distribution of t-values, we only considered in our analysis the first 170 trials of the 504 sessions longer or equal to 170 trials. This number, which is approximately the median of the distribution of number of trials per session, was chosen as a compromise between the number of trials per session and number of sessions.\u00a0When performing the permutation test on the basal ganglia data we included all recordings and only the first 332 trials in each session, which is the smallest number of trials used in a session in this dataset.\n\nTwo points are noteworthy. First, the distribution of the t-values of the regression of the spike count of a neuron on all action-values depends on the neuron (see difference between distributions in Figure 3A). Similarly, the distribution of the t-values of the regression of the spike counts of all neurons on an action-value depends on the action-value (not shown). Therefore, the analysis could be biased in favor (or against) finding action-value neurons if the number of neurons analyzed from each session (and therefore are associated with the same action-values) differs between sessions. Second, this analysis does not address the correlated decision variables confound.\n\nFinally, we would like to point out that there is an alternative way of performing the permutation test, which is applicable when the number of sessions is small, while the number of neurons recorded in a session is large. Instead of comparing the t-values from the regression of a neuron on different action-values, one can compare the t-values from different neurons on the same action-value. However, this method is only applicable under the assumption that the temporal correlations that are not related to action-value in the neuronal activity are similar between sessions.\n\n### Comparison with permuted spike counts (Figure 2\u2014figure supplement 4)\n\nIn Figure 2\u2014figure supplement 4 we considered the experiment and analysis described in (Kim et al., 2009). That experiment consisted of four blocks, each associated with a different pair of reward probabilities, (0.72, 0.12), (0.12, 0.72), (0.21, 0.63) and (0.63, 0.21), appearing in a random order, with the better option changing location with each block change. The number of trials in a block was preset, ranging between 35 and 45 with a mean of 40 (this is unlike the experiment described in Figure 1, in which termination of a block depended on performance).\n\nFirst, we used Equations 1 and 2 to model learning behavior in this protocol. Then, we estimated the action-values according to choice and reward sequences, as in Figure 1. These estimated action-values were used for regression of the spike counts of the random-walk, motor cortex, auditory cortex, and basal ganglia neurons in the following way: each spike count sequence was randomly assigned to a particular pair of estimated action-values from one session. The spike count sequence was regressed on these estimated action-values. The resultant t-values were compared with the t-values of 1000 regressions of the spike-count, permuted within each block, on the same action-values. The p-value of this analysis was computed as the percentage of t-values from the permuted spike-counts that were higher in absolute value than the t-value from the regression of the original spike count. The significance boundary was set at p<0.025 (Kim et al., 2009). Neurons with at least one significant regression coefficient (rather than exactly one significant regression coefficient) were classified as action-value modulated neurons (Kim et al., 2009).\n\n### ANOVA tests for comparisons between blocks, excluding \u2018drifting\u2019 neurons\n\nFollowing (Asaad et al., 2000) we conducted an additional analysis with repeating blocks. We simulated learning behavior in the same experiment as in Figure 2\u2014figure supplement 10. This experiment is composed of 8 blocks - the 4 blocks of Figure 1, repeated twice, in random permutation. We restricted our analysis to the 438 sessions with 332 trials or fewer (332 trials is the shortest session in the basal ganglia recording). Each spike count was analyzed 40 times, using 40 randomly-assigned sessions. For each block, we restricted the analysis to the neuronal activity in the last 20 trials of the block.\n\nFirst, we conducted four one-way ANOVAs (using MATLAB\u2019s anova1) to compare the neuronal activities in blocks associated with the same action-values (e.g., the neuronal activity in the two blocks, in which reward probabilities were (0.1,0.5)). Neurons were excluded from further analysis if we found a significant difference in their firing rates in at least one of these comparisons (df(columns)=1, df(error)=38, p<0.1). This procedure excludes from further analysis \u2018drifting\u2019 neurons, whose spike count significantly varied in the session.\n\nNext, for each action-value we conducted a one-way ANOVA (using MATLAB\u2019s anova1), which compared the neuronal activity between the two blocks in which the action-value was 0.1 and the two blocks in which the action-value was 0.9 (df(columns)=1, df(error)=78, p<0.01). We classified neurons as representing action-values if there was a significant difference between their firing rates for one action-value but not for the other.\n\nDespite the removal of \u2018drifting\u2019 neurons, this analysis yielded an erroneous classification of action-value neurons in all datasets: random-walk neurons, 18%; motor cortex neurons, 12%; auditory cortex neurons, 5%; basal ganglia neurons, 9%. This is despite the fact that the expected false positive rate is only 2%. These results indicate that the exclusion of \u2018drifting\u2019 neurons as in (Asaad et al., 2000) does not solve the temporal correlations confound.\n\nData from the motor cortex, auditory cortex, and basal ganglia was the same as in Figure 2\u2014figure supplements 2\u20133. Data for random-walk included 1000 newly simulated neurons, using the same parameters as in Figure 2 (this was done to create enough trials in each simulated spike count).\n\n### Data and code availability\n\nThe data of the basal ganglia recordings from (Ito and Doya, 2009) is available online at https://groups.oist.jp/ncu/data and was analyzed with permission from the authors. Motor cortex data (recorded by Oren Peles in Eilon Vaadia's lab) and auditory cortex data (taken from the recordings in (Hershenhoren et al., 2014)) is available at https://github.com/lotem-elber/striatal-action-value-neurons-reconsidered-codes (Elber-Dorozko and Loewenstein, 2018). The custom MATLAB scripts used to create simulated neurons and to analyze simulated and recorded neurons are also available at https://github.com/lotem-elber/striatal-action-value-neurons-reconsidered-codes\u00a0(Elber-Dorozko and Loewenstein, 2018;\u00a0copy archived at https://github.com/elifesciences-publications/striatal-action-value-neurons-reconsidered-codes).\n",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "a12335f3-57c0-4a92-b0a3-bd3f15ea98b3",
+      "submission_id": "93789589-7afc-4c02-bf24-85e247c58057",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy E Behrens, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34248.028](https://doi.org/10.7554/eLife.34248.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Striatal action-value neurons reconsidered\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nElber-Dorozko and Loewenstein examine issues using trial-by-trial spike data to determine whether neural activity is associated with action-values. First, they note that standard regression inference can lead to false detection of action-value correlations when samples are not independent. They illustrate the prevalence of false detections using simulation and data with no plausible relation to action-values. Second, they note that different reinforcement learning models without action-value representations can yield significant action-value coding when analyzed using prior approaches. The authors present well-thought-out analyses and data that highlight analytic, experimental and conceptual difficulties in identifying action-value coding. Although both issues the authors examine have been acknowledged in the literature, and different approaches have been made to deal with or minimize their potential effects, the authors' paper represents an important synthesis and analysis that will likely lead to clearer future experiments.\n\nHowever, there were several key concerns.\n\nFirstly, the reviewers thought that there should be a more careful attention to the wider literature. In the reviewer discussion, this was thought to be of particular importance as you are making a technical point in a journal with a broad readership. It is particularly important that you are clear about which parts of the literature your results speak to.\n\nFor example:\n\n1) The authors conclude that current methods of studying action-values are confounded, and propose that experiments should use actions whose reward values are not learned over time during the experiment, and instead are indicated by sensory cues with their values picked randomly on each trial.\n\nHowever, the authors leave unmentioned the large literature of studies taking an alternate approach: recording striatal activity during planning and execution of instructed actions for cued reward outcomes, in which each trial randomizes the instructed action, the reward, or both. The authors should discuss what implications this literature has for whether the striatum encodes action-values vs. policies vs. other variables. Examples include the work from the labs of Schultz (e.g. Hassani et al., 2001; Cromwell and Schultz, 2003; Cromwell et al., 2005), Hikosaka (e.g. Kawagoe et al., 1998; Lauwereyns et al., Neuron 2004), and Kimura (e.g. Hori et al., 2009).\n\nMost of these studies did not specifically claim that the activity they reported represents \"action-values\" in the reinforcement learning sense (and hence the present authors shouldn't feel obligated to try to debunk them), but they do seem highly relevant to the larger question the present authors raise. These studies did attempt to test whether neurons represented actions, values, and notably, their interaction (e.g. a cell whose activity scales more with action A's value than action B's value), which resembles the concept of \"action-value\".\n\nAlso, these studies may be somewhat resistant to the authors' criticisms about confounds from temporal correlations (since rewards were either explicitly cued, or kept deterministic and stable in well-learned blocks of trials, rather than slowly fluctuating during extended learning) and confounds with action probability (since the actions were instructed and hence a priori equally probable on each trial).\n\nOf particular interest, a paper by Pasquereau et al. (2007) seems to fulfill all the requirements the present authors set for a test of striatal action-value coding; if so, this seems worthy of mention. That study manipulated the reward value of four actions (up, down, left, right), randomly assigning their reward probabilities on each trial and indicating them with visual cues. Unfortunately, as the present authors note, the study did not explicitly analyze their results in the action-value vs. chosen-value framework. However, the paper did report that some neurons had significant action x value interactions \u2013 for example, a cell that is more active when planning rightward movements (action), with stronger activity when the planned movement was more valuable (value), and with this value-modulation greater for rightward movements than other movements (action x value). This is not a pure chosen-value signal as the present authors seem to claim that paper reported. One could argue that it contains a key feature of an action-value signal as the value modulation is strongest for one specific action.\n\n2) The authors correctly pointed out that some earlier studies of action value used a suboptimal task design and their conclusions need to be more rigorously validated. However, in the broader field, the potential risk of \"drift\" in neural recording has been well recognized. For example, \"Neurophysiological experiments that compare activity across different blocks of trials must make efforts to be confident that any neural effects are not the result of artifacts of that design, such as slow-wave changes in neural activity over time.\" (Asaad et al., 2000). In the same Asaad et al. paper, a better design with repeated, alternated block types was used, similar in concept to randomized block design that the authors proposed here. Such designs have also been used in many neural studies of cognition \u2013 to name just two examples: value manipulations (Lauwereyns et al., 2002), rule manipulations (Mansouri et al., 2006). The problem thus seems relatively limited to one type of analysis that introduces temporal correlation across trials in an effort to estimate Q values. By the authors' account, this amounts to 5 papers from 3 different labs.\n\n3) What about previous results arguing for prominence of a specific type of value representation? The authors touch on this, but it would be helpful to discuss specific results. In particular, the cited study of Wang et al., Nat Neuro 2003 reported that their unbiased angular measure of DMS value coding was distributed significantly non-uniformly, with net value (\u03a3Q) coding more prevalent than other types (their Figure 7). Whereas the null hypothesis simulations in this paper predict very different results, either a uniform distribution (Figure 2\u2014figure supplement 8) or a dearth of \u03a3Q neurons (Figure 5\u2014figure supplement 1). The authors should discuss whether this previous result can therefore still be interpreted as evidence of value coding (at least, net-value coding), rather than strictly policy coding, in the striatum.\n\n(Also, it is odd that the authors cite Wang et al. as a study that \"claimed to provide direct evidence that neuronal activity in the striatum is specifically modulated by action-value\", since the main result was specifically finding prevalence of net-value, not action-value coding).\n\n4) I found the authors' choice of basal ganglia data misleading (Ito and Doya, 2009). First, because these data are recordings from the nucleus accumbens and ventral pallidum, which are not the first basal ganglia structures one thinks of as encoding action values. Second, because the original authors of the study from which the data was obtained noted that action value coding was low in these structures, leading them to suggest that action value coding was not the primary function of the nucleus accumbens and ventral pallidum. This is mentioned in the Results subsection \u201cPermutation analysis of basal ganglia neurons\u201d, but should be noted in the Discussion (the current text in the Results could probably just be moved).\n\n5) Previous methods dealing with trial correlations have different success at reducing false positive rate of detecting action-values. In particular, the method of Wang et al. (2013) comes very close to attaining the correct size of the test for action-values. Indeed, it appears to be the only existing method from which one would reasonably conclude that the ventral striatal data set analyzed probably does not exhibit much action-value coding (2-3% above the expected 5%). I think it would be useful to have a figure in the main text comparing the different methods to the authors' permutation test (using for example, just the basal ganglia data set). In addition, Wang et al.\u2019s method is also pretty good at identifying policy neurons, which is important because it could be applied retrospectively to existing data sets.\n\n6) The authors' biggest suggestion for rigorously detecting a neural action value representation is \"Don't use a task with learning, use a trial-based design where subjects associate contexts with well-learned sets of action values\". That is perfectly fine for scientists whose goal is specifically to test whether a brain area encodes action values. However, what about the many scientists whose explicit goal is to study neural representation of time-varying values, and hence need to use learning tasks? Many scientists are studying (1) the neural basis of value learning, (2) brain areas specifically involved in early learning (not well-trained performance), (3) motivational variables specifically present for time-varying action values not well-trained ones (e.g. volatility, certain forms of uncertainty, etc.). If the authors can give an approach that will let these scientists make accurate estimates of neural time-varying value coding during learning tasks, that would certainly be valuable to the field.\n\nI feel like their methods could potentially be used to achieve this in a straightforward way (by combining their novel permutation test from Part 1 of their paper with their method of testing for correlation with both sum and difference of values from Part 2 of their paper). But they don't lay this out explicitly in their paper at present, since they are more focused on the narrower implication (\"Do striatal neurons encode action values?\") rather than the broader implication of their results (\"In general, how can one properly measure time-varying action values?\").\n\nSecondly, the reviewers had some particular concerns about the action value vs. policy representation issue. For example:\n\n1) Regarding the second confound of policy vs. action value:\n\n- The authors seem to be arguing against a straw-man version of how to relate neural activity to behavior. Typically we infer the underlying computations by testing how well different hypothesized models can fit the behavior and then search for correlates of the most likely computation in the brain. The authors seem to test only how well the neural activity correlates with different hypothesized models.\n\n- The proposed solution for distinguishing policy from action value also has a very high rate of false negative (78%).\n\n2) I feel that the point the authors make about action-value vs. policy representations may actually be underselling the true extent of the confound, and so their proposed solution may not be sufficient. However, this all depends on how the authors want to define a 'policy neuron' vs. a 'value neuron', as I explain below. I think they should clarify this.\n\n2.1) Their arguments seem to assume that neural policy representations are in the form of action probabilities, which can then be identified by the key signature that they relate to action-values in a 'relative' manner (e.g. an 'action 1' neuron that is correlated positively with Q1 must be correlated negatively with Q2), and hence will be best fit as encoding \u0394Q (Q1 \u2013 Q2). However, depending on how they define 'policy', this may not be the case.\n\nNotably, even for reinforcement learning agents that do not explicitly represent action-values, few of them directly learn a policy in its most raw form of a set of action probabilities. Instead, they represent the policy in a more abstract parameter space. The simplest parameterization is a vector of action strengths, one for each possible action. Then during a choice, the probability of each action is determined by applying a choice function (e.g. softmax) to the action strengths of the set of actions that are currently available. The choice's outcome is then used to do learning on the action strengths. This method is used by some traditional actor-critic agents (which represent state values and action strengths, but not action-values). My impression is that the authors' covariance-based model is similar, in that the variables that it updates when it learns are the input weights W1 and W2 to each pool (with one input weight for each action, thus being analogous to action strengths).\n\nNote that in these models, the action strengths are not explicitly represented in a 'relative' manner; only the resulting action probabilities are (since the probabilities must sum to 1). It's not clear to me whether a neuron encoding an action strength would be classified as a 'policy neuron' or an 'action-value neuron' by the authors' current framework, nor is it clear to me which outcome the authors would prefer. I believe the dynamics of actor-critic learning would cause the action strengths to be somewhat 'relative' (e.g. the best action is nudged toward positive strength while all others are nudged to negative strength), but I'm not sure big this effect would be, or whether this would also occur for the authors' covariance-based model, or whether this would occur if > 2 actions are available. It is possible that these types of learning tasks can't discriminate between action strengths (e.g. from an actor-critic) versus action-values (e.g. from a Q-learner). So, the authors should clarify whether they believe this is an important distinction for the present study.\n\n2.2) Suppose we agree that neurons only count as coding the policy if they encode action probability (and not strength). Their proposed solution still seems model-dependent because it assumes that the policy is such that the probability of choosing an action is a function of the difference in action-values (Q1 \u2013 Q2) and hence policy neurons can be identified as encoding \u0394Q and not \u03a3Q. However, there is data suggesting that humans and animals are also influenced by ratios of reward rates rather than just differences (e.g. \"Ratio vs. difference comparators in choice\", Gibbon and Fairhurst, J Exp Anal Behav 1994; \"Ratio and Difference Comparisons of Expected Reward in Decision Making Tasks\", Worthy, Maddox, and Markman, 2008). If so, then policy neuron activity could be related to a ratio (e.g. Q1 / Q2), which is correlated with both \u0394Q and \u03a3Q.\n\nHere is my proposed solution. It seems to me that if 'policy neurons' are equated to action probabilities, then the proper method of distinguishing policy from value coding would be to design a task that explicitly dissociates between the probability of choosing an action (encoded by policy neurons) and the action's value (encoded by action-value neurons). For instance, suppose an animal is found to choose based on the ratio of the reward rates, such that it chooses A 80% of the time when V(A) = 4*V(B). Then we can set up the following three trial types:\n\nV(A), V(B), p(choose A)\n\n8, 2, 80%\n\n4, 1, 80%\n\n4, 4, 50%\n\nA neuron encoding V(A) should be twice as active on the first trial type as the other two trial types (since V(A) is twice as high), while a neuron encoding the policy p(choose A) should be equally active on the first two trial types (since p(choose A) = 80%). Of course, more trial types might be desired to further dissociate this from encoding of \u03a3Q and \u0394Q. Also, note that this approach is model-dependent, because it requires a model of behavior to estimate the true p(action) on each trial (or else careful psychophysics to find two pairs of action-values that make the subject have the same action probabilities).\n\nIn general, to use this approach in a regression-based manner, one would (1) fit a model to behavior, (2) use the model to derive p(action,t) and V(action,t) for each action and each trial t, (3) fit neural activity as a function of those variables (and possibly others, such as the actually performed action, \u03a3Q, etc.), (4) test whether the neuron is significantly modulated by p(action), V(action), or both, controlling for temporal correlation using the authors' proposed method that uses task trajectories from other sessions as a control. Of course, if the model says that choice is indeed based on the value difference \u0394Q as the authors currently assume, then this approach would simplify to the same one the authors currently propose.\n\nThirdly, the reviewers raised some questions about the corrections proposed and whether there in fact remained evidence for action value coding in the Basal Ganglia.\n\n1) A critical assumption is that there exists temporal correlation strong enough to contaminate the analysis. It would be helpful to report the degree of this temporal correlation in the basal ganglia data set vs. the motor/auditory cortex data and the random walk model.\n\nA figure, in the format of Figure 1D, showing the distribution of t-values for the actual basal ganglia data set analyzed with trial-matched Q estimates should be presented. This information is critical for effective comparisons to other data sets.\n\n2) The authors proposed two possible solutions for this type of study. The first is to use a more stringent (and appropriate) criterion for significance, given the often wrongly assumed variance due to correlation. The permutation test is definitely in the right direction, particularly for reducing false positives. However, I am concerned by the really high rate of false negatives (~70% misses). \"Considering the population of simulated action-value neurons of Figure 1, this analysis identified 29% of the action-value neurons of Figure 1 as such\". Considering other unaccountable variables in typical experiments, particularly that basal ganglia neurons may have mixed selectivity both at the population and single-neuron level, such a high false negative rate seems to carry high risks of missing a true representation.\n\n3) The authors suggested randomized blocks as the second solution. In addition to my earlier point, by their own account, such a design is not new and has been implemented in three separate studies >5 years ago. The authors pointed out some issues with those studies, which will need to be addressed in the future, but did not suggest any solutions.\n\n4) The authors stated that the detrending analysis does not resolve the confound. However, judging from Figure 2\u2014figure supplement 7, the detrending analysis resulted in ~29% significant Q modulation in the basal ganglia, in contrast to ~14% for random walk, ~12% for motor cortex and 10% for auditory cortex. Compared to other figures, which showed similar percentage for all four datasets, it seems that the basal ganglia data set is most robust to this analysis. Doesn't this support the idea of an action value representation in the basal ganglia?\n\n5) The authors focus on statistical significance. Does examining the magnitude of the effects distinguish erroneous from \"real\" action value coding? It seems incomplete to only plot the t-values, which are important for understanding parameter precision, without presenting the parameters effect sizes. Can real action value coding be distinguished by effect sizes that were meaningfully large (i.e., substantive versus statistical significance)?\n\n6) Along related lines, it seems like examining the pattern of effects is also useful. When comparing Figure 1D and Figure 2B, one can see that the erroneous detections included positive and negative \u0394Q and \u03a3Q neurons, whereas for real detections (Figure 1D), there are much fewer of these neurons (by definition). All the erroneous detections generate spherical t-value plots, indicating that combinations of one or the other action value are independent. This seems not to be the case for real detections (in the authors simulations), nor in real data (Samejima et al., 2005). This suggests that any non-uniformity in detecting combinations of action value coding would be evidence that it is not erroneous (even if the type I error is not properly controlled).\n\n7) The simulations in Figure 2 are useful, but it would be useful to translate the diffusion parameter (\u03c3) of the random walk into an (auto) correlation. This would make it easier for a reader to interpret how this relates to real data.\n\n8) Is the M1 data a proper control? It is hard to tell from the task description here. I wouldn't be able to replicate the task that was used given the description here. If that M1 data is published, a citation would be helpful. My concerns are whether it might have had unusually large temporal correlations and thus exaggerated the degree to which such correlations might confound action-value studies, due to either (1) having blocks of trials (as opposed to randomly interleaved trial types), (2) being a BMI task in which animals were trained to induce the recorded ensemble to emit specific long-duration activity patterns.\n",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93c32488-ae82-4540-9498-a89b43ae3667",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C1",
+      "claim": "It is generally believed that during economic decisions, striatal neurons represent the values associated with different actions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally believed that during economic decisions, striatal neurons represent the values associated with different actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the prevailing belief in the field, supported by the literature review conducted in the paper.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "4b46fb9f-2bd0-493e-8e6e-cfaf32fd39c7",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C2",
+      "claim": "Weak temporal correlations in neuronal data may result in erroneous identification of action-value representations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that even weak temporal correlations in the neuronal data may result in an erroneous identification of action-value representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulations and analyses presented in the paper showing how temporal correlations lead to false positives.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "3ba0622f-eabd-4c89-9755-42b92433bdae",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C3",
+      "claim": "Experiments and analyses designed to dissociate action-value representation from the representation of other decision variables cannot do so.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we show that experiments and analyses designed to dissociate action-value representation from the representation of other decision variables cannot do so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing that policy neurons can be misclassified as action-value neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "e9ac52b6-94e5-4e0c-a839-49c4a30a79a7",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C4",
+      "claim": "Applying a permutation solution to previously identified action-value neurons in the basal ganglia fails to detect action-value representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying one solution to previously identified action-value neurons in the basal ganglia we fail to detect action-value representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the reanalysis of data from Ito and Doya (2009) using the permutation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "a3fa029f-91a9-4167-8b18-97da9b50dbee",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C5",
+      "claim": "The claim that striatal neurons encode action-values must await new experiments and analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the claim that striatal neurons encode action-values must await new experiments and analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the analyses presented in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "172e7479-d612-4ca2-85ad-fd2cc6362f42",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C7",
+      "claim": "The probability of choosing the more rewarding alternative increased over trials in the Q-learning model simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated in Figure 1A, the model learned: the probability of choosing the more rewarding alternative increased over trials (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A where the black line shows increasing probability of choosing the better action.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "135919e0-0e79-497b-aca6-15d21f419b9c",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C8",
+      "claim": "42% of simulated action-value neurons were identified as action-value neurons using standard regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a substantial fraction (42%) of the simulated neurons were identified as action-value neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the population analysis in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "400efc68-1e1a-4143-8a8c-da779f9c874d",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C9",
+      "claim": "Only 2% of simulated action-value neurons had significant regression coefficients with both action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 2% of the simulated neurons had significant regression coefficients with both action-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from the population analysis in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "cd86ae91-63bf-4cdd-9e8a-a3ca7767c894",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C10",
+      "claim": "Several prominent studies have reported that 10-40% of striatal neurons represent action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Several prominent studies have implemented the methods we described in this section and reported that a substantial fraction (10\u201340% depending on significance threshold) of striatal neurons represent action-values (Ito and Doya, 2015a; Ito and Doya, 2015b; Samejima et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "61420956-95cd-4c57-92db-d354763efd10",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C12",
+      "claim": "The significance threshold (t = 2) was computed assuming that trials are independent in time.",
+      "claim_type": "EXPLICIT",
+      "source": "The significance threshold (t = 2) was computed assuming that trials are independent in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the explanation of the temporal correlations confound.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "127b64d3-60af-4985-9562-49ab47898f11",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C14",
+      "claim": "36% of motor cortex neurons were erroneously classified as representing action-values when regressed on unrelated action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases we erroneously classified neurons as representing action-value in a fraction comparable to that reported in the striatum (36 and 23%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2B for motor cortex neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "6c56210e-938c-474d-9368-8d45de69cf16",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C15",
+      "claim": "23% of auditory cortex neurons were erroneously classified as representing action-values when regressed on unrelated action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases we erroneously classified neurons as representing action-value in a fraction comparable to that reported in the striatum (36 and 23%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2D for auditory cortex neurons from Hershenhoren et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "d7e2cb2d-7911-44d3-b9ce-43e6d2186850",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C16",
+      "claim": "43% of basal ganglia neurons from Ito and Doya (2009) were erroneously classified as action-value neurons when regressed on unrelated simulated action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, we erroneously classified a substantial fraction of neurons (43%) as representing action-values, a fraction comparable to that reported in the striatum (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by reanalysis of data from Ito and Doya (2009) shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "3522c3fb-6093-4ba5-9060-59baf5045b49",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C17",
+      "claim": "The permutation test correctly identifies 29% of actual action-value neurons as such.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the population of simulated action-value neurons of Figure 1, this analysis identified 29% of the action-value neurons of Figure 1 as such (Figure 3B, green)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B for the permutation analysis applied to simulated action-value neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "34b79fc0-2047-48c7-873d-444fa7ef3710",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C18",
+      "claim": "The permutation test classifies only approximately 10% of random-walk neurons as action-value neurons, as predicted by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the random-walk neurons (Figure 2), this method classifies only approximately 10% of the random-walk neurons as action-value neurons, as predicted by chance (Figure 3B, yellow).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B demonstrating that the permutation test reduces false positives to chance levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "cc2f9e7e-3307-4ae7-a13e-742b42ec07a4",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C19",
+      "claim": "The permutation analysis on basal ganglia neurons from Ito and Doya (2009) classified only 3.6% of neurons as representing action-value.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this analysis yielded that only 3.6% of the neurons have a significantly higher regression coefficient on an action-value from their session than on other action-values (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C for the permutation analysis applied to basal ganglia recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "55bf5591-b24f-44f0-bbae-373874df34c7",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C20",
+      "claim": "Operant learning can occur in the absence of any value computation through direct-policy learning.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-known that operant learning can occur in the absence of any value computation, for example, as a result of direct-policy learning (Mongillo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to support it.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "c1d69bc7-d8f5-4eec-9565-51baba014901",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C21",
+      "claim": "Several studies have shown that reward-modulated synaptic plasticity can implement direct-policy reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that reward-modulated synaptic plasticity can implement direct-policy reinforcement learning (Darshan et al., 2014; Fiete et al., 2007; Fr\u00e9maux et al., 2010; Loewenstein, 2008; Loewenstein, 2010; Loewenstein and Seung, 2006; Neiman and Loewenstein, 2013; Seung, 2003; Urbanczik and Senn, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "483f441b-834a-4a36-b32f-36310696ea91",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C22",
+      "claim": "The direct-policy REINFORCE model learned to prefer the action associated with a higher probability of reward, completing four blocks within 228 trials on average.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the model learned to prefer the action associated with a higher probability of reward, completing the four blocks within 228 trials on average (standard deviation 62 trials).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported from simulations of the REINFORCE model shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "66214d5b-3db3-4939-9c51-81466dda6e19",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C23",
+      "claim": "14% of policy neurons were significantly correlated with both estimated action values with opposite signs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as expected, 14% of the neurons were significantly correlated with both action values with opposite signs (chance level for each action value is 5%, na\u00efve chance level for both with opposite signs is 0.125%, see Materials and methods), as depicted in Figure 5D,E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the population analysis in Figure 5D,E for policy neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "5b6454ab-1ccd-4176-8c62-b8369c9a5db9",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C24",
+      "claim": "38% of policy neurons were significantly correlated with exactly one estimated action-value and would have been classified as action-value neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 38% of policy neurons were significantly correlated with exactly one estimated action-value, and therefore would have been classified as action-value neurons in the standard method of analysis (9.5% chance level).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5D,E demonstrating the policy confound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "012cb2f2-21f7-4954-a4b9-dc5b58f97429",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C25",
+      "claim": "Including choice as a regressor still results in 36% of policy neurons being erroneously classified as action-value neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, repeating this analysis for the policy neurons of Figure 5, we still erroneously classify 36% of policy neurons as action-value neurons (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1A demonstrating that including choice as a predictor does not solve the confound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "79a46d97-1352-4dfc-981f-1631786c19aa",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C26",
+      "claim": "59% of action-value neurons were correctly classified using regression on reward probabilities in a trial-design experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 59% of the neurons were classified this way as action-value neurons (Figure 4C, 9.5% is chance level).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C for the trial-design experiment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "ae42f740-2bb5-4977-9d9a-226e50d8c3a1",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C27",
+      "claim": "Only 8.5% of random-walk neurons were erroneously classified as representing action-values in the trial-design experiment, a fraction expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, considering random-walk neurons, only 8.5% were erroneously classified as action-value neurons, a fraction expected by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4D,E demonstrating that the trial-design approach reduces false positives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "bb65c3f4-7b5b-4dc3-b5e3-7acfcf85cb82",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C28",
+      "claim": "32% of action-value neurons were identified as such when regressing on both sum and difference of reward probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 32% of the action-value neurons were classified as such (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6B for the proposed solution addressing both confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "efcb64fd-b034-4ce8-874b-32703bec6e33",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C29",
+      "claim": "Only 0.2% of random-walk neurons were classified as action-value neurons using regression on sum and difference of reward probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for a significance threshold of p<0.05 (for each test), only 0.2% of the random-walk neurons and 5% of the policy neurons were classified as action-value neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6D demonstrating the effectiveness of the proposed solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "918b990c-e545-4dbc-a6e0-e3622ee60300",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C30",
+      "claim": "Only 5% of policy neurons were erroneously classified as action-value neurons using regression on sum and difference of reward probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for a significance threshold of p<0.05 (for each test), only 0.2% of the random-walk neurons and 5% of the policy neurons were classified as action-value neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6F demonstrating that the proposed solution addresses the policy confound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "78b6b58a-9cf7-4c42-9993-9b953d98fef4",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C31",
+      "claim": "The regression coefficient between two independent slowly-changing variables is on average larger in absolute value than when the series are devoid of temporal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known in statistics that the regression coefficient between two independent slowly-changing variables is on average larger (in absolute value) than this coefficient when the series are devoid of a temporal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "023e3724-1ddb-4a3f-b30e-64ae51b84903",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C32",
+      "claim": "If temporal correlations are overlooked, the probability of a false-positive is underestimated.",
+      "claim_type": "EXPLICIT",
+      "source": "If these temporal correlations are overlooked, the probability of a false-positive is underestimated (Granger and Newbold, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation to econometrics literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "7750ff8d-04c1-405e-9738-05d456b64b81",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C34",
+      "claim": "Many studies reported action-value representation outside of the striatum, in brain areas including the supplementary motor area and presupplementary eye fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many studies reported action-value representation outside of the striatum, in brain areas including the supplementary motor area and presupplementary eye fields (Wunderlich et al., 2009), the substantia nigra/ventral tegmental area (Guitart-Masip et al., 2012) and ventromedial prefrontal cortex, insula and thalamus (FitzGerald et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "0e0b8526-8377-4a4e-80ef-8e77c7e29c06",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C35",
+      "claim": "Previous studies have reported that the firing rates of dorsal-striatal neurons change slowly over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies have reported that the firing rates of dorsal-striatal neurons change slowly over time (Gouv\u00eaa et al., 2015; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "7474fa91-8084-478c-9bf3-909246442a50",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C36",
+      "claim": "The involvement of the basal ganglia and striatum in operant learning, planning and decision-making is well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of the basal ganglia in general and the striatum in particular in operant learning, planning and decision-making is well documented (Ding and Gold, 2010; McDonald and White, 1993; O'Doherty et al., 2004; Palminteri et al., 2012; Schultz, 2015; Tai et al., 2012; Thorn et al., 2010; Yarom and Cohen, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "7ddb5dfa-aff2-451b-bbbd-e803c43e2ef4",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C37",
+      "claim": "All studies claiming direct evidence that neuronal activity in the striatum is specifically modulated by action-value were susceptible to the temporal correlations confound or reported results indistinguishable from policy.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that to the best of our knowledge, all studies that have claimed to provide direct evidence that neuronal activity in the striatum is specifically modulated by action-value were either susceptible to the temporal correlations confound (Funamizu et al., 2015; Ito and Doya, 2009; 2015a; Ito and Doya, 2015b; Kim et al., 2013; Kim et al., 2009; Lau and Glimcher, 2008; Samejima et al., 2005; Wang et al., 2013), or reported results in a manner indistinguishable from policy (Cai et al., 2011; FitzGerald et al., 2012; Funamizu et al., 2015; Guitart-Masip et al., 2012; Her et al., 2016; Kim et al., 2013; Kim et al., 2009; Kim et al., 2012; 2007; Stalnaker et al., 2010; Wunderlich et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the systematic literature review and reanalysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "25b6d740-a4fa-4a4a-a376-4be28b9cefbd",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C38",
+      "claim": "Several studies have reported that striatal activity is more consistent with direct-policy learning than with action-value learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have reported that striatal activity is more consistent with direct-policy learning than with action-value learning (FitzGerald et al., 2014; Li and Daw, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "fe8c53bf-dbd3-470e-aa2f-e6861dead91c",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C39",
+      "claim": "One study noted that lesions to the dorsal striatum do not impair action-value learning.",
+      "claim_type": "EXPLICIT",
+      "source": "and one noted that lesions to the dorsal striatum do not impair action-value learning (Vo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "1644462d-986f-4e87-826a-c9b480a67e9b",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C40",
+      "claim": "The prevailing belief that neurons in the striatum represent action-values must await further tests that address the confounds discussed in this paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the prevailing belief that neurons in the striatum represent action-values must await further tests that address the confounds discussed in this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion of the paper based on all the analyses presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "5a48bb95-5bb8-4651-9afd-e2d8642be38f",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C41",
+      "claim": "A literature search using key words 'action-value' and 'striatum' returned 43, 21 and 980 results in Web-of-Knowledge, Pubmed and Google Scholar, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The key words 'action-value' and 'striatum' were searched for in Web-of-Knowledge, Pubmed and Google Scholar, returning 43, 21 and 980 results, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the literature search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "5414d425-4288-473c-b038-d2a49f29a1f0",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C42",
+      "claim": "22 papers were identified that directly related neural activity in the striatum to action-values.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 22 papers that directly related neural activity in the striatum to action-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of the literature search after screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "0ab98569-a4c7-445e-a41c-ec2719597f2a",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C44",
+      "claim": "The spike count in a trial was drawn from a Poisson distribution, assuming a 1 sec-long trial.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike count in a trial was drawn from a Poisson distribution, assuming a 1 sec-long trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation method for generating spike counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "750c73ef-a423-4ba7-90d0-7b7eb0090418",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C45",
+      "claim": "The covariance based plasticity model was tested in the operant learning task and 20% of sessions were terminated without further analysis due to failure to learn.",
+      "claim_type": "EXPLICIT",
+      "source": "A session was terminated (without further analysis) if the model was not able to choose the better option more than 14 out of 20 consecutive times for at least 200 trials in the same block. This occurred on 20% of the sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of simulating the covariance model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "d57c8a2a-d3e6-4406-ac37-de078a797978",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C46",
+      "claim": "Motor cortex data was recorded from one female monkey (Macaca fascicularis) at 3 years of age using a 10 \u00d7 10 microelectrode array.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recorded from one female monkey (Macaca fascicularis) at 3 years of age, using a 10 \u00d7 10 microelectrode array (Blackrock Microsystems) with 0.4 mm inter-electrode distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods for motor cortex recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "7963ac6b-ac95-49d7-a970-1a84c3145b04",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C47",
+      "claim": "The motor cortex data consists of spiking activity of 89 neurons recorded during the last second of inter-trial-intervals, taken from 600 consecutive trials in one recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "The data used in this paper, consists of spiking activity of 89 neurons recorded during the last second of inter-trial-intervals, taken from 600 consecutive trials in one recording session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the motor cortex dataset used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "b0aa9c39-2e3c-4df9-9083-3398f83714e4",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C49",
+      "claim": "The auditory cortex recordings consist of 125 experimental sessions recorded from 39 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The data consists of 125 experimental sessions recorded from 39 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the auditory cortex dataset from Hershenhoren et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "de3b9ae7-c5c4-4aeb-9c08-f8ee85a4276e",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C50",
+      "claim": "In the basal ganglia recordings from Ito and Doya (2009), 148 NAc and 66 VP neurons across 52 sessions were used for analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 148 NAc and 66 VP neurons across 52 sessions were used for analyses (In 18 of the 70 behavioral sessions there were no neural recordings).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the basal ganglia dataset used in the reanalysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "fc689ae0-77c7-4c52-ad5a-c0924ae68ff7",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C52",
+      "claim": "A sequence of spike-counts was excluded due to low firing rate if the mean spike count in all blocks was smaller than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following standard procedures (Samejima et al., 2005), a sequence of spike-counts, either simulated or experimentally measured was excluded due to low firing rate if the mean spike count in all blocks was smaller than 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria used in the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "a788b927-1ff7-4cdb-a042-726244010a11",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C53",
+      "claim": "This exclusion procedure excluded 0.02% of random-walk neurons and 0.03% of covariance-based plasticity neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure excluded 0.02% (4/20,000) of the random-walk neurons and 0.03% (285/1,000,000) of the covariance-based plasticity neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of applying the exclusion criteria to simulated neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "6f4adcd5-77c7-4fc6-8a48-4ac89105f654",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C54",
+      "claim": "23% of auditory cortex neural recordings were excluded in all 40 randomly assigned sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the auditory cortex recordings, we assigned each of the 125 spike counts to 40 randomly-selected sessions. 23% of the neural recordings (29/125) were excluded in all 40 sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of applying exclusion criteria to auditory cortex data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "82bfd92f-d46b-4953-a59b-34d3c47d393a",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C55",
+      "claim": "11% of basal ganglia recordings were excluded in all 40 randomly-selected sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, considering the basal ganglia neurons, we assigned each of the 642 recordings (214 \u00d7 3 phases) to 40 randomly-selected sessions. 11% (74/(214 \u00d7 3)) of the recordings were excluded in all 40 sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the results of applying exclusion criteria to basal ganglia data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "03f4623a-7489-4904-8b95-5feb0edfabe3",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "claim_id": "C56",
+      "claim": "None of the simulated action-value neurons or motor cortex neurons were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the simulated action-value neurons (0/20,000) or the motor cortex neurons (0/89) were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports that no exclusions were necessary for these datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "92c885e7-a17e-4800-96af-bf54b041d338",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Temporal correlations in neuronal firing rates lead to erroneous identification of action-value neurons. The authors demonstrate through simulations and reanalysis of experimental data (motor cortex, auditory cortex, and basal ganglia) that neurons with temporally correlated activity unrelated to action-values are misclassified as action-value neurons at rates (23-43%) comparable to those reported in the striatum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C16 provide converging evidence from multiple datasets showing that temporal correlations produce false positives at rates matching published striatal findings. The statistical foundation (C31-C32) is well-established. The simulations with random-walk neurons and reanalysis of unrelated recordings provide strong support for this confound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "548dd750-ab75-4813-a442-ec40837dc23f",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Policy neurons (representing choice probability) are erroneously classified as action-value neurons. Using a direct-policy REINFORCE learning model that does not compute action-values, the authors show that 38% of policy neurons are misclassified as action-value neurons, and this misclassification persists (36%) even when choice is included as a regressor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 demonstrate through simulation that policy representation can be confused with action-value representation. The use of a learning model that explicitly does not compute action-values (C20-C22) provides strong evidence. The persistence of misclassification when using standard controls (C25) strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "8a8bd48e-7e30-42ee-b5be-8999dc85c0bf",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A permutation test solution reduces false positives from temporal correlations. The permutation analysis correctly identifies 29% of true action-value neurons while reducing false positives to chance levels (~10%) for random-walk neurons. When applied to basal ganglia data from Ito and Doya (2009), only 3.6% of neurons are classified as action-value neurons, compared to 32% using standard analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 show that the permutation test addresses the temporal correlations confound. The method successfully distinguishes true action-value neurons from random-walk neurons (C17-C18), and the dramatic reduction in classified neurons in real data (C19) suggests previous findings may have been false positives. However, the method has reduced sensitivity (29% vs 42% detection rate).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A trial-design experiment with regression on sum and difference of reward probabilities addresses both confounds. This approach correctly identifies 32% of action-value neurons while reducing false positives to near-chance levels (0.2% for random-walk neurons, 5% for policy neurons).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 demonstrate that the proposed solution addresses both temporal correlations (C26-C27) and policy confounds (C28-C30). The trial-design with randomized reward probabilities eliminates temporal structure in predictors, and regression on orthogonal variables (sum and difference) distinguishes action-value from policy representation. The low false positive rates support the method's validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "aef0b567-af43-4fce-a44c-119af00cc7c8",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All previous studies claiming action-value representation in the striatum are subject to at least one of the two confounds. The authors conclude that the prevailing belief that striatal neurons encode action-values must await new experiments and analyses that address these confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C40 represent the main conclusion based on systematic literature review (C41-C42) and comprehensive reanalysis. The authors demonstrate that all 22 identified papers are susceptible to temporal correlations confound, policy confound, or both. This is a strong claim supported by the extensive analyses presented, though it relies on the validity of the confounds demonstrated in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "fca74cb2-22d8-446d-b456-2c25cb507de3",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Standard regression analysis on simulated Q-learning action-value neurons identifies 42% as action-value neurons, with only 2% showing significant correlation with both action-values. This establishes baseline performance of standard methods on ground-truth data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 describe validation simulations showing that standard methods can detect true action-value neurons. The Q-learning model successfully learns (C7), and the detection rates (C8-C9) establish expected performance. This provides necessary context for evaluating false positive rates in subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "466cb49b-88f0-4bac-848e-3d0581c29529",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The prevailing belief in the field is that striatal neurons represent action-values during economic decisions, with 10-40% of striatal neurons reported to represent action-values. The striatum is well-documented to be involved in operant learning and decision-making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10, and C36 establish the scientific context and motivation for the study. These are well-supported by the literature review (C41-C42) and extensive citations. This contextualizes why identifying confounds in action-value detection is important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "7ec80837-d8a1-4edf-afc8-d65ea9f81bbf",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Standard statistical analyses assume trial independence, but striatal neurons show temporal correlations. The significance threshold (t=2) used in standard analyses assumes trials are independent, and previous studies have reported that dorsal-striatal neurons' firing rates change slowly over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C35 establish the statistical foundation for the temporal correlations confound. C12 states the assumption underlying standard tests, and C35 provides empirical evidence that this assumption is violated in striatal recordings. These claims are well-supported by citations and statistical theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "aecd9063-c71e-485c-8d93-cb05c59b14bf",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Action-value representation has been reported outside the striatum, some studies suggest striatal activity is more consistent with direct-policy learning, and one study found that dorsal striatum lesions do not impair action-value learning. These findings suggest alternative interpretations of striatal function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C38-C39 summarize literature that either extends action-value findings beyond striatum or challenges the action-value hypothesis. These are straightforward literature summaries supported by citations. They provide context for why the field should be open to alternative interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "5c168d4b-416e-4a57-a1ed-b9024a99640b",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A systematic literature search identified 22 papers that directly related neural activity in the striatum to action-values. The search used keywords 'action-value' and 'striatum' across three databases, returning 43, 21, and 980 results respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 describe the methodology and results of the literature search. The search strategy is clearly described and the numbers are specific. This provides the foundation for the comprehensive evaluation of previous studies (C37).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    },
+    {
+      "id": "447bc8d7-7005-49a8-ad02-cadd16b03939",
+      "content_id": "0accf07e-349f-429f-9442-30e07c8bcd49",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Methodological details for simulations and experimental datasets. Spike counts were drawn from Poisson distributions, various exclusion criteria were applied, and specific datasets from motor cortex, auditory cortex, and basal ganglia were used with detailed specifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C56 provide methodological details necessary for reproducibility. These are straightforward descriptions of simulation parameters, data sources, and analysis procedures. The specificity and clarity support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:48:19.995117Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4b46fb9f-2bd0-493e-8e6e-cfaf32fd39c7",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "127b64d3-60af-4985-9562-49ab47898f11",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "6c56210e-938c-474d-9368-8d45de69cf16",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "d7e2cb2d-7911-44d3-b9ce-43e6d2186850",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "78b6b58a-9cf7-4c42-9993-9b953d98fef4",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "023e3724-1ddb-4a3f-b30e-64ae51b84903",
+      "result_id": "92c885e7-a17e-4800-96af-bf54b041d338"
+    },
+    {
+      "claim_id": "3ba0622f-eabd-4c89-9755-42b92433bdae",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "55bf5591-b24f-44f0-bbae-373874df34c7",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "c1d69bc7-d8f5-4eec-9565-51baba014901",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "483f441b-834a-4a36-b32f-36310696ea91",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "66214d5b-3db3-4939-9c51-81466dda6e19",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "5b6454ab-1ccd-4176-8c62-b8369c9a5db9",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "012cb2f2-21f7-4954-a4b9-dc5b58f97429",
+      "result_id": "548dd750-ab75-4813-a442-ec40837dc23f"
+    },
+    {
+      "claim_id": "e9ac52b6-94e5-4e0c-a839-49c4a30a79a7",
+      "result_id": "8a8bd48e-7e30-42ee-b5be-8999dc85c0bf"
+    },
+    {
+      "claim_id": "3522c3fb-6093-4ba5-9060-59baf5045b49",
+      "result_id": "8a8bd48e-7e30-42ee-b5be-8999dc85c0bf"
+    },
+    {
+      "claim_id": "34b79fc0-2047-48c7-873d-444fa7ef3710",
+      "result_id": "8a8bd48e-7e30-42ee-b5be-8999dc85c0bf"
+    },
+    {
+      "claim_id": "cc2f9e7e-3307-4ae7-a13e-742b42ec07a4",
+      "result_id": "8a8bd48e-7e30-42ee-b5be-8999dc85c0bf"
+    },
+    {
+      "claim_id": "79a46d97-1352-4dfc-981f-1631786c19aa",
+      "result_id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae"
+    },
+    {
+      "claim_id": "ae42f740-2bb5-4977-9d9a-226e50d8c3a1",
+      "result_id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae"
+    },
+    {
+      "claim_id": "bb65c3f4-7b5b-4dc3-b5e3-7acfcf85cb82",
+      "result_id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae"
+    },
+    {
+      "claim_id": "efcb64fd-b034-4ce8-874b-32703bec6e33",
+      "result_id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae"
+    },
+    {
+      "claim_id": "918b990c-e545-4dbc-a6e0-e3622ee60300",
+      "result_id": "0349f509-bb5b-4ac4-9d6b-916ad90e93ae"
+    },
+    {
+      "claim_id": "7ddb5dfa-aff2-451b-bbbd-e803c43e2ef4",
+      "result_id": "aef0b567-af43-4fce-a44c-119af00cc7c8"
+    },
+    {
+      "claim_id": "1644462d-986f-4e87-826a-c9b480a67e9b",
+      "result_id": "aef0b567-af43-4fce-a44c-119af00cc7c8"
+    },
+    {
+      "claim_id": "a3fa029f-91a9-4167-8b18-97da9b50dbee",
+      "result_id": "aef0b567-af43-4fce-a44c-119af00cc7c8"
+    },
+    {
+      "claim_id": "172e7479-d612-4ca2-85ad-fd2cc6362f42",
+      "result_id": "fca74cb2-22d8-446d-b456-2c25cb507de3"
+    },
+    {
+      "claim_id": "135919e0-0e79-497b-aca6-15d21f419b9c",
+      "result_id": "fca74cb2-22d8-446d-b456-2c25cb507de3"
+    },
+    {
+      "claim_id": "400efc68-1e1a-4143-8a8c-da779f9c874d",
+      "result_id": "fca74cb2-22d8-446d-b456-2c25cb507de3"
+    },
+    {
+      "claim_id": "cd86ae91-63bf-4cdd-9e8a-a3ca7767c894",
+      "result_id": "466cb49b-88f0-4bac-848e-3d0581c29529"
+    },
+    {
+      "claim_id": "93c32488-ae82-4540-9498-a89b43ae3667",
+      "result_id": "466cb49b-88f0-4bac-848e-3d0581c29529"
+    },
+    {
+      "claim_id": "7474fa91-8084-478c-9bf3-909246442a50",
+      "result_id": "466cb49b-88f0-4bac-848e-3d0581c29529"
+    },
+    {
+      "claim_id": "61420956-95cd-4c57-92db-d354763efd10",
+      "result_id": "7ec80837-d8a1-4edf-afc8-d65ea9f81bbf"
+    },
+    {
+      "claim_id": "0e0b8526-8377-4a4e-80ef-8e77c7e29c06",
+      "result_id": "7ec80837-d8a1-4edf-afc8-d65ea9f81bbf"
+    },
+    {
+      "claim_id": "7750ff8d-04c1-405e-9738-05d456b64b81",
+      "result_id": "aecd9063-c71e-485c-8d93-cb05c59b14bf"
+    },
+    {
+      "claim_id": "25b6d740-a4fa-4a4a-a376-4be28b9cefbd",
+      "result_id": "aecd9063-c71e-485c-8d93-cb05c59b14bf"
+    },
+    {
+      "claim_id": "fe8c53bf-dbd3-470e-aa2f-e6861dead91c",
+      "result_id": "aecd9063-c71e-485c-8d93-cb05c59b14bf"
+    },
+    {
+      "claim_id": "5a48bb95-5bb8-4651-9afd-e2d8642be38f",
+      "result_id": "5c168d4b-416e-4a57-a1ed-b9024a99640b"
+    },
+    {
+      "claim_id": "5414d425-4288-473c-b038-d2a49f29a1f0",
+      "result_id": "5c168d4b-416e-4a57-a1ed-b9024a99640b"
+    },
+    {
+      "claim_id": "0ab98569-a4c7-445e-a41c-ec2719597f2a",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "750c73ef-a423-4ba7-90d0-7b7eb0090418",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "d57c8a2a-d3e6-4406-ac37-de078a797978",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "7963ac6b-ac95-49d7-a970-1a84c3145b04",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "b0aa9c39-2e3c-4df9-9083-3398f83714e4",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "de3b9ae7-c5c4-4aeb-9c08-f8ee85a4276e",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "fc689ae0-77c7-4c52-ad5a-c0924ae68ff7",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "a788b927-1ff7-4cdb-a042-726244010a11",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "6f4adcd5-77c7-4fc6-8a48-4ac89105f654",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "82bfd92f-d46b-4953-a59b-34d3c47d393a",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    },
+    {
+      "claim_id": "03f4623a-7489-4904-8b95-5feb0edfabe3",
+      "result_id": "447bc8d7-7005-49a8-ad02-cadd16b03939"
+    }
+  ],
+  "comparisons": []
+}

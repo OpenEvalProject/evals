@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "265a61f5-7e25-429f-9098-b96b67964623",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:00:00.469034Z",
+    "updated_at": "2025-12-01T21:00:00.469034Z"
+  },
+  "content": [
+    {
+      "id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "submission_id": "265a61f5-7e25-429f-9098-b96b67964623",
+      "content_type": "manuscript",
+      "content_text": "# Localization of spontaneous bursting neuronal activity in the preterm human brain with simultaneous EEG-fMRI\n\n## Authors\n\n- Tomoki Arichi<sup>1</sup> ([ORCID: 0000-0002-3550-1644](https://orcid.org/0000-0002-3550-1644))\n- Kimberley Whitehead<sup>3</sup>\n- Giovanni Barone<sup>1</sup>\n- Ronit Pressler<sup>5</sup>\n- Francesco Padormo<sup>1</sup>\n- A David Edwards<sup>1</sup> ([ORCID: 0000-0003-4801-7066](https://orcid.org/0000-0003-4801-7066)) \u2020\n- Lorenzo Fabrizi<sup>3</sup> ([ORCID: 0000-0002-9582-0727](https://orcid.org/0000-0002-9582-0727)) \u2020\n\n### Affiliations\n\n1. Centre for the Developing Brain, Division of Imaging Sciences and Biomedical Engineering King\u2019s College London London United Kingdom\n2. Department of Bioengineering Imperial College London London United Kingdom\n3. Department of Neuroscience, Physiology and Pharmacology University College London London United Kingdom\n4. Department of Pediatrics Catholic University of Sacred Heart Rome Italy\n5. Clinical Neurosciences UCL-Institute of Child Health London United Kingdom\n6. Translational and Molecular Imaging Institute Icahn School of Medicine at Mount Sinai New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nElectroencephalographic recordings from the developing human brain are characterized by spontaneous neuronal bursts, the most common of which is the delta brush. Although similar events in animal models are known to occur in areas of immature cortex and drive their development, their origin in humans has not yet been identified. Here, we use simultaneous EEG-fMRI to localise the source of delta brush events in 10 preterm infants aged 32\u201336 postmenstrual weeks. The most frequent patterns were left and right posterior-temporal delta brushes which were associated in the left hemisphere with ipsilateral BOLD activation in the insula only; and in the right hemisphere in both the insular and temporal cortices. This direct measure of neural and hemodynamic activity shows that the insula, one of the most densely connected hubs in the developing cortex, is a major source of the transient bursting events that are critical for brain maturation.\n\n## Introduction\n\nIn animal models, spontaneous bursts of synchronized neuronal\u00a0activity (known as spindle bursts) play an instructive role in key developmental processes that set early cortical circuits, including neuronal differentiation and synaptogenesis (Hanganu-Opatz, 2010; Khazipov and Luhmann, 2006). Experimental disruption of the normal occurrence and propagation of this early spontaneous activity leads to permanent loss of healthy cortical organization, such as segregation into ocular dominance columns (Xu et al., 2011) and whisker barrels (Tolner et al., 2012) in the primary visual and somatosensory cortices respectively.\n\nNeural activity recorded in human infants during the preterm period with electroencephalography (EEG) is also characterized by intermittent high amplitude bursts known as Spontaneous Activity Transients (SATs) (Khazipov and Luhmann, 2006; Andr\u00e9 et al., 2010; Tolonen et al., 2007). SATs appear to have a crucial role in early human brain development, as their occurrence is positively correlated to brain growth during the preterm period (Benders et al., 2015). The most common of these events is the delta brush, a transient pattern characterised by a slow delta wave (0.3\u20131.5 Hz) with superimposed fast frequency alpha-beta spindles (8\u201325 Hz) (Andr\u00e9 et al., 2010; Whitehead et al., 2017). Delta brushes appear from 28 to 30 weeks PMA (Boylan et al., 2008; Lamblin et al., 1999; Niedermeyer, 2005; Vecchierini et al., 2007), have a peak incidence at 32\u201335 weeks PMA (Andr\u00e9 et al., 2010; Boylan et al., 2008; Lamblin et al., 1999; D'Allest and Andre, 2002; Hahn and Tharp, 2005) and disappear between 38\u201342 weeks PMA (Boylan et al., 2008; Hahn and Tharp, 2005). They initially have a diffuse or predominantly peri-central distribution in infants\u00a0<32 weeks PMA (Lamblin et al., 1999; Boylan, 2007; Volpe, 1995), progressing to have a more temporal and occipital (but rarely frontal) topography in late preterm infants (Tolonen et al., 2007; D'Allest and Andre, 2002; Hahn and Tharp, 2005; Volpe, 1995; Watanabe et al., 1999). As with spindle bursts in animal models, delta brushes can also be elicited by external stimuli (Chipaux et al., 2013; Colonnese et al., 2010; Fabrizi et al., 2011; Milh et al., 2007) with their topographies coarsely overlying the primary sensory cortices of the relevant stimulus modality, suggesting that the activation of specific cortical regions appears on the scalp surface as different delta brush distributions.\n\nAs delta brushes are the hallmark of the preterm EEG, reviewing their incidence and morphology is an important part of the clinical neurophysiological assessment of hospitalised infants (Whitehead et al., 2017). Preterm infants with a greater incidence of delta brushes are more likely to develop normally (Biagioni et al., 1994), while diminished occurrence or atypical morphology is seen in infants with major brain lesions such as periventricular leukomalacia\u00a0who later develop cerebral palsy (Andr\u00e9 et al., 2010; Watanabe et al., 1999; Conde et al., 2005; Kidokoro et al., 2006; Okumura et al., 1999; Okumura et al., 2002; Tich et al., 2007). As delta brushes should disappear at term equivalent age, the number of events can also be used to determine the severity of EEG dysmaturity,\u00a0which\u00a0is defined by the presence of patterns that are at least 2 weeks immature relative to an infant\u2019s PMA ([Andr\u00e9 et al., 2010; Hahn and Tharp, 2005; Holmes and Lombroso, 1993; American Clinical Neurophysiology Society Critical Care Monitoring Committee et al., 2013)\u00a0and\u00a0which is associated with adverse cognitive outcome if persistent over serial recordings (Okumura et al., 2002; Holmes and Lombroso, 1993; Hayakawa et al., 1997; Lombroso, 1985).\n\nDespite their common occurrence, developmental importance and clinical significance, existing animal and human studies are insufficient to build a model of the role of these electrophysiological events in humans, in particular because of the lack of information about their neuro-anatomical source. Whilst delta brushes can be readily identified with EEG, the localization of their source within the brain cannot be easily inferred just from the electrical potentials recorded at the scalp surface (Darvas et al., 2004). To overcome this intrinsic limitation of EEG recording, we used simultaneous EEG-fMRI to combine the temporal sensitivity of EEG with the whole brain spatial specificity of functional Magnetic Resonance Imaging (fMRI). Here, we provide the first evidence that spontaneous patterns of delta brush activity in the period preceding normal birth are associated with significant hemodynamic activity clearly localized to distinct regions within the developing cortex. We show that the most common event in the late preterm period (posterior-temporal delta brushes) are reflective of activity in the insular cortices and temporal pole. These findings provide the first evidence of a direct link between spontaneous neural and hemodynamic activity in early human life and provide a new understanding of how they relate to regional cortical function during this critical period.\n\n## Results and discussion\n\nSimultaneous EEG-fMRI data were successfully acquired in a group of 10 infants in their late preterm period (median PMA at data collection 35\u00a0+\u00a01 weeks, range 32\u00a0+\u00a02 to 36\u00a0+\u00a02 weeks; five female) during natural sleep over a median of 7.5 min (range: 3.5\u201310.5 min). All the infants in the study sample were clinically well at the time of study and were reported as having normal brain appearances on their structural MR images. An optimized pre-processing and analysis pipeline which incorporated an age-specific hemodynamic response function (HRF) and template brain was used for the fMRI data (detailed in the supplementary methods) (Allievi et al., 2016; Arichi et al., 2012; Arichi et al., 2010; Serag et al., 2012). Due to the confounding effects of head motion on both EEG and fMRI data, several additional steps were also taken to specifically address this issue in both the initial pre-processing and analysis phase (see supplementary methods).\n\nIn line with the literature (Andr\u00e9 et al., 2010; Whitehead et al., 2017), delta brushes occurred frequently (median: 4.4/minute; range: 1.9\u20136.7)\u00a0and with varying scalp distributions (23 in total; Figure 1 and Supplementary file 2). Nevertheless, right and left posterior-temporal delta brushes were consistently present in 10/10 and in 9/10 subjects respectively and could be associated with significant clusters of positive BOLD activity (p<0.05 with family wise error correction) in the ipsilateral insular cortex (Figure 2 and Figure 2\u2014figure supplement 1). This result provides the first evidence that the insulae represent major locations of occurrence for these developmentally required neuronal events during our specific study window in the late preterm period. Although there are rapid changes occurring across the whole brain in human preterm development, the timing and trajectory of maturation has been shown to differ between regions (Makropoulos et al., 2016). In agreement with the idea that bursting neural activity is directly linked to brain maturation, the insular cortices in humans enter a crucial phase of their development during our study period (32\u201336 weeks PMA): (i) their volumetric growth trajectories (and those of the adjacent temporal lobes) accelerate (Makropoulos et al., 2016) and (ii) they establish an early pattern of dense functional and structural connectivity, which allows them to assume a prominent role as cortical hubs during infancy (Ball et al., 2014; Gao et al., 2011). As a result, the mature insulae have connections to almost all other regions of the brain, enabling them\u00a0to play a versatile role in a wide range of functions including sensory and pain perception, multi-sensory integration, emotion, and cognition (Nieuwenhuys, 2012). Similarly, in primates and rodents, the insulae have a dense network of connections and play a key integrative function in sensory and behavioural processes (Butti and Hof, 2010; Mars et al., 2013; Miranda-Dominguez et al., 2014; Zingg et al., 2014). Their\u00a0anatomical maturity is also more advanced in comparison to the surrounding cortex in early life (Huang et al., 2008; Kroenke et al., 2007). However, there are currently no animal developmental studies that directly address the relationship between bursting activity and maturation of this particular brain region.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27814/elife-27814-fig1-v1.jpg)\n\n**Figure 1.:** Segments of EEG recordings showing individual examples of delta brushes with the most common topographical distributions (occurred at least three times in a given subject). These rarely involved frontal and midline electrodes which are therefore omitted for illustration clarity. Right and left posterior-temporal delta brushes occurred in 10/10 and 9/10 subjects respectively, while other delta brushes were recorded in no more than two subjects. EEG traces and recording electrodes where delta brush activity was maximal are marked in red. Shaded areas represent the time of occurrence of each event.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27814/elife-27814-fig2-v1.jpg)\n\n**Figure 2.:** In a group of 10 preterm infants (35\u00a0+\u00a00 weeks PMA, range 32\u00a0+\u00a02 to 36\u00a0+\u00a02 weeks), right posterior-temporal delta brush activity (blue) was significantly associated with BOLD clusters in the right temporal pole (z50, z55), right superior temporal lobe (x28), and the right insular cortex (z60, z62, z64, z66). Left posterior-temporal delta brush activity (red-yellow) was significantly associated with BOLD clusters in the left posterior insula (z64, z66) and left parietal operculum (z66, z68). Images show the results of a one-sample t-test (p<0.05) performed using permutation testing and corrected for family-wise error overlaid on an age-specific T2-weighted brain atlas (Serag et al., 2012).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27814/elife-27814-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Hemodynamic activity correlated to right posterior-temporal delta brushes in a single infant of 35\u00a0+\u00a01 weeks PMA. (a) Right posterior-temporal delta brush occurrence as identified by EEG (dashed vertical lines) was convolved with an age-appropriate hemodynamic response function to generate a general linear model regressor (blue) to fit to the acquired BOLD time series (red) for fMRI analysis. (b) Right posterior-temporal delta brush occurrence was significantly associated with well localized clusters of BOLD activity (red-yellow) in the right temporal pole and superior temporal lobe (z49); the left parietal operculum (z55); the anterior cingulate and right fronto-parietal lobes (z65 and z69). Images show the thresholded z-statistical map with a corrected cluster significance of p<0.05 overlaid on the subject\u2019s T2-weighted image.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27814/elife-27814-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** As described in the literature, the subplate can be clearly seen as an area of high signal intensity (long T2) on the temporal poles bilaterally (red arrows).\n\nThe importance of the preterm period for insular development in humans is further emphasized by studies showing that the degree of prematurity at birth, recreational drug use in pregnancy and late onset intra-uterine growth restriction adversely affects both insular volume and thalamo-insular connectivity at term equivalent age (Ball et al., 2012; Batalle et al., 2016; Ega\u00f1a-Ugrinovic et al., 2014; Grewen et al., 2015; Salzwedel et al., 2015), with the latter being significantly correlated with cognitive outcome at 2 years of age (Ball et al., 2015). Furthermore, insular dysfunction and poor growth have been implicated in a range of psychiatric conditions, including neurodevelopmental difficulties such as autism spectrum and attention deficit hyperactivity disorders which have greater prevalence in preterm born children (Hatton et al., 2012; Johnson and Marlow, 2011).\n\nIn addition to the insulae, right-sided posterior-temporal delta brushes were associated with significant clusters of hemodynamic activity in the right superior temporal lobe and pole (Figure 2). This finding is of particular significance as these are regions where the subplate, a transient structure which is thought to play a fundamental role in the generation of spindle burst activity in animals (Tolner et al., 2012), can be qualitatively appreciated on high resolution MR images and histology (Figure 2\u2014figure supplement 2) (Kostovi\u0107 et al., 2014). In human development, the subplate follows a similar trajectory to delta brush activity, reaching maximal thickness in the middle of the third trimester before disappearing in most of the brain by term equivalent age (Kostovi\u0107 et al., 2014). The present results therefore support a link between these functional and structural developmental features in humans.\n\nSource localizing spontaneous delta brushes to the insulae and temporal pole does not necessary imply that this activity starts here. Spindle bursts in animals are recorded from the cortical plate (Yang et al., 2013), but are thought to be driven by spontaneous activity from the periphery (whisker pad [Yang et al., 2009], spinal cord [In\u00e1cio et al., 2016], retina [Hanganu et al., 2006] and cochlea [Johnson et al., 2011]); as well as from central pattern generators (CPGs) such as the primary motor cortex, brainstem and thalamus within the somatomotor system (for review see [Luhmann et al., 2016]). It is therefore possible that other neuronal events in these centers may also precede the occurrence of delta brushes in humans, but cannot be detected with EEG and fMRI. In this instance, activity would then be amplified by the subplate resulting in measurable electrical-hemodynamic events in the cortex. Nevertheless, it is unlikely that the insular activation we observed here resulted directly from activity in the sensory periphery as the insulae are not involved in the primary processing of visual (Lee et al., 2012), auditory (Baldoli et al., 2015) or somatosensory stimuli (Allievi et al., 2016; Arichi et al., 2010).\n\nBilateral and unilateral parietal, occipital and mid-temporal, but rarely frontal, delta brushes were also sporadically recorded in individual subjects, suggesting the presence of other less active sources of spontaneous activity at this developmental stage (Figure 3 and Supplementary file 2). In addition to the ipsilateral\u00a0primary clusters, other areas of BOLD activity were also frequently seen in the anatomical homologue in the opposite hemisphere and occasionally in association areas of the cortex (supplementary motor area (SMA), anterior cingulate, precuneus) or deeper structures of the brain (thalamus and basal ganglia) (Supplementary file 3). Delta brushes with topographies other than posterior-temporal are more frequent earlier on in development compared to the age window studied here (Lamblin et al., 1999; Boylan, 2007; Volpe, 1995) and may represent activity from other developing brain regions which follow a different maturational trajectory. However precise localization of the sources of these events and others that were not recorded in our study group will require further work in a larger study population which spans other age ranges when these regions may be more active. Such longitudinal work may also allow an exploration of whether key features of spindle burst activity in animals are also present in humans during maturation, such as increasing propagation of neuronal activity in local and neighbouring networks (Yang et al., 2013) and\u00a0regional differences in oscillatory patterns (Yang et al., 2009), as\u00a0well\u00a0as association of these events to the presence of the transient subplate layer.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27814/elife-27814-fig3-v1.jpg)\n\n**Figure 3.:** Example of the significant hemodynamic activity correlated to less frequent delta brushes in a single preterm subject at 35\u00a0+\u00a06 weeks PMA. (a) The occurrence of bilateral posterior-temporal delta brushes was significantly associated with well localized clusters of BOLD activity (red-yellow) in the bilateral superior temporal lobe and insulae (z55); while (b) bilateral occipital delta brushes were associated with a cluster in the medial occipital region (z33). Images show the thresholded z-statistical map with a corrected cluster significance of p<0.05 overlaid on the subject\u2019s T2-weighted image.\n\nDespite the apparent absence of a tight neurovascular coupling in perinatal rodent models (Kozberg et al., 2016; Zehendner et al., 2013), we demonstrated for the first time in human infants, a clear association between a direct measure of neural (EEG) and positive functional hemodynamic activity (fMRI). Whilst in rodents, neurovascular coupling matures postnatally together with the development of long-range connectivity patterns (Kozberg et al., 2016), in humans this connectivity can be readily identified by the late preterm period, thus suggesting that neuronal and hemodynamic activity are already closely linked by this time (Allievi et al., 2016; Doria et al., 2010; White et al., 2012). This relationship is developmentally regulated across the neonatal period resulting in changing hemodynamic responses (Arichi et al., 2012) and is validated by the presence of localised positive BOLD activation in the primary auditory and somatosensory cortices following sound and passive motor stimulation respectively (Allievi et al., 2016; Arichi et al., 2010; Baldoli et al., 2015; Erberich et al., 2003).\n\nSpontaneous activity is a fundamental feature of developing neural circuits well before the establishment of cortical layers (Luhmann et al., 2016) and refinement through experience dependent mechanisms (Khazipov and Luhmann, 2006). Our findings provide the first evidence that the most common of these neuronal events in the late preterm period are seen in the posterior temporal regions and are largely generated by the insulae and subplate. As these events are known to have an instructive function in cortical maturation in rodents (Hanganu-Opatz, 2010; Khazipov and Luhmann, 2006; Rakic and Komuro, 1995), our results suggest that these structures may play a key developmental role as a major location of these bursting events in early human life.\n\n## Materials and methods\n\n### Participants\n\nThirteen preterm infants (five females; studied between 32\u201336 weeks post-menstrual age, PMA) 5\u201355 days old (23\u00a0\u00b1\u00a017, mean\u00a0\u00b1SD) were recruited for this study from the Neonatal Unit at St Thomas\u2019 Hospital, London (patient demographic information is detailed in Supplementary file 1). Informed written parental consent was obtained prior to each study. The research methods conformed to the standards set by the Declaration of Helsinki and were approved by the National Research Ethics Committee.\n\nMedical case notes were reviewed and infants were assessed as clinically stable by an experienced pediatrician at the time of study. Infants were excluded if they required any respiratory support during scanning or if they were known to have a history of severe brain pathology such as extensive intraventricular hemorrhage (grade 3 with ventricular dilatation; grade 4 with parenchymal extension), birth asphyxia, focal intracerebral lesions affecting the parenchyma or white matter (such as infarction, overt hemorrhage, or multiple punctate white matter lesions), severe hydrocephalus, or congenital brain malformations.\n\n### EEG-fMRI acquisition\n\nMR images were collected following feeding and during natural sleep on a 3-Tesla Philips Achieva scanner (Best, Netherlands) located on the Neonatal Unit. Each infant was fitted with ear protection (moulded dental putty and adhesive earmuffs (Minimuffs, Natus Medical Inc, San Carlos CA, USA)) and immobilized using a vacuum cushion (Med-Vac, CFI Medical Solutions, Fenton, MI, USA). An appropriately sized, custom-made cap containing 26\u201332 scalp electrodes (EasyCAP GmbH, DE) was fitted on the head of each infant prior to scanning and connected to an MR-compatible EEG system (Brain Products GmbH, DE, RRID:SCR_009443). Blood Oxygen Level Dependent (BOLD) functional MRI data (299\u2013499 volumes) were collected using a T2*-weighted single-shot gradient echo echo-planar imaging (GRE-EPI) sequence (resolution: 2.5*2.5*3.25 mm; 21 slices; TE: 30-45msec; TR: 1500msec, FA: 60\u201390 degrees; SENSE factor 2). Exact synchronization between the two recording modalities was achieved by marking each MR volume acquisition on the EEG using a TTL trigger generated by the MR scanner. High resolution MPRAGE (Magnetization-prepared Rapid Gradient Echo) T1- and TSE (Turbo Spin Echo) T2-weighted MRI scans were also acquired in the same study session for registration purposes and to allow more precise anatomical localization of the identified BOLD signal changes (Merchant et al., 2009). All high resolution structural images were formally reported by a Neonatal Neuroradiologist as showing normal appearances for age. As reported in the literature, the subplate layer could be qualitatively appreciated in all of our study subjects as an area of high signal on T2 images lying just below the cortex, which was most prominently seen in the temporal poles bilaterally (Kostovic and Rakic, 1990) (Figure 2\u2014figure supplement 2).\n\n### EEG pre-processing and analysis\n\nGradient artefacts caused by the MR image acquisition were filtered from the EEG data using a commercially available EEG processing software package (Analyzer 2; Brain Products, DE). EEG cardioballistic artefacts, which are typically observed in adults (Allen et al., 1998), were not present in our neonatal recordings. Three independent trained observers (KW, GB, LF) reviewed the EEG recordings and marked the occurrence of delta brush events. Delta brushes were defined as bursts of fast frequency ripples of 8\u201325 Hz superimposed on a slow wave of 0.3\u20131.5 Hz (Khazipov and Luhmann, 2006; Andr\u00e9 et al., 2010; Milh et al., 2007). Inter-rater reliability was assessed using Fleiss\u2019 Kappa analysis (Fleiss, 1971) and resulted in a substantial agreement (median Fleiss\u2019 Kappa 0.65 (range 0.25\u20130.76)). Consensus on delta brush occurrence was then reached amongst the three reviewers for each event and confirmed by a Consultant Pediatric Clinical Neurophysiologist (RP). Events were then labelled based on their field distribution as having unilateral (right \u2013 R or left \u2013 L), midline (M) or bilateral (B) frontal (F), central (C), temporal (T), parietal (Pa), posterior-temporal (PT), occipital (O), posterior-temporal occipital (PTO) or posterior quadrant (PQ) topography (Supplementary file 2). Different topographical distributions were then used as separate Explanatory Variables (EVs) in the general linear model (GLM) of the fMRI analysis (see below). Only EVs containing at least 3 events were used for analysis. Two data sets were discarded because of insufficient EEG quality (due to bridging electrodes or unsuccessful artifact removal) which made them unsuitable for reliable delta brush detection.\n\n### fMRI data pre-processing and subject level analysis\n\nfMRI data pre-processing and analysis were performed with an optimized pipeline for studying data acquired from neonatal subjects using tools implemented in FSL (FMRIB\u2019s software library, www.fmrib.ox.ac.uk/fsl, RRID:SCR_002823) (Allievi et al., 2016; Arichi et al., 2012; Arichi et al., 2010; Arichi et al., 2014; Arichi et al., 2013; Smith et al., 2004). Each dataset was visually reviewed to check for data quality and for overt motion artifact. BOLD contrast time-series were then truncated to exclude excessive motion signal artifact (based on the root mean square intensity difference to the center reference volume) at the beginning or at the end of the recordings. One data set was discarded as the remaining data segment did not contain more than 3 delta brushes with the same topography (i.e. belonging to the same EV).\n\nThe remaining 10 subject datasets were then processed using an optimized pre-processing pipeline which was implemented in FEAT (fMRI Expert Analysis Tool, v5.98), including rigid-body head motion correction (using MCFLIRT), slice-timing correction, non-brain tissue removal (using BET), spatial smoothing (Gaussian filter of full-width half-maximum [FWHM] 5 mm), global intensity normalization, and high-pass temporal filtering (cut-off 50 s) (Smith et al., 2004; Woolrich et al., 2001). As motion artifact is known to represent a key source of bias in fMRI data, residual motion and physiological noise (such as those associated with vascular or respiratory effects) were removed by performing data-denoising with MELODIC (Model-free fMRI analysis using Probabilistic Independent Component Analysis [PICA, v3.0]) (Beckmann and Smith, 2004).\n\nStatistical analysis in FEAT was done with FMRIB\u2019s improved linear model (FILM) with local autocorrelation correction (Woolrich et al., 2001). A general linear model (GLM) was used to perform a univariate (voxel-wise) fitting of the observed data to a linear combination of our explanatory variables (EVs). These included: (i) one EV for each delta brush topography (e.g. one EV for right posterior-temporal delta brushes, another one for left posterior-temporal delta brushes, etc.) representing the occurrence of each event convolved with a set of basis functions optimised for the preterm hemodynamic response (Arichi et al., 2012) and (ii) to further ensure that motion artifact did not affect our results, binary confound regressors to exclude each volume affected by motion (and identified as a signal outlier in the timeseries based on the root mean square intensity difference to the reference center volume) despite MELODIC denoising. The calculated t-statistical image was then converted to a z-statistical image and a threshold of 2.3 with a corrected cluster significance level of p<0.05 was then used to generate spatial maps of activated voxels on an individual subject level (Figure 2\u2014figure supplement 1). Activation maps were then registered to the individual subject's high-resolution structural T2-weighted image using a 6 DOF rigid-body registration (FLIRT v5.5) (Jenkinson and Smith, 2001). The spatial distribution of significant clusters of BOLD activity for each subject are summarised in Supplementary file 3.\n\n### fMRI group level analysis\n\nIndividual subject activation maps corresponding to homologous delta brush topographical distribution were co-aligned to an age-specific spatio-temporal neonatal atlas using FSL's nonlinear image registration tool (FNIRT v2.0) (Serag et al., 2012). Group average functional clusters at a significance of p<0.05 were then identified using permutation testing as implemented in FSL Randomise (v2.1) (Nichols and Holmes, 2002). A non-parametric single-group t-test with threshold-free cluster enhancement (TFCE) with family-wise error correction (FWE) to correct for multiple comparisons was then used to identify study population clusters associated with left and right posterior temporal delta brush activity (Smith and Nichols, 2009).\n",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "d1418c06-aa7e-4090-8102-16ad36a116d5",
+      "submission_id": "265a61f5-7e25-429f-9098-b96b67964623",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sabine Kastner, Princeton University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27814.011](https://doi.org/10.7554/eLife.27814.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Localization of spontaneous bursting neuronal activity in the preterm human brain with simultaneous EEG-fMRI\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen Sabine Kastner as the Senior Editor and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Heiko J Luhmann (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe topic of the paper is important and clinically relevant: Understanding the mechanisms underlying neocortical activity in the preterm human brain. Over the last years a number of insightful reports on this topic have been published (e.g. Vanhatalo lab) and we learned a lot from animal studies. However, it is still unclear where and how defined early cortical rhythms are generated. This paper is focused on the so-called \u03b4 brush (spindle burst) activity recorded by combination of EEG and fMRI in 10 preterms aged 32-36 postmenstrual weeks. The authors identified the insula and the subplate as a major source for this activity.\n\nThe reviewers and editors thought that this paper has the potential to make an insightful contribution. However, due to the lack of important methods details, the study could not be fully evaluated at this stage. In order to fully evaluate the study, it will be necessary to make the following essential revisions. Please also note that there are other important, more detailed concerns that can be extracted from the appended reviews.\n\nEssential revisions:\n\n1) Scholarship: Both reviewers thought that the literature regarding \u03b4 brushes is not well considered, and the broader significance of the findings needs to be clarified.\n\n2) The development of insula needs to be discussed in relation to other brain regions, and importantly the authors need to explain how they source localized this region relative to others.\n\n3) Both reviewers noted that numerous methods details were missing, and due to that, the work could not fully be evaluated. Please include a thorough methods description that will permit other investigators to replicate your findings.\n\n4) Alternative explanations need consideration (and trivial explanations such as scanner noise need to be ruled out).\n\nReviewer #1:\n\nThis paper is looking at a difficult population to study, preterm infants, and recording simultaneous EEG and fMRI. This by itself is noteworthy and the questions that they are pursuing are also interesting in terms of understanding aspects of early brain development. Data from such studies are valuable.\n\nMy enthusiasm for this paper is somewhat tempered, however, by a few points. First the review of literature is rather light on \u03b4 brushes, as they are citing primarily their own review paper. As these are transient neurophysiological events, apparently elicited by sensory stimuli, the uninformed reader would like to know 'so what?' What is their relevance other than the general statement of their absence or their persistence being associated with injury or adverse outcome?\n\nThey discuss how the insular cortices are in a critical phase of development in this late preterm period. But is not the rest of the brain as well undergoing massive development? Is the development in the insulae distinct from other brain areas at this time? This needs to be further discussed. As the scanner is a noisy environment, could the localisation of these sources be related to auditory sensory effects?\n\nIn terms of their methods there needs to be a greater detail on the fMRI processing pipeline. For example, it is unusual to use the basic default options in FEAT and particularly with preterm brains. There needs to be more discussion and detail on the motion correction, as this is a big issue with infant scanning. Basically, a lot more detail on the methods is needed. Also, the infants scanned were selected how? Were they all in-patients (which suggest that they may not have been healthy)? Some caution needs to be taken in the interpretation as it is a small N.\n\nThe authors are to be commended on the work and the approach; some further information is needed prior to being acceptable for publication, so that the full understanding of the methods, effects and their relevance is more readily accessible\n\nReviewer #2:\n\nThe topic of the paper is important and clinically relevant. I have the following questions and concerns:\n\n1) EEG and fMRI have limitations in their spatial and temporal resolution. It is not easy to identify functional connections and \"hub\" regions or even layers (as the subplate) with these techniques and some important structures in this context cannot be studied (spinal cord, retina, cochlea). From animal studies (rodents and monkeys) we know that spontaneous \u03b4 brush/ spindle burst activity in newborn neocortex is driven by the sensory periphery (e.g. retinal bursts). In newborn rodent somatosensory cortex spontaneous activity is triggered by motor patterns (CPGs) in motor cortex, spinal cord, brainstem (see your reference Luhmann et al., 2016 for discussion of this issue). So all these previous studies on rodents and primates do not support the conclusion of the present paper.\n\n2) How do the authors exclude that the insula is just co-activated by the activity patterns generated in the retina, spinal cord etc.?\n\n3)Results and Discussion, second paragraph: What is the evidence that the insula in newborn rodent cortex or preterm primate neocortex is so well connected and may fulfil the role of a hub region?\n\n4) In newborn rodent cortex and some EEG studies on preterm human cortex, spindle bursts are initially local (columnar) events, which at later stages propagate to neighbouring regions (e.g. papers by JW Yang et al). What is the developmental pattern in the present manuscript?\n\n5)Results and Discussion, third paragraph: The subplate certainly does not drive the spindle bursts in vivo, it acts as a relay or amplifier for the activity coming from subcortical inputs.\n\n6) How can the authors identify the subplate? Does the spatial resolution of the methods allow this major conclusion (Results and Discussion, last paragraph)?\n\n7) The authors only studied \"spontaneous\" activity? Is the insula involved in evoked \u03b4 brush activity?\n\n8) Did the authors observe in their EEG recordings regional differences in the \u03b4 brush properties?\n",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9591df18-a7c2-43f8-b89a-4f74695b1460",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C1",
+      "claim": "Electroencephalographic recordings from the developing human brain are characterized by spontaneous neuronal bursts, the most common of which is the delta brush.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroencephalographic recordings from the developing human brain are characterized by spontaneous neuronal bursts, the most common of which is the delta brush.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about preterm EEG patterns, supported by the citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "546df9a4-e8d8-46f7-aec1-efc43bb0cc55",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C2",
+      "claim": "Similar events in animal models are known to occur in areas of immature cortex and drive their development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar events in animal models are known to occur in areas of immature cortex and drive their development, their origin in humans has not yet been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to animal model studies cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "f5e781cd-e131-40d0-8b32-117d5585c1f0",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C3",
+      "claim": "The origin of delta brush events in humans has not yet been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar events in animal models are known to occur in areas of immature cortex and drive their development, their origin in humans has not yet been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "5e442a20-f7f0-4dfb-a4bb-2736345fa6f9",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C4",
+      "claim": "Simultaneous EEG-fMRI was used to localise the source of delta brush events in 10 preterm infants aged 32\u201336 postmenstrual weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use simultaneous EEG-fMRI to localise the source of delta brush events in 10 preterm infants aged 32\u201336 postmenstrual weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology and sample used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "ca592a1e-35b7-4f28-bb1c-df4498cd1275",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C5",
+      "claim": "Left posterior-temporal delta brushes were associated with ipsilateral BOLD activation in the insula only.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequent patterns were left and right posterior-temporal delta brushes which were associated in the left hemisphere with ipsilateral BOLD activation in the insula only",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fMRI analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "be3c4990-4b20-4167-9a9a-53a8f81db083",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C6",
+      "claim": "Right posterior-temporal delta brushes were associated with BOLD activation in both the insular and temporal cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the right hemisphere in both the insular and temporal cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fMRI analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "2bb21d38-80f3-4cd9-b045-8ca4f45fa66c",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C7",
+      "claim": "The insula is one of the most densely connected hubs in the developing cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This direct measure of neural and hemodynamic activity shows that the insula, one of the most densely connected hubs in the developing cortex, is a major source of the transient bursting events that are critical for brain maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to connectivity studies in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "3846ba6b-1906-429a-9071-e204e855c9b4",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C8",
+      "claim": "The insula is a major source of the transient bursting events that are critical for brain maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This direct measure of neural and hemodynamic activity shows that the insula, one of the most densely connected hubs in the developing cortex, is a major source of the transient bursting events that are critical for brain maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data showing insular activation during delta brushes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "1cb4fb41-a238-407e-b96c-10f00d143258",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C9",
+      "claim": "Spontaneous bursts of synchronized neuronal activity (spindle bursts) play an instructive role in key developmental processes in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "In animal models, spontaneous bursts of synchronized neuronal activity (known as spindle bursts) play an instructive role in key developmental processes that set early cortical circuits, including neuronal differentiation and synaptogenesis (Hanganu-Opatz, 2010; Khazipov and Luhmann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references to animal model studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "be68cbd5-6737-4fa1-b164-58f2d8e93664",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C10",
+      "claim": "Experimental disruption of early spontaneous activity leads to permanent loss of healthy cortical organization in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental disruption of the normal occurrence and propagation of this early spontaneous activity leads to permanent loss of healthy cortical organization, such as segregation into ocular dominance columns (Xu et al., 2011) and whisker barrels (Tolner et al., 2012) in the primary visual and somatosensory cortices respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited experimental studies in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "cd84c5fa-49c3-4725-a456-91fb58963779",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C11",
+      "claim": "Neural activity recorded in human infants during the preterm period with EEG is characterized by intermittent high amplitude bursts known as Spontaneous Activity Transients (SATs).",
+      "claim_type": "EXPLICIT",
+      "source": "Neural activity recorded in human infants during the preterm period with electroencephalography (EEG) is also characterized by intermittent high amplitude bursts known as Spontaneous Activity Transients (SATs) (Khazipov and Luhmann, 2006; Andr\u00e9 et al., 2010; Tolonen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e354debf-2fea-47c4-b079-3205caae7ff9",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C12",
+      "claim": "SATs have a crucial role in early human brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "SATs appear to have a crucial role in early human brain development, as their occurrence is positively correlated to brain growth during the preterm period (Benders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study showing correlation with brain growth.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b7716666-ab5f-48c5-abec-7bd053db60be",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C13",
+      "claim": "The occurrence of SATs is positively correlated to brain growth during the preterm period.",
+      "claim_type": "EXPLICIT",
+      "source": "SATs appear to have a crucial role in early human brain development, as their occurrence is positively correlated to brain growth during the preterm period (Benders et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "620c5b3e-62cf-4754-b93c-a1b9afd2e3b8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C14",
+      "claim": "Delta brushes are characterized by a slow delta wave (0.3\u20131.5 Hz) with superimposed fast frequency alpha-beta spindles (8\u201325 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The most common of these events is the delta brush, a transient pattern characterised by a slow delta wave (0.3\u20131.5 Hz) with superimposed fast frequency alpha-beta spindles (8\u201325 Hz) (Andr\u00e9 et al., 2010; Whitehead et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the established definition of delta brushes supported by cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "143f9858-712f-4cfa-8322-757fe1696e63",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C15",
+      "claim": "Delta brushes appear from 28 to 30 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "Delta brushes appear from 28 to 30 weeks PMA (Boylan et al., 2008; Lamblin et al., 1999; Niedermeyer, 2005; Vecchierini et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references describing the developmental timeline.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a0d7456a-7672-4084-b955-9fe21e050c34",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C16",
+      "claim": "Delta brushes have a peak incidence at 32\u201335 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "have a peak incidence at 32\u201335 weeks PMA (Andr\u00e9 et al., 2010; Boylan et al., 2008; Lamblin et al., 1999; D'Allest and Andre, 2002; Hahn and Tharp, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references describing the developmental timeline.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "98f9400e-553f-4a8c-9b97-cc160f024c75",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C17",
+      "claim": "Delta brushes disappear between 38\u201342 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "and disappear between 38\u201342 weeks PMA (Boylan et al., 2008; Hahn and Tharp, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references describing the developmental timeline.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "5fc35d14-bd3e-4e5f-8a0f-c92c627b415d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C18",
+      "claim": "Delta brushes initially have a diffuse or predominantly peri-central distribution in infants <32 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "They initially have a diffuse or predominantly peri-central distribution in infants <32 weeks PMA (Lamblin et al., 1999; Boylan, 2007; Volpe, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references describing topographical distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "6472f046-c80b-4e6e-9a8b-c48b36d83590",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C19",
+      "claim": "Delta brushes progress to have a more temporal and occipital (but rarely frontal) topography in late preterm infants.",
+      "claim_type": "EXPLICIT",
+      "source": "progressing to have a more temporal and occipital (but rarely frontal) topography in late preterm infants (Tolonen et al., 2007; D'Allest and Andre, 2002; Hahn and Tharp, 2005; Volpe, 1995; Watanabe et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited references describing topographical changes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "4a17a210-e244-40ee-b90c-e33c1b9b0cd3",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C20",
+      "claim": "Delta brushes can be elicited by external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "As with spindle bursts in animal models, delta brushes can also be elicited by external stimuli (Chipaux et al., 2013; Colonnese et al., 2010; Fabrizi et al., 2011; Milh et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "9922693b-f1c6-4735-8c9b-ac64c140925e",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C21",
+      "claim": "Delta brush topographies coarsely overlie the primary sensory cortices of the relevant stimulus modality.",
+      "claim_type": "EXPLICIT",
+      "source": "with their topographies coarsely overlying the primary sensory cortices of the relevant stimulus modality, suggesting that the activation of specific cortical regions appears on the scalp surface as different delta brush distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that evoked delta brushes have topographies related to stimulus modality.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "8de223fd-d7ec-486b-8c75-fc704bb67716",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C22",
+      "claim": "Reviewing delta brush incidence and morphology is an important part of the clinical neurophysiological assessment of hospitalised infants.",
+      "claim_type": "EXPLICIT",
+      "source": "As delta brushes are the hallmark of the preterm EEG, reviewing their incidence and morphology is an important part of the clinical neurophysiological assessment of hospitalised infants (Whitehead et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on clinical practice.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "edb67c2e-a3b6-49ae-ab19-29dcce49a489",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C23",
+      "claim": "Preterm infants with a greater incidence of delta brushes are more likely to develop normally.",
+      "claim_type": "EXPLICIT",
+      "source": "Preterm infants with a greater incidence of delta brushes are more likely to develop normally (Biagioni et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited clinical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e6afb206-c4c7-4694-9e01-7330a2c9da03",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C24",
+      "claim": "Diminished occurrence or atypical morphology of delta brushes is seen in infants with major brain lesions such as periventricular leukomalacia who later develop cerebral palsy.",
+      "claim_type": "EXPLICIT",
+      "source": "while diminished occurrence or atypical morphology is seen in infants with major brain lesions such as periventricular leukomalacia who later develop cerebral palsy (Andr\u00e9 et al., 2010; Watanabe et al., 1999; Conde et al., 2005; Kidokoro et al., 2006; Okumura et al., 1999; Okumura et al., 2002; Tich et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a0b86ca4-4ec2-4315-ac27-8ed02004476d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C26",
+      "claim": "Persistent EEG dysmaturity over serial recordings is associated with adverse cognitive outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "and which is associated with adverse cognitive outcome if persistent over serial recordings (Okumura et al., 2002; Holmes and Lombroso, 1993; Hayakawa et al., 1997; Lombroso, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "9d13c30d-e24d-4bab-b038-937298bdbe44",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C27",
+      "claim": "The localization of delta brush sources within the brain cannot be easily inferred just from the electrical potentials recorded at the scalp surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst delta brushes can be readily identified with EEG, the localization of their source within the brain cannot be easily inferred just from the electrical potentials recorded at the scalp surface (Darvas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of EEG supported by the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a0b510db-0c1c-4194-9745-b12dbb17b2f8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C28",
+      "claim": "This study provides the first evidence that spontaneous patterns of delta brush activity are associated with significant hemodynamic activity clearly localized to distinct regions within the developing cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide the first evidence that spontaneous patterns of delta brush activity in the period preceding normal birth are associated with significant hemodynamic activity clearly localized to distinct regions within the developing cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b1433dad-5c0c-4c1f-a679-1398cdc36576",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C29",
+      "claim": "The most common event in the late preterm period (posterior-temporal delta brushes) are reflective of activity in the insular cortices and temporal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the most common event in the late preterm period (posterior-temporal delta brushes) are reflective of activity in the insular cortices and temporal pole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the fMRI analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "3ba51821-85ee-4dd7-b1da-64b8c85c91bc",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C30",
+      "claim": "Simultaneous EEG-fMRI data were successfully acquired in 10 infants with median PMA at data collection of 35 + 1 weeks (range 32 + 2 to 36 + 2 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous EEG-fMRI data were successfully acquired in a group of 10 infants in their late preterm period (median PMA at data collection 35 + 1 weeks, range 32 + 2 to 36 + 2 weeks; five female) during natural sleep over a median of 7.5 min (range: 3.5\u201310.5 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample and data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "8d6d4ff4-3e70-456d-b5d2-17ce4458ea59",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C31",
+      "claim": "All infants in the study sample were clinically well at the time of study and were reported as having normal brain appearances on their structural MR images.",
+      "claim_type": "EXPLICIT",
+      "source": "All the infants in the study sample were clinically well at the time of study and were reported as having normal brain appearances on their structural MR images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical characteristics of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "12f8c2d1-a47d-421a-b386-4042a89eecd3",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C32",
+      "claim": "Delta brushes occurred frequently with a median of 4.4/minute (range: 1.9\u20136.7).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the literature (Andr\u00e9 et al., 2010; Whitehead et al., 2017), delta brushes occurred frequently (median: 4.4/minute; range: 1.9\u20136.7)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the EEG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "0b1f60c0-7d4c-4b6b-a4b2-cfb37c8a7793",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C33",
+      "claim": "Delta brushes occurred with 23 different scalp distributions in total.",
+      "claim_type": "EXPLICIT",
+      "source": "and with varying scalp distributions (23 in total; Figure 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the EEG analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "1d29f86e-cf0e-4144-8da1-6f97d0204d35",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C34",
+      "claim": "Right posterior-temporal delta brushes were consistently present in 10/10 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, right and left posterior-temporal delta brushes were consistently present in 10/10 and in 9/10 subjects respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the EEG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e9b66d1e-03e2-4283-9083-42006d89d44a",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C35",
+      "claim": "Left posterior-temporal delta brushes were consistently present in 9/10 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, right and left posterior-temporal delta brushes were consistently present in 10/10 and in 9/10 subjects respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the EEG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "73b78ac7-b803-42f5-b5cb-1dda06c10c31",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C36",
+      "claim": "Right and left posterior-temporal delta brushes could be associated with significant clusters of positive BOLD activity (p<0.05 with family wise error correction) in the ipsilateral insular cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and could be associated with significant clusters of positive BOLD activity (p<0.05 with family wise error correction) in the ipsilateral insular cortex (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary finding from the fMRI analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "470ab8ab-4078-446e-9a71-0e8599044559",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C37",
+      "claim": "The insulae represent major locations of occurrence for developmentally required neuronal events during the late preterm period.",
+      "claim_type": "EXPLICIT",
+      "source": "This result provides the first evidence that the insulae represent major locations of occurrence for these developmentally required neuronal events during our specific study window in the late preterm period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e47b784c-ff5c-4535-bf2b-dadeb23384cb",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C38",
+      "claim": "The timing and trajectory of maturation differs between brain regions in human preterm development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are rapid changes occurring across the whole brain in human preterm development, the timing and trajectory of maturation has been shown to differ between regions (Makropoulos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on brain development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "16d24c56-cdbf-4903-b069-64ad94d3e383",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C39",
+      "claim": "The insular cortices enter a crucial phase of their development during 32\u201336 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the idea that bursting neural activity is directly linked to brain maturation, the insular cortices in humans enter a crucial phase of their development during our study period (32\u201336 weeks PMA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies on insular development.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "012ae79f-f32d-45a4-9654-dcc26cb11dbe",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C40",
+      "claim": "The volumetric growth trajectories of the insular cortices and adjacent temporal lobes accelerate during 32\u201336 weeks PMA.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) their volumetric growth trajectories (and those of the adjacent temporal lobes) accelerate (Makropoulos et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on brain volumetric development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "861d9706-8652-42c1-b636-f568035691e5",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C41",
+      "claim": "The insular cortices establish an early pattern of dense functional and structural connectivity during 32\u201336 weeks PMA, allowing them to assume a prominent role as cortical hubs during infancy.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) they establish an early pattern of dense functional and structural connectivity, which allows them to assume a prominent role as cortical hubs during infancy (Ball et al., 2014; Gao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on connectivity development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "4116b3c1-4b5f-4eda-8635-57cf3ac0a16a",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C42",
+      "claim": "The mature insulae have connections to almost all other regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the mature insulae have connections to almost all other regions of the brain, enabling them to play a versatile role in a wide range of functions including sensory and pain perception, multi-sensory integration, emotion, and cognition (Nieuwenhuys, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on insular connectivity and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "d27c98f5-7a12-4432-ba81-d86953f076dc",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C43",
+      "claim": "The mature insulae play a versatile role in sensory and pain perception, multi-sensory integration, emotion, and cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the mature insulae have connections to almost all other regions of the brain, enabling them to play a versatile role in a wide range of functions including sensory and pain perception, multi-sensory integration, emotion, and cognition (Nieuwenhuys, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on insular function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a1b91e2d-2543-4c91-beb9-d7c73abaca03",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C44",
+      "claim": "In primates and rodents, the insulae have a dense network of connections and play a key integrative function in sensory and behavioural processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in primates and rodents, the insulae have a dense network of connections and play a key integrative function in sensory and behavioural processes (Butti and Hof, 2010; Mars et al., 2013; Miranda-Dominguez et al., 2014; Zingg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on insular function in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b4bd25fd-0efe-48ea-8af0-8dc26a58ce55",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C45",
+      "claim": "The anatomical maturity of the insulae is more advanced in comparison to the surrounding cortex in early life in primates and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Their anatomical maturity is also more advanced in comparison to the surrounding cortex in early life (Huang et al., 2008; Kroenke et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on insular development in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "caf119e9-c13f-4ded-830e-282c046ff054",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C46",
+      "claim": "There are currently no animal developmental studies that directly address the relationship between bursting activity and maturation of the insular cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are currently no animal developmental studies that directly address the relationship between bursting activity and maturation of this particular brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the animal model literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "40c7e295-a702-43c0-a736-a536f2260775",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C47",
+      "claim": "Right-sided posterior-temporal delta brushes were associated with significant clusters of hemodynamic activity in the right superior temporal lobe and pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the insulae, right-sided posterior-temporal delta brushes were associated with significant clusters of hemodynamic activity in the right superior temporal lobe and pole (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fMRI analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "fa354116-2be3-48da-b2c1-87a213f79f29",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C48",
+      "claim": "The subplate is a transient structure thought to play a fundamental role in the generation of spindle burst activity in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is of particular significance as these are regions where the subplate, a transient structure which is thought to play a fundamental role in the generation of spindle burst activity in animals (Tolner et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on subplate function in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a24efcbb-9916-4d36-a6dd-38810da1fbd0",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C49",
+      "claim": "The subplate can be qualitatively appreciated on high resolution MR images and histology in the superior temporal lobe and pole.",
+      "claim_type": "EXPLICIT",
+      "source": "can be qualitatively appreciated on high resolution MR images and histology (Figure 2\u2014figure supplement 2) (Kostovi\u0107 et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cited reference and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "9ef510f8-1355-4d83-bc8e-a896c3f2831d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C50",
+      "claim": "The subplate reaches maximal thickness in the middle of the third trimester in human development.",
+      "claim_type": "EXPLICIT",
+      "source": "In human development, the subplate follows a similar trajectory to delta brush activity, reaching maximal thickness in the middle of the third trimester before disappearing in most of the brain by term equivalent age (Kostovi\u0107 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on subplate development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "74c70729-8b31-41ff-a3ec-afb07cf6d9c6",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C51",
+      "claim": "The subplate disappears in most of the brain by term equivalent age in human development.",
+      "claim_type": "EXPLICIT",
+      "source": "In human development, the subplate follows a similar trajectory to delta brush activity, reaching maximal thickness in the middle of the third trimester before disappearing in most of the brain by term equivalent age (Kostovi\u0107 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on subplate development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e53ce345-b2a4-403f-888b-030062fda5f8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C52",
+      "claim": "The present results support a link between delta brush activity and the subplate in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results therefore support a link between these functional and structural developmental features in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the temporal and spatial correspondence between delta brushes and subplate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "453e1417-0a79-4600-8e6b-6060d4f1cfa5",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C53",
+      "claim": "Source localizing spontaneous delta brushes to the insulae and temporal pole does not necessary imply that this activity starts here.",
+      "claim_type": "EXPLICIT",
+      "source": "Source localizing spontaneous delta brushes to the insulae and temporal pole does not necessary imply that this activity starts here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "7d9c1531-22e6-44e4-af2e-558960b4212f",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C54",
+      "claim": "Spindle bursts in animals are recorded from the cortical plate but are thought to be driven by spontaneous activity from the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Spindle bursts in animals are recorded from the cortical plate (Yang et al., 2013), but are thought to be driven by spontaneous activity from the periphery (whisker pad [Yang et al., 2009], spinal cord [In\u00e1cio et al., 2016], retina [Hanganu et al., 2006] and cochlea [Johnson et al., 2011])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on spindle burst generation in animal models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "c5b739ce-6a41-4153-a3c8-97b2c3d785c8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C55",
+      "claim": "Spindle bursts in animals are thought to be driven by central pattern generators such as the primary motor cortex, brainstem and thalamus within the somatomotor system.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as from central pattern generators (CPGs) such as the primary motor cortex, brainstem and thalamus within the somatomotor system (for review see [Luhmann et al., 2016]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited review on spindle burst generation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "769c9b52-a19e-4cd9-a956-1757e2d321d6",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C56",
+      "claim": "It is possible that other neuronal events in peripheral or central centers may precede the occurrence of delta brushes in humans but cannot be detected with EEG and fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that other neuronal events in these centers may also precede the occurrence of delta brushes in humans, but cannot be detected with EEG and fMRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation acknowledging the limitations of the methods.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "5ccc77f2-725c-42ee-a9bb-11f006355d92",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C57",
+      "claim": "It is unlikely that the insular activation observed resulted directly from activity in the sensory periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is unlikely that the insular activation we observed here resulted directly from activity in the sensory periphery as the insulae are not involved in the primary processing of visual (Lee et al., 2012), auditory (Baldoli et al., 2015) or somatosensory stimuli (Allievi et al., 2016; Arichi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies showing the insulae are not primary sensory areas.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "90dd8fac-e552-468c-9912-bd0e554f5d3c",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C58",
+      "claim": "Bilateral and unilateral parietal, occipital and mid-temporal, but rarely frontal, delta brushes were sporadically recorded in individual subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral and unilateral parietal, occipital and mid-temporal, but rarely frontal, delta brushes were also sporadically recorded in individual subjects, suggesting the presence of other less active sources of spontaneous activity at this developmental stage (Figure 3 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the EEG analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "fc5e1473-9308-46ff-abe5-07afe1597ea9",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C59",
+      "claim": "The sporadic occurrence of other delta brush topographies suggests the presence of other less active sources of spontaneous activity at this developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral and unilateral parietal, occipital and mid-temporal, but rarely frontal, delta brushes were also sporadically recorded in individual subjects, suggesting the presence of other less active sources of spontaneous activity at this developmental stage (Figure 3 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of multiple delta brush topographies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "0eb9d888-11cf-4a9d-9b46-b9b982202bd6",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C60",
+      "claim": "Areas of BOLD activity were frequently seen in the anatomical homologue in the opposite hemisphere in addition to ipsilateral primary clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the ipsilateral primary clusters, other areas of BOLD activity were also frequently seen in the anatomical homologue in the opposite hemisphere and occasionally in association areas of the cortex (supplementary motor area (SMA), anterior cingulate, precuneus) or deeper structures of the brain (thalamus and basal ganglia) (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fMRI analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "45472c7f-8cac-4e95-a4ee-daef8003df97",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C61",
+      "claim": "Areas of BOLD activity were occasionally seen in association areas of the cortex (SMA, anterior cingulate, precuneus) or deeper structures of the brain (thalamus and basal ganglia).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the ipsilateral primary clusters, other areas of BOLD activity were also frequently seen in the anatomical homologue in the opposite hemisphere and occasionally in association areas of the cortex (supplementary motor area (SMA), anterior cingulate, precuneus) or deeper structures of the brain (thalamus and basal ganglia) (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fMRI analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "ae9ae069-35ab-4151-bab3-77e355c4e086",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C62",
+      "claim": "Delta brushes with topographies other than posterior-temporal are more frequent earlier on in development compared to the age window studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Delta brushes with topographies other than posterior-temporal are more frequent earlier on in development compared to the age window studied here (Lamblin et al., 1999; Boylan, 2007; Volpe, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on developmental changes in delta brush topography.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "9c40a481-1081-4cb5-8f68-a17802e45385",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C63",
+      "claim": "Delta brushes with non-posterior-temporal topographies may represent activity from other developing brain regions which follow a different maturational trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "and may represent activity from other developing brain regions which follow a different maturational trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "c5448600-c1e1-4196-be1d-522c1a7228e6",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C64",
+      "claim": "Precise localization of the sources of less common delta brush events will require further work in a larger study population spanning other age ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "However precise localization of the sources of these events and others that were not recorded in our study group will require further work in a larger study population which spans other age ranges when these regions may be more active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the limitations of the current study and suggests future directions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "2ca61363-1b7f-4402-b9c3-4878a7086d1d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C65",
+      "claim": "Longitudinal work may allow exploration of whether key features of spindle burst activity in animals are also present in humans during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such longitudinal work may also allow an exploration of whether key features of spindle burst activity in animals are also present in humans during maturation, such as increasing propagation of neuronal activity in local and neighbouring networks (Yang et al., 2013) and regional differences in oscillatory patterns (Yang et al., 2009), as well as association of these events to the presence of the transient subplate layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research based on animal model findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "fc23713a-2cd8-475a-8c22-6cdefa9efd6f",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C66",
+      "claim": "Despite the apparent absence of tight neurovascular coupling in perinatal rodent models, this study demonstrated a clear association between neural (EEG) and positive functional hemodynamic activity (fMRI) in human infants.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the apparent absence of a tight neurovascular coupling in perinatal rodent models (Kozberg et al., 2016; Zehendner et al., 2013), we demonstrated for the first time in human infants, a clear association between a direct measure of neural (EEG) and positive functional hemodynamic activity (fMRI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study contrasting with animal model data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "8de40e03-f3a8-44ec-8faa-7a351a994bbd",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C67",
+      "claim": "In rodents, neurovascular coupling matures postnatally together with the development of long-range connectivity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst in rodents, neurovascular coupling matures postnatally together with the development of long-range connectivity patterns (Kozberg et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on rodent neurovascular development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "2aea9e8a-0cd7-490b-b34e-fe90c48c574e",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C68",
+      "claim": "In humans, long-range connectivity can be readily identified by the late preterm period, suggesting that neuronal and hemodynamic activity are already closely linked by this time.",
+      "claim_type": "EXPLICIT",
+      "source": "in humans this connectivity can be readily identified by the late preterm period, thus suggesting that neuronal and hemodynamic activity are already closely linked by this time (Allievi et al., 2016; Doria et al., 2010; White et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies showing connectivity in preterm infants.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "67619cde-92ff-4b12-ab14-04bbf6d27203",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C69",
+      "claim": "The relationship between neuronal and hemodynamic activity is developmentally regulated across the neonatal period resulting in changing hemodynamic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship is developmentally regulated across the neonatal period resulting in changing hemodynamic responses (Arichi et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on developmental changes in hemodynamic responses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "d027319c-f263-4c85-920e-83cdc9235f1e",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C70",
+      "claim": "Neurovascular coupling in neonates is validated by the presence of localised positive BOLD activation in the primary auditory and somatosensory cortices following sound and passive motor stimulation respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "and is validated by the presence of localised positive BOLD activation in the primary auditory and somatosensory cortices following sound and passive motor stimulation respectively (Allievi et al., 2016; Arichi et al., 2010; Baldoli et al., 2015; Erberich et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited studies showing stimulus-evoked BOLD responses in neonates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "dd19c277-9ed5-47c6-aa62-d6d193aab9c6",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C71",
+      "claim": "Spontaneous activity is a fundamental feature of developing neural circuits well before the establishment of cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous activity is a fundamental feature of developing neural circuits well before the establishment of cortical layers (Luhmann et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited review on early neural development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a06ba87c-3679-4fc5-a3cc-5b7a7ffe5440",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C72",
+      "claim": "These findings provide the first evidence of a direct link between spontaneous neural and hemodynamic activity in early human life.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide the first evidence that the most common of these neuronal events in the late preterm period are seen in the posterior temporal regions and are largely generated by the insulae and subplate. As these events are known to have an instructive function in cortical maturation in rodents (Hanganu-Opatz, 2010; Khazipov and Luhmann, 2006; Rakic and Komuro, 1995), our results suggest that these structures may play a key developmental role as a major location of these bursting events in early human life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "2a36f857-2b24-4236-810c-1218d009015d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C73",
+      "claim": "The insulae and subplate may play a key developmental role as a major location of bursting events in early human life.",
+      "claim_type": "EXPLICIT",
+      "source": "our results suggest that these structures may play a key developmental role as a major location of these bursting events in early human life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization findings and the known role of bursting activity in development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "57216c28-d986-46dc-ae72-69133e38b93c",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C74",
+      "claim": "Thirteen preterm infants were recruited for the study from the Neonatal Unit at St Thomas' Hospital, London.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen preterm infants (five females; studied between 32\u201336 weeks post-menstrual age, PMA) 5\u201355 days old (23 \u00b1 17, mean \u00b1SD) were recruited for this study from the Neonatal Unit at St Thomas' Hospital, London (patient demographic information is detailed in Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "0e1c4306-53ca-48c0-837c-5860bb53078b",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C75",
+      "claim": "Infants were excluded if they required any respiratory support during scanning or if they were known to have a history of severe brain pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Infants were excluded if they required any respiratory support during scanning or if they were known to have a history of severe brain pathology such as extensive intraventricular hemorrhage (grade 3 with ventricular dilatation; grade 4 with parenchymal extension), birth asphyxia, focal intracerebral lesions affecting the parenchyma or white matter (such as infarction, overt hemorrhage, or multiple punctate white matter lesions), severe hydrocephalus, or congenital brain malformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "c663265d-a843-47c8-86c1-842da65b3b78",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C76",
+      "claim": "An optimized pre-processing and analysis pipeline which incorporated an age-specific hemodynamic response function (HRF) and template brain was used for the fMRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "An optimized pre-processing and analysis pipeline which incorporated an age-specific hemodynamic response function (HRF) and template brain was used for the fMRI data (detailed in the supplementary methods) (Allievi et al., 2016; Arichi et al., 2012; Arichi et al., 2010; Serag et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "492ceb62-05c9-47f5-8289-0270a746a73c",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C77",
+      "claim": "Inter-rater reliability for delta brush identification resulted in substantial agreement with median Fleiss' Kappa 0.65 (range 0.25\u20130.76).",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-rater reliability was assessed using Fleiss' Kappa analysis (Fleiss, 1971) and resulted in a substantial agreement (median Fleiss' Kappa 0.65 (range 0.25\u20130.76)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the reliability of the EEG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b67537a8-212a-4e4d-be35-0a6b733fbe04",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C78",
+      "claim": "Two data sets were discarded because of insufficient EEG quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Two data sets were discarded because of insufficient EEG quality (due to bridging electrodes or unsuccessful artifact removal) which made them unsuitable for reliable delta brush detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data exclusion from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "e0ad01be-aa76-4751-adec-da405fe65ef8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C79",
+      "claim": "One data set was discarded as the remaining data segment did not contain more than 3 delta brushes with the same topography.",
+      "claim_type": "EXPLICIT",
+      "source": "One data set was discarded as the remaining data segment did not contain more than 3 delta brushes with the same topography (i.e. belonging to the same EV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data exclusion from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "887087a6-4f20-4e95-ba8f-803f94168bce",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C80",
+      "claim": "Right posterior-temporal delta brush activity was significantly associated with BOLD clusters in the right temporal pole, right superior temporal lobe, and the right insular cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In a group of 10 preterm infants (35 + 0 weeks PMA, range 32 + 2 to 36 + 2 weeks), right posterior-temporal delta brush activity (blue) was significantly associated with BOLD clusters in the right temporal pole (z50, z55), right superior temporal lobe (x28), and the right insular cortex (z60, z62, z64, z66).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and represents the group-level fMRI findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "47108cbd-c951-486d-b473-8c3e190b3393",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C81",
+      "claim": "Left posterior-temporal delta brush activity was significantly associated with BOLD clusters in the left posterior insula and left parietal operculum.",
+      "claim_type": "EXPLICIT",
+      "source": "Left posterior-temporal delta brush activity (red-yellow) was significantly associated with BOLD clusters in the left posterior insula (z64, z66) and left parietal operculum (z66, z68).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and represents the group-level fMRI findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "58766c5d-d445-44b0-a01d-9eb1144a315b",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C82",
+      "claim": "The degree of prematurity at birth adversely affects both insular volume and thalamo-insular connectivity at term equivalent age.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the preterm period for insular development in humans is further emphasized by studies showing that the degree of prematurity at birth, recreational drug use in pregnancy and late onset intra-uterine growth restriction adversely affects both insular volume and thalamo-insular connectivity at term equivalent age (Ball et al., 2012; Batalle et al., 2016; Ega\u00f1a-Ugrinovic et al., 2014; Grewen et al., 2015; Salzwedel et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on the effects of prematurity on insular development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "3784a047-4cf5-4959-9d9e-3bfeb461ce2d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C83",
+      "claim": "Recreational drug use in pregnancy adversely affects both insular volume and thalamo-insular connectivity at term equivalent age.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the preterm period for insular development in humans is further emphasized by studies showing that the degree of prematurity at birth, recreational drug use in pregnancy and late onset intra-uterine growth restriction adversely affects both insular volume and thalamo-insular connectivity at term equivalent age (Ball et al., 2012; Batalle et al., 2016; Ega\u00f1a-Ugrinovic et al., 2014; Grewen et al., 2015; Salzwedel et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on the effects of drug use on insular development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "6fa8949f-3850-4db3-bb4f-993ea418b3c8",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C84",
+      "claim": "Late onset intra-uterine growth restriction adversely affects both insular volume and thalamo-insular connectivity at term equivalent age.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the preterm period for insular development in humans is further emphasized by studies showing that the degree of prematurity at birth, recreational drug use in pregnancy and late onset intra-uterine growth restriction adversely affects both insular volume and thalamo-insular connectivity at term equivalent age (Ball et al., 2012; Batalle et al., 2016; Ega\u00f1a-Ugrinovic et al., 2014; Grewen et al., 2015; Salzwedel et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on the effects of growth restriction on insular development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "21693c0c-bc39-415d-8637-e7f124636644",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C85",
+      "claim": "Thalamo-insular connectivity at term equivalent age is significantly correlated with cognitive outcome at 2 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "with the latter being significantly correlated with cognitive outcome at 2 years of age (Ball et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference on the relationship between connectivity and outcome.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b7aaac7a-8010-42c7-a009-d93cdc052ab1",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C86",
+      "claim": "Insular dysfunction and poor growth have been implicated in a range of psychiatric conditions, including neurodevelopmental difficulties such as autism spectrum and attention deficit hyperactivity disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, insular dysfunction and poor growth have been implicated in a range of psychiatric conditions, including neurodevelopmental difficulties such as autism spectrum and attention deficit hyperactivity disorders which have greater prevalence in preterm born children (Hatton et al., 2012; Johnson and Marlow, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on insular involvement in psychiatric conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "90d99a1a-e538-4dd6-8390-45a856444207",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "claim_id": "C87",
+      "claim": "Autism spectrum and attention deficit hyperactivity disorders have greater prevalence in preterm born children.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, insular dysfunction and poor growth have been implicated in a range of psychiatric conditions, including neurodevelopmental difficulties such as autism spectrum and attention deficit hyperactivity disorders which have greater prevalence in preterm born children (Hatton et al., 2012; Johnson and Marlow, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references on outcomes in preterm children.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9303e58-3b8f-4da2-a475-17777127e09d",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Delta brushes are spontaneous neuronal bursts characterized by specific frequency patterns (0.3\u20131.5 Hz delta waves with 8\u201325 Hz spindles) that appear from 28\u201330 weeks PMA, peak at 32\u201335 weeks, and disappear by 38\u201342 weeks, with topography changing from diffuse/peri-central to temporal/occipital distributions. Similar events in animal models drive cortical development, but the origin in humans was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, C14\u2013C19 establish well-documented characteristics of delta brushes supported by multiple citations. Claims C2\u2013C3 appropriately frame the knowledge gap. These are established facts from prior literature that provide essential background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Delta brushes and similar spontaneous bursting activity in animal models play instructive roles in cortical development, with experimental disruption causing permanent organizational deficits. In humans, delta brush occurrence correlates with brain growth and normal development, while diminished occurrence associates with brain lesions and adverse outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9\u2013C10, C12\u2013C13, C20\u2013C24, C26 are well-supported by multiple citations to prior work. These establish the developmental importance and clinical significance of delta brushes, providing crucial motivation for the current study. The evidence from animal models and human clinical studies is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study successfully acquired simultaneous EEG-fMRI data from 10 clinically well preterm infants (median 35+1 weeks PMA, range 32+2 to 36+2 weeks) with normal brain MRI appearances, using an optimized age-specific analysis pipeline. Inter-rater reliability for delta brush identification was substantial (median Fleiss' Kappa 0.65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30\u2013C31, C74\u2013C79 describe the study methodology and sample characteristics. The sample size is small (n=10 final, from 13 recruited) but appropriate for this novel technique. The inter-rater reliability is adequate though shows some variability (range 0.25\u20130.76). Data exclusions are transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "6b8f6cf5-b78b-4c58-9c04-3d567d376f5b",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Delta brushes occurred frequently (median 4.4/minute) with 23 different scalp distributions. Right and left posterior-temporal delta brushes were the most consistent patterns, present in 10/10 and 9/10 subjects respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32\u2013C35 report quantitative EEG findings that are consistent with prior literature and provide the basis for subsequent fMRI analysis. The frequency and topographic consistency of posterior-temporal delta brushes justify their selection as the primary focus for group-level analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "86a743af-4756-46fa-820b-387a131dbe41",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Left posterior-temporal delta brushes were associated with ipsilateral BOLD activation in the insula only, while right posterior-temporal delta brushes were associated with BOLD activation in both the insular and temporal cortices (p<0.05 with family-wise error correction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5\u2013C6, C36, C80\u2013C81 present the primary fMRI findings with appropriate statistical correction (FWE p<0.05). The hemispheric asymmetry (left: insula only; right: insula + temporal) is clearly demonstrated in Figure 2. However, the small sample size (n=10) and lack of discussion about why this asymmetry exists represents a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "8dbba6c9-be6a-4b29-94b3-1e5efec0a96c",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This study provides the first evidence that spontaneous delta brush activity in late preterm infants is associated with significant hemodynamic activity localized to the insular cortices and temporal pole, establishing the insulae as major locations for these developmentally required neuronal events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28\u2013C29, C37, C72 state the main finding. The EEG-fMRI data (C36, C80\u2013C81) directly support localization to insula and temporal regions. The novelty claim appears justified given C3 and C27 establish this hasn't been done before. However, 'major source' is somewhat overstated given the small sample and limited age range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The insula is a densely connected cortical hub that undergoes crucial development during 32\u201336 weeks PMA, with accelerating volumetric growth and establishment of dense connectivity patterns. In mature brains, the insula connects to almost all brain regions and plays versatile roles in sensory, emotional, and cognitive functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38\u2013C45 are well-supported by multiple citations describing insular anatomy, connectivity, and development across species. This contextualizes why finding insular activation during delta brushes is significant. The convergence of timing between insular development and delta brush peak incidence strengthens the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b45964ea-67a1-4c68-9206-d45274574b98",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The insula is a major source of transient bursting events critical for brain maturation, and the insulae and subplate may play a key developmental role as major locations of these bursting events in early human life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8 and C73 represent strong conclusions that extend beyond what the data directly demonstrate. While the study shows correlation between delta brushes and insular BOLD activation (C36, C80\u2013C81), this doesn't prove the insula is the 'source' or that these events are 'critical for maturation' in humans. The causal role is inferred from animal studies (C9\u2013C10) but not tested here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "b9d64256-8094-48be-a9cc-d810fc5fc789",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Right posterior-temporal delta brushes were associated with BOLD activity in the right superior temporal lobe and pole, regions where the subplate\u2014a transient structure thought to generate spindle bursts in animals\u2014can be visualized on MRI. The temporal correspondence between subplate and delta brush trajectories supports a functional link in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47\u2013C52 connect the fMRI findings to the subplate structure. The subplate's presence in temporal regions is documented (C49, Figure 2\u2014supplement 2) and its developmental trajectory parallels delta brushes (C50\u2013C51). However, the study only shows spatial/temporal correlation, not a mechanistic link. The conclusion (C52) is appropriately cautious ('support a link').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Source localization to the insulae and temporal pole does not necessarily mean activity originates there. In animal models, spindle bursts are driven by peripheral or central pattern generator activity, and similar preceding events may exist in humans but be undetectable by EEG-fMRI. However, direct peripheral sensory drive is unlikely given the insula's role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53\u2013C57 provide important caveats about interpretation. The authors appropriately acknowledge that EEG-fMRI detects cortical activity but cannot determine if it originates there or is driven by subcortical/peripheral sources (C54\u2013C56). The argument against direct peripheral drive (C57) is reasonable given cited evidence that insula is not a primary sensory area.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a992cc24-3cc1-4b26-a883-4b94d61354ed",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Other delta brush topographies (parietal, occipital, mid-temporal, rarely frontal) were sporadically recorded, suggesting other less active sources of spontaneous activity. Additional BOLD activity was frequently seen in contralateral homologous regions and occasionally in association cortices and subcortical structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58\u2013C61 describe secondary findings. The observation of multiple topographies (C58, Figure 3) and distributed BOLD activation (C60\u2013C61) is clearly reported. The interpretation that these represent 'less active sources' (C59) is reasonable but speculative. These findings suggest network-level activity beyond the primary insular sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "a9925dc0-da03-4433-af69-02792cbf04e0",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Non-posterior-temporal delta brushes are more frequent earlier in development and may represent activity from brain regions following different maturational trajectories. Precise localization of these less common events will require larger studies spanning broader age ranges and longitudinal designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62\u2013C65 acknowledge study limitations and propose future directions. The age-dependent topographic changes (C62) are supported by citations. The interpretations (C63) and proposed future work (C64\u2013C65) are appropriately speculative and identify genuine limitations of the current cross-sectional design with narrow age range.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "6c7f20b4-523e-4f9f-b316-ef426762c233",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite absent tight neurovascular coupling in perinatal rodents, this study demonstrated clear association between neural (EEG) and hemodynamic (fMRI) activity in human preterm infants. In humans, long-range connectivity is established by the late preterm period, suggesting neurovascular coupling is functional, as validated by stimulus-evoked BOLD responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66\u2013C70 address a critical methodological concern about whether fMRI is valid in preterm infants. The contrast with rodent data (C66\u2013C67) is supported by citations. The argument that human neurovascular coupling is functional by this age (C68\u2013C70) is supported by connectivity studies and stimulus-evoked responses. This justifies the fMRI approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prematurity, prenatal drug exposure, and intrauterine growth restriction adversely affect insular volume and thalamo-insular connectivity at term, with connectivity correlating with cognitive outcomes at 2 years. Insular dysfunction is implicated in neurodevelopmental disorders that are more prevalent in preterm children.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82\u2013C87 cite prior work linking insular development to clinical outcomes. These citations appropriately contextualize the clinical significance of the current findings. However, the current study does not directly assess outcomes or pathology, so these claims serve as background/discussion rather than results of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    },
+    {
+      "id": "3caf74b6-2a6f-4680-9a47-9b0f34bae3ce",
+      "content_id": "3f49005c-dc4b-458d-abcf-cc209de6cac9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "EEG cannot easily localize sources from scalp recordings, there are no animal studies directly addressing bursting activity in insular development, and spontaneous activity is fundamental to developing neural circuits before cortical layer establishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C46, C71 establish methodological rationale (C27), identify gaps in animal literature (C46), and provide developmental context (C71). All are appropriately supported by citations and establish the motivation and novelty of the current approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:00:00.469034Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9591df18-a7c2-43f8-b89a-4f74695b1460",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "546df9a4-e8d8-46f7-aec1-efc43bb0cc55",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "f5e781cd-e131-40d0-8b32-117d5585c1f0",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "cd84c5fa-49c3-4725-a456-91fb58963779",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "620c5b3e-62cf-4754-b93c-a1b9afd2e3b8",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "143f9858-712f-4cfa-8322-757fe1696e63",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "a0d7456a-7672-4084-b955-9fe21e050c34",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "98f9400e-553f-4a8c-9b97-cc160f024c75",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "5fc35d14-bd3e-4e5f-8a0f-c92c627b415d",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "6472f046-c80b-4e6e-9a8b-c48b36d83590",
+      "result_id": "e9303e58-3b8f-4da2-a475-17777127e09d"
+    },
+    {
+      "claim_id": "1cb4fb41-a238-407e-b96c-10f00d143258",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "be68cbd5-6737-4fa1-b164-58f2d8e93664",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "e354debf-2fea-47c4-b079-3205caae7ff9",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "b7716666-ab5f-48c5-abec-7bd053db60be",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "4a17a210-e244-40ee-b90c-e33c1b9b0cd3",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "9922693b-f1c6-4735-8c9b-ac64c140925e",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "8de223fd-d7ec-486b-8c75-fc704bb67716",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "edb67c2e-a3b6-49ae-ab19-29dcce49a489",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "e6afb206-c4c7-4694-9e01-7330a2c9da03",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "a0b86ca4-4ec2-4315-ac27-8ed02004476d",
+      "result_id": "43f78eed-d55e-47a5-bd50-b2da8e0524cd"
+    },
+    {
+      "claim_id": "5e442a20-f7f0-4dfb-a4bb-2736345fa6f9",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "3ba51821-85ee-4dd7-b1da-64b8c85c91bc",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "8d6d4ff4-3e70-456d-b5d2-17ce4458ea59",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "57216c28-d986-46dc-ae72-69133e38b93c",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "0e1c4306-53ca-48c0-837c-5860bb53078b",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "c663265d-a843-47c8-86c1-842da65b3b78",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "492ceb62-05c9-47f5-8289-0270a746a73c",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "b67537a8-212a-4e4d-be35-0a6b733fbe04",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "e0ad01be-aa76-4751-adec-da405fe65ef8",
+      "result_id": "1b3ba95c-24b7-4ec6-a0ae-3b33fb3cbc1e"
+    },
+    {
+      "claim_id": "12f8c2d1-a47d-421a-b386-4042a89eecd3",
+      "result_id": "6b8f6cf5-b78b-4c58-9c04-3d567d376f5b"
+    },
+    {
+      "claim_id": "0b1f60c0-7d4c-4b6b-a4b2-cfb37c8a7793",
+      "result_id": "6b8f6cf5-b78b-4c58-9c04-3d567d376f5b"
+    },
+    {
+      "claim_id": "1d29f86e-cf0e-4144-8da1-6f97d0204d35",
+      "result_id": "6b8f6cf5-b78b-4c58-9c04-3d567d376f5b"
+    },
+    {
+      "claim_id": "e9b66d1e-03e2-4283-9083-42006d89d44a",
+      "result_id": "6b8f6cf5-b78b-4c58-9c04-3d567d376f5b"
+    },
+    {
+      "claim_id": "ca592a1e-35b7-4f28-bb1c-df4498cd1275",
+      "result_id": "86a743af-4756-46fa-820b-387a131dbe41"
+    },
+    {
+      "claim_id": "be3c4990-4b20-4167-9a9a-53a8f81db083",
+      "result_id": "86a743af-4756-46fa-820b-387a131dbe41"
+    },
+    {
+      "claim_id": "73b78ac7-b803-42f5-b5cb-1dda06c10c31",
+      "result_id": "86a743af-4756-46fa-820b-387a131dbe41"
+    },
+    {
+      "claim_id": "887087a6-4f20-4e95-ba8f-803f94168bce",
+      "result_id": "86a743af-4756-46fa-820b-387a131dbe41"
+    },
+    {
+      "claim_id": "47108cbd-c951-486d-b473-8c3e190b3393",
+      "result_id": "86a743af-4756-46fa-820b-387a131dbe41"
+    },
+    {
+      "claim_id": "a0b510db-0c1c-4194-9745-b12dbb17b2f8",
+      "result_id": "8dbba6c9-be6a-4b29-94b3-1e5efec0a96c"
+    },
+    {
+      "claim_id": "b1433dad-5c0c-4c1f-a679-1398cdc36576",
+      "result_id": "8dbba6c9-be6a-4b29-94b3-1e5efec0a96c"
+    },
+    {
+      "claim_id": "470ab8ab-4078-446e-9a71-0e8599044559",
+      "result_id": "8dbba6c9-be6a-4b29-94b3-1e5efec0a96c"
+    },
+    {
+      "claim_id": "a06ba87c-3679-4fc5-a3cc-5b7a7ffe5440",
+      "result_id": "8dbba6c9-be6a-4b29-94b3-1e5efec0a96c"
+    },
+    {
+      "claim_id": "2bb21d38-80f3-4cd9-b045-8ca4f45fa66c",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "e47b784c-ff5c-4535-bf2b-dadeb23384cb",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "16d24c56-cdbf-4903-b069-64ad94d3e383",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "012ae79f-f32d-45a4-9654-dcc26cb11dbe",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "861d9706-8652-42c1-b636-f568035691e5",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "4116b3c1-4b5f-4eda-8635-57cf3ac0a16a",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "d27c98f5-7a12-4432-ba81-d86953f076dc",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "a1b91e2d-2543-4c91-beb9-d7c73abaca03",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "b4bd25fd-0efe-48ea-8af0-8dc26a58ce55",
+      "result_id": "4b8c2018-53f9-4aff-84f9-bfbce9d4acbe"
+    },
+    {
+      "claim_id": "3846ba6b-1906-429a-9071-e204e855c9b4",
+      "result_id": "b45964ea-67a1-4c68-9206-d45274574b98"
+    },
+    {
+      "claim_id": "2a36f857-2b24-4236-810c-1218d009015d",
+      "result_id": "b45964ea-67a1-4c68-9206-d45274574b98"
+    },
+    {
+      "claim_id": "40c7e295-a702-43c0-a736-a536f2260775",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "fa354116-2be3-48da-b2c1-87a213f79f29",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "a24efcbb-9916-4d36-a6dd-38810da1fbd0",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "9ef510f8-1355-4d83-bc8e-a896c3f2831d",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "74c70729-8b31-41ff-a3ec-afb07cf6d9c6",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "e53ce345-b2a4-403f-888b-030062fda5f8",
+      "result_id": "b9d64256-8094-48be-a9cc-d810fc5fc789"
+    },
+    {
+      "claim_id": "453e1417-0a79-4600-8e6b-6060d4f1cfa5",
+      "result_id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5"
+    },
+    {
+      "claim_id": "7d9c1531-22e6-44e4-af2e-558960b4212f",
+      "result_id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5"
+    },
+    {
+      "claim_id": "c5b739ce-6a41-4153-a3c8-97b2c3d785c8",
+      "result_id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5"
+    },
+    {
+      "claim_id": "769c9b52-a19e-4cd9-a956-1757e2d321d6",
+      "result_id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5"
+    },
+    {
+      "claim_id": "5ccc77f2-725c-42ee-a9bb-11f006355d92",
+      "result_id": "44e02eb9-9242-4469-abb2-bfdc7b4078a5"
+    },
+    {
+      "claim_id": "90dd8fac-e552-468c-9912-bd0e554f5d3c",
+      "result_id": "a992cc24-3cc1-4b26-a883-4b94d61354ed"
+    },
+    {
+      "claim_id": "fc5e1473-9308-46ff-abe5-07afe1597ea9",
+      "result_id": "a992cc24-3cc1-4b26-a883-4b94d61354ed"
+    },
+    {
+      "claim_id": "0eb9d888-11cf-4a9d-9b46-b9b982202bd6",
+      "result_id": "a992cc24-3cc1-4b26-a883-4b94d61354ed"
+    },
+    {
+      "claim_id": "45472c7f-8cac-4e95-a4ee-daef8003df97",
+      "result_id": "a992cc24-3cc1-4b26-a883-4b94d61354ed"
+    },
+    {
+      "claim_id": "ae9ae069-35ab-4151-bab3-77e355c4e086",
+      "result_id": "a9925dc0-da03-4433-af69-02792cbf04e0"
+    },
+    {
+      "claim_id": "9c40a481-1081-4cb5-8f68-a17802e45385",
+      "result_id": "a9925dc0-da03-4433-af69-02792cbf04e0"
+    },
+    {
+      "claim_id": "c5448600-c1e1-4196-be1d-522c1a7228e6",
+      "result_id": "a9925dc0-da03-4433-af69-02792cbf04e0"
+    },
+    {
+      "claim_id": "2ca61363-1b7f-4402-b9c3-4878a7086d1d",
+      "result_id": "a9925dc0-da03-4433-af69-02792cbf04e0"
+    },
+    {
+      "claim_id": "fc23713a-2cd8-475a-8c22-6cdefa9efd6f",
+      "result_id": "6c7f20b4-523e-4f9f-b316-ef426762c233"
+    },
+    {
+      "claim_id": "8de40e03-f3a8-44ec-8faa-7a351a994bbd",
+      "result_id": "6c7f20b4-523e-4f9f-b316-ef426762c233"
+    },
+    {
+      "claim_id": "2aea9e8a-0cd7-490b-b34e-fe90c48c574e",
+      "result_id": "6c7f20b4-523e-4f9f-b316-ef426762c233"
+    },
+    {
+      "claim_id": "67619cde-92ff-4b12-ab14-04bbf6d27203",
+      "result_id": "6c7f20b4-523e-4f9f-b316-ef426762c233"
+    },
+    {
+      "claim_id": "d027319c-f263-4c85-920e-83cdc9235f1e",
+      "result_id": "6c7f20b4-523e-4f9f-b316-ef426762c233"
+    },
+    {
+      "claim_id": "58766c5d-d445-44b0-a01d-9eb1144a315b",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "3784a047-4cf5-4959-9d9e-3bfeb461ce2d",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "6fa8949f-3850-4db3-bb4f-993ea418b3c8",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "21693c0c-bc39-415d-8637-e7f124636644",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "b7aaac7a-8010-42c7-a009-d93cdc052ab1",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "90d99a1a-e538-4dd6-8390-45a856444207",
+      "result_id": "054cb2c5-0ddf-4ae2-a6c0-0d742a3b94fa"
+    },
+    {
+      "claim_id": "9d13c30d-e24d-4bab-b038-937298bdbe44",
+      "result_id": "3caf74b6-2a6f-4680-9a47-9b0f34bae3ce"
+    },
+    {
+      "claim_id": "caf119e9-c13f-4ded-830e-282c046ff054",
+      "result_id": "3caf74b6-2a6f-4680-9a47-9b0f34bae3ce"
+    },
+    {
+      "claim_id": "dd19c277-9ed5-47c6-aa62-d6d193aab9c6",
+      "result_id": "3caf74b6-2a6f-4680-9a47-9b0f34bae3ce"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1816 @@
+{
+  "submission": {
+    "id": "daec5345-cf25-428a-ab18-8bdb5d285165",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:53:44.093660Z",
+    "updated_at": "2025-12-02T00:53:44.093660Z"
+  },
+  "content": [
+    {
+      "id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "submission_id": "daec5345-cf25-428a-ab18-8bdb5d285165",
+      "content_type": "manuscript",
+      "content_text": "# Dual tRNA mimicry in the Cricket Paralysis Virus IRES uncovers an unexpected similarity with the Hepatitis C Virus IRES\n\n## Authors\n\n- Vera P Pisareva<sup>1</sup>\n- Andrey V Pisarev<sup>1</sup> \u2020\n- Israel S Fern\u00e1ndez<sup>2</sup> ([ORCID: 0000-0001-7218-1603](https://orcid.org/0000-0001-7218-1603)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology SUNY Downstate Medical Center Brooklyn United States\n2. Department of Biochemistry and Molecular Biophysics Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCo-opting the cellular machinery for protein production is a compulsory requirement for viruses. The Cricket Paralysis Virus employs an Internal Ribosomal Entry Site (CrPV-IRES) to express its structural genes in the late stage of infection. Ribosome hijacking is achieved by a sophisticated use of molecular mimicry to tRNA and mRNA, employed to manipulate intrinsically dynamic components of the ribosome. Binding and translocation through the ribosome is required for this IRES to initiate translation. We report two structures, solved by single particle electron cryo-microscopy (cryoEM), of a double translocated CrPV-IRES with aminoacyl-tRNA in the peptidyl site (P site) of the ribosome. CrPV-IRES adopts a previously unseen conformation, mimicking the acceptor stem of a canonical E site tRNA. The structures suggest a mechanism for the positioning of the first aminoacyl-tRNA shared with the distantly related Hepatitis C Virus IRES.\n\n## Introduction\n\nTranslation initiation is the most complex and highly regulated step of protein synthesis\u00a0(Schmeing and Ramakrishnan, 2009). Canonical initiation results in the formation of an elongation-competent ribosome with an aminoacyl-tRNA base paired with messenger RNA (mRNA)at the peptidyl site (P site) of the ribosome. Translation initiation in eukaryotes is achieved by a highly sophisticated mechanism\u00a0(Jackson et al., 2010).\u00a0Most eukaryotic mRNAs contain a unique nucleotide structure at their 5\u2019 end, known as the cap structure. The multi-subunit initiation factor eIF4F binds the cap structure and recruits the 43S complex consisting of the small ribosomal subunit (40S), eIF2/GTP/Met-tRNAMet ternary complex, eIF3, eIF1, eIF1A, and eIF5\u00a0(Jackson et al., 2010). The attached 43S complex scans the 5\u2019-untranslated region of the mRNA downstream to the initiation codon, where it forms the 48S initiation complex with the established codon-anticodon base-pairing in the ribosomal P site. Finally, eIF5B, the eukaryotic ortholog of the bacterial initiation factor 2 (IF2), promotes the recruitment of the large ribosomal subunit (60S) and the formation of the elongation-competent 80S ribosome\u00a0(Fern\u00e1ndez et al., 2013).\n\nEukaryotic viruses have evolved refined molecular strategies to interfere with canonical initiation factors, leading to the hijacking of host ribosomes to produce viral proteins\u00a0(Jackson et al., 2010; Hertz and Thompson, 2011). A common strategy used by different types of viruses relies on structured RNA sequences at the ends of their mRNAs\u00a0(Filbin and Kieft, 2009).These sequences are called Internal Ribosomal Entry Sites (IRES) and form specific three-dimensional structures able to manipulate and co-opt the host translational machinery\u00a0(Yamamoto et al., 2017).\n\nIRES sequences are classified according to the subset of factors they require for initiation\u00a0(Filbin and Kieft, 2009). Type IV IRES sequences, including the Cricket Paralysis Virus IRES (CrPV-IRES) and the Taura Syndrome Virus IRES (TSV-IRES) do not require initiation factors and are the best studied IRESs. Biochemical and structural studies have provided a detailed view on how these approximately 200-nucleotide-long sequences interact with and manipulate the ribosome\u00a0(Wilson et al., 2000; Spahn et al., 2004; Petrov et al., 2016).\n\nA modular architecture of three pseudoknots (PKI, PKII and PKIII, Figure 1A) is crucial for these IRESs to establish a balance between structural flexibility and rigidity, essential for interaction with the ribosome and with two elongation factors (eEF2 and eEF1A) required for IRES translocation through the ribosome\u00a0(Jan et al., 2003). PKI mimics an anti-codon stem loop (ASL) of a tRNA interacting with its cognate mRNA codon, and plays an essential role in setting up the correct reading frame in the aminoacyl site (A site) of the ribosome\u00a0(Costantino et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig1-v1.jpg)\n\n**Figure 1.:** (A) Secondary structure scheme of CPV-IRES highlighting the modular architecture consisting of three pseudoknots (PKI, PKII and PKIII). (B) Diagram showing the in vitro reaction set up with purified components used for the toe-printing assays as well as for cryoEM. (C) Toe-print analysis of ribosomal complexes assembled with components indicated on top. Toe-prints corresponding to the pre-translocated complex are labeled as\u00a0+14\u201315 nt from CCU. Toe-prints corresponding to the double translocated complex without and with eRF1* are marked as 5-6nt shift and\u00a0+20 nt from CUU, respectively. Additional toe-prints previously attributed to different CrPV-IRES/ribosome contacts are seen, in agreement with previous reports\u00a0(Muhs et al., 2015; Pestova et al., 2004). (D) CryoEM data processing workflow employed to resolve the high compositional and conformational heterogeneity of the in vitro reconstituted complexes described in B. Four populations were resolved and refined to high resolution, including two exhibiting clear density for a double translocated CrPV-IRES (squared).\n\nA ribosome primed with a type IV IRES alternates between rotated and non-rotated configurations of the small ribosomal subunit\u00a0(Fern\u00e1ndez et al., 2014; Koh et al., 2014). Similarly, after peptidyl-transfer in canonical translocation, the ribosome alternates between rotated and non-rotated configurations of the small ribosomal subunit with respect to the large ribosomal subunit\u00a0(Voorhees and Ramakrishnan, 2013). This pre-translocation stage of the ribosome is recognized by a protein translocation factor (EF-G in Bacteria, eEF2 in Eukarya), which in GTP-bound form induces an additional rotation of the small subunit and blocks the A site of the ribosome\u00a0(Tourigny et al., 2013). Translocation proceeds forward by a back rotation of the small subunit to recover a canonical configuration of the ribosome. This is accomplished by a swiveling movement of the head of the small subunit in an orthogonal direction respect to that of the rotation of the small subunit\u00a0(Ratje et al., 2010). The back-rotation of the small subunit accompanied by the swiveling of the head is performed while EF-G/eEF2 are still bound\u00a0(Ramrath et al., 2013). Once the translocation factor EF-G/eEF2 leaves the ribosome, the head of the small subunit returns to its non-swiveled configuration, rendering a ribosome primed with a peptidyl-tRNA in the P site, a deacylated tRNA in the E site and a vacant A site ready to accept the next aminoacyl-tRNA\u00a0(Noller et al., 2017). The L1 stalk, a component of the large ribosomal subunit, also contribute to the vectorial movement of tRNAs, offering additional anchoring points to the leaving deacylated-tRNA in the E site\u00a0(Fei et al., 2008). The movements of the L1 stalk are coordinated with those of the small subunit. Type\u00a0IV IRESs require two translocation events to place the first aminoacyl-tRNA in the P site making use of the intrinsic dynamic elements of the ribosome involved in canonical translocation\u00a0(Murray et al., 2016; Abeyrathne et al., 2016). However, less is known about the second translocation event, required for the first aminoacyl-tRNA to enter the P site, ending the unusual initiation pathway followed by this type of IRESs.\n\nWe report the visualization by means of single-particle electron cryo-microscopy (cryoEM) of two related states of the mammalian ribosome with a double translocated CrPV-IRES and P site aminoacyl-tRNA at 3.2 and 4.75 \u00c5ngstroms resolution. The head swiveling of the small ribosomal subunit plays a fundamental role in the late step of this translocation event, inducing a remarkable conformational change on the PKI of the CrPV-IRES, which becomes disassembled, to mimic the acceptor stem of a E site tRNA.\n\n## Results\n\nTo analyze the integrity and stability of complexes for cryoEM, we assembled ribosomal complexes with a double translocated CrPV-IRES in a mammalian reconstituted system from individual components in the presence of GTP\u00a0(Figure 1B\u00a0and\u00a0C).The translocation efficiency was monitored by toe-printing. A pre-translocation complex, assembled by mixing of CrPV-IRES with 40S and 60S subunits, results in a\u00a0+14\u201315 nt toe-print signal from the CCU (sequence belonging to the PKI) and thus indicate the presence of PKI in the ribosomal A site (Figure 1C, lane 3). The addition of elongation factors leads to a 5\u20136 nucleotides toe-print shift showing the double translocation event (Figure 1C, lane 4). However, the similar intensity of several bands, with difference in one nucleotide, suggests instability of the double translocated IRES or frame ambiguity. We reasoned this ambiguity could be explained by the absence of an A site ligand, what would allow partial back translocation of the IRES even in the presence of a translocated aminoacyl-tRNA in the P site. Similarly, in the single translocated CrPV-IRES cryoEM reconstruction, it was necessary the addition of an A site ligand\u00a0(Muhs et al., 2015). In this report, the mutation of the first sense codon to a stop codon and the addition of the release factor 1 (eRF1) were applied to prevent spontaneous back-translocation of the IRES. Thus, to stabilize a double translocated complex, we mutated the second sense codon to a UAG stop codon (Figure 1A).The supplementation of the reaction with a mutated and catalytically inactive version of the release factor 1 (eRF1*, AGQ mutation) causes a\u00a0+20 nt toe-print signal from the first sense codon (leucine CUU codon) in the P site, which is in a good agreement with previous report\u00a0(Muhs et al., 2015), indicating proper binding of eRF1* (Figure 1C, lane 5). The simultaneous decrease of intensity for the 5\u20136 nucleotides toe-print suggests a more homogeneous complex, suitable for structural studies. Given the conformation of the P site tRNA is completely compatible with that of a translating ribosome, we believe the addition of eRF1* in the present sample does not significantly affect the conformation of the CrPV-IRES.\n\nMaximum likelihood particle sorting methods implemented in RELION (Scheres, 2012) were applied to a large cryoEM dataset at two different stages (Figure 1D). An initial classification in two dimensions allowed for the separation of full ribosome (80S) from small subunit (40S) particles. The two sorted subgroups were further classified using masking methods with signal subtraction with focus in the inter-subunit space, where this type of IRES binds as well as canonical translation factors. The L1 stalk was also included in the masked area to allow for a wider sampling. This strategy revealed, in a single classification step, several sub-populations, reflecting the heterogeneity of the sample. A binary 80S/CrPV-IRES complex in a pre-translocation conformation could be identified as well as two sub-populations with CrPV-IRES in a double translocated state. In the double translocated reconstructions, the ribosome adopts a non-rotated configuration of the small subunit, with clear density for aminoacyl-tRNA in the P site and a either eEF2 or eRF1* in the A site (Figure 1D, Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1\u00a0and Table 1).\n\n**Table 1.**\n Data collection, model refinement and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Data collection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Voltage (KV)</td>\n      <td>300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22120.5/\u20133</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5/pixel)</td>\n      <td>1.08</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Electron dose (e-/\u00c52)</td>\n      <td>64</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Images collected</td>\n      <td>16,303</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Model Refinement</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>CrPV-IRES/eRF1*</td>\n      <td>CrPV-IRES/eEF2</td>\n    </tr>\n    <tr>\n      <td>Program/Protocol</td>\n      <td>Refmac5/Reciprocal space</td>\n      <td>Phenix/Real space</td>\n    </tr>\n    <tr>\n      <td>Resolution:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FSC 0.143 (\u00c5)</td>\n      <td>3.2</td>\n      <td>4.75</td>\n    </tr>\n    <tr>\n      <td>Used in refinement (\u00c5)</td>\n      <td>3.8</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Map sharpening (\u00c5)</td>\n      <td>\u221291.86</td>\n      <td>\u2212113.6</td>\n    </tr>\n    <tr>\n      <td>Average B-factors (\u00c5)</td>\n      <td>169.58</td>\n      <td>394.12</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bonds (\u00c5)</td>\n      <td>0.011</td>\n      <td>0.0033</td>\n    </tr>\n    <tr>\n      <td>Angles (o)</td>\n      <td>1.58</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Validation</td>\n    </tr>\n    <tr>\n      <td>Molprobity score</td>\n      <td>2.81</td>\n      <td>1.50</td>\n    </tr>\n    <tr>\n      <td>Clashcore, all atoms</td>\n      <td>5.74</td>\n      <td>3.86</td>\n    </tr>\n    <tr>\n      <td>Favored rotamers (%)</td>\n      <td>88.51</td>\n      <td>99.7</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>3</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>83.23</td>\n      <td>95.3</td>\n    </tr>\n  </tbody>\n</table>\n\nRecent studies by single-molecule FRET (smFRET) have characterized the kinetics of the translocation events required for the CrPV-IRES to deliver an aminoacyl-tRNA to the P site of the ribosome\u00a0(Petrov et al., 2016; Zhang et al., 2016). Slow movements of the CrPV-IRES compared with canonical translocation of tRNAs are evident from this data and explain the capturing of a late-stage intermediate of translocation with eEF2 in our dataset (Figure 2A-C). Our cryoEM reconstruction reveals that the conformation of the IRES in this intermediate state is similar to the conformation reported for the single translocated state\u00a0(Muhs et al., 2015), with the SL-IV and SL-V detached from the 40S and exposed to the solvent. PKI is in an intermediate position between the P and E sites of the small subunit as well as the aminoacyl-tRNA is in an intermediate position between the A and P site of the 40S (Figure 2B). Domain IV of eEF2 occupies the A site of the small ribosomal subunit. This configuration is maintained by a distinctive swiveled configuration of the 40S head, resembling one of the late stages recently reported for the first translocation event (Figure 2C)(Abeyrathne et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig2-v1.jpg)\n\n**Figure 2.:** (A) Overview of a mammalian ribosome with double translocated CrPV-IRES (green), aminoacyl-tRNA (purple) and eEF2 (red). (B) Top, detailed view of the ribosomal sites E, P and A in the structure with a double translocated CrPV-IRES with eEF2. Canonical tRNAs (from PDB ID 4V5C) are depicted as semi-transparent grey cartoons. Bottom left, zoomed view highlighting the displacement of both aminoacyl-tRNA and CrPV-IRES PKI from canonical positions. Domain IV of eEF2 occupies the A site. Bottom right, final experimental densities for the ribosome ligands described at 7 \u00c5. (C) On the left, two views of the experimental density for the 40S of the two double translocated reconstructions where it can be appreciated the swiveled configuration of the 40S head in the complex with eEF2 (grey). For comparative purposes, the map for the eRF1* containing complex (yellow) has been low pass filtered to a similar resolution as the eEF2 containing complex (grey). Right, atomic refined model colored according to the root-mean squared displacement (RMSD) with red and blue indicating the highest and lowest values, respectively (in \u00c5ngstroms).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fourier Shell Correlation (FSC) computed for the two half maps of the final subset of particles after classification. The resolution is estimated to be 4.75 \u00c5 using the 0.143 criterion.\u00a0(B) Map-versus-model cross validation FSC. The\u00a0final model was validated using standard procedures. FSC of the refined model against half map 1 (blue) overlaps with the FSC against half map 2 (red, not included in the refinement). The black curve corresponds to the FSC of the final model against the final map. (C) Slice through the final, unsharpened map colored according to the local resolution as reported by RESMAP.\u00a0(D) Due to the flexibility of the CrPV-IRES a Gaussian filter was applied to the map limiting the resolution to 7 \u00c5.\u00a0The final density is shown in D where it can be appreciated features corresponding to that resolution.\n\nThe most populated class of particles represent a double translocated CrPV-IRES with aminoacyl-tRNA in a canonical configuration in the P site and eRF1* in the A site (Figure 3). Both aminoacyl-tRNA and eRF1* populate conformations recently described, with the characteristic bent of the mRNA at the stop codon (Figure 3\u2014figure supplement 1D; Brown et al., 2015). The small subunit in this reconstruction is in a non-rotated configuration and the 40S head is not tilted or swiveled (Figure 3). CrPV-IRES has undergone a conformational change that mainly affects PKI, but also the relative orientation of PKII and PKIII. In the pre-translocated as well as in the single translocated conformation of the IRES, PKII and PKIII interact by a network of non-covalent interactions involving sugar\u2013sugar stacking interactions as well as A-minor interactions (Figure 4\u2014figure supplement 1, (Murray et al., 2016; Pfingsten et al., 2006).\u00a0This compact configuration adopted due to the physical proximity of PKII and PKIII seems to be a requirement for the initial binding to the ribosome as well as for the first translocation event (Murray et al., 2016; Muhs et al., 2015).\u00a0In the state described here, these interactions are no longer established and a pronounced gap could be observed between both pseudoknots (Figure 4B, bottom right and Figure 4\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig3-v1.jpg)\n\n**Figure 3.:** (A) Overview of a mammalian ribosome with double translocated CrPV-IRES (green), aminoacyl-tRNA (purple) and eRF1* (orange). (B) Top, detailed view of the ribosomal E, P and A sites with a canonical configuration for the aminoacyl-tRNA in the P site, eRF1* in the A site and a disassembled CrPV-IRES PK I in the E site (green). Canonical P site tRNA (from PDB ID 4V5C) is depicted as semi-transparent grey cartoon. Bottom, large field of view of the final unsharpened map obtained for this reconstruction focused on the area described. (C) The position of the three ligands in the double translocated complex with eRF1* in comparison with canonical tRNAs. The L1 stalk is depicted in cyan.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fourier Shell Correlation (FSC) computed for the two half maps of the final subset of particles after classification. The resolution is estimated to be 3.2 \u00c5 using the 0.143 criterion. (B) Map-versus-model cross validation FSC. Thefinal model was validated using standard procedures. FSC of the refined model against half map 1 (blue) overlaps with the FSC against half map 2 (red, not included in the refinement). The black curve corresponds to the FSC of the final model against the final map. (C) Slice through the final, unsharpened map colored according to the local resolution as reported by RESMAP.(D) Close-up views of the final density for the A site (left) and P site (right). Clear densities for individual bases could be observed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig4-v1.jpg)\n\n**Figure 4.:** (A) Top left, overview of the double translocated ribosome complex with eRF1* with the L1 stalk region highlighted. Main view, L1 stalk in the double translocated complex (cyan) is displaced from the position acquired in a complex with canonical tRNAs (grey) with a magnitude of approximately 30 \u00c5. This displacement is similar to the one reported for the pre-translocated complex with eEF2 and a non-hydrolyzable GTP analog (orange)(Murray et al., 2016). (B) Conformational transition observed in CrPV-IRES upon back-swiveling of the 40S head. Left, due to a swiveled 40S head configuration in the double translocated complex with eEF2, SL-IV and SL-V remain solvent exposed, as in the single translocated complex\u00a0(Muhs et al., 2015), and detached from the ribosomal protein eS25 (green). Right, once the head of the 40S relocates to its non-swiveled position, CrPV-IRES acquires a new conformation involving a new interaction with eS25 (green). (C) Scheme showing the secondary structure of CrPV-IRES in the pre-translocated state (left), after a single translocation (center) and after the double translocation (right). Arrows indicate the repositioning of PKII and PKIII as well as the new interaction established with ribosomal protein eS25. On the right, close up views of the final unsharped map obtained for this reconstruction for the regions indicated by circles.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Pre-translocation conformation of the CrPV-IRES (PDB ID 5IT9). PKI (green) is mimicking a cognate tRNA/mRNA pair and the PKIII (circled) and PKII (red) are in interacting distance as shown in C. (B) In the double translocated conformation, the PKI is disassembled and PKII and PKIII are no longer in interacting distance. PKIII (arrow) suffers a pronounce displacement. (C) In the pre-translocation state, a network of non-covalent interactions involving sugar-sugar stacking interactions as well as A-minor interactions.\n\nUpon back-swiveling of the 40S following eEF2 departure, the aminoacyl-tRNA is placed in its final canonical position in the P site (Figure 3B). This event triggers the disassembly of the CrPV-IRES PKI. Although the mRNA-like part remains placed in the E site of the 40S, the ASL-like segment experiences a pronounced displacement to occupy the E site of the 60S, now mimicking the acceptor stem of a canonical E site tRNA (Figure 3B C). The L1.1 part of CrPV-IRES remains attached to the L1 stalk along this process whose position relative to the 60S is similar to the one described in the complex with eEF2 and a non-hydrolyzable GTP analog or after the first translocation (Figure 4A)(Murray et al., 2016; Muhs et al., 2015). The back-swiveling of the 40S head upon eEF2 departure is also involved in a new relative orientation of PKII and PKIII (Figure 3B C). The swiveled configuration (Figure 4B,\u00a0left), SL-IV and SL-V, components of PKII, are exposed to the solvent, in a similar position described for the single translocated CrPV-IRES\u00a0(Muhs et al., 2015). The eukaryotic specific protein eS25, a key element of the small subunit involved in early recruitment of the CrPV-IRES as well as in the positioning of the IRES in the pre-translocation stage\u00a0(Sch\u00fcler et al., 2006), is not interacting with the IRES (Figure 4B, left arrow). Upon back swiveling of the 40S head, a new interaction is established between the CrPV-IRES and eS25 (Figure 4B right,arrow and (C) not involving SL-V like in the pre-translocated complex. The \u03b1-helix of eS25 comprising residues 52 to 65 could be observed in interacting distance with a helical segment of the CrPV-IRES formed by residues 6123\u20136127 and 6159\u20136164 (Figure 4C, top right). This new interaction stabilizes the CrPV-IRES in a distinctive conformation, with PKII and PKIII assembled but with a wider relative orientation (Figure 4C) and the PKI disassembled with residues 6175 to 6200 (Figure 3C)corresponding to the ASL mimicking part of PKI, populating a space corresponding to the acceptor stem of a canonical E site tRNA (Figure 4C, bottom right\u00a0and\u00a0Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-video1.mp4.jpg)\n\n**Video 1.:** CrPV-IRES binds initially to the ribosome inserting the PKI (green) in the A site (PDBID 5IT9,\u00a0[Murray et al., 2016]). After a first translocation, PKI is placed in the P site (PDBID 4D61,\u00a0Muhs et al., 2015) and a second translocation event induces its disassembly (this work). Molecular transitions have been approximated by a linear morph using Chimera\u00a0(Pettersen et al., 2004).\n\n## Discussion\n\nThe structures provide a structural view of the archetypical CrPV-IRES in the final stage of initiation, after transitioning through the ribosome. Combining the structures with published biochemical and smFRET data allows us to propose a comprehensive working model for how the CrPV-IRES (and type IV IRES in general) recruits, manipulates and redirects host ribosomes for the synthesis of its own proteins (Figure 5). As suggested by classic cross-linking experiments\u00a0(Pestova et al., 2004), smFRET data\u00a0( Petrov et al., 2016)\u00a0and cryoEM reconstructions\u00a0(Spahn et al., 2004; Murray et al., 2016), CrPV-IRES initially assembles a binary 80S/CrPV-IRES complex by either directly recruiting empty 80S or by a step-wise pathway in which CrPV-IRES first recruits the 40S subunit and then the 60S subunit (Figure 5, bottom left). Once the binary 80S/CrPV-IRES is assembled, the 40S oscillates between rotated and non-rotated states, with PKI inserted in the A site and minimum changes in the overall conformation of the IRES\u00a0(Fern\u00e1ndez et al., 2014; Koh et al., 2014). These movements are coupled to oscillations of the L1 stalk. The rotated state is the substrate of eEF2, which, in its GTP-bound form, induces an additional rotation of the small subunit and additional displacement of the L1 stalk, to facilitate the translocation of the PKI from the A to the P site (Figure 5A,\u00a0top left). Back rotation and back swiveling of the 40S, combined with ribosome-induced GTP hydrolysis by eEF2 results in the first translocation event of the CrPV-IRES, positioning PKI in the P site, mimicking a translocated, canonical aminoacyl-tRNA. This intermediate is unstable and prone to back-translocation\u00a0(Muhs et al., 2015), unless a cognate aminoacyl-tRNA, delivered to the ribosome in complex with eEF1A and GTP, captures the frame in the A site of the ribosome\u00a0(Petrov et al., 2016). Formation of this complex is a rate-limiting step in this kinetically driven process\u00a0(Petrov et al., 2016). In the single translocated IRES state, SL-IV and SL-V, which are initially attached to the ribosome, are solvent exposed, the PKI occupy the P site of the 40S and an aminoacyl-tRNA occupies the A site. It is reasonable to assume this state will oscillate between rotated and non-rotated configurations of the small subunit as a canonical pre-translocation complex with tRNAs\u00a0(Budkevich et al., 2011). The second translocation step is required to place the first aminoacyl-tRNA in the P site and thus finish the initiation phase of translation (Figure 5A,\u00a0bottom right). At this stage, CrPV-IRES translocation should be coupled with the movement of the aminoacyl-tRNA occupying the A site, and this seems to happen with a conformation of the IRES similar to the one reported for the first translocation\u00a0(Muhs et al., 2015). This conformation is maintained until the very last moment as the intermediate captured here with eEF2 presents a back-rotated configuration of the 40S\u00a0(Abeyrathne et al., 2016). However, a pronounced swiveling of the 40S head is in place, probably induced by the presence of eEF2\u00a0(Abeyrathne et al., 2016). Once eEF2 leaves, the back-swiveling movement of the 40S head triggers a dramatic conformational change in the CrPV-IRES: PKI is disassembled resulting in the ASL-like segment relocating to mimic the acceptor stem of a canonical E site tRNA. The mRNA-like element of the disassembled PKI remains in the E site of the 40S. These conformational changes in the PKI of the CrPV-IRES upon back swiveling are combined with a reconfiguration of the relative positioning of PKII and PKIII. This new conformation is stabilized by a newly reported IRES/40S interaction with the ribosomal protein eS25, which is also involved in the early recruitment of the IRES to the 40S\u00a0(Murray et al., 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig5-v1.jpg)\n\n**Figure 5.:** Bottom left, CrPV-IRES can directly recruit 80S to assemble a binary 80S/CrPV-IRES complex which, in its pre-translocation state, oscillates between rotated and non-rotated configurations of the 40S. However, a step-wise pre-translocation complex formation involving an initial interaction with the 40S, followed by recruitment of 60S, is more efficient and is favored. Top left, first translocation event involving the displacement of CrPV-IRES PKI from the A site in order for the first aminoacyl-tRNA to be delivered as a ternary complex with eEF1A and GTP. In the absence of an A site ligand this state is unstable and prone to back translocation\u00a0(Muhs et al., 2015). According to smFRET studies, the frame is not defined until the first condon/anticodon interaction is established\u00a0(Petrov et al., 2016). Top right, presumably a single translocated complex with A site aminoacyl-tRNA alternates between rotated and non-rotated configurations of the 40S as a bonafide pre-translocation complex with two tRNAs. Bottom right, binding of eEF2 in its GTP form assists in the translocation of CrPV-IRES and the first aminoacyl-tRNA which is achieved through a conformational change in the CrPV-IRES involving the disassembling of the PKI and reorientation of PKII and PKIII.\n\nThe conformational change described here for the CrPV-IRES following translocation through the ribosome unexpectedly resembles the transition observed for the Hepatitis C Virus (HCV) IRES upon aminoacyl-tRNA delivery to the P site (Figure 6)(Yamamoto et al., 2014; Yamamoto et al., 2015). The HCV-IRES belongs to a different class of IRES, due to its requirement of some canonical factors to initiate translation\u00a0(Filbin and Kieft, 2009; Yamamoto et al., 2017). It also interacts with the ribosome in a different manner\u00a0(Quade et al., 2015).\u00a0However, a large stem (Figure 6, domain II, blue) reaches the E site of the 40S and is maintained base paired with the mRNA-like part of this IRES by a tilted configuration of the 40S head (Figure 6B)\u00a0(Yamamoto et al., 2015).Upon delivery of initiator tRNA to the P site, the head recovers its non-tilted configuration resulting in the repositioning of the domain II to occupy a similar space as the CrPV IRES in the E site of the 60S (Figure 6, right).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig6-v1.jpg)\n\n**Figure 6.:** The structural transition experienced by the CrPV-IRES upon delivery of the first aminoacyl-tRNA to the P site (top) is similar to the one described for the HCV IRES (bottom). CrPV-IRES PKI remains assembled and in the vicinity of the E site of the 40S due to a swiveled configuration of the 40S head. The HCV-IRES maintains a similar internal interaction of domain II by a tilted configuration of the 40S head. In case of both IRESs, a reconfiguration involving back-positioning of the 40S head plus the placement of a structural element of the IRES in the vicinity of the 60S E site, facilitates the delivery of the first aminoacyl-tRNA to the P site of the ribosome, finalizing the initiation stage of translation.\n\nTherefore, to assemble translationally competent ribosomes, distantly related IRESs have converged on a similar mechanism to regulate the placement of the first aminoacyl-tRNA in the P site of the ribosome, by resembling endogenous tRNA states.\n\n## Materials and methods\n\n### Plasmids\n\nExpression vector for His-tagged eRF1*(AGQ mutant)\u00a0(Frolova et al., 1999) and transcription vector for Leu-tRNA have been previously described\u00a0(Pisarev et al., 2010). Transcription vector for CrPV-Leu-STOP was constructed inserting a T7 promoter sequence upstream of CrPV IGR IRES sequence followed by the two first coding triplets and an EcoRI site, using pUC19 as a scaffold vector. Site-directed mutagenesis was employed to change the first coding triplet to CUU encoding leucine and the second coding triplet to a stop (UAG) codon, rendering the CrPV-Leu-STOP construct. CrPV-Leu-STOP RNA and Leu-tRNA were transcribed using T7 RNA polymerase.\n\n### Purification of translation components and aminoacylation of Leu-tRNA\n\nNative 40S and 60S subunits, eEF2, rabbit aminoacyl-tRNA synthetases\u00a0(Alkalaeva et al., 2006), and eEF1A\u00a0(Carvalho et al., 1984)were prepared as previously described. Recombinant eRF1* was purified according to a previously described protocol\u00a0(Alkalaeva et al., 2006). In vitro transcribed Leu-tRNA was aminoacylated with leucine in the presence of rabbit aminoacyl-tRNA synthetases as previously described\u00a0(Pisarev et al., 2010).\n\n### Assembly of ribosomal complexes\n\nTo reconstitute different ribosomal complexes, we incubated 1.8 pmol 40S ribosomal subunits with 2 pmol CrPV-Leu-STOP RNA in a 20 \u03bcl reaction mixture containing buffer A (20 mM Tris-HCl, pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1 mM EDTA, 1 mM DTT) with 0.4 mM GTP for 5 min at 37. Then, the reaction mixture was supplemented with 2.5 pmol 60S ribosomal subunits and additionally incubated for 5 min at 37. Next, we added 10 pmol eEF1A, 3 pmol eEF2, and 0.4 Leu, and incubated for 5 min at 37. Finally, ribosomal complexes were incubated with 20 pmol eRF1 (AGQ) for 5 min at 37. We analyzed the assembled ribosomal complexes via a toe-printing assay essentially as described\u00a0(Pestova and Hellen, 2005).\n\n### CryoEM sample preparation and data acquisition\n\nAliquots of 3 \u03bcl of assembled ribosomal complexes at concentration of 80\u2013100 nM were incubated for 30 s on glow-discharged holey gold grids (UltrAuFoil R1.2/1.3\u00a0(Russo and Passmore, 2016)), on which a home-made continuous carbon film (estimated to be 50\u00c5thick) had previously been deposited. Grids were blotted for 2.5 s and flash cooled in liquid ethane using an FEI Vitrobot. Grids were transferred to an FEI Titan Krios microscope equipped with an energy filter (slits aperture 20 eV) and a GatanK2 detector operated at 300 kV. Data were recorded in counting mode at a magnification of 130,000 corresponding to a calibrated pixel size of 1.08 \u00c5. Defocus values ranged from 1.6 to 3.6 \u03bcm. Images were recorded in automatic mode using the Leginon\u00a0(Carragher et al., 2000) software and frames were aligned with Motioncor2\u00a0(Zheng et al., 2017) and checked on the fly using APPION\u00a0(Lander et al., 2009).\n\n### Image processing and structure determination\n\nContrast transfer function parameters were estimated using GCTF\u00a0(Zhang, 2016) and particle picking was performed using GAUTOMACH without the use of templates and with a diameter value of 260 pixels. All 2D and 3D classifications and refinements were performed using RELION\u00a0(Scheres, 2012). An initial 2D classification with a four times binned dataset identified all ribosome particles. A second 2D classification step with two times binned data was employed to separate 80S from 40S particles. A consensus reconstruction with all 80S particles was computed using the AutoRefine tool of RELION whose resulting map was used to build a mask containing the inter-subunit space and the L1 stalk. 3D classification with signal subtraction using the previously described mask and a T value of 10 allowed for the identification of several population of ligands inside the mask, namely empty ribosomes, pre-translocated CrPV IRES and double translocated populations with aminoacyl-tRNA and eEF2 or eRF1*. Final refinements\u00a0with unbinned data for the classes selected yielded high resolution maps with density features in agreement with the reported resolution. Local resolution was computed with RESMAP\u00a0(Kucukelbir et al., 2014).\n\n### Model building and refinement\n\nModels for the mammalian ribosome, Leu-tRNALeu, eEF2 and eRF1* were docked into the maps using CHIMERA\u00a0(Pettersen et al., 2004) and COOT\u00a0(Emsley and Cowtan, 2004) was used to manually adjust the L1 stalk and rebuild CrPV IRES using our previous model as initial step. An initial round of refinement was performed in Phenix using real space refinement with secondary structure restrains\u00a0(Adams et al., 2011). A final step of reciprocal-space refinement using REFMAC was performed\u00a0(Murshudov et al., 1997)\u00a0for the eRF1* complex. The fit of the model to the map density was quantified using FSCaverage and Cref.\n",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "560de61d-9821-44bf-a44f-841e7c12c8a0",
+      "submission_id": "daec5345-cf25-428a-ab18-8bdb5d285165",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward H Egelman, University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34062.028](https://doi.org/10.7554/eLife.34062.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dual tRNA mimicry in the Cricket Paralysis Virus IRES uncovers an unexpected similarity with the Hepatitis C Virus IRES\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe CrPV IRES mechanism is unusual in that it adopts an RNA structure containing overlapping pseudoknots to recruit ribosomes directly and initiate translation without factors or initiator Met-tRNA. Structural studies using cryo-EM and x-ray crystallography have shown that the IRES occupies the E, P and A sites of the tRNA to manipulate the ribosome. Recent structures include a single translocated ribosome on the IRES as it moves from the initial A site to P site. Here, Fernandez et al. reconstitute ribosome translocation on the IRES to capture a structural view of a double translocated ribosome on the IRES by cryo-EM. Remarkably, the pseudoknot I (PKI) domain, which mimics an anticodon stem loop (ASL) of a tRNA and initially occupies the A site, undergoes a dramatic rearrangement in the double translocated complex. The PKI is disrupted and now rearranges such that the ASL domain resembles a tRNA acceptor stem loop in the E site. The authors provide a comparison to the HCV IRES-ribosome complex, where the domain II of the HCV IRES and the ASL of the CrPV IRES occupies the same tRNA acceptor stem space on the ribosome, thus revealing a similar strategy in manipulating the ribosome. In sum, the finding is surprising and highlights the amazing gymnastics of this IRES. The authors build on the model of IRES-ribosome translation and reveal a shared mechanism with a divergent HCV IRES. In general, the manuscript is clearly written in places but can be improved by providing more details and rationale in the experimental design in order to reach out to readers outside the IRES field.\n\nEssential revisions:\n\n1) The paper is aimed at a specialist audience, and is very difficult to read for people outside of the ribosome and IRES fields. The paper is also overly brief, and can use expansion to more fully explain points as well as to justify the conclusions. In particular:\n\n- More description is needed of how the double translocated ribosome complex is reconstituted. Why use eRF1*? Can complexes be resolved without this? More details and rationale in this experiment is required, especially for the non-expert audience.\n\n- There is a new interaction of eS25 with the IRES in the double translocated ribosome \u2013 this is quite vague. Are there any insights into the element (seems like the shoulder) of the IRES that is interacting? If so, maybe mutate that region to see effects on IRES translation and/or trap a double-translocated ribosome? Further proof of the eS25 interaction with this region would support the structural analysis.\n\n- PKII and PKIII re-orient and become wider apart \u2013 the authors should explain more about the interactions that keep PKII and PKIII together (ex. A-minor interactions) and how these are disrupted in the final translocated step. Figure 4C should include these.\n\n- The description of the new state (with the ASL-like part of PKI mimicking the E-tRNA acceptor arm) lacks detail and mechanistic insight. The major question is whether the interpretation of the map in this region is unambiguous. The following changes are required to address this question:\n\na) To illustrate the fit of PKI into the map, show a larger close-up view than in current figures (they are shown in tiny panels such as Figure 3C) to demonstrate the RNA hairpin features in the map (helical twist, backbone if visible etc.).\n\nb) In canonical 70S-tRNA and 80S-tRNA complexes, the acceptor arm of E-tRNA is stabilized by interactions with the large subunit rRNA (including backbone-backbone packing with helices of 23S/25S/28S rRNA). Describe whether the PKI hairpin contacts the same elements of 28S rRNA.\n\nc) Describe how the PKI hairpin interacts with L1.1 part of the IRES, which to some extent mimics the tRNA elbow? Does the map allow to say whether there is similarity to the structure of tRNA, in which the acceptor stem is coaxially stacked on the T stem?\n\n- The fit and interpretation of the structure depend on the quality of the structural model, which is not reported in this manuscript (protein/RNA quality). The low local resolution of the IRES region makes misinterpretation possible. For example, the model of tRNA in Figure 6 (upper right box) looks distorted \u2013 is it due to over-refinement? To address this criticism, the authors should add (a) overall model statistics and (b) local IRES model statistics.\n",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4192349d-cacf-4422-94ef-ba2d7d08c2d3",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C1",
+      "claim": "The Cricket Paralysis Virus employs an Internal Ribosomal Entry Site (CrPV-IRES) to express its structural genes in the late stage of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cricket Paralysis Virus employs an Internal Ribosomal Entry Site (CrPV-IRES) to express its structural genes in the late stage of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of CrPV-IRES that draws from established knowledge about viral translation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2d74b2f6-8841-4976-a5d3-c98a4f4bffac",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C2",
+      "claim": "Ribosome hijacking by CrPV-IRES is achieved by molecular mimicry to tRNA and mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome hijacking is achieved by a sophisticated use of molecular mimicry to tRNA and mRNA, employed to manipulate intrinsically dynamic components of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data presented in the manuscript showing tRNA mimicry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "307990aa-a027-4989-aa21-adaa126f8715",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C3",
+      "claim": "Binding and translocation through the ribosome is required for CrPV-IRES to initiate translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding and translocation through the ribosome is required for this IRES to initiate translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and the experimental data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "ce2ca098-e3a9-487f-8dc2-64a327983f78",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C4",
+      "claim": "Two structures of a double translocated CrPV-IRES with aminoacyl-tRNA in the P site were solved by single particle electron cryo-microscopy (cryoEM).",
+      "claim_type": "EXPLICIT",
+      "source": "We report two structures, solved by single particle electron cryo-microscopy (cryoEM), of a double translocated CrPV-IRES with aminoacyl-tRNA in the peptidyl site (P site) of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental work performed, supported by the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f5b45dcd-77c3-449c-a963-bf23d326faa5",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C5",
+      "claim": "CrPV-IRES adopts a previously unseen conformation, mimicking the acceptor stem of a canonical E site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "CrPV-IRES adopts a previously unseen conformation, mimicking the acceptor stem of a canonical E site tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the structural data presented in the manuscript showing the novel conformation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "5218936a-1277-4aa7-8381-a71669964042",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C6",
+      "claim": "The structures suggest a mechanism for the positioning of the first aminoacyl-tRNA shared with the distantly related Hepatitis C Virus IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures suggest a mechanism for the positioning of the first aminoacyl-tRNA shared with the distantly related Hepatitis C Virus IRES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the structural data with known HCV-IRES structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "a9a547db-63b3-4753-9342-0d28eef6b496",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C7",
+      "claim": "Translation initiation is the most complex and highly regulated step of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation initiation is the most complex and highly regulated step of protein synthesis (Schmeing and Ramakrishnan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "74b52c47-6fb4-497a-9b62-82993441e1bf",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C8",
+      "claim": "Canonical initiation results in the formation of an elongation-competent ribosome with an aminoacyl-tRNA base paired with mRNA at the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonical initiation results in the formation of an elongation-competent ribosome with an aminoacyl-tRNA base paired with messenger RNA (mRNA)at the peptidyl site (P site) of the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about canonical translation initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "11f5e377-8d23-473d-9b2c-8ed9782b7665",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C9",
+      "claim": "Most eukaryotic mRNAs contain a unique nucleotide structure at their 5' end, known as the cap structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Most eukaryotic mRNAs contain a unique nucleotide structure at their 5' end, known as the cap structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about eukaryotic mRNA structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "eff23184-8217-4532-afc9-d0d7d48dabc7",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C10",
+      "claim": "The multi-subunit initiation factor eIF4F binds the cap structure and recruits the 43S complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-subunit initiation factor eIF4F binds the cap structure and recruits the 43S complex consisting of the small ribosomal subunit (40S), eIF2/GTP/Met-tRNAMet ternary complex, eIF3, eIF1, eIF1A, and eIF5 (Jackson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2bec1d3e-f09a-4334-b7c5-16c2834af4ae",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C11",
+      "claim": "The 43S complex scans the 5'-untranslated region of the mRNA downstream to the initiation codon.",
+      "claim_type": "EXPLICIT",
+      "source": "The attached 43S complex scans the 5'-untranslated region of the mRNA downstream to the initiation codon, where it forms the 48S initiation complex with the established codon-anticodon base-pairing in the ribosomal P site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the scanning mechanism in eukaryotic translation initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "3f761db3-8749-4277-bec1-9d7b3dfabb1b",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C12",
+      "claim": "eIF5B promotes the recruitment of the large ribosomal subunit (60S) and the formation of the elongation-competent 80S ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, eIF5B, the eukaryotic ortholog of the bacterial initiation factor 2 (IF2), promotes the recruitment of the large ribosomal subunit (60S) and the formation of the elongation-competent 80S ribosome (Fern\u00e1ndez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "c6ce6ec1-d0d4-4deb-84aa-48bf519846e6",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C13",
+      "claim": "Eukaryotic viruses have evolved refined molecular strategies to interfere with canonical initiation factors, leading to the hijacking of host ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic viruses have evolved refined molecular strategies to interfere with canonical initiation factors, leading to the hijacking of host ribosomes to produce viral proteins (Jackson et al., 2010; Hertz and Thompson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "55ce8a88-6509-4e71-aa28-f5c437f24ab7",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C14",
+      "claim": "A common strategy used by different types of viruses relies on structured RNA sequences at the ends of their mRNAs called Internal Ribosomal Entry Sites (IRES).",
+      "claim_type": "EXPLICIT",
+      "source": "A common strategy used by different types of viruses relies on structured RNA sequences at the ends of their mRNAs (Filbin and Kieft, 2009).These sequences are called Internal Ribosomal Entry Sites (IRES) and form specific three-dimensional structures able to manipulate and co-opt the host translational machinery (Yamamoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "fd547aa2-ad29-4db2-b1e2-499d0212f760",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C15",
+      "claim": "IRES sequences are classified according to the subset of factors they require for initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "IRES sequences are classified according to the subset of factors they require for initiation (Filbin and Kieft, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2ec1a1c4-1e02-4dff-8970-b5768786e0ab",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C16",
+      "claim": "Type IV IRES sequences, including the Cricket Paralysis Virus IRES (CrPV-IRES) and the Taura Syndrome Virus IRES (TSV-IRES) do not require initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IV IRES sequences, including the Cricket Paralysis Virus IRES (CrPV-IRES) and the Taura Syndrome Virus IRES (TSV-IRES) do not require initiation factors and are the best studied IRESs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "729bdd82-4031-43be-a6af-6774b4208cbd",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C17",
+      "claim": "Type IV IRESs are approximately 200-nucleotide-long sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical and structural studies have provided a detailed view on how these approximately 200-nucleotide-long sequences interact with and manipulate the ribosome (Wilson et al., 2000; Spahn et al., 2004; Petrov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature describing these IRESs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "cd014ebe-65ff-4e1f-b701-2c52a3eb79d5",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C18",
+      "claim": "A modular architecture of three pseudoknots (PKI, PKII and PKIII) is crucial for type IV IRESs to establish a balance between structural flexibility and rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "A modular architecture of three pseudoknots (PKI, PKII and PKIII, Figure 1A) is crucial for these IRESs to establish a balance between structural flexibility and rigidity, essential for interaction with the ribosome and with two elongation factors (eEF2 and eEF1A) required for IRES translocation through the ribosome (Jan et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to Figure 1A showing the structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "a75010e2-e6a0-45f0-867f-2515ac8a2303",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C19",
+      "claim": "PKI mimics an anti-codon stem loop (ASL) of a tRNA interacting with its cognate mRNA codon.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI mimics an anti-codon stem loop (ASL) of a tRNA interacting with its cognate mRNA codon, and plays an essential role in setting up the correct reading frame in the aminoacyl site (A site) of the ribosome (Costantino et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "63ee222b-bdfd-476d-ab14-c07c3d906160",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C20",
+      "claim": "A ribosome primed with a type IV IRES alternates between rotated and non-rotated configurations of the small ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "A ribosome primed with a type IV IRES alternates between rotated and non-rotated configurations of the small ribosomal subunit (Fern\u00e1ndez et al., 2014; Koh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f607c33e-e508-4a28-a57c-243fc93ed1f5",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C21",
+      "claim": "After peptidyl-transfer in canonical translocation, the ribosome alternates between rotated and non-rotated configurations of the small ribosomal subunit with respect to the large ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, after peptidyl-transfer in canonical translocation, the ribosome alternates between rotated and non-rotated configurations of the small ribosomal subunit with respect to the large ribosomal subunit (Voorhees and Ramakrishnan, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "873fba8e-c052-4a8c-9df3-25bad6035d08",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C22",
+      "claim": "The pre-translocation stage of the ribosome is recognized by a protein translocation factor (EF-G in Bacteria, eEF2 in Eukarya).",
+      "claim_type": "EXPLICIT",
+      "source": "This pre-translocation stage of the ribosome is recognized by a protein translocation factor (EF-G in Bacteria, eEF2 in Eukarya), which in GTP-bound form induces an additional rotation of the small subunit and blocks the A site of the ribosome (Tourigny et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "da263b18-4288-4bea-a236-5a0654c14361",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C23",
+      "claim": "Translocation proceeds forward by a back rotation of the small subunit to recover a canonical configuration of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation proceeds forward by a back rotation of the small subunit to recover a canonical configuration of the ribosome. This is accomplished by a swiveling movement of the head of the small subunit in an orthogonal direction respect to that of the rotation of the small subunit (Ratje et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "fd2b51f0-afdf-46a8-ab7f-a9774471ecb8",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C24",
+      "claim": "The back-rotation of the small subunit accompanied by the swiveling of the head is performed while EF-G/eEF2 are still bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The back-rotation of the small subunit accompanied by the swiveling of the head is performed while EF-G/eEF2 are still bound (Ramrath et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "01393529-fd12-48e0-84d2-320e1d5b083e",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C25",
+      "claim": "Once the translocation factor EF-G/eEF2 leaves the ribosome, the head of the small subunit returns to its non-swiveled configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the translocation factor EF-G/eEF2 leaves the ribosome, the head of the small subunit returns to its non-swiveled configuration, rendering a ribosome primed with a peptidyl-tRNA in the P site, a deacylated tRNA in the E site and a vacant A site ready to accept the next aminoacyl-tRNA (Noller et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "e3872152-b75c-4487-b2a7-f150bac2ab50",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C26",
+      "claim": "The L1 stalk contributes to the vectorial movement of tRNAs, offering additional anchoring points to the leaving deacylated-tRNA in the E site.",
+      "claim_type": "EXPLICIT",
+      "source": "The L1 stalk, a component of the large ribosomal subunit, also contribute to the vectorial movement of tRNAs, offering additional anchoring points to the leaving deacylated-tRNA in the E site (Fei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "3335e88a-df4b-4ae8-aae8-f095f3c2d077",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C27",
+      "claim": "The movements of the L1 stalk are coordinated with those of the small subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The movements of the L1 stalk are coordinated with those of the small subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ribosome dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "791dd914-545d-48ca-a529-4a6dea6dc7df",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C28",
+      "claim": "Type IV IRESs require two translocation events to place the first aminoacyl-tRNA in the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "Type IV IRESs require two translocation events to place the first aminoacyl-tRNA in the P site making use of the intrinsic dynamic elements of the ribosome involved in canonical translocation (Murray et al., 2016; Abeyrathne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "6a715015-3909-4394-9d87-0d8aa6b74203",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C29",
+      "claim": "Less is known about the second translocation event required for the first aminoacyl-tRNA to enter the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, less is known about the second translocation event, required for the first aminoacyl-tRNA to enter the P site, ending the unusual initiation pathway followed by this type of IRESs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, providing context for the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "92d6648a-9d5a-4534-a5b0-7f2e78936152",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C30",
+      "claim": "Two related states of the mammalian ribosome with a double translocated CrPV-IRES and P site aminoacyl-tRNA were visualized at 3.2 and 4.75 \u00c5ngstroms resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the visualization by means of single-particle electron cryo-microscopy (cryoEM) of two related states of the mammalian ribosome with a double translocated CrPV-IRES and P site aminoacyl-tRNA at 3.2 and 4.75 \u00c5ngstroms resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f707bd46-8471-4844-b411-3bb0f8f2d695",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C31",
+      "claim": "The head swiveling of the small ribosomal subunit plays a fundamental role in the late step of the second translocation event.",
+      "claim_type": "EXPLICIT",
+      "source": "The head swiveling of the small ribosomal subunit plays a fundamental role in the late step of this translocation event, inducing a remarkable conformational change on the PKI of the CrPV-IRES, which becomes disassembled, to mimic the acceptor stem of a E site tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "cd21c74f-c25c-41bc-9d99-0e613dce76b2",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C32",
+      "claim": "A pre-translocation complex assembled by mixing of CrPV-IRES with 40S and 60S subunits results in a +14\u201315 nt toe-print signal from the CCU.",
+      "claim_type": "EXPLICIT",
+      "source": "A pre-translocation complex, assembled by mixing of CrPV-IRES with 40S and 60S subunits, results in a +14\u201315 nt toe-print signal from the CCU (sequence belonging to the PKI) and thus indicate the presence of PKI in the ribosomal A site (Figure 1C, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "492cf333-6243-43d5-9f9c-8022018aa005",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C33",
+      "claim": "The addition of elongation factors leads to a 5\u20136 nucleotides toe-print shift showing the double translocation event.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of elongation factors leads to a 5\u20136 nucleotides toe-print shift showing the double translocation event (Figure 1C, lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "5f815290-17d3-4671-b16b-d141362e4a3e",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C34",
+      "claim": "The mutation of the first sense codon to a stop codon and the addition of the release factor 1 (eRF1) were applied to prevent spontaneous back-translocation of the IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "In this report, the mutation of the first sense codon to a stop codon and the addition of the release factor 1 (eRF1) were applied to prevent spontaneous back-translocation of the IRES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strategy used in the study, supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "73ab34a8-bf15-41aa-918c-b1939e0e7ab2",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C35",
+      "claim": "The supplementation of the reaction with a mutated and catalytically inactive version of the release factor 1 (eRF1*, AGQ mutation) causes a +20 nt toe-print signal from the first sense codon (leucine CUU codon) in the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "The supplementation of the reaction with a mutated and catalytically inactive version of the release factor 1 (eRF1*, AGQ mutation) causes a +20 nt toe-print signal from the first sense codon (leucine CUU codon) in the P site, which is in a good agreement with previous report (Muhs et al., 2015), indicating proper binding of eRF1* (Figure 1C, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "1f92db6b-e5bc-4bdc-9be4-49cf0f7e5d06",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C36",
+      "claim": "Maximum likelihood particle sorting methods implemented in RELION were applied to a large cryoEM dataset at two different stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum likelihood particle sorting methods implemented in RELION (Scheres, 2012) were applied to a large cryoEM dataset at two different stages (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational methods used, supported by citation and reference to Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "4ee8704a-1b1d-44a7-aa97-9f48b91f7d1a",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C37",
+      "claim": "An initial classification in two dimensions allowed for the separation of full ribosome (80S) from small subunit (40S) particles.",
+      "claim_type": "EXPLICIT",
+      "source": "An initial classification in two dimensions allowed for the separation of full ribosome (80S) from small subunit (40S) particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "c2744593-5621-4f76-8981-f4ca2f796348",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C38",
+      "claim": "A binary 80S/CrPV-IRES complex in a pre-translocation conformation could be identified as well as two sub-populations with CrPV-IRES in a double translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "A binary 80S/CrPV-IRES complex in a pre-translocation conformation could be identified as well as two sub-populations with CrPV-IRES in a double translocated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "51a14843-9959-4fdd-b085-0e08e3b53120",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C39",
+      "claim": "In the double translocated reconstructions, the ribosome adopts a non-rotated configuration of the small subunit, with clear density for aminoacyl-tRNA in the P site and either eEF2 or eRF1* in the A site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the double translocated reconstructions, the ribosome adopts a non-rotated configuration of the small subunit, with clear density for aminoacyl-tRNA in the P site and a either eEF2 or eRF1* in the A site (Figure 1D, Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in the referenced figures and table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "7bb909ca-a742-41a0-a1d0-0ff8b716801a",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C40",
+      "claim": "Recent studies by single-molecule FRET (smFRET) have characterized the kinetics of the translocation events required for the CrPV-IRES to deliver an aminoacyl-tRNA to the P site of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies by single-molecule FRET (smFRET) have characterized the kinetics of the translocation events required for the CrPV-IRES to deliver an aminoacyl-tRNA to the P site of the ribosome (Petrov et al., 2016; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "8e9e3c04-7a5a-4412-ba47-005816f015f2",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C41",
+      "claim": "Slow movements of the CrPV-IRES compared with canonical translocation of tRNAs are evident from smFRET data.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow movements of the CrPV-IRES compared with canonical translocation of tRNAs are evident from this data and explain the capturing of a late-stage intermediate of translocation with eEF2 in our dataset (Figure 2A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from cited smFRET data and the current structural data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "1e0edaaf-d480-4fb5-801a-6374d0389b62",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C42",
+      "claim": "The conformation of the IRES in the intermediate state with eEF2 is similar to the conformation reported for the single translocated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryoEM reconstruction reveals that the conformation of the IRES in this intermediate state is similar to the conformation reported for the single translocated state (Muhs et al., 2015), with the SL-IV and SL-V detached from the 40S and exposed to the solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "6c413d4e-75ba-4914-bdb7-7d23f38c2153",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C43",
+      "claim": "PKI is in an intermediate position between the P and E sites of the small subunit in the eEF2-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "PKI is in an intermediate position between the P and E sites of the small subunit as well as the aminoacyl-tRNA is in an intermediate position between the A and P site of the 40S (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "6773b02a-e9d7-4025-84e8-8e232dcb9906",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C44",
+      "claim": "Domain IV of eEF2 occupies the A site of the small ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Domain IV of eEF2 occupies the A site of the small ribosomal subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "01ef39e9-8608-4504-b5ce-00a8214d3261",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C45",
+      "claim": "The configuration with eEF2 is maintained by a distinctive swiveled configuration of the 40S head.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration is maintained by a distinctive swiveled configuration of the 40S head, resembling one of the late stages recently reported for the first translocation event (Figure 2C)(Abeyrathne et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "065560ae-90a9-46e6-992e-211e5fa8c14f",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C46",
+      "claim": "The most populated class of particles represent a double translocated CrPV-IRES with aminoacyl-tRNA in a canonical configuration in the P site and eRF1* in the A site.",
+      "claim_type": "EXPLICIT",
+      "source": "The most populated class of particles represent a double translocated CrPV-IRES with aminoacyl-tRNA in a canonical configuration in the P site and eRF1* in the A site (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of the particle classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "b9faf3ac-f326-4bed-8d0f-266aaa2d9cb0",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C47",
+      "claim": "Both aminoacyl-tRNA and eRF1* populate conformations recently described, with the characteristic bent of the mRNA at the stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Both aminoacyl-tRNA and eRF1* populate conformations recently described, with the characteristic bent of the mRNA at the stop codon (Figure 3\u2014figure supplement 1D; Brown et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "48ff1b87-ed08-4962-91ae-5a9bfa7c36f6",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C48",
+      "claim": "The small subunit in the eRF1*-containing reconstruction is in a non-rotated configuration and the 40S head is not tilted or swiveled.",
+      "claim_type": "EXPLICIT",
+      "source": "The small subunit in this reconstruction is in a non-rotated configuration and the 40S head is not tilted or swiveled (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "5c704885-ebe7-46b8-92c0-d97066e4feca",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C49",
+      "claim": "CrPV-IRES has undergone a conformational change that mainly affects PKI, but also the relative orientation of PKII and PKIII.",
+      "claim_type": "EXPLICIT",
+      "source": "CrPV-IRES has undergone a conformational change that mainly affects PKI, but also the relative orientation of PKII and PKIII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "926f071f-eb63-4622-8272-e550c7e8e049",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C50",
+      "claim": "In the pre-translocated and single translocated conformation of the IRES, PKII and PKIII interact by a network of non-covalent interactions involving sugar\u2013sugar stacking interactions as well as A-minor interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pre-translocated as well as in the single translocated conformation of the IRES, PKII and PKIII interact by a network of non-covalent interactions involving sugar\u2013sugar stacking interactions as well as A-minor interactions (Figure 4\u2014figure supplement 1, (Murray et al., 2016; Pfingsten et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "16631248-8dc9-467c-81da-90abc9394a76",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C51",
+      "claim": "The compact configuration adopted due to the physical proximity of PKII and PKIII seems to be a requirement for the initial binding to the ribosome as well as for the first translocation event.",
+      "claim_type": "EXPLICIT",
+      "source": "This compact configuration adopted due to the physical proximity of PKII and PKIII seems to be a requirement for the initial binding to the ribosome as well as for the first translocation event (Murray et al., 2016; Muhs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "a3ccb723-dd36-4535-9092-c046c75388d3",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C52",
+      "claim": "In the double translocated state, the interactions between PKII and PKIII are no longer established and a pronounced gap could be observed between both pseudoknots.",
+      "claim_type": "EXPLICIT",
+      "source": "In the state described here, these interactions are no longer established and a pronounced gap could be observed between both pseudoknots (Figure 4B, bottom right and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "29fdb807-992b-4946-abd6-cf382c523023",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C53",
+      "claim": "Upon back-swiveling of the 40S following eEF2 departure, the aminoacyl-tRNA is placed in its final canonical position in the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon back-swiveling of the 40S following eEF2 departure, the aminoacyl-tRNA is placed in its final canonical position in the P site (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "0e29b3be-573c-4750-993a-6098c4267e75",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C54",
+      "claim": "Back-swiveling of the 40S triggers the disassembly of the CrPV-IRES PKI.",
+      "claim_type": "EXPLICIT",
+      "source": "This event triggers the disassembly of the CrPV-IRES PKI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "44cb3a12-327d-43c4-bdcf-ecf702f6a264",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C55",
+      "claim": "The mRNA-like part of PKI remains placed in the E site of the 40S after disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mRNA-like part remains placed in the E site of the 40S, the ASL-like segment experiences a pronounced displacement to occupy the E site of the 60S, now mimicking the acceptor stem of a canonical E site tRNA (Figure 3B C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "b55a02da-c4b0-48ef-b7d0-24e094bec9e1",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C56",
+      "claim": "The ASL-like segment of PKI experiences a pronounced displacement to occupy the E site of the 60S, mimicking the acceptor stem of a canonical E site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mRNA-like part remains placed in the E site of the 40S, the ASL-like segment experiences a pronounced displacement to occupy the E site of the 60S, now mimicking the acceptor stem of a canonical E site tRNA (Figure 3B C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "d606f257-fe0f-4db9-a4ca-0f9efe07e48d",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C57",
+      "claim": "The L1.1 part of CrPV-IRES remains attached to the L1 stalk along the translocation process.",
+      "claim_type": "EXPLICIT",
+      "source": "The L1.1 part of CrPV-IRES remains attached to the L1 stalk along this process whose position relative to the 60S is similar to the one described in the complex with eEF2 and a non-hydrolyzable GTP analog or after the first translocation (Figure 4A)(Murray et al., 2016; Muhs et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "7d7c304e-d1e0-4828-af15-bb4802cb7f78",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C58",
+      "claim": "In the swiveled configuration, SL-IV and SL-V are exposed to the solvent, in a similar position described for the single translocated CrPV-IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "The swiveled configuration (Figure 4B, left), SL-IV and SL-V, components of PKII, are exposed to the solvent, in a similar position described for the single translocated CrPV-IRES (Muhs et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "14917ba0-07dc-4d55-948a-ae6315651ff0",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C59",
+      "claim": "The eukaryotic specific protein eS25 is a key element of the small subunit involved in early recruitment of the CrPV-IRES as well as in the positioning of the IRES in the pre-translocation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic specific protein eS25, a key element of the small subunit involved in early recruitment of the CrPV-IRES as well as in the positioning of the IRES in the pre-translocation stage (Sch\u00fcler et al., 2006), is not interacting with the IRES (Figure 4B, left arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "1b939ead-4485-4dbb-b32d-e0d9bd67f1c6",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C60",
+      "claim": "In the swiveled configuration, eS25 is not interacting with the IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic specific protein eS25, a key element of the small subunit involved in early recruitment of the CrPV-IRES as well as in the positioning of the IRES in the pre-translocation stage (Sch\u00fcler et al., 2006), is not interacting with the IRES (Figure 4B, left arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "000045da-8e56-419b-877a-d0cd28d3b822",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C61",
+      "claim": "Upon back swiveling of the 40S head, a new interaction is established between the CrPV-IRES and eS25.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon back swiveling of the 40S head, a new interaction is established between the CrPV-IRES and eS25 (Figure 4B right,arrow and (C) not involving SL-V like in the pre-translocated complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f1791dde-8f49-42ca-bc35-c868214d17ef",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C62",
+      "claim": "The \u03b1-helix of eS25 comprising residues 52 to 65 could be observed in interacting distance with a helical segment of the CrPV-IRES formed by residues 6123\u20136127 and 6159\u20136164.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helix of eS25 comprising residues 52 to 65 could be observed in interacting distance with a helical segment of the CrPV-IRES formed by residues 6123\u20136127 and 6159\u20136164 (Figure 4C, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "da4ff869-f8ce-4006-aa35-0843c7efbded",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C63",
+      "claim": "The new interaction with eS25 stabilizes the CrPV-IRES in a distinctive conformation, with PKII and PKIII assembled but with a wider relative orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This new interaction stabilizes the CrPV-IRES in a distinctive conformation, with PKII and PKIII assembled but with a wider relative orientation (Figure 4C) and the PKI disassembled with residues 6175 to 6200 (Figure 3C)corresponding to the ASL mimicking part of PKI, populating a space corresponding to the acceptor stem of a canonical E site tRNA (Figure 4C, bottom right and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the structural data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "1b1b9fd2-e87c-4338-9020-5c4b0fa3a5b7",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C64",
+      "claim": "CrPV-IRES initially assembles a binary 80S/CrPV-IRES complex by either directly recruiting empty 80S or by a step-wise pathway in which CrPV-IRES first recruits the 40S subunit and then the 60S subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by classic cross-linking experiments (Pestova et al., 2004), smFRET data ( Petrov et al., 2016) and cryoEM reconstructions (Spahn et al., 2004; Murray et al., 2016), CrPV-IRES initially assembles a binary 80S/CrPV-IRES complex by either directly recruiting empty 80S or by a step-wise pathway in which CrPV-IRES first recruits the 40S subunit and then the 60S subunit (Figure 5, bottom left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "15c1d427-31f7-4128-b918-f53524a23d6c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C65",
+      "claim": "Once the binary 80S/CrPV-IRES is assembled, the 40S oscillates between rotated and non-rotated states, with PKI inserted in the A site and minimum changes in the overall conformation of the IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the binary 80S/CrPV-IRES is assembled, the 40S oscillates between rotated and non-rotated states, with PKI inserted in the A site and minimum changes in the overall conformation of the IRES (Fern\u00e1ndez et al., 2014; Koh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "48a689f8-125c-4d9b-a4a0-cbdbd6f0f83a",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C66",
+      "claim": "These movements are coupled to oscillations of the L1 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "These movements are coupled to oscillations of the L1 stalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ribosome dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "23e4f4b9-9633-4dfc-a69d-a1cd9908881f",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C67",
+      "claim": "The rotated state is the substrate of eEF2, which, in its GTP-bound form, induces an additional rotation of the small subunit and additional displacement of the L1 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The rotated state is the substrate of eEF2, which, in its GTP-bound form, induces an additional rotation of the small subunit and additional displacement of the L1 stalk, to facilitate the translocation of the PKI from the A to the P site (Figure 5A, top left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the structural data and established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f8cf287d-50ee-4d03-9675-36a7855ce8f0",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C68",
+      "claim": "Back rotation and back swiveling of the 40S, combined with ribosome-induced GTP hydrolysis by eEF2 results in the first translocation event of the CrPV-IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "Back rotation and back swiveling of the 40S, combined with ribosome-induced GTP hydrolysis by eEF2 results in the first translocation event of the CrPV-IRES, positioning PKI in the P site, mimicking a translocated, canonical aminoacyl-tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and established knowledge about translocation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "9dd267cd-9710-46b0-a61f-dc02e0116b1c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C69",
+      "claim": "The single translocated intermediate is unstable and prone to back-translocation unless a cognate aminoacyl-tRNA captures the frame in the A site of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This intermediate is unstable and prone to back-translocation (Muhs et al., 2015), unless a cognate aminoacyl-tRNA, delivered to the ribosome in complex with eEF1A and GTP, captures the frame in the A site of the ribosome (Petrov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "429ecb60-0263-4e89-ba0b-0a7404a3e36e",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C70",
+      "claim": "Formation of the complex with aminoacyl-tRNA in the A site is a rate-limiting step in this kinetically driven process.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of this complex is a rate-limiting step in this kinetically driven process (Petrov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "6e7491c1-f415-4a7e-94af-cab96cdc141d",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C71",
+      "claim": "In the single translocated IRES state, SL-IV and SL-V are solvent exposed, the PKI occupy the P site of the 40S and an aminoacyl-tRNA occupies the A site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the single translocated IRES state, SL-IV and SL-V, which are initially attached to the ribosome, are solvent exposed, the PKI occupy the P site of the 40S and an aminoacyl-tRNA occupies the A site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "0f2606f2-7102-43ec-83fe-6fb03086b5ca",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C72",
+      "claim": "The single translocated state will oscillate between rotated and non-rotated configurations of the small subunit as a canonical pre-translocation complex with tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reasonable to assume this state will oscillate between rotated and non-rotated configurations of the small subunit as a canonical pre-translocation complex with tRNAs (Budkevich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on analogy with canonical translation and supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2c6b4547-41ea-46c0-97cb-f4ee10c1633c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C73",
+      "claim": "The second translocation step is required to place the first aminoacyl-tRNA in the P site and thus finish the initiation phase of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The second translocation step is required to place the first aminoacyl-tRNA in the P site and thus finish the initiation phase of translation (Figure 5A, bottom right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the CrPV-IRES mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "b5fb5e36-8a2e-40be-a1ce-7344e7ca26a9",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C74",
+      "claim": "CrPV-IRES translocation should be coupled with the movement of the aminoacyl-tRNA occupying the A site during the second translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, CrPV-IRES translocation should be coupled with the movement of the aminoacyl-tRNA occupying the A site, and this seems to happen with a conformation of the IRES similar to the one reported for the first translocation (Muhs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and comparison with previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "22f0ea33-e3f2-4922-a937-253505b6d584",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C75",
+      "claim": "The IRES conformation is maintained until the very last moment as the intermediate captured with eEF2 presents a back-rotated configuration of the 40S.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformation is maintained until the very last moment as the intermediate captured here with eEF2 presents a back-rotated configuration of the 40S (Abeyrathne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and comparison with previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "79e1d007-8aba-497f-a81b-28efb067343a",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C76",
+      "claim": "A pronounced swiveling of the 40S head is in place in the eEF2-bound intermediate, probably induced by the presence of eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a pronounced swiveling of the 40S head is in place, probably induced by the presence of eEF2 (Abeyrathne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and comparison with previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "38b25830-4d77-4496-8e26-d2b655e1db37",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C77",
+      "claim": "Once eEF2 leaves, the back-swiveling movement of the 40S head triggers a dramatic conformational change in the CrPV-IRES with PKI disassembling.",
+      "claim_type": "EXPLICIT",
+      "source": "Once eEF2 leaves, the back-swiveling movement of the 40S head triggers a dramatic conformational change in the CrPV-IRES: PKI is disassembled resulting in the ASL-like segment relocating to mimic the acceptor stem of a canonical E site tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the two structural states.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "816e503d-e05d-45ec-ba1f-1bdbdb7efa2d",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C78",
+      "claim": "The conformational changes in the PKI upon back swiveling are combined with a reconfiguration of the relative positioning of PKII and PKIII.",
+      "claim_type": "EXPLICIT",
+      "source": "These conformational changes in the PKI of the CrPV-IRES upon back swiveling are combined with a reconfiguration of the relative positioning of PKII and PKIII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "527122d7-d6a9-4301-9ff3-a62490a58a44",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C79",
+      "claim": "The new conformation is stabilized by a newly reported IRES/40S interaction with the ribosomal protein eS25.",
+      "claim_type": "EXPLICIT",
+      "source": "This new conformation is stabilized by a newly reported IRES/40S interaction with the ribosomal protein eS25, which is also involved in the early recruitment of the IRES to the 40S (Murray et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "ed1114b4-44f8-4b0b-9a4d-6ad81a58f907",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C80",
+      "claim": "The conformational change described for the CrPV-IRES following translocation through the ribosome unexpectedly resembles the transition observed for the Hepatitis C Virus (HCV) IRES upon aminoacyl-tRNA delivery to the P site.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational change described here for the CrPV-IRES following translocation through the ribosome unexpectedly resembles the transition observed for the Hepatitis C Virus (HCV) IRES upon aminoacyl-tRNA delivery to the P site (Figure 6)(Yamamoto et al., 2014; Yamamoto et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from comparing the structural data with previously published HCV-IRES structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "8a838c03-0f42-4547-99c8-533c54ab0eed",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C81",
+      "claim": "The HCV-IRES belongs to a different class of IRES, due to its requirement of some canonical factors to initiate translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCV-IRES belongs to a different class of IRES, due to its requirement of some canonical factors to initiate translation (Filbin and Kieft, 2009; Yamamoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "19a8639d-1f55-400d-8b4e-28ff1a53859f",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C82",
+      "claim": "HCV-IRES interacts with the ribosome in a different manner than CrPV-IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "It also interacts with the ribosome in a different manner (Quade et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2239b8e6-14b6-49f3-b2b6-292474e85b20",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C83",
+      "claim": "A large stem (domain II) of HCV-IRES reaches the E site of the 40S and is maintained base paired with the mRNA-like part of this IRES by a tilted configuration of the 40S head.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a large stem (Figure 6, domain II, blue) reaches the E site of the 40S and is maintained base paired with the mRNA-like part of this IRES by a tilted configuration of the 40S head (Figure 6B) (Yamamoto et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and reference to Figure 6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "ff9c09b2-f123-45e0-b21c-28989dfeeccc",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C84",
+      "claim": "Upon delivery of initiator tRNA to the P site of HCV-IRES, the head recovers its non-tilted configuration resulting in the repositioning of the domain II to occupy a similar space as the CrPV IRES in the E site of the 60S.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon delivery of initiator tRNA to the P site, the head recovers its non-tilted configuration resulting in the repositioning of the domain II to occupy a similar space as the CrPV IRES in the E site of the 60S (Figure 6, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from comparing the structural data with HCV-IRES structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "d980f925-2248-4ea4-bb28-000d016cd279",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C85",
+      "claim": "Distantly related IRESs have converged on a similar mechanism to regulate the placement of the first aminoacyl-tRNA in the P site of the ribosome, by resembling endogenous tRNA states.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, to assemble translationally competent ribosomes, distantly related IRESs have converged on a similar mechanism to regulate the placement of the first aminoacyl-tRNA in the P site of the ribosome, by resembling endogenous tRNA states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the mechanisms of CrPV-IRES and HCV-IRES.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2eeca6fe-8a88-4195-8002-2529c07e5dfb",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C93",
+      "claim": "The addition of eRF1* in the present sample does not significantly affect the conformation of the CrPV-IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the conformation of the P site tRNA is completely compatible with that of a translating ribosome, we believe the addition of eRF1* in the present sample does not significantly affect the conformation of the CrPV-IRES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed conformation of the P site tRNA.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "dbb26686-7235-42fa-ae5a-e306c6df4d0e",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C94",
+      "claim": "CrPV-IRES can directly recruit 80S to assemble a binary 80S/CrPV-IRES complex.",
+      "claim_type": "EXPLICIT",
+      "source": "CrPV-IRES can directly recruit 80S to assemble a binary 80S/CrPV-IRES complex which, in its pre-translocation state, oscillates between rotated and non-rotated configurations of the 40S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "49d26e23-797e-49ef-aa45-547f52708127",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C95",
+      "claim": "A step-wise pre-translocation complex formation involving an initial interaction with the 40S, followed by recruitment of 60S, is more efficient and is favored.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a step-wise pre-translocation complex formation involving an initial interaction with the 40S, followed by recruitment of 60S, is more efficient and is favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the literature and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "bcdde354-6f23-413c-9d5a-50e61300b2ee",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C96",
+      "claim": "In the absence of an A site ligand, the single translocated state is unstable and prone to back translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of an A site ligand this state is unstable and prone to back translocation (Muhs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "f82960d9-71dc-43d7-91c2-ecc1bddb83c6",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C97",
+      "claim": "According to smFRET studies, the frame is not defined until the first codon/anticodon interaction is established.",
+      "claim_type": "EXPLICIT",
+      "source": "According to smFRET studies, the frame is not defined until the first condon/anticodon interaction is established (Petrov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "c0d4806d-c69b-4641-a349-51f2b45b0d01",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C98",
+      "claim": "Binding of eEF2 in its GTP form assists in the translocation of CrPV-IRES and the first aminoacyl-tRNA which is achieved through a conformational change in the CrPV-IRES involving the disassembling of the PKI and reorientation of PKII and PKIII.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of eEF2 in its GTP form assists in the translocation of CrPV-IRES and the first aminoacyl-tRNA which is achieved through a conformational change in the CrPV-IRES involving the disassembling of the PKI and reorientation of PKII and PKIII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the structural data and the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "a9fcc51d-3afe-4d16-b1b2-4ec287ef4cb1",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C99",
+      "claim": "CrPV-IRES PKI remains assembled and in the vicinity of the E site of the 40S due to a swiveled configuration of the 40S head.",
+      "claim_type": "EXPLICIT",
+      "source": "CrPV-IRES PKI remains assembled and in the vicinity of the E site of the 40S due to a swiveled configuration of the 40S head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "8d6d00a6-738e-4f66-82c2-a74e8860152c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C100",
+      "claim": "The HCV-IRES maintains a similar internal interaction of domain II by a tilted configuration of the 40S head.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCV-IRES maintains a similar internal interaction of domain II by a tilted configuration of the 40S head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with HCV-IRES structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "41b32fd6-a0b8-412c-8a38-75f34b0a0b93",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "claim_id": "C101",
+      "claim": "A reconfiguration involving back-positioning of the 40S head plus the placement of a structural element of the IRES in the vicinity of the 60S E site facilitates the delivery of the first aminoacyl-tRNA to the P site of the ribosome for both CrPV and HCV IRESs.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of both IRESs, a reconfiguration involving back-positioning of the 40S head plus the placement of a structural element of the IRES in the vicinity of the 60S E site, facilitates the delivery of the first aminoacyl-tRNA to the P site of the ribosome, finalizing the initiation stage of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the mechanisms of both IRESs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bbca3af8-5516-4a3b-9283-a8b68494c48a",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors solved two structures of a double translocated CrPV-IRES with aminoacyl-tRNA in the P site at 3.2 and 4.75 \u00c5 resolution using cryoEM. Maximum likelihood particle sorting methods in RELION identified a pre-translocation complex and two sub-populations with double translocated CrPV-IRES, one with eEF2 and one with eRF1* in the A site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30, C36-C39 collectively describe the structural determination workflow and results. The cryoEM data processing (C36-C37), classification results (C38), and structural features (C39) are well-documented with appropriate resolution estimates (C4, C30) and supported by figures and validation statistics in Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "5431139a-8819-499c-843c-411b415caa45",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CrPV-IRES adopts a previously unseen conformation after double translocation in which PKI disassembles, with the ASL-like segment mimicking the acceptor stem of a canonical E site tRNA. This conformational change is triggered by back-swiveling of the 40S head following eEF2 departure and is stabilized by a new interaction with ribosomal protein eS25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C31, C54-C56, C63, and C77 describe the novel PKI disassembly and E site tRNA mimicry. The structural data in Figures 3 and 4 clearly show the disassembled PKI configuration (C54-C56), the role of head swiveling (C31, C77), and the stabilizing interaction with eS25 (C63). This represents a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "2810f800-60f3-4a37-bbd9-ccd4ab8f3f8c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Toe-printing assays demonstrate that CrPV-IRES undergoes double translocation upon addition of elongation factors, and that addition of mutant eRF1* stabilizes the double translocated complex by preventing back-translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 describe the biochemical validation of the double translocation event. The toe-printing data in Figure 1C shows clear shifts corresponding to pre-translocation (+14-15 nt, C32) and double translocation (5-6 nt shift, C33), and stabilization by eRF1* (+20 nt, C35). The experimental strategy (C34) is well-justified by citation to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A late-stage intermediate of the second translocation with eEF2 bound was captured, showing PKI in an intermediate position between P and E sites, aminoacyl-tRNA between A and P sites, and a swiveled 40S head configuration. The IRES conformation in this state is similar to the single translocated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 describe the eEF2-bound intermediate structure. The structural data in Figure 2 clearly shows the intermediate positions of PKI and tRNA (C43), eEF2 domain IV in the A site (C44), and the swiveled head configuration (C45). The similarity to the single translocated state (C42) is supported by comparison with previous structures. The capture of this slow intermediate is rationalized by smFRET kinetics data (C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The double translocation induces a conformational change in CrPV-IRES affecting the relative orientation of PKII and PKIII. The compact configuration maintained by non-covalent interactions between PKII and PKIII in pre- and single-translocated states is disrupted, with a pronounced gap appearing between the pseudoknots.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 and C78 describe the PKII-PKIII reconfiguration. The structural data in Figure 4 and Figure 4\u2014figure supplement 1 clearly show the loss of interactions between PKII and PKIII (C52) that were present in earlier states (C50). The functional importance of the compact configuration for initial binding and first translocation (C51) is supported by citations to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "fa450539-8225-4a54-9d24-bab11f6968fb",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A new interaction between CrPV-IRES and ribosomal protein eS25 is established upon back-swiveling of the 40S head. The \u03b1-helix of eS25 (residues 52-65) interacts with a helical segment of CrPV-IRES (residues 6123-6127 and 6159-6164), stabilizing the double translocated conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 and C79 describe the novel eS25 interaction. The structural data in Figure 4B-C shows the loss of eS25 interaction in the swiveled state (C60) and establishment of a new interaction upon back-swiveling (C61). The specific residues involved are identified (C62), and the stabilizing role is inferred from the structural context (C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "ecb5d5b8-1fd1-482b-b652-996de51e773c",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The conformational change in CrPV-IRES following double translocation unexpectedly resembles the transition in HCV-IRES upon aminoacyl-tRNA delivery to the P site. Both distantly related IRESs use head repositioning and placement of an IRES structural element in the 60S E site to facilitate first aminoacyl-tRNA delivery to the P site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C80, C83-C85, C99-C101 describe the convergent mechanism between CrPV and HCV IRESs. The comparison in Figure 6 shows the structural similarity: both maintain internal interactions through head configuration (swiveled for CrPV-PKI in C99, tilted for HCV-domain II in C100), and both reposition structural elements to the 60S E site upon head repositioning (C84, C101). This represents a significant mechanistic insight about convergent evolution (C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "35afb659-6703-4e4d-94c0-f5b37c7cc2bb",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The most populated particle class represents the final double translocated state with aminoacyl-tRNA in canonical P site configuration, eRF1* in the A site, and a non-rotated, non-swiveled 40S configuration. Upon back-swiveling following eEF2 departure, the aminoacyl-tRNA is placed in its final canonical P site position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C53 describe the final double translocated state. The structural data in Figure 3 shows the canonical P site tRNA configuration (C46-C47), non-rotated/non-swiveled 40S (C48), and the placement of tRNA in final position (C53). This state represents the completion of the unusual initiation pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "83932148-672c-4332-949a-2f9778644096",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The L1.1 part of CrPV-IRES remains attached to the L1 stalk throughout the translocation process, with the L1 stalk position similar to that in complexes with eEF2 and non-hydrolyzable GTP analog. In the swiveled configuration, SL-IV and SL-V are solvent exposed, similar to the single translocated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe the L1 stalk interaction and SL-IV/SL-V positioning. The structural data in Figure 4A shows the L1 stalk position (C57), and Figure 4B shows the solvent-exposed SL-IV and SL-V in the swiveled state (C58). Both observations are supported by comparison with previous structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "cc924e47-3b94-4971-8a1c-d597a888fa1b",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a comprehensive mechanistic model for CrPV-IRES function integrating their structural data with published biochemical and smFRET studies. The model describes binary complex assembly, oscillations between rotated/non-rotated states, eEF2-mediated first translocation, aminoacyl-tRNA capture, and the second translocation event leading to initiation complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C76 and C94-C98 present an integrated mechanistic model shown in Figure 5. The model synthesizes the current structural data with extensive citations to previous biochemical (C64, C69-C70, C96-C97) and structural work (C65, C67-C68, C74-C76). While some elements are speculative (C72), the overall model is well-supported by converging lines of evidence and represents a reasonable synthesis of available data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "1307b695-e68b-43a9-94d4-0a2d83c7e823",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that addition of eRF1* does not significantly affect CrPV-IRES conformation based on the canonical P site tRNA configuration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 is explicitly speculative (\"we believe\") and lacks direct experimental validation. While the P site tRNA conformation appears canonical, the potential effects of eRF1* on IRES conformation would require comparison with a structure lacking eRF1* or other direct evidence. This assumption is important for interpreting the biological relevance of the observed IRES conformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    },
+    {
+      "id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0",
+      "content_id": "cf5564a8-5215-461c-80ea-72af1be611d3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction provides established background knowledge about translation initiation, viral IRES mechanisms, ribosome dynamics during translocation, and the specific properties of Type IV IRESs including CrPV-IRES. This contextualizes the gap in knowledge regarding the second translocation event.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C29, C40, C59, C81-C82 present background information supported by extensive citations to established literature. These claims provide necessary context for understanding the significance of the current work, particularly the gap in knowledge about the second translocation event (C29). All background claims are appropriately cited and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:53:44.093660Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce2ca098-e3a9-487f-8dc2-64a327983f78",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "92d6648a-9d5a-4534-a5b0-7f2e78936152",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "1f92db6b-e5bc-4bdc-9be4-49cf0f7e5d06",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "4ee8704a-1b1d-44a7-aa97-9f48b91f7d1a",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "c2744593-5621-4f76-8981-f4ca2f796348",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "51a14843-9959-4fdd-b085-0e08e3b53120",
+      "result_id": "bbca3af8-5516-4a3b-9283-a8b68494c48a"
+    },
+    {
+      "claim_id": "f5b45dcd-77c3-449c-a963-bf23d326faa5",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "f707bd46-8471-4844-b411-3bb0f8f2d695",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "0e29b3be-573c-4750-993a-6098c4267e75",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "44cb3a12-327d-43c4-bdcf-ecf702f6a264",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "b55a02da-c4b0-48ef-b7d0-24e094bec9e1",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "da4ff869-f8ce-4006-aa35-0843c7efbded",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "38b25830-4d77-4496-8e26-d2b655e1db37",
+      "result_id": "5431139a-8819-499c-843c-411b415caa45"
+    },
+    {
+      "claim_id": "cd21c74f-c25c-41bc-9d99-0e613dce76b2",
+      "result_id": "2810f800-60f3-4a37-bbd9-ccd4ab8f3f8c"
+    },
+    {
+      "claim_id": "492cf333-6243-43d5-9f9c-8022018aa005",
+      "result_id": "2810f800-60f3-4a37-bbd9-ccd4ab8f3f8c"
+    },
+    {
+      "claim_id": "5f815290-17d3-4671-b16b-d141362e4a3e",
+      "result_id": "2810f800-60f3-4a37-bbd9-ccd4ab8f3f8c"
+    },
+    {
+      "claim_id": "73ab34a8-bf15-41aa-918c-b1939e0e7ab2",
+      "result_id": "2810f800-60f3-4a37-bbd9-ccd4ab8f3f8c"
+    },
+    {
+      "claim_id": "8e9e3c04-7a5a-4412-ba47-005816f015f2",
+      "result_id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb"
+    },
+    {
+      "claim_id": "1e0edaaf-d480-4fb5-801a-6374d0389b62",
+      "result_id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb"
+    },
+    {
+      "claim_id": "6c413d4e-75ba-4914-bdb7-7d23f38c2153",
+      "result_id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb"
+    },
+    {
+      "claim_id": "6773b02a-e9d7-4025-84e8-8e232dcb9906",
+      "result_id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb"
+    },
+    {
+      "claim_id": "01ef39e9-8608-4504-b5ce-00a8214d3261",
+      "result_id": "db3c06c8-b547-4a33-b0c6-9993aeacfdbb"
+    },
+    {
+      "claim_id": "5c704885-ebe7-46b8-92c0-d97066e4feca",
+      "result_id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063"
+    },
+    {
+      "claim_id": "926f071f-eb63-4622-8272-e550c7e8e049",
+      "result_id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063"
+    },
+    {
+      "claim_id": "16631248-8dc9-467c-81da-90abc9394a76",
+      "result_id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063"
+    },
+    {
+      "claim_id": "a3ccb723-dd36-4535-9092-c046c75388d3",
+      "result_id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063"
+    },
+    {
+      "claim_id": "816e503d-e05d-45ec-ba1f-1bdbdb7efa2d",
+      "result_id": "b2f6b4fb-8fe3-496e-be42-6a86c86a3063"
+    },
+    {
+      "claim_id": "1b939ead-4485-4dbb-b32d-e0d9bd67f1c6",
+      "result_id": "fa450539-8225-4a54-9d24-bab11f6968fb"
+    },
+    {
+      "claim_id": "000045da-8e56-419b-877a-d0cd28d3b822",
+      "result_id": "fa450539-8225-4a54-9d24-bab11f6968fb"
+    },
+    {
+      "claim_id": "f1791dde-8f49-42ca-bc35-c868214d17ef",
+      "result_id": "fa450539-8225-4a54-9d24-bab11f6968fb"
+    },
+    {
+      "claim_id": "527122d7-d6a9-4301-9ff3-a62490a58a44",
+      "result_id": "fa450539-8225-4a54-9d24-bab11f6968fb"
+    },
+    {
+      "claim_id": "5218936a-1277-4aa7-8381-a71669964042",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "ed1114b4-44f8-4b0b-9a4d-6ad81a58f907",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "2239b8e6-14b6-49f3-b2b6-292474e85b20",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "ff9c09b2-f123-45e0-b21c-28989dfeeccc",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "d980f925-2248-4ea4-bb28-000d016cd279",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "a9fcc51d-3afe-4d16-b1b2-4ec287ef4cb1",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "8d6d00a6-738e-4f66-82c2-a74e8860152c",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "41b32fd6-a0b8-412c-8a38-75f34b0a0b93",
+      "result_id": "ecb5d5b8-1fd1-482b-b652-996de51e773c"
+    },
+    {
+      "claim_id": "065560ae-90a9-46e6-992e-211e5fa8c14f",
+      "result_id": "35afb659-6703-4e4d-94c0-f5b37c7cc2bb"
+    },
+    {
+      "claim_id": "b9faf3ac-f326-4bed-8d0f-266aaa2d9cb0",
+      "result_id": "35afb659-6703-4e4d-94c0-f5b37c7cc2bb"
+    },
+    {
+      "claim_id": "48ff1b87-ed08-4962-91ae-5a9bfa7c36f6",
+      "result_id": "35afb659-6703-4e4d-94c0-f5b37c7cc2bb"
+    },
+    {
+      "claim_id": "29fdb807-992b-4946-abd6-cf382c523023",
+      "result_id": "35afb659-6703-4e4d-94c0-f5b37c7cc2bb"
+    },
+    {
+      "claim_id": "d606f257-fe0f-4db9-a4ca-0f9efe07e48d",
+      "result_id": "83932148-672c-4332-949a-2f9778644096"
+    },
+    {
+      "claim_id": "7d7c304e-d1e0-4828-af15-bb4802cb7f78",
+      "result_id": "83932148-672c-4332-949a-2f9778644096"
+    },
+    {
+      "claim_id": "1b1b9fd2-e87c-4338-9020-5c4b0fa3a5b7",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "15c1d427-31f7-4128-b918-f53524a23d6c",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "48a689f8-125c-4d9b-a4a0-cbdbd6f0f83a",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "23e4f4b9-9633-4dfc-a69d-a1cd9908881f",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "f8cf287d-50ee-4d03-9675-36a7855ce8f0",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "9dd267cd-9710-46b0-a61f-dc02e0116b1c",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "429ecb60-0263-4e89-ba0b-0a7404a3e36e",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "6e7491c1-f415-4a7e-94af-cab96cdc141d",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "0f2606f2-7102-43ec-83fe-6fb03086b5ca",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "2c6b4547-41ea-46c0-97cb-f4ee10c1633c",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "b5fb5e36-8a2e-40be-a1ce-7344e7ca26a9",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "22f0ea33-e3f2-4922-a937-253505b6d584",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "79e1d007-8aba-497f-a81b-28efb067343a",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "dbb26686-7235-42fa-ae5a-e306c6df4d0e",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "49d26e23-797e-49ef-aa45-547f52708127",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "bcdde354-6f23-413c-9d5a-50e61300b2ee",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "f82960d9-71dc-43d7-91c2-ecc1bddb83c6",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "c0d4806d-c69b-4641-a349-51f2b45b0d01",
+      "result_id": "cc924e47-3b94-4971-8a1c-d597a888fa1b"
+    },
+    {
+      "claim_id": "2eeca6fe-8a88-4195-8002-2529c07e5dfb",
+      "result_id": "1307b695-e68b-43a9-94d4-0a2d83c7e823"
+    },
+    {
+      "claim_id": "4192349d-cacf-4422-94ef-ba2d7d08c2d3",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "2d74b2f6-8841-4976-a5d3-c98a4f4bffac",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "307990aa-a027-4989-aa21-adaa126f8715",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "a9a547db-63b3-4753-9342-0d28eef6b496",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "74b52c47-6fb4-497a-9b62-82993441e1bf",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "11f5e377-8d23-473d-9b2c-8ed9782b7665",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "eff23184-8217-4532-afc9-d0d7d48dabc7",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "2bec1d3e-f09a-4334-b7c5-16c2834af4ae",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "3f761db3-8749-4277-bec1-9d7b3dfabb1b",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "c6ce6ec1-d0d4-4deb-84aa-48bf519846e6",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "55ce8a88-6509-4e71-aa28-f5c437f24ab7",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "fd547aa2-ad29-4db2-b1e2-499d0212f760",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "2ec1a1c4-1e02-4dff-8970-b5768786e0ab",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "729bdd82-4031-43be-a6af-6774b4208cbd",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "cd014ebe-65ff-4e1f-b701-2c52a3eb79d5",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "a75010e2-e6a0-45f0-867f-2515ac8a2303",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "63ee222b-bdfd-476d-ab14-c07c3d906160",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "f607c33e-e508-4a28-a57c-243fc93ed1f5",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "873fba8e-c052-4a8c-9df3-25bad6035d08",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "da263b18-4288-4bea-a236-5a0654c14361",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "fd2b51f0-afdf-46a8-ab7f-a9774471ecb8",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "01393529-fd12-48e0-84d2-320e1d5b083e",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "e3872152-b75c-4487-b2a7-f150bac2ab50",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "3335e88a-df4b-4ae8-aae8-f095f3c2d077",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "791dd914-545d-48ca-a529-4a6dea6dc7df",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "6a715015-3909-4394-9d87-0d8aa6b74203",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "7bb909ca-a742-41a0-a1d0-0ff8b716801a",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "14917ba0-07dc-4d55-948a-ae6315651ff0",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "8a838c03-0f42-4547-99c8-533c54ab0eed",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    },
+    {
+      "claim_id": "19a8639d-1f55-400d-8b4e-28ff1a53859f",
+      "result_id": "91abfd24-19f4-4cff-a7e3-aa96e3b1e0b0"
+    }
+  ],
+  "comparisons": []
+}

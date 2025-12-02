@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Dengue VLPs from all four serotypes were produced and characterized for pH-dependent fusion. DV4 VLPs showed an inflection pH of 6.1, while DV1, DV2, and DV3 showed ~5.4. Single-particle dwell time distributions were measured at pH 5.5 using TIRF microscopy with pseudo-receptors, showing no receptor-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe well-documented experimental methods and observations. The pH-dependence measurements (C36-C37) are shown in Figure 2A, and single-particle measurements (C38-C42) follow established protocols with appropriate controls. The finding of no receptor-dependence (C42) strengthens the experimental design by ruling out a potential confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Single-particle fusion kinetics differ among dengue serotypes. DV1, DV2, and DV4 fit single exponential distributions, while DV3 requires a two-step model. DV3 shows a less sharp sigmoidal pH curve, and DV1 has slower fusion kinetics than DV2 and DV3 despite similar inflection pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by experimental data in Figure 2B and appropriate statistical fitting. The differences in kinetic behavior among serotypes are clearly documented, though the authors acknowledge they cannot relate these to functional differences with current data. The analysis is appropriately cautious in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "All four dengue serotypes show fusion mechanisms qualitatively similar to West Nile virus. The similarity in fusion properties across related flaviviruses validates both the experimental design and the fusion model, with DV2 simulations matching experimental observations using parameters similar to WNV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C78-C81 represent a major conclusion supported by convergent evidence from experimental data (Figures 2A-B), simulations (Figure 2C), and comparison with prior WNV work. The consistency across multiple serotypes and agreement between simulation and experiment provide strong support for the conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The compound 3-110-22 inhibits DV2 infection (IC90 = 0.7 \u03bcM) and VLP fusion (IC50 = 1-2 \u03bcM). The inhibitor alters the dwell-time distribution, spreading it and introducing a rise-and-fall pattern, suggesting it retards a step other than the rate-limiting step in its absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are well-supported by experimental data in Figure 3A-B and prior literature (C48). The comparison of dwell-time distributions with and without inhibitor (C50) provides clear evidence for the mechanistic interpretation (C51). The IC50 values are consistent with the IC90 for infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A fluorescent Alexa-555 conjugate of 3-110-22 was synthesized and validated. The modified inhibitor has 10-20-fold higher IC50 than unmodified compound, likely due to aggregation reducing effective monomer concentration. Competition experiments confirm both compounds bind the same site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe appropriate chemical synthesis and validation. The IC50 difference (C53) is acknowledged and explained (C54), and competition binding (C55-C56, Figure 3D) confirms site identity. This is critical methodology for the subsequent single-particle occupancy measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C11",
+      "C12",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Single-particle measurements with fluorescent inhibitor show that ~12-14 bound molecules per particle (~20-25% occupancy) completely prevent fusion. This corresponds to ~6-7 inhibitors in the ~30 E subunit contact zone. Binding saturated at ~60 copies, consistent with small VLPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 and C11-C12 represent the key quantitative finding, directly supported by Figure 4. The experimental design linking single-particle fluorescence to fusion outcome is sound. The calculation relating total particle occupancy to contact zone occupancy (C61-C62) is based on reasonable assumptions from prior work, though it involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "VLP preparations contained 10-20% uncleaved prM, which clusters on particles and should be absent from the contact zone. Accounting for prM would adjust the inhibitor threshold from ~12 to ~14 per particle, a relatively small effect on the determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 appropriately address a potential confounding factor. The prM quantification (C63) is experimental, the clustering behavior (C64) is supported by citation, and the calculation (C66) appropriately adjusts the estimate. The conclusion (C67) that this has minimal impact is reasonable given the small adjustment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Stochastic simulations of DV2 fusion using a 30 E protomer contact zone model reproduce experimental observations. The simulation includes dimer-monomer transitions, trimerization requiring adjacent activated monomers, and hemifusion upon formation of two adjacent trimers. At pH 5.5, simulations yield ~25% fusion and single exponential kinetics matching experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 describe computational modeling that successfully reproduces experimental data (Figure 2C vs 2B). The model structure is clearly defined and based on prior validated work (C73-C75). The agreement between simulation and experiment (C76-C77) supports the mechanistic model, though simulations inherently involve assumptions and simplifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Approximately 6-7 inhibited monomers in a 30-monomer contact zone (20% occupancy) prevent fusion completely. Scaling to full virions, ~35 inhibitors per 180-subunit virion (20% occupancy) should block fusion. Complete inhibition should occur at concentrations substantially below the Kd for individual binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 extend the VLP findings to virions through reasonable scaling arguments. C90 is supported by prior work, and C91-C92 are logical inferences. The prediction that inhibition occurs below Kd (C92) is an important mechanistic insight, though it remains to be experimentally validated for virions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Simple random inactivation of 7 monomers in simulations does not fully explain complete inhibition. Two potential mechanisms are proposed: (i) abortive trimer formation with fusion loops inserting into virion membrane, analogous to influenza fusion; or (ii) dimer cooperativity where inhibitor binding to one partner inactivates the other. Either mechanism requires only modest additional effects (1-2 more inactive monomers) to prevent fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C101 identify a gap between simple simulation and experimental observations, then propose speculative mechanisms (C95-C96). While the proposals are reasonable and C97 draws analogy to influenza, these remain untested hypotheses. C101 acknowledges the current model cannot distinguish between alternatives. This represents important mechanistic speculation requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Small-molecule inhibitors targeting E block the fusion-inducing conformational change by binding the \u03b2-OG pocket before cell attachment, fixing E in the prefusion dimer conformation. The fluorescent derivative enables single-particle analysis of fusion efficiency as a function of inhibitor occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C82-C87 integrate current findings with prior structural and functional work. The binding site (C83-C84) and mechanism (C85-C86) are supported by multiple citations. The current work (C87) adds quantitative single-particle analysis to previous bulk measurements, confirming and extending the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on dengue virus structure and flavivirus fusion mechanism. Dengue is an icosahedral enveloped particle with 90 E protein dimers. E has three domains (DI, DII, DIII) and undergoes pH-triggered dimer-to-trimer transition with fusion loop membrane engagement. Flaviviruses are mosquito-borne pathogens of therapeutic interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C13-C22 present established background knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work on West Nile virus established that trimerization and membrane engagement are rate-limiting, fusion requires at least two adjacent trimers, and availability of competent monomers in the ~30 monomer contact zone creates a trimerization bottleneck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C31-C33 summarize prior work from Chao et al., 2014, providing the foundation for the current dengue study. These are appropriately cited and form the basis for comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The \u03b2-OG pocket between DI and DII closes during fusion and was identified as an inhibitor target. Screens yielded cyanohydrazone compounds that bind this pocket, block fusion in vitro and infection in cell culture, with IC90 values in single-digit micromolar range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 summarize prior structural and screening work that identified the inhibitor series studied here. All claims are supported by appropriate citations and provide essential background for the current mechanistic studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cdc48 is required to maintain Fzo1 protein levels and mitochondrial fusion. The cdc48-2 mutant exhibits fragmented mitochondria, decreased Fzo1 ubiquitylation and steady-state levels, and proteasome-dependent Fzo1 degradation. These phenotypes are rescued by wild-type Cdc48 but not by the Cdc48A547T mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C58 provide converging evidence from microscopy (C43), immunoblots (C45, C47, C51), cycloheximide chase experiments (C53-C55), and rescue experiments (C56-C57) demonstrating that Cdc48 maintains Fzo1 levels and promotes mitochondrial fusion. The data are internally consistent and the phenotypes are specific to Cdc48 function, as shown by the differential effects on Fzo1 versus Ubc6 (C51-C52) and the specificity of the rescue (C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cdc48 physically interacts with Fzo1 in a ubiquitin-dependent manner, specifically recognizing pro-fusion ubiquitylated forms of Fzo1. The interaction requires K464-dependent ubiquitylation of Fzo1, and the non-ubiquitylated Fzo1K464R mutant shows impaired Cdc48 binding and insensitivity to cdc48-2 mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 are supported by co-immunoprecipitation experiments (C59, C62, C66, C68) and steady-state level analyses (C63). The data demonstrate that Cdc48 specifically recognizes K464-dependent ubiquitylated Fzo1 and not anti-fusion ubiquitin chains, providing mechanistic insight into Cdc48's substrate specificity. The genetic insensitivity of Fzo1K464R to cdc48-2 (C63) further supports direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Ubp12 is an unstable, ubiquitylated protein that physically interacts with Cdc48. Ubp12 degradation depends on both Cdc48 and the proteasome, suggesting that Cdc48 directly supports degradation of ubiquitylated Ubp12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by cycloheximide chase experiments (C70-C73), immunoprecipitation showing Ubp12 ubiquitylation (C74), and co-immunoprecipitation demonstrating Cdc48-Ubp12 interaction (C75). The data converge to show that Ubp12 is a Cdc48 substrate, providing a mechanistic link between Cdc48 and Fzo1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Deletion of UBP12 rescues the mitochondrial fragmentation, respiratory defects, and Fzo1 ubiquitylation defects of cdc48-2 cells. The rescue is Fzo1-dependent, demonstrating that Cdc48 maintains Fzo1 ubiquitylation and activates mitochondrial fusion by downregulating Ubp12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 provide strong genetic evidence through epistasis analysis. Microscopy (C79), growth assays (C84), mtDNA analysis (C85), and ubiquitylation assays (C87) all show that UBP12 deletion rescues cdc48-2 phenotypes. The Fzo1-dependence (C80-C82) confirms specificity. This establishes the Cdc48-Ubp12-Fzo1 regulatory axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The Cdc48-Fzo1 interaction is not mediated by Ubp12, suggesting direct recognition of ubiquitylated Fzo1 by Cdc48. Deletion of UBP12 in cdc48-2 cells does not restore Fzo1 steady-state levels, consistent with mitochondrial fusion depending on ubiquitylated rather than total Fzo1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by co-immunoprecipitation (C89) and immunoblot data (C91). The observation that Fzo1 ubiquitylation is restored without restoring total Fzo1 levels (C91) is consistent with prior work (C92) and supports the model that ubiquitylation status, not protein abundance, drives fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Ubp12 and Ubp2 are interdependent DUBs with opposing effects on Fzo1 stability and ubiquitin homeostasis. Ubp2 is an unstable, ubiquitylated protein whose turnover is regulated by Ubp12 and the proteasome. Ubp12 mediates deubiquitylation of Ubp2, revealing a hierarchical DUB cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C104 are supported by immunoblots (C93, C95), cycloheximide chase experiments (C96-C98), co-immunoprecipitation (C99), and ubiquitylation assays (C101). The data demonstrate that Ubp12 regulates Ubp2 stability through deubiquitylation, establishing a DUB cascade. The opposing phenotypes in ubiquitin homeostasis (C95) provide functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The ubiquitin chains on Fzo1 recognized by Ubp12 are K48-linked and consist of only two ubiquitin moieties. Ubp12 shows no chain preference in vitro, suggesting that the short chain length, rather than linkage specificity, explains why Ubp12 substrates are not destabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by ubiquitin mutant experiments (C105-C109), in vitro DUB assays (C110), and co-expression of tagged/untagged ubiquitin (C111). The data converge to show that Ubp12 recognizes short K48-linked chains. However, C113 is speculative and represents a proposed mechanism rather than demonstrated fact, though it is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C133",
+      "C140",
+      "C141"
+    ],
+    "result": "Pro-fusion (Ubp12-specific) ubiquitylation of Fzo1 precedes and is required for anti-fusion (Ubp2-specific) ubiquitylation. The Fzo1K464R mutant, which lacks pro-fusion ubiquitylation, shows reduced anti-fusion ubiquitylation, demonstrating that pro-fusion ubiquitylation primes Fzo1 for subsequent anti-fusion ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C133, C140-C141 are supported by ubiquitylation assays using Fzo1K464R and Ubp2C745S (Figure 7A) and genetic analysis with mdm30 deletion (Figure 7C). The data show that anti-fusion ubiquitylation depends on prior K464-dependent ubiquitylation, establishing a sequential ubiquitylation cascade on Fzo1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The steady-state levels of Fzo1 in \u0394ubp2\u0394ubp12 cells are insensitive to cdc48-2 mutation, and overexpression of Ubp2 rescues cdc48-2 mitochondrial and respiratory defects. Ubp2 physically interacts with Cdc48, demonstrating that Cdc48, Ubp12, and Ubp2 orchestrate a multilayered cascade regulating Fzo1 ubiquitylation and mitochondrial fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 are supported by immunoblots (C116-C117), microscopy (C118), growth assays (C119), and co-immunoprecipitation (C120). The epistasis analysis and rescue experiments demonstrate that the Cdc48-Ubp12-Ubp2 cascade converges on Fzo1 regulation. This represents the integration of all prior results into a unified model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Cdc48 promotes degradation of Ubp12, which in turn removes pro-fusion ubiquitylation from Fzo1 and promotes degradation of Ubp2. By supporting Ubp12 turnover, Cdc48 dually preserves mitochondrial fusion events. This cascade allows fine-tuning of substrate ubiquitylation and modulation of biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 represent the synthesis and interpretation of the experimental findings. They are supported by the collective data showing Cdc48-dependent Ubp12 degradation (C70-C76), Ubp12-dependent Ubp2 degradation (C96-C104), and the rescue of cdc48-2 phenotypes by UBP12 deletion (C77-C88). This is the main mechanistic conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background claims establishing the known functions of Cdc48/p97, DUBs, mitochondrial fusion machinery, and the opposing effects of Ubp12 and Ubp2 on mitochondrial morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C40 are background knowledge claims supported by citations to previous literature. They establish the context for the current study and are appropriately referenced. These claims are not novel findings but provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Cdc48 negatively regulates Ubp12, which negatively regulates Ubp2, explaining why these two DUBs exert opposite effects on their targets and on ubiquitin homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are high-level summary statements supported by the experimental data showing Cdc48-dependent Ubp12 degradation (C70-C76) and Ubp12-dependent Ubp2 degradation (C96-C104). These claims synthesize the regulatory relationships established by the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Cdc48/p97 extracts ubiquitylated substrates from membranes for proteasomal degradation. Cdc48/p97 and ubiquitin regulate mitochondrial fusion in both yeast and mammals. The similar ubiquitin pattern of mitofusins suggests that the new function of Cdc48 could be conserved in mammals under non-damaging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are supported by citations and the current data. However, C129-C130 are speculative claims about conservation in mammals that are not directly tested in this study. While the speculation is reasonable based on the similarity of ubiquitin patterns, it remains a hypothesis requiring experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion claims about the complexity of mitochondrial fusion, the role of ubiquitin, the Ubp12-Ubp2 cascade, and the identification of E3 ligases involved in Fzo1 ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C143 are discussion points that synthesize the current findings with prior literature. C131-C132, C136-C139, C142 are supported by citations. C134-C135, C143 are supported by the current data. These claims provide context and interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Discussion of the importance of ubiquitin homeostasis and the opposing roles of Ubp2 and Ubp12 in maintaining free ubiquitin levels and ubiquitin conjugates. \u0394ubp12 cells are hyperresistant to CHX and accumulate conjugated ubiquitin, while \u0394ubp2 cells show ubiquitin depletion and CHX hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C152 are supported by citations (C144-C147) and experimental data (C148-C151). The epistasis analysis (C152) is supported by the CHX sensitivity data. These claims establish the functional importance of the Ubp12-Ubp2 cascade for ubiquitin homeostasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Discussion of why Ubp12 and Ubp2 have opposite effects on substrate stability. Ubp2 is a general quality control DUB, while Ubp12 recognizes short ubiquitin chains that do not target substrates for degradation. The Met4 example illustrates how short ubiquitin chains can be protected from elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C162 are supported by citations (C154, C156-C157, C161-C162) and the current data (C155, C158-C160). The discussion provides mechanistic insight into the different behaviors of Ubp12 and Ubp2, supported by the chain length analysis (C159-C160) and in vitro DUB assays (C158).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Discussion of how DUB ubiquitylation regulates DUB activity and interdependence. Speculative mechanisms include conformational changes, coordinated ubiquitylation/phosphorylation, interaction with Cdc48, and release of autoinhibition. Cdc48 may serve as a binding platform for DUB cross-talk regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C164 are supported by the current data showing ubiquitylation of both Ubp2 and Ubp12. However, C165-C172 are speculative mechanisms that are not directly tested in this study. While these are reasonable hypotheses based on analogies to other systems (supported by citations), they remain speculative. C173 is a reasonable inference from the data but represents a proposed model rather than a demonstrated mechanism.",
+    "result_type": "MINOR"
+  }
+]

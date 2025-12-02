@@ -1,0 +1,2044 @@
+{
+  "submission": {
+    "id": "9b93a163-ddd6-410e-9eef-da97596ecc6c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T00:08:45.425570Z",
+    "updated_at": "2025-12-02T00:08:45.425570Z"
+  },
+  "content": [
+    {
+      "id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "submission_id": "9b93a163-ddd6-410e-9eef-da97596ecc6c",
+      "content_type": "manuscript",
+      "content_text": "# A robust and tunable mitotic oscillator in artificial cells\n\n## Authors\n\n- Ye Guan<sup>1</sup>\n- Zhengda Li<sup>1</sup>\n- Shiyuan Wang<sup>1</sup>\n- Patrick M Barnes<sup>4</sup>\n- Xuwen Liu<sup>5</sup>\n- Haotian Xu<sup>6</sup>\n- Minjun Jin<sup>7</sup>\n- Allen P Liu<sup>1</sup> ([ORCID: 0000-0002-0309-7018](https://orcid.org/0000-0002-0309-7018))\n- Qiong Yang<sup>1</sup> ([ORCID: 0000-0002-2442-2094](https://orcid.org/0000-0002-2442-2094)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics University of Michigan Ann Arbor United States\n2. Department of Chemistry University of Michigan Ann Arbor United States\n3. Department of Computational Medicine and Bioinformatics University of Michigan Ann Arbor United States\n4. Department of Physics University of Michigan Ann Arbor United States\n5. Department of Physics University of Science and Technology of China Hefei Shi China\n6. Department of Computer Science Wayne State University Detroit United States\n7. Department of Biological Chemistry University of Michigan Ann Arbor United States\n8. Department of Mechanical Engineering University of Michigan Ann Arbor United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle-cell analysis is pivotal to deciphering complex phenomena like heterogeneity, bistability, and asynchronous oscillations, where a population ensemble cannot represent individual behaviors. Bulk cell-free systems, despite having unique advantages of manipulation and characterization of biochemical networks, lack the essential single-cell information to understand a class of out-of-steady-state dynamics including cell cycles. Here, by encapsulating Xenopus egg extracts in water-in-oil microemulsions, we developed artificial cells that are adjustable in sizes and periods, sustain mitotic oscillations for over 30 cycles, and function in forms from the simplest cytoplasmic-only to the more complicated ones involving nuclear dynamics, mimicking real cells. Such innate flexibility and robustness make it key to studying clock properties like tunability and stochasticity. Our results also highlight energy as an important regulator of cell cycles. We demonstrate a simple, powerful, and likely generalizable strategy of integrating strengths of single-cell approaches into conventional in vitro systems to study complex clock functions.\n\n## Introduction\n\nSpontaneous progression of cell cycles represents one of the most extensively studied biological oscillations. Cytoplasmic extracts predominantly from Xenopus eggs (Murray, 1991) have made major contributions to the initial discovery and characterization of the central cell-cycle regulators including the protein complex cyclin B1-Cdk1 (Masui and Markert, 1971; Murray et al., 1989; Lohka and Maller, 1985; Lohka et al., 1988) and the anaphase-promoting complex or cyclosome (APC/C) (Sudakin et al., 1995). Cell-free extracts have also been used to investigate downstream mitotic events such as spindle assembly and chromosome segregation (Hannak and Heald, 2006). Moreover, detailed dissections of the regulatory circuits in these extracts have revealed architecture of interlinked positive and negative feedbacks (Kumagai and Dunphy, 1992; Mueller et al., 1995; Yang and Ferrell, 2013; Chang and Ferrell, 2013; Trunnell et al., 2011; Kim and Ferrell, 2007; Pomerening et al., 2005; Pomerening et al., 2003; Novak and Tyson, 1993; Thron, 1996) (Figure 1A). Such interlinked feedback loops are also found in many other biological oscillators (Rust et al., 2007; Hoffmann et al., 2002; Cross, 2003; Lee et al., 2000) and have been shown computationally to play an important role in achieving the essential clock functions such as robustness and tunability (Tsai et al., 2008). These studies have stimulated major interests in quantitative characterization of clock functions, for which an experimental platform is still lacking.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/33549/elife-33549-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic view of a cell cycle oscillator that consists of coupled positive and negative feedback loops. The central regulator, cyclin B-Cdk1 complex activates its own activator, phosphatase Cdc25, forming a positive feedback loop, and inhibits its own inhibitor, kinase Wee1, forming a double negative feedback loop. Additionally, cyclinB-Cdk1 activates the E3 ubiquitin ligase APC/C, which targets cyclin B for degradation and completes a core negative feedback loop. Active APC/C also promotes the degradation of another substrate securin. Once cyclinB1-Cdk1 complex is activated, the circuit drives a set of mitotic events including chromosome condensation and nuclear envelope breakdown (NEB). (B) Experimental procedures. Cycling Xenopus extracts are supplemented with various combinations of recombinant proteins, mRNAs, and de-membraned sperm DNAs, which are encapsulated in 2% Perfluoropolyether-poly (ethylene glycol) (PFPE-PEG) oil microemulsions. Scale bar is 100 \u00b5m. (C) Snapshots of a droplet were taken periodically both in fluorescence channels (top three rows) and bright-field (the last row). The cyclic progression of the cell cycle clock and its downstream mitotic processes are simultaneously tracked by multiple fluorescence reporters. The clock regulator APC/C activity is reported by its substrate securin-mCherry, chromosomal morphology changes by the Hoechst stains, and NEB by GFP-NLS. Nuclear envelopes (red arrows) are also detectable on bright field images, matching the localization of GFP-NLS indicated nuclei. Scale bar is 30 \u00b5m. (D) Multi-channel measurements for the droplet in Figure 1C. The nucleus area (green circle) is calculated from the area of the nuclear envelope indicated by GFP-NLS, noting that the areas of the green circles are also scaled with the real areas calculated for the nuclei. DNA area curve (blue line) shows the chromosome area identified by Hoechst 33342 dye. Chromosome condensation happens almost at the same time as the nuclear envelope breaks down (black dashed line). The red dashed line represents the intensity of securin-mCherry over time, suggesting that degradation of the APC/C substrate lags behind NEB consistently at each cycle.\n\nCompared to in vivo systems, circuits reconstituted in cell-free extracts contain well-defined recombinant molecules and are more amenable to systematic design, manipulation and quantitative biochemical measurements. However, one major limitation for most in vitro reconstitutions up to date is that oscillations are generated in well-mixed bulk solutions, which tend to produce quickly damped oscillations (Pomerening et al., 2005; Nakajima et al., 2005). Additionally, these bulk reactions lack the similarity to the actual cell dimensions and the ability of mimicking spatial organization achieved by functional compartmentalization in real cells. These limitations make it impossible to retrieve the cellular heterogeneity to investigate important and challenging questions, such as stochasticity and tunability of an oscillator.\n\nTo overcome these challenges, we developed an artificial cell cycle system by encapsulating reaction mixtures containing cycling Xenopus egg cytoplasm (Murray, 1991) in cell-scale micro-emulsions. These droplet-based cells are stable for days and keep oscillating for dozens of cycles, offering large gains in high-throughput and long-term tracking of dynamical activities in individual droplets. In this system, we successfully reconstituted a series of mitotic events including chromosome condensation, nuclear envelope breakdown and destruction of anaphase substrates such as the proteins securin and cyclin B1. The oscillation profiles of the system such as period and number of cycles can be reliably regulated by the amount of cyclin B1 mRNAs or sizes of droplets. Additionally, we found that energy may be a critical factor for cell cycle behaviors.\n\n## Results and discussion\n\n### The oscillator reliably drives the periodic progression of multiple mitotic events\n\nTo create a cell-like in vitro mitotic system, we used a simple vortexing technique (Ho et al., 2017) to compartmentalize reactions of cycling Xenopus egg extracts (Murray, 1991) into microemulsion droplets, with radii ranging from 10 \u00b5m to 300 \u00b5m (Figure 1B, Materials and methods). The droplets were loaded into a Teflon-coated chamber and recorded using long-term time-lapse fluorescence microscopy. The fluorescence time courses of each droplet were analyzed to obtain information of period, amplitude, number of cycles, droplet size, etc.\n\nTo examine the functionality of the droplet mitotic system, we added de-membranated sperm chromatin, purified green fluorescent protein-nuclear localization signal (GFP-NLS), securin-mCherry mRNA and Hoechst 33342 dye to the cytoplasmic extracts. We demonstrated that the system is capable of reconstructing at least three mitotic processes in parallel that alternate between interphase and mitosis (Figure 1\u2014video 1). An example artificial cell that undergoes these mitotic processes is shown in Figure 1C. The autonomous alternation of distinct cell-cycle phases is driven by a self-sustained oscillator, the activity of which was indicated by the periodic degradation of an anaphase substrate of APC/C, securin-mCherry. In interphase, the presence of sperm chromosomal DNA, labeled by Hoechst, initiated the self-assembly of a nucleus, upon which GFP-NLS protein was imported through the nuclear pores. The spatial distributions of Hoechst and GFP-NLS thus coincided in an interphase nucleus (Figure 1C columns 1, 3, and 5). As the artificial cell entered mitosis, the chromosome condensed resulting in a tighter distribution of Hoechst, while the nuclear envelope broke down and GFP-NLS quickly dispersed into a uniform distribution in the whole droplet (Figure 1C columns 2 and 4). The time courses for these processes were analyzed in Figure 1D, indicating that the chromosome condensation and nuclear envelop breakdown (NEB) happened almost at the same time, while securin degradation lagged behind these two processes at each cycle. All together, these experiments showed that the droplet system successfully reconstituted a cell-free mitotic oscillator centered on Cdk1 and APC/C that can reliably drive the periodic progression of downstream events including chromosome morphology change and nuclear envelope breakdown and re-assembly, like what occurs in vivo.\n\n### The oscillator is effectively tunable in frequency with cyclin B1 mRNAs\n\nThe ability to adjust frequency is an important feature shared by many oscillators (Tsai et al., 2008). Here, we demonstrated that the present system provides an effective experimental solution to the study of tunability of the clock. To avoid any interference from the complicated nuclear dynamics, we reconstituted a minimal mitotic oscillatory system which, in the absence of sperm chromatin, formed no nuclei. This simple, cytoplasmic-only oscillator produced highly robust, undamped, self-sustained oscillations up to 32 cycles over a lifetime of 4 days (Figure 2A,B, Figure 2\u2014video 1), significantly better than many existing synthetic oscillators.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/33549/elife-33549-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fluorescence image of securin-mCherry, a reporter for the cell cycle oscillator, in micro-emulsion droplets (scale bar, 100 \u00b5m). One example droplet (inside the white dotted framed square) is selected for time course analysis in Figure 2B. (B) The time course of securin-mCherry fluorescence intensity of the selected droplet from Figure 2A, indicating 32 undamped oscillations over a course of 100 hr. (C) Simultaneous measurements of fluorescence intensities of securin-mCherry (upper panel) and cyclin B-YFP (lower panel), showing sustained oscillations for about 58 hr. The mRNA concentrations of securin-mCherry and cyclin B-YFP are 10 ng/\u00b5L and 1 ng/\u00b5L. The series of mCherry and YFP images correspond to selected peaks and troughs in the time courses of fluorescence intensities. The two channels have coincident peaks and troughs for all cycles, suggesting that they both are reliable reporters for the cell cycle oscillator. (D, E) The oscillator is tunable in frequency (D) and number of cycles (E) as a function of the concentration of cyclin B mRNAs. Cyclin B not only functions as a substrate of APC/C but also binds to Cdk1 for its activation, functioning as an \u2018input\u2019 of the clock. In Figure 2D, the cell cycle periods are shortened by increasing the mRNA concentrations. In Figure 2E, the number of total cell cycles is reduced in response to increasing cyclin B mRNA concentrations. Each data point represents a single droplet that was collected from one of the loading replicates (see Materials and methods 7). Red dashed line connects medians at different conditions. Error bar indicates median absolute deviation (MAD). (F, G) Droplets with smaller diameters have larger periods on average and a wider distribution of periods (F), and exhibit smaller number of oscillations on average (G). Colored areas represent moving 25 percentiles to 75 percentiles and is smoothed using the LOWESS smoothing method (see Materials and methods 7). The equivalent diameter is defined as the diameter of a sphere that has an equal volume to that of a droplet, estimated by a volume formula in literature (Good et al., 2013). Note that these size effects are smaller for droplets with higher cyclin B mRNA concentrations.\n\nTo modulate the speed of the oscillations, we supplied the system with various concentrations of purified mRNAs of full-length cyclin B1 fused to YFP (cyclin B1-YFP), which function both as a reporter of APC/C activity and as an activator of Cdk1. A droplet supplied with both cyclin B1-YFP and securin-mCherry mRNAs exhibited oscillations with highly correlated signals (Figure 2C, Figure 2\u2014video 2), suggesting that both are reliable reporters for the oscillator activity. With an increased concentration of cyclin B1-YFP mRNAs added to the system, we observed a decrease in the average period (Figure 2D, Figure 2\u2014source data 1), meaning that a higher cyclin B1 concentration tends to speed up the oscillations. However, the average number of cycles (Figure 2E, Figure 2\u2014source data 1) was also reduced with increased cyclin B1 concentrations, resulting in a negative correlation between the lifetime of oscillations and the amount of cyclin B1 mRNAs. The extracts will eventually arrest at a mitotic phase in the presence of high concentrations of cyclin B1.\n\n### The behavior of the single droplet oscillator is size-dependent\n\nMoreover, this system provides high flexibility in analyzing droplets with radii ranging from a few \u00b5m to 300 \u00b5m, enabling characterization of size-dependent behaviors of cell cycles. At the scale of a cell, the dynamics of biochemical reactions may become stochastic. Although stochastic phenomenon has been studied extensively in genetic expressions, studying a stochastic system that is out of steady-state can be challenging in living organism due to low throughput and complications from cell growth, divisions and other complex cellular environments. These limitations can be overcome by reconstitution of in vitro oscillators inside cell-scale droplets, which are in absence of cell growth and divisions. Parallel tracking of droplets also enables high-throughput data generation for statistical analysis. In vitro compartmentalization of molecules, especially rate-limiting molecules such as cyclin B1 mRNAs, into cell-sized droplets may have a major effect on the reaction kinetics of cell cycles. The smaller the size of a droplet, the smaller the copy number of molecules encapsulated inside the droplet and the larger the inherent stochasticity of biochemical reactions. Additionally, the partition errors of these molecule resulted from compartmentalization may further contribute to the variations of droplet behaviors in a size-dependent manner. Figure 2F (Figure 2\u2014source data 2) showed that smaller droplets led to slower oscillations with a larger variance of the periods, consistent with the size effect reported on an in vitro transcriptional oscillator (Weitz et al., 2014). We also observed a reduced number of oscillations and a smaller variance of the cycle number in smaller droplets (Figure 2G, Figure 2\u2014source data 2). Interestingly, these size effects become less dramatic for droplets with larger sizes or with higher concentrations of cyclin B1 mRNAs.\n\n### Energy depletion model recapitulates dynamics of the oscillator\n\nThe results in Figure 2D\u2013G indicated that the system is tunable by cyclin B1 mRNA concentration and droplet size in different manners. Although the period and number of cycles responded to varying droplet sizes in opposite directions, they followed the same trend when modulated by cyclin B1 mRNAs, resulting in a lifespan of the oscillatory system sensitive to cyclin B1 mRNA concentration. Moreover, we have observed that securin-mCherry and cyclin B1-YFP both exhibited oscillations of increased amplitude, baseline, and period over time (Figure 2C), of which the increasing period over time is evident by analysis in Figure 3\u2014figure supplement 1A and B. These trends cannot be explained by existing cell cycle models (Yang and Ferrell, 2013; Tsai et al., 2014).\n\nUnlike intact embryos, cell-free extracts lack yolk as an energy source and lack sufficient mitochondria for energy regeneration. We postulated that energy is an important regulator for a droplet system with a limited amount of energy source consumed over time. To gain insights into our experimental observations and better understand the in vitro oscillator system, we built a model to examine how energy consumption plays a role in modulating the oscillation behaviors. The energy depletion model is based on a well-established cell-cycle model (Yang and Ferrell, 2013; Tsai et al., 2014) modified by introducing ATP into all phosphorylation reactions (Figure 3A, Materials and methods 8 and 9).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/33549/elife-33549-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic view of the cyclin B-Cdk1 oscillation system. Note that ATP is taken into consideration. Activated molecules are marked in red, inactivated molecules in green and ATP or Pi in yellow. Black line indicates a reaction and blue dotted line a phosphorylation. (B) Relationship between ATP percentage and R value, showing that decreasing the ATP concentration leads to a higher R value. Error bars represent ranges from three simulations. Two inserts represent the dynamics of R value over time when the ATP percentage [ATP]/([ATP]+[ADP]) is set as 0.2 (left) and 0.5 (right). The model is simulated using Gillespie algorithm. (C) Phase plots of the two-ODE model. Parameters for the cyclin B nullcline (Ncyc) (Yang and Ferrell, 2013) and the Cdk1 nullclines with a variety of values of r (N1, r\u00a0=\u00a00.5; N2, r\u00a0=\u00a00.8; N3, r\u00a0=\u00a01.5; N4, r\u00a0=\u00a02.5) were chosen based on previous experimental work (Pomerening et al., 2003; Sha et al., 2003). Note that the r here is a parameter and is different from R in Figure 3B. Two sample traces of limit cycle oscillations are plotted for r\u00a0=\u00a00.8 (L1) and r\u00a0=\u00a01.5 (L2), showing that a larger r value leads to a higher amplitude and baseline. In addition, r\u00a0=\u00a00.5 (N1) generates a low stable steady-state of cyclin B (P1), while r\u00a0=\u00a02.5 (N4) a high stable steady-state of cyclin B (P4). These stable steady-states are indicated by the intersections of the nullclines (filled circles). The unstable steady states are labeled with open circles (P2 and P3). (D) Relationship between the oscillation baseline and amplitude values and ATP concentration (positively correlated with r). Error bars indicate the ranges of 3 replicates. Inserts show two example time courses of total cyclin B with different r values (L1, r\u00a0=\u00a00.8; L2, r\u00a0=\u00a01.5), colors of which match the ones in Figure 3C. Simulation is done using Gillespie algorithm. (E) Time series of total cyclin B molecules from the model without ATP (top panel, green line) and with ATP (bottom panel, yellow line).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/33549/elife-33549-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The period of the first cycle vs the last cycle in a droplet, showing that the period of the last cycle tends to be longer. Blue line indicates the same first and last periods. (B) Pearson correlation between the period of cycle and the index of cycle in a droplet. Positive correlation indicates that the cell cycle period tends to increase over time. (C) The period and number of oscillations decrease with an increasing cyclin B synthesis rate. Error bars represent standard deviations from 50 simulations. (D) Effects of synthesis and degradation rates of cyclin B as well as r on the baseline and amplitude of oscillations of total cyclin B. Color bar indicates baseline or amplitude of cyclin B (number of molecules per pL).\n\nIn the cell cycle network, the activation of Cdk1 is co-regulated by a double positive feedback through a phosphatase Cdc25 and a double negative feedback through a kinase Wee1. The balance between Wee1 and Cdc25 activity was suggested to be crucial for the transition of cell cycle status during early embryo development (Tsai et al., 2014). In light of this, we defined the balance between Wee1 and Cdc25 by the ratio $R=\\frac{k_{Wee1}Wee1}{k_{Cdc25}Cdc25}$. We noted that ATP-dependent phosphorylation of Cdc25 and Wee1 can decrease R by activating Cdc25 and inhibiting Wee1 simultaneously, resulting in a high dependence of R on the ATP concentration (Figure 3B).\n\nUsing this model, we further investigated the relationship between ATP and the oscillation behaviors. We introduce a parameter r into our system to systematically change the ratio R (see Materials and methods 8). In Figure 3C, the phase plot of the two-ODE model shows that at a low r (e.g. 0.5), the system stays at a stable steady-state with low cyclin B concentration and at a high r (e.g. 2.5), the oscillation is arrested at a stable steady-state with high cyclin B concentration. At an intermediate value, increasing r can produce oscillations of increased amplitude, baseline and period (Figure 3C,D). If we assume that the available ATP concentration decreases over time, we can readily recapitulate the experimentally observed increment of amplitude, baseline, and period of the cyclin B time course (Figure 3E). The energy depletion model can also predict the experimental observations in Figure 2D and E by showing that both period and number of cycles decrease with increasing cyclin B concentration (Figure 3\u2014figure supplement 1C, Figure 3\u2014source data 1).\n\nWe noted that, besides phosphorylation, other processes, including protein synthesis and ubiquitination-mediated degradation, also consume ATPs and are sensitive to the energy level. However, the changes of synthesis and degradation rates yielded no obvious effects on the amplitude and baseline (Figure 3\u2014figure supplement 1D).\n\nWe have developed here a novel artificial cell system that enables highly robust and tunable mitotic oscillations. The system is amenable to high throughput, quantitative manipulation and analysis of both cytoplasmic and nuclear processes. Given cell cycles share common topologies with many biological oscillators, the system may be valuable to investigate fundamental principles of oscillator theory.\n\nOur energy depletion model suggested an interesting mechanism to modulate oscillations with a single control parameter r that depends on the energy-tunable balance of two positive feedback loops. Considering that the rapid, synchronous cleavages of an early embryo require a large amount of energy that remains unchanged for the first cleavage stages before rapidly dropping until the mid-blastula stage when cell cycles slow down (Zotin et al., 1967), this energy-dependent control may function as a \u2018checkpoint\u2019 to regulate cell cycles when r becomes large.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Xenopus laevis)</td>\n      <td>Xenopus eggs</td>\n      <td>Xenopus-I Inc.</td>\n      <td>RRID:NXR_0.0080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>securin-mCherry</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Progentiors: PCR; Gateway vector pMTB2</td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>cyclin B1-YFP</td>\n      <td>this paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>GST-GFP-NLS</td>\n      <td>PMID: 23863935</td>\n      <td></td>\n      <td>Dr. James Ferrell's lab</td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>GFP-NLS protein</td>\n      <td>this paper</td>\n      <td></td>\n      <td>BL21 (DE3)-T-1 competent cells</td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>QIAprep spin miniprep kit</td>\n      <td>QIAGEN</td>\n      <td>Cat No.: 27104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>\n      <td>Ambion</td>\n      <td>Cat No.: AM1340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>BL21 (DE3)-T-1 competent celss</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: B2935</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>calcium ionophore</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: A23187</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Hoechst 33342</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: B2261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Trichloro (1H,1H,2H,2H- perfluorooctyl) silane</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: 448931</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>PFPE-PEG surfactant</td>\n      <td>Ran Biotechnologies</td>\n      <td>008-FluoroSurfactant- 2wtH-50G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>GE Healthcare Glutathione Sepharose 4B beads</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: GE17-0756-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>PD-10 column</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat No.: GE17-0851-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>VitroCom miniature hollow glass tubing</td>\n      <td>VitroCom</td>\n      <td>Cat No.: 5012</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cycling Xenopus laevis extract preparation\n\nCycling Xenopus extracts were prepared as described (Murray, 1991), except that eggs were activated with calcium ionophore A23187 (200 ng/\u00b5L) rather than electric shock. Freshly prepared extracts were kept on ice while applied with de-membranated sperm chromatin (to approximately 250 per \u00b5l of extract), GFP-NLS (10 \u00b5M) and recombinant mRNAs of securin-mCherry (10 ng/\u00b5L) and cyclin B1-YFP (ranging from 0 to 10 ng/\u00b5L). The extracts were mixed with surfactant oil 2% PFPE-PEG to generate droplets.\n\n### Fluorescence-labeled reporters\n\nGFP-NLS protein was expressed in BL21 (DE3)-T-1 competent cells (Sigma Aldrich, B2935) that were induced by 0.1 mM IPTG (Isopropyl \u03b2-D-1-thiogalactopyranoside, Sigma Aldrich, I6758) overnight. Cells were broken down to release protein through sonication. GE Healthcare Glutathione Sepharose 4B beads (Sigma Aldrich, GE17-0756-01) and PD-10 column (Sigma Aldrich, GE17-0851-01) were used to purify and elute GFP-NLS protein. 200 mg/ml Hoechst 33342 (Sigma Aldrich, B2261) was added to stain chromosomes. Securin-mCherry and cyclin B1-YFP plasmids were constructed using Gibson assembly method (Gibson et al., 2009). All mRNAs were transcribed in vitro and purified using mMESSAGE mMACHINE SP6 Transcription Kit (Ambion, AM1340).\n\n### Teflon-coated microchamber preparation\n\nVitroCom miniature hollow glass tubing with height of 100 \u00b5m (VitroCom, 5012) was cut into pieces with lengths of 3\u20135 mm. A heating block was heated up to 95\u00b0C in a Fisher Scientific Isotemp digital incubator and then it was placed into a Bel-art F42025-0000 polycarbonate vacuum desiccator with white polypropylene bottom. The cut glass tubes and a 1.5 ml Eppendorf tube containing 30 \u00b5l Trichloro (1 hr,1H,2H,2H-perfluorooctyl) silane (Sigma Aldrich, 448931) were placed in the heating block. Vacuum was applied to the desiccator and the tubes was left incubated overnight.\n\n### Generation of droplet-based artificial cells\n\nTo generate droplets, we used a Fisher Scientific vortex mixer to mix 20 \u00b5l cycling extract reaction mix, and 200 \u00b5l 2% PFPE-PEG surfactant (Ran Biotechnologies, 008-FluoroSurfactant-2wtH-50G) at speed level 10 for 3 s. By adjusting the vibration speed and ratio between aqueous and oil phase appropriately, we can obtain droplets with various sizes, ranging from 10 \u00b5m to 300 \u00b5m.\n\n### Time-lapse fluorescence microscopy\n\nAll imaging was conducted on an Olympus FV1200 confocal microscope under MATL mode (multiple area time lapse) and Olympus IX83 microscope equipped with a motorized x-y stage, at room temperature. Time-lapse images were recorded in bright-field and multiple fluorescence channels at a time interval of 6\u20139 min for at least 12 hr up to four days.\n\n### Image analysis and data processing\n\nWe used Imaris 8.1.2 (Bitplane Inc.) for image processing. Level-set method on bright-field images was used for droplet segmentation, and autoregressive motion algorithm was used for tracking. Tracks that had less than two oscillations were discarded. Results were then manually curated for accuracy. Means and standard deviations of fluorescence intensities as well as areas of each droplet were calculated for further analysis. The volume of a droplet was calculated using the formula proposed by a previous study (Good et al., 2013). To compensate for intensity drift over time, fluorescence intensity in droplets were normalized by average intensity of the background. For period calculation, Matlab (Mathworks Inc.) was used to detect peaks and troughs over the signal of mean intensity for cyclin B-YFP and securin-mCherry. All peaks were manually curated and edited to ensure reliability.\n\n### Statistical analysis\n\nIn Figure 2D\u2013E, error bars indicate the median absolute deviations (MAD) of measurements pooled across multiple loading replicates. Each loading replicate refers to droplets encapsulated with extracts prepared from the same batch of Xenopus eggs that were loaded into a distinct individual Teflon-coated micro-chamber. For cyclin B mRNA concentrations of 0, 3, 5, 8, 10 ng/\u00b5L, respectively two, two, one, two and three loading replicates were performed, resulting in sample sizes of 373, 443, 227, 430 and 554 droplets that were analyzed. Extracts with cyclin B mRNA concentrations above 10 ng/\u00b5L did not exhibit sustained oscillations before arresting at a mitotic phase.\n\nIn Figure 2F\u2013G, droplets generated with three cyclin B mRNA concentrations (0, 3, 5 ng/\u00b5L) were analyzed, with samples sizes of 246, 475, and 177 respectively. Experiments with cyclin B mRNA concentrations higher than 5 ng/\u00b5L showed similar behaviors as that of the 5 ng/\u00b5L cyclin B mRNA experiment and therefore are not included in the figures. Colored areas are defined by first and third quantiles after LOWESS (Locally Weighted Scatterplot Smoothing) with a window size of 20. The quartiles are calculated using running percentile with a binning size of 50. Volumes of droplets were first estimated using the compressed diameters (Good et al., 2013). The equivalent diameter was then calculated by the diameter of a sphere with the same volume as the estimated volume of a droplet.\n\nIn Figure 3B and D, we performed simulations at chosen ranges of ATP percentage (Figure 3B) and r (Figure 3D) to yield self-sustained oscillations. Error bars indicate the ranges of 3 independent simulations. The time courses in the figure inserts are randomly selected from the simulation replicates as examples.\n\nIn Figure 3\u2014figure supplement 1A and B, measurements from experiments with 0 ng/\u00b5L cyclin B mRNA (from two loading replicates, 373 droplets, 5820 cycles) were pooled to analyze the change of period over time. In Figure 3\u2014figure supplements 1C, 50 independent simulations were performed for each cyclin B mRNA concentration. Error bars indicate the standard deviations of the simulated data. In Figure 3\u2014figure supplement 1D, the ranges of r and the degradation/synthesis rate were chosen to ensure all points in grids have self-sustained oscillations. All simulations in the supplementary figures were performed in a long enough time window to ensure stable statistics (period, amplitude) while the ATP concentration remained positive.\n\n### A two-ODE model of the embryonic cell cycle and stochastic simulations\n\nComplicated models have been proposed to describe the embryonic cell cycle oscillation (Novak and Tyson, 1993a; Ciliberto et al., 2003; Pomerening et al., 2005; Tsai et al., 2008). However, simple two-ODE models with fewer parameters are more amenable to analysis, while still capturing the general property of the feedback loops. We described the net productions of cyclin B1 and active cyclinB-Cdk1 complex $Cdk1_{a}$ using the following two equations (Yang and Ferrell, 2013; Tsai et al., 2014):\n\n$$\n\\frac{d}{dt}[CyclinB]=k_{sy}\u2212k_{deg}^{}[CyclinB]=k_{sy}\u2212(a_{deg}+\\frac{b_{deg}[Cdk1_{a}]^{n_{deg}}}{[Cdk1_{a}]^{n_{deg}}+EC50_{deg}^{n_{deg}}})[CyclinB]\n$$\n\n\n\n$$\n\\frac{d}{dt}[Cdk1_{a}]=k_{sy}+k_{Cdc25}^{}[Cdc25\u2212Pi]([CyclinB]\u2212[Cdk1_{a}])\u2212k_{Wee1}^{}[Wee1][Cdk1_{a}]\u2212k_{deg}[Cdk1_{a}]=k_{sy}+\\frac{1}{\\sqrt{r}}(a_{Cdc25}+\\frac{b_{Cdc25}[Cdk1_{a}]^{n_{Cdc25}}}{[Cdk1_{a}]^{n_{Cdc25}}+EC50_{Cdc25}^{n_{Cdc25}}})([CyclinB]\u2212[Cdk1_{a}])\u2212\\sqrt{r}(a_{Wee1}+\\frac{b_{Wee1}EC50_{Wee1}^{n_{Wee1}}}{[Cdk1_{a}]^{n_{Wee1}}+EC50_{Wee1}^{n_{Wee1}}})[Cdk1_{a}]\u2212(a_{deg}+\\frac{b_{deg}[Cdk1_{a}]^{n_{deg}}}{[Cdk1_{a}]^{n_{deg}}+EC50_{deg}^{n_{deg}}})[Cdk1_{a}]\n$$\n\nThe parameters for the model are listed below:\n\n<table>\n  <thead>\n    <tr>\n      <th>ksy</th>\n      <th>1 nM/min</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>awee1</td>\n      <td>0.08 nM/min</td>\n    </tr>\n    <tr>\n      <td>bwee1</td>\n      <td>0.4 nM/min</td>\n    </tr>\n    <tr>\n      <td>nwee1</td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td>EC50wee1</td>\n      <td>35 nM</td>\n    </tr>\n    <tr>\n      <td>acdc25</td>\n      <td>0.16 nM/min</td>\n    </tr>\n    <tr>\n      <td>bcdc25</td>\n      <td>0.8 nM/min</td>\n    </tr>\n    <tr>\n      <td>ncdc25</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>EC50cdc25</td>\n      <td>30 nM</td>\n    </tr>\n    <tr>\n      <td>adeg</td>\n      <td>0.01 nM/min</td>\n    </tr>\n    <tr>\n      <td>bdeg</td>\n      <td>0.04 nM/min</td>\n    </tr>\n    <tr>\n      <td>ndeg</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>EC50deg</td>\n      <td>32 nM</td>\n    </tr>\n  </tbody>\n</table>\n\nHere, $CyclinB$ and $Cdk1_{a}$ refer to the concentrations of cyclin B1 and active cyclin B1-Cdk1 complex. $[Wee1]$ is the concentration of active Wee1, while $[Cdc25-Pi]$ is the concentration of active Cdc25. We assumed that Cyclin B1 is synthesized at a constant rate. Its degradation rate is dependent on Cdk1 activity in the form of a Hill function with an exponent of 17 (Yang and Ferrell, 2013). Active cyclin B1-Cdk1 complex can also be eliminated through cyclin degradation. In addition, we considered the concentration of Cdk1 to be high compared to the peak concentration of cyclin B1 (Hochegger et al., 2001; Kobayashi et al., 1991) and the affinity of these cyclins for Cdk1 to be high (Kobayashi et al., 1994). Thus, there is no unbound form of cyclin B1, and the newly synthesized cyclin B1 is converted to cyclin-Cdk1 complexes, which are rapidly phosphorylated by the Cdk-activating kinase CAK to produce active Cdk1. According to previous studies, these complexes can then be inactivated by Wee1 and re-activated by Cdc25, via the double-negative and positive feedback loops, with Hill exponent of $n_{Wee1}$ as 3.5 and $n_{Cdc25}$ as 11 (Kim and Ferrell, 2007; Trunnell et al., 2011).\n\nWe use a free parameter r, representing the ratio of the double negative and double positive feedback strengths, to permute the balance between the two feedbacks. This balance is suggested to be critical for oscillatory properties (Tsai et al., 2014). Note that this r is a parameter while R in the main text is a measurement that changes over a simulation.\n\nIn droplets that have small volumes and contain small numbers of molecules, the stochastic nature of the underlying biochemical reactions must be considered. We adapted a stochastic two-ODE model (Yang and Ferrell, 2013), and converted our two-ODE model to the corresponding chemical master equations (Kampen, 1992) and carried out numerical simulations using the Gillespie algorithm (Gillespie, 1977). The reaction rates and molecular stoichiometry are shown in Table 1.\n\n**Table 1.**\n Reaction rates and stoichiometry of the two-ODE model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reaction</th>\n      <th>Rate</th>\n      <th>Stoichiometry</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Active Cdk1 Synthesis</td>\n      <td>\u03c11=ksy</td>\n      <td>&lt;Cdk1a&gt;=&lt;Cdk1a&gt;+1</td>\n    </tr>\n    <tr>\n      <td>Active Cdk1 to Inactive Cdk1</td>\n      <td>\u03c12=r(aWee1+bWee1EC50Wee1nWee1&lt;Cdk1a&gt;nWee1+EC50Wee1nWee1)&lt;Cdk1a&gt;</td>\n      <td>&lt;Cdk1a&gt;=&lt;Cdk1a&gt;\u22121&lt;Cdk1i&gt;=&lt;Cdk1i&gt;+1</td>\n    </tr>\n    <tr>\n      <td>Inactive Cdk1 to Active Cdk1</td>\n      <td>\u03c13=1r(aCdc25+bCdc25&lt;Cdk1a&gt;nCdc25&lt;Cdk1a&gt;nCdc25+EC50Cdc25nCdc25)&lt;Cdk1i&gt;</td>\n      <td>&lt;Cdk1a&gt;=&lt;Cdk1a&gt;+1&lt;Cdk1i&gt;=&lt;Cdk1i&gt;\u22121</td>\n    </tr>\n    <tr>\n      <td>Active Cdk1 Degradation</td>\n      <td>\u03c14=(adeg+bdeg&lt;Cdk1a&gt;ndeg&lt;Cdk1a&gt;ndeg+EC50degndeg)&lt;Cdk1a&gt;</td>\n      <td>&lt;Cdk1a&gt;=&lt;Cdk1a&gt;\u22121</td>\n    </tr>\n    <tr>\n      <td>Inactive Cdk1 Degradation</td>\n      <td>\u03c15=(adeg+bdeg&lt;Cdk1a&gt;ndeg&lt;Cdk1a&gt;ndeg+EC50degndeg)&lt;Cdk1i&gt;</td>\n      <td>&lt;Cdk1i&gt;=&lt;Cdk1i&gt;\u22121</td>\n    </tr>\n  </tbody>\n</table>\n\n### A stochastic model of the embryonic cell cycle including energy effect\n\nTo explore how energy consumption could affect the oscillations, we took ATP into account for phosphorylation and dephosphorylation of Wee1 (Tuck et al., 2013), such that:\n\n$$\nWee1+ATPWee1\u2212Pi+ADP\n$$\n\nIn our model, we assumed Wee1 is in equilibrium with the activity of Cdk1 due to fast reactions between Cdk1 and Wee1. Using the reaction coefficients for Wee1 phosphorylation as $k_{1Wee1}$ and that for Wee1-Pi dephosphorylation as $k_{2Wee1}$, along with the steady-state approximation, we have:\n\n$$\nk_{1Wee1}[Wee1][ATP]=k_{2Wee1}[Wee1\u2212Pi][ADP]\u00a0=k_{2Wee1}([Wee1_{tot}]\u2212[Wee1])(1\u2212[ATP])\n$$\n\nAll above modifications for Wee1 reactions were also applied to Cdc25. After normalizing [ATP] and [ADP] by$ATP+[ADP]$, we have the updated reaction rates summarized in Table 2. Here the [wee1]0 and [cdc25-Pi]0 represent the steady-state concentration of active Wee1 and Cdc25 when ATP is not considered in reaction. The ratios of the steady-state to total concentrations of Wee1 and Cdc25 can be calculated as a function of active Cdk1 using the parameters from previous work (Novak and Tyson, 1993).\n\n**Table 2.**\n Reaction rates in the model considering ATP.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reaction</th>\n      <th>Rate</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Active Cdk1 Synthesis</td>\n      <td>\u03c11=ksy</td>\n    </tr>\n    <tr>\n      <td>Active Cdk1 to Inactive Cdk1</td>\n      <td>\u03c12=2[ATP]&lt;Cdk1a&gt;(aWee1+bWee1EC50Wee1nWee1&lt;Cdk1a&gt;nWee1+EC50Wee1nWee1)1-ATPATP1-2Wee10Wee1tot+Wee10Wee1tot</td>\n    </tr>\n    <tr>\n      <td>Inactive Cdk1 to Active Cdk1</td>\n      <td>\u03c13=&lt;Cdk1i&gt;(aCdc25+bCdc25&lt;Cdk1a&gt;nCdc25&lt;Cdk1a&gt;nCdc25+EC50Cdc25nCdc25)ATP1-Cdc25-Pi0Cdc25tot+(2Cdc25-Pi0Cdc25tot-1)[ATP]</td>\n    </tr>\n    <tr>\n      <td>Active Cdk1 Degradation</td>\n      <td>\u03c14=(adeg+bdeg&lt;Cdk1a&gt;ndeg&lt;Cdk1a&gt;ndeg+EC50degndeg)&lt;Cdk1a&gt;</td>\n    </tr>\n    <tr>\n      <td>Inactive Cdk1 Degradation</td>\n      <td>\u03c15=(adeg+bdeg&lt;Cdk1a&gt;ndeg&lt;Cdk1a&gt;ndeg+EC50degndeg)&lt;Cdk1i&gt;</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "df1c4f1c-9c60-4384-ba0c-4cdeda871ca8",
+      "submission_id": "9b93a163-ddd6-410e-9eef-da97596ecc6c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.33549.029](https://doi.org/10.7554/eLife.33549.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A robust and tunable mitotic oscillator in artificial cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Naama Barkai as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please address in full all comments of reviewer #2.\n\nReviewer #1:\n\nGuan et al. present a highly interesting manuscript showing that a few simple components in the cell cycle machinery can generate oscillations in vitro in droplets. They showed robust oscillatory behaviors and how the oscillations can be tuned by the size of the droplets as well as by concentrations of cyclin mRNAs. The theoretical work showed that the ratio of Cdc25 and Wee1 affect the oscillation timing. They further showed that the energy depletion model is consistent with the experimental results. The experiments are elegantly carried out and the results are beautiful. I would recommend for publication in eLife.\n\nReviewer #2:\n\nThis paper reports on the development of a droplet assay in which cytoplasmic extracts can be compartmentalized to sizes in the micrometer range. This allows the authors to generate artificial mitotic oscillations using an in vitro setup that combines the ease of manipulation and control of bulk cell-free extracts with the realism of cell-size compartmentalization (in terms of heterogeneity and sustained dynamics). The observed sustained oscillations (Figure 2B) are certainly noteworthy, and the assay does allow for a valuable study of how the period of the oscillator depends on \"cell\" size and on the availability of one of the clock components (cyclin B1). The setup also enables the authors to conjecture that the amplitude and period of the oscillator depend on the energy available to the cell in terms of ATP, a fact that is studied computationally but not experimentally. I would like to raise the following points about this work:\n\n1) The oscillations shown in Figure 1C, D are really interesting, given that they exist even in the presence of nuclear self-assembly and disassembly. I was wondering if the extra compartmentalization provided by the nucleus would have an impact on the oscillations reported in Figure 2. Would the authors be able to obtain self-sustained oscillations for long periods in the presence of a nucleus? This would bring the results closer to real-life situations.\n\n2) Figures 2F and G show that the period and lifetime of the oscillations are rather independent of \"cell\" sizes for large sizes. I think it'd be interesting to relate these results to real cells, by taking into account the range of sizes that real cells exhibit (keeping in mind again that these \"cells\" don't have a nucleus, see my preceding comment).\n\n3) The way the modeling results are being presented makes it difficult to understand what is being done. The title of the caption of Figure 3 refers to a \"stochastic model\", but as far as I understand the results of Figure 3C have been obtained with an ODE model, in the absence of fluctuations, and probably those of Figure 3E too. Figure 3B, on the other hand, has been presumably obtained with a stochastic model (since this seems to be the way in which ATP can be included in the model described in the Materials and methods section), before the stochastic description is mentioned in the text. On the other hand, the time traces in the insets look very clean, seemingly obtained from an ODE model. A similar comment can be made regarding Figure 3D. Can the authors clarify what is being shown in Figure 3?\n\n4) Figure 3C is really hard to follow. I would ask the authors to plot the steady states (at least the stable ones, and preferably all) as symbols, and to represent the trajectories in colors different from those of the corresponding nullclines.\n\nFinally, I have two suggestions that are not essential to support the major conclusions of the paper, but would (in my opinion) enrich it:\n\n5) I'm wondering if the range of droplet sizes that has been studied has been selected on purpose by the authors, or if there is some limitation resulting from the experimental process. I'm asking because it would be interesting, in my opinion, to see what happens with the oscillations as the size of the droplets increases. For what droplet size does the oscillation dampening typical of bulk extracts is recovered in these experiments?\n\n6) It would also be desirable to validate the modeling results of Figure 3 experimentally by controlling experimentally the amount of available ATP and measure the corresponding effect on the oscillation characteristics.\n",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "036dacbe-d183-4250-9a3b-39aa0795e9e4",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C1",
+      "claim": "Cytoplasmic extracts predominantly from Xenopus eggs have made major contributions to the initial discovery and characterization of the central cell-cycle regulators including the protein complex cyclin B1-Cdk1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic extracts predominantly from Xenopus eggs (Murray, 1991) have made major contributions to the initial discovery and characterization of the central cell-cycle regulators including the protein complex cyclin B1-Cdk1 (Masui and Markert, 1971; Murray et al., 1989; Lohka and Maller, 1985; Lohka et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work that discovered and characterized cyclin B1-Cdk1 using Xenopus egg extracts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "8d19d3f5-0f9b-4b0e-b1e3-a51802ddba99",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C2",
+      "claim": "Cytoplasmic extracts predominantly from Xenopus eggs have made major contributions to the initial discovery and characterization of the anaphase-promoting complex or cyclosome (APC/C).",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic extracts predominantly from Xenopus eggs (Murray, 1991) have made major contributions to the initial discovery and characterization of the central cell-cycle regulators including the protein complex cyclin B1-Cdk1 (Masui and Markert, 1971; Murray et al., 1989; Lohka and Maller, 1985; Lohka et al., 1988) and the anaphase-promoting complex or cyclosome (APC/C) (Sudakin et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sudakin et al., 1995, which discovered/characterized APC/C using Xenopus extracts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "58a3b9dd-e57b-469d-883b-9c063674586f",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C3",
+      "claim": "Cell-free extracts have been used to investigate downstream mitotic events such as spindle assembly and chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-free extracts have also been used to investigate downstream mitotic events such as spindle assembly and chromosome segregation (Hannak and Heald, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hannak and Heald, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "7d6e94d4-704a-4f5a-8b17-11aae343be9e",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C4",
+      "claim": "Detailed dissections of the regulatory circuits in Xenopus extracts have revealed architecture of interlinked positive and negative feedbacks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, detailed dissections of the regulatory circuits in these extracts have revealed architecture of interlinked positive and negative feedbacks (Kumagai and Dunphy, 1992; Mueller et al., 1995; Yang and Ferrell, 2013; Chang and Ferrell, 2013; Trunnell et al., 2011; Kim and Ferrell, 2007; Pomerening et al., 2005; Pomerening et al., 2003; Novak and Tyson, 1993; Thron, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies that dissected regulatory circuits in Xenopus extracts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f5342bac-fd73-4147-b4e0-f1fcfa7234c4",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C5",
+      "claim": "Interlinked feedback loops are found in many other biological oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interlinked feedback loops are also found in many other biological oscillators (Rust et al., 2007; Hoffmann et al., 2002; Cross, 2003; Lee et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies of other biological oscillators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "5b2f3991-8562-4894-960a-9e4ba0434549",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C6",
+      "claim": "Interlinked feedback loops have been shown computationally to play an important role in achieving the essential clock functions such as robustness and tunability.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interlinked feedback loops are also found in many other biological oscillators (Rust et al., 2007; Hoffmann et al., 2002; Cross, 2003; Lee et al., 2000) and have been shown computationally to play an important role in achieving the essential clock functions such as robustness and tunability (Tsai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tsai et al., 2008, which performed computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "8f32ff27-d4ab-4a68-ae32-c843e5f77347",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C7",
+      "claim": "Bulk cell-free systems lack the essential single-cell information to understand a class of out-of-steady-state dynamics including cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk cell-free systems, despite having unique advantages of manipulation and characterization of biochemical networks, lack the essential single-cell information to understand a class of out-of-steady-state dynamics including cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about the limitations of bulk systems for studying out-of-steady-state dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "3a0fe1ba-0541-4d1d-8e2d-8587d1b11ca0",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C8",
+      "claim": "Oscillations generated in well-mixed bulk solutions tend to produce quickly damped oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one major limitation for most in vitro reconstitutions up to date is that oscillations are generated in well-mixed bulk solutions, which tend to produce quickly damped oscillations (Pomerening et al., 2005; Nakajima et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pomerening et al., 2005 and Nakajima et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ce1f9374-8adf-4514-9392-c5f01a8d68bf",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C9",
+      "claim": "Bulk reactions lack the similarity to the actual cell dimensions and the ability of mimicking spatial organization achieved by functional compartmentalization in real cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these bulk reactions lack the similarity to the actual cell dimensions and the ability of mimicking spatial organization achieved by functional compartmentalization in real cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about the limitations of bulk reactions compared to cellular systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "5612a3dc-5ffc-4ac4-8531-b70275d97ac8",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C10",
+      "claim": "The authors developed an artificial cell cycle system by encapsulating reaction mixtures containing cycling Xenopus egg cytoplasm in cell-scale micro-emulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these challenges, we developed an artificial cell cycle system by encapsulating reaction mixtures containing cycling Xenopus egg cytoplasm (Murray, 1991) in cell-scale micro-emulsions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental approach developed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "3e7d6246-0fad-43e4-a4de-07c672b03df1",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C11",
+      "claim": "The droplet-based artificial cells are stable for days.",
+      "claim_type": "EXPLICIT",
+      "source": "These droplet-based cells are stable for days and keep oscillating for dozens of cycles, offering large gains in high-throughput and long-term tracking of dynamical activities in individual droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of droplet stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "0c2d37c7-21ea-493b-a819-02b95472b8c2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C12",
+      "claim": "The droplet-based artificial cells keep oscillating for dozens of cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "These droplet-based cells are stable for days and keep oscillating for dozens of cycles, offering large gains in high-throughput and long-term tracking of dynamical activities in individual droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of oscillations in droplets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "de929da8-3eb2-4caf-857f-5c1358462c7a",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C13",
+      "claim": "The authors successfully reconstituted a series of mitotic events including chromosome condensation, nuclear envelope breakdown and destruction of anaphase substrates such as the proteins securin and cyclin B1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, we successfully reconstituted a series of mitotic events including chromosome condensation, nuclear envelope breakdown and destruction of anaphase substrates such as the proteins securin and cyclin B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of mitotic events in their system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "8d8e15a5-9d62-47a7-a853-35b5dcad5082",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C14",
+      "claim": "The oscillation profiles of the system such as period and number of cycles can be reliably regulated by the amount of cyclin B1 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The oscillation profiles of the system such as period and number of cycles can be reliably regulated by the amount of cyclin B1 mRNAs or sizes of droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations showing regulation by cyclin B1 mRNA concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "c982b074-ec92-4440-af1b-30f043cfb1a2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C15",
+      "claim": "The oscillation profiles of the system such as period and number of cycles can be reliably regulated by sizes of droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "The oscillation profiles of the system such as period and number of cycles can be reliably regulated by the amount of cyclin B1 mRNAs or sizes of droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations showing regulation by droplet size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "fe687a1c-22d2-4f48-8110-f1320c6a8170",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C16",
+      "claim": "Energy may be a critical factor for cell cycle behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that energy may be a critical factor for cell cycle behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' findings from their experiments and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "c97eb124-a114-4274-a425-94d3ede966fb",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C17",
+      "claim": "The authors used a simple vortexing technique to compartmentalize reactions of cycling Xenopus egg extracts into microemulsion droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a cell-like in vitro mitotic system, we used a simple vortexing technique (Ho et al., 2017) to compartmentalize reactions of cycling Xenopus egg extracts (Murray, 1991) into microemulsion droplets, with radii ranging from 10 \u00b5m to 300 \u00b5m (Figure 1B, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used by the authors, with a citation to Ho et al., 2017 for the vortexing technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "7bea1b4a-f413-474e-bcdb-949abfe0fcb9",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C18",
+      "claim": "The microemulsion droplets have radii ranging from 10 \u00b5m to 300 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a cell-like in vitro mitotic system, we used a simple vortexing technique (Ho et al., 2017) to compartmentalize reactions of cycling Xenopus egg extracts (Murray, 1991) into microemulsion droplets, with radii ranging from 10 \u00b5m to 300 \u00b5m (Figure 1B, Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' measurements of droplet sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "6ab99c6f-c2c6-4fcd-8eb9-12092bb962c1",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C19",
+      "claim": "The droplet system is capable of reconstructing at least three mitotic processes in parallel that alternate between interphase and mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the system is capable of reconstructing at least three mitotic processes in parallel that alternate between interphase and mitosis (Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 1 and video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ca5b5751-e06f-4af1-9831-93f7675291c3",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C20",
+      "claim": "The autonomous alternation of distinct cell-cycle phases is driven by a self-sustained oscillator, the activity of which was indicated by the periodic degradation of an anaphase substrate of APC/C, securin-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "The autonomous alternation of distinct cell-cycle phases is driven by a self-sustained oscillator, the activity of which was indicated by the periodic degradation of an anaphase substrate of APC/C, securin-mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of securin-mCherry degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "37e68d29-4f26-46c3-8f69-f1f45bc71f66",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C21",
+      "claim": "In interphase, the presence of sperm chromosomal DNA initiated the self-assembly of a nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In interphase, the presence of sperm chromosomal DNA, labeled by Hoechst, initiated the self-assembly of a nucleus, upon which GFP-NLS protein was imported through the nuclear pores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of nucleus assembly in the presence of sperm DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "702d15f7-ee8c-4600-8b4e-ab8634f96e13",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C22",
+      "claim": "GFP-NLS protein was imported through the nuclear pores in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "In interphase, the presence of sperm chromosomal DNA, labeled by Hoechst, initiated the self-assembly of a nucleus, upon which GFP-NLS protein was imported through the nuclear pores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of GFP-NLS localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f0da7268-1026-446a-9ca3-5d14e7c8a2a5",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C23",
+      "claim": "The spatial distributions of Hoechst and GFP-NLS coincided in an interphase nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial distributions of Hoechst and GFP-NLS thus coincided in an interphase nucleus (Figure 1C columns 1, 3, and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "784a5b99-363a-4eb6-a42c-c46381f215fe",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C24",
+      "claim": "As the artificial cell entered mitosis, the chromosome condensed resulting in a tighter distribution of Hoechst.",
+      "claim_type": "EXPLICIT",
+      "source": "As the artificial cell entered mitosis, the chromosome condensed resulting in a tighter distribution of Hoechst, while the nuclear envelope broke down and GFP-NLS quickly dispersed into a uniform distribution in the whole droplet (Figure 1C columns 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "fc8a0e43-51c7-4ca5-840f-8440b6a5655e",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C25",
+      "claim": "As the artificial cell entered mitosis, the nuclear envelope broke down and GFP-NLS quickly dispersed into a uniform distribution in the whole droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "As the artificial cell entered mitosis, the chromosome condensed resulting in a tighter distribution of Hoechst, while the nuclear envelope broke down and GFP-NLS quickly dispersed into a uniform distribution in the whole droplet (Figure 1C columns 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "5a2accd1-c413-4b9f-8819-98b7395d8042",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C26",
+      "claim": "The chromosome condensation and nuclear envelope breakdown (NEB) happened almost at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "The time courses for these processes were analyzed in Figure 1D, indicating that the chromosome condensation and nuclear envelop breakdown (NEB) happened almost at the same time, while securin degradation lagged behind these two processes at each cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' analysis of time courses shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "e98990bb-7864-4094-a1d8-cc984fdb02df",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C27",
+      "claim": "Securin degradation lagged behind chromosome condensation and nuclear envelope breakdown at each cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The time courses for these processes were analyzed in Figure 1D, indicating that the chromosome condensation and nuclear envelop breakdown (NEB) happened almost at the same time, while securin degradation lagged behind these two processes at each cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' analysis of time courses shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "fdf16960-69f1-4852-9595-6ec529b1461e",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C28",
+      "claim": "The droplet system successfully reconstituted a cell-free mitotic oscillator centered on Cdk1 and APC/C that can reliably drive the periodic progression of downstream events including chromosome morphology change and nuclear envelope breakdown and re-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these experiments showed that the droplet system successfully reconstituted a cell-free mitotic oscillator centered on Cdk1 and APC/C that can reliably drive the periodic progression of downstream events including chromosome morphology change and nuclear envelope breakdown and re-assembly, like what occurs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of multiple mitotic processes in droplets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "05658367-ecd6-4e4a-bdcb-3685b5c44f21",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C29",
+      "claim": "The ability to adjust frequency is an important feature shared by many oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to adjust frequency is an important feature shared by many oscillators (Tsai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tsai et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "18113053-1cc4-4356-8800-8e70b223c6e3",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C30",
+      "claim": "The minimal mitotic oscillatory system (cytoplasmic-only, without sperm chromatin) produced highly robust, undamped, self-sustained oscillations up to 32 cycles over a lifetime of 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple, cytoplasmic-only oscillator produced highly robust, undamped, self-sustained oscillations up to 32 cycles over a lifetime of 4 days (Figure 2A,B, Figure 2\u2014video 1), significantly better than many existing synthetic oscillators.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "9bcf307d-4e90-466c-a4af-ab5cfb989012",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C31",
+      "claim": "The cytoplasmic-only oscillator is significantly better than many existing synthetic oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple, cytoplasmic-only oscillator produced highly robust, undamped, self-sustained oscillations up to 32 cycles over a lifetime of 4 days (Figure 2A,B, Figure 2\u2014video 1), significantly better than many existing synthetic oscillators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' comparison of their system to existing synthetic oscillators.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "379c28b3-3a32-4820-9cb5-9592538cdd31",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C32",
+      "claim": "Cyclin B1-YFP and securin-mCherry both are reliable reporters for the cell cycle oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "A droplet supplied with both cyclin B1-YFP and securin-mCherry mRNAs exhibited oscillations with highly correlated signals (Figure 2C, Figure 2\u2014video 2), suggesting that both are reliable reporters for the oscillator activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations of correlated signals shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "5676572e-6af7-4dae-83cc-ab42aaeb1014",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C33",
+      "claim": "With an increased concentration of cyclin B1-YFP mRNAs added to the system, the average period decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "With an increased concentration of cyclin B1-YFP mRNAs added to the system, we observed a decrease in the average period (Figure 2D, Figure 2\u2014source data 1), meaning that a higher cyclin B1 concentration tends to speed up the oscillations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "cfc23e02-720f-4c3e-a20b-d83169f94f26",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C34",
+      "claim": "A higher cyclin B1 concentration tends to speed up the oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "With an increased concentration of cyclin B1-YFP mRNAs added to the system, we observed a decrease in the average period (Figure 2D, Figure 2\u2014source data 1), meaning that a higher cyclin B1 concentration tends to speed up the oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' interpretation of their experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "977b621a-71b9-4fbe-a851-9afc3e7480d7",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C35",
+      "claim": "The average number of cycles was reduced with increased cyclin B1 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average number of cycles (Figure 2E, Figure 2\u2014source data 1) was also reduced with increased cyclin B1 concentrations, resulting in a negative correlation between the lifetime of oscillations and the amount of cyclin B1 mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "b97eb040-4ffe-4f31-a814-c8a85543d543",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C36",
+      "claim": "There is a negative correlation between the lifetime of oscillations and the amount of cyclin B1 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average number of cycles (Figure 2E, Figure 2\u2014source data 1) was also reduced with increased cyclin B1 concentrations, resulting in a negative correlation between the lifetime of oscillations and the amount of cyclin B1 mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of their experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "16c54b32-2c7e-4bbb-95ae-42df830f516d",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C37",
+      "claim": "The extracts will eventually arrest at a mitotic phase in the presence of high concentrations of cyclin B1.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracts will eventually arrest at a mitotic phase in the presence of high concentrations of cyclin B1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "b6baa126-813c-40f4-bfef-7b0f64bef2b6",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C38",
+      "claim": "Smaller droplets led to slower oscillations with a larger variance of the periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2F (Figure 2\u2014source data 2) showed that smaller droplets led to slower oscillations with a larger variance of the periods, consistent with the size effect reported on an in vitro transcriptional oscillator (Weitz et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "9ca47e61-8b50-4748-9f16-93f78f1a6773",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C39",
+      "claim": "The size effect on oscillation period is consistent with the size effect reported on an in vitro transcriptional oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2F (Figure 2\u2014source data 2) showed that smaller droplets led to slower oscillations with a larger variance of the periods, consistent with the size effect reported on an in vitro transcriptional oscillator (Weitz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Weitz et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "261b217d-38c6-4ff5-90ef-ea6973aab4e8",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C40",
+      "claim": "Smaller droplets exhibited a reduced number of oscillations and a smaller variance of the cycle number.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a reduced number of oscillations and a smaller variance of the cycle number in smaller droplets (Figure 2G, Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "04485acd-b17c-484d-8cfe-00c044524cb2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C41",
+      "claim": "The size effects become less dramatic for droplets with larger sizes or with higher concentrations of cyclin B1 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these size effects become less dramatic for droplets with larger sizes or with higher concentrations of cyclin B1 mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "38cb144d-1c81-479e-8ab2-d1a43469b2d3",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C42",
+      "claim": "Securin-mCherry and cyclin B1-YFP both exhibited oscillations of increased amplitude, baseline, and period over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have observed that securin-mCherry and cyclin B1-YFP both exhibited oscillations of increased amplitude, baseline, and period over time (Figure 2C), of which the increasing period over time is evident by analysis in Figure 3\u2014figure supplement 1A and B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' experimental observations shown in Figure 2C and Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "89f4abdd-d1e9-4941-8333-b35b67a47d16",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C43",
+      "claim": "The trends of increasing amplitude, baseline, and period over time cannot be explained by existing cell cycle models.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have observed that securin-mCherry and cyclin B1-YFP both exhibited oscillations of increased amplitude, baseline, and period over time (Figure 2C), of which the increasing period over time is evident by analysis in Figure 3\u2014figure supplement 1A and B. These trends cannot be explained by existing cell cycle models (Yang and Ferrell, 2013; Tsai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' comparison of their observations to existing models cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f70c94c1-085c-45c6-9ac7-5b36bd9afb9d",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C44",
+      "claim": "Cell-free extracts lack yolk as an energy source.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike intact embryos, cell-free extracts lack yolk as an energy source and lack sufficient mitochondria for energy regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the composition of cell-free extracts compared to intact embryos.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "23bbf330-c4d0-4af6-8110-a74ae86a658a",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C45",
+      "claim": "Cell-free extracts lack sufficient mitochondria for energy regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike intact embryos, cell-free extracts lack yolk as an energy source and lack sufficient mitochondria for energy regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the composition of cell-free extracts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ccc497dd-1d68-4df1-ac5a-6a4fda2a35c2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C46",
+      "claim": "Energy is an important regulator for a droplet system with a limited amount of energy source consumed over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulated that energy is an important regulator for a droplet system with a limited amount of energy source consumed over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' hypothesis about the role of energy in their system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "d4d1b5c0-74c0-4462-87fa-160aa00428c1",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C47",
+      "claim": "The energy depletion model is based on a well-established cell-cycle model modified by introducing ATP into all phosphorylation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy depletion model is based on a well-established cell-cycle model (Yang and Ferrell, 2013; Tsai et al., 2014) modified by introducing ATP into all phosphorylation reactions (Figure 3A, Materials and methods 8 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the authors' modeling approach, which is based on prior models with modifications.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "0548bd99-2e1b-44c4-871f-58b2c83f1ae2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C48",
+      "claim": "Decreasing the ATP concentration leads to a higher R value (ratio of Wee1 to Cdc25 activity).",
+      "claim_type": "EXPLICIT",
+      "source": "Relationship between ATP percentage and R value, showing that decreasing the ATP concentration leads to a higher R value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "93b79b00-c370-43f5-b436-168a64ea3517",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C49",
+      "claim": "At a low r (e.g. 0.5), the system stays at a stable steady-state with low cyclin B concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 3C, the phase plot of the two-ODE model shows that at a low r (e.g. 0.5), the system stays at a stable steady-state with low cyclin B concentration and at a high r (e.g. 2.5), the oscillation is arrested at a stable steady-state with high cyclin B concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ece72a39-39d7-464e-9106-e19be07f8064",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C50",
+      "claim": "At a high r (e.g. 2.5), the oscillation is arrested at a stable steady-state with high cyclin B concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 3C, the phase plot of the two-ODE model shows that at a low r (e.g. 0.5), the system stays at a stable steady-state with low cyclin B concentration and at a high r (e.g. 2.5), the oscillation is arrested at a stable steady-state with high cyclin B concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "08145d25-3101-403a-b1e2-41a53a80dc81",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C51",
+      "claim": "At an intermediate value, increasing r can produce oscillations of increased amplitude, baseline and period.",
+      "claim_type": "EXPLICIT",
+      "source": "At an intermediate value, increasing r can produce oscillations of increased amplitude, baseline and period (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1994dd40-4ee9-4b81-88b1-7eac1a63f8ae",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C52",
+      "claim": "If the available ATP concentration decreases over time, the model can readily recapitulate the experimentally observed increment of amplitude, baseline, and period of the cyclin B time course.",
+      "claim_type": "EXPLICIT",
+      "source": "If we assume that the available ATP concentration decreases over time, we can readily recapitulate the experimentally observed increment of amplitude, baseline, and period of the cyclin B time course (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "79400d20-8bd4-4ada-b1f1-4010c43897a9",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C53",
+      "claim": "The energy depletion model can predict the experimental observations that both period and number of cycles decrease with increasing cyclin B concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy depletion model can also predict the experimental observations in Figure 2D and E by showing that both period and number of cycles decrease with increasing cyclin B concentration (Figure 3\u2014figure supplement 1C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "236509f4-d94a-4dea-a385-fb758bbee75e",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C54",
+      "claim": "The changes of synthesis and degradation rates yielded no obvious effects on the amplitude and baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the changes of synthesis and degradation rates yielded no obvious effects on the amplitude and baseline (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' modeling results shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "6b806bdf-52d5-44a2-ab07-bf94039ebf86",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C55",
+      "claim": "The authors have developed a novel artificial cell system that enables highly robust and tunable mitotic oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed here a novel artificial cell system that enables highly robust and tunable mitotic oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the authors' main contribution based on their experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1aaec845-8f37-490e-ac9f-05defabb998c",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C56",
+      "claim": "The system is amenable to high throughput, quantitative manipulation and analysis of both cytoplasmic and nuclear processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The system is amenable to high throughput, quantitative manipulation and analysis of both cytoplasmic and nuclear processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' characterization of their system's capabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "17609e54-8c57-4e2e-94b8-07ed3d17f9bc",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C57",
+      "claim": "Cell cycles share common topologies with many biological oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "Given cell cycles share common topologies with many biological oscillators, the system may be valuable to investigate fundamental principles of oscillator theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the similarity of cell cycle networks to other oscillators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1b6ced68-6f9d-4706-a72c-353583c348fd",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C58",
+      "claim": "The system may be valuable to investigate fundamental principles of oscillator theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Given cell cycles share common topologies with many biological oscillators, the system may be valuable to investigate fundamental principles of oscillator theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the potential applications of the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "b4b162bc-e195-4b73-82c0-fd308e1b7864",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C59",
+      "claim": "The energy depletion model suggests an interesting mechanism to modulate oscillations with a single control parameter r that depends on the energy-tunable balance of two positive feedback loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Our energy depletion model suggested an interesting mechanism to modulate oscillations with a single control parameter r that depends on the energy-tunable balance of two positive feedback loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' modeling results and interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "fee57607-a161-47bd-b508-902fda1343ee",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C60",
+      "claim": "The rapid, synchronous cleavages of an early embryo require a large amount of energy that remains unchanged for the first cleavage stages before rapidly dropping until the mid-blastula stage when cell cycles slow down.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the rapid, synchronous cleavages of an early embryo require a large amount of energy that remains unchanged for the first cleavage stages before rapidly dropping until the mid-blastula stage when cell cycles slow down (Zotin et al., 1967), this energy-dependent control may function as a 'checkpoint' to regulate cell cycles when r becomes large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zotin et al., 1967.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "61357cfe-ea10-43c3-b1ba-2f54a0cf88e6",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C61",
+      "claim": "Energy-dependent control may function as a 'checkpoint' to regulate cell cycles when r becomes large.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the rapid, synchronous cleavages of an early embryo require a large amount of energy that remains unchanged for the first cleavage stages before rapidly dropping until the mid-blastula stage when cell cycles slow down (Zotin et al., 1967), this energy-dependent control may function as a 'checkpoint' to regulate cell cycles when r becomes large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the authors' model and cited observations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "2648ef88-1dff-42fe-86cd-0dbaa89d4385",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C62",
+      "claim": "The cyclin B-Cdk1 complex activates its own activator, phosphatase Cdc25, forming a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The central regulator, cyclin B-Cdk1 complex activates its own activator, phosphatase Cdc25, forming a positive feedback loop, and inhibits its own inhibitor, kinase Wee1, forming a double negative feedback loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of cell cycle regulation shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "88036101-749d-43bf-b067-73e3e4337cf2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C63",
+      "claim": "The cyclin B-Cdk1 complex inhibits its own inhibitor, kinase Wee1, forming a double negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The central regulator, cyclin B-Cdk1 complex activates its own activator, phosphatase Cdc25, forming a positive feedback loop, and inhibits its own inhibitor, kinase Wee1, forming a double negative feedback loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of cell cycle regulation shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "78c0ef4f-94ae-4320-be24-2e6ecda1902b",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C64",
+      "claim": "CyclinB-Cdk1 activates the E3 ubiquitin ligase APC/C, which targets cyclin B for degradation and completes a core negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, cyclinB-Cdk1 activates the E3 ubiquitin ligase APC/C, which targets cyclin B for degradation and completes a core negative feedback loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of cell cycle regulation shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "0032a8e6-0db6-42c2-b5c0-4f5a6d720cc9",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C65",
+      "claim": "Active APC/C promotes the degradation of another substrate securin.",
+      "claim_type": "EXPLICIT",
+      "source": "Active APC/C also promotes the degradation of another substrate securin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of APC/C substrates shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1504ec88-b045-4ba5-8976-e98aa05c9c82",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C66",
+      "claim": "Once cyclinB1-Cdk1 complex is activated, the circuit drives a set of mitotic events including chromosome condensation and nuclear envelope breakdown (NEB).",
+      "claim_type": "EXPLICIT",
+      "source": "Once cyclinB1-Cdk1 complex is activated, the circuit drives a set of mitotic events including chromosome condensation and nuclear envelope breakdown (NEB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge of mitotic events shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "db4c6c16-af7e-41ae-afdb-50eb62f8cb3d",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C67",
+      "claim": "Cycling Xenopus extracts are supplemented with various combinations of recombinant proteins, mRNAs, and de-membraned sperm DNAs, which are encapsulated in 2% Perfluoropolyether-poly (ethylene glycol) (PFPE-PEG) oil microemulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycling Xenopus extracts are supplemented with various combinations of recombinant proteins, mRNAs, and de-membraned sperm DNAs, which are encapsulated in 2% Perfluoropolyether-poly (ethylene glycol) (PFPE-PEG) oil microemulsions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental procedure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "54361948-e7cd-4a82-8acf-73505a7445a2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C68",
+      "claim": "The cyclic progression of the cell cycle clock and its downstream mitotic processes are simultaneously tracked by multiple fluorescence reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The cyclic progression of the cell cycle clock and its downstream mitotic processes are simultaneously tracked by multiple fluorescence reporters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental approach shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "6c48a752-f9ad-44a4-af81-09bd87a95491",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C69",
+      "claim": "The clock regulator APC/C activity is reported by its substrate securin-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "The clock regulator APC/C activity is reported by its substrate securin-mCherry, chromosomal morphology changes by the Hoechst stains, and NEB by GFP-NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental reporters used, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "8c80428b-2674-4f10-9f30-285fcb0050d5",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C70",
+      "claim": "Chromosomal morphology changes are reported by the Hoechst stains.",
+      "claim_type": "EXPLICIT",
+      "source": "The clock regulator APC/C activity is reported by its substrate securin-mCherry, chromosomal morphology changes by the Hoechst stains, and NEB by GFP-NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental reporters used, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f54abc96-1606-41fa-a9a9-754be37a9dbd",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C71",
+      "claim": "Nuclear envelope breakdown is reported by GFP-NLS.",
+      "claim_type": "EXPLICIT",
+      "source": "The clock regulator APC/C activity is reported by its substrate securin-mCherry, chromosomal morphology changes by the Hoechst stains, and NEB by GFP-NLS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental reporters used, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "a2956db0-7256-4b51-bce5-09cde61319ad",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C72",
+      "claim": "Nuclear envelopes are detectable on bright field images, matching the localization of GFP-NLS indicated nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear envelopes (red arrows) are also detectable on bright field images, matching the localization of GFP-NLS indicated nuclei.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' observations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "974b6a69-74ff-4531-809f-7015809ec9ec",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C73",
+      "claim": "Chromosome condensation happens almost at the same time as the nuclear envelope breaks down.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome condensation happens almost at the same time as the nuclear envelope breaks down (black dashed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ae90e71e-b1a9-459f-b48c-f0e05f6a01fa",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C74",
+      "claim": "Degradation of the APC/C substrate lags behind NEB consistently at each cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The red dashed line represents the intensity of securin-mCherry over time, suggesting that degradation of the APC/C substrate lags behind NEB consistently at each cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the authors' analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "dd31430d-b189-4617-b32c-8e9253015e0d",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C75",
+      "claim": "Extracts with cyclin B mRNA concentrations above 10 ng/\u00b5L did not exhibit sustained oscillations before arresting at a mitotic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracts with cyclin B mRNA concentrations above 10 ng/\u00b5L did not exhibit sustained oscillations before arresting at a mitotic phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "eb0159b6-22cb-4a8c-86e6-47de95626131",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C76",
+      "claim": "At the scale of a cell, the dynamics of biochemical reactions may become stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "At the scale of a cell, the dynamics of biochemical reactions may become stochastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about stochastic effects at small scales.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f21943fb-6b83-47d5-929e-08f4771b6730",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C77",
+      "claim": "Studying a stochastic system that is out of steady-state can be challenging in living organism due to low throughput and complications from cell growth, divisions and other complex cellular environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Although stochastic phenomenon has been studied extensively in genetic expressions, studying a stochastic system that is out of steady-state can be challenging in living organism due to low throughput and complications from cell growth, divisions and other complex cellular environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about the challenges of studying stochastic out-of-steady-state systems in vivo.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ea12ed93-a626-4556-8428-1c6c18e9768f",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C78",
+      "claim": "The limitations of studying stochastic out-of-steady-state systems can be overcome by reconstitution of in vitro oscillators inside cell-scale droplets, which are in absence of cell growth and divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "These limitations can be overcome by reconstitution of in vitro oscillators inside cell-scale droplets, which are in absence of cell growth and divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about the advantages of their droplet system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "a16c0669-ee0a-4866-bbaf-6026dedf576d",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C79",
+      "claim": "Parallel tracking of droplets enables high-throughput data generation for statistical analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel tracking of droplets also enables high-throughput data generation for statistical analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' characterization of their experimental approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "79a1e36b-f2e2-478a-abde-dd95c6310a81",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C80",
+      "claim": "In vitro compartmentalization of molecules, especially rate-limiting molecules such as cyclin B1 mRNAs, into cell-sized droplets may have a major effect on the reaction kinetics of cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro compartmentalization of molecules, especially rate-limiting molecules such as cyclin B1 mRNAs, into cell-sized droplets may have a major effect on the reaction kinetics of cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about the effects of compartmentalization.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "d524485e-275f-4a00-81e9-829bde6fcc1a",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C81",
+      "claim": "The smaller the size of a droplet, the smaller the copy number of molecules encapsulated inside the droplet and the larger the inherent stochasticity of biochemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The smaller the size of a droplet, the smaller the copy number of molecules encapsulated inside the droplet and the larger the inherent stochasticity of biochemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about stochastic effects in small volumes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "83702402-ed72-4192-b779-4842d8e2eea8",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C82",
+      "claim": "The partition errors of molecules resulted from compartmentalization may further contribute to the variations of droplet behaviors in a size-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the partition errors of these molecule resulted from compartmentalization may further contribute to the variations of droplet behaviors in a size-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' reasoning about sources of variation in droplet behavior.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "4ca0b45a-d157-4c2f-845c-064d1efcb22e",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C83",
+      "claim": "The balance between Wee1 and Cdc25 activity was suggested to be crucial for the transition of cell cycle status during early embryo development.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cell cycle network, the activation of Cdk1 is co-regulated by a double positive feedback through a phosphatase Cdc25 and a double negative feedback through a kinase Wee1. The balance between Wee1 and Cdc25 activity was suggested to be crucial for the transition of cell cycle status during early embryo development (Tsai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tsai et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "faada98f-77ed-426f-bd17-6f846c487db2",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C84",
+      "claim": "ATP-dependent phosphorylation of Cdc25 and Wee1 can decrease R by activating Cdc25 and inhibiting Wee1 simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that ATP-dependent phosphorylation of Cdc25 and Wee1 can decrease R by activating Cdc25 and inhibiting Wee1 simultaneously, resulting in a high dependence of R on the ATP concentration (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "541044ca-80f5-4f2d-b9be-85037c449970",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C85",
+      "claim": "ATP-dependent phosphorylation of Cdc25 and Wee1 results in a high dependence of R on the ATP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that ATP-dependent phosphorylation of Cdc25 and Wee1 can decrease R by activating Cdc25 and inhibiting Wee1 simultaneously, resulting in a high dependence of R on the ATP concentration (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "20a47de5-b96c-4a13-8aa7-1cc31637ced3",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C86",
+      "claim": "Cycling Xenopus extracts were prepared as described by Murray, 1991, except that eggs were activated with calcium ionophore A23187 (200 ng/\u00b5L) rather than electric shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycling Xenopus extracts were prepared as described (Murray, 1991), except that eggs were activated with calcium ionophore A23187 (200 ng/\u00b5L) rather than electric shock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used by the authors, with a citation to Murray, 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "33deadd8-6172-4095-adcb-49d279e87719",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C87",
+      "claim": "Freshly prepared extracts were kept on ice while applied with de-membranated sperm chromatin (to approximately 250 per \u00b5l of extract), GFP-NLS (10 \u00b5M) and recombinant mRNAs of securin-mCherry (10 ng/\u00b5L) and cyclin B1-YFP (ranging from 0 to 10 ng/\u00b5L).",
+      "claim_type": "EXPLICIT",
+      "source": "Freshly prepared extracts were kept on ice while applied with de-membranated sperm chromatin (to approximately 250 per \u00b5l of extract), GFP-NLS (10 \u00b5M) and recombinant mRNAs of securin-mCherry (10 ng/\u00b5L) and cyclin B1-YFP (ranging from 0 to 10 ng/\u00b5L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "5412385b-1124-4c50-bb3e-fc1a77bba5a3",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C88",
+      "claim": "The extracts were mixed with surfactant oil 2% PFPE-PEG to generate droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracts were mixed with surfactant oil 2% PFPE-PEG to generate droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "532ab138-ce8a-40f2-a587-3431a7a7edcc",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C89",
+      "claim": "GFP-NLS protein was expressed in BL21 (DE3)-T-1 competent cells that were induced by 0.1 mM IPTG overnight.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-NLS protein was expressed in BL21 (DE3)-T-1 competent cells (Sigma Aldrich, B2935) that were induced by 0.1 mM IPTG (Isopropyl \u03b2-D-1-thiogalactopyranoside, Sigma Aldrich, I6758) overnight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "6f1f3c0e-27e7-4ec4-925c-054039defc16",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C90",
+      "claim": "Securin-mCherry and cyclin B1-YFP plasmids were constructed using Gibson assembly method.",
+      "claim_type": "EXPLICIT",
+      "source": "Securin-mCherry and cyclin B1-YFP plasmids were constructed using Gibson assembly method (Gibson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used by the authors, with a citation to Gibson et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "773439ce-a824-44ff-a029-c9baafcd9055",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C91",
+      "claim": "All mRNAs were transcribed in vitro and purified using mMESSAGE mMACHINE SP6 Transcription Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "All mRNAs were transcribed in vitro and purified using mMESSAGE mMACHINE SP6 Transcription Kit (Ambion, AM1340).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "019690bf-9997-4742-b5e9-f50a6801e084",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C92",
+      "claim": "By adjusting the vibration speed and ratio between aqueous and oil phase appropriately, droplets with various sizes, ranging from 10 \u00b5m to 300 \u00b5m, can be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "By adjusting the vibration speed and ratio between aqueous and oil phase appropriately, we can obtain droplets with various sizes, ranging from 10 \u00b5m to 300 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used by the authors to control droplet size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1de201f5-a840-40ec-a14c-ac7301198273",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C93",
+      "claim": "Time-lapse images were recorded in bright-field and multiple fluorescence channels at a time interval of 6\u20139 min for at least 12 hr up to four days.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse images were recorded in bright-field and multiple fluorescence channels at a time interval of 6\u20139 min for at least 12 hr up to four days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental imaging procedure used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "e802ea2b-9ca7-4d9b-ba30-6dd86e7f1efa",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C94",
+      "claim": "Imaris 8.1.2 was used for image processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Imaris 8.1.2 (Bitplane Inc.) for image processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the software used by the authors for image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "0d78838a-10e3-4065-8588-8304bf960fd0",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C95",
+      "claim": "Level-set method on bright-field images was used for droplet segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Level-set method on bright-field images was used for droplet segmentation, and autoregressive motion algorithm was used for tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the image analysis method used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "c548eb8a-b290-4942-84de-210f85176eb8",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C96",
+      "claim": "Autoregressive motion algorithm was used for tracking droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Level-set method on bright-field images was used for droplet segmentation, and autoregressive motion algorithm was used for tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the image analysis method used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "fc3c3b51-d3a1-4044-a4bb-1f40778013de",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C97",
+      "claim": "Tracks that had less than two oscillations were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracks that had less than two oscillations were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data filtering criteria used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "ff37ace8-23a6-4a2a-b90a-09098546e71f",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C98",
+      "claim": "The volume of a droplet was calculated using the formula proposed by Good et al., 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume of a droplet was calculated using the formula proposed by a previous study (Good et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the calculation method used by the authors, with a citation to Good et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "38f2a885-3830-4718-aaa8-5c749c477c69",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C99",
+      "claim": "Fluorescence intensity in droplets were normalized by average intensity of the background to compensate for intensity drift over time.",
+      "claim_type": "EXPLICIT",
+      "source": "To compensate for intensity drift over time, fluorescence intensity in droplets were normalized by average intensity of the background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data normalization method used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "d56f5491-af9c-48ec-99f1-916dc2961a16",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C100",
+      "claim": "The concentration of Cdk1 is high compared to the peak concentration of cyclin B1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we considered the concentration of Cdk1 to be high compared to the peak concentration of cyclin B1 (Hochegger et al., 2001; Kobayashi et al., 1991) and the affinity of these cyclins for Cdk1 to be high (Kobayashi et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hochegger et al., 2001 and Kobayashi et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "7d61fde6-e02a-4a3d-a37d-94bca1cda1fc",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C101",
+      "claim": "The affinity of cyclins for Cdk1 is high.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we considered the concentration of Cdk1 to be high compared to the peak concentration of cyclin B1 (Hochegger et al., 2001; Kobayashi et al., 1991) and the affinity of these cyclins for Cdk1 to be high (Kobayashi et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kobayashi et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "23b3a6c9-5bb5-456a-8291-9ac9d7f9b6ae",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C102",
+      "claim": "There is no unbound form of cyclin B1, and the newly synthesized cyclin B1 is converted to cyclin-Cdk1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is no unbound form of cyclin B1, and the newly synthesized cyclin B1 is converted to cyclin-Cdk1 complexes, which are rapidly phosphorylated by the Cdk-activating kinase CAK to produce active Cdk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' modeling assumptions derived from cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1118f528-73e5-4a2b-9c32-008a487b2443",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C103",
+      "claim": "Cyclin-Cdk1 complexes are rapidly phosphorylated by the Cdk-activating kinase CAK to produce active Cdk1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is no unbound form of cyclin B1, and the newly synthesized cyclin B1 is converted to cyclin-Cdk1 complexes, which are rapidly phosphorylated by the Cdk-activating kinase CAK to produce active Cdk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of Cdk1 activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "009735ba-952e-461d-858a-82bede1cf70b",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C105",
+      "claim": "The parameter r represents the ratio of the double negative and double positive feedback strengths.",
+      "claim_type": "EXPLICIT",
+      "source": "We use a free parameter r, representing the ratio of the double negative and double positive feedback strengths, to permute the balance between the two feedbacks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the modeling parameter defined by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "e0d0c514-843e-46fe-9099-643d9bba7109",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C106",
+      "claim": "The balance between the double negative and double positive feedbacks is suggested to be critical for oscillatory properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This balance is suggested to be critical for oscillatory properties (Tsai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tsai et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "f2ecc0cc-9e2c-4431-9095-df3ef6dfdc22",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C107",
+      "claim": "In droplets that have small volumes and contain small numbers of molecules, the stochastic nature of the underlying biochemical reactions must be considered.",
+      "claim_type": "EXPLICIT",
+      "source": "In droplets that have small volumes and contain small numbers of molecules, the stochastic nature of the underlying biochemical reactions must be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about stochastic effects in small volumes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "3a17756d-7996-437a-96a0-e4b795fcfa5a",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C108",
+      "claim": "The authors adapted a stochastic two-ODE model and converted it to the corresponding chemical master equations and carried out numerical simulations using the Gillespie algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "We adapted a stochastic two-ODE model (Yang and Ferrell, 2013), and converted our two-ODE model to the corresponding chemical master equations (Kampen, 1992) and carried out numerical simulations using the Gillespie algorithm (Gillespie, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the modeling approach used by the authors, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "961993eb-d0b0-4729-b84a-dea75fb60051",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "claim_id": "C109",
+      "claim": "The authors assumed Wee1 is in equilibrium with the activity of Cdk1 due to fast reactions between Cdk1 and Wee1.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we assumed Wee1 is in equilibrium with the activity of Cdk1 due to fast reactions between Cdk1 and Wee1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a modeling assumption made by the authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c14046d1-e09e-4570-a025-2ee278db2136",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a droplet-based artificial cell system by encapsulating cycling Xenopus egg extracts in cell-scale microemulsions (10-300 \u00b5m radii). The system produces highly robust, undamped oscillations for up to 32 cycles over 4 days and is amenable to high-throughput analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12, C17-C18, C30, C55-C56 collectively demonstrate successful development of the droplet system with documented stability, longevity, and analytical capabilities. The experimental data in Figures 1-2 provide strong visual and quantitative evidence for these claims, including droplet size ranges, oscillation duration, and cycle numbers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "7cb86cca-77b3-447a-ae0a-0f13713cc093",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The droplet system successfully reconstitutes multiple mitotic processes including chromosome condensation, nuclear envelope breakdown (NEB), nuclear reassembly, and periodic degradation of APC/C substrates (securin and cyclin B). These processes are driven by a self-sustained oscillator centered on Cdk1 and APC/C, with chromosome condensation and NEB occurring nearly simultaneously, while securin degradation lags behind.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C19-C28, C62-C74 are well-supported by experimental observations shown in Figure 1C-D and accompanying videos. The multi-channel fluorescence imaging provides direct visual evidence of the temporal coordination of mitotic events, with quantitative time-course analysis confirming the relative timing of different processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The oscillation period and number of cycles can be reliably tuned by varying cyclin B1 mRNA concentration. Higher cyclin B1 concentrations decrease the average period (speeding up oscillations) but also reduce the number of cycles, resulting in a negative correlation between oscillation lifetime and cyclin B1 mRNA amount. At very high concentrations (>10 ng/\u00b5L), the system arrests in mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C32-C37, C75 are supported by experimental data in Figure 2C-E showing systematic variation of oscillation properties with cyclin B1 mRNA concentration. The correlation between reporters (C32) validates the measurements, and the dose-dependent effects are clearly demonstrated with appropriate statistical analysis (median and MAD reported).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "06db7963-be22-49fb-9098-b56855a5fc9a",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Droplet size affects oscillation behavior in a size-dependent manner. Smaller droplets exhibit slower oscillations with larger variance in periods, reduced number of oscillations, and smaller variance in cycle number. These size effects become less dramatic for larger droplets or higher cyclin B1 mRNA concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C38-C41 are supported by experimental data in Figure 2F-G showing clear size-dependent trends. The consistency with prior work on transcriptional oscillators (C39, Weitz et al., 2014) provides additional validation. However, the mechanistic basis for these effects (stochasticity vs. partitioning errors mentioned in C80-C82) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "de9fc376-613f-478c-9b2e-9a83884e1216",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors developed an energy depletion model that explains the experimentally observed increases in amplitude, baseline, and period over time. The model incorporates ATP into phosphorylation reactions and shows that decreasing ATP concentration increases the ratio R (Wee1/Cdc25 activity), which modulates oscillation properties. The model successfully recapitulates experimental observations including the effects of cyclin B concentration on period and cycle number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C54, C59, C83-C85 are supported by modeling results in Figure 3 that qualitatively match experimental observations. The model is based on established prior work (Yang and Ferrell, 2013; Tsai et al., 2014) with reasonable modifications. However, the model makes assumptions (e.g., ATP depletion rate, equilibrium assumptions in C109) that are not directly validated experimentally. The claim that synthesis/degradation rate changes have no effect (C54) is model-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "d43eb62f-afe8-4b92-a5f3-0ee98ba6545f",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Energy may be a critical factor for cell cycle behaviors, potentially functioning as a checkpoint to regulate cell cycles. This is supported by the observation that energy requirements change during early embryo development, with energy levels dropping at the mid-blastula stage when cell cycles slow down.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C16, C46, C60-C61 propose energy as a critical regulator, but this remains speculative. While the model (C46-C59) shows energy depletion can explain observations, direct experimental validation of ATP levels in droplets is not provided. The connection to embryonic development (C60-C61) relies on a single citation (Zotin et al., 1967) and remains hypothetical. Further experiments measuring ATP levels and manipulating energy availability would be needed to support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "c39b2935-12ce-4165-81bc-307ab5fb5f28",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The droplet system provides advantages for studying stochastic dynamics at the cellular scale, overcoming limitations of in vivo studies such as low throughput and complications from cell growth and division. Smaller droplets contain fewer molecules and exhibit greater stochasticity, with compartmentalization potentially affecting reaction kinetics through both reduced molecule numbers and partition errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C82, C107 present reasonable arguments about stochastic effects and system advantages, but the actual contribution of stochasticity versus other factors (e.g., surface effects, diffusion limitations) to the observed size-dependent behaviors is not rigorously demonstrated. While the system enables high-throughput tracking (C79), explicit stochastic analysis or comparison with deterministic predictions is limited. The speculation about partition errors (C82) lacks experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "37d6db68-a874-4462-8690-72fa192cddad",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript provides background on Xenopus egg extracts as a system for studying cell cycle regulation, noting their historical contributions to discovering key regulators and revealing feedback loop architecture. The authors identify limitations of bulk systems and position their work as addressing these limitations while potentially enabling investigation of fundamental oscillator principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9, C29, C57-C58 accurately summarize prior work with appropriate citations and correctly identify limitations of bulk systems. These are primarily literature review claims that provide context. The speculation about future applications (C58) is reasonable but not tested in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript describes detailed experimental methods including extract preparation, protein expression, plasmid construction, droplet generation, imaging protocols, and image analysis procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C99 provide methodological details that appear internally consistent and reference appropriate prior work. The methods are sufficiently detailed for the experiments described, though some details (e.g., exact vortexing parameters, reproducibility across batches) could be more explicit. The use of established methods (Gibson assembly, Gillespie algorithm) with proper citations supports these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The modeling approach makes several assumptions including high Cdk1 concentration relative to cyclin B1, high affinity of cyclins for Cdk1, rapid CAK phosphorylation, and equilibrium of Wee1 with Cdk1 activity. The model uses a parameter r to represent the balance between feedback loops, which is suggested to be critical for oscillatory properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103, C105-C106, C108-C109 describe modeling assumptions that are based on cited literature (Hochegger et al., 2001; Kobayashi et al., 1991, 1994; Tsai et al., 2014) and established modeling approaches (Yang and Ferrell, 2013; Gillespie, 1977). These assumptions are reasonable for the system being modeled, though some (e.g., equilibrium assumption in C109) may be simplifications that could affect quantitative predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    },
+    {
+      "id": "1c2f4a47-bad2-4ff3-a020-24251bb0e9ff",
+      "content_id": "ddffa84e-7155-4fdb-bc47-3a50e905ab63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cytoplasmic-only oscillator is claimed to be significantly better than many existing synthetic oscillators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C31 makes a comparative statement without providing specific quantitative comparisons to other synthetic oscillators. While the system does show impressive performance (32 cycles over 4 days), the claim of being 'significantly better' requires explicit comparison with specific systems, statistical analysis, and clear metrics. The statement is too vague to be properly evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T00:08:45.425570Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5612a3dc-5ffc-4ac4-8531-b70275d97ac8",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "3e7d6246-0fad-43e4-a4de-07c672b03df1",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "0c2d37c7-21ea-493b-a819-02b95472b8c2",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "c97eb124-a114-4274-a425-94d3ede966fb",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "7bea1b4a-f413-474e-bcdb-949abfe0fcb9",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "18113053-1cc4-4356-8800-8e70b223c6e3",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "6b806bdf-52d5-44a2-ab07-bf94039ebf86",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "1aaec845-8f37-490e-ac9f-05defabb998c",
+      "result_id": "c14046d1-e09e-4570-a025-2ee278db2136"
+    },
+    {
+      "claim_id": "de929da8-3eb2-4caf-857f-5c1358462c7a",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "6ab99c6f-c2c6-4fcd-8eb9-12092bb962c1",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "ca5b5751-e06f-4af1-9831-93f7675291c3",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "37e68d29-4f26-46c3-8f69-f1f45bc71f66",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "702d15f7-ee8c-4600-8b4e-ab8634f96e13",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "f0da7268-1026-446a-9ca3-5d14e7c8a2a5",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "784a5b99-363a-4eb6-a42c-c46381f215fe",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "fc8a0e43-51c7-4ca5-840f-8440b6a5655e",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "5a2accd1-c413-4b9f-8819-98b7395d8042",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "e98990bb-7864-4094-a1d8-cc984fdb02df",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "fdf16960-69f1-4852-9595-6ec529b1461e",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "2648ef88-1dff-42fe-86cd-0dbaa89d4385",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "88036101-749d-43bf-b067-73e3e4337cf2",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "78c0ef4f-94ae-4320-be24-2e6ecda1902b",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "0032a8e6-0db6-42c2-b5c0-4f5a6d720cc9",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "1504ec88-b045-4ba5-8976-e98aa05c9c82",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "db4c6c16-af7e-41ae-afdb-50eb62f8cb3d",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "54361948-e7cd-4a82-8acf-73505a7445a2",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "6c48a752-f9ad-44a4-af81-09bd87a95491",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "8c80428b-2674-4f10-9f30-285fcb0050d5",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "f54abc96-1606-41fa-a9a9-754be37a9dbd",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "a2956db0-7256-4b51-bce5-09cde61319ad",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "974b6a69-74ff-4531-809f-7015809ec9ec",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "ae90e71e-b1a9-459f-b48c-f0e05f6a01fa",
+      "result_id": "7cb86cca-77b3-447a-ae0a-0f13713cc093"
+    },
+    {
+      "claim_id": "8d8e15a5-9d62-47a7-a853-35b5dcad5082",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "379c28b3-3a32-4820-9cb5-9592538cdd31",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "5676572e-6af7-4dae-83cc-ab42aaeb1014",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "cfc23e02-720f-4c3e-a20b-d83169f94f26",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "977b621a-71b9-4fbe-a851-9afc3e7480d7",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "b97eb040-4ffe-4f31-a814-c8a85543d543",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "16c54b32-2c7e-4bbb-95ae-42df830f516d",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "dd31430d-b189-4617-b32c-8e9253015e0d",
+      "result_id": "932eeda7-e2bd-4aa5-9251-3c2987fed64f"
+    },
+    {
+      "claim_id": "c982b074-ec92-4440-af1b-30f043cfb1a2",
+      "result_id": "06db7963-be22-49fb-9098-b56855a5fc9a"
+    },
+    {
+      "claim_id": "b6baa126-813c-40f4-bfef-7b0f64bef2b6",
+      "result_id": "06db7963-be22-49fb-9098-b56855a5fc9a"
+    },
+    {
+      "claim_id": "9ca47e61-8b50-4748-9f16-93f78f1a6773",
+      "result_id": "06db7963-be22-49fb-9098-b56855a5fc9a"
+    },
+    {
+      "claim_id": "261b217d-38c6-4ff5-90ef-ea6973aab4e8",
+      "result_id": "06db7963-be22-49fb-9098-b56855a5fc9a"
+    },
+    {
+      "claim_id": "04485acd-b17c-484d-8cfe-00c044524cb2",
+      "result_id": "06db7963-be22-49fb-9098-b56855a5fc9a"
+    },
+    {
+      "claim_id": "38cb144d-1c81-479e-8ab2-d1a43469b2d3",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "89f4abdd-d1e9-4941-8333-b35b67a47d16",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "f70c94c1-085c-45c6-9ac7-5b36bd9afb9d",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "23bbf330-c4d0-4af6-8110-a74ae86a658a",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "ccc497dd-1d68-4df1-ac5a-6a4fda2a35c2",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "d4d1b5c0-74c0-4462-87fa-160aa00428c1",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "0548bd99-2e1b-44c4-871f-58b2c83f1ae2",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "93b79b00-c370-43f5-b436-168a64ea3517",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "ece72a39-39d7-464e-9106-e19be07f8064",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "08145d25-3101-403a-b1e2-41a53a80dc81",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "1994dd40-4ee9-4b81-88b1-7eac1a63f8ae",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "79400d20-8bd4-4ada-b1f1-4010c43897a9",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "236509f4-d94a-4dea-a385-fb758bbee75e",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "b4b162bc-e195-4b73-82c0-fd308e1b7864",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "4ca0b45a-d157-4c2f-845c-064d1efcb22e",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "faada98f-77ed-426f-bd17-6f846c487db2",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "541044ca-80f5-4f2d-b9be-85037c449970",
+      "result_id": "de9fc376-613f-478c-9b2e-9a83884e1216"
+    },
+    {
+      "claim_id": "fe687a1c-22d2-4f48-8110-f1320c6a8170",
+      "result_id": "d43eb62f-afe8-4b92-a5f3-0ee98ba6545f"
+    },
+    {
+      "claim_id": "ccc497dd-1d68-4df1-ac5a-6a4fda2a35c2",
+      "result_id": "d43eb62f-afe8-4b92-a5f3-0ee98ba6545f"
+    },
+    {
+      "claim_id": "fee57607-a161-47bd-b508-902fda1343ee",
+      "result_id": "d43eb62f-afe8-4b92-a5f3-0ee98ba6545f"
+    },
+    {
+      "claim_id": "61357cfe-ea10-43c3-b1ba-2f54a0cf88e6",
+      "result_id": "d43eb62f-afe8-4b92-a5f3-0ee98ba6545f"
+    },
+    {
+      "claim_id": "eb0159b6-22cb-4a8c-86e6-47de95626131",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "f21943fb-6b83-47d5-929e-08f4771b6730",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "ea12ed93-a626-4556-8428-1c6c18e9768f",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "a16c0669-ee0a-4866-bbaf-6026dedf576d",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "79a1e36b-f2e2-478a-abde-dd95c6310a81",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "d524485e-275f-4a00-81e9-829bde6fcc1a",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "83702402-ed72-4192-b779-4842d8e2eea8",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "f2ecc0cc-9e2c-4431-9095-df3ef6dfdc22",
+      "result_id": "c39b2935-12ce-4165-81bc-307ab5fb5f28"
+    },
+    {
+      "claim_id": "036dacbe-d183-4250-9a3b-39aa0795e9e4",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "8d19d3f5-0f9b-4b0e-b1e3-a51802ddba99",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "58a3b9dd-e57b-469d-883b-9c063674586f",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "7d6e94d4-704a-4f5a-8b17-11aae343be9e",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "f5342bac-fd73-4147-b4e0-f1fcfa7234c4",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "5b2f3991-8562-4894-960a-9e4ba0434549",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "8f32ff27-d4ab-4a68-ae32-c843e5f77347",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "3a0fe1ba-0541-4d1d-8e2d-8587d1b11ca0",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "ce1f9374-8adf-4514-9392-c5f01a8d68bf",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "05658367-ecd6-4e4a-bdcb-3685b5c44f21",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "17609e54-8c57-4e2e-94b8-07ed3d17f9bc",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "1b6ced68-6f9d-4706-a72c-353583c348fd",
+      "result_id": "37d6db68-a874-4462-8690-72fa192cddad"
+    },
+    {
+      "claim_id": "20a47de5-b96c-4a13-8aa7-1cc31637ced3",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "33deadd8-6172-4095-adcb-49d279e87719",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "5412385b-1124-4c50-bb3e-fc1a77bba5a3",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "532ab138-ce8a-40f2-a587-3431a7a7edcc",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "6f1f3c0e-27e7-4ec4-925c-054039defc16",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "773439ce-a824-44ff-a029-c9baafcd9055",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "019690bf-9997-4742-b5e9-f50a6801e084",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "1de201f5-a840-40ec-a14c-ac7301198273",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "e802ea2b-9ca7-4d9b-ba30-6dd86e7f1efa",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "0d78838a-10e3-4065-8588-8304bf960fd0",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "c548eb8a-b290-4942-84de-210f85176eb8",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "fc3c3b51-d3a1-4044-a4bb-1f40778013de",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "ff37ace8-23a6-4a2a-b90a-09098546e71f",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "38f2a885-3830-4718-aaa8-5c749c477c69",
+      "result_id": "3b58bd32-465e-4956-bcd3-da6425e3bcd1"
+    },
+    {
+      "claim_id": "d56f5491-af9c-48ec-99f1-916dc2961a16",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "7d61fde6-e02a-4a3d-a37d-94bca1cda1fc",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "23b3a6c9-5bb5-456a-8291-9ac9d7f9b6ae",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "1118f528-73e5-4a2b-9c32-008a487b2443",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "009735ba-952e-461d-858a-82bede1cf70b",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "e0d0c514-843e-46fe-9099-643d9bba7109",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "3a17756d-7996-437a-96a0-e4b795fcfa5a",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "961993eb-d0b0-4729-b84a-dea75fb60051",
+      "result_id": "85f3f02c-1ab9-4e1c-bae0-d2370ea4d243"
+    },
+    {
+      "claim_id": "9bcf307d-4e90-466c-a4af-ab5cfb989012",
+      "result_id": "1c2f4a47-bad2-4ff3-a020-24251bb0e9ff"
+    }
+  ],
+  "comparisons": []
+}

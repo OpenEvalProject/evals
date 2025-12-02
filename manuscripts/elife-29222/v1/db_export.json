@@ -1,0 +1,1798 @@
+{
+  "submission": {
+    "id": "2ec12537-bada-41d1-8e09-e86124ff6e42",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T20:50:25.244530Z",
+    "updated_at": "2025-12-01T20:50:25.244530Z"
+  },
+  "content": [
+    {
+      "id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "submission_id": "2ec12537-bada-41d1-8e09-e86124ff6e42",
+      "content_type": "manuscript",
+      "content_text": "# Magnetic eye tracking in mice\n\n## Authors\n\n- Hannah L Payne<sup>1</sup> ([ORCID: 0000-0003-4625-5706](https://orcid.org/0000-0003-4625-5706))\n- Jennifer L Raymond<sup>1</sup> ([ORCID: 0000-0002-8145-747X](https://orcid.org/0000-0002-8145-747X)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEye movements provide insights about a wide range of brain functions, from sensorimotor integration to cognition; hence, the measurement of eye movements is an important tool in neuroscience research. We describe a method, based on magnetic sensing, for measuring eye movements in head-fixed and freely moving mice. A small magnet was surgically implanted on the eye, and changes in the magnet angle as the eye rotated were detected by a magnetic field sensor. Systematic testing demonstrated high resolution measurements of eye position of <0.1\u00b0. Magnetic eye tracking offers several advantages over the well-established eye coil and video-oculography methods. Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice. Overall, magnetic eye tracking provides a lightweight, inexpensive, easily implemented, and high-resolution method suitable for a wide range of applications.\n\n## Introduction\n\nMany behaviors, from navigation and predation to avoidance of danger and pursuit of mates, are guided by vision (Chapillon, 1999; Coen and Murthy, 2016; Mather and Baker, 1980; Olberg et al., 2000; Yilmaz and Meister, 2013). Vision is actively controlled by eye movements, which localize and stabilize images on the retina. Therefore, eye movements are often measured in studies of visually guided behaviors, both for documentation and control of the visual inputs impinging on the retina, and as a behavioral output. The analysis of eye movements can provide a window on a variety of sensory, motor, and cognitive functions, such as attention, learning and memory, and decision-making (Duhamel et al., 1992; Kustov and Robinson, 1996; Raposo et al., 2012; Raymond and Lisberger, 1996). Moreover, abnormal eye movements are associated with numerous cognitive disorders, including autism, schizophrenia, Parkinson\u2019s disease, and Huntington\u2019s disease (Avanzini et al., 1979; DeJong and Jones, 1971; Holzman et al., 1976; Rosenhall et al., 1988). Thus, the measurement of eye movements can advance our understanding of the sophisticated neural processes underlying a wide range of functions in healthy and diseased brains.\n\nGiven their broad utility, measurements of eye movements have been routinely implemented in neuroscientific studies of primates. In contrast, such measurements are uncommon in mice, a species that is widely used in molecular and genetic studies of behavior (Beery and Zucker, 2011). Although less dependent on vision than primates, mice encode visual input with high selectivity (Niell and Stryker, 2008), and use vision for a variety of functions including navigation (Chapillon, 1999; Chen et al., 2013a; Hopkins, 1953; Saleem et al., 2013), avoidance of predators (Yilmaz and Meister, 2013), and recognition of territorial boundaries (Mackintosh, 1973). Eye movements can alter the visual experience during these behaviors, and thus provide key information about how these behaviors are controlled. However, measurement of eye movements in mice is technically challenging.\n\nThe main obstacle to measuring eye movements in mice is their diminutive size. In particular, the small eye restricts what can be implanted on the eye\u2019s surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940). The small size of the head and body also impede measurement of eye movements, especially during free motion, by restricting what can be affixed to the skull and carried by the mouse. Whereas neuroscientific studies of awake, behaving primates are typically conducted in head-fixed animals, behavioral paradigms in mice often leverage locomotion (Fyhn et al., 2008; Machado et al., 2015; Moser et al., 2008; Yoder and Taube, 2009), nose pokes (Raposo et al., 2012), foraging (Devito and Eichenbaum, 2011; Jennings et al., 2015), social interaction (Silverman et al., 2010), or other complex behaviors that require freedom of motion. The power of such behavioral paradigms has motivated significant efforts to analyze head and body kinematics (Fyhn et al., 2008; Goulding et al., 2008; Hardcastle et al., 2017; Machado et al., 2015; Wiltschko et al., 2015; Yoder and Taube, 2009) and to image the activity of neural populations (Barretto et al., 2009; Chen et al., 2013b; Flusberg et al., 2008; Jennings et al., 2015) in freely moving mice. However, measurements of eye movements have been lacking in these studies, even for visually guided behaviors such as navigation. Thus, a method for analyzing eye movements in unrestrained mice would be a powerful tool for advancing our understanding of\u00a0the murine behavioral repertoire and its neural underpinnings. Previously, the only eye tracking method compatible with free motion in small animals was the electro-oculogram, which is susceptible to inaccuracies (Arden and Kelsey, 1962). Recently, video-oculography was used to measure visually driven eye movements in mice without head restraint, however the mice were constrained to a small platform, and only 20% of the measurements were useable (Kretschmer et al., 2017). Here, we address the need for an accurate and reliable technique to measure eye movements in mice during the broad range of freely moving behaviors used in neuroscience research.\n\nOur approach was designed to overcome the major limitations of previous eye tracking methods in mice, the most popular of which are the eye coil method and video-oculography. The eye coil, or scleral search coil, technique is considered the gold standard for measuring eye movements in most species (Boyden and Raymond, 2003; Collewijn et al., 1975; Judge et al., 1980; Koekkoek et al., 1997; Remmel, 1984; Robinson, 1963). A small coil of wire is surgically implanted beneath the conjunctiva on the surface of the eye, and eye position is determined from the current generated in the wire by an external magnetic field. A major advantage of the eye coil method is that it has high spatial (~0.1\u00b0) and temporal (<1 ms) resolution (Collewijn et al., 1975; Stahl et al., 2000). Disadvantages arise from the difficulty of implementation, particularly in species with small eyes. The surgery requires lengthy training to master, and the fragile wires leading subcutaneously from the eye coil to a skull-mounted connector can break, requiring additional surgeries for repair or additional animals. Moreover, during measurements of eye movements, it is optimal for the animal\u2019s head to remain stationary and centered within large magnetic field coils, so this approach has been applied almost exclusively in head-fixed animals (but see Collewijn, 1977; Ogorodnikov et al., 2006; S\u00e1nchez-L\u00f3pez and Escudero, 2015).\n\nA second, common method for measuring eye movements is video-oculography, which uses a high-speed camera to record the position of the pupil (Mitchiner et al., 1976; Stahl et al., 2000; Wallace et al., 2013). The primary advantage of this approach is that it is non-invasive. However, there are also several disadvantages. Its spatial resolution is lower than that of the eye coil (Houben et al., 2006; Kimmel et al., 2012; McCamy et al., 2015; Stahl et al., 2000). Inaccuracies can arise from changes in pupil diameter due to fluctuations in luminance or behavioral state (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014). A camera or mirror must be placed in the animal\u2019s field of view, which limits the experimenter\u2019s control of visual stimuli. Finally, the head must remain stationary relative to the camera, which precludes use in freely moving mice, since even the miniaturized video-oculography system developed for the rat (Wallace et al., 2013) significantly exceeds the size of the mouse head.\n\nA promising alternative to the eye coil and video-oculography techniques is an approach based on magnetic sensing. If a magnet is implanted on the surface of the eye, its magnetic field will rotate with the eye, allowing eye movements to be detected with a sensor that measures either the angle or the strength of the magnetic field. Three previous reports, two in goldfish (Rodr\u00edguez et al., 2001; Salas et al., 1999) and one in chickens (Schwarz et al., 2013) have demonstrated the potential of magnetic sensing for measuring eye movements. We extended these initial efforts in several ways. First, we miniaturized the implant for the smaller mouse eye, while achieving spatial resolution comparable to the eye coil benchmark. Second, we rigorously tested robustness to the relative placement of the magnet and sensor. Third, we developed an improved method for calibrating the magnetic eye tracking system. These advances yielded the first high resolution recordings of eye movements in freely moving mice.\n\n## Results\n\nWe developed a system for measuring eye movements in mice using magnetic sensing technology. A powerful neodymium magnet was surgically implanted beneath the conjunctiva so that it rotated with the eye, and a magnetic field sensor was used to detect the resulting changes in the angle of the magnetic field.\n\n### Magnetic sensor performance outside the animal\n\nThe performance of the magnetic eye tracking system was first tested outside the mouse, where the position of the magnet and sensor could be precisely controlled, allowing systematic comparison of different magnet-sensor alignments. Initially, a 0.75\u00a0\u00d7\u00a02 mm cylinder magnet was positioned directly below and adjacent to the sensor, with the N-S axis of the magnet parallel to the plane of the sensor, and the magnet\u2019s axis of rotation aligned to the center of the sensor (Figure 1A, left, with \u03b4\u00a0=\u00a00 mm). When the magnet was rotated\u00a0\u00b190\u00b0 about an axis perpendicular to the plane of the sensor, the magnetic sensor produced a voltage that depended on the angle of the magnet (Figure 1A, center, black traces).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig1-v1.jpg)\n\n**Figure 1.:** (A) Output of the magnetic sensor when a 0.75\u00a0\u00d7\u00a02 mm cylinder magnet was rotated by a servo-controlled motor. Left, Schematic showing the relative position and orientation of the magnet and sensor, the axis of magnet rotation (dashed line\u00a0and\u00a0arrow) and the dimension along which magnet position was varied (\u03b4,\u00a0red\u00a0arrow). Middle, Output from each channel of the magnetic sensor as vertical distance (\u03b4) between the magnet and the surface of the sensor was varied from 0 mm (black) to 5 mm (light grey) (n\u00a0=\u00a05 repeated measurements). Right, Sensitivity of each channel of the magnetic sensor at each distance from the magnet. In this and all panels, SEM for repeated measurements was smaller than the symbol size. (B) Same as in (A), but the magnet was offset horizontally (\u03b4) from both its axis of rotation and the center of the sensor. Vertical distance was fixed at 3 mm. (C) Same as in (B), but the sensor was offset horizontally from the center of the magnet, which rotated about its center. (D) Same as in (B), but comparing horizontal orientation of the magnet as in (A) with a 45\u00b0 tilt relative to the plane of the sensor (p=0.168, n\u00a0=\u00a05 repeated measurements, two sample t-test). Vertical distance between the center of the magnet and the sensor was fixed at 3 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Output of the magnetic sensor when a 1.5\u00a0\u00d7\u00a00.5 mm disc magnet was rotated by a servo-controlled motor. Left, schematic of magnet-sensor orientation. Middle, output from each channel of the magnetic sensor as the vertical distance (\u03b4) between the magnet and the surface of the sensor was varied from 0 mm (black) to 5 mm (light grey) (n\u00a0=\u00a05 repeated measurements). Right, sensitivity of each channel of the magnetic sensor at each distance from the magnet. (B) Same as in (A), but the magnet was horizontally offset (\u03b4) from both its axis of rotation and the center of the sensor.\n\nThe magnetic sensor we used has two channels, which relay output from two sets of magnetoresistive elements at a 45\u00b0 orientation relative to each other, so that the position tuning of the two channels is offset by 45\u00b0 (Figure 1A, center). Hence, during normal eye movements in mice, which are typically within\u00a0\u00b110\u201320\u00b0 (van Alphen et al., 2010), at least one of the two channels should operate close to its range of greatest sensitivity and linearity (near 0\u00b0 for Channel 1, and 45\u00b0 for Channel 2 in Figure 1A, center).\n\nRobustness to deviations in magnet-sensor alignment is necessary for magnetic eye tracking in vivo, since surgical implantation of the magnet and sensor will inevitably result in some variation in placement. Most notably, the magnet cannot be directly adjacent to the sensor when implanted in the mouse eye. Therefore, we tested the effect of increasing the distance to the magnet on the sensitivity of the sensor to the angular position of the magnet. Sensitivity was calculated as the slope of the relationship between magnetic sensor voltage and angular position of the magnet, averaged in a\u00a0\u00b122.5\u00b0 range centered on the zero-crossings of each channel. Sensitivity decreased from 224.7\u00a0\u00b1\u00a00.3 mV/\u00b0 at 0 mm to 28.1\u00a0\u00b1\u00a01.0 mV/\u00b0 at 5 mm (average sensitivity of the two channels; sensitivity for each channel is shown separately in Figure 1A, right). Notably, at 3 mm, a distance readily achievable in mice (see Materials and methods), the sensitivity was 127.0\u00a0\u00b1\u00a01.2 mV/\u00b0. This corresponded to a spatial resolution, as measured by the standard deviation of the signal at rest, of 0.016\u00b0\u00a0\u00b1\u00a00.005\u00b0, which is nearly an order of magnitude below the noise floor measured by the best eye tracking methods in mice (Stahl et al., 2000). Results obtained using a 1.5\u00a0\u00d7\u00a00.5 mm disc magnet were similar to those for the cylinder magnet, with a sensitivity of 90.9\u00a0\u00b1\u00a00.7 mV/\u00b0 at a distance of 3 mm (Figure 1\u2014figure supplement 1). Because of its marginally greater sensitivity, we focused on the cylinder magnet for all subsequent measurements.\n\nIn addition to characterizing how sensitivity varied with the vertical distance between the magnet and sensor, the effect of horizontal distance (displacement within a plane parallel to the plane of the sensor) was tested. In the animal, the magnet will not rotate exactly about its center, but instead will be horizontally offset by the radius of the eye. We tested the impact of this offset by fixing the vertical distance between magnet and sensor at 3 mm, and then horizontally displacing the magnet from the midpoint of the sensor and from its axis of rotation (Figure 1B). Sensitivity decreased with distance; nevertheless, the signals were still more than half maximum at 1.5 mm of horizontal offset (Figure 1B), which corresponds to the radius of the mouse eye. When the sensor, rather than the magnet, was displaced from the axis of rotation, sensitivity decreased in a similar manner (Figure 1C). Therefore, the sensor\u2019s ability to detect magnet angle is robust to horizontal as well as vertical variations in magnet-sensor alignment of magnitudes that would be expected in vivo.\n\nFinally, we tested the effect of tilting the N-S axis of the magnet relative to the plane of the sensor, which also may occur during implantation. Tilting the magnet by 45\u00b0 did not affect sensitivity (127.8\u00a0\u00b1\u00a04 mV/\u00b0 no tilt, 128.0\u00a0\u00b1\u00a02.0 mV/\u00b0 with 45\u00b0 tilt, Figure 1D).\n\n### Magnetic tracking of eye movements in mice\n\nAfter characterizing the performance of the magnetic eye tracking system outside the mouse, we implemented magnetic eye tracking in head-fixed mice. A cylinder magnet was surgically implanted beneath the conjunctiva on the temporal margin of one eye, with the N-S axis aligned so that it created a rotating magnetic field during horizontal (nasal-temporal) eye movements (Figure 2A; see Materials and methods). A magnetic sensor was affixed to the skull in a plane roughly parallel to the nasal-temporal axis of the eye. The head was restrained, via a surgically implanted head post, with the nasal-temporal axis of the eye in an earth-horizontal plane.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of the magnetic eye tracking system, illustrating the orientation of the sensor relative to the magnet and eye. The magnet was implanted beneath the conjunctiva on the temporal side of the eye. The sensor was soldered to an 8-pin connector and positioned over the magnet in a plane parallel to that of horizontal (nasal-temporal) eye movements. An implanted head post was used to restrain the head so that the nasal-temporal axis of the eye was earth-horizontal. (B) Raw output from both channels of the magnetic sensor (blue traces) during the vestibulo-ocular reflex (VOR) in one example mouse. A vestibular stimulus (black trace, head position) was delivered by rotating the animal about an earth-vertical axis in the dark (0.2 Hz to 5 Hz, peak velocity\u00a0\u00b110\u00b0/s). (C) Raw output from the magnetic sensor during the optokinetic response (OKR). A visual stimulus (black trace) was delivered by rotating a vertically striped drum, which surrounded the mouse, about an earth-vertical axis (0.2 Hz to 5 Hz, peak velocity\u00a0\u00b110\u00b0/s).\n\nThe ability of the magnetic eye tracking system to detect eye movements was tested by delivering vestibular and visual stimuli known to evoke eye movements in head-fixed mice. The vestibulo-ocular reflex (VOR) drives compensatory eye movements in response to passive head rotation in the dark, in mice (Iwashita et al., 2001; Katoh et al., 1998; Kimpo et al., 2005; van Alphen et al., 2001) as in other species. Accordingly, when vestibular stimuli were delivered to mice implanted with the magnetic eye tracking system, the magnetic sensor detected robust eye movements driven by the VOR. Sinusoidal vestibular stimuli at a range of stimulus frequencies from 0.2 Hz to 5 Hz elicited sinusoidal eye movements at the corresponding frequencies (Figure 2B).\n\nThe magnetic eye tracking approach was also effective at detecting visually-driven eye movements in head-fixed mice. The optokinetic reflex (OKR) drives image-stabilizing eye movements in response to motion of a visual stimulus, in mice (Iwashita et al., 2001; Katoh et al., 1998) as in other species. Accordingly, when a striped drum was rotated around the mouse, the magnetic sensor detected robust eye movements driven by the OKR, at all stimulus frequencies tested (0.2 Hz\u20135 Hz; Figure 2C). Thus, the magnetic eye tracking system can detect both vestibularly- and visually-driven eye movements in head-fixed mice.\n\n### Calibration of magnetic eye tracking using dual-angle video-oculography\n\nTo convert the raw output of the magnetic sensor (in volts) to eye position (in degrees), we developed an inexpensive yet accurate calibration system based on video-oculography. A major motivation for developing magnetic eye tracking in mice was to overcome the limitations of video-oculography, such as its limited spatial resolution and the incompatibility with free motion of the animal, which restrict its use for certain applications. However, these limitations do not preclude the use of video-oculography for calibration of the magnetic sensor.\n\nWe modified a standard video-oculography technique to simplify implementation and improve accuracy. In species other than primates, eye position is typically computed from video measurements using an estimate of Rp, the distance of the pupil from the center of corneal curvature (Figure 3A; Stahl et al., 2000). However, difficulty in estimating Rp and variations in Rp across individuals and during the course of an experiment are sources of inaccuracy (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014; Wisard et al., 2010; Zoccolan et al., 2010). We eliminated the need to estimate Rp by using simultaneous image capture of the eye from two cameras. By positioning the cameras at a known, fixed angle relative to each other (40\u00b0, in our setup) and extracting the locations of the pupil and a reference corneal reflection (CR) in each camera\u2019s image, the angle of the eye can be calculated using simple trigonometric identities (Figure 3A,B; see Materials and methods). To validate the dual-angle video-oculography system, two mice were anesthetized and the cameras were rotated at known angles around one eye, over a\u00a0\u00b1\u00a025\u00b0 range. The eye position measured with video-oculography agreed closely with true position over the full range (Figure 3C). Thus, dual-angle video-oculography accurately reports eye position, and hence can be used to calibrate the signals recorded by the magnetic sensor.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the eye as viewed from above, illustrating the dual-angle video-oculography technique. Two cameras were affixed to a platform, with their axes at an angle of 40\u00b0 relative to each other, and with the cameras equidistant (5 cm) from the point at which their axes intersected. An infrared LED mounted directly above each camera created a corneal reflection (CR). The position of the camera platform was adjusted to align the image of each CR to the center of the corresponding camera\u2019s image (CR1, CR2;\u00a0red). This aligned both camera axes with the center of corneal curvature (C), and ensured that the two cameras were equidistant from the eye, and therefore had the same image magnification. The distances \u22061 and \u22062 from the CR to the center of the pupil (P) in each camera\u2019s image were used to compute the angular position of the pupil relative to the cameras (\u03b81, \u03b82) (see Materials and methods, Equation 9). (B) Example camera frames showing the software-detected pupil and CR locations for each camera. CR1\u02b9 and CR2\u02b9 (grey)\u00a0are reflections generated by the infrared LED above the opposite camera, and are ignored. Other abbreviations as in (A). (C) Validation of dual-angle video-oculography. Eye position measured by using video-oculography is plotted against true angle as the camera system was rotated about the eye of two anesthetized mice.\n\nTo calibrate the signals recorded by the magnetic sensor in each mouse, eye movements were simultaneously recorded in awake, head-restrained mice using the video-oculography and magnetic eye tracking systems. During a brief (1\u20133 min) calibration session, 0.5 Hz or 1 Hz sinusoidal vestibular stimuli were used to elicit eye movements (Figure 4A). A calibration factor for the magnetic sensor was extracted by using linear regression to predict video-derived horizontal eye position from the raw voltages of the magnetic sensor. The resulting calibration factor, in units of \u00b0/mV, could then be used to calculate eye position from the signals recorded by the magnetic sensor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig4-v1.jpg)\n\n**Figure 4.:** (A) Simultaneously recorded magnetic sensor output (Ch1 dark blue, Ch2 light blue) and video-derived eye position (black) from one example mouse, measured during vestibular stimulation in the light. (B) Signals from the\u00a0magnetic sensor, compared time point-by-time point against eye position measured by video-oculography, for the example mouse in (A). Results are shown for models of increasing complexity, from left to right: inputs to the regression model included the single best magnetic sensor channel alone (\u2018One channel\u2019), both magnetic sensor channels (\u2018Two channels\u2019), or two channels plus quadratic terms (\u2018Quadratic\u2019) (see Materials and methods). (C) Mean correlation coefficients between video and calibrated magnet output for each model (n\u00a0=\u00a024 mice). (D) Calibration of magnetic sensor using eye velocity. Example differentiated video and magnetic sensor traces are shown for same mouse as in (A). The sine wave fit to the magnetic sensor channel with higher r2 relative to the video is shown. The output of the magnetic sensor channel was scaled by a calibration factor equal to the ratio of video sine wave amplitude (Avid) divided by magnetic sensor amplitude (Amag). (E) Stability of magnetic eye tracking over time. Sensitivity was quantified as the reciprocal of the calibration factor obtained using the velocity method, and was measured each day for one week, and six months after magnet implantation. Mean sensitivity did not change over one week (all p>0.3, paired t-test, Days 2\u20137 vs. Day 1, n\u00a0=\u00a08). After six months (average time post-surgery 6.0\u00a0\u00b1\u00a00.4 months, range 5.2\u20137.7 months), sensitivity was lower but still robust (n\u00a0=\u00a08 mice; two additional mice had no detectable eye movement signals). (F) Changes in the calibration factor of individual mice over time. Although the mean sensitivity of the magnetic sensor was robust over months, the calibration factors of individual mice showed some fluctuations from day-to-day, as quantified by the absolute value of the percent change in calibration factor measured each day for one week, relative to Day 1.\n\nThe signal in one channel of the magnetic sensor was often considerably larger and more strongly correlated with the video-derived measurements of eye position than the signal in the other channel (see examples in Figure 2B,C and Figure 4A), as expected from tests outside the animal (Figure 1). Nonetheless, the second channel might carry some additional information about eye position. Therefore, we assessed whether a better estimate of eye position could be obtained from a linear model incorporating both channels of the magnetic sensor, rather than the single best channel (the channel with the highest correlation coefficient to video-derived eye position, see Materials and methods). On average, incorporating both channels only improved the fit to the video-derived measurements by a small amount (3.5% additional variance explained, Figure 4B,C). We also estimated eye position using a model that included a nonlinear, quadratic term for each channel, and found little additional improvement (2.3% additional variance explained compared to the two-channel model, Figure 4B,C). All subsequent measurements of eye position were derived from the single best channel of the magnetic sensor.\n\nAn alternative method of calibration can be used in applications in which eye velocity is the most relevant measure, rather than eye position. Eye position signals obtained from the magnetic and video systems were each differentiated, saccades and motion artifacts were removed, and the resulting velocity traces were each fit with a sine wave (see Materials and methods). The ratio of the amplitudes of the sine wave fits for the video and magnetic signals provided a calibration factor that could then be used to convert the differentiated magnetic sensor voltage into eye velocity (Figure 4D). This method has the advantage of not requiring precise temporal alignment between the video and magnetic recordings, since the amplitude of each signal is determined independently. Calibration factors obtained using the velocity method and the position method were similar in each mouse (p=0.55, paired t-test, n\u00a0=\u00a024).\n\nTo assess the robustness of magnetic eye tracking over time, eight mice were repeatedly calibrated each day for a week, using the velocity method. The reciprocal of the calibration factor represents the in vivo sensitivity of the magnetic sensor in mV/\u00b0 (the slope in Figure 4B, left). On average, the sensitivity of the magnetic sensor decreased by only 4.2% after one week (Figure 4E, left). Even after many months, the magnetic implants were remarkably robust. In a population of ten mice recorded 5\u20137 months after implantation, only two had unusable eye movement signals. In the remainder, sensitivity was lower than on the first day it was measured, but still suitable for eye tracking measurements (Figure 4E, right).\n\nAlthough the implants were robust over many months, the calibration factors could fluctuate from day to day in individual mice. To quantify this, the absolute value of the percent change in the calibration factor k, relative to the calibration factor value on Day 1, was calculated for each day in each mouse:\u00a0$\u0394k_{n}=\\frac{|k_{n}\u2212k_{1}|}{k_{1}}\u22c5100%$, where $k_{n}$ is the calibration factor on Day n. On average, there was gradual drift in the calibration factors from their original values over time ($\u0394k_{n}$ increased with the number of days since original calibration; Figure 4F), indicating that regular recalibration is important to maintain accuracy.\n\n### Linearity and spatial resolution of the magnetic eye tracking system\n\nWe benchmarked magnetic eye tracking against the well-established eye coil technique, by quantifying the linearity and spatial resolution of each technique. Because the dual-angle video-oculography system reports eye position with a high degree of linearity (Figure 3C), the linearity of the magnetic and eye coil systems was assessed by regressing each signal against video-derived eye position, recorded simultaneously during vestibularly-driven eye movements in the light. Both eye coil and magnetic systems were highly correlated with the video system, and the correlation coefficient for the magnetic system was comparable to that for the eye coil system (Figure 5A), indicating a similar level of linearity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig5-v1.jpg)\n\n**Figure 5.:** (A) Correlation coefficient between the video and the eye coil data (gray; symbols represent individual mice, n\u00a0=\u00a09) and between the video and magnetic eye tracking data (blue, n\u00a0=\u00a08 mice) (p=0.937; two-sample t-test for eye coil vs. magnet). (B) Spatial resolution was similar for the eye coil and magnetic eye tracking systems (p=0.631, two-sample t-test), as measured by the standard deviation of eye position signals recorded during epochs when the eyes were relatively stationary in head-fixed mice in the light.\n\nThe spatial resolution of the\u00a0magnetic and eye coil systems was also compared. In head-fixed mice, spontaneous eye movements are interspersed with longer periods when the eyes are relatively stationary. The variability of the signals recorded during these stationary periods provides a measure of the eye tracking system\u2019s spatial resolution in vivo, with a lower bound determined by the actual jitter in eye position (Stahl et al., 2000; see Materials and methods). Quantified in this way, the magnetic and eye coil systems each had spatial resolutions of\u00a0<0.1\u00b0 (Figure 5B), similar to previous reports for the eye coil (Stahl et al., 2000). Therefore, the spatial resolution, as well as the linearity, of magnetic eye tracking was comparable to that of the eye coil.\n\nThere has been controversy about whether eye coil implants alter eye movements in mice (Boyden et al., 2006; Stahl et al., 2000; van Alphen et al., 2001). To evaluate whether the magnet implant has any effect on eye movements, video-oculography was used to compare the eye movements measured one day before versus six days after implantation of the magnet and sensor. Eye movement responses to vestibular stimuli at a range of stimulus frequencies were measured in the dark. Because the eye movements driven by the vestibulo-ocular reflex (VOR) in the dark are open-loop, they should provide a particularly sensitive measure of any disruption of normal oculomotor dynamics. Neither the gain nor the phase of the eye movement responses were altered after magnet implantation (Figure 6). Likewise, the eye movements elicited by combined vestibular and visual inputs were unaltered by magnet implantation (Figure 6\u2014figure supplement 1). The gain and phase of the VOR measured with magnetic eye tracking (Figure 6, dashed, blue lines) were in the range reported previously in mice by our laboratory (Kimpo and Raymond, 2007) and other laboratories (Iwashita et al., 2001; van Alphen et al., 2001), as were the gain and phase of the visually driven eye movements elicited by an optokinetic stimulus at a range of frequencies (Figure 6\u2014figure supplement 2; Iwashita et al., 2001; Kimpo and Raymond, 2007; Tabata et al., 2010; van Alphen et al., 2001, 2009, 2010). Thus, magnet implantation had no detectable effect on oculomotor behavior.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-v1.jpg)\n\n**Figure 6.:** The gain (left) and phase (right) of the eye movement responses to vestibular stimuli, before (black) and six days after (blue) implantation of the magnet and sensor, measured using video-oculography with infrared illumination in otherwise complete darkness (solid lines). There was no effect of magnet implantation on either the gain or the phase of the VOR (p=0.725 gain, p=0.350 phase, for main effect of pre- vs post-implantation; p=0.497 gain, p=0.469 phase, for interaction with vestibular stimulus frequency; two-way repeated measures ANOVA, n\u00a0=\u00a08 mice). The gain and phase of the VOR measured simultaneously with magnetic eye tracking (post-implantation) are shown as well (blue, dashed lines).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The gain (left) and phase (right) of the eye movement responses to the combined vestibular and visual input provided by head rotations in an illuminated visual surround was measured using video-oculography (solid lines) before (black) and after (black) implantation of the magnet and sensor. There was no effect of magnet implantation on either the gain or the phase of the eye movements (p=0.447 gain, p=0.794 phase, for main effect of pre- vs post-implantation; p=0.618 gain, p=0.488 phase, for interaction with vestibular stimulus frequency; two-way repeated measures ANOVA, n\u00a0=\u00a08 mice). The gain and phase of the eye movements measured simultaneously with magnetic eye tracking (post-implantation) are shown also (blue, dashed lines). The visual input included both a mouse-stationary video apparatus, which would tend to suppress the eye movements driven by the vestibular stimulus, and an earth-stationary visual surround, which would tend to enhance the eye movements driven by the vestibular stimulus.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The gain (left) and phase (right) of the OKR elicited by rotation of a random checkerboard patterned drum around the mouse, measured using the magnetic eye tracking system (n\u00a0=\u00a06 mice).\n\n### Bilateral eye movement recordings\n\nThe coordination of movements of the two eyes can influence visual experience. We assessed the suitability of magnetic eye tracking for simultaneously measuring the movements of both eyes of a mouse. Specifically, we tested whether there was interference created by the magnet in one eye influencing the sensor over the opposite eye. In three mice, a magnet was implanted in only one eye, while sensors were implanted above both eyes. The signals from both sensors were recorded during eye movements elicited by a sinusoidal vestibular stimulus (1 Hz,\u00a0\u00b110\u00b0/s). The amplitude of the signal in the sensor contralateral to the eye with the magnet was only 2.7 \u00b1 0.9% of that in the ipsilateral sensor, indicating limited crosstalk. Therefore, magnetic eye tracking allows simultaneous recording from both eyes, making it possible to analyze binocular coordination in mice.\n\n### Eye movement recordings in freely moving mice\n\nThe small size and weight of the magnetic eye tracking system provided an opportunity to record eye movements in freely moving mice. Horizontal eye movements were recorded bilaterally for 5\u201310 min as mice explored a 12\" arena surrounded by a stationary, vertically-striped visual stimulus. The eye movements recorded in this freely moving condition were compared with the eye movements recorded in the same mice while they were restrained in the center of the arena using their surgically implanted headpost. Overall, mice moved their eyes more when unrestrained, as evident in raw eye position traces (Figure 7A) and in scatterplots of eye position and eye velocity (Figure 7B,D) from individual mice. On average, freely moving mice displayed a two-fold increase in the standard deviation of eye position (Figure 7C), as well as a four-fold increase in the mean speed of the eye (Figure 7E) compared to head-fixed mice.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig7-v1.jpg)\n\n**Figure 7.:** (A) Example of bilateral eye movements in one mouse when it was head-fixed (top) compared to freely moving (bottom). Light purple, body still; dark purple, body actively moving, as measured using overhead video images (see Materials and methods). (B) Scatterplot of left and right eye positions in the example mouse from (A), during head fixation (black, left) and during free motion (purple, right). (C) Variability of eye position in head-fixed and freely moving mice. The standard deviation of eye position increased in head-free (dark purple) compared with head-fixed (black) mice (p=1.9\u00a0\u00d7\u00a010\u22124, paired t-test, n\u00a0=\u00a07). Eye movements recorded in head-free mice were further subdivided into periods when the body was still (light purple) versus actively moving (medium purple) (p=0.146, paired t-test, n\u00a0=\u00a07). Grey lines, individual mice; black lines, example mouse in (A). (D) Scatterplots of velocity of the left and right eye during head fixation and free motion, for the example mouse in (A). (E) Mean eye speed was higher in freely moving than head-fixed mice (p=9.7\u00a0\u00d7\u00a010\u22125, paired t-test, n\u00a0=\u00a07). In unrestrained mice, eye speed was highest during periods of active body movement compared to periods when the body was relatively still (p=3.6\u00a0\u00d7\u00a010\u22124, paired t-test, n\u00a0=\u00a07). (F) Correlation between horizontal eye velocity and head velocity about the yaw axis in freely moving mice (n\u00a0=\u00a04). (G) Binocular coordination in head-fixed and freely moving mice. Left, mean eye divergence (horizontal angle between the two eyes) increased during free motion compared to head fixation (p=0.029, paired t-test, n\u00a0=\u00a07). Right, the standard deviation of eye divergence also increased during free motion (p=0.009, paired t-test, n\u00a0=\u00a07).\n\nThe increase in eye movements observed in freely moving mice was associated with active body movement, rather than simply the absence of restraint. Eye movements recorded in unrestrained mice were subdivided according to whether the body was actively moving or relatively still, as quantified by a motion index extracted from overhead video (see Materials and methods). During active, self-generated body movements, the mean eye speed was higher compared to when the body was relatively still (Figure 7E).\n\nThe correlation of eye movements with body movements did not simply reflect a general increase in motor activity or arousal, but were, at least in part, directly driven by motion of the head. Head movements create both vestibular input and visual input (from relative motion of the earth-stationary visual surround), which are both known to drive eye movements in mice (Figure 2B,C; Iwashita et al., 2001; Katoh et al., 2008; Shin et al., 2014; van Alphen et al., 2001). More specifically, head rotations about the yaw axis could drive the horizontal eye movements detected by our magnetic eye\u00a0tracking system. Head movements were recorded in unrestrained mice using an inertial measurement unit. There was a strong, linear relationship between self-generated head movements about the yaw axis and horizontal eye movements in the opposite direction (Figure 7F), suggesting that active head movements are a major driver of eye movements in freely moving mice.\n\nNot only were the motion statistics of individual eyes altered in freely moving mice, but the binocular coordination was altered as well. Binocular coordination is likely to play a key role in the active control of vision in most species. Such coordination is currently best understood in head-fixed primates, with much less known in lateral-eyed, afoveate, and freely moving animals, where there can be important differences (Carriot et al., 2014; Land, 2015), as illustrated by a recent study in rats (Wallace et al., 2013). We found that the eye divergence (the horizontal angular distance between the two eyes) increased in unrestrained mice, compared to during head fixation (Figure 7G, left), and the variability of eye divergence also increased (Figure 7G, right). Thus, bilateral eye movements in mice are highly dependent on the motion of the animal, with the eyes both more active and more divergent in freely moving compared to head-fixed mice.\n\n## Discussion\n\nMagnetic eye tracking opens up exciting new scientific opportunities by providing a high-resolution (<0.1\u00b0) method for measuring eye movements that overcomes the challenging physical constraints of small and freely moving animals. The methods described here extend previous reports of magnetic eye tracking (Rodr\u00edguez et al., 2001; Salas et al., 1999; Schwarz et al., 2013) by miniaturizing the implant for use in mice, increasing the resolution, assessing tolerance for various magnet-sensor alignments, and improving the calibration procedure. Magnetic eye tracking has important advantages over the commonly used eye coil and video-oculography techniques, and hence could replace these older techniques in many current applications. We developed the magnetic eye tracking system in mice due to the widespread use of this species, but there are no obvious barriers to extending this technique into larger species, such as rats or monkeys. A larger eye and orbit may require that the sensor be implanted farther away from the magnet, however, this should be offset by the ability to implant a larger magnet.\n\n### Comparison to the eye coil\n\nMagnetic eye tracking achieved performance similar to that of the eye coil technique, which is widely considered the gold standard for measuring eye movements (Robinson, 1963). The spatial resolution of magnetic eye tracking (0.098\u00b0) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091\u00b0; Figure 5B) and other labs (0.09\u00b0, Stahl et al., 2000), and was also comparable to the resolution of the eye coil technique in larger species such as monkeys (<0.1\u00b0, Kimmel et al., 2012) and humans (0.096\u00b0, Houben et al., 2006). Further, the linearity of magnetic eye tracking was indistinguishable from that of the eye coil technique (Figure 5A).\n\nThe performance of the magnetic eye tracking system benefited from the use of angular magnetic field sensors containing anisotropic magnetoresistive (AMR) technology (Schwarz et al., 2013). In contrast to Hall effect sensors, which measure magnetic field strength (Rodr\u00edguez et al., 2001; Salas et al., 1999), AMR sensors are designed to measure the angle of a magnetic field. AMR sensors can achieve high resolution, while satisfying the constraints of low power, low cost, and small sensor size (Lenz and Edelstein, 2006). Despite the small size of the magnet required for mice, high resolution was achieved by placement of the magnet and sensor within the range established by systematic testing outside the animal.\n\nWith comparable spatial resolution, magnetic eye tracking offers several advantages over the eye coil technique. Most notably, the minimal equipment required for magnetic eye tracking permits its use in freely moving animals, as discussed further below. Magnetic eye tracking is also far less expensive than commercially available eye coil systems, making this approach available to more investigators. A third key advantage of magnetic eye tracking is the lack of fragile wires leading to the eye, which minimizes the difficulty of surgical implantation, greatly reducing the time required for the experimenter to learn and perform the procedure. The lack of fragile wires also extends the long-term reliability of the magnet implants. Only two out of ten mice followed for half a year after surgery had failed magnet implants, whereas the wires used for eye coil recordings often fail after several weeks following implantation (Stahl et al., 2000; Raymond lab, unpublished observations). Improved reliability allows for larger sample sizes with less attrition, which is particularly important when using valuable transgenic mice.\n\nA concern has been raised that the weight of an eye coil or the presence of wire leads might physically impair eye movements in mice (Stahl et al., 2000). We found no evidence for an effect of magnet implantation on oculomotor performance (Figure 6; Figure 6\u2014figure supplement 1). However, we do find that the experience and skill of the surgeon improves the outcome of both magnet and eye coil implantation surgeries in mice.\n\nWe replicated the general finding of an increase in VOR gain and decrease in OKR gain as well as an increase in VOR and OKR phase lag with stimulus frequency, which is observed across species. The gain and phase of the VOR and OKR measured with magnetic eye tracking fall within the range reported previously in mice using video and eye coil techniques, although there is considerable variability in the previously reported values, arising, at least in part, from sensitivity to the parameters of the vestibular and visual stimuli used to elicit eye movements, as well as behavioral factors related to handling and stress (Iwashita et al., 2001; Kimpo and Raymond, 2007; Tabata et al., 2010; van Alphen et al., 2001, 2009, 2010).\n\nMagnetic eye tracking has many advantages, but also some disadvantages relative to the eye coil method. One current limitation is that the magnet-sensor configuration we used measures angular eye position about only one axis. A single axis is sufficient for many applications (Iwashita et al., 2001; Kimpo et al., 2014; Koyama et al., 2004; Medrea and Cullen, 2013; Prusky et al., 2004; Wurtz, 1968), moreover further development to incorporate either a second sensor or a 3D magnetic field sensor should enable simultaneous measurement of eye movements along multiple axes simultaneously. A second disadvantage of magnetic eye tracking is that it requires a separate calibration device, whereas the eye coils can be calibrated by rotating the external magnetic field coils relative to the mouse. Early efforts at magnetic eye tracking employed an invasive calibration method involving physical rotation of the eye using a needle under a microscope (Rodr\u00edguez et al., 2001; Salas et al., 1999). We have minimized the difficulty of the calibration step by developing a rapid (<10 min), accurate, noninvasive calibration procedure using an improved video-oculography method, which can be performed in awake mice.\n\n### Dual-angle video-oculography\n\nStandard video-oculography approaches are challenging in mice and other afoveates because of the difficulty in estimating Rp (the distance from the plane of the pupil to the center of corneal curvature), which is typically used to determine angular\u00a0eye position from video images. Rp has been approximated as the average radius of the eye in a species (Katoh et al., 1998; Mangini et al., 1985; Schwarz et al., 2013). However, this is an imperfect measure of Rp because the curvature of the cornea is different from the rest of the eye, and because the eye does not rotate exactly about its center (Stahl et al., 2000). In addition, a single Rp value doesn\u2019t account for variation across age, gender, genotype, or individuals (Stahl et al., 2000; Wisard et al., 2010). Methods have been devised for estimating Rp in individual animals (Stahl et al., 2000; Zoccolan et al., 2010), but these methods extend the time the animal must be head-restrained for an experimental session. Most notably, the above methods assume that Rp is constant over time, whereas Rp is known to change rapidly with shifts in arousal or light intensity (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014), which introduces inaccuracies.\n\nDual-angle video-oculography eliminates the need to estimate Rp, by calculating eye position from frame-by-frame comparison of the images from the two cameras. The result is highly linear and sufficiently accurate for the purpose of calibrating the magnetic eye tracking system. If enhanced with high-speed cameras and faster image processing, the dual-angle method could also stand alone as a powerful video-oculography technique.\n\nDespite the improvements in video-oculography achieved by the dual-angle technique, magnetic eye tracking provides key advantages that make it preferable to video-oculography for many applications. First, the spatial resolution of magnetic eye tracking (0.1\u00b0) is superior to what has been reported for video-oculography in rodents (0.23\u00b0, Stahl et al., 2000; ~1\u00b0, Wallace et al., 2013), in monkeys (video resolution 2\u20123\u00a0\u00d7\u00a0worse than eye coil, Kimmel et al. (2012); McCamy et al., 2015) and in humans (0.56\u00b0, Houben et al., 2006). Second, magnetic eye tracking achieves high temporal resolution with less expense. Although some video-oculography systems can sample at 1,000 Hz, they are costly and typically sacrifice image resolution. Since the dual-angle system is used only for calibration, high-speed cameras are not required. Third, removal of the bulky video-oculography equipment after calibration allows free, unobstructed interaction of the animal with the environment during eye tracking. Technological advances have reduced the size of cameras to fit on the head of a rat (Wallace et al., 2013), but the hardware required for magnetic eye tracking is more than an order of magnitude lighter (0.05 cm3 and 0.180 g total) and is therefore trivial for a mouse to carry, allowing much greater mobility than possible with video-oculography (Kretschmer et al., 2017). Also, either the video cameras themselves, or the edges of infrared-reflective mirrors, are visible to the animal during video-oculography, limiting experimental control of the visual environment. Thus, magnetic eye tracking is preferable for experiments in which spatial resolution, low cost, unobstructed vision, or compatibility with free motion is a priority.\n\n### Applications\n\nMagnetic eye tracking makes it possible to obtain reliable, high-resolution measurements of eye movements in small, freely moving animals, thereby creating new opportunities for studies of sensation, motor control, and cognition under more natural conditions. Neuroscientists are increasingly interested in studying the neural basis of behavior under conditions where the animal is free to move, particularly in rodents (e.g., Licata et al., 2017; Davidson et al., 2009; Kepecs et al., 2008; Erlich et al., 2011; Jaramillo and Zador, 2014). Free motion allows animals to perform orienting movements, which are a key part of any animal\u2019s behavioral repertoire. During visually guided behaviors, coordinated movements of the trunk, head, and eyes can direct the animal\u2019s gaze towards relevant visual stimuli (Belton and McCrea, 1999; Erlich et al., 2011; Fang et al., 2015; Freedman and Sparks, 1997; Fuller, 1992; Mather and Baker, 1980). Body location and head direction are routinely measured during visually guided behaviors such as navigation, and have been shown to be encoded by the activity of neurons in relevant circuits (Fyhn et al., 2008; Hardcastle et al., 2017; Yoder and Taube, 2009). However, the technical challenges associated with measuring eye movements have limited the analysis of gaze control in freely moving animals. Our finding of robust eye movements in freely moving mice (Figure 7) suggests that gaze direction deviates substantially from head direction, as previously reported in rats (Wallace et al., 2013). Therefore, gaze direction may be an additional variable represented and controlled by the relevant neural circuits.\n\nThe magnetic eye tracking system facilitates investigation of many open questions regarding the neural control of gaze, and its role in guiding the acquisition of visual information and control of visually-guided behaviors. Eye movements provide a window into many sensory, motor, and cognitive processes in healthy and diseased brains. Technical challenges have limited the application of this experimental measure in the increasingly common neuroscientific studies of freely moving rodents. Magnetic eye tracking provides a high-resolution, low cost, and easily implemented method, which can enable more investigators to capitalize on the power of eye movement analysis.\n\n## Materials and methods\n\n### Animals\n\nMagnetic eye tracking and video-oculography were performed in 35 C57BL/6 mice and two hybrid C57BL/6 \u00d7 129S1/SvImJ F2 mice. Eye coil and video-oculography recordings were made in an additional nine C57BL/6 mice. All procedures were approved by Stanford University\u2019s Administrative Panel on Laboratory Animal Care.\n\n### Surgery\n\nA plastic head post was secured to the skull with three screws and dental cement, for use in immobilizing the head. In most animals, a magnet was implanted in one or both eyes. Different magnets were assessed. Most mice were implanted with two neodymium magnets of size 0.75\u00a0\u00d7\u00a01 mm (diameter\u00a0\u00d7\u00a0height, grade N50, axially magnetized, SuperMagnetMan.com), which were stacked end-to-end for a total size of 0.75\u00a0\u00d7\u00a02 mm (weight: 6.8 mg). These magnets were coated in the biocompatible polymer parylene. The magnetic force firmly held the two magnets together, and the resulting shape is referred to as the \u2018cylinder magnet\u2019. Cylinder magnets were implanted in a single eye in 24 mice, and bilaterally in an additional seven mice. Mice were excluded from the analysis if reliable video-oculography was not possible following implantation due to scarring on the surface of the eye, or if an eye movement gain of less than 0.1 was recorded by the magnetic sensor during calibration, suggesting that the magnet-sensor alignment was inadequate. A 1.5\u00a0\u00d7\u00a00.5 mm disc magnet was implanted in four additional mice, and performed similarly (data not shown). In pilot experiments, a smaller, 1.0\u00a0\u00d7\u00a00.5 mm disc magnet was implanted in two mice, however, because the signals recorded using these magnets were very small (data not shown), we discontinued their use. Magnets were implanted following a procedure similar to that described previously for eye coil implantation (Boyden and Raymond, 2003). The conjunctiva was blunt dissected to form a pocket on the temporal side of the eye, slightly dorsal to the midline of the eye and anterior to the lateral rectus muscle. The magnet was inserted into this pocket using non-magnetic forceps (Dumoxel #5, FST) and the pocket was sealed shut with VetBond. To minimize any chance of obstructing or otherwise affecting vision, care was taken to implant the magnet well away from the cornea and to restrict the VetBond to the area surrounding the magnet. The cylinder magnet was implanted with the N-S axis aligned roughly perpendicular to the axis about which the eye rotates during horizontal (nasal-temporal) eye movements (Figure 2A). The disc magnet was implanted flat on the surface of the eye, with the N-S axis pointing towards the eye\u2019s center.\n\nAn angular magnetic field sensor (HMC1512, Honeywell Inc., size: 4.8\u00a0\u00d7\u00a05.8 mm; weight: 76 mg) was secured to the skull above the eye using dental cement anchored to the same skull screws as were used to secure the head post. The HMC1512 sensor converts the direction of an external magnetic field into an analog voltage output. The magnetic field is sensed by anisotropic magnetoresistive (AMR) elements, which change their electrical resistance according to the angle \u03b8m of an applied magnetic field. Each set of AMR elements is configured as a Wheatstone bridge to produce a differential voltage proportional to sin(2\u03b8m). The HMC1512 contains two sets of AMR elements, rotated by 45\u00b0 relative to each other.\n\nThe magnetic sensor was affixed to the skull above the implanted magnet, with its surface in a plane roughly parallel to the nasal-temporal axis of the eye and to the N-S axis of the implanted magnet (Figure 2A). This positioning allowed detection of horizontal eye movements. The sensor was positioned as close as possible to the eye (2.7\u00a0\u00b1\u00a00.2 mm, n\u00a0=\u00a08 mice, distance from the bottom surface of the sensor to the nasal-temporal axis defined by the two corners of the eye).\n\nIn seven mice, magnets and magnetic sensors were implanted in both eyes. To assess cross-talk between a magnet in one eye and the sensor above the opposite eye, three of these mice were first implanted with a magnet in the left eye alone, with sensors above both eyes. A magnet was later implanted in the right eye as well.\n\nIn nine mice, eye coil implantation was performed as described previously (Boyden and Raymond, 2003). Recordings from all mice were made after at least five days of recovery from surgery.\n\n### Data acquisition\n\nDifferential outputs from the two magnetic sensor channels were amplified 60x by a custom preamplifier (David Profitt Engineering Services, Los Altos, CA), then digitized and stored using a Power1401 A-D converter with Spike2 software (Cambridge Electronic Design, Cambridge, England). Connections from the sensor to the amplifier were formed via an 8-pin right angle connector (Digi-Key: 609-3694-1-ND, pins; 609-3705-1-ND, socket), which could be rapidly soldered to the sensor without the need for extra wiring (total weight of sensor, solder, and connector: 180.4 mg). Magnet and eye coil data were digitally filtered with an identical 100 Hz low-pass Butterworth filter.\n\n### Magnetic sensor testing outside the animal\n\nPerformance of different magnet-sensor configurations was first assessed outside the mouse. Magnet angle was precisely controlled using a servo-controlled turntable (angular resolution 0.053\u00b0, standard deviation at rest), and the position of the magnet relative to the sensor was controlled with a micromanipulator (Figure 1). Repeated measurements were performed by removing the magnet from the apparatus and then repositioning it. Signal strength was compared across magnet-sensor configurations by calculating the sensitivity of the magnetic sensor to the angular position of the magnet, in mV/\u00b0. For each channel of the magnetic sensor, sensitivity was averaged in a\u00a0\u00b1\u00a022.5\u00b0 range around each zero crossing of that channel\u2019s output.\n\n### Magnetic eye tracking in head-fixed mice\n\nTo assess performance of the magnet-sensor system after implantation in mice, eye movements were elicited with vestibular and visual stimuli in head-fixed mice. The head of the mouse was restrained, via the surgically implanted head post, in a natural position with the nose tilted down approximately 30\u00b0 relative to the stereotaxic plane, which put the nasal-temporal axis of the eye in a roughly earth-horizontal plane. To elicit horizontal eye movements, vestibular stimuli were delivered by a servo-controlled turntable (Ideal Aerosmith, Inc.) that rotated the mouse about an earth-vertical axis. During the freely moving experiments (Figure 7), the stationary drum surrounding the animal had black and white stripes, each subtending 7\u00b0 of visual angle. For OKR measurements (Figure 6\u2014figure supplement 2), the drum was patterned with a random checkerboard, each square colored black or white with 50% probability and subtending 3\u00b0 of visual angle. The vestibular and visual stimuli had sinusoidal motion profiles, at frequencies of 0.2, 0.5, 1, 2, or 5 Hz, with\u00a0\u00b110\u00b0/s peak velocity. The gain of the eye movements driven by the vestibular and visual stimuli was calculated by dividing the amplitude of a sinusoidal fit to the eye velocity response by the amplitude of the stimulus (10\u00b0/s).\n\n### Magnetic sensor calibration\n\nMagnetic eye tracking requires calibration to convert the raw voltage signals from the magnetic sensor into eye position in degrees. Calibration was performed for each mouse by comparing signals from the magnetic sensor with eye movements recorded using a dual-angle video-oculography system developed for this purpose and described below. Once calibrated, the magnetic sensor could then be used alone, without the video system, allowing for testing in complete darkness, with higher temporal resolution, and while the mouse was freely moving.\n\nDuring a calibration session, video frames and magnetic sensor voltages were collected simultaneously while eye movements were elicited in awake, head-fixed mice using a sinusoidal vestibular stimulus in the light (0.5 Hz or 1 Hz,\u00a0\u00b110\u00b0/s peak velocity; Figure 4). Video frames were analyzed as described below to extract horizontal eye position. The vestibular stimulus and raw voltage traces from the magnetic sensor were recorded in Spike2 (CED, Cambridge, England). An infrared LED, driven by a TTL signal generated and recorded in Spike2, delivered 30 ms flashes of light at 1 Hz during the calibration session for use in aligning video and magnet traces.\n\nEye position data derived from the video recordings were upsampled to match the magnetic sensor data, and then differentiated by calculating the slope in a 50 ms sliding window to obtain eye velocity. Uncalibrated magnet data were differentiated in the same manner. An automatic velocity-threshold algorithm (video threshold: 50\u00b0/s, magnet threshold: 5 mV/ms) was used to detect saccades and motion artifacts in the video and magnet data. Time segments that were marked for removal in either the video data or the magnet data were excluded from both traces during further analysis.\n\nThe signals from the magnetic sensor were calibrated by comparing them with either eye position or eye velocity signals derived from the video recordings. To calibrate using eye position, the eye position recorded by the video was linearly regressed on the voltage signals from the magnetic sensor. Three possible choices for the set of explanatory variables in the regression were compared (Figure 4B,C).\n\nThe simplest option was to estimate eye position using each of the two magnetic sensor channels, one at a time:\n\n$$\ne_{1}^(t)=k_{1,1}m_{1}(t)+k_{2,1}\u00a0and\u00a0e^_{2}(t)=k_{1,2}m_{2}(t)+k_{2,2}\n$$\n\nwhere $e^_{1}(t)$ and $e^_{2}(t)$ are the calibrated eye positions estimated\u00a0fromy each channel, $m_{1}(t)$ and $m_{2}(t)$ are the voltages recorded by the two magnetic sensor channels, and $k_{1,1},\u00a0k_{1,2},\u00a0k_{2,1},\u00a0k_{2,2}$ are the model parameters. $k_{1,1}$ and $k_{1,2}$ correspond to the calibration factor for each channel, and $k_{2,1}$ and $k_{2,2}$ to the offset. The channel that was more strongly correlated with the video-derived eye position was then selected for further analysis.\n\nA second method for calibrating the eye position-related signals from the magnetic sensor was to fit the video-derived eye position using both magnetic sensor channels simultaneously:\n\n$$\ne^(t)=k_{1}m_{1}(t)+k_{2}m_{2}(t)+k_{3}\n$$\n\nTo avoid overfitting, given the likelihood of correlated signals between the two channels, an L2 regularization penalty was applied to penalize model parameters with large weight (ridge regression). Ten-fold cross-validation was used to select the regularization parameter that minimized squared error on the held-out data. Once the regularization parameter was thus obtained, the regression was then run on all calibration data to yield the final model parameters $k_{1},k_{2}$, and $k_{3}$.\n\nA third method for converting the signals from the magnetic sensor to an estimate of eye position included quadratic terms, to try to improve the fit should the eye position fall in a non-linear portion of the output from both channels of the sensor:\n\n$$\ne^(t)=k_{1}m_{1}(t)+k_{2}m_{2}(t)+k_{3}m_{1}(t)_{}^{2}+k_{4}m_{2}(t)_{}^{2}+k_{5}\n$$\n\nThis quadratic regression was cross-validated with ridge regression as described above.\n\nThe recordings from the magnetic sensor could also be calibrated using signals related to eye velocity rather than eye position. The video and magnetic sensor signals related to eye position were differentiated using a 50 ms sliding\u00a0window and then fit by sine waves, yielding a video-derived signal amplitude $A_{vid}$ (in units of \u00b0/s), and magnetic sensor-derived amplitudes $A_{mag}$ (in units of mV/s) for each sensor channel. The sensor channel with the higher r2 from the fit to a sine wave was selected, and its differentiated output $m\u02d9(t)$ was converted to eye velocity $e\u02d9^(t)$ using a calibration factor obtained from the ratio of $A_{vid}$ and $A_{mag}$:\n\n$$\ne\u02d9^(t)=\\frac{A_{vid}}{A_{mag}}m\u02d9(t)\n$$\n\nOverall, the calibration procedure added less than 10\u00a0min, and typically less than 5 min, to the experiment. The procedure includes placing the mouse in the head restraint (1\u20132 min), positioning the video cameras (1\u20133 min), data collection (1\u20133 min), and adjustment of video-oculography software\u00a0parameters (0\u20132 min). Once calibration was complete, the video cameras were removed from the experimental setup.\n\n### Analysis of spatial resolution\n\nTo compare the spatial resolution of the magnetic eye tracking and eye coil techniques, calibrated eye position signals were recorded while the mouse was head-fixed in the light. Two-second epochs when the eye movements were minimal were selected for analysis. Spatial resolution was calculated as the standard deviation of eye position during each stationary epoch, with three epochs selected and averaged for each mouse.\n\n### Magnetic eye tracking in freely moving mice\n\nSeven mice implanted bilaterally with magnets and sensors were allowed to freely explore a 12\" circular arena for 10\u201315 min (Figure 7). The stationary arena was surrounded by a stationary, illuminated, vertically-striped drum. To quantify whether the mouse\u2019s body was actively moving or relatively still, an overhead video acquired infrared images of the mouse in the arena. A motion index was calculated by first subtracting an average background image from all frames, and then quantifying the mean absolute difference in pixel values between each frame and the next. The resulting motion trace was smoothed with a 2 s moving average to create a motion index. The upper third of motion index values were classified as \u2018Active\u2019, and the lower third were classified as \u2018Still\u2019. Eye position variability and mean eye speed measured in both eyes of a given mouse were first averaged together before comparing the population means.\n\nTo measure head movements in freely moving mice, a lightweight (1.8 g) six degree-of-freedom inertial measurement unit (SEN-10121, Sparkfun Electronics) was attached to the mouse\u2019s headpost with a screw. Roll, pitch, and yaw angles were converted into analog signals using an Arduino Mega (Arduino AG) and recorded simultaneously with eye position in Spike2.\n\n### Dual-angle video-oculography\n\nWe developed a dual-angle video-oculography system for use in calibrating the magnetic eye tracking system. This system was designed to improve upon previous video-oculography systems in terms of accuracy, cost, and speed of use. The infrared-blocking filter was removed from two web cameras (Logitech C310) and replaced with a visible light-blocking filter. Small infrared LEDs (875 nm, radiant power 20 mW, angle of half intensity 20\u00b0, TSHA4400, Digi-Key) were positioned above each camera to create two corneal reflections (CRs), one for each camera, appearing along the radius of the cornea parallel to the axis of the camera.\n\nThe dual-angle system depends on two conditions. First, the two cameras must be fixed at a known angle relative to each other, for use in the calculation below. Second, they must be equidistant from the eye, so that the images from the two cameras have the same spatial scale. To achieve these requirements, the cameras were fixed to a platform separated by an angle of 40\u00b0, with each lens equidistant (in our setup, A\u00a0=\u00a05 cm) from a small placeholder target. Correct positioning was confirmed by verifying that the image of the target was the same size in the two cameras, and appeared at the horizontal midpoint of each camera\u2019s image. For use in mice, the placeholder target was removed, and the entire platform was positioned so that the pupil appeared roughly centered\u00a0between the two CRs, to ensure that the pupil remained fully in the image when the eye rotated. The position of the platform was further adjusted so that for each camera, the CR generated by that camera\u2019s infrared LED appeared at the center of the\u00a0h camera\u2019s image (Figure 3B),\u00a0and the camera platform was then fixed in place. This ensured that the center of the eye\u2019s corneal curvature was close to the point at which the two camera axes intersected, thus placing each camera equidistant from the eye as required by the configuration of the platform.\n\nThe pupil was visualized by illuminating the cornea with infrared light, which causes the pupil to appear dark (DiScenna et al., 1995; Kaufman, 2002; Stahl et al., 2000). Sufficient contrast of the pupil relative to the cornea was provided by the two infrared LEDs used to create the CRs. Most measurements with video-oculography were conducted with additional, visible light, which constricted the pupil sufficiently to provide a clear image of pupil boundaries. A few video-oculography experiments were conducted in low light conditions, with only the two infrared LEDs (Figure 6), which caused the pupil to dilate and become occluded by the eyelid. To constrict the pupil for these recordings, a single drop of 4% pilocarpine (Henry Schein, Melville, NY) was placed on the eye 3\u20135 min before the experiment.\n\nImages were acquired in MATLAB (The MathWorks, Inc., Natick, MA) at 30 frames per second, and were analyzed offline. The locations of the pupil center (P) and CRs in the images were extracted using modified code from OpenEyes, an open source eye tracking library (www.\u200cthirtysixthspan.com\u200c/openEyes). OpenEyes uses the Starburst algorithm to locate the pupil edges (Li and Parkhurst, 2006). We modified the code by employing a Hough transform, a feature extraction technique, to provide more accurate CR localization. The CRs were then masked before processing the pupil image to avoid false detection of pupil edges. Code is available at https://github.com/hpay/eyetrack\u00a0(copy archived at https://github.com/elifesciences-publications/eyetrack).\n\nThe locations of the pupil and reference CRs in the images were used to calculate eye position by leveraging the geometry of the dual-angle setup. In each camera\u2019s image, motion of the pupil location is due to both rotation and translation of the eye relative to the camera. The component of this motion attributable to rotation alone can be isolated by subtracting the CR location from the pupil location, to yield the distances $\u0394_{1}$ and $\u0394_{2}$ (Figure 3A,B). Because the CR always appears on the radius of the cornea parallel to the axis of the camera, $\u0394_{1}$ and $\u0394_{2}$ are invariant to translations of the eye relative to the camera (Stahl et al., 2000).\n\nThe distances between the pupil and the reference CRs are related to angular eye position by:\n\n$$\n\u0394_{1}=R_{p}sin(\\theta_{1})\n$$\n\n\n\n$$\n\u0394_{2}=R_{p}sin(\\theta_{2})\n$$\n\nwhere $\\theta_{1}and\\theta_{2}$ are the angles from the axis of the respective camera to the axis of the pupil (the line connecting the center of the pupil (P) to the center of corneal curvature (C); $\\theta_{1}and\\theta_{2}$ both defined to be positive as drawn in Figure 3A), and $R_{p}$ is the distance from the plane of the pupil to the center of corneal curvature (point C in Figure 3A). Taking the ratio of the two distances eliminates Rp:\n\n$$\n\\frac{\u0394_{1}}{\u0394_{2}}=\\frac{sin(\\theta_{1})}{sin(\\theta_{2})}\n$$\n\nSince $\\theta_{1}+\\theta_{2}=40\u00b0$,\n\n$$\n\\frac{\u0394_{1}}{\u0394_{2}}=\\frac{sin(40^{\u2218}\u2212\\theta_{2})}{sin(\\theta_{2})}\n$$\n\nUsing the trigonometric identity for angle subtraction and rearranging yields a formula for calculating angular eye position:\n\n$$\n\\theta_{2}=atan(\\frac{sin\u2061(40^{\u2218})}{\u0394_{1}/\u0394_{2}+cos\u2061(40^{\u2218})})\n$$\n\nIn lieu of two cameras, a similar procedure could be implemented with a single camera, by using either angled mirrors or prisms to capture images of the eye from two distinct angles.\n\nThe video system was validated by anesthetizing two mice with ketamine (60 mg/kg)+dexmedetomidine (1 mg/kg) and physically rotating the two-camera platform via a mechanical arm that rotated about a vertical axis aligned with the mouse\u2019s eye. At each location, five frames were captured and the resulting measurements were averaged (Figure 3C).\n\n### Statistical analysis\n\nMean\u00a0\u00b1\u00a0SEM is reported for all confidence intervals. Statistical tests were conducted using Matlab. All tests were two-tailed. Two sample t-tests were used to determine if there was a difference between two groups. Paired t-tests were used to determine if a significant change occurred at different times or behavioral conditions within the same animal. To assess changes in oculomotor responses after magnet implantation, a two-way repeated measures ANOVA was conducted, with stimulus frequency and time (before vs. after magnet implantation) as factors (Figure 6). The significance level for all statistical tests was set at p<0.05. The Lilliefors test (Matlab) was used to assess normality of the data. Based on this test, all data included in the statistical tests were deemed to have been sampled from a normal distribution.\n",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "9076f18e-e6a9-479b-86e3-678186136e07",
+      "submission_id": "2ec12537-bada-41d1-8e09-e86124ff6e42",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Geoffrey Schoenbaum, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.29222.013](https://doi.org/10.7554/eLife.29222.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Magnetic eye tracking in mice\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Geoffrey Schoenbaum (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: Matt Gardner (Reviewer #2) and Jos\u00e9 Mar\u00eda Delgado-Garc\u00eda (Reviewer #3).\n\nThe reviewers and Reviewing Editor have discussed the reviews with one another and drafted a decision letter to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript the authors present a novel method using magnetic sensing that allows them to track eye movement in mice. This is timely given the increasing interest and in fact implementation of visual and touchscreen based tasks in rodents.\n\nEssential revisions:\n\n1) Please confirm that there are no substantial effects on vision (or discuss this potential issue) and the requirement for head restraint. While this is a general statement, it is particularly relevant with respect to the start of subsection \u201cSurgery\u201d.\n\n2) Is there any issue moving into rodents with the approach outlined? Discussion of this is relevant when considering potential impact of this methodological advance.\n\nSecondary suggestions for revision:\n\n1) A technique's usefulness is dependent on several characteristics such as the scope of application, the necessity of a solution, its effectiveness and its ease of use. The authors' have comprehensively demonstrated its effectiveness, and the scope and need for a solution are more up to the reader to consider. Nonetheless, the authors' should provide a bit more detail on the ease of use of the technique for researchers who might be considering whether to try it. The authors' state that the daily calibration only takes a short bit of time, yet does require head-restraint. Does the calibration require the mice to be anesthetized-- we expect not, but the authors should make this explicit. It would be useful to add details on the daily calibration procedure in reference to steps and time taken for the full procedure.\n\n2) The comparisons of eye movements on the head retrained and freely moving mice are intriguing. Is it possible that some of this additional movement could be from forces which are not generated by the eye muscles themselves such as eye movement due to acceleration of the head? Of course this would still be eye movement, but the more interesting question that the authors appear to be addressing is whether there is increased eye movement initiated by the animal, not whether the additional forces which necessarily occur during free movement cause the effect. This might be hard to address, but should be brought up due to the claims made in the paper.\n\n3) The low frequency shifts in Figure 2 are puzzling. Are these due to a slow shift in gaze, a measurement artifact or something else?\n\n4) Given the many contributions of David Robinson to the study and understanding of the oculomotor system, including the precise quantification of eye motor responses and neural organization of the system, it would be appropriate to cite this work (especially since many of the references build on Robinson's contributions).\n\n5) Subsection \u201cMagnetic tracking of eye movements in mice\" paragraph two and three. For comparative purposes with other recording systems and with other species, the gain and phase (in degrees) of evoked VOR and OKN should be quantified and represented. Indicating that \"the magnetic sensor detected robust eye movements\" is not enough!\n\n6) Subsection \u201cCalibration of magnetic eye tracking using dual-angle video-oculography\" paragraph four. The system seems to be suitable for horizontal eye movements, but what about the vertical component? The point is that eye movements in a free moving mouse will probably be the result of angular (horizontal + vertical) eye movements.\n\n7) Figure 2. Please provide information regarding gain and phase (in degrees) of recorded eye reflexes.\n\n8) Figure 6. A comparison with previous description of gain and phase (expressed in degrees) in mice would be appropriate.\n\n9) One reviewer stated, \"I think that Vetbond is not indicated for a direct contact with the eye.\"\n",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea84656b-875c-4aea-86ac-ae3622a1c1e6",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C1",
+      "claim": "Eye movements provide insights about a wide range of brain functions, from sensorimotor integration to cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye movements provide insights about a wide range of brain functions, from sensorimotor integration to cognition; hence, the measurement of eye movements is an important tool in neuroscience research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the utility of eye movements in neuroscience, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4f81e12d-21b2-4a02-b3b6-a0709daa7550",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C2",
+      "claim": "A small magnet was surgically implanted on the eye, and changes in the magnet angle as the eye rotated were detected by a magnetic field sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "A small magnet was surgically implanted on the eye, and changes in the magnet angle as the eye rotated were detected by a magnetic field sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method developed in this study, which is supported by the experimental procedures and data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "fd65b57b-44fb-4e01-941e-dba9e4960ab1",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C3",
+      "claim": "Systematic testing demonstrated high resolution measurements of eye position of <0.1\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematic testing demonstrated high resolution measurements of eye position of <0.1\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements presented in the manuscript, specifically in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "14dfd7ea-2d82-43e8-b287-9c68063a506c",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C4",
+      "claim": "Magnetic eye tracking provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing eye movements in freely moving mice (Figure 7) and by comparison with previous methods discussed in the introduction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "abea5bb1-515d-4df4-9410-591bb2f4055e",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C5",
+      "claim": "Freely moving mice showed increased eye movements compared to head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by experimental data presented in Figure 7C and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f176202f-49bb-4d49-8a2d-e193e9e83e39",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C6",
+      "claim": "Freely moving mice showed altered binocular coordination compared to head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in Figure 7G showing changes in eye divergence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "d3c256be-1c7d-4f78-bc04-175bb6d19d6b",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C7",
+      "claim": "Vision is actively controlled by eye movements, which localize and stabilize images on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Vision is actively controlled by eye movements, which localize and stabilize images on the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in vision science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "47d4be07-dbef-4689-a4a1-874069396e9d",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C8",
+      "claim": "The analysis of eye movements can provide a window on a variety of sensory, motor, and cognitive functions, such as attention, learning and memory, and decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of eye movements can provide a window on a variety of sensory, motor, and cognitive functions, such as attention, learning and memory, and decision-making (Duhamel et al., 1992; Kustov and Robinson, 1996; Raposo et al., 2012; Raymond and Lisberger, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f83a9bb8-691f-41dd-ac17-61a9440f53f8",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C9",
+      "claim": "Abnormal eye movements are associated with numerous cognitive disorders, including autism, schizophrenia, Parkinson's disease, and Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, abnormal eye movements are associated with numerous cognitive disorders, including autism, schizophrenia, Parkinson's disease, and Huntington's disease (Avanzini et al., 1979; DeJong and Jones, 1971; Holzman et al., 1976; Rosenhall et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "5f03d2e7-bcd6-40bf-97bb-bcfec1730e3f",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C10",
+      "claim": "Measurements of eye movements have been routinely implemented in neuroscientific studies of primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their broad utility, measurements of eye movements have been routinely implemented in neuroscientific studies of primates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "b35b24d3-95bf-4ee5-a160-0a60a4ddf229",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C11",
+      "claim": "Measurements of eye movements are uncommon in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, such measurements are uncommon in mice, a species that is widely used in molecular and genetic studies of behavior (Beery and Zucker, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, supported by citation and general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "7430e6a2-eebe-40f8-b5f1-a7e4a2f2d227",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C12",
+      "claim": "Mice encode visual input with high selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less dependent on vision than primates, mice encode visual input with high selectivity (Niell and Stryker, 2008), and use vision for a variety of functions including navigation (Chapillon, 1999; Chen et al., 2013a; Hopkins, 1953; Saleem et al., 2013), avoidance of predators (Yilmaz and Meister, 2013), and recognition of territorial boundaries (Mackintosh, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Niell and Stryker, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4a7e69a9-8bb4-4692-bcd6-0305f6efc8fd",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C13",
+      "claim": "Mice use vision for navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less dependent on vision than primates, mice encode visual input with high selectivity (Niell and Stryker, 2008), and use vision for a variety of functions including navigation (Chapillon, 1999; Chen et al., 2013a; Hopkins, 1953; Saleem et al., 2013), avoidance of predators (Yilmaz and Meister, 2013), and recognition of territorial boundaries (Mackintosh, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "141641c6-8fa5-4c44-8261-58a773af54a6",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C14",
+      "claim": "Mice use vision for avoidance of predators.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less dependent on vision than primates, mice encode visual input with high selectivity (Niell and Stryker, 2008), and use vision for a variety of functions including navigation (Chapillon, 1999; Chen et al., 2013a; Hopkins, 1953; Saleem et al., 2013), avoidance of predators (Yilmaz and Meister, 2013), and recognition of territorial boundaries (Mackintosh, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yilmaz and Meister, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "afaef1d6-0127-44ef-b9d1-7ab80dc656c5",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C15",
+      "claim": "Mice use vision for recognition of territorial boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less dependent on vision than primates, mice encode visual input with high selectivity (Niell and Stryker, 2008), and use vision for a variety of functions including navigation (Chapillon, 1999; Chen et al., 2013a; Hopkins, 1953; Saleem et al., 2013), avoidance of predators (Yilmaz and Meister, 2013), and recognition of territorial boundaries (Mackintosh, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mackintosh, 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "34da82f7-928c-42aa-b070-df7d720b1bee",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C16",
+      "claim": "The main obstacle to measuring eye movements in mice is their diminutive size.",
+      "claim_type": "EXPLICIT",
+      "source": "The main obstacle to measuring eye movements in mice is their diminutive size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical challenges in the field, based on knowledge and inference.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "fb6f8b0c-5539-42e1-a5e8-4afa5107cadd",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C17",
+      "claim": "Average eye diameter is only 3.4 mm in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the small eye restricts what can be implanted on the eye's surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Remtulla and Hallett, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "b2334049-d75a-4185-9508-45cfcccb5d8b",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C18",
+      "claim": "Average eye diameter is 6.4 mm in rat.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the small eye restricts what can be implanted on the eye's surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chaudhuri et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "55503515-94c0-48a8-b3dd-f6982fed2335",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C19",
+      "claim": "Average eye diameter is 9.2 mm in chicken.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the small eye restricts what can be implanted on the eye's surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Schwarz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "5457cb91-f9f5-4058-ab51-99b715d8cc87",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C20",
+      "claim": "Average eye diameter is 18 mm in rabbit.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the small eye restricts what can be implanted on the eye's surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hughes, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "d2c49808-3505-486d-a623-ad98ae245342",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C21",
+      "claim": "Average eye diameter is 21 mm in rhesus macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the small eye restricts what can be implanted on the eye's surface: average eye diameter is only 3.4 mm in mice (Remtulla and Hallett, 1985), compared to 6.4 mm in rat (Chaudhuri et al., 1983), 9.2 mm in chicken (Schwarz et al., 2013), 18 mm in rabbit (Hughes, 1972), and 21 mm in rhesus macaque (Schultz, 1940).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Schultz, 1940.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "911e92dd-913a-4115-8181-a0bde6f5102c",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C22",
+      "claim": "The only eye tracking method compatible with free motion in small animals was the electro-oculogram, which is susceptible to inaccuracies.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the only eye tracking method compatible with free motion in small animals was the electro-oculogram, which is susceptible to inaccuracies (Arden and Kelsey, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Arden and Kelsey, 1962.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "65ab27cc-2fd1-436a-b3e2-39cb8fdb9639",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C23",
+      "claim": "Video-oculography was used to measure visually driven eye movements in mice without head restraint, however the mice were constrained to a small platform, and only 20% of the measurements were useable.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, video-oculography was used to measure visually driven eye movements in mice without head restraint, however the mice were constrained to a small platform, and only 20% of the measurements were useable (Kretschmer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kretschmer et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "3324aeef-f258-4c01-bd83-9c94b8f31caa",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C24",
+      "claim": "The eye coil technique is considered the gold standard for measuring eye movements in most species.",
+      "claim_type": "EXPLICIT",
+      "source": "The eye coil, or scleral search coil, technique is considered the gold standard for measuring eye movements in most species (Boyden and Raymond, 2003; Collewijn et al., 1975; Judge et al., 1980; Koekkoek et al., 1997; Remmel, 1984; Robinson, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "fce58850-17b5-4e85-8c43-064716f2f5fb",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C25",
+      "claim": "The eye coil method has high spatial resolution of ~0.1\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advantage of the eye coil method is that it has high spatial (~0.1\u00b0) and temporal (<1 ms) resolution (Collewijn et al., 1975; Stahl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Collewijn et al., 1975 and Stahl et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "70edcce5-ca65-4093-aaf8-84c71116980a",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C26",
+      "claim": "The eye coil method has high temporal resolution of <1 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "A major advantage of the eye coil method is that it has high spatial (~0.1\u00b0) and temporal (<1 ms) resolution (Collewijn et al., 1975; Stahl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Collewijn et al., 1975 and Stahl et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "64b1f8b9-4e21-4042-b760-49a8fddc7d87",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C27",
+      "claim": "The spatial resolution of video-oculography is lower than that of the eye coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Its spatial resolution is lower than that of the eye coil (Houben et al., 2006; Kimmel et al., 2012; McCamy et al., 2015; Stahl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "57d1099c-68e9-41ef-86f3-0e46f90639ab",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C28",
+      "claim": "Inaccuracies in video-oculography can arise from changes in pupil diameter due to fluctuations in luminance or behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Inaccuracies can arise from changes in pupil diameter due to fluctuations in luminance or behavioral state (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "60a1b94f-f74b-463c-b319-9d78efbfd095",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C29",
+      "claim": "Three previous reports, two in goldfish and one in chickens, have demonstrated the potential of magnetic sensing for measuring eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Three previous reports, two in goldfish (Rodr\u00edguez et al., 2001; Salas et al., 1999) and one in chickens (Schwarz et al., 2013) have demonstrated the potential of magnetic sensing for measuring eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "45fd6db3-caa1-40ee-9286-1737b095b76d",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C30",
+      "claim": "A 0.75 \u00d7 2 mm cylinder magnet was positioned directly below and adjacent to the sensor, with the N-S axis of the magnet parallel to the plane of the sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, a 0.75 \u00d7 2 mm cylinder magnet was positioned directly below and adjacent to the sensor, with the N-S axis of the magnet parallel to the plane of the sensor, and the magnet's axis of rotation aligned to the center of the sensor (Figure 1A, left, with \u03b4 = 0 mm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "62193e09-4594-4f03-838a-6df731a0a973",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C31",
+      "claim": "When the magnet was rotated \u00b190\u00b0 about an axis perpendicular to the plane of the sensor, the magnetic sensor produced a voltage that depended on the angle of the magnet.",
+      "claim_type": "EXPLICIT",
+      "source": "When the magnet was rotated \u00b190\u00b0 about an axis perpendicular to the plane of the sensor, the magnetic sensor produced a voltage that depended on the angle of the magnet (Figure 1A, center, black traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "1d02920c-1025-47cb-986d-8ec571379b64",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C32",
+      "claim": "The magnetic sensor has two channels, which relay output from two sets of magnetoresistive elements at a 45\u00b0 orientation relative to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetic sensor we used has two channels, which relay output from two sets of magnetoresistive elements at a 45\u00b0 orientation relative to each other, so that the position tuning of the two channels is offset by 45\u00b0 (Figure 1A, center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical specifications of the sensor, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "250d20bc-5625-43d7-8ae0-5f4256aca559",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C33",
+      "claim": "Sensitivity decreased from 224.7 \u00b1 0.3 mV/\u00b0 at 0 mm to 28.1 \u00b1 1.0 mV/\u00b0 at 5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity decreased from 224.7 \u00b1 0.3 mV/\u00b0 at 0 mm to 28.1 \u00b1 1.0 mV/\u00b0 at 5 mm (average sensitivity of the two channels; sensitivity for each channel is shown separately in Figure 1A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "5447be31-0260-4e49-b88d-ea385cd18337",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C34",
+      "claim": "At 3 mm, the sensitivity was 127.0 \u00b1 1.2 mV/\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at 3 mm, a distance readily achievable in mice (see Materials and methods), the sensitivity was 127.0 \u00b1 1.2 mV/\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "04ddeb3a-8274-4b54-987e-041cafcab899",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C35",
+      "claim": "At 3 mm distance, the spatial resolution was 0.016\u00b0 \u00b1 0.005\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponded to a spatial resolution, as measured by the standard deviation of the signal at rest, of 0.016\u00b0 \u00b1 0.005\u00b0, which is nearly an order of magnitude below the noise floor measured by the best eye tracking methods in mice (Stahl et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experiments, with comparison to previous work via citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "d8fcaf79-efc5-4552-8eb9-bcfd7544f57d",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C36",
+      "claim": "Tilting the magnet by 45\u00b0 did not affect sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Tilting the magnet by 45\u00b0 did not affect sensitivity (127.8 \u00b1 4 mV/\u00b0 no tilt, 128.0 \u00b1 2.0 mV/\u00b0 with 45\u00b0 tilt, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments, shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "a549ee9e-94a1-472d-b713-32d57c0bbd82",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C37",
+      "claim": "A cylinder magnet was surgically implanted beneath the conjunctiva on the temporal margin of one eye, with the N-S axis aligned so that it created a rotating magnetic field during horizontal (nasal-temporal) eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "A cylinder magnet was surgically implanted beneath the conjunctiva on the temporal margin of one eye, with the N-S axis aligned so that it created a rotating magnetic field during horizontal (nasal-temporal) eye movements (Figure 2A; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the surgical procedure used in the study, illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "9169ab48-787f-47d9-947b-caed11a482db",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C38",
+      "claim": "The vestibulo-ocular reflex (VOR) drives compensatory eye movements in response to passive head rotation in the dark, in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The vestibulo-ocular reflex (VOR) drives compensatory eye movements in response to passive head rotation in the dark, in mice (Iwashita et al., 2001; Katoh et al., 1998; Kimpo et al., 2005; van Alphen et al., 2001) as in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "0efb9c83-2b3b-4eb3-b441-71ce68d40235",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C39",
+      "claim": "When vestibular stimuli were delivered to mice implanted with the magnetic eye tracking system, the magnetic sensor detected robust eye movements driven by the VOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, when vestibular stimuli were delivered to mice implanted with the magnetic eye tracking system, the magnetic sensor detected robust eye movements driven by the VOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "7d7621b4-296f-4361-bd11-bd8f62b9c430",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C40",
+      "claim": "Sinusoidal vestibular stimuli at a range of stimulus frequencies from 0.2 Hz to 5 Hz elicited sinusoidal eye movements at the corresponding frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Sinusoidal vestibular stimuli at a range of stimulus frequencies from 0.2 Hz to 5 Hz elicited sinusoidal eye movements at the corresponding frequencies (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "414ccdb5-1552-4873-ae5d-8a4a21c3ec17",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C41",
+      "claim": "The optokinetic reflex (OKR) drives image-stabilizing eye movements in response to motion of a visual stimulus, in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The optokinetic reflex (OKR) drives image-stabilizing eye movements in response to motion of a visual stimulus, in mice (Iwashita et al., 2001; Katoh et al., 1998) as in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "cfbb26d3-cd58-4e35-b5bb-4cad4703f0ab",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C42",
+      "claim": "When a striped drum was rotated around the mouse, the magnetic sensor detected robust eye movements driven by the OKR, at all stimulus frequencies tested (0.2 Hz\u20135 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, when a striped drum was rotated around the mouse, the magnetic sensor detected robust eye movements driven by the OKR, at all stimulus frequencies tested (0.2 Hz\u20135 Hz; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4c44f257-422a-4170-9218-12996c55e70e",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C43",
+      "claim": "In species other than primates, eye position is typically computed from video measurements using an estimate of Rp, the distance of the pupil from the center of corneal curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "In species other than primates, eye position is typically computed from video measurements using an estimate of Rp, the distance of the pupil from the center of corneal curvature (Figure 3A; Stahl et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes standard practice in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "5e647276-071a-4c9a-9810-58d9cd380acd",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C44",
+      "claim": "Difficulty in estimating Rp and variations in Rp across individuals and during the course of an experiment are sources of inaccuracy in video-oculography.",
+      "claim_type": "EXPLICIT",
+      "source": "However, difficulty in estimating Rp and variations in Rp across individuals and during the course of an experiment are sources of inaccuracy (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014; Wisard et al., 2010; Zoccolan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "609f83e9-53c0-48a8-b284-69ad14b605a9",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C45",
+      "claim": "The dual-angle video-oculography system eliminates the need to estimate Rp by using simultaneous image capture of the eye from two cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "We eliminated the need to estimate Rp by using simultaneous image capture of the eye from two cameras.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological innovation developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4a18a43d-89b7-4485-a11a-757b82e7033b",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C46",
+      "claim": "The eye position measured with dual-angle video-oculography agreed closely with true position over the full range of \u00b1 25\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the dual-angle video-oculography system, two mice were anesthetized and the cameras were rotated at known angles around one eye, over a \u00b1 25\u00b0 range. The eye position measured with video-oculography agreed closely with true position over the full range (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation experiment shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4fa8c6be-8c4d-409a-a486-3e7ead31e340",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C47",
+      "claim": "Incorporating both channels of the magnetic sensor only improved the fit to the video-derived measurements by a small amount (3.5% additional variance explained).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, incorporating both channels only improved the fit to the video-derived measurements by a small amount (3.5% additional variance explained, Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis, shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "18e9dc77-4ad1-4357-8c48-7400dc02e2d8",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C48",
+      "claim": "Including a nonlinear, quadratic term for each channel provided little additional improvement (2.3% additional variance explained compared to the two-channel model).",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimated eye position using a model that included a nonlinear, quadratic term for each channel, and found little additional improvement (2.3% additional variance explained compared to the two-channel model, Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis, shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "4332559a-9fac-40fd-bd79-90ec9395e489",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C49",
+      "claim": "The sensitivity of the magnetic sensor decreased by only 4.2% after one week.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the sensitivity of the magnetic sensor decreased by only 4.2% after one week (Figure 4E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from longitudinal measurements, shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "259b284e-d021-4a3a-9b56-0fa7b875e167",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C50",
+      "claim": "In a population of ten mice recorded 5\u20137 months after implantation, only two had unusable eye movement signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after many months, the magnetic implants were remarkably robust. In a population of ten mice recorded 5\u20137 months after implantation, only two had unusable eye movement signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from long-term follow-up measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "62cc52a8-6829-4524-98a1-6709dd43ebcb",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C51",
+      "claim": "The correlation coefficient for the magnetic system was comparable to that for the eye coil system.",
+      "claim_type": "EXPLICIT",
+      "source": "Both eye coil and magnetic systems were highly correlated with the video system, and the correlation coefficient for the magnetic system was comparable to that for the eye coil system (Figure 5A), indicating a similar level of linearity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "97372d30-1e85-4310-91ae-6687930900b3",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C52",
+      "claim": "The magnetic and eye coil systems each had spatial resolutions of <0.1\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantified in this way, the magnetic and eye coil systems each had spatial resolutions of <0.1\u00b0 (Figure 5B), similar to previous reports for the eye coil (Stahl et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the comparison, shown in Figure 5B, with reference to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f1810791-6b61-4b58-8c6a-64fe741a795e",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C53",
+      "claim": "Neither the gain nor the phase of the eye movement responses were altered after magnet implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the gain nor the phase of the eye movement responses were altered after magnet implantation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "fecc056a-134d-4772-a2d5-38eca8f3a5bf",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C54",
+      "claim": "The gain and phase of the VOR measured with magnetic eye tracking were in the range reported previously in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain and phase of the VOR measured with magnetic eye tracking (Figure 6, dashed, blue lines) were in the range reported previously in mice by our laboratory (Kimpo and Raymond, 2007) and other laboratories (Iwashita et al., 2001; van Alphen et al., 2001), as were the gain and phase of the visually driven eye movements elicited by an optokinetic stimulus at a range of frequencies (Figure 6\u2014figure supplement 2; Iwashita et al., 2001; Kimpo and Raymond, 2007; Tabata et al., 2010; van Alphen et al., 2001, 2009, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with previous studies via citations and data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "9113ecda-4243-4d06-ad4e-3d18c28cc544",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C55",
+      "claim": "The amplitude of the signal in the sensor contralateral to the eye with the magnet was only 2.7 \u00b1 0.9% of that in the ipsilateral sensor, indicating limited crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the signal in the sensor contralateral to the eye with the magnet was only 2.7 \u00b1 0.9% of that in the ipsilateral sensor, indicating limited crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from experiments testing bilateral recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "8345742f-ecd8-493c-8d47-f5d517129ca9",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C56",
+      "claim": "Freely moving mice displayed a two-fold increase in the standard deviation of eye position compared to head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, freely moving mice displayed a two-fold increase in the standard deviation of eye position (Figure 7C), as well as a four-fold increase in the mean speed of the eye (Figure 7E) compared to head-fixed mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the freely moving experiments, shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "890ad6e8-ac7d-4b51-a76e-c98e74373285",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C57",
+      "claim": "Freely moving mice displayed a four-fold increase in the mean speed of the eye compared to head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, freely moving mice displayed a two-fold increase in the standard deviation of eye position (Figure 7C), as well as a four-fold increase in the mean speed of the eye (Figure 7E) compared to head-fixed mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the freely moving experiments, shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "9b3eea7e-8f42-4502-bf60-a175d901ef03",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C58",
+      "claim": "During active, self-generated body movements, the mean eye speed was higher compared to when the body was relatively still.",
+      "claim_type": "EXPLICIT",
+      "source": "During active, self-generated body movements, the mean eye speed was higher compared to when the body was relatively still (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f6b9972c-2920-4123-91a6-9f8fa0cbf1a6",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C59",
+      "claim": "There was a strong, linear relationship between self-generated head movements about the yaw axis and horizontal eye movements in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong, linear relationship between self-generated head movements about the yaw axis and horizontal eye movements in the opposite direction (Figure 7F), suggesting that active head movements are a major driver of eye movements in freely moving mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "456b71ba-cbc7-499a-9fa4-df9dd09aa187",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C60",
+      "claim": "The eye divergence increased in unrestrained mice, compared to during head fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the eye divergence (the horizontal angular distance between the two eyes) increased in unrestrained mice, compared to during head fixation (Figure 7G, left), and the variability of eye divergence also increased (Figure 7G, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "6ee83df5-56a4-42e5-8b1f-1c7a7bca85cc",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C61",
+      "claim": "The variability of eye divergence increased in unrestrained mice compared to during head fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the eye divergence (the horizontal angular distance between the two eyes) increased in unrestrained mice, compared to during head fixation (Figure 7G, left), and the variability of eye divergence also increased (Figure 7G, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "eba35e8b-b167-4340-8b37-fc7dded4b672",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C62",
+      "claim": "Magnetic eye tracking provides a high-resolution (<0.1\u00b0) method for measuring eye movements that overcomes the challenging physical constraints of small and freely moving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic eye tracking opens up exciting new scientific opportunities by providing a high-resolution (<0.1\u00b0) method for measuring eye movements that overcomes the challenging physical constraints of small and freely moving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "620d8253-9651-4998-96c2-1356e9f889b5",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C63",
+      "claim": "The spatial resolution of magnetic eye tracking (0.098\u00b0) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091\u00b0) and other labs (0.09\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial resolution of magnetic eye tracking (0.098\u00b0) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091\u00b0; Figure 5B) and other labs (0.09\u00b0, Stahl et al., 2000), and was also comparable to the resolution of the eye coil technique in larger species such as monkeys (<0.1\u00b0, Kimmel et al., 2012) and humans (0.096\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 5B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "a45633db-0532-488b-990a-38bf753c5f73",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C64",
+      "claim": "The spatial resolution of magnetic eye tracking was comparable to the resolution of the eye coil technique in monkeys (<0.1\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial resolution of magnetic eye tracking (0.098\u00b0) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091\u00b0; Figure 5B) and other labs (0.09\u00b0, Stahl et al., 2000), and was also comparable to the resolution of the eye coil technique in larger species such as monkeys (<0.1\u00b0, Kimmel et al., 2012) and humans (0.096\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kimmel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "160fadbd-ca2f-44a5-8719-7c5f00df2850",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C65",
+      "claim": "The spatial resolution of magnetic eye tracking was comparable to the resolution of the eye coil technique in humans (0.096\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial resolution of magnetic eye tracking (0.098\u00b0) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091\u00b0; Figure 5B) and other labs (0.09\u00b0, Stahl et al., 2000), and was also comparable to the resolution of the eye coil technique in larger species such as monkeys (<0.1\u00b0, Kimmel et al., 2012) and humans (0.096\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Houben et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "fa09912a-5b7e-4d47-8b46-da6db8d213e1",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C66",
+      "claim": "The performance of the magnetic eye tracking system benefited from the use of angular magnetic field sensors containing anisotropic magnetoresistive (AMR) technology.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of the magnetic eye tracking system benefited from the use of angular magnetic field sensors containing anisotropic magnetoresistive (AMR) technology (Schwarz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technology used, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "557b8515-681d-4d09-8ab8-56eeab796817",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C67",
+      "claim": "AMR sensors can achieve high resolution, while satisfying the constraints of low power, low cost, and small sensor size.",
+      "claim_type": "EXPLICIT",
+      "source": "AMR sensors can achieve high resolution, while satisfying the constraints of low power, low cost, and small sensor size (Lenz and Edelstein, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lenz and Edelstein, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "9ba630e0-9332-4f90-bc3f-a2c8803e3355",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C68",
+      "claim": "Magnetic eye tracking is far less expensive than commercially available eye coil systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic eye tracking is also far less expensive than commercially available eye coil systems, making this approach available to more investigators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on knowledge of the costs of the two systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "857456b7-b985-47ff-85db-18855fe056b7",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C69",
+      "claim": "The lack of fragile wires in magnetic eye tracking minimizes the difficulty of surgical implantation, greatly reducing the time required for the experimenter to learn and perform the procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "A third key advantage of magnetic eye tracking is the lack of fragile wires leading to the eye, which minimizes the difficulty of surgical implantation, greatly reducing the time required for the experimenter to learn and perform the procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on the authors' experience with both methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "e0a719d2-63fe-49c9-b7e7-09711d31a7bc",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C70",
+      "claim": "The wires used for eye coil recordings often fail after several weeks following implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of fragile wires also extends the long-term reliability of the magnet implants. Only two out of ten mice followed for half a year after surgery had failed magnet implants, whereas the wires used for eye coil recordings often fail after several weeks following implantation (Stahl et al., 2000; Raymond lab, unpublished observations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and unpublished observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "70de40bb-8af9-4d90-8cd6-f68ccd5ed59d",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C71",
+      "claim": "The spatial resolution of video-oculography in rodents is 0.23\u00b0 or ~1\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the spatial resolution of magnetic eye tracking (0.1\u00b0) is superior to what has been reported for video-oculography in rodents (0.23\u00b0, Stahl et al., 2000; ~1\u00b0, Wallace et al., 2013), in monkeys (video resolution 2\u20123 \u00d7 worse than eye coil, Kimmel et al. (2012); McCamy et al., 2015) and in humans (0.56\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f21c5675-4703-4990-ac1a-5c1335684d62",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C72",
+      "claim": "In monkeys, video-oculography resolution is 2\u20123 \u00d7 worse than eye coil.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the spatial resolution of magnetic eye tracking (0.1\u00b0) is superior to what has been reported for video-oculography in rodents (0.23\u00b0, Stahl et al., 2000; ~1\u00b0, Wallace et al., 2013), in monkeys (video resolution 2\u20123 \u00d7 worse than eye coil, Kimmel et al. (2012); McCamy et al., 2015) and in humans (0.56\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kimmel et al., 2012 and McCamy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "49caa4df-0465-4035-b6ac-088cdbd428e0",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C73",
+      "claim": "In humans, video-oculography resolution is 0.56\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the spatial resolution of magnetic eye tracking (0.1\u00b0) is superior to what has been reported for video-oculography in rodents (0.23\u00b0, Stahl et al., 2000; ~1\u00b0, Wallace et al., 2013), in monkeys (video resolution 2\u20123 \u00d7 worse than eye coil, Kimmel et al. (2012); McCamy et al., 2015) and in humans (0.56\u00b0, Houben et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Houben et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "de455849-b031-4cb4-a3db-b1fa19a8a19a",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C74",
+      "claim": "The hardware required for magnetic eye tracking is more than an order of magnitude lighter (0.05 cm3 and 0.180 g total) than video-oculography systems for rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Technological advances have reduced the size of cameras to fit on the head of a rat (Wallace et al., 2013), but the hardware required for magnetic eye tracking is more than an order of magnitude lighter (0.05 cm3 and 0.180 g total) and is therefore trivial for a mouse to carry, allowing much greater mobility than possible with video-oculography (Kretschmer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison based on the specifications of the magnetic eye tracking system and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "c77a4eb7-a570-4f29-8b11-925f87194f71",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C75",
+      "claim": "Gaze direction may deviate substantially from head direction in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of robust eye movements in freely moving mice (Figure 7) suggests that gaze direction deviates substantially from head direction, as previously reported in rats (Wallace et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data in Figure 7 and supported by citation to Wallace et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "1d573177-43ea-41f2-990a-67e39c7afddd",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C76",
+      "claim": "Magnetic eye tracking and video-oculography were performed in 35 C57BL/6 mice and two hybrid C57BL/6 \u00d7 129S1/SvImJ F2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic eye tracking and video-oculography were performed in 35 C57BL/6 mice and two hybrid C57BL/6 \u00d7 129S1/SvImJ F2 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "7359065b-d7b6-459f-bfd7-67c0abe6d9dd",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C77",
+      "claim": "Eye coil and video-oculography recordings were made in an additional nine C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye coil and video-oculography recordings were made in an additional nine C57BL/6 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample used for the eye coil comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "04662b27-2125-4082-9d08-86a8d62b7139",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C78",
+      "claim": "Most mice were implanted with two neodymium magnets of size 0.75 \u00d7 1 mm (diameter \u00d7 height, grade N50, axially magnetized), which were stacked end-to-end for a total size of 0.75 \u00d7 2 mm (weight: 6.8 mg).",
+      "claim_type": "EXPLICIT",
+      "source": "Most mice were implanted with two neodymium magnets of size 0.75 \u00d7 1 mm (diameter \u00d7 height, grade N50, axially magnetized, SuperMagnetMan.com), which were stacked end-to-end for a total size of 0.75 \u00d7 2 mm (weight: 6.8 mg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "1713a874-05a9-4dab-9088-84b94aabf36c",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C79",
+      "claim": "Cylinder magnets were implanted in a single eye in 24 mice, and bilaterally in an additional seven mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Cylinder magnets were implanted in a single eye in 24 mice, and bilaterally in an additional seven mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample and procedures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "06fd1e25-1993-4c46-83af-19e484e0453e",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C80",
+      "claim": "The sensor was positioned as close as possible to the eye (2.7 \u00b1 0.2 mm, n = 8 mice, distance from the bottom surface of the sensor to the nasal-temporal axis defined by the two corners of the eye).",
+      "claim_type": "EXPLICIT",
+      "source": "The sensor was positioned as close as possible to the eye (2.7 \u00b1 0.2 mm, n = 8 mice, distance from the bottom surface of the sensor to the nasal-temporal axis defined by the two corners of the eye).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "d54a249a-8a1a-4a10-8539-a7defafe5723",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C81",
+      "claim": "Differential outputs from the two magnetic sensor channels were amplified 60x by a custom preamplifier.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential outputs from the two magnetic sensor channels were amplified 60x by a custom preamplifier (David Profitt Engineering Services, Los Altos, CA), then digitized and stored using a Power1401 A-D converter with Spike2 software (Cambridge Electronic Design, Cambridge, England).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "c1dc1b5a-e831-4066-bca4-27f8a0585bc5",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C82",
+      "claim": "The total weight of sensor, solder, and connector is 180.4 mg.",
+      "claim_type": "EXPLICIT",
+      "source": "Connections from the sensor to the amplifier were formed via an 8-pin right angle connector (Digi-Key: 609-3694-1-ND, pins; 609-3705-1-ND, socket), which could be rapidly soldered to the sensor without the need for extra wiring (total weight of sensor, solder, and connector: 180.4 mg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative specification of the hardware.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "5db2e283-d8b3-4c1b-892f-6dce1031e6ff",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C83",
+      "claim": "The HMC1512 sensor converts the direction of an external magnetic field into an analog voltage output.",
+      "claim_type": "EXPLICIT",
+      "source": "An angular magnetic field sensor (HMC1512, Honeywell Inc., size: 4.8 \u00d7 5.8 mm; weight: 76 mg) was secured to the skull above the eye using dental cement anchored to the same skull screws as were used to secure the head post. The HMC1512 sensor converts the direction of an external magnetic field into an analog voltage output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "2328f103-da0c-42c1-900f-ca2ae1252696",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C84",
+      "claim": "The magnetic field is sensed by anisotropic magnetoresistive (AMR) elements, which change their electrical resistance according to the angle \u03b8m of an applied magnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetic field is sensed by anisotropic magnetoresistive (AMR) elements, which change their electrical resistance according to the angle \u03b8m of an applied magnetic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "8ec22be0-0635-4d99-a318-f918f72c6b47",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C85",
+      "claim": "Each set of AMR elements is configured as a Wheatstone bridge to produce a differential voltage proportional to sin(2\u03b8m).",
+      "claim_type": "EXPLICIT",
+      "source": "Each set of AMR elements is configured as a Wheatstone bridge to produce a differential voltage proportional to sin(2\u03b8m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "ae702687-ede8-41c6-b2ab-7b7dce79f647",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "claim_id": "C86",
+      "claim": "The HMC1512 contains two sets of AMR elements, rotated by 45\u00b0 relative to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The HMC1512 contains two sets of AMR elements, rotated by 45\u00b0 relative to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the sensor.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "df583d57-7b30-476a-987b-4017f9b5d632",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The magnetic sensor performance was systematically characterized outside the animal by varying magnet-sensor distance and orientation. Sensitivity decreased with distance (224.7\u00b10.3 mV/\u00b0 at 0mm to 28.1\u00b11.0 mV/\u00b0 at 5mm), but remained high at 3mm (127.0\u00b11.2 mV/\u00b0) with spatial resolution of 0.016\u00b0\u00b10.005\u00b0. The system was robust to 45\u00b0 magnet tilt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 provide systematic characterization of sensor performance with quantitative measurements shown in Figure 1. The experimental design appropriately tests relevant parameters (distance, offset, tilt) that would vary during in vivo implantation. The spatial resolution at 3mm distance is nearly an order of magnitude better than existing methods (C35), providing strong validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "eebf86d6-9b86-49b6-8113-487c8017d688",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Magnetic eye tracking successfully detected vestibularly-driven (VOR) and visually-driven (OKR) eye movements in head-fixed mice across a range of stimulus frequencies (0.2-5 Hz). A cylinder magnet was implanted beneath the conjunctiva, and the magnetic sensor detected robust sinusoidal eye movements corresponding to sinusoidal stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C39, C40, and C42 are directly supported by experimental data in Figures 2B and 2C showing clear sinusoidal responses across multiple frequencies. The surgical approach (C37) is well-described and illustrated. These results demonstrate proof-of-concept for the magnetic tracking system in head-fixed mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "e9d59f15-c380-499b-be9a-c99752ee138f",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A dual-angle video-oculography system was developed that eliminates the need to estimate Rp (distance from pupil to center of corneal curvature) by using simultaneous image capture from two cameras at a fixed angle. Validation in anesthetized mice showed close agreement with true eye position over \u00b125\u00b0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 describe a methodological innovation supported by Figure 3C validation data showing high linearity (slopes ~0.97-0.99, r\u00b2>0.99). The geometric approach is sound and addresses a known limitation of standard video-oculography (C43-C44). This provides an accurate calibration method for the magnetic system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "49f57808-2923-483d-aff2-89c3a42d0492",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Calibration analysis showed that using both channels of the magnetic sensor provided only modest improvement (3.5% additional variance explained) over using the single best channel, and adding quadratic terms provided minimal further benefit (2.3% additional variance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by quantitative analysis shown in Figure 4B-C. The incremental improvements are small, justifying the use of a simpler single-channel linear model. This is appropriate model selection based on parsimony principles, though the authors could have reported cross-validated performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "3dae8c1d-22ee-4fe8-a722-2fc1f1a72e9d",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The magnetic eye tracking system showed excellent long-term stability, with sensitivity decreasing only 4.2% after one week. Even after 5-7 months, 8 of 10 mice retained usable signals, demonstrating superior longevity compared to eye coil systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by longitudinal data in Figure 4E. The one-week stability data (n=8) is robust, and the 5-7 month follow-up (n=10) demonstrates practical long-term viability. This represents a significant advantage over eye coil methods where wire failure is common (C70), though the authors note calibration factors can drift day-to-day requiring recalibration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "787afdeb-db9d-4864-8b00-e250fd4989f9",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Magnetic eye tracking achieved spatial resolution <0.1\u00b0 (0.098\u00b0), comparable to the eye coil technique in mice (0.091\u00b0 in this study, 0.09\u00b0 in Stahl et al. 2000) and to eye coil performance in larger species. Linearity was also comparable between magnetic and eye coil systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C51-C52, and C63 are supported by direct comparison data in Figure 5A-B (n=8-9 mice per method). The spatial resolution measurement method (standard deviation during stationary periods) is appropriate and matches prior literature. Statistical comparison shows no significant difference (p=0.631), validating that magnetic tracking matches the gold standard.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "7ae014b8-e607-4823-85a0-237549d00aa2",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Magnet implantation did not alter eye movement dynamics. Neither gain nor phase of VOR responses were changed after implantation, and measurements with magnetic tracking fell within the range previously reported in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by pre/post comparison data in Figure 6 (n=8 mice) showing no significant effects (p>0.3 for gain and phase across frequencies). Two-way repeated measures ANOVA is appropriate. The comparison to literature values provides additional validation, though variability across studies is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "803259b8-23d8-499a-ab17-6591584a93e9",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bilateral eye movement recording is feasible with magnetic tracking, as crosstalk between the magnet in one eye and the sensor over the opposite eye was minimal (2.7\u00b10.9% of ipsilateral signal amplitude).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by quantitative measurements in three mice with unilateral magnet implants and bilateral sensors. The low crosstalk percentage indicates minimal interference, validating the feasibility of bilateral recordings. Sample size is small but adequate for this technical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Magnetic eye tracking enabled the first reliable, high-resolution measurements of eye movements in freely moving mice. Freely moving mice showed 2-fold increase in eye position variability and 4-fold increase in mean eye speed compared to head-fixed mice, with higher speeds during active body movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C56-C58 are supported by data in Figure 7C,E from 7 mice with bilateral recordings. Statistical tests show significant differences (p<0.001). This represents a novel capability, as prior methods (C22-C23) were inadequate for freely moving mice. The finding that eye movements increase with body motion is biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "f6481d2c-7626-48bd-9165-e44d6ae2b732",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There was a strong linear relationship between self-generated head yaw movements and horizontal eye movements in the opposite direction in freely moving mice, suggesting head movements are a major driver of eye movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by correlation analysis in Figure 7F (n=4 mice with IMU recordings). The negative correlation between head yaw and horizontal eye position is consistent with vestibulo-ocular and optokinetic reflexes. However, the causal interpretation should be tempered as correlation does not prove causation, and other factors (arousal, attention) could contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "6cd6edaf-ace5-4a52-a549-2f2d1d1c0edb",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Binocular coordination was altered in freely moving compared to head-fixed mice, with increased mean eye divergence and increased variability of eye divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60-C61 are supported by bilateral recording data in Figure 7G (n=7 mice, p=0.029 for mean divergence, p=0.009 for variability). This finding extends prior work in rats (Wallace et al. 2013) and reveals that behavioral state affects binocular coordination. The measurements are direct and the statistics appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "e71f0bd2-a08e-4265-8895-bc720b39e1e3",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Magnetic eye tracking offers practical advantages over existing methods: it is lightweight (0.180g total), inexpensive, easier to implant due to lack of fragile wires, and compatible with free movement. The hardware is more than an order of magnitude lighter than video-oculography systems for rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C68-C69, and C74 describe practical advantages. Weight specifications (C74, C82) are quantitative and verifiable. Cost and ease-of-use claims (C68-C69) are comparative statements based on the authors' experience and are reasonable given the simpler hardware and lack of wires. These represent important translational advantages for widespread adoption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "8969846a-4a90-42e6-9722-8630770f39d7",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The spatial resolution of magnetic eye tracking (0.1\u00b0) is superior to video-oculography in rodents (0.23\u00b0 or ~1\u00b0), monkeys (2-3\u00d7 worse than eye coil), and humans (0.56\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71-C73 make comparative statements supported by citations to prior literature. The comparisons are appropriate and accurately represent the cited work. This positions magnetic tracking as superior to video-oculography while matching eye coil performance, supporting the method's utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "8314f106-035c-4548-894a-a598dd16d105",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The finding of robust eye movements in freely moving mice suggests that gaze direction may deviate substantially from head direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is an inference from the freely moving data (Figure 7) supported by analogy to rats (Wallace et al. 2013). While the inference is reasonable given the magnitude of eye movements observed, it is indirect - actual gaze direction would require combining eye and head orientation measurements, which were only partially done (C59 used head yaw but not full 3D head orientation).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "204752c5-1a5c-470e-8205-668c9c10975a",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used 37 mice for magnetic tracking (35 C57BL/6, 2 hybrid) and 9 mice for eye coil comparison. Most mice received 0.75\u00d72mm cylinder magnets (6.8mg) implanted beneath the conjunctiva. The sensor (76mg) was positioned 2.7\u00b10.2mm from the eye, with total hardware weight of 180.4mg.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 describe the methods and materials. Sample sizes are adequate for the comparisons made. The technical specifications are clearly stated and appropriate for the application. The exclusion criteria mentioned in the methods (scarring, low gain) are reasonable but the number of excluded animals is not reported, which could affect interpretation of success rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Eye movements provide insights into brain function and are routinely measured in primates but uncommon in mice, despite mice using vision for navigation, predator avoidance, and territorial recognition. Abnormal eye movements are associated with cognitive disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C15 provide background context supported by appropriate citations. These establish the scientific rationale for developing eye tracking methods in mice. The claims accurately represent established knowledge in the field and are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "a08e5539-7400-41ae-aecc-1960419a95fa",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The main obstacle to measuring eye movements in mice is their small eye size (3.4mm diameter vs 6.4-21mm in other species). Previous methods compatible with free motion (electro-oculogram, video-oculography) had significant limitations in accuracy or usability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 establish the technical challenge and limitations of prior methods, supported by citations. The eye diameter comparisons (C17-C21) are factual data from cited sources. The characterization of prior methods' limitations (C22-C23) accurately represents the cited work and establishes the need for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "1332d4f3-4166-4858-8663-4bad79c99f06",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The eye coil is the gold standard with ~0.1\u00b0 spatial and <1ms temporal resolution, but video-oculography has lower spatial resolution and inaccuracies from pupil diameter changes. Three previous studies demonstrated magnetic sensing potential in goldfish and chickens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 provide background on existing methods supported by appropriate citations. These accurately characterize the state of the field and position the current work as extending prior magnetic sensing approaches to mice with improved performance. The claims are factual and well-supported by literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "6954ecfa-f790-451e-8df4-8f0b0f12a15b",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The VOR and OKR drive compensatory eye movements in mice as in other species. Standard video-oculography estimates eye position using Rp, but difficulty estimating Rp and its variability are sources of inaccuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C41, C43-C44 provide background on oculomotor reflexes and video-oculography limitations, supported by citations. These establish the rationale for using VOR/OKR to test the system and for developing the dual-angle video method. The claims accurately represent established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "747fe9b9-2742-4fbe-8993-5f51d0284c74",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The magnetic tracking system uses an HMC1512 angular magnetic field sensor with anisotropic magnetoresistive (AMR) technology. AMR elements change resistance with magnetic field angle, configured as Wheatstone bridges producing voltage proportional to sin(2\u03b8m). The sensor has two channels at 45\u00b0 orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C83-C86 describe the sensor technology, supported by citation (C66-C67) and technical specifications. The description of AMR sensor operation is accurate and explains why the system can achieve high resolution with small size and low power. This technical background supports the method's feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    },
+    {
+      "id": "26bf3d06-1d77-47c5-94b4-46330bb09e33",
+      "content_id": "734dadfa-8a7b-4fce-8d46-9de0c50cce35",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Eye coil wires often fail after several weeks following implantation, whereas only 2 of 10 mice had failed magnet implants after 5-7 months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 compares long-term reliability, supported by citation (Stahl et al. 2000) and unpublished observations for eye coil failure, and by data in C50 for magnet longevity. While the comparison is somewhat informal (unpublished observations), the contrast is striking and represents a practical advantage. The 5-7 month data provides strong evidence for magnet reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T20:50:25.244530Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "45fd6db3-caa1-40ee-9286-1737b095b76d",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "62193e09-4594-4f03-838a-6df731a0a973",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "1d02920c-1025-47cb-986d-8ec571379b64",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "250d20bc-5625-43d7-8ae0-5f4256aca559",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "5447be31-0260-4e49-b88d-ea385cd18337",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "04ddeb3a-8274-4b54-987e-041cafcab899",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "d8fcaf79-efc5-4552-8eb9-bcfd7544f57d",
+      "result_id": "df583d57-7b30-476a-987b-4017f9b5d632"
+    },
+    {
+      "claim_id": "4f81e12d-21b2-4a02-b3b6-a0709daa7550",
+      "result_id": "eebf86d6-9b86-49b6-8113-487c8017d688"
+    },
+    {
+      "claim_id": "a549ee9e-94a1-472d-b713-32d57c0bbd82",
+      "result_id": "eebf86d6-9b86-49b6-8113-487c8017d688"
+    },
+    {
+      "claim_id": "0efb9c83-2b3b-4eb3-b441-71ce68d40235",
+      "result_id": "eebf86d6-9b86-49b6-8113-487c8017d688"
+    },
+    {
+      "claim_id": "7d7621b4-296f-4361-bd11-bd8f62b9c430",
+      "result_id": "eebf86d6-9b86-49b6-8113-487c8017d688"
+    },
+    {
+      "claim_id": "cfbb26d3-cd58-4e35-b5bb-4cad4703f0ab",
+      "result_id": "eebf86d6-9b86-49b6-8113-487c8017d688"
+    },
+    {
+      "claim_id": "609f83e9-53c0-48a8-b284-69ad14b605a9",
+      "result_id": "e9d59f15-c380-499b-be9a-c99752ee138f"
+    },
+    {
+      "claim_id": "4a18a43d-89b7-4485-a11a-757b82e7033b",
+      "result_id": "e9d59f15-c380-499b-be9a-c99752ee138f"
+    },
+    {
+      "claim_id": "4fa8c6be-8c4d-409a-a486-3e7ead31e340",
+      "result_id": "49f57808-2923-483d-aff2-89c3a42d0492"
+    },
+    {
+      "claim_id": "18e9dc77-4ad1-4357-8c48-7400dc02e2d8",
+      "result_id": "49f57808-2923-483d-aff2-89c3a42d0492"
+    },
+    {
+      "claim_id": "4332559a-9fac-40fd-bd79-90ec9395e489",
+      "result_id": "3dae8c1d-22ee-4fe8-a722-2fc1f1a72e9d"
+    },
+    {
+      "claim_id": "259b284e-d021-4a3a-9b56-0fa7b875e167",
+      "result_id": "3dae8c1d-22ee-4fe8-a722-2fc1f1a72e9d"
+    },
+    {
+      "claim_id": "fd65b57b-44fb-4e01-941e-dba9e4960ab1",
+      "result_id": "787afdeb-db9d-4864-8b00-e250fd4989f9"
+    },
+    {
+      "claim_id": "62cc52a8-6829-4524-98a1-6709dd43ebcb",
+      "result_id": "787afdeb-db9d-4864-8b00-e250fd4989f9"
+    },
+    {
+      "claim_id": "97372d30-1e85-4310-91ae-6687930900b3",
+      "result_id": "787afdeb-db9d-4864-8b00-e250fd4989f9"
+    },
+    {
+      "claim_id": "620d8253-9651-4998-96c2-1356e9f889b5",
+      "result_id": "787afdeb-db9d-4864-8b00-e250fd4989f9"
+    },
+    {
+      "claim_id": "f1810791-6b61-4b58-8c6a-64fe741a795e",
+      "result_id": "7ae014b8-e607-4823-85a0-237549d00aa2"
+    },
+    {
+      "claim_id": "fecc056a-134d-4772-a2d5-38eca8f3a5bf",
+      "result_id": "7ae014b8-e607-4823-85a0-237549d00aa2"
+    },
+    {
+      "claim_id": "9113ecda-4243-4d06-ad4e-3d18c28cc544",
+      "result_id": "803259b8-23d8-499a-ab17-6591584a93e9"
+    },
+    {
+      "claim_id": "14dfd7ea-2d82-43e8-b287-9c68063a506c",
+      "result_id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5"
+    },
+    {
+      "claim_id": "abea5bb1-515d-4df4-9410-591bb2f4055e",
+      "result_id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5"
+    },
+    {
+      "claim_id": "8345742f-ecd8-493c-8d47-f5d517129ca9",
+      "result_id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5"
+    },
+    {
+      "claim_id": "890ad6e8-ac7d-4b51-a76e-c98e74373285",
+      "result_id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5"
+    },
+    {
+      "claim_id": "9b3eea7e-8f42-4502-bf60-a175d901ef03",
+      "result_id": "0b96bed1-079f-45a2-88fb-c27481f9b6a5"
+    },
+    {
+      "claim_id": "f6b9972c-2920-4123-91a6-9f8fa0cbf1a6",
+      "result_id": "f6481d2c-7626-48bd-9165-e44d6ae2b732"
+    },
+    {
+      "claim_id": "f176202f-49bb-4d49-8a2d-e193e9e83e39",
+      "result_id": "6cd6edaf-ace5-4a52-a549-2f2d1d1c0edb"
+    },
+    {
+      "claim_id": "456b71ba-cbc7-499a-9fa4-df9dd09aa187",
+      "result_id": "6cd6edaf-ace5-4a52-a549-2f2d1d1c0edb"
+    },
+    {
+      "claim_id": "6ee83df5-56a4-42e5-8b1f-1c7a7bca85cc",
+      "result_id": "6cd6edaf-ace5-4a52-a549-2f2d1d1c0edb"
+    },
+    {
+      "claim_id": "eba35e8b-b167-4340-8b37-fc7dded4b672",
+      "result_id": "e71f0bd2-a08e-4265-8895-bc720b39e1e3"
+    },
+    {
+      "claim_id": "9ba630e0-9332-4f90-bc3f-a2c8803e3355",
+      "result_id": "e71f0bd2-a08e-4265-8895-bc720b39e1e3"
+    },
+    {
+      "claim_id": "857456b7-b985-47ff-85db-18855fe056b7",
+      "result_id": "e71f0bd2-a08e-4265-8895-bc720b39e1e3"
+    },
+    {
+      "claim_id": "de455849-b031-4cb4-a3db-b1fa19a8a19a",
+      "result_id": "e71f0bd2-a08e-4265-8895-bc720b39e1e3"
+    },
+    {
+      "claim_id": "70de40bb-8af9-4d90-8cd6-f68ccd5ed59d",
+      "result_id": "8969846a-4a90-42e6-9722-8630770f39d7"
+    },
+    {
+      "claim_id": "f21c5675-4703-4990-ac1a-5c1335684d62",
+      "result_id": "8969846a-4a90-42e6-9722-8630770f39d7"
+    },
+    {
+      "claim_id": "49caa4df-0465-4035-b6ac-088cdbd428e0",
+      "result_id": "8969846a-4a90-42e6-9722-8630770f39d7"
+    },
+    {
+      "claim_id": "c77a4eb7-a570-4f29-8b11-925f87194f71",
+      "result_id": "8314f106-035c-4548-894a-a598dd16d105"
+    },
+    {
+      "claim_id": "1d573177-43ea-41f2-990a-67e39c7afddd",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "7359065b-d7b6-459f-bfd7-67c0abe6d9dd",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "04662b27-2125-4082-9d08-86a8d62b7139",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "1713a874-05a9-4dab-9088-84b94aabf36c",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "06fd1e25-1993-4c46-83af-19e484e0453e",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "d54a249a-8a1a-4a10-8539-a7defafe5723",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "c1dc1b5a-e831-4066-bca4-27f8a0585bc5",
+      "result_id": "204752c5-1a5c-470e-8205-668c9c10975a"
+    },
+    {
+      "claim_id": "ea84656b-875c-4aea-86ac-ae3622a1c1e6",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "d3c256be-1c7d-4f78-bc04-175bb6d19d6b",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "47d4be07-dbef-4689-a4a1-874069396e9d",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "f83a9bb8-691f-41dd-ac17-61a9440f53f8",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "5f03d2e7-bcd6-40bf-97bb-bcfec1730e3f",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "b35b24d3-95bf-4ee5-a160-0a60a4ddf229",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "7430e6a2-eebe-40f8-b5f1-a7e4a2f2d227",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "4a7e69a9-8bb4-4692-bcd6-0305f6efc8fd",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "141641c6-8fa5-4c44-8261-58a773af54a6",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "afaef1d6-0127-44ef-b9d1-7ab80dc656c5",
+      "result_id": "ed3ff6a7-7965-4f38-ad69-853559bc4c32"
+    },
+    {
+      "claim_id": "34da82f7-928c-42aa-b070-df7d720b1bee",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "fb6f8b0c-5539-42e1-a5e8-4afa5107cadd",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "b2334049-d75a-4185-9508-45cfcccb5d8b",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "55503515-94c0-48a8-b3dd-f6982fed2335",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "5457cb91-f9f5-4058-ab51-99b715d8cc87",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "d2c49808-3505-486d-a623-ad98ae245342",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "911e92dd-913a-4115-8181-a0bde6f5102c",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "65ab27cc-2fd1-436a-b3e2-39cb8fdb9639",
+      "result_id": "a08e5539-7400-41ae-aecc-1960419a95fa"
+    },
+    {
+      "claim_id": "3324aeef-f258-4c01-bd83-9c94b8f31caa",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "fce58850-17b5-4e85-8c43-064716f2f5fb",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "70edcce5-ca65-4093-aaf8-84c71116980a",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "64b1f8b9-4e21-4042-b760-49a8fddc7d87",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "57d1099c-68e9-41ef-86f3-0e46f90639ab",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "60a1b94f-f74b-463c-b319-9d78efbfd095",
+      "result_id": "1332d4f3-4166-4858-8663-4bad79c99f06"
+    },
+    {
+      "claim_id": "9169ab48-787f-47d9-947b-caed11a482db",
+      "result_id": "6954ecfa-f790-451e-8df4-8f0b0f12a15b"
+    },
+    {
+      "claim_id": "414ccdb5-1552-4873-ae5d-8a4a21c3ec17",
+      "result_id": "6954ecfa-f790-451e-8df4-8f0b0f12a15b"
+    },
+    {
+      "claim_id": "4c44f257-422a-4170-9218-12996c55e70e",
+      "result_id": "6954ecfa-f790-451e-8df4-8f0b0f12a15b"
+    },
+    {
+      "claim_id": "5e647276-071a-4c9a-9810-58d9cd380acd",
+      "result_id": "6954ecfa-f790-451e-8df4-8f0b0f12a15b"
+    },
+    {
+      "claim_id": "fa09912a-5b7e-4d47-8b46-da6db8d213e1",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "557b8515-681d-4d09-8ab8-56eeab796817",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "5db2e283-d8b3-4c1b-892f-6dce1031e6ff",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "2328f103-da0c-42c1-900f-ca2ae1252696",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "8ec22be0-0635-4d99-a318-f918f72c6b47",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "ae702687-ede8-41c6-b2ab-7b7dce79f647",
+      "result_id": "747fe9b9-2742-4fbe-8993-5f51d0284c74"
+    },
+    {
+      "claim_id": "e0a719d2-63fe-49c9-b7e7-09711d31a7bc",
+      "result_id": "26bf3d06-1d77-47c5-94b4-46330bb09e33"
+    }
+  ],
+  "comparisons": []
+}

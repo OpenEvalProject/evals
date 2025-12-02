@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C80"
+    ],
+    "result": "The 1D E/I imbalance model is insufficient to explain joint alterations in neural firing rates and correlations observed in Fragile-X model mice. The model groups all excitatory and inhibitory components as equals and cannot account for the heterogeneous effects of different circuit parameters on circuit function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43, and C80 directly state this finding, which is supported by computational simulations (Figure 3) showing heterogeneous parameter effects and logistic model analysis (Figure 4) demonstrating that firing rates and correlations have distinct dependencies on circuit parameters. The evidence from both computational modeling and experimental data fitting converges on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Neural circuit function shows vastly heterogeneous sensitivities to changes in different cellular components. The magnitude and direction of circuit response varies dramatically across the 76 parameters tested, with some parameters having large effects and others minimal effects. Knowing whether a component is excitatory or inhibitory is insufficient to predict its effect on circuit function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by systematic parameter sensitivity analysis (Figure 3B-C, Table 1) where 76 parameters were varied by \u00b120%. The data clearly show heterogeneous effects across parameters, with magnitude varying over orders of magnitude and directions spanning all four quadrants of slope-threshold space. The methodology is sound and the conclusion is directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The direction of circuit alterations in Fmr1 KO mice reverses across development. Young animals (P9-11 and P14-16) show higher slope and threshold than WT, while adult animals (P30-40) show lower slope and threshold than WT. This developmental reversal was not apparent from firing rates and correlations alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe this finding, which is demonstrated through logistic model fitting to Ca2+ imaging data (Figure 5C). The 2D logistic model reveals opposite directions of parameter change that were masked in the raw firing rate and correlation statistics (Figure 1C). The model fits are validated (Figure 5-supplement 1) and the statistical comparisons support the developmental reversal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The sensitivity of neural activity statistics to logistic model parameters changes across development. Threshold sensitivity decreases with age (p\u22640.013 for firing rates, p<0.01 for correlations from P9-11 to P14-16), while firing rate sensitivity to slope increases from P9-11 to P14-16 (p<1e-6). This indicates that the quantitative relationships between circuit parameters and activity statistics are not fixed across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by sensitivity analysis shown in Figure 6C-D with clear statistical significance. The methodology involves calculating partial derivatives of firing rates and correlations with respect to slope and threshold parameters at fitted values for each animal. The developmental changes in sensitivity are well-documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C96",
+      "C97"
+    ],
+    "result": "The entropy of spontaneous neural activity follows an inverted-U trajectory in WT mice across development (0.38\u21920.50\u21920.45 bits/neuron), but shows monotonically increasing trajectory in Fmr1 KO mice (0.34\u21920.465\u21920.51 bits/neuron). The direction of entropy change between P14-16 and P30-40 is opposite for the two genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by entropy analysis using the population tracking model (Figure 7). The statistical comparisons are rigorous with confidence intervals and p-values reported. The entropy estimates from data agree well with estimates from fitted logistic models (Figure 7-supplement 1, R\u00b2=0.865), providing cross-validation. Sample sizes are adequate (n=6-13 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A detailed computational model of L2/3 somatosensory cortex consisting of 1700 excitatory neurons and three inhibitory subtypes (PV, 5HT3AR, SOM) driven by 1500 L4 neurons reproduces key features of in vivo responses. The model shows sigmoidal response profiles that match experimental data, with different cell types clustering in distinct regions of slope-threshold space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model construction is well-documented with parameters derived from published experimental data (C19, citations to Avermann et al. 2012, Lefort et al. 2009, Tomm et al. 2014). The model validation includes comparison to in vitro (C23, Elstrott et al. 2014) and in vivo (C24) experimental data. The clustering of cell types in slope-threshold space (C25-C27, Figure 2D) is a clear emergent property of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In the logistic model, firing rates and correlations have qualitatively different dependencies on slope and threshold parameters. Firing rate is maximal at low threshold and high slope, while correlations are maximal at high threshold and high slope. A 1D E/I balance rule normalizing firing rates alone would leave correlations unconstrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is demonstrated through analytical calculations from the logistic model (Figure 4C-D). The mathematical derivation is sound and the implications are clearly illustrated. This provides theoretical justification for why a 2D model is necessary to capture both firing rates and correlations simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Analysis of Ca2+ imaging data reveals limited changes in mean firing rates across development and genotypes, but substantial decreases in pairwise correlations with age in both genotypes. Fmr1 KO animals show slightly higher correlations than WT at P9-11 (p=0.029) and P14-16 (p=0.047), and higher firing rate variability at P9-11 (p=0.031).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These statistical findings are derived from previously published Ca2+ imaging data (C116, Gon\u00e7alves et al. 2013) with adequate sample sizes (n=6-13 per group). The statistical tests use bootstrapping methods to avoid parametric assumptions. The p-values are reported and the findings replicate previous observations about developmental decreases in correlations (C14, with citations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Logistic model fits to Ca2+ imaging data show good agreement with target statistics and reveal developmental trajectories in slope-threshold space. Young animals (P9-11) cluster at high slope and high threshold, while both genotypes move toward lower slope and threshold with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality of model fits is validated in Figure 5-supplement 1, showing good agreement between model predictions and data across all three statistics (mean firing rate, s.d. firing rate, mean correlation). The developmental trajectories in slope-threshold space (Figure 5B) are clearly visualized and provide interpretable summaries of the high-dimensional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The switch in entropy trajectory direction from WT to KO during development mirrors the reversal in logistic model parameters, suggesting a perturbed trajectory of cortical development during the critical period in Fmr1 KO mice. However, the results cannot distinguish between developmental delay and permanently altered trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel between entropy changes (Figure 7) and logistic parameter changes (Figure 5C) is clearly demonstrated. The interpretation as perturbed development is reasonable and supported by citation (C99, Meredith et al. 2012). The acknowledged limitation (C100) about inability to distinguish delay vs. permanent alteration is appropriate and honest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The redundancy property of neural circuits implies that many physiological component changes may be benign at the circuit level, and that treatments can push the system along insensitive directions without consequence as long as they perturb sensitive directions correctly. The insensitive directions form a null space in parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-reasoned implication from the parameter sensitivity analysis (Figure 3). The concept of a null space (C84) is mathematically sound. The implications for understanding disease mechanisms (C82) and treatment design (C83) are logical extensions of the findings, though they remain theoretical predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The parameter sensitivity analysis was linear and local to WT P17-22 mice, and sensitivities would likely differ in other parts of parameter space, especially near bifurcations. However, the redundancy property appears widely preserved across biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate acknowledgment of methodological limitations (C85) with reasonable speculation about generalizability (C86) supported by citation to nonlinear dynamics theory. The claim about widespread redundancy (C87) is supported by multiple citations to studies in other biological systems, providing context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C102",
+      "C103"
+    ],
+    "result": "The findings predict that qualitatively different interventions may be needed at different developmental stages in Fragile-X, and that young Fmr1 KO mice should show poorer somatosensory discrimination while adults should show poorer generalization, assuming WT mice are optimally tuned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative predictions (C91, C102, C103) based on the developmental reversal findings and theoretical considerations about optimal entropy. While the logic is sound, these remain untested hypotheses requiring behavioral validation. The assumption of optimal tuning in WT is not validated and may not hold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Simple parametric circuit models could be used to rationally design and screen intervention compounds. Given the multi-dimensionality of circuit properties, single compounds may be insufficient and combination therapies targeting multiple dimensions may be required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative proposals (C112-C115) for future applications of the modeling framework. While the logic follows from the multi-dimensional nature of circuit dysfunction demonstrated in the study, these remain untested ideas. No experimental validation of drug screening or combination therapy approaches is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The E/I imbalance model was first proposed for autism and has been applied to multiple brain disorders including schizophrenia, Rett syndrome, Fragile-X, tuberous sclerosis, and Angelman syndrome. Evidence supports E/I imbalance in multiple disorders, but no GABAergic-based treatment has been approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations (Rubenstein and Merzenich 2003 for C5; multiple citations for C7-C9). The statement about lack of approved treatments (C10) is a factual claim about clinical status supported by citation to ongoing trials (Braat and Kooy 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The experimental data comes from previously published Ca2+ imaging in C57Bl/6 WT and Fmr1 KO mice at three developmental timepoints (P9-11, P14-16, P30-40) with sample sizes of n=6-13 per group. Computational simulations used Brian 2 and analysis used MATLAB, with all code publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly documented. The data source is properly cited (Gon\u00e7alves et al. 2013), sample sizes are reported, and code availability is stated with specific URLs. This supports reproducibility of the computational analyses.",
+    "result_type": "MINOR"
+  }
+]

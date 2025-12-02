@@ -1,0 +1,444 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Shisa7 is widely expressed in the mouse brain with a distinct regional pattern. Shisa7 shares structural similarity with Shisa6 and Shisa9, is abundantly expressed in brain with a developmental profile similar to AMPAR genes, shows widespread expression except cerebellum, and is highly enriched in cortex with expression in striatum, hippocampus, and amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C7-C8, and C79-C84 are supported by multiple complementary data types including qPCR (C2, C3), in situ hybridization (C4, C5), immunoblotting (C7, C8), and structural analysis (C1). The expression pattern is confirmed by both transcript and protein level measurements with appropriate controls (Shisa7 KO validation in C6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The Shisa7 antibody is specific for Shisa7 protein as validated by absence of signal in Shisa7 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is well-supported by the KO validation experiment shown in Figure 1\u2014figure supplement 2, which demonstrates antibody specificity through loss of signal in knockout animals. This is a critical methodological validation for all subsequent immunoblotting and immunohistochemistry experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Shisa7 protein in the hippocampus is glycosylated, leading to an increase in observed molecular weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by PNGase-F treatment data in Figure 1\u2014figure supplement 2 showing molecular weight shift after deglycosylation. The comparison to Shisa6 (C9) provides additional context from prior work (Klaassen et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Shisa7 is a postsynaptic protein that co-localizes with Homer1 and is highly enriched in the postsynaptic density fraction where it co-purifies with PSD-95, GluA2, and GluN2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C14-C15, and C85-C87 are supported by immunofluorescence co-localization (Figure 1c) and biochemical fractionation data (Figure 1d). However, C13 notes that quantitative analysis was not possible due to spine loss after Shisa7 overexpression, which limits the strength of the localization data. The qualitative observations are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Shisa7 is an AMPAR-interacting protein in HEK293 cells that binds directly to homomeric GluA1, GluA2, and GluA3 receptors without subunit specificity, but has minimal affinity for GluK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by co-immunoprecipitation data in HEK293 cells shown in Figure 1e. The data demonstrate direct binding to AMPAR subunits with appropriate controls. The lack of GluK2 binding provides specificity for AMPARs over kainate receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Shisa7 forms stable associations with AMPAR subunits GluA1-3, Shisa6, and PSD-95 in native hippocampal complexes. The interaction with PSD-95 is direct and dependent on the Shisa7 type II PDZ-ligand motif (EVTV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C88-C90 are supported by mass spectrometry of native hippocampal immunoprecipitates (Table 1) and direct two-hybrid assays (Figure 1\u2014figure supplement 2). The PDZ motif dependence is demonstrated by deletion mutant analysis. Statistical analysis of mass spec data shows significant enrichment (FDR < 0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Shisa7 does not affect AMPAR deactivation, rise time, or rectification in HEK293 cells upon fast glutamate application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by electrophysiology data in Figure 2\u2014figure supplement 1 showing no significant effects on these parameters. The comparison to Shisa6 and Shisa9 (which do affect these properties) provides important context for the distinct functional profile of Shisa7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C68",
+      "C69",
+      "C98",
+      "C99"
+    ],
+    "result": "Shisa7 significantly affects AMPAR desensitization properties upon prolonged glutamate application in HEK293 cells, increasing desensitization time and lowering steady state current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C68-C69, and C98-C99 are supported by electrophysiology data with statistical analysis (Figure 2a,b; p=0.007 for desensitization time, p=0.012 for steady state current). The effects are specific to prolonged glutamate application (1s) rather than brief application (1ms).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C70",
+      "C100"
+    ],
+    "result": "Shisa7 slows recovery from desensitization in HEK293 cells, increasing the time constant from 82.6\u00b16.7 ms to 119.1\u00b110.9 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C70, and C100 are supported by paired-pulse recovery experiments with statistical analysis (Figure 2c,d; p=0.006). The quantitative effect size is clearly reported with error estimates. This contrasts with the previous study by Farrow et al. (2015) as noted in C98, C100.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Lack of Shisa7 results in faster deactivation kinetics of AMPARs in CA1 pyramidal cells (decay time 7.48\u00b10.22 ms in WT vs 5.54\u00b10.07 ms in KO, p<0.001) without affecting mEPSC rise time, amplitude, frequency, series resistance, or resting membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C71 are supported by mEPSC recordings with appropriate statistical tests (Figure 3). The selective effect on decay time without changes in other parameters suggests a specific role in AMPAR kinetics. Sample sizes (n=12-14 cells from 6 animals per genotype) appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C116"
+    ],
+    "result": "Absence of Shisa7 does not induce changes in the abundance of membrane-localized AMPARs or their auxiliary protein interactors at the synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C95-C96, and C116 are supported by immunoblotting of synaptic membrane fractions (Figure 4a, Figure 4\u2014figure supplement 1) and immunocytochemistry (Figure 4b,c). The lack of compensatory changes in other auxiliary proteins (TARPs, CNIH, Shisa9, Shisa6) is important for interpreting the functional effects. However, C35 notes between-culture variation which adds some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C72"
+    ],
+    "result": "Shisa7 KO shows faster decay kinetics (16.9\u00b11.4 ms vs 12.0\u00b10.9 ms, p=0.006) and faster rise time (2.80\u00b10.26 ms vs 2.00\u00b10.13 ms, p=0.023) for evoked AMPAR EPSCs without affecting input-output curves. The effect is specific for AMPARs and not NMDARs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C72 are supported by evoked EPSC recordings with statistical analysis (Figure 5\u2014figure supplement 1). The specificity for AMPARs is demonstrated by lack of effect on NMDAR currents. The consistency with mEPSC findings (C31) strengthens the conclusion about Shisa7's role in AMPAR kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Shisa7 does not affect short-term synaptic plasticity as measured by paired-pulse ratios or synaptic depression at 5, 20, or 50 Hz stimulation, unlike Shisa9 and Shisa6. There is no direct correlation between effects on AMPAR recovery from desensitization in vitro and synaptic depression ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C117-C121 are supported by paired-pulse and train stimulation data (Figure 5b-e) with appropriate statistical analysis. The lack of effect on short-term plasticity despite effects on desensitization recovery (C29-C30) is an important finding that distinguishes Shisa7 from other family members. The comparison to Shisa6 and Shisa9 is well-documented in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TARP \u03b3-8 is necessary for hippocampal LTP with phosphorylation at S277/S281 being important for LTP and associative learning, while Shisa9 does not have such a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are cited from previous studies (Rouach et al., 2005; Park et al., 2016; Khodosevich et al., 2014) and serve as context for the current findings on Shisa7. These are established findings in the literature used for comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C127",
+      "C128",
+      "C139"
+    ],
+    "result": "Shisa7 KO mice show decreased initiation and maintenance of hippocampal LTP. Synaptic potentiation is significantly lower in KO animals at 0-5 min (WT: 2.46\u00b10.41 vs KO: 1.52\u00b10.17, p=0.049), 20-25 min (WT: 1.81\u00b10.16 vs KO: 1.10\u00b10.11, p=0.004), and 25-30 min (WT: 1.84\u00b10.16 vs KO: 1.17\u00b10.06, p=0.004) after theta burst stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C127-C128, and C139 are supported by LTP recordings with statistical analysis (Figure 6a-c, Figure 6\u2014figure supplement 1). The effect is observed in both initiation and maintenance phases with appropriate temporal resolution. Sample sizes (n=5-6 slices from 5-6 mice per genotype) are adequate for electrophysiology. The statistical tests are appropriate (unpaired and paired t-tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C77"
+    ],
+    "result": "Glycine-induced chemical LTP increases surface GluA1 spots in WT neurons (p<0.001) but not in Shisa7 KO neurons (p=0.894), suggesting impaired AMPAR recruitment at the surface during LTP in the absence of Shisa7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C77 are supported by immunocytochemistry quantification with statistical analysis (Figure 6e, Figure 6\u2014figure supplement 2). The data from two independent experiments (n=26-28 wells per group) provide adequate replication. The lack of surface GluA1 increase in KO neurons is consistent with the electrophysiological LTP deficit (C46-C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C66",
+      "C78",
+      "C156"
+    ],
+    "result": "Shisa7 KO mice show deficits in both short-term (2 hr: WT 45.3\u00b12.9% vs KO 14.0\u00b12.86%, p<0.001) and long-term (24 hr: WT 33.0\u00b15.2% vs KO 9.2\u00b11.8%, p<0.001) contextual fear memory without differences in baseline locomotor activity, shock perception, or open field behavior. The deficit points to impaired consolidation and possibly acquisition of the US-CS association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C66, C78, and C156 are supported by contextual fear conditioning data with appropriate statistical tests (Figure 7a-d, Figure 7\u2014figure supplement 2). The control experiments (locomotor activity, shock perception) rule out confounding factors. Sample sizes (n=7-10 per group) are adequate for behavioral studies. The temporal pattern of deficits (both 2 hr and 24 hr) supports the interpretation of consolidation deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Auditory fear conditioning is not affected in Shisa7 KO mice (no genotype difference, F(1,22)=0.98, p=0.334), and KO mice show no significant genotype effects in anxiety-related tasks (open field, elevated plus maze, dark-light box). Shisa7 is expressed in the central nucleus of the amygdala, which is important for fear memory consolidation and expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by auditory fear conditioning data (Figure 7e-f) and anxiety tests (Figure 7\u2014figure supplement 2) with appropriate statistical analysis. The selective deficit in contextual but not auditory fear memory (C63) is important for localizing the function of Shisa7 to hippocampus-dependent processes. The expression in CeA (C61) is documented but does not appear to be functionally relevant for the behavioral phenotype observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C97",
+      "C110",
+      "C144",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Shisa7 is part of native hippocampal AMPAR complexes with unique characteristics compared to Shisa9 and Shisa6. It is involved in fine-tuning AMPAR channel properties, affects hippocampal synaptic plasticity, and is involved in experience-dependent changes in synaptic AMPAR expression and hippocampus-dependent fear memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C73-C76, C97, C110, C144, and C164-C167 are summary statements supported by the collective evidence from biochemical (Table 1, Figure 1d), electrophysiological (Figures 2-6), and behavioral (Figure 7) experiments. These conclusions integrate multiple lines of evidence and are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Shisa9 is not likely to decorate the same AMPAR population as Shisa7 based on absence in Shisa7 immunoprecipitates. Shisa6 interacts with TARP \u03b3-8, but TARP \u03b3-8 might not be a component of the Shisa7-AMPAR complex or may have gone undetected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is inferred from absence of Shisa9 in Shisa7 IPs (Table 1), which is reasonable but absence of evidence is not definitive evidence of absence. Claims C93-C94 acknowledge uncertainty about TARP \u03b3-8 in the Shisa7 complex, noting it may have gone undetected. The mass spec data (Table 1) shows TARP \u03b3-8 with similar levels in WT and KO, suggesting it may not be specifically enriched in Shisa7 complexes, but detection limits are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The discrepancy between HEK293 cell findings and neuronal findings on AMPAR deactivation may reflect differences in protein expression levels, neuronal cellular context, interactions with GluA2/3 subunits, phosphorylation states, or cooperative modulation with other auxiliary proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101 and C111-C115 are speculative mechanistic explanations for the observed discrepancy between in vitro (HEK293) and ex vivo (hippocampal slice) results. While C111 is a reasonable inference from the data, C101 and C112-C115 are explicitly speculative and not directly tested. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Comparative functional properties of Shisa family members and TARPs: Shisa6 reduces AMPAR deactivation and desensitization while increasing steady state current; all Shisa members reduce recovery from desensitization while only TARP \u03b3-8 increases recovery time; Shisa7 is structurally more related to Shisa6 but functionally resembles Shisa9 in some aspects; most AMPAR auxiliary proteins control surface expression but Shisa6 and Shisa7 do not under basal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109, C122-C125, and C141-C143 are comparative statements drawing on cited literature (Klaassen et al., 2016; von Engelhardt et al., 2010; Khodosevich et al., 2014; Rouach et al., 2005) and current findings. These comparisons are well-supported by the literature and provide important context for understanding Shisa7's unique functional profile. The structural relationship (C107) is cited from Pei and Grishin, 2012.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Mechanistic model for Shisa7 function in LTP: Basal AMPAR expression is not dependent on Shisa7, but LTP induction and maintenance fail in Shisa7 KO. The initial phase involves calcium increase and AMPAR immobilization through diffusional trapping (dependent on TARP phosphorylation). Shisa7 may play a role in AMPAR immobilization via PSD-95 binding through its type II PDZ motif. Subsequent phases involve AMPAR exocytosis and recruitment, which are impaired in Shisa7 KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126, C129-C131, C137-C138, and C140 are supported by data and literature. However, C132-C136, C145-C147 involve speculative mechanistic proposals about how Shisa7 functions during LTP. While C133 is supported by direct interaction data, C135-C136 and C145-C147 are explicitly speculative (\"suggested,\" \"could aid,\" \"could act\"). These represent reasonable hypotheses based on the data but require further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Context from literature on AMPAR auxiliary proteins and behavior: Studies on behavioral significance are sparse; GSG-1L KO shows impaired non-spatial but not spatial memory; TARP \u03b3-8 compounds have dose-dependent effects on spatial learning; TARP \u03b3-8 phosphorylation mutants show decreased fear memory; hippocampus is necessary for contextual but not auditory fear memory; amygdala contributes to both contextual and cued fear memory. The impact of Shisa7 deletion on plasticity is probably brain region-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 and C158-C161 are cited from literature (Gu et al., 2016; Maher et al., 2016; Park et al., 2016; Kim and Fanselow, 1992; Phillips and LeDoux, 1994; Maren et al., 1997; Stiedl et al., 2000; Gale et al., 2004) and provide important context. Claims C162-C163 are inferred from the selective contextual memory deficit despite widespread Shisa7 expression, which is a reasonable interpretation but somewhat speculative regarding the mechanism (distinct protein complex composition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "The study demonstrates concurrent involvement of multiple AMPAR-associated proteins in physiological and behavioral phenotypes and argues for molecular dissection of composite AMPAR complexes in specific brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C169 are summary statements and future directions based on the overall findings. C168 is supported by the demonstration that Shisa7 functions in a complex with other AMPAR auxiliary proteins (C19-C20) and affects both physiology and behavior. C169 is a reasonable proposal for future research directions based on the findings.",
+    "result_type": "MINOR"
+  }
+]

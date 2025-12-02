@@ -1,0 +1,989 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The first reference database contains 31,000 genome-wide ~600K-900K SNP genotyping array files from individuals tested by Direct-to-Consumer (DTC) companies such as 23andMe, AncestryDNA, and FamilyTreeDNA.",
+    "claim_type": "EXPLICIT",
+    "source": "The first reference database contains 31,000 genome-wide ~600K-900K SNP genotyping array files from individuals tested by Direct-to-Consumer (DTC) companies such as 23andMe, AncestryDNA, and FamilyTreeDNA (Figure 2A) (Erlich, 2015).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data describing the database composition and is referenced to Erlich, 2015. Figure 2A provides visual representation of the population structure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The second reference database consists of genome-wide ~700K-800K SNP genotyping array files from 1,099 cancer cell lines in the Cancer Cell Line Encyclopedia (CCLE).",
+    "claim_type": "EXPLICIT",
+    "source": "The second reference database consists of genome-wide ~700K-800K SNP genotyping array files from 1,099 cancer cell lines in the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012) and can be used for cell line authentication.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data describing the database composition and is referenced to Barretina et al., 2012.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "After 13 min of sketching using the R7 chemistry, the Bayesian algorithm re-identified the NA12890 sample with a posterior probability greater than 99.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "After 13 min of sketching using the R7 chemistry, the Bayesian algorithm re-identified the NA12890 sample (a female CEU individual from the HapMap project) with a posterior probability greater than 99.9%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from MinION sequencing and Bayesian analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The algorithm needed only 195 bi-allelic variants to re-identify the NA12890 sample.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the high error rate of this relatively old chemistry and the low coverage, the algorithm needed only 195 bi-allelic variants to re-identify the sample (Figure 3 and Supplementary file 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 3 and Supplementary file 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "195 bi-allelic variants is only ~2 times above the theoretical expectation for re-identifying a person by fingerprinting random markers.",
+    "claim_type": "EXPLICIT",
+    "source": "This is only ~2 times above the theoretical expectation for re-identifying a person by fingerprinting random markers (Lin et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by comparison to theoretical expectations cited from Lin et al., 2004.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "No exact-matching probability was observed when NA12890's sequencing data was re-sketched against reference files for her first-degree relative (NA12877) and second-degree relative (NA12879).",
+    "claim_type": "EXPLICIT",
+    "source": "To further test the robustness of our method, we re-sketched NA12890's sequencing data against reference files for her first-degree relative (NA12877) and second-degree relative (NA12879). Importantly, no exact-matching probability was observed, highlighting the specificity of our method (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Using the 31,000-individual reference database, a sample of a mixed Ashkenazi-Uzbeki male (YE001) was re-identified within 13 min after assessing 110 SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the 31,000-individual reference database (consisting of genetic profiles from individuals genotyped by DTC companies), we repeated the R7 experiment with a sample of a mixed Ashkenazi-Uzbeki male (YE001). Again, we were able to re-identify this person within 13 min after assessing 110 SNPs (Figure 2B and Supplementary file 1B), further showing that the method produces consistent results across ethnic origins.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 2B and Supplementary file 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "None of the other 31,000 individuals reached the level of matching probability achieved for YE001.",
+    "claim_type": "EXPLICIT",
+    "source": "None of the other 31,000 individuals reached this level of matching probability (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The initial selection of the prior probability had no effect on the matching ability and only slightly increased the time required to achieve a high-confidence match.",
+    "claim_type": "EXPLICIT",
+    "source": "To this end, we tested various prior probabilities of identifying the YE001 sketch. We found that the initial selection of the prior probability had no effect on the matching ability and only slightly increased the time required to achieve a high-confidence match.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data testing various prior probabilities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Even with a prior probability that considers a database around a million times bigger than the world's population (10^15), the posterior probability reached 99.9% with only 25 min of sketching YE001.",
+    "claim_type": "EXPLICIT",
+    "source": "Even with a prior probability that considers a database around a million times bigger than the world's population (1015), the posterior probability reached 99.9% with only 25 min of sketching YE001 (Figure 2\u2014figure supplement 1), showing that our method returns robust results regardless of the chosen prior.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Using R9 chemistry, samples of a Northern European female (SZ001) and a Northern European-Italian-Ashkenazi male (JP001) were re-identified using only 98\u2013134 SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "We sketched samples of a Northern European female (SZ001) and a Northern European-Italian-Ashkenazi male (JP001) using this chemistry. We were able to re-identify these two samples using only 98\u2013134 SNPs, and the fastest identification required fewer than 5 min of MinION sketching (Figure 2C and D and Supplementary file 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 2C and D and Supplementary file 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The fastest identification using R9 chemistry required fewer than 5 min of MinION sketching.",
+    "claim_type": "EXPLICIT",
+    "source": "We were able to re-identify these two samples using only 98\u2013134 SNPs, and the fastest identification required fewer than 5 min of MinION sketching (Figure 2C and D and Supplementary file 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 2C and D and Supplementary file 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "None of the other 31,000 individuals in the database were matched to SZ001 or JP001.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, none of the other 31,000 individuals in our database were matched to SZ001 or JP001 using this strategy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the matching analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The rapid re-identification seems to be linked intimately to the increased speed with which DNA strands pass through the pores with the R9 chemistry versus the R7 chemistry (250bases/sec vs 70bases/sec).",
+    "claim_type": "EXPLICIT",
+    "source": "The rapid re-identification seems to be linked intimately to the increased speed with which DNA strands pass through the pores with the R9 chemistry versus the R7 chemistry (250bases/sec vs 70bases/sec).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the observed differences in re-identification speed and known differences in sequencing speed between chemistries.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Future developments in speeding up the DNA reading time could further reduce the re-identification time.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that future developments in speeding up the DNA reading time could further reduce the re-identification time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative, based on inference from the observed relationship between sequencing speed and re-identification time.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "From the barcoded THP1 reads that were generated in ~3 min of sequencing, the sketching procedure leveraged 91 SNPs to authenticate the THP1 cell line with a posterior probability of 99.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "From the barcoded THP1 reads that were generated in ~3 min of sequencing, the sketching procedure leveraged 91 SNPs to authenticate the THP1 cell line with a posterior probability of 99.9%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the THP1 cell line authentication experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "None of the other 1098 CCLE reference files reached a probability of 99.9% or even exceeded a 10% match probability when compared to THP1.",
+    "claim_type": "EXPLICIT",
+    "source": "None of the other 1098 CCLE reference files reached a probability of 99.9% or even exceeded a 10% match probability (Figure 4A, Supplementary file 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 4A and Supplementary file 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The majority of simulated MinION sketches reached a match with a 99.9% probability using only 120\u2013140 intersected SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of simulated MinION sketches reached a match with a 99.9% probability using only 120\u2013140 intersected SNPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation data from 10,000 simulated sketching runs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "By 300 intersected SNPs, 99.6% of all sketches of the THP1 cell line were matched to its reference file with a probability of 99.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "By 300 intersected SNPs, 99.6% of all sketches of the THP1 cell line were matched to its reference file with a probability of 99.9%, and for sketches of SZ001 by 240 SNPs that intersected with its reference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation data from 10,000 simulated sketching runs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "For sketches of SZ001, by 240 SNPs that intersected with its reference, 99.6% of all sketches were matched to its reference file with a probability of 99.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "By 300 intersected SNPs, 99.6% of all sketches of the THP1 cell line were matched to its reference file with a probability of 99.9%, and for sketches of SZ001 by 240 SNPs that intersected with its reference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation data from 10,000 simulated sketching runs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "None of the simulation files failed to reach a correct match with a 99.9% probability with the correct reference file in the database.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, none of our simulation files failed to reach a correct match with a 99.9% probability with the correct reference file in the database.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation data from 10,000 simulated sketching runs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Even genetically unstable cancer cell lines can be identified with confidence using no more than 300 SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the number of mismatches per run was strongly correlated with the number of SNPs analyzed (Figure 4\u2014figure supplement 1B), the results from our sequencing runs and simulations suggest that even genetically unstable cancer cell lines can be identified with confidence using no more than 300 SNPs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental and simulation data, with reference to Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "If computing the posterior probability for 300 SNPs does not result in a 99.9% match, then the reference file for that cell line or individual is almost certainly not present in the reference database.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, the MinION sketching method relies on the presence of the reference file in the database. If computing the posterior probability for 300 SNPs does not result in a 99.9% match, then the reference file for that cell line or individual is almost certainly not present in the reference database and further sketching is highly unlikely to yield any success.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the simulation and experimental results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The algorithm correctly showed a 0% match probability to the THP1 reference file or any other cell line in the database when analyzing unresolved barcodes (50% contamination).",
+    "claim_type": "EXPLICIT",
+    "source": "To start assessing the effects of contamination, we re-analyzed the data from the THP1 experiment but without resolving the barcodes, which essentially reflects a 50% contamination. The algorithm correctly showed a 0% match probability to the THP1 reference file or any other cell line in the database (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The algorithm correctly rejects a match for samples with contamination levels above 25%.",
+    "claim_type": "EXPLICIT",
+    "source": "By sampling from the above data in different proportions, we found that the algorithm correctly rejects a match for samples with contamination levels above 25% (Figure 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Using the rapid transposase-mediated fragmentation and adaptor ligation kit, DNA extraction and ready-to-sequence library production can be completed in only 55 min.",
+    "claim_type": "EXPLICIT",
+    "source": "In only 55 min, we were able to extract DNA and produce a ready-to-sequence library (Figure 6A, example of execution: Figure 6\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Using the rapid sample preparation protocol, 239 SNPs were needed to identify SZ001 with >99.9% probability.",
+    "claim_type": "EXPLICIT",
+    "source": "In our experiment with the rapid sample preparation protocol we needed 239 SNPs to identify SZ001 with >99.9% probability (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Re-identification of DNA and cell line authentication can be completed with the same level of accuracy in one afternoon using only minimal hands-on time by the researcher.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, re-identification of DNA and cell line authentication can still be completed with the same level of accuracy in one afternoon and using only minimal hands-on time by the researcher.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the experimental results with the rapid preparation protocol.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "MinION sketching for re-identification of human samples is robust and is faster than other currently available methodologies.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results show that MinION sketching for re-identification of human samples is robust and is faster than other currently available methodologies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from all experimental results presented in the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Based on only 3\u201313 min of sequencing and 60\u2013300 informative SNPs, MinION sketching can infer the identity of an anonymous sample.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on only 3\u201313 min of sequencing and 60\u2013300 informative SNPs, MinION sketching can infer the identity of an anonymous sample.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by the range of experimental results presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The main cause of cell line mix-ups is suggested to be human error.",
+    "claim_type": "EXPLICIT",
+    "source": "The main cause of cell line mix-ups is suggested to be human error (Alston-Roberts et al., 2010; Yu et al., 2015; Almeida et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to Alston-Roberts et al., 2010; Yu et al., 2015; Almeida et al., 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The ATCC STR-based cell line authentication service requires shipping consumables and samples back-and-forth and takes 2 weeks to complete.",
+    "claim_type": "EXPLICIT",
+    "source": "While the American Type Culture Collection (ATCC) offers an STR-based cell line authentication service, the overall procedure requires shipping consumables and samples back-and-forth and takes 2 weeks to complete.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the ATCC service procedures.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "It takes only 10 cells from a line with a doubling time that is 2\u20134 hr shorter than that of the original strain to overgrow an initial culture (10^6 cells) within 2 weeks.",
+    "claim_type": "EXPLICIT",
+    "source": "It takes only 10 cells from a line with a doubling time that is 2\u20134 hr shorter than that of the original strain to overgrow an initial culture (106 cells) within 2 weeks (Figure 5\u2014figure supplement 1), which would currently be the time-point when STR typing results would be returned by the ATCC.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by modeling data shown in Figure 5\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Once cells are in log-phase it can take as few as 2 days to change the contamination level of a culture from 1% to 80%.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, once cells are in log-phase it can take as few as 2 days to change the contamination level of a culture from 1% to 80%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from cell growth dynamics.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "STR analysis is typically done using human-specific primers for amplification, and this therefore limits the identification of contaminants to ones of human origin.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, STR analysis is typically done using human-specific primers for amplification, and this therefore limits the identification of contaminants to ones of human origin (Alston-Roberts et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to Alston-Roberts et al., 2010 and knowledge of STR methodology.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "MinION sketching has the potential ability to detect DNA from contaminants of non-human origin, such as infectious organisms like mycoplasma.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method, on the other hand, does have the potential ability to detect DNA from contaminants of non-human origin, such as infectious organisms like mycoplasma.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative, based on the nature of the sequencing method.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "MinION sketching can be combined with metagenomic methods for real-time microbial detection to efficiently identify contaminants.",
+    "claim_type": "EXPLICIT",
+    "source": "Such contaminants could be identified efficiently when our pipeline is run in combination with metagenomic methods for real-time microbial detection (as in Quick et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative, based on inference and citation to Quick et al., 2015.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "With MinION sketching, cell line authentication can be achieved in the lab in one afternoon using either a hands-on or hands-off protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that with our MinION sketching method, cell line authentication can be achieved in the lab in one afternoon, either using a hands-on or hands-off protocol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the different protocols tested.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Using a hands-on ~3 hr library preparation step, after only ~3 mins of sequencing the THP1 cell line was identified out of 1,099 cancer cell lines with a posterior probability of 99.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "The first protocol involves a hands-on ~3 hr library preparation step (including DNA extraction), but after only ~3 mins of sequencing we were able to identify the THP1 cell line out of 1,099 cancer cell lines with a posterior probability of 99.9%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the THP1 experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The second protocol requires just 55 min for DNA extraction and transposase-mediated adapter ligation, after which sequencing can start.",
+    "claim_type": "EXPLICIT",
+    "source": "The second protocol requires just 55 min for DNA extraction and transposase-mediated adapter ligation, after which sequencing can start.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the rapid preparation protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "MinION sketching relies on randomly sampling SNPs from the genome, instead of a fixed set of small numbers of STRs or SNPs in a panel.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method relies on randomly sampling SNPs from the genome, instead of a fixed set of small numbers of STRs or SNPs in a panel.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the methodological approach of MinION sketching.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "MinION sketching can omit a time consuming and biased PCR step and avoid the loss of statistical power caused by allelic dropout.",
+    "claim_type": "EXPLICIT",
+    "source": "This way we can omit a time consuming and biased PCR step in our method, and avoid the loss of statistical power caused by allelic dropout.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference about the advantages of the method compared to PCR-based approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Cancerous cell lines commonly undergo loss of heterozygosity or exhibit aneuploidy, which affect STR-based re-identification of DNA samples through the loss of alleles.",
+    "claim_type": "EXPLICIT",
+    "source": "Cancerous cell lines commonly undergo loss of heterozygosity or exhibit aneuploidy, which affect STR-based re-identification of DNA samples through the loss of alleles (Capes-Davis, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to Capes-Davis, 2013 and established knowledge about cancer cell lines.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Cancer cells that are deficient in their mismatch repair (MMR) pathways and suffer from microsatellite instability are identified more accurately by SNP-based than by STR-based identification methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, cancer cells that are deficient in their mismatch repair (MMR) pathways and suffer from microsatellite instability are identified more accurately by SNP-based than by STR-based identification methods (Castro et al., 2013; Otto et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to Castro et al., 2013 and Otto et al., 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The current official ASN-0002 standards for STR analysis use an 80% matching threshold to positively match the STR profile in question to a reference file.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of these challenges, the current official ASN-0002 standards for STR analysis use an 80% matching threshold to positively match the STR profile in question to a reference file.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of official standards for STR analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Using the 80% matching threshold, cell lines can be identified correctly in 98% of the cases.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this threshold, cell lines can be identified correctly in 98% of the cases (Capes-Davis, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to Capes-Davis, 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "There is a clear correlation between the number of mismatches and the SNPs that are used to infer a match.",
+    "claim_type": "EXPLICIT",
+    "source": "In our experiments, we see a clear correlation between the number of mismatches and the SNPs that are used to infer a match.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental observations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "When simulating matching the THP1 cell line to its reference file 10,000 times, intersecting a minimum of only 300 SNPs leads to a correct match in 99.6% of the cases.",
+    "claim_type": "EXPLICIT",
+    "source": "Still, when we simulated matching the THP1 cell line to its reference file 10,000 times we found that intersecting a minimum of only 300 SNPs leads to a correct match in 99.6% of the cases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "A false-positive match to any other reference file in the CCLE database was never observed.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we found that based on this simulation, the SZ001 simulation and our experimental data, 300 SNPs could be used as a 'stop-sketching' threshold. Importantly, we never observed a false-positive match to any other reference file in the CCLE database.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by simulation and experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "As a SNP-based method MinION sketching improves the precision of re-identifying cancer cell lines compared to the STR-based identification methods.",
+    "claim_type": "EXPLICIT",
+    "source": "As a SNP-based method MinION sketching improves the precision of re-identifying cancer cell lines compared to the STR-based identification methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the experimental results and comparison to STR methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The start-up cost for the MinION is currently $1000.",
+    "claim_type": "EXPLICIT",
+    "source": "The start-up cost for the MinION is currently $1000, and multiplexing 12 DNA samples in one run makes the cost of consumables for sequencing a sample around $100.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of MinION pricing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Multiplexing 12 DNA samples in one run makes the cost of consumables for sequencing a sample around $100.",
+    "claim_type": "EXPLICIT",
+    "source": "The start-up cost for the MinION is currently $1000, and multiplexing 12 DNA samples in one run makes the cost of consumables for sequencing a sample around $100.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of MinION consumable costs and inference from multiplexing.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The cost per sample for MinION sketching is already lower than the ATCC STR-typing service, which is $195.",
+    "claim_type": "EXPLICIT",
+    "source": "This cost per sample is already lower than the ATCC STR-typing service, which is $195, but higher on a per-run basis than the Geneprint system method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on comparison of costs between MinION sketching and ATCC service.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The cost per sample for MinION sketching is higher on a per-run basis than the Geneprint system method.",
+    "claim_type": "EXPLICIT",
+    "source": "This cost per sample is already lower than the ATCC STR-typing service, which is $195, but higher on a per-run basis than the Geneprint system method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on comparison of costs between MinION sketching and Geneprint system.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The Geneprint system method can only be used with access to the Applied Biosystems 3500 platform.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the latter method can only be used with access to the Applied Biosystems 3500 platform, and involves a more elaborate protocol that requires hands-on time, therefore incurring higher costs of labor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the Geneprint system requirements.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The Geneprint system method involves a more elaborate protocol that requires hands-on time, therefore incurring higher costs of labor.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the latter method can only be used with access to the Applied Biosystems 3500 platform, and involves a more elaborate protocol that requires hands-on time, therefore incurring higher costs of labor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the Geneprint system protocol and inference about labor costs.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The requirement of extensive hands-on laboratory work seems a main driver for avoiding authentication with current STR-based tests.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the balance between cost of labor and costs of machine depreciation and consumables poses a trade-off for all methodologies, the requirement of extensive hands-on laboratory work seems a main driver for avoiding authentication with current STR-based tests.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference about barriers to adoption of STR-based testing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "MinION sketching is a very efficient and competitive re-identification method, especially when working with a small number of samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that MinION sketching requires only minimal hands-on time and provides re-identification within hours instead of days/weeks, it is a very efficient and competitive re-identification method, especially when working with a small number of samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the experimental results and comparison to other methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "MinION sketching is currently not competitive in price for high-throughput testing until sequencing costs will have decreased further.",
+    "claim_type": "EXPLICIT",
+    "source": "While the costs of MinION sequencing continue to decrease, MinION sketching is currently not competitive in price for high-throughput testing until sequencing costs will have decreased further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference about cost-effectiveness for high-throughput applications.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Only periodic testing will detect contamination and mix-ups efficiently and reduce the costs involved with irreproducible research.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method lowers the barrier for adoption of regular cell line authentication, which is important since only periodic testing will detect contamination and mix-ups efficiently and reduce the costs involved with irreproducible research.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference about the importance of periodic testing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "MinION sketching can easily be done in laboratories, in the clinic, or in biobanks as a routine sample authentication test.",
+    "claim_type": "EXPLICIT",
+    "source": "MinION sketching can easily be done in laboratories, in the clinic, or in biobanks as a routine sample authentication test.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the experimental results showing the method's practicality.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The R7 chemistry run with NA12890 generated 4,920 variants after 1 hr of MinION sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "The R7 chemistry run with NA12890 generated 4,920 variants after 1 hr of MinION sequencing, of which 7.7% were rejected after filtering for common SNPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the NA12890 sequencing run.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "7.7% of variants from the R7 chemistry run with NA12890 were rejected after filtering for common SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "The R7 chemistry run with NA12890 generated 4,920 variants after 1 hr of MinION sequencing, of which 7.7% were rejected after filtering for common SNPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the NA12890 sequencing run.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Intersecting the R7 chemistry variants with the reference file and analyzing the true error from the matched SNPs resulted in 8.9% mismatches.",
+    "claim_type": "EXPLICIT",
+    "source": "Intersecting these with the reference file and analyzing the true error from the matched SNPs resulted in 8.9% mismatches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data from the NA12890 sequencing run.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The R9 chemistry only resulted in 2% true mismatches.",
+    "claim_type": "EXPLICIT",
+    "source": "This contrasted with the R9 chemistry, which only resulted in 2% true mismatches (Supplementary file 1C-E).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by experimental data shown in Supplementary file 1C-E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "NA12890 is a female CEU individual from the HapMap project.",
+    "claim_type": "EXPLICIT",
+    "source": "After 13 min of sketching using the R7 chemistry, the Bayesian algorithm re-identified the NA12890 sample (a female CEU individual from the HapMap project) with a posterior probability greater than 99.9%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the HapMap project samples.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "THP1 is a monocytic leukemia strain.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, we explored the applicability of MinION sketching for cancer cell line authentication, a longstanding issue in the research community. We used MinION sketching and the R9 chemistry to authenticate THP1, a monocytic leukemia strain, against the second reference database that consisted of cell lines from the CCLE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the THP1 cell line.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Cell line cross-contamination is caused mostly by overgrowth from secondary cell lines with a substantially shorter generation time.",
+    "claim_type": "EXPLICIT",
+    "source": "Cell line cross-contamination is caused mostly by overgrowth from secondary cell lines with a substantially shorter generation time (Capes-Davis et al., 2010; Alston-Roberts et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to Capes-Davis et al., 2010 and Alston-Roberts et al., 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "MinION sketching requires as few as 3 min of sequencing and 60-300 random SNPs to re-identify a sample.",
+    "claim_type": "EXPLICIT",
+    "source": "MinION sketching requires as few as 3 min of sequencing and 60-300 random SNPs to re-identify a sample enabling near real-time applications of DNA re-identification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by the range of experimental results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "MinION sketching enables near real-time applications of DNA re-identification.",
+    "claim_type": "EXPLICIT",
+    "source": "MinION sketching requires as few as 3 min of sequencing and 60-300 random SNPs to re-identify a sample enabling near real-time applications of DNA re-identification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the rapid re-identification times demonstrated.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "MinION sketching capitalizes on the rapidly growing availability of genomic reference data for cell lines, tissues in biobanks, and individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method capitalizes on the rapidly growing availability of genomic reference data for cell lines, tissues in biobanks, and individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on knowledge of the growing availability of genomic reference data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "MinION sketching enables considerably faster and more robust cell line authentication relative to current practices.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, our method enables considerably faster and more robust cell line authentication relative to current practices and could help to minimize the amount of irreproducible research caused by mix-ups and contamination in human cell and tissue cultures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on inference from the experimental results and comparison to current practices.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "MinION sketching could help to minimize the amount of irreproducible research caused by mix-ups and contamination in human cell and tissue cultures.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, our method enables considerably faster and more robust cell line authentication relative to current practices and could help to minimize the amount of irreproducible research caused by mix-ups and contamination in human cell and tissue cultures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative about the potential impact of the method.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  }
+]

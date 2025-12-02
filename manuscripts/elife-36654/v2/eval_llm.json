@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C28",
+      "C29",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "VivosX is a novel in vivo disulfide crosslinking method that uses strategically positioned cysteine pairs on interacting proteins to capture site-specific protein-protein interactions within cells. The method exploits the reducing environment of the nucleus and cytosol, which prevents spontaneous disulfide formation, but allows crosslinking under oxidizing conditions induced by membrane-permeable oxidants like 4-DPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-14, C28-29, C38-40 collectively establish the conceptual and mechanistic foundation of VivosX. The method is well-defined, relies on established knowledge about cellular redox environments (C13, C27, C28), and uses structural information to guide cysteine placement (C12, C29, C38). The assumption that only nucleosome-incorporated histones crosslink (C39) is central to the method and is validated by subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "VivosX successfully detects H2A.Z-to-H2A.Z (ZxZ) crosslinks in yeast using cysteine substitutions at the L1 loop region. Four of six tested positions (A45C, T46C, G47C, R48C) showed 4-DPS-dependent ZxZ adducts that were reversible under reducing conditions. Crosslinking efficiency did not correlate well with C\u03b1-C\u03b1' distance, suggesting the L1-L1' interface is dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-49 describe the initial validation of VivosX in yeast H2A.Z. The functional complementation (C41), detection of specific crosslinked species (C44), reversibility with \u03b2-ME (C48), and lack of correlation with structural distances (C45-46) provide strong experimental support. The inference about interface dynamics (C46) is reasonable given the data, though speculative. Controls and replicates appear adequate (Figure 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The VivosX protocol includes critical quality control steps: NEM effectively blocks free thiols post-lysis to prevent artifactual crosslinking, and the 60-minute TUNES extraction time optimally solubilizes histones while preserving disulfide bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-52 describe methodological validations shown in Figure 1\u2014figure supplement 3. The NEM blocking is confirmed by two independent assays (Alexa647-maleimide labeling and prevention of non-specific crosslinks), and the extraction time is empirically optimized. These controls strengthen confidence in the method's specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "VivosX detects H2A-to-H2A (AxA) crosslinks in yeast using cysteine substitutions in the H2A L1 loop. Four of five positions (N39C, Y40C, A41C, Q42C) showed 4-DPS-dependent AxA adducts that were \u03b2-ME-reversible. Similar to H2A.Z, crosslinking efficiency did not correlate with C\u03b1-C\u03b1' distance, with some positions showing robust crosslinking despite >10 \u00c5 distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-60 demonstrate VivosX works for H2A-H2A interactions. Functional complementation (C54), specific crosslink detection (C55), reversibility (C60), and the lack of distance correlation (C56-58) parallel the H2A.Z results. The observation of background crosslinking without 4-DPS (C61-62) is noted but does not undermine the main findings. Data in Figure 2 support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "VivosX detects heterotypic H2A-to-H2A.Z (AxZ) crosslinks in yeast double mutants expressing both V5HTA1(N39C) and HTZ1(T46C)FL. The AxZ band migrates between ZxZ and AxA adducts, contains both H2A and H2A.Z as confirmed by dual antibody detection, and is reversible with \u03b2-ME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-69 describe the detection of heterotypic nucleosomes, a key capability of VivosX. The experimental design using split membranes probed with different antibodies (C68, Figure 3C) provides strong evidence for the AxZ identity. The \u03b2-ME reversibility (C69) confirms disulfide bonding. This demonstrates VivosX can distinguish all three nucleosome configurations (AA, AZ, ZZ).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Crosslinked species detected in whole cell extracts accurately reflect native nucleosome composition. The ratios of AxZ:ZxZ and AxZ:AxA in whole cell extracts (1:0.3 and 1:4.2) closely match those in purified native nucleosomes (1:0.2 and 1:3.5), validating the use of whole cell extracts for VivosX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-75 address a critical assumption of VivosX (C70). The comparison between whole cell extracts and native nucleosomes (C72, Figure 3D) provides strong validation. The explanation for higher background in native nucleosomes (C73-75) is reasonable. This result supports the practical utility of VivosX without chromatin purification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "VivosX correctly reports decreased global H2A.Z occupancy in mutants defective for H2A.Z deposition. Deletion of SWC5 or mutations in its BCNT domain (swc5(1-232), swc5(LDW\u21923A)) significantly reduced ZxZ crosslinking efficiency, consistent with their known roles in H2A.Z deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-78 demonstrate VivosX can detect biologically relevant changes in H2A.Z occupancy. The results are consistent with prior knowledge about SWC5 function (C76) and show appropriate controls. The observation about plasmid-borne SWC5 (C79-80) is noted but does not undermine the main conclusion. Data in Figure 4 support these claims with replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "VivosX correctly reports increased global H2A.Z occupancy when H2A.Z eviction is blocked. Depletion of TBP-FRB by Anchor-away increased ZxZ crosslinks and decreased monomeric H2A.Z (N=3, p<0.05), while depletion of SWC5-FRB decreased ZxZ crosslinks, demonstrating VivosX accurately reports global H2A.Z chromatin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-85 provide critical validation of VivosX by showing it detects both increases and decreases in H2A.Z occupancy. The use of Anchor-away for conditional depletion is appropriate, results are consistent with prior ChIP-seq data (C83), statistical analysis is provided (C88), and biological replicates are included. Figure 5A data support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "VivosX reveals that the transcription machinery preferentially disassembles ZZ nucleosomes over AZ nucleosomes. Blocking PIC assembly by TBP-FRB depletion preferentially increased ZxZ adducts while decreasing monomeric H2A.Z, with changes that were small but reproducible across three biological replicates and statistically significant (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-7, C86-88 describe a novel biological finding enabled by VivosX's ability to distinguish ZZ from AZ nucleosomes. The experimental design is sound (1 hr depletion before crosslinking, C109), statistical analysis is provided (C88), and the interpretation is logical given the data (Figure 5B-C). This demonstrates VivosX can address questions not easily answered by other methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "VivosX works in human MCF10A cells. Expression of H2A.Z(H43C)V5 in human cells produced 4-DPS-dependent crosslinked species that were absent in wild-type H2A.Z and were eliminated by \u03b2-ME treatment, demonstrating VivosX is applicable across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C89-95 demonstrate VivosX extends to human cells. The choice of H43C position is justified (C90-91), appropriate controls are included (wild-type H2A.Z), and \u03b2-ME reversibility confirms disulfide bonding (C95). The more complex pattern in human cells (C92-93) is explained by ubiquitination (see next result). Figure 6 data support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "VivosX distinguishes ZZ nucleosomes with different ubiquitination states in human cells. The method detected non-ubiquitinated ZxZ, mono-ubiquitinated ZxZ (uZxZ), and di-ubiquitinated ZxZ (uZxuZ) species. Mutation of ubiquitination sites (K120/K121\u2192RR) confirmed band identities, and the two ubiquitin moieties are on opposite faces of the ZZ nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C96-103 describe a sophisticated application of VivosX to detect post-translational modification stoichiometry. The experimental design using K120/K121\u2192RR mutants (C97-98, C100) provides strong evidence for band assignments. The deduction about ubiquitin placement (C102) is logical and consistent with prior literature (C103). This demonstrates VivosX's utility beyond simple interaction detection. Figure 6 data support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Ectopic H2A.Z expression in human cells is ~5-fold higher than endogenous levels, which may cause misincorporation and affect the observed distribution of modified and unmodified H2A.Z.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-105 acknowledge an important caveat of the human cell experiments. The overexpression is documented (Figure 6\u2014figure supplement 2) and the potential for artifacts is appropriately noted (C105). This limitation does not invalidate the demonstration that VivosX works in human cells, but does limit interpretation of the biological significance of the ubiquitination patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors acknowledge potential 'observer effect' artifacts where crosslinking might perturb chromatin dynamics. To mitigate this, H2A.Z deposition/eviction was blocked for \u22651 hr before crosslinking in validation experiments, though indirect interference cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-110 discuss an important limitation. The experimental design consideration (C109) is appropriate, but the authors acknowledge they cannot rule out indirect effects (C110). The fact that VivosX correctly reported known changes in H2A.Z occupancy (C5, C85) provides some reassurance, but the concern remains valid. This is appropriately presented as a caveat rather than a fatal flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "4-DPS treatment does not dramatically affect bulk Z-to-Z crosslinking through oxidative stress responses. Similar ZxZ levels were observed with or without sodium azide (which blocks ATP-dependent processes), though genomic rearrangement of ZZ nucleosomes cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-113 address oxidative stress concerns with a control experiment (Figure 3\u2014figure supplement 1D-E). The azide experiment (C112) provides some reassurance about bulk effects, but the caveat about genomic rearrangement (C113) is appropriately noted. This control is useful but not definitive, as azide may not fully block all stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C57",
+      "C58",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The L1-L1' interface is dynamic, as evidenced by robust crosslinking at positions with C\u03b1-C\u03b1' distances >7 \u00c5 and at solvent-inaccessible positions. Multiple factors including conformational dynamics, solvent accessibility, and local biochemical environment affect crosslinking efficiency, explaining the lack of correlation with static structural distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-46, C57-58, C114-123 provide a mechanistic interpretation of the crosslinking data. The observation of crosslinking at unexpected positions (C115, C116) is well-documented. The proposed explanations involving conformational dynamics (C117-118, C120) and biochemical factors (C121-123) are reasonable and supported by cited literature (C119, C121). The 'clamshell' model (C119-120) is speculative but plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The majority of nucleosomes in the double mutant are expected to crosslink upon 4-DPS treatment, with uncrosslinked species representing non-nucleosomal H2A-H2B and H2A.Z-H2B dimer pools (39% and 26% of total, respectively). These may be associated with chaperones, remodelers, or exist as hexasomes or non-nucleosomal complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-128 interpret the uncrosslinked species in the data. The expectation of efficient crosslinking (C125) is supported by cited in vitro work (C124). The quantification of uncrosslinked pools (C126) is data-based (Figure 3). The speculations about dimer associations (C127-128) are reasonable and appropriately presented as possibilities with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Endogenous cysteines outside ~15 \u00c5 from the intended probe should not interfere with VivosX, as demonstrated by lack of crosslinking at distant positions (H44C, T49C, G38C). Endogenous cysteines near interaction interfaces could potentially be exploited as probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-130 provide practical guidance for applying VivosX to other proteins. The argument is supported by negative controls (C129) showing no crosslinking at distant positions. The suggestion about exploiting endogenous cysteines (C130) is reasonable speculation for future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "No 4-DPS-dependent H3 C110-C110' crosslinking was detected in human cells despite efficient H2A.Z L1-L1' crosslinking, consistent with prior findings that H3 C110 is inaccessible to thiol-specific reagents without nucleosome destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-133 describe a negative result that validates VivosX specificity. The lack of H3 crosslinking (C132, Figure 6\u2014figure supplement 1A) despite efficient H2A.Z crosslinking demonstrates the method's selectivity. The consistency with prior literature (C133) strengthens this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The L1-L1' interface of ZZ nucleosomes in human cells is solvent accessible and dynamic, as evidenced by efficient crosslinking at H43C despite an 8.2 \u00c5 C\u03b1-C\u03b1' distance. Crosslinking of monoubiquitylated H2A.Z suggests this accessibility is independent of transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-136 extend the dynamics findings to human cells. The efficient crosslinking despite large distance (C134-135) parallels yeast findings. The observation about ubiquitylated H2A.Z in heterochromatin (C136) provides additional support for transcription-independent dynamics, though this inference is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "VivosX is a versatile method applicable to diverse protein-protein interactions beyond histones, including transcription factor dimers (bHLH-LZ), post-translational modification stoichiometry (PCNA), and potentially cytosolic interactions. The method is simple, cost-effective, and applicable from yeast to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C137-152 discuss future applications and overall conclusions. While VivosX is demonstrated for histones in yeast and human cells (C150-152, SUPPORTED), the suggested applications to other systems (C137-146) are speculative. The claim about cytosolic applicability (C147-149) is based on cited work with GFP but not directly demonstrated. These are reasonable extrapolations but require experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

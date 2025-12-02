@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Behavioral comprehension testing showed that speech intelligibility was significantly reduced in the 1-channel vocoded condition but not in the 8-channel condition, with no differences between early blind and sighted groups in comprehension performance across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 collectively demonstrate successful behavioral manipulation of intelligibility through vocoding. Statistical analyses using linear mixed-effects models show significant effects of intelligibility (p<0.001) but no effects of blindness or interaction, with orthogonal contrasts confirming that natural and 8-channel conditions were equally intelligible while 1-channel was at chance. The behavioral data validate the experimental manipulation and control for group differences in attention or motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MEG coherence analysis revealed maximal cerebro-acoustic coherence between 6-7 Hz over temporal sensors, with source reconstruction confirming strongest coherence in bilateral temporal lobes including primary auditory cortex across both groups and all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 establish the basic neural tracking of speech envelope at syllabic rate. The peak frequency (6-7 Hz) is appropriately attributed to Italian syllabic rate (~7 Hz) versus English (~6.2 Hz) used in prior studies. Source reconstruction confirms expected temporal lobe localization. These findings replicate established speech tracking phenomena and provide the foundation for subsequent group comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Right superior and middle temporal cortex showed stronger synchronization to intelligible versus unintelligible speech across both groups, suggesting this region interfaces acoustic speech processing and comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate intelligibility modulation of speech tracking in right STG/MTG (p<0.05, FWE-corrected). The finding is appropriately interpreted as an interface between perception and comprehension. The result is consistent with the asymmetric sampling in time model and replicates prior findings. Statistical correction and bilateral group analysis support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C63",
+      "C67"
+    ],
+    "result": "Early blind individuals showed enhanced cerebro-acoustic coherence in parieto-occipital cortex (centered on bilateral Precuneus) compared to sighted individuals, irrespective of speech intelligibility, suggesting involvement in low-level acoustic processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C63, C67 establish enhanced speech envelope tracking in parieto-occipital regions of early blind participants (p<0.05, FWE-corrected). The lack of intelligibility modulation appropriately supports interpretation as low-level acoustic processing. The finding is consistent with prior work showing general auditory responses in this region after early visual deprivation (C64-C66). The statistical approach and interpretation are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Right calcarine sulcus (primary visual cortex) in early blind individuals showed selectively enhanced synchronization to intelligible speech compared to sighted individuals, with no overall group difference across conditions, indicating sensitivity to speech intelligibility rather than simple acoustic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45 demonstrate a critical interaction effect: calcarine sulcus responds more to intelligible speech in early blind versus sighted (p<0.05, FWE-corrected in ROI; p<0.005 uncorrected whole-brain). Post-hoc tests confirm the effect is driven by intelligible conditions (p=0.004) not unintelligible (p=0.29). The lack of difference between natural and 8-channel conditions (C39-C40) appropriately rules out low-level acoustic degradation as the driver. The absence of main effect of group (C43-C44) strengthens the interpretation that this reflects intelligibility-specific processing rather than general auditory enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C68",
+      "C130"
+    ],
+    "result": "Early blind individuals showed enhanced functional connectivity (phase-locking value) between calcarine sulcus and superior temporal gyrus compared to sighted individuals, with no modulation by intelligibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C68, C130 demonstrate increased connectivity between occipital and temporal regions in early blind (\u03c7\u00b2[1]=4.32, p=0.038) using phase-locking value analysis in the theta range. Linear mixed-effects models appropriately control for repeated measures. The lack of intelligibility effects (p=0.241) and interaction (p=0.716) is clearly reported. The analysis is restricted to functionally-defined ROIs from prior analyses, which is methodologically sound though limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C131"
+    ],
+    "result": "Directional connectivity analysis revealed that sighted individuals show feed-forward projections from calcarine sulcus to superior temporal gyrus, while early blind individuals show a more balanced connectivity profile trending toward the reverse direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62, C131 demonstrate altered directionality using phase-slope index (\u03c7\u00b2[1]=4.54, p=0.033). Post-hoc one-sample t-tests show significant CS\u2192STG bias in sighted (t[14]=-2.22, p=0.044) but not blind (t[16]=0.74, p=0.47). The statistical approach is appropriate for directional connectivity. However, the 'trend' toward reverse direction in blind is not statistically significant, so the interpretation should be more cautious. The finding supports a reverse hierarchical model but the directionality in blind remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The occipital cortex of early blind individuals adopts an architecture that tracks speech material at both acoustic (parieto-occipital) and intelligibility-sensitive (calcarine) levels, with enhanced and altered connectivity to temporal regions, suggesting the occipital cortex does not fully abstract from reorganized sensory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 synthesize the major findings into a coherent interpretation. The conclusion that occipital cortex tracks speech material is directly supported by the coherence data (C33-C45). The claim about not fully abstracting from sensory inputs (C6) is appropriately supported by the finding of acoustic-level tracking in parieto-occipital regions (C33-C35) and intelligibility-sensitive tracking in calcarine (C36-C45). The connectivity findings (C4-C5, C52-C62) provide mechanistic support. This represents the primary conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C164"
+    ],
+    "result": "The authors propose that reorganization in blind occipital cortex may be constrained by pre-existing audiovisual speech integration pathways present in sighted individuals (biased connectivity hypothesis), with the mapping of language onto occipital cortex building upon oscillatory architecture typically linking auditory and visual speech rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111, C124-C127, C164 present a mechanistic hypothesis supported by extensive citations to prior work on audiovisual speech integration (C88-C106) and biased connectivity (C107-C109). While the hypothesis is plausible and well-motivated by the literature, it remains speculative (evidence_type: SPECULATION for most claims). The current data show enhanced connectivity and altered directionality but do not directly test whether this arises from pre-existing audiovisual pathways versus other mechanisms. The hypothesis generates testable predictions but requires additional experiments (e.g., developmental studies, direct manipulation of connectivity) for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C119",
+      "C161"
+    ],
+    "result": "The findings contrast with previous proposals that occipital involvement in speech processing is abstracted from sensory input and purely reflects higher-level operations, instead demonstrating that occipital regions respond to speech at a sensory level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116, C119, C161 present an important theoretical contrast with prior work (C112-C113). The demonstration that peri-calcarine cortex aligns to temporal dynamics of intelligible speech (C115) and is functionally connected to auditory regions (C116) directly supports this interpretation. The finding of acoustic-level tracking in parieto-occipital regions (C33-C35) further supports sensory-level processing. However, the interpretation could be more nuanced: the intelligibility sensitivity in calcarine (C36-C45) suggests some level of abstraction beyond pure sensory processing. The contrast is valid but the dichotomy between 'sensory' and 'abstract' may be oversimplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The study replicates previous findings of enhanced phase coupling between right hemisphere and speech envelope at syllabic rate, with right hemispheric sensitivity to intelligible speech observed in both temporal and occipital regions of blind individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 appropriately situate the findings within the asymmetric sampling in time model (C133-C137). The right hemisphere lateralization of intelligibility effects in both STG (C31) and calcarine (C36-C38) is clearly demonstrated. The replication of prior speech tracking findings (C138) strengthens confidence in the methods. The observation of coinciding right hemisphere effects (C139) is interesting but the functional significance of this lateralization pattern requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C159"
+    ],
+    "result": "The behavioral task did not allow direct assessment of the link between reorganized occipital cortex and speech comprehension performance, as performance was at ceiling for intelligible conditions and at chance for unintelligible conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149, C159 appropriately acknowledge a key limitation. The ceiling/floor effects in behavioral performance (Table 1) preclude correlating brain activity with individual differences in comprehension. The authors appropriately discuss the complexity of linking single-region activity to behavior (C148-C149) and cite relevant work on redeployment mechanisms (C150-C158). This limitation is important for interpreting the functional significance of the findings, though it does not invalidate the neural observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The study included 17 early blind and 16 sighted participants matched for age, with blind participants being congenitally blind or severely visually impaired from birth, all proficient Braille readers and native Italian speakers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C173 describe the participant sample. Age matching is confirmed statistically (C169: t[30]=0.19, p=0.85). The description of visual status (C170) is appropriate though includes some heterogeneity (residual vision before age 3-4 in some participants, one participant with sight loss at age 10). This heterogeneity could affect results but is typical of early blind samples. Exclusion criteria (C172-C173) are appropriate. Sample size (n=17 EB, n=16 SI) is reasonable for MEG studies but relatively small for detecting subtle effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The experimental design used natural speech and two vocoded conditions (8-channel maintaining intelligibility, 1-channel removing intelligibility) from Italian audiobooks, with MEG recorded at 1 kHz from a 306-sensor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C178 describe the experimental methods. The vocoding manipulation is well-established and appropriately implemented. The perceptual characteristics (C176-C177) are validated by behavioral data (C19-C24). MEG acquisition parameters (C178) are standard. The use of Italian stimuli is appropriate for the participant population and explains the 6-7 Hz peak frequency (C27-C28). The naturalistic audiobook stimuli enhance ecological validity compared to synthetic speech.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C165",
+      "C166"
+    ],
+    "result": "The study supports the view that functional specialization in human cortex results from dynamic interplay between genetic and environmental factors during development rather than being predetermined at birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 present the broad theoretical implication. The demonstration of language-related reorganization in occipital cortex following early visual deprivation provides evidence for experience-dependent plasticity. However, the interpretation that this argues against predetermined organization may be too strong. The findings are equally consistent with constrained plasticity (biased connectivity hypothesis, C107-C111) where reorganization follows pre-existing pathways. The data support plasticity but do not definitively resolve the nature-nurture debate about cortical organization.",
+    "result_type": "MAJOR"
+  }
+]

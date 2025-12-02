@@ -1,0 +1,1901 @@
+{
+  "submission": {
+    "id": "efa4f8aa-46ed-40a5-8a90-47ae86a5467c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T22:09:42.302134Z",
+    "updated_at": "2025-12-01T22:09:42.302134Z"
+  },
+  "content": [
+    {
+      "id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "submission_id": "efa4f8aa-46ed-40a5-8a90-47ae86a5467c",
+      "content_type": "manuscript",
+      "content_text": "# Migration confers winter survival benefits in a partially migratory songbird\n\n## Authors\n\n- Daniel Z\u00fa\u00f1iga<sup>1</sup> ([ORCID: 0000-0001-7198-7242](https://orcid.org/0000-0001-7198-7242))\n- Yann Gager<sup>1</sup>\n- Hanna Kokko<sup>3</sup>\n- Adam Michael Fudickar<sup>1</sup>\n- Andreas Schmidt<sup>1</sup>\n- Beat Naef-Daenzer<sup>5</sup>\n- Martin Wikelski<sup>1</sup>\n- Jesko Partecke<sup>1</sup> ([ORCID: 0000-0002-9526-8514](https://orcid.org/0000-0002-9526-8514)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Ornithology Radolfzell Germany\n2. Department of Biology University of Konstanz Konstanz Germany\n3. Department of Evolutionary Biology and Environmental Studies University of Zurich Zurich Switzerland\n4. Environmental Resilience Institute Indiana University Bloomington United States\n5. Swiss Ornithological Institute Sempach Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo evolve and to be maintained, seasonal migration, despite its risks, has to yield fitness benefits compared with year-round residency. Empirical data supporting this prediction have remained elusive in the bird literature. To test fitness related benefits of migration, we studied a partial migratory population of European blackbirds (Turdus merula) over 7 years. Using a combination of capture-mark-recapture and radio telemetry, we compared survival probabilities between migrants and residents estimated by multi-event survival models, showing that migrant blackbirds had 16% higher probability to survive the winter compared to residents. A subsequent modelling exercise revealed that residents should have 61.25% higher breeding success than migrants, to outweigh the survival costs of residency. Our results support theoretical models that migration should confer survival benefits to evolve, and thus provide empirical evidence to understand the evolution and maintenance of migration.\n\n## Introduction\n\nThe adaptive function of migration has often been hypothesized to be a selective advantage to escape adverse situations caused by seasonal fluctuations of food resources or environmental conditions. This seasonality may impose considerable constraints to life, particularly during the winter season. Seasonal migration allows animals to cope with temporal environmental fluctuations by moving between geographically distant habitats (Fryxell and Sinclair, 1988). Given that much of our planet offers seasonally varying resources, it is not surprising that migration has evolved repeatedly in many taxa (Chapman et al., 2011). Theoretical research on the evolution of migration (Lundberg, 1987; 1988; Taylor and Norris, 2007; Griswold et al., 2010; Kokko, 2011; Shaw and Levin, 2011; Shaw and Couzin, 2013) has yielded a key prediction: migration should offer either survival or breeding benefits compared to residency. In anadromous fish, for example, individuals migrate between freshwater and ocean habitats. Recent comparisons of migrant and resident steelheads (Oncorhynchus mykiss) found that female migrants have higher fecundity than females that remain in fresh water streams (Satterthwaite et al., 2009; Hodge et al., 2014, 2016). Similarly, the noctuid moth (Autographa gamma) performs a multi-generational migration which confer substantial reproductive benefits by allowing a lineage to spread to multiple sites (Chapman et al., 2012). Regarding survival benefits, individuals of a fresh water fish (Rutilus rutilus), increase their survival during the winter by migrating from lakes to streams to avoid predation risks (Skov et al., 2013).\n\nIn birds, seasonal migration has often been argued to bring about survival benefits, as it allows individuals to avoid inhospitable conditions during the non-breeding season, while the same region can offer abundant resources during the breeding season (Lack, 1954). Species exhibiting polymorphisms in migratory behavior provide an excellent opportunity to test predictions of fitness components. In partially migratory species, some individuals migrate while others remain as year-round residents, thereby allowing for between-group comparisons within the same population. Theory predicts that if residency enhances breeding success in territorial birds, then there should be a corresponding benefit to migrants; higher survival over non-breeding season is a clear, but empirically understudied, possibility (Lundberg, 1987; Kokko, 2011). Despite the extensive research done on bird migration, there is limited empirical evidence regarding its fitness benefits, as data on fitness-related variation in migratory strategies are logistically difficult to collect in the field. Despite logistical challenges, studies on European robins (Erithacus rubecula) and American dippers (Cinclus mexicanus) report that migrants have lower survival and reproductive success than residents (Adriaensen and Dhondt, 1990; Gillis et al., 2008; Green et al., 2015). Further, a recent study comparing fitness measures of resident and migrant cormorants (Phalacrocorax aristotelis) reported higher reproductive success in residents compared to migrants (Grist et al., 2017).\n\nWe studied a partially migratory population of European blackbirds (Turdus merula) (Figure 1) to test whether migration confers survival benefits during the winter. The migrants of our population overwinter, on average, 800 km west-southwest from the breeding grounds (Fudickar and Partecke, 2012) (Figure 2a and b) and the majority of migrants are females (Fudickar et al., 2013). We fitted multi-event survival models using presence-absence data obtained by capture-mark-recapture and radio-telemetry of 192 resident and 70 migrant free-living blackbirds over the course of seven years. These models account for variation in re-encounter probabilities in relation to space, time and behaviour of the birds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/28123/elife-28123-fig1-v1.jpg)\n\n**Figure 1.:** Migrants and residents of a breeding population of European blackbirds are in sympatry during the summer months (March - October). During the wintering months (November \u2013 March) migrants and residents overwinter in different habitats.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/28123/elife-28123-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mean overwintering locations (red symbols) and 25% kernel utilization distribution (red lines) of 22 blackbirds were calculated using the light-level data acquired by geolocators during the wintering months (November \u2013 February). Raw light level data were processed using the R package \u2018GeoLight\u2019(Lisovski and Hahn, 2012) and Kernel utilization distributions were calculated to estimate the error of each location. Filled red circles represent 16 individuals with one single measurement. The other symbols represent six individuals with at least two repeated measurements in different years. (B) Histogram of the migratory distance of migrants. (C) Female radio-tagged blackbird.\n\nWe compared the survival probabilities between residents and migrants during two different seasons: summer (mean start date: March 2\u00a0\u00b1\u00a014.5 days - mean end date: November 2\u00a0\u00b1\u00a07.4 days) and winter (mean start date: November 3\u00a0\u00b1\u00a07.4 days - mean end date: March 1\u00a0\u00b1\u00a014.5 days). Based on theoretical models of partial migration in birds (Kokko, 2011), which assume that residency offers reproductive benefits (access to better breeding territories) and that migration should confer survival benefits for at least some individuals if the winter conditions at the breeding ground are harsh, we predicted that migrants should have higher survival probabilities during the winter period, whereas summer survival might not differ between migrants and residents.\n\n## Results and discussion\n\nWe found that winter mortality is an important determinant of lifespan, as blackbirds had lower probability to survive the winter (\u03a6\u00a0=\u00a00.60; 95% CI\u00a0=\u00a00.55\u20130.66) than the summer season (\u03a6\u00a0=\u00a00.89; 95% CI\u00a0=\u00a00.82\u20130.94) (Table 1, model 3) despite the shorter duration of the former season. This result strongly supports the hypothesis that migration confers survival benefits compared with residency as an alternative strategy.\n\nThere was no difference between juveniles and adults in survival probability within a season. Juveniles (\u03a6\u00a0=\u00a00.89; 95% CI\u00a0=\u00a00.80\u20130.94; model 4 Table 1) have similar probability to survive the summer as adults (\u03a6\u00a0=\u00a00.90; 95% CI\u00a0=\u00a00.83\u20130.94; model 4 Table 1). During winter, juveniles also have a comparable probability (\u03a6\u00a0=\u00a00.59; 95% CI\u00a0=\u00a00.49\u20130.68; model 4 Table 1) to survive as adults (\u03a6\u00a0=\u00a00.61; 95% CI\u00a0=\u00a00.55\u20130.67; model 4 Table 1).\n\n**Table 1.**\n Models examining effects of various covariates (Season, migratory strategy, sex, age) on survival (\u03a6) and detection probabilities (P) of a partially migratory population of European blackbirds between 2009 and\u00a02016.All models were compared to the base model using Akaike\u2019s Information Criterion (AICc), Delta AICc, and changes in model deviance (Dev).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Number of parameters</th>\n      <th>QAICc</th>\n      <th>Delta AICc (\u0394i)</th>\n      <th>Weights (\u03c9i)</th>\n      <th>Deviance</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>(1) \u03a6 [season\u00a0+\u00a0migr.].P[migr]</td>\n      <td>5</td>\n      <td>1408.3</td>\n      <td>0.00</td>\n      <td>0.59</td>\n      <td>1398.2</td>\n    </tr>\n    <tr>\n      <td>(2) \u03a6 [season\u00a0+\u00a0migr\u00a0+ sex.].P[migr]</td>\n      <td>6</td>\n      <td>1409.2</td>\n      <td>0.95</td>\n      <td>0.36</td>\n      <td>1397.1</td>\n    </tr>\n    <tr>\n      <td>(3) \u03a6 [season].P[migr]</td>\n      <td>4</td>\n      <td>1414.3</td>\n      <td>6.04</td>\n      <td>0.02</td>\n      <td>1406.2</td>\n    </tr>\n    <tr>\n      <td>(4) \u03a6 [season\u00a0+\u00a0juv\u00a0+ ad.].P[migr]</td>\n      <td>5</td>\n      <td>1416.1</td>\n      <td>7.79</td>\n      <td>0.02</td>\n      <td>1406.0</td>\n    </tr>\n    <tr>\n      <td>(5) \u03a6 [migr].P[migr]</td>\n      <td>4</td>\n      <td>1447.1</td>\n      <td>38.82</td>\n      <td>0.01</td>\n      <td>1439.0</td>\n    </tr>\n    <tr>\n      <td>(6) \u03a6 [.].P[migr]</td>\n      <td>3</td>\n      <td>1448.2</td>\n      <td>39.98</td>\n      <td>0.00</td>\n      <td>1442.2</td>\n    </tr>\n    <tr>\n      <td>(7) \u03a6 [sex].P[migr]</td>\n      <td>4</td>\n      <td>1449.9</td>\n      <td>41.6</td>\n      <td>0.00</td>\n      <td>1441.9</td>\n    </tr>\n    <tr>\n      <td>(8) \u03a6 [season\u00a0+\u00a0migr].P[season]</td>\n      <td>5</td>\n      <td>1504.0</td>\n      <td>95.75</td>\n      <td>0.00</td>\n      <td>1493.9</td>\n    </tr>\n    <tr>\n      <td>(9) \u03a6 [season].P[season]</td>\n      <td>5</td>\n      <td>1504.2</td>\n      <td>95.89</td>\n      <td>0.00</td>\n      <td>1494.1</td>\n    </tr>\n    <tr>\n      <td>(10) \u03a6 [season\u00a0+\u00a0sex\u00a0+\u00a0migr].P[season]</td>\n      <td>6</td>\n      <td>1504.9</td>\n      <td>96.60</td>\n      <td>0.00</td>\n      <td>1492.7</td>\n    </tr>\n    <tr>\n      <td>(11) \u03a6 [season\u00a0+\u00a0sex].P[.]</td>\n      <td>3</td>\n      <td>1530.3</td>\n      <td>122.02</td>\n      <td>0.00</td>\n      <td>1524.3</td>\n    </tr>\n    <tr>\n      <td>(12) \u03a6 [season\u00a0+\u00a0sex]. P[.]</td>\n      <td>4</td>\n      <td>1530.6</td>\n      <td>122.4322</td>\n      <td>0.00</td>\n      <td>1522.6</td>\n    </tr>\n    <tr>\n      <td>(13) \u03a6 [season\u00a0+\u00a0migr].P[.]</td>\n      <td>4</td>\n      <td>1531.0</td>\n      <td>122.7</td>\n      <td>0.00</td>\n      <td>1522.9</td>\n    </tr>\n    <tr>\n      <td>(14) \u03a6 [season\u00a0+\u00a0juv\u00a0+ ad.]. P[.]</td>\n      <td>4</td>\n      <td>1523.2</td>\n      <td>123.0</td>\n      <td>0.00</td>\n      <td>1523.2</td>\n    </tr>\n    <tr>\n      <td>(15) \u03a6 [season\u00a0+\u00a0sex\u00a0+\u00a0migr].P[.]</td>\n      <td>5</td>\n      <td>1532.0</td>\n      <td>123.7</td>\n      <td>0.00</td>\n      <td>1521.9</td>\n    </tr>\n    <tr>\n      <td>(16) \u03a6 [.].P[Season]</td>\n      <td>3</td>\n      <td>1528.9</td>\n      <td>126.7</td>\n      <td>0.00</td>\n      <td>1528.9</td>\n    </tr>\n  </tbody>\n</table>\n\nIn line with our predictions, migratory European blackbirds had higher winter survival rates than resident blackbirds. The best model (model 1, Table 1) estimated markedly higher winter survival for migrants (\u03a6\u00a0=\u00a00.73; 95% confidence intervals (CI)\u00a0=\u00a00.62\u20130.81, Figure 3) than for residents (\u03a6\u00a0=\u00a00.57; 95% CI\u00a0=\u00a00.50\u20130.63, Figure 3), taking into account the lower detection probability for migrants (P=0.19; 95% CI\u00a0=\u00a00.13\u20130.26, Figure 3) compared to residents (P=0.74; 95% CI\u00a0=\u00a00.69\u20130.78). Our second model, which included sex and had modest support (model 2, delta AICc\u00a0=\u00a00.95, Table 1), predicted that migrants have higher winter survival probability than residents, which was also predicted by model 1. Sex differences were not substantial (during summer: male residents \u03a6\u00a0=\u00a00.90; 95% CI\u00a0=\u00a00.83\u20130.95; female residents \u03a6\u00a0=\u00a00.89; 95% CI\u00a0=\u00a00.89\u20130.94; male migrants \u03a6\u00a0=\u00a00.95; 95% CI\u00a0=\u00a00.89\u20130.98, female migrants \u03a6\u00a0=\u00a00.94; 95% CI\u00a0=\u00a00.87\u20130.97; during winter: male residents \u03a6\u00a0=\u00a00.58; 95% CI\u00a0=\u00a00.51\u20130.65; female residents \u03a6\u00a0=\u00a00.53; 95% CI\u00a0=\u00a00.44\u20130.62; male migrants \u03a6\u00a0=\u00a00.75; 95% CI\u00a0=\u00a00.63\u20130.84, and female migrants \u03a6\u00a0=\u00a00.71; 95% CI\u00a0=\u00a00.60\u20130.81; detection probability was lower for migrants (P=0.19; 95% CI\u00a0=\u00a00.13\u20130.26) than for residents (P=0.74; 95% CI\u00a0=\u00a00.69\u20130.78)). It is reassuring that both models 1 and 2 agree on the importance of residency vs. migration in winter, while we refrain from making strong statements regarding the effect of sex, given that Burnham and Anderson, 2002 advise against considering inferior models competitive in cases like our model 2 (delta AIC within about 0\u20132 units of the best model, the difference being caused by one parameter added to the best model and the log-likelihood essentially unchanged).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/28123/elife-28123-fig3-v1.jpg)\n\n**Figure 3.:** Survival probability (\u03a6) and 95% confidence intervals of migrants (red) and residents (yellow) birds estimated using the best ranked multievent capture - mark recapture model (\u03a6 [season\u00a0+migr].P[migr]). Detection probability (P) was estimated as 0.74 for residents and 0.19 for migrants. 262 birds were included in this analysis (192 were classified as residents and 70 were classified as migrants).\n\nOur findings support the theoretical predictions that migration yields survival benefits during the\u00a0winter. In addition, our results provide an explanation for the maintenance of the migrant phenotype in the partially migratory population of European blackbirds that we studied. Residency is predicted to provide reproductive benefits given that year-round occupancy provides, for example, advantages in establishing breeding territories (Kokko, 2011). The two phenotypes can persist as evolutionary stable strategies (ESS) due to frequency dependent selection if the overall fitness of migrants and residents is equal (Lundberg, 1987). Given the lack of data on the reproductive performance of migrants and residents in our present study, we estimated how much the reproductive performance of residents should be to compensate the survival benefits of migration. If we assume migrant and resident winter survival to be 0.73 and 0.57 respectively, and summer survival of 0.89 for both strategies, then we can estimate the expected number of reproductive attempts for a migrant as 0.73 + $\\frac{0.73\\times0.89}{1-0.73\\times0.89}$ = 2.58, and 0.57 + $\\frac{0.57\\times0.89}{1-0.57\\times0.89}$ = 1.60 for residents. Therefore, the expected lifetime number of reproductive seasons is 61.25% higher for migrants than for residents due to higher survival of the former. This calculation assumes that the first breeding season requires one overwintering to be completed successfully, while all other events require an additional surviving sequence of summer followed by winter before a new breeding event can happen. The format for this assumption is s1s2 / (1\u2013 s1s2) which is the solution for the series s1s2 + (s1s2)2+(s1s2)3+\u2026, (s1 corresponds to winter survival probability and s2 to summer survival probability), each subsequent term requiring one sequential survival event through one summer and one winter season.\n\nWe conclude from this calculation that the reproductive performance of residents would have to be 61.25% higher than in migrants to achieve equal fitness of the alternative strategies. Such benefits could come about from prior residency effects (either occupying a better territory or avoiding floater status), combined with a longer time spent in the breeding habitat which can make multiple nesting or re-nesting (in case of failure) more likely. Considering that blackbirds are a multi-brood species (2\u20133 broods a year), it could be possible that residents gain a 61.25% higher breeding success compared to migrants. Future studies need to confirm these calculations. If resident breeding success is higher than 61.25%, then the fitness of migrants will be lower than the fitness of residents and migration would be a conditional strategy operating under frequency-dependent selection. For conditional migration strategies, some intrinsic phenotypic characteristics (sex, age, dominance) result in a need to adopt a strategy that might yield overall lower fitness than what residents on average achieve, but it is the better choice to optimize individual fitness (Lundberg, 1987). To distinguish between these two alternatives, data of reproductive success for this species are needed (note that comparisons within existing studies, such as Grist et al., 2017 on cormorants, do not incorporate all the processes we have envisaged above).\n\nIt is also plausible that year-to-year variation of winter environmental conditions at the breeding grounds play a role shaping the incidence of migration versus residency over time. For instance, during a harsh and long winter, the survival of residents might be lower compared to a mild and short winter. If fewer residents survive an unusually harsh winter and establish breeding territories during the subsequent breeding season, many high-quality territories would remain vacant for migrants to take advantage of after arrival in the spring. Furthermore, if residents that do survive harsh winters begin the breeding season in poor condition, then physically dominant migrants could successfully take-over prime territories from residents. Under this scenario, the prior residency effect would not be acting at full strength (Drent et al., 2003; Jahn et al., 2010; Kokko, 2011) and migrants would gain breeding benefits.\n\nWe found no evidence for sex differences in survival (though some ambiguity remains, as a moderately supported model two includes sex as an explanatory variable \u2014 note that the best model does not). This raises the question: why are females more likely to migrate than males in the study population (Fudickar et al., 2013)? We can think of two potential reasons for this observation: either there is differential survival, or differential breeding success for each sex. Regarding survival, one line of thinking is to argue that residency is more dangerous for females than for males, because overwintering blackbirds form foraging flocks and an individual\u2019s access to food is related to its position within the flock hierarchy (Lundberg and Schwabl, 1983). Within these flocks, females are subordinate to males (Lundberg and Schwabl, 1983; Lundberg, 1985). Therefore, females would be predicted to suffer higher mortality if they remain as residents during winter, when food is limited, than if they migrate. However, our data do not align perfectly with this interpretation: if overwinter survival during residency was a strong factor driving sex differences in migratory strategy, we ought to have seen lower winter survival in resident females than in males, but this was not the case. The other possible explanation relies on differential breeding success between sexes. It is conceivable that resident males enjoy priority access to prime territories as soon as the breeding season starts. However, it should always be remembered that females, too, may benefit from better territories, thus an early presence may be beneficial for them as well\u00a0(Creighton, 2001;\u00a0Kokko et al., 2006;\u00a0Kokko, 2011;\u00a0Snow, 1956). It would be important to understand exactly how territory acquisition differs between males and females, especially because earlier data from the same geographical area have shown that reproductive success of migrant and resident blackbirds is sex-dependent (Schwabl, 1983) such that male residents have higher reproductive success than male migrants, while female residents and migrants have similar reproductive success. Understanding the mechanisms of territory acquisition could help explain why fewer males migrate: if frequency-dependency penalizes late-arriving males whereas late breeding females are not severely penalized, then the same magnitude of survival differences will favor a larger migratory population within females than within males.\n\nIn our study, we excluded 11 birds that migrated during the winter and 11 that switched strategies between years, as we considered these sample sizes to be too small for detailed inferences. Departures during the winter usually occurred during periods of cold temperatures and snow accumulation (Fudickar et al., 2013). Extreme weather conditions and low food availability might trigger these movements\u00a0during\u00a0winter. Future, more extensive studies could conceivably determine lifetime fitness of these strategies. By examining the fitness benefits conferred by migration, our study is able to provide strong support for the hypothesis that migration confers winter survival benefits.\n\nOur methodology, which allows comparisons between classes that differ greatly in detectability, can hopefully also shed light on systems where benefits and risks of migration are shared by all individuals of a population, many of which are threatened by risks along their migratory flyways (Wilcove and Wikelski, 2008). Further understanding of how, where and why migratory animals die will illuminate the path to direct conservation efforts to protect migratory species.\n\n## Materials and methods\n\n### Capturing and tagging\n\nA total of 469 blackbirds were captured and tagged in a mixed deciduous/coniferous forest in southern Germany (N 47\u00b0 47\u2019, E 9\u00b0 2\u2019) during spring and summer over seven consecutive years (2009\u20132016). Sex and age were determined using plumage differences (Svensson, 1992). Juvenile birds were sexed using DNA-based sex identification (Griffiths et al., 1998). To this end, a blood sample (50 \u00b5l) was collected and stored in Queen\u2019s Lysis buffer (Seutin et al., 1991).\n\nEach bird was equipped with a radio transmitter in combination with (i) a light-level geolocator (Mk 10S, and Mk 12S\u00a0\u2264\u00a01.2 g; British Antarctic Survey, Cambridge, UK) during 2009\u20132011, or (ii) light-level geolocator (Intigeo-P65\u00a0\u22641.2 g Migrate Technology, Cambridge, UK) during 2012\u20132013 or (iii) a Pinpoint GPS logger (\u22642 g; Biotrack Ltd, Dorset, UK) during 2014. Birds tagged during 2015, however, were equipped just with a radio transmitter (mean weight\u00a0\u00b1SD: 1.94 g\u00a0\u00b1\u00a00.12). Radio transmitters were provided in 2009\u20132012 and 2014\u20132015 by Sparrow Systems, Fisher, IL, USA and in 2014 by The Swiss Ornithological Institute, Sempach, Switzerland. The total weight of the devices carried by the birds was (mean\u00a0\u00b1SD) 3.9 g\u00a0\u00b1\u00a00.19 in 2009\u20132011; 3.3 g\u00a0\u00b1\u00a00.20 in 2012; 4.15 g\u00a0\u00b1\u00a00.11 in 2013; 4.13 g\u00a0\u00b1\u00a00.11 in 2014. The total weight of the tracking devices was less than 5% of the body weight of the birds in each year of the study. The life span of the battery was at least 12 months. The tags were attached by means of leg-loop harnesses.\n\n### Data collection\n\nWe collected presence\u2013absence data at regular intervals through a manual and/or an automated radio telemetry system. Manual radio tracking was carried out twice per week using a handheld three element Yagi antenna (AF Antronics, Inc., Urbana, IL, USA) and AR 8200 MKIII handheld receiver (AOR U.S.A., Inc., Torrance, CA, USA) or a handheld H antenna (Andreas Wagener Telemetry Systems, K\u00f6ln, Germany) and a Yaesu VR 500 handheld receiver (Vertex Standard USA, Cypress, CA, USA).\n\nThe automated radio telemetry system consisted of 4 to 6 stationary automated receivers (ARU) (Sparrow Systems, Fisher, IL, USA) deployed at the study site. Each receiver was connected to an H antenna (ATS, Isanti, MN, USA) and was able to search for up to 16 different radio frequencies every 60 s.\n\n### Migratory strategy determination\n\nThe migratory strategy of each bird was assigned based on the presence\u2013absence data. Birds were classified as migrants if they departed at night (determined by ARUs) from the study site during the autumn (September-November). All migrants departed between 19 September and 12 November (mean departure date: 16 October). Migrants arrived during spring between 17 February and 25 March (mean arrival date: 14 March). Birds were classified as residents if they remained present and alive at the study site at least until 31 November of each year. Individuals that had left the study area were searched using a Cessna airplane fitted with two H antennas and two Biotrack receivers (Lotek Wireless Inc., Newmarket, ON, Canada) and a vehicle carrying a telescopic mast (6 m height) and three-element Yagi antenna (Vargarda Radio, Vargarda, Sweden). Out of 469 birds, 158 were excluded because their migratory strategy could not be determined before 31 November due to various reasons (technical failure of the tracking devices, dispersal from the core study area or mortality). In 9 out of the 158 excluded birds, we found a radio tag with a broken harness and in 16 cases we found the tag but no signs of predation nor malfunction were evident. We concluded that 27 birds were predated (predation signs e.g. the carcass and/or feathers were found near the radio transmitter). In 106 cases, we do not know the fate of the birds. Forty-nine of the 106 birds with unknown fates were juveniles. In blackbirds, as in many other altricial bird species, post-fledgling mortality is high (Naef-Daenzer and Gr\u00fcebler, 2016) and fledglings can disperse several kilometres (Paradis et al., 1998). Eleven birds that departed from the breeding grounds during the winter and 11 birds that switched strategies across years were excluded from the analysis. Finally, we excluded 27 juveniles from the analysis because we could not determine the sex due to poor quality of the blood sample. Conversely 262 birds were classified during the autumn and were included in the survival analysis. Out of 262, 192 were classified as residents (69 females: 52 adults and 17 juveniles; 123 males: 96 adults and 27 juveniles) and 70 birds were classified as migrants (45 females: 28 adults and 17 juveniles; 25 males: 17 adults and 8 juveniles).\n\n### Data preparation\n\nTo estimate seasonal survival probabilities, each calendar year was divided into two operationally defined \u2018seasons\u2019: summer and winter. Summer was defined as the period of time between the date of the first spring arrival of a migrant bird and the date of the last departure in the fall (mean start date: March 2\u00a0\u00b1\u00a014.5 days, mean end date November 2\u00a0\u00b1\u00a07.4 days). To define the start of the first summer season in 2009, the date of the very first capture (April 23rd) was used. Winter, in turn, corresponded to the period of time between the date of the last departure in the fall and the date of first arrival the subsequent spring (mean start date: November 3\u00a0\u00b1\u00a07.4 days, mean end date: March 1\u00a0\u00b1\u00a014.5 days). Based on the presence\u2013absence data, we generated a matrix of 15 columns, each corresponding to one respective season (summer 2009, followed by winter 2009\u20132010, followed by summer 2010, etc.) and 262 rows (one for each individual). Additional columns containing the covariates sex (males and females), age at capture (juveniles and adults) and migratory status (migrants and residents) were added to the matrix.\n\n### Statistical analysis\n\nWe implemented multi-event models using the software E-SURGE 1.9.0 (Choquet et al., 2009). These models belong to the family of hidden Markov models. They assume that the individuals in a population independently transition between a finite set of N states (e.g. presence, absence) through a finite number of sampling occasions. Since the capture regime is imperfect, there is uncertainty in presence or absence of each individual. Multi-event models account for this uncertainty (Pradel, 2005). They allow a simultaneous estimation of the probability of survival (\u03a6) of a group of individuals and its detection probability (P). Detection probability (P) is a decisive parameter because it directly influences the survival estimates and in natural populations often is less than 1. Failing to account for this parameter can lead to incorrect conclusions in capture mark-recapture analyses (Gimenez et al., 2008).\n\nWe used a model selection procedure to evaluate the performance of 16 candidate models that included the effects of sex, age at capture, migratory strategy and season (Table 1). Model performance was evaluated using the Akaike Information Criterion corrected for small samples (AICc). Delta AICc (\u0394 AICc) was calculated and the models ranked based on this value.\n\n### Geolocator data processing\n\nAfter recapture, Mk 10S and Mk 12S geolocators were processed in the following way: Raw data were corrected for clock drift using Bastrak (British Antarctic Survey). After visually inspecting light values of Mk 10S geolocators, a light level threshold of 16 was identified. In 2010, we reduced the stalk length of Mk 12 s geolocators, resulting in interference from feathers with light censors. Due to interference at sunrise and sunset, we found that a light threshold of 2 was most reliable for Mk 12 s geolocators. Individual sun elevation angles were calculated using all dates that an individual was known to be on the breeding grounds. Transitions were calculated using TransEdit2 (British Antarctic Survey) and anomalous transitions were rejected. Latitude and longitude were calculated using Locator (British Antarctic Survey) following T\u00f8ttrup et al. (2012). Intigeo-P65 geolocators were processed in the following way: Transitions were calculated using IntiProc v.1.01 (Migrate Technology Ltd). A threshold of 16 was used and anomalous transitions were discarded. Transition data were imported and analyzed in R using GeoLight Package (Lisovski and Hahn, 2012). The \u2018in-habitat calibration\u2019 was used to calculate individual sun elevation angles. Locations (latitude and longitude) were estimated using the function \u2018Coord\u2019 of the GeoLight Package.\n",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "c92bea16-466b-43f4-a753-23ca5cd3ee48",
+      "submission_id": "efa4f8aa-46ed-40a5-8a90-47ae86a5467c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Barbara Helm, University of Glasgow United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.28123.014](https://doi.org/10.7554/eLife.28123.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Migration confers winter survival benefits in a partially migratory songbird\" for consideration by eLife. Your article has been reviewed by four peer reviewers, the Reviewing editor and an external advisor, and the evaluation has been overseen by Barbara Helm as the Reviewing Editor and Ian Baldwin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Per Lundberg (Reviewer #1); Jason Chapman (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another. All reviewers agree that this is an important paper in migration ecology. The data set, collected over 7 years, will make an important contribution to this field in its struggles to provide data on the costs and benefits of animal movements.\n\nThe Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript provides exciting new data on a much debated topic in migration biology: why do some animals move while others remain residential? Researchers working with different systems have tried to answer this question in different ways, and theoretical models have been constructed to identify the factors that could maintain co-existence of migrants and residents within populations. In the field of bird migration, researchers found it difficult to quantify costs and benefits encountered by migrant and resident fractions during different parts of the annual cycle. The current manuscript reports data from a long-term (7-year) study of partially migratory European Blackbirds that were tagged with radio-transmitters and automatically recorded. The researchers quantified actual migration distances, estimated from geolocators. They then demonstrated increased winter survival probability for migrants compared to residents. Finally, using modelling, they estimated the increase in productivity required of migrants if the system was to remain stable. Unfortunately, empirical measures of productivity were not available for comparison.\n\nOverall, this manuscript is well written, interesting, timely and will help resolve the debate in the field. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\n1) Partial migration: as a reviewer put it, the subject of the paper is a bird, and as written the paper is rather bird-centric. Hence, to be relevant to migration research more broadly, the study should also consider other animal taxa for which relevant research has been carried out (as well as be inclusive of earlier avian studies, for example on American Dippers and White Storks). Reviewers give constructive ideas for greater coverage, in particular for fish, for which full parameterized life history information is available, and for insects, where migration can comprise several generations. A broader perspective will also lead to a more circumspect conceptual framework, in particular where the manuscript currently is narrowly prescriptive (e.g. regarding fitness: \"superior winter survival is necessary to compensate.\u2026\"). When developing a more robust framework, please also include precise predictions for the sexes and age groups which are analytical categories in your model.\n\n2) Materials and methods section: Reviewers and an external advisor have expressed some concern about the high equipment failure or mortality suffered in the study. They cite the authors as having to exclude 288 of 572 subjects because they \"died before their migratory strategy could be determined or tracking failed for technical causes\". Reviewers worry about this very substantial proportion of all deployments, asking for more information about these cases and possible effects on results. In particular, an external advisor wondered how the 4 different tracking technologies (tag mass from 1.2\u20132.6g) may have differentially impacted individuals. On a related issue, please report in greater detail how geolocator data were analysed and consider performing model averaging, rather than selecting best models.\n\n3) Apparent errors: Please check very carefully the inconsistencies reported by the reviewers, for example regarding numbers of data points versus numbers of birds, and make sure to provide all results, including those on effects of age and all cited Tables.\n\nIt would be appropriate to acknowledge the very first paper on the theory of the topic:\n\nLundberg, 1987. Partial bird migration and evolutionarily stable strategies.\n\nlease be meticulous with statements about fitness trade-offs. One of the recurring statements in the paper is that seasonal migration will occur only if it confers a survival-related benefit during winter. Migration can of course also evolve/persist in species because it confers a breeding-related benefit. Anadromy (migration to/from the ocean) in fishes is a good example (Gross, 1987; Hendry et al., 2004; Hodge et al., 2016). The Introduction could do more to discuss the importance of breeding-related trade-offs. Also, migration can, in theory, confer a survival-related benefit during any time of year. Keep in mind that a life history can persist in a population so long as it occasionally confers a fitness advantage. The relative costs and benefits of migration/residency probably vary by year and with external conditions (e.g. environment).\n\nAnother suggestion is to either tone back comments about the paucity of parameterized fitness models, or qualify the information gap. Here are a just a few quick examples of parameterized life history models involving partially migratory fishes: Satterthwaite et al., 2009; Satterthwaite et al., 2010; Hodge et al., 2014; Morita et al., 2014.\n\nAlthough it's probably too late, or outside the scope of the study, to quantify the breeding-related costs of migration (breeding-related benefits of residency), the topic warrants more consideration. Perhaps the authors could further elaborate on this point and discuss how/why incidence of migration/residency might fluctuate in time.\n\nAbstract: The point should arguably be less about human \"understanding\" and more about persistence of a trait in birds.\n\nAbstract: Be careful with use of \"this\". It's not really clear what \"this core idea\" is-that data have remained elusive? That seasonal migration is difficult to understand?\n\nAbstract: This statement should be qualified.\n\nIntroduction section: The word \"strategy\" has specific implications in the context of life history. See Gross, (1987).\n\nIntroduction section: To the contrary, a migration evolved (and persists) in Pacific salmonids whereby fish migrate to sea despite a net survival cost.\n\nIntroduction section: See general comments.\n\nIntroduction section: Can probably delete the \"a\" in front of \"polymorphism\". Good point about testing predictions.\n\nResults and Discussion section: See general comments about interpreting AIC rankings. Where is Table 1?\n\nResults and Discussion section: This prediction should be mentioned in the Introduction.\n\nResults and Discussion section: Suggest offering more explanation in the Methods and fewer equations in the Results and Discussion.\n\nResults and Discussion section: Exactly. This is a more appropriate way to frame the statement.\n\nResults and Discussion section: Rather, did not detect survival differences between sexes.\n\nResults and Discussion section: \"Punishes\" doesn't seem appropriate. \"Penalizes\" would be better. Better still is to take the time of describing a fitness cost.\n\nResults and Discussion section: The fact alone is not compelling evidence for maintenance of two phenotypes. The survival advantage favors only one phenotype.\n\nSubsection \u201cMigratory strategy determination\u201d: Did all migrants spend approximately the same time away from the breeding grounds?\n\nSubsection \u201cMigratory strategy determination\u201d: Although it was probably easier to exclude the mixed-strategy birds, they might present an interesting test case. Is it possible that the \"switchers\" benefit from higher survival than residents and greater breeding success than migrants?\n\nI'm not a statistician, but as I understand it, inclusion of variables in best-supported models is not in itself evidence that the variables are significant. Also, the world is shifting from a \"best model\" approach to a model-averaged approached (see Arnold, 2010; Doherty et al., 2012). It would not take much to calculate model-averaged parameter estimates and the results would be more robust for it. Finally, the authors could report cumulative AIC weights and/or new \u03b2 values for each variable. \u0392 values with CIs would of course inform readers about the statistical significance of season and migratory form as predictors.\n\nThe subject of the paper is a bird, and as written the paper is rather bird-centric (or at least vertebrate oriented) in its approach, with the reference list dominated by vertebrate studies. To be relevant to the entire field of animal migration research, the authors could make some efforts to widen the scope. For example, \u2013in the Introduction section, the authors state that migration can only evolve if migrants have a net survival benefit compared to residents, but it seems to me that this is a vertebrate phenomenon. What about multi-generational migrants (such as insects) where multiple migrations and breeding bouts occur throughout the year (including the \"winter\"). In a partially migrant insect system for example, migration could evolve if migrant lineages produce more progeny over the course of several generations of winter-breeding than resident lineages which survive winter by diapausing (and therefore not breeding). I would suggest broadening the introduction so that it covers all taxa will increase the impact of this paper.\n\nResults and Discussion section: What is known about the reproductive performance of residents, is there any evidence that it is around 60% higher than migrants as predicted? Unless it is significantly higher, then migration should be favoured and expected to outcompete residency, but the number of migrants and residents in your study indicates that residency outnumbers migration by 2:1.\n\nReferences: The formatting is all over the place here.\n\nFigure 2: The legend indicates 22 birds were tracked, but plot A appears to have 28 points, while plot B appears to have data from 26 birds.\n\nFigure 3: The bars are yellow not orange\n\nResults and Discussion section: I'm not sure how these confidence intervals relate to the probability values, as the detection probability for migrants is given as 0.19 but has confidence intervals of 0.69 \u2013 0.78.\n\nMaterials and methods section: Repeated text here.\n\nIntroduction: \"is necessary\" I find this an over-generalisation of points that might apply to the system the authors have on mind. Many alternatives are possible, for example that later-returning migrants arrive in better state, with high reward, as proposed for example by Drent et al., 2003).\n",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b3954423-8971-4ef7-83c4-4c37abe91bfb",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C1",
+      "claim": "Seasonal migration allows animals to cope with temporal environmental fluctuations by moving between geographically distant habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration allows animals to cope with temporal environmental fluctuations by moving between geographically distant habitats (Fryxell and Sinclair, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fryxell and Sinclair, 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f70de6cf-43c3-4fc9-a110-1eca2059ae09",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C2",
+      "claim": "Migration has evolved repeatedly in many taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that much of our planet offers seasonally varying resources, it is not surprising that migration has evolved repeatedly in many taxa (Chapman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chapman et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "6650e5c4-2379-4def-beed-301992800535",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C3",
+      "claim": "Migration should offer either survival or breeding benefits compared to residency.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical research on the evolution of migration (Lundberg, 1987; 1988; Taylor and Norris, 2007; Griswold et al., 2010; Kokko, 2011; Shaw and Levin, 2011; Shaw and Couzin, 2013) has yielded a key prediction: migration should offer either survival or breeding benefits compared to residency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to theoretical research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "32db7bb9-430d-49ff-88df-9d66f8d1b9d2",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C4",
+      "claim": "Female migrant steelheads have higher fecundity than females that remain in fresh water streams.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent comparisons of migrant and resident steelheads (Oncorhynchus mykiss) found that female migrants have higher fecundity than females that remain in fresh water streams (Satterthwaite et al., 2009; Hodge et al., 2014, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to empirical studies on steelheads",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "2ed6d720-f782-4b24-9cf5-1c328551fa14",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C5",
+      "claim": "The noctuid moth performs a multi-generational migration which confers substantial reproductive benefits by allowing a lineage to spread to multiple sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the noctuid moth (Autographa gamma) performs a multi-generational migration which confer substantial reproductive benefits by allowing a lineage to spread to multiple sites (Chapman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chapman et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "6be95ab6-229d-40b9-b8dc-77741f956d82",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C6",
+      "claim": "Individuals of Rutilus rutilus increase their survival during the winter by migrating from lakes to streams to avoid predation risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding survival benefits, individuals of a fresh water fish (Rutilus rutilus), increase their survival during the winter by migrating from lakes to streams to avoid predation risks (Skov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skov et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b355cd65-f503-4f9d-9660-a22c5bc96497",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C7",
+      "claim": "Seasonal migration in birds allows individuals to avoid inhospitable conditions during the non-breeding season while the same region can offer abundant resources during the breeding season.",
+      "claim_type": "EXPLICIT",
+      "source": "In birds, seasonal migration has often been argued to bring about survival benefits, as it allows individuals to avoid inhospitable conditions during the non-breeding season, while the same region can offer abundant resources during the breeding season (Lack, 1954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lack, 1954",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f6e960f7-805c-48cd-9a33-16efe6aad683",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C8",
+      "claim": "If residency enhances breeding success in territorial birds, then there should be a corresponding benefit to migrants, with higher survival over non-breeding season being a clear possibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory predicts that if residency enhances breeding success in territorial birds, then there should be a corresponding benefit to migrants; higher survival over non-breeding season is a clear, but empirically understudied, possibility (Lundberg, 1987; Kokko, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "cf9edb3b-351e-4619-8ccf-75c37322482f",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C9",
+      "claim": "There is limited empirical evidence regarding fitness benefits of bird migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the extensive research done on bird migration, there is limited empirical evidence regarding its fitness benefits, as data on fitness-related variation in migratory strategies are logistically difficult to collect in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of empirical evidence in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "508def32-bd29-4197-a9ba-29611de17d8c",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C10",
+      "claim": "Migrant European robins have lower survival and reproductive success than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite logistical challenges, studies on European robins (Erithacus rubecula) and American dippers (Cinclus mexicanus) report that migrants have lower survival and reproductive success than residents (Adriaensen and Dhondt, 1990; Gillis et al., 2008; Green et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to empirical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "99e88e06-208e-4fc8-b9b1-1a02b5f22540",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C11",
+      "claim": "Migrant American dippers have lower survival and reproductive success than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite logistical challenges, studies on European robins (Erithacus rubecula) and American dippers (Cinclus mexicanus) report that migrants have lower survival and reproductive success than residents (Adriaensen and Dhondt, 1990; Gillis et al., 2008; Green et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to empirical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "ddb64c67-f0d5-446d-aa80-4db605ad3bae",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C12",
+      "claim": "Resident cormorants have higher reproductive success than migrant cormorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a recent study comparing fitness measures of resident and migrant cormorants (Phalacrocorax aristotelis) reported higher reproductive success in residents compared to migrants (Grist et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grist et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "75ab71b7-81b7-4cb2-891d-6c8274c6f65a",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C13",
+      "claim": "The migrants of the studied blackbird population overwinter, on average, 800 km west-southwest from the breeding grounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The migrants of our population overwinter, on average, 800 km west-southwest from the breeding grounds (Fudickar and Partecke, 2012) (Figure 2a and b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and reference to Figure 2a and b showing overwintering locations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "224163a2-e979-4682-93e2-821868c22e53",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C14",
+      "claim": "The majority of migrants in the studied blackbird population are females.",
+      "claim_type": "EXPLICIT",
+      "source": "the majority of migrants are females (Fudickar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fudickar et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "82fb5061-5f13-4101-847a-4d88b892213d",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C15",
+      "claim": "Multi-event survival models were fitted using presence-absence data obtained by capture-mark-recapture and radio-telemetry of 192 resident and 70 migrant free-living blackbirds over seven years.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted multi-event survival models using presence-absence data obtained by capture-mark-recapture and radio-telemetry of 192 resident and 70 migrant free-living blackbirds over the course of seven years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study methodology and sample sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "878276d8-2097-44d9-b27c-497ccf5e2791",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C16",
+      "claim": "Multi-event survival models account for variation in re-encounter probabilities in relation to space, time and behaviour of the birds.",
+      "claim_type": "EXPLICIT",
+      "source": "These models account for variation in re-encounter probabilities in relation to space, time and behaviour of the birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the statistical model capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "0d3b1def-bae8-47f8-ad2c-ae973b81c841",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C17",
+      "claim": "Migrants and residents of the breeding population are in sympatry during the summer months (March - October).",
+      "claim_type": "EXPLICIT",
+      "source": "Migrants and residents of a breeding population of European blackbirds are in sympatry during the summer months (March - October).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Figure 1 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "23b8fac7-b254-45f1-9fa6-48fd3e6c4be4",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C18",
+      "claim": "During the wintering months (November \u2013 March) migrants and residents overwinter in different habitats.",
+      "claim_type": "EXPLICIT",
+      "source": "During the wintering months (November \u2013 March) migrants and residents overwinter in different habitats.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Figure 1 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "1752a5f5-2965-4aab-acc9-c7b66b6702fc",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C19",
+      "claim": "Blackbirds had lower probability to survive the winter (\u03a6 = 0.60; 95% CI = 0.55\u20130.66) than the summer season (\u03a6 = 0.89; 95% CI = 0.82\u20130.94).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that winter mortality is an important determinant of lifespan, as blackbirds had lower probability to survive the winter (\u03a6 = 0.60; 95% CI = 0.55\u20130.66) than the summer season (\u03a6 = 0.89; 95% CI = 0.82\u20130.94) (Table 1, model 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis results presented in Table 1, model 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "17825fc2-65ec-4908-bb40-98c0b63be191",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C20",
+      "claim": "Winter mortality is an important determinant of lifespan in blackbirds.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that winter mortality is an important determinant of lifespan, as blackbirds had lower probability to survive the winter (\u03a6 = 0.60; 95% CI = 0.55\u20130.66) than the summer season (\u03a6 = 0.89; 95% CI = 0.82\u20130.94) (Table 1, model 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lower winter survival probability compared to summer",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "c69477f0-ad22-4134-a166-5e880374c91e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C21",
+      "claim": "The result that blackbirds have lower winter survival strongly supports the hypothesis that migration confers survival benefits compared with residency.",
+      "claim_type": "EXPLICIT",
+      "source": "This result strongly supports the hypothesis that migration confers survival benefits compared with residency as an alternative strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "2148c416-b01e-4fe1-ad2f-9af576b6c945",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C22",
+      "claim": "There was no difference between juveniles and adults in survival probability within a season.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference between juveniles and adults in survival probability within a season.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "6c89240c-c178-4720-a5c5-f14be70b87b9",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C23",
+      "claim": "Juveniles have similar probability to survive the summer (\u03a6 = 0.89; 95% CI = 0.80\u20130.94) as adults (\u03a6 = 0.90; 95% CI = 0.83\u20130.94).",
+      "claim_type": "EXPLICIT",
+      "source": "Juveniles (\u03a6 = 0.89; 95% CI = 0.80\u20130.94; model 4 Table 1) have similar probability to survive the summer as adults (\u03a6 = 0.90; 95% CI = 0.83\u20130.94; model 4 Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis results in model 4, Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "83c6a04f-01db-4ccd-bdab-2e0f31239786",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C24",
+      "claim": "During winter, juveniles have a comparable probability (\u03a6 = 0.59; 95% CI = 0.49\u20130.68) to survive as adults (\u03a6 = 0.61; 95% CI = 0.55\u20130.67).",
+      "claim_type": "EXPLICIT",
+      "source": "During winter, juveniles also have a comparable probability (\u03a6 = 0.59; 95% CI = 0.49\u20130.68; model 4 Table 1) to survive as adults (\u03a6 = 0.61; 95% CI = 0.55\u20130.67; model 4 Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis results in model 4, Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "aefe35e8-6695-455d-bdf9-9fc2adfcedae",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C25",
+      "claim": "Migratory European blackbirds had higher winter survival rates than resident blackbirds.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our predictions, migratory European blackbirds had higher winter survival rates than resident blackbirds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "86cba4b3-365b-45cc-b302-5d455302fec3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C26",
+      "claim": "The best model estimated markedly higher winter survival for migrants (\u03a6 = 0.73; 95% CI = 0.62\u20130.81) than for residents (\u03a6 = 0.57; 95% CI = 0.50\u20130.63).",
+      "claim_type": "EXPLICIT",
+      "source": "The best model (model 1, Table 1) estimated markedly higher winter survival for migrants (\u03a6 = 0.73; 95% confidence intervals (CI) = 0.62\u20130.81, Figure 3) than for residents (\u03a6 = 0.57; 95% CI = 0.50\u20130.63, Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis results from model 1 in Table 1 and shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "3d005d6c-44eb-443c-903e-da72d3e53547",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C27",
+      "claim": "Detection probability for migrants was lower (P=0.19; 95% CI = 0.13\u20130.26) compared to residents (P=0.74; 95% CI = 0.69\u20130.78).",
+      "claim_type": "EXPLICIT",
+      "source": "taking into account the lower detection probability for migrants (P=0.19; 95% CI = 0.13\u20130.26, Figure 3) compared to residents (P=0.74; 95% CI = 0.69\u20130.78).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis results shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "d02e1b0e-d7a2-4e21-84da-7591bb8a8f36",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C28",
+      "claim": "Model 2, which included sex, had modest support (delta AICc = 0.95).",
+      "claim_type": "EXPLICIT",
+      "source": "Our second model, which included sex and had modest support (model 2, delta AICc = 0.95, Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model comparison statistics in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "84e970fb-5245-42bd-abc8-a9e2c05feed1",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C29",
+      "claim": "Model 2 predicted that migrants have higher winter survival probability than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "predicted that migrants have higher winter survival probability than residents, which was also predicted by model 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis results from model 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "16915983-cfa2-4688-add5-892e21b639aa",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C30",
+      "claim": "Sex differences in survival were not substantial.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex differences were not substantial (during summer: male residents \u03a6 = 0.90; 95% CI = 0.83\u20130.95; female residents \u03a6 = 0.89; 95% CI = 0.89\u20130.94; male migrants \u03a6 = 0.95; 95% CI = 0.89\u20130.98, female migrants \u03a6 = 0.94; 95% CI = 0.87\u20130.97; during winter: male residents \u03a6 = 0.58; 95% CI = 0.51\u20130.65; female residents \u03a6 = 0.53; 95% CI = 0.44\u20130.62; male migrants \u03a6 = 0.75; 95% CI = 0.63\u20130.84, and female migrants \u03a6 = 0.71; 95% CI = 0.60\u20130.81; detection probability was lower for migrants (P=0.19; 95% CI = 0.13\u20130.26) than for residents (P=0.74; 95% CI = 0.69\u20130.78)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis results showing overlapping confidence intervals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "8557c3d4-5166-4887-a4bd-24f4ba35d3e7",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C31",
+      "claim": "The findings support the theoretical predictions that migration yields survival benefits during the winter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the theoretical predictions that migration yields survival benefits during the winter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "83aa51ae-2157-4676-8f04-08ccb8eae1b3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C32",
+      "claim": "The results provide an explanation for the maintenance of the migrant phenotype in the partially migratory population of European blackbirds.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results provide an explanation for the maintenance of the migrant phenotype in the partially migratory population of European blackbirds that we studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b08b1411-f070-4585-8e1f-51c09610dc70",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C33",
+      "claim": "Residency is predicted to provide reproductive benefits given that year-round occupancy provides advantages in establishing breeding territories.",
+      "claim_type": "EXPLICIT",
+      "source": "Residency is predicted to provide reproductive benefits given that year-round occupancy provides, for example, advantages in establishing breeding territories (Kokko, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "1e4732da-dd83-4d0b-8a8c-4d063c3ed717",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C34",
+      "claim": "The two phenotypes (migrant and resident) can persist as evolutionary stable strategies (ESS) due to frequency dependent selection if the overall fitness of migrants and residents is equal.",
+      "claim_type": "EXPLICIT",
+      "source": "The two phenotypes can persist as evolutionary stable strategies (ESS) due to frequency dependent selection if the overall fitness of migrants and residents is equal (Lundberg, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9cbd718e-806c-4375-9ebb-267b5a654c9c",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C35",
+      "claim": "The expected lifetime number of reproductive seasons is 61.25% higher for migrants than for residents due to higher survival of the former.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the expected lifetime number of reproductive seasons is 61.25% higher for migrants than for residents due to higher survival of the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the survival probabilities using a mathematical model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "c886877f-d0ae-4e44-a99e-603a06967fb8",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C36",
+      "claim": "The reproductive performance of residents would have to be 61.25% higher than in migrants to achieve equal fitness of the alternative strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from this calculation that the reproductive performance of residents would have to be 61.25% higher than in migrants to achieve equal fitness of the alternative strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the survival probabilities using a mathematical model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "2c8b472f-1368-43d3-a13a-bbd7bf5752e3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C37",
+      "claim": "Benefits to residents could come about from prior residency effects (either occupying a better territory or avoiding floater status), combined with a longer time spent in the breeding habitat which can make multiple nesting or re-nesting more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Such benefits could come about from prior residency effects (either occupying a better territory or avoiding floater status), combined with a longer time spent in the breeding habitat which can make multiple nesting or re-nesting (in case of failure) more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9471795b-35e1-4b5c-8c87-dc8b3d306832",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C38",
+      "claim": "Blackbirds are a multi-brood species (2\u20133 broods a year).",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that blackbirds are a multi-brood species (2\u20133 broods a year)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about blackbird breeding biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "717c977e-d143-4baf-83df-e9c4a1217df0",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C39",
+      "claim": "It could be possible that residents gain a 61.25% higher breeding success compared to migrants.",
+      "claim_type": "EXPLICIT",
+      "source": "it could be possible that residents gain a 61.25% higher breeding success compared to migrants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on breeding biology and calculated fitness requirements",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "dde3ab22-1a28-4c41-a4f3-d47158fc92c2",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C40",
+      "claim": "If resident breeding success is higher than 61.25%, then the fitness of migrants will be lower than the fitness of residents and migration would be a conditional strategy operating under frequency-dependent selection.",
+      "claim_type": "EXPLICIT",
+      "source": "If resident breeding success is higher than 61.25%, then the fitness of migrants will be lower than the fitness of residents and migration would be a conditional strategy operating under frequency-dependent selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the fitness calculations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9a4bc5e5-cb94-428e-9ec7-7f3a1ee86dcd",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C41",
+      "claim": "For conditional migration strategies, some intrinsic phenotypic characteristics (sex, age, dominance) result in a need to adopt a strategy that might yield overall lower fitness than what residents on average achieve, but it is the better choice to optimize individual fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "For conditional migration strategies, some intrinsic phenotypic characteristics (sex, age, dominance) result in a need to adopt a strategy that might yield overall lower fitness than what residents on average achieve, but it is the better choice to optimize individual fitness (Lundberg, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical model",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "d21379cd-f705-455f-9238-738711fd1722",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C42",
+      "claim": "Year-to-year variation of winter environmental conditions at the breeding grounds may play a role shaping the incidence of migration versus residency over time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also plausible that year-to-year variation of winter environmental conditions at the breeding grounds play a role shaping the incidence of migration versus residency over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about environmental effects",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "400a1cb8-baa0-4af3-90e3-5a704ce8e2a6",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C43",
+      "claim": "During a harsh and long winter, the survival of residents might be lower compared to a mild and short winter.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during a harsh and long winter, the survival of residents might be lower compared to a mild and short winter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about environmental effects on survival",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "66e7b57a-17de-42b5-a0a1-d39957349dc4",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C44",
+      "claim": "If fewer residents survive an unusually harsh winter and establish breeding territories during the subsequent breeding season, many high-quality territories would remain vacant for migrants to take advantage of after arrival in the spring.",
+      "claim_type": "EXPLICIT",
+      "source": "If fewer residents survive an unusually harsh winter and establish breeding territories during the subsequent breeding season, many high-quality territories would remain vacant for migrants to take advantage of after arrival in the spring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about consequences of harsh winters",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "8a0a103e-6895-4368-90e2-50d94cfea94c",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C45",
+      "claim": "If residents that do survive harsh winters begin the breeding season in poor condition, then physically dominant migrants could successfully take-over prime territories from residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if residents that do survive harsh winters begin the breeding season in poor condition, then physically dominant migrants could successfully take-over prime territories from residents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about territory acquisition dynamics",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "dbc5afc1-126b-41ba-9868-a50a93b2f6ca",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C46",
+      "claim": "Under the scenario where migrants can take over territories from weakened residents, the prior residency effect would not be acting at full strength and migrants would gain breeding benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this scenario, the prior residency effect would not be acting at full strength (Drent et al., 2003; Jahn et al., 2010; Kokko, 2011) and migrants would gain breeding benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "979cb3b0-f978-4aa0-9184-5198844d8de4",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C47",
+      "claim": "There was no evidence for sex differences in survival.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence for sex differences in survival (though some ambiguity remains, as a moderately supported model two includes sex as an explanatory variable \u2014 note that the best model does not).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical model comparison results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "0d41c942-452b-43be-ab90-07dc6a8114e7",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C48",
+      "claim": "Females are more likely to migrate than males in the study population.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the question: why are females more likely to migrate than males in the study population (Fudickar et al., 2013)?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fudickar et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f16bfe3b-0ac8-4b73-bda6-6264c698ef2e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C49",
+      "claim": "Overwintering blackbirds form foraging flocks and an individual's access to food is related to its position within the flock hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "One line of thinking is to argue that residency is more dangerous for females than for males, because overwintering blackbirds form foraging flocks and an individual's access to food is related to its position within the flock hierarchy (Lundberg and Schwabl, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lundberg and Schwabl, 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a6b63c1f-8a5e-4117-83ab-f9a36521a213",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C50",
+      "claim": "Within foraging flocks, females are subordinate to males.",
+      "claim_type": "EXPLICIT",
+      "source": "Within these flocks, females are subordinate to males (Lundberg and Schwabl, 1983; Lundberg, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lundberg and Schwabl, 1983 and Lundberg, 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f16bcf56-e120-48b8-9a2f-83515fbae45e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C51",
+      "claim": "The data do not align perfectly with the interpretation that residency is more dangerous for females than males due to subordinate status in flocks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not align perfectly with this interpretation: if overwinter survival during residency was a strong factor driving sex differences in migratory strategy, we ought to have seen lower winter survival in resident females than in males, but this was not the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the survival data analysis showing no sex difference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "6b8cae9e-0d58-4eca-bd40-550c5d3dae18",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C52",
+      "claim": "Resident males may enjoy priority access to prime territories as soon as the breeding season starts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that resident males enjoy priority access to prime territories as soon as the breeding season starts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about territory acquisition",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "5e18a080-f962-425a-8435-6940b7302237",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C53",
+      "claim": "Females may also benefit from better territories, thus an early presence may be beneficial for them as well.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should always be remembered that females, too, may benefit from better territories, thus an early presence may be beneficial for them as well (Creighton, 2001; Kokko et al., 2006; Kokko, 2011; Snow, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "86f7683a-816f-4bda-b713-5d011a39c564",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C54",
+      "claim": "Reproductive success of migrant and resident blackbirds is sex-dependent such that male residents have higher reproductive success than male migrants, while female residents and migrants have similar reproductive success.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be important to understand exactly how territory acquisition differs between males and females, especially because earlier data from the same geographical area have shown that reproductive success of migrant and resident blackbirds is sex-dependent (Schwabl, 1983) such that male residents have higher reproductive success than male migrants, while female residents and migrants have similar reproductive success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schwabl, 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "0a90daaa-445a-46c2-8b82-62c72a7e14d0",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C55",
+      "claim": "If frequency-dependency penalizes late-arriving males whereas late breeding females are not severely penalized, then the same magnitude of survival differences will favor a larger migratory population within females than within males.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the mechanisms of territory acquisition could help explain why fewer males migrate: if frequency-dependency penalizes late-arriving males whereas late breeding females are not severely penalized, then the same magnitude of survival differences will favor a larger migratory population within females than within males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about sex-specific migration patterns",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "1ca3daeb-5f90-4e98-8899-74e395367f5f",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C56",
+      "claim": "11 birds migrated during the winter and were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we excluded 11 birds that migrated during the winter and 11 that switched strategies between years, as we considered these sample sizes to be too small for detailed inferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "284bff29-9f3f-448f-8be3-c2ac953ca83e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C57",
+      "claim": "11 birds switched strategies between years and were excluded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we excluded 11 birds that migrated during the winter and 11 that switched strategies between years, as we considered these sample sizes to be too small for detailed inferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "93c16c41-c194-4d5f-9176-abf940653e3b",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C58",
+      "claim": "Departures during the winter usually occurred during periods of cold temperatures and snow accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Departures during the winter usually occurred during periods of cold temperatures and snow accumulation (Fudickar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fudickar et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f42772e0-23a2-4670-98c6-11ade675d5bd",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C59",
+      "claim": "Extreme weather conditions and low food availability might trigger movements during winter.",
+      "claim_type": "EXPLICIT",
+      "source": "Extreme weather conditions and low food availability might trigger these movements during winter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about triggers for winter movements",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "3de54b32-775d-4b90-a918-4df5510f5798",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C60",
+      "claim": "The study provides strong support for the hypothesis that migration confers winter survival benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the fitness benefits conferred by migration, our study is able to provide strong support for the hypothesis that migration confers winter survival benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b0175f97-81c0-40bd-bf28-705c9afd5a48",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C61",
+      "claim": "The methodology allows comparisons between classes that differ greatly in detectability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our methodology, which allows comparisons between classes that differ greatly in detectability, can hopefully also shed light on systems where benefits and risks of migration are shared by all individuals of a population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the methodological approach",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a4357075-ff16-4ce0-9eca-07575ae22401",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C62",
+      "claim": "Many migratory populations are threatened by risks along their migratory flyways.",
+      "claim_type": "EXPLICIT",
+      "source": "many of which are threatened by risks along their migratory flyways (Wilcove and Wikelski, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wilcove and Wikelski, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "48ce9a99-2d7f-42fb-851b-6c89e904d3c3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C63",
+      "claim": "A total of 469 blackbirds were captured and tagged in a mixed deciduous/coniferous forest in southern Germany during spring and summer over seven consecutive years (2009\u20132016).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 469 blackbirds were captured and tagged in a mixed deciduous/coniferous forest in southern Germany (N 47\u00b0 47', E 9\u00b0 2') during spring and summer over seven consecutive years (2009\u20132016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study methodology and sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "cb06f9ea-c536-4987-84dc-e4eb97d4c2eb",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C64",
+      "claim": "Sex and age were determined using plumage differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex and age were determined using plumage differences (Svensson, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodology with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "d096166f-524f-48af-af57-a15c59d9e170",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C65",
+      "claim": "Juvenile birds were sexed using DNA-based sex identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Juvenile birds were sexed using DNA-based sex identification (Griffiths et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodology with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9f50c073-c5f2-479b-89ca-6fc80d179df3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C66",
+      "claim": "The total weight of the tracking devices was less than 5% of the body weight of the birds in each year of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "The total weight of the tracking devices was less than 5% of the body weight of the birds in each year of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "82de98ff-bb11-4538-8188-6ffd4016f512",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C67",
+      "claim": "The life span of the battery was at least 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "The life span of the battery was at least 12 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of tracking device specifications",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "3eba4759-a7c7-40e5-85d5-43d4cf027edb",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C68",
+      "claim": "Manual radio tracking was carried out twice per week.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual radio tracking was carried out twice per week using a handheld three element Yagi antenna (AF Antronics, Inc., Urbana, IL, USA) and AR 8200 MKIII handheld receiver (AOR U.S.A., Inc., Torrance, CA, USA) or a handheld H antenna (Andreas Wagener Telemetry Systems, K\u00f6ln, Germany) and a Yaesu VR 500 handheld receiver (Vertex Standard USA, Cypress, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "73e4d688-6e63-4466-a79f-88da49a52fff",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C69",
+      "claim": "The automated radio telemetry system consisted of 4 to 6 stationary automated receivers deployed at the study site.",
+      "claim_type": "EXPLICIT",
+      "source": "The automated radio telemetry system consisted of 4 to 6 stationary automated receivers (ARU) (Sparrow Systems, Fisher, IL, USA) deployed at the study site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "debe04a2-ac4e-4728-878d-4054e55b5d52",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C70",
+      "claim": "Each automated receiver was able to search for up to 16 different radio frequencies every 60 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Each receiver was connected to an H antenna (ATS, Isanti, MN, USA) and was able to search for up to 16 different radio frequencies every 60 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data collection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a5f52e16-6361-49d3-85e7-fcb5a2754d3f",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C71",
+      "claim": "Birds were classified as migrants if they departed at night from the study site during the autumn (September-November).",
+      "claim_type": "EXPLICIT",
+      "source": "Birds were classified as migrants if they departed at night (determined by ARUs) from the study site during the autumn (September-November).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of classification methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "33539f5e-359b-4830-b3b2-225a243ecf8a",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C72",
+      "claim": "All migrants departed between 19 September and 12 November (mean departure date: 16 October).",
+      "claim_type": "EXPLICIT",
+      "source": "All migrants departed between 19 September and 12 November (mean departure date: 16 October).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observational data on migration timing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "7d2695ad-ca08-45b3-918b-59c1d0d49b0f",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C73",
+      "claim": "Migrants arrived during spring between 17 February and 25 March (mean arrival date: 14 March).",
+      "claim_type": "EXPLICIT",
+      "source": "Migrants arrived during spring between 17 February and 25 March (mean arrival date: 14 March).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observational data on migration timing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a9365498-9afe-42bc-92a6-d90e87b75f1a",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C74",
+      "claim": "Birds were classified as residents if they remained present and alive at the study site at least until 31 November of each year.",
+      "claim_type": "EXPLICIT",
+      "source": "Birds were classified as residents if they remained present and alive at the study site at least until 31 November of each year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of classification methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "247c4a28-8320-485b-b9c7-5de5d7958d28",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C75",
+      "claim": "Out of 469 birds, 158 were excluded because their migratory strategy could not be determined before 31 November due to various reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 469 birds, 158 were excluded because their migratory strategy could not be determined before 31 November due to various reasons (technical failure of the tracking devices, dispersal from the core study area or mortality).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b5ebf933-123f-470e-b50c-2bb98b37e725",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C76",
+      "claim": "27 birds were concluded to be predated based on predation signs.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that 27 birds were predated (predation signs e.g. the carcass and/or feathers were found near the radio transmitter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observational data on bird fates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "f8799e48-ff67-4b57-8bc4-ebf25c9e09cc",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C77",
+      "claim": "In 106 cases, the fate of the birds is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In 106 cases, we do not know the fate of the birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "e510e8cc-d4ec-4a79-9845-00e46d37df46",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C78",
+      "claim": "Forty-nine of the 106 birds with unknown fates were juveniles.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-nine of the 106 birds with unknown fates were juveniles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "01ba6256-b5d1-48cd-acf0-151197981c5e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C79",
+      "claim": "In blackbirds, post-fledgling mortality is high.",
+      "claim_type": "EXPLICIT",
+      "source": "In blackbirds, as in many other altricial bird species, post-fledgling mortality is high (Naef-Daenzer and Gr\u00fcebler, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Naef-Daenzer and Gr\u00fcebler, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a7931227-bdae-47f7-9490-42ac96f5c554",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C80",
+      "claim": "Fledglings can disperse several kilometres.",
+      "claim_type": "EXPLICIT",
+      "source": "fledglings can disperse several kilometres (Paradis et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Paradis et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "385da596-b430-4a3f-99f4-1110b9dbdcb6",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C81",
+      "claim": "27 juveniles were excluded from the analysis because sex could not be determined due to poor quality of the blood sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we excluded 27 juveniles from the analysis because we could not determine the sex due to poor quality of the blood sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b163b842-e22d-4626-8634-91b5bedca453",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C82",
+      "claim": "262 birds were classified during the autumn and were included in the survival analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely 262 birds were classified during the autumn and were included in the survival analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of final sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "7ae1ef2b-3686-4b0f-941c-562745b3971b",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C83",
+      "claim": "Out of 262 birds, 192 were classified as residents (69 females: 52 adults and 17 juveniles; 123 males: 96 adults and 27 juveniles).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 262, 192 were classified as residents (69 females: 52 adults and 17 juveniles; 123 males: 96 adults and 27 juveniles)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "870c4187-7f91-42f6-a44d-06e073b26e2e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C84",
+      "claim": "70 birds were classified as migrants (45 females: 28 adults and 17 juveniles; 25 males: 17 adults and 8 juveniles).",
+      "claim_type": "EXPLICIT",
+      "source": "70 birds were classified as migrants (45 females: 28 adults and 17 juveniles; 25 males: 17 adults and 8 juveniles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "648dc769-6dff-447b-b5b1-f4c09133d999",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C85",
+      "claim": "Summer was defined as the period between the date of the first spring arrival of a migrant bird and the date of the last departure in the fall (mean start date: March 2 \u00b1 14.5 days, mean end date November 2 \u00b1 7.4 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Summer was defined as the period of time between the date of the first spring arrival of a migrant bird and the date of the last departure in the fall (mean start date: March 2 \u00b1 14.5 days, mean end date November 2 \u00b1 7.4 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of operational definitions for analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "209fcd6b-3391-4d27-876e-d024e6eb66d2",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C86",
+      "claim": "Winter corresponded to the period between the date of the last departure in the fall and the date of first arrival the subsequent spring (mean start date: November 3 \u00b1 7.4 days, mean end date: March 1 \u00b1 14.5 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Winter, in turn, corresponded to the period of time between the date of the last departure in the fall and the date of first arrival the subsequent spring (mean start date: November 3 \u00b1 7.4 days, mean end date: March 1 \u00b1 14.5 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of operational definitions for analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "30d85d4c-db15-4c13-9c77-8d7d9befeb91",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C87",
+      "claim": "Multi-event models belong to the family of hidden Markov models.",
+      "claim_type": "EXPLICIT",
+      "source": "These models belong to the family of hidden Markov models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "b45128bf-d568-40c6-b6e9-b40c4dbfab3f",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C88",
+      "claim": "Multi-event models assume that individuals in a population independently transition between a finite set of N states through a finite number of sampling occasions.",
+      "claim_type": "EXPLICIT",
+      "source": "They assume that the individuals in a population independently transition between a finite set of N states (e.g. presence, absence) through a finite number of sampling occasions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical model assumptions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "e501a1b2-74f8-460b-a2db-8b9d07455608",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C89",
+      "claim": "Multi-event models account for uncertainty in presence or absence of each individual due to imperfect capture regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the capture regime is imperfect, there is uncertainty in presence or absence of each individual. Multi-event models account for this uncertainty (Pradel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical methodology with citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "4d02126d-3f70-4bb5-80cd-0252e142274d",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C90",
+      "claim": "Multi-event models allow a simultaneous estimation of the probability of survival (\u03a6) of a group of individuals and its detection probability (P).",
+      "claim_type": "EXPLICIT",
+      "source": "They allow a simultaneous estimation of the probability of survival (\u03a6) of a group of individuals and its detection probability (P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical model capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "1dc30388-8878-4339-ab29-b20de0063d51",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C91",
+      "claim": "Detection probability (P) is a decisive parameter because it directly influences the survival estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection probability (P) is a decisive parameter because it directly influences the survival estimates and in natural populations often is less than 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about statistical methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "d9cbb1b3-9005-42ef-a4e5-b9be08153083",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C92",
+      "claim": "In natural populations, detection probability often is less than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection probability (P) is a decisive parameter because it directly influences the survival estimates and in natural populations often is less than 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about empirical reality in field studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "4a0c2132-b0cc-4d30-958c-4077548ed585",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C93",
+      "claim": "Failing to account for detection probability can lead to incorrect conclusions in capture mark-recapture analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Failing to account for this parameter can lead to incorrect conclusions in capture mark-recapture analyses (Gimenez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gimenez et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "465e376e-caa1-48de-8f7e-d2051101c04b",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C94",
+      "claim": "16 candidate models were evaluated that included the effects of sex, age at capture, migratory strategy and season.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a model selection procedure to evaluate the performance of 16 candidate models that included the effects of sex, age at capture, migratory strategy and season (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of statistical analysis approach with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "80211390-3aee-4fc1-bbc3-768e84ddffac",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C95",
+      "claim": "Model performance was evaluated using the Akaike Information Criterion corrected for small samples (AICc).",
+      "claim_type": "EXPLICIT",
+      "source": "Model performance was evaluated using the Akaike Information Criterion corrected for small samples (AICc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9eb5f40a-2573-4a53-8a03-f7556d172510",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C96",
+      "claim": "Migrant blackbirds had 16% higher probability to survive the winter compared to residents.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that migrant blackbirds had 16% higher probability to survive the winter compared to residents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the survival probabilities (0.73 vs 0.57)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "6261e51d-7dc3-4447-9d25-0848497a63ff",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C97",
+      "claim": "Residents should have 61.25% higher breeding success than migrants to outweigh the survival costs of residency.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent modelling exercise revealed that residents should have 61.25% higher breeding success than migrants, to outweigh the survival costs of residency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the survival probabilities using a mathematical model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "cfe12b55-6748-4cd1-bf9c-63386450ade8",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C98",
+      "claim": "The results support theoretical models that migration should confer survival benefits to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support theoretical models that migration should confer survival benefits to evolve, and thus provide empirical evidence to understand the evolution and maintenance of migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "ae8792f1-f219-448d-8166-77c32aaf8580",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "claim_id": "C99",
+      "claim": "The results provide empirical evidence to understand the evolution and maintenance of migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support theoretical models that migration should confer survival benefits to evolve, and thus provide empirical evidence to understand the evolution and maintenance of migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the survival data analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "140927c9-e8a7-44eb-ad9b-28906fa9e043",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used multi-event survival models with capture-mark-recapture and radio-telemetry data from 262 blackbirds (192 residents, 70 migrants) tracked over seven years. These models account for imperfect detection probability and allow simultaneous estimation of survival and detection probabilities across different seasons, migratory strategies, sex, and age classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C15, C63-C95) are well-documented with appropriate sample sizes, clear operational definitions, and established statistical approaches. The multi-event modeling framework is appropriate for handling differential detectability between migrants and residents, which is a critical consideration given the lower detection probability for migrants (C27).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "2a581d15-971b-4837-a4b7-06cac9b06a14",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Blackbirds showed significantly lower winter survival (\u03a6 = 0.60; 95% CI = 0.55\u20130.66) compared to summer survival (\u03a6 = 0.89; 95% CI = 0.82\u20130.94), with no differences between juveniles and adults within seasons. Winter mortality is identified as an important determinant of lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are supported by statistical analysis with clear confidence intervals from model 3 and model 4 (Table 1). The non-overlapping confidence intervals between seasons support the conclusion about differential seasonal mortality. The lack of age effects is appropriately documented with overlapping confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Migrant blackbirds had markedly higher winter survival (\u03a6 = 0.73; 95% CI = 0.62\u20130.81) compared to residents (\u03a6 = 0.57; 95% CI = 0.50\u20130.63), representing a 16% survival advantage. This difference was detected while accounting for lower detection probability in migrants (P=0.19) versus residents (P=0.74). Sex differences in survival were not substantial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C96 are strongly supported by the best-fitting model (model 1) with non-overlapping confidence intervals between migrants and residents during winter. The statistical approach appropriately accounts for differential detectability. The conclusion about minimal sex effects is justified by overlapping confidence intervals in model 2, though the authors appropriately note some ambiguity given model 2's modest support (delta AICc = 0.95).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The findings provide strong empirical support for theoretical predictions that migration confers winter survival benefits, offering an explanation for the maintenance of the migrant phenotype in this partially migratory population and contributing to understanding the evolution and maintenance of migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C31-C32, C60, C98-C99 are supported by the empirical survival data showing higher winter survival in migrants. The inference that these results support theoretical predictions (C3, C8) is justified. However, the claim about explaining phenotype maintenance (C32) is somewhat overstated without reproductive data, as acknowledged by the authors' own fitness calculations (C35-C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "3650fe55-8e48-45be-96a9-e21327b75675",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Based on the observed survival differences, the expected lifetime number of reproductive seasons is 61.25% higher for migrants than residents. To achieve equal fitness between strategies, residents would need 61.25% higher reproductive performance than migrants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C36 and C97 present calculations based on a mathematical model using the observed survival probabilities. While the mathematical derivation appears correct (using the series formula for expected reproductive attempts), this result is uncertain because: (1) it relies on untested assumptions about reproductive timing and success, (2) no empirical reproductive data are provided to validate whether this threshold is met, and (3) the calculation assumes constant survival probabilities across years, which may not hold given environmental variation (C42-C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite finding no strong evidence for sex differences in survival, females are more likely to migrate than males in this population. The data do not support the hypothesis that this sex bias results from differential winter survival costs of residency for females due to subordinate status in foraging flocks. Alternative explanations involving sex-specific reproductive benefits and territory acquisition dynamics are discussed but remain speculative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C55 acknowledge an important paradox: the observed sex bias in migration (C48, supported by C14) is not explained by the survival data (C47, C51). The discussion of alternative mechanisms (C52-C55) is appropriately speculative. However, the conclusion is uncertain because: (1) model 2 including sex had modest support (C28), suggesting some ambiguity, (2) the cited reproductive data (C54) are from a different study and may not apply to this population, and (3) no direct test of the proposed mechanisms is provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The two phenotypes (migrant and resident) could persist as evolutionary stable strategies if overall fitness is equal, with residency predicted to provide reproductive benefits through prior occupancy advantages and extended breeding opportunities. Whether migration operates as an ESS or conditional strategy depends on whether resident reproductive success exceeds the calculated 61.25% threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C41 present theoretical frameworks supported by appropriate citations (C33, C34, C41) and logical reasoning about potential mechanisms (C37-C39). However, the result is uncertain because: (1) no empirical reproductive data are provided to test these predictions, (2) the mechanisms proposed (C37) are speculative, (3) the distinction between ESS and conditional strategies (C40-C41) cannot be resolved without fitness data, and (4) the authors acknowledge this requires future confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "696f05b0-1d32-43e4-ac1e-598454c058b8",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Year-to-year variation in winter environmental conditions at breeding grounds may shape the incidence of migration versus residency over time, with harsh winters potentially reducing resident survival and weakening prior residency effects, thereby providing breeding benefits to migrants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C46 present plausible hypotheses about environmental variation effects, but are entirely speculative (all marked as SPECULATION in evidence_type). No data on inter-annual variation in survival, environmental conditions, or territory dynamics are presented. While the reasoning is logical, this remains an untested hypothesis requiring longitudinal data on environmental conditions and their effects on survival and reproductive success.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "45217faa-949c-42e8-a998-2ca7708ddb71",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Eleven birds that migrated during winter and 11 that switched strategies between years were excluded from analysis. Winter departures typically occurred during cold temperatures and snow accumulation, potentially triggered by extreme weather and low food availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 clearly document data exclusion criteria with justification (small sample sizes). Claim C58 is supported by citation. Claim C59 is appropriately presented as speculative. The exclusion of strategy-switchers is a limitation that could affect conclusions about the stability of strategies, but is justified given sample size constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "2af424e8-1f6c-46f7-be0b-996b0966b83e",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The studied blackbird population exhibits partial migration, with migrants overwintering approximately 800 km west-southwest of breeding grounds. The majority of migrants are females. Migrants and residents are in sympatry during summer (March-October) but overwinter in different habitats (November-March).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are supported by citations and Figure 2 showing geolocator data. Claims C17-C18 describe the study system and are supported by Figure 1. These provide essential context for interpreting the survival analyses and are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9c2d431e-be5a-4528-8a65-420329070083",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes theoretical and empirical context: migration has evolved repeatedly across taxa and theory predicts it should offer survival or breeding benefits compared to residency. Empirical evidence from other taxa shows varied patterns, with some studies finding benefits for migrants (fish, moths) while bird studies have reported mixed results, with some showing lower fitness for migrants (robins, dippers, cormorants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 appropriately summarize prior work with citations. These provide context for the study's motivation and predictions. The characterization of limited empirical evidence in birds (C9) and conflicting results (C10-C12) justifies the study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    },
+    {
+      "id": "9e85a484-8662-4053-9ad2-713725696bd9",
+      "content_id": "d14289ed-f22d-4ac5-a747-959ba3f484d0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The multi-event modeling methodology allows comparisons between classes differing greatly in detectability and could be applied to fully migratory populations threatened by risks along flyways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 appropriately describe the methodological contribution and broader applicability. The demonstration that the approach handles differential detectability (C27) supports C61. Claim C62 is supported by citation and provides conservation context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T22:09:42.302134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "82fb5061-5f13-4101-847a-4d88b892213d",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "878276d8-2097-44d9-b27c-497ccf5e2791",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "48ce9a99-2d7f-42fb-851b-6c89e904d3c3",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "cb06f9ea-c536-4987-84dc-e4eb97d4c2eb",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "d096166f-524f-48af-af57-a15c59d9e170",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "9f50c073-c5f2-479b-89ca-6fc80d179df3",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "82de98ff-bb11-4538-8188-6ffd4016f512",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "3eba4759-a7c7-40e5-85d5-43d4cf027edb",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "73e4d688-6e63-4466-a79f-88da49a52fff",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "debe04a2-ac4e-4728-878d-4054e55b5d52",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "a5f52e16-6361-49d3-85e7-fcb5a2754d3f",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "33539f5e-359b-4830-b3b2-225a243ecf8a",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "7d2695ad-ca08-45b3-918b-59c1d0d49b0f",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "a9365498-9afe-42bc-92a6-d90e87b75f1a",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "247c4a28-8320-485b-b9c7-5de5d7958d28",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "b5ebf933-123f-470e-b50c-2bb98b37e725",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "f8799e48-ff67-4b57-8bc4-ebf25c9e09cc",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "e510e8cc-d4ec-4a79-9845-00e46d37df46",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "01ba6256-b5d1-48cd-acf0-151197981c5e",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "a7931227-bdae-47f7-9490-42ac96f5c554",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "385da596-b430-4a3f-99f4-1110b9dbdcb6",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "b163b842-e22d-4626-8634-91b5bedca453",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "7ae1ef2b-3686-4b0f-941c-562745b3971b",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "870c4187-7f91-42f6-a44d-06e073b26e2e",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "648dc769-6dff-447b-b5b1-f4c09133d999",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "209fcd6b-3391-4d27-876e-d024e6eb66d2",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "30d85d4c-db15-4c13-9c77-8d7d9befeb91",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "b45128bf-d568-40c6-b6e9-b40c4dbfab3f",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "e501a1b2-74f8-460b-a2db-8b9d07455608",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "4d02126d-3f70-4bb5-80cd-0252e142274d",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "1dc30388-8878-4339-ab29-b20de0063d51",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "d9cbb1b3-9005-42ef-a4e5-b9be08153083",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "4a0c2132-b0cc-4d30-958c-4077548ed585",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "465e376e-caa1-48de-8f7e-d2051101c04b",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "80211390-3aee-4fc1-bbc3-768e84ddffac",
+      "result_id": "140927c9-e8a7-44eb-ad9b-28906fa9e043"
+    },
+    {
+      "claim_id": "1752a5f5-2965-4aab-acc9-c7b66b6702fc",
+      "result_id": "2a581d15-971b-4837-a4b7-06cac9b06a14"
+    },
+    {
+      "claim_id": "17825fc2-65ec-4908-bb40-98c0b63be191",
+      "result_id": "2a581d15-971b-4837-a4b7-06cac9b06a14"
+    },
+    {
+      "claim_id": "2148c416-b01e-4fe1-ad2f-9af576b6c945",
+      "result_id": "2a581d15-971b-4837-a4b7-06cac9b06a14"
+    },
+    {
+      "claim_id": "6c89240c-c178-4720-a5c5-f14be70b87b9",
+      "result_id": "2a581d15-971b-4837-a4b7-06cac9b06a14"
+    },
+    {
+      "claim_id": "83c6a04f-01db-4ccd-bdab-2e0f31239786",
+      "result_id": "2a581d15-971b-4837-a4b7-06cac9b06a14"
+    },
+    {
+      "claim_id": "aefe35e8-6695-455d-bdf9-9fc2adfcedae",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "86cba4b3-365b-45cc-b302-5d455302fec3",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "3d005d6c-44eb-443c-903e-da72d3e53547",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "d02e1b0e-d7a2-4e21-84da-7591bb8a8f36",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "84e970fb-5245-42bd-abc8-a9e2c05feed1",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "16915983-cfa2-4688-add5-892e21b639aa",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "9eb5f40a-2573-4a53-8a03-f7556d172510",
+      "result_id": "c47c0a1c-1a7e-495a-b02d-c6386b297c42"
+    },
+    {
+      "claim_id": "c69477f0-ad22-4134-a166-5e880374c91e",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "8557c3d4-5166-4887-a4bd-24f4ba35d3e7",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "83aa51ae-2157-4676-8f04-08ccb8eae1b3",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "3de54b32-775d-4b90-a918-4df5510f5798",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "cfe12b55-6748-4cd1-bf9c-63386450ade8",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "ae8792f1-f219-448d-8166-77c32aaf8580",
+      "result_id": "ef57fb01-ec9b-4acb-bcc5-80994654a5b3"
+    },
+    {
+      "claim_id": "9cbd718e-806c-4375-9ebb-267b5a654c9c",
+      "result_id": "3650fe55-8e48-45be-96a9-e21327b75675"
+    },
+    {
+      "claim_id": "c886877f-d0ae-4e44-a99e-603a06967fb8",
+      "result_id": "3650fe55-8e48-45be-96a9-e21327b75675"
+    },
+    {
+      "claim_id": "6261e51d-7dc3-4447-9d25-0848497a63ff",
+      "result_id": "3650fe55-8e48-45be-96a9-e21327b75675"
+    },
+    {
+      "claim_id": "979cb3b0-f978-4aa0-9184-5198844d8de4",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "0d41c942-452b-43be-ab90-07dc6a8114e7",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "f16bfe3b-0ac8-4b73-bda6-6264c698ef2e",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "a6b63c1f-8a5e-4117-83ab-f9a36521a213",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "f16bcf56-e120-48b8-9a2f-83515fbae45e",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "6b8cae9e-0d58-4eca-bd40-550c5d3dae18",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "5e18a080-f962-425a-8435-6940b7302237",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "86f7683a-816f-4bda-b713-5d011a39c564",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "0a90daaa-445a-46c2-8b82-62c72a7e14d0",
+      "result_id": "fb7c3700-ccb0-4d64-91ce-63b1459f57e3"
+    },
+    {
+      "claim_id": "b08b1411-f070-4585-8e1f-51c09610dc70",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "1e4732da-dd83-4d0b-8a8c-4d063c3ed717",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "2c8b472f-1368-43d3-a13a-bbd7bf5752e3",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "9471795b-35e1-4b5c-8c87-dc8b3d306832",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "717c977e-d143-4baf-83df-e9c4a1217df0",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "dde3ab22-1a28-4c41-a4f3-d47158fc92c2",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "9a4bc5e5-cb94-428e-9ec7-7f3a1ee86dcd",
+      "result_id": "a942c7f3-24e8-41fc-ac02-1696f1ca3b4d"
+    },
+    {
+      "claim_id": "d21379cd-f705-455f-9238-738711fd1722",
+      "result_id": "696f05b0-1d32-43e4-ac1e-598454c058b8"
+    },
+    {
+      "claim_id": "400a1cb8-baa0-4af3-90e3-5a704ce8e2a6",
+      "result_id": "696f05b0-1d32-43e4-ac1e-598454c058b8"
+    },
+    {
+      "claim_id": "66e7b57a-17de-42b5-a0a1-d39957349dc4",
+      "result_id": "696f05b0-1d32-43e4-ac1e-598454c058b8"
+    },
+    {
+      "claim_id": "8a0a103e-6895-4368-90e2-50d94cfea94c",
+      "result_id": "696f05b0-1d32-43e4-ac1e-598454c058b8"
+    },
+    {
+      "claim_id": "dbc5afc1-126b-41ba-9868-a50a93b2f6ca",
+      "result_id": "696f05b0-1d32-43e4-ac1e-598454c058b8"
+    },
+    {
+      "claim_id": "1ca3daeb-5f90-4e98-8899-74e395367f5f",
+      "result_id": "45217faa-949c-42e8-a998-2ca7708ddb71"
+    },
+    {
+      "claim_id": "284bff29-9f3f-448f-8be3-c2ac953ca83e",
+      "result_id": "45217faa-949c-42e8-a998-2ca7708ddb71"
+    },
+    {
+      "claim_id": "93c16c41-c194-4d5f-9176-abf940653e3b",
+      "result_id": "45217faa-949c-42e8-a998-2ca7708ddb71"
+    },
+    {
+      "claim_id": "f42772e0-23a2-4670-98c6-11ade675d5bd",
+      "result_id": "45217faa-949c-42e8-a998-2ca7708ddb71"
+    },
+    {
+      "claim_id": "75ab71b7-81b7-4cb2-891d-6c8274c6f65a",
+      "result_id": "2af424e8-1f6c-46f7-be0b-996b0966b83e"
+    },
+    {
+      "claim_id": "224163a2-e979-4682-93e2-821868c22e53",
+      "result_id": "2af424e8-1f6c-46f7-be0b-996b0966b83e"
+    },
+    {
+      "claim_id": "0d3b1def-bae8-47f8-ad2c-ae973b81c841",
+      "result_id": "2af424e8-1f6c-46f7-be0b-996b0966b83e"
+    },
+    {
+      "claim_id": "23b8fac7-b254-45f1-9fa6-48fd3e6c4be4",
+      "result_id": "2af424e8-1f6c-46f7-be0b-996b0966b83e"
+    },
+    {
+      "claim_id": "b3954423-8971-4ef7-83c4-4c37abe91bfb",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "f70de6cf-43c3-4fc9-a110-1eca2059ae09",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "6650e5c4-2379-4def-beed-301992800535",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "32db7bb9-430d-49ff-88df-9d66f8d1b9d2",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "2ed6d720-f782-4b24-9cf5-1c328551fa14",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "6be95ab6-229d-40b9-b8dc-77741f956d82",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "b355cd65-f503-4f9d-9660-a22c5bc96497",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "f6e960f7-805c-48cd-9a33-16efe6aad683",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "cf9edb3b-351e-4619-8ccf-75c37322482f",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "508def32-bd29-4197-a9ba-29611de17d8c",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "99e88e06-208e-4fc8-b9b1-1a02b5f22540",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "ddb64c67-f0d5-446d-aa80-4db605ad3bae",
+      "result_id": "9c2d431e-be5a-4528-8a65-420329070083"
+    },
+    {
+      "claim_id": "b0175f97-81c0-40bd-bf28-705c9afd5a48",
+      "result_id": "9e85a484-8662-4053-9ad2-713725696bd9"
+    },
+    {
+      "claim_id": "a4357075-ff16-4ce0-9eca-07575ae22401",
+      "result_id": "9e85a484-8662-4053-9ad2-713725696bd9"
+    }
+  ],
+  "comparisons": []
+}

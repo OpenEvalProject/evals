@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors identify a sharp transition at 26-34 bp of telomeric repeats where DNA ends become insensitive to Pif1 inhibition. DNA ends with \u226534 bp of telomeric sequence allow telomerase extension in the presence of Pif1, while ends with \u226426 bp are inhibited by Pif1. This transition defines the operational boundary between DSBs and critically short telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide direct experimental evidence from genetic assays and Southern blots showing similar telomere addition rates at TG34+ ends in both wild-type and pif1-m2 backgrounds. Claims C38-C39 refine the threshold to 26-34 bp through systematic testing of intermediate lengths. The data in Figure 1 consistently support this sharp transition, with multiple independent experimental approaches converging on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using the iSTEX assay at native chromosome ends, the authors demonstrate that telomeres shorter than ~40 bp (38-44 bp depending on the telomere) are inefficiently extended by telomerase. This transition is Pif1-dependent, as pif1-m2 mutants show increased extension of telomeres below this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide quantitative data from two independent telomeres (V-R and VI-R) showing dramatically reduced extension efficiency below ~40 bp. Claim C46 demonstrates Pif1-dependence by showing increased extension in pif1-m2 backgrounds, though statistical significance was not reached for VI-R due to sample size limitations. The iSTEX methodology is well-validated and the results are internally consistent, supporting the existence of a similar transition at native chromosome ends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The DSB-telomere transition is not regulated by DNA damage kinases Tel1, Mec1, or Rad53, nor by phosphorylation of consensus Mec1/Tel1 sites on Pif1. Tel1 and Pif1 function in separate pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 show epistasis analysis demonstrating that tel1\u0394 and pif1-m2 have additive effects, indicating separate pathways. Claims C50-C51 show that loss of MEC1/RAD53 or mutation of five S/T-Q phosphorylation sites in Pif1 do not affect the DSB-telomere transition. The data consistently rule out regulation by these kinases, though the negative results leave the mechanism unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Artificially enhancing telomerase recruitment through Cdc13-Est1/Est2 fusion proteins does not overcome Pif1 inhibition at TG18 ends. Even when telomerase is tethered to the DNA end, Pif1 can still suppress telomere addition in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide direct experimental evidence that Cdc13-telomerase fusions elongate native telomeres but fail to increase telomere addition at TG18 ends in PIF1 cells. The Cdc13-Est1K444E experiment (C54) confirms that the fusion can extend TG18 only when Pif1 is absent. This effectively rules out enhanced telomerase recruitment as the mechanism underlying the DSB-telomere transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The pif1-4A and pif1-4D alleles, which affect Pif1 function at DSBs, do not restore Pif1 activity at TG34 ends. Similarly, the est2-up34 mutation bypasses Pif1 at telomeres but not at DSBs. These results indicate that Pif1 has distinct functions at DSBs versus telomeres, and these differences are recapitulated at TG18 versus TG34 ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 show that phosphomimetic pif1-4D does not inhibit telomerase at TG34, supported by Figure 4c. Claims C60-C61 demonstrate that est2-up34 increases telomere length but not telomere addition frequency at DSBs. The convergence of evidence from two independent genetic systems (pif1-4A/4D and est2-up34) strongly supports the conclusion that Pif1 functions differently at DSBs versus short telomeres.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The DSB-telomere transition does not require the MRX or Ku complexes, Rap1 binding, or the Rap1-interacting factors Rif1 and Rif2. Synthetic telomeric sequences lacking Rap1-binding sites still show the transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C66 show that deletion of MRX, Ku, or Rif1/Rif2 does not affect the transition. Claims C64-C65 demonstrate that synthetic sequences lacking CCC motifs (required for Rap1 binding) still exhibit increased telomere addition at TG36. The data systematically rule out these factors, narrowing the focus to Cdc13 and ssDNA-binding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A CDC13 mutagenesis screen identified eight cdc13-sp alleles that specifically sensitize TG34 ends to Pif1 activity. These mutations impair telomere addition at TG34 in wild-type cells but not in pif1-m2 cells, indicating they restore Pif1 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe the screen methodology and results, identifying 8 of 15 hits with the desired phenotype. Claim C74 defines these as cdc13-sp alleles. However, claims C69-C71 regarding cdc13-L91A are problematic: the growth defect suppressed by pif1-m2 and rescue by high-copy expression confound interpretation. The screen successfully identified relevant mutations, but the cdc13-L91A result is complicated by pleiotropic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mapping of cdc13-sp alleles identified causative mutations in both the DNA-binding domain (E566V, N567D, Q583K) and the telomerase recruitment domain (F236, S255, Q256). Mutations that weaken either Cdc13-DNA binding or Cdc13-telomerase interaction can sensitize TG34 ends to Pif1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C79 provide mapping data identifying specific causative mutations. Claims C77-C78 and C80-C81 interpret the functional significance based on domain localization. The data in Figure 7a support these assignments. The conclusion that both DNA-binding and telomerase recruitment can be affected is well-supported, though the mechanistic interpretation remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Known telomerase recruitment-defective alleles (cdc13-2, cdc13-1, S255A) are also sensitive to Pif1 at TG34. A triple mutant (F235S/E252K/Q583K) prevents telomere addition even in pif1-m2 cells. The cdc13-Q256H mutation abolishes the sharp DSB-telomere transition, requiring longer telomeric sequences for Pif1 insensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 show that established recruitment-defective alleles phenocopy the cdc13-sp mutations, validating the screen results. Claim C85 demonstrates that severe Cdc13 dysfunction can block telomerase even without Pif1. Claim C86, supported by Figure 7e, shows that cdc13-Q256H creates a gradual rather than sharp transition. These results collectively support Cdc13's central role in setting the transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C88",
+      "C107"
+    ],
+    "result": "The authors conclude that the ~34 bp threshold of Pif1 activity defines a dividing line between DSBs and telomeres, with Cdc13 playing a key role in setting this transition. A TG34 DNA end represents a minimal telomere that is approximately one-tenth the size of a healthy yeast telomere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates the major findings: the sharp transition at 26-34 bp (C5, C34, C40), its existence at native ends (C6, C45), Pif1's requirement (C47), and Cdc13's central role (C88). Claim C107 provides biological context by noting TG34 is ~10% of normal telomere length (300\u00b175 bp). The conclusion is well-supported by the convergence of multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The DSB-telomere transition phenotype is observed in both nocodazole-arrested and asynchronously dividing cells. Addition of RAD52 reduces telomere addition at TG18 in pif1-m2 cells but does not affect Pif1 behavior at TG34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by Figure 1\u2014figure supplement 1b. These are important controls demonstrating that the transition is not an artifact of cell cycle synchronization and that homologous recombination does not confound the TG34 phenotype. The results validate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "DSBs and short telomeres are structurally similar but have opposed fates. Cells must repair DSBs while blocking telomerase, and short telomeres must avoid DNA damage recognition while recruiting telomerase. Failure to distinguish these structures has severe consequences including breakage-fusion-bridge cycles and inappropriate telomere addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C8-C10) establish the biological context and are supported by established knowledge and citations. They frame the problem addressed by the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on yeast telomere biology: S. cerevisiae telomeres consist of 300\u00b175 bp of (TG1-3)n repeats organized by Rap1, Rif1/2, and the CST complex. Pif1 is a helicase that inhibits telomerase at both DSBs and long telomeres, with the pif1-m2 mutant causing telomere elongation and increased telomere addition at DSBs. Prior work showed Pif1 suppresses telomerase at TG18 but not TG82 ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C14-C32) summarize established knowledge from prior literature, supported by citations. They provide essential background but are not new findings from this study. The claims accurately represent the state of knowledge that motivated the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Discussion of prior work and context: Cdc13 OB1 forms dimers and can bind 37-43 bp ssDNA in vitro. Linear plasmids with 41 bp telomeric repeats are efficiently converted to telomeres. The longest internal (TG1-3)n sequences in yeast are 35 bp and 31 bp. Various mechanisms regulate telomere length including Tel1, Rif1/2, and Pif1's preferential action at long telomeres. Pif1 can remove telomerase RNA and promote end resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C67, C87, C89-C97, C100, C102-C105) cite prior literature to contextualize the findings. They are accurately represented and properly attributed. These provide important context for interpreting the current results but are not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C106"
+    ],
+    "result": "Speculative discussion: Resection at DNA ends with short telomeric repeats may remove Rap1-binding sites, suggesting the transition depends on ssDNA-binding proteins like Cdc13 or the ssDNA itself. Cdc13 in combination with Stn1 and Ten1 may possess unique binding properties. A TG34 end is approximately one-tenth the size of a healthy yeast telomere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 and C101 are explicitly speculative (evidence_type includes SPECULATION). Claim C106 is a straightforward calculation. While these ideas are reasonable, they lack direct experimental support in this study. The speculation about CST complex binding properties (C101) is interesting but untested.",
+    "result_type": "MINOR"
+  }
+]

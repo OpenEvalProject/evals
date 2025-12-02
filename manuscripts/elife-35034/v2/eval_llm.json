@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Ribosome profiling identified 117 mRNAs with increased translation in 4EHP-KO cells compared to WT. These upregulated mRNAs have significantly longer 3' UTRs, more predicted miRNA-binding sites, and show increased association with eIF4E in 4EHP-KO cells, indicating that 4EHP blocks eIF4E binding to target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are well-supported by ribosome profiling data (Figure 1A), statistical analyses showing significant correlations between 3' UTR length (p<2.2e-16, C19) and miRNA-binding sites (p=0.0004, C20), and RNA immunoprecipitation experiments demonstrating increased eIF4E binding to target mRNAs in 4EHP-KO cells (C21). The experimental design is appropriate and the statistical significance is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "4EHP depletion significantly reduces cell proliferation in MEFs (48% reduction, p=0.002) and human glioblastoma cell lines (>90% reduction), with MEFs showing decreased S-phase cells and glioblastoma cells showing increased apoptosis markers (sub-G1 population and cleaved-PARP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by multiple independent assays including cell counting (C23, p=0.002), FACS cell cycle analysis (C24, p=0.003), and apoptosis markers (C26-C27). The data are consistent across different cell types (MEFs and glioblastoma lines) and use appropriate controls. Statistical significance is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "4EHP controls DUSP6 expression at the translational level. In 4EHP-KO cells, ERK1/2 phosphorylation is reduced by >80% while MEK phosphorylation remains unchanged. DUSP6 mRNA shows increased ribosome occupancy and protein levels increase markedly in 4EHP-KO cells, without changes in mRNA abundance or stability. Restoring 4EHP expression reduces DUSP6 protein ~3-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 are strongly supported by multiple complementary techniques: western blots showing reduced pERK but unchanged pMEK (C28-C29), polysome profiling demonstrating increased translation initiation (C30), western blots confirming increased DUSP6 protein (C31-C32), specificity controls with DUSP7 (C33), RNA stability assays (C34-C35), and rescue experiments (C36). The convergence of evidence from different methodologies strongly supports translational control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The Dusp6 3' UTR mediates translational repression through the miRNA/CCR4-NOT/4E-T/4EHP pathway, with miR-145 being the key miRNA involved. Dusp6 mRNA shows 8-fold enrichment in eIF4E IP from 4EHP-KO cells. The 3' UTR confers 3-fold repression that is relieved by knockdown of 4EHP, CNOT1, or 4E-T. miR-145 inhibition increases DUSP6 protein without affecting mRNA stability, and this effect requires 4EHP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 are well-supported by RNA immunoprecipitation (C38, 8-fold enrichment), luciferase reporter assays showing de-repression upon knockdown of pathway components (C40-C43, 38-49% de-repression), miRNA inhibitor experiments identifying miR-145 as the key miRNA (C44), and epistasis experiments in 4EHP-KO cells demonstrating requirement for 4EHP (C47-C48). The combination of biochemical and functional assays provides strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Increased DUSP6 activity in 4EHP-depleted cells is responsible for reduced ERK1/2 phosphorylation and decreased proliferation. Treatment with the DUSP6 inhibitor BCI restores pERK1/2 to WT levels within 30 minutes. DUSP6 knockdown in 4EHP-KO cells increases proliferation by 42-65% (p=0.004-0.007) without affecting WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by pharmacological inhibition experiments (C51, Figure 4A) and genetic rescue experiments (C53, p=0.004-0.007). The specificity of the effect (no impact on WT cells, C100) and the rapid kinetics of BCI rescue (30 min) provide strong evidence for a direct causal relationship between DUSP6 activity and the phenotypes observed in 4EHP-KO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C71",
+      "C72",
+      "C57",
+      "C58"
+    ],
+    "result": "4EHP depletion limits ERK activation by upstream signaling. Constitutively active KRAS (G12V) increases ERK1/2 phosphorylation and proliferation in WT MEFs but has no effect in 4EHP-KO MEFs, demonstrating that elevated DUSP6 in 4EHP-KO cells effectively blocks ERK phosphorylation downstream of RAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C71-C72 are supported by western blot data (C55, Figure 4C) and proliferation assays (C56) showing that constitutively active KRAS cannot overcome the increased DUSP6 phosphatase activity in 4EHP-KO cells. This provides strong evidence that 4EHP-mediated control of DUSP6 translation is a critical regulatory node in the ERK pathway, capable of limiting responses to upstream oncogenic signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C69",
+      "C70"
+    ],
+    "result": "Translational repression of Dusp6 mRNA by 4EHP and miR-145 promotes ERK1/2 phosphorylation, resulting in augmented cell growth and reduced apoptosis. This mechanism occurs without mRNA decay and represents a functionally critical regulatory mechanism for the MAPK/ERK signaling cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C60-C61, C69-C70 integrate findings from multiple result groups. The translational repression mechanism is demonstrated by ribosome profiling, polysome profiling, and reporter assays (supporting C2, C60). The functional consequences on ERK phosphorylation (C3), cell proliferation (C4), and apoptosis (C5) are supported by western blots, proliferation assays, and FACS analysis. The absence of mRNA decay (C60) is confirmed by RNA stability assays. The integration of these findings provides strong support for the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C59"
+    ],
+    "result": "4EHP is a key component of the mammalian miRISC that mediates translational repression. The miRISC recruits CCR4-NOT, which in turn recruits DDX6, 4E-T, and 4EHP to suppress cap-dependent translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12, C59 are supported by citations to the authors' previous work (Chapat et al., 2017) and established literature. While these are primarily background claims establishing the known mechanism, they are well-supported by prior published evidence and provide the foundation for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DUSP6 is a highly specific ERK1/2 phosphatase and key player in ERK signaling feedback loops. DUSP6 expression is regulated transcriptionally and post-transcriptionally by miRNAs and RNA-binding proteins, and altered DUSP6 expression impacts ERK signaling in various diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C90-C93 are background claims supported by extensive citations to established literature. These claims provide important context for understanding the biological significance of DUSP6 regulation by 4EHP but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C94",
+      "C95"
+    ],
+    "result": "Background on translation initiation machinery: eIF4F is a three-subunit complex that binds the mRNA 5' cap and recruits the pre-initiation complex. 4EHP shares 28% identity with eIF4E, is less abundant, binds the cap with lower affinity, and impairs translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C80-C82, C94-C95 are background claims supported by citations to established literature. These provide necessary context for understanding the molecular mechanism but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background on ERK signaling: ERK1/2 are effectors of the MAPK pathway controlled by RAS/RAF/MEK signaling cascade. Activated ERK signaling controls cell proliferation, apoptosis, and mRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are background claims supported by citations to established literature. These provide necessary context for understanding the biological significance of ERK regulation but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The relative contribution of translational repression versus mRNA decay in miRNA-mediated silencing is debated. This study demonstrates that 4EHP effects translational repression of Dusp6 without affecting mRNA stability, suggesting the relative contribution may depend on target mRNAs and cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by citations to prior literature (C63-C65) and by the RNA stability data from this study (C66). The interpretation that the mechanism may be context-dependent (C67) is reasonable given the data, though it remains somewhat speculative. The evidence for translational repression without decay for Dusp6 is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Constitutively active RAS or BRAF induces DUSP6 expression as a negative feedback loop that restrains ERK pathway activity. Increasing DUSP6 expression by inhibiting 4EHP could potentially repress ERK pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C75 are supported by citations to prior literature, but C76 is speculative. While the data show that 4EHP depletion increases DUSP6 and reduces ERK activity, the therapeutic potential of targeting 4EHP (C76) is not directly tested and remains hypothetical. This represents a reasonable extrapolation but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims: mRNAs with long 3' UTRs generally contain more miRNA-binding sites. Previous reports indicated 4EHP is dispensable for growth under physiological conditions but required under low oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are background claims supported by citations. Notably, C97 is contradicted by the current study's findings (C23), which the authors acknowledge. These claims provide context for the unexpected findings regarding 4EHP's role in cell proliferation under standard conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Additional regulatory mechanisms and miRNAs: PUM2 and TTP were previously implicated in Dusp6 repression. 4EHP contributes to let-7-mediated translational repression, though let-7 can also cause mRNA decay. let-7 suppresses tumorigenesis by silencing RAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C77-C79 are supported by citations to prior literature. These provide additional context about other regulatory mechanisms affecting Dusp6 and other miRNAs that work with 4EHP, but are not central findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The 4EHP/miRNA repression mechanism engenders important biological consequences in homeostasis and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a broad concluding statement that is supported by the cumulative evidence showing effects on cell proliferation, apoptosis, and ERK signaling. However, the claim about 'homeostasis and disease' extends beyond what is directly demonstrated in the study, which focuses on cell culture models. The statement is reasonable given the data but somewhat speculative regarding in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Control experiments: DUSP6 depletion increases ERK1/2 phosphorylation in U251 cells as expected, and DUSP6 knockdown has no detectable effect on WT cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 describe important control experiments that validate the specificity of the DUSP6-ERK relationship and demonstrate that DUSP6 levels are not limiting for proliferation in WT cells under the conditions tested. These controls strengthen the interpretation of the rescue experiments.",
+    "result_type": "MINOR"
+  }
+]

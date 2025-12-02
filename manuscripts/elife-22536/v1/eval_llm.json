@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "16,929 high-confidence enhancer-like elements were identified in HAECs using ChIP-seq for H3K4me2 and H3K27ac marks, which together mark active enhancers. These enhancers produce bidirectional eRNAs, whose output correlates with enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by experimental ChIP-seq and GRO-seq data with appropriate citations to established methodology. The identification of enhancers using dual histone marks is a standard approach, and the eRNA correlation is supported by multiple literature citations and visualization in Figure 1a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "De novo motif enrichment analysis revealed that AP1, ETS, SOX, and GATA motifs are significantly enriched in HAEC enhancers, with AP1 and ETS motifs most frequently observed near chromatin accessibility maxima, nominating them as important mediators of the HAEC enhancer landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by motif enrichment analysis with strong statistical significance (-logP > 7.1e2) and positional analysis showing AP1/ETS enrichment near accessibility peaks (Figure 1c). The inference about their importance (C7) is reasonable given the combined motif and positional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Among highly enriched TF families, specific members were identified as likely prominent regulators: SOX18, SOX4, SOX17, JUND, JUN, and JUNB are in the top 4% most expressed TFs, and ERG, JUN, JUND, and JUNB harbor super-enhancers at their genetic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by RNA-seq expression ranking and H3K27ac ChIP-seq defining super-enhancers (Figures 1d-f). The inference that these factors serve prominent roles (C11) is reasonable given the combined expression and super-enhancer evidence, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "43% of HAEC enhancers are EC-specific based on hierarchical clustering across 61 cell types, with differential motif frequencies across three enhancer clusters (EC-specific, common, and mixed). EC-specific enhancers contain SNPs associated with cardiovascular disease and hypertension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are supported by hierarchical clustering of H3K27ac data across 61 cell types and motif analysis showing differential frequencies (Figure 1\u2014supplement 3). The overlap with GWAS SNPs (C13) is demonstrated in Table 1. The model about TF combinations (C17) is a reasonable inference from the differential motif patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "16 SNPs within HAEC enhancers represent 22 lead GWAS SNPs for CAD and hypertension, with 50% in EC-specific enhancers (enriched compared to the 43% baseline), suggesting perturbed endothelial expression contributes to vascular disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by systematic overlap analysis accounting for linkage disequilibrium (Table 1). The enrichment of disease SNPs in EC-specific enhancers (C19) provides evidence for the inference about endothelial contribution to disease (C20), though causality cannot be established from this correlative data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Motif distance analysis reveals that AP1 and ETS motifs are frequently co-localized within 50 base pairs at ERG and JUN/JUNB binding sites, while GATA and SOX motifs are not prominent near ETS or AP1-bound motifs, supporting collaborative roles for AP1 and ETS factors in determining the HAEC chromatin landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by systematic motif distance analysis at ChIP-seq peaks (Figure 3a-c). The reciprocal proximity of AP1 and ETS motifs provides strong evidence for collaboration (C27), while the absence of GATA/SOX near AP1/ETS sites supports their lesser genome-wide role (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Allele-specific binding analysis demonstrates that JUN binding is significantly affected by mutations in both AP1 motifs (p=5.0e-10) and nearby ETS motifs (p=2.6e-3), supporting collaborative binding between AP1 and ETS factors at endothelial enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by allele-specific ChIP-seq analysis using whole-genome sequencing to identify motif mutations (Figure 3d, supplement 1). The statistical significance is strong for AP1 motif effects, and the ETS motif effect on JUN binding provides direct evidence for collaboration (C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ERG and JUN co-bind 3-7 enhancers at key endothelial genes (CDH5, EGFL7, VWF, NOS3, TEK) and together bind 65% of high-confidence HAEC enhancers. Target genes are significantly enriched for cardiovascular system development and function (p=6.1e-37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by ChIP-seq overlap analysis and pathway enrichment with strong statistical significance (Figure 3e-f). The high percentage of enhancers bound by ERG/JUN (C33) and the cardiovascular pathway enrichment (C34) provide strong evidence for their major regulatory role (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ERG knockdown to <40% normal levels in three independent experiments resulted in differential expression of up to 1000 transcripts, with significant up-regulation of pro-inflammatory genes (IL1\u03b1, IL1\u03b2, LIF, IL6, CSF3, TGF\u03b22, F3) and down-regulation of EC-enriched genes (CDH5, VWF, PECAM1, EGFL7, NOS3, TEK), suggesting ERG maintains EC-specific functions while suppressing inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 are supported by RNA-seq from three biological replicates with appropriate statistical thresholds (>4-fold, FDR<5%) and pathway analysis (Figure 4). The specific fold-changes for inflammatory genes (C39-C45) and EC genes (C46) are documented. The inference about ERG's dual role (C47) is well-supported by the bidirectional expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Treatment with oxPAPC, TNF\u03b1, or IL1\u03b2 regulated 322-1174 genes (>2-fold, 5% FDR), with genes enriched in stimulus-specific pathways: oxPAPC induced NRF2-mediated oxidative stress response (p=2e-13) and unfolded protein response (p=7.0e-7), while TNF\u03b1 and IL1\u03b2 induced TNF receptor signaling, granulocyte adhesion/diapedesis, and inflammatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by RNA-seq with duplicate experiments and appropriate statistical analysis (Table 2, Figure 5\u2014supplement 1). The pathway enrichments have strong statistical significance and are consistent with known biology of these stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "266-3199 de novo enhancers were identified across inflammatory treatments, with stimulus-specific motif enrichment: C/EBP, NF\u03baB, and IRF motifs in TNF\u03b1/IL1\u03b2 enhancers, ARE in oxPAPC enhancers, and AP1/ETS motifs highly enriched in all sets (p<1e-6), consistent with collaborative TF binding model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by systematic identification of de novo enhancers (gained H3K27ac and accessibility) and motif enrichment analysis (Figure 5a-b). The consistent enrichment of AP1/ETS across all stimuli (C57) supports the collaborative model (C58), though this remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "NF\u03baB is a master transcription factor of inflammatory gene programs in endothelial cells and other cell types, while NRF2 regulates the response to oxidative stress, consistent with motif enrichment patterns observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by citations to established literature and are consistent with the observed motif enrichment patterns. These are well-established biological principles that provide context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NRF2 ChIP-seq after oxPAPC treatment identified 6923 binding peaks overlapping 21% of oxPAPC-induced de novo enhancers, including known targets (HMOX1, TXNRD1, NQO1, GCLM). Top enriched motifs include AP1, ARE, NRE, and ETS, suggesting multiple TFs coordinate the oxPAPC response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by NRF2 ChIP-seq data and overlap analysis with de novo enhancers (Figure 5\u2014supplement 2). The partial overlap (21%) and presence of multiple enriched motifs (C64) reasonably support the inference that additional TFs are involved (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "NF\u03baB (p65) ChIP-seq identified 75,937 and 51,040 binding loci after TNF\u03b1 and IL1\u03b2 treatment respectively, with 52-63% of p65-gaining elements pre-bound by ERG or JUN. NF\u03baB bound 86% and 55% of TNF\u03b1 and IL1\u03b2 de novo enhancers, with prominent AP1, ETS, IRF, and CEBP motif enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by p65 ChIP-seq data and overlap analysis with ERG/JUN binding (Figure 5c) and de novo enhancers. The high percentage of pre-bound sites (C68) supports the hierarchical binding model (C69), which is cited to prior work. Motif enrichment (C72) is documented in Figure 5\u2014supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Allele-specific binding analysis shows NF\u03baB binding is diminished at loci with mutations in \u03baB, ETS, or AP1 motifs, consistent with collaborative interactions between these factors in establishing inflammatory expression profiles and demonstrating the utility of allele-specific binding in heterogeneous human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by allele-specific p65 ChIP-seq analysis showing effects of motif mutations (Figure 5\u2014supplement 4). The mutual dependence on multiple motifs (C73) supports the collaborative model (C74), and the methodological conclusion (C75) is reasonable given the successful application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ERG performs an anti-inflammatory role in endothelial cells, as evidenced by the pro-inflammatory transcriptional signature upon ERG knockdown and prior literature showing ERG suppression of IL-8 and NF\u03baB-mediated inflammation in HUVECs. ERG levels decrease upon inflammatory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by the ERG knockdown data (Figure 4) and multiple literature citations. The anti-inflammatory role (C76-C77) is well-established in prior work, and ERG downregulation upon inflammation (C78) is supported by citation and Figure 6\u2014supplement 1a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ERG and NF\u03baB co-occupy the ICAM-1 promoter, with 29% of ERG sites gaining p65 upon TNF\u03b1 treatment and 25% of p65 sites pre-bound by ERG. Distance analysis reveals non-random spacing of ETS and NF\u03baB motifs, but ERG binding is not reduced after TNF\u03b1 treatment, suggesting coordinated regulation through multiple mechanisms rather than simple competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by ChIP-seq overlap analysis and motif distance analysis (Figure 6\u2014supplement 1). The lack of ERG binding reduction (C83) argues against simple competition, and the inference about multiple mechanisms (C84) is reasonable given the complex binding patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CEBP and IRF motifs are preferentially enriched in TNF\u03b1 and IL1\u03b2-induced enhancers. CEBPD and IRF1 transcription are highly induced upon cytokine exposure with peak expression at 2 hours, as confirmed by time-course experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by motif enrichment analysis (Figure 5b), RNA-seq showing induction (Figure 5d), and RT-qPCR time-course data (Figure 5e). The temporal dynamics (C87) are important for establishing that these factors are expressed before the 4-hour enhancer measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "IRF1 binds <10% of de novo enhancers, mostly co-bound with NF\u03baB or CEBPD. CEBPD binds 34% and 28% of IL1\u03b2 and TNF\u03b1 de novo enhancers respectively, with 24-26% of all de novo enhancers co-bound by NF\u03baB and CEBPD within 200bp, suggesting they together regulate target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by ChIP-seq overlap analysis (Figure 6a). The high frequency of NF\u03baB-CEBPD co-binding (C92) reasonably supports the inference about co-regulation (C93), though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C94"
+    ],
+    "result": "ERG and NF\u03baB bind elements at the CEBPD locus, and ERG knockdown induces CEBPD expression, consistent with a model where cytokine treatment causes ERG downregulation and NF\u03baB nuclear entry/binding, inducing CEBPD expression and enabling NF\u03baB-CEBPD co-binding at target enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C94 are supported by ChIP-seq showing binding at the CEBPD locus and RNA-seq showing CEBPD induction upon ERG knockdown (Figure 6b). The model (C94) is a reasonable inference from the combined data, though it remains a proposed mechanism requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "CEBPD knockdown to <20% control levels resulted in dampened TNF\u03b1-induced gene expression (250 vs 497 genes up-regulated), including inflammatory molecules VCAM1, SELE, IL1A, IL1\u03b2, and F3. However, some inflammatory genes were elevated in untreated CEBPD knockdown cells, suggesting CEBPD may play an anti-inflammatory role at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by RNA-seq from CEBPD knockdown experiments (Figure 6c-d). The dampened response (C95-C97) is clear, but the inference about baseline anti-inflammatory role (C98) is more speculative and based on elevated baseline expression in knockdown cells, which could have alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "IRF1 binds six elements at the IFIT locus including promoters of IFIT2, IFIT3, IFIT1, and IFIT5. IRF1 knockdown reduces basal IFIT gene expression and prevents TNF\u03b1 induction, suggesting IRF1 plays a critical role in their regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by IRF1 ChIP-seq at the IFIT locus and RNA-seq from IRF1 knockdown experiments (Figure 6e). The effects on both basal and induced expression reasonably support the inference about IRF1's critical role (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "CEBPD and IRF1 tune cytokine-induced regulatory function that is dominated by NF\u03baB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is an inference supported by the combined knockdown experiments showing partial effects on NF\u03baB-dominated responses. The characterization as 'tuning' rather than 'driving' is appropriate given that NF\u03baB binds the majority of de novo enhancers while CEBPD and IRF1 have more limited binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "This study provides the first detailed characterization of human aortic endothelial enhancers at baseline and under inflammatory conditions, identifying ETS and AP1 factors as binding the majority of active enhancers, demonstrating collaborative binding through allele-specific analysis, showing ERG knockdown produces pro-inflammatory profiles, and identifying NF\u03baB, CEBPD, IRF1, and NRF2 as coordinators of inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 are summary statements supported by the comprehensive experimental data throughout the manuscript. The claim of being 'first detailed characterization' (C103) is reasonable given the scope and depth of the multi-omics approach in primary human aortic ECs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Background claims establish that atherosclerosis is an inflammatory disease involving multiple cell types including arterial ECs, that GWAS have identified >50 CVD loci mostly in non-coding regions suggesting regulatory effects, and that enhancer biology involves collaborative and hierarchical TF binding, as characterized in hematopoietic systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C131 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation and rationale for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Summary claims state that ETS and AP1 family members bind EC enhancers, ERG removal elicits inflammatory profiles, HAEC enhancers overlap with CAD/hypertension SNPs, and NRF2, NF\u03baB, CEBPD, and IRF1 are signal-dependent TFs mediating inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are high-level summary statements that accurately reflect the major findings supported by the detailed experimental data throughout the manuscript. These are appropriate summary claims for the abstract/introduction.",
+    "result_type": "MAJOR"
+  }
+]

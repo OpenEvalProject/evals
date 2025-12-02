@@ -1,0 +1,1345 @@
+{
+  "submission": {
+    "id": "30fe636b-fc65-463f-8be0-e0c085a6ff6f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-01T21:49:45.984711Z",
+    "updated_at": "2025-12-01T21:49:45.984711Z"
+  },
+  "content": [
+    {
+      "id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "submission_id": "30fe636b-fc65-463f-8be0-e0c085a6ff6f",
+      "content_type": "manuscript",
+      "content_text": "# Using mobile phones as acoustic sensors for high-throughput mosquito surveillance\n\n## Authors\n\n- Haripriya Mukundarajan<sup>1</sup> ([ORCID: 0000-0001-8220-0724](https://orcid.org/0000-0001-8220-0724))\n- Felix Jan Hein Hol<sup>2</sup>\n- Erica Araceli Castillo<sup>1</sup>\n- Cooper Newby<sup>1</sup>\n- Manu Prakash<sup>2</sup> ([ORCID: 0000-0002-8046-8388](https://orcid.org/0000-0002-8046-8388)) \u2020\n\n### Affiliations\n\n1. Department of Mechanical Engineering Stanford University Stanford United States\n2. Department of Bioengineering Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe direct monitoring of mosquito populations in field settings is a crucial input for shaping appropriate and timely control measures for mosquito-borne diseases. Here, we demonstrate that commercially available mobile phones are a powerful tool for acoustically mapping mosquito species distributions worldwide. We show that even low-cost mobile phones with very basic functionality are capable of sensitively acquiring acoustic data on species-specific mosquito wingbeat sounds, while simultaneously recording the time and location of the human-mosquito encounter. We survey a wide range of medically important mosquito species, to quantitatively demonstrate how acoustic recordings supported by spatio-temporal metadata enable rapid, non-invasive species identification. As proof-of-concept, we carry out field demonstrations where minimally-trained users map local mosquitoes using their personal phones. Thus, we establish a new paradigm for mosquito surveillance that takes advantage of the existing global mobile network infrastructure, to enable continuous and large-scale data acquisition in resource-constrained areas.\n\n## Introduction\n\nFrequent, widespread, and high resolution surveillance of mosquitoes is essential to understanding their complex ecology and behaviour. An in-depth knowledge of human\u2014mosquito interactions is a critical component in mitigating mosquito-borne diseases like malaria, dengue, and Zika (Macdonald, 1956; World Health Organization, 2014; Godfray, 2013; Besansky, 2015; Kindhauser et al., 2016). However, there is a paucity of high-resolution ecological data on the abundance, temporal variation, and spatial distribution of mosquito vector species. This poses a serious impediment to the effective control of mosquito-borne diseases (Townson et al., 2005; Ferguson et al., 2010; Hay et al., 2013). Efforts to map mosquito populations primarily rely on interpolative mathematical models based on factors such as clinical disease burdens or climatological data, with field inputs from entomological surveys being a comparatively sparse contribution (Hay et al., 2010; Mordecai et al., 2017). This scarcity of field data stems from the absence of high-throughput, low-cost surveillance techniques to map the distribution of mosquitoes. This effect is particularly severe in resource-constrained areas, as currently used methods like trapping and manual identification require considerable expense, labour, and time. However, for disease control strategies to be truly effective, it is critical for them to be strongly informed by current mosquito population distributions. Hence, there is a pressing need for novel methods of surveillance that can rapidly and inexpensively sample mosquito populations across large areas at high spatio-temporal resolutions.\n\nAcoustic surveillance was proposed decades ago as a high-throughput automated surveillance approach, where mosquitoes in flight are identified using the species-specific frequencies in their wingbeat sounds (Kahn et al., 1945; Kahn and Offenhauser, 1949a; Offenhauser and Kahn, 1949; Kahn and Offenhauser, 1949b; Jones, 1964; Johnson and Ritchie, 2016). This technique is based on the hypothesis that sexual selection has led to characteristic sound signatures for different mosquito species (Roth, 1948; Belton, 1994; Gibson and Russell, 2006; Cator et al., 2009; Warren et al., 2009; Pennetier et al., 2010; Cator et al., 2010). However, the challenge of using expensive microphones to acquire low amplitude mosquito sounds against potentially high background noise poses a significant barrier to its widespread adoption as a field technique (Jones, 1964; Unwin and Ellington, 1979; Raman et al., 2007). Optical wingbeat measurement has been proposed as a proxy for sound recording, to overcome the technological limitations in audio signal acquisition (Moore et al., 1986; Batista et al., 2011; Chen et al., 2014; Silva et al., 2015). However, this approach is yet to take flight on a large scale, as the cost and global scalability of the requisite hardware remain challenges for its worldwide deployment.\n\nHere, we propose a novel solution that uses mobile phones to enable widespread acoustic mosquito surveillance. We use the sensitive microphones in mobile handsets to record species-specific wingbeat sounds from a variety of mosquito vector species for automated identification and analysis (Figure 1A). Our technique exploits the rapid advances in mobile phone hardware technology, recognizing that these highly portable devices are optimized for sophisticated audio capture, processing, and transmission. Further, the proliferation of the global mobile network implies that around\u00a05.3 billion users worldwide are connected today by a distributed data transmission infrastructure, growing quickly at over\u00a06% annually (Cerwall et al., 2017). Mobile connectivity has revolutionized the delivery of services based on mapping and analyzing crowdsourced data from mobile phones, which has enabled many innovative applications in citizen science (Graham et al., 2011; Catlin-Groves, 2012; Malykhina, 2013; Kong et al., 2016). Also, the explosive growth in mobile phone use is most pronounced in Africa, Asia, and Latin America (Cerwall et al., 2017), which also bear the brunt of mosquito-borne diseases (World Health Organization, 2014). This overlap implies that a mobile phone based concept can be particularly scalable, sustainable, and cost effective for sampling real-time mosquito population dynamics in resource-constrained areas with high disease burdens. Our proof-of-concept study highlights the potential of our solution to engage citizen scientists around the world in mosquito surveillance, without the need for specialized equipment or extensive formal training.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration showing the collection of mosquito acoustic data by mobile phone users in different locations. (B) Techniques to acquire wingbeat sounds from mosquitoes using mobile phones include lab methods like (i) collecting them in cages, and field methods like (ii) following mosquitoes in free-flight, or (iii) capturing them in cups, bottles or inflated bags. (C) Spectrogram for a flight trace acquired from an individual female Anopheles gambiae mosquito using a 2006 model Samsung SGH T-209 flip phone. The wingbeat frequency at every instant is computationally identified and marked with a black line. (Top) The time-averaged spectrum of this flight trace shows the distribution of acoustic power among the base frequency and multiple harmonics. (D) The variations in wingbeat frequency of the mosquito during this flight trace are represented by a probability distribution of the frequency identified in each window of the spectrogram. (Top) Raw wingbeat frequency data are represented as a violin plot with an overlaid box plot marking the inter-quartile range, black circle representing mean frequency, gray vertical bar for median frequency, and whiskers indicating 5th and 95th quantiles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** System architecture showing the collection of data by individual mobile phone users, processing to identify species of interest, and compilation into a map of mosquito activity. The diagram is depicted centering around data collection at a field site designated Location X. A-D occur prior to mobile phone based data collection, and represent steps required to enable acoustic mosquito surveillance at the field location. (A) The mosquito population in the field at Location X is sampled, either by users in Ziploc bags or by using methods such as trapping, and live specimens characteristic to the location are collected. (B) Wingbeat sounds of these field-collected mosquitoes are recorded, with an acoustic dataset associated with each individual specimen. (C) Specimens are identified to the genus (and preferably species) level by a method such as morphological ID through optical microscopy, or molecular ID through PCR. (D) Acoustic data are processed and associated with specimen IDs to yield frequency distributions characteristic of the prevalent species in that field location, forming a reference database of mosquito sounds specific to Location X. E-H represent the proposed method for mobile phone\u00a0based acoustic surveillance at the field location, assuming that the reference database of mosquito sound is already in place. (E) Mosquitoes are recorded in the field by a user with a mobile phone, and the audio file together with metadata is compiled into a database for processing. (F) The acoustic signals are processed to extract the frequencies present in the recorded mosquito sound. (G) The computed acoustic spectrum and metadata obtained from the mobile phone are compared to the reference database for that location, and the most likely species corresponding to the computed frequency is identified. (H) The identified species from this observation, together with the time and location metadata, are mapped back to the field Location X. This closes the loop for mobile phone based acoustic surveillance, from user recorded data to information on spatio-temporal mosquito activity.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Graphical brochure/poster showing techniques for recording acoustic data from mosquitoes, to train users from the general public.\n\n## Results\n\n### Mobile phone microphones can be used to record wingbeat sounds from mosquitoes\n\nWe record the acoustic signatures of free-flying mosquitoes using mobile phones, by orienting the primary microphone towards the mosquito and using an audio recording application to acquire and store its wingbeat sound (Figure 1A,B, Figure 1\u2014figure supplements 1 and 2, Supplementary file 1, Videos 1\u20133). Mosquito sounds have relatively low complexity. They comprise a single fundamental frequency with several overtones, which we identify using the short-time Fourier transform (STFT) (Figure 1C,\u00a0Video 4). The sound from typical flight traces is not monotone, but shows natural frequency variations which we capture as a wingbeat frequency distribution, in a range characteristic of the given species (Figure 1D). Since mosquitoes rarely fly at speeds over half a meter per second, the Doppler shift of frequency during free-flight ($1-[330-0.5/330+0.5]\u22480.3%$, i.e. $<2$ Hz) is small\u00a0when compared to the observed natural spreads of up to\u00a0100\u00a0Hz within a single flight trace. Sexual dimorphism in most species implies that males have higher frequencies than females. Female wingbeat frequencies are typically between 200\u00a0and 700\u00a0Hz. This overlaps the voice frequency band (300\u00a0to 3000\u00a0Hz), in which phones are designed to have maximum sensitivity. In addition, using mobile phones as recording platforms automatically registers relevant metadata parameters, such as the location and time of data acquisition. This adds valuable secondary information to acoustic data that is useful for species identification and spatio-temporal mapping. Such acoustic and spatio-temporal information could potentially be aggregated from many mobile phone users, to generate large data sets that map the distribution of mosquito species at high resolutions (Figure 1\u2014figure supplement 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/27854/elife-27854-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/27854/elife-27854-video3.mp4.jpg)\n\n### Mobile phone microphones accurately capture wingbeat frequencies without distortion\n\nOur concept of mobile phone based acoustic surveillance is based on the idea that mobile phones are high fidelity acoustic sensors, which faithfully capture the frequencies produced by mosquito wingbeats during flight. To confirm this, we compared measurements of wingbeat frequency from two independent modalities, high speed video and mobile phone audio (Sony Xperia Z3 Compact), for female Culex tarsalis mosquitoes in tethered flight (Figure 2A, Video 4, Video 5). For synchronized audio-video recordings, spectrograms were aligned in time to within 2\u00a0ms, and show an exact match in frequency at each time window to within a computational error margin of 2\u00a0Hz (Figure 2B). The respective distributions of wingbeat frequency have maximum sample fractions occurring in the same frequency bin (Figure 2C), giving the same median frequency of\u00a0264\u00a0Hz, despite the audio signal being noisier than the video. To show similarity between distributions, we compute the Bhattacharya Coefficient (BC) - a measure of the mutual overlap of two distributions, ranging between $1$ for completely coincident and $0$ for completely separated distributions. We obtain a high BC of\u00a00.95, implying an almost complete overlap between the distributions. This corroborates the spectral accuracy of wingbeat frequency distributions recorded by mobile phones, based on an independent optical reference.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of experimental setup for recording a tethered mosquito using synchronized mobile phone audio and high speed video. Synchronization between audio and video is achieved on the order of microseconds, using a piezoelectric buzzer connected in parallel with an LED, and controlled with a microprocessor to produce the same temporal sequence of sound and light. (B) Overlaid spectrograms for female Culex tarsalis mosquitoes obtained independently using high speed video (magenta) and mobile phone audio (cyan), aligned to within 2\u00a0ms and showing a spectral overlap (blue) within 2\u00a0Hz across all time instances. The mobile phone data is noisy but faithfully reproduces the wingbeat frequency peak of 264\u00a0Hz and the first two overtones. (C), Wingbeat frequency distributions from video and audio (165 time instances each) have high overlaps, as measured by a Bhattacharya Coefficient (BC) of\u00a00.95. (D) Signal-to-noise ratio (SNR) estimates over distance from a standardized sound source show that mobile phone microphone performance within a 100\u00a0mm radius is superior or comparable to high performance studio microphones. The pink line represents the actual source amplitude, with the pink-shaded region below indicating the region less than the actual amplitude, in which all acoustic measurements should lie. The gray-shaded band represents the range of sensitivities between the limits set by the two studio microphones used as reference standards. The SNR curves for all three phones lie mostly within this band, indicating that they perform in a range between the two reference microphones. (E) SNR over distance for the wingbeat sound produced by a tethered female Cx. tarsalis mosquito (normalized for a source amplitude of 45 dB), providing working limits where phones can detect the audio signal - 50 mm for the low end T-209 feature phone and 100 mm for the iPhone 4S and Xperia Z3 Compact smartphones. The gray-dotted line represents the actual amplitude of the mosquito sound in dB, as measured by the MXL991 reference microphone. The gray-shaded region below indicates the region less than the actual amplitude, in which all acoustic measurements are expected to lie. (F) Variation of the wingbeat frequency distribution sampled by 8 different phones is low compared to the natural variation within a population of lab-reared Anopheles stephensi females. Raw data are shown with overlaid box plots marking the inter-quartile range, black circles for mean frequency, gray vertical bars for median frequency, and whiskers indicating 5th and\u00a095th quantiles. (G,H) The Jensen-Shannon divergence metric for base frequency distributions (G, lower left triangle) shows low disparity, ranging between 0.144 and 0.3, against a minimum of $0$ for identical distributions. Likewise, the Bhattacharya distance (H, upper right triangle) shows high overlap, with values between 0.935\u00a0and 0.986, against a maximum of 1 for identical distributions. The brown-hatched areas along the diagonal represent blank cells, as distances are not shown for any distribution with respect to itself.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-E) Comparison of power spectral density for synchronized simultaneous recordings of individual Culex tarsalis female mosquitoes using the MXL 991 studio microphone, the Apex 220 reference microphone and a mobile phone, taken at varying distances. The left column corresponds to the SGH T-209 feature phone, the middle column to the iPhone 4S iOS smartphone, and the right column to the Xperia Z3 Compact Android smartphone. (A) Superimposed averaged spectra show that all phones acquire wingbeat sound at a high signal-to-noise ratio at 10 mm away from the mosquito. (B,C,D) Overlaid spectrograms synchronized to within\u00a020 ms in time show a near-perfect spectral match of within 5 Hz at each time interval, for the mobile phone microphone (red channel), MXL 991 (green channel) and the Apex 200 (blue channel), shown together as RGB images with intensity of colour corresponding to variations in power spectral density. Mobile phones strongly acquire mosquito sounds at 10 mm or even 50 mm, but their sensitivity drops sharply at distances of 100 mm. (E) Superimposed averaged spectra show that only the Xperia Z3 continues to acquire wingbeat sound at 100 mm away from the mosquito, albeit at low signal-to-noise ratio. The T209 feature phone picks up low-frequency noise between 300\u00a0and 600 Hz that overwhelms the mosquito frequencies, the iPhone 4S has low-noise acquisition throughout, and the Xperia Z3 picks up high-frequency noise above 1 kHz that leaves the mosquito frequency band relatively unaffected.\n\n![Video 4.](https://cdn.elifesciences.org/articles/27854/elife-27854-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/27854/elife-27854-video5.mp4.jpg)\n\n**Video 5.:** The calibration LED visible at the bottom left is used to automatically synchronize time points in the video with corresponding beeps from a piezoelectric buzzer in the audio. Recording was done on a Phantom v1610 high-speed camera sampling at 10 kHz, with playback slowed down 100 times.\n\n![Video 6.](https://cdn.elifesciences.org/articles/27854/elife-27854-video6.mp4.jpg)\n\n**Video 6.:** Recording was done on a Phantom VEO high-speed camera sampling at 10 kHz, with playback slowed down 100 times.\n\n### Mobile phone microphones are comparable to studio microphones in recording mosquito wingbeats at up to 100 mm\n\nWe propose using mobile phones for acoustic surveillance under field conditions, where the primary challenge is recording faint mosquito sounds in noise-prone environments. Accordingly, it is important to establish the limits within which their built-in microphones are sensitive enough to reliably acquire data with high signal-to-noise ratios (SNR). The technical specifications of many commercial mobile phone microphones are not openly available. Hence, we experimentally calibrated a range of mobile phone models against two reference electret condenser microphones under identical conditions. Using a piezoelectric buzzer of constant amplitude (77 dB at source) and frequency (500 Hz) as a standardized sound source, we first showed that both smartphones (iPhone 4S, Xperia Z3 Compact) and low-end feature phones (Samsung\u00a0SGH T-209 clamshell model) have SNRs comparable to the reference microphones over distances up to 100 mm (Figure 2D). Next, we recorded wingbeat sound from tethered mosquitoes to gauge suitable working distances over which SNR is high enough to allow detection. Curves of mobile phone SNR over distance indicate that all the phones tested, including a decade-old basic phone (SGH T-209), are capable of acquiring detectable wingbeat sound up to 50 mm from a mosquito (Figure 2E). This is a working distance we have found to be easily achievable when making free-flight recordings in the field. This distance improves to 100 mm in the case of smartphones like the Xperia, making it even easier for users to record mosquito sound (Figure 2\u2014figure supplement 1). Beyond these distances, the mosquito sound becomes imperceptible, drowned out by background noise. We also caution that these working limits are appropriate in quiet to moderately noisy environments with background noise levels below 50 dB, and shrink drastically in louder conditions. In addition to distance, the orientation of the mobile phone is also critical to maximizing SNR, as its acoustic sensitivity is directional and localized around the primary microphone. Thus, the success of using mobile phones to record mosquitoes is fundamentally dependent on active involvement from the user, to maintain the appropriate distance and orientation of the phone with respect to the mosquito, and avoid introducing noise via bumps and scrapes of the microphone.\n\n### Diverse mobile phone models acquire quantitatively equivalent acoustic data from mosquitoes\n\nThere are over 100 mobile phone brands in use worldwide, with a range of devices widely varying in features and capability. Widespread mobile phone-based surveillance is only possible if mosquito wingbeat sound collected using any phone can be analyzed using the same identification metrics and algorithms. This means that a diverse range of phone models must record quantitatively equivalent acoustic data with identical spectral profiles. This is a necessity for our proposed surveillance technique to scale to the broadest possible user base, particularly in countries with lower smartphone penetration. We compared eight different smart and feature phones ranging in price between\u00a0~$20\u00a0and\u00a0~$700 (Figure 2F), by analyzing 5 minutes of audio recorded with each phone from free-flying female Anopheles stephensi mosquitoes of similar age from a lab-reared population contained in a cage. We noted high degrees of overlap in wingbeat frequency distributions recorded by each phone for this population, with both mean and median frequencies obtained by each phone differing by less than 5% from other phones (Figure 2F).\n\nWe computed the Bhattacharya Coefficient (BC) and obtained high degrees of overlap between 0.93\u00a0and 1 (Figure 2H). We also quantified how distinguishable these wingbeat frequency distributions are, using the Jensen-Shannon divergence metric (JSD) between each pair of phones (Figure 2G). This metric, which ranges from 0 for identical to\u00a01\u00a0for completely disparate distributions, can be inversely related to the amount of mutual information shared between the distributions. The JSD for each pair of phones had low values below 0.3 indicating high similarity in measurement, corroborating that wingbeat frequency sampling is relatively insensitive to the phone used. This is also true of other species we surveyed, with the JSD between phones typically between 0.1\u00a0and 0.35 for a given population. This range of JSD provides an estimate of the variance inherent in sampling a population of the same species. Hence, the upper end of this range gives an approximate quantitative threshold for differentiability requirements between wingbeat frequency distributions of different species. Thus, we demonstrate that a diverse range of both smart and feature phones provide highly similar acoustic spectra from the same population of mosquitoes, enabling a truly universal acoustics-based platform for mosquito identification.\n\n### Mosquito species have characteristic wingbeat frequency distributions that are measurable using mobile phone recordings\n\nThe most important ingredient for acoustic identification of mosquitoes is prior knowledge of the wingbeat frequency distributions corresponding to different species. We surveyed representative populations from 20 medically relevant mosquito species under similar experimental conditions (Figure 3A), to establish a reference dataset for classifying acoustic recordings (Mukundarajan et al., 2017). Although we recorded mosquitoes using a variety of phones, the results presented here focus on data acquired by the 2006-model $20 SGH T-209 feature phone. This highlights that even a basic low-end phone is capable of collecting high-quality acoustic recordings, to precisely measure wingbeat frequency distributions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig3-v1.jpg)\n\n**Figure 3.:** (A) Distribution of wingbeat frequencies for female mosquitoes of 20 vector species, for recordings obtained with the 2006 model SGH\u00a0T-209 low-end feature phone (except Culex pipiens, Culex quinquefasciatus,\u00a0and\u00a0Culiseta\u00a0incidens,\u00a0recorded using iPhone models; and Aedes sierrensis, recorded with various phones). (B)\u00a0(lower left triangle), Jensen-Shannon divergence metric for base frequency distributions. Distributions are spaced apart with high J-S divergence in most cases, with only four pairwise combinations having J-S divergence around 0.35 - the maximum divergence for the same species across different phones. (C) (upper right triangle), Qualitative classifiation of species pairs according to the possibility of distinguishing them using mobile phones \u2014\u2009(i) no frequency overlaps, hence distinguishable by acoustics alone, (ii) overlapping frequency distributions, but not geographically co-occurring hence distinguishable using location, (iii)overlapping frequency distributions but distinguishable using time stamps, (iv) partially overlapping frequency distributions but no location-time distinctions, hence distinguishable but not in all cases, (v) indistingishable due to highly overlapping frequency distributions with co-occurrence in space and time. The brown-hatched areas along the diagonal represent blank cells, as distances are not shown for any distribution with respect to itself. (D) Confusion matrix for classification of acoustic data bootstrapped from the reference frequency datasets for twenty species, using the Maximum Likelihood Estimation (MLE) algorithm. Each column corresponds to a particular species, from which acoustic data is drawn for classification. The twenty entries in each column represent the fractions in which recordings from the species corresponding to that column are classified among all twenty species in our database. This classification is done for data taken from the reference distributions, and is compared against the same reference dataset, based exclusively on wingbeat frequency. Classification errors occur when a given species frequency distribution has overlaps with other species, and the confusion matrix reflects the inherent uniqueness or overlap between frequency distributions in our database. Colour scale showing fraction of recordings classified is the same for both D and E. (E) Confusion matrix for classification of test audio recordings, using the MLE algorithm. Test data were collected for 17 species, using different phones (some or all among Google Nexus One, Sony Xperia Z3 Compact, iPhone 4S) which were not used to construct the reference distributions (recorded using the SGH T-209). Each column corresponds to a particular test species, from which acoustic data are drawn for classification. The twenty entries in each column represent the fractions in which recordings from the test species corresponding to that column are classified among all twenty species in our database. Classification is based on both wingbeat frequency and a location filter, simulating the classification of randomly recorded mosquitoes of different species by users in field conditions. The resulting classification accuracies are significantly higher in this case, when compared to classification accuracies which do not consider location (Figure 3\u2014figure supplement 1D). Blank areas along three columns represent species for which test data from a different phone were not available. (F,G) Variations in base-frequency distribution (F) for field-recorded sounds corresponding to wild female Ae. sierrensis mosquitoes having a wide (about two-fold) variation in body size and wing area (G), showing small differences between individuals compared to the variation within each flight trace. The gray distribution at the top represents the species wingbeat frequency distribution for Ae. sierrensis, with the gray-shaded vertical band marking the range from 5th to 95th percentile of frequency for the species. All individual recordings lie completely within this range.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A,B) Convergence of statistical metrics for randomly sampled subsets of increasing size bootstrapped from species wingbeat frequency distributions for 20 species, to values expected for subsets having identical statistical parameters as the parent distribution. Colours correspond to each species. The Bhattacharya coefficient (BC) (A) approaches $1$ indicating perfect overlap of point mass functions for subsets and parent distributions, while the Jensen-Shannon Divergence metric (JSD) (B) approaches $0$ indicating that both subset and parent distributions contain the same information. These metrics change rapidly for subsets having few sample points, but quickly converge to their expected values within a small fraction of the total number of samples comprising each species frequency distribution. (C) Distributions of wingbeat frequency for different populations of the same species. Anopheles gambiae and Aedes aegypti have highly overlapping distributions for different colonies, whereas Anopheles arabiensis shows significant difference in wingbeat frequency between two variants. (D) Confusion matrix for classification of audio recordings using the Maximum Likelihood estimation algorithm, for test data from various phones, as compared to the reference datasets for $20$ species recorded using the SGH T-209 phone. Each column shows the probability of correct or erroneous classification of a given species with respect to all others, based solely on wingbeat frequency. The resulting classification accuracies are comparatively lower than those which factor in location metadata (Figure 3E). Blank areas along three columns represent species for which test data from a different phone was not available.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A-F) Illustrative examples for distinguishing between medically relevant mosquito species using acoustics and metadata. All inset images of mosquito specimens are taken from Walter Reed Biosystematics Unit mosquito ID databases. (A) Distinction by acoustic data alone - Cx. pipiens and An. gambiae, which co-occur in many regions, can easily be distinguished by sound alone. (B) Distinction by location metadata - An. atroparvus and An. dirus have overlapping acoustic spectra, but recordings are easily distinguished from each other by metadata pertaining to their distinct spatial distributions in Europe and South-East Asia respectively. (C) Possible partial distinction by time metadata - Ae. aegypti and An. gambiae can occur together in many locations and have overlapping wingbeat frequency distributions, but may possibly be distinguished in some instances by time of recording, based on their differential preferences for diurnal and crepuscular biting. (D) Partial distinction by acoustic data - Ae. aegypti and Ae. albopictus have similar appearances, geographical distributions and biting habits in many areas. Although the wingbeat frequency distributions are not completely distinct, interquartile ranges do not overlap and a significant fraction of recordings can still be classified correctly as one or the other, making acoustic identification faster and easier than microscopy. Similarly in the case of Cx. pipiens and Cx. quinquefasciatus, which have partially distinguishable frequency spectra despite being otherwise indistinguishable except using PCR. (E) Partial distinction by acoustic data - An. arabiensis, An. gambiae, and An. quadriannulatus, which are members of a species complex that are identical in appearance and often overlapping in habitat, have non-overlapping interquartile ranges for wingbeat frequency distributions implying that the majority of acoustic samples can be classified correctly as one among the three. (F) An. arabiensis is indistinguishable based on mobile phone acoustic data from An. merus, another members of the An. gambiae s.l. species complex, exposing a relatively rare limitation of species identification using mobile phone acoustic surveillance.\n\nWe analyzed the recordings of the reference populations by dividing their spectrograms into 20 ms sample windows, and applying a peak-finding algorithm in each window to measure instantaneous frequency. The number of frequency values we obtained for each species had a wide range between 300\u00a0and 50,000 data points, and these were binned into wingbeat frequency distributions (Figure 3A). To verify whether these reference distributions are sufficiently well-sampled, we drew random subsets of frequency values from each distribution, and measured the statistical distance from these subsets to their parent distributions. For subsets of increasing size, we observed a rapid convergence of the BC and JSD to their respective values of 1 and $0$ expected for distributions identical to the parent. We showed computationally that\u00a0the smallest subset of randomly selected values which has a BC above 0.9 as compared to the full distribution still has a length which is a small fraction (less than 0.2) of the total number of samples\u00a0in the full distribution for each species. Some species, such as An. dirus and An. stephensi, show slower convergence, due to the smaller sample sizes used to build the frequency distributions. The time for convergence above a BC of 0.9 corresponds to approximately 60 samples, or 1.2 seconds of recording time, to generate a well-sampled wingbeat frequency distribution for a given population. Since our reference distributions were recorded for between 6\u00a0and 1000 seconds each, we conclude that they are sufficiently representative of the variations within the reference population. Nevertheless, it is also clear that the longer a population is sampled for, the better the frequency distribution constructed to represent it.\n\nWe also considered whether significant variations exist between different colonies or populations within a species. We found that different lab-reared strains of An. gambiae, including permethrin susceptible and resistant variants sourced from Kenya and an additional bendiocarb resistant strain sourced from Benin, produced highly similar frequency distributions with large overlaps of 0.84 to 0.89 as measured by their mutual BCs (Figure 3\u2014figure supplement 1C). Similarly for Aedes aegypti, lab-reared mosquitoes from two separate colonies of the same New Orleans origin, as well as first generation progeny from eggs retrieved from the field in Los Angeles, had high overlaps in their frequency distributions with mutual BCs ranging between 0.66 and 0.74 (the slightly lower BC values arise due to the distribution for one of the colonies having a smaller spread despite being completely overlapped by the other two) (Figure 3\u2014figure supplement 1C). Thus, we hypothesize that it may be possible for certain species to have wingbeat frequency distributions that are universal across colonies and strains, facilitating automated identification using the same reference. However, we also found that lab-reared strains of An. arabiensis originally sourced from Senegal and Sudan have non-overlapping frequency distributions, with a very small BC of 0.14 (Figure 3\u2014figure supplement 1C). This signals that there may be other factors underlying geographic variability in wingbeat frequency within a species, which merit further investigation. Hence, it is advisable to build local acoustic databases wherever possible in\u00a0order\u00a0to improve classification, by recording actual frequency distributions from mosquitoes whose species have been verified by non-acoustic methods (Figure 1\u2014figure supplement 1A\u2013D).\n\n### Estimation methods can be used for species classification of acoustic recordings\n\nThe core concept of acoustic surveillance is the correct identification of the species of a mosquito given its wingbeat acoustic signature. Although previous approaches have used a single averaged value of frequency to represent a flight trace (Moore et al., 1986; Batista et al., 2011; Chen et al., 2014; Silva et al., 2015; Villarreal et al., 2017), our approach takes into account the natural variance within each trace, by treating the collection of frequency values across all time windows of the recording as a distribution. We classify a given flight trace by statistically comparing this distribution against the known wingbeat frequency distributions for different species. Although classification is possible through several approaches that emphasize different statistical comparisons, in this work we apply the method of Maximum Likelihood Estimation (MLE). Here, the species is considered to be a parameter, whose discrete values affect the statistical distribution of wingbeat frequency over a specified frequency\u00a0range. We classify a given flight trace as\u00a0belonging\u00a0to that species whose corresponding wingbeat frequency distribution is most likely to have produced the observed frequency values from that trace, with a confidence level equal to the likelihood estimate. The reference distributions for comparison are built using the data presented in Figure 3A, collected using the SGH T-209 basic phone.\n\nThe best indicator for how likely it is for recordings from a given species to be correctly classified is the degree of overlap of its characteristic wingbeat frequency distribution with other potentially confounding species. One way to measure this is the mutual JSD between pairs of species, which must be significantly higher than the threshold of 0.35 established earlier for the variance inherent within the same species. The vast majority of all possible pairwise combinations of species in our study (184 out of 190) had JSD greater than this minimum value (Figure 3B), indicating that differences in frequency distribution between species are significant in most cases (Figure 3C). We translate this into probabilistic estimates of classification accuracy, based on the principle that randomly drawn samples bootstrapped\u00a0from a given species\u2019 frequency distribution will be classified with an error rate that reflects its overlap with other species\u2019 distributions. We applied the MLE algorithm on bootstrapped subsets from the wingbeat frequency data used to create the reference distributions, to build a confusion matrix showing the relative proportions in which subsets derived from different species are classified correctly or erroneously. Our results verify that species with fairly unique and non-overlapping wingbeat frequency\u00a0distributions are almost always correctly classified, while those with high degrees of overlap are most likely to be mutually misclassified. This provides quantitative estimates of the inherent degree of differentiability of each species with respect to all others (Figure 3D), setting intrinsic limits on the success of any classification scheme based exclusively on wingbeat frequency.\n\nThe classification accuracies and error rates for samples bootstrapped from the same data used to build reference distributions represent a best case scenario. A more realistic test of our classification approach is its ability to handle new flight traces that are not part of the original reference datasets. We validated the MLE algorithm by classifying recordings from the iPhone 4S, Sony Xperia Z3 Compact, and Google Nexus One (Figure 3E, Figure 3\u2014figure supplement 1D), by comparing them to the reference dataset collected using the SGH T-209 (Figure 3A). This is a validation dataset that has similar species frequency distributions as the reference dataset, but also incorporates the additional variance arising from using different phones. We sequentially tested a large number of individual flight traces chosen at random from eight different species, to simulate the stochastic nature of human-mosquito encounters involving a variety of species in the field. Each flight trace was compared against all species in the reference dataset, and the best match was chosen. We observe that classification accuracies are slightly lower than those obtained for bootstrapped reference data (Figure 3E, Figure 3\u2014figure supplement 1D), indicating that our MLE approach is inherently limited in practice by overlaps in wingbeat frequency distributions.\n\n### Acoustic data can be combined with metadata to improve classification accuracies\n\nThe limitations of using wingbeat frequency as the sole distinguishing characteristic between species are exposed by the inability to perfectly classify species that have overlapping frequency distributions. A typical wingbeat frequency distribution for any given species has a spread of 150 to 200 Hz between the 5th and 95th percentiles, located within the frequency range of 200\u00a0to 700 Hz for most female mosquitoes. But with over 40 species of medical relevance among Anopheles mosquitoes alone, the pigeon-hole principle makes it impossible to have perfectly non-overlapping distributions for all species (Chen et al., 2014). Unlike speech (Rabiner and Schafer, 2011), music (Wang, 2003), or other insects (Drosopoulos and Claridge, 2005), birds (Marler and Slabbekoorn, 2004) and animals (Mellinger et al., 2007; Mellinger and Clark, 2000; Portfors, 2007), the low time-domain complexity of mosquito sound makes it difficult to identify temporal motifs or other acoustic parameters that can be used in species identification (Chen et al., 2014; Kiskin et al., 2017). To improve the classification of mosquito species, Chen et al. (2014) introduced the concept of metadata, where parameters like the time or place of recording can be used as additional features to differentiate between mosquitoes with varying circadian activity or geographic distribution. Mobile phones offer the advantage of automatically registering time stamps for acoustic data, and location tags from cell tower or GPS measurements, along with sensors to collect other metadata\u00a0such as photographs which can support identification. We assessed the effect of including even a single metadata parameter to refine species classification, by applying a location filter based on entomological survey data from over 200 countries for the 20 species in our database (Walter Reed Biosystematics Unit, 2017). These data are available in the public domain (Walter Reed Biosystematics Unit, 2017), and can be readily incorporated as prior knowledge to aid in classification. We repeated our sequential classification of flight traces from randomly chosen species, with each recording randomly assigned to one of the countries where that species is known to be found. Recordings are then compared only\u00a0among the subset of species co-located in that country. This significantly improved classification accuracy not only for individual species, but also from about 35% to 65%, as an average over all the species tested (Figure 3E, Figure 3\u2014figure supplement 1D). In earlier work, algorithms for mosquito species classification have achieved accuracies of around $80%$, when comparing a smaller number (10) of insect types. This included both sexes of four acoustically dimorphic mosquito species, and two species of flies (Chen et al., 2014). Although the overall classification accuracy by our method is a little lower at 65%, we note that this is for twice the number of species and includes only female mosquitoes. Since classification accuracy decreases significantly with the number of species considered and their degree of frequency overlap, the accuracies produced by our classification algorithm appear to be reasonable in comparison to earlier work. We underline the caveat that in practice, classification accuracies can be further lowered by species other than the ones in our reference database. However, the inclusion of a location filter eliminates potential errors from irrelevant species, and highlights the discriminatory power of such metadata.\n\nFor greater clarity, we illustrate a few scenarios where acoustic data can be combined with metadata for identifying mosquitoes in field investigations (Figure 3\u2014figure supplement 2). In the simplest case, species with completely non-overlapping frequency distributions, such as Anopheles gambiae and Culex pipiens (JSD =\u00a01, negligible probability of mutual mis-classification), can easily be distinguished by sound alone (Figure 3\u2014figure supplement 2A). Some species with overlapping frequency distributions can still be perfectly classified using location metadata on the basis of their spatial segregation. For instance, An. atroparvus has a 38% probability of being mis-classified as An. dirus (overlapping frequency distribution with mutual JSD $=0.26<0.35$). However, this confusion never occurs when location is taken into account, as these species are respectively found in Europe and South Asia (Sinka et al., 2012), and do not co-exist in the same area (Figure 3\u2014figure supplement 2B). The use of timestamps has been suggested previously in the case of species which are overlapping in both frequency and spatial distribution, but have different circadian activity (Chen et al., 2014; Silva et al., 2015). As an example, Ae. aegypti is often misclassified as An. gambiae with high probability based on wingbeat frequency (mutual JSD $=0.37\u223c0.35$, Ae. aegypti wrongly classified 95% of the time). However, classification accuracy may possibly be substantially improved if recordings collected during daytime were all classified as Ae. aegypti, since it is much more likely to be active during daylight hours (Figure 3\u2014figure supplement 2C). Co-occurring and morphologically similar species of interest that can be acoustically distinguished include the arboviral vectors Ae. aegypti and Ae. albopictus (Brogdon, 1994) (JSD $=0.55>0.35$, correctly distinguished by MLE around 98% of the time), and the closely related species Cx. pipiens and Cx. quinquefasciatus (JSD $=0.65>0.35$, correctly distinguished around 95% of the time) (Figure 3\u2014figure supplement 2D). Morphologically indistinguishable vector species like members of the Anopheles gambiae s.l. complex are of particular interest for acoustic identification (Brogdon, 1998; Wekesa et al., 1998; Tripet et al., 2004). Our results for four members of this complex imply significant distinguishability for An. arabiensis, An. quadriannulatus, An. gambiae, and An. merus. The JSD for all but one species pair ranges between 0.61 and 0.91 (Figure 3\u2014figure supplement 2E), and An. gambiae and An. quadriannulatus are correctly identified with over 97% probability. However, the pair of An. arabiensis and An. merus has high frequency overlap (JSD $=0.29<0.35$, An. arabiensis is misclassified as An. merus with around 15% probability) (Figure 3\u2014figure supplement 2F). Improving classification rates in this case may not be possible without additional knowledge of their specific local ecology, such as the distribution of saltwater breeding sites for the halophilic An. merus. Despite such limiting cases, the wingbeat frequency combined with phone provided metadata has significant discriminatory power between species in many situations, making mobile phone-based acoustic surveillance an extremely promising screening tool for mosquito population compositions (Figure 3C).\n\n### Mobile phones can be effectively used to map mosquito activity through user-driven acoustic surveillance\n\nSo far, we have calibrated the performance of mobile phones and studied acoustic frequency dispersion among different mosquito species, using lab-reared populations in controlled environments. We now test our mobile phone based surveillance approach under field conditions, by collecting mosquito wingbeat data in various settings and measuring acoustic variance among wild mosquito populations. Using the techniques described earlier (Figure 1\u2014figure supplement 2, Videos 1\u20133), we recorded mosquitoes not only in free flight, but also under confinement in cups or bottles to amplify the sound and increase the length of flight traces, due to the enforced proximity to the microphone. We also collected recordings in a wide range of ambient environments, from urban and rural homes, both indoors and outdoors, to forests and parks (Figure 4\u2014figure supplement 1, Supplementary files 2\u20137). We obtained mosquito recordings with high SNR, whose distinctive narrow-spectrum characteristics allow their easy visual identification in spectrograms against background noises such as birdsong, fire truck sirens, and human speech. We matched the sound signatures against our frequency distribution database (Figure 3A for females, data for males not shown) to identify their species, which we also confirmed by capturing the respective specimens for morphological identification by microscopy.\n\nWild mosquitoes in field environments may vary considerably in terms of age, body size, rearing temperature, and nutrition status, yet our method requires the variation in their wingbeat frequencies to be sufficiently small in order to be identifiable. We explored the variations in wingbeat frequency for flight traces corresponding to over 80 individual free-flying Aedes sierrensis mosquitoes, recorded by volunteers at Big Basin Redwoods State Park in California, USA (BBR) (Figure 4\u2014figure supplement 2A). Wingbeat frequency distributions for a population typically span a characteristic frequency range with a spread of around 150 to 200 Hz (Figure 3A). For individual flight traces collected in the field, the distributions lie at different positions within the population-level frequency range, and have spreads (difference between 5th and 95th percentile) between 10\u00a0and 100 Hz (Figure 4\u2014figure supplement 2B,C). The spread in frequency for a single flight trace is typically smaller than the spread across a population, with the difference between mean frequencies for different traces contributing to the additional variation in the population\u2019s frequency distribution. This spread in each flight trace also appears uncorrelated to the duration of the trace itself (Figure 4\u2014figure supplement 2B,C), suggesting that it may arise due to aerial manoeuvers during flight\u00a0(Video 6). Although the mean frequency for most individuals is tightly clustered, there are still outliers that pose challenges for classification (Figure 4\u2014figure supplement 2B). Additionally, the classification accuracy for any given recording was not a function of the duration of the trace but of the mean frequency, indicating that overlaps between frequency distribution play the fundamental role in identifying the species correctly, no matter how long the flight trace is recorded for (Figure 4\u2014figure supplement 2D). We also observed that frequency distributions for individual flight traces have a minimum spread of around 2% of the mean frequency irrespective of the mean frequency or the duration of the recording, suggesting that this is an inherent natural variation in the wingbeat frequency during free flight (Figure 4\u2014figure supplement 2C). Further, both the spread and the duration of the recording did not affect whether the recording was classified correctly (Figure 4\u2014figure supplement 2E), corroborating the importance of wingbeat frequency as the primary identifying factor.\n\nWingbeat frequency for insects, including mosquitoes, has been shown to vary linearly with temperature (Oertli, 1989; Villarreal et al., 2017). It may be possible to correct for this factor by measuring ambient temperature when recording as part of relevant metadata, as suggested in other studies (Chen et al., 2014). We also investigated correlations between wingbeat frequency and body size, by comparing the physical specimens corresponding to several flight traces (Figure 3F,G). For mosquitoes varying almost two-fold in size (Figure 3G), the difference in mean frequency between each mosquito is less than the spread within each individual flight trace, and non-monotonic with body size (Figure 3F). This provides a field confirmation of lab studies that show no relationship between wingbeat frequency and body size (Villarreal et al., 2017). Despite the variations among individuals, our MLE approach (using a pool of all field recordings together to create a reference frequency distribution) was able to correctly classify recordings from wild Aedes sierrensis mosquitoes in about two-thirds of cases (54 out of 82 recordings), when considering other local species (Cx. pipiens, Cx. quinquefasciatus, Cx. tarsalis, and Cu. incidens) as potential confounders.\n\nWe next show how mobile phone recordings of mosquitoes in the field can be pooled from minimally trained users for spatio-temporal mapping, using the time and location metadata associated with each recording. Our recordings of wild Ae. sierrensis mosquitoes in BBR (Figure 4\u2014figure supplement 2A) represent the only species found in the park, based on microscopic identification of the corresponding captured specimens. These were collected over a continuous 3 hour period by 15 volunteers hiking along trails and recording with their personal mobile phones. The recordings were mapped according to their locations to reflect spatial variations in mosquito distribution within the park (Figure 4D). Parsing this data by recording time further reveals the rise and fall in the number of human-mosquito encounters over an evening (Figure 4D inset), which can be correlated to the circadian activity of Ae. sierrensis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig4-v1.jpg)\n\n**Figure 4.:** (A) Sample spectrograms from female Culex spp. (top) and Anopheles spp. (bottom) mosquitoes captured in the field at Ranomafana in Madagascar. (B) Frequency distributions for field-caught Culex spp. and Anopheles spp. mosquitoes in Ranomafana, forming a reference for identification of recordings from either species at this field site. Acoustic data were collected for 3 minutes each, from 50 individual Culex and 10 individual Anopheles mosquitoes. (C) Map of Ranomafana village showing distribution of female Culex spp., Anopheles spp., and Mansonia spp. mosquitoes, from mobile phone data recorded by 10 volunteers over the approximately 1 km X 2 km area. Each square represents one recording, and black circles indicate locations where volunteers reported encountering no mosquitoes. The numbers in the white boxes show the number of Culex (pink) and Anopheles (gray) mosquitoes captured in CDC light traps over the same time period at those locations. The map shows a spatial gradient from riverbank to hillside in the relative proportion of Anopheles spp. and Culex spp. mosquitoes. Further, mosquito hotspots are interspersed with points having a reported lack of mosquitoes, highlighting the potential importance of factors such as the distribution of water and livestock. (D) Spatio-temporal activity map for female Ae. sierrensis mosquitoes in the Big Basin Park field site, using data collected by\u00a015\u00a0hikers recording mosquitoes with their personal mobile phones, over a 3-hour period in an approximately 4.5 km X 5.5 km area. Each brown square represents one Ae. sierrensis female recording, and black dots represent sites where hikers reported encountering no mosquitoes at all. (Inset top left) Temporal distribution of the overall mosquito activity data depicted in (D) based on recording timestamps, showing the rise and fall in the number of recordings made, a proxy for mosquito activity, in each hour of the field study.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-F) Raw spectrograms of acoustic data acquired by various mobile phone users in different field conditions, with base frequencies of mosquito sounds highlighted by a box. The signals include sources of noise such as human speech, fire truck sirens, and birdsong, and were acquired in both urban (A-D) and forested (E,F) environments, including indoor (A,B) and outdoor (C-F) settings. Mosquitoes recorded were wither followed in free-flight (A,C,E or captured in a plastic ziploc bag prior to recording (B,D,F). All spectrograms show raw spectra without background correction or noise removal, and show the spectra from extraneous acoustic sources (speech, sirens) to distinguish the characteristics of mosquito spectra from other sounds. Spectrograms A-F correspond to sounds in Supplementary file 2\u20137.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/27854/elife-27854-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Distribution of wingbeat frequencies for 74 representative recordings of wild female Aedes sierrensis mosquitoes from Big Basin Redwoods State Park, CA, USA. The bottom distribution shows the overall species wingbeat frequency distribution for Ae. sierrensis aggregated from all recordings, with the colour of each data point corresponding to its contributing flight trace. The even distribution of the colours across frequency for the overall species distribution indicates that most individual flight traces have similar frequency distributions, means and variances. (B) Plot of mean frequencies of individual flight traces against their corresponding standard deviation as a percentage of the mean. The gray line indicates cumulative fraction of recordings, showing that 85% of recordings have mean frequencies clustered between 350 and 450 Hz, with the vast majority having frequency spreads of less than 5% of the mean. (C) Plot of duration of flight traces against the relative standard deviation, coloured by the value of mean frequency, shows no correlation or clustering between these characteristics. However, there appears to be a minimum spread of about 2% of the mean for most flight traces, irrespective of duration or mean frequency, which appears to correspond to inherent natural frequency variations within flight traces. (D) Variation of classification accuracy for flight traces with relative standard deviation and mean frequency of the trace. For D and E, the colours represent the probabilities of classifying the trace as Ae. sierrensis using the MLE algorithm. Larger dots indicate those that were correctly classified, while small dots represent traces that were incorrectly classified as one of the other local species - Cx. pipiens, Cx. quinquefasciatus, Cx. tarsalis or Cu. incidens. In D, the grey-dashed line represents the boundary between traces that were correctly and wrongly classified. Classification accuracy is observed to be solely a function of mean frequency of the trace, corresponding to the overlaps of wingbeat frequency distributions. (E) Variation of classification accuracy for flight traces with relative standard deviation and duration of the trace. There is no relationship observed between correct classification and the recording duration or frequency spread of the trace.\n\nIn addition to the temperate forest environment represented by BBR, we carried out another small-scale field trial in a tropical village, at Ranomafana (District Ifanadiana) in Madagascar (RNM). Here, our first step was to establish the baseline species composition, by collecting live mosquitoes in traps or bags and identifying them using microscopy. We found both Anopheles and Culex mosquitoes (Zohdy et al., 2016), which we identified only to genus level in the field. We recorded several minutes of acoustic data from both, to form a frequency distribution reference database specific to the RNM field site, for comparing new data from phone recordings (Figure 4A,B). We obtained two clearly separated frequency distributions with a single peak each, implying that the two genera were easily distinguishable by wingbeat frequency alone. About 60 recordings were collected in a 3-hour period by 10 volunteers who were trained for about 15 minutes and stationed at specific locations in the village. This number of recordings exceeded the number of mosquitoes simultaneously captured in CDC light traps placed at the same locations. Mapping the distributions of the two genera of mosquitoes across the village revealed considerable heterogeneity in the proportions of Anopheles and Culex mosquitoes from the western riverside to the eastern hillside, possibly influenced by extremely local factors such as drainage, density of humans, or presence of livestock (Figure 4C). This heterogeneity was concordant with the data from CDC light traps, which collected Anopheles mosquitoes only in those locations where they were also recorded by volunteers (Figure 4C, insets). Although the ratio of the two kinds of mosquitoes varied between acoustic recording and conventional trapping at each location, there was a qualitative correspondence between the two methods in terms of the relative number of mosquitoes at a location, and the more numerous species.\n\nTogether, the two pilot field trials at BBR and RNM highlight spatial variations in mosquito distributions along with their circadian activity patterns, in very different field environments. The greater number of observations obtained by pooling mobile phone recordings as compared to trapping indicates that phones may be a more productive means of sampling mosquito populations. At the same time, the maps of mosquito activity at both field sites were extremely localized, on the level of minutes and tens of metres. This demonstrates how mobile phone\u00a0based crowdsourcing can simultaneously enhance both the scale and the resolution of ecological measurements of mosquito populations, indicating considerable potential for such an approach to the spatiotemporal mapping of mosquito vectors.\n\n## Discussion\n\nIn this work, we demonstrate a new technique for mosquito surveillance, using mobile phones as networked acoustic sensors to collect wingbeat frequency data for automated identification. We present quantitative analyses of mobile phone acoustic signal quality and the differentiability of important mosquito species, complemented by field data collected by minimally trained volunteers and organized into spatio-temporal maps.\n\nThe involvement of local volunteers in our study underlines that practically anyone with a mobile phone can quickly be trained to contribute data towards mosquito surveillance efforts. Based on the proof-of-concept presented here for a mobile phone\u00a0based surveillance framework, we propose a citizen science effort for mapping mosquito populations (Figure 1\u2014figure supplements 1 and 2). Citizen science is an exciting paradigm for community-based vector surveillance, with emerging initiatives such as the United Nations-backed Global Mosquito Alert. These programs rely on data collected by volunteers from the general public, in the form of physical specimens or through apps for reporting the presence of mosquitoes with photographs for expert identification. Our proposed platform would support the collection of mosquito sound recordings from mobile phone users, automating the audio processing to instantly identify and map the species without human intervention. This approach has the potential to greatly expand surveillance efforts in resource-limited areas where they are needed the most, by enabling people to take the initiative in tracking disease vectors within their own communities.\n\nThe greatly reduced cost of surveillance as a result of using pre-existing infrastructure, together with the ability to localize mosquito recordings, allows both the coverage and resolution of mosquito field maps to increase. The availability of sufficient data on highly local scales could inform mosquito control strategies tailored to a given location. Further, this approach also has the potential to screen for the presence of exotic or invasive species, particularly in high-risk areas such as port cities. Additionally, it provides a rapid and easy way to survey baseline mosquito populations in a given area and their fluctuations over time, which may be highly relevant for programs that aim to control mosquito populations through the release of sterile or genetically modified organisms. The implicit need for human involvement in our method skews the collection strongly towards species that are most likely to encounter a human. Although all methods of mosquito collection, including various traps, have biases in the species they predominantly attract, the over-representation of anthropophilic species is a caveat to be noted when probing mosquito ecology using our method.\n\nWe have focused on statistical Maximum Likelihood Estimation methods for acoustic identification of mosquitoes, using known distributions corresponding to different species as a reference. There are however many possible methods to predict the species that a given recording belongs to, with various techniques for incorporating prior knowledge about the wingbeat frequency, circadian activity, habitat and other characteristics of the relevant mosquito species. The field of computational entomology, which includes the development of algorithms for the automated identification of mosquito sound in acoustic data and its classification by species is an active area of research, with growing relevance for the automation of mosquito surveillance (Chen et al., 2014; Silva et al., 2015; Kiskin et al., 2017). There is considerable scope for studies that not only search for more acoustic features that discriminate between mosquito species, but also those which use spatiotemporal population data to identify trends and patterns. These can be correlated to other man-made and environmental factors, to enable evidence-based decision making for mosquito control and disease management. Such insights require not only the development of algorithms capable of sifting through surveillance data, but also considerable expansion of our databases of prior knowledge to train these algorithms to identify more species across diverse areas of the world.\n\nRecent technological trends have spurred a rapid rise in apps and services based on crowdsourcing data about the physical world through embedded sensors and user input from mobile phones. Applying analytics methods and spatiotemporal mapping on this data provides useful information ranging from traffic density to restaurant recommendations to earthquake warnings. At present, the critical missing link in enabling similar advances in mosquito surveillance and control is the capacity to generate large quantities of mosquito ecological data on fine-grained space and time scales (Ferguson et al., 2010). Our mobile phone\u00a0based solution holds great promise as a scalable, non-invasive, high-throughput and low-cost strategy to generate such data, by leveraging widely available hardware and an existing network infrastructure. We hope that a citizen science approach to mosquito surveillance based on this method will boost our capability to dynamically assess mosquito populations, study their connections to human and environmental factors, and develop highly localized strategies for pre-emptive mosquito control (Hay et al., 2013).\n\n## Methods and materials\n\n### Acquisition of acoustic data from mobile phones\n\nDifferent mobile phones were used to collect sounds from mosquitoes, using audio recording software that was already freely available on the devices, including applications for voice messaging, voice memos, or sound recording. To locate the primary microphone on the body of the mobile phone, we either read the location of a user manual showing its different components, or found the microphone by trial-and-error, where we tapped the phone periphery and observed the response of the recording software to locate the area with maximum audio sensitivity. The primary microphone is oriented towards the mosquito for maximum sensitivity in audio acquisition. Audio data from the phones was compiled and transferred to a server for processing. This method applies to all figures.\n\n### Processing of acoustic data from mobile phones\n\nThe audio signals from mosquitoes were acquired at different sampling rates ranging from 8 kHz to 44.1 kHz and a variety of file formats, depending on the mobile phones and the specific in-built or user-defined settings on the recording applications used to acquire the signal. When a raw signal was acquired from the phone, it was converted into the WAV format for convenience of processing, with sampling rate interpolated to 44.1\u00a0kHz if sampled at a lower rate. To reduce constant background noise in the signal, we used a spectral subtraction algorithm, with the fundamental principle of subtracting the actual or expected frequency content of pure noise from the spectrum of the noisy signal. Here, we identified the background using an automated algorithm as those spectral bands that are constant with almost zero variation in amplitude and frequency across the entire sound clip. To generate the audio frequency spectrum over different instants of time, we applied the Short Time Fourier Transform (STFT ; Signal Processing Toolbox, MATLAB R2015B) to produce a spectrogram with resolutions of 5 Hz in frequency and 20 ms in time, having a high degree (90%) of overlap between windows to achieve a trade-off between sufficient frequency resolution and accurate localization of the signal in time.\n\n### Construction of wingbeat frequency distributions (Mukundarajan et al., 2017)\n\nUsing the spectrogram, we construct histograms for the distribution of peak frequencies for mosquitoes of a given species. Once a sound was identified (either manually or using an automated code) as belonging to a mosquito of a given species, the lowest frequency corresponding to a local maximum in amplitude was detected using a peak finding algorithm. In cases where more than one mosquito is recorded sequentially in the same file, they are considered separate instances, distinguished as contiguous durations of peak frequency in a given range separated by time. In cases where recordings from mosquitoes overlap, the louder mosquito is considered. In many studies, a representative wingbeat frequency is found for a single flight trace by averaging the fundamental frequency over all time instants. However, the wingbeat frequency from a single continuous mosquito signal can vary over a range of about 100 Hz for a tethered mosquito, and over a few tens of Hz for mosquitoes in free-flight. To take into account this natural variation in wingbeat frequency over the duration for an audio signal, we did not average the frequency over time, but instead focused on the instantaneous frequency computed in each 20 ms interval time window. Each time window was treated as an individual instance, and its fundamental frequency added to a histogram, to bring out the natural variations in wingbeat frequency within a single signal. Peak frequencies from all time windows are binned with a bin size of 5 Hz - the same frequency resolution imposed upon the spectrogram. This yields a histogram that captures the distribution of peak frequencies for that mosquito species, without making a priori assumptions about the nature of this distribution. For statistical computations, the histograms are normalized by the total number of instances such that the area under the distribution sums up to $1$, yielding a discrete probability density distribution for wingbeat frequency. However, for ease of representation in figures, probability mass functions where the histogram counts are normalized relative to the maximum number of counts in a single bin are shown, so that each histogram spans\u00a00\u00a0to\u00a01 on the y-axis. This method applies to all figures.\n\n### Statistical tests and metrics\n\nWingbeat frequency was represented as discrete probability density distributions, with the frequency binned into intervals of 5 Hz (the computational accuracy for frequency in our STFT analyses) and the area under the probability density distribution summing up to 1. The peak frequency measured in each time window of the video or audio was treated as an individual sample, and the 2-sample T-test carried out using the MATLAB Statistics toolbox at a significance level of 1% for peak frequencies of the 165 time windows compared. The peak frequency samples measured from video and audio were tested to check if the distributions had highly similar mean and variance, indicating that they have been sampled from the same probability distribution function. This method applies to Figure 2C. The Bhattacharya overlap coefficient (BC) and Jensen-Shannon Divergence metric (JSD) were computed between pairs of wingbeat frequency distributions, where the number of counts of wingbeat frequency in each bin are normalized by the product of the total number of samples and the range of the independent variable (frequency, 200 to 700 Hz) to yield a probability density distribution with unit area under the curve. BC is calculated as the sum of the geometric mean of the two probability densities in each bin, ranging between a minimum of $0$ for disparate non-overlapping distributions and a maximum of 1 for identical distributions. The JSD is calculated as the square root of the arithmetic mean of the Kullback-Leibler divergences of each distribution with respect to the other, for each pair of distributions considered. These methods apply to Figure 2G,H, and Figure 3B.\n\n### Testing and validation of Maximum Likelihood Estimation (MLE) algorithm\n\n#### Algorithm description\n\nIn this classification algorithm, the different species are treated as discrete values of a parameter that alters the point mass function for the distribution of frequency from mosquito sound. A given observation is statistically compared to each distribution to deduce which one it is most likely to have been sampled from, and the species with maximum likelihood to be the parent distribution is identified. We chose this strategy as an appropriate method for identification, as it attempts to identify the statistical distribution that is most likely to have produced the observed data, i.e. it attempts to identify the species that is most likely to have produced an observed sound recording. This is particularly appropriate as we treat each recording not as a single data point, but as a distribution of wingbeat frequencies over the duration of the recording. Hence, to compare and classify the observed distribution from the recording with respect to the various reference distributions, MLE provides a natural solution. We use wingbeat frequency data from each species, isolated for each 20 ms sample window using a peak finding routine on the spectrogram as described earlier, to construct the point mass functions that describe the wingbeat frequency distributions for each species. We also treat any given acoustic recording being queried as a collection of discrete samples of wingbeat frequency from 20 ms windows. For each sample window frequency in this recording, we find the probability density of its occurrence in the frequency distributions corresponding to each species. We thus construct a matrix that gives the probability of occurrence in each of the frequency distributions corresponding to each species, for each sample point of frequency in the given recording. Assuming each sample point of frequency in the given recording to be independent, we now sum across all sample points to obtain a measure of the combined likelihood that all sample window frequencies in the recording were produced from each species frequency distribution. We add these values instead of multiplying, to avoid the case where a single outlier frequency value in a recording has the power to veto a certain species due to having zero probability of occurrence in the corresponding frequency distribution. We choose the species which has the maximum likelihood for the total over all sample windows of that recording, as the species with the maximum likelihood of having produced a recording with that given set of frequency values.\n\n#### Location filter\n\nWe constructed a location filter by looking up the presence or absence of all the species in our database in a set of 200 countries, as recorded in the Walter Reed Biosystematics Unit Mosquito Identification Database (Walter Reed Biosystematics Unit, 2017). When applying the filter, we choose a location at random for a recording from a given species, based on its geographical distribution as specified in our location matrix. When finding the species with the maximum likelihood of having produced the frequencies observed in that recording, we now only choose from other species that are also located in the country chosen for our recording, as per our location matrix. This winnows down the number of choices for the species, eliminating those with similar frequency distributions but which are not geographically relevant.\n\n#### Validation using bootstrapped data\n\nWe first applied our algorithm to find the probability of correct classification of bootstrapped data from the original set of frequency values that was used to generate the wingbeat frequency distributions for each species. This is expected to correctly classify species whose frequency distributions do not have much overlap with others, and make mistakes when classifying species which have significant overlaps with others. For each species, we choose a random subset of frequency values from the original distribution and assign it to the species with maximum estimated likelihood. We repeat this for a total of 10,000 random subsets per species, to find the asymptotically convergent probability of classification for a large number of trials. A confusion matrix was generated by finding the fractions of these 10,000 trials for each species that were classified correctly, or erroneously to a certain other species. As expected, we see very high classification accuracies (greater than 0.99) for species with relatively non-overlapping frequency distributions, with errors arising exclusively in the classification of overlapping species.\n\n#### K-fold validation by partitioning data\n\nTo get an idea of classification errors that arise when the data being queried is not itself used to generate the distribution against which it is being compared, we performed K-fold validation for K from 2 to 10. Here, we partitioned the data into K groups, and used one group to generate queries which were matched against distributions generated using the other (K-1) folds. The confusion matrix generated in this case had very similar values as the one generated for bootstrapped data.\n\n#### Validation using test data\n\nWe finally validated our approach against test data that was collected in a separate experiment using a different phone, from the same reference populations. Contiguous individual mosquito traces were chosen from these recordings, and compared against the reference distributions. This validation was performed both with and without the location filter, to show the effect of including location metadata to refine classification.\n\n### Mosquito specimens\n\nMosquito colonies were sourced from a number of different labs and facilities, including our own. Mosquitoes were typically chosen to be between 5\u00a0and 15 days, with all individuals in a colony aged within two days of each other. Females were typically mated but not bloodfed. The lab reared colonies used in this work sourced from the BEI Resources Vector Resource collection were Aedes aegypti (strain COSTA RICA, provided by the Animal Flight Lab at UC Berkeley), Aedes aegypti (strain NEW ORLEANS, reared at CDC, Atlanta), Aedes aegypti healthy and infected with D. immitis (strain NEW ORLEANS, provided by the Zohdy Lab at Auburn University), Aedes albopictus (strain ALBOPICTUS, reared at CDC, Atlanta), Anopheles albimanus (strain STECLA, reared at CDC, Atlanta), Anopheles arabiensis (strain DONGOLA, reared at CDC, Atlanta), Anopheles arabiensis (strain RUFISQUE, reared at CDC, Atlanta), Anopheles atroparvus (strain EBRO, reared at CDC, Atlanta), Anopheles dirus (strain WRAIR2, reared at CDC, Atlanta), Anopheles farauti (strain FAR1, reared at CDC, Atlanta), Anopheles freeborni (strain F1, reared at CDC, Atlanta), Anopheles gambiae (strain KISUMU, reared at CDC, Atlanta), Anopheles gambiae (strain AKRON - bendiocarb resistant, reared at CDC, Atlanta), Anopheles gambiae (strain RSP - permethrin resistant, reared at CDC, Atlanta), Anopheles merus (strain MAF, reared at CDC, Atlanta), Anopheles minimus (strain MINIMUS1, reared at CDC, Atlanta), Anopheles quadriannulatus (strain SANQUA, reared at CDC, Atlanta), Anopheles stephensi (strain STE2, reared at CDC, Atlanta), Anopheles stephensi (strain STE2, provided by the Luckhart Lab at UC Davis), Culex quinquefasciatus (strain JHB, reared at CDC, Atlanta), Culex tarsalis (strain Yolo, reared by us).\n\nColonies caught in the field or bred from catches included Aedes aegypti (F1, Los Angeles, provided by the Coffey Lab at UC Davis), Aedes aegypti (F1, Puerto Rico, provided by the Coffey Lab at UC Davis), Aedes mediovittatus (F0, provided by the Coffey Lab at UC Davis), Anopheles quadrimaculatus (F22, Alabama, provided by the Mathias Lab at Auburn University), Culex pipiens pipiens (provided by the Santa Clara Vector Control District), Culex pipiens pipiens (provided by the San Mateo Vector Control District), Culex quinquefasciatus (provided by the San Mateo Vector Control District). Wild mosquitoes captured by us in field trials include Culiseta incidens (captured at Jasper Ridge Biological Preserve, Stanford University, and in San Francisco), Ochlerotatus sierrensis (captured at Big Basin Redwoods State Park, California, USA), Anopheles spp., Culex spp. and Mansonia spp. (captured at the Centre ValBio and Ranomafana village, Madagascar).\n\n### Comparisons with high speed videography\n\nWe acquired high speed video of tethered mosquitoes in the lab using a Phantom v1610 camera, at 10,000 frames per second\u00a0(Video 5). Simultaneously, we made audio recordings using a mobile phone placed with the primary microphone 10 mm away and oriented towards the mosquito. Since the audio and video are completely independent as the camera does not talk to the phone, synchronization was achieved using a specially designed setup to produce a specific light and sound pattern. We connected a piezoelectric buzzer and an LED to the same pin of an Arduino. The buzzer and LED are both fed the same pattern of voltage by the microprocessor. Hence, the frequency of sound from the buzzer recorded in the audio exactly matches the frequency of light flashes from the LED recorded in the video at every instant of time, allowing the audio and video spectrograms to be aligned in time. We programmed the Arduino to produce a square wave at 5000 Hz and 50% duty cycle for 500 ms, followed by a 500 ms pause, and then a square wave at 2000 Hz for 500 ms. This gave us four time points - the beginning and end of each waveform - to use for aligning the corresponding spectrograms from video and audio in time. The video data were thresholded and the area of the wing (which we recorded face on) was computed in each frame. We plotted a waveform of the change in projected wing area over time, and applied the STFT to produce a spectrogram. The fundamental frequency in the spectrogram corresponded to the wingbeat, with higher harmonics corresponding to subtle variations in wing kinematics such as wing deformation during clap-and-fling. Acoustic data from the mobile phone was processed as described in the section above. The two spectrograms were computed to the same time and frequency resolutions of 5 Hz and 20 ms, and aligned in time based on the best match of the four points of synchronization. This method applies to Figure 2B.\n\n### Comparisons to studio microphones\n\nComparison with an acoustic gold standard was achieved using the Marshall MXL991 and Apex 220 microphones, the latter of which is calibrated to have a flat frequency response between 100 and 1000 Hz. The two studio microphones were connected to a pre-amplifier (Onyx) with the gain set to its maximum value of 60\u00a0dB, after ensuring that this would still avoid saturation. We carried out experiments to calibrate the sensitivity of mobile phones over distance using a standardized sound source - a piezoelectric buzzer ringing at 500 Hz, with its amplitude measured before every recording to be constant at 77\u00a0dB at the edge of the buzzer disc. To compare the ability of mobile phones to record mosquito sounds, we recorded tethered male and female Culex tarsalis mosquitoes. We placed the microphones at an identical distance to the left of the mosquito as we placed the mobile phone primary microphone to its right, since waveforms produced by the two wings are assumed to be symmetrical. We synchronized recordings from all three sources using the times of initiation and cessation of wingbeat sound, with multiple flight traces in a single dataset. Using the amplitudes recorded by the Marshall MXL991 studio microphone which has a known $1/r^{2}$ drop in recorded amplitude, we deduced the actual amplitude produced by the mosquito in a given experiment, and standardized the corresponding mobile phone SNR for a uniform source amplitude of 45\u00a0dB (which we measured to be a typical amplitude produced by a mosquito). Spectrograms constructed independently and aligned in time are shown in Figure 1\u2014figure supplement 1. These methods apply to Figure 2D,E and Figure 1\u2014figure supplement 1.\n\n### Acoustic data collection in the lab from tethered mosquitoes\n\nIndividual sound traces for distance calibration experiments were collected from tethered mosquitoes. Individuals were aspirated out of the cage and knocked out with a puff of carbon dioxide. The wings were gently spread to move them out of the way, and a pipette tip was affixed to the scutum with a bead of low-melting insect wax. The pipette tip was clamped in a stand, and the appropriate recording device - mobile phone, studio microphone or high speed camera - was clamped in another stand at the desired orientation and a specified distance away from the pipette tip as measured by a ruler. The legs of the mosquito are gently stimulated\u00a0by\u00a0touch to induce a flight reflex, after which the wings beat for a period of a few seconds to minutes. This method applies to Figure 2A,B,D,E.\n\n### Acoustic data collection in the lab from caged populations\n\nWingbeat frequency distributions for a given species were measured from lab-reared populations maintained in 1-ft cubical cages. Cages typically contained between 100\u00a0and 300\u00a0individuals of males and females each, with the sexes segregated into separate cages whenever possible. The mobile phones were inserted by hand through the stockinette sleeves of the cages, with the primary microphones oriented away from the hand, and moved to follow individual mosquitoes in flight or against walls or corners of the cage. Care was taken to avoid introducing noise from bumping against the cage surfaces or rubbing against the sleeve. Between 5\u00a0and 10 minutes of data were collected per cage, and high amplitude noise due to bumps was eliminated using an automated algorithm. This method applies to Figure 2F, Figure 3A and Figure 1\u2014figure supplement 2. In some cases, individual mosquitoes were introduced into an otherwise empty cage, to record free flight traces from a specific mosquito in the lab. This method applies to Figure 4A,B.\n\n### Acoustic data collection in the field\n\nField acoustic data were collected in a variety of locations, including homes and gardens around San Francisco and Palo Alto, USA, at Stanford University\u2019s Jasper Ridge Biological Preserve, and around the Centre ValBio in Ranomafana, Madagascar. Mosquitoes were either followed with a phone during free flight around the user, or captured live in a Ziploc bag and subsequently recorded by putting the phone\u2019s primary microphone against the bag (while taking care not to introduce noise due to crumpling or brushing the bag surface). This method applies to Figure 4. The pilot demonstrations of field recording and mapping of mosquitoes were organized with small teams of volunteers working in pairs, with 14 and 10 users respectively in Big Basin Redwoods State Park in California, USA ($20$ km$^{2}$, between 5:30PM\u00a0and 8:30PM on 17 August 2016), and in Ranomafana village, district Ifanadiana, Madagascar (4 km2, between 6PM and 8PM on 26-28 October 2016). During the studies, volunteers were hiking along trails in Big Basin Park, and were gathered in houses or shops in Ranomafana village. Prior to the field study, we initially collected live mosquitoes from the field, recorded them in the lab to create a curated database of signatures for those specific locations, and later morphologically identified them through microscopy for association with each acoustic signature (Figure 4A,B). Subsequently, field recordings were made by the teams, and each recording was assigned a species by comparing with the databases (Figure 4B). During the field exercises, the users also collected matched physical specimens from the field in grinder tubes and Ziploc bags corresponding to many of the audio recordings, which were morphologically identified to confirm the IDs assigned based on the acoustic database. The recordings were associated with a location as reported by GPS or the user, and timestamped automatically by the recording application on the mobile phone, for spatio-temporal placement of each observation. Maps were prepared by counting the number of reliably identified acoustic signatures for each location. This method applies to Figure 4C,D.\n\n### Downloadable data package\n\nAs part of our policy to openly share all data from this project, we have included a downloadable package comprising all acoustic data collected over the course of this work. This includes acoustic recordings from 20 different species of mosquitoes, using a variety of mobile phones for each. This data can be downloaded either from our project website at abuzz.stanford.edu, or from the online repository at Dryad (http://dx.doi.org/10.5061/dryad.98d7s). The supplementary audio files are not included in this package, and may be downloaded separately.\n",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "4e780593-8d5e-4e9f-b5d8-d2dc9171da90",
+      "submission_id": "30fe636b-fc65-463f-8be0-e0c085a6ff6f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rumi Chunara, New York University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.27854.033](https://doi.org/10.7554/eLife.27854.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Using mobile phones as acoustic sensors for high-throughput surveillance of mosquito ecology\" for consideration by eLife. Your article has been favorably evaluated by Prabhat Jha (Senior Editor) and five reviewers, one of whom serve as Guest Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Scott Ritchie (Reviewer #5).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis work presents an evaluation of the use of common mobile phones for mosquito detection (acoustically), attempts to differentiate species via their acoustic signatures alongside other meta data. Overall this is a very interesting effort that provides an out-of-the-box approach to mosquito and vector surveillance. The reviewers expressed excitement and need for this approach, note that the authors provided technical detail and a convincing case. However there are several things that could be done in order to make a better case for the feasibility of this approach, which are outlined here as essential revisions.\n\nEssential revisions:\n\nA) Differentiating species: Overall the reviewers noted the need to provide more information or demonstration this can accurately be done. Details towards this include:\n\n-Provide more details on meta data required for differentiation (e.g. biting times, geographic prevalence data (and especially in Madagascar), how do you handle multiple counts\u2026 (mosquitoes may be in swarms and same one could be counted many times), discussion of why are some distributions not discernible, how many counts needed to generate a distribution that is discernible (e.g. Figure 4B), and/or what total bandwidth (flight time) needed?\n\n-Along the same lines, reviewers concurred that results as presented do not really demonstrate that given a single measurement the species can be differentiated. Reviewers suggested that perhaps the authors could frame the question differently, instead of: given that the mosquito belongs to species A or B, can we work out which? The problem with this is that of course there are multiple possible species a sample could belong to. Presumably a single measurement would not be able to demonstrate which species a sample came from, but if they record the mosquito for long enough, can the species be determined by comparing the distribution of measurements against their reference bank?\n\n-Also reviewers wondered: with the wild caught Anopheles mosquitoes in Madagascar was it not possible to differentiate the species? Much is made earlier in the text of being able to differentiate members of the Anopheles gambiae complex yet this isn't done in the wild. Was this because species were not identified in the field or because they could not be distinguished? Either way this should be highlighted.\n\n-Discussion of how does the inter-species variability relate to the intra-species variability. Comparison of wild caught mosquitoes shows that the inter-quartile range is substantially different (non-overlapping) and varies between different sized individuals in the same population. The magnitude of this variation seems greater than the difference between species the authors say it can differentiate though this is not mentioned. Comparison of the wild and colony mosquitoes is not done and should be discussed.\n\n-One reviewer also noted that the statement that Aedes aegypti and Anopheles gambiae mosquitoes can be differentiated by their biting time is wrong. \"To my knowledge though An. gambiae are unlikely to bite in the day both are highly active at dawn and dusk and Aedes can certainly be found biting at night. Without the use of this meta-data these mosquitoes could not be distinguished acoustically and this should be highlighted.\"\n\n-Inter vs. Intra colony and variability: The Materials and methods shows multiple colony mosquitoes of each species though sometimes these appeared grouped together in Results (e.g. Anopheles arabiensis) though at other times they were separated (e.g. An. quadrimaculatus, Figure 3). Nowhere in the manuscript is inter-colony variation mentioned and it needs to be as it is immensely important. If new calibration datasets are needed for each mosquito sub-population the potential for citizen science is massively diminished. The inter-colony, intra-colony and inter-individual variability all needs to be discussed and ideally separated as currently they are all grouped together making it impossible for the reader to determine the accuracy of the method.\n\nB) Classification details and methods: the reviewers suggest the authors consider advanced methods to improve classification (e.g. machine learning) and provide more details on frequency distributions and measurement requirements to around the classification and classification accuracy. Details:\n\n-Classification accuracy (albeit unblended) could and should be presented more quantitatively for the data presented in Figure 3A \u2013 at least at the pairwise level (proportion of individuals correctly classified in a mix of 2 species). A more sophisticated analysis might be to sample potentially collocated species from the data in 3A and present multi (>2) species classification accuracy.\n\n-Machine learning methods should be considered to optimise classification accuracy.\n\n-One reviewer also noted that it was not clear why the higher harmonics/overtones (Figure 1C, 2B) were being thrown away in the analysis presented. Even simple random forest methods trained on relative amplitude/frequency pairs (of course other features could be selected, such as measures of spread across a trace) for the dominant frequency and harmonics might offer considerably greater classification accuracy than just the mean dominant frequency.\n\nC) Experiments: The reviewers suggested some experiments to demonstrate that it is possible to discern relative abundance would be helpful. While time may not permit a systematic field study, we offer the following strongly suggested approach for a blinded test (please note it is not the reviewer's intent for these experiment(s) to take longer than the revision time, if the authors do not think these are feasible in the allotted time period please justify why):\n\n-Replicate experiments where the authors mix (at known proportions) individuals from several vector species in an experimental large cage setting, and then get researched blinded to the species mix to (a) sample wing beat frequencies from multiple (or all) insects, and (b) analyse the results to determined predictive/measurement accuracy. If mixing mosquitoes is too hard, then sequential recordings of a mix of mosquitoes in the same environment and blinded analysis might suffice.\n\nD) Range:\n\n-The reviewers noted that given the limited range as described (5cm), it would be helpful to demonstrate that the approach works (or sensitivity of outcomes) if the orientation or distance between the microphone and mosquito are not ideal.\n\nE) Data and accessibility:\n\n-The authors are encouraged to follow open data norms and provide the raw data that went into the figures in the main manuscript as supplements to the paper.\n\n-As well, in line with the aims of the paper the reviewers agreed that it would be great if the authors can elaborate on how Joe Public can actually get started with this (release data and app).\n\nF) More discussion or real applications in terms of mosquito species and limitations:\n\n-The reviewers note that this approach will work well for anthropophilic mosquitoes, but not as well as animal feeders esp. avian feeders that are not attracted to man.\n\n-As well there is high applicability to ID exotics; the authors are encouraged to augment discussion of the approach's relevance to Aedes and, for example current citizen science program in Europe doing also surveys, or towards surveillance of albos in Australia (PLoS neglected tropical diseases, 11(2), p.e0005286)\n\n-These include hard to catch and measure mosquitoes at night (when they are most active). Will size impact the WBF? Most wild mosquitoes are smaller than lab reared. Will this be a confounder to ID? And what about temperature and age?\n\n-The reviewers noted that this would particularly be an appropriate tool to survey for exotic species, especially where the species of concern is known (e.g., Ae. albopictus). It would also be a great tool to measure populations for rear and release programs such as wolbachia and sterile males. In this instance, we need to know the wild population so that effective numbers can be released. Phones might be a great way to do this.\n\n-Oc. sierrensis should be Aedes sierrensis.\n\n-Also, how did they measure WBF? In a bag, or free flying?\n\n-In several places you mention species-specific wingbeat frequencies. They are not really species specific as there is some overlap. Please remove species-specific.\n",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "104e0c99-8a38-406a-ac8b-d3048d5dd5ff",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C1",
+      "claim": "Direct monitoring of mosquito populations in field settings is a crucial input for shaping appropriate and timely control measures for mosquito-borne diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct monitoring of mosquito populations in field settings is a crucial input for shaping appropriate and timely control measures for mosquito-borne diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of mosquito monitoring for disease control, drawing on established knowledge in public health and vector control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "c855f22c-6a6f-4fac-a345-a4cb9f7d9075",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C2",
+      "claim": "Commercially available mobile phones are capable of acoustically mapping mosquito species distributions worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that commercially available mobile phones are a powerful tool for acoustically mapping mosquito species distributions worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and field demonstrations presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "32e6e205-1aec-45c2-9740-e3085853f34b",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C3",
+      "claim": "Low-cost mobile phones with very basic functionality are capable of sensitively acquiring acoustic data on species-specific mosquito wingbeat sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that even low-cost mobile phones with very basic functionality are capable of sensitively acquiring acoustic data on species-specific mosquito wingbeat sounds, while simultaneously recording the time and location of the human-mosquito encounter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments with the 2006 Samsung SGH T-209 feature phone and other low-cost devices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "da9f7c0e-8d9d-425a-89bf-aff2cacf4b74",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C4",
+      "claim": "Mobile phones simultaneously record the time and location of human-mosquito encounters.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that even low-cost mobile phones with very basic functionality are capable of sensitively acquiring acoustic data on species-specific mosquito wingbeat sounds, while simultaneously recording the time and location of the human-mosquito encounter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known capability of mobile phones with GPS and timestamping features.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "ceb3f8d0-122c-4602-bc56-22d0b6fdff71",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C5",
+      "claim": "Acoustic recordings supported by spatio-temporal metadata enable rapid, non-invasive species identification.",
+      "claim_type": "EXPLICIT",
+      "source": "We survey a wide range of medically important mosquito species, to quantitatively demonstrate how acoustic recordings supported by spatio-temporal metadata enable rapid, non-invasive species identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the classification experiments and field trials presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "1f7ff51e-c707-4506-98b2-264797350e9e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C6",
+      "claim": "Minimally-trained users can map local mosquitoes using their personal phones.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-concept, we carry out field demonstrations where minimally-trained users map local mosquitoes using their personal phones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the field trials at Big Basin Redwoods State Park and Ranomafana, Madagascar.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "ed7337fd-baf5-4c30-b624-d3de6f65fb09",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C7",
+      "claim": "There is a paucity of high-resolution ecological data on the abundance, temporal variation, and spatial distribution of mosquito vector species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a paucity of high-resolution ecological data on the abundance, temporal variation, and spatial distribution of mosquito vector species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of mosquito surveillance as documented in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "8488761c-68f8-4966-859b-f6fd1f85da61",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C8",
+      "claim": "The paucity of ecological data poses a serious impediment to the effective control of mosquito-borne diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "This poses a serious impediment to the effective control of mosquito-borne diseases (Townson et al., 2005; Ferguson et al., 2010; Hay et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on mosquito control challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "985ebb6d-dc7b-4e9e-bc62-5b69d960bc5e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C9",
+      "claim": "Efforts to map mosquito populations primarily rely on interpolative mathematical models based on factors such as clinical disease burdens or climatological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts to map mosquito populations primarily rely on interpolative mathematical models based on factors such as clinical disease burdens or climatological data, with field inputs from entomological surveys being a comparatively sparse contribution (Hay et al., 2010; Mordecai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work on mosquito mapping methodologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "bdc6cc85-e1a7-4c0b-9b7c-de3958e4ce38",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C10",
+      "claim": "Field inputs from entomological surveys are a comparatively sparse contribution to mosquito mapping efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Efforts to map mosquito populations primarily rely on interpolative mathematical models based on factors such as clinical disease burdens or climatological data, with field inputs from entomological surveys being a comparatively sparse contribution (Hay et al., 2010; Mordecai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on mosquito surveillance methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "7c56a00b-1bbd-43d2-8348-a62be168ed8e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C11",
+      "claim": "The scarcity of field data stems from the absence of high-throughput, low-cost surveillance techniques to map the distribution of mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "This scarcity of field data stems from the absence of high-throughput, low-cost surveillance techniques to map the distribution of mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current state of mosquito surveillance technology and practices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f36d308a-f156-4ba8-8032-f3f74a00935c",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C12",
+      "claim": "Currently used methods like trapping and manual identification require considerable expense, labour, and time.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is particularly severe in resource-constrained areas, as currently used methods like trapping and manual identification require considerable expense, labour, and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about traditional mosquito surveillance methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "11b2d555-989c-4c9b-b1cb-efa0e65cc6b5",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C13",
+      "claim": "Acoustic surveillance was proposed decades ago as a high-throughput automated surveillance approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Acoustic surveillance was proposed decades ago as a high-throughput automated surveillance approach, where mosquitoes in flight are identified using the species-specific frequencies in their wingbeat sounds (Kahn et al., 1945; Kahn and Offenhauser, 1949a; Offenhauser and Kahn, 1949; Kahn and Offenhauser, 1949b; Jones, 1964; Johnson and Ritchie, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple historical citations to early work on acoustic mosquito surveillance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "9bf69aa8-4380-4c71-b412-c35ab2697cbc",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C14",
+      "claim": "Acoustic surveillance identifies mosquitoes in flight using species-specific frequencies in their wingbeat sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Acoustic surveillance was proposed decades ago as a high-throughput automated surveillance approach, where mosquitoes in flight are identified using the species-specific frequencies in their wingbeat sounds (Kahn et al., 1945; Kahn and Offenhauser, 1949a; Offenhauser and Kahn, 1949; Kahn and Offenhauser, 1949b; Jones, 1964; Johnson and Ritchie, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the fundamental principle of acoustic surveillance, supported by citations to historical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "475c4e58-27cb-4046-831c-924b159ac87b",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C15",
+      "claim": "Sexual selection has led to characteristic sound signatures for different mosquito species.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique is based on the hypothesis that sexual selection has led to characteristic sound signatures for different mosquito species (Roth, 1948; Belton, 1994; Gibson and Russell, 2006; Cator et al., 2009; Warren et al., 2009; Pennetier et al., 2010; Cator et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by multiple citations to published research on mosquito acoustic behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "0f25e6f3-4aa6-4405-9716-941666008105",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C16",
+      "claim": "The challenge of using expensive microphones to acquire low amplitude mosquito sounds against potentially high background noise poses a significant barrier to widespread adoption of acoustic surveillance as a field technique.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the challenge of using expensive microphones to acquire low amplitude mosquito sounds against potentially high background noise poses a significant barrier to its widespread adoption as a field technique (Jones, 1964; Unwin and Ellington, 1979; Raman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature discussing technical challenges in acoustic mosquito surveillance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "90383a3a-74f9-4707-8932-8eafd27fe503",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C17",
+      "claim": "Around 5.3 billion users worldwide are connected by the global mobile network.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the proliferation of the global mobile network implies that around 5.3 billion users worldwide are connected today by a distributed data transmission infrastructure, growing quickly at over 6% annually (Cerwall et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statistic cited from a published report on mobile network usage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "adf7ac12-9e63-4980-b25d-0e6d3dfb6987",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C18",
+      "claim": "The global mobile network is growing at over 6% annually.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the proliferation of the global mobile network implies that around 5.3 billion users worldwide are connected today by a distributed data transmission infrastructure, growing quickly at over 6% annually (Cerwall et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statistic cited from a published report on mobile network growth.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "e07b270f-4a34-45a3-bd3e-cedbd6aa4ac8",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C19",
+      "claim": "The explosive growth in mobile phone use is most pronounced in Africa, Asia, and Latin America.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the explosive growth in mobile phone use is most pronounced in Africa, Asia, and Latin America (Cerwall et al., 2017), which also bear the brunt of mosquito-borne diseases (World Health Organization, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to reports on mobile phone adoption and disease burden.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "4ad0636d-7d2d-4c1b-bd3c-0bf39ce0e481",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C20",
+      "claim": "Africa, Asia, and Latin America bear the brunt of mosquito-borne diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the explosive growth in mobile phone use is most pronounced in Africa, Asia, and Latin America (Cerwall et al., 2017), which also bear the brunt of mosquito-borne diseases (World Health Organization, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a WHO report on disease burden.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "95216492-2b05-40a4-8356-e62efe33e115",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C21",
+      "claim": "Mobile phones record species-specific wingbeat sounds from mosquito vector species for automated identification and analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the sensitive microphones in mobile handsets to record species-specific wingbeat sounds from a variety of mosquito vector species for automated identification and analysis (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the core methodology demonstrated throughout the manuscript with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "9ac5fce0-f04f-426b-b3ae-5682d76ddb48",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C22",
+      "claim": "Mobile phones are optimized for sophisticated audio capture, processing, and transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our technique exploits the rapid advances in mobile phone hardware technology, recognizing that these highly portable devices are optimized for sophisticated audio capture, processing, and transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about mobile phone technology and design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "2761eb8c-6575-43bc-9c3f-ccbf1f5ebe09",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C23",
+      "claim": "Mosquito sounds have relatively low complexity, comprising a single fundamental frequency with several overtones.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquito sounds have relatively low complexity. They comprise a single fundamental frequency with several overtones, which we identify using the short-time Fourier transform (STFT) (Figure 1C, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through spectral analysis of mosquito sounds shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "0f2bc1ed-8275-4710-843a-29bf2e98df0d",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C24",
+      "claim": "The sound from typical flight traces is not monotone, but shows natural frequency variations captured as a wingbeat frequency distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The sound from typical flight traces is not monotone, but shows natural frequency variations which we capture as a wingbeat frequency distribution, in a range characteristic of the given species (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the frequency distribution analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "ea118c5b-9411-4ddc-a1f2-fb039130d429",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C27",
+      "claim": "Sexual dimorphism in most mosquito species implies that males have higher wingbeat frequencies than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dimorphism in most species implies that males have higher frequencies than females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about mosquito acoustic biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f8bf5b42-bd57-4269-91ff-f59b34d9aff3",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C28",
+      "claim": "Female mosquito wingbeat frequencies are typically between 200 and 700 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Female wingbeat frequencies are typically between 200 and 700 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the experimental data collected from 20 mosquito species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "075a06ec-405e-4d3a-b1f7-7c15a7440a64",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C29",
+      "claim": "Female mosquito wingbeat frequencies overlap the voice frequency band (300 to 3000 Hz), in which phones are designed to have maximum sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This overlaps the voice frequency band (300 to 3000 Hz), in which phones are designed to have maximum sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This combines data on mosquito frequencies with knowledge about phone microphone design.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "2ae1ea9d-8eab-4c7e-85f1-f785b868ef19",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C30",
+      "claim": "Mobile phone microphones accurately capture wingbeat frequencies without distortion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our concept of mobile phone based acoustic surveillance is based on the idea that mobile phones are high fidelity acoustic sensors, which faithfully capture the frequencies produced by mosquito wingbeats during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is validated through comparison with high-speed video measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "e7be8ef7-329c-4fd9-9ddb-719b62542575",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C31",
+      "claim": "Spectrograms from synchronized audio-video recordings of tethered Culex tarsalis mosquitoes were aligned in time to within 2 ms and show an exact match in frequency at each time window to within 2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For synchronized audio-video recordings, spectrograms were aligned in time to within 2 ms, and show an exact match in frequency at each time window to within a computational error margin of 2 Hz (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the synchronized audio-video experiment with tethered mosquitoes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "fc2218d1-c84c-4f48-9968-aea1df403183",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C32",
+      "claim": "Wingbeat frequency distributions from video and audio have a Bhattacharya Coefficient of 0.95, indicating almost complete overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtain a high BC of 0.95, implying an almost complete overlap between the distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data comparing video and audio measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "0d0e0c16-8046-4117-9e3d-274aba4e4e05",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C33",
+      "claim": "Both smartphones and low-end feature phones have SNRs comparable to reference microphones over distances up to 100 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a piezoelectric buzzer of constant amplitude (77 dB at source) and frequency (500 Hz) as a standardized sound source, we first showed that both smartphones (iPhone 4S, Xperia Z3 Compact) and low-end feature phones (Samsung SGH T-209 clamshell model) have SNRs comparable to the reference microphones over distances up to 100 mm (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through calibration experiments with standardized sound sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "ce64964a-bb79-4fe9-bb89-058aff23eb6a",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C34",
+      "claim": "All phones tested, including a decade-old basic phone (SGH T-209), are capable of acquiring detectable wingbeat sound up to 50 mm from a mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "Curves of mobile phone SNR over distance indicate that all the phones tested, including a decade-old basic phone (SGH T-209), are capable of acquiring detectable wingbeat sound up to 50 mm from a mosquito (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through distance calibration experiments with tethered mosquitoes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "ca9436eb-6b4f-4bc3-a3a2-e3fa999384dc",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C35",
+      "claim": "Smartphones like the Xperia can acquire mosquito sound at distances up to 100 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "This distance improves to 100 mm in the case of smartphones like the Xperia, making it even easier for users to record mosquito sound (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through distance calibration experiments with the Xperia smartphone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "01057948-af36-4164-9700-8e463ecefe0f",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C36",
+      "claim": "Working distance limits for mobile phone mosquito recording are appropriate in quiet to moderately noisy environments with background noise levels below 50 dB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also caution that these working limits are appropriate in quiet to moderately noisy environments with background noise levels below 50 dB, and shrink drastically in louder conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the signal-to-noise ratio measurements and acoustic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "bb0e8fe7-82f1-4b74-85bc-3d96a8a9bc61",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C37",
+      "claim": "Eight different smart and feature phones ranging in price between ~$20 and ~$700 recorded quantitatively equivalent acoustic data from Anopheles stephensi mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared eight different smart and feature phones ranging in price between ~$20 and ~$700 (Figure 2F), by analyzing 5 minutes of audio recorded with each phone from free-flying female Anopheles stephensi mosquitoes of similar age from a lab-reared population contained in a cage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through comparative recordings from multiple phone models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "028f1fc7-2339-45d0-9173-cb63f2d9be27",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C38",
+      "claim": "Mean and median frequencies obtained by each phone differed by less than 5% from other phones for the same mosquito population.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted high degrees of overlap in wingbeat frequency distributions recorded by each phone for this population, with both mean and median frequencies obtained by each phone differing by less than 5% from other phones (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the comparative data across different phone models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f061b0e2-3f90-4502-b070-1b94f1473ea2",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C39",
+      "claim": "The Bhattacharya Coefficient between phone pairs for the same mosquito population ranged between 0.93 and 1, indicating high degrees of overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the Bhattacharya Coefficient (BC) and obtained high degrees of overlap between 0.93 and 1 (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the frequency distributions recorded by different phones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "7ff6b623-7121-4825-827c-b666707b7d68",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C40",
+      "claim": "The Jensen-Shannon divergence for each pair of phones had low values below 0.3, indicating high similarity in measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "The JSD for each pair of phones had low values below 0.3 indicating high similarity in measurement, corroborating that wingbeat frequency sampling is relatively insensitive to the phone used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the frequency distributions recorded by different phones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f675efc1-288c-4d05-bf14-cd4b93b4c2aa",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C41",
+      "claim": "A diverse range of both smart and feature phones provide highly similar acoustic spectra from the same population of mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we demonstrate that a diverse range of both smart and feature phones provide highly similar acoustic spectra from the same population of mosquitoes, enabling a truly universal acoustics-based platform for mosquito identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the comparative analysis of recordings from multiple phone models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f450f2c2-2ce3-435f-9a78-3505aaced4c0",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C42",
+      "claim": "Representative populations from 20 medically relevant mosquito species were surveyed under similar experimental conditions to establish a reference dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We surveyed representative populations from 20 medically relevant mosquito species under similar experimental conditions (Figure 3A), to establish a reference dataset for classifying acoustic recordings (Mukundarajan et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the experimental dataset collected and presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "e4dc8b71-6d5d-4b93-abc0-ae1ab84d1d4e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C43",
+      "claim": "A basic low-end phone (SGH T-209) is capable of collecting high-quality acoustic recordings to precisely measure wingbeat frequency distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we recorded mosquitoes using a variety of phones, the results presented here focus on data acquired by the 2006-model $20 SGH T-209 feature phone. This highlights that even a basic low-end phone is capable of collecting high-quality acoustic recordings, to precisely measure wingbeat frequency distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the reference dataset collected using the T-209 phone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "e05e7ce0-ec9d-4ae7-8860-234a2433dbbe",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C44",
+      "claim": "A typical wingbeat frequency distribution for any given species has a spread of 150 to 200 Hz between the 5th and 95th percentiles.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical wingbeat frequency distribution for any given species has a spread of 150 to 200 Hz between the 5th and 95th percentiles, located within the frequency range of 200 to 700 Hz for most female mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the frequency distribution data collected from 20 mosquito species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "7870f327-a1be-4bb7-842b-e6cb754d41de",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C45",
+      "claim": "Approximately 60 samples, or 1.2 seconds of recording time, is sufficient to generate a well-sampled wingbeat frequency distribution for a given population.",
+      "claim_type": "EXPLICIT",
+      "source": "The time for convergence above a BC of 0.9 corresponds to approximately 60 samples, or 1.2 seconds of recording time, to generate a well-sampled wingbeat frequency distribution for a given population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the convergence analysis of bootstrapped subsets from reference distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "aa617b38-1a3c-4f06-bdd1-a9f8950b94fe",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C46",
+      "claim": "Different lab-reared strains of Anopheles gambiae produced highly similar frequency distributions with mutual Bhattacharya Coefficients of 0.84 to 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that different lab-reared strains of An. gambiae, including permethrin susceptible and resistant variants sourced from Kenya and an additional bendiocarb resistant strain sourced from Benin, produced highly similar frequency distributions with large overlaps of 0.84 to 0.89 as measured by their mutual BCs (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through comparative analysis of different An. gambiae strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "18c968a8-9af8-40a3-b65c-8464566c0e7a",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C47",
+      "claim": "Different colonies of Aedes aegypti had high overlaps in their frequency distributions with mutual Bhattacharya Coefficients ranging between 0.66 and 0.74.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly for Aedes aegypti, lab-reared mosquitoes from two separate colonies of the same New Orleans origin, as well as first generation progeny from eggs retrieved from the field in Los Angeles, had high overlaps in their frequency distributions with mutual BCs ranging between 0.66 and 0.74 (the slightly lower BC values arise due to the distribution for one of the colonies having a smaller spread despite being completely overlapped by the other two) (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through comparative analysis of different Ae. aegypti colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "2df35a7e-eac4-44d0-ab7b-25c3d8d70a7b",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C48",
+      "claim": "Lab-reared strains of Anopheles arabiensis from Senegal and Sudan have non-overlapping frequency distributions with a Bhattacharya Coefficient of 0.14.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also found that lab-reared strains of An. arabiensis originally sourced from Senegal and Sudan have non-overlapping frequency distributions, with a very small BC of 0.14 (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through comparative analysis of different An. arabiensis strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "15e42946-1696-47ef-905c-09567c13b56c",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C49",
+      "claim": "The vast majority of all possible pairwise combinations of species (184 out of 190) had Jensen-Shannon divergence greater than 0.35.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of all possible pairwise combinations of species in our study (184 out of 190) had JSD greater than this minimum value (Figure 3B), indicating that differences in frequency distribution between species are significant in most cases (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the pairwise comparisons of frequency distributions for 20 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "1b692533-10b2-49c5-993d-71d61c0e241b",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C50",
+      "claim": "Species with fairly unique and non-overlapping wingbeat frequency distributions are almost always correctly classified.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results verify that species with fairly unique and non-overlapping wingbeat frequency distributions are almost always correctly classified, while those with high degrees of overlap are most likely to be mutually misclassified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the confusion matrix analysis of bootstrapped data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "1e843ab8-8b57-4e35-9b55-a2834661c1e4",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C51",
+      "claim": "Including a location filter based on entomological survey data significantly improved classification accuracy from about 35% to 65% on average.",
+      "claim_type": "EXPLICIT",
+      "source": "This significantly improved classification accuracy not only for individual species, but also from about 35% to 65%, as an average over all the species tested (Figure 3E, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the classification experiments with and without location filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "7e29f7da-fb71-48fd-a3da-3a9d90ef7859",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C53",
+      "claim": "Anopheles gambiae and Culex pipiens can easily be distinguished by sound alone with negligible probability of mutual mis-classification.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simplest case, species with completely non-overlapping frequency distributions, such as Anopheles gambiae and Culex pipiens (JSD = 1, negligible probability of mutual mis-classification), can easily be distinguished by sound alone (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the frequency distribution analysis and classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "d3659db9-f924-4413-90a4-e310323f6071",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C57",
+      "claim": "Anopheles gambiae and Anopheles quadriannulatus are correctly identified with over 97% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The JSD for all but one species pair ranges between 0.61 and 0.91 (Figure 3\u2014figure supplement 2E), and An. gambiae and An. quadriannulatus are correctly identified with over 97% probability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the classification analysis of the An. gambiae species complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "a4cd5c85-fdd3-4a01-bd55-88dcaa24c64a",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C59",
+      "claim": "Mosquito recordings with high SNR were obtained in a wide range of ambient environments, from urban and rural homes to forests and parks.",
+      "claim_type": "EXPLICIT",
+      "source": "We also collected recordings in a wide range of ambient environments, from urban and rural homes, both indoors and outdoors, to forests and parks (Figure 4\u2014figure supplement 1, Supplementary files 2\u20137). We obtained mosquito recordings with high SNR, whose distinctive narrow-spectrum characteristics allow their easy visual identification in spectrograms against background noises such as birdsong, fire truck sirens, and human speech.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the field recordings collected in various environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "d9e8c951-7c23-49eb-b0ea-717d3bcf7b8c",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C60",
+      "claim": "For individual flight traces collected in the field, the frequency distributions have spreads between 10 and 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For individual flight traces collected in the field, the distributions lie at different positions within the population-level frequency range, and have spreads (difference between 5th and 95th percentile) between 10 and 100 Hz (Figure 4\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the analysis of individual Aedes sierrensis recordings from the field.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "a17ded26-4f48-4f35-9bf2-3e3a1c53d54c",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C61",
+      "claim": "The spread in frequency for a single flight trace is typically smaller than the spread across a population.",
+      "claim_type": "EXPLICIT",
+      "source": "The spread in frequency for a single flight trace is typically smaller than the spread across a population, with the difference between mean frequencies for different traces contributing to the additional variation in the population's frequency distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the comparative analysis of individual traces versus population distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "39c89d49-d918-4dda-9a8b-a7f414dafade",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C62",
+      "claim": "Frequency distributions for individual flight traces have a minimum spread of around 2% of the mean frequency irrespective of the mean frequency or the duration of the recording.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that frequency distributions for individual flight traces have a minimum spread of around 2% of the mean frequency irrespective of the mean frequency or the duration of the recording, suggesting that this is an inherent natural variation in the wingbeat frequency during free flight (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the analysis of individual flight traces from wild Aedes sierrensis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "1ba6b6fb-1871-45ea-a418-cb32bc2c34ee",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C63",
+      "claim": "For mosquitoes varying almost two-fold in size, the difference in mean frequency between each mosquito is less than the spread within each individual flight trace.",
+      "claim_type": "EXPLICIT",
+      "source": "For mosquitoes varying almost two-fold in size (Figure 3G), the difference in mean frequency between each mosquito is less than the spread within each individual flight trace, and non-monotonic with body size (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the analysis of Aedes sierrensis specimens with varying body sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "a09ada3f-1a96-4f62-b2ee-ef428eca005d",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C64",
+      "claim": "The MLE approach correctly classified recordings from wild Aedes sierrensis mosquitoes in about two-thirds of cases (54 out of 82 recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the variations among individuals, our MLE approach (using a pool of all field recordings together to create a reference frequency distribution) was able to correctly classify recordings from wild Aedes sierrensis mosquitoes in about two-thirds of cases (54 out of 82 recordings), when considering other local species (Cx. pipiens, Cx. quinquefasciatus, Cx. tarsalis, and Cu. incidens) as potential confounders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the classification analysis of field recordings from Big Basin Park.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "9b3fed77-3ea8-4b67-b3e6-aa2b683404b1",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C65",
+      "claim": "Recordings from Big Basin Redwoods State Park were collected over a continuous 3 hour period by 15 volunteers hiking along trails and recording with their personal mobile phones.",
+      "claim_type": "EXPLICIT",
+      "source": "These were collected over a continuous 3 hour period by 15 volunteers hiking along trails and recording with their personal mobile phones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the field trial methodology at Big Basin Park.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "b675e39d-82e6-4f56-898a-2f7a8253b506",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C66",
+      "claim": "About 60 recordings were collected in a 3-hour period by 10 volunteers at Ranomafana, Madagascar.",
+      "claim_type": "EXPLICIT",
+      "source": "About 60 recordings were collected in a 3-hour period by 10 volunteers who were trained for about 15 minutes and stationed at specific locations in the village.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the field trial methodology at Ranomafana.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "3b44d94d-5ced-4c1f-bd27-5a2c498d5d4a",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C67",
+      "claim": "The number of recordings at Ranomafana exceeded the number of mosquitoes simultaneously captured in CDC light traps placed at the same locations.",
+      "claim_type": "EXPLICIT",
+      "source": "This number of recordings exceeded the number of mosquitoes simultaneously captured in CDC light traps placed at the same locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct comparison between mobile phone recordings and traditional trapping methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "a75f480e-2e73-4533-a4e8-292edc435c9c",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C68",
+      "claim": "CDC light traps collected Anopheles mosquitoes only in those locations where they were also recorded by volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterogeneity was concordant with the data from CDC light traps, which collected Anopheles mosquitoes only in those locations where they were also recorded by volunteers (Figure 4C, insets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the comparison of mobile phone recordings and trap data at Ranomafana.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "0f806d5f-68cd-4e6a-9232-5e28150b54a8",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C69",
+      "claim": "Wingbeat frequency for insects, including mosquitoes, has been shown to vary linearly with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Wingbeat frequency for insects, including mosquitoes, has been shown to vary linearly with temperature (Oertli, 1989; Villarreal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature on insect flight physiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "4f903872-3855-4457-9db3-adb060b42074",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "claim_id": "C70",
+      "claim": "Lab studies show no relationship between wingbeat frequency and body size.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a field confirmation of lab studies that show no relationship between wingbeat frequency and body size (Villarreal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature and confirmed by field observations in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "32e53f4b-28d8-418d-85ee-ed03a5d116ae",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mobile phone microphones accurately capture mosquito wingbeat frequencies without distortion, as validated by synchronized audio-video recordings showing exact frequency matches within 2 Hz and a Bhattacharya Coefficient of 0.95 between audio and video measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 provide strong experimental validation through synchronized high-speed video and mobile phone audio recordings. The temporal alignment within 2 ms, frequency matching within 2 Hz, and BC of 0.95 demonstrate high fidelity acoustic capture. The experimental design with independent measurement modalities provides robust evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "1cb04b8e-2022-4fec-b362-4880b2684d68",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mobile phones, including decade-old feature phones, can detect mosquito wingbeat sounds at distances up to 50-100 mm with signal-to-noise ratios comparable to reference microphones, though performance is limited to environments with background noise below 50 dB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by systematic calibration experiments using standardized sound sources and tethered mosquitoes. The distance measurements and SNR comparisons are quantitative and methodologically sound. The caveat about noise limitations (C36) appropriately qualifies the working conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "648cf858-35f4-4a76-a94b-c95384daa4f2",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Eight different mobile phones ranging in price from ~$20 to ~$700 recorded quantitatively equivalent acoustic data from the same mosquito population, with mean/median frequencies differing by less than 5%, Bhattacharya Coefficients between 0.93-1, and Jensen-Shannon divergences below 0.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 demonstrate device-independence through systematic comparison of multiple phone models. The statistical metrics (BC, JSD) are appropriate for comparing distributions. The experimental design of recording the same population with different phones controls for biological variation. This is critical for establishing a universal platform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "6b886a97-1145-4060-9643-1a684be9a18e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A reference dataset of wingbeat frequency distributions was established for 20 medically relevant mosquito species using a low-cost feature phone, with typical distributions spanning 150-200 Hz and requiring approximately 1.2 seconds (60 samples) of recording for adequate sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe the reference dataset construction with appropriate statistical validation. The convergence analysis (C45) using bootstrapping to determine adequate sample size is methodologically sound. Using the low-cost T-209 phone (C43) strengthens the accessibility argument. The dataset forms the foundation for classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "03281a60-cc78-4f61-b3bf-49138f40a7aa",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Within-species variation in wingbeat frequency distributions was assessed across different strains and colonies, showing high similarity for most populations (BC 0.66-0.89) but notable exceptions like Anopheles arabiensis strains from different geographic origins (BC 0.14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 appropriately characterize intraspecific variation with quantitative metrics. The finding of geographic variation in An. arabiensis (C48) is important for identifying limitations. However, the manuscript acknowledges this requires further investigation and recommends building local databases, which is scientifically appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "d1b1402d-d9a2-4b5d-9df5-bd8cd92769fa",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Species classification using Maximum Likelihood Estimation achieved significant improvement from ~35% to ~65% average accuracy when incorporating location metadata as a filter, with 184 of 190 species pairs showing Jensen-Shannon divergence greater than 0.35.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 demonstrate the classification approach with appropriate statistical validation. The improvement from adding location metadata (C51) is substantial and well-documented. The JSD threshold of 0.35 is empirically derived from within-species variation. The confusion matrices provide transparent assessment of classification performance and limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "18a3b723-ab83-457d-90d0-a4fc82c1afb4",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific species pairs demonstrate high classification accuracy, including Anopheles gambiae vs. Culex pipiens (negligible misclassification) and An. gambiae vs. An. quadriannulatus (>97% correct identification).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C57 provide specific examples of successful classification with quantitative probabilities. These are supported by the frequency distribution data and JSD calculations. The examples illustrate both the potential and limitations of acoustic classification for medically important species complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Field recordings of wild Aedes sierrensis mosquitoes showed individual flight traces with frequency spreads of 10-100 Hz, typically smaller than population-level variation, with a minimum inherent spread of ~2% of mean frequency independent of recording duration or mosquito body size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 characterize natural variation in field conditions with appropriate analysis. The finding that body size does not correlate with frequency (C63) is important and consistent with cited literature. The 2% minimum spread (C62) represents inherent biological variation. The high SNR recordings in diverse environments (C59) validate field applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Field trials at Big Basin Redwoods State Park (15 volunteers, 3 hours) and Ranomafana, Madagascar (10 volunteers, 3 hours, ~60 recordings) demonstrated proof-of-concept for citizen science mosquito surveillance, with mobile phone recordings exceeding trap captures and showing concordant spatial patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 provide field validation with appropriate comparison to traditional methods (CDC light traps). The concordance between mobile recordings and trap data (C68) validates the approach. The classification accuracy of ~67% for wild Ae. sierrensis (C64) is reasonable given natural variation. The field trials demonstrate feasibility but are limited in scale and duration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "abe9c78a-eae1-4ae4-af6f-4cb810945676",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mobile phones can be used as a platform for acoustic mosquito surveillance, with even low-cost devices capable of recording species-specific wingbeat sounds along with spatio-temporal metadata for rapid, non-invasive species identification by minimally-trained users.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C5, C6, and C21 represent the core thesis supported by the experimental validation throughout the manuscript. The technical validation (microphone performance, classification accuracy) and field demonstrations provide converging evidence. However, the system requires local reference databases and has limitations in noisy environments and for species with overlapping frequencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current mosquito surveillance faces challenges due to paucity of high-resolution ecological data, with existing methods relying primarily on mathematical models rather than field surveys, and traditional methods requiring considerable expense, labor, and time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C12 establish the motivation and context for the work, supported by appropriate citations to the literature. These are well-established challenges in the field of vector surveillance and disease control. The claims accurately represent the current state of mosquito monitoring.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "cd74a728-808f-43fa-a874-36ecb8112e10",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Acoustic surveillance based on species-specific wingbeat frequencies was proposed decades ago but faced barriers to widespread adoption due to the challenge of using expensive microphones to acquire low-amplitude mosquito sounds against background noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 accurately summarize prior work on acoustic mosquito surveillance with appropriate historical citations. The characterization of technical barriers (C16) is well-supported by the cited literature and provides context for why mobile phones represent a novel solution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "4a3abfe0-5f6b-4d49-86f0-33cde0cdab05",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The global mobile network connects ~5.3 billion users with 6% annual growth, with explosive growth most pronounced in Africa, Asia, and Latin America\u2014regions that also bear the brunt of mosquito-borne diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 provide factual statistics from cited reports that establish the infrastructure and geographic overlap supporting the proposed surveillance approach. The statistics are appropriately sourced and relevant to the feasibility argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "04eeee38-4846-4768-997f-e29d24d00c47",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mosquito wingbeat sounds have relatively low acoustic complexity, comprising a fundamental frequency with overtones, showing natural frequency variations of 150-200 Hz for females (200-700 Hz range) that overlap with the voice frequency band where phones have maximum sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, C27-C29 characterize mosquito acoustic properties with data from 20 species. The spectral analysis is appropriate and the overlap with phone sensitivity (C29) is a key technical insight. The characterization of natural variation (C24) is important for understanding classification challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "629d6a05-1a33-4f71-806a-16b0d4cd8cec",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mobile phones automatically record time and location metadata and are optimized for sophisticated audio capture, processing, and transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C22 describe known capabilities of mobile phone technology. These are well-established features that support the metadata-enhanced classification approach. No experimental validation is needed for these general technology characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    },
+    {
+      "id": "f810b2ef-6867-44eb-b27c-780552ebde1a",
+      "content_id": "17f497cd-e8dd-4582-8ab4-3fb45e68534c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Wingbeat frequency varies linearly with temperature but shows no relationship with body size, as confirmed by field observations of wild mosquitoes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 cite established literature on insect flight physiology and provide field confirmation for the body size relationship. The field data (C63) showing no correlation between frequency and two-fold size variation supports C70. Temperature effects (C69) are noted but not experimentally addressed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-01T21:49:45.984711Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2ae1ea9d-8eab-4c7e-85f1-f785b868ef19",
+      "result_id": "32e53f4b-28d8-418d-85ee-ed03a5d116ae"
+    },
+    {
+      "claim_id": "e7be8ef7-329c-4fd9-9ddb-719b62542575",
+      "result_id": "32e53f4b-28d8-418d-85ee-ed03a5d116ae"
+    },
+    {
+      "claim_id": "fc2218d1-c84c-4f48-9968-aea1df403183",
+      "result_id": "32e53f4b-28d8-418d-85ee-ed03a5d116ae"
+    },
+    {
+      "claim_id": "0d0e0c16-8046-4117-9e3d-274aba4e4e05",
+      "result_id": "1cb04b8e-2022-4fec-b362-4880b2684d68"
+    },
+    {
+      "claim_id": "ce64964a-bb79-4fe9-bb89-058aff23eb6a",
+      "result_id": "1cb04b8e-2022-4fec-b362-4880b2684d68"
+    },
+    {
+      "claim_id": "ca9436eb-6b4f-4bc3-a3a2-e3fa999384dc",
+      "result_id": "1cb04b8e-2022-4fec-b362-4880b2684d68"
+    },
+    {
+      "claim_id": "01057948-af36-4164-9700-8e463ecefe0f",
+      "result_id": "1cb04b8e-2022-4fec-b362-4880b2684d68"
+    },
+    {
+      "claim_id": "bb0e8fe7-82f1-4b74-85bc-3d96a8a9bc61",
+      "result_id": "648cf858-35f4-4a76-a94b-c95384daa4f2"
+    },
+    {
+      "claim_id": "028f1fc7-2339-45d0-9173-cb63f2d9be27",
+      "result_id": "648cf858-35f4-4a76-a94b-c95384daa4f2"
+    },
+    {
+      "claim_id": "f061b0e2-3f90-4502-b070-1b94f1473ea2",
+      "result_id": "648cf858-35f4-4a76-a94b-c95384daa4f2"
+    },
+    {
+      "claim_id": "7ff6b623-7121-4825-827c-b666707b7d68",
+      "result_id": "648cf858-35f4-4a76-a94b-c95384daa4f2"
+    },
+    {
+      "claim_id": "f675efc1-288c-4d05-bf14-cd4b93b4c2aa",
+      "result_id": "648cf858-35f4-4a76-a94b-c95384daa4f2"
+    },
+    {
+      "claim_id": "f450f2c2-2ce3-435f-9a78-3505aaced4c0",
+      "result_id": "6b886a97-1145-4060-9643-1a684be9a18e"
+    },
+    {
+      "claim_id": "e4dc8b71-6d5d-4b93-abc0-ae1ab84d1d4e",
+      "result_id": "6b886a97-1145-4060-9643-1a684be9a18e"
+    },
+    {
+      "claim_id": "e05e7ce0-ec9d-4ae7-8860-234a2433dbbe",
+      "result_id": "6b886a97-1145-4060-9643-1a684be9a18e"
+    },
+    {
+      "claim_id": "7870f327-a1be-4bb7-842b-e6cb754d41de",
+      "result_id": "6b886a97-1145-4060-9643-1a684be9a18e"
+    },
+    {
+      "claim_id": "aa617b38-1a3c-4f06-bdd1-a9f8950b94fe",
+      "result_id": "03281a60-cc78-4f61-b3bf-49138f40a7aa"
+    },
+    {
+      "claim_id": "18c968a8-9af8-40a3-b65c-8464566c0e7a",
+      "result_id": "03281a60-cc78-4f61-b3bf-49138f40a7aa"
+    },
+    {
+      "claim_id": "2df35a7e-eac4-44d0-ab7b-25c3d8d70a7b",
+      "result_id": "03281a60-cc78-4f61-b3bf-49138f40a7aa"
+    },
+    {
+      "claim_id": "15e42946-1696-47ef-905c-09567c13b56c",
+      "result_id": "d1b1402d-d9a2-4b5d-9df5-bd8cd92769fa"
+    },
+    {
+      "claim_id": "1b692533-10b2-49c5-993d-71d61c0e241b",
+      "result_id": "d1b1402d-d9a2-4b5d-9df5-bd8cd92769fa"
+    },
+    {
+      "claim_id": "1e843ab8-8b57-4e35-9b55-a2834661c1e4",
+      "result_id": "d1b1402d-d9a2-4b5d-9df5-bd8cd92769fa"
+    },
+    {
+      "claim_id": "7e29f7da-fb71-48fd-a3da-3a9d90ef7859",
+      "result_id": "18a3b723-ab83-457d-90d0-a4fc82c1afb4"
+    },
+    {
+      "claim_id": "d3659db9-f924-4413-90a4-e310323f6071",
+      "result_id": "18a3b723-ab83-457d-90d0-a4fc82c1afb4"
+    },
+    {
+      "claim_id": "a4cd5c85-fdd3-4a01-bd55-88dcaa24c64a",
+      "result_id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4"
+    },
+    {
+      "claim_id": "d9e8c951-7c23-49eb-b0ea-717d3bcf7b8c",
+      "result_id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4"
+    },
+    {
+      "claim_id": "a17ded26-4f48-4f35-9bf2-3e3a1c53d54c",
+      "result_id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4"
+    },
+    {
+      "claim_id": "39c89d49-d918-4dda-9a8b-a7f414dafade",
+      "result_id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4"
+    },
+    {
+      "claim_id": "1ba6b6fb-1871-45ea-a418-cb32bc2c34ee",
+      "result_id": "0e8d8d4b-2d7c-406d-bc70-7f44ac03a1c4"
+    },
+    {
+      "claim_id": "a09ada3f-1a96-4f62-b2ee-ef428eca005d",
+      "result_id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e"
+    },
+    {
+      "claim_id": "9b3fed77-3ea8-4b67-b3e6-aa2b683404b1",
+      "result_id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e"
+    },
+    {
+      "claim_id": "b675e39d-82e6-4f56-898a-2f7a8253b506",
+      "result_id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e"
+    },
+    {
+      "claim_id": "3b44d94d-5ced-4c1f-bd27-5a2c498d5d4a",
+      "result_id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e"
+    },
+    {
+      "claim_id": "a75f480e-2e73-4533-a4e8-292edc435c9c",
+      "result_id": "9d16ecf9-e353-4ea5-a5d0-594963644b8e"
+    },
+    {
+      "claim_id": "c855f22c-6a6f-4fac-a345-a4cb9f7d9075",
+      "result_id": "abe9c78a-eae1-4ae4-af6f-4cb810945676"
+    },
+    {
+      "claim_id": "32e6e205-1aec-45c2-9740-e3085853f34b",
+      "result_id": "abe9c78a-eae1-4ae4-af6f-4cb810945676"
+    },
+    {
+      "claim_id": "ceb3f8d0-122c-4602-bc56-22d0b6fdff71",
+      "result_id": "abe9c78a-eae1-4ae4-af6f-4cb810945676"
+    },
+    {
+      "claim_id": "1f7ff51e-c707-4506-98b2-264797350e9e",
+      "result_id": "abe9c78a-eae1-4ae4-af6f-4cb810945676"
+    },
+    {
+      "claim_id": "95216492-2b05-40a4-8356-e62efe33e115",
+      "result_id": "abe9c78a-eae1-4ae4-af6f-4cb810945676"
+    },
+    {
+      "claim_id": "104e0c99-8a38-406a-ac8b-d3048d5dd5ff",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "ed7337fd-baf5-4c30-b624-d3de6f65fb09",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "8488761c-68f8-4966-859b-f6fd1f85da61",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "985ebb6d-dc7b-4e9e-bc62-5b69d960bc5e",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "bdc6cc85-e1a7-4c0b-9b7c-de3958e4ce38",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "7c56a00b-1bbd-43d2-8348-a62be168ed8e",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "f36d308a-f156-4ba8-8032-f3f74a00935c",
+      "result_id": "cc084cb6-4186-41ed-9cd0-03bfb6eb4465"
+    },
+    {
+      "claim_id": "11b2d555-989c-4c9b-b1cb-efa0e65cc6b5",
+      "result_id": "cd74a728-808f-43fa-a874-36ecb8112e10"
+    },
+    {
+      "claim_id": "9bf69aa8-4380-4c71-b412-c35ab2697cbc",
+      "result_id": "cd74a728-808f-43fa-a874-36ecb8112e10"
+    },
+    {
+      "claim_id": "475c4e58-27cb-4046-831c-924b159ac87b",
+      "result_id": "cd74a728-808f-43fa-a874-36ecb8112e10"
+    },
+    {
+      "claim_id": "0f25e6f3-4aa6-4405-9716-941666008105",
+      "result_id": "cd74a728-808f-43fa-a874-36ecb8112e10"
+    },
+    {
+      "claim_id": "90383a3a-74f9-4707-8932-8eafd27fe503",
+      "result_id": "4a3abfe0-5f6b-4d49-86f0-33cde0cdab05"
+    },
+    {
+      "claim_id": "adf7ac12-9e63-4980-b25d-0e6d3dfb6987",
+      "result_id": "4a3abfe0-5f6b-4d49-86f0-33cde0cdab05"
+    },
+    {
+      "claim_id": "e07b270f-4a34-45a3-bd3e-cedbd6aa4ac8",
+      "result_id": "4a3abfe0-5f6b-4d49-86f0-33cde0cdab05"
+    },
+    {
+      "claim_id": "4ad0636d-7d2d-4c1b-bd3c-0bf39ce0e481",
+      "result_id": "4a3abfe0-5f6b-4d49-86f0-33cde0cdab05"
+    },
+    {
+      "claim_id": "2761eb8c-6575-43bc-9c3f-ccbf1f5ebe09",
+      "result_id": "04eeee38-4846-4768-997f-e29d24d00c47"
+    },
+    {
+      "claim_id": "0f2bc1ed-8275-4710-843a-29bf2e98df0d",
+      "result_id": "04eeee38-4846-4768-997f-e29d24d00c47"
+    },
+    {
+      "claim_id": "ea118c5b-9411-4ddc-a1f2-fb039130d429",
+      "result_id": "04eeee38-4846-4768-997f-e29d24d00c47"
+    },
+    {
+      "claim_id": "f8bf5b42-bd57-4269-91ff-f59b34d9aff3",
+      "result_id": "04eeee38-4846-4768-997f-e29d24d00c47"
+    },
+    {
+      "claim_id": "075a06ec-405e-4d3a-b1f7-7c15a7440a64",
+      "result_id": "04eeee38-4846-4768-997f-e29d24d00c47"
+    },
+    {
+      "claim_id": "da9f7c0e-8d9d-425a-89bf-aff2cacf4b74",
+      "result_id": "629d6a05-1a33-4f71-806a-16b0d4cd8cec"
+    },
+    {
+      "claim_id": "9ac5fce0-f04f-426b-b3ae-5682d76ddb48",
+      "result_id": "629d6a05-1a33-4f71-806a-16b0d4cd8cec"
+    },
+    {
+      "claim_id": "0f806d5f-68cd-4e6a-9232-5e28150b54a8",
+      "result_id": "f810b2ef-6867-44eb-b27c-780552ebde1a"
+    },
+    {
+      "claim_id": "4f903872-3855-4457-9db3-adb060b42074",
+      "result_id": "f810b2ef-6867-44eb-b27c-780552ebde1a"
+    }
+  ],
+  "comparisons": []
+}

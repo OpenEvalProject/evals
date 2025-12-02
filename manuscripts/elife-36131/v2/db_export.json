@@ -1,0 +1,2260 @@
+{
+  "submission": {
+    "id": "6d7a8042-0115-4f12-9697-6c0c68f6c142",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T01:05:21.583518Z",
+    "updated_at": "2025-12-02T01:05:21.583518Z"
+  },
+  "content": [
+    {
+      "id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "submission_id": "6d7a8042-0115-4f12-9697-6c0c68f6c142",
+      "content_type": "manuscript",
+      "content_text": "# Adult zebrafish Langerhans cells arise from hematopoietic stem/progenitor cells\n\n## Authors\n\n- Sicong He<sup>1</sup> ([ORCID: 0000-0002-0399-3904](https://orcid.org/0000-0002-0399-3904))\n- Jiahao Chen<sup>2</sup>\n- Yunyun Jiang<sup>2</sup>\n- Yi Wu<sup>3</sup>\n- Lu Zhu<sup>3</sup>\n- Wan Jin<sup>3</sup>\n- Changlong Zhao<sup>3</sup>\n- Tao Yu<sup>4</sup>\n- Tienan Wang<sup>3</sup>\n- Shuting Wu<sup>3</sup>\n- Xi Lin<sup>3</sup>\n- Jianan Y Qu<sup>1</sup>\n- Zilong Wen<sup>3</sup>\n- Wenqing Zhang<sup>2</sup> \u2020\n- Jin Xu<sup>5</sup> ([ORCID: 0000-0002-6840-1359](https://orcid.org/0000-0002-6840-1359)) \u2020\n\n### Affiliations\n\n1. Department of Electronic and Computer Engineering, Center of Systems Biology and Human Health Hong Kong University of Science and Technology Hong Kong China\n2. Key Laboratory of Zebrafish Modeling and Drug Screening for Human Diseases of Guangdong Higher Education Institutes, Department of Developmental Biology, School of Basic Medical Sciences Southern Medical University Guangzhou China\n3. Division of Life Science and State Key Laboratory of Molecular Neuroscience, Center of Systems Biology and Human Health Hong Kong University of Science and Technology Hong Kong China\n4. Shenzhen Key Laboratory for Neuronal Structural Biology, Biomedical Research Institute Shenzhen Peking University, The Hong Kong University of Science and Technology Medical Center Shenzhen China\n5. Division of Cell, Developmental and Integrative Biology, School of Medicine South China University of Technology Guangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe origin of Langerhans cells (LCs), which are skin epidermis-resident macrophages, remains unclear. Current lineage tracing of LCs largely relies on the promoter-Cre-LoxP system, which often gives rise to contradictory conclusions with different promoters. Thus, reinvestigation with an improved tracing method is necessary. Here, using a laser-mediated temporal-spatial resolved cell labeling method, we demonstrated that most adult LCs originated from the ventral wall of the dorsal aorta (VDA), an equivalent to the mouse aorta, gonads, and mesonephros (AGM), where both hematopoietic stem cells (HSCs) and non-HSC progenitors are generated. Further fine-fate mapping analysis revealed that the appearance of LCs in adult zebrafish was correlated with the development of HSCs, but not T cell progenitors. Finally, we showed that the appearance of tissue-resident macrophages in the brain, liver, heart, and gut of adult zebrafish was also correlated with HSCs. Thus, the results of our study challenged the EMP-origin theory for LCs.\n\n## Introduction\n\nLangerhans cells (LCs) are resident macrophages in skin epidermis, where they have immune-stimulatory capacities. Under both steady and inflammatory conditions, upon activation, LCs migrate from the epidermis to the skin-draining lymph nodes to present antigens to T cells, resulting in the activation of acquired immunity (Hemmi et al., 2001; Merad et al., 2008; Romani et al., 2010; Stoitzner et al., 2005). In addition, several studies have suggested that LCs also confer immune tolerance of the skin (Bobr et al., 2010; Chopin and Nutt, 2015; Kaplan et al., 2005; Merad et al., 2008; Romani et al., 2012; Shklovskaya et al., 2011; van der Aar et al., 2013). The biological significance of the opposing roles of LCs remains unclear, but it is thought that LCs dampen the immune response under steady-state conditions, but activate the response upon challenge (Seneschal et al., 2012).\n\nAlthough LCs were identified over 100 years ago, their origins have been debated ever since their discovery. Initially, LCs were considered to be nerve cells in the skin (Langerhans, 1868) and subsequently were thought to have a melanocyte or keratinocyte origin (Birbeck et al., 1961; Reams and Tompkins, 1973). The hematopoietic origin of LCs was not revealed until 1979, when researchers observed that donor-derived LCs were present in the skin of lethally-irradiated mice transplanted with allogeneic or semi-allogeneic hematopoietic precursors (Frelinger et al., 1979; Katz et al., 1979). This led to the hypothesis that LCs were replenished continually by circulating monocytes (Romani et al., 2012). However, this view was challenged by several subsequent studies. The first clue came from transplantation studies by Merad et al., who reported that most LCs in lethally-irradiated mice reconstituted with either congenic hematopoietic precursors or T cell-free allogenic precursors were of a host origin (Merad et al., 2004; Merad et al., 2002). Subsequent studies further documented that LCs turn over slowly in steady-state. In fact, LCs are replenished by a small number of proliferative LC precursors residing in the skin, although circulating precursors do contribute to LCs when a severe injury occurs (Chorro et al., 2009; Collin et al., 2006; Ghigo et al., 2013; Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Hoeffel et al., 2012; Kanitakis et al., 2004; Krueger et al., 1983; Schulz et al., 2012; Vishwanath et al., 2006; Yona et al., 2013). Despite these studies, the origin and nature of the proliferative LC precursors remain largely undefined.\n\nThe self-renewal ability of adult LCs led to the hypothesis that LCs are generated from sources independent of hematopoietic stem cells (HSCs), which are born in the aorta, gonads, and mesonephros (AGM) in mammals (Orkin and Zon, 2008). This was supported by a recent fate-mapping study by Hoeffel et al., who utilized Runx1-MER-Cre-MER/Rosa26-YFP reporter mice and showed that adult LCs in mice had dual origins: YS primitive monocytes and fetal liver monocytes (Hoeffel et al., 2012). Further fate-mapping studies with similar MER-Cre-MER/Rosa26 reporter systems suggested that adult LCs in mice were predominantly generated from YS-derived erythro-myeloid precursors (EMPs) (Gomez Perdiguero et al., 2015; Hoeffel et al., 2015). Yet, this EMP-origin theory was challenged by a recent study by Sheng et al., who utilized the c-Kit-MER-Cre-MER/Rosa26-YFP reporter system to trace the origin of tissue-resident macrophages and found that most resident macrophages, including LCs, in adult mice were predominantly derived from HSCs but not from EMPs (Sheng et al., 2015). However, despite their elegant designs, these fate-mapping studies, relied on promoter-controlled CreER-loxP tracking systems. The exact transcription activity of these promoters in the tissue of interest remains to be further elucidated, so such studies cannot provide a definitive answer about the origin of LCs. Furthermore, conventional lineage-tracing systems cannot selectively label and distinguish cells from different anatomic locations. These shortcomings have hindered the identification of the origin of LCs, so a new cell labeling strategy that can provide both temporal and spatial resolution is required.\n\nSimilar to mammals, zebrafish experience multiple waves of hematopoiesis (Jagannathan-Bogdan and Zon, 2013; Jing and Zon, 2011; Stachura and Traver, 2011; Xu et al., 2012). The first or embryonic hematopoiesis in the zebrafish initiates at\u00a0~11 hr post fertilization (hpf) in the posterior lateral mesoderm (PLM) and rostral blood island (RBI), which are, similar to the mammalian yolk sac (YS), producing embryonic erythroid and myeloid cells respectively. The second or definitive wave of hematopoiesis occurs at\u00a0~28 hpf in the ventral wall of the dorsal aorta (VDA), a tissue equivalent to the mammalian AGM (Orkin and Zon, 2008), and gives rise to HSCs capable of generating all blood cell types during fetal life and adulthood. A third or intermediate wave of hematopoiesis, which generates EMPs, is believed to initiate autonomously from the posterior blood island (PBI) at around 30 hpf and produces erythroid and myeloid cells during both embryonic and fetal development (Bertrand et al., 2007). Thus, its conserved hematopoietic program, genetic amenability, and imaging feasibility have made zebrafish an excellent model system to use for fate-mapping studies of LCs.\n\nIn the current study, we utilized the recently developed temporospatially resolved cell labeling IR-LEGO-CreER-loxP system (Deguchi et al., 2009; Kamei et al., 2009; Xu et al., 2015), together with genetic analysis, to delineate the origins of adult LCs in zebrafish. We showed that most LCs in adult zebrafish are derived from the VDA, a tissue equivalent to the mouse AGM, from where HSCs emerge. Genetic studies showed that VDA-derived LCs required runx1 and cMyb functions. Further fate-mapping analyses showed that adult LCs were largely accompanied by HSCs but not non-HSC T cell progenitors. Finally, we showed that other adult tissue-resident macrophages in the brain, liver, heart, and gut are also correlated with HSCs, suggesting that primary adult tissue-resident macrophages were likely derived from HSCs in zebrafish.\n\n## Results\n\n### Adult LCs in zebrafish arise predominantly from the VDA region\n\nThe IR-LEGO system was previously demonstrated to provide high-resolution temporospatial cell labeling in zebrafish (Deguchi et al., 2009; Kamei et al., 2009; Xu et al., 2015). To apply this system to study the origin of LCs in zebrafish, we generated a Tg(mpeg1:loxP-DsRedx-loxP-GFP) transgenic line, in which macrophages, including LCs, were specifically marked by DsRedx under normal conditions but by GFP upon loxP excision (Ellett et al., 2011). The transgenic fish were outcrossed with a heat shock-inducible Tg(hsp70:mCherry-T2a-CreERT2) line (Hans et al., 2011) and the resulting double transgenic fish Tg(hsp70:mCherry-T2a-CreERT2;mpeg1:loxP-DsRedx-loxP-GFP) were used for LC fate mapping analysis (Figure 1\u2014figure supplement 1). To track the contribution of all hematopoietic sources to LCs, we locally heat-shocked the RBI, VDA, and PBI, the hematopoietic tissues for the generation of embryonic macrophages, HSCs, and EMPs respectively (Jagannathan-Bogdan and Zon, 2013; Jing and Zon, 2011; Stachura and Traver, 2011; Xu et al., 2012), with a 1342\u20131350 nm infrared (IR) laser followed by treatment with 4-OH tamoxifen (4-OHT) (Figure 1\u2014figure supplement 1). The RBI region was labeled at 14\u201316 hpf when embryonic myelopoiesis begins (Ciau-Uitz et al., 2014), the VDA region was labeled at 28 hpf when the endothelial hematopoietic transition (EHT) occurs (Kissa and Herbomel, 2010), and the PBI region was heat-shocked at 20 hpf to prevent contamination of the RBI- and VDA-derived cells by the circulation which begins at\u00a0~25 hpf (Figure 1\u2014figure supplement 1C and D) (Ciau-Uitz et al., 2014). The heat-shocked embryos were raised to 4 days post fertilization (dpf) and adulthood, and the contribution from each labeled region to LCs was determined by anti-GFP staining. To identify LCs, we co-stained mpeg1-transgenic DsRedx with krtt1c19e-transgenic GFP in mpeg1 and krtt1c19e double transgenic fish, which primarily marks the basal epidermal layer (Lee et al., 2014). We found that most DsRedx+\u00a0macrophages on the superficial part of the adult skin located within the krtt1c19e+\u00a0epidermal layer, suggesting that they were indeed LCs (Figure 1\u2014figure supplement 1E). We then considered the mpeg1-transgenic DsRedx/GFP cells on the superficial part of the skin as LCs in the rest of the study. Tracing results showed that, although the RBI was the primary source for LCs at early embryonic stages, most (~80% LCs are GFP+) LCs in the adult zebrafish (\u22653 months old) were of a VDA origin and only limited numbers of adult LCs were derived from the RBI and PBI, compared with non-heat-shocked control fish (Figure 1B\u2013D, Figure 1\u2014source data 1). Although we attempted to label the whole VDA region, we were unable to guarantee that every hematopoietic stem/progenitor cell (HSPC) was successfully labeled. According to the tracing result that\u00a0~80% of adult LCs were labeled, we hypothesized that our labeling efficiency was also about 80%. The remaining\u00a0~20% non-GFP\u00a0+LCs were likely derived from unlabeled HSPCs in VDA due to the incomplete heat-shock or loxP recombination. To check when LCs shifted from a RBI origin to a VDA origin, heat-shocked embryos were examined from 4 dpf to 12 dpf at 2 day intervals (Figure 1\u2014figure supplement 1F). The results showed that the percentage of RBI-derived LCs gradually decreased and only\u00a0~7% of LCs were derived from a RBI origin at 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1). By contrast, the VDA-derived LCs became obvious at 6 dpf and their percentage reached 54% by 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1). A small portion of PBI-derived LCs was observed from 6 dpf. In contrast to the prosperous LCs from the VDA, the PBI-derived LCs maintain their percentage at\u00a0~15% from 8 dpf to 12 dpf suggesting limited cell proliferation or input from the PBI (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1). Taken together, these data suggested that LCs gradually shifted from a RBI origin to a VDA origin during the early larval stages of zebrafish development. Eventually, most adult LCs were derived from the VDA region in the zebrafish.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic diagram indicates the RBI, VDA and PBI regions and the time point (4 dpf and 3 months) when the heat-shocked fish are analyzed. (B) Quantification of the percentage of GFP+ LCs derived from the RBI, VDA, PBI, and non-heat-shocked control at 4 dpf and adulthood. n\u00a0=\u00a013, 7, 10 and 6 for the RBI-, VDA-, PBI-, and non-heat-shocked control fish analyzed at 4 dpf respectively. n\u00a0=\u00a05, 5, 5 and 6 for the RBI-, VDA-, PBI-, and non-heat-shocked control fish analyzed at adulthood, respectively. Error bars represent mean SEM. ***p<0.001. (C) Anti-GFP staining shows that GFP+ LCs are detected in the RBI-labelled fish, but not VDA- and PBI-labelled fish at 4 dpf. The red box indicates the imaging region. (D) Anti-GFP staining indicates that GFP+ LCs are mainly detected in the VDA-labelled fish, but not the RBI- and PBI-labelled fish in adulthood. The red box indicates the imaging region.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The Tg(mpeg1:loxP-DsRedx-loxP-GFP) fish was crossed with the heat shock-inducible Tg(hsp70:mCherry-T2a-CreERT2) line. The resulted double transgenic embryos were applied to infrared heats-hock. Upon 4-OHT treatment, CreER mediated loxP recombination occurs. (B) Local heat-shock was introduced with IR laser to hematopoietic progenitors and 4-OHT was applied to induce loxP recombination. After cell differentiation, only the macrophages derived from the heat-shocked progenitors would express GFP, whereas the other macrophages remain DsRedx expression. (C) In the double transgenic embryos, IR laser was introduced to RBI, VDA or PBI, the three regions produce primitive myeloid cells, definitive hematopoiesis or intermediate EMPs respectively. After 4-OHT treatment, the embryos were raised to adult and the contribution of GFP+ and DsRedx+ LCs were examined. (D) Local heat-shock successfully induced CreER expression in RBI, VDA, and PBI. (E) mpeg1-DsRedx+ macrophages (red signals) locate within the krtt1c19e-GFP+ (green signals) basal epidermal layer as shown by the 3D view of the z-section. (F) A timeline shows that the fish heat-shocked in RBI, VDA and PBI regions were examined from 4 dpf to 12 dpf at 2 day intervals. (G) Imaging of the skin at 4 dpf, 6 dpf, and 12 dpf shows that VDA-derived GFP+\u00a0LCs gradually become the predominant population. The mpeg1-GFP and mpeg1-DsRedx signals were merged together, therefore both green and yellow LCs represent GFP+ cells. (H) Quantification of the percentage of RBI, VDA, and PBI derived LCs from 4 dpf to 12 dpf at 2 day intervals. n = 6, 5, and 5 for RBI, VDA, and PBI, respectively, (n = 4 for VDA at 10 dpf and 12 dpf). Error bars represent mean SEM. *p<0.05; **p<0.01; ***p<0.001.\n\n### VDA-derived LCs require Runx1 and cMyb functions\n\nGiven that the zebrafish VDA region is equivalent to the mouse AGM where HSCs are born (Orkin and Zon, 2008), we reasoned that a large portion of adult LCs in the zebrafish were likely to be the progeny of HSPCs in the VDA. To test this hypothesis, we crossed Tg(hsp70:mCherry-T2a-CreERT2;mpeg1:loxP-DsRedx-loxP-GFP) with runx1W84X mutants, in which HSPC formation in the VDA region was severely impaired (Bertrand et al., 2010; Boisset et al., 2010; Chen et al., 2009; Jin et al., 2009; Kissa and Herbomel, 2010; Sood et al., 2010), and examined the VDA-derived LCs at\u00a0~12 dpf. Our results showed a reduction of\u00a0>85% (7.0 cells/mm2 in the mutants versus 53.8 cells/mm2 in siblings) in the density of GFP+ LCs in runx1W84X mutants (Figure 2A and B, Figure 2\u2014source data 1). The total density of LCs in runx1W84X mutants was also reduced (57.7 cells/mm2 in the mutants versus 173.2 cells/mm2 in siblings) (Figure 2\u2014figure supplement 1E, Figure 2\u2014figure supplement 1\u2014source data 1). By contrast, the RBI-derived GFP+ LCs showed no obvious differences between mutants and siblings when heat-shock labeling was performed in the RBI region (Figure 2\u2014figure supplement 1C, Figure 2\u2014figure supplement 1\u2014source data 1). This result was not surprising given that the RBI-derived macrophages are not reduced in runx1W84X mutants (Jin et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig2-v2.jpg)\n\n**Figure 2.:** (A) Anti-GFP staining shows that the VDA-derived LCs are significantly reduced in 12 dpf runx1W84X mutants comparing with those in siblings. (B) Quantification of the density of the VDA-derived GFP+ LCs in 12 dpf runx1W84X mutants and siblings. n\u00a0=\u00a05 for siblings and n\u00a0=\u00a06 for mutants. Error bars represent mean SEM. **p<0.01. (C) Anti-GFP staining reveals a reduction of the VDA-derived LCs in 20 dpf cmybhkz3 mutants comparing with size matching siblings. (D) Quantification of the density of the VDA-derived GFP+ LCs in 20 dpf cmybhkz3 mutants and size matching siblings. n\u00a0=\u00a011 and 10 for siblings and mutants respectively. Error bars represent mean SEM. **p<0.01.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Average body length of the runx1W84X mutant and its sibling. n\u00a0=\u00a05 for siblings and n\u00a0=\u00a06 for mutants. Error bars represent mean SEM. (B) Average body length of the 20 dpf cmybhkz3 mutant and its size matched sibling. n\u00a0=\u00a011 and 10 for siblings and mutants respectively. Error bars represent mean SEM. (C) Quantification of the density of the RBI-derived GFP+ LCs in the trunk of 12 dpf runx1W84X mutants and siblings. n\u00a0=\u00a06 for siblings and mutants. Error bars represent mean SEM. (D) Quantification of the density of the RBI-derived GFP+ LCs in the trunk of 20 dpf cmybhkz3 mutants and size matched siblings. n\u00a0=\u00a05 for siblings and n\u00a0=\u00a06 for mutants. Error bars represent mean SEM. (E) Quantification of the density of total LCs in the trunk of 12 dpf runx1W84X mutants and siblings. n\u00a0=\u00a05 for siblings and n\u00a0=\u00a06 for mutants. Error bars represent mean SEM. (F) Quantification of the density of total LCs in the trunk of 20 dpf cmybhkz3 mutants and size matched siblings. n\u00a0=\u00a011 and 10 for siblings and mutants, respectively. Error bars represent mean SEM.\n\nTo further test whether VDA-derived LCs were derived from HSPCs, we also examined these cells in cmybhkz3 mutants with a Tg(hsp70:mCherry-T2a-CreERT2;mpeg1:loxP-DsRedx-loxP-GFP) background, in which HSPCs were gradually depleted as a result of the inactivation of cMyb, a transcription factor essential for HSC development in mice and fish (Mucenski et al., 1991; Mukouyama et al., 1999; Soza-Ried et al., 2010; Sumner et al., 2000; Zhang et al., 2011). Given that cmybhkz3 mutants have a developmental delay and cannot survive beyond 1 month of age (Xu et al., 2015), we assessed the LCs in 20 dpf cmybhkz3 mutants, comparing them with size-matched 12\u201315 dpf siblings (Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 1\u2014source data 1). Our results showed a partial reduction (15.2 cells/mm2 in the mutants versus 40.4 cells/mm2 in siblings) in the density of GFP+ LCs in cmybhkz3 mutants (Figure 2C and D, Figure 2\u2014source data 1). The remaining GFP+ LCs in the mutants might reflect either a cMyb-independent non-stem cell-derived population in VDA or differentiated progenies from the residual surviving HSCs. The total density of LCs in cmybhkz3 mutants was also reduced (66.3 cells/mm2 in the mutants versus 133.3 cells/mm2 in siblings) (Figure 2\u2014figure supplement 1F, Figure 2\u2014figure supplement 1\u2014source data 1). Unsurprisingly, there was no obvious difference in RBI-derived GFP+ LCs between the mutants and siblings when heat-shock labeling was performed in the RBI region (Figure 2\u2014figure supplement 1D, Figure 2\u2014figure supplement 1\u2014source data 1). This result was consistent with a previous report that cMyb was not required for the development of RBI-derived macrophages (Jin et al., 2016). Nevertheless, this result clearly showed that, although it was not absolutely necessary, cMyb was partially required for these cells. These data, together with the fate-mapping results, indicated that adult LCs in the zebrafish likely arose from HSPCs.\n\n### The origin of adult LCs correlates spatially with HSCs\n\nWe previously showed that the VDA region contained non-HSC derived T cell progenitors (Tian et al., 2017). This finding prompted us to speculate that both HSCs and non-HSC progenitors in VDA give rise to adult LCs. To test which is the primary origin of adult LCs, we randomly labeled a single spot of the VDA region in Tg(mpeg1:loxP-DsRedx-loxP-GFP);Tg(hsp70:mCherry-T2a-CreERT2) embryos (Figure 3A), with the hope that we might be able to separate non-HSC progenitors from HSCs. Labeled fish (a total of 13 fish) were raised to adulthood and the distribution patterns of VDA-derived LCs were determined by GFP expression. We found that 8 out of the 13 fish contained abundant GFP+ LCs (Figure 3B\u2013C, Figure 3\u2014source data 1). Notably, abundant GFP+ cells were also present in the circulation of these fish suggesting the successful labeling of HSCs (Figure 3D and E, Figure 3\u2014source data 1). This group of fish was designated the \u2018HSC Group\u2019 (Figure 3B\u2013E). In the remaining five VDA-labeled fish, GFP+ LCs failed to be abundantly detected (Figure 3B and C) and few GFP+ cells were found in the circulation, suggesting a failure of HSC labeling (Figure 3D and E). These fish were defined as the \u2018non-HSC Group\u2019 (Figure 3B\u2013E). These data indicated that the primary population of GFP+ LCs observed in the VDA-labeled fish was associated with HSCs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig3-v2.jpg)\n\n**Figure 3.:** (A) A schematic view of the single spot VDA heat-shocked experiment. A single IR laser hit is performed in the VDA region. The heat-shocked embryos are raised to adult (about 3 months) for analysis. (B) GFP+ LCs are mainly found in the HSC group but not in the non-HSC group of VDA labeling. (C) Quantification of the relative contribution of GFP+ LCs in HSC (n\u00a0=\u00a08) and non-HSC (n\u00a0=\u00a05) groups. Error bars represent mean SEM. ***p<0.001. (D) Flow cytometry shows GFP+ cells are mainly found in the circulation of HSC group but not in the circulation of non-HSC group. (E) Quantification of the relative contribution of GFP+ cells in the circulation of HSC (n\u00a0=\u00a08) and non-HSC (n\u00a0=\u00a05) groups. Error bars represent mean SEM. ***p<0.001. (F) A schematic view of the position restricted single spot VDA heat-shocked experiment. The VDA region from anterior to posterior is artificially divided into four positions (P1 to P4) and each position is labeled by a single IR laser hit. The embryos are raised to adult and the percentage of successful LCs labelling is analyzed for each labeled position. (G) The percentage of fish with widely labeled LCs in each position. Three independent experiments were performed. There are total 35 fish for position 1, 44 fish for position 2, 40 fish for position 3, and 38 fish for position 4. *p<0.05.\n\nWe previously showed that the density of HSCs gradually decreased from the anterior to the posterior VDA (Tian et al., 2017). If adult LCs arose from HSCs, they should follow this distribution pattern. To test this hypothesis, we artificially divided the VDA region into four positions, namely position 1 (P1) to position 4 (P4), from the anterior to posterior (Figure 3F) and heat-shocked only one position in each Tg(mpeg1:loxP-DsRedx-loxP-GFP);Tg(hsp70:mCherry-T2a-CreERT2) embryo. The heat-shocked embryos were then raised to adulthood, and the percentage of the adult fish containing GFP+ LCs was calculated for each group. Our results showed that 70%, 71%, and 54% of the labeled fish contained abundant LCs for the P1, P2, and P3 groups, respectively. By contrast, only 22% of the labeled fish contained abundant LCs in the P4 group (Figure 3G, Figure 3\u2014source data 1). This suggested that the generation of adult LCs was correlated with the density gradient of HSCs along the VDA.\n\n### The generation of adult LCs correlates with HSCs but not non-HSC T cell progenitors\n\nIn addition to HSCs, the VDA of zebrafish also produces non-HSC progenitors that give rise to T cells (Tian et al., 2017). Adult LCs might share common progenitors with non-HSC-derived T cells. Non-HSC-derived T cells were reported to generate the first wave of T cells, whereas HSCs generate the second wave of T cells after 5 dpf (Tian et al., 2017). This phenomenon provides a temporal criterion to separate HSCs from non-HSC T cell progenitors. To do so, we utilized the Tg(hsp70:mCherry-T2a-CreERT2;coro1a:loxP-DsRedx-loxP-GFP) fish in which the coro1a promoter drove the expression of GFP/DsRedx reporter genes in all leukocytes, including T cells and LCs (Li et al., 2012). The embryos of this double transgenic line were labeled at the P2 position at about\u00a0~24 hpf. All labeled embryos were raised to 5 dpf and the GFP contribution in thymocytes (visualized by coro1a:GFP in the thymus) was examined under a confocal microscope. The embryos were separated into two groups according to the GFP contribution to thymocytes. Group I contained abundant GFP+ thymocytes (>10 cells). By contrast, Group II contained few GFP+ cells (0\u20135 cells) suggesting a failure of labeling the first wave of T cells (Figure 4A and B). Embryos containing 5\u201310 GFP+ thymocytes were discarded. Group I and II were raised to adulthood and their peripheral blood was analyzed. According to the GFP contribution to their peripheral blood, the fish were divided into two subgroups for each group. Group I-A and Group II-A contained significant GFP+ cells in their peripheral blood, suggesting the successful labeling of HSCs (Figure 4A,C and D, Figure 4\u2014source data 1). Group I-B and Group II-B contained few GFP+ cells in their peripheral blood, suggesting that Group I-B only labeled non-HSC progenitors which could give rise to the first wave of T cells but not HSCs, and Group II-B represented a failure to label cells (Figure 4A,C and D, Figure 4\u2014source data 1). Interestingly, only in Group I-A and Group II-A, but not in Group I-B and Group II-B, were significant GFP+ cells found in the skin (Figure 4E and F, Figure 4\u2014source data 1). Although we do not have LC antibodies to specifically distinguish LCs from other GFP+ leukocytes, a significant portion of GFP+ cells showed a ramified LC-like morphology (Figure 4F), suggesting that LCs were labeled in Group I-A and Group II-A. We then estimated the labeling efficiency by counting the GFP contribution in all leukocytes labeled by the anti-Lcp1 antibody (Figure 4F). We found 18\u201319% GFP+ leukocytes in Group I-A and Group II-A compared with almost no GFP+ leukocytes in Group I-B and Group II-B and the non-heat-shocked control groups (Figure 4E and F, Figure 4\u2014source data 1). Taken together, our results suggested that adult LCs associated with HSCs but not non-HSC T cell progenitors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic view of the experimental design for laser labeling of Tg(hsp70:mCherry-T2a-CreERT2;coro1a:loxP-DsRedx-loxP-GFP) embryos. A single IR laser hit was performed at Position 2 of VDA at about 24 hpf. After 4-OHT treatment, the heat-shocked embryos were raised to 5 dpf and the embryos were then separated into two groups according the GFP contribution to thymocytes. Group I embryos contain abundant GFP+ thymocytes, whereas Group II embryos hardly have GFP+ thymocytes. These two groups of embryos were raised to adult (over 3 months) and were subdivided into Group I-A, I-B, II-A and II-B according to the GFP contribution in circulation. (B) Confocal images show that Group I embryos, but not Group II embryos, contain abundant GFP+ thymocytes. (C) Flow cytometry shows that the circulation of Group I-A and II-A, but not I-B and II-B contain abundant GFP+ cells. (D) Quantification of the contribution of GFP+ cells in all fluorescent positive leukocytes in the circulation of Group I-A, I-B, II-A, II-B, and non-heat-shocked control group (n\u00a0=\u00a06 for each group). Error bars represent mean SEM. ***p<0.001. (E) Quantification of the contribution of GFP+ cells in all Lcp1 positive leukocytes in the skin of adult Group I-A, I-B, II-A, II-B, and non-heat-shocked control group (n\u00a0=\u00a05 for each group). Error bars represent mean SEM. ***p<0.001. (F) Confocal images show that GFP+ cells are mainly found on the skin of Group I-A and II-A, but not I-B and II-B. a significant portion of GFP+ cells showed ramified LC-like morphology, suggesting that they are LCs presumably.\n\n### Adult tissue-resident macrophages in the liver, heart, gut, and brain also correlate with HSCs in lineage tracing\n\nThe HSC-associated origin of adult LCs prompted us to trace the origins of other tissue-resident macrophages in zebrafish. We also investigated whether other tissue-resident macrophages derived from RBI, PBI, or VDA. Similar to LCs and previously reported microglia (Xu et al., 2015), the primary adult tissue-resident macrophages in liver, gut, and heart were also derived from VDA, but not from RBI or PBI (Figure 5\u2014figure supplement 1A\u2013D, Figure 5\u2014figure supplement 1\u2014source data 1). To further differentiate whether these resident macrophages were generated by HSCs or not, we examined the contribution of GFP+ macrophages in single-point VDA-labeled HSC and non-HSC groups (Figure 3). The results showed that GFP+ macrophages in the liver, gut, heart and even brain were primarily found in the HSC group but not the non-HSC group (Figure 5\u2014figure supplement 1E, Figure 5\u2014figure supplement 1\u2014source data 1), suggesting that tissue-resident macrophages in zebrafish spatially correlated with HSCs. To further test whether tissue-resident macrophages were derived from an HSC origin, Group I-A, I-B, II-A and II-B Tg(hsp70:mCherry-T2a-CreERT2;coro1a:loxP-DsRedx-loxP-GFP) fish were assayed. Similar to the results of LCs, only fish labeled with HSCs (Group I-A and Group II-A) contained significant number of GFP+ cells in brain, liver, heart, and gut (Figure 5, Figure 5\u2014source data 1), suggesting that adult resident macrophages in brain, liver, heart, and gut were associated with HSCs in zebrafish. Interestingly, most GFP+ cells were Lcp1+, with the exception of gut GFP+ cells, which only partially overlapped with Lcp1 signals, suggesting that Lcp1 and coro1a marked different sub-populations of leukocytes in the gut. The identity of either Lcp1 or coro1a positive leukocytes warrants further study.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D) Confocal images show that GFP+ cells are found in the brain (A), liver (B), heart (C) and gut (D) of Group I-A and II-A, but not I-B and II-B. Most GFP+ cells are Lcp1+ with the exception of gut GFP+ cells which only partially overlap with Lcp1 signals. (E\u2013H) Quantification of the contribution of GFP+ cells in all Lcp1 positive leukocytes in the brain (E), liver (F), heart (G), and gut (H) of adult Group I-A, I-B, II-A, II-B, and non-heat-shocked control group (n = 4 for each group of brain and liver; n = 3 for each group of heart and gut). Error bars represent mean SEM. ***p<0.001; **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Anti-GFP staining indicates that GFP+ resident macrophages are mainly detected in the VDA-labelled fish, but not the RBI- and PBI-labelled fish in adult liver. (B) Anti-GFP staining indicates that GFP+ resident macrophages are mainly detected in the VDA-labelled fish, but not the RBI- and PBI-labelled fish in adult gut. (C) Anti-GFP staining indicates that GFP+ resident macrophages are mainly detected in the VDA-labelled fish, but not the RBI- and PBI-labelled fish in the adult heart. (D) Quantification of the percentage of GFP+ resident macrophages derived from the RBI, VDA, and PBI in adult liver, gut, and heart. n\u00a0=\u00a05 for each sample analyzed. Error bars represent mean SEM. ***p<0.001. (E) Quantification of the relative contribution of GFP+ cells in the adult liver, gut and heart of HSC (n\u00a0=\u00a04) and non-HSC (n\u00a0=\u00a03) groups. Error bars represent mean SEM. *p<0.05.\n\n### Adult tissue-resident macrophages are largely associated with HSCs during transplantation\n\nTo further support the hypothesis that a substantial portion of adult tissue-resident macrophages were derived from HSCs, we performed cell transplantation experiments, in which hematopoietic cells isolated from the adult kidney of Tg(mpeg1:loxP-DsRedx-loxP-GFP) transgenic fish were transplanted into 2 dpf runx1W84X;Tg(coro1a:eGFP) transgenic mutant embryos that were more appropriate to accept the donor cells because of the impairment of VDA-born hematopoiesis (Figure 6A) (Jin et al., 2009; Sood et al., 2010). The Tg(mpeg1:loxP-DsRedx-loxP-GFP) and Tg(coro1a:eGFP) transgenic lines allowed us to distinguish donor-derived mpeg1-DsRedx+ cells (predominantly macrophages) from host-derived coro1a-GFP+ cells (leukocytes and their progenitors) (Ellett et al., 2011; Li et al., 2012). The transplanted recipients were then raised to adulthood (3\u20134 months old), and the contribution of donor-derived cells was determined by calculating the relative contribution of DsRedx+ in total fluorescent (DsRedx+ plus GFP+) cells in the skin, liver, gut, heart, brain, and circulation. Among the 31 surviving recipients, seven did not contain detectable donor-derived DsRedx+ cells (data not shown), suggesting a failure of long-term reconstitution of donor cells in these recipients. The survival of these seven recipients was likely due to the recovery of their own hematopoiesis, as shown previously (Sood et al., 2010). The remaining 24 recipients containing donor-derived Dsredx+ cells were classified into group I and group II. Group I recipients (eight fish) were those containing abundant donor-derived DsRedx+ cells in their circulation. In this group, a large number of DsRedx+ donor cells were present in the brain (microglia, 93%), skin (LCs, 87%), liver (94%), gut (75%), heart (92%), and circulation (84%) (Figure 6B and C, Figure 6\u2014source data 1), showing that these Group I recipients were well reconstituted by donor-derived hematopoietic cells, including HSCs. By contrast, Group II recipients (16 fish) contained very few DsRedx+ donor cells (~2%) in their circulation (Figure 6D, Figure 6\u2014source data 1), indicating that these recipients were reconstituted by donor-derived progenitor cells but not HSCs. This group of recipients contained only small numbers of donor-derived DsRedx+ LCs in the skin (7%), liver (16%), gut (5%), and heart (12%). One exception was the brain, which contained\u00a0~50% of donor-derived DsRedx+ microglia (Figure 6B and D, Figure 6\u2014source data 1). However, based on our previous spatial restricted cell tracing analysis, adult microglia also likely arise from the VDA-born HSCs and the HSC-independency we observed in the transplantation assay is likely due to the self-maintenance of microglia (Ajami et al., 2007; Huang et al., 2018), thus myeloid progenitors from donor kidney marrows are sufficient to generate long lasting microglia. Taken together, our data suggested that adult tissue-resident macrophages are largely associated with HSCs during transplantation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/36131/elife-36131-fig6-v2.jpg)\n\n**Figure 6.:** (A) A schematic view of the cell transplantation experiment. Hematopoietic cells collected from the whole kidney marrow of adult Tg(mpeg1:loxP-DsRedx-loxP-eGFP) fish are transplanted into the circulation of 2 dpf Tg(coro1a:eGFP);runx1W84X embryos. The recipients are raised to adulthood for analysis. (B) Donor Dsredx+ cells were predominant in the brain, skin, liver, gut, and heart of Group I fish. In Group II fish, donor cells were only significant in the brain but not in other tissues. (C) Quantification of the relative contribution of donor DsRedx+ cells versus total fluorescent cells (Dsredx+ and GFP+) in brain, skin, liver, gut, heart, and circulation in Group I fish (n = 8 for brain, skin, liver, gut, and circulation; n = 7 for heart). Error bars represent mean SEM. Donor DsRedx+ cells were predominant in all tissues and in circulation of Group I fish. (D) Quantification of the relative contribution of donor cells (Dsredx+) versus total fluorescent cells (Dsredx+ and GFP+) in brain, skin, liver, gut, heart, and circulation in Group II fish (n = 16 for brain, skin and circulation; n = 15 for liver and gut; n = 14 for heart). Error bars represent mean SEM. ***p<0.001. In Group II fish, although donor cells were significant in the brain, they were drastically decreased in other tissues.\n\n## Discussion\n\nIn this study, by utilizing a temporospatially resolved cell fate-mapping method, we documented that LCs and other tissue-resident macrophages in the adult zebrafish were largely associated with HSCs.\n\nAlthough we cannot completely rule out the possibility that LCs and other tissue-resident macrophages were derived from non-HSC progenitors, which must be linked with HSCs so closely that they cannot be distinguished by our spatial-restricted labeling, we suggested that a large portion of the adult LCs and other tissue-resident macrophages in the zebrafish were derived from an HSC origin, This conclusion differed from previous reports in mice suggesting that adult LCs and other tissue-resident macrophages arise from EMPs born in the YS (Ginhoux and Guilliams, 2016; Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Kierdorf et al., 2015; Schulz et al., 2012). Also, our conclusion was different from another report, in which microglia was suggested to originate from non-HSC progenitors (Sheng et al., 2015). One possible explanation for the different conclusions could be the species differences. Zebrafish might differ from mice in terms of the origin of tissue-resident macrophages. Another explanation was that this discrepancy was due to the different fate-mapping methods used in these studies. Unlike the high temporospatial resolved fate-mapping used in the current study, the fate mapping studies conducted in mice relied on the promoter-controlled CreER-loxP tracking system, in which the labeling resolution was determined by the specificity of the promoter (Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Schulz et al., 2012; Sheng et al., 2015). Thus, confounding conclusions could be obtained with the different promoters as drivers. In fact, by utilizing the c-Kit-MER-Cre-MER-loxp reporter system, Sheng et al., showed that most LCs and some other tissue-resident macrophages in adult mice arose from HSCs, which differed from the EMP origin obtained from previous fate-mapping studies using the Runx1-MER-Cre-MER-loxp and Tier2-MER-Cre-MER-loxp reporter systems (Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Schulz et al., 2012; Sheng et al., 2015). Interestingly, evidence supporting an HSC origin of LCs in mice can be found in reports supporting an EMP origin of LCs. For instance, a substantial number (30%) of LCs were recorded in 1-year-old Flt3CreRosa26YFP reporter mice (Gomez Perdiguero et al., 2015), in which HSCs and HSCs-derived hematopoietic progenitors were labeled upon Cre-mediated excision (Christensen and Weissman, 2001; Gomez Perdiguero et al., 2015). Therefore, it was conceivable that a substantial portion of adult LCs and other tissue-resident macrophages in mice were derived from conventional HSCs born in the AGM. Further in-depth studies in mice with high temporospatially resolved fate mapping will be necessary to clarify this issue.\n\nOur study also reinforced the hypothesis that the density of HSCs gradually decreased from the anterior to the posterior of the VDA. An important question is which molecular determinants dictate the fate decision of HSCs versus non-HSCs in the VDA. We speculated that the Wnt-Notch signaling pathways and inflammatory signaling cascades, which are involved in HSC specification in the VDA (Clements et al., 2011; Esp\u00edn-Palaz\u00f3n et al., 2014; He et al., 2015; Li et al., 2014), were likely to have critical roles in HSC fate determination. Several previous studies in mice have shown that the aorta endothelium isolated from different time windows of mouse embryos appears to manifest, at least under in vitro culture conditions, distinct differentiation potentials, including non-HSC features (Bertrand et al., 2005; North et al., 2002; Ody et al., 1999; Taoudi and Medvinsky, 2007; Yoshimoto et al., 2011). These studies suggested that, perhaps similar to zebrafish, this non-HSC population of cells also exists in the mammalian aorta endothelium. All these issues warrant further studies, and the zebrafish system provides an excellent platform to address these questions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background (Danio rerio)</td>\n      <td>Tg(mpeg1:loxP-DsRedx-loxP-GFP)</td>\n      <td>doi: 10.1016/j.devcel.2016.06.018.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Danio rerio)</td>\n      <td>Tg(coro1a:loxP-DsRedx-loxP-GFP)</td>\n      <td>doi: 10.1016/j.devcel.2015.08.018.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Danio rerio)</td>\n      <td>runx1W84X mutant</td>\n      <td>doi: 10.1242/dev.029637.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Danio rerio)</td>\n      <td>cmybhkz3 mutant</td>\n      <td>doi: 10.1182/blood-2011-03-342501.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Anti-GFP</td>\n      <td>Abcam</td>\n      <td>ab6658</td>\n      <td>1:400 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>Anti-DsRedx</td>\n      <td>Clontech</td>\n      <td>632496</td>\n      <td>1:100 Overnight 4\u00b0C</td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>anti-Lcp1</td>\n      <td>doi: 10.1242/dev.029637.</td>\n      <td></td>\n      <td>1:400 Overnight 4\u00b0C</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish\n\nZebrafish were maintained according to standard protocol (Westerfield, 1995). AB wild-type, cmybhkz3 mutant (Zhang et al., 2011), runx1W84X mutant (Jin et al., 2009; Sood et al., 2010), Tg(coro1a: loxP-DsRedx-loxP-GFP) (Xu et al., 2015), Tg(hsp70:mCherry-T2a-CreERT2)#12(Hans et al., 2011), Tg(krtt1c19e:EGFP) (Lee et al., 2014), and Tg(mpeg1:loxP-DsRedx-loxP-GFP) lines were used in this study.\n\n### Cell labelling with the IR-LEGO-CreER-loxP system\n\nThe experiment was performed according to the previous report (Xu et al., 2015). In brief, the RBI, VDA or PBI region of fish embryos was heat-shocked with IR laser at 65\u201380 mw for two minutes per hit. The heat-shocked embryos were then treated with 4-OHT (10 \u03bcM, Sigma) for 17\u201322 hr. After washing with egg water, the 4-OHT-treated embryos were raised and analyzed at the desired stage.\n\n### Generation of transgenic lines\n\nThe 4.3 kb mpeg1 promoter, loxP sequence, coding regions of DsRedx or GFP were cloned into the pTol2 vector to generate the mpeg1:loxP-DsRedx-loxP-GFP construct. The resulting construct was injected, together with the mRNA of transposase, into 1 cell stage fertilized embryos (Kawakami et al., 2000). The embryos were raised to adult and the transgenic founder was identified by direct observation under a fluorescent microscope.\n\n### Fish dissection, antibody staining, and imaging\n\nThe experiment was performed as previously described (Xu et al., 2015). In brief, fishes were fixed in 4% PFA at 4\u00b0C for 1\u20132 days. After washing, the fish were either directly subjected to whole-mount antibody staining (for 4 dpf fish) or dissection (for adult fish). The adult skin and other tissues were applied to whole-mount antibody staining as previously described (Barresi et al., 2000; Jin et al., 2006). The primary antibodies included anti-GFP antibody (ab6658, Abcam), anti-DsRedx antibody (632496, Clontech), and anti-Lcp1 antibody (Jin et al., 2009). The secondary antibodies were Alexa 488-anti-goat antibody (A11055 Invitrogen) and Alexa 555-anti-rabbit antibody (A31572 Invitrogen). Images were taken under Leica SP8, Zeiss LSM710, or Zeiss LSM880 confocal microscope. The quantification was performed manually.\n\n### Transplantation of whole kidney marrow (KM) cells\n\nThe transplantation experiment was performed as described (Traver et al., 2003). In brief, the kidneys of adult Tg(mpeg1:loxP-DsRedx-loxP-GFP) fish were dissected and hematopoietic cells were dissociated by vigorous aspiration. After washing with PBS containing 2% fetal bovine serum (FBS), the KM cells were suspended in PBS containing 2% FBS, DNaseI and heparin. About several hundred cells were transplanted into the circulation of each 2 dpf runx1W84X;Tg(coro1a:eGFP) embryos. The recipients were raised to adult and the relative contribution of donor cells were determined by DsRedx+ versus total fluorescent cells.\n\n### Flow cytometry\n\nFlow cytometry was performed as described (Traver et al., 2003). In brief, cells in the circulation were collected in PBS with 2% FBS from the gill of adult fish by aspiration with a pipette. The collected cells were analyzed in BD FACSAria IIIu flow cytometer or Beckman Coulter CytoFLEX.\n\n### Statistical analysis\n\nThe F-test of two-sample for variances and t-test of two-sample assuming equal/unequal variances were tested by the Data Analysis tool in the Excel software (Microsoft Corporation). Two-tailed p-values are used for all t-tests. One-Way ANOVA and Post Hoc multiple comparisons: LSD (least significant difference) were performed by IBM SPSS version 20.0.\n",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6d6d82aa-c728-4aff-acff-66d703678391",
+      "submission_id": "6d7a8042-0115-4f12-9697-6c0c68f6c142",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leonard I Zon, Boston Children's Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36131.022](https://doi.org/10.7554/eLife.36131.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Adult zebrafish Langerhans cells arise from hematopoietic stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leonard I Zon as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Sean Morrison as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis a very interesting paper on the origin of Langerhan's cells using the zebrafish as a model. The authors have used fate mapping technology, and have seen that there are distinct sources of Langerhans cells based on developmental timing. This helps provide a broad understanding of these cells.\n\nEssential revisions:\n\nThe authors should pay particular attention to the questions raised by reviewers #1 and #2 about the origin of the cell from stem cells. The authors should consider marrow transplants to test whether adult HSCs can give rise to these cells. The second reviewer offers an opportunity to do a time course to help with the VDA as a potential source of the cells. These approaches will help make more definitive statements about the stem cell origin. Otherwise, the authors may have to back off of some of the claims about stem cells. Rephrasing of these points, and mentioning the caveats, was suggested by all the reviewers.\n\nReviewer #1:\n\nThe article entitled \"Adult zebrafish Langerhans cells arise from hematopoietic stem cells\" by He et al., identify distinct origins for embryonic and adult Langerhans cell (LC) populations. Using laser-guided Cre-Lox lineage tracing to induce GFP labeling in mpeg1+ populations from distinct hematopoietic sites, the authors show that at 4 days post fertilization (dpf), morphologically identifiable LCs are derived from cells labeled in the rostral blood island (labeled at 14-16 hours), whereas at 4 months post fertilization, LCs are mostly derived from cells labeled in the ventral wall of the dorsal aorta (VDA, labeled at 28 hours). The authors then go on to show that in fish mutant for Runx1 or cMyb, genes important for HSPC development, there is a concomitant loss of the numbers of GFP+ LCs. Through random spot laser-labeling along the VDA, the authors show that there is a correlation of higher rates of LC labeling with instances of putative HSC labeling \u2013 as determined by retained GFP+ label in circulating blood cells in adult fish. Moreover, the authors show that the anterior region of the VDA appears to more frequently give rise to LCs, which agrees with their previous work suggesting that this region may preferentially give rise to HSCs. Next, the authors repeated their spot labeling in the VDA using a pan-leukocyte lineage trace and follow labeled cells to the thymus at 5 dpf. From here, the authors split animals into two groups (label in thymus vs not) and grow them to adulthood and assessed GFP+ contribution to peripheral blood. Those with peripheral blood labeling were considered \"HSC labeled\", and these animals had significantly higher numbers of GFP+ LCs than non-HSC labeled, regardless of if there was GFP signal detected in the thymus at 5dpf or not. The authors interpret this correlation with HSC labeling to mean that adult LCs are derived from HSCs, while labeling of thymus-colonizing progenitor cells does not. Finally, the authors repeat their initial labeling of distinct hematopoietic regions of the embryo and identify GFP+ macrophages in liver, heart, gut, and brain only after labeling was induced in the VDA. This study contributes to the ongoing debate on origins of tissue resident macrophage populations in development. The manuscript is logically organized, and if the authors address the comments below, then the work would be suitable for publication in eLife.\n\n1) The authors do not directly show that HSCs give rise to all adult LCs. Rather, they show a correlation between HSC labeling and higher rates of LC labeling. To strengthen the relationship between HSCs and LCs the authors should pursue experiments to show multilineage contribution and LC development from single cells. Adding a marrow transplant would be useful. This would resolve the issue of potentially labeling LC-progenitors and assuming an HSC origin in their existing work. The authors should comment on non-GFP+ LCs in all labeling experiments \u2013 notably in Figure 1D \u2013 what are the DsRedx+ GFP- LCs? Given that the entire VDA is labeled, these must either be LCs derived from a non-VDA source, or this may reflect the limits to laser-induced Cre-Lox labeling. If so, the authors should comment on the relative efficiency of their labeling system. Without directly showing contributions from HSCs specifically, the authors should change the title of their paper that is less definitive in an HSC-origin for LCs \u2013 for example \"Adult zebrafish Langerhans Cells arise from cells in the ventral dorsal aorta.\"\n\n2) The use of Runx1 and cMyb mutants would strengthen the argument for HSC origin of LCs but only if the effect on LC numbers can be attributed to changes in HSCs. Runx1 and cMyb are expressed in hematopoietic progenitors as well as stem cells. Moreover, these genes are more widely expressed than just the hematopoietic system \u2013 any effect identified in these mutants may not necessarily be due to HSPC dysfunction. The authors should use another method to quantify changes in LC number in these mutants (rather than only cells/mm2) as reduced numbers of LCs derived from the VDA in these mutants may not necessarily be due to reduced numbers of HSPCs and could, for example, be due to migratory defect. To show that the LC phenotype in the Runx1 and cMyb mutants is because of defects in HSPCs specifically, the authors should perform rescue experiments to restore wildtype Runx1 and cMyb expression in HSPCs.\n\nReviewer #2:\n\nThe study by He and colleagues, entitled \"Adult zebrafish Langerhans cells arise from hematopoietic stem cells\", used lineage tracing assays in zebrafish to investigate the developmental origins of Langerhans cells in the skin. The authors use a heat shock promoter to induce expression of a reporter construct in a spatio-temporally restricted manner, which they propose has less bias than prior studies using lineage-associated promoter-driven constructs. Using this method the authors find that the majority of labeled cells in the adult appear to derive from populations within the dorsal aorta, rather than the earlier sites of hematopoiesis. Through correlational analyses and use of HSC knockout lines, the authors propose that the origin of the Langerhans cells, as well as other tissue resident macrophage populations present in the adult, are the embryonic HSCs. This data seems in conflict with many prior studies in the mouse. While the analysis is compelling, some caveats exist that should be addressed prior to publication.\n\n1) One major concern regarding the study is the time windows that the authors use for labeling their populations of interest. While the labeling of the rostral blood island (RBI) and ventral dorsal aorta (VDA) occur during the window when stem and/or progenitor cells are known to actively be produced, the posterior blood island is labeled much earlier than the authors state that EMPs are documented to arise. While the authors indicate that this was done prior to the onset of the heart beat to avoid potential contamination from circulating cells derived from other locations, it unfortunately makes it difficult to know if they actually labeled anything that even had the potential to make the Langerhans population (precursors to the progenitors not yet specified or potentially not even present in the tissue yet). The fact that even the larval population of skin macrophages wasn't labeled, makes this quite suspect. At this point is the primary distinction they are hoping to make with this paper (EMP vs. HSC origin), it would be very important to know what the authors would find if the labeling occurred at a later timepoint, closer to the window of EMP production as performed in the other hematopoietic sites.\n\n2) While certainly not the authors fault, a related concern is the fact that a full characterization of the sites capable of making an EMP-like cell is missing in zebrafish. While these cells are certainly produced in the PBI, to date there have not been careful analyses indicating that cells with similar erythroid/myeloid bias cannot arise in the VDA. Recent work in the mouse indicates a number of differentiation-restricted progenitors can arise in the dorsal aorta. Given that the PBI, VDA and later even the CHT are all part of the same vascular bed in zebrafish, and not as spatially restricted as the YS vs. embryo in the mouse, it is difficult to say with certainty in the absence of robust functional studies that no EMPs are present. The authors attempt to partially address this by labeling different sections of the VDA, but given that \u00be of the region appeared to have HSC-potential as indicated by the presence of labeled circulating cells in the adult, it is hard to eliminate this concern. It may be better to rephrase the title and text to emphasize that the Langerhans cells arise from the ventral dorsal aorta without overstating the proof of HSC origin.\n\nReviewer #3:\n\nOverall, this is a straightforward and convincing study linking the origins of Langerhans Cells with the first HSCs born in the embryo. The methods used in this paper are superior to those used in murine studies, as they are more direct since they feature spatial marking in addition to labeling by lineage-specific Cre recombination. I have no major concerns with the data presented and conclusions reached.\n",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf060cd1-a4bf-4b7d-a838-86494f5d8d69",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C1",
+      "claim": "Most adult Langerhans cells (LCs) in zebrafish originated from the ventral wall of the dorsal aorta (VDA).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a laser-mediated temporal-spatial resolved cell labeling method, we demonstrated that most adult LCs originated from the ventral wall of the dorsal aorta (VDA), an equivalent to the mouse aorta, gonads, and mesonephros (AGM), where both hematopoietic stem cells (HSCs) and non-HSC progenitors are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from IR-LEGO-CreER-loxP fate mapping experiments showing ~80% of adult LCs were GFP+ after VDA labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "3f9761b1-5310-4566-89b5-40305060cd06",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C2",
+      "claim": "The VDA in zebrafish is equivalent to the mouse aorta, gonads, and mesonephros (AGM).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a laser-mediated temporal-spatial resolved cell labeling method, we demonstrated that most adult LCs originated from the ventral wall of the dorsal aorta (VDA), an equivalent to the mouse aorta, gonads, and mesonephros (AGM), where both hematopoietic stem cells (HSCs) and non-HSC progenitors are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about the homology between zebrafish VDA and mammalian AGM.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "7e1ff663-6f79-4c76-8559-afb04e0b5c37",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C3",
+      "claim": "Both hematopoietic stem cells (HSCs) and non-HSC progenitors are generated in the VDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a laser-mediated temporal-spatial resolved cell labeling method, we demonstrated that most adult LCs originated from the ventral wall of the dorsal aorta (VDA), an equivalent to the mouse aorta, gonads, and mesonephros (AGM), where both hematopoietic stem cells (HSCs) and non-HSC progenitors are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about hematopoiesis in the VDA/AGM region.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "874fff83-e543-468e-a1de-cddfec26c12c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C4",
+      "claim": "The appearance of LCs in adult zebrafish was correlated with the development of HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further fine-fate mapping analysis revealed that the appearance of LCs in adult zebrafish was correlated with the development of HSCs, but not T cell progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from single-spot VDA labeling and temporal analysis showing LCs appear in HSC-labeled groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "2bb5eac0-c192-4b66-a0ac-5f66b437a604",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C5",
+      "claim": "The appearance of LCs in adult zebrafish was not correlated with T cell progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Further fine-fate mapping analysis revealed that the appearance of LCs in adult zebrafish was correlated with the development of HSCs, but not T cell progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that Group I-B fish (labeled with non-HSC T cell progenitors) did not contain significant GFP+ LCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "8d960c50-7399-497c-987e-64981a7ab450",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C6",
+      "claim": "The appearance of tissue-resident macrophages in the brain, liver, heart, and gut of adult zebrafish was correlated with HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that the appearance of tissue-resident macrophages in the brain, liver, heart, and gut of adult zebrafish was also correlated with HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from fate mapping and transplantation experiments showing tissue-resident macrophages in these organs are found predominantly in HSC-labeled groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "e21851ca-22cd-4bb5-ad21-d3deaf56fdfb",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C7",
+      "claim": "The results of this study challenged the EMP-origin theory for LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results of our study challenged the EMP-origin theory for LCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing HSC correlation and limited PBI (EMP source) contribution to adult LCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6894617c-f098-4a76-95d4-e4d39c092233",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C8",
+      "claim": "Langerhans cells are resident macrophages in skin epidermis with immune-stimulatory capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "Langerhans cells (LCs) are resident macrophages in skin epidermis, where they have immune-stimulatory capacities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about LC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "5ada786f-7795-4d2e-88ac-d5e9c21658b1",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C9",
+      "claim": "Upon activation, LCs migrate from the epidermis to the skin-draining lymph nodes to present antigens to T cells under both steady and inflammatory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under both steady and inflammatory conditions, upon activation, LCs migrate from the epidermis to the skin-draining lymph nodes to present antigens to T cells, resulting in the activation of acquired immunity (Hemmi et al., 2001; Merad et al., 2008; Romani et al., 2010; Stoitzner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "7b19be18-948e-44fb-9e8a-9a1261b71b79",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C10",
+      "claim": "LC migration to lymph nodes results in the activation of acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Under both steady and inflammatory conditions, upon activation, LCs migrate from the epidermis to the skin-draining lymph nodes to present antigens to T cells, resulting in the activation of acquired immunity (Hemmi et al., 2001; Merad et al., 2008; Romani et al., 2010; Stoitzner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "5bd9879a-1aef-43a2-b5d8-7e01556f8d80",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C11",
+      "claim": "Several studies have suggested that LCs confer immune tolerance of the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several studies have suggested that LCs also confer immune tolerance of the skin (Bobr et al., 2010; Chopin and Nutt, 2015; Kaplan et al., 2005; Merad et al., 2008; Romani et al., 2012; Shklovskaya et al., 2011; van der Aar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "a44cc389-c7f3-47a7-8323-783619559287",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C12",
+      "claim": "LCs dampen the immune response under steady-state conditions but activate the response upon challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological significance of the opposing roles of LCs remains unclear, but it is thought that LCs dampen the immune response under steady-state conditions, but activate the response upon challenge (Seneschal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents a hypothesis in the field.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "134b9f15-b306-44b8-9d0e-c7460c3dffae",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C13",
+      "claim": "LCs were identified over 100 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Although LCs were identified over 100 years ago, their origins have been debated ever since their discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established historical knowledge about LC discovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "70b9351b-5063-418e-9837-5d198e76c282",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C14",
+      "claim": "The origins of LCs have been debated since their discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Although LCs were identified over 100 years ago, their origins have been debated ever since their discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ongoing scientific debate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "19c73b35-2649-4f74-96f0-48366c1e4365",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C15",
+      "claim": "LCs were initially considered to be nerve cells in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, LCs were considered to be nerve cells in the skin (Langerhans, 1868) and subsequently were thought to have a melanocyte or keratinocyte origin (Birbeck et al., 1961; Reams and Tompkins, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to historical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "10f6c00d-47f4-4055-bc49-7ffd0ef520c6",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C16",
+      "claim": "LCs were subsequently thought to have a melanocyte or keratinocyte origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, LCs were considered to be nerve cells in the skin (Langerhans, 1868) and subsequently were thought to have a melanocyte or keratinocyte origin (Birbeck et al., 1961; Reams and Tompkins, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "54a0c7a8-45f5-47b9-b2c9-9e463db0ec28",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C17",
+      "claim": "The hematopoietic origin of LCs was revealed in 1979.",
+      "claim_type": "EXPLICIT",
+      "source": "The hematopoietic origin of LCs was not revealed until 1979, when researchers observed that donor-derived LCs were present in the skin of lethally-irradiated mice transplanted with allogeneic or semi-allogeneic hematopoietic precursors (Frelinger et al., 1979; Katz et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "eb366a7a-53bf-468b-8461-00318e6640e4",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C18",
+      "claim": "Donor-derived LCs were present in the skin of lethally-irradiated mice transplanted with allogeneic or semi-allogeneic hematopoietic precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "The hematopoietic origin of LCs was not revealed until 1979, when researchers observed that donor-derived LCs were present in the skin of lethally-irradiated mice transplanted with allogeneic or semi-allogeneic hematopoietic precursors (Frelinger et al., 1979; Katz et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "34696093-c7c2-4c51-8c56-9e0be3526fd8",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C19",
+      "claim": "The observation of donor-derived LCs in transplanted mice led to the hypothesis that LCs were replenished continually by circulating monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the hypothesis that LCs were replenished continually by circulating monocytes (Romani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the transplantation data, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "5fbd95d5-8edc-4e9e-a57d-e657d5a080f7",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C20",
+      "claim": "Most LCs in lethally-irradiated mice reconstituted with congenic hematopoietic precursors were of host origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clue came from transplantation studies by Merad et al., who reported that most LCs in lethally-irradiated mice reconstituted with either congenic hematopoietic precursors or T cell-free allogenic precursors were of a host origin (Merad et al., 2004; Merad et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Merad et al. studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "dc95b07e-a110-4e18-a67e-8475e6d4c5fc",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C21",
+      "claim": "Most LCs in lethally-irradiated mice reconstituted with T cell-free allogenic precursors were of host origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clue came from transplantation studies by Merad et al., who reported that most LCs in lethally-irradiated mice reconstituted with either congenic hematopoietic precursors or T cell-free allogenic precursors were of a host origin (Merad et al., 2004; Merad et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Merad et al. studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "a8c4cdb4-8456-4dd9-917f-18c32ca55603",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C22",
+      "claim": "LCs turn over slowly in steady-state.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies further documented that LCs turn over slowly in steady-state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations in the following sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "a2b9238f-0a05-49dd-b558-a8da7062fcf9",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C23",
+      "claim": "LCs are replenished by a small number of proliferative LC precursors residing in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, LCs are replenished by a small number of proliferative LC precursors residing in the skin, although circulating precursors do contribute to LCs when a severe injury occurs (Chorro et al., 2009; Collin et al., 2006; Ghigo et al., 2013; Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Hoeffel et al., 2012; Kanitakis et al., 2004; Krueger et al., 1983; Schulz et al., 2012; Vishwanath et al., 2006; Yona et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6a491942-85c0-43bb-9734-673ecdcafeb7",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C24",
+      "claim": "Circulating precursors contribute to LCs when a severe injury occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, LCs are replenished by a small number of proliferative LC precursors residing in the skin, although circulating precursors do contribute to LCs when a severe injury occurs (Chorro et al., 2009; Collin et al., 2006; Ghigo et al., 2013; Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Hoeffel et al., 2012; Kanitakis et al., 2004; Krueger et al., 1983; Schulz et al., 2012; Vishwanath et al., 2006; Yona et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "746c8066-17cb-44e8-b989-5b143297ced4",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C25",
+      "claim": "The origin and nature of the proliferative LC precursors remain largely undefined.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these studies, the origin and nature of the proliferative LC precursors remain largely undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "e46c13c4-ce7c-4153-8167-05d77453501e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C26",
+      "claim": "The self-renewal ability of adult LCs led to the hypothesis that LCs are generated from sources independent of hematopoietic stem cells (HSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The self-renewal ability of adult LCs led to the hypothesis that LCs are generated from sources independent of hematopoietic stem cells (HSCs), which are born in the aorta, gonads, and mesonephros (AGM) in mammals (Orkin and Zon, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the self-renewal observation, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "2fccfeb8-bd03-4420-bd1a-9e2a589a0a6c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C27",
+      "claim": "HSCs are born in the aorta, gonads, and mesonephros (AGM) in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The self-renewal ability of adult LCs led to the hypothesis that LCs are generated from sources independent of hematopoietic stem cells (HSCs), which are born in the aorta, gonads, and mesonephros (AGM) in mammals (Orkin and Zon, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "1cbe2cca-1333-410b-81d5-30d3380fd021",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C28",
+      "claim": "Hoeffel et al. showed that adult LCs in mice had dual origins: YS primitive monocytes and fetal liver monocytes using Runx1-MER-Cre-MER/Rosa26-YFP reporter mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This was supported by a recent fate-mapping study by Hoeffel et al., who utilized Runx1-MER-Cre-MER/Rosa26-YFP reporter mice and showed that adult LCs in mice had dual origins: YS primitive monocytes and fetal liver monocytes (Hoeffel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hoeffel et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "3beedc1f-aa89-4a2b-ac0a-a9f39df5ebb9",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C29",
+      "claim": "Adult LCs in mice were predominantly generated from YS-derived erythro-myeloid precursors (EMPs) according to fate-mapping studies with MER-Cre-MER/Rosa26 reporter systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Further fate-mapping studies with similar MER-Cre-MER/Rosa26 reporter systems suggested that adult LCs in mice were predominantly generated from YS-derived erythro-myeloid precursors (EMPs) (Gomez Perdiguero et al., 2015; Hoeffel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous fate-mapping studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d891f504-852e-4b8a-9b4c-6b660e2486b1",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C30",
+      "claim": "The EMP-origin theory was challenged by Sheng et al., who found that most resident macrophages, including LCs, in adult mice were predominantly derived from HSCs using the c-Kit-MER-Cre-MER/Rosa26-YFP reporter system.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, this EMP-origin theory was challenged by a recent study by Sheng et al., who utilized the c-Kit-MER-Cre-MER/Rosa26-YFP reporter system to trace the origin of tissue-resident macrophages and found that most resident macrophages, including LCs, in adult mice were predominantly derived from HSCs but not from EMPs (Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sheng et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "5cad52aa-29e8-4ceb-8822-3b33f1360350",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C31",
+      "claim": "Fate-mapping studies using promoter-controlled CreER-loxP tracking systems cannot provide a definitive answer about the origin of LCs because the exact transcription activity of these promoters in the tissue of interest remains to be further elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite their elegant designs, these fate-mapping studies, relied on promoter-controlled CreER-loxP tracking systems. The exact transcription activity of these promoters in the tissue of interest remains to be further elucidated, so such studies cannot provide a definitive answer about the origin of LCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment and inference about the limitations of previous methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "3f7a03ec-58a3-4ca4-a694-b01e8b1ff322",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C32",
+      "claim": "Conventional lineage-tracing systems cannot selectively label and distinguish cells from different anatomic locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, conventional lineage-tracing systems cannot selectively label and distinguish cells from different anatomic locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of conventional methods based on knowledge of the techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "7f3441c3-2522-4db1-98b4-84372df308fa",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C33",
+      "claim": "A new cell labeling strategy that can provide both temporal and spatial resolution is required to identify the origin of LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These shortcomings have hindered the identification of the origin of LCs, so a new cell labeling strategy that can provide both temporal and spatial resolution is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "31ce0a0a-01c9-4c59-b2ee-bbfe4c1a5001",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C34",
+      "claim": "Zebrafish experience multiple waves of hematopoiesis similar to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to mammals, zebrafish experience multiple waves of hematopoiesis (Jagannathan-Bogdan and Zon, 2013; Jing and Zon, 2011; Stachura and Traver, 2011; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "4c3f2252-00ea-4b19-a5a0-a9e6ce8267a4",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C35",
+      "claim": "The first or embryonic hematopoiesis in zebrafish initiates at ~11 hr post fertilization (hpf) in the posterior lateral mesoderm (PLM) and rostral blood island (RBI).",
+      "claim_type": "EXPLICIT",
+      "source": "The first or embryonic hematopoiesis in the zebrafish initiates at ~11 hr post fertilization (hpf) in the posterior lateral mesoderm (PLM) and rostral blood island (RBI), which are, similar to the mammalian yolk sac (YS), producing embryonic erythroid and myeloid cells respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish hematopoiesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "39040418-97ed-4502-98fa-8215920bd3fc",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C36",
+      "claim": "The PLM and RBI in zebrafish are similar to the mammalian yolk sac (YS), producing embryonic erythroid and myeloid cells respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The first or embryonic hematopoiesis in the zebrafish initiates at ~11 hr post fertilization (hpf) in the posterior lateral mesoderm (PLM) and rostral blood island (RBI), which are, similar to the mammalian yolk sac (YS), producing embryonic erythroid and myeloid cells respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the homology between zebrafish and mammalian hematopoietic sites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "62cb5486-3b9a-4086-b9fa-5da333f4aaa7",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C37",
+      "claim": "The second or definitive wave of hematopoiesis in zebrafish occurs at ~28 hpf in the ventral wall of the dorsal aorta (VDA).",
+      "claim_type": "EXPLICIT",
+      "source": "The second or definitive wave of hematopoiesis occurs at ~28 hpf in the ventral wall of the dorsal aorta (VDA), a tissue equivalent to the mammalian AGM (Orkin and Zon, 2008), and gives rise to HSCs capable of generating all blood cell types during fetal life and adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about zebrafish hematopoiesis supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d5d3f0eb-4fb6-4290-aaf1-3d8c9542355a",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C38",
+      "claim": "The VDA gives rise to HSCs capable of generating all blood cell types during fetal life and adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The second or definitive wave of hematopoiesis occurs at ~28 hpf in the ventral wall of the dorsal aorta (VDA), a tissue equivalent to the mammalian AGM (Orkin and Zon, 2008), and gives rise to HSCs capable of generating all blood cell types during fetal life and adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HSC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "de3b1eec-8032-48a7-bb08-cda701f14e53",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C39",
+      "claim": "A third or intermediate wave of hematopoiesis in zebrafish generates EMPs and initiates autonomously from the posterior blood island (PBI) at around 30 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A third or intermediate wave of hematopoiesis, which generates EMPs, is believed to initiate autonomously from the posterior blood island (PBI) at around 30 hpf and produces erythroid and myeloid cells during both embryonic and fetal development (Bertrand et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "fa073102-0b99-4ea6-832f-f55c0fb7dbcf",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C40",
+      "claim": "The intermediate wave of hematopoiesis produces erythroid and myeloid cells during both embryonic and fetal development.",
+      "claim_type": "EXPLICIT",
+      "source": "A third or intermediate wave of hematopoiesis, which generates EMPs, is believed to initiate autonomously from the posterior blood island (PBI) at around 30 hpf and produces erythroid and myeloid cells during both embryonic and fetal development (Bertrand et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "fc9b8f65-64d6-4fce-9cbf-7da032379ae7",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C41",
+      "claim": "Zebrafish's conserved hematopoietic program, genetic amenability, and imaging feasibility make it an excellent model system for fate-mapping studies of LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, its conserved hematopoietic program, genetic amenability, and imaging feasibility have made zebrafish an excellent model system to use for fate-mapping studies of LCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the characteristics of the zebrafish model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "7a9277f4-41b1-4005-b5f1-8d65e74f46ee",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C42",
+      "claim": "The RBI was the primary source for LCs at early embryonic stages (4 dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing results showed that, although the RBI was the primary source for LCs at early embryonic stages, most (~80% LCs are GFP+) LCs in the adult zebrafish (\u22653 months old) were of a VDA origin and only limited numbers of adult LCs were derived from the RBI and PBI, compared with non-heat-shocked control fish (Figure 1B\u2013D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "df718342-d6ea-4132-94f5-85aa58762338",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C43",
+      "claim": "Approximately 80% of LCs in adult zebrafish (\u22653 months old) were of VDA origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing results showed that, although the RBI was the primary source for LCs at early embryonic stages, most (~80% LCs are GFP+) LCs in the adult zebrafish (\u22653 months old) were of a VDA origin and only limited numbers of adult LCs were derived from the RBI and PBI, compared with non-heat-shocked control fish (Figure 1B\u2013D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "4132374e-29b7-4aad-8802-6047f20072bc",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C44",
+      "claim": "Only limited numbers of adult LCs were derived from the RBI and PBI.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing results showed that, although the RBI was the primary source for LCs at early embryonic stages, most (~80% LCs are GFP+) LCs in the adult zebrafish (\u22653 months old) were of a VDA origin and only limited numbers of adult LCs were derived from the RBI and PBI, compared with non-heat-shocked control fish (Figure 1B\u2013D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6155bb08-731e-4c86-872a-8038a342d50f",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C45",
+      "claim": "The labeling efficiency of VDA-derived HSPCs was approximately 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the tracing result that ~80% of adult LCs were labeled, we hypothesized that our labeling efficiency was also about 80%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "ea963e12-2c2a-4a25-93d7-02cc64c8d87e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C46",
+      "claim": "The remaining ~20% non-GFP+ LCs were likely derived from unlabeled HSPCs in VDA due to incomplete heat-shock or loxP recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining ~20% non-GFP +LCs were likely derived from unlabeled HSPCs in VDA due to the incomplete heat-shock or loxP recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference to explain the incomplete labeling.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "19e4711c-9078-43fe-9994-9ea7b02a70fe",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C47",
+      "claim": "The percentage of RBI-derived LCs gradually decreased from 4 dpf to 12 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the percentage of RBI-derived LCs gradually decreased and only ~7% of LCs were derived from a RBI origin at 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "1b12e915-513a-40c8-a43d-e5f5666afa00",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C48",
+      "claim": "Only ~7% of LCs were derived from RBI origin at 12 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the percentage of RBI-derived LCs gradually decreased and only ~7% of LCs were derived from a RBI origin at 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "a0689e29-a4eb-4ed9-8411-12c22243681e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C49",
+      "claim": "VDA-derived LCs became obvious at 6 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the VDA-derived LCs became obvious at 6 dpf and their percentage reached 54% by 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "2d972006-e3e4-48cc-8c4f-903a5be3d776",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C50",
+      "claim": "The percentage of VDA-derived LCs reached 54% by 12 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the VDA-derived LCs became obvious at 6 dpf and their percentage reached 54% by 12 dpf (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "84121769-b30e-4011-a03d-9c4c0203e171",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C51",
+      "claim": "A small portion of PBI-derived LCs was observed from 6 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A small portion of PBI-derived LCs was observed from 6 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "1703ad3c-a83a-4e41-8617-cf8943d09140",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C52",
+      "claim": "PBI-derived LCs maintained their percentage at ~15% from 8 dpf to 12 dpf, suggesting limited cell proliferation or input from the PBI.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the prosperous LCs from the VDA, the PBI-derived LCs maintain their percentage at ~15% from 8 dpf to 12 dpf suggesting limited cell proliferation or input from the PBI (Figure 1\u2014figure supplement 1G and H, Figure 1\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c20b4598-7e15-45dd-ad2f-b84f85e0b252",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C53",
+      "claim": "LCs gradually shifted from a RBI origin to a VDA origin during the early larval stages of zebrafish development.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggested that LCs gradually shifted from a RBI origin to a VDA origin during the early larval stages of zebrafish development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the temporal analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "e11de78f-30ce-4302-916f-f667ee31e231",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C54",
+      "claim": "Most DsRedx+ macrophages on the superficial part of adult skin located within the krtt1c19e+ epidermal layer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most DsRedx+ macrophages on the superficial part of the adult skin located within the krtt1c19e+ epidermal layer, suggesting that they were indeed LCs (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "53d53064-aaad-46d8-88de-022b309d1077",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C55",
+      "claim": "VDA-derived LCs require Runx1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies showed that VDA-derived LCs required runx1 and cMyb functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from runx1 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "06ce00d3-a1af-4ce6-aa69-e09a020b804d",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C56",
+      "claim": "VDA-derived LCs require cMyb function.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies showed that VDA-derived LCs required runx1 and cMyb functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cmyb mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "73af2e22-201e-4071-bf36-78a61fd43f84",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C57",
+      "claim": "HSPC formation in the VDA region was severely impaired in runx1W84X mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we crossed Tg(hsp70:mCherry-T2a-CreERT2;mpeg1:loxP-DsRedx-loxP-GFP) with runx1W84X mutants, in which HSPC formation in the VDA region was severely impaired (Bertrand et al., 2010; Boisset et al., 2010; Chen et al., 2009; Jin et al., 2009; Kissa and Herbomel, 2010; Sood et al., 2010), and examined the VDA-derived LCs at ~12 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "bb832242-4854-4495-bf06-0b1d459984d8",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C58",
+      "claim": "There was a reduction of >85% in the density of GFP+ LCs in runx1W84X mutants compared to siblings (7.0 cells/mm2 in mutants versus 53.8 cells/mm2 in siblings).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed a reduction of >85% (7.0 cells/mm2 in the mutants versus 53.8 cells/mm2 in siblings) in the density of GFP+ LCs in runx1W84X mutants (Figure 2A and B, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "bb811b69-4c66-4742-a8c6-57ba4f5c5149",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C59",
+      "claim": "The total density of LCs in runx1W84X mutants was reduced (57.7 cells/mm2 in mutants versus 173.2 cells/mm2 in siblings).",
+      "claim_type": "EXPLICIT",
+      "source": "The total density of LCs in runx1W84X mutants was also reduced (57.7 cells/mm2 in the mutants versus 173.2 cells/mm2 in siblings) (Figure 2\u2014figure supplement 1E, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "18125e89-50f3-4396-b9ea-0420c8ad7638",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C60",
+      "claim": "RBI-derived GFP+ LCs showed no obvious differences between runx1W84X mutants and siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the RBI-derived GFP+ LCs showed no obvious differences between mutants and siblings when heat-shock labeling was performed in the RBI region (Figure 2\u2014figure supplement 1C, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "ffafc77f-d1e4-42b7-a70a-12cbde710950",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C61",
+      "claim": "RBI-derived macrophages are not reduced in runx1W84X mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was not surprising given that the RBI-derived macrophages are not reduced in runx1W84X mutants (Jin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "fdf436cd-f415-4fdc-8874-7b046e384481",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C62",
+      "claim": "cmybhkz3 mutants have a developmental delay and cannot survive beyond 1 month of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that cmybhkz3 mutants have a developmental delay and cannot survive beyond 1 month of age (Xu et al., 2015), we assessed the LCs in 20 dpf cmybhkz3 mutants, comparing them with size-matched 12\u201315 dpf siblings (Figure 2\u2014figure supplement 1B, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c7740a40-ff5c-4381-9612-384fc91a40b1",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C63",
+      "claim": "There was a partial reduction in the density of GFP+ LCs in cmybhkz3 mutants (15.2 cells/mm2 in mutants versus 40.4 cells/mm2 in siblings).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed a partial reduction (15.2 cells/mm2 in the mutants versus 40.4 cells/mm2 in siblings) in the density of GFP+ LCs in cmybhkz3 mutants (Figure 2C and D, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "93236ebd-377f-411c-9a69-8c8f7732c538",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C64",
+      "claim": "The remaining GFP+ LCs in cmybhkz3 mutants might reflect either a cMyb-independent non-stem cell-derived population in VDA or differentiated progenies from residual surviving HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining GFP+ LCs in the mutants might reflect either a cMyb-independent non-stem cell-derived population in VDA or differentiated progenies from the residual surviving HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "10cf7c76-7456-4b0d-a0e5-14ff1e493aad",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C65",
+      "claim": "The total density of LCs in cmybhkz3 mutants was reduced (66.3 cells/mm2 in mutants versus 133.3 cells/mm2 in siblings).",
+      "claim_type": "EXPLICIT",
+      "source": "The total density of LCs in cmybhkz3 mutants was also reduced (66.3 cells/mm2 in the mutants versus 133.3 cells/mm2 in siblings) (Figure 2\u2014figure supplement 1F, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "f1953076-4764-4bcf-8274-8ff9162c07d2",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C66",
+      "claim": "There was no obvious difference in RBI-derived GFP+ LCs between cmybhkz3 mutants and siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, there was no obvious difference in RBI-derived GFP+ LCs between the mutants and siblings when heat-shock labeling was performed in the RBI region (Figure 2\u2014figure supplement 1D, Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d98b0ff9-abdf-4cfe-8e97-d0121528d3f4",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C67",
+      "claim": "cMyb is not required for the development of RBI-derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was consistent with a previous report that cMyb was not required for the development of RBI-derived macrophages (Jin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "621b3daf-7619-4588-82e7-36576acf8a2c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C68",
+      "claim": "cMyb is partially required for VDA-derived LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this result clearly showed that, although it was not absolutely necessary, cMyb was partially required for these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing partial reduction in cmyb mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d23c7dfa-f40f-4b29-86fc-02514a04db71",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C69",
+      "claim": "Adult LCs in zebrafish likely arose from HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, together with the fate-mapping results, indicated that adult LCs in the zebrafish likely arose from HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the genetic and fate-mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "9f6d303a-d177-4834-98bf-680efdcd35c0",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C70",
+      "claim": "The VDA region contains non-HSC derived T cell progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the VDA region contained non-HSC derived T cell progenitors (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "713e315d-9f9b-4f81-a95e-f9554a8b26d6",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C71",
+      "claim": "Eight out of 13 fish with single-spot VDA labeling contained abundant GFP+ LCs and were designated the 'HSC Group'.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 8 out of the 13 fish contained abundant GFP+ LCs (Figure 3B\u2013C, Figure 3\u2014source data 1). Notably, abundant GFP+ cells were also present in the circulation of these fish suggesting the successful labeling of HSCs (Figure 3D and E, Figure 3\u2014source data 1). This group of fish was designated the 'HSC Group' (Figure 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "564f87cd-cc2c-4969-84ff-dbedcc947c13",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C72",
+      "claim": "Five out of 13 fish with single-spot VDA labeling failed to contain abundant GFP+ LCs and were designated the 'non-HSC Group'.",
+      "claim_type": "EXPLICIT",
+      "source": "In the remaining five VDA-labeled fish, GFP+ LCs failed to be abundantly detected (Figure 3B and C) and few GFP+ cells were found in the circulation, suggesting a failure of HSC labeling (Figure 3D and E). These fish were defined as the 'non-HSC Group' (Figure 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "72d30032-3077-4f24-b537-64fcf9688aea",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C73",
+      "claim": "The primary population of GFP+ LCs observed in VDA-labeled fish was associated with HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that the primary population of GFP+ LCs observed in the VDA-labeled fish was associated with HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the single-spot labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c675410d-713b-4f73-8bd8-6b1dc7fad606",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C74",
+      "claim": "The density of HSCs gradually decreased from the anterior to the posterior VDA.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the density of HSCs gradually decreased from the anterior to the posterior VDA (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "33d5690e-530b-4fb8-a55d-764970ea94ab",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C75",
+      "claim": "70% of fish labeled at position 1 (P1) of the VDA contained abundant LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that 70%, 71%, and 54% of the labeled fish contained abundant LCs for the P1, P2, and P3 groups, respectively. By contrast, only 22% of the labeled fish contained abundant LCs in the P4 group (Figure 3G, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c3654ea3-181a-4c28-abbb-10549b725b3a",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C76",
+      "claim": "71% of fish labeled at position 2 (P2) of the VDA contained abundant LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that 70%, 71%, and 54% of the labeled fish contained abundant LCs for the P1, P2, and P3 groups, respectively. By contrast, only 22% of the labeled fish contained abundant LCs in the P4 group (Figure 3G, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "98280a41-9847-43a3-9a3e-12da370696d5",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C77",
+      "claim": "54% of fish labeled at position 3 (P3) of the VDA contained abundant LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that 70%, 71%, and 54% of the labeled fish contained abundant LCs for the P1, P2, and P3 groups, respectively. By contrast, only 22% of the labeled fish contained abundant LCs in the P4 group (Figure 3G, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d7113d56-44eb-4de1-bcc6-37ff986acb3a",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C78",
+      "claim": "Only 22% of fish labeled at position 4 (P4) of the VDA contained abundant LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that 70%, 71%, and 54% of the labeled fish contained abundant LCs for the P1, P2, and P3 groups, respectively. By contrast, only 22% of the labeled fish contained abundant LCs in the P4 group (Figure 3G, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "ea07a65f-898d-4677-af57-c90806f8fa60",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C79",
+      "claim": "The generation of adult LCs was correlated with the density gradient of HSCs along the VDA.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that the generation of adult LCs was correlated with the density gradient of HSCs along the VDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the position-dependent labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c261321d-6d36-4f7d-8a3c-4d04d276402e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C80",
+      "claim": "Non-HSC-derived T cells generate the first wave of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-HSC-derived T cells were reported to generate the first wave of T cells, whereas HSCs generate the second wave of T cells after 5 dpf (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "b5e93b0c-d7e5-46b3-8164-af682d3de1ca",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C81",
+      "claim": "HSCs generate the second wave of T cells after 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-HSC-derived T cells were reported to generate the first wave of T cells, whereas HSCs generate the second wave of T cells after 5 dpf (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "b9f52bab-2d2c-4047-90e1-77208bc771b3",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C82",
+      "claim": "Only in Group I-A and Group II-A were significant GFP+ cells found in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only in Group I-A and Group II-A, but not in Group I-B and Group II-B, were significant GFP+ cells found in the skin (Figure 4E and F, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "593333c3-db5d-4344-a070-166ed94647e9",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C83",
+      "claim": "A significant portion of GFP+ cells in the skin showed a ramified LC-like morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not have LC antibodies to specifically distinguish LCs from other GFP+ leukocytes, a significant portion of GFP+ cells showed a ramified LC-like morphology (Figure 4F), suggesting that LCs were labeled in Group I-A and Group II-A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "f4713eb5-ac1c-4421-a9af-bed41385681b",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C84",
+      "claim": "18-19% of leukocytes were GFP+ in Group I-A and Group II-A.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 18\u201319% GFP+ leukocytes in Group I-A and Group II-A compared with almost no GFP+ leukocytes in Group I-B and Group II-B and the non-heat-shocked control groups (Figure 4E and F, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "af28df81-a775-4fb5-91fb-29bc15989b53",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C85",
+      "claim": "Almost no GFP+ leukocytes were found in Group I-B, Group II-B, and non-heat-shocked control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 18\u201319% GFP+ leukocytes in Group I-A and Group II-A compared with almost no GFP+ leukocytes in Group I-B and Group II-B and the non-heat-shocked control groups (Figure 4E and F, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6ba5c8dc-e9f5-435f-a79f-b2808566b262",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C86",
+      "claim": "Adult LCs are associated with HSCs but not non-HSC T cell progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggested that adult LCs associated with HSCs but not non-HSC T cell progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the temporal labeling experiment with coro1a reporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "fd105136-7cfe-4c40-b0fa-163071984ac8",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C87",
+      "claim": "The primary adult tissue-resident macrophages in liver, gut, and heart were derived from VDA, but not from RBI or PBI.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to LCs and previously reported microglia (Xu et al., 2015), the primary adult tissue-resident macrophages in liver, gut, and heart were also derived from VDA, but not from RBI or PBI (Figure 5\u2014figure supplement 1A\u2013D, Figure 5\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "98f5e6fd-e6db-4376-a1c3-7d7f826a534c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C88",
+      "claim": "GFP+ macrophages in the liver, gut, heart and brain were primarily found in the HSC group but not the non-HSC group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that GFP+ macrophages in the liver, gut, heart and even brain were primarily found in the HSC group but not the non-HSC group (Figure 5\u2014figure supplement 1E, Figure 5\u2014figure supplement 1\u2014source data 1), suggesting that tissue-resident macrophages in zebrafish spatially correlated with HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "4e0facdd-07bc-4a9b-a65c-802e5af4381c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C89",
+      "claim": "Tissue-resident macrophages in zebrafish spatially correlated with HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that GFP+ macrophages in the liver, gut, heart and even brain were primarily found in the HSC group but not the non-HSC group (Figure 5\u2014figure supplement 1E, Figure 5\u2014figure supplement 1\u2014source data 1), suggesting that tissue-resident macrophages in zebrafish spatially correlated with HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the single-spot labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "7374fa43-770e-4114-be64-80c625b984ee",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C90",
+      "claim": "Only fish labeled with HSCs (Group I-A and Group II-A) contained significant numbers of GFP+ cells in brain, liver, heart, and gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results of LCs, only fish labeled with HSCs (Group I-A and Group II-A) contained significant number of GFP+ cells in brain, liver, heart, and gut (Figure 5, Figure 5\u2014source data 1), suggesting that adult resident macrophages in brain, liver, heart, and gut were associated with HSCs in zebrafish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c41c0722-b8de-4277-83d3-9a4bec5bae4c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C91",
+      "claim": "Adult resident macrophages in brain, liver, heart, and gut were associated with HSCs in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results of LCs, only fish labeled with HSCs (Group I-A and Group II-A) contained significant number of GFP+ cells in brain, liver, heart, and gut (Figure 5, Figure 5\u2014source data 1), suggesting that adult resident macrophages in brain, liver, heart, and gut were associated with HSCs in zebrafish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the temporal labeling data with coro1a reporter.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d66314f3-2fe6-4d72-94ba-2f5001d118ad",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C92",
+      "claim": "Most GFP+ cells in brain, liver, and heart were Lcp1+.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most GFP+ cells were Lcp1+, with the exception of gut GFP+ cells, which only partially overlapped with Lcp1 signals, suggesting that Lcp1 and coro1a marked different sub-populations of leukocytes in the gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "8813b6d2-0fb2-4993-afec-ead0f7dbc160",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C93",
+      "claim": "Gut GFP+ cells only partially overlapped with Lcp1 signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most GFP+ cells were Lcp1+, with the exception of gut GFP+ cells, which only partially overlapped with Lcp1 signals, suggesting that Lcp1 and coro1a marked different sub-populations of leukocytes in the gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing partial colocalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "93892744-3b7e-48ab-86a2-6bc1458973fd",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C94",
+      "claim": "Lcp1 and coro1a mark different sub-populations of leukocytes in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most GFP+ cells were Lcp1+, with the exception of gut GFP+ cells, which only partially overlapped with Lcp1 signals, suggesting that Lcp1 and coro1a marked different sub-populations of leukocytes in the gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the partial overlap observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "60771d86-3586-471b-b143-751b1f581721",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C95",
+      "claim": "Among 31 surviving transplant recipients, seven did not contain detectable donor-derived DsRedx+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 31 surviving recipients, seven did not contain detectable donor-derived DsRedx+ cells (data not shown), suggesting a failure of long-term reconstitution of donor cells in these recipients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from the transplantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "95add3da-c9d8-432d-9be8-3f552344d53e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C96",
+      "claim": "The survival of the seven recipients without donor cells was likely due to the recovery of their own hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival of these seven recipients was likely due to the recovery of their own hematopoiesis, as shown previously (Sood et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c2d411b6-966f-4dc3-99bf-d83f40f5b0fb",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C97",
+      "claim": "Group I recipients (eight fish) contained abundant donor-derived DsRedx+ cells in their circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Group I recipients (eight fish) were those containing abundant donor-derived DsRedx+ cells in their circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the definition of Group I based on experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c89f3d7b-050a-4268-b4f6-0898617c2f29",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C98",
+      "claim": "In Group I recipients, a large number of DsRedx+ donor cells were present in the brain (93%), skin (87%), liver (94%), gut (75%), heart (92%), and circulation (84%).",
+      "claim_type": "EXPLICIT",
+      "source": "In this group, a large number of DsRedx+ donor cells were present in the brain (microglia, 93%), skin (LCs, 87%), liver (94%), gut (75%), heart (92%), and circulation (84%) (Figure 6B and C, Figure 6\u2014source data 1), showing that these Group I recipients were well reconstituted by donor-derived hematopoietic cells, including HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "e6488f24-8e49-4638-a16e-b5eb38577171",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C99",
+      "claim": "Group I recipients were well reconstituted by donor-derived hematopoietic cells, including HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this group, a large number of DsRedx+ donor cells were present in the brain (microglia, 93%), skin (LCs, 87%), liver (94%), gut (75%), heart (92%), and circulation (84%) (Figure 6B and C, Figure 6\u2014source data 1), showing that these Group I recipients were well reconstituted by donor-derived hematopoietic cells, including HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the high donor cell contribution in multiple tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "228e5d6b-8cd8-406a-87aa-6f80bbd46273",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C100",
+      "claim": "Group II recipients (16 fish) contained very few DsRedx+ donor cells (~2%) in their circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Group II recipients (16 fish) contained very few DsRedx+ donor cells (~2%) in their circulation (Figure 6D, Figure 6\u2014source data 1), indicating that these recipients were reconstituted by donor-derived progenitor cells but not HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "3f6b3fa8-3655-4f04-8994-de28091ab02e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C101",
+      "claim": "Group II recipients were reconstituted by donor-derived progenitor cells but not HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Group II recipients (16 fish) contained very few DsRedx+ donor cells (~2%) in their circulation (Figure 6D, Figure 6\u2014source data 1), indicating that these recipients were reconstituted by donor-derived progenitor cells but not HSCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the low donor cell contribution in circulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "ceaca52a-7880-48a1-8207-5c3d2f4705aa",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C102",
+      "claim": "Group II recipients contained only small numbers of donor-derived DsRedx+ LCs in the skin (7%), liver (16%), gut (5%), and heart (12%).",
+      "claim_type": "EXPLICIT",
+      "source": "This group of recipients contained only small numbers of donor-derived DsRedx+ LCs in the skin (7%), liver (16%), gut (5%), and heart (12%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the transplantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "af51d98e-1b7c-4885-858c-9aa60da58368",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C103",
+      "claim": "Group II recipients contained ~50% of donor-derived DsRedx+ microglia in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "One exception was the brain, which contained ~50% of donor-derived DsRedx+ microglia (Figure 6B and D, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "0c2245c7-0fd1-4c85-9747-8a05aba60ade",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C104",
+      "claim": "Adult microglia likely arise from VDA-born HSCs based on spatial restricted cell tracing analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on our previous spatial restricted cell tracing analysis, adult microglia also likely arise from the VDA-born HSCs and the HSC-independency we observed in the transplantation assay is likely due to the self-maintenance of microglia (Ajami et al., 2007; Huang et al., 2018), thus myeloid progenitors from donor kidney marrows are sufficient to generate long lasting microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from previous spatial tracing data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "edcd9615-b397-4f19-b902-7e6a3d434d84",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C105",
+      "claim": "The HSC-independency of microglia observed in the transplantation assay is likely due to the self-maintenance of microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on our previous spatial restricted cell tracing analysis, adult microglia also likely arise from the VDA-born HSCs and the HSC-independency we observed in the transplantation assay is likely due to the self-maintenance of microglia (Ajami et al., 2007; Huang et al., 2018), thus myeloid progenitors from donor kidney marrows are sufficient to generate long lasting microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations about microglia self-maintenance.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "f7ca7841-9030-4a47-9885-b5822794ae58",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C106",
+      "claim": "Myeloid progenitors from donor kidney marrows are sufficient to generate long lasting microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on our previous spatial restricted cell tracing analysis, adult microglia also likely arise from the VDA-born HSCs and the HSC-independency we observed in the transplantation assay is likely due to the self-maintenance of microglia (Ajami et al., 2007; Huang et al., 2018), thus myeloid progenitors from donor kidney marrows are sufficient to generate long lasting microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the transplantation data and knowledge about microglia self-maintenance.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "78414b4d-b6f6-4bcf-a43f-5addd4107132",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C107",
+      "claim": "Adult tissue-resident macrophages are largely associated with HSCs during transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggested that adult tissue-resident macrophages are largely associated with HSCs during transplantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the transplantation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "2df86cfc-43ca-4373-83ee-35b48a603fa1",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C108",
+      "claim": "A large portion of adult LCs and other tissue-resident macrophages in zebrafish were derived from an HSC origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot completely rule out the possibility that LCs and other tissue-resident macrophages were derived from non-HSC progenitors, which must be linked with HSCs so closely that they cannot be distinguished by our spatial-restricted labeling, we suggested that a large portion of the adult LCs and other tissue-resident macrophages in the zebrafish were derived from an HSC origin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "df86f80e-950e-4f33-af9d-4686f00800bd",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C109",
+      "claim": "The conclusion that adult LCs and tissue-resident macrophages are HSC-derived differs from previous reports in mice suggesting they arise from EMPs born in the YS.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion differed from previous reports in mice suggesting that adult LCs and other tissue-resident macrophages arise from EMPs born in the YS (Ginhoux and Guilliams, 2016; Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Kierdorf et al., 2015; Schulz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "3f67ba36-d1ad-4f01-9abf-7bb8cec588a8",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C110",
+      "claim": "The discrepancy in LC origin conclusions could be due to species differences between zebrafish and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for the different conclusions could be the species differences. Zebrafish might differ from mice in terms of the origin of tissue-resident macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible reasons for the discrepancy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "09b66f7a-e028-4df2-adc6-04773f72e12c",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C111",
+      "claim": "The discrepancy in LC origin conclusions could be due to different fate-mapping methods used.",
+      "claim_type": "EXPLICIT",
+      "source": "Another explanation was that this discrepancy was due to the different fate-mapping methods used in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about methodological reasons for the discrepancy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "85b012e0-1b32-4b93-bea1-b62c7ed4cbc5",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C112",
+      "claim": "Sheng et al. showed that most LCs and some other tissue-resident macrophages in adult mice arose from HSCs using the c-Kit-MER-Cre-MER-loxp reporter system.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, by utilizing the c-Kit-MER-Cre-MER-loxp reporter system, Sheng et al., showed that most LCs and some other tissue-resident macrophages in adult mice arose from HSCs, which differed from the EMP origin obtained from previous fate-mapping studies using the Runx1-MER-Cre-MER-loxp and Tier2-MER-Cre-MER-loxp reporter systems (Gomez Perdiguero et al., 2015; Hoeffel et al., 2015; Schulz et al., 2012; Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sheng et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "447fa8a0-7f2d-4755-b910-5f7c8dc60e5b",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C113",
+      "claim": "A substantial number (30%) of LCs were recorded in 1-year-old Flt3CreRosa26YFP reporter mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a substantial number (30%) of LCs were recorded in 1-year-old Flt3CreRosa26YFP reporter mice (Gomez Perdiguero et al., 2015), in which HSCs and HSCs-derived hematopoietic progenitors were labeled upon Cre-mediated excision (Christensen and Weissman, 2001; Gomez Perdiguero et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gomez Perdiguero et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "cbf47ec0-ca67-4a62-9b4a-1fc35440f22d",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C114",
+      "claim": "In Flt3CreRosa26YFP reporter mice, HSCs and HSC-derived hematopoietic progenitors were labeled upon Cre-mediated excision.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a substantial number (30%) of LCs were recorded in 1-year-old Flt3CreRosa26YFP reporter mice (Gomez Perdiguero et al., 2015), in which HSCs and HSCs-derived hematopoietic progenitors were labeled upon Cre-mediated excision (Christensen and Weissman, 2001; Gomez Perdiguero et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations about the Flt3Cre system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "2c03bfd2-1b3b-42fe-a041-e0ad229b6a7b",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C115",
+      "claim": "It is conceivable that a substantial portion of adult LCs and other tissue-resident macrophages in mice were derived from conventional HSCs born in the AGM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it was conceivable that a substantial portion of adult LCs and other tissue-resident macrophages in mice were derived from conventional HSCs born in the AGM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on reinterpretation of existing mouse data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "f0f0b863-1b8d-4bc8-b8d3-12acef9de56f",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C116",
+      "claim": "Further in-depth studies in mice with high temporospatially resolved fate mapping are necessary to clarify the origin of LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further in-depth studies in mice with high temporospatially resolved fate mapping will be necessary to clarify this issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "cee5a668-bda9-4404-8224-a51817cea9fb",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C117",
+      "claim": "The density of HSCs gradually decreased from the anterior to the posterior of the VDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also reinforced the hypothesis that the density of HSCs gradually decreased from the anterior to the posterior of the VDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the position-dependent labeling data in the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6810750b-dcb3-4dba-8ebb-6be278f329bc",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C118",
+      "claim": "The Wnt-Notch signaling pathways and inflammatory signaling cascades are likely to have critical roles in HSC fate determination.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculated that the Wnt-Notch signaling pathways and inflammatory signaling cascades, which are involved in HSC specification in the VDA (Clements et al., 2011; Esp\u00edn-Palaz\u00f3n et al., 2014; He et al., 2015; Li et al., 2014), were likely to have critical roles in HSC fate determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations about signaling pathways in HSC specification.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "a969a87a-a4f1-453d-9592-ff270fb93b48",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C119",
+      "claim": "The aorta endothelium isolated from different time windows of mouse embryos appears to manifest distinct differentiation potentials, including non-HSC features, under in vitro culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Several previous studies in mice have shown that the aorta endothelium isolated from different time windows of mouse embryos appears to manifest, at least under in vitro culture conditions, distinct differentiation potentials, including non-HSC features (Bertrand et al., 2005; North et al., 2002; Ody et al., 1999; Taoudi and Medvinsky, 2007; Yoshimoto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous mouse studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "d0ac4e76-1e82-4ada-bf16-2181e93919c6",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "claim_id": "C120",
+      "claim": "A non-HSC population of cells may exist in the mammalian aorta endothelium, similar to zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies suggested that, perhaps similar to zebrafish, this non-HSC population of cells also exists in the mammalian aorta endothelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on inference from mouse studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "044771cf-3c21-4642-89d4-d15c9cc4e777",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Most adult Langerhans cells (LCs) in zebrafish originate from the ventral wall of the dorsal aorta (VDA), with approximately 80% of adult LCs being VDA-derived. The contribution shifts from RBI-dominant at early embryonic stages (4 dpf) to VDA-dominant in adults, with limited contribution from PBI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C42-C53 provide converging evidence from IR-LEGO-CreER-loxP fate mapping experiments showing temporal shifts in LC origins. The ~80% VDA contribution in adults (C43) is supported by quantitative imaging data (Figure 1B-D), and temporal analysis (C47-C52) demonstrates the developmental transition from RBI to VDA origins. The labeling efficiency estimate (C45-C46) is reasonable though speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "be3b628d-125d-4aae-a6fa-c52655a13c34",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "VDA-derived LCs require Runx1 and cMyb function, as demonstrated by >85% reduction in runx1W84X mutants and partial reduction in cmybhkz3 mutants. RBI-derived LCs are unaffected in both mutants, supporting the conclusion that adult LCs arise from hematopoietic stem/progenitor cells (HSPCs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C69 provide genetic evidence supporting HSPC origin of VDA-derived LCs. The runx1 mutant data (C58-C60) show dramatic reduction in VDA-derived but not RBI-derived LCs, and cmyb mutant data (C63-C66) show partial reduction consistent with HSC involvement. The controls (RBI labeling) strengthen the specificity of the findings. The interpretation that LCs arise from HSPCs (C69) is well-supported by the genetic and fate-mapping data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adult LCs spatially correlate with HSCs in the VDA. Single-spot VDA labeling experiments show that fish with abundant GFP+ LCs also contain abundant circulating GFP+ cells (HSC group), while fish without circulating GFP+ cells lack abundant LCs (non-HSC group). Position-dependent labeling shows decreasing LC contribution from anterior (70-71%) to posterior (22%) VDA, matching the known HSC density gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C79 demonstrate spatial correlation between LCs and HSCs through single-spot labeling (C71-C73) and position-dependent analysis (C75-C79). The experimental design cleverly separates HSC from non-HSC progenitors based on circulation contribution. The position-dependent gradient (Figure 3G) matches prior knowledge about HSC distribution (C74), providing internal consistency. However, the spatial resolution of the labeling method may not completely exclude closely linked non-HSC progenitors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "1dc34d17-ce91-4574-95ca-31a83c275c5e",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Adult LCs are temporally associated with HSCs but not non-HSC T cell progenitors. Using coro1a reporter fish and temporal labeling at 24 hpf, only fish with HSC labeling (Groups I-A and II-A with circulating GFP+ cells) showed significant GFP+ cells in skin (18-19%), while fish labeled only with first-wave T cell progenitors (Groups I-B and II-B) lacked skin GFP+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 provide temporal separation of HSC from non-HSC T cell progenitors using the known developmental timing of T cell waves (C80-C81). The experimental design (Figure 4A) is elegant, separating fish based on 5 dpf thymus labeling and adult circulation contribution. The data (C82-C85) clearly show LCs only in HSC-labeled groups. However, the lack of LC-specific antibodies (acknowledged in C83) introduces some uncertainty about whether all GFP+ skin cells are LCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Adult tissue-resident macrophages in liver, gut, heart, and brain are also associated with HSCs. Similar to LCs, these macrophages are primarily VDA-derived and are found predominantly in HSC-labeled groups (Groups I-A and II-A) but not in non-HSC groups (Groups I-B and II-B).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C94 extend the HSC-association finding from LCs to other tissue-resident macrophages using the same experimental approaches (spatial and temporal labeling). The data (Figure 5, Figure 5\u2014figure supplement 1) show consistent patterns across multiple organs. The observation about Lcp1/coro1a marker differences in gut (C92-C94) adds nuance but doesn't undermine the main conclusion. The consistency across multiple tissue types strengthens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "f651d133-bd69-4147-9408-853568f688bb",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Transplantation experiments support HSC-association of tissue-resident macrophages. Recipients with high donor cell circulation (Group I, 84%) showed high donor contribution to LCs and tissue macrophages (75-94%), while recipients with low circulation (Group II, ~2%) showed low tissue contribution (5-16%), except for brain microglia (~50%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C107 provide independent validation through transplantation. The clear separation between Group I and Group II recipients (C97-C102) supports HSC-dependence of most tissue macrophages. The microglia exception (C103) is appropriately explained by self-maintenance (C104-C106), consistent with the literature. However, transplantation involves irradiation and may not perfectly recapitulate normal development. The interpretation that Group II represents progenitor-only reconstitution (C101) is reasonable but somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "97750915-3ef4-42e9-a3f4-0696a9adf18f",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that a large portion of adult LCs and tissue-resident macrophages in zebrafish are HSC-derived, challenging the EMP-origin theory proposed in previous mouse studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108, C109, and C7 represent the main conclusion synthesizing all experimental results. The conclusion is well-supported by the converging evidence from fate mapping (spatial and temporal), genetic analysis, and transplantation. The acknowledgment of limitations (C108) is appropriate. The challenge to the EMP-origin theory (C7, C109) is justified given the data, though the authors appropriately note potential species differences and methodological issues in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors discuss potential explanations for discrepancies with previous mouse studies, including species differences and methodological differences in fate-mapping approaches. They note that some mouse studies using different Cre drivers (c-Kit, Flt3) also support HSC origins, and call for further studies with high temporospatial resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110-C116 are primarily speculative discussion points (C110-C111, C115-C116) attempting to reconcile conflicting literature. While the reinterpretation of existing mouse data (C112-C114) is interesting, it relies on citations rather than new data. The speculation is reasonable and appropriately cautious, but cannot be evaluated as supported or unsupported without additional experiments. This represents thoughtful discussion rather than a testable result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6212436c-3ba3-4954-bddd-d22e01a67a73",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study reinforces the hypothesis of an anterior-to-posterior HSC density gradient in the VDA and speculates about molecular determinants (Wnt-Notch, inflammatory signaling) of HSC fate determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C117 is supported by the position-dependent labeling data (C75-C79) in the current study, which reinforces prior findings. Claim C118 is speculation about mechanisms based on literature citations, not tested in this study. The gradient observation (C117) is well-supported, but the mechanistic speculation (C118) cannot be evaluated as supported or unsupported without experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "ca7be287-8ec1-4355-8559-82f24e286cf5",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims about zebrafish and mammalian hematopoiesis establish the model system rationale, including the equivalence of zebrafish VDA to mammalian AGM, and the multiple waves of hematopoiesis in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27, C34-C40 are established knowledge claims supported by appropriate citations. These provide necessary context for the experimental work and are well-accepted in the field. The homology between zebrafish VDA and mammalian AGM (C2) is particularly important for interpreting the relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "6b0a59c5-be0a-41e4-af03-382575c14573",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Introduction and background claims about LC biology, historical understanding of LC origins, and limitations of previous fate-mapping approaches establish the rationale for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C33, C41 provide literature review and rationale. These are appropriately cited and accurately represent the state of the field and the controversy about LC origins. The critique of promoter-based fate mapping (C31-C32) is valid and motivates the use of IR-LEGO system. These claims establish context rather than present new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "c76b30ff-de3c-413a-b2e5-9b4547850fb1",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DsRedx+ macrophages on the superficial part of adult skin are located within the krtt1c19e+ epidermal layer, confirming they are LCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 provides validation that the cells being studied are indeed LCs based on their epidermal localization (Figure 1\u2014figure supplement 1E). This is important for establishing that the fate-mapping is tracking the correct cell population. The colocalization with the epidermal marker is clear in the imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    },
+    {
+      "id": "0f4101ac-54b8-4639-960e-09d3a8e457fe",
+      "content_id": "5a4fd8f4-742a-4dac-9318-21365c7b7b8a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors note that mouse aorta endothelium from different developmental time windows shows distinct differentiation potentials in vitro, suggesting non-HSC populations may exist in mammalian aorta similar to zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C119-C120 are speculative extrapolations from cited mouse studies to suggest conservation of non-HSC populations in mammalian AGM. While the citations support temporal heterogeneity in mouse AGM (C119), the inference that this is similar to zebrafish (C120) is speculative. This represents interesting discussion but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T01:05:21.583518Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf060cd1-a4bf-4b7d-a838-86494f5d8d69",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "7a9277f4-41b1-4005-b5f1-8d65e74f46ee",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "df718342-d6ea-4132-94f5-85aa58762338",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "4132374e-29b7-4aad-8802-6047f20072bc",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "6155bb08-731e-4c86-872a-8038a342d50f",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "ea963e12-2c2a-4a25-93d7-02cc64c8d87e",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "19e4711c-9078-43fe-9994-9ea7b02a70fe",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "1b12e915-513a-40c8-a43d-e5f5666afa00",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "a0689e29-a4eb-4ed9-8411-12c22243681e",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "2d972006-e3e4-48cc-8c4f-903a5be3d776",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "84121769-b30e-4011-a03d-9c4c0203e171",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "1703ad3c-a83a-4e41-8617-cf8943d09140",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "c20b4598-7e15-45dd-ad2f-b84f85e0b252",
+      "result_id": "044771cf-3c21-4642-89d4-d15c9cc4e777"
+    },
+    {
+      "claim_id": "53d53064-aaad-46d8-88de-022b309d1077",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "06ce00d3-a1af-4ce6-aa69-e09a020b804d",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "73af2e22-201e-4071-bf36-78a61fd43f84",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "bb832242-4854-4495-bf06-0b1d459984d8",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "bb811b69-4c66-4742-a8c6-57ba4f5c5149",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "18125e89-50f3-4396-b9ea-0420c8ad7638",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "ffafc77f-d1e4-42b7-a70a-12cbde710950",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "fdf436cd-f415-4fdc-8874-7b046e384481",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "c7740a40-ff5c-4381-9612-384fc91a40b1",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "93236ebd-377f-411c-9a69-8c8f7732c538",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "10cf7c76-7456-4b0d-a0e5-14ff1e493aad",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "f1953076-4764-4bcf-8274-8ff9162c07d2",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "d98b0ff9-abdf-4cfe-8e97-d0121528d3f4",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "621b3daf-7619-4588-82e7-36576acf8a2c",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "d23c7dfa-f40f-4b29-86fc-02514a04db71",
+      "result_id": "be3b628d-125d-4aae-a6fa-c52655a13c34"
+    },
+    {
+      "claim_id": "9f6d303a-d177-4834-98bf-680efdcd35c0",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "713e315d-9f9b-4f81-a95e-f9554a8b26d6",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "564f87cd-cc2c-4969-84ff-dbedcc947c13",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "72d30032-3077-4f24-b537-64fcf9688aea",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "c675410d-713b-4f73-8bd8-6b1dc7fad606",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "33d5690e-530b-4fb8-a55d-764970ea94ab",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "c3654ea3-181a-4c28-abbb-10549b725b3a",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "98280a41-9847-43a3-9a3e-12da370696d5",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "d7113d56-44eb-4de1-bcc6-37ff986acb3a",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "ea07a65f-898d-4677-af57-c90806f8fa60",
+      "result_id": "dd12aef9-d6b6-4301-9633-a9c4f29a535e"
+    },
+    {
+      "claim_id": "c261321d-6d36-4f7d-8a3c-4d04d276402e",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "b5e93b0c-d7e5-46b3-8164-af682d3de1ca",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "b9f52bab-2d2c-4047-90e1-77208bc771b3",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "593333c3-db5d-4344-a070-166ed94647e9",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "f4713eb5-ac1c-4421-a9af-bed41385681b",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "af28df81-a775-4fb5-91fb-29bc15989b53",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "6ba5c8dc-e9f5-435f-a79f-b2808566b262",
+      "result_id": "1dc34d17-ce91-4574-95ca-31a83c275c5e"
+    },
+    {
+      "claim_id": "fd105136-7cfe-4c40-b0fa-163071984ac8",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "98f5e6fd-e6db-4376-a1c3-7d7f826a534c",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "4e0facdd-07bc-4a9b-a65c-802e5af4381c",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "7374fa43-770e-4114-be64-80c625b984ee",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "c41c0722-b8de-4277-83d3-9a4bec5bae4c",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "d66314f3-2fe6-4d72-94ba-2f5001d118ad",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "8813b6d2-0fb2-4993-afec-ead0f7dbc160",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "93892744-3b7e-48ab-86a2-6bc1458973fd",
+      "result_id": "4f6a7dcb-1946-4e57-b0b4-0cd27c6ba306"
+    },
+    {
+      "claim_id": "60771d86-3586-471b-b143-751b1f581721",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "95add3da-c9d8-432d-9be8-3f552344d53e",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "c2d411b6-966f-4dc3-99bf-d83f40f5b0fb",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "c89f3d7b-050a-4268-b4f6-0898617c2f29",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "e6488f24-8e49-4638-a16e-b5eb38577171",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "228e5d6b-8cd8-406a-87aa-6f80bbd46273",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "3f6b3fa8-3655-4f04-8994-de28091ab02e",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "ceaca52a-7880-48a1-8207-5c3d2f4705aa",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "af51d98e-1b7c-4885-858c-9aa60da58368",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "0c2245c7-0fd1-4c85-9747-8a05aba60ade",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "edcd9615-b397-4f19-b902-7e6a3d434d84",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "f7ca7841-9030-4a47-9885-b5822794ae58",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "78414b4d-b6f6-4bcf-a43f-5addd4107132",
+      "result_id": "f651d133-bd69-4147-9408-853568f688bb"
+    },
+    {
+      "claim_id": "2df86cfc-43ca-4373-83ee-35b48a603fa1",
+      "result_id": "97750915-3ef4-42e9-a3f4-0696a9adf18f"
+    },
+    {
+      "claim_id": "df86f80e-950e-4f33-af9d-4686f00800bd",
+      "result_id": "97750915-3ef4-42e9-a3f4-0696a9adf18f"
+    },
+    {
+      "claim_id": "e21851ca-22cd-4bb5-ad21-d3deaf56fdfb",
+      "result_id": "97750915-3ef4-42e9-a3f4-0696a9adf18f"
+    },
+    {
+      "claim_id": "3f67ba36-d1ad-4f01-9abf-7bb8cec588a8",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "09b66f7a-e028-4df2-adc6-04773f72e12c",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "85b012e0-1b32-4b93-bea1-b62c7ed4cbc5",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "447fa8a0-7f2d-4755-b910-5f7c8dc60e5b",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "cbf47ec0-ca67-4a62-9b4a-1fc35440f22d",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "2c03bfd2-1b3b-42fe-a041-e0ad229b6a7b",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "f0f0b863-1b8d-4bc8-b8d3-12acef9de56f",
+      "result_id": "735c7c18-a473-4c08-8f8f-bd1486fa1c35"
+    },
+    {
+      "claim_id": "cee5a668-bda9-4404-8224-a51817cea9fb",
+      "result_id": "6212436c-3ba3-4954-bddd-d22e01a67a73"
+    },
+    {
+      "claim_id": "6810750b-dcb3-4dba-8ebb-6be278f329bc",
+      "result_id": "6212436c-3ba3-4954-bddd-d22e01a67a73"
+    },
+    {
+      "claim_id": "3f9761b1-5310-4566-89b5-40305060cd06",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "7e1ff663-6f79-4c76-8559-afb04e0b5c37",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "2fccfeb8-bd03-4420-bd1a-9e2a589a0a6c",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "31ce0a0a-01c9-4c59-b2ee-bbfe4c1a5001",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "4c3f2252-00ea-4b19-a5a0-a9e6ce8267a4",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "39040418-97ed-4502-98fa-8215920bd3fc",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "62cb5486-3b9a-4086-b9fa-5da333f4aaa7",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "d5d3f0eb-4fb6-4290-aaf1-3d8c9542355a",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "de3b1eec-8032-48a7-bb08-cda701f14e53",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "fa073102-0b99-4ea6-832f-f55c0fb7dbcf",
+      "result_id": "ca7be287-8ec1-4355-8559-82f24e286cf5"
+    },
+    {
+      "claim_id": "6894617c-f098-4a76-95d4-e4d39c092233",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "5ada786f-7795-4d2e-88ac-d5e9c21658b1",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "7b19be18-948e-44fb-9e8a-9a1261b71b79",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "5bd9879a-1aef-43a2-b5d8-7e01556f8d80",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "a44cc389-c7f3-47a7-8323-783619559287",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "134b9f15-b306-44b8-9d0e-c7460c3dffae",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "70b9351b-5063-418e-9837-5d198e76c282",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "19c73b35-2649-4f74-96f0-48366c1e4365",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "10f6c00d-47f4-4055-bc49-7ffd0ef520c6",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "54a0c7a8-45f5-47b9-b2c9-9e463db0ec28",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "eb366a7a-53bf-468b-8461-00318e6640e4",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "34696093-c7c2-4c51-8c56-9e0be3526fd8",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "5fbd95d5-8edc-4e9e-a57d-e657d5a080f7",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "dc95b07e-a110-4e18-a67e-8475e6d4c5fc",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "a8c4cdb4-8456-4dd9-917f-18c32ca55603",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "a2b9238f-0a05-49dd-b558-a8da7062fcf9",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "6a491942-85c0-43bb-9734-673ecdcafeb7",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "746c8066-17cb-44e8-b989-5b143297ced4",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "e46c13c4-ce7c-4153-8167-05d77453501e",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "1cbe2cca-1333-410b-81d5-30d3380fd021",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "3beedc1f-aa89-4a2b-ac0a-a9f39df5ebb9",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "d891f504-852e-4b8a-9b4c-6b660e2486b1",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "5cad52aa-29e8-4ceb-8822-3b33f1360350",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "3f7a03ec-58a3-4ca4-a694-b01e8b1ff322",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "7f3441c3-2522-4db1-98b4-84372df308fa",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "fc9b8f65-64d6-4fce-9cbf-7da032379ae7",
+      "result_id": "6b0a59c5-be0a-41e4-af03-382575c14573"
+    },
+    {
+      "claim_id": "e11de78f-30ce-4302-916f-f667ee31e231",
+      "result_id": "c76b30ff-de3c-413a-b2e5-9b4547850fb1"
+    },
+    {
+      "claim_id": "a969a87a-a4f1-453d-9592-ff270fb93b48",
+      "result_id": "0f4101ac-54b8-4639-960e-09d3a8e457fe"
+    },
+    {
+      "claim_id": "d0ac4e76-1e82-4ada-bf16-2181e93919c6",
+      "result_id": "0f4101ac-54b8-4639-960e-09d3a8e457fe"
+    }
+  ],
+  "comparisons": []
+}
